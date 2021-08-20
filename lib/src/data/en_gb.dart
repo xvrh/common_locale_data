@@ -1,14 +1,14 @@
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
 
-class CommonLocaleDataEn implements CommonLocaleData {
-  static final _dateFields = DateFieldsEn._();
+class CommonLocaleDataEnGB implements CommonLocaleData {
+  static final _dateFields = DateFieldsEnGB._();
   @override
   DateFields get dateFields => _dateFields;
 }
 
-class DateFieldsEn implements DateFields {
-  DateFieldsEn._();
+class DateFieldsEnGB implements DateFields {
+  DateFieldsEnGB._();
 
   @override
   MultiLength get era => MultiLength(
@@ -21,23 +21,23 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get year => DateFieldDataWithRelative(
         displayName: MultiLength(
           long: 'year',
-          short: 'yr.',
-          narrow: 'yr.',
+          short: 'yr',
+          narrow: 'yr',
         ),
         previous: MultiLength(
           long: 'last year',
-          short: 'last yr.',
-          narrow: 'last yr.',
+          short: 'last yr',
+          narrow: 'last yr',
         ),
         now: MultiLength(
           long: 'this year',
-          short: 'this yr.',
-          narrow: 'this yr.',
+          short: 'this yr',
+          narrow: 'this yr',
         ),
         next: MultiLength(
           long: 'next year',
-          short: 'next yr.',
-          narrow: 'next yr.',
+          short: 'next yr',
+          narrow: 'next yr',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -45,12 +45,12 @@ class DateFieldsEn implements DateFields {
             other: '{0} years ago',
           ),
           short: RelativeTime(
-            one: '{0} yr. ago',
-            other: '{0} yr. ago',
+            one: '{0} yr ago',
+            other: '{0} yr ago',
           ),
           narrow: RelativeTime(
-            one: '{0} yr. ago',
-            other: '{0} yr. ago',
+            one: '{0} yr ago',
+            other: '{0} yr ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -59,12 +59,12 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} years',
           ),
           short: RelativeTime(
-            one: 'in {0} yr.',
-            other: 'in {0} yr.',
+            one: 'in {0} yr',
+            other: 'in {0} yr',
           ),
           narrow: RelativeTime(
-            one: 'in {0} yr.',
-            other: 'in {0} yr.',
+            one: 'in {0} yr',
+            other: 'in {0} yr',
           ),
         ),
       );
@@ -73,8 +73,8 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get quarter => DateFieldDataWithRelative(
         displayName: MultiLength(
           long: 'quarter',
-          short: 'qtr.',
-          narrow: 'qtr.',
+          short: 'qtr',
+          narrow: 'qtr',
         ),
         previous: MultiLength(
           long: 'last quarter',
@@ -97,12 +97,12 @@ class DateFieldsEn implements DateFields {
             other: '{0} quarters ago',
           ),
           short: RelativeTime(
-            one: '{0} qtr. ago',
-            other: '{0} qtrs. ago',
+            one: '{0} qtr ago',
+            other: '{0} qtr ago',
           ),
           narrow: RelativeTime(
-            one: '{0} qtr. ago',
-            other: '{0} qtrs. ago',
+            one: '{0} qtr ago',
+            other: '{0} qtr ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -111,12 +111,12 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} quarters',
           ),
           short: RelativeTime(
-            one: 'in {0} qtr.',
-            other: 'in {0} qtrs.',
+            one: 'in {0} qtr',
+            other: 'in {0} qtr',
           ),
           narrow: RelativeTime(
-            one: 'in {0} qtr.',
-            other: 'in {0} qtrs.',
+            one: 'in {0} qtr',
+            other: 'in {0} qtr',
           ),
         ),
       );
@@ -125,23 +125,23 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get month => DateFieldDataWithRelative(
         displayName: MultiLength(
           long: 'month',
-          short: 'mo.',
-          narrow: 'mo.',
+          short: 'mo',
+          narrow: 'mo',
         ),
         previous: MultiLength(
           long: 'last month',
-          short: 'last mo.',
-          narrow: 'last mo.',
+          short: 'last mo',
+          narrow: 'last mo',
         ),
         now: MultiLength(
           long: 'this month',
-          short: 'this mo.',
-          narrow: 'this mo.',
+          short: 'this mo',
+          narrow: 'this mo',
         ),
         next: MultiLength(
           long: 'next month',
-          short: 'next mo.',
-          narrow: 'next mo.',
+          short: 'next mo',
+          narrow: 'next mo',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -149,12 +149,12 @@ class DateFieldsEn implements DateFields {
             other: '{0} months ago',
           ),
           short: RelativeTime(
-            one: '{0} mo. ago',
-            other: '{0} mo. ago',
+            one: '{0} mo ago',
+            other: '{0} mo ago',
           ),
           narrow: RelativeTime(
-            one: '{0} mo. ago',
-            other: '{0} mo. ago',
+            one: '{0} mo ago',
+            other: '{0} mo ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -163,12 +163,12 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} months',
           ),
           short: RelativeTime(
-            one: 'in {0} mo.',
-            other: 'in {0} mo.',
+            one: 'in {0} mo',
+            other: 'in {0} mo',
           ),
           narrow: RelativeTime(
-            one: 'in {0} mo.',
-            other: 'in {0} mo.',
+            one: 'in {0} mo',
+            other: 'in {0} mo',
           ),
         ),
       );
@@ -177,23 +177,23 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get week => DateFieldDataWithRelative(
         displayName: MultiLength(
           long: 'week',
-          short: 'wk.',
-          narrow: 'wk.',
+          short: 'wk',
+          narrow: 'wk',
         ),
         previous: MultiLength(
           long: 'last week',
-          short: 'last wk.',
-          narrow: 'last wk.',
+          short: 'last wk',
+          narrow: 'last wk',
         ),
         now: MultiLength(
           long: 'this week',
-          short: 'this wk.',
-          narrow: 'this wk.',
+          short: 'this wk',
+          narrow: 'this wk',
         ),
         next: MultiLength(
           long: 'next week',
-          short: 'next wk.',
-          narrow: 'next wk.',
+          short: 'next wk',
+          narrow: 'next wk',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -201,12 +201,12 @@ class DateFieldsEn implements DateFields {
             other: '{0} weeks ago',
           ),
           short: RelativeTime(
-            one: '{0} wk. ago',
-            other: '{0} wk. ago',
+            one: '{0} wk ago',
+            other: '{0} wk ago',
           ),
           narrow: RelativeTime(
-            one: '{0} wk. ago',
-            other: '{0} wk. ago',
+            one: '{0} wk ago',
+            other: '{0} wk ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -215,12 +215,12 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} weeks',
           ),
           short: RelativeTime(
-            one: 'in {0} wk.',
-            other: 'in {0} wk.',
+            one: 'in {0} wk',
+            other: 'in {0} wk',
           ),
           narrow: RelativeTime(
-            one: 'in {0} wk.',
-            other: 'in {0} wk.',
+            one: 'in {0} wk',
+            other: 'in {0} wk',
           ),
         ),
       );
@@ -228,8 +228,8 @@ class DateFieldsEn implements DateFields {
   @override
   MultiLength get weekOfMonth => MultiLength(
         long: 'week of month',
-        short: 'wk. of mo.',
-        narrow: 'wk. of mo.',
+        short: 'wk of mo',
+        narrow: 'wk of mo',
       );
 
   @override
@@ -287,39 +287,39 @@ class DateFieldsEn implements DateFields {
   @override
   MultiLength get dayOfYear => MultiLength(
         long: 'day of year',
-        short: 'day of yr.',
-        narrow: 'day of yr.',
+        short: 'day of yr',
+        narrow: 'day of yr',
       );
 
   @override
   MultiLength get weekday => MultiLength(
         long: 'day of the week',
-        short: 'day of wk.',
-        narrow: 'day of wk.',
+        short: 'day of wk',
+        narrow: 'day of wk',
       );
 
   @override
   MultiLength get weekdayOfMonth => MultiLength(
         long: 'weekday of the month',
-        short: 'wkday. of mo.',
-        narrow: 'wkday. of mo.',
+        short: 'wkday of mo',
+        narrow: 'wkday of mo',
       );
 
   @override
   DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'last Sunday',
-          short: 'last Sun.',
+          short: 'last Sun',
           narrow: 'last Su',
         ),
         now: MultiLength(
           long: 'this Sunday',
-          short: 'this Sun.',
+          short: 'this Sun',
           narrow: 'this Su',
         ),
         next: MultiLength(
           long: 'next Sunday',
-          short: 'next Sun.',
+          short: 'next Sun',
           narrow: 'next Su',
         ),
         past: MultiLengthRelativeTime(
@@ -328,8 +328,8 @@ class DateFieldsEn implements DateFields {
             other: '{0} Sundays ago',
           ),
           short: RelativeTime(
-            one: '{0} Sun. ago',
-            other: '{0} Sun. ago',
+            one: '{0} Sun ago',
+            other: '{0} Sun ago',
           ),
           narrow: RelativeTime(
             one: '{0} Su ago',
@@ -342,8 +342,8 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} Sundays',
           ),
           short: RelativeTime(
-            one: 'in {0} Sun.',
-            other: 'in {0} Sun.',
+            one: 'in {0} Sun',
+            other: 'in {0} Sun',
           ),
           narrow: RelativeTime(
             one: 'in {0} Su',
@@ -356,17 +356,17 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'last Monday',
-          short: 'last Mon.',
+          short: 'last Mon',
           narrow: 'last M',
         ),
         now: MultiLength(
           long: 'this Monday',
-          short: 'this Mon.',
+          short: 'this Mon',
           narrow: 'this M',
         ),
         next: MultiLength(
           long: 'next Monday',
-          short: 'next Mon.',
+          short: 'next Mon',
           narrow: 'next M',
         ),
         past: MultiLengthRelativeTime(
@@ -375,8 +375,8 @@ class DateFieldsEn implements DateFields {
             other: '{0} Mondays ago',
           ),
           short: RelativeTime(
-            one: '{0} Mon. ago',
-            other: '{0} Mon. ago',
+            one: '{0} Mon ago',
+            other: '{0} Mon ago',
           ),
           narrow: RelativeTime(
             one: '{0} M ago',
@@ -389,8 +389,8 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} Mondays',
           ),
           short: RelativeTime(
-            one: 'in {0} Mon.',
-            other: 'in {0} Mon.',
+            one: 'in {0} Mon',
+            other: 'in {0} Mon',
           ),
           narrow: RelativeTime(
             one: 'in {0} M',
@@ -403,17 +403,17 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'last Tuesday',
-          short: 'last Tue.',
+          short: 'last Tue',
           narrow: 'last Tu',
         ),
         now: MultiLength(
           long: 'this Tuesday',
-          short: 'this Tue.',
+          short: 'this Tue',
           narrow: 'this Tu',
         ),
         next: MultiLength(
           long: 'next Tuesday',
-          short: 'next Tue.',
+          short: 'next Tue',
           narrow: 'next Tu',
         ),
         past: MultiLengthRelativeTime(
@@ -422,8 +422,8 @@ class DateFieldsEn implements DateFields {
             other: '{0} Tuesdays ago',
           ),
           short: RelativeTime(
-            one: '{0} Tue. ago',
-            other: '{0} Tue. ago',
+            one: '{0} Tue ago',
+            other: '{0} Tue ago',
           ),
           narrow: RelativeTime(
             one: '{0} Tu ago',
@@ -436,8 +436,8 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} Tuesdays',
           ),
           short: RelativeTime(
-            one: 'in {0} Tue.',
-            other: 'in {0} Tue.',
+            one: 'in {0} Tue',
+            other: 'in {0} Tue',
           ),
           narrow: RelativeTime(
             one: 'in {0} Tu',
@@ -450,17 +450,17 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'last Wednesday',
-          short: 'last Wed.',
+          short: 'last Wed',
           narrow: 'last W',
         ),
         now: MultiLength(
           long: 'this Wednesday',
-          short: 'this Wed.',
+          short: 'this Wed',
           narrow: 'this W',
         ),
         next: MultiLength(
           long: 'next Wednesday',
-          short: 'next Wed.',
+          short: 'next Wed',
           narrow: 'next W',
         ),
         past: MultiLengthRelativeTime(
@@ -469,8 +469,8 @@ class DateFieldsEn implements DateFields {
             other: '{0} Wednesdays ago',
           ),
           short: RelativeTime(
-            one: '{0} Wed. ago',
-            other: '{0} Wed. ago',
+            one: '{0} Wed ago',
+            other: '{0} Wed ago',
           ),
           narrow: RelativeTime(
             one: '{0} W ago',
@@ -483,8 +483,8 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} Wednesdays',
           ),
           short: RelativeTime(
-            one: 'in {0} Wed.',
-            other: 'in {0} Wed.',
+            one: 'in {0} Wed',
+            other: 'in {0} Wed',
           ),
           narrow: RelativeTime(
             one: 'in {0} W',
@@ -497,17 +497,17 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'last Thursday',
-          short: 'last Thu.',
+          short: 'last Thu',
           narrow: 'last Th',
         ),
         now: MultiLength(
           long: 'this Thursday',
-          short: 'this Thu.',
+          short: 'this Thu',
           narrow: 'this Th',
         ),
         next: MultiLength(
           long: 'next Thursday',
-          short: 'next Thu.',
+          short: 'next Thu',
           narrow: 'next Th',
         ),
         past: MultiLengthRelativeTime(
@@ -516,8 +516,8 @@ class DateFieldsEn implements DateFields {
             other: '{0} Thursdays ago',
           ),
           short: RelativeTime(
-            one: '{0} Thu. ago',
-            other: '{0} Thu. ago',
+            one: '{0} Thu ago',
+            other: '{0} Thu ago',
           ),
           narrow: RelativeTime(
             one: '{0} Th ago',
@@ -530,8 +530,8 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} Thursdays',
           ),
           short: RelativeTime(
-            one: 'in {0} Thu.',
-            other: 'in {0} Thu.',
+            one: 'in {0} Thu',
+            other: 'in {0} Thu',
           ),
           narrow: RelativeTime(
             one: 'in {0} Th',
@@ -544,17 +544,17 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'last Friday',
-          short: 'last Fri.',
+          short: 'last Fri',
           narrow: 'last F',
         ),
         now: MultiLength(
           long: 'this Friday',
-          short: 'this Fri.',
+          short: 'this Fri',
           narrow: 'this F',
         ),
         next: MultiLength(
           long: 'next Friday',
-          short: 'next Fri.',
+          short: 'next Fri',
           narrow: 'next F',
         ),
         past: MultiLengthRelativeTime(
@@ -563,8 +563,8 @@ class DateFieldsEn implements DateFields {
             other: '{0} Fridays ago',
           ),
           short: RelativeTime(
-            one: '{0} Fri. ago',
-            other: '{0} Fri. ago',
+            one: '{0} Fri ago',
+            other: '{0} Fri ago',
           ),
           narrow: RelativeTime(
             one: '{0} F ago',
@@ -577,8 +577,8 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} Fridays',
           ),
           short: RelativeTime(
-            one: 'in {0} Fri.',
-            other: 'in {0} Fri.',
+            one: 'in {0} Fri',
+            other: 'in {0} Fri',
           ),
           narrow: RelativeTime(
             one: 'in {0} F',
@@ -591,17 +591,17 @@ class DateFieldsEn implements DateFields {
   DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'last Saturday',
-          short: 'last Sat.',
+          short: 'last Sat',
           narrow: 'last Sa',
         ),
         now: MultiLength(
           long: 'this Saturday',
-          short: 'this Sat.',
+          short: 'this Sat',
           narrow: 'this Sa',
         ),
         next: MultiLength(
           long: 'next Saturday',
-          short: 'next Sat.',
+          short: 'next Sat',
           narrow: 'next Sa',
         ),
         past: MultiLengthRelativeTime(
@@ -610,8 +610,8 @@ class DateFieldsEn implements DateFields {
             other: '{0} Saturdays ago',
           ),
           short: RelativeTime(
-            one: '{0} Sat. ago',
-            other: '{0} Sat. ago',
+            one: '{0} Sat ago',
+            other: '{0} Sat ago',
           ),
           narrow: RelativeTime(
             one: '{0} Sa ago',
@@ -624,8 +624,8 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} Saturdays',
           ),
           short: RelativeTime(
-            one: 'in {0} Sat.',
-            other: 'in {0} Sat.',
+            one: 'in {0} Sat',
+            other: 'in {0} Sat',
           ),
           narrow: RelativeTime(
             one: 'in {0} Sa',
@@ -636,17 +636,17 @@ class DateFieldsEn implements DateFields {
 
   @override
   MultiLength get dayperiod => MultiLength(
-        long: 'AM/PM',
-        short: 'AM/PM',
-        narrow: 'AM/PM',
+        long: 'am/pm',
+        short: 'am/pm',
+        narrow: 'am/pm',
       );
 
   @override
   DateFieldDataTime get hour => DateFieldDataTime(
         displayName: MultiLength(
           long: 'hour',
-          short: 'hr.',
-          narrow: 'hr.',
+          short: 'hr',
+          narrow: 'hr',
         ),
         now: MultiLength(
           long: 'this hour',
@@ -659,12 +659,12 @@ class DateFieldsEn implements DateFields {
             other: '{0} hours ago',
           ),
           short: RelativeTime(
-            one: '{0} hr. ago',
-            other: '{0} hr. ago',
+            one: '{0} hr ago',
+            other: '{0} hr ago',
           ),
           narrow: RelativeTime(
-            one: '{0} hr. ago',
-            other: '{0} hr. ago',
+            one: '{0} hr ago',
+            other: '{0} hr ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -673,12 +673,12 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} hours',
           ),
           short: RelativeTime(
-            one: 'in {0} hr.',
-            other: 'in {0} hr.',
+            one: 'in {0} hr',
+            other: 'in {0} hr',
           ),
           narrow: RelativeTime(
-            one: 'in {0} hr.',
-            other: 'in {0} hr.',
+            one: 'in {0} hr',
+            other: 'in {0} hr',
           ),
         ),
       );
@@ -687,8 +687,8 @@ class DateFieldsEn implements DateFields {
   DateFieldDataTime get minute => DateFieldDataTime(
         displayName: MultiLength(
           long: 'minute',
-          short: 'min.',
-          narrow: 'min.',
+          short: 'min',
+          narrow: 'min',
         ),
         now: MultiLength(
           long: 'this minute',
@@ -701,12 +701,12 @@ class DateFieldsEn implements DateFields {
             other: '{0} minutes ago',
           ),
           short: RelativeTime(
-            one: '{0} min. ago',
-            other: '{0} min. ago',
+            one: '{0} min ago',
+            other: '{0} min ago',
           ),
           narrow: RelativeTime(
-            one: '{0} min. ago',
-            other: '{0} min. ago',
+            one: '{0} min ago',
+            other: '{0} min ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -715,12 +715,12 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} minutes',
           ),
           short: RelativeTime(
-            one: 'in {0} min.',
-            other: 'in {0} min.',
+            one: 'in {0} min',
+            other: 'in {0} min',
           ),
           narrow: RelativeTime(
-            one: 'in {0} min.',
-            other: 'in {0} min.',
+            one: 'in {0} min',
+            other: 'in {0} min',
           ),
         ),
       );
@@ -729,8 +729,8 @@ class DateFieldsEn implements DateFields {
   DateFieldDataTime get second => DateFieldDataTime(
         displayName: MultiLength(
           long: 'second',
-          short: 'sec.',
-          narrow: 'sec.',
+          short: 'sec',
+          narrow: 'sec',
         ),
         now: MultiLength(
           long: 'now',
@@ -743,12 +743,12 @@ class DateFieldsEn implements DateFields {
             other: '{0} seconds ago',
           ),
           short: RelativeTime(
-            one: '{0} sec. ago',
-            other: '{0} sec. ago',
+            one: '{0} sec ago',
+            other: '{0} sec ago',
           ),
           narrow: RelativeTime(
-            one: '{0} sec. ago',
-            other: '{0} sec. ago',
+            one: '{0} sec ago',
+            other: '{0} sec ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -757,12 +757,12 @@ class DateFieldsEn implements DateFields {
             other: 'in {0} seconds',
           ),
           short: RelativeTime(
-            one: 'in {0} sec.',
-            other: 'in {0} sec.',
+            one: 'in {0} sec',
+            other: 'in {0} sec',
           ),
           narrow: RelativeTime(
-            one: 'in {0} sec.',
-            other: 'in {0} sec.',
+            one: 'in {0} sec',
+            other: 'in {0} sec',
           ),
         ),
       );

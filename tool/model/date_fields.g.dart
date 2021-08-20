@@ -7,7 +7,7 @@ part of 'date_fields.dart';
 // **************************************************************************
 
 DateField _$DateFieldFromJson(Map<String, dynamic> json) => DateField(
-      json['displayName'] as String,
+      json['displayName'] as String?,
       json['relative-type--1'] as String?,
       json['relative-type-0'] as String?,
       json['relative-type-1'] as String?,
