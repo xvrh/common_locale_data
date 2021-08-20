@@ -1,0 +1,49 @@
+import 'dart:io';
+
+import 'package:http/http.dart' as http;
+import 'supported_locales.dart';
+import 'package:path/path.dart' as p;
+import 'package:pedantic/pedantic.dart';
+import 'package:pool/pool.dart';
+
+void main() async {
+  final _sets = <String, Set<String>>{
+    'units': {'units'},
+    'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
+    'localenames': {'languages', 'territories'},
+    'misc': {'characters', 'listPatterns'},
+  };
+
+  var dataDirectory = Directory('tool/data');
+  if (dataDirectory.existsSync()) {
+    dataDirectory.deleteSync(recursive: true);
+  }
+  var client = http.Client();
+  var pool = Pool(10);
+
+  for (var set in _sets.keys) {
+    for (var file in _sets[set]!) {
+      for (var locale in supportedLocales) {
+        unawaited(pool.withResource(() async {
+          var url =
+              'https://raw.githubusercontent.com/unicode-cldr/cldr-$set-modern/master/main/$locale/$file.json';
+          var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
+          if (!directory.existsSync()) {
+            directory.createSync(recursive: true);
+          }
+          var request = http.Request('get', Uri.parse(url));
+          var response = await client.send(request);
+          if (response.statusCode >= 400) {
+            throw Exception(
+                '${response.statusCode} ${response.reasonPhrase} $url');
+          }
+
+          await response.stream
+              .pipe(File(p.join(directory.path, '$locale.json')).openWrite());
+        }));
+      }
+    }
+  }
+
+  await pool.close();
+}
