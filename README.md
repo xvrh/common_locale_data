@@ -1,19 +1,20 @@
-This package provide access to the Common Locale Data Repository in a typed and tree-shakable way.
+This packages provides a type-safe and tree-shakable way to access translated common data (measurement units etc...).  
+The translations are extracted from the Common Locale Data Repository (CLDR).
 
 Information provided by this package in all supported languages:
 - Relative time (ie: "3 minutes ago")
 - Units (duration, length, weight, etc...) (ie: "5 kilometers")
 
-## Relative time
-
-## Units
-
-## Supported languages
-xx,xx,xx,xx,xx
+## Available data
+- Measurement unit
+- Time unit
+- Country names
+- Language names
 
 ## Tree-shaking
-All the data are encoded as constants in Dart code.
-In order to preserve tree-shaking (your program don't want ), the API explicitly ask you to 
+
+All the data and translations are stored as literal strings in the code. The APIs are designed to be fully 
+tree-shakeable. The final application's code won't include the code for languages you don't use.
 
 ## Source
 All the data are extracted from this subrepositories:

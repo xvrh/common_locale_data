@@ -3,7 +3,7 @@
     "en-GB": {
       "identity": {
         "version": {
-          "_cldrVersion": "37"
+          "_cldrVersion": "39"
         },
         "language": "en",
         "territory": "GB"
@@ -476,7 +476,6 @@
           "ro-MD": "Moldavian",
           "rof": "Rombo",
           "rom": "Romany",
-          "root": "Root",
           "rtm": "Rotuman",
           "ru": "Russian",
           "rue": "Rusyn",
@@ -486,7 +485,7 @@
           "rwk": "Rwa",
           "sa": "Sanskrit",
           "sad": "Sandawe",
-          "sah": "Sakha",
+          "sah": "Yakut",
           "sam": "Samaritan Aramaic",
           "saq": "Samburu",
           "sas": "Sasak",

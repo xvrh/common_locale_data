@@ -26,7 +26,7 @@ void main() async {
       for (var locale in supportedLocales) {
         unawaited(pool.withResource(() async {
           var url =
-              'https://raw.githubusercontent.com/unicode-cldr/cldr-$set-modern/master/main/$locale/$file.json';
+              'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set-modern/main/$locale/$file.json';
           var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
           if (!directory.existsSync()) {
             directory.createSync(recursive: true);

@@ -50,7 +50,7 @@ void generateDateFields(String language, StringBuffer buffer) {
 
     String relative(RelativeTimePattern Function(DateField) callbackRelative) {
       return 'MultiLengthRelativeTime(${eachLength((f) {
-        var code = 'RelativeTime(';
+        var code = "RelativeTime('$language',";
         var relative = callbackRelative(f);
         for (var plural in plurals) {
           var pluralValue = relative.getForName(plural);
@@ -82,8 +82,10 @@ void generateDateFields(String language, StringBuffer buffer) {
 
       if (field.relativeTypeMinus1 == null) {
         returnType = 'DateFieldDataTime';
-      } else {
+      } else if (field.displayName == null) {
         returnType = 'DateFieldDataWithRelative';
+      } else {
+        returnType = 'DateFieldFullData';
       }
 
       fieldCode =

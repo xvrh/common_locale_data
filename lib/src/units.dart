@@ -1,18 +1,58 @@
-abstract class Units {}
+import 'package:intl/intl.dart';
 
-abstract class UnitsDuration {
-  Unit get hour;
-}
+export 'units_model.dart';
 
 class Unit {
-  final MultiLength displayName;
-}
+  UnitCountPattern long, short, narrow;
 
-class MultiLength {
-  final String long, short, narrow;
-
-  MultiLength({this.long, this.short, this.narrow});
+  Unit({required this.long, required this.short, required this.narrow});
 
   @override
-  String toString() => long;
+  String toString() => short.displayName;
+}
+
+class UnitCountPattern {
+  final String _locale;
+  final String displayName;
+  final String other;
+  final String? one, zero, two, few, many;
+
+  UnitCountPattern(
+    this._locale,
+    this.displayName, {
+    this.one,
+    required this.other,
+    this.zero,
+    this.two,
+    this.few,
+    this.many,
+  });
+
+  String format(num howMany,
+      {NumberFormat? numberFormat, String? placeholder}) {
+    return call(howMany, numberFormat: numberFormat, placeholder: placeholder);
+  }
+
+  String call(num howMany, {NumberFormat? numberFormat, String? placeholder}) {
+    assert(numberFormat == null || placeholder == null);
+
+    var message = Intl.plural(
+      howMany,
+      zero: zero,
+      one: one,
+      two: two,
+      few: few,
+      many: many,
+      other: other,
+      locale: _locale,
+    );
+
+    numberFormat ??= NumberFormat.decimalPattern(_locale);
+    placeholder ??= numberFormat.format(howMany);
+
+    return message.replaceAll('{0}', placeholder);
+  }
+
+  @override
+  String toString([num? howMany]) => call(howMany ?? 1);
 }

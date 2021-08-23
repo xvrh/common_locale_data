@@ -1,14 +1,14 @@
+import 'package:common_locale_data/src/shared.dart';
 import 'package:intl/intl.dart';
-import 'package:meta/meta.dart';
 
 abstract class DateFields {
   MultiLength get era;
-  DateFieldDataWithRelative get year;
-  DateFieldDataWithRelative get quarter;
-  DateFieldDataWithRelative get month;
-  DateFieldDataWithRelative get week;
+  DateFieldFullData get year;
+  DateFieldFullData get quarter;
+  DateFieldFullData get month;
+  DateFieldFullData get week;
   MultiLength get weekOfMonth;
-  DateFieldDataWithRelative get day;
+  DateFieldFullData get day;
 
   MultiLength get dayOfYear;
 
@@ -32,62 +32,58 @@ abstract class DateFields {
 }
 
 class DateFieldData {
-  final MultiLength displayName;
   final MultiLength now;
 
-  DateFieldData({required this.displayName, required this.now});
+  DateFieldData({required this.now});
+}
+
+class DateFieldDataWithRelative extends DateFieldData {
+  final MultiLength previous, next;
+  final MultiLengthRelativeTime past, future;
+
+  DateFieldDataWithRelative({
+    required MultiLength now,
+    required this.previous,
+    required this.next,
+    required this.past,
+    required this.future,
+  }) : super(now: now);
+}
+
+class DateFieldFullData extends DateFieldDataWithRelative {
+  final MultiLength displayName;
+
+  DateFieldFullData({
+    required this.displayName,
+    required MultiLength now,
+    required MultiLength previous,
+    required MultiLength next,
+    required MultiLengthRelativeTime past,
+    required MultiLengthRelativeTime future,
+  }) : super(
+            now: now,
+            previous: previous,
+            next: next,
+            past: past,
+            future: future);
 
   @override
   String toString() => displayName.toString();
 }
 
-class DateFieldDataWithPreviousNext extends DateFieldData {
-  final MultiLength previous, next;
-
-  DateFieldDataWithPreviousNext({
-    required MultiLength displayName,
-    required MultiLength now,
-    required this.previous,
-    required this.next,
-  }) : super(displayName: displayName, now: now);
-}
-
-class DateFieldDataWithRelative extends DateFieldDataWithPreviousNext {
-  final MultiLengthRelativeTime past, future;
-
-  DateFieldDataWithRelative({
-    required MultiLength displayName,
-    required MultiLength now,
-    required MultiLength previous,
-    required MultiLength next,
-    required this.past,
-    required this.future,
-  }) : super(
-            displayName: displayName, now: now, previous: previous, next: next);
-}
-
 class DateFieldDataTime extends DateFieldData {
+  final MultiLength displayName;
   final MultiLengthRelativeTime past, future;
 
   DateFieldDataTime({
-    required MultiLength displayName,
+    required this.displayName,
     required MultiLength now,
     required this.past,
     required this.future,
-  }) : super(displayName: displayName, now: now);
-}
-
-class MultiLength {
-  final String long, short, narrow;
-
-  MultiLength({
-    required this.long,
-    required this.short,
-    required this.narrow,
-  });
+  }) : super(now: now);
 
   @override
-  String toString() => long;
+  String toString() => displayName.toString();
 }
 
 class MultiLengthRelativeTime {
@@ -108,13 +104,13 @@ class MultiLengthRelativeTime {
       long(howMany, numberFormat: numberFormat, placeholder: placeholder);
 }
 
-final _defaultFormat = NumberFormat()..maximumFractionDigits = 0;
-
 class RelativeTime {
+  final String _locale;
   final String one, other;
   final String? zero, two, few, many;
 
-  RelativeTime({
+  RelativeTime(
+    this._locale, {
     required this.one,
     required this.other,
     this.zero,
@@ -131,10 +127,18 @@ class RelativeTime {
   String call(num howMany, {NumberFormat? numberFormat, String? placeholder}) {
     assert(numberFormat == null || placeholder == null);
 
-    var message = Intl.plural(howMany,
-        zero: zero, one: one, two: two, few: few, many: many, other: other);
+    var message = Intl.plural(
+      howMany,
+      zero: zero,
+      one: one,
+      two: two,
+      few: few,
+      many: many,
+      other: other,
+      locale: _locale,
+    );
 
-    numberFormat ??= _defaultFormat;
+    numberFormat ??= NumberFormat.decimalPattern(_locale);
     placeholder ??= numberFormat.format(howMany);
 
     return message.replaceAll('{0}', placeholder);
