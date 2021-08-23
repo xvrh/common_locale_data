@@ -3,8 +3,12 @@ import '../date_fields.dart';
 import '../units.dart';
 import '../shared.dart';
 
+const _locale = 'en-GB';
+
 class CommonLocaleDataEnGB implements CommonLocaleData {
-  String get locale => 'en-GB';
+  String get locale => _locale;
+
+  const CommonLocaleDataEnGB();
 
   static final _dateFields = DateFieldsEnGB._();
   @override
@@ -21,19 +25,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get accelerationGForce => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'g-force',
           one: '{0} g-force',
           other: '{0} g-force',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'g-force',
           one: '{0} G',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'g-force',
           one: '{0}G',
           other: '{0}Gs',
@@ -43,19 +47,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get accelerationMeterPerSquareSecond => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres per second squared',
           one: '{0} metre per second squared',
           other: '{0} metres per second squared',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres/sec²',
           one: '{0} m/s²',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'm/s²',
           one: '{0}m/s²',
           other: '{0}m/s²',
@@ -65,19 +69,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'revolution',
           one: '{0} revolution',
           other: '{0} revolutions',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'rev',
           one: '{0} rev',
           other: '{0} revs',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'rev',
           one: '{0}rev',
           other: '{0}rev',
@@ -87,19 +91,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get angleRadian => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'radians',
           one: '{0} radian',
           other: '{0} radians',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'radians',
           one: '{0} rad',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'rad',
           one: '{0}rad',
           other: '{0}rad',
@@ -109,19 +113,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get angleDegree => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'degrees',
           one: '{0} degree',
           other: '{0} degrees',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'degrees',
           one: '{0} deg',
           other: '{0} deg',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'deg',
           one: '{0}°',
           other: '{0}°',
@@ -131,19 +135,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get angleArcMinute => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'arcminutes',
           one: '{0} arcminute',
           other: '{0} arcminutes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'arcmins',
           one: '{0} arcmin',
           other: '{0} arcmins',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'arcmin',
           one: '{0}′',
           other: '{0}′',
@@ -153,19 +157,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get angleArcSecond => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'arcseconds',
           one: '{0} arcsecond',
           other: '{0} arcseconds',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'arcsecs',
           one: '{0} arcsec',
           other: '{0} arcsecs',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'arcsec',
           one: '{0}″',
           other: '{0}″',
@@ -175,19 +179,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaSquareKilometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'square kilometres',
           one: '{0} square kilometre',
           other: '{0} square kilometres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km²',
           one: '{0} km²',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km²',
           one: '{0}km²',
           other: '{0}km²',
@@ -197,19 +201,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaHectare => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hectares',
           one: '{0} hectare',
           other: '{0} hectares',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hectares',
           one: '{0} ha',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hectare',
           one: '{0}ha',
           other: '{0}ha',
@@ -219,19 +223,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaSquareMeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'square metres',
           one: '{0} square metre',
           other: '{0} square metres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres²',
           one: '{0} m²',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres²',
           one: '{0}m²',
           other: '{0}m²',
@@ -241,19 +245,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaSquareCentimeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'square centimetres',
           one: '{0} square centimetre',
           other: '{0} square centimetres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cm²',
           one: '{0} cm²',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cm²',
           one: '{0}cm²',
           other: '{0}cm²',
@@ -263,19 +267,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaSquareMile => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'square miles',
           one: '{0} square mile',
           other: '{0} square miles',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'sq miles',
           one: '{0} sq mi',
           other: '{0} sq mi',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mi²',
           one: '{0}mi²',
           other: '{0}mi²',
@@ -285,19 +289,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaAcre => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'acres',
           one: '{0} acre',
           other: '{0} acres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'acres',
           one: '{0} ac',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'acre',
           one: '{0}ac',
           other: '{0}ac',
@@ -307,19 +311,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaSquareYard => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'square yards',
           one: '{0} square yard',
           other: '{0} square yards',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yards²',
           one: '{0} yd²',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yd²',
           one: '{0}yd²',
           other: '{0}yd²',
@@ -329,19 +333,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaSquareFoot => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'square feet',
           one: '{0} square foot',
           other: '{0} square feet',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'sq feet',
           one: '{0} sq ft',
           other: '{0} sq ft',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ft²',
           one: '{0}ft²',
           other: '{0}ft²',
@@ -351,19 +355,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaSquareInch => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'square inches',
           one: '{0} square inch',
           other: '{0} square inches',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'inches²',
           one: '{0} in²',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'in²',
           one: '{0}in²',
           other: '{0}in²',
@@ -373,19 +377,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get areaDunam => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dunams',
           one: '{0} dunam',
           other: '{0} dunams',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dunams',
           one: '{0} dunam',
           other: '{0} dunam',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dunam',
           one: '{0}dunam',
           other: '{0}dunam',
@@ -395,19 +399,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrKarat => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'carat',
           one: '{0} carat',
           other: '{0} carats',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'carats',
           one: '{0} ct',
           other: '{0} ct',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'karat',
           one: '{0}kt',
           other: '{0}kt',
@@ -417,19 +421,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'milligrams per decilitre',
           one: '{0} milligram per decilitre',
           other: '{0} milligrams per decilitre',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mg/dl',
           one: '{0} mg/dl',
           other: '{0} mg/dl',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mg/dl',
           one: '{0}mg/dl',
           other: '{0}mg/dl',
@@ -439,19 +443,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrMillimolePerLiter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'millimoles per litre',
           one: '{0} millimole per litre',
           other: '{0} millimoles per litre',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'millimole/litre',
           one: '{0} mmol/l',
           other: '{0} mmol/l',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mmol/l',
           one: '{0}mmol/l',
           other: '{0}mmol/l',
@@ -461,19 +465,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'parts per million',
           one: '{0} part per million',
           other: '{0} parts per million',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'parts/million',
           one: '{0} ppm',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ppm',
           one: '{0}ppm',
           other: '{0}ppm',
@@ -483,19 +487,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrPercent => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'per cent',
           one: '{0} per cent',
           other: '{0} per cent',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'per cent',
           one: '{0}%',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           '%',
           one: '{0}%',
           other: '{0}%',
@@ -505,19 +509,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrPermille => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'per mille',
           one: '{0} per mille',
           other: '{0} per mille',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'per mille',
           one: '{0}‰',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           '‰',
           one: '{0}‰',
           other: '{0}‰',
@@ -527,19 +531,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrPermyriad => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'permyriad',
           one: '{0} permyriad',
           other: '{0} permyriad',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'permyriad',
           one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           '‱',
           one: '{0}‱',
           other: '{0}‱',
@@ -549,19 +553,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get concentrMole => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'moles',
           one: '{0} mole',
           other: '{0} moles',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mole',
           one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mol',
           one: '{0}mol',
           other: '{0}mol',
@@ -571,19 +575,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get consumptionLiterPerKilometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'litres per kilometre',
           one: '{0} litre per kilometre',
           other: '{0} litres per kilometre',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'litres/km',
           one: '{0} l/km',
           other: '{0} l/km',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'l/km',
           one: '{0}l/km',
           other: '{0}l/km',
@@ -593,19 +597,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get consumptionLiterPer100Kilometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'litres per 100 kilometres',
           one: '{0} litre per 100 kilometres',
           other: '{0} litres per 100 kilometres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'l/100 km',
           one: '{0} l/100 km',
           other: '{0} l/100 km',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'l/100km',
           one: '{0}l/100km',
           other: '{0}l/100km',
@@ -615,19 +619,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get consumptionMilePerGallon => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles per US gallon',
           one: '{0} mile per US gallon',
           other: '{0} miles per US gallon',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles/US gal',
           one: '{0} mpg US',
           other: '{0} mpg US',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mpg US',
           one: '{0}mpgUS',
           other: '{0}mpgUS',
@@ -637,19 +641,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get consumptionMilePerGallonImperial => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles per gallon',
           one: '{0} mile per gallon',
           other: '{0} miles per gallon',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles/gal',
           one: '{0} mpg',
           other: '{0} mpg',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mpg',
           one: '{0}mpg',
           other: '{0}mpg',
@@ -659,19 +663,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalPetabyte => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'petabytes',
           one: '{0} petabyte',
           other: '{0} petabytes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'PByte',
           one: '{0} PB',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'PB',
           one: '{0}PB',
           other: '{0}PB',
@@ -681,19 +685,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalTerabyte => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'terabytes',
           one: '{0} terabyte',
           other: '{0} terabytes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'TByte',
           one: '{0} TB',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'TB',
           one: '{0}TB',
           other: '{0}TB',
@@ -703,19 +707,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalTerabit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'terabits',
           one: '{0} terabit',
           other: '{0} terabits',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Tbit',
           one: '{0} Tb',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Tb',
           one: '{0}Tb',
           other: '{0}Tb',
@@ -725,19 +729,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalGigabyte => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gigabytes',
           one: '{0} gigabyte',
           other: '{0} gigabytes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'GByte',
           one: '{0} GB',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'GB',
           one: '{0}GB',
           other: '{0}GB',
@@ -747,19 +751,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalGigabit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gigabits',
           one: '{0} gigabit',
           other: '{0} gigabits',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Gbit',
           one: '{0} Gb',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Gb',
           one: '{0}Gb',
           other: '{0}Gb',
@@ -769,19 +773,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalMegabyte => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megabytes',
           one: '{0} megabyte',
           other: '{0} megabytes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MByte',
           one: '{0} MB',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MB',
           one: '{0}MB',
           other: '{0}MB',
@@ -791,19 +795,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalMegabit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megabits',
           one: '{0} megabit',
           other: '{0} megabits',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Mbit',
           one: '{0} Mb',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Mb',
           one: '{0}Mb',
           other: '{0}Mb',
@@ -813,19 +817,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalKilobyte => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilobytes',
           one: '{0} kilobyte',
           other: '{0} kilobytes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kByte',
           one: '{0} kB',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kB',
           one: '{0}kB',
           other: '{0}kB',
@@ -835,19 +839,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalKilobit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilobits',
           one: '{0} kilobit',
           other: '{0} kilobits',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kbit',
           one: '{0} kb',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kb',
           one: '{0}kb',
           other: '{0}kb',
@@ -857,19 +861,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalByte => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bytes',
           one: '{0} byte',
           other: '{0} bytes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'byte',
           one: '{0} byte',
           other: '{0} byte',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'B',
           one: '{0}B',
           other: '{0}B',
@@ -879,19 +883,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get digitalBit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bits',
           one: '{0} bit',
           other: '{0} bits',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bit',
           one: '{0} bit',
           other: '{0} bit',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bit',
           one: '{0}bit',
           other: '{0}bit',
@@ -901,19 +905,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationCentury => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'centuries',
           one: '{0} century',
           other: '{0} centuries',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'c',
           one: '{0} c',
           other: '{0} c',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'c',
           one: '{0}c',
           other: '{0}c',
@@ -923,19 +927,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationDecade => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'decades',
           one: '{0} decade',
           other: '{0} decades',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dec',
           one: '{0} dec',
           other: '{0} dec',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dec',
           one: '{0}dec',
           other: '{0}dec',
@@ -945,19 +949,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationYear => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'years',
           one: '{0} year',
           other: '{0} years',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'years',
           one: '{0} yr',
           other: '{0} yrs',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yr',
           one: '{0}y',
           other: '{0}y',
@@ -967,19 +971,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'months',
           one: '{0} month',
           other: '{0} months',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'months',
           one: '{0} mth',
           other: '{0} mths',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'month',
           one: '{0}m',
           other: '{0}m',
@@ -989,19 +993,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationWeek => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'weeks',
           one: '{0} week',
           other: '{0} weeks',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'weeks',
           one: '{0} wk',
           other: '{0} wks',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'wk',
           one: '{0}w',
           other: '{0}w',
@@ -1011,19 +1015,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationDay => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'days',
           one: '{0} day',
           other: '{0} days',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'days',
           one: '{0} day',
           other: '{0} days',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'day',
           one: '{0}d',
           other: '{0}d',
@@ -1033,19 +1037,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationHour => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hours',
           one: '{0} hour',
           other: '{0} hours',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hours',
           one: '{0} hr',
           other: '{0} hrs',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hour',
           one: '{0}h',
           other: '{0}h',
@@ -1055,19 +1059,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationMinute => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'minutes',
           one: '{0} minute',
           other: '{0} minutes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mins',
           one: '{0} min',
           other: '{0} mins',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'min',
           one: '{0}m',
           other: '{0}m',
@@ -1077,19 +1081,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationSecond => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'seconds',
           one: '{0} second',
           other: '{0} seconds',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'secs',
           one: '{0} sec',
           other: '{0} secs',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'sec',
           one: '{0}s',
           other: '{0}s',
@@ -1099,19 +1103,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationMillisecond => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'milliseconds',
           one: '{0} millisecond',
           other: '{0} milliseconds',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'millisecs',
           one: '{0} ms',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'msec',
           one: '{0}ms',
           other: '{0}ms',
@@ -1121,19 +1125,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationMicrosecond => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'microseconds',
           one: '{0} microsecond',
           other: '{0} microseconds',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'μsecs',
           one: '{0} μs',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'μsec',
           one: '{0}μs',
           other: '{0}μs',
@@ -1143,19 +1147,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get durationNanosecond => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nanoseconds',
           one: '{0} nanosecond',
           other: '{0} nanoseconds',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nanosecs',
           one: '{0} ns',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ns',
           one: '{0}ns',
           other: '{0}ns',
@@ -1165,19 +1169,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get electricAmpere => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'amperes',
           one: '{0} ampere',
           other: '{0} amperes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'amps',
           one: '{0} A',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'amp',
           one: '{0}A',
           other: '{0}A',
@@ -1187,19 +1191,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get electricMilliampere => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'milliamperes',
           one: '{0} milliampere',
           other: '{0} milliamperes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'milliamps',
           one: '{0} mA',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mA',
           one: '{0}mA',
           other: '{0}mA',
@@ -1209,19 +1213,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get electricOhm => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ohms',
           one: '{0} ohm',
           other: '{0} ohms',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ohms',
           one: '{0} Ω',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ohm',
           one: '{0}Ω',
           other: '{0}Ω',
@@ -1231,19 +1235,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get electricVolt => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'volts',
           one: '{0} volt',
           other: '{0} volts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'volts',
           one: '{0} V',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'volt',
           one: '{0}V',
           other: '{0}V',
@@ -1253,19 +1257,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyKilocalorie => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilocalories',
           one: '{0} kilocalorie',
           other: '{0} kilocalories',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kcal',
           one: '{0} kcal',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kcal',
           one: '{0}kcal',
           other: '{0}kcal',
@@ -1275,19 +1279,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyCalorie => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'calories',
           one: '{0} calorie',
           other: '{0} calories',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cal',
           one: '{0} cal',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cal',
           one: '{0}cal',
           other: '{0}cal',
@@ -1297,19 +1301,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyFoodcalorie => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Calories',
           one: '{0} Calorie',
           other: '{0} Calories',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Cal',
           one: '{0} Cal',
           other: '{0} Cal',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Cal',
           one: '{0}Cal',
           other: '{0}Cal',
@@ -1319,19 +1323,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyKilojoule => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilojoules',
           one: '{0} kilojoule',
           other: '{0} kilojoules',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilojoule',
           one: '{0} kJ',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kJ',
           one: '{0}kJ',
           other: '{0}kJ',
@@ -1341,19 +1345,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyJoule => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'joules',
           one: '{0} joule',
           other: '{0} joules',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'joules',
           one: '{0} J',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'joule',
           one: '{0}J',
           other: '{0}J',
@@ -1363,19 +1367,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyKilowattHour => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilowatt-hours',
           one: '{0} kilowatt-hour',
           other: '{0} kilowatt-hours',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kW-hour',
           one: '{0} kWh',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kWh',
           one: '{0}kWh',
           other: '{0}kWh',
@@ -1385,19 +1389,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyElectronvolt => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'electronvolts',
           one: '{0} electronvolt',
           other: '{0} electronvolts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'electronvolt',
           one: '{0} eV',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'eV',
           one: '{0}eV',
           other: '{0}eV',
@@ -1407,19 +1411,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyBritishThermalUnit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'British thermal units',
           one: '{0} British thermal unit',
           other: '{0} British thermal units',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'BTU',
           one: '{0} Btu',
           other: '{0} Btu',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'BTU',
           one: '{0}Btu',
           other: '{0}Btu',
@@ -1429,19 +1433,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get energyThermUs => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US therms',
           one: '{0} US therm',
           other: '{0} US therms',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US therm',
           one: '{0} US therm',
           other: '{0} US therms',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US therm',
           one: '{0}US therm',
           other: '{0}US therms',
@@ -1451,19 +1455,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get forcePoundForce => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pounds of force',
           one: '{0} pound of force',
           other: '{0} pounds of force',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pound-force',
           one: '{0} lbf',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lbf',
           one: '{0}lbf',
           other: '{0}lbf',
@@ -1473,19 +1477,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get forceNewton => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'newtons',
           one: '{0} newton',
           other: '{0} newtons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'newton',
           one: '{0} N',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'N',
           one: '{0}N',
           other: '{0}N',
@@ -1495,19 +1499,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gigahertz',
           one: '{0} gigahertz',
           other: '{0} gigahertz',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'GHz',
           one: '{0} GHz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'GHz',
           one: '{0}GHz',
           other: '{0}GHz',
@@ -1517,19 +1521,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get frequencyMegahertz => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megahertz',
           one: '{0} megahertz',
           other: '{0} megahertz',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MHz',
           one: '{0} MHz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MHz',
           one: '{0}MHz',
           other: '{0}MHz',
@@ -1539,19 +1543,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get frequencyKilohertz => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilohertz',
           one: '{0} kilohertz',
           other: '{0} kilohertz',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kHz',
           one: '{0} kHz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kHz',
           one: '{0}kHz',
           other: '{0}kHz',
@@ -1561,19 +1565,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get frequencyHertz => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hertz',
           one: '{0} hertz',
           other: '{0} hertz',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Hz',
           one: '{0} Hz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Hz',
           one: '{0}Hz',
           other: '{0}Hz',
@@ -1583,19 +1587,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsEm => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'typographic em',
           one: '{0} em',
           other: '{0} ems',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'em',
           one: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'em',
           one: '{0}em',
           other: '{0}em',
@@ -1605,19 +1609,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsPixel => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pixels',
           one: '{0} pixel',
           other: '{0} pixels',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pixels',
           one: '{0} px',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'px',
           one: '{0}px',
           other: '{0}px',
@@ -1627,19 +1631,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsMegapixel => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megapixels',
           one: '{0} megapixel',
           other: '{0} megapixels',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megapixels',
           one: '{0} MP',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MP',
           one: '{0}MP',
           other: '{0}MP',
@@ -1649,19 +1653,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsPixelPerCentimeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pixels per centimetre',
           one: '{0} pixel per centimetre',
           other: '{0} pixels per centimetre',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ppcm',
           one: '{0} ppcm',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ppcm',
           one: '{0}ppcm',
           other: '{0}ppcm',
@@ -1671,19 +1675,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsPixelPerInch => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pixels per inch',
           one: '{0} pixel per inch',
           other: '{0} pixels per inch',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ppi',
           one: '{0} ppi',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ppi',
           one: '{0}ppi',
           other: '{0}ppi',
@@ -1693,19 +1697,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dots per centimetre',
           one: '{0} dot per centimetre',
           other: '{0} dots per centimetre',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dpcm',
           one: '{0} dpcm',
           other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dpcm',
           one: '{0}dpcm',
           other: '{0}dpcm',
@@ -1715,19 +1719,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dots per inch',
           one: '{0} dot per inch',
           other: '{0} dots per inch',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dpi',
           one: '{0} dpi',
           other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dpi',
           one: '{0}dpi',
           other: '{0}dpi',
@@ -1737,19 +1741,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dot',
           one: '{0} dot',
           other: '{0} dots',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dot',
           one: '{0} dot',
           other: '{0} dots',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dot',
           one: '{0}dot',
           other: '{0}dot',
@@ -1759,18 +1763,18 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'earth radius',
           one: '{0} earth radius',
           other: '{0} earth radii',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'R⊕',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'R⊕',
           one: '{0}R⊕',
           other: '{0}R⊕',
@@ -1780,19 +1784,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthKilometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilometres',
           one: '{0} kilometre',
           other: '{0} kilometres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km',
           one: '{0} km',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km',
           one: '{0}km',
           other: '{0}km',
@@ -1802,19 +1806,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthMeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres',
           one: '{0} metre',
           other: '{0} metres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres',
           one: '{0} m',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metre',
           one: '{0}m',
           other: '{0}m',
@@ -1824,19 +1828,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthDecimeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'decimetre',
           one: '{0} decimetre',
           other: '{0} decimetres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dm',
           one: '{0} dm',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dm',
           one: '{0}dm',
           other: '{0}dm',
@@ -1846,19 +1850,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthCentimeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'centimetres',
           one: '{0} centimetre',
           other: '{0} centimetres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cm',
           one: '{0} cm',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cm',
           one: '{0}cm',
           other: '{0}cm',
@@ -1868,19 +1872,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthMillimeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'millimetres',
           one: '{0} millimetre',
           other: '{0} millimetres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mm',
           one: '{0} mm',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mm',
           one: '{0}mm',
           other: '{0}mm',
@@ -1890,19 +1894,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthMicrometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'micrometre',
           one: '{0} micrometre',
           other: '{0} micrometres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'μmetres',
           one: '{0} μm',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'μm',
           one: '{0}μm',
           other: '{0}μm',
@@ -1912,19 +1916,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthNanometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nanometres',
           one: '{0} nanometre',
           other: '{0} nanometres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nm',
           one: '{0} nm',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nm',
           one: '{0}nm',
           other: '{0}nm',
@@ -1934,19 +1938,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthPicometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'picometres',
           one: '{0} picometre',
           other: '{0} picometres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pm',
           one: '{0} pm',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pm',
           one: '{0}pm',
           other: '{0}pm',
@@ -1956,19 +1960,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthMile => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles',
           one: '{0} mile',
           other: '{0} miles',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles',
           one: '{0} mi',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mi',
           one: '{0}mi',
           other: '{0}mi',
@@ -1978,19 +1982,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthYard => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yards',
           one: '{0} yard',
           other: '{0} yards',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yards',
           one: '{0} yd',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yd',
           one: '{0}yd',
           other: '{0}yd',
@@ -2000,19 +2004,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthFoot => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'feet',
           one: '{0} foot',
           other: '{0} feet',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'feet',
           one: '{0} ft',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ft',
           one: '{0}′',
           other: '{0}′',
@@ -2022,19 +2026,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthInch => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'inches',
           one: '{0} inch',
           other: '{0} inches',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'inches',
           one: '{0} in',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'in',
           one: '{0}″',
           other: '{0}″',
@@ -2044,19 +2048,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthParsec => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'parsecs',
           one: '{0} parsec',
           other: '{0} parsecs',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'parsecs',
           one: '{0} pc',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'parsec',
           one: '{0}pc',
           other: '{0}pc',
@@ -2066,19 +2070,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthLightYear => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'light years',
           one: '{0} light year',
           other: '{0} light years',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'light yrs',
           one: '{0} ly',
           other: '{0} ly',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ly',
           one: '{0}ly',
           other: '{0}ly',
@@ -2088,19 +2092,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthAstronomicalUnit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'astronomical units',
           one: '{0} astronomical unit',
           other: '{0} astronomical units',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'au',
           one: '{0} au',
           other: '{0} au',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'au',
           one: '{0}au',
           other: '{0}au',
@@ -2110,19 +2114,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthFurlong => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'furlongs',
           one: '{0} furlong',
           other: '{0} furlongs',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'furlongs',
           one: '{0} fur',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'furlong',
           one: '{0}fur',
           other: '{0}fur',
@@ -2132,19 +2136,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthFathom => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'fathoms',
           one: '{0} fathom',
           other: '{0} fathoms',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'fathoms',
           one: '{0} fth',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'fathom',
           one: '{0}fth',
           other: '{0}fth',
@@ -2154,19 +2158,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthNauticalMile => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nautical miles',
           one: '{0} nautical mile',
           other: '{0} nautical miles',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nmi',
           one: '{0} nmi',
           other: '{0} nmi',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'nmi',
           one: '{0}nmi',
           other: '{0}nmi',
@@ -2176,19 +2180,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthMileScandinavian => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Scandinavian mile',
           one: '{0} Scandinavian mile',
           other: '{0} Scandinavian miles',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'smi',
           one: '{0} smi',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'smi',
           one: '{0}smi',
           other: '{0}smi',
@@ -2198,19 +2202,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'points',
           one: '{0} point',
           other: '{0} points',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'points',
           one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pts',
           one: '{0}pt',
           other: '{0}pt',
@@ -2220,19 +2224,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lengthSolarRadius => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'solar radii',
           one: '{0} solar radius',
           other: '{0} solar radii',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'solar radii',
           one: '{0} R☉',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'R☉',
           one: '{0}R☉',
           other: '{0}R☉',
@@ -2242,19 +2246,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lightLux => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lux',
           one: '{0} lux',
           other: '{0} lux',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lux',
           one: '{0} lx',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lux',
           one: '{0}lx',
           other: '{0}lx',
@@ -2264,18 +2268,18 @@ class UnitsEnGB implements Units {
   @override
   Unit get lightCandela => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'candela',
           one: '{0} candela',
           other: '{0} candelas',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cd',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cd',
           one: '{0}cd',
           other: '{0}cd',
@@ -2285,18 +2289,18 @@ class UnitsEnGB implements Units {
   @override
   Unit get lightLumen => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lumen',
           one: '{0} lumen',
           other: '{0} lumens',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lm',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lm',
           one: '{0}lm',
           other: '{0}lm',
@@ -2306,19 +2310,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get lightSolarLuminosity => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'solar luminosities',
           one: '{0} solar luminosity',
           other: '{0} solar luminosities',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'solar luminosities',
           one: '{0} L☉',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'L☉',
           one: '{0}L☉',
           other: '{0}L☉',
@@ -2328,19 +2332,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massMetricTon => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tonnes',
           one: '{0} tonne',
           other: '{0} tonnes',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           't',
           one: '{0} t',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           't',
           one: '{0}t',
           other: '{0}t',
@@ -2350,19 +2354,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massKilogram => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilograms',
           one: '{0} kilogram',
           other: '{0} kilograms',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kg',
           one: '{0} kg',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kg',
           one: '{0}kg',
           other: '{0}kg',
@@ -2372,19 +2376,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massGram => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'grams',
           one: '{0} gram',
           other: '{0} grams',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'grams',
           one: '{0} g',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gram',
           one: '{0}g',
           other: '{0}g',
@@ -2394,19 +2398,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massMilligram => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'milligrams',
           one: '{0} milligram',
           other: '{0} milligrams',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mg',
           one: '{0} mg',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mg',
           one: '{0}mg',
           other: '{0}mg',
@@ -2416,19 +2420,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massMicrogram => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'micrograms',
           one: '{0} microgram',
           other: '{0} micrograms',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'μg',
           one: '{0} μg',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'μg',
           one: '{0}μg',
           other: '{0}μg',
@@ -2438,19 +2442,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massTon => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tons',
           one: '{0} ton',
           other: '{0} tons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tons',
           one: '{0} tn',
           other: '{0} tn',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ton',
           one: '{0}tn',
           other: '{0}tn',
@@ -2460,19 +2464,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massStone => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'stone',
           one: '{0} stone',
           other: '{0} stone',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'stone',
           one: '{0} st',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'stone',
           one: '{0}st',
           other: '{0}st',
@@ -2482,19 +2486,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massPound => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pounds',
           one: '{0} pound',
           other: '{0} pounds',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pounds',
           one: '{0} lb',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lb',
           one: '{0}lb',
           other: '{0}lb',
@@ -2504,19 +2508,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massOunce => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ounces',
           one: '{0} ounce',
           other: '{0} ounces',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'oz',
           one: '{0} oz',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'oz',
           one: '{0}oz',
           other: '{0}oz',
@@ -2526,19 +2530,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massOunceTroy => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'troy ounces',
           one: '{0} troy ounce',
           other: '{0} troy ounces',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'oz troy',
           one: '{0} oz t',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'oz t',
           one: '{0}oz t',
           other: '{0}oz t',
@@ -2548,19 +2552,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massCarat => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'carats',
           one: '{0} carat',
           other: '{0} carats',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'carats',
           one: '{0} ct',
           other: '{0} ct',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'carat',
           one: '{0}CD',
           other: '{0}CD',
@@ -2570,19 +2574,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massDalton => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'daltons',
           one: '{0} dalton',
           other: '{0} daltons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'daltons',
           one: '{0} Da',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Da',
           one: '{0}Da',
           other: '{0}Da',
@@ -2592,19 +2596,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massEarthMass => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Earth masses',
           one: '{0} Earth mass',
           other: '{0} Earth masses',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Earth masses',
           one: '{0} M⊕',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'M⊕',
           one: '{0}M⊕',
           other: '{0}M⊕',
@@ -2614,19 +2618,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massSolarMass => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'solar masses',
           one: '{0} solar mass',
           other: '{0} solar masses',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'solar masses',
           one: '{0} M☉',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'M☉',
           one: '{0}M☉',
           other: '{0}M☉',
@@ -2636,19 +2640,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get massGrain => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'grain',
           one: '{0} grain',
           other: '{0} grains',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'grain',
           one: '{0} grains',
           other: '{0} grains',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gr',
           one: '{0}gr',
           other: '{0}gr',
@@ -2658,19 +2662,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get powerGigawatt => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gigawatts',
           one: '{0} gigawatt',
           other: '{0} gigawatts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'GW',
           one: '{0} GW',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'GW',
           one: '{0}GW',
           other: '{0}GW',
@@ -2680,19 +2684,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get powerMegawatt => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megawatts',
           one: '{0} megawatt',
           other: '{0} megawatts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MW',
           one: '{0} MW',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MW',
           one: '{0}MW',
           other: '{0}MW',
@@ -2702,19 +2706,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get powerKilowatt => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilowatts',
           one: '{0} kilowatt',
           other: '{0} kilowatts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kW',
           one: '{0} kW',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kW',
           one: '{0}kW',
           other: '{0}kW',
@@ -2724,19 +2728,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get powerWatt => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'watts',
           one: '{0} watt',
           other: '{0} watts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'watts',
           one: '{0} W',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'watt',
           one: '{0}W',
           other: '{0}W',
@@ -2746,19 +2750,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get powerMilliwatt => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'milliwatts',
           one: '{0} milliwatt',
           other: '{0} milliwatts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mW',
           one: '{0} mW',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mW',
           one: '{0}mW',
           other: '{0}mW',
@@ -2768,19 +2772,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get powerHorsepower => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'horsepower',
           one: '{0} horsepower',
           other: '{0} horsepower',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hp',
           one: '{0} hp',
           other: '{0} hp',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hp',
           one: '{0}hp',
           other: '{0}hp',
@@ -2790,19 +2794,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureMillimeterOfhg => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'millimetres of mercury',
           one: '{0} millimetre of mercury',
           other: '{0} millimetres of mercury',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mmHg',
           one: '{0} mmHg',
           other: '{0} mmHg',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mmHg',
           one: '{0}mmHg',
           other: '{0}mmHg',
@@ -2812,19 +2816,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressurePoundForcePerSquareInch => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pounds-force per square inch',
           one: '{0} pound-force per square inch',
           other: '{0} pounds-force per square inch',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'psi',
           one: '{0} psi',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'psi',
           one: '{0}psi',
           other: '{0}psi',
@@ -2834,19 +2838,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureInchOfhg => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'inches of mercury',
           one: '{0} inch of mercury',
           other: '{0} inches of mercury',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'inHg',
           one: '{0} inHg',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           '″ Hg',
           one: '{0}″ Hg',
           other: '{0}″ Hg',
@@ -2856,19 +2860,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureBar => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bars',
           one: '{0} bar',
           other: '{0} bars',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bar',
           one: '{0} bar',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bar',
           one: '{0}bar',
           other: '{0}bar',
@@ -2878,19 +2882,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureMillibar => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'millibars',
           one: '{0} millibar',
           other: '{0} millibars',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mbar',
           one: '{0} mbar',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mbar',
           one: '{0}mb',
           other: '{0}mb',
@@ -2900,19 +2904,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureAtmosphere => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'atmospheres',
           one: '{0} atmosphere',
           other: '{0} atmospheres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'atm',
           one: '{0} atm',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'atm',
           one: '{0}atm',
           other: '{0}atm',
@@ -2922,19 +2926,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressurePascal => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pascals',
           one: '{0} pascal',
           other: '{0} pascals',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Pa',
           one: '{0} Pa',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Pa',
           one: '{0}Pa',
           other: '{0}Pa',
@@ -2944,19 +2948,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureHectopascal => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hectopascals',
           one: '{0} hectopascal',
           other: '{0} hectopascals',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hPa',
           one: '{0} hPa',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hPa',
           one: '{0}hPa',
           other: '{0}hPa',
@@ -2966,19 +2970,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureKilopascal => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilopascals',
           one: '{0} kilopascal',
           other: '{0} kilopascals',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kPa',
           one: '{0} kPa',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kPa',
           one: '{0}kPa',
           other: '{0}kPa',
@@ -2988,19 +2992,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get pressureMegapascal => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megapascals',
           one: '{0} megapascal',
           other: '{0} megapascals',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MPa',
           one: '{0} MPa',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'MPa',
           one: '{0}MPa',
           other: '{0}MPa',
@@ -3010,19 +3014,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get speedKilometerPerHour => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kilometres per hour',
           one: '{0} kilometre per hour',
           other: '{0} kilometres per hour',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km/hour',
           one: '{0} km/h',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km/h',
           one: '{0}km/h',
           other: '{0}km/h',
@@ -3032,19 +3036,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get speedMeterPerSecond => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres per second',
           one: '{0} metre per second',
           other: '{0} metres per second',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metres/sec',
           one: '{0} m/s',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'm/s',
           one: '{0}m/s',
           other: '{0}m/s',
@@ -3054,19 +3058,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get speedMilePerHour => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles per hour',
           one: '{0} mile per hour',
           other: '{0} miles per hour',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'miles/hour',
           one: '{0} mph',
           other: '{0} mph',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mph',
           one: '{0}mph',
           other: '{0}mph',
@@ -3076,19 +3080,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get speedKnot => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'knots',
           one: '{0} knot',
           other: '{0} knots',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kn',
           one: '{0} kn',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kn',
           one: '{0}kn',
           other: '{0}kn',
@@ -3098,17 +3102,17 @@ class UnitsEnGB implements Units {
   @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'degree',
           other: '{0}°',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           '°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           '°',
           other: '{0}°',
         ),
@@ -3117,19 +3121,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get temperatureCelsius => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'degrees Celsius',
           one: '{0} degree Celsius',
           other: '{0} degrees Celsius',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'deg. C',
           one: '{0}°C',
           other: '{0}°C',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           '°C',
           one: '{0}°',
           other: '{0}°',
@@ -3139,19 +3143,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get temperatureFahrenheit => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'degrees Fahrenheit',
           one: '{0} degree Fahrenheit',
           other: '{0} degrees Fahrenheit',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'deg. F',
           one: '{0}°F',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           '°F',
           one: '{0}°F',
           other: '{0}°F',
@@ -3161,19 +3165,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get temperatureKelvin => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'kelvin',
           one: '{0} kelvin',
           other: '{0} kelvin',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'K',
           one: '{0} K',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'K',
           one: '{0}K',
           other: '{0}K',
@@ -3183,19 +3187,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pound-feet',
           one: '{0} pound-force-foot',
           other: '{0} pound-force-feet',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lbf⋅ft',
           one: '{0} lbf⋅ft',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'lbf⋅ft',
           one: '{0}lbf⋅ft',
           other: '{0}lbf⋅ft',
@@ -3205,19 +3209,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get torqueNewtonMeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'newton metres',
           one: '{0} newton metre',
           other: '{0} newton metres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'N⋅m',
           one: '{0} N⋅m',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'N⋅m',
           one: '{0}N⋅m',
           other: '{0}N⋅m',
@@ -3227,19 +3231,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCubicKilometer => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cubic kilometres',
           one: '{0} cubic kilometre',
           other: '{0} cubic kilometres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km³',
           one: '{0} km³',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'km³',
           one: '{0}km³',
           other: '{0}km³',
@@ -3249,19 +3253,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCubicMeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cubic metres',
           one: '{0} cubic metre',
           other: '{0} cubic metres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'm³',
           one: '{0} m³',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'm³',
           one: '{0}m³',
           other: '{0}m³',
@@ -3271,19 +3275,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCubicCentimeter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cubic centimetres',
           one: '{0} cubic centimetre',
           other: '{0} cubic centimetres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cm³',
           one: '{0} cm³',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cm³',
           one: '{0}cm³',
           other: '{0}cm³',
@@ -3293,19 +3297,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCubicMile => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cubic miles',
           one: '{0} cubic mile',
           other: '{0} cubic miles',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mi³',
           one: '{0} mi³',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mi³',
           one: '{0}mi³',
           other: '{0}mi³',
@@ -3315,19 +3319,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCubicYard => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cubic yards',
           one: '{0} cubic yard',
           other: '{0} cubic yards',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yards³',
           one: '{0} yd³',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'yd³',
           one: '{0}yd³',
           other: '{0}yd³',
@@ -3337,19 +3341,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCubicFoot => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cubic feet',
           one: '{0} cubic foot',
           other: '{0} cubic feet',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'feet³',
           one: '{0} ft³',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ft³',
           one: '{0}ft³',
           other: '{0}ft³',
@@ -3359,19 +3363,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCubicInch => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cubic inches',
           one: '{0} cubic inch',
           other: '{0} cubic inches',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'inches³',
           one: '{0} in³',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'in³',
           one: '{0}in³',
           other: '{0}in³',
@@ -3381,19 +3385,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeMegaliter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'megalitres',
           one: '{0} megalitre',
           other: '{0} megalitres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Ml',
           one: '{0} Ml',
           other: '{0} Ml',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Ml',
           one: '{0}Ml',
           other: '{0}Ml',
@@ -3403,19 +3407,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeHectoliter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hectolitres',
           one: '{0} hectolitre',
           other: '{0} hectolitres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hl',
           one: '{0} hl',
           other: '{0} hl',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'hl',
           one: '{0}hl',
           other: '{0}hl',
@@ -3425,19 +3429,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeLiter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'litres',
           one: '{0} litre',
           other: '{0} litres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'litres',
           one: '{0} l',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'litre',
           one: '{0}l',
           other: '{0}l',
@@ -3447,19 +3451,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeDeciliter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'decilitres',
           one: '{0} decilitre',
           other: '{0} decilitres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dl',
           one: '{0} dl',
           other: '{0} dl',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dl',
           one: '{0}dl',
           other: '{0}dl',
@@ -3469,19 +3473,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCentiliter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'centilitres',
           one: '{0} centilitre',
           other: '{0} centilitres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cl',
           one: '{0} cl',
           other: '{0} cl',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cl',
           one: '{0}cl',
           other: '{0}cl',
@@ -3491,19 +3495,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeMilliliter => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'millilitres',
           one: '{0} millilitre',
           other: '{0} millilitres',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ml',
           one: '{0} ml',
           other: '{0} ml',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'ml',
           one: '{0}ml',
           other: '{0}ml',
@@ -3513,19 +3517,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumePintMetric => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metric pints',
           one: '{0} metric pint',
           other: '{0} metric pints',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mpt',
           one: '{0} mpt',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pt',
           one: '{0}mpt',
           other: '{0}mpt',
@@ -3535,19 +3539,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCupMetric => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'metric cups',
           one: '{0} metric cup',
           other: '{0} metric cups',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mcup',
           one: '{0} mc',
           other: '{0} mc',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'mcup',
           one: '{0}mc',
           other: '{0}mc',
@@ -3557,19 +3561,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeAcreFoot => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'acre-feet',
           one: '{0} acre-foot',
           other: '{0} acre-feet',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'acre ft',
           one: '{0} ac ft',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'acre ft',
           one: '{0}ac ft',
           other: '{0}ac ft',
@@ -3579,19 +3583,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeBushel => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bushels',
           one: '{0} bushel',
           other: '{0} bushels',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bushels',
           one: '{0} bu',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bushel',
           one: '{0}bu',
           other: '{0}bu',
@@ -3601,19 +3605,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeGallon => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US gallons',
           one: '{0} US gallon',
           other: '{0} US gallons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US gal',
           one: '{0} US gal',
           other: '{0} US gal',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US gal',
           one: '{0}galUS',
           other: '{0}galUS',
@@ -3623,19 +3627,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeGallonImperial => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gallons',
           one: '{0} gallon',
           other: '{0} gallons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gal',
           one: '{0} gal',
           other: '{0} gal',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'gal',
           one: '{0}gal',
           other: '{0}gal',
@@ -3645,19 +3649,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeQuart => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US quarts',
           one: '{0} US quart',
           other: '{0} US quarts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US qts',
           one: '{0} US qt',
           other: '{0} US qt',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'qt',
           one: '{0}qt',
           other: '{0}qt',
@@ -3667,19 +3671,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumePint => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pints',
           one: '{0} pint',
           other: '{0} pints',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pints',
           one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pt',
           one: '{0}pt',
           other: '{0}pt',
@@ -3689,19 +3693,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cups',
           one: '{0} cup',
           other: '{0} cups',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cups',
           one: '{0} c',
           other: '{0} c',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'cup',
           one: '{0}c',
           other: '{0}c',
@@ -3711,19 +3715,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeFluidOunce => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US fluid ounces',
           one: '{0} US fluid ounce',
           other: '{0} US fluid ounces',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US fl oz',
           one: '{0} US fl oz',
           other: '{0} US fl oz',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'fl oz',
           one: '{0}fl oz',
           other: '{0}fl oz',
@@ -3733,19 +3737,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeFluidOunceImperial => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'fluid ounces',
           one: '{0} fluid ounce',
           other: '{0} fluid ounces',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'fl oz',
           one: '{0} fl oz',
           other: '{0} fl oz',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'Imp fl oz',
           one: '{0}fl oz Im',
           other: '{0}fl oz Im',
@@ -3755,19 +3759,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeTablespoon => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tablespoons',
           one: '{0} tablespoon',
           other: '{0} tablespoons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tbsp',
           one: '{0} tbsp',
           other: '{0} tbsp',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tbsp',
           one: '{0}tbsp',
           other: '{0}tbsp',
@@ -3777,19 +3781,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeTeaspoon => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'teaspoons',
           one: '{0} teaspoon',
           other: '{0} teaspoons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tsp',
           one: '{0} tsp',
           other: '{0} tsp',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'tsp',
           one: '{0}tsp',
           other: '{0}tsp',
@@ -3799,19 +3803,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeBarrel => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'barrels',
           one: '{0} barrel',
           other: '{0} barrels',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'barrel',
           one: '{0} bbl',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'bbl',
           one: '{0}bbl',
           other: '{0}bbl',
@@ -3821,19 +3825,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US dessertspoon',
           one: '{0} US dessertspoon',
           other: '{0} US dessertspoons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'US dstspn',
           one: '{0} US dstspn',
           other: '{0} US dstspn',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dsp',
           one: '{0}dsp',
           other: '{0}dsp',
@@ -3843,19 +3847,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dessertspoon',
           one: '{0} dessertspoon',
           other: '{0} dessertspoons',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dstspn',
           one: '{0} dstspn',
           other: '{0} dstspn',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dsp Imp',
           one: '{0}dsp-Imp',
           other: '{0}dsp-Imp',
@@ -3865,19 +3869,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'drop',
           one: '{0} drop',
           other: '{0} drops',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'drop',
           one: '{0} drops',
           other: '{0} drops',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dr',
           one: '{0}dr',
           other: '{0}dr',
@@ -3887,19 +3891,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeDram => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dram',
           one: '{0} dram',
           other: '{0} drams',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'dram',
           one: '{0} dram',
           other: '{0} drams',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'fl.dr.',
           one: '{0}fl.dr.',
           other: '{0}fl.dr.',
@@ -3909,19 +3913,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeJigger => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'jigger',
           one: '{0} jigger',
           other: '{0} jiggers',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'jigger',
           one: '{0} jigger',
           other: '{0} jiggers',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'jigger',
           one: '{0}jigger',
           other: '{0}jigger',
@@ -3931,19 +3935,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pinch',
           one: '{0} pinch',
           other: '{0} pinches',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pinch',
           one: '{0} pinches',
           other: '{0} pinches',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'pn',
           one: '{0}pn',
           other: '{0}pn',
@@ -3953,19 +3957,19 @@ class UnitsEnGB implements Units {
   @override
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
-          'en-GB',
+          _locale,
           'quart',
           one: '{0} quart',
           other: '{0} quarts',
         ),
         short: UnitCountPattern(
-          'en-GB',
+          _locale,
           'qt',
           one: '{0} qt',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
-          'en-GB',
+          _locale,
           'qt Imp',
           one: '{0}qt-Imp.',
           other: '{0}qt-Imp.',
@@ -4007,34 +4011,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} year ago',
             other: '{0} years ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} yr ago',
             other: '{0} yr ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} yr ago',
             other: '{0} yr ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} year',
             other: 'in {0} years',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} yr',
             other: 'in {0} yr',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} yr',
             other: 'in {0} yr',
           ),
@@ -4065,34 +4069,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} quarter ago',
             other: '{0} quarters ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} qtr ago',
             other: '{0} qtr ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} qtr ago',
             other: '{0} qtr ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} quarter',
             other: 'in {0} quarters',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} qtr',
             other: 'in {0} qtr',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} qtr',
             other: 'in {0} qtr',
           ),
@@ -4123,34 +4127,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} month ago',
             other: '{0} months ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} mo ago',
             other: '{0} mo ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} mo ago',
             other: '{0} mo ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} month',
             other: 'in {0} months',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} mo',
             other: 'in {0} mo',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} mo',
             other: 'in {0} mo',
           ),
@@ -4181,34 +4185,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} week ago',
             other: '{0} weeks ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} wk ago',
             other: '{0} wk ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} wk ago',
             other: '{0} wk ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} week',
             other: 'in {0} weeks',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} wk',
             other: 'in {0} wk',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} wk',
             other: 'in {0} wk',
           ),
@@ -4246,34 +4250,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} day ago',
             other: '{0} days ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} day ago',
             other: '{0} days ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} day ago',
             other: '{0} days ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} day',
             other: 'in {0} days',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} day',
             other: 'in {0} days',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} day',
             other: 'in {0} days',
           ),
@@ -4320,34 +4324,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Sunday ago',
             other: '{0} Sundays ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Sun ago',
             other: '{0} Sun ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Su ago',
             other: '{0} Su ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Sunday',
             other: 'in {0} Sundays',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Sun',
             other: 'in {0} Sun',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Su',
             other: 'in {0} Su',
           ),
@@ -4373,34 +4377,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Monday ago',
             other: '{0} Mondays ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Mon ago',
             other: '{0} Mon ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} M ago',
             other: '{0} M ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Monday',
             other: 'in {0} Mondays',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Mon',
             other: 'in {0} Mon',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} M',
             other: 'in {0} M',
           ),
@@ -4426,34 +4430,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Tuesday ago',
             other: '{0} Tuesdays ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Tue ago',
             other: '{0} Tue ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Tu ago',
             other: '{0} Tu ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Tuesday',
             other: 'in {0} Tuesdays',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Tue',
             other: 'in {0} Tue',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Tu',
             other: 'in {0} Tu',
           ),
@@ -4479,34 +4483,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Wednesday ago',
             other: '{0} Wednesdays ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Wed ago',
             other: '{0} Wed ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} W ago',
             other: '{0} W ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Wednesday',
             other: 'in {0} Wednesdays',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Wed',
             other: 'in {0} Wed',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} W',
             other: 'in {0} W',
           ),
@@ -4532,34 +4536,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Thursday ago',
             other: '{0} Thursdays ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Thu ago',
             other: '{0} Thu ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Th ago',
             other: '{0} Th ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Thursday',
             other: 'in {0} Thursdays',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Thu',
             other: 'in {0} Thu',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Th',
             other: 'in {0} Th',
           ),
@@ -4585,34 +4589,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Friday ago',
             other: '{0} Fridays ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Fri ago',
             other: '{0} Fri ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} F ago',
             other: '{0} F ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Friday',
             other: 'in {0} Fridays',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Fri',
             other: 'in {0} Fri',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} F',
             other: 'in {0} F',
           ),
@@ -4638,34 +4642,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Saturday ago',
             other: '{0} Saturdays ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Sat ago',
             other: '{0} Sat ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} Sa ago',
             other: '{0} Sa ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Saturday',
             other: 'in {0} Saturdays',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Sat',
             other: 'in {0} Sat',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} Sa',
             other: 'in {0} Sa',
           ),
@@ -4693,34 +4697,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} hour ago',
             other: '{0} hours ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} hr ago',
             other: '{0} hr ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} hr ago',
             other: '{0} hr ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} hour',
             other: 'in {0} hours',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} hr',
             other: 'in {0} hr',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} hr',
             other: 'in {0} hr',
           ),
@@ -4741,34 +4745,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} minute ago',
             other: '{0} minutes ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} min ago',
             other: '{0} min ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} min ago',
             other: '{0} min ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} minute',
             other: 'in {0} minutes',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} min',
             other: 'in {0} min',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} min',
             other: 'in {0} min',
           ),
@@ -4789,34 +4793,34 @@ class DateFieldsEnGB implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} second ago',
             other: '{0} seconds ago',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} sec ago',
             other: '{0} sec ago',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: '{0} sec ago',
             other: '{0} sec ago',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} second',
             other: 'in {0} seconds',
           ),
           short: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} sec',
             other: 'in {0} sec',
           ),
           narrow: RelativeTime(
-            'en-GB',
+            _locale,
             one: 'in {0} sec',
             other: 'in {0} sec',
           ),

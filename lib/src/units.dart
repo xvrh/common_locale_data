@@ -8,7 +8,7 @@ class Unit {
   Unit({required this.long, required this.short, required this.narrow});
 
   @override
-  String toString() => short.displayName;
+  String toString() => long.displayName;
 }
 
 class UnitCountPattern {

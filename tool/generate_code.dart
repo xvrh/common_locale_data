@@ -26,8 +26,12 @@ void main() {
       ..writeln("import '../shared.dart';");
 
     buffer.writeln('''
+const _locale = '$language';
+
 class CommonLocaleData${languageUpper(language)} implements CommonLocaleData {
-  String get locale => '$language';
+  String get locale => _locale;
+  
+  const CommonLocaleData${languageUpper(language)}();
 
   static final _dateFields = DateFields${languageUpper(language)}._();
   @override

@@ -50,7 +50,7 @@ void generateDateFields(String language, StringBuffer buffer) {
 
     String relative(RelativeTimePattern Function(DateField) callbackRelative) {
       return 'MultiLengthRelativeTime(${eachLength((f) {
-        var code = "RelativeTime('$language',";
+        var code = "RelativeTime(_locale,";
         var relative = callbackRelative(f);
         for (var plural in plurals) {
           var pluralValue = relative.getForName(plural);

@@ -15,100 +15,41 @@ import 'package:common_locale_data/common_locale_data.dart';
 // -
 
 void main() {
-  // API
-  cldr.defaultData = cldr.fr;
-  var uf = UnitFormatter(optionalData ?? cldr.fr.unit);
+  // To preserve tree-shaking, you should explicitly choose the language your want
+  // The compiler will only retain the languages that are explicitly referenced in your program
+  // and discard all the others languages. It will make your deployed program smaller.
 
-  var uf = UnitFormatter();
+  // Setup the default language for English
+  cld = CommonLocaleData.en;
 
-  uf.duration.hour(2);
+  // If your app support several languages, dynamically choose the language you want
+  var currentLanguage = 'en';
+  cld = const {
+    'en': CommonLocaleData.en,
+    'fr': CommonLocaleData.fr,
+  }[currentLanguage]!;
 
-  var relativeFormatter = RelativeDateTimeFormatter();
+  // Units
+  print(cld.units.lengthMeter); // meters
+  print(cld.units.lengthMeter.long(3)); // 3 meters
+  print(cld.units.lengthMeter.long(1)); // 1 meter
 
-  units.duration.hour.displayName.long;
-  units.duration.hour.displayName.toString();
-  long.units.duration.hour.displayName;
+  print(cld.units.areaSquareMeter.long(3)); // 3 square meters
+  print(cld.units.areaSquareMeter.short(3)); // 3 m²
+  print(cld.units.areaSquareMeter.narrow(3)); // 3m²
 
-  // Possibilités:
-  // - Faire comme Intl, avoir une méthode initialize qui laisse l'utilisateur charger
-  // les locales qu'il veut explicitement (=> et tanpis pour le Tree-Shaking?)
-  // - Basé sur le tree-shaking
+  // Date fields
+  print(cld.date.year.future.long(2)); // in 2 years
+  print(cld.date.year.past.long(2)); // 2 years ago
+  print(cld.date.year.next.long); // next year
+  print(cld.date.year.previous.long); // last year
+
+  // Territories
+  print(cld.territories.unitedState); // United-State
+  print(cld.territories['us']); // United-State
+
+  //TODO(xha):
+  //  - territories
+  //  - languages
+  //  - timezones
 }
-
-class UnitFormatter {
-  static UnitFormatterData defaultData;
-  final UnitFormatterData _data;
-
-  UnitFormatter([UnitFormatterData data]) : _data = data ?? defaultData;
-
-  UnitDurationFormatterData get duration => _data.duration;
-}
-
-abstract class UnitFormatterData {
-  UnitDurationFormatterData get duration;
-}
-
-abstract class UnitDurationFormatterData {
-  UnitGroup get second;
-  UnitGroup get minute;
-  UnitGroup get hour;
-}
-
-class UnitGroup {
-  final UnitData long, short, narrow;
-
-  UnitGroup(this.long, this.short, this.narrow);
-
-  String call(num count, {UnitForm form, NumberFormat numberFormat}) {}
-}
-
-enum UnitForm { long, short, narrow }
-
-class UnitData {
-  final String displayName;
-  final String perUnitPattern;
-  final String unitPatternOne, unitPatternOther;
-
-  UnitData(
-      {this.displayName,
-      this.perUnitPattern,
-      this.unitPatternOne,
-      this.unitPatternOther});
-
-  String call(num count, {NumberFormat numberFormat}) {}
-
-  String perUnit(num count) {}
-}
-
-class UnitDurationFormatterDataFr extends UnitDurationFormatterData {
-  @override
-  UnitGroup get hour => UnitGroup(
-        UnitData(displayName: 'heure'),
-        UnitData(displayName: 'h'),
-        UnitData(displayName: 'h'),
-      );
-
-  @override
-  // TODO: implement minute
-  UnitGroup get minute => throw UnimplementedError();
-
-  @override
-  // TODO: implement second
-  UnitGroup get second => throw UnimplementedError();
-}
-
-class UnitFormatterDataFr extends UnitFormatterData {
-  @override
-  final duration = UnitDurationFormatterDataFr();
-}
-
-class RelativeDateTimeFormatter {
-  static RelativeDateTimeFormatterData defaultData;
-
-  final RelativeDateTimeFormatterData _data;
-
-  RelativeDateTimeFormatter([RelativeDateTimeFormatterData data])
-      : _data = data ?? defaultData;
-}
-
-abstract class RelativeDateTimeFormatterData {}

@@ -3,8 +3,12 @@ import '../date_fields.dart';
 import '../units.dart';
 import '../shared.dart';
 
+const _locale = 'es';
+
 class CommonLocaleDataEs implements CommonLocaleData {
-  String get locale => 'es';
+  String get locale => _locale;
+
+  const CommonLocaleDataEs();
 
   static final _dateFields = DateFieldsEs._();
   @override
@@ -21,19 +25,19 @@ class UnitsEs implements Units {
   @override
   Unit get accelerationGForce => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'unidades de fuerza g',
           one: '{0} unidad de fuerza g',
           other: '{0} unidades de fuerza g',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Fg',
           one: '{0} Fg',
           other: '{0} Fg',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Fg',
           one: '{0}G',
           other: '{0}G',
@@ -43,19 +47,19 @@ class UnitsEs implements Units {
   @override
   Unit get accelerationMeterPerSquareSecond => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'metros por segundo al cuadrado',
           one: '{0} metro por segundo al cuadrado',
           other: '{0} metros por segundo al cuadrado',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'm/s²',
           one: '{0} m/s²',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'm/s²',
           one: '{0} m/s²',
           other: '{0} m/s²',
@@ -65,19 +69,19 @@ class UnitsEs implements Units {
   @override
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'revoluciones',
           one: '{0} revolución',
           other: '{0} revoluciones',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'rev',
           one: '{0} rev',
           other: '{0} rev',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'rev',
           one: '{0} rev',
           other: '{0} rev',
@@ -87,19 +91,19 @@ class UnitsEs implements Units {
   @override
   Unit get angleRadian => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'radianes',
           one: '{0} radián',
           other: '{0} radianes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'rad',
           one: '{0} rad',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'rad',
           one: '{0} rad',
           other: '{0} rad',
@@ -109,19 +113,19 @@ class UnitsEs implements Units {
   @override
   Unit get angleDegree => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'grados',
           one: '{0} grado',
           other: '{0} grados',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'grad.',
           one: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'grad.',
           one: '{0}°',
           other: '{0}°',
@@ -131,19 +135,19 @@ class UnitsEs implements Units {
   @override
   Unit get angleArcMinute => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'minutos de arco',
           one: '{0} minuto de arco',
           other: '{0} minutos de arco',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'arcmin',
           one: '{0} arcmin',
           other: '{0} arcmin',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'arcmin',
           one: "{0}'",
           other: "{0}'",
@@ -153,19 +157,19 @@ class UnitsEs implements Units {
   @override
   Unit get angleArcSecond => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'segundos de arco',
           one: '{0} segundo de arco',
           other: '{0} segundos de arco',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'arcsec',
           one: '{0} arcsec',
           other: '{0} arcsec',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'arcsec',
           one: '{0}\\"',
           other: '{0}\\"',
@@ -175,19 +179,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaSquareKilometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilómetros cuadrados',
           one: '{0} kilómetro cuadrado',
           other: '{0} kilómetros cuadrados',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'km²',
           one: '{0} km²',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'km²',
           one: '{0}km²',
           other: '{0}km²',
@@ -197,19 +201,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaHectare => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'hectáreas',
           one: '{0} hectárea',
           other: '{0} hectáreas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ha',
           one: '{0} ha',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ha',
           one: '{0}ha',
           other: '{0}ha',
@@ -219,19 +223,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaSquareMeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'metros cuadrados',
           one: '{0} metro cuadrado',
           other: '{0} metros cuadrados',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'm²',
           one: '{0} m²',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'm²',
           one: '{0}m²',
           other: '{0}m²',
@@ -241,19 +245,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaSquareCentimeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'centímetros cuadrados',
           one: '{0} centímetro cuadrado',
           other: '{0} centímetros cuadrados',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cm²',
           one: '{0} cm²',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cm²',
           one: '{0} cm²',
           other: '{0} cm²',
@@ -263,19 +267,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaSquareMile => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas cuadradas',
           one: '{0} milla cuadrada',
           other: '{0} millas cuadradas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mi²',
           one: '{0} mi²',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mi²',
           one: '{0}mi²',
           other: '{0}mi²',
@@ -285,19 +289,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaAcre => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'acres',
           one: '{0} acre',
           other: '{0} acres',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ac',
           one: '{0} ac',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ac',
           one: '{0}ac',
           other: '{0}ac',
@@ -307,19 +311,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaSquareYard => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'yardas cuadradas',
           one: '{0} yarda cuadrada',
           other: '{0} yardas cuadradas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'yd²',
           one: '{0} yd²',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'yd²',
           one: '{0} yd²',
           other: '{0} yd²',
@@ -329,19 +333,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaSquareFoot => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pies cuadrados',
           one: '{0} pie cuadrado',
           other: '{0} pies cuadrados',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ft²',
           one: '{0} ft²',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ft²',
           one: '{0}ft²',
           other: '{0}ft²',
@@ -351,19 +355,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaSquareInch => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pulgadas cuadradas',
           one: '{0} pulgada cuadrada',
           other: '{0} pulgadas cuadradas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'in²',
           one: '{0} in²',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'in²',
           one: '{0} in²',
           other: '{0} in²',
@@ -373,19 +377,19 @@ class UnitsEs implements Units {
   @override
   Unit get areaDunam => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'dunams',
           one: '{0} dunam',
           other: '{0} dunams',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'dunams',
           one: '{0} dunam',
           other: '{0} dunams',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'dunams',
           one: '{0} dunam',
           other: '{0} dunams',
@@ -395,19 +399,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrKarat => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'quilates',
           one: '{0} quilate',
           other: '{0} quilates',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ct',
           one: '{0} ct',
           other: '{0} ct',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ct',
           one: '{0} ct',
           other: '{0} ct',
@@ -417,19 +421,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'miligramos por decilitro',
           one: '{0} miligramo por decilitro',
           other: '{0} miligramos por decilitro',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mg/dL',
           one: '{0} mg/dL',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mg/dL',
           one: '{0} mg/dL',
           other: '{0} mg/dL',
@@ -439,19 +443,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrMillimolePerLiter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'milimoles por litro',
           one: '{0} milimol por litro',
           other: '{0} milimoles por litro',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mmol/L',
           one: '{0} mmol/L',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mmol/L',
           one: '{0} mmol/L',
           other: '{0} mmol/L',
@@ -461,19 +465,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'partes por millón',
           one: '{0} parte por millón',
           other: '{0} partes por millón',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ppm',
           one: '{0} ppm',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ppm',
           one: '{0} ppm',
           other: '{0} ppm',
@@ -483,19 +487,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrPercent => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'por ciento',
           one: '{0} por ciento',
           other: '{0} por ciento',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'por ciento',
           one: '{0} %',
           other: '{0} %',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           '%',
           one: '{0}%',
           other: '{0}%',
@@ -505,19 +509,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrPermille => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'por mil',
           one: '{0} por mil',
           other: '{0} por mil',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           '‰',
           one: '{0} ‰',
           other: '{0} ‰',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           '‰',
           one: '{0} ‰',
           other: '{0} ‰',
@@ -527,19 +531,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrPermyriad => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'por diez mil',
           one: '{0} por diez mil',
           other: '{0} por diez mil',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           '‱',
           one: '{0} ‱',
           other: '{0} ‱',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           '‱',
           one: '{0} ‱',
           other: '{0} ‱',
@@ -549,19 +553,19 @@ class UnitsEs implements Units {
   @override
   Unit get concentrMole => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'moles',
           one: '{0} mol',
           other: '{0} moles',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mol',
           one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mol',
           one: '{0} mol',
           other: '{0} mol',
@@ -571,19 +575,19 @@ class UnitsEs implements Units {
   @override
   Unit get consumptionLiterPerKilometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'litros por kilómetro',
           one: '{0} litro por kilómetro',
           other: '{0} litros por kilómetro',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'l/km',
           one: '{0} l/km',
           other: '{0} l/km',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'l/km',
           one: '{0} l/km',
           other: '{0} l/km',
@@ -593,19 +597,19 @@ class UnitsEs implements Units {
   @override
   Unit get consumptionLiterPer100Kilometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'litros por 100 kilómetros',
           one: '{0} litro por 100 kilómetros',
           other: '{0} litros por 100 kilómetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'l/100 km',
           one: '{0} l/100 km',
           other: '{0} l/100 km',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'l/100km',
           one: '{0}l/100km',
           other: '{0}l/100km',
@@ -615,19 +619,19 @@ class UnitsEs implements Units {
   @override
   Unit get consumptionMilePerGallon => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas por galón',
           one: '{0} milla por galón',
           other: '{0} millas por galón',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mi/gal',
           one: '{0} mi/gal',
           other: '{0} mi/gal',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mi/gal',
           one: '{0} mi/gal',
           other: '{0} mi/gal',
@@ -637,19 +641,19 @@ class UnitsEs implements Units {
   @override
   Unit get consumptionMilePerGallonImperial => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas por galón imperial',
           one: '{0} milla por galón imperial',
           other: '{0} millas por galón imperial',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mi/gal imp.',
           one: '{0} mi/gal imp.',
           other: '{0} mi/gal imp.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mi/gal imp.',
           one: '{0} mi/gal imp.',
           other: '{0} mi/gal imp.',
@@ -659,19 +663,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalPetabyte => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'petabytes',
           one: '{0} petabyte',
           other: '{0} petabytes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'PB',
           one: '{0} PB',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'PB',
           one: '{0} PB',
           other: '{0} PB',
@@ -681,19 +685,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalTerabyte => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'terabytes',
           one: '{0} terabyte',
           other: '{0} terabytes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'TB',
           one: '{0} TB',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'TB',
           one: '{0} TB',
           other: '{0} TB',
@@ -703,19 +707,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalTerabit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'terabits',
           one: '{0} terabit',
           other: '{0} terabits',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Tb',
           one: '{0} Tb',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Tb',
           one: '{0} Tb',
           other: '{0} Tb',
@@ -725,19 +729,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalGigabyte => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'gigabytes',
           one: '{0} gigabyte',
           other: '{0} gigabytes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'GB',
           one: '{0} GB',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'GB',
           one: '{0} GB',
           other: '{0} GB',
@@ -747,19 +751,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalGigabit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'gigabits',
           one: '{0} gigabit',
           other: '{0} gigabits',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Gb',
           one: '{0} Gb',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Gb',
           one: '{0} Gb',
           other: '{0} Gb',
@@ -769,19 +773,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalMegabyte => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'megabytes',
           one: '{0} megabyte',
           other: '{0} megabytes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'MB',
           one: '{0} MB',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'MB',
           one: '{0} MB',
           other: '{0} MB',
@@ -791,19 +795,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalMegabit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'megabits',
           one: '{0} megabit',
           other: '{0} megabits',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Mb',
           one: '{0} Mb',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Mb',
           one: '{0} Mb',
           other: '{0} Mb',
@@ -813,19 +817,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalKilobyte => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilobytes',
           one: '{0} kilobyte',
           other: '{0} kilobytes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kB',
           one: '{0} kB',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kB',
           one: '{0} kB',
           other: '{0} kB',
@@ -835,19 +839,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalKilobit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilobits',
           one: '{0} kilobit',
           other: '{0} kilobits',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kb',
           one: '{0} kb',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kb',
           one: '{0} kb',
           other: '{0} kb',
@@ -857,19 +861,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalByte => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'bytes',
           one: '{0} byte',
           other: '{0} bytes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'B',
           one: '{0} B',
           other: '{0} B',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'B',
           one: '{0} B',
           other: '{0} B',
@@ -879,19 +883,19 @@ class UnitsEs implements Units {
   @override
   Unit get digitalBit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'bits',
           one: '{0} bit',
           other: '{0} bits',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'b',
           one: '{0} b',
           other: '{0} b',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'b',
           one: '{0} b',
           other: '{0} b',
@@ -901,19 +905,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationCentury => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'siglos',
           one: '{0} siglo',
           other: '{0} siglos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           's.',
           one: '{0} s.',
           other: '{0} s.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'sig.',
           one: '{0} sig.',
           other: '{0} sig.',
@@ -923,19 +927,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationDecade => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'décadas',
           one: '{0} década',
           other: '{0} décadas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'déc.',
           one: '{0} déc.',
           other: '{0} déc.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'déc.',
           one: '{0} déc.',
           other: '{0} déc.',
@@ -945,19 +949,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationYear => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'años',
           one: '{0} año',
           other: '{0} años',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'a',
           one: '{0} a',
           other: '{0} a',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'a',
           one: '{0}a',
           other: '{0}a',
@@ -967,19 +971,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'meses',
           one: '{0} mes',
           other: '{0} meses',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'm.',
           one: '{0} m.',
           other: '{0} m.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'm.',
           one: '{0}m.',
           other: '{0}m.',
@@ -989,19 +993,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationWeek => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'semanas',
           one: '{0} semana',
           other: '{0} semanas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'sem.',
           one: '{0} sem.',
           other: '{0} sem.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'sem.',
           one: '{0}sem.',
           other: '{0}sem.',
@@ -1011,19 +1015,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationDay => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'días',
           one: '{0} día',
           other: '{0} días',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'd',
           one: '{0} d',
           other: '{0} d',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'd',
           one: '{0}d',
           other: '{0}d',
@@ -1033,19 +1037,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationHour => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'horas',
           one: '{0} hora',
           other: '{0} horas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'horas',
           one: '{0} h',
           other: '{0} h',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'h',
           one: '{0}h',
           other: '{0}h',
@@ -1055,19 +1059,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationMinute => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'minutos',
           one: '{0} minuto',
           other: '{0} minutos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'min',
           one: '{0} min',
           other: '{0} min',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'min',
           one: '{0}min',
           other: '{0}min',
@@ -1077,19 +1081,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationSecond => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'segundos',
           one: '{0} segundo',
           other: '{0} segundos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           's',
           one: '{0} s',
           other: '{0} s',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           's',
           one: '{0}s',
           other: '{0}s',
@@ -1099,19 +1103,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationMillisecond => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'milisegundos',
           one: '{0} milisegundo',
           other: '{0} milisegundos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ms',
           one: '{0} ms',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ms',
           one: '{0}ms',
           other: '{0}ms',
@@ -1121,19 +1125,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationMicrosecond => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'microsegundos',
           one: '{0} microsegundo',
           other: '{0} microsegundos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'μs',
           one: '{0} μs',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'μs',
           one: '{0}μs',
           other: '{0}μs',
@@ -1143,19 +1147,19 @@ class UnitsEs implements Units {
   @override
   Unit get durationNanosecond => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'nanosegundos',
           one: '{0} nanosegundo',
           other: '{0} nanosegundos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ns',
           one: '{0} ns',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ns',
           one: '{0}ns',
           other: '{0}ns',
@@ -1165,19 +1169,19 @@ class UnitsEs implements Units {
   @override
   Unit get electricAmpere => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'amperios',
           one: '{0} amperio',
           other: '{0} amperios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'A',
           one: '{0} A',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'A',
           one: '{0} A',
           other: '{0} A',
@@ -1187,19 +1191,19 @@ class UnitsEs implements Units {
   @override
   Unit get electricMilliampere => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'miliamperios',
           one: '{0} miliamperio',
           other: '{0} miliamperios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mA',
           one: '{0} mA',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mA',
           one: '{0} mA',
           other: '{0} mA',
@@ -1209,19 +1213,19 @@ class UnitsEs implements Units {
   @override
   Unit get electricOhm => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'ohmios',
           one: '{0} ohmio',
           other: '{0} ohmios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Ω',
           one: '{0} Ω',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Ω',
           one: '{0} Ω',
           other: '{0} Ω',
@@ -1231,19 +1235,19 @@ class UnitsEs implements Units {
   @override
   Unit get electricVolt => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'voltios',
           one: '{0} voltio',
           other: '{0} voltios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'V',
           one: '{0} V',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'V',
           one: '{0} V',
           other: '{0} V',
@@ -1253,19 +1257,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyKilocalorie => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilocalorías',
           one: '{0} kilocaloría',
           other: '{0} kilocalorías',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kcal',
           one: '{0} kcal',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kcal',
           one: '{0} kcal',
           other: '{0} kcal',
@@ -1275,19 +1279,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyCalorie => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'calorías',
           one: '{0} caloría',
           other: '{0} calorías',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cal',
           one: '{0} cal',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cal',
           one: '{0} cal',
           other: '{0} cal',
@@ -1297,19 +1301,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyFoodcalorie => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilocalorías',
           one: '{0} kilocaloría',
           other: '{0} kilocalorías',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kcal',
           one: '{0} kcal',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kcal',
           one: '{0} kcal',
           other: '{0} kcal',
@@ -1319,19 +1323,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyKilojoule => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilojulios',
           one: '{0} kilojulio',
           other: '{0} kilojulios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kJ',
           one: '{0} kJ',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kJ',
           one: '{0} kJ',
           other: '{0} kJ',
@@ -1341,19 +1345,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyJoule => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'julios',
           one: '{0} julio',
           other: '{0} julios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'J',
           one: '{0} J',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'J',
           one: '{0} J',
           other: '{0} J',
@@ -1363,19 +1367,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyKilowattHour => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilovatios-hora',
           one: '{0} kilovatio-hora',
           other: '{0} kilovatios-hora',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kWh',
           one: '{0} kWh',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kWh',
           one: '{0} kWh',
           other: '{0} kWh',
@@ -1385,18 +1389,18 @@ class UnitsEs implements Units {
   @override
   Unit get energyElectronvolt => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'electronvoltios',
           one: '{0} electronvoltio',
           other: '{0} electronvoltios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'eV',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'eV',
           other: '{0} eV',
         ),
@@ -1405,19 +1409,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyBritishThermalUnit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'unidades térmicas británicas',
           one: '{0} unidad térmica británica',
           other: '{0} unidades térmicas británicas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'BTU',
           one: '{0} BTU',
           other: '{0} BTU',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'BTU',
           one: '{0} BTU',
           other: '{0} BTU',
@@ -1427,19 +1431,19 @@ class UnitsEs implements Units {
   @override
   Unit get energyThermUs => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'termias estadounidenses',
           one: '{0} termia estadounidense',
           other: '{0} termias estadounidenses',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'thm EE. UU.',
           one: '{0} thm EE. UU.',
           other: '{0} thm EE. UU.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'thm EE. UU.',
           one: '{0} thm EE. UU.',
           other: '{0} thm EE. UU.',
@@ -1449,18 +1453,18 @@ class UnitsEs implements Units {
   @override
   Unit get forcePoundForce => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'libras de fuerza',
           one: '{0} libra de fuerza',
           other: '{0} libras de fuerza',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'lbf',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'lbf',
           other: '{0} lbf',
         ),
@@ -1469,18 +1473,18 @@ class UnitsEs implements Units {
   @override
   Unit get forceNewton => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'newtons',
           one: '{0} newton',
           other: '{0} newtons',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'N',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'N',
           other: '{0} N',
         ),
@@ -1489,19 +1493,19 @@ class UnitsEs implements Units {
   @override
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'gigahercios',
           one: '{0} gigahercio',
           other: '{0} gigahercios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'GHz',
           one: '{0} GHz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'GHz',
           one: '{0} GHz',
           other: '{0} GHz',
@@ -1511,19 +1515,19 @@ class UnitsEs implements Units {
   @override
   Unit get frequencyMegahertz => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'megahercios',
           one: '{0} megahercio',
           other: '{0} megahercios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'MHz',
           one: '{0} MHz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'MHz',
           one: '{0} MHz',
           other: '{0} MHz',
@@ -1533,19 +1537,19 @@ class UnitsEs implements Units {
   @override
   Unit get frequencyKilohertz => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilohercios',
           one: '{0} kilohercio',
           other: '{0} kilohercios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kHz',
           one: '{0} kHz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kHz',
           one: '{0} kHz',
           other: '{0} kHz',
@@ -1555,19 +1559,19 @@ class UnitsEs implements Units {
   @override
   Unit get frequencyHertz => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'hercios',
           one: '{0} hercio',
           other: '{0} hercios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Hz',
           one: '{0} Hz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Hz',
           one: '{0} Hz',
           other: '{0} Hz',
@@ -1577,19 +1581,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsEm => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'espacios eme',
           one: '{0} espacio eme',
           other: '{0} espacios eme',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'em',
           one: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'em',
           one: '{0} em',
           other: '{0} em',
@@ -1599,19 +1603,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsPixel => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'píxeles',
           one: '{0} píxel',
           other: '{0} píxeles',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'px',
           one: '{0} px',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'px',
           one: '{0} px',
           other: '{0} px',
@@ -1621,19 +1625,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsMegapixel => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'megapíxeles',
           one: '{0} megapíxel',
           other: '{0} megapíxeles',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Mpx',
           one: '{0} Mpx',
           other: '{0} Mpx',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Mpx',
           one: '{0} Mpx',
           other: '{0} Mpx',
@@ -1643,19 +1647,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsPixelPerCentimeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'píxeles por centímetro',
           one: '{0} píxel por centímetro',
           other: '{0} píxeles por centímetro',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'px/cm',
           one: '{0} px/cm',
           other: '{0} px/cm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'px/cm',
           one: '{0} px/cm',
           other: '{0} px/cm',
@@ -1665,19 +1669,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsPixelPerInch => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'píxeles por pulgada',
           one: '{0} píxel por pulgada',
           other: '{0} píxeles por pulgada',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'px/in',
           one: '{0} px/in',
           other: '{0} px/in',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'px/in',
           one: '{0} px/in',
           other: '{0} px/in',
@@ -1687,19 +1691,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'puntos por centímetro',
           one: '{0} punto por centímetro',
           other: '{0} puntos por centímetro',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ppcm',
           one: '{0} ppcm',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ppcm',
           one: '{0} ppcm',
           other: '{0} ppcm',
@@ -1709,19 +1713,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'puntos por pulgada',
           one: '{0} punto por pulgada',
           other: '{0} puntos por pulgada',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ppp',
           one: '{0} ppp',
           other: '{0} ppp',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ppp',
           one: '{0} ppp',
           other: '{0} ppp',
@@ -1731,19 +1735,19 @@ class UnitsEs implements Units {
   @override
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'puntos tipográficos',
           one: '{0} punto tipográfico',
           other: '{0} puntos tipográficos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'pt',
           one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'pt',
           one: '{0} pt',
           other: '{0} pt',
@@ -1753,18 +1757,18 @@ class UnitsEs implements Units {
   @override
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'radios terrestres',
           one: '{0} radio terrestre',
           other: '{0} radios terrestres',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'R⊕',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'R⊕',
           other: '{0} R⊕',
         ),
@@ -1773,19 +1777,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthKilometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilómetros',
           one: '{0} kilómetro',
           other: '{0} kilómetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'km',
           one: '{0} km',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'km',
           one: '{0}km',
           other: '{0}km',
@@ -1795,19 +1799,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthMeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'metros',
           one: '{0} metro',
           other: '{0} metros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'm',
           one: '{0} m',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'm',
           one: '{0}m',
           other: '{0}m',
@@ -1817,19 +1821,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthDecimeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'decímetros',
           one: '{0} decímetro',
           other: '{0} decímetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'dm',
           one: '{0} dm',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'dm',
           one: '{0}dm',
           other: '{0}dm',
@@ -1839,19 +1843,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthCentimeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'centímetros',
           one: '{0} centímetro',
           other: '{0} centímetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cm',
           one: '{0} cm',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cm',
           one: '{0}cm',
           other: '{0}cm',
@@ -1861,19 +1865,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthMillimeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'milímetros',
           one: '{0} milímetro',
           other: '{0} milímetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mm',
           one: '{0} mm',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mm',
           one: '{0}mm',
           other: '{0}mm',
@@ -1883,19 +1887,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthMicrometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'micrómetros',
           one: '{0} micrómetro',
           other: '{0} micrómetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'μm',
           one: '{0} μm',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'μm',
           one: '{0}μm',
           other: '{0}μm',
@@ -1905,19 +1909,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthNanometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'nanómetros',
           one: '{0} nanómetro',
           other: '{0} nanómetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'nm',
           one: '{0} nm',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'nm',
           one: '{0}nm',
           other: '{0}nm',
@@ -1927,19 +1931,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthPicometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'picómetros',
           one: '{0} picómetro',
           other: '{0} picómetros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'pm',
           one: '{0} pm',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'pm',
           one: '{0}pm',
           other: '{0}pm',
@@ -1949,19 +1953,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthMile => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas',
           one: '{0} milla',
           other: '{0} millas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mi',
           one: '{0} mi',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mi',
           one: '{0}mi',
           other: '{0}mi',
@@ -1971,19 +1975,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthYard => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'yardas',
           one: '{0} yarda',
           other: '{0} yardas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'yd',
           one: '{0} yd',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'yd',
           one: '{0}yd',
           other: '{0}yd',
@@ -1993,19 +1997,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthFoot => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pies',
           one: '{0} pie',
           other: '{0} pies',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ft',
           one: '{0} ft',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ft',
           one: '{0}ft',
           other: '{0}ft',
@@ -2015,19 +2019,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthInch => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pulgadas',
           one: '{0} pulgada',
           other: '{0} pulgadas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'in',
           one: '{0} in',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'in',
           one: '{0}in',
           other: '{0}in',
@@ -2037,19 +2041,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthParsec => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'parsecs',
           one: '{0} parsec',
           other: '{0} parsecs',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'pc',
           one: '{0} pc',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'pc',
           one: '{0}pc',
           other: '{0}pc',
@@ -2059,19 +2063,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthLightYear => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'años luz',
           one: '{0} año luz',
           other: '{0} años luz',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'a. l.',
           one: '{0} a. l.',
           other: '{0} a. l.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'a.l.',
           one: '{0}a.l.',
           other: '{0}a.l.',
@@ -2081,19 +2085,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthAstronomicalUnit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'unidades astronómicas',
           one: '{0} unidad astronómica',
           other: '{0} unidades astronómicas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'au',
           one: '{0} au',
           other: '{0} au',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'au',
           one: '{0}au',
           other: '{0}au',
@@ -2103,18 +2107,18 @@ class UnitsEs implements Units {
   @override
   Unit get lengthFurlong => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'furlongs',
           one: '{0} furlong',
           other: '{0} furlongs',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'fur',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'fur',
           other: '{0} fur',
         ),
@@ -2123,19 +2127,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthFathom => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'brazas',
           one: '{0} braza',
           other: '{0} brazas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ftm',
           one: '{0} ftm',
           other: '{0} ftm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ftm',
           one: '{0} ftm',
           other: '{0} ftm',
@@ -2145,19 +2149,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthNauticalMile => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas náuticas',
           one: '{0} milla náutica',
           other: '{0} millas náuticas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'M',
           one: '{0} M',
           other: '{0} M',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'M',
           one: '{0} M',
           other: '{0} M',
@@ -2167,19 +2171,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthMileScandinavian => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas escandinavas',
           one: '{0} milla escandinava',
           other: '{0} millas escandinavas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mi esc.',
           one: '{0} mi esc.',
           other: '{0} mi esc.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mi esc.',
           one: '{0}mi esc.',
           other: '{0}mi esc.',
@@ -2189,19 +2193,19 @@ class UnitsEs implements Units {
   @override
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'puntos',
           one: '{0} punto',
           other: '{0} puntos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ptos.',
           one: '{0} pto.',
           other: '{0} ptos.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ptos.',
           one: '{0} pto.',
           other: '{0} ptos.',
@@ -2211,18 +2215,18 @@ class UnitsEs implements Units {
   @override
   Unit get lengthSolarRadius => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'radios solares',
           one: '{0} radio solar',
           other: '{0} radios solares',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'R☉',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'R☉',
           other: '{0} R☉',
         ),
@@ -2231,19 +2235,19 @@ class UnitsEs implements Units {
   @override
   Unit get lightLux => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'luxes',
           one: '{0} lux',
           other: '{0} luxes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'lx',
           one: '{0} lx',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'lx',
           one: '{0} lx',
           other: '{0} lx',
@@ -2253,18 +2257,18 @@ class UnitsEs implements Units {
   @override
   Unit get lightCandela => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'candelas',
           one: '{0} candela',
           other: '{0} candelas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cd',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cd',
           other: '{0} cd',
         ),
@@ -2273,18 +2277,18 @@ class UnitsEs implements Units {
   @override
   Unit get lightLumen => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'lúmenes',
           one: '{0} lumen',
           other: '{0} lúmenes',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'lm',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'lm',
           other: '{0} lm',
         ),
@@ -2293,18 +2297,18 @@ class UnitsEs implements Units {
   @override
   Unit get lightSolarLuminosity => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'luminosidades solares',
           one: '{0} luminosidad solar',
           other: '{0} luminosidades solares',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'L☉',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'L☉',
           other: '{0} L☉',
         ),
@@ -2313,19 +2317,19 @@ class UnitsEs implements Units {
   @override
   Unit get massMetricTon => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'toneladas',
           one: '{0} tonelada',
           other: '{0} toneladas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           't',
           one: '{0} t',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           't',
           one: '{0} t',
           other: '{0} t',
@@ -2335,19 +2339,19 @@ class UnitsEs implements Units {
   @override
   Unit get massKilogram => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilogramos',
           one: '{0} kilogramo',
           other: '{0} kilogramos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kg',
           one: '{0} kg',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kg',
           one: '{0}kg',
           other: '{0}kg',
@@ -2357,19 +2361,19 @@ class UnitsEs implements Units {
   @override
   Unit get massGram => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'gramos',
           one: '{0} gramo',
           other: '{0} gramos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'g',
           one: '{0} g',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'g',
           one: '{0}g',
           other: '{0}g',
@@ -2379,19 +2383,19 @@ class UnitsEs implements Units {
   @override
   Unit get massMilligram => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'miligramos',
           one: '{0} miligramo',
           other: '{0} miligramos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mg',
           one: '{0} mg',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mg',
           one: '{0} mg',
           other: '{0} mg',
@@ -2401,19 +2405,19 @@ class UnitsEs implements Units {
   @override
   Unit get massMicrogram => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'microgramos',
           one: '{0} microgramo',
           other: '{0} microgramos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'μg',
           one: '{0} μg',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'μg',
           one: '{0} μg',
           other: '{0} μg',
@@ -2423,19 +2427,19 @@ class UnitsEs implements Units {
   @override
   Unit get massTon => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'toneladas cortas',
           one: '{0} tonelada corta',
           other: '{0} toneladas cortas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'tc',
           one: '{0} tc',
           other: '{0} tc',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'tc',
           one: '{0} tc',
           other: '{0} tc',
@@ -2445,18 +2449,18 @@ class UnitsEs implements Units {
   @override
   Unit get massStone => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'stones',
           one: '{0} stone',
           other: '{0} stones',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'st',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'st',
           one: '{0}st',
           other: '{0}st',
@@ -2466,19 +2470,19 @@ class UnitsEs implements Units {
   @override
   Unit get massPound => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'libras',
           one: '{0} libra',
           other: '{0} libras',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'lb',
           one: '{0} lb',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'lb',
           one: '{0}lb',
           other: '{0}lb',
@@ -2488,19 +2492,19 @@ class UnitsEs implements Units {
   @override
   Unit get massOunce => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'onzas',
           one: '{0} onza',
           other: '{0} onzas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'oz',
           one: '{0} oz',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'oz',
           one: '{0}oz',
           other: '{0}oz',
@@ -2510,19 +2514,19 @@ class UnitsEs implements Units {
   @override
   Unit get massOunceTroy => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'onzas troy',
           one: '{0} onza troy',
           other: '{0} onzas troy',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'oz t',
           one: '{0} oz t',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'oz t',
           one: '{0} oz t',
           other: '{0} oz t',
@@ -2532,19 +2536,19 @@ class UnitsEs implements Units {
   @override
   Unit get massCarat => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'quilates',
           one: '{0} quilate',
           other: '{0} quilates',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ct',
           one: '{0} ct',
           other: '{0} ct',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ct',
           one: '{0} ct',
           other: '{0} ct',
@@ -2554,18 +2558,18 @@ class UnitsEs implements Units {
   @override
   Unit get massDalton => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'daltones',
           one: '{0} dalton',
           other: '{0} daltones',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Da',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Da',
           other: '{0} Da',
         ),
@@ -2574,18 +2578,18 @@ class UnitsEs implements Units {
   @override
   Unit get massEarthMass => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'masas terrestres',
           one: '{0} masa terrestre',
           other: '{0} masas terrestres',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'M⊕',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'M⊕',
           other: '{0} M⊕',
         ),
@@ -2594,18 +2598,18 @@ class UnitsEs implements Units {
   @override
   Unit get massSolarMass => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'masas solares',
           one: '{0} masa solar',
           other: '{0} masas solares',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'M☉',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'M☉',
           other: '{0} M☉',
         ),
@@ -2614,19 +2618,19 @@ class UnitsEs implements Units {
   @override
   Unit get massGrain => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'granos',
           one: '{0} grano',
           other: '{0} granos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'gr',
           one: '{0} gr',
           other: '{0} gr',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'gr',
           one: '{0} gr',
           other: '{0} gr',
@@ -2636,19 +2640,19 @@ class UnitsEs implements Units {
   @override
   Unit get powerGigawatt => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'gigavatios',
           one: '{0} gigavatio',
           other: '{0} gigavatios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'GW',
           one: '{0} GW',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'GW',
           one: '{0} GW',
           other: '{0} GW',
@@ -2658,19 +2662,19 @@ class UnitsEs implements Units {
   @override
   Unit get powerMegawatt => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'megavatios',
           one: '{0} megavatio',
           other: '{0} megavatios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'MW',
           one: '{0} MW',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'MW',
           one: '{0} MW',
           other: '{0} MW',
@@ -2680,19 +2684,19 @@ class UnitsEs implements Units {
   @override
   Unit get powerKilowatt => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilovatios',
           one: '{0} kilovatio',
           other: '{0} kilovatios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kW',
           one: '{0} kW',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kW',
           one: '{0}kW',
           other: '{0}kW',
@@ -2702,19 +2706,19 @@ class UnitsEs implements Units {
   @override
   Unit get powerWatt => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'vatios',
           one: '{0} vatio',
           other: '{0} vatios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'W',
           one: '{0} W',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'W',
           one: '{0}W',
           other: '{0}W',
@@ -2724,19 +2728,19 @@ class UnitsEs implements Units {
   @override
   Unit get powerMilliwatt => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'milivatios',
           one: '{0} milivatio',
           other: '{0} milivatios',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mW',
           one: '{0} mW',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mW',
           one: '{0} mW',
           other: '{0} mW',
@@ -2746,19 +2750,19 @@ class UnitsEs implements Units {
   @override
   Unit get powerHorsepower => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'caballos de vapor',
           one: '{0} caballo de vapor',
           other: '{0} caballos de vapor',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'CV',
           one: '{0} CV',
           other: '{0} CV',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'CV',
           one: '{0}hp',
           other: '{0}hp',
@@ -2768,19 +2772,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressureMillimeterOfhg => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'milímetros de mercurio',
           one: '{0} milímetro de mercurio',
           other: '{0} milímetros de mercurio',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mmHg',
           one: '{0} mmHg',
           other: '{0} mmHg',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mmHg',
           one: '{0}mmHg',
           other: '{0}mmHg',
@@ -2790,19 +2794,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressurePoundForcePerSquareInch => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'libras por pulgada cuadrada',
           one: '{0} libra por pulgada cuadrada',
           other: '{0} libras por pulgada cuadrada',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'psi',
           one: '{0} psi',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'psi',
           one: '{0}psi',
           other: '{0}psi',
@@ -2812,19 +2816,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressureInchOfhg => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pulgadas de mercurio',
           one: '{0} pulgada de mercurio',
           other: '{0} pulgadas de mercurio',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'inHg',
           one: '{0} inHg',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'inHg',
           one: '{0}inHg',
           other: '{0}inHg',
@@ -2834,19 +2838,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressureBar => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'bares',
           one: '{0} bar',
           other: '{0} bares',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'bar',
           one: '{0} bar',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'bar',
           one: '{0} bar',
           other: '{0} bar',
@@ -2856,19 +2860,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressureMillibar => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'milibares',
           one: '{0} milibar',
           other: '{0} milibares',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mbar',
           one: '{0} mbar',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mbar',
           one: '{0}mbar',
           other: '{0}mbar',
@@ -2878,19 +2882,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressureAtmosphere => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'atmósferas',
           one: '{0} atmósfera',
           other: '{0} atmósferas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'atm',
           one: '{0} atm',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'atm',
           one: '{0} atm',
           other: '{0} atm',
@@ -2900,19 +2904,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressurePascal => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pascales',
           one: '{0} pascal',
           other: '{0} pascales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Pa',
           one: '{0} Pa',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Pa',
           one: '{0} Pa',
           other: '{0} Pa',
@@ -2922,19 +2926,19 @@ class UnitsEs implements Units {
   @override
   Unit get pressureHectopascal => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'hectopascales',
           one: '{0} hectopascal',
           other: '{0} hectopascales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'hPa',
           one: '{0} hPa',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'hPa',
           one: '{0}hPa',
           other: '{0}hPa',
@@ -2944,18 +2948,18 @@ class UnitsEs implements Units {
   @override
   Unit get pressureKilopascal => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilopascales',
           one: '{0} kilopascal',
           other: '{0} kilopascales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kPa',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kPa',
           other: '{0} kPa',
         ),
@@ -2964,18 +2968,18 @@ class UnitsEs implements Units {
   @override
   Unit get pressureMegapascal => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'megapascales',
           one: '{0} megapascal',
           other: '{0} megapascales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'MPa',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'MPa',
           other: '{0} MPa',
         ),
@@ -2984,19 +2988,19 @@ class UnitsEs implements Units {
   @override
   Unit get speedKilometerPerHour => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilómetros por hora',
           one: '{0} kilómetro por hora',
           other: '{0} kilómetros por hora',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'km/h',
           one: '{0} km/h',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'km/h',
           one: '{0}km/h',
           other: '{0}km/h',
@@ -3006,19 +3010,19 @@ class UnitsEs implements Units {
   @override
   Unit get speedMeterPerSecond => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'metros por segundo',
           one: '{0} metro por segundo',
           other: '{0} metros por segundo',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'm/s',
           one: '{0} m/s',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'm/s',
           one: '{0}m/s',
           other: '{0}m/s',
@@ -3028,19 +3032,19 @@ class UnitsEs implements Units {
   @override
   Unit get speedMilePerHour => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas por hora',
           one: '{0} milla por hora',
           other: '{0} millas por hora',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mi/h',
           one: '{0} mi/h',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mi/h',
           one: '{0}mi/h',
           other: '{0}mi/h',
@@ -3050,19 +3054,19 @@ class UnitsEs implements Units {
   @override
   Unit get speedKnot => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'nudos',
           one: '{0} nudo',
           other: '{0} nudos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'kn',
           one: '{0} kn',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'kn',
           one: '{0} kn',
           other: '{0} kn',
@@ -3072,19 +3076,19 @@ class UnitsEs implements Units {
   @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'grados',
           one: '{0} grado',
           other: '{0} grados',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           '°',
           one: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           '°',
           one: '{0}°',
           other: '{0}°',
@@ -3094,19 +3098,19 @@ class UnitsEs implements Units {
   @override
   Unit get temperatureCelsius => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'grados Celsius',
           one: '{0} grado Celsius',
           other: '{0} grados Celsius',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           '°C',
           one: '{0} °C',
           other: '{0} °C',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           '°C',
           one: '{0}°C',
           other: '{0}°C',
@@ -3116,19 +3120,19 @@ class UnitsEs implements Units {
   @override
   Unit get temperatureFahrenheit => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'grados Fahrenheit',
           one: '{0} grado Fahrenheit',
           other: '{0} grados Fahrenheit',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           '°F',
           one: '{0} °F',
           other: '{0} °F',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           '°F',
           one: '{0} °F',
           other: '{0} °F',
@@ -3138,19 +3142,19 @@ class UnitsEs implements Units {
   @override
   Unit get temperatureKelvin => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kelvin',
           one: '{0} kelvin',
           other: '{0} kelvin',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'K',
           one: '{0} K',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'K',
           one: '{0}K',
           other: '{0}K',
@@ -3160,19 +3164,19 @@ class UnitsEs implements Units {
   @override
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'libras pies',
           one: '{0} libra pie',
           other: '{0} libras pies',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'lbf ft',
           one: '{0} lbf ft',
           other: '{0} lbf ft',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'lbf ft',
           one: '{0} lbf ft',
           other: '{0} lbf ft',
@@ -3182,19 +3186,19 @@ class UnitsEs implements Units {
   @override
   Unit get torqueNewtonMeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'newton metros',
           one: '{0} newton metro',
           other: '{0} newton metros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Nm',
           one: '{0} Nm',
           other: '{0} Nm',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Nm',
           one: '{0} Nm',
           other: '{0} Nm',
@@ -3204,19 +3208,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCubicKilometer => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'kilómetros cúbicos',
           one: '{0} kilómetro cúbico',
           other: '{0} kilómetros cúbicos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'km³',
           one: '{0} km³',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'km³',
           one: '{0}km³',
           other: '{0}km³',
@@ -3226,19 +3230,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCubicMeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'metros cúbicos',
           one: '{0} metro cúbico',
           other: '{0} metros cúbicos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'm³',
           one: '{0} m³',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'm³',
           one: '{0} m³',
           other: '{0} m³',
@@ -3248,19 +3252,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCubicCentimeter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'centímetros cúbicos',
           one: '{0} centímetro cúbico',
           other: '{0} centímetros cúbicos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cm³',
           one: '{0} cm³',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cm³',
           one: '{0} cm³',
           other: '{0} cm³',
@@ -3270,19 +3274,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCubicMile => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'millas cúbicas',
           one: '{0} milla cúbica',
           other: '{0} millas cúbicas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mi³',
           one: '{0} mi³',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mi³',
           one: '{0}mi³',
           other: '{0}mi³',
@@ -3292,19 +3296,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCubicYard => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'yardas cúbicas',
           one: '{0} yarda cúbica',
           other: '{0} yardas cúbicas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'yd³',
           one: '{0} yd³',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'yd³',
           one: '{0} yd³',
           other: '{0} yd³',
@@ -3314,19 +3318,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCubicFoot => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pies cúbicos',
           one: '{0} pie cúbico',
           other: '{0} pies cúbicos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ft³',
           one: '{0} ft³',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ft³',
           one: '{0} ft³',
           other: '{0} ft³',
@@ -3336,19 +3340,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCubicInch => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pulgadas cúbicas',
           one: '{0} pulgada cúbica',
           other: '{0} pulgadas cúbicas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'in³',
           one: '{0} in³',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'in³',
           one: '{0} in³',
           other: '{0} in³',
@@ -3358,19 +3362,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeMegaliter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'megalitros',
           one: '{0} megalitro',
           other: '{0} megalitros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'Ml',
           one: '{0} Ml',
           other: '{0} Ml',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'Ml',
           one: '{0} Ml',
           other: '{0} Ml',
@@ -3380,19 +3384,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeHectoliter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'hectolitros',
           one: '{0} hectolitro',
           other: '{0} hectolitros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'hl',
           one: '{0} hl',
           other: '{0} hl',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'hl',
           one: '{0} hl',
           other: '{0} hl',
@@ -3402,19 +3406,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeLiter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'litros',
           one: '{0} litro',
           other: '{0} litros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'l',
           one: '{0} l',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'l',
           one: '{0}l',
           other: '{0}l',
@@ -3424,19 +3428,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeDeciliter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'decilitros',
           one: '{0} decilitro',
           other: '{0} decilitros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'dl',
           one: '{0} dl',
           other: '{0} dl',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'dl',
           one: '{0} dl',
           other: '{0} dl',
@@ -3446,19 +3450,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCentiliter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'centilitros',
           one: '{0} centilitro',
           other: '{0} centilitros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cl',
           one: '{0} cl',
           other: '{0} cl',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cl',
           one: '{0} cl',
           other: '{0} cl',
@@ -3468,19 +3472,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeMilliliter => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'mililitros',
           one: '{0} mililitro',
           other: '{0} mililitros',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ml',
           one: '{0} ml',
           other: '{0} ml',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ml',
           one: '{0} ml',
           other: '{0} ml',
@@ -3490,19 +3494,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumePintMetric => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pintas métricas',
           one: '{0} pinta métrica',
           other: '{0} pintas métricas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'mpt',
           one: '{0} mpt',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'mpt',
           one: '{0} mpt',
           other: '{0} mpt',
@@ -3512,19 +3516,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCupMetric => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'tazas métricas',
           one: '{0} taza métrica',
           other: '{0} tazas métricas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'tza m',
           one: '{0} tza m',
           other: '{0} tza m',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'tza m',
           one: '{0} tza m',
           other: '{0} tza m',
@@ -3534,19 +3538,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeAcreFoot => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'acres-pies',
           one: '{0} acre-pie',
           other: '{0} acres-pies',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'ac ft',
           one: '{0} ac ft',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'ac ft',
           one: '{0} ac ft',
           other: '{0} ac ft',
@@ -3556,18 +3560,18 @@ class UnitsEs implements Units {
   @override
   Unit get volumeBushel => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'bushels',
           one: '{0} bushel',
           other: '{0} bushels',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'bu',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'bu',
           other: '{0} bu',
         ),
@@ -3576,19 +3580,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeGallon => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'galones',
           one: '{0} galón',
           other: '{0} galones',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'gal',
           one: '{0} gal',
           other: '{0} gal',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'gal',
           one: '{0} gal',
           other: '{0} gal',
@@ -3598,19 +3602,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeGallonImperial => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'galones imperiales',
           one: '{0} galón imperial',
           other: '{0} galones imperiales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'gal imp.',
           one: '{0} gal imp.',
           other: '{0} gal imp.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'gal imp.',
           one: '{0} gal imp.',
           other: '{0} gal imp.',
@@ -3620,19 +3624,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeQuart => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'cuartos',
           one: '{0} cuarto',
           other: '{0} cuartos',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'qt',
           one: '{0} qt',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'qt',
           one: '{0} qt',
           other: '{0} qt',
@@ -3642,19 +3646,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumePint => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pintas',
           one: '{0} pinta',
           other: '{0} pintas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'p',
           one: '{0} p',
           other: '{0} p',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'p',
           one: '{0} p',
           other: '{0} p',
@@ -3664,19 +3668,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'tazas',
           one: '{0} taza',
           other: '{0} tazas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'tza',
           one: '{0} tza',
           other: '{0} tza',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'tza',
           one: '{0} tza',
           other: '{0} tza',
@@ -3686,19 +3690,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeFluidOunce => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'onzas líquidas',
           one: '{0} onza líquida',
           other: '{0} onzas líquidas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'fl oz',
           one: '{0} fl oz',
           other: '{0} fl oz',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'fl oz',
           one: '{0} fl oz',
           other: '{0} fl oz',
@@ -3708,19 +3712,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeFluidOunceImperial => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'onzas líquidas imperiales',
           one: '{0} onza líquida imperial',
           other: '{0} onzas líquidas imperiales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'fl oz imp.',
           one: '{0} fl oz imp.',
           other: '{0} fl oz imp.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'fl oz imp.',
           one: '{0} fl oz imp.',
           other: '{0} fl oz imp.',
@@ -3730,19 +3734,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeTablespoon => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'cucharadas',
           one: '{0} cucharada',
           other: '{0} cucharadas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cda',
           one: '{0} cda',
           other: '{0} cda',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cda',
           one: '{0} cda',
           other: '{0} cda',
@@ -3752,19 +3756,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeTeaspoon => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'cucharaditas',
           one: '{0} cucharadita',
           other: '{0} cucharaditas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'cdta',
           one: '{0} cdta',
           other: '{0} cdta',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'cdta',
           one: '{0} cdta',
           other: '{0} cdta',
@@ -3774,19 +3778,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeBarrel => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'barriles',
           one: '{0} barril',
           other: '{0} barriles',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'bbl',
           one: '{0} bbl',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'bbl',
           one: '{0} bbl',
           other: '{0} bbl',
@@ -3796,19 +3800,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'cucharadas de postre',
           one: '{0} cucharada de postre',
           other: '{0} cucharadas de postre',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'c/p',
           one: '{0} c/p',
           other: '{0} c/p',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'c/p',
           one: '{0} c/p',
           other: '{0} c/p',
@@ -3818,19 +3822,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'cucharadas de postre imperiales',
           one: '{0} cucharada de postre imperial',
           other: '{0} cucharadas de postre imperiales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'dstspn imp.',
           one: '{0} dstspn imp.',
           other: '{0} dstspn imp.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'dstspn imp.',
           one: '{0} dstspn imp.',
           other: '{0} dstspn imp.',
@@ -3840,19 +3844,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'gotas',
           one: '{0} gota',
           other: '{0} gotas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'gota',
           one: '{0} gota',
           other: '{0} gotas',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'gota',
           one: '{0} gota',
           other: '{0} gotas',
@@ -3862,19 +3866,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeDram => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'dracmas líquidas',
           one: '{0} dracma líquida',
           other: '{0} dracmas líquidas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'fl dr',
           one: '{0} fl dr',
           other: '{0} fl dr',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'fl dr',
           one: '{0} fl dr',
           other: '{0} fl dr',
@@ -3884,19 +3888,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeJigger => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'vasos medidores',
           one: '{0} vaso medidor',
           other: '{0} vasos medidores',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'medidor',
           one: '{0} medidor',
           other: '{0} medidores',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'medidor',
           one: '{0} medidor',
           other: '{0} medidores',
@@ -3906,19 +3910,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'pizcas',
           one: '{0} pizca',
           other: '{0} pizcas',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'pzc',
           one: '{0} pzc',
           other: '{0} pzc',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'pzc',
           one: '{0} pzc',
           other: '{0} pzc',
@@ -3928,19 +3932,19 @@ class UnitsEs implements Units {
   @override
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
-          'es',
+          _locale,
           'cuartos imperiales',
           one: '{0} cuarto imperial',
           other: '{0} cuartos imperiales',
         ),
         short: UnitCountPattern(
-          'es',
+          _locale,
           'qt imp.',
           one: '{0} qt imp.',
           other: '{0} qt imp.',
         ),
         narrow: UnitCountPattern(
-          'es',
+          _locale,
           'qt imp.',
           one: '{0} qt imp.',
           other: '{0} qt imp.',
@@ -3982,34 +3986,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} año',
             other: 'hace {0} años',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} a',
             other: 'hace {0} a',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} a',
             other: 'hace {0} a',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} año',
             other: 'dentro de {0} años',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} a',
             other: 'dentro de {0} a',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} a',
             other: 'dentro de {0} a',
           ),
@@ -4040,34 +4044,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} trimestre',
             other: 'hace {0} trimestres',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} trim.',
             other: 'hace {0} trim.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} trim.',
             other: 'hace {0} trim.',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} trimestre',
             other: 'dentro de {0} trimestres',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} trim.',
             other: 'dentro de {0} trim.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} trim.',
             other: 'dentro de {0} trim.',
           ),
@@ -4098,34 +4102,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} mes',
             other: 'hace {0} meses',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} m',
             other: 'hace {0} m',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} m',
             other: 'hace {0} m',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} mes',
             other: 'dentro de {0} meses',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} m',
             other: 'dentro de {0} m',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} m',
             other: 'dentro de {0} m',
           ),
@@ -4156,34 +4160,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} semana',
             other: 'hace {0} semanas',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} sem.',
             other: 'hace {0} sem.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} sem.',
             other: 'hace {0} sem.',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} semana',
             other: 'dentro de {0} semanas',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} sem.',
             other: 'dentro de {0} sem.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} sem.',
             other: 'dentro de {0} sem.',
           ),
@@ -4221,34 +4225,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} día',
             other: 'hace {0} días',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} día',
             other: 'hace {0} días',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} día',
             other: 'hace {0} días',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} día',
             other: 'dentro de {0} días',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} día',
             other: 'dentro de {0} días',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} día',
             other: 'dentro de {0} días',
           ),
@@ -4295,34 +4299,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} domingo',
             other: 'hace {0} domingos',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} dom.',
             other: 'hace {0} dom.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} DO',
             other: 'hace {0} DO',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} domingo',
             other: 'dentro de {0} domingos',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} dom.',
             other: 'dentro de {0} dom.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} DO',
             other: 'dentro de {0} DO',
           ),
@@ -4348,34 +4352,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} lunes',
             other: 'hace {0} lunes',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} lun.',
             other: 'hace {0} lun.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} LU',
             other: 'hace {0} LU',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} lunes',
             other: 'dentro de {0} lunes',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} lun.',
             other: 'dentro de {0} lun.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} LU',
             other: 'dentro de {0} LU',
           ),
@@ -4401,34 +4405,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} martes',
             other: 'hace {0} martes',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} mar.',
             other: 'hace {0} mar.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} MA',
             other: 'hace {0} MA',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} martes',
             other: 'dentro de {0} martes',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} mar.',
             other: 'dentro de {0} mar.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} MA',
             other: 'dentro de {0} MA',
           ),
@@ -4454,34 +4458,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} miércoles',
             other: 'hace {0} miércoles',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} mié.',
             other: 'hace {0} mié.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} MI',
             other: 'hace {0} MI',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} miércoles',
             other: 'dentro de {0} miércoles',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} mié.',
             other: 'dentro de {0} mié.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} MI',
             other: 'dentro de {0} MI',
           ),
@@ -4507,34 +4511,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} jueves',
             other: 'hace {0} jueves',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} jue.',
             other: 'hace {0} jue.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} JU',
             other: 'hace {0} JU',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} jueves',
             other: 'dentro de {0} jueves',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} jue.',
             other: 'dentro de {0} jue.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} JU',
             other: 'dentro de {0} JU',
           ),
@@ -4560,34 +4564,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} viernes',
             other: 'hace {0} viernes',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} vie.',
             other: 'hace {0} vie.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} VI',
             other: 'hace {0} VI',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} viernes',
             other: 'dentro de {0} viernes',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} vie.',
             other: 'dentro de {0} vie.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} VI',
             other: 'dentro de {0} VI',
           ),
@@ -4613,34 +4617,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} sábado',
             other: 'hace {0} sábados',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} sáb.',
             other: 'hace {0} sáb.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} SA',
             other: 'hace {0} SA',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} sábado',
             other: 'dentro de {0} sábados',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} sáb.',
             other: 'dentro de {0} sáb.',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} SA',
             other: 'dentro de {0} SA',
           ),
@@ -4668,34 +4672,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} hora',
             other: 'hace {0} horas',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} h',
             other: 'hace {0} h',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} h',
             other: 'hace {0} h',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} hora',
             other: 'dentro de {0} horas',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} h',
             other: 'dentro de {0} h',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} h',
             other: 'dentro de {0} h',
           ),
@@ -4716,34 +4720,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} minuto',
             other: 'hace {0} minutos',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} min',
             other: 'hace {0} min',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} min',
             other: 'hace {0} min',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} minuto',
             other: 'dentro de {0} minutos',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} min',
             other: 'dentro de {0} min',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} min',
             other: 'dentro de {0} min',
           ),
@@ -4764,34 +4768,34 @@ class DateFieldsEs implements DateFields {
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} segundo',
             other: 'hace {0} segundos',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} s',
             other: 'hace {0} s',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'hace {0} s',
             other: 'hace {0} s',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} segundo',
             other: 'dentro de {0} segundos',
           ),
           short: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} s',
             other: 'dentro de {0} s',
           ),
           narrow: RelativeTime(
-            'es',
+            _locale,
             one: 'dentro de {0} s',
             other: 'dentro de {0} s',
           ),

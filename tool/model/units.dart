@@ -24,6 +24,7 @@ String generateUnitsModel() {
   for (var key in fields.keys) {
     var field = UnitField.fromJson(fields[key] as Map<String, dynamic>);
     if (field.displayName != null && field.unitPatternCountOther != null) {
+      code.writeln('/// ${field.displayName}');
       code.writeln('Unit get ${lowerCamel(splitWords(key))};');
       code.writeln('');
     }
@@ -74,7 +75,7 @@ void generateUnits(String language, StringBuffer buffer) {
               '$key ${unitForLength.displayName} is null for length $length');
         }
         buffer.writeln(
-            "$length: UnitCountPattern('$language', ${escapeDartString(displayName)},");
+            '$length: UnitCountPattern(_locale, ${escapeDartString(displayName)},');
         for (var plural in plurals) {
           var pattern = unitForLength.getUnitPattern(plural);
           if (pattern != null) {
