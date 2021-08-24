@@ -1,11 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:json_annotation/json_annotation.dart';
 import 'package:path/path.dart' as p;
-
 import '../generate_code.dart';
 import '../utils/escape_dart_string.dart';
+
 part 'date_fields.g.dart';
 
 void generateDateFields(String language, StringBuffer buffer) {

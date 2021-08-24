@@ -1,8 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:path/path.dart' as p;
 import 'package:json_annotation/json_annotation.dart';
-
+import 'package:path/path.dart' as p;
 import '../generate_code.dart';
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';

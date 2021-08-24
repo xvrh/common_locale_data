@@ -1,11 +1,9 @@
 import 'dart:io';
-
 import 'package:common_locale_data/src/supported_locales.dart';
-
-import 'model/territory.dart';
-import 'model/units.dart';
 import 'package:dart_style/dart_style.dart';
 import 'model/date_fields.dart';
+import 'model/territory.dart';
+import 'model/units.dart';
 import 'utils/case_format.dart';
 import 'utils/split_words.dart';
 
@@ -27,9 +25,9 @@ void main() {
     var buffer = StringBuffer()
       ..writeln("import '../../common_locale_data.dart' show CommonLocaleData;")
       ..writeln("import '../date_fields.dart';")
-      ..writeln("import '../units.dart';")
       ..writeln("import '../shared.dart';")
-      ..writeln("import '../territories.dart';");
+      ..writeln("import '../territories.dart';")
+      ..writeln("import '../units.dart';");
 
     buffer.writeln('''
 const _locale = '$language';

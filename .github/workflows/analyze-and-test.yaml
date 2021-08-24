@@ -1,0 +1,23 @@
+name: Build
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dart-lang/setup-dart@v0.3
+        with:
+          sdk: stable
+      - uses: actions/checkout@v2
+      - run: dart --version
+      - run: dart pub get
+      - run: dart analyze --fatal-infos .
+      - run: dart test
+      - run: dart tool/prepare_submit.dart
+      - name: "check for uncommitted changes"
+        run: git diff --exit-code --stat -- .
+        shell: bash

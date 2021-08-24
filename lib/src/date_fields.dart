@@ -1,5 +1,5 @@
-import 'package:common_locale_data/src/shared.dart';
 import 'package:intl/intl.dart';
+import 'shared.dart';
 
 abstract class DateFields {
   MultiLength get era;

@@ -1,8 +1,8 @@
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
-import '../units.dart';
 import '../shared.dart';
 import '../territories.dart';
+import '../units.dart';
 
 const _locale = 'el';
 
