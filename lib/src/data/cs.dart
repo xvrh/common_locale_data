@@ -6466,6 +6466,7 @@ class TerritoriesCs implements Territories {
     'CD': Territory(
       'CD',
       'Kongo – Kinshasa',
+      variant: 'Kongo (DRK)',
     ),
     'CF': Territory(
       'CF',
@@ -6474,6 +6475,7 @@ class TerritoriesCs implements Territories {
     'CG': Territory(
       'CG',
       'Kongo – Brazzaville',
+      variant: 'Kongo (republika)',
     ),
     'CH': Territory(
       'CH',
@@ -6482,6 +6484,7 @@ class TerritoriesCs implements Territories {
     'CI': Territory(
       'CI',
       'Pobřeží slonoviny',
+      variant: 'Côte d’Ivoire',
     ),
     'CK': Territory(
       'CK',
@@ -6534,6 +6537,7 @@ class TerritoriesCs implements Territories {
     'CZ': Territory(
       'CZ',
       'Česko',
+      variant: 'Česká republika',
     ),
     'DE': Territory(
       'DE',
@@ -6614,6 +6618,7 @@ class TerritoriesCs implements Territories {
     'FK': Territory(
       'FK',
       'Falklandské ostrovy',
+      variant: 'Falklandské ostrovy (Malvíny)',
     ),
     'FM': Territory(
       'FM',
@@ -6634,6 +6639,7 @@ class TerritoriesCs implements Territories {
     'GB': Territory(
       'GB',
       'Spojené království',
+      short: 'GB',
     ),
     'GD': Territory(
       'GD',
@@ -6706,6 +6712,7 @@ class TerritoriesCs implements Territories {
     'HK': Territory(
       'HK',
       'Hongkong – ZAO Číny',
+      short: 'Hongkong',
     ),
     'HM': Territory(
       'HM',
@@ -6922,6 +6929,7 @@ class TerritoriesCs implements Territories {
     'MO': Territory(
       'MO',
       'Macao – ZAO Číny',
+      short: 'Macao',
     ),
     'MP': Territory(
       'MP',
@@ -7062,6 +7070,7 @@ class TerritoriesCs implements Territories {
     'PS': Territory(
       'PS',
       'Palestinská území',
+      short: 'Palestina',
     ),
     'PT': Territory(
       'PT',
@@ -7186,6 +7195,7 @@ class TerritoriesCs implements Territories {
     'SZ': Territory(
       'SZ',
       'Eswatini',
+      variant: 'Svazijsko',
     ),
     'TA': Territory(
       'TA',
@@ -7222,6 +7232,7 @@ class TerritoriesCs implements Territories {
     'TL': Territory(
       'TL',
       'Východní Timor',
+      variant: 'Timor-Leste',
     ),
     'TM': Territory(
       'TM',
@@ -7270,10 +7281,12 @@ class TerritoriesCs implements Territories {
     'UN': Territory(
       'UN',
       'Organizace spojených národů',
+      short: 'OSN',
     ),
     'US': Territory(
       'US',
       'Spojené státy',
+      short: 'USA',
     ),
     'UY': Territory(
       'UY',

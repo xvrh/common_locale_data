@@ -5178,6 +5178,7 @@ class TerritoriesCa implements Territories {
     'CD': Territory(
       'CD',
       'Congo - Kinshasa',
+      variant: 'Congo (RDC)',
     ),
     'CF': Territory(
       'CF',
@@ -5186,6 +5187,7 @@ class TerritoriesCa implements Territories {
     'CG': Territory(
       'CG',
       'Congo - Brazzaville',
+      variant: 'Congo (República del Congo)',
     ),
     'CH': Territory(
       'CH',
@@ -5194,6 +5196,7 @@ class TerritoriesCa implements Territories {
     'CI': Territory(
       'CI',
       'Côte d’Ivoire',
+      variant: 'Costa d’Ivori',
     ),
     'CK': Territory(
       'CK',
@@ -5246,6 +5249,7 @@ class TerritoriesCa implements Territories {
     'CZ': Territory(
       'CZ',
       'Txèquia',
+      variant: 'República Txeca',
     ),
     'DE': Territory(
       'DE',
@@ -5326,6 +5330,7 @@ class TerritoriesCa implements Territories {
     'FK': Territory(
       'FK',
       'Illes Malvines',
+      variant: 'Illes Malvines (Illes Falkland)',
     ),
     'FM': Territory(
       'FM',
@@ -5346,6 +5351,7 @@ class TerritoriesCa implements Territories {
     'GB': Territory(
       'GB',
       'Regne Unit',
+      short: 'RU',
     ),
     'GD': Territory(
       'GD',
@@ -5418,6 +5424,7 @@ class TerritoriesCa implements Territories {
     'HK': Territory(
       'HK',
       'Hong Kong (RAE Xina)',
+      short: 'Hong Kong',
     ),
     'HM': Territory(
       'HM',
@@ -5634,6 +5641,7 @@ class TerritoriesCa implements Territories {
     'MO': Territory(
       'MO',
       'Macau (RAE Xina)',
+      short: 'Macau',
     ),
     'MP': Territory(
       'MP',
@@ -5774,6 +5782,7 @@ class TerritoriesCa implements Territories {
     'PS': Territory(
       'PS',
       'Territoris palestins',
+      short: 'Palestina',
     ),
     'PT': Territory(
       'PT',
@@ -5898,6 +5907,7 @@ class TerritoriesCa implements Territories {
     'SZ': Territory(
       'SZ',
       'eSwatini',
+      variant: 'Swazilàndia',
     ),
     'TA': Territory(
       'TA',
@@ -5934,6 +5944,7 @@ class TerritoriesCa implements Territories {
     'TL': Territory(
       'TL',
       'Timor Oriental',
+      variant: 'Timor Oriental',
     ),
     'TM': Territory(
       'TM',
@@ -5982,10 +5993,12 @@ class TerritoriesCa implements Territories {
     'UN': Territory(
       'UN',
       'Nacions Unides',
+      short: 'ONU',
     ),
     'US': Territory(
       'US',
       'Estats Units',
+      short: 'EUA',
     ),
     'UY': Territory(
       'UY',

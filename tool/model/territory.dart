@@ -51,6 +51,13 @@ class Territories${languageUpper(language)} implements Territories {
       throw Exception('$territoryCode is null for $language');
     }
     output.writeln('${escapeDartString(translatedName)},');
+    for (var alt in ['variant', 'short']) {
+      var altName = translatedTerritories['$territoryCode-alt-$alt'] as String?;
+      if (altName != null) {
+        output.writeln('$alt: ${escapeDartString(altName)},');
+      }
+    }
+
     output.writeln(')');
     return '$output';
   }

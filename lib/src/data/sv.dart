@@ -5167,6 +5167,7 @@ class TerritoriesSv implements Territories {
     'CD': Territory(
       'CD',
       'Kongo-Kinshasa',
+      variant: 'Demokratiska republiken Kongo',
     ),
     'CF': Territory(
       'CF',
@@ -5175,6 +5176,7 @@ class TerritoriesSv implements Territories {
     'CG': Territory(
       'CG',
       'Kongo-Brazzaville',
+      variant: 'Republiken Kongo',
     ),
     'CH': Territory(
       'CH',
@@ -5183,6 +5185,7 @@ class TerritoriesSv implements Territories {
     'CI': Territory(
       'CI',
       'Côte d’Ivoire',
+      variant: 'Côte d’Ivoire',
     ),
     'CK': Territory(
       'CK',
@@ -5235,6 +5238,7 @@ class TerritoriesSv implements Territories {
     'CZ': Territory(
       'CZ',
       'Tjeckien',
+      variant: 'Tjeckien',
     ),
     'DE': Territory(
       'DE',
@@ -5315,6 +5319,7 @@ class TerritoriesSv implements Territories {
     'FK': Territory(
       'FK',
       'Falklandsöarna',
+      variant: 'Falklandsöarna',
     ),
     'FM': Territory(
       'FM',
@@ -5335,6 +5340,7 @@ class TerritoriesSv implements Territories {
     'GB': Territory(
       'GB',
       'Storbritannien',
+      short: 'Storbritannien',
     ),
     'GD': Territory(
       'GD',
@@ -5407,6 +5413,7 @@ class TerritoriesSv implements Territories {
     'HK': Territory(
       'HK',
       'Hongkong SAR',
+      short: 'Hongkong',
     ),
     'HM': Territory(
       'HM',
@@ -5623,6 +5630,7 @@ class TerritoriesSv implements Territories {
     'MO': Territory(
       'MO',
       'Macao SAR',
+      short: 'Macao',
     ),
     'MP': Territory(
       'MP',
@@ -5763,6 +5771,7 @@ class TerritoriesSv implements Territories {
     'PS': Territory(
       'PS',
       'Palestinska territorierna',
+      short: 'Palestina',
     ),
     'PT': Territory(
       'PT',
@@ -5887,6 +5896,7 @@ class TerritoriesSv implements Territories {
     'SZ': Territory(
       'SZ',
       'Swaziland',
+      variant: 'Eswatini',
     ),
     'TA': Territory(
       'TA',
@@ -5923,6 +5933,7 @@ class TerritoriesSv implements Territories {
     'TL': Territory(
       'TL',
       'Östtimor',
+      variant: 'Timor-Leste',
     ),
     'TM': Territory(
       'TM',
@@ -5971,10 +5982,12 @@ class TerritoriesSv implements Territories {
     'UN': Territory(
       'UN',
       'Förenta Nationerna',
+      short: 'FN',
     ),
     'US': Territory(
       'US',
       'USA',
+      short: 'USA',
     ),
     'UY': Territory(
       'UY',

@@ -1,9 +1,9 @@
+import 'data/ar.dart' show CommonLocaleDataAr;
 import 'data/ca.dart' show CommonLocaleDataCa;
 import 'data/cs.dart' show CommonLocaleDataCs;
 import 'data/da.dart' show CommonLocaleDataDa;
 import 'data/de.dart' show CommonLocaleDataDe;
 import 'data/en.dart' show CommonLocaleDataEn;
-import 'data/en_gb.dart' show CommonLocaleDataEnGB;
 import 'data/es.dart' show CommonLocaleDataEs;
 import 'data/fr.dart' show CommonLocaleDataFr;
 import 'data/el.dart' show CommonLocaleDataEl;
@@ -23,12 +23,12 @@ abstract class CommonLocaleData {
   Units get units;
   Territories get territories;
 
+  static const ar = CommonLocaleDataAr();
   static const ca = CommonLocaleDataCa();
   static const cs = CommonLocaleDataCs();
   static const da = CommonLocaleDataDa();
   static const de = CommonLocaleDataDe();
   static const en = CommonLocaleDataEn();
-  static const enGB = CommonLocaleDataEnGB();
   static const es = CommonLocaleDataEs();
   static const fr = CommonLocaleDataFr();
   static const el = CommonLocaleDataEl();

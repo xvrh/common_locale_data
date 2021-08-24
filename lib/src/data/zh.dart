@@ -4576,6 +4576,7 @@ class TerritoriesZh implements Territories {
     'CD': Territory(
       'CD',
       '刚果（金）',
+      variant: '刚果民主共和国',
     ),
     'CF': Territory(
       'CF',
@@ -4584,6 +4585,7 @@ class TerritoriesZh implements Territories {
     'CG': Territory(
       'CG',
       '刚果（布）',
+      variant: '刚果共和国',
     ),
     'CH': Territory(
       'CH',
@@ -4592,6 +4594,7 @@ class TerritoriesZh implements Territories {
     'CI': Territory(
       'CI',
       '科特迪瓦',
+      variant: '象牙海岸',
     ),
     'CK': Territory(
       'CK',
@@ -4644,6 +4647,7 @@ class TerritoriesZh implements Territories {
     'CZ': Territory(
       'CZ',
       '捷克',
+      variant: '捷克共和国',
     ),
     'DE': Territory(
       'DE',
@@ -4724,6 +4728,7 @@ class TerritoriesZh implements Territories {
     'FK': Territory(
       'FK',
       '福克兰群岛',
+      variant: '福克兰群岛（马尔维纳斯群岛）',
     ),
     'FM': Territory(
       'FM',
@@ -4744,6 +4749,7 @@ class TerritoriesZh implements Territories {
     'GB': Territory(
       'GB',
       '英国',
+      short: '英国',
     ),
     'GD': Territory(
       'GD',
@@ -4816,6 +4822,7 @@ class TerritoriesZh implements Territories {
     'HK': Territory(
       'HK',
       '中国香港特别行政区',
+      short: '香港',
     ),
     'HM': Territory(
       'HM',
@@ -5032,6 +5039,7 @@ class TerritoriesZh implements Territories {
     'MO': Territory(
       'MO',
       '中国澳门特别行政区',
+      short: '澳门',
     ),
     'MP': Territory(
       'MP',
@@ -5172,6 +5180,7 @@ class TerritoriesZh implements Territories {
     'PS': Territory(
       'PS',
       '巴勒斯坦领土',
+      short: '巴勒斯坦',
     ),
     'PT': Territory(
       'PT',
@@ -5296,6 +5305,7 @@ class TerritoriesZh implements Territories {
     'SZ': Territory(
       'SZ',
       '斯威士兰',
+      variant: '斯威士兰',
     ),
     'TA': Territory(
       'TA',
@@ -5332,6 +5342,7 @@ class TerritoriesZh implements Territories {
     'TL': Territory(
       'TL',
       '东帝汶',
+      variant: '东帝汶',
     ),
     'TM': Territory(
       'TM',
@@ -5384,6 +5395,7 @@ class TerritoriesZh implements Territories {
     'US': Territory(
       'US',
       '美国',
+      short: '美国',
     ),
     'UY': Territory(
       'UY',

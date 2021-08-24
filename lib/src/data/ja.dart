@@ -4576,6 +4576,7 @@ class TerritoriesJa implements Territories {
     'CD': Territory(
       'CD',
       'コンゴ民主共和国(キンシャサ)',
+      variant: 'コンゴ民主共和国',
     ),
     'CF': Territory(
       'CF',
@@ -4584,6 +4585,7 @@ class TerritoriesJa implements Territories {
     'CG': Territory(
       'CG',
       'コンゴ共和国(ブラザビル)',
+      variant: 'コンゴ共和国',
     ),
     'CH': Territory(
       'CH',
@@ -4592,6 +4594,7 @@ class TerritoriesJa implements Territories {
     'CI': Territory(
       'CI',
       'コートジボワール',
+      variant: '象牙海岸',
     ),
     'CK': Territory(
       'CK',
@@ -4644,6 +4647,7 @@ class TerritoriesJa implements Territories {
     'CZ': Territory(
       'CZ',
       'チェコ',
+      variant: 'チェコ共和国',
     ),
     'DE': Territory(
       'DE',
@@ -4724,6 +4728,7 @@ class TerritoriesJa implements Territories {
     'FK': Territory(
       'FK',
       'フォークランド諸島',
+      variant: 'フォークランド諸島 (マルビーナス諸島)',
     ),
     'FM': Territory(
       'FM',
@@ -4744,6 +4749,7 @@ class TerritoriesJa implements Territories {
     'GB': Territory(
       'GB',
       'イギリス',
+      short: '英国',
     ),
     'GD': Territory(
       'GD',
@@ -4816,6 +4822,7 @@ class TerritoriesJa implements Territories {
     'HK': Territory(
       'HK',
       '中華人民共和国香港特別行政区',
+      short: '香港',
     ),
     'HM': Territory(
       'HM',
@@ -5032,6 +5039,7 @@ class TerritoriesJa implements Territories {
     'MO': Territory(
       'MO',
       '中華人民共和国マカオ特別行政区',
+      short: 'マカオ',
     ),
     'MP': Territory(
       'MP',
@@ -5172,6 +5180,7 @@ class TerritoriesJa implements Territories {
     'PS': Territory(
       'PS',
       'パレスチナ自治区',
+      short: 'パレスチナ',
     ),
     'PT': Territory(
       'PT',
@@ -5296,6 +5305,7 @@ class TerritoriesJa implements Territories {
     'SZ': Territory(
       'SZ',
       'エスワティニ',
+      variant: 'スワジランド',
     ),
     'TA': Territory(
       'TA',
@@ -5332,6 +5342,7 @@ class TerritoriesJa implements Territories {
     'TL': Territory(
       'TL',
       '東ティモール',
+      variant: '東チモール',
     ),
     'TM': Territory(
       'TM',
@@ -5380,10 +5391,12 @@ class TerritoriesJa implements Territories {
     'UN': Territory(
       'UN',
       '国際連合',
+      short: '国連',
     ),
     'US': Territory(
       'US',
       'アメリカ合衆国',
+      short: 'アメリカ',
     ),
     'UY': Territory(
       'UY',

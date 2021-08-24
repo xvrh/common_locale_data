@@ -5194,6 +5194,7 @@ class TerritoriesEl implements Territories {
     'CD': Territory(
       'CD',
       'Κονγκό - Κινσάσα',
+      variant: 'Κονγκό (ΛΔΚ)',
     ),
     'CF': Territory(
       'CF',
@@ -5202,6 +5203,7 @@ class TerritoriesEl implements Territories {
     'CG': Territory(
       'CG',
       'Κονγκό - Μπραζαβίλ',
+      variant: 'Κονγκό (Δημοκρατία)',
     ),
     'CH': Territory(
       'CH',
@@ -5210,6 +5212,7 @@ class TerritoriesEl implements Territories {
     'CI': Territory(
       'CI',
       'Ακτή Ελεφαντοστού',
+      variant: 'Ακτή Ελεφαντοστού',
     ),
     'CK': Territory(
       'CK',
@@ -5262,6 +5265,7 @@ class TerritoriesEl implements Territories {
     'CZ': Territory(
       'CZ',
       'Τσεχία',
+      variant: 'Τσεχική Δημοκρατία',
     ),
     'DE': Territory(
       'DE',
@@ -5342,6 +5346,7 @@ class TerritoriesEl implements Territories {
     'FK': Territory(
       'FK',
       'Νήσοι Φόκλαντ',
+      variant: 'Νήσοι Φόκλαντ (Νήσοι Μαλβίνας)',
     ),
     'FM': Territory(
       'FM',
@@ -5362,6 +5367,7 @@ class TerritoriesEl implements Territories {
     'GB': Territory(
       'GB',
       'Ηνωμένο Βασίλειο',
+      short: 'ΗΒ',
     ),
     'GD': Territory(
       'GD',
@@ -5434,6 +5440,7 @@ class TerritoriesEl implements Territories {
     'HK': Territory(
       'HK',
       'Χονγκ Κονγκ ΕΔΠ Κίνας',
+      short: 'Χονγκ Κονγκ',
     ),
     'HM': Territory(
       'HM',
@@ -5650,6 +5657,7 @@ class TerritoriesEl implements Territories {
     'MO': Territory(
       'MO',
       'Μακάο ΕΔΠ Κίνας',
+      short: 'Μακάο',
     ),
     'MP': Territory(
       'MP',
@@ -5790,6 +5798,7 @@ class TerritoriesEl implements Territories {
     'PS': Territory(
       'PS',
       'Παλαιστινιακά Εδάφη',
+      short: 'Παλαιστίνη',
     ),
     'PT': Territory(
       'PT',
@@ -5914,6 +5923,7 @@ class TerritoriesEl implements Territories {
     'SZ': Territory(
       'SZ',
       'Εσουατίνι',
+      variant: 'Σουαζιλάνδη',
     ),
     'TA': Territory(
       'TA',
@@ -5950,6 +5960,7 @@ class TerritoriesEl implements Territories {
     'TL': Territory(
       'TL',
       'Τιμόρ-Λέστε',
+      variant: 'Ανατολικό Τιμόρ',
     ),
     'TM': Territory(
       'TM',
@@ -5998,10 +6009,12 @@ class TerritoriesEl implements Territories {
     'UN': Territory(
       'UN',
       'Ηνωμένα Έθνη',
+      short: 'ΟΗΕ',
     ),
     'US': Territory(
       'US',
       'Ηνωμένες Πολιτείες',
+      short: 'ΗΠΑ',
     ),
     'UY': Territory(
       'UY',

@@ -1,10 +1,10 @@
 final supportedLocales = {
+  'ar',
   'ca',
   'cs',
   'da',
   'de',
   'en',
-  'en-GB',
   'es',
   'fr',
   'el',
