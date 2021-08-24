@@ -6,28 +6,23 @@ Information provided by this package in all supported languages:
 - Units (duration, length, weight, etc...) (ie: "5 kilometers")
 
 ## Available data
-- Measurement unit
-- Time unit
-- Country names
-- Language names
+- Translations for measurement units in full and abbreviated forms including singular/plural modifications.
+- Translations for language names.
+- Translations for territory and country names.
+- Translations for currency names, including singular/plural modifications.
+- Translations for weekday, month, era, period of day, in full and abbreviated forms.
+- Translations for time zones and example cities (or similar) for time zones.
+- Translations for calendar fields.
 
 ## Tree-shaking
 
 All the data and translations are stored as literal strings in the code. The APIs are designed to be fully 
-tree-shakeable. The final application's code won't include the code for languages you don't use.
+tree-shakeable. The final application's binaries won't include the translations for languages you don't use.
 
 ## Source
 All the data are extracted from this subrepositories:
 
-
-
-
-## Format and translate units:
-
-Provide a way to format and translate differents units in a tree-shaking efficient way.
-
-This packages provides a type-safe and tree-shakable way to access translated unit data.  
-The translations are extracted from CLDR data source in 50+ languages.
+## Example
 
 ```dart
 void main() {
