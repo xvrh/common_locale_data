@@ -4,7 +4,10 @@ import 'package:path/path.dart' as p;
 
 import '../generate_code.dart';
 import '../utils/case_format.dart';
+import '../utils/escape_dart_string.dart';
 import '../utils/split_words.dart';
+
+final _nonCountryMatcher = RegExp(r'^[0-9]{3}$');
 
 String generateTerritoriesModel() {
   var code = StringBuffer();
@@ -15,15 +18,9 @@ abstract class Territories {
 
 ''');
 
-  var file = File(p.join('tool/data/localenames/territories/en.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  var territories =
-      // ignore: avoid_dynamic_calls
-      json['main']['en']['localeDisplayNames']['territories']
-          as Map<String, dynamic>;
+  var territories = readTerritories('en');
   for (var entry in territories.entries) {
-    if (RegExp(r'^[0-9]{3}$').hasMatch(entry.key)) {
+    if (_nonCountryMatcher.hasMatch(entry.key) || entry.key == 'ZZ') {
       var name = lowerCamel(splitWords(entry.value as String));
       code.writeln('Territory get $name;');
     } else {
@@ -38,25 +35,53 @@ abstract class Territories {
 }
 
 void generateTerritories(String language, StringBuffer output) {
+  var reference = readTerritories('en');
+  var translatedTerritories = readTerritories(language);
+
+  output.writeln('''
+class Territories${languageUpper(language)} implements Territories {
+  Territories${languageUpper(language)}._();
+''');
+
+  String translatedTerritory(String territoryCode) {
+    var output = StringBuffer('Territory(');
+    output.writeln("'$territoryCode',");
+    var translatedName = translatedTerritories[territoryCode] as String?;
+    if (translatedName == null) {
+      throw Exception('$territoryCode is null for $language');
+    }
+    output.writeln('${escapeDartString(translatedName)},');
+    output.writeln(')');
+    return '$output';
+  }
+
+  var countryCode = StringBuffer()..writeln('''
+@override
+final countries = <String, Territory>{
+''');
+  for (var entry in reference.entries) {
+    if (_nonCountryMatcher.hasMatch(entry.key) || entry.key == 'ZZ') {
+      var name = lowerCamel(splitWords(entry.value as String));
+      output.writeln('@override');
+      output
+          .writeln('Territory get $name => ${translatedTerritory(entry.key)};');
+      output.writeln('');
+    } else if (entry.key.length == 2) {
+      countryCode.writeln("'${entry.key}': ${translatedTerritory(entry.key)},");
+    }
+  }
+  countryCode.writeln('};');
+
+  output.writeln(countryCode);
+  output.writeln('}');
+}
+
+Map<String, dynamic> readTerritories(String language) {
   var file = File(p.join('tool/data/localenames/territories/$language.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
-  var territories =
+  return
       // ignore: avoid_dynamic_calls
-      json['main']['en']['localeDisplayNames']['territories']
+      json['main'][language]['localeDisplayNames']['territories']
           as Map<String, dynamic>;
-  output.writeln(
-      '''class Territories${languageUpper(language)} implements Territories {
-      
-      ''');
-
-  for (var entry in territories.entries) {
-    if (RegExp(r'^[0-9]{3}$').hasMatch(entry.key)) {
-      var name = lowerCamel(splitWords(entry.value as String));
-      output.writeln('Territory get $name => Territory();');
-    } else if (entry.key.length == 2) {
-    } else {}
-  }
-
-  output.writeln('}');
 }

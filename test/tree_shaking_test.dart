@@ -34,16 +34,3 @@ Future<String> _compileDart2Js(String file) async {
   //outputFile.deleteSync();
   return content;
 }
-
-Future<String> _compileDart2Native(String file) async {
-  var processRunner = ProcessRunner(printOutputDefault: true);
-
-  var outputFile = File('_temp.exe');
-
-  await processRunner.runProcess(
-      ['dart2native', file, '-o', outputFile.path, '--no-source-maps']);
-
-  var content = outputFile.readAsStringSync();
-  //outputFile.deleteSync();
-  return content;
-}

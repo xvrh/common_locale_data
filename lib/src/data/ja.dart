@@ -18,6 +18,10 @@ class CommonLocaleDataJa implements CommonLocaleData {
   static final _units = UnitsJa._();
   @override
   Units get units => _units;
+
+  static final _territories = TerritoriesJa._();
+  @override
+  Territories get territories => _territories;
 }
 
 class UnitsJa implements Units {
@@ -4210,4 +4214,1252 @@ class DateFieldsJa implements DateFields {
         short: 'タイムゾーン',
         narrow: 'タイムゾーン',
       );
+}
+
+class TerritoriesJa implements Territories {
+  TerritoriesJa._();
+
+  @override
+  Territory get world => Territory(
+        '001',
+        '世界',
+      );
+
+  @override
+  Territory get africa => Territory(
+        '002',
+        'アフリカ',
+      );
+
+  @override
+  Territory get northAmerica => Territory(
+        '003',
+        '北アメリカ大陸',
+      );
+
+  @override
+  Territory get southAmerica => Territory(
+        '005',
+        '南アメリカ',
+      );
+
+  @override
+  Territory get oceania => Territory(
+        '009',
+        'オセアニア',
+      );
+
+  @override
+  Territory get westernAfrica => Territory(
+        '011',
+        '西アフリカ',
+      );
+
+  @override
+  Territory get centralAmerica => Territory(
+        '013',
+        '中央アメリカ',
+      );
+
+  @override
+  Territory get easternAfrica => Territory(
+        '014',
+        '東アフリカ',
+      );
+
+  @override
+  Territory get northernAfrica => Territory(
+        '015',
+        '北アフリカ',
+      );
+
+  @override
+  Territory get middleAfrica => Territory(
+        '017',
+        '中部アフリカ',
+      );
+
+  @override
+  Territory get southernAfrica => Territory(
+        '018',
+        '南部アフリカ',
+      );
+
+  @override
+  Territory get americas => Territory(
+        '019',
+        'アメリカ大陸',
+      );
+
+  @override
+  Territory get northernAmerica => Territory(
+        '021',
+        '北アメリカ',
+      );
+
+  @override
+  Territory get caribbean => Territory(
+        '029',
+        'カリブ',
+      );
+
+  @override
+  Territory get easternAsia => Territory(
+        '030',
+        '東アジア',
+      );
+
+  @override
+  Territory get southernAsia => Territory(
+        '034',
+        '南アジア',
+      );
+
+  @override
+  Territory get southeastAsia => Territory(
+        '035',
+        '東南アジア',
+      );
+
+  @override
+  Territory get southernEurope => Territory(
+        '039',
+        '南ヨーロッパ',
+      );
+
+  @override
+  Territory get australasia => Territory(
+        '053',
+        'オーストララシア',
+      );
+
+  @override
+  Territory get melanesia => Territory(
+        '054',
+        'メラネシア',
+      );
+
+  @override
+  Territory get micronesianRegion => Territory(
+        '057',
+        'ミクロネシア',
+      );
+
+  @override
+  Territory get polynesia => Territory(
+        '061',
+        'ポリネシア',
+      );
+
+  @override
+  Territory get asia => Territory(
+        '142',
+        'アジア',
+      );
+
+  @override
+  Territory get centralAsia => Territory(
+        '143',
+        '中央アジア',
+      );
+
+  @override
+  Territory get westernAsia => Territory(
+        '145',
+        '西アジア',
+      );
+
+  @override
+  Territory get europe => Territory(
+        '150',
+        'ヨーロッパ',
+      );
+
+  @override
+  Territory get easternEurope => Territory(
+        '151',
+        '東ヨーロッパ',
+      );
+
+  @override
+  Territory get northernEurope => Territory(
+        '154',
+        '北ヨーロッパ',
+      );
+
+  @override
+  Territory get westernEurope => Territory(
+        '155',
+        '西ヨーロッパ',
+      );
+
+  @override
+  Territory get subSaharanAfrica => Territory(
+        '202',
+        'サブサハラアフリカ',
+      );
+
+  @override
+  Territory get latinAmerica => Territory(
+        '419',
+        'ラテンアメリカ',
+      );
+
+  @override
+  Territory get unknownRegion => Territory(
+        'ZZ',
+        '不明な地域',
+      );
+
+  @override
+  final countries = <String, Territory>{
+    'AC': Territory(
+      'AC',
+      'アセンション島',
+    ),
+    'AD': Territory(
+      'AD',
+      'アンドラ',
+    ),
+    'AE': Territory(
+      'AE',
+      'アラブ首長国連邦',
+    ),
+    'AF': Territory(
+      'AF',
+      'アフガニスタン',
+    ),
+    'AG': Territory(
+      'AG',
+      'アンティグア・バーブーダ',
+    ),
+    'AI': Territory(
+      'AI',
+      'アンギラ',
+    ),
+    'AL': Territory(
+      'AL',
+      'アルバニア',
+    ),
+    'AM': Territory(
+      'AM',
+      'アルメニア',
+    ),
+    'AO': Territory(
+      'AO',
+      'アンゴラ',
+    ),
+    'AQ': Territory(
+      'AQ',
+      '南極',
+    ),
+    'AR': Territory(
+      'AR',
+      'アルゼンチン',
+    ),
+    'AS': Territory(
+      'AS',
+      '米領サモア',
+    ),
+    'AT': Territory(
+      'AT',
+      'オーストリア',
+    ),
+    'AU': Territory(
+      'AU',
+      'オーストラリア',
+    ),
+    'AW': Territory(
+      'AW',
+      'アルバ',
+    ),
+    'AX': Territory(
+      'AX',
+      'オーランド諸島',
+    ),
+    'AZ': Territory(
+      'AZ',
+      'アゼルバイジャン',
+    ),
+    'BA': Territory(
+      'BA',
+      'ボスニア・ヘルツェゴビナ',
+    ),
+    'BB': Territory(
+      'BB',
+      'バルバドス',
+    ),
+    'BD': Territory(
+      'BD',
+      'バングラデシュ',
+    ),
+    'BE': Territory(
+      'BE',
+      'ベルギー',
+    ),
+    'BF': Territory(
+      'BF',
+      'ブルキナファソ',
+    ),
+    'BG': Territory(
+      'BG',
+      'ブルガリア',
+    ),
+    'BH': Territory(
+      'BH',
+      'バーレーン',
+    ),
+    'BI': Territory(
+      'BI',
+      'ブルンジ',
+    ),
+    'BJ': Territory(
+      'BJ',
+      'ベナン',
+    ),
+    'BL': Territory(
+      'BL',
+      'サン・バルテルミー',
+    ),
+    'BM': Territory(
+      'BM',
+      'バミューダ',
+    ),
+    'BN': Territory(
+      'BN',
+      'ブルネイ',
+    ),
+    'BO': Territory(
+      'BO',
+      'ボリビア',
+    ),
+    'BQ': Territory(
+      'BQ',
+      'オランダ領カリブ',
+    ),
+    'BR': Territory(
+      'BR',
+      'ブラジル',
+    ),
+    'BS': Territory(
+      'BS',
+      'バハマ',
+    ),
+    'BT': Territory(
+      'BT',
+      'ブータン',
+    ),
+    'BV': Territory(
+      'BV',
+      'ブーベ島',
+    ),
+    'BW': Territory(
+      'BW',
+      'ボツワナ',
+    ),
+    'BY': Territory(
+      'BY',
+      'ベラルーシ',
+    ),
+    'BZ': Territory(
+      'BZ',
+      'ベリーズ',
+    ),
+    'CA': Territory(
+      'CA',
+      'カナダ',
+    ),
+    'CC': Territory(
+      'CC',
+      'ココス(キーリング)諸島',
+    ),
+    'CD': Territory(
+      'CD',
+      'コンゴ民主共和国(キンシャサ)',
+    ),
+    'CF': Territory(
+      'CF',
+      '中央アフリカ共和国',
+    ),
+    'CG': Territory(
+      'CG',
+      'コンゴ共和国(ブラザビル)',
+    ),
+    'CH': Territory(
+      'CH',
+      'スイス',
+    ),
+    'CI': Territory(
+      'CI',
+      'コートジボワール',
+    ),
+    'CK': Territory(
+      'CK',
+      'クック諸島',
+    ),
+    'CL': Territory(
+      'CL',
+      'チリ',
+    ),
+    'CM': Territory(
+      'CM',
+      'カメルーン',
+    ),
+    'CN': Territory(
+      'CN',
+      '中国',
+    ),
+    'CO': Territory(
+      'CO',
+      'コロンビア',
+    ),
+    'CP': Territory(
+      'CP',
+      'クリッパートン島',
+    ),
+    'CR': Territory(
+      'CR',
+      'コスタリカ',
+    ),
+    'CU': Territory(
+      'CU',
+      'キューバ',
+    ),
+    'CV': Territory(
+      'CV',
+      'カーボベルデ',
+    ),
+    'CW': Territory(
+      'CW',
+      'キュラソー',
+    ),
+    'CX': Territory(
+      'CX',
+      'クリスマス島',
+    ),
+    'CY': Territory(
+      'CY',
+      'キプロス',
+    ),
+    'CZ': Territory(
+      'CZ',
+      'チェコ',
+    ),
+    'DE': Territory(
+      'DE',
+      'ドイツ',
+    ),
+    'DG': Territory(
+      'DG',
+      'ディエゴガルシア島',
+    ),
+    'DJ': Territory(
+      'DJ',
+      'ジブチ',
+    ),
+    'DK': Territory(
+      'DK',
+      'デンマーク',
+    ),
+    'DM': Territory(
+      'DM',
+      'ドミニカ国',
+    ),
+    'DO': Territory(
+      'DO',
+      'ドミニカ共和国',
+    ),
+    'DZ': Territory(
+      'DZ',
+      'アルジェリア',
+    ),
+    'EA': Territory(
+      'EA',
+      'セウタ・メリリャ',
+    ),
+    'EC': Territory(
+      'EC',
+      'エクアドル',
+    ),
+    'EE': Territory(
+      'EE',
+      'エストニア',
+    ),
+    'EG': Territory(
+      'EG',
+      'エジプト',
+    ),
+    'EH': Territory(
+      'EH',
+      '西サハラ',
+    ),
+    'ER': Territory(
+      'ER',
+      'エリトリア',
+    ),
+    'ES': Territory(
+      'ES',
+      'スペイン',
+    ),
+    'ET': Territory(
+      'ET',
+      'エチオピア',
+    ),
+    'EU': Territory(
+      'EU',
+      '欧州連合',
+    ),
+    'EZ': Territory(
+      'EZ',
+      'ユーロ圏',
+    ),
+    'FI': Territory(
+      'FI',
+      'フィンランド',
+    ),
+    'FJ': Territory(
+      'FJ',
+      'フィジー',
+    ),
+    'FK': Territory(
+      'FK',
+      'フォークランド諸島',
+    ),
+    'FM': Territory(
+      'FM',
+      'ミクロネシア連邦',
+    ),
+    'FO': Territory(
+      'FO',
+      'フェロー諸島',
+    ),
+    'FR': Territory(
+      'FR',
+      'フランス',
+    ),
+    'GA': Territory(
+      'GA',
+      'ガボン',
+    ),
+    'GB': Territory(
+      'GB',
+      'イギリス',
+    ),
+    'GD': Territory(
+      'GD',
+      'グレナダ',
+    ),
+    'GE': Territory(
+      'GE',
+      'ジョージア',
+    ),
+    'GF': Territory(
+      'GF',
+      '仏領ギアナ',
+    ),
+    'GG': Territory(
+      'GG',
+      'ガーンジー',
+    ),
+    'GH': Territory(
+      'GH',
+      'ガーナ',
+    ),
+    'GI': Territory(
+      'GI',
+      'ジブラルタル',
+    ),
+    'GL': Territory(
+      'GL',
+      'グリーンランド',
+    ),
+    'GM': Territory(
+      'GM',
+      'ガンビア',
+    ),
+    'GN': Territory(
+      'GN',
+      'ギニア',
+    ),
+    'GP': Territory(
+      'GP',
+      'グアドループ',
+    ),
+    'GQ': Territory(
+      'GQ',
+      '赤道ギニア',
+    ),
+    'GR': Territory(
+      'GR',
+      'ギリシャ',
+    ),
+    'GS': Territory(
+      'GS',
+      'サウスジョージア・サウスサンドウィッチ諸島',
+    ),
+    'GT': Territory(
+      'GT',
+      'グアテマラ',
+    ),
+    'GU': Territory(
+      'GU',
+      'グアム',
+    ),
+    'GW': Territory(
+      'GW',
+      'ギニアビサウ',
+    ),
+    'GY': Territory(
+      'GY',
+      'ガイアナ',
+    ),
+    'HK': Territory(
+      'HK',
+      '中華人民共和国香港特別行政区',
+    ),
+    'HM': Territory(
+      'HM',
+      'ハード島・マクドナルド諸島',
+    ),
+    'HN': Territory(
+      'HN',
+      'ホンジュラス',
+    ),
+    'HR': Territory(
+      'HR',
+      'クロアチア',
+    ),
+    'HT': Territory(
+      'HT',
+      'ハイチ',
+    ),
+    'HU': Territory(
+      'HU',
+      'ハンガリー',
+    ),
+    'IC': Territory(
+      'IC',
+      'カナリア諸島',
+    ),
+    'ID': Territory(
+      'ID',
+      'インドネシア',
+    ),
+    'IE': Territory(
+      'IE',
+      'アイルランド',
+    ),
+    'IL': Territory(
+      'IL',
+      'イスラエル',
+    ),
+    'IM': Territory(
+      'IM',
+      'マン島',
+    ),
+    'IN': Territory(
+      'IN',
+      'インド',
+    ),
+    'IO': Territory(
+      'IO',
+      '英領インド洋地域',
+    ),
+    'IQ': Territory(
+      'IQ',
+      'イラク',
+    ),
+    'IR': Territory(
+      'IR',
+      'イラン',
+    ),
+    'IS': Territory(
+      'IS',
+      'アイスランド',
+    ),
+    'IT': Territory(
+      'IT',
+      'イタリア',
+    ),
+    'JE': Territory(
+      'JE',
+      'ジャージー',
+    ),
+    'JM': Territory(
+      'JM',
+      'ジャマイカ',
+    ),
+    'JO': Territory(
+      'JO',
+      'ヨルダン',
+    ),
+    'JP': Territory(
+      'JP',
+      '日本',
+    ),
+    'KE': Territory(
+      'KE',
+      'ケニア',
+    ),
+    'KG': Territory(
+      'KG',
+      'キルギス',
+    ),
+    'KH': Territory(
+      'KH',
+      'カンボジア',
+    ),
+    'KI': Territory(
+      'KI',
+      'キリバス',
+    ),
+    'KM': Territory(
+      'KM',
+      'コモロ',
+    ),
+    'KN': Territory(
+      'KN',
+      'セントクリストファー・ネーヴィス',
+    ),
+    'KP': Territory(
+      'KP',
+      '北朝鮮',
+    ),
+    'KR': Territory(
+      'KR',
+      '韓国',
+    ),
+    'KW': Territory(
+      'KW',
+      'クウェート',
+    ),
+    'KY': Territory(
+      'KY',
+      'ケイマン諸島',
+    ),
+    'KZ': Territory(
+      'KZ',
+      'カザフスタン',
+    ),
+    'LA': Territory(
+      'LA',
+      'ラオス',
+    ),
+    'LB': Territory(
+      'LB',
+      'レバノン',
+    ),
+    'LC': Territory(
+      'LC',
+      'セントルシア',
+    ),
+    'LI': Territory(
+      'LI',
+      'リヒテンシュタイン',
+    ),
+    'LK': Territory(
+      'LK',
+      'スリランカ',
+    ),
+    'LR': Territory(
+      'LR',
+      'リベリア',
+    ),
+    'LS': Territory(
+      'LS',
+      'レソト',
+    ),
+    'LT': Territory(
+      'LT',
+      'リトアニア',
+    ),
+    'LU': Territory(
+      'LU',
+      'ルクセンブルク',
+    ),
+    'LV': Territory(
+      'LV',
+      'ラトビア',
+    ),
+    'LY': Territory(
+      'LY',
+      'リビア',
+    ),
+    'MA': Territory(
+      'MA',
+      'モロッコ',
+    ),
+    'MC': Territory(
+      'MC',
+      'モナコ',
+    ),
+    'MD': Territory(
+      'MD',
+      'モルドバ',
+    ),
+    'ME': Territory(
+      'ME',
+      'モンテネグロ',
+    ),
+    'MF': Territory(
+      'MF',
+      'サン・マルタン',
+    ),
+    'MG': Territory(
+      'MG',
+      'マダガスカル',
+    ),
+    'MH': Territory(
+      'MH',
+      'マーシャル諸島',
+    ),
+    'MK': Territory(
+      'MK',
+      '北マケドニア',
+    ),
+    'ML': Territory(
+      'ML',
+      'マリ',
+    ),
+    'MM': Territory(
+      'MM',
+      'ミャンマー (ビルマ)',
+    ),
+    'MN': Territory(
+      'MN',
+      'モンゴル',
+    ),
+    'MO': Territory(
+      'MO',
+      '中華人民共和国マカオ特別行政区',
+    ),
+    'MP': Territory(
+      'MP',
+      '北マリアナ諸島',
+    ),
+    'MQ': Territory(
+      'MQ',
+      'マルティニーク',
+    ),
+    'MR': Territory(
+      'MR',
+      'モーリタニア',
+    ),
+    'MS': Territory(
+      'MS',
+      'モントセラト',
+    ),
+    'MT': Territory(
+      'MT',
+      'マルタ',
+    ),
+    'MU': Territory(
+      'MU',
+      'モーリシャス',
+    ),
+    'MV': Territory(
+      'MV',
+      'モルディブ',
+    ),
+    'MW': Territory(
+      'MW',
+      'マラウイ',
+    ),
+    'MX': Territory(
+      'MX',
+      'メキシコ',
+    ),
+    'MY': Territory(
+      'MY',
+      'マレーシア',
+    ),
+    'MZ': Territory(
+      'MZ',
+      'モザンビーク',
+    ),
+    'NA': Territory(
+      'NA',
+      'ナミビア',
+    ),
+    'NC': Territory(
+      'NC',
+      'ニューカレドニア',
+    ),
+    'NE': Territory(
+      'NE',
+      'ニジェール',
+    ),
+    'NF': Territory(
+      'NF',
+      'ノーフォーク島',
+    ),
+    'NG': Territory(
+      'NG',
+      'ナイジェリア',
+    ),
+    'NI': Territory(
+      'NI',
+      'ニカラグア',
+    ),
+    'NL': Territory(
+      'NL',
+      'オランダ',
+    ),
+    'NO': Territory(
+      'NO',
+      'ノルウェー',
+    ),
+    'NP': Territory(
+      'NP',
+      'ネパール',
+    ),
+    'NR': Territory(
+      'NR',
+      'ナウル',
+    ),
+    'NU': Territory(
+      'NU',
+      'ニウエ',
+    ),
+    'NZ': Territory(
+      'NZ',
+      'ニュージーランド',
+    ),
+    'OM': Territory(
+      'OM',
+      'オマーン',
+    ),
+    'PA': Territory(
+      'PA',
+      'パナマ',
+    ),
+    'PE': Territory(
+      'PE',
+      'ペルー',
+    ),
+    'PF': Territory(
+      'PF',
+      '仏領ポリネシア',
+    ),
+    'PG': Territory(
+      'PG',
+      'パプアニューギニア',
+    ),
+    'PH': Territory(
+      'PH',
+      'フィリピン',
+    ),
+    'PK': Territory(
+      'PK',
+      'パキスタン',
+    ),
+    'PL': Territory(
+      'PL',
+      'ポーランド',
+    ),
+    'PM': Territory(
+      'PM',
+      'サンピエール島・ミクロン島',
+    ),
+    'PN': Territory(
+      'PN',
+      'ピトケアン諸島',
+    ),
+    'PR': Territory(
+      'PR',
+      'プエルトリコ',
+    ),
+    'PS': Territory(
+      'PS',
+      'パレスチナ自治区',
+    ),
+    'PT': Territory(
+      'PT',
+      'ポルトガル',
+    ),
+    'PW': Territory(
+      'PW',
+      'パラオ',
+    ),
+    'PY': Territory(
+      'PY',
+      'パラグアイ',
+    ),
+    'QA': Territory(
+      'QA',
+      'カタール',
+    ),
+    'QO': Territory(
+      'QO',
+      'オセアニア周辺地域',
+    ),
+    'RE': Territory(
+      'RE',
+      'レユニオン',
+    ),
+    'RO': Territory(
+      'RO',
+      'ルーマニア',
+    ),
+    'RS': Territory(
+      'RS',
+      'セルビア',
+    ),
+    'RU': Territory(
+      'RU',
+      'ロシア',
+    ),
+    'RW': Territory(
+      'RW',
+      'ルワンダ',
+    ),
+    'SA': Territory(
+      'SA',
+      'サウジアラビア',
+    ),
+    'SB': Territory(
+      'SB',
+      'ソロモン諸島',
+    ),
+    'SC': Territory(
+      'SC',
+      'セーシェル',
+    ),
+    'SD': Territory(
+      'SD',
+      'スーダン',
+    ),
+    'SE': Territory(
+      'SE',
+      'スウェーデン',
+    ),
+    'SG': Territory(
+      'SG',
+      'シンガポール',
+    ),
+    'SH': Territory(
+      'SH',
+      'セントヘレナ',
+    ),
+    'SI': Territory(
+      'SI',
+      'スロベニア',
+    ),
+    'SJ': Territory(
+      'SJ',
+      'スバールバル諸島・ヤンマイエン島',
+    ),
+    'SK': Territory(
+      'SK',
+      'スロバキア',
+    ),
+    'SL': Territory(
+      'SL',
+      'シエラレオネ',
+    ),
+    'SM': Territory(
+      'SM',
+      'サンマリノ',
+    ),
+    'SN': Territory(
+      'SN',
+      'セネガル',
+    ),
+    'SO': Territory(
+      'SO',
+      'ソマリア',
+    ),
+    'SR': Territory(
+      'SR',
+      'スリナム',
+    ),
+    'SS': Territory(
+      'SS',
+      '南スーダン',
+    ),
+    'ST': Territory(
+      'ST',
+      'サントメ・プリンシペ',
+    ),
+    'SV': Territory(
+      'SV',
+      'エルサルバドル',
+    ),
+    'SX': Territory(
+      'SX',
+      'シント・マールテン',
+    ),
+    'SY': Territory(
+      'SY',
+      'シリア',
+    ),
+    'SZ': Territory(
+      'SZ',
+      'エスワティニ',
+    ),
+    'TA': Territory(
+      'TA',
+      'トリスタン・ダ・クーニャ',
+    ),
+    'TC': Territory(
+      'TC',
+      'タークス・カイコス諸島',
+    ),
+    'TD': Territory(
+      'TD',
+      'チャド',
+    ),
+    'TF': Territory(
+      'TF',
+      '仏領極南諸島',
+    ),
+    'TG': Territory(
+      'TG',
+      'トーゴ',
+    ),
+    'TH': Territory(
+      'TH',
+      'タイ',
+    ),
+    'TJ': Territory(
+      'TJ',
+      'タジキスタン',
+    ),
+    'TK': Territory(
+      'TK',
+      'トケラウ',
+    ),
+    'TL': Territory(
+      'TL',
+      '東ティモール',
+    ),
+    'TM': Territory(
+      'TM',
+      'トルクメニスタン',
+    ),
+    'TN': Territory(
+      'TN',
+      'チュニジア',
+    ),
+    'TO': Territory(
+      'TO',
+      'トンガ',
+    ),
+    'TR': Territory(
+      'TR',
+      'トルコ',
+    ),
+    'TT': Territory(
+      'TT',
+      'トリニダード・トバゴ',
+    ),
+    'TV': Territory(
+      'TV',
+      'ツバル',
+    ),
+    'TW': Territory(
+      'TW',
+      '台湾',
+    ),
+    'TZ': Territory(
+      'TZ',
+      'タンザニア',
+    ),
+    'UA': Territory(
+      'UA',
+      'ウクライナ',
+    ),
+    'UG': Territory(
+      'UG',
+      'ウガンダ',
+    ),
+    'UM': Territory(
+      'UM',
+      '合衆国領有小離島',
+    ),
+    'UN': Territory(
+      'UN',
+      '国際連合',
+    ),
+    'US': Territory(
+      'US',
+      'アメリカ合衆国',
+    ),
+    'UY': Territory(
+      'UY',
+      'ウルグアイ',
+    ),
+    'UZ': Territory(
+      'UZ',
+      'ウズベキスタン',
+    ),
+    'VA': Territory(
+      'VA',
+      'バチカン市国',
+    ),
+    'VC': Territory(
+      'VC',
+      'セントビンセント及びグレナディーン諸島',
+    ),
+    'VE': Territory(
+      'VE',
+      'ベネズエラ',
+    ),
+    'VG': Territory(
+      'VG',
+      '英領ヴァージン諸島',
+    ),
+    'VI': Territory(
+      'VI',
+      '米領ヴァージン諸島',
+    ),
+    'VN': Territory(
+      'VN',
+      'ベトナム',
+    ),
+    'VU': Territory(
+      'VU',
+      'バヌアツ',
+    ),
+    'WF': Territory(
+      'WF',
+      'ウォリス・フツナ',
+    ),
+    'WS': Territory(
+      'WS',
+      'サモア',
+    ),
+    'XA': Territory(
+      'XA',
+      '疑似アクセント',
+    ),
+    'XB': Territory(
+      'XB',
+      '疑似 BIDI',
+    ),
+    'XK': Territory(
+      'XK',
+      'コソボ',
+    ),
+    'YE': Territory(
+      'YE',
+      'イエメン',
+    ),
+    'YT': Territory(
+      'YT',
+      'マヨット',
+    ),
+    'ZA': Territory(
+      'ZA',
+      '南アフリカ',
+    ),
+    'ZM': Territory(
+      'ZM',
+      'ザンビア',
+    ),
+    'ZW': Territory(
+      'ZW',
+      'ジンバブエ',
+    ),
+  };
 }

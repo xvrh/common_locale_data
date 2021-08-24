@@ -18,6 +18,10 @@ class CommonLocaleDataCs implements CommonLocaleData {
   static final _units = UnitsCs._();
   @override
   Units get units => _units;
+
+  static final _territories = TerritoriesCs._();
+  @override
+  Territories get territories => _territories;
 }
 
 class UnitsCs implements Units {
@@ -6100,4 +6104,1252 @@ class DateFieldsCs implements DateFields {
         short: 'čas. pásmo',
         narrow: 'pásmo',
       );
+}
+
+class TerritoriesCs implements Territories {
+  TerritoriesCs._();
+
+  @override
+  Territory get world => Territory(
+        '001',
+        'svět',
+      );
+
+  @override
+  Territory get africa => Territory(
+        '002',
+        'Afrika',
+      );
+
+  @override
+  Territory get northAmerica => Territory(
+        '003',
+        'Severní Amerika',
+      );
+
+  @override
+  Territory get southAmerica => Territory(
+        '005',
+        'Jižní Amerika',
+      );
+
+  @override
+  Territory get oceania => Territory(
+        '009',
+        'Oceánie',
+      );
+
+  @override
+  Territory get westernAfrica => Territory(
+        '011',
+        'západní Afrika',
+      );
+
+  @override
+  Territory get centralAmerica => Territory(
+        '013',
+        'Střední Amerika',
+      );
+
+  @override
+  Territory get easternAfrica => Territory(
+        '014',
+        'východní Afrika',
+      );
+
+  @override
+  Territory get northernAfrica => Territory(
+        '015',
+        'severní Afrika',
+      );
+
+  @override
+  Territory get middleAfrica => Territory(
+        '017',
+        'střední Afrika',
+      );
+
+  @override
+  Territory get southernAfrica => Territory(
+        '018',
+        'jižní Afrika',
+      );
+
+  @override
+  Territory get americas => Territory(
+        '019',
+        'Amerika',
+      );
+
+  @override
+  Territory get northernAmerica => Territory(
+        '021',
+        'Severní Amerika (oblast)',
+      );
+
+  @override
+  Territory get caribbean => Territory(
+        '029',
+        'Karibik',
+      );
+
+  @override
+  Territory get easternAsia => Territory(
+        '030',
+        'východní Asie',
+      );
+
+  @override
+  Territory get southernAsia => Territory(
+        '034',
+        'jižní Asie',
+      );
+
+  @override
+  Territory get southeastAsia => Territory(
+        '035',
+        'jihovýchodní Asie',
+      );
+
+  @override
+  Territory get southernEurope => Territory(
+        '039',
+        'jižní Evropa',
+      );
+
+  @override
+  Territory get australasia => Territory(
+        '053',
+        'Australasie',
+      );
+
+  @override
+  Territory get melanesia => Territory(
+        '054',
+        'Melanésie',
+      );
+
+  @override
+  Territory get micronesianRegion => Territory(
+        '057',
+        'Mikronésie (region)',
+      );
+
+  @override
+  Territory get polynesia => Territory(
+        '061',
+        'Polynésie',
+      );
+
+  @override
+  Territory get asia => Territory(
+        '142',
+        'Asie',
+      );
+
+  @override
+  Territory get centralAsia => Territory(
+        '143',
+        'Střední Asie',
+      );
+
+  @override
+  Territory get westernAsia => Territory(
+        '145',
+        'západní Asie',
+      );
+
+  @override
+  Territory get europe => Territory(
+        '150',
+        'Evropa',
+      );
+
+  @override
+  Territory get easternEurope => Territory(
+        '151',
+        'východní Evropa',
+      );
+
+  @override
+  Territory get northernEurope => Territory(
+        '154',
+        'severní Evropa',
+      );
+
+  @override
+  Territory get westernEurope => Territory(
+        '155',
+        'západní Evropa',
+      );
+
+  @override
+  Territory get subSaharanAfrica => Territory(
+        '202',
+        'subsaharská Afrika',
+      );
+
+  @override
+  Territory get latinAmerica => Territory(
+        '419',
+        'Latinská Amerika',
+      );
+
+  @override
+  Territory get unknownRegion => Territory(
+        'ZZ',
+        'neznámá oblast',
+      );
+
+  @override
+  final countries = <String, Territory>{
+    'AC': Territory(
+      'AC',
+      'Ascension',
+    ),
+    'AD': Territory(
+      'AD',
+      'Andorra',
+    ),
+    'AE': Territory(
+      'AE',
+      'Spojené arabské emiráty',
+    ),
+    'AF': Territory(
+      'AF',
+      'Afghánistán',
+    ),
+    'AG': Territory(
+      'AG',
+      'Antigua a Barbuda',
+    ),
+    'AI': Territory(
+      'AI',
+      'Anguilla',
+    ),
+    'AL': Territory(
+      'AL',
+      'Albánie',
+    ),
+    'AM': Territory(
+      'AM',
+      'Arménie',
+    ),
+    'AO': Territory(
+      'AO',
+      'Angola',
+    ),
+    'AQ': Territory(
+      'AQ',
+      'Antarktida',
+    ),
+    'AR': Territory(
+      'AR',
+      'Argentina',
+    ),
+    'AS': Territory(
+      'AS',
+      'Americká Samoa',
+    ),
+    'AT': Territory(
+      'AT',
+      'Rakousko',
+    ),
+    'AU': Territory(
+      'AU',
+      'Austrálie',
+    ),
+    'AW': Territory(
+      'AW',
+      'Aruba',
+    ),
+    'AX': Territory(
+      'AX',
+      'Ålandy',
+    ),
+    'AZ': Territory(
+      'AZ',
+      'Ázerbájdžán',
+    ),
+    'BA': Territory(
+      'BA',
+      'Bosna a Hercegovina',
+    ),
+    'BB': Territory(
+      'BB',
+      'Barbados',
+    ),
+    'BD': Territory(
+      'BD',
+      'Bangladéš',
+    ),
+    'BE': Territory(
+      'BE',
+      'Belgie',
+    ),
+    'BF': Territory(
+      'BF',
+      'Burkina Faso',
+    ),
+    'BG': Territory(
+      'BG',
+      'Bulharsko',
+    ),
+    'BH': Territory(
+      'BH',
+      'Bahrajn',
+    ),
+    'BI': Territory(
+      'BI',
+      'Burundi',
+    ),
+    'BJ': Territory(
+      'BJ',
+      'Benin',
+    ),
+    'BL': Territory(
+      'BL',
+      'Svatý Bartoloměj',
+    ),
+    'BM': Territory(
+      'BM',
+      'Bermudy',
+    ),
+    'BN': Territory(
+      'BN',
+      'Brunej',
+    ),
+    'BO': Territory(
+      'BO',
+      'Bolívie',
+    ),
+    'BQ': Territory(
+      'BQ',
+      'Karibské Nizozemsko',
+    ),
+    'BR': Territory(
+      'BR',
+      'Brazílie',
+    ),
+    'BS': Territory(
+      'BS',
+      'Bahamy',
+    ),
+    'BT': Territory(
+      'BT',
+      'Bhútán',
+    ),
+    'BV': Territory(
+      'BV',
+      'Bouvetův ostrov',
+    ),
+    'BW': Territory(
+      'BW',
+      'Botswana',
+    ),
+    'BY': Territory(
+      'BY',
+      'Bělorusko',
+    ),
+    'BZ': Territory(
+      'BZ',
+      'Belize',
+    ),
+    'CA': Territory(
+      'CA',
+      'Kanada',
+    ),
+    'CC': Territory(
+      'CC',
+      'Kokosové ostrovy',
+    ),
+    'CD': Territory(
+      'CD',
+      'Kongo – Kinshasa',
+    ),
+    'CF': Territory(
+      'CF',
+      'Středoafrická republika',
+    ),
+    'CG': Territory(
+      'CG',
+      'Kongo – Brazzaville',
+    ),
+    'CH': Territory(
+      'CH',
+      'Švýcarsko',
+    ),
+    'CI': Territory(
+      'CI',
+      'Pobřeží slonoviny',
+    ),
+    'CK': Territory(
+      'CK',
+      'Cookovy ostrovy',
+    ),
+    'CL': Territory(
+      'CL',
+      'Chile',
+    ),
+    'CM': Territory(
+      'CM',
+      'Kamerun',
+    ),
+    'CN': Territory(
+      'CN',
+      'Čína',
+    ),
+    'CO': Territory(
+      'CO',
+      'Kolumbie',
+    ),
+    'CP': Territory(
+      'CP',
+      'Clippertonův ostrov',
+    ),
+    'CR': Territory(
+      'CR',
+      'Kostarika',
+    ),
+    'CU': Territory(
+      'CU',
+      'Kuba',
+    ),
+    'CV': Territory(
+      'CV',
+      'Kapverdy',
+    ),
+    'CW': Territory(
+      'CW',
+      'Curaçao',
+    ),
+    'CX': Territory(
+      'CX',
+      'Vánoční ostrov',
+    ),
+    'CY': Territory(
+      'CY',
+      'Kypr',
+    ),
+    'CZ': Territory(
+      'CZ',
+      'Česko',
+    ),
+    'DE': Territory(
+      'DE',
+      'Německo',
+    ),
+    'DG': Territory(
+      'DG',
+      'Diego García',
+    ),
+    'DJ': Territory(
+      'DJ',
+      'Džibutsko',
+    ),
+    'DK': Territory(
+      'DK',
+      'Dánsko',
+    ),
+    'DM': Territory(
+      'DM',
+      'Dominika',
+    ),
+    'DO': Territory(
+      'DO',
+      'Dominikánská republika',
+    ),
+    'DZ': Territory(
+      'DZ',
+      'Alžírsko',
+    ),
+    'EA': Territory(
+      'EA',
+      'Ceuta a Melilla',
+    ),
+    'EC': Territory(
+      'EC',
+      'Ekvádor',
+    ),
+    'EE': Territory(
+      'EE',
+      'Estonsko',
+    ),
+    'EG': Territory(
+      'EG',
+      'Egypt',
+    ),
+    'EH': Territory(
+      'EH',
+      'Západní Sahara',
+    ),
+    'ER': Territory(
+      'ER',
+      'Eritrea',
+    ),
+    'ES': Territory(
+      'ES',
+      'Španělsko',
+    ),
+    'ET': Territory(
+      'ET',
+      'Etiopie',
+    ),
+    'EU': Territory(
+      'EU',
+      'Evropská unie',
+    ),
+    'EZ': Territory(
+      'EZ',
+      'eurozóna',
+    ),
+    'FI': Territory(
+      'FI',
+      'Finsko',
+    ),
+    'FJ': Territory(
+      'FJ',
+      'Fidži',
+    ),
+    'FK': Territory(
+      'FK',
+      'Falklandské ostrovy',
+    ),
+    'FM': Territory(
+      'FM',
+      'Mikronésie',
+    ),
+    'FO': Territory(
+      'FO',
+      'Faerské ostrovy',
+    ),
+    'FR': Territory(
+      'FR',
+      'Francie',
+    ),
+    'GA': Territory(
+      'GA',
+      'Gabon',
+    ),
+    'GB': Territory(
+      'GB',
+      'Spojené království',
+    ),
+    'GD': Territory(
+      'GD',
+      'Grenada',
+    ),
+    'GE': Territory(
+      'GE',
+      'Gruzie',
+    ),
+    'GF': Territory(
+      'GF',
+      'Francouzská Guyana',
+    ),
+    'GG': Territory(
+      'GG',
+      'Guernsey',
+    ),
+    'GH': Territory(
+      'GH',
+      'Ghana',
+    ),
+    'GI': Territory(
+      'GI',
+      'Gibraltar',
+    ),
+    'GL': Territory(
+      'GL',
+      'Grónsko',
+    ),
+    'GM': Territory(
+      'GM',
+      'Gambie',
+    ),
+    'GN': Territory(
+      'GN',
+      'Guinea',
+    ),
+    'GP': Territory(
+      'GP',
+      'Guadeloupe',
+    ),
+    'GQ': Territory(
+      'GQ',
+      'Rovníková Guinea',
+    ),
+    'GR': Territory(
+      'GR',
+      'Řecko',
+    ),
+    'GS': Territory(
+      'GS',
+      'Jižní Georgie a Jižní Sandwichovy ostrovy',
+    ),
+    'GT': Territory(
+      'GT',
+      'Guatemala',
+    ),
+    'GU': Territory(
+      'GU',
+      'Guam',
+    ),
+    'GW': Territory(
+      'GW',
+      'Guinea-Bissau',
+    ),
+    'GY': Territory(
+      'GY',
+      'Guyana',
+    ),
+    'HK': Territory(
+      'HK',
+      'Hongkong – ZAO Číny',
+    ),
+    'HM': Territory(
+      'HM',
+      'Heardův ostrov a McDonaldovy ostrovy',
+    ),
+    'HN': Territory(
+      'HN',
+      'Honduras',
+    ),
+    'HR': Territory(
+      'HR',
+      'Chorvatsko',
+    ),
+    'HT': Territory(
+      'HT',
+      'Haiti',
+    ),
+    'HU': Territory(
+      'HU',
+      'Maďarsko',
+    ),
+    'IC': Territory(
+      'IC',
+      'Kanárské ostrovy',
+    ),
+    'ID': Territory(
+      'ID',
+      'Indonésie',
+    ),
+    'IE': Territory(
+      'IE',
+      'Irsko',
+    ),
+    'IL': Territory(
+      'IL',
+      'Izrael',
+    ),
+    'IM': Territory(
+      'IM',
+      'Ostrov Man',
+    ),
+    'IN': Territory(
+      'IN',
+      'Indie',
+    ),
+    'IO': Territory(
+      'IO',
+      'Britské indickooceánské území',
+    ),
+    'IQ': Territory(
+      'IQ',
+      'Irák',
+    ),
+    'IR': Territory(
+      'IR',
+      'Írán',
+    ),
+    'IS': Territory(
+      'IS',
+      'Island',
+    ),
+    'IT': Territory(
+      'IT',
+      'Itálie',
+    ),
+    'JE': Territory(
+      'JE',
+      'Jersey',
+    ),
+    'JM': Territory(
+      'JM',
+      'Jamajka',
+    ),
+    'JO': Territory(
+      'JO',
+      'Jordánsko',
+    ),
+    'JP': Territory(
+      'JP',
+      'Japonsko',
+    ),
+    'KE': Territory(
+      'KE',
+      'Keňa',
+    ),
+    'KG': Territory(
+      'KG',
+      'Kyrgyzstán',
+    ),
+    'KH': Territory(
+      'KH',
+      'Kambodža',
+    ),
+    'KI': Territory(
+      'KI',
+      'Kiribati',
+    ),
+    'KM': Territory(
+      'KM',
+      'Komory',
+    ),
+    'KN': Territory(
+      'KN',
+      'Svatý Kryštof a Nevis',
+    ),
+    'KP': Territory(
+      'KP',
+      'Severní Korea',
+    ),
+    'KR': Territory(
+      'KR',
+      'Jižní Korea',
+    ),
+    'KW': Territory(
+      'KW',
+      'Kuvajt',
+    ),
+    'KY': Territory(
+      'KY',
+      'Kajmanské ostrovy',
+    ),
+    'KZ': Territory(
+      'KZ',
+      'Kazachstán',
+    ),
+    'LA': Territory(
+      'LA',
+      'Laos',
+    ),
+    'LB': Territory(
+      'LB',
+      'Libanon',
+    ),
+    'LC': Territory(
+      'LC',
+      'Svatá Lucie',
+    ),
+    'LI': Territory(
+      'LI',
+      'Lichtenštejnsko',
+    ),
+    'LK': Territory(
+      'LK',
+      'Srí Lanka',
+    ),
+    'LR': Territory(
+      'LR',
+      'Libérie',
+    ),
+    'LS': Territory(
+      'LS',
+      'Lesotho',
+    ),
+    'LT': Territory(
+      'LT',
+      'Litva',
+    ),
+    'LU': Territory(
+      'LU',
+      'Lucembursko',
+    ),
+    'LV': Territory(
+      'LV',
+      'Lotyšsko',
+    ),
+    'LY': Territory(
+      'LY',
+      'Libye',
+    ),
+    'MA': Territory(
+      'MA',
+      'Maroko',
+    ),
+    'MC': Territory(
+      'MC',
+      'Monako',
+    ),
+    'MD': Territory(
+      'MD',
+      'Moldavsko',
+    ),
+    'ME': Territory(
+      'ME',
+      'Černá Hora',
+    ),
+    'MF': Territory(
+      'MF',
+      'Svatý Martin (Francie)',
+    ),
+    'MG': Territory(
+      'MG',
+      'Madagaskar',
+    ),
+    'MH': Territory(
+      'MH',
+      'Marshallovy ostrovy',
+    ),
+    'MK': Territory(
+      'MK',
+      'Severní Makedonie',
+    ),
+    'ML': Territory(
+      'ML',
+      'Mali',
+    ),
+    'MM': Territory(
+      'MM',
+      'Myanmar (Barma)',
+    ),
+    'MN': Territory(
+      'MN',
+      'Mongolsko',
+    ),
+    'MO': Territory(
+      'MO',
+      'Macao – ZAO Číny',
+    ),
+    'MP': Territory(
+      'MP',
+      'Severní Mariany',
+    ),
+    'MQ': Territory(
+      'MQ',
+      'Martinik',
+    ),
+    'MR': Territory(
+      'MR',
+      'Mauritánie',
+    ),
+    'MS': Territory(
+      'MS',
+      'Montserrat',
+    ),
+    'MT': Territory(
+      'MT',
+      'Malta',
+    ),
+    'MU': Territory(
+      'MU',
+      'Mauricius',
+    ),
+    'MV': Territory(
+      'MV',
+      'Maledivy',
+    ),
+    'MW': Territory(
+      'MW',
+      'Malawi',
+    ),
+    'MX': Territory(
+      'MX',
+      'Mexiko',
+    ),
+    'MY': Territory(
+      'MY',
+      'Malajsie',
+    ),
+    'MZ': Territory(
+      'MZ',
+      'Mosambik',
+    ),
+    'NA': Territory(
+      'NA',
+      'Namibie',
+    ),
+    'NC': Territory(
+      'NC',
+      'Nová Kaledonie',
+    ),
+    'NE': Territory(
+      'NE',
+      'Niger',
+    ),
+    'NF': Territory(
+      'NF',
+      'Norfolk',
+    ),
+    'NG': Territory(
+      'NG',
+      'Nigérie',
+    ),
+    'NI': Territory(
+      'NI',
+      'Nikaragua',
+    ),
+    'NL': Territory(
+      'NL',
+      'Nizozemsko',
+    ),
+    'NO': Territory(
+      'NO',
+      'Norsko',
+    ),
+    'NP': Territory(
+      'NP',
+      'Nepál',
+    ),
+    'NR': Territory(
+      'NR',
+      'Nauru',
+    ),
+    'NU': Territory(
+      'NU',
+      'Niue',
+    ),
+    'NZ': Territory(
+      'NZ',
+      'Nový Zéland',
+    ),
+    'OM': Territory(
+      'OM',
+      'Omán',
+    ),
+    'PA': Territory(
+      'PA',
+      'Panama',
+    ),
+    'PE': Territory(
+      'PE',
+      'Peru',
+    ),
+    'PF': Territory(
+      'PF',
+      'Francouzská Polynésie',
+    ),
+    'PG': Territory(
+      'PG',
+      'Papua-Nová Guinea',
+    ),
+    'PH': Territory(
+      'PH',
+      'Filipíny',
+    ),
+    'PK': Territory(
+      'PK',
+      'Pákistán',
+    ),
+    'PL': Territory(
+      'PL',
+      'Polsko',
+    ),
+    'PM': Territory(
+      'PM',
+      'Saint-Pierre a Miquelon',
+    ),
+    'PN': Territory(
+      'PN',
+      'Pitcairnovy ostrovy',
+    ),
+    'PR': Territory(
+      'PR',
+      'Portoriko',
+    ),
+    'PS': Territory(
+      'PS',
+      'Palestinská území',
+    ),
+    'PT': Territory(
+      'PT',
+      'Portugalsko',
+    ),
+    'PW': Territory(
+      'PW',
+      'Palau',
+    ),
+    'PY': Territory(
+      'PY',
+      'Paraguay',
+    ),
+    'QA': Territory(
+      'QA',
+      'Katar',
+    ),
+    'QO': Territory(
+      'QO',
+      'vnější Oceánie',
+    ),
+    'RE': Territory(
+      'RE',
+      'Réunion',
+    ),
+    'RO': Territory(
+      'RO',
+      'Rumunsko',
+    ),
+    'RS': Territory(
+      'RS',
+      'Srbsko',
+    ),
+    'RU': Territory(
+      'RU',
+      'Rusko',
+    ),
+    'RW': Territory(
+      'RW',
+      'Rwanda',
+    ),
+    'SA': Territory(
+      'SA',
+      'Saúdská Arábie',
+    ),
+    'SB': Territory(
+      'SB',
+      'Šalamounovy ostrovy',
+    ),
+    'SC': Territory(
+      'SC',
+      'Seychely',
+    ),
+    'SD': Territory(
+      'SD',
+      'Súdán',
+    ),
+    'SE': Territory(
+      'SE',
+      'Švédsko',
+    ),
+    'SG': Territory(
+      'SG',
+      'Singapur',
+    ),
+    'SH': Territory(
+      'SH',
+      'Svatá Helena',
+    ),
+    'SI': Territory(
+      'SI',
+      'Slovinsko',
+    ),
+    'SJ': Territory(
+      'SJ',
+      'Špicberky a Jan Mayen',
+    ),
+    'SK': Territory(
+      'SK',
+      'Slovensko',
+    ),
+    'SL': Territory(
+      'SL',
+      'Sierra Leone',
+    ),
+    'SM': Territory(
+      'SM',
+      'San Marino',
+    ),
+    'SN': Territory(
+      'SN',
+      'Senegal',
+    ),
+    'SO': Territory(
+      'SO',
+      'Somálsko',
+    ),
+    'SR': Territory(
+      'SR',
+      'Surinam',
+    ),
+    'SS': Territory(
+      'SS',
+      'Jižní Súdán',
+    ),
+    'ST': Territory(
+      'ST',
+      'Svatý Tomáš a Princův ostrov',
+    ),
+    'SV': Territory(
+      'SV',
+      'Salvador',
+    ),
+    'SX': Territory(
+      'SX',
+      'Svatý Martin (Nizozemsko)',
+    ),
+    'SY': Territory(
+      'SY',
+      'Sýrie',
+    ),
+    'SZ': Territory(
+      'SZ',
+      'Eswatini',
+    ),
+    'TA': Territory(
+      'TA',
+      'Tristan da Cunha',
+    ),
+    'TC': Territory(
+      'TC',
+      'Turks a Caicos',
+    ),
+    'TD': Territory(
+      'TD',
+      'Čad',
+    ),
+    'TF': Territory(
+      'TF',
+      'Francouzská jižní území',
+    ),
+    'TG': Territory(
+      'TG',
+      'Togo',
+    ),
+    'TH': Territory(
+      'TH',
+      'Thajsko',
+    ),
+    'TJ': Territory(
+      'TJ',
+      'Tádžikistán',
+    ),
+    'TK': Territory(
+      'TK',
+      'Tokelau',
+    ),
+    'TL': Territory(
+      'TL',
+      'Východní Timor',
+    ),
+    'TM': Territory(
+      'TM',
+      'Turkmenistán',
+    ),
+    'TN': Territory(
+      'TN',
+      'Tunisko',
+    ),
+    'TO': Territory(
+      'TO',
+      'Tonga',
+    ),
+    'TR': Territory(
+      'TR',
+      'Turecko',
+    ),
+    'TT': Territory(
+      'TT',
+      'Trinidad a Tobago',
+    ),
+    'TV': Territory(
+      'TV',
+      'Tuvalu',
+    ),
+    'TW': Territory(
+      'TW',
+      'Tchaj-wan',
+    ),
+    'TZ': Territory(
+      'TZ',
+      'Tanzanie',
+    ),
+    'UA': Territory(
+      'UA',
+      'Ukrajina',
+    ),
+    'UG': Territory(
+      'UG',
+      'Uganda',
+    ),
+    'UM': Territory(
+      'UM',
+      'Menší odlehlé ostrovy USA',
+    ),
+    'UN': Territory(
+      'UN',
+      'Organizace spojených národů',
+    ),
+    'US': Territory(
+      'US',
+      'Spojené státy',
+    ),
+    'UY': Territory(
+      'UY',
+      'Uruguay',
+    ),
+    'UZ': Territory(
+      'UZ',
+      'Uzbekistán',
+    ),
+    'VA': Territory(
+      'VA',
+      'Vatikán',
+    ),
+    'VC': Territory(
+      'VC',
+      'Svatý Vincenc a Grenadiny',
+    ),
+    'VE': Territory(
+      'VE',
+      'Venezuela',
+    ),
+    'VG': Territory(
+      'VG',
+      'Britské Panenské ostrovy',
+    ),
+    'VI': Territory(
+      'VI',
+      'Americké Panenské ostrovy',
+    ),
+    'VN': Territory(
+      'VN',
+      'Vietnam',
+    ),
+    'VU': Territory(
+      'VU',
+      'Vanuatu',
+    ),
+    'WF': Territory(
+      'WF',
+      'Wallis a Futuna',
+    ),
+    'WS': Territory(
+      'WS',
+      'Samoa',
+    ),
+    'XA': Territory(
+      'XA',
+      'simulovaná diakritika',
+    ),
+    'XB': Territory(
+      'XB',
+      'simulovaný obousměrný zápis',
+    ),
+    'XK': Territory(
+      'XK',
+      'Kosovo',
+    ),
+    'YE': Territory(
+      'YE',
+      'Jemen',
+    ),
+    'YT': Territory(
+      'YT',
+      'Mayotte',
+    ),
+    'ZA': Territory(
+      'ZA',
+      'Jihoafrická republika',
+    ),
+    'ZM': Territory(
+      'ZM',
+      'Zambie',
+    ),
+    'ZW': Territory(
+      'ZW',
+      'Zimbabwe',
+    ),
+  };
 }

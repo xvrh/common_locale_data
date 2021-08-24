@@ -34,4 +34,5 @@ abstract class Territories {
   Territory get westernEurope;
   Territory get subSaharanAfrica;
   Territory get latinAmerica;
+  Territory get unknownRegion;
 }

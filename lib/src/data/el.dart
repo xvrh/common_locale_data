@@ -18,6 +18,10 @@ class CommonLocaleDataEl implements CommonLocaleData {
   static final _units = UnitsEl._();
   @override
   Units get units => _units;
+
+  static final _territories = TerritoriesEl._();
+  @override
+  Territories get territories => _territories;
 }
 
 class UnitsEl implements Units {
@@ -4828,4 +4832,1252 @@ class DateFieldsEl implements DateFields {
         short: 'ζώνη',
         narrow: 'ζώνη',
       );
+}
+
+class TerritoriesEl implements Territories {
+  TerritoriesEl._();
+
+  @override
+  Territory get world => Territory(
+        '001',
+        'Κόσμος',
+      );
+
+  @override
+  Territory get africa => Territory(
+        '002',
+        'Αφρική',
+      );
+
+  @override
+  Territory get northAmerica => Territory(
+        '003',
+        'Βόρεια Αμερική',
+      );
+
+  @override
+  Territory get southAmerica => Territory(
+        '005',
+        'Νότια Αμερική',
+      );
+
+  @override
+  Territory get oceania => Territory(
+        '009',
+        'Ωκεανία',
+      );
+
+  @override
+  Territory get westernAfrica => Territory(
+        '011',
+        'Δυτική Αφρική',
+      );
+
+  @override
+  Territory get centralAmerica => Territory(
+        '013',
+        'Κεντρική Αμερική',
+      );
+
+  @override
+  Territory get easternAfrica => Territory(
+        '014',
+        'Ανατολική Αφρική',
+      );
+
+  @override
+  Territory get northernAfrica => Territory(
+        '015',
+        'Βόρεια Αφρική',
+      );
+
+  @override
+  Territory get middleAfrica => Territory(
+        '017',
+        'Μέση Αφρική',
+      );
+
+  @override
+  Territory get southernAfrica => Territory(
+        '018',
+        'Νότιος Αφρική',
+      );
+
+  @override
+  Territory get americas => Territory(
+        '019',
+        'Αμερική',
+      );
+
+  @override
+  Territory get northernAmerica => Territory(
+        '021',
+        'Βόρειος Αμερική',
+      );
+
+  @override
+  Territory get caribbean => Territory(
+        '029',
+        'Καραϊβική',
+      );
+
+  @override
+  Territory get easternAsia => Territory(
+        '030',
+        'Ανατολική Ασία',
+      );
+
+  @override
+  Territory get southernAsia => Territory(
+        '034',
+        'Νότια Ασία',
+      );
+
+  @override
+  Territory get southeastAsia => Territory(
+        '035',
+        'Νοτιοανατολική Ασία',
+      );
+
+  @override
+  Territory get southernEurope => Territory(
+        '039',
+        'Νότια Ευρώπη',
+      );
+
+  @override
+  Territory get australasia => Territory(
+        '053',
+        'Αυστραλασία',
+      );
+
+  @override
+  Territory get melanesia => Territory(
+        '054',
+        'Μελανησία',
+      );
+
+  @override
+  Territory get micronesianRegion => Territory(
+        '057',
+        'Περιοχή Μικρονησίας',
+      );
+
+  @override
+  Territory get polynesia => Territory(
+        '061',
+        'Πολυνησία',
+      );
+
+  @override
+  Territory get asia => Territory(
+        '142',
+        'Ασία',
+      );
+
+  @override
+  Territory get centralAsia => Territory(
+        '143',
+        'Κεντρική Ασία',
+      );
+
+  @override
+  Territory get westernAsia => Territory(
+        '145',
+        'Δυτική Ασία',
+      );
+
+  @override
+  Territory get europe => Territory(
+        '150',
+        'Ευρώπη',
+      );
+
+  @override
+  Territory get easternEurope => Territory(
+        '151',
+        'Ανατολική Ευρώπη',
+      );
+
+  @override
+  Territory get northernEurope => Territory(
+        '154',
+        'Βόρεια Ευρώπη',
+      );
+
+  @override
+  Territory get westernEurope => Territory(
+        '155',
+        'Δυτική Ευρώπη',
+      );
+
+  @override
+  Territory get subSaharanAfrica => Territory(
+        '202',
+        'Υποσαχάρια Αφρική',
+      );
+
+  @override
+  Territory get latinAmerica => Territory(
+        '419',
+        'Λατινική Αμερική',
+      );
+
+  @override
+  Territory get unknownRegion => Territory(
+        'ZZ',
+        'Άγνωστη περιοχή',
+      );
+
+  @override
+  final countries = <String, Territory>{
+    'AC': Territory(
+      'AC',
+      'Νήσος Ασενσιόν',
+    ),
+    'AD': Territory(
+      'AD',
+      'Ανδόρα',
+    ),
+    'AE': Territory(
+      'AE',
+      'Ηνωμένα Αραβικά Εμιράτα',
+    ),
+    'AF': Territory(
+      'AF',
+      'Αφγανιστάν',
+    ),
+    'AG': Territory(
+      'AG',
+      'Αντίγκουα και Μπαρμπούντα',
+    ),
+    'AI': Territory(
+      'AI',
+      'Ανγκουίλα',
+    ),
+    'AL': Territory(
+      'AL',
+      'Αλβανία',
+    ),
+    'AM': Territory(
+      'AM',
+      'Αρμενία',
+    ),
+    'AO': Territory(
+      'AO',
+      'Αγκόλα',
+    ),
+    'AQ': Territory(
+      'AQ',
+      'Ανταρκτική',
+    ),
+    'AR': Territory(
+      'AR',
+      'Αργεντινή',
+    ),
+    'AS': Territory(
+      'AS',
+      'Αμερικανική Σαμόα',
+    ),
+    'AT': Territory(
+      'AT',
+      'Αυστρία',
+    ),
+    'AU': Territory(
+      'AU',
+      'Αυστραλία',
+    ),
+    'AW': Territory(
+      'AW',
+      'Αρούμπα',
+    ),
+    'AX': Territory(
+      'AX',
+      'Νήσοι Όλαντ',
+    ),
+    'AZ': Territory(
+      'AZ',
+      'Αζερμπαϊτζάν',
+    ),
+    'BA': Territory(
+      'BA',
+      'Βοσνία - Ερζεγοβίνη',
+    ),
+    'BB': Territory(
+      'BB',
+      'Μπαρμπέιντος',
+    ),
+    'BD': Territory(
+      'BD',
+      'Μπανγκλαντές',
+    ),
+    'BE': Territory(
+      'BE',
+      'Βέλγιο',
+    ),
+    'BF': Territory(
+      'BF',
+      'Μπουρκίνα Φάσο',
+    ),
+    'BG': Territory(
+      'BG',
+      'Βουλγαρία',
+    ),
+    'BH': Territory(
+      'BH',
+      'Μπαχρέιν',
+    ),
+    'BI': Territory(
+      'BI',
+      'Μπουρούντι',
+    ),
+    'BJ': Territory(
+      'BJ',
+      'Μπενίν',
+    ),
+    'BL': Territory(
+      'BL',
+      'Άγιος Βαρθολομαίος',
+    ),
+    'BM': Territory(
+      'BM',
+      'Βερμούδες',
+    ),
+    'BN': Territory(
+      'BN',
+      'Μπρουνέι',
+    ),
+    'BO': Territory(
+      'BO',
+      'Βολιβία',
+    ),
+    'BQ': Territory(
+      'BQ',
+      'Ολλανδία Καραϊβικής',
+    ),
+    'BR': Territory(
+      'BR',
+      'Βραζιλία',
+    ),
+    'BS': Territory(
+      'BS',
+      'Μπαχάμες',
+    ),
+    'BT': Territory(
+      'BT',
+      'Μπουτάν',
+    ),
+    'BV': Territory(
+      'BV',
+      'Νήσος Μπουβέ',
+    ),
+    'BW': Territory(
+      'BW',
+      'Μποτσουάνα',
+    ),
+    'BY': Territory(
+      'BY',
+      'Λευκορωσία',
+    ),
+    'BZ': Territory(
+      'BZ',
+      'Μπελίζ',
+    ),
+    'CA': Territory(
+      'CA',
+      'Καναδάς',
+    ),
+    'CC': Territory(
+      'CC',
+      'Νήσοι Κόκος (Κίλινγκ)',
+    ),
+    'CD': Territory(
+      'CD',
+      'Κονγκό - Κινσάσα',
+    ),
+    'CF': Territory(
+      'CF',
+      'Κεντροαφρικανική Δημοκρατία',
+    ),
+    'CG': Territory(
+      'CG',
+      'Κονγκό - Μπραζαβίλ',
+    ),
+    'CH': Territory(
+      'CH',
+      'Ελβετία',
+    ),
+    'CI': Territory(
+      'CI',
+      'Ακτή Ελεφαντοστού',
+    ),
+    'CK': Territory(
+      'CK',
+      'Νήσοι Κουκ',
+    ),
+    'CL': Territory(
+      'CL',
+      'Χιλή',
+    ),
+    'CM': Territory(
+      'CM',
+      'Καμερούν',
+    ),
+    'CN': Territory(
+      'CN',
+      'Κίνα',
+    ),
+    'CO': Territory(
+      'CO',
+      'Κολομβία',
+    ),
+    'CP': Territory(
+      'CP',
+      'Νήσος Κλίπερτον',
+    ),
+    'CR': Territory(
+      'CR',
+      'Κόστα Ρίκα',
+    ),
+    'CU': Territory(
+      'CU',
+      'Κούβα',
+    ),
+    'CV': Territory(
+      'CV',
+      'Πράσινο Ακρωτήριο',
+    ),
+    'CW': Territory(
+      'CW',
+      'Κουρασάο',
+    ),
+    'CX': Territory(
+      'CX',
+      'Νήσος των Χριστουγέννων',
+    ),
+    'CY': Territory(
+      'CY',
+      'Κύπρος',
+    ),
+    'CZ': Territory(
+      'CZ',
+      'Τσεχία',
+    ),
+    'DE': Territory(
+      'DE',
+      'Γερμανία',
+    ),
+    'DG': Territory(
+      'DG',
+      'Ντιέγκο Γκαρσία',
+    ),
+    'DJ': Territory(
+      'DJ',
+      'Τζιμπουτί',
+    ),
+    'DK': Territory(
+      'DK',
+      'Δανία',
+    ),
+    'DM': Territory(
+      'DM',
+      'Ντομίνικα',
+    ),
+    'DO': Territory(
+      'DO',
+      'Δομινικανή Δημοκρατία',
+    ),
+    'DZ': Territory(
+      'DZ',
+      'Αλγερία',
+    ),
+    'EA': Territory(
+      'EA',
+      'Θέουτα και Μελίγια',
+    ),
+    'EC': Territory(
+      'EC',
+      'Ισημερινός',
+    ),
+    'EE': Territory(
+      'EE',
+      'Εσθονία',
+    ),
+    'EG': Territory(
+      'EG',
+      'Αίγυπτος',
+    ),
+    'EH': Territory(
+      'EH',
+      'Δυτική Σαχάρα',
+    ),
+    'ER': Territory(
+      'ER',
+      'Ερυθραία',
+    ),
+    'ES': Territory(
+      'ES',
+      'Ισπανία',
+    ),
+    'ET': Territory(
+      'ET',
+      'Αιθιοπία',
+    ),
+    'EU': Territory(
+      'EU',
+      'Ευρωπαϊκή Ένωση',
+    ),
+    'EZ': Territory(
+      'EZ',
+      'Ευρωζώνη',
+    ),
+    'FI': Territory(
+      'FI',
+      'Φινλανδία',
+    ),
+    'FJ': Territory(
+      'FJ',
+      'Φίτζι',
+    ),
+    'FK': Territory(
+      'FK',
+      'Νήσοι Φόκλαντ',
+    ),
+    'FM': Territory(
+      'FM',
+      'Μικρονησία',
+    ),
+    'FO': Territory(
+      'FO',
+      'Νήσοι Φερόες',
+    ),
+    'FR': Territory(
+      'FR',
+      'Γαλλία',
+    ),
+    'GA': Territory(
+      'GA',
+      'Γκαμπόν',
+    ),
+    'GB': Territory(
+      'GB',
+      'Ηνωμένο Βασίλειο',
+    ),
+    'GD': Territory(
+      'GD',
+      'Γρενάδα',
+    ),
+    'GE': Territory(
+      'GE',
+      'Γεωργία',
+    ),
+    'GF': Territory(
+      'GF',
+      'Γαλλική Γουιάνα',
+    ),
+    'GG': Territory(
+      'GG',
+      'Γκέρνζι',
+    ),
+    'GH': Territory(
+      'GH',
+      'Γκάνα',
+    ),
+    'GI': Territory(
+      'GI',
+      'Γιβραλτάρ',
+    ),
+    'GL': Territory(
+      'GL',
+      'Γροιλανδία',
+    ),
+    'GM': Territory(
+      'GM',
+      'Γκάμπια',
+    ),
+    'GN': Territory(
+      'GN',
+      'Γουινέα',
+    ),
+    'GP': Territory(
+      'GP',
+      'Γουαδελούπη',
+    ),
+    'GQ': Territory(
+      'GQ',
+      'Ισημερινή Γουινέα',
+    ),
+    'GR': Territory(
+      'GR',
+      'Ελλάδα',
+    ),
+    'GS': Territory(
+      'GS',
+      'Νήσοι Νότια Γεωργία και Νότιες Σάντουιτς',
+    ),
+    'GT': Territory(
+      'GT',
+      'Γουατεμάλα',
+    ),
+    'GU': Territory(
+      'GU',
+      'Γκουάμ',
+    ),
+    'GW': Territory(
+      'GW',
+      'Γουινέα Μπισάου',
+    ),
+    'GY': Territory(
+      'GY',
+      'Γουιάνα',
+    ),
+    'HK': Territory(
+      'HK',
+      'Χονγκ Κονγκ ΕΔΠ Κίνας',
+    ),
+    'HM': Territory(
+      'HM',
+      'Νήσοι Χερντ και Μακντόναλντ',
+    ),
+    'HN': Territory(
+      'HN',
+      'Ονδούρα',
+    ),
+    'HR': Territory(
+      'HR',
+      'Κροατία',
+    ),
+    'HT': Territory(
+      'HT',
+      'Αϊτή',
+    ),
+    'HU': Territory(
+      'HU',
+      'Ουγγαρία',
+    ),
+    'IC': Territory(
+      'IC',
+      'Κανάριοι Νήσοι',
+    ),
+    'ID': Territory(
+      'ID',
+      'Ινδονησία',
+    ),
+    'IE': Territory(
+      'IE',
+      'Ιρλανδία',
+    ),
+    'IL': Territory(
+      'IL',
+      'Ισραήλ',
+    ),
+    'IM': Territory(
+      'IM',
+      'Νήσος του Μαν',
+    ),
+    'IN': Territory(
+      'IN',
+      'Ινδία',
+    ),
+    'IO': Territory(
+      'IO',
+      'Βρετανικά Εδάφη Ινδικού Ωκεανού',
+    ),
+    'IQ': Territory(
+      'IQ',
+      'Ιράκ',
+    ),
+    'IR': Territory(
+      'IR',
+      'Ιράν',
+    ),
+    'IS': Territory(
+      'IS',
+      'Ισλανδία',
+    ),
+    'IT': Territory(
+      'IT',
+      'Ιταλία',
+    ),
+    'JE': Territory(
+      'JE',
+      'Τζέρζι',
+    ),
+    'JM': Territory(
+      'JM',
+      'Τζαμάικα',
+    ),
+    'JO': Territory(
+      'JO',
+      'Ιορδανία',
+    ),
+    'JP': Territory(
+      'JP',
+      'Ιαπωνία',
+    ),
+    'KE': Territory(
+      'KE',
+      'Κένυα',
+    ),
+    'KG': Territory(
+      'KG',
+      'Κιργιστάν',
+    ),
+    'KH': Territory(
+      'KH',
+      'Καμπότζη',
+    ),
+    'KI': Territory(
+      'KI',
+      'Κιριμπάτι',
+    ),
+    'KM': Territory(
+      'KM',
+      'Κομόρες',
+    ),
+    'KN': Territory(
+      'KN',
+      'Σεν Κιτς και Νέβις',
+    ),
+    'KP': Territory(
+      'KP',
+      'Βόρεια Κορέα',
+    ),
+    'KR': Territory(
+      'KR',
+      'Νότια Κορέα',
+    ),
+    'KW': Territory(
+      'KW',
+      'Κουβέιτ',
+    ),
+    'KY': Territory(
+      'KY',
+      'Νήσοι Κέιμαν',
+    ),
+    'KZ': Territory(
+      'KZ',
+      'Καζακστάν',
+    ),
+    'LA': Territory(
+      'LA',
+      'Λάος',
+    ),
+    'LB': Territory(
+      'LB',
+      'Λίβανος',
+    ),
+    'LC': Territory(
+      'LC',
+      'Αγία Λουκία',
+    ),
+    'LI': Territory(
+      'LI',
+      'Λιχτενστάιν',
+    ),
+    'LK': Territory(
+      'LK',
+      'Σρι Λάνκα',
+    ),
+    'LR': Territory(
+      'LR',
+      'Λιβερία',
+    ),
+    'LS': Territory(
+      'LS',
+      'Λεσότο',
+    ),
+    'LT': Territory(
+      'LT',
+      'Λιθουανία',
+    ),
+    'LU': Territory(
+      'LU',
+      'Λουξεμβούργο',
+    ),
+    'LV': Territory(
+      'LV',
+      'Λετονία',
+    ),
+    'LY': Territory(
+      'LY',
+      'Λιβύη',
+    ),
+    'MA': Territory(
+      'MA',
+      'Μαρόκο',
+    ),
+    'MC': Territory(
+      'MC',
+      'Μονακό',
+    ),
+    'MD': Territory(
+      'MD',
+      'Μολδαβία',
+    ),
+    'ME': Territory(
+      'ME',
+      'Μαυροβούνιο',
+    ),
+    'MF': Territory(
+      'MF',
+      'Άγιος Μαρτίνος (Γαλλικό τμήμα)',
+    ),
+    'MG': Territory(
+      'MG',
+      'Μαδαγασκάρη',
+    ),
+    'MH': Territory(
+      'MH',
+      'Νήσοι Μάρσαλ',
+    ),
+    'MK': Territory(
+      'MK',
+      'Βόρεια Μακεδονία',
+    ),
+    'ML': Territory(
+      'ML',
+      'Μάλι',
+    ),
+    'MM': Territory(
+      'MM',
+      'Μιανμάρ (Βιρμανία)',
+    ),
+    'MN': Territory(
+      'MN',
+      'Μογγολία',
+    ),
+    'MO': Territory(
+      'MO',
+      'Μακάο ΕΔΠ Κίνας',
+    ),
+    'MP': Territory(
+      'MP',
+      'Νήσοι Βόρειες Μαριάνες',
+    ),
+    'MQ': Territory(
+      'MQ',
+      'Μαρτινίκα',
+    ),
+    'MR': Territory(
+      'MR',
+      'Μαυριτανία',
+    ),
+    'MS': Territory(
+      'MS',
+      'Μονσεράτ',
+    ),
+    'MT': Territory(
+      'MT',
+      'Μάλτα',
+    ),
+    'MU': Territory(
+      'MU',
+      'Μαυρίκιος',
+    ),
+    'MV': Territory(
+      'MV',
+      'Μαλδίβες',
+    ),
+    'MW': Territory(
+      'MW',
+      'Μαλάουι',
+    ),
+    'MX': Territory(
+      'MX',
+      'Μεξικό',
+    ),
+    'MY': Territory(
+      'MY',
+      'Μαλαισία',
+    ),
+    'MZ': Territory(
+      'MZ',
+      'Μοζαμβίκη',
+    ),
+    'NA': Territory(
+      'NA',
+      'Ναμίμπια',
+    ),
+    'NC': Territory(
+      'NC',
+      'Νέα Καληδονία',
+    ),
+    'NE': Territory(
+      'NE',
+      'Νίγηρας',
+    ),
+    'NF': Territory(
+      'NF',
+      'Νήσος Νόρφολκ',
+    ),
+    'NG': Territory(
+      'NG',
+      'Νιγηρία',
+    ),
+    'NI': Territory(
+      'NI',
+      'Νικαράγουα',
+    ),
+    'NL': Territory(
+      'NL',
+      'Ολλανδία',
+    ),
+    'NO': Territory(
+      'NO',
+      'Νορβηγία',
+    ),
+    'NP': Territory(
+      'NP',
+      'Νεπάλ',
+    ),
+    'NR': Territory(
+      'NR',
+      'Ναουρού',
+    ),
+    'NU': Territory(
+      'NU',
+      'Νιούε',
+    ),
+    'NZ': Territory(
+      'NZ',
+      'Νέα Ζηλανδία',
+    ),
+    'OM': Territory(
+      'OM',
+      'Ομάν',
+    ),
+    'PA': Territory(
+      'PA',
+      'Παναμάς',
+    ),
+    'PE': Territory(
+      'PE',
+      'Περού',
+    ),
+    'PF': Territory(
+      'PF',
+      'Γαλλική Πολυνησία',
+    ),
+    'PG': Territory(
+      'PG',
+      'Παπούα Νέα Γουινέα',
+    ),
+    'PH': Territory(
+      'PH',
+      'Φιλιππίνες',
+    ),
+    'PK': Territory(
+      'PK',
+      'Πακιστάν',
+    ),
+    'PL': Territory(
+      'PL',
+      'Πολωνία',
+    ),
+    'PM': Territory(
+      'PM',
+      'Σεν Πιερ και Μικελόν',
+    ),
+    'PN': Territory(
+      'PN',
+      'Νήσοι Πίτκερν',
+    ),
+    'PR': Territory(
+      'PR',
+      'Πουέρτο Ρίκο',
+    ),
+    'PS': Territory(
+      'PS',
+      'Παλαιστινιακά Εδάφη',
+    ),
+    'PT': Territory(
+      'PT',
+      'Πορτογαλία',
+    ),
+    'PW': Territory(
+      'PW',
+      'Παλάου',
+    ),
+    'PY': Territory(
+      'PY',
+      'Παραγουάη',
+    ),
+    'QA': Territory(
+      'QA',
+      'Κατάρ',
+    ),
+    'QO': Territory(
+      'QO',
+      'Περιφερειακή Ωκεανία',
+    ),
+    'RE': Territory(
+      'RE',
+      'Ρεϊνιόν',
+    ),
+    'RO': Territory(
+      'RO',
+      'Ρουμανία',
+    ),
+    'RS': Territory(
+      'RS',
+      'Σερβία',
+    ),
+    'RU': Territory(
+      'RU',
+      'Ρωσία',
+    ),
+    'RW': Territory(
+      'RW',
+      'Ρουάντα',
+    ),
+    'SA': Territory(
+      'SA',
+      'Σαουδική Αραβία',
+    ),
+    'SB': Territory(
+      'SB',
+      'Νήσοι Σολομώντος',
+    ),
+    'SC': Territory(
+      'SC',
+      'Σεϋχέλλες',
+    ),
+    'SD': Territory(
+      'SD',
+      'Σουδάν',
+    ),
+    'SE': Territory(
+      'SE',
+      'Σουηδία',
+    ),
+    'SG': Territory(
+      'SG',
+      'Σιγκαπούρη',
+    ),
+    'SH': Territory(
+      'SH',
+      'Αγία Ελένη',
+    ),
+    'SI': Territory(
+      'SI',
+      'Σλοβενία',
+    ),
+    'SJ': Territory(
+      'SJ',
+      'Σβάλμπαρντ και Γιαν Μαγιέν',
+    ),
+    'SK': Territory(
+      'SK',
+      'Σλοβακία',
+    ),
+    'SL': Territory(
+      'SL',
+      'Σιέρα Λεόνε',
+    ),
+    'SM': Territory(
+      'SM',
+      'Άγιος Μαρίνος',
+    ),
+    'SN': Territory(
+      'SN',
+      'Σενεγάλη',
+    ),
+    'SO': Territory(
+      'SO',
+      'Σομαλία',
+    ),
+    'SR': Territory(
+      'SR',
+      'Σουρινάμ',
+    ),
+    'SS': Territory(
+      'SS',
+      'Νότιο Σουδάν',
+    ),
+    'ST': Territory(
+      'ST',
+      'Σάο Τομέ και Πρίνσιπε',
+    ),
+    'SV': Territory(
+      'SV',
+      'Ελ Σαλβαδόρ',
+    ),
+    'SX': Territory(
+      'SX',
+      'Άγιος Μαρτίνος (Ολλανδικό τμήμα)',
+    ),
+    'SY': Territory(
+      'SY',
+      'Συρία',
+    ),
+    'SZ': Territory(
+      'SZ',
+      'Εσουατίνι',
+    ),
+    'TA': Territory(
+      'TA',
+      'Τριστάν ντα Κούνια',
+    ),
+    'TC': Territory(
+      'TC',
+      'Νήσοι Τερκς και Κάικος',
+    ),
+    'TD': Territory(
+      'TD',
+      'Τσαντ',
+    ),
+    'TF': Territory(
+      'TF',
+      'Γαλλικά Νότια Εδάφη',
+    ),
+    'TG': Territory(
+      'TG',
+      'Τόγκο',
+    ),
+    'TH': Territory(
+      'TH',
+      'Ταϊλάνδη',
+    ),
+    'TJ': Territory(
+      'TJ',
+      'Τατζικιστάν',
+    ),
+    'TK': Territory(
+      'TK',
+      'Τοκελάου',
+    ),
+    'TL': Territory(
+      'TL',
+      'Τιμόρ-Λέστε',
+    ),
+    'TM': Territory(
+      'TM',
+      'Τουρκμενιστάν',
+    ),
+    'TN': Territory(
+      'TN',
+      'Τυνησία',
+    ),
+    'TO': Territory(
+      'TO',
+      'Τόνγκα',
+    ),
+    'TR': Territory(
+      'TR',
+      'Τουρκία',
+    ),
+    'TT': Territory(
+      'TT',
+      'Τρινιντάντ και Τομπάγκο',
+    ),
+    'TV': Territory(
+      'TV',
+      'Τουβαλού',
+    ),
+    'TW': Territory(
+      'TW',
+      'Ταϊβάν',
+    ),
+    'TZ': Territory(
+      'TZ',
+      'Τανζανία',
+    ),
+    'UA': Territory(
+      'UA',
+      'Ουκρανία',
+    ),
+    'UG': Territory(
+      'UG',
+      'Ουγκάντα',
+    ),
+    'UM': Territory(
+      'UM',
+      'Απομακρυσμένες Νησίδες ΗΠΑ',
+    ),
+    'UN': Territory(
+      'UN',
+      'Ηνωμένα Έθνη',
+    ),
+    'US': Territory(
+      'US',
+      'Ηνωμένες Πολιτείες',
+    ),
+    'UY': Territory(
+      'UY',
+      'Ουρουγουάη',
+    ),
+    'UZ': Territory(
+      'UZ',
+      'Ουζμπεκιστάν',
+    ),
+    'VA': Territory(
+      'VA',
+      'Βατικανό',
+    ),
+    'VC': Territory(
+      'VC',
+      'Άγιος Βικέντιος και Γρεναδίνες',
+    ),
+    'VE': Territory(
+      'VE',
+      'Βενεζουέλα',
+    ),
+    'VG': Territory(
+      'VG',
+      'Βρετανικές Παρθένες Νήσοι',
+    ),
+    'VI': Territory(
+      'VI',
+      'Αμερικανικές Παρθένες Νήσοι',
+    ),
+    'VN': Territory(
+      'VN',
+      'Βιετνάμ',
+    ),
+    'VU': Territory(
+      'VU',
+      'Βανουάτου',
+    ),
+    'WF': Territory(
+      'WF',
+      'Γουάλις και Φουτούνα',
+    ),
+    'WS': Territory(
+      'WS',
+      'Σαμόα',
+    ),
+    'XA': Territory(
+      'XA',
+      'Ψευδο-προφορές',
+    ),
+    'XB': Territory(
+      'XB',
+      'Ψευδο-αμφικατευθυντικό',
+    ),
+    'XK': Territory(
+      'XK',
+      'Κοσσυφοπέδιο',
+    ),
+    'YE': Territory(
+      'YE',
+      'Υεμένη',
+    ),
+    'YT': Territory(
+      'YT',
+      'Μαγιότ',
+    ),
+    'ZA': Territory(
+      'ZA',
+      'Νότια Αφρική',
+    ),
+    'ZM': Territory(
+      'ZM',
+      'Ζάμπια',
+    ),
+    'ZW': Territory(
+      'ZW',
+      'Ζιμπάμπουε',
+    ),
+  };
 }

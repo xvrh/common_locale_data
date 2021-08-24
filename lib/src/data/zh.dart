@@ -18,6 +18,10 @@ class CommonLocaleDataZh implements CommonLocaleData {
   static final _units = UnitsZh._();
   @override
   Units get units => _units;
+
+  static final _territories = TerritoriesZh._();
+  @override
+  Territories get territories => _territories;
 }
 
 class UnitsZh implements Units {
@@ -4210,4 +4214,1252 @@ class DateFieldsZh implements DateFields {
         short: '时区',
         narrow: '时区',
       );
+}
+
+class TerritoriesZh implements Territories {
+  TerritoriesZh._();
+
+  @override
+  Territory get world => Territory(
+        '001',
+        '世界',
+      );
+
+  @override
+  Territory get africa => Territory(
+        '002',
+        '非洲',
+      );
+
+  @override
+  Territory get northAmerica => Territory(
+        '003',
+        '北美洲',
+      );
+
+  @override
+  Territory get southAmerica => Territory(
+        '005',
+        '南美洲',
+      );
+
+  @override
+  Territory get oceania => Territory(
+        '009',
+        '大洋洲',
+      );
+
+  @override
+  Territory get westernAfrica => Territory(
+        '011',
+        '西非',
+      );
+
+  @override
+  Territory get centralAmerica => Territory(
+        '013',
+        '中美洲',
+      );
+
+  @override
+  Territory get easternAfrica => Territory(
+        '014',
+        '东非',
+      );
+
+  @override
+  Territory get northernAfrica => Territory(
+        '015',
+        '北非',
+      );
+
+  @override
+  Territory get middleAfrica => Territory(
+        '017',
+        '中非',
+      );
+
+  @override
+  Territory get southernAfrica => Territory(
+        '018',
+        '南部非洲',
+      );
+
+  @override
+  Territory get americas => Territory(
+        '019',
+        '美洲',
+      );
+
+  @override
+  Territory get northernAmerica => Territory(
+        '021',
+        '美洲北部',
+      );
+
+  @override
+  Territory get caribbean => Territory(
+        '029',
+        '加勒比地区',
+      );
+
+  @override
+  Territory get easternAsia => Territory(
+        '030',
+        '东亚',
+      );
+
+  @override
+  Territory get southernAsia => Territory(
+        '034',
+        '南亚',
+      );
+
+  @override
+  Territory get southeastAsia => Territory(
+        '035',
+        '东南亚',
+      );
+
+  @override
+  Territory get southernEurope => Territory(
+        '039',
+        '南欧',
+      );
+
+  @override
+  Territory get australasia => Territory(
+        '053',
+        '澳大拉西亚',
+      );
+
+  @override
+  Territory get melanesia => Territory(
+        '054',
+        '美拉尼西亚',
+      );
+
+  @override
+  Territory get micronesianRegion => Territory(
+        '057',
+        '密克罗尼西亚地区',
+      );
+
+  @override
+  Territory get polynesia => Territory(
+        '061',
+        '玻利尼西亚',
+      );
+
+  @override
+  Territory get asia => Territory(
+        '142',
+        '亚洲',
+      );
+
+  @override
+  Territory get centralAsia => Territory(
+        '143',
+        '中亚',
+      );
+
+  @override
+  Territory get westernAsia => Territory(
+        '145',
+        '西亚',
+      );
+
+  @override
+  Territory get europe => Territory(
+        '150',
+        '欧洲',
+      );
+
+  @override
+  Territory get easternEurope => Territory(
+        '151',
+        '东欧',
+      );
+
+  @override
+  Territory get northernEurope => Territory(
+        '154',
+        '北欧',
+      );
+
+  @override
+  Territory get westernEurope => Territory(
+        '155',
+        '西欧',
+      );
+
+  @override
+  Territory get subSaharanAfrica => Territory(
+        '202',
+        '撒哈拉以南非洲',
+      );
+
+  @override
+  Territory get latinAmerica => Territory(
+        '419',
+        '拉丁美洲',
+      );
+
+  @override
+  Territory get unknownRegion => Territory(
+        'ZZ',
+        '未知地区',
+      );
+
+  @override
+  final countries = <String, Territory>{
+    'AC': Territory(
+      'AC',
+      '阿森松岛',
+    ),
+    'AD': Territory(
+      'AD',
+      '安道尔',
+    ),
+    'AE': Territory(
+      'AE',
+      '阿拉伯联合酋长国',
+    ),
+    'AF': Territory(
+      'AF',
+      '阿富汗',
+    ),
+    'AG': Territory(
+      'AG',
+      '安提瓜和巴布达',
+    ),
+    'AI': Territory(
+      'AI',
+      '安圭拉',
+    ),
+    'AL': Territory(
+      'AL',
+      '阿尔巴尼亚',
+    ),
+    'AM': Territory(
+      'AM',
+      '亚美尼亚',
+    ),
+    'AO': Territory(
+      'AO',
+      '安哥拉',
+    ),
+    'AQ': Territory(
+      'AQ',
+      '南极洲',
+    ),
+    'AR': Territory(
+      'AR',
+      '阿根廷',
+    ),
+    'AS': Territory(
+      'AS',
+      '美属萨摩亚',
+    ),
+    'AT': Territory(
+      'AT',
+      '奥地利',
+    ),
+    'AU': Territory(
+      'AU',
+      '澳大利亚',
+    ),
+    'AW': Territory(
+      'AW',
+      '阿鲁巴',
+    ),
+    'AX': Territory(
+      'AX',
+      '奥兰群岛',
+    ),
+    'AZ': Territory(
+      'AZ',
+      '阿塞拜疆',
+    ),
+    'BA': Territory(
+      'BA',
+      '波斯尼亚和黑塞哥维那',
+    ),
+    'BB': Territory(
+      'BB',
+      '巴巴多斯',
+    ),
+    'BD': Territory(
+      'BD',
+      '孟加拉国',
+    ),
+    'BE': Territory(
+      'BE',
+      '比利时',
+    ),
+    'BF': Territory(
+      'BF',
+      '布基纳法索',
+    ),
+    'BG': Territory(
+      'BG',
+      '保加利亚',
+    ),
+    'BH': Territory(
+      'BH',
+      '巴林',
+    ),
+    'BI': Territory(
+      'BI',
+      '布隆迪',
+    ),
+    'BJ': Territory(
+      'BJ',
+      '贝宁',
+    ),
+    'BL': Territory(
+      'BL',
+      '圣巴泰勒米',
+    ),
+    'BM': Territory(
+      'BM',
+      '百慕大',
+    ),
+    'BN': Territory(
+      'BN',
+      '文莱',
+    ),
+    'BO': Territory(
+      'BO',
+      '玻利维亚',
+    ),
+    'BQ': Territory(
+      'BQ',
+      '荷属加勒比区',
+    ),
+    'BR': Territory(
+      'BR',
+      '巴西',
+    ),
+    'BS': Territory(
+      'BS',
+      '巴哈马',
+    ),
+    'BT': Territory(
+      'BT',
+      '不丹',
+    ),
+    'BV': Territory(
+      'BV',
+      '布韦岛',
+    ),
+    'BW': Territory(
+      'BW',
+      '博茨瓦纳',
+    ),
+    'BY': Territory(
+      'BY',
+      '白俄罗斯',
+    ),
+    'BZ': Territory(
+      'BZ',
+      '伯利兹',
+    ),
+    'CA': Territory(
+      'CA',
+      '加拿大',
+    ),
+    'CC': Territory(
+      'CC',
+      '科科斯（基林）群岛',
+    ),
+    'CD': Territory(
+      'CD',
+      '刚果（金）',
+    ),
+    'CF': Territory(
+      'CF',
+      '中非共和国',
+    ),
+    'CG': Territory(
+      'CG',
+      '刚果（布）',
+    ),
+    'CH': Territory(
+      'CH',
+      '瑞士',
+    ),
+    'CI': Territory(
+      'CI',
+      '科特迪瓦',
+    ),
+    'CK': Territory(
+      'CK',
+      '库克群岛',
+    ),
+    'CL': Territory(
+      'CL',
+      '智利',
+    ),
+    'CM': Territory(
+      'CM',
+      '喀麦隆',
+    ),
+    'CN': Territory(
+      'CN',
+      '中国',
+    ),
+    'CO': Territory(
+      'CO',
+      '哥伦比亚',
+    ),
+    'CP': Territory(
+      'CP',
+      '克利珀顿岛',
+    ),
+    'CR': Territory(
+      'CR',
+      '哥斯达黎加',
+    ),
+    'CU': Territory(
+      'CU',
+      '古巴',
+    ),
+    'CV': Territory(
+      'CV',
+      '佛得角',
+    ),
+    'CW': Territory(
+      'CW',
+      '库拉索',
+    ),
+    'CX': Territory(
+      'CX',
+      '圣诞岛',
+    ),
+    'CY': Territory(
+      'CY',
+      '塞浦路斯',
+    ),
+    'CZ': Territory(
+      'CZ',
+      '捷克',
+    ),
+    'DE': Territory(
+      'DE',
+      '德国',
+    ),
+    'DG': Territory(
+      'DG',
+      '迪戈加西亚岛',
+    ),
+    'DJ': Territory(
+      'DJ',
+      '吉布提',
+    ),
+    'DK': Territory(
+      'DK',
+      '丹麦',
+    ),
+    'DM': Territory(
+      'DM',
+      '多米尼克',
+    ),
+    'DO': Territory(
+      'DO',
+      '多米尼加共和国',
+    ),
+    'DZ': Territory(
+      'DZ',
+      '阿尔及利亚',
+    ),
+    'EA': Territory(
+      'EA',
+      '休达及梅利利亚',
+    ),
+    'EC': Territory(
+      'EC',
+      '厄瓜多尔',
+    ),
+    'EE': Territory(
+      'EE',
+      '爱沙尼亚',
+    ),
+    'EG': Territory(
+      'EG',
+      '埃及',
+    ),
+    'EH': Territory(
+      'EH',
+      '西撒哈拉',
+    ),
+    'ER': Territory(
+      'ER',
+      '厄立特里亚',
+    ),
+    'ES': Territory(
+      'ES',
+      '西班牙',
+    ),
+    'ET': Territory(
+      'ET',
+      '埃塞俄比亚',
+    ),
+    'EU': Territory(
+      'EU',
+      '欧盟',
+    ),
+    'EZ': Territory(
+      'EZ',
+      '欧元区',
+    ),
+    'FI': Territory(
+      'FI',
+      '芬兰',
+    ),
+    'FJ': Territory(
+      'FJ',
+      '斐济',
+    ),
+    'FK': Territory(
+      'FK',
+      '福克兰群岛',
+    ),
+    'FM': Territory(
+      'FM',
+      '密克罗尼西亚',
+    ),
+    'FO': Territory(
+      'FO',
+      '法罗群岛',
+    ),
+    'FR': Territory(
+      'FR',
+      '法国',
+    ),
+    'GA': Territory(
+      'GA',
+      '加蓬',
+    ),
+    'GB': Territory(
+      'GB',
+      '英国',
+    ),
+    'GD': Territory(
+      'GD',
+      '格林纳达',
+    ),
+    'GE': Territory(
+      'GE',
+      '格鲁吉亚',
+    ),
+    'GF': Territory(
+      'GF',
+      '法属圭亚那',
+    ),
+    'GG': Territory(
+      'GG',
+      '根西岛',
+    ),
+    'GH': Territory(
+      'GH',
+      '加纳',
+    ),
+    'GI': Territory(
+      'GI',
+      '直布罗陀',
+    ),
+    'GL': Territory(
+      'GL',
+      '格陵兰',
+    ),
+    'GM': Territory(
+      'GM',
+      '冈比亚',
+    ),
+    'GN': Territory(
+      'GN',
+      '几内亚',
+    ),
+    'GP': Territory(
+      'GP',
+      '瓜德罗普',
+    ),
+    'GQ': Territory(
+      'GQ',
+      '赤道几内亚',
+    ),
+    'GR': Territory(
+      'GR',
+      '希腊',
+    ),
+    'GS': Territory(
+      'GS',
+      '南乔治亚和南桑威奇群岛',
+    ),
+    'GT': Territory(
+      'GT',
+      '危地马拉',
+    ),
+    'GU': Territory(
+      'GU',
+      '关岛',
+    ),
+    'GW': Territory(
+      'GW',
+      '几内亚比绍',
+    ),
+    'GY': Territory(
+      'GY',
+      '圭亚那',
+    ),
+    'HK': Territory(
+      'HK',
+      '中国香港特别行政区',
+    ),
+    'HM': Territory(
+      'HM',
+      '赫德岛和麦克唐纳群岛',
+    ),
+    'HN': Territory(
+      'HN',
+      '洪都拉斯',
+    ),
+    'HR': Territory(
+      'HR',
+      '克罗地亚',
+    ),
+    'HT': Territory(
+      'HT',
+      '海地',
+    ),
+    'HU': Territory(
+      'HU',
+      '匈牙利',
+    ),
+    'IC': Territory(
+      'IC',
+      '加纳利群岛',
+    ),
+    'ID': Territory(
+      'ID',
+      '印度尼西亚',
+    ),
+    'IE': Territory(
+      'IE',
+      '爱尔兰',
+    ),
+    'IL': Territory(
+      'IL',
+      '以色列',
+    ),
+    'IM': Territory(
+      'IM',
+      '马恩岛',
+    ),
+    'IN': Territory(
+      'IN',
+      '印度',
+    ),
+    'IO': Territory(
+      'IO',
+      '英属印度洋领地',
+    ),
+    'IQ': Territory(
+      'IQ',
+      '伊拉克',
+    ),
+    'IR': Territory(
+      'IR',
+      '伊朗',
+    ),
+    'IS': Territory(
+      'IS',
+      '冰岛',
+    ),
+    'IT': Territory(
+      'IT',
+      '意大利',
+    ),
+    'JE': Territory(
+      'JE',
+      '泽西岛',
+    ),
+    'JM': Territory(
+      'JM',
+      '牙买加',
+    ),
+    'JO': Territory(
+      'JO',
+      '约旦',
+    ),
+    'JP': Territory(
+      'JP',
+      '日本',
+    ),
+    'KE': Territory(
+      'KE',
+      '肯尼亚',
+    ),
+    'KG': Territory(
+      'KG',
+      '吉尔吉斯斯坦',
+    ),
+    'KH': Territory(
+      'KH',
+      '柬埔寨',
+    ),
+    'KI': Territory(
+      'KI',
+      '基里巴斯',
+    ),
+    'KM': Territory(
+      'KM',
+      '科摩罗',
+    ),
+    'KN': Territory(
+      'KN',
+      '圣基茨和尼维斯',
+    ),
+    'KP': Territory(
+      'KP',
+      '朝鲜',
+    ),
+    'KR': Territory(
+      'KR',
+      '韩国',
+    ),
+    'KW': Territory(
+      'KW',
+      '科威特',
+    ),
+    'KY': Territory(
+      'KY',
+      '开曼群岛',
+    ),
+    'KZ': Territory(
+      'KZ',
+      '哈萨克斯坦',
+    ),
+    'LA': Territory(
+      'LA',
+      '老挝',
+    ),
+    'LB': Territory(
+      'LB',
+      '黎巴嫩',
+    ),
+    'LC': Territory(
+      'LC',
+      '圣卢西亚',
+    ),
+    'LI': Territory(
+      'LI',
+      '列支敦士登',
+    ),
+    'LK': Territory(
+      'LK',
+      '斯里兰卡',
+    ),
+    'LR': Territory(
+      'LR',
+      '利比里亚',
+    ),
+    'LS': Territory(
+      'LS',
+      '莱索托',
+    ),
+    'LT': Territory(
+      'LT',
+      '立陶宛',
+    ),
+    'LU': Territory(
+      'LU',
+      '卢森堡',
+    ),
+    'LV': Territory(
+      'LV',
+      '拉脱维亚',
+    ),
+    'LY': Territory(
+      'LY',
+      '利比亚',
+    ),
+    'MA': Territory(
+      'MA',
+      '摩洛哥',
+    ),
+    'MC': Territory(
+      'MC',
+      '摩纳哥',
+    ),
+    'MD': Territory(
+      'MD',
+      '摩尔多瓦',
+    ),
+    'ME': Territory(
+      'ME',
+      '黑山',
+    ),
+    'MF': Territory(
+      'MF',
+      '法属圣马丁',
+    ),
+    'MG': Territory(
+      'MG',
+      '马达加斯加',
+    ),
+    'MH': Territory(
+      'MH',
+      '马绍尔群岛',
+    ),
+    'MK': Territory(
+      'MK',
+      '北马其顿',
+    ),
+    'ML': Territory(
+      'ML',
+      '马里',
+    ),
+    'MM': Territory(
+      'MM',
+      '缅甸',
+    ),
+    'MN': Territory(
+      'MN',
+      '蒙古',
+    ),
+    'MO': Territory(
+      'MO',
+      '中国澳门特别行政区',
+    ),
+    'MP': Territory(
+      'MP',
+      '北马里亚纳群岛',
+    ),
+    'MQ': Territory(
+      'MQ',
+      '马提尼克',
+    ),
+    'MR': Territory(
+      'MR',
+      '毛里塔尼亚',
+    ),
+    'MS': Territory(
+      'MS',
+      '蒙特塞拉特',
+    ),
+    'MT': Territory(
+      'MT',
+      '马耳他',
+    ),
+    'MU': Territory(
+      'MU',
+      '毛里求斯',
+    ),
+    'MV': Territory(
+      'MV',
+      '马尔代夫',
+    ),
+    'MW': Territory(
+      'MW',
+      '马拉维',
+    ),
+    'MX': Territory(
+      'MX',
+      '墨西哥',
+    ),
+    'MY': Territory(
+      'MY',
+      '马来西亚',
+    ),
+    'MZ': Territory(
+      'MZ',
+      '莫桑比克',
+    ),
+    'NA': Territory(
+      'NA',
+      '纳米比亚',
+    ),
+    'NC': Territory(
+      'NC',
+      '新喀里多尼亚',
+    ),
+    'NE': Territory(
+      'NE',
+      '尼日尔',
+    ),
+    'NF': Territory(
+      'NF',
+      '诺福克岛',
+    ),
+    'NG': Territory(
+      'NG',
+      '尼日利亚',
+    ),
+    'NI': Territory(
+      'NI',
+      '尼加拉瓜',
+    ),
+    'NL': Territory(
+      'NL',
+      '荷兰',
+    ),
+    'NO': Territory(
+      'NO',
+      '挪威',
+    ),
+    'NP': Territory(
+      'NP',
+      '尼泊尔',
+    ),
+    'NR': Territory(
+      'NR',
+      '瑙鲁',
+    ),
+    'NU': Territory(
+      'NU',
+      '纽埃',
+    ),
+    'NZ': Territory(
+      'NZ',
+      '新西兰',
+    ),
+    'OM': Territory(
+      'OM',
+      '阿曼',
+    ),
+    'PA': Territory(
+      'PA',
+      '巴拿马',
+    ),
+    'PE': Territory(
+      'PE',
+      '秘鲁',
+    ),
+    'PF': Territory(
+      'PF',
+      '法属波利尼西亚',
+    ),
+    'PG': Territory(
+      'PG',
+      '巴布亚新几内亚',
+    ),
+    'PH': Territory(
+      'PH',
+      '菲律宾',
+    ),
+    'PK': Territory(
+      'PK',
+      '巴基斯坦',
+    ),
+    'PL': Territory(
+      'PL',
+      '波兰',
+    ),
+    'PM': Territory(
+      'PM',
+      '圣皮埃尔和密克隆群岛',
+    ),
+    'PN': Territory(
+      'PN',
+      '皮特凯恩群岛',
+    ),
+    'PR': Territory(
+      'PR',
+      '波多黎各',
+    ),
+    'PS': Territory(
+      'PS',
+      '巴勒斯坦领土',
+    ),
+    'PT': Territory(
+      'PT',
+      '葡萄牙',
+    ),
+    'PW': Territory(
+      'PW',
+      '帕劳',
+    ),
+    'PY': Territory(
+      'PY',
+      '巴拉圭',
+    ),
+    'QA': Territory(
+      'QA',
+      '卡塔尔',
+    ),
+    'QO': Territory(
+      'QO',
+      '大洋洲边远群岛',
+    ),
+    'RE': Territory(
+      'RE',
+      '留尼汪',
+    ),
+    'RO': Territory(
+      'RO',
+      '罗马尼亚',
+    ),
+    'RS': Territory(
+      'RS',
+      '塞尔维亚',
+    ),
+    'RU': Territory(
+      'RU',
+      '俄罗斯',
+    ),
+    'RW': Territory(
+      'RW',
+      '卢旺达',
+    ),
+    'SA': Territory(
+      'SA',
+      '沙特阿拉伯',
+    ),
+    'SB': Territory(
+      'SB',
+      '所罗门群岛',
+    ),
+    'SC': Territory(
+      'SC',
+      '塞舌尔',
+    ),
+    'SD': Territory(
+      'SD',
+      '苏丹',
+    ),
+    'SE': Territory(
+      'SE',
+      '瑞典',
+    ),
+    'SG': Territory(
+      'SG',
+      '新加坡',
+    ),
+    'SH': Territory(
+      'SH',
+      '圣赫勒拿',
+    ),
+    'SI': Territory(
+      'SI',
+      '斯洛文尼亚',
+    ),
+    'SJ': Territory(
+      'SJ',
+      '斯瓦尔巴和扬马延',
+    ),
+    'SK': Territory(
+      'SK',
+      '斯洛伐克',
+    ),
+    'SL': Territory(
+      'SL',
+      '塞拉利昂',
+    ),
+    'SM': Territory(
+      'SM',
+      '圣马力诺',
+    ),
+    'SN': Territory(
+      'SN',
+      '塞内加尔',
+    ),
+    'SO': Territory(
+      'SO',
+      '索马里',
+    ),
+    'SR': Territory(
+      'SR',
+      '苏里南',
+    ),
+    'SS': Territory(
+      'SS',
+      '南苏丹',
+    ),
+    'ST': Territory(
+      'ST',
+      '圣多美和普林西比',
+    ),
+    'SV': Territory(
+      'SV',
+      '萨尔瓦多',
+    ),
+    'SX': Territory(
+      'SX',
+      '荷属圣马丁',
+    ),
+    'SY': Territory(
+      'SY',
+      '叙利亚',
+    ),
+    'SZ': Territory(
+      'SZ',
+      '斯威士兰',
+    ),
+    'TA': Territory(
+      'TA',
+      '特里斯坦-达库尼亚群岛',
+    ),
+    'TC': Territory(
+      'TC',
+      '特克斯和凯科斯群岛',
+    ),
+    'TD': Territory(
+      'TD',
+      '乍得',
+    ),
+    'TF': Territory(
+      'TF',
+      '法属南部领地',
+    ),
+    'TG': Territory(
+      'TG',
+      '多哥',
+    ),
+    'TH': Territory(
+      'TH',
+      '泰国',
+    ),
+    'TJ': Territory(
+      'TJ',
+      '塔吉克斯坦',
+    ),
+    'TK': Territory(
+      'TK',
+      '托克劳',
+    ),
+    'TL': Territory(
+      'TL',
+      '东帝汶',
+    ),
+    'TM': Territory(
+      'TM',
+      '土库曼斯坦',
+    ),
+    'TN': Territory(
+      'TN',
+      '突尼斯',
+    ),
+    'TO': Territory(
+      'TO',
+      '汤加',
+    ),
+    'TR': Territory(
+      'TR',
+      '土耳其',
+    ),
+    'TT': Territory(
+      'TT',
+      '特立尼达和多巴哥',
+    ),
+    'TV': Territory(
+      'TV',
+      '图瓦卢',
+    ),
+    'TW': Territory(
+      'TW',
+      '台湾',
+    ),
+    'TZ': Territory(
+      'TZ',
+      '坦桑尼亚',
+    ),
+    'UA': Territory(
+      'UA',
+      '乌克兰',
+    ),
+    'UG': Territory(
+      'UG',
+      '乌干达',
+    ),
+    'UM': Territory(
+      'UM',
+      '美国本土外小岛屿',
+    ),
+    'UN': Territory(
+      'UN',
+      '联合国',
+    ),
+    'US': Territory(
+      'US',
+      '美国',
+    ),
+    'UY': Territory(
+      'UY',
+      '乌拉圭',
+    ),
+    'UZ': Territory(
+      'UZ',
+      '乌兹别克斯坦',
+    ),
+    'VA': Territory(
+      'VA',
+      '梵蒂冈',
+    ),
+    'VC': Territory(
+      'VC',
+      '圣文森特和格林纳丁斯',
+    ),
+    'VE': Territory(
+      'VE',
+      '委内瑞拉',
+    ),
+    'VG': Territory(
+      'VG',
+      '英属维尔京群岛',
+    ),
+    'VI': Territory(
+      'VI',
+      '美属维尔京群岛',
+    ),
+    'VN': Territory(
+      'VN',
+      '越南',
+    ),
+    'VU': Territory(
+      'VU',
+      '瓦努阿图',
+    ),
+    'WF': Territory(
+      'WF',
+      '瓦利斯和富图纳',
+    ),
+    'WS': Territory(
+      'WS',
+      '萨摩亚',
+    ),
+    'XA': Territory(
+      'XA',
+      '伪地区',
+    ),
+    'XB': Territory(
+      'XB',
+      '伪双向语言地区',
+    ),
+    'XK': Territory(
+      'XK',
+      '科索沃',
+    ),
+    'YE': Territory(
+      'YE',
+      '也门',
+    ),
+    'YT': Territory(
+      'YT',
+      '马约特',
+    ),
+    'ZA': Territory(
+      'ZA',
+      '南非',
+    ),
+    'ZM': Territory(
+      'ZM',
+      '赞比亚',
+    ),
+    'ZW': Territory(
+      'ZW',
+      '津巴布韦',
+    ),
+  };
 }
