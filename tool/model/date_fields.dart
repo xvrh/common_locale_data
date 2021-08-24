@@ -144,7 +144,7 @@ class RelativeTimePattern {
   String? countZero;
 
   @JsonKey(name: 'relativeTimePattern-count-one')
-  String countOne;
+  String? countOne;
 
   @JsonKey(name: 'relativeTimePattern-count-two')
   String? countTwo;

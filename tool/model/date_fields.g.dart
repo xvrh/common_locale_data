@@ -24,7 +24,7 @@ DateField _$DateFieldFromJson(Map<String, dynamic> json) => DateField(
 RelativeTimePattern _$RelativeTimePatternFromJson(Map<String, dynamic> json) =>
     RelativeTimePattern(
       json['relativeTimePattern-count-zero'] as String?,
-      json['relativeTimePattern-count-one'] as String,
+      json['relativeTimePattern-count-one'] as String?,
       json['relativeTimePattern-count-two'] as String?,
       json['relativeTimePattern-count-few'] as String?,
       json['relativeTimePattern-count-many'] as String?,

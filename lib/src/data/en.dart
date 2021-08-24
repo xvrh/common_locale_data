@@ -1,8 +1,8 @@
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
-import '../territories.dart';
 import '../units.dart';
 import '../shared.dart';
+import '../territories.dart';
 
 const _locale = 'en';
 
@@ -19,8 +19,6 @@ class CommonLocaleDataEn implements CommonLocaleData {
   @override
   Units get units => _units;
 }
-
-class TerritoriesEn extends Territories {}
 
 class UnitsEn implements Units {
   UnitsEn._();

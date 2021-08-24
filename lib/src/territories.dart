@@ -1,13 +1,4 @@
-abstract class Territories {
-  Territory get world;
-  Territory get africa;
-  Territory get belgium;
-  Territory get unitedState;
-
-  Territory operator [](String code) {}
-}
-
-Territory findTerritory(Map<String, Territory> allTerritories, String code) {}
+export 'territories_model.dart';
 
 class Territory {
   final String code;

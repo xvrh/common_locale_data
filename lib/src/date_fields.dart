@@ -106,13 +106,13 @@ class MultiLengthRelativeTime {
 
 class RelativeTime {
   final String _locale;
-  final String one, other;
-  final String? zero, two, few, many;
+  final String other;
+  final String? one, zero, two, few, many;
 
   RelativeTime(
     this._locale, {
-    required this.one,
     required this.other,
+    this.one,
     this.zero,
     this.two,
     this.few,

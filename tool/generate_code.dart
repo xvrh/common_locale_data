@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'model/territory.dart';
 import 'model/units.dart';
 import 'supported_locales.dart';
 import 'package:path/path.dart' as p;
@@ -17,13 +18,16 @@ String languageUpper(String language) => upperCamel(splitWords(language));
 void main() {
   File('lib/src/units_model.dart')
       .writeAsStringSync(_format(generateUnitsModel()));
+  File('lib/src/territories_model.dart')
+      .writeAsStringSync(_format(generateTerritoriesModel()));
 
   for (var language in supportedLocales) {
     var buffer = StringBuffer()
       ..writeln("import '../../common_locale_data.dart' show CommonLocaleData;")
       ..writeln("import '../date_fields.dart';")
       ..writeln("import '../units.dart';")
-      ..writeln("import '../shared.dart';");
+      ..writeln("import '../shared.dart';")
+      ..writeln("import '../territories.dart';");
 
     buffer.writeln('''
 const _locale = '$language';
