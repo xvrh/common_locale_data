@@ -35,9 +35,9 @@ void generateDateFields(String language, StringBuffer buffer) {
 
     String eachLength(String Function(DateField) callback) {
       return lengths.entries.map((l) {
-        var fieldJson = fields['$key${l.value}'];
+        var fieldJson = fields['$key${l.value}'] as Map<String, dynamic>?;
         if (fieldJson == null) throw Exception('$key ${l.key} is null');
-        var field = DateField.fromJson(fieldJson as Map<String, dynamic>);
+        var field = DateField.fromJson(fieldJson);
         var result = callback(field);
         return '${l.key}: $result,';
       }).join('');

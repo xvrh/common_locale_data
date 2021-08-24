@@ -62,14 +62,14 @@ void generateUnits(String language, StringBuffer buffer) {
       buffer.writeln('Unit get ${lowerCamel(splitWords(key))} => Unit(');
       for (var length in lengths) {
         var unitsForLength = units[length]!;
-        var jsonForLength = unitsForLength[key];
-        var fallbackJson = units[lengths.first]![key] ??
-            ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
-            ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]);
+        var jsonForLength = unitsForLength[key] as Map<String, dynamic>?;
+        var fallbackJson = (units[lengths.first]![key] ??
+                ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
+                ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]))
+            as Map<String, dynamic>;
         jsonForLength ??= fallbackJson;
-        var unitForLength =
-            UnitField.fromJson(jsonForLength as Map<String, dynamic>);
-        var fallback = UnitField.fromJson(fallbackJson as Map<String, dynamic>);
+        var unitForLength = UnitField.fromJson(jsonForLength);
+        var fallback = UnitField.fromJson(fallbackJson);
         var displayName = unitForLength.displayName ?? fallback.displayName;
         if (displayName == null) {
           throw Exception(

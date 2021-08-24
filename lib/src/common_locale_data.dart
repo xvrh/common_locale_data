@@ -28,10 +28,10 @@ abstract class CommonLocaleData {
   static const cs = CommonLocaleDataCs();
   static const da = CommonLocaleDataDa();
   static const de = CommonLocaleDataDe();
+  static const el = CommonLocaleDataEl();
   static const en = CommonLocaleDataEn();
   static const es = CommonLocaleDataEs();
   static const fr = CommonLocaleDataFr();
-  static const el = CommonLocaleDataEl();
   static const it = CommonLocaleDataIt();
   static const ja = CommonLocaleDataJa();
   static const nl = CommonLocaleDataNl();
