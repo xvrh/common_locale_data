@@ -1,15 +1,8 @@
-import 'package:locale_data/locale_data.dart';
-import 'package:locale_data/src/data/fr.dart';
-import 'package:locale_data/src/data/en.dart';
+import 'package:common_locale_data/common_locale_data.dart';
 
 void main() {
-  // Récupérer quelques champs + tearoff, les mettre dans une map pour
-  // que le compilateur ne puisse pas tout traquer
-
-  // Tester quand une classe ici a le même nom
-
   var values = <Object>[take().first];
-  values.add(en.second.full.displayName);
+  values.add(CommonLocaleData.en.date.second.displayName.long);
   values.add(Other().tuesday);
 }
 
@@ -17,6 +10,11 @@ class Other {
   num get tuesday => 0;
 }
 
-List<String> take() => [LocaleData.fr.dateFields.tuesday.last.long];
+List<String> take() => [CommonLocaleData.fr.date.tuesday.previous.long];
 
-final notExpected = [LocaleData.fr.dateFields.second];
+final expected = ['mardi dernier'];
+final notExpected = <String>[
+  CommonLocaleData.fr.date.second.toString(),
+  'tuesday',
+  'Tuesday',
+];

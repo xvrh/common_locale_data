@@ -1,4 +1,3 @@
-import 'package:intl/intl.dart';
 import 'package:common_locale_data/common_locale_data.dart';
 
 // Steps:
@@ -45,11 +44,10 @@ void main() {
   print(cld.date.year.previous.long); // last year
 
   // Territories
-  print(cld.territories.unitedState); // United-State
-  print(cld.territories['us']); // United-State
+  print(cld.territories.africa); // Africa
+  print(cld.territories.countries['US']); // United States
 
   //TODO(xha):
-  //  - territories
   //  - languages
   //  - timezones
 }

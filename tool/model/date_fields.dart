@@ -1,11 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:json_annotation/json_annotation.dart';
 import 'package:path/path.dart' as p;
-
 import '../generate_code.dart';
 import '../utils/escape_dart_string.dart';
+
 part 'date_fields.g.dart';
 
 void generateDateFields(String language, StringBuffer buffer) {
@@ -36,9 +35,9 @@ void generateDateFields(String language, StringBuffer buffer) {
 
     String eachLength(String Function(DateField) callback) {
       return lengths.entries.map((l) {
-        var fieldJson = fields['$key${l.value}'];
+        var fieldJson = fields['$key${l.value}'] as Map<String, dynamic>?;
         if (fieldJson == null) throw Exception('$key ${l.key} is null');
-        var field = DateField.fromJson(fieldJson as Map<String, dynamic>);
+        var field = DateField.fromJson(fieldJson);
         var result = callback(field);
         return '${l.key}: $result,';
       }).join('');
@@ -144,7 +143,7 @@ class RelativeTimePattern {
   String? countZero;
 
   @JsonKey(name: 'relativeTimePattern-count-one')
-  String countOne;
+  String? countOne;
 
   @JsonKey(name: 'relativeTimePattern-count-two')
   String? countTwo;

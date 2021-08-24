@@ -1,7 +1,6 @@
 import 'dart:io';
-
+import 'package:common_locale_data/src/supported_locales.dart';
 import 'package:http/http.dart' as http;
-import 'supported_locales.dart';
 import 'package:path/path.dart' as p;
 import 'package:pedantic/pedantic.dart';
 import 'package:pool/pool.dart';

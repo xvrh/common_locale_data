@@ -1,0 +1,18 @@
+final supportedLocales = {
+  'ar',
+  'ca',
+  'cs',
+  'da',
+  'de',
+  'el',
+  'en',
+  'es',
+  'fr',
+  'it',
+  'ja',
+  'nl',
+  'pl',
+  'pt',
+  'sv',
+  'zh',
+};

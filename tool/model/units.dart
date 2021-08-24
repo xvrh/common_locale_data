@@ -1,8 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:path/path.dart' as p;
 import 'package:json_annotation/json_annotation.dart';
-
+import 'package:path/path.dart' as p;
 import '../generate_code.dart';
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
@@ -10,17 +9,21 @@ import '../utils/split_words.dart';
 
 part 'units.g.dart';
 
+Map<String, dynamic> readJson(String language) {
+  var file = File(p.join('tool/data/units/units/$language.json'));
+  var content = file.readAsStringSync();
+  var json = jsonDecode(content) as Map<String, dynamic>;
+  return
+      // ignore: avoid_dynamic_calls
+      json['main'][language]['units'] as Map<String, dynamic>;
+}
+
 String generateUnitsModel() {
   var code = StringBuffer();
   code.writeln("import 'units.dart';");
   code.writeln('abstract class Units {');
 
-  var file = File(p.join('tool/data/units/units/en.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  var fields =
-      // ignore: avoid_dynamic_calls
-      json['main']['en']['units']['long'] as Map<String, dynamic>;
+  var fields = readJson('en')['long'] as Map<String, dynamic>;
   for (var key in fields.keys) {
     var field = UnitField.fromJson(fields[key] as Map<String, dynamic>);
     if (field.displayName != null && field.unitPatternCountOther != null) {
@@ -35,12 +38,8 @@ String generateUnitsModel() {
 }
 
 void generateUnits(String language, StringBuffer buffer) {
-  var file = File(p.join('tool/data/units/units/$language.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  var allUnits =
-      // ignore: avoid_dynamic_calls
-      json['main'][language]['units'] as Map<String, dynamic>;
+  var referenceUnits = readJson('en');
+  var allUnits = readJson(language);
   buffer.writeln('''class Units${languageUpper(language)} implements Units {
       Units${languageUpper(language)}._();
       ''');
@@ -49,7 +48,7 @@ void generateUnits(String language, StringBuffer buffer) {
   var units = <String, Map<String, dynamic>>{
     for (var length in lengths) length: allUnits[length] as Map<String, dynamic>
   };
-  var firstUnits = units.values.first;
+  var firstUnits = referenceUnits['long'] as Map<String, dynamic>;
 
   for (var key in firstUnits.keys) {
     var firstField =
@@ -63,12 +62,14 @@ void generateUnits(String language, StringBuffer buffer) {
       buffer.writeln('Unit get ${lowerCamel(splitWords(key))} => Unit(');
       for (var length in lengths) {
         var unitsForLength = units[length]!;
-        var jsonForLength = unitsForLength[key];
-        var fallbackJson = units[lengths.first]![key]!;
+        var jsonForLength = unitsForLength[key] as Map<String, dynamic>?;
+        var fallbackJson = (units[lengths.first]![key] ??
+                ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
+                ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]))
+            as Map<String, dynamic>;
         jsonForLength ??= fallbackJson;
-        var unitForLength =
-            UnitField.fromJson(jsonForLength as Map<String, dynamic>);
-        var fallback = UnitField.fromJson(fallbackJson as Map<String, dynamic>);
+        var unitForLength = UnitField.fromJson(jsonForLength);
+        var fallback = UnitField.fromJson(fallbackJson);
         var displayName = unitForLength.displayName ?? fallback.displayName;
         if (displayName == null) {
           throw Exception(

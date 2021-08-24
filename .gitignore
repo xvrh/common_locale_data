@@ -8,7 +8,9 @@ build/
 # Directory created by dartdoc
 doc/api/
 
+*.iml
 _*
 .*
 
 !.gitignore
+!.github
