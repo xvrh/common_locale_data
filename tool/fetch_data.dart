@@ -7,7 +7,7 @@ import 'package:pool/pool.dart';
 
 void main() async {
   final _sets = <String, Set<String>>{
-    'units': {'units'},
+    'units': {'units', 'measurementSystemNames'},
     'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
     'localenames': {'languages', 'territories'},
     'misc': {'characters', 'listPatterns'},

@@ -37,8 +37,15 @@ class DateFieldData {
   DateFieldData({required this.now});
 }
 
-class DateFieldDataWithRelative extends DateFieldData {
+abstract class RelativeDateFieldData {
+  MultiLengthRelativeTime get past;
+  MultiLengthRelativeTime get future;
+}
+
+class DateFieldDataWithRelative extends DateFieldData
+    implements RelativeDateFieldData {
   final MultiLength previous, next;
+  @override
   final MultiLengthRelativeTime past, future;
 
   DateFieldDataWithRelative({
@@ -71,8 +78,9 @@ class DateFieldFullData extends DateFieldDataWithRelative {
   String toString() => displayName.toString();
 }
 
-class DateFieldDataTime extends DateFieldData {
+class DateFieldDataTime extends DateFieldData implements RelativeDateFieldData {
   final MultiLength displayName;
+  @override
   final MultiLengthRelativeTime past, future;
 
   DateFieldDataTime({
