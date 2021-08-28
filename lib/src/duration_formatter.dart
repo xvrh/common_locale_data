@@ -3,17 +3,22 @@ import 'common_locale_data.dart';
 import 'locale_data_style.dart';
 import 'units.dart';
 
+// TODO(xha): 2 methods:
+// - String format(Duration, {minUnit: DurationUnit.seconds}) => a full list with the precise duration
+//     ie. 2 hours, 25 minutes and 5 seconds
+//         2h, 25m, 5s
+// - static Duration roundToMax(Duration) => Duration(days: 1, hours: 13) => Duration(days: 2)
+// - String rounded(Duration duration) => format(roundToMax(duration));
 class DurationFormatter {
-  final CommonLocaleData? __data;
-  final LocaleDataStyle? defaultStyle;
+  final CommonLocaleData? data;
+  final LocaleDataStyle? style;
 
-  DurationFormatter({CommonLocaleData? data, this.defaultStyle})
-      : __data = data;
+  DurationFormatter({this.data, this.style});
 
-  CommonLocaleData get _data => __data ?? cld;
-
-  String precise(Duration duration, {LocaleDataStyle? style, bool? withWeek}) {
-    style ??= defaultStyle ?? LocaleDataStyle.long;
+  String precise(Duration duration,
+      {LocaleDataStyle? style, bool? withWeek, CommonLocaleData? data}) {
+    data ??= this.data ?? cld;
+    style ??= this.style ?? LocaleDataStyle.long;
     withWeek ??= true;
 
     var elapsedMillis = duration.abs().inMilliseconds;
@@ -26,7 +31,7 @@ class DurationFormatter {
     final months = days / 30;
     final years = days / 365;
 
-    var units = _data.units;
+    var units = data.units;
     Unit field;
     int howMany;
 
@@ -72,8 +77,10 @@ class DurationFormatter {
     return countPattern.format(howMany);
   }
 
-  String rounded(Duration duration, {LocaleDataStyle? style}) {
-    style ??= defaultStyle ?? LocaleDataStyle.long;
+  String rounded(Duration duration,
+      {LocaleDataStyle? style, CommonLocaleData? data}) {
+    data ??= this.data ?? cld;
+    style ??= this.style ?? LocaleDataStyle.long;
     var elapsedMillis = duration.abs().inMilliseconds;
 
     final seconds = elapsedMillis / 1000;
@@ -84,7 +91,7 @@ class DurationFormatter {
     final months = days / 30;
     final years = days / 365;
 
-    var units = _data.units;
+    var units = data.units;
     Unit field;
     int howMany;
 

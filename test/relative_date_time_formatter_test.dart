@@ -10,27 +10,12 @@ void main() {
     expect(formatter.format(Duration(days: 1, hours: 10)), '1 day ago');
     expect(
         formatter.format(Duration(days: 1, hours: 10),
-            direction: Direction.future),
+            direction: RelativeDateTimeDirection.future),
         'in 1 day');
     expect(formatter.format(-Duration(days: 1, hours: 10)), 'in 1 day');
     expect(formatter.format(-Duration(seconds: 0)), 'now');
     expect(formatter.format(Duration(seconds: 1)), '1 second ago');
-    expect(
-        formatter.format(Duration(seconds: 1),
-            style: RelativeDateTimeStyle.short),
+    expect(formatter.format(Duration(seconds: 1), style: LocaleDataStyle.short),
         '1 sec. ago');
-  });
-
-  test('Duration formatter', () {
-    var formatter = RelativeDateTimeFormatter(data: CommonLocaleData.en);
-    expect(formatter.duration(Duration(seconds: 3)), '3 seconds');
-    expect(
-        formatter.duration(Duration(seconds: 3),
-            style: RelativeDateTimeStyle.short),
-        '3 sec');
-    expect(
-        formatter.duration(Duration(seconds: 3),
-            style: RelativeDateTimeStyle.narrow),
-        '3s');
   });
 }
