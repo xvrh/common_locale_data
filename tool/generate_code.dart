@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:common_locale_data/src/supported_locales.dart';
 import 'package:dart_style/dart_style.dart';
 import 'model/date_fields.dart';
+import 'model/language.dart';
 import 'model/territory.dart';
 import 'model/units.dart';
 import 'utils/case_format.dart';
@@ -23,8 +24,10 @@ void main() {
 
   for (var language in supportedLocales) {
     var buffer = StringBuffer()
+      ..writeln("import 'package:collection/collection.dart';")
       ..writeln("import '../../common_locale_data.dart' show CommonLocaleData;")
       ..writeln("import '../date_fields.dart';")
+      ..writeln("import '../languages.dart';")
       ..writeln("import '../shared.dart';")
       ..writeln("import '../territories.dart';")
       ..writeln("import '../units.dart';");
@@ -41,6 +44,10 @@ class CommonLocaleData${languageUpper(language)} implements CommonLocaleData {
   @override
   DateFields get date => _dateFields;
   
+  static final _languages = Languages${languageUpper(language)}._();
+  @override
+  Languages get languages => _languages;
+  
   static final _units = Units${languageUpper(language)}._();
   @override
   Units get units => _units;
@@ -51,6 +58,7 @@ class CommonLocaleData${languageUpper(language)} implements CommonLocaleData {
 }
 ''');
 
+    generateLanguages(language, buffer);
     generateUnits(language, buffer);
     generateDateFields(language, buffer);
     generateTerritories(language, buffer);
@@ -69,12 +77,14 @@ String generateCommon() {
         "import 'data/${languageAllLower(language)}.dart' show CommonLocaleData${languageUpper(language)};");
   }
   code.writeln("import 'date_fields.dart';");
+  code.writeln("import 'languages.dart';");
   code.writeln("import 'territories.dart';");
   code.writeln("import 'units.dart';");
 
   code.writeln('''
 abstract class CommonLocaleData {
   DateFields get date;
+  Languages get languages;
   Units get units;
   Territories get territories;
 ''');

@@ -15,11 +15,13 @@ import 'data/pt.dart' show CommonLocaleDataPt;
 import 'data/sv.dart' show CommonLocaleDataSv;
 import 'data/zh.dart' show CommonLocaleDataZh;
 import 'date_fields.dart';
+import 'languages.dart';
 import 'territories.dart';
 import 'units.dart';
 
 abstract class CommonLocaleData {
   DateFields get date;
+  Languages get languages;
   Units get units;
   Territories get territories;
 
