@@ -1,5 +1,7 @@
+import 'package:collection/collection.dart';
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
+import '../languages.dart';
 import '../shared.dart';
 import '../territories.dart';
 import '../units.dart';
@@ -15,6 +17,10 @@ class CommonLocaleDataAr implements CommonLocaleData {
   @override
   DateFields get date => _dateFields;
 
+  static final _languages = LanguagesAr._();
+  @override
+  Languages get languages => _languages;
+
   static final _units = UnitsAr._();
   @override
   Units get units => _units;
@@ -22,6 +28,2156 @@ class CommonLocaleDataAr implements CommonLocaleData {
   static final _territories = TerritoriesAr._();
   @override
   Territories get territories => _territories;
+}
+
+class LanguagesAr extends Languages {
+  LanguagesAr._();
+
+  @override
+  final languages = CanonicalizedMap<String, String, Language>.from({
+    'aa': Language(
+      'aa',
+      'الأفارية',
+    ),
+    'ab': Language(
+      'ab',
+      'الأبخازية',
+    ),
+    'ace': Language(
+      'ace',
+      'الأتشينيزية',
+    ),
+    'ach': Language(
+      'ach',
+      'الأكولية',
+    ),
+    'ada': Language(
+      'ada',
+      'الأدانجمية',
+    ),
+    'ady': Language(
+      'ady',
+      'الأديغة',
+    ),
+    'ae': Language(
+      'ae',
+      'الأفستية',
+    ),
+    'af': Language(
+      'af',
+      'الأفريقانية',
+    ),
+    'afh': Language(
+      'afh',
+      'الأفريهيلية',
+    ),
+    'agq': Language(
+      'agq',
+      'الأغم',
+    ),
+    'ain': Language(
+      'ain',
+      'الآينوية',
+    ),
+    'ak': Language(
+      'ak',
+      'الأكانية',
+    ),
+    'akk': Language(
+      'akk',
+      'الأكادية',
+    ),
+    'ale': Language(
+      'ale',
+      'الأليوتية',
+    ),
+    'alt': Language(
+      'alt',
+      'الألطائية الجنوبية',
+    ),
+    'am': Language(
+      'am',
+      'الأمهرية',
+    ),
+    'an': Language(
+      'an',
+      'الأراغونية',
+    ),
+    'ang': Language(
+      'ang',
+      'الإنجليزية القديمة',
+    ),
+    'anp': Language(
+      'anp',
+      'الأنجيكا',
+    ),
+    'ar': Language(
+      'ar',
+      'العربية',
+    ),
+    'ar-001': Language(
+      'ar-001',
+      'العربية الفصحى الحديثة',
+    ),
+    'arc': Language(
+      'arc',
+      'الآرامية',
+    ),
+    'arn': Language(
+      'arn',
+      'المابودونغونية',
+    ),
+    'arp': Language(
+      'arp',
+      'الأراباهو',
+    ),
+    'ars': Language(
+      'ars',
+      'اللهجة النجدية',
+      menu: 'العربية، النجدية',
+    ),
+    'arw': Language(
+      'arw',
+      'الأراواكية',
+    ),
+    'as': Language(
+      'as',
+      'الأسامية',
+    ),
+    'asa': Language(
+      'asa',
+      'الآسو',
+    ),
+    'ast': Language(
+      'ast',
+      'الأسترية',
+    ),
+    'av': Language(
+      'av',
+      'الأوارية',
+    ),
+    'awa': Language(
+      'awa',
+      'الأوادية',
+    ),
+    'ay': Language(
+      'ay',
+      'الأيمارا',
+    ),
+    'az': Language(
+      'az',
+      'الأذربيجانية',
+      short: 'الأذرية',
+    ),
+    'ba': Language(
+      'ba',
+      'الباشكيرية',
+    ),
+    'bal': Language(
+      'bal',
+      'البلوشية',
+    ),
+    'ban': Language(
+      'ban',
+      'البالينية',
+    ),
+    'bas': Language(
+      'bas',
+      'الباسا',
+    ),
+    'bax': Language(
+      'bax',
+      'بامن',
+    ),
+    'bbj': Language(
+      'bbj',
+      'لغة الغومالا',
+    ),
+    'be': Language(
+      'be',
+      'البيلاروسية',
+    ),
+    'bej': Language(
+      'bej',
+      'البيجا',
+    ),
+    'bem': Language(
+      'bem',
+      'البيمبا',
+    ),
+    'bez': Language(
+      'bez',
+      'بينا',
+    ),
+    'bfd': Language(
+      'bfd',
+      'لغة البافوت',
+    ),
+    'bg': Language(
+      'bg',
+      'البلغارية',
+    ),
+    'bgn': Language(
+      'bgn',
+      'البلوشية الغربية',
+    ),
+    'bho': Language(
+      'bho',
+      'البهوجبورية',
+    ),
+    'bi': Language(
+      'bi',
+      'البيسلامية',
+    ),
+    'bik': Language(
+      'bik',
+      'البيكولية',
+    ),
+    'bin': Language(
+      'bin',
+      'البينية',
+    ),
+    'bkm': Language(
+      'bkm',
+      'لغة الكوم',
+    ),
+    'bla': Language(
+      'bla',
+      'السيكسيكية',
+    ),
+    'bm': Language(
+      'bm',
+      'البامبارا',
+    ),
+    'bn': Language(
+      'bn',
+      'البنغالية',
+    ),
+    'bo': Language(
+      'bo',
+      'التبتية',
+    ),
+    'br': Language(
+      'br',
+      'البريتونية',
+    ),
+    'bra': Language(
+      'bra',
+      'البراجية',
+    ),
+    'brx': Language(
+      'brx',
+      'البودو',
+    ),
+    'bs': Language(
+      'bs',
+      'البوسنية',
+    ),
+    'bss': Language(
+      'bss',
+      'أكوس',
+    ),
+    'bua': Language(
+      'bua',
+      'البرياتية',
+    ),
+    'bug': Language(
+      'bug',
+      'البجينيزية',
+    ),
+    'bum': Language(
+      'bum',
+      'لغة البولو',
+    ),
+    'byn': Language(
+      'byn',
+      'البلينية',
+    ),
+    'byv': Language(
+      'byv',
+      'لغة الميدومبا',
+    ),
+    'ca': Language(
+      'ca',
+      'الكتالانية',
+    ),
+    'cad': Language(
+      'cad',
+      'الكادو',
+    ),
+    'car': Language(
+      'car',
+      'الكاريبية',
+    ),
+    'cay': Language(
+      'cay',
+      'الكايوجية',
+    ),
+    'cch': Language(
+      'cch',
+      'الأتسام',
+    ),
+    'ccp': Language(
+      'ccp',
+      'تشاكما',
+    ),
+    'ce': Language(
+      'ce',
+      'الشيشانية',
+    ),
+    'ceb': Language(
+      'ceb',
+      'السيبيوانية',
+    ),
+    'cgg': Language(
+      'cgg',
+      'تشيغا',
+    ),
+    'ch': Language(
+      'ch',
+      'التشامورو',
+    ),
+    'chb': Language(
+      'chb',
+      'التشيبشا',
+    ),
+    'chg': Language(
+      'chg',
+      'التشاجاتاي',
+    ),
+    'chk': Language(
+      'chk',
+      'التشكيزية',
+    ),
+    'chm': Language(
+      'chm',
+      'الماري',
+    ),
+    'chn': Language(
+      'chn',
+      'الشينوك جارجون',
+    ),
+    'cho': Language(
+      'cho',
+      'الشوكتو',
+    ),
+    'chp': Language(
+      'chp',
+      'الشيباوايان',
+    ),
+    'chr': Language(
+      'chr',
+      'الشيروكي',
+    ),
+    'chy': Language(
+      'chy',
+      'الشايان',
+    ),
+    'ckb': Language(
+      'ckb',
+      'السورانية الكردية',
+      variant: 'السورانية الكردية',
+      menu: 'الكردية، السورانية',
+    ),
+    'co': Language(
+      'co',
+      'الكورسيكية',
+    ),
+    'cop': Language(
+      'cop',
+      'القبطية',
+    ),
+    'cr': Language(
+      'cr',
+      'الكرى',
+    ),
+    'crh': Language(
+      'crh',
+      'لغة تتار القرم',
+    ),
+    'crs': Language(
+      'crs',
+      'الفرنسية الكريولية السيشيلية',
+    ),
+    'cs': Language(
+      'cs',
+      'التشيكية',
+    ),
+    'csb': Language(
+      'csb',
+      'الكاشبايان',
+    ),
+    'cu': Language(
+      'cu',
+      'سلافية كنسية',
+    ),
+    'cv': Language(
+      'cv',
+      'التشوفاشي',
+    ),
+    'cy': Language(
+      'cy',
+      'الويلزية',
+    ),
+    'da': Language(
+      'da',
+      'الدانمركية',
+    ),
+    'dak': Language(
+      'dak',
+      'الداكوتا',
+    ),
+    'dar': Language(
+      'dar',
+      'الدارجوا',
+    ),
+    'dav': Language(
+      'dav',
+      'تيتا',
+    ),
+    'de': Language(
+      'de',
+      'الألمانية',
+    ),
+    'de-AT': Language(
+      'de-AT',
+      'الألمانية النمساوية',
+    ),
+    'de-CH': Language(
+      'de-CH',
+      'الألمانية العليا السويسرية',
+    ),
+    'del': Language(
+      'del',
+      'الديلوير',
+    ),
+    'den': Language(
+      'den',
+      'السلافية',
+    ),
+    'dgr': Language(
+      'dgr',
+      'الدوجريب',
+    ),
+    'din': Language(
+      'din',
+      'الدنكا',
+    ),
+    'dje': Language(
+      'dje',
+      'الزارمية',
+    ),
+    'doi': Language(
+      'doi',
+      'الدوجرية',
+    ),
+    'dsb': Language(
+      'dsb',
+      'صوربيا السفلى',
+    ),
+    'dua': Language(
+      'dua',
+      'الديولا',
+    ),
+    'dum': Language(
+      'dum',
+      'الهولندية الوسطى',
+    ),
+    'dv': Language(
+      'dv',
+      'المالديفية',
+    ),
+    'dyo': Language(
+      'dyo',
+      'جولا فونيا',
+    ),
+    'dyu': Language(
+      'dyu',
+      'الدايلا',
+    ),
+    'dz': Language(
+      'dz',
+      'الزونخاية',
+    ),
+    'dzg': Language(
+      'dzg',
+      'القرعانية',
+    ),
+    'ebu': Language(
+      'ebu',
+      'إمبو',
+    ),
+    'ee': Language(
+      'ee',
+      'الإيوي',
+    ),
+    'efi': Language(
+      'efi',
+      'الإفيك',
+    ),
+    'egy': Language(
+      'egy',
+      'المصرية القديمة',
+    ),
+    'eka': Language(
+      'eka',
+      'الإكاجك',
+    ),
+    'el': Language(
+      'el',
+      'اليونانية',
+    ),
+    'elx': Language(
+      'elx',
+      'الإمايت',
+    ),
+    'en': Language(
+      'en',
+      'الإنجليزية',
+    ),
+    'en-AU': Language(
+      'en-AU',
+      'الإنجليزية الأسترالية',
+    ),
+    'en-CA': Language(
+      'en-CA',
+      'الإنجليزية الكندية',
+    ),
+    'en-GB': Language(
+      'en-GB',
+      'الإنجليزية البريطانية',
+      short: 'الإنجليزية المملكة المتحدة',
+    ),
+    'en-US': Language(
+      'en-US',
+      'الإنجليزية الأمريكية',
+      short: 'الإنجليزية الولايات المتحدة',
+    ),
+    'enm': Language(
+      'enm',
+      'الإنجليزية الوسطى',
+    ),
+    'eo': Language(
+      'eo',
+      'الإسبرانتو',
+    ),
+    'es': Language(
+      'es',
+      'الإسبانية',
+    ),
+    'es-419': Language(
+      'es-419',
+      'الإسبانية أمريكا اللاتينية',
+    ),
+    'es-ES': Language(
+      'es-ES',
+      'الإسبانية الأوروبية',
+    ),
+    'es-MX': Language(
+      'es-MX',
+      'الإسبانية المكسيكية',
+    ),
+    'et': Language(
+      'et',
+      'الإستونية',
+    ),
+    'eu': Language(
+      'eu',
+      'الباسكية',
+    ),
+    'ewo': Language(
+      'ewo',
+      'الإيوندو',
+    ),
+    'fa': Language(
+      'fa',
+      'الفارسية',
+    ),
+    'fa-AF': Language(
+      'fa-AF',
+      'الدارية',
+    ),
+    'fan': Language(
+      'fan',
+      'الفانج',
+    ),
+    'fat': Language(
+      'fat',
+      'الفانتي',
+    ),
+    'ff': Language(
+      'ff',
+      'الفولانية',
+    ),
+    'fi': Language(
+      'fi',
+      'الفنلندية',
+    ),
+    'fil': Language(
+      'fil',
+      'الفلبينية',
+    ),
+    'fj': Language(
+      'fj',
+      'الفيجية',
+    ),
+    'fo': Language(
+      'fo',
+      'الفاروية',
+    ),
+    'fon': Language(
+      'fon',
+      'الفون',
+    ),
+    'fr': Language(
+      'fr',
+      'الفرنسية',
+    ),
+    'fr-CA': Language(
+      'fr-CA',
+      'الفرنسية الكندية',
+    ),
+    'fr-CH': Language(
+      'fr-CH',
+      'الفرنسية السويسرية',
+    ),
+    'frc': Language(
+      'frc',
+      'الفرنسية الكاجونية',
+    ),
+    'frm': Language(
+      'frm',
+      'الفرنسية الوسطى',
+    ),
+    'fro': Language(
+      'fro',
+      'الفرنسية القديمة',
+    ),
+    'frr': Language(
+      'frr',
+      'الفريزينية الشمالية',
+    ),
+    'frs': Language(
+      'frs',
+      'الفريزينية الشرقية',
+    ),
+    'fur': Language(
+      'fur',
+      'الفريلايان',
+    ),
+    'fy': Language(
+      'fy',
+      'الفريزيان',
+    ),
+    'ga': Language(
+      'ga',
+      'الأيرلندية',
+    ),
+    'gaa': Language(
+      'gaa',
+      'الجا',
+    ),
+    'gag': Language(
+      'gag',
+      'الغاغوز',
+    ),
+    'gan': Language(
+      'gan',
+      'الغان الصينية',
+    ),
+    'gay': Language(
+      'gay',
+      'الجايو',
+    ),
+    'gba': Language(
+      'gba',
+      'الجبيا',
+    ),
+    'gd': Language(
+      'gd',
+      'الغيلية الأسكتلندية',
+    ),
+    'gez': Language(
+      'gez',
+      'الجعزية',
+    ),
+    'gil': Language(
+      'gil',
+      'لغة أهل جبل طارق',
+    ),
+    'gl': Language(
+      'gl',
+      'الجاليكية',
+    ),
+    'gmh': Language(
+      'gmh',
+      'الألمانية العليا الوسطى',
+    ),
+    'gn': Language(
+      'gn',
+      'الغوارانية',
+    ),
+    'goh': Language(
+      'goh',
+      'الألمانية العليا القديمة',
+    ),
+    'gon': Language(
+      'gon',
+      'الجندي',
+    ),
+    'gor': Language(
+      'gor',
+      'الجورونتالو',
+    ),
+    'got': Language(
+      'got',
+      'القوطية',
+    ),
+    'grb': Language(
+      'grb',
+      'الجريبو',
+    ),
+    'grc': Language(
+      'grc',
+      'اليونانية القديمة',
+    ),
+    'gsw': Language(
+      'gsw',
+      'الألمانية السويسرية',
+    ),
+    'gu': Language(
+      'gu',
+      'الغوجاراتية',
+    ),
+    'guz': Language(
+      'guz',
+      'الغيزية',
+    ),
+    'gv': Language(
+      'gv',
+      'المنكية',
+    ),
+    'gwi': Language(
+      'gwi',
+      'غوتشن',
+    ),
+    'ha': Language(
+      'ha',
+      'الهوسا',
+    ),
+    'hai': Language(
+      'hai',
+      'الهيدا',
+    ),
+    'hak': Language(
+      'hak',
+      'الهاكا الصينية',
+    ),
+    'haw': Language(
+      'haw',
+      'لغة هاواي',
+    ),
+    'he': Language(
+      'he',
+      'العبرية',
+    ),
+    'hi': Language(
+      'hi',
+      'الهندية',
+    ),
+    'hil': Language(
+      'hil',
+      'الهيليجينون',
+    ),
+    'hit': Language(
+      'hit',
+      'الحثية',
+    ),
+    'hmn': Language(
+      'hmn',
+      'الهمونجية',
+    ),
+    'ho': Language(
+      'ho',
+      'الهيري موتو',
+    ),
+    'hr': Language(
+      'hr',
+      'الكرواتية',
+    ),
+    'hsb': Language(
+      'hsb',
+      'الصوربية العليا',
+    ),
+    'hsn': Language(
+      'hsn',
+      'شيانغ الصينية',
+    ),
+    'ht': Language(
+      'ht',
+      'الكريولية الهايتية',
+    ),
+    'hu': Language(
+      'hu',
+      'الهنغارية',
+    ),
+    'hup': Language(
+      'hup',
+      'الهبا',
+    ),
+    'hy': Language(
+      'hy',
+      'الأرمنية',
+    ),
+    'hz': Language(
+      'hz',
+      'الهيريرو',
+    ),
+    'ia': Language(
+      'ia',
+      'اللّغة الوسيطة',
+    ),
+    'iba': Language(
+      'iba',
+      'الإيبان',
+    ),
+    'ibb': Language(
+      'ibb',
+      'الإيبيبيو',
+    ),
+    'id': Language(
+      'id',
+      'الإندونيسية',
+    ),
+    'ie': Language(
+      'ie',
+      'الإنترلينج',
+    ),
+    'ig': Language(
+      'ig',
+      'الإيجبو',
+    ),
+    'ii': Language(
+      'ii',
+      'السيتشيون يي',
+    ),
+    'ik': Language(
+      'ik',
+      'الإينبياك',
+    ),
+    'ilo': Language(
+      'ilo',
+      'الإيلوكو',
+    ),
+    'inh': Language(
+      'inh',
+      'الإنجوشية',
+    ),
+    'io': Language(
+      'io',
+      'الإيدو',
+    ),
+    'is': Language(
+      'is',
+      'الأيسلندية',
+    ),
+    'it': Language(
+      'it',
+      'الإيطالية',
+    ),
+    'iu': Language(
+      'iu',
+      'الإينكتيتت',
+    ),
+    'ja': Language(
+      'ja',
+      'اليابانية',
+    ),
+    'jbo': Language(
+      'jbo',
+      'اللوجبان',
+    ),
+    'jgo': Language(
+      'jgo',
+      'نغومبا',
+    ),
+    'jmc': Language(
+      'jmc',
+      'الماتشامية',
+    ),
+    'jpr': Language(
+      'jpr',
+      'الفارسية اليهودية',
+    ),
+    'jrb': Language(
+      'jrb',
+      'العربية اليهودية',
+    ),
+    'jv': Language(
+      'jv',
+      'الجاوية',
+    ),
+    'ka': Language(
+      'ka',
+      'الجورجية',
+    ),
+    'kaa': Language(
+      'kaa',
+      'الكارا-كالباك',
+    ),
+    'kab': Language(
+      'kab',
+      'القبيلية',
+    ),
+    'kac': Language(
+      'kac',
+      'الكاتشين',
+    ),
+    'kaj': Language(
+      'kaj',
+      'الجو',
+    ),
+    'kam': Language(
+      'kam',
+      'الكامبا',
+    ),
+    'kaw': Language(
+      'kaw',
+      'الكوي',
+    ),
+    'kbd': Language(
+      'kbd',
+      'الكاباردايان',
+    ),
+    'kbl': Language(
+      'kbl',
+      'كانمبو',
+    ),
+    'kcg': Language(
+      'kcg',
+      'التايابية',
+    ),
+    'kde': Language(
+      'kde',
+      'ماكونده',
+    ),
+    'kea': Language(
+      'kea',
+      'كابوفيرديانو',
+    ),
+    'kfo': Language(
+      'kfo',
+      'الكورو',
+    ),
+    'kg': Language(
+      'kg',
+      'الكونغو',
+    ),
+    'kgp': Language(
+      'kgp',
+      'kgp',
+    ),
+    'kha': Language(
+      'kha',
+      'الكازية',
+    ),
+    'kho': Language(
+      'kho',
+      'الخوتانيز',
+    ),
+    'khq': Language(
+      'khq',
+      'كويرا تشيني',
+    ),
+    'ki': Language(
+      'ki',
+      'الكيكيو',
+    ),
+    'kj': Language(
+      'kj',
+      'الكيونياما',
+    ),
+    'kk': Language(
+      'kk',
+      'الكازاخستانية',
+    ),
+    'kkj': Language(
+      'kkj',
+      'لغة الكاكو',
+    ),
+    'kl': Language(
+      'kl',
+      'الكالاليست',
+    ),
+    'kln': Language(
+      'kln',
+      'كالينجين',
+    ),
+    'km': Language(
+      'km',
+      'الخميرية',
+    ),
+    'kmb': Language(
+      'kmb',
+      'الكيمبندو',
+    ),
+    'kn': Language(
+      'kn',
+      'الكانادا',
+    ),
+    'ko': Language(
+      'ko',
+      'الكورية',
+    ),
+    'koi': Language(
+      'koi',
+      'كومي-بيرماياك',
+    ),
+    'kok': Language(
+      'kok',
+      'الكونكانية',
+    ),
+    'kos': Language(
+      'kos',
+      'الكوسراين',
+    ),
+    'kpe': Language(
+      'kpe',
+      'الكبيل',
+    ),
+    'kr': Language(
+      'kr',
+      'الكانوري',
+    ),
+    'krc': Language(
+      'krc',
+      'الكاراتشاي-بالكار',
+    ),
+    'krl': Language(
+      'krl',
+      'الكاريلية',
+    ),
+    'kru': Language(
+      'kru',
+      'الكوروخ',
+    ),
+    'ks': Language(
+      'ks',
+      'الكشميرية',
+    ),
+    'ksb': Language(
+      'ksb',
+      'شامبالا',
+    ),
+    'ksf': Language(
+      'ksf',
+      'لغة البافيا',
+    ),
+    'ksh': Language(
+      'ksh',
+      'لغة الكولونيان',
+    ),
+    'ku': Language(
+      'ku',
+      'الكردية',
+    ),
+    'kum': Language(
+      'kum',
+      'القموقية',
+    ),
+    'kut': Language(
+      'kut',
+      'الكتيناي',
+    ),
+    'kv': Language(
+      'kv',
+      'الكومي',
+    ),
+    'kw': Language(
+      'kw',
+      'الكورنية',
+    ),
+    'ky': Language(
+      'ky',
+      'القيرغيزية',
+    ),
+    'la': Language(
+      'la',
+      'اللاتينية',
+    ),
+    'lad': Language(
+      'lad',
+      'اللادينو',
+    ),
+    'lag': Language(
+      'lag',
+      'لانجي',
+    ),
+    'lah': Language(
+      'lah',
+      'اللاهندا',
+    ),
+    'lam': Language(
+      'lam',
+      'اللامبا',
+    ),
+    'lb': Language(
+      'lb',
+      'اللكسمبورغية',
+    ),
+    'lez': Language(
+      'lez',
+      'الليزجية',
+    ),
+    'lg': Language(
+      'lg',
+      'الغاندا',
+    ),
+    'li': Language(
+      'li',
+      'الليمبورغية',
+    ),
+    'lij': Language(
+      'lij',
+      'lij',
+    ),
+    'lkt': Language(
+      'lkt',
+      'لاكوتا',
+    ),
+    'ln': Language(
+      'ln',
+      'اللينجالا',
+    ),
+    'lo': Language(
+      'lo',
+      'اللاوية',
+    ),
+    'lol': Language(
+      'lol',
+      'منغولى',
+    ),
+    'lou': Language(
+      'lou',
+      'الكريولية اللويزيانية',
+    ),
+    'loz': Language(
+      'loz',
+      'اللوزي',
+    ),
+    'lrc': Language(
+      'lrc',
+      'اللرية الشمالية',
+    ),
+    'lt': Language(
+      'lt',
+      'الليتوانية',
+    ),
+    'lu': Language(
+      'lu',
+      'اللوبا كاتانغا',
+    ),
+    'lua': Language(
+      'lua',
+      'اللبا-لؤلؤ',
+    ),
+    'lui': Language(
+      'lui',
+      'اللوسينو',
+    ),
+    'lun': Language(
+      'lun',
+      'اللوندا',
+    ),
+    'luo': Language(
+      'luo',
+      'اللو',
+    ),
+    'lus': Language(
+      'lus',
+      'الميزو',
+    ),
+    'luy': Language(
+      'luy',
+      'لغة اللويا',
+    ),
+    'lv': Language(
+      'lv',
+      'اللاتفية',
+    ),
+    'mad': Language(
+      'mad',
+      'المادريز',
+    ),
+    'mag': Language(
+      'mag',
+      'الماجا',
+    ),
+    'mai': Language(
+      'mai',
+      'المايثيلي',
+    ),
+    'mak': Language(
+      'mak',
+      'الماكاسار',
+    ),
+    'man': Language(
+      'man',
+      'الماندينغ',
+    ),
+    'mas': Language(
+      'mas',
+      'الماساي',
+    ),
+    'mde': Language(
+      'mde',
+      'مابا',
+    ),
+    'mdf': Language(
+      'mdf',
+      'الموكشا',
+    ),
+    'mdr': Language(
+      'mdr',
+      'الماندار',
+    ),
+    'men': Language(
+      'men',
+      'الميند',
+    ),
+    'mer': Language(
+      'mer',
+      'الميرو',
+    ),
+    'mfe': Language(
+      'mfe',
+      'المورسيانية',
+    ),
+    'mg': Language(
+      'mg',
+      'الملغاشي',
+    ),
+    'mga': Language(
+      'mga',
+      'الأيرلندية الوسطى',
+    ),
+    'mgh': Language(
+      'mgh',
+      'ماخاوا-ميتو',
+    ),
+    'mgo': Language(
+      'mgo',
+      'ميتا',
+    ),
+    'mh': Language(
+      'mh',
+      'المارشالية',
+    ),
+    'mi': Language(
+      'mi',
+      'الماورية',
+    ),
+    'mic': Language(
+      'mic',
+      'الميكماكيونية',
+    ),
+    'min': Language(
+      'min',
+      'المينانجكاباو',
+    ),
+    'mk': Language(
+      'mk',
+      'المقدونية',
+    ),
+    'ml': Language(
+      'ml',
+      'المالايالامية',
+    ),
+    'mn': Language(
+      'mn',
+      'المنغولية',
+    ),
+    'mnc': Language(
+      'mnc',
+      'المانشو',
+    ),
+    'mni': Language(
+      'mni',
+      'المانيبورية',
+    ),
+    'moh': Language(
+      'moh',
+      'الموهوك',
+    ),
+    'mos': Language(
+      'mos',
+      'الموسي',
+    ),
+    'mr': Language(
+      'mr',
+      'الماراثية',
+    ),
+    'ms': Language(
+      'ms',
+      'الماليزية',
+    ),
+    'mt': Language(
+      'mt',
+      'المالطية',
+    ),
+    'mua': Language(
+      'mua',
+      'مندنج',
+    ),
+    'mul': Language(
+      'mul',
+      'لغات متعددة',
+    ),
+    'mus': Language(
+      'mus',
+      'الكريك',
+    ),
+    'mwl': Language(
+      'mwl',
+      'الميرانديز',
+    ),
+    'mwr': Language(
+      'mwr',
+      'الماروارية',
+    ),
+    'my': Language(
+      'my',
+      'البورمية',
+    ),
+    'myv': Language(
+      'myv',
+      'الأرزية',
+    ),
+    'mzn': Language(
+      'mzn',
+      'المازندرانية',
+    ),
+    'na': Language(
+      'na',
+      'النورو',
+    ),
+    'nan': Language(
+      'nan',
+      'مين-نان الصينية',
+    ),
+    'nap': Language(
+      'nap',
+      'النابولية',
+    ),
+    'naq': Language(
+      'naq',
+      'لغة الناما',
+    ),
+    'nb': Language(
+      'nb',
+      'النرويجية بوكمال',
+    ),
+    'nd': Language(
+      'nd',
+      'النديبيل الشمالية',
+    ),
+    'nds': Language(
+      'nds',
+      'الألمانية السفلى',
+    ),
+    'nds-NL': Language(
+      'nds-NL',
+      'السكسونية السفلى',
+    ),
+    'ne': Language(
+      'ne',
+      'النيبالية',
+    ),
+    'new': Language(
+      'new',
+      'النوارية',
+    ),
+    'ng': Language(
+      'ng',
+      'الندونجا',
+    ),
+    'nia': Language(
+      'nia',
+      'النياس',
+    ),
+    'niu': Language(
+      'niu',
+      'النيوي',
+    ),
+    'nl': Language(
+      'nl',
+      'الهولندية',
+    ),
+    'nl-BE': Language(
+      'nl-BE',
+      'الفلمنكية',
+    ),
+    'nmg': Language(
+      'nmg',
+      'كواسيو',
+    ),
+    'nn': Language(
+      'nn',
+      'النرويجية نينورسك',
+    ),
+    'nnh': Language(
+      'nnh',
+      'لغة النجيمبون',
+    ),
+    'no': Language(
+      'no',
+      'النرويجية',
+    ),
+    'nog': Language(
+      'nog',
+      'النوجاي',
+    ),
+    'non': Language(
+      'non',
+      'النورس القديم',
+    ),
+    'nqo': Language(
+      'nqo',
+      'أنكو',
+    ),
+    'nr': Language(
+      'nr',
+      'النديبيل الجنوبي',
+    ),
+    'nso': Language(
+      'nso',
+      'السوتو الشمالية',
+    ),
+    'nus': Language(
+      'nus',
+      'النوير',
+    ),
+    'nv': Language(
+      'nv',
+      'النافاجو',
+    ),
+    'nwc': Language(
+      'nwc',
+      'النوارية التقليدية',
+    ),
+    'ny': Language(
+      'ny',
+      'النيانجا',
+    ),
+    'nym': Language(
+      'nym',
+      'النيامويزي',
+    ),
+    'nyn': Language(
+      'nyn',
+      'النيانكول',
+    ),
+    'nyo': Language(
+      'nyo',
+      'النيورو',
+    ),
+    'nzi': Language(
+      'nzi',
+      'النزيما',
+    ),
+    'oc': Language(
+      'oc',
+      'الأوكسيتانية',
+    ),
+    'oj': Language(
+      'oj',
+      'الأوجيبوا',
+    ),
+    'om': Language(
+      'om',
+      'الأورومية',
+    ),
+    'or': Language(
+      'or',
+      'الأورية',
+    ),
+    'os': Language(
+      'os',
+      'الأوسيتيك',
+    ),
+    'osa': Language(
+      'osa',
+      'الأوساج',
+    ),
+    'ota': Language(
+      'ota',
+      'التركية العثمانية',
+    ),
+    'pa': Language(
+      'pa',
+      'البنجابية',
+    ),
+    'pag': Language(
+      'pag',
+      'البانجاسينان',
+    ),
+    'pal': Language(
+      'pal',
+      'البهلوية',
+    ),
+    'pam': Language(
+      'pam',
+      'البامبانجا',
+    ),
+    'pap': Language(
+      'pap',
+      'البابيامينتو',
+    ),
+    'pau': Language(
+      'pau',
+      'البالوان',
+    ),
+    'pcm': Language(
+      'pcm',
+      'البدجنية النيجيرية',
+    ),
+    'peo': Language(
+      'peo',
+      'الفارسية القديمة',
+    ),
+    'phn': Language(
+      'phn',
+      'الفينيقية',
+    ),
+    'pi': Language(
+      'pi',
+      'البالية',
+    ),
+    'pl': Language(
+      'pl',
+      'البولندية',
+    ),
+    'pon': Language(
+      'pon',
+      'البوهنبيايان',
+    ),
+    'prg': Language(
+      'prg',
+      'البروسياوية',
+    ),
+    'pro': Language(
+      'pro',
+      'البروفانسية القديمة',
+    ),
+    'ps': Language(
+      'ps',
+      'البشتو',
+      variant: 'بشتو',
+    ),
+    'pt': Language(
+      'pt',
+      'البرتغالية',
+    ),
+    'pt-BR': Language(
+      'pt-BR',
+      'البرتغالية البرازيلية',
+    ),
+    'pt-PT': Language(
+      'pt-PT',
+      'البرتغالية الأوروبية',
+    ),
+    'qu': Language(
+      'qu',
+      'الكويتشوا',
+    ),
+    'quc': Language(
+      'quc',
+      'الكيشية',
+    ),
+    'raj': Language(
+      'raj',
+      'الراجاسثانية',
+    ),
+    'rap': Language(
+      'rap',
+      'الراباني',
+    ),
+    'rar': Language(
+      'rar',
+      'الراروتونجاني',
+    ),
+    'rm': Language(
+      'rm',
+      'الرومانشية',
+    ),
+    'rn': Language(
+      'rn',
+      'الرندي',
+    ),
+    'ro': Language(
+      'ro',
+      'الرومانية',
+    ),
+    'ro-MD': Language(
+      'ro-MD',
+      'المولدوفية',
+    ),
+    'rof': Language(
+      'rof',
+      'الرومبو',
+    ),
+    'rom': Language(
+      'rom',
+      'الغجرية',
+    ),
+    'ru': Language(
+      'ru',
+      'الروسية',
+    ),
+    'rup': Language(
+      'rup',
+      'الأرومانيان',
+    ),
+    'rw': Language(
+      'rw',
+      'الكينيارواندا',
+    ),
+    'rwk': Language(
+      'rwk',
+      'الروا',
+    ),
+    'sa': Language(
+      'sa',
+      'السنسكريتية',
+    ),
+    'sad': Language(
+      'sad',
+      'السانداوي',
+    ),
+    'sah': Language(
+      'sah',
+      'الساخيّة',
+    ),
+    'sam': Language(
+      'sam',
+      'الآرامية السامرية',
+    ),
+    'saq': Language(
+      'saq',
+      'سامبورو',
+    ),
+    'sas': Language(
+      'sas',
+      'الساساك',
+    ),
+    'sat': Language(
+      'sat',
+      'السانتالية',
+    ),
+    'sba': Language(
+      'sba',
+      'نامبي',
+    ),
+    'sbp': Language(
+      'sbp',
+      'سانغو',
+    ),
+    'sc': Language(
+      'sc',
+      'السردينية',
+    ),
+    'scn': Language(
+      'scn',
+      'الصقلية',
+    ),
+    'sco': Language(
+      'sco',
+      'الأسكتلندية',
+    ),
+    'sd': Language(
+      'sd',
+      'السندية',
+    ),
+    'sdh': Language(
+      'sdh',
+      'الكردية الجنوبية',
+    ),
+    'se': Language(
+      'se',
+      'سامي الشمالية',
+    ),
+    'see': Language(
+      'see',
+      'السنيكا',
+    ),
+    'seh': Language(
+      'seh',
+      'سينا',
+    ),
+    'sel': Language(
+      'sel',
+      'السيلكب',
+    ),
+    'ses': Language(
+      'ses',
+      'كويرابورو سيني',
+    ),
+    'sg': Language(
+      'sg',
+      'السانجو',
+    ),
+    'sga': Language(
+      'sga',
+      'الأيرلندية القديمة',
+    ),
+    'sh': Language(
+      'sh',
+      'صربية-كرواتية',
+    ),
+    'shi': Language(
+      'shi',
+      'تشلحيت',
+    ),
+    'shn': Language(
+      'shn',
+      'الشان',
+    ),
+    'shu': Language(
+      'shu',
+      'العربية التشادية',
+    ),
+    'si': Language(
+      'si',
+      'السنهالية',
+    ),
+    'sid': Language(
+      'sid',
+      'السيدامو',
+    ),
+    'sk': Language(
+      'sk',
+      'السلوفاكية',
+    ),
+    'sl': Language(
+      'sl',
+      'السلوفانية',
+    ),
+    'sm': Language(
+      'sm',
+      'الساموائية',
+    ),
+    'sma': Language(
+      'sma',
+      'السامي الجنوبي',
+    ),
+    'smj': Language(
+      'smj',
+      'اللول سامي',
+    ),
+    'smn': Language(
+      'smn',
+      'الإيناري سامي',
+    ),
+    'sms': Language(
+      'sms',
+      'السكولت سامي',
+    ),
+    'sn': Language(
+      'sn',
+      'الشونا',
+    ),
+    'snk': Language(
+      'snk',
+      'السونينك',
+    ),
+    'so': Language(
+      'so',
+      'الصومالية',
+    ),
+    'sog': Language(
+      'sog',
+      'السوجدين',
+    ),
+    'sq': Language(
+      'sq',
+      'الألبانية',
+    ),
+    'sr': Language(
+      'sr',
+      'الصربية',
+    ),
+    'srn': Language(
+      'srn',
+      'السرانان تونجو',
+    ),
+    'srr': Language(
+      'srr',
+      'السرر',
+    ),
+    'ss': Language(
+      'ss',
+      'السواتي',
+    ),
+    'ssy': Language(
+      'ssy',
+      'لغة الساهو',
+    ),
+    'st': Language(
+      'st',
+      'السوتو الجنوبية',
+    ),
+    'su': Language(
+      'su',
+      'السوندانية',
+    ),
+    'suk': Language(
+      'suk',
+      'السوكوما',
+    ),
+    'sus': Language(
+      'sus',
+      'السوسو',
+    ),
+    'sux': Language(
+      'sux',
+      'السومارية',
+    ),
+    'sv': Language(
+      'sv',
+      'السويدية',
+    ),
+    'sw': Language(
+      'sw',
+      'السواحلية',
+    ),
+    'sw-CD': Language(
+      'sw-CD',
+      'الكونغو السواحلية',
+    ),
+    'swb': Language(
+      'swb',
+      'القمرية',
+    ),
+    'syc': Language(
+      'syc',
+      'سريانية تقليدية',
+    ),
+    'syr': Language(
+      'syr',
+      'السريانية',
+    ),
+    'ta': Language(
+      'ta',
+      'التاميلية',
+    ),
+    'te': Language(
+      'te',
+      'التيلوغوية',
+    ),
+    'tem': Language(
+      'tem',
+      'التيمن',
+    ),
+    'teo': Language(
+      'teo',
+      'تيسو',
+    ),
+    'ter': Language(
+      'ter',
+      'التيرينو',
+    ),
+    'tet': Language(
+      'tet',
+      'التيتم',
+    ),
+    'tg': Language(
+      'tg',
+      'الطاجيكية',
+    ),
+    'th': Language(
+      'th',
+      'التايلاندية',
+    ),
+    'ti': Language(
+      'ti',
+      'التغرينية',
+    ),
+    'tig': Language(
+      'tig',
+      'التيغرية',
+    ),
+    'tiv': Language(
+      'tiv',
+      'التيف',
+    ),
+    'tk': Language(
+      'tk',
+      'التركمانية',
+    ),
+    'tkl': Language(
+      'tkl',
+      'التوكيلاو',
+    ),
+    'tl': Language(
+      'tl',
+      'التاغالوغية',
+    ),
+    'tlh': Language(
+      'tlh',
+      'الكلينجون',
+    ),
+    'tli': Language(
+      'tli',
+      'التلينغيتية',
+    ),
+    'tmh': Language(
+      'tmh',
+      'التاماشيك',
+    ),
+    'tn': Language(
+      'tn',
+      'التسوانية',
+    ),
+    'to': Language(
+      'to',
+      'التونغية',
+    ),
+    'tog': Language(
+      'tog',
+      'تونجا - نياسا',
+    ),
+    'tpi': Language(
+      'tpi',
+      'التوك بيسين',
+    ),
+    'tr': Language(
+      'tr',
+      'التركية',
+    ),
+    'trv': Language(
+      'trv',
+      'لغة التاروكو',
+    ),
+    'ts': Language(
+      'ts',
+      'السونجا',
+    ),
+    'tsi': Language(
+      'tsi',
+      'التسيمشيان',
+    ),
+    'tt': Language(
+      'tt',
+      'التترية',
+    ),
+    'tum': Language(
+      'tum',
+      'التامبوكا',
+    ),
+    'tvl': Language(
+      'tvl',
+      'التوفالو',
+    ),
+    'tw': Language(
+      'tw',
+      'التوي',
+    ),
+    'twq': Language(
+      'twq',
+      'تاساواق',
+    ),
+    'ty': Language(
+      'ty',
+      'التاهيتية',
+    ),
+    'tyv': Language(
+      'tyv',
+      'التوفية',
+    ),
+    'tzm': Language(
+      'tzm',
+      'الأمازيغية وسط الأطلس',
+    ),
+    'udm': Language(
+      'udm',
+      'الأدمرت',
+    ),
+    'ug': Language(
+      'ug',
+      'الأويغورية',
+      variant: 'الأيغورية',
+    ),
+    'uga': Language(
+      'uga',
+      'اليجاريتيك',
+    ),
+    'uk': Language(
+      'uk',
+      'الأوكرانية',
+    ),
+    'umb': Language(
+      'umb',
+      'الأمبندو',
+    ),
+    'und': Language(
+      'und',
+      'لغة غير معروفة',
+    ),
+    'ur': Language(
+      'ur',
+      'الأوردية',
+    ),
+    'uz': Language(
+      'uz',
+      'الأوزبكية',
+    ),
+    'vai': Language(
+      'vai',
+      'الفاي',
+    ),
+    've': Language(
+      've',
+      'الفيندا',
+    ),
+    'vi': Language(
+      'vi',
+      'الفيتنامية',
+    ),
+    'vo': Language(
+      'vo',
+      'لغة الفولابوك',
+    ),
+    'vot': Language(
+      'vot',
+      'الفوتيك',
+    ),
+    'vun': Language(
+      'vun',
+      'الفونجو',
+    ),
+    'wa': Language(
+      'wa',
+      'الولونية',
+    ),
+    'wae': Language(
+      'wae',
+      'الوالسر',
+    ),
+    'wal': Language(
+      'wal',
+      'الولاياتا',
+    ),
+    'war': Language(
+      'war',
+      'الواراي',
+    ),
+    'was': Language(
+      'was',
+      'الواشو',
+    ),
+    'wbp': Language(
+      'wbp',
+      'وارلبيري',
+    ),
+    'wo': Language(
+      'wo',
+      'الولوفية',
+    ),
+    'wuu': Language(
+      'wuu',
+      'الوو الصينية',
+    ),
+    'xal': Language(
+      'xal',
+      'الكالميك',
+    ),
+    'xh': Language(
+      'xh',
+      'الخوسا',
+    ),
+    'xog': Language(
+      'xog',
+      'السوغا',
+    ),
+    'yao': Language(
+      'yao',
+      'الياو',
+    ),
+    'yap': Language(
+      'yap',
+      'اليابيز',
+    ),
+    'yav': Language(
+      'yav',
+      'يانجبن',
+    ),
+    'ybb': Language(
+      'ybb',
+      'يمبا',
+    ),
+    'yi': Language(
+      'yi',
+      'اليديشية',
+    ),
+    'yo': Language(
+      'yo',
+      'اليوروبا',
+    ),
+    'yue': Language(
+      'yue',
+      'الكَنْتُونية',
+      menu: 'الكَنْتُونية',
+    ),
+    'za': Language(
+      'za',
+      'الزهيونج',
+    ),
+    'zap': Language(
+      'zap',
+      'الزابوتيك',
+    ),
+    'zbl': Language(
+      'zbl',
+      'رموز المعايير الأساسية',
+    ),
+    'zen': Language(
+      'zen',
+      'الزيناجا',
+    ),
+    'zgh': Language(
+      'zgh',
+      'التمازيغية المغربية القياسية',
+    ),
+    'zh': Language(
+      'zh',
+      'الصينية',
+      menu: 'الصينية',
+    ),
+    'zh-Hans': Language(
+      'zh-Hans',
+      'الصينية المبسطة',
+    ),
+    'zh-Hant': Language(
+      'zh-Hant',
+      'الصينية التقليدية',
+    ),
+    'zu': Language(
+      'zu',
+      'الزولو',
+    ),
+    'zun': Language(
+      'zun',
+      'الزونية',
+    ),
+    'zxx': Language(
+      'zxx',
+      'بدون محتوى لغوي',
+    ),
+    'zza': Language(
+      'zza',
+      'زازا',
+    ),
+  }, (key) => key.toLowerCase());
 }
 
 class UnitsAr implements Units {
@@ -7537,7 +9693,7 @@ class TerritoriesAr implements Territories {
       );
 
   @override
-  final countries = <String, Territory>{
+  final countries = CanonicalizedMap<String, String, Territory>.from({
     'AC': Territory(
       'AC',
       'جزيرة أسينشيون',
@@ -8598,5 +10754,5 @@ class TerritoriesAr implements Territories {
       'ZW',
       'زيمبابوي',
     ),
-  };
+  }, (key) => key.toLowerCase());
 }

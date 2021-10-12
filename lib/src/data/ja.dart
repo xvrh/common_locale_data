@@ -1,5 +1,7 @@
+import 'package:collection/collection.dart';
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
+import '../languages.dart';
 import '../shared.dart';
 import '../territories.dart';
 import '../units.dart';
@@ -15,6 +17,10 @@ class CommonLocaleDataJa implements CommonLocaleData {
   @override
   DateFields get date => _dateFields;
 
+  static final _languages = LanguagesJa._();
+  @override
+  Languages get languages => _languages;
+
   static final _units = UnitsJa._();
   @override
   Units get units => _units;
@@ -22,6 +28,2492 @@ class CommonLocaleDataJa implements CommonLocaleData {
   static final _territories = TerritoriesJa._();
   @override
   Territories get territories => _territories;
+}
+
+class LanguagesJa extends Languages {
+  LanguagesJa._();
+
+  @override
+  final languages = CanonicalizedMap<String, String, Language>.from({
+    'aa': Language(
+      'aa',
+      'アファル語',
+    ),
+    'ab': Language(
+      'ab',
+      'アブハズ語',
+    ),
+    'ace': Language(
+      'ace',
+      'アチェ語',
+    ),
+    'ach': Language(
+      'ach',
+      'アチョリ語',
+    ),
+    'ada': Language(
+      'ada',
+      'アダングメ語',
+    ),
+    'ady': Language(
+      'ady',
+      'アディゲ語',
+    ),
+    'ae': Language(
+      'ae',
+      'アヴェスタ語',
+    ),
+    'aeb': Language(
+      'aeb',
+      'チュニジア・アラビア語',
+    ),
+    'af': Language(
+      'af',
+      'アフリカーンス語',
+    ),
+    'afh': Language(
+      'afh',
+      'アフリヒリ語',
+    ),
+    'agq': Language(
+      'agq',
+      'アゲム語',
+    ),
+    'ain': Language(
+      'ain',
+      'アイヌ語',
+    ),
+    'ak': Language(
+      'ak',
+      'アカン語',
+    ),
+    'akk': Language(
+      'akk',
+      'アッカド語',
+    ),
+    'akz': Language(
+      'akz',
+      'アラバマ語',
+    ),
+    'ale': Language(
+      'ale',
+      'アレウト語',
+    ),
+    'aln': Language(
+      'aln',
+      'ゲグ・アルバニア語',
+    ),
+    'alt': Language(
+      'alt',
+      '南アルタイ語',
+    ),
+    'am': Language(
+      'am',
+      'アムハラ語',
+    ),
+    'an': Language(
+      'an',
+      'アラゴン語',
+    ),
+    'ang': Language(
+      'ang',
+      '古英語',
+    ),
+    'anp': Language(
+      'anp',
+      'アンギカ語',
+    ),
+    'ar': Language(
+      'ar',
+      'アラビア語',
+    ),
+    'ar-001': Language(
+      'ar-001',
+      '現代標準アラビア語',
+    ),
+    'arc': Language(
+      'arc',
+      'アラム語',
+    ),
+    'arn': Language(
+      'arn',
+      'マプチェ語',
+    ),
+    'aro': Language(
+      'aro',
+      'アラオナ語',
+    ),
+    'arp': Language(
+      'arp',
+      'アラパホー語',
+    ),
+    'arq': Language(
+      'arq',
+      'アルジェリア・アラビア語',
+    ),
+    'ars': Language(
+      'ars',
+      'ナジュド地方・アラビア語',
+      menu: 'アラビア語（ナジュド地方）',
+    ),
+    'arw': Language(
+      'arw',
+      'アラワク語',
+    ),
+    'ary': Language(
+      'ary',
+      'モロッコ・アラビア語',
+    ),
+    'arz': Language(
+      'arz',
+      'エジプト・アラビア語',
+    ),
+    'as': Language(
+      'as',
+      'アッサム語',
+    ),
+    'asa': Language(
+      'asa',
+      'アス語',
+    ),
+    'ase': Language(
+      'ase',
+      'アメリカ手話',
+    ),
+    'ast': Language(
+      'ast',
+      'アストゥリアス語',
+    ),
+    'av': Language(
+      'av',
+      'アヴァル語',
+    ),
+    'avk': Language(
+      'avk',
+      'コタヴァ',
+    ),
+    'awa': Language(
+      'awa',
+      'アワディー語',
+    ),
+    'ay': Language(
+      'ay',
+      'アイマラ語',
+    ),
+    'az': Language(
+      'az',
+      'アゼルバイジャン語',
+      short: 'アゼリー語',
+    ),
+    'ba': Language(
+      'ba',
+      'バシキール語',
+    ),
+    'bal': Language(
+      'bal',
+      'バルーチー語',
+    ),
+    'ban': Language(
+      'ban',
+      'バリ語',
+    ),
+    'bar': Language(
+      'bar',
+      'バイエルン・オーストリア語',
+    ),
+    'bas': Language(
+      'bas',
+      'バサ語',
+    ),
+    'bax': Language(
+      'bax',
+      'バムン語',
+    ),
+    'bbc': Language(
+      'bbc',
+      'トバ・バタク語',
+    ),
+    'bbj': Language(
+      'bbj',
+      'ゴーマラ語',
+    ),
+    'be': Language(
+      'be',
+      'ベラルーシ語',
+    ),
+    'bej': Language(
+      'bej',
+      'ベジャ語',
+    ),
+    'bem': Language(
+      'bem',
+      'ベンバ語',
+    ),
+    'bew': Language(
+      'bew',
+      'ベタウィ語',
+    ),
+    'bez': Language(
+      'bez',
+      'ベナ語',
+    ),
+    'bfd': Language(
+      'bfd',
+      'バフット語',
+    ),
+    'bfq': Language(
+      'bfq',
+      'バダガ語',
+    ),
+    'bg': Language(
+      'bg',
+      'ブルガリア語',
+    ),
+    'bgn': Language(
+      'bgn',
+      '西バローチー語',
+    ),
+    'bho': Language(
+      'bho',
+      'ボージュプリー語',
+    ),
+    'bi': Language(
+      'bi',
+      'ビスラマ語',
+    ),
+    'bik': Language(
+      'bik',
+      'ビコル語',
+    ),
+    'bin': Language(
+      'bin',
+      'ビニ語',
+    ),
+    'bjn': Language(
+      'bjn',
+      'バンジャル語',
+    ),
+    'bkm': Language(
+      'bkm',
+      'コム語',
+    ),
+    'bla': Language(
+      'bla',
+      'シクシカ語',
+    ),
+    'bm': Language(
+      'bm',
+      'バンバラ語',
+    ),
+    'bn': Language(
+      'bn',
+      'ベンガル語',
+    ),
+    'bo': Language(
+      'bo',
+      'チベット語',
+    ),
+    'bpy': Language(
+      'bpy',
+      'ビシュヌプリヤ・マニプリ語',
+    ),
+    'bqi': Language(
+      'bqi',
+      'バフティヤーリー語',
+    ),
+    'br': Language(
+      'br',
+      'ブルトン語',
+    ),
+    'bra': Language(
+      'bra',
+      'ブラジ語',
+    ),
+    'brh': Language(
+      'brh',
+      'ブラフイ語',
+    ),
+    'brx': Language(
+      'brx',
+      'ボド語',
+    ),
+    'bs': Language(
+      'bs',
+      'ボスニア語',
+    ),
+    'bss': Language(
+      'bss',
+      'アコース語',
+    ),
+    'bua': Language(
+      'bua',
+      'ブリヤート語',
+    ),
+    'bug': Language(
+      'bug',
+      'ブギ語',
+    ),
+    'bum': Language(
+      'bum',
+      'ブル語',
+    ),
+    'byn': Language(
+      'byn',
+      'ビリン語',
+    ),
+    'byv': Language(
+      'byv',
+      'メドゥンバ語',
+    ),
+    'ca': Language(
+      'ca',
+      'カタロニア語',
+    ),
+    'cad': Language(
+      'cad',
+      'カドー語',
+    ),
+    'car': Language(
+      'car',
+      'カリブ語',
+    ),
+    'cay': Language(
+      'cay',
+      'カユーガ語',
+    ),
+    'cch': Language(
+      'cch',
+      'チャワイ語',
+    ),
+    'ccp': Language(
+      'ccp',
+      'チャクマ語',
+    ),
+    'ce': Language(
+      'ce',
+      'チェチェン語',
+    ),
+    'ceb': Language(
+      'ceb',
+      'セブアノ語',
+    ),
+    'cgg': Language(
+      'cgg',
+      'チガ語',
+    ),
+    'ch': Language(
+      'ch',
+      'チャモロ語',
+    ),
+    'chb': Language(
+      'chb',
+      'チブチャ語',
+    ),
+    'chg': Language(
+      'chg',
+      'チャガタイ語',
+    ),
+    'chk': Language(
+      'chk',
+      'チューク語',
+    ),
+    'chm': Language(
+      'chm',
+      'マリ語',
+    ),
+    'chn': Language(
+      'chn',
+      'チヌーク混成語',
+    ),
+    'cho': Language(
+      'cho',
+      'チョクトー語',
+    ),
+    'chp': Language(
+      'chp',
+      'チペワイアン語',
+    ),
+    'chr': Language(
+      'chr',
+      'チェロキー語',
+    ),
+    'chy': Language(
+      'chy',
+      'シャイアン語',
+    ),
+    'ckb': Language(
+      'ckb',
+      '中央クルド語',
+      variant: 'クルド語（ソラニー）',
+      menu: 'クルド語（中央）',
+    ),
+    'co': Language(
+      'co',
+      'コルシカ語',
+    ),
+    'cop': Language(
+      'cop',
+      'コプト語',
+    ),
+    'cps': Language(
+      'cps',
+      'カピス語',
+    ),
+    'cr': Language(
+      'cr',
+      'クリー語',
+    ),
+    'crh': Language(
+      'crh',
+      'クリミア・タタール語',
+    ),
+    'crs': Language(
+      'crs',
+      'セーシェル・クレオール語',
+    ),
+    'cs': Language(
+      'cs',
+      'チェコ語',
+    ),
+    'csb': Language(
+      'csb',
+      'カシューブ語',
+    ),
+    'cu': Language(
+      'cu',
+      '教会スラブ語',
+    ),
+    'cv': Language(
+      'cv',
+      'チュヴァシ語',
+    ),
+    'cy': Language(
+      'cy',
+      'ウェールズ語',
+    ),
+    'da': Language(
+      'da',
+      'デンマーク語',
+    ),
+    'dak': Language(
+      'dak',
+      'ダコタ語',
+    ),
+    'dar': Language(
+      'dar',
+      'ダルグワ語',
+    ),
+    'dav': Language(
+      'dav',
+      'タイタ語',
+    ),
+    'de': Language(
+      'de',
+      'ドイツ語',
+    ),
+    'de-AT': Language(
+      'de-AT',
+      'ドイツ語 (オーストリア)',
+    ),
+    'de-CH': Language(
+      'de-CH',
+      '標準ドイツ語 (スイス)',
+    ),
+    'del': Language(
+      'del',
+      'デラウェア語',
+    ),
+    'den': Language(
+      'den',
+      'スレイビー語',
+    ),
+    'dgr': Language(
+      'dgr',
+      'ドグリブ語',
+    ),
+    'din': Language(
+      'din',
+      'ディンカ語',
+    ),
+    'dje': Language(
+      'dje',
+      'ザルマ語',
+    ),
+    'doi': Language(
+      'doi',
+      'ドーグリー語',
+    ),
+    'dsb': Language(
+      'dsb',
+      '低地ソルブ語',
+    ),
+    'dtp': Language(
+      'dtp',
+      '中央ドゥスン語',
+    ),
+    'dua': Language(
+      'dua',
+      'ドゥアラ語',
+    ),
+    'dum': Language(
+      'dum',
+      '中世オランダ語',
+    ),
+    'dv': Language(
+      'dv',
+      'ディベヒ語',
+    ),
+    'dyo': Language(
+      'dyo',
+      'ジョラ＝フォニィ語',
+    ),
+    'dyu': Language(
+      'dyu',
+      'ジュラ語',
+    ),
+    'dz': Language(
+      'dz',
+      'ゾンカ語',
+    ),
+    'dzg': Language(
+      'dzg',
+      'ダザガ語',
+    ),
+    'ebu': Language(
+      'ebu',
+      'エンブ語',
+    ),
+    'ee': Language(
+      'ee',
+      'エウェ語',
+    ),
+    'efi': Language(
+      'efi',
+      'エフィク語',
+    ),
+    'egl': Language(
+      'egl',
+      'エミリア語',
+    ),
+    'egy': Language(
+      'egy',
+      '古代エジプト語',
+    ),
+    'eka': Language(
+      'eka',
+      'エカジュク語',
+    ),
+    'el': Language(
+      'el',
+      'ギリシャ語',
+    ),
+    'elx': Language(
+      'elx',
+      'エラム語',
+    ),
+    'en': Language(
+      'en',
+      '英語',
+    ),
+    'en-AU': Language(
+      'en-AU',
+      'オーストラリア英語',
+    ),
+    'en-CA': Language(
+      'en-CA',
+      'カナダ英語',
+    ),
+    'en-GB': Language(
+      'en-GB',
+      'イギリス英語',
+      short: '英語(英国)',
+    ),
+    'en-US': Language(
+      'en-US',
+      'アメリカ英語',
+      short: '英語(米国)',
+    ),
+    'enm': Language(
+      'enm',
+      '中英語',
+    ),
+    'eo': Language(
+      'eo',
+      'エスペラント語',
+    ),
+    'es': Language(
+      'es',
+      'スペイン語',
+    ),
+    'es-419': Language(
+      'es-419',
+      'スペイン語 (ラテンアメリカ)',
+    ),
+    'es-ES': Language(
+      'es-ES',
+      'スペイン語 (イベリア半島)',
+    ),
+    'es-MX': Language(
+      'es-MX',
+      'スペイン語 (メキシコ)',
+    ),
+    'esu': Language(
+      'esu',
+      '中央アラスカ・ユピック語',
+    ),
+    'et': Language(
+      'et',
+      'エストニア語',
+    ),
+    'eu': Language(
+      'eu',
+      'バスク語',
+    ),
+    'ewo': Language(
+      'ewo',
+      'エウォンド語',
+    ),
+    'ext': Language(
+      'ext',
+      'エストレマドゥーラ語',
+    ),
+    'fa': Language(
+      'fa',
+      'ペルシア語',
+    ),
+    'fa-AF': Language(
+      'fa-AF',
+      'ダリー語',
+    ),
+    'fan': Language(
+      'fan',
+      'ファング語',
+    ),
+    'fat': Language(
+      'fat',
+      'ファンティー語',
+    ),
+    'ff': Language(
+      'ff',
+      'フラ語',
+    ),
+    'fi': Language(
+      'fi',
+      'フィンランド語',
+    ),
+    'fil': Language(
+      'fil',
+      'フィリピノ語',
+    ),
+    'fit': Language(
+      'fit',
+      'トルネダール・フィンランド語',
+    ),
+    'fj': Language(
+      'fj',
+      'フィジー語',
+    ),
+    'fo': Language(
+      'fo',
+      'フェロー語',
+    ),
+    'fon': Language(
+      'fon',
+      'フォン語',
+    ),
+    'fr': Language(
+      'fr',
+      'フランス語',
+    ),
+    'fr-CA': Language(
+      'fr-CA',
+      'フランス語 (カナダ)',
+    ),
+    'fr-CH': Language(
+      'fr-CH',
+      'フランス語 (スイス)',
+    ),
+    'frc': Language(
+      'frc',
+      'ケイジャン・フランス語',
+    ),
+    'frm': Language(
+      'frm',
+      '中期フランス語',
+    ),
+    'fro': Language(
+      'fro',
+      '古フランス語',
+    ),
+    'frp': Language(
+      'frp',
+      'アルピタン語',
+    ),
+    'frr': Language(
+      'frr',
+      '北フリジア語',
+    ),
+    'frs': Language(
+      'frs',
+      '東フリジア語',
+    ),
+    'fur': Language(
+      'fur',
+      'フリウリ語',
+    ),
+    'fy': Language(
+      'fy',
+      '西フリジア語',
+    ),
+    'ga': Language(
+      'ga',
+      'アイルランド語',
+    ),
+    'gaa': Language(
+      'gaa',
+      'ガ語',
+    ),
+    'gag': Language(
+      'gag',
+      'ガガウズ語',
+    ),
+    'gan': Language(
+      'gan',
+      '贛語',
+    ),
+    'gay': Language(
+      'gay',
+      'ガヨ語',
+    ),
+    'gba': Language(
+      'gba',
+      'バヤ語',
+    ),
+    'gbz': Language(
+      'gbz',
+      'ダリー語(ゾロアスター教)',
+    ),
+    'gd': Language(
+      'gd',
+      'スコットランド・ゲール語',
+    ),
+    'gez': Language(
+      'gez',
+      'ゲエズ語',
+    ),
+    'gil': Language(
+      'gil',
+      'キリバス語',
+    ),
+    'gl': Language(
+      'gl',
+      'ガリシア語',
+    ),
+    'glk': Language(
+      'glk',
+      'ギラキ語',
+    ),
+    'gmh': Language(
+      'gmh',
+      '中高ドイツ語',
+    ),
+    'gn': Language(
+      'gn',
+      'グアラニー語',
+    ),
+    'goh': Language(
+      'goh',
+      '古高ドイツ語',
+    ),
+    'gom': Language(
+      'gom',
+      'ゴア・コンカニ語',
+    ),
+    'gon': Language(
+      'gon',
+      'ゴーンディー語',
+    ),
+    'gor': Language(
+      'gor',
+      'ゴロンタロ語',
+    ),
+    'got': Language(
+      'got',
+      'ゴート語',
+    ),
+    'grb': Language(
+      'grb',
+      'グレボ語',
+    ),
+    'grc': Language(
+      'grc',
+      '古代ギリシャ語',
+    ),
+    'gsw': Language(
+      'gsw',
+      'スイスドイツ語',
+    ),
+    'gu': Language(
+      'gu',
+      'グジャラート語',
+    ),
+    'guc': Language(
+      'guc',
+      'ワユ語',
+    ),
+    'gur': Language(
+      'gur',
+      'フラフラ語',
+    ),
+    'guz': Language(
+      'guz',
+      'グシイ語',
+    ),
+    'gv': Language(
+      'gv',
+      'マン島語',
+    ),
+    'gwi': Language(
+      'gwi',
+      'グウィッチン語',
+    ),
+    'ha': Language(
+      'ha',
+      'ハウサ語',
+    ),
+    'hai': Language(
+      'hai',
+      'ハイダ語',
+    ),
+    'hak': Language(
+      'hak',
+      '客家語',
+    ),
+    'haw': Language(
+      'haw',
+      'ハワイ語',
+    ),
+    'he': Language(
+      'he',
+      'ヘブライ語',
+    ),
+    'hi': Language(
+      'hi',
+      'ヒンディー語',
+    ),
+    'hif': Language(
+      'hif',
+      'フィジー・ヒンディー語',
+    ),
+    'hil': Language(
+      'hil',
+      'ヒリガイノン語',
+    ),
+    'hit': Language(
+      'hit',
+      'ヒッタイト語',
+    ),
+    'hmn': Language(
+      'hmn',
+      'フモン語',
+    ),
+    'ho': Language(
+      'ho',
+      'ヒリモツ語',
+    ),
+    'hr': Language(
+      'hr',
+      'クロアチア語',
+    ),
+    'hsb': Language(
+      'hsb',
+      '高地ソルブ語',
+    ),
+    'hsn': Language(
+      'hsn',
+      '湘語',
+    ),
+    'ht': Language(
+      'ht',
+      'ハイチ・クレオール語',
+    ),
+    'hu': Language(
+      'hu',
+      'ハンガリー語',
+    ),
+    'hup': Language(
+      'hup',
+      'フパ語',
+    ),
+    'hy': Language(
+      'hy',
+      'アルメニア語',
+    ),
+    'hz': Language(
+      'hz',
+      'ヘレロ語',
+    ),
+    'ia': Language(
+      'ia',
+      'インターリングア',
+    ),
+    'iba': Language(
+      'iba',
+      'イバン語',
+    ),
+    'ibb': Language(
+      'ibb',
+      'イビビオ語',
+    ),
+    'id': Language(
+      'id',
+      'インドネシア語',
+    ),
+    'ie': Language(
+      'ie',
+      'インターリング',
+    ),
+    'ig': Language(
+      'ig',
+      'イボ語',
+    ),
+    'ii': Language(
+      'ii',
+      '四川イ語',
+    ),
+    'ik': Language(
+      'ik',
+      'イヌピアック語',
+    ),
+    'ilo': Language(
+      'ilo',
+      'イロカノ語',
+    ),
+    'inh': Language(
+      'inh',
+      'イングーシ語',
+    ),
+    'io': Language(
+      'io',
+      'イド語',
+    ),
+    'is': Language(
+      'is',
+      'アイスランド語',
+    ),
+    'it': Language(
+      'it',
+      'イタリア語',
+    ),
+    'iu': Language(
+      'iu',
+      'イヌクティトット語',
+    ),
+    'izh': Language(
+      'izh',
+      'イングリア語',
+    ),
+    'ja': Language(
+      'ja',
+      '日本語',
+    ),
+    'jam': Language(
+      'jam',
+      'ジャマイカ・クレオール語',
+    ),
+    'jbo': Language(
+      'jbo',
+      'ロジバン語',
+    ),
+    'jgo': Language(
+      'jgo',
+      'ンゴンバ語',
+    ),
+    'jmc': Language(
+      'jmc',
+      'マチャメ語',
+    ),
+    'jpr': Language(
+      'jpr',
+      'ユダヤ・ペルシア語',
+    ),
+    'jrb': Language(
+      'jrb',
+      'ユダヤ・アラビア語',
+    ),
+    'jut': Language(
+      'jut',
+      'ユトランド語',
+    ),
+    'jv': Language(
+      'jv',
+      'ジャワ語',
+    ),
+    'ka': Language(
+      'ka',
+      'ジョージア語',
+    ),
+    'kaa': Language(
+      'kaa',
+      'カラカルパク語',
+    ),
+    'kab': Language(
+      'kab',
+      'カビル語',
+    ),
+    'kac': Language(
+      'kac',
+      'カチン語',
+    ),
+    'kaj': Language(
+      'kaj',
+      'カジェ語',
+    ),
+    'kam': Language(
+      'kam',
+      'カンバ語',
+    ),
+    'kaw': Language(
+      'kaw',
+      'カウィ語',
+    ),
+    'kbd': Language(
+      'kbd',
+      'カバルド語',
+    ),
+    'kbl': Language(
+      'kbl',
+      'カネンブ語',
+    ),
+    'kcg': Language(
+      'kcg',
+      'カタブ語',
+    ),
+    'kde': Language(
+      'kde',
+      'マコンデ語',
+    ),
+    'kea': Language(
+      'kea',
+      'カーボベルデ・クレオール語',
+    ),
+    'ken': Language(
+      'ken',
+      'ニャン語',
+    ),
+    'kfo': Language(
+      'kfo',
+      'コロ語',
+    ),
+    'kg': Language(
+      'kg',
+      'コンゴ語',
+    ),
+    'kgp': Language(
+      'kgp',
+      'カインガング語',
+    ),
+    'kha': Language(
+      'kha',
+      'カシ語',
+    ),
+    'kho': Language(
+      'kho',
+      'コータン語',
+    ),
+    'khq': Language(
+      'khq',
+      'コイラ・チーニ語',
+    ),
+    'khw': Language(
+      'khw',
+      'コワール語',
+    ),
+    'ki': Language(
+      'ki',
+      'キクユ語',
+    ),
+    'kiu': Language(
+      'kiu',
+      'キルマンジュキ語',
+    ),
+    'kj': Language(
+      'kj',
+      'クワニャマ語',
+    ),
+    'kk': Language(
+      'kk',
+      'カザフ語',
+    ),
+    'kkj': Language(
+      'kkj',
+      'カコ語',
+    ),
+    'kl': Language(
+      'kl',
+      'グリーンランド語',
+    ),
+    'kln': Language(
+      'kln',
+      'カレンジン語',
+    ),
+    'km': Language(
+      'km',
+      'クメール語',
+    ),
+    'kmb': Language(
+      'kmb',
+      'キンブンド語',
+    ),
+    'kn': Language(
+      'kn',
+      'カンナダ語',
+    ),
+    'ko': Language(
+      'ko',
+      '韓国語',
+    ),
+    'koi': Language(
+      'koi',
+      'コミ・ペルミャク語',
+    ),
+    'kok': Language(
+      'kok',
+      'コンカニ語',
+    ),
+    'kos': Language(
+      'kos',
+      'コスラエ語',
+    ),
+    'kpe': Language(
+      'kpe',
+      'クペレ語',
+    ),
+    'kr': Language(
+      'kr',
+      'カヌリ語',
+    ),
+    'krc': Language(
+      'krc',
+      'カラチャイ・バルカル語',
+    ),
+    'kri': Language(
+      'kri',
+      'クリオ語',
+    ),
+    'krj': Language(
+      'krj',
+      'キナライア語',
+    ),
+    'krl': Language(
+      'krl',
+      'カレリア語',
+    ),
+    'kru': Language(
+      'kru',
+      'クルク語',
+    ),
+    'ks': Language(
+      'ks',
+      'カシミール語',
+    ),
+    'ksb': Language(
+      'ksb',
+      'サンバー語',
+    ),
+    'ksf': Language(
+      'ksf',
+      'バフィア語',
+    ),
+    'ksh': Language(
+      'ksh',
+      'ケルン語',
+    ),
+    'ku': Language(
+      'ku',
+      'クルド語',
+    ),
+    'kum': Language(
+      'kum',
+      'クムク語',
+    ),
+    'kut': Language(
+      'kut',
+      'クテナイ語',
+    ),
+    'kv': Language(
+      'kv',
+      'コミ語',
+    ),
+    'kw': Language(
+      'kw',
+      'コーンウォール語',
+    ),
+    'ky': Language(
+      'ky',
+      'キルギス語',
+    ),
+    'la': Language(
+      'la',
+      'ラテン語',
+    ),
+    'lad': Language(
+      'lad',
+      'ラディノ語',
+    ),
+    'lag': Language(
+      'lag',
+      'ランギ語',
+    ),
+    'lah': Language(
+      'lah',
+      'ラフンダー語',
+    ),
+    'lam': Language(
+      'lam',
+      'ランバ語',
+    ),
+    'lb': Language(
+      'lb',
+      'ルクセンブルク語',
+    ),
+    'lez': Language(
+      'lez',
+      'レズギ語',
+    ),
+    'lfn': Language(
+      'lfn',
+      'リングア・フランカ・ノバ',
+    ),
+    'lg': Language(
+      'lg',
+      'ガンダ語',
+    ),
+    'li': Language(
+      'li',
+      'リンブルフ語',
+    ),
+    'lij': Language(
+      'lij',
+      'リグリア語',
+    ),
+    'liv': Language(
+      'liv',
+      'リヴォニア語',
+    ),
+    'lkt': Language(
+      'lkt',
+      'ラコタ語',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ロンバルド語',
+    ),
+    'ln': Language(
+      'ln',
+      'リンガラ語',
+    ),
+    'lo': Language(
+      'lo',
+      'ラオ語',
+    ),
+    'lol': Language(
+      'lol',
+      'モンゴ語',
+    ),
+    'lou': Language(
+      'lou',
+      'ルイジアナ・クレオール語',
+    ),
+    'loz': Language(
+      'loz',
+      'ロジ語',
+    ),
+    'lrc': Language(
+      'lrc',
+      '北ロル語',
+    ),
+    'lt': Language(
+      'lt',
+      'リトアニア語',
+    ),
+    'ltg': Language(
+      'ltg',
+      'ラトガリア語',
+    ),
+    'lu': Language(
+      'lu',
+      'ルバ・カタンガ語',
+    ),
+    'lua': Language(
+      'lua',
+      'ルバ・ルルア語',
+    ),
+    'lui': Language(
+      'lui',
+      'ルイセーニョ語',
+    ),
+    'lun': Language(
+      'lun',
+      'ルンダ語',
+    ),
+    'luo': Language(
+      'luo',
+      'ルオ語',
+    ),
+    'lus': Language(
+      'lus',
+      'ミゾ語',
+    ),
+    'luy': Language(
+      'luy',
+      'ルヒヤ語',
+    ),
+    'lv': Language(
+      'lv',
+      'ラトビア語',
+    ),
+    'lzh': Language(
+      'lzh',
+      '漢文',
+    ),
+    'lzz': Language(
+      'lzz',
+      'ラズ語',
+    ),
+    'mad': Language(
+      'mad',
+      'マドゥラ語',
+    ),
+    'maf': Language(
+      'maf',
+      'マファ語',
+    ),
+    'mag': Language(
+      'mag',
+      'マガヒー語',
+    ),
+    'mai': Language(
+      'mai',
+      'マイティリー語',
+    ),
+    'mak': Language(
+      'mak',
+      'マカッサル語',
+    ),
+    'man': Language(
+      'man',
+      'マンディンゴ語',
+    ),
+    'mas': Language(
+      'mas',
+      'マサイ語',
+    ),
+    'mde': Language(
+      'mde',
+      'マバ語',
+    ),
+    'mdf': Language(
+      'mdf',
+      'モクシャ語',
+    ),
+    'mdr': Language(
+      'mdr',
+      'マンダル語',
+    ),
+    'men': Language(
+      'men',
+      'メンデ語',
+    ),
+    'mer': Language(
+      'mer',
+      'メル語',
+    ),
+    'mfe': Language(
+      'mfe',
+      'モーリシャス・クレオール語',
+    ),
+    'mg': Language(
+      'mg',
+      'マダガスカル語',
+    ),
+    'mga': Language(
+      'mga',
+      '中期アイルランド語',
+    ),
+    'mgh': Language(
+      'mgh',
+      'マクア・ミート語',
+    ),
+    'mgo': Language(
+      'mgo',
+      'メタ語',
+    ),
+    'mh': Language(
+      'mh',
+      'マーシャル語',
+    ),
+    'mi': Language(
+      'mi',
+      'マオリ語',
+    ),
+    'mic': Language(
+      'mic',
+      'ミクマク語',
+    ),
+    'min': Language(
+      'min',
+      'ミナンカバウ語',
+    ),
+    'mk': Language(
+      'mk',
+      'マケドニア語',
+    ),
+    'ml': Language(
+      'ml',
+      'マラヤーラム語',
+    ),
+    'mn': Language(
+      'mn',
+      'モンゴル語',
+    ),
+    'mnc': Language(
+      'mnc',
+      '満州語',
+    ),
+    'mni': Language(
+      'mni',
+      'マニプリ語',
+    ),
+    'moh': Language(
+      'moh',
+      'モーホーク語',
+    ),
+    'mos': Language(
+      'mos',
+      'モシ語',
+    ),
+    'mr': Language(
+      'mr',
+      'マラーティー語',
+    ),
+    'mrj': Language(
+      'mrj',
+      '山地マリ語',
+    ),
+    'ms': Language(
+      'ms',
+      'マレー語',
+    ),
+    'mt': Language(
+      'mt',
+      'マルタ語',
+    ),
+    'mua': Language(
+      'mua',
+      'ムンダン語',
+    ),
+    'mul': Language(
+      'mul',
+      '複数言語',
+    ),
+    'mus': Language(
+      'mus',
+      'クリーク語',
+    ),
+    'mwl': Language(
+      'mwl',
+      'ミランダ語',
+    ),
+    'mwr': Language(
+      'mwr',
+      'マールワーリー語',
+    ),
+    'mwv': Language(
+      'mwv',
+      'メンタワイ語',
+    ),
+    'my': Language(
+      'my',
+      'ミャンマー語',
+    ),
+    'mye': Language(
+      'mye',
+      'ミエネ語',
+    ),
+    'myv': Language(
+      'myv',
+      'エルジャ語',
+    ),
+    'mzn': Language(
+      'mzn',
+      'マーザンダラーン語',
+    ),
+    'na': Language(
+      'na',
+      'ナウル語',
+    ),
+    'nan': Language(
+      'nan',
+      '閩南語',
+    ),
+    'nap': Language(
+      'nap',
+      'ナポリ語',
+    ),
+    'naq': Language(
+      'naq',
+      'ナマ語',
+    ),
+    'nb': Language(
+      'nb',
+      'ノルウェー語(ブークモール)',
+    ),
+    'nd': Language(
+      'nd',
+      '北ンデベレ語',
+    ),
+    'nds': Language(
+      'nds',
+      '低地ドイツ語',
+    ),
+    'nds-NL': Language(
+      'nds-NL',
+      '低地ドイツ語 (オランダ)',
+    ),
+    'ne': Language(
+      'ne',
+      'ネパール語',
+    ),
+    'new': Language(
+      'new',
+      'ネワール語',
+    ),
+    'ng': Language(
+      'ng',
+      'ンドンガ語',
+    ),
+    'nia': Language(
+      'nia',
+      'ニアス語',
+    ),
+    'niu': Language(
+      'niu',
+      'ニウーエイ語',
+    ),
+    'njo': Language(
+      'njo',
+      'アオ・ナガ語',
+    ),
+    'nl': Language(
+      'nl',
+      'オランダ語',
+    ),
+    'nl-BE': Language(
+      'nl-BE',
+      'フラマン語',
+    ),
+    'nmg': Language(
+      'nmg',
+      'クワシオ語',
+    ),
+    'nn': Language(
+      'nn',
+      'ノルウェー語(ニーノシュク)',
+    ),
+    'nnh': Language(
+      'nnh',
+      'ンジエムブーン語',
+    ),
+    'no': Language(
+      'no',
+      'ノルウェー語',
+    ),
+    'nog': Language(
+      'nog',
+      'ノガイ語',
+    ),
+    'non': Language(
+      'non',
+      '古ノルド語',
+    ),
+    'nov': Language(
+      'nov',
+      'ノヴィアル',
+    ),
+    'nqo': Language(
+      'nqo',
+      'ンコ語',
+    ),
+    'nr': Language(
+      'nr',
+      '南ンデベレ語',
+    ),
+    'nso': Language(
+      'nso',
+      '北部ソト語',
+    ),
+    'nus': Language(
+      'nus',
+      'ヌエル語',
+    ),
+    'nv': Language(
+      'nv',
+      'ナバホ語',
+    ),
+    'nwc': Language(
+      'nwc',
+      '古典ネワール語',
+    ),
+    'ny': Language(
+      'ny',
+      'ニャンジャ語',
+    ),
+    'nym': Language(
+      'nym',
+      'ニャムウェジ語',
+    ),
+    'nyn': Language(
+      'nyn',
+      'ニャンコレ語',
+    ),
+    'nyo': Language(
+      'nyo',
+      'ニョロ語',
+    ),
+    'nzi': Language(
+      'nzi',
+      'ンゼマ語',
+    ),
+    'oc': Language(
+      'oc',
+      'オック語',
+    ),
+    'oj': Language(
+      'oj',
+      'オジブウェー語',
+    ),
+    'om': Language(
+      'om',
+      'オロモ語',
+    ),
+    'or': Language(
+      'or',
+      'オディア語',
+    ),
+    'os': Language(
+      'os',
+      'オセット語',
+    ),
+    'osa': Language(
+      'osa',
+      'オセージ語',
+    ),
+    'ota': Language(
+      'ota',
+      'オスマントルコ語',
+    ),
+    'pa': Language(
+      'pa',
+      'パンジャブ語',
+    ),
+    'pag': Language(
+      'pag',
+      'パンガシナン語',
+    ),
+    'pal': Language(
+      'pal',
+      'パフラヴィー語',
+    ),
+    'pam': Language(
+      'pam',
+      'パンパンガ語',
+    ),
+    'pap': Language(
+      'pap',
+      'パピアメント語',
+    ),
+    'pau': Language(
+      'pau',
+      'パラオ語',
+    ),
+    'pcd': Language(
+      'pcd',
+      'ピカルディ語',
+    ),
+    'pcm': Language(
+      'pcm',
+      'ナイジェリア・ピジン語',
+    ),
+    'pdc': Language(
+      'pdc',
+      'ペンシルベニア・ドイツ語',
+    ),
+    'pdt': Language(
+      'pdt',
+      'メノナイト低地ドイツ語',
+    ),
+    'peo': Language(
+      'peo',
+      '古代ペルシア語',
+    ),
+    'pfl': Language(
+      'pfl',
+      'プファルツ語',
+    ),
+    'phn': Language(
+      'phn',
+      'フェニキア語',
+    ),
+    'pi': Language(
+      'pi',
+      'パーリ語',
+    ),
+    'pl': Language(
+      'pl',
+      'ポーランド語',
+    ),
+    'pms': Language(
+      'pms',
+      'ピエモンテ語',
+    ),
+    'pnt': Language(
+      'pnt',
+      'ポントス・ギリシャ語',
+    ),
+    'pon': Language(
+      'pon',
+      'ポンペイ語',
+    ),
+    'prg': Language(
+      'prg',
+      'プロシア語',
+    ),
+    'pro': Language(
+      'pro',
+      '古期プロバンス語',
+    ),
+    'ps': Language(
+      'ps',
+      'パシュトゥー語',
+      variant: 'パシュトゥ語',
+    ),
+    'pt': Language(
+      'pt',
+      'ポルトガル語',
+    ),
+    'pt-BR': Language(
+      'pt-BR',
+      'ポルトガル語 (ブラジル)',
+    ),
+    'pt-PT': Language(
+      'pt-PT',
+      'ポルトガル語 (イベリア半島)',
+    ),
+    'qu': Language(
+      'qu',
+      'ケチュア語',
+    ),
+    'quc': Language(
+      'quc',
+      'キチェ語',
+    ),
+    'qug': Language(
+      'qug',
+      'チンボラソ高地ケチュア語',
+    ),
+    'raj': Language(
+      'raj',
+      'ラージャスターン語',
+    ),
+    'rap': Language(
+      'rap',
+      'ラパヌイ語',
+    ),
+    'rar': Language(
+      'rar',
+      'ラロトンガ語',
+    ),
+    'rgn': Language(
+      'rgn',
+      'ロマーニャ語',
+    ),
+    'rif': Language(
+      'rif',
+      'リーフ語',
+    ),
+    'rm': Language(
+      'rm',
+      'ロマンシュ語',
+    ),
+    'rn': Language(
+      'rn',
+      'ルンディ語',
+    ),
+    'ro': Language(
+      'ro',
+      'ルーマニア語',
+    ),
+    'ro-MD': Language(
+      'ro-MD',
+      'モルダビア語',
+    ),
+    'rof': Language(
+      'rof',
+      'ロンボ語',
+    ),
+    'rom': Language(
+      'rom',
+      'ロマーニー語',
+    ),
+    'rtm': Language(
+      'rtm',
+      'ロツマ語',
+    ),
+    'ru': Language(
+      'ru',
+      'ロシア語',
+    ),
+    'rue': Language(
+      'rue',
+      'ルシン語',
+    ),
+    'rug': Language(
+      'rug',
+      'ロヴィアナ語',
+    ),
+    'rup': Language(
+      'rup',
+      'アルーマニア語',
+    ),
+    'rw': Language(
+      'rw',
+      'キニアルワンダ語',
+    ),
+    'rwk': Language(
+      'rwk',
+      'ルワ語',
+    ),
+    'sa': Language(
+      'sa',
+      'サンスクリット語',
+    ),
+    'sad': Language(
+      'sad',
+      'サンダウェ語',
+    ),
+    'sah': Language(
+      'sah',
+      'サハ語',
+    ),
+    'sam': Language(
+      'sam',
+      'サマリア・アラム語',
+    ),
+    'saq': Language(
+      'saq',
+      'サンブル語',
+    ),
+    'sas': Language(
+      'sas',
+      'ササク語',
+    ),
+    'sat': Language(
+      'sat',
+      'サンターリー語',
+    ),
+    'saz': Language(
+      'saz',
+      'サウラーシュトラ語',
+    ),
+    'sba': Language(
+      'sba',
+      'ンガムバイ語',
+    ),
+    'sbp': Language(
+      'sbp',
+      'サング語',
+    ),
+    'sc': Language(
+      'sc',
+      'サルデーニャ語',
+    ),
+    'scn': Language(
+      'scn',
+      'シチリア語',
+    ),
+    'sco': Language(
+      'sco',
+      'スコットランド語',
+    ),
+    'sd': Language(
+      'sd',
+      'シンド語',
+    ),
+    'sdc': Language(
+      'sdc',
+      'サッサリ・サルデーニャ語',
+    ),
+    'sdh': Language(
+      'sdh',
+      '南部クルド語',
+    ),
+    'se': Language(
+      'se',
+      '北サーミ語',
+    ),
+    'see': Language(
+      'see',
+      'セネカ語',
+    ),
+    'seh': Language(
+      'seh',
+      'セナ語',
+    ),
+    'sei': Language(
+      'sei',
+      'セリ語',
+    ),
+    'sel': Language(
+      'sel',
+      'セリクプ語',
+    ),
+    'ses': Language(
+      'ses',
+      'コイラボロ・センニ語',
+    ),
+    'sg': Language(
+      'sg',
+      'サンゴ語',
+    ),
+    'sga': Language(
+      'sga',
+      '古アイルランド語',
+    ),
+    'sgs': Language(
+      'sgs',
+      'サモギティア語',
+    ),
+    'sh': Language(
+      'sh',
+      'セルボ・クロアチア語',
+    ),
+    'shi': Language(
+      'shi',
+      'タシルハイト語',
+    ),
+    'shn': Language(
+      'shn',
+      'シャン語',
+    ),
+    'shu': Language(
+      'shu',
+      'チャド・アラビア語',
+    ),
+    'si': Language(
+      'si',
+      'シンハラ語',
+    ),
+    'sid': Language(
+      'sid',
+      'シダモ語',
+    ),
+    'sk': Language(
+      'sk',
+      'スロバキア語',
+    ),
+    'sl': Language(
+      'sl',
+      'スロベニア語',
+    ),
+    'sli': Language(
+      'sli',
+      '低シレジア語',
+    ),
+    'sly': Language(
+      'sly',
+      'スラヤール語',
+    ),
+    'sm': Language(
+      'sm',
+      'サモア語',
+    ),
+    'sma': Language(
+      'sma',
+      '南サーミ語',
+    ),
+    'smj': Language(
+      'smj',
+      'ルレ・サーミ語',
+    ),
+    'smn': Language(
+      'smn',
+      'イナリ・サーミ語',
+    ),
+    'sms': Language(
+      'sms',
+      'スコルト・サーミ語',
+    ),
+    'sn': Language(
+      'sn',
+      'ショナ語',
+    ),
+    'snk': Language(
+      'snk',
+      'ソニンケ語',
+    ),
+    'so': Language(
+      'so',
+      'ソマリ語',
+    ),
+    'sog': Language(
+      'sog',
+      'ソグド語',
+    ),
+    'sq': Language(
+      'sq',
+      'アルバニア語',
+    ),
+    'sr': Language(
+      'sr',
+      'セルビア語',
+    ),
+    'srn': Language(
+      'srn',
+      'スリナム語',
+    ),
+    'srr': Language(
+      'srr',
+      'セレル語',
+    ),
+    'ss': Language(
+      'ss',
+      'スワジ語',
+    ),
+    'ssy': Language(
+      'ssy',
+      'サホ語',
+    ),
+    'st': Language(
+      'st',
+      '南部ソト語',
+    ),
+    'stq': Language(
+      'stq',
+      'ザーターフリジア語',
+    ),
+    'su': Language(
+      'su',
+      'スンダ語',
+    ),
+    'suk': Language(
+      'suk',
+      'スクマ語',
+    ),
+    'sus': Language(
+      'sus',
+      'スス語',
+    ),
+    'sux': Language(
+      'sux',
+      'シュメール語',
+    ),
+    'sv': Language(
+      'sv',
+      'スウェーデン語',
+    ),
+    'sw': Language(
+      'sw',
+      'スワヒリ語',
+    ),
+    'sw-CD': Language(
+      'sw-CD',
+      'コンゴ・スワヒリ語',
+    ),
+    'swb': Language(
+      'swb',
+      'コモロ語',
+    ),
+    'syc': Language(
+      'syc',
+      '古典シリア語',
+    ),
+    'syr': Language(
+      'syr',
+      'シリア語',
+    ),
+    'szl': Language(
+      'szl',
+      'シレジア語',
+    ),
+    'ta': Language(
+      'ta',
+      'タミル語',
+    ),
+    'tcy': Language(
+      'tcy',
+      'トゥル語',
+    ),
+    'te': Language(
+      'te',
+      'テルグ語',
+    ),
+    'tem': Language(
+      'tem',
+      'テムネ語',
+    ),
+    'teo': Language(
+      'teo',
+      'テソ語',
+    ),
+    'ter': Language(
+      'ter',
+      'テレーノ語',
+    ),
+    'tet': Language(
+      'tet',
+      'テトゥン語',
+    ),
+    'tg': Language(
+      'tg',
+      'タジク語',
+    ),
+    'th': Language(
+      'th',
+      'タイ語',
+    ),
+    'ti': Language(
+      'ti',
+      'ティグリニア語',
+    ),
+    'tig': Language(
+      'tig',
+      'ティグレ語',
+    ),
+    'tiv': Language(
+      'tiv',
+      'ティブ語',
+    ),
+    'tk': Language(
+      'tk',
+      'トルクメン語',
+    ),
+    'tkl': Language(
+      'tkl',
+      'トケラウ語',
+    ),
+    'tkr': Language(
+      'tkr',
+      'ツァフル語',
+    ),
+    'tl': Language(
+      'tl',
+      'タガログ語',
+    ),
+    'tlh': Language(
+      'tlh',
+      'クリンゴン語',
+    ),
+    'tli': Language(
+      'tli',
+      'トリンギット語',
+    ),
+    'tly': Language(
+      'tly',
+      'タリシュ語',
+    ),
+    'tmh': Language(
+      'tmh',
+      'タマシェク語',
+    ),
+    'tn': Language(
+      'tn',
+      'ツワナ語',
+    ),
+    'to': Language(
+      'to',
+      'トンガ語',
+    ),
+    'tog': Language(
+      'tog',
+      'トンガ語(ニアサ)',
+    ),
+    'tpi': Language(
+      'tpi',
+      'トク・ピシン語',
+    ),
+    'tr': Language(
+      'tr',
+      'トルコ語',
+    ),
+    'tru': Language(
+      'tru',
+      'トゥロヨ語',
+    ),
+    'trv': Language(
+      'trv',
+      'タロコ語',
+    ),
+    'ts': Language(
+      'ts',
+      'ツォンガ語',
+    ),
+    'tsd': Language(
+      'tsd',
+      'ツァコン語',
+    ),
+    'tsi': Language(
+      'tsi',
+      'チムシュ語',
+    ),
+    'tt': Language(
+      'tt',
+      'タタール語',
+    ),
+    'ttt': Language(
+      'ttt',
+      'ムスリム・タタール語',
+    ),
+    'tum': Language(
+      'tum',
+      'トゥンブカ語',
+    ),
+    'tvl': Language(
+      'tvl',
+      'ツバル語',
+    ),
+    'tw': Language(
+      'tw',
+      'トウィ語',
+    ),
+    'twq': Language(
+      'twq',
+      'タサワク語',
+    ),
+    'ty': Language(
+      'ty',
+      'タヒチ語',
+    ),
+    'tyv': Language(
+      'tyv',
+      'トゥヴァ語',
+    ),
+    'tzm': Language(
+      'tzm',
+      '中央アトラス・タマジクト語',
+    ),
+    'udm': Language(
+      'udm',
+      'ウドムルト語',
+    ),
+    'ug': Language(
+      'ug',
+      'ウイグル語',
+      variant: 'ウィグル語',
+    ),
+    'uga': Language(
+      'uga',
+      'ウガリト語',
+    ),
+    'uk': Language(
+      'uk',
+      'ウクライナ語',
+    ),
+    'umb': Language(
+      'umb',
+      'ムブンドゥ語',
+    ),
+    'und': Language(
+      'und',
+      '言語不明',
+    ),
+    'ur': Language(
+      'ur',
+      'ウルドゥー語',
+    ),
+    'uz': Language(
+      'uz',
+      'ウズベク語',
+    ),
+    'vai': Language(
+      'vai',
+      'ヴァイ語',
+    ),
+    've': Language(
+      've',
+      'ベンダ語',
+    ),
+    'vec': Language(
+      'vec',
+      'ヴェネト語',
+    ),
+    'vep': Language(
+      'vep',
+      'ヴェプス語',
+    ),
+    'vi': Language(
+      'vi',
+      'ベトナム語',
+    ),
+    'vls': Language(
+      'vls',
+      '西フラマン語',
+    ),
+    'vmf': Language(
+      'vmf',
+      'マインフランク語',
+    ),
+    'vo': Language(
+      'vo',
+      'ヴォラピュク語',
+    ),
+    'vot': Language(
+      'vot',
+      'ヴォート語',
+    ),
+    'vro': Language(
+      'vro',
+      'ヴォロ語',
+    ),
+    'vun': Language(
+      'vun',
+      'ヴンジョ語',
+    ),
+    'wa': Language(
+      'wa',
+      'ワロン語',
+    ),
+    'wae': Language(
+      'wae',
+      'ヴァリス語',
+    ),
+    'wal': Language(
+      'wal',
+      'ウォライタ語',
+    ),
+    'war': Language(
+      'war',
+      'ワライ語',
+    ),
+    'was': Language(
+      'was',
+      'ワショ語',
+    ),
+    'wbp': Language(
+      'wbp',
+      'ワルピリ語',
+    ),
+    'wo': Language(
+      'wo',
+      'ウォロフ語',
+    ),
+    'wuu': Language(
+      'wuu',
+      '呉語',
+    ),
+    'xal': Language(
+      'xal',
+      'カルムイク語',
+    ),
+    'xh': Language(
+      'xh',
+      'コサ語',
+    ),
+    'xmf': Language(
+      'xmf',
+      'メグレル語',
+    ),
+    'xog': Language(
+      'xog',
+      'ソガ語',
+    ),
+    'yao': Language(
+      'yao',
+      'ヤオ語',
+    ),
+    'yap': Language(
+      'yap',
+      'ヤップ語',
+    ),
+    'yav': Language(
+      'yav',
+      'ヤンベン語',
+    ),
+    'ybb': Language(
+      'ybb',
+      'イエンバ語',
+    ),
+    'yi': Language(
+      'yi',
+      'イディッシュ語',
+    ),
+    'yo': Language(
+      'yo',
+      'ヨルバ語',
+    ),
+    'yrl': Language(
+      'yrl',
+      'ニェエンガトゥ語',
+    ),
+    'yue': Language(
+      'yue',
+      '広東語',
+      menu: '中国語 (広東語)',
+    ),
+    'za': Language(
+      'za',
+      'チワン語',
+    ),
+    'zap': Language(
+      'zap',
+      'サポテカ語',
+    ),
+    'zbl': Language(
+      'zbl',
+      'ブリスシンボル',
+    ),
+    'zea': Language(
+      'zea',
+      'ゼーラント語',
+    ),
+    'zen': Language(
+      'zen',
+      'ゼナガ語',
+    ),
+    'zgh': Language(
+      'zgh',
+      '標準モロッコ タマジクト語',
+    ),
+    'zh': Language(
+      'zh',
+      '中国語',
+      menu: '中国語 (標準語)',
+    ),
+    'zh-Hans': Language(
+      'zh-Hans',
+      '簡体中国語',
+    ),
+    'zh-Hant': Language(
+      'zh-Hant',
+      '繁体中国語',
+    ),
+    'zu': Language(
+      'zu',
+      'ズールー語',
+    ),
+    'zun': Language(
+      'zun',
+      'ズニ語',
+    ),
+    'zxx': Language(
+      'zxx',
+      '言語的内容なし',
+    ),
+    'zza': Language(
+      'zza',
+      'ザザ語',
+    ),
+  }, (key) => key.toLowerCase());
 }
 
 class UnitsJa implements Units {
@@ -4412,7 +6904,7 @@ class TerritoriesJa implements Territories {
       );
 
   @override
-  final countries = <String, Territory>{
+  final countries = CanonicalizedMap<String, String, Territory>.from({
     'AC': Territory(
       'AC',
       'アセンション島',
@@ -5474,5 +7966,5 @@ class TerritoriesJa implements Territories {
       'ZW',
       'ジンバブエ',
     ),
-  };
+  }, (key) => key.toLowerCase());
 }

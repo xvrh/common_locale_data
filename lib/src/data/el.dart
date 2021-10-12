@@ -1,5 +1,7 @@
+import 'package:collection/collection.dart';
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
+import '../languages.dart';
 import '../shared.dart';
 import '../territories.dart';
 import '../units.dart';
@@ -15,6 +17,10 @@ class CommonLocaleDataEl implements CommonLocaleData {
   @override
   DateFields get date => _dateFields;
 
+  static final _languages = LanguagesEl._();
+  @override
+  Languages get languages => _languages;
+
   static final _units = UnitsEl._();
   @override
   Units get units => _units;
@@ -22,6 +28,2146 @@ class CommonLocaleDataEl implements CommonLocaleData {
   static final _territories = TerritoriesEl._();
   @override
   Territories get territories => _territories;
+}
+
+class LanguagesEl extends Languages {
+  LanguagesEl._();
+
+  @override
+  final languages = CanonicalizedMap<String, String, Language>.from({
+    'aa': Language(
+      'aa',
+      'Αφάρ',
+    ),
+    'ab': Language(
+      'ab',
+      'Αμπχαζικά',
+    ),
+    'ace': Language(
+      'ace',
+      'Ατσινιζικά',
+    ),
+    'ach': Language(
+      'ach',
+      'Ακολί',
+    ),
+    'ada': Language(
+      'ada',
+      'Αντάνγκμε',
+    ),
+    'ady': Language(
+      'ady',
+      'Αντιγκέα',
+    ),
+    'ae': Language(
+      'ae',
+      'Αβεστάν',
+    ),
+    'af': Language(
+      'af',
+      'Αφρικάανς',
+    ),
+    'afh': Language(
+      'afh',
+      'Αφριχίλι',
+    ),
+    'agq': Language(
+      'agq',
+      'Αγκέμ',
+    ),
+    'ain': Language(
+      'ain',
+      'Αϊνού',
+    ),
+    'ak': Language(
+      'ak',
+      'Ακάν',
+    ),
+    'akk': Language(
+      'akk',
+      'Ακάντιαν',
+    ),
+    'ale': Language(
+      'ale',
+      'Αλεούτ',
+    ),
+    'alt': Language(
+      'alt',
+      'Νότια Αλτάι',
+    ),
+    'am': Language(
+      'am',
+      'Αμχαρικά',
+    ),
+    'an': Language(
+      'an',
+      'Αραγονικά',
+    ),
+    'ang': Language(
+      'ang',
+      'Παλαιά Αγγλικά',
+    ),
+    'anp': Language(
+      'anp',
+      'Ανγκικά',
+    ),
+    'ar': Language(
+      'ar',
+      'Αραβικά',
+    ),
+    'ar-001': Language(
+      'ar-001',
+      'Σύγχρονα Τυπικά Αραβικά',
+    ),
+    'arc': Language(
+      'arc',
+      'Αραμαϊκά',
+    ),
+    'arn': Language(
+      'arn',
+      'Αραουκανικά',
+    ),
+    'arp': Language(
+      'arp',
+      'Αραπάχο',
+    ),
+    'ars': Language(
+      'ars',
+      'Αραβικά Νάτζντι',
+    ),
+    'arw': Language(
+      'arw',
+      'Αραγουάκ',
+    ),
+    'as': Language(
+      'as',
+      'Ασαμικά',
+    ),
+    'asa': Language(
+      'asa',
+      'Άσου',
+    ),
+    'ast': Language(
+      'ast',
+      'Αστουριανά',
+    ),
+    'av': Language(
+      'av',
+      'Αβαρικά',
+    ),
+    'awa': Language(
+      'awa',
+      'Αγουαντί',
+    ),
+    'ay': Language(
+      'ay',
+      'Αϊμάρα',
+    ),
+    'az': Language(
+      'az',
+      'Αζερμπαϊτζανικά',
+      short: 'Αζερικά',
+    ),
+    'ba': Language(
+      'ba',
+      'Μπασκίρ',
+    ),
+    'bal': Language(
+      'bal',
+      'Μπαλούτσι',
+    ),
+    'ban': Language(
+      'ban',
+      'Μπαλινίζ',
+    ),
+    'bas': Language(
+      'bas',
+      'Μπάσα',
+    ),
+    'bax': Language(
+      'bax',
+      'Μπαμούν',
+    ),
+    'bbj': Language(
+      'bbj',
+      'Γκομάλα',
+    ),
+    'be': Language(
+      'be',
+      'Λευκορωσικά',
+    ),
+    'bej': Language(
+      'bej',
+      'Μπέζα',
+    ),
+    'bem': Language(
+      'bem',
+      'Μπέμπα',
+    ),
+    'bez': Language(
+      'bez',
+      'Μπένα',
+    ),
+    'bfd': Language(
+      'bfd',
+      'Μπαφούτ',
+    ),
+    'bg': Language(
+      'bg',
+      'Βουλγαρικά',
+    ),
+    'bgn': Language(
+      'bgn',
+      'Δυτικά Μπαλοχικά',
+    ),
+    'bho': Language(
+      'bho',
+      'Μπότζπουρι',
+    ),
+    'bi': Language(
+      'bi',
+      'Μπισλάμα',
+    ),
+    'bik': Language(
+      'bik',
+      'Μπικόλ',
+    ),
+    'bin': Language(
+      'bin',
+      'Μπίνι',
+    ),
+    'bkm': Language(
+      'bkm',
+      'Κομ',
+    ),
+    'bla': Language(
+      'bla',
+      'Σικσίκα',
+    ),
+    'bm': Language(
+      'bm',
+      'Μπαμπάρα',
+    ),
+    'bn': Language(
+      'bn',
+      'Βεγγαλικά',
+    ),
+    'bo': Language(
+      'bo',
+      'Θιβετιανά',
+    ),
+    'br': Language(
+      'br',
+      'Βρετονικά',
+    ),
+    'bra': Language(
+      'bra',
+      'Μπρατζ',
+    ),
+    'brx': Language(
+      'brx',
+      'Μπόντο',
+    ),
+    'bs': Language(
+      'bs',
+      'Βοσνιακά',
+    ),
+    'bss': Language(
+      'bss',
+      'Ακόσι',
+    ),
+    'bua': Language(
+      'bua',
+      'Μπουριάτ',
+    ),
+    'bug': Language(
+      'bug',
+      'Μπουγκίζ',
+    ),
+    'bum': Language(
+      'bum',
+      'Μπουλού',
+    ),
+    'byn': Language(
+      'byn',
+      'Μπλιν',
+    ),
+    'byv': Language(
+      'byv',
+      'Μεντούμπα',
+    ),
+    'ca': Language(
+      'ca',
+      'Καταλανικά',
+    ),
+    'cad': Language(
+      'cad',
+      'Κάντο',
+    ),
+    'car': Language(
+      'car',
+      'Καρίμπ',
+    ),
+    'cay': Language(
+      'cay',
+      'Καγιούγκα',
+    ),
+    'cch': Language(
+      'cch',
+      'Ατσάμ',
+    ),
+    'ccp': Language(
+      'ccp',
+      'Τσάκμα',
+    ),
+    'ce': Language(
+      'ce',
+      'Τσετσενικά',
+    ),
+    'ceb': Language(
+      'ceb',
+      'Σεμπουάνο',
+    ),
+    'cgg': Language(
+      'cgg',
+      'Τσίγκα',
+    ),
+    'ch': Language(
+      'ch',
+      'Τσαμόρο',
+    ),
+    'chb': Language(
+      'chb',
+      'Τσίμπτσα',
+    ),
+    'chg': Language(
+      'chg',
+      'Τσαγκατάι',
+    ),
+    'chk': Language(
+      'chk',
+      'Τσουκίζι',
+    ),
+    'chm': Language(
+      'chm',
+      'Μάρι',
+    ),
+    'chn': Language(
+      'chn',
+      'Ιδιωματικά Σινούκ',
+    ),
+    'cho': Language(
+      'cho',
+      'Τσόκτο',
+    ),
+    'chp': Language(
+      'chp',
+      'Τσίπιουαν',
+    ),
+    'chr': Language(
+      'chr',
+      'Τσερόκι',
+    ),
+    'chy': Language(
+      'chy',
+      'Τσεγιέν',
+    ),
+    'ckb': Language(
+      'ckb',
+      'Κουρδικά Σοράνι',
+      variant: 'Κουρδικά Σοράνι',
+      menu: 'Κουρδικά Σοράνι',
+    ),
+    'co': Language(
+      'co',
+      'Κορσικανικά',
+    ),
+    'cop': Language(
+      'cop',
+      'Κοπτικά',
+    ),
+    'cr': Language(
+      'cr',
+      'Κρι',
+    ),
+    'crh': Language(
+      'crh',
+      'Τουρκικά Κριμαίας',
+    ),
+    'crs': Language(
+      'crs',
+      'Κρεολικά Γαλλικά Σεϋχελλών',
+    ),
+    'cs': Language(
+      'cs',
+      'Τσεχικά',
+    ),
+    'csb': Language(
+      'csb',
+      'Κασούμπιαν',
+    ),
+    'cu': Language(
+      'cu',
+      'Εκκλησιαστικά Σλαβικά',
+    ),
+    'cv': Language(
+      'cv',
+      'Τσουβασικά',
+    ),
+    'cy': Language(
+      'cy',
+      'Ουαλικά',
+    ),
+    'da': Language(
+      'da',
+      'Δανικά',
+    ),
+    'dak': Language(
+      'dak',
+      'Ντακότα',
+    ),
+    'dar': Language(
+      'dar',
+      'Ντάργκουα',
+    ),
+    'dav': Language(
+      'dav',
+      'Τάιτα',
+    ),
+    'de': Language(
+      'de',
+      'Γερμανικά',
+    ),
+    'de-AT': Language(
+      'de-AT',
+      'Γερμανικά Αυστρίας',
+    ),
+    'de-CH': Language(
+      'de-CH',
+      'Υψηλά Γερμανικά Ελβετίας',
+    ),
+    'del': Language(
+      'del',
+      'Ντέλαγουερ',
+    ),
+    'den': Language(
+      'den',
+      'Σλαβικά',
+    ),
+    'dgr': Language(
+      'dgr',
+      'Ντόγκριμπ',
+    ),
+    'din': Language(
+      'din',
+      'Ντίνκα',
+    ),
+    'dje': Language(
+      'dje',
+      'Ζάρμα',
+    ),
+    'doi': Language(
+      'doi',
+      'Ντόγκρι',
+    ),
+    'dsb': Language(
+      'dsb',
+      'Κάτω Σορβικά',
+    ),
+    'dua': Language(
+      'dua',
+      'Ντουάλα',
+    ),
+    'dum': Language(
+      'dum',
+      'Μέσα Ολλανδικά',
+    ),
+    'dv': Language(
+      'dv',
+      'Ντιβέχι',
+    ),
+    'dyo': Language(
+      'dyo',
+      'Τζόλα-Φόνι',
+    ),
+    'dyu': Language(
+      'dyu',
+      'Ντογιούλα',
+    ),
+    'dz': Language(
+      'dz',
+      'Ντζόνγκχα',
+    ),
+    'dzg': Language(
+      'dzg',
+      'Νταζάγκα',
+    ),
+    'ebu': Language(
+      'ebu',
+      'Έμπου',
+    ),
+    'ee': Language(
+      'ee',
+      'Έουε',
+    ),
+    'efi': Language(
+      'efi',
+      'Εφίκ',
+    ),
+    'egy': Language(
+      'egy',
+      'Αρχαία Αιγυπτιακά',
+    ),
+    'eka': Language(
+      'eka',
+      'Εκατζούκ',
+    ),
+    'el': Language(
+      'el',
+      'Ελληνικά',
+    ),
+    'elx': Language(
+      'elx',
+      'Ελαμάιτ',
+    ),
+    'en': Language(
+      'en',
+      'Αγγλικά',
+    ),
+    'en-AU': Language(
+      'en-AU',
+      'Αγγλικά Αυστραλίας',
+    ),
+    'en-CA': Language(
+      'en-CA',
+      'Αγγλικά Καναδά',
+    ),
+    'en-GB': Language(
+      'en-GB',
+      'Αγγλικά Βρετανίας',
+      short: 'Αγγλικά ΗΒ',
+    ),
+    'en-US': Language(
+      'en-US',
+      'Αγγλικά Αμερικής',
+      short: 'Αγγλικά ΗΠΑ',
+    ),
+    'enm': Language(
+      'enm',
+      'Μέσα Αγγλικά',
+    ),
+    'eo': Language(
+      'eo',
+      'Εσπεράντο',
+    ),
+    'es': Language(
+      'es',
+      'Ισπανικά',
+    ),
+    'es-419': Language(
+      'es-419',
+      'Ισπανικά Λατινικής Αμερικής',
+    ),
+    'es-ES': Language(
+      'es-ES',
+      'Ισπανικά Ευρώπης',
+    ),
+    'es-MX': Language(
+      'es-MX',
+      'Ισπανικά Μεξικού',
+    ),
+    'et': Language(
+      'et',
+      'Εσθονικά',
+    ),
+    'eu': Language(
+      'eu',
+      'Βασκικά',
+    ),
+    'ewo': Language(
+      'ewo',
+      'Εγουόντο',
+    ),
+    'fa': Language(
+      'fa',
+      'Περσικά',
+    ),
+    'fa-AF': Language(
+      'fa-AF',
+      'Νταρί',
+    ),
+    'fan': Language(
+      'fan',
+      'Φανγκ',
+    ),
+    'fat': Language(
+      'fat',
+      'Φάντι',
+    ),
+    'ff': Language(
+      'ff',
+      'Φουλά',
+    ),
+    'fi': Language(
+      'fi',
+      'Φινλανδικά',
+    ),
+    'fil': Language(
+      'fil',
+      'Φιλιππινικά',
+    ),
+    'fj': Language(
+      'fj',
+      'Φίτζι',
+    ),
+    'fo': Language(
+      'fo',
+      'Φεροϊκά',
+    ),
+    'fon': Language(
+      'fon',
+      'Φον',
+    ),
+    'fr': Language(
+      'fr',
+      'Γαλλικά',
+    ),
+    'fr-CA': Language(
+      'fr-CA',
+      'Γαλλικά Καναδά',
+    ),
+    'fr-CH': Language(
+      'fr-CH',
+      'Γαλλικά Ελβετίας',
+    ),
+    'frc': Language(
+      'frc',
+      'Γαλλικά (Λουιζιάνα)',
+    ),
+    'frm': Language(
+      'frm',
+      'Μέσα Γαλλικά',
+    ),
+    'fro': Language(
+      'fro',
+      'Παλαιά Γαλλικά',
+    ),
+    'frr': Language(
+      'frr',
+      'Βόρεια Φριζιανά',
+    ),
+    'frs': Language(
+      'frs',
+      'Ανατολικά Φριζιανά',
+    ),
+    'fur': Language(
+      'fur',
+      'Φριουλανικά',
+    ),
+    'fy': Language(
+      'fy',
+      'Δυτικά Φριζικά',
+    ),
+    'ga': Language(
+      'ga',
+      'Ιρλανδικά',
+    ),
+    'gaa': Language(
+      'gaa',
+      'Γκα',
+    ),
+    'gag': Language(
+      'gag',
+      'Γκαγκάουζ',
+    ),
+    'gay': Language(
+      'gay',
+      'Γκάγιο',
+    ),
+    'gba': Language(
+      'gba',
+      'Γκμπάγια',
+    ),
+    'gd': Language(
+      'gd',
+      'Σκωτικά Κελτικά',
+    ),
+    'gez': Language(
+      'gez',
+      'Γκιζ',
+    ),
+    'gil': Language(
+      'gil',
+      'Γκιλμπερτίζ',
+    ),
+    'gl': Language(
+      'gl',
+      'Γαλικιανά',
+    ),
+    'gmh': Language(
+      'gmh',
+      'Μέσα Άνω Γερμανικά',
+    ),
+    'gn': Language(
+      'gn',
+      'Γκουαρανί',
+    ),
+    'goh': Language(
+      'goh',
+      'Παλαιά Άνω Γερμανικά',
+    ),
+    'gon': Language(
+      'gon',
+      'Γκόντι',
+    ),
+    'gor': Language(
+      'gor',
+      'Γκοροντάλο',
+    ),
+    'got': Language(
+      'got',
+      'Γοτθικά',
+    ),
+    'grb': Language(
+      'grb',
+      'Γκρίμπο',
+    ),
+    'grc': Language(
+      'grc',
+      'Αρχαία Ελληνικά',
+    ),
+    'gsw': Language(
+      'gsw',
+      'Γερμανικά Ελβετίας',
+    ),
+    'gu': Language(
+      'gu',
+      'Γκουγιαράτι',
+    ),
+    'guz': Language(
+      'guz',
+      'Γκούσι',
+    ),
+    'gv': Language(
+      'gv',
+      'Μανξ',
+    ),
+    'gwi': Language(
+      'gwi',
+      'Γκουίτσιν',
+    ),
+    'ha': Language(
+      'ha',
+      'Χάουσα',
+    ),
+    'hai': Language(
+      'hai',
+      'Χάιντα',
+    ),
+    'haw': Language(
+      'haw',
+      'Χαβαϊκά',
+    ),
+    'he': Language(
+      'he',
+      'Εβραϊκά',
+    ),
+    'hi': Language(
+      'hi',
+      'Χίντι',
+    ),
+    'hil': Language(
+      'hil',
+      'Χιλιγκαϊνόν',
+    ),
+    'hit': Language(
+      'hit',
+      'Χιτίτε',
+    ),
+    'hmn': Language(
+      'hmn',
+      'Χμονγκ',
+    ),
+    'ho': Language(
+      'ho',
+      'Χίρι Μότου',
+    ),
+    'hr': Language(
+      'hr',
+      'Κροατικά',
+    ),
+    'hsb': Language(
+      'hsb',
+      'Άνω Σορβικά',
+    ),
+    'ht': Language(
+      'ht',
+      'Αϊτιανά',
+    ),
+    'hu': Language(
+      'hu',
+      'Ουγγρικά',
+    ),
+    'hup': Language(
+      'hup',
+      'Χούπα',
+    ),
+    'hy': Language(
+      'hy',
+      'Αρμενικά',
+    ),
+    'hz': Language(
+      'hz',
+      'Χερέρο',
+    ),
+    'ia': Language(
+      'ia',
+      'Ιντερλίνγκουα',
+    ),
+    'iba': Language(
+      'iba',
+      'Ιμπάν',
+    ),
+    'ibb': Language(
+      'ibb',
+      'Ιμπίμπιο',
+    ),
+    'id': Language(
+      'id',
+      'Ινδονησιακά',
+    ),
+    'ie': Language(
+      'ie',
+      'Ιντερλίνγκουε',
+    ),
+    'ig': Language(
+      'ig',
+      'Ίγκμπο',
+    ),
+    'ii': Language(
+      'ii',
+      'Σίτσουαν Γι',
+    ),
+    'ik': Language(
+      'ik',
+      'Ινουπιάκ',
+    ),
+    'ilo': Language(
+      'ilo',
+      'Ιλόκο',
+    ),
+    'inh': Language(
+      'inh',
+      'Ινγκούς',
+    ),
+    'io': Language(
+      'io',
+      'Ίντο',
+    ),
+    'is': Language(
+      'is',
+      'Ισλανδικά',
+    ),
+    'it': Language(
+      'it',
+      'Ιταλικά',
+    ),
+    'iu': Language(
+      'iu',
+      'Ινούκτιτουτ',
+    ),
+    'ja': Language(
+      'ja',
+      'Ιαπωνικά',
+    ),
+    'jbo': Language(
+      'jbo',
+      'Λόζμπαν',
+    ),
+    'jgo': Language(
+      'jgo',
+      'Νγκόμπα',
+    ),
+    'jmc': Language(
+      'jmc',
+      'Ματσάμε',
+    ),
+    'jpr': Language(
+      'jpr',
+      'Ιουδαϊκά-Περσικά',
+    ),
+    'jrb': Language(
+      'jrb',
+      'Ιουδαϊκά-Αραβικά',
+    ),
+    'jv': Language(
+      'jv',
+      'Ιαβανικά',
+    ),
+    'ka': Language(
+      'ka',
+      'Γεωργιανά',
+    ),
+    'kaa': Language(
+      'kaa',
+      'Κάρα-Καλπάκ',
+    ),
+    'kab': Language(
+      'kab',
+      'Καμπίλε',
+    ),
+    'kac': Language(
+      'kac',
+      'Κατσίν',
+    ),
+    'kaj': Language(
+      'kaj',
+      'Τζου',
+    ),
+    'kam': Language(
+      'kam',
+      'Κάμπα',
+    ),
+    'kaw': Language(
+      'kaw',
+      'Κάουι',
+    ),
+    'kbd': Language(
+      'kbd',
+      'Καμπαρντιανά',
+    ),
+    'kbl': Language(
+      'kbl',
+      'Κανέμπου',
+    ),
+    'kcg': Language(
+      'kcg',
+      'Τιάπ',
+    ),
+    'kde': Language(
+      'kde',
+      'Μακόντε',
+    ),
+    'kea': Language(
+      'kea',
+      'Γλώσσα του Πράσινου Ακρωτηρίου',
+    ),
+    'kfo': Language(
+      'kfo',
+      'Κόρο',
+    ),
+    'kg': Language(
+      'kg',
+      'Κονγκό',
+    ),
+    'kgp': Language(
+      'kgp',
+      'kgp',
+    ),
+    'kha': Language(
+      'kha',
+      'Κάσι',
+    ),
+    'kho': Language(
+      'kho',
+      'Κοτανικά',
+    ),
+    'khq': Language(
+      'khq',
+      'Κόιρα Τσίνι',
+    ),
+    'ki': Language(
+      'ki',
+      'Κικούγιου',
+    ),
+    'kj': Language(
+      'kj',
+      'Κουανιάμα',
+    ),
+    'kk': Language(
+      'kk',
+      'Καζακικά',
+    ),
+    'kkj': Language(
+      'kkj',
+      'Κάκο',
+    ),
+    'kl': Language(
+      'kl',
+      'Καλαάλισουτ',
+    ),
+    'kln': Language(
+      'kln',
+      'Καλεντζίν',
+    ),
+    'km': Language(
+      'km',
+      'Χμερ',
+    ),
+    'kmb': Language(
+      'kmb',
+      'Κιμπούντου',
+    ),
+    'kn': Language(
+      'kn',
+      'Κανάντα',
+    ),
+    'ko': Language(
+      'ko',
+      'Κορεατικά',
+    ),
+    'koi': Language(
+      'koi',
+      'Κόμι-Περμιάκ',
+    ),
+    'kok': Language(
+      'kok',
+      'Κονκανικά',
+    ),
+    'kos': Language(
+      'kos',
+      'Κοσραενικά',
+    ),
+    'kpe': Language(
+      'kpe',
+      'Κπέλε',
+    ),
+    'kr': Language(
+      'kr',
+      'Κανούρι',
+    ),
+    'krc': Language(
+      'krc',
+      'Καρατσάι-Μπαλκάρ',
+    ),
+    'krl': Language(
+      'krl',
+      'Καρελικά',
+    ),
+    'kru': Language(
+      'kru',
+      'Κουρούχ',
+    ),
+    'ks': Language(
+      'ks',
+      'Κασμιρικά',
+    ),
+    'ksb': Language(
+      'ksb',
+      'Σαμπάλα',
+    ),
+    'ksf': Language(
+      'ksf',
+      'Μπάφια',
+    ),
+    'ksh': Language(
+      'ksh',
+      'Κολωνικά',
+    ),
+    'ku': Language(
+      'ku',
+      'Κουρδικά',
+    ),
+    'kum': Language(
+      'kum',
+      'Κουμγιούκ',
+    ),
+    'kut': Language(
+      'kut',
+      'Κουτενάι',
+    ),
+    'kv': Language(
+      'kv',
+      'Κόμι',
+    ),
+    'kw': Language(
+      'kw',
+      'Κορνουαλικά',
+    ),
+    'ky': Language(
+      'ky',
+      'Κιργιζικά',
+    ),
+    'la': Language(
+      'la',
+      'Λατινικά',
+    ),
+    'lad': Language(
+      'lad',
+      'Λαδίνο',
+    ),
+    'lag': Language(
+      'lag',
+      'Λάνγκι',
+    ),
+    'lah': Language(
+      'lah',
+      'Λάχδα',
+    ),
+    'lam': Language(
+      'lam',
+      'Λάμπα',
+    ),
+    'lb': Language(
+      'lb',
+      'Λουξεμβουργιανά',
+    ),
+    'lez': Language(
+      'lez',
+      'Λεζγκικά',
+    ),
+    'lg': Language(
+      'lg',
+      'Γκάντα',
+    ),
+    'li': Language(
+      'li',
+      'Λιμβουργιανά',
+    ),
+    'lij': Language(
+      'lij',
+      'lij',
+    ),
+    'lkt': Language(
+      'lkt',
+      'Λακότα',
+    ),
+    'ln': Language(
+      'ln',
+      'Λινγκάλα',
+    ),
+    'lo': Language(
+      'lo',
+      'Λαοτινά',
+    ),
+    'lol': Language(
+      'lol',
+      'Μόνγκο',
+    ),
+    'lou': Language(
+      'lou',
+      'Κρεολικά (Λουιζιάνα)',
+    ),
+    'loz': Language(
+      'loz',
+      'Λόζι',
+    ),
+    'lrc': Language(
+      'lrc',
+      'Βόρεια Λούρι',
+    ),
+    'lt': Language(
+      'lt',
+      'Λιθουανικά',
+    ),
+    'lu': Language(
+      'lu',
+      'Λούμπα-Κατάνγκα',
+    ),
+    'lua': Language(
+      'lua',
+      'Λούμπα-Λουλούα',
+    ),
+    'lui': Language(
+      'lui',
+      'Λουισένο',
+    ),
+    'lun': Language(
+      'lun',
+      'Λούντα',
+    ),
+    'luo': Language(
+      'luo',
+      'Λούο',
+    ),
+    'lus': Language(
+      'lus',
+      'Μίζο',
+    ),
+    'luy': Language(
+      'luy',
+      'Λούχια',
+    ),
+    'lv': Language(
+      'lv',
+      'Λετονικά',
+    ),
+    'mad': Language(
+      'mad',
+      'Μαντουρίζ',
+    ),
+    'maf': Language(
+      'maf',
+      'Μάφα',
+    ),
+    'mag': Language(
+      'mag',
+      'Μαγκάχι',
+    ),
+    'mai': Language(
+      'mai',
+      'Μαϊτχίλι',
+    ),
+    'mak': Language(
+      'mak',
+      'Μακασάρ',
+    ),
+    'man': Language(
+      'man',
+      'Μαντίνγκο',
+    ),
+    'mas': Language(
+      'mas',
+      'Μασάι',
+    ),
+    'mde': Language(
+      'mde',
+      'Μάμπα',
+    ),
+    'mdf': Language(
+      'mdf',
+      'Μόκσα',
+    ),
+    'mdr': Language(
+      'mdr',
+      'Μανδάρ',
+    ),
+    'men': Language(
+      'men',
+      'Μέντε',
+    ),
+    'mer': Language(
+      'mer',
+      'Μέρου',
+    ),
+    'mfe': Language(
+      'mfe',
+      'Μορισιέν',
+    ),
+    'mg': Language(
+      'mg',
+      'Μαλγασικά',
+    ),
+    'mga': Language(
+      'mga',
+      'Μέσα Ιρλανδικά',
+    ),
+    'mgh': Language(
+      'mgh',
+      'Μακούβα-Μέτο',
+    ),
+    'mgo': Language(
+      'mgo',
+      'Μέτα',
+    ),
+    'mh': Language(
+      'mh',
+      'Μαρσαλέζικα',
+    ),
+    'mi': Language(
+      'mi',
+      'Μαορί',
+    ),
+    'mic': Language(
+      'mic',
+      'Μικμάκ',
+    ),
+    'min': Language(
+      'min',
+      'Μινανγκαμπάου',
+    ),
+    'mk': Language(
+      'mk',
+      'Σλαβομακεδονικά',
+    ),
+    'ml': Language(
+      'ml',
+      'Μαλαγιαλαμικά',
+    ),
+    'mn': Language(
+      'mn',
+      'Μογγολικά',
+    ),
+    'mnc': Language(
+      'mnc',
+      'Μαντσού',
+    ),
+    'mni': Language(
+      'mni',
+      'Μανιπούρι',
+    ),
+    'moh': Language(
+      'moh',
+      'Μοχόκ',
+    ),
+    'mos': Language(
+      'mos',
+      'Μόσι',
+    ),
+    'mr': Language(
+      'mr',
+      'Μαραθικά',
+    ),
+    'ms': Language(
+      'ms',
+      'Μαλαισιανά',
+    ),
+    'mt': Language(
+      'mt',
+      'Μαλτεζικά',
+    ),
+    'mua': Language(
+      'mua',
+      'Μουντάνγκ',
+    ),
+    'mul': Language(
+      'mul',
+      'Πολλαπλές γλώσσες',
+    ),
+    'mus': Language(
+      'mus',
+      'Κρικ',
+    ),
+    'mwl': Language(
+      'mwl',
+      'Μιραντεζικά',
+    ),
+    'mwr': Language(
+      'mwr',
+      'Μαργουάρι',
+    ),
+    'my': Language(
+      'my',
+      'Βιρμανικά',
+    ),
+    'mye': Language(
+      'mye',
+      'Μιένε',
+    ),
+    'myv': Language(
+      'myv',
+      'Έρζια',
+    ),
+    'mzn': Language(
+      'mzn',
+      'Μαζαντεράνι',
+    ),
+    'na': Language(
+      'na',
+      'Ναούρου',
+    ),
+    'nap': Language(
+      'nap',
+      'Ναπολιτανικά',
+    ),
+    'naq': Language(
+      'naq',
+      'Νάμα',
+    ),
+    'nb': Language(
+      'nb',
+      'Νορβηγικά Μποκμάλ',
+    ),
+    'nd': Language(
+      'nd',
+      'Βόρεια Ντεμπέλε',
+    ),
+    'nds': Language(
+      'nds',
+      'Κάτω Γερμανικά',
+    ),
+    'nds-NL': Language(
+      'nds-NL',
+      'Κάτω Γερμανικά Ολλανδίας',
+    ),
+    'ne': Language(
+      'ne',
+      'Νεπαλικά',
+    ),
+    'new': Language(
+      'new',
+      'Νεγουάρι',
+    ),
+    'ng': Language(
+      'ng',
+      'Ντόνγκα',
+    ),
+    'nia': Language(
+      'nia',
+      'Νίας',
+    ),
+    'niu': Language(
+      'niu',
+      'Νιούε',
+    ),
+    'nl': Language(
+      'nl',
+      'Ολλανδικά',
+    ),
+    'nl-BE': Language(
+      'nl-BE',
+      'Φλαμανδικά',
+    ),
+    'nmg': Language(
+      'nmg',
+      'Κβάσιο',
+    ),
+    'nn': Language(
+      'nn',
+      'Νορβηγικά Νινόρσκ',
+    ),
+    'nnh': Language(
+      'nnh',
+      'Νγκιεμπούν',
+    ),
+    'no': Language(
+      'no',
+      'Νορβηγικά',
+    ),
+    'nog': Language(
+      'nog',
+      'Νογκάι',
+    ),
+    'non': Language(
+      'non',
+      'Παλαιά Νορβηγικά',
+    ),
+    'nqo': Language(
+      'nqo',
+      'Ν’Κο',
+    ),
+    'nr': Language(
+      'nr',
+      'Νότια Ντεμπέλε',
+    ),
+    'nso': Language(
+      'nso',
+      'Βόρεια Σόθο',
+    ),
+    'nus': Language(
+      'nus',
+      'Νούερ',
+    ),
+    'nv': Language(
+      'nv',
+      'Νάβαχο',
+    ),
+    'nwc': Language(
+      'nwc',
+      'Κλασικά Νεουάρι',
+    ),
+    'ny': Language(
+      'ny',
+      'Νιάντζα',
+    ),
+    'nym': Language(
+      'nym',
+      'Νιαμγουέζι',
+    ),
+    'nyn': Language(
+      'nyn',
+      'Νιανκόλε',
+    ),
+    'nyo': Language(
+      'nyo',
+      'Νιόρο',
+    ),
+    'nzi': Language(
+      'nzi',
+      'Νζίμα',
+    ),
+    'oc': Language(
+      'oc',
+      'Οξιτανικά',
+    ),
+    'oj': Language(
+      'oj',
+      'Οζιβίγουα',
+    ),
+    'om': Language(
+      'om',
+      'Ορόμο',
+    ),
+    'or': Language(
+      'or',
+      'Όντια',
+    ),
+    'os': Language(
+      'os',
+      'Οσετικά',
+    ),
+    'osa': Language(
+      'osa',
+      'Οσάζ',
+    ),
+    'ota': Language(
+      'ota',
+      'Οθωμανικά Τουρκικά',
+    ),
+    'pa': Language(
+      'pa',
+      'Παντζαπικά',
+    ),
+    'pag': Language(
+      'pag',
+      'Πανγκασινάν',
+    ),
+    'pal': Language(
+      'pal',
+      'Παχλάβι',
+    ),
+    'pam': Language(
+      'pam',
+      'Παμπάνγκα',
+    ),
+    'pap': Language(
+      'pap',
+      'Παπιαμέντο',
+    ),
+    'pau': Language(
+      'pau',
+      'Παλάουαν',
+    ),
+    'pcm': Language(
+      'pcm',
+      'Πίτζιν Νιγηρίας',
+    ),
+    'peo': Language(
+      'peo',
+      'Αρχαία Περσικά',
+    ),
+    'phn': Language(
+      'phn',
+      'Φοινικικά',
+    ),
+    'pi': Language(
+      'pi',
+      'Πάλι',
+    ),
+    'pl': Language(
+      'pl',
+      'Πολωνικά',
+    ),
+    'pon': Language(
+      'pon',
+      'Πομπηικά',
+    ),
+    'prg': Language(
+      'prg',
+      'Πρωσικά',
+    ),
+    'pro': Language(
+      'pro',
+      'Παλαιά Προβανσάλ',
+    ),
+    'ps': Language(
+      'ps',
+      'Πάστο',
+    ),
+    'pt': Language(
+      'pt',
+      'Πορτογαλικά',
+    ),
+    'pt-BR': Language(
+      'pt-BR',
+      'Πορτογαλικά Βραζιλίας',
+    ),
+    'pt-PT': Language(
+      'pt-PT',
+      'Πορτογαλικά Ευρώπης',
+    ),
+    'qu': Language(
+      'qu',
+      'Κέτσουα',
+    ),
+    'quc': Language(
+      'quc',
+      'Κιτσέ',
+    ),
+    'raj': Language(
+      'raj',
+      'Ραζασθάνι',
+    ),
+    'rap': Language(
+      'rap',
+      'Ραπανούι',
+    ),
+    'rar': Language(
+      'rar',
+      'Ραροτονγκάν',
+    ),
+    'rm': Language(
+      'rm',
+      'Ρομανικά',
+    ),
+    'rn': Language(
+      'rn',
+      'Ρούντι',
+    ),
+    'ro': Language(
+      'ro',
+      'Ρουμανικά',
+    ),
+    'ro-MD': Language(
+      'ro-MD',
+      'Μολδαβικά',
+    ),
+    'rof': Language(
+      'rof',
+      'Ρόμπο',
+    ),
+    'rom': Language(
+      'rom',
+      'Ρομανί',
+    ),
+    'ru': Language(
+      'ru',
+      'Ρωσικά',
+    ),
+    'rup': Language(
+      'rup',
+      'Αρομανικά',
+    ),
+    'rw': Language(
+      'rw',
+      'Κινιαρουάντα',
+    ),
+    'rwk': Language(
+      'rwk',
+      'Ρουά',
+    ),
+    'sa': Language(
+      'sa',
+      'Σανσκριτικά',
+    ),
+    'sad': Language(
+      'sad',
+      'Σαντάγουε',
+    ),
+    'sah': Language(
+      'sah',
+      'Σαχά',
+    ),
+    'sam': Language(
+      'sam',
+      'Σαμαρίτικα Αραμαϊκά',
+    ),
+    'saq': Language(
+      'saq',
+      'Σαμπούρου',
+    ),
+    'sas': Language(
+      'sas',
+      'Σασάκ',
+    ),
+    'sat': Language(
+      'sat',
+      'Σαντάλι',
+    ),
+    'sba': Language(
+      'sba',
+      'Νγκαμπέι',
+    ),
+    'sbp': Language(
+      'sbp',
+      'Σάνγκου',
+    ),
+    'sc': Language(
+      'sc',
+      'Σαρδηνιακά',
+    ),
+    'scn': Language(
+      'scn',
+      'Σικελικά',
+    ),
+    'sco': Language(
+      'sco',
+      'Σκωτικά',
+    ),
+    'sd': Language(
+      'sd',
+      'Σίντι',
+    ),
+    'sdh': Language(
+      'sdh',
+      'Νότια Κουρδικά',
+    ),
+    'se': Language(
+      'se',
+      'Βόρεια Σάμι',
+    ),
+    'see': Language(
+      'see',
+      'Σένεκα',
+    ),
+    'seh': Language(
+      'seh',
+      'Σένα',
+    ),
+    'sel': Language(
+      'sel',
+      'Σελκούπ',
+    ),
+    'ses': Language(
+      'ses',
+      'Κοϊραμπόρο Σένι',
+    ),
+    'sg': Language(
+      'sg',
+      'Σάνγκο',
+    ),
+    'sga': Language(
+      'sga',
+      'Παλαιά Ιρλανδικά',
+    ),
+    'sh': Language(
+      'sh',
+      'Σερβοκροατικά',
+    ),
+    'shi': Language(
+      'shi',
+      'Τασελχίτ',
+    ),
+    'shn': Language(
+      'shn',
+      'Σαν',
+    ),
+    'shu': Language(
+      'shu',
+      'Αραβικά του Τσαντ',
+    ),
+    'si': Language(
+      'si',
+      'Σινχαλεζικά',
+    ),
+    'sid': Language(
+      'sid',
+      'Σιντάμο',
+    ),
+    'sk': Language(
+      'sk',
+      'Σλοβακικά',
+    ),
+    'sl': Language(
+      'sl',
+      'Σλοβενικά',
+    ),
+    'sm': Language(
+      'sm',
+      'Σαμοανά',
+    ),
+    'sma': Language(
+      'sma',
+      'Νότια Σάμι',
+    ),
+    'smj': Language(
+      'smj',
+      'Λούλε Σάμι',
+    ),
+    'smn': Language(
+      'smn',
+      'Ινάρι Σάμι',
+    ),
+    'sms': Language(
+      'sms',
+      'Σκολτ Σάμι',
+    ),
+    'sn': Language(
+      'sn',
+      'Σόνα',
+    ),
+    'snk': Language(
+      'snk',
+      'Σονίνκε',
+    ),
+    'so': Language(
+      'so',
+      'Σομαλικά',
+    ),
+    'sog': Language(
+      'sog',
+      'Σογκντιέν',
+    ),
+    'sq': Language(
+      'sq',
+      'Αλβανικά',
+    ),
+    'sr': Language(
+      'sr',
+      'Σερβικά',
+    ),
+    'srn': Language(
+      'srn',
+      'Σρανάν Τόνγκο',
+    ),
+    'srr': Language(
+      'srr',
+      'Σερέρ',
+    ),
+    'ss': Language(
+      'ss',
+      'Σουάτι',
+    ),
+    'ssy': Language(
+      'ssy',
+      'Σάχο',
+    ),
+    'st': Language(
+      'st',
+      'Νότια Σόθο',
+    ),
+    'su': Language(
+      'su',
+      'Σουνδανικά',
+    ),
+    'suk': Language(
+      'suk',
+      'Σουκούμα',
+    ),
+    'sus': Language(
+      'sus',
+      'Σούσου',
+    ),
+    'sux': Language(
+      'sux',
+      'Σουμερικά',
+    ),
+    'sv': Language(
+      'sv',
+      'Σουηδικά',
+    ),
+    'sw': Language(
+      'sw',
+      'Σουαχίλι',
+    ),
+    'sw-CD': Language(
+      'sw-CD',
+      'Κονγκό Σουαχίλι',
+    ),
+    'swb': Language(
+      'swb',
+      'Κομοριανά',
+    ),
+    'syc': Language(
+      'syc',
+      'Κλασικά Συριακά',
+    ),
+    'syr': Language(
+      'syr',
+      'Συριακά',
+    ),
+    'ta': Language(
+      'ta',
+      'Ταμιλικά',
+    ),
+    'te': Language(
+      'te',
+      'Τελούγκου',
+    ),
+    'tem': Language(
+      'tem',
+      'Τίμνε',
+    ),
+    'teo': Language(
+      'teo',
+      'Τέσο',
+    ),
+    'ter': Language(
+      'ter',
+      'Τερένο',
+    ),
+    'tet': Language(
+      'tet',
+      'Τέτουμ',
+    ),
+    'tg': Language(
+      'tg',
+      'Τατζικικά',
+    ),
+    'th': Language(
+      'th',
+      'Ταϊλανδικά',
+    ),
+    'ti': Language(
+      'ti',
+      'Τιγκρινικά',
+    ),
+    'tig': Language(
+      'tig',
+      'Τίγκρε',
+    ),
+    'tiv': Language(
+      'tiv',
+      'Τιβ',
+    ),
+    'tk': Language(
+      'tk',
+      'Τουρκμενικά',
+    ),
+    'tkl': Language(
+      'tkl',
+      'Τοκελάου',
+    ),
+    'tl': Language(
+      'tl',
+      'Τάγκαλογκ',
+    ),
+    'tlh': Language(
+      'tlh',
+      'Κλίνγκον',
+    ),
+    'tli': Language(
+      'tli',
+      'Τλίνγκιτ',
+    ),
+    'tmh': Language(
+      'tmh',
+      'Ταμασέκ',
+    ),
+    'tn': Language(
+      'tn',
+      'Τσουάνα',
+    ),
+    'to': Language(
+      'to',
+      'Τονγκανικά',
+    ),
+    'tog': Language(
+      'tog',
+      'Νιάσα Τόνγκα',
+    ),
+    'tpi': Language(
+      'tpi',
+      'Τοκ Πισίν',
+    ),
+    'tr': Language(
+      'tr',
+      'Τουρκικά',
+    ),
+    'trv': Language(
+      'trv',
+      'Ταρόκο',
+    ),
+    'ts': Language(
+      'ts',
+      'Τσόνγκα',
+    ),
+    'tsi': Language(
+      'tsi',
+      'Τσίμσιαν',
+    ),
+    'tt': Language(
+      'tt',
+      'Ταταρικά',
+    ),
+    'tum': Language(
+      'tum',
+      'Τουμπούκα',
+    ),
+    'tvl': Language(
+      'tvl',
+      'Τουβαλού',
+    ),
+    'tw': Language(
+      'tw',
+      'Τούι',
+    ),
+    'twq': Language(
+      'twq',
+      'Τασαβάκ',
+    ),
+    'ty': Language(
+      'ty',
+      'Ταϊτιανά',
+    ),
+    'tyv': Language(
+      'tyv',
+      'Τουβινικά',
+    ),
+    'tzm': Language(
+      'tzm',
+      'Ταμαζίτ Κεντρικού Μαρόκο',
+    ),
+    'udm': Language(
+      'udm',
+      'Ουντμούρτ',
+    ),
+    'ug': Language(
+      'ug',
+      'Ουιγουρικά',
+      variant: 'Ουιγκούρ',
+    ),
+    'uga': Language(
+      'uga',
+      'Ουγκαριτικά',
+    ),
+    'uk': Language(
+      'uk',
+      'Ουκρανικά',
+    ),
+    'umb': Language(
+      'umb',
+      'Ουμπούντου',
+    ),
+    'und': Language(
+      'und',
+      'Άγνωστη γλώσσα',
+    ),
+    'ur': Language(
+      'ur',
+      'Ουρντού',
+    ),
+    'uz': Language(
+      'uz',
+      'Ουζμπεκικά',
+    ),
+    'vai': Language(
+      'vai',
+      'Βάι',
+    ),
+    've': Language(
+      've',
+      'Βέντα',
+    ),
+    'vi': Language(
+      'vi',
+      'Βιετναμικά',
+    ),
+    'vo': Language(
+      'vo',
+      'Βολαπιούκ',
+    ),
+    'vot': Language(
+      'vot',
+      'Βότικ',
+    ),
+    'vun': Language(
+      'vun',
+      'Βούντζο',
+    ),
+    'wa': Language(
+      'wa',
+      'Βαλλωνικά',
+    ),
+    'wae': Language(
+      'wae',
+      'Βάλσερ',
+    ),
+    'wal': Language(
+      'wal',
+      'Γουολάιτα',
+    ),
+    'war': Language(
+      'war',
+      'Γουάραϊ',
+    ),
+    'was': Language(
+      'was',
+      'Γουασό',
+    ),
+    'wbp': Language(
+      'wbp',
+      'Γουαρλπίρι',
+    ),
+    'wo': Language(
+      'wo',
+      'Γουόλοφ',
+    ),
+    'wuu': Language(
+      'wuu',
+      'Κινεζικά Γου',
+    ),
+    'xal': Language(
+      'xal',
+      'Καλμίκ',
+    ),
+    'xh': Language(
+      'xh',
+      'Κόσα',
+    ),
+    'xog': Language(
+      'xog',
+      'Σόγκα',
+    ),
+    'yao': Language(
+      'yao',
+      'Γιάο',
+    ),
+    'yap': Language(
+      'yap',
+      'Γιαπίζ',
+    ),
+    'yav': Language(
+      'yav',
+      'Γιανγκμπέν',
+    ),
+    'ybb': Language(
+      'ybb',
+      'Γιέμπα',
+    ),
+    'yi': Language(
+      'yi',
+      'Γίντις',
+    ),
+    'yo': Language(
+      'yo',
+      'Γιορούμπα',
+    ),
+    'yue': Language(
+      'yue',
+      'Καντονέζικα',
+      menu: 'Κινεζικά, Καντονέζικα',
+    ),
+    'za': Language(
+      'za',
+      'Ζουάνγκ',
+    ),
+    'zap': Language(
+      'zap',
+      'Ζάποτεκ',
+    ),
+    'zbl': Language(
+      'zbl',
+      'Σύμβολα Bliss',
+    ),
+    'zen': Language(
+      'zen',
+      'Ζενάγκα',
+    ),
+    'zgh': Language(
+      'zgh',
+      'Τυπικά Ταμαζίτ Μαρόκου',
+    ),
+    'zh': Language(
+      'zh',
+      'Κινεζικά',
+      menu: 'Κινεζικά, Μανδαρινικά',
+    ),
+    'zh-Hans': Language(
+      'zh-Hans',
+      'Απλοποιημένα Κινεζικά',
+    ),
+    'zh-Hant': Language(
+      'zh-Hant',
+      'Παραδοσιακά Κινεζικά',
+    ),
+    'zu': Language(
+      'zu',
+      'Ζουλού',
+    ),
+    'zun': Language(
+      'zun',
+      'Ζούνι',
+    ),
+    'zxx': Language(
+      'zxx',
+      'Χωρίς γλωσσολογικό περιεχόμενο',
+    ),
+    'zza': Language(
+      'zza',
+      'Ζάζα',
+    ),
+  }, (key) => key.toLowerCase());
 }
 
 class UnitsEl implements Units {
@@ -5030,7 +7176,7 @@ class TerritoriesEl implements Territories {
       );
 
   @override
-  final countries = <String, Territory>{
+  final countries = CanonicalizedMap<String, String, Territory>.from({
     'AC': Territory(
       'AC',
       'Νήσος Ασενσιόν',
@@ -6092,5 +8238,5 @@ class TerritoriesEl implements Territories {
       'ZW',
       'Ζιμπάμπουε',
     ),
-  };
+  }, (key) => key.toLowerCase());
 }

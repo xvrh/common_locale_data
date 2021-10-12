@@ -1,33 +1,33 @@
-This packages provides a type-safe and tree-shakable way to access translated common data (measurement units etc...).  
+This packages provides a type-safe and tree-shakable way to access translated common data.  
 The translations are extracted from the Common Locale Data Repository (CLDR).
 
-Information provided by this package in all supported languages:
-- Relative time (ie: "3 minutes ago")
-- Units (duration, length, weight, etc...) (ie: "5 kilometers")
-
 ## Available data
-- Measurement unit
-- Time unit
-- Country names
-- Language names
+- Translations for measurement units in full and abbreviated forms including singular/plural modifications.
+- Translations for language names.
+- Translations for territory and country names.
+- Translations for currency names, including singular/plural modifications.
+- Translations for weekday, month, era, period of day, in full and abbreviated forms.
+- Translations for time zones and example cities (or similar) for time zones.
+- Translations for calendar fields.
+
+## Relative time formatter
+
+This package also expose some utility classes to format relative time (ie. "3 minutes ago")
+
+```dart
+// Example
+```
 
 ## Tree-shaking
 
-All the data and translations are stored as literal strings in the code. The APIs are designed to be fully 
-tree-shakeable. The final application's code won't include the code for languages you don't use.
+All the data and translations are stored as literal strings in the code. The APIs are designed to be 
+tree-shakeable. The final application's binaries won't include the translations for languages you don't use.
 
 ## Source
-All the data are extracted from this subrepositories:
 
+All the data are extracted from this repository: https://github.com/unicode-org/cldr-json
 
-
-
-## Format and translate units:
-
-Provide a way to format and translate differents units in a tree-shaking efficient way.
-
-This packages provides a type-safe and tree-shakable way to access translated unit data.  
-The translations are extracted from CLDR data source in 50+ languages.
+## Example
 
 ```dart
 void main() {

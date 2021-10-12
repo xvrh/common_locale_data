@@ -1,5 +1,7 @@
+import 'package:collection/collection.dart';
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
+import '../languages.dart';
 import '../shared.dart';
 import '../territories.dart';
 import '../units.dart';
@@ -15,6 +17,10 @@ class CommonLocaleDataZh implements CommonLocaleData {
   @override
   DateFields get date => _dateFields;
 
+  static final _languages = LanguagesZh._();
+  @override
+  Languages get languages => _languages;
+
   static final _units = UnitsZh._();
   @override
   Units get units => _units;
@@ -22,6 +28,2166 @@ class CommonLocaleDataZh implements CommonLocaleData {
   static final _territories = TerritoriesZh._();
   @override
   Territories get territories => _territories;
+}
+
+class LanguagesZh extends Languages {
+  LanguagesZh._();
+
+  @override
+  final languages = CanonicalizedMap<String, String, Language>.from({
+    'aa': Language(
+      'aa',
+      '阿法尔语',
+    ),
+    'ab': Language(
+      'ab',
+      '阿布哈西亚语',
+    ),
+    'ace': Language(
+      'ace',
+      '亚齐语',
+    ),
+    'ach': Language(
+      'ach',
+      '阿乔利语',
+    ),
+    'ada': Language(
+      'ada',
+      '阿当梅语',
+    ),
+    'ady': Language(
+      'ady',
+      '阿迪格语',
+    ),
+    'ae': Language(
+      'ae',
+      '阿维斯塔语',
+    ),
+    'af': Language(
+      'af',
+      '南非荷兰语',
+    ),
+    'afh': Language(
+      'afh',
+      '阿弗里希利语',
+    ),
+    'agq': Language(
+      'agq',
+      '亚罕语',
+    ),
+    'ain': Language(
+      'ain',
+      '阿伊努语',
+    ),
+    'ak': Language(
+      'ak',
+      '阿肯语',
+    ),
+    'akk': Language(
+      'akk',
+      '阿卡德语',
+    ),
+    'ale': Language(
+      'ale',
+      '阿留申语',
+    ),
+    'alt': Language(
+      'alt',
+      '南阿尔泰语',
+    ),
+    'am': Language(
+      'am',
+      '阿姆哈拉语',
+    ),
+    'an': Language(
+      'an',
+      '阿拉贡语',
+    ),
+    'ang': Language(
+      'ang',
+      '古英语',
+    ),
+    'anp': Language(
+      'anp',
+      '昂加语',
+    ),
+    'ar': Language(
+      'ar',
+      '阿拉伯语',
+    ),
+    'ar-001': Language(
+      'ar-001',
+      '现代标准阿拉伯语',
+    ),
+    'arc': Language(
+      'arc',
+      '阿拉米语',
+    ),
+    'arn': Language(
+      'arn',
+      '马普切语',
+    ),
+    'arp': Language(
+      'arp',
+      '阿拉帕霍语',
+    ),
+    'ars': Language(
+      'ars',
+      '纳吉迪阿拉伯语',
+      menu: '阿拉伯语（纳吉迪）',
+    ),
+    'arw': Language(
+      'arw',
+      '阿拉瓦克语',
+    ),
+    'as': Language(
+      'as',
+      '阿萨姆语',
+    ),
+    'asa': Language(
+      'asa',
+      '帕雷语',
+    ),
+    'ast': Language(
+      'ast',
+      '阿斯图里亚斯语',
+    ),
+    'av': Language(
+      'av',
+      '阿瓦尔语',
+    ),
+    'awa': Language(
+      'awa',
+      '阿瓦德语',
+    ),
+    'ay': Language(
+      'ay',
+      '艾马拉语',
+    ),
+    'az': Language(
+      'az',
+      '阿塞拜疆语',
+      short: '阿塞语',
+    ),
+    'ba': Language(
+      'ba',
+      '巴什基尔语',
+    ),
+    'bal': Language(
+      'bal',
+      '俾路支语',
+    ),
+    'ban': Language(
+      'ban',
+      '巴厘语',
+    ),
+    'bas': Language(
+      'bas',
+      '巴萨语',
+    ),
+    'bax': Language(
+      'bax',
+      '巴姆穆语',
+    ),
+    'bbj': Language(
+      'bbj',
+      '戈马拉语',
+    ),
+    'be': Language(
+      'be',
+      '白俄罗斯语',
+    ),
+    'bej': Language(
+      'bej',
+      '贝沙语',
+    ),
+    'bem': Language(
+      'bem',
+      '本巴语',
+    ),
+    'bez': Language(
+      'bez',
+      '贝纳语',
+    ),
+    'bfd': Language(
+      'bfd',
+      '巴非特语',
+    ),
+    'bg': Language(
+      'bg',
+      '保加利亚语',
+    ),
+    'bgn': Language(
+      'bgn',
+      '西俾路支语',
+    ),
+    'bho': Language(
+      'bho',
+      '博杰普尔语',
+    ),
+    'bi': Language(
+      'bi',
+      '比斯拉马语',
+    ),
+    'bik': Language(
+      'bik',
+      '比科尔语',
+    ),
+    'bin': Language(
+      'bin',
+      '比尼语',
+    ),
+    'bkm': Language(
+      'bkm',
+      '科姆语',
+    ),
+    'bla': Language(
+      'bla',
+      '西克西卡语',
+    ),
+    'bm': Language(
+      'bm',
+      '班巴拉语',
+    ),
+    'bn': Language(
+      'bn',
+      '孟加拉语',
+    ),
+    'bo': Language(
+      'bo',
+      '藏语',
+    ),
+    'br': Language(
+      'br',
+      '布列塔尼语',
+    ),
+    'bra': Language(
+      'bra',
+      '布拉杰语',
+    ),
+    'brx': Language(
+      'brx',
+      '博多语',
+    ),
+    'bs': Language(
+      'bs',
+      '波斯尼亚语',
+    ),
+    'bss': Language(
+      'bss',
+      '阿库色语',
+    ),
+    'bua': Language(
+      'bua',
+      '布里亚特语',
+    ),
+    'bug': Language(
+      'bug',
+      '布吉语',
+    ),
+    'bum': Language(
+      'bum',
+      '布鲁语',
+    ),
+    'byn': Language(
+      'byn',
+      '比林语',
+    ),
+    'byv': Language(
+      'byv',
+      '梅敦巴语',
+    ),
+    'ca': Language(
+      'ca',
+      '加泰罗尼亚语',
+    ),
+    'cad': Language(
+      'cad',
+      '卡多语',
+    ),
+    'car': Language(
+      'car',
+      '加勒比语',
+    ),
+    'cay': Language(
+      'cay',
+      '卡尤加语',
+    ),
+    'cch': Language(
+      'cch',
+      '阿灿语',
+    ),
+    'ccp': Language(
+      'ccp',
+      '查克玛语',
+    ),
+    'ce': Language(
+      'ce',
+      '车臣语',
+    ),
+    'ceb': Language(
+      'ceb',
+      '宿务语',
+    ),
+    'cgg': Language(
+      'cgg',
+      '奇加语',
+    ),
+    'ch': Language(
+      'ch',
+      '查莫罗语',
+    ),
+    'chb': Language(
+      'chb',
+      '奇布查语',
+    ),
+    'chg': Language(
+      'chg',
+      '察合台语',
+    ),
+    'chk': Language(
+      'chk',
+      '楚克语',
+    ),
+    'chm': Language(
+      'chm',
+      '马里语',
+    ),
+    'chn': Language(
+      'chn',
+      '奇努克混合语',
+    ),
+    'cho': Language(
+      'cho',
+      '乔克托语',
+    ),
+    'chp': Language(
+      'chp',
+      '奇佩维安语',
+    ),
+    'chr': Language(
+      'chr',
+      '切罗基语',
+    ),
+    'chy': Language(
+      'chy',
+      '夏延语',
+    ),
+    'ckb': Language(
+      'ckb',
+      '中库尔德语',
+      variant: '中库尔德语',
+      menu: '中库尔德语',
+    ),
+    'co': Language(
+      'co',
+      '科西嘉语',
+    ),
+    'cop': Language(
+      'cop',
+      '科普特语',
+    ),
+    'cr': Language(
+      'cr',
+      '克里族语',
+    ),
+    'crh': Language(
+      'crh',
+      '克里米亚土耳其语',
+    ),
+    'crs': Language(
+      'crs',
+      '塞舌尔克里奥尔语',
+    ),
+    'cs': Language(
+      'cs',
+      '捷克语',
+    ),
+    'csb': Language(
+      'csb',
+      '卡舒比语',
+    ),
+    'cu': Language(
+      'cu',
+      '教会斯拉夫语',
+    ),
+    'cv': Language(
+      'cv',
+      '楚瓦什语',
+    ),
+    'cy': Language(
+      'cy',
+      '威尔士语',
+    ),
+    'da': Language(
+      'da',
+      '丹麦语',
+    ),
+    'dak': Language(
+      'dak',
+      '达科他语',
+    ),
+    'dar': Language(
+      'dar',
+      '达尔格瓦语',
+    ),
+    'dav': Language(
+      'dav',
+      '台塔语',
+    ),
+    'de': Language(
+      'de',
+      '德语',
+    ),
+    'de-AT': Language(
+      'de-AT',
+      '奥地利德语',
+    ),
+    'de-CH': Language(
+      'de-CH',
+      '瑞士高地德语',
+    ),
+    'del': Language(
+      'del',
+      '特拉华语',
+    ),
+    'den': Language(
+      'den',
+      '史拉维语',
+    ),
+    'dgr': Language(
+      'dgr',
+      '多格里布语',
+    ),
+    'din': Language(
+      'din',
+      '丁卡语',
+    ),
+    'dje': Language(
+      'dje',
+      '哲尔马语',
+    ),
+    'doi': Language(
+      'doi',
+      '多格拉语',
+    ),
+    'dsb': Language(
+      'dsb',
+      '下索布语',
+    ),
+    'dua': Language(
+      'dua',
+      '杜阿拉语',
+    ),
+    'dum': Language(
+      'dum',
+      '中古荷兰语',
+    ),
+    'dv': Language(
+      'dv',
+      '迪维希语',
+    ),
+    'dyo': Language(
+      'dyo',
+      '朱拉语',
+    ),
+    'dyu': Language(
+      'dyu',
+      '迪尤拉语',
+    ),
+    'dz': Language(
+      'dz',
+      '宗卡语',
+    ),
+    'dzg': Language(
+      'dzg',
+      '达扎葛语',
+    ),
+    'ebu': Language(
+      'ebu',
+      '恩布语',
+    ),
+    'ee': Language(
+      'ee',
+      '埃维语',
+    ),
+    'efi': Language(
+      'efi',
+      '埃菲克语',
+    ),
+    'egy': Language(
+      'egy',
+      '古埃及语',
+    ),
+    'eka': Language(
+      'eka',
+      '艾卡朱克语',
+    ),
+    'el': Language(
+      'el',
+      '希腊语',
+    ),
+    'elx': Language(
+      'elx',
+      '埃兰语',
+    ),
+    'en': Language(
+      'en',
+      '英语',
+    ),
+    'en-AU': Language(
+      'en-AU',
+      '澳大利亚英语',
+    ),
+    'en-CA': Language(
+      'en-CA',
+      '加拿大英语',
+    ),
+    'en-GB': Language(
+      'en-GB',
+      '英国英语',
+      short: '英式英语',
+    ),
+    'en-US': Language(
+      'en-US',
+      '美国英语',
+      short: '美式英语',
+    ),
+    'enm': Language(
+      'enm',
+      '中古英语',
+    ),
+    'eo': Language(
+      'eo',
+      '世界语',
+    ),
+    'es': Language(
+      'es',
+      '西班牙语',
+    ),
+    'es-419': Language(
+      'es-419',
+      '拉丁美洲西班牙语',
+    ),
+    'es-ES': Language(
+      'es-ES',
+      '欧洲西班牙语',
+    ),
+    'es-MX': Language(
+      'es-MX',
+      '墨西哥西班牙语',
+    ),
+    'et': Language(
+      'et',
+      '爱沙尼亚语',
+    ),
+    'eu': Language(
+      'eu',
+      '巴斯克语',
+    ),
+    'ewo': Language(
+      'ewo',
+      '埃翁多语',
+    ),
+    'fa': Language(
+      'fa',
+      '波斯语',
+    ),
+    'fa-AF': Language(
+      'fa-AF',
+      '达里语',
+    ),
+    'fan': Language(
+      'fan',
+      '芳格语',
+    ),
+    'fat': Language(
+      'fat',
+      '芳蒂语',
+    ),
+    'ff': Language(
+      'ff',
+      '富拉语',
+    ),
+    'fi': Language(
+      'fi',
+      '芬兰语',
+    ),
+    'fil': Language(
+      'fil',
+      '菲律宾语',
+    ),
+    'fj': Language(
+      'fj',
+      '斐济语',
+    ),
+    'fo': Language(
+      'fo',
+      '法罗语',
+    ),
+    'fon': Language(
+      'fon',
+      '丰语',
+    ),
+    'fr': Language(
+      'fr',
+      '法语',
+    ),
+    'fr-CA': Language(
+      'fr-CA',
+      '加拿大法语',
+    ),
+    'fr-CH': Language(
+      'fr-CH',
+      '瑞士法语',
+    ),
+    'frc': Language(
+      'frc',
+      '卡真法语',
+    ),
+    'frm': Language(
+      'frm',
+      '中古法语',
+    ),
+    'fro': Language(
+      'fro',
+      '古法语',
+    ),
+    'frr': Language(
+      'frr',
+      '北弗里西亚语',
+    ),
+    'frs': Language(
+      'frs',
+      '东弗里西亚语',
+    ),
+    'fur': Language(
+      'fur',
+      '弗留利语',
+    ),
+    'fy': Language(
+      'fy',
+      '西弗里西亚语',
+    ),
+    'ga': Language(
+      'ga',
+      '爱尔兰语',
+    ),
+    'gaa': Language(
+      'gaa',
+      '加族语',
+    ),
+    'gag': Language(
+      'gag',
+      '加告兹语',
+    ),
+    'gan': Language(
+      'gan',
+      '赣语',
+    ),
+    'gay': Language(
+      'gay',
+      '迦约语',
+    ),
+    'gba': Language(
+      'gba',
+      '格巴亚语',
+    ),
+    'gd': Language(
+      'gd',
+      '苏格兰盖尔语',
+    ),
+    'gez': Language(
+      'gez',
+      '吉兹语',
+    ),
+    'gil': Language(
+      'gil',
+      '吉尔伯特语',
+    ),
+    'gl': Language(
+      'gl',
+      '加利西亚语',
+    ),
+    'gmh': Language(
+      'gmh',
+      '中古高地德语',
+    ),
+    'gn': Language(
+      'gn',
+      '瓜拉尼语',
+    ),
+    'goh': Language(
+      'goh',
+      '古高地德语',
+    ),
+    'gon': Language(
+      'gon',
+      '冈德语',
+    ),
+    'gor': Language(
+      'gor',
+      '哥伦打洛语',
+    ),
+    'got': Language(
+      'got',
+      '哥特语',
+    ),
+    'grb': Language(
+      'grb',
+      '格列博语',
+    ),
+    'grc': Language(
+      'grc',
+      '古希腊语',
+    ),
+    'gsw': Language(
+      'gsw',
+      '瑞士德语',
+    ),
+    'gu': Language(
+      'gu',
+      '古吉拉特语',
+    ),
+    'guz': Language(
+      'guz',
+      '古西语',
+    ),
+    'gv': Language(
+      'gv',
+      '马恩语',
+    ),
+    'gwi': Language(
+      'gwi',
+      '哥威迅语',
+    ),
+    'ha': Language(
+      'ha',
+      '豪萨语',
+    ),
+    'hai': Language(
+      'hai',
+      '海达语',
+    ),
+    'hak': Language(
+      'hak',
+      '客家语',
+    ),
+    'haw': Language(
+      'haw',
+      '夏威夷语',
+    ),
+    'he': Language(
+      'he',
+      '希伯来语',
+    ),
+    'hi': Language(
+      'hi',
+      '印地语',
+    ),
+    'hil': Language(
+      'hil',
+      '希利盖农语',
+    ),
+    'hit': Language(
+      'hit',
+      '赫梯语',
+    ),
+    'hmn': Language(
+      'hmn',
+      '苗语',
+    ),
+    'ho': Language(
+      'ho',
+      '希里莫图语',
+    ),
+    'hr': Language(
+      'hr',
+      '克罗地亚语',
+    ),
+    'hsb': Language(
+      'hsb',
+      '上索布语',
+    ),
+    'hsn': Language(
+      'hsn',
+      '湘语',
+    ),
+    'ht': Language(
+      'ht',
+      '海地克里奥尔语',
+    ),
+    'hu': Language(
+      'hu',
+      '匈牙利语',
+    ),
+    'hup': Language(
+      'hup',
+      '胡帕语',
+    ),
+    'hy': Language(
+      'hy',
+      '亚美尼亚语',
+    ),
+    'hz': Language(
+      'hz',
+      '赫雷罗语',
+    ),
+    'ia': Language(
+      'ia',
+      '国际语',
+    ),
+    'iba': Language(
+      'iba',
+      '伊班语',
+    ),
+    'ibb': Language(
+      'ibb',
+      '伊比比奥语',
+    ),
+    'id': Language(
+      'id',
+      '印度尼西亚语',
+    ),
+    'ie': Language(
+      'ie',
+      '国际文字（E）',
+    ),
+    'ig': Language(
+      'ig',
+      '伊博语',
+    ),
+    'ii': Language(
+      'ii',
+      '四川彝语',
+    ),
+    'ik': Language(
+      'ik',
+      '伊努皮克语',
+    ),
+    'ilo': Language(
+      'ilo',
+      '伊洛卡诺语',
+    ),
+    'inh': Language(
+      'inh',
+      '印古什语',
+    ),
+    'io': Language(
+      'io',
+      '伊多语',
+    ),
+    'is': Language(
+      'is',
+      '冰岛语',
+    ),
+    'it': Language(
+      'it',
+      '意大利语',
+    ),
+    'iu': Language(
+      'iu',
+      '因纽特语',
+    ),
+    'ja': Language(
+      'ja',
+      '日语',
+    ),
+    'jbo': Language(
+      'jbo',
+      '逻辑语',
+    ),
+    'jgo': Language(
+      'jgo',
+      '恩艮巴语',
+    ),
+    'jmc': Language(
+      'jmc',
+      '马切姆语',
+    ),
+    'jpr': Language(
+      'jpr',
+      '犹太波斯语',
+    ),
+    'jrb': Language(
+      'jrb',
+      '犹太阿拉伯语',
+    ),
+    'jv': Language(
+      'jv',
+      '爪哇语',
+    ),
+    'ka': Language(
+      'ka',
+      '格鲁吉亚语',
+    ),
+    'kaa': Language(
+      'kaa',
+      '卡拉卡尔帕克语',
+    ),
+    'kab': Language(
+      'kab',
+      '卡拜尔语',
+    ),
+    'kac': Language(
+      'kac',
+      '克钦语',
+    ),
+    'kaj': Language(
+      'kaj',
+      '卡捷语',
+    ),
+    'kam': Language(
+      'kam',
+      '卡姆巴语',
+    ),
+    'kaw': Language(
+      'kaw',
+      '卡威语',
+    ),
+    'kbd': Language(
+      'kbd',
+      '卡巴尔德语',
+    ),
+    'kbl': Language(
+      'kbl',
+      '加涅姆布语',
+    ),
+    'kcg': Language(
+      'kcg',
+      '卡塔布语',
+    ),
+    'kde': Language(
+      'kde',
+      '马孔德语',
+    ),
+    'kea': Language(
+      'kea',
+      '卡布佛得鲁语',
+    ),
+    'kfo': Language(
+      'kfo',
+      '克罗语',
+    ),
+    'kg': Language(
+      'kg',
+      '刚果语',
+    ),
+    'kgp': Language(
+      'kgp',
+      'kgp',
+    ),
+    'kha': Language(
+      'kha',
+      '卡西语',
+    ),
+    'kho': Language(
+      'kho',
+      '和田语',
+    ),
+    'khq': Language(
+      'khq',
+      '西桑海语',
+    ),
+    'ki': Language(
+      'ki',
+      '吉库尤语',
+    ),
+    'kj': Language(
+      'kj',
+      '宽亚玛语',
+    ),
+    'kk': Language(
+      'kk',
+      '哈萨克语',
+    ),
+    'kkj': Language(
+      'kkj',
+      '卡库语',
+    ),
+    'kl': Language(
+      'kl',
+      '格陵兰语',
+    ),
+    'kln': Language(
+      'kln',
+      '卡伦金语',
+    ),
+    'km': Language(
+      'km',
+      '高棉语',
+    ),
+    'kmb': Language(
+      'kmb',
+      '金邦杜语',
+    ),
+    'kn': Language(
+      'kn',
+      '卡纳达语',
+    ),
+    'ko': Language(
+      'ko',
+      '韩语',
+    ),
+    'koi': Language(
+      'koi',
+      '科米-彼尔米亚克语',
+    ),
+    'kok': Language(
+      'kok',
+      '孔卡尼语',
+    ),
+    'kos': Language(
+      'kos',
+      '科斯拉伊语',
+    ),
+    'kpe': Language(
+      'kpe',
+      '克佩列语',
+    ),
+    'kr': Language(
+      'kr',
+      '卡努里语',
+    ),
+    'krc': Language(
+      'krc',
+      '卡拉恰伊巴尔卡尔语',
+    ),
+    'krl': Language(
+      'krl',
+      '卡累利阿语',
+    ),
+    'kru': Language(
+      'kru',
+      '库鲁克语',
+    ),
+    'ks': Language(
+      'ks',
+      '克什米尔语',
+    ),
+    'ksb': Language(
+      'ksb',
+      '香巴拉语',
+    ),
+    'ksf': Language(
+      'ksf',
+      '巴菲亚语',
+    ),
+    'ksh': Language(
+      'ksh',
+      '科隆语',
+    ),
+    'ku': Language(
+      'ku',
+      '库尔德语',
+    ),
+    'kum': Language(
+      'kum',
+      '库梅克语',
+    ),
+    'kut': Language(
+      'kut',
+      '库特奈语',
+    ),
+    'kv': Language(
+      'kv',
+      '科米语',
+    ),
+    'kw': Language(
+      'kw',
+      '康沃尔语',
+    ),
+    'ky': Language(
+      'ky',
+      '柯尔克孜语',
+    ),
+    'la': Language(
+      'la',
+      '拉丁语',
+    ),
+    'lad': Language(
+      'lad',
+      '拉迪诺语',
+    ),
+    'lag': Language(
+      'lag',
+      '朗吉语',
+    ),
+    'lah': Language(
+      'lah',
+      '印度-雅利安语',
+    ),
+    'lam': Language(
+      'lam',
+      '兰巴语',
+    ),
+    'lb': Language(
+      'lb',
+      '卢森堡语',
+    ),
+    'lez': Language(
+      'lez',
+      '列兹金语',
+    ),
+    'lg': Language(
+      'lg',
+      '卢干达语',
+    ),
+    'li': Language(
+      'li',
+      '林堡语',
+    ),
+    'lij': Language(
+      'lij',
+      'lij',
+    ),
+    'lkt': Language(
+      'lkt',
+      '拉科塔语',
+    ),
+    'ln': Language(
+      'ln',
+      '林加拉语',
+    ),
+    'lo': Language(
+      'lo',
+      '老挝语',
+    ),
+    'lol': Language(
+      'lol',
+      '蒙戈语',
+    ),
+    'lou': Language(
+      'lou',
+      '路易斯安那克里奥尔语',
+    ),
+    'loz': Language(
+      'loz',
+      '洛齐语',
+    ),
+    'lrc': Language(
+      'lrc',
+      '北卢尔语',
+    ),
+    'lt': Language(
+      'lt',
+      '立陶宛语',
+    ),
+    'lu': Language(
+      'lu',
+      '鲁巴加丹加语',
+    ),
+    'lua': Language(
+      'lua',
+      '卢巴-卢拉语',
+    ),
+    'lui': Language(
+      'lui',
+      '卢伊塞诺语',
+    ),
+    'lun': Language(
+      'lun',
+      '隆达语',
+    ),
+    'luo': Language(
+      'luo',
+      '卢奥语',
+    ),
+    'lus': Language(
+      'lus',
+      '米佐语',
+    ),
+    'luy': Language(
+      'luy',
+      '卢雅语',
+    ),
+    'lv': Language(
+      'lv',
+      '拉脱维亚语',
+    ),
+    'mad': Language(
+      'mad',
+      '马都拉语',
+    ),
+    'maf': Language(
+      'maf',
+      '马法语',
+    ),
+    'mag': Language(
+      'mag',
+      '摩揭陀语',
+    ),
+    'mai': Language(
+      'mai',
+      '迈蒂利语',
+    ),
+    'mak': Language(
+      'mak',
+      '望加锡语',
+    ),
+    'man': Language(
+      'man',
+      '曼丁哥语',
+    ),
+    'mas': Language(
+      'mas',
+      '马赛语',
+    ),
+    'mde': Language(
+      'mde',
+      '马坝语',
+    ),
+    'mdf': Language(
+      'mdf',
+      '莫克沙语',
+    ),
+    'mdr': Language(
+      'mdr',
+      '曼达尔语',
+    ),
+    'men': Language(
+      'men',
+      '门德语',
+    ),
+    'mer': Language(
+      'mer',
+      '梅鲁语',
+    ),
+    'mfe': Language(
+      'mfe',
+      '毛里求斯克里奥尔语',
+    ),
+    'mg': Language(
+      'mg',
+      '马拉加斯语',
+    ),
+    'mga': Language(
+      'mga',
+      '中古爱尔兰语',
+    ),
+    'mgh': Language(
+      'mgh',
+      '马库阿语',
+    ),
+    'mgo': Language(
+      'mgo',
+      '梅塔语',
+    ),
+    'mh': Language(
+      'mh',
+      '马绍尔语',
+    ),
+    'mi': Language(
+      'mi',
+      '毛利语',
+    ),
+    'mic': Language(
+      'mic',
+      '密克马克语',
+    ),
+    'min': Language(
+      'min',
+      '米南佳保语',
+    ),
+    'mk': Language(
+      'mk',
+      '马其顿语',
+    ),
+    'ml': Language(
+      'ml',
+      '马拉雅拉姆语',
+    ),
+    'mn': Language(
+      'mn',
+      '蒙古语',
+    ),
+    'mnc': Language(
+      'mnc',
+      '满语',
+    ),
+    'mni': Language(
+      'mni',
+      '曼尼普尔语',
+    ),
+    'moh': Language(
+      'moh',
+      '摩霍克语',
+    ),
+    'mos': Language(
+      'mos',
+      '莫西语',
+    ),
+    'mr': Language(
+      'mr',
+      '马拉地语',
+    ),
+    'ms': Language(
+      'ms',
+      '马来语',
+    ),
+    'mt': Language(
+      'mt',
+      '马耳他语',
+    ),
+    'mua': Language(
+      'mua',
+      '蒙当语',
+    ),
+    'mul': Language(
+      'mul',
+      '多语种',
+    ),
+    'mus': Language(
+      'mus',
+      '克里克语',
+    ),
+    'mwl': Language(
+      'mwl',
+      '米兰德斯语',
+    ),
+    'mwr': Language(
+      'mwr',
+      '马尔瓦里语',
+    ),
+    'my': Language(
+      'my',
+      '缅甸语',
+    ),
+    'mye': Language(
+      'mye',
+      '姆耶内语',
+    ),
+    'myv': Language(
+      'myv',
+      '厄尔兹亚语',
+    ),
+    'mzn': Language(
+      'mzn',
+      '马赞德兰语',
+    ),
+    'na': Language(
+      'na',
+      '瑙鲁语',
+    ),
+    'nan': Language(
+      'nan',
+      '闽南语',
+    ),
+    'nap': Language(
+      'nap',
+      '那不勒斯语',
+    ),
+    'naq': Language(
+      'naq',
+      '纳马语',
+    ),
+    'nb': Language(
+      'nb',
+      '书面挪威语',
+    ),
+    'nd': Language(
+      'nd',
+      '北恩德贝勒语',
+    ),
+    'nds': Language(
+      'nds',
+      '低地德语',
+    ),
+    'nds-NL': Language(
+      'nds-NL',
+      '低萨克森语',
+    ),
+    'ne': Language(
+      'ne',
+      '尼泊尔语',
+    ),
+    'new': Language(
+      'new',
+      '尼瓦尔语',
+    ),
+    'ng': Language(
+      'ng',
+      '恩东加语',
+    ),
+    'nia': Language(
+      'nia',
+      '尼亚斯语',
+    ),
+    'niu': Language(
+      'niu',
+      '纽埃语',
+    ),
+    'nl': Language(
+      'nl',
+      '荷兰语',
+    ),
+    'nl-BE': Language(
+      'nl-BE',
+      '弗拉芒语',
+    ),
+    'nmg': Language(
+      'nmg',
+      '夸西奥语',
+    ),
+    'nn': Language(
+      'nn',
+      '挪威尼诺斯克语',
+    ),
+    'nnh': Language(
+      'nnh',
+      '恩甘澎语',
+    ),
+    'no': Language(
+      'no',
+      '挪威语',
+    ),
+    'nog': Language(
+      'nog',
+      '诺盖语',
+    ),
+    'non': Language(
+      'non',
+      '古诺尔斯语',
+    ),
+    'nqo': Language(
+      'nqo',
+      '西非书面文字',
+    ),
+    'nr': Language(
+      'nr',
+      '南恩德贝勒语',
+    ),
+    'nso': Language(
+      'nso',
+      '北索托语',
+    ),
+    'nus': Language(
+      'nus',
+      '努埃尔语',
+    ),
+    'nv': Language(
+      'nv',
+      '纳瓦霍语',
+    ),
+    'nwc': Language(
+      'nwc',
+      '古典尼瓦尔语',
+    ),
+    'ny': Language(
+      'ny',
+      '齐切瓦语',
+    ),
+    'nym': Language(
+      'nym',
+      '尼扬韦齐语',
+    ),
+    'nyn': Language(
+      'nyn',
+      '尼昂科勒语',
+    ),
+    'nyo': Language(
+      'nyo',
+      '尼奥罗语',
+    ),
+    'nzi': Language(
+      'nzi',
+      '恩济马语',
+    ),
+    'oc': Language(
+      'oc',
+      '奥克语',
+    ),
+    'oj': Language(
+      'oj',
+      '奥吉布瓦语',
+    ),
+    'om': Language(
+      'om',
+      '奥罗莫语',
+    ),
+    'or': Language(
+      'or',
+      '奥里亚语',
+    ),
+    'os': Language(
+      'os',
+      '奥塞梯语',
+    ),
+    'osa': Language(
+      'osa',
+      '奥塞治语',
+    ),
+    'ota': Language(
+      'ota',
+      '奥斯曼土耳其语',
+    ),
+    'pa': Language(
+      'pa',
+      '旁遮普语',
+    ),
+    'pag': Language(
+      'pag',
+      '邦阿西南语',
+    ),
+    'pal': Language(
+      'pal',
+      '巴拉维语',
+    ),
+    'pam': Language(
+      'pam',
+      '邦板牙语',
+    ),
+    'pap': Language(
+      'pap',
+      '帕皮阿门托语',
+    ),
+    'pau': Language(
+      'pau',
+      '帕劳语',
+    ),
+    'pcm': Language(
+      'pcm',
+      '尼日利亚皮钦语',
+    ),
+    'peo': Language(
+      'peo',
+      '古波斯语',
+    ),
+    'phn': Language(
+      'phn',
+      '腓尼基语',
+    ),
+    'pi': Language(
+      'pi',
+      '巴利语',
+    ),
+    'pl': Language(
+      'pl',
+      '波兰语',
+    ),
+    'pon': Language(
+      'pon',
+      '波纳佩语',
+    ),
+    'prg': Language(
+      'prg',
+      '普鲁士语',
+    ),
+    'pro': Language(
+      'pro',
+      '古普罗文斯语',
+    ),
+    'ps': Language(
+      'ps',
+      '普什图语',
+    ),
+    'pt': Language(
+      'pt',
+      '葡萄牙语',
+    ),
+    'pt-BR': Language(
+      'pt-BR',
+      '巴西葡萄牙语',
+    ),
+    'pt-PT': Language(
+      'pt-PT',
+      '欧洲葡萄牙语',
+    ),
+    'qu': Language(
+      'qu',
+      '克丘亚语',
+    ),
+    'quc': Language(
+      'quc',
+      '基切语',
+    ),
+    'raj': Language(
+      'raj',
+      '拉贾斯坦语',
+    ),
+    'rap': Language(
+      'rap',
+      '拉帕努伊语',
+    ),
+    'rar': Language(
+      'rar',
+      '拉罗汤加语',
+    ),
+    'rm': Language(
+      'rm',
+      '罗曼什语',
+    ),
+    'rn': Language(
+      'rn',
+      '隆迪语',
+    ),
+    'ro': Language(
+      'ro',
+      '罗马尼亚语',
+    ),
+    'ro-MD': Language(
+      'ro-MD',
+      '摩尔多瓦语',
+    ),
+    'rof': Language(
+      'rof',
+      '兰博语',
+    ),
+    'rom': Language(
+      'rom',
+      '吉普赛语',
+    ),
+    'ru': Language(
+      'ru',
+      '俄语',
+    ),
+    'rup': Language(
+      'rup',
+      '阿罗马尼亚语',
+    ),
+    'rw': Language(
+      'rw',
+      '卢旺达语',
+    ),
+    'rwk': Language(
+      'rwk',
+      '罗瓦语',
+    ),
+    'sa': Language(
+      'sa',
+      '梵语',
+    ),
+    'sad': Language(
+      'sad',
+      '桑达韦语',
+    ),
+    'sah': Language(
+      'sah',
+      '萨哈语',
+    ),
+    'sam': Language(
+      'sam',
+      '萨马利亚阿拉姆语',
+    ),
+    'saq': Language(
+      'saq',
+      '桑布鲁语',
+    ),
+    'sas': Language(
+      'sas',
+      '萨萨克文',
+    ),
+    'sat': Language(
+      'sat',
+      '桑塔利语',
+    ),
+    'sba': Language(
+      'sba',
+      '甘拜语',
+    ),
+    'sbp': Language(
+      'sbp',
+      '桑古语',
+    ),
+    'sc': Language(
+      'sc',
+      '萨丁语',
+    ),
+    'scn': Language(
+      'scn',
+      '西西里语',
+    ),
+    'sco': Language(
+      'sco',
+      '苏格兰语',
+    ),
+    'sd': Language(
+      'sd',
+      '信德语',
+    ),
+    'sdh': Language(
+      'sdh',
+      '南库尔德语',
+    ),
+    'se': Language(
+      'se',
+      '北方萨米语',
+    ),
+    'see': Language(
+      'see',
+      '塞内卡语',
+    ),
+    'seh': Language(
+      'seh',
+      '塞纳语',
+    ),
+    'sel': Language(
+      'sel',
+      '塞尔库普语',
+    ),
+    'ses': Language(
+      'ses',
+      '东桑海语',
+    ),
+    'sg': Language(
+      'sg',
+      '桑戈语',
+    ),
+    'sga': Language(
+      'sga',
+      '古爱尔兰语',
+    ),
+    'sh': Language(
+      'sh',
+      '塞尔维亚-克罗地亚语',
+    ),
+    'shi': Language(
+      'shi',
+      '希尔哈语',
+    ),
+    'shn': Language(
+      'shn',
+      '掸语',
+    ),
+    'shu': Language(
+      'shu',
+      '乍得阿拉伯语',
+    ),
+    'si': Language(
+      'si',
+      '僧伽罗语',
+    ),
+    'sid': Language(
+      'sid',
+      '悉达摩语',
+    ),
+    'sk': Language(
+      'sk',
+      '斯洛伐克语',
+    ),
+    'sl': Language(
+      'sl',
+      '斯洛文尼亚语',
+    ),
+    'sm': Language(
+      'sm',
+      '萨摩亚语',
+    ),
+    'sma': Language(
+      'sma',
+      '南萨米语',
+    ),
+    'smj': Language(
+      'smj',
+      '吕勒萨米语',
+    ),
+    'smn': Language(
+      'smn',
+      '伊纳里萨米语',
+    ),
+    'sms': Language(
+      'sms',
+      '斯科特萨米语',
+    ),
+    'sn': Language(
+      'sn',
+      '绍纳语',
+    ),
+    'snk': Language(
+      'snk',
+      '索宁克语',
+    ),
+    'so': Language(
+      'so',
+      '索马里语',
+    ),
+    'sog': Language(
+      'sog',
+      '粟特语',
+    ),
+    'sq': Language(
+      'sq',
+      '阿尔巴尼亚语',
+    ),
+    'sr': Language(
+      'sr',
+      '塞尔维亚语',
+    ),
+    'srn': Language(
+      'srn',
+      '苏里南汤加语',
+    ),
+    'srr': Language(
+      'srr',
+      '塞雷尔语',
+    ),
+    'ss': Language(
+      'ss',
+      '斯瓦蒂语',
+    ),
+    'ssy': Language(
+      'ssy',
+      '萨霍语',
+    ),
+    'st': Language(
+      'st',
+      '南索托语',
+    ),
+    'su': Language(
+      'su',
+      '巽他语',
+    ),
+    'suk': Language(
+      'suk',
+      '苏库马语',
+    ),
+    'sus': Language(
+      'sus',
+      '苏苏语',
+    ),
+    'sux': Language(
+      'sux',
+      '苏美尔语',
+    ),
+    'sv': Language(
+      'sv',
+      '瑞典语',
+    ),
+    'sw': Language(
+      'sw',
+      '斯瓦希里语',
+    ),
+    'sw-CD': Language(
+      'sw-CD',
+      '刚果斯瓦希里语',
+    ),
+    'swb': Language(
+      'swb',
+      '科摩罗语',
+    ),
+    'syc': Language(
+      'syc',
+      '古典叙利亚语',
+    ),
+    'syr': Language(
+      'syr',
+      '叙利亚语',
+    ),
+    'ta': Language(
+      'ta',
+      '泰米尔语',
+    ),
+    'te': Language(
+      'te',
+      '泰卢固语',
+    ),
+    'tem': Language(
+      'tem',
+      '泰姆奈语',
+    ),
+    'teo': Language(
+      'teo',
+      '特索语',
+    ),
+    'ter': Language(
+      'ter',
+      '特伦诺语',
+    ),
+    'tet': Language(
+      'tet',
+      '德顿语',
+    ),
+    'tg': Language(
+      'tg',
+      '塔吉克语',
+    ),
+    'th': Language(
+      'th',
+      '泰语',
+    ),
+    'ti': Language(
+      'ti',
+      '提格利尼亚语',
+    ),
+    'tig': Language(
+      'tig',
+      '提格雷语',
+    ),
+    'tiv': Language(
+      'tiv',
+      '蒂夫语',
+    ),
+    'tk': Language(
+      'tk',
+      '土库曼语',
+    ),
+    'tkl': Language(
+      'tkl',
+      '托克劳语',
+    ),
+    'tl': Language(
+      'tl',
+      '他加禄语',
+    ),
+    'tlh': Language(
+      'tlh',
+      '克林贡语',
+    ),
+    'tli': Language(
+      'tli',
+      '特林吉特语',
+    ),
+    'tmh': Language(
+      'tmh',
+      '塔马奇克语',
+    ),
+    'tn': Language(
+      'tn',
+      '茨瓦纳语',
+    ),
+    'to': Language(
+      'to',
+      '汤加语',
+    ),
+    'tog': Language(
+      'tog',
+      '尼亚萨汤加语',
+    ),
+    'tpi': Language(
+      'tpi',
+      '托克皮辛语',
+    ),
+    'tr': Language(
+      'tr',
+      '土耳其语',
+    ),
+    'trv': Language(
+      'trv',
+      '赛德克语',
+    ),
+    'ts': Language(
+      'ts',
+      '聪加语',
+    ),
+    'tsi': Language(
+      'tsi',
+      '钦西安语',
+    ),
+    'tt': Language(
+      'tt',
+      '鞑靼语',
+    ),
+    'tum': Language(
+      'tum',
+      '通布卡语',
+    ),
+    'tvl': Language(
+      'tvl',
+      '图瓦卢语',
+    ),
+    'tw': Language(
+      'tw',
+      '契维语',
+    ),
+    'twq': Language(
+      'twq',
+      '北桑海语',
+    ),
+    'ty': Language(
+      'ty',
+      '塔希提语',
+    ),
+    'tyv': Language(
+      'tyv',
+      '图瓦语',
+    ),
+    'tzm': Language(
+      'tzm',
+      '塔马齐格特语',
+    ),
+    'udm': Language(
+      'udm',
+      '乌德穆尔特语',
+    ),
+    'ug': Language(
+      'ug',
+      '维吾尔语',
+    ),
+    'uga': Language(
+      'uga',
+      '乌加里特语',
+    ),
+    'uk': Language(
+      'uk',
+      '乌克兰语',
+    ),
+    'umb': Language(
+      'umb',
+      '翁本杜语',
+    ),
+    'und': Language(
+      'und',
+      '未知语言',
+    ),
+    'ur': Language(
+      'ur',
+      '乌尔都语',
+    ),
+    'uz': Language(
+      'uz',
+      '乌兹别克语',
+    ),
+    'vai': Language(
+      'vai',
+      '瓦伊语',
+    ),
+    've': Language(
+      've',
+      '文达语',
+    ),
+    'vep': Language(
+      'vep',
+      '维普森语',
+    ),
+    'vi': Language(
+      'vi',
+      '越南语',
+    ),
+    'vo': Language(
+      'vo',
+      '沃拉普克语',
+    ),
+    'vot': Language(
+      'vot',
+      '沃提克语',
+    ),
+    'vun': Language(
+      'vun',
+      '温旧语',
+    ),
+    'wa': Language(
+      'wa',
+      '瓦隆语',
+    ),
+    'wae': Language(
+      'wae',
+      '瓦尔瑟语',
+    ),
+    'wal': Language(
+      'wal',
+      '瓦拉莫语',
+    ),
+    'war': Language(
+      'war',
+      '瓦瑞语',
+    ),
+    'was': Language(
+      'was',
+      '瓦绍语',
+    ),
+    'wbp': Language(
+      'wbp',
+      '瓦尔皮瑞语',
+    ),
+    'wo': Language(
+      'wo',
+      '沃洛夫语',
+    ),
+    'wuu': Language(
+      'wuu',
+      '吴语',
+    ),
+    'xal': Language(
+      'xal',
+      '卡尔梅克语',
+    ),
+    'xh': Language(
+      'xh',
+      '科萨语',
+    ),
+    'xog': Language(
+      'xog',
+      '索加语',
+    ),
+    'yao': Language(
+      'yao',
+      '瑶族语',
+    ),
+    'yap': Language(
+      'yap',
+      '雅浦语',
+    ),
+    'yav': Language(
+      'yav',
+      '洋卞语',
+    ),
+    'ybb': Language(
+      'ybb',
+      '耶姆巴语',
+    ),
+    'yi': Language(
+      'yi',
+      '意第绪语',
+    ),
+    'yo': Language(
+      'yo',
+      '约鲁巴语',
+    ),
+    'yue': Language(
+      'yue',
+      '粤语',
+      menu: '广东话',
+    ),
+    'za': Language(
+      'za',
+      '壮语',
+    ),
+    'zap': Language(
+      'zap',
+      '萨波蒂克语',
+    ),
+    'zbl': Language(
+      'zbl',
+      '布里斯符号',
+    ),
+    'zen': Language(
+      'zen',
+      '泽纳加语',
+    ),
+    'zgh': Language(
+      'zgh',
+      '标准摩洛哥塔马塞特语',
+    ),
+    'zh': Language(
+      'zh',
+      '中文',
+      menu: '普通话',
+    ),
+    'zh-Hans': Language(
+      'zh-Hans',
+      '简体中文',
+    ),
+    'zh-Hant': Language(
+      'zh-Hant',
+      '繁体中文',
+    ),
+    'zu': Language(
+      'zu',
+      '祖鲁语',
+    ),
+    'zun': Language(
+      'zun',
+      '祖尼语',
+    ),
+    'zxx': Language(
+      'zxx',
+      '无语言内容',
+    ),
+    'zza': Language(
+      'zza',
+      '扎扎语',
+    ),
+  }, (key) => key.toLowerCase());
 }
 
 class UnitsZh implements Units {
@@ -4412,7 +6578,7 @@ class TerritoriesZh implements Territories {
       );
 
   @override
-  final countries = <String, Territory>{
+  final countries = CanonicalizedMap<String, String, Territory>.from({
     'AC': Territory(
       'AC',
       '阿森松岛',
@@ -5473,5 +7639,5 @@ class TerritoriesZh implements Territories {
       'ZW',
       '津巴布韦',
     ),
-  };
+  }, (key) => key.toLowerCase());
 }

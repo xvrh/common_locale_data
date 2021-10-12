@@ -63,7 +63,7 @@ class Territories${languageUpper(language)} implements Territories {
 
   var countryCode = StringBuffer()..writeln('''
 @override
-final countries = <String, Territory>{
+final countries = CanonicalizedMap<String, String, Territory>.from({
 ''');
   for (var entry in reference.entries) {
     if (_nonCountryMatcher.hasMatch(entry.key) || entry.key == 'ZZ') {
@@ -76,7 +76,7 @@ final countries = <String, Territory>{
       countryCode.writeln("'${entry.key}': ${translatedTerritory(entry.key)},");
     }
   }
-  countryCode.writeln('};');
+  countryCode.writeln('}, (key) => key.toLowerCase());');
 
   output.writeln(countryCode);
   output.writeln('}');

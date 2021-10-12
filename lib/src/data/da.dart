@@ -1,5 +1,7 @@
+import 'package:collection/collection.dart';
 import '../../common_locale_data.dart' show CommonLocaleData;
 import '../date_fields.dart';
+import '../languages.dart';
 import '../shared.dart';
 import '../territories.dart';
 import '../units.dart';
@@ -15,6 +17,10 @@ class CommonLocaleDataDa implements CommonLocaleData {
   @override
   DateFields get date => _dateFields;
 
+  static final _languages = LanguagesDa._();
+  @override
+  Languages get languages => _languages;
+
   static final _units = UnitsDa._();
   @override
   Units get units => _units;
@@ -22,6 +28,2164 @@ class CommonLocaleDataDa implements CommonLocaleData {
   static final _territories = TerritoriesDa._();
   @override
   Territories get territories => _territories;
+}
+
+class LanguagesDa extends Languages {
+  LanguagesDa._();
+
+  @override
+  final languages = CanonicalizedMap<String, String, Language>.from({
+    'aa': Language(
+      'aa',
+      'afar',
+    ),
+    'ab': Language(
+      'ab',
+      'abkhasisk',
+    ),
+    'ace': Language(
+      'ace',
+      'achinesisk',
+    ),
+    'ach': Language(
+      'ach',
+      'acoli',
+    ),
+    'ada': Language(
+      'ada',
+      'adangme',
+    ),
+    'ady': Language(
+      'ady',
+      'adyghe',
+    ),
+    'ae': Language(
+      'ae',
+      'avestan',
+    ),
+    'af': Language(
+      'af',
+      'afrikaans',
+    ),
+    'afh': Language(
+      'afh',
+      'afrihili',
+    ),
+    'agq': Language(
+      'agq',
+      'aghem',
+    ),
+    'ain': Language(
+      'ain',
+      'ainu',
+    ),
+    'ak': Language(
+      'ak',
+      'akan',
+    ),
+    'akk': Language(
+      'akk',
+      'akkadisk',
+    ),
+    'ale': Language(
+      'ale',
+      'aleutisk',
+    ),
+    'alt': Language(
+      'alt',
+      'sydaltaisk',
+    ),
+    'am': Language(
+      'am',
+      'amharisk',
+    ),
+    'an': Language(
+      'an',
+      'aragonesisk',
+    ),
+    'ang': Language(
+      'ang',
+      'oldengelsk',
+    ),
+    'anp': Language(
+      'anp',
+      'angika',
+    ),
+    'ar': Language(
+      'ar',
+      'arabisk',
+    ),
+    'ar-001': Language(
+      'ar-001',
+      'moderne standardarabisk',
+    ),
+    'arc': Language(
+      'arc',
+      'aramæisk',
+    ),
+    'arn': Language(
+      'arn',
+      'mapudungun',
+    ),
+    'arp': Language(
+      'arp',
+      'arapaho',
+    ),
+    'ars': Language(
+      'ars',
+      'Najd-arabisk',
+      menu: 'arabisk, najdi',
+    ),
+    'arw': Language(
+      'arw',
+      'arawak',
+    ),
+    'as': Language(
+      'as',
+      'assamesisk',
+    ),
+    'asa': Language(
+      'asa',
+      'asu',
+    ),
+    'ast': Language(
+      'ast',
+      'asturisk',
+    ),
+    'av': Language(
+      'av',
+      'avarisk',
+    ),
+    'awa': Language(
+      'awa',
+      'awadhi',
+    ),
+    'ay': Language(
+      'ay',
+      'aymara',
+    ),
+    'az': Language(
+      'az',
+      'aserbajdsjansk',
+      short: 'azeri',
+    ),
+    'ba': Language(
+      'ba',
+      'bashkir',
+    ),
+    'bal': Language(
+      'bal',
+      'baluchi',
+    ),
+    'ban': Language(
+      'ban',
+      'balinesisk',
+    ),
+    'bas': Language(
+      'bas',
+      'basaa',
+    ),
+    'bax': Language(
+      'bax',
+      'bamun',
+    ),
+    'bbj': Language(
+      'bbj',
+      'ghomala',
+    ),
+    'be': Language(
+      'be',
+      'hviderussisk',
+    ),
+    'bej': Language(
+      'bej',
+      'beja',
+    ),
+    'bem': Language(
+      'bem',
+      'bemba',
+    ),
+    'bez': Language(
+      'bez',
+      'bena',
+    ),
+    'bfd': Language(
+      'bfd',
+      'bafut',
+    ),
+    'bg': Language(
+      'bg',
+      'bulgarsk',
+    ),
+    'bgn': Language(
+      'bgn',
+      'vestbaluchi',
+    ),
+    'bho': Language(
+      'bho',
+      'bhojpuri',
+    ),
+    'bi': Language(
+      'bi',
+      'bislama',
+    ),
+    'bik': Language(
+      'bik',
+      'bikol',
+    ),
+    'bin': Language(
+      'bin',
+      'bini',
+    ),
+    'bkm': Language(
+      'bkm',
+      'kom',
+    ),
+    'bla': Language(
+      'bla',
+      'siksika',
+    ),
+    'bm': Language(
+      'bm',
+      'bambara',
+    ),
+    'bn': Language(
+      'bn',
+      'bengali',
+    ),
+    'bo': Language(
+      'bo',
+      'tibetansk',
+    ),
+    'br': Language(
+      'br',
+      'bretonsk',
+    ),
+    'bra': Language(
+      'bra',
+      'braj',
+    ),
+    'brx': Language(
+      'brx',
+      'bodo',
+    ),
+    'bs': Language(
+      'bs',
+      'bosnisk',
+    ),
+    'bss': Language(
+      'bss',
+      'bakossi',
+    ),
+    'bua': Language(
+      'bua',
+      'buriatisk',
+    ),
+    'bug': Language(
+      'bug',
+      'buginesisk',
+    ),
+    'bum': Language(
+      'bum',
+      'bulu',
+    ),
+    'byn': Language(
+      'byn',
+      'blin',
+    ),
+    'byv': Language(
+      'byv',
+      'medumba',
+    ),
+    'ca': Language(
+      'ca',
+      'catalansk',
+    ),
+    'cad': Language(
+      'cad',
+      'caddo',
+    ),
+    'car': Language(
+      'car',
+      'caribisk',
+    ),
+    'cay': Language(
+      'cay',
+      'cayuga',
+    ),
+    'cch': Language(
+      'cch',
+      'atsam',
+    ),
+    'ccp': Language(
+      'ccp',
+      'chakma',
+    ),
+    'ce': Language(
+      'ce',
+      'tjetjensk',
+    ),
+    'ceb': Language(
+      'ceb',
+      'cebuano',
+    ),
+    'cgg': Language(
+      'cgg',
+      'chiga',
+    ),
+    'ch': Language(
+      'ch',
+      'chamorro',
+    ),
+    'chb': Language(
+      'chb',
+      'chibcha',
+    ),
+    'chg': Language(
+      'chg',
+      'chagatai',
+    ),
+    'chk': Language(
+      'chk',
+      'chuukese',
+    ),
+    'chm': Language(
+      'chm',
+      'mari',
+    ),
+    'chn': Language(
+      'chn',
+      'chinook',
+    ),
+    'cho': Language(
+      'cho',
+      'choctaw',
+    ),
+    'chp': Language(
+      'chp',
+      'chipewyan',
+    ),
+    'chr': Language(
+      'chr',
+      'cherokee',
+    ),
+    'chy': Language(
+      'chy',
+      'cheyenne',
+    ),
+    'ckb': Language(
+      'ckb',
+      'sorani',
+      variant: 'centralkurdisk',
+      menu: 'kurdisk, sorani',
+    ),
+    'co': Language(
+      'co',
+      'korsikansk',
+    ),
+    'cop': Language(
+      'cop',
+      'koptisk',
+    ),
+    'cr': Language(
+      'cr',
+      'cree',
+    ),
+    'crh': Language(
+      'crh',
+      'krim-tyrkisk',
+    ),
+    'crs': Language(
+      'crs',
+      'seselwa (kreol-fransk)',
+    ),
+    'cs': Language(
+      'cs',
+      'tjekkisk',
+    ),
+    'csb': Language(
+      'csb',
+      'kasjubisk',
+    ),
+    'cu': Language(
+      'cu',
+      'kirkeslavisk',
+    ),
+    'cv': Language(
+      'cv',
+      'chuvash',
+    ),
+    'cy': Language(
+      'cy',
+      'walisisk',
+    ),
+    'da': Language(
+      'da',
+      'dansk',
+    ),
+    'dak': Language(
+      'dak',
+      'dakota',
+    ),
+    'dar': Language(
+      'dar',
+      'dargwa',
+    ),
+    'dav': Language(
+      'dav',
+      'taita',
+    ),
+    'de': Language(
+      'de',
+      'tysk',
+    ),
+    'de-AT': Language(
+      'de-AT',
+      'østrigsk tysk',
+    ),
+    'de-CH': Language(
+      'de-CH',
+      'schweizerhøjtysk',
+    ),
+    'del': Language(
+      'del',
+      'delaware',
+    ),
+    'den': Language(
+      'den',
+      'athapaskisk',
+    ),
+    'dgr': Language(
+      'dgr',
+      'dogrib',
+    ),
+    'din': Language(
+      'din',
+      'dinka',
+    ),
+    'dje': Language(
+      'dje',
+      'zarma',
+    ),
+    'doi': Language(
+      'doi',
+      'dogri',
+    ),
+    'dsb': Language(
+      'dsb',
+      'nedersorbisk',
+    ),
+    'dua': Language(
+      'dua',
+      'duala',
+    ),
+    'dum': Language(
+      'dum',
+      'middelhollandsk',
+    ),
+    'dv': Language(
+      'dv',
+      'divehi',
+    ),
+    'dyo': Language(
+      'dyo',
+      'jola-fonyi',
+    ),
+    'dyu': Language(
+      'dyu',
+      'dyula',
+    ),
+    'dz': Language(
+      'dz',
+      'dzongkha',
+    ),
+    'dzg': Language(
+      'dzg',
+      'dazaga',
+    ),
+    'ebu': Language(
+      'ebu',
+      'kiembu',
+    ),
+    'ee': Language(
+      'ee',
+      'ewe',
+    ),
+    'efi': Language(
+      'efi',
+      'efik',
+    ),
+    'egy': Language(
+      'egy',
+      'oldegyptisk',
+    ),
+    'eka': Language(
+      'eka',
+      'ekajuk',
+    ),
+    'el': Language(
+      'el',
+      'græsk',
+    ),
+    'elx': Language(
+      'elx',
+      'elamitisk',
+    ),
+    'en': Language(
+      'en',
+      'engelsk',
+    ),
+    'en-AU': Language(
+      'en-AU',
+      'australsk engelsk',
+    ),
+    'en-CA': Language(
+      'en-CA',
+      'canadisk engelsk',
+    ),
+    'en-GB': Language(
+      'en-GB',
+      'britisk engelsk',
+      short: 'britisk engelsk',
+    ),
+    'en-US': Language(
+      'en-US',
+      'amerikansk engelsk',
+      short: 'amerikansk engelsk',
+    ),
+    'enm': Language(
+      'enm',
+      'middelengelsk',
+    ),
+    'eo': Language(
+      'eo',
+      'esperanto',
+    ),
+    'es': Language(
+      'es',
+      'spansk',
+    ),
+    'es-419': Language(
+      'es-419',
+      'latinamerikansk spansk',
+    ),
+    'es-ES': Language(
+      'es-ES',
+      'europæisk spansk',
+    ),
+    'es-MX': Language(
+      'es-MX',
+      'mexicansk spansk',
+    ),
+    'et': Language(
+      'et',
+      'estisk',
+    ),
+    'eu': Language(
+      'eu',
+      'baskisk',
+    ),
+    'ewo': Language(
+      'ewo',
+      'ewondo',
+    ),
+    'fa': Language(
+      'fa',
+      'persisk',
+    ),
+    'fa-AF': Language(
+      'fa-AF',
+      'dari',
+    ),
+    'fan': Language(
+      'fan',
+      'fang',
+    ),
+    'fat': Language(
+      'fat',
+      'fanti',
+    ),
+    'ff': Language(
+      'ff',
+      'fulah',
+    ),
+    'fi': Language(
+      'fi',
+      'finsk',
+    ),
+    'fil': Language(
+      'fil',
+      'filippinsk',
+    ),
+    'fj': Language(
+      'fj',
+      'fijiansk',
+    ),
+    'fo': Language(
+      'fo',
+      'færøsk',
+    ),
+    'fon': Language(
+      'fon',
+      'fon',
+    ),
+    'fr': Language(
+      'fr',
+      'fransk',
+    ),
+    'fr-CA': Language(
+      'fr-CA',
+      'canadisk fransk',
+    ),
+    'fr-CH': Language(
+      'fr-CH',
+      'schweizisk fransk',
+    ),
+    'frc': Language(
+      'frc',
+      'cajunfransk',
+    ),
+    'frm': Language(
+      'frm',
+      'middelfransk',
+    ),
+    'fro': Language(
+      'fro',
+      'oldfransk',
+    ),
+    'frr': Language(
+      'frr',
+      'nordfrisisk',
+    ),
+    'frs': Language(
+      'frs',
+      'østfrisisk',
+    ),
+    'fur': Language(
+      'fur',
+      'friulisk',
+    ),
+    'fy': Language(
+      'fy',
+      'vestfrisisk',
+    ),
+    'ga': Language(
+      'ga',
+      'irsk',
+    ),
+    'gaa': Language(
+      'gaa',
+      'ga',
+    ),
+    'gag': Language(
+      'gag',
+      'gagauzisk',
+    ),
+    'gan': Language(
+      'gan',
+      'gan-kinesisk',
+    ),
+    'gay': Language(
+      'gay',
+      'gayo',
+    ),
+    'gba': Language(
+      'gba',
+      'gbaya',
+    ),
+    'gd': Language(
+      'gd',
+      'skotsk gælisk',
+    ),
+    'gez': Language(
+      'gez',
+      'geez',
+    ),
+    'gil': Language(
+      'gil',
+      'gilbertesisk',
+    ),
+    'gl': Language(
+      'gl',
+      'galicisk',
+    ),
+    'gmh': Language(
+      'gmh',
+      'middelhøjtysk',
+    ),
+    'gn': Language(
+      'gn',
+      'guarani',
+    ),
+    'goh': Language(
+      'goh',
+      'oldhøjtysk',
+    ),
+    'gon': Language(
+      'gon',
+      'gondi',
+    ),
+    'gor': Language(
+      'gor',
+      'gorontalo',
+    ),
+    'got': Language(
+      'got',
+      'gotisk',
+    ),
+    'grb': Language(
+      'grb',
+      'grebo',
+    ),
+    'grc': Language(
+      'grc',
+      'oldgræsk',
+    ),
+    'gsw': Language(
+      'gsw',
+      'schweizertysk',
+    ),
+    'gu': Language(
+      'gu',
+      'gujarati',
+    ),
+    'guz': Language(
+      'guz',
+      'gusii',
+    ),
+    'gv': Language(
+      'gv',
+      'manx',
+    ),
+    'gwi': Language(
+      'gwi',
+      'gwichin',
+    ),
+    'ha': Language(
+      'ha',
+      'hausa',
+    ),
+    'hai': Language(
+      'hai',
+      'haida',
+    ),
+    'hak': Language(
+      'hak',
+      'hakka-kinesisk',
+    ),
+    'haw': Language(
+      'haw',
+      'hawaiiansk',
+    ),
+    'he': Language(
+      'he',
+      'hebraisk',
+    ),
+    'hi': Language(
+      'hi',
+      'hindi',
+    ),
+    'hil': Language(
+      'hil',
+      'hiligaynon',
+    ),
+    'hit': Language(
+      'hit',
+      'hittitisk',
+    ),
+    'hmn': Language(
+      'hmn',
+      'hmong',
+    ),
+    'ho': Language(
+      'ho',
+      'hirimotu',
+    ),
+    'hr': Language(
+      'hr',
+      'kroatisk',
+    ),
+    'hsb': Language(
+      'hsb',
+      'øvresorbisk',
+    ),
+    'hsn': Language(
+      'hsn',
+      'xiang-kinesisk',
+    ),
+    'ht': Language(
+      'ht',
+      'haitisk',
+    ),
+    'hu': Language(
+      'hu',
+      'ungarsk',
+    ),
+    'hup': Language(
+      'hup',
+      'hupa',
+    ),
+    'hy': Language(
+      'hy',
+      'armensk',
+    ),
+    'hz': Language(
+      'hz',
+      'herero',
+    ),
+    'ia': Language(
+      'ia',
+      'interlingua',
+    ),
+    'iba': Language(
+      'iba',
+      'iban',
+    ),
+    'ibb': Language(
+      'ibb',
+      'ibibio',
+    ),
+    'id': Language(
+      'id',
+      'indonesisk',
+    ),
+    'ie': Language(
+      'ie',
+      'interlingue',
+    ),
+    'ig': Language(
+      'ig',
+      'igbo',
+    ),
+    'ii': Language(
+      'ii',
+      'sichuan yi',
+    ),
+    'ik': Language(
+      'ik',
+      'inupiaq',
+    ),
+    'ilo': Language(
+      'ilo',
+      'iloko',
+    ),
+    'inh': Language(
+      'inh',
+      'ingush',
+    ),
+    'io': Language(
+      'io',
+      'ido',
+    ),
+    'is': Language(
+      'is',
+      'islandsk',
+    ),
+    'it': Language(
+      'it',
+      'italiensk',
+    ),
+    'iu': Language(
+      'iu',
+      'inuktitut',
+    ),
+    'ja': Language(
+      'ja',
+      'japansk',
+    ),
+    'jbo': Language(
+      'jbo',
+      'lojban',
+    ),
+    'jgo': Language(
+      'jgo',
+      'ngomba',
+    ),
+    'jmc': Language(
+      'jmc',
+      'machame',
+    ),
+    'jpr': Language(
+      'jpr',
+      'jødisk-persisk',
+    ),
+    'jrb': Language(
+      'jrb',
+      'jødisk-arabisk',
+    ),
+    'jv': Language(
+      'jv',
+      'javanesisk',
+    ),
+    'ka': Language(
+      'ka',
+      'georgisk',
+    ),
+    'kaa': Language(
+      'kaa',
+      'karakalpakisk',
+    ),
+    'kab': Language(
+      'kab',
+      'kabylisk',
+    ),
+    'kac': Language(
+      'kac',
+      'kachin',
+    ),
+    'kaj': Language(
+      'kaj',
+      'jju',
+    ),
+    'kam': Language(
+      'kam',
+      'kamba',
+    ),
+    'kaw': Language(
+      'kaw',
+      'kawi',
+    ),
+    'kbd': Language(
+      'kbd',
+      'kabardian',
+    ),
+    'kbl': Language(
+      'kbl',
+      'kanembu',
+    ),
+    'kcg': Language(
+      'kcg',
+      'tyap',
+    ),
+    'kde': Language(
+      'kde',
+      'makonde',
+    ),
+    'kea': Language(
+      'kea',
+      'kapverdisk',
+    ),
+    'kfo': Language(
+      'kfo',
+      'koro',
+    ),
+    'kg': Language(
+      'kg',
+      'kongo',
+    ),
+    'kgp': Language(
+      'kgp',
+      'kgp',
+    ),
+    'kha': Language(
+      'kha',
+      'khasi',
+    ),
+    'kho': Language(
+      'kho',
+      'khotanesisk',
+    ),
+    'khq': Language(
+      'khq',
+      'koyra-chiini',
+    ),
+    'ki': Language(
+      'ki',
+      'kikuyu',
+    ),
+    'kj': Language(
+      'kj',
+      'kuanyama',
+    ),
+    'kk': Language(
+      'kk',
+      'kasakhisk',
+    ),
+    'kkj': Language(
+      'kkj',
+      'kako',
+    ),
+    'kl': Language(
+      'kl',
+      'grønlandsk',
+    ),
+    'kln': Language(
+      'kln',
+      'kalenjin',
+    ),
+    'km': Language(
+      'km',
+      'khmer',
+    ),
+    'kmb': Language(
+      'kmb',
+      'kimbundu',
+    ),
+    'kn': Language(
+      'kn',
+      'kannada',
+    ),
+    'ko': Language(
+      'ko',
+      'koreansk',
+    ),
+    'koi': Language(
+      'koi',
+      'komi-permjakisk',
+    ),
+    'kok': Language(
+      'kok',
+      'konkani',
+    ),
+    'kos': Language(
+      'kos',
+      'kosraean',
+    ),
+    'kpe': Language(
+      'kpe',
+      'kpelle',
+    ),
+    'kr': Language(
+      'kr',
+      'kanuri',
+    ),
+    'krc': Language(
+      'krc',
+      'karatjai-balkar',
+    ),
+    'krl': Language(
+      'krl',
+      'karelsk',
+    ),
+    'kru': Language(
+      'kru',
+      'kurukh',
+    ),
+    'ks': Language(
+      'ks',
+      'kashmiri',
+    ),
+    'ksb': Language(
+      'ksb',
+      'shambala',
+    ),
+    'ksf': Language(
+      'ksf',
+      'bafia',
+    ),
+    'ksh': Language(
+      'ksh',
+      'kölsch',
+    ),
+    'ku': Language(
+      'ku',
+      'kurdisk',
+    ),
+    'kum': Language(
+      'kum',
+      'kymyk',
+    ),
+    'kut': Language(
+      'kut',
+      'kutenaj',
+    ),
+    'kv': Language(
+      'kv',
+      'komi',
+    ),
+    'kw': Language(
+      'kw',
+      'cornisk',
+    ),
+    'ky': Language(
+      'ky',
+      'kirgisisk',
+    ),
+    'la': Language(
+      'la',
+      'latin',
+    ),
+    'lad': Language(
+      'lad',
+      'ladino',
+    ),
+    'lag': Language(
+      'lag',
+      'langi',
+    ),
+    'lah': Language(
+      'lah',
+      'lahnda',
+    ),
+    'lam': Language(
+      'lam',
+      'lamba',
+    ),
+    'lb': Language(
+      'lb',
+      'luxembourgsk',
+    ),
+    'lez': Language(
+      'lez',
+      'lezghian',
+    ),
+    'lg': Language(
+      'lg',
+      'ganda',
+    ),
+    'li': Language(
+      'li',
+      'limburgsk',
+    ),
+    'lij': Language(
+      'lij',
+      'lij',
+    ),
+    'lkt': Language(
+      'lkt',
+      'lakota',
+    ),
+    'ln': Language(
+      'ln',
+      'lingala',
+    ),
+    'lo': Language(
+      'lo',
+      'lao',
+    ),
+    'lol': Language(
+      'lol',
+      'mongo',
+    ),
+    'lou': Language(
+      'lou',
+      'Louisiana-kreolsk',
+    ),
+    'loz': Language(
+      'loz',
+      'lozi',
+    ),
+    'lrc': Language(
+      'lrc',
+      'nordluri',
+    ),
+    'lt': Language(
+      'lt',
+      'litauisk',
+    ),
+    'lu': Language(
+      'lu',
+      'luba-Katanga',
+    ),
+    'lua': Language(
+      'lua',
+      'luba-Lulua',
+    ),
+    'lui': Language(
+      'lui',
+      'luiseno',
+    ),
+    'lun': Language(
+      'lun',
+      'lunda',
+    ),
+    'luo': Language(
+      'luo',
+      'luo',
+    ),
+    'lus': Language(
+      'lus',
+      'lushai',
+    ),
+    'luy': Language(
+      'luy',
+      'luyana',
+    ),
+    'lv': Language(
+      'lv',
+      'lettisk',
+    ),
+    'mad': Language(
+      'mad',
+      'madurese',
+    ),
+    'maf': Language(
+      'maf',
+      'mafa',
+    ),
+    'mag': Language(
+      'mag',
+      'magahi',
+    ),
+    'mai': Language(
+      'mai',
+      'maithili',
+    ),
+    'mak': Language(
+      'mak',
+      'makasar',
+    ),
+    'man': Language(
+      'man',
+      'mandingo',
+    ),
+    'mas': Language(
+      'mas',
+      'masai',
+    ),
+    'mde': Language(
+      'mde',
+      'maba',
+    ),
+    'mdf': Language(
+      'mdf',
+      'moksha',
+    ),
+    'mdr': Language(
+      'mdr',
+      'mandar',
+    ),
+    'men': Language(
+      'men',
+      'mende',
+    ),
+    'mer': Language(
+      'mer',
+      'meru',
+    ),
+    'mfe': Language(
+      'mfe',
+      'morisyen',
+    ),
+    'mg': Language(
+      'mg',
+      'malagassisk',
+    ),
+    'mga': Language(
+      'mga',
+      'middelirsk',
+    ),
+    'mgh': Language(
+      'mgh',
+      'makhuwa-meetto',
+    ),
+    'mgo': Language(
+      'mgo',
+      'meta',
+    ),
+    'mh': Language(
+      'mh',
+      'marshallese',
+    ),
+    'mi': Language(
+      'mi',
+      'maori',
+    ),
+    'mic': Language(
+      'mic',
+      'micmac',
+    ),
+    'min': Language(
+      'min',
+      'minangkabau',
+    ),
+    'mk': Language(
+      'mk',
+      'makedonsk',
+    ),
+    'ml': Language(
+      'ml',
+      'malayalam',
+    ),
+    'mn': Language(
+      'mn',
+      'mongolsk',
+    ),
+    'mnc': Language(
+      'mnc',
+      'manchu',
+    ),
+    'mni': Language(
+      'mni',
+      'manipuri',
+    ),
+    'moh': Language(
+      'moh',
+      'mohawk',
+    ),
+    'mos': Language(
+      'mos',
+      'mossi',
+    ),
+    'mr': Language(
+      'mr',
+      'marathisk',
+    ),
+    'ms': Language(
+      'ms',
+      'malajisk',
+    ),
+    'mt': Language(
+      'mt',
+      'maltesisk',
+    ),
+    'mua': Language(
+      'mua',
+      'mundang',
+    ),
+    'mul': Language(
+      'mul',
+      'flere sprog',
+    ),
+    'mus': Language(
+      'mus',
+      'creek',
+    ),
+    'mwl': Language(
+      'mwl',
+      'mirandesisk',
+    ),
+    'mwr': Language(
+      'mwr',
+      'marwari',
+    ),
+    'my': Language(
+      'my',
+      'burmesisk',
+    ),
+    'mye': Language(
+      'mye',
+      'myene',
+    ),
+    'myv': Language(
+      'myv',
+      'erzya',
+    ),
+    'mzn': Language(
+      'mzn',
+      'mazenisk',
+    ),
+    'na': Language(
+      'na',
+      'nauru',
+    ),
+    'nan': Language(
+      'nan',
+      'min-kinesisk',
+    ),
+    'nap': Language(
+      'nap',
+      'napolitansk',
+    ),
+    'naq': Language(
+      'naq',
+      'nama',
+    ),
+    'nb': Language(
+      'nb',
+      'bokmål',
+    ),
+    'nd': Language(
+      'nd',
+      'nordndebele',
+    ),
+    'nds': Language(
+      'nds',
+      'nedertysk',
+    ),
+    'nds-NL': Language(
+      'nds-NL',
+      'nedertysk (Holland)',
+    ),
+    'ne': Language(
+      'ne',
+      'nepalesisk',
+    ),
+    'new': Language(
+      'new',
+      'newari',
+    ),
+    'ng': Language(
+      'ng',
+      'ndonga',
+    ),
+    'nia': Language(
+      'nia',
+      'nias',
+    ),
+    'niu': Language(
+      'niu',
+      'niueansk',
+    ),
+    'nl': Language(
+      'nl',
+      'hollandsk',
+    ),
+    'nl-BE': Language(
+      'nl-BE',
+      'flamsk',
+    ),
+    'nmg': Language(
+      'nmg',
+      'kwasio',
+    ),
+    'nn': Language(
+      'nn',
+      'nynorsk',
+    ),
+    'nnh': Language(
+      'nnh',
+      'ngiemboon',
+    ),
+    'no': Language(
+      'no',
+      'norsk',
+    ),
+    'nog': Language(
+      'nog',
+      'nogai',
+    ),
+    'non': Language(
+      'non',
+      'oldislandsk',
+    ),
+    'nqo': Language(
+      'nqo',
+      'n-ko',
+    ),
+    'nr': Language(
+      'nr',
+      'sydndebele',
+    ),
+    'nso': Language(
+      'nso',
+      'nordsotho',
+    ),
+    'nus': Language(
+      'nus',
+      'nuer',
+    ),
+    'nv': Language(
+      'nv',
+      'navajo',
+    ),
+    'nwc': Language(
+      'nwc',
+      'klassisk newarisk',
+    ),
+    'ny': Language(
+      'ny',
+      'nyanja',
+    ),
+    'nym': Language(
+      'nym',
+      'nyamwezi',
+    ),
+    'nyn': Language(
+      'nyn',
+      'nyankole',
+    ),
+    'nyo': Language(
+      'nyo',
+      'nyoro-sprog',
+    ),
+    'nzi': Language(
+      'nzi',
+      'nzima',
+    ),
+    'oc': Language(
+      'oc',
+      'occitansk',
+    ),
+    'oj': Language(
+      'oj',
+      'ojibwa',
+    ),
+    'om': Language(
+      'om',
+      'oromo',
+    ),
+    'or': Language(
+      'or',
+      'oriya',
+    ),
+    'os': Language(
+      'os',
+      'ossetisk',
+    ),
+    'osa': Language(
+      'osa',
+      'osage',
+    ),
+    'ota': Language(
+      'ota',
+      'osmannisk tyrkisk',
+    ),
+    'pa': Language(
+      'pa',
+      'punjabisk',
+    ),
+    'pag': Language(
+      'pag',
+      'pangasinan',
+    ),
+    'pal': Language(
+      'pal',
+      'pahlavi',
+    ),
+    'pam': Language(
+      'pam',
+      'pampanga',
+    ),
+    'pap': Language(
+      'pap',
+      'papiamento',
+    ),
+    'pau': Language(
+      'pau',
+      'palauansk',
+    ),
+    'pcm': Language(
+      'pcm',
+      'nigeriansk pidgin',
+    ),
+    'peo': Language(
+      'peo',
+      'oldpersisk',
+    ),
+    'phn': Language(
+      'phn',
+      'fønikisk',
+    ),
+    'pi': Language(
+      'pi',
+      'pali',
+    ),
+    'pl': Language(
+      'pl',
+      'polsk',
+    ),
+    'pon': Language(
+      'pon',
+      'ponape',
+    ),
+    'prg': Language(
+      'prg',
+      'preussisk',
+    ),
+    'pro': Language(
+      'pro',
+      'oldprovencalsk',
+    ),
+    'ps': Language(
+      'ps',
+      'pashto',
+      variant: 'pushto',
+    ),
+    'pt': Language(
+      'pt',
+      'portugisisk',
+    ),
+    'pt-BR': Language(
+      'pt-BR',
+      'brasiliansk portugisisk',
+    ),
+    'pt-PT': Language(
+      'pt-PT',
+      'europæisk portugisisk',
+    ),
+    'qu': Language(
+      'qu',
+      'quechua',
+    ),
+    'quc': Language(
+      'quc',
+      'quiché',
+    ),
+    'raj': Language(
+      'raj',
+      'rajasthani',
+    ),
+    'rap': Language(
+      'rap',
+      'rapanui',
+    ),
+    'rar': Language(
+      'rar',
+      'rarotonga',
+    ),
+    'rm': Language(
+      'rm',
+      'rætoromansk',
+    ),
+    'rn': Language(
+      'rn',
+      'rundi',
+    ),
+    'ro': Language(
+      'ro',
+      'rumænsk',
+    ),
+    'ro-MD': Language(
+      'ro-MD',
+      'moldovisk',
+    ),
+    'rof': Language(
+      'rof',
+      'rombo',
+    ),
+    'rom': Language(
+      'rom',
+      'romani',
+    ),
+    'ru': Language(
+      'ru',
+      'russisk',
+    ),
+    'rup': Language(
+      'rup',
+      'arumænsk',
+    ),
+    'rw': Language(
+      'rw',
+      'kinyarwanda',
+    ),
+    'rwk': Language(
+      'rwk',
+      'rwa',
+    ),
+    'sa': Language(
+      'sa',
+      'sanskrit',
+    ),
+    'sad': Language(
+      'sad',
+      'sandawe',
+    ),
+    'sah': Language(
+      'sah',
+      'jakutisk',
+    ),
+    'sam': Language(
+      'sam',
+      'samaritansk aramæisk',
+    ),
+    'saq': Language(
+      'saq',
+      'samburu',
+    ),
+    'sas': Language(
+      'sas',
+      'sasak',
+    ),
+    'sat': Language(
+      'sat',
+      'santali',
+    ),
+    'sba': Language(
+      'sba',
+      'ngambay',
+    ),
+    'sbp': Language(
+      'sbp',
+      'sangu',
+    ),
+    'sc': Language(
+      'sc',
+      'sardinsk',
+    ),
+    'scn': Language(
+      'scn',
+      'siciliansk',
+    ),
+    'sco': Language(
+      'sco',
+      'skotsk',
+    ),
+    'sd': Language(
+      'sd',
+      'sindhi',
+    ),
+    'sdh': Language(
+      'sdh',
+      'sydkurdisk',
+    ),
+    'se': Language(
+      'se',
+      'nordsamisk',
+    ),
+    'see': Language(
+      'see',
+      'seneca',
+    ),
+    'seh': Language(
+      'seh',
+      'sena',
+    ),
+    'sel': Language(
+      'sel',
+      'selkupisk',
+    ),
+    'ses': Language(
+      'ses',
+      'koyraboro senni',
+    ),
+    'sg': Language(
+      'sg',
+      'sango',
+    ),
+    'sga': Language(
+      'sga',
+      'oldirsk',
+    ),
+    'sh': Language(
+      'sh',
+      'serbokroatisk',
+    ),
+    'shi': Language(
+      'shi',
+      'tachelhit',
+    ),
+    'shn': Language(
+      'shn',
+      'shan',
+    ),
+    'shu': Language(
+      'shu',
+      'tchadisk arabisk',
+    ),
+    'si': Language(
+      'si',
+      'singalesisk',
+    ),
+    'sid': Language(
+      'sid',
+      'sidamo',
+    ),
+    'sk': Language(
+      'sk',
+      'slovakisk',
+    ),
+    'sl': Language(
+      'sl',
+      'slovensk',
+    ),
+    'sm': Language(
+      'sm',
+      'samoansk',
+    ),
+    'sma': Language(
+      'sma',
+      'sydsamisk',
+    ),
+    'smj': Language(
+      'smj',
+      'lulesamisk',
+    ),
+    'smn': Language(
+      'smn',
+      'enaresamisk',
+    ),
+    'sms': Language(
+      'sms',
+      'skoltesamisk',
+    ),
+    'sn': Language(
+      'sn',
+      'shona',
+    ),
+    'snk': Language(
+      'snk',
+      'soninke',
+    ),
+    'so': Language(
+      'so',
+      'somali',
+    ),
+    'sog': Language(
+      'sog',
+      'sogdiansk',
+    ),
+    'sq': Language(
+      'sq',
+      'albansk',
+    ),
+    'sr': Language(
+      'sr',
+      'serbisk',
+    ),
+    'srn': Language(
+      'srn',
+      'sranan tongo',
+    ),
+    'srr': Language(
+      'srr',
+      'serer',
+    ),
+    'ss': Language(
+      'ss',
+      'swati',
+    ),
+    'ssy': Language(
+      'ssy',
+      'saho',
+    ),
+    'st': Language(
+      'st',
+      'sydsotho',
+    ),
+    'su': Language(
+      'su',
+      'sundanesisk',
+    ),
+    'suk': Language(
+      'suk',
+      'sukuma',
+    ),
+    'sus': Language(
+      'sus',
+      'susu',
+    ),
+    'sux': Language(
+      'sux',
+      'sumerisk',
+    ),
+    'sv': Language(
+      'sv',
+      'svensk',
+    ),
+    'sw': Language(
+      'sw',
+      'swahili',
+    ),
+    'sw-CD': Language(
+      'sw-CD',
+      'congolesisk swahili',
+    ),
+    'swb': Language(
+      'swb',
+      'shimaore',
+    ),
+    'syc': Language(
+      'syc',
+      'klassisk syrisk',
+    ),
+    'syr': Language(
+      'syr',
+      'syrisk',
+    ),
+    'ta': Language(
+      'ta',
+      'tamil',
+    ),
+    'te': Language(
+      'te',
+      'telugu',
+    ),
+    'tem': Language(
+      'tem',
+      'temne',
+    ),
+    'teo': Language(
+      'teo',
+      'teso',
+    ),
+    'ter': Language(
+      'ter',
+      'tereno',
+    ),
+    'tet': Language(
+      'tet',
+      'tetum',
+    ),
+    'tg': Language(
+      'tg',
+      'tadsjikisk',
+    ),
+    'th': Language(
+      'th',
+      'thai',
+    ),
+    'ti': Language(
+      'ti',
+      'tigrinya',
+    ),
+    'tig': Language(
+      'tig',
+      'tigre',
+    ),
+    'tiv': Language(
+      'tiv',
+      'tivi',
+    ),
+    'tk': Language(
+      'tk',
+      'turkmensk',
+    ),
+    'tkl': Language(
+      'tkl',
+      'tokelau',
+    ),
+    'tl': Language(
+      'tl',
+      'tagalog',
+    ),
+    'tlh': Language(
+      'tlh',
+      'klingon',
+    ),
+    'tli': Language(
+      'tli',
+      'tlingit',
+    ),
+    'tmh': Language(
+      'tmh',
+      'tamashek',
+    ),
+    'tn': Language(
+      'tn',
+      'tswana',
+    ),
+    'to': Language(
+      'to',
+      'tongansk',
+    ),
+    'tog': Language(
+      'tog',
+      'nyasa tongansk',
+    ),
+    'tpi': Language(
+      'tpi',
+      'tok pisin',
+    ),
+    'tr': Language(
+      'tr',
+      'tyrkisk',
+    ),
+    'trv': Language(
+      'trv',
+      'taroko',
+    ),
+    'ts': Language(
+      'ts',
+      'tsonga',
+    ),
+    'tsi': Language(
+      'tsi',
+      'tsimshisk',
+    ),
+    'tt': Language(
+      'tt',
+      'tatarisk',
+    ),
+    'tum': Language(
+      'tum',
+      'tumbuka',
+    ),
+    'tvl': Language(
+      'tvl',
+      'tuvaluansk',
+    ),
+    'tw': Language(
+      'tw',
+      'twi',
+    ),
+    'twq': Language(
+      'twq',
+      'tasawaq',
+    ),
+    'ty': Language(
+      'ty',
+      'tahitiansk',
+    ),
+    'tyv': Language(
+      'tyv',
+      'tuvinian',
+    ),
+    'tzm': Language(
+      'tzm',
+      'centralmarokkansk tamazight',
+    ),
+    'udm': Language(
+      'udm',
+      'udmurt',
+    ),
+    'ug': Language(
+      'ug',
+      'uygurisk',
+      variant: 'uighurisk',
+    ),
+    'uga': Language(
+      'uga',
+      'ugaristisk',
+    ),
+    'uk': Language(
+      'uk',
+      'ukrainsk',
+    ),
+    'umb': Language(
+      'umb',
+      'umbundu',
+    ),
+    'und': Language(
+      'und',
+      'ukendt sprog',
+    ),
+    'ur': Language(
+      'ur',
+      'urdu',
+    ),
+    'uz': Language(
+      'uz',
+      'usbekisk',
+    ),
+    'vai': Language(
+      'vai',
+      'vai',
+    ),
+    've': Language(
+      've',
+      'venda',
+    ),
+    'vi': Language(
+      'vi',
+      'vietnamesisk',
+    ),
+    'vo': Language(
+      'vo',
+      'volapyk',
+    ),
+    'vot': Language(
+      'vot',
+      'votisk',
+    ),
+    'vun': Language(
+      'vun',
+      'vunjo',
+    ),
+    'wa': Language(
+      'wa',
+      'vallonsk',
+    ),
+    'wae': Language(
+      'wae',
+      'walsertysk',
+    ),
+    'wal': Language(
+      'wal',
+      'walamo',
+    ),
+    'war': Language(
+      'war',
+      'waray',
+    ),
+    'was': Language(
+      'was',
+      'washo',
+    ),
+    'wbp': Language(
+      'wbp',
+      'walbiri',
+    ),
+    'wo': Language(
+      'wo',
+      'wolof',
+    ),
+    'wuu': Language(
+      'wuu',
+      'wu-kinesisk',
+    ),
+    'xal': Language(
+      'xal',
+      'kalmyk',
+    ),
+    'xh': Language(
+      'xh',
+      'xhosa',
+    ),
+    'xog': Language(
+      'xog',
+      'soga',
+    ),
+    'yao': Language(
+      'yao',
+      'yao',
+    ),
+    'yap': Language(
+      'yap',
+      'yapese',
+    ),
+    'yav': Language(
+      'yav',
+      'yangben',
+    ),
+    'ybb': Language(
+      'ybb',
+      'yemba',
+    ),
+    'yi': Language(
+      'yi',
+      'jiddisch',
+    ),
+    'yo': Language(
+      'yo',
+      'yoruba',
+    ),
+    'yue': Language(
+      'yue',
+      'kantonesisk',
+      menu: 'kantonesisk (Kina)',
+    ),
+    'za': Language(
+      'za',
+      'zhuang',
+    ),
+    'zap': Language(
+      'zap',
+      'zapotec',
+    ),
+    'zbl': Language(
+      'zbl',
+      'blissymboler',
+    ),
+    'zen': Language(
+      'zen',
+      'zenaga',
+    ),
+    'zgh': Language(
+      'zgh',
+      'tamazight',
+    ),
+    'zh': Language(
+      'zh',
+      'kinesisk',
+      menu: 'mandarin (Kina)',
+    ),
+    'zh-Hans': Language(
+      'zh-Hans',
+      'forenklet kinesisk',
+    ),
+    'zh-Hant': Language(
+      'zh-Hant',
+      'traditionelt kinesisk',
+    ),
+    'zu': Language(
+      'zu',
+      'zulu',
+    ),
+    'zun': Language(
+      'zun',
+      'zuni',
+    ),
+    'zxx': Language(
+      'zxx',
+      'intet sprogligt indhold',
+    ),
+    'zza': Language(
+      'zza',
+      'zaza',
+    ),
+  }, (key) => key.toLowerCase());
 }
 
 class UnitsDa implements Units {
@@ -4976,7 +7140,7 @@ class TerritoriesDa implements Territories {
       );
 
   @override
-  final countries = <String, Territory>{
+  final countries = CanonicalizedMap<String, String, Territory>.from({
     'AC': Territory(
       'AC',
       'Ascensionøen',
@@ -6038,5 +8202,5 @@ class TerritoriesDa implements Territories {
       'ZW',
       'Zimbabwe',
     ),
-  };
+  }, (key) => key.toLowerCase());
 }
