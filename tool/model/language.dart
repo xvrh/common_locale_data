@@ -2,9 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:path/path.dart' as p;
 import '../generate_code.dart';
-import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
-import '../utils/split_words.dart';
 
 void generateLanguages(String language, StringBuffer output) {
   var reference = readLanguages('en');
