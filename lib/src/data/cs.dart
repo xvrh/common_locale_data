@@ -1836,6 +1836,10 @@ class LanguagesCs extends Languages {
       'rgn',
       'romaňolština',
     ),
+    'rhg': Language(
+      'rhg',
+      'rohingština',
+    ),
     'rif': Language(
       'rif',
       'rífština',
@@ -2521,10 +2525,10 @@ class UnitsCs implements Units {
         long: UnitCountPattern(
           _locale,
           'gravitační síla',
-          one: '{0} G',
-          few: '{0} G',
-          many: '{0} G',
-          other: '{0} G',
+          one: '{0} gravitační síla',
+          few: '{0} gravitační síly',
+          many: '{0} gravitační síly',
+          other: '{0} gravitačních sil',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3077,6 +3081,34 @@ class UnitsCs implements Units {
       );
 
   @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'položky',
+          one: '{0} položka',
+          few: '{0} položky',
+          many: '{0} položky',
+          other: '{0} položek',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'položky',
+          one: '{0} položka',
+          few: '{0} položky',
+          many: '{0} položky',
+          other: '{0} položek',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'pol.',
+          one: '{0} pol.',
+          few: '{0} pol.',
+          many: '{0} pol.',
+          other: '{0} pol.',
+        ),
+      );
+
+  @override
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
@@ -3320,11 +3352,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mpg Imp.',
-          one: '{0} mpg Imp.',
-          few: '{0} mpg Imp.',
-          many: '{0} mpg Imp.',
-          other: '{0} mpg Imp.',
+          'mpgIm',
+          one: '{0} mpgIm',
+          few: '{0} mpgIm',
+          many: '{0} mpgIm',
+          other: '{0} mpgIm',
         ),
       );
 
@@ -3592,19 +3624,19 @@ class UnitsCs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'bajt',
-          one: '{0} bajt',
-          few: '{0} bajty',
-          many: '{0} bajtu',
-          other: '{0} bajtů',
+          'B',
+          one: '{0} B',
+          few: '{0} B',
+          many: '{0} B',
+          other: '{0} B',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'bajt',
-          one: '{0} bajt',
-          few: '{0} bajty',
-          many: '{0} bajtu',
-          other: '{0} bajtů',
+          'B',
+          one: '{0} B',
+          few: '{0} B',
+          many: '{0} B',
+          other: '{0} B',
         ),
       );
 
@@ -3620,19 +3652,19 @@ class UnitsCs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'bit',
-          one: '{0} bit',
-          few: '{0} bity',
-          many: '{0} bitu',
-          other: '{0} bitů',
+          'b',
+          one: '{0} b',
+          few: '{0} b',
+          many: '{0} b',
+          other: '{0} b',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'bit',
-          one: '{0} bit',
-          few: '{0} bity',
-          many: '{0} bitu',
-          other: '{0} bitů',
+          'b',
+          one: '{0} b',
+          few: '{0} b',
+          many: '{0} b',
+          other: '{0} b',
         ),
       );
 
@@ -3784,7 +3816,7 @@ class UnitsCs implements Units {
           one: '{0} den',
           few: '{0} dny',
           many: '{0} dne',
-          other: '{0} dní',
+          other: '{0} dnů',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3792,7 +3824,7 @@ class UnitsCs implements Units {
           one: '{0} den',
           few: '{0} dny',
           many: '{0} dne',
-          other: '{0} dní',
+          other: '{0} dnů',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -4393,6 +4425,34 @@ class UnitsCs implements Units {
       );
 
   @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kilowatthodiny na sto kilometrů',
+          one: '{0} kilowatthodina na sto kilometrů',
+          few: '{0} kilowatthodiny na sto kilometrů',
+          many: '{0} kilowatthodiny na sto kilometrů',
+          other: '{0} kilowatthodin na sto kilometrů',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          one: '{0} kWh/100km',
+          few: '{0} kWh/100km',
+          many: '{0} kWh/100km',
+          other: '{0} kWh/100km',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          one: '{0} kWh/100km',
+          few: '{0} kWh/100km',
+          many: '{0} kWh/100km',
+          other: '{0} kWh/100km',
+        ),
+      );
+
+  @override
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4704,7 +4764,7 @@ class UnitsCs implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'obrazový bod',
+          'obrazové body',
           one: '{0} obrazový bod',
           few: '{0} obrazové body',
           many: '{0} obrazového bodu',
@@ -4712,19 +4772,19 @@ class UnitsCs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'bod',
-          one: '{0} b.',
-          few: '{0} b.',
-          many: '{0} b.',
-          other: '{0} b.',
+          'pixely',
+          one: '{0} px',
+          few: '{0} px',
+          many: '{0} px',
+          other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bod',
-          one: '{0} b.',
-          few: '{0} b.',
-          many: '{0} b.',
-          other: '{0} b.',
+          one: '{0} px',
+          few: '{0} px',
+          many: '{0} px',
+          other: '{0} px',
         ),
       );
 
@@ -5616,11 +5676,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          't',
-          one: '{0} t',
-          few: '{0} t',
-          many: '{0} t',
-          other: '{0} t',
+          'sht',
+          one: '{0} sht',
+          few: '{0} sht',
+          many: '{0} sht',
+          other: '{0} sht',
         ),
       );
 
@@ -6056,19 +6116,19 @@ class UnitsCs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          few: '{0} mmHg',
-          many: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
           'mm Hg',
           one: '{0} mm Hg',
           few: '{0} mm Hg',
           many: '{0} mm Hg',
           other: '{0} mm Hg',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'mmHg',
+          one: '{0} mmHg',
+          few: '{0} mmHg',
+          many: '{0} mmHg',
+          other: '{0} mmHg',
         ),
       );
 
@@ -6120,11 +6180,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'inHg',
-          one: '{0} inHg',
-          few: '{0} inHg',
-          many: '{0} inHg',
-          other: '{0} inHg',
+          '″ Hg',
+          one: '{0}″ Hg',
+          few: '{0}″ Hg',
+          many: '{0}″ Hg',
+          other: '{0}″ Hg',
         ),
       );
 
@@ -7128,11 +7188,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'gal Imp.',
-          one: '{0} gal Imp.',
-          few: '{0} gal Imp.',
-          many: '{0} gal Imp.',
-          other: '{0} gal Imp.',
+          'galIm',
+          one: '{0} galIm',
+          few: '{0} galIm',
+          many: '{0} galIm',
+          other: '{0} galIm',
         ),
       );
 
@@ -7268,11 +7328,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'fl oz Imp.',
-          one: '{0} fl oz Imp.',
-          few: '{0} fl oz Imp.',
-          many: '{0} fl oz Imp.',
-          other: '{0} fl oz Imp.',
+          'fl oz Im',
+          one: '{0} fl oz Im',
+          few: '{0} fl oz Im',
+          many: '{0} fl oz Im',
+          other: '{0} fl oz Im',
         ),
       );
 
@@ -7408,11 +7468,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dstspn Imp.',
-          one: '{0} dstspn Imp.',
-          few: '{0} dstspn Imp.',
-          many: '{0} dstspn Imp.',
-          other: '{0} dstspn Imp.',
+          'dspIm',
+          one: '{0} dspIm',
+          few: '{0} dspIm',
+          many: '{0} dspIm',
+          other: '{0} dspIm',
         ),
       );
 
@@ -7492,11 +7552,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'odměrky',
-          one: '{0} odměrka',
-          few: '{0} odměrky',
-          many: '{0} odměrky',
-          other: '{0} odměrek',
+          'odm.',
+          one: '{0} odm.',
+          few: '{0} odm.',
+          many: '{0} odm.',
+          other: '{0} odm.',
         ),
       );
 
@@ -7520,11 +7580,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'šp',
-          one: '{0} špetka',
-          few: '{0} špetky',
-          many: '{0} špetky',
-          other: '{0} špetek',
+          'šp.',
+          one: '{0} šp.',
+          few: '{0} šp.',
+          many: '{0} šp.',
+          other: '{0} šp.',
         ),
       );
 

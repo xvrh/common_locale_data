@@ -374,9 +374,9 @@ class LanguagesEl extends Languages {
     ),
     'ckb': Language(
       'ckb',
-      'Κουρδικά Σοράνι',
-      variant: 'Κουρδικά Σοράνι',
-      menu: 'Κουρδικά Σοράνι',
+      'Κεντρικά Κουρδικά',
+      variant: 'Κουρδικά, Σοράνι',
+      menu: 'Κουρδικά, Κεντρικά',
     ),
     'co': Language(
       'co',
@@ -742,7 +742,7 @@ class LanguagesEl extends Languages {
     ),
     'gu': Language(
       'gu',
-      'Γκουγιαράτι',
+      'Γκουτζαρατικά',
     ),
     'guz': Language(
       'guz',
@@ -1596,6 +1596,10 @@ class LanguagesEl extends Languages {
       'rar',
       'Ραροτονγκάν',
     ),
+    'rhg': Language(
+      'rhg',
+      'Ροχίνγκια',
+    ),
     'rm': Language(
       'rm',
       'Ρομανικά',
@@ -1995,7 +1999,7 @@ class LanguagesEl extends Languages {
     'ug': Language(
       'ug',
       'Ουιγουρικά',
-      variant: 'Ουιγκούρ',
+      variant: 'Ουιγούρ',
     ),
     'uga': Language(
       'uga',
@@ -2015,7 +2019,7 @@ class LanguagesEl extends Languages {
     ),
     'ur': Language(
       'ur',
-      'Ουρντού',
+      'Ούρντου',
     ),
     'uz': Language(
       'uz',
@@ -2113,6 +2117,10 @@ class LanguagesEl extends Languages {
       'yo',
       'Γιορούμπα',
     ),
+    'yrl': Language(
+      'yrl',
+      'yrl',
+    ),
     'yue': Language(
       'yue',
       'Καντονέζικα',
@@ -2179,17 +2187,17 @@ class UnitsEl implements Units {
           _locale,
           'δύναμη επιτάχυνσης',
           one: '{0} δύναμη επιτάχυνσης',
-          other: '{0} δύναμη επιτάχυνσης',
+          other: '{0} δυνάμεις επιτάχυνσης',
         ),
         short: UnitCountPattern(
           _locale,
           'δύν. επιτάχ.',
-          one: '{0} G',
-          other: '{0} G',
+          one: '{0} δύν. επιτάχ.',
+          other: '{0} δυν. επιτάχ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'δύν. επιτάχ.',
+          'G',
           one: '{0} G',
           other: '{0} G',
         ),
@@ -2211,7 +2219,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μέτρα/τετρ. δευτ.',
+          'm/s²',
           one: '{0} m/s²',
           other: '{0} m/s²',
         ),
@@ -2277,7 +2285,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μοίρες',
+          '°',
           one: '{0}°',
           other: '{0}°',
         ),
@@ -2299,7 +2307,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'λεπτά του τόξου',
+          '′',
           one: '{0}′',
           other: '{0}′',
         ),
@@ -2321,7 +2329,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'arcsec',
+          '″',
           one: '{0}″',
           other: '{0}″',
         ),
@@ -2365,7 +2373,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'εκτ.',
+          'ha',
           one: '{0} ha',
           other: '{0} ha',
         ),
@@ -2387,9 +2395,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τ. μέτρα',
-          one: '{0} m²',
-          other: '{0} m²',
+          'τ.μ.',
+          one: '{0} τ.μ.',
+          other: '{0} τ.μ.',
         ),
       );
 
@@ -2431,9 +2439,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τετρ. μίλια',
-          one: '{0} mi²',
-          other: '{0} mi²',
+          'τ.μίλι',
+          one: '{0} τ.μίλι',
+          other: '{0} τ.μίλια',
         ),
       );
 
@@ -2454,8 +2462,8 @@ class UnitsEl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ακρ',
-          one: '{0} ac',
-          other: '{0} ac',
+          one: '{0} ακρ',
+          other: '{0} ακρ',
         ),
       );
 
@@ -2475,7 +2483,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τετρ. γιάρδες',
+          'τ.γρδ',
           one: '{0} τ.γρδ',
           other: '{0} τ.γρδ',
         ),
@@ -2497,9 +2505,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τετρ. πόδια',
-          one: '{0} ft²',
-          other: '{0} ft²',
+          'τ.πδ',
+          one: '{0} τ.πδ',
+          other: '{0} τ.πδ',
         ),
       );
 
@@ -2519,7 +2527,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τετρ. ίντσες',
+          'τ. ίντσες',
           one: '{0} τ. ίντσα',
           other: '{0} τ. ίντσες',
         ),
@@ -2614,6 +2622,28 @@ class UnitsEl implements Units {
       );
 
   @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'στοιχείο',
+          one: '{0} στοιχείο',
+          other: '{0} στοιχεία',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'στοιχείο',
+          one: '{0} στοιχείο',
+          other: '{0} στοιχεία',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'στοιχείο',
+          one: '{0} στοιχείο',
+          other: '{0} στοιχεία',
+        ),
+      );
+
+  @override
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
@@ -2629,7 +2659,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μέρη/εκατ.',
+          'ppm',
           one: '{0} ppm',
           other: '{0} ppm',
         ),
@@ -2673,7 +2703,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τοις χιλίοις',
+          '‰',
           one: '{0}‰',
           other: '{0}‰',
         ),
@@ -2683,19 +2713,19 @@ class UnitsEl implements Units {
   Unit get concentrPermyriad => Unit(
         long: UnitCountPattern(
           _locale,
-          'ποσοστόσημο τοις δεκάκις χιλίοις',
-          one: '{0} ποσοστόσημο τοις δεκάκις χιλίοις',
-          other: '{0} ποσοστόσημο τοις δεκάκις χιλίοις',
+          'τοις δεκάκις χιλίοις',
+          one: '{0} τοις δεκάκις χιλίοις',
+          other: '{0} τοις δεκάκις χιλίοις',
         ),
         short: UnitCountPattern(
           _locale,
-          'ποσοστόσημο τοις δεκάκις χιλίοις',
+          'τοις δεκάκις χιλίοις',
           one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ποσοστόσημο τοις δεκάκις χιλίοις',
+          '‱',
           one: '{0}‱',
           other: '{0}‱',
         ),
@@ -2734,14 +2764,14 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'λίτρα/χλμ.',
-          one: '{0} λίτρο/χλμ',
-          other: '{0} λίτρα/χλμ',
+          one: '{0} λίτρο/χλμ.',
+          other: '{0} λίτρα/χλμ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'λίτρα/χλμ.',
-          one: '{0} λίτρο/χλμ',
-          other: '{0} λίτρα/χλμ',
+          'λ/χλμ',
+          one: '{0} λ/χλμ',
+          other: '{0} λ/χλμ',
         ),
       );
 
@@ -2783,7 +2813,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μίλια/γαλόνι',
+          'mpg',
           one: '{0} mpg',
           other: '{0} mpg',
         ),
@@ -2827,7 +2857,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'PByte',
+          'PB',
           one: '{0} PB',
           other: '{0} PB',
         ),
@@ -3196,8 +3226,8 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ώρες',
-          one: '{0} ώρα',
-          other: '{0} ώρ.',
+          one: '{0} ώ.',
+          other: '{0} ώ.',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -3218,12 +3248,12 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'λεπ.',
-          one: '{0} λεπ.',
-          other: '{0} λεπ.',
+          one: '{0} λ.',
+          other: '{0} λ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'λεπ.',
+          'λ.',
           one: '{0} λ',
           other: '{0} λ',
         ),
@@ -3289,7 +3319,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μικροδεύτερα',
+          'μs',
           one: '{0} μs',
           other: '{0} μs',
         ),
@@ -3311,7 +3341,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'νανοδεύτερα',
+          'ns',
           one: '{0} ns',
           other: '{0} ns',
         ),
@@ -3487,7 +3517,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'κιλοτζάουλ',
+          'kJ',
           one: '{0} kJ',
           other: '{0} kJ',
         ),
@@ -3509,7 +3539,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τζάουλ',
+          'J',
           one: '{0} J',
           other: '{0} J',
         ),
@@ -3526,14 +3556,14 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'κιλοβάτ/ώρα',
-          one: '{0} kWh',
-          other: '{0} kWh',
+          one: '{0} κιλοβάτ/ώρα',
+          other: '{0} κιλοβάτ/ώρα',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'κιλοβάτ/ώρα',
-          one: '{0} kWh',
-          other: '{0} kWh',
+          'kW/ώ.',
+          one: '{0} kW/ώ.',
+          other: '{0} kW/ώ.',
         ),
       );
 
@@ -3553,7 +3583,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ηλεκτρονιοβόλτ',
+          'eV',
           one: '{0} eV',
           other: '{0} eV',
         ),
@@ -3619,7 +3649,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'λίβρες δύναμης',
+          'lbf',
           one: '{0} lbf',
           other: '{0} lbf',
         ),
@@ -3641,9 +3671,31 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'νιούτον',
+          'N',
           one: '{0} N',
           other: '{0} N',
+        ),
+      );
+
+  @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'κιλοβατώρες ανά 100 χιλιόμετρα',
+          one: '{0} κιλοβατώρα ανά 100 χιλιόμετρα',
+          other: '{0} κιλοβατώρες ανά 100 χιλιόμετρα',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kWh/100 χλμ.',
+          one: '{0} kWh/100 χλμ.',
+          other: '{0} kWh/100 χλμ.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kWh/100 χλμ.',
+          one: '{0} kWh/100 χλμ.',
+          other: '{0} kWh/100 χλμ.',
         ),
       );
 
@@ -3765,12 +3817,12 @@ class UnitsEl implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'px',
+          'pixel',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'px',
+          'pixel',
           other: '{0} px',
         ),
       );
@@ -3790,7 +3842,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'megapixel',
+          'MP',
           other: '{0} MP',
         ),
       );
@@ -3845,15 +3897,15 @@ class UnitsEl implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'κουκκίδες ανά εκατοστό',
-          one: '{0} κουκκίδα ανά εκατοστό',
-          other: '{0} κουκκίδες ανά εκατοστό',
+          'κουκ./εκ.',
+          one: '{0} κουκ./εκ.',
+          other: '{0} κουκ./εκ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'κουκκίδες ανά εκατοστό',
-          one: '{0} κουκκίδα ανά εκατοστό',
-          other: '{0} κουκκίδες ανά εκατοστό',
+          'dpcm',
+          one: '{0} dpcm',
+          other: '{0} dpcm',
         ),
       );
 
@@ -3867,15 +3919,15 @@ class UnitsEl implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'κουκκίδες ανά ίντσα',
-          one: '{0} κουκκίδα ανά ίντσα',
-          other: '{0} κουκκίδες ανά ίντσα',
+          'κουκ./ίντσα',
+          one: '{0} κουκ./ίντσα',
+          other: '{0} κουκ./ίντσα',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'κουκκίδες ανά ίντσα',
-          one: '{0} κουκκίδα ανά ίντσα',
-          other: '{0} κουκκίδες ανά ίντσα',
+          'dpi',
+          one: '{0} dpi',
+          other: '{0} dpi',
         ),
       );
 
@@ -3889,15 +3941,15 @@ class UnitsEl implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'κουκ.',
-          one: '{0} κουκ.',
-          other: '{0} κουκ.',
+          'pixel',
+          one: '{0} px',
+          other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'κουκ.',
-          one: '{0} κουκ.',
-          other: '{0} κουκ.',
+          'pixel',
+          one: '{0} px',
+          other: '{0} px',
         ),
       );
 
@@ -4049,7 +4101,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μικρόμετρα',
+          'μm',
           one: '{0} μm',
           other: '{0} μm',
         ),
@@ -4115,7 +4167,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μίλια',
+          'μίλ.',
           one: '{0} mi',
           other: '{0} mi',
         ),
@@ -4137,7 +4189,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'γιάρδες',
+          'γρδ',
           one: '{0} yd',
           other: '{0} yd',
         ),
@@ -4159,7 +4211,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'πόδια',
+          'πδ',
           one: '{0} ft',
           other: '{0} ft',
         ),
@@ -4181,7 +4233,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ίντσες',
+          'ίν.',
           one: '{0} in',
           other: '{0} in',
         ),
@@ -4203,7 +4255,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'παρσέκ',
+          'pc',
           one: '{0} pc',
           other: '{0} pc',
         ),
@@ -4225,7 +4277,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'έτη φωτός',
+          'έ.φ.',
           one: '{0} ly',
           other: '{0} ly',
         ),
@@ -4291,7 +4343,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'οργιές',
+          'οργ.',
           one: '{0} οργ.',
           other: '{0} οργ.',
         ),
@@ -4336,8 +4388,8 @@ class UnitsEl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'σκανδ. μίλια',
-          one: '{0} σκανδ. μίλι',
-          other: '{0} σκανδ. μίλια',
+          one: '{0}smi',
+          other: '{0}smi',
         ),
       );
 
@@ -4357,7 +4409,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'στιγμές',
+          'στ.',
           one: '{0} στ.',
           other: '{0} στ.',
         ),
@@ -4378,7 +4430,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ακτίνες Ήλιου',
+          'R☉',
           other: '{0} R☉',
         ),
       );
@@ -4437,15 +4489,15 @@ class UnitsEl implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'λμ',
+          'λμ.',
           one: '{0} λμ.',
           other: '{0} λμ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'λμ',
-          one: '{0} λμ.',
-          other: '{0} λμ.',
+          'λμ.',
+          one: '{0} λμ',
+          other: '{0} λμ',
         ),
       );
 
@@ -4465,7 +4517,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ηλιακές φωτεινότητες',
+          'L☉',
           one: '{0} L☉',
           other: '{0} L☉',
         ),
@@ -4597,7 +4649,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τόνοι ΗΠΑ',
+          'τ. ΗΠΑ',
           one: '{0} τ. ΗΠΑ',
           other: '{0} τ. ΗΠΑ',
         ),
@@ -4641,9 +4693,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'λίβρες',
-          one: '{0} lb',
-          other: '{0} lb',
+          'λβ',
+          one: '{0} λβ',
+          other: '{0} λβ',
         ),
       );
 
@@ -4685,7 +4737,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ευγενής ουγγιά',
+          'oz t',
           one: '{0} oz t',
           other: '{0} oz t',
         ),
@@ -4707,7 +4759,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'καράτια',
+          'κρτ',
           one: '{0} κρτ',
           other: '{0} κρτ',
         ),
@@ -4729,7 +4781,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'Ντάλτον',
+          'Da',
           one: '{0} Da',
           other: '{0} Da',
         ),
@@ -4751,7 +4803,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μάζες Γης',
+          'M⊕',
           one: '{0} M⊕',
           other: '{0} M⊕',
         ),
@@ -4773,7 +4825,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μάζες Ήλιου',
+          'M☉',
           one: '{0} M☉',
           other: '{0} M☉',
         ),
@@ -4817,7 +4869,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'γιγαβάτ',
+          'GW',
           one: '{0} GW',
           other: '{0} GW',
         ),
@@ -4839,7 +4891,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μεγαβάτ',
+          'MW',
           one: '{0} MW',
           other: '{0} MW',
         ),
@@ -4861,7 +4913,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'κιλοβάτ',
+          'kW',
           one: '{0} kW',
           other: '{0} kW',
         ),
@@ -4883,7 +4935,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'βατ',
+          'W',
           one: '{0} W',
           other: '{0} W',
         ),
@@ -4905,7 +4957,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μιλιβάτ',
+          'mW',
           one: '{0} mW',
           other: '{0} mW',
         ),
@@ -4927,7 +4979,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ίπποι',
+          'hp',
           one: '{0} hp',
           other: '{0} hp',
         ),
@@ -5191,9 +5243,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μέτρα/δευτ.',
-          one: '{0} m/s',
-          other: '{0} m/s',
+          'μ./δ.',
+          one: '{0} μ./δ.',
+          other: '{0} μ./δ.',
         ),
       );
 
@@ -5213,9 +5265,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μίλια/ώρα',
-          one: '{0} mi/h',
-          other: '{0} mi/h',
+          'μίλια/ώ.',
+          one: '{0} μίλι/ώ.',
+          other: '{0} μίλια/ώ.',
         ),
       );
 
@@ -5246,8 +5298,8 @@ class UnitsEl implements Units {
         long: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          other: '{0}°',
+          one: '{0} βαθμός',
+          other: '{0} βαθμοί',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5301,7 +5353,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'βθμ F',
+          '°F',
           one: '{0}°F',
           other: '{0}°F',
         ),
@@ -5472,14 +5524,14 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'κυβ. γιάρδες',
-          one: '{0} yd³',
-          other: '{0} yd³',
+          one: '{0} κυβ. γιάρδα',
+          other: '{0} κυβ. γιάρδες',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'κυβ. γιάρδες',
-          one: '{0} yd³',
-          other: '{0} yd³',
+          'yd³',
+          one: '{0} κυβ. γιάρδα',
+          other: '{0} κυβ. γιάρδες',
         ),
       );
 
@@ -5675,9 +5727,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μετρικές πίντες',
-          one: '{0} μετρ. πίντα',
-          other: '{0} μετρ. πίντες',
+          'μ. πίντες',
+          one: '{0} μ. πίντα',
+          other: '{0} μ. πίντες',
         ),
       );
 
@@ -5697,9 +5749,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μετρ. κύπελλο',
-          one: '{0} μετρ. κύπελλο',
-          other: '{0} μετρ. κύπελλα',
+          'μ. κύπ.',
+          one: '{0} μ. κύπ.',
+          other: '{0} μ. κύπ.',
         ),
       );
 
@@ -5719,7 +5771,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ακρ πόδια',
+          'ακρ πδ',
           one: '{0} ακρ πδ',
           other: '{0} ακρ πδ',
         ),
@@ -5807,7 +5859,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'τέταρτα γαλονιού',
+          'τέτ. γαλ.',
           one: '{0} τέτ. γαλ.',
           other: '{0} τέτ. γαλ.',
         ),
@@ -5829,7 +5881,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'πίντες',
+          'πντ',
           one: '{0} πντ',
           other: '{0} πντ',
         ),
@@ -5961,7 +6013,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'βαρέλι',
+          'βρλ',
           one: '{0} βρλ',
           other: '{0} βρλ',
         ),
@@ -6005,9 +6057,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'αγγλ. κουτ. φρ.',
-          one: '{0} αγγλ. κουτ. φρ.',
-          other: '{0} αγγλ. κουτ. φρ.',
+          'αγγλ. κ.φρ.',
+          one: '{0} αγγλ. κ.φρ.',
+          other: '{0} αγγλ. κ.φρ.',
         ),
       );
 
@@ -6049,7 +6101,7 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'δράμι όγκου',
+          'δρ. όγκου',
           one: '{0} δρ. όγκου',
           other: '{0} δρ. όγκου',
         ),
@@ -6257,7 +6309,7 @@ class DateFieldsEl implements DateFields {
         ),
         previous: MultiLength(
           long: 'προηγούμενος μήνας',
-          short: 'προηγούμενος μήνας',
+          short: 'προηγ. μήνας',
           narrow: 'προηγ. μήνας',
         ),
         now: MultiLength(
@@ -6267,7 +6319,7 @@ class DateFieldsEl implements DateFields {
         ),
         next: MultiLength(
           long: 'επόμενος μήνας',
-          short: 'επόμενος μήνας',
+          short: 'επόμ. μήνας',
           narrow: 'επόμ. μήνας',
         ),
         past: MultiLengthRelativeTime(

@@ -1613,6 +1613,10 @@ class LanguagesZh extends Languages {
       'rar',
       '拉罗汤加语',
     ),
+    'rhg': Language(
+      'rhg',
+      '罗兴亚语',
+    ),
     'rm': Language(
       'rm',
       '罗曼什语',
@@ -2133,6 +2137,10 @@ class LanguagesZh extends Languages {
       'yo',
       '约鲁巴语',
     ),
+    'yrl': Language(
+      'yrl',
+      'yrl',
+    ),
     'yue': Language(
       'yue',
       '粤语',
@@ -2574,6 +2582,25 @@ class UnitsZh implements Units {
       );
 
   @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '项',
+          other: '{0}项',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '项',
+          other: '{0}项',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '项',
+          other: '{0}项',
+        ),
+      );
+
+  @override
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
@@ -2740,7 +2767,7 @@ class UnitsZh implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mpg Imp.',
-          other: '{0} mpg Imp.',
+          other: '{0}m/gUK',
         ),
       );
 
@@ -3467,6 +3494,25 @@ class UnitsZh implements Units {
       );
 
   @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '千瓦时/100千米',
+          other: '{0}千瓦时/100千米',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          other: '{0} kWh/100km',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          other: '{0}kWh/100km',
+        ),
+      );
+
+  @override
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
           _locale,
@@ -3646,13 +3692,13 @@ class UnitsZh implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          '点/厘米',
-          other: '{0} 点/厘米',
+          'dpcm',
+          other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '点/厘米',
-          other: '{0} 点/厘米',
+          'dpcm',
+          other: '{0}dpcm',
         ),
       );
 
@@ -3665,13 +3711,13 @@ class UnitsZh implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          '点/英寸',
-          other: '{0} 点/英寸',
+          'dpi',
+          other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '点/英寸',
-          other: '{0} 点/英寸',
+          'dpi',
+          other: '{0} dpi',
         ),
       );
 
@@ -3689,8 +3735,8 @@ class UnitsZh implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          '点',
-          other: '{0} 点',
+          'dot',
+          other: '{0}dot',
         ),
       );
 
@@ -3709,7 +3755,7 @@ class UnitsZh implements Units {
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          other: '{0} R⊕',
+          other: '{0}R⊕',
         ),
       );
 
@@ -4146,7 +4192,7 @@ class UnitsZh implements Units {
         narrow: UnitCountPattern(
           _locale,
           'cd',
-          other: '{0} cd',
+          other: '{0}cd',
         ),
       );
 
@@ -4165,7 +4211,7 @@ class UnitsZh implements Units {
         narrow: UnitCountPattern(
           _locale,
           'lm',
-          other: '{0} lm',
+          other: '{0}lm',
         ),
       );
 
@@ -4468,8 +4514,8 @@ class UnitsZh implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'gr',
-          other: '{0} gr',
+          '格令',
+          other: '{0}格令',
         ),
       );
 
@@ -5513,7 +5559,7 @@ class UnitsZh implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dstspn Imp',
+          '英制甜点匙',
           other: '{0} dstspn Imp',
         ),
       );
@@ -5608,8 +5654,8 @@ class UnitsZh implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'qt Imp',
-          other: '{0} qt Imp.',
+          '英制夸脱',
+          other: '{0}英制夸脱',
         ),
       );
 }

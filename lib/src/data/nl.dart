@@ -129,7 +129,7 @@ class LanguagesNl extends Languages {
     ),
     'ar-001': Language(
       'ar-001',
-      'Arabisch (wereld)',
+      'modern standaard Arabisch',
     ),
     'arc': Language(
       'arc',
@@ -1611,7 +1611,7 @@ class LanguagesNl extends Languages {
     ),
     'nl-BE': Language(
       'nl-BE',
-      'Nederlands (België)',
+      'Vlaams',
     ),
     'nmg': Language(
       'nmg',
@@ -1837,6 +1837,10 @@ class LanguagesNl extends Languages {
     'rgn': Language(
       'rgn',
       'Romagnol',
+    ),
+    'rhg': Language(
+      'rhg',
+      'Rohingya',
     ),
     'rif': Language(
       'rif',
@@ -2956,6 +2960,28 @@ class UnitsNl implements Units {
       );
 
   @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'onderdelen',
+          one: '{0} onderdeel',
+          other: '{0} onderdelen',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'onderdeel',
+          one: '{0} onderdeel',
+          other: '{0} onderdelen',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'onderdeel',
+          one: '{0} onderdeel',
+          other: '{0} onderdelen',
+        ),
+      );
+
+  @override
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
@@ -3429,8 +3455,8 @@ class UnitsNl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'decennia',
-          one: '{0} decennium',
-          other: '{0} decennia',
+          one: '{0} dec.',
+          other: '{0} dec.',
         ),
       );
 
@@ -3977,6 +4003,27 @@ class UnitsNl implements Units {
       );
 
   @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ki­lo­wattuur per 100 kilometer',
+          one: '{0} ki­lo­wattuur per 100 kilometer',
+          other: '{0} ki­lo­wattuur per 100 kilometer',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          other: '{0} kWh/100km',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          one: '{0}kWh/100km',
+          other: '{0}kWh/100km',
+        ),
+      );
+
+  @override
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4222,21 +4269,21 @@ class UnitsNl implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'punt',
+          'dot',
           one: 'dot',
           other: '{0} dot',
         ),
         short: UnitCountPattern(
           _locale,
-          'punt',
-          one: '{0} dot',
-          other: '{0} px',
+          'dot',
+          one: 'dot',
+          other: '{0} dot',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'punt',
+          'dot',
           one: '{0} dot',
-          other: '{0} px',
+          other: '{0} dot',
         ),
       );
 
@@ -4745,8 +4792,9 @@ class UnitsNl implements Units {
   Unit get lightCandela => Unit(
         long: UnitCountPattern(
           _locale,
-          'cd',
-          other: '{0} cd',
+          'candela',
+          one: '{0} candela',
+          other: '{0} candela',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4764,8 +4812,9 @@ class UnitsNl implements Units {
   Unit get lightLumen => Unit(
         long: UnitCountPattern(
           _locale,
-          'lm',
-          other: '{0} lm',
+          'lumen',
+          one: '{0} lumen',
+          other: '{0} lumen',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5117,9 +5166,9 @@ class UnitsNl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'grein',
-          one: '{0} grein',
-          other: '{0} grein',
+          'gr',
+          one: '{0} gr',
+          other: '{0} gr',
         ),
       );
 
@@ -6036,8 +6085,8 @@ class UnitsNl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'acre ft',
-          one: '{0} l/m²',
-          other: '{0} l/m²',
+          one: '{0} ac ft',
+          other: '{0} ac ft',
         ),
       );
 
@@ -6318,9 +6367,9 @@ class UnitsNl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'imp. des l',
-          one: '{0} imp. des l',
-          other: '{0} imp. des lpls',
+          'imp. d l',
+          one: '{0} imp. d l',
+          other: '{0} imp. d l',
         ),
       );
 
@@ -6340,9 +6389,9 @@ class UnitsNl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'druppel',
-          one: '{0} druppel',
-          other: '{0} druppels',
+          'dr',
+          one: '{0} dr',
+          other: '{0} drs',
         ),
       );
 
@@ -6362,7 +6411,7 @@ class UnitsNl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'drachme',
+          'fl dr',
           one: '{0} fl dr',
           other: '{0} fl dr',
         ),
@@ -6404,9 +6453,9 @@ class UnitsNl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'snufje',
-          one: '{0} snufje',
-          other: '{0} snufje',
+          'sn',
+          one: '{0} sn',
+          other: '{0} sn',
         ),
       );
 

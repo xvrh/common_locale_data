@@ -1614,6 +1614,10 @@ class LanguagesDa extends Languages {
       'rar',
       'rarotonga',
     ),
+    'rhg': Language(
+      'rhg',
+      'rohingya',
+    ),
     'rm': Language(
       'rm',
       'rætoromansk',
@@ -2131,6 +2135,10 @@ class LanguagesDa extends Languages {
       'yo',
       'yoruba',
     ),
+    'yrl': Language(
+      'yrl',
+      'yrl',
+    ),
     'yue': Language(
       'yue',
       'kantonesisk',
@@ -2273,7 +2281,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'radianer',
+          'radian',
           one: '{0} radian',
           other: '{0} radian',
         ),
@@ -2295,7 +2303,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'grader',
+          'gr.',
           one: '{0}°',
           other: '{0}°',
         ),
@@ -2515,9 +2523,9 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kvadratfod',
-          one: '{0} kvadratfod',
-          other: '{0} kvadratfod',
+          'fod²',
+          one: '{0} fod²',
+          other: '{0} fod²',
         ),
       );
 
@@ -2600,7 +2608,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mg/dl',
+          'mg/dL',
           one: '{0} mg/dl',
           other: '{0} mg/dl',
         ),
@@ -2622,9 +2630,31 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mmol/l',
+          'mmol/L',
           one: '{0} mmol/l',
           other: '{0} mmol/l',
+        ),
+      );
+
+  @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'enheder',
+          one: '{0} enhed',
+          other: '{0} enheder',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'enhed',
+          one: '{0} enhed',
+          other: '{0} enheder',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'enhed',
+          one: '{0} enhed',
+          other: '{0} enheder',
         ),
       );
 
@@ -2818,8 +2848,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mil/eng. gal',
-          one: '{0} eng. mpg',
-          other: '{0} eng. mpg',
+          one: '{0}mpgUK',
+          other: '{0}mpgUK',
         ),
       );
 
@@ -2883,9 +2913,9 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'Tbit',
-          one: '{0} Tbit',
-          other: '{0} Tbit',
+          'Tb',
+          one: '{0} Tb',
+          other: '{0} Tb',
         ),
       );
 
@@ -2971,9 +3001,9 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'Mbit',
-          one: '{0} Mbit',
-          other: '{0} Mbit',
+          'Mb',
+          one: '{0} Mb',
+          other: '{0} Mb',
         ),
       );
 
@@ -3015,9 +3045,9 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kbit',
-          one: '{0} kbit',
-          other: '{0} kbit',
+          'kb',
+          one: '{0} kb',
+          other: '{0} kb',
         ),
       );
 
@@ -3302,8 +3332,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
-          other: '{0} μs',
+          one: '{0}μs',
+          other: '{0}μs',
         ),
       );
 
@@ -3324,8 +3354,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
-          other: '{0} ns',
+          one: '{0}ns',
+          other: '{0}ns',
         ),
       );
 
@@ -3564,7 +3594,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'elektronvolt',
+          'eV',
           other: '{0} eV',
         ),
       );
@@ -3642,9 +3672,30 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'newton',
+          'N',
           one: '{0} N',
           other: '{0} N',
+        ),
+      );
+
+  @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kilowatt-time per 100 kilometer',
+          one: '{0} kilowatt-time per 100 kilometer',
+          other: '{0} kilowatt-timer per 100 kilometer',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          other: '{0} kWh/100km',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          one: '{0}kWh/100km',
+          other: '{0}kWh/100km',
         ),
       );
 
@@ -3886,7 +3937,7 @@ class UnitsDa implements Units {
           _locale,
           'prik',
           one: '{0} prik',
-          other: '{0} punkter',
+          other: '{0} prikker',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4071,8 +4122,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
-          other: '{0} nm',
+          one: '{0}nm',
+          other: '{0}nm',
         ),
       );
 
@@ -4224,7 +4275,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'lysår',
+          'ly',
           one: '{0} lysår',
           other: '{0} lysår',
         ),
@@ -4240,15 +4291,15 @@ class UnitsDa implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ae',
-          one: '{0} ae',
-          other: '{0} ae',
+          'au',
+          one: '{0} au',
+          other: '{0} au',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ae',
-          one: '{0} ae',
-          other: '{0} ae',
+          'au',
+          one: '{0} au',
+          other: '{0} au',
         ),
       );
 
@@ -4282,13 +4333,13 @@ class UnitsDa implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'favn',
+          'favne',
           one: '{0} favn',
           other: '{0} favne',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'favn',
+          'favne',
           one: '{0} favn',
           other: '{0} favne',
         ),
@@ -4310,9 +4361,9 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'sømil',
-          one: '{0} sm',
-          other: '{0} sm',
+          'sm',
+          one: '{0} sømil',
+          other: '{0} sømil',
         ),
       );
 
@@ -4375,7 +4426,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'solradier',
+          'R☉',
           other: '{0} R☉',
         ),
       );
@@ -4653,8 +4704,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} unse',
-          other: '{0} unser',
+          one: '{0} oz',
+          other: '{0} oz',
         ),
       );
 
@@ -4865,7 +4916,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'W',
+          'watt',
           one: '{0}W',
           other: '{0}W',
         ),
@@ -5380,8 +5431,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
-          other: '{0} m³',
+          one: '{0}m³',
+          other: '{0}m³',
         ),
       );
 
@@ -5402,8 +5453,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
-          other: '{0} cm³',
+          one: '{0}cm³',
+          other: '{0}cm³',
         ),
       );
 
@@ -5468,8 +5519,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
-          other: '{0} ft³',
+          one: '{0} fod³',
+          other: '{0} fod³',
         ),
       );
 
@@ -5512,8 +5563,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ML',
-          one: '{0} ML',
-          other: '{0} ML',
+          one: '{0}ML',
+          other: '{0}ML',
         ),
       );
 
@@ -5578,8 +5629,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'dl',
-          one: '{0} dl',
-          other: '{0} dl',
+          one: '{0}dl',
+          other: '{0}dl',
         ),
       );
 
@@ -5644,7 +5695,7 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mpt',
-          one: 'mpt',
+          one: '{0} mpt',
           other: '{0} mpt',
         ),
       );
@@ -5863,7 +5914,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Imp. fl oz',
-          other: '{0} fl oz Imp.',
+          one: '{0}fl oz Im',
+          other: '{0}fl oz Im',
         ),
       );
 
@@ -5927,7 +5979,7 @@ class UnitsDa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'tønde',
+          'td.',
           one: '{0} td.',
           other: '{0} tdr.',
         ),
@@ -5972,8 +6024,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'brit. dsk.',
-          one: '{0} brit. dsk.',
-          other: '{0} brit. dsk.',
+          one: '{0}brit.dsk.',
+          other: '{0}brit.dsk.',
         ),
       );
 
@@ -6016,8 +6068,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'br. fl. dr.',
-          one: '{0} br. fl. dr.',
-          other: '{0} br. fl. dr.',
+          one: '{0}br.fl.dr.',
+          other: '{0}br.fl.dr.',
         ),
       );
 
@@ -6080,8 +6132,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'britisk qt',
-          one: '{0} britisk qt',
-          other: '{0} britiske qt',
+          one: '{0} br. qt.',
+          other: '{0} br. qt.',
         ),
       );
 }

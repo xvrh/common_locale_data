@@ -1460,7 +1460,7 @@ class LanguagesEn extends Languages {
     ),
     'mi': Language(
       'mi',
-      'Maori',
+      'Māori',
     ),
     'mic': Language(
       'mic',
@@ -1844,6 +1844,10 @@ class LanguagesEn extends Languages {
       'rgn',
       'Romagnol',
     ),
+    'rhg': Language(
+      'rhg',
+      'Rohingya',
+    ),
     'rif': Language(
       'rif',
       'Riffian',
@@ -1967,6 +1971,7 @@ class LanguagesEn extends Languages {
     'se': Language(
       'se',
       'Northern Sami',
+      menu: 'Sami, Northern',
     ),
     'see': Language(
       'see',
@@ -2047,18 +2052,22 @@ class LanguagesEn extends Languages {
     'sma': Language(
       'sma',
       'Southern Sami',
+      menu: 'Sami, Southern',
     ),
     'smj': Language(
       'smj',
       'Lule Sami',
+      menu: 'Sami, Lule',
     ),
     'smn': Language(
       'smn',
       'Inari Sami',
+      menu: 'Sami, Inari',
     ),
     'sms': Language(
       'sms',
       'Skolt Sami',
+      menu: 'Sami, Skolt',
     ),
     'sn': Language(
       'sn',
@@ -2577,7 +2586,7 @@ class UnitsEn implements Units {
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
           _locale,
-          'revolution',
+          'revolutions',
           one: '{0} revolution',
           other: '{0} revolutions',
         ),
@@ -2966,6 +2975,28 @@ class UnitsEn implements Units {
           'mmol/L',
           one: '{0}mmol/L',
           other: '{0}mmol/L',
+        ),
+      );
+
+  @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'items',
+          one: '{0} item',
+          other: '{0} items',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'item',
+          one: '{0} item',
+          other: '{0} items',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'item',
+          one: '{0}item',
+          other: '{0}items',
         ),
       );
 
@@ -4004,6 +4035,28 @@ class UnitsEn implements Units {
       );
 
   @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kilowatt-hours per 100 kilometers',
+          one: '{0} kilowatt-hour per 100 kilometers',
+          other: '{0} kilowatt-hours per 100 kilometers',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          one: '{0} kWh/100km',
+          other: '{0} kWh/100km',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          one: '{0}kWh/100km',
+          other: '{0}kWh/100km',
+        ),
+      );
+
+  @override
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4095,7 +4148,7 @@ class UnitsEn implements Units {
   Unit get graphicsEm => Unit(
         long: UnitCountPattern(
           _locale,
-          'typographic em',
+          'typographic ems',
           one: '{0} em',
           other: '{0} ems',
         ),
@@ -4249,15 +4302,15 @@ class UnitsEn implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'dot',
+          'dots',
           one: '{0} dot',
-          other: '{0} dot',
+          other: '{0} dots',
         ),
         short: UnitCountPattern(
           _locale,
-          'dot',
+          'dots',
           one: '{0} dot',
-          other: '{0} dot',
+          other: '{0} dots',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -4688,7 +4741,7 @@ class UnitsEn implements Units {
   Unit get lengthMileScandinavian => Unit(
         long: UnitCountPattern(
           _locale,
-          'mile-scandinavian',
+          'miles-scandinavian',
           one: '{0} mile-scandinavian',
           other: '{0} miles-scandinavian',
         ),
@@ -5148,9 +5201,9 @@ class UnitsEn implements Units {
   Unit get massGrain => Unit(
         long: UnitCountPattern(
           _locale,
-          'grain',
+          'grains',
           one: '{0} grain',
-          other: '{0} grain',
+          other: '{0} grains',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5694,7 +5747,7 @@ class UnitsEn implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'pound-feet',
+          'pound-force-feet',
           one: '{0} pound-force-foot',
           other: '{0} pound-force-feet',
         ),
@@ -6332,9 +6385,9 @@ class UnitsEn implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'dessert spoon',
+          'dessert spoons',
           one: '{0} dessert spoon',
-          other: '{0} dessert spoon',
+          other: '{0} dessert spoons',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6353,9 +6406,9 @@ class UnitsEn implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'Imp. dessert spoon',
+          'Imp. dessert spoons',
           one: '{0} Imp. dessert spoon',
-          other: '{0} Imp. dessert spoon',
+          other: '{0} Imp. dessert spoons',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6374,9 +6427,9 @@ class UnitsEn implements Units {
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
           _locale,
-          'drop',
+          'drops',
           one: '{0} drop',
-          other: '{0} drop',
+          other: '{0} drops',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6395,9 +6448,9 @@ class UnitsEn implements Units {
   Unit get volumeDram => Unit(
         long: UnitCountPattern(
           _locale,
-          'dram',
+          'drams',
           one: '{0} dram',
-          other: '{0} dram',
+          other: '{0} drams',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6416,9 +6469,9 @@ class UnitsEn implements Units {
   Unit get volumeJigger => Unit(
         long: UnitCountPattern(
           _locale,
-          'jigger',
+          'jiggers',
           one: '{0} jigger',
-          other: '{0} jigger',
+          other: '{0} jiggers',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6437,9 +6490,9 @@ class UnitsEn implements Units {
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
           _locale,
-          'pinch',
+          'pinches',
           one: '{0} pinch',
-          other: '{0} pinch',
+          other: '{0} pinches',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6458,9 +6511,9 @@ class UnitsEn implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'Imp. quart',
+          'Imp. quarts',
           one: '{0} Imp. quart',
-          other: '{0} Imp. quart',
+          other: '{0} Imp. quarts',
         ),
         short: UnitCountPattern(
           _locale,
