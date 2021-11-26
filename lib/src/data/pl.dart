@@ -1837,6 +1837,10 @@ class LanguagesPl extends Languages {
       'rgn',
       'romagnol',
     ),
+    'rhg': Language(
+      'rhg',
+      'rohingya',
+    ),
     'rif': Language(
       'rif',
       'tarifit',
@@ -2791,11 +2795,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mile kw.',
-          one: '{0} mila kw.',
-          few: '{0} mile kw.',
-          many: '{0} mil kw.',
-          other: '{0} mili kw.',
+          'mi²',
+          one: '{0} mi²',
+          few: '{0} mi²',
+          many: '{0} mi²',
+          other: '{0} mi²',
         ),
       );
 
@@ -2847,11 +2851,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'jardy kw.',
-          one: '{0} jard kw.',
-          few: '{0} jardy kw.',
-          many: '{0} jardów kw.',
-          other: '{0} jarda kw.',
+          'yd²',
+          one: '{0} yd²',
+          few: '{0} yd²',
+          many: '{0} yd²',
+          other: '{0} yd²',
         ),
       );
 
@@ -2875,11 +2879,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'stopy kw.',
-          one: '{0} stopa kw.',
-          few: '{0} stopy kw.',
-          many: '{0} stóp kw.',
-          other: '{0} stopy kw.',
+          'ft²',
+          one: '{0} ft²',
+          few: '{0} ft²',
+          many: '{0} ft²',
+          other: '{0} ft²',
         ),
       );
 
@@ -2903,11 +2907,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'cale kw.',
-          one: '{0} cal kw.',
-          few: '{0} cale kw.',
-          many: '{0} cali kw.',
-          other: '{0} cala kw.',
+          'in²',
+          one: '{0} in²',
+          few: '{0} in²',
+          many: '{0} in²',
+          other: '{0} in²',
         ),
       );
 
@@ -3014,6 +3018,34 @@ class UnitsPl implements Units {
           few: '{0} mmol/l',
           many: '{0} mmol/l',
           other: '{0} mmol/l',
+        ),
+      );
+
+  @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'sztuki',
+          one: '{0} sztuka',
+          few: '{0} sztuki',
+          many: '{0} sztuk',
+          other: '{0} sztuki',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'szt.',
+          one: '{0} szt.',
+          few: '{0} szt.',
+          many: '{0} szt.',
+          other: '{0} szt.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'szt.',
+          one: '{0} szt.',
+          few: '{0} szt.',
+          many: '{0} szt.',
+          other: '{0} szt.',
         ),
       );
 
@@ -3639,7 +3671,7 @@ class UnitsPl implements Units {
           _locale,
           'tydz.',
           one: '{0} tydz.',
-          few: '{0} tyg.',
+          few: '{0} t.',
           many: '{0} tyg.',
           other: '{0} tyg.',
         ),
@@ -3693,11 +3725,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'g.',
-          one: '{0} g.',
-          few: '{0} g.',
-          many: '{0} g.',
-          other: '{0} g.',
+          'h',
+          one: '{0} h',
+          few: '{0} h',
+          many: '{0} h',
+          other: '{0} h',
         ),
       );
 
@@ -4063,7 +4095,7 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'elektronowolt',
+          'eV',
           one: '{0} eV',
           few: '{0} eV',
           many: '{0} eV',
@@ -4147,7 +4179,7 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'funt-siła',
+          'lbf',
           one: '{0} lbf',
           few: '{0} lbf',
           many: '{0} lbf',
@@ -4180,6 +4212,28 @@ class UnitsPl implements Units {
           few: '{0} N',
           many: '{0} N',
           other: '{0} N',
+        ),
+      );
+
+  @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kilowatogodzina na 100 km',
+          one: '{0} kilowatogodzina na 100 km',
+          few: '{0} kilowatogodziny na 100 km',
+          many: '{0} kilowatogodzin na 100 km',
+          other: '{0} kilowatogodziny na 100 km',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          other: '{0} kWh/100km',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kWh/100km',
+          other: '{0} kWh/100km',
         ),
       );
 
@@ -4429,15 +4483,15 @@ class UnitsPl implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'dot',
+          'dots',
           one: '{0} dot',
-          other: '{0} dot',
+          other: '{0} dots',
         ),
         short: UnitCountPattern(
           _locale,
-          'dot',
+          'dots',
           one: '{0} dot',
-          other: '{0} dot',
+          other: '{0} dots',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -4721,7 +4775,7 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'stopy',
+          'ft',
           one: '{0} ft',
           few: '{0} ft',
           many: '{0} ft',
@@ -5378,10 +5432,10 @@ class UnitsPl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
-          few: '{0} Da',
-          many: '{0} Da',
-          other: '{0} Da',
+          one: '{0} u',
+          few: '{0} u',
+          many: '{0} u',
+          other: '{0} u',
         ),
       );
 
@@ -5915,11 +5969,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mile/h',
-          one: '{0} mila/h',
-          few: '{0} mile/h',
-          many: '{0} mil/h',
-          other: '{0} mili/h',
+          'mph',
+          one: '{0} mph',
+          few: '{0} mph',
+          many: '{0} mph',
+          other: '{0} mph',
         ),
       );
 
@@ -6187,11 +6241,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mile sześc.',
-          one: '{0} mila sześc.',
-          few: '{0} mile sześc.',
-          many: '{0} mil sześc.',
-          other: '{0} mili sześc.',
+          'mi³',
+          one: '{0} mi³',
+          few: '{0} mi³',
+          many: '{0} mi³',
+          other: '{0} mi³',
         ),
       );
 
@@ -6215,11 +6269,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'jardy sześc.',
-          one: '{0} jard sześc.',
-          few: '{0} jardy sześc.',
-          many: '{0} jardów sześc.',
-          other: '{0} jarda sześc.',
+          'yd³',
+          one: '{0} yd³',
+          few: '{0} yd³',
+          many: '{0} yd³',
+          other: '{0} yd³',
         ),
       );
 
@@ -6243,11 +6297,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'stopy sześc.',
-          one: '{0} stopa sześc.',
-          few: '{0} stopy sześc.',
-          many: '{0} stóp sześc.',
-          other: '{0} stopy sześc.',
+          'ft³',
+          one: '{0} ft³',
+          few: '{0} ft³',
+          many: '{0} ft³',
+          other: '{0} ft³',
         ),
       );
 
@@ -6271,11 +6325,11 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'cale sześc.',
-          one: '{0} cal sześc.',
-          few: '{0} cale sześc.',
-          many: '{0} cali sześc.',
-          other: '{0} cala sześc.',
+          'in³',
+          one: '{0} in³',
+          few: '{0} in³',
+          many: '{0} in³',
+          other: '{0} in³',
         ),
       );
 
@@ -6819,7 +6873,7 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'baryłki',
+          'bbl',
           one: '{0} bbl',
           few: '{0} bbl',
           many: '{0} bbl',

@@ -1606,6 +1606,10 @@ class LanguagesAr extends Languages {
       'rar',
       'الراروتونجاني',
     ),
+    'rhg': Language(
+      'rhg',
+      'الروهينغية',
+    ),
     'rm': Language(
       'rm',
       'الرومانشية',
@@ -2123,6 +2127,10 @@ class LanguagesAr extends Languages {
       'yo',
       'اليوروبا',
     ),
+    'yrl': Language(
+      'yrl',
+      'yrl',
+    ),
     'yue': Language(
       'yue',
       'الكَنْتُونية',
@@ -2377,13 +2385,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'دقيقة قوسية',
-          zero: '{0}′',
-          one: '{0} دقيقة',
-          two: '{0}′',
-          few: '{0} دقائق',
-          many: '{0} دقيقة',
-          other: '{0}′',
+          'د قوسية',
+          zero: '{0} د قوسية',
+          one: '{0} د قوسية',
+          two: '{0} د قوسية',
+          few: '{0} د قوسية',
+          many: '{0} د قوسية',
+          other: '{0} د قوسية',
         ),
       );
 
@@ -2411,7 +2419,7 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ثانية قوسية',
+          'ث قوسية',
           zero: '{0}″',
           one: '{0}″',
           two: '{0}″',
@@ -2480,12 +2488,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'هكتار',
-          zero: '{0} هكت',
+          zero: '{0} هكتار',
           one: '{0} هكتار',
-          two: '{0} هكت',
-          few: '{0} هكتارات',
-          many: '{0} هكتارًا',
-          other: '{0} هكت',
+          two: '{0} هكتار',
+          few: '{0} هكتار',
+          many: '{0} هكتار',
+          other: '{0} هكتار',
         ),
       );
 
@@ -2582,12 +2590,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ميل²',
-          zero: '{0} ميل مربع',
-          one: '{0} ميل مربع',
-          two: '{0} ميل مربع',
-          few: '{0} ميل مربع',
-          many: '{0} ميل مربع',
-          other: '{0} ميل مربع',
+          zero: '{0} ميل²',
+          one: '{0} ميل²',
+          two: '{0} ميل²',
+          few: '{0} ميل²',
+          many: '{0} ميل²',
+          other: '{0} ميل²',
         ),
       );
 
@@ -2616,12 +2624,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'فدان',
-          zero: '{0} من الفدادين',
-          one: '{0} فدان',
-          two: 'فدانان ({0})',
-          few: '{0} فدادين',
-          many: '{0} فدانًا',
-          other: '{0} من الفدادين',
+          zero: '{0} فدان',
+          one: 'فدان',
+          two: '{0} فدان',
+          few: '{0} فدان',
+          many: '{0} فدان',
+          other: '{0} فدان',
         ),
       );
 
@@ -2684,12 +2692,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'قدم²',
-          zero: '{0}ft²',
-          one: '{0}ft²',
-          two: '{0}ft²',
-          few: '{0}ft²',
-          many: '{0}ft²',
-          other: '{0}ft²',
+          zero: '{0} قدم²',
+          one: '{0} قدم²',
+          two: '{0} قدم²',
+          few: '{0} قدم²',
+          many: '{0} قدم²',
+          other: '{0} قدم²',
         ),
       );
 
@@ -2819,13 +2827,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'مغم/ديسبل',
-          zero: '{0} مغم/ديسبل',
-          one: '{0} مغم/ديسبل',
-          two: '{0} مغم/ديسبل',
-          few: '{0} مغم/ديسبل',
-          many: '{0} مغم/ديسبل',
-          other: '{0} مغم/ديسبل',
+          'مغ/ديسبل',
+          zero: '{0} مغ/ديسبل',
+          one: '{0} مغ/ديسبل',
+          two: '{0} مغ/ديسبل',
+          few: '{0} مغ/ديسبل',
+          many: '{0} مغ/ديسبل',
+          other: '{0} مغ/ديسبل',
         ),
       );
 
@@ -2860,6 +2868,40 @@ class UnitsAr implements Units {
           few: '{0} م.مول/ل',
           many: '{0} م.مول/ل',
           other: '{0} م.مول/ل',
+        ),
+      );
+
+  @override
+  Unit get concentrItem => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'عنصر',
+          zero: '{0} عنصر',
+          one: 'عنصر واحد',
+          two: 'عنصران',
+          few: '{0} عناصر',
+          many: '{0} عنصرًا',
+          other: '{0} عنصر',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'عنصر',
+          zero: '{0} عنصر',
+          one: 'عنصر',
+          two: 'عنصران',
+          few: '{0} عناصر',
+          many: '{0} عنصرًا',
+          other: '{0} عنصر',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'عنصر',
+          zero: '{0} عنصر',
+          one: 'عنصر',
+          two: '{0} عنصر',
+          few: '{0} عنصر',
+          many: '{0} عنصر',
+          other: '{0} عنصر',
         ),
       );
 
@@ -2955,7 +2997,7 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'في الألف',
+          '؉',
           zero: '{0}؉',
           one: '{0}؉',
           two: '{0}؉',
@@ -2979,8 +3021,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          '‱',
-          other: '{0}‱',
+          '؊',
+          zero: '{0} ؊',
+          one: '{0} ؊',
+          two: '{0} ؊',
+          few: '{0} ؊',
+          many: '{0} ؊',
+          other: '{0} ؊',
         ),
       );
 
@@ -3042,13 +3089,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'لتر/كم',
-          zero: '{0} لتر/كم',
-          one: '{0} لتر/كم',
-          two: '{0} لتر/كم',
-          few: '{0} لتر/كم',
-          many: '{0} لتر/كم',
-          other: '{0} لتر/كم',
+          'ل/كم',
+          zero: '{0} ل/كم',
+          one: '{0} ل/كم',
+          two: '{0} ل/كم',
+          few: '{0} ل/كم',
+          many: '{0} ل/كم',
+          other: '{0} ل/كم',
         ),
       );
 
@@ -3212,13 +3259,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'تيرابايت',
-          zero: '{0} تيرابايت',
-          one: '{0} تيرابايت',
-          two: '{0} تيرابايت',
-          few: '{0} تيرابايت',
-          many: '{0} تيرابايت',
-          other: '{0} تيرابايت',
+          'ت.ب',
+          zero: '{0} ت.ب',
+          one: '{0} ت.ب',
+          two: '{0} ت.ب',
+          few: '{0} ت.ب',
+          many: '{0} ت.ب',
+          other: '{0} ت.ب',
         ),
       );
 
@@ -3246,13 +3293,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'تيرابت',
-          zero: '{0} تيرابت',
-          one: '{0} تيرابت',
-          two: '{0} تيرابت',
-          few: '{0} تيرابت',
-          many: '{0} تيرابت',
-          other: '{0} تيرابت',
+          'ت.بت',
+          zero: '{0} ت.بت',
+          one: '{0} ت.بت',
+          two: '{0} ت.بت',
+          few: '{0} ت.بت',
+          many: '{0} ت.بت',
+          other: '{0} ت.بت',
         ),
       );
 
@@ -3270,23 +3317,23 @@ class UnitsAr implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'GB',
-          zero: '{0} GB',
-          one: '{0} GB',
-          two: '{0} GB',
-          few: '{0} GB',
-          many: '{0} GB',
-          other: '{0} GB',
+          'غ.ب',
+          zero: '{0} غ.ب',
+          one: '{0} غ.ب',
+          two: '{0} غ.ب',
+          few: '{0} غ.ب',
+          many: '{0} غ.ب',
+          other: '{0} غ.ب',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'GB',
-          zero: '{0} GB',
-          one: '{0} GB',
-          two: '{0} GB',
-          few: '{0} GB',
-          many: '{0} GB',
-          other: '{0} GB',
+          'غ.ب',
+          zero: '{0} غ.ب',
+          one: '{0} غ.ب',
+          two: '{0} غ.ب',
+          few: '{0} غ.ب',
+          many: '{0} غ.ب',
+          other: '{0} غ.ب',
         ),
       );
 
@@ -3314,13 +3361,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'غيغابت',
-          zero: '{0} غيغابت',
-          one: '{0} غيغابت',
-          two: '{0} غيغابت',
-          few: '{0} غيغابت',
-          many: '{0} غيغابت',
-          other: '{0} غيغابت',
+          'غ.بت',
+          zero: '{0} غ.بت',
+          one: '{0} غ.بت',
+          two: '{0} غ.بت',
+          few: '{0} غ.بت',
+          many: '{0} غ.بت',
+          other: '{0} غ.بت',
         ),
       );
 
@@ -3339,22 +3386,22 @@ class UnitsAr implements Units {
         short: UnitCountPattern(
           _locale,
           'ميغابايت',
-          zero: '{0} MB',
-          one: '{0} MB',
-          two: '{0} MB',
-          few: '{0} MB',
-          many: '{0} MB',
-          other: '{0} MB',
+          zero: '{0} م.ب',
+          one: '{0} م.ب',
+          two: '{0} م.ب',
+          few: '{0} م.ب',
+          many: '{0} م.ب',
+          other: '{0} م.ب',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ميغابايت',
-          zero: '{0} MB',
-          one: '{0} MB',
-          two: '{0} MB',
-          few: '{0} MB',
-          many: '{0} MB',
-          other: '{0} MB',
+          'م.ب',
+          zero: '{0} م.ب',
+          one: '{0} م.ب',
+          two: '{0} م.ب',
+          few: '{0} م.ب',
+          many: '{0} م.ب',
+          other: '{0} م.ب',
         ),
       );
 
@@ -3382,13 +3429,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ميغابت',
-          zero: '{0} ميغابت',
-          one: '{0} ميغابت',
-          two: '{0} ميغابت',
-          few: '{0} ميغابت',
-          many: '{0} ميغابت',
-          other: '{0} ميغابت',
+          'م.بت',
+          zero: '{0} م.بت',
+          one: '{0} م.بت',
+          two: '{0} م.بت',
+          few: '{0} م.بت',
+          many: '{0} م.بت',
+          other: '{0} م.بت',
         ),
       );
 
@@ -3416,13 +3463,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'كيلوبايت',
-          zero: '{0} كيلوبايت',
-          one: '{0} كيلوبايت',
-          two: '{0} كيلوبايت',
-          few: '{0} كيلوبايت',
-          many: '{0} كيلوبايت',
-          other: '{0} كيلوبايت',
+          'ك.ب',
+          zero: '{0} ك.ب',
+          one: '{0} ك.ب',
+          two: '{0} ك.ب',
+          few: '{0} ك.ب',
+          many: '{0} ك.ب',
+          other: '{0} ك.ب',
         ),
       );
 
@@ -3450,13 +3497,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'كيلوبت',
-          zero: '{0} كيلوبت',
-          one: '{0} كيلوبت',
-          two: '{0} كيلوبت',
-          few: '{0} كيلوبت',
-          many: '{0} كيلوبت',
-          other: '{0} كيلوبت',
+          'ك.بت',
+          zero: '{0} ك.بت',
+          one: '{0} ك.بت',
+          two: '{0} ك.بت',
+          few: '{0} ك.بت',
+          many: '{0} ك.بت',
+          other: '{0} ك.بت',
         ),
       );
 
@@ -3484,13 +3531,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'بايت',
-          zero: '{0} بايت',
-          one: '{0} بايت',
-          two: '{0} بايت',
-          few: '{0} بايت',
-          many: '{0} بايت',
-          other: '{0} بايت',
+          'ب',
+          zero: '{0} ب',
+          one: '{0} ب',
+          two: '{0} ب',
+          few: '{0} ب',
+          many: '{0} ب',
+          other: '{0} ب',
         ),
       );
 
@@ -4096,13 +4143,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ك سعرة',
-          zero: '{0} ك سعرة',
-          one: '{0} ك سعرة',
-          two: '{0} ك سعرة',
-          few: '{0} ك سعرة',
-          many: '{0} ك سعرة',
-          other: '{0} ك سعرة',
+          'ك سع',
+          zero: '{0} ك سع',
+          one: '{0} ك سع',
+          two: '{0} ك سع',
+          few: '{0} ك سع',
+          many: '{0} ك سع',
+          other: '{0} ك سع',
         ),
       );
 
@@ -4447,6 +4494,40 @@ class UnitsAr implements Units {
       );
 
   @override
+  Unit get forceKilowattHourPer100Kilometer => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'كيلوواط ساعة لكل 100 كيلومتر',
+          zero: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+          one: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+          two: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+          few: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+          many: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+          other: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ك.و.س لكل 100 كم',
+          zero: '{0} ك.و.س لكل 100 كم',
+          one: '{0} ك.و.س لكل 100 كم',
+          two: '{0} ك.و.س لكل 100 كم',
+          few: '{0} ك.و.س لكل 100 كم',
+          many: '{0} ك.و.س لكل 100 كم',
+          other: '{0} ك.و.س لكل 100 كم',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ك.و.س/100 كم',
+          zero: '{0} ك.و.س/100 كم',
+          one: '{0} ك.و.س/100 كم',
+          two: '{0} ك.و.س/100 كم',
+          few: '{0} ك.و.س/100 كم',
+          many: '{0} ك.و.س/100 كم',
+          other: '{0} ك.و.س/100 كم',
+        ),
+      );
+
+  @override
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4675,12 +4756,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'م.بكسل',
-          zero: '{0} م.بكسل',
-          one: '{0} م.بكسل',
-          two: '{0} م.بكسل',
-          few: '{0} م.بكسل',
-          many: '{0} م.بكسل',
-          other: '{0} م.بكسل',
+          zero: '{0} م.بك',
+          one: '{0} م.بك',
+          two: '{0} م.بك',
+          few: '{0} م.بك',
+          many: '{0} م.بك',
+          other: '{0} م.بك',
         ),
       );
 
@@ -4708,13 +4789,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'بكسل لكل سنتيمتر',
-          zero: '{0} بكسل/سم',
-          one: '{0} بكسل/سم',
-          two: '{0} بكسل/سم',
-          few: '{0} بكسل/سم',
-          many: '{0} بكسل/سم',
-          other: '{0} بكسل/سم',
+          'بكسل/سم',
+          zero: '{0} بك/سم',
+          one: '{0} بك/سم',
+          two: '{0} بك/سم',
+          few: '{0} بك/سم',
+          many: '{0} بك/سم',
+          other: '{0} بك/سم',
         ),
       );
 
@@ -4742,13 +4823,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'بكسل لكل بوصة',
-          zero: '{0} بكسل/بوصة',
-          one: '{0} بكسل/بوصة',
-          two: '{0} بكسل/بوصة',
-          few: '{0} بكسل/بوصة',
-          many: '{0} بكسل/بوصة',
-          other: '{0} بكسل/بوصة',
+          'بكسل/بوصة',
+          zero: '{0} بك/بوصة',
+          one: '{0} بك/بوصة',
+          two: '{0} بك/بوصة',
+          few: '{0} بك/بوصة',
+          many: '{0} بك/بوصة',
+          other: '{0} بك/بوصة',
         ),
       );
 
@@ -4776,13 +4857,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'نقطة/سم',
-          zero: '{0} نقطة/سم',
-          one: '{0} نقطة/سم',
-          two: '{0} بكسل/سم',
-          few: '{0} نقاط/سم',
-          many: '{0} نقطة/سم',
-          other: '{0} نقطة/سم',
+          'ن/سم',
+          zero: '{0} ن/سم',
+          one: '{0} ن/سم',
+          two: '{0} ن/سم',
+          few: '{0} ن/سم',
+          many: '{0} ن/سم',
+          other: '{0} ن/سم',
         ),
       );
 
@@ -4810,13 +4891,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'نقطة لكل بوصة',
-          zero: '{0} نقطة/بوصة',
-          one: '{0} نقطة/بوصة',
-          two: '{0} بكسل/بوصة',
-          few: '{0} نقاط/بوصة',
-          many: '{0} نقطة/بوصة',
-          other: '{0} نقطة/بوصة',
+          'ن/بوصة',
+          zero: '{0} ن/بوصة',
+          one: '{0} ن/بوصة',
+          two: '{0} ن/بوصة',
+          few: '{0} ن/بوصة',
+          many: '{0} ن/بوصة',
+          other: '{0} ن/بوصة',
         ),
       );
 
@@ -5185,12 +5266,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ميل',
-          zero: '{0} من الأميال',
+          zero: '{0} ميل',
           one: '{0} ميل',
-          two: 'ميلان ({0})',
+          two: '{0} ميل',
           few: '{0} أميال',
           many: '{0} ميلاً',
-          other: '{0} من الأميال',
+          other: '{0} ميل',
         ),
       );
 
@@ -5219,12 +5300,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ياردة',
-          zero: '{0} من الياردات',
+          zero: '{0} ياردة',
           one: '{0} ياردة',
-          two: 'ياردتان ({0})',
-          few: '{0} ياردات',
+          two: '{0} ياردة',
+          few: '{0} ياردة',
           many: '{0} ياردة',
-          other: '{0} من الياردات',
+          other: '{0} ياردة',
         ),
       );
 
@@ -5253,12 +5334,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'قدم',
-          zero: '{0} من الأقدام',
-          one: '{0} قدم',
-          two: 'قدمان ({0})',
-          few: '{0} أقدام',
+          zero: '{0} قدم',
+          one: 'قدم',
+          two: '{0} قدم',
+          few: '{0} قدم',
           many: '{0} قدمًا',
-          other: '{0} من الأقدام',
+          other: '{0} قدم',
         ),
       );
 
@@ -6001,12 +6082,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'رطل',
-          zero: '{0}#',
-          one: '{0}#',
-          two: '{0}#',
-          few: '{0}#',
-          many: '{0}#',
-          other: '{0}#',
+          zero: '{0} رطل',
+          one: '{0} رطل',
+          two: '{0} رطل',
+          few: '{0} رطل',
+          many: '{0} رطل',
+          other: '{0} رطل',
         ),
       );
 
@@ -6035,12 +6116,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'أونصة',
-          zero: '{0} أونس',
-          one: '{0} أونس',
-          two: '{0} أونس',
-          few: '{0} أونس',
-          many: '{0} أونس',
-          other: '{0} أونس',
+          zero: '{0} أونصة',
+          one: 'أونصة',
+          two: '{0} أونصة',
+          few: '{0} أونصة',
+          many: '{0} أونصة',
+          other: '{0} أونصة',
         ),
       );
 
@@ -6341,12 +6422,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ك واط',
-          zero: '{0} كواط',
-          one: '{0} كواط',
-          two: '{0} كواط',
-          few: '{0} كواط',
-          many: '{0} كواط',
-          other: '{0} كواط',
+          zero: '{0} ك واط',
+          one: '{0} ك واط',
+          two: '{0} ك واط',
+          few: '{0} ك واط',
+          many: '{0} ك واط',
+          other: '{0} ك واط',
         ),
       );
 
@@ -6443,12 +6524,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'حصان',
-          zero: '{0} قوة حصان',
-          one: '{0} قوة حصان',
-          two: '{0} قوة حصان',
-          few: '{0} قوة حصان',
-          many: '{0} قوة حصان',
-          other: '{0} قوة حصان',
+          zero: '{0} حصان',
+          one: '{0} حصان',
+          two: '{0} حصان',
+          few: '{0} حصان',
+          many: '{0} حصان',
+          other: '{0} حصان',
         ),
       );
 
@@ -6510,7 +6591,7 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'رطل/بوصة مربعة',
+          'رطل/بوصة²',
           zero: '{0} رطل/بوصة²',
           one: '{0} رطل/بوصة²',
           two: '{0} رطل/بوصة²',
@@ -6544,7 +6625,7 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ب. زئبقية',
+          'ب ز',
           zero: '{0} ب ز',
           one: '{0} ب ز',
           two: '{0} ب ز',
@@ -6613,12 +6694,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'م. بار',
-          zero: '{0} مللي بار',
-          one: '{0} مللي بار',
-          two: '{0} مللي بار',
-          few: '{0} مللي بار',
-          many: '{0} مللي بار',
-          other: '{0} مللي بار',
+          zero: '{0} م. بار',
+          one: '{0} م. بار',
+          two: '{0} م. بار',
+          few: '{0} م. بار',
+          many: '{0} م. بار',
+          other: '{0} م. بار',
         ),
       );
 
@@ -6715,12 +6796,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'هكتوباسكال',
-          zero: '{0} هكب',
-          one: '{0} هكب',
-          two: '{0} هكب',
-          few: '{0} هكب',
-          many: '{0} هكب',
-          other: '{0} هكب',
+          zero: '{0} هكتوباسكال',
+          one: '{0} هكتوباسكال',
+          two: '{0} هكتوباسكال',
+          few: '{0} هكتوباسكال',
+          many: '{0} هكتوباسكال',
+          other: '{0} هكتوباسكال',
         ),
       );
 
@@ -7020,13 +7101,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'درجة فهرنهايت',
-          zero: '{0} د ف',
-          one: '{0} د ف',
-          two: '{0} د ف',
-          few: '{0} د ف',
-          many: '{0} د ف',
-          other: '{0} د ف',
+          '°ف',
+          zero: '{0}°ف',
+          one: '{0}°ف',
+          two: '{0}°ف',
+          few: '{0}°ف',
+          many: '{0}°ف',
+          other: '{0}°ف',
         ),
       );
 
@@ -7122,13 +7203,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'نيوتن متر',
-          zero: '{0} نيوتن متر',
-          one: '{0} نيوتن متر',
-          two: '{0} نيوتن متر',
-          few: '{0} نيوتن متر',
-          many: '{0} نيوتن متر',
-          other: '{0} نيوتن متر',
+          'نيوتن م',
+          zero: '{0} نيوتن م',
+          one: '{0} نيوتن م',
+          two: '{0} نيوتن م',
+          few: '{0} نيوتن م',
+          many: '{0} نيوتن م',
+          other: '{0} نيوتن م',
         ),
       );
 
@@ -7259,12 +7340,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ميل³',
-          zero: '{0} ميل مكعب',
-          one: '{0} ميل مكعب',
-          two: '{0} ميل مكعب',
-          few: '{0} ميل مكعب',
-          many: '{0} ميل مكعب',
-          other: '{0} ميل مكعب',
+          zero: '{0} ميل³',
+          one: '{0} ميل³',
+          two: '{0} ميل³',
+          few: '{0} ميل³',
+          many: '{0} ميل³',
+          other: '{0} ميل³',
         ),
       );
 
@@ -7360,13 +7441,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'بوصة مكعبة',
-          zero: '{0} بوصة مكعبة',
-          one: '{0} بوصة مكعبة',
-          two: '{0} بوصة مكعبة',
-          few: '{0} بوصة مكعبة',
-          many: '{0} بوصة مكعبة',
-          other: '{0} بوصة مكعبة',
+          'بوصة³',
+          zero: '{0} بوصة³',
+          one: '{0} بوصة³',
+          two: '{0} بوصة³',
+          few: '{0} بوصة³',
+          many: '{0} بوصة³',
+          other: '{0} بوصة³',
         ),
       );
 
@@ -7904,13 +7985,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'أونصة سائلة',
-          zero: '{0} أونصة سائلة',
+          'أونصة س',
+          zero: '{0} أونصة س',
           one: 'أونصة س',
           two: '{0} أونصة س',
-          few: '{0} أونصات سائلة',
+          few: '{0} أونصة س',
           many: '{0} أونصة س',
-          other: '{0} أونصة سائلة',
+          other: '{0} أونصة س',
         ),
       );
 
@@ -7929,12 +8010,22 @@ class UnitsAr implements Units {
         short: UnitCountPattern(
           _locale,
           'أونصة سائلة إمبراطورية',
-          other: '{0} fl oz Imp.',
+          zero: '{0} أونصة سائلة إمبراطورية',
+          one: 'أونصة سائلة إمبراطورية',
+          two: '{0} أونصة سائلة إمبراطورية',
+          few: '{0} أونصة سائلة إمبراطورية',
+          many: '{0} أونصة سائلة إمبراطورية',
+          other: '{0} أونصة سائلة إمبراطورية',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'أونصة سائلة إمبراطورية',
-          other: '{0} fl oz Imp.',
+          'أونصة س إمبراطورية',
+          zero: '{0} أونصة س إمبراطورية',
+          one: 'أونصة س إمبراطورية',
+          two: '{0} أونصة س إمبراطورية',
+          few: '{0} أونصة س إمبراطورية',
+          many: '{0} أونصة س إمبراطورية',
+          other: '{0} أونصة س إمبراطورية',
         ),
       );
 
@@ -7962,13 +8053,13 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ملعقة كبيرة',
-          zero: '{0} ملعقة ك.',
-          one: 'ملعقة ك.',
-          two: '{0} ملعقة ك.',
-          few: '{0} ملعقة ك.',
-          many: '{0} ملعقة ك.',
-          other: '{0} ملعقة ك.',
+          'ملعقة ك',
+          zero: '{0} ملعقة ك',
+          one: 'ملعقة ك',
+          two: '{0} ملعقة ك',
+          few: '{0} ملعقة ك',
+          many: '{0} ملعقة ك',
+          other: '{0} ملعقة ك',
         ),
       );
 
@@ -8033,9 +8124,9 @@ class UnitsAr implements Units {
           'برميل',
           zero: '{0} برميل',
           one: 'برميل',
-          two: 'برميلان',
-          few: '{0} براميل',
-          many: '{0} برميلًا',
+          two: '{0} برميل',
+          few: '{0} برميل',
+          many: '{0} برميل',
           other: '{0} برميل',
         ),
       );
@@ -8202,9 +8293,9 @@ class UnitsAr implements Units {
           _locale,
           'قدح',
           zero: '{0} قدح',
-          one: '{0} قدح',
+          one: 'قدح',
           two: '{0} قدح',
-          few: '{0} أقداح',
+          few: '{0} قدح',
           many: '{0} قدح',
           other: '{0} قدح',
         ),

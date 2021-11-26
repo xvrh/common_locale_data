@@ -7,7 +7,7 @@ abstract class Units {
   /// meters per second squared
   Unit get accelerationMeterPerSquareSecond;
 
-  /// revolution
+  /// revolutions
   Unit get angleRevolution;
 
   /// radians
@@ -60,6 +60,9 @@ abstract class Units {
 
   /// millimoles per liter
   Unit get concentrMillimolePerLiter;
+
+  /// items
+  Unit get concentrItem;
 
   /// parts per million
   Unit get concentrPermillion;
@@ -202,6 +205,9 @@ abstract class Units {
   /// newtons
   Unit get forceNewton;
 
+  /// kilowatt-hours per 100 kilometers
+  Unit get forceKilowattHourPer100Kilometer;
+
   /// gigahertz
   Unit get frequencyGigahertz;
 
@@ -214,7 +220,7 @@ abstract class Units {
   /// hertz
   Unit get frequencyHertz;
 
-  /// typographic em
+  /// typographic ems
   Unit get graphicsEm;
 
   /// pixels
@@ -235,7 +241,7 @@ abstract class Units {
   /// dots per inch
   Unit get graphicsDotPerInch;
 
-  /// dot
+  /// dots
   Unit get graphicsDot;
 
   /// earth radius
@@ -295,7 +301,7 @@ abstract class Units {
   /// nautical miles
   Unit get lengthNauticalMile;
 
-  /// mile-scandinavian
+  /// miles-scandinavian
   Unit get lengthMileScandinavian;
 
   /// points
@@ -358,7 +364,7 @@ abstract class Units {
   /// solar masses
   Unit get massSolarMass;
 
-  /// grain
+  /// grains
   Unit get massGrain;
 
   /// gigawatts
@@ -433,7 +439,7 @@ abstract class Units {
   /// kelvins
   Unit get temperatureKelvin;
 
-  /// pound-feet
+  /// pound-force-feet
   Unit get torquePoundForceFoot;
 
   /// newton-meters
@@ -520,24 +526,24 @@ abstract class Units {
   /// barrels
   Unit get volumeBarrel;
 
-  /// dessert spoon
+  /// dessert spoons
   Unit get volumeDessertSpoon;
 
-  /// Imp. dessert spoon
+  /// Imp. dessert spoons
   Unit get volumeDessertSpoonImperial;
 
-  /// drop
+  /// drops
   Unit get volumeDrop;
 
-  /// dram
+  /// drams
   Unit get volumeDram;
 
-  /// jigger
+  /// jiggers
   Unit get volumeJigger;
 
-  /// pinch
+  /// pinches
   Unit get volumePinch;
 
-  /// Imp. quart
+  /// Imp. quarts
   Unit get volumeQuartImperial;
 }
