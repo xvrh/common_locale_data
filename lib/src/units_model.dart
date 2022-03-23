@@ -85,6 +85,12 @@ abstract class Units {
   /// yobi{0}
   UnitPrefix get pattern1024p8;
 
+  /// {0} per {1}
+  CompoundUnit get per;
+
+  /// {0}-{1}
+  CompoundUnit get times;
+
   /// g-force
   Unit get accelerationGForce;
 
