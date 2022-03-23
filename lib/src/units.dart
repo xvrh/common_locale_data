@@ -83,3 +83,31 @@ class UnitPrefixPattern {
 
   String call(String value) => pattern.replaceAll('{0}', value);
 }
+
+class CompoundUnit {
+  CompoundUnitPattern long, short, narrow;
+
+  CompoundUnit({required this.long, required this.short, required this.narrow});
+
+  String call(String a, String b) => long.call(a, b);
+
+  @override
+  String toString() => long.pattern;
+}
+
+class CompoundUnitPattern {
+  final String pattern;
+
+  CompoundUnitPattern(this.pattern);
+
+  String format(String a, String b) {
+    return call(a, b);
+  }
+
+  String unit(UnitCountPattern a, UnitCountPattern b) {
+    return call(a(0, placeholder: ''), b(0, placeholder: ''));
+  }
+
+  String call(String a, String b) =>
+      pattern.replaceAll('{0}', a).replaceAll('{1}', b);
+}

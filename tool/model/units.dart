@@ -31,8 +31,12 @@ String generateUnitsModel() {
       var getter = _prefixPatternField(key);
       code.writeln('UnitPrefix get $getter;');
       code.writeln('');
-    }
-    if (field.displayName != null && field.unitPatternCountOther != null) {
+    } else if (field.compoundUnitPattern != null) {
+      code.writeln('/// ${field.compoundUnitPattern}');
+      code.writeln('CompoundUnit get ${lowerCamel(splitWords(key))};');
+      code.writeln('');
+    } else if (field.displayName != null &&
+        field.unitPatternCountOther != null) {
       code.writeln('/// ${field.displayName}');
       code.writeln('Unit get ${lowerCamel(splitWords(key))};');
       code.writeln('');
@@ -122,6 +126,30 @@ void generateUnits(String language, StringBuffer buffer) {
             '$length: UnitPrefixPattern(${escapeDartString(pattern)}),');
       }
       buffer.writeln(');');
+    } else if (firstField.compoundUnitPattern != null) {
+      buffer.writeln('@override');
+      buffer.writeln(
+          'CompoundUnit get ${lowerCamel(splitWords(key))} => CompoundUnit(');
+      for (var length in lengths) {
+        var unitsForLength = units[length]!;
+        var jsonForLength = unitsForLength[key] as Map<String, dynamic>?;
+        var fallbackJson = (units[lengths.first]![key] ??
+                ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
+                ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]))
+            as Map<String, dynamic>;
+        jsonForLength ??= fallbackJson;
+        var unitForLength = UnitField.fromJson(jsonForLength);
+        var fallback = UnitField.fromJson(fallbackJson);
+        var pattern =
+            unitForLength.compoundUnitPattern ?? fallback.compoundUnitPattern;
+        if (pattern == null) {
+          throw Exception(
+              '$key ${unitForLength.compoundUnitPattern} is null for length $length');
+        }
+        buffer.writeln(
+            '$length: CompoundUnitPattern(${escapeDartString(pattern)}),');
+      }
+      buffer.writeln(');');
     }
   }
 
@@ -140,6 +168,7 @@ class UnitField {
     this.unitPatternCountOther,
     this.perUnitPattern,
     this.unitPrefixPattern,
+    this.compoundUnitPattern,
   );
 
   factory UnitField.fromJson(Map<String, dynamic> json) =>
@@ -177,4 +206,6 @@ class UnitField {
   final String? perUnitPattern;
 
   final String? unitPrefixPattern;
+
+  final String? compoundUnitPattern;
 }

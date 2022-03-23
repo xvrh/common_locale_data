@@ -2350,6 +2350,18 @@ class UnitsEl implements Units {
         narrow: UnitPrefixPattern('γμπ-{0}'),
       );
   @override
+  CompoundUnit get per => CompoundUnit(
+        long: CompoundUnitPattern('{0} ανά {1}'),
+        short: CompoundUnitPattern('{0}/{1}'),
+        narrow: CompoundUnitPattern('{0}/{1}'),
+      );
+  @override
+  CompoundUnit get times => CompoundUnit(
+        long: CompoundUnitPattern('{0}⋅{1}'),
+        short: CompoundUnitPattern('{0}⋅{1}'),
+        narrow: CompoundUnitPattern('{0}⋅{1}'),
+      );
+  @override
   Unit get accelerationGForce => Unit(
         long: UnitCountPattern(
           _locale,

@@ -28,6 +28,18 @@ void main() {
         'mV');
   });
 
+  test('compound units', () {
+    expect(cld.units.per('gr', 'lt'), 'gr per lt');
+    expect(
+        cld.units.per(cld.units.massGram.long.displayName,
+            cld.units.volumeLiter.long.displayName),
+        'grams per liters');
+    expect(
+        cld.units.per.narrow
+            .unit(cld.units.massGram.narrow, cld.units.volumeLiter.narrow),
+        'g/L');
+  });
+
   test('date', () {
     expect(cld.date.year.future.long(2), 'in 2 years');
     expect(cld.date.year.past.long(2), '2 years ago');
