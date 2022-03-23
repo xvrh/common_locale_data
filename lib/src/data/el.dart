@@ -2182,6 +2182,174 @@ class UnitsEl implements Units {
   UnitsEl._();
 
   @override
+  UnitPrefix get pattern10pMinus1 => UnitPrefix(
+        long: UnitPrefixPattern('δεκατο-{0}'),
+        short: UnitPrefixPattern('δκτ-{0}'),
+        narrow: UnitPrefixPattern('δεκατ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus2 => UnitPrefix(
+        long: UnitPrefixPattern('εκατοστο-{0}'),
+        short: UnitPrefixPattern('εκστ-{0}'),
+        narrow: UnitPrefixPattern('εκατοστ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus3 => UnitPrefix(
+        long: UnitPrefixPattern('χιλιοστο-{0}'),
+        short: UnitPrefixPattern('χλστ-{0}'),
+        narrow: UnitPrefixPattern('χιλιοστ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus6 => UnitPrefix(
+        long: UnitPrefixPattern('μικρο-{0}'),
+        short: UnitPrefixPattern('μκρ-{0}'),
+        narrow: UnitPrefixPattern('μικρ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus9 => UnitPrefix(
+        long: UnitPrefixPattern('νανο-{0}'),
+        short: UnitPrefixPattern('νν-{0}'),
+        narrow: UnitPrefixPattern('ναν-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus12 => UnitPrefix(
+        long: UnitPrefixPattern('πικο-{0}'),
+        short: UnitPrefixPattern('πκ-{0}'),
+        narrow: UnitPrefixPattern('πικ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus15 => UnitPrefix(
+        long: UnitPrefixPattern('φεμτο-{0}'),
+        short: UnitPrefixPattern('φμτ-{0}'),
+        narrow: UnitPrefixPattern('φεμτ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus18 => UnitPrefix(
+        long: UnitPrefixPattern('αττο-{0}'),
+        short: UnitPrefixPattern('ατ-{0}'),
+        narrow: UnitPrefixPattern('αττ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus21 => UnitPrefix(
+        long: UnitPrefixPattern('ζεπτο-{0}'),
+        short: UnitPrefixPattern('ζπτ-{0}'),
+        narrow: UnitPrefixPattern('ζεπ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus24 => UnitPrefix(
+        long: UnitPrefixPattern('γιοκτο-{0}'),
+        short: UnitPrefixPattern('γκτ-{0}'),
+        narrow: UnitPrefixPattern('γιοκ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p1 => UnitPrefix(
+        long: UnitPrefixPattern('δεκα-{0}'),
+        short: UnitPrefixPattern('δκ-{0}'),
+        narrow: UnitPrefixPattern('δεκ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p2 => UnitPrefix(
+        long: UnitPrefixPattern('εκατο-{0}'),
+        short: UnitPrefixPattern('εκτ-{0}'),
+        narrow: UnitPrefixPattern('εκατ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p3 => UnitPrefix(
+        long: UnitPrefixPattern('χιλιο-{0}'),
+        short: UnitPrefixPattern('χλ-{0}'),
+        narrow: UnitPrefixPattern('χιλ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p6 => UnitPrefix(
+        long: UnitPrefixPattern('μεγα-{0}'),
+        short: UnitPrefixPattern('μγ-{0}'),
+        narrow: UnitPrefixPattern('μεγ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p9 => UnitPrefix(
+        long: UnitPrefixPattern('γιγα-{0}'),
+        short: UnitPrefixPattern('γγ-{0}'),
+        narrow: UnitPrefixPattern('γιγ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p12 => UnitPrefix(
+        long: UnitPrefixPattern('τερα-{0}'),
+        short: UnitPrefixPattern('τρ-{0}'),
+        narrow: UnitPrefixPattern('τερ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p15 => UnitPrefix(
+        long: UnitPrefixPattern('πετα-{0}'),
+        short: UnitPrefixPattern('πτ-{0}'),
+        narrow: UnitPrefixPattern('πετ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p18 => UnitPrefix(
+        long: UnitPrefixPattern('εξα-{0}'),
+        short: UnitPrefixPattern('εξ-{0}'),
+        narrow: UnitPrefixPattern('εξ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p21 => UnitPrefix(
+        long: UnitPrefixPattern('ζεττα-{0}'),
+        short: UnitPrefixPattern('ζτ-{0}'),
+        narrow: UnitPrefixPattern('ζετ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p24 => UnitPrefix(
+        long: UnitPrefixPattern('γιοττα-{0}'),
+        short: UnitPrefixPattern('γττ-{0}'),
+        narrow: UnitPrefixPattern('γιοτ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p1 => UnitPrefix(
+        long: UnitPrefixPattern('κιμπι-{0}'),
+        short: UnitPrefixPattern('κμπ-{0}'),
+        narrow: UnitPrefixPattern('κμπ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p2 => UnitPrefix(
+        long: UnitPrefixPattern('μεμπι-{0}'),
+        short: UnitPrefixPattern('μμπ-{0}'),
+        narrow: UnitPrefixPattern('μμπ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p3 => UnitPrefix(
+        long: UnitPrefixPattern('γκιμπι-{0}'),
+        short: UnitPrefixPattern('γκμ-{0}'),
+        narrow: UnitPrefixPattern('γκμ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p4 => UnitPrefix(
+        long: UnitPrefixPattern('τεμπι-{0}'),
+        short: UnitPrefixPattern('τμπ-{0}'),
+        narrow: UnitPrefixPattern('τμπ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p5 => UnitPrefix(
+        long: UnitPrefixPattern('πεμπι-{0}'),
+        short: UnitPrefixPattern('πμπ-{0}'),
+        narrow: UnitPrefixPattern('πμπ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p6 => UnitPrefix(
+        long: UnitPrefixPattern('εξμπι-{0}'),
+        short: UnitPrefixPattern('εξμ-{0}'),
+        narrow: UnitPrefixPattern('εξμ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p7 => UnitPrefix(
+        long: UnitPrefixPattern('ζεμπι-{0}'),
+        short: UnitPrefixPattern('ζμπ-{0}'),
+        narrow: UnitPrefixPattern('ζμπ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p8 => UnitPrefix(
+        long: UnitPrefixPattern('γιομπι-{0}'),
+        short: UnitPrefixPattern('γμπ-{0}'),
+        narrow: UnitPrefixPattern('γμπ-{0}'),
+      );
+  @override
   Unit get accelerationGForce => Unit(
         long: UnitCountPattern(
           _locale,

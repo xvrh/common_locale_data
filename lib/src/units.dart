@@ -56,3 +56,30 @@ class UnitCountPattern {
   @override
   String toString([num? howMany]) => call(howMany ?? 1);
 }
+
+class UnitPrefix {
+  UnitPrefixPattern long, short, narrow;
+
+  UnitPrefix({required this.long, required this.short, required this.narrow});
+
+  String call(String value) => long.call(value);
+
+  @override
+  String toString() => long.pattern;
+}
+
+class UnitPrefixPattern {
+  final String pattern;
+
+  UnitPrefixPattern(this.pattern);
+
+  String format(String value) {
+    return call(value);
+  }
+
+  String unit(UnitCountPattern unit) {
+    return call(unit(0, placeholder: ''));
+  }
+
+  String call(String value) => pattern.replaceAll('{0}', value);
+}

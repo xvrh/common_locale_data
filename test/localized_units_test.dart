@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('date', () {
+  test('units', () {
     expect(cld.units.lengthMeter.toString(), 'meters');
     expect(cld.units.lengthMeter.long(3).toString(), '3 meters');
     expect(cld.units.lengthMeter.long(1), '1 meter');
@@ -19,7 +19,16 @@ void main() {
         '2.0 square meters');
   });
 
-  test('units', () {
+  test('unit patterns', () {
+    expect(cld.units.pattern10pMinus3('Volt'), 'milliVolt');
+    expect(cld.units.pattern10pMinus3(cld.units.electricVolt.long.displayName),
+        'millivolts');
+    expect(
+        cld.units.pattern10pMinus3.narrow.unit(cld.units.electricVolt.narrow),
+        'mV');
+  });
+
+  test('date', () {
     expect(cld.date.year.future.long(2), 'in 2 years');
     expect(cld.date.year.past.long(2), '2 years ago');
     expect(cld.date.year.next.long, 'next year');
