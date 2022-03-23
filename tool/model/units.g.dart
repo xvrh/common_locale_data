@@ -15,4 +15,5 @@ UnitField _$UnitFieldFromJson(Map<String, dynamic> json) => UnitField(
       json['unitPattern-count-many'] as String?,
       json['unitPattern-count-other'] as String?,
       json['perUnitPattern'] as String?,
+      json['unitPrefixPattern'] as String?,
     );

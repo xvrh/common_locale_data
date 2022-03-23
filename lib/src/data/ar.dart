@@ -2192,6 +2192,174 @@ class UnitsAr implements Units {
   UnitsAr._();
 
   @override
+  UnitPrefix get pattern10pMinus1 => UnitPrefix(
+        long: UnitPrefixPattern('ديسي{0}'),
+        short: UnitPrefixPattern('د{0}'),
+        narrow: UnitPrefixPattern('د{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus2 => UnitPrefix(
+        long: UnitPrefixPattern('سنتي{0}'),
+        short: UnitPrefixPattern('س{0}'),
+        narrow: UnitPrefixPattern('س{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus3 => UnitPrefix(
+        long: UnitPrefixPattern('ملّي{0}'),
+        short: UnitPrefixPattern('م{0}'),
+        narrow: UnitPrefixPattern('م{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus6 => UnitPrefix(
+        long: UnitPrefixPattern('ميكرو{0}'),
+        short: UnitPrefixPattern('مك{0}'),
+        narrow: UnitPrefixPattern('مك{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus9 => UnitPrefix(
+        long: UnitPrefixPattern('نانو{0}'),
+        short: UnitPrefixPattern('ن{0}'),
+        narrow: UnitPrefixPattern('ن{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus12 => UnitPrefix(
+        long: UnitPrefixPattern('بيكو{0}'),
+        short: UnitPrefixPattern('ب{0}'),
+        narrow: UnitPrefixPattern('ب{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus15 => UnitPrefix(
+        long: UnitPrefixPattern('فيمتو{0}'),
+        short: UnitPrefixPattern('ف{0}'),
+        narrow: UnitPrefixPattern('ف{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus18 => UnitPrefix(
+        long: UnitPrefixPattern('أتو{0}'),
+        short: UnitPrefixPattern('أ{0}'),
+        narrow: UnitPrefixPattern('أ{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus21 => UnitPrefix(
+        long: UnitPrefixPattern('زيبتو{0}'),
+        short: UnitPrefixPattern('زيب{0}'),
+        narrow: UnitPrefixPattern('زيب{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus24 => UnitPrefix(
+        long: UnitPrefixPattern('يوكتو{0}'),
+        short: UnitPrefixPattern('يك{0}'),
+        narrow: UnitPrefixPattern('يك{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p1 => UnitPrefix(
+        long: UnitPrefixPattern('ديكا{0}'),
+        short: UnitPrefixPattern('دا{0}'),
+        narrow: UnitPrefixPattern('دا{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p2 => UnitPrefix(
+        long: UnitPrefixPattern('هكتو{0}'),
+        short: UnitPrefixPattern('ه{0}'),
+        narrow: UnitPrefixPattern('ه{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p3 => UnitPrefix(
+        long: UnitPrefixPattern('كيلو{0}'),
+        short: UnitPrefixPattern('ك{0}'),
+        narrow: UnitPrefixPattern('ك{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p6 => UnitPrefix(
+        long: UnitPrefixPattern('ميغا{0}'),
+        short: UnitPrefixPattern('مغ{0}'),
+        narrow: UnitPrefixPattern('مغ{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p9 => UnitPrefix(
+        long: UnitPrefixPattern('غيغا{0}'),
+        short: UnitPrefixPattern('غ{0}'),
+        narrow: UnitPrefixPattern('غ{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p12 => UnitPrefix(
+        long: UnitPrefixPattern('تيرا{0}'),
+        short: UnitPrefixPattern('ت{0}'),
+        narrow: UnitPrefixPattern('ت{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p15 => UnitPrefix(
+        long: UnitPrefixPattern('بيتا{0}'),
+        short: UnitPrefixPattern('بتا{0}'),
+        narrow: UnitPrefixPattern('بتا{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p18 => UnitPrefix(
+        long: UnitPrefixPattern('إكسا{0}'),
+        short: UnitPrefixPattern('إ.{0}'),
+        narrow: UnitPrefixPattern('إ.{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p21 => UnitPrefix(
+        long: UnitPrefixPattern('زيتا{0}'),
+        short: UnitPrefixPattern('زت{0}'),
+        narrow: UnitPrefixPattern('زت{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p24 => UnitPrefix(
+        long: UnitPrefixPattern('يوتا{0}'),
+        short: UnitPrefixPattern('يو{0}'),
+        narrow: UnitPrefixPattern('يو{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p1 => UnitPrefix(
+        long: UnitPrefixPattern('كيبي{0}'),
+        short: UnitPrefixPattern('كيبي{0}'),
+        narrow: UnitPrefixPattern('كيبي{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p2 => UnitPrefix(
+        long: UnitPrefixPattern('ميبي{0}'),
+        short: UnitPrefixPattern('ميبي{0}'),
+        narrow: UnitPrefixPattern('ميبي{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p3 => UnitPrefix(
+        long: UnitPrefixPattern('غيبي{0}'),
+        short: UnitPrefixPattern('غيبي{0}'),
+        narrow: UnitPrefixPattern('غيبي{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p4 => UnitPrefix(
+        long: UnitPrefixPattern('تيبي{0}'),
+        short: UnitPrefixPattern('تيبي{0}'),
+        narrow: UnitPrefixPattern('تيبي{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p5 => UnitPrefix(
+        long: UnitPrefixPattern('بيبي{0}'),
+        short: UnitPrefixPattern('بيبي{0}'),
+        narrow: UnitPrefixPattern('بيبي{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p6 => UnitPrefix(
+        long: UnitPrefixPattern('إكسبي{0}'),
+        short: UnitPrefixPattern('إكسبي{0}'),
+        narrow: UnitPrefixPattern('إكسبي{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p7 => UnitPrefix(
+        long: UnitPrefixPattern('زيبي{0}'),
+        short: UnitPrefixPattern('زيبي{0}'),
+        narrow: UnitPrefixPattern('زيبي{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p8 => UnitPrefix(
+        long: UnitPrefixPattern('يوبي{0}'),
+        short: UnitPrefixPattern('يوبي{0}'),
+        narrow: UnitPrefixPattern('يوبي{0}'),
+      );
+  @override
   Unit get accelerationGForce => Unit(
         long: UnitCountPattern(
           _locale,

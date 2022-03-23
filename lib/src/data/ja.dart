@@ -2524,6 +2524,174 @@ class UnitsJa implements Units {
   UnitsJa._();
 
   @override
+  UnitPrefix get pattern10pMinus1 => UnitPrefix(
+        long: UnitPrefixPattern('デシ{0}'),
+        short: UnitPrefixPattern('d{0}'),
+        narrow: UnitPrefixPattern('d{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus2 => UnitPrefix(
+        long: UnitPrefixPattern('センチ{0}'),
+        short: UnitPrefixPattern('c{0}'),
+        narrow: UnitPrefixPattern('c{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus3 => UnitPrefix(
+        long: UnitPrefixPattern('ミリ{0}'),
+        short: UnitPrefixPattern('m{0}'),
+        narrow: UnitPrefixPattern('m{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus6 => UnitPrefix(
+        long: UnitPrefixPattern('マイクロ{0}'),
+        short: UnitPrefixPattern('μ{0}'),
+        narrow: UnitPrefixPattern('μ{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus9 => UnitPrefix(
+        long: UnitPrefixPattern('ナノ{0}'),
+        short: UnitPrefixPattern('n{0}'),
+        narrow: UnitPrefixPattern('n{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus12 => UnitPrefix(
+        long: UnitPrefixPattern('ピコ{0}'),
+        short: UnitPrefixPattern('p{0}'),
+        narrow: UnitPrefixPattern('p{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus15 => UnitPrefix(
+        long: UnitPrefixPattern('フェムト{0}'),
+        short: UnitPrefixPattern('f{0}'),
+        narrow: UnitPrefixPattern('f{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus18 => UnitPrefix(
+        long: UnitPrefixPattern('アト{0}'),
+        short: UnitPrefixPattern('a{0}'),
+        narrow: UnitPrefixPattern('a{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus21 => UnitPrefix(
+        long: UnitPrefixPattern('ゼプト{0}'),
+        short: UnitPrefixPattern('z{0}'),
+        narrow: UnitPrefixPattern('z{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus24 => UnitPrefix(
+        long: UnitPrefixPattern('ヨクト{0}'),
+        short: UnitPrefixPattern('y{0}'),
+        narrow: UnitPrefixPattern('y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p1 => UnitPrefix(
+        long: UnitPrefixPattern('デカ{0}'),
+        short: UnitPrefixPattern('da{0}'),
+        narrow: UnitPrefixPattern('da{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p2 => UnitPrefix(
+        long: UnitPrefixPattern('ヘクト{0}'),
+        short: UnitPrefixPattern('h{0}'),
+        narrow: UnitPrefixPattern('h{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p3 => UnitPrefix(
+        long: UnitPrefixPattern('キロ{0}'),
+        short: UnitPrefixPattern('k{0}'),
+        narrow: UnitPrefixPattern('k{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p6 => UnitPrefix(
+        long: UnitPrefixPattern('メガ{0}'),
+        short: UnitPrefixPattern('M{0}'),
+        narrow: UnitPrefixPattern('M{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p9 => UnitPrefix(
+        long: UnitPrefixPattern('ギガ{0}'),
+        short: UnitPrefixPattern('G{0}'),
+        narrow: UnitPrefixPattern('G{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p12 => UnitPrefix(
+        long: UnitPrefixPattern('テラ{0}'),
+        short: UnitPrefixPattern('T{0}'),
+        narrow: UnitPrefixPattern('T{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p15 => UnitPrefix(
+        long: UnitPrefixPattern('ペタ{0}'),
+        short: UnitPrefixPattern('P{0}'),
+        narrow: UnitPrefixPattern('P{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p18 => UnitPrefix(
+        long: UnitPrefixPattern('エクサ{0}'),
+        short: UnitPrefixPattern('E{0}'),
+        narrow: UnitPrefixPattern('E{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p21 => UnitPrefix(
+        long: UnitPrefixPattern('ゼタ{0}'),
+        short: UnitPrefixPattern('Z{0}'),
+        narrow: UnitPrefixPattern('Z{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p24 => UnitPrefix(
+        long: UnitPrefixPattern('ヨタ{0}'),
+        short: UnitPrefixPattern('Y{0}'),
+        narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p1 => UnitPrefix(
+        long: UnitPrefixPattern('キビ{0}'),
+        short: UnitPrefixPattern('Ki{0}'),
+        narrow: UnitPrefixPattern('Ki{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p2 => UnitPrefix(
+        long: UnitPrefixPattern('メビ{0}'),
+        short: UnitPrefixPattern('Mi{0}'),
+        narrow: UnitPrefixPattern('Mi{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p3 => UnitPrefix(
+        long: UnitPrefixPattern('ギビ{0}'),
+        short: UnitPrefixPattern('Gi{0}'),
+        narrow: UnitPrefixPattern('Gi{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p4 => UnitPrefix(
+        long: UnitPrefixPattern('テビ{0}'),
+        short: UnitPrefixPattern('Ti{0}'),
+        narrow: UnitPrefixPattern('Ti{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p5 => UnitPrefix(
+        long: UnitPrefixPattern('ペビ{0}'),
+        short: UnitPrefixPattern('Pi{0}'),
+        narrow: UnitPrefixPattern('Pi{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p6 => UnitPrefix(
+        long: UnitPrefixPattern('エクスビ{0}'),
+        short: UnitPrefixPattern('Ei{0}'),
+        narrow: UnitPrefixPattern('Ei{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p7 => UnitPrefix(
+        long: UnitPrefixPattern('ゼビ{0}'),
+        short: UnitPrefixPattern('Zi{0}'),
+        narrow: UnitPrefixPattern('Zi{0}'),
+      );
+  @override
+  UnitPrefix get pattern1024p8 => UnitPrefix(
+        long: UnitPrefixPattern('ヨビ{0}'),
+        short: UnitPrefixPattern('Yi{0}'),
+        narrow: UnitPrefixPattern('Yi{0}'),
+      );
+  @override
   Unit get accelerationGForce => Unit(
         long: UnitCountPattern(
           _locale,

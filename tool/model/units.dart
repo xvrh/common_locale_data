@@ -26,6 +26,12 @@ String generateUnitsModel() {
   var fields = readJson('en')['long'] as Map<String, dynamic>;
   for (var key in fields.keys) {
     var field = UnitField.fromJson(fields[key] as Map<String, dynamic>);
+    if (field.unitPrefixPattern != null) {
+      code.writeln('/// ${field.unitPrefixPattern}');
+      var getter = _prefixPatternField(key);
+      code.writeln('UnitPrefix get $getter;');
+      code.writeln('');
+    }
     if (field.displayName != null && field.unitPatternCountOther != null) {
       code.writeln('/// ${field.displayName}');
       code.writeln('Unit get ${lowerCamel(splitWords(key))};');
@@ -35,6 +41,10 @@ String generateUnitsModel() {
 
   code.writeln('}');
   return '$code';
+}
+
+String _prefixPatternField(String key) {
+  return 'pattern${key.replaceAll('-', 'Minus')}';
 }
 
 void generateUnits(String language, StringBuffer buffer) {
@@ -88,6 +98,30 @@ void generateUnits(String language, StringBuffer buffer) {
 
       buffer.writeln(');');
       buffer.writeln('');
+    } else if (firstField.unitPrefixPattern != null) {
+      var getter = _prefixPatternField(key);
+      buffer.writeln('@override');
+      buffer.writeln('UnitPrefix get $getter => UnitPrefix(');
+      for (var length in lengths) {
+        var unitsForLength = units[length]!;
+        var jsonForLength = unitsForLength[key] as Map<String, dynamic>?;
+        var fallbackJson = (units[lengths.first]![key] ??
+                ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
+                ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]))
+            as Map<String, dynamic>;
+        jsonForLength ??= fallbackJson;
+        var unitForLength = UnitField.fromJson(jsonForLength);
+        var fallback = UnitField.fromJson(fallbackJson);
+        var pattern =
+            unitForLength.unitPrefixPattern ?? fallback.unitPrefixPattern;
+        if (pattern == null) {
+          throw Exception(
+              '$key ${unitForLength.unitPrefixPattern} is null for length $length');
+        }
+        buffer.writeln(
+            '$length: UnitPrefixPattern(${escapeDartString(pattern)}),');
+      }
+      buffer.writeln(');');
     }
   }
 
@@ -105,6 +139,7 @@ class UnitField {
     this.unitPatternCountMany,
     this.unitPatternCountOther,
     this.perUnitPattern,
+    this.unitPrefixPattern,
   );
 
   factory UnitField.fromJson(Map<String, dynamic> json) =>
@@ -140,4 +175,6 @@ class UnitField {
       }[plural];
 
   final String? perUnitPattern;
+
+  final String? unitPrefixPattern;
 }

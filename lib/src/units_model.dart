@@ -1,6 +1,90 @@
 import 'units.dart';
 
 abstract class Units {
+  /// deci{0}
+  UnitPrefix get pattern10pMinus1;
+
+  /// centi{0}
+  UnitPrefix get pattern10pMinus2;
+
+  /// milli{0}
+  UnitPrefix get pattern10pMinus3;
+
+  /// micro{0}
+  UnitPrefix get pattern10pMinus6;
+
+  /// nano{0}
+  UnitPrefix get pattern10pMinus9;
+
+  /// pico{0}
+  UnitPrefix get pattern10pMinus12;
+
+  /// femto{0}
+  UnitPrefix get pattern10pMinus15;
+
+  /// atto{0}
+  UnitPrefix get pattern10pMinus18;
+
+  /// zepto{0}
+  UnitPrefix get pattern10pMinus21;
+
+  /// yocto{0}
+  UnitPrefix get pattern10pMinus24;
+
+  /// deka{0}
+  UnitPrefix get pattern10p1;
+
+  /// hecto{0}
+  UnitPrefix get pattern10p2;
+
+  /// kilo{0}
+  UnitPrefix get pattern10p3;
+
+  /// mega{0}
+  UnitPrefix get pattern10p6;
+
+  /// giga{0}
+  UnitPrefix get pattern10p9;
+
+  /// tera{0}
+  UnitPrefix get pattern10p12;
+
+  /// peta{0}
+  UnitPrefix get pattern10p15;
+
+  /// exa{0}
+  UnitPrefix get pattern10p18;
+
+  /// zetta{0}
+  UnitPrefix get pattern10p21;
+
+  /// yotta{0}
+  UnitPrefix get pattern10p24;
+
+  /// kibi{0}
+  UnitPrefix get pattern1024p1;
+
+  /// mebi{0}
+  UnitPrefix get pattern1024p2;
+
+  /// gibi{0}
+  UnitPrefix get pattern1024p3;
+
+  /// tebi{0}
+  UnitPrefix get pattern1024p4;
+
+  /// pebi{0}
+  UnitPrefix get pattern1024p5;
+
+  /// exbi{0}
+  UnitPrefix get pattern1024p6;
+
+  /// zebi{0}
+  UnitPrefix get pattern1024p7;
+
+  /// yobi{0}
+  UnitPrefix get pattern1024p8;
+
   /// g-force
   Unit get accelerationGForce;
 
