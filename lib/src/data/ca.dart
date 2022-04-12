@@ -2459,13 +2459,13 @@ class UnitsCa implements Units {
       );
   @override
   UnitPrefix get pattern10p21 => UnitPrefix(
-        long: UnitPrefixPattern('zeta{0}'),
+        long: UnitPrefixPattern('zetta{0}'),
         short: UnitPrefixPattern('Z{0}'),
         narrow: UnitPrefixPattern('Z{0}'),
       );
   @override
   UnitPrefix get pattern10p24 => UnitPrefix(
-        long: UnitPrefixPattern('yota{0}'),
+        long: UnitPrefixPattern('yotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
       );
@@ -2513,7 +2513,7 @@ class UnitsCa implements Units {
       );
   @override
   UnitPrefix get pattern1024p8 => UnitPrefix(
-        long: UnitPrefixPattern('yobe{0}'),
+        long: UnitPrefixPattern('yobi{0}'),
         short: UnitPrefixPattern('Yi{0}'),
         narrow: UnitPrefixPattern('Yi{0}'),
       );
@@ -4286,7 +4286,7 @@ class UnitsCa implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'punt',
+          'píxels',
           one: '{0} punt',
           other: '{0} punts',
         ),
@@ -5172,7 +5172,7 @@ class UnitsCa implements Units {
   Unit get massGrain => Unit(
         long: UnitCountPattern(
           _locale,
-          'gra',
+          'grans',
           one: '{0} gra',
           other: '{0} grans',
         ),
@@ -6400,7 +6400,7 @@ class UnitsCa implements Units {
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
           _locale,
-          'gota',
+          'gotes',
           one: '{0} gota',
           other: '{0} gotes',
         ),
@@ -6444,7 +6444,7 @@ class UnitsCa implements Units {
   Unit get volumeJigger => Unit(
         long: UnitCountPattern(
           _locale,
-          'mesurador de cocteleria',
+          'mesuradors de cocteleria',
           one: '{0} mesurador de cocteleria',
           other: '{0} mesuradors de cocteleria',
         ),
@@ -6466,7 +6466,7 @@ class UnitsCa implements Units {
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
           _locale,
-          'pessic',
+          'pessics',
           one: '{0} pessic',
           other: '{0} pessics',
         ),
@@ -6488,7 +6488,7 @@ class UnitsCa implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'quart imperial',
+          'quarts imperials',
           one: '{0} quart imperial',
           other: '{0} quarts imperials',
         ),

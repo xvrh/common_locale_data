@@ -3249,8 +3249,8 @@ class UnitsDe implements Units {
         long: UnitCountPattern(
           _locale,
           'Mole',
-          one: '{0} mol',
-          other: '{0} mol',
+          one: '{0} Mol',
+          other: '{0} Mol',
         ),
         short: UnitCountPattern(
           _locale,

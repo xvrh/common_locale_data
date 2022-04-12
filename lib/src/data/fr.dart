@@ -464,7 +464,7 @@ class LanguagesFr extends Languages {
     ),
     'crh': Language(
       'crh',
-      'turc de Crimée',
+      'tatar de Crimée',
     ),
     'crs': Language(
       'crs',
@@ -2750,7 +2750,7 @@ class UnitsFr implements Units {
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
           _locale,
-          'tour',
+          'tours',
           one: '{0} tour',
           other: '{0} tours',
         ),
@@ -3147,7 +3147,7 @@ class UnitsFr implements Units {
         long: UnitCountPattern(
           _locale,
           'items',
-          one: '{0} items',
+          one: '{0} item',
           other: '{0} items',
         ),
         short: UnitCountPattern(
@@ -4070,9 +4070,9 @@ class UnitsFr implements Units {
   Unit get energyKilowattHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'kilowattheures',
-          one: '{0} kilowattheure',
-          other: '{0} kilowattheures',
+          'kilowatt-heures',
+          one: '{0} kilowatt-heure',
+          other: '{0} kilowatt-heures',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4202,9 +4202,9 @@ class UnitsFr implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'kilowattheure pour 100 kilomètres',
-          one: '{0} kilowattheure pour 100 kilomètres',
-          other: '{0} kilowattheures pour 100 kilomètres',
+          'kilowatt-heures pour 100 kilomètres',
+          one: '{0} kilowatt-heure pour 100 kilomètres',
+          other: '{0} kilowatt-heures pour 100 kilomètres',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4466,9 +4466,9 @@ class UnitsFr implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'point',
+          'points',
           one: '{0} point',
-          other: '{0} pts',
+          other: '{0} points',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4926,9 +4926,9 @@ class UnitsFr implements Units {
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
           _locale,
-          'points',
+          'points typographiques',
           one: '{0} point typographique',
-          other: '{0} points',
+          other: '{0} points typographiques',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4992,8 +4992,9 @@ class UnitsFr implements Units {
   Unit get lightCandela => Unit(
         long: UnitCountPattern(
           _locale,
-          'cd',
-          other: '{0} cd',
+          'candela',
+          one: '{0} candela',
+          other: '{0} candelas',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5363,7 +5364,7 @@ class UnitsFr implements Units {
   Unit get massGrain => Unit(
         long: UnitCountPattern(
           _locale,
-          'grain',
+          'grains',
           one: '{0} grain',
           other: '{0} grains',
         ),
@@ -5539,9 +5540,9 @@ class UnitsFr implements Units {
   Unit get pressurePoundForcePerSquareInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'livres par pouce carré',
-          one: '{0} livre par pouce carré',
-          other: '{0} livres par pouce carré',
+          'livres-force par pouce carré',
+          one: '{0} livre-force par pouce carré',
+          other: '{0} livres-force par pouce carré',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5913,9 +5914,9 @@ class UnitsFr implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'livres-pieds',
-          one: '{0} livre-pied',
-          other: '{0} livres-pieds',
+          'livres-force-pieds',
+          one: '{0} livre-force-pied',
+          other: '{0} livres-force-pieds',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6551,7 +6552,7 @@ class UnitsFr implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'cuillère à dessert',
+          'cuillères à dessert',
           one: '{0} cuillère à dessert',
           other: '{0} cuillères à dessert',
         ),
@@ -6573,7 +6574,7 @@ class UnitsFr implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'cuillère à dessert impériale',
+          'cuillères à dessert impériales',
           one: '{0} cuillère à dessert impériale',
           other: '{0} cuillères à dessert impériales',
         ),
@@ -6595,7 +6596,7 @@ class UnitsFr implements Units {
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
           _locale,
-          'goutte',
+          'gouttes',
           one: '{0} goutte',
           other: '{0} gouttes',
         ),
@@ -6617,7 +6618,7 @@ class UnitsFr implements Units {
   Unit get volumeDram => Unit(
         long: UnitCountPattern(
           _locale,
-          'drachme',
+          'drachmes',
           one: '{0} drachme',
           other: '{0} drachmes',
         ),
@@ -6639,7 +6640,7 @@ class UnitsFr implements Units {
   Unit get volumeJigger => Unit(
         long: UnitCountPattern(
           _locale,
-          'jigger',
+          'jiggers',
           one: '{0} jigger',
           other: '{0} jiggers',
         ),
@@ -6661,7 +6662,7 @@ class UnitsFr implements Units {
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
           _locale,
-          'pincée',
+          'pincées',
           one: '{0} pincée',
           other: '{0} pincées',
         ),
@@ -6683,7 +6684,7 @@ class UnitsFr implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'quart impérial',
+          'quarts impériaux',
           one: '{0} quart impérial',
           other: '{0} quarts impériaux',
         ),

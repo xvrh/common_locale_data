@@ -3151,13 +3151,13 @@ class UnitsNl implements Units {
           _locale,
           'onderdeel',
           one: '{0} onderdeel',
-          other: '{0} onderdelen',
+          other: '{0} ond.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'onderdeel',
           one: '{0} onderdeel',
-          other: '{0} onderdelen',
+          other: '{0} ond.',
         ),
       );
 
@@ -3629,7 +3629,7 @@ class UnitsNl implements Units {
         short: UnitCountPattern(
           _locale,
           'decennia',
-          one: '{0} decennium',
+          one: '{0} dec.',
           other: '{0} decennia',
         ),
         narrow: UnitCountPattern(
