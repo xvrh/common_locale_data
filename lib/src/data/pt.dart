@@ -392,7 +392,7 @@ class LanguagesPt extends Languages {
     ),
     'crh': Language(
       'crh',
-      'turco da Crimeia',
+      'tártara da Crimeia',
     ),
     'crs': Language(
       'crs',
@@ -2361,7 +2361,7 @@ class UnitsPt implements Units {
       );
   @override
   UnitPrefix get pattern1024p8 => UnitPrefix(
-        long: UnitPrefixPattern('yobe{0}'),
+        long: UnitPrefixPattern('yobi{0}'),
         short: UnitPrefixPattern('Yi{0}'),
         narrow: UnitPrefixPattern('Yi{0}'),
       );
@@ -2373,7 +2373,7 @@ class UnitsPt implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
+        long: CompoundUnitPattern('{0}–{1}'),
         short: CompoundUnitPattern('{0}⋅{1}'),
         narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
@@ -2797,7 +2797,7 @@ class UnitsPt implements Units {
         long: UnitCountPattern(
           _locale,
           'itens',
-          one: '{0} itens',
+          one: '{0} item',
           other: '{0} itens',
         ),
         short: UnitCountPattern(
@@ -3193,7 +3193,7 @@ class UnitsPt implements Units {
         long: UnitCountPattern(
           _locale,
           'bytes',
-          one: '{0} bytes',
+          one: '{0} byte',
           other: '{0} bytes',
         ),
         short: UnitCountPattern(
@@ -3215,7 +3215,7 @@ class UnitsPt implements Units {
         long: UnitCountPattern(
           _locale,
           'bits',
-          one: '{0} bits',
+          one: '{0} bit',
           other: '{0} bits',
         ),
         short: UnitCountPattern(
@@ -3796,7 +3796,7 @@ class UnitsPt implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'quilowatt-hora por 100 quilômetros',
+          'quilowatts-hora por 100 quilômetros',
           one: '{0} quilowatt-hora por 100 quilômetros',
           other: '{0} quilowatts-hora por 100 quilômetros',
         ),
@@ -3897,7 +3897,8 @@ class UnitsPt implements Units {
         long: UnitCountPattern(
           _locale,
           'em tipográfico',
-          other: '{0} em',
+          one: '{0} em',
+          other: '{0} ems',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4841,7 +4842,7 @@ class UnitsPt implements Units {
   Unit get massEarthMass => Unit(
         long: UnitCountPattern(
           _locale,
-          'massa terrestre',
+          'massas terrestres',
           one: '{0} massa terrestre',
           other: '{0} massas terrestres',
         ),
@@ -6033,7 +6034,7 @@ class UnitsPt implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'csb imp',
+          'colheres de sobremesa imperiais',
           one: '{0} colher de sobremesa imperial',
           other: '{0} colheres de sobremesa imperiais',
         ),

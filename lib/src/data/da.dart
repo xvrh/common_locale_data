@@ -393,7 +393,7 @@ class LanguagesDa extends Languages {
     ),
     'crh': Language(
       'crh',
-      'krim-tyrkisk',
+      'krimtatarisk',
     ),
     'crs': Language(
       'crs',
@@ -2231,7 +2231,7 @@ class UnitsDa implements Units {
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
-        long: UnitPrefixPattern('pico{0}'),
+        long: UnitPrefixPattern('piko{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
@@ -2931,6 +2931,7 @@ class UnitsDa implements Units {
         long: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         short: UnitCountPattern(
@@ -4071,21 +4072,21 @@ class UnitsDa implements Units {
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'punkter per centimeter',
-          one: '{0} punkt per centimeter',
-          other: '{0} punkter per centimeter',
+          'prikker per centimeter',
+          one: '{0} prik per centimeter',
+          other: '{0} prikker per centimeter',
         ),
         short: UnitCountPattern(
           _locale,
-          'punkter per centimeter',
-          one: '{0} punkt per centimeter',
-          other: '{0} punkter per centimeter',
+          'prikker per centimeter',
+          one: '{0} prik per centimeter',
+          other: '{0} prikker per centimeter',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'punkter per centimeter',
-          one: '{0} punkt per centimeter',
-          other: '{0} punkter per centimeter',
+          'prikker per centimeter',
+          one: '{0} prik per centimeter',
+          other: '{0} prikker per centimeter',
         ),
       );
 
@@ -4093,21 +4094,21 @@ class UnitsDa implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'punkter per tomme',
-          one: '{0} punkt per tomme',
-          other: '{0} punkter per tomme',
+          'prikker per tomme',
+          one: '{0} prik per tomme',
+          other: '{0} prikker per tomme',
         ),
         short: UnitCountPattern(
           _locale,
-          'punkter per tomme',
-          one: '{0} punkt per tomme',
-          other: '{0} punkter per tomme',
+          'prikker per tomme',
+          one: '{0} prik per tomme',
+          other: '{0} prikker per tomme',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'punkter per tomme',
-          one: '{0} punkt per tomme',
-          other: '{0} punkter per tomme',
+          'prikker per tomme',
+          one: '{0} prik per tomme',
+          other: '{0} prikker per tomme',
         ),
       );
 
@@ -5217,6 +5218,7 @@ class UnitsDa implements Units {
         long: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
           other: '{0} bar',
         ),
         short: UnitCountPattern(
@@ -5765,8 +5767,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'hl',
-          one: '{0} hl',
-          other: '{0} hl',
+          one: '{0}hL',
+          other: '{0}hL',
         ),
       );
 
@@ -5853,8 +5855,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ml',
-          one: '{0} ml',
-          other: '{0} ml',
+          one: '{0}mL',
+          other: '{0}mL',
         ),
       );
 

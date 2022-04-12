@@ -3256,6 +3256,7 @@ class UnitsSv implements Units {
         long: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         short: UnitCountPattern(
@@ -5559,6 +5560,7 @@ class UnitsSv implements Units {
         long: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
           other: '{0} bar',
         ),
         short: UnitCountPattern(
@@ -5792,8 +5794,8 @@ class UnitsSv implements Units {
         long: UnitCountPattern(
           _locale,
           'grader',
-          one: '{0}°',
-          other: '{0}°',
+          one: '{0} grad',
+          other: '{0} grader',
         ),
         short: UnitCountPattern(
           _locale,

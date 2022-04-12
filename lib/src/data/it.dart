@@ -2724,7 +2724,7 @@ class UnitsIt implements Units {
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
           _locale,
-          'rivoluzione',
+          'rivoluzioni',
           one: '{0} rivoluzione',
           other: '{0} rivoluzioni',
         ),
@@ -3120,7 +3120,7 @@ class UnitsIt implements Units {
   Unit get concentrItem => Unit(
         long: UnitCountPattern(
           _locale,
-          'elemento',
+          'elementi',
           one: '{0} elemento',
           other: '{0} elementi',
         ),
@@ -3186,9 +3186,9 @@ class UnitsIt implements Units {
   Unit get concentrPermille => Unit(
         long: UnitCountPattern(
           _locale,
-          'permille',
-          one: '{0}‰',
-          other: '{0}‰',
+          'per mille',
+          one: '{0} per mille',
+          other: '{0} per mille',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3976,8 +3976,8 @@ class UnitsIt implements Units {
         long: UnitCountPattern(
           _locale,
           'Calorie',
-          one: '{0} caloria',
-          other: '{0} calorie',
+          one: '{0} Caloria',
+          other: '{0} Calorie',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4084,9 +4084,9 @@ class UnitsIt implements Units {
   Unit get energyBritishThermalUnit => Unit(
         long: UnitCountPattern(
           _locale,
-          'BTU',
-          one: '{0} BTU',
-          other: '{0} BTU',
+          'unità termiche britanniche',
+          one: '{0} unità termica britannica',
+          other: '{0} unità termiche britanniche',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4449,7 +4449,7 @@ class UnitsIt implements Units {
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'raggio terrestre',
+          'raggi terrestri',
           one: '{0} raggio terrestre',
           other: '{0} raggi terrestri',
         ),
@@ -4887,7 +4887,7 @@ class UnitsIt implements Units {
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
           _locale,
-          'punti',
+          'punti tipografici',
           one: '{0} punto tipografico',
           other: '{0} punti tipografici',
         ),
@@ -4952,7 +4952,7 @@ class UnitsIt implements Units {
   Unit get lightCandela => Unit(
         long: UnitCountPattern(
           _locale,
-          'candela',
+          'candele',
           one: '{0} candela',
           other: '{0} candele',
         ),
@@ -5320,7 +5320,7 @@ class UnitsIt implements Units {
   Unit get massGrain => Unit(
         long: UnitCountPattern(
           _locale,
-          'grano',
+          'grani',
           one: '{0} grano',
           other: '{0} grani',
         ),
@@ -5778,8 +5778,8 @@ class UnitsIt implements Units {
         long: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          other: '{0}°',
+          one: '{0} grado',
+          other: '{0} gradi',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5865,9 +5865,9 @@ class UnitsIt implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'libbre-piede',
+          'libbre-forza piede',
           one: '{0} libbra-forza piede',
-          other: '{0} libbre-piedi',
+          other: '{0} libbre-forza piede',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6239,9 +6239,9 @@ class UnitsIt implements Units {
   Unit get volumeAcreFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'acre-feet',
-          one: '{0} acre-foot',
-          other: '{0} acre-feet',
+          'piedi acro',
+          one: '{0} piede acro',
+          other: '{0} piedi acro',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6392,9 +6392,9 @@ class UnitsIt implements Units {
   Unit get volumeFluidOunce => Unit(
         long: UnitCountPattern(
           _locale,
-          'once fluide',
-          one: '{0} oncia fluida',
-          other: '{0} once fluide',
+          'once liquide',
+          one: 'oncia liquida',
+          other: '{0} once liquide',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6458,7 +6458,7 @@ class UnitsIt implements Units {
   Unit get volumeTeaspoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'cucchiaio da tè',
+          'cucchiai da tè',
           one: '{0} cucchiaio da tè',
           other: '{0} cucchiai da tè',
         ),
@@ -6480,7 +6480,7 @@ class UnitsIt implements Units {
   Unit get volumeBarrel => Unit(
         long: UnitCountPattern(
           _locale,
-          'barile',
+          'barili',
           one: '{0} barile',
           other: '{0} barili',
         ),
@@ -6502,7 +6502,7 @@ class UnitsIt implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'cucchiaino da dessert',
+          'cucchiaini da dessert',
           one: '{0} cucchiaino da dessert',
           other: '{0} cucchiaini da dessert',
         ),
@@ -6523,7 +6523,7 @@ class UnitsIt implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'cucchiaino da dessert imperiale',
+          'cucchiaini da dessert imperiali',
           one: '{0} cucchiaino da dessert imperiale',
           other: '{0} cucchiaini da dessert imperiali',
         ),
@@ -6544,7 +6544,7 @@ class UnitsIt implements Units {
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
           _locale,
-          'goccia',
+          'gocce',
           one: '{0} goccia',
           other: '{0} gocce',
         ),
@@ -6566,7 +6566,7 @@ class UnitsIt implements Units {
   Unit get volumeDram => Unit(
         long: UnitCountPattern(
           _locale,
-          'dramma',
+          'dramme',
           one: '{0} dramma',
           other: '{0} dramme',
         ),
@@ -6609,7 +6609,7 @@ class UnitsIt implements Units {
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
           _locale,
-          'pizzico',
+          'pizzichi',
           one: '{0} pizzico',
           other: '{0} pizzichi',
         ),
@@ -6631,7 +6631,7 @@ class UnitsIt implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'quarto imperiale',
+          'quarti imperiali',
           one: '{0} quarto imperiale',
           other: '{0} quarti imperiali',
         ),

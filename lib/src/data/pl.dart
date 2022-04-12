@@ -4399,7 +4399,7 @@ class UnitsPl implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'kilowatogodzina na 100 km',
+          'kilowatogodziny na 100 km',
           one: '{0} kilowatogodzina na 100 km',
           few: '{0} kilowatogodziny na 100 km',
           many: '{0} kilowatogodzin na 100 km',

@@ -184,6 +184,10 @@ class LanguagesEn extends Languages {
       'ast',
       'Asturian',
     ),
+    'atj': Language(
+      'atj',
+      'Atikamekw',
+    ),
     'av': Language(
       'av',
       'Avaric',
@@ -300,6 +304,10 @@ class LanguagesEn extends Languages {
     'bla': Language(
       'bla',
       'Siksika',
+    ),
+    'blt': Language(
+      'blt',
+      'Tai Dam',
     ),
     'bm': Language(
       'bm',
@@ -451,6 +459,10 @@ class LanguagesEn extends Languages {
       variant: 'Kurdish, Sorani',
       menu: 'Kurdish, Central',
     ),
+    'clc': Language(
+      'clc',
+      'Chilcotin',
+    ),
     'co': Language(
       'co',
       'Corsican',
@@ -467,9 +479,33 @@ class LanguagesEn extends Languages {
       'cr',
       'Cree',
     ),
+    'crg': Language(
+      'crg',
+      'Michif',
+    ),
     'crh': Language(
       'crh',
-      'Crimean Turkish',
+      'Crimean Tatar',
+    ),
+    'crj': Language(
+      'crj',
+      'Southern East Cree',
+    ),
+    'crk': Language(
+      'crk',
+      'Plains Cree',
+    ),
+    'crl': Language(
+      'crl',
+      'Northern East Cree',
+    ),
+    'crm': Language(
+      'crm',
+      'Moose Cree',
+    ),
+    'crr': Language(
+      'crr',
+      'Carolina Algonquian',
     ),
     'crs': Language(
       'crs',
@@ -483,6 +519,10 @@ class LanguagesEn extends Languages {
       'csb',
       'Kashubian',
     ),
+    'csw': Language(
+      'csw',
+      'Swampy Cree',
+    ),
     'cu': Language(
       'cu',
       'Church Slavic',
@@ -490,6 +530,10 @@ class LanguagesEn extends Languages {
     'cv': Language(
       'cv',
       'Chuvash',
+    ),
+    'cwd': Language(
+      'cwd',
+      'Woods Cree',
     ),
     'cy': Language(
       'cy',
@@ -897,6 +941,14 @@ class LanguagesEn extends Languages {
       'haw',
       'Hawaiian',
     ),
+    'hax': Language(
+      'hax',
+      'Southern Haida',
+    ),
+    'hdn': Language(
+      'hdn',
+      'Northern Haida',
+    ),
     'he': Language(
       'he',
       'Hebrew',
@@ -920,6 +972,10 @@ class LanguagesEn extends Languages {
     'hmn': Language(
       'hmn',
       'Hmong',
+    ),
+    'hnj': Language(
+      'hnj',
+      'Hmong Njua',
     ),
     'ho': Language(
       'ho',
@@ -948,6 +1004,10 @@ class LanguagesEn extends Languages {
     'hup': Language(
       'hup',
       'Hupa',
+    ),
+    'hur': Language(
+      'hur',
+      'Halkomelem',
     ),
     'hy': Language(
       'hy',
@@ -988,6 +1048,14 @@ class LanguagesEn extends Languages {
     'ik': Language(
       'ik',
       'Inupiaq',
+    ),
+    'ike': Language(
+      'ike',
+      'Eastern Canadian Inuktitut',
+    ),
+    'ikt': Language(
+      'ikt',
+      'Western Canadian Inuktitut',
     ),
     'ilo': Language(
       'ilo',
@@ -1253,6 +1321,10 @@ class LanguagesEn extends Languages {
       'kw',
       'Cornish',
     ),
+    'kwk': Language(
+      'kwk',
+      'Kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'Kyrgyz',
@@ -1301,6 +1373,10 @@ class LanguagesEn extends Languages {
     'lij': Language(
       'lij',
       'Ligurian',
+    ),
+    'lil': Language(
+      'lil',
+      'Lillooet',
     ),
     'liv': Language(
       'liv',
@@ -1489,6 +1565,10 @@ class LanguagesEn extends Languages {
     'mni': Language(
       'mni',
       'Manipuri',
+    ),
+    'moe': Language(
+      'moe',
+      'Innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1699,6 +1779,30 @@ class LanguagesEn extends Languages {
       'oj',
       'Ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'Northwestern Ojibwa',
+    ),
+    'ojc': Language(
+      'ojc',
+      'Central Ojibwa',
+    ),
+    'ojg': Language(
+      'ojg',
+      'Eastern Ojibwa',
+    ),
+    'ojs': Language(
+      'ojs',
+      'Oji-Cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'Western Ojibwa',
+    ),
+    'oka': Language(
+      'oka',
+      'Okanagan',
+    ),
     'om': Language(
       'om',
       'Oromo',
@@ -1790,6 +1894,10 @@ class LanguagesEn extends Languages {
     'pon': Language(
       'pon',
       'Pohnpeian',
+    ),
+    'pqm': Language(
+      'pqm',
+      'Malecite',
     ),
     'prg': Language(
       'prg',
@@ -2037,6 +2145,10 @@ class LanguagesEn extends Languages {
       'sl',
       'Slovenian',
     ),
+    'slh': Language(
+      'slh',
+      'Southern Lushootseed',
+    ),
     'sli': Language(
       'sli',
       'Lower Silesian',
@@ -2121,6 +2233,10 @@ class LanguagesEn extends Languages {
       'stq',
       'Saterland Frisian',
     ),
+    'str': Language(
+      'str',
+      'Straits Salish',
+    ),
     'su': Language(
       'su',
       'Sundanese',
@@ -2169,6 +2285,10 @@ class LanguagesEn extends Languages {
       'ta',
       'Tamil',
     ),
+    'tce': Language(
+      'tce',
+      'Southern Tutchone',
+    ),
     'tcy': Language(
       'tcy',
       'Tulu',
@@ -2197,9 +2317,17 @@ class LanguagesEn extends Languages {
       'tg',
       'Tajik',
     ),
+    'tgx': Language(
+      'tgx',
+      'Tagish',
+    ),
     'th': Language(
       'th',
       'Thai',
+    ),
+    'tht': Language(
+      'tht',
+      'Tahltan',
     ),
     'ti': Language(
       'ti',
@@ -2273,6 +2401,10 @@ class LanguagesEn extends Languages {
       'trv',
       'Taroko',
     ),
+    'trw': Language(
+      'trw',
+      'Torwali',
+    ),
     'ts': Language(
       'ts',
       'Tsonga',
@@ -2288,6 +2420,10 @@ class LanguagesEn extends Languages {
     'tt': Language(
       'tt',
       'Tatar',
+    ),
+    'ttm': Language(
+      'ttm',
+      'Northern Tutchone',
     ),
     'ttt': Language(
       'ttt',

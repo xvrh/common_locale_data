@@ -464,7 +464,7 @@ class LanguagesCs extends Languages {
     ),
     'crh': Language(
       'crh',
-      'turečtina (krymská)',
+      'tatarština (krymská)',
     ),
     'crs': Language(
       'crs',
