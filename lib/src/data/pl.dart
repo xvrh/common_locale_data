@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'pl';
 
+/// Translations in Polish of [CommonLocaleData]
 class CommonLocaleDataPl implements CommonLocaleData {
   String get locale => _locale;
 

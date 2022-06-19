@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'uk';
 
+/// Translations in Ukrainian of [CommonLocaleData]
 class CommonLocaleDataUk implements CommonLocaleData {
   String get locale => _locale;
 

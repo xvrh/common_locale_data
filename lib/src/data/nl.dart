@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'nl';
 
+/// Translations in Dutch of [CommonLocaleData]
 class CommonLocaleDataNl implements CommonLocaleData {
   String get locale => _locale;
 

@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'el';
 
+/// Translations in Greek of [CommonLocaleData]
 class CommonLocaleDataEl implements CommonLocaleData {
   String get locale => _locale;
 

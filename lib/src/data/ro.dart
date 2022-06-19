@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'ro';
 
+/// Translations in Romanian of [CommonLocaleData]
 class CommonLocaleDataRo implements CommonLocaleData {
   String get locale => _locale;
 

@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'sk';
 
+/// Translations in Slovak of [CommonLocaleData]
 class CommonLocaleDataSk implements CommonLocaleData {
   String get locale => _locale;
 
