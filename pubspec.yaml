@@ -1,20 +1,25 @@
 name: common_locale_data
 description: A type-safe and tree-shakable API to access translated common data (measurement units, date fields, country names etc...)
 version: 1.0.0
+homepage: https://github.com/xvrh/common_locale_data
 
 environment:
   sdk: '>=2.17.0 <3.0.0'
 
 dependencies:
-  collection:
-  intl:
+  collection: ^1.5.0
+  intl: ^0.17.0
 
 dev_dependencies:
+  analyzer:
   build_runner:
   dart_style:
   http:
   json_annotation:
   json_serializable:
   lints:
+  path:
+  pool:
   process_runner:
   test:
+  yaml:
