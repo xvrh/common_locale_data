@@ -1,5 +1,3 @@
-enum Gender { masculine, feminine }
-
 class MultiLength {
   final String long, short, narrow;
 
