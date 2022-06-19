@@ -1,5 +1,8 @@
+
+# common_locale_data
+
 This packages provides a type-safe and tree-shakable way to access translated common data.  
-The translations are extracted from the Common Locale Data Repository (CLDR).
+The translations are extracted from the Common Locale Data Repository ([CLDR](https://cldr.unicode.org/)).
 
 ## Available data
 - Translations for measurement units in full and abbreviated forms including singular/plural modifications.
@@ -9,14 +12,7 @@ The translations are extracted from the Common Locale Data Repository (CLDR).
 - Translations for weekday, month, era, period of day, in full and abbreviated forms.
 - Translations for time zones and example cities (or similar) for time zones.
 - Translations for calendar fields.
-
-## Relative time formatter
-
-This package also expose some utility classes to format relative time (ie. "3 minutes ago")
-
-```dart
-// Example
-```
+- Translations for relative time fields.
 
 ## Tree-shaking
 
@@ -30,40 +26,49 @@ All the data are extracted from this repository: https://github.com/unicode-org/
 ## Example
 
 ```dart
+import 'package:common_locale_data/common_locale_data.dart';
+
 void main() {
   // To preserve tree-shaking, you should explicitly choose the language your want
   // The compiler will only retain the languages that are explicitly referenced in your program
   // and discard all the others languages. It will make your deployed program smaller.
-  var localizedUnits = units.fr;
+
+  // Setup the default language for English
+  cld = CommonLocaleData.en;
 
   // If your app support several languages, dynamically choose the language you want
-  var localizedUnits2 = const {
-      'en': units.en,
-      'fr': units.fr,
-  }[currentLanguage];
+  var currentLanguage = 'en';
+  cld = const {
+    'en': CommonLocaleData.en,
+    'fr': CommonLocaleData.fr,
+  }[currentLanguage]!;
 
-  // Or use our provided helper method
-  var localizedUnits3 = units.choose([units.fr, units.en], currentLanguage);
+  // Units
+  print(cld.units.lengthMeter); // meters
+  print(cld.units.lengthMeter.long(3)); // 3 meters
+  print(cld.units.lengthMeter.long(1)); // 1 meter
 
-  // Convenient global mutable field where to store the current translations that you want to use.
-  units.current = localizedUnits3;
+  print(cld.units.areaSquareMeter.long(3)); // 3 square meters
+  print(cld.units.areaSquareMeter.short(3)); // 3 m²
+  print(cld.units.areaSquareMeter.narrow(3)); // 3m²
 
-  // Default language (uses Intl.locale)
-  units.current.duration.seconds(3, form: LocalizedUnitsForm.short); // 2 sec
-  units.current.duration.seconds(3, form: LocalizedUnitsForm.short); // 2 sec
+  // Date fields
+  print(cld.date.year.future.long(2)); // in 2 years
+  print(cld.date.year.past.long(2)); // 2 years ago
+  print(cld.date.year.next.long); // next year
+  print(cld.date.year.previous.long); // last year
 
-  units.current.length.centimeter(3, form: LocalizedUnitsForm.short); // 2 sec
-  units.current.length.centimeter.displayName; // centimètre
-  units.current.length.centimeter.countShort(3);
+  // Territories
+  print(cld.territories.africa); // Africa
+  print(cld.territories.countries['US']); // United States
 
-  units.current.relativeTime(Duration(seconds: 5)); // dans 5 secondes
-  units.current.relativeTime(Duration(seconds: -5)); // il y a 5 secondes
-  units.current.relativeTime.past(Duration(seconds: 3)); // il y a 3 secondes
-  units.current.relativeTime.past(Duration(seconds: -100)); // il y a 3 minutes
-  units.current.relativeTime.minute.past(3, form: LocalizedUnitsForm.short);
-  units.current.relativeTime.minute.now(); // cette minute-ci
-  units.current.relativeTime.second.now(); // maintenant
+  // Languages
+  print(cld.languages.languages['en']!.name); // English
 }
 ```
 
 ## Supported language
+
+Arabic, Bulgarian, Catalan, Czech, Danish, German, Greek, English, Spanish, Estonian, Finnish, French, Croatian, Indonesian, Italian, Japanese, Dutch, Polish, Portuguese, Romanian, Russian, Slovak, Slovenian, Serbian, Swedish, Ukrainian, Chinese
+
+Open a [GitHub issue](https://github.com/xvrh/common_locale_data/issues) to propose more
