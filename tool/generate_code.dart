@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:common_locale_data/common_locale_data.dart';
-import 'package:common_locale_data/src/data/en.dart';
 import 'package:common_locale_data/src/supported_locales.dart';
 import 'package:dart_style/dart_style.dart';
 import 'model/date_fields.dart';
