@@ -101,7 +101,8 @@ abstract class CommonLocaleData {
 ''');
 
   for (var language in supportedLocales) {
-    code.writeln('/// Access the [CommonLocaleData] in ${CommonLocaleData.en.languages[language]!.name}');
+    code.writeln(
+        '/// Access the [CommonLocaleData] in ${CommonLocaleData.en.languages[language]!.name}');
     code.writeln(
         'static const ${lowerCamel(splitWords(language))} = CommonLocaleData${languageUpper(language)}();');
   }
