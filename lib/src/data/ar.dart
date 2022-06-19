@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'ar';
 
+/// Translations in Arabic of [CommonLocaleData]
 class CommonLocaleDataAr implements CommonLocaleData {
   String get locale => _locale;
 

@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'et';
 
+/// Translations in Estonian of [CommonLocaleData]
 class CommonLocaleDataEt implements CommonLocaleData {
   String get locale => _locale;
 

@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'id';
 
+/// Translations in Indonesian of [CommonLocaleData]
 class CommonLocaleDataId implements CommonLocaleData {
   String get locale => _locale;
 

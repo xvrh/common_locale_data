@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'cs';
 
+/// Translations in Czech of [CommonLocaleData]
 class CommonLocaleDataCs implements CommonLocaleData {
   String get locale => _locale;
 

@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'sv';
 
+/// Translations in Swedish of [CommonLocaleData]
 class CommonLocaleDataSv implements CommonLocaleData {
   String get locale => _locale;
 

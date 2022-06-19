@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'bg';
 
+/// Translations in Bulgarian of [CommonLocaleData]
 class CommonLocaleDataBg implements CommonLocaleData {
   String get locale => _locale;
 

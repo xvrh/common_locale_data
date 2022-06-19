@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'da';
 
+/// Translations in Danish of [CommonLocaleData]
 class CommonLocaleDataDa implements CommonLocaleData {
   String get locale => _locale;
 

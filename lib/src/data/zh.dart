@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'zh';
 
+/// Translations in Chinese of [CommonLocaleData]
 class CommonLocaleDataZh implements CommonLocaleData {
   String get locale => _locale;
 

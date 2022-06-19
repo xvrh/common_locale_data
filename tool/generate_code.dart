@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:common_locale_data/common_locale_data.dart';
+import 'package:common_locale_data/src/data/en.dart';
 import 'package:common_locale_data/src/supported_locales.dart';
 import 'package:dart_style/dart_style.dart';
 import 'model/date_fields.dart';
@@ -35,6 +37,7 @@ void main() {
     buffer.writeln('''
 const _locale = '$language';
 
+/// Translations in ${CommonLocaleData.en.languages[language]!.name} of [CommonLocaleData]
 class CommonLocaleData${languageUpper(language)} implements CommonLocaleData {
   String get locale => _locale;
   
@@ -82,14 +85,24 @@ String generateCommon() {
   code.writeln("import 'units.dart';");
 
   code.writeln('''
+/// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
+
+  /// Localized date/time-related fields
   DateFields get date;
+
+  /// Localized language name
   Languages get languages;
+
+  /// Localized measurement units
   Units get units;
+
+  /// Localized country name
   Territories get territories;
 ''');
 
   for (var language in supportedLocales) {
+    code.writeln('/// Access the [CommonLocaleData] in ${CommonLocaleData.en.languages[language]!.name}');
     code.writeln(
         'static const ${lowerCamel(splitWords(language))} = CommonLocaleData${languageUpper(language)}();');
   }

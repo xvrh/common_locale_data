@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'fi';
 
+/// Translations in Finnish of [CommonLocaleData]
 class CommonLocaleDataFi implements CommonLocaleData {
   String get locale => _locale;
 

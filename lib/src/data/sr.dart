@@ -8,6 +8,7 @@ import '../units.dart';
 
 const _locale = 'sr';
 
+/// Translations in Serbian of [CommonLocaleData]
 class CommonLocaleDataSr implements CommonLocaleData {
   String get locale => _locale;
 
