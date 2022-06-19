@@ -6,7 +6,7 @@ import 'package:path/path.dart' as p;
 import 'package:pool/pool.dart';
 
 void main() async {
-  final _sets = <String, Set<String>>{
+  final sets = <String, Set<String>>{
     'units': {'units', 'measurementSystemNames'},
     'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
     'localenames': {'languages', 'territories'},
@@ -20,8 +20,8 @@ void main() async {
   var client = http.Client();
   var pool = Pool(10);
 
-  for (var set in _sets.keys) {
-    for (var file in _sets[set]!) {
+  for (var set in sets.keys) {
+    for (var file in sets[set]!) {
       for (var locale in supportedLocales) {
         unawaited(pool.withResource(() async {
           var url =
