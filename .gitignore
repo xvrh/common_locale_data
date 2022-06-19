@@ -12,6 +12,8 @@ doc/api/
 _*
 .*
 
+pubspec.lock
+
 !.gitignore
 !.github
 !.pubignore
