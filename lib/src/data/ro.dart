@@ -108,6 +108,10 @@ class LanguagesRo extends Languages {
       'ang',
       'engleză veche',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -151,6 +155,10 @@ class LanguagesRo extends Languages {
     'ast': Language(
       'ast',
       'asturiană',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekw',
     ),
     'av': Language(
       'av',
@@ -216,6 +224,10 @@ class LanguagesRo extends Languages {
     'bg': Language(
       'bg',
       'bulgară',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -379,6 +391,10 @@ class LanguagesRo extends Languages {
       variant: 'kurdă sorani',
       menu: 'kurdă centrală',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'corsicană',
@@ -391,9 +407,33 @@ class LanguagesRo extends Languages {
       'cr',
       'cree',
     ),
+    'crg': Language(
+      'crg',
+      'michif',
+    ),
     'crh': Language(
       'crh',
       'turcă crimeeană',
+    ),
+    'crj': Language(
+      'crj',
+      'cree de sud-est',
+    ),
+    'crk': Language(
+      'crk',
+      'cree (Prerii)',
+    ),
+    'crl': Language(
+      'crl',
+      'cree de nord-est',
+    ),
+    'crm': Language(
+      'crm',
+      'cree (Moose)',
+    ),
+    'crr': Language(
+      'crr',
+      'algonquiană Carolina',
     ),
     'crs': Language(
       'crs',
@@ -406,6 +446,10 @@ class LanguagesRo extends Languages {
     'csb': Language(
       'csb',
       'cașubiană',
+    ),
+    'csw': Language(
+      'csw',
+      'cree (Mlaștini)',
     ),
     'cu': Language(
       'cu',
@@ -777,6 +821,10 @@ class LanguagesRo extends Languages {
       'haw',
       'hawaiiană',
     ),
+    'hax': Language(
+      'hax',
+      'haida de sud',
+    ),
     'he': Language(
       'he',
       'ebraică',
@@ -784,6 +832,11 @@ class LanguagesRo extends Languages {
     'hi': Language(
       'hi',
       'hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindi (latină)',
+      variant: 'hinglish',
     ),
     'hil': Language(
       'hil',
@@ -825,6 +878,10 @@ class LanguagesRo extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'armeană',
@@ -864,6 +921,10 @@ class LanguagesRo extends Languages {
     'ik': Language(
       'ik',
       'inupiak',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuktitut canadiană occidentală',
     ),
     'ilo': Language(
       'ilo',
@@ -1097,6 +1158,10 @@ class LanguagesRo extends Languages {
       'kw',
       'cornică',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'kârgâză',
@@ -1141,6 +1206,10 @@ class LanguagesRo extends Languages {
       'lij',
       'liguriană',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'lakota',
@@ -1168,6 +1237,10 @@ class LanguagesRo extends Languages {
     'lrc': Language(
       'lrc',
       'luri de nord',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamia',
     ),
     'lt': Language(
       'lt',
@@ -1308,6 +1381,10 @@ class LanguagesRo extends Languages {
     'mni': Language(
       'mni',
       'manipuri',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1501,6 +1578,26 @@ class LanguagesRo extends Languages {
       'oj',
       'ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'ojibwa de nord-vest',
+    ),
+    'ojc': Language(
+      'ojc',
+      'ojibwa centrală',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'ojibwa de vest',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagan',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1561,6 +1658,10 @@ class LanguagesRo extends Languages {
       'pi',
       'pali',
     ),
+    'pis': Language(
+      'pis',
+      'pijin',
+    ),
     'pl': Language(
       'pl',
       'poloneză',
@@ -1568,6 +1669,10 @@ class LanguagesRo extends Languages {
     'pon': Language(
       'pon',
       'pohnpeiană',
+    ),
+    'pqm': Language(
+      'pqm',
+      'maliseet-passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1774,6 +1879,10 @@ class LanguagesRo extends Languages {
       'sl',
       'slovenă',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed de usd',
+    ),
     'sm': Language(
       'sm',
       'samoană',
@@ -1838,6 +1947,10 @@ class LanguagesRo extends Languages {
       'st',
       'sesotho',
     ),
+    'str': Language(
+      'str',
+      'salish (Strâmtori)',
+    ),
     'su': Language(
       'su',
       'sundaneză',
@@ -1882,6 +1995,10 @@ class LanguagesRo extends Languages {
       'ta',
       'tamilă',
     ),
+    'tce': Language(
+      'tce',
+      'tutchone de sud',
+    ),
     'te': Language(
       'te',
       'telugu',
@@ -1906,9 +2023,17 @@ class LanguagesRo extends Languages {
       'tg',
       'tadjică',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'thailandeză',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -1958,6 +2083,10 @@ class LanguagesRo extends Languages {
       'tog',
       'nyasa tonga',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -1981,6 +2110,10 @@ class LanguagesRo extends Languages {
     'tt': Language(
       'tt',
       'tătară',
+    ),
+    'ttm': Language(
+      'ttm',
+      'tutchone de nord',
     ),
     'tum': Language(
       'tum',
@@ -2049,6 +2182,10 @@ class LanguagesRo extends Languages {
     've': Language(
       've',
       'venda',
+    ),
+    'vec': Language(
+      'vec',
+      'venetă',
     ),
     'vi': Language(
       'vi',
@@ -2136,7 +2273,7 @@ class LanguagesRo extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'nheengatu',
     ),
     'yue': Language(
       'yue',
@@ -2885,7 +3022,7 @@ class UnitsRo implements Units {
           'item',
           one: '{0} de itemi',
           few: '{0} itemi',
-          other: '{0} itemi',
+          other: '{0} de itemi',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3473,6 +3610,31 @@ class UnitsRo implements Units {
           one: '{0} a',
           few: '{0} a',
           other: '{0} a',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'trimestre',
+          one: '{0} trimestru',
+          few: '{0} trimestre',
+          other: '{0} de trimestre',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          few: '{0} trim.',
+          other: '{0} trim.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          few: '{0} trim.',
+          other: '{0} trim.',
         ),
       );
 
@@ -5006,7 +5168,7 @@ class UnitsRo implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tone',
@@ -6198,7 +6360,7 @@ class UnitsRo implements Units {
           'megalitri',
           one: '{0} megalitru',
           few: '{0} megalitri',
-          other: '{0} megalitri',
+          other: '{0} de megalitri',
         ),
         short: UnitCountPattern(
           _locale,
@@ -8711,6 +8873,7 @@ class TerritoriesRo implements Territories {
     'NZ': Territory(
       'NZ',
       'Noua Zeelandă',
+      variant: 'Aotearoa Noua Zeelandă',
     ),
     'OM': Territory(
       'OM',
@@ -8938,6 +9101,7 @@ class TerritoriesRo implements Territories {
     'TR': Territory(
       'TR',
       'Turcia',
+      variant: 'Türkiye',
     ),
     'TT': Territory(
       'TT',

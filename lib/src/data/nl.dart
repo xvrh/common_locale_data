@@ -120,6 +120,10 @@ class LanguagesNl extends Languages {
       'ang',
       'Oudengels',
     ),
+    'ann': Language(
+      'ann',
+      'Obolo',
+    ),
     'anp': Language(
       'anp',
       'Angika',
@@ -184,6 +188,10 @@ class LanguagesNl extends Languages {
     'ast': Language(
       'ast',
       'Asturisch',
+    ),
+    'atj': Language(
+      'atj',
+      'Atikamekw',
     ),
     'av': Language(
       'av',
@@ -269,6 +277,10 @@ class LanguagesNl extends Languages {
     'bg': Language(
       'bg',
       'Bulgaars',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -448,6 +460,10 @@ class LanguagesNl extends Languages {
       variant: 'Koerdisch, Soranî',
       menu: 'Koerdisch, Soranî',
     ),
+    'clc': Language(
+      'clc',
+      'Chilcotin',
+    ),
     'co': Language(
       'co',
       'Corsicaans',
@@ -464,9 +480,33 @@ class LanguagesNl extends Languages {
       'cr',
       'Cree',
     ),
+    'crg': Language(
+      'crg',
+      'Michif',
+    ),
     'crh': Language(
       'crh',
       'Krim-Tataars',
+    ),
+    'crj': Language(
+      'crj',
+      'Zuidoost-Cree',
+    ),
+    'crk': Language(
+      'crk',
+      'Plains Cree',
+    ),
+    'crl': Language(
+      'crl',
+      'Noordoost-Cree',
+    ),
+    'crm': Language(
+      'crm',
+      'Moose Cree',
+    ),
+    'crr': Language(
+      'crr',
+      'Carolina Algonkisch',
     ),
     'crs': Language(
       'crs',
@@ -479,6 +519,10 @@ class LanguagesNl extends Languages {
     'csb': Language(
       'csb',
       'Kasjoebisch',
+    ),
+    'csw': Language(
+      'csw',
+      'Swampy Cree',
     ),
     'cu': Language(
       'cu',
@@ -894,6 +938,10 @@ class LanguagesNl extends Languages {
       'haw',
       'Hawaïaans',
     ),
+    'hax': Language(
+      'hax',
+      'Zuid-Haida',
+    ),
     'he': Language(
       'he',
       'Hebreeuws',
@@ -901,6 +949,11 @@ class LanguagesNl extends Languages {
     'hi': Language(
       'hi',
       'Hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'Hindi (Latijns)',
+      variant: 'Hinglish',
     ),
     'hif': Language(
       'hif',
@@ -946,6 +999,10 @@ class LanguagesNl extends Languages {
       'hup',
       'Hupa',
     ),
+    'hur': Language(
+      'hur',
+      'Halkomelem',
+    ),
     'hy': Language(
       'hy',
       'Armeens',
@@ -985,6 +1042,10 @@ class LanguagesNl extends Languages {
     'ik': Language(
       'ik',
       'Inupiaq',
+    ),
+    'ikt': Language(
+      'ikt',
+      'Westelijk Canadees Inuktitut',
     ),
     'ilo': Language(
       'ilo',
@@ -1250,6 +1311,10 @@ class LanguagesNl extends Languages {
       'kw',
       'Cornish',
     ),
+    'kwk': Language(
+      'kwk',
+      'Kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'Kirgizisch',
@@ -1298,6 +1363,10 @@ class LanguagesNl extends Languages {
       'lij',
       'Ligurisch',
     ),
+    'lil': Language(
+      'lil',
+      'Lillooet',
+    ),
     'liv': Language(
       'liv',
       'Lijfs',
@@ -1333,6 +1402,10 @@ class LanguagesNl extends Languages {
     'lrc': Language(
       'lrc',
       'Noordelijk Luri',
+    ),
+    'lsm': Language(
+      'lsm',
+      'Saamia',
     ),
     'lt': Language(
       'lt',
@@ -1485,6 +1558,10 @@ class LanguagesNl extends Languages {
     'mni': Language(
       'mni',
       'Meitei',
+    ),
+    'moe': Language(
+      'moe',
+      'Innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1694,6 +1771,26 @@ class LanguagesNl extends Languages {
       'oj',
       'Ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'Noordwest-Ojibwe',
+    ),
+    'ojc': Language(
+      'ojc',
+      'Centraal Ojibwa',
+    ),
+    'ojs': Language(
+      'ojs',
+      'Oji-Cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'West-Ojibwe',
+    ),
+    'oka': Language(
+      'oka',
+      'Okanagan',
+    ),
     'om': Language(
       'om',
       'Afaan Oromo',
@@ -1770,6 +1867,10 @@ class LanguagesNl extends Languages {
       'pi',
       'Pali',
     ),
+    'pis': Language(
+      'pis',
+      'Pijin',
+    ),
     'pl': Language(
       'pl',
       'Pools',
@@ -1785,6 +1886,10 @@ class LanguagesNl extends Languages {
     'pon': Language(
       'pon',
       'Pohnpeiaans',
+    ),
+    'pqm': Language(
+      'pqm',
+      'Maliseet-Passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -2031,6 +2136,10 @@ class LanguagesNl extends Languages {
       'sl',
       'Sloveens',
     ),
+    'slh': Language(
+      'slh',
+      'Zuid-Lushootseed',
+    ),
     'sli': Language(
       'sli',
       'Silezisch Duits',
@@ -2107,6 +2216,10 @@ class LanguagesNl extends Languages {
       'stq',
       'Saterfries',
     ),
+    'str': Language(
+      'str',
+      'Straits Salish',
+    ),
     'su': Language(
       'su',
       'Soendanees',
@@ -2155,6 +2268,10 @@ class LanguagesNl extends Languages {
       'ta',
       'Tamil',
     ),
+    'tce': Language(
+      'tce',
+      'Zuid-Tutchone',
+    ),
     'tcy': Language(
       'tcy',
       'Tulu',
@@ -2183,9 +2300,17 @@ class LanguagesNl extends Languages {
       'tg',
       'Tadzjieks',
     ),
+    'tgx': Language(
+      'tgx',
+      'Tagish',
+    ),
     'th': Language(
       'th',
       'Thai',
+    ),
+    'tht': Language(
+      'tht',
+      'Tahltan',
     ),
     'ti': Language(
       'ti',
@@ -2243,6 +2368,10 @@ class LanguagesNl extends Languages {
       'tog',
       'Nyasa Tonga',
     ),
+    'tok': Language(
+      'tok',
+      'Toki Pona',
+    ),
     'tpi': Language(
       'tpi',
       'Tok Pisin',
@@ -2274,6 +2403,10 @@ class LanguagesNl extends Languages {
     'tt': Language(
       'tt',
       'Tataars',
+    ),
+    'ttm': Language(
+      'ttm',
+      'Noord-Tutchone',
     ),
     'ttt': Language(
       'ttt',
@@ -3629,13 +3762,13 @@ class UnitsNl implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'decennia',
+          'dec.',
           one: '{0} dec.',
-          other: '{0} decennia',
+          other: '{0} dec.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'decennia',
+          'dec.',
           one: '{0} dec.',
           other: '{0} dec.',
         ),
@@ -3660,6 +3793,28 @@ class UnitsNl implements Units {
           'jr',
           one: '{0} jr',
           other: '{0} jr',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kwartaal',
+          one: '{0} kwartaal',
+          other: '{0} kwartalen',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kwart.',
+          one: '{0} kwart.',
+          other: '{0} kwart.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kw.',
+          one: '{0} kw.',
+          other: '{0} kw.',
         ),
       );
 
@@ -4472,8 +4627,9 @@ class UnitsNl implements Units {
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'R⊕',
-          other: '{0} R⊕',
+          'aardstraal',
+          one: '{0} aardstraal',
+          other: '{0} aardstralen',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4746,8 +4902,8 @@ class UnitsNl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'in',
-          one: '{0}\\"',
-          other: '{0}\\"',
+          one: '{0}″',
+          other: '{0}″',
         ),
       );
 
@@ -4931,7 +5087,7 @@ class UnitsNl implements Units {
   Unit get lengthSolarRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'solar radii',
+          'zonneradius',
           one: '{0} solar radius',
           other: '{0} solar radii',
         ),
@@ -5030,7 +5186,7 @@ class UnitsNl implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'metrische ton',
@@ -6761,13 +6917,13 @@ class DateFieldsNl implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} kwartaal geleden',
-            other: '{0} kwartalen geleden',
+            one: '{0} kwart. geleden',
+            other: '{0} kwart. geleden',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} kwartaal geleden',
-            other: '{0} kwartalen geleden',
+            one: '{0} kw. geleden',
+            other: '{0} kw. geleden',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6778,13 +6934,13 @@ class DateFieldsNl implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'over {0} kwartaal',
-            other: 'over {0} kwartalen',
+            one: 'over {0} kwart.',
+            other: 'over {0} kwart.',
           ),
           narrow: RelativeTime(
             _locale,
             one: 'over {0} kw.',
-            other: 'over {0} kwartalen',
+            other: 'over {0} kw.',
           ),
         ),
       );
@@ -7899,7 +8055,7 @@ class TerritoriesNl implements Territories {
     'CI': Territory(
       'CI',
       'Ivoorkust',
-      variant: 'Ivoorkust',
+      variant: 'Côte d’Ivoire',
     ),
     'CK': Territory(
       'CK',
@@ -8437,6 +8593,7 @@ class TerritoriesNl implements Territories {
     'NZ': Territory(
       'NZ',
       'Nieuw-Zeeland',
+      variant: 'Aotearoa Nieuw-Zeeland',
     ),
     'OM': Territory(
       'OM',
@@ -8664,6 +8821,7 @@ class TerritoriesNl implements Territories {
     'TR': Territory(
       'TR',
       'Turkije',
+      variant: 'Turkije',
     ),
     'TT': Territory(
       'TT',

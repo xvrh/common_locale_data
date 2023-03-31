@@ -120,6 +120,10 @@ class LanguagesDe extends Languages {
       'ang',
       'Altenglisch',
     ),
+    'ann': Language(
+      'ann',
+      'Obolo',
+    ),
     'anp': Language(
       'anp',
       'Angika',
@@ -183,6 +187,10 @@ class LanguagesDe extends Languages {
     'ast': Language(
       'ast',
       'Asturisch',
+    ),
+    'atj': Language(
+      'atj',
+      'Atikamekw',
     ),
     'av': Language(
       'av',
@@ -268,6 +276,10 @@ class LanguagesDe extends Languages {
     'bg': Language(
       'bg',
       'Bulgarisch',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -447,6 +459,10 @@ class LanguagesDe extends Languages {
       variant: 'Zentralkurdisch',
       menu: 'Kurdisch (Sorani)',
     ),
+    'clc': Language(
+      'clc',
+      'Chilcotin',
+    ),
     'co': Language(
       'co',
       'Korsisch',
@@ -463,9 +479,33 @@ class LanguagesDe extends Languages {
       'cr',
       'Cree',
     ),
+    'crg': Language(
+      'crg',
+      'Michif',
+    ),
     'crh': Language(
       'crh',
       'Krimtatarisch',
+    ),
+    'crj': Language(
+      'crj',
+      'Südost-Cree',
+    ),
+    'crk': Language(
+      'crk',
+      'Plains-Cree',
+    ),
+    'crl': Language(
+      'crl',
+      'Northern East Cree',
+    ),
+    'crm': Language(
+      'crm',
+      'Moose Cree',
+    ),
+    'crr': Language(
+      'crr',
+      'Carolina-Algonkin',
     ),
     'crs': Language(
       'crs',
@@ -478,6 +518,10 @@ class LanguagesDe extends Languages {
     'csb': Language(
       'csb',
       'Kaschubisch',
+    ),
+    'csw': Language(
+      'csw',
+      'Swampy Cree',
     ),
     'cu': Language(
       'cu',
@@ -893,6 +937,10 @@ class LanguagesDe extends Languages {
       'haw',
       'Hawaiisch',
     ),
+    'hax': Language(
+      'hax',
+      'Süd-Haida',
+    ),
     'he': Language(
       'he',
       'Hebräisch',
@@ -900,6 +948,11 @@ class LanguagesDe extends Languages {
     'hi': Language(
       'hi',
       'Hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'Hindi (Lateinisch)',
+      variant: 'Hinglish',
     ),
     'hif': Language(
       'hif',
@@ -945,6 +998,10 @@ class LanguagesDe extends Languages {
       'hup',
       'Hupa',
     ),
+    'hur': Language(
+      'hur',
+      'Halkomelem',
+    ),
     'hy': Language(
       'hy',
       'Armenisch',
@@ -984,6 +1041,10 @@ class LanguagesDe extends Languages {
     'ik': Language(
       'ik',
       'Inupiak',
+    ),
+    'ikt': Language(
+      'ikt',
+      'Westkanadisches Inuktitut',
     ),
     'ilo': Language(
       'ilo',
@@ -1249,6 +1310,10 @@ class LanguagesDe extends Languages {
       'kw',
       'Kornisch',
     ),
+    'kwk': Language(
+      'kwk',
+      'Kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'Kirgisisch',
@@ -1297,6 +1362,10 @@ class LanguagesDe extends Languages {
       'lij',
       'Ligurisch',
     ),
+    'lil': Language(
+      'lil',
+      'Lillooet',
+    ),
     'liv': Language(
       'liv',
       'Livisch',
@@ -1332,6 +1401,10 @@ class LanguagesDe extends Languages {
     'lrc': Language(
       'lrc',
       'Nördliches Luri',
+    ),
+    'lsm': Language(
+      'lsm',
+      'Saamia',
     ),
     'lt': Language(
       'lt',
@@ -1484,6 +1557,10 @@ class LanguagesDe extends Languages {
     'mni': Language(
       'mni',
       'Meithei',
+    ),
+    'moe': Language(
+      'moe',
+      'Innu-Aimun',
     ),
     'moh': Language(
       'moh',
@@ -1693,6 +1770,26 @@ class LanguagesDe extends Languages {
       'oj',
       'Ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'Nordwest-Ojibwe',
+    ),
+    'ojc': Language(
+      'ojc',
+      'Zentral-Ojibwe',
+    ),
+    'ojs': Language(
+      'ojs',
+      'Oji-Cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'West-Ojibwe',
+    ),
+    'oka': Language(
+      'oka',
+      'Okanagan',
+    ),
     'om': Language(
       'om',
       'Oromo',
@@ -1769,6 +1866,10 @@ class LanguagesDe extends Languages {
       'pi',
       'Pali',
     ),
+    'pis': Language(
+      'pis',
+      'Pijin',
+    ),
     'pl': Language(
       'pl',
       'Polnisch',
@@ -1784,6 +1885,10 @@ class LanguagesDe extends Languages {
     'pon': Language(
       'pon',
       'Ponapeanisch',
+    ),
+    'pqm': Language(
+      'pqm',
+      'Maliseet-Passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -2029,6 +2134,10 @@ class LanguagesDe extends Languages {
       'sl',
       'Slowenisch',
     ),
+    'slh': Language(
+      'slh',
+      'Süd-Lushootseed',
+    ),
     'sli': Language(
       'sli',
       'Schlesisch (Niederschlesisch)',
@@ -2105,6 +2214,10 @@ class LanguagesDe extends Languages {
       'stq',
       'Saterfriesisch',
     ),
+    'str': Language(
+      'str',
+      'Straits Salish',
+    ),
     'su': Language(
       'su',
       'Sundanesisch',
@@ -2153,6 +2266,10 @@ class LanguagesDe extends Languages {
       'ta',
       'Tamil',
     ),
+    'tce': Language(
+      'tce',
+      'Südliches Tutchone',
+    ),
     'tcy': Language(
       'tcy',
       'Tulu',
@@ -2181,9 +2298,17 @@ class LanguagesDe extends Languages {
       'tg',
       'Tadschikisch',
     ),
+    'tgx': Language(
+      'tgx',
+      'Tagish',
+    ),
     'th': Language(
       'th',
       'Thailändisch',
+    ),
+    'tht': Language(
+      'tht',
+      'Tahltan',
     ),
     'ti': Language(
       'ti',
@@ -2241,6 +2366,10 @@ class LanguagesDe extends Languages {
       'tog',
       'Nyasa Tonga',
     ),
+    'tok': Language(
+      'tok',
+      'Toki Pona',
+    ),
     'tpi': Language(
       'tpi',
       'Neumelanesisch',
@@ -2272,6 +2401,10 @@ class LanguagesDe extends Languages {
     'tt': Language(
       'tt',
       'Tatarisch',
+    ),
+    'ttm': Language(
+      'ttm',
+      'Nördliches Tutchone',
     ),
     'ttt': Language(
       'ttt',
@@ -3661,6 +3794,28 @@ class UnitsDe implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Quartale',
+          one: '{0} Quartal',
+          other: '{0} Quartale',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Quart.',
+          one: '{0} Quart.',
+          other: '{0} Quart.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Q',
+          one: '{0} Q',
+          other: '{0} Q',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4844,8 +4999,8 @@ class UnitsDe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'sm',
-          one: '{0} sm',
-          other: '{0} sm',
+          one: '{0}sm',
+          other: '{0}sm',
         ),
       );
 
@@ -4999,7 +5154,7 @@ class UnitsDe implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'Tonnen',
@@ -8384,6 +8539,7 @@ class TerritoriesDe implements Territories {
     'NZ': Territory(
       'NZ',
       'Neuseeland',
+      variant: 'Aotearoa (Neuseeland)',
     ),
     'OM': Territory(
       'OM',
@@ -8611,6 +8767,7 @@ class TerritoriesDe implements Territories {
     'TR': Territory(
       'TR',
       'Türkei',
+      variant: 'Türkei',
     ),
     'TT': Territory(
       'TT',

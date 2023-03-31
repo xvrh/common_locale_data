@@ -108,6 +108,10 @@ class LanguagesBg extends Languages {
       'ang',
       'староанглийски',
     ),
+    'ann': Language(
+      'ann',
+      'оболо',
+    ),
     'anp': Language(
       'anp',
       'ангика',
@@ -132,6 +136,10 @@ class LanguagesBg extends Languages {
       'arp',
       'арапахо',
     ),
+    'ars': Language(
+      'ars',
+      'найди арабски',
+    ),
     'arw': Language(
       'arw',
       'аравак',
@@ -147,6 +155,10 @@ class LanguagesBg extends Languages {
     'ast': Language(
       'ast',
       'астурски',
+    ),
+    'atj': Language(
+      'atj',
+      'атикамеку',
     ),
     'av': Language(
       'av',
@@ -200,6 +212,10 @@ class LanguagesBg extends Languages {
     'bg': Language(
       'bg',
       'български',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -277,6 +293,10 @@ class LanguagesBg extends Languages {
       'car',
       'карибски',
     ),
+    'cay': Language(
+      'cay',
+      'каюга',
+    ),
     'cch': Language(
       'cch',
       'атсам',
@@ -327,7 +347,7 @@ class LanguagesBg extends Languages {
     ),
     'chp': Language(
       'chp',
-      'чиипувски',
+      'чипеуански',
     ),
     'chr': Language(
       'chr',
@@ -343,6 +363,10 @@ class LanguagesBg extends Languages {
       variant: 'кюрдски (Сорани)',
       menu: 'кюрдски (централен)',
     ),
+    'clc': Language(
+      'clc',
+      'чилкотин',
+    ),
     'co': Language(
       'co',
       'корсикански',
@@ -355,9 +379,33 @@ class LanguagesBg extends Languages {
       'cr',
       'крии',
     ),
+    'crg': Language(
+      'crg',
+      'мичиф',
+    ),
     'crh': Language(
       'crh',
       'кримскотатарски',
+    ),
+    'crj': Language(
+      'crj',
+      'югоизточен крий',
+    ),
+    'crk': Language(
+      'crk',
+      'плейнс крий',
+    ),
+    'crl': Language(
+      'crl',
+      'североизточен крий',
+    ),
+    'crm': Language(
+      'crm',
+      'муус крее',
+    ),
+    'crr': Language(
+      'crr',
+      'каролински алгонкин',
     ),
     'crs': Language(
       'crs',
@@ -370,6 +418,10 @@ class LanguagesBg extends Languages {
     'csb': Language(
       'csb',
       'кашубски',
+    ),
+    'csw': Language(
+      'csw',
+      'суампи крий',
     ),
     'cu': Language(
       'cu',
@@ -607,7 +659,7 @@ class LanguagesBg extends Languages {
     ),
     'frc': Language(
       'frc',
-      'frc',
+      'каджунски френски',
     ),
     'frm': Language(
       'frm',
@@ -619,7 +671,7 @@ class LanguagesBg extends Languages {
     ),
     'frr': Language(
       'frr',
-      'северен фризски',
+      'северен фризийски',
     ),
     'frs': Language(
       'frs',
@@ -733,6 +785,10 @@ class LanguagesBg extends Languages {
       'haw',
       'хавайски',
     ),
+    'hax': Language(
+      'hax',
+      'южен хайда',
+    ),
     'he': Language(
       'he',
       'иврит',
@@ -740,6 +796,11 @@ class LanguagesBg extends Languages {
     'hi': Language(
       'hi',
       'хинди',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'хинди (латиница)',
+      variant: 'хинглиш',
     ),
     'hil': Language(
       'hil',
@@ -776,6 +837,10 @@ class LanguagesBg extends Languages {
     'hup': Language(
       'hup',
       'хупа',
+    ),
+    'hur': Language(
+      'hur',
+      'халкомелем',
     ),
     'hy': Language(
       'hy',
@@ -816,6 +881,10 @@ class LanguagesBg extends Languages {
     'ik': Language(
       'ik',
       'инупиак',
+    ),
+    'ikt': Language(
+      'ikt',
+      'западноканадски инуктитут',
     ),
     'ilo': Language(
       'ilo',
@@ -899,7 +968,7 @@ class LanguagesBg extends Languages {
     ),
     'kbd': Language(
       'kbd',
-      'кабардиан',
+      'кабардски',
     ),
     'kcg': Language(
       'kcg',
@@ -923,7 +992,7 @@ class LanguagesBg extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'кайнганг',
     ),
     'kha': Language(
       'kha',
@@ -1045,6 +1114,10 @@ class LanguagesBg extends Languages {
       'kw',
       'корнуолски',
     ),
+    'kwk': Language(
+      'kwk',
+      'куак’уала',
+    ),
     'ky': Language(
       'ky',
       'киргизки',
@@ -1089,6 +1162,10 @@ class LanguagesBg extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'лилоует',
+    ),
     'lkt': Language(
       'lkt',
       'лакота',
@@ -1107,7 +1184,7 @@ class LanguagesBg extends Languages {
     ),
     'lou': Language(
       'lou',
-      'lou',
+      'луизиански креолски',
     ),
     'loz': Language(
       'loz',
@@ -1116,6 +1193,10 @@ class LanguagesBg extends Languages {
     'lrc': Language(
       'lrc',
       'северен лури',
+    ),
+    'lsm': Language(
+      'lsm',
+      'саамски',
     ),
     'lt': Language(
       'lt',
@@ -1248,6 +1329,10 @@ class LanguagesBg extends Languages {
     'mni': Language(
       'mni',
       'манипурски',
+    ),
+    'moe': Language(
+      'moe',
+      'инну-аймун',
     ),
     'moh': Language(
       'moh',
@@ -1433,6 +1518,26 @@ class LanguagesBg extends Languages {
       'oj',
       'оджибва',
     ),
+    'ojb': Language(
+      'ojb',
+      'северозападен оджибве',
+    ),
+    'ojc': Language(
+      'ojc',
+      'централен оджибва',
+    ),
+    'ojs': Language(
+      'ojs',
+      'оджи крий',
+    ),
+    'ojw': Language(
+      'ojw',
+      'западен оджибва',
+    ),
+    'oka': Language(
+      'oka',
+      'оканаган',
+    ),
     'om': Language(
       'om',
       'оромо',
@@ -1493,6 +1598,10 @@ class LanguagesBg extends Languages {
       'pi',
       'пали',
     ),
+    'pis': Language(
+      'pis',
+      'пиджин',
+    ),
     'pl': Language(
       'pl',
       'полски',
@@ -1500,6 +1609,10 @@ class LanguagesBg extends Languages {
     'pon': Language(
       'pon',
       'понапеан',
+    ),
+    'pqm': Language(
+      'pqm',
+      'малисеет-пасамакуоди',
     ),
     'prg': Language(
       'prg',
@@ -1698,6 +1811,10 @@ class LanguagesBg extends Languages {
       'sl',
       'словенски',
     ),
+    'slh': Language(
+      'slh',
+      'южен лашутсийд',
+    ),
     'sm': Language(
       'sm',
       'самоански',
@@ -1762,6 +1879,10 @@ class LanguagesBg extends Languages {
       'st',
       'сото',
     ),
+    'str': Language(
+      'str',
+      'стрейтс салиш',
+    ),
     'su': Language(
       'su',
       'сундански',
@@ -1806,6 +1927,10 @@ class LanguagesBg extends Languages {
       'ta',
       'тамилски',
     ),
+    'tce': Language(
+      'tce',
+      'южен тучоне',
+    ),
     'te': Language(
       'te',
       'телугу',
@@ -1830,9 +1955,17 @@ class LanguagesBg extends Languages {
       'tg',
       'таджикски',
     ),
+    'tgx': Language(
+      'tgx',
+      'тагиш',
+    ),
     'th': Language(
       'th',
       'тайски',
+    ),
+    'tht': Language(
+      'tht',
+      'талтан',
     ),
     'ti': Language(
       'ti',
@@ -1882,6 +2015,10 @@ class LanguagesBg extends Languages {
       'tog',
       'нианса тонга',
     ),
+    'tok': Language(
+      'tok',
+      'токи пона',
+    ),
     'tpi': Language(
       'tpi',
       'ток писин',
@@ -1905,6 +2042,10 @@ class LanguagesBg extends Languages {
     'tt': Language(
       'tt',
       'татарски',
+    ),
+    'ttm': Language(
+      'ttm',
+      'северен тучоне',
     ),
     'tum': Language(
       'tum',
@@ -1974,6 +2115,10 @@ class LanguagesBg extends Languages {
       've',
       'венда',
     ),
+    'vec': Language(
+      'vec',
+      'vec',
+    ),
     'vi': Language(
       'vi',
       'виетнамски',
@@ -2018,6 +2163,10 @@ class LanguagesBg extends Languages {
       'wo',
       'волоф',
     ),
+    'wuu': Language(
+      'wuu',
+      'ву китайски',
+    ),
     'xal': Language(
       'xal',
       'калмик',
@@ -2056,7 +2205,7 @@ class LanguagesBg extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'ненгату',
     ),
     'yue': Language(
       'yue',
@@ -2121,20 +2270,20 @@ class UnitsBg implements Units {
   @override
   UnitPrefix get pattern10pMinus1 => UnitPrefix(
         long: UnitPrefixPattern('деци{0}'),
-        short: UnitPrefixPattern('д{0}'),
-        narrow: UnitPrefixPattern('д{0}'),
+        short: UnitPrefixPattern('d{0}'),
+        narrow: UnitPrefixPattern('d{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus2 => UnitPrefix(
         long: UnitPrefixPattern('санти{0}'),
-        short: UnitPrefixPattern('с{0}'),
-        narrow: UnitPrefixPattern('с{0}'),
+        short: UnitPrefixPattern('c{0}'),
+        narrow: UnitPrefixPattern('c{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus3 => UnitPrefix(
         long: UnitPrefixPattern('мили{0}'),
-        short: UnitPrefixPattern('м{0}'),
-        narrow: UnitPrefixPattern('м{0}'),
+        short: UnitPrefixPattern('m{0}'),
+        narrow: UnitPrefixPattern('m{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus6 => UnitPrefix(
@@ -2145,98 +2294,98 @@ class UnitsBg implements Units {
   @override
   UnitPrefix get pattern10pMinus9 => UnitPrefix(
         long: UnitPrefixPattern('нано{0}'),
-        short: UnitPrefixPattern('н{0}'),
-        narrow: UnitPrefixPattern('н{0}'),
+        short: UnitPrefixPattern('n{0}'),
+        narrow: UnitPrefixPattern('n{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
         long: UnitPrefixPattern('пико{0}'),
-        short: UnitPrefixPattern('п{0}'),
-        narrow: UnitPrefixPattern('п{0}'),
+        short: UnitPrefixPattern('p{0}'),
+        narrow: UnitPrefixPattern('p{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus15 => UnitPrefix(
         long: UnitPrefixPattern('фемто{0}'),
-        short: UnitPrefixPattern('ф{0}'),
-        narrow: UnitPrefixPattern('ф{0}'),
+        short: UnitPrefixPattern('f{0}'),
+        narrow: UnitPrefixPattern('f{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus18 => UnitPrefix(
         long: UnitPrefixPattern('ато{0}'),
-        short: UnitPrefixPattern('а{0}'),
-        narrow: UnitPrefixPattern('а{0}'),
+        short: UnitPrefixPattern('a{0}'),
+        narrow: UnitPrefixPattern('a{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus21 => UnitPrefix(
         long: UnitPrefixPattern('зепто{0}'),
-        short: UnitPrefixPattern('з{0}'),
-        narrow: UnitPrefixPattern('з{0}'),
+        short: UnitPrefixPattern('z{0}'),
+        narrow: UnitPrefixPattern('z{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus24 => UnitPrefix(
         long: UnitPrefixPattern('йокто{0}'),
-        short: UnitPrefixPattern('й{0}'),
-        narrow: UnitPrefixPattern('й{0}'),
+        short: UnitPrefixPattern('y{0}'),
+        narrow: UnitPrefixPattern('y{0}'),
       );
   @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('дека{0}'),
-        short: UnitPrefixPattern('дк{0}'),
-        narrow: UnitPrefixPattern('дк{0}'),
+        short: UnitPrefixPattern('da{0}'),
+        narrow: UnitPrefixPattern('da{0}'),
       );
   @override
   UnitPrefix get pattern10p2 => UnitPrefix(
         long: UnitPrefixPattern('хекто{0}'),
-        short: UnitPrefixPattern('х{0}'),
-        narrow: UnitPrefixPattern('х{0}'),
+        short: UnitPrefixPattern('h{0}'),
+        narrow: UnitPrefixPattern('h{0}'),
       );
   @override
   UnitPrefix get pattern10p3 => UnitPrefix(
         long: UnitPrefixPattern('кило{0}'),
-        short: UnitPrefixPattern('к{0}'),
-        narrow: UnitPrefixPattern('к{0}'),
+        short: UnitPrefixPattern('k{0}'),
+        narrow: UnitPrefixPattern('k{0}'),
       );
   @override
   UnitPrefix get pattern10p6 => UnitPrefix(
         long: UnitPrefixPattern('мега{0}'),
-        short: UnitPrefixPattern('М{0}'),
-        narrow: UnitPrefixPattern('М{0}'),
+        short: UnitPrefixPattern('M{0}'),
+        narrow: UnitPrefixPattern('M{0}'),
       );
   @override
   UnitPrefix get pattern10p9 => UnitPrefix(
         long: UnitPrefixPattern('гига{0}'),
-        short: UnitPrefixPattern('Г{0}'),
-        narrow: UnitPrefixPattern('Г{0}'),
+        short: UnitPrefixPattern('G{0}'),
+        narrow: UnitPrefixPattern('G{0}'),
       );
   @override
   UnitPrefix get pattern10p12 => UnitPrefix(
         long: UnitPrefixPattern('тера{0}'),
-        short: UnitPrefixPattern('Т{0}'),
-        narrow: UnitPrefixPattern('Т{0}'),
+        short: UnitPrefixPattern('T{0}'),
+        narrow: UnitPrefixPattern('T{0}'),
       );
   @override
   UnitPrefix get pattern10p15 => UnitPrefix(
         long: UnitPrefixPattern('пета{0}'),
-        short: UnitPrefixPattern('П{0}'),
-        narrow: UnitPrefixPattern('П{0}'),
+        short: UnitPrefixPattern('P{0}'),
+        narrow: UnitPrefixPattern('P{0}'),
       );
   @override
   UnitPrefix get pattern10p18 => UnitPrefix(
         long: UnitPrefixPattern('екса{0}'),
-        short: UnitPrefixPattern('Е{0}'),
-        narrow: UnitPrefixPattern('Е{0}'),
+        short: UnitPrefixPattern('E{0}'),
+        narrow: UnitPrefixPattern('E{0}'),
       );
   @override
   UnitPrefix get pattern10p21 => UnitPrefix(
         long: UnitPrefixPattern('зета{0}'),
-        short: UnitPrefixPattern('З{0}'),
-        narrow: UnitPrefixPattern('З{0}'),
+        short: UnitPrefixPattern('Z{0}'),
+        narrow: UnitPrefixPattern('Z{0}'),
       );
   @override
   UnitPrefix get pattern10p24 => UnitPrefix(
         long: UnitPrefixPattern('йота{0}'),
-        short: UnitPrefixPattern('Й{0}'),
-        narrow: UnitPrefixPattern('Й{0}'),
+        short: UnitPrefixPattern('Y{0}'),
+        narrow: UnitPrefixPattern('Y{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2440,13 +2589,13 @@ class UnitsBg implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'дъгови с',
+          'дъгови сек.',
           one: '{0}″',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'дъгови с',
+          'дъг. сек.',
           one: '{0}″',
           other: '{0}″',
         ),
@@ -3267,6 +3416,28 @@ class UnitsBg implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'тримесечия',
+          one: '{0} тримесечие',
+          other: '{0} тримесечия',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'тримес.',
+          one: '{0} тримес.',
+          other: '{0} тримес.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'тримес.',
+          one: '{0} трим.',
+          other: '{0} трим.',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -3392,7 +3563,7 @@ class UnitsBg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'с',
+          'сек',
           one: '{0} с',
           other: '{0} с',
         ),
@@ -3710,7 +3881,7 @@ class UnitsBg implements Units {
   Unit get energyBritishThermalUnit => Unit(
         long: UnitCountPattern(
           _locale,
-          'Британски термални единици',
+          'британски термални единици',
           one: '{0} британска термална единица',
           other: '{0} британски термални единици',
         ),
@@ -4350,8 +4521,8 @@ class UnitsBg implements Units {
         narrow: UnitCountPattern(
           _locale,
           'in',
-          one: '{0}\\"',
-          other: '{0}\\"',
+          one: '{0}"',
+          other: '{0}"',
         ),
       );
 
@@ -4624,7 +4795,7 @@ class UnitsBg implements Units {
         long: UnitCountPattern(
           _locale,
           'слънчеви светимости',
-          one: 'слънчева светимост',
+          one: '{0} слънчева светимост',
           other: '{0} слънчеви светимости',
         ),
         short: UnitCountPattern(
@@ -4642,7 +4813,7 @@ class UnitsBg implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'метрични тонове',
@@ -4783,13 +4954,13 @@ class UnitsBg implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'st',
+          'стоун.',
           one: '{0} st',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'st',
+          'стоун.',
           one: '{0} st',
           other: '{0} st',
         ),
@@ -4899,7 +5070,7 @@ class UnitsBg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'далтони',
+          'Da',
           one: '{0} Da',
           other: '{0} Da',
         ),
@@ -4909,7 +5080,7 @@ class UnitsBg implements Units {
   Unit get massEarthMass => Unit(
         long: UnitCountPattern(
           _locale,
-          'Маси на Земята',
+          'маси на Земята',
           one: '{0} маса на Земята',
           other: '{0} маси на Земята',
         ),
@@ -5108,8 +5279,8 @@ class UnitsBg implements Units {
         long: UnitCountPattern(
           _locale,
           'милиметри живачен стълб',
-          one: '{0} мм живачен стълб',
-          other: '{0} мм живачен стълб',
+          one: '{0} милиметър живачен стълб',
+          other: '{0} милиметра живачен стълб',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5499,7 +5670,7 @@ class UnitsBg implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'паунд-футове',
+          'паунд-футове сила',
           one: '{0} паунд-фут сила',
           other: '{0} паунд-фута',
         ),
@@ -6127,7 +6298,7 @@ class UnitsBg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'барел',
+          'bbl',
           one: '{0} bbl',
           other: '{0} bbl',
         ),
@@ -6159,7 +6330,7 @@ class UnitsBg implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'брит. дес. лъжица',
+          'брит. дес. лъжици',
           one: '{0} брит. дес. лъжица',
           other: '{0} брит. дес. лъжици',
         ),
@@ -6181,7 +6352,7 @@ class UnitsBg implements Units {
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
           _locale,
-          'капка',
+          'капки',
           one: '{0} капка',
           other: '{0} капки',
         ),
@@ -6269,7 +6440,7 @@ class UnitsBg implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'имперска кварта',
+          'имперски кварти',
           one: '{0} имперска кварта',
           other: '{0} имперски кварти',
         ),
@@ -6302,7 +6473,7 @@ class DateFieldsBg implements DateFields {
   DateFieldFullData get year => DateFieldFullData(
         displayName: MultiLength(
           long: 'година',
-          short: 'г.',
+          short: 'год.',
           narrow: 'г.',
         ),
         previous: MultiLength(
@@ -6533,8 +6704,8 @@ class DateFieldsBg implements DateFields {
   @override
   MultiLength get weekOfMonth => MultiLength(
         long: 'седмица от месеца',
-        short: 'седмица от месеца',
-        narrow: 'седмица от месеца',
+        short: 'седм. от мес.',
+        narrow: 'седм. от мес.',
       );
 
   @override
@@ -7095,7 +7266,7 @@ class DateFieldsBg implements DateFields {
         displayName: MultiLength(
           long: 'секунда',
           short: 'сек',
-          narrow: 'с',
+          narrow: 'сек',
         ),
         now: MultiLength(
           long: 'сега',
@@ -8062,6 +8233,7 @@ class TerritoriesBg implements Territories {
     'NZ': Territory(
       'NZ',
       'Нова Зеландия',
+      variant: 'Аотеароа Нова Зеландия',
     ),
     'OM': Territory(
       'OM',
@@ -8289,6 +8461,7 @@ class TerritoriesBg implements Territories {
     'TR': Territory(
       'TR',
       'Турция',
+      variant: 'Турция',
     ),
     'TT': Territory(
       'TT',

@@ -223,6 +223,9 @@ abstract class Units {
   /// years
   Unit get durationYear;
 
+  /// quarters
+  Unit get durationQuarter;
+
   /// months
   Unit get durationMonth;
 
@@ -413,7 +416,7 @@ abstract class Units {
   Unit get lightSolarLuminosity;
 
   /// metric tons
-  Unit get massMetricTon;
+  Unit get massTonne;
 
   /// kilograms
   Unit get massKilogram;
@@ -517,7 +520,7 @@ abstract class Units {
   /// knots
   Unit get speedKnot;
 
-  /// °
+  /// degrees temperature
   Unit get temperatureGeneric;
 
   /// degrees Celsius

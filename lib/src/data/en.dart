@@ -120,6 +120,10 @@ class LanguagesEn extends Languages {
       'ang',
       'Old English',
     ),
+    'ann': Language(
+      'ann',
+      'Obolo',
+    ),
     'anp': Language(
       'anp',
       'Angika',
@@ -274,6 +278,10 @@ class LanguagesEn extends Languages {
       'bg',
       'Bulgarian',
     ),
+    'bgc': Language(
+      'bgc',
+      'Haryanvi',
+    ),
     'bgn': Language(
       'bgn',
       'Western Balochi',
@@ -304,7 +312,7 @@ class LanguagesEn extends Languages {
     ),
     'bla': Language(
       'bla',
-      'Siksika',
+      'Siksiká',
     ),
     'blt': Language(
       'blt',
@@ -744,7 +752,7 @@ class LanguagesEn extends Languages {
     ),
     'ff': Language(
       'ff',
-      'Fulah',
+      'Fula',
     ),
     'fi': Language(
       'fi',
@@ -957,6 +965,11 @@ class LanguagesEn extends Languages {
     'hi': Language(
       'hi',
       'Hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'Hindi (Latin)',
+      variant: 'Hinglish',
     ),
     'hif': Language(
       'hif',
@@ -1345,7 +1358,7 @@ class LanguagesEn extends Languages {
     ),
     'lah': Language(
       'lah',
-      'Lahnda',
+      'Western Panjabi',
     ),
     'lam': Language(
       'lam',
@@ -1414,6 +1427,10 @@ class LanguagesEn extends Languages {
     'lrc': Language(
       'lrc',
       'Northern Luri',
+    ),
+    'lsm': Language(
+      'lsm',
+      'Saamia',
     ),
     'lt': Language(
       'lt',
@@ -1880,6 +1897,10 @@ class LanguagesEn extends Languages {
       'pi',
       'Pali',
     ),
+    'pis': Language(
+      'pis',
+      'Pijin',
+    ),
     'pl': Language(
       'pl',
       'Polish',
@@ -1898,7 +1919,7 @@ class LanguagesEn extends Languages {
     ),
     'pqm': Language(
       'pqm',
-      'Malecite',
+      'Maliseet-Passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -2023,7 +2044,7 @@ class LanguagesEn extends Languages {
     ),
     'sah': Language(
       'sah',
-      'Sakha',
+      'Yakut',
     ),
     'sam': Language(
       'sam',
@@ -2385,6 +2406,10 @@ class LanguagesEn extends Languages {
     'tog': Language(
       'tog',
       'Nyasa Tonga',
+    ),
+    'tok': Language(
+      'tok',
+      'Toki Pona',
     ),
     'tpi': Language(
       'tpi',
@@ -3824,6 +3849,28 @@ class UnitsEn implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'quarters',
+          one: '{0} quarter',
+          other: '{0} quarters',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'qtr',
+          one: '{0} qtr',
+          other: '{0} qtrs',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'qtr',
+          one: '{0}q',
+          other: '{0}q',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -5207,7 +5254,7 @@ class UnitsEn implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'metric tons',
@@ -5979,8 +6026,9 @@ class UnitsEn implements Units {
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
-          '°',
-          other: '{0}°',
+          'degrees temperature',
+          one: '{0} degree temperature',
+          other: '{0} degrees temperature',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6861,7 +6909,7 @@ class DateFieldsEn implements DateFields {
         displayName: MultiLength(
           long: 'year',
           short: 'yr.',
-          narrow: 'yr.',
+          narrow: 'yr',
         ),
         previous: MultiLength(
           long: 'last year',
@@ -6891,8 +6939,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} yr. ago',
-            other: '{0} yr. ago',
+            one: '{0}y ago',
+            other: '{0}y ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6908,8 +6956,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} yr.',
-            other: 'in {0} yr.',
+            one: 'in {0}y',
+            other: 'in {0}y',
           ),
         ),
       );
@@ -6919,7 +6967,7 @@ class DateFieldsEn implements DateFields {
         displayName: MultiLength(
           long: 'quarter',
           short: 'qtr.',
-          narrow: 'qtr.',
+          narrow: 'qtr',
         ),
         previous: MultiLength(
           long: 'last quarter',
@@ -6949,8 +6997,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} qtr. ago',
-            other: '{0} qtrs. ago',
+            one: '{0}q ago',
+            other: '{0}q ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6966,8 +7014,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} qtr.',
-            other: 'in {0} qtrs.',
+            one: 'in {0}q',
+            other: 'in {0}q',
           ),
         ),
       );
@@ -6977,7 +7025,7 @@ class DateFieldsEn implements DateFields {
         displayName: MultiLength(
           long: 'month',
           short: 'mo.',
-          narrow: 'mo.',
+          narrow: 'mo',
         ),
         previous: MultiLength(
           long: 'last month',
@@ -7007,8 +7055,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} mo. ago',
-            other: '{0} mo. ago',
+            one: '{0}mo ago',
+            other: '{0}mo ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7024,8 +7072,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} mo.',
-            other: 'in {0} mo.',
+            one: 'in {0}mo',
+            other: 'in {0}mo',
           ),
         ),
       );
@@ -7035,7 +7083,7 @@ class DateFieldsEn implements DateFields {
         displayName: MultiLength(
           long: 'week',
           short: 'wk.',
-          narrow: 'wk.',
+          narrow: 'wk',
         ),
         previous: MultiLength(
           long: 'last week',
@@ -7065,8 +7113,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} wk. ago',
-            other: '{0} wk. ago',
+            one: '{0}w ago',
+            other: '{0}w ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7082,8 +7130,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} wk.',
-            other: 'in {0} wk.',
+            one: 'in {0}w',
+            other: 'in {0}w',
           ),
         ),
       );
@@ -7130,8 +7178,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} day ago',
-            other: '{0} days ago',
+            one: '{0}d ago',
+            other: '{0}d ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7147,8 +7195,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} day',
-            other: 'in {0} days',
+            one: 'in {0}d',
+            other: 'in {0}d',
           ),
         ),
       );
@@ -7557,7 +7605,7 @@ class DateFieldsEn implements DateFields {
         displayName: MultiLength(
           long: 'hour',
           short: 'hr.',
-          narrow: 'hr.',
+          narrow: 'hr',
         ),
         now: MultiLength(
           long: 'this hour',
@@ -7577,8 +7625,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} hr. ago',
-            other: '{0} hr. ago',
+            one: '{0}h ago',
+            other: '{0}h ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7594,8 +7642,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} hr.',
-            other: 'in {0} hr.',
+            one: 'in {0}h',
+            other: 'in {0}h',
           ),
         ),
       );
@@ -7605,7 +7653,7 @@ class DateFieldsEn implements DateFields {
         displayName: MultiLength(
           long: 'minute',
           short: 'min.',
-          narrow: 'min.',
+          narrow: 'min',
         ),
         now: MultiLength(
           long: 'this minute',
@@ -7625,8 +7673,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} min. ago',
-            other: '{0} min. ago',
+            one: '{0}m ago',
+            other: '{0}m ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7642,8 +7690,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} min.',
-            other: 'in {0} min.',
+            one: 'in {0}m',
+            other: 'in {0}m',
           ),
         ),
       );
@@ -7653,7 +7701,7 @@ class DateFieldsEn implements DateFields {
         displayName: MultiLength(
           long: 'second',
           short: 'sec.',
-          narrow: 'sec.',
+          narrow: 'sec',
         ),
         now: MultiLength(
           long: 'now',
@@ -7673,8 +7721,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} sec. ago',
-            other: '{0} sec. ago',
+            one: '{0}s ago',
+            other: '{0}s ago',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7690,8 +7738,8 @@ class DateFieldsEn implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'in {0} sec.',
-            other: 'in {0} sec.',
+            one: 'in {0}s',
+            other: 'in {0}s',
           ),
         ),
       );
@@ -8623,6 +8671,7 @@ class TerritoriesEn implements Territories {
     'NZ': Territory(
       'NZ',
       'New Zealand',
+      variant: 'Aotearoa New Zealand',
     ),
     'OM': Territory(
       'OM',
@@ -8850,6 +8899,7 @@ class TerritoriesEn implements Territories {
     'TR': Territory(
       'TR',
       'Turkey',
+      variant: 'Türkiye',
     ),
     'TT': Territory(
       'TT',

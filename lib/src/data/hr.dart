@@ -108,6 +108,10 @@ class LanguagesHr extends Languages {
       'ang',
       'staroengleski',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -152,6 +156,10 @@ class LanguagesHr extends Languages {
     'ast': Language(
       'ast',
       'asturijski',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekw',
     ),
     'av': Language(
       'av',
@@ -217,6 +225,10 @@ class LanguagesHr extends Languages {
     'bg': Language(
       'bg',
       'bugarski',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -380,6 +392,10 @@ class LanguagesHr extends Languages {
       variant: 'kurdski, soranski',
       menu: 'kurdski, sorani',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'korzički',
@@ -392,9 +408,33 @@ class LanguagesHr extends Languages {
       'cr',
       'cree',
     ),
+    'crg': Language(
+      'crg',
+      'michif',
+    ),
     'crh': Language(
       'crh',
       'krimski turski',
+    ),
+    'crj': Language(
+      'crj',
+      'jugoistični cree',
+    ),
+    'crk': Language(
+      'crk',
+      'plains cree',
+    ),
+    'crl': Language(
+      'crl',
+      'sjevernoistočni cree',
+    ),
+    'crm': Language(
+      'crm',
+      'moose cree',
+    ),
+    'crr': Language(
+      'crr',
+      'karolinski algonkijski',
     ),
     'crs': Language(
       'crs',
@@ -407,6 +447,10 @@ class LanguagesHr extends Languages {
     'csb': Language(
       'csb',
       'kašupski',
+    ),
+    'csw': Language(
+      'csw',
+      'močvarni cree',
     ),
     'cu': Language(
       'cu',
@@ -547,12 +591,12 @@ class LanguagesHr extends Languages {
     'en-GB': Language(
       'en-GB',
       'britanski engleski',
-      short: 'britanski engleski',
+      short: 'engleski (UK)',
     ),
     'en-US': Language(
       'en-US',
       'američki engleski',
-      short: 'američki engleski',
+      short: 'engleski (SAD)',
     ),
     'enm': Language(
       'enm',
@@ -778,6 +822,10 @@ class LanguagesHr extends Languages {
       'haw',
       'havajski',
     ),
+    'hax': Language(
+      'hax',
+      'južni haida',
+    ),
     'he': Language(
       'he',
       'hebrejski',
@@ -785,6 +833,11 @@ class LanguagesHr extends Languages {
     'hi': Language(
       'hi',
       'hindski',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindski (latinica)',
+      variant: 'hinglish',
     ),
     'hil': Language(
       'hil',
@@ -826,6 +879,10 @@ class LanguagesHr extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'armenski',
@@ -865,6 +922,10 @@ class LanguagesHr extends Languages {
     'ik': Language(
       'ik',
       'inupiaq',
+    ),
+    'ikt': Language(
+      'ikt',
+      'zapadnokanadski inuktitut',
     ),
     'ilo': Language(
       'ilo',
@@ -976,7 +1037,7 @@ class LanguagesHr extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'kaingang',
     ),
     'kha': Language(
       'kha',
@@ -1098,6 +1159,10 @@ class LanguagesHr extends Languages {
       'kw',
       'kornski',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'kirgiski',
@@ -1142,6 +1207,10 @@ class LanguagesHr extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'lakota',
@@ -1169,6 +1238,10 @@ class LanguagesHr extends Languages {
     'lrc': Language(
       'lrc',
       'sjevernolurski',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamia',
     ),
     'lt': Language(
       'lt',
@@ -1309,6 +1382,10 @@ class LanguagesHr extends Languages {
     'mni': Language(
       'mni',
       'manipurski',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1502,6 +1579,26 @@ class LanguagesHr extends Languages {
       'oj',
       'ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'sjeverozapadni ojibwa',
+    ),
+    'ojc': Language(
+      'ojc',
+      'centralni ojibwa',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'zapadni ojibwa',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagan',
+    ),
     'om': Language(
       'om',
       'oromski',
@@ -1562,6 +1659,10 @@ class LanguagesHr extends Languages {
       'pi',
       'pali',
     ),
+    'pis': Language(
+      'pis',
+      'pijin',
+    ),
     'pl': Language(
       'pl',
       'poljski',
@@ -1569,6 +1670,10 @@ class LanguagesHr extends Languages {
     'pon': Language(
       'pon',
       'pohnpeian',
+    ),
+    'pqm': Language(
+      'pqm',
+      'maliseet-Passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1775,6 +1880,10 @@ class LanguagesHr extends Languages {
       'sl',
       'slovenski',
     ),
+    'slh': Language(
+      'slh',
+      'južni lushootseed',
+    ),
     'sm': Language(
       'sm',
       'samoanski',
@@ -1839,6 +1948,10 @@ class LanguagesHr extends Languages {
       'st',
       'sesotski',
     ),
+    'str': Language(
+      'str',
+      'sjeverni sališki',
+    ),
     'su': Language(
       'su',
       'sundanski',
@@ -1883,6 +1996,10 @@ class LanguagesHr extends Languages {
       'ta',
       'tamilski',
     ),
+    'tce': Language(
+      'tce',
+      'južni tutchone',
+    ),
     'te': Language(
       'te',
       'teluški',
@@ -1907,9 +2024,17 @@ class LanguagesHr extends Languages {
       'tg',
       'tadžički',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'tajlandski',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -1959,6 +2084,10 @@ class LanguagesHr extends Languages {
       'tog',
       'nyasa tonga',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -1982,6 +2111,10 @@ class LanguagesHr extends Languages {
     'tt': Language(
       'tt',
       'tatarski',
+    ),
+    'ttm': Language(
+      'ttm',
+      'sjeverni tutchone',
     ),
     'tum': Language(
       'tum',
@@ -2050,6 +2183,10 @@ class LanguagesHr extends Languages {
     've': Language(
       've',
       'venda',
+    ),
+    'vec': Language(
+      'vec',
+      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2137,7 +2274,7 @@ class LanguagesHr extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'nheengatu',
     ),
     'yue': Language(
       'yue',
@@ -3476,6 +3613,31 @@ class UnitsHr implements Units {
           one: '{0} g.',
           few: '{0} g.',
           other: '{0} g.',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'čevrtine',
+          one: '{0} četvrtina',
+          few: '{0} četvrtine',
+          other: '{0} četvrtina',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'čet.',
+          one: '{0} čet.',
+          few: '{0} čet.',
+          other: '{0} čet.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'čet.',
+          one: '{0} čet.',
+          few: '{0} čet.',
+          other: '{0} čet.',
         ),
       );
 
@@ -5027,7 +5189,7 @@ class UnitsHr implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tone',
@@ -8200,7 +8362,7 @@ class TerritoriesHr implements Territories {
     ),
     'CK': Territory(
       'CK',
-      'Cookovi Otoci',
+      'Cookovi otoci',
     ),
     'CL': Territory(
       'CL',
@@ -8649,7 +8811,7 @@ class TerritoriesHr implements Territories {
     ),
     'MQ': Territory(
       'MQ',
-      'Martinique',
+      'Martinik',
     ),
     'MR': Territory(
       'MR',
@@ -8734,6 +8896,7 @@ class TerritoriesHr implements Territories {
     'NZ': Territory(
       'NZ',
       'Novi Zeland',
+      variant: 'Novi Zeland',
     ),
     'OM': Territory(
       'OM',
@@ -8961,6 +9124,7 @@ class TerritoriesHr implements Territories {
     'TR': Territory(
       'TR',
       'Turska',
+      variant: 'Turska',
     ),
     'TT': Territory(
       'TT',

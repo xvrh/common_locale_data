@@ -116,6 +116,10 @@ class LanguagesId extends Languages {
       'ang',
       'Inggris Kuno',
     ),
+    'ann': Language(
+      'ann',
+      'Obolo',
+    ),
     'anp': Language(
       'anp',
       'Angika',
@@ -175,6 +179,10 @@ class LanguagesId extends Languages {
     'ast': Language(
       'ast',
       'Asturia',
+    ),
+    'atj': Language(
+      'atj',
+      'Atikamekw',
     ),
     'av': Language(
       'av',
@@ -252,6 +260,10 @@ class LanguagesId extends Languages {
     'bg': Language(
       'bg',
       'Bulgaria',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -347,7 +359,7 @@ class LanguagesId extends Languages {
     ),
     'car': Language(
       'car',
-      'Karib',
+      'Karibia',
     ),
     'cay': Language(
       'cay',
@@ -419,6 +431,10 @@ class LanguagesId extends Languages {
       variant: 'Kurdi Sorani',
       menu: 'Kurdi Sorani',
     ),
+    'clc': Language(
+      'clc',
+      'Chilcotin',
+    ),
     'co': Language(
       'co',
       'Korsika',
@@ -431,9 +447,33 @@ class LanguagesId extends Languages {
       'cr',
       'Kree',
     ),
+    'crg': Language(
+      'crg',
+      'Michif',
+    ),
     'crh': Language(
       'crh',
       'Tatar Krimea',
+    ),
+    'crj': Language(
+      'crj',
+      'East Cree Selatan',
+    ),
+    'crk': Language(
+      'crk',
+      'Cree Dataran',
+    ),
+    'crl': Language(
+      'crl',
+      'East Cree Utara',
+    ),
+    'crm': Language(
+      'crm',
+      'Moose Cree',
+    ),
+    'crr': Language(
+      'crr',
+      'Carolina Algonquian',
     ),
     'crs': Language(
       'crs',
@@ -446,6 +486,10 @@ class LanguagesId extends Languages {
     'csb': Language(
       'csb',
       'Kashubia',
+    ),
+    'csw': Language(
+      'csw',
+      'Cree Rawa',
     ),
     'cu': Language(
       'cu',
@@ -585,8 +629,8 @@ class LanguagesId extends Languages {
     ),
     'en-GB': Language(
       'en-GB',
-      'Inggris (Inggris)',
-      short: 'Inggris (Inggris)',
+      'Inggris (Britania)',
+      short: 'Inggris (UK)',
     ),
     'en-US': Language(
       'en-US',
@@ -817,6 +861,10 @@ class LanguagesId extends Languages {
       'haw',
       'Hawaii',
     ),
+    'hax': Language(
+      'hax',
+      'Haida Selatan',
+    ),
     'he': Language(
       'he',
       'Ibrani',
@@ -824,6 +872,11 @@ class LanguagesId extends Languages {
     'hi': Language(
       'hi',
       'Hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'Hindi (Latin)',
+      variant: 'Hinglish',
     ),
     'hif': Language(
       'hif',
@@ -865,6 +918,10 @@ class LanguagesId extends Languages {
       'hup',
       'Hupa',
     ),
+    'hur': Language(
+      'hur',
+      'Halkomelem',
+    ),
     'hy': Language(
       'hy',
       'Armenia',
@@ -904,6 +961,10 @@ class LanguagesId extends Languages {
     'ik': Language(
       'ik',
       'Inupiak',
+    ),
+    'ikt': Language(
+      'ikt',
+      'Inuktitut Kanada Barat',
     ),
     'ilo': Language(
       'ilo',
@@ -1145,6 +1206,10 @@ class LanguagesId extends Languages {
       'kw',
       'Kornish',
     ),
+    'kwk': Language(
+      'kwk',
+      'Kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'Kirgiz',
@@ -1189,6 +1254,10 @@ class LanguagesId extends Languages {
       'lij',
       'Liguria',
     ),
+    'lil': Language(
+      'lil',
+      'Lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'Lakota',
@@ -1216,6 +1285,10 @@ class LanguagesId extends Languages {
     'lrc': Language(
       'lrc',
       'Luri Utara',
+    ),
+    'lsm': Language(
+      'lsm',
+      'Saamia',
     ),
     'lt': Language(
       'lt',
@@ -1360,6 +1433,10 @@ class LanguagesId extends Languages {
     'mni': Language(
       'mni',
       'Manipuri',
+    ),
+    'moe': Language(
+      'moe',
+      'Innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1553,6 +1630,26 @@ class LanguagesId extends Languages {
       'oj',
       'Ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'Ojibwe Barat Laut',
+    ),
+    'ojc': Language(
+      'ojc',
+      'Ojibwe Tengah',
+    ),
+    'ojs': Language(
+      'ojs',
+      'Oji-Cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'Ojibwe Barat',
+    ),
+    'oka': Language(
+      'oka',
+      'Okanagan',
+    ),
     'om': Language(
       'om',
       'Oromo',
@@ -1617,6 +1714,10 @@ class LanguagesId extends Languages {
       'pi',
       'Pali',
     ),
+    'pis': Language(
+      'pis',
+      'Pijin',
+    ),
     'pl': Language(
       'pl',
       'Polski',
@@ -1624,6 +1725,10 @@ class LanguagesId extends Languages {
     'pon': Language(
       'pon',
       'Pohnpeia',
+    ),
+    'pqm': Language(
+      'pqm',
+      'Maliseet-Passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1838,6 +1943,10 @@ class LanguagesId extends Languages {
       'sl',
       'Sloven',
     ),
+    'slh': Language(
+      'slh',
+      'Lushootseed Selatan',
+    ),
     'sli': Language(
       'sli',
       'Silesia Rendah',
@@ -1910,6 +2019,10 @@ class LanguagesId extends Languages {
       'st',
       'Sotho Selatan',
     ),
+    'str': Language(
+      'str',
+      'Salish Selat',
+    ),
     'su': Language(
       'su',
       'Sunda',
@@ -1958,6 +2071,10 @@ class LanguagesId extends Languages {
       'ta',
       'Tamil',
     ),
+    'tce': Language(
+      'tce',
+      'Tutchone Selatan',
+    ),
     'tcy': Language(
       'tcy',
       'Tulu',
@@ -1986,9 +2103,17 @@ class LanguagesId extends Languages {
       'tg',
       'Tajik',
     ),
+    'tgx': Language(
+      'tgx',
+      'Tagish',
+    ),
     'th': Language(
       'th',
       'Thai',
+    ),
+    'tht': Language(
+      'tht',
+      'Tahltan',
     ),
     'ti': Language(
       'ti',
@@ -2038,6 +2163,10 @@ class LanguagesId extends Languages {
       'tog',
       'Nyasa Tonga',
     ),
+    'tok': Language(
+      'tok',
+      'Toki Pona',
+    ),
     'tpi': Language(
       'tpi',
       'Tok Pisin',
@@ -2065,6 +2194,10 @@ class LanguagesId extends Languages {
     'tt': Language(
       'tt',
       'Tatar',
+    ),
+    'ttm': Language(
+      'ttm',
+      'Tutchone Utara',
     ),
     'ttt': Language(
       'ttt',
@@ -2187,6 +2320,10 @@ class LanguagesId extends Languages {
       'wo',
       'Wolof',
     ),
+    'wuu': Language(
+      'wuu',
+      'Wu Tionghoa',
+    ),
     'xal': Language(
       'xal',
       'Kalmuk',
@@ -2225,7 +2362,7 @@ class LanguagesId extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'Nheengatu',
     ),
     'yue': Language(
       'yue',
@@ -3300,6 +3437,25 @@ class UnitsId implements Units {
           _locale,
           'thn',
           other: '{0} thn',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kuartal',
+          other: '{0} kuartal',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'krt',
+          other: '{0} krt',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'krt',
+          other: '{0}k',
         ),
       );
 
@@ -4501,7 +4657,7 @@ class UnitsId implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'metrik ton',
@@ -7610,6 +7766,7 @@ class TerritoriesId implements Territories {
     'NZ': Territory(
       'NZ',
       'Selandia Baru',
+      variant: 'Aotearoa (Selandia Baru)',
     ),
     'OM': Territory(
       'OM',
@@ -7837,6 +7994,7 @@ class TerritoriesId implements Territories {
     'TR': Territory(
       'TR',
       'Turki',
+      variant: 'Turkiye',
     ),
     'TT': Territory(
       'TT',

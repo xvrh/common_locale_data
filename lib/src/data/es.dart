@@ -46,7 +46,7 @@ class LanguagesEs extends Languages {
     ),
     'ace': Language(
       'ace',
-      'acehnés',
+      'achenés',
     ),
     'ach': Language(
       'ach',
@@ -108,6 +108,10 @@ class LanguagesEs extends Languages {
       'ang',
       'inglés antiguo',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -151,6 +155,10 @@ class LanguagesEs extends Languages {
     'ast': Language(
       'ast',
       'asturiano',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekw',
     ),
     'av': Language(
       'av',
@@ -216,6 +224,10 @@ class LanguagesEs extends Languages {
     'bg': Language(
       'bg',
       'búlgaro',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -379,6 +391,10 @@ class LanguagesEs extends Languages {
       variant: 'kurdo central',
       menu: 'kurdo sorani',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'corso',
@@ -391,9 +407,33 @@ class LanguagesEs extends Languages {
       'cr',
       'cree',
     ),
+    'crg': Language(
+      'crg',
+      'michif',
+    ),
     'crh': Language(
       'crh',
       'tártaro de Crimea',
+    ),
+    'crj': Language(
+      'crj',
+      'cree suroriental',
+    ),
+    'crk': Language(
+      'crk',
+      'cree de las llanuras',
+    ),
+    'crl': Language(
+      'crl',
+      'cree nororiental',
+    ),
+    'crm': Language(
+      'crm',
+      'cree moose',
+    ),
+    'crr': Language(
+      'crr',
+      'algonquino de Carolina',
     ),
     'crs': Language(
       'crs',
@@ -406,6 +446,10 @@ class LanguagesEs extends Languages {
     'csb': Language(
       'csb',
       'casubio',
+    ),
+    'csw': Language(
+      'csw',
+      'cree de los pantanos',
     ),
     'cu': Language(
       'cu',
@@ -546,12 +590,12 @@ class LanguagesEs extends Languages {
     'en-GB': Language(
       'en-GB',
       'inglés británico',
-      short: 'inglés británico',
+      short: 'inglés (RU)',
     ),
     'en-US': Language(
       'en-US',
       'inglés estadounidense',
-      short: 'inglés estadounidense',
+      short: 'inglés (EE. UU.)',
     ),
     'enm': Language(
       'enm',
@@ -777,6 +821,10 @@ class LanguagesEs extends Languages {
       'haw',
       'hawaiano',
     ),
+    'hax': Language(
+      'hax',
+      'haida meridional',
+    ),
     'he': Language(
       'he',
       'hebreo',
@@ -784,6 +832,11 @@ class LanguagesEs extends Languages {
     'hi': Language(
       'hi',
       'hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindi (latino)',
+      variant: 'hinglish',
     ),
     'hil': Language(
       'hil',
@@ -825,6 +878,10 @@ class LanguagesEs extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'armenio',
@@ -864,6 +921,10 @@ class LanguagesEs extends Languages {
     'ik': Language(
       'ik',
       'inupiaq',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuit del oeste de Canadá',
     ),
     'ilo': Language(
       'ilo',
@@ -975,7 +1036,7 @@ class LanguagesEs extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'káingang',
     ),
     'kha': Language(
       'kha',
@@ -1097,6 +1158,10 @@ class LanguagesEs extends Languages {
       'kw',
       'córnico',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'kirguís',
@@ -1141,6 +1206,10 @@ class LanguagesEs extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'lakota',
@@ -1168,6 +1237,10 @@ class LanguagesEs extends Languages {
     'lrc': Language(
       'lrc',
       'lorí septentrional',
+    ),
+    'lsm': Language(
+      'lsm',
+      'samia',
     ),
     'lt': Language(
       'lt',
@@ -1307,7 +1380,11 @@ class LanguagesEs extends Languages {
     ),
     'mni': Language(
       'mni',
-      'manipuri',
+      'manipurí',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1403,7 +1480,7 @@ class LanguagesEs extends Languages {
     ),
     'new': Language(
       'new',
-      'newari',
+      'nevarí',
     ),
     'ng': Language(
       'ng',
@@ -1501,6 +1578,26 @@ class LanguagesEs extends Languages {
       'oj',
       'ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'ojibwa noroccidental',
+    ),
+    'ojc': Language(
+      'ojc',
+      'ojibwa central',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'ojibwa occidental',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagan',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1561,6 +1658,10 @@ class LanguagesEs extends Languages {
       'pi',
       'pali',
     ),
+    'pis': Language(
+      'pis',
+      'pidgin salomonense',
+    ),
     'pl': Language(
       'pl',
       'polaco',
@@ -1568,6 +1669,10 @@ class LanguagesEs extends Languages {
     'pon': Language(
       'pon',
       'pohnpeiano',
+    ),
+    'pqm': Language(
+      'pqm',
+      'maliseet-passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1708,7 +1813,7 @@ class LanguagesEs extends Languages {
     ),
     'sd': Language(
       'sd',
-      'sindhi',
+      'sindi',
     ),
     'sdh': Language(
       'sdh',
@@ -1774,6 +1879,10 @@ class LanguagesEs extends Languages {
       'sl',
       'esloveno',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed meridional',
+    ),
     'sm': Language(
       'sm',
       'samoano',
@@ -1838,6 +1947,10 @@ class LanguagesEs extends Languages {
       'st',
       'sotho meridional',
     ),
+    'str': Language(
+      'str',
+      'salish de los estrechos',
+    ),
     'su': Language(
       'su',
       'sundanés',
@@ -1882,6 +1995,10 @@ class LanguagesEs extends Languages {
       'ta',
       'tamil',
     ),
+    'tce': Language(
+      'tce',
+      'tutchone meridional',
+    ),
     'te': Language(
       'te',
       'telugu',
@@ -1906,9 +2023,17 @@ class LanguagesEs extends Languages {
       'tg',
       'tayiko',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'tailandés',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -1958,6 +2083,10 @@ class LanguagesEs extends Languages {
       'tog',
       'tonga del Nyasa',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -1981,6 +2110,10 @@ class LanguagesEs extends Languages {
     'tt': Language(
       'tt',
       'tártaro',
+    ),
+    'ttm': Language(
+      'ttm',
+      'tutchone septentrional',
     ),
     'tum': Language(
       'tum',
@@ -2050,6 +2183,10 @@ class LanguagesEs extends Languages {
     've': Language(
       've',
       'venda',
+    ),
+    'vec': Language(
+      'vec',
+      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2137,7 +2274,7 @@ class LanguagesEs extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'ñe’engatú',
     ),
     'yue': Language(
       'yue',
@@ -3344,6 +3481,28 @@ class UnitsEs implements Units {
           'a',
           one: '{0}a',
           other: '{0}a',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'trimestres',
+          one: '{0} trimestre',
+          other: '{0} trimestres',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          other: '{0} trim.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'trim',
+          one: '{0}trim',
+          other: '{0}trim',
         ),
       );
 
@@ -4725,7 +4884,7 @@ class UnitsEs implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'toneladas',
@@ -8142,6 +8301,7 @@ class TerritoriesEs implements Territories {
     'NZ': Territory(
       'NZ',
       'Nueva Zelanda',
+      variant: 'Aotearoa (Nueva Zelanda)',
     ),
     'OM': Territory(
       'OM',
@@ -8369,6 +8529,7 @@ class TerritoriesEs implements Territories {
     'TR': Territory(
       'TR',
       'Turquía',
+      variant: 'Turquía',
     ),
     'TT': Territory(
       'TT',

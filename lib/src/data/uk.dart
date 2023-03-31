@@ -112,6 +112,10 @@ class LanguagesUk extends Languages {
       'ang',
       'давньоанглійська',
     ),
+    'ann': Language(
+      'ann',
+      'оболо',
+    ),
     'anp': Language(
       'anp',
       'ангіка',
@@ -168,6 +172,10 @@ class LanguagesUk extends Languages {
     'ast': Language(
       'ast',
       'астурійська',
+    ),
+    'atj': Language(
+      'atj',
+      'атикамек',
     ),
     'av': Language(
       'av',
@@ -249,6 +257,10 @@ class LanguagesUk extends Languages {
     'bg': Language(
       'bg',
       'болгарська',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -404,7 +416,7 @@ class LanguagesUk extends Languages {
     ),
     'chp': Language(
       'chp',
-      'чіпевʼян',
+      'чипевʼян',
     ),
     'chr': Language(
       'chr',
@@ -420,6 +432,10 @@ class LanguagesUk extends Languages {
       variant: 'сорані',
       menu: 'курдська, сорані',
     ),
+    'clc': Language(
+      'clc',
+      'чилкотін',
+    ),
     'co': Language(
       'co',
       'корсиканська',
@@ -432,9 +448,33 @@ class LanguagesUk extends Languages {
       'cr',
       'крі',
     ),
+    'crg': Language(
+      'crg',
+      'мічиф',
+    ),
     'crh': Language(
       'crh',
       'кримськотатарська',
+    ),
+    'crj': Language(
+      'crj',
+      'південно-східна крі',
+    ),
+    'crk': Language(
+      'crk',
+      'рівнинна крі',
+    ),
+    'crl': Language(
+      'crl',
+      'північна іст-крі',
+    ),
+    'crm': Language(
+      'crm',
+      'муз-крі',
+    ),
+    'crr': Language(
+      'crr',
+      'каролінська алгонкінська',
     ),
     'crs': Language(
       'crs',
@@ -447,6 +487,10 @@ class LanguagesUk extends Languages {
     'csb': Language(
       'csb',
       'кашубська',
+    ),
+    'csw': Language(
+      'csw',
+      'свампі-крі',
     ),
     'cu': Language(
       'cu',
@@ -474,7 +518,7 @@ class LanguagesUk extends Languages {
     ),
     'dav': Language(
       'dav',
-      'таіта',
+      'таїта',
     ),
     'de': Language(
       'de',
@@ -486,7 +530,7 @@ class LanguagesUk extends Languages {
     ),
     'de-CH': Language(
       'de-CH',
-      'швейцарська верхньонімецька',
+      'німецька (Швейцарія)',
     ),
     'del': Language(
       'del',
@@ -526,7 +570,7 @@ class LanguagesUk extends Languages {
     ),
     'dv': Language(
       'dv',
-      'дівехі',
+      'дивехі',
     ),
     'dyo': Language(
       'dyo',
@@ -591,8 +635,8 @@ class LanguagesUk extends Languages {
     ),
     'en-US': Language(
       'en-US',
-      'американська англійська',
-      short: 'американська англійська',
+      'англійська (Сполучені Штати)',
+      short: 'англійська (США)',
     ),
     'enm': Language(
       'enm',
@@ -676,11 +720,11 @@ class LanguagesUk extends Languages {
     ),
     'fr-CA': Language(
       'fr-CA',
-      'канадська французька',
+      'французька (Канада)',
     ),
     'fr-CH': Language(
       'fr-CH',
-      'швейцарська французька',
+      'французька (Швейцарія)',
     ),
     'frc': Language(
       'frc',
@@ -822,6 +866,10 @@ class LanguagesUk extends Languages {
       'haw',
       'гавайська',
     ),
+    'hax': Language(
+      'hax',
+      'південна гайда',
+    ),
     'he': Language(
       'he',
       'іврит',
@@ -829,6 +877,11 @@ class LanguagesUk extends Languages {
     'hi': Language(
       'hi',
       'гінді',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'гінді (латиниця)',
+      variant: 'гінгліш',
     ),
     'hil': Language(
       'hil',
@@ -870,6 +923,10 @@ class LanguagesUk extends Languages {
       'hup',
       'хупа',
     ),
+    'hur': Language(
+      'hur',
+      'галкомелем',
+    ),
     'hy': Language(
       'hy',
       'вірменська',
@@ -910,6 +967,10 @@ class LanguagesUk extends Languages {
       'ik',
       'інупіак',
     ),
+    'ikt': Language(
+      'ikt',
+      'західноканадська інуктитут',
+    ),
     'ilo': Language(
       'ilo',
       'ілоканська',
@@ -932,7 +993,7 @@ class LanguagesUk extends Languages {
     ),
     'iu': Language(
       'iu',
-      'інуктітут',
+      'інуктитут',
     ),
     'ja': Language(
       'ja',
@@ -1020,7 +1081,7 @@ class LanguagesUk extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'кайнґанґ',
     ),
     'kha': Language(
       'kha',
@@ -1032,7 +1093,7 @@ class LanguagesUk extends Languages {
     ),
     'khq': Language(
       'khq',
-      'койра чіїні',
+      'койра чиїні',
     ),
     'ki': Language(
       'ki',
@@ -1142,6 +1203,10 @@ class LanguagesUk extends Languages {
       'kw',
       'корнська',
     ),
+    'kwk': Language(
+      'kwk',
+      'кваквала',
+    ),
     'ky': Language(
       'ky',
       'киргизька',
@@ -1152,7 +1217,7 @@ class LanguagesUk extends Languages {
     ),
     'lad': Language(
       'lad',
-      'ладіно',
+      'ладино',
     ),
     'lag': Language(
       'lag',
@@ -1184,7 +1249,11 @@ class LanguagesUk extends Languages {
     ),
     'lij': Language(
       'lij',
-      'lij',
+      'лігурійська',
+    ),
+    'lil': Language(
+      'lil',
+      'лілуетська',
     ),
     'lkt': Language(
       'lkt',
@@ -1213,6 +1282,10 @@ class LanguagesUk extends Languages {
     'lrc': Language(
       'lrc',
       'північнолурська',
+    ),
+    'lsm': Language(
+      'lsm',
+      'самія',
     ),
     'lt': Language(
       'lt',
@@ -1353,6 +1426,10 @@ class LanguagesUk extends Languages {
     'mni': Language(
       'mni',
       'маніпурі',
+    ),
+    'moe': Language(
+      'moe',
+      'інну-аймун',
     ),
     'moh': Language(
       'moh',
@@ -1550,6 +1627,26 @@ class LanguagesUk extends Languages {
       'oj',
       'оджібва',
     ),
+    'ojb': Language(
+      'ojb',
+      'північно-західна оджибве',
+    ),
+    'ojc': Language(
+      'ojc',
+      'центральна оджибве',
+    ),
+    'ojs': Language(
+      'ojs',
+      'оджи-крі',
+    ),
+    'ojw': Language(
+      'ojw',
+      'західна оджибве',
+    ),
+    'oka': Language(
+      'oka',
+      'оканаганська',
+    ),
     'om': Language(
       'om',
       'оромо',
@@ -1610,6 +1707,10 @@ class LanguagesUk extends Languages {
       'pi',
       'палі',
     ),
+    'pis': Language(
+      'pis',
+      'піджин',
+    ),
     'pl': Language(
       'pl',
       'польська',
@@ -1617,6 +1718,10 @@ class LanguagesUk extends Languages {
     'pon': Language(
       'pon',
       'понапе',
+    ),
+    'pqm': Language(
+      'pqm',
+      'малесіт-пасамакводі',
     ),
     'prg': Language(
       'prg',
@@ -1822,6 +1927,10 @@ class LanguagesUk extends Languages {
       'sl',
       'словенська',
     ),
+    'slh': Language(
+      'slh',
+      'південна лушуцид',
+    ),
     'sm': Language(
       'sm',
       'самоанська',
@@ -1876,7 +1985,7 @@ class LanguagesUk extends Languages {
     ),
     'ss': Language(
       'ss',
-      'сісваті',
+      'сисваті',
     ),
     'ssy': Language(
       'ssy',
@@ -1885,6 +1994,10 @@ class LanguagesUk extends Languages {
     'st': Language(
       'st',
       'південна сото',
+    ),
+    'str': Language(
+      'str',
+      'саліська стрейт',
     ),
     'su': Language(
       'su',
@@ -1930,6 +2043,10 @@ class LanguagesUk extends Languages {
       'ta',
       'тамільська',
     ),
+    'tce': Language(
+      'tce',
+      'південна тутчон',
+    ),
     'te': Language(
       'te',
       'телугу',
@@ -1954,9 +2071,17 @@ class LanguagesUk extends Languages {
       'tg',
       'таджицька',
     ),
+    'tgx': Language(
+      'tgx',
+      'тагіш',
+    ),
     'th': Language(
       'th',
       'тайська',
+    ),
+    'tht': Language(
+      'tht',
+      'талтан',
     ),
     'ti': Language(
       'ti',
@@ -2006,6 +2131,10 @@ class LanguagesUk extends Languages {
       'tog',
       'ньяса тонга',
     ),
+    'tok': Language(
+      'tok',
+      'токі-пона',
+    ),
     'tpi': Language(
       'tpi',
       'ток-пісін',
@@ -2029,6 +2158,10 @@ class LanguagesUk extends Languages {
     'tt': Language(
       'tt',
       'татарська',
+    ),
+    'ttm': Language(
+      'ttm',
+      'північна тутчон',
     ),
     'tum': Language(
       'tum',
@@ -2097,6 +2230,10 @@ class LanguagesUk extends Languages {
     've': Language(
       've',
       'венда',
+    ),
+    'vec': Language(
+      'vec',
+      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2184,7 +2321,7 @@ class LanguagesUk extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'ньєнґату',
     ),
     'yue': Language(
       'yue',
@@ -3027,18 +3164,18 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'мільйонні долі',
-          one: '{0} ppm',
-          few: '{0} ppm',
-          many: '{0} ppm',
-          other: '{0} ppm',
+          one: '{0} м. д.',
+          few: '{0} м. д.',
+          many: '{0} м. д.',
+          other: '{0} м. д.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'м. д.',
-          one: '{0} м. д.',
-          few: '{0} м. д.',
-          many: '{0} м. д.',
-          other: '{0} м. д.',
+          one: '{0}м.д.',
+          few: '{0}м.д.',
+          many: '{0}м.д.',
+          other: '{0}м.д.',
         ),
       );
 
@@ -3649,6 +3786,34 @@ class UnitsUk implements Units {
           few: '{0}р',
           many: '{0}р',
           other: '{0}р',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'квартали',
+          one: '{0} квартал',
+          few: '{0} квартали',
+          many: '{0} кварталів',
+          other: '{0} кварталу',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'кв.',
+          one: '{0} кв.',
+          few: '{0} кв.',
+          many: '{0} кв.',
+          other: '{0} кв.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'кв',
+          one: '{0} кв',
+          few: '{0} кв',
+          many: '{0} кв',
+          other: '{0} кв',
         ),
       );
 
@@ -4616,10 +4781,10 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'dpcm',
-          one: '{0} ppcm',
-          few: '{0} ppcm',
-          many: '{0} ppcm',
+          'точки на см',
+          one: '{0} точка на см',
+          few: '{0} точки на см',
+          many: '{0} точок на см',
           other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
@@ -5143,6 +5308,9 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'фурлонги',
+          one: '{0} fur',
+          few: '{0} fur',
+          many: '{0} fur',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
@@ -5402,7 +5570,7 @@ class UnitsUk implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'метричні тонни',
@@ -5791,7 +5959,7 @@ class UnitsUk implements Units {
   Unit get massGrain => Unit(
         long: UnitCountPattern(
           _locale,
-          'гран',
+          'грани',
           one: '{0} гран',
           few: '{0} грани',
           many: '{0} гранів',
@@ -7292,10 +7460,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'брл',
-          one: '{0} брл',
-          few: '{0} брл',
-          many: '{0} брл',
-          other: '{0} брл',
+          one: '{0}брл',
+          few: '{0}брл',
+          many: '{0}брл',
+          other: '{0}брл',
         ),
       );
 
@@ -7303,7 +7471,7 @@ class UnitsUk implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'десертна ложка',
+          'десертні ложки',
           one: '{0} десертна ложка',
           few: '{0} десертні ложки',
           many: '{0} десертних ложок',
@@ -7331,19 +7499,19 @@ class UnitsUk implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'імперська десертна ложка',
-          one: '{0} імп. десертна ложка',
-          few: '{0} імп. десертні ложки',
-          many: '{0} імп. десертних ложок',
-          other: '{0} імп. десертної ложки',
+          'англійські десертні ложки',
+          one: '{0} англійська десертна ложка',
+          few: '{0} англійські десертні ложки',
+          many: '{0} англійських десертних ложок',
+          other: '{0} англійської десертної ложки',
         ),
         short: UnitCountPattern(
           _locale,
-          'імп. дес. ложка',
-          one: '{0} імп. дес. ложка',
-          few: '{0} імп. дес. ложки',
-          many: '{0} імп. дес. ложок',
-          other: '{0} імп. дес. ложки',
+          'англ. дес. ложки',
+          one: '{0} англ. дес. ложка',
+          few: '{0} англ. дес. ложки',
+          many: '{0} англ. дес. ложок',
+          other: '{0} англ. дес. ложки',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7359,7 +7527,7 @@ class UnitsUk implements Units {
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
           _locale,
-          'крапля',
+          'краплі',
           one: '{0} крапля',
           few: '{0} краплі',
           many: '{0} крапель',
@@ -7387,7 +7555,7 @@ class UnitsUk implements Units {
   Unit get volumeDram => Unit(
         long: UnitCountPattern(
           _locale,
-          'рідинна драхма',
+          'рідинні драхми',
           one: '{0} рідинна драхма',
           few: '{0} рідинні драхми',
           many: '{0} рідинних драхм',
@@ -7471,19 +7639,19 @@ class UnitsUk implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'імперська кварта',
-          one: '{0} імп. кварта',
-          few: '{0} імп. кварти',
-          many: '{0} імп. кварт',
-          other: '{0} імп. кварти',
+          'англійські кварти',
+          one: '{0} англійська кварта',
+          few: '{0} англійські кварти',
+          many: '{0} англійських кварт',
+          other: '{0} англійської кварти',
         ),
         short: UnitCountPattern(
           _locale,
-          'імп. квар.',
-          one: '{0} імп. квар.',
-          few: '{0} імп. квар.',
-          many: '{0} імп. квар.',
-          other: '{0} імп. квар.',
+          'англ. кварти',
+          one: '{0} англ. кварта',
+          few: '{0} англ. кварти',
+          many: '{0} англ. кварт',
+          other: '{0} англ. кварти',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7832,10 +8000,10 @@ class DateFieldsUk implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} д. тому',
-            few: '-{0} дн.',
-            many: '-{0} дн.',
-            other: '-{0} дн.',
+            one: '{0} дн. тому',
+            few: '{0} дн. тому',
+            many: '{0} дн. тому',
+            other: '{0} дн. тому',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7867,21 +8035,21 @@ class DateFieldsUk implements DateFields {
   MultiLength get dayOfYear => MultiLength(
         long: 'день року',
         short: 'д. року',
-        narrow: 'день року',
+        narrow: 'д. р.',
       );
 
   @override
   MultiLength get weekday => MultiLength(
         long: 'день тижня',
         short: 'д. тижня',
-        narrow: 'д тижня',
+        narrow: 'д. тиж.',
       );
 
   @override
   MultiLength get weekdayOfMonth => MultiLength(
         long: 'день місяця',
         short: 'д. місяця',
-        narrow: 'д місяця',
+        narrow: 'д. міс.',
       );
 
   @override
@@ -8129,9 +8297,9 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'через {0} середу',
-            few: 'через {0} середи',
-            many: 'через {0} серед',
+            one: 'через {0} ср',
+            few: 'через {0} ср',
+            many: 'через {0} ср',
             other: 'через {0} середи',
           ),
           narrow: RelativeTime(
@@ -8236,10 +8404,10 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} пʼятницю тому',
-            few: '{0} пʼятниці тому',
-            many: '{0} пʼятниць тому',
-            other: '{0} пʼятниці тому',
+            one: '{0} пт тому',
+            few: '{0} пт тому',
+            many: '{0} пт тому',
+            other: '{0} пт тому',
           ),
           narrow: RelativeTime(
             _locale,
@@ -8259,10 +8427,10 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'через {0} пʼятницю',
-            few: 'через {0} пʼятниці',
-            many: 'через {0} пʼятниць',
-            other: 'через {0} пʼятниці',
+            one: 'через {0} пт',
+            few: 'через {0} пт',
+            many: 'через {0} пт',
+            other: 'через {0} пт',
           ),
           narrow: RelativeTime(
             _locale,
@@ -9451,6 +9619,7 @@ class TerritoriesUk implements Territories {
     'NZ': Territory(
       'NZ',
       'Нова Зеландія',
+      variant: 'Аотеароа (Нова Зеландія)',
     ),
     'OM': Territory(
       'OM',
@@ -9660,7 +9829,7 @@ class TerritoriesUk implements Territories {
     ),
     'TL': Territory(
       'TL',
-      'Тімор-Лешті',
+      'Тимор-Лешті',
       variant: 'Східний Тимор',
     ),
     'TM': Territory(
@@ -9678,6 +9847,7 @@ class TerritoriesUk implements Territories {
     'TR': Territory(
       'TR',
       'Туреччина',
+      variant: 'Туреччина',
     ),
     'TT': Territory(
       'TT',

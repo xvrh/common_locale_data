@@ -108,6 +108,10 @@ class LanguagesDa extends Languages {
       'ang',
       'oldengelsk',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -153,6 +157,10 @@ class LanguagesDa extends Languages {
       'ast',
       'asturisk',
     ),
+    'atj': Language(
+      'atj',
+      'atikamekw',
+    ),
     'av': Language(
       'av',
       'avarisk',
@@ -196,7 +204,7 @@ class LanguagesDa extends Languages {
     ),
     'be': Language(
       'be',
-      'hviderussisk',
+      'belarusisk',
     ),
     'bej': Language(
       'bej',
@@ -217,6 +225,10 @@ class LanguagesDa extends Languages {
     'bg': Language(
       'bg',
       'bulgarsk',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -380,6 +392,10 @@ class LanguagesDa extends Languages {
       variant: 'centralkurdisk',
       menu: 'kurdisk, sorani',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'korsikansk',
@@ -392,9 +408,33 @@ class LanguagesDa extends Languages {
       'cr',
       'cree',
     ),
+    'crg': Language(
+      'crg',
+      'michif',
+    ),
     'crh': Language(
       'crh',
       'krimtatarisk',
+    ),
+    'crj': Language(
+      'crj',
+      'sydøstcree',
+    ),
+    'crk': Language(
+      'crk',
+      'plains cree',
+    ),
+    'crl': Language(
+      'crl',
+      'nordøstcree',
+    ),
+    'crm': Language(
+      'crm',
+      'Moose-cree',
+    ),
+    'crr': Language(
+      'crr',
+      'carolina algonquisk',
     ),
     'crs': Language(
       'crs',
@@ -407,6 +447,10 @@ class LanguagesDa extends Languages {
     'csb': Language(
       'csb',
       'kasjubisk',
+    ),
+    'csw': Language(
+      'csw',
+      'swampy cree',
     ),
     'cu': Language(
       'cu',
@@ -778,6 +822,10 @@ class LanguagesDa extends Languages {
       'haw',
       'hawaiiansk',
     ),
+    'hax': Language(
+      'hax',
+      'sydhaida',
+    ),
     'he': Language(
       'he',
       'hebraisk',
@@ -785,6 +833,11 @@ class LanguagesDa extends Languages {
     'hi': Language(
       'hi',
       'hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindi (latinsk)',
+      variant: 'hinglish',
     ),
     'hil': Language(
       'hil',
@@ -826,6 +879,10 @@ class LanguagesDa extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'armensk',
@@ -865,6 +922,10 @@ class LanguagesDa extends Languages {
     'ik': Language(
       'ik',
       'inupiaq',
+    ),
+    'ikt': Language(
+      'ikt',
+      'vestcanadisk inuktitut',
     ),
     'ilo': Language(
       'ilo',
@@ -976,7 +1037,7 @@ class LanguagesDa extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'kaingang',
     ),
     'kha': Language(
       'kha',
@@ -1098,6 +1159,10 @@ class LanguagesDa extends Languages {
       'kw',
       'cornisk',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'kirgisisk',
@@ -1142,6 +1207,10 @@ class LanguagesDa extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'lakota',
@@ -1169,6 +1238,10 @@ class LanguagesDa extends Languages {
     'lrc': Language(
       'lrc',
       'nordluri',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamia',
     ),
     'lt': Language(
       'lt',
@@ -1310,6 +1383,10 @@ class LanguagesDa extends Languages {
       'mni',
       'manipuri',
     ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
+    ),
     'moh': Language(
       'moh',
       'mohawk',
@@ -1396,7 +1473,7 @@ class LanguagesDa extends Languages {
     ),
     'nds-NL': Language(
       'nds-NL',
-      'nedertysk (Holland)',
+      'nedertysk (Nederlandene)',
     ),
     'ne': Language(
       'ne',
@@ -1420,7 +1497,7 @@ class LanguagesDa extends Languages {
     ),
     'nl': Language(
       'nl',
-      'hollandsk',
+      'nederlandsk',
     ),
     'nl-BE': Language(
       'nl-BE',
@@ -1502,6 +1579,26 @@ class LanguagesDa extends Languages {
       'oj',
       'ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'nordvestojibwa',
+    ),
+    'ojc': Language(
+      'ojc',
+      'centralojibwa',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'vestojibwa',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagan',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1562,6 +1659,10 @@ class LanguagesDa extends Languages {
       'pi',
       'pali',
     ),
+    'pis': Language(
+      'pis',
+      'pijin',
+    ),
     'pl': Language(
       'pl',
       'polsk',
@@ -1569,6 +1670,10 @@ class LanguagesDa extends Languages {
     'pon': Language(
       'pon',
       'ponape',
+    ),
+    'pqm': Language(
+      'pqm',
+      'maliseet-passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1775,6 +1880,10 @@ class LanguagesDa extends Languages {
       'sl',
       'slovensk',
     ),
+    'slh': Language(
+      'slh',
+      'sydlushootseed',
+    ),
     'sm': Language(
       'sm',
       'samoansk',
@@ -1839,6 +1948,10 @@ class LanguagesDa extends Languages {
       'st',
       'sydsotho',
     ),
+    'str': Language(
+      'str',
+      'straits salish',
+    ),
     'su': Language(
       'su',
       'sundanesisk',
@@ -1883,6 +1996,10 @@ class LanguagesDa extends Languages {
       'ta',
       'tamil',
     ),
+    'tce': Language(
+      'tce',
+      'sydtutchone',
+    ),
     'te': Language(
       'te',
       'telugu',
@@ -1907,9 +2024,17 @@ class LanguagesDa extends Languages {
       'tg',
       'tadsjikisk',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'thai',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -1959,6 +2084,10 @@ class LanguagesDa extends Languages {
       'tog',
       'nyasa tongansk',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -1982,6 +2111,10 @@ class LanguagesDa extends Languages {
     'tt': Language(
       'tt',
       'tatarisk',
+    ),
+    'ttm': Language(
+      'ttm',
+      'nordtutchone',
     ),
     'tum': Language(
       'tum',
@@ -2051,6 +2184,10 @@ class LanguagesDa extends Languages {
     've': Language(
       've',
       'venda',
+    ),
+    'vec': Language(
+      'vec',
+      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2138,7 +2275,7 @@ class LanguagesDa extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'nheengatu',
     ),
     'yue': Language(
       'yue',
@@ -3344,6 +3481,28 @@ class UnitsDa implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kvartaler',
+          one: '{0} kvartal',
+          other: '{0} kvartaler',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kvartaler',
+          one: '{0} kvt.',
+          other: '{0} kvt.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kvartal',
+          one: '{0} kvt.',
+          other: '{0} kvt.',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4414,8 +4573,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'tommer',
-          one: '{0}\\"',
-          other: '{0}\\"',
+          one: '{0}"',
+          other: '{0}"',
         ),
       );
 
@@ -4695,7 +4854,7 @@ class UnitsDa implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tons',
@@ -5209,8 +5368,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           '# Hg',
-          one: '{0}\\" Hg',
-          other: '{0}\\" Hg',
+          one: '{0}" Hg',
+          other: '{0}" Hg',
         ),
       );
 
@@ -5768,8 +5927,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'hl',
-          one: '{0}hL',
-          other: '{0}hL',
+          one: '{0} hl',
+          other: '{0} hl',
         ),
       );
 
@@ -5856,8 +6015,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ml',
-          one: '{0}mL',
-          other: '{0}mL',
+          one: '{0} ml',
+          other: '{0} ml',
         ),
       );
 
@@ -7522,7 +7681,7 @@ class TerritoriesDa implements Territories {
     ),
     'BY': Territory(
       'BY',
-      'Hviderusland',
+      'Belarus',
     ),
     'BZ': Territory(
       'BZ',
@@ -8074,7 +8233,7 @@ class TerritoriesDa implements Territories {
     ),
     'NL': Territory(
       'NL',
-      'Holland',
+      'Nederlandene',
     ),
     'NO': Territory(
       'NO',
@@ -8095,6 +8254,7 @@ class TerritoriesDa implements Territories {
     'NZ': Territory(
       'NZ',
       'New Zealand',
+      variant: 'Aotearoa New Zealand',
     ),
     'OM': Territory(
       'OM',
@@ -8322,6 +8482,7 @@ class TerritoriesDa implements Territories {
     'TR': Territory(
       'TR',
       'Tyrkiet',
+      variant: 'Tyrkiet',
     ),
     'TT': Territory(
       'TT',
