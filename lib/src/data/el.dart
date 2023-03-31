@@ -108,6 +108,10 @@ class LanguagesEl extends Languages {
       'ang',
       'Παλαιά Αγγλικά',
     ),
+    'ann': Language(
+      'ann',
+      'Ομπόλο',
+    ),
     'anp': Language(
       'anp',
       'Ανγκικά',
@@ -151,6 +155,10 @@ class LanguagesEl extends Languages {
     'ast': Language(
       'ast',
       'Αστουριανά',
+    ),
+    'atj': Language(
+      'atj',
+      'Ατικαμέκ',
     ),
     'av': Language(
       'av',
@@ -216,6 +224,10 @@ class LanguagesEl extends Languages {
     'bg': Language(
       'bg',
       'Βουλγαρικά',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -379,6 +391,10 @@ class LanguagesEl extends Languages {
       variant: 'Κουρδικά, Σοράνι',
       menu: 'Κουρδικά, Κεντρικά',
     ),
+    'clc': Language(
+      'clc',
+      'Τσιλκότιν',
+    ),
     'co': Language(
       'co',
       'Κορσικανικά',
@@ -391,9 +407,33 @@ class LanguagesEl extends Languages {
       'cr',
       'Κρι',
     ),
+    'crg': Language(
+      'crg',
+      'Μίτσιφ',
+    ),
     'crh': Language(
       'crh',
       'Τουρκικά Κριμαίας',
+    ),
+    'crj': Language(
+      'crj',
+      'Νοτιοανατολικά Κρι',
+    ),
+    'crk': Language(
+      'crk',
+      'Κρι πεδιάδας',
+    ),
+    'crl': Language(
+      'crl',
+      'Βορειοανατολικά Κρι',
+    ),
+    'crm': Language(
+      'crm',
+      'Μους Κρι',
+    ),
+    'crr': Language(
+      'crr',
+      'Καρολίνα Αλγκονκιάν',
     ),
     'crs': Language(
       'crs',
@@ -406,6 +446,10 @@ class LanguagesEl extends Languages {
     'csb': Language(
       'csb',
       'Κασούμπιαν',
+    ),
+    'csw': Language(
+      'csw',
+      'Κρι Βάλτου',
     ),
     'cu': Language(
       'cu',
@@ -769,6 +813,10 @@ class LanguagesEl extends Languages {
       'haw',
       'Χαβαϊκά',
     ),
+    'hax': Language(
+      'hax',
+      'Βόρεια Χάιντα',
+    ),
     'he': Language(
       'he',
       'Εβραϊκά',
@@ -776,6 +824,11 @@ class LanguagesEl extends Languages {
     'hi': Language(
       'hi',
       'Χίντι',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'Χίντι (Λατινικό)',
+      variant: 'Hinglish',
     ),
     'hil': Language(
       'hil',
@@ -812,6 +865,10 @@ class LanguagesEl extends Languages {
     'hup': Language(
       'hup',
       'Χούπα',
+    ),
+    'hur': Language(
+      'hur',
+      'Χαλκομελέμ',
     ),
     'hy': Language(
       'hy',
@@ -852,6 +909,10 @@ class LanguagesEl extends Languages {
     'ik': Language(
       'ik',
       'Ινουπιάκ',
+    ),
+    'ikt': Language(
+      'ikt',
+      'Ινουκτιτούτ Δυτικού Καναδά',
     ),
     'ilo': Language(
       'ilo',
@@ -963,7 +1024,7 @@ class LanguagesEl extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'Κάινγκανγκ',
     ),
     'kha': Language(
       'kha',
@@ -1085,6 +1146,10 @@ class LanguagesEl extends Languages {
       'kw',
       'Κορνουαλικά',
     ),
+    'kwk': Language(
+      'kwk',
+      'Κουακουάλα',
+    ),
     'ky': Language(
       'ky',
       'Κιργιζικά',
@@ -1129,6 +1194,10 @@ class LanguagesEl extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'Λιλουέτ',
+    ),
     'lkt': Language(
       'lkt',
       'Λακότα',
@@ -1156,6 +1225,10 @@ class LanguagesEl extends Languages {
     'lrc': Language(
       'lrc',
       'Βόρεια Λούρι',
+    ),
+    'lsm': Language(
+      'lsm',
+      'Σαάμια',
     ),
     'lt': Language(
       'lt',
@@ -1296,6 +1369,10 @@ class LanguagesEl extends Languages {
     'mni': Language(
       'mni',
       'Μανιπούρι',
+    ),
+    'moe': Language(
+      'moe',
+      'Ινου-αϊμούν',
     ),
     'moh': Language(
       'moh',
@@ -1485,6 +1562,26 @@ class LanguagesEl extends Languages {
       'oj',
       'Οζιβίγουα',
     ),
+    'ojb': Language(
+      'ojb',
+      'Βορειοδυτικά Οζιβίγουα',
+    ),
+    'ojc': Language(
+      'ojc',
+      'Κεντρικά Οτζίμπουα',
+    ),
+    'ojs': Language(
+      'ojs',
+      'Ότζι-Κρι',
+    ),
+    'ojw': Language(
+      'ojw',
+      'Δυτικά Οζιβίγουα',
+    ),
+    'oka': Language(
+      'oka',
+      'Οκανάγκαν',
+    ),
     'om': Language(
       'om',
       'Ορόμο',
@@ -1545,6 +1642,10 @@ class LanguagesEl extends Languages {
       'pi',
       'Πάλι',
     ),
+    'pis': Language(
+      'pis',
+      'Πιτζίν',
+    ),
     'pl': Language(
       'pl',
       'Πολωνικά',
@@ -1552,6 +1653,10 @@ class LanguagesEl extends Languages {
     'pon': Language(
       'pon',
       'Πομπηικά',
+    ),
+    'pqm': Language(
+      'pqm',
+      'Μαλισιτ-Πασσαμακουόντ',
     ),
     'prg': Language(
       'prg',
@@ -1757,6 +1862,10 @@ class LanguagesEl extends Languages {
       'sl',
       'Σλοβενικά',
     ),
+    'slh': Language(
+      'slh',
+      'Νότια Λάσουτσιντ',
+    ),
     'sm': Language(
       'sm',
       'Σαμοανά',
@@ -1821,6 +1930,10 @@ class LanguagesEl extends Languages {
       'st',
       'Νότια Σόθο',
     ),
+    'str': Language(
+      'str',
+      'Στρέιτς Σαλίς',
+    ),
     'su': Language(
       'su',
       'Σουνδανικά',
@@ -1865,6 +1978,10 @@ class LanguagesEl extends Languages {
       'ta',
       'Ταμιλικά',
     ),
+    'tce': Language(
+      'tce',
+      'Νότια Τουτσόνε',
+    ),
     'te': Language(
       'te',
       'Τελούγκου',
@@ -1889,9 +2006,17 @@ class LanguagesEl extends Languages {
       'tg',
       'Τατζικικά',
     ),
+    'tgx': Language(
+      'tgx',
+      'Τατζίς',
+    ),
     'th': Language(
       'th',
       'Ταϊλανδικά',
+    ),
+    'tht': Language(
+      'tht',
+      'Ταλτάν',
     ),
     'ti': Language(
       'ti',
@@ -1941,6 +2066,10 @@ class LanguagesEl extends Languages {
       'tog',
       'Νιάσα Τόνγκα',
     ),
+    'tok': Language(
+      'tok',
+      'Τόκι Πόνα',
+    ),
     'tpi': Language(
       'tpi',
       'Τοκ Πισίν',
@@ -1964,6 +2093,10 @@ class LanguagesEl extends Languages {
     'tt': Language(
       'tt',
       'Ταταρικά',
+    ),
+    'ttm': Language(
+      'ttm',
+      'Βόρεια Τουτσόνε',
     ),
     'tum': Language(
       'tum',
@@ -2033,6 +2166,10 @@ class LanguagesEl extends Languages {
     've': Language(
       've',
       'Βέντα',
+    ),
+    'vec': Language(
+      'vec',
+      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2120,7 +2257,7 @@ class LanguagesEl extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'Νινγκατού',
     ),
     'yue': Language(
       'yue',
@@ -3327,6 +3464,28 @@ class UnitsEl implements Units {
           'έτ.',
           one: '{0} έ',
           other: '{0} έ',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'τέταρτα',
+          one: '{0} τέταρτο',
+          other: '{0} τέταρτα',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'τετ.',
+          one: '{0} τέτ.',
+          other: '{0} τέτ/α',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'τετ.',
+          one: '{0} τέτ.',
+          other: '{0} τέτ.',
         ),
       );
 
@@ -4705,7 +4864,7 @@ class UnitsEl implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'τόνοι',
@@ -8108,7 +8267,7 @@ class TerritoriesEl implements Territories {
     ),
     'NL': Territory(
       'NL',
-      'Ολλανδία',
+      'Κάτω Χώρες',
     ),
     'NO': Territory(
       'NO',
@@ -8129,6 +8288,7 @@ class TerritoriesEl implements Territories {
     'NZ': Territory(
       'NZ',
       'Νέα Ζηλανδία',
+      variant: 'Αοτεαρόα Νέα Ζηλανδία',
     ),
     'OM': Territory(
       'OM',
@@ -8356,6 +8516,7 @@ class TerritoriesEl implements Territories {
     'TR': Territory(
       'TR',
       'Τουρκία',
+      variant: 'Τουρκία',
     ),
     'TT': Territory(
       'TT',

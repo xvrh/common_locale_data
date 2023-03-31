@@ -108,6 +108,10 @@ class LanguagesRu extends Languages {
       'ang',
       'староанглийский',
     ),
+    'ann': Language(
+      'ann',
+      'оболо',
+    ),
     'anp': Language(
       'anp',
       'ангика',
@@ -135,7 +139,7 @@ class LanguagesRu extends Languages {
     'ars': Language(
       'ars',
       'недждийский арабский',
-      menu: 'арабская (недждийский)',
+      menu: 'арабский (недждийский)',
     ),
     'arw': Language(
       'arw',
@@ -152,6 +156,10 @@ class LanguagesRu extends Languages {
     'ast': Language(
       'ast',
       'астурийский',
+    ),
+    'atj': Language(
+      'atj',
+      'атикамек',
     ),
     'av': Language(
       'av',
@@ -217,6 +225,10 @@ class LanguagesRu extends Languages {
     'bg': Language(
       'bg',
       'болгарский',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -380,6 +392,10 @@ class LanguagesRu extends Languages {
       variant: 'центральнокурдский',
       menu: 'курдский (сорани)',
     ),
+    'clc': Language(
+      'clc',
+      'чилкотин',
+    ),
     'co': Language(
       'co',
       'корсиканский',
@@ -392,9 +408,33 @@ class LanguagesRu extends Languages {
       'cr',
       'кри',
     ),
+    'crg': Language(
+      'crg',
+      'мичиф',
+    ),
     'crh': Language(
       'crh',
       'крымско-татарский',
+    ),
+    'crj': Language(
+      'crj',
+      'юго-восточный кри',
+    ),
+    'crk': Language(
+      'crk',
+      'равнинный кри',
+    ),
+    'crl': Language(
+      'crl',
+      'северо-восточный кри',
+    ),
+    'crm': Language(
+      'crm',
+      'мусский кри',
+    ),
+    'crr': Language(
+      'crr',
+      'каролинский алгонкинский',
     ),
     'crs': Language(
       'crs',
@@ -407,6 +447,10 @@ class LanguagesRu extends Languages {
     'csb': Language(
       'csb',
       'кашубский',
+    ),
+    'csw': Language(
+      'csw',
+      'болотный кри',
     ),
     'cu': Language(
       'cu',
@@ -778,6 +822,10 @@ class LanguagesRu extends Languages {
       'haw',
       'гавайский',
     ),
+    'hax': Language(
+      'hax',
+      'южный хайда',
+    ),
     'he': Language(
       'he',
       'иврит',
@@ -785,6 +833,11 @@ class LanguagesRu extends Languages {
     'hi': Language(
       'hi',
       'хинди',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'хинди (латиница)',
+      variant: 'хинглиш',
     ),
     'hil': Language(
       'hil',
@@ -826,6 +879,10 @@ class LanguagesRu extends Languages {
       'hup',
       'хупа',
     ),
+    'hur': Language(
+      'hur',
+      'халкомелем',
+    ),
     'hy': Language(
       'hy',
       'армянский',
@@ -865,6 +922,10 @@ class LanguagesRu extends Languages {
     'ik': Language(
       'ik',
       'инупиак',
+    ),
+    'ikt': Language(
+      'ikt',
+      'восточноканадский инуктитут',
     ),
     'ilo': Language(
       'ilo',
@@ -976,7 +1037,7 @@ class LanguagesRu extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'каинганг',
     ),
     'kha': Language(
       'kha',
@@ -1098,6 +1159,10 @@ class LanguagesRu extends Languages {
       'kw',
       'корнский',
     ),
+    'kwk': Language(
+      'kwk',
+      'квакиутль',
+    ),
     'ky': Language(
       'ky',
       'киргизский',
@@ -1142,6 +1207,10 @@ class LanguagesRu extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'лиллуэт',
+    ),
     'lkt': Language(
       'lkt',
       'лакота',
@@ -1169,6 +1238,10 @@ class LanguagesRu extends Languages {
     'lrc': Language(
       'lrc',
       'севернолурский',
+    ),
+    'lsm': Language(
+      'lsm',
+      'саамиа',
     ),
     'lt': Language(
       'lt',
@@ -1309,6 +1382,10 @@ class LanguagesRu extends Languages {
     'mni': Language(
       'mni',
       'манипурский',
+    ),
+    'moe': Language(
+      'moe',
+      'инну-аймун',
     ),
     'moh': Language(
       'moh',
@@ -1502,6 +1579,26 @@ class LanguagesRu extends Languages {
       'oj',
       'оджибва',
     ),
+    'ojb': Language(
+      'ojb',
+      'северо-западный оджибве',
+    ),
+    'ojc': Language(
+      'ojc',
+      'центральный оджибве',
+    ),
+    'ojs': Language(
+      'ojs',
+      'оджи-кри',
+    ),
+    'ojw': Language(
+      'ojw',
+      'западный оджибве',
+    ),
+    'oka': Language(
+      'oka',
+      'оканаган',
+    ),
     'om': Language(
       'om',
       'оромо',
@@ -1562,6 +1659,10 @@ class LanguagesRu extends Languages {
       'pi',
       'пали',
     ),
+    'pis': Language(
+      'pis',
+      'соломонский пиджин',
+    ),
     'pl': Language(
       'pl',
       'польский',
@@ -1569,6 +1670,10 @@ class LanguagesRu extends Languages {
     'pon': Language(
       'pon',
       'понапе',
+    ),
+    'pqm': Language(
+      'pqm',
+      'малесит-пассамакводди',
     ),
     'prg': Language(
       'prg',
@@ -1774,6 +1879,10 @@ class LanguagesRu extends Languages {
       'sl',
       'словенский',
     ),
+    'slh': Language(
+      'slh',
+      'южный лушуцид',
+    ),
     'sm': Language(
       'sm',
       'самоанский',
@@ -1838,6 +1947,10 @@ class LanguagesRu extends Languages {
       'st',
       'южный сото',
     ),
+    'str': Language(
+      'str',
+      'стрейтс салиш',
+    ),
     'su': Language(
       'su',
       'сунданский',
@@ -1882,6 +1995,10 @@ class LanguagesRu extends Languages {
       'ta',
       'тамильский',
     ),
+    'tce': Language(
+      'tce',
+      'южный тутчоне',
+    ),
     'te': Language(
       'te',
       'телугу',
@@ -1906,9 +2023,17 @@ class LanguagesRu extends Languages {
       'tg',
       'таджикский',
     ),
+    'tgx': Language(
+      'tgx',
+      'тагиш',
+    ),
     'th': Language(
       'th',
       'тайский',
+    ),
+    'tht': Language(
+      'tht',
+      'талтан',
     ),
     'ti': Language(
       'ti',
@@ -1958,6 +2083,10 @@ class LanguagesRu extends Languages {
       'tog',
       'тонга',
     ),
+    'tok': Language(
+      'tok',
+      'токипона',
+    ),
     'tpi': Language(
       'tpi',
       'ток-писин',
@@ -1985,6 +2114,10 @@ class LanguagesRu extends Languages {
     'tt': Language(
       'tt',
       'татарский',
+    ),
+    'ttm': Language(
+      'ttm',
+      'северный тутчоне',
     ),
     'tum': Language(
       'tum',
@@ -2054,6 +2187,10 @@ class LanguagesRu extends Languages {
       've',
       'венда',
     ),
+    'vec': Language(
+      'vec',
+      'vec',
+    ),
     'vi': Language(
       'vi',
       'вьетнамский',
@@ -2100,7 +2237,7 @@ class LanguagesRu extends Languages {
     ),
     'wuu': Language(
       'wuu',
-      'ву',
+      'у',
     ),
     'xal': Language(
       'xal',
@@ -2140,7 +2277,7 @@ class LanguagesRu extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'ньенгату',
     ),
     'yue': Language(
       'yue',
@@ -3615,6 +3752,34 @@ class UnitsRu implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'кварталы',
+          one: '{0} квартал',
+          few: '{0} квартала',
+          many: '{0} кварталов',
+          other: '{0} квартала',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'кварт',
+          one: '{0} кварт',
+          few: '{0} кварт',
+          many: '{0} кварт',
+          other: '{0} кварт',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'кварт',
+          one: '{0} кварт',
+          few: '{0} кварт',
+          many: '{0} кварт',
+          other: '{0} кварт',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -3682,7 +3847,7 @@ class UnitsRu implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'дн.',
+          'дн',
           one: '{0} дн.',
           few: '{0} дн.',
           many: '{0} дн.',
@@ -5367,7 +5532,7 @@ class UnitsRu implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'тонны',
@@ -8804,7 +8969,7 @@ class TerritoriesRu implements Territories {
     ),
     'BN': Territory(
       'BN',
-      'Бруней-Даруссалам',
+      'Бруней',
     ),
     'BO': Territory(
       'BO',
@@ -8875,7 +9040,7 @@ class TerritoriesRu implements Territories {
     ),
     'CK': Territory(
       'CK',
-      'Острова Кука',
+      'о-ва Кука',
     ),
     'CL': Territory(
       'CL',
@@ -9219,7 +9384,7 @@ class TerritoriesRu implements Territories {
     ),
     'KY': Territory(
       'KY',
-      'Острова Кайман',
+      'о-ва Кайман',
     ),
     'KZ': Territory(
       'KZ',
@@ -9295,7 +9460,7 @@ class TerritoriesRu implements Territories {
     ),
     'MH': Territory(
       'MH',
-      'Маршалловы Острова',
+      'Маршалловы о-ва',
     ),
     'MK': Territory(
       'MK',
@@ -9409,6 +9574,7 @@ class TerritoriesRu implements Territories {
     'NZ': Territory(
       'NZ',
       'Новая Зеландия',
+      variant: 'Аотеароа (Новая Зеландия)',
     ),
     'OM': Territory(
       'OM',
@@ -9505,11 +9671,11 @@ class TerritoriesRu implements Territories {
     ),
     'SB': Territory(
       'SB',
-      'Соломоновы Острова',
+      'Соломоновы о-ва',
     ),
     'SC': Territory(
       'SC',
-      'Сейшельские Острова',
+      'Сейшельские о-ва',
     ),
     'SD': Territory(
       'SD',
@@ -9590,7 +9756,7 @@ class TerritoriesRu implements Territories {
     ),
     'TC': Territory(
       'TC',
-      'о-ва Тёркс и Кайкос',
+      'Тёркс и Кайкос',
     ),
     'TD': Territory(
       'TD',
@@ -9636,6 +9802,7 @@ class TerritoriesRu implements Territories {
     'TR': Territory(
       'TR',
       'Турция',
+      variant: 'Турция',
     ),
     'TT': Territory(
       'TT',

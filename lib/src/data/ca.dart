@@ -116,6 +116,10 @@ class LanguagesCa extends Languages {
       'ang',
       'anglès antic',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -171,6 +175,10 @@ class LanguagesCa extends Languages {
     'ast': Language(
       'ast',
       'asturià',
+    ),
+    'atj': Language(
+      'atj',
+      'atacama',
     ),
     'av': Language(
       'av',
@@ -244,6 +252,10 @@ class LanguagesCa extends Languages {
     'bg': Language(
       'bg',
       'búlgar',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -411,6 +423,10 @@ class LanguagesCa extends Languages {
       variant: 'kurd sorani',
       menu: 'sorani',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'cors',
@@ -423,9 +439,33 @@ class LanguagesCa extends Languages {
       'cr',
       'cree',
     ),
+    'crg': Language(
+      'crg',
+      'michif',
+    ),
     'crh': Language(
       'crh',
       'tàtar de Crimea',
+    ),
+    'crj': Language(
+      'crj',
+      'cree sud-oriental',
+    ),
+    'crk': Language(
+      'crk',
+      'cree de la plana',
+    ),
+    'crl': Language(
+      'crl',
+      'cree nord-oriental',
+    ),
+    'crm': Language(
+      'crm',
+      'moose cree',
+    ),
+    'crr': Language(
+      'crr',
+      'algonquí de Carolina',
     ),
     'crs': Language(
       'crs',
@@ -438,6 +478,10 @@ class LanguagesCa extends Languages {
     'csb': Language(
       'csb',
       'caixubi',
+    ),
+    'csw': Language(
+      'csw',
+      'swampy cree',
     ),
     'cu': Language(
       'cu',
@@ -587,7 +631,7 @@ class LanguagesCa extends Languages {
     'en-US': Language(
       'en-US',
       'anglès americà',
-      short: 'anglès americà',
+      short: 'anglès (EUA)',
     ),
     'enm': Language(
       'enm',
@@ -829,6 +873,10 @@ class LanguagesCa extends Languages {
       'haw',
       'hawaià',
     ),
+    'hax': Language(
+      'hax',
+      'haida meridional',
+    ),
     'he': Language(
       'he',
       'hebreu',
@@ -836,6 +884,11 @@ class LanguagesCa extends Languages {
     'hi': Language(
       'hi',
       'hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindi (llatí)',
+      variant: 'hinglish',
     ),
     'hif': Language(
       'hif',
@@ -881,6 +934,10 @@ class LanguagesCa extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'armeni',
@@ -920,6 +977,10 @@ class LanguagesCa extends Languages {
     'ik': Language(
       'ik',
       'inupiak',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuktitut occidental canadenc',
     ),
     'ilo': Language(
       'ilo',
@@ -1165,6 +1226,10 @@ class LanguagesCa extends Languages {
       'kw',
       'còrnic',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwak’wala',
+    ),
     'ky': Language(
       'ky',
       'kirguís',
@@ -1209,6 +1274,10 @@ class LanguagesCa extends Languages {
       'lij',
       'lígur',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'lakota',
@@ -1240,6 +1309,10 @@ class LanguagesCa extends Languages {
     'lrc': Language(
       'lrc',
       'luri septentrional',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamia',
     ),
     'lt': Language(
       'lt',
@@ -1388,6 +1461,10 @@ class LanguagesCa extends Languages {
     'mni': Language(
       'mni',
       'manipurí',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1589,6 +1666,26 @@ class LanguagesCa extends Languages {
       'oj',
       'ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'ojibwa septentrional',
+    ),
+    'ojc': Language(
+      'ojc',
+      'ojibwa central',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'ojibwa occidental',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagà',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1661,6 +1758,10 @@ class LanguagesCa extends Languages {
       'pi',
       'pali',
     ),
+    'pis': Language(
+      'pis',
+      'pidgin',
+    ),
     'pl': Language(
       'pl',
       'polonès',
@@ -1676,6 +1777,10 @@ class LanguagesCa extends Languages {
     'pon': Language(
       'pon',
       'ponapeà',
+    ),
+    'pqm': Language(
+      'pqm',
+      'maliseet-passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1890,6 +1995,10 @@ class LanguagesCa extends Languages {
       'sl',
       'eslovè',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed meridional',
+    ),
     'sm': Language(
       'sm',
       'samoà',
@@ -1954,6 +2063,10 @@ class LanguagesCa extends Languages {
       'st',
       'sotho meridional',
     ),
+    'str': Language(
+      'str',
+      'straits salish',
+    ),
     'su': Language(
       'su',
       'sondanès',
@@ -2002,6 +2115,10 @@ class LanguagesCa extends Languages {
       'ta',
       'tàmil',
     ),
+    'tce': Language(
+      'tce',
+      'tutxone meridional',
+    ),
     'te': Language(
       'te',
       'telugu',
@@ -2026,9 +2143,17 @@ class LanguagesCa extends Languages {
       'tg',
       'tadjik',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'tai',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltà',
     ),
     'ti': Language(
       'ti',
@@ -2086,6 +2211,10 @@ class LanguagesCa extends Languages {
       'tog',
       'tonga',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -2109,6 +2238,10 @@ class LanguagesCa extends Languages {
     'tt': Language(
       'tt',
       'tàtar',
+    ),
+    'ttm': Language(
+      'ttm',
+      'tutxone septentrional',
     ),
     'ttt': Language(
       'ttt',
@@ -2284,7 +2417,7 @@ class LanguagesCa extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'nheengatú',
     ),
     'yue': Language(
       'yue',
@@ -2722,7 +2855,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'hectàrees',
+          'hectàrea',
           one: '{0} ha',
           other: '{0} ha',
         ),
@@ -2810,7 +2943,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'acres',
+          'acre',
           one: '{0} ac',
           other: '{0} ac',
         ),
@@ -2898,7 +3031,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dunams',
+          'dunam',
           one: '{0} dunam',
           other: '{0} dunams',
         ),
@@ -3069,7 +3202,8 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'per deu mil',
-          other: '{0}‱',
+          one: '{0} ‱',
+          other: '{0} ‱',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -3345,9 +3479,9 @@ class UnitsCa implements Units {
   Unit get digitalKilobyte => Unit(
         long: UnitCountPattern(
           _locale,
-          'quilobytes',
-          one: '{0} quilobyte',
-          other: '{0} quilobytes',
+          'kilobytes',
+          one: '{0} kilobyte',
+          other: '{0} kilobytes',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3367,9 +3501,9 @@ class UnitsCa implements Units {
   Unit get digitalKilobit => Unit(
         long: UnitCountPattern(
           _locale,
-          'quilobits',
-          one: '{0} quilobit',
-          other: '{0} quilobits',
+          'kilobits',
+          one: '{0} kilobit',
+          other: '{0} kilobits',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3496,6 +3630,28 @@ class UnitsCa implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'trimestres',
+          one: '{0} trimestre',
+          other: '{0} trimestres',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          other: '{0} trim.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          other: '{0} trim.',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -3507,7 +3663,7 @@ class UnitsCa implements Units {
           _locale,
           'mesos',
           one: '{0} mes',
-          other: '{0} mesos',
+          other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -3993,7 +4149,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'lliures-força',
+          'lbf',
           one: '{0} lbf',
           other: '{0} lbf',
         ),
@@ -4014,7 +4170,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'newton',
+          'N',
           other: '{0} N',
         ),
       );
@@ -4023,9 +4179,9 @@ class UnitsCa implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'kilowatt per hora per 100 quilòmetres',
-          one: '{0} kilowatt per hora per 100 quilòmetres',
-          other: '{0} kilowatts per hora per 100 quilòmetres',
+          'kilowatt hora per 100 quilòmetres',
+          one: '{0} kilowatt hora per 100 quilòmetres',
+          other: '{0} kilowatts hora per 100 quilòmetres',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4133,7 +4289,7 @@ class UnitsCa implements Units {
   Unit get graphicsEm => Unit(
         long: UnitCountPattern(
           _locale,
-          'em tipogràfica',
+          'em tipogràfic',
           one: '{0} em',
           other: '{0} em',
         ),
@@ -4517,7 +4673,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'milles',
+          'mi',
           one: '{0} mi',
           other: '{0} mi',
         ),
@@ -4539,7 +4695,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'iardes',
+          'yd',
           one: '{0} yd',
           other: '{0} yd',
         ),
@@ -4561,7 +4717,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'peus',
+          'ft',
           one: '{0} ft',
           other: '{0} ft',
         ),
@@ -4583,7 +4739,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'polzades',
+          'in',
           one: '{0} in',
           other: '{0} in',
         ),
@@ -4605,7 +4761,7 @@ class UnitsCa implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'parsecs',
+          'parsec',
           one: '{0} pc',
           other: '{0} pc',
         ),
@@ -4628,8 +4784,8 @@ class UnitsCa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'anys llum',
-          one: '{0} l. y.',
-          other: '{0} l. y.',
+          one: '{0} a. ll.',
+          other: '{0} a. ll.',
         ),
       );
 
@@ -4864,7 +5020,7 @@ class UnitsCa implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tones mètriques',
@@ -5328,7 +5484,7 @@ class UnitsCa implements Units {
         long: UnitCountPattern(
           _locale,
           'mil·límetres de mercuri',
-          one: 'mil·límetre de mercuri',
+          one: '{0} mil·límetre de mercuri',
           other: '{0} mil·límetres de mercuri',
         ),
         short: UnitCountPattern(
@@ -7625,7 +7781,7 @@ class TerritoriesCa implements Territories {
     ),
     'AX': Territory(
       'AX',
-      'Illes Aland',
+      'Illes Åland',
     ),
     'AZ': Territory(
       'AZ',
@@ -7685,7 +7841,7 @@ class TerritoriesCa implements Territories {
     ),
     'BQ': Territory(
       'BQ',
-      'Antilles Neerlandeses',
+      'Carib Neerlandès',
     ),
     'BR': Territory(
       'BR',
@@ -8060,7 +8216,7 @@ class TerritoriesCa implements Territories {
     ),
     'KG': Territory(
       'KG',
-      'Kirguizistan',
+      'Kirguizstan',
     ),
     'KH': Territory(
       'KH',
@@ -8193,7 +8349,7 @@ class TerritoriesCa implements Territories {
     ),
     'MP': Territory(
       'MP',
-      'Illes Mariannes del Nord',
+      'Illes Mariannes Septentrionals',
     ),
     'MQ': Territory(
       'MQ',
@@ -8282,6 +8438,7 @@ class TerritoriesCa implements Territories {
     'NZ': Territory(
       'NZ',
       'Nova Zelanda',
+      variant: 'Aotearoa (Nova Zelanda)',
     ),
     'OM': Territory(
       'OM',
@@ -8454,7 +8611,7 @@ class TerritoriesCa implements Territories {
     ),
     'SZ': Territory(
       'SZ',
-      'eSwatini',
+      'Eswatini',
       variant: 'Swazilàndia',
     ),
     'TA': Territory(
@@ -8491,7 +8648,7 @@ class TerritoriesCa implements Territories {
     ),
     'TL': Territory(
       'TL',
-      'Timor Oriental',
+      'Timor-Leste',
       variant: 'Timor Oriental',
     ),
     'TM': Territory(
@@ -8509,6 +8666,7 @@ class TerritoriesCa implements Territories {
     'TR': Territory(
       'TR',
       'Turquia',
+      variant: 'Turquia',
     ),
     'TT': Territory(
       'TT',

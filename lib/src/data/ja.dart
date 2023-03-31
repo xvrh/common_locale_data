@@ -120,6 +120,10 @@ class LanguagesJa extends Languages {
       'ang',
       '古英語',
     ),
+    'ann': Language(
+      'ann',
+      'オボロ語',
+    ),
     'anp': Language(
       'anp',
       'アンギカ語',
@@ -184,6 +188,10 @@ class LanguagesJa extends Languages {
     'ast': Language(
       'ast',
       'アストゥリアス語',
+    ),
+    'atj': Language(
+      'atj',
+      'アティカメク語',
     ),
     'av': Language(
       'av',
@@ -269,6 +277,10 @@ class LanguagesJa extends Languages {
     'bg': Language(
       'bg',
       'ブルガリア語',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -448,6 +460,10 @@ class LanguagesJa extends Languages {
       variant: 'クルド語（ソラニー）',
       menu: 'クルド語（中央）',
     ),
+    'clc': Language(
+      'clc',
+      'チルコーティン語',
+    ),
     'co': Language(
       'co',
       'コルシカ語',
@@ -464,9 +480,33 @@ class LanguagesJa extends Languages {
       'cr',
       'クリー語',
     ),
+    'crg': Language(
+      'crg',
+      'ミチフ語',
+    ),
     'crh': Language(
       'crh',
       'クリミア・タタール語',
+    ),
+    'crj': Language(
+      'crj',
+      '東部クリー語(南部)',
+    ),
+    'crk': Language(
+      'crk',
+      '平原クリー語',
+    ),
+    'crl': Language(
+      'crl',
+      '東部クリー語(北部)',
+    ),
+    'crm': Language(
+      'crm',
+      'ムースクリー語',
+    ),
+    'crr': Language(
+      'crr',
+      'カロライナ・アルゴンキン語',
     ),
     'crs': Language(
       'crs',
@@ -479,6 +519,10 @@ class LanguagesJa extends Languages {
     'csb': Language(
       'csb',
       'カシューブ語',
+    ),
+    'csw': Language(
+      'csw',
+      '湿原クリー語',
     ),
     'cu': Language(
       'cu',
@@ -894,6 +938,10 @@ class LanguagesJa extends Languages {
       'haw',
       'ハワイ語',
     ),
+    'hax': Language(
+      'hax',
+      '南部ハイダ語',
+    ),
     'he': Language(
       'he',
       'ヘブライ語',
@@ -901,6 +949,11 @@ class LanguagesJa extends Languages {
     'hi': Language(
       'hi',
       'ヒンディー語',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'ヒンディー語 (ラテン文字)',
+      variant: 'インド英語 (ヒングリッシュ)',
     ),
     'hif': Language(
       'hif',
@@ -946,6 +999,10 @@ class LanguagesJa extends Languages {
       'hup',
       'フパ語',
     ),
+    'hur': Language(
+      'hur',
+      'ハルコメレム語',
+    ),
     'hy': Language(
       'hy',
       'アルメニア語',
@@ -985,6 +1042,10 @@ class LanguagesJa extends Languages {
     'ik': Language(
       'ik',
       'イヌピアック語',
+    ),
+    'ikt': Language(
+      'ikt',
+      'イヌイナクトゥン語',
     ),
     'ilo': Language(
       'ilo',
@@ -1250,6 +1311,10 @@ class LanguagesJa extends Languages {
       'kw',
       'コーンウォール語',
     ),
+    'kwk': Language(
+      'kwk',
+      'クヮキゥワラ語',
+    ),
     'ky': Language(
       'ky',
       'キルギス語',
@@ -1298,6 +1363,10 @@ class LanguagesJa extends Languages {
       'lij',
       'リグリア語',
     ),
+    'lil': Language(
+      'lil',
+      'リルエット語',
+    ),
     'liv': Language(
       'liv',
       'リヴォニア語',
@@ -1333,6 +1402,10 @@ class LanguagesJa extends Languages {
     'lrc': Language(
       'lrc',
       '北ロル語',
+    ),
+    'lsm': Language(
+      'lsm',
+      'サーミア語',
     ),
     'lt': Language(
       'lt',
@@ -1485,6 +1558,10 @@ class LanguagesJa extends Languages {
     'mni': Language(
       'mni',
       'マニプリ語',
+    ),
+    'moe': Language(
+      'moe',
+      'イヌー＝アイムン語',
     ),
     'moh': Language(
       'moh',
@@ -1694,6 +1771,26 @@ class LanguagesJa extends Languages {
       'oj',
       'オジブウェー語',
     ),
+    'ojb': Language(
+      'ojb',
+      '北西部オジブワ語',
+    ),
+    'ojc': Language(
+      'ojc',
+      '中部オジブワ語',
+    ),
+    'ojs': Language(
+      'ojs',
+      'セヴァーン・オジブワ語',
+    ),
+    'ojw': Language(
+      'ojw',
+      '西部オジブワ語',
+    ),
+    'oka': Language(
+      'oka',
+      'オカナガン語',
+    ),
     'om': Language(
       'om',
       'オロモ語',
@@ -1770,6 +1867,10 @@ class LanguagesJa extends Languages {
       'pi',
       'パーリ語',
     ),
+    'pis': Language(
+      'pis',
+      'ピジン語',
+    ),
     'pl': Language(
       'pl',
       'ポーランド語',
@@ -1785,6 +1886,10 @@ class LanguagesJa extends Languages {
     'pon': Language(
       'pon',
       'ポンペイ語',
+    ),
+    'pqm': Language(
+      'pqm',
+      'マリシート＝パサマコディ語',
     ),
     'prg': Language(
       'prg',
@@ -2031,6 +2136,10 @@ class LanguagesJa extends Languages {
       'sl',
       'スロベニア語',
     ),
+    'slh': Language(
+      'slh',
+      '南部ルシュツィード語',
+    ),
     'sli': Language(
       'sli',
       '低シレジア語',
@@ -2107,6 +2216,10 @@ class LanguagesJa extends Languages {
       'stq',
       'ザーターフリジア語',
     ),
+    'str': Language(
+      'str',
+      'ストレイツセイリッシュ語',
+    ),
     'su': Language(
       'su',
       'スンダ語',
@@ -2155,6 +2268,10 @@ class LanguagesJa extends Languages {
       'ta',
       'タミル語',
     ),
+    'tce': Language(
+      'tce',
+      '南部トゥショーニ語',
+    ),
     'tcy': Language(
       'tcy',
       'トゥル語',
@@ -2183,9 +2300,17 @@ class LanguagesJa extends Languages {
       'tg',
       'タジク語',
     ),
+    'tgx': Language(
+      'tgx',
+      'タギシュ語',
+    ),
     'th': Language(
       'th',
       'タイ語',
+    ),
+    'tht': Language(
+      'tht',
+      'タールタン語',
     ),
     'ti': Language(
       'ti',
@@ -2243,6 +2368,10 @@ class LanguagesJa extends Languages {
       'tog',
       'トンガ語(ニアサ)',
     ),
+    'tok': Language(
+      'tok',
+      'トキポナ語',
+    ),
     'tpi': Language(
       'tpi',
       'トク・ピシン語',
@@ -2274,6 +2403,10 @@ class LanguagesJa extends Languages {
     'tt': Language(
       'tt',
       'タタール語',
+    ),
+    'ttm': Language(
+      'ttm',
+      '北部トゥショーニ語',
     ),
     'ttt': Language(
       'ttt',
@@ -3541,6 +3674,25 @@ class UnitsJa implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '四半期',
+          other: '{0} 四半期',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '四半期',
+          other: '{0}四半期',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '四半期',
+          other: '{0}Q',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4429,7 +4581,7 @@ class UnitsJa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'マイル',
-          other: '{0}マイル',
+          other: '{0}mi',
         ),
       );
 
@@ -4448,7 +4600,7 @@ class UnitsJa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ヤード',
-          other: '{0}ヤード',
+          other: '{0}yd',
         ),
       );
 
@@ -4738,7 +4890,7 @@ class UnitsJa implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'トン',
@@ -5189,7 +5341,7 @@ class UnitsJa implements Units {
         narrow: UnitCountPattern(
           _locale,
           '水銀柱インチ',
-          other: '{0}\\" Hg',
+          other: '{0}" Hg',
         ),
       );
 
@@ -5246,7 +5398,7 @@ class UnitsJa implements Units {
         narrow: UnitCountPattern(
           _locale,
           '気圧',
-          other: '{0} atm',
+          other: '{0}atm',
         ),
       );
 
@@ -7847,6 +7999,7 @@ class TerritoriesJa implements Territories {
     'NZ': Territory(
       'NZ',
       'ニュージーランド',
+      variant: 'アオテアロア・ニュージーランド',
     ),
     'OM': Territory(
       'OM',
@@ -8074,6 +8227,7 @@ class TerritoriesJa implements Territories {
     'TR': Territory(
       'TR',
       'トルコ',
+      variant: 'テュルキエ',
     ),
     'TT': Territory(
       'TT',

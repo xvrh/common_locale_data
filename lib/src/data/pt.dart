@@ -108,6 +108,10 @@ class LanguagesPt extends Languages {
       'ang',
       'inglês arcaico',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -151,6 +155,10 @@ class LanguagesPt extends Languages {
     'ast': Language(
       'ast',
       'asturiano',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekw',
     ),
     'av': Language(
       'av',
@@ -216,6 +224,10 @@ class LanguagesPt extends Languages {
     'bg': Language(
       'bg',
       'búlgaro',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -379,6 +391,10 @@ class LanguagesPt extends Languages {
       variant: 'curdo sorâni',
       menu: 'curdo central',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'corso',
@@ -391,9 +407,33 @@ class LanguagesPt extends Languages {
       'cr',
       'cree',
     ),
+    'crg': Language(
+      'crg',
+      'michif',
+    ),
     'crh': Language(
       'crh',
       'tártara da Crimeia',
+    ),
+    'crj': Language(
+      'crj',
+      'cree do sudeste',
+    ),
+    'crk': Language(
+      'crk',
+      'cree das planícies',
+    ),
+    'crl': Language(
+      'crl',
+      'cree do nordeste',
+    ),
+    'crm': Language(
+      'crm',
+      'moose cree',
+    ),
+    'crr': Language(
+      'crr',
+      'algonquiano Carolina',
     ),
     'crs': Language(
       'crs',
@@ -406,6 +446,10 @@ class LanguagesPt extends Languages {
     'csb': Language(
       'csb',
       'kashubian',
+    ),
+    'csw': Language(
+      'csw',
+      'cree swampy',
     ),
     'cu': Language(
       'cu',
@@ -777,6 +821,10 @@ class LanguagesPt extends Languages {
       'haw',
       'havaiano',
     ),
+    'hax': Language(
+      'hax',
+      'haida do sul',
+    ),
     'he': Language(
       'he',
       'hebraico',
@@ -784,6 +832,11 @@ class LanguagesPt extends Languages {
     'hi': Language(
       'hi',
       'híndi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'híndi (latim)',
+      variant: 'híndi (latim)',
     ),
     'hil': Language(
       'hil',
@@ -825,6 +878,10 @@ class LanguagesPt extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'armênio',
@@ -864,6 +921,10 @@ class LanguagesPt extends Languages {
     'ik': Language(
       'ik',
       'inupiaque',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuktitut canadense ocidental',
     ),
     'ilo': Language(
       'ilo',
@@ -975,7 +1036,7 @@ class LanguagesPt extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'caingangue',
     ),
     'kha': Language(
       'kha',
@@ -1097,6 +1158,10 @@ class LanguagesPt extends Languages {
       'kw',
       'córnico',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'quirguiz',
@@ -1141,6 +1206,10 @@ class LanguagesPt extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'lacota',
@@ -1168,6 +1237,10 @@ class LanguagesPt extends Languages {
     'lrc': Language(
       'lrc',
       'luri setentrional',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamia',
     ),
     'lt': Language(
       'lt',
@@ -1308,6 +1381,10 @@ class LanguagesPt extends Languages {
     'mni': Language(
       'mni',
       'manipuri',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1501,6 +1578,26 @@ class LanguagesPt extends Languages {
       'oj',
       'ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'ojibwa do noroeste',
+    ),
+    'ojc': Language(
+      'ojc',
+      'ojibwa central',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'ojibwa ocidental',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagan',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1561,6 +1658,10 @@ class LanguagesPt extends Languages {
       'pi',
       'páli',
     ),
+    'pis': Language(
+      'pis',
+      'pijin',
+    ),
     'pl': Language(
       'pl',
       'polonês',
@@ -1568,6 +1669,10 @@ class LanguagesPt extends Languages {
     'pon': Language(
       'pon',
       'pohnpeiano',
+    ),
+    'pqm': Language(
+      'pqm',
+      'malecite–passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1774,6 +1879,10 @@ class LanguagesPt extends Languages {
       'sl',
       'esloveno',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed do sul',
+    ),
     'sm': Language(
       'sm',
       'samoano',
@@ -1838,6 +1947,10 @@ class LanguagesPt extends Languages {
       'st',
       'soto do sul',
     ),
+    'str': Language(
+      'str',
+      'salish do estreito norte',
+    ),
     'su': Language(
       'su',
       'sundanês',
@@ -1882,6 +1995,10 @@ class LanguagesPt extends Languages {
       'ta',
       'tâmil',
     ),
+    'tce': Language(
+      'tce',
+      'tutchone do sul',
+    ),
     'te': Language(
       'te',
       'télugo',
@@ -1906,9 +2023,17 @@ class LanguagesPt extends Languages {
       'tg',
       'tadjique',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'tailandês',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -1958,6 +2083,10 @@ class LanguagesPt extends Languages {
       'tog',
       'tonganês de Nyasa',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -1981,6 +2110,10 @@ class LanguagesPt extends Languages {
     'tt': Language(
       'tt',
       'tártaro',
+    ),
+    'ttm': Language(
+      'ttm',
+      'tutchone setentrional',
     ),
     'tum': Language(
       'tum',
@@ -2049,6 +2182,10 @@ class LanguagesPt extends Languages {
     've': Language(
       've',
       'venda',
+    ),
+    'vec': Language(
+      'vec',
+      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2136,7 +2273,7 @@ class LanguagesPt extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'nheengatu',
     ),
     'yue': Language(
       'yue',
@@ -2200,61 +2337,61 @@ class UnitsPt implements Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => UnitPrefix(
-        long: UnitPrefixPattern('deci{0}'),
+        long: UnitPrefixPattern('decí{0}'),
         short: UnitPrefixPattern('d{0}'),
         narrow: UnitPrefixPattern('d{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus2 => UnitPrefix(
-        long: UnitPrefixPattern('centi{0}'),
+        long: UnitPrefixPattern('centí{0}'),
         short: UnitPrefixPattern('c{0}'),
         narrow: UnitPrefixPattern('c{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus3 => UnitPrefix(
-        long: UnitPrefixPattern('mili{0}'),
+        long: UnitPrefixPattern('milí{0}'),
         short: UnitPrefixPattern('m{0}'),
         narrow: UnitPrefixPattern('m{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus6 => UnitPrefix(
-        long: UnitPrefixPattern('micro{0}'),
+        long: UnitPrefixPattern('micrô{0}'),
         short: UnitPrefixPattern('μ{0}'),
         narrow: UnitPrefixPattern('μ{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus9 => UnitPrefix(
-        long: UnitPrefixPattern('nano{0}'),
+        long: UnitPrefixPattern('nanô{0}'),
         short: UnitPrefixPattern('n{0}'),
         narrow: UnitPrefixPattern('n{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
-        long: UnitPrefixPattern('pico{0}'),
+        long: UnitPrefixPattern('picô{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus15 => UnitPrefix(
-        long: UnitPrefixPattern('femto{0}'),
+        long: UnitPrefixPattern('femtô{0}'),
         short: UnitPrefixPattern('f{0}'),
         narrow: UnitPrefixPattern('f{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus18 => UnitPrefix(
-        long: UnitPrefixPattern('atto{0}'),
+        long: UnitPrefixPattern('attô{0}'),
         short: UnitPrefixPattern('a{0}'),
         narrow: UnitPrefixPattern('a{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus21 => UnitPrefix(
-        long: UnitPrefixPattern('zepto{0}'),
+        long: UnitPrefixPattern('zeptô{0}'),
         short: UnitPrefixPattern('z{0}'),
         narrow: UnitPrefixPattern('z{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus24 => UnitPrefix(
-        long: UnitPrefixPattern('iocto{0}'),
+        long: UnitPrefixPattern('ioctô{0}'),
         short: UnitPrefixPattern('y{0}'),
         narrow: UnitPrefixPattern('y{0}'),
       );
@@ -2272,7 +2409,7 @@ class UnitsPt implements Units {
       );
   @override
   UnitPrefix get pattern10p3 => UnitPrefix(
-        long: UnitPrefixPattern('quilo{0}'),
+        long: UnitPrefixPattern('quilô{0}'),
         short: UnitPrefixPattern('k{0}'),
         narrow: UnitPrefixPattern('k{0}'),
       );
@@ -2495,8 +2632,8 @@ class UnitsPt implements Units {
         narrow: UnitCountPattern(
           _locale,
           'arcmin',
-          one: "{0}'",
-          other: "{0}'",
+          one: '{0}′',
+          other: '{0}′',
         ),
       );
 
@@ -2517,8 +2654,8 @@ class UnitsPt implements Units {
         narrow: UnitCountPattern(
           _locale,
           'arcseg',
-          one: '{0}\\"',
-          other: '{0}\\"',
+          one: '{0}″',
+          other: '{0}″',
         ),
       );
 
@@ -3300,6 +3437,28 @@ class UnitsPt implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'trimestre',
+          one: '{0} trimestre',
+          other: '{0} trimestres',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          other: '{0} trim.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          other: '{0} trim.',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -3415,13 +3574,13 @@ class UnitsPt implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'seg',
-          one: '{0} seg',
-          other: '{0} seg',
+          's',
+          one: '{0} s',
+          other: '{0} s',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'seg',
+          's',
           one: '{0} s',
           other: '{0} s',
         ),
@@ -4254,7 +4413,7 @@ class UnitsPt implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mil',
+          'mi',
           other: '{0} mi',
         ),
       );
@@ -4592,7 +4751,7 @@ class UnitsPt implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'toneladas métricas',
@@ -7936,6 +8095,7 @@ class TerritoriesPt implements Territories {
     'NZ': Territory(
       'NZ',
       'Nova Zelândia',
+      variant: 'Aotearoa da Nova Zelândia',
     ),
     'OM': Territory(
       'OM',
@@ -8163,6 +8323,7 @@ class TerritoriesPt implements Territories {
     'TR': Territory(
       'TR',
       'Turquia',
+      variant: 'Turquia',
     ),
     'TT': Territory(
       'TT',

@@ -108,6 +108,10 @@ class LanguagesSr extends Languages {
       'ang',
       'староенглески',
     ),
+    'ann': Language(
+      'ann',
+      'оболо',
+    ),
     'anp': Language(
       'anp',
       'ангика',
@@ -132,6 +136,10 @@ class LanguagesSr extends Languages {
       'arp',
       'арапахо',
     ),
+    'ars': Language(
+      'ars',
+      'најдиарапски',
+    ),
     'arw': Language(
       'arw',
       'аравачки',
@@ -147,6 +155,10 @@ class LanguagesSr extends Languages {
     'ast': Language(
       'ast',
       'астуријски',
+    ),
+    'atj': Language(
+      'atj',
+      'атикамеку',
     ),
     'av': Language(
       'av',
@@ -200,6 +212,10 @@ class LanguagesSr extends Languages {
     'bg': Language(
       'bg',
       'бугарски',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -277,6 +293,10 @@ class LanguagesSr extends Languages {
       'car',
       'карипски',
     ),
+    'cay': Language(
+      'cay',
+      'кајуга',
+    ),
     'cch': Language(
       'cch',
       'атсам',
@@ -343,6 +363,10 @@ class LanguagesSr extends Languages {
       variant: 'централни курдски',
       menu: 'централни курдски',
     ),
+    'clc': Language(
+      'clc',
+      'чилкотин',
+    ),
     'co': Language(
       'co',
       'корзикански',
@@ -355,9 +379,33 @@ class LanguagesSr extends Languages {
       'cr',
       'кри',
     ),
+    'crg': Language(
+      'crg',
+      'мичиф',
+    ),
     'crh': Language(
       'crh',
       'кримскотатарски',
+    ),
+    'crj': Language(
+      'crj',
+      'југоисточни кри',
+    ),
+    'crk': Language(
+      'crk',
+      'плаинскри',
+    ),
+    'crl': Language(
+      'crl',
+      'североисточни кри',
+    ),
+    'crm': Language(
+      'crm',
+      'музкри',
+    ),
+    'crr': Language(
+      'crr',
+      'каролиншки алгонквијан',
     ),
     'crs': Language(
       'crs',
@@ -370,6 +418,10 @@ class LanguagesSr extends Languages {
     'csb': Language(
       'csb',
       'кашупски',
+    ),
+    'csw': Language(
+      'csw',
+      'мочварни кри',
     ),
     'cu': Language(
       'cu',
@@ -510,12 +562,12 @@ class LanguagesSr extends Languages {
     'en-GB': Language(
       'en-GB',
       'енглески (Велика Британија)',
-      short: 'енглески (Велика Британија)',
+      short: 'енглески (УК)',
     ),
     'en-US': Language(
       'en-US',
       'енглески (Сједињене Америчке Државе)',
-      short: 'енглески (Сједињене Америчке Државе)',
+      short: 'енглески (САД)',
     ),
     'enm': Language(
       'enm',
@@ -733,6 +785,10 @@ class LanguagesSr extends Languages {
       'haw',
       'хавајски',
     ),
+    'hax': Language(
+      'hax',
+      'јужни хаида',
+    ),
     'he': Language(
       'he',
       'хебрејски',
@@ -740,6 +796,11 @@ class LanguagesSr extends Languages {
     'hi': Language(
       'hi',
       'хинди',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'хинди (латиница)',
+      variant: 'хинглиш',
     ),
     'hil': Language(
       'hil',
@@ -776,6 +837,10 @@ class LanguagesSr extends Languages {
     'hup': Language(
       'hup',
       'хупа',
+    ),
+    'hur': Language(
+      'hur',
+      'халкомелем',
     ),
     'hy': Language(
       'hy',
@@ -816,6 +881,10 @@ class LanguagesSr extends Languages {
     'ik': Language(
       'ik',
       'инупик',
+    ),
+    'ikt': Language(
+      'ikt',
+      'западноканадски инуктитут',
     ),
     'ilo': Language(
       'ilo',
@@ -923,7 +992,7 @@ class LanguagesSr extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'каинганг',
     ),
     'kha': Language(
       'kha',
@@ -1049,6 +1118,10 @@ class LanguagesSr extends Languages {
       'kw',
       'корнволски',
     ),
+    'kwk': Language(
+      'kwk',
+      'кваквала',
+    ),
     'ky': Language(
       'ky',
       'киргиски',
@@ -1093,6 +1166,10 @@ class LanguagesSr extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'лилут',
+    ),
     'lkt': Language(
       'lkt',
       'лакота',
@@ -1120,6 +1197,10 @@ class LanguagesSr extends Languages {
     'lrc': Language(
       'lrc',
       'северни лури',
+    ),
+    'lsm': Language(
+      'lsm',
+      'самиа',
     ),
     'lt': Language(
       'lt',
@@ -1252,6 +1333,10 @@ class LanguagesSr extends Languages {
     'mni': Language(
       'mni',
       'манипурски',
+    ),
+    'moe': Language(
+      'moe',
+      'инуајмун',
     ),
     'moh': Language(
       'moh',
@@ -1437,6 +1522,26 @@ class LanguagesSr extends Languages {
       'oj',
       'оџибве',
     ),
+    'ojb': Language(
+      'ojb',
+      'северозападни оџибва',
+    ),
+    'ojc': Language(
+      'ojc',
+      'централни оџибва',
+    ),
+    'ojs': Language(
+      'ojs',
+      'оџикри',
+    ),
+    'ojw': Language(
+      'ojw',
+      'западни оџибва',
+    ),
+    'oka': Language(
+      'oka',
+      'оканган',
+    ),
     'om': Language(
       'om',
       'оромо',
@@ -1497,6 +1602,10 @@ class LanguagesSr extends Languages {
       'pi',
       'пали',
     ),
+    'pis': Language(
+      'pis',
+      'пиџин',
+    ),
     'pl': Language(
       'pl',
       'пољски',
@@ -1504,6 +1613,10 @@ class LanguagesSr extends Languages {
     'pon': Language(
       'pon',
       'понпејски',
+    ),
+    'pqm': Language(
+      'pqm',
+      'малисепасамакводи',
     ),
     'prg': Language(
       'prg',
@@ -1702,6 +1815,10 @@ class LanguagesSr extends Languages {
       'sl',
       'словеначки',
     ),
+    'slh': Language(
+      'slh',
+      'јужни лашутсид',
+    ),
     'sm': Language(
       'sm',
       'самоански',
@@ -1766,6 +1883,10 @@ class LanguagesSr extends Languages {
       'st',
       'сесото',
     ),
+    'str': Language(
+      'str',
+      'стреицсалиш',
+    ),
     'su': Language(
       'su',
       'сундански',
@@ -1810,6 +1931,10 @@ class LanguagesSr extends Languages {
       'ta',
       'тамилски',
     ),
+    'tce': Language(
+      'tce',
+      'јужни тачон',
+    ),
     'te': Language(
       'te',
       'телугу',
@@ -1834,9 +1959,17 @@ class LanguagesSr extends Languages {
       'tg',
       'таџички',
     ),
+    'tgx': Language(
+      'tgx',
+      'тагиш',
+    ),
     'th': Language(
       'th',
       'тајски',
+    ),
+    'tht': Language(
+      'tht',
+      'тахлтан',
     ),
     'ti': Language(
       'ti',
@@ -1886,6 +2019,10 @@ class LanguagesSr extends Languages {
       'tog',
       'њаса тонга',
     ),
+    'tok': Language(
+      'tok',
+      'токипона',
+    ),
     'tpi': Language(
       'tpi',
       'ток писин',
@@ -1909,6 +2046,10 @@ class LanguagesSr extends Languages {
     'tt': Language(
       'tt',
       'татарски',
+    ),
+    'ttm': Language(
+      'ttm',
+      'северни тучон',
     ),
     'tum': Language(
       'tum',
@@ -1978,6 +2119,10 @@ class LanguagesSr extends Languages {
       've',
       'венда',
     ),
+    'vec': Language(
+      'vec',
+      'vec',
+    ),
     'vi': Language(
       'vi',
       'вијетнамски',
@@ -2022,6 +2167,10 @@ class LanguagesSr extends Languages {
       'wo',
       'волоф',
     ),
+    'wuu': Language(
+      'wuu',
+      'ву кинески',
+    ),
     'xal': Language(
       'xal',
       'калмички',
@@ -2060,7 +2209,7 @@ class LanguagesSr extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'нингату',
     ),
     'yue': Language(
       'yue',
@@ -3391,6 +3540,31 @@ class UnitsSr implements Units {
           one: '{0} г',
           few: '{0} г',
           other: '{0} г',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'квартали',
+          one: '{0} квартал',
+          few: '{0} квартала',
+          other: '{0} квартала',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'кв',
+          one: '{0} кв',
+          few: '{0} кв',
+          other: '{0} кв',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'кв',
+          one: '{0} к',
+          few: '{0} к',
+          other: '{0} к',
         ),
       );
 
@@ -4932,7 +5106,7 @@ class UnitsSr implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'метричке тоне',
@@ -8607,6 +8781,7 @@ class TerritoriesSr implements Territories {
     'NZ': Territory(
       'NZ',
       'Нови Зеланд',
+      variant: 'Нови Зеланд',
     ),
     'OM': Territory(
       'OM',
@@ -8834,6 +9009,7 @@ class TerritoriesSr implements Territories {
     'TR': Territory(
       'TR',
       'Турска',
+      variant: 'Турска',
     ),
     'TT': Territory(
       'TT',

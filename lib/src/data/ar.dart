@@ -108,6 +108,10 @@ class LanguagesAr extends Languages {
       'ang',
       'الإنجليزية القديمة',
     ),
+    'ann': Language(
+      'ann',
+      'أوبلو',
+    ),
     'anp': Language(
       'anp',
       'الأنجيكا',
@@ -152,6 +156,10 @@ class LanguagesAr extends Languages {
     'ast': Language(
       'ast',
       'الأسترية',
+    ),
+    'atj': Language(
+      'atj',
+      'الأتيكاميكو',
     ),
     'av': Language(
       'av',
@@ -217,6 +225,10 @@ class LanguagesAr extends Languages {
     'bg': Language(
       'bg',
       'البلغارية',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -380,6 +392,10 @@ class LanguagesAr extends Languages {
       variant: 'السورانية الكردية',
       menu: 'الكردية، السورانية',
     ),
+    'clc': Language(
+      'clc',
+      'تسيلكوتين',
+    ),
     'co': Language(
       'co',
       'الكورسيكية',
@@ -392,9 +408,33 @@ class LanguagesAr extends Languages {
       'cr',
       'الكرى',
     ),
+    'crg': Language(
+      'crg',
+      'الميتشيف',
+    ),
     'crh': Language(
       'crh',
       'لغة تتار القرم',
+    ),
+    'crj': Language(
+      'crj',
+      'الكري الجنوب شرقية',
+    ),
+    'crk': Language(
+      'crk',
+      'البلينز-كري',
+    ),
+    'crl': Language(
+      'crl',
+      'الكري شمال الشرقية',
+    ),
+    'crm': Language(
+      'crm',
+      'الموس-كري',
+    ),
+    'crr': Language(
+      'crr',
+      'الألغونكوية كارولينا',
     ),
     'crs': Language(
       'crs',
@@ -407,6 +447,10 @@ class LanguagesAr extends Languages {
     'csb': Language(
       'csb',
       'الكاشبايان',
+    ),
+    'csw': Language(
+      'csw',
+      'السوامبي-كري',
     ),
     'cu': Language(
       'cu',
@@ -778,6 +822,10 @@ class LanguagesAr extends Languages {
       'haw',
       'لغة هاواي',
     ),
+    'hax': Language(
+      'hax',
+      'هايدا الجنوبية',
+    ),
     'he': Language(
       'he',
       'العبرية',
@@ -785,6 +833,11 @@ class LanguagesAr extends Languages {
     'hi': Language(
       'hi',
       'الهندية',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'الهندية (اللاتينية)',
+      variant: 'الهنجليزية',
     ),
     'hil': Language(
       'hil',
@@ -826,6 +879,10 @@ class LanguagesAr extends Languages {
       'hup',
       'الهبا',
     ),
+    'hur': Language(
+      'hur',
+      'الهالكوميليم',
+    ),
     'hy': Language(
       'hy',
       'الأرمنية',
@@ -865,6 +922,10 @@ class LanguagesAr extends Languages {
     'ik': Language(
       'ik',
       'الإينبياك',
+    ),
+    'ikt': Language(
+      'ikt',
+      'الإنكتيتوتية الكندية الغربية',
     ),
     'ilo': Language(
       'ilo',
@@ -976,7 +1037,7 @@ class LanguagesAr extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'الكاينغانغ',
     ),
     'kha': Language(
       'kha',
@@ -1098,6 +1159,10 @@ class LanguagesAr extends Languages {
       'kw',
       'الكورنية',
     ),
+    'kwk': Language(
+      'kwk',
+      'الكواكوالا',
+    ),
     'ky': Language(
       'ky',
       'القيرغيزية',
@@ -1142,6 +1207,10 @@ class LanguagesAr extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'الليلويتية',
+    ),
     'lkt': Language(
       'lkt',
       'لاكوتا',
@@ -1169,6 +1238,10 @@ class LanguagesAr extends Languages {
     'lrc': Language(
       'lrc',
       'اللرية الشمالية',
+    ),
+    'lsm': Language(
+      'lsm',
+      'الساميا',
     ),
     'lt': Language(
       'lt',
@@ -1305,6 +1378,10 @@ class LanguagesAr extends Languages {
     'mni': Language(
       'mni',
       'المانيبورية',
+    ),
+    'moe': Language(
+      'moe',
+      'إينو-ايمون',
     ),
     'moh': Language(
       'moh',
@@ -1494,6 +1571,26 @@ class LanguagesAr extends Languages {
       'oj',
       'الأوجيبوا',
     ),
+    'ojb': Language(
+      'ojb',
+      'أوجيبوا الشمالية الغربية',
+    ),
+    'ojc': Language(
+      'ojc',
+      'أوجيبوا الوسطى',
+    ),
+    'ojs': Language(
+      'ojs',
+      'الأوجي-كري',
+    ),
+    'ojw': Language(
+      'ojw',
+      'الأوجيبوا الغربية',
+    ),
+    'oka': Language(
+      'oka',
+      'الأوكاناغانية',
+    ),
     'om': Language(
       'om',
       'الأورومية',
@@ -1554,6 +1651,10 @@ class LanguagesAr extends Languages {
       'pi',
       'البالية',
     ),
+    'pis': Language(
+      'pis',
+      'بيجين',
+    ),
     'pl': Language(
       'pl',
       'البولندية',
@@ -1561,6 +1662,10 @@ class LanguagesAr extends Languages {
     'pon': Language(
       'pon',
       'البوهنبيايان',
+    ),
+    'pqm': Language(
+      'pqm',
+      'الماليزيت-باساماكودي',
     ),
     'prg': Language(
       'prg',
@@ -1767,6 +1872,10 @@ class LanguagesAr extends Languages {
       'sl',
       'السلوفانية',
     ),
+    'slh': Language(
+      'slh',
+      'لوشوتسيد الجنوبية',
+    ),
     'sm': Language(
       'sm',
       'الساموائية',
@@ -1831,6 +1940,10 @@ class LanguagesAr extends Languages {
       'st',
       'السوتو الجنوبية',
     ),
+    'str': Language(
+      'str',
+      'سترايتس ساليش',
+    ),
     'su': Language(
       'su',
       'السوندانية',
@@ -1875,6 +1988,10 @@ class LanguagesAr extends Languages {
       'ta',
       'التاميلية',
     ),
+    'tce': Language(
+      'tce',
+      'التوتشون الجنوبية',
+    ),
     'te': Language(
       'te',
       'التيلوغوية',
@@ -1899,9 +2016,17 @@ class LanguagesAr extends Languages {
       'tg',
       'الطاجيكية',
     ),
+    'tgx': Language(
+      'tgx',
+      'التاغيش',
+    ),
     'th': Language(
       'th',
       'التايلاندية',
+    ),
+    'tht': Language(
+      'tht',
+      'التالتان',
     ),
     'ti': Language(
       'ti',
@@ -1951,6 +2076,10 @@ class LanguagesAr extends Languages {
       'tog',
       'تونجا - نياسا',
     ),
+    'tok': Language(
+      'tok',
+      'التوكي-بونا',
+    ),
     'tpi': Language(
       'tpi',
       'التوك بيسين',
@@ -1974,6 +2103,10 @@ class LanguagesAr extends Languages {
     'tt': Language(
       'tt',
       'التترية',
+    ),
+    'ttm': Language(
+      'ttm',
+      'التوتشون الشمالية',
     ),
     'tum': Language(
       'tum',
@@ -2043,6 +2176,10 @@ class LanguagesAr extends Languages {
     've': Language(
       've',
       'الفيندا',
+    ),
+    'vec': Language(
+      'vec',
+      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2130,7 +2267,7 @@ class LanguagesAr extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'النيينجاتو',
     ),
     'yue': Language(
       'yue',
@@ -2535,7 +2672,7 @@ class UnitsAr implements Units {
           'درجة',
           zero: '{0} درجة',
           one: '{0} درجة',
-          two: 'درجتان ({0})',
+          two: 'درجتان',
           few: '{0} درجات',
           many: '{0} درجة',
           other: '{0} درجة',
@@ -2601,12 +2738,12 @@ class UnitsAr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ث قوسية',
-          zero: '{0}″',
-          one: '{0}″',
-          two: '{0}″',
-          few: '{0}″',
-          many: '{0}″',
-          other: '{0}″',
+          zero: '{0} ث قوسية',
+          one: '{0} ث قوسية',
+          two: '{0} ث قوسية',
+          few: '{0} ث قوسية',
+          many: '{0} ث قوسية',
+          other: '{0} ث قوسية',
         ),
       );
 
@@ -3855,6 +3992,40 @@ class UnitsAr implements Units {
           few: '{0} سنة',
           many: '{0} سنة',
           other: '{0} سنة',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'أرباع',
+          zero: '{0} ربع سنوي',
+          one: 'ربع سنوي',
+          two: 'ربعان سنويان',
+          few: '{0} أرباع سنوية',
+          many: '{0} ربعًا سنويًا',
+          other: '{0} ربع سنوي',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ربع سنوي',
+          zero: '{0} ربع',
+          one: 'ربع',
+          two: 'ربعان',
+          few: '{0} أرباع',
+          many: '{0} ربعًا',
+          other: '{0} ربع',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ربع',
+          zero: '{0} ربع',
+          one: 'ربع',
+          two: 'ربعان',
+          few: '{0} أرباع',
+          many: '{0} ربعًا',
+          other: '{0} ربع',
         ),
       );
 
@@ -6001,7 +6172,7 @@ class UnitsAr implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'طن متري',
@@ -10685,6 +10856,7 @@ class TerritoriesAr implements Territories {
     'NZ': Territory(
       'NZ',
       'نيوزيلندا',
+      variant: 'نيوزيلندا',
     ),
     'OM': Territory(
       'OM',
@@ -10912,6 +11084,7 @@ class TerritoriesAr implements Territories {
     'TR': Territory(
       'TR',
       'تركيا',
+      variant: 'تركيا',
     ),
     'TT': Territory(
       'TT',

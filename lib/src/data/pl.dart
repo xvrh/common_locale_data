@@ -120,6 +120,10 @@ class LanguagesPl extends Languages {
       'ang',
       'staroangielski',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -183,6 +187,10 @@ class LanguagesPl extends Languages {
     'ast': Language(
       'ast',
       'asturyjski',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekw',
     ),
     'av': Language(
       'av',
@@ -268,6 +276,10 @@ class LanguagesPl extends Languages {
     'bg': Language(
       'bg',
       'bułgarski',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -447,6 +459,10 @@ class LanguagesPl extends Languages {
       variant: 'sorani',
       menu: 'kurdyjski sorani',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'korsykański',
@@ -463,9 +479,33 @@ class LanguagesPl extends Languages {
       'cr',
       'kri',
     ),
+    'crg': Language(
+      'crg',
+      'miszif',
+    ),
     'crh': Language(
       'crh',
       'krymskotatarski',
+    ),
+    'crj': Language(
+      'crj',
+      'kri południowo-wschodni',
+    ),
+    'crk': Language(
+      'crk',
+      'kri równinny',
+    ),
+    'crl': Language(
+      'crl',
+      'kri północno-wschodni',
+    ),
+    'crm': Language(
+      'crm',
+      'kri Moose',
+    ),
+    'crr': Language(
+      'crr',
+      'algonkiński (Karolina Północna)',
     ),
     'crs': Language(
       'crs',
@@ -478,6 +518,10 @@ class LanguagesPl extends Languages {
     'csb': Language(
       'csb',
       'kaszubski',
+    ),
+    'csw': Language(
+      'csw',
+      'kri bagienny',
     ),
     'cu': Language(
       'cu',
@@ -626,12 +670,12 @@ class LanguagesPl extends Languages {
     'en-GB': Language(
       'en-GB',
       'angielski brytyjski',
-      short: 'angielski brytyjski',
+      short: 'angielski (Wlk. Bryt.)',
     ),
     'en-US': Language(
       'en-US',
       'angielski amerykański',
-      short: 'angielski amerykański',
+      short: 'angielski (USA)',
     ),
     'enm': Language(
       'enm',
@@ -893,6 +937,10 @@ class LanguagesPl extends Languages {
       'haw',
       'hawajski',
     ),
+    'hax': Language(
+      'hax',
+      'haida południowy',
+    ),
     'he': Language(
       'he',
       'hebrajski',
@@ -900,6 +948,11 @@ class LanguagesPl extends Languages {
     'hi': Language(
       'hi',
       'hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindi (alfabet łaciński)',
+      variant: 'hinglish',
     ),
     'hif': Language(
       'hif',
@@ -945,6 +998,10 @@ class LanguagesPl extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'ormiański',
@@ -984,6 +1041,10 @@ class LanguagesPl extends Languages {
     'ik': Language(
       'ik',
       'inupiak',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuktitut zachodniokanadyjski',
     ),
     'ilo': Language(
       'ilo',
@@ -1249,6 +1310,10 @@ class LanguagesPl extends Languages {
       'kw',
       'kornijski',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwakiutl',
+    ),
     'ky': Language(
       'ky',
       'kirgiski',
@@ -1297,6 +1362,10 @@ class LanguagesPl extends Languages {
       'lij',
       'liguryjski',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'liv': Language(
       'liv',
       'liwski',
@@ -1332,6 +1401,10 @@ class LanguagesPl extends Languages {
     'lrc': Language(
       'lrc',
       'luryjski północny',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamia',
     ),
     'lt': Language(
       'lt',
@@ -1484,6 +1557,10 @@ class LanguagesPl extends Languages {
     'mni': Language(
       'mni',
       'manipuri',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1693,6 +1770,26 @@ class LanguagesPl extends Languages {
       'oj',
       'odżibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'odżibwe północno-zachodni',
+    ),
+    'ojc': Language(
+      'ojc',
+      'odżibwe centralny',
+    ),
+    'ojs': Language(
+      'ojs',
+      'odżi-kri',
+    ),
+    'ojw': Language(
+      'ojw',
+      'odżibwe zachodni',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagan',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1769,6 +1866,10 @@ class LanguagesPl extends Languages {
       'pi',
       'palijski',
     ),
+    'pis': Language(
+      'pis',
+      'pijin',
+    ),
     'pl': Language(
       'pl',
       'polski',
@@ -1784,6 +1885,10 @@ class LanguagesPl extends Languages {
     'pon': Language(
       'pon',
       'ponpejski',
+    ),
+    'pqm': Language(
+      'pqm',
+      'malecite-passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -2030,6 +2135,10 @@ class LanguagesPl extends Languages {
       'sl',
       'słoweński',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed południowy',
+    ),
     'sli': Language(
       'sli',
       'dolnośląski',
@@ -2106,6 +2215,10 @@ class LanguagesPl extends Languages {
       'stq',
       'fryzyjski saterlandzki',
     ),
+    'str': Language(
+      'str',
+      'salisz',
+    ),
     'su': Language(
       'su',
       'sundajski',
@@ -2154,6 +2267,10 @@ class LanguagesPl extends Languages {
       'ta',
       'tamilski',
     ),
+    'tce': Language(
+      'tce',
+      'tutchone południowy',
+    ),
     'tcy': Language(
       'tcy',
       'tulu',
@@ -2182,9 +2299,17 @@ class LanguagesPl extends Languages {
       'tg',
       'tadżycki',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'tajski',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -2242,6 +2367,10 @@ class LanguagesPl extends Languages {
       'tog',
       'tonga (Niasa)',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -2273,6 +2402,10 @@ class LanguagesPl extends Languages {
     'tt': Language(
       'tt',
       'tatarski',
+    ),
+    'ttm': Language(
+      'ttm',
+      'tutchone północny',
     ),
     'ttt': Language(
       'ttt',
@@ -3803,6 +3936,34 @@ class UnitsPl implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kwartały',
+          one: '{0} kwartał',
+          few: '{0} kwartały',
+          many: '{0} kwartałów',
+          other: '{0} kwartału',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kw.',
+          one: '{0} kw.',
+          few: '{0} kw.',
+          many: '{0} kw.',
+          other: '{0} kw.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kw.',
+          one: '{0} kw.',
+          few: '{0} kw.',
+          many: '{0} kw.',
+          other: '{0} kw.',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -5327,7 +5488,7 @@ class UnitsPl implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tony',
@@ -5512,7 +5673,7 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'funty',
+          'lb',
           one: '{0} funt',
           few: '{0} funty',
           many: '{0} funtów',
@@ -5584,7 +5745,7 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'karaty',
+          'kt',
           one: '{0} kt',
           few: '{0} kt',
           many: '{0} kt',
@@ -9213,6 +9374,7 @@ class TerritoriesPl implements Territories {
     'NZ': Territory(
       'NZ',
       'Nowa Zelandia',
+      variant: 'Nowa Zelandia',
     ),
     'OM': Territory(
       'OM',
@@ -9440,6 +9602,7 @@ class TerritoriesPl implements Territories {
     'TR': Territory(
       'TR',
       'Turcja',
+      variant: 'Turcja',
     ),
     'TT': Territory(
       'TT',

@@ -120,6 +120,10 @@ class LanguagesCs extends Languages {
       'ang',
       'staroangličtina',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -183,6 +187,10 @@ class LanguagesCs extends Languages {
     'ast': Language(
       'ast',
       'asturština',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekština',
     ),
     'av': Language(
       'av',
@@ -268,6 +276,10 @@ class LanguagesCs extends Languages {
     'bg': Language(
       'bg',
       'bulharština',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -447,6 +459,10 @@ class LanguagesCs extends Languages {
       variant: 'kurdština (sorání)',
       menu: 'kurdština (sorání)',
     ),
+    'clc': Language(
+      'clc',
+      'čilkotinština',
+    ),
     'co': Language(
       'co',
       'korsičtina',
@@ -463,9 +479,33 @@ class LanguagesCs extends Languages {
       'cr',
       'kríjština',
     ),
+    'crg': Language(
+      'crg',
+      'mičif',
+    ),
     'crh': Language(
       'crh',
       'tatarština (krymská)',
+    ),
+    'crj': Language(
+      'crj',
+      'kríjština (jihovýchodní)',
+    ),
+    'crk': Language(
+      'crk',
+      'kríjština (z plání)',
+    ),
+    'crl': Language(
+      'crl',
+      'kríjština (severovýchodní)',
+    ),
+    'crm': Language(
+      'crm',
+      'kríjština (Moose)',
+    ),
+    'crr': Language(
+      'crr',
+      'algonkinština (Karolína)',
     ),
     'crs': Language(
       'crs',
@@ -478,6 +518,10 @@ class LanguagesCs extends Languages {
     'csb': Language(
       'csb',
       'kašubština',
+    ),
+    'csw': Language(
+      'csw',
+      'kríjština (z bažin)',
     ),
     'cu': Language(
       'cu',
@@ -893,6 +937,10 @@ class LanguagesCs extends Languages {
       'haw',
       'havajština',
     ),
+    'hax': Language(
+      'hax',
+      'haidština (jižní)',
+    ),
     'he': Language(
       'he',
       'hebrejština',
@@ -900,6 +948,11 @@ class LanguagesCs extends Languages {
     'hi': Language(
       'hi',
       'hindština',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindština (latinka)',
+      variant: 'hingliš',
     ),
     'hif': Language(
       'hif',
@@ -945,6 +998,10 @@ class LanguagesCs extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'arménština',
@@ -984,6 +1041,10 @@ class LanguagesCs extends Languages {
     'ik': Language(
       'ik',
       'inupiakština',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuktitutština (západokanadská)',
     ),
     'ilo': Language(
       'ilo',
@@ -1249,6 +1310,10 @@ class LanguagesCs extends Languages {
       'kw',
       'kornština',
     ),
+    'kwk': Language(
+      'kwk',
+      'kvakiutština',
+    ),
     'ky': Language(
       'ky',
       'kyrgyzština',
@@ -1297,6 +1362,10 @@ class LanguagesCs extends Languages {
       'lij',
       'ligurština',
     ),
+    'lil': Language(
+      'lil',
+      'lillooetština',
+    ),
     'liv': Language(
       'liv',
       'livonština',
@@ -1332,6 +1401,10 @@ class LanguagesCs extends Languages {
     'lrc': Language(
       'lrc',
       'lúrština (severní)',
+    ),
+    'lsm': Language(
+      'lsm',
+      'samia',
     ),
     'lt': Language(
       'lt',
@@ -1484,6 +1557,10 @@ class LanguagesCs extends Languages {
     'mni': Language(
       'mni',
       'manipurština',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1693,6 +1770,26 @@ class LanguagesCs extends Languages {
       'oj',
       'odžibvejština',
     ),
+    'ojb': Language(
+      'ojb',
+      'odžibvejština (severozápadní)',
+    ),
+    'ojc': Language(
+      'ojc',
+      'odžibvejština (střední)',
+    ),
+    'ojs': Language(
+      'ojs',
+      'odžibvejština (severní)',
+    ),
+    'ojw': Language(
+      'ojw',
+      'odžibvejština (západní)',
+    ),
+    'oka': Language(
+      'oka',
+      'okanaganština',
+    ),
     'om': Language(
       'om',
       'oromština',
@@ -1769,6 +1866,10 @@ class LanguagesCs extends Languages {
       'pi',
       'pálí',
     ),
+    'pis': Language(
+      'pis',
+      'pidžin (Šalomounovy ostrovy)',
+    ),
     'pl': Language(
       'pl',
       'polština',
@@ -1784,6 +1885,10 @@ class LanguagesCs extends Languages {
     'pon': Language(
       'pon',
       'pohnpeiština',
+    ),
+    'pqm': Language(
+      'pqm',
+      'malesitština-passamaquoddština',
     ),
     'prg': Language(
       'prg',
@@ -2029,6 +2134,10 @@ class LanguagesCs extends Languages {
       'sl',
       'slovinština',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed (jižní)',
+    ),
     'sli': Language(
       'sli',
       'němčina (slezská)',
@@ -2105,6 +2214,10 @@ class LanguagesCs extends Languages {
       'stq',
       'fríština (saterlandská)',
     ),
+    'str': Language(
+      'str',
+      'saliština (z úžin)',
+    ),
     'su': Language(
       'su',
       'sundština',
@@ -2153,6 +2266,10 @@ class LanguagesCs extends Languages {
       'ta',
       'tamilština',
     ),
+    'tce': Language(
+      'tce',
+      'tutčonština (jižní)',
+    ),
     'tcy': Language(
       'tcy',
       'tuluština',
@@ -2181,9 +2298,17 @@ class LanguagesCs extends Languages {
       'tg',
       'tádžičtina',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagiš',
+    ),
     'th': Language(
       'th',
       'thajština',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -2241,6 +2366,10 @@ class LanguagesCs extends Languages {
       'tog',
       'tonžština (nyasa)',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -2272,6 +2401,10 @@ class LanguagesCs extends Languages {
     'tt': Language(
       'tt',
       'tatarština',
+    ),
+    'ttm': Language(
+      'ttm',
+      'tutčonština (severní)',
     ),
     'ttt': Language(
       'ttt',
@@ -3897,11 +4030,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'desetil.',
-          one: '{0} desetil.',
-          few: '{0} desetil.',
-          many: '{0} desetil.',
-          other: '{0} desetil.',
+          'dek.',
+          one: '{0} dek.',
+          few: '{0} dek.',
+          many: '{0} dek.',
+          other: '{0} dek.',
         ),
       );
 
@@ -3925,11 +4058,39 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'r',
-          one: '{0} r',
-          few: '{0} r',
-          many: '{0} r',
-          other: '{0} r',
+          'r.',
+          one: '{0} r.',
+          few: '{0} r.',
+          many: '{0} r.',
+          other: '{0} l.',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'čtvrtletí',
+          one: '{0} čtvrtletí',
+          few: '{0} čtvrtletí',
+          many: '{0} čtvrtletí',
+          other: '{0} čtvrtletí',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'čtvrtl.',
+          one: '{0} čtvrtl.',
+          few: '{0} čtvrtl.',
+          many: '{0} čtvrtl.',
+          other: '{0} čtvrtl.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kv.',
+          one: '{0} kv.',
+          few: '{0} kv.',
+          many: '{0} kv.',
+          other: '{0} kv.',
         ),
       );
 
@@ -3953,11 +4114,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'm',
-          one: '{0} m',
-          few: '{0} m',
-          many: '{0} m',
-          other: '{0} m',
+          'm.',
+          one: '{0} m.',
+          few: '{0} m.',
+          many: '{0} m.',
+          other: '{0} m.',
         ),
       );
 
@@ -3981,11 +4142,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          't',
-          one: '{0} t',
-          few: '{0} t',
-          many: '{0} t',
-          other: '{0} t',
+          't.',
+          one: '{0} t.',
+          few: '{0} t.',
+          many: '{0} t.',
+          other: '{0} t.',
         ),
       );
 
@@ -4009,11 +4170,11 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'd',
-          one: '{0} d',
-          few: '{0} d',
-          many: '{0} d',
-          other: '{0} d',
+          'd.',
+          one: '{0} d.',
+          few: '{0} d.',
+          many: '{0} d.',
+          other: '{0} d.',
         ),
       );
 
@@ -5698,7 +5859,7 @@ class UnitsCs implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tuny',
@@ -9752,6 +9913,7 @@ class TerritoriesCs implements Territories {
     'NZ': Territory(
       'NZ',
       'Nový Zéland',
+      variant: 'Aotearoa – Nový Zéland',
     ),
     'OM': Territory(
       'OM',
@@ -9979,6 +10141,7 @@ class TerritoriesCs implements Territories {
     'TR': Territory(
       'TR',
       'Turecko',
+      variant: 'Turecko',
     ),
     'TT': Territory(
       'TT',

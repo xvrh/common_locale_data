@@ -120,6 +120,10 @@ class LanguagesEt extends Languages {
       'ang',
       'vanainglise',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -152,6 +156,10 @@ class LanguagesEt extends Languages {
       'arq',
       'Alžeeria araabia',
     ),
+    'ars': Language(
+      'ars',
+      'Najdi araabia',
+    ),
     'arw': Language(
       'arw',
       'aravaki',
@@ -179,6 +187,10 @@ class LanguagesEt extends Languages {
     'ast': Language(
       'ast',
       'astuuria',
+    ),
+    'atj': Language(
+      'atj',
+      'atikameki',
     ),
     'av': Language(
       'av',
@@ -260,6 +272,10 @@ class LanguagesEt extends Languages {
     'bg': Language(
       'bg',
       'bulgaaria',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -439,6 +455,10 @@ class LanguagesEt extends Languages {
       variant: 'keskkurdi',
       menu: 'kurdi (keskkurdi)',
     ),
+    'clc': Language(
+      'clc',
+      'tšilkotini',
+    ),
     'co': Language(
       'co',
       'korsika',
@@ -455,9 +475,33 @@ class LanguagesEt extends Languages {
       'cr',
       'krii',
     ),
+    'crg': Language(
+      'crg',
+      'michifi',
+    ),
     'crh': Language(
       'crh',
       'krimmitatari',
+    ),
+    'crj': Language(
+      'crj',
+      'lõuna-idakrii',
+    ),
+    'crk': Language(
+      'crk',
+      'tasandikukrii',
+    ),
+    'crl': Language(
+      'crl',
+      'põhja-idakrii',
+    ),
+    'crm': Language(
+      'crm',
+      'põdrakrii',
+    ),
+    'crr': Language(
+      'crr',
+      'Carolina algonkini',
     ),
     'crs': Language(
       'crs',
@@ -470,6 +514,10 @@ class LanguagesEt extends Languages {
     'csb': Language(
       'csb',
       'kašuubi',
+    ),
+    'csw': Language(
+      'csw',
+      'sookrii',
     ),
     'cu': Language(
       'cu',
@@ -761,6 +809,10 @@ class LanguagesEt extends Languages {
       'ga',
       'iiri',
     ),
+    'gaa': Language(
+      'gaa',
+      'gaa',
+    ),
     'gag': Language(
       'gag',
       'gagauusi',
@@ -873,6 +925,10 @@ class LanguagesEt extends Languages {
       'haw',
       'havai',
     ),
+    'hax': Language(
+      'hax',
+      'lõunahaida',
+    ),
     'he': Language(
       'he',
       'heebrea',
@@ -880,6 +936,11 @@ class LanguagesEt extends Languages {
     'hi': Language(
       'hi',
       'hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindi (ladina)',
+      variant: 'hinglishi',
     ),
     'hif': Language(
       'hif',
@@ -925,6 +986,10 @@ class LanguagesEt extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelemi',
+    ),
     'hy': Language(
       'hy',
       'armeenia',
@@ -964,6 +1029,10 @@ class LanguagesEt extends Languages {
     'ik': Language(
       'ik',
       'injupiaki',
+    ),
+    'ikt': Language(
+      'ikt',
+      'Lääne-Kanada inuktituti',
     ),
     'ilo': Language(
       'ilo',
@@ -1225,6 +1294,10 @@ class LanguagesEt extends Languages {
       'kw',
       'korni',
     ),
+    'kwk': Language(
+      'kwk',
+      'kvakvala',
+    ),
     'ky': Language(
       'ky',
       'kirgiisi',
@@ -1269,6 +1342,10 @@ class LanguagesEt extends Languages {
       'lij',
       'liguuri',
     ),
+    'lil': Language(
+      'lil',
+      'lillueti',
+    ),
     'liv': Language(
       'liv',
       'liivi',
@@ -1304,6 +1381,10 @@ class LanguagesEt extends Languages {
     'lrc': Language(
       'lrc',
       'põhjaluri',
+    ),
+    'lsm': Language(
+      'lsm',
+      'samia',
     ),
     'lt': Language(
       'lt',
@@ -1456,6 +1537,10 @@ class LanguagesEt extends Languages {
     'mni': Language(
       'mni',
       'manipuri',
+    ),
+    'moe': Language(
+      'moe',
+      'innu',
     ),
     'moh': Language(
       'moh',
@@ -1665,6 +1750,26 @@ class LanguagesEt extends Languages {
       'oj',
       'odžibvei',
     ),
+    'ojb': Language(
+      'ojb',
+      'loodeodžibvei',
+    ),
+    'ojc': Language(
+      'ojc',
+      'keskodžibvei',
+    ),
+    'ojs': Language(
+      'ojs',
+      'Severni odžibvei',
+    ),
+    'ojw': Language(
+      'ojw',
+      'lääneodžibvei',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagani',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1741,6 +1846,10 @@ class LanguagesEt extends Languages {
       'pi',
       'paali',
     ),
+    'pis': Language(
+      'pis',
+      'pijini',
+    ),
     'pl': Language(
       'pl',
       'poola',
@@ -1756,6 +1865,10 @@ class LanguagesEt extends Languages {
     'pon': Language(
       'pon',
       'poonpei',
+    ),
+    'pqm': Language(
+      'pqm',
+      'passamakodi',
     ),
     'prg': Language(
       'prg',
@@ -1993,6 +2106,10 @@ class LanguagesEt extends Languages {
       'sl',
       'sloveeni',
     ),
+    'slh': Language(
+      'slh',
+      'Lõuna-Puget-Soundi sališi',
+    ),
     'sli': Language(
       'sli',
       'alamsileesia',
@@ -2069,6 +2186,10 @@ class LanguagesEt extends Languages {
       'stq',
       'saterfriisi',
     ),
+    'str': Language(
+      'str',
+      'väinasališi',
+    ),
     'su': Language(
       'su',
       'sunda',
@@ -2117,6 +2238,10 @@ class LanguagesEt extends Languages {
       'ta',
       'tamili',
     ),
+    'tce': Language(
+      'tce',
+      'lõunatutšoni',
+    ),
     'tcy': Language(
       'tcy',
       'tulu',
@@ -2145,9 +2270,17 @@ class LanguagesEt extends Languages {
       'tg',
       'tadžiki',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagishi',
+    ),
     'th': Language(
       'th',
       'tai',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltani',
     ),
     'ti': Language(
       'ti',
@@ -2205,6 +2338,10 @@ class LanguagesEt extends Languages {
       'tog',
       'tšitonga',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'uusmelaneesia',
@@ -2236,6 +2373,10 @@ class LanguagesEt extends Languages {
     'tt': Language(
       'tt',
       'tatari',
+    ),
+    'ttm': Language(
+      'ttm',
+      'põhjatutšoni',
     ),
     'ttt': Language(
       'ttt',
@@ -3634,6 +3775,28 @@ class UnitsEt implements Units {
       );
 
   @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kvartalid',
+          one: '{0} kvartal',
+          other: '{0} kvartalit',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kv',
+          one: '{0} kv',
+          other: '{0} kv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kv',
+          one: '{0} kv',
+          other: '{0} kv',
+        ),
+      );
+
+  @override
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
@@ -5010,7 +5173,7 @@ class UnitsEt implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tonnid',
@@ -8426,6 +8589,7 @@ class TerritoriesEt implements Territories {
     'NZ': Territory(
       'NZ',
       'Uus-Meremaa',
+      variant: 'Aotearoa Uus-Meremaa',
     ),
     'OM': Territory(
       'OM',
@@ -8653,6 +8817,7 @@ class TerritoriesEt implements Territories {
     'TR': Territory(
       'TR',
       'Türgi',
+      variant: 'Türgi',
     ),
     'TT': Territory(
       'TT',

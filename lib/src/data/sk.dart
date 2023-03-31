@@ -108,6 +108,10 @@ class LanguagesSk extends Languages {
       'ang',
       'stará angličtina',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -151,6 +155,10 @@ class LanguagesSk extends Languages {
     'ast': Language(
       'ast',
       'astúrčina',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekwčina',
     ),
     'av': Language(
       'av',
@@ -216,6 +224,10 @@ class LanguagesSk extends Languages {
     'bg': Language(
       'bg',
       'bulharčina',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -379,6 +391,10 @@ class LanguagesSk extends Languages {
       variant: 'kurdčina (sorání)',
       menu: 'kurdčina (sorání)',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'korzičtina',
@@ -391,9 +407,33 @@ class LanguagesSk extends Languages {
       'cr',
       'krí',
     ),
+    'crg': Language(
+      'crg',
+      'michif',
+    ),
     'crh': Language(
       'crh',
       'krymská tatárčina',
+    ),
+    'crj': Language(
+      'crj',
+      'cree (juhovýchod)',
+    ),
+    'crk': Language(
+      'crk',
+      'plains cree',
+    ),
+    'crl': Language(
+      'crl',
+      'northern east cree',
+    ),
+    'crm': Language(
+      'crm',
+      'moose cree',
+    ),
+    'crr': Language(
+      'crr',
+      'karolínska algonkčina',
     ),
     'crs': Language(
       'crs',
@@ -406,6 +446,10 @@ class LanguagesSk extends Languages {
     'csb': Language(
       'csb',
       'kašubčina',
+    ),
+    'csw': Language(
+      'csw',
+      'swampy cree',
     ),
     'cu': Language(
       'cu',
@@ -769,6 +813,10 @@ class LanguagesSk extends Languages {
       'haw',
       'havajčina',
     ),
+    'hax': Language(
+      'hax',
+      'haida (juh)',
+    ),
     'he': Language(
       'he',
       'hebrejčina',
@@ -776,6 +824,11 @@ class LanguagesSk extends Languages {
     'hi': Language(
       'hi',
       'hindčina',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindčina (latinka)',
+      variant: 'hindčina (latinka)',
     ),
     'hil': Language(
       'hil',
@@ -812,6 +865,10 @@ class LanguagesSk extends Languages {
     'hup': Language(
       'hup',
       'hupčina',
+    ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
     ),
     'hy': Language(
       'hy',
@@ -852,6 +909,10 @@ class LanguagesSk extends Languages {
     'ik': Language(
       'ik',
       'inupik',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuktitut (západná Kanada)',
     ),
     'ilo': Language(
       'ilo',
@@ -963,7 +1024,7 @@ class LanguagesSk extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'kaingang',
     ),
     'kha': Language(
       'kha',
@@ -1085,6 +1146,10 @@ class LanguagesSk extends Languages {
       'kw',
       'kornčina',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwakʼwala',
+    ),
     'ky': Language(
       'ky',
       'kirgizština',
@@ -1129,6 +1194,10 @@ class LanguagesSk extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'lkt': Language(
       'lkt',
       'lakotčina',
@@ -1156,6 +1225,10 @@ class LanguagesSk extends Languages {
     'lrc': Language(
       'lrc',
       'severné luri',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamia',
     ),
     'lt': Language(
       'lt',
@@ -1296,6 +1369,10 @@ class LanguagesSk extends Languages {
     'mni': Language(
       'mni',
       'manípurčina',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimunčina',
     ),
     'moh': Language(
       'moh',
@@ -1485,6 +1562,26 @@ class LanguagesSk extends Languages {
       'oj',
       'odžibva',
     ),
+    'ojb': Language(
+      'ojb',
+      'northwestern ojibwa',
+    ),
+    'ojc': Language(
+      'ojc',
+      'centrálna odžibvejčina',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cree',
+    ),
+    'ojw': Language(
+      'ojw',
+      'ojibwa (západ)',
+    ),
+    'oka': Language(
+      'oka',
+      'okanagan',
+    ),
     'om': Language(
       'om',
       'oromčina',
@@ -1545,6 +1642,10 @@ class LanguagesSk extends Languages {
       'pi',
       'pálí',
     ),
+    'pis': Language(
+      'pis',
+      'pidžin',
+    ),
     'pl': Language(
       'pl',
       'poľština',
@@ -1552,6 +1653,10 @@ class LanguagesSk extends Languages {
     'pon': Language(
       'pon',
       'pohnpeiština',
+    ),
+    'pqm': Language(
+      'pqm',
+      'maliseet-passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1757,6 +1862,10 @@ class LanguagesSk extends Languages {
       'sl',
       'slovinčina',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed (juh)',
+    ),
     'sm': Language(
       'sm',
       'samojčina',
@@ -1821,6 +1930,10 @@ class LanguagesSk extends Languages {
       'st',
       'sothčina (južná)',
     ),
+    'str': Language(
+      'str',
+      'straits salish',
+    ),
     'su': Language(
       'su',
       'sundčina',
@@ -1865,6 +1978,10 @@ class LanguagesSk extends Languages {
       'ta',
       'tamilčina',
     ),
+    'tce': Language(
+      'tce',
+      'tutchone (juh)',
+    ),
     'te': Language(
       'te',
       'telugčina',
@@ -1889,9 +2006,17 @@ class LanguagesSk extends Languages {
       'tg',
       'tadžičtina',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagiš',
+    ),
     'th': Language(
       'th',
       'thajčina',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -1941,6 +2066,10 @@ class LanguagesSk extends Languages {
       'tog',
       'ňasa tonga',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'novoguinejský pidžin',
@@ -1964,6 +2093,10 @@ class LanguagesSk extends Languages {
     'tt': Language(
       'tt',
       'tatárčina',
+    ),
+    'ttm': Language(
+      'ttm',
+      'northern tutchone',
     ),
     'tum': Language(
       'tum',
@@ -2033,6 +2166,10 @@ class LanguagesSk extends Languages {
       've',
       'vendčina',
     ),
+    'vec': Language(
+      'vec',
+      'vec',
+    ),
     'vi': Language(
       'vi',
       'vietnamčina',
@@ -2077,6 +2214,10 @@ class LanguagesSk extends Languages {
       'wo',
       'wolofčina',
     ),
+    'wuu': Language(
+      'wuu',
+      'čínština (wu)',
+    ),
     'xal': Language(
       'xal',
       'kalmyčtina',
@@ -2115,7 +2256,7 @@ class LanguagesSk extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'nheengatu',
     ),
     'yue': Language(
       'yue',
@@ -3586,6 +3727,34 @@ class UnitsSk implements Units {
           few: '{0} r.',
           many: '{0} r.',
           other: '{0} r.',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'štvrťroky',
+          one: '{0} štvrťrok',
+          few: '{0} štvrťroky',
+          many: '{0} štvrťroka',
+          other: '{0} štvrťrokov',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'štvrťrok',
+          one: '{0} štvrťrok',
+          few: '{0} štvrťroky',
+          many: '{0} štvrťroka',
+          other: '{0} štvrťrokov',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'štvrťrok',
+          one: '{0} štvrťrok',
+          few: '{0} štvrťroky',
+          many: '{0} štvrťroka',
+          other: '{0} štvrťrokov',
         ),
       );
 
@@ -5336,7 +5505,7 @@ class UnitsSk implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tony',
@@ -9378,6 +9547,7 @@ class TerritoriesSk implements Territories {
     'NZ': Territory(
       'NZ',
       'Nový Zéland',
+      variant: 'Nový Zéland',
     ),
     'OM': Territory(
       'OM',
@@ -9605,6 +9775,7 @@ class TerritoriesSk implements Territories {
     'TR': Territory(
       'TR',
       'Turecko',
+      variant: 'Turecko',
     ),
     'TT': Territory(
       'TT',

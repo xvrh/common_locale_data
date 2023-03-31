@@ -108,6 +108,10 @@ class LanguagesSl extends Languages {
       'ang',
       'stara angleščina',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angikaščina',
@@ -132,6 +136,10 @@ class LanguagesSl extends Languages {
       'arp',
       'arapaščina',
     ),
+    'ars': Language(
+      'ars',
+      'nadždska arabščina',
+    ),
     'arw': Language(
       'arw',
       'aravaščina',
@@ -147,6 +155,10 @@ class LanguagesSl extends Languages {
     'ast': Language(
       'ast',
       'asturijščina',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekwščina',
     ),
     'av': Language(
       'av',
@@ -200,6 +212,10 @@ class LanguagesSl extends Languages {
     'bg': Language(
       'bg',
       'bolgarščina',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -277,6 +293,10 @@ class LanguagesSl extends Languages {
       'car',
       'karibski jezik',
     ),
+    'cay': Language(
+      'cay',
+      'kajuščina',
+    ),
     'ccp': Language(
       'ccp',
       'chakma',
@@ -339,6 +359,10 @@ class LanguagesSl extends Languages {
       variant: 'soranska kurdščina',
       menu: 'soranska kurdščina',
     ),
+    'clc': Language(
+      'clc',
+      'čilkotinščina',
+    ),
     'co': Language(
       'co',
       'korziščina',
@@ -351,9 +375,33 @@ class LanguagesSl extends Languages {
       'cr',
       'krijščina',
     ),
+    'crg': Language(
+      'crg',
+      'mičifščina',
+    ),
     'crh': Language(
       'crh',
       'krimska tatarščina',
+    ),
+    'crj': Language(
+      'crj',
+      'jugovzhodna krijščina',
+    ),
+    'crk': Language(
+      'crk',
+      'nižinska krijščina',
+    ),
+    'crl': Language(
+      'crl',
+      'severovzhodna krijščina',
+    ),
+    'crm': Language(
+      'crm',
+      'moose-krijščina',
+    ),
+    'crr': Language(
+      'crr',
+      'karolinska algonkinščina',
     ),
     'crs': Language(
       'crs',
@@ -366,6 +414,10 @@ class LanguagesSl extends Languages {
     'csb': Language(
       'csb',
       'kašubščina',
+    ),
+    'csw': Language(
+      'csw',
+      'močvirska krijščina',
     ),
     'cu': Language(
       'cu',
@@ -506,12 +558,12 @@ class LanguagesSl extends Languages {
     'en-GB': Language(
       'en-GB',
       'britanska angleščina',
-      short: 'britanska angleščina',
+      short: 'angleščina (ZK)',
     ),
     'en-US': Language(
       'en-US',
       'ameriška angleščina',
-      short: 'ameriška angleščina',
+      short: 'angleščina (ZDA)',
     ),
     'enm': Language(
       'enm',
@@ -729,6 +781,10 @@ class LanguagesSl extends Languages {
       'haw',
       'havajščina',
     ),
+    'hax': Language(
+      'hax',
+      'južna haidščina',
+    ),
     'he': Language(
       'he',
       'hebrejščina',
@@ -736,6 +792,11 @@ class LanguagesSl extends Languages {
     'hi': Language(
       'hi',
       'hindijščina',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindijščina (latinica)',
+      variant: 'hingleščina',
     ),
     'hil': Language(
       'hil',
@@ -772,6 +833,10 @@ class LanguagesSl extends Languages {
     'hup': Language(
       'hup',
       'hupa',
+    ),
+    'hur': Language(
+      'hur',
+      'halkomelenščina',
     ),
     'hy': Language(
       'hy',
@@ -812,6 +877,10 @@ class LanguagesSl extends Languages {
     'ik': Language(
       'ik',
       'inupiaščina',
+    ),
+    'ikt': Language(
+      'ikt',
+      'zahodna kanadska inuktituščina',
     ),
     'ilo': Language(
       'ilo',
@@ -919,7 +988,7 @@ class LanguagesSl extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'kgp',
+      'kaingangščina',
     ),
     'kha': Language(
       'kha',
@@ -1041,6 +1110,10 @@ class LanguagesSl extends Languages {
       'kw',
       'kornijščina',
     ),
+    'kwk': Language(
+      'kwk',
+      'kvakvala',
+    ),
     'ky': Language(
       'ky',
       'kirgiščina',
@@ -1085,6 +1158,10 @@ class LanguagesSl extends Languages {
       'lij',
       'lij',
     ),
+    'lil': Language(
+      'lil',
+      'lilovetščina',
+    ),
     'lkt': Language(
       'lkt',
       'lakotščina',
@@ -1112,6 +1189,10 @@ class LanguagesSl extends Languages {
     'lrc': Language(
       'lrc',
       'severna lurijščina',
+    ),
+    'lsm': Language(
+      'lsm',
+      'saamijščina',
     ),
     'lt': Language(
       'lt',
@@ -1244,6 +1325,10 @@ class LanguagesSl extends Languages {
     'mni': Language(
       'mni',
       'manipurščina',
+    ),
+    'moe': Language(
+      'moe',
+      'inuaimunščina',
     ),
     'moh': Language(
       'moh',
@@ -1433,6 +1518,26 @@ class LanguagesSl extends Languages {
       'oj',
       'anašinabščina',
     ),
+    'ojb': Language(
+      'ojb',
+      'severozahodna očipvejščina',
+    ),
+    'ojc': Language(
+      'ojc',
+      'osrednja očipvejščina',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oči-krijščina',
+    ),
+    'ojw': Language(
+      'ojw',
+      'zahodna očipvejščina',
+    ),
+    'oka': Language(
+      'oka',
+      'okanaganščina',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1489,6 +1594,10 @@ class LanguagesSl extends Languages {
       'pi',
       'palijščina',
     ),
+    'pis': Language(
+      'pis',
+      'pidžin',
+    ),
     'pl': Language(
       'pl',
       'poljščina',
@@ -1496,6 +1605,10 @@ class LanguagesSl extends Languages {
     'pon': Language(
       'pon',
       'ponpejščina',
+    ),
+    'pqm': Language(
+      'pqm',
+      'maliseet-passamaquoddščina',
     ),
     'prg': Language(
       'prg',
@@ -1693,6 +1806,10 @@ class LanguagesSl extends Languages {
       'sl',
       'slovenščina',
     ),
+    'slh': Language(
+      'slh',
+      'južna lušucidščina',
+    ),
     'sm': Language(
       'sm',
       'samoanščina',
@@ -1753,6 +1870,10 @@ class LanguagesSl extends Languages {
       'st',
       'sesoto',
     ),
+    'str': Language(
+      'str',
+      'ožinska sališčina',
+    ),
     'su': Language(
       'su',
       'sundanščina',
@@ -1797,6 +1918,10 @@ class LanguagesSl extends Languages {
       'ta',
       'tamilščina',
     ),
+    'tce': Language(
+      'tce',
+      'južna tučonščina',
+    ),
     'te': Language(
       'te',
       'telugijščina',
@@ -1817,9 +1942,17 @@ class LanguagesSl extends Languages {
       'tg',
       'tadžiščina',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagiščina',
+    ),
     'th': Language(
       'th',
       'tajščina',
+    ),
+    'tht': Language(
+      'tht',
+      'taltanščina',
     ),
     'ti': Language(
       'ti',
@@ -1869,6 +2002,10 @@ class LanguagesSl extends Languages {
       'tog',
       'malavijska tongščina',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -1892,6 +2029,10 @@ class LanguagesSl extends Languages {
     'tt': Language(
       'tt',
       'tatarščina',
+    ),
+    'ttm': Language(
+      'ttm',
+      'severna tučonščina',
     ),
     'tum': Language(
       'tum',
@@ -1961,6 +2102,10 @@ class LanguagesSl extends Languages {
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'vec',
+    ),
     'vi': Language(
       'vi',
       'vietnamščina',
@@ -2005,6 +2150,10 @@ class LanguagesSl extends Languages {
       'wo',
       'volofščina',
     ),
+    'wuu': Language(
+      'wuu',
+      'wu-kitajščina',
+    ),
     'xal': Language(
       'xal',
       'kalmiščina',
@@ -2043,7 +2192,7 @@ class LanguagesSl extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'yrl',
+      'nheengatu',
     ),
     'yue': Language(
       'yue',
@@ -3397,7 +3546,7 @@ class UnitsSl implements Units {
           one: '{0} bajt',
           two: '{0} bajta',
           few: '{0} bajti',
-          other: '{0} bajtov',
+          other: '{0} B',
         ),
       );
 
@@ -3510,6 +3659,34 @@ class UnitsSl implements Units {
           two: '{0} l',
           few: '{0} l',
           other: '{0} l',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'četrtletje',
+          one: '{0} četrtletje',
+          two: '{0} četrtletji',
+          few: '{0} četrtletja',
+          other: '{0} četrtletij',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'četrt',
+          one: '{0} četrtl.',
+          two: '{0} četrtl.',
+          few: '{0} četrtl.',
+          other: '{0} četrtl.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'četrt',
+          one: '{0} čl.',
+          two: '{0} čl.',
+          few: '{0} čl.',
+          other: '{0} čl.',
         ),
       );
 
@@ -5260,7 +5437,7 @@ class UnitsSl implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'metrične tone',
@@ -9314,6 +9491,7 @@ class TerritoriesSl implements Territories {
     'NZ': Territory(
       'NZ',
       'Nova Zelandija',
+      variant: 'Aotearoa Nova Zelandija',
     ),
     'OM': Territory(
       'OM',
@@ -9541,6 +9719,7 @@ class TerritoriesSl implements Territories {
     'TR': Territory(
       'TR',
       'Turčija',
+      variant: 'Türkiye',
     ),
     'TT': Territory(
       'TT',

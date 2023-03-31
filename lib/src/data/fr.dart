@@ -120,6 +120,10 @@ class LanguagesFr extends Languages {
       'ang',
       'ancien anglais',
     ),
+    'ann': Language(
+      'ann',
+      'obolo',
+    ),
     'anp': Language(
       'anp',
       'angika',
@@ -183,6 +187,10 @@ class LanguagesFr extends Languages {
     'ast': Language(
       'ast',
       'asturien',
+    ),
+    'atj': Language(
+      'atj',
+      'atikamekw',
     ),
     'av': Language(
       'av',
@@ -268,6 +276,10 @@ class LanguagesFr extends Languages {
     'bg': Language(
       'bg',
       'bulgare',
+    ),
+    'bgc': Language(
+      'bgc',
+      'bgc',
     ),
     'bgn': Language(
       'bgn',
@@ -447,6 +459,10 @@ class LanguagesFr extends Languages {
       variant: 'sorani',
       menu: 'kurde sorani',
     ),
+    'clc': Language(
+      'clc',
+      'chilcotin',
+    ),
     'co': Language(
       'co',
       'corse',
@@ -463,9 +479,33 @@ class LanguagesFr extends Languages {
       'cr',
       'cree',
     ),
+    'crg': Language(
+      'crg',
+      'mitchif',
+    ),
     'crh': Language(
       'crh',
       'tatar de Crimée',
+    ),
+    'crj': Language(
+      'crj',
+      'cri de l’Est (dialecte du Sud)',
+    ),
+    'crk': Language(
+      'crk',
+      'cri des plaines',
+    ),
+    'crl': Language(
+      'crl',
+      'cri de l’Est (dialecte du Nord)',
+    ),
+    'crm': Language(
+      'crm',
+      'cri de Moose',
+    ),
+    'crr': Language(
+      'crr',
+      'algonquin de Caroline',
     ),
     'crs': Language(
       'crs',
@@ -478,6 +518,10 @@ class LanguagesFr extends Languages {
     'csb': Language(
       'csb',
       'kachoube',
+    ),
+    'csw': Language(
+      'csw',
+      'cri des marais',
     ),
     'cu': Language(
       'cu',
@@ -751,7 +795,7 @@ class LanguagesFr extends Languages {
     ),
     'frr': Language(
       'frr',
-      'frison du Nord',
+      'frison septentrional',
     ),
     'frs': Language(
       'frs',
@@ -883,7 +927,7 @@ class LanguagesFr extends Languages {
     ),
     'hai': Language(
       'hai',
-      'haida',
+      'haïda',
     ),
     'hak': Language(
       'hak',
@@ -893,6 +937,10 @@ class LanguagesFr extends Languages {
       'haw',
       'hawaïen',
     ),
+    'hax': Language(
+      'hax',
+      'haïda du Sud',
+    ),
     'he': Language(
       'he',
       'hébreu',
@@ -900,6 +948,11 @@ class LanguagesFr extends Languages {
     'hi': Language(
       'hi',
       'hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindi (latin)',
+      variant: 'hinglish',
     ),
     'hif': Language(
       'hif',
@@ -945,6 +998,10 @@ class LanguagesFr extends Languages {
       'hup',
       'hupa',
     ),
+    'hur': Language(
+      'hur',
+      'halkomelem',
+    ),
     'hy': Language(
       'hy',
       'arménien',
@@ -984,6 +1041,10 @@ class LanguagesFr extends Languages {
     'ik': Language(
       'ik',
       'inupiaq',
+    ),
+    'ikt': Language(
+      'ikt',
+      'inuktitut de l’Ouest canadien',
     ),
     'ilo': Language(
       'ilo',
@@ -1249,6 +1310,10 @@ class LanguagesFr extends Languages {
       'kw',
       'cornique',
     ),
+    'kwk': Language(
+      'kwk',
+      'kwak’wala',
+    ),
     'ky': Language(
       'ky',
       'kirghize',
@@ -1297,6 +1362,10 @@ class LanguagesFr extends Languages {
       'lij',
       'ligure',
     ),
+    'lil': Language(
+      'lil',
+      'lillooet',
+    ),
     'liv': Language(
       'liv',
       'livonien',
@@ -1332,6 +1401,10 @@ class LanguagesFr extends Languages {
     'lrc': Language(
       'lrc',
       'lori du Nord',
+    ),
+    'lsm': Language(
+      'lsm',
+      'samia',
     ),
     'lt': Language(
       'lt',
@@ -1484,6 +1557,10 @@ class LanguagesFr extends Languages {
     'mni': Language(
       'mni',
       'manipuri',
+    ),
+    'moe': Language(
+      'moe',
+      'innu-aimun',
     ),
     'moh': Language(
       'moh',
@@ -1693,6 +1770,26 @@ class LanguagesFr extends Languages {
       'oj',
       'ojibwa',
     ),
+    'ojb': Language(
+      'ojb',
+      'ojibwé du Nord-Ouest',
+    ),
+    'ojc': Language(
+      'ojc',
+      'ojibwé central',
+    ),
+    'ojs': Language(
+      'ojs',
+      'oji-cri',
+    ),
+    'ojw': Language(
+      'ojw',
+      'ojibwé occidental',
+    ),
+    'oka': Language(
+      'oka',
+      'colville-okanagan',
+    ),
     'om': Language(
       'om',
       'oromo',
@@ -1769,6 +1866,10 @@ class LanguagesFr extends Languages {
       'pi',
       'pali',
     ),
+    'pis': Language(
+      'pis',
+      'pijin',
+    ),
     'pl': Language(
       'pl',
       'polonais',
@@ -1784,6 +1885,10 @@ class LanguagesFr extends Languages {
     'pon': Language(
       'pon',
       'pohnpei',
+    ),
+    'pqm': Language(
+      'pqm',
+      'malécite-passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -2030,6 +2135,10 @@ class LanguagesFr extends Languages {
       'sl',
       'slovène',
     ),
+    'slh': Language(
+      'slh',
+      'lushootseed du Sud',
+    ),
     'sli': Language(
       'sli',
       'bas-silésien',
@@ -2106,6 +2215,10 @@ class LanguagesFr extends Languages {
       'stq',
       'saterlandais',
     ),
+    'str': Language(
+      'str',
+      'salish des détroits',
+    ),
     'su': Language(
       'su',
       'soundanais',
@@ -2154,6 +2267,10 @@ class LanguagesFr extends Languages {
       'ta',
       'tamoul',
     ),
+    'tce': Language(
+      'tce',
+      'tutchone du Sud',
+    ),
     'tcy': Language(
       'tcy',
       'toulou',
@@ -2182,9 +2299,17 @@ class LanguagesFr extends Languages {
       'tg',
       'tadjik',
     ),
+    'tgx': Language(
+      'tgx',
+      'tagish',
+    ),
     'th': Language(
       'th',
       'thaï',
+    ),
+    'tht': Language(
+      'tht',
+      'tahltan',
     ),
     'ti': Language(
       'ti',
@@ -2242,6 +2367,10 @@ class LanguagesFr extends Languages {
       'tog',
       'tonga nyasa',
     ),
+    'tok': Language(
+      'tok',
+      'toki pona',
+    ),
     'tpi': Language(
       'tpi',
       'tok pisin',
@@ -2273,6 +2402,10 @@ class LanguagesFr extends Languages {
     'tt': Language(
       'tt',
       'tatar',
+    ),
+    'ttm': Language(
+      'ttm',
+      'tutchone du Nord',
     ),
     'ttt': Language(
       'ttt',
@@ -2720,8 +2853,8 @@ class UnitsFr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'G',
-          one: '{0}G',
-          other: '{0}G',
+          one: '{0} force g',
+          other: '{0} force g',
         ),
       );
 
@@ -3615,15 +3748,15 @@ class UnitsFr implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'siècles',
-          one: '{0} siècle',
-          other: '{0} siècles',
+          's.',
+          one: '{0} s.',
+          other: '{0} s.',
         ),
         narrow: UnitCountPattern(
           _locale,
           's.',
-          one: '{0} s.',
-          other: '{0} s.',
+          one: '{0}s.',
+          other: '{0}s.',
         ),
       );
 
@@ -3638,8 +3771,8 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'décennies',
-          one: '{0} décennie',
-          other: '{0} décennies',
+          one: '{0} déc.',
+          other: '{0} déc.',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -3668,6 +3801,28 @@ class UnitsFr implements Units {
           'a',
           one: '{0}a',
           other: '{0}a',
+        ),
+      );
+
+  @override
+  Unit get durationQuarter => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'trimestres',
+          one: '{0} trimestre',
+          other: '{0} trimestres',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'trim.',
+          one: '{0} trim.',
+          other: '{0} trim.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'T',
+          one: '{0} T',
+          other: '{0} T',
         ),
       );
 
@@ -4475,13 +4630,13 @@ class UnitsFr implements Units {
           _locale,
           'pt',
           one: '{0} pt',
-          other: '{0} pts',
+          other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          other: '{0} pts',
+          one: '{0}pt',
+          other: '{0}pt',
         ),
       );
 
@@ -4927,19 +5082,19 @@ class UnitsFr implements Units {
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
           _locale,
-          'points typographiques',
+          'pt typog.',
           one: '{0} point typographique',
           other: '{0} points typographiques',
         ),
         short: UnitCountPattern(
           _locale,
-          'points typographiques',
+          'pt typog.',
           one: '{0} pt typog.',
           other: '{0} pts typog.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'points typographiques',
+          'pt typog.',
           one: '{0} pt typog.',
           other: '{0} pts typog.',
         ),
@@ -5054,7 +5209,7 @@ class UnitsFr implements Units {
       );
 
   @override
-  Unit get massMetricTon => Unit(
+  Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
           'tonnes',
@@ -5577,7 +5732,7 @@ class UnitsFr implements Units {
           _locale,
           'inHg',
           one: '{0} inHg',
-          other: '{0}″ Hg',
+          other: '{0} inHg',
         ),
       );
 
@@ -7940,7 +8095,7 @@ class TerritoriesFr implements Territories {
     'CI': Territory(
       'CI',
       'Côte d’Ivoire',
-      variant: '​​République de Côte d’Ivoire',
+      variant: 'République de Côte d’Ivoire',
     ),
     'CK': Territory(
       'CK',
@@ -8478,6 +8633,7 @@ class TerritoriesFr implements Territories {
     'NZ': Territory(
       'NZ',
       'Nouvelle-Zélande',
+      variant: 'Aotearoa (Nouvelle-Zélande)',
     ),
     'OM': Territory(
       'OM',
@@ -8705,6 +8861,7 @@ class TerritoriesFr implements Territories {
     'TR': Territory(
       'TR',
       'Turquie',
+      variant: 'Türkiye',
     ),
     'TT': Territory(
       'TT',
@@ -8737,7 +8894,7 @@ class TerritoriesFr implements Territories {
     'UN': Territory(
       'UN',
       'Nations Unies',
-      short: 'NU',
+      short: 'ONU',
     ),
     'US': Territory(
       'US',
