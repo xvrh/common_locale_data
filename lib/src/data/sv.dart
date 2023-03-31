@@ -4620,6 +4620,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'pixlar',
+          other: '{0}pkt',
         ),
         narrow: UnitCountPattern(
           _locale,
