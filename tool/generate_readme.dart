@@ -2,9 +2,10 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:common_locale_data/common_locale_data.dart';
-import 'package:common_locale_data/src/supported_locales.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
+
+import 'utils/supported_locales.dart';
 
 final RegExp _importRegex = RegExp(r"import '([^']+)';\r?\n");
 
@@ -43,12 +44,24 @@ String generateReadme(File source) {
   });
 
   readme = readme.replaceAll(
-      '##LANGUAGE_LIST##',
-      supportedLocales
-          .map((l) => CommonLocaleData.en.languages[l]!.name)
-          .join(', '));
+      '##LOCALE_LIST##',
+      getSupportedLocales().map((locale) {
+        var a = locale.split("-");
 
-  readme = readme.replaceAll('##DOWNLOAD_DATE##', package.date.toUtc().toString());
+        var language = CommonLocaleData.en.languages[a[0]]?.name ?? '?';
+        var country = a.length > 1
+            ? CommonLocaleData.en.territories.countries[a[1]]?.name
+            : null;
+
+        if (country!=null) {
+          return '$locale: $language ($country)';
+        } else {
+          return '$locale: $language';
+        }
+      }).join(Platform.isWindows ? '\r\n' : '\n'));
+
+  readme =
+      readme.replaceAll('##DOWNLOAD_DATE##', package.date.toUtc().toString());
 
   readme = readme.replaceAll('##CLDR_VERSION##', package.cldrVersion);
 
