@@ -49,12 +49,12 @@ class DateFieldDataWithRelative extends DateFieldData
   final MultiLengthRelativeTime past, future;
 
   DateFieldDataWithRelative({
-    required MultiLength now,
+    required super.now,
     required this.previous,
     required this.next,
     required this.past,
     required this.future,
-  }) : super(now: now);
+  });
 }
 
 class DateFieldFullData extends DateFieldDataWithRelative {
@@ -62,17 +62,12 @@ class DateFieldFullData extends DateFieldDataWithRelative {
 
   DateFieldFullData({
     required this.displayName,
-    required MultiLength now,
-    required MultiLength previous,
-    required MultiLength next,
-    required MultiLengthRelativeTime past,
-    required MultiLengthRelativeTime future,
-  }) : super(
-            now: now,
-            previous: previous,
-            next: next,
-            past: past,
-            future: future);
+    required super.now,
+    required super.previous,
+    required super.next,
+    required super.past,
+    required super.future,
+  });
 
   @override
   String toString() => displayName.toString();
@@ -85,10 +80,10 @@ class DateFieldDataTime extends DateFieldData implements RelativeDateFieldData {
 
   DateFieldDataTime({
     required this.displayName,
-    required MultiLength now,
+    required super.now,
     required this.past,
     required this.future,
-  }) : super(now: now);
+  });
 
   @override
   String toString() => displayName.toString();
