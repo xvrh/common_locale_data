@@ -3,7 +3,7 @@
     "sk": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "45"
         },
         "language": "sk"
       },
@@ -57,7 +57,7 @@
           "bez": "bena",
           "bfd": "bafut",
           "bg": "bulharčina",
-          "bgc": "bgc",
+          "bgc": "haryanvi",
           "bgn": "západná balúčtina",
           "bho": "bhódžpurčina",
           "bi": "bislama",
@@ -98,7 +98,7 @@
           "chr": "čerokí",
           "chy": "čejenčina",
           "ckb": "kurdčina (sorání)",
-          "ckb-alt-menu": "kurdčina (sorání)",
+          "ckb-alt-menu": "kurdčina (centrálna)",
           "ckb-alt-variant": "kurdčina (sorání)",
           "clc": "chilcotin",
           "co": "korzičtina",
@@ -175,7 +175,7 @@
           "fr": "francúzština",
           "fr-CA": "francúzština (kanadská)",
           "fr-CH": "francúzština (švajčiarska)",
-          "frc": "francúzština (Cajun)",
+          "frc": "francúzština (cajunská)",
           "frm": "stredná francúzština",
           "fro": "stará francúzština",
           "frr": "severná frízština",
@@ -210,8 +210,7 @@
           "hax": "haida (juh)",
           "he": "hebrejčina",
           "hi": "hindčina",
-          "hi-Latn": "hindčina (latinka)",
-          "hi-Latn-alt-variant": "hindčina (latinka)",
+          "hi-Latn-alt-variant": "hingliš",
           "hil": "hiligajnončina",
           "hit": "chetitčina",
           "hmn": "hmongčina",
@@ -302,7 +301,6 @@
           "lez": "lezginčina",
           "lg": "gandčina",
           "li": "limburčina",
-          "lij": "lij",
           "lil": "lillooet",
           "lkt": "lakotčina",
           "ln": "lingalčina",
@@ -546,7 +544,6 @@
           "uz": "uzbečtina",
           "vai": "vai",
           "ve": "vendčina",
-          "vec": "vec",
           "vi": "vietnamčina",
           "vo": "volapük",
           "vot": "vodčina",

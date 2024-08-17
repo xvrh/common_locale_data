@@ -3,7 +3,7 @@
     "sv": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "45"
         },
         "language": "sv"
       },
@@ -63,7 +63,7 @@
           "bax": "bamunska",
           "bbc": "batak-toba",
           "bbj": "ghomala",
-          "be": "vitryska",
+          "be": "belarusiska",
           "bej": "beja",
           "bem": "bemba",
           "bew": "betawiska",
@@ -71,7 +71,7 @@
           "bfd": "bafut",
           "bfq": "bagada",
           "bg": "bulgariska",
-          "bgc": "bgc",
+          "bgc": "hariyanvi",
           "bgn": "västbaluchiska",
           "bho": "bhojpuri",
           "bi": "bislama",
@@ -115,7 +115,7 @@
           "chp": "chipewyan",
           "chr": "cherokesiska",
           "chy": "cheyenne",
-          "ckb": "soranisk kurdiska",
+          "ckb": "centralkurdiska",
           "ckb-alt-menu": "kurdiska (sorani)",
           "ckb-alt-variant": "soranisk kurdiska",
           "clc": "chilcotin",
