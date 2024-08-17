@@ -21,6 +21,13 @@ String localeAllLower(String locale) =>
     locale.replaceAll('-', '_').toLowerCase();
 
 void main() {
+
+  var dataDirectory = Directory('lib/src/data');
+  if (dataDirectory.existsSync()) {
+    dataDirectory.deleteSync(recursive: true);
+  }
+  dataDirectory.createSync(recursive: true);
+
   print('Generate common files');
   File('lib/src/common_locale_data.dart')
       .writeAsStringSync(_format(generateCommon()));
