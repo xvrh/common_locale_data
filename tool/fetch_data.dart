@@ -22,12 +22,18 @@ void main() async {
   final sets = <String, Set<String>>{
     'units': {'units', 'measurementSystemNames'},
     'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
-    'localenames': {'languages', 'territories'},
+    'localenames': {
+      'languages',
+      'territories',
+      'scripts',
+      'variants',
+      'localeDisplayNames'
+    },
     'misc': {'characters', 'listPatterns'},
   };
 
   // CLDR coverage to download 'full' or 'modern'
-  final fullOrModern='modern';
+  final fullOrModern = 'modern';
 
   var dataDirectory = Directory('tool/data');
   if (dataDirectory.existsSync()) {
@@ -52,26 +58,30 @@ void main() async {
     ]);
   }
 
-  var supportedLocales=getSupportedLocales();
-  print('Downloading locale data for: ${supportedLocales.join(', ')}');
+  var supportedLocales = getSupportedLocales();
 
-  for (var set in sets.keys) {
-    for (var file in sets[set]!) {
+  for (var locale in supportedLocales) {
+    print('Downloading locale data for: $locale');
+    for (var set in sets.keys) {
       await Future.wait([
-        for (var locale in supportedLocales)
+        for (var file in sets[set]!)
           pool.withResource(() async {
             var url =
                 'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set-$fullOrModern/main/$locale/$file.json';
             var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
             var fileName = '$locale.json';
-
-            await download(directory, url, client, fileName);
+            try {
+              await download(directory, url, client, fileName);
+            } on Exception catch (e) {
+              print('*** $e');
+            }
           })
       ]);
     }
   }
 
   await pool.close();
+  print('All data fetched');
 }
 
 Future<void> download(

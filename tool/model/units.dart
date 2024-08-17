@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:path/path.dart' as p;
 
-import '../generate_code.dart';
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 import '../utils/split_words.dart';
@@ -53,46 +52,36 @@ String _prefixPatternField(String key) {
   return 'pattern${key.replaceAll('-', 'Minus')}';
 }
 
+const _lengths = ['long', 'short', 'narrow'];
+const _plurals = ['zero', 'one', 'two', 'few', 'many', 'other'];
+
 void generateUnits(String locale, StringBuffer buffer) {
-  var referenceUnits = readJson('en');
-  var allUnits = readJson(locale);
-  buffer.writeln('''class Units${localeUpper(locale)} implements Units {
-      Units${localeUpper(locale)}._();
+  var referenceUnits = readJson('en').cast<String, Map<String, dynamic>>();
+  var units = readJson(locale).cast<String, Map<String, dynamic>>();
+
+  buffer.writeln('''class Units${locale.toUpperCamel()} implements Units {
+      Units${locale.toUpperCamel()}._();
       ''');
 
-  final lengths = ['long', 'short', 'narrow'];
-  var units = <String, Map<String, dynamic>>{
-    for (var length in lengths) length: allUnits[length] as Map<String, dynamic>
-  };
-  var firstReferenceUnits =
-      referenceUnits[lengths.first] as Map<String, dynamic>;
-
-  for (var key in firstReferenceUnits.keys) {
-    var firstField =
-        UnitField.fromJson(firstReferenceUnits[key] as Map<String, dynamic>);
+  for (var key in referenceUnits[_lengths.first]!.keys) {
+    var firstField = UnitField.fromJson(
+        referenceUnits[_lengths.first]![key] as Map<String, dynamic>);
     if (firstField.displayName != null) {
-      final plurals = ['zero', 'one', 'two', 'few', 'many', 'other'];
-
       if (firstField.unitPatternCountOther == null) continue;
 
       buffer.writeln('@override');
       buffer.writeln('Unit get ${lowerCamel(splitWords(key))} => Unit(');
-      for (var length in lengths) {
-        var unitForLength = UnitField.fromJsonWithFallback([
-          units[length]![key],
-          units[lengths.first]![key],
-          referenceUnits[length]![key],
-          firstReferenceUnits[key]
-        ]);
-        var displayName = unitForLength.displayName;
+      for (var length in _lengths) {
+        var unit = getUnitForLength(units, referenceUnits, length, key);
+        var displayName = unit.displayName;
         if (displayName == null) {
           throw Exception(
-              '$key ${unitForLength.displayName} is null for length $length');
+              '$key ${unit.displayName} is null for length $length');
         }
         buffer.writeln(
             '$length: UnitCountPattern(_locale, ${escapeDartString(displayName)},');
-        for (var plural in plurals) {
-          var pattern = unitForLength.getUnitPattern(plural);
+        for (var plural in _plurals) {
+          var pattern = unit.getUnitPattern(plural);
           if (pattern != null) {
             buffer.writeln('$plural: ${escapeDartString(pattern)},');
           }
@@ -106,21 +95,12 @@ void generateUnits(String locale, StringBuffer buffer) {
       var getter = _prefixPatternField(key);
       buffer.writeln('@override');
       buffer.writeln('UnitPrefix get $getter => UnitPrefix(');
-      for (var length in lengths) {
-        var unitsForLength = units[length]!;
-        var jsonForLength = unitsForLength[key] as Map<String, dynamic>?;
-        var fallbackJson = (units[lengths.first]![key] ??
-                ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
-                ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]))
-            as Map<String, dynamic>;
-        jsonForLength ??= fallbackJson;
-        var unitForLength = UnitField.fromJson(jsonForLength);
-        var fallback = UnitField.fromJson(fallbackJson);
-        var pattern =
-            unitForLength.unitPrefixPattern ?? fallback.unitPrefixPattern;
+      for (var length in _lengths) {
+        var unit = getUnitForLength(units, referenceUnits, length, key);
+        var pattern = unit.unitPrefixPattern;
         if (pattern == null) {
           throw Exception(
-              '$key ${unitForLength.unitPrefixPattern} is null for length $length');
+              '$key ${unit.unitPrefixPattern} is null for length $length');
         }
         buffer.writeln(
             '$length: UnitPrefixPattern(${escapeDartString(pattern)}),');
@@ -130,21 +110,12 @@ void generateUnits(String locale, StringBuffer buffer) {
       buffer.writeln('@override');
       buffer.writeln(
           'CompoundUnit get ${lowerCamel(splitWords(key))} => CompoundUnit(');
-      for (var length in lengths) {
-        var unitsForLength = units[length]!;
-        var jsonForLength = unitsForLength[key] as Map<String, dynamic>?;
-        var fallbackJson = (units[lengths.first]![key] ??
-                ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
-                ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]))
-            as Map<String, dynamic>;
-        jsonForLength ??= fallbackJson;
-        var unitForLength = UnitField.fromJson(jsonForLength);
-        var fallback = UnitField.fromJson(fallbackJson);
-        var pattern =
-            unitForLength.compoundUnitPattern ?? fallback.compoundUnitPattern;
+      for (var length in _lengths) {
+        var unit = getUnitForLength(units, referenceUnits, length, key);
+        var pattern = unit.compoundUnitPattern;
         if (pattern == null) {
           throw Exception(
-              '$key ${unitForLength.compoundUnitPattern} is null for length $length');
+              '$key ${unit.compoundUnitPattern} is null for length $length');
         }
         buffer.writeln(
             '$length: CompoundUnitPattern(${escapeDartString(pattern)}),');
@@ -154,6 +125,20 @@ void generateUnits(String locale, StringBuffer buffer) {
   }
 
   buffer.writeln('}');
+}
+
+UnitField getUnitForLength(
+  Map<String, Map<String, dynamic>> units,
+  Map<String, Map<String, dynamic>> referenceUnits,
+  String length,
+  String key,
+) {
+  return UnitField.fromJsonWithFallback([
+    units[length]![key],
+    units[_lengths.first]![key],
+    referenceUnits[length]![key],
+    referenceUnits[_lengths.first]![key]
+  ]);
 }
 
 @JsonSerializable(createToJson: false)

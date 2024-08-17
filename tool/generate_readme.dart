@@ -46,7 +46,7 @@ String generateReadme(File source) {
   readme = readme.replaceAll(
       '##LOCALE_LIST##',
       getSupportedLocales().map((locale) {
-        var a = locale.split("-");
+        var a = locale.split('-');
 
         var language = CommonLocaleData.en.languages[a[0]]?.name ?? '?';
         var country = a.length > 1

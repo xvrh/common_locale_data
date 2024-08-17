@@ -1,4 +1,5 @@
 import 'case.dart';
+import 'split_words.dart';
 
 String lowerCamel(Iterable<String> input) {
   return _mapWithIndex<String, String>(
@@ -25,4 +26,14 @@ Iterable<T> _mapWithIndex<E, T>(
     yield f(element, index);
     ++index;
   }
+}
+
+extension CaseMapping on String {
+  String toLowerCamel() => lowerCamel(splitWords(this));
+
+  String toUpperCamel() => upperCamel(splitWords(this));
+
+  String toLowerHyphen() => lowerHyphen(splitWords(this));
+
+  String toSnakeCase() => snakeCase(splitWords(this));
 }

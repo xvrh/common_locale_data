@@ -5,8 +5,10 @@ import 'package:dart_style/dart_style.dart';
 
 import 'model/date_fields.dart';
 import 'model/language.dart';
+import 'model/script.dart';
 import 'model/territory.dart';
 import 'model/units.dart';
+import 'model/variant.dart';
 import 'utils/case_format.dart';
 import 'utils/split_words.dart';
 import 'utils/supported_locales.dart';
@@ -14,11 +16,6 @@ import 'utils/supported_locales.dart';
 var supportedLocales = getSupportedLocales();
 
 final _formatter = DartFormatter();
-
-String localeUpper(String locale) => upperCamel(splitWords(locale));
-
-String localeAllLower(String locale) =>
-    locale.replaceAll('-', '_').toLowerCase();
 
 void main() {
 
@@ -43,45 +40,58 @@ void main() {
       ..writeln("import '../../common_locale_data.dart' show CommonLocaleData;")
       ..writeln("import '../date_fields.dart';")
       ..writeln("import '../languages.dart';")
+      ..writeln("import '../scripts.dart';")
+      ..writeln("import '../variants.dart';")
       ..writeln("import '../shared.dart';")
       ..writeln("import '../territories.dart';")
       ..writeln("import '../units.dart';");
 
+    var localeUpperCamel = locale.toUpperCamel();
     buffer.writeln('''
 const _locale = '$locale';
 
 /// Translations of [CommonLocaleData] for $locale
-class CommonLocaleData${localeUpper(locale)} implements CommonLocaleData {
+class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
   String get locale => _locale;
   
-  const CommonLocaleData${localeUpper(locale)}();
+  const CommonLocaleData$localeUpperCamel();
 
-  static final _dateFields = DateFields${localeUpper(locale)}._();
+  static final _dateFields = DateFields$localeUpperCamel._();
   @override
   DateFields get date => _dateFields;
   
-  static final _languages = Languages${localeUpper(locale)}._();
+  static final _languages = Languages$localeUpperCamel._();
   @override
   Languages get languages => _languages;
   
-  static final _units = Units${localeUpper(locale)}._();
+  static final _scripts = Scripts$localeUpperCamel._();
+  @override
+  Scripts get scripts => _scripts;
+  
+  static final _variants = Variants$localeUpperCamel._();
+  @override
+  Variants get variants => _variants;
+  
+  static final _units = Units$localeUpperCamel._();
   @override
   Units get units => _units;
   
-  static final _territories = Territories${localeUpper(locale)}._();
+  static final _territories = Territories$localeUpperCamel._();
   @override
   Territories get territories => _territories;
 }
 ''');
 
     generateLanguages(locale, buffer);
+    generateScripts(locale, buffer);
+    generateVariants(locale, buffer);
     generateUnits(locale, buffer);
     generateDateFields(locale, buffer);
     generateTerritories(locale, buffer);
 
     var formatted = _format(buffer.toString());
 
-    File('lib/src/data/${localeAllLower(locale)}.dart')
+    File('lib/src/data/${locale.toSnakeCase()}.dart')
         .writeAsStringSync(formatted);
   }
 }
@@ -90,10 +100,12 @@ String generateCommon() {
   var code = StringBuffer();
   for (var locale in supportedLocales) {
     code.writeln(
-        "import 'data/${localeAllLower(locale)}.dart' show CommonLocaleData${localeUpper(locale)};");
+        "import 'data/${locale.toSnakeCase()}.dart' show CommonLocaleData${locale.toUpperCamel()};");
   }
   code.writeln("import 'date_fields.dart';");
   code.writeln("import 'languages.dart';");
+  code.writeln("import 'scripts.dart';");
+  code.writeln("import 'variants.dart';");
   code.writeln("import 'territories.dart';");
   code.writeln("import 'units.dart';");
 
@@ -106,6 +118,12 @@ abstract class CommonLocaleData {
 
   /// Localized language name
   Languages get languages;
+
+  /// Localized script names
+  Scripts get scripts;
+
+  /// Localized variant names
+  Variants get variants;
 
   /// Localized measurement units
   Units get units;
@@ -121,7 +139,7 @@ abstract class CommonLocaleData {
     }
     code.writeln('/// Access the [CommonLocaleData] for $locale');
     code.writeln(
-        'static const $localeConstantName = CommonLocaleData${localeUpper(locale)}();');
+        'static const $localeConstantName = CommonLocaleData${locale.toUpperCamel()}();');
   }
 
   code.writeln('}');

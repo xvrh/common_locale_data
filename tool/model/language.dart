@@ -1,16 +1,16 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:path/path.dart' as p;
-import '../generate_code.dart';
+import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 
-void generateLanguages(String language, StringBuffer output) {
+void generateLanguages(String locale, StringBuffer output) {
   var reference = readLanguages('en');
-  var translatedLanguages = readLanguages(language);
+  var translatedLanguages = readLanguages(locale);
 
   output.writeln('''
-class Languages${localeUpper(language)} extends Languages {
-  Languages${localeUpper(language)}._();
+class Languages${locale.toUpperCamel()} extends Languages {
+  Languages${locale.toUpperCamel()}._();
 ''');
 
   String? translatedLanguage(String languageCode) {
@@ -24,7 +24,7 @@ class Languages${localeUpper(language)} extends Languages {
     for (var alt in ['variant', 'short', 'menu']) {
       var altName = translatedLanguages['$languageCode-alt-$alt'];
       if (altName != null) {
-        output.writeln('$alt: ${escapeDartString(altName)},');
+        output.writeln('${alt.toLowerCamel()}: ${escapeDartString(altName)},');
       }
     }
 

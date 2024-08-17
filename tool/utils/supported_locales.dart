@@ -4,13 +4,13 @@ import 'dart:io';
 import 'package:collection/collection.dart';
 
 // support all possible locales
-Set<String> _supportedLocales = {};
+//Set<String> _supportedLocales = {};
 
 // support the main locales (locales without a - in the name)
 //Set<String> _supportedLocales = {'main'};
 
 // only support English, French and German
-//Set<String> _supportedLocales = {'en', 'de', 'fr};
+Set<String> _supportedLocales = {'af', 'en', 'en-GB', 'de', 'fr'};
 
 // for compatibility with original languages of this package
 //Set<String> _supportedLocales = {'ar', 'bg', 'ca', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hr', 'id', 'it', 'ja', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'uk', 'zh'};

@@ -31,8 +31,8 @@ It is CLDR version ##CLDR_VERSION## and Unicode version ##UNICODE_VERSION##.
 import 'example/main.dart';
 ```
 
-## Supported language
+## Supported languages/locales
 
-##LANGUAGE_LIST##
+##LOCALE_LIST##
 
 Open a [GitHub issue](https://github.com/xvrh/common_locale_data/issues) to propose more

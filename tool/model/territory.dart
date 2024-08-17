@@ -3,7 +3,6 @@ import 'dart:io';
 
 import 'package:path/path.dart' as p;
 
-import '../generate_code.dart';
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 import '../utils/split_words.dart';
@@ -38,8 +37,8 @@ void generateTerritories(String locale, StringBuffer output) {
   var translatedTerritories = readTerritories(locale);
 
   output.writeln('''
-class Territories${localeUpper(locale)} implements Territories {
-  Territories${localeUpper(locale)}._();
+class Territories${locale.toUpperCamel()} implements Territories {
+  Territories${locale.toUpperCamel()}._();
 ''');
 
   String translatedTerritory(String territoryCode) {
@@ -54,7 +53,7 @@ class Territories${localeUpper(locale)} implements Territories {
     for (var alt in ['variant', 'short']) {
       var altName = translatedTerritories['$territoryCode-alt-$alt'] as String?;
       if (altName != null) {
-        output.writeln('$alt: ${escapeDartString(altName)},');
+        output.writeln('${alt.toLowerCamel()}: ${escapeDartString(altName)},');
       }
     }
 
