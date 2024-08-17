@@ -1,24 +1,11 @@
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 
-import 'package:collection/collection.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:pool/pool.dart';
 
-// support all possible locales
-//Iterable<String> supportedLocales = [];
-
-// support the main locales (locales without a - in the name)
-Iterable<String> supportedLocales = ['main'];
-
-// only support English, French and German
-//Iterable<String> supportedLocales = ['en', 'de', 'fr];
-
-// for compatibility with original languages of this package
-//Iterable<String> supportedLocales = ['ar', 'bg', 'ca', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hr', 'id', 'it', 'ja', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'uk', 'zh'];
-
+import 'utils/supported_locales.dart';
 
 void main() async {
   final miscSets = {
@@ -62,14 +49,7 @@ void main() async {
     ]);
   }
 
-  var locales = getLocales().whereNot((str) => str == 'und');
-  var mainLocales = locales.whereNot((str) => str.contains('-'));
-
-  if (supportedLocales.isEmpty) supportedLocales = locales;
-  if (supportedLocales.length == 1 && supportedLocales.first == 'main') {
-    supportedLocales = mainLocales;
-  }
-
+  var supportedLocales=getSupportedLocales();
   print('Downloading locale data for: ${supportedLocales.join(', ')}');
 
   for (var set in sets.keys) {
@@ -103,13 +83,4 @@ Future<void> download(
   }
 
   await response.stream.pipe(File(p.join(directory.path, file)).openWrite());
-}
-
-List<String> getLocales() {
-  var file = File('tool/data/core/availableLocales.json');
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  return ((json['availableLocales'] as Map<String, dynamic>)['modern']
-          as List<dynamic>)
-      .cast<String>();
 }
