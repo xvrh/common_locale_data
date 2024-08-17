@@ -26,6 +26,9 @@ void main() async {
     'misc': {'characters', 'listPatterns'},
   };
 
+  // CLDR coverage to download 'full' or 'modern'
+  final fullOrModern='modern';
+
   var dataDirectory = Directory('tool/data');
   if (dataDirectory.existsSync()) {
     dataDirectory.deleteSync(recursive: true);
@@ -58,7 +61,7 @@ void main() async {
         for (var locale in supportedLocales)
           pool.withResource(() async {
             var url =
-                'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set-modern/main/$locale/$file.json';
+                'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set-$fullOrModern/main/$locale/$file.json';
             var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
             var fileName = '$locale.json';
 
