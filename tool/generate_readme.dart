@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+
 import 'package:common_locale_data/common_locale_data.dart';
 import 'package:common_locale_data/src/supported_locales.dart';
 import 'package:dart_style/dart_style.dart';
@@ -17,6 +18,8 @@ void main() {
 
 String generateReadme(File source) {
   var template = source.readAsStringSync();
+
+  var package = readPackage();
 
   var readme = template.replaceAllMapped(_importRegex, (match) {
     var filePath = match.group(1)!;
@@ -45,6 +48,12 @@ String generateReadme(File source) {
           .map((l) => CommonLocaleData.en.languages[l]!.name)
           .join(', '));
 
+  readme = readme.replaceAll('##DOWNLOAD_DATE##', package.date.toUtc().toString());
+
+  readme = readme.replaceAll('##CLDR_VERSION##', package.cldrVersion);
+
+  readme = readme.replaceAll('##UNICODE_VERSION##', package.unicodeVerion);
+
   return readme;
 }
 
@@ -59,4 +68,15 @@ String _extractSection(String content, String sectionName) {
       .toList();
 
   return lines.join('\n');
+}
+
+({DateTime date, String cldrVersion, String unicodeVerion}) readPackage() {
+  var file = File('tool/data/core/package.json');
+  var content = file.readAsStringSync();
+  var json = jsonDecode(content) as Map<String, dynamic>;
+  return (
+    date: file.lastModifiedSync(),
+    cldrVersion: json['version'] as String,
+    unicodeVerion: json['unicodeVersion'] as String
+  );
 }

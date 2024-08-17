@@ -21,7 +21,9 @@ tree-shakeable. The final application's binaries won't include the translations 
 
 ## Source
 
-All the data are extracted from this repository: https://github.com/unicode-org/cldr-json
+All the data are extracted from this repository: https://github.com/unicode-org/cldr-json.
+The data was downloaded 2024-08-17 12:19:35.000Z. 
+It is CLDR version 45.0.0 and Unicode version 15.1.0.
 
 ## Example
 

@@ -15,6 +15,7 @@ void main() async {
   };
   final miscSets = {
     'bcp47/bcp47': {'timezone'},
+    'core': {'package'},
     'core/supplemental': {
       'aliases',
       'metaZones',
