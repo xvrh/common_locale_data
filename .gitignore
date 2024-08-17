@@ -17,3 +17,6 @@ pubspec.lock
 !.gitignore
 !.github
 !.pubignore
+
+# Downloaded CLDR data
+/tool/data/
