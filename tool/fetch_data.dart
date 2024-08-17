@@ -1,27 +1,42 @@
 import 'dart:async';
+import 'dart:convert';
 import 'dart:io';
 
-import 'package:common_locale_data/src/supported_locales.dart';
+import 'package:collection/collection.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:pool/pool.dart';
 
+// support all possible locales
+//Iterable<String> supportedLocales = [];
+
+// support the main locales (locales without a - in the name)
+Iterable<String> supportedLocales = ['main'];
+
+// only support English, French and German
+//Iterable<String> supportedLocales = ['en', 'de', 'fr];
+
+// for compatibility with original languages of this package
+//Iterable<String> supportedLocales = ['ar', 'bg', 'ca', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hr', 'id', 'it', 'ja', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'uk', 'zh'];
+
+
 void main() async {
-  final sets = <String, Set<String>>{
-    'units': {'units', 'measurementSystemNames'},
-    'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
-    'localenames': {'languages', 'territories'},
-    'misc': {'characters', 'listPatterns'},
-  };
   final miscSets = {
     'bcp47/bcp47': {'timezone'},
-    'core': {'package'},
+    'core': {'availableLocales', 'package'},
     'core/supplemental': {
       'aliases',
       'metaZones',
       'primaryZones',
       'windowsZones'
     }
+  };
+
+  final sets = <String, Set<String>>{
+    'units': {'units', 'measurementSystemNames'},
+    'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
+    'localenames': {'languages', 'territories'},
+    'misc': {'characters', 'listPatterns'},
   };
 
   var dataDirectory = Directory('tool/data');
@@ -31,30 +46,45 @@ void main() async {
   var client = http.Client();
   var pool = Pool(10);
 
-  for (var set in miscSets.keys) {
-    for (var file in miscSets[set]!) {
-      unawaited(pool.withResource(() async {
-        var url =
-            'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set/$file.json';
-        var directory = Directory(p.join(dataDirectory.path, '$set'));
-        var fileName = '$file.json';
+  print('Downloading locale independent data');
 
-        await download(directory, url, client, fileName);
-      }));
-    }
-  }
-  for (var set in sets.keys) {
-    for (var file in sets[set]!) {
-      for (var locale in supportedLocales) {
-        unawaited(pool.withResource(() async {
+  for (var set in miscSets.keys) {
+    await Future.wait([
+      for (var file in miscSets[set]!)
+        pool.withResource(() async {
           var url =
-              'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set-modern/main/$locale/$file.json';
-          var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
-          var fileName = '$locale.json';
+              'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set/$file.json';
+          var directory = Directory(p.join(dataDirectory.path, set));
+          var fileName = '$file.json';
 
           await download(directory, url, client, fileName);
-        }));
-      }
+        })
+    ]);
+  }
+
+  var locales = getLocales().whereNot((str) => str == 'und');
+  var mainLocales = locales.whereNot((str) => str.contains('-'));
+
+  if (supportedLocales.isEmpty) supportedLocales = locales;
+  if (supportedLocales.length == 1 && supportedLocales.first == 'main') {
+    supportedLocales = mainLocales;
+  }
+
+  print('Downloading locale data for: ${supportedLocales.join(', ')}');
+
+  for (var set in sets.keys) {
+    for (var file in sets[set]!) {
+      await Future.wait([
+        for (var locale in supportedLocales)
+          pool.withResource(() async {
+            var url =
+                'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set-modern/main/$locale/$file.json';
+            var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
+            var fileName = '$locale.json';
+
+            await download(directory, url, client, fileName);
+          })
+      ]);
     }
   }
 
@@ -73,4 +103,13 @@ Future<void> download(
   }
 
   await response.stream.pipe(File(p.join(directory.path, file)).openWrite());
+}
+
+List<String> getLocales() {
+  var file = File('tool/data/core/availableLocales.json');
+  var content = file.readAsStringSync();
+  var json = jsonDecode(content) as Map<String, dynamic>;
+  return ((json['availableLocales'] as Map<String, dynamic>)['modern']
+          as List<dynamic>)
+      .cast<String>();
 }
