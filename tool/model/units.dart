@@ -1,7 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
+
 import 'package:json_annotation/json_annotation.dart';
 import 'package:path/path.dart' as p;
+
 import '../generate_code.dart';
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
@@ -51,22 +53,23 @@ String _prefixPatternField(String key) {
   return 'pattern${key.replaceAll('-', 'Minus')}';
 }
 
-void generateUnits(String language, StringBuffer buffer) {
+void generateUnits(String locale, StringBuffer buffer) {
   var referenceUnits = readJson('en');
-  var allUnits = readJson(language);
-  buffer.writeln('''class Units${languageUpper(language)} implements Units {
-      Units${languageUpper(language)}._();
+  var allUnits = readJson(locale);
+  buffer.writeln('''class Units${localeUpper(locale)} implements Units {
+      Units${localeUpper(locale)}._();
       ''');
 
   final lengths = ['long', 'short', 'narrow'];
   var units = <String, Map<String, dynamic>>{
     for (var length in lengths) length: allUnits[length] as Map<String, dynamic>
   };
-  var firstUnits = referenceUnits['long'] as Map<String, dynamic>;
+  var firstReferenceUnits =
+      referenceUnits[lengths.first] as Map<String, dynamic>;
 
-  for (var key in firstUnits.keys) {
+  for (var key in firstReferenceUnits.keys) {
     var firstField =
-        UnitField.fromJson(firstUnits[key] as Map<String, dynamic>);
+        UnitField.fromJson(firstReferenceUnits[key] as Map<String, dynamic>);
     if (firstField.displayName != null) {
       final plurals = ['zero', 'one', 'two', 'few', 'many', 'other'];
 
@@ -75,16 +78,13 @@ void generateUnits(String language, StringBuffer buffer) {
       buffer.writeln('@override');
       buffer.writeln('Unit get ${lowerCamel(splitWords(key))} => Unit(');
       for (var length in lengths) {
-        var unitsForLength = units[length]!;
-        var jsonForLength = unitsForLength[key] as Map<String, dynamic>?;
-        var fallbackJson = (units[lengths.first]![key] ??
-                ((referenceUnits[length]! as Map<String, dynamic>)[key]) ??
-                ((referenceUnits[lengths.first]! as Map<String, dynamic>)[key]))
-            as Map<String, dynamic>;
-        jsonForLength ??= fallbackJson;
-        var unitForLength = UnitField.fromJson(jsonForLength);
-        var fallback = UnitField.fromJson(fallbackJson);
-        var displayName = unitForLength.displayName ?? fallback.displayName;
+        var unitForLength = UnitField.fromJsonWithFallback([
+          units[length]![key],
+          units[lengths.first]![key],
+          referenceUnits[length]![key],
+          firstReferenceUnits[key]
+        ]);
+        var displayName = unitForLength.displayName;
         if (displayName == null) {
           throw Exception(
               '$key ${unitForLength.displayName} is null for length $length');
@@ -173,6 +173,26 @@ class UnitField {
 
   factory UnitField.fromJson(Map<String, dynamic> json) =>
       _$UnitFieldFromJson(json);
+
+  factory UnitField.fromJsonWithFallback(Iterable<dynamic> jsons) {
+    var unitFields = jsons.nonNulls
+        .map((json) => _$UnitFieldFromJson(json as Map<String, dynamic>));
+    var res = unitFields.first;
+    for (var unitField in unitFields.skip(1)) {
+      res = UnitField(
+          res.displayName ?? unitField.displayName,
+          res.unitPatternCountZero ?? unitField.unitPatternCountZero,
+          res.unitPatternCountOne ?? unitField.unitPatternCountOne,
+          res.unitPatternCountTwo ?? unitField.unitPatternCountTwo,
+          res.unitPatternCountFew ?? unitField.unitPatternCountFew,
+          res.unitPatternCountMany ?? unitField.unitPatternCountMany,
+          res.unitPatternCountOther ?? unitField.unitPatternCountOther,
+          res.perUnitPattern ?? unitField.perUnitPattern,
+          res.unitPrefixPattern ?? unitField.unitPrefixPattern,
+          res.compoundUnitPattern ?? unitField.compoundUnitPattern);
+    }
+    return res;
+  }
 
   final String? displayName;
 

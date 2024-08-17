@@ -9,8 +9,8 @@ void generateLanguages(String language, StringBuffer output) {
   var translatedLanguages = readLanguages(language);
 
   output.writeln('''
-class Languages${languageUpper(language)} extends Languages {
-  Languages${languageUpper(language)}._();
+class Languages${localeUpper(language)} extends Languages {
+  Languages${localeUpper(language)}._();
 ''');
 
   String? translatedLanguage(String languageCode) {

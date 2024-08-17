@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
+
 import 'package:path/path.dart' as p;
+
 import '../generate_code.dart';
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
@@ -23,9 +25,7 @@ abstract class Territories {
       var name = lowerCamel(splitWords(entry.value as String));
       code.writeln('Territory get $name;');
     } else {
-      assert(entry.key.length == 2 ||
-          entry.key.endsWith('-alt-variant') ||
-          entry.key.endsWith('-alt-short'));
+      assert(entry.key.length == 2 || entry.key.contains('-alt-'));
     }
   }
 
@@ -33,13 +33,13 @@ abstract class Territories {
   return '$code';
 }
 
-void generateTerritories(String language, StringBuffer output) {
+void generateTerritories(String locale, StringBuffer output) {
   var reference = readTerritories('en');
-  var translatedTerritories = readTerritories(language);
+  var translatedTerritories = readTerritories(locale);
 
   output.writeln('''
-class Territories${languageUpper(language)} implements Territories {
-  Territories${languageUpper(language)}._();
+class Territories${localeUpper(locale)} implements Territories {
+  Territories${localeUpper(locale)}._();
 ''');
 
   String translatedTerritory(String territoryCode) {
@@ -47,7 +47,8 @@ class Territories${languageUpper(language)} implements Territories {
     output.writeln("'$territoryCode',");
     var translatedName = translatedTerritories[territoryCode] as String?;
     if (translatedName == null) {
-      throw Exception('$territoryCode is null for $language');
+      print('*** $territoryCode is null for $locale');
+      translatedName = '${translatedTerritories['ZZ'] as String} ($territoryCode)';
     }
     output.writeln('${escapeDartString(translatedName)},');
     for (var alt in ['variant', 'short']) {

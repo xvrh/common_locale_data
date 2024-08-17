@@ -1,21 +1,27 @@
 import 'dart:io';
-import 'package:common_locale_data/common_locale_data.dart';
-import 'package:common_locale_data/src/supported_locales.dart';
+
+import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
+
 import 'model/date_fields.dart';
 import 'model/language.dart';
 import 'model/territory.dart';
 import 'model/units.dart';
 import 'utils/case_format.dart';
 import 'utils/split_words.dart';
+import 'utils/supported_locales.dart';
+
+var supportedLocales = getSupportedLocales();
 
 final _formatter = DartFormatter();
 
-String languageUpper(String language) => upperCamel(splitWords(language));
-String languageAllLower(String language) =>
-    language.replaceAll('-', '_').toLowerCase();
+String localeUpper(String locale) => upperCamel(splitWords(locale));
+
+String localeAllLower(String locale) =>
+    locale.replaceAll('-', '_').toLowerCase();
 
 void main() {
+  print('Generate common files');
   File('lib/src/common_locale_data.dart')
       .writeAsStringSync(_format(generateCommon()));
   File('lib/src/units_model.dart')
@@ -23,7 +29,8 @@ void main() {
   File('lib/src/territories_model.dart')
       .writeAsStringSync(_format(generateTerritoriesModel()));
 
-  for (var language in supportedLocales) {
+  for (var locale in supportedLocales) {
+    print('Generate file for $locale');
     var buffer = StringBuffer()
       ..writeln("import 'package:collection/collection.dart';")
       ..writeln("import '../../common_locale_data.dart' show CommonLocaleData;")
@@ -34,49 +41,49 @@ void main() {
       ..writeln("import '../units.dart';");
 
     buffer.writeln('''
-const _locale = '$language';
+const _locale = '$locale';
 
-/// Translations in ${CommonLocaleData.en.languages[language]!.name} of [CommonLocaleData]
-class CommonLocaleData${languageUpper(language)} implements CommonLocaleData {
+/// Translations of [CommonLocaleData] for $locale
+class CommonLocaleData${localeUpper(locale)} implements CommonLocaleData {
   String get locale => _locale;
   
-  const CommonLocaleData${languageUpper(language)}();
+  const CommonLocaleData${localeUpper(locale)}();
 
-  static final _dateFields = DateFields${languageUpper(language)}._();
+  static final _dateFields = DateFields${localeUpper(locale)}._();
   @override
   DateFields get date => _dateFields;
   
-  static final _languages = Languages${languageUpper(language)}._();
+  static final _languages = Languages${localeUpper(locale)}._();
   @override
   Languages get languages => _languages;
   
-  static final _units = Units${languageUpper(language)}._();
+  static final _units = Units${localeUpper(locale)}._();
   @override
   Units get units => _units;
   
-  static final _territories = Territories${languageUpper(language)}._();
+  static final _territories = Territories${localeUpper(locale)}._();
   @override
   Territories get territories => _territories;
 }
 ''');
 
-    generateLanguages(language, buffer);
-    generateUnits(language, buffer);
-    generateDateFields(language, buffer);
-    generateTerritories(language, buffer);
+    generateLanguages(locale, buffer);
+    generateUnits(locale, buffer);
+    generateDateFields(locale, buffer);
+    generateTerritories(locale, buffer);
 
     var formatted = _format(buffer.toString());
 
-    File('lib/src/data/${languageAllLower(language)}.dart')
+    File('lib/src/data/${localeAllLower(locale)}.dart')
         .writeAsStringSync(formatted);
   }
 }
 
 String generateCommon() {
   var code = StringBuffer();
-  for (var language in supportedLocales) {
+  for (var locale in supportedLocales) {
     code.writeln(
-        "import 'data/${languageAllLower(language)}.dart' show CommonLocaleData${languageUpper(language)};");
+        "import 'data/${localeAllLower(locale)}.dart' show CommonLocaleData${localeUpper(locale)};");
   }
   code.writeln("import 'date_fields.dart';");
   code.writeln("import 'languages.dart';");
@@ -100,11 +107,14 @@ abstract class CommonLocaleData {
   Territories get territories;
 ''');
 
-  for (var language in supportedLocales) {
+  for (var locale in supportedLocales) {
+    var localeConstantName = lowerCamel(splitWords(locale));
+    if (Keyword.keywords.containsKey(localeConstantName)) {
+      localeConstantName='\$$localeConstantName';
+    }
+    code.writeln('/// Access the [CommonLocaleData] for $locale');
     code.writeln(
-        '/// Access the [CommonLocaleData] in ${CommonLocaleData.en.languages[language]!.name}');
-    code.writeln(
-        'static const ${lowerCamel(splitWords(language))} = CommonLocaleData${languageUpper(language)}();');
+        'static const $localeConstantName = CommonLocaleData${localeUpper(locale)}();');
   }
 
   code.writeln('}');
