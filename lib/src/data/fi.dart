@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'fi';
 
-/// Translations in Finnish of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for fi
 class CommonLocaleDataFi implements CommonLocaleData {
   String get locale => _locale;
 
@@ -279,7 +279,7 @@ class LanguagesFi extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'haryanvi',
     ),
     'bgn': Language(
       'bgn',
@@ -312,6 +312,14 @@ class LanguagesFi extends Languages {
     'bla': Language(
       'bla',
       'siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
+    'blt': Language(
+      'blt',
+      'tai dam',
     ),
     'bm': Language(
       'bm',
@@ -452,6 +460,10 @@ class LanguagesFi extends Languages {
     'chy': Language(
       'chy',
       'cheyenne',
+    ),
+    'cic': Language(
+      'cic',
+      'chickasaw',
     ),
     'ckb': Language(
       'ckb',
@@ -949,11 +961,6 @@ class LanguagesFi extends Languages {
       'hi',
       'hindi',
     ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'hindi (latinalainen)',
-      variant: 'hinglish',
-    ),
     'hif': Language(
       'hif',
       'fidžinhindi',
@@ -969,6 +976,10 @@ class LanguagesFi extends Languages {
     'hmn': Language(
       'hmn',
       'hmong',
+    ),
+    'hnj': Language(
+      'hnj',
+      'hmong njua',
     ),
     'ho': Language(
       'ho',
@@ -1313,6 +1324,10 @@ class LanguagesFi extends Languages {
     'kwk': Language(
       'kwk',
       'kwakʼwala',
+    ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
     ),
     'ky': Language(
       'ky',
@@ -2386,6 +2401,10 @@ class LanguagesFi extends Languages {
       'trv',
       'taroko',
     ),
+    'trw': Language(
+      'trw',
+      'torwali',
+    ),
     'ts': Language(
       'ts',
       'tsonga',
@@ -2498,6 +2517,10 @@ class LanguagesFi extends Languages {
       'vmf',
       'maininfrankki',
     ),
+    'vmw': Language(
+      'vmw',
+      'makhuwa',
+    ),
     'vo': Language(
       'vo',
       'volapük',
@@ -2557,6 +2580,10 @@ class LanguagesFi extends Languages {
     'xmf': Language(
       'xmf',
       'mingreli',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -2623,14 +2650,6 @@ class LanguagesFi extends Languages {
       'zh',
       'kiina',
       menu: 'kiina (mandariini)',
-    ),
-    'zh-Hans': Language(
-      'zh-Hans',
-      'kiina (yksinkertaistettu)',
-    ),
-    'zh-Hant': Language(
-      'zh-Hant',
-      'kiina (perinteinen)',
     ),
     'zu': Language(
       'zu',
@@ -2715,6 +2734,18 @@ class UnitsFi implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('kvekto{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('deka{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2773,6 +2804,18 @@ class UnitsFi implements Units {
         long: UnitPrefixPattern('jotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('kvetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2845,7 +2888,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'G',
-          one: '{0} G',
+          one: '{0} G-voima',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
@@ -2867,7 +2910,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
+          one: '{0} metri per sekunti toiseen',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
@@ -2889,7 +2932,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'rev',
-          one: '{0} rev',
+          one: '{0} kierros',
           other: '{0} rev',
         ),
         narrow: UnitCountPattern(
@@ -2911,7 +2954,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
+          one: '{0} radiaani',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
@@ -2933,13 +2976,13 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} aste',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} aste',
           other: '{0}°',
         ),
       );
@@ -2955,13 +2998,13 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
+          one: '{0} kulmaminuutti',
           other: '{0}′',
         ),
         narrow: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
+          one: '{0} kulmaminuutti',
           other: '{0}′',
         ),
       );
@@ -2977,13 +3020,13 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
+          one: '{0} kulmasekunti',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
+          one: '{0} kulmasekunti',
           other: '{0}″',
         ),
       );
@@ -2999,7 +3042,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
+          one: '{0} neliökilometri',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
@@ -3021,7 +3064,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ha',
-          one: '{0} ha',
+          one: '{0} hehtaari',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
@@ -3043,7 +3086,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
+          one: '{0} neliömetri',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
@@ -3065,7 +3108,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
+          one: '{0} neliösenttimetri',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
@@ -3087,7 +3130,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
+          one: '{0} neliömaili',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
@@ -3109,7 +3152,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ac',
-          one: '{0} ac',
+          one: '{0} eekkeri',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
@@ -3131,7 +3174,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
+          one: '{0} neliöjaardi',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
@@ -3153,7 +3196,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
+          one: '{0} neliöjalka',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
@@ -3175,7 +3218,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
+          one: '{0} neliötuuma',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
@@ -3307,7 +3350,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
+          one: '{0} miljoonasosa',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
@@ -3395,7 +3438,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mooli',
-          one: '{0} mol',
+          one: '{0} mooli',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
@@ -3549,7 +3592,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
+          one: '{0} terabitti',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
@@ -3593,7 +3636,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
+          one: '{0} gigabitti',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
@@ -3637,7 +3680,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
+          one: '{0} megabitti',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
@@ -3681,7 +3724,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
+          one: '{0} kilobitti',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
@@ -3769,11 +3812,13 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'dec',
+          one: '{0} vuosikymmen',
           other: '{0} dec',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dec',
+          one: '{0} vuosikymmen',
           other: '{0} dec',
         ),
       );
@@ -3811,11 +3856,13 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'q',
+          one: '{0} neljännes',
           other: '{0} q',
         ),
         narrow: UnitCountPattern(
           _locale,
           'q',
+          one: '{0} neljännes',
           other: '{0} q',
         ),
       );
@@ -3919,7 +3966,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'min',
-          one: '{0} min',
+          one: '{0} minuutti',
           other: '{0} min',
         ),
         narrow: UnitCountPattern(
@@ -3941,7 +3988,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'sek',
-          one: '{0} s',
+          one: '{0} sekunti',
           other: '{0} s',
         ),
         narrow: UnitCountPattern(
@@ -3963,7 +4010,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
+          one: '{0} millisekunti',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
@@ -3985,7 +4032,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
+          one: '{0} mikrosekunti',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
@@ -4007,7 +4054,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
+          one: '{0} nanosekunti',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
@@ -4029,7 +4076,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
+          one: '{0} ampeeri',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
@@ -4051,7 +4098,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
+          one: '{0} milliampeeri',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
@@ -4073,7 +4120,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
+          one: '{0} ohmi',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
@@ -4095,7 +4142,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
+          one: '{0} voltti',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
@@ -4117,7 +4164,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
+          one: '{0} kilokalori',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
@@ -4139,7 +4186,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
+          one: '{0} kalori',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
@@ -4160,13 +4207,13 @@ class UnitsFi implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          other: '{0} kcal',
+          'kilokalorit',
+          one: '{0} kilokalori',
+          other: '{0} kilokaloria',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
+          'kilokalorit',
           one: '{0}kcal',
           other: '{0}kcal',
         ),
@@ -4183,7 +4230,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
+          one: '{0} kilojoule',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
@@ -4205,7 +4252,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
+          one: '{0} joule',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
@@ -4227,7 +4274,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
+          one: '{0} kilowattitunti',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
@@ -4249,7 +4296,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'elektronivoltti',
-          one: '{0} eV',
+          one: '{0} elektronivoltti',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
@@ -4271,7 +4318,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'BTU',
-          one: '{0} Btu',
+          one: '{0} brittiläinen terminen yksikkö',
           other: '{0} Btu',
         ),
         narrow: UnitCountPattern(
@@ -4287,11 +4334,13 @@ class UnitsFi implements Units {
         long: UnitCountPattern(
           _locale,
           'US therm',
+          one: '{0} US therm',
           other: '{0} US therm',
         ),
         short: UnitCountPattern(
           _locale,
           'US therm',
+          one: '{0} US therm',
           other: '{0} US therm',
         ),
         narrow: UnitCountPattern(
@@ -4313,7 +4362,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'pauna-voima',
-          one: '{0} lbf',
+          one: '{0} pauna-voima',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
@@ -4335,6 +4384,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'newton',
+          one: '{0} newton',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
@@ -4378,7 +4428,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
+          one: '{0} gigahertsi',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
@@ -4400,7 +4450,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
+          one: '{0} megahertsi',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
@@ -4422,7 +4472,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
+          one: '{0} kilohertsi',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
@@ -4444,7 +4494,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
+          one: '{0} hertsi',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
@@ -4466,6 +4516,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em-väli',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
@@ -4487,6 +4538,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} pikseli',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
@@ -4508,6 +4560,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0} megapikseliä',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
@@ -4529,6 +4582,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} pikseli / senttimetri',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
@@ -4543,12 +4597,14 @@ class UnitsFi implements Units {
   Unit get graphicsPixelPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'ppi',
-          other: '{0} ppi',
+          'pikselit tuumalla',
+          one: '{0} pikseli tuumalla',
+          other: '{0} pikseliä tuumalla',
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} pikseli tuumalla',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
@@ -4563,21 +4619,21 @@ class UnitsFi implements Units {
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'dots per centimeter',
-          one: '{0} dot per centimeter',
-          other: '{0} dots per centimeter',
+          'pisteet senttimetrillä',
+          one: '{0} piste senttimetrillä',
+          other: '{0} pistettä senttimetrillä',
         ),
         short: UnitCountPattern(
           _locale,
-          'dpcm',
-          one: '{0} dpcm',
-          other: '{0} dpcm',
+          'pisteet senttimetrillä',
+          one: '{0} piste senttimetrillä',
+          other: '{0} pistettä senttimetrillä',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dpcm',
-          one: '{0}dpcm',
-          other: '{0}dpcm',
+          'pisteet senttimetrillä',
+          one: '{0}ppcm',
+          other: '{0}ppcm',
         ),
       );
 
@@ -4585,9 +4641,9 @@ class UnitsFi implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'dpi',
-          one: '{0} dpi',
-          other: '{0} dpi',
+          'pisteet tuumalla',
+          one: '{0} piste tuumalla',
+          other: '{0} pistettä tuumalla',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4607,13 +4663,13 @@ class UnitsFi implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'piste',
+          'pisteet',
           one: '{0} piste',
           other: '{0} pistettä',
         ),
         short: UnitCountPattern(
           _locale,
-          'piste',
+          'pisteet',
           one: '{0} piste',
           other: '{0} pistettä',
         ),
@@ -4636,6 +4692,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} Maan säde',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
@@ -4657,7 +4714,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
+          one: '{0} kilometri',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
@@ -4679,7 +4736,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
+          one: '{0} metri',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
@@ -4701,7 +4758,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
+          one: '{0} desimetri',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
@@ -4723,7 +4780,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
+          one: '{0} senttimetri',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
@@ -4745,7 +4802,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
+          one: '{0} millimetri',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
@@ -4767,7 +4824,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
+          one: '{0} mikrometri',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
@@ -4789,7 +4846,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
+          one: '{0} nanometri',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
@@ -4811,7 +4868,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} pikometri',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
@@ -4833,7 +4890,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mi',
-          one: '{0} mi',
+          one: '{0} maili',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
@@ -4855,7 +4912,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
+          one: '{0} jaardi',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
@@ -4877,7 +4934,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
+          one: '{0} jalka',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
@@ -4899,7 +4956,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'in',
-          one: '{0} in',
+          one: '{0} tuuma',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
@@ -4921,7 +4978,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'pc',
-          one: '{0} pc',
+          one: '{0} parsek',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
@@ -4965,7 +5022,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'au',
-          one: '{0} au',
+          one: '{0} astronominen yksikkö',
           other: '{0} au',
         ),
         narrow: UnitCountPattern(
@@ -4987,7 +5044,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'fur',
-          one: '{0} fur',
+          one: '{0} furlong',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
@@ -5069,7 +5126,7 @@ class UnitsFi implements Units {
         long: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
+          one: '{0} point',
           other: '{0} pt',
         ),
         short: UnitCountPattern(
@@ -5097,6 +5154,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'auringon säteet',
+          one: '{0} auringon säde',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
@@ -5118,7 +5176,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
+          one: '{0} luksi',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
@@ -5140,6 +5198,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} kandela',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
@@ -5161,6 +5220,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} luumen',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
@@ -5182,7 +5242,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Auringon luminositeetit',
-          one: '{0} L☉',
+          one: '{0} Auringon luminositeetti',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
@@ -5204,7 +5264,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
+          one: '{0} tonni',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
@@ -5226,7 +5286,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
+          one: '{0} kilogramma',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
@@ -5248,7 +5308,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
+          one: '{0} gramma',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
@@ -5270,7 +5330,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
+          one: '{0} milligramma',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
@@ -5292,7 +5352,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
+          one: '{0} mikrogramma',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
@@ -5336,7 +5396,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
+          one: '{0} stone',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
@@ -5358,7 +5418,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
+          one: '{0} pauna',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
@@ -5380,7 +5440,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
+          one: '{0} unssi',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
@@ -5402,7 +5462,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
+          one: '{0} troy-unssi',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
@@ -5446,6 +5506,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'atomimassayksiköt',
+          one: '{0} atomimassayksikkö',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
@@ -5467,6 +5528,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Maan massat',
+          one: '{0} Maan massa',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
@@ -5488,7 +5550,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'auringon massat',
-          one: '{0} M☉',
+          one: '{0} auringon massa',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
@@ -5532,7 +5594,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
+          one: '{0} gigawatti',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
@@ -5554,7 +5616,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
+          one: '{0} megawatti',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
@@ -5576,7 +5638,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
+          one: '{0} kilowatti',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
@@ -5598,7 +5660,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
+          one: '{0} watti',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
@@ -5620,7 +5682,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
+          one: '{0} milliwatti',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
@@ -5686,7 +5748,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
+          one: '{0} pauna / neliötuuma',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
@@ -5708,7 +5770,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
+          one: '{0} elohopeatuuma',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
@@ -5730,6 +5792,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} baari',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
@@ -5751,7 +5814,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
+          one: '{0} millibaari',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
@@ -5773,6 +5836,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
+          one: '{0} normaali-ilmakehä',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
@@ -5794,6 +5858,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} pascal',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
@@ -5815,7 +5880,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
+          one: '{0} hehtopascal',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
@@ -5837,6 +5902,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} kilopascal',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
@@ -5858,6 +5924,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} megapascal',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
@@ -5879,7 +5946,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
+          one: '{0} kilometri tunnissa',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
@@ -5901,7 +5968,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
+          one: '{0} metri sekunnissa',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
@@ -5923,7 +5990,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
+          one: '{0} maili tunnissa',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
@@ -5945,7 +6012,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
+          one: '{0} solmu',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
@@ -5953,6 +6020,28 @@ class UnitsFi implements Units {
           'kn',
           one: '{0}kn',
           other: '{0}kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'bofori',
+          one: '{0} bofori',
+          other: '{0} boforia',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0} bofori',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0} bofori',
+          other: 'B {0}',
         ),
       );
 
@@ -5967,13 +6056,13 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} aste',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} aste',
           other: '{0}°',
         ),
       );
@@ -6033,7 +6122,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
+          one: '{0} kelvin',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
@@ -6055,7 +6144,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} lbf⋅ft',
+          one: '{0} pauna-jalka',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
@@ -6099,7 +6188,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
+          one: '{0} kuutiokilometri',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
@@ -6121,7 +6210,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
+          one: '{0} kuutiometri',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
@@ -6143,7 +6232,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
+          one: '{0} kuutiosenttimetri',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
@@ -6165,7 +6254,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
+          one: '{0} kuutiomaili',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
@@ -6187,7 +6276,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
+          one: '{0} kuutiojaardi',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
@@ -6209,7 +6298,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
+          one: '{0} kuutiojalka',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
@@ -6231,7 +6320,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
+          one: '{0} kuutiotuuma',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
@@ -6297,7 +6386,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
+          one: '{0} litra',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
@@ -6429,7 +6518,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
+          one: '{0} eekkerijalka',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
@@ -6451,7 +6540,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'bu',
-          one: '{0} bu',
+          one: '{0} busheli',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
@@ -6517,7 +6606,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
+          one: '{0} neljännesgallona',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
@@ -6539,7 +6628,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
+          one: '{0} pint',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
@@ -6671,6 +6760,7 @@ class UnitsFi implements Units {
         short: UnitCountPattern(
           _locale,
           'barrelit',
+          one: '{0} barreli',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
@@ -6832,6 +6922,28 @@ class UnitsFi implements Units {
           'qt br',
           one: '{0}qt br.',
           other: '{0}qt br.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -8098,6 +8210,10 @@ class TerritoriesFi implements Territories {
       'CP',
       'Clippertoninsaari',
     ),
+    'CQ': Territory(
+      'CQ',
+      'Sark',
+    ),
     'CR': Territory(
       'CR',
       'Costa Rica',
@@ -8735,7 +8851,7 @@ class TerritoriesFi implements Territories {
     ),
     'SJ': Territory(
       'SJ',
-      'Svalbard ja Jan Mayen',
+      'Huippuvuoret ja Jan Mayen',
     ),
     'SK': Territory(
       'SK',

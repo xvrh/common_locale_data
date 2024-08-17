@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'ca';
 
-/// Translations in Catalan of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for ca
 class CommonLocaleDataCa implements CommonLocaleData {
   String get locale => _locale;
 
@@ -255,7 +255,7 @@ class LanguagesCa extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'haryanvi',
     ),
     'bgn': Language(
       'bgn',
@@ -647,7 +647,7 @@ class LanguagesCa extends Languages {
     ),
     'es-419': Language(
       'es-419',
-      'espanyol hispanoamericà',
+      'espanyol llatinoamericà',
     ),
     'es-ES': Language(
       'es-ES',
@@ -884,11 +884,6 @@ class LanguagesCa extends Languages {
     'hi': Language(
       'hi',
       'hindi',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'hindi (llatí)',
-      variant: 'hinglish',
     ),
     'hif': Language(
       'hif',
@@ -2544,6 +2539,18 @@ class UnitsCa implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('quecto{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('deca{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2602,6 +2609,18 @@ class UnitsCa implements Units {
         long: UnitPrefixPattern('yotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('quetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2674,13 +2693,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'G',
-          one: '{0} G',
+          one: '{0} força G',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'G',
-          one: '{0} G',
+          one: '{0} força G',
           other: '{0} G',
         ),
       );
@@ -2696,13 +2715,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
+          one: '{0} metre per segon al quadrat',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
+          one: '{0} metre per segon al quadrat',
           other: '{0} m/s²',
         ),
       );
@@ -2740,13 +2759,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'radiants',
-          one: '{0} rad',
+          one: '{0} radiant',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
+          one: '{0} radiant',
           other: '{0} rad',
         ),
       );
@@ -2762,13 +2781,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'graus',
-          one: '{0}°',
+          one: '{0} grau',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grau',
           other: '{0}°',
         ),
       );
@@ -2828,13 +2847,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
+          one: '{0} quilòmetre quadrat',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
+          one: '{0} quilòmetre quadrat',
           other: '{0} km²',
         ),
       );
@@ -2850,13 +2869,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'hectàrees',
-          one: '{0} ha',
+          one: '{0} hectàrea',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hectàrea',
-          one: '{0} ha',
+          one: '{0} hectàrea',
           other: '{0} ha',
         ),
       );
@@ -2872,13 +2891,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
+          one: '{0} metre quadrat',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'metres²',
-          one: '{0} m²',
+          one: '{0} metre quadrat',
           other: '{0} m²',
         ),
       );
@@ -2894,13 +2913,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
+          one: '{0} centímetre quadrat',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
+          one: '{0} centímetre quadrat',
           other: '{0} cm²',
         ),
       );
@@ -2916,13 +2935,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
+          one: '{0} milla quadrada',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
+          one: '{0} milla quadrada',
           other: '{0} mi²',
         ),
       );
@@ -2938,13 +2957,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'acres',
-          one: '{0} ac',
+          one: '{0} acre',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
           _locale,
           'acre',
-          one: '{0} ac',
+          one: '{0} acre',
           other: '{0} ac',
         ),
       );
@@ -2960,13 +2979,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
+          one: '{0} iarda quadrada',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
+          one: '{0} iarda quadrada',
           other: '{0} yd²',
         ),
       );
@@ -2982,13 +3001,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
+          one: '{0} peu quadrat',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
+          one: '{0} peu quadrat',
           other: '{0} ft²',
         ),
       );
@@ -3004,13 +3023,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
+          one: '{0} polzada quadrada',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
+          one: '{0} polzada quadrada',
           other: '{0} in²',
         ),
       );
@@ -3070,13 +3089,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} mg/dL',
+          one: '{0} mil·ligram per decilitre',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} mg/dL',
+          one: '{0} mil·ligram per decilitre',
           other: '{0} mg/dL',
         ),
       );
@@ -3136,13 +3155,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'parts/milió',
-          one: '{0} ppm',
+          one: '{0} part per milió',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
+          one: '{0} part per milió',
           other: '{0} ppm',
         ),
       );
@@ -3224,11 +3243,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} mol',
           other: '{0} mol',
         ),
       );
@@ -3332,13 +3353,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
+          one: '{0} petabyte',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
+          one: '{0} petabyte',
           other: '{0} PB',
         ),
       );
@@ -3354,13 +3375,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
+          one: '{0} terabyte',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
+          one: '{0} terabyte',
           other: '{0} TB',
         ),
       );
@@ -3376,13 +3397,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
+          one: '{0} terabit',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
+          one: '{0} terabit',
           other: '{0} Tb',
         ),
       );
@@ -3398,13 +3419,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
+          one: '{0} gigabyte',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
+          one: '{0} gigabyte',
           other: '{0} GB',
         ),
       );
@@ -3420,13 +3441,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
+          one: '{0} gigabit',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
+          one: '{0} gigabit',
           other: '{0} Gb',
         ),
       );
@@ -3442,13 +3463,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
+          one: '{0} megabyte',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
+          one: '{0} megabyte',
           other: '{0} MB',
         ),
       );
@@ -3486,13 +3507,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
+          one: '{0} kilobyte',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
+          one: '{0} kilobyte',
           other: '{0} kB',
         ),
       );
@@ -3508,13 +3529,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
+          one: '{0} kilobit',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
+          one: '{0} kilobit',
           other: '{0} kb',
         ),
       );
@@ -3728,13 +3749,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'hores',
-          one: '{0} h',
+          one: '{0} hora',
           other: '{0} h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'h',
-          one: '{0} h',
+          one: '{0} hora',
           other: '{0} h',
         ),
       );
@@ -3750,13 +3771,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'min',
-          one: '{0} min',
+          one: '{0} minut',
           other: '{0} min',
         ),
         narrow: UnitCountPattern(
           _locale,
           'min',
-          one: '{0} min',
+          one: '{0} minut',
           other: '{0} min',
         ),
       );
@@ -3772,13 +3793,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           's',
-          one: '{0} s',
+          one: '{0} segon',
           other: '{0} s',
         ),
         narrow: UnitCountPattern(
           _locale,
           's',
-          one: '{0} s',
+          one: '{0} segon',
           other: '{0} s',
         ),
       );
@@ -3794,13 +3815,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mil·lisegons',
-          one: '{0} ms',
+          one: '{0} mil·lisegon',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
+          one: '{0} mil·lisegon',
           other: '{0} ms',
         ),
       );
@@ -3816,13 +3837,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
+          one: '{0} microsegon',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
+          one: '{0} microsegon',
           other: '{0} μs',
         ),
       );
@@ -3838,13 +3859,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
+          one: '{0} nanosegon',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
+          one: '{0} nanosegon',
           other: '{0} ns',
         ),
       );
@@ -3860,13 +3881,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
+          one: '{0} ampere',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
+          one: '{0} ampere',
           other: '{0} A',
         ),
       );
@@ -3882,13 +3903,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
+          one: '{0} mil·liampere',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
+          one: '{0} mil·liampere',
           other: '{0} mA',
         ),
       );
@@ -3904,13 +3925,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
+          one: '{0} ohm',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
+          one: '{0} ohm',
           other: '{0} Ω',
         ),
       );
@@ -3926,13 +3947,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
+          one: '{0} volt',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
+          one: '{0} volt',
           other: '{0} V',
         ),
       );
@@ -3948,19 +3969,41 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
+          one: '{0} quilocaloria',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
+          one: '{0} quilocaloria',
           other: '{0} kcal',
         ),
       );
 
   @override
   Unit get energyCalorie => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'calories',
+          one: '{0} caloria',
+          other: '{0} calories',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'cal',
+          one: '{0} caloria',
+          other: '{0} cal',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'cal',
+          one: '{0} caloria',
+          other: '{0} cal',
+        ),
+      );
+
+  @override
+  Unit get energyFoodcalorie => Unit(
         long: UnitCountPattern(
           _locale,
           'calories',
@@ -3982,28 +4025,6 @@ class UnitsCa implements Units {
       );
 
   @override
-  Unit get energyFoodcalorie => Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilocalories',
-          one: '{0} quilocaloria',
-          other: '{0} quilocalories',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} kcal',
-          other: '{0} kcal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} kcal',
-          other: '{0} kcal',
-        ),
-      );
-
-  @override
   Unit get energyKilojoule => Unit(
         long: UnitCountPattern(
           _locale,
@@ -4014,13 +4035,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
+          one: '{0} quilojoule',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
+          one: '{0} quilojoule',
           other: '{0} kJ',
         ),
       );
@@ -4036,13 +4057,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
+          one: '{0} joule',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
+          one: '{0} joule',
           other: '{0} J',
         ),
       );
@@ -4058,13 +4079,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
+          one: '{0} quilowatt hora',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
+          one: '{0} quilowatt hora',
           other: '{0} kWh',
         ),
       );
@@ -4080,13 +4101,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
+          one: '{0} electró-volt',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
+          one: '{0} electró-volt',
           other: '{0} eV',
         ),
       );
@@ -4102,11 +4123,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'Btu',
+          one: '{0} unitat tèrmica britànica',
           other: '{0} Btu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Btu',
+          one: '{0} unitat tèrmica britànica',
           other: '{0} Btu',
         ),
       );
@@ -4144,13 +4167,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'lliures-força',
-          one: '{0} lbf',
+          one: '{0} lliura de força',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
-          one: '{0} lbf',
+          one: '{0} lliura de força',
           other: '{0} lbf',
         ),
       );
@@ -4166,11 +4189,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'newton',
+          one: '{0} newton',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N',
+          one: '{0} newton',
           other: '{0} N',
         ),
       );
@@ -4208,13 +4233,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
+          one: '{0} gigahertz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
+          one: '{0} gigahertz',
           other: '{0} GHz',
         ),
       );
@@ -4230,13 +4255,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
+          one: '{0} megahertz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
+          one: '{0} megahertz',
           other: '{0} MHz',
         ),
       );
@@ -4252,13 +4277,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
+          one: '{0} quilohertz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
+          one: '{0} quilohertz',
           other: '{0} kHz',
         ),
       );
@@ -4274,13 +4299,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
+          one: '{0} hertz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
+          one: '{0} hertz',
           other: '{0} Hz',
         ),
       );
@@ -4302,7 +4327,7 @@ class UnitsCa implements Units {
         narrow: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
+          one: '{0}em',
           other: '{0} em',
         ),
       );
@@ -4318,13 +4343,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'píxels',
-          one: '{0} px',
+          one: '{0} píxel',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
-          one: '{0} px',
+          one: '{0} píxel',
           other: '{0} px',
         ),
       );
@@ -4399,9 +4424,9 @@ class UnitsCa implements Units {
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'punts per centímetre',
-          one: '{0} punt per centímetre',
-          other: '{0} punts per centímetre',
+          'píxels per centímetre',
+          one: '{0} píxel per centímetre',
+          other: '{0} píxels per centímetre',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4421,9 +4446,9 @@ class UnitsCa implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'punts per polzada',
-          one: '{0} punt per polzada',
-          other: '{0} punts per polzada',
+          'píxels per polzada',
+          one: '{0} píxel per polzada',
+          other: '{0} píxels per polzada',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4443,21 +4468,21 @@ class UnitsCa implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'píxels',
-          one: '{0} punt',
-          other: '{0} punts',
+          'dots',
+          one: '{0} píxel',
+          other: '{0} píxels',
         ),
         short: UnitCountPattern(
           _locale,
-          'punt',
-          one: '{0} punt',
-          other: '{0} punts',
+          'dots',
+          one: '{0} píxel',
+          other: '{0} píxels',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'punt',
-          one: '{0} punt',
-          other: '{0} punts',
+          'píxel',
+          one: '{0} píxel',
+          other: '{0} píxels',
         ),
       );
 
@@ -4472,11 +4497,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} radi terrestre',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} radi terrestre',
           other: '{0} R⊕',
         ),
       );
@@ -4492,13 +4519,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
+          one: '{0} quilòmetre',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
+          one: '{0} quilòmetre',
           other: '{0} km',
         ),
       );
@@ -4514,13 +4541,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
+          one: '{0} metre',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
+          one: '{0} metre',
           other: '{0} m',
         ),
       );
@@ -4536,13 +4563,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
+          one: '{0} decímetre',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
+          one: '{0} decímetre',
           other: '{0} dm',
         ),
       );
@@ -4558,13 +4585,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
+          one: '{0} centímetre',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
+          one: '{0} centímetre',
           other: '{0} cm',
         ),
       );
@@ -4580,13 +4607,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
+          one: '{0} mil·límetre',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
+          one: '{0} mil·límetre',
           other: '{0} mm',
         ),
       );
@@ -4602,13 +4629,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
+          one: '{0} micròmetre',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
+          one: '{0} micròmetre',
           other: '{0} μm',
         ),
       );
@@ -4624,13 +4651,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
+          one: '{0} nanòmetre',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
+          one: '{0} nanòmetre',
           other: '{0} nm',
         ),
       );
@@ -4646,13 +4673,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} picòmetre',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} picòmetre',
           other: '{0} pm',
         ),
       );
@@ -4668,13 +4695,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'milles',
-          one: '{0} mi',
+          one: '{0} milla',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi',
-          one: '{0} mi',
+          one: '{0} milla',
           other: '{0} mi',
         ),
       );
@@ -4690,13 +4717,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'iardes',
-          one: '{0} yd',
+          one: '{0} iarda',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
+          one: '{0} iarda',
           other: '{0} yd',
         ),
       );
@@ -4712,13 +4739,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'peus',
-          one: '{0} ft',
+          one: '{0} peu',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
+          one: '{0} peu',
           other: '{0} ft',
         ),
       );
@@ -4734,13 +4761,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'polzades',
-          one: '{0} in',
+          one: '{0} polzada',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in',
-          one: '{0} in',
+          one: '{0} polzada',
           other: '{0} in',
         ),
       );
@@ -4756,13 +4783,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'parsecs',
-          one: '{0} pc',
+          one: '{0} parsec',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'parsec',
-          one: '{0} pc',
+          one: '{0} parsec',
           other: '{0} pc',
         ),
       );
@@ -4822,11 +4849,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'fur',
+          one: '{0} estadi',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fur',
+          one: '{0} estadi',
           other: '{0} fur',
         ),
       );
@@ -4842,11 +4871,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'fth',
+          one: '{0} braça',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
           _locale,
           'braça',
+          one: '{0} braça',
           other: '{0} fth',
         ),
       );
@@ -4884,13 +4915,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
+          one: '{0} milla escandinava',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
+          one: '{0} milla escandinava',
           other: '{0} smi',
         ),
       );
@@ -4906,13 +4937,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'punts',
-          one: '{0} pt',
+          one: '{0} punt tipogràfic',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
+          one: '{0} punt tipogràfic',
           other: '{0} pt',
         ),
       );
@@ -4928,11 +4959,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} radi solar',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} radi solar',
           other: '{0} R☉',
         ),
       );
@@ -4948,13 +4981,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'lux',
-          one: '{0} lx',
+          one: '{0} lux',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lux',
-          one: '{0} lx',
+          one: '{0} lux',
           other: '{0} lx',
         ),
       );
@@ -4970,11 +5003,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} candela',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} candela',
           other: '{0} cd',
         ),
       );
@@ -4990,11 +5025,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lumen',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lumen',
           other: '{0} lm',
         ),
       );
@@ -5010,11 +5047,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'lluminositats solars',
+          one: '{0} lluminositat solar',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} lluminositat solar',
           other: '{0} L☉',
         ),
       );
@@ -5029,15 +5068,15 @@ class UnitsCa implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          't mètriques',
-          one: '{0} t mètr.',
+          't mètr.',
+          one: '{0} t m',
           other: '{0} t mètr.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          't mètriques',
-          one: '{0} t mètr.',
-          other: '{0} t mètr.',
+          't',
+          one: '{0} t m',
+          other: '{0} t m',
         ),
       );
 
@@ -5052,13 +5091,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
+          one: '{0} quilogram',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
+          one: '{0} quilogram',
           other: '{0} kg',
         ),
       );
@@ -5074,13 +5113,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'grams',
-          one: '{0} g',
+          one: '{0} gram',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
+          one: '{0} gram',
           other: '{0} g',
         ),
       );
@@ -5096,13 +5135,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
+          one: '{0} mil·ligram',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
+          one: '{0} mil·ligram',
           other: '{0} mg',
         ),
       );
@@ -5118,13 +5157,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
+          one: '{0} microgram',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
+          one: '{0} microgram',
           other: '{0} μg',
         ),
       );
@@ -5162,13 +5201,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
+          one: '{0} pedra',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
+          one: '{0} pedra',
           other: '{0} st',
         ),
       );
@@ -5184,13 +5223,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
+          one: '{0} lliura',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
+          one: '{0} lliura',
           other: '{0} lb',
         ),
       );
@@ -5206,13 +5245,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
+          one: '{0} unça',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
+          one: '{0} unça',
           other: '{0} oz',
         ),
       );
@@ -5272,13 +5311,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
+          one: '{0} dalton',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
+          one: '{0} dalton',
           other: '{0} Da',
         ),
       );
@@ -5294,13 +5333,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
+          one: '{0} massa de la Terra',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
+          one: '{0} massa de la Terra',
           other: '{0} M⊕',
         ),
       );
@@ -5316,11 +5355,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} massa solar',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} massa solar',
           other: '{0} M☉',
         ),
       );
@@ -5358,13 +5399,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
+          one: '{0} gigawatt',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
+          one: '{0} gigawatt',
           other: '{0} GW',
         ),
       );
@@ -5380,13 +5421,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
+          one: '{0} megawatt',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
+          one: '{0} megawatt',
           other: '{0} MW',
         ),
       );
@@ -5402,7 +5443,7 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
+          one: '{0} quilowatt',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
@@ -5424,13 +5465,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
+          one: '{0} watt',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
+          one: '{0} watt',
           other: '{0} W',
         ),
       );
@@ -5446,13 +5487,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
+          one: '{0} mil·liwatt',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
+          one: '{0} mil·liwatt',
           other: '{0} mW',
         ),
       );
@@ -5512,13 +5553,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
+          one: '{0} lliura per polzada quadrada',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
+          one: '{0} lliura per polzada quadrada',
           other: '{0} psi',
         ),
       );
@@ -5534,13 +5575,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
+          one: '{0} polzada de mercuri',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
+          one: '{0} polzada de mercuri',
           other: '{0} inHg',
         ),
       );
@@ -5578,7 +5619,7 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
+          one: '{0} mil·libar',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
@@ -5600,13 +5641,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
+          one: '{0} atmosfera',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
+          one: '{0} atmosfera',
           other: '{0} atm',
         ),
       );
@@ -5622,13 +5663,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
+          one: '{0} pascal',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
+          one: '{0} pascal',
           other: '{0} Pa',
         ),
       );
@@ -5644,13 +5685,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
+          one: '{0} hectopascal',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
+          one: '{0} hectopascal',
           other: '{0} hPa',
         ),
       );
@@ -5666,11 +5707,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} quilopascal',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} quilopascal',
           other: '{0} kPa',
         ),
       );
@@ -5686,11 +5729,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} megapascal',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} megapascal',
           other: '{0} MPa',
         ),
       );
@@ -5706,13 +5751,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
+          one: '{0} quilòmetre per hora',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
+          one: '{0} quilòmetre per hora',
           other: '{0} km/h',
         ),
       );
@@ -5728,13 +5773,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
+          one: '{0} metre per segon',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
+          one: '{0} metre per segon',
           other: '{0} m/s',
         ),
       );
@@ -5750,13 +5795,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
+          one: '{0} milla per hora',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
+          one: '{0} milla per hora',
           other: '{0} mi/h',
         ),
       );
@@ -5772,14 +5817,36 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
+          one: '{0} nus',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
+          one: '{0} nus',
           other: '{0} kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Beaufort',
+          one: 'Beaufort {0}',
+          other: 'Beaufort {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          other: 'B {0}',
         ),
       );
 
@@ -5794,13 +5861,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grau',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grau',
           other: '{0}°',
         ),
       );
@@ -5860,13 +5927,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
+          one: '{0} Kelvin',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
+          one: '{0} Kelvin',
           other: '{0} K',
         ),
       );
@@ -5882,13 +5949,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} lbf⋅ft',
+          one: '{0} lliura-peu',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} lbf⋅ft',
+          one: '{0} lliura-peu',
           other: '{0} lbf⋅ft',
         ),
       );
@@ -5904,13 +5971,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
+          one: '{0} newton-metre',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
+          one: '{0} newton-metre',
           other: '{0} N⋅m',
         ),
       );
@@ -5926,13 +5993,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
+          one: '{0} quilòmetre cúbic',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
+          one: '{0} quilòmetre cúbic',
           other: '{0} km³',
         ),
       );
@@ -5948,13 +6015,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
+          one: '{0} metre cúbic',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
+          one: '{0} metre cúbic',
           other: '{0} m³',
         ),
       );
@@ -5970,13 +6037,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
+          one: '{0} centímetre cúbic',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
+          one: '{0} centímetre cúbic',
           other: '{0} cm³',
         ),
       );
@@ -5992,7 +6059,7 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
+          one: '{0} milla cúbica',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
@@ -6014,13 +6081,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
+          one: '{0} iarda cúbica',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
+          one: '{0} iarda cúbica',
           other: '{0} yd³',
         ),
       );
@@ -6036,13 +6103,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
+          one: '{0} peu cúbic',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
+          one: '{0} peu cúbic',
           other: '{0} ft³',
         ),
       );
@@ -6058,13 +6125,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
+          one: '{0} polzada cúbica',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
+          one: '{0} polzada cúbica',
           other: '{0} in³',
         ),
       );
@@ -6124,13 +6191,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
+          one: '{0} litre',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
+          one: '{0} litre',
           other: '{0} l',
         ),
       );
@@ -6234,13 +6301,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
+          one: '{0} tassa mètrica',
           other: '{0} mc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
+          one: '{0} tassa mètrica',
           other: '{0} mc',
         ),
       );
@@ -6256,13 +6323,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
+          one: '{0} acre-peu',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
+          one: '{0} acre-peu',
           other: '{0} ac ft',
         ),
       );
@@ -6278,13 +6345,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'bushels',
-          one: '{0} bu',
+          one: '{0} bushel',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bu',
-          one: '{0} bu',
+          one: '{0} bushel',
           other: '{0} bu',
         ),
       );
@@ -6344,13 +6411,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
+          one: '{0} quart',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
+          one: '{0} quart',
           other: '{0} qt',
         ),
       );
@@ -6366,13 +6433,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
+          one: '{0} pinta',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
+          one: '{0} pinta',
           other: '{0} pt',
         ),
       );
@@ -6498,13 +6565,13 @@ class UnitsCa implements Units {
         short: UnitCountPattern(
           _locale,
           'bbl',
-          one: '{0} bbl',
+          one: '{0} barril',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
-          one: '{0} bbl',
+          one: '{0} barril',
           other: '{0} bbl',
         ),
       );
@@ -6660,6 +6727,28 @@ class UnitsCa implements Units {
           'qt imp',
           one: '{0} qt imp',
           other: '{0} qt imp',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -7765,7 +7854,7 @@ class TerritoriesCa implements Territories {
     ),
     'AS': Territory(
       'AS',
-      'Samoa Nord-americana',
+      'Samoa Americana',
     ),
     'AT': Territory(
       'AT',
@@ -7857,7 +7946,7 @@ class TerritoriesCa implements Territories {
     ),
     'BV': Territory(
       'BV',
-      'Bouvet',
+      'Illa Bouvet',
     ),
     'BW': Territory(
       'BW',
@@ -7877,7 +7966,7 @@ class TerritoriesCa implements Territories {
     ),
     'CC': Territory(
       'CC',
-      'Illes Cocos',
+      'Illes Cocos (Keeling)',
     ),
     'CD': Territory(
       'CD',
@@ -7925,6 +8014,10 @@ class TerritoriesCa implements Territories {
     'CP': Territory(
       'CP',
       'Illa Clipperton',
+    ),
+    'CQ': Territory(
+      'CQ',
+      'regió desconeguda (CQ)',
     ),
     'CR': Territory(
       'CR',
@@ -8132,7 +8225,7 @@ class TerritoriesCa implements Territories {
     ),
     'HM': Territory(
       'HM',
-      'Illa Heard i Illes McDonald',
+      'Illes Heard i McDonald',
     ),
     'HN': Territory(
       'HN',
@@ -8349,7 +8442,7 @@ class TerritoriesCa implements Territories {
     ),
     'MP': Territory(
       'MP',
-      'Illes Mariannes Septentrionals',
+      'Illes Marianes del Nord',
     ),
     'MQ': Territory(
       'MQ',
@@ -8531,7 +8624,7 @@ class TerritoriesCa implements Territories {
     ),
     'SA': Territory(
       'SA',
-      'Aràbia Saudita',
+      'Aràbia Saudí',
     ),
     'SB': Territory(
       'SB',

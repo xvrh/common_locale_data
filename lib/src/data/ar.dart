@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'ar';
 
-/// Translations in Arabic of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for ar
 class CommonLocaleDataAr implements CommonLocaleData {
   String get locale => _locale;
 
@@ -228,7 +228,7 @@ class LanguagesAr extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'الهارينفية',
     ),
     'bgn': Language(
       'bgn',
@@ -542,7 +542,7 @@ class LanguagesAr extends Languages {
     ),
     'dz': Language(
       'dz',
-      'الزونخاية',
+      'دزونكا',
     ),
     'dzg': Language(
       'dzg',
@@ -834,11 +834,6 @@ class LanguagesAr extends Languages {
       'hi',
       'الهندية',
     ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'الهندية (اللاتينية)',
-      variant: 'الهنجليزية',
-    ),
     'hil': Language(
       'hil',
       'الهيليجينون',
@@ -1057,7 +1052,7 @@ class LanguagesAr extends Languages {
     ),
     'kj': Language(
       'kj',
-      'الكيونياما',
+      'كوانياما',
     ),
     'kk': Language(
       'kk',
@@ -1203,10 +1198,6 @@ class LanguagesAr extends Languages {
       'li',
       'الليمبورغية',
     ),
-    'lij': Language(
-      'lij',
-      'lij',
-    ),
     'lil': Language(
       'lil',
       'الليلويتية',
@@ -1214,6 +1205,10 @@ class LanguagesAr extends Languages {
     'lkt': Language(
       'lkt',
       'لاكوتا',
+    ),
+    'lmo': Language(
+      'lmo',
+      'اللومبردية',
     ),
     'ln': Language(
       'ln',
@@ -1694,7 +1689,7 @@ class LanguagesAr extends Languages {
     ),
     'qu': Language(
       'qu',
-      'الكويتشوا',
+      'كيشوا',
     ),
     'quc': Language(
       'quc',
@@ -2177,10 +2172,6 @@ class LanguagesAr extends Languages {
       've',
       'الفيندا',
     ),
-    'vec': Language(
-      'vec',
-      'vec',
-    ),
     'vi': Language(
       'vi',
       'الفيتنامية',
@@ -2390,6 +2381,18 @@ class UnitsAr implements Units {
         narrow: UnitPrefixPattern('يك{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('رونتو{0}'),
+        short: UnitPrefixPattern('رونتو{0}'),
+        narrow: UnitPrefixPattern('ر{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('كويكتو{0}'),
+        short: UnitPrefixPattern('كويكتو{0}'),
+        narrow: UnitPrefixPattern('كويكتو.{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('ديكا{0}'),
         short: UnitPrefixPattern('دا{0}'),
@@ -2404,7 +2407,7 @@ class UnitsAr implements Units {
   @override
   UnitPrefix get pattern10p3 => UnitPrefix(
         long: UnitPrefixPattern('كيلو{0}'),
-        short: UnitPrefixPattern('ك{0}'),
+        short: UnitPrefixPattern('كيلو{0}'),
         narrow: UnitPrefixPattern('ك{0}'),
       );
   @override
@@ -2446,56 +2449,68 @@ class UnitsAr implements Units {
   @override
   UnitPrefix get pattern10p24 => UnitPrefix(
         long: UnitPrefixPattern('يوتا{0}'),
-        short: UnitPrefixPattern('يو{0}'),
-        narrow: UnitPrefixPattern('يو{0}'),
+        short: UnitPrefixPattern('ي{0}'),
+        narrow: UnitPrefixPattern('ي{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('رونا{0}'),
+        short: UnitPrefixPattern('رونا{0}'),
+        narrow: UnitPrefixPattern('رونا.{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('كويتا{0}'),
+        short: UnitPrefixPattern('كويتا.{0}'),
+        narrow: UnitPrefixPattern('كويتا.{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
         long: UnitPrefixPattern('كيبي{0}'),
-        short: UnitPrefixPattern('كيبي{0}'),
-        narrow: UnitPrefixPattern('كيبي{0}'),
+        short: UnitPrefixPattern('كيبي.{0}'),
+        narrow: UnitPrefixPattern('كيبي.{0}'),
       );
   @override
   UnitPrefix get pattern1024p2 => UnitPrefix(
         long: UnitPrefixPattern('ميبي{0}'),
-        short: UnitPrefixPattern('ميبي{0}'),
-        narrow: UnitPrefixPattern('ميبي{0}'),
+        short: UnitPrefixPattern('ميبي.{0}'),
+        narrow: UnitPrefixPattern('ميبي.{0}'),
       );
   @override
   UnitPrefix get pattern1024p3 => UnitPrefix(
         long: UnitPrefixPattern('غيبي{0}'),
-        short: UnitPrefixPattern('غيبي{0}'),
-        narrow: UnitPrefixPattern('غيبي{0}'),
+        short: UnitPrefixPattern('غيبي.{0}'),
+        narrow: UnitPrefixPattern('غيبي.{0}'),
       );
   @override
   UnitPrefix get pattern1024p4 => UnitPrefix(
         long: UnitPrefixPattern('تيبي{0}'),
-        short: UnitPrefixPattern('تيبي{0}'),
-        narrow: UnitPrefixPattern('تيبي{0}'),
+        short: UnitPrefixPattern('تيبي.{0}'),
+        narrow: UnitPrefixPattern('تيبي.{0}'),
       );
   @override
   UnitPrefix get pattern1024p5 => UnitPrefix(
         long: UnitPrefixPattern('بيبي{0}'),
-        short: UnitPrefixPattern('بيبي{0}'),
-        narrow: UnitPrefixPattern('بيبي{0}'),
+        short: UnitPrefixPattern('بيبي.{0}'),
+        narrow: UnitPrefixPattern('بيبي.{0}'),
       );
   @override
   UnitPrefix get pattern1024p6 => UnitPrefix(
         long: UnitPrefixPattern('إكسبي{0}'),
-        short: UnitPrefixPattern('إكسبي{0}'),
-        narrow: UnitPrefixPattern('إكسبي{0}'),
+        short: UnitPrefixPattern('إكسبي.{0}'),
+        narrow: UnitPrefixPattern('إكسبي.{0}'),
       );
   @override
   UnitPrefix get pattern1024p7 => UnitPrefix(
         long: UnitPrefixPattern('زيبي{0}'),
-        short: UnitPrefixPattern('زيبي{0}'),
-        narrow: UnitPrefixPattern('زيبي{0}'),
+        short: UnitPrefixPattern('زيبي.{0}'),
+        narrow: UnitPrefixPattern('زيبي.{0}'),
       );
   @override
   UnitPrefix get pattern1024p8 => UnitPrefix(
         long: UnitPrefixPattern('يوبي{0}'),
-        short: UnitPrefixPattern('يوبي{0}'),
-        narrow: UnitPrefixPattern('يوبي{0}'),
+        short: UnitPrefixPattern('يوبي.{0}'),
+        narrow: UnitPrefixPattern('يوبي.{0}'),
       );
   @override
   CompoundUnit get per => CompoundUnit(
@@ -3330,11 +3345,13 @@ class UnitsAr implements Units {
         long: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0} permyriad',
           other: '{0}‱',
         ),
         short: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
@@ -5202,7 +5219,7 @@ class UnitsAr implements Units {
           'نقطة/سم',
           zero: '{0} نقطة/سم',
           one: '{0} نقطة/سم',
-          two: '{0} بكسل/سم',
+          two: '{0} نقطتان/سم',
           few: '{0} نقاط/سم',
           many: '{0} نقطة/سم',
           other: '{0} نقطة/سم',
@@ -5236,14 +5253,14 @@ class UnitsAr implements Units {
           'نقطة لكل بوصة',
           zero: '{0} نقطة/بوصة',
           one: '{0} نقطة/بوصة',
-          two: '{0} بكسل/بوصة',
+          two: 'نقطة/بوصة',
           few: '{0} نقاط/بوصة',
           many: '{0} نقطة/بوصة',
           other: '{0} نقطة/بوصة',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ن/بوصة',
+          'نقطة لكل بوصة',
           zero: '{0} ن/بوصة',
           one: '{0} ن/بوصة',
           two: '{0} ن/بوصة',
@@ -5257,33 +5274,21 @@ class UnitsAr implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'بكسل',
-          zero: '{0} بكسل',
-          one: '{0} بكسل',
-          two: '{0} بكسل',
-          few: '{0} بكسل',
-          many: '{0} بكسل',
-          other: '{0} بكسل',
+          'dots',
+          one: '{0} dot',
+          other: '{0} dots',
         ),
         short: UnitCountPattern(
           _locale,
-          'بكسل',
-          zero: '{0} بكسل',
-          one: '{0} بكسل',
-          two: '{0} بكسل',
-          few: '{0} بكسل',
-          many: '{0} بكسل',
-          other: '{0} بكسل',
+          'dots',
+          one: '{0} dot',
+          other: '{0} dots',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'بكسل',
-          zero: '{0} بكسل',
-          one: '{0} بكسل',
-          two: '{0} بكسل',
-          few: '{0} بكسل',
-          many: '{0} بكسل',
-          other: '{0} بكسل',
+          'dot',
+          one: '{0}dot',
+          other: '{0}dot',
         ),
       );
 
@@ -5329,8 +5334,8 @@ class UnitsAr implements Units {
           zero: '{0} كيلومتر',
           one: '{0} كيلومتر',
           two: '{0} كيلومتر',
-          few: '{0} كيلومتر',
-          many: '{0} كيلومتر',
+          few: '{0} كيلومترات',
+          many: '{0} كيلومترًا',
           other: '{0} كيلومتر',
         ),
         short: UnitCountPattern(
@@ -5362,14 +5367,14 @@ class UnitsAr implements Units {
           'متر',
           zero: '{0} متر',
           one: 'متر',
-          two: 'متران',
+          two: '{0} متر',
           few: '{0} أمتار',
           many: '{0} مترًا',
           other: '{0} متر',
         ),
         short: UnitCountPattern(
           _locale,
-          'متر',
+          'م',
           zero: '{0} متر',
           one: 'متر',
           two: 'متران',
@@ -5379,7 +5384,7 @@ class UnitsAr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'متر',
+          'م',
           zero: '{0} م',
           one: '{0} م',
           two: '{0} م',
@@ -7362,35 +7367,57 @@ class UnitsAr implements Units {
       );
 
   @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'بوفورت',
+          zero: 'بوفورت {0}',
+          one: 'بوفورت {0}',
+          two: 'بوفورت {0}',
+          few: 'بوفورت {0}',
+          many: 'بوفورت {0}',
+          other: 'بوفورت {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'بوفورت',
+          zero: 'بوفورت {0}',
+          one: 'بوفورت {0}',
+          two: 'بوفورت {0}',
+          few: 'بوفورت {0}',
+          many: 'بوفورت {0}',
+          other: 'بوفورت {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'بوفورت',
+          zero: 'بوفورت {0}',
+          one: 'بوفورت {0}',
+          two: 'بوفورت {0}',
+          few: 'بوفورت {0}',
+          many: 'بوفورت {0}',
+          other: 'بوفورت {0}',
+        ),
+      );
+
+  @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
           '°',
-          zero: '{0}°',
-          one: '{0}°',
-          two: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} degree temperature',
           other: '{0}°',
         ),
         short: UnitCountPattern(
           _locale,
           '°',
-          zero: '{0}°',
           one: '{0}°',
-          two: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          zero: '{0}°',
           one: '{0}°',
-          two: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
           other: '{0}°',
         ),
       );
@@ -8718,6 +8745,28 @@ class UnitsAr implements Units {
           few: '{0} ربع غالون إمبراطوري',
           many: '{0} ربع غالون إمبراطوري',
           other: '{0} ربع غالون إمبراطوري',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -10344,6 +10393,10 @@ class TerritoriesAr implements Territories {
       'CP',
       'جزيرة كليبيرتون',
     ),
+    'CQ': Territory(
+      'CQ',
+      'منطقة غير معروفة (CQ)',
+    ),
     'CR': Territory(
       'CR',
       'كوستاريكا',
@@ -11062,7 +11115,7 @@ class TerritoriesAr implements Territories {
     ),
     'TK': Territory(
       'TK',
-      'توكيلو',
+      'توكيلاو',
     ),
     'TL': Territory(
       'TL',
@@ -11149,7 +11202,7 @@ class TerritoriesAr implements Territories {
     ),
     'VI': Territory(
       'VI',
-      'جزر فيرجن التابعة للولايات المتحدة',
+      'جزر فيرجن الأمريكية',
     ),
     'VN': Territory(
       'VN',

@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'sr';
 
-/// Translations in Serbian of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for sr
 class CommonLocaleDataSr implements CommonLocaleData {
   String get locale => _locale;
 
@@ -215,7 +215,7 @@ class LanguagesSr extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'харијански',
     ),
     'bgn': Language(
       'bgn',
@@ -551,14 +551,6 @@ class LanguagesSr extends Languages {
       'en',
       'енглески',
     ),
-    'en-AU': Language(
-      'en-AU',
-      'енглески (Аустралија)',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'енглески (Канада)',
-    ),
     'en-GB': Language(
       'en-GB',
       'енглески (Велика Британија)',
@@ -581,17 +573,9 @@ class LanguagesSr extends Languages {
       'es',
       'шпански',
     ),
-    'es-419': Language(
-      'es-419',
-      'шпански (Латинска Америка)',
-    ),
     'es-ES': Language(
       'es-ES',
       'шпански (Европа)',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'шпански (Мексико)',
     ),
     'et': Language(
       'et',
@@ -648,14 +632,6 @@ class LanguagesSr extends Languages {
     'fr': Language(
       'fr',
       'француски',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'француски (Канада)',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'француски (Швајцарска)',
     ),
     'frc': Language(
       'frc',
@@ -796,11 +772,6 @@ class LanguagesSr extends Languages {
     'hi': Language(
       'hi',
       'хинди',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'хинди (латиница)',
-      variant: 'хинглиш',
     ),
     'hil': Language(
       'hil',
@@ -1162,10 +1133,6 @@ class LanguagesSr extends Languages {
       'li',
       'лимбуршки',
     ),
-    'lij': Language(
-      'lij',
-      'lij',
-    ),
     'lil': Language(
       'lil',
       'лилут',
@@ -1173,6 +1140,10 @@ class LanguagesSr extends Languages {
     'lkt': Language(
       'lkt',
       'лакота',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ломбард',
     ),
     'ln': Language(
       'ln',
@@ -1635,10 +1606,6 @@ class LanguagesSr extends Languages {
       'pt',
       'португалски',
     ),
-    'pt-BR': Language(
-      'pt-BR',
-      'португалски (Бразил)',
-    ),
     'pt-PT': Language(
       'pt-PT',
       'португалски (Португал)',
@@ -2077,7 +2044,7 @@ class LanguagesSr extends Languages {
     ),
     'tzm': Language(
       'tzm',
-      'централноатласки тамазигт',
+      'централноатласки тамашек',
     ),
     'udm': Language(
       'udm',
@@ -2118,10 +2085,6 @@ class LanguagesSr extends Languages {
     've': Language(
       've',
       'венда',
-    ),
-    'vec': Language(
-      'vec',
-      'vec',
     ),
     'vi': Language(
       'vi',
@@ -2332,6 +2295,18 @@ class UnitsSr implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ронто{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('квекто{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('дека{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2390,6 +2365,18 @@ class UnitsSr implements Units {
         long: UnitPrefixPattern('јота{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('рона{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('квета{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2463,15 +2450,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ге сила',
-          one: '{0} G',
-          few: '{0} G',
+          one: '{0} ге сила',
+          few: '{0} ге сила',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ге сила',
-          one: '{0} G',
-          few: '{0} G',
+          one: '{0} ге сила',
+          few: '{0} ге сила',
           other: '{0} G',
         ),
       );
@@ -2488,15 +2475,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
-          few: '{0} m/s²',
+          one: '{0} метар у секунди на квадрат',
+          few: '{0} метра у секунди на квадрат',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
-          few: '{0} m/s²',
+          one: '{0} метар у секунди на квадрат',
+          few: '{0} метра у секунди на квадрат',
           other: '{0} m/s²',
         ),
       );
@@ -2513,15 +2500,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'rev',
-          one: '{0} rev',
-          few: '{0} rev',
+          one: '{0} обртај',
+          few: '{0} обртаја',
           other: '{0} rev',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rev',
-          one: '{0} rev',
-          few: '{0} rev',
+          one: '{0} обртај',
+          few: '{0} обртаја',
           other: '{0} rev',
         ),
       );
@@ -2538,15 +2525,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
-          few: '{0} rad',
+          one: '{0} радијан',
+          few: '{0} радијана',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
-          few: '{0} rad',
+          one: '{0} радијан',
+          few: '{0} радијана',
           other: '{0} rad',
         ),
       );
@@ -2563,15 +2550,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'степени',
-          one: '{0}°',
-          few: '{0}°',
+          one: '{0} степен',
+          few: '{0} степена',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           'степени',
-          one: '{0}°',
-          few: '{0}°',
+          one: '{0} степен',
+          few: '{0} степена',
           other: '{0}°',
         ),
       );
@@ -2588,15 +2575,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'лучни мин',
-          one: '{0}′',
-          few: '{0}′',
+          one: '{0} лучни минут',
+          few: '{0} лучна минута',
           other: '{0}′',
         ),
         narrow: UnitCountPattern(
           _locale,
           'лучни мин',
-          one: '{0}′',
-          few: '{0}′',
+          one: '{0} лучни минут',
+          few: '{0} лучна минута',
           other: '{0}′',
         ),
       );
@@ -2613,15 +2600,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'лучне сек',
-          one: '{0}″',
-          few: '{0}″',
+          one: '{0} лучна секунда',
+          few: '{0} лучне секунде',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
           'лучне сек',
-          one: '{0}″',
-          few: '{0}″',
+          one: '{0} лучна секунда',
+          few: '{0} лучне секунде',
           other: '{0}″',
         ),
       );
@@ -2638,15 +2625,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'квадратни километри',
-          one: '{0} km²',
-          few: '{0} km²',
+          one: '{0} квадратни километар',
+          few: '{0} квадратна километра',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'квадратни километри',
-          one: '{0} km²',
-          few: '{0} km²',
+          one: '{0} квадратни километар',
+          few: '{0} квадратна километра',
           other: '{0} km²',
         ),
       );
@@ -2663,15 +2650,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'хектари',
-          one: '{0} ha',
-          few: '{0} ha',
+          one: '{0} хектар',
+          few: '{0} хектара',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'хектари',
-          one: '{0} ha',
-          few: '{0} ha',
+          one: '{0} хектар',
+          few: '{0} хектара',
           other: '{0} ha',
         ),
       );
@@ -2688,15 +2675,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'квадратни метри',
-          one: '{0} m²',
-          few: '{0} m²',
+          one: '{0} квадратни метар',
+          few: '{0} квадратна метра',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'квадратни метри',
-          one: '{0} m²',
-          few: '{0} m²',
+          one: '{0} квадратни метар',
+          few: '{0} квадратна метра',
           other: '{0} m²',
         ),
       );
@@ -2713,15 +2700,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
-          few: '{0} cm²',
+          one: '{0} квадратни центиметар',
+          few: '{0} квадратна центиметра',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
-          few: '{0} cm²',
+          one: '{0} квадратни центиметар',
+          few: '{0} квадратна центиметра',
           other: '{0} cm²',
         ),
       );
@@ -2738,15 +2725,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
-          few: '{0} mi²',
+          one: '{0} квадратна миља',
+          few: '{0} квадратне миље',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
-          few: '{0} mi²',
+          one: '{0} квадратна миља',
+          few: '{0} квадратне миље',
           other: '{0} mi²',
         ),
       );
@@ -2763,15 +2750,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'акери',
-          one: '{0} ac',
-          few: '{0} ac',
+          one: '{0} акер',
+          few: '{0} акера',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
           _locale,
           'акери',
-          one: '{0} ac',
-          few: '{0} ac',
+          one: '{0} акер',
+          few: '{0} акера',
           other: '{0} ac',
         ),
       );
@@ -2788,15 +2775,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
-          few: '{0} yd²',
+          one: '{0} квадратни јард',
+          few: '{0} квадратна јарда',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
-          few: '{0} yd²',
+          one: '{0} квадратни јард',
+          few: '{0} квадратна јарда',
           other: '{0} yd²',
         ),
       );
@@ -2813,15 +2800,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'квадратне стопе',
-          one: '{0} ft²',
-          few: '{0} ft²',
+          one: '{0} квадратна стопа',
+          few: '{0} квадратне стопе',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'квадратне стопе',
-          one: '{0} ft²',
-          few: '{0} ft²',
+          one: '{0} квадратна стопа',
+          few: '{0} квадратне стопе',
           other: '{0} ft²',
         ),
       );
@@ -2838,15 +2825,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
-          few: '{0} in²',
+          one: '{0} квадратни инч',
+          few: '{0} квадратна инча',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
-          few: '{0} in²',
+          one: '{0} квадратни инч',
+          few: '{0} квадратна инча',
           other: '{0} in²',
         ),
       );
@@ -2888,15 +2875,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kt',
-          one: '{0} kt',
-          few: '{0} kt',
+          one: '{0} карат',
+          few: '{0} карата',
           other: '{0} kt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kt',
-          one: '{0} kt',
-          few: '{0} kt',
+          one: '{0} карат',
+          few: '{0} карата',
           other: '{0} kt',
         ),
       );
@@ -2913,15 +2900,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} mg/dL',
-          few: '{0} mg/dL',
+          one: '{0} милиграм по децилитру',
+          few: '{0} милиграма по децилитру',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} mg/dL',
-          few: '{0} mg/dL',
+          one: '{0} милиграм по децилитру',
+          few: '{0} милиграма по децилитру',
           other: '{0} mg/dL',
         ),
       );
@@ -2938,15 +2925,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mmol/L',
-          one: '{0} mmol/L',
-          few: '{0} mmol/L',
+          one: '{0} милимол по литри',
+          few: '{0} милимола по литри',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmol/L',
-          one: '{0} mmol/L',
-          few: '{0} mmol/L',
+          one: '{0} милимол по литри',
+          few: '{0} милимола по литри',
           other: '{0} mmol/L',
         ),
       );
@@ -2988,15 +2975,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
+          one: '{0} честица на милион',
+          few: '{0} честице на милион',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
+          one: '{0} честица на милион',
+          few: '{0} честице на милион',
           other: '{0} ppm',
         ),
       );
@@ -3013,15 +3000,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'проценат',
-          one: '{0}%',
-          few: '{0}%',
+          one: '{0} проценат',
+          few: '{0} процената',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
-          one: '{0}%',
-          few: '{0}%',
+          one: '{0} проценат',
+          few: '{0} процената',
           other: '{0}%',
         ),
       );
@@ -3038,15 +3025,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'промил',
-          one: '{0}‰',
-          few: '{0}‰',
+          one: '{0} промил',
+          few: '{0} промила',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           'промил',
-          one: '{0}‰',
-          few: '{0}‰',
+          one: '{0} промил',
+          few: '{0} промила',
           other: '{0}‰',
         ),
       );
@@ -3056,18 +3043,19 @@ class UnitsSr implements Units {
         long: UnitCountPattern(
           _locale,
           '‱',
-          one: '{0}‱',
-          few: '{0}‱',
+          one: '{0} permyriad',
           other: '{0}‱',
         ),
         short: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
       );
@@ -3084,11 +3072,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} мол',
+          few: '{0} мола',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} мол',
+          few: '{0} мола',
           other: '{0} mol',
         ),
       );
@@ -3105,15 +3097,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'L/km',
-          one: '{0} L/km',
-          few: '{0} L/km',
+          one: '{0} литар по километру',
+          few: '{0} литра по километру',
           other: '{0} L/km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/km',
-          one: '{0} L/km',
-          few: '{0} L/km',
+          one: '{0} литар по километру',
+          few: '{0} литра по километру',
           other: '{0} L/km',
         ),
       );
@@ -3180,8 +3172,8 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mpg Imp.',
-          one: '{0} mpg Imp.',
-          few: '{0} mpg Imp.',
+          one: '{0} миља по империјалном галону',
+          few: '{0} миље по империјалном галону',
           other: '{0} mpg Imp.',
         ),
         narrow: UnitCountPattern(
@@ -3205,15 +3197,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
-          few: '{0} PB',
+          one: '{0} петабајт',
+          few: '{0} петабајта',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
-          few: '{0} PB',
+          one: '{0} петабајт',
+          few: '{0} петабајта',
           other: '{0} PB',
         ),
       );
@@ -3230,15 +3222,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
-          few: '{0} TB',
+          one: '{0} терабајт',
+          few: '{0} терабајта',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
-          few: '{0} TB',
+          one: '{0} терабајт',
+          few: '{0} терабајта',
           other: '{0} TB',
         ),
       );
@@ -3255,15 +3247,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
-          few: '{0} Tb',
+          one: '{0} терабит',
+          few: '{0} терабита',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
-          few: '{0} Tb',
+          one: '{0} терабит',
+          few: '{0} терабита',
           other: '{0} Tb',
         ),
       );
@@ -3280,15 +3272,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
-          few: '{0} GB',
+          one: '{0} гигабајт',
+          few: '{0} гигабајта',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
-          few: '{0} GB',
+          one: '{0} гигабајт',
+          few: '{0} гигабајта',
           other: '{0} GB',
         ),
       );
@@ -3305,15 +3297,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
-          few: '{0} Gb',
+          one: '{0} гигабит',
+          few: '{0} гигабита',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
-          few: '{0} Gb',
+          one: '{0} гигабит',
+          few: '{0} гигабита',
           other: '{0} Gb',
         ),
       );
@@ -3330,15 +3322,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
-          few: '{0} MB',
+          one: '{0} мегабајт',
+          few: '{0} мегабајта',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
-          few: '{0} MB',
+          one: '{0} мегабајт',
+          few: '{0} мегабајта',
           other: '{0} MB',
         ),
       );
@@ -3355,15 +3347,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
-          few: '{0} Mb',
+          one: '{0} мегабит',
+          few: '{0} мегабита',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
-          few: '{0} Mb',
+          one: '{0} мегабит',
+          few: '{0} мегабита',
           other: '{0} Mb',
         ),
       );
@@ -3380,15 +3372,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
-          few: '{0} kB',
+          one: '{0} килобајт',
+          few: '{0} килобајта',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
-          few: '{0} kB',
+          one: '{0} килобајт',
+          few: '{0} килобајта',
           other: '{0} kB',
         ),
       );
@@ -3405,15 +3397,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
-          few: '{0} kb',
+          one: '{0} килобит',
+          few: '{0} килобита',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
-          few: '{0} kb',
+          one: '{0} килобит',
+          few: '{0} килобита',
           other: '{0} kb',
         ),
       );
@@ -3730,15 +3722,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
-          few: '{0} ms',
+          one: '{0} милисекунда',
+          few: '{0} милисекунде',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
-          few: '{0} ms',
+          one: '{0} милисекунда',
+          few: '{0} милисекунде',
           other: '{0} ms',
         ),
       );
@@ -3755,15 +3747,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
-          few: '{0} μs',
+          one: '{0} микросекунда',
+          few: '{0} микросекунде',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
-          few: '{0} μs',
+          one: '{0} микросекунда',
+          few: '{0} микросекунде',
           other: '{0} μs',
         ),
       );
@@ -3780,15 +3772,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
-          few: '{0} ns',
+          one: '{0} наносекунда',
+          few: '{0} наносекунде',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
-          few: '{0} ns',
+          one: '{0} наносекунда',
+          few: '{0} наносекунде',
           other: '{0} ns',
         ),
       );
@@ -3805,15 +3797,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
-          few: '{0} A',
+          one: '{0} ампер',
+          few: '{0} ампера',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
-          few: '{0} A',
+          one: '{0} ампер',
+          few: '{0} ампера',
           other: '{0} A',
         ),
       );
@@ -3830,15 +3822,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
-          few: '{0} mA',
+          one: '{0} милиампер',
+          few: '{0} милиампера',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
-          few: '{0} mA',
+          one: '{0} милиампер',
+          few: '{0} милиампера',
           other: '{0} mA',
         ),
       );
@@ -3855,15 +3847,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
-          few: '{0} Ω',
+          one: '{0} ом',
+          few: '{0} ома',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
-          few: '{0} Ω',
+          one: '{0} ом',
+          few: '{0} ома',
           other: '{0} Ω',
         ),
       );
@@ -3880,15 +3872,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
-          few: '{0} V',
+          one: '{0} волт',
+          few: '{0} волта',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
-          few: '{0} V',
+          one: '{0} волт',
+          few: '{0} волта',
           other: '{0} V',
         ),
       );
@@ -3905,15 +3897,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
+          one: '{0} килокалорија',
+          few: '{0} килокалорије',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
+          one: '{0} килокалорија',
+          few: '{0} килокалорије',
           other: '{0} kcal',
         ),
       );
@@ -3930,15 +3922,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
-          few: '{0} cal',
+          one: '{0} калорија',
+          few: '{0} калорије',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
-          few: '{0} cal',
+          one: '{0} калорија',
+          few: '{0} калорије',
           other: '{0} cal',
         ),
       );
@@ -3980,15 +3972,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
-          few: '{0} kJ',
+          one: '{0} килоџул',
+          few: '{0} килоџула',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
-          few: '{0} kJ',
+          one: '{0} килоџул',
+          few: '{0} килоџула',
           other: '{0} kJ',
         ),
       );
@@ -4005,15 +3997,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
-          few: '{0} J',
+          one: '{0} џул',
+          few: '{0} џула',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
-          few: '{0} J',
+          one: '{0} џул',
+          few: '{0} џула',
           other: '{0} J',
         ),
       );
@@ -4030,15 +4022,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
-          few: '{0} kWh',
+          one: '{0} киловат-сат',
+          few: '{0} киловат-сата',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
-          few: '{0} kWh',
+          one: '{0} киловат-сат',
+          few: '{0} киловат-сата',
           other: '{0} kWh',
         ),
       );
@@ -4055,15 +4047,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'електронволт',
-          one: '{0} eV',
-          few: '{0} eV',
+          one: '{0} електронволт',
+          few: '{0} електронволта',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'електронволт',
-          one: '{0} eV',
-          few: '{0} eV',
+          'eV',
+          one: '{0} електронволт',
+          few: '{0} електронволта',
           other: '{0} eV',
         ),
       );
@@ -4073,16 +4065,19 @@ class UnitsSr implements Units {
         long: UnitCountPattern(
           _locale,
           'Британска термална јединица',
+          one: '{0} British thermal unit',
           other: '{0} Btu',
         ),
         short: UnitCountPattern(
           _locale,
           'Btu',
+          one: '{0} Btu',
           other: '{0} Btu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Btu',
+          one: '{0}Btu',
           other: '{0} Btu',
         ),
       );
@@ -4124,11 +4119,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0} фунта силе',
+          few: '{0} фунте силе',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0} фунта силе',
+          few: '{0} фунте силе',
           other: '{0} lbf',
         ),
       );
@@ -4145,11 +4144,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'њутн',
+          one: '{0} њутн',
+          few: '{0} њутна',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'њутн',
+          one: '{0} њутн',
+          few: '{0} њутна',
           other: '{0} N',
         ),
       );
@@ -4159,16 +4162,19 @@ class UnitsSr implements Units {
         long: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kilowatt-hour per 100 kilometers',
           other: '{0} kWh/100km',
         ),
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kWh/100km',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0}kWh/100km',
           other: '{0} kWh/100km',
         ),
       );
@@ -4185,15 +4191,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
-          few: '{0} GHz',
+          one: '{0} гигахерц',
+          few: '{0} гигахерца',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
-          few: '{0} GHz',
+          one: '{0} гигахерц',
+          few: '{0} гигахерца',
           other: '{0} GHz',
         ),
       );
@@ -4210,15 +4216,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
-          few: '{0} MHz',
+          one: '{0} мегахерц',
+          few: '{0} мегахерца',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
-          few: '{0} MHz',
+          one: '{0} мегахерц',
+          few: '{0} мегахерца',
           other: '{0} MHz',
         ),
       );
@@ -4235,15 +4241,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
-          few: '{0} kHz',
+          one: '{0} килохерц',
+          few: '{0} килохерца',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
-          few: '{0} kHz',
+          one: '{0} килохерц',
+          few: '{0} килохерца',
           other: '{0} kHz',
         ),
       );
@@ -4260,15 +4266,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
-          few: '{0} Hz',
+          one: '{0} херц',
+          few: '{0} херца',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
-          few: '{0} Hz',
+          one: '{0} херц',
+          few: '{0} херца',
           other: '{0} Hz',
         ),
       );
@@ -4279,21 +4285,18 @@ class UnitsSr implements Units {
           _locale,
           'em',
           one: '{0} em',
-          few: '{0} em',
           other: '{0} em',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
           one: '{0} em',
-          few: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
-          few: '{0} em',
+          one: '{0}em',
           other: '{0} em',
         ),
       );
@@ -4302,7 +4305,7 @@ class UnitsSr implements Units {
   Unit get graphicsPixel => Unit(
         long: UnitCountPattern(
           _locale,
-          'px',
+          'пиксели',
           one: '{0} пиксел',
           few: '{0} пиксела',
           other: '{0} пиксела',
@@ -4310,15 +4313,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'px',
-          one: '{0} px',
-          few: '{0} px',
+          one: '{0} пиксел',
+          few: '{0} пиксела',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
-          one: '{0} px',
-          few: '{0} px',
+          one: '{0} пиксел',
+          few: '{0} пиксела',
           other: '{0} px',
         ),
       );
@@ -4335,15 +4338,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'MP',
-          one: '{0} MP',
-          few: '{0} MP',
+          one: '{0} мегапиксел',
+          few: '{0} мегапиксела',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
-          one: '{0} MP',
-          few: '{0} MP',
+          one: '{0} мегапиксел',
+          few: '{0} мегапиксела',
           other: '{0} MP',
         ),
       );
@@ -4352,7 +4355,7 @@ class UnitsSr implements Units {
   Unit get graphicsPixelPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'ppcm',
+          'пиксели по центиметру',
           one: '{0} пиксел на центиметар',
           few: '{0} пиксела на центиметар',
           other: '{0} пиксела на центиметар',
@@ -4360,15 +4363,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ppcm',
-          one: '{0} ppcm',
-          few: '{0} ppcm',
+          one: '{0} пиксел на центиметар',
+          few: '{0} пиксела на центиметар',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
-          one: '{0} ppcm',
-          few: '{0} ppcm',
+          one: '{0} пиксел на центиметар',
+          few: '{0} пиксела на центиметар',
           other: '{0} ppcm',
         ),
       );
@@ -4377,23 +4380,23 @@ class UnitsSr implements Units {
   Unit get graphicsPixelPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'ppi',
-          one: '{0} ppi',
-          few: '{0} ppi',
-          other: '{0} ppi',
+          'пиксели по инчу',
+          one: '{0} пиксел по инчу',
+          few: '{0} пиксела по инчу',
+          other: '{0} пиксела по инчу',
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
-          one: '{0} ppi',
-          few: '{0} ppi',
+          one: '{0} пиксел по инчу',
+          few: '{0} пиксела по инчу',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
-          one: '{0} ppi',
-          few: '{0} ppi',
+          one: '{0} пиксел по инчу',
+          few: '{0} пиксела по инчу',
           other: '{0} ppi',
         ),
       );
@@ -4402,8 +4405,8 @@ class UnitsSr implements Units {
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'dpcm',
-          one: '{0} ppcm',
+          'тачке по центиметру',
+          one: '{0} тачка по центиметру',
           few: '{0} ppcm',
           other: '{0} dpcm',
         ),
@@ -4427,8 +4430,8 @@ class UnitsSr implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'dpi',
-          one: '{0} ppi',
+          'тачке по инчу',
+          one: '{0} тачка по инчу',
           few: '{0} ppi',
           other: '{0} dpi',
         ),
@@ -4452,7 +4455,7 @@ class UnitsSr implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'тачка',
+          'тачке',
           one: '{0} тачка',
           few: '{0} тачке',
           other: '{0} тачака',
@@ -4485,15 +4488,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} R⊕',
-          few: '{0} R⊕',
+          one: '{0} полупречник Земље',
+          few: '{0} полупречник Земље',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} R⊕',
-          few: '{0} R⊕',
+          one: '{0} полупречник Земље',
+          few: '{0} полупречник Земље',
           other: '{0} R⊕',
         ),
       );
@@ -4510,15 +4513,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
-          few: '{0} km',
+          one: '{0} километар',
+          few: '{0} километра',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
-          few: '{0} km',
+          one: '{0} километар',
+          few: '{0} километра',
           other: '{0} km',
         ),
       );
@@ -4535,15 +4538,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
-          few: '{0} m',
+          one: '{0} метар',
+          few: '{0} метра',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
-          few: '{0} m',
+          one: '{0} метар',
+          few: '{0} метра',
           other: '{0} m',
         ),
       );
@@ -4560,15 +4563,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
-          few: '{0} dm',
+          one: '{0} дециметар',
+          few: '{0} дециметра',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
-          few: '{0} dm',
+          one: '{0} дециметар',
+          few: '{0} дециметра',
           other: '{0} dm',
         ),
       );
@@ -4585,15 +4588,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
-          few: '{0} cm',
+          one: '{0} центиметар',
+          few: '{0} центиметра',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
-          few: '{0} cm',
+          one: '{0} центиметар',
+          few: '{0} центиметра',
           other: '{0} cm',
         ),
       );
@@ -4610,15 +4613,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
-          few: '{0} mm',
+          one: '{0} милиметар',
+          few: '{0} милиметра',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
-          few: '{0} mm',
+          one: '{0} милиметар',
+          few: '{0} милиметра',
           other: '{0} mm',
         ),
       );
@@ -4635,15 +4638,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
-          few: '{0} μm',
+          one: '{0} микрометар',
+          few: '{0} микрометра',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
-          few: '{0} μm',
+          one: '{0} микрометар',
+          few: '{0} микрометра',
           other: '{0} μm',
         ),
       );
@@ -4660,15 +4663,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
-          few: '{0} nm',
+          one: '{0} нанометар',
+          few: '{0} нанометра',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
-          few: '{0} nm',
+          one: '{0} нанометар',
+          few: '{0} нанометра',
           other: '{0} nm',
         ),
       );
@@ -4685,15 +4688,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'пикометри',
-          one: '{0} pm',
-          few: '{0} pm',
+          one: '{0} пикометар',
+          few: '{0} пикометра',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'пикометри',
-          one: '{0} pm',
-          few: '{0} pm',
+          one: '{0} пикометар',
+          few: '{0} пикометра',
           other: '{0} pm',
         ),
       );
@@ -4710,8 +4713,8 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'миље',
-          one: '{0} mi',
-          few: '{0} mi',
+          one: '{0} миља',
+          few: '{0} миље',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
@@ -4760,15 +4763,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
-          few: '{0} ft',
+          one: '{0} стопа',
+          few: '{0} стопе',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
-          few: '{0} ft',
+          one: '{0} стопа',
+          few: '{0} стопе',
           other: '{0} ft',
         ),
       );
@@ -4810,15 +4813,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'парсеци',
-          one: '{0} pc',
-          few: '{0} pc',
+          one: '{0} парсек',
+          few: '{0} парсека',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'парсеци',
-          one: '{0} pc',
-          few: '{0} pc',
+          one: '{0} парсек',
+          few: '{0} парсека',
           other: '{0} pc',
         ),
       );
@@ -4885,15 +4888,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'фурлонзи',
-          one: '{0} fur',
-          few: '{0} fur',
+          one: '{0} фурлонг',
+          few: '{0} фурлонга',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'фурлонзи',
-          one: '{0} fur',
-          few: '{0} fur',
+          'фурлонг',
+          one: '{0} фурлонг',
+          few: '{0} фурлонга',
           other: '{0} fur',
         ),
       );
@@ -4910,15 +4913,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'хв',
-          one: '{0} fth',
-          few: '{0} fth',
+          one: '{0} хват',
+          few: '{0} хвата',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
           _locale,
           'хв',
-          one: '{0} fth',
-          few: '{0} fth',
+          one: '{0} хват',
+          few: '{0} хвата',
           other: '{0} fth',
         ),
       );
@@ -4935,15 +4938,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'nmi',
-          one: '{0} nmi',
-          few: '{0} nmi',
+          one: '{0} наутичка миља',
+          few: '{0} наутичке миље',
           other: '{0} nmi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nmi',
-          one: '{0} nmi',
-          few: '{0} nmi',
+          one: '{0} наутичка миља',
+          few: '{0} наутичке миље',
           other: '{0} nmi',
         ),
       );
@@ -4960,15 +4963,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
-          few: '{0} smi',
+          one: '{0} скандинавска миља',
+          few: '{0} скандинавске миље',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
-          few: '{0} smi',
+          one: '{0} скандинавска миља',
+          few: '{0} скандинавске миље',
           other: '{0} smi',
         ),
       );
@@ -4978,22 +4981,19 @@ class UnitsSr implements Units {
         long: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0} point',
           other: '{0} pt',
         ),
         short: UnitCountPattern(
           _locale,
           'pt',
           one: '{0} pt',
-          few: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0}pt',
           other: '{0} pt',
         ),
       );
@@ -5010,11 +5010,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} сунчев полупречник',
+          few: '{0} сунчева полупречника',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} сунчев полупречник',
+          few: '{0} сунчева полупречника',
           other: '{0} R☉',
         ),
       );
@@ -5031,15 +5035,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
-          few: '{0} lx',
+          one: '{0} лукс',
+          few: '{0} лукса',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
-          few: '{0} lx',
+          one: '{0} лукс',
+          few: '{0} лукса',
           other: '{0} lx',
         ),
       );
@@ -5056,11 +5060,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} кандела',
+          few: '{0} канделе',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} кандела',
+          few: '{0} канделе',
           other: '{0} cd',
         ),
       );
@@ -5077,11 +5085,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} лумен',
+          few: '{0} лумена',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} лумен',
+          few: '{0} лумена',
           other: '{0} lm',
         ),
       );
@@ -5091,16 +5103,19 @@ class UnitsSr implements Units {
         long: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} solar luminosity',
           other: '{0} L☉',
         ),
         short: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} L☉',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0}L☉',
           other: '{0} L☉',
         ),
       );
@@ -5117,15 +5132,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
-          few: '{0} t',
+          one: '{0} метричка тона',
+          few: '{0} метричке тоне',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
-          few: '{0} t',
+          one: '{0} метричка тона',
+          few: '{0} метричке тоне',
           other: '{0} t',
         ),
       );
@@ -5142,15 +5157,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
-          few: '{0} kg',
+          one: '{0} килограм',
+          few: '{0} килограма',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
-          few: '{0} kg',
+          one: '{0} килограм',
+          few: '{0} килограма',
           other: '{0} kg',
         ),
       );
@@ -5167,15 +5182,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'грами',
-          one: '{0} g',
-          few: '{0} g',
+          one: '{0} грам',
+          few: '{0} грама',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
-          few: '{0} g',
+          one: '{0} грам',
+          few: '{0} грама',
           other: '{0} g',
         ),
       );
@@ -5192,15 +5207,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
-          few: '{0} mg',
+          one: '{0} милиграм',
+          few: '{0} милиграма',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
-          few: '{0} mg',
+          one: '{0} милиграм',
+          few: '{0} милиграма',
           other: '{0} mg',
         ),
       );
@@ -5217,15 +5232,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
-          few: '{0} μg',
+          one: '{0} микрограм',
+          few: '{0} микрограма',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
-          few: '{0} μg',
+          one: '{0} микрограм',
+          few: '{0} микрограма',
           other: '{0} μg',
         ),
       );
@@ -5242,15 +5257,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'tn',
-          one: '{0} tn',
-          few: '{0} tn',
+          one: '{0} тона',
+          few: '{0} тоне',
           other: '{0} tn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tn',
-          one: '{0} tn',
-          few: '{0} tn',
+          one: '{0} тона',
+          few: '{0} тоне',
           other: '{0} tn',
         ),
       );
@@ -5267,11 +5282,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
+          one: '{0} америчка тона',
+          few: '{0} америчке тоне',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'st',
+          one: '{0} америчка тона',
+          few: '{0} америчке тоне',
           other: '{0} st',
         ),
       );
@@ -5288,15 +5307,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
-          few: '{0} lb',
+          one: '{0} фунта',
+          few: '{0} фунте',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
-          few: '{0} lb',
+          one: '{0} фунта',
+          few: '{0} фунте',
           other: '{0} lb',
         ),
       );
@@ -5313,8 +5332,8 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
-          few: '{0} oz',
+          one: '{0} унца',
+          few: '{0} унце',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
@@ -5338,15 +5357,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
-          few: '{0} oz t',
+          one: '{0} фина унца',
+          few: '{0} фине унце',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
-          few: '{0} oz t',
+          one: '{0} фина унца',
+          few: '{0} фине унце',
           other: '{0} oz t',
         ),
       );
@@ -5363,15 +5382,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'карати',
-          one: '{0} CD',
-          few: '{0} CD',
+          one: '{0} карат',
+          few: '{0} карата',
           other: '{0} CD',
         ),
         narrow: UnitCountPattern(
           _locale,
           'карати',
-          one: '{0} CD',
-          few: '{0} CD',
+          one: '{0} карат',
+          few: '{0} карата',
           other: '{0} CD',
         ),
       );
@@ -5388,11 +5407,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0} далтон',
+          few: '{0} далтона',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0} далтон',
+          few: '{0} далтона',
           other: '{0} Da',
         ),
       );
@@ -5409,11 +5432,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} маса земље',
+          few: '{0} масе земље',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} маса земље',
+          few: '{0} масе земље',
           other: '{0} M⊕',
         ),
       );
@@ -5430,11 +5457,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} маса сунца',
+          few: '{0} масе сунца',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} маса сунца',
+          few: '{0} масе сунца',
           other: '{0} M☉',
         ),
       );
@@ -5451,11 +5482,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'грејн',
+          one: '{0} грејн',
+          few: '{0} грејна',
           other: '{0} grain',
         ),
         narrow: UnitCountPattern(
           _locale,
           'грејн',
+          one: '{0} грејн',
+          few: '{0} грејна',
           other: '{0} grain',
         ),
       );
@@ -5472,15 +5507,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
-          few: '{0} GW',
+          one: '{0} гигават',
+          few: '{0} гигавата',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
-          few: '{0} GW',
+          one: '{0} гигават',
+          few: '{0} гигавата',
           other: '{0} GW',
         ),
       );
@@ -5497,15 +5532,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
-          few: '{0} MW',
+          one: '{0} мегават',
+          few: '{0} мегавата',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
-          few: '{0} MW',
+          one: '{0} мегават',
+          few: '{0} мегавата',
           other: '{0} MW',
         ),
       );
@@ -5522,15 +5557,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
-          few: '{0} kW',
+          one: '{0} киловат',
+          few: '{0} киловата',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
-          few: '{0} kW',
+          one: '{0} киловат',
+          few: '{0} киловата',
           other: '{0} kW',
         ),
       );
@@ -5547,15 +5582,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
-          few: '{0} W',
+          one: '{0} ват',
+          few: '{0} вата',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
-          few: '{0} W',
+          one: '{0} ват',
+          few: '{0} вата',
           other: '{0} W',
         ),
       );
@@ -5572,15 +5607,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
-          few: '{0} mW',
+          one: '{0} миливат',
+          few: '{0} миливата',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
-          few: '{0} mW',
+          one: '{0} миливат',
+          few: '{0} миливата',
           other: '{0} mW',
         ),
       );
@@ -5597,8 +5632,8 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'hp',
-          one: '{0} hp',
-          few: '{0} hp',
+          one: '{0} коњска снага',
+          few: '{0} коњске снаге',
           other: '{0} hp',
         ),
         narrow: UnitCountPattern(
@@ -5622,15 +5657,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} mm Hg',
-          few: '{0} mm Hg',
+          one: '{0} милиметар живиног стуба',
+          few: '{0} милиметра живиног стуба',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} mm Hg',
-          few: '{0} mm Hg',
+          one: '{0} милиметар живиног стуба',
+          few: '{0} милиметра живиног стуба',
           other: '{0} mm Hg',
         ),
       );
@@ -5647,15 +5682,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
-          few: '{0} psi',
+          one: '{0} фунта по квадратном инчу',
+          few: '{0} фунте по квадратном инчу',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
-          few: '{0} psi',
+          one: '{0} фунта по квадратном инчу',
+          few: '{0} фунте по квадратном инчу',
           other: '{0} psi',
         ),
       );
@@ -5672,15 +5707,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
-          few: '{0} inHg',
+          one: '{0} инч живиног стуба',
+          few: '{0} инча живиног стуба',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
-          few: '{0} inHg',
+          one: '{0} инч живиног стуба',
+          few: '{0} инча живиног стуба',
           other: '{0} inHg',
         ),
       );
@@ -5697,15 +5732,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'bar',
-          one: '{0} bar',
-          few: '{0} bar',
+          one: '{0} бар',
+          few: '{0} бара',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bar',
-          one: '{0} bar',
-          few: '{0} bar',
+          one: '{0} бар',
+          few: '{0} бара',
           other: '{0} bar',
         ),
       );
@@ -5722,15 +5757,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
-          few: '{0} mbar',
+          one: '{0} милибар',
+          few: '{0} милибара',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
-          few: '{0} mbar',
+          one: '{0} милибар',
+          few: '{0} милибара',
           other: '{0} mbar',
         ),
       );
@@ -5747,15 +5782,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
-          few: '{0} atm',
+          one: '{0} атмосфера',
+          few: '{0} атмосфере',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
-          few: '{0} atm',
+          one: '{0} атмосфера',
+          few: '{0} атмосфере',
           other: '{0} atm',
         ),
       );
@@ -5772,15 +5807,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
-          few: '{0} Pa',
+          one: '{0} паскал',
+          few: '{0} паскала',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
-          few: '{0} Pa',
+          one: '{0} паскал',
+          few: '{0} паскала',
           other: '{0} Pa',
         ),
       );
@@ -5797,15 +5832,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
-          few: '{0} hPa',
+          one: '{0} хектопаскал',
+          few: '{0} хектопаскала',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
-          few: '{0} hPa',
+          one: '{0} хектопаскал',
+          few: '{0} хектопаскала',
           other: '{0} hPa',
         ),
       );
@@ -5822,11 +5857,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} килопаскал',
+          few: '{0} килопаскала',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} килопаскал',
+          few: '{0} килопаскала',
           other: '{0} kPa',
         ),
       );
@@ -5843,11 +5882,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} мегапаскал',
+          few: '{0} мегапаскала',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} мегапаскал',
+          few: '{0} мегапаскала',
           other: '{0} MPa',
         ),
       );
@@ -5864,15 +5907,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
-          few: '{0} km/h',
+          one: '{0} километар на сат',
+          few: '{0} километра на сат',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
-          few: '{0} km/h',
+          one: '{0} километар на сат',
+          few: '{0} километра на сат',
           other: '{0} km/h',
         ),
       );
@@ -5889,15 +5932,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'метри у секунди',
-          one: '{0} m/s',
-          few: '{0} m/s',
+          one: '{0} метар у секунди',
+          few: '{0} метра у секунди',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           'метри у секунди',
-          one: '{0} m/s',
-          few: '{0} m/s',
+          one: '{0} метар у секунди',
+          few: '{0} метра у секунди',
           other: '{0} m/s',
         ),
       );
@@ -5914,15 +5957,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'миље на сат',
-          one: '{0} mi/h',
-          few: '{0} mi/h',
+          one: '{0} миља на сат',
+          few: '{0} миље на сат',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'миље на сат',
-          one: '{0} mi/h',
-          few: '{0} mi/h',
+          one: '{0} миља на сат',
+          few: '{0} миље на сат',
           other: '{0} mi/h',
         ),
       );
@@ -5939,16 +5982,41 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
-          few: '{0} kn',
+          one: '{0} чвор',
+          few: '{0} чвора',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
-          few: '{0} kn',
+          one: '{0} чвор',
+          few: '{0} чвора',
           other: '{0} kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Бофор',
+          one: 'Бофор {0}',
+          few: 'Б {0}',
+          other: 'Бофор {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bf',
+          one: 'Б {0}',
+          few: 'Б {0}',
+          other: 'Б {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bf',
+          one: 'Б {0}',
+          few: 'Б {0}',
+          other: 'Б {0}',
         ),
       );
 
@@ -5957,22 +6025,19 @@ class UnitsSr implements Units {
         long: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
+          one: '{0} degree temperature',
           other: '{0}°',
         ),
         short: UnitCountPattern(
           _locale,
           '°',
           one: '{0}°',
-          few: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
           one: '{0}°',
-          few: '{0}°',
           other: '{0}°',
         ),
       );
@@ -5989,15 +6054,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           '°C',
-          one: '{0}°C',
-          few: '{0}°C',
+          one: '{0} степен Целзијуса',
+          few: '{0} степена Целзијуса',
           other: '{0}°C',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°C',
-          one: '{0}°C',
-          few: '{0}°C',
+          one: '{0} степен Целзијуса',
+          few: '{0} степена Целзијуса',
           other: '{0}°C',
         ),
       );
@@ -6014,15 +6079,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'степени Фаренхајта',
-          one: '{0}°F',
-          few: '{0}°F',
+          one: '{0} степен Фаренхајта',
+          few: '{0} степена Фаренхајта',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
           _locale,
           'степени Фаренхајта',
-          one: '{0}°F',
-          few: '{0}°F',
+          one: '{0} степен Фаренхајта',
+          few: '{0} степена Фаренхајта',
           other: '{0}°F',
         ),
       );
@@ -6039,15 +6104,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
+          one: '{0} келвин',
+          few: '{0} келвина',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
+          one: '{0} келвин',
+          few: '{0} келвина',
           other: '{0} K',
         ),
       );
@@ -6064,11 +6129,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0} фунта силе стопе',
+          few: '{0} фунте силе стопе',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0} фунта силе стопе',
+          few: '{0} фунте силе стопе',
           other: '{0} lbf⋅ft',
         ),
       );
@@ -6085,11 +6154,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'N⋅m',
+          one: '{0} њутн-метар',
+          few: '{0} њутн-метра',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N⋅m',
+          one: '{0} њутн-метар',
+          few: '{0} њутн-метра',
           other: '{0} N⋅m',
         ),
       );
@@ -6106,15 +6179,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
-          few: '{0} km³',
+          one: '{0} кубни километар',
+          few: '{0} кубна километра',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
-          few: '{0} km³',
+          one: '{0} кубни километар',
+          few: '{0} кубна километра',
           other: '{0} km³',
         ),
       );
@@ -6131,15 +6204,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
-          few: '{0} m³',
+          one: '{0} кубни метар',
+          few: '{0} кубна метра',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
-          few: '{0} m³',
+          one: '{0} кубни метар',
+          few: '{0} кубна метра',
           other: '{0} m³',
         ),
       );
@@ -6156,15 +6229,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
-          few: '{0} cm³',
+          one: '{0} кубни центиметар',
+          few: '{0} кубна центиметра',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
-          few: '{0} cm³',
+          one: '{0} кубни центиметар',
+          few: '{0} кубна центиметра',
           other: '{0} cm³',
         ),
       );
@@ -6181,15 +6254,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
-          few: '{0} mi³',
+          one: '{0} кубна миља',
+          few: '{0} кубне миље',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
-          few: '{0} mi³',
+          one: '{0} кубна миља',
+          few: '{0} кубне миље',
           other: '{0} mi³',
         ),
       );
@@ -6206,15 +6279,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
-          few: '{0} yd³',
+          one: '{0} кубни јард',
+          few: '{0} кубна јарда',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
-          few: '{0} yd³',
+          one: '{0} кубни јард',
+          few: '{0} кубна јарда',
           other: '{0} yd³',
         ),
       );
@@ -6231,15 +6304,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
-          few: '{0} ft³',
+          one: '{0} кубна стопа',
+          few: '{0} кубне стопе',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
-          few: '{0} ft³',
+          one: '{0} кубна стопа',
+          few: '{0} кубне стопе',
           other: '{0} ft³',
         ),
       );
@@ -6256,15 +6329,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
-          few: '{0} in³',
+          one: '{0} кубни инч',
+          few: '{0} кубна инча',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
-          few: '{0} in³',
+          one: '{0} кубни инч',
+          few: '{0} кубна инча',
           other: '{0} in³',
         ),
       );
@@ -6281,15 +6354,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ML',
-          one: '{0} ML',
-          few: '{0} ML',
+          one: '{0} мегалитар',
+          few: '{0} мегалитра',
           other: '{0} ML',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ML',
-          one: '{0} ML',
-          few: '{0} ML',
+          one: '{0} мегалитар',
+          few: '{0} мегалитра',
           other: '{0} ML',
         ),
       );
@@ -6306,15 +6379,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'hL',
-          one: '{0} hL',
-          few: '{0} hL',
+          one: '{0} хектолитар',
+          few: '{0} хектолитра',
           other: '{0} hL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hL',
-          one: '{0} hL',
-          few: '{0} hL',
+          one: '{0} хектолитар',
+          few: '{0} хектолитра',
           other: '{0} hL',
         ),
       );
@@ -6331,15 +6404,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'литри',
-          one: '{0} l',
-          few: '{0} l',
+          one: '{0} литар',
+          few: '{0} литра',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
-          few: '{0} l',
+          one: '{0} литар',
+          few: '{0} литра',
           other: '{0} l',
         ),
       );
@@ -6356,15 +6429,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'dL',
-          one: '{0} dL',
-          few: '{0} dL',
+          one: '{0} децилитар',
+          few: '{0} децилитра',
           other: '{0} dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dL',
-          one: '{0} dL',
-          few: '{0} dL',
+          one: '{0} децилитар',
+          few: '{0} децилитра',
           other: '{0} dL',
         ),
       );
@@ -6381,15 +6454,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'cL',
-          one: '{0} cL',
-          few: '{0} cL',
+          one: '{0} центилитар',
+          few: '{0} центилитра',
           other: '{0} cL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cL',
-          one: '{0} cL',
-          few: '{0} cL',
+          one: '{0} центилитар',
+          few: '{0} центилитра',
           other: '{0} cL',
         ),
       );
@@ -6406,15 +6479,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mL',
-          one: '{0} mL',
-          few: '{0} mL',
+          one: '{0} милилитар',
+          few: '{0} милилитра',
           other: '{0} mL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mL',
-          one: '{0} mL',
-          few: '{0} mL',
+          one: '{0} милилитар',
+          few: '{0} милилитра',
           other: '{0} mL',
         ),
       );
@@ -6431,15 +6504,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
-          few: '{0} mpt',
+          one: '{0} метричка пинта',
+          few: '{0} метричке пинте',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
-          few: '{0} mpt',
+          one: '{0} метричка пинта',
+          few: '{0} метричке пинте',
           other: '{0} mpt',
         ),
       );
@@ -6456,15 +6529,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
-          few: '{0} mc',
+          one: '{0} метричка шоља',
+          few: '{0} метричке шоље',
           other: '{0} mc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
-          few: '{0} mc',
+          one: '{0} метричка шоља',
+          few: '{0} метричке шоље',
           other: '{0} mc',
         ),
       );
@@ -6481,15 +6554,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
-          few: '{0} ac ft',
+          one: '{0} акер стопа',
+          few: '{0} акер стопе',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
-          few: '{0} ac ft',
+          one: '{0} акер стопа',
+          few: '{0} акер стопе',
           other: '{0} ac ft',
         ),
       );
@@ -6506,11 +6579,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'bu',
+          one: '{0} бушел',
+          few: '{0} бушела',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bu',
+          one: '{0} бушел',
+          few: '{0} бушела',
           other: '{0} bu',
         ),
       );
@@ -6552,8 +6629,8 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Imp. gal',
-          one: '{0} gal Imp.',
-          few: '{0} gal Imp.',
+          one: '{0} имп. галон',
+          few: '{0} имп. галона',
           other: '{0} gal Imp.',
         ),
         narrow: UnitCountPattern(
@@ -6577,15 +6654,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
-          few: '{0} qt',
+          one: '{0} кварат',
+          few: '{0} кварта',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
-          few: '{0} qt',
+          one: '{0} кварат',
+          few: '{0} кварта',
           other: '{0} qt',
         ),
       );
@@ -6602,15 +6679,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0} пинта',
+          few: '{0} пинте',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0} пинта',
+          few: '{0} пинте',
           other: '{0} pt',
         ),
       );
@@ -6677,6 +6754,8 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'Imp. fl oz',
+          one: '{0} империјска унца течности',
+          few: '{0} империјске унце течности',
           other: '{0} fl oz Imp.',
         ),
         narrow: UnitCountPattern(
@@ -6750,11 +6829,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'bbl',
+          one: '{0} барел',
+          few: '{0} барела',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
+          one: '{0} барел',
+          few: '{0} барела',
           other: '{0} bbl',
         ),
       );
@@ -6770,13 +6853,17 @@ class UnitsSr implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'dstspn',
-          other: '{0} dstspn',
+          'дес. каш.',
+          one: '{0} дес. каш.',
+          few: '{0} дес. каш.',
+          other: '{0} дес. каш.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dstspn',
-          other: '{0} dstspn',
+          'дес. каш.',
+          one: '{0} дес. каш.',
+          few: '{0} дес. каш.',
+          other: '{0} дес. каш.',
         ),
       );
 
@@ -6791,15 +6878,17 @@ class UnitsSr implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'dstspn Imp',
-          other: '{0} dstspn Imp',
+          'имп. дес. каш.',
+          one: '{0} имп. дес. каш.',
+          few: '{0} имп. дес. каш.',
+          other: '{0} имп. дес. каш.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dstspn Imp',
-          one: '{0} dstspn Imp',
-          few: '{0} dstspn Imp',
-          other: '{0}dsp-Imp',
+          'имп. дес. каш.',
+          one: '{0} имп. дес. каш.',
+          few: '{0} имп. дес. каш.',
+          other: '{0} имп. дес. каш.',
         ),
       );
 
@@ -6840,11 +6929,15 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'драм течности',
+          one: '{0} драм течности',
+          few: '{0} драма течности',
           other: '{0} dram fl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'драм течности',
+          one: '{0} драм течности',
+          few: '{0} драма течности',
           other: '{0} dram fl',
         ),
       );
@@ -6861,12 +6954,16 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'џигер',
-          other: '{0} jigger',
+          one: '{0} џигер',
+          few: '{0} џигера',
+          other: '{0} џигера',
         ),
         narrow: UnitCountPattern(
           _locale,
           'џигер',
-          other: '{0} jigger',
+          one: '{0} џигера',
+          few: '{0} џигера',
+          other: '{0} џигера',
         ),
       );
 
@@ -6882,7 +6979,9 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'прстохват',
-          other: '{0} pinch',
+          one: '{0} прстохват',
+          few: '{0} прстохвата',
+          other: '{0} прстохвата',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -6905,6 +7004,8 @@ class UnitsSr implements Units {
         short: UnitCountPattern(
           _locale,
           'qt Imp',
+          one: '{0} империјска четвртина',
+          few: '{0} империјске четвртине',
           other: '{0} qt Imp.',
         ),
         narrow: UnitCountPattern(
@@ -6913,6 +7014,28 @@ class UnitsSr implements Units {
           one: '{0} qt Imp',
           few: '{0} qt Imp',
           other: '{0} qt Imp',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -8268,6 +8391,10 @@ class TerritoriesSr implements Territories {
     'CP': Territory(
       'CP',
       'Острво Клипертон',
+    ),
+    'CQ': Territory(
+      'CQ',
+      'Непознат регион (CQ)',
     ),
     'CR': Territory(
       'CR',

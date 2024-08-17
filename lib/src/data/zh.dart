@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'zh';
 
-/// Translations in Chinese of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for zh
 class CommonLocaleDataZh implements CommonLocaleData {
   String get locale => _locale;
 
@@ -228,7 +228,7 @@ class LanguagesZh extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      '哈里亚纳语',
     ),
     'bgn': Language(
       'bgn',
@@ -833,11 +833,6 @@ class LanguagesZh extends Languages {
     'hi': Language(
       'hi',
       '印地语',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      '印地语（拉丁文）',
-      variant: '印式英语',
     ),
     'hil': Language(
       'hil',
@@ -1723,6 +1718,10 @@ class LanguagesZh extends Languages {
       'rhg',
       '罗兴亚语',
     ),
+    'rif': Language(
+      'rif',
+      '里夫语',
+    ),
     'rm': Language(
       'rm',
       '罗曼什语',
@@ -1785,7 +1784,7 @@ class LanguagesZh extends Languages {
     ),
     'sas': Language(
       'sas',
-      '萨萨克文',
+      '萨萨克语',
     ),
     'sat': Language(
       'sat',
@@ -2099,6 +2098,10 @@ class LanguagesZh extends Languages {
       'trv',
       '赛德克语',
     ),
+    'trw': Language(
+      'trw',
+      '托尔瓦利语',
+    ),
     'ts': Language(
       'ts',
       '聪加语',
@@ -2400,6 +2403,18 @@ class UnitsZh implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('柔{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('亏{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('十{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2458,6 +2473,18 @@ class UnitsZh implements Units {
         long: UnitPrefixPattern('尧{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('容{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('昆{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2524,16 +2551,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'G力',
+          one: '{0} g-force',
           other: '{0}G力',
         ),
         short: UnitCountPattern(
           _locale,
           'G力',
+          one: '{0} G',
           other: '{0}G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'G力',
+          one: '{0}G',
           other: '{0}G',
         ),
       );
@@ -2543,16 +2573,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '米/秒²',
+          one: '{0} meter per second squared',
           other: '每平方秒{0}米',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0} m/s²',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米/秒²',
+          one: '{0}m/s²',
           other: '{0}米/秒²',
         ),
       );
@@ -2562,16 +2595,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '转',
+          one: '{0} revolution',
           other: '{0}转',
         ),
         short: UnitCountPattern(
           _locale,
           '转',
+          one: '{0} rev',
           other: '{0}转',
         ),
         narrow: UnitCountPattern(
           _locale,
           '转',
+          one: '{0}rev',
           other: '{0}转',
         ),
       );
@@ -2581,16 +2617,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弧度',
+          one: '{0} radian',
           other: '{0}弧度',
         ),
         short: UnitCountPattern(
           _locale,
           '弧度',
+          one: '{0} rad',
           other: '{0}弧度',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弧度',
+          one: '{0}rad',
           other: '{0}弧度',
         ),
       );
@@ -2600,16 +2639,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} degree',
           other: '{0}度',
         ),
         short: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} deg',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '度',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -2619,16 +2661,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弧分',
+          one: '{0} arcminute',
           other: '{0}弧分',
         ),
         short: UnitCountPattern(
           _locale,
           '弧分',
+          one: '{0} arcmin',
           other: '{0}弧分',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弧分',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -2638,16 +2683,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弧秒',
+          one: '{0} arcsecond',
           other: '{0}弧秒',
         ),
         short: UnitCountPattern(
           _locale,
           '弧秒',
+          one: '{0} arcsec',
           other: '{0}弧秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弧秒',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -2657,16 +2705,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方公里',
+          one: '{0} square kilometer',
           other: '{0}平方公里',
         ),
         short: UnitCountPattern(
           _locale,
           '平方公里',
+          one: '{0} km²',
           other: '{0}平方公里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0}km²',
           other: '{0}km²',
         ),
       );
@@ -2676,16 +2727,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公顷',
+          one: '{0} hectare',
           other: '{0}公顷',
         ),
         short: UnitCountPattern(
           _locale,
           '公顷',
+          one: '{0} ha',
           other: '{0}公顷',
         ),
         narrow: UnitCountPattern(
           _locale,
           '公顷',
+          one: '{0}ha',
           other: '{0}ha',
         ),
       );
@@ -2695,16 +2749,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方米',
+          one: '{0} square meter',
           other: '{0}平方米',
         ),
         short: UnitCountPattern(
           _locale,
           '平方米',
+          one: '{0} m²',
           other: '{0}平方米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '平方米',
+          one: '{0}m²',
           other: '{0}m²',
         ),
       );
@@ -2714,16 +2771,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方厘米',
+          one: '{0} square centimeter',
           other: '{0}平方厘米',
         ),
         short: UnitCountPattern(
           _locale,
           '平方厘米',
+          one: '{0} cm²',
           other: '{0}平方厘米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0}cm²',
           other: '{0}cm²',
         ),
       );
@@ -2733,16 +2793,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方英里',
+          one: '{0} square mile',
           other: '{0}平方英里',
         ),
         short: UnitCountPattern(
           _locale,
           '平方英里',
+          one: '{0} sq mi',
           other: '{0}平方英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
+          one: '{0}mi²',
           other: '{0}mi²',
         ),
       );
@@ -2752,16 +2815,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英亩',
+          one: '{0} acre',
           other: '{0}英亩',
         ),
         short: UnitCountPattern(
           _locale,
           '英亩',
+          one: '{0} ac',
           other: '{0}英亩',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英亩',
+          one: '{0}ac',
           other: '{0}ac',
         ),
       );
@@ -2771,16 +2837,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方码',
+          one: '{0} square yard',
           other: '{0}平方码',
         ),
         short: UnitCountPattern(
           _locale,
           '平方码',
+          one: '{0} yd²',
           other: '{0}平方码',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
+          one: '{0}yd²',
           other: '{0}yd²',
         ),
       );
@@ -2790,16 +2859,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方英尺',
+          one: '{0} square foot',
           other: '{0}平方英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '平方英尺',
+          one: '{0} sq ft',
           other: '{0}平方英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
+          one: '{0}ft²',
           other: '{0}ft²',
         ),
       );
@@ -2809,16 +2881,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方英寸',
+          one: '{0} square inch',
           other: '{0}平方英寸',
         ),
         short: UnitCountPattern(
           _locale,
           '平方英寸',
+          one: '{0} in²',
           other: '{0}平方英寸',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
+          one: '{0}in²',
           other: '{0}in²',
         ),
       );
@@ -2828,16 +2903,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '杜纳亩',
+          one: '{0} dunam',
           other: '{0}杜纳亩',
         ),
         short: UnitCountPattern(
           _locale,
           '杜纳亩',
+          one: '{0} dunam',
           other: '{0}杜纳亩',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dunam',
+          one: '{0}dunam',
           other: '{0}dunam',
         ),
       );
@@ -2847,17 +2925,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '克拉',
+          one: '{0} karat',
           other: '{0}克拉',
         ),
         short: UnitCountPattern(
           _locale,
           'kt',
+          one: '{0} kt',
           other: '{0} kt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kt',
-          other: '{0} kt',
+          one: '{0}kt',
+          other: '{0}kt',
         ),
       );
 
@@ -2866,17 +2947,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫克/分升',
+          one: '{0} milligram per deciliter',
           other: '每分升{0}毫克',
         ),
         short: UnitCountPattern(
           _locale,
           'mg/dL',
+          one: '{0} mg/dL',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
-          other: '{0} mg/dL',
+          one: '{0}mg/dL',
+          other: '{0}mg/dL',
         ),
       );
 
@@ -2885,17 +2969,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫摩尔/升',
+          one: '{0} millimole per liter',
           other: '每升{0}毫摩尔',
         ),
         short: UnitCountPattern(
           _locale,
           'mmol/L',
+          one: '{0} mmol/L',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmol/L',
-          other: '{0} mmol/L',
+          one: '{0}mmol/L',
+          other: '{0}mmol/L',
         ),
       );
 
@@ -2904,16 +2991,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '项',
+          one: '{0} item',
           other: '{0}项',
         ),
         short: UnitCountPattern(
           _locale,
           '项',
+          one: '{0} item',
           other: '{0}项',
         ),
         narrow: UnitCountPattern(
           _locale,
           '项',
+          one: '{0}item',
           other: '{0}项',
         ),
       );
@@ -2923,16 +3013,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} part per million',
           other: '百万分之{0}',
         ),
         short: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} ppm',
           other: '{0}ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0}ppm',
           other: '{0}ppm',
         ),
       );
@@ -2942,16 +3035,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '%',
+          one: '{0} percent',
           other: '{0}%',
         ),
         short: UnitCountPattern(
           _locale,
           '%',
+          one: '{0}%',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
+          one: '{0}%',
           other: '{0}%',
         ),
       );
@@ -2961,16 +3057,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0} permille',
           other: '{0}‰',
         ),
         short: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0}‰',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0}‰',
           other: '{0}‰',
         ),
       );
@@ -2980,16 +3079,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0} permyriad',
           other: '{0}‱',
         ),
         short: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
       );
@@ -2999,17 +3101,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '摩尔',
+          one: '{0} mole',
           other: '{0}摩尔',
         ),
         short: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mol',
-          other: '{0} mol',
+          one: '{0}mol',
+          other: '{0}mol',
         ),
       );
 
@@ -3018,16 +3123,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '升/公里',
+          one: '{0} liter per kilometer',
           other: '每公里{0}升',
         ),
         short: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0} L/km',
           other: '{0} L/km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0}L/km',
           other: '{0}L/km',
         ),
       );
@@ -3037,16 +3145,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '升/100千米',
+          one: '{0} liter per 100 kilometers',
           other: '{0}升/100千米',
         ),
         short: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0} L/100 km',
           other: '{0} L/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0}L/100km',
           other: '{0}L/100km',
         ),
       );
@@ -3056,16 +3167,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里/加仑',
+          one: '{0} mile per gallon',
           other: '每加仑{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           'mpg US',
+          one: '{0} mpg',
           other: '{0} mpg US',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpg US',
+          one: '{0}mpg',
           other: '{0}mpg',
         ),
       );
@@ -3075,16 +3189,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里/英制加仑',
+          one: '{0} mile per Imp. gallon',
           other: '每英制加仑{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           'mpg Imp.',
+          one: '{0} mpg Imp.',
           other: '{0} mpg Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpg Imp.',
+          one: '{0}m/gUK',
           other: '{0}m/gUK',
         ),
       );
@@ -3094,16 +3211,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '拍字节',
+          one: '{0} petabyte',
           other: '{0}拍字节',
         ),
         short: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0} PB',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0}PB',
           other: '{0} PB',
         ),
       );
@@ -3113,16 +3233,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太字节',
+          one: '{0} terabyte',
           other: '{0}太字节',
         ),
         short: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0} TB',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0}TB',
           other: '{0} TB',
         ),
       );
@@ -3132,16 +3255,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太比特',
+          one: '{0} terabit',
           other: '{0}太比特',
         ),
         short: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0} Tb',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0}Tb',
           other: '{0} Tb',
         ),
       );
@@ -3151,16 +3277,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉字节',
+          one: '{0} gigabyte',
           other: '{0}吉字节',
         ),
         short: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0} GB',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0}GB',
           other: '{0} GB',
         ),
       );
@@ -3170,16 +3299,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉比特',
+          one: '{0} gigabit',
           other: '{0}吉比特',
         ),
         short: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0} Gb',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0}Gb',
           other: '{0} Gb',
         ),
       );
@@ -3189,16 +3321,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆字节',
+          one: '{0} megabyte',
           other: '{0}兆字节',
         ),
         short: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0} MB',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0}MB',
           other: '{0} MB',
         ),
       );
@@ -3208,16 +3343,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆比特',
+          one: '{0} megabit',
           other: '{0}兆比特',
         ),
         short: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0} Mb',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0}Mb',
           other: '{0} Mb',
         ),
       );
@@ -3227,16 +3365,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千字节',
+          one: '{0} kilobyte',
           other: '{0}千字节',
         ),
         short: UnitCountPattern(
           _locale,
           'kB',
+          one: '{0} kB',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
+          one: '{0}kB',
           other: '{0} kB',
         ),
       );
@@ -3246,16 +3387,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千比特',
+          one: '{0} kilobit',
           other: '{0}千比特',
         ),
         short: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0} kb',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0}kb',
           other: '{0} kb',
         ),
       );
@@ -3265,16 +3409,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '字节',
+          one: '{0} byte',
           other: '{0}字节',
         ),
         short: UnitCountPattern(
           _locale,
           'B',
+          one: '{0} byte',
           other: '{0} B',
         ),
         narrow: UnitCountPattern(
           _locale,
           'B',
+          one: '{0}B',
           other: '{0} B',
         ),
       );
@@ -3284,16 +3431,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '比特',
+          one: '{0} bit',
           other: '{0}比特',
         ),
         short: UnitCountPattern(
           _locale,
           'b',
+          one: '{0} bit',
           other: '{0} b',
         ),
         narrow: UnitCountPattern(
           _locale,
           'b',
+          one: '{0}bit',
           other: '{0} b',
         ),
       );
@@ -3303,16 +3453,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '个世纪',
+          one: '{0} century',
           other: '{0}个世纪',
         ),
         short: UnitCountPattern(
           _locale,
           '个世纪',
+          one: '{0} c',
           other: '{0}个世纪',
         ),
         narrow: UnitCountPattern(
           _locale,
           '个世纪',
+          one: '{0}c',
           other: '{0}个世纪',
         ),
       );
@@ -3322,16 +3475,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '个十年',
+          one: '{0} decade',
           other: '{0}个十年',
         ),
         short: UnitCountPattern(
           _locale,
           '个十年',
+          one: '{0} dec',
           other: '{0}个十年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '个十年',
+          one: '{0}dec',
           other: '{0}个十年',
         ),
       );
@@ -3341,16 +3497,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} year',
           other: '{0}年',
         ),
         short: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} yr',
           other: '{0}年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '年',
+          one: '{0}y',
           other: '{0}年',
         ),
       );
@@ -3360,16 +3519,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '季度',
+          one: '{0} quarter',
           other: '{0}季',
         ),
         short: UnitCountPattern(
           _locale,
           '季',
+          one: '{0} qtr',
           other: '{0}季',
         ),
         narrow: UnitCountPattern(
           _locale,
           '季',
+          one: '{0}q',
           other: '{0}季',
         ),
       );
@@ -3379,16 +3541,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '个月',
+          one: '{0} month',
           other: '{0}个月',
         ),
         short: UnitCountPattern(
           _locale,
           '个月',
+          one: '{0} mth',
           other: '{0}个月',
         ),
         narrow: UnitCountPattern(
           _locale,
           '个月',
+          one: '{0}m',
           other: '{0}个月',
         ),
       );
@@ -3398,16 +3563,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '周',
+          one: '{0} week',
           other: '{0}周',
         ),
         short: UnitCountPattern(
           _locale,
           '周',
+          one: '{0} wk',
           other: '{0}周',
         ),
         narrow: UnitCountPattern(
           _locale,
           '周',
+          one: '{0}w',
           other: '{0}周',
         ),
       );
@@ -3417,16 +3585,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '天',
+          one: '{0} day',
           other: '{0}天',
         ),
         short: UnitCountPattern(
           _locale,
           '天',
+          one: '{0} day',
           other: '{0}天',
         ),
         narrow: UnitCountPattern(
           _locale,
           '天',
+          one: '{0}d',
           other: '{0}天',
         ),
       );
@@ -3436,16 +3607,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '小时',
+          one: '{0} hour',
           other: '{0}小时',
         ),
         short: UnitCountPattern(
           _locale,
           '小时',
+          one: '{0} hr',
           other: '{0}小时',
         ),
         narrow: UnitCountPattern(
           _locale,
           '小时',
+          one: '{0}h',
           other: '{0}小时',
         ),
       );
@@ -3455,16 +3629,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '分钟',
+          one: '{0} minute',
           other: '{0}分钟',
         ),
         short: UnitCountPattern(
           _locale,
           '分钟',
+          one: '{0} min',
           other: '{0}分钟',
         ),
         narrow: UnitCountPattern(
           _locale,
           '分钟',
+          one: '{0}m',
           other: '{0}分钟',
         ),
       );
@@ -3474,16 +3651,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '秒钟',
+          one: '{0} second',
           other: '{0}秒钟',
         ),
         short: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} sec',
           other: '{0}秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0}s',
           other: '{0}秒',
         ),
       );
@@ -3493,16 +3673,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫秒',
+          one: '{0} millisecond',
           other: '{0}毫秒',
         ),
         short: UnitCountPattern(
           _locale,
           '毫秒',
+          one: '{0} ms',
           other: '{0}毫秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '毫秒',
+          one: '{0}ms',
           other: '{0}ms',
         ),
       );
@@ -3512,16 +3695,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '微秒',
+          one: '{0} microsecond',
           other: '{0}微秒',
         ),
         short: UnitCountPattern(
           _locale,
           '微秒',
+          one: '{0} μs',
           other: '{0}微秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
+          one: '{0}μs',
           other: '{0}μs',
         ),
       );
@@ -3531,16 +3717,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '纳秒',
+          one: '{0} nanosecond',
           other: '{0}纳秒',
         ),
         short: UnitCountPattern(
           _locale,
           '纳秒',
+          one: '{0} ns',
           other: '{0}纳秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '纳秒',
+          one: '{0}ns',
           other: '{0}ns',
         ),
       );
@@ -3550,16 +3739,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '安培',
+          one: '{0} ampere',
           other: '{0}安培',
         ),
         short: UnitCountPattern(
           _locale,
           'A',
+          one: '{0} A',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
+          one: '{0}A',
           other: '{0}A',
         ),
       );
@@ -3569,16 +3761,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫安',
+          one: '{0} milliampere',
           other: '{0}毫安',
         ),
         short: UnitCountPattern(
           _locale,
           'mA',
+          one: '{0} mA',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
+          one: '{0}mA',
           other: '{0}mA',
         ),
       );
@@ -3588,16 +3783,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '欧姆',
+          one: '{0} ohm',
           other: '{0}欧姆',
         ),
         short: UnitCountPattern(
           _locale,
           'Ω',
+          one: '{0} Ω',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
+          one: '{0}Ω',
           other: '{0}Ω',
         ),
       );
@@ -3607,16 +3805,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '伏特',
+          one: '{0} volt',
           other: '{0}伏特',
         ),
         short: UnitCountPattern(
           _locale,
           'V',
+          one: '{0} V',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
+          one: '{0}V',
           other: '{0}V',
         ),
       );
@@ -3626,16 +3827,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千卡',
+          one: '{0} kilocalorie',
           other: '{0}千卡',
         ),
         short: UnitCountPattern(
           _locale,
           '千卡',
+          one: '{0} kcal',
           other: '{0}千卡',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0}kcal',
           other: '{0}kcal',
         ),
       );
@@ -3645,16 +3849,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '卡路里',
+          one: '{0} calorie',
           other: '{0}卡路里',
         ),
         short: UnitCountPattern(
           _locale,
           '卡',
+          one: '{0} cal',
           other: '{0}卡',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0}cal',
           other: '{0}cal',
         ),
       );
@@ -3663,17 +3870,20 @@ class UnitsZh implements Units {
   Unit get energyFoodcalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          '卡路里',
-          other: '{0}卡路里',
+          '大卡',
+          one: '{0} Calorie',
+          other: '{0}大卡',
         ),
         short: UnitCountPattern(
           _locale,
           '大卡',
-          other: '{0}大卡',
+          one: '{0} Cal',
+          other: '{0} Cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Cal',
+          one: '{0}Cal',
           other: '{0}Cal',
         ),
       );
@@ -3683,16 +3893,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千焦',
+          one: '{0} kilojoule',
           other: '{0}千焦',
         ),
         short: UnitCountPattern(
           _locale,
           '千焦',
+          one: '{0} kJ',
           other: '{0}千焦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
+          one: '{0}kJ',
           other: '{0}kJ',
         ),
       );
@@ -3702,16 +3915,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '焦耳',
+          one: '{0} joule',
           other: '{0}焦耳',
         ),
         short: UnitCountPattern(
           _locale,
           '焦耳',
+          one: '{0} J',
           other: '{0}焦耳',
         ),
         narrow: UnitCountPattern(
           _locale,
           '焦耳',
+          one: '{0}J',
           other: '{0}J',
         ),
       );
@@ -3721,16 +3937,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千瓦时',
+          one: '{0} kilowatt hour',
           other: '{0}千瓦时',
         ),
         short: UnitCountPattern(
           _locale,
           '千瓦时',
+          one: '{0} kWh',
           other: '{0}千瓦时',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
+          one: '{0}kWh',
           other: '{0}kWh',
         ),
       );
@@ -3740,16 +3959,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '电子伏特',
+          one: '{0} electronvolt',
           other: '{0}电子伏特',
         ),
         short: UnitCountPattern(
           _locale,
           '电子伏',
+          one: '{0} eV',
           other: '{0}电子伏',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
+          one: '{0}eV',
           other: '{0}eV',
         ),
       );
@@ -3759,16 +3981,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英热单位',
+          one: '{0} British thermal unit',
           other: '{0}英热单位',
         ),
         short: UnitCountPattern(
           _locale,
           '英热单位',
+          one: '{0} Btu',
           other: '{0}英热单位',
         ),
         narrow: UnitCountPattern(
           _locale,
           'BTU',
+          one: '{0}Btu',
           other: '{0}Btu',
         ),
       );
@@ -3778,16 +4003,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '美制克卡',
+          one: '{0} US therm',
           other: '{0}美制克卡',
         ),
         short: UnitCountPattern(
           _locale,
           '美制克卡',
+          one: '{0} US therm',
           other: '{0}美制克卡',
         ),
         narrow: UnitCountPattern(
           _locale,
           '美制克卡',
+          one: '{0}US therm',
           other: '{0}美制克卡',
         ),
       );
@@ -3797,16 +4025,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅力',
+          one: '{0} pound of force',
           other: '{0}磅力',
         ),
         short: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0} lbf',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0}lbf',
           other: '{0}lbf',
         ),
       );
@@ -3816,16 +4047,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '牛顿',
+          one: '{0} newton',
           other: '{0}牛顿',
         ),
         short: UnitCountPattern(
           _locale,
           '牛',
+          one: '{0} N',
           other: '{0}牛',
         ),
         narrow: UnitCountPattern(
           _locale,
           '牛',
+          one: '{0}N',
           other: '{0}牛',
         ),
       );
@@ -3835,16 +4069,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千瓦时/100千米',
+          one: '{0} kilowatt-hour per 100 kilometers',
           other: '{0}千瓦时/100千米',
         ),
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kWh/100km',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0}kWh/100km',
           other: '{0}kWh/100km',
         ),
       );
@@ -3854,16 +4091,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉赫',
+          one: '{0} gigahertz',
           other: '{0}吉赫',
         ),
         short: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0} GHz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0}GHz',
           other: '{0}GHz',
         ),
       );
@@ -3873,16 +4113,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆赫',
+          one: '{0} megahertz',
           other: '{0}兆赫',
         ),
         short: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0} MHz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0}MHz',
           other: '{0}MHz',
         ),
       );
@@ -3892,16 +4135,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千赫',
+          one: '{0} kilohertz',
           other: '{0}千赫',
         ),
         short: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0} kHz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0}kHz',
           other: '{0}kHz',
         ),
       );
@@ -3911,16 +4157,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '赫兹',
+          one: '{0} hertz',
           other: '{0}赫兹',
         ),
         short: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0} Hz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0}Hz',
           other: '{0}Hz',
         ),
       );
@@ -3930,16 +4179,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
           other: '{0} em',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
+          one: '{0}em',
           other: '{0}em',
         ),
       );
@@ -3949,16 +4201,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '像素',
+          one: '{0} pixel',
           other: '{0}像素',
         ),
         short: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} px',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
+          one: '{0}px',
           other: '{0}px',
         ),
       );
@@ -3968,16 +4223,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '百万像素',
+          one: '{0} megapixel',
           other: '{0}百万像素',
         ),
         short: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0} MP',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0}MP',
           other: '{0}MP',
         ),
       );
@@ -3987,16 +4245,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '像素/厘米',
-          other: '{0} 像素/厘米',
+          one: '{0} pixel per centimeter',
+          other: '{0}像素/厘米',
         ),
         short: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} ppcm',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0}ppcm',
           other: '{0}ppcm',
         ),
       );
@@ -4006,16 +4267,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '像素/英寸',
-          other: '{0} 像素/英寸',
+          one: '{0} pixel per inch',
+          other: '{0}像素/英寸',
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} ppi',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0}ppi',
           other: '{0}ppi',
         ),
       );
@@ -4025,16 +4289,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '点/厘米',
-          other: '{0} 点/厘米',
+          one: '{0} dot per centimeter',
+          other: '{0}点/厘米',
         ),
         short: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0} dpcm',
           other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0}dpcm',
           other: '{0}dpcm',
         ),
       );
@@ -4044,17 +4311,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '点/英寸',
+          one: '{0} dot per inch',
           other: '{0}点/英寸',
         ),
         short: UnitCountPattern(
           _locale,
           'dpi',
+          one: '{0} dpi',
           other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpi',
-          other: '{0} dpi',
+          one: '{0}dpi',
+          other: '{0}dpi',
         ),
       );
 
@@ -4063,16 +4333,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '点',
+          one: '{0} dot',
           other: '{0}点',
         ),
         short: UnitCountPattern(
           _locale,
           '点',
+          one: '{0} dot',
           other: '{0}点',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dot',
+          '点',
+          one: '{0}dot',
           other: '{0}dot',
         ),
       );
@@ -4082,16 +4355,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '地球半径',
+          one: '{0} earth radius',
           other: '{0}地球半径',
         ),
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} R⊕',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0}R⊕',
           other: '{0}R⊕',
         ),
       );
@@ -4101,16 +4377,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公里',
+          one: '{0} kilometer',
           other: '{0}公里',
         ),
         short: UnitCountPattern(
           _locale,
           '公里',
+          one: '{0} km',
           other: '{0}公里',
         ),
         narrow: UnitCountPattern(
           _locale,
           '公里',
+          one: '{0}km',
           other: '{0}公里',
         ),
       );
@@ -4120,16 +4399,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '米',
+          one: '{0} meter',
           other: '{0}米',
         ),
         short: UnitCountPattern(
           _locale,
           '米',
+          one: '{0} m',
           other: '{0}米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米',
+          one: '{0}m',
           other: '{0}米',
         ),
       );
@@ -4139,16 +4421,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '分米',
+          one: '{0} decimeter',
           other: '{0}分米',
         ),
         short: UnitCountPattern(
           _locale,
           '分米',
+          one: '{0} dm',
           other: '{0}分米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dm',
+          one: '{0}dm',
           other: '{0}dm',
         ),
       );
@@ -4158,16 +4443,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '厘米',
+          one: '{0} centimeter',
           other: '{0}厘米',
         ),
         short: UnitCountPattern(
           _locale,
           '厘米',
+          one: '{0} cm',
           other: '{0}厘米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '厘米',
+          one: '{0}cm',
           other: '{0}厘米',
         ),
       );
@@ -4177,16 +4465,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫米',
+          one: '{0} millimeter',
           other: '{0}毫米',
         ),
         short: UnitCountPattern(
           _locale,
           '毫米',
+          one: '{0} mm',
           other: '{0}毫米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '毫米',
+          one: '{0}mm',
           other: '{0}毫米',
         ),
       );
@@ -4196,16 +4487,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '微米',
+          one: '{0} micrometer',
           other: '{0}微米',
         ),
         short: UnitCountPattern(
           _locale,
           '微米',
+          one: '{0} μm',
           other: '{0}微米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
+          one: '{0}μm',
           other: '{0}μm',
         ),
       );
@@ -4215,16 +4509,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '纳米',
+          one: '{0} nanometer',
           other: '{0}纳米',
         ),
         short: UnitCountPattern(
           _locale,
           '纳米',
+          one: '{0} nm',
           other: '{0}纳米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
+          one: '{0}nm',
           other: '{0}nm',
         ),
       );
@@ -4234,16 +4531,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '皮米',
+          one: '{0} picometer',
           other: '{0}皮米',
         ),
         short: UnitCountPattern(
           _locale,
           '皮米',
+          one: '{0} pm',
           other: '{0}皮米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
+          one: '{0}pm',
           other: '{0}pm',
         ),
       );
@@ -4253,16 +4553,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里',
+          one: '{0} mile',
           other: '{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           '英里',
+          one: '{0} mi',
           other: '{0}英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi',
+          one: '{0}mi',
           other: '{0}mi',
         ),
       );
@@ -4272,16 +4575,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '码',
+          one: '{0} yard',
           other: '{0}码',
         ),
         short: UnitCountPattern(
           _locale,
           '码',
+          one: '{0} yd',
           other: '{0}码',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd',
+          one: '{0}yd',
           other: '{0}yd',
         ),
       );
@@ -4291,16 +4597,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英尺',
+          one: '{0} foot',
           other: '{0}英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '英尺',
+          one: '{0} ft',
           other: '{0}英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -4310,16 +4619,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英寸',
+          one: '{0} inch',
           other: '{0}英寸',
         ),
         short: UnitCountPattern(
           _locale,
           '英寸',
+          one: '{0} in',
           other: '{0}英寸',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -4329,16 +4641,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '秒差距',
+          one: '{0} parsec',
           other: '{0}秒差距',
         ),
         short: UnitCountPattern(
           _locale,
           '秒差距',
+          one: '{0} pc',
           other: '{0}秒差距',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒差距',
+          one: '{0}pc',
           other: '{0}pc',
         ),
       );
@@ -4348,16 +4663,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} light year',
           other: '{0}光年',
         ),
         short: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} ly',
           other: '{0}光年',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ly',
+          one: '{0}ly',
           other: '{0}ly',
         ),
       );
@@ -4367,16 +4685,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '天文单位',
+          one: '{0} astronomical unit',
           other: '{0}天文单位',
         ),
         short: UnitCountPattern(
           _locale,
           '天文单位',
+          one: '{0} au',
           other: '{0}天文单位',
         ),
         narrow: UnitCountPattern(
           _locale,
           'au',
+          one: '{0}au',
           other: '{0}au',
         ),
       );
@@ -4386,16 +4707,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弗隆',
+          one: '{0} furlong',
           other: '{0}弗隆',
         ),
         short: UnitCountPattern(
           _locale,
           '弗隆',
+          one: '{0} fur',
           other: '{0}弗隆',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弗隆',
+          one: '{0}fur',
           other: '{0}fur',
         ),
       );
@@ -4405,16 +4729,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英寻',
+          one: '{0} fathom',
           other: '{0}英寻',
         ),
         short: UnitCountPattern(
           _locale,
           '英寻',
+          one: '{0} fth',
           other: '{0}英寻',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英寻',
+          one: '{0}fth',
           other: '{0}fth',
         ),
       );
@@ -4424,16 +4751,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nautical mile',
           other: '{0}海里',
         ),
         short: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nmi',
           other: '{0}海里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nmi',
+          one: '{0}nmi',
           other: '{0}nmi',
         ),
       );
@@ -4443,16 +4773,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '斯堪的纳维亚英里',
+          one: '{0} mile-scandinavian',
           other: '{0}斯堪的纳维亚英里',
         ),
         short: UnitCountPattern(
           _locale,
           '斯堪的纳维亚英里',
+          one: '{0} smi',
           other: '{0}斯堪的纳维亚英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'smi',
+          one: '{0}smi',
           other: '{0}smi',
         ),
       );
@@ -4462,16 +4795,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0} point',
           other: '{0} pt',
         ),
         short: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -4481,16 +4817,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太阳半径',
+          one: '{0} solar radius',
           other: '{0}太阳半径',
         ),
         short: UnitCountPattern(
           _locale,
           '太阳半径',
+          one: '{0} R☉',
           other: '{0}太阳半径',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0}R☉',
           other: '{0}R☉',
         ),
       );
@@ -4500,16 +4839,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '勒克斯',
+          one: '{0} lux',
           other: '{0}勒克斯',
         ),
         short: UnitCountPattern(
           _locale,
           'lx',
+          one: '{0} lx',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lx',
+          one: '{0}lx',
           other: '{0}lx',
         ),
       );
@@ -4519,16 +4861,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '坎德拉',
+          one: '{0} candela',
           other: '{0}坎德拉',
         ),
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} cd',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0}cd',
           other: '{0}cd',
         ),
       );
@@ -4538,16 +4883,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '流明',
+          one: '{0} lumen',
           other: '{0}流明',
         ),
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lm',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0}lm',
           other: '{0}lm',
         ),
       );
@@ -4557,16 +4905,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太阳光度',
+          one: '{0} solar luminosity',
           other: '{0}太阳光度',
         ),
         short: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} L☉',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0}L☉',
           other: '{0}L☉',
         ),
       );
@@ -4576,16 +4927,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公吨',
+          one: '{0} metric ton',
           other: '{0}公吨',
         ),
         short: UnitCountPattern(
           _locale,
           't',
+          one: '{0} t',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
+          one: '{0}t',
           other: '{0}t',
         ),
       );
@@ -4595,16 +4949,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千克',
+          one: '{0} kilogram',
           other: '{0}千克',
         ),
         short: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0} kg',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0}kg',
           other: '{0}kg',
         ),
       );
@@ -4614,16 +4971,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '克',
+          one: '{0} gram',
           other: '{0}克',
         ),
         short: UnitCountPattern(
           _locale,
           '克',
+          one: '{0} g',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
+          one: '{0}g',
           other: '{0}g',
         ),
       );
@@ -4633,16 +4993,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫克',
+          one: '{0} milligram',
           other: '{0}毫克',
         ),
         short: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0} mg',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0}mg',
           other: '{0}mg',
         ),
       );
@@ -4652,16 +5015,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '微克',
+          one: '{0} microgram',
           other: '{0}微克',
         ),
         short: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0} μg',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0}μg',
           other: '{0}μg',
         ),
       );
@@ -4671,16 +5037,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吨',
+          one: '{0} ton',
           other: '{0}吨',
         ),
         short: UnitCountPattern(
           _locale,
           'tn',
+          one: '{0} tn',
           other: '{0} tn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tn',
+          one: '{0}tn',
           other: '{0}tn',
         ),
       );
@@ -4690,16 +5059,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英石',
+          one: '{0} stone',
           other: '{0}英石',
         ),
         short: UnitCountPattern(
           _locale,
           '英石',
+          one: '{0} st',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英石',
+          one: '{0}st',
           other: '{0}st',
         ),
       );
@@ -4709,16 +5081,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅',
+          one: '{0} pound',
           other: '{0}磅',
         ),
         short: UnitCountPattern(
           _locale,
           'lb',
+          one: '{0} lb',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lb',
+          one: '{0}#',
           other: '{0}#',
         ),
       );
@@ -4728,16 +5103,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '盎司',
+          one: '{0} ounce',
           other: '{0}盎司',
         ),
         short: UnitCountPattern(
           _locale,
           'oz',
+          one: '{0} oz',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz',
+          one: '{0}oz',
           other: '{0}oz',
         ),
       );
@@ -4747,16 +5125,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '金衡制盎司',
+          one: '{0} troy ounce',
           other: '{0}金衡制盎司',
         ),
         short: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0} oz t',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0}oz t',
           other: '{0}oz t',
         ),
       );
@@ -4766,16 +5147,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '克拉',
+          one: '{0} carat',
           other: '{0}克拉',
         ),
         short: UnitCountPattern(
           _locale,
           'CD',
+          one: '{0} CD',
           other: '{0} CD',
         ),
         narrow: UnitCountPattern(
           _locale,
           'CD',
+          one: '{0}CD',
           other: '{0}CD',
         ),
       );
@@ -4785,16 +5169,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '道尔顿',
+          one: '{0} dalton',
           other: '{0}道尔顿',
         ),
         short: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0} Da',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0}Da',
           other: '{0}Da',
         ),
       );
@@ -4804,16 +5191,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '地球质量',
+          one: '{0} Earth mass',
           other: '{0}地球质量',
         ),
         short: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} M⊕',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0}M⊕',
           other: '{0}M⊕',
         ),
       );
@@ -4823,16 +5213,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太阳质量',
+          one: '{0} solar mass',
           other: '{0}太阳质量',
         ),
         short: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} M☉',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0}M☉',
           other: '{0}M☉',
         ),
       );
@@ -4842,16 +5235,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '格令',
+          one: '{0} grain',
           other: '{0}格令',
         ),
         short: UnitCountPattern(
           _locale,
           'gr',
+          one: '{0} gr',
           other: '{0} gr',
         ),
         narrow: UnitCountPattern(
           _locale,
           'gr',
+          one: '{0}gr',
           other: '{0}gr',
         ),
       );
@@ -4861,16 +5257,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉瓦',
+          one: '{0} gigawatt',
           other: '{0}吉瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '吉瓦',
+          one: '{0} GW',
           other: '{0}吉瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
+          one: '{0}GW',
           other: '{0}GW',
         ),
       );
@@ -4880,16 +5279,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆瓦',
+          one: '{0} megawatt',
           other: '{0}兆瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '兆瓦',
+          one: '{0} MW',
           other: '{0}兆瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
+          one: '{0}MW',
           other: '{0}MW',
         ),
       );
@@ -4899,16 +5301,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千瓦',
+          one: '{0} kilowatt',
           other: '{0}千瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '千瓦',
+          one: '{0} kW',
           other: '{0}千瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
+          one: '{0}kW',
           other: '{0}kW',
         ),
       );
@@ -4918,16 +5323,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '瓦特',
+          one: '{0} watt',
           other: '{0}瓦特',
         ),
         short: UnitCountPattern(
           _locale,
           '瓦特',
+          one: '{0} W',
           other: '{0}瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '瓦特',
+          'W',
+          one: '{0}W',
           other: '{0}W',
         ),
       );
@@ -4937,16 +5345,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫瓦',
+          one: '{0} milliwatt',
           other: '{0}毫瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '毫瓦',
+          one: '{0} mW',
           other: '{0}毫瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
+          one: '{0}mW',
           other: '{0}mW',
         ),
       );
@@ -4956,16 +5367,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '马力',
+          one: '{0} horsepower',
           other: '{0}马力',
         ),
         short: UnitCountPattern(
           _locale,
           '马力',
+          one: '{0} hp',
           other: '{0}马力',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hp',
+          one: '{0}hp',
           other: '{0}hp',
         ),
       );
@@ -4975,16 +5389,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫米汞柱',
+          one: '{0} millimeter of mercury',
           other: '{0}毫米汞柱',
         ),
         short: UnitCountPattern(
           _locale,
           'mmHg',
+          one: '{0} mmHg',
           other: '{0} mmHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmHg',
+          one: '{0}mmHg',
           other: '{0}mmHg',
         ),
       );
@@ -4994,16 +5411,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅/平方英寸',
+          one: '{0} pound-force per square inch',
           other: '每平方英寸{0}磅',
         ),
         short: UnitCountPattern(
           _locale,
           'psi',
+          one: '{0} psi',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
+          one: '{0}psi',
           other: '{0}psi',
         ),
       );
@@ -5013,16 +5433,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英寸汞柱',
+          one: '{0} inch of mercury',
           other: '{0}英寸汞柱',
         ),
         short: UnitCountPattern(
           _locale,
           'inHg',
+          one: '{0} inHg',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'inHg',
+          one: '{0}″ Hg',
           other: '{0}″ Hg',
         ),
       );
@@ -5032,16 +5455,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '巴',
+          one: '{0} bar',
           other: '{0}巴',
         ),
         short: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0}bar',
           other: '{0}bar',
         ),
       );
@@ -5051,16 +5477,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫巴',
+          one: '{0} millibar',
           other: '{0}毫巴',
         ),
         short: UnitCountPattern(
           _locale,
           'mbar',
+          one: '{0} mbar',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mbar',
+          one: '{0}mb',
           other: '{0}mb',
         ),
       );
@@ -5070,16 +5499,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '标准大气压',
+          one: '{0} atmosphere',
           other: '{0}个标准大气压',
         ),
         short: UnitCountPattern(
           _locale,
           'atm',
+          one: '{0} atm',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
+          one: '{0}atm',
           other: '{0}atm',
         ),
       );
@@ -5089,16 +5521,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '帕斯卡',
+          one: '{0} pascal',
           other: '{0}帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} Pa',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0}Pa',
           other: '{0}Pa',
         ),
       );
@@ -5108,16 +5543,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '百帕斯卡',
+          one: '{0} hectopascal',
           other: '{0}百帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0} hPa',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0}hPa',
           other: '{0}hPa',
         ),
       );
@@ -5127,16 +5565,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千帕斯卡',
+          one: '{0} kilopascal',
           other: '{0}千帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} kPa',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0}kPa',
           other: '{0}kPa',
         ),
       );
@@ -5146,16 +5587,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆帕斯卡',
+          one: '{0} megapascal',
           other: '{0}兆帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} MPa',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0}MPa',
           other: '{0}MPa',
         ),
       );
@@ -5165,16 +5609,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公里/小时',
+          one: '{0} kilometer per hour',
           other: '每小时{0}公里',
         ),
         short: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0} km/h',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0}km/h',
           other: '{0}km/h',
         ),
       );
@@ -5184,16 +5631,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '米/秒',
+          one: '{0} meter per second',
           other: '每秒{0}米',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0} m/s',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米/秒',
+          one: '{0}m/s',
           other: '{0}m/s',
         ),
       );
@@ -5203,16 +5653,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里/小时',
+          one: '{0} mile per hour',
           other: '每小时{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           'mi/h',
+          one: '{0} mph',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi/hr',
+          one: '{0}mph',
           other: '{0}mph',
         ),
       );
@@ -5222,17 +5675,42 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '节',
+          one: '{0} knot',
           other: '{0}节',
         ),
         short: UnitCountPattern(
           _locale,
           'kn',
+          one: '{0} kn',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kn',
+          one: '{0}kn',
           other: '{0}kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '蒲福风级',
+          one: 'Beaufort {0}',
+          other: '{0}级',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'B {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'B{0}',
+          other: 'B{0}',
         ),
       );
 
@@ -5241,16 +5719,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '°',
+          one: '{0} degree temperature',
           other: '{0}°',
         ),
         short: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -5260,16 +5741,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '摄氏度',
+          one: '{0} degree Celsius',
           other: '{0}摄氏度',
         ),
         short: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
       );
@@ -5279,16 +5763,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '华氏度',
+          one: '{0} degree Fahrenheit',
           other: '{0}华氏度',
         ),
         short: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°F',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°',
           other: '{0}°F',
         ),
       );
@@ -5298,16 +5785,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '开尔文',
+          one: '{0} kelvin',
           other: '{0}开尔文',
         ),
         short: UnitCountPattern(
           _locale,
           'K',
+          one: '{0} K',
           other: '{0}K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
+          one: '{0}K',
           other: '{0}K',
         ),
       );
@@ -5317,16 +5807,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅英尺',
+          one: '{0} pound-force-foot',
           other: '{0}磅英尺',
         ),
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0} lbf⋅ft',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0}lbf⋅ft',
           other: '{0}lbf⋅ft',
         ),
       );
@@ -5336,16 +5829,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '牛顿米',
+          one: '{0} newton-meter',
           other: '{0}牛顿米',
         ),
         short: UnitCountPattern(
           _locale,
           '牛米',
+          one: '{0} N⋅m',
           other: '{0}牛米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '牛米',
+          one: '{0}N⋅m',
           other: '{0}牛米',
         ),
       );
@@ -5355,16 +5851,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方千米',
+          one: '{0} cubic kilometer',
           other: '{0}立方千米',
         ),
         short: UnitCountPattern(
           _locale,
           '立方千米',
+          one: '{0} km³',
           other: '{0}立方千米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0}km³',
           other: '{0}km³',
         ),
       );
@@ -5374,16 +5873,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方米',
+          one: '{0} cubic meter',
           other: '{0}立方米',
         ),
         short: UnitCountPattern(
           _locale,
           '立方米',
+          one: '{0} m³',
           other: '{0}立方米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0}m³',
           other: '{0}m³',
         ),
       );
@@ -5393,16 +5895,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方厘米',
+          one: '{0} cubic centimeter',
           other: '{0}立方厘米',
         ),
         short: UnitCountPattern(
           _locale,
           '立方厘米',
+          one: '{0} cm³',
           other: '{0}立方厘米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0}cm³',
           other: '{0}cm³',
         ),
       );
@@ -5412,16 +5917,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方英里',
+          one: '{0} cubic mile',
           other: '{0}立方英里',
         ),
         short: UnitCountPattern(
           _locale,
           '立方英里',
+          one: '{0} mi³',
           other: '{0}立方英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
+          one: '{0}mi³',
           other: '{0}mi³',
         ),
       );
@@ -5431,16 +5939,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方码',
+          one: '{0} cubic yard',
           other: '{0}立方码',
         ),
         short: UnitCountPattern(
           _locale,
           '立方码',
+          one: '{0} yd³',
           other: '{0}立方码',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
+          one: '{0}yd³',
           other: '{0}yd³',
         ),
       );
@@ -5450,16 +5961,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方英尺',
+          one: '{0} cubic foot',
           other: '{0}立方英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '立方英尺',
+          one: '{0} ft³',
           other: '{0}立方英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
+          one: '{0}ft³',
           other: '{0}ft³',
         ),
       );
@@ -5469,16 +5983,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方英寸',
+          one: '{0} cubic inch',
           other: '{0}立方英寸',
         ),
         short: UnitCountPattern(
           _locale,
           '立方英寸',
+          one: '{0} in³',
           other: '{0}立方英寸',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
+          one: '{0}in³',
           other: '{0}in³',
         ),
       );
@@ -5488,16 +6005,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆升',
+          one: '{0} megaliter',
           other: '{0}兆升',
         ),
         short: UnitCountPattern(
           _locale,
           '兆升',
+          one: '{0} ML',
           other: '{0}兆升',
         ),
         narrow: UnitCountPattern(
           _locale,
           '兆升',
+          one: '{0}ML',
           other: '{0}兆升',
         ),
       );
@@ -5507,16 +6027,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公石',
+          one: '{0} hectoliter',
           other: '{0}公石',
         ),
         short: UnitCountPattern(
           _locale,
           '公石',
+          one: '{0} hL',
           other: '{0}公石',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hL',
+          one: '{0}hL',
           other: '{0}hL',
         ),
       );
@@ -5526,16 +6049,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '升',
+          one: '{0} liter',
           other: '{0}升',
         ),
         short: UnitCountPattern(
           _locale,
           '升',
+          one: '{0} L',
           other: '{0}升',
         ),
         narrow: UnitCountPattern(
           _locale,
           '升',
+          one: '{0}L',
           other: '{0}升',
         ),
       );
@@ -5545,16 +6071,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '分升',
+          one: '{0} deciliter',
           other: '{0}分升',
         ),
         short: UnitCountPattern(
           _locale,
           '分升',
+          one: '{0} dL',
           other: '{0}分升',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dL',
+          one: '{0}dL',
           other: '{0}dL',
         ),
       );
@@ -5564,16 +6093,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '厘升',
+          one: '{0} centiliter',
           other: '{0}厘升',
         ),
         short: UnitCountPattern(
           _locale,
           '厘升',
+          one: '{0} cL',
           other: '{0}厘升',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cL',
+          one: '{0}cL',
           other: '{0}cL',
         ),
       );
@@ -5583,16 +6115,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫升',
+          one: '{0} milliliter',
           other: '{0}毫升',
         ),
         short: UnitCountPattern(
           _locale,
           '毫升',
+          one: '{0} mL',
           other: '{0}毫升',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mL',
+          one: '{0}mL',
           other: '{0}mL',
         ),
       );
@@ -5602,16 +6137,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公制品脱',
+          one: '{0} metric pint',
           other: '{0}公制品脱',
         ),
         short: UnitCountPattern(
           _locale,
           '公制品脱',
+          one: '{0} mpt',
           other: '{0}公制品脱',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}mpt',
           other: '{0}mpt',
         ),
       );
@@ -5621,16 +6159,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公制杯',
+          one: '{0} metric cup',
           other: '{0}公制杯',
         ),
         short: UnitCountPattern(
           _locale,
           '公制杯',
+          one: '{0} mc',
           other: '{0}公制杯',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mcup',
+          one: '{0}mc',
           other: '{0}mc',
         ),
       );
@@ -5640,16 +6181,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英亩英尺',
+          one: '{0} acre-foot',
           other: '{0}英亩英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '英亩英尺',
+          one: '{0} ac ft',
           other: '{0}英亩英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英亩英尺',
+          one: '{0}ac ft',
           other: '{0}ac ft',
         ),
       );
@@ -5659,16 +6203,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '蒲式耳',
+          one: '{0} bushel',
           other: '{0}蒲式耳',
         ),
         short: UnitCountPattern(
           _locale,
           '蒲式耳',
+          one: '{0} bu',
           other: '{0}蒲式耳',
         ),
         narrow: UnitCountPattern(
           _locale,
           '蒲式耳',
+          one: '{0}bu',
           other: '{0}bu',
         ),
       );
@@ -5678,16 +6225,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '加仑',
+          one: '{0} gallon',
           other: '{0}加仑',
         ),
         short: UnitCountPattern(
           _locale,
           '加仑',
+          one: '{0} gal',
           other: '{0}加仑',
         ),
         narrow: UnitCountPattern(
           _locale,
           'gal',
+          one: '{0}gal',
           other: '{0}gal',
         ),
       );
@@ -5697,16 +6247,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制加仑',
+          one: '{0} Imp. gallon',
           other: '{0}英制加仑',
         ),
         short: UnitCountPattern(
           _locale,
           '英制加仑',
+          one: '{0} gal Imp.',
           other: '{0}英制加仑',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制加仑',
+          one: '{0}galIm',
           other: '{0}galIm',
         ),
       );
@@ -5716,16 +6269,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '夸脱',
+          one: '{0} quart',
           other: '{0}夸脱',
         ),
         short: UnitCountPattern(
           _locale,
           '夸脱',
+          one: '{0} qt',
           other: '{0}夸脱',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
+          one: '{0}qt',
           other: '{0}qt',
         ),
       );
@@ -5735,16 +6291,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '品脱',
+          one: '{0} pint',
           other: '{0}品脱',
         ),
         short: UnitCountPattern(
           _locale,
           '品脱',
+          one: '{0} pt',
           other: '{0}品脱',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -5754,16 +6313,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '杯',
+          one: '{0} cup',
           other: '{0}杯',
         ),
         short: UnitCountPattern(
           _locale,
           '杯',
+          one: '{0} c',
           other: '{0}杯',
         ),
         narrow: UnitCountPattern(
           _locale,
           '杯',
+          one: '{0}c',
           other: '{0}c',
         ),
       );
@@ -5773,16 +6335,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '液盎司',
+          one: '{0} fluid ounce',
           other: '{0}液盎司',
         ),
         short: UnitCountPattern(
           _locale,
           '液盎司',
+          one: '{0} fl oz',
           other: '{0}液盎司',
         ),
         narrow: UnitCountPattern(
           _locale,
           '液盎司',
+          one: '{0}fl oz',
           other: '{0}fl oz',
         ),
       );
@@ -5792,16 +6357,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制液盎司',
+          one: '{0} Imp. fluid ounce',
           other: '{0}英制液盎司',
         ),
         short: UnitCountPattern(
           _locale,
           '英制液盎司',
+          one: '{0} fl oz Imp.',
           other: '{0}英制液盎司',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制液盎司',
+          one: '{0}fl oz Im',
           other: '{0}fl oz Im',
         ),
       );
@@ -5811,16 +6379,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '汤匙',
+          one: '{0} tablespoon',
           other: '{0}汤匙',
         ),
         short: UnitCountPattern(
           _locale,
           '汤匙',
+          one: '{0} tbsp',
           other: '{0}汤匙',
         ),
         narrow: UnitCountPattern(
           _locale,
           '汤匙',
+          one: '{0}tbsp',
           other: '{0}tbsp',
         ),
       );
@@ -5830,16 +6401,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '茶匙',
+          one: '{0} teaspoon',
           other: '{0}茶匙',
         ),
         short: UnitCountPattern(
           _locale,
           '茶匙',
+          one: '{0} tsp',
           other: '{0}茶匙',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tsp',
+          one: '{0}tsp',
           other: '{0}tsp',
         ),
       );
@@ -5849,16 +6423,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '桶',
+          one: '{0} barrel',
           other: '{0}桶',
         ),
         short: UnitCountPattern(
           _locale,
           '桶',
+          one: '{0} bbl',
           other: '{0}桶',
         ),
         narrow: UnitCountPattern(
           _locale,
           '桶',
+          one: '{0}bbl',
           other: '{0}bbl',
         ),
       );
@@ -5868,16 +6445,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '甜点匙',
+          one: '{0} dessert spoon',
           other: '{0}甜点匙',
         ),
         short: UnitCountPattern(
           _locale,
           '甜点匙',
+          one: '{0} dsp',
           other: '{0}甜点匙',
         ),
         narrow: UnitCountPattern(
           _locale,
           '甜点匙',
+          one: '{0}dsp',
           other: '{0}dsp',
         ),
       );
@@ -5887,16 +6467,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制甜点匙',
+          one: '{0} Imp. dessert spoon',
           other: '{0}英制甜点匙',
         ),
         short: UnitCountPattern(
           _locale,
           'dstspn Imp',
+          one: '{0} dsp-Imp.',
           other: '{0} dstspn Imp',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制甜点匙',
+          one: '{0}dsp-Imp',
           other: '{0}dsp-Imp',
         ),
       );
@@ -5906,16 +6489,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} drop',
           other: '{0}滴',
         ),
         short: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} dr',
           other: '{0}滴',
         ),
         narrow: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0}dr',
           other: '{0}dr',
         ),
       );
@@ -5925,16 +6511,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '打兰',
+          one: '{0} dram',
           other: '{0}打兰',
         ),
         short: UnitCountPattern(
           _locale,
           '液量打兰',
+          one: '{0} dram',
           other: '{0}液量打兰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '液量打兰',
+          one: '{0}fl.dr.',
           other: '{0}fl.dr.',
         ),
       );
@@ -5944,16 +6533,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '量杯',
+          one: '{0} jigger',
           other: '{0}量杯',
         ),
         short: UnitCountPattern(
           _locale,
           '量杯',
+          one: '{0} jigger',
           other: '{0}量杯',
         ),
         narrow: UnitCountPattern(
           _locale,
           '量杯',
+          one: '{0}jigger',
           other: '{0}jigger',
         ),
       );
@@ -5963,16 +6555,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '撮',
+          one: '{0} pinch',
           other: '{0}撮',
         ),
         short: UnitCountPattern(
           _locale,
           '撮',
+          one: '{0} pn',
           other: '{0}撮',
         ),
         narrow: UnitCountPattern(
           _locale,
           '撮',
+          one: '{0}pn',
           other: '{0}pn',
         ),
       );
@@ -5982,17 +6577,42 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制夸脱',
+          one: '{0} Imp. quart',
           other: '{0}英制夸脱',
         ),
         short: UnitCountPattern(
           _locale,
           'qt Imp',
+          one: '{0} qt-Imp.',
           other: '{0} qt Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制夸脱',
+          one: '{0}qt-Imp.',
           other: '{0}qt-Imp.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -7168,6 +7788,10 @@ class TerritoriesZh implements Territories {
     'CP': Territory(
       'CP',
       '克利珀顿岛',
+    ),
+    'CQ': Territory(
+      'CQ',
+      '未知地区 (CQ)',
     ),
     'CR': Territory(
       'CR',

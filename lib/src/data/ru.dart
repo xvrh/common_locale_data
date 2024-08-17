@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'ru';
 
-/// Translations in Russian of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for ru
 class CommonLocaleDataRu implements CommonLocaleData {
   String get locale => _locale;
 
@@ -228,7 +228,7 @@ class LanguagesRu extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'харианви',
     ),
     'bgn': Language(
       'bgn',
@@ -834,11 +834,6 @@ class LanguagesRu extends Languages {
       'hi',
       'хинди',
     ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'хинди (латиница)',
-      variant: 'хинглиш',
-    ),
     'hil': Language(
       'hil',
       'хилигайнон',
@@ -1202,10 +1197,6 @@ class LanguagesRu extends Languages {
     'li': Language(
       'li',
       'лимбургский',
-    ),
-    'lij': Language(
-      'lij',
-      'lij',
     ),
     'lil': Language(
       'lil',
@@ -2187,10 +2178,6 @@ class LanguagesRu extends Languages {
       've',
       'венда',
     ),
-    'vec': Language(
-      'vec',
-      'vec',
-    ),
     'vi': Language(
       'vi',
       'вьетнамский',
@@ -2400,6 +2387,18 @@ class UnitsRu implements Units {
         narrow: UnitPrefixPattern('и{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ронто{0}'),
+        short: UnitPrefixPattern('р{0}'),
+        narrow: UnitPrefixPattern('р{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('квекто{0}'),
+        short: UnitPrefixPattern('кв{0}'),
+        narrow: UnitPrefixPattern('кв{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('дека{0}'),
         short: UnitPrefixPattern('да{0}'),
@@ -2458,6 +2457,18 @@ class UnitsRu implements Units {
         long: UnitPrefixPattern('иотта{0}'),
         short: UnitPrefixPattern('И{0}'),
         narrow: UnitPrefixPattern('И{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ронна{0}'),
+        short: UnitPrefixPattern('Р{0}'),
+        narrow: UnitPrefixPattern('Р{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('кветта{0}'),
+        short: UnitPrefixPattern('Кв{0}'),
+        narrow: UnitPrefixPattern('Кв{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2644,17 +2655,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} градус',
+          few: '{0} градуса',
+          many: '{0} градусов',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} градус',
+          few: '{0} градуса',
+          many: '{0} градусов',
           other: '{0}°',
         ),
       );
@@ -2672,17 +2683,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
-          few: '{0}′',
-          many: '{0}′',
+          one: '{0} минута',
+          few: '{0} минуты',
+          many: '{0} минут',
           other: '{0}′',
         ),
         narrow: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
-          few: '{0}′',
-          many: '{0}′',
+          one: '{0} минута',
+          few: '{0} минуты',
+          many: '{0} минут',
           other: '{0}′',
         ),
       );
@@ -2700,17 +2711,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
-          few: '{0}″',
-          many: '{0}″',
+          one: '{0} секунда',
+          few: '{0} секунды',
+          many: '{0} секунд',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
-          few: '{0}″',
-          many: '{0}″',
+          one: '{0} секунда',
+          few: '{0} секунды',
+          many: '{0} секунд',
           other: '{0}″',
         ),
       );
@@ -3120,17 +3131,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
-          many: '{0} ppm',
+          one: '{0} миллионная доля',
+          few: '{0} миллионные доли',
+          many: '{0} миллионных долей',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
-          many: '{0} ppm',
+          one: '{0} миллионная доля',
+          few: '{0} миллионные доли',
+          many: '{0} миллионных долей',
           other: '{0} ppm',
         ),
       );
@@ -4211,19 +4222,19 @@ class UnitsRu implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ккал',
-          one: '{0} ккал',
-          few: '{0} ккал',
-          many: '{0} ккал',
-          other: '{0} ккал',
+          'килокалории',
+          one: '{0} килокалория',
+          few: '{0} килокалории',
+          many: '{0} килокалорий',
+          other: '{0} килокалории',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ккал',
-          one: '{0} ккал',
-          few: '{0} ккал',
-          many: '{0} ккал',
-          other: '{0} ккал',
+          'килокалории',
+          one: '{0} килокалория',
+          few: '{0} килокалории',
+          many: '{0} килокалорий',
+          other: '{0} килокалории',
         ),
       );
 
@@ -4791,7 +4802,7 @@ class UnitsRu implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'точка',
+          'точки',
           one: '{0} точка',
           few: '{0} точки',
           many: '{0} точек',
@@ -4828,11 +4839,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} земной радиус',
+          few: '{0} земных радиуса',
+          many: '{0} земных радиусов',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} земной радиус',
+          few: '{0} земных радиуса',
+          many: '{0} земных радиусов',
           other: '{0} R⊕',
         ),
       );
@@ -5410,17 +5427,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
-          one: '{0} R☉',
-          few: '{0} R☉',
-          many: '{0} R☉',
+          one: '{0} солнечный радиус',
+          few: '{0} солнечных радиуса',
+          many: '{0} солнечных радиусов',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
-          one: '{0} R☉',
-          few: '{0} R☉',
-          many: '{0} R☉',
+          one: '{0} солнечный радиус',
+          few: '{0} солнечных радиуса',
+          many: '{0} солнечных радиусов',
           other: '{0} R☉',
         ),
       );
@@ -5522,11 +5539,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} солнечная светимость',
+          few: '{0} солнечные светимости',
+          many: '{0} солнечных светимостей',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} солнечная светимость',
+          few: '{0} солнечные светимости',
+          many: '{0} солнечных светимостей',
           other: '{0} L☉',
         ),
       );
@@ -5880,11 +5903,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} масса Земли',
+          few: '{0} массы Земли',
+          many: '{0} масс Земли',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} масса Земли',
+          few: '{0} массы Земли',
+          many: '{0} масс Земли',
           other: '{0} M⊕',
         ),
       );
@@ -5902,11 +5931,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} солнечная масса',
+          few: '{0} солнечные массы',
+          many: '{0} солнечных масс',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} солнечная масса',
+          few: '{0} солнечные массы',
+          many: '{0} солнечных масс',
           other: '{0} M☉',
         ),
       );
@@ -6500,6 +6535,34 @@ class UnitsRu implements Units {
       );
 
   @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'баллы Бофорта',
+          one: '{0} балл Бофорта',
+          few: '{0} балла Бофорта',
+          many: '{0} баллов Бофорта',
+          other: '{0} балла Бофорта',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Бфт',
+          one: '{0} Бфт',
+          few: '{0} Бфт',
+          many: '{0} Бфт',
+          other: '{0} Бфт',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Бфт',
+          one: '{0} Бфт',
+          few: '{0} Бфт',
+          many: '{0} Бфт',
+          other: '{0} Бфт',
+        ),
+      );
+
+  @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
@@ -6512,17 +6575,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} градус',
+          few: '{0} градуса',
+          many: '{0} градусов',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} градус',
+          few: '{0} градуса',
+          many: '{0} градусов',
           other: '{0}°',
         ),
       );
@@ -6596,17 +6659,17 @@ class UnitsRu implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
-          many: '{0} K',
+          one: '{0} кельвин',
+          few: '{0} кельвина',
+          many: '{0} кельвинов',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
-          many: '{0} K',
+          one: '{0} кельвин',
+          few: '{0} кельвина',
+          many: '{0} кельвинов',
           other: '{0} K',
         ),
       );
@@ -7616,6 +7679,28 @@ class UnitsRu implements Units {
           few: '{0} имп. кварт.',
           many: '{0} имп. кварт.',
           other: '{0} имп. кварт.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -9061,6 +9146,10 @@ class TerritoriesRu implements Territories {
     'CP': Territory(
       'CP',
       'о-в Клиппертон',
+    ),
+    'CQ': Territory(
+      'CQ',
+      'неизвестный регион (CQ)',
     ),
     'CR': Territory(
       'CR',

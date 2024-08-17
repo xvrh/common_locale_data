@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'fr';
 
-/// Translations in French of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for fr
 class CommonLocaleDataFr implements CommonLocaleData {
   String get locale => _locale;
 
@@ -279,7 +279,7 @@ class LanguagesFr extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'haryanvi',
     ),
     'bgn': Language(
       'bgn',
@@ -948,11 +948,6 @@ class LanguagesFr extends Languages {
     'hi': Language(
       'hi',
       'hindi',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'hindi (latin)',
-      variant: 'hinglish',
     ),
     'hif': Language(
       'hif',
@@ -1680,7 +1675,7 @@ class LanguagesFr extends Languages {
     ),
     'njo': Language(
       'njo',
-      'Ao',
+      'ao',
     ),
     'nl': Language(
       'nl',
@@ -2717,6 +2712,18 @@ class UnitsFr implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('quecto{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('déca{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2775,6 +2782,18 @@ class UnitsFr implements Units {
         long: UnitPrefixPattern('yotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('quetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2935,13 +2954,13 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} degré',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} degré',
           other: '{0}°',
         ),
       );
@@ -2957,13 +2976,13 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
+          one: '{0} minute d’arc',
           other: '{0}′',
         ),
         narrow: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
+          one: '{0} minute d’arc',
           other: '{0}′',
         ),
       );
@@ -2979,13 +2998,13 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
+          one: '{0} seconde d’arc',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
+          one: '{0} seconde d’arc',
           other: '{0}″',
         ),
       );
@@ -4166,13 +4185,13 @@ class UnitsFr implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          other: '{0} kcal',
+          'kilocalories',
+          one: '{0} kcal',
+          other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
+          'kilocalories',
           one: '{0}kcal',
           other: '{0}kcal',
         ),
@@ -4651,11 +4670,13 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} rayon terrestre',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} rayon terrestre',
           other: '{0} R⊕',
         ),
       );
@@ -5001,13 +5022,13 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'fur',
-          one: '{0} fur',
+          one: '{0} furlong',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fur',
-          one: '{0} fur',
+          one: '{0} furlong',
           other: '{0} fur',
         ),
       );
@@ -5155,6 +5176,7 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} candela',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
@@ -5176,6 +5198,7 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lumen',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
@@ -5351,13 +5374,13 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
+          one: '{0} stone',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
+          one: '{0} stone',
           other: '{0} st',
         ),
       );
@@ -5929,7 +5952,7 @@ class UnitsFr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0}m/s',
+          one: '{0} m/s',
           other: '{0}m/s',
         ),
       );
@@ -5951,8 +5974,8 @@ class UnitsFr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0}mi/h',
-          other: '{0}mi/h',
+          one: '{0} mi/h',
+          other: '{0} mi/h',
         ),
       );
 
@@ -5979,6 +6002,28 @@ class UnitsFr implements Units {
       );
 
   @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Beaufort',
+          one: '{0} degré Beaufort',
+          other: '{0} degrés Beaufort',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0} Bft',
+          other: '{0} Bft',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0}Bft',
+          other: '{0}Bft',
+        ),
+      );
+
+  @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
@@ -5989,13 +6034,13 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} degré',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} degré',
           other: '{0}°',
         ),
       );
@@ -6407,7 +6452,7 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
+          one: '{0} pinte métrique',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
@@ -6539,7 +6584,7 @@ class UnitsFr implements Units {
         short: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
+          one: '{0} quart',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
@@ -6855,6 +6900,28 @@ class UnitsFr implements Units {
           'qt imp.',
           one: '{0}qt imp.',
           other: '{0}qt imp.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -8120,6 +8187,10 @@ class TerritoriesFr implements Territories {
     'CP': Territory(
       'CP',
       'Île Clipperton',
+    ),
+    'CQ': Territory(
+      'CQ',
+      'région indéterminée (CQ)',
     ),
     'CR': Territory(
       'CR',

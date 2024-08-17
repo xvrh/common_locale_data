@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'pl';
 
-/// Translations in Polish of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for pl
 class CommonLocaleDataPl implements CommonLocaleData {
   String get locale => _locale;
 
@@ -279,7 +279,7 @@ class LanguagesPl extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'haryanvi',
     ),
     'bgn': Language(
       'bgn',
@@ -2716,6 +2716,18 @@ class UnitsPl implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('quecto{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('deka{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2774,6 +2786,18 @@ class UnitsPl implements Units {
         long: UnitPrefixPattern('jotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('quetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2840,19 +2864,19 @@ class UnitsPl implements Units {
         long: UnitCountPattern(
           _locale,
           'stała grawitacji',
+          one: '{0} g-force',
           other: '{0} G',
         ),
         short: UnitCountPattern(
           _locale,
           'G',
+          one: '{0} G',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'G',
-          one: '{0} G',
-          few: '{0} G',
-          many: '{0} G',
+          one: '{0}G',
           other: '{0} G',
         ),
       );
@@ -2870,11 +2894,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0} metr na sekundę do kwadratu',
+          few: '{0} metry na sekundę do kwadratu',
+          many: '{0} metrów na sekundę do kwadratu',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0} metr na sekundę do kwadratu',
+          few: '{0} metry na sekundę do kwadratu',
+          many: '{0} metrów na sekundę do kwadratu',
           other: '{0} m/s²',
         ),
       );
@@ -2920,11 +2950,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'rad',
+          one: '{0} radian',
+          few: '{0} radiany',
+          many: '{0} radianów',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rad',
+          one: '{0} radian',
+          few: '{0} radiany',
+          many: '{0} radianów',
           other: '{0} rad',
         ),
       );
@@ -2942,11 +2978,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'stopnie',
+          one: '{0} stopień',
+          few: '{0} stopnie',
+          many: '{0} stopni',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           'stopnie',
+          one: '{0} stopień',
+          few: '{0} stopnie',
+          many: '{0} stopni',
           other: '{0}°',
         ),
       );
@@ -2964,14 +3006,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'minuty',
+          one: '{0} minuta kątowa',
+          few: '{0} minuty kątowe',
+          many: '{0} minut kątowych',
           other: '{0}′',
         ),
         narrow: UnitCountPattern(
           _locale,
           'minuty',
-          one: '{0}′',
-          few: '{0}′',
-          many: '{0}′',
+          one: '{0} minuta kątowa',
+          few: '{0} minuty kątowe',
+          many: '{0} minut kątowych',
           other: '{0}′',
         ),
       );
@@ -2989,14 +3034,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'sekundy',
+          one: '{0} sekunda kątowa',
+          few: '{0} sekundy kątowe',
+          many: '{0} sekund kątowych',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
           'sekundy',
-          one: '{0}″',
-          few: '{0}″',
-          many: '{0}″',
+          one: '{0} sekunda kątowa',
+          few: '{0} sekundy kątowe',
+          many: '{0} sekund kątowych',
           other: '{0}″',
         ),
       );
@@ -3014,11 +3062,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0} kilometr kwadratowy',
+          few: '{0} kilometry kwadratowe',
+          many: '{0} kilometrów kwadratowych',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0} kilometr kwadratowy',
+          few: '{0} kilometry kwadratowe',
+          many: '{0} kilometrów kwadratowych',
           other: '{0} km²',
         ),
       );
@@ -3036,11 +3090,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'ha',
+          one: '{0} hektar',
+          few: '{0} hektary',
+          many: '{0} hektarów',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ha',
+          one: '{0} hektar',
+          few: '{0} hektary',
+          many: '{0} hektarów',
           other: '{0} ha',
         ),
       );
@@ -3058,11 +3118,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'm²',
+          one: '{0} metr kwadratowy',
+          few: '{0} metry kwadratowe',
+          many: '{0} metrów kwadratowych',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm²',
+          one: '{0} metr kwadratowy',
+          few: '{0} metry kwadratowe',
+          many: '{0} metrów kwadratowych',
           other: '{0} m²',
         ),
       );
@@ -3080,11 +3146,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0} centymetr kwadratowy',
+          few: '{0} centymetry kwadratowe',
+          many: '{0} centymetrów kwadratowych',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0} centymetr kwadratowy',
+          few: '{0} centymetry kwadratowe',
+          many: '{0} centymetrów kwadratowych',
           other: '{0} cm²',
         ),
       );
@@ -3270,11 +3342,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'karaty',
+          one: '{0} karat',
+          few: '{0} karaty',
+          many: '{0} karatów',
           other: '{0} kt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'karaty',
+          one: '{0} karat',
+          few: '{0} karaty',
+          many: '{0} karatów',
           other: '{0} kt',
         ),
       );
@@ -3376,11 +3454,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} część na milion',
+          few: '{0} części na milion',
+          many: '{0} części na milion',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} część na milion',
+          few: '{0} części na milion',
+          many: '{0} części na milion',
           other: '{0} ppm',
         ),
       );
@@ -3398,11 +3482,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           '%',
+          one: '{0} procent',
+          few: '{0} procent',
+          many: '{0} procent',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
+          one: '{0} procent',
+          few: '{0} procent',
+          many: '{0} procent',
           other: '{0}%',
         ),
       );
@@ -3420,11 +3510,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0} promil',
+          few: '{0} promile',
+          many: '{0} promili',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0} promil',
+          few: '{0} promile',
+          many: '{0} promili',
           other: '{0}‰',
         ),
       );
@@ -3442,17 +3538,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           '‱',
-          one: '{0}‱',
-          few: '{0}‱',
-          many: '{0}‱',
+          one: '{0} punkt bazowy',
+          few: '{0} punkty bazowe',
+          many: '{0} punktów bazowych',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
-          one: '{0}‱',
-          few: '{0}‱',
-          many: '{0}‱',
+          one: '{0} punkt bazowy',
+          few: '{0} punkty bazowe',
+          many: '{0} punktów bazowych',
           other: '{0}‱',
         ),
       );
@@ -3610,11 +3706,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0} petabajt',
+          few: '{0} petabajty',
+          many: '{0} petabajtów',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0} petabajt',
+          few: '{0} petabajty',
+          many: '{0} petabajtów',
           other: '{0} PB',
         ),
       );
@@ -3632,11 +3734,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0} terabajt',
+          few: '{0} terabajty',
+          many: '{0} terabajtów',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0} terabajt',
+          few: '{0} terabajty',
+          many: '{0} terabajtów',
           other: '{0} TB',
         ),
       );
@@ -3654,11 +3762,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0} terabit',
+          few: '{0} terabity',
+          many: '{0} terabitów',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0} terabit',
+          few: '{0} terabity',
+          many: '{0} terabitów',
           other: '{0} Tb',
         ),
       );
@@ -3676,11 +3790,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0} gigabajt',
+          few: '{0} gigabajty',
+          many: '{0} gigabajtów',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0} gigabajt',
+          few: '{0} gigabajty',
+          many: '{0} gigabajtów',
           other: '{0} GB',
         ),
       );
@@ -3698,11 +3818,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0} gigabit',
+          few: '{0} gigabity',
+          many: '{0} gigabitów',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0} gigabit',
+          few: '{0} gigabity',
+          many: '{0} gigabitów',
           other: '{0} Gb',
         ),
       );
@@ -3720,11 +3846,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0} megabajt',
+          few: '{0} megabajty',
+          many: '{0} megabajtów',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0} megabajt',
+          few: '{0} megabajty',
+          many: '{0} megabajtów',
           other: '{0} MB',
         ),
       );
@@ -3742,11 +3874,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0} megabit',
+          few: '{0} megabity',
+          many: '{0} megabitów',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0} megabit',
+          few: '{0} megabity',
+          many: '{0} megabitów',
           other: '{0} Mb',
         ),
       );
@@ -3764,11 +3902,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
+          one: '{0} kilobajt',
+          few: '{0} kilobajty',
+          many: '{0} kilobajtów',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
+          one: '{0} kilobajt',
+          few: '{0} kilobajty',
+          many: '{0} kilobajtów',
           other: '{0} kB',
         ),
       );
@@ -3786,11 +3930,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0} kilobit',
+          few: '{0} kilobity',
+          many: '{0} kilobitów',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0} kilobit',
+          few: '{0} kilobity',
+          many: '{0} kilobitów',
           other: '{0} kb',
         ),
       );
@@ -4012,10 +4162,10 @@ class UnitsPl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'tydz.',
-          one: '{0} tydz.',
+          one: '{0} t.',
           few: '{0} t.',
-          many: '{0} tyg.',
-          other: '{0} tyg.',
+          many: '{0} t.',
+          other: '{0} t.',
         ),
       );
 
@@ -4088,11 +4238,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'min',
+          one: '{0} minuta',
+          few: '{0} minuty',
+          many: '{0} minut',
           other: '{0} min',
         ),
         narrow: UnitCountPattern(
           _locale,
           'min',
+          one: '{0} minuta',
+          few: '{0} minuty',
+          many: '{0} minut',
           other: '{0} min',
         ),
       );
@@ -4138,11 +4294,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
+          one: '{0} milisekunda',
+          few: '{0} milisekundy',
+          many: '{0} milisekund',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ms',
+          one: '{0} milisekunda',
+          few: '{0} milisekundy',
+          many: '{0} milisekund',
           other: '{0} ms',
         ),
       );
@@ -4160,11 +4322,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
+          one: '{0} mikrosekunda',
+          few: '{0} mikrosekundy',
+          many: '{0} mikrosekund',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
+          one: '{0} mikrosekunda',
+          few: '{0} mikrosekundy',
+          many: '{0} mikrosekund',
           other: '{0} μs',
         ),
       );
@@ -4182,11 +4350,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
+          one: '{0} nanosekunda',
+          few: '{0} nanosekundy',
+          many: '{0} nanosekund',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
+          one: '{0} nanosekunda',
+          few: '{0} nanosekundy',
+          many: '{0} nanosekund',
           other: '{0} ns',
         ),
       );
@@ -4204,11 +4378,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
+          one: '{0} amper',
+          few: '{0} ampery',
+          many: '{0} amperów',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
+          one: '{0} amper',
+          few: '{0} ampery',
+          many: '{0} amperów',
           other: '{0} A',
         ),
       );
@@ -4226,11 +4406,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
+          one: '{0} miliamper',
+          few: '{0} miliampery',
+          many: '{0} miliamperów',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
+          one: '{0} miliamper',
+          few: '{0} miliampery',
+          many: '{0} miliamperów',
           other: '{0} mA',
         ),
       );
@@ -4248,11 +4434,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
+          one: '{0} om',
+          few: '{0} omy',
+          many: '{0} omów',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
+          one: '{0} om',
+          few: '{0} omy',
+          many: '{0} omów',
           other: '{0} Ω',
         ),
       );
@@ -4270,11 +4462,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
+          one: '{0} wolt',
+          few: '{0} wolty',
+          many: '{0} woltów',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
+          one: '{0} wolt',
+          few: '{0} wolty',
+          many: '{0} woltów',
           other: '{0} V',
         ),
       );
@@ -4292,11 +4490,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0} kilokaloria',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorii',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0} kilokaloria',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorii',
           other: '{0} kcal',
         ),
       );
@@ -4314,11 +4518,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0} kaloria',
+          few: '{0} kalorie',
+          many: '{0} kalorii',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0} kaloria',
+          few: '{0} kalorie',
+          many: '{0} kalorii',
           other: '{0} cal',
         ),
       );
@@ -4329,25 +4539,25 @@ class UnitsPl implements Units {
           _locale,
           'kalorie',
           one: '{0} kaloria',
-          few: '{0} kalorie',
-          many: '{0} kalorii',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorii',
           other: '{0} kalorii',
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          many: '{0} kcal',
-          other: '{0} kcal',
+          'kalorie',
+          one: '{0} kaloria',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorii',
+          other: '{0} kalorii',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          many: '{0} kcal',
-          other: '{0} kcal',
+          'kalorie',
+          one: '{0} kaloria',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorii',
+          other: '{0} kalorii',
         ),
       );
 
@@ -4364,11 +4574,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
+          one: '{0} kilodżul',
+          few: '{0} kilodżule',
+          many: '{0} kilodżuli',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
+          one: '{0} kilodżul',
+          few: '{0} kilodżule',
+          many: '{0} kilodżuli',
           other: '{0} kJ',
         ),
       );
@@ -4386,11 +4602,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
+          one: '{0} dżul',
+          few: '{0} dżule',
+          many: '{0} dżuli',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'J',
+          one: '{0} dżul',
+          few: '{0} dżule',
+          many: '{0} dżuli',
           other: '{0} J',
         ),
       );
@@ -4408,11 +4630,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
+          one: '{0} kilowatogodzina',
+          few: '{0} kilowatogodziny',
+          many: '{0} kilowatogodzin',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
+          one: '{0} kilowatogodzina',
+          few: '{0} kilowatogodziny',
+          many: '{0} kilowatogodzin',
           other: '{0} kWh',
         ),
       );
@@ -4430,17 +4658,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'elektronowolt',
-          one: '{0} eV',
-          few: '{0} eV',
-          many: '{0} eV',
+          one: '{0} elektronowolt',
+          few: '{0} elektronowolty',
+          many: '{0} elektronowoltów',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
-          few: '{0} eV',
-          many: '{0} eV',
+          one: '{0} elektronowolt',
+          few: '{0} elektronowolty',
+          many: '{0} elektronowoltów',
           other: '{0} eV',
         ),
       );
@@ -4458,17 +4686,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'BTU',
-          one: '{0} Btu',
-          few: '{0} Btu',
-          many: '{0} Btu',
+          one: '{0} brytyjska jednostka ciepła',
+          few: '{0} brytyjskie jednostki ciepła',
+          many: '{0} brytyjskich jednostek ciepła',
           other: '{0} Btu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'BTU',
-          one: '{0} Btu',
-          few: '{0} Btu',
-          many: '{0} Btu',
+          one: '{0} brytyjska jednostka ciepła',
+          few: '{0} brytyjskie jednostki ciepła',
+          many: '{0} brytyjskich jednostek ciepła',
           other: '{0} Btu',
         ),
       );
@@ -4514,17 +4742,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'funt-siła',
-          one: '{0} lbf',
-          few: '{0} lbf',
-          many: '{0} lbf',
+          one: '{0} funt-siła',
+          few: '{0} funty-siły',
+          many: '{0} funtów-siły',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
-          one: '{0} lbf',
-          few: '{0} lbf',
-          many: '{0} lbf',
+          one: '{0} funt-siła',
+          few: '{0} funty-siły',
+          many: '{0} funtów-siły',
           other: '{0} lbf',
         ),
       );
@@ -4542,17 +4770,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'N',
-          one: '{0} N',
-          few: '{0} N',
-          many: '{0} N',
+          one: '{0} niuton',
+          few: '{0} niutony',
+          many: '{0} niutonów',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N',
-          one: '{0} N',
-          few: '{0} N',
-          many: '{0} N',
+          one: '{0} niuton',
+          few: '{0} niutony',
+          many: '{0} niutonów',
           other: '{0} N',
         ),
       );
@@ -4570,11 +4798,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kilowatogodzina na 100 km',
+          few: '{0} kilowatogodziny na 100 km',
+          many: '{0} kilowatogodzin na 100 km',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kilowatogodzina na 100 km',
+          few: '{0} kilowatogodziny na 100 km',
+          many: '{0} kilowatogodzin na 100 km',
           other: '{0} kWh/100km',
         ),
       );
@@ -4592,11 +4826,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0} gigaherc',
+          few: '{0} gigaherce',
+          many: '{0} gigaherców',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0} gigaherc',
+          few: '{0} gigaherce',
+          many: '{0} gigaherców',
           other: '{0} GHz',
         ),
       );
@@ -4614,11 +4854,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0} megaherc',
+          few: '{0} megaherce',
+          many: '{0} megaherców',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0} megaherc',
+          few: '{0} megaherce',
+          many: '{0} megaherców',
           other: '{0} MHz',
         ),
       );
@@ -4636,11 +4882,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0} kiloherc',
+          few: '{0} kiloherce',
+          many: '{0} kiloherców',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0} kiloherc',
+          few: '{0} kiloherce',
+          many: '{0} kiloherców',
           other: '{0} kHz',
         ),
       );
@@ -4658,11 +4910,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0} herc',
+          few: '{0} herce',
+          many: '{0} herców',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0} herc',
+          few: '{0} herce',
+          many: '{0} herców',
           other: '{0} Hz',
         ),
       );
@@ -4708,11 +4966,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} piksel',
+          few: '{0} piksele',
+          many: '{0} pikseli',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} piksel',
+          few: '{0} piksele',
+          many: '{0} pikseli',
           other: '{0} px',
         ),
       );
@@ -4730,11 +4994,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0} megapiksel',
+          few: '{0} megapiksele',
+          many: '{0} megapikseli',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0} megapiksel',
+          few: '{0} megapiksele',
+          many: '{0} megapikseli',
           other: '{0} MP',
         ),
       );
@@ -4743,17 +5013,26 @@ class UnitsPl implements Units {
   Unit get graphicsPixelPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'ppcm',
-          other: '{0} ppcm',
+          'piksele na centymetr',
+          one: '{0} piksel na centymetr',
+          few: '{0} piksele na centymetr',
+          many: '{0} pikseli na centymetr',
+          other: '{0} piksela na centymetr',
         ),
         short: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} piksel na centymetr',
+          few: '{0} piksele na centymetr',
+          many: '{0} pikseli na centymetr',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} piksel na centymetr',
+          few: '{0} piksele na centymetr',
+          many: '{0} pikseli na centymetr',
           other: '{0} ppcm',
         ),
       );
@@ -4762,17 +5041,26 @@ class UnitsPl implements Units {
   Unit get graphicsPixelPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'ppi',
-          other: '{0} ppi',
+          'piksele na cal',
+          one: '{0} piksel na cal',
+          few: '{0} piksele na cal',
+          many: '{0} pikseli na cal',
+          other: '{0} piksela na cal',
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} piksel na cal',
+          few: '{0} piksele na cal',
+          many: '{0} pikseli na cal',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} piksel na cal',
+          few: '{0} piksele na cal',
+          many: '{0} pikseli na cal',
           other: '{0} ppi',
         ),
       );
@@ -4781,21 +5069,27 @@ class UnitsPl implements Units {
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'dots per centimeter',
-          one: '{0} dot per centimeter',
-          other: '{0} dots per centimeter',
+          'punkty na centymetr',
+          one: '{0} punkt na centymetr',
+          few: '{0} punkty na centymetr',
+          many: '{0} punktów na centymetr',
+          other: '{0} punktu na centymetr',
         ),
         short: UnitCountPattern(
           _locale,
-          'dpcm',
-          one: '{0} dpcm',
-          other: '{0} dpcm',
+          'punkty na centymetr',
+          one: '{0} punkt na centymetr',
+          few: '{0} punkty na centymetr',
+          many: '{0} punktów na centymetr',
+          other: '{0} punktu na centymetr',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dpcm',
-          one: '{0}dpcm',
-          other: '{0}dpcm',
+          'punkty na centymetr',
+          one: '{0} punkt na centymetr',
+          few: '{0} punkty na centymetr',
+          many: '{0} punktów na centymetr',
+          other: '{0} punktu na centymetr',
         ),
       );
 
@@ -4803,21 +5097,27 @@ class UnitsPl implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'dots per inch',
-          one: '{0} dot per inch',
-          other: '{0} dots per inch',
+          'punkty na cal',
+          one: '{0} punkt na cal',
+          few: '{0} punkty na cal',
+          many: '{0} punktów na cal',
+          other: '{0} punktu na cal',
         ),
         short: UnitCountPattern(
           _locale,
-          'dpi',
-          one: '{0} dpi',
-          other: '{0} dpi',
+          'punkty na cal',
+          one: '{0} punkt na cal',
+          few: '{0} punkty na cal',
+          many: '{0} punktów na cal',
+          other: '{0} punktu na cal',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dpi',
-          one: '{0}dpi',
-          other: '{0}dpi',
+          'punkty na cal',
+          one: '{0} punkt na cal',
+          few: '{0} punkty na cal',
+          many: '{0} punktów na cal',
+          other: '{0} punktu na cal',
         ),
       );
 
@@ -4856,11 +5156,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} promień Ziemi',
+          few: '{0} promienie Ziemi',
+          many: '{0} promieni Ziemi',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} promień Ziemi',
+          few: '{0} promienie Ziemi',
+          many: '{0} promieni Ziemi',
           other: '{0} R⊕',
         ),
       );
@@ -4878,11 +5184,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
+          one: '{0} kilometr',
+          few: '{0} kilometry',
+          many: '{0} kilometrów',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km',
+          one: '{0} kilometr',
+          few: '{0} kilometry',
+          many: '{0} kilometrów',
           other: '{0} km',
         ),
       );
@@ -4900,11 +5212,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'm',
+          one: '{0} metr',
+          few: '{0} metry',
+          many: '{0} metrów',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm',
+          one: '{0} metr',
+          few: '{0} metry',
+          many: '{0} metrów',
           other: '{0} m',
         ),
       );
@@ -4922,11 +5240,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
+          one: '{0} decymetr',
+          few: '{0} decymetry',
+          many: '{0} decymetrów',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dm',
+          one: '{0} decymetr',
+          few: '{0} decymetry',
+          many: '{0} decymetrów',
           other: '{0} dm',
         ),
       );
@@ -4944,11 +5268,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
+          one: '{0} centymetr',
+          few: '{0} centymetry',
+          many: '{0} centymetrów',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm',
+          one: '{0} centymetr',
+          few: '{0} centymetry',
+          many: '{0} centymetrów',
           other: '{0} cm',
         ),
       );
@@ -4966,11 +5296,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
+          one: '{0} milimetr',
+          few: '{0} milimetry',
+          many: '{0} milimetrów',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm',
+          one: '{0} milimetr',
+          few: '{0} milimetry',
+          many: '{0} milimetrów',
           other: '{0} mm',
         ),
       );
@@ -4988,11 +5324,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
+          one: '{0} mikrometr',
+          few: '{0} mikrometry',
+          many: '{0} mikrometrów',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
+          one: '{0} mikrometr',
+          few: '{0} mikrometry',
+          many: '{0} mikrometrów',
           other: '{0} μm',
         ),
       );
@@ -5010,11 +5352,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
+          one: '{0} nanometr',
+          few: '{0} nanometry',
+          many: '{0} nanometrów',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
+          one: '{0} nanometr',
+          few: '{0} nanometry',
+          many: '{0} nanometrów',
           other: '{0} nm',
         ),
       );
@@ -5032,11 +5380,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
+          one: '{0} pikometr',
+          few: '{0} pikometry',
+          many: '{0} pikometrów',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
+          one: '{0} pikometr',
+          few: '{0} pikometry',
+          many: '{0} pikometrów',
           other: '{0} pm',
         ),
       );
@@ -5082,17 +5436,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
-          few: '{0} yd',
-          many: '{0} yd',
+          one: '{0} jard',
+          few: '{0} jardy',
+          many: '{0} jardów',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
-          few: '{0} yd',
-          many: '{0} yd',
+          one: '{0} jard',
+          few: '{0} jardy',
+          many: '{0} jardów',
           other: '{0} yd',
         ),
       );
@@ -5110,17 +5464,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'stopy',
-          one: '{0} ft',
-          few: '{0} ft',
-          many: '{0} ft',
+          one: '{0} stopa',
+          few: '{0} stopy',
+          many: '{0} stóp',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
-          few: '{0} ft',
-          many: '{0} ft',
+          one: '{0} stopa',
+          few: '{0} stopy',
+          many: '{0} stóp',
           other: '{0} ft',
         ),
       );
@@ -5166,11 +5520,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'pc',
+          one: '{0} parsek',
+          few: '{0} parseki',
+          many: '{0} parseków',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pc',
+          one: '{0} parsek',
+          few: '{0} parseki',
+          many: '{0} parseków',
           other: '{0} pc',
         ),
       );
@@ -5188,11 +5548,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'ly',
+          one: '{0} rok świetlny',
+          few: '{0} lata świetlne',
+          many: '{0} lat świetlnych',
           other: '{0} ly',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ly',
+          one: '{0} rok świetlny',
+          few: '{0} lata świetlne',
+          many: '{0} lat świetlnych',
           other: '{0} ly',
         ),
       );
@@ -5238,11 +5604,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'fur',
+          one: '{0} furlong',
+          few: '{0} furlongi',
+          many: '{0} furlongów',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fur',
+          one: '{0} furlong',
+          few: '{0} furlongi',
+          many: '{0} furlongów',
           other: '{0} fur',
         ),
       );
@@ -5316,11 +5688,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'smi',
+          one: '{0} mila skandynawska',
+          few: '{0} mile skandynawskie',
+          many: '{0} mil skandynawskich',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'smi',
+          one: '{0} mila skandynawska',
+          few: '{0} mile skandynawskie',
+          many: '{0} mil skandynawskich',
           other: '{0} smi',
         ),
       );
@@ -5366,17 +5744,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
-          one: '{0} R☉',
-          few: '{0} R☉',
-          many: '{0} R☉',
+          one: '{0} promień Słońca',
+          few: '{0} promienie Słońca',
+          many: '{0} promieni Słońca',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
-          one: '{0} R☉',
-          few: '{0} R☉',
-          many: '{0} R☉',
+          one: '{0} promień Słońca',
+          few: '{0} promienie Słońca',
+          many: '{0} promieni Słońca',
           other: '{0} R☉',
         ),
       );
@@ -5394,11 +5772,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'lx',
+          one: '{0} luks',
+          few: '{0} luksy',
+          many: '{0} luksów',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lx',
+          one: '{0} luks',
+          few: '{0} luksy',
+          many: '{0} luksów',
           other: '{0} lx',
         ),
       );
@@ -5416,17 +5800,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
-          one: '{0} cd',
-          few: '{0} cd',
-          many: '{0} cd',
+          one: '{0} kandela',
+          few: '{0} kandele',
+          many: '{0} kandeli',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
-          one: '{0} cd',
-          few: '{0} cd',
-          many: '{0} cd',
+          one: '{0} kandela',
+          few: '{0} kandele',
+          many: '{0} kandeli',
           other: '{0} cd',
         ),
       );
@@ -5444,17 +5828,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
-          one: '{0} lm',
-          few: '{0} lm',
-          many: '{0} lm',
+          one: '{0} lumen',
+          few: '{0} lumeny',
+          many: '{0} lumenów',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
-          one: '{0} lm',
-          few: '{0} lm',
-          many: '{0} lm',
+          one: '{0} lumen',
+          few: '{0} lumeny',
+          many: '{0} lumenów',
           other: '{0} lm',
         ),
       );
@@ -5472,17 +5856,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'L☉',
-          one: '{0} L☉',
-          few: '{0} L☉',
-          many: '{0} L☉',
+          one: '{0} jasność Słońca',
+          few: '{0} jasności Słońca',
+          many: '{0} jasności Słońca',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
-          one: '{0} L☉',
-          few: '{0} L☉',
-          many: '{0} L☉',
+          one: '{0} jasność Słońca',
+          few: '{0} jasności Słońca',
+          many: '{0} jasności Słońca',
           other: '{0} L☉',
         ),
       );
@@ -5500,11 +5884,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           't',
+          one: '{0} tona',
+          few: '{0} tony',
+          many: '{0} ton',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
+          one: '{0} tona',
+          few: '{0} tony',
+          many: '{0} ton',
           other: '{0} t',
         ),
       );
@@ -5522,11 +5912,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0} kilogram',
+          few: '{0} kilogramy',
+          many: '{0} kilogramów',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0} kilogram',
+          few: '{0} kilogramy',
+          many: '{0} kilogramów',
           other: '{0} kg',
         ),
       );
@@ -5544,11 +5940,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'g',
+          one: '{0} gram',
+          few: '{0} gramy',
+          many: '{0} gramów',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
+          one: '{0} gram',
+          few: '{0} gramy',
+          many: '{0} gramów',
           other: '{0} g',
         ),
       );
@@ -5566,11 +5968,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0} miligram',
+          few: '{0} miligramy',
+          many: '{0} miligramów',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0} miligram',
+          few: '{0} miligramy',
+          many: '{0} miligramów',
           other: '{0} mg',
         ),
       );
@@ -5588,11 +5996,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0} mikrogram',
+          few: '{0} mikrogramy',
+          many: '{0} mikrogramów',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0} mikrogram',
+          few: '{0} mikrogramy',
+          many: '{0} mikrogramów',
           other: '{0} μg',
         ),
       );
@@ -5638,17 +6052,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
-          few: '{0} st',
-          many: '{0} st',
+          one: '{0} kamień',
+          few: '{0} kamienie',
+          many: '{0} kamieni',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
-          few: '{0} st',
-          many: '{0} st',
+          one: '{0} kamień',
+          few: '{0} kamienie',
+          many: '{0} kamieni',
           other: '{0} st',
         ),
       );
@@ -5694,11 +6108,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
+          one: '{0} uncja',
+          few: '{0} uncje',
+          many: '{0} uncji',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz',
+          one: '{0} uncja',
+          few: '{0} uncje',
+          many: '{0} uncji',
           other: '{0} oz',
         ),
       );
@@ -5716,11 +6136,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0} uncja trojańska',
+          few: '{0} uncje trojańskie',
+          many: '{0} uncji trojańskich',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0} uncja trojańska',
+          few: '{0} uncje trojańskie',
+          many: '{0} uncji trojańskich',
           other: '{0} oz t',
         ),
       );
@@ -5766,9 +6192,9 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
-          few: '{0} Da',
-          many: '{0} Da',
+          one: '{0} jednostka masy atomowej',
+          few: '{0} jednostki masy atomowej',
+          many: '{0} jednostek masy atomowej',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
@@ -5794,17 +6220,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
-          few: '{0} M⊕',
-          many: '{0} M⊕',
+          one: '{0} masa Ziemi',
+          few: '{0} masy Ziemi',
+          many: '{0} mas Ziemi',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
-          few: '{0} M⊕',
-          many: '{0} M⊕',
+          one: '{0} masa Ziemi',
+          few: '{0} masy Ziemi',
+          many: '{0} mas Ziemi',
           other: '{0} M⊕',
         ),
       );
@@ -5822,17 +6248,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} M☉',
-          few: '{0} M☉',
-          many: '{0} M☉',
+          one: '{0} masa Słońca',
+          few: '{0} masy Słońca',
+          many: '{0} mas Słońca',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} M☉',
-          few: '{0} M☉',
-          many: '{0} M☉',
+          one: '{0} masa Słońca',
+          few: '{0} masy Słońca',
+          many: '{0} mas Słońca',
           other: '{0} M☉',
         ),
       );
@@ -5878,11 +6304,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
+          one: '{0} gigawat',
+          few: '{0} gigawaty',
+          many: '{0} gigawatów',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
+          one: '{0} gigawat',
+          few: '{0} gigawaty',
+          many: '{0} gigawatów',
           other: '{0} GW',
         ),
       );
@@ -5900,11 +6332,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
+          one: '{0} megawat',
+          few: '{0} megawaty',
+          many: '{0} megawatów',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
+          one: '{0} megawat',
+          few: '{0} megawaty',
+          many: '{0} megawatów',
           other: '{0} MW',
         ),
       );
@@ -5922,11 +6360,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
+          one: '{0} kilowat',
+          few: '{0} kilowaty',
+          many: '{0} kilowatów',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
+          one: '{0} kilowat',
+          few: '{0} kilowaty',
+          many: '{0} kilowatów',
           other: '{0} kW',
         ),
       );
@@ -5944,11 +6388,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'waty',
+          one: '{0} wat',
+          few: '{0} waty',
+          many: '{0} watów',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'waty',
+          one: '{0} wat',
+          few: '{0} waty',
+          many: '{0} watów',
           other: '{0} W',
         ),
       );
@@ -5966,11 +6416,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
+          one: '{0} miliwat',
+          few: '{0} miliwaty',
+          many: '{0} miliwatów',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
+          one: '{0} miliwat',
+          few: '{0} miliwaty',
+          many: '{0} miliwatów',
           other: '{0} mW',
         ),
       );
@@ -6044,11 +6500,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
+          one: '{0} funt na cal kwadratowy',
+          few: '{0} funty na cal kwadratowy',
+          many: '{0} funtów na cal kwadratowy',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
+          one: '{0} funt na cal kwadratowy',
+          few: '{0} funty na cal kwadratowy',
+          many: '{0} funtów na cal kwadratowy',
           other: '{0} psi',
         ),
       );
@@ -6066,11 +6528,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'inHg',
+          one: '{0} cal słupa rtęci',
+          few: '{0} cale słupa rtęci',
+          many: '{0} cali słupa rtęci',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'inHg',
+          one: '{0} cal słupa rtęci',
+          few: '{0} cale słupa rtęci',
+          many: '{0} cali słupa rtęci',
           other: '{0} inHg',
         ),
       );
@@ -6088,11 +6556,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
+          few: '{0} bary',
+          many: '{0} barów',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
+          few: '{0} bary',
+          many: '{0} barów',
           other: '{0} bar',
         ),
       );
@@ -6110,11 +6584,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
+          one: '{0} millibar',
+          few: '{0} millibary',
+          many: '{0} millibarów',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mbar',
+          one: '{0} millibar',
+          few: '{0} millibary',
+          many: '{0} millibarów',
           other: '{0} mbar',
         ),
       );
@@ -6132,11 +6612,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
+          one: '{0} atmosfera',
+          few: '{0} atmosfery',
+          many: '{0} atmosfer',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
+          one: '{0} atmosfera',
+          few: '{0} atmosfery',
+          many: '{0} atmosfer',
           other: '{0} atm',
         ),
       );
@@ -6154,11 +6640,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} paskal',
+          few: '{0} paskale',
+          many: '{0} paskali',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} paskal',
+          few: '{0} paskale',
+          many: '{0} paskali',
           other: '{0} Pa',
         ),
       );
@@ -6176,11 +6668,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0} hektopaskal',
+          few: '{0} hektopaskale',
+          many: '{0} hektopaskali',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0} hektopaskal',
+          few: '{0} hektopaskale',
+          many: '{0} hektopaskali',
           other: '{0} hPa',
         ),
       );
@@ -6198,17 +6696,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
-          few: '{0} kPa',
-          many: '{0} kPa',
+          one: '{0} kilopaskal',
+          few: '{0} kilopaskale',
+          many: '{0} kilopaskali',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
-          few: '{0} kPa',
-          many: '{0} kPa',
+          one: '{0} kilopaskal',
+          few: '{0} kilopaskale',
+          many: '{0} kilopaskali',
           other: '{0} kPa',
         ),
       );
@@ -6226,17 +6724,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
-          few: '{0} MPa',
-          many: '{0} MPa',
+          one: '{0} megapaskal',
+          few: '{0} megapaskale',
+          many: '{0} megapaskali',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
-          few: '{0} MPa',
-          many: '{0} MPa',
+          one: '{0} megapaskal',
+          few: '{0} megapaskale',
+          many: '{0} megapaskali',
           other: '{0} MPa',
         ),
       );
@@ -6262,10 +6760,10 @@ class UnitsPl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'km/godz.',
-          one: '{0} km/godz.',
-          few: '{0} km/godz.',
-          many: '{0} km/godz.',
-          other: '{0} km/godz.',
+          one: '{0} km/h',
+          few: '{0} km/h',
+          many: '{0} km/h',
+          other: '{0}km/h',
         ),
       );
 
@@ -6282,11 +6780,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0} metr na sekundę',
+          few: '{0} metry na sekundę',
+          many: '{0} metrów na sekundę',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0} metr na sekundę',
+          few: '{0} metry na sekundę',
+          many: '{0} metrów na sekundę',
           other: '{0} m/s',
         ),
       );
@@ -6348,6 +6852,34 @@ class UnitsPl implements Units {
       );
 
   @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Beaufort',
+          one: '{0} w skali Beauforta',
+          few: '{0} w skali Beauforta',
+          many: '{0} w skali Beauforta',
+          other: '{0} w skali Beauforta',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0} Bft',
+          few: '{0} Bft',
+          many: '{0} Bft',
+          other: '{0} Bft',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0} Bft',
+          few: '{0} Bft',
+          many: '{0} Bft',
+          other: '{0} Bft',
+        ),
+      );
+
+  @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
@@ -6360,11 +6892,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
+          one: '{0} stopień',
+          few: '{0} stopnie',
+          many: '{0} stopni',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
+          one: '{0} stopień',
+          few: '{0} stopnie',
+          many: '{0} stopni',
           other: '{0}°',
         ),
       );
@@ -6410,11 +6948,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0} stopień Fahrenheita',
+          few: '{0} stopnie Fahrenheita',
+          many: '{0} stopni Fahrenheita',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0} stopień Fahrenheita',
+          few: '{0} stopnie Fahrenheita',
+          many: '{0} stopni Fahrenheita',
           other: '{0}°F',
         ),
       );
@@ -6432,11 +6976,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
+          one: '{0} kelwin',
+          few: '{0} kelwiny',
+          many: '{0} kelwinów',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
+          one: '{0} kelwin',
+          few: '{0} kelwiny',
+          many: '{0} kelwinów',
           other: '{0} K',
         ),
       );
@@ -6454,17 +7004,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} lbf⋅ft',
-          few: '{0} lbf⋅ft',
-          many: '{0} lbf⋅ft',
+          one: '{0} stopofunt',
+          few: '{0} stopofunty',
+          many: '{0} stopofuntów',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} lbf⋅ft',
-          few: '{0} lbf⋅ft',
-          many: '{0} lbf⋅ft',
+          one: '{0} stopofunt',
+          few: '{0} stopofunty',
+          many: '{0} stopofuntów',
           other: '{0} lbf⋅ft',
         ),
       );
@@ -6482,17 +7032,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
-          few: '{0} N⋅m',
-          many: '{0} N⋅m',
+          one: '{0} niutonometr',
+          few: '{0} niutonometry',
+          many: '{0} niutonometrów',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
-          few: '{0} N⋅m',
-          many: '{0} N⋅m',
+          one: '{0} niutonometr',
+          few: '{0} niutonometry',
+          many: '{0} niutonometrów',
           other: '{0} N⋅m',
         ),
       );
@@ -6510,11 +7060,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0} kilometr sześcienny',
+          few: '{0} kilometry sześcienne',
+          many: '{0} kilometrów sześciennych',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0} kilometr sześcienny',
+          few: '{0} kilometry sześcienne',
+          many: '{0} kilometrów sześciennych',
           other: '{0} km³',
         ),
       );
@@ -6532,11 +7088,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0} metr sześcienny',
+          few: '{0} metry sześcienne',
+          many: '{0} metrów sześciennych',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0} metr sześcienny',
+          few: '{0} metry sześcienne',
+          many: '{0} metrów sześciennych',
           other: '{0} m³',
         ),
       );
@@ -6554,11 +7116,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0} centymetr sześcienny',
+          few: '{0} centymetry sześcienne',
+          many: '{0} centymetrów sześciennych',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0} centymetr sześcienny',
+          few: '{0} centymetry sześcienne',
+          many: '{0} centymetrów sześciennych',
           other: '{0} cm³',
         ),
       );
@@ -6744,11 +7312,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'litry',
+          one: '{0} litr',
+          few: '{0} litry',
+          many: '{0} litrów',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
           _locale,
           'l',
+          one: '{0} litr',
+          few: '{0} litry',
+          many: '{0} litrów',
           other: '{0} l',
         ),
       );
@@ -6934,11 +7508,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'bu',
+          one: '{0} buszel',
+          few: '{0} buszle',
+          many: '{0} buszli',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bu',
+          one: '{0} buszel',
+          few: '{0} buszle',
+          many: '{0} buszli',
           other: '{0} bu',
         ),
       );
@@ -7208,17 +7788,17 @@ class UnitsPl implements Units {
         short: UnitCountPattern(
           _locale,
           'baryłki',
-          one: '{0} bbl',
-          few: '{0} bbl',
-          many: '{0} bbl',
+          one: '{0} baryłka',
+          few: '{0} baryłki',
+          many: '{0} baryłek',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
-          one: '{0} bbl',
-          few: '{0} bbl',
-          many: '{0} bbl',
+          one: '{0} baryłka',
+          few: '{0} baryłki',
+          many: '{0} baryłek',
           other: '{0} bbl',
         ),
       );
@@ -7416,6 +7996,28 @@ class UnitsPl implements Units {
           few: '{0} kwarty ang.',
           many: '{0} kwart ang.',
           other: '{0} kwarty ang.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -8861,6 +9463,10 @@ class TerritoriesPl implements Territories {
     'CP': Territory(
       'CP',
       'Wyspa Clippertona',
+    ),
+    'CQ': Territory(
+      'CQ',
+      'Nieznany region (CQ)',
     ),
     'CR': Territory(
       'CR',

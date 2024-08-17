@@ -8,7 +8,7 @@ import '../units.dart';
 
 const _locale = 'ja';
 
-/// Translations in Japanese of [CommonLocaleData]
+/// Translations of [CommonLocaleData] for ja
 class CommonLocaleDataJa implements CommonLocaleData {
   String get locale => _locale;
 
@@ -280,7 +280,7 @@ class LanguagesJa extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'ハリヤーンウィー語',
     ),
     'bgn': Language(
       'bgn',
@@ -556,10 +556,6 @@ class LanguagesJa extends Languages {
       'de',
       'ドイツ語',
     ),
-    'de-AT': Language(
-      'de-AT',
-      'ドイツ語 (オーストリア)',
-    ),
     'de-CH': Language(
       'de-CH',
       '標準ドイツ語 (スイス)',
@@ -690,17 +686,9 @@ class LanguagesJa extends Languages {
       'es',
       'スペイン語',
     ),
-    'es-419': Language(
-      'es-419',
-      'スペイン語 (ラテンアメリカ)',
-    ),
     'es-ES': Language(
       'es-ES',
       'スペイン語 (イベリア半島)',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'スペイン語 (メキシコ)',
     ),
     'esu': Language(
       'esu',
@@ -769,14 +757,6 @@ class LanguagesJa extends Languages {
     'fr': Language(
       'fr',
       'フランス語',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'フランス語 (カナダ)',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'フランス語 (スイス)',
     ),
     'frc': Language(
       'frc',
@@ -949,11 +929,6 @@ class LanguagesJa extends Languages {
     'hi': Language(
       'hi',
       'ヒンディー語',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'ヒンディー語 (ラテン文字)',
-      variant: 'インド英語 (ヒングリッシュ)',
     ),
     'hif': Language(
       'hif',
@@ -1655,10 +1630,6 @@ class LanguagesJa extends Languages {
       'nds',
       '低地ドイツ語',
     ),
-    'nds-NL': Language(
-      'nds-NL',
-      '低地ドイツ語 (オランダ)',
-    ),
     'ne': Language(
       'ne',
       'ネパール語',
@@ -1907,10 +1878,6 @@ class LanguagesJa extends Languages {
     'pt': Language(
       'pt',
       'ポルトガル語',
-    ),
-    'pt-BR': Language(
-      'pt-BR',
-      'ポルトガル語 (ブラジル)',
     ),
     'pt-PT': Language(
       'pt-PT',
@@ -2718,6 +2685,18 @@ class UnitsJa implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ロント{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('クエクト{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('デカ{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2776,6 +2755,18 @@ class UnitsJa implements Units {
         long: UnitPrefixPattern('ヨタ{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ロナ{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('クエタ{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2842,16 +2833,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '重力加速度',
+          one: '{0} g-force',
           other: '{0} G',
         ),
         short: UnitCountPattern(
           _locale,
           '重力加速度',
+          one: '{0} G',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           '重力加速度',
+          one: '{0}G',
           other: '{0}G',
         ),
       );
@@ -2861,16 +2855,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メートル毎秒毎秒',
+          one: '{0} meter per second squared',
           other: '{0} メートル毎秒毎秒',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0} m/s²',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0}m/s²',
           other: '{0}m/s²',
         ),
       );
@@ -2880,16 +2877,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '回転',
+          one: '{0} revolution',
           other: '{0} 回転',
         ),
         short: UnitCountPattern(
           _locale,
           '回転',
+          one: '{0} rev',
           other: '{0} rev',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rev',
+          one: '{0}rev',
           other: '{0}rev',
         ),
       );
@@ -2899,16 +2899,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ラジアン',
+          one: '{0} radian',
           other: '{0} ラジアン',
         ),
         short: UnitCountPattern(
           _locale,
           'ラジアン',
+          one: '{0} rad',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rad',
+          one: '{0}rad',
           other: '{0}rad',
         ),
       );
@@ -2918,16 +2921,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} degree',
           other: '{0} 度',
         ),
         short: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} deg',
           other: '{0} 度',
         ),
         narrow: UnitCountPattern(
           _locale,
           '度',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -2937,16 +2943,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} arcminute',
           other: '{0} 分',
         ),
         short: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} arcmin',
           other: '{0} 分',
         ),
         narrow: UnitCountPattern(
           _locale,
           '分',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -2956,16 +2965,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} arcsecond',
           other: '{0} 秒',
         ),
         short: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} arcsec',
           other: '{0} 秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -2975,16 +2987,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方キロメートル',
+          one: '{0} square kilometer',
           other: '{0} 平方キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0} km²',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0}km²',
           other: '{0}km²',
         ),
       );
@@ -2994,16 +3009,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘクタール',
+          one: '{0} hectare',
           other: '{0} ヘクタール',
         ),
         short: UnitCountPattern(
           _locale,
           'ヘクタール',
+          one: '{0} ha',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ヘクタール',
+          one: '{0}ha',
           other: '{0}ha',
         ),
       );
@@ -3013,16 +3031,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方メートル',
+          one: '{0} square meter',
           other: '{0} 平方メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm²',
+          one: '{0} m²',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm²',
+          one: '{0}m²',
           other: '{0}m²',
         ),
       );
@@ -3032,16 +3053,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方センチメートル',
+          one: '{0} square centimeter',
           other: '{0} 平方センチメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0} cm²',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0}cm²',
           other: '{0}cm²',
         ),
       );
@@ -3051,16 +3075,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方マイル',
+          one: '{0} square mile',
           other: '{0} 平方マイル',
         ),
         short: UnitCountPattern(
           _locale,
           '平方マイル',
+          one: '{0} sq mi',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
+          one: '{0}mi²',
           other: '{0}mi²',
         ),
       );
@@ -3070,16 +3097,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'エーカー',
+          one: '{0} acre',
           other: '{0} エーカー',
         ),
         short: UnitCountPattern(
           _locale,
           'エーカー',
+          one: '{0} ac',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
           _locale,
           'エーカー',
+          one: '{0}ac',
           other: '{0}ac',
         ),
       );
@@ -3089,16 +3119,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方ヤード',
+          one: '{0} square yard',
           other: '{0} 平方ヤード',
         ),
         short: UnitCountPattern(
           _locale,
           '平方ヤード',
+          one: '{0} yd²',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
+          one: '{0}yd²',
           other: '{0}yd²',
         ),
       );
@@ -3108,16 +3141,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方フィート',
+          one: '{0} square foot',
           other: '{0} 平方フィート',
         ),
         short: UnitCountPattern(
           _locale,
           '平方フィート',
+          one: '{0} sq ft',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
+          one: '{0}ft²',
           other: '{0}ft²',
         ),
       );
@@ -3127,16 +3163,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方インチ',
+          one: '{0} square inch',
           other: '{0} 平方インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '平方インチ',
+          one: '{0} in²',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
+          one: '{0}in²',
           other: '{0}in²',
         ),
       );
@@ -3146,16 +3185,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドゥナム',
+          one: '{0} dunam',
           other: '{0} ドゥナム',
         ),
         short: UnitCountPattern(
           _locale,
           'ドゥナム',
+          one: '{0} dunam',
           other: '{0}ドゥナム',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ドゥナム',
+          one: '{0}dunam',
           other: '{0}ドゥナム',
         ),
       );
@@ -3165,16 +3207,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '金',
+          one: '{0} karat',
           other: '{0} 金',
         ),
         short: UnitCountPattern(
           _locale,
           '金',
+          one: '{0} kt',
           other: '{0} 金',
         ),
         narrow: UnitCountPattern(
           _locale,
           '金',
+          one: '{0}kt',
           other: '{0}K',
         ),
       );
@@ -3184,16 +3229,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリグラム毎デシリットル',
+          one: '{0} milligram per deciliter',
           other: '{0} ミリグラム毎デシリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリグラム毎デシリットル',
+          one: '{0} mg/dL',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
+          one: '{0}mg/dL',
           other: '{0}mg/dL',
         ),
       );
@@ -3203,16 +3251,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリモル毎リットル',
+          one: '{0} millimole per liter',
           other: '{0} ミリモル毎リットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリモル毎リットル',
+          one: '{0} mmol/L',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmol/L',
+          one: '{0}mmol/L',
           other: '{0}mmol/L',
         ),
       );
@@ -3222,16 +3273,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '項目',
+          one: '{0} item',
           other: '{0} 項目',
         ),
         short: UnitCountPattern(
           _locale,
           '項目',
+          one: '{0} item',
           other: '{0} 項目',
         ),
         narrow: UnitCountPattern(
           _locale,
           '項目',
+          one: '{0}item',
           other: '{0}項目',
         ),
       );
@@ -3241,16 +3295,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} part per million',
           other: '{0} ppm',
         ),
         short: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} ppm',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0}ppm',
           other: '{0}ppm',
         ),
       );
@@ -3260,16 +3317,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーセント',
+          one: '{0} percent',
           other: '{0} パーセント',
         ),
         short: UnitCountPattern(
           _locale,
           'パーセント',
+          one: '{0}%',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
+          one: '{0}%',
           other: '{0}%',
         ),
       );
@@ -3279,16 +3339,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーミル',
+          one: '{0} permille',
           other: '{0} パーミル',
         ),
         short: UnitCountPattern(
           _locale,
           'パーミル',
+          one: '{0}‰',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0}‰',
           other: '{0}‰',
         ),
       );
@@ -3298,16 +3361,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーミリアド',
+          one: '{0} permyriad',
           other: '{0} パーミリアド',
         ),
         short: UnitCountPattern(
           _locale,
           'パーミリアド',
+          one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
       );
@@ -3317,16 +3383,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'モル',
+          one: '{0} mole',
           other: '{0} モル',
         ),
         short: UnitCountPattern(
           _locale,
           'モル',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0}mol',
           other: '{0}mol',
         ),
       );
@@ -3336,16 +3405,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'リットル毎キロメートル',
+          one: '{0} liter per kilometer',
           other: '{0} リットル毎キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0} L/km',
           other: '{0} L/km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0}L/km',
           other: '{0}L/km',
         ),
       );
@@ -3355,16 +3427,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'リットル毎100キロメートル',
+          one: '{0} liter per 100 kilometers',
           other: '{0} リットル毎100キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0} L/100 km',
           other: '{0} L/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0}L/100km',
           other: '{0}L/100km',
         ),
       );
@@ -3374,16 +3449,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル毎ガロン',
+          one: '{0} mile per gallon',
           other: '{0} マイル毎ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル/ガロン',
+          one: '{0} mpg',
           other: '{0} mpg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpg',
+          one: '{0}mpg',
           other: '{0}mpg',
         ),
       );
@@ -3393,16 +3471,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル毎英ガロン',
+          one: '{0} mile per Imp. gallon',
           other: '{0} マイル毎英ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル毎英ガロン',
+          one: '{0} mpg Imp.',
           other: '{0} mpg Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイル/英ガロン',
+          one: '{0}m/gUK',
           other: '{0}mpg Imp.',
         ),
       );
@@ -3412,16 +3493,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ペタバイト',
+          one: '{0} petabyte',
           other: '{0} ペタバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'ペタバイト',
+          one: '{0} PB',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0}PB',
           other: '{0}PB',
         ),
       );
@@ -3431,16 +3515,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'テラバイト',
+          one: '{0} terabyte',
           other: '{0} テラバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'テラバイト',
+          one: '{0} TB',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0}TB',
           other: '{0}TB',
         ),
       );
@@ -3450,16 +3537,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'テラビット',
+          one: '{0} terabit',
           other: '{0} テラビット',
         ),
         short: UnitCountPattern(
           _locale,
           'テラビット',
+          one: '{0} Tb',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0}Tb',
           other: '{0}Tb',
         ),
       );
@@ -3469,16 +3559,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガバイト',
+          one: '{0} gigabyte',
           other: '{0} ギガバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0} GB',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0}GB',
           other: '{0}GB',
         ),
       );
@@ -3488,16 +3581,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガビット',
+          one: '{0} gigabit',
           other: '{0} ギガビット',
         ),
         short: UnitCountPattern(
           _locale,
           'ギガビット',
+          one: '{0} Gb',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0}Gb',
           other: '{0}Gb',
         ),
       );
@@ -3507,16 +3603,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガバイト',
+          one: '{0} megabyte',
           other: '{0} メガバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0} MB',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0}MB',
           other: '{0}MB',
         ),
       );
@@ -3526,16 +3625,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガビット',
+          one: '{0} megabit',
           other: '{0} メガビット',
         ),
         short: UnitCountPattern(
           _locale,
           'メガビット',
+          one: '{0} Mb',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0}Mb',
           other: '{0}Mb',
         ),
       );
@@ -3545,16 +3647,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロバイト',
+          one: '{0} kilobyte',
           other: '{0} キロバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'KB',
+          one: '{0} kB',
           other: '{0} KB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'KB',
+          one: '{0}kB',
           other: '{0}KB',
         ),
       );
@@ -3564,16 +3669,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロビット',
+          one: '{0} kilobit',
           other: '{0} キロビット',
         ),
         short: UnitCountPattern(
           _locale,
           'キロビット',
+          one: '{0} kb',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0}kb',
           other: '{0}kb',
         ),
       );
@@ -3583,16 +3691,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'バイト',
+          one: '{0} byte',
           other: '{0} バイト',
         ),
         short: UnitCountPattern(
           _locale,
           'バイト',
+          one: '{0} byte',
           other: '{0} byte',
         ),
         narrow: UnitCountPattern(
           _locale,
           'B',
+          one: '{0}B',
           other: '{0}B',
         ),
       );
@@ -3602,16 +3713,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ビット',
+          one: '{0} bit',
           other: '{0} ビット',
         ),
         short: UnitCountPattern(
           _locale,
           'ビット',
+          one: '{0} bit',
           other: '{0} bit',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ビット',
+          one: '{0}bit',
           other: '{0}b',
         ),
       );
@@ -3621,16 +3735,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '世紀',
+          one: '{0} century',
           other: '{0} 世紀',
         ),
         short: UnitCountPattern(
           _locale,
           '世紀',
+          one: '{0} c',
           other: '{0} 世紀',
         ),
         narrow: UnitCountPattern(
           _locale,
           '世紀',
+          one: '{0}c',
           other: '{0}世紀',
         ),
       );
@@ -3640,16 +3757,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '十年',
+          one: '{0} decade',
           other: '{0} 十年',
         ),
         short: UnitCountPattern(
           _locale,
           '十年',
+          one: '{0} dec',
           other: '{0} 十年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '十年',
+          one: '{0}dec',
           other: '{0}十年',
         ),
       );
@@ -3659,16 +3779,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} year',
           other: '{0} 年',
         ),
         short: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} yr',
           other: '{0} 年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '年',
+          one: '{0}y',
           other: '{0}y',
         ),
       );
@@ -3678,16 +3801,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '四半期',
+          one: '{0} quarter',
           other: '{0} 四半期',
         ),
         short: UnitCountPattern(
           _locale,
           '四半期',
+          one: '{0} qtr',
           other: '{0}四半期',
         ),
         narrow: UnitCountPattern(
           _locale,
           '四半期',
+          one: '{0}q',
           other: '{0}Q',
         ),
       );
@@ -3697,16 +3823,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'か月',
+          one: '{0} month',
           other: '{0} か月',
         ),
         short: UnitCountPattern(
           _locale,
           'か月',
+          one: '{0} mth',
           other: '{0} か月',
         ),
         narrow: UnitCountPattern(
           _locale,
           'か月',
+          one: '{0}m',
           other: '{0}m',
         ),
       );
@@ -3716,16 +3845,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '週間',
+          one: '{0} week',
           other: '{0} 週間',
         ),
         short: UnitCountPattern(
           _locale,
           '週間',
+          one: '{0} wk',
           other: '{0} 週間',
         ),
         narrow: UnitCountPattern(
           _locale,
           '週間',
+          one: '{0}w',
           other: '{0}w',
         ),
       );
@@ -3735,16 +3867,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '日',
+          one: '{0} day',
           other: '{0} 日',
         ),
         short: UnitCountPattern(
           _locale,
           '日',
+          one: '{0} day',
           other: '{0} 日',
         ),
         narrow: UnitCountPattern(
           _locale,
           '日',
+          one: '{0}d',
           other: '{0}d',
         ),
       );
@@ -3754,16 +3889,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '時間',
+          one: '{0} hour',
           other: '{0} 時間',
         ),
         short: UnitCountPattern(
           _locale,
           '時間',
+          one: '{0} hr',
           other: '{0} 時間',
         ),
         narrow: UnitCountPattern(
           _locale,
           '時間',
+          one: '{0}h',
           other: '{0}h',
         ),
       );
@@ -3773,16 +3911,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} minute',
           other: '{0} 分',
         ),
         short: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} min',
           other: '{0} 分',
         ),
         narrow: UnitCountPattern(
           _locale,
           '分',
+          one: '{0}m',
           other: '{0}m',
         ),
       );
@@ -3792,16 +3933,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} second',
           other: '{0} 秒',
         ),
         short: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} sec',
           other: '{0} 秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0}s',
           other: '{0}s',
         ),
       );
@@ -3811,16 +3955,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリ秒',
+          one: '{0} millisecond',
           other: '{0} ミリ秒',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリ秒',
+          one: '{0} ms',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ms',
+          one: '{0}ms',
           other: '{0}ms',
         ),
       );
@@ -3830,16 +3977,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイクロ秒',
+          one: '{0} microsecond',
           other: '{0} マイクロ秒',
         ),
         short: UnitCountPattern(
           _locale,
           'マイクロ秒',
+          one: '{0} μs',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
+          one: '{0}μs',
           other: '{0}μs',
         ),
       );
@@ -3849,16 +3999,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ナノ秒',
+          one: '{0} nanosecond',
           other: '{0} ナノ秒',
         ),
         short: UnitCountPattern(
           _locale,
           'ナノ秒',
+          one: '{0} ns',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
+          one: '{0}ns',
           other: '{0}ns',
         ),
       );
@@ -3868,16 +4021,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'アンペア',
+          one: '{0} ampere',
           other: '{0} アンペア',
         ),
         short: UnitCountPattern(
           _locale,
           'アンペア',
+          one: '{0} A',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'アンペア',
+          one: '{0}A',
           other: '{0}A',
         ),
       );
@@ -3887,16 +4043,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリアンペア',
+          one: '{0} milliampere',
           other: '{0} ミリアンペア',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリアンペア',
+          one: '{0} mA',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ミリアンペア',
+          one: '{0}mA',
           other: '{0}mA',
         ),
       );
@@ -3906,16 +4065,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'オーム',
+          one: '{0} ohm',
           other: '{0} オーム',
         ),
         short: UnitCountPattern(
           _locale,
           'オーム',
+          one: '{0} Ω',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'オーム',
+          one: '{0}Ω',
           other: '{0}Ω',
         ),
       );
@@ -3925,16 +4087,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ボルト',
+          one: '{0} volt',
           other: '{0} ボルト',
         ),
         short: UnitCountPattern(
           _locale,
           'ボルト',
+          one: '{0} V',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ボルト',
+          one: '{0}V',
           other: '{0}V',
         ),
       );
@@ -3944,16 +4109,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロカロリー',
+          one: '{0} kilocalorie',
           other: '{0} キロカロリー',
         ),
         short: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0} kcal',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0}kcal',
           other: '{0}kcal',
         ),
       );
@@ -3963,16 +4131,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カロリー',
+          one: '{0} calorie',
           other: '{0} カロリー',
         ),
         short: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0} cal',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0}cal',
           other: '{0}calth',
         ),
       );
@@ -3982,16 +4153,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カロリー',
+          one: '{0} Calorie',
           other: '{0} カロリー',
         ),
         short: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0} Cal',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0}Cal',
           other: '{0}cal',
         ),
       );
@@ -4001,16 +4175,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロジュール',
+          one: '{0} kilojoule',
           other: '{0} キロジュール',
         ),
         short: UnitCountPattern(
           _locale,
           'キロジュール',
+          one: '{0} kJ',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'キロジュール',
+          one: '{0}kJ',
           other: '{0}kJ',
         ),
       );
@@ -4020,16 +4197,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ジュール',
+          one: '{0} joule',
           other: '{0} ジュール',
         ),
         short: UnitCountPattern(
           _locale,
           'ジュール',
+          one: '{0} J',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ジュール',
+          one: '{0}J',
           other: '{0}J',
         ),
       );
@@ -4039,16 +4219,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロワット時',
+          one: '{0} kilowatt hour',
           other: '{0} キロワット時',
         ),
         short: UnitCountPattern(
           _locale,
           'キロワット時',
+          one: '{0} kWh',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
+          one: '{0}kWh',
           other: '{0}kWh',
         ),
       );
@@ -4058,16 +4241,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '電子ボルト',
+          one: '{0} electronvolt',
           other: '{0} 電子ボルト',
         ),
         short: UnitCountPattern(
           _locale,
           '電子ボルト',
+          one: '{0} eV',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
+          one: '{0}eV',
           other: '{0} eV',
         ),
       );
@@ -4077,16 +4263,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英熱量',
+          one: '{0} British thermal unit',
           other: '{0} 英熱量',
         ),
         short: UnitCountPattern(
           _locale,
           '英熱量',
+          one: '{0} Btu',
           other: '{0} BTU',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英熱量',
+          one: '{0}Btu',
           other: '{0}BTU',
         ),
       );
@@ -4096,16 +4285,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '米サーム',
+          one: '{0} US therm',
           other: '{0} 米サーム',
         ),
         short: UnitCountPattern(
           _locale,
           '米サーム',
+          one: '{0} US therm',
           other: '{0} 米サーム',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米サーム',
+          one: '{0}US therm',
           other: '{0}米サーム',
         ),
       );
@@ -4115,16 +4307,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '重量ポンド',
+          one: '{0} pound of force',
           other: '{0} 重量ポンド',
         ),
         short: UnitCountPattern(
           _locale,
           '重量ポンド',
+          one: '{0} lbf',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0}lbf',
           other: '{0}lbf',
         ),
       );
@@ -4134,16 +4329,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ニュートン',
+          one: '{0} newton',
           other: '{0} ニュートン',
         ),
         short: UnitCountPattern(
           _locale,
           'ニュートン',
+          one: '{0} N',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N',
+          one: '{0}N',
           other: '{0}N',
         ),
       );
@@ -4153,16 +4351,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロワット時毎100キロメートル',
+          one: '{0} kilowatt-hour per 100 kilometers',
           other: '{0} キロワット時毎100キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kWh/100km',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0}kWh/100km',
           other: '{0}kWh/100km',
         ),
       );
@@ -4172,16 +4373,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガヘルツ',
+          one: '{0} gigahertz',
           other: '{0} ギガヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0} GHz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0}GHz',
           other: '{0}GHz',
         ),
       );
@@ -4191,16 +4395,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガヘルツ',
+          one: '{0} megahertz',
           other: '{0} メガヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0} MHz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0}MHz',
           other: '{0}MHz',
         ),
       );
@@ -4210,16 +4417,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロヘルツ',
+          one: '{0} kilohertz',
           other: '{0} キロヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0} kHz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0}kHz',
           other: '{0}kHz',
         ),
       );
@@ -4229,16 +4439,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘルツ',
+          one: '{0} hertz',
           other: '{0} ヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0} Hz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0}Hz',
           other: '{0}Hz',
         ),
       );
@@ -4248,16 +4461,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'フォントサイズ em',
+          one: '{0} em',
           other: '{0} em',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
+          one: '{0}em',
           other: '{0}em',
         ),
       );
@@ -4267,16 +4483,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピクセル',
+          one: '{0} pixel',
           other: '{0} ピクセル',
         ),
         short: UnitCountPattern(
           _locale,
           'ピクセル',
+          one: '{0} px',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
+          one: '{0}px',
           other: '{0}px',
         ),
       );
@@ -4286,16 +4505,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガピクセル',
+          one: '{0} megapixel',
           other: '{0} メガピクセル',
         ),
         short: UnitCountPattern(
           _locale,
           'メガピクセル',
+          one: '{0} MP',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0}MP',
           other: '{0}MP',
         ),
       );
@@ -4305,16 +4527,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピクセル/cm',
+          one: '{0} pixel per centimeter',
           other: '{0} ピクセル/cm',
         ),
         short: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} ppcm',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0}ppcm',
           other: '{0}ppcm',
         ),
       );
@@ -4324,16 +4549,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピクセル/インチ',
+          one: '{0} pixel per inch',
           other: '{0} ピクセル/インチ',
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} ppi',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0}ppi',
           other: '{0}ppi',
         ),
       );
@@ -4343,16 +4571,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドット/cm',
+          one: '{0} dot per centimeter',
           other: '{0} ドット/cm',
         ),
         short: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0} dpcm',
           other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0}dpcm',
           other: '{0}dpcm',
         ),
       );
@@ -4362,16 +4593,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドット/インチ',
+          one: '{0} dot per inch',
           other: '{0} ドット/インチ',
         ),
         short: UnitCountPattern(
           _locale,
           'dpi',
+          one: '{0} dpi',
           other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpi',
+          one: '{0}dpi',
           other: '{0}dpi',
         ),
       );
@@ -4381,16 +4615,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドット',
+          one: '{0} dot',
           other: '{0} ドット',
         ),
         short: UnitCountPattern(
           _locale,
           'ドット',
+          one: '{0} dot',
           other: '{0} ドット',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ドット',
+          one: '{0}dot',
           other: '{0}ドット',
         ),
       );
@@ -4400,16 +4637,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '地球半径',
+          one: '{0} earth radius',
           other: '{0} 地球半径',
         ),
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} R⊕',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0}R⊕',
           other: '{0}R⊕',
         ),
       );
@@ -4419,16 +4659,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロメートル',
+          one: '{0} kilometer',
           other: '{0} キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km',
+          one: '{0} km',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km',
+          one: '{0}km',
           other: '{0}km',
         ),
       );
@@ -4438,16 +4681,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メートル',
+          one: '{0} meter',
           other: '{0} メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm',
+          one: '{0} m',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm',
+          one: '{0}m',
           other: '{0}m',
         ),
       );
@@ -4457,16 +4703,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'デシメートル',
+          one: '{0} decimeter',
           other: '{0} デシメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'デシメートル',
+          one: '{0} dm',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'デシメートル',
+          one: '{0}dm',
           other: '{0}dm',
         ),
       );
@@ -4476,16 +4725,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'センチメートル',
+          one: '{0} centimeter',
           other: '{0} センチメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'cm',
+          one: '{0} cm',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm',
+          one: '{0}cm',
           other: '{0}cm',
         ),
       );
@@ -4495,16 +4747,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリメートル',
+          one: '{0} millimeter',
           other: '{0} ミリメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'mm',
+          one: '{0} mm',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm',
+          one: '{0}mm',
           other: '{0}mm',
         ),
       );
@@ -4514,16 +4769,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイクロメートル',
+          one: '{0} micrometer',
           other: '{0} マイクロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'マイクロメートル',
+          one: '{0} μm',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイクロメートル',
+          one: '{0}μm',
           other: '{0}μm',
         ),
       );
@@ -4533,16 +4791,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ナノメートル',
+          one: '{0} nanometer',
           other: '{0} ナノメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'ナノメートル',
+          one: '{0} nm',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ナノメートル',
+          one: '{0}nm',
           other: '{0}nm',
         ),
       );
@@ -4552,16 +4813,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピコメートル',
+          one: '{0} picometer',
           other: '{0} ピコメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'ピコメートル',
+          one: '{0} pm',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ピコメートル',
+          one: '{0}pm',
           other: '{0}pm',
         ),
       );
@@ -4571,16 +4835,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル',
+          one: '{0} mile',
           other: '{0} マイル',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル',
+          one: '{0} mi',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイル',
+          one: '{0}mi',
           other: '{0}mi',
         ),
       );
@@ -4590,16 +4857,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヤード',
+          one: '{0} yard',
           other: '{0} ヤード',
         ),
         short: UnitCountPattern(
           _locale,
           'ヤード',
+          one: '{0} yd',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ヤード',
+          one: '{0}yd',
           other: '{0}yd',
         ),
       );
@@ -4609,16 +4879,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'フィート',
+          one: '{0} foot',
           other: '{0} フィート',
         ),
         short: UnitCountPattern(
           _locale,
           'フィート',
+          one: '{0} ft',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'フィート',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -4628,16 +4901,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'インチ',
+          one: '{0} inch',
           other: '{0} インチ',
         ),
         short: UnitCountPattern(
           _locale,
           'インチ',
+          one: '{0} in',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
           _locale,
           'インチ',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -4647,16 +4923,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーセク',
+          one: '{0} parsec',
           other: '{0} パーセク',
         ),
         short: UnitCountPattern(
           _locale,
           'パーセク',
+          one: '{0} pc',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'パーセク',
+          one: '{0}pc',
           other: '{0}pc',
         ),
       );
@@ -4666,16 +4945,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} light year',
           other: '{0} 光年',
         ),
         short: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} ly',
           other: '{0} 光年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0}ly',
           other: '{0}光年',
         ),
       );
@@ -4685,16 +4967,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '天文単位',
+          one: '{0} astronomical unit',
           other: '{0} 天文単位',
         ),
         short: UnitCountPattern(
           _locale,
           '天文単位',
+          one: '{0} au',
           other: '{0} au',
         ),
         narrow: UnitCountPattern(
           _locale,
           '天文単位',
+          one: '{0}au',
           other: '{0}au',
         ),
       );
@@ -4704,16 +4989,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ハロン',
+          one: '{0} furlong',
           other: '{0} ハロン',
         ),
         short: UnitCountPattern(
           _locale,
           'ハロン',
+          one: '{0} fur',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ハロン',
+          one: '{0}fur',
           other: '{0}fur',
         ),
       );
@@ -4723,16 +5011,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ファゾム',
+          one: '{0} fathom',
           other: '{0} ファゾム',
         ),
         short: UnitCountPattern(
           _locale,
           'ファゾム',
+          one: '{0} fth',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ファゾム',
+          one: '{0}fth',
           other: '{0}fth',
         ),
       );
@@ -4742,16 +5033,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nautical mile',
           other: '{0} 海里',
         ),
         short: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nmi',
           other: '{0} 海里',
         ),
         narrow: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0}nmi',
           other: '{0}海里',
         ),
       );
@@ -4761,16 +5055,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'スカンジナビアマイル',
+          one: '{0} mile-scandinavian',
           other: '{0} スカンジナビアマイル',
         ),
         short: UnitCountPattern(
           _locale,
           'スカンジナビアマイル',
+          one: '{0} smi',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'スカンジナビアマイル',
+          one: '{0}smi',
           other: '{0}smi',
         ),
       );
@@ -4780,16 +5077,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ポイント',
+          one: '{0} point',
           other: '{0} ポイント',
         ),
         short: UnitCountPattern(
           _locale,
           'ポイント',
+          one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -4799,16 +5099,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '太陽半径',
+          one: '{0} solar radius',
           other: '{0} 太陽半径',
         ),
         short: UnitCountPattern(
           _locale,
           '太陽半径',
+          one: '{0} R☉',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0}R☉',
           other: '{0}R☉',
         ),
       );
@@ -4818,16 +5121,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ルクス',
+          one: '{0} lux',
           other: '{0} ルクス',
         ),
         short: UnitCountPattern(
           _locale,
           'ルクス',
+          one: '{0} lx',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ルクス',
+          one: '{0}lx',
           other: '{0}lx',
         ),
       );
@@ -4837,16 +5143,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カンデラ',
+          one: '{0} candela',
           other: '{0} カンデラ',
         ),
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} cd',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0}cd',
           other: '{0}cd',
         ),
       );
@@ -4856,16 +5165,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ルーメン',
+          one: '{0} lumen',
           other: '{0} ルーメン',
         ),
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lm',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0}lm',
           other: '{0}lm',
         ),
       );
@@ -4875,16 +5187,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '太陽光度',
+          one: '{0} solar luminosity',
           other: '{0} 太陽光度',
         ),
         short: UnitCountPattern(
           _locale,
           '太陽光度',
+          one: '{0} L☉',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0}L☉',
           other: '{0}L☉',
         ),
       );
@@ -4894,16 +5209,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'トン',
+          one: '{0} metric ton',
           other: '{0} トン',
         ),
         short: UnitCountPattern(
           _locale,
-          'トン',
+          't',
+          one: '{0} t',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
+          one: '{0}t',
           other: '{0}t',
         ),
       );
@@ -4913,16 +5231,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キログラム',
+          one: '{0} kilogram',
           other: '{0} キログラム',
         ),
         short: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0} kg',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0}kg',
           other: '{0}kg',
         ),
       );
@@ -4932,16 +5253,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'グラム',
+          one: '{0} gram',
           other: '{0} グラム',
         ),
         short: UnitCountPattern(
           _locale,
           'グラム',
+          one: '{0} g',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
+          one: '{0}g',
           other: '{0}g',
         ),
       );
@@ -4951,16 +5275,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリグラム',
+          one: '{0} milligram',
           other: '{0} ミリグラム',
         ),
         short: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0} mg',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0}mg',
           other: '{0}mg',
         ),
       );
@@ -4970,16 +5297,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイクログラム',
+          one: '{0} microgram',
           other: '{0} マイクログラム',
         ),
         short: UnitCountPattern(
           _locale,
           'マイクログラム',
+          one: '{0} μg',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0}μg',
           other: '{0}μg',
         ),
       );
@@ -4989,16 +5319,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '米トン',
+          one: '{0} ton',
           other: '{0} 米トン',
         ),
         short: UnitCountPattern(
           _locale,
           '米トン',
+          one: '{0} tn',
           other: '{0} s/t',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米トン',
+          one: '{0}tn',
           other: '{0}s/t',
         ),
       );
@@ -5008,16 +5341,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ストーン',
+          one: '{0} stone',
           other: '{0} ストーン',
         ),
         short: UnitCountPattern(
           _locale,
           'ストーン',
+          one: '{0} st',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ストーン',
+          one: '{0}st',
           other: '{0}st',
         ),
       );
@@ -5027,16 +5363,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ポンド',
+          one: '{0} pound',
           other: '{0} ポンド',
         ),
         short: UnitCountPattern(
           _locale,
           'ポンド',
+          one: '{0} lb',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ポンド',
+          one: '{0}#',
           other: '{0}lb',
         ),
       );
@@ -5046,16 +5385,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'オンス',
+          one: '{0} ounce',
           other: '{0} オンス',
         ),
         short: UnitCountPattern(
           _locale,
           'オンス',
+          one: '{0} oz',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'オンス',
+          one: '{0}oz',
           other: '{0}oz',
         ),
       );
@@ -5065,16 +5407,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'トロイオンス',
+          one: '{0} troy ounce',
           other: '{0} トロイオンス',
         ),
         short: UnitCountPattern(
           _locale,
           'トロイオンス',
+          one: '{0} oz t',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0}oz t',
           other: '{0}oz t',
         ),
       );
@@ -5084,16 +5429,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カラット',
+          one: '{0} carat',
           other: '{0} カラット',
         ),
         short: UnitCountPattern(
           _locale,
           'カラット',
+          one: '{0} CD',
           other: '{0} ct',
         ),
         narrow: UnitCountPattern(
           _locale,
           'カラット',
+          one: '{0}CD',
           other: '{0}ct',
         ),
       );
@@ -5103,16 +5451,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ダルトン',
+          one: '{0} dalton',
           other: '{0} ダルトン',
         ),
         short: UnitCountPattern(
           _locale,
           'ダルトン',
+          one: '{0} Da',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0}Da',
           other: '{0}Da',
         ),
       );
@@ -5122,16 +5473,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '地球質量',
+          one: '{0} Earth mass',
           other: '{0} 地球質量',
         ),
         short: UnitCountPattern(
           _locale,
           '地球質量',
+          one: '{0} M⊕',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0}M⊕',
           other: '{0}M⊕',
         ),
       );
@@ -5141,16 +5495,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '太陽質量',
+          one: '{0} solar mass',
           other: '{0} 太陽質量',
         ),
         short: UnitCountPattern(
           _locale,
           '太陽質量',
+          one: '{0} M☉',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0}M☉',
           other: '{0}M☉',
         ),
       );
@@ -5160,16 +5517,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'グレーン',
+          one: '{0} grain',
           other: '{0} グレーン',
         ),
         short: UnitCountPattern(
           _locale,
           'グレーン',
+          one: '{0} gr',
           other: '{0} グレーン',
         ),
         narrow: UnitCountPattern(
           _locale,
           'グレーン',
+          one: '{0}gr',
           other: '{0}グレーン',
         ),
       );
@@ -5179,16 +5539,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガワット',
+          one: '{0} gigawatt',
           other: '{0} ギガワット',
         ),
         short: UnitCountPattern(
           _locale,
           'ギガワット',
+          one: '{0} GW',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ギガワット',
+          one: '{0}GW',
           other: '{0}GW',
         ),
       );
@@ -5198,16 +5561,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガワット',
+          one: '{0} megawatt',
           other: '{0} メガワット',
         ),
         short: UnitCountPattern(
           _locale,
           'メガワット',
+          one: '{0} MW',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'メガワット',
+          one: '{0}MW',
           other: '{0}MW',
         ),
       );
@@ -5217,16 +5583,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロワット',
+          one: '{0} kilowatt',
           other: '{0} キロワット',
         ),
         short: UnitCountPattern(
           _locale,
           'キロワット',
+          one: '{0} kW',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
+          one: '{0}kW',
           other: '{0}kW',
         ),
       );
@@ -5236,16 +5605,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ワット',
+          one: '{0} watt',
           other: '{0} ワット',
         ),
         short: UnitCountPattern(
           _locale,
           'ワット',
+          one: '{0} W',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ワット',
+          one: '{0}W',
           other: '{0}W',
         ),
       );
@@ -5255,16 +5627,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリワット',
+          one: '{0} milliwatt',
           other: '{0} ミリワット',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリワット',
+          one: '{0} mW',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
+          one: '{0}mW',
           other: '{0}mW',
         ),
       );
@@ -5274,16 +5649,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '馬力',
+          one: '{0} horsepower',
           other: '{0} 馬力',
         ),
         short: UnitCountPattern(
           _locale,
           '馬力',
+          one: '{0} hp',
           other: '{0} 馬力',
         ),
         narrow: UnitCountPattern(
           _locale,
           '馬力',
+          one: '{0}hp',
           other: '{0}hp',
         ),
       );
@@ -5293,16 +5671,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '水銀柱ミリメートル',
+          one: '{0} millimeter of mercury',
           other: '{0} 水銀柱ミリメートル',
         ),
         short: UnitCountPattern(
           _locale,
           '水銀柱ミリメートル',
+          one: '{0} mmHg',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
           _locale,
           '水銀柱ミリメートル',
+          one: '{0}mmHg',
           other: '{0}mmHg',
         ),
       );
@@ -5312,16 +5693,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '重量ポンド毎平方インチ',
+          one: '{0} pound-force per square inch',
           other: '{0} 重量ポンド毎平方インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '重量ポンド毎平方インチ',
+          one: '{0} psi',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           '重量ポンド毎平方インチ',
+          one: '{0}psi',
           other: '{0}psi',
         ),
       );
@@ -5331,16 +5715,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '水銀柱インチ',
+          one: '{0} inch of mercury',
           other: '{0} 水銀柱インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '水銀柱インチ',
+          one: '{0} inHg',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           '水銀柱インチ',
+          one: '{0}″ Hg',
           other: '{0}" Hg',
         ),
       );
@@ -5350,16 +5737,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'バール',
+          one: '{0} bar',
           other: '{0} バール',
         ),
         short: UnitCountPattern(
           _locale,
           'バール',
+          one: '{0} bar',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'バール',
+          one: '{0}bar',
           other: '{0}bar',
         ),
       );
@@ -5369,16 +5759,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリバール',
+          one: '{0} millibar',
           other: '{0} ミリバール',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリバール',
+          one: '{0} mbar',
           other: '{0} mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ミリバール',
+          one: '{0}mb',
           other: '{0}mb',
         ),
       );
@@ -5388,16 +5781,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '気圧',
+          one: '{0} atmosphere',
           other: '{0} 気圧',
         ),
         short: UnitCountPattern(
           _locale,
           '気圧',
+          one: '{0} atm',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           '気圧',
+          one: '{0}atm',
           other: '{0}atm',
         ),
       );
@@ -5407,16 +5803,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パスカル',
+          one: '{0} pascal',
           other: '{0} パスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'パスカル',
+          one: '{0} Pa',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0}Pa',
           other: '{0}Pa',
         ),
       );
@@ -5426,16 +5825,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘクトパスカル',
+          one: '{0} hectopascal',
           other: '{0} ヘクトパスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0} hPa',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0}hPa',
           other: '{0}hPa',
         ),
       );
@@ -5445,16 +5847,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロパスカル',
+          one: '{0} kilopascal',
           other: '{0} キロパスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} kPa',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0}kPa',
           other: '{0}kPa',
         ),
       );
@@ -5464,16 +5869,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガパスカル',
+          one: '{0} megapascal',
           other: '{0} メガパスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} MPa',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0}MPa',
           other: '{0}MPa',
         ),
       );
@@ -5483,16 +5891,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロメートル毎時',
+          one: '{0} kilometer per hour',
           other: '時速 {0} キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0} km/h',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0}km/h',
           other: '{0}km/h',
         ),
       );
@@ -5502,16 +5913,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メートル毎秒',
+          one: '{0} meter per second',
           other: '秒速 {0} メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0} m/s',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0}m/s',
           other: '{0}m/s',
         ),
       );
@@ -5521,16 +5935,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル毎時',
+          one: '{0} mile per hour',
           other: '時速 {0} マイル',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル毎時',
+          one: '{0} mph',
           other: '{0} mph',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイル毎時',
+          one: '{0}mph',
           other: '{0}mi/h',
         ),
       );
@@ -5540,17 +5957,42 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ノット',
+          one: '{0} knot',
           other: '{0} ノット',
         ),
         short: UnitCountPattern(
           _locale,
           'ノット',
+          one: '{0} kn',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ノット',
+          one: '{0}kn',
           other: '{0}kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ビューフォート風力階級',
+          one: 'Beaufort {0}',
+          other: 'ビューフォート風力階級 {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '風力階級',
+          one: 'B {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '風力階級',
+          one: 'B{0}',
+          other: 'B{0}',
         ),
       );
 
@@ -5559,16 +6001,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} degree temperature',
           other: '{0}度',
         ),
         short: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -5578,16 +6023,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '摂氏',
+          one: '{0} degree Celsius',
           other: '摂氏 {0} 度',
         ),
         short: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
       );
@@ -5597,16 +6045,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '華氏',
+          one: '{0} degree Fahrenheit',
           other: '華氏 {0} 度',
         ),
         short: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°F',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°',
           other: '{0}°F',
         ),
       );
@@ -5616,16 +6067,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ケルビン',
+          one: '{0} kelvin',
           other: '{0} ケルビン',
         ),
         short: UnitCountPattern(
           _locale,
           'K',
+          one: '{0} K',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
+          one: '{0}K',
           other: '{0}K',
         ),
       );
@@ -5635,16 +6089,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ポンドフィート',
+          one: '{0} pound-force-foot',
           other: '{0} ポンドフィート',
         ),
         short: UnitCountPattern(
           _locale,
           'ポンドフィート',
+          one: '{0} lbf⋅ft',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0}lbf⋅ft',
           other: '{0}lbf⋅ft',
         ),
       );
@@ -5654,16 +6111,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ニュートンメートル',
+          one: '{0} newton-meter',
           other: '{0} ニュートンメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'ニュートンメートル',
+          one: '{0} N⋅m',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N⋅m',
+          one: '{0}N⋅m',
           other: '{0}N⋅m',
         ),
       );
@@ -5673,16 +6133,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方キロメートル',
+          one: '{0} cubic kilometer',
           other: '{0} 立方キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0} km³',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0}km³',
           other: '{0}km³',
         ),
       );
@@ -5692,16 +6155,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方メートル',
+          one: '{0} cubic meter',
           other: '{0} 立方メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0} m³',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0}m³',
           other: '{0}m³',
         ),
       );
@@ -5711,16 +6177,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方センチメートル',
+          one: '{0} cubic centimeter',
           other: '{0} 立方センチメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0} cm³',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0}cm³',
           other: '{0}cm³',
         ),
       );
@@ -5730,16 +6199,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方マイル',
+          one: '{0} cubic mile',
           other: '{0} 立方マイル',
         ),
         short: UnitCountPattern(
           _locale,
           '立方マイル',
+          one: '{0} mi³',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
+          one: '{0}mi³',
           other: '{0}mi³',
         ),
       );
@@ -5749,16 +6221,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方ヤード',
+          one: '{0} cubic yard',
           other: '{0} 立方ヤード',
         ),
         short: UnitCountPattern(
           _locale,
           '立方ヤード',
+          one: '{0} yd³',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
+          one: '{0}yd³',
           other: '{0}yd³',
         ),
       );
@@ -5768,16 +6243,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方フィート',
+          one: '{0} cubic foot',
           other: '{0} 立方フィート',
         ),
         short: UnitCountPattern(
           _locale,
           '立方フィート',
+          one: '{0} ft³',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
+          one: '{0}ft³',
           other: '{0}ft³',
         ),
       );
@@ -5787,16 +6265,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方インチ',
+          one: '{0} cubic inch',
           other: '{0} 立方インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '立方インチ',
+          one: '{0} in³',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
+          one: '{0}in³',
           other: '{0}in³',
         ),
       );
@@ -5806,16 +6287,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガリットル',
+          one: '{0} megaliter',
           other: '{0} メガリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'メガリットル',
+          one: '{0} ML',
           other: '{0} ML',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ML',
+          one: '{0}ML',
           other: '{0}ML',
         ),
       );
@@ -5825,16 +6309,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘクトリットル',
+          one: '{0} hectoliter',
           other: '{0} ヘクトリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ヘクトリットル',
+          one: '{0} hL',
           other: '{0} hL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hL',
+          one: '{0}hL',
           other: '{0}hL',
         ),
       );
@@ -5844,16 +6331,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'リットル',
+          one: '{0} liter',
           other: '{0} リットル',
         ),
         short: UnitCountPattern(
           _locale,
           'リットル',
+          one: '{0} L',
           other: '{0} L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L',
+          one: '{0}L',
           other: '{0}L',
         ),
       );
@@ -5863,16 +6353,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'デシリットル',
+          one: '{0} deciliter',
           other: '{0} デシリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'デシリットル',
+          one: '{0} dL',
           other: '{0} dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dL',
+          one: '{0}dL',
           other: '{0}dL',
         ),
       );
@@ -5882,16 +6375,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'センチリットル',
+          one: '{0} centiliter',
           other: '{0} センチリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'センチリットル',
+          one: '{0} cL',
           other: '{0} cL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cL',
+          one: '{0}cL',
           other: '{0}cL',
         ),
       );
@@ -5901,16 +6397,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリリットル',
+          one: '{0} milliliter',
           other: '{0} ミリリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリリットル',
+          one: '{0} mL',
           other: '{0} ml',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mL',
+          one: '{0}mL',
           other: '{0}ml',
         ),
       );
@@ -5920,16 +6419,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メトリックパイント',
+          one: '{0} metric pint',
           other: '{0} メトリックパイント',
         ),
         short: UnitCountPattern(
           _locale,
           'メトリックパイント',
+          one: '{0} mpt',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'メトリックパイント',
+          one: '{0}mpt',
           other: '{0}mpt',
         ),
       );
@@ -5939,16 +6441,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メトリックカップ',
+          one: '{0} metric cup',
           other: '{0} メトリックカップ',
         ),
         short: UnitCountPattern(
           _locale,
           'メトリックカップ',
+          one: '{0} mc',
           other: '{0} mc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'メトリックカップ',
+          one: '{0}mc',
           other: '{0}mc',
         ),
       );
@@ -5958,16 +6463,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'エーカーフィート',
+          one: '{0} acre-foot',
           other: '{0} エーカーフィート',
         ),
         short: UnitCountPattern(
           _locale,
           'エーカーフィート',
+          one: '{0} ac ft',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac ft',
+          one: '{0}ac ft',
           other: '{0}ac ft',
         ),
       );
@@ -5977,16 +6485,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ブッシェル',
+          one: '{0} bushel',
           other: '{0} ブッシェル',
         ),
         short: UnitCountPattern(
           _locale,
           'ブッシェル',
+          one: '{0} bu',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ブッシェル',
+          one: '{0}bu',
           other: '{0}bu',
         ),
       );
@@ -5996,16 +6507,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ガロン',
+          one: '{0} gallon',
           other: '{0} ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           'ガロン',
+          one: '{0} gal',
           other: '{0} gal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'gal',
+          one: '{0}gal',
           other: '{0}gal',
         ),
       );
@@ -6015,16 +6529,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英ガロン',
+          one: '{0} Imp. gallon',
           other: '{0} 英ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           '英ガロン',
+          one: '{0} gal Imp.',
           other: '{0} gal Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Imp gal',
+          one: '{0}galIm',
           other: '{0}gal Imp.',
         ),
       );
@@ -6034,16 +6551,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'クォート',
+          one: '{0} quart',
           other: '{0} クォート',
         ),
         short: UnitCountPattern(
           _locale,
           'クォート',
+          one: '{0} qt',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
+          one: '{0}qt',
           other: '{0}qt',
         ),
       );
@@ -6053,16 +6573,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パイント',
+          one: '{0} pint',
           other: '{0} パイント',
         ),
         short: UnitCountPattern(
           _locale,
           'パイント',
+          one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -6071,17 +6594,20 @@ class UnitsJa implements Units {
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
           _locale,
-          'カップ',
-          other: '{0} カップ',
+          'カップ - 米国',
+          one: '{0} cup',
+          other: '{0} カップ - 米国',
         ),
         short: UnitCountPattern(
           _locale,
-          'カップ',
-          other: '{0} カップ',
+          'カップ - 米国',
+          one: '{0} c',
+          other: '{0} カップ - 米国',
         ),
         narrow: UnitCountPattern(
           _locale,
           'カップ',
+          one: '{0}c',
           other: '{0}カップ',
         ),
       );
@@ -6091,16 +6617,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '液量オンス',
+          one: '{0} fluid ounce',
           other: '{0} 液量オンス',
         ),
         short: UnitCountPattern(
           _locale,
           '液量オンス',
+          one: '{0} fl oz',
           other: '{0} fl oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fl oz',
+          one: '{0}fl oz',
           other: '{0}fl oz',
         ),
       );
@@ -6110,16 +6639,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英液量オンス',
+          one: '{0} Imp. fluid ounce',
           other: '{0} 英液量オンス',
         ),
         short: UnitCountPattern(
           _locale,
           '英液量オンス',
+          one: '{0} fl oz Imp.',
           other: '{0} fl oz Imp',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Imp fl oz',
+          one: '{0}fl oz Im',
           other: '{0}Imp fl oz',
         ),
       );
@@ -6128,18 +6660,21 @@ class UnitsJa implements Units {
   Unit get volumeTablespoon => Unit(
         long: UnitCountPattern(
           _locale,
-          '大さじ',
-          other: '大さじ {0}',
+          'テーブルスプーン',
+          one: '{0} tablespoon',
+          other: '{0} テーブルスプーン',
         ),
         short: UnitCountPattern(
           _locale,
-          '大さじ',
-          other: '大さじ {0}',
+          'テーブルスプーン',
+          one: '{0} tbsp',
+          other: '{0} tbsp',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '大さじ',
-          other: '大さじ{0}',
+          'tbsp',
+          one: '{0}tbsp',
+          other: '{0}tbsp',
         ),
       );
 
@@ -6147,18 +6682,21 @@ class UnitsJa implements Units {
   Unit get volumeTeaspoon => Unit(
         long: UnitCountPattern(
           _locale,
-          '小さじ',
-          other: '小さじ {0}',
+          'ティースプーン',
+          one: '{0} teaspoon',
+          other: '{0} ティースプーン',
         ),
         short: UnitCountPattern(
           _locale,
-          '小さじ',
-          other: '小さじ {0}',
+          'ティースプーン',
+          one: '{0} tsp',
+          other: '{0} tsp',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '小さじ',
-          other: '小さじ{0}',
+          'tsp',
+          one: '{0}tsp',
+          other: '{0}tsp',
         ),
       );
 
@@ -6167,16 +6705,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'バレル',
+          one: '{0} barrel',
           other: '{0} バレル',
         ),
         short: UnitCountPattern(
           _locale,
           'バレル',
+          one: '{0} bbl',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
+          one: '{0}bbl',
           other: '{0}bbl',
         ),
       );
@@ -6186,16 +6727,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '中さじ',
+          one: '{0} dessert spoon',
           other: '中さじ {0}',
         ),
         short: UnitCountPattern(
           _locale,
           '中さじ',
+          one: '{0} dsp',
           other: '中さじ {0}',
         ),
         narrow: UnitCountPattern(
           _locale,
           '中さじ',
+          one: '{0}dsp',
           other: '中さじ{0}',
         ),
       );
@@ -6205,16 +6749,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英デザートスプーン',
+          one: '{0} Imp. dessert spoon',
           other: '{0} 英デザートスプーン',
         ),
         short: UnitCountPattern(
           _locale,
           '英デザートスプーン',
+          one: '{0} dsp-Imp.',
           other: '{0} 英デザートスプーン',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英デザートスプーン',
+          one: '{0}dsp-Imp',
           other: '{0}英デザートスプーン',
         ),
       );
@@ -6224,16 +6771,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} drop',
           other: '{0} 滴',
         ),
         short: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} dr',
           other: '{0} 滴',
         ),
         narrow: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0}dr',
           other: '{0}滴',
         ),
       );
@@ -6243,16 +6793,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドラム',
+          one: '{0} dram',
           other: '{0} ドラム',
         ),
         short: UnitCountPattern(
           _locale,
           '液量ドラム',
+          one: '{0} dram',
           other: '{0} 液量ドラム',
         ),
         narrow: UnitCountPattern(
           _locale,
           '液量ドラム',
+          one: '{0}fl.dr.',
           other: '{0}fl dr',
         ),
       );
@@ -6262,16 +6815,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ジガー',
+          one: '{0} jigger',
           other: '{0} ジガー',
         ),
         short: UnitCountPattern(
           _locale,
           'ジガー',
+          one: '{0} jigger',
           other: '{0} ジガー',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ジガー',
+          one: '{0}jigger',
           other: '{0}ジガー',
         ),
       );
@@ -6281,16 +6837,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'つまみ',
+          one: '{0} pinch',
           other: '{0} つまみ',
         ),
         short: UnitCountPattern(
           _locale,
           'つまみ',
+          one: '{0} pn',
           other: '{0} つまみ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'つまみ',
+          one: '{0}pn',
           other: '{0}つまみ',
         ),
       );
@@ -6300,17 +6859,42 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英クォート',
+          one: '{0} Imp. quart',
           other: '{0} 英クォート',
         ),
         short: UnitCountPattern(
           _locale,
           '英クォート',
+          one: '{0} qt-Imp.',
           other: '{0} qt Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt Imp',
+          one: '{0}qt-Imp.',
           other: '{0}qt-Imp.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
         ),
       );
 }
@@ -7486,6 +8070,10 @@ class TerritoriesJa implements Territories {
     'CP': Territory(
       'CP',
       'クリッパートン島',
+    ),
+    'CQ': Territory(
+      'CQ',
+      '不明な地域 (CQ)',
     ),
     'CR': Territory(
       'CR',
