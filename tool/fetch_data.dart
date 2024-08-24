@@ -33,7 +33,7 @@ void main() async {
   };
 
   // CLDR coverage to download 'full' or 'modern'
-  final fullOrModern = 'modern';
+  final fullOrModern = 'full';
 
   var dataDirectory = Directory('tool/data');
   if (dataDirectory.existsSync()) {

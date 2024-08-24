@@ -7,6 +7,7 @@ import 'model/date_fields.dart';
 import 'model/language.dart';
 import 'model/script.dart';
 import 'model/territory.dart';
+import 'model/timezone.dart';
 import 'model/units.dart';
 import 'model/variant.dart';
 import 'utils/case_format.dart';
@@ -32,6 +33,9 @@ void main() {
       .writeAsStringSync(_format(generateUnitsModel()));
   File('lib/src/territories_model.dart')
       .writeAsStringSync(_format(generateTerritoriesModel()));
+  File('lib/src/timezone_data.dart')
+      .writeAsStringSync(_format(generateTimeZoneData()));
+
 
   for (var locale in supportedLocales) {
     print('Generate file for $locale');
@@ -44,7 +48,8 @@ void main() {
       ..writeln("import '../variants.dart';")
       ..writeln("import '../shared.dart';")
       ..writeln("import '../territories.dart';")
-      ..writeln("import '../units.dart';");
+      ..writeln("import '../units.dart';")
+      ..writeln("import '../timezones.dart';");
 
     var localeUpperCamel = locale.toUpperCamel();
     buffer.writeln('''
@@ -52,6 +57,7 @@ const _locale = '$locale';
 
 /// Translations of [CommonLocaleData] for $locale
 class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
+  @override
   String get locale => _locale;
   
   const CommonLocaleData$localeUpperCamel();
@@ -79,6 +85,10 @@ class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
   static final _territories = Territories$localeUpperCamel._();
   @override
   Territories get territories => _territories;
+  
+  static final _timeZones = TimeZones$localeUpperCamel._();
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 ''');
 
@@ -88,6 +98,7 @@ class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
     generateUnits(locale, buffer);
     generateDateFields(locale, buffer);
     generateTerritories(locale, buffer);
+    generateTimeZones(locale, buffer);
 
     var formatted = _format(buffer.toString());
 
@@ -108,10 +119,13 @@ String generateCommon() {
   code.writeln("import 'variants.dart';");
   code.writeln("import 'territories.dart';");
   code.writeln("import 'units.dart';");
+  code.writeln("import 'timezones.dart';");
 
   code.writeln('''
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
+  /// Locale code
+  String get locale;
 
   /// Localized date/time-related fields
   DateFields get date;
@@ -130,6 +144,9 @@ abstract class CommonLocaleData {
 
   /// Localized country name
   Territories get territories;
+
+  /// Localized timezone name
+  TimeZones get timeZones;
 ''');
 
   for (var locale in supportedLocales) {
