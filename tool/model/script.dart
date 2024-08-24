@@ -50,13 +50,13 @@ final scripts = CanonicalizedMap<String, String, Script>.from({
   output.writeln('}');
 }
 
-Map<String, String> readScripts(String script) {
-  var file = File(p.join('tool/data/localenames/scripts/$script.json'));
+Map<String, String> readScripts(String locale) {
+  var file = File(p.join('tool/data/localenames/scripts/$locale.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
   return
       // ignore: avoid_dynamic_calls
-      (json['main'][script]['localeDisplayNames']['scripts']
+      (json['main'][locale]['localeDisplayNames']['scripts']
               as Map<String, dynamic>)
           .cast<String, String>();
 }

@@ -82,12 +82,12 @@ final countries = CanonicalizedMap<String, String, Territory>.from({
   output.writeln('}');
 }
 
-Map<String, dynamic> readTerritories(String language) {
-  var file = File(p.join('tool/data/localenames/territories/$language.json'));
+Map<String, dynamic> readTerritories(String locale) {
+  var file = File(p.join('tool/data/localenames/territories/$locale.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
   return
       // ignore: avoid_dynamic_calls
-      json['main'][language]['localeDisplayNames']['territories']
+      json['main'][locale]['localeDisplayNames']['territories']
           as Map<String, dynamic>;
 }

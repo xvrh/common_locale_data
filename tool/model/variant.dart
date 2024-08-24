@@ -48,13 +48,13 @@ final variants = CanonicalizedMap<String, String, Variant>.from({
   output.writeln('}');
 }
 
-Map<String, String> readVariants(String variant) {
-  var file = File(p.join('tool/data/localenames/variants/$variant.json'));
+Map<String, String> readVariants(String locale) {
+  var file = File(p.join('tool/data/localenames/variants/$locale.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
   return
       // ignore: avoid_dynamic_calls
-      (json['main'][variant]['localeDisplayNames']['variants']
+      (json['main'][locale]['localeDisplayNames']['variants']
               as Map<String, dynamic>)
           .cast<String, String>();
 }

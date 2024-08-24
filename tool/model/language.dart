@@ -50,13 +50,13 @@ final languages = CanonicalizedMap<String, String, Language>.from({
   output.writeln('}');
 }
 
-Map<String, String> readLanguages(String language) {
-  var file = File(p.join('tool/data/localenames/languages/$language.json'));
+Map<String, String> readLanguages(String locale) {
+  var file = File(p.join('tool/data/localenames/languages/$locale.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
   return
       // ignore: avoid_dynamic_calls
-      (json['main'][language]['localeDisplayNames']['languages']
+      (json['main'][locale]['localeDisplayNames']['languages']
               as Map<String, dynamic>)
           .cast<String, String>();
 }

@@ -10,13 +10,13 @@ import '../utils/split_words.dart';
 
 part 'units.g.dart';
 
-Map<String, dynamic> readJson(String language) {
-  var file = File(p.join('tool/data/units/units/$language.json'));
+Map<String, dynamic> readJson(String locale) {
+  var file = File(p.join('tool/data/units/units/$locale.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
   return
       // ignore: avoid_dynamic_calls
-      json['main'][language]['units'] as Map<String, dynamic>;
+      json['main'][locale]['units'] as Map<String, dynamic>;
 }
 
 String generateUnitsModel() {
