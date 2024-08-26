@@ -1,77 +1,202 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:collection/collection.dart';
 import 'package:path/path.dart' as p;
 
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 
+Map<String, dynamic> readJsonData(String fileName, String path) {
+  var file = File(p.join(fileName));
+  var content = file.readAsStringSync();
+  var json = jsonDecode(content) as Map<String, dynamic>;
+
+  var current = json;
+  for (var part in path.split('/')) {
+    current = current[part] as Map<String, dynamic>;
+  }
+  return current;
+}
+
+List<List<String>> readTable(String fileName) {
+  var file = File(p.join(fileName));
+  var content = file
+      .readAsLinesSync()
+      .whereNot((l) =>
+  l.startsWith(RegExp(r'\s*#')) || l
+      .trim()
+      .isEmpty);
+
+  return content.map((str) => str.split(RegExp(r'\s+'))).toList();
+}
+
 String generateTimeZoneData() {
   var code = StringBuffer();
   code.writeln('''
+import 'package:collection/collection.dart';
 import 'timezones.dart';
 
 class TimeZoneMapping {
-  static final Map<String, DateRangeMap<String>> ianaToMetaZone={
 ''');
 
-  var metaZones = readMetaZones();
-  for (var entry in metaZones.entries) {
-    generateMetaZones(entry, code);
+  void generateMetaZones(MapEntry<String, dynamic> entry, StringBuffer code) {
+    var value = entry.value;
+    if (value is Map<String, dynamic>) {
+      for (var child in value.entries) {
+        generateMetaZones(
+            MapEntry('${entry.key}/${child.key}', child.value), code);
+      }
+    } else {
+      var metaZones = (entry.value as List<dynamic>).map((e) =>
+          ((e as Map<String, dynamic>).values.first as Map<String, dynamic>)
+              .cast<String, String>());
+
+      code.writeln('${escapeDartString(entry.key)}: DateRangeMap({');
+
+      for (var metaZoneMapping in metaZones) {
+        var metaZone = metaZoneMapping['_mzone']!;
+        var from = metaZoneMapping['_from'];
+        var to = metaZoneMapping['_to'];
+        var fromString = from == null ? 'null' : escapeDartString('${from}Z');
+        var toString = to == null ? 'null' : escapeDartString('${to}Z');
+
+        code.writeln(
+            'DateRange.parse($fromString,$toString): ${escapeDartString(
+                metaZone)},');
+      }
+      code.writeln('}),');
+    }
   }
 
   code.writeln('''
-  };
-}''');
+  static final Map<String, DateRangeMap<String>> zoneToMetaZone={
+''');
+  var metaZones = readJsonData(
+    'tool/data/core/supplemental/metaZones.json',
+    'supplemental/metaZones',
+  );
+
+  var timeZones = (metaZones['metazoneInfo']
+  as Map<String, dynamic>)['timezone'] as Map<String, dynamic>;
+
+  for (var entry in timeZones.entries) {
+    generateMetaZones(entry, code);
+  }
+
+  code.writeln('};');
+
+  var mapZones = (metaZones['metazones'] as List<dynamic>)
+      .cast<Map<String, dynamic>>()
+      .map((e) => e['mapZone'] as Map<String, dynamic>);
+
+  code.writeln('''
+  
+  static final Map<(String,String), String> metaZoneToZoneForTerritory={
+''');
+
+  for (var mapZone in mapZones) {
+    var metaZone = mapZone['_other'] as String;
+    var zone = mapZone['_type'] as String;
+    var territory = mapZone['_territory'] as String;
+    code.writeln(
+        '(${escapeDartString(metaZone)},${escapeDartString(
+            territory)}): ${escapeDartString(zone)},');
+  }
+
+  code.writeln('};');
+
+  var aliases = readJsonData(
+    'tool/data/bcp47/bcp47/timezone.json',
+    'keyword/u/tz',
+  );
+
+  var aliasToCanonical = <String, String>{};
+  var canonicalToIana = <String, String>{};
+  for (var entry in aliases.entries) {
+    if (entry.value is Map<String, dynamic>) {
+      //var key = entry.key; CLDR shortname, curently not used
+      var value = (entry.value as Map<String, dynamic>).cast<String, String>();
+
+      // description not used
+      // var description = value['_description'];
+      var aliases = value['_alias'] ?? '';
+      var parts = aliases.split(' ');
+      var iana = value['_iana'] ?? parts.first;
+
+      if (parts.first != iana) {
+        canonicalToIana[parts.first] = iana;
+      }
+
+      for (var alias in parts) {
+        if (alias != parts.first) {
+          aliasToCanonical[alias] = parts.first;
+        }
+      }
+    }
+  }
+
+  writeCanonicalizeMapCode(code, 'aliasToZone', aliasToCanonical);
+
+  writeCanonicalizeMapCode(code, 'zoneToIana', canonicalToIana);
+
+  var primaryZones = readJsonData(
+    'tool/data/core/supplemental/primaryZones.json',
+    'supplemental/primaryZones',
+  ).cast<String, String>();
+
+  writeCanonicalizeMapCode(code, 'zoneToPrimaryForCountry', primaryZones);
+
+  var territoryMappings = readTable('tool/data/tzdb/zone.tab.txt');
+  var territoryOverrides = readTable('tool/data/tzdb/icuregions.txt');
+
+  var ianaToCanonical = canonicalToIana.map((k, v) => MapEntry(v, k));
+
+  var zoneToTerritory = <String, String>{};
+  for (var territoryMapping in territoryMappings) {
+    var iana = territoryMapping[2];
+    var zone = ianaToCanonical[iana] ?? iana;
+    zoneToTerritory[zone] = territoryMapping[0];
+  }
+
+  for (var territoryOverride in territoryOverrides) {
+    var zone = aliasToCanonical[territoryOverride[0]] ?? territoryOverride[0];
+    assert(zoneToTerritory[zone]==null || zoneToTerritory[zone]!=territoryOverride);
+    zoneToTerritory[zone] = territoryOverride[1];
+  }
+
+  writeCanonicalizeMapCode(code, 'zoneToTerritory', zoneToTerritory);
+
+  code.writeln('}');
 
   return '$code';
 }
 
-void generateMetaZones(MapEntry<String, dynamic> entry, StringBuffer code) {
-  var value = entry.value;
-  if (value is Map<String, dynamic>) {
-    for (var child in value.entries) {
-      generateMetaZones(
-          MapEntry('${entry.key}/${child.key}', child.value), code);
-    }
-  } else {
-    var metaZones = (entry.value as List<dynamic>).map((e) =>
-        ((e as Map<String, dynamic>).values.first as Map<String, dynamic>)
-            .cast<String, String>());
-
-    code.writeln('${escapeDartString(entry.key)}: DateRangeMap({');
-
-    for (var metaZoneMapping in metaZones) {
-      var metaZone = metaZoneMapping['_mzone']!;
-      var from = metaZoneMapping['_from'];
-      var to = metaZoneMapping['_to'];
-      var fromString = from == null ? 'null' : escapeDartString('${from}Z');
-      var toString = to == null ? 'null' : escapeDartString('${to}Z');
-
-      code.writeln(
-          'DateRange.parse($fromString,$toString): ${escapeDartString(metaZone)},');
-    }
-    code.writeln('}),');
+void writeCanonicalizeMapCode(StringBuffer code, String name,
+    Map<String, String> map) {
+  code.writeln();
+  code.writeln(
+      'static final $name = CanonicalizedMap<String, String, String>.from({');
+  for (var e in map.entries) {
+    code.writeln('${escapeDartString(e.key)}: ${escapeDartString(e.value)},');
   }
-}
-
-Map<String, dynamic> readMetaZones() {
-  var file = File(p.join('tool/data/core/supplemental/metaZones.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  return
-      // ignore: avoid_dynamic_calls
-      json['supplemental']['metaZones']['metazoneInfo']['timezone']
-          as Map<String, dynamic>;
+  code.writeln('}, (key) => key.toLowerCase());');
 }
 
 void generateTimeZones(String locale, StringBuffer code) {
-  var timeZoneNames = readTimeZoneNames(locale);
+  var timeZoneNames = readJsonData(
+    'tool/data/dates/timeZoneNames/$locale.json',
+    'main/$locale/dates/timeZoneNames',
+  );
+
   var translatedTimeZones = (timeZoneNames['zone'] as Map<String, dynamic>).map(
-      (str, e) => MapEntry(str,
-          (e as Map<String, dynamic>).cast<String, Map<String, dynamic>>()));
+          (str, e) =>
+          MapEntry(str,
+              (e as Map<String, dynamic>).cast<String,
+                  Map<String, dynamic>>()));
   var translatedMetaZones = (timeZoneNames['metazone'] as Map<String, dynamic>)
-      .map((str, e) => MapEntry(str,
+      .map((str, e) =>
+      MapEntry(str,
           (e as Map<String, dynamic>).cast<String, Map<String, dynamic>>()));
 
   var timeZoneFields = {
@@ -82,7 +207,10 @@ void generateTimeZones(String locale, StringBuffer code) {
     'regionFormatDaylight': 'regionFormat-type-daylight',
     'regionFormatStandard': 'regionFormat-type-standard',
     'fallbackFormat': 'fallbackFormat'
-  }.map((k, e) => MapEntry(k, "$k: '${timeZoneNames[e]}'")).values.join(',');
+  }
+      .map((k, e) => MapEntry(k, "$k: '${timeZoneNames[e]}'"))
+      .values
+      .join(',');
 
   code.writeln('''
 class TimeZones${locale.toUpperCamel()} extends TimeZones {
@@ -176,16 +304,4 @@ final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
   code.writeln('}, (key) => key.toLowerCase());');
 
   code.writeln('}');
-}
-
-Map<String, dynamic> readTimeZoneNames(String locale) {
-  var file = File(p.join('tool/data/dates/timeZoneNames/$locale.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-
-  var res =
-      // ignore: avoid_dynamic_calls
-      json['main'][locale]['dates']['timeZoneNames'] as Map<String, dynamic>;
-
-  return res;
 }

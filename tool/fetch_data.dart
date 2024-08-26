@@ -44,6 +44,27 @@ void main() async {
 
   print('Downloading locale independent data');
 
+  var tzdbDirectory = Directory(p.join(dataDirectory.path, 'tzdb'));
+
+  // get zone.tab for zone to territory mapping; get it from the cldr repository to have teh version align to the cldr
+  await download(
+      tzdbDirectory,
+      'https://raw.githubusercontent.com/unicode-org/cldr/main/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/zone.tab',
+      client,
+      'zone.tab.txt');
+
+  await download(
+      tzdbDirectory,
+      'https://raw.githubusercontent.com/unicode-org/cldr/main/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/tzdb-version.txt',
+      client,
+      'tzdb-version.txt');
+
+  await download(
+      tzdbDirectory,
+      'https://raw.githubusercontent.com/unicode-org/icu/main/icu4c/source/tools/tzcode/icuregions',
+      client,
+      'icuregions.txt');
+
   for (var set in miscSets.keys) {
     await Future.wait([
       for (var file in miscSets[set]!)
