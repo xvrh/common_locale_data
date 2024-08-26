@@ -11,15 +11,16 @@ import 'model/timezone.dart';
 import 'model/units.dart';
 import 'model/variant.dart';
 import 'utils/case_format.dart';
+import 'utils/escape_dart_string.dart';
 import 'utils/split_words.dart';
 import 'utils/supported_locales.dart';
+import 'utils/versions.dart';
 
 var supportedLocales = getSupportedLocales();
 
 final _formatter = DartFormatter();
 
 void main() {
-
   var dataDirectory = Directory('lib/src/data');
   if (dataDirectory.existsSync()) {
     dataDirectory.deleteSync(recursive: true);
@@ -35,7 +36,6 @@ void main() {
       .writeAsStringSync(_format(generateTerritoriesModel()));
   File('lib/src/timezone_data.dart')
       .writeAsStringSync(_format(generateTimeZoneData()));
-
 
   for (var locale in supportedLocales) {
     print('Generate file for $locale');
@@ -126,7 +126,20 @@ String generateCommon() {
 abstract class CommonLocaleData {
   /// Locale code
   String get locale;
+  
+''');
 
+  var versions = getDataVersions();
+
+  code.writeln(
+      'static final DateTime dataDownloadDate=DateTime.parse(${escapeDartString(versions.date.toIso8601String())});');
+  code.writeln('static const String cldrVersion=${escapeDartString(versions.cldr)};');
+  code.writeln(
+      'static const String unicodeVersion=${escapeDartString(versions.unicode)};');
+  code.writeln('static const String tzdbVersion=${escapeDartString(versions.tzdb)};');
+
+  code.writeln('''
+  
   /// Localized date/time-related fields
   DateFields get date;
 
@@ -152,7 +165,7 @@ abstract class CommonLocaleData {
   for (var locale in supportedLocales) {
     var localeConstantName = lowerCamel(splitWords(locale));
     if (Keyword.keywords.containsKey(localeConstantName)) {
-      localeConstantName='\$$localeConstantName';
+      localeConstantName = '\$$localeConstantName';
     }
     code.writeln('/// Access the [CommonLocaleData] for $locale');
     code.writeln(
