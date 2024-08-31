@@ -3,6 +3,7 @@ import 'package:process_runner/process_runner.dart';
 import 'package:test/test.dart';
 import 'tree_shaking_data/date_field_direct_access_field.dart' as date_field;
 import 'tree_shaking_data/date_fields_dynamic.dart' as date_fields_dynamic;
+import 'tree_shaking_data/timezone.dart' as timezone;
 
 void main() {
   Future<void> check(String file,
@@ -27,6 +28,13 @@ void main() {
         expected: date_fields_dynamic.expected,
         notExpected: date_fields_dynamic.notExpected);
   });
+
+  test('timezone treeshaking', () async {
+    await check('test/tree_shaking_data/timezone.dart',
+        expected: timezone.expected,
+        notExpected: timezone.notExpected);
+  });
+
 }
 
 Future<String> _compileDart2Js(String file) async {
