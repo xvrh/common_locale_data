@@ -22,7 +22,12 @@ Map<String, dynamic> readJson(String locale) {
 String generateUnitsModel() {
   var code = StringBuffer();
   code.writeln("import 'units.dart';");
-  code.writeln('abstract class Units {');
+  code.writeln('''
+/// Container for localized unit names.
+/// 
+/// {@category Units}
+abstract class Units {
+''');
 
   var fields = readJson('en')['long'] as Map<String, dynamic>;
   for (var key in fields.keys) {

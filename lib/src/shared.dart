@@ -1,5 +1,11 @@
+/// Name in multiple different lengths.
 class MultiLength {
-  final String long, short, narrow;
+  /// Long name.
+  final String long;
+  /// Abbreviated name.
+  final String short;
+  /// Narrowest name.
+  final String narrow;
 
   MultiLength({
     required this.long,

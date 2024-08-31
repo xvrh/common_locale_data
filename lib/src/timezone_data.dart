@@ -1,9 +1,11 @@
 import 'package:collection/collection.dart';
 import 'timezones.dart';
 
-/// Locale independent data about timezones
-/// {@hideConstantImplementations}
+/// Locale independent data about timezones.
+///
+/// {@category Timezones}
 class TimeZoneMapping {
+  /// Maps canonical timezones to meta zones.
   static final zoneToMetaZone =
       CanonicalizedMap<String, String, DateRangeMap>.from({
     'Africa/Abidjan': DateRangeMap({
@@ -1522,6 +1524,7 @@ class TimeZoneMapping {
     }),
   }, (key) => key.toLowerCase());
 
+  /// Maps meta zone+territory combinations to canonical zones
   static final metaZoneToZoneForTerritory =
       CanonicalizedMap<(String, String), (String, String), String>.from({
     ('Acre', '001'): 'America/Rio_Branco',
@@ -1847,6 +1850,7 @@ class TimeZoneMapping {
     ('Yukon', '001'): 'America/Whitehorse',
   }, (key) => (key.$1.toLowerCase(), key.$2.toLowerCase()));
 
+  /// Maps timezone code to canonical code.
   static final aliasToZone = CanonicalizedMap<String, String, String>.from({
     'America/Argentina/Buenos_Aires': 'America/Buenos_Aires',
     'America/Argentina/Cordoba': 'America/Cordoba',
@@ -1994,6 +1998,7 @@ class TimeZoneMapping {
     'Asia/Ho_Chi_Minh': 'Asia/Saigon',
   }, (key) => key.toLowerCase());
 
+  /// Maps canonical timezone to IANA/Olson.
   static final zoneToIana = CanonicalizedMap<String, String, String>.from({
     'America/Buenos_Aires': 'America/Argentina/Buenos_Aires',
     'America/Cordoba': 'America/Argentina/Cordoba',
@@ -2016,6 +2021,7 @@ class TimeZoneMapping {
     'Asia/Saigon': 'Asia/Ho_Chi_Minh',
   }, (key) => key.toLowerCase());
 
+  /// Maps territory to primary timezone.
   static final territoryToPrimaryZone =
       CanonicalizedMap<String, String, String>.from({
     'CL': 'America/Santiago',
@@ -2031,6 +2037,7 @@ class TimeZoneMapping {
     'UZ': 'Asia/Tashkent',
   }, (key) => key.toLowerCase());
 
+  /// Maps canonical timezone to territory.
   static final zoneToTerritory = CanonicalizedMap<String, String, String>.from({
     'Europe/Andorra': 'AD',
     'Asia/Dubai': 'AE',
@@ -2452,6 +2459,7 @@ class TimeZoneMapping {
     'Africa/Harare': 'ZW',
   }, (key) => key.toLowerCase());
 
+  /// Maps territory to canonicalized timezone.
   static final territoryToZones =
       CanonicalizedMap<String, String, Set<String>>.from({
     'AD': {'Europe/Andorra'},

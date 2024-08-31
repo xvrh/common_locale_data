@@ -1,5 +1,8 @@
 import 'units.dart';
 
+/// Container for localized unit names.
+///
+/// {@category Units}
 abstract class Units {
   /// deci{0}
   UnitPrefix get pattern10pMinus1;

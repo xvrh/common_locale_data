@@ -13,6 +13,9 @@ String generateTerritoriesModel() {
   var code = StringBuffer();
   code.writeln("import 'territories.dart';");
   code.writeln('''
+/// Container for localized territory names.
+/// 
+/// {@category Territories}
 abstract class Territories {
   Map<String, Territory> get countries;
 

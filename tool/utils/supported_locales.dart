@@ -22,7 +22,7 @@ Set<String> getLocales() {
   var modernLocales =
       (availableLocales['modern'] as List<dynamic>).cast<String>().toSet();
 
-  /// remove root locale
+  // Remove root locale
   modernLocales.remove('und');
 
   return modernLocales;

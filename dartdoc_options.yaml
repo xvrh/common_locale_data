@@ -1,5 +1,14 @@
 dartdoc:
   categories:
+    "Dates":
+      markdown: doc/Dates.md
+      name: "Date and Times"
+    "Units":
+      markdown: doc/Units.md
+    "Languages":
+      markdown: doc/Languages.md
+    "Territories":
+      markdown: doc/Territories.md
     "Timezones":
       markdown: doc/Timezones.md
   showUndocumentedCategories: true

@@ -1,3 +1,6 @@
+/// Container for localized script names.
+///
+/// {@category Languages}
 abstract class Scripts {
   Map<String, Script> get scripts;
 
@@ -6,10 +9,20 @@ abstract class Scripts {
   }
 }
 
+/// Localized script names.
+///
+/// {@category Languages}
 class Script {
+  /// ISO 15924 script code.
   final String code;
+  /// Localized script name.
   final String name;
-  final String? short, variant, standAlone;
+  /// Localized short script name.
+  final String? short;
+  /// Localized alternative script name.
+  final String? variant;
+  /// Localized script name for use in stand alone contexts.
+  final String? standAlone;
 
   Script(this.code, this.name, {this.short, this.variant, this.standAlone});
 

@@ -6,6 +6,7 @@ import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
 
 import 'utils/supported_locales.dart';
+import 'utils/versions.dart';
 
 final RegExp _importRegex = RegExp(r"import '([^']+)';\r?\n");
 
@@ -19,8 +20,6 @@ void main() {
 
 String generateReadme(File source) {
   var template = source.readAsStringSync();
-
-  var package = readPackage();
 
   var readme = template.replaceAllMapped(_importRegex, (match) {
     var filePath = match.group(1)!;
@@ -53,19 +52,20 @@ String generateReadme(File source) {
             ? CommonLocaleData.en.territories.countries[a[1]]?.name
             : null;
 
-        if (country!=null) {
+        if (country != null) {
           return '$locale: $language ($country)';
         } else {
           return '$locale: $language';
         }
-      }).join(Platform.isWindows ? '\r\n' : '\n'));
+      }).join(Platform.isWindows ? '  \r\n' : '  \n'));
+
+  var version = getDataVersions();
 
   readme =
-      readme.replaceAll('##DOWNLOAD_DATE##', package.date.toUtc().toString());
-
-  readme = readme.replaceAll('##CLDR_VERSION##', package.cldrVersion);
-
-  readme = readme.replaceAll('##UNICODE_VERSION##', package.unicodeVerion);
+      readme.replaceAll('##DOWNLOAD_DATE##', version.date.toUtc().toString());
+  readme = readme.replaceAll('##CLDR_VERSION##', version.cldr);
+  readme = readme.replaceAll('##UNICODE_VERSION##', version.unicode);
+  readme = readme.replaceAll('##TZDB_VERSION##', version.tzdb);
 
   return readme;
 }
@@ -81,15 +81,4 @@ String _extractSection(String content, String sectionName) {
       .toList();
 
   return lines.join('\n');
-}
-
-({DateTime date, String cldrVersion, String unicodeVerion}) readPackage() {
-  var file = File('tool/data/core/package.json');
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  return (
-    date: file.lastModifiedSync(),
-    cldrVersion: json['version'] as String,
-    unicodeVerion: json['unicodeVersion'] as String
-  );
 }

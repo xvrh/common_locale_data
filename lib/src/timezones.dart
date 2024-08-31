@@ -3,9 +3,7 @@ import 'package:common_locale_data/src/territories_model.dart';
 import 'package:common_locale_data/src/timezone_data.dart';
 import 'package:intl/intl.dart';
 
-// TODO: handle locale inheritance: either at runtime or at generation time
-
-/// Timezone formatting options
+/// Timezone formatting options.
 ///
 /// {@category Timezones}
 enum TimeZoneStyle {
@@ -38,45 +36,45 @@ enum TimeZoneStyle {
   /// Long form of constant, specific offset from GMT (or UTC), which may be in a translated form (e.g. GMT, GMT+03:30 or UTC-3.00).
   localizedGmtLong,
 
-  /// Short ISO8601 based format without separators (e.g. Z, +01, +0159)
+  /// Short ISO8601 based format without separators (e.g. Z, +01, +0159).
   iso8601BasicShort,
 
-  /// Short ISO8601 based format without separators (e.g. +00, +01, +0159)
+  /// Short ISO8601 based format without separators (e.g. +00, +01, +0159).
   iso8601BasicLocalShort,
 
-  /// Fixed length ISO8601 based format without separators (e.g. Z, +0100, +0159) (equivalent to RFC 822 zone format)
+  /// Fixed length ISO8601 based format without separators (e.g. Z, +0100, +0159) (equivalent to RFC 822 zone format).
   iso8601BasicFixed,
 
-  /// Fixed length ISO8601 based format without separators (e.g. +0000, +0100, +0159)
+  /// Fixed length ISO8601 based format without separators (e.g. +0000, +0100, +0159).
   iso8601BasicLocalFixed,
 
-  /// Full length ISO8601 based format without separators (e.g. Z, +0100, +015959)
+  /// Full length ISO8601 based format without separators (e.g. Z, +0100, +015959).
   iso8601BasicFull,
 
-  /// Full length ISO8601 based format without separators (e.g. +0000, +0100, +015959)
+  /// Full length ISO8601 based format without separators (e.g. +0000, +0100, +015959).
   iso8601BasicLocalFull,
 
-  /// Fixed length ISO8601 based format with separators (e.g. Z, +01:00, +01:59)
+  /// Fixed length ISO8601 based format with separators (e.g. Z, +01:00, +01:59).
   iso8601ExtendedFixed,
 
-  /// Fixed length ISO8601 based format with separators (e.g. +00:00, +01:00, +01:59)
+  /// Fixed length ISO8601 based format with separators (e.g. +00:00, +01:00, +01:59).
   iso8601ExtendedLocalFixed,
 
-  /// Full length ISO8601 based format with separators (e.g. Z, +01:00, +01:59:59)
+  /// Full length ISO8601 based format with separators (e.g. Z, +01:00, +01:59:59).
   iso8601ExtendedFull,
 
-  /// Full length ISO8601 based format with separators (e.g. +00:00, +01:00, +01:59:59)
+  /// Full length ISO8601 based format with separators (e.g. +00:00, +01:00, +01:59:59).
   iso8601ExtendedLocalFull,
 }
 
-/// Container for localized Timezone information
+/// Container for localized Timezone information.
 ///
 /// {@category Timezones}
 abstract class TimeZones {
   final String _locale;
   final Territories _territories;
 
-  //Todo use
+  // TODO: use specific region & fallback formats
   final String _gmtFormat;
   final String _gmtZeroFormat;
   final String _regionFormat;
@@ -108,7 +106,7 @@ abstract class TimeZones {
 
   Map<String, MetaZone> get metaZoneNames;
 
-  /// Get a timezone by the iana/Olson [code] and optionally specify a [dateTime].
+  /// Get a timezone by the IANA/Olson [code] and optionally specify a [dateTime].
   /// The [dateTime] is necessary as locations can be part of a different timezone
   /// during parts of their history.
   /// If no [dateTime] is specified the current date and time are assumed.
@@ -116,7 +114,7 @@ abstract class TimeZones {
     return TimeZone(this, code, dateTime);
   }
 
-  /// Get a timezone by the iana/Olson [code] for the current date and time
+  /// Get a timezone by the IANA/Olson [code] for the current date and time.
   TimeZone? operator [](String code) {
     return get(code);
   }
@@ -228,34 +226,34 @@ abstract class TimeZones {
   }
 }
 
-/// Timezone information for a specific location at a given point in time
+/// Localized timezone information for a given point in time.
 ///
 /// {@category Timezones}
 class TimeZone {
   final TimeZones _timeZones;
 
-  /// Timezone code requested
+  /// Timezone code requested.
   final String code;
 
-  /// Canonical (standardized) timezone code
+  /// Canonical (standardized) timezone code.
   final String canonicalCode;
 
-  /// Timezone code in iana (Olson) database
+  /// Timezone code in IANA/Olson database.
   final String iana;
 
-  /// Meta zone for this timezone
+  /// Meta zone for this timezone.
   final MetaZone? metaZone;
 
-  /// The date and time for which this timezone is valid
+  /// The date and time for which this timezone is valid.
   final DateTime dateTime;
 
-  /// The localized long names for this timezone
+  /// The localized long names for this timezone.
   final TimeZoneName long;
 
-  /// The localized abbreviated names for this timezone
+  /// The localized abbreviated names for this timezone.
   final TimeZoneName short;
 
-  /// The localized location (most often city, sometimes country) for this timezone
+  /// The localized location (most often city, sometimes country) for this timezone.
   final String location;
 
   TimeZone._(this._timeZones,
@@ -375,33 +373,33 @@ class TimeZone {
   }
 }
 
-/// Set of names for a time zone
+/// Set of names for a time zone.
 ///
 /// {@category Timezones}
 class TimeZoneNames {
-  /// long names
+  /// long names.
   final TimeZoneName? long;
 
-  /// abbreviated names
+  /// abbreviated names.
   final TimeZoneName? short;
 
-  /// name of exemplar city
+  /// name of exemplar city.
   final String? city;
 
   TimeZoneNames({this.long, this.short, this.city});
 }
 
-/// Combination of generic, standard and daylight savings time names
+/// Combination of generic, standard and daylight savings time names.
 ///
 /// {@category Timezones}
 class TimeZoneName {
-  /// generic name
+  /// Generic name for timezone.
   final String? generic;
 
-  /// name of standard (=non daylight savings) time
+  /// Name of standard (=non daylight savings) time.
   final String? standard;
 
-  /// name of daylight savings time
+  /// Name of daylight savings time.
   final String? daylight;
 
   TimeZoneName({this.generic, this.standard, this.daylight});
@@ -416,17 +414,17 @@ class TimeZoneName {
 }
 
 /// Meta zone is used as a generic zone for a group of locations
-/// (e.g. Central European time for Amsterdam, London, Paris, Brussels, etc.)
+/// (e.g. Central European time for Amsterdam, London, Paris, Brussels, etc.).
 ///
 /// {@category Timezones}
 class MetaZone {
-  /// The meta zone code
+  /// The meta zone code.
   final String code;
 
-  /// Long localized names for the meta zone
+  /// Long localized names for the meta zone.
   final TimeZoneName? long;
 
-  /// Abbreviated localized names for the meta zone
+  /// Abbreviated localized names for the meta zone.
   final TimeZoneName? short;
 
   MetaZone({required this.code, this.long, this.short});
@@ -435,11 +433,11 @@ class MetaZone {
   String toString() => long?.generic ?? long?.standard ?? '???';
 }
 
-/// Time period
+/// Date/Time period.
 ///
 /// {@category Timezones}
 class DateRange {
-  /// Starting date/time of time period
+  /// Starting date/time of time period.
   final DateTime? from;
 
   /// Ending date/time of time period (the end date/time itself is not included in the period).
@@ -469,7 +467,7 @@ class DateRange {
   }
 }
 
-/// A map of time periods
+/// A map of time periods.
 ///
 /// {@category Timezones}
 class DateRangeMap<T> {
@@ -477,7 +475,7 @@ class DateRangeMap<T> {
 
   DateRangeMap(Map<DateRange, T> map) : _map = map;
 
-  /// Get the first object with [dateTime] inside the [DateRange]
+  /// Get the first object with [dateTime] inside the [DateRange].
   T? get({DateTime? dateTime}) {
     dateTime ??= DateTime.timestamp();
     return _map.entries

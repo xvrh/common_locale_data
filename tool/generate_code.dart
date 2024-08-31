@@ -39,20 +39,16 @@ void main() {
 
   for (var locale in supportedLocales) {
     print('Generate file for $locale');
-    var buffer = StringBuffer()
-      ..writeln("import 'package:collection/collection.dart';")
-      ..writeln("import '../../common_locale_data.dart' show CommonLocaleData;")
-      ..writeln("import '../date_fields.dart';")
-      ..writeln("import '../languages.dart';")
-      ..writeln("import '../scripts.dart';")
-      ..writeln("import '../variants.dart';")
-      ..writeln("import '../shared.dart';")
-      ..writeln("import '../territories.dart';")
-      ..writeln("import '../units.dart';")
-      ..writeln("import '../timezones.dart';");
 
     var localeUpperCamel = locale.toUpperCamel();
+
+    var buffer = StringBuffer();
+
     buffer.writeln('''
+import 'package:collection/collection.dart';
+
+import '../../common_locale_data.dart';
+
 const _locale = '$locale';
 
 /// Translations of [CommonLocaleData] for $locale
@@ -86,7 +82,7 @@ class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
   @override
   Territories get territories => _territories;
   
-  static final _timeZones = TimeZones$localeUpperCamel._();
+  static final _timeZones = TimeZones$localeUpperCamel._(_territories);
   @override
   TimeZones get timeZones => _timeZones;
 }
@@ -113,52 +109,54 @@ String generateCommon() {
     code.writeln(
         "import 'data/${locale.toSnakeCase()}.dart' show CommonLocaleData${locale.toUpperCamel()};");
   }
-  code.writeln("import 'date_fields.dart';");
-  code.writeln("import 'languages.dart';");
-  code.writeln("import 'scripts.dart';");
-  code.writeln("import 'variants.dart';");
-  code.writeln("import 'territories.dart';");
-  code.writeln("import 'units.dart';");
-  code.writeln("import 'timezones.dart';");
-
-  code.writeln('''
-/// The root class providing access to all Common Data (date fields, units, territories etc...).
-abstract class CommonLocaleData {
-  /// Locale code
-  String get locale;
-  
-''');
 
   var versions = getDataVersions();
 
-  code.writeln(
-      'static final DateTime dataDownloadDate=DateTime.parse(${escapeDartString(versions.date.toIso8601String())});');
-  code.writeln('static const String cldrVersion=${escapeDartString(versions.cldr)};');
-  code.writeln(
-      'static const String unicodeVersion=${escapeDartString(versions.unicode)};');
-  code.writeln('static const String tzdbVersion=${escapeDartString(versions.tzdb)};');
-
   code.writeln('''
+import 'date_fields.dart';
+import 'languages.dart';
+import 'scripts.dart';
+import 'variants.dart';
+import 'territories.dart';
+import 'units.dart';
+import 'timezones.dart';
+
+/// The root class providing access to all Common Data (date fields, units, territories etc...).
+abstract class CommonLocaleData {
+  /// Locale code.
+  String get locale;
   
-  /// Localized date/time-related fields
+  /// Date when the CLDR data was downloaded.
+  static final DateTime dataDownloadDate=DateTime.parse(${escapeDartString(versions.date.toIso8601String())});
+  
+  /// Version of the CLDR data.
+  static const String cldrVersion=${escapeDartString(versions.cldr)};
+  
+  /// Version of the Unicode data.
+  static const String unicodeVersion=${escapeDartString(versions.unicode)};
+  
+  /// Version of the IANA Timezone database.
+  static const String tzdbVersion=${escapeDartString(versions.tzdb)};
+
+  /// Localized date/time-related fields.
   DateFields get date;
 
-  /// Localized language name
+  /// Localized language names.
   Languages get languages;
 
-  /// Localized script names
+  /// Localized script names.
   Scripts get scripts;
 
-  /// Localized variant names
+  /// Localized variant names.
   Variants get variants;
 
-  /// Localized measurement units
+  /// Localized measurement units.
   Units get units;
 
-  /// Localized country name
+  /// Localized territory names.
   Territories get territories;
 
-  /// Localized timezone name
+  /// Localized timezone names.
   TimeZones get timeZones;
 ''');
 
@@ -167,9 +165,10 @@ abstract class CommonLocaleData {
     if (Keyword.keywords.containsKey(localeConstantName)) {
       localeConstantName = '\$$localeConstantName';
     }
-    code.writeln('/// Access the [CommonLocaleData] for $locale');
-    code.writeln(
-        'static const $localeConstantName = CommonLocaleData${locale.toUpperCamel()}();');
+    code.writeln('''
+  /// Access the [CommonLocaleData] for $locale');
+  static const $localeConstantName = CommonLocaleData${locale.toUpperCamel()}();
+''');
   }
 
   code.writeln('}');

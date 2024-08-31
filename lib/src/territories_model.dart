@@ -1,5 +1,8 @@
 import 'territories.dart';
 
+/// Container for localized territory names.
+///
+/// {@category Territories}
 abstract class Territories {
   Map<String, Territory> get countries;
 
