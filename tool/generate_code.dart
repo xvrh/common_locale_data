@@ -137,6 +137,9 @@ abstract class CommonLocaleData {
   /// Version of the CLDR data.
   static const String cldrVersion=${escapeDartString(versions.cldr)};
   
+  /// Variant of the CLDR data.
+  static const String cldrVariant=${escapeDartString(versions.cldrVariant)};
+
   /// Version of the Unicode data.
   static const String unicodeVersion=${escapeDartString(versions.unicode)};
   

@@ -18,6 +18,9 @@ abstract class CommonLocaleData {
   /// Version of the CLDR data.
   static const String cldrVersion = '45.0.0';
 
+  /// Variant of the CLDR data.
+  static const String cldrVariant = 'modern';
+
   /// Version of the Unicode data.
   static const String unicodeVersion = '15.1.0';
 

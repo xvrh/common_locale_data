@@ -82,6 +82,7 @@ String generateReadme(File source) {
   readme =
       readme.replaceAll('##DOWNLOAD_DATE##', version.date.toUtc().toString());
   readme = readme.replaceAll('##CLDR_VERSION##', version.cldr);
+  readme = readme.replaceAll('##CLDR_VARIANT##', version.cldrVariant);
   readme = readme.replaceAll('##UNICODE_VERSION##', version.unicode);
   readme = readme.replaceAll('##TZDB_VERSION##', version.tzdb);
 
