@@ -1,6 +1,6 @@
 
 // CLDR coverage to download 'full' or 'modern'
-const fullOrModern = 'full';
+const fullOrModern = 'modern';
 
 // support all possible locales
 const Set<String> supportedLocales = {};

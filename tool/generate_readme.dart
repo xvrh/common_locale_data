@@ -1,10 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:common_locale_data/common_locale_data.dart';
+import 'package:common_locale_data/src/data/en.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
 
+import 'utils/case_format.dart';
 import 'utils/supported_locales.dart';
 import 'utils/versions.dart';
 
@@ -44,20 +45,37 @@ String generateReadme(File source) {
 
   readme = readme.replaceAll(
       '##LOCALE_LIST##',
-      getSupportedLocales().map((locale) {
-        var a = locale.split('-');
+      ([
+                '| Locale | Language | Class | Import |',
+                '| ------ | -------- | ----- | ------ |'
+              ] +
+              getSupportedLocales().map((locale) {
+                var localeParts = locale.split('-');
+                var language =
+                    CommonLocaleDataEn().languages[localeParts.first]?.name ??
+                        '?';
 
-        var language = CommonLocaleData.en.languages[a[0]]?.name ?? '?';
-        var country = a.length > 1
-            ? CommonLocaleData.en.territories.countries[a[1]]?.name
-            : null;
+                var script = localeParts.length > 1
+                    ? CommonLocaleDataEn().scripts[localeParts[1]]?.name
+                    : null;
 
-        if (country != null) {
-          return '$locale: $language ($country)';
-        } else {
-          return '$locale: $language';
-        }
-      }).join(Platform.isWindows ? '  \r\n' : '  \n'));
+                var country = localeParts.length > 1
+                    ? CommonLocaleDataEn()
+                        .territories
+                        .countries[localeParts.last]
+                        ?.name
+                    : null;
+
+                if (country != null || script != null) {
+                  language = '$language (${[
+                    script,
+                    country
+                  ].whereType<String>().join(', ')})';
+                }
+
+                return "| <nobr>$locale</nobr> | <nobr>$language</nobr> | <nobr>CommonLocaleData${locale.toUpperCamel()}</nobr> | <nobr>import 'package:common_locale_data/${locale.toSnakeCase()}';</nobr> |";
+              }).toList())
+          .join(Platform.isWindows ? '  \r\n' : '  \n'));
 
   var version = getDataVersions();
 

@@ -63,7 +63,7 @@ void main() {
     expect(
         TimeZoneMapping.zoneToTerritory.values
             .toSet()
-            .difference(CommonLocaleData.en.territories.countries.keys.toSet()),
+            .difference(CommonLocaleDataEn().territories.countries.keys.toSet()),
         []);
   });
 }

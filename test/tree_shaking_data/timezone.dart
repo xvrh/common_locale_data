@@ -1,9 +1,11 @@
 import 'package:common_locale_data/common_locale_data.dart';
+import 'package:common_locale_data/en.dart';
+import 'package:common_locale_data/fr.dart';
 
 void main() {
-  print(CommonLocaleData.en.timeZones['Europe/Paris']);
-  print(CommonLocaleData.fr.timeZones['Europe/Paris']);
-  print(CommonLocaleData.fr.timeZones['Europe/Paris']
+  print(CommonLocaleDataEn().timeZones['Europe/Paris']);
+  print(CommonLocaleDataFr().timeZones['Europe/Paris']);
+  print(CommonLocaleDataFr().timeZones['Europe/Paris']
       ?.format(TimeZoneStyle.daylightLong, Duration()));
 }
 

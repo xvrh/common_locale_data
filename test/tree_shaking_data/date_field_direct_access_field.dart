@@ -1,10 +1,10 @@
-import 'package:common_locale_data/common_locale_data.dart';
+import 'package:common_locale_data/fr.dart';
 
 void main() {
-  print(CommonLocaleData.fr.date.second.displayName.short);
-  print(CommonLocaleData.fr.date.monday.previous);
-  print(CommonLocaleData.fr.date.day.past(3));
-  var cld = CommonLocaleData.fr;
+  print(CommonLocaleDataFr().date.second.displayName.short);
+  print(CommonLocaleDataFr().date.monday.previous);
+  print(CommonLocaleDataFr().date.day.past(3));
+  var cld = CommonLocaleDataFr();
   print(cld.date.day.past(3));
   print(cld.date.day.future.format(1));
   print(cld.date.day.future(1));

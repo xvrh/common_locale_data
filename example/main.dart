@@ -1,5 +1,9 @@
+
+import 'package:common_locale_data/ar_eg.dart';
 import 'package:common_locale_data/common_locale_data.dart';
-import 'package:common_locale_data/src/timezones.dart';
+import 'package:common_locale_data/en.dart';
+import 'package:common_locale_data/en_gb.dart';
+import 'package:common_locale_data/fr.dart';
 
 void main() {
   // To preserve tree-shaking, you should explicitly choose the language your want
@@ -7,17 +11,25 @@ void main() {
   // and discard all the others languages. It will make your deployed program smaller.
 
   // If your app support several languages, dynamically choose the language you want
-  var currentLanguage = 'en-GB';
+  // from a map you create yourself.
+  var currentLanguage = 'en';
 
-  var cld = const {
-    'en-gb': CommonLocaleData.enGB,
-    'en': CommonLocaleData.en,
-    'fr': CommonLocaleData.fr,
-    'ar-EG': CommonLocaleData.arEG,
-  }[currentLanguage]!;
+  var locales = const {
+    'en-GB': CommonLocaleDataEnGB(),
+    'en': CommonLocaleDataEn(),
+    'fr': CommonLocaleDataFr(),
+    'ar-EG': CommonLocaleDataArEG(),
+  };
+
+  var cld = locales[currentLanguage]!;
+  print(CommonLocaleData.dataDownloadDate);
+  print(CommonLocaleData.cldrVersion);
+  print(CommonLocaleData.unicodeVersion);
+  print(CommonLocaleData.tzdbVersion);
 
   print(cld.locale);
   print('');
+
   // Units
   print(cld.units.lengthMeter); // meters
   print(cld.units.lengthMeter.long(3)); // 3 meters
@@ -41,47 +53,16 @@ void main() {
   print(cld.languages['en']!.name); // English
 
   print('');
-  var zone = 'Africa/Sao_Tome';
+  var zone = cld.timeZones['America/Coral_Harbour']!;
 
-  print(cld.timeZones[zone]?.code);
+  print(zone.code);
+  print(zone.canonicalCode);
+  print(zone.iana);
 
-  print(cld.timeZones[zone]?.location);
-  print(cld.timeZones[zone]?.region);
-  print(cld.timeZones[zone]?.continent);
+  print(zone.location);
 
-  print(cld.timeZones[zone]?.long.generic);
-  print(cld.timeZones[zone]?.long.standard);
-  print(cld.timeZones[zone]?.long.daylight);
-  print(cld.timeZones[zone]?.short.generic);
-  print(cld.timeZones[zone]?.short.standard);
-  print(cld.timeZones[zone]?.short.daylight);
-
-  print(cld.timeZones
-      .format(TimeZoneFormat.gmtShort, zone, DateTime.now(), Duration()));
-  print(cld.timeZones.format(
-      TimeZoneFormat.gmtShort, zone, DateTime.now(), Duration(hours: 1)));
-  print(cld.timeZones.format(TimeZoneFormat.gmtShort, zone, DateTime.now(),
-      Duration(hours: 1, minutes: 30)));
-  print(cld.timeZones.format(TimeZoneFormat.gmtShort, zone, DateTime.now(),
-      Duration(hours: 1, minutes: 30, seconds: 15)));
-
-  print(cld.timeZones
-      .format(TimeZoneFormat.gmtLong, zone, DateTime.now(), Duration()));
-  print(cld.timeZones.format(
-      TimeZoneFormat.gmtLong, zone, DateTime.now(), Duration(hours: 1)));
-  print(cld.timeZones.format(TimeZoneFormat.gmtLong, zone, DateTime.now(),
-      Duration(hours: 1, minutes: 30)));
-  print(cld.timeZones.format(TimeZoneFormat.gmtLong, zone, DateTime.now(),
-      Duration(hours: 1, minutes: 30, seconds: 15)));
-
-  print(cld.timeZones
-      .format(TimeZoneFormat.gmtLong, zone, DateTime.now(), Duration()));
-  print(cld.timeZones.format(
-      TimeZoneFormat.gmtLong, zone, DateTime.now(), -Duration(hours: 1)));
-  print(cld.timeZones.format(TimeZoneFormat.gmtLong, zone, DateTime.now(),
-      -Duration(hours: 1, minutes: 30)));
-  print(cld.timeZones.format(TimeZoneFormat.gmtLong, zone, DateTime.now(),
-      -Duration(hours: 1, minutes: 30, seconds: 15)));
-
-  print('');
+  print(zone.format(TimeZoneStyle.genericLocation, Duration(hours: 1)));
+  print(zone.format(TimeZoneStyle.genericLong, Duration(hours: 1)));
+  print(zone.format(TimeZoneStyle.genericShort, Duration(hours: 1)));
+  print(zone.format(TimeZoneStyle.iso8601ExtendedFixed, Duration(hours: 1)));
 }

@@ -22,13 +22,21 @@ All the data and translations are stored as literal strings in the code. The API
 tree-shakeable. The final application's binaries won't include the translations for languages you
 don't use.
 
+## Compilation
+
+To improve compilation speed locales need to be imported individually.
+
+For example for English: ```import 'package:common_locale_data/en.dart';```
+Or for French: ```import 'package:common_locale_data/fr.dart';```
+
 ## Source
 
 The main CLDR data is extracted from this repository: https://github.com/unicode-org/cldr-json.
 Additional timezone related data is extracted from https://github.com/unicode-org/cldr
 and https://github.com/unicode-org/icu.
+
 The data was downloaded ##DOWNLOAD_DATE##.
-It is CLDR version ##CLDR_VERSION##, Unicode version ##UNICODE_VERSION##, TZDB version
+It uses CLDR version ##CLDR_VERSION##, Unicode version ##UNICODE_VERSION##, TZDB version
 ##TZDB_VERSION##.
 
 ## Example
@@ -41,5 +49,5 @@ import 'example/main.dart';
 
 ##LOCALE_LIST##
 
-To include more locales modify the ```tool\config.dart``` file and rerun
+To change the included locales modify the ```tool\config.dart``` file and rerun
 the ```generate_code.dart``` and ```generate_readme.dart``` files.
