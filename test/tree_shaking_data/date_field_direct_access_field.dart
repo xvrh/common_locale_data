@@ -4,7 +4,7 @@ void main() {
   print(CommonLocaleData.fr.date.second.displayName.short);
   print(CommonLocaleData.fr.date.monday.previous);
   print(CommonLocaleData.fr.date.day.past(3));
-  cld = CommonLocaleData.fr;
+  CommonLocaleData cld = CommonLocaleData.fr;
   print(cld.date.day.past(3));
   print(cld.date.day.future.format(1));
   print(cld.date.day.future(1));
