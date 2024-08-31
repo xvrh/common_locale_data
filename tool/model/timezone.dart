@@ -237,7 +237,8 @@ class TimeZones${locale.toUpperCamel()} extends TimeZones {
     var timeZone = entry.value as Map<String, dynamic>;
     if (!timeZone.containsKey('long') &&
         !timeZone.containsKey('short') &&
-        !timeZone.containsKey('exemplarCity')) {
+        !timeZone.containsKey('exemplarCity') &&
+        !timeZone.containsKey('exemplarCity-alt-secondary')) {
       for (var child in timeZone.entries) {
         generateTimeZones(
             MapEntry('${entry.key}/${child.key}', child.value), code);
