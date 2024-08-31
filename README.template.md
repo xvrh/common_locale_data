@@ -35,9 +35,10 @@ The main CLDR data is extracted from this repository: https://github.com/unicode
 Additional timezone related data is extracted from https://github.com/unicode-org/cldr
 and https://github.com/unicode-org/icu.
 
-The data was downloaded ##DOWNLOAD_DATE##.
-It uses CLDR version ##CLDR_VERSION##, Unicode version ##UNICODE_VERSION##, TZDB version
-##TZDB_VERSION##.
+- Download date ##DOWNLOAD_DATE##.
+- CLDR version ##CLDR_VERSION##, variant: ##CLDR_VARIANT##
+- Unicode version ##UNICODE_VERSION##
+- TZDB version ##TZDB_VERSION##
 
 ## Example
 

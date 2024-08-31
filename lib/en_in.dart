@@ -1,0 +1,4 @@
+/// @nodoc
+library;
+
+export 'src/data/en_in.dart' show CommonLocaleDataEnIN;
