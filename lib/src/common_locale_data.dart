@@ -4,6 +4,8 @@ import 'data/en.dart' show CommonLocaleDataEn;
 import 'data/en_gb.dart' show CommonLocaleDataEnGB;
 import 'data/de.dart' show CommonLocaleDataDe;
 import 'data/fr.dart' show CommonLocaleDataFr;
+import 'package:collection/collection.dart';
+
 import 'date_fields.dart';
 import 'languages.dart';
 import 'scripts.dart';
@@ -68,4 +70,35 @@ abstract class CommonLocaleData {
 
   /// Access the [CommonLocaleData] for fr');
   static const fr = CommonLocaleDataFr();
+
+  /// Map with all supported locale names.
+  ///
+  /// NOTE: use this with care: accessing the locales in this way dynamically
+  /// will prevent tree-shaking. This will result in ALL data in used categories
+  /// for ALL locales being included and therefore large file sizes.
+  static final Set<String> localeNames = {
+    'ar',
+    'ar-EG',
+    'en',
+    'en-GB',
+    'de',
+    'fr',
+  };
+
+  /// Map with all supported locales.
+  ///
+  /// NOTE: use this with care: accessing the locales in this way dynamically
+  /// will prevent tree-shaking. This will result in ALL data in used categories
+  /// for ALL locales being included and therefore large file sizes.
+  @Deprecated(
+      'Usage will prevent effective tree-shaking and lead to large files.')
+  static final locales =
+      CanonicalizedMap<String, String, CommonLocaleData>.from({
+    'ar': ar,
+    'ar-EG': arEG,
+    'en': en,
+    'en-GB': enGB,
+    'de': de,
+    'fr': fr,
+  }, (key) => key.toLowerCase());
 }

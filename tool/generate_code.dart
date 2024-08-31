@@ -113,6 +113,8 @@ String generateCommon() {
   var versions = getDataVersions();
 
   code.writeln('''
+import 'package:collection/collection.dart';
+
 import 'date_fields.dart';
 import 'languages.dart';
 import 'scripts.dart';
@@ -170,6 +172,42 @@ abstract class CommonLocaleData {
   static const $localeConstantName = CommonLocaleData${locale.toUpperCamel()}();
 ''');
   }
+
+  code.writeln('''
+  /// Map with all supported locale names. 
+  ///
+  /// NOTE: use this with care: accessing the locales in this way dynamically 
+  /// will prevent tree-shaking. This will result in ALL data in used categories 
+  /// for ALL locales being included and therefore large file sizes.
+  static final Set<String> localeNames = {
+''');
+  for (var locale in supportedLocales) {
+    code.writeln('${escapeDartString(locale)},');
+  }
+  code.writeln('''
+  };
+''');
+
+  code.writeln('''
+  /// Map with all supported locales. 
+  ///
+  /// NOTE: use this with care: accessing the locales in this way dynamically 
+  /// will prevent tree-shaking. This will result in ALL data in used categories 
+  /// for ALL locales being included and therefore large file sizes.
+  @Deprecated('Usage will prevent effective tree-shaking and lead to large files.')
+  static final locales =
+  CanonicalizedMap<String, String, CommonLocaleData>.from({
+''');
+  for (var locale in supportedLocales) {
+    var localeConstantName = lowerCamel(splitWords(locale));
+    if (Keyword.keywords.containsKey(localeConstantName)) {
+      localeConstantName = '\$$localeConstantName';
+    }
+    code.writeln('${escapeDartString(locale)}: $localeConstantName,');
+  }
+  code.writeln('''
+  }, (key) => key.toLowerCase());
+''');
 
   code.writeln('}');
   return '$code';
