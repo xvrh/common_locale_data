@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:pool/pool.dart';
 
+import 'config.dart';
 import 'utils/supported_locales.dart';
 
 void main() async {
@@ -31,9 +32,6 @@ void main() async {
     },
     'misc': {'characters', 'listPatterns'},
   };
-
-  // CLDR coverage to download 'full' or 'modern'
-  final fullOrModern = 'full';
 
   var dataDirectory = Directory('tool/data');
   if (dataDirectory.existsSync()) {

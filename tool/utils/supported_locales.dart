@@ -8,8 +8,8 @@ Set<String> getSupportedLocales() {
   var locales = getLocales();
   var mainLocales = locales.whereNot((str) => str.contains('-')).toSet();
 
-  if (supportedLocales.isEmpty) supportedLocales = locales;
-  if (supportedLocales.contains('main')) supportedLocales = mainLocales;
+  if (supportedLocales.isEmpty) return locales;
+  if (supportedLocales.contains('main')) return mainLocales;
 
   return supportedLocales;
 }
