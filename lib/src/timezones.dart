@@ -292,6 +292,11 @@ class TimeZone {
     );
   }
 
+  @override
+  String toString() {
+    return format(TimeZoneStyle.genericLocation, Duration());
+  }
+
   /// Format the timezone in the desired [style]; the [offset] is used for
   /// numeric formats (or if the textual formats fall back to a numeric format).
   String format(TimeZoneStyle style, Duration offset) {
@@ -312,20 +317,20 @@ class TimeZone {
         return short.daylight ??
             short.generic ??
             short.standard ??
-            _timeZones.format(style, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.daylightLong:
         return long.daylight ??
             long.generic ??
             long.standard ??
-            _timeZones.format(style, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.standardShort:
         return short.standard ??
             short.generic ??
-            _timeZones.format(style, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.standardLong:
         return long.standard ??
             long.generic ??
-            _timeZones.format(style, offset);
+            _formatGenericLocation(style, offset);
 
       case TimeZoneStyle.localizedGmtShort:
       case TimeZoneStyle.localizedGmtLong:
@@ -343,10 +348,10 @@ class TimeZone {
     }
   }
 
-  String _formatGenericLocation(TimeZoneStyle format, Duration offset) {
+  String _formatGenericLocation(TimeZoneStyle style, Duration offset) {
     var territoryCode = TimeZoneMapping.zoneToTerritory[canonicalCode];
     if (territoryCode == null) {
-      return _timeZones.format(format, offset);
+      return _timeZones.format(style, offset);
     }
 
     var zonesForTerritory = TimeZoneMapping.territoryToZones[territoryCode];
@@ -362,14 +367,32 @@ class TimeZone {
     var isPrimary =
         TimeZoneMapping.territoryToPrimaryZone.containsKey(territoryCode);
 
+    var loc = location;
     if (isSingleMetaZone || isPrimary) {
       var country = _timeZones._territories.countries[territoryCode]?.name;
       if (country != null) {
-        return _timeZones._regionFormat.replaceAll('{0}', country);
+        loc = country;
       }
     }
+
     // TODO: check if it is a real location not a placeholder.
-    return _timeZones._regionFormat.replaceAll('{0}', location);
+    switch (style) {
+      case TimeZoneStyle.genericLocation:
+      case TimeZoneStyle.genericShort:
+      case TimeZoneStyle.genericLong:
+        return _timeZones._regionFormat.replaceAll('{0}', loc);
+
+      case TimeZoneStyle.daylightShort:
+      case TimeZoneStyle.daylightLong:
+        return _timeZones._regionFormatDaylight.replaceAll('{0}', loc);
+
+      case TimeZoneStyle.standardShort:
+      case TimeZoneStyle.standardLong:
+        return _timeZones._regionFormatStandard.replaceAll('{0}', loc);
+
+      case _:
+        return _timeZones.format(style, offset);
+    }
   }
 }
 
