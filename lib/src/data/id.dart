@@ -1,15 +1,12 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+
+import '../../common_locale_data.dart';
 
 const _locale = 'id';
 
-/// Translations of [CommonLocaleData] for id
+/// Translations of [CommonLocaleData]
 class CommonLocaleDataId implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataId();
@@ -22,6 +19,14 @@ class CommonLocaleDataId implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsId._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsId._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsId._();
   @override
   Units get units => _units;
@@ -29,6 +34,10 @@ class CommonLocaleDataId implements CommonLocaleData {
   static final _territories = TerritoriesId._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesId._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesId extends Languages {
@@ -2363,6 +2372,985 @@ class LanguagesId extends Languages {
     'zza': Language(
       'zza',
       'Zaza',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsId extends Scripts {
+  ScriptsId._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'Adlam',
+    ),
+    'Afak': Script(
+      'Afak',
+      'Afaka',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'Albania Kaukasia',
+    ),
+    'Arab': Script(
+      'Arab',
+      'Arab',
+      variant: 'Arab Persia',
+    ),
+    'Aran': Script(
+      'Aran',
+      'Nastaliq',
+    ),
+    'Armi': Script(
+      'Armi',
+      'Aram Imperial',
+    ),
+    'Armn': Script(
+      'Armn',
+      'Armenia',
+    ),
+    'Avst': Script(
+      'Avst',
+      'Avesta',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'Bamum',
+    ),
+    'Bass': Script(
+      'Bass',
+      'Bassa Vah',
+    ),
+    'Batk': Script(
+      'Batk',
+      'Batak',
+    ),
+    'Beng': Script(
+      'Beng',
+      'Bengali',
+    ),
+    'Bhks': Script(
+      'Bhks',
+      'Bhaiksuki',
+    ),
+    'Blis': Script(
+      'Blis',
+      'Blissymbol',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'Bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'Brahmi',
+    ),
+    'Brai': Script(
+      'Brai',
+      'Braille',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'Bugis',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'Buhid',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'Chakma',
+    ),
+    'Cans': Script(
+      'Cans',
+      'Simbol Aborigin Kanada Kesatuan',
+    ),
+    'Cari': Script(
+      'Cari',
+      'Karia',
+    ),
+    'Cher': Script(
+      'Cher',
+      'Cherokee',
+    ),
+    'Chrs': Script(
+      'Chrs',
+      'Chorasmian',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'Cirth',
+    ),
+    'Copt': Script(
+      'Copt',
+      'Koptik',
+    ),
+    'Cpmn': Script(
+      'Cpmn',
+      'Cypro-Minoan',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'Siprus',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'Sirilik',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'Gereja Slavonia Sirilik Lama',
+    ),
+    'Deva': Script(
+      'Deva',
+      'Dewanagari',
+    ),
+    'Diak': Script(
+      'Diak',
+      'Dives Akuru',
+    ),
+    'Dogr': Script(
+      'Dogr',
+      'Dogra',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'Deseret',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'Stenografi Duployan',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'Demotik Mesir',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'Hieratik Mesir',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'Hieroglip Mesir',
+    ),
+    'Elba': Script(
+      'Elba',
+      'Elbasan',
+    ),
+    'Elym': Script(
+      'Elym',
+      'Elymaic',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'Etiopia',
+    ),
+    'Geok': Script(
+      'Geok',
+      'Georgian Khutsuri',
+    ),
+    'Geor': Script(
+      'Geor',
+      'Georgia',
+    ),
+    'Glag': Script(
+      'Glag',
+      'Glagolitic',
+    ),
+    'Gong': Script(
+      'Gong',
+      'Gunjala Gondi',
+    ),
+    'Gonm': Script(
+      'Gonm',
+      'Masaram Gondi',
+    ),
+    'Goth': Script(
+      'Goth',
+      'Gothic',
+    ),
+    'Gran': Script(
+      'Gran',
+      'Grantha',
+    ),
+    'Grek': Script(
+      'Grek',
+      'Yunani',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'Gujarat',
+    ),
+    'Guru': Script(
+      'Guru',
+      'Gurmukhi',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'Han dengan Bopomofo',
+    ),
+    'Hang': Script(
+      'Hang',
+      'Hangul',
+    ),
+    'Hani': Script(
+      'Hani',
+      'Han',
+    ),
+    'Hano': Script(
+      'Hano',
+      'Hanunoo',
+    ),
+    'Hans': Script(
+      'Hans',
+      'Sederhana',
+      standAlone: 'Han Sederhana',
+    ),
+    'Hant': Script(
+      'Hant',
+      'Tradisional',
+      standAlone: 'Han Tradisional',
+    ),
+    'Hatr': Script(
+      'Hatr',
+      'Hatran',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'Ibrani',
+    ),
+    'Hira': Script(
+      'Hira',
+      'Hiragana',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'Hieroglif Anatolia',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'Pahawh Hmong',
+    ),
+    'Hmnp': Script(
+      'Hmnp',
+      'Nyiakeng Puachue Hmong',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'Katakana atau Hiragana',
+    ),
+    'Hung': Script(
+      'Hung',
+      'Hungaria Kuno',
+    ),
+    'Inds': Script(
+      'Inds',
+      'Indus',
+    ),
+    'Ital': Script(
+      'Ital',
+      'Italia Lama',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'Jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'Jawa',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'Jepang',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      'Jurchen',
+    ),
+    'Kali': Script(
+      'Kali',
+      'Kayah Li',
+    ),
+    'Kana': Script(
+      'Kana',
+      'Katakana',
+    ),
+    'Khar': Script(
+      'Khar',
+      'Kharoshthi',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'Khmer',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'Khojki',
+    ),
+    'Kits': Script(
+      'Kits',
+      'Skrip kecil Khitan',
+    ),
+    'Knda': Script(
+      'Knda',
+      'Kannada',
+    ),
+    'Kore': Script(
+      'Kore',
+      'Korea',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      'Kpelle',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'Kaithi',
+    ),
+    'Lana': Script(
+      'Lana',
+      'Lanna',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'Laos',
+    ),
+    'Latf': Script(
+      'Latf',
+      'Latin Fraktur',
+    ),
+    'Latg': Script(
+      'Latg',
+      'Latin Gaelik',
+    ),
+    'Latn': Script(
+      'Latn',
+      'Latin',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'Lepcha',
+    ),
+    'Limb': Script(
+      'Limb',
+      'Limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'Linear A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'Linear B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'Fraser',
+    ),
+    'Loma': Script(
+      'Loma',
+      'Loma',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'Lycia',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'Lydia',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      'Mahajani',
+    ),
+    'Maka': Script(
+      'Maka',
+      'Makassar',
+    ),
+    'Mand': Script(
+      'Mand',
+      'Mandae',
+    ),
+    'Mani': Script(
+      'Mani',
+      'Manikhei',
+    ),
+    'Marc': Script(
+      'Marc',
+      'Marchen',
+    ),
+    'Maya': Script(
+      'Maya',
+      'Hieroglip Maya',
+    ),
+    'Medf': Script(
+      'Medf',
+      'Medefaidrin',
+    ),
+    'Mend': Script(
+      'Mend',
+      'Mende',
+    ),
+    'Merc': Script(
+      'Merc',
+      'Kursif Meroitik',
+    ),
+    'Mero': Script(
+      'Mero',
+      'Meroitik',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'Malayalam',
+    ),
+    'Mong': Script(
+      'Mong',
+      'Mongolia',
+    ),
+    'Moon': Script(
+      'Moon',
+      'Moon',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'Mro',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'Meitei Mayek',
+    ),
+    'Mult': Script(
+      'Mult',
+      'Multani',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'Myanmar',
+    ),
+    'Nand': Script(
+      'Nand',
+      'Nandinagari',
+    ),
+    'Narb': Script(
+      'Narb',
+      'Arab Utara Kuno',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'Nabataea',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      'Naxi Geba',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'N’Ko',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'Nushu',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'Ogham',
+    ),
+    'Olck': Script(
+      'Olck',
+      'Chiki Lama',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'Orkhon',
+    ),
+    'Orya': Script(
+      'Orya',
+      'Oriya',
+    ),
+    'Osge': Script(
+      'Osge',
+      'Osage',
+    ),
+    'Osma': Script(
+      'Osma',
+      'Osmanya',
+    ),
+    'Ougr': Script(
+      'Ougr',
+      'Uyghur Lama',
+    ),
+    'Palm': Script(
+      'Palm',
+      'Palmira',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'Pau Cin Hau',
+    ),
+    'Perm': Script(
+      'Perm',
+      'Permik Kuno',
+    ),
+    'Phag': Script(
+      'Phag',
+      'Phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'Pahlevi',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'Mazmur Pahlevi',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'Kitab Pahlevi',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'Phoenix',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Fonetik Pollard',
+    ),
+    'Prti': Script(
+      'Prti',
+      'Prasasti Parthia',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'Zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'Rejang',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'Hanifi',
+    ),
+    'Roro': Script(
+      'Roro',
+      'Rongorongo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'Runik',
+    ),
+    'Samr': Script(
+      'Samr',
+      'Samaria',
+    ),
+    'Sara': Script(
+      'Sara',
+      'Sarati',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      'Arab Selatan Kuno',
+    ),
+    'Saur': Script(
+      'Saur',
+      'Saurashtra',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'Tulisan Isyarat',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'Shavia',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'Sharada',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      'Siddham',
+    ),
+    'Sind': Script(
+      'Sind',
+      'Khudawadi',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'Sinhala',
+    ),
+    'Sogd': Script(
+      'Sogd',
+      'Sogdian',
+    ),
+    'Sogo': Script(
+      'Sogo',
+      'Sogdian Lama',
+    ),
+    'Sora': Script(
+      'Sora',
+      'Sora Sompeng',
+    ),
+    'Soyo': Script(
+      'Soyo',
+      'Soyombo',
+    ),
+    'Sund': Script(
+      'Sund',
+      'Sunda',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'Syloti Nagri',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'Suriah',
+    ),
+    'Syre': Script(
+      'Syre',
+      'Suriah Estrangelo',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'Suriah Barat',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'Suriah Timur',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'Tagbanwa',
+    ),
+    'Takr': Script(
+      'Takr',
+      'Takri',
+    ),
+    'Tale': Script(
+      'Tale',
+      'Tai Le',
+    ),
+    'Talu': Script(
+      'Talu',
+      'Tai Lue Baru',
+    ),
+    'Taml': Script(
+      'Taml',
+      'Tamil',
+    ),
+    'Tang': Script(
+      'Tang',
+      'Tangut',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'Tai Viet',
+    ),
+    'Telu': Script(
+      'Telu',
+      'Telugu',
+    ),
+    'Teng': Script(
+      'Teng',
+      'Tenghwar',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'Tifinagh',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'Tagalog',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'Thaana',
+    ),
+    'Thai': Script(
+      'Thai',
+      'Thai',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'Tibet',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'Tirhuta',
+    ),
+    'Tnsa': Script(
+      'Tnsa',
+      'Tangsa',
+    ),
+    'Toto': Script(
+      'Toto',
+      'Toto (txo)',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'Ugaritik',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'Vai',
+    ),
+    'Visp': Script(
+      'Visp',
+      'Ucapan Terlihat',
+    ),
+    'Vith': Script(
+      'Vith',
+      'Vithkuqi',
+    ),
+    'Wara': Script(
+      'Wara',
+      'Varang Kshiti',
+    ),
+    'Wcho': Script(
+      'Wcho',
+      'Wancho',
+    ),
+    'Wole': Script(
+      'Wole',
+      'Woleai',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'Persia Kuno',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'Cuneiform Sumero-Akkadia',
+    ),
+    'Yezi': Script(
+      'Yezi',
+      'Yezidi',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'Yi',
+    ),
+    'Zanb': Script(
+      'Zanb',
+      'Zanabazar Square',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'Warisan',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'Notasi Matematika',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'Emoji',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'Simbol',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'Tidak Tertulis',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'Umum',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'Skrip Tidak Dikenal',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsId extends Variants {
+  VariantsId._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'Ortografi Jerman Tradisional',
+    ),
+    '1994': Variant(
+      '1994',
+      'Ortografi Resia Standar',
+    ),
+    '1996': Variant(
+      '1996',
+      'Ortografi Jerman 1996',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'Prancis Pertengahan Akhir sampai 1606',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      'Prancis Modern Awal',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      'Akademik',
+    ),
+    'ABL1943': Variant(
+      'ABL1943',
+      'Formulasi ortografi 1943',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      'ALA-LC Latin, edisi 1997',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'Dialek Aluku',
+    ),
+    'AO1990': Variant(
+      'AO1990',
+      'Perjanjian Ortografi Bahasa Portugis 1990',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'Armenia Timur',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'Armenia Barat',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'Alfabet Latin Turki Terpadu',
+    ),
+    'BALANKA': Variant(
+      'BALANKA',
+      'Dialek Balanka Anii',
+    ),
+    'BARLA': Variant(
+      'BARLA',
+      'Kelompok dialek Barlavento Kabuverdianu',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'Dialek San Giorgio/Bila',
+    ),
+    'BOHORIC': Variant(
+      'BOHORIC',
+      'Alfabet Bohorič',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'Boontling',
+    ),
+    'COLB1945': Variant(
+      'COLB1945',
+      'Konvensi Ortografi Portugis-Brasil 1945',
+    ),
+    'DAJNKO': Variant(
+      'DAJNKO',
+      'Alfabet Dajnko',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'Fonetik IPA',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'Fonetik UPA',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      'Hepburn Latin',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'Ortografi Umum',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'Dialek Lipovaz Resia',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'Monoton',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'Dialek Ndyuka',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'Dialek Natiso',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Dialek Gniva/Njiva',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'Dialek Oseacco/Osojane',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'Dialek Pamaka',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'Pinyin Latin',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'Politon',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Komputer',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'Ortografi Revisi',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'Resia',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'Saho',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'Inggris Standar Skotlandia',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'Skaus',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'Dialek Stolvizza/Solbica',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'Ortografi Taraskievica',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'Ortografi Terpadu',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      'Ortografi Revisi Terpadu',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'Valencia',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Wade-Giles Latin',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -8676,6 +9664,1456 @@ class TerritoriesId implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabwe',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesId extends TimeZones {
+  TimeZonesId._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH.mm;-HH.mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'Waktu {0}',
+            regionFormatDaylight: 'Waktu Musim Panas {0}',
+            regionFormatStandard: 'Waktu Standar {0}',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Anguilla': TimeZoneNames(
+      city: 'Anguila',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      city: 'Asunción',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      city: 'Bahia Banderas',
+    ),
+    'America/Cancun': TimeZoneNames(
+      city: 'Cancun',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      city: 'Ciudad Juarez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      city: 'Atikokan',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      city: 'Kosta Rika',
+    ),
+    'America/Curacao': TimeZoneNames(
+      city: 'Curaçao',
+    ),
+    'America/Dominica': TimeZoneNames(
+      city: 'Dominika',
+    ),
+    'America/Godthab': TimeZoneNames(
+      city: 'Nuuk',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      city: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      city: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      city: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      city: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      city: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      city: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      city: 'Vevay, Indiana',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      city: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      city: 'Lower Prince’s Quarter',
+    ),
+    'America/Martinique': TimeZoneNames(
+      city: 'Martinik',
+    ),
+    'America/Merida': TimeZoneNames(
+      city: 'Merida',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      city: 'Beulah, Dakota Utara',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      city: 'New Salem, Dakota Utara',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      city: 'Center, Dakota Utara',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      city: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      city: 'St. Barthélemy',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      city: 'St. John’s',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      city: 'St. Kitts',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      city: 'St. Lucia',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      city: 'St. Thomas',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      city: 'St. Vincent',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      city: 'Tanjung Verde',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      city: 'Faroe',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      city: 'Georgia Selatan',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      city: 'St. Helena',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      city: 'Athena',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      city: 'Beograd',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      city: 'Kishinev',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      city: 'Kopenhagen',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Waktu Standar Irlandia',
+      ),
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      city: 'Pulau Man',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      city: 'Kiev',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Waktu Musim Panas Inggris',
+      ),
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      city: 'Luksemburg',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      city: 'Monako',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      city: 'Moskwa',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      city: 'Praha',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      city: 'Roma',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      city: 'Vatikan',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      city: 'Wina',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      city: 'Warsawa',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      city: 'Aljir',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      city: 'Asmara',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      city: 'Kairo',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      city: 'São Tomé',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      city: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      city: 'Aktobe',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      city: 'Kolkata',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      city: 'Kolombo',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      city: 'Damaskus',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      city: 'Yerusalem',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      city: 'Kathmandu',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      city: 'Makau',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      city: 'Muskat',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      city: 'Nikosia',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      city: 'Kostanay',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      city: 'Rangoon',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      city: 'Ho Chi Minh',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      city: 'Singapura',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      city: 'Teheran',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      city: 'Komoro',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      city: 'Maladewa',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      city: 'Réunion',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      city: 'Enderbury',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      city: 'Guadalkanal',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      city: 'Honolulu',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      city: 'Pohnpei',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      city: 'Chuuk',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      city: 'Dumont d’Urville',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'Waktu Universal Terkoordinasi',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      city: 'Kota Tidak Dikenal',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'Waktu Acre',
+        standard: 'Waktu Standar Acre',
+        daylight: 'Waktu Musim Panas Acre',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'Waktu Afganistan',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'Waktu Afrika Tengah',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'Waktu Afrika Timur',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'Waktu Standar Afrika Selatan',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Waktu Afrika Barat',
+        standard: 'Waktu Standar Afrika Barat',
+        daylight: 'Waktu Musim Panas Afrika Barat',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'Waktu Alaska',
+        standard: 'Waktu Standar Alaska',
+        daylight: 'Waktu Musim Panas Alaska',
+      ),
+      short: TimeZoneName(
+        generic: 'AKT',
+        standard: 'AKST',
+        daylight: 'AKDT',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'Waktu Almaty',
+        standard: 'Waktu Standar Almaty',
+        daylight: 'Waktu Musim Panas Almaty',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'Waktu Amazon',
+        standard: 'Waktu Standar Amazon',
+        daylight: 'Waktu Musim Panas Amazon',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'Waktu Tengah',
+        standard: 'Waktu Standar Tengah',
+        daylight: 'Waktu Musim Panas Tengah',
+      ),
+      short: TimeZoneName(
+        generic: 'CT',
+        standard: 'CST',
+        daylight: 'CDT',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Waktu Timur',
+        standard: 'Waktu Standar Timur',
+        daylight: 'Waktu Musim Panas Timur',
+      ),
+      short: TimeZoneName(
+        generic: 'ET',
+        standard: 'EST',
+        daylight: 'EDT',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Waktu Pegunungan',
+        standard: 'Waktu Standar Pegunungan',
+        daylight: 'Waktu Musim Panas Pegunungan',
+      ),
+      short: TimeZoneName(
+        generic: 'MT',
+        standard: 'MST',
+        daylight: 'MDT',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Waktu Pasifik',
+        standard: 'Waktu Standar Pasifik',
+        daylight: 'Waktu Musim Panas Pasifik',
+      ),
+      short: TimeZoneName(
+        generic: 'PT',
+        standard: 'PST',
+        daylight: 'PDT',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'Waktu Anadyr',
+        standard: 'Waktu Standar Anadyr',
+        daylight: 'Waktu Musim Panas Anadyr',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'Waktu Apia',
+        standard: 'Waktu Standar Apia',
+        daylight: 'Waktu Musim Panas Apia',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'Waktu Aqtau',
+        standard: 'Waktu Standar Aqtau',
+        daylight: 'Waktu Musim Panas Aqtau',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Waktu Aqtobe',
+        standard: 'Waktu Standar Aqtobe',
+        daylight: 'Waktu Musim Panas Aqtobe',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'Waktu Arab',
+        standard: 'Waktu Standar Arab',
+        daylight: 'Waktu Musim Panas Arab',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'Waktu Argentina',
+        standard: 'Waktu Standar Argentina',
+        daylight: 'Waktu Musim Panas Argentina',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Waktu Argentina Bagian Barat',
+        standard: 'Waktu Standar Argentina Bagian Barat',
+        daylight: 'Waktu Musim Panas Argentina Bagian Barat',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'Waktu Armenia',
+        standard: 'Waktu Standar Armenia',
+        daylight: 'Waktu Musim Panas Armenia',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'Waktu Atlantik',
+        standard: 'Waktu Standar Atlantik',
+        daylight: 'Waktu Musim Panas Atlantik',
+      ),
+      short: TimeZoneName(
+        generic: 'AT',
+        standard: 'AST',
+        daylight: 'ADT',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Waktu Tengah Australia',
+        standard: 'Waktu Standar Tengah Australia',
+        daylight: 'Waktu Musim Panas Tengah Australia',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Waktu Barat Tengah Australia',
+        standard: 'Waktu Standar Barat Tengah Australia',
+        daylight: 'Waktu Musim Panas Barat Tengah Australia',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Waktu Timur Australia',
+        standard: 'Waktu Standar Timur Australia',
+        daylight: 'Waktu Musim Panas Timur Australia',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Waktu Barat Australia',
+        standard: 'Waktu Standar Barat Australia',
+        daylight: 'Waktu Musim Panas Barat Australia',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Waktu Azerbaijan',
+        standard: 'Waktu Standar Azerbaijan',
+        daylight: 'Waktu Musim Panas Azerbaijan',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'Waktu Azores',
+        standard: 'Waktu Standar Azores',
+        daylight: 'Waktu Musim Panas Azores',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Waktu Bangladesh',
+        standard: 'Waktu Standar Bangladesh',
+        daylight: 'Waktu Musim Panas Bangladesh',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'Waktu Bhutan',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'Waktu Bolivia',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'Waktu Brasil',
+        standard: 'Waktu Standar Brasil',
+        daylight: 'Waktu Musim Panas Brasil',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'Waktu Brunei Darussalam',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Waktu Tanjung Verde',
+        standard: 'Waktu Standar Tanjung Verde',
+        daylight: 'Waktu Musim Panas Tanjung Verde',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'Waktu Casey',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'Waktu Standar Chamorro',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'Waktu Chatham',
+        standard: 'Waktu Standar Chatham',
+        daylight: 'Waktu Musim Panas Chatham',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'Waktu Cile',
+        standard: 'Waktu Standar Cile',
+        daylight: 'Waktu Musim Panas Cile',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'Waktu Tiongkok',
+        standard: 'Waktu Standar Tiongkok',
+        daylight: 'Waktu Musim Panas Tiongkok',
+      ),
+    ),
+    'Choibalsan': MetaZone(
+      code: 'Choibalsan',
+      long: TimeZoneName(
+        generic: 'Waktu Choibalsan',
+        standard: 'Waktu Standar Choibalsan',
+        daylight: 'Waktu Musim Panas Choibalsan',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'Waktu Pulau Natal',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'Waktu Kepulauan Cocos',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'Waktu Kolombia',
+        standard: 'Waktu Standar Kolombia',
+        daylight: 'Waktu Musim Panas Kolombia',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'Waktu Kep. Cook',
+        standard: 'Waktu Standar Kep. Cook',
+        daylight: 'Waktu Tengah Musim Panas Kep. Cook',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'Waktu Kuba',
+        standard: 'Waktu Standar Kuba',
+        daylight: 'Waktu Musim Panas Kuba',
+      ),
+      short: TimeZoneName(
+        generic: 'CT (Kuba)',
+        standard: 'CST (Kuba)',
+        daylight: 'CDT (Kuba)',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'Waktu Davis',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'Waktu Dumont-d’Urville',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'Waktu Timor Leste',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'Waktu Pulau Paskah',
+        standard: 'Waktu Standar Pulau Paskah',
+        daylight: 'Waktu Musim Panas Pulau Paskah',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'Waktu Ekuador',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Waktu Eropa Tengah',
+        standard: 'Waktu Standar Eropa Tengah',
+        daylight: 'Waktu Musim Panas Eropa Tengah',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Waktu Eropa Timur',
+        standard: 'Waktu Standar Eropa Timur',
+        daylight: 'Waktu Musim Panas Eropa Timur',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'Waktu Eropa Timur Jauh',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Waktu Eropa Barat',
+        standard: 'Waktu Standar Eropa Barat',
+        daylight: 'Waktu Musim Panas Eropa Barat',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'Waktu Kepulauan Falkland',
+        standard: 'Waktu Standar Kepulauan Falkland',
+        daylight: 'Waktu Musim Panas Kepulauan Falkland',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'Waktu Fiji',
+        standard: 'Waktu Standar Fiji',
+        daylight: 'Waktu Musim Panas Fiji',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'Waktu Guyana Prancis',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'Waktu Wilayah Selatan dan Antarktika Prancis',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'Waktu Galapagos',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'Waktu Gambier',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'Waktu Georgia',
+        standard: 'Waktu Standar Georgia',
+        daylight: 'Waktu Musim Panas Georgia',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'Waktu Kep. Gilbert',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'Greenwich Mean Time',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Waktu Greenland Timur',
+        standard: 'Waktu Standar Greenland Timur',
+        daylight: 'Waktu Musim Panas Greenland Timur',
+      ),
+      short: TimeZoneName(
+        generic: 'EGT',
+        standard: 'EGST',
+        daylight: 'EGDT',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Waktu Greenland Barat',
+        standard: 'Waktu Standar Greenland Barat',
+        daylight: 'Waktu Musim Panas Greenland Barat',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'Waktu Guam',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'Waktu Standar Teluk',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'Waktu Guyana',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Waktu Hawaii-Aleutian',
+        standard: 'Waktu Standar Hawaii-Aleutian',
+        daylight: 'Waktu Musim Panas Hawaii-Aleutian',
+      ),
+      short: TimeZoneName(
+        generic: 'HAT',
+        standard: 'HAST',
+        daylight: 'HADT',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Waktu Hong Kong',
+        standard: 'Waktu Standar Hong Kong',
+        daylight: 'Waktu Musim Panas Hong Kong',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'Waktu Hovd',
+        standard: 'Waktu Standar Hovd',
+        daylight: 'Waktu Musim Panas Hovd',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'Waktu India',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'Waktu Samudera Hindia',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'Waktu Indochina',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'Waktu Indonesia Tengah',
+      ),
+      short: TimeZoneName(
+        standard: 'WITA',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'Waktu Indonesia Timur',
+      ),
+      short: TimeZoneName(
+        standard: 'WIT',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'Waktu Indonesia Barat',
+      ),
+      short: TimeZoneName(
+        standard: 'WIB',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'Waktu Iran',
+        standard: 'Waktu Standar Iran',
+        daylight: 'Waktu Musim Panas Iran',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Waktu Irkutsk',
+        standard: 'Waktu Standar Irkutsk',
+        daylight: 'Waktu Musim Panas Irkutsk',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'Waktu Israel',
+        standard: 'Waktu Standar Israel',
+        daylight: 'Waktu Musim Panas Israel',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'Waktu Jepang',
+        standard: 'Waktu Standar Jepang',
+        daylight: 'Waktu Musim Panas Jepang',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Waktu Petropavlovsk-Kamchatsky',
+        standard: 'Waktu Standar Petropavlovsk-Kamchatsky',
+        daylight: 'Waktu Musim Panas Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'Waktu Kazakhstan Timur',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'Waktu Kazakhstan Barat',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'Waktu Korea',
+        standard: 'Waktu Standar Korea',
+        daylight: 'Waktu Musim Panas Korea',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'Waktu Kosrae',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Waktu Krasnoyarsk',
+        standard: 'Waktu Standar Krasnoyarsk',
+        daylight: 'Waktu Musim Panas Krasnoyarsk',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'Waktu Kirgizstan',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'Waktu Lanka',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'Waktu Kep. Line',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Waktu Lord Howe',
+        standard: 'Waktu Standar Lord Howe',
+        daylight: 'Waktu Musim Panas Lord Howe',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'Waktu Makau',
+        standard: 'Waktu Standar Makau',
+        daylight: 'Waktu Musim Panas Makau',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'Waktu Magadan',
+        standard: 'Waktu Standar Magadan',
+        daylight: 'Waktu Musim Panas Magadan',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'Waktu Malaysia',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'Waktu Maladewa',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'Waktu Marquesas',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'Waktu Kep. Marshall',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'Waktu Mauritius',
+        standard: 'Waktu Standar Mauritius',
+        daylight: 'Waktu Musim Panas Mauritius',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'Waktu Mawson',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Waktu Pasifik Meksiko',
+        standard: 'Waktu Standar Pasifik Meksiko',
+        daylight: 'Waktu Musim Panas Pasifik Meksiko',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'Waktu Ulan Bator',
+        standard: 'Waktu Standar Ulan Bator',
+        daylight: 'Waktu Musim Panas Ulan Bator',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'Waktu Moskow',
+        standard: 'Waktu Standar Moskow',
+        daylight: 'Waktu Musim Panas Moskow',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'Waktu Myanmar',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'Waktu Nauru',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'Waktu Nepal',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Waktu Kaledonia Baru',
+        standard: 'Waktu Standar Kaledonia Baru',
+        daylight: 'Waktu Musim Panas Kaledonia Baru',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Waktu Selandia Baru',
+        standard: 'Waktu Standar Selandia Baru',
+        daylight: 'Waktu Musim Panas Selandia Baru',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Waktu Newfoundland',
+        standard: 'Waktu Standar Newfoundland',
+        daylight: 'Waktu Musim Panas Newfoundland',
+      ),
+      short: TimeZoneName(
+        generic: 'NT',
+        standard: 'NST',
+        daylight: 'NDT',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'Waktu Niue',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'Waktu Pulau Norfolk',
+        standard: 'Waktu Standar Pulau Norfolk',
+        daylight: 'Waktu Musim Panas Pulau Norfolk',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'Waktu Fernando de Noronha',
+        standard: 'Waktu Standar Fernando de Noronha',
+        daylight: 'Waktu Musim Panas Fernando de Noronha',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'Waktu Kep. Mariana Utara',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Waktu Novosibirsk',
+        standard: 'Waktu Standar Novosibirsk',
+        daylight: 'Waktu Musim Panas Novosibirsk',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'Waktu Omsk',
+        standard: 'Waktu Standar Omsk',
+        daylight: 'Waktu Musim Panas Omsk',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'Waktu Pakistan',
+        standard: 'Waktu Standar Pakistan',
+        daylight: 'Waktu Musim Panas Pakistan',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'Waktu Palau',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'Waktu Papua Nugini',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'Waktu Paraguay',
+        standard: 'Waktu Standar Paraguay',
+        daylight: 'Waktu Musim Panas Paraguay',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'Waktu Peru',
+        standard: 'Waktu Standar Peru',
+        daylight: 'Waktu Musim Panas Peru',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'Waktu Filipina',
+        standard: 'Waktu Standar Filipina',
+        daylight: 'Waktu Musim Panas Filipina',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'Waktu Kepulauan Phoenix',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Waktu Saint Pierre dan Miquelon',
+        standard: 'Waktu Standar Saint Pierre dan Miquelon',
+        daylight: 'Waktu Musim Panas Saint Pierre dan Miquelon',
+      ),
+      short: TimeZoneName(
+        generic: 'PMT',
+        standard: 'PMST',
+        daylight: 'PMDT',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'Waktu Pitcairn',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'Waktu Ponape',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'Waktu Pyongyang',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Waktu Qyzylorda',
+        standard: 'Waktu Standar Qyzylorda',
+        daylight: 'Waktu Musim Panas Qyzylorda',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'Waktu Reunion',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'Waktu Rothera',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Waktu Sakhalin',
+        standard: 'Waktu Standar Sakhalin',
+        daylight: 'Waktu Musim Panas Sakhalin',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'Waktu Samara',
+        standard: 'Waktu Standar Samara',
+        daylight: 'Waktu Musim Panas Samara',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'Waktu Samoa',
+        standard: 'Waktu Standar Samoa',
+        daylight: 'Waktu Musim Panas Samoa',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'Waktu Seychelles',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'Waktu Standar Singapura',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'Waktu Kepulauan Solomon',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'Waktu Georgia Selatan',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'Waktu Suriname',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'Waktu Syowa',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'Waktu Tahiti',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'Waktu Taipei',
+        standard: 'Waktu Standar Taipei',
+        daylight: 'Waktu Musim Panas Taipei',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'Waktu Tajikistan',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'Waktu Tokelau',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'Waktu Tonga',
+        standard: 'Waktu Standar Tonga',
+        daylight: 'Waktu Musim Panas Tonga',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'Waktu Chuuk',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Waktu Turkmenistan',
+        standard: 'Waktu Standar Turkmenistan',
+        daylight: 'Waktu Musim Panas Turkmenistan',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'Waktu Tuvalu',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'Waktu Uruguay',
+        standard: 'Waktu Standar Uruguay',
+        daylight: 'Waktu Musim Panas Uruguay',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Waktu Uzbekistan',
+        standard: 'Waktu Standar Uzbekistan',
+        daylight: 'Waktu Musim Panas Uzbekistan',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Waktu Vanuatu',
+        standard: 'Waktu Standar Vanuatu',
+        daylight: 'Waktu Musim Panas Vanuatu',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'Waktu Venezuela',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Waktu Vladivostok',
+        standard: 'Waktu Standar Vladivostok',
+        daylight: 'Waktu Musim Panas Vladivostok',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'Waktu Volgograd',
+        standard: 'Waktu Standar Volgograd',
+        daylight: 'Waktu Musim Panas Volgograd',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'Waktu Vostok',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'Waktu Kepulauan Wake',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'Waktu Wallis dan Futuna',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Waktu Yakutsk',
+        standard: 'Waktu Standar Yakutsk',
+        daylight: 'Waktu Musim Panas Yakutsk',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Waktu Yekaterinburg',
+        standard: 'Waktu Standar Yekaterinburg',
+        daylight: 'Waktu Musim Panas Yekaterinburg',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'Waktu Yukon',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

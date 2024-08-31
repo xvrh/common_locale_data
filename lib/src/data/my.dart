@@ -1,15 +1,12 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+
+import '../../common_locale_data.dart';
 
 const _locale = 'my';
 
-/// Translations of [CommonLocaleData] for my
+/// Translations of [CommonLocaleData]
 class CommonLocaleDataMy implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataMy();
@@ -22,6 +19,14 @@ class CommonLocaleDataMy implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsMy._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsMy._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsMy._();
   @override
   Units get units => _units;
@@ -29,6 +34,10 @@ class CommonLocaleDataMy implements CommonLocaleData {
   static final _territories = TerritoriesMy._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesMy._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesMy extends Languages {
@@ -1878,6 +1887,328 @@ class LanguagesMy extends Languages {
     'zza': Language(
       'zza',
       'ဇာဇာ',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsMy extends Scripts {
+  ScriptsMy._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'အက်ဒ်လမ်',
+    ),
+    'Arab': Script(
+      'Arab',
+      'အာရေဗျ',
+    ),
+    'Aran': Script(
+      'Aran',
+      'နက်စ်တာလိခ်',
+    ),
+    'Armn': Script(
+      'Armn',
+      'အာမေးနီးယား',
+    ),
+    'Beng': Script(
+      'Beng',
+      'ဘင်္ဂါလီ',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'ဘိုပို',
+    ),
+    'Brah': Script(
+      'Brah',
+      'ဗွဟ်မမီ',
+    ),
+    'Brai': Script(
+      'Brai',
+      'ဘရေ',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'ချပ်ခ်မာ',
+    ),
+    'Cans': Script(
+      'Cans',
+      'ကင်န်စ်',
+    ),
+    'Cher': Script(
+      'Cher',
+      'ချာရိုကီး',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'စစ်ရိလစ်',
+    ),
+    'Deva': Script(
+      'Deva',
+      'ဒီဗနာဂရီ',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'အီသီယိုးပီးယား',
+    ),
+    'Geor': Script(
+      'Geor',
+      'ဂျော်ဂျီယာ',
+    ),
+    'Grek': Script(
+      'Grek',
+      'ဂရိ',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'ဂုဂျာရသီ',
+    ),
+    'Guru': Script(
+      'Guru',
+      'ဂူရူ',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'ဟန်ဘ်',
+    ),
+    'Hang': Script(
+      'Hang',
+      'ဟန်ဂူးလ်',
+    ),
+    'Hani': Script(
+      'Hani',
+      'ဟန်',
+    ),
+    'Hans': Script(
+      'Hans',
+      'ရိုးရှင်း',
+      standAlone: 'ဟန် ရိုးရှင်း',
+    ),
+    'Hant': Script(
+      'Hant',
+      'ရိုးရာ',
+      standAlone: 'ဟန် ရိုးရာ',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'ဟီဗရူး',
+    ),
+    'Hira': Script(
+      'Hira',
+      'ဟီရဂန',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'ဂျပန် အက္ခရာ',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'ဂျမို',
+    ),
+    'Java': Script(
+      'Java',
+      'ဂျာဗားနီးစ်',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'ဂျပန်',
+    ),
+    'Kali': Script(
+      'Kali',
+      'ကယားလီ',
+    ),
+    'Kana': Script(
+      'Kana',
+      'ခတခန',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'ခမာ',
+    ),
+    'Knda': Script(
+      'Knda',
+      'ခန်နာဒါ',
+    ),
+    'Kore': Script(
+      'Kore',
+      'ကိုရီးယား',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'လာအို',
+    ),
+    'Latn': Script(
+      'Latn',
+      'လက်တင်',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'မလေယာလမ်',
+    ),
+    'Mong': Script(
+      'Mong',
+      'မွန်ဂိုလီးယား',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'မေတဲမာယက်',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'မြန်မာ',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'အွန်ကို',
+    ),
+    'Olck': Script(
+      'Olck',
+      'အိုလ်ချီကီ',
+    ),
+    'Orya': Script(
+      'Orya',
+      'အိုရာ',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'ဟာနီဖီ',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'ဆင်ဟာလ',
+    ),
+    'Sund': Script(
+      'Sund',
+      'ဆူဒန်',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'ဆီရီရက်ခ်',
+    ),
+    'Tale': Script(
+      'Tale',
+      'တိုင်လီ',
+    ),
+    'Taml': Script(
+      'Taml',
+      'တမီးလ်',
+    ),
+    'Telu': Script(
+      'Telu',
+      'တီလု',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'တီဖီနော',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'တဂလော့ဂ်',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'သာအ်',
+    ),
+    'Thai': Script(
+      'Thai',
+      'ထိုင်း',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'တိဘက်',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'ဗိုင်း',
+    ),
+    'Visp': Script(
+      'Visp',
+      'မြင်နိုင်သော စကား',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'ပါရှန် အဟောင်း',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'ရီ',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'ဂဏန်းသင်္ချာ',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'အီမိုဂျီ',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'သင်္ကေတ',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'ထုံးတမ်းသဖွယ်လိုက်နာလျက်ရှိသော',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'အများနှင့်သက်ဆိုင်သော',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'မသိ သို့မဟုတ် မရှိသော စကားလုံး',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsMy extends Variants {
+  VariantsMy._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'ရှေးရိုးစဉ်လာ ဂျာမန် ရေးထုံး',
+    ),
+    '1996': Variant(
+      '1996',
+      '၁၉၉၆ ဂျာမန် ရေးထုံး',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'အလယ်ပိုင်းနောက်ကျသောပြင်သစ်မှ ၁၆၀၆',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      '၁၆၉၄ACAD',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'အရှေ့ပိုင်းအာမေးနီးယန်း',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'ပေါင်းစပ်ထားသော တူရကီ လက်တင်စကားလုံး',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'IPA အသံထွက်',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'UPA အသံထွက်',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'ကွန်ပျူတာ',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'ပြန်လည်စီစစ်ထားသော ရေးထုံး',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'စကော့ စံ အင်္ဂလိပ်',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -8190,6 +8521,2332 @@ class TerritoriesMy implements Territories {
     'ZW': Territory(
       'ZW',
       'ဇင်ဘာဘွေ',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesMy extends TimeZones {
+  TimeZonesMy._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: '{0} အချိန်',
+            regionFormatDaylight: '{0} နွေရာသီ စံတော်ချိန်',
+            regionFormatStandard: '{0} စံတော်ချိန်',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Adak': TimeZoneNames(
+      city: 'အာဒချ',
+    ),
+    'America/Anchorage': TimeZoneNames(
+      city: 'အန်ကာရေ့ဂျ်',
+    ),
+    'America/Anguilla': TimeZoneNames(
+      city: 'အန်ဂီလာ',
+    ),
+    'America/Antigua': TimeZoneNames(
+      city: 'အန်တီဂွါ',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      city: 'အာရာဂွါအီနာ',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      city: 'ရီယို ဂါလီဂိုစ်',
+    ),
+    'America/Argentina/San_Juan': TimeZoneNames(
+      city: 'ဆန် ဂွမ်',
+    ),
+    'America/Argentina/Ushuaia': TimeZoneNames(
+      city: 'ဥဆွာအီအာ',
+    ),
+    'America/Argentina/La_Rioja': TimeZoneNames(
+      city: 'လာ ရီယိုဟာ',
+    ),
+    'America/Argentina/San_Luis': TimeZoneNames(
+      city: 'ဆန် လူဝီစ်',
+    ),
+    'America/Argentina/Salta': TimeZoneNames(
+      city: 'ဆာလ်တာ',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      city: 'တူကူမန်',
+    ),
+    'America/Aruba': TimeZoneNames(
+      city: 'အာရူးဗာ',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      city: 'အာဆူစီအွန်း',
+    ),
+    'America/Bahia': TimeZoneNames(
+      city: 'ဘာဟီအာ',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      city: 'ဘာဟီအာ ဘန်ဒရက်စ်',
+    ),
+    'America/Barbados': TimeZoneNames(
+      city: 'ဘာဘေးဒိုးစ်',
+    ),
+    'America/Belem': TimeZoneNames(
+      city: 'ဘီလင်မ်',
+    ),
+    'America/Belize': TimeZoneNames(
+      city: 'ဘလိဇ်',
+    ),
+    'America/Blanc-Sablon': TimeZoneNames(
+      city: 'ဘလွန်ခ်-စာဘလွန်',
+    ),
+    'America/Boa_Vista': TimeZoneNames(
+      city: 'ဘိုအာဗီစ်တာ',
+    ),
+    'America/Bogota': TimeZoneNames(
+      city: 'ဘိုဂိုတာ',
+    ),
+    'America/Boise': TimeZoneNames(
+      city: 'ဗွိုက်စီ',
+    ),
+    'America/Buenos_Aires': TimeZoneNames(
+      city: 'ဗျူနိုအေးရိစ်',
+    ),
+    'America/Cambridge_Bay': TimeZoneNames(
+      city: 'ကိန်းဘရစ်ချ် ဘေး',
+    ),
+    'America/Campo_Grande': TimeZoneNames(
+      city: 'ကိမ်ပို ဂရန်ဒီ',
+    ),
+    'America/Cancun': TimeZoneNames(
+      city: 'ကန်ခန်',
+    ),
+    'America/Caracas': TimeZoneNames(
+      city: 'ကာရာကာစ်',
+    ),
+    'America/Catamarca': TimeZoneNames(
+      city: 'ကာတာမာရကာ',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      city: 'ကေညင်န်',
+    ),
+    'America/Cayman': TimeZoneNames(
+      city: 'ကေမန်',
+    ),
+    'America/Chicago': TimeZoneNames(
+      city: 'ချီကာကို',
+    ),
+    'America/Chihuahua': TimeZoneNames(
+      city: 'ချီဟူအာဟူအာ',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      city: 'စီယူဒတ်စ် ဟွာရက်စ်',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      city: 'အာတီကိုကန်',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      city: 'ကိုဒိုဘာ',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      city: 'ကို့စတာရီကာ',
+    ),
+    'America/Creston': TimeZoneNames(
+      city: 'ကရစ်စတွန်',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      city: 'ကွီရာဘာ',
+    ),
+    'America/Curacao': TimeZoneNames(
+      city: 'ကျူရေးကိုး',
+    ),
+    'America/Danmarkshavn': TimeZoneNames(
+      city: 'ဒန်မတ်ရှ်ဗာန်',
+    ),
+    'America/Dawson': TimeZoneNames(
+      city: 'ဒေါ်ဆန်',
+    ),
+    'America/Dawson_Creek': TimeZoneNames(
+      city: 'ဒေါ်ဆန် ခရိခ်',
+    ),
+    'America/Denver': TimeZoneNames(
+      city: 'ဒင်န်ဗာ',
+    ),
+    'America/Detroit': TimeZoneNames(
+      city: 'ဒက်ထရွိုက်',
+    ),
+    'America/Dominica': TimeZoneNames(
+      city: 'ဒိုမီနီကာ',
+    ),
+    'America/Edmonton': TimeZoneNames(
+      city: 'အက်ဒ်မွန်တန်',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      city: 'အီရူနီပီ',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      city: 'အယ်လ်ဆာဗေဒို',
+    ),
+    'America/Fort_Nelson': TimeZoneNames(
+      city: 'ဖို့တ် နယ်လ်ဆင်',
+    ),
+    'America/Fortaleza': TimeZoneNames(
+      city: 'ဖို့တ်တာလီဇာ',
+    ),
+    'America/Glace_Bay': TimeZoneNames(
+      city: 'ဂလဲစ်ဘေး',
+    ),
+    'America/Godthab': TimeZoneNames(
+      city: 'နုခ်',
+    ),
+    'America/Goose_Bay': TimeZoneNames(
+      city: 'ဂူးစ်ဘေး',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      city: 'ဂရန်ဒ် တခ်',
+    ),
+    'America/Grenada': TimeZoneNames(
+      city: 'ဂရီနေဒါ',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      city: 'ဂွါဒီလုပ်',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      city: 'ဂွါတီမာလာ',
+    ),
+    'America/Guayaquil': TimeZoneNames(
+      city: 'ဂွါရာကွီးလ်',
+    ),
+    'America/Guyana': TimeZoneNames(
+      city: 'ဂိုင်ယာနာ',
+    ),
+    'America/Halifax': TimeZoneNames(
+      city: 'ဟလီဖက်စ်',
+    ),
+    'America/Havana': TimeZoneNames(
+      city: 'ဟာဗာနာ',
+    ),
+    'America/Hermosillo': TimeZoneNames(
+      city: 'ဟာမိုစ်စီလို',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      city: 'ဗင်ဆင့်စ်၊ အင်ဒီယားနား',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      city: 'ပီတာစ်ဘတ်ခ်၊ အင်ဒီယားနား',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      city: 'တဲလ်စီးတီး၊ အင်ဒီယားနား',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      city: 'နောက်ခ်စ်၊ အင်ဒီယားနား',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      city: 'ဝီနာမက်ခ်၊ အင်ဒီယားနား',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      city: 'မာရန်ဂို၊ အင်ဒီယားနား',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      city: 'ဗီဗဲ၊ အင်ဒီယားနား',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      city: 'အင်ဒီယားနား ပိုလိစ်',
+    ),
+    'America/Inuvik': TimeZoneNames(
+      city: 'အီနုဗီခ်',
+    ),
+    'America/Iqaluit': TimeZoneNames(
+      city: 'အီကာလူအီတ်',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      city: 'ဂျမေကာ',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      city: 'ဂျုဂျေ',
+    ),
+    'America/Juneau': TimeZoneNames(
+      city: 'ဂျုနိုအော',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      city: 'မွန်တီချယ်လို၊ ကင်တပ်ကီ',
+    ),
+    'America/Kralendijk': TimeZoneNames(
+      city: 'ခရာလဲန်းဒစ်ချ်',
+    ),
+    'America/La_Paz': TimeZoneNames(
+      city: 'လာပါဇ်',
+    ),
+    'America/Lima': TimeZoneNames(
+      city: 'လီမာ',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      city: 'လော့စ်အိန်ဂျယ်လိစ်',
+    ),
+    'America/Louisville': TimeZoneNames(
+      city: 'လူဝီဗီးလ်',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      city: 'လိုအာပရင့်စ် ကွာတာ',
+    ),
+    'America/Maceio': TimeZoneNames(
+      city: 'မာဆဲသွာ',
+    ),
+    'America/Managua': TimeZoneNames(
+      city: 'မာနာဂွါ',
+    ),
+    'America/Manaus': TimeZoneNames(
+      city: 'မာနောက်စ်',
+    ),
+    'America/Marigot': TimeZoneNames(
+      city: 'မာရီဂေါ့',
+    ),
+    'America/Martinique': TimeZoneNames(
+      city: 'မာတီနီဂ်',
+    ),
+    'America/Matamoros': TimeZoneNames(
+      city: 'မာတာမိုရိုစ်',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      city: 'မာဇတ်လန်',
+    ),
+    'America/Mendoza': TimeZoneNames(
+      city: 'မန်ဒိုဇာ',
+    ),
+    'America/Menominee': TimeZoneNames(
+      city: 'မီနိုမီနီး',
+    ),
+    'America/Merida': TimeZoneNames(
+      city: 'မီရီဒါ',
+    ),
+    'America/Metlakatla': TimeZoneNames(
+      city: 'မက်တ်လာကက်လာ',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      city: 'မက်ကဆီကို စီးတီး',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      city: 'မီကွီလွန်',
+    ),
+    'America/Moncton': TimeZoneNames(
+      city: 'မွန်ခ်တွန်',
+    ),
+    'America/Monterrey': TimeZoneNames(
+      city: 'မွန်တဲရေး',
+    ),
+    'America/Montevideo': TimeZoneNames(
+      city: 'မွန်တီဗီဒီအို',
+    ),
+    'America/Montserrat': TimeZoneNames(
+      city: 'မွန့်(တ်)ဆေးရတ်',
+    ),
+    'America/Nassau': TimeZoneNames(
+      city: 'နာ့ဆော်',
+    ),
+    'America/New_York': TimeZoneNames(
+      city: 'နယူးယောက်',
+    ),
+    'America/Nome': TimeZoneNames(
+      city: 'နိုမီ',
+    ),
+    'America/Noronha': TimeZoneNames(
+      city: 'နိုရိုညာ',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      city: 'ဗြူလာ၊ မြောက်ဒါကိုတာ',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      city: 'နယူးဆေးလမ်၊ မြောက်ဒါကိုတာ',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      city: 'စင်တာ၊ မြောက်ဒါကိုတာ',
+    ),
+    'America/Ojinaga': TimeZoneNames(
+      city: 'အိုခီနဂါ',
+    ),
+    'America/Panama': TimeZoneNames(
+      city: 'ပနားမား',
+    ),
+    'America/Paramaribo': TimeZoneNames(
+      city: 'ပါရာမာရီဘို',
+    ),
+    'America/Phoenix': TimeZoneNames(
+      city: 'ဖီးနစ်',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      city: 'ပို့တ်-အို-ပရင့်စ်',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      city: 'ပို့တ် အော့ဖ် စပိန်',
+    ),
+    'America/Porto_Velho': TimeZoneNames(
+      city: 'ပို့တ်တို ဗဲလီယို',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      city: 'ပေါ်တိုရီကို',
+    ),
+    'America/Punta_Arenas': TimeZoneNames(
+      city: 'ပွန်တာ အရီနာစ်',
+    ),
+    'America/Rankin_Inlet': TimeZoneNames(
+      city: 'ရန်ကင် အင်းလက်',
+    ),
+    'America/Recife': TimeZoneNames(
+      city: 'ဟေစီဖီလ်',
+    ),
+    'America/Regina': TimeZoneNames(
+      city: 'ရယ်ဂျီနာ',
+    ),
+    'America/Resolute': TimeZoneNames(
+      city: 'ရီဆိုလုပ်(တ်)',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      city: 'ရီယို ဘရန်ကို',
+    ),
+    'America/Santarem': TimeZoneNames(
+      city: 'ဆန်တာရမ်',
+    ),
+    'America/Santiago': TimeZoneNames(
+      city: 'ဆန်တီအာဂို',
+    ),
+    'America/Santo_Domingo': TimeZoneNames(
+      city: 'ဆန်တို ဒိုမင်းဂို',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      city: 'ဆော်ပိုလို',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      city: 'အစ်တာကာ တိုးမိရက်တ်',
+    ),
+    'America/Sitka': TimeZoneNames(
+      city: 'စစ်ကာ',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      city: 'စိန့်ဘာသယ်လမီ',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      city: 'စိန့်ဂျွန်း',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      city: 'စိန့်ကိစ်',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      city: 'စိန့်လူစီယာ',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      city: 'စိန့်သောမတ်စ်',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      city: 'စိန့်ဗင်းဆင့်',
+    ),
+    'America/Swift_Current': TimeZoneNames(
+      city: 'စွတ်ဖ်တ် ကားရင့်',
+    ),
+    'America/Tegucigalpa': TimeZoneNames(
+      city: 'တီဂူစီဂလ်ပါ',
+    ),
+    'America/Thule': TimeZoneNames(
+      city: 'သုလီ',
+    ),
+    'America/Tijuana': TimeZoneNames(
+      city: 'တီဂွါနာ',
+    ),
+    'America/Toronto': TimeZoneNames(
+      city: 'တိုရန်တို',
+    ),
+    'America/Tortola': TimeZoneNames(
+      city: 'တောတိုလာ',
+    ),
+    'America/Vancouver': TimeZoneNames(
+      city: 'ဗန်ကူးဗား',
+    ),
+    'America/Whitehorse': TimeZoneNames(
+      city: 'ဝိုက်(တ်)ဟိုစ်',
+    ),
+    'America/Winnipeg': TimeZoneNames(
+      city: 'ဝီနီဗက်ဂ်',
+    ),
+    'America/Yakutat': TimeZoneNames(
+      city: 'ရာကုတတ်',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      city: 'အေဇိုးရီးစ်',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      city: 'ဘာမြူဒါ',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      city: 'ကနေရီ',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      city: 'ကိတ်ပ် ဗာဒီ',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      city: 'ဖါရို',
+    ),
+    'Atlantic/Madeira': TimeZoneNames(
+      city: 'မဒီးရာ',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      city: 'ရေးကီဗစ်ခ်',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      city: 'တောင်ဂျော်ဂျီယာ',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      city: 'စိန့်ဟယ်လယ်နာ',
+    ),
+    'Atlantic/Stanley': TimeZoneNames(
+      city: 'စတန်လေ',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      city: 'အမ်စတာဒမ်',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      city: 'အန်ဒိုရာ',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      city: 'အားစ်တရခန်း',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      city: 'အေသင်',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      city: 'ဘဲလ်ဂရိတ်',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      city: 'ဘာလင်',
+    ),
+    'Europe/Bratislava': TimeZoneNames(
+      city: 'ဘရာတီးစ်လားဗာ',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      city: 'ဘရပ်ဆဲလ်',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      city: 'ဘူခါရက်စ်',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      city: 'ဘူဒါပက်စ်',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      city: 'ဘူရှင်ဂျင်',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      city: 'ချီရှီနားအူ',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      city: 'ကိုပင်ဟေဂင်',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'အိုင်းရစ်ရှ် စံတော်ချိန်',
+      ),
+      city: 'ဒတ်ဘလင်',
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      city: 'ဂျီဘရော်လ်တာ',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      city: 'ဂွန်းဇီ',
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      city: 'ဟဲလ်စင်ကီ',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      city: 'မန်းကျွန်း',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      city: 'အစ္စတန်ဘူလ်',
+    ),
+    'Europe/Jersey': TimeZoneNames(
+      city: 'ဂျာစီ',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      city: 'ခါလီနင်ဂရက်',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      city: 'ခီးအက်ဖ်',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      city: 'ခီရိုဗ်',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      city: 'လစ္စဘွန်း',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      city: 'လူဘလီအားနား',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'ဗြိတိန် နွေရာသီ အချိန်',
+      ),
+      city: 'လန်ဒန်',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      city: 'လူဇင်ဘတ်',
+    ),
+    'Europe/Madrid': TimeZoneNames(
+      city: 'မဒရစ်',
+    ),
+    'Europe/Malta': TimeZoneNames(
+      city: 'မော်လ်တာ',
+    ),
+    'Europe/Mariehamn': TimeZoneNames(
+      city: 'မရီအာ ဟားမန်',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      city: 'မင်းစခ်',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      city: 'မိုနာကို',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      city: 'မော်စကို',
+    ),
+    'Europe/Oslo': TimeZoneNames(
+      city: 'အော်စလို',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      city: 'ပဲရစ်',
+    ),
+    'Europe/Podgorica': TimeZoneNames(
+      city: 'ပေါ့ဂိုရီကာ',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      city: 'ပရက်ဂ်',
+    ),
+    'Europe/Riga': TimeZoneNames(
+      city: 'ရီဂါ',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      city: 'ရောမ',
+    ),
+    'Europe/Samara': TimeZoneNames(
+      city: 'ဆာမားရာ',
+    ),
+    'Europe/San_Marino': TimeZoneNames(
+      city: 'ဆန်မရီးနို',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      city: 'ဆာရာယေဗို',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      city: 'ဆာရာတို့ဖ်',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      city: 'စင်ဖာရိုးဖို',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      city: 'စကော့ပ်ရာ',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      city: 'ဆိုဖီအာ',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      city: 'စတော့ဟုမ်း',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      city: 'ထားလင်',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      city: 'တီရာနီ',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      city: 'အူလီယာနိုစကစ်ဖ်',
+    ),
+    'Europe/Vaduz': TimeZoneNames(
+      city: 'ဗာဒူးစ်',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      city: 'ဗာတီကန်',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      city: 'ဗီယင်နာ',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      city: 'ဗီးလ်နီအိုးစ်',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      city: 'ဗိုလ်ဂိုဂရက်',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      city: 'ဝါဆော',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      city: 'ဇာဂ်ဂရက်ဘ်',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      city: 'ဇူးရစ်ချ်',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      city: 'အာဘီဂျန်',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      city: 'အက်ကရာ',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      city: 'အားဒစ် အဘာဘာ',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      city: 'အယ်လ်ဂျီးရီးယား',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      city: 'အားစ်မားရာ',
+    ),
+    'Africa/Bamako': TimeZoneNames(
+      city: 'ဘာမာကို',
+    ),
+    'Africa/Bangui': TimeZoneNames(
+      city: 'ဘာန်ဂီး',
+    ),
+    'Africa/Banjul': TimeZoneNames(
+      city: 'ဘန်ဂျုးလ်',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      city: 'ဘီစာအို',
+    ),
+    'Africa/Blantyre': TimeZoneNames(
+      city: 'ဘလန်တိုင်းရဲလ်',
+    ),
+    'Africa/Brazzaville': TimeZoneNames(
+      city: 'ဘရားဇာဗီးလ်',
+    ),
+    'Africa/Bujumbura': TimeZoneNames(
+      city: 'ဘူဂျွန်ဘူးရာ',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      city: 'ကိုင်ရို',
+    ),
+    'Africa/Casablanca': TimeZoneNames(
+      city: 'ကာဆာဘလန်ကာ',
+    ),
+    'Africa/Ceuta': TimeZoneNames(
+      city: 'ဆီရူးတာ',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      city: 'ကိုနာကရီး',
+    ),
+    'Africa/Dakar': TimeZoneNames(
+      city: 'ဒကျကား',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      city: 'ဒါရက်စ်ဆာလမ်',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      city: 'ဂျီဘူတီ',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      city: 'ဒိုအူအာလာ',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      city: 'အယ်လ်အာယွန်း',
+    ),
+    'Africa/Freetown': TimeZoneNames(
+      city: 'ဖရီးတောင်းန်',
+    ),
+    'Africa/Gaborone': TimeZoneNames(
+      city: 'ဂါဘာရွန်းနီ',
+    ),
+    'Africa/Harare': TimeZoneNames(
+      city: 'ဟာရားရဲယ်',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      city: 'ဂျိုဟန်းနက်စဘတ်',
+    ),
+    'Africa/Juba': TimeZoneNames(
+      city: 'ဂျုဘာ',
+    ),
+    'Africa/Kampala': TimeZoneNames(
+      city: 'ကမ်ပါလာ',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      city: 'ခါတိုအန်',
+    ),
+    'Africa/Kigali': TimeZoneNames(
+      city: 'ကီဂါးလီ',
+    ),
+    'Africa/Kinshasa': TimeZoneNames(
+      city: 'ကင်ရှာစာ',
+    ),
+    'Africa/Lagos': TimeZoneNames(
+      city: 'လာဂိုစ်',
+    ),
+    'Africa/Libreville': TimeZoneNames(
+      city: 'လီဗရာဗီးလ်',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      city: 'လိုမီ',
+    ),
+    'Africa/Luanda': TimeZoneNames(
+      city: 'လူဝမ်ဒါ',
+    ),
+    'Africa/Lubumbashi': TimeZoneNames(
+      city: 'လူဘွန်းဘာရှီ',
+    ),
+    'Africa/Lusaka': TimeZoneNames(
+      city: 'လူစာကာ',
+    ),
+    'Africa/Malabo': TimeZoneNames(
+      city: 'မာလာဘို',
+    ),
+    'Africa/Maputo': TimeZoneNames(
+      city: 'မာပူးတို',
+    ),
+    'Africa/Maseru': TimeZoneNames(
+      city: 'မာဆူရူး',
+    ),
+    'Africa/Mbabane': TimeZoneNames(
+      city: 'ဘားဘာန်း',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      city: 'မော်ဂါဒီးသျုး',
+    ),
+    'Africa/Monrovia': TimeZoneNames(
+      city: 'မွန်ရိုးဗီးယား',
+    ),
+    'Africa/Nairobi': TimeZoneNames(
+      city: 'နိုင်ရိုဘီ',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      city: 'အင်ဂျာမီနာ',
+    ),
+    'Africa/Niamey': TimeZoneNames(
+      city: 'ညာမဲယ်',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      city: 'နိုအာ့ခ်ရှော့တ်',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      city: 'ဝါဂါဒူးဂူ',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      city: 'ပိုတို-နိုဗို',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      city: 'ဆောင်တူမေး',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      city: 'ထရီပိုလီ',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      city: 'တူနီစ်',
+    ),
+    'Africa/Windhoek': TimeZoneNames(
+      city: 'ဗင်းဟူးခ်',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      city: 'အာဒင်',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      city: 'အော်မာတီ',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      city: 'အာမာန်း',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      city: 'အန်အာဒီအာ',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      city: 'အက်တာဥု',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      city: 'အာချတူးဘီ',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      city: 'အာရှ်ဂါဘာဒ်',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      city: 'အာတီရအူ',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      city: 'ဘဂ္ဂဒက်',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      city: 'ဘာရိန်း',
+    ),
+    'Asia/Baku': TimeZoneNames(
+      city: 'ဘာကူ',
+    ),
+    'Asia/Bangkok': TimeZoneNames(
+      city: 'ဘန်ကောက်',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      city: 'ဘရ်နာအူ',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      city: 'ဘေရွတ်',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      city: 'ဘီရှ်ခက်',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      city: 'ဘရူနိုင်း',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      city: 'ကိုလျကတ်တား',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      city: 'ချီတာ',
+    ),
+    'Asia/Choibalsan': TimeZoneNames(
+      city: 'ချွဲဘောဆန်',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      city: 'ကိုလံဘို',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      city: 'ဒမားစကပ်',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      city: 'ဒက်ကာ',
+    ),
+    'Asia/Dili': TimeZoneNames(
+      city: 'ဒစ်လီ',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      city: 'ဒူဘိုင်း',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      city: 'ဒူရှန်းဘဲ',
+    ),
+    'Asia/Famagusta': TimeZoneNames(
+      city: 'ဖာမာဂူစတာ',
+    ),
+    'Asia/Gaza': TimeZoneNames(
+      city: 'ဂါဇာ',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      city: 'ဟီဘရွန်',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      city: 'ဟောင်ကောင်',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      city: 'ဟိုးဗျ',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      city: 'အီရူခူတ်',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      city: 'ဂျကာတာ',
+    ),
+    'Asia/Jayapura': TimeZoneNames(
+      city: 'ဂျာရာပူရာ',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      city: 'ဂျေရုဆလင်',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      city: 'ကဘူးလျ',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      city: 'ခမ်ချာ့ခါ',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      city: 'ကရာချိ',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      city: 'ခတ်တမန်ဒူ',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      city: 'ခန်ဒိုင်ဂါ',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      city: 'ခရာ့စ်နိုရာစ်',
+    ),
+    'Asia/Kuala_Lumpur': TimeZoneNames(
+      city: 'ကွာလာလမ်ပူ',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      city: 'ကူချင်',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      city: 'ကူဝိတ်',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      city: 'မကာအို',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      city: 'မာဂါဒန်း',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      city: 'မခက်စ်ဆာ',
+    ),
+    'Asia/Manila': TimeZoneNames(
+      city: 'မနီလာ',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      city: 'မတ်စ်ကက်တ်',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      city: 'နီကိုရှား',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      city: 'နိုဗိုခူဇ်နက်စ်',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      city: 'နိုဗိုစဲဘီအဲယ်စ်',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      city: 'အွမ်းစ်ခ်',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      city: 'အော်ရဲလ်',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      city: 'ဖနွမ်ပင်',
+    ),
+    'Asia/Pontianak': TimeZoneNames(
+      city: 'ပွန်တီအားနာ့ခ်',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      city: 'ပြုံယန်း',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      city: 'ကာတာ',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      city: 'ကော့စ်တနေ',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      city: 'ကီဇလော်ဒါ',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      city: 'ရန်ကုန်',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      city: 'ရီယားဒ်',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      city: 'ဟိုချီမင်းစီးတီး',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      city: 'ဆာခါလင်',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      city: 'ဆမ်းမာခန်းဒ်',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      city: 'ဆိုးလ်',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      city: 'ရှန်ဟိုင်း',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      city: 'စင်္ကာပူ',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      city: 'ဆရစ်နစ်ကာလင်မ်စ်',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      city: 'တိုင်ပေ',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      city: 'တာရှ်ကဲန့်',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      city: 'တဘီးလီစီ',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      city: 'တီဟီရန်',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      city: 'တင်ဖူး',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      city: 'တိုကျို',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      city: 'တွန်မ်စ်ခ်',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      city: 'ဥလန်ဘာတော',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      city: 'အူရုမ်ချီ',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      city: 'အူးစ် နီရား',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      city: 'ဗီယင်ကျန်း',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      city: 'ဗလာဒီဗော့စတော့ခ်',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      city: 'ယူခူးတ်စ်',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      city: 'ရယ်ခါးတီရင်ဘားခ်',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      city: 'ရဲယ်ရေဗန်း',
+    ),
+    'Indian/Antananarivo': TimeZoneNames(
+      city: 'အန်တာနာနာရီးဘို',
+    ),
+    'Indian/Chagos': TimeZoneNames(
+      city: 'ချာဂိုစ်',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      city: 'ခရစ်စမတ်',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      city: 'ကိုကိုးစ်',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      city: 'ကိုမိုရို',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      city: 'ခါဂါလန်',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      city: 'မာဟီ',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      city: 'မော်လဒိုက်',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      city: 'မောရစ်ရှ',
+    ),
+    'Indian/Mayotte': TimeZoneNames(
+      city: 'မာယိုတဲ',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      city: 'ရီယူနီယန်',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      city: 'အန္ဒီလိတ်ဒ်',
+    ),
+    'Australia/Brisbane': TimeZoneNames(
+      city: 'ဘရစ္စဘိန်း',
+    ),
+    'Australia/Broken_Hill': TimeZoneNames(
+      city: 'ဘရိုကင်ဟီးလ်',
+    ),
+    'Australia/Darwin': TimeZoneNames(
+      city: 'ဒါဝင်',
+    ),
+    'Australia/Eucla': TimeZoneNames(
+      city: 'ယူးခလာ',
+    ),
+    'Australia/Hobart': TimeZoneNames(
+      city: 'ဟိုးဘားတ်',
+    ),
+    'Australia/Lindeman': TimeZoneNames(
+      city: 'လင်းဒီမန်း',
+    ),
+    'Australia/Lord_Howe': TimeZoneNames(
+      city: 'လော့ဒ် ဟောင်',
+    ),
+    'Australia/Melbourne': TimeZoneNames(
+      city: 'မဲလ်ဘုန်း',
+    ),
+    'Australia/Perth': TimeZoneNames(
+      city: 'ပါးသ်',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      city: 'ဆစ်ဒနီ',
+    ),
+    'Pacific/Apia': TimeZoneNames(
+      city: 'အားပီအား',
+    ),
+    'Pacific/Auckland': TimeZoneNames(
+      city: 'အော့ကလန်',
+    ),
+    'Pacific/Bougainville': TimeZoneNames(
+      city: 'ဘူဂန်ဗီးလီးယား',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      city: 'ချားသမ်',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      city: 'အီစတာ',
+    ),
+    'Pacific/Efate': TimeZoneNames(
+      city: 'အီဖာတီ',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      city: 'အန်ဒါဘူရီ',
+    ),
+    'Pacific/Fakaofo': TimeZoneNames(
+      city: 'ဖာခါအိုဖို',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      city: 'ဖီဂျီ',
+    ),
+    'Pacific/Funafuti': TimeZoneNames(
+      city: 'ဖူနာဖူတီ',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      city: 'ဂါလာပါကပ်စ်',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      city: 'ဂမ်ဘီယာ',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      city: 'ဂွါဒါကနဲလ်',
+    ),
+    'Pacific/Guam': TimeZoneNames(
+      city: 'ဂူအမ်',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      city: 'ဟိုနိုလူလူ',
+    ),
+    'Pacific/Kanton': TimeZoneNames(
+      city: 'ကန်တွန်',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      city: 'ခရိဒီမတီ',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      city: 'ခိုစ်ရိုင်',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      city: 'ခွာဂျာလိန်',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      city: 'မာဂျူးရို',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      city: 'မာခေးအပ်စ်',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      city: 'မစ်ဒ်ဝေး',
+    ),
+    'Pacific/Nauru': TimeZoneNames(
+      city: 'နာဥူရူ',
+    ),
+    'Pacific/Niue': TimeZoneNames(
+      city: 'နီဦးအေ',
+    ),
+    'Pacific/Norfolk': TimeZoneNames(
+      city: 'နော်ဖော့ခ်',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      city: 'နူမယ်အာ',
+    ),
+    'Pacific/Pago_Pago': TimeZoneNames(
+      city: 'ပါဂိုပါဂို',
+    ),
+    'Pacific/Palau': TimeZoneNames(
+      city: 'ပလာအို',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      city: 'ပါတ်ကယ်ရင်',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      city: 'ဖိုနာဖဲအ်',
+    ),
+    'Pacific/Port_Moresby': TimeZoneNames(
+      city: 'ဖို့တ် မိုရက်စ်ဘီ',
+    ),
+    'Pacific/Rarotonga': TimeZoneNames(
+      city: 'ရာရိုတွန်းဂါ',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      city: 'ဆိုင်ပန်',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      city: 'တဟီတီ',
+    ),
+    'Pacific/Tarawa': TimeZoneNames(
+      city: 'တာရာဝါ',
+    ),
+    'Pacific/Tongatapu': TimeZoneNames(
+      city: 'တွန်ဂါတာပု',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      city: 'ချုခ်',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      city: 'ဝိတ်ခ်',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      city: 'ဝေါလီစ်',
+    ),
+    'Arctic/Longyearbyen': TimeZoneNames(
+      city: 'လောင်ရီယားဘရံ',
+    ),
+    'Antarctica/Casey': TimeZoneNames(
+      city: 'ကေစီ',
+    ),
+    'Antarctica/Davis': TimeZoneNames(
+      city: 'ဒေးဗစ်',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      city: 'ဒူးမော့တ် ဒါရ်ဗီးလ်',
+    ),
+    'Antarctica/Macquarie': TimeZoneNames(
+      city: 'မက်ကွယ်ရီ',
+    ),
+    'Antarctica/Mawson': TimeZoneNames(
+      city: 'မော်စွန်',
+    ),
+    'Antarctica/McMurdo': TimeZoneNames(
+      city: 'မက်မူဒိုး',
+    ),
+    'Antarctica/Palmer': TimeZoneNames(
+      city: 'ပါလ်မာ',
+    ),
+    'Antarctica/Rothera': TimeZoneNames(
+      city: 'ရိုသီရာ',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      city: 'ရှိုးဝါ',
+    ),
+    'Antarctica/Troll': TimeZoneNames(
+      city: 'ထရိုလ်',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      city: 'ဗိုစ်တိုခ်',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'ညှိထားသည့် ကမ္ဘာ့ စံတော်ချိန်',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      city: 'အမည်မသိသောမြို့',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'အာဖဂန်နစ္စတန် အချိန်',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'အလယ်အာဖရိက အချိန်',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'အရှေ့အာဖရိက အချိန်',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'တောင်အာဖရိက အချိန်',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'အနောက်အာဖရိက အချိန်',
+        standard: 'အနောက်အာဖရိက စံတော်ချိန်',
+        daylight: 'အနောက်အာဖရိက နွေရာသီ အချိန်',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'အလာစကာ အချိန်',
+        standard: 'အလာစကာ စံတော်ချိန်',
+        daylight: 'အလာစကာ နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'အမေဇုံ အချိန်',
+        standard: 'အမေဇုံ စံတော်ချိန်',
+        daylight: 'အမေဇုံ နွေရာသီအချိန်',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'အလယ်ပိုင်းအချိန်',
+        standard: 'အလယ်ပိုင်းစံတော်ချိန်',
+        daylight: 'အလယ်ပိုင်း နွေရာသီစံတော်ချိန်',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'အရှေ့ပိုင်းအချိန်',
+        standard: 'အရှေ့ပိုင်းစံတော်ချိန်',
+        daylight: 'အရှေ့ပိုင်း နွေရာသီစံတော်ချိန်',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'တောင်တန်းအချိန်',
+        standard: 'တောင်တန်းစံတော်ချိန်',
+        daylight: 'တောင်တန်း နွေရာသီစံတော်ချိန်',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'ပစိဖိတ်အချိန်',
+        standard: 'ပစိဖိတ်စံတော်ချိန်',
+        daylight: 'ပစိဖိတ် နွေရာသီစံတော်ချိန်',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'အပီယာ အချိန်',
+        standard: 'အပီယာ စံတော်ချိန်',
+        daylight: 'အပီယာ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'အာရေဗျ အချိန်',
+        standard: 'အာရေဗျ စံတော်ချိန်',
+        daylight: 'အာရေဗျ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'အာဂျင်တီးနား အချိန်',
+        standard: 'အာဂျင်တီးနား စံတော်ချိန်',
+        daylight: 'အာဂျင်တီးနား နွေရာသီအချိန်',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'အနောက် အာဂျင်တီးနား အချိန်',
+        standard: 'အနောက် အာဂျင်တီးနား စံတော်ချိန်',
+        daylight: 'အနောက် အာဂျင်တီးနား နွေရာသီ အချိန်',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'အာမေးနီးယား အချိန်',
+        standard: 'အာမေးနီးယား စံတော်ချိန်',
+        daylight: 'အာမေးနီးယား နွေရာသီ အချိန်',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'အတ္တလန်တစ် အချိန်',
+        standard: 'အတ္တလန်တစ် စံတော်ချိန်',
+        daylight: 'အတ္တလန်တစ် နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'ဩစတြေးလျ အလယ်ပိုင်း အချိန်',
+        standard: 'ဩစတြေးလျ အလယ်ပိုင်း စံတော်ချိန်',
+        daylight: 'ဩစတြေးလျ အလယ်ပိုင်း နွေရာသီ အချိန်',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း အချိန်',
+        standard: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း စံတော်ချိန်',
+        daylight: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း နွေရာသီ အချိန်',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'အရှေ့ဩစတြေးလျ အချိန်',
+        standard: 'အရှေ့ဩစတြေးလျ စံတော်ချိန်',
+        daylight: 'အရှေ့ဩစတြေးလျ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'အနောက်ဩစတြေးလျ အချိန်',
+        standard: 'အနောက်ဩစတြေးလျ စံတော်ချိန်',
+        daylight: 'ဩစတြေးလျ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'အဇာဘိုင်ဂျန် အချိန်',
+        standard: 'အဇာဘိုင်ဂျန် စံတော်ချိန်',
+        daylight: 'အဇာဘိုင်ဂျန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'အေဇိုးရီးစ် အချိန်',
+        standard: 'အေဇိုးရီးစ် စံတော်ချိန်',
+        daylight: 'အေဇိုးရီးစ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'ဘင်္ဂလားဒေ့ရှ် အချိန်',
+        standard: 'ဘင်္ဂလားဒေ့ရှ် စံတော်ချိန်',
+        daylight: 'ဘင်္ဂလားဒေ့ရှ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'ဘူတန် အချိန်',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'ဘိုလီးဘီးယား အချိန်',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'ဘရာဇီး အချိန်',
+        standard: 'ဘရာဇီး စံတော်ချိန်',
+        daylight: 'ဘရာဇီး နွေရာသီ အချိန်',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'ဘရူနိုင်း စံတော်ချိန်',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'ကိတ်ဗာဒီ အချိန်',
+        standard: 'ကိတ်ဗာဒီ စံတော်ချိန်',
+        daylight: 'ကိတ်ဗာဒီ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'ချာမိုရို အချိန်',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'ချားသမ်အချိန်',
+        standard: 'ချားသမ်စံတော်ချိန်',
+        daylight: 'ချားသမ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'ချီလီ အချိန်',
+        standard: 'ချီလီ စံတော်ချိန်',
+        daylight: 'ချီလီ နွေရာသီ အချိန်',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'တရုတ် အချိန်',
+        standard: 'တရုတ် စံတော်ချိန်',
+        daylight: 'တရုတ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Choibalsan': MetaZone(
+      code: 'Choibalsan',
+      long: TimeZoneName(
+        generic: 'ချွဲဘော်ဆန်း အချိန်',
+        standard: 'ချွဲဘော်ဆန်း စံတော်ချိန်',
+        daylight: 'ချွဲဘော်ဆန်း နွေရာသီ အချိန်',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'ခရစ်စမတ်ကျွန်း အချိန်',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'ကိုကိုးကျွန်း အချိန်',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'ကိုလံဘီယာ အချိန်',
+        standard: 'ကိုလံဘီယာ စံတော်ချိန်',
+        daylight: 'ကိုလံဘီယာ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'ကွတ်ကျွန်းစု အချိန်',
+        standard: 'ကွတ်ကျွန်းစု စံတော်ချိန်',
+        daylight: 'ကွတ်ကျွန်းစု နွေရာသီ အချိန်',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'ကျူးဘား အချိန်',
+        standard: 'ကျူးဘား စံတော်ချိန်',
+        daylight: 'ကျူးဘား နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'ဒေးဗစ် အချိန်',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'ဒူးမော့တ် ဒါရ်ဗီးလ် အချိန်',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'အရှေ့တီမော အချိန်',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'အီစတာကျွန်း အချိန်',
+        standard: 'အီစတာကျွန်း စံတော်ချိန်',
+        daylight: 'အီစတာကျွန်း နွေရာသီ အချိန်',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'အီကွေဒေါ အချိန်',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'ဥရောပအလယ်ပိုင်း အချိန်',
+        standard: 'ဥရောပအလယ်ပိုင်း စံတော်ချိန်',
+        daylight: 'ဥရောပအလယ်ပိုင်း နွေရာသီ အချိန်',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'အရှေ့ဥရောပ အချိန်',
+        standard: 'အရှေ့ဥရောပ စံတော်ချိန်',
+        daylight: 'အရှေ့ဥရောပ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'အရှေ့ဖျား ဥရောပဒေသ အချိန်',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'အနောက်ဥရောပ အချိန်',
+        standard: 'အနောက်ဥရောပ စံတော်ချိန်',
+        daylight: 'အနောက်ဥရောပ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'ဖော့ကလန်ကျွန်းစု အချိန်',
+        standard: 'ဖော့ကလန်ကျွန်းစု စံတော်ချိန်',
+        daylight: 'ဖော့ကလန်ကျွန်းစု နွေရာသီ အချိန်',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'ဖီဂျီ အချိန်',
+        standard: 'ဖီဂျီ စံတော်ချိန်',
+        daylight: 'ဖီဂျီ နွေရာသီ အချိန်',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'ပြင်သစ် ဂီအားနား အချိန်',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'ပြင်သစ်တောင်ပိုင်းနှင့် အန္တာတိတ် အချိန်',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'ဂါလားပါဂိုးစ် အချိန်',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'ဂမ်ဘီယာ အချိန်',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'ဂျော်ဂျီယာ အချိန်',
+        standard: 'ဂျော်ဂျီယာ စံတော်ချိန်',
+        daylight: 'ဂျော်ဂျီယာ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'ဂီလ်ဘတ်ကျွန်းစု အချိန်',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'ဂရင်းနစ် စံတော်ချိန်',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'အရှေ့ဂရင်းလန်း အချိန်',
+        standard: 'အရှေ့ဂရင်းလန်း စံတော်ချိန်',
+        daylight: 'အရှေ့ဂရင်းလန် နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'အနောက် ဂရင်းလန်း အချိန်',
+        standard: 'အနောက် ဂရင်းလန်း စံတော်ချိန်',
+        daylight: 'အနောက် ဂရင်းလန် နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'ပင်လယ်ကွေ့ အချိန်',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'ဂိုင်ယာနာ အချိန်',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'ဟာဝိုင်ယီ အယ်လူးရှန်း အချိန်',
+        standard: 'ဟာဝိုင်ယီ အယ်လူးရှန်း စံတော်ချိန်',
+        daylight: 'ဟာဝိုင်ယီ အယ်လူးရှန်း နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'ဟောင်ကောင် အချိန်',
+        standard: 'ဟောင်ကောင် စံတော်ချိန်',
+        daylight: 'ဟောင်ကောင် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'ဟိုးဗ် အချိန်',
+        standard: 'ဟိုးဗ် စံတော်ချိန်',
+        daylight: 'ဟိုးဗ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'အိန္ဒိယ စံတော်ချိန်',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'အိန္ဒိယသမုဒ္ဒရာ အချိန်',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'အင်ဒိုချိုင်းနား အချိန်',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'အလယ်ပိုင်း အင်ဒိုနီးရှား အချိန်',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'အရှေ့ပိုင်း အင်ဒိုနီးရှား အချိန်',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'အနောက်ပိုင်း အင်ဒိုနီးရှား အချိန်',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'အီရန် အချိန်',
+        standard: 'အီရန် စံတော်ချိန်',
+        daylight: 'အီရန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'အီရူခူတ် အချိန်',
+        standard: 'အီရူခူတ် စံတော်ချိန်',
+        daylight: 'အီရူခူတ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'အစ္စရေး အချိန်',
+        standard: 'အစ္စရေး စံတော်ချိန်',
+        daylight: 'အစ္စရေး နွေရာသီ အချိန်',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'ဂျပန် အချိန်',
+        standard: 'ဂျပန် စံတော်ချိန်',
+        daylight: 'ဂျပန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'အရှေ့ကာဇက်စတန် အချိန်',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'အနောက်ကာဇက်စတန် အချိန်',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'ကိုရီးယား အချိန်',
+        standard: 'ကိုရီးယား စံတော်ချိန်',
+        daylight: 'ကိုရီးယား နွေရာသီ အချိန်',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'ခိုစ်ရိုင် အချိန်',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'ခရာ့စ်နိုရာစ် အချိန်',
+        standard: 'ခရာ့စ်နိုရာစ် စံတော်ချိန်',
+        daylight: 'ခရာ့စ်နိုရာစ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'ကာဂျစ္စတန် အချိန်',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'သီရိလင်္ကာ အချိန်',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'လိုင်းကျွန်းစု အချိန်',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'လော့ဒ်ဟောင် အချိန်',
+        standard: 'လော့ဒ်ဟောင် စံတော်ချိန်',
+        daylight: 'လော့ဒ်ဟောင် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'မကာအို အချိန်',
+        standard: 'မကာအို စံတော်ချိန်',
+        daylight: 'မကာအို နွေရာသီ အချိန်',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'မာဂါဒန်း အချိန်',
+        standard: 'မာဂါဒန်း စံတော်ချိန်',
+        daylight: 'မာဂါဒန်း နွေရာသီ အချိန်',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'မလေးရှား အချိန်',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'မော်လဒိုက် အချိန်',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'မာခေးအပ်စ် အချိန်',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'မာရှယ်ကျွန်းစု အချိန်',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'မောရစ်ရှ အချိန်',
+        standard: 'မောရစ်ရှ စံတော်ချိန်',
+        daylight: 'မောရစ်ရှ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'မော်စွန် အချိန်',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'မက္ကဆီကန် ပစိဖိတ် အချိန်',
+        standard: 'မက္ကဆီကန် ပစိဖိတ် စံတော်ချိန်',
+        daylight: 'မက္ကစီကန် ပစိဖိတ် နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'ဥလန်ဘာတော အချိန်',
+        standard: 'ဥလန်ဘာတော စံတော်ချိန်',
+        daylight: 'ဥလန်ဘာတော နွေရာသီ အချိန်',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'မော်စကို အချိန်',
+        standard: 'မော်စကို စံတော်ချိန်',
+        daylight: 'မော်စကို နွေရာသီ အချိန်',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'မြန်မာ အချိန်',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'နာဥူရူ အချိန်',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'နီပေါ အချိန်',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'နယူးကယ်လီဒိုးနီးယား အချိန်',
+        standard: 'နယူးကာလီဒိုးနီးယား စံတော်ချိန်',
+        daylight: 'နယူးကာလီဒိုးနီးယား နွေရာသီ အချိန်',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'နယူးဇီလန် အချိန်',
+        standard: 'နယူးဇီလန် စံတော်ချိန်',
+        daylight: 'နယူးဇီလန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'နယူးဖောင်လန် အချိန်',
+        standard: 'နယူးဖောင်လန် စံတော်ချိန်',
+        daylight: 'နယူးဖောင်လန် နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'နီဥူအေ အချိန်',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'နောဖော့ခ်ကျွန်း အချိန်',
+        standard: 'နောဖော့ခ်ကျွန်း စံတော်ချိန်',
+        daylight: 'နောဖော့ခ်ကျွန်း နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ အချိန်',
+        standard: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ စံတော်ချိန်',
+        daylight: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'နိုဗိုစဲဘီအဲယ်စ် အချိန်',
+        standard: 'နိုဗိုစဲဘီအဲယ်စ် စံတော်ချိန်',
+        daylight: 'နိုဗိုစဲဘီအဲယ်စ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'အွမ်းစ်ခ် အချိန်',
+        standard: 'အွမ်းစ်ခ် စံတော်ချိန်',
+        daylight: 'အွမ်းစ်ခ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'ပါကစ္စတန် အချိန်',
+        standard: 'ပါကစ္စတန် စံတော်ချိန်',
+        daylight: 'ပါကစ္စတန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'ပလာအို အချိန်',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'ပါပူအာနယူးဂီနီ အချိန်',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'ပါရာဂွေး အချိန်',
+        standard: 'ပါရာဂွေး စံတော်ချိန်',
+        daylight: 'ပါရာဂွေး နွေရာသီ အချိန်',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'ပီရူး အချိန်',
+        standard: 'ပီရူး စံတော်ချိန်',
+        daylight: 'ပီရူး နွေရာသီ အချိန်',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'ဖိလစ်ပိုင် အချိန်',
+        standard: 'ဖိလစ်ပိုင် စံတော်ချိန်',
+        daylight: 'ဖိလစ်ပိုင် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'ဖီးနစ်ကျွန်းစု အချိန်',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'စိန့်ပီအဲနှင့်မီခွီလွန်အချိန်',
+        standard: 'စိန့်ပီအဲနှင့်မီခွီလွန်စံတော်ချိန်',
+        daylight: 'စိန့်ပီအဲနှင့် မီခွီလွန် နွေရာသီ စံတော်ချိန်',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'ပါတ်ကယ်ရင် အချိန်',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'ဖိုနာဖဲအ် အချိန်',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'ပြုံယန်း အချိန်',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'ရီယူနီယံ အချိန်',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'ရိုသီရာ အချိန်',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'ဆာခါလင် အချိန်',
+        standard: 'ဆာခါလင် စံတော်ချိန်',
+        daylight: 'ဆာခါလင် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'ဆမိုအာ အချိန်',
+        standard: 'ဆမိုအာ စံတော်ချိန်',
+        daylight: 'ဆမိုးအား နွေရာသီ အချိန်',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'ဆေးရှဲ အချိန်',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'စင်္ကာပူ အချိန်',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'ဆော်လမွန်ကျွန်းစု အချိန်',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'တောင်ဂျော်ဂျီယာ အချိန်',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'စူးရီနာမ်အချိန်',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'ရှိုဝါ အချိန်',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'တဟီတီ အချိန်',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'ထိုင်ပေ အချိန်',
+        standard: 'ထိုင်ပေ စံတော်ချိန်',
+        daylight: 'ထိုင်ပေ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'တာဂျစ်ကစ္စတန် အချိန်',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'တိုကီလာဥ အချိန်',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'တွန်ဂါ အချိန်',
+        standard: 'တွန်ဂါ စံတော်ချိန်',
+        daylight: 'တွန်ဂါ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'ချုခ် အချိန်',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'တာ့ခ်မင်နစ္စတန် အချိန်',
+        standard: 'တာ့ခ်မင်နစ္စတန် စံတော်ချိန်',
+        daylight: 'တာ့ခ်မင်နစ္စတန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'တူဗားလူ အချိန်',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'ဥရုဂွေး အချိန်',
+        standard: 'ဥရုဂွေး စံတော်ချိန်',
+        daylight: 'ဥရုဂွေး နွေရာသီ အချိန်',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'ဥဇဘက်ကစ္စတန် အချိန်',
+        standard: 'ဥဇဘက်ကစ္စတန် စံတော်ချိန်',
+        daylight: 'ဥဇဘက်ကစ္စတန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'ဗနွားတူ အချိန်',
+        standard: 'ဗနွားတူ စံတော်ချိန်',
+        daylight: 'ဗနွားတူ နွေရာသီ အချိန်',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'ဗင်နီဇွဲလား အချိန်',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'ဗလာဒီဗော့စတော့ခ် အချိန်',
+        standard: 'ဗလာဒီဗော့စတော့ခ် စံတော်ချိန်',
+        daylight: 'ဗလာဒီဗော့စတော့ခ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'ဗိုလ်ဂိုဂရက် အချိန်',
+        standard: 'ဗိုလ်ဂိုဂရက် စံတော်ချိန်',
+        daylight: 'ဗိုဂိုဂရက် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'ဗိုစ်တိုခ် အချိန်',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'ဝိတ်ခ်ကျွန်း အချိန်',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'ဝေါလီစ်နှင့် ဖူကျူနာ အချိန်',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'ယူခူးတ်စ် အချိန်',
+        standard: 'ယူခူးတ်စ် စံတော်ချိန်',
+        daylight: 'ယူခူးတ်စ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'ရယ်ခါးတီရင်ဘားခ် အချိန်',
+        standard: 'ရယ်ခါးတီရင်ဘားခ် စံတော်ချိန်',
+        daylight: 'ရယ်ခါးတီရင်ဘာခ် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'ယူကွန်း အချိန်',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

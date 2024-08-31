@@ -1,15 +1,12 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+
+import '../../common_locale_data.dart';
 
 const _locale = 'vi';
 
-/// Translations of [CommonLocaleData] for vi
+/// Translations of [CommonLocaleData]
 class CommonLocaleDataVi implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataVi();
@@ -22,6 +19,14 @@ class CommonLocaleDataVi implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsVi._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsVi._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsVi._();
   @override
   Units get units => _units;
@@ -29,6 +34,10 @@ class CommonLocaleDataVi implements CommonLocaleData {
   static final _territories = TerritoriesVi._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesVi._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesVi extends Languages {
@@ -2399,6 +2408,865 @@ class LanguagesVi extends Languages {
     'zza': Language(
       'zza',
       'Tiếng Zaza',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsVi extends Scripts {
+  ScriptsVi._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'Chữ Adlam',
+    ),
+    'Afak': Script(
+      'Afak',
+      'Chữ Afaka',
+    ),
+    'Arab': Script(
+      'Arab',
+      'Chữ Ả Rập',
+      variant: 'Chữ Ba Tư-Ả Rập',
+    ),
+    'Aran': Script(
+      'Aran',
+      'Chữ Nastaliq',
+    ),
+    'Armi': Script(
+      'Armi',
+      'Chữ Imperial Aramaic',
+    ),
+    'Armn': Script(
+      'Armn',
+      'Chữ Armenia',
+    ),
+    'Avst': Script(
+      'Avst',
+      'Chữ Avestan',
+    ),
+    'Bali': Script(
+      'Bali',
+      'Chữ Bali',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'Chữ Bamum',
+    ),
+    'Bass': Script(
+      'Bass',
+      'Chữ Bassa Vah',
+    ),
+    'Batk': Script(
+      'Batk',
+      'Chữ Batak',
+    ),
+    'Beng': Script(
+      'Beng',
+      'Chữ Bangla',
+    ),
+    'Blis': Script(
+      'Blis',
+      'Chữ Blissymbols',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'Chữ Bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'Chữ Brahmi',
+    ),
+    'Brai': Script(
+      'Brai',
+      'Chữ nổi Braille',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'Chữ Bugin',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'Chữ Buhid',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'Chữ Chakma',
+    ),
+    'Cans': Script(
+      'Cans',
+      'Âm tiết Thổ dân Canada Hợp nhất',
+    ),
+    'Cari': Script(
+      'Cari',
+      'Chữ Caria',
+    ),
+    'Cham': Script(
+      'Cham',
+      'Chữ Chăm',
+    ),
+    'Cher': Script(
+      'Cher',
+      'Chữ Cherokee',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'Chữ Cirth',
+    ),
+    'Copt': Script(
+      'Copt',
+      'Chữ Coptic',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'Chứ Síp',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'Chữ Kirin',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'Chữ Kirin Slavơ Nhà thờ cổ',
+    ),
+    'Deva': Script(
+      'Deva',
+      'Chữ Devanagari',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'Chữ Deseret',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'Chữ tốc ký Duployan',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'Chữ Ai Cập bình dân',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'Chữ Ai Cập thày tu',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'Chữ tượng hình Ai Cập',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'Chữ Ethiopia',
+    ),
+    'Geok': Script(
+      'Geok',
+      'Chữ Khutsuri Georgia',
+    ),
+    'Geor': Script(
+      'Geor',
+      'Chữ Georgia',
+    ),
+    'Glag': Script(
+      'Glag',
+      'Chữ Glagolitic',
+    ),
+    'Goth': Script(
+      'Goth',
+      'Chữ Gô-tích',
+    ),
+    'Gran': Script(
+      'Gran',
+      'Chữ Grantha',
+    ),
+    'Grek': Script(
+      'Grek',
+      'Chữ Hy Lạp',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'Chữ Gujarati',
+    ),
+    'Guru': Script(
+      'Guru',
+      'Chữ Gurmukhi',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'Chữ Hán có chú âm',
+    ),
+    'Hang': Script(
+      'Hang',
+      'Chữ Hàn',
+    ),
+    'Hani': Script(
+      'Hani',
+      'Chữ Hán',
+    ),
+    'Hano': Script(
+      'Hano',
+      'Chữ Hanunoo',
+    ),
+    'Hans': Script(
+      'Hans',
+      'Giản thể',
+      standAlone: 'Chữ Hán giản thể',
+    ),
+    'Hant': Script(
+      'Hant',
+      'Phồn thể',
+      standAlone: 'Chữ Hán phồn thể',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'Chữ Do Thái',
+    ),
+    'Hira': Script(
+      'Hira',
+      'Chữ Hiragana',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'Chữ tượng hình Anatolia',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'Chữ Pahawh Hmong',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'Bảng ký hiệu âm tiết Tiếng Nhật',
+    ),
+    'Hung': Script(
+      'Hung',
+      'Chữ Hungary cổ',
+    ),
+    'Inds': Script(
+      'Inds',
+      'Chữ Indus',
+    ),
+    'Ital': Script(
+      'Ital',
+      'Chữ Italic cổ',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'Chữ Jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'Chữ Java',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'Chữ Nhật Bản',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      'Chữ Jurchen',
+    ),
+    'Kali': Script(
+      'Kali',
+      'Chữ Kayah Li',
+    ),
+    'Kana': Script(
+      'Kana',
+      'Chữ Katakana',
+    ),
+    'Khar': Script(
+      'Khar',
+      'Chữ Kharoshthi',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'Chữ Khơ-me',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'Chữ Khojki',
+    ),
+    'Knda': Script(
+      'Knda',
+      'Chữ Kannada',
+    ),
+    'Kore': Script(
+      'Kore',
+      'Chữ Hàn Quốc',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      'Chữ Kpelle',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'Chữ Kaithi',
+    ),
+    'Lana': Script(
+      'Lana',
+      'Chữ Lanna',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'Chữ Lào',
+    ),
+    'Latf': Script(
+      'Latf',
+      'Chữ La-tinh Fraktur',
+    ),
+    'Latg': Script(
+      'Latg',
+      'Chữ La-tinh Xcốt-len',
+    ),
+    'Latn': Script(
+      'Latn',
+      'Chữ La tinh',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'Chữ Lepcha',
+    ),
+    'Limb': Script(
+      'Limb',
+      'Chữ Limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'Chữ Linear A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'Chữ Linear B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'Chữ Fraser',
+    ),
+    'Loma': Script(
+      'Loma',
+      'Chữ Loma',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'Chữ Lycia',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'Chữ Lydia',
+    ),
+    'Mand': Script(
+      'Mand',
+      'Chữ Mandaean',
+    ),
+    'Mani': Script(
+      'Mani',
+      'Chữ Manichaean',
+    ),
+    'Maya': Script(
+      'Maya',
+      'Chữ tượng hình Maya',
+    ),
+    'Mend': Script(
+      'Mend',
+      'Chữ Mende',
+    ),
+    'Merc': Script(
+      'Merc',
+      'Chữ Meroitic Nét thảo',
+    ),
+    'Mero': Script(
+      'Mero',
+      'Chữ Meroitic',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'Chữ Malayalam',
+    ),
+    'Mong': Script(
+      'Mong',
+      'Chữ Mông Cổ',
+    ),
+    'Moon': Script(
+      'Moon',
+      'Chữ nổi Moon',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'Chữ Mro',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'Chữ Meitei Mayek',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'Chữ Myanmar',
+    ),
+    'Narb': Script(
+      'Narb',
+      'Chữ Bắc Ả Rập cổ',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'Chữ Nabataean',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      'Chữ Naxi Geba',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'Chữ N’Ko',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'Chữ Nüshu',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'Chữ Ogham',
+    ),
+    'Olck': Script(
+      'Olck',
+      'Chữ Ol Chiki',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'Chữ Orkhon',
+    ),
+    'Orya': Script(
+      'Orya',
+      'Chữ Odia',
+    ),
+    'Osma': Script(
+      'Osma',
+      'Chữ Osmanya',
+    ),
+    'Palm': Script(
+      'Palm',
+      'Chữ Palmyrene',
+    ),
+    'Perm': Script(
+      'Perm',
+      'Chữ Permic cổ',
+    ),
+    'Phag': Script(
+      'Phag',
+      'Chữ Phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'Chữ Pahlavi Văn bia',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'Chữ Pahlavi Thánh ca',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'Chữ Pahlavi Sách',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'Chữ Phoenicia',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Ngữ âm Pollard',
+    ),
+    'Prti': Script(
+      'Prti',
+      'Chữ Parthia Văn bia',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'Chữ Zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'Chữ Rejang',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'Chữ Hanifi',
+    ),
+    'Roro': Script(
+      'Roro',
+      'Chữ Rongorongo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'Chữ Runic',
+    ),
+    'Samr': Script(
+      'Samr',
+      'Chữ Samaritan',
+    ),
+    'Sara': Script(
+      'Sara',
+      'Chữ Sarati',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      'Chữ Nam Ả Rập cổ',
+    ),
+    'Saur': Script(
+      'Saur',
+      'Chữ Saurashtra',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'Chữ viết Ký hiệu',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'Chữ Shavian',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'Chữ Sharada',
+    ),
+    'Sind': Script(
+      'Sind',
+      'Chữ Khudawadi',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'Chữ Sinhala',
+    ),
+    'Sora': Script(
+      'Sora',
+      'Chữ Sora Sompeng',
+    ),
+    'Sund': Script(
+      'Sund',
+      'Chữ Xu-đăng',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'Chữ Syloti Nagri',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'Chữ Syria',
+    ),
+    'Syre': Script(
+      'Syre',
+      'Chữ Estrangelo Syriac',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'Chữ Tây Syria',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'Chữ Đông Syria',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'Chữ Tagbanwa',
+    ),
+    'Takr': Script(
+      'Takr',
+      'Chữ Takri',
+    ),
+    'Tale': Script(
+      'Tale',
+      'Chữ Thái Na',
+    ),
+    'Talu': Script(
+      'Talu',
+      'Chữ Thái Lặc mới',
+    ),
+    'Taml': Script(
+      'Taml',
+      'Chữ Tamil',
+    ),
+    'Tang': Script(
+      'Tang',
+      'Chữ Tangut',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'Chữ Thái Việt',
+    ),
+    'Telu': Script(
+      'Telu',
+      'Chữ Telugu',
+    ),
+    'Teng': Script(
+      'Teng',
+      'Chữ Tengwar',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'Chữ Tifinagh',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'Chữ Tagalog',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'Chữ Thaana',
+    ),
+    'Thai': Script(
+      'Thai',
+      'Chữ Thái',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'Chữ Tây Tạng',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'Chữ Tirhuta',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'Chữ Ugarit',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'Chữ Vai',
+    ),
+    'Visp': Script(
+      'Visp',
+      'Tiếng nói Nhìn thấy được',
+    ),
+    'Wara': Script(
+      'Wara',
+      'Chữ Varang Kshiti',
+    ),
+    'Wole': Script(
+      'Wole',
+      'Chữ Woleai',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'Chữ Ba Tư cổ',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'Chữ hình nêm Sumero-Akkadian',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'Chữ Di',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'Chữ Kế thừa',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'Ký hiệu Toán học',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'Biểu tượng',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'Ký hiệu',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'Chưa có chữ viết',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'Chung',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'Chữ viết không xác định',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsVi extends Variants {
+  VariantsVi._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'Phép chính tả Tiếng Đức Truyền thống',
+    ),
+    '1994': Variant(
+      '1994',
+      'Phép chính tả Resian Chuẩn hóa',
+    ),
+    '1996': Variant(
+      '1996',
+      'Phép chính tả Tiếng Đức năm 1996',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'Tiếng Pháp từ Cuối thời Trung cổ đến 1606',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      'Tiếng Pháp Hiện đại Thời kỳ đầu',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      'Hàn lâm',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      'La Mã hóa ALA-LC, ấn bản năm 1997',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'Phương ngữ Aluku',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'Tiếng Armenia Miền Đông',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'Tiếng Armenia Miền Tây',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'Bảng chữ cái La-tinh Tiếng Turk Hợp nhất',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'Phương ngữ San Giorgio/Bila',
+    ),
+    'BOHORIC': Variant(
+      'BOHORIC',
+      'Bảng chữ cái Bohorič',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'Tiếng Boontling',
+    ),
+    'DAJNKO': Variant(
+      'DAJNKO',
+      'Bảng chữ cái Dajnko',
+    ),
+    'EMODENG': Variant(
+      'EMODENG',
+      'Tiếng Anh Hiện đại Thời kỳ đầu',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'Ngữ âm học IPA',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'Ngữ âm học UPA',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      'La mã hóa Hepburn',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'Phép chính tả Chung',
+    ),
+    'KSCOR': Variant(
+      'KSCOR',
+      'Phép chính tả Chuẩn',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'Phương ngữ Lipovaz của người Resian',
+    ),
+    'METELKO': Variant(
+      'METELKO',
+      'Bảng chữ cái Metelko',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'Đơn âm',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'Phương ngữ Ndyuka',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'Phương ngữ Natisone',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Phương ngữ Gniva/Njiva',
+    ),
+    'NULIK': Variant(
+      'NULIK',
+      'Tiếng Volapük Hiện đại',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'Phương ngữ Oseacco/Osojane',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'Phương ngữ Pamaka',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'La Mã hóa Bính âm',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'Đa âm',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Máy tính',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'Phép chính tả Sửa đổi',
+    ),
+    'RIGIK': Variant(
+      'RIGIK',
+      'Tiếng Volapük Cổ điển',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'Tiếng Resian',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'Tiếng Saho',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'Tiếng Anh chuẩn tại Scotland',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'Phương ngữ Liverpool',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'Phương ngữ Stolvizza/Solbica',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'Phép chính tả Taraskievica',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'Phép chính tả Hợp nhất',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      'Phép chính tả Sửa đổi Hợp nhất',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'Tiếng Valencia',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'La Mã hóa Wade-Giles',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -8711,6 +9579,1363 @@ class TerritoriesVi implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabwe',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesVi extends TimeZones {
+  TimeZonesVi._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'Giờ {0}',
+            regionFormatDaylight: 'Giờ mùa hè {0}',
+            regionFormatStandard: 'Giờ chuẩn {0}',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Asuncion': TimeZoneNames(
+      city: 'Asunción',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      city: 'Bahia Banderas',
+    ),
+    'America/Cancun': TimeZoneNames(
+      city: 'Cancun',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      city: 'Ciudad Juárez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      city: 'Atikokan',
+    ),
+    'America/Curacao': TimeZoneNames(
+      city: 'Curaçao',
+    ),
+    'America/Godthab': TimeZoneNames(
+      city: 'Nuuk',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      city: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      city: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      city: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      city: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      city: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      city: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      city: 'Vevay, Indiana',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      city: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      city: 'Lower Prince’s Quarter',
+    ),
+    'America/Merida': TimeZoneNames(
+      city: 'Merida',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      city: 'Beulah, Bắc Dakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      city: 'New Salem, Bắc Dakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      city: 'Center, Bắc Dakota',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      city: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      city: 'St. Barthélemy',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      city: 'St. John’s',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      city: 'St. Kitts',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      city: 'St. Lucia',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      city: 'St. Thomas',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      city: 'St. Vincent',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      city: 'Faroe',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      city: 'Nam Georgia',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      city: 'St. Helena',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Giờ chuẩn Ai-len',
+      ),
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      city: 'Đảo Man',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      city: 'Kiev',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Giờ Mùa Hè Anh',
+      ),
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      city: 'Mát-xcơ-va',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      city: 'Praha',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      city: 'Asmara',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      city: 'São Tomé',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      city: 'Kolkata',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      city: 'Hồng Kông',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      city: 'Kathmandu',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      city: 'Ma Cao',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      city: 'Bình Nhưỡng',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      city: 'Kostanay',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      city: 'Rangoon',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      city: 'TP Hồ Chí Minh',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      city: 'Thượng Hải',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      city: 'Đài Bắc',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      city: 'Ulan Bator',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      city: 'Viêng Chăn',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      city: 'Réunion',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      city: 'Enderbury',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      short: TimeZoneName(
+        generic: 'Giờ HST',
+        standard: 'HST',
+        daylight: 'HDT',
+      ),
+      city: 'Honolulu',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      city: 'Pohnpei',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      city: 'Chuuk',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      city: 'Dumont d’Urville',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'Giờ Phối hợp Quốc tế',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      city: 'Thành phố không xác định',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'Giờ Acre',
+        standard: 'Giờ Chuẩn Acre',
+        daylight: 'Giờ Mùa Hè Acre',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'Giờ Afghanistan',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'Giờ Trung Phi',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'Giờ Đông Phi',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'Giờ Chuẩn Nam Phi',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Giờ Tây Phi',
+        standard: 'Giờ Chuẩn Tây Phi',
+        daylight: 'Giờ Mùa Hè Tây Phi',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'Giờ Alaska',
+        standard: 'Giờ Chuẩn Alaska',
+        daylight: 'Giờ Mùa Hè Alaska',
+      ),
+      short: TimeZoneName(
+        generic: 'AKT',
+        standard: 'AKST',
+        daylight: 'AKDT',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'Giờ Almaty',
+        standard: 'Giờ Chuẩn Almaty',
+        daylight: 'Giờ Mùa Hè Almaty',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'Giờ Amazon',
+        standard: 'Giờ Chuẩn Amazon',
+        daylight: 'Giờ Mùa Hè Amazon',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'Giờ miền Trung',
+        standard: 'Giờ chuẩn miền Trung',
+        daylight: 'Giờ mùa hè miền Trung',
+      ),
+      short: TimeZoneName(
+        generic: 'CT',
+        standard: 'CST',
+        daylight: 'CDT',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Giờ miền Đông',
+        standard: 'Giờ chuẩn miền Đông',
+        daylight: 'Giờ mùa hè miền Đông',
+      ),
+      short: TimeZoneName(
+        generic: 'ET',
+        standard: 'EST',
+        daylight: 'EDT',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Giờ miền núi',
+        standard: 'Giờ chuẩn miền núi',
+        daylight: 'Giờ mùa hè miền núi',
+      ),
+      short: TimeZoneName(
+        generic: 'MT',
+        standard: 'MST',
+        daylight: 'MDT',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Giờ Thái Bình Dương',
+        standard: 'Giờ chuẩn Thái Bình Dương',
+        daylight: 'Giờ mùa hè Thái Bình Dương',
+      ),
+      short: TimeZoneName(
+        generic: 'PT',
+        standard: 'PST',
+        daylight: 'PDT',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'Giờ Anadyr',
+        standard: 'Giờ Chuẩn Anadyr',
+        daylight: 'Giờ mùa hè Anadyr',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'Giờ Apia',
+        standard: 'Giờ Chuẩn Apia',
+        daylight: 'Giờ Mùa Hè Apia',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'Giờ Aqtau',
+        standard: 'Giờ Chuẩn Aqtau',
+        daylight: 'Giờ Mùa Hè Aqtau',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Giờ Aqtobe',
+        standard: 'Giờ Chuẩn Aqtobe',
+        daylight: 'Giờ Mùa Hè Aqtobe',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'Giờ Ả Rập',
+        standard: 'Giờ chuẩn Ả Rập',
+        daylight: 'Giờ Mùa Hè Ả Rập',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'Giờ Argentina',
+        standard: 'Giờ Chuẩn Argentina',
+        daylight: 'Giờ Mùa Hè Argentina',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Giờ miền tây Argentina',
+        standard: 'Giờ chuẩn miền tây Argentina',
+        daylight: 'Giờ mùa hè miền tây Argentina',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'Giờ Armenia',
+        standard: 'Giờ Chuẩn Armenia',
+        daylight: 'Giờ Mùa Hè Armenia',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'Giờ Đại Tây Dương',
+        standard: 'Giờ Chuẩn Đại Tây Dương',
+        daylight: 'Giờ mùa hè Đại Tây Dương',
+      ),
+      short: TimeZoneName(
+        generic: 'AT',
+        standard: 'AST',
+        daylight: 'ADT',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Giờ Miền Trung Australia',
+        standard: 'Giờ Chuẩn Miền Trung Australia',
+        daylight: 'Giờ Mùa Hè Miền Trung Australia',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Giờ Miền Trung Tây Australia',
+        standard: 'Giờ Chuẩn Miền Trung Tây Australia',
+        daylight: 'Giờ Mùa Hè Miền Trung Tây Australia',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Giờ Miền Đông Australia',
+        standard: 'Giờ Chuẩn Miền Đông Australia',
+        daylight: 'Giờ Mùa Hè Miền Đông Australia',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Giờ Miền Tây Australia',
+        standard: 'Giờ Chuẩn Miền Tây Australia',
+        daylight: 'Giờ Mùa Hè Miền Tây Australia',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Giờ Azerbaijan',
+        standard: 'Giờ Chuẩn Azerbaijan',
+        daylight: 'Giờ Mùa Hè Azerbaijan',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'Giờ Azores',
+        standard: 'Giờ chuẩn Azores',
+        daylight: 'Giờ mùa hè Azores',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Giờ Bangladesh',
+        standard: 'Giờ Chuẩn Bangladesh',
+        daylight: 'Giờ Mùa Hè Bangladesh',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'Giờ Bhutan',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'Giờ Bolivia',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'Giờ Brasilia',
+        standard: 'Giờ Chuẩn Brasilia',
+        daylight: 'Giờ Mùa Hè Brasilia',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'Giờ Brunei Darussalam',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Giờ Cape Verde',
+        standard: 'Giờ Chuẩn Cape Verde',
+        daylight: 'Giờ Mùa Hè Cape Verde',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'Giờ Casey',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'Giờ Chamorro',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'Giờ Chatham',
+        standard: 'Giờ Chuẩn Chatham',
+        daylight: 'Giờ Mùa Hè Chatham',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'Giờ Chile',
+        standard: 'Giờ Chuẩn Chile',
+        daylight: 'Giờ Mùa Hè Chile',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'Giờ Trung Quốc',
+        standard: 'Giờ Chuẩn Trung Quốc',
+        daylight: 'Giờ Mùa Hè Trung Quốc',
+      ),
+    ),
+    'Choibalsan': MetaZone(
+      code: 'Choibalsan',
+      long: TimeZoneName(
+        generic: 'Giờ Choibalsan',
+        standard: 'Giờ Chuẩn Choibalsan',
+        daylight: 'Giờ Mùa Hè Choibalsan',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'Giờ Đảo Christmas',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'Giờ Quần Đảo Cocos',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'Giờ Colombia',
+        standard: 'Giờ Chuẩn Colombia',
+        daylight: 'Giờ Mùa Hè Colombia',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'Giờ Quần Đảo Cook',
+        standard: 'Giờ Chuẩn Quần Đảo Cook',
+        daylight: 'Giờ Nửa Mùa Hè Quần Đảo Cook',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'Giờ Cuba',
+        standard: 'Giờ Chuẩn Cuba',
+        daylight: 'Giờ Mùa Hè Cuba',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'Giờ Davis',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'Giờ Dumont-d’Urville',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'Giờ Đông Timor',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'Giờ Đảo Phục Sinh',
+        standard: 'Giờ Chuẩn Đảo Phục Sinh',
+        daylight: 'Giờ Mùa Hè Đảo Phục Sinh',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'Giờ Ecuador',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Giờ Trung Âu',
+        standard: 'Giờ chuẩn Trung Âu',
+        daylight: 'Giờ mùa hè Trung Âu',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Giờ Đông Âu',
+        standard: 'Giờ chuẩn Đông Âu',
+        daylight: 'Giờ mùa hè Đông Âu',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'Giờ Viễn đông Châu Âu',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Giờ Tây Âu',
+        standard: 'Giờ Chuẩn Tây Âu',
+        daylight: 'Giờ mùa hè Tây Âu',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'Giờ Quần Đảo Falkland',
+        standard: 'Giờ Chuẩn Quần Đảo Falkland',
+        daylight: 'Giờ Mùa Hè Quần Đảo Falkland',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'Giờ Fiji',
+        standard: 'Giờ Chuẩn Fiji',
+        daylight: 'Giờ Mùa Hè Fiji',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'Giờ Guiana thuộc Pháp',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'Giờ Nam Cực và Nam Nước Pháp',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'Giờ Galapagos',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'Giờ Gambier',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'Giờ Georgia',
+        standard: 'Giờ Chuẩn Georgia',
+        daylight: 'Giờ Mùa Hè Georgia',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'Giờ Quần Đảo Gilbert',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'Giờ Trung bình Greenwich',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Giờ Miền Đông Greenland',
+        standard: 'Giờ Chuẩn Miền Đông Greenland',
+        daylight: 'Giờ Mùa Hè Miền Đông Greenland',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Giờ Miền Tây Greenland',
+        standard: 'Giờ Chuẩn Miền Tây Greenland',
+        daylight: 'Giờ Mùa Hè Miền Tây Greenland',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'Giờ Chuẩn Guam',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'Giờ Chuẩn Vùng Vịnh',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'Giờ Guyana',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Giờ Hawaii-Aleut',
+        standard: 'Giờ Chuẩn Hawaii-Aleut',
+        daylight: 'Giờ Mùa Hè Hawaii-Aleut',
+      ),
+      short: TimeZoneName(
+        generic: 'HAT',
+        standard: 'HAST',
+        daylight: 'HADT',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Giờ Hồng Kông',
+        standard: 'Giờ Chuẩn Hồng Kông',
+        daylight: 'Giờ Mùa Hè Hồng Kông',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'Giờ Hovd',
+        standard: 'Giờ Chuẩn Hovd',
+        daylight: 'Giờ Mùa Hè Hovd',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'Giờ Chuẩn Ấn Độ',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'Giờ Ấn Độ Dương',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'Giờ Đông Dương',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'Giờ Miền Trung Indonesia',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'Giờ Miền Đông Indonesia',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'Giờ Miền Tây Indonesia',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'Giờ Iran',
+        standard: 'Giờ Chuẩn Iran',
+        daylight: 'Giờ Mùa Hè Iran',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Giờ Irkutsk',
+        standard: 'Giờ Chuẩn Irkutsk',
+        daylight: 'Giờ Mùa Hè Irkutsk',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'Giờ Israel',
+        standard: 'Giờ Chuẩn Israel',
+        daylight: 'Giờ Mùa Hè Israel',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'Giờ Nhật Bản',
+        standard: 'Giờ Chuẩn Nhật Bản',
+        daylight: 'Giờ Mùa Hè Nhật Bản',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Giờ Petropavlovsk-Kamchatski',
+        standard: 'Giờ chuẩn Petropavlovsk-Kamchatski',
+        daylight: 'Giờ mùa hè Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'Giờ Miền Đông Kazakhstan',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'Giờ Miền Tây Kazakhstan',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'Giờ Hàn Quốc',
+        standard: 'Giờ Chuẩn Hàn Quốc',
+        daylight: 'Giờ Mùa Hè Hàn Quốc',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'Giờ Kosrae',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Giờ Krasnoyarsk',
+        standard: 'Giờ Chuẩn Krasnoyarsk',
+        daylight: 'Giờ Mùa Hè Krasnoyarsk',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'Giờ Kyrgystan',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'Giờ Lanka',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'Giờ Quần Đảo Line',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Giờ Lord Howe',
+        standard: 'Giờ Chuẩn Lord Howe',
+        daylight: 'Giờ Mùa Hè Lord Howe',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'Giờ Ma Cao',
+        standard: 'Giờ Chuẩn Ma Cao',
+        daylight: 'Giờ Mùa Hè Ma Cao',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'Giờ Magadan',
+        standard: 'Giờ Chuẩn Magadan',
+        daylight: 'Giờ mùa hè Magadan',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'Giờ Malaysia',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'Giờ Maldives',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'Giờ Marquesas',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'Giờ Quần Đảo Marshall',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'Giờ Mauritius',
+        standard: 'Giờ Chuẩn Mauritius',
+        daylight: 'Giờ Mùa Hè Mauritius',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'Giờ Mawson',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Giờ Thái Bình Dương Mexico',
+        standard: 'Giờ Chuẩn Thái Bình Dương Mexico',
+        daylight: 'Giờ Mùa Hè Thái Bình Dương Mexico',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'Giờ Ulan Bator',
+        standard: 'Giờ chuẩn Ulan Bator',
+        daylight: 'Giờ mùa hè Ulan Bator',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'Giờ Matxcơva',
+        standard: 'Giờ Chuẩn Matxcơva',
+        daylight: 'Giờ Mùa Hè Matxcơva',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'Giờ Myanmar',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'Giờ Nauru',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'Giờ Nepal',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Giờ New Caledonia',
+        standard: 'Giờ Chuẩn New Caledonia',
+        daylight: 'Giờ Mùa Hè New Caledonia',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Giờ New Zealand',
+        standard: 'Giờ Chuẩn New Zealand',
+        daylight: 'Giờ Mùa Hè New Zealand',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Giờ Newfoundland',
+        standard: 'Giờ Chuẩn Newfoundland',
+        daylight: 'Giờ Mùa Hè Newfoundland',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'Giờ Niue',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'Giờ Đảo Norfolk',
+        standard: 'Giờ Chuẩn Đảo Norfolk',
+        daylight: 'Giờ Mùa Hè Đảo Norfolk',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'Giờ Fernando de Noronha',
+        standard: 'Giờ Chuẩn Fernando de Noronha',
+        daylight: 'Giờ Mùa Hè Fernando de Noronha',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'Giờ Quần Đảo Bắc Mariana',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Giờ Novosibirsk',
+        standard: 'Giờ chuẩn Novosibirsk',
+        daylight: 'Giờ mùa hè Novosibirsk',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'Giờ Omsk',
+        standard: 'Giờ chuẩn Omsk',
+        daylight: 'Giờ mùa hè Omsk',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'Giờ Pakistan',
+        standard: 'Giờ Chuẩn Pakistan',
+        daylight: 'Giờ Mùa Hè Pakistan',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'Giờ Palau',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'Giờ Papua New Guinea',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'Giờ Paraguay',
+        standard: 'Giờ Chuẩn Paraguay',
+        daylight: 'Giờ Mùa Hè Paraguay',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'Giờ Peru',
+        standard: 'Giờ Chuẩn Peru',
+        daylight: 'Giờ Mùa Hè Peru',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'Giờ Philippin',
+        standard: 'Giờ Chuẩn Philippin',
+        daylight: 'Giờ Mùa Hè Philippin',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'Giờ Quần Đảo Phoenix',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Giờ St. Pierre và Miquelon',
+        standard: 'Giờ Chuẩn St. Pierre và Miquelon',
+        daylight: 'Giờ Mùa Hè Saint Pierre và Miquelon',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'Giờ Pitcairn',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'Giờ Ponape',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'Giờ Bình Nhưỡng',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Giờ Qyzylorda',
+        standard: 'Giờ Chuẩn Qyzylorda',
+        daylight: 'Giờ Mùa Hè Qyzylorda',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'Giờ Reunion',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'Giờ Rothera',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Giờ Sakhalin',
+        standard: 'Giờ Chuẩn Sakhalin',
+        daylight: 'Giờ mùa hè Sakhalin',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'Giờ Samara',
+        standard: 'Giờ Chuẩn Samara',
+        daylight: 'Giờ mùa hè Samara',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'Giờ Samoa',
+        standard: 'Giờ Chuẩn Samoa',
+        daylight: 'Giờ ban ngày Samoa',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'Giờ Seychelles',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'Giờ Singapore',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'Giờ Quần Đảo Solomon',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'Giờ Nam Georgia',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'Giờ Suriname',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'Giờ Syowa',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'Giờ Tahiti',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'Giờ Đài Bắc',
+        standard: 'Giờ Chuẩn Đài Bắc',
+        daylight: 'Giờ Mùa Hè Đài Bắc',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'Giờ Tajikistan',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'Giờ Tokelau',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'Giờ Tonga',
+        standard: 'Giờ Chuẩn Tonga',
+        daylight: 'Giờ Mùa Hè Tonga',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'Giờ Chuuk',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Giờ Turkmenistan',
+        standard: 'Giờ Chuẩn Turkmenistan',
+        daylight: 'Giờ Mùa Hè Turkmenistan',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'Giờ Tuvalu',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'Giờ Uruguay',
+        standard: 'Giờ Chuẩn Uruguay',
+        daylight: 'Giờ Mùa Hè Uruguay',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Giờ Uzbekistan',
+        standard: 'Giờ Chuẩn Uzbekistan',
+        daylight: 'Giờ Mùa Hè Uzbekistan',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Giờ Vanuatu',
+        standard: 'Giờ Chuẩn Vanuatu',
+        daylight: 'Giờ Mùa Hè Vanuatu',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'Giờ Venezuela',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Giờ Vladivostok',
+        standard: 'Giờ Chuẩn Vladivostok',
+        daylight: 'Giờ mùa hè Vladivostok',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'Giờ Volgograd',
+        standard: 'Giờ Chuẩn Volgograd',
+        daylight: 'Giờ Mùa Hè Volgograd',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'Giờ Vostok',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'Giờ Đảo Wake',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'Giờ Wallis và Futuna',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Giờ Yakutsk',
+        standard: 'Giờ Chuẩn Yakutsk',
+        daylight: 'Giờ mùa hè Yakutsk',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Giờ Yekaterinburg',
+        standard: 'Giờ Chuẩn Yekaterinburg',
+        daylight: 'Giờ mùa hè Yekaterinburg',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'Giờ Yukon',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

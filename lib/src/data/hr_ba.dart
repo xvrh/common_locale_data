@@ -1,15 +1,12 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+
+import '../../common_locale_data.dart';
 
 const _locale = 'hr-BA';
 
-/// Translations of [CommonLocaleData] for hr-BA
+/// Translations of [CommonLocaleData]
 class CommonLocaleDataHrBA implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataHrBA();
@@ -22,6 +19,14 @@ class CommonLocaleDataHrBA implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsHrBA._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsHrBA._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsHrBA._();
   @override
   Units get units => _units;
@@ -29,6 +34,10 @@ class CommonLocaleDataHrBA implements CommonLocaleData {
   static final _territories = TerritoriesHrBA._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesHrBA._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesHrBA extends Languages {
@@ -2316,6 +2325,837 @@ class LanguagesHrBA extends Languages {
     'zza': Language(
       'zza',
       'zazaki',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsHrBA extends Scripts {
+  ScriptsHrBA._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'adlam pismo',
+    ),
+    'Afak': Script(
+      'Afak',
+      'afaka pismo',
+    ),
+    'Arab': Script(
+      'Arab',
+      'arapsko pismo',
+      variant: 'perzijsko-arapsko pismo',
+    ),
+    'Aran': Script(
+      'Aran',
+      'nastaliq pismo',
+    ),
+    'Armi': Script(
+      'Armi',
+      'aramejsko pismo',
+    ),
+    'Armn': Script(
+      'Armn',
+      'armensko pismo',
+    ),
+    'Avst': Script(
+      'Avst',
+      'avestansko pismo',
+    ),
+    'Bali': Script(
+      'Bali',
+      'balijsko pismo',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'bamum pismo',
+    ),
+    'Bass': Script(
+      'Bass',
+      'bassa vah pismo',
+    ),
+    'Batk': Script(
+      'Batk',
+      'batak pismo',
+    ),
+    'Beng': Script(
+      'Beng',
+      'bengalsko pismo',
+    ),
+    'Blis': Script(
+      'Blis',
+      'blissymbols',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'bopomofo pismo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'brahmi pismo',
+    ),
+    'Brai': Script(
+      'Brai',
+      'brajica',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'buginsko pismo',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'buhid pismo',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'čakmansko pismo',
+    ),
+    'Cans': Script(
+      'Cans',
+      'unificirani kanadski aboriđinski slogovi',
+    ),
+    'Cari': Script(
+      'Cari',
+      'karijsko pismo',
+    ),
+    'Cham': Script(
+      'Cham',
+      'čamsko pismo',
+    ),
+    'Cher': Script(
+      'Cher',
+      'čeroki pismo',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'cirth pismo',
+    ),
+    'Copt': Script(
+      'Copt',
+      'koptsko pismo',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'cypriot pismo',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'ćirilica',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'staroslavenska crkvena čirilica',
+    ),
+    'Deva': Script(
+      'Deva',
+      'devangari pismo',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'deseret pismo',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'egipatsko narodno pismo',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'egipatsko hijeratsko pismo',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'egipatski hijeroglifi',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'etiopsko pismo',
+    ),
+    'Geok': Script(
+      'Geok',
+      'gruzijsko khutsuri pismo',
+    ),
+    'Geor': Script(
+      'Geor',
+      'gruzijsko pismo',
+    ),
+    'Glag': Script(
+      'Glag',
+      'glagoljica',
+    ),
+    'Goth': Script(
+      'Goth',
+      'gotičko pismo',
+    ),
+    'Gran': Script(
+      'Gran',
+      'grantha pismo',
+    ),
+    'Grek': Script(
+      'Grek',
+      'grčko pismo',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'gudžaratsko pismo',
+    ),
+    'Guru': Script(
+      'Guru',
+      'gurmukhi pismo',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'hanb pismo',
+    ),
+    'Hang': Script(
+      'Hang',
+      'hangul pismo',
+    ),
+    'Hani': Script(
+      'Hani',
+      'hansko pismo',
+    ),
+    'Hano': Script(
+      'Hano',
+      'hanunoo pismo',
+    ),
+    'Hans': Script(
+      'Hans',
+      'pojednostavljeno pismo',
+      standAlone: 'pojednostavljeno hansko pismo',
+    ),
+    'Hant': Script(
+      'Hant',
+      'tradicionalno pismo',
+      standAlone: 'tradicionalno hansko pismo',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'hebrejsko pismo',
+    ),
+    'Hira': Script(
+      'Hira',
+      'hiragana pismo',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'anatolijski hijeroglifi',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'pahawh hmong pismo',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'japansko slogovno pismo',
+    ),
+    'Hung': Script(
+      'Hung',
+      'staro mađarsko pismo',
+    ),
+    'Inds': Script(
+      'Inds',
+      'indijsko pismo',
+    ),
+    'Ital': Script(
+      'Ital',
+      'staro talijansko pismo',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'jamo pismo',
+    ),
+    'Java': Script(
+      'Java',
+      'javansko pismo',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'japansko pismo',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      'jurchen pismo',
+    ),
+    'Kali': Script(
+      'Kali',
+      'kayah li pismo',
+    ),
+    'Kana': Script(
+      'Kana',
+      'katakana pismo',
+    ),
+    'Khar': Script(
+      'Khar',
+      'kharoshthi pismo',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'kmersko pismo',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'khojki pismo',
+    ),
+    'Knda': Script(
+      'Knda',
+      'kannada pismo',
+    ),
+    'Kore': Script(
+      'Kore',
+      'korejsko pismo',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      'kpelle pismo',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'kaithi pismo',
+    ),
+    'Lana': Script(
+      'Lana',
+      'lanna pismo',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'laosko pismo',
+    ),
+    'Latf': Script(
+      'Latf',
+      'fraktur latinica',
+    ),
+    'Latg': Script(
+      'Latg',
+      'keltska latinica',
+    ),
+    'Latn': Script(
+      'Latn',
+      'latinica',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'lepcha pismo',
+    ),
+    'Limb': Script(
+      'Limb',
+      'limbu pismo',
+    ),
+    'Lina': Script(
+      'Lina',
+      'linear A pismo',
+    ),
+    'Linb': Script(
+      'Linb',
+      'linear B pismo',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'fraser pismo',
+    ),
+    'Loma': Script(
+      'Loma',
+      'loma pismo',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'likijsko pismo',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'lidijsko pismo',
+    ),
+    'Mand': Script(
+      'Mand',
+      'mandai pismo',
+    ),
+    'Mani': Script(
+      'Mani',
+      'manihejsko pismo',
+    ),
+    'Maya': Script(
+      'Maya',
+      'majanski hijeroglifi',
+    ),
+    'Mend': Script(
+      'Mend',
+      'mende pismo',
+    ),
+    'Merc': Script(
+      'Merc',
+      'meroitski kurziv',
+    ),
+    'Mero': Script(
+      'Mero',
+      'meroitic pismo',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'malajalamsko pismo',
+    ),
+    'Mong': Script(
+      'Mong',
+      'mongolsko pismo',
+    ),
+    'Moon': Script(
+      'Moon',
+      'moon pismo',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'mro pismo',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'meitei mayek pismo',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'mjanmarsko pismo',
+    ),
+    'Narb': Script(
+      'Narb',
+      'staro sjevernoarapsko pismo',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'nabatejsko pismo',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      'naxi geba pismo',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'n’ko pismo',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'nushu pismo',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'ogham pismo',
+    ),
+    'Olck': Script(
+      'Olck',
+      'ol chiki pismo',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'orkhon pismo',
+    ),
+    'Orya': Script(
+      'Orya',
+      'orijsko pismo',
+    ),
+    'Osma': Script(
+      'Osma',
+      'osmanya pismo',
+    ),
+    'Palm': Script(
+      'Palm',
+      'palmyrene pismo',
+    ),
+    'Perm': Script(
+      'Perm',
+      'staro permic pismo',
+    ),
+    'Phag': Script(
+      'Phag',
+      'phags-pa pismo',
+    ),
+    'Phli': Script(
+      'Phli',
+      'pisani pahlavi',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'psalter pahlavi',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'pahlavi pismo',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'feničko pismo',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'pollard fonetsko pismo',
+    ),
+    'Prti': Script(
+      'Prti',
+      'pisani parthian',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'rejang pismo',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'hanifi pismo',
+    ),
+    'Roro': Script(
+      'Roro',
+      'rongorongo pismo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'runsko pismo',
+    ),
+    'Samr': Script(
+      'Samr',
+      'samaritansko pismo',
+    ),
+    'Sara': Script(
+      'Sara',
+      'sarati pismo',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      'staro južnoarapsko pismo',
+    ),
+    'Saur': Script(
+      'Saur',
+      'saurashtra pismo',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'znakovno pismo',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'shavian pismo',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'sharada pismo',
+    ),
+    'Sind': Script(
+      'Sind',
+      'khudawadi pismo',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'sinhaleško pismo',
+    ),
+    'Sora': Script(
+      'Sora',
+      'sora sompeng pismo',
+    ),
+    'Sund': Script(
+      'Sund',
+      'sundansko pismo',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'syloti nagri pismo',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'sirijsko pismo',
+    ),
+    'Syre': Script(
+      'Syre',
+      'sirijsko estrangelo pismo',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'pismo zapadne Sirije',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'pismo istočne Sirije',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'tagbanwa pismo',
+    ),
+    'Takr': Script(
+      'Takr',
+      'takri pismo',
+    ),
+    'Tale': Script(
+      'Tale',
+      'tai le pismo',
+    ),
+    'Talu': Script(
+      'Talu',
+      'novo tai lue pismo',
+    ),
+    'Taml': Script(
+      'Taml',
+      'tamilsko pismo',
+    ),
+    'Tang': Script(
+      'Tang',
+      'tangut pismo',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'tai viet pismo',
+    ),
+    'Telu': Script(
+      'Telu',
+      'teluško pismo',
+    ),
+    'Teng': Script(
+      'Teng',
+      'tengwar pismo',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'tifinagh pismo',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'tagalog pismo',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'thaana pismo',
+    ),
+    'Thai': Script(
+      'Thai',
+      'tajsko pismo',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'tibetansko pismo',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'tirhuta pismo',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'ugaritsko pismo',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'vai pismo',
+    ),
+    'Visp': Script(
+      'Visp',
+      'Visible Speech',
+    ),
+    'Wara': Script(
+      'Wara',
+      'varang kshiti pismo',
+    ),
+    'Wole': Script(
+      'Wole',
+      'woleai pismo',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'staro perzijsko pismo',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'sumersko-akadsko cuneiform pismo',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'yi pismo',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'nasljedno pismo',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'matematičko znakovlje',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'emotikoni',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'simboli',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'jezik bez pismenosti',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'zajedničko pismo',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'nepoznato pismo',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsHrBA extends Variants {
+  VariantsHrBA._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'tradicionalan njemački pravopis',
+    ),
+    '1994': Variant(
+      '1994',
+      'standardizirani resian pravopis',
+    ),
+    '1996': Variant(
+      '1996',
+      'njemačka ortografija iz 1996.',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'kasni srednjofrancuski do 1606.',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      'rani moderni francuski',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      'akademski',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'aluku dijalekt',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'istočno-armenijski',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'zapadno-armenijski',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'unificirana turska abeceda',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'san giorgio/bila dijalekt',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'boontling',
+    ),
+    'EMODENG': Variant(
+      'EMODENG',
+      'rani moderni engleski',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'IPA fonetika',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'UPA fonetika',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'Uobičajeni pravopis',
+    ),
+    'KSCOR': Variant(
+      'KSCOR',
+      'standardna ortografija',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'lipovački dijalekt resian jezika',
+    ),
+    'METELKO': Variant(
+      'METELKO',
+      'metelčica',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'monotono',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'natisone dijalekt',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Gniva/Njiva dijalekt',
+    ),
+    'NULIK': Variant(
+      'NULIK',
+      'moderni volapuk',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'oseacco/osojane dijalekt',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'pamaka dijalekt',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'Pinyin romanizacija',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'politono',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Računalo',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'izmijenjen pravopis',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'resian',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'saho',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'škotski standardni engleski',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'scouse',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'stolvizza/solbica dijalekt',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'taraskievica pravopis',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'ujednačena ortografija',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      'ujednačena revidirana ortografija',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'valencijski',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Wade-Giles romanizacija',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -9352,6 +10192,1560 @@ class TerritoriesHrBA implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabve',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesHrBA extends TimeZones {
+  TimeZonesHrBA._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm; -HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: '{0}',
+            regionFormatDaylight: '{0}, ljetno vrijeme',
+            regionFormatStandard: '{0}, standardno vrijeme',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Anguilla': TimeZoneNames(
+      city: 'Angvila',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      city: 'Asunción',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      city: 'Bahia Banderas',
+    ),
+    'America/Cancun': TimeZoneNames(
+      city: 'Cancun',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      city: 'Ciudad Juárez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      city: 'Atikokan',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      city: 'Kostarika',
+    ),
+    'America/Curacao': TimeZoneNames(
+      city: 'Curaçao',
+    ),
+    'America/Dominica': TimeZoneNames(
+      city: 'Dominika',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      city: 'Salvador',
+    ),
+    'America/Godthab': TimeZoneNames(
+      city: 'Nuuk',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      city: 'Guadalupe',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      city: 'Gvatemala',
+    ),
+    'America/Guyana': TimeZoneNames(
+      city: 'Gvajana',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      city: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      city: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      city: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      city: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      city: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      city: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      city: 'Vevay, Indiana',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      city: 'Jamajka',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      city: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      city: 'Lower Prince’s Quarter',
+    ),
+    'America/Merida': TimeZoneNames(
+      city: 'Merida',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      city: 'Ciudad de México',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      city: 'Beulah, Sjeverna Dakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      city: 'New Salem, Sjeverna Dakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      city: 'Center, Sjeverna Dakota',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      city: 'Portoriko',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      city: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      city: 'Saint Barthélemy',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      city: 'St. John’s',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      city: 'St. Kitts',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      city: 'St. Lucia',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      city: 'St. Thomas',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      city: 'St. Vincent',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      city: 'Azorski otoci',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      city: 'Kanari',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      city: 'Ferojski otoci',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      city: 'Južna Georgija',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      city: 'St. Helena',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      city: 'Andora',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      city: 'Astrahan',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      city: 'Atena',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      city: 'Beograd',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      city: 'Bruxelles',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      city: 'Bukurešt',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      city: 'Budimpešta',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      city: 'Kišinjev',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      city: 'Kopenhagen',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'irsko standardno vrijeme',
+      ),
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      city: 'Otok Man',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      city: 'Kalinjingrad',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      city: 'Kijev',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      city: 'Lisabon',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'britansko ljetno vrijeme',
+      ),
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      city: 'Luksemburg',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      city: 'Monako',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      city: 'Moskva',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      city: 'Pariz',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      city: 'Prag',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      city: 'Rim',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      city: 'Simferopolj',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      city: 'Skoplje',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      city: 'Sofija',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      city: 'Tirana',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      city: 'Uljanovsk',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      city: 'Vatikan',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      city: 'Beč',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      city: 'Varšava',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      city: 'Zürich',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      city: 'Addis Abeba',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      city: 'Alžir',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      city: 'Asmara',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      city: 'Kairo',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      city: 'Džibuti',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      city: 'Lomé',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      city: 'São Tomé',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      city: 'Alma Ata',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      city: 'Anadir',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      city: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      city: 'Aktobe',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      city: 'Ašgabat',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      city: 'Bagdad',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      city: 'Bahrein',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      city: 'Biškek',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      city: 'Brunej',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      city: 'Kolkata',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      city: 'Čita',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      city: 'Damask',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      city: 'Dušanbe',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      city: 'Džakarta',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      city: 'Jeruzalem',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      city: 'Kamčatka',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      city: 'Kathmandu',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      city: 'Handiga',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      city: 'Krasnojarsk',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      city: 'Kuvajt',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      city: 'Makao',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      city: 'Nikozija',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      city: 'Novokuznjeck',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      city: 'Pjongjang',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      city: 'Katar',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      city: 'Kostanay',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      city: 'Kizilorda',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      city: 'Rangoon',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      city: 'Rijad',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      city: 'Ho Ši Min',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      city: 'Sahalin',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      city: 'Šangaj',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      city: 'Singapur',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      city: 'Srednekolimsk',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      city: 'Taškent',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      city: 'Teheran',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      city: 'Ulan Bator',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      city: 'Jakutsk',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      city: 'Jekaterinburg',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      city: 'Erevan',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      city: 'Maldivi',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      city: 'Mauricijus',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      city: 'Réunion',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      city: 'Enderbury',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      city: 'Fidži',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      city: 'Honolulu',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      city: 'Markižansko otočje',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      city: 'Pohnpei',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      city: 'Chuuk',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      city: 'Dumont d’Urville',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'koordinirano svjetsko vrijeme',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      city: 'Nepoznati grad',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'Acre vrijeme',
+        standard: 'Acre standardno vrijeme',
+        daylight: 'Acre ljetno vrijeme',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'afganistansko vrijeme',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'srednjoafričko vrijeme',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'istočnoafričko vrijeme',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'južnoafričko vrijeme',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'zapadnoafričko vrijeme',
+        standard: 'zapadnoafričko standardno vrijeme',
+        daylight: 'zapadnoafričko ljetno vrijeme',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'aljaško vrijeme',
+        standard: 'aljaško standardno vrijeme',
+        daylight: 'aljaško ljetno vrijeme',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'altmajsko vrijeme',
+        standard: 'altmajsko standardno vrijeme',
+        daylight: 'altmajsko ljetno vrijeme',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'amazonsko vrijeme',
+        standard: 'amazonsko standardno vrijeme',
+        daylight: 'amazonsko ljetno vrijeme',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'središnje vrijeme',
+        standard: 'središnje standardno vrijeme',
+        daylight: 'središnje ljetno vrijeme',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'istočno vrijeme',
+        standard: 'istočno standardno vrijeme',
+        daylight: 'istočno ljetno vrijeme',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'planinsko vrijeme',
+        standard: 'planinsko standardno vrijeme',
+        daylight: 'planinsko ljetno vrijeme',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'pacifičko vrijeme',
+        standard: 'pacifičko standardno vrijeme',
+        daylight: 'pacifičko ljetno vrijeme',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'anadirsko vrijeme',
+        standard: 'anadirsko standardno vrijeme',
+        daylight: 'anadirsko ljetno vrijeme',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'vrijeme Apije',
+        standard: 'standardno vrijeme Apije',
+        daylight: 'ljetno vrijeme Apije',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'vrijeme grada Aktau',
+        standard: 'standardno vrijeme grada Aktau',
+        daylight: 'ljetno vrijeme grada Aktau',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'vrijeme grada Aktobe',
+        standard: 'standardno vrijeme grada Aktobe',
+        daylight: 'ljetno vrijeme grada Aktobe',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'arapsko vrijeme',
+        standard: 'arapsko standardno vrijeme',
+        daylight: 'arapsko ljetno vrijeme',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'argentinsko vrijeme',
+        standard: 'argentinsko standardno vrijeme',
+        daylight: 'argentinsko ljetno vrijeme',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'zapadnoargentinsko vrijeme',
+        standard: 'zapadnoargentinsko standardno vrijeme',
+        daylight: 'zapadnoargentinsko ljetno vrijeme',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'armensko vrijeme',
+        standard: 'armensko standardno vrijeme',
+        daylight: 'armensko ljetno vrijeme',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'atlantsko vrijeme',
+        standard: 'atlantsko standardno vrijeme',
+        daylight: 'atlantsko ljetno vrijeme',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'srednjoaustralsko vrijeme',
+        standard: 'srednjoaustralsko standardno vrijeme',
+        daylight: 'srednjoaustralsko ljetno vrijeme',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'australsko središnje zapadno vrijeme',
+        standard: 'australsko središnje zapadno standardno vrijeme',
+        daylight: 'australsko središnje zapadno ljetno vrijeme',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'istočnoaustralsko vrijeme',
+        standard: 'istočnoaustralsko standardno vrijeme',
+        daylight: 'istočnoaustralsko ljetno vrijeme',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'zapadnoaustralsko vrijeme',
+        standard: 'zapadnoaustralsko standardno vrijeme',
+        daylight: 'zapadnoaustralsko ljetno vrijeme',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'azerbajdžansko vrijeme',
+        standard: 'azerbajdžansko standardno vrijeme',
+        daylight: 'azerbajdžansko ljetno vrijeme',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'azorsko vrijeme',
+        standard: 'azorsko standardno vrijeme',
+        daylight: 'azorsko ljetno vrijeme',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'bangladeško vrijeme',
+        standard: 'bangladeško standardno vrijeme',
+        daylight: 'bangladeško ljetno vrijeme',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'butansko vrijeme',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'bolivijsko vrijeme',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'brazilsko vrijeme',
+        standard: 'brazilsko standardno vrijeme',
+        daylight: 'brazilsko ljetno vrijeme',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'vrijeme za Brunej Darussalam',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'vrijeme Zelenortskog otočja',
+        standard: 'standardno vrijeme Zelenortskog otočja',
+        daylight: 'ljetno vrijeme Zelenortskog otočja',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'vrijeme Caseyja',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'standardno vrijeme Chamorra',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'vrijeme Chathama',
+        standard: 'standardno vrijeme Chathama',
+        daylight: 'ljetno vrijeme Chathama',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'čileansko vrijeme',
+        standard: 'čileansko standardno vrijeme',
+        daylight: 'čileansko ljetno vrijeme',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'kinesko vrijeme',
+        standard: 'kinesko standardno vrijeme',
+        daylight: 'kinesko ljetno vrijeme',
+      ),
+    ),
+    'Choibalsan': MetaZone(
+      code: 'Choibalsan',
+      long: TimeZoneName(
+        generic: 'choibalsansko vrijeme',
+        standard: 'choibalsansko standardno vrijeme',
+        daylight: 'choibalsansko ljetno vrijeme',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'vrijeme Božićnog otoka',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'vrijeme Kokosovih otoka',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'kolumbijsko vrijeme',
+        standard: 'kolumbijsko standardno vrijeme',
+        daylight: 'kolumbijsko ljetno vrijeme',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'vrijeme Cookovih otoka',
+        standard: 'standardno vrijeme Cookovih otoka',
+        daylight: 'Cookovi otoci, polusatni pomak, ljetno vrijeme',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'kubansko vrijeme',
+        standard: 'kubansko standardno vrijeme',
+        daylight: 'kubansko ljetno vrijeme',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'vrijeme Davisa',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'vrijeme Dumont-d’Urvillea',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'istočnotimorsko vrijeme',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'vrijeme Uskršnjeg otoka',
+        standard: 'standardno vrijeme Uskršnjeg otoka',
+        daylight: 'ljetno vrijeme Uskršnjeg otoka',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'ekvadorsko vrijeme',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'srednjoeuropsko vrijeme',
+        standard: 'srednjoeuropsko standardno vrijeme',
+        daylight: 'srednjoeuropsko ljetno vrijeme',
+      ),
+      short: TimeZoneName(
+        generic: 'CET',
+        standard: 'CET',
+        daylight: 'CEST',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'istočnoeuropsko vrijeme',
+        standard: 'istočnoeuropsko standardno vrijeme',
+        daylight: 'istočnoeuropsko ljetno vrijeme',
+      ),
+      short: TimeZoneName(
+        generic: 'EET',
+        standard: 'EET',
+        daylight: 'EEST',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'dalekoistočno europsko vrijeme',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'zapadnoeuropsko vrijeme',
+        standard: 'zapadnoeuropsko standardno vrijeme',
+        daylight: 'zapadnoeuropsko ljetno vrijeme',
+      ),
+      short: TimeZoneName(
+        generic: 'WET',
+        standard: 'WET',
+        daylight: 'WEST',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'falklandsko vrijeme',
+        standard: 'falklandsko standardno vrijeme',
+        daylight: 'falklandsko ljetno vrijeme',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'vrijeme Fidžija',
+        standard: 'standardno vrijeme Fidžija',
+        daylight: 'ljetno vrijeme Fidžija',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'vrijeme Francuske Gijane',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'vrijeme Francuskih južnih i antarktičkih teritorija',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'vrijeme Galapagosa',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'vrijeme Gambiera',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'gruzijsko vrijeme',
+        standard: 'gruzijsko standardno vrijeme',
+        daylight: 'gruzijsko ljetno vrijeme',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'vrijeme Gilbertovih otoka',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'univerzalno vrijeme',
+      ),
+      short: TimeZoneName(
+        standard: 'GMT',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'istočnogrenlandsko vrijeme',
+        standard: 'istočnogrenlandsko standardno vrijeme',
+        daylight: 'istočnogrenlandsko ljetno vrijeme',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'zapadnogrenlandsko vrijeme',
+        standard: 'zapadnogrenlandsko standardno vrijeme',
+        daylight: 'zapadnogrenlandsko ljetno vrijeme',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'guamsko standardno vrijeme',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'zaljevsko standardno vrijeme',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'gvajansko vrijeme',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'havajsko-aleutsko vrijeme',
+        standard: 'havajsko-aleutsko standardno vrijeme',
+        daylight: 'havajsko-aleutsko ljetno vrijeme',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'hongkonško vrijeme',
+        standard: 'hongkonško standardno vrijeme',
+        daylight: 'hongkonško ljetno vrijeme',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'hovdsko vrijeme',
+        standard: 'hovdsko standardno vrijeme',
+        daylight: 'hovdsko ljetno vrijeme',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'indijsko vrijeme',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'vrijeme Indijskog oceana',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'indokinesko vrijeme',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'srednjoindonezijsko vrijeme',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'istočnoindonezijsko vrijeme',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'zapadnoindonezijsko vrijeme',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'iransko vrijeme',
+        standard: 'iransko standardno vrijeme',
+        daylight: 'iransko ljetno vrijeme',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'irkutsko vrijeme',
+        standard: 'irkutsko standardno vrijeme',
+        daylight: 'irkutsko ljetno vrijeme',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'izraelsko vrijeme',
+        standard: 'izraelsko standardno vrijeme',
+        daylight: 'izraelsko ljetno vrijeme',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'japansko vrijeme',
+        standard: 'japansko standardno vrijeme',
+        daylight: 'japansko ljetno vrijeme',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Petropavlovsk-kamčatsko vrijeme',
+        standard: 'Petropavlovsk-kamčatsko standardno vrijeme',
+        daylight: 'Petropavlovsk-kamčatsko ljetno vrijeme',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'istočnokazahstansko vrijeme',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'zapadnokazahstansko vrijeme',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'korejsko vrijeme',
+        standard: 'korejsko standardno vrijeme',
+        daylight: 'korejsko ljetno vrijeme',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'vrijeme Kosrae',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'krasnojarsko vrijeme',
+        standard: 'krasnojarsko standardno vrijeme',
+        daylight: 'krasnojarsko ljetno vrijeme',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'kirgistansko vrijeme',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'lankansko vrijeme',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'vrijeme Ekvatorskih otoka',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'vrijeme otoka Lord Howe',
+        standard: 'standardno vrijeme otoka Lord Howe',
+        daylight: 'ljetno vrijeme otoka Lord Howe',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'makaosko vrijeme',
+        standard: 'standardno makaosko vrijeme',
+        daylight: 'ljetno makaosko vrijeme',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'magadansko vrijeme',
+        standard: 'magadansko standardno vrijeme',
+        daylight: 'magadansko ljetno vrijeme',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'malezijsko vrijeme',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'maldivsko vrijeme',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'markižansko vrijeme',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'vrijeme Maršalovih Otoka',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'vrijeme Mauricijusa',
+        standard: 'standardno vrijeme Mauricijusa',
+        daylight: 'ljetno vrijeme Mauricijusa',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'mawsonsko vrijeme',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'meksičko pacifičko vrijeme',
+        standard: 'meksičko pacifičko standardno vrijeme',
+        daylight: 'meksičko pacifičko ljetno vrijeme',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'ulanbatorsko vrijeme',
+        standard: 'ulanbatorsko standardno vrijeme',
+        daylight: 'ulanbatorsko ljetno vrijeme',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'moskovsko vrijeme',
+        standard: 'moskovsko standardno vrijeme',
+        daylight: 'moskovsko ljetno vrijeme',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'mjanmarsko vrijeme',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'vrijeme Naurua',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'nepalsko vrijeme',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'vrijeme Nove Kaledonije',
+        standard: 'standardno vrijeme Nove Kaledonije',
+        daylight: 'ljetno vrijeme Nove Kaledonije',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'novozelandsko vrijeme',
+        standard: 'novozelandsko standardno vrijeme',
+        daylight: 'novozelandsko ljetno vrijeme',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'newfoundlandsko vrijeme',
+        standard: 'newfoundlandsko standardno vrijeme',
+        daylight: 'newfoundlandsko ljetno vrijeme',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'vrijeme Niuea',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'vrijeme Otoka Norfolk',
+        standard: 'standardno vrijeme Otoka Norfolk',
+        daylight: 'ljetno vrijeme Otoka Norfolk',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'vrijeme grada Fernando de Noronha',
+        standard: 'standardno vrijeme grada Fernando de Noronha',
+        daylight: 'ljetno vrijeme grada Fernando de Noronha',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'vrijeme Sjevernomarijanskih Otoka',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'novosibirsko vrijeme',
+        standard: 'novosibirsko standardno vrijeme',
+        daylight: 'novosibirsko ljetno vrijeme',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'omsko vrijeme',
+        standard: 'omsko standardno vrijeme',
+        daylight: 'omsko ljetno vrijeme',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'pakistansko vrijeme',
+        standard: 'pakistansko standardno vrijeme',
+        daylight: 'pakistansko ljetno vrijeme',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'vrijeme Palaua',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'vrijeme Papue Nove Gvineje',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'paragvajsko vrijeme',
+        standard: 'paragvajsko standardno vrijeme',
+        daylight: 'paragvajsko ljetno vrijeme',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'peruansko vrijeme',
+        standard: 'peruansko standardno vrijeme',
+        daylight: 'peruansko ljetno vrijeme',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'filipinsko vrijeme',
+        standard: 'filipinsko standardno vrijeme',
+        daylight: 'filipinsko ljetno vrijeme',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'vrijeme Otoka Phoenix',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'vrijeme za Sveti Petar i Mikelon',
+        standard: 'standardno vrijeme za Sveti Petar i Mikelon',
+        daylight: 'ljetno vrijeme za Sveti Petar i Mikelon',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'pitcairnsko vrijeme',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'ponapejsko vrijeme',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'pjongjanško vrijeme',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'vrijeme grada Kizilorde',
+        standard: 'standardno vrijeme grada Kizilorde',
+        daylight: 'ljetno vrijeme grada Kizilorde',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'vrijeme Reuniona',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'vrijeme Rothere',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'sahalinsko vrijeme',
+        standard: 'sahalinsko standardno vrijeme',
+        daylight: 'sahalinsko ljetno vrijeme',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'samarsko vrijeme',
+        standard: 'samarsko standardno vrijeme',
+        daylight: 'samarsko ljetno vrijeme',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'samoansko vrijeme',
+        standard: 'samoansko standardno vrijeme',
+        daylight: 'samoansko ljetno vrijeme',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'sejšelsko vrijeme',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'singapursko vrijeme',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'vrijeme Salomonskih Otoka',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'vrijeme Južne Georgije',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'surinamsko vrijeme',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'vrijeme Syowe',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'vrijeme Tahitija',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'tajpeško vrijeme',
+        standard: 'tajpeško standardno vrijeme',
+        daylight: 'tajpeško ljetno vrijeme',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'tadžikistansko vrijeme',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'vrijeme Tokelaua',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'vrijeme Tonge',
+        standard: 'standardno vrijeme Tonge',
+        daylight: 'ljetno vrijeme Tonge',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'vrijeme Chuuka',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'turkmenistansko vrijeme',
+        standard: 'turkmenistansko standardno vrijeme',
+        daylight: 'turkmenistansko ljetno vrijeme',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'vrijeme Tuvalua',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'urugvajsko vrijeme',
+        standard: 'urugvajsko standardno vrijeme',
+        daylight: 'urugvajsko ljetno vrijeme',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'uzbekistansko vrijeme',
+        standard: 'uzbekistansko standardno vrijeme',
+        daylight: 'uzbekistansko ljetno vrijeme',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'vrijeme Vanuatua',
+        standard: 'standardno vrijeme Vanuatua',
+        daylight: 'ljetno vrijeme Vanuatua',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'venezuelsko vrijeme',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'vladivostočko vrijeme',
+        standard: 'vladivostočko standardno vrijeme',
+        daylight: 'vladivostočko ljetno vrijeme',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'volgogradsko vrijeme',
+        standard: 'volgogradsko standardno vrijeme',
+        daylight: 'volgogradsko ljetno vrijeme',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'vostočko vrijeme',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'vrijeme Otoka Wake',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'vrijeme Otoka Wallis i Futuna',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'jakutsko vrijeme',
+        standard: 'jakutsko standardno vrijeme',
+        daylight: 'jakutsko ljetno vrijeme',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'jekaterinburško vrijeme',
+        standard: 'jekaterinburško standardno vrijeme',
+        daylight: 'jekaterinburško ljetno vrijeme',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'jukonško vrijeme',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

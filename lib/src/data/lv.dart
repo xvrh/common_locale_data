@@ -1,15 +1,12 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+
+import '../../common_locale_data.dart';
 
 const _locale = 'lv';
 
-/// Translations of [CommonLocaleData] for lv
+/// Translations of [CommonLocaleData]
 class CommonLocaleDataLv implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataLv();
@@ -22,6 +19,14 @@ class CommonLocaleDataLv implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsLv._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsLv._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsLv._();
   @override
   Units get units => _units;
@@ -29,6 +34,10 @@ class CommonLocaleDataLv implements CommonLocaleData {
   static final _territories = TerritoriesLv._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesLv._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesLv extends Languages {
@@ -2253,6 +2262,449 @@ class LanguagesLv extends Languages {
     'zza': Language(
       'zza',
       'zazaki',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsLv extends Scripts {
+  ScriptsLv._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'adlama',
+    ),
+    'Arab': Script(
+      'Arab',
+      'arābu',
+      variant: 'persiešu-arābu',
+    ),
+    'Aran': Script(
+      'Aran',
+      'nastaliku',
+    ),
+    'Armi': Script(
+      'Armi',
+      'aramiešu',
+    ),
+    'Armn': Script(
+      'Armn',
+      'armēņu',
+    ),
+    'Bali': Script(
+      'Bali',
+      'baliešu',
+    ),
+    'Beng': Script(
+      'Beng',
+      'bengāļu',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'brahmi',
+    ),
+    'Brai': Script(
+      'Brai',
+      'Braila raksts',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'čakmu',
+    ),
+    'Cans': Script(
+      'Cans',
+      'vienotā Kanādas aborigēnu zilbju rakstība',
+    ),
+    'Cher': Script(
+      'Cher',
+      'irokēzu',
+    ),
+    'Copt': Script(
+      'Copt',
+      'koptu',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'kirilica',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'senslāvu',
+    ),
+    'Deva': Script(
+      'Deva',
+      'dēvanāgari',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'demotiskais raksts',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'hierātiskais raksts',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'ēģiptiešu hieroglifi',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'etiopiešu',
+    ),
+    'Geor': Script(
+      'Geor',
+      'gruzīnu',
+    ),
+    'Goth': Script(
+      'Goth',
+      'gotu',
+    ),
+    'Grek': Script(
+      'Grek',
+      'grieķu',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'gudžaratu',
+    ),
+    'Guru': Script(
+      'Guru',
+      'pandžabu',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'haņu ar bopomofo',
+    ),
+    'Hang': Script(
+      'Hang',
+      'hangils',
+    ),
+    'Hani': Script(
+      'Hani',
+      'haņu',
+    ),
+    'Hans': Script(
+      'Hans',
+      'vienkāršotā',
+      standAlone: 'haņu vienkāršotā',
+    ),
+    'Hant': Script(
+      'Hant',
+      'tradicionālā',
+      standAlone: 'haņu tradicionālā',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'ivrits',
+    ),
+    'Hira': Script(
+      'Hira',
+      'hiragana',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'japāņu zilbju alfabēts',
+    ),
+    'Hung': Script(
+      'Hung',
+      'senungāru',
+    ),
+    'Ital': Script(
+      'Ital',
+      'vecitāļu',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'javiešu',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'japāņu',
+    ),
+    'Kana': Script(
+      'Kana',
+      'katakana',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'khmeru',
+    ),
+    'Knda': Script(
+      'Knda',
+      'kannadu',
+    ),
+    'Kore': Script(
+      'Kore',
+      'korejiešu',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'laosiešu',
+    ),
+    'Latn': Script(
+      'Latn',
+      'latīņu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'lineārā A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'lineārā B',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'līdiešu',
+    ),
+    'Maya': Script(
+      'Maya',
+      'maiju',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'malajalu',
+    ),
+    'Mong': Script(
+      'Mong',
+      'mongoļu',
+    ),
+    'Moon': Script(
+      'Moon',
+      'Mūna raksts',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'meitei-majeku',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'birmiešu',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'nko',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'ogamiskais raksts',
+    ),
+    'Olck': Script(
+      'Olck',
+      'olčiki',
+    ),
+    'Orya': Script(
+      'Orya',
+      'oriju',
+    ),
+    'Osma': Script(
+      'Osma',
+      'osmaņu turku',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'feniķiešu',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'hanifi',
+    ),
+    'Roro': Script(
+      'Roro',
+      'rongorongo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'rūnu raksts',
+    ),
+    'Samr': Script(
+      'Samr',
+      'samariešu',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'singāļu',
+    ),
+    'Sund': Script(
+      'Sund',
+      'zundu',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'sīriešu',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'rietumsīriešu',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'austrumsīriešu',
+    ),
+    'Taml': Script(
+      'Taml',
+      'tamilu',
+    ),
+    'Telu': Script(
+      'Telu',
+      'telugu',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'tifinagu',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'tagalu',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'tāna',
+    ),
+    'Thai': Script(
+      'Thai',
+      'taju',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'tibetiešu',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'vaju',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'senperiešu',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'šumeru-akadiešu ķīļraksts',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'ji',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'mantotā',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'matemātiskais pieraksts',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'emocijzīmes',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'simboli',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'bez rakstības',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'vispārējā',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'nezināma rakstība',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsLv extends Variants {
+  VariantsLv._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'tradicionālā vācu ortogrāfija',
+    ),
+    '1996': Variant(
+      '1996',
+      'vācu ortogrāfija no 1996. gada',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      'akadēmiskā',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'austrumarmēņu',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'rietumarmēņu',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'Starptautiskais fonētiskais alfabēts',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'UPA fonētika',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'tradicionālā ortogrāfija',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'monotons',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'Natisona dialekts',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'piņjiņa romanizācija',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'politons',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'datoru',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'saho',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'Skotijas angļu',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'Taraškeviča ortogrāfija',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'vienotā ortogrāfija',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'valensiešu',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Veida-Džailza romanizācija',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -9295,6 +9747,2207 @@ class TerritoriesLv implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabve',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesLv extends TimeZones {
+  TimeZonesLv._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'Laika josla: {0}',
+            regionFormatDaylight: '{0}: vasaras laiks',
+            regionFormatStandard: '{0}: standarta laiks',
+            fallbackFormat: '{0} ({1})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Adak': TimeZoneNames(
+      city: 'Adaka',
+    ),
+    'America/Anchorage': TimeZoneNames(
+      city: 'Ankurāža',
+    ),
+    'America/Anguilla': TimeZoneNames(
+      city: 'Angilja',
+    ),
+    'America/Antigua': TimeZoneNames(
+      city: 'Antigva',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      city: 'Aragvaina',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      city: 'Riogaljegosa',
+    ),
+    'America/Argentina/San_Juan': TimeZoneNames(
+      city: 'Sanhuana',
+    ),
+    'America/Argentina/Ushuaia': TimeZoneNames(
+      city: 'Ušuaja',
+    ),
+    'America/Argentina/La_Rioja': TimeZoneNames(
+      city: 'Larjoha',
+    ),
+    'America/Argentina/San_Luis': TimeZoneNames(
+      city: 'Sanluisa',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      city: 'Tukumana',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      city: 'Asunsjona',
+    ),
+    'America/Bahia': TimeZoneNames(
+      city: 'Baija',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      city: 'Bajabanderasa',
+    ),
+    'America/Barbados': TimeZoneNames(
+      city: 'Barbadosa',
+    ),
+    'America/Belem': TimeZoneNames(
+      city: 'Belena',
+    ),
+    'America/Belize': TimeZoneNames(
+      city: 'Beliza',
+    ),
+    'America/Blanc-Sablon': TimeZoneNames(
+      city: 'Blansablona',
+    ),
+    'America/Boa_Vista': TimeZoneNames(
+      city: 'Boavista',
+    ),
+    'America/Boise': TimeZoneNames(
+      city: 'Boisisitija',
+    ),
+    'America/Buenos_Aires': TimeZoneNames(
+      city: 'Buenosairesa',
+    ),
+    'America/Cambridge_Bay': TimeZoneNames(
+      city: 'Kembridžbeja',
+    ),
+    'America/Campo_Grande': TimeZoneNames(
+      city: 'Kampugrandi',
+    ),
+    'America/Cancun': TimeZoneNames(
+      city: 'Kankuna',
+    ),
+    'America/Caracas': TimeZoneNames(
+      city: 'Karakasa',
+    ),
+    'America/Catamarca': TimeZoneNames(
+      city: 'Katamarka',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      city: 'Kajenna',
+    ),
+    'America/Cayman': TimeZoneNames(
+      city: 'Kaimanu salas',
+    ),
+    'America/Chicago': TimeZoneNames(
+      city: 'Čikāga',
+    ),
+    'America/Chihuahua': TimeZoneNames(
+      city: 'Čivava',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      city: 'Huaresa',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      city: 'Atikokana',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      city: 'Kordova',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      city: 'Kostarika',
+    ),
+    'America/Creston': TimeZoneNames(
+      city: 'Krestona',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      city: 'Kujaba',
+    ),
+    'America/Curacao': TimeZoneNames(
+      city: 'Kirasao',
+    ),
+    'America/Danmarkshavn': TimeZoneNames(
+      city: 'Denmārkšavna',
+    ),
+    'America/Dawson': TimeZoneNames(
+      city: 'Dousona',
+    ),
+    'America/Dawson_Creek': TimeZoneNames(
+      city: 'Dousonkrīka',
+    ),
+    'America/Denver': TimeZoneNames(
+      city: 'Denvera',
+    ),
+    'America/Detroit': TimeZoneNames(
+      city: 'Detroita',
+    ),
+    'America/Dominica': TimeZoneNames(
+      city: 'Dominika',
+    ),
+    'America/Edmonton': TimeZoneNames(
+      city: 'Edmontona',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      city: 'Salvadora',
+    ),
+    'America/Fort_Nelson': TimeZoneNames(
+      city: 'Fortnelsona',
+    ),
+    'America/Glace_Bay': TimeZoneNames(
+      city: 'Gleisbeja',
+    ),
+    'America/Godthab': TimeZoneNames(
+      city: 'Nūka',
+    ),
+    'America/Goose_Bay': TimeZoneNames(
+      city: 'Gūsbeja',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      city: 'Grandtkērka',
+    ),
+    'America/Grenada': TimeZoneNames(
+      city: 'Grenāda',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      city: 'Gvadelupa',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      city: 'Gvatemala',
+    ),
+    'America/Guayaquil': TimeZoneNames(
+      city: 'Gvajakila',
+    ),
+    'America/Guyana': TimeZoneNames(
+      city: 'Gajāna',
+    ),
+    'America/Halifax': TimeZoneNames(
+      city: 'Helifeksa',
+    ),
+    'America/Hermosillo': TimeZoneNames(
+      city: 'Ermosiljo',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      city: 'Vinsensa, Indiāna',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      city: 'Pītersbērga, Indiāna',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      city: 'Telsitija, Indiāna',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      city: 'Noksa, Indiāna',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      city: 'Vinamaka, Indiāna',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      city: 'Marengo, Indiāna',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      city: 'Vīveja, Indiāna',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      city: 'Indianapolisa',
+    ),
+    'America/Inuvik': TimeZoneNames(
+      city: 'Inuvika',
+    ),
+    'America/Iqaluit': TimeZoneNames(
+      city: 'Ikaluita',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      city: 'Jamaika',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      city: 'Huhuja',
+    ),
+    'America/Juneau': TimeZoneNames(
+      city: 'Džuno',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      city: 'Montičelo, Kentuki',
+    ),
+    'America/Kralendijk': TimeZoneNames(
+      city: 'Krālendeika',
+    ),
+    'America/La_Paz': TimeZoneNames(
+      city: 'Lapasa',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      city: 'Losandželosa',
+    ),
+    'America/Louisville': TimeZoneNames(
+      city: 'Lūivila',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      city: 'Louerprinseskvotera',
+    ),
+    'America/Maceio': TimeZoneNames(
+      city: 'Masejo',
+    ),
+    'America/Managua': TimeZoneNames(
+      city: 'Managva',
+    ),
+    'America/Manaus': TimeZoneNames(
+      city: 'Manausa',
+    ),
+    'America/Marigot': TimeZoneNames(
+      city: 'Merigota',
+    ),
+    'America/Martinique': TimeZoneNames(
+      city: 'Martinika',
+    ),
+    'America/Matamoros': TimeZoneNames(
+      city: 'Matamorosa',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      city: 'Masatlana',
+    ),
+    'America/Mendoza': TimeZoneNames(
+      city: 'Mendosa',
+    ),
+    'America/Menominee': TimeZoneNames(
+      city: 'Menominī',
+    ),
+    'America/Merida': TimeZoneNames(
+      city: 'Merida',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      city: 'Mehiko',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      city: 'Mikelona',
+    ),
+    'America/Moncton': TimeZoneNames(
+      city: 'Monktona',
+    ),
+    'America/Monterrey': TimeZoneNames(
+      city: 'Monterreja',
+    ),
+    'America/Montserrat': TimeZoneNames(
+      city: 'Montserrata',
+    ),
+    'America/Nassau': TimeZoneNames(
+      city: 'Naso',
+    ),
+    'America/New_York': TimeZoneNames(
+      city: 'Ņujorka',
+    ),
+    'America/Nome': TimeZoneNames(
+      city: 'Noma',
+    ),
+    'America/Noronha': TimeZoneNames(
+      city: 'Noroņa',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      city: 'Bjula, Ziemeļdakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      city: 'Ņūseilema, Ziemeļdakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      city: 'Sentera, Ziemeļdakota',
+    ),
+    'America/Ojinaga': TimeZoneNames(
+      city: 'Ohinaga',
+    ),
+    'America/Phoenix': TimeZoneNames(
+      city: 'Fīniksa',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      city: 'Portoprensa',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      city: 'Portofspeina',
+    ),
+    'America/Porto_Velho': TimeZoneNames(
+      city: 'Portuveļu',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      city: 'Puertoriko',
+    ),
+    'America/Punta_Arenas': TimeZoneNames(
+      city: 'Puntaarenasa',
+    ),
+    'America/Rankin_Inlet': TimeZoneNames(
+      city: 'Rankininleta',
+    ),
+    'America/Recife': TimeZoneNames(
+      city: 'Resifi',
+    ),
+    'America/Regina': TimeZoneNames(
+      city: 'Ridžaina',
+    ),
+    'America/Resolute': TimeZoneNames(
+      city: 'Rezolūta',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      city: 'Riobranko',
+    ),
+    'America/Santarem': TimeZoneNames(
+      city: 'Santarena',
+    ),
+    'America/Santiago': TimeZoneNames(
+      city: 'Santjago',
+    ),
+    'America/Santo_Domingo': TimeZoneNames(
+      city: 'Santodomingo',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      city: 'Sanpaulu',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      city: 'Itokortormita',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      city: 'Senbartelmī',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      city: 'Sentdžonsa',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      city: 'Sentkitsa',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      city: 'Sentlūsija',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      city: 'Sentomasa',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      city: 'Sentvinsenta',
+    ),
+    'America/Swift_Current': TimeZoneNames(
+      city: 'Sviftkarenta',
+    ),
+    'America/Tegucigalpa': TimeZoneNames(
+      city: 'Tegusigalpa',
+    ),
+    'America/Thule': TimeZoneNames(
+      city: 'Tule',
+    ),
+    'America/Tijuana': TimeZoneNames(
+      city: 'Tihuana',
+    ),
+    'America/Vancouver': TimeZoneNames(
+      city: 'Vankūvera',
+    ),
+    'America/Whitehorse': TimeZoneNames(
+      city: 'Vaithorsa',
+    ),
+    'America/Winnipeg': TimeZoneNames(
+      city: 'Vinipega',
+    ),
+    'America/Yakutat': TimeZoneNames(
+      city: 'Jakutata',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      city: 'Azoru salas',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      city: 'Kanāriju salas',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      city: 'Kaboverde',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      city: 'Fēru salas',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      city: 'Reikjavika',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      city: 'Dienviddžordžija',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      city: 'Sv.Helēnas sala',
+    ),
+    'Atlantic/Stanley': TimeZoneNames(
+      city: 'Stenli',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      city: 'Amsterdama',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      city: 'Andora',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      city: 'Astrahaņa',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      city: 'Atēnas',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      city: 'Belgrada',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      city: 'Berlīne',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      city: 'Brisele',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      city: 'Bukareste',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      city: 'Budapešta',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      city: 'Bīzingene',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      city: 'Kišiņeva',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      city: 'Kopenhāgena',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Īrijas ziemas laiks',
+      ),
+      city: 'Dublina',
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      city: 'Gibraltārs',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      city: 'Gērnsija',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      city: 'Menas sala',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      city: 'Stambula',
+    ),
+    'Europe/Jersey': TimeZoneNames(
+      city: 'Džērsija',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      city: 'Kaļiņingrada',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      city: 'Kijeva',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      city: 'Kirova',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      city: 'Lisabona',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      city: 'Ļubļana',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Lielbritānijas vasaras laiks',
+      ),
+      city: 'Londona',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      city: 'Luksemburga',
+    ),
+    'Europe/Madrid': TimeZoneNames(
+      city: 'Madride',
+    ),
+    'Europe/Mariehamn': TimeZoneNames(
+      city: 'Mariehamna',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      city: 'Minska',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      city: 'Monako',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      city: 'Maskava',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      city: 'Parīze',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      city: 'Prāga',
+    ),
+    'Europe/Riga': TimeZoneNames(
+      city: 'Rīga',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      city: 'Roma',
+    ),
+    'Europe/San_Marino': TimeZoneNames(
+      city: 'Sanmarīno',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      city: 'Sarajeva',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      city: 'Saratova',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      city: 'Simferopole',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      city: 'Sofija',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      city: 'Stokholma',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      city: 'Tallina',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      city: 'Tirāna',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      city: 'Uļjanovska',
+    ),
+    'Europe/Vaduz': TimeZoneNames(
+      city: 'Vaduca',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      city: 'Vatikāns',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      city: 'Vīne',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      city: 'Viļņa',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      city: 'Volgograda',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      city: 'Varšava',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      city: 'Zagreba',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      city: 'Cīrihe',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      city: 'Abidžana',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      city: 'Akra',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      city: 'Adisabeba',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      city: 'Alžīra',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      city: 'Asmara',
+    ),
+    'Africa/Bangui': TimeZoneNames(
+      city: 'Bangi',
+    ),
+    'Africa/Banjul': TimeZoneNames(
+      city: 'Bandžula',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      city: 'Bisava',
+    ),
+    'Africa/Blantyre': TimeZoneNames(
+      city: 'Blantaira',
+    ),
+    'Africa/Brazzaville': TimeZoneNames(
+      city: 'Brazavila',
+    ),
+    'Africa/Bujumbura': TimeZoneNames(
+      city: 'Bužumbura',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      city: 'Kaira',
+    ),
+    'Africa/Casablanca': TimeZoneNames(
+      city: 'Kasablanka',
+    ),
+    'Africa/Ceuta': TimeZoneNames(
+      city: 'Seuta',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      city: 'Konakri',
+    ),
+    'Africa/Dakar': TimeZoneNames(
+      city: 'Dakara',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      city: 'Dāresalāma',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      city: 'Džibutija',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      city: 'Duala',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      city: 'Ajūna',
+    ),
+    'Africa/Freetown': TimeZoneNames(
+      city: 'Frītauna',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      city: 'Johannesburga',
+    ),
+    'Africa/Juba': TimeZoneNames(
+      city: 'Džūba',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      city: 'Hartūma',
+    ),
+    'Africa/Kinshasa': TimeZoneNames(
+      city: 'Kinšasa',
+    ),
+    'Africa/Lagos': TimeZoneNames(
+      city: 'Lagosa',
+    ),
+    'Africa/Libreville': TimeZoneNames(
+      city: 'Librevila',
+    ),
+    'Africa/Lubumbashi': TimeZoneNames(
+      city: 'Lubumbaši',
+    ),
+    'Africa/Maputo': TimeZoneNames(
+      city: 'Maputu',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      city: 'Mogadīšo',
+    ),
+    'Africa/Monrovia': TimeZoneNames(
+      city: 'Monrovija',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      city: 'Ndžamena',
+    ),
+    'Africa/Niamey': TimeZoneNames(
+      city: 'Niameja',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      city: 'Nuakšota',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      city: 'Vagadugu',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      city: 'Portonovo',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      city: 'Santome',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      city: 'Tripole',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      city: 'Tunisa',
+    ),
+    'Africa/Windhoek': TimeZoneNames(
+      city: 'Vindhuka',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      city: 'Adena',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      city: 'Almati',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      city: 'Ammāna',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      city: 'Anadira',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      city: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      city: 'Aktebe',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      city: 'Ašgabata',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      city: 'Atirau',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      city: 'Bagdāde',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      city: 'Bahreina',
+    ),
+    'Asia/Bangkok': TimeZoneNames(
+      city: 'Bangkoka',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      city: 'Barnaula',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      city: 'Beirūta',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      city: 'Biškeka',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      city: 'Bruneja',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      city: 'Kalkāta',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      city: 'Čita',
+    ),
+    'Asia/Choibalsan': TimeZoneNames(
+      city: 'Čoibalsana',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      city: 'Kolombo',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      city: 'Damaska',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      city: 'Daka',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      city: 'Dubaija',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      city: 'Dušanbe',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      city: 'Hebrona',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      city: 'Honkonga',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      city: 'Hovda',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      city: 'Irkutska',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      city: 'Džakarta',
+    ),
+    'Asia/Jayapura': TimeZoneNames(
+      city: 'Džajapura',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      city: 'Jeruzaleme',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      city: 'Kabula',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      city: 'Kamčatka',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      city: 'Karāči',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      city: 'Katmandu',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      city: 'Handiga',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      city: 'Krasnojarska',
+    ),
+    'Asia/Kuala_Lumpur': TimeZoneNames(
+      city: 'Kualalumpura',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      city: 'Kučina',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      city: 'Kuveita',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      city: 'Makao',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      city: 'Magadana',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      city: 'Makasara',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      city: 'Maskata',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      city: 'Nikosija',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      city: 'Novokuzņecka',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      city: 'Novosibirska',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      city: 'Omska',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      city: 'Orala',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      city: 'Pnompeņa',
+    ),
+    'Asia/Pontianak': TimeZoneNames(
+      city: 'Pontianaka',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      city: 'Phenjana',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      city: 'Katara',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      city: 'Kostanaja',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      city: 'Kizilorda',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      city: 'Ranguna',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      city: 'Rijāda',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      city: 'Hošimina',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      city: 'Sahalīna',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      city: 'Samarkanda',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      city: 'Seula',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      city: 'Šanhaja',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      city: 'Singapūra',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      city: 'Sredņekolimska',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      city: 'Taibei',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      city: 'Taškenta',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      city: 'Teherāna',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      city: 'Tokija',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      city: 'Tomska',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      city: 'Ulanbatora',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      city: 'Urumči',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      city: 'Ustjņera',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      city: 'Vjenčana',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      city: 'Vladivostoka',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      city: 'Jakutska',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      city: 'Jekaterinburga',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      city: 'Erevāna',
+    ),
+    'Indian/Antananarivo': TimeZoneNames(
+      city: 'Antananarivu',
+    ),
+    'Indian/Chagos': TimeZoneNames(
+      city: 'Čagosa',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      city: 'Ziemsvētku sala',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      city: 'Kokosu (Kīlinga) sala',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      city: 'Komoras',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      city: 'Kergelēna sala',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      city: 'Mae',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      city: 'Maldīvija',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      city: 'Maurīcija',
+    ),
+    'Indian/Mayotte': TimeZoneNames(
+      city: 'Majota',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      city: 'Reinjona',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      city: 'Adelaida',
+    ),
+    'Australia/Brisbane': TimeZoneNames(
+      city: 'Brisbena',
+    ),
+    'Australia/Broken_Hill': TimeZoneNames(
+      city: 'Brokenhila',
+    ),
+    'Australia/Darwin': TimeZoneNames(
+      city: 'Dārvina',
+    ),
+    'Australia/Eucla': TimeZoneNames(
+      city: 'Jukla',
+    ),
+    'Australia/Hobart': TimeZoneNames(
+      city: 'Hobārta',
+    ),
+    'Australia/Lindeman': TimeZoneNames(
+      city: 'Lindemana',
+    ),
+    'Australia/Lord_Howe': TimeZoneNames(
+      city: 'Lordhava',
+    ),
+    'Australia/Melbourne': TimeZoneNames(
+      city: 'Melburna',
+    ),
+    'Australia/Perth': TimeZoneNames(
+      city: 'Pērta',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      city: 'Sidneja',
+    ),
+    'Pacific/Apia': TimeZoneNames(
+      city: 'Apija',
+    ),
+    'Pacific/Auckland': TimeZoneNames(
+      city: 'Oklenda',
+    ),
+    'Pacific/Bougainville': TimeZoneNames(
+      city: 'Bugenvila sala',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      city: 'Četema',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      city: 'Lieldienu sala',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      city: 'Enderberija',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      city: 'Fidži',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      city: 'Galapagu salas',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      city: 'Gambjē salas',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      city: 'Gvadalkanala',
+    ),
+    'Pacific/Guam': TimeZoneNames(
+      city: 'Guama',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      city: 'Honolulu',
+    ),
+    'Pacific/Kanton': TimeZoneNames(
+      city: 'Kantona',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      city: 'Kirisimasi',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      city: 'Kosraja',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      city: 'Kvadžaleina',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      city: 'Madžuro',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      city: 'Marķīza salas',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      city: 'Midvejs',
+    ),
+    'Pacific/Norfolk': TimeZoneNames(
+      city: 'Norfolka',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      city: 'Numea',
+    ),
+    'Pacific/Pago_Pago': TimeZoneNames(
+      city: 'Pagopago',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      city: 'Pitkērna',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      city: 'Ponpeja',
+    ),
+    'Pacific/Port_Moresby': TimeZoneNames(
+      city: 'Portmorsbi',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      city: 'Saipana',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      city: 'Taiti',
+    ),
+    'Pacific/Tarawa': TimeZoneNames(
+      city: 'Tarava',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      city: 'Čūka',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      city: 'Veika sala',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      city: 'Volisa',
+    ),
+    'Arctic/Longyearbyen': TimeZoneNames(
+      city: 'Longjērbīene',
+    ),
+    'Antarctica/Casey': TimeZoneNames(
+      city: 'Keisi',
+    ),
+    'Antarctica/Davis': TimeZoneNames(
+      city: 'Deivisa',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      city: 'Dimondirvila',
+    ),
+    'Antarctica/Macquarie': TimeZoneNames(
+      city: 'Makvori',
+    ),
+    'Antarctica/Mawson': TimeZoneNames(
+      city: 'Mosona',
+    ),
+    'Antarctica/McMurdo': TimeZoneNames(
+      city: 'Makmerdo',
+    ),
+    'Antarctica/Palmer': TimeZoneNames(
+      city: 'Pālmera',
+    ),
+    'Antarctica/Rothera': TimeZoneNames(
+      city: 'Rotera',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      city: 'Šova',
+    ),
+    'Antarctica/Troll': TimeZoneNames(
+      city: 'Trolla',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      city: 'Vostoka',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'Universālais koordinētais laiks',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      city: 'nezināma pilsēta',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'Afganistānas laiks',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'Centrālāfrikas laiks',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'Austrumāfrikas laiks',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'Dienvidāfrikas ziemas laiks',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Rietumāfrikas laiks',
+        standard: 'Rietumāfrikas ziemas laiks',
+        daylight: 'Rietumāfrikas vasaras laiks',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'Aļaskas laiks',
+        standard: 'Aļaskas ziemas laiks',
+        daylight: 'Aļaskas vasaras laiks',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'Amazones laiks',
+        standard: 'Amazones ziemas laiks',
+        daylight: 'Amazones vasaras laiks',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'Centrālais laiks',
+        standard: 'Centrālais ziemas laiks',
+        daylight: 'Centrālais vasaras laiks',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Austrumu laiks',
+        standard: 'Austrumu ziemas laiks',
+        daylight: 'Austrumu vasaras laiks',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Kalnu laiks',
+        standard: 'Kalnu ziemas laiks',
+        daylight: 'Kalnu vasaras laiks',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Klusā okeāna laiks',
+        standard: 'Klusā okeāna ziemas laiks',
+        daylight: 'Klusā okeāna vasaras laiks',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'Anadiras laiks',
+        standard: 'Anadiras ziemas laiks',
+        daylight: 'Anadiras vasaras laiks',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'Apijas laiks',
+        standard: 'Apijas ziemas laiks',
+        daylight: 'Apijas vasaras laiks',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'Arābijas pussalas laiks',
+        standard: 'Arābijas pussalas ziemas laiks',
+        daylight: 'Arābijas pussalas vasaras laiks',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'Argentīnas laiks',
+        standard: 'Argentīnas ziemas laiks',
+        daylight: 'Argentīnas vasaras laiks',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Rietumargentīnas laiks',
+        standard: 'Rietumargentīnas ziemas laiks',
+        daylight: 'Rietumargentīnas vasaras laiks',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'Armēnijas laiks',
+        standard: 'Armēnijas ziemas laiks',
+        daylight: 'Armēnijas vasaras laiks',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'Atlantijas laiks',
+        standard: 'Atlantijas ziemas laiks',
+        daylight: 'Atlantijas vasaras laiks',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Austrālijas centrālais laiks',
+        standard: 'Austrālijas centrālais ziemas laiks',
+        daylight: 'Austrālijas centrālais vasaras laiks',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Austrālijas centrālais rietumu laiks',
+        standard: 'Austrālijas centrālais rietumu ziemas laiks',
+        daylight: 'Austrālijas centrālais rietumu vasaras laiks',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Austrālijas austrumu laiks',
+        standard: 'Austrālijas austrumu ziemas laiks',
+        daylight: 'Austrālijas austrumu vasaras laiks',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Austrālijas rietumu laiks',
+        standard: 'Austrālijas rietumu ziemas laiks',
+        daylight: 'Austrālijas rietumu vasaras laiks',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Azerbaidžānas laiks',
+        standard: 'Azerbaidžānas ziemas laiks',
+        daylight: 'Azerbaidžānas vasaras laiks',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'Azoru salu laiks',
+        standard: 'Azoru salu ziemas laiks',
+        daylight: 'Azoru salu vasaras laiks',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Bangladešas laiks',
+        standard: 'Bangladešas ziemas laiks',
+        daylight: 'Bangladešas vasaras laiks',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'Butānas laiks',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'Bolīvijas laiks',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'Brazīlijas laiks',
+        standard: 'Brazīlijas ziemas laiks',
+        daylight: 'Brazīlijas vasaras laiks',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'Brunejas Darusalamas laiks',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Kaboverdes laiks',
+        standard: 'Kaboverdes ziemas laiks',
+        daylight: 'Kaboverdes vasaras laiks',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'Čamorra ziemas laiks',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'Četemas laiks',
+        standard: 'Četemas ziemas laiks',
+        daylight: 'Četemas vasaras laiks',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'Čīles laiks',
+        standard: 'Čīles ziemas laiks',
+        daylight: 'Čīles vasaras laiks',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'Ķīnas laiks',
+        standard: 'Ķīnas ziemas laiks',
+        daylight: 'Ķīnas vasaras laiks',
+      ),
+    ),
+    'Choibalsan': MetaZone(
+      code: 'Choibalsan',
+      long: TimeZoneName(
+        generic: 'Čoibalsanas laiks',
+        standard: 'Čoibalsanas ziemas laiks',
+        daylight: 'Čoibalsanas vasaras laiks',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'Ziemsvētku salas laiks',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'Kokosu (Kīlinga) salu laiks',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'Kolumbijas laiks',
+        standard: 'Kolumbijas ziemas laiks',
+        daylight: 'Kolumbijas vasaras laiks',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'Kuka salu laiks',
+        standard: 'Kuka salu ziemas laiks',
+        daylight: 'Kuka salu vasaras laiks',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'Kubas laiks',
+        standard: 'Kubas ziemas laiks',
+        daylight: 'Kubas vasaras laiks',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'Deivisas laiks',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'Dimondirvilas laiks',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'Austrumtimoras laiks',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'Lieldienu salas laiks',
+        standard: 'Lieldienu salas ziemas laiks',
+        daylight: 'Lieldienu salas vasaras laiks',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'Ekvadoras laiks',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Centrāleiropas laiks',
+        standard: 'Centrāleiropas ziemas laiks',
+        daylight: 'Centrāleiropas vasaras laiks',
+      ),
+      short: TimeZoneName(
+        generic: 'CET',
+        standard: 'CET',
+        daylight: 'CEST',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Austrumeiropas laiks',
+        standard: 'Austrumeiropas ziemas laiks',
+        daylight: 'Austrumeiropas vasaras laiks',
+      ),
+      short: TimeZoneName(
+        generic: 'EET',
+        standard: 'EET',
+        daylight: 'EEST',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'Austrumeiropas laika josla (FET)',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Rietumeiropas laiks',
+        standard: 'Rietumeiropas ziemas laiks',
+        daylight: 'Rietumeiropas vasaras laiks',
+      ),
+      short: TimeZoneName(
+        generic: 'WET',
+        standard: 'WET',
+        daylight: 'WEST',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'Folklenda (Malvinu) salu laiks',
+        standard: 'Folklenda (Malvinu) salu ziemas laiks',
+        daylight: 'Folklenda (Malvinu) salu vasaras laiks',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'Fidži laiks',
+        standard: 'Fidži ziemas laiks',
+        daylight: 'Fidži vasaras laiks',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'Francijas Gviānas laiks',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'Francijas Dienvidjūru un Antarktikas teritorijas laiks',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'Galapagu laiks',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'Gambjē salu laiks',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'Gruzijas laiks',
+        standard: 'Gruzijas ziemas laiks',
+        daylight: 'Gruzijas vasaras laiks',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'Gilberta salu laiks',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'Griničas laiks',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Austrumgrenlandes laiks',
+        standard: 'Austrumgrenlandes ziemas laiks',
+        daylight: 'Austrumgrenlandes vasaras laiks',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Rietumgrenlandes laiks',
+        standard: 'Rietumgrenlandes ziemas laiks',
+        daylight: 'Rietumgrenlandes vasaras laiks',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'Persijas līča laiks',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'Gajānas laiks',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Havaju–Aleutu laiks',
+        standard: 'Havaju–Aleutu ziemas laiks',
+        daylight: 'Havaju–Aleutu vasaras laiks',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Honkongas laiks',
+        standard: 'Honkongas ziemas laiks',
+        daylight: 'Honkongas vasaras laiks',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'Hovdas laiks',
+        standard: 'Hovdas ziemas laiks',
+        daylight: 'Hovdas vasaras laiks',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'Indijas ziemas laiks',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'Indijas okeāna laiks',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'Indoķīnas laiks',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'Centrālindonēzijas laiks',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'Austrumindonēzijas laiks',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'Rietumindonēzijas laiks',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'Irānas laiks',
+        standard: 'Irānas ziemas laiks',
+        daylight: 'Irānas vasaras laiks',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Irkutskas laiks',
+        standard: 'Irkutskas ziemas laiks',
+        daylight: 'Irkutskas vasaras laiks',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'Izraēlas laiks',
+        standard: 'Izraēlas ziemas laiks',
+        daylight: 'Izraēlas vasaras laiks',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'Japānas laiks',
+        standard: 'Japānas ziemas laiks',
+        daylight: 'Japānas vasaras laiks',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Petropavlovskas-Kamčatskas laiks',
+        standard: 'Petropavlovskas-Kamčatskas ziemas laiks',
+        daylight: 'Petropavlovskas-Kamčatskas vasaras laiks',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'Austrumkazahstānas laiks',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'Rietumkazahstānas laiks',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'Korejas laiks',
+        standard: 'Korejas ziemas laiks',
+        daylight: 'Korejas vasaras laiks',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'Kosrae laiks',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Krasnojarskas laiks',
+        standard: 'Krasnojarskas ziemas laiks',
+        daylight: 'Krasnojarskas vasaras laiks',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'Kirgizstānas laiks',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'Lainas salu laiks',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Lorda Hava salas laiks',
+        standard: 'Lorda Hava salas ziemas laiks',
+        daylight: 'Lorda Hava salas vasaras laiks',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'Magadanas laiks',
+        standard: 'Magadanas ziemas laiks',
+        daylight: 'Magadanas vasaras laiks',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'Malaizijas laiks',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'Maldīvijas laiks',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'Marķīza salu laiks',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'Māršala salu laiks',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'Maurīcijas laiks',
+        standard: 'Maurīcijas ziemas laiks',
+        daylight: 'Maurīcijas vasaras laiks',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'Mosonas laiks',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Meksikas Klusā okeāna piekrastes laiks',
+        standard: 'Meksikas Klusā okeāna piekrastes ziemas laiks',
+        daylight: 'Meksikas Klusā okeāna piekrastes vasaras laiks',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'Ulanbatoras laiks',
+        standard: 'Ulanbatoras ziemas laiks',
+        daylight: 'Ulanbatoras vasaras laiks',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'Maskavas laiks',
+        standard: 'Maskavas ziemas laiks',
+        daylight: 'Maskavas vasaras laiks',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'Mjanmas laiks',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'Nauru laiks',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'Nepālas laiks',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Jaunkaledonijas laiks',
+        standard: 'Jaunkaledonijas ziemas laiks',
+        daylight: 'Jaunkaledonijas vasaras laiks',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Jaunzēlandes laiks',
+        standard: 'Jaunzēlandes ziemas laiks',
+        daylight: 'Jaunzēlandes vasaras laiks',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Ņūfaundlendas laiks',
+        standard: 'Ņūfaundlendas ziemas laiks',
+        daylight: 'Ņūfaundlendas vasaras laiks',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'Niues laiks',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'Norfolkas salas laiks',
+        standard: 'Norfolkas salas ziemas laiks',
+        daylight: 'Norfolkas salas vasaras laiks',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'Fernandu di Noroņas laiks',
+        standard: 'Fernandu di Noroņas ziemas laiks',
+        daylight: 'Fernandu di Noroņas vasaras laiks',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Novosibirskas laiks',
+        standard: 'Novosibirskas ziemas laiks',
+        daylight: 'Novosibirskas vasaras laiks',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'Omskas laiks',
+        standard: 'Omskas ziemas laiks',
+        daylight: 'Omskas vasaras laiks',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'Pakistānas laiks',
+        standard: 'Pakistānas ziemas laiks',
+        daylight: 'Pakistānas vasaras laiks',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'Palau laiks',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'Papua-Jaungvinejas laiks',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'Paragvajas laiks',
+        standard: 'Paragvajas ziemas laiks',
+        daylight: 'Paragvajas vasaras laiks',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'Peru laiks',
+        standard: 'Peru ziemas laiks',
+        daylight: 'Peru vasaras laiks',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'Filipīnu laiks',
+        standard: 'Filipīnu ziemas laiks',
+        daylight: 'Filipīnu vasaras laiks',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'Fēniksa salu laiks',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Senpjēras un Mikelonas laiks',
+        standard: 'Senpjēras un Mikelonas ziemas laiks',
+        daylight: 'Senpjēras un Mikelonas vasaras laiks',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'Pitkērnas laiks',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'Ponapē laiks',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'Phenjanas laiks',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'Reinjonas laiks',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'Roteras laiks',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Sahalīnas laiks',
+        standard: 'Sahalīnas ziemas laiks',
+        daylight: 'Sahalīnas vasaras laiks',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'Samaras laiks',
+        standard: 'Samaras ziemas laiks',
+        daylight: 'Samaras vasaras laiks',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'Samoa laiks',
+        standard: 'Samoa ziemas laiks',
+        daylight: 'Samoa vasaras laiks',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'Seišeļu salu laiks',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'Singapūras laiks',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'Zālamana salu laiks',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'Dienviddžordžijas laiks',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'Surinamas laiks',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'Šovas laiks',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'Taiti laiks',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'Taibei laiks',
+        standard: 'Taibei ziemas laiks',
+        daylight: 'Taibei vasaras laiks',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'Tadžikistānas laiks',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'Tokelau laiks',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'Tongas laiks',
+        standard: 'Tongas ziemas laiks',
+        daylight: 'Tongas vasaras laiks',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'Čūkas laiks',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Turkmenistānas laiks',
+        standard: 'Turkmenistānas ziemas laiks',
+        daylight: 'Turkmenistānas vasaras laiks',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'Tuvalu laiks',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'Urugvajas laiks',
+        standard: 'Urugvajas ziemas laiks',
+        daylight: 'Urugvajas vasaras laiks',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Uzbekistānas laiks',
+        standard: 'Uzbekistānas ziemas laiks',
+        daylight: 'Uzbekistānas vasaras laiks',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Vanuatu laiks',
+        standard: 'Vanuatu ziemas laiks',
+        daylight: 'Vanuatu vasaras laiks',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'Venecuēlas laiks',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Vladivostokas laiks',
+        standard: 'Vladivostokas ziemas laiks',
+        daylight: 'Vladivostokas vasaras laiks',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'Volgogradas laiks',
+        standard: 'Volgogradas ziemas laiks',
+        daylight: 'Volgogradas vasaras laiks',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'Vostokas laiks',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'Veika salas laiks',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'Volisas un Futunas laiks',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Jakutskas laiks',
+        standard: 'Jakutskas ziemas laiks',
+        daylight: 'Jakutskas vasaras laiks',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Jekaterinburgas laiks',
+        standard: 'Jekaterinburgas ziemas laiks',
+        daylight: 'Jekaterinburgas vasaras laiks',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'Jukonas laiks',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

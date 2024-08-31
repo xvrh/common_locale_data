@@ -1,15 +1,12 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+
+import '../../common_locale_data.dart';
 
 const _locale = 'ja';
 
-/// Translations of [CommonLocaleData] for ja
+/// Translations of [CommonLocaleData]
 class CommonLocaleDataJa implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataJa();
@@ -22,6 +19,14 @@ class CommonLocaleDataJa implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsJa._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsJa._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsJa._();
   @override
   Units get units => _units;
@@ -29,6 +34,10 @@ class CommonLocaleDataJa implements CommonLocaleData {
   static final _territories = TerritoriesJa._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesJa._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesJa extends Languages {
@@ -2617,6 +2626,885 @@ class LanguagesJa extends Languages {
     'zza': Language(
       'zza',
       'ザザ語',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsJa extends Scripts {
+  ScriptsJa._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'アドラム文字',
+    ),
+    'Afak': Script(
+      'Afak',
+      'アファカ文字',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'カフカス・アルバニア文字',
+    ),
+    'Arab': Script(
+      'Arab',
+      'アラビア文字',
+      variant: 'ペルソ・アラビア文字',
+    ),
+    'Aran': Script(
+      'Aran',
+      'ナスタアリーク体',
+    ),
+    'Armi': Script(
+      'Armi',
+      '帝国アラム文字',
+    ),
+    'Armn': Script(
+      'Armn',
+      'アルメニア文字',
+    ),
+    'Avst': Script(
+      'Avst',
+      'アヴェスター文字',
+    ),
+    'Bali': Script(
+      'Bali',
+      'バリ文字',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'バムン文字',
+    ),
+    'Bass': Script(
+      'Bass',
+      'バサ文字',
+    ),
+    'Batk': Script(
+      'Batk',
+      'バタク文字',
+    ),
+    'Beng': Script(
+      'Beng',
+      'ベンガル文字',
+    ),
+    'Blis': Script(
+      'Blis',
+      'ブリスシンボル',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      '注音字母',
+    ),
+    'Brah': Script(
+      'Brah',
+      'ブラーフミー文字',
+    ),
+    'Brai': Script(
+      'Brai',
+      'ブライユ点字',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'ブギス文字',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'ブヒッド文字',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'チャクマ文字',
+    ),
+    'Cans': Script(
+      'Cans',
+      '統合カナダ先住民音節文字',
+    ),
+    'Cari': Script(
+      'Cari',
+      'カリア文字',
+    ),
+    'Cham': Script(
+      'Cham',
+      'チャム文字',
+    ),
+    'Cher': Script(
+      'Cher',
+      'チェロキー文字',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'キアス文字',
+    ),
+    'Copt': Script(
+      'Copt',
+      'コプト文字',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'キプロス文字',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'キリル文字',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      '古代教会スラブ語キリル文字',
+    ),
+    'Deva': Script(
+      'Deva',
+      'デーバナーガリー文字',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'デセレット文字',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'デュプロワエ式速記',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'エジプト民衆文字',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'エジプト神官文字',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'エジプト聖刻文字',
+    ),
+    'Elba': Script(
+      'Elba',
+      'エルバサン文字',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'エチオピア文字',
+    ),
+    'Geok': Script(
+      'Geok',
+      'ジョージア文字(フツリ)',
+    ),
+    'Geor': Script(
+      'Geor',
+      'ジョージア文字',
+    ),
+    'Glag': Script(
+      'Glag',
+      'グラゴル文字',
+    ),
+    'Goth': Script(
+      'Goth',
+      'ゴート文字',
+    ),
+    'Gran': Script(
+      'Gran',
+      'グランタ文字',
+    ),
+    'Grek': Script(
+      'Grek',
+      'ギリシャ文字',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'グジャラート文字',
+    ),
+    'Guru': Script(
+      'Guru',
+      'グルムキー文字',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      '漢語注音字母',
+    ),
+    'Hang': Script(
+      'Hang',
+      'ハングル',
+    ),
+    'Hani': Script(
+      'Hani',
+      '漢字',
+    ),
+    'Hano': Script(
+      'Hano',
+      'ハヌノオ文字',
+    ),
+    'Hans': Script(
+      'Hans',
+      '簡体字',
+      standAlone: '漢字(簡体字)',
+    ),
+    'Hant': Script(
+      'Hant',
+      '繁体字',
+      standAlone: '漢字(繁体字)',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'ヘブライ文字',
+    ),
+    'Hira': Script(
+      'Hira',
+      'ひらがな',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'アナトリア象形文字',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'パハウ・フモン文字',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      '仮名',
+    ),
+    'Hung': Script(
+      'Hung',
+      '古代ハンガリー文字',
+    ),
+    'Inds': Script(
+      'Inds',
+      'インダス文字',
+    ),
+    'Ital': Script(
+      'Ital',
+      '古イタリア文字',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      '字母',
+    ),
+    'Java': Script(
+      'Java',
+      'ジャワ文字',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      '日本語の文字',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      '女真文字',
+    ),
+    'Kali': Script(
+      'Kali',
+      'カヤー文字',
+    ),
+    'Kana': Script(
+      'Kana',
+      'カタカナ',
+    ),
+    'Khar': Script(
+      'Khar',
+      'カローシュティー文字',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'クメール文字',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'ホジャ文字',
+    ),
+    'Knda': Script(
+      'Knda',
+      'カンナダ文字',
+    ),
+    'Kore': Script(
+      'Kore',
+      '韓国語の文字',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      'クペレ文字',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'カイティ文字',
+    ),
+    'Lana': Script(
+      'Lana',
+      'ラーンナー文字',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'ラオ文字',
+    ),
+    'Latf': Script(
+      'Latf',
+      'ラテン文字(ドイツ文字)',
+    ),
+    'Latg': Script(
+      'Latg',
+      'ラテン文字 (ゲール文字)',
+    ),
+    'Latn': Script(
+      'Latn',
+      'ラテン文字',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'レプチャ文字',
+    ),
+    'Limb': Script(
+      'Limb',
+      'リンブ文字',
+    ),
+    'Lina': Script(
+      'Lina',
+      '線文字A',
+    ),
+    'Linb': Script(
+      'Linb',
+      '線文字B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'フレイザー文字',
+    ),
+    'Loma': Script(
+      'Loma',
+      'ロマ文字',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'リキア文字',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'リディア文字',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      'マハージャニー文字',
+    ),
+    'Mand': Script(
+      'Mand',
+      'マンダ文字',
+    ),
+    'Mani': Script(
+      'Mani',
+      'マニ文字',
+    ),
+    'Maya': Script(
+      'Maya',
+      'マヤ象形文字',
+    ),
+    'Mend': Script(
+      'Mend',
+      'メンデ文字',
+    ),
+    'Merc': Script(
+      'Merc',
+      'メロエ文字草書体',
+    ),
+    'Mero': Script(
+      'Mero',
+      'メロエ文字',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'マラヤーラム文字',
+    ),
+    'Modi': Script(
+      'Modi',
+      'モーディー文字',
+    ),
+    'Mong': Script(
+      'Mong',
+      'モンゴル文字',
+    ),
+    'Moon': Script(
+      'Moon',
+      'ムーン文字',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'ムロ文字',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'メイテイ文字',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'ミャンマー文字',
+    ),
+    'Narb': Script(
+      'Narb',
+      '古代北アラビア文字',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'ナバテア文字',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      'ナシ族ゲバ文字',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'ンコ文字',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      '女書',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'オガム文字',
+    ),
+    'Olck': Script(
+      'Olck',
+      'オルチキ文字',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'オルホン文字',
+    ),
+    'Orya': Script(
+      'Orya',
+      'オディア文字',
+    ),
+    'Osma': Script(
+      'Osma',
+      'オスマニア文字',
+    ),
+    'Palm': Script(
+      'Palm',
+      'パルミラ文字',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'パウ・チン・ハウ文字',
+    ),
+    'Perm': Script(
+      'Perm',
+      '古ぺルム文字',
+    ),
+    'Phag': Script(
+      'Phag',
+      'パスパ文字',
+    ),
+    'Phli': Script(
+      'Phli',
+      '碑文パフラヴィー文字',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      '詩編用パフラヴィー文字',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      '書物用パフラヴィー文字',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'フェニキア文字',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'ポラード音声記号',
+    ),
+    'Prti': Script(
+      'Prti',
+      '碑文パルティア文字',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'ルジャン文字',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'ロヒンギャ文字',
+    ),
+    'Roro': Script(
+      'Roro',
+      'ロンゴロンゴ文字',
+    ),
+    'Runr': Script(
+      'Runr',
+      'ルーン文字',
+    ),
+    'Samr': Script(
+      'Samr',
+      'サマリア文字',
+    ),
+    'Sara': Script(
+      'Sara',
+      'サラティ文字',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      '古代南アラビア文字',
+    ),
+    'Saur': Script(
+      'Saur',
+      'サウラーシュトラ文字',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      '手話文字',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'ショー文字',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'シャーラダー文字',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      '梵字',
+    ),
+    'Sind': Script(
+      'Sind',
+      'クダワディ文字',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'シンハラ文字',
+    ),
+    'Sora': Script(
+      'Sora',
+      'ソラング・ソンペング文字',
+    ),
+    'Sund': Script(
+      'Sund',
+      'スンダ文字',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'シロティ・ナグリ文字',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'シリア文字',
+    ),
+    'Syre': Script(
+      'Syre',
+      'シリア文字(エストランゲロ文字)',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'シリア文字(西方シリア文字)',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'シリア文字(東方シリア文字)',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'タグバンワ文字',
+    ),
+    'Takr': Script(
+      'Takr',
+      'タークリー文字',
+    ),
+    'Tale': Script(
+      'Tale',
+      'タイ・レ文字',
+    ),
+    'Talu': Script(
+      'Talu',
+      '新タイ・ルー文字',
+    ),
+    'Taml': Script(
+      'Taml',
+      'タミル文字',
+    ),
+    'Tang': Script(
+      'Tang',
+      '西夏文字',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'タイ・ヴェト文字',
+    ),
+    'Telu': Script(
+      'Telu',
+      'テルグ文字',
+    ),
+    'Teng': Script(
+      'Teng',
+      'テングワール文字',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'ティフナグ文字',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'タガログ文字',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'ターナ文字',
+    ),
+    'Thai': Script(
+      'Thai',
+      'タイ文字',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'チベット文字',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'ティルフータ文字',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'ウガリット文字',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'ヴァイ文字',
+    ),
+    'Visp': Script(
+      'Visp',
+      '視話法',
+    ),
+    'Wara': Script(
+      'Wara',
+      'バラン・クシティ文字',
+    ),
+    'Wole': Script(
+      'Wole',
+      'ウォレアイ文字',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      '古代ペルシア文字',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'シュメール＝アッカド語楔形文字',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'イ文字',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      '基底文字の種別を継承する結合文字',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      '数学記号',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      '絵文字',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      '記号文字',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      '非表記',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      '共通文字',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      '不明な文字',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsJa extends Variants {
+  VariantsJa._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'ドイツ語旧正書法',
+    ),
+    '1994': Variant(
+      '1994',
+      '標準レージア方言正書法',
+    ),
+    '1996': Variant(
+      '1996',
+      'ドイツ語正書法(1996)',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      '後期中世フランス語(〜1606)',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      '初期現代フランス語',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      '標準ベラルーシ語 (1959)',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      'ALA-LCラテン文字化(1997)',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'アロコ方言',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      '東アルメニア文語',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      '西アルメニア文語',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      '統一トルコラテン文字',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'サン・ジョルジョ/ビーラ方言',
+    ),
+    'BOHORIC': Variant(
+      'BOHORIC',
+      'ボホリッツ・アルファベット',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'ブーントリング',
+    ),
+    'DAJNKO': Variant(
+      'DAJNKO',
+      'ダインチッツァ',
+    ),
+    'EMODENG': Variant(
+      'EMODENG',
+      '初期近代英語',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      '国際音声記号',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'ウラル音声記号',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      'ヘボン式ローマ字',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      '共通コーンウォール語正書法',
+    ),
+    'KSCOR': Variant(
+      'KSCOR',
+      '標準コーンウォール語正書法',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'レージア方言 リポヴァツ方言',
+    ),
+    'METELKO': Variant(
+      'METELKO',
+      'メテルチッツァ',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'モノトニック',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'ンジュカ方言',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'ナティゾーネ方言',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'ニヴァ方言',
+    ),
+    'NULIK': Variant(
+      'NULIK',
+      '現代ヴォラピュク語',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'オゼアッコ/オソヤネ方言',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'パマカ方言',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'ピン音(ローマ字表記法)',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'ポリトニック',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'コンピュータ',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      '改訂版',
+    ),
+    'RIGIK': Variant(
+      'RIGIK',
+      '古典ヴォラピュク語',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'レシア方言',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'サホ語',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'スコットランド標準英語',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'リバプール方言',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'ストルヴィッツァ/ソルビツァ方言',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'タラシケヴィツァ正書法',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      '統一コーンウォール語正書法',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      '改訂統一コーンウォール語正書法',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'バレンシア方言',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'ウェード式ローマ字表記法',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -8930,6 +9818,2418 @@ class TerritoriesJa implements Territories {
     'ZW': Territory(
       'ZW',
       'ジンバブエ',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesJa extends TimeZones {
+  TimeZonesJa._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: '{0}時間',
+            regionFormatDaylight: '{0}夏時間',
+            regionFormatStandard: '{0}標準時',
+            fallbackFormat: '{1}（{0}）');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Adak': TimeZoneNames(
+      city: 'アダック',
+    ),
+    'America/Anchorage': TimeZoneNames(
+      city: 'アンカレッジ',
+    ),
+    'America/Anguilla': TimeZoneNames(
+      city: 'アンギラ',
+    ),
+    'America/Antigua': TimeZoneNames(
+      city: 'アンティグア',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      city: 'アラグァイナ',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      city: 'リオガジェゴス',
+    ),
+    'America/Argentina/San_Juan': TimeZoneNames(
+      city: 'サンファン',
+    ),
+    'America/Argentina/Ushuaia': TimeZoneNames(
+      city: 'ウシュアイア',
+    ),
+    'America/Argentina/La_Rioja': TimeZoneNames(
+      city: 'ラリオハ',
+    ),
+    'America/Argentina/San_Luis': TimeZoneNames(
+      city: 'サンルイス',
+    ),
+    'America/Argentina/Salta': TimeZoneNames(
+      city: 'サルタ',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      city: 'トゥクマン',
+    ),
+    'America/Aruba': TimeZoneNames(
+      city: 'アルバ',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      city: 'アスンシオン',
+    ),
+    'America/Bahia': TimeZoneNames(
+      city: 'バイーア',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      city: 'バイアバンデラ',
+    ),
+    'America/Barbados': TimeZoneNames(
+      city: 'バルバドス',
+    ),
+    'America/Belem': TimeZoneNames(
+      city: 'ベレン',
+    ),
+    'America/Belize': TimeZoneNames(
+      city: 'ベリーズ',
+    ),
+    'America/Blanc-Sablon': TimeZoneNames(
+      city: 'ブラン・サブロン',
+    ),
+    'America/Boa_Vista': TimeZoneNames(
+      city: 'ボアビスタ',
+    ),
+    'America/Bogota': TimeZoneNames(
+      city: 'ボゴタ',
+    ),
+    'America/Boise': TimeZoneNames(
+      city: 'ボイシ',
+    ),
+    'America/Buenos_Aires': TimeZoneNames(
+      city: 'ブエノスアイレス',
+    ),
+    'America/Cambridge_Bay': TimeZoneNames(
+      city: 'ケンブリッジベイ',
+    ),
+    'America/Campo_Grande': TimeZoneNames(
+      city: 'カンポグランデ',
+    ),
+    'America/Cancun': TimeZoneNames(
+      city: 'カンクン',
+    ),
+    'America/Caracas': TimeZoneNames(
+      city: 'カラカス',
+    ),
+    'America/Catamarca': TimeZoneNames(
+      city: 'カタマルカ',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      city: 'カイエンヌ',
+    ),
+    'America/Cayman': TimeZoneNames(
+      city: 'ケイマン',
+    ),
+    'America/Chicago': TimeZoneNames(
+      city: 'シカゴ',
+    ),
+    'America/Chihuahua': TimeZoneNames(
+      city: 'チワワ',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      city: 'シウダー・フアレス',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      city: 'アティコカン',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      city: 'コルドバ',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      city: 'コスタリカ',
+    ),
+    'America/Creston': TimeZoneNames(
+      city: 'クレストン',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      city: 'クイアバ',
+    ),
+    'America/Curacao': TimeZoneNames(
+      city: 'キュラソー',
+    ),
+    'America/Danmarkshavn': TimeZoneNames(
+      city: 'デンマークシャウン',
+    ),
+    'America/Dawson': TimeZoneNames(
+      city: 'ドーソン',
+    ),
+    'America/Dawson_Creek': TimeZoneNames(
+      city: 'ドーソンクリーク',
+    ),
+    'America/Denver': TimeZoneNames(
+      city: 'デンバー',
+    ),
+    'America/Detroit': TimeZoneNames(
+      city: 'デトロイト',
+    ),
+    'America/Dominica': TimeZoneNames(
+      city: 'ドミニカ',
+    ),
+    'America/Edmonton': TimeZoneNames(
+      city: 'エドモントン',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      city: 'エイルネペ',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      city: 'エルサルバドル',
+    ),
+    'America/Fort_Nelson': TimeZoneNames(
+      city: 'フォートネルソン',
+    ),
+    'America/Fortaleza': TimeZoneNames(
+      city: 'フォルタレザ',
+    ),
+    'America/Glace_Bay': TimeZoneNames(
+      city: 'グレースベイ',
+    ),
+    'America/Godthab': TimeZoneNames(
+      city: 'ヌーク',
+    ),
+    'America/Goose_Bay': TimeZoneNames(
+      city: 'グースベイ',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      city: 'グランドターク',
+    ),
+    'America/Grenada': TimeZoneNames(
+      city: 'グレナダ',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      city: 'グアドループ',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      city: 'グアテマラ',
+    ),
+    'America/Guayaquil': TimeZoneNames(
+      city: 'グアヤキル',
+    ),
+    'America/Guyana': TimeZoneNames(
+      city: 'ガイアナ',
+    ),
+    'America/Halifax': TimeZoneNames(
+      city: 'ハリファクス',
+    ),
+    'America/Havana': TimeZoneNames(
+      city: 'ハバナ',
+    ),
+    'America/Hermosillo': TimeZoneNames(
+      city: 'エルモシヨ',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      city: 'インディアナ州ビンセンス',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      city: 'インディアナ州ピーターズバーグ',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      city: 'インディアナ州テルシティ',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      city: 'インディアナ州ノックス',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      city: 'インディアナ州ウィナマック',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      city: 'インディアナ州マレンゴ',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      city: 'インディアナ州ビベー',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      city: 'インディアナポリス',
+    ),
+    'America/Inuvik': TimeZoneNames(
+      city: 'イヌヴィク',
+    ),
+    'America/Iqaluit': TimeZoneNames(
+      city: 'イカルイット',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      city: 'ジャマイカ',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      city: 'フフイ',
+    ),
+    'America/Juneau': TimeZoneNames(
+      city: 'ジュノー',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      city: 'ケンタッキー州モンティチェロ',
+    ),
+    'America/Kralendijk': TimeZoneNames(
+      city: 'クラレンダイク',
+    ),
+    'America/La_Paz': TimeZoneNames(
+      city: 'ラパス',
+    ),
+    'America/Lima': TimeZoneNames(
+      city: 'リマ',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      city: 'ロサンゼルス',
+    ),
+    'America/Louisville': TimeZoneNames(
+      city: 'ルイビル',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      city: 'ローワー・プリンセズ・クウォーター',
+    ),
+    'America/Maceio': TimeZoneNames(
+      city: 'マセイオ',
+    ),
+    'America/Managua': TimeZoneNames(
+      city: 'マナグア',
+    ),
+    'America/Manaus': TimeZoneNames(
+      city: 'マナウス',
+    ),
+    'America/Marigot': TimeZoneNames(
+      city: 'マリゴ',
+    ),
+    'America/Martinique': TimeZoneNames(
+      city: 'マルティニーク',
+    ),
+    'America/Matamoros': TimeZoneNames(
+      city: 'マタモロス',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      city: 'マサトラン',
+    ),
+    'America/Mendoza': TimeZoneNames(
+      city: 'メンドーサ',
+    ),
+    'America/Menominee': TimeZoneNames(
+      city: 'メノミニー',
+    ),
+    'America/Merida': TimeZoneNames(
+      city: 'メリダ',
+    ),
+    'America/Metlakatla': TimeZoneNames(
+      city: 'メトラカトラ',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      city: 'メキシコシティー',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      city: 'ミクロン島',
+    ),
+    'America/Moncton': TimeZoneNames(
+      city: 'モンクトン',
+    ),
+    'America/Monterrey': TimeZoneNames(
+      city: 'モンテレイ',
+    ),
+    'America/Montevideo': TimeZoneNames(
+      city: 'モンテビデオ',
+    ),
+    'America/Montserrat': TimeZoneNames(
+      city: 'モントセラト',
+    ),
+    'America/Nassau': TimeZoneNames(
+      city: 'ナッソー',
+    ),
+    'America/New_York': TimeZoneNames(
+      city: 'ニューヨーク',
+    ),
+    'America/Nome': TimeZoneNames(
+      city: 'ノーム',
+    ),
+    'America/Noronha': TimeZoneNames(
+      city: 'ノローニャ',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      city: 'ノースダコタ州ビューラー',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      city: 'ノースダコタ州ニューセーラム',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      city: 'ノースダコタ州センター',
+    ),
+    'America/Ojinaga': TimeZoneNames(
+      city: 'オヒナガ',
+    ),
+    'America/Panama': TimeZoneNames(
+      city: 'パナマ',
+    ),
+    'America/Paramaribo': TimeZoneNames(
+      city: 'パラマリボ',
+    ),
+    'America/Phoenix': TimeZoneNames(
+      city: 'フェニックス',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      city: 'ポルトープランス',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      city: 'ポートオブスペイン',
+    ),
+    'America/Porto_Velho': TimeZoneNames(
+      city: 'ポルトベーリョ',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      city: 'プエルトリコ',
+    ),
+    'America/Punta_Arenas': TimeZoneNames(
+      city: 'プンタアレナス',
+    ),
+    'America/Rankin_Inlet': TimeZoneNames(
+      city: 'ランキンインレット',
+    ),
+    'America/Recife': TimeZoneNames(
+      city: 'レシフェ',
+    ),
+    'America/Regina': TimeZoneNames(
+      city: 'レジャイナ',
+    ),
+    'America/Resolute': TimeZoneNames(
+      city: 'レゾリュート',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      city: 'リオブランコ',
+    ),
+    'America/Santarem': TimeZoneNames(
+      city: 'サンタレム',
+    ),
+    'America/Santiago': TimeZoneNames(
+      city: 'サンチアゴ',
+    ),
+    'America/Santo_Domingo': TimeZoneNames(
+      city: 'サントドミンゴ',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      city: 'サンパウロ',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      city: 'イトコルトルミット',
+    ),
+    'America/Sitka': TimeZoneNames(
+      city: 'シトカ',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      city: 'サン・バルテルミー',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      city: 'セントジョンズ',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      city: 'セントクリストファー',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      city: 'セントルシア',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      city: 'セントトーマス',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      city: 'セントビンセント',
+    ),
+    'America/Swift_Current': TimeZoneNames(
+      city: 'スウィフトカレント',
+    ),
+    'America/Tegucigalpa': TimeZoneNames(
+      city: 'テグシガルパ',
+    ),
+    'America/Thule': TimeZoneNames(
+      city: 'チューレ',
+    ),
+    'America/Tijuana': TimeZoneNames(
+      city: 'ティフアナ',
+    ),
+    'America/Toronto': TimeZoneNames(
+      city: 'トロント',
+    ),
+    'America/Tortola': TimeZoneNames(
+      city: 'トルトーラ',
+    ),
+    'America/Vancouver': TimeZoneNames(
+      city: 'バンクーバー',
+    ),
+    'America/Whitehorse': TimeZoneNames(
+      city: 'ホワイトホース',
+    ),
+    'America/Winnipeg': TimeZoneNames(
+      city: 'ウィニペグ',
+    ),
+    'America/Yakutat': TimeZoneNames(
+      city: 'ヤクタット',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      city: 'アゾレス',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      city: 'バミューダ',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      city: 'カナリア',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      city: 'カーボベルデ',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      city: 'フェロー',
+    ),
+    'Atlantic/Madeira': TimeZoneNames(
+      city: 'マデイラ',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      city: 'レイキャビク',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      city: 'サウスジョージア',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      city: 'セントヘレナ',
+    ),
+    'Atlantic/Stanley': TimeZoneNames(
+      city: 'スタンレー',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      city: 'アムステルダム',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      city: 'アンドラ',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      city: 'アストラハン',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      city: 'アテネ',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      city: 'ベオグラード',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      city: 'ベルリン',
+    ),
+    'Europe/Bratislava': TimeZoneNames(
+      city: 'ブラチスラバ',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      city: 'ブリュッセル',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      city: 'ブカレスト',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      city: 'ブダペスト',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      city: 'ビュージンゲン',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      city: 'キシナウ',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      city: 'コペンハーゲン',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'アイルランド標準時',
+      ),
+      city: 'ダブリン',
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      city: 'ジブラルタル',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      city: 'ガーンジー',
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      city: 'ヘルシンキ',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      city: 'マン島',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      city: 'イスタンブール',
+    ),
+    'Europe/Jersey': TimeZoneNames(
+      city: 'ジャージー',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      city: 'カリーニングラード',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      city: 'キーウ',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      city: 'キーロフ',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      city: 'リスボン',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      city: 'リュブリャナ',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: '英国夏時間',
+      ),
+      city: 'ロンドン',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      city: 'ルクセンブルク',
+    ),
+    'Europe/Madrid': TimeZoneNames(
+      city: 'マドリード',
+    ),
+    'Europe/Malta': TimeZoneNames(
+      city: 'マルタ',
+    ),
+    'Europe/Mariehamn': TimeZoneNames(
+      city: 'マリエハムン',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      city: 'ミンスク',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      city: 'モナコ',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      city: 'モスクワ',
+    ),
+    'Europe/Oslo': TimeZoneNames(
+      city: 'オスロ',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      city: 'パリ',
+    ),
+    'Europe/Podgorica': TimeZoneNames(
+      city: 'ポドゴリツァ',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      city: 'プラハ',
+    ),
+    'Europe/Riga': TimeZoneNames(
+      city: 'リガ',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      city: 'ローマ',
+    ),
+    'Europe/Samara': TimeZoneNames(
+      city: 'サマラ',
+    ),
+    'Europe/San_Marino': TimeZoneNames(
+      city: 'サンマリノ',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      city: 'サラエボ',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      city: 'サラトフ',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      city: 'シンフェロポリ',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      city: 'スコピエ',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      city: 'ソフィア',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      city: 'ストックホルム',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      city: 'タリン',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      city: 'ティラナ',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      city: 'ウリヤノフスク',
+    ),
+    'Europe/Vaduz': TimeZoneNames(
+      city: 'ファドゥーツ',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      city: 'バチカン',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      city: 'ウィーン',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      city: 'ヴィリニュス',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      city: 'ボルゴグラード',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      city: 'ワルシャワ',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      city: 'ザグレブ',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      city: 'チューリッヒ',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      city: 'アビジャン',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      city: 'アクラ',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      city: 'アジスアベバ',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      city: 'アルジェ',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      city: 'アスマラ',
+    ),
+    'Africa/Bamako': TimeZoneNames(
+      city: 'バマコ',
+    ),
+    'Africa/Bangui': TimeZoneNames(
+      city: 'バンギ',
+    ),
+    'Africa/Banjul': TimeZoneNames(
+      city: 'バンジュール',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      city: 'ビサウ',
+    ),
+    'Africa/Blantyre': TimeZoneNames(
+      city: 'ブランタイヤ',
+    ),
+    'Africa/Brazzaville': TimeZoneNames(
+      city: 'ブラザビル',
+    ),
+    'Africa/Bujumbura': TimeZoneNames(
+      city: 'ブジュンブラ',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      city: 'カイロ',
+    ),
+    'Africa/Casablanca': TimeZoneNames(
+      city: 'カサブランカ',
+    ),
+    'Africa/Ceuta': TimeZoneNames(
+      city: 'セウタ',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      city: 'コナクリ',
+    ),
+    'Africa/Dakar': TimeZoneNames(
+      city: 'ダカール',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      city: 'ダルエスサラーム',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      city: 'ジブチ',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      city: 'ドゥアラ',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      city: 'アイウン',
+    ),
+    'Africa/Freetown': TimeZoneNames(
+      city: 'フリータウン',
+    ),
+    'Africa/Gaborone': TimeZoneNames(
+      city: 'ハボローネ',
+    ),
+    'Africa/Harare': TimeZoneNames(
+      city: 'ハラレ',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      city: 'ヨハネスブルグ',
+    ),
+    'Africa/Juba': TimeZoneNames(
+      city: 'ジュバ',
+    ),
+    'Africa/Kampala': TimeZoneNames(
+      city: 'カンパラ',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      city: 'ハルツーム',
+    ),
+    'Africa/Kigali': TimeZoneNames(
+      city: 'キガリ',
+    ),
+    'Africa/Kinshasa': TimeZoneNames(
+      city: 'キンシャサ',
+    ),
+    'Africa/Lagos': TimeZoneNames(
+      city: 'ラゴス',
+    ),
+    'Africa/Libreville': TimeZoneNames(
+      city: 'リーブルヴィル',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      city: 'ロメ',
+    ),
+    'Africa/Luanda': TimeZoneNames(
+      city: 'ルアンダ',
+    ),
+    'Africa/Lubumbashi': TimeZoneNames(
+      city: 'ルブンバシ',
+    ),
+    'Africa/Lusaka': TimeZoneNames(
+      city: 'ルサカ',
+    ),
+    'Africa/Malabo': TimeZoneNames(
+      city: 'マラボ',
+    ),
+    'Africa/Maputo': TimeZoneNames(
+      city: 'マプト',
+    ),
+    'Africa/Maseru': TimeZoneNames(
+      city: 'マセル',
+    ),
+    'Africa/Mbabane': TimeZoneNames(
+      city: 'ムババーネ',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      city: 'モガディシオ',
+    ),
+    'Africa/Monrovia': TimeZoneNames(
+      city: 'モンロビア',
+    ),
+    'Africa/Nairobi': TimeZoneNames(
+      city: 'ナイロビ',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      city: 'ンジャメナ',
+    ),
+    'Africa/Niamey': TimeZoneNames(
+      city: 'ニアメ',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      city: 'ヌアクショット',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      city: 'ワガドゥグー',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      city: 'ポルトノボ',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      city: 'サントメ',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      city: 'トリポリ',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      city: 'チュニス',
+    ),
+    'Africa/Windhoek': TimeZoneNames(
+      city: 'ウィントフック',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      city: 'アデン',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      city: 'アルマトイ',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      city: 'アンマン',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      city: 'アナディリ',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      city: 'アクタウ',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      city: 'アクトベ',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      city: 'アシガバード',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      city: 'アティラウ',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      city: 'バグダッド',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      city: 'バーレーン',
+    ),
+    'Asia/Baku': TimeZoneNames(
+      city: 'バクー',
+    ),
+    'Asia/Bangkok': TimeZoneNames(
+      city: 'バンコク',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      city: 'バルナウル',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      city: 'ベイルート',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      city: 'ビシュケク',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      city: 'ブルネイ',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      city: 'コルカタ',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      city: 'チタ',
+    ),
+    'Asia/Choibalsan': TimeZoneNames(
+      city: 'チョイバルサン',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      city: 'コロンボ',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      city: 'ダマスカス',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      city: 'ダッカ',
+    ),
+    'Asia/Dili': TimeZoneNames(
+      city: 'ディリ',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      city: 'ドバイ',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      city: 'ドゥシャンベ',
+    ),
+    'Asia/Famagusta': TimeZoneNames(
+      city: 'ファマグスタ',
+    ),
+    'Asia/Gaza': TimeZoneNames(
+      city: 'ガザ',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      city: 'ヘブロン',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      city: '香港',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      city: 'ホブド',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      city: 'イルクーツク',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      city: 'ジャカルタ',
+    ),
+    'Asia/Jayapura': TimeZoneNames(
+      city: 'ジャヤプラ',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      city: 'エルサレム',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      city: 'カブール',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      city: 'カムチャッカ',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      city: 'カラチ',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      city: 'カトマンズ',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      city: 'ハンドゥイガ',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      city: 'クラスノヤルスク',
+    ),
+    'Asia/Kuala_Lumpur': TimeZoneNames(
+      city: 'クアラルンプール',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      city: 'クチン',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      city: 'クウェート',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      city: 'マカオ',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      city: 'マガダン',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      city: 'マカッサル',
+    ),
+    'Asia/Manila': TimeZoneNames(
+      city: 'マニラ',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      city: 'マスカット',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      city: 'ニコシア',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      city: 'ノヴォクズネツク',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      city: 'ノヴォシビルスク',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      city: 'オムスク',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      city: 'オラル',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      city: 'プノンペン',
+    ),
+    'Asia/Pontianak': TimeZoneNames(
+      city: 'ポンティアナック',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      city: '平壌',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      city: 'カタール',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      city: 'コスタナイ',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      city: 'クズロルダ',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      city: 'ヤンゴン',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      city: 'リヤド',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      city: 'ホーチミン',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      city: 'サハリン',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      city: 'サマルカンド',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      city: 'ソウル',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      city: '上海',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      city: 'シンガポール',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      city: 'スレドネコリムスク',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      city: '台北',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      city: 'タシケント',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      city: 'トビリシ',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      city: 'テヘラン',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      city: 'ティンプー',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      city: '東京',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      city: 'トムスク',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      city: 'ウランバートル',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      city: 'ウルムチ',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      city: 'ウスチネラ',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      city: 'ビエンチャン',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      city: 'ウラジオストク',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      city: 'ヤクーツク',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      city: 'エカテリンブルグ',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      city: 'エレバン',
+    ),
+    'Indian/Antananarivo': TimeZoneNames(
+      city: 'アンタナナリボ',
+    ),
+    'Indian/Chagos': TimeZoneNames(
+      city: 'チャゴス',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      city: 'クリスマス島',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      city: 'ココス諸島',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      city: 'コモロ',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      city: 'ケルゲレン諸島',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      city: 'マヘ',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      city: 'モルディブ',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      city: 'モーリシャス',
+    ),
+    'Indian/Mayotte': TimeZoneNames(
+      city: 'マヨット',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      city: 'レユニオン',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      city: 'アデレード',
+    ),
+    'Australia/Brisbane': TimeZoneNames(
+      city: 'ブリスベン',
+    ),
+    'Australia/Broken_Hill': TimeZoneNames(
+      city: 'ブロークンヒル',
+    ),
+    'Australia/Darwin': TimeZoneNames(
+      city: 'ダーウィン',
+    ),
+    'Australia/Eucla': TimeZoneNames(
+      city: 'ユークラ',
+    ),
+    'Australia/Hobart': TimeZoneNames(
+      city: 'ホバート',
+    ),
+    'Australia/Lindeman': TimeZoneNames(
+      city: 'リンデマン',
+    ),
+    'Australia/Lord_Howe': TimeZoneNames(
+      city: 'ロードハウ',
+    ),
+    'Australia/Melbourne': TimeZoneNames(
+      city: 'メルボルン',
+    ),
+    'Australia/Perth': TimeZoneNames(
+      city: 'パース',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      city: 'シドニー',
+    ),
+    'Pacific/Apia': TimeZoneNames(
+      city: 'アピア',
+    ),
+    'Pacific/Auckland': TimeZoneNames(
+      city: 'オークランド',
+    ),
+    'Pacific/Bougainville': TimeZoneNames(
+      city: 'ブーゲンビル',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      city: 'チャタム',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      city: 'イースター島',
+    ),
+    'Pacific/Efate': TimeZoneNames(
+      city: 'エフェテ島',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      city: 'エンダーベリー島',
+    ),
+    'Pacific/Fakaofo': TimeZoneNames(
+      city: 'ファカオフォ',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      city: 'フィジー',
+    ),
+    'Pacific/Funafuti': TimeZoneNames(
+      city: 'フナフティ',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      city: 'ガラパゴス',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      city: 'ガンビエ諸島',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      city: 'ガダルカナル',
+    ),
+    'Pacific/Guam': TimeZoneNames(
+      city: 'グアム',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      city: 'ホノルル',
+    ),
+    'Pacific/Kanton': TimeZoneNames(
+      city: 'カントン島',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      city: 'キリスィマスィ島',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      city: 'コスラエ',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      city: 'クェゼリン',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      city: 'マジュロ',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      city: 'マルキーズ',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      city: 'ミッドウェー島',
+    ),
+    'Pacific/Nauru': TimeZoneNames(
+      city: 'ナウル',
+    ),
+    'Pacific/Niue': TimeZoneNames(
+      city: 'ニウエ',
+    ),
+    'Pacific/Norfolk': TimeZoneNames(
+      city: 'ノーフォーク島',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      city: 'ヌメア',
+    ),
+    'Pacific/Pago_Pago': TimeZoneNames(
+      city: 'パゴパゴ',
+    ),
+    'Pacific/Palau': TimeZoneNames(
+      city: 'パラオ',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      city: 'ピトケアン諸島',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      city: 'ポンペイ島',
+    ),
+    'Pacific/Port_Moresby': TimeZoneNames(
+      city: 'ポートモレスビー',
+    ),
+    'Pacific/Rarotonga': TimeZoneNames(
+      city: 'ラロトンガ',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      city: 'サイパン',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      city: 'タヒチ',
+    ),
+    'Pacific/Tarawa': TimeZoneNames(
+      city: 'タラワ',
+    ),
+    'Pacific/Tongatapu': TimeZoneNames(
+      city: 'トンガタプ',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      city: 'チューク',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      city: 'ウェーク島',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      city: 'ウォリス諸島',
+    ),
+    'Arctic/Longyearbyen': TimeZoneNames(
+      city: 'ロングイェールビーン',
+    ),
+    'Antarctica/Casey': TimeZoneNames(
+      city: 'ケーシー基地',
+    ),
+    'Antarctica/Davis': TimeZoneNames(
+      city: 'デービス基地',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      city: 'デュモン・デュルヴィル基地',
+    ),
+    'Antarctica/Macquarie': TimeZoneNames(
+      city: 'マッコリー',
+    ),
+    'Antarctica/Mawson': TimeZoneNames(
+      city: 'モーソン基地',
+    ),
+    'Antarctica/McMurdo': TimeZoneNames(
+      city: 'マクマード基地',
+    ),
+    'Antarctica/Palmer': TimeZoneNames(
+      city: 'パーマー基地',
+    ),
+    'Antarctica/Rothera': TimeZoneNames(
+      city: 'ロゼラ基地',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      city: '昭和基地',
+    ),
+    'Antarctica/Troll': TimeZoneNames(
+      city: 'トロル基地',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      city: 'ボストーク基地',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: '協定世界時',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      city: '地域不明',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'アクレ時間',
+        standard: 'アクレ標準時',
+        daylight: 'アクレ夏時間',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'アフガニスタン時間',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: '中央アフリカ時間',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: '東アフリカ時間',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: '南アフリカ標準時',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: '西アフリカ時間',
+        standard: '西アフリカ標準時',
+        daylight: '西アフリカ夏時間',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'アラスカ時間',
+        standard: 'アラスカ標準時',
+        daylight: 'アラスカ夏時間',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'アルトマイ時間',
+        standard: 'アルトマイ標準時',
+        daylight: 'アルマトイ夏時間',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'アマゾン時間',
+        standard: 'アマゾン標準時',
+        daylight: 'アマゾン夏時間',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'アメリカ中部時間',
+        standard: 'アメリカ中部標準時',
+        daylight: 'アメリカ中部夏時間',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'アメリカ東部時間',
+        standard: 'アメリカ東部標準時',
+        daylight: 'アメリカ東部夏時間',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'アメリカ山地時間',
+        standard: 'アメリカ山地標準時',
+        daylight: 'アメリカ山地夏時間',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'アメリカ太平洋時間',
+        standard: 'アメリカ太平洋標準時',
+        daylight: 'アメリカ太平洋夏時間',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'アナディリ時間',
+        standard: 'アナディリ標準時',
+        daylight: 'アナディリ夏時間',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'アピア時間',
+        standard: 'アピア標準時',
+        daylight: 'アピア夏時間',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'アクタウ時間',
+        standard: 'アクタウ標準時',
+        daylight: 'アクタウ夏時間',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'アクトベ時間',
+        standard: 'アクトベ標準時',
+        daylight: 'アクトベ夏時間',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'アラビア時間',
+        standard: 'アラビア標準時',
+        daylight: 'アラビア夏時間',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'アルゼンチン時間',
+        standard: 'アルゼンチン標準時',
+        daylight: 'アルゼンチン夏時間',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: '西部アルゼンチン時間',
+        standard: '西部アルゼンチン標準時',
+        daylight: '西部アルゼンチン夏時間',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'アルメニア時間',
+        standard: 'アルメニア標準時',
+        daylight: 'アルメニア夏時間',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: '大西洋時間',
+        standard: '大西洋標準時',
+        daylight: '大西洋夏時間',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'オーストラリア中部時間',
+        standard: 'オーストラリア中部標準時',
+        daylight: 'オーストラリア中部夏時間',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'オーストラリア中西部時間',
+        standard: 'オーストラリア中西部標準時',
+        daylight: 'オーストラリア中西部夏時間',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'オーストラリア東部時間',
+        standard: 'オーストラリア東部標準時',
+        daylight: 'オーストラリア東部夏時間',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'オーストラリア西部時間',
+        standard: 'オーストラリア西部標準時',
+        daylight: 'オーストラリア西部夏時間',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'アゼルバイジャン時間',
+        standard: 'アゼルバイジャン標準時',
+        daylight: 'アゼルバイジャン夏時間',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'アゾレス時間',
+        standard: 'アゾレス標準時',
+        daylight: 'アゾレス夏時間',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'バングラデシュ時間',
+        standard: 'バングラデシュ標準時',
+        daylight: 'バングラデシュ夏時間',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'ブータン時間',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'ボリビア時間',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'ブラジリア時間',
+        standard: 'ブラジリア標準時',
+        daylight: 'ブラジリア夏時間',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'ブルネイ・ダルサラーム時間',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'カーボベルデ時間',
+        standard: 'カーボベルデ標準時',
+        daylight: 'カーボベルデ夏時間',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'ケイシー基地時間',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'チャモロ時間',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'チャタム時間',
+        standard: 'チャタム標準時',
+        daylight: 'チャタム夏時間',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'チリ時間',
+        standard: 'チリ標準時',
+        daylight: 'チリ夏時間',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: '中国時間',
+        standard: '中国標準時',
+        daylight: '中国夏時間',
+      ),
+    ),
+    'Choibalsan': MetaZone(
+      code: 'Choibalsan',
+      long: TimeZoneName(
+        generic: 'チョイバルサン時間',
+        standard: 'チョイバルサン標準時',
+        daylight: 'チョイバルサン夏時間',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'クリスマス島時間',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'ココス諸島時間',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'コロンビア時間',
+        standard: 'コロンビア標準時',
+        daylight: 'コロンビア夏時間',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'クック諸島時間',
+        standard: 'クック諸島標準時',
+        daylight: 'クック諸島夏時間',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'キューバ時間',
+        standard: 'キューバ標準時',
+        daylight: 'キューバ夏時間',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'デービス基地時間',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'デュモン・デュルヴィル基地時間',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: '東ティモール時間',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'イースター島時間',
+        standard: 'イースター島標準時',
+        daylight: 'イースター島夏時間',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'エクアドル時間',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: '中央ヨーロッパ時間',
+        standard: '中央ヨーロッパ標準時',
+        daylight: '中央ヨーロッパ夏時間',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: '東ヨーロッパ時間',
+        standard: '東ヨーロッパ標準時',
+        daylight: '東ヨーロッパ夏時間',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: '極東ヨーロッパ時間',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: '西ヨーロッパ時間',
+        standard: '西ヨーロッパ標準時',
+        daylight: '西ヨーロッパ夏時間',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'フォークランド諸島時間',
+        standard: 'フォークランド諸島標準時',
+        daylight: 'フォークランド諸島夏時間',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'フィジー時間',
+        standard: 'フィジー標準時',
+        daylight: 'フィジー夏時間',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: '仏領ギアナ時間',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: '仏領南方南極時間',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'ガラパゴス時間',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'ガンビエ諸島時間',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'ジョージア時間',
+        standard: 'ジョージア標準時',
+        daylight: 'ジョージア夏時間',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'ギルバート諸島時間',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'グリニッジ標準時',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'グリーンランド東部時間',
+        standard: 'グリーンランド東部標準時',
+        daylight: 'グリーンランド東部夏時間',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'グリーンランド西部時間',
+        standard: 'グリーンランド西部標準時',
+        daylight: 'グリーンランド西部夏時間',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'グアム時間',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: '湾岸標準時',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'ガイアナ時間',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'ハワイ・アリューシャン時間',
+        standard: 'ハワイ・アリューシャン標準時',
+        daylight: 'ハワイ・アリューシャン夏時間',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: '香港時間',
+        standard: '香港標準時',
+        daylight: '香港夏時間',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'ホブド時間',
+        standard: 'ホブド標準時',
+        daylight: 'ホブド夏時間',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'インド標準時',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'インド洋時間',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'インドシナ時間',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'インドネシア中部時間',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'インドネシア東部時間',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'インドネシア西部時間',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'イラン時間',
+        standard: 'イラン標準時',
+        daylight: 'イラン夏時間',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'イルクーツク時間',
+        standard: 'イルクーツク標準時',
+        daylight: 'イルクーツク夏時間',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'イスラエル時間',
+        standard: 'イスラエル標準時',
+        daylight: 'イスラエル夏時間',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: '日本時間',
+        standard: '日本標準時',
+        daylight: '日本夏時間',
+      ),
+      short: TimeZoneName(
+        standard: 'JST',
+        daylight: 'JDT',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'ペトロパブロフスク・カムチャツキー時間',
+        standard: 'ペトロパブロフスク・カムチャツキー標準時',
+        daylight: 'ペトロパブロフスク・カムチャツキー夏時間',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: '東カザフスタン時間',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: '西カザフスタン時間',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: '韓国時間',
+        standard: '韓国標準時',
+        daylight: '韓国夏時間',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'コスラエ時間',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'クラスノヤルスク時間',
+        standard: 'クラスノヤルスク標準時',
+        daylight: 'クラスノヤルスク夏時間',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'キルギス時間',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'ランカ時間',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'ライン諸島時間',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'ロードハウ時間',
+        standard: 'ロードハウ標準時',
+        daylight: 'ロードハウ夏時間',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'マカオ時間',
+        standard: 'マカオ標準時',
+        daylight: 'マカオ夏時間',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'マガダン時間',
+        standard: 'マガダン標準時',
+        daylight: 'マガダン夏時間',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'マレーシア時間',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'モルディブ時間',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'マルキーズ時間',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'マーシャル諸島時間',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'モーリシャス時間',
+        standard: 'モーリシャス標準時',
+        daylight: 'モーリシャス夏時間',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'モーソン基地時間',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'メキシコ太平洋時間',
+        standard: 'メキシコ太平洋標準時',
+        daylight: 'メキシコ太平洋夏時間',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'ウランバートル時間',
+        standard: 'ウランバートル標準時',
+        daylight: 'ウランバートル夏時間',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'モスクワ時間',
+        standard: 'モスクワ標準時',
+        daylight: 'モスクワ夏時間',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'ミャンマー時間',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'ナウル時間',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'ネパール時間',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'ニューカレドニア時間',
+        standard: 'ニューカレドニア標準時',
+        daylight: 'ニューカレドニア夏時間',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'ニュージーランド時間',
+        standard: 'ニュージーランド標準時',
+        daylight: 'ニュージーランド夏時間',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'ニューファンドランド時間',
+        standard: 'ニューファンドランド標準時',
+        daylight: 'ニューファンドランド夏時間',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'ニウエ時間',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'ノーフォーク島時間',
+        standard: 'ノーフォーク島標準時',
+        daylight: 'ノーフォーク島夏時間',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'フェルナンド・デ・ノローニャ時間',
+        standard: 'フェルナンド・デ・ノローニャ標準時',
+        daylight: 'フェルナンド・デ・ノローニャ夏時間',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: '北マリアナ諸島時間',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'ノヴォシビルスク時間',
+        standard: 'ノヴォシビルスク標準時',
+        daylight: 'ノヴォシビルスク夏時間',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'オムスク時間',
+        standard: 'オムスク標準時',
+        daylight: 'オムスク夏時間',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'パキスタン時間',
+        standard: 'パキスタン標準時',
+        daylight: 'パキスタン夏時間',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'パラオ時間',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'パプアニューギニア時間',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'パラグアイ時間',
+        standard: 'パラグアイ標準時',
+        daylight: 'パラグアイ夏時間',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'ペルー時間',
+        standard: 'ペルー標準時',
+        daylight: 'ペルー夏時間',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'フィリピン時間',
+        standard: 'フィリピン標準時',
+        daylight: 'フィリピン夏時間',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'フェニックス諸島時間',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'サンピエール島・ミクロン島時間',
+        standard: 'サンピエール島・ミクロン島標準時',
+        daylight: 'サンピエール島・ミクロン島夏時間',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'ピトケアン時間',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'ポナペ時間',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: '平壌時間',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'クズロルダ時間',
+        standard: 'クズロルダ標準時',
+        daylight: 'クズロルダ夏時間',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'レユニオン時間',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'ロゼラ基地時間',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'サハリン時間',
+        standard: 'サハリン標準時',
+        daylight: 'サハリン夏時間',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'サマラ時間',
+        standard: 'サマラ標準時',
+        daylight: 'サマラ夏時間',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'サモア時間',
+        standard: 'サモア標準時',
+        daylight: 'サモア夏時間',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'セーシェル時間',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'シンガポール標準時',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'ソロモン諸島時間',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'サウスジョージア時間',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'スリナム時間',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: '昭和基地時間',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'タヒチ時間',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: '台北時間',
+        standard: '台北標準時',
+        daylight: '台北夏時間',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'タジキスタン時間',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'トケラウ時間',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'トンガ時間',
+        standard: 'トンガ標準時',
+        daylight: 'トンガ夏時間',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'チューク時間',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'トルクメニスタン時間',
+        standard: 'トルクメニスタン標準時',
+        daylight: 'トルクメニスタン夏時間',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'ツバル時間',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'ウルグアイ時間',
+        standard: 'ウルグアイ標準時',
+        daylight: 'ウルグアイ夏時間',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'ウズベキスタン時間',
+        standard: 'ウズベキスタン標準時',
+        daylight: 'ウズベキスタン夏時間',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'バヌアツ時間',
+        standard: 'バヌアツ標準時',
+        daylight: 'バヌアツ夏時間',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'ベネズエラ時間',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'ウラジオストク時間',
+        standard: 'ウラジオストク標準時',
+        daylight: 'ウラジオストク夏時間',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'ボルゴグラード時間',
+        standard: 'ボルゴグラード標準時',
+        daylight: 'ボルゴグラード夏時間',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'ボストーク基地時間',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'ウェーク島時間',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'ウォリス・フツナ時間',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'ヤクーツク時間',
+        standard: 'ヤクーツク標準時',
+        daylight: 'ヤクーツク夏時間',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'エカテリンブルグ時間',
+        standard: 'エカテリンブルグ標準時',
+        daylight: 'エカテリンブルグ夏時間',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'ユーコン時間',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

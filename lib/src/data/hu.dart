@@ -1,15 +1,12 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+
+import '../../common_locale_data.dart';
 
 const _locale = 'hu';
 
-/// Translations of [CommonLocaleData] for hu
+/// Translations of [CommonLocaleData]
 class CommonLocaleDataHu implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataHu();
@@ -22,6 +19,14 @@ class CommonLocaleDataHu implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsHu._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsHu._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsHu._();
   @override
   Units get units => _units;
@@ -29,6 +34,10 @@ class CommonLocaleDataHu implements CommonLocaleData {
   static final _territories = TerritoriesHu._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesHu._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesHu extends Languages {
@@ -2336,6 +2345,749 @@ class LanguagesHu extends Languages {
     'zza': Language(
       'zza',
       'zaza',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsHu extends Scripts {
+  ScriptsHu._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'Adlam',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'Kaukázusi albaniai',
+    ),
+    'Arab': Script(
+      'Arab',
+      'Arab',
+      variant: 'Perzsa-arab',
+    ),
+    'Aran': Script(
+      'Aran',
+      'Nasztalik',
+    ),
+    'Armi': Script(
+      'Armi',
+      'Birodalmi arámi',
+    ),
+    'Armn': Script(
+      'Armn',
+      'Örmény',
+    ),
+    'Avst': Script(
+      'Avst',
+      'Avesztán',
+    ),
+    'Bali': Script(
+      'Bali',
+      'Balinéz',
+    ),
+    'Batk': Script(
+      'Batk',
+      'Batak',
+    ),
+    'Beng': Script(
+      'Beng',
+      'Bengáli',
+    ),
+    'Blis': Script(
+      'Blis',
+      'Bliss jelképrendszer',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'Bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'Brámi',
+    ),
+    'Brai': Script(
+      'Brai',
+      'Vakírás',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'Buginéz',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'Buhid',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'Csakma',
+    ),
+    'Cans': Script(
+      'Cans',
+      'Egyesített kanadai őslakos jelek',
+    ),
+    'Cari': Script(
+      'Cari',
+      'Kari',
+    ),
+    'Cham': Script(
+      'Cham',
+      'Csám',
+    ),
+    'Cher': Script(
+      'Cher',
+      'Cseroki',
+    ),
+    'Copt': Script(
+      'Copt',
+      'Kopt',
+    ),
+    'Cpmn': Script(
+      'Cpmn',
+      'Ciprusi-minószi',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'Ciprusi',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'Cirill',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'Óegyházi szláv cirill',
+    ),
+    'Deva': Script(
+      'Deva',
+      'Devanagári',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'Deseret',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'Egyiptomi demotikus',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'Egyiptomi hieratikus',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'Egyiptomi hieroglifák',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'Etióp',
+    ),
+    'Geok': Script(
+      'Geok',
+      'Grúz kucsuri',
+    ),
+    'Geor': Script(
+      'Geor',
+      'Grúz',
+    ),
+    'Glag': Script(
+      'Glag',
+      'Glagolitikus',
+    ),
+    'Goth': Script(
+      'Goth',
+      'Gót',
+    ),
+    'Grek': Script(
+      'Grek',
+      'Görög',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'Gudzsaráti',
+    ),
+    'Guru': Script(
+      'Guru',
+      'Gurmuki',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'Han bopomofóval',
+    ),
+    'Hang': Script(
+      'Hang',
+      'Hangul',
+    ),
+    'Hani': Script(
+      'Hani',
+      'Han',
+    ),
+    'Hano': Script(
+      'Hano',
+      'Hanunoo',
+    ),
+    'Hans': Script(
+      'Hans',
+      'Egyszerűsített',
+      standAlone: 'Egyszerűsített kínai',
+    ),
+    'Hant': Script(
+      'Hant',
+      'Hagyományos',
+      standAlone: 'Hagyományos kínai',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'Héber',
+    ),
+    'Hira': Script(
+      'Hira',
+      'Hiragana',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'Anatóliai hieroglifák',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'Pahawh hmong',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'Katakana vagy hiragana',
+    ),
+    'Hung': Script(
+      'Hung',
+      'Ómagyar',
+    ),
+    'Inds': Script(
+      'Inds',
+      'Indus',
+    ),
+    'Ital': Script(
+      'Ital',
+      'Régi olasz',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'Jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'Jávai',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'Japán',
+    ),
+    'Kali': Script(
+      'Kali',
+      'Kajah li',
+    ),
+    'Kana': Script(
+      'Kana',
+      'Katakana',
+    ),
+    'Khar': Script(
+      'Khar',
+      'Kharoshthi',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'Khmer',
+    ),
+    'Knda': Script(
+      'Knda',
+      'Kannada',
+    ),
+    'Kore': Script(
+      'Kore',
+      'Koreai',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'Kaithi',
+    ),
+    'Lana': Script(
+      'Lana',
+      'Lanna',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'Lao',
+    ),
+    'Latf': Script(
+      'Latf',
+      'Fraktur latin',
+    ),
+    'Latg': Script(
+      'Latg',
+      'Gael latin',
+    ),
+    'Latn': Script(
+      'Latn',
+      'Latin',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'Lepcha',
+    ),
+    'Limb': Script(
+      'Limb',
+      'Limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'Lineáris A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'Lineáris B',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'Líciai',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'Lídiai',
+    ),
+    'Mand': Script(
+      'Mand',
+      'Mandai',
+    ),
+    'Mani': Script(
+      'Mani',
+      'Manicheus',
+    ),
+    'Maya': Script(
+      'Maya',
+      'Maja hieroglifák',
+    ),
+    'Mero': Script(
+      'Mero',
+      'Meroitikus',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'Malajálam',
+    ),
+    'Mong': Script(
+      'Mong',
+      'Mongol',
+    ),
+    'Moon': Script(
+      'Moon',
+      'Moon',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'Meitei mayek',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'Burmai',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'Nabateus',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'N’ko',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'Ogham',
+    ),
+    'Olck': Script(
+      'Olck',
+      'Ol chiki',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'Orhon',
+    ),
+    'Orya': Script(
+      'Orya',
+      'Oriya',
+    ),
+    'Osma': Script(
+      'Osma',
+      'Oszmán',
+    ),
+    'Perm': Script(
+      'Perm',
+      'Ópermikus',
+    ),
+    'Phag': Script(
+      'Phag',
+      'Phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'Felriatos pahlavi',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'Psalter pahlavi',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'Könyv pahlavi',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'Főniciai',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Pollard fonetikus',
+    ),
+    'Prti': Script(
+      'Prti',
+      'Feliratos parthian',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'Zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'Redzsang',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'Hanifi',
+    ),
+    'Roro': Script(
+      'Roro',
+      'Rongorongo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'Runikus',
+    ),
+    'Samr': Script(
+      'Samr',
+      'Szamaritán',
+    ),
+    'Sara': Script(
+      'Sara',
+      'Szarati',
+    ),
+    'Saur': Script(
+      'Saur',
+      'Szaurastra',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'Jelírás',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'Shaw ábécé',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      'Sziddham',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'Szingaléz',
+    ),
+    'Sogd': Script(
+      'Sogd',
+      'Szogd',
+    ),
+    'Sogo': Script(
+      'Sogo',
+      'Ószogd',
+    ),
+    'Sund': Script(
+      'Sund',
+      'Szundanéz',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'Sylheti nagári',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'Szíriai',
+    ),
+    'Syre': Script(
+      'Syre',
+      'Estrangelo szíriai',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'Nyugat-szíriai',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'Kelet-szíriai',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'Tagbanwa',
+    ),
+    'Tale': Script(
+      'Tale',
+      'Tai Le',
+    ),
+    'Talu': Script(
+      'Talu',
+      'Új tai lue',
+    ),
+    'Taml': Script(
+      'Taml',
+      'Tamil',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'Tai viet',
+    ),
+    'Telu': Script(
+      'Telu',
+      'Telugu',
+    ),
+    'Teng': Script(
+      'Teng',
+      'Tengwar',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'Berber',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'Tagalog',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'Thaana',
+    ),
+    'Thai': Script(
+      'Thai',
+      'Thai',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'Tibeti',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'Ugari',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'Vai',
+    ),
+    'Visp': Script(
+      'Visp',
+      'Látható beszéd',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'Óperzsa',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'Ékírásos suméro-akkád',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'Ji',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'Származtatott',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'Matematikai jelrendszer',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'Emoji',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'Szimbólum',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'Íratlan nyelvek kódja',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'Meghatározatlan',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'Ismeretlen írásrendszer',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsHu extends Variants {
+  VariantsHu._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'Hagyományos német helyesírás',
+    ),
+    '1994': Variant(
+      '1994',
+      'Szabványosított reziján helyesírás',
+    ),
+    '1996': Variant(
+      '1996',
+      '1996-os német helyesírás',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'Késői közép francia 1606-ig',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      'Korai modern francia',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      'Akadémiai',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      'ALA-LC romanizáció, 1997-es kiadás',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'Aluku dialektus',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'Keleti örmény',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'Nyugati örmény',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'Egyesített türkic latin ábécé',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'San Giorgo/Bila tájszólás',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'Boontling',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'IPA fonetika',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'UPA fonetika',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      'Hepburn romanizáció',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'Meghatározatlan helyesírás',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'Reziján lipovaz tájszólás',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'Monoton',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'Ndyuka dialektus',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'Natisone dialektus',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Gniva/Njiva tájszólás',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'Oseacco/Osojane tájszólás',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'Pamaka dialektus',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'pinjin átírás',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'Politonikus',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Számítógép',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'Átdolgozott helyesírás',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'Reziján',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'Saho',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'Skót szabványos angol',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'Scouse',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'Stolvizza/Solbica tájszólás',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'Taraskijevica helyesírás',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'Egyesített helyesírás',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      'Egyesített átdolgozott helyesírás',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'Valencia',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Wade-Giles átírás',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -8739,6 +9491,1743 @@ class TerritoriesHu implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabwe',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesHu extends TimeZones {
+  TimeZonesHu._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: '{0} idő',
+            regionFormatDaylight: '{0} nyári idő',
+            regionFormatStandard: '{0} zónaidő',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Araguaina': TimeZoneNames(
+      city: 'Araguaína',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      city: 'Río Gallegos',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      city: 'Tucumán',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      city: 'Asunción',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      city: 'Bahia Banderas',
+    ),
+    'America/Belem': TimeZoneNames(
+      city: 'Belém',
+    ),
+    'America/Bogota': TimeZoneNames(
+      city: 'Bogotá',
+    ),
+    'America/Cancun': TimeZoneNames(
+      city: 'Cancún',
+    ),
+    'America/Cayman': TimeZoneNames(
+      city: 'Kajmán-szigetek',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      city: 'Ciudad Juárez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      city: 'Atikokan',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      city: 'Córdoba',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      city: 'Cuiabá',
+    ),
+    'America/Curacao': TimeZoneNames(
+      city: 'Curaçao',
+    ),
+    'America/Dominica': TimeZoneNames(
+      city: 'Dominika',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      city: 'Eirunepé',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      city: 'Salvador',
+    ),
+    'America/Godthab': TimeZoneNames(
+      city: 'Nuuk',
+    ),
+    'America/Havana': TimeZoneNames(
+      city: 'Havanna',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      city: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      city: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      city: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      city: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      city: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      city: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      city: 'Vevay, Indiana',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      city: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      city: 'Lower Prince’s Quarter',
+    ),
+    'America/Maceio': TimeZoneNames(
+      city: 'Maceió',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      city: 'Mazatlán',
+    ),
+    'America/Merida': TimeZoneNames(
+      city: 'Mérida',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      city: 'Mexikóváros',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      city: 'Beulah, Észak-Dakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      city: 'New Salem, Észak-Dakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      city: 'Center, Észak-Dakota',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      city: 'Río Branco',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      city: 'São Paulo',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      city: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      city: 'Saint-Barthélemy',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      city: 'St. John’s',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      city: 'St. Kitts',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      city: 'St. Lucia',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      city: 'St. Thomas',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      city: 'St. Vincent',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      city: 'Azori-szigetek',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      city: 'Kanári-szigetek',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      city: 'Zöld-foki szigetek',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      city: 'Feröer',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      city: 'Reykjavík',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      city: 'Déli-Georgia',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      city: 'Szent Ilona',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      city: 'Amszterdam',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      city: 'Asztrahán',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      city: 'Athén',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      city: 'Belgrád',
+    ),
+    'Europe/Bratislava': TimeZoneNames(
+      city: 'Pozsony',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      city: 'Brüsszel',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      city: 'Bukarest',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      city: 'Büsingen',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      city: 'Koppenhága',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'ír nyári idő',
+      ),
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      city: 'Gibraltár',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      city: 'Man-sziget',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      city: 'Isztanbul',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      city: 'Kalinyingrád',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      city: 'Kijev',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      city: 'Lisszabon',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'brit nyári idő',
+      ),
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      city: 'Luxemburg',
+    ),
+    'Europe/Malta': TimeZoneNames(
+      city: 'Málta',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      city: 'Minszk',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      city: 'Moszkva',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      city: 'Párizs',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      city: 'Prága',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      city: 'Róma',
+    ),
+    'Europe/Samara': TimeZoneNames(
+      city: 'Szamara',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      city: 'Szarajevó',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      city: 'Szaratov',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      city: 'Szimferopol',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      city: 'Szkopje',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      city: 'Szófia',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      city: 'Tallin',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      city: 'Tirana',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      city: 'Uljanovszk',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      city: 'Vatikán',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      city: 'Bécs',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      city: 'Volgográd',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      city: 'Varsó',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      city: 'Zágráb',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      city: 'Zürich',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      city: 'Addisz-Abeba',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      city: 'Algír',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      city: 'Asmera',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      city: 'Kairó',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      city: 'Dar es-Salaam',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      city: 'Dzsibuti',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      city: 'El-Ajún',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      city: 'Kartúm',
+    ),
+    'Africa/Malabo': TimeZoneNames(
+      city: 'Malabó',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      city: 'São Tomé',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      city: 'Tunisz',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      city: 'Áden',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      city: 'Alma-Ata',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      city: 'Ammán',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      city: 'Anadir',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      city: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      city: 'Aktöbe',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      city: 'Asgabat',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      city: 'Atirau',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      city: 'Bagdad',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      city: 'Bahrein',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      city: 'Bejrút',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      city: 'Biskek',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      city: 'Kalkutta',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      city: 'Csita',
+    ),
+    'Asia/Choibalsan': TimeZoneNames(
+      city: 'Csojbalszan',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      city: 'Damaszkusz',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      city: 'Dakka',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      city: 'Dubaj',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      city: 'Dusanbe',
+    ),
+    'Asia/Gaza': TimeZoneNames(
+      city: 'Gáza',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      city: 'Hongkong',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      city: 'Irkutszk',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      city: 'Jeruzsálem',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      city: 'Kamcsatka',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      city: 'Karacsi',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      city: 'Katmandu',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      city: 'Handiga',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      city: 'Krasznojarszk',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      city: 'Kucseng',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      city: 'Kuvait',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      city: 'Makaó',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      city: 'Magadán',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      city: 'Makasar',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      city: 'Maszkat',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      city: 'Novokuznyeck',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      city: 'Novoszibirszk',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      city: 'Omszk',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      city: 'Phenjan',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      city: 'Katar',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      city: 'Kosztanaj',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      city: 'Kizilorda',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      city: 'Yangon',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      city: 'Rijád',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      city: 'Ho Si Minh-város',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      city: 'Szahalin',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      city: 'Szamarkand',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      city: 'Szöul',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      city: 'Sanghaj',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      city: 'Szingapúr',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      city: 'Szrednekolimszk',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      city: 'Tajpej',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      city: 'Taskent',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      city: 'Tbiliszi',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      city: 'Teherán',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      city: 'Timpu',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      city: 'Tokió',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      city: 'Tomszk',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      city: 'Ulánbátor',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      city: 'Ürümcsi',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      city: 'Uszty-Nyera',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      city: 'Vientián',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      city: 'Vlagyivosztok',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      city: 'Jakutszk',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      city: 'Jekatyerinburg',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      city: 'Jereván',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      city: 'Karácsony-sziget',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      city: 'Kókusz-sziget',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      city: 'Komoró',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      city: 'Maldív-szigetek',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      city: 'Réunion',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      city: 'Chatham-szigetek',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      city: 'Húsvét-szigetek',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      city: 'Enderbury',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      city: 'Fidzsi',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      city: 'Galapagos-szigetek',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      city: 'Gambier-szigetek',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      city: 'Honolulu',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      city: 'Kiritimati-sziget',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      city: 'Kosrae-szigetek',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      city: 'Kwajalein-zátony',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      city: 'Majuro-zátony',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      city: 'Marquesas-szigetek',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      city: 'Midway-szigetek',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      city: 'Pitcairn-szigetek',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      city: 'Ponape-szigetek',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      city: 'Truk',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      city: 'Wake-sziget',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      city: 'Dumont d’Urville',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      city: 'Vosztok',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'koordinált világidő',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      city: 'Ismeretlen város',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'Acre idő',
+        standard: 'Acre zónaidő',
+        daylight: 'Acre nyári idő',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'afganisztáni idő',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'közép-afrikai téli idő',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'kelet-afrikai téli idő',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'dél-afrikai téli idő',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'nyugat-afrikai időzóna',
+        standard: 'nyugat-afrikai téli idő',
+        daylight: 'nyugat-afrikai nyári idő',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'alaszkai idő',
+        standard: 'alaszkai zónaidő',
+        daylight: 'alaszkai nyári idő',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'Almati idő',
+        standard: 'Almati zónaidő',
+        daylight: 'Almati nyári idő',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'amazóniai idő',
+        standard: 'amazóniai téli idő',
+        daylight: 'amazóniai nyári idő',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'középső államokbeli idő',
+        standard: 'középső államokbeli zónaidő',
+        daylight: 'középső államokbeli nyári idő',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'keleti államokbeli idő',
+        standard: 'keleti államokbeli zónaidő',
+        daylight: 'keleti államokbeli nyári idő',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'hegyvidéki idő',
+        standard: 'hegyvidéki zónaidő',
+        daylight: 'hegyvidéki nyári idő',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'csendes-óceáni idő',
+        standard: 'csendes-óceáni zónaidő',
+        daylight: 'csendes-óceáni nyári idő',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'Anadiri idő',
+        standard: 'Anadíri zónaidő',
+        daylight: 'Anadíri nyári idő',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'apiai idő',
+        standard: 'apiai téli idő',
+        daylight: 'apiai nyári idő',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'Aqtaui idő',
+        standard: 'Aqtaui zónaidő',
+        daylight: 'Aqtaui nyári idő',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Aqtobei idő',
+        standard: 'Aqtobei zónaidő',
+        daylight: 'Aqtobei nyári idő',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'arab idő',
+        standard: 'arab téli idő',
+        daylight: 'arab nyári idő',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'argentínai idő',
+        standard: 'argentínai téli idő',
+        daylight: 'argentínai nyári idő',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'nyugat-argentínai időzóna',
+        standard: 'nyugat-argentínai téli idő',
+        daylight: 'nyugat-argentínai nyári idő',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'örményországi idő',
+        standard: 'örményországi téli idő',
+        daylight: 'örményországi nyári idő',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'atlanti-óceáni idő',
+        standard: 'atlanti-óceáni zónaidő',
+        daylight: 'atlanti-óceáni nyári idő',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'közép-ausztráliai idő',
+        standard: 'közép-ausztráliai téli idő',
+        daylight: 'közép-ausztráliai nyári idő',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'közép-nyugat-ausztráliai idő',
+        standard: 'közép-nyugat-ausztráliai téli idő',
+        daylight: 'közép-nyugat-ausztráliai nyári idő',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'kelet-ausztráliai idő',
+        standard: 'kelet-ausztráliai téli idő',
+        daylight: 'kelet-ausztráliai nyári idő',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'nyugat-ausztráliai idő',
+        standard: 'nyugat-ausztráliai téli idő',
+        daylight: 'nyugat-ausztráliai nyári idő',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'azerbajdzsáni idő',
+        standard: 'azerbajdzsáni téli idő',
+        daylight: 'azerbajdzsáni nyári idő',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'azori időzóna',
+        standard: 'azori téli idő',
+        daylight: 'azori nyári idő',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'bangladesi idő',
+        standard: 'bangladesi téli idő',
+        daylight: 'bangladesi nyári idő',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'butáni idő',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'bolíviai téli idő',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'brazíliai idő',
+        standard: 'brazíliai téli idő',
+        daylight: 'brazíliai nyári idő',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'Brunei Darussalam-i idő',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'zöld-foki-szigeteki időzóna',
+        standard: 'zöld-foki-szigeteki téli idő',
+        daylight: 'zöld-foki-szigeteki nyári idő',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'casey-i idő',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'chamorrói téli idő',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'chathami idő',
+        standard: 'chathami téli idő',
+        daylight: 'chathami nyári idő',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'chilei időzóna',
+        standard: 'chilei téli idő',
+        daylight: 'chilei nyári idő',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'kínai idő',
+        standard: 'kínai téli idő',
+        daylight: 'kínai nyári idő',
+      ),
+    ),
+    'Choibalsan': MetaZone(
+      code: 'Choibalsan',
+      long: TimeZoneName(
+        generic: 'csojbalszani idő',
+        standard: 'csojbalszani téli idő',
+        daylight: 'csojbalszani nyári idő',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'karácsony-szigeti idő',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'kókusz-szigeteki téli idő',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'kolumbiai idő',
+        standard: 'kolumbiai téli idő',
+        daylight: 'kolumbiai nyári idő',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'cook-szigeteki idő',
+        standard: 'cook-szigeteki téli idő',
+        daylight: 'cook-szigeteki fél nyári idő',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'kubai időzóna',
+        standard: 'kubai téli idő',
+        daylight: 'kubai nyári idő',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'davisi idő',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'dumont-d’Urville-i idő',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'kelet-timori téli idő',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'húsvét-szigeti időzóna',
+        standard: 'húsvét-szigeti téli idő',
+        daylight: 'húsvét-szigeti nyári idő',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'ecuadori téli idő',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'közép-európai időzóna',
+        standard: 'közép-európai téli idő',
+        daylight: 'közép-európai nyári idő',
+      ),
+      short: TimeZoneName(
+        generic: 'CET',
+        standard: 'CET',
+        daylight: 'CEST',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'kelet-európai időzóna',
+        standard: 'kelet-európai téli idő',
+        daylight: 'kelet-európai nyári idő',
+      ),
+      short: TimeZoneName(
+        generic: 'EET',
+        standard: 'EET',
+        daylight: 'EEST',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'minszki idő',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'nyugat-európai időzóna',
+        standard: 'nyugat-európai téli idő',
+        daylight: 'nyugat-európai nyári idő',
+      ),
+      short: TimeZoneName(
+        generic: 'WET',
+        standard: 'WET',
+        daylight: 'WEST',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'falkland-szigeteki idő',
+        standard: 'falkland-szigeteki téli idő',
+        daylight: 'falkland-szigeteki nyári idő',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'fidzsi idő',
+        standard: 'fidzsi téli idő',
+        daylight: 'fidzsi nyári idő',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'francia-guyanai idő',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'francia déli és antarktiszi idő',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'galápagosi téli idő',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'gambieri idő',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'grúziai idő',
+        standard: 'grúziai téli idő',
+        daylight: 'grúziai nyári idő',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'gilbert-szigeteki idő',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'greenwichi középidő, téli idő',
+      ),
+      short: TimeZoneName(
+        standard: 'GMT',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'kelet-grönlandi időzóna',
+        standard: 'kelet-grönlandi téli idő',
+        daylight: 'kelet-grönlandi nyári idő',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'nyugat-grönlandi időzóna',
+        standard: 'nyugat-grönlandi téli idő',
+        daylight: 'nyugat-grönlandi nyári idő',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'Guami zónaidő',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'öbölbeli téli idő',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'guyanai téli idő',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'hawaii-aleuti időzóna',
+        standard: 'hawaii-aleuti téli idő',
+        daylight: 'hawaii-aleuti nyári idő',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'hongkongi időzóna',
+        standard: 'hongkongi téli idő',
+        daylight: 'hongkongi nyári idő',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'hovdi idő',
+        standard: 'hovdi téli idő',
+        daylight: 'hovdi nyári idő',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'indiai téli idő',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'indiai-óceáni idő',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'indokínai idő',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'közép-indonéziai idő',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'kelet-indonéziai idő',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'nyugat-indonéziai téli idő',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'iráni idő',
+        standard: 'iráni téli idő',
+        daylight: 'iráni nyári idő',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'irkutszki idő',
+        standard: 'irkutszki téli idő',
+        daylight: 'irkutszki nyári idő',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'izraeli idő',
+        standard: 'izraeli téli idő',
+        daylight: 'izraeli nyári idő',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'japán idő',
+        standard: 'japán téli idő',
+        daylight: 'japán nyári idő',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Petropavlovszk-kamcsatkai idő',
+        standard: 'Petropavlovszk-kamcsatkai zónaidő',
+        daylight: 'Petropavlovszk-kamcsatkai nyári idő',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'kelet-kazahsztáni idő',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'nyugat-kazahsztáni idő',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'koreai idő',
+        standard: 'koreai téli idő',
+        daylight: 'koreai nyári idő',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'kosraei idő',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'krasznojarszki idő',
+        standard: 'krasznojarszki téli idő',
+        daylight: 'krasznojarszki nyári idő',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'kirgizisztáni idő',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'Lankai idő',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'sor-szigeteki idő',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Lord Howe-szigeti idő',
+        standard: 'Lord Howe-szigeti téli idő',
+        daylight: 'Lord Howe-szigeti nyári idő',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'Macaui idő',
+        standard: 'Macaui zónaidő',
+        daylight: 'Macaui nyári idő',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'magadáni idő',
+        standard: 'magadani téli idő',
+        daylight: 'magadáni nyári idő',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'malajziai idő',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'maldív-szigeteki idő',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'marquises-szigeteki idő',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'marshall-szigeteki idő',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'mauritiusi időzóna',
+        standard: 'mauritiusi téli idő',
+        daylight: 'mauritiusi nyári idő',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'mawsoni idő',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'mexikói csendes-óceáni idő',
+        standard: 'mexikói csendes-óceáni zónaidő',
+        daylight: 'mexikói csendes-óceáni nyári idő',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'ulánbátori idő',
+        standard: 'ulánbátori téli idő',
+        daylight: 'ulánbátori nyári idő',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'moszkvai idő',
+        standard: 'moszkvai téli idő',
+        daylight: 'moszkvai nyári idő',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'mianmari idő',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'naurui idő',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'nepáli idő',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'új-kaledóniai idő',
+        standard: 'új-kaledóniai téli idő',
+        daylight: 'új-kaledóniai nyári idő',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'új-zélandi idő',
+        standard: 'új-zélandi téli idő',
+        daylight: 'új-zélandi nyári idő',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'új-fundlandi idő',
+        standard: 'új-fundlandi zónaidő',
+        daylight: 'új-fundlandi nyári idő',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'niuei idő',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'norfolk-szigeteki idő',
+        standard: 'norfolk-szigeteki téli idő',
+        daylight: 'norfolk-szigeteki nyári idő',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'Fernando de Noronha-i idő',
+        standard: 'Fernando de Noronha-i téli idő',
+        daylight: 'Fernando de Noronha-i nyári idő',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'Észak-mariana-szigeteki idő',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'novoszibirszki idő',
+        standard: 'novoszibirszki téli idő',
+        daylight: 'novoszibirszki nyári idő',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'omszki idő',
+        standard: 'omszki téli idő',
+        daylight: 'omszki nyári idő',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'pakisztáni idő',
+        standard: 'pakisztáni téli idő',
+        daylight: 'pakisztáni nyári idő',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'palaui idő',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'pápua új-guineai idő',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'paraguayi idő',
+        standard: 'paraguayi téli idő',
+        daylight: 'paraguayi nyári idő',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'perui idő',
+        standard: 'perui téli idő',
+        daylight: 'perui nyári idő',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'fülöp-szigeteki idő',
+        standard: 'fülöp-szigeteki téli idő',
+        daylight: 'fülöp-szigeteki nyári idő',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'phoenix-szigeteki téli idő',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Saint-Pierre és Miquelon-i idő',
+        standard: 'Saint-Pierre és Miquelon-i zónaidő',
+        daylight: 'Saint-Pierre és Miquelon-i nyári idő',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'pitcairn-szigeteki idő',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'ponape-szigeti idő',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'phenjani idő',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Qyzylordai idő',
+        standard: 'Qyzylordai zónaidő',
+        daylight: 'Qyzylordai nyári idő',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'réunioni idő',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'rotherai idő',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'szahalini idő',
+        standard: 'szahalini téli idő',
+        daylight: 'szahalini nyári idő',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'Szamarai idő',
+        standard: 'Szamarai zónaidő',
+        daylight: 'Szamarai nyári idő',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'szamoai idő',
+        standard: 'szamoai téli idő',
+        daylight: 'szamoai nyári idő',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'seychelle-szigeteki idő',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'szingapúri téli idő',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'salamon-szigeteki idő',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'déli-georgiai idő',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'szurinámi idő',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'syowai idő',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'tahiti idő',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'taipei idő',
+        standard: 'taipei téli idő',
+        daylight: 'taipei nyári idő',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'tádzsikisztáni idő',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'tokelaui idő',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'tongai idő',
+        standard: 'tongai téli idő',
+        daylight: 'tongai nyári idő',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'truki idő',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'türkmenisztáni idő',
+        standard: 'türkmenisztáni téli idő',
+        daylight: 'türkmenisztáni nyári idő',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'tuvalui idő',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'uruguayi idő',
+        standard: 'uruguayi téli idő',
+        daylight: 'uruguayi nyári idő',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'üzbegisztáni idő',
+        standard: 'üzbegisztáni téli idő',
+        daylight: 'üzbegisztáni nyári idő',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'vanuatui idő',
+        standard: 'vanuatui téli idő',
+        daylight: 'vanuatui nyári idő',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'venezuelai idő',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'vlagyivosztoki idő',
+        standard: 'vlagyivosztoki téli idő',
+        daylight: 'vlagyivosztoki nyári idő',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'volgográdi idő',
+        standard: 'volgográdi téli idő',
+        daylight: 'volgográdi nyári idő',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'vosztoki idő',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'wake-szigeti idő',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'Wallis és Futuna-i idő',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'jakutszki idő',
+        standard: 'jakutszki téli idő',
+        daylight: 'jakutszki nyári idő',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'jekatyerinburgi idő',
+        standard: 'jekatyerinburgi téli idő',
+        daylight: 'jekatyerinburgi nyári idő',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'yukoni idő',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }
