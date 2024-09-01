@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
 
 import 'model/date_fields.dart';
@@ -11,6 +12,7 @@ import 'model/units.dart';
 import 'model/variant.dart';
 import 'utils/case_format.dart';
 import 'utils/escape_dart_string.dart';
+import 'utils/split_words.dart';
 import 'utils/supported_locales.dart';
 import 'utils/versions.dart';
 
@@ -34,6 +36,8 @@ void main() {
       .writeAsStringSync(_format(generateTerritoriesModel()));
   File('lib/src/timezone_data.dart')
       .writeAsStringSync(_format(generateTimeZoneData()));
+  File('lib/common_locale_data_all.dart')
+      .writeAsStringSync(_format(generateCommonAll()));
 
   for (var locale in supportedLocales) {
     print('Generate file for $locale');
@@ -50,6 +54,8 @@ import '../../common_locale_data.dart';
 const _locale = '$locale';
 
 /// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
   @override
   String get locale => _locale;
@@ -105,6 +111,7 @@ class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
 /// @nodoc
 library;
 
+export 'common_locale_data.dart';
 export 'src/data/${locale.toSnakeCase()}.dart' show CommonLocaleData${locale.toUpperCamel()};
 ''');
 
@@ -168,14 +175,70 @@ abstract class CommonLocaleData {
   TimeZones get timeZones;
 ''');
 
-  /*
+  code.writeln('''
+  /// Map with all supported locale names. 
+  static final Set<String> localeNames = {
+''');
+  for (var locale in supportedLocales) {
+    code.writeln('${escapeDartString(locale)},');
+  }
+  code.writeln('''
+  };
+''');
+
+  code.writeln('}');
+  return '$code';
+}
+
+String generateCommonAll() {
+  var code = StringBuffer();
+  code.writeln('''
+/// Library to access ALL translated common data.
+///
+/// Individual locales can be used via the [CommonLocaleDataAll] extension or
+/// via the [locales] member.
+///
+/// Because this library pulls in all locale sources, compilation times 
+/// will be long (>10x compared to selecting individual locales).
+///
+/// The translations are extracted from the Common Locale Data
+/// Repository ([CLDR](https://cldr.unicode.org/)).
+library;
+
+import 'package:collection/collection.dart';
+
+export 'src/common_locale_data.dart';
+export 'src/date_fields.dart';
+export 'src/languages.dart';
+export 'src/scripts.dart';
+export 'src/shared.dart';
+export 'src/territories.dart';
+export 'src/timezone_data.dart';
+export 'src/timezones.dart';
+export 'src/units.dart';
+export 'src/variants.dart';
+
+  ''');
+
+  for (var locale in supportedLocales) {
+    code.writeln("import '${locale.toSnakeCase()}.dart';");
+  }
+  for (var locale in supportedLocales) {
+    code.writeln("export '${locale.toSnakeCase()}.dart';");
+  }
+
+  code.writeln('''
+/// The root class providing access to all Common Data (date fields, units, territories etc...).
+extension CommonLocaleDataAll on CommonLocaleData {
+''');
+
   for (var locale in supportedLocales) {
     var localeConstantName = lowerCamel(splitWords(locale));
     if (Keyword.keywords.containsKey(localeConstantName)) {
       localeConstantName = '\$$localeConstantName';
     }
     code.writeln('''
-  /// Access the [CommonLocaleData] for $locale');
+  /// Access the [CommonLocaleData] for $locale
   static const $localeConstantName = CommonLocaleData${locale.toUpperCamel()}();
 ''');
   }
@@ -199,19 +262,6 @@ abstract class CommonLocaleData {
   }
   code.writeln('''
   }, (key) => key.toLowerCase());
-''');
-
-*/
-
-  code.writeln('''
-  /// Map with all supported locale names. 
-  static final Set<String> localeNames = {
-''');
-  for (var locale in supportedLocales) {
-    code.writeln('${escapeDartString(locale)},');
-  }
-  code.writeln('''
-  };
 ''');
 
   code.writeln('}');

@@ -70,7 +70,7 @@ class TimeZoneMapping {
 
   code.writeln('''
   /// Maps canonical timezones to meta zones.
-  static final zoneToMetaZone = CanonicalizedMap<String, String, DateRangeMap>.from({
+  static final zoneToMetaZone = CanonicalizedMap<String, String, DateRangeMap<String>>.from({
 ''');
   var metaZones = readJsonData(
     'tool/data/core/supplemental/metaZones.json',

@@ -74,7 +74,6 @@ abstract class TimeZones {
   final String _locale;
   final Territories _territories;
 
-  // TODO: use specific region & fallback formats
   final String _gmtFormat;
   final String _gmtZeroFormat;
   final String _regionFormat;
@@ -244,8 +243,8 @@ class TimeZone {
   /// Meta zone for this timezone.
   final MetaZone? metaZone;
 
-  /// The date and time for which this timezone is valid.
-  final DateTime dateTime;
+  /// The date/time range for which this timezone is valid.
+  final DateRange dateRange;
 
   /// The localized long names for this timezone.
   final TimeZoneName long;
@@ -261,7 +260,7 @@ class TimeZone {
       required this.canonicalCode,
       required this.iana,
       required this.metaZone,
-      required this.dateTime,
+      required this.dateRange,
       required this.long,
       required this.short,
       required this.location});
@@ -274,8 +273,10 @@ class TimeZone {
 
     var timeZoneName =
         timeZones.timeZoneNames[canonicalCode] ?? TimeZoneNames();
-    var metaZoneCode =
+    var metaZoneInfo =
         TimeZoneMapping.zoneToMetaZone[canonicalCode]?.get(dateTime: dateTime);
+    var metaZoneCode = metaZoneInfo?.value;
+    var dateRange = metaZoneInfo?.key ?? DateRange(null, null);
     var metaZone = timeZones.metaZoneNames[metaZoneCode];
 
     var parts = canonicalCode.split('/');
@@ -284,7 +285,7 @@ class TimeZone {
       code: code,
       canonicalCode: canonicalCode,
       iana: iana,
-      dateTime: dateTime,
+      dateRange: dateRange,
       metaZone: metaZone,
       long: TimeZoneName._merge(timeZoneName.long, metaZone?.long),
       short: TimeZoneName._merge(timeZoneName.short, metaZone?.short),
@@ -294,43 +295,44 @@ class TimeZone {
 
   @override
   String toString() {
-    return format(TimeZoneStyle.genericLocation, Duration());
+    return format(TimeZoneStyle.genericLocation,
+        dateRange.to ?? dateRange.from ?? DateTime.now(), Duration());
   }
 
   /// Format the timezone in the desired [style]; the [offset] is used for
   /// numeric formats (or if the textual formats fall back to a numeric format).
-  String format(TimeZoneStyle style, Duration offset) {
+  String format(TimeZoneStyle style, DateTime dateTime, Duration offset) {
     switch (style) {
       case TimeZoneStyle.genericLocation:
-        return _formatGenericLocation(style, offset);
+        return _formatGenericLocation(style, dateTime, offset);
 
       // TODO: implement full fallback for non-location formats to include country or city (https://unicode.org/reports/tr35/tr35-dates.html#using-time-zone-names)
       case TimeZoneStyle.genericShort:
         return short.generic ??
             short.standard ??
-            _formatGenericLocation(style, offset);
+            _formatGenericLocation(style, dateTime, offset);
       case TimeZoneStyle.genericLong:
         return long.generic ??
             long.standard ??
-            _formatGenericLocation(style, offset);
+            _formatGenericLocation(style, dateTime, offset);
       case TimeZoneStyle.daylightShort:
         return short.daylight ??
             short.generic ??
             short.standard ??
-            _formatGenericLocation(style, offset);
+            _formatGenericLocation(style, dateTime, offset);
       case TimeZoneStyle.daylightLong:
         return long.daylight ??
             long.generic ??
             long.standard ??
-            _formatGenericLocation(style, offset);
+            _formatGenericLocation(style, dateTime, offset);
       case TimeZoneStyle.standardShort:
         return short.standard ??
             short.generic ??
-            _formatGenericLocation(style, offset);
+            _formatGenericLocation(style, dateTime, offset);
       case TimeZoneStyle.standardLong:
         return long.standard ??
             long.generic ??
-            _formatGenericLocation(style, offset);
+            _formatGenericLocation(style, dateTime, offset);
 
       case TimeZoneStyle.localizedGmtShort:
       case TimeZoneStyle.localizedGmtLong:
@@ -348,7 +350,8 @@ class TimeZone {
     }
   }
 
-  String _formatGenericLocation(TimeZoneStyle style, Duration offset) {
+  String _formatGenericLocation(
+      TimeZoneStyle style, DateTime dateTime, Duration offset) {
     var territoryCode = TimeZoneMapping.zoneToTerritory[canonicalCode];
     if (territoryCode == null) {
       return _timeZones.format(style, offset);
@@ -375,7 +378,6 @@ class TimeZone {
       }
     }
 
-    // TODO: check if it is a real location not a placeholder.
     switch (style) {
       case TimeZoneStyle.genericLocation:
       case TimeZoneStyle.genericShort:
@@ -498,12 +500,12 @@ class DateRangeMap<T> {
 
   DateRangeMap(Map<DateRange, T> map) : _map = map;
 
-  /// Get the first object with [dateTime] inside the [DateRange].
-  T? get({DateTime? dateTime}) {
+  /// Get the first object with [dateTime] inside the [DateRange].<
+
+  MapEntry<DateRange, T>? get({DateTime? dateTime}) {
     dateTime ??= DateTime.timestamp();
     return _map.entries
-        .firstWhereOrNull((entry) => entry.key.contains(dateTime!))
-        ?.value;
+        .firstWhereOrNull((entry) => entry.key.contains(dateTime!));
   }
 }
 

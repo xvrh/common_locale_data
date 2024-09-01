@@ -7,7 +7,7 @@ import 'timezones.dart';
 class TimeZoneMapping {
   /// Maps canonical timezones to meta zones.
   static final zoneToMetaZone =
-      CanonicalizedMap<String, String, DateRangeMap>.from({
+      CanonicalizedMap<String, String, DateRangeMap<String>>.from({
     'Africa/Abidjan': DateRangeMap({
       DateRange(null, null): 'GMT',
     }),

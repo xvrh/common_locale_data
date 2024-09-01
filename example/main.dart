@@ -1,6 +1,5 @@
 
 import 'package:common_locale_data/ar_eg.dart';
-import 'package:common_locale_data/common_locale_data.dart';
 import 'package:common_locale_data/en.dart';
 import 'package:common_locale_data/en_gb.dart';
 import 'package:common_locale_data/fr.dart';
@@ -22,6 +21,7 @@ void main() {
   };
 
   var cld = locales[currentLanguage]!;
+//  var cld=CommonLocaleDataAll.locales[currentLanguage]!;
   print(CommonLocaleData.dataDownloadDate);
   print(CommonLocaleData.cldrVersion);
   print(CommonLocaleData.unicodeVersion);
