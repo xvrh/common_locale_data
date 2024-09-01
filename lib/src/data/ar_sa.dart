@@ -5,6 +5,8 @@ import '../../common_locale_data.dart';
 const _locale = 'ar-SA';
 
 /// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataArSA implements CommonLocaleData {
   @override
   String get locale => _locale;

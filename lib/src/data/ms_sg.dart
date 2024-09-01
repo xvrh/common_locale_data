@@ -5,6 +5,8 @@ import '../../common_locale_data.dart';
 const _locale = 'ms-SG';
 
 /// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataMsSG implements CommonLocaleData {
   @override
   String get locale => _locale;

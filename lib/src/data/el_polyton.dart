@@ -5,6 +5,8 @@ import '../../common_locale_data.dart';
 const _locale = 'el-polyton';
 
 /// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataElPolyton implements CommonLocaleData {
   @override
   String get locale => _locale;

@@ -5,6 +5,8 @@ import '../../common_locale_data.dart';
 const _locale = 'ar-OM';
 
 /// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataArOM implements CommonLocaleData {
   @override
   String get locale => _locale;

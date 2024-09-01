@@ -5,6 +5,8 @@ import '../../common_locale_data.dart';
 const _locale = 'ru-BY';
 
 /// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataRuBY implements CommonLocaleData {
   @override
   String get locale => _locale;
