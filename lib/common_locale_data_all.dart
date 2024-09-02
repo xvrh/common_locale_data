@@ -1,7 +1,6 @@
 /// Library to access ALL translated common data.
 ///
-/// Individual locales can be used via the [CommonLocaleDataAll] extension or
-/// via the [locales] member.
+/// Individual locales can be used via the [CommonLocaleDataAll] extension.
 ///
 /// Because this library pulls in all locale sources, compilation times
 /// will be long (>10x compared to selecting individual locales).

@@ -1,20 +1,15 @@
-import 'package:common_locale_data/common_locale_data.dart';
 import 'package:common_locale_data/en.dart';
 import 'package:common_locale_data/fr.dart';
 
 void main() {
   print(CommonLocaleDataEn().timeZones['Europe/Paris']);
   print(CommonLocaleDataFr().timeZones['Europe/Paris']);
-  print(CommonLocaleDataFr().timeZones['Europe/Paris']
-      ?.format(TimeZoneStyle.daylightLong, Duration()));
+  print(CommonLocaleDataFr()
+      .timeZones['Europe/Paris']
+      ?.format(TimeZoneStyle.daylightLong, DateTime.now(), Duration()));
 }
 
-final expected = [
-  'heure :',
-  'France',
-  'Central European Time',
-  'Royaume-Uni'
-];
+final expected = ['heure :', 'France', 'Central European Time', 'Royaume-Uni'];
 
 final notExpected = [
   'lundi dernier',

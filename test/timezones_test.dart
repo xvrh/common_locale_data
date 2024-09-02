@@ -20,20 +20,20 @@ void main() {
 
     expect(
         en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericLong, Duration()),
+            ?.format(TimeZoneStyle.genericLong, DateTime.now(), Duration()),
         'Central European Time');
     expect(
         fr.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericLong, Duration()),
+            ?.format(TimeZoneStyle.genericLong, DateTime.now(), Duration()),
         'heure d’Europe centrale');
 
     expect(
         en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericShort, Duration()),
+            ?.format(TimeZoneStyle.genericShort, DateTime.now(), Duration()),
         'France Time');
     expect(
         en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.daylightShort, Duration()),
+            ?.format(TimeZoneStyle.daylightShort, DateTime.now(), Duration()),
         'France Daylight Time');
   });
 

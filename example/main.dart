@@ -1,4 +1,3 @@
-
 import 'package:common_locale_data/ar_eg.dart';
 import 'package:common_locale_data/en.dart';
 import 'package:common_locale_data/en_gb.dart';
@@ -61,8 +60,12 @@ void main() {
 
   print(zone.location);
 
-  print(zone.format(TimeZoneStyle.genericLocation, Duration(hours: 1)));
-  print(zone.format(TimeZoneStyle.genericLong, Duration(hours: 1)));
-  print(zone.format(TimeZoneStyle.genericShort, Duration(hours: 1)));
-  print(zone.format(TimeZoneStyle.iso8601ExtendedFixed, Duration(hours: 1)));
+  print(zone.format(
+      TimeZoneStyle.genericLocation, DateTime.now(), Duration(hours: 1)));
+  print(zone.format(
+      TimeZoneStyle.genericLong, DateTime.now(), Duration(hours: 1)));
+  print(zone.format(
+      TimeZoneStyle.genericShort, DateTime.now(), Duration(hours: 1)));
+  print(zone.format(
+      TimeZoneStyle.iso8601ExtendedFixed, DateTime.now(), Duration(hours: 1)));
 }
