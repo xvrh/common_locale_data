@@ -29,11 +29,11 @@ Iterable<T> _mapWithIndex<E, T>(
 }
 
 extension CaseMapping on String {
-  String toLowerCamel() => lowerCamel(splitWords(this));
+  String toLowerCamelCase() => lowerCamel(splitWords(this));
 
-  String toUpperCamel() => upperCamel(splitWords(this));
+  String toUpperCamelCase() => upperCamel(splitWords(this));
 
-  String toLowerHyphen() => lowerHyphen(splitWords(this));
+  String toLowerHyphenCase() => lowerHyphen(splitWords(this));
 
   String toSnakeCase() => snakeCase(splitWords(this));
 }

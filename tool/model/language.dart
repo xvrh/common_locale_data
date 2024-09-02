@@ -9,8 +9,8 @@ void generateLanguages(String locale, StringBuffer output) {
   var translatedLanguages = readLanguages(locale);
 
   output.writeln('''
-class Languages${locale.toUpperCamel()} extends Languages {
-  Languages${locale.toUpperCamel()}._();
+class Languages${locale.toUpperCamelCase()} extends Languages {
+  Languages${locale.toUpperCamelCase()}._();
 ''');
 
   String? translatedLanguage(String languageCode) {
@@ -24,7 +24,7 @@ class Languages${locale.toUpperCamel()} extends Languages {
     for (var alt in ['variant', 'short', 'menu']) {
       var altName = translatedLanguages['$languageCode-alt-$alt'];
       if (altName != null) {
-        output.writeln('${alt.toLowerCamel()}: ${escapeDartString(altName)},');
+        output.writeln('${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
       }
     }
 

@@ -42,7 +42,7 @@ void main() {
   for (var locale in supportedLocales) {
     print('Generate file for $locale');
 
-    var localeUpperCamel = locale.toUpperCamel();
+    var localeUpperCamel = locale.toUpperCamelCase();
 
     var buffer = StringBuffer();
 
@@ -112,7 +112,7 @@ class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
 library;
 
 export 'common_locale_data.dart';
-export 'src/data/${locale.toSnakeCase()}.dart' show CommonLocaleData${locale.toUpperCamel()};
+export 'src/data/${locale.toSnakeCase()}.dart' show CommonLocaleData${locale.toUpperCamelCase()};
 ''');
 
     File('lib/${locale.toSnakeCase()}.dart')
@@ -238,7 +238,7 @@ extension CommonLocaleDataAll on CommonLocaleData {
     }
     code.writeln('''
   /// Access the [CommonLocaleData] for $locale
-  static const $localeConstantName = CommonLocaleData${locale.toUpperCamel()}();
+  static const $localeConstantName = CommonLocaleData${locale.toUpperCamelCase()}();
 ''');
   }
 

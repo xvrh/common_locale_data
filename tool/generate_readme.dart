@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:analyzer/dart/ast/token.dart';
 import 'package:common_locale_data/src/data/en.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
@@ -46,12 +47,12 @@ String generateReadme(File source) {
   readme = readme.replaceAll(
       '##LOCALE_LIST##',
       ([
-                '| Locale | Language | Class | Import |',
-                '| ------ | -------- | ----- | ------ |'
+                '| Locale | Description | Constant | Class | Import |',
+                '| ------ | ----------- | ------ | ----- | ------ |'
               ] +
               getSupportedLocales().map((locale) {
                 var localeParts = locale.split('-');
-                var language =
+                var description =
                     CommonLocaleDataEn().languages[localeParts.first]?.name ??
                         '?';
 
@@ -67,13 +68,18 @@ String generateReadme(File source) {
                     : null;
 
                 if (country != null || script != null) {
-                  language = '$language (${[
+                  description = '$description (${[
                     script,
                     country
                   ].whereType<String>().join(', ')})';
                 }
 
-                return "| <nobr>$locale</nobr> | <nobr>$language</nobr> | <nobr>CommonLocaleData${locale.toUpperCamel()}</nobr> | <nobr>import 'package:common_locale_data/${locale.toSnakeCase()}';</nobr> |";
+                var localeConstantName = locale.toLowerCamelCase();
+                if (Keyword.keywords.containsKey(localeConstantName)) {
+                  localeConstantName = '\$$localeConstantName';
+                }
+
+                return "| <nobr>$locale</nobr> | <nobr>$description</nobr> | <nobr>$localeConstantName</nobr> | <nobr>CommonLocaleData${locale.toUpperCamelCase()}</nobr> | <nobr>import 'package:common_locale_data/${locale.toSnakeCase()}';</nobr> |";
               }).toList())
           .join(Platform.isWindows ? '  \r\n' : '  \n'));
 

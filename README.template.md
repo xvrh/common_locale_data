@@ -24,10 +24,16 @@ don't use.
 
 ## Compilation
 
-To improve compilation speed locales need to be imported individually.
+To improve compilation speed locales need to be imported individually when
+using [common_locale_data].
+For example for English: ```import 'package:common_locale_data/en.dart';``` or for
+French: ```import 'package:common_locale_data/fr.dart';```
 
-For example for English: ```import 'package:common_locale_data/en.dart';```
-Or for French: ```import 'package:common_locale_data/fr.dart';```
+You can import all locales via [common_locale_data_all]. However this will increase compilation time
+significantly (10x over including just a couple of locales). As long as you don't use
+the [CommonLocaleDataAll.locales] member to dynamically get locales the compiled file size is not
+affected. If you do use the [locales] member, all locales will be compiled in and the files size
+will become several 10's of MBs.
 
 ## Source
 

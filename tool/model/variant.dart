@@ -15,8 +15,8 @@ void generateVariants(String locale, StringBuffer output) {
   } catch (_) {}
 
   output.writeln('''
-class Variants${locale.toUpperCamel()} extends Variants {
-  Variants${locale.toUpperCamel()}._();
+class Variants${locale.toUpperCamelCase()} extends Variants {
+  Variants${locale.toUpperCamelCase()}._();
 ''');
 
   String? translatedVariant(String variantCode) {

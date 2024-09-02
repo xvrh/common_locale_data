@@ -9,8 +9,8 @@ void generateScripts(String locale, StringBuffer output) {
   var translatedScripts = readScripts(locale);
 
   output.writeln('''
-class Scripts${locale.toUpperCamel()} extends Scripts {
-  Scripts${locale.toUpperCamel()}._();
+class Scripts${locale.toUpperCamelCase()} extends Scripts {
+  Scripts${locale.toUpperCamelCase()}._();
 ''');
 
   String? translatedScript(String scriptCode) {
@@ -24,7 +24,7 @@ class Scripts${locale.toUpperCamel()} extends Scripts {
     for (var alt in ['variant', 'short', 'stand-alone']) {
       var altName = translatedScripts['$scriptCode-alt-$alt'];
       if (altName != null) {
-        output.writeln('${alt.toLowerCamel()}: ${escapeDartString(altName)},');
+        output.writeln('${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
       }
     }
 

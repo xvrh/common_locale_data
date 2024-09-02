@@ -229,8 +229,8 @@ void generateTimeZones(String locale, StringBuffer code) {
   }.map((k, e) => MapEntry(k, "$k: '${timeZoneNames[e]}'")).values.join(',');
 
   code.writeln('''
-class TimeZones${locale.toUpperCamel()} extends TimeZones {
-  TimeZones${locale.toUpperCamel()}._(Territories territories): super(_locale, territories, $timeZoneFields);
+class TimeZones${locale.toUpperCamelCase()} extends TimeZones {
+  TimeZones${locale.toUpperCamelCase()}._(Territories territories): super(_locale, territories, $timeZoneFields);
 ''');
 
   void generateTimeZones(MapEntry<String, dynamic> entry, StringBuffer code) {

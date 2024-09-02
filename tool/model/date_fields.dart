@@ -17,8 +17,8 @@ void generateDateFields(String locale, StringBuffer buffer) {
       // ignore: avoid_dynamic_calls
       json['main'][locale]['dates']['fields'] as Map<String, dynamic>;
   buffer.writeln(
-      '''class DateFields${locale.toUpperCamel()} implements DateFields {
-      DateFields${locale.toUpperCamel()}._();
+      '''class DateFields${locale.toUpperCamelCase()} implements DateFields {
+      DateFields${locale.toUpperCamelCase()}._();
       ''');
   for (var key in fields.keys.where((k) => !k.contains('-'))) {
     var field = DateField.fromJson(fields[key] as Map<String, dynamic>);

@@ -64,8 +64,8 @@ void generateUnits(String locale, StringBuffer buffer) {
   var referenceUnits = readJson('en').cast<String, Map<String, dynamic>>();
   var units = readJson(locale).cast<String, Map<String, dynamic>>();
 
-  buffer.writeln('''class Units${locale.toUpperCamel()} implements Units {
-      Units${locale.toUpperCamel()}._();
+  buffer.writeln('''class Units${locale.toUpperCamelCase()} implements Units {
+      Units${locale.toUpperCamelCase()}._();
       ''');
 
   for (var key in referenceUnits[_lengths.first]!.keys) {

@@ -40,8 +40,8 @@ void generateTerritories(String locale, StringBuffer output) {
   var translatedTerritories = readTerritories(locale);
 
   output.writeln('''
-class Territories${locale.toUpperCamel()} implements Territories {
-  Territories${locale.toUpperCamel()}._();
+class Territories${locale.toUpperCamelCase()} implements Territories {
+  Territories${locale.toUpperCamelCase()}._();
 ''');
 
   String translatedTerritory(String territoryCode) {
@@ -56,7 +56,7 @@ class Territories${locale.toUpperCamel()} implements Territories {
     for (var alt in ['variant', 'short']) {
       var altName = translatedTerritories['$territoryCode-alt-$alt'] as String?;
       if (altName != null) {
-        output.writeln('${alt.toLowerCamel()}: ${escapeDartString(altName)},');
+        output.writeln('${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
       }
     }
 
