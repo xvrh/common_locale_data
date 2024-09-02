@@ -10790,1267 +10790,1267 @@ class TimeZonesRuKZ extends TimeZones {
   @override
   final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
     'America/Adak': TimeZoneNames(
-      city: 'Адак',
+      exemplarCity: 'Адак',
     ),
     'America/Anchorage': TimeZoneNames(
-      city: 'Анкоридж',
+      exemplarCity: 'Анкоридж',
     ),
     'America/Anguilla': TimeZoneNames(
-      city: 'Ангилья',
+      exemplarCity: 'Ангилья',
     ),
     'America/Antigua': TimeZoneNames(
-      city: 'Антигуа',
+      exemplarCity: 'Антигуа',
     ),
     'America/Araguaina': TimeZoneNames(
-      city: 'Арагуаина',
+      exemplarCity: 'Арагуаина',
     ),
     'America/Argentina/Rio_Gallegos': TimeZoneNames(
-      city: 'Рио-Гальегос',
+      exemplarCity: 'Рио-Гальегос',
     ),
     'America/Argentina/San_Juan': TimeZoneNames(
-      city: 'Сан-Хуан',
+      exemplarCity: 'Сан-Хуан',
     ),
     'America/Argentina/Ushuaia': TimeZoneNames(
-      city: 'Ушуая',
+      exemplarCity: 'Ушуая',
     ),
     'America/Argentina/La_Rioja': TimeZoneNames(
-      city: 'Ла-Риоха',
+      exemplarCity: 'Ла-Риоха',
     ),
     'America/Argentina/San_Luis': TimeZoneNames(
-      city: 'Сан-Луис',
+      exemplarCity: 'Сан-Луис',
     ),
     'America/Argentina/Salta': TimeZoneNames(
-      city: 'Сальта',
+      exemplarCity: 'Сальта',
     ),
     'America/Argentina/Tucuman': TimeZoneNames(
-      city: 'Тукуман',
+      exemplarCity: 'Тукуман',
     ),
     'America/Aruba': TimeZoneNames(
-      city: 'Аруба',
+      exemplarCity: 'Аруба',
     ),
     'America/Asuncion': TimeZoneNames(
-      city: 'Асунсьон',
+      exemplarCity: 'Асунсьон',
     ),
     'America/Bahia': TimeZoneNames(
-      city: 'Баия',
+      exemplarCity: 'Баия',
     ),
     'America/Bahia_Banderas': TimeZoneNames(
-      city: 'Баия-де-Бандерас',
+      exemplarCity: 'Баия-де-Бандерас',
     ),
     'America/Barbados': TimeZoneNames(
-      city: 'Барбадос',
+      exemplarCity: 'Барбадос',
     ),
     'America/Belem': TimeZoneNames(
-      city: 'Белен',
+      exemplarCity: 'Белен',
     ),
     'America/Belize': TimeZoneNames(
-      city: 'Белиз',
+      exemplarCity: 'Белиз',
     ),
     'America/Blanc-Sablon': TimeZoneNames(
-      city: 'Бланк-Саблон',
+      exemplarCity: 'Бланк-Саблон',
     ),
     'America/Boa_Vista': TimeZoneNames(
-      city: 'Боа-Виста',
+      exemplarCity: 'Боа-Виста',
     ),
     'America/Bogota': TimeZoneNames(
-      city: 'Богота',
+      exemplarCity: 'Богота',
     ),
     'America/Boise': TimeZoneNames(
-      city: 'Бойсе',
+      exemplarCity: 'Бойсе',
     ),
     'America/Buenos_Aires': TimeZoneNames(
-      city: 'Буэнос-Айрес',
+      exemplarCity: 'Буэнос-Айрес',
     ),
     'America/Cambridge_Bay': TimeZoneNames(
-      city: 'Кеймбридж-Бей',
+      exemplarCity: 'Кеймбридж-Бей',
     ),
     'America/Campo_Grande': TimeZoneNames(
-      city: 'Кампу-Гранди',
+      exemplarCity: 'Кампу-Гранди',
     ),
     'America/Cancun': TimeZoneNames(
-      city: 'Канкун',
+      exemplarCity: 'Канкун',
     ),
     'America/Caracas': TimeZoneNames(
-      city: 'Каракас',
+      exemplarCity: 'Каракас',
     ),
     'America/Catamarca': TimeZoneNames(
-      city: 'Катамарка',
+      exemplarCity: 'Катамарка',
     ),
     'America/Cayenne': TimeZoneNames(
-      city: 'Кайенна',
+      exemplarCity: 'Кайенна',
     ),
     'America/Cayman': TimeZoneNames(
-      city: 'Острова Кайман',
+      exemplarCity: 'Острова Кайман',
     ),
     'America/Chicago': TimeZoneNames(
-      city: 'Чикаго',
+      exemplarCity: 'Чикаго',
     ),
     'America/Chihuahua': TimeZoneNames(
-      city: 'Чиуауа',
+      exemplarCity: 'Чиуауа',
     ),
     'America/Ciudad_Juarez': TimeZoneNames(
-      city: 'Сьюдад-Хуарес',
+      exemplarCity: 'Сьюдад-Хуарес',
     ),
     'America/Coral_Harbour': TimeZoneNames(
-      city: 'Корал-Харбор',
+      exemplarCity: 'Корал-Харбор',
     ),
     'America/Cordoba': TimeZoneNames(
-      city: 'Кордова',
+      exemplarCity: 'Кордова',
     ),
     'America/Costa_Rica': TimeZoneNames(
-      city: 'Коста-Рика',
+      exemplarCity: 'Коста-Рика',
     ),
     'America/Creston': TimeZoneNames(
-      city: 'Крестон',
+      exemplarCity: 'Крестон',
     ),
     'America/Cuiaba': TimeZoneNames(
-      city: 'Куяба',
+      exemplarCity: 'Куяба',
     ),
     'America/Curacao': TimeZoneNames(
-      city: 'Кюрасао',
+      exemplarCity: 'Кюрасао',
     ),
     'America/Danmarkshavn': TimeZoneNames(
-      city: 'Денмарксхавн',
+      exemplarCity: 'Денмарксхавн',
     ),
     'America/Dawson': TimeZoneNames(
-      city: 'Доусон',
+      exemplarCity: 'Доусон',
     ),
     'America/Dawson_Creek': TimeZoneNames(
-      city: 'Доусон-Крик',
+      exemplarCity: 'Доусон-Крик',
     ),
     'America/Denver': TimeZoneNames(
-      city: 'Денвер',
+      exemplarCity: 'Денвер',
     ),
     'America/Detroit': TimeZoneNames(
-      city: 'Детройт',
+      exemplarCity: 'Детройт',
     ),
     'America/Dominica': TimeZoneNames(
-      city: 'Доминика',
+      exemplarCity: 'Доминика',
     ),
     'America/Edmonton': TimeZoneNames(
-      city: 'Эдмонтон',
+      exemplarCity: 'Эдмонтон',
     ),
     'America/Eirunepe': TimeZoneNames(
-      city: 'Эйрунепе',
+      exemplarCity: 'Эйрунепе',
     ),
     'America/El_Salvador': TimeZoneNames(
-      city: 'Сальвадор',
+      exemplarCity: 'Сальвадор',
     ),
     'America/Fort_Nelson': TimeZoneNames(
-      city: 'Форт Нельсон',
+      exemplarCity: 'Форт Нельсон',
     ),
     'America/Fortaleza': TimeZoneNames(
-      city: 'Форталеза',
+      exemplarCity: 'Форталеза',
     ),
     'America/Glace_Bay': TimeZoneNames(
-      city: 'Глейс-Бей',
+      exemplarCity: 'Глейс-Бей',
     ),
     'America/Godthab': TimeZoneNames(
-      city: 'Нуук',
+      exemplarCity: 'Нуук',
     ),
     'America/Goose_Bay': TimeZoneNames(
-      city: 'Гус-Бей',
+      exemplarCity: 'Гус-Бей',
     ),
     'America/Grand_Turk': TimeZoneNames(
-      city: 'Гранд-Терк',
+      exemplarCity: 'Гранд-Терк',
     ),
     'America/Grenada': TimeZoneNames(
-      city: 'Гренада',
+      exemplarCity: 'Гренада',
     ),
     'America/Guadeloupe': TimeZoneNames(
-      city: 'Гваделупа',
+      exemplarCity: 'Гваделупа',
     ),
     'America/Guatemala': TimeZoneNames(
-      city: 'Гватемала',
+      exemplarCity: 'Гватемала',
     ),
     'America/Guayaquil': TimeZoneNames(
-      city: 'Гуаякиль',
+      exemplarCity: 'Гуаякиль',
     ),
     'America/Guyana': TimeZoneNames(
-      city: 'Гайана',
+      exemplarCity: 'Гайана',
     ),
     'America/Halifax': TimeZoneNames(
-      city: 'Галифакс',
+      exemplarCity: 'Галифакс',
     ),
     'America/Havana': TimeZoneNames(
-      city: 'Гавана',
+      exemplarCity: 'Гавана',
     ),
     'America/Hermosillo': TimeZoneNames(
-      city: 'Эрмосильо',
+      exemplarCity: 'Эрмосильо',
     ),
     'America/Indiana/Vincennes': TimeZoneNames(
-      city: 'Винсеннес',
+      exemplarCity: 'Винсеннес',
     ),
     'America/Indiana/Petersburg': TimeZoneNames(
-      city: 'Питерсберг, Индиана',
+      exemplarCity: 'Питерсберг, Индиана',
     ),
     'America/Indiana/Tell_City': TimeZoneNames(
-      city: 'Телл-Сити',
+      exemplarCity: 'Телл-Сити',
     ),
     'America/Indiana/Knox': TimeZoneNames(
-      city: 'Нокс, Индиана',
+      exemplarCity: 'Нокс, Индиана',
     ),
     'America/Indiana/Winamac': TimeZoneNames(
-      city: 'Уинамак',
+      exemplarCity: 'Уинамак',
     ),
     'America/Indiana/Marengo': TimeZoneNames(
-      city: 'Маренго, Индиана',
+      exemplarCity: 'Маренго, Индиана',
     ),
     'America/Indiana/Vevay': TimeZoneNames(
-      city: 'Вевей, Индиана',
+      exemplarCity: 'Вевей, Индиана',
     ),
     'America/Indianapolis': TimeZoneNames(
-      city: 'Индианаполис',
+      exemplarCity: 'Индианаполис',
     ),
     'America/Inuvik': TimeZoneNames(
-      city: 'Инувик',
+      exemplarCity: 'Инувик',
     ),
     'America/Iqaluit': TimeZoneNames(
-      city: 'Икалуит',
+      exemplarCity: 'Икалуит',
     ),
     'America/Jamaica': TimeZoneNames(
-      city: 'Ямайка',
+      exemplarCity: 'Ямайка',
     ),
     'America/Jujuy': TimeZoneNames(
-      city: 'Жужуй',
+      exemplarCity: 'Жужуй',
     ),
     'America/Juneau': TimeZoneNames(
-      city: 'Джуно',
+      exemplarCity: 'Джуно',
     ),
     'America/Kentucky/Monticello': TimeZoneNames(
-      city: 'Монтиселло, Кентукки',
+      exemplarCity: 'Монтиселло, Кентукки',
     ),
     'America/Kralendijk': TimeZoneNames(
-      city: 'Кралендейк',
+      exemplarCity: 'Кралендейк',
     ),
     'America/La_Paz': TimeZoneNames(
-      city: 'Ла-Пас',
+      exemplarCity: 'Ла-Пас',
     ),
     'America/Lima': TimeZoneNames(
-      city: 'Лима',
+      exemplarCity: 'Лима',
     ),
     'America/Los_Angeles': TimeZoneNames(
-      city: 'Лос-Анджелес',
+      exemplarCity: 'Лос-Анджелес',
     ),
     'America/Louisville': TimeZoneNames(
-      city: 'Луисвилл',
+      exemplarCity: 'Луисвилл',
     ),
     'America/Lower_Princes': TimeZoneNames(
-      city: 'Лоуэр-Принс-Куотер',
+      exemplarCity: 'Лоуэр-Принс-Куотер',
     ),
     'America/Maceio': TimeZoneNames(
-      city: 'Масейо',
+      exemplarCity: 'Масейо',
     ),
     'America/Managua': TimeZoneNames(
-      city: 'Манагуа',
+      exemplarCity: 'Манагуа',
     ),
     'America/Manaus': TimeZoneNames(
-      city: 'Манаус',
+      exemplarCity: 'Манаус',
     ),
     'America/Marigot': TimeZoneNames(
-      city: 'Мариго',
+      exemplarCity: 'Мариго',
     ),
     'America/Martinique': TimeZoneNames(
-      city: 'Мартиника',
+      exemplarCity: 'Мартиника',
     ),
     'America/Matamoros': TimeZoneNames(
-      city: 'Матаморос',
+      exemplarCity: 'Матаморос',
     ),
     'America/Mazatlan': TimeZoneNames(
-      city: 'Масатлан',
+      exemplarCity: 'Масатлан',
     ),
     'America/Mendoza': TimeZoneNames(
-      city: 'Мендоса',
+      exemplarCity: 'Мендоса',
     ),
     'America/Menominee': TimeZoneNames(
-      city: 'Меномини',
+      exemplarCity: 'Меномини',
     ),
     'America/Merida': TimeZoneNames(
-      city: 'Мерида',
+      exemplarCity: 'Мерида',
     ),
     'America/Metlakatla': TimeZoneNames(
-      city: 'Метлакатла',
+      exemplarCity: 'Метлакатла',
     ),
     'America/Mexico_City': TimeZoneNames(
-      city: 'Мехико',
+      exemplarCity: 'Мехико',
     ),
     'America/Miquelon': TimeZoneNames(
-      city: 'Микелон',
+      exemplarCity: 'Микелон',
     ),
     'America/Moncton': TimeZoneNames(
-      city: 'Монктон',
+      exemplarCity: 'Монктон',
     ),
     'America/Monterrey': TimeZoneNames(
-      city: 'Монтеррей',
+      exemplarCity: 'Монтеррей',
     ),
     'America/Montevideo': TimeZoneNames(
-      city: 'Монтевидео',
+      exemplarCity: 'Монтевидео',
     ),
     'America/Montserrat': TimeZoneNames(
-      city: 'Монтсеррат',
+      exemplarCity: 'Монтсеррат',
     ),
     'America/Nassau': TimeZoneNames(
-      city: 'Нассау',
+      exemplarCity: 'Нассау',
     ),
     'America/New_York': TimeZoneNames(
-      city: 'Нью-Йорк',
+      exemplarCity: 'Нью-Йорк',
     ),
     'America/Nome': TimeZoneNames(
-      city: 'Ном',
+      exemplarCity: 'Ном',
     ),
     'America/Noronha': TimeZoneNames(
-      city: 'Норонья',
+      exemplarCity: 'Норонья',
     ),
     'America/North_Dakota/Beulah': TimeZoneNames(
-      city: 'Бойла, Северная Дакота',
+      exemplarCity: 'Бойла, Северная Дакота',
     ),
     'America/North_Dakota/New_Salem': TimeZoneNames(
-      city: 'Нью-Сейлем, Северная Дакота',
+      exemplarCity: 'Нью-Сейлем, Северная Дакота',
     ),
     'America/North_Dakota/Center': TimeZoneNames(
-      city: 'Центр, Северная Дакота',
+      exemplarCity: 'Центр, Северная Дакота',
     ),
     'America/Ojinaga': TimeZoneNames(
-      city: 'Охинага',
+      exemplarCity: 'Охинага',
     ),
     'America/Panama': TimeZoneNames(
-      city: 'Панама',
+      exemplarCity: 'Панама',
     ),
     'America/Paramaribo': TimeZoneNames(
-      city: 'Парамарибо',
+      exemplarCity: 'Парамарибо',
     ),
     'America/Phoenix': TimeZoneNames(
-      city: 'Финикс',
+      exemplarCity: 'Финикс',
     ),
     'America/Port-au-Prince': TimeZoneNames(
-      city: 'Порт-о-Пренс',
+      exemplarCity: 'Порт-о-Пренс',
     ),
     'America/Port_of_Spain': TimeZoneNames(
-      city: 'Порт-оф-Спейн',
+      exemplarCity: 'Порт-оф-Спейн',
     ),
     'America/Porto_Velho': TimeZoneNames(
-      city: 'Порту-Велью',
+      exemplarCity: 'Порту-Велью',
     ),
     'America/Puerto_Rico': TimeZoneNames(
-      city: 'Пуэрто-Рико',
+      exemplarCity: 'Пуэрто-Рико',
     ),
     'America/Punta_Arenas': TimeZoneNames(
-      city: 'Пунта-Аренас',
+      exemplarCity: 'Пунта-Аренас',
     ),
     'America/Rankin_Inlet': TimeZoneNames(
-      city: 'Ранкин-Инлет',
+      exemplarCity: 'Ранкин-Инлет',
     ),
     'America/Recife': TimeZoneNames(
-      city: 'Ресифи',
+      exemplarCity: 'Ресифи',
     ),
     'America/Regina': TimeZoneNames(
-      city: 'Реджайна',
+      exemplarCity: 'Реджайна',
     ),
     'America/Resolute': TimeZoneNames(
-      city: 'Резольют',
+      exemplarCity: 'Резольют',
     ),
     'America/Rio_Branco': TimeZoneNames(
-      city: 'Риу-Бранку',
+      exemplarCity: 'Риу-Бранку',
     ),
     'America/Santarem': TimeZoneNames(
-      city: 'Сантарен',
+      exemplarCity: 'Сантарен',
     ),
     'America/Santiago': TimeZoneNames(
-      city: 'Сантьяго',
+      exemplarCity: 'Сантьяго',
     ),
     'America/Santo_Domingo': TimeZoneNames(
-      city: 'Санто-Доминго',
+      exemplarCity: 'Санто-Доминго',
     ),
     'America/Sao_Paulo': TimeZoneNames(
-      city: 'Сан-Паулу',
+      exemplarCity: 'Сан-Паулу',
     ),
     'America/Scoresbysund': TimeZoneNames(
-      city: 'Скорсбисунн',
+      exemplarCity: 'Скорсбисунн',
     ),
     'America/Sitka': TimeZoneNames(
-      city: 'Ситка',
+      exemplarCity: 'Ситка',
     ),
     'America/St_Barthelemy': TimeZoneNames(
-      city: 'Сен-Бартелеми',
+      exemplarCity: 'Сен-Бартелеми',
     ),
     'America/St_Johns': TimeZoneNames(
-      city: 'Сент-Джонс',
+      exemplarCity: 'Сент-Джонс',
     ),
     'America/St_Kitts': TimeZoneNames(
-      city: 'Сент-Китс',
+      exemplarCity: 'Сент-Китс',
     ),
     'America/St_Lucia': TimeZoneNames(
-      city: 'Сент-Люсия',
+      exemplarCity: 'Сент-Люсия',
     ),
     'America/St_Thomas': TimeZoneNames(
-      city: 'Сент-Томас',
+      exemplarCity: 'Сент-Томас',
     ),
     'America/St_Vincent': TimeZoneNames(
-      city: 'Сент-Винсент',
+      exemplarCity: 'Сент-Винсент',
     ),
     'America/Swift_Current': TimeZoneNames(
-      city: 'Свифт-Керрент',
+      exemplarCity: 'Свифт-Керрент',
     ),
     'America/Tegucigalpa': TimeZoneNames(
-      city: 'Тегусигальпа',
+      exemplarCity: 'Тегусигальпа',
     ),
     'America/Thule': TimeZoneNames(
-      city: 'Туле',
+      exemplarCity: 'Туле',
     ),
     'America/Tijuana': TimeZoneNames(
-      city: 'Тихуана',
+      exemplarCity: 'Тихуана',
     ),
     'America/Toronto': TimeZoneNames(
-      city: 'Торонто',
+      exemplarCity: 'Торонто',
     ),
     'America/Tortola': TimeZoneNames(
-      city: 'Тортола',
+      exemplarCity: 'Тортола',
     ),
     'America/Vancouver': TimeZoneNames(
-      city: 'Ванкувер',
+      exemplarCity: 'Ванкувер',
     ),
     'America/Whitehorse': TimeZoneNames(
-      city: 'Уайтхорс',
+      exemplarCity: 'Уайтхорс',
     ),
     'America/Winnipeg': TimeZoneNames(
-      city: 'Виннипег',
+      exemplarCity: 'Виннипег',
     ),
     'America/Yakutat': TimeZoneNames(
-      city: 'Якутат',
+      exemplarCity: 'Якутат',
     ),
     'Atlantic/Azores': TimeZoneNames(
-      city: 'Азорские о-ва',
+      exemplarCity: 'Азорские о-ва',
     ),
     'Atlantic/Bermuda': TimeZoneNames(
-      city: 'Бермудские о-ва',
+      exemplarCity: 'Бермудские о-ва',
     ),
     'Atlantic/Canary': TimeZoneNames(
-      city: 'Канарские о-ва',
+      exemplarCity: 'Канарские о-ва',
     ),
     'Atlantic/Cape_Verde': TimeZoneNames(
-      city: 'Кабо-Верде',
+      exemplarCity: 'Кабо-Верде',
     ),
     'Atlantic/Faeroe': TimeZoneNames(
-      city: 'Фарерские о-ва',
+      exemplarCity: 'Фарерские о-ва',
     ),
     'Atlantic/Madeira': TimeZoneNames(
-      city: 'Мадейра',
+      exemplarCity: 'Мадейра',
     ),
     'Atlantic/Reykjavik': TimeZoneNames(
-      city: 'Рейкьявик',
+      exemplarCity: 'Рейкьявик',
     ),
     'Atlantic/South_Georgia': TimeZoneNames(
-      city: 'Южная Георгия',
+      exemplarCity: 'Южная Георгия',
     ),
     'Atlantic/St_Helena': TimeZoneNames(
-      city: 'о-в Святой Елены',
+      exemplarCity: 'о-в Святой Елены',
     ),
     'Atlantic/Stanley': TimeZoneNames(
-      city: 'Стэнли',
+      exemplarCity: 'Стэнли',
     ),
     'Europe/Amsterdam': TimeZoneNames(
-      city: 'Амстердам',
+      exemplarCity: 'Амстердам',
     ),
     'Europe/Andorra': TimeZoneNames(
-      city: 'Андорра',
+      exemplarCity: 'Андорра',
     ),
     'Europe/Astrakhan': TimeZoneNames(
-      city: 'Астрахань',
+      exemplarCity: 'Астрахань',
     ),
     'Europe/Athens': TimeZoneNames(
-      city: 'Афины',
+      exemplarCity: 'Афины',
     ),
     'Europe/Belgrade': TimeZoneNames(
-      city: 'Белград',
+      exemplarCity: 'Белград',
     ),
     'Europe/Berlin': TimeZoneNames(
-      city: 'Берлин',
+      exemplarCity: 'Берлин',
     ),
     'Europe/Bratislava': TimeZoneNames(
-      city: 'Братислава',
+      exemplarCity: 'Братислава',
     ),
     'Europe/Brussels': TimeZoneNames(
-      city: 'Брюссель',
+      exemplarCity: 'Брюссель',
     ),
     'Europe/Bucharest': TimeZoneNames(
-      city: 'Бухарест',
+      exemplarCity: 'Бухарест',
     ),
     'Europe/Budapest': TimeZoneNames(
-      city: 'Будапешт',
+      exemplarCity: 'Будапешт',
     ),
     'Europe/Busingen': TimeZoneNames(
-      city: 'Бюзинген-на-Верхнем-Рейне',
+      exemplarCity: 'Бюзинген-на-Верхнем-Рейне',
     ),
     'Europe/Chisinau': TimeZoneNames(
-      city: 'Кишинев',
+      exemplarCity: 'Кишинев',
     ),
     'Europe/Copenhagen': TimeZoneNames(
-      city: 'Копенгаген',
+      exemplarCity: 'Копенгаген',
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
         daylight: 'Ирландия, стандартное время',
       ),
-      city: 'Дублин',
+      exemplarCity: 'Дублин',
     ),
     'Europe/Gibraltar': TimeZoneNames(
-      city: 'Гибралтар',
+      exemplarCity: 'Гибралтар',
     ),
     'Europe/Guernsey': TimeZoneNames(
-      city: 'Гернси',
+      exemplarCity: 'Гернси',
     ),
     'Europe/Helsinki': TimeZoneNames(
-      city: 'Хельсинки',
+      exemplarCity: 'Хельсинки',
     ),
     'Europe/Isle_of_Man': TimeZoneNames(
-      city: 'о-в Мэн',
+      exemplarCity: 'о-в Мэн',
     ),
     'Europe/Istanbul': TimeZoneNames(
-      city: 'Стамбул',
+      exemplarCity: 'Стамбул',
     ),
     'Europe/Jersey': TimeZoneNames(
-      city: 'Джерси',
+      exemplarCity: 'Джерси',
     ),
     'Europe/Kaliningrad': TimeZoneNames(
-      city: 'Калининград',
+      exemplarCity: 'Калининград',
     ),
     'Europe/Kiev': TimeZoneNames(
-      city: 'Киев',
+      exemplarCity: 'Киев',
     ),
     'Europe/Kirov': TimeZoneNames(
-      city: 'Киров',
+      exemplarCity: 'Киров',
     ),
     'Europe/Lisbon': TimeZoneNames(
-      city: 'Лиссабон',
+      exemplarCity: 'Лиссабон',
     ),
     'Europe/Ljubljana': TimeZoneNames(
-      city: 'Любляна',
+      exemplarCity: 'Любляна',
     ),
     'Europe/London': TimeZoneNames(
       long: TimeZoneName(
         daylight: 'Великобритания, летнее время',
       ),
-      city: 'Лондон',
+      exemplarCity: 'Лондон',
     ),
     'Europe/Luxembourg': TimeZoneNames(
-      city: 'Люксембург',
+      exemplarCity: 'Люксембург',
     ),
     'Europe/Madrid': TimeZoneNames(
-      city: 'Мадрид',
+      exemplarCity: 'Мадрид',
     ),
     'Europe/Malta': TimeZoneNames(
-      city: 'Мальта',
+      exemplarCity: 'Мальта',
     ),
     'Europe/Mariehamn': TimeZoneNames(
-      city: 'Мариехамн',
+      exemplarCity: 'Мариехамн',
     ),
     'Europe/Minsk': TimeZoneNames(
-      city: 'Минск',
+      exemplarCity: 'Минск',
     ),
     'Europe/Monaco': TimeZoneNames(
-      city: 'Монако',
+      exemplarCity: 'Монако',
     ),
     'Europe/Moscow': TimeZoneNames(
-      city: 'Москва',
+      exemplarCity: 'Москва',
     ),
     'Europe/Oslo': TimeZoneNames(
-      city: 'Осло',
+      exemplarCity: 'Осло',
     ),
     'Europe/Paris': TimeZoneNames(
-      city: 'Париж',
+      exemplarCity: 'Париж',
     ),
     'Europe/Podgorica': TimeZoneNames(
-      city: 'Подгорица',
+      exemplarCity: 'Подгорица',
     ),
     'Europe/Prague': TimeZoneNames(
-      city: 'Прага',
+      exemplarCity: 'Прага',
     ),
     'Europe/Riga': TimeZoneNames(
-      city: 'Рига',
+      exemplarCity: 'Рига',
     ),
     'Europe/Rome': TimeZoneNames(
-      city: 'Рим',
+      exemplarCity: 'Рим',
     ),
     'Europe/Samara': TimeZoneNames(
-      city: 'Самара',
+      exemplarCity: 'Самара',
     ),
     'Europe/San_Marino': TimeZoneNames(
-      city: 'Сан-Марино',
+      exemplarCity: 'Сан-Марино',
     ),
     'Europe/Sarajevo': TimeZoneNames(
-      city: 'Сараево',
+      exemplarCity: 'Сараево',
     ),
     'Europe/Saratov': TimeZoneNames(
-      city: 'Саратов',
+      exemplarCity: 'Саратов',
     ),
     'Europe/Simferopol': TimeZoneNames(
-      city: 'Симферополь',
+      exemplarCity: 'Симферополь',
     ),
     'Europe/Skopje': TimeZoneNames(
-      city: 'Скопье',
+      exemplarCity: 'Скопье',
     ),
     'Europe/Sofia': TimeZoneNames(
-      city: 'София',
+      exemplarCity: 'София',
     ),
     'Europe/Stockholm': TimeZoneNames(
-      city: 'Стокгольм',
+      exemplarCity: 'Стокгольм',
     ),
     'Europe/Tallinn': TimeZoneNames(
-      city: 'Таллин',
+      exemplarCity: 'Таллин',
     ),
     'Europe/Tirane': TimeZoneNames(
-      city: 'Тирана',
+      exemplarCity: 'Тирана',
     ),
     'Europe/Ulyanovsk': TimeZoneNames(
-      city: 'Ульяновск',
+      exemplarCity: 'Ульяновск',
     ),
     'Europe/Vaduz': TimeZoneNames(
-      city: 'Вадуц',
+      exemplarCity: 'Вадуц',
     ),
     'Europe/Vatican': TimeZoneNames(
-      city: 'Ватикан',
+      exemplarCity: 'Ватикан',
     ),
     'Europe/Vienna': TimeZoneNames(
-      city: 'Вена',
+      exemplarCity: 'Вена',
     ),
     'Europe/Vilnius': TimeZoneNames(
-      city: 'Вильнюс',
+      exemplarCity: 'Вильнюс',
     ),
     'Europe/Volgograd': TimeZoneNames(
-      city: 'Волгоград',
+      exemplarCity: 'Волгоград',
     ),
     'Europe/Warsaw': TimeZoneNames(
-      city: 'Варшава',
+      exemplarCity: 'Варшава',
     ),
     'Europe/Zagreb': TimeZoneNames(
-      city: 'Загреб',
+      exemplarCity: 'Загреб',
     ),
     'Europe/Zurich': TimeZoneNames(
-      city: 'Цюрих',
+      exemplarCity: 'Цюрих',
     ),
     'Africa/Abidjan': TimeZoneNames(
-      city: 'Абиджан',
+      exemplarCity: 'Абиджан',
     ),
     'Africa/Accra': TimeZoneNames(
-      city: 'Аккра',
+      exemplarCity: 'Аккра',
     ),
     'Africa/Addis_Ababa': TimeZoneNames(
-      city: 'Аддис-Абеба',
+      exemplarCity: 'Аддис-Абеба',
     ),
     'Africa/Algiers': TimeZoneNames(
-      city: 'Алжир',
+      exemplarCity: 'Алжир',
     ),
     'Africa/Asmera': TimeZoneNames(
-      city: 'Асмэра',
+      exemplarCity: 'Асмэра',
     ),
     'Africa/Bamako': TimeZoneNames(
-      city: 'Бамако',
+      exemplarCity: 'Бамако',
     ),
     'Africa/Bangui': TimeZoneNames(
-      city: 'Банги',
+      exemplarCity: 'Банги',
     ),
     'Africa/Banjul': TimeZoneNames(
-      city: 'Банжул',
+      exemplarCity: 'Банжул',
     ),
     'Africa/Bissau': TimeZoneNames(
-      city: 'Бисау',
+      exemplarCity: 'Бисау',
     ),
     'Africa/Blantyre': TimeZoneNames(
-      city: 'Блантайр',
+      exemplarCity: 'Блантайр',
     ),
     'Africa/Brazzaville': TimeZoneNames(
-      city: 'Браззавиль',
+      exemplarCity: 'Браззавиль',
     ),
     'Africa/Bujumbura': TimeZoneNames(
-      city: 'Бужумбура',
+      exemplarCity: 'Бужумбура',
     ),
     'Africa/Cairo': TimeZoneNames(
-      city: 'Каир',
+      exemplarCity: 'Каир',
     ),
     'Africa/Casablanca': TimeZoneNames(
-      city: 'Касабланка',
+      exemplarCity: 'Касабланка',
     ),
     'Africa/Ceuta': TimeZoneNames(
-      city: 'Сеута',
+      exemplarCity: 'Сеута',
     ),
     'Africa/Conakry': TimeZoneNames(
-      city: 'Конакри',
+      exemplarCity: 'Конакри',
     ),
     'Africa/Dakar': TimeZoneNames(
-      city: 'Дакар',
+      exemplarCity: 'Дакар',
     ),
     'Africa/Dar_es_Salaam': TimeZoneNames(
-      city: 'Дар-эс-Салам',
+      exemplarCity: 'Дар-эс-Салам',
     ),
     'Africa/Djibouti': TimeZoneNames(
-      city: 'Джибути',
+      exemplarCity: 'Джибути',
     ),
     'Africa/Douala': TimeZoneNames(
-      city: 'Дуала',
+      exemplarCity: 'Дуала',
     ),
     'Africa/El_Aaiun': TimeZoneNames(
-      city: 'Эль-Аюн',
+      exemplarCity: 'Эль-Аюн',
     ),
     'Africa/Freetown': TimeZoneNames(
-      city: 'Фритаун',
+      exemplarCity: 'Фритаун',
     ),
     'Africa/Gaborone': TimeZoneNames(
-      city: 'Габороне',
+      exemplarCity: 'Габороне',
     ),
     'Africa/Harare': TimeZoneNames(
-      city: 'Хараре',
+      exemplarCity: 'Хараре',
     ),
     'Africa/Johannesburg': TimeZoneNames(
-      city: 'Йоханнесбург',
+      exemplarCity: 'Йоханнесбург',
     ),
     'Africa/Juba': TimeZoneNames(
-      city: 'Джуба',
+      exemplarCity: 'Джуба',
     ),
     'Africa/Kampala': TimeZoneNames(
-      city: 'Кампала',
+      exemplarCity: 'Кампала',
     ),
     'Africa/Khartoum': TimeZoneNames(
-      city: 'Хартум',
+      exemplarCity: 'Хартум',
     ),
     'Africa/Kigali': TimeZoneNames(
-      city: 'Кигали',
+      exemplarCity: 'Кигали',
     ),
     'Africa/Kinshasa': TimeZoneNames(
-      city: 'Киншаса',
+      exemplarCity: 'Киншаса',
     ),
     'Africa/Lagos': TimeZoneNames(
-      city: 'Лагос',
+      exemplarCity: 'Лагос',
     ),
     'Africa/Libreville': TimeZoneNames(
-      city: 'Либревиль',
+      exemplarCity: 'Либревиль',
     ),
     'Africa/Lome': TimeZoneNames(
-      city: 'Ломе',
+      exemplarCity: 'Ломе',
     ),
     'Africa/Luanda': TimeZoneNames(
-      city: 'Луанда',
+      exemplarCity: 'Луанда',
     ),
     'Africa/Lubumbashi': TimeZoneNames(
-      city: 'Лубумбаши',
+      exemplarCity: 'Лубумбаши',
     ),
     'Africa/Lusaka': TimeZoneNames(
-      city: 'Лусака',
+      exemplarCity: 'Лусака',
     ),
     'Africa/Malabo': TimeZoneNames(
-      city: 'Малабо',
+      exemplarCity: 'Малабо',
     ),
     'Africa/Maputo': TimeZoneNames(
-      city: 'Мапуту',
+      exemplarCity: 'Мапуту',
     ),
     'Africa/Maseru': TimeZoneNames(
-      city: 'Масеру',
+      exemplarCity: 'Масеру',
     ),
     'Africa/Mbabane': TimeZoneNames(
-      city: 'Мбабане',
+      exemplarCity: 'Мбабане',
     ),
     'Africa/Mogadishu': TimeZoneNames(
-      city: 'Могадишо',
+      exemplarCity: 'Могадишо',
     ),
     'Africa/Monrovia': TimeZoneNames(
-      city: 'Монровия',
+      exemplarCity: 'Монровия',
     ),
     'Africa/Nairobi': TimeZoneNames(
-      city: 'Найроби',
+      exemplarCity: 'Найроби',
     ),
     'Africa/Ndjamena': TimeZoneNames(
-      city: 'Нджамена',
+      exemplarCity: 'Нджамена',
     ),
     'Africa/Niamey': TimeZoneNames(
-      city: 'Ниамей',
+      exemplarCity: 'Ниамей',
     ),
     'Africa/Nouakchott': TimeZoneNames(
-      city: 'Нуакшот',
+      exemplarCity: 'Нуакшот',
     ),
     'Africa/Ouagadougou': TimeZoneNames(
-      city: 'Уагадугу',
+      exemplarCity: 'Уагадугу',
     ),
     'Africa/Porto-Novo': TimeZoneNames(
-      city: 'Порто-Ново',
+      exemplarCity: 'Порто-Ново',
     ),
     'Africa/Sao_Tome': TimeZoneNames(
-      city: 'Сан-Томе',
+      exemplarCity: 'Сан-Томе',
     ),
     'Africa/Tripoli': TimeZoneNames(
-      city: 'Триполи',
+      exemplarCity: 'Триполи',
     ),
     'Africa/Tunis': TimeZoneNames(
-      city: 'Тунис',
+      exemplarCity: 'Тунис',
     ),
     'Africa/Windhoek': TimeZoneNames(
-      city: 'Виндхук',
+      exemplarCity: 'Виндхук',
     ),
     'Asia/Aden': TimeZoneNames(
-      city: 'Аден',
+      exemplarCity: 'Аден',
     ),
     'Asia/Almaty': TimeZoneNames(
-      city: 'Алматы',
+      exemplarCity: 'Алматы',
     ),
     'Asia/Amman': TimeZoneNames(
-      city: 'Амман',
+      exemplarCity: 'Амман',
     ),
     'Asia/Anadyr': TimeZoneNames(
-      city: 'Анадырь',
+      exemplarCity: 'Анадырь',
     ),
     'Asia/Aqtau': TimeZoneNames(
-      city: 'Актау',
+      exemplarCity: 'Актау',
     ),
     'Asia/Aqtobe': TimeZoneNames(
-      city: 'Актобе',
+      exemplarCity: 'Актобе',
     ),
     'Asia/Ashgabat': TimeZoneNames(
-      city: 'Ашхабад',
+      exemplarCity: 'Ашхабад',
     ),
     'Asia/Atyrau': TimeZoneNames(
-      city: 'Атырау',
+      exemplarCity: 'Атырау',
     ),
     'Asia/Baghdad': TimeZoneNames(
-      city: 'Багдад',
+      exemplarCity: 'Багдад',
     ),
     'Asia/Bahrain': TimeZoneNames(
-      city: 'Бахрейн',
+      exemplarCity: 'Бахрейн',
     ),
     'Asia/Baku': TimeZoneNames(
-      city: 'Баку',
+      exemplarCity: 'Баку',
     ),
     'Asia/Bangkok': TimeZoneNames(
-      city: 'Бангкок',
+      exemplarCity: 'Бангкок',
     ),
     'Asia/Barnaul': TimeZoneNames(
-      city: 'Барнаул',
+      exemplarCity: 'Барнаул',
     ),
     'Asia/Beirut': TimeZoneNames(
-      city: 'Бейрут',
+      exemplarCity: 'Бейрут',
     ),
     'Asia/Bishkek': TimeZoneNames(
-      city: 'Бишкек',
+      exemplarCity: 'Бишкек',
     ),
     'Asia/Brunei': TimeZoneNames(
-      city: 'Бруней',
+      exemplarCity: 'Бруней',
     ),
     'Asia/Calcutta': TimeZoneNames(
-      city: 'Калькутта',
+      exemplarCity: 'Калькутта',
     ),
     'Asia/Chita': TimeZoneNames(
-      city: 'Чита',
+      exemplarCity: 'Чита',
     ),
     'Asia/Choibalsan': TimeZoneNames(
-      city: 'Чойбалсан',
+      exemplarCity: 'Чойбалсан',
     ),
     'Asia/Colombo': TimeZoneNames(
-      city: 'Коломбо',
+      exemplarCity: 'Коломбо',
     ),
     'Asia/Damascus': TimeZoneNames(
-      city: 'Дамаск',
+      exemplarCity: 'Дамаск',
     ),
     'Asia/Dhaka': TimeZoneNames(
-      city: 'Дакка',
+      exemplarCity: 'Дакка',
     ),
     'Asia/Dili': TimeZoneNames(
-      city: 'Дили',
+      exemplarCity: 'Дили',
     ),
     'Asia/Dubai': TimeZoneNames(
-      city: 'Дубай',
+      exemplarCity: 'Дубай',
     ),
     'Asia/Dushanbe': TimeZoneNames(
-      city: 'Душанбе',
+      exemplarCity: 'Душанбе',
     ),
     'Asia/Famagusta': TimeZoneNames(
-      city: 'Фамагуста',
+      exemplarCity: 'Фамагуста',
     ),
     'Asia/Gaza': TimeZoneNames(
-      city: 'Газа',
+      exemplarCity: 'Газа',
     ),
     'Asia/Hebron': TimeZoneNames(
-      city: 'Хеврон',
+      exemplarCity: 'Хеврон',
     ),
     'Asia/Hong_Kong': TimeZoneNames(
-      city: 'Гонконг',
+      exemplarCity: 'Гонконг',
     ),
     'Asia/Hovd': TimeZoneNames(
-      city: 'Ховд',
+      exemplarCity: 'Ховд',
     ),
     'Asia/Irkutsk': TimeZoneNames(
-      city: 'Иркутск',
+      exemplarCity: 'Иркутск',
     ),
     'Asia/Jakarta': TimeZoneNames(
-      city: 'Джакарта',
+      exemplarCity: 'Джакарта',
     ),
     'Asia/Jayapura': TimeZoneNames(
-      city: 'Джаяпура',
+      exemplarCity: 'Джаяпура',
     ),
     'Asia/Jerusalem': TimeZoneNames(
-      city: 'Иерусалим',
+      exemplarCity: 'Иерусалим',
     ),
     'Asia/Kabul': TimeZoneNames(
-      city: 'Кабул',
+      exemplarCity: 'Кабул',
     ),
     'Asia/Kamchatka': TimeZoneNames(
-      city: 'Петропавловск-Камчатский',
+      exemplarCity: 'Петропавловск-Камчатский',
     ),
     'Asia/Karachi': TimeZoneNames(
-      city: 'Карачи',
+      exemplarCity: 'Карачи',
     ),
     'Asia/Katmandu': TimeZoneNames(
-      city: 'Катманду',
+      exemplarCity: 'Катманду',
     ),
     'Asia/Khandyga': TimeZoneNames(
-      city: 'Хандыга',
+      exemplarCity: 'Хандыга',
     ),
     'Asia/Krasnoyarsk': TimeZoneNames(
-      city: 'Красноярск',
+      exemplarCity: 'Красноярск',
     ),
     'Asia/Kuala_Lumpur': TimeZoneNames(
-      city: 'Куала-Лумпур',
+      exemplarCity: 'Куала-Лумпур',
     ),
     'Asia/Kuching': TimeZoneNames(
-      city: 'Кучинг',
+      exemplarCity: 'Кучинг',
     ),
     'Asia/Kuwait': TimeZoneNames(
-      city: 'Кувейт',
+      exemplarCity: 'Кувейт',
     ),
     'Asia/Macau': TimeZoneNames(
-      city: 'Макао',
+      exemplarCity: 'Макао',
     ),
     'Asia/Magadan': TimeZoneNames(
-      city: 'Магадан',
+      exemplarCity: 'Магадан',
     ),
     'Asia/Makassar': TimeZoneNames(
-      city: 'Макасар',
+      exemplarCity: 'Макасар',
     ),
     'Asia/Manila': TimeZoneNames(
-      city: 'Манила',
+      exemplarCity: 'Манила',
     ),
     'Asia/Muscat': TimeZoneNames(
-      city: 'Маскат',
+      exemplarCity: 'Маскат',
     ),
     'Asia/Nicosia': TimeZoneNames(
-      city: 'Никосия',
+      exemplarCity: 'Никосия',
     ),
     'Asia/Novokuznetsk': TimeZoneNames(
-      city: 'Новокузнецк',
+      exemplarCity: 'Новокузнецк',
     ),
     'Asia/Novosibirsk': TimeZoneNames(
-      city: 'Новосибирск',
+      exemplarCity: 'Новосибирск',
     ),
     'Asia/Omsk': TimeZoneNames(
-      city: 'Омск',
+      exemplarCity: 'Омск',
     ),
     'Asia/Oral': TimeZoneNames(
-      city: 'Уральск',
+      exemplarCity: 'Уральск',
     ),
     'Asia/Phnom_Penh': TimeZoneNames(
-      city: 'Пномпень',
+      exemplarCity: 'Пномпень',
     ),
     'Asia/Pontianak': TimeZoneNames(
-      city: 'Понтианак',
+      exemplarCity: 'Понтианак',
     ),
     'Asia/Pyongyang': TimeZoneNames(
-      city: 'Пхеньян',
+      exemplarCity: 'Пхеньян',
     ),
     'Asia/Qatar': TimeZoneNames(
-      city: 'Катар',
+      exemplarCity: 'Катар',
     ),
     'Asia/Qostanay': TimeZoneNames(
-      city: 'Костанай',
+      exemplarCity: 'Костанай',
     ),
     'Asia/Qyzylorda': TimeZoneNames(
-      city: 'Кызылорда',
+      exemplarCity: 'Кызылорда',
     ),
     'Asia/Rangoon': TimeZoneNames(
-      city: 'Янгон',
+      exemplarCity: 'Янгон',
     ),
     'Asia/Riyadh': TimeZoneNames(
-      city: 'Эр-Рияд',
+      exemplarCity: 'Эр-Рияд',
     ),
     'Asia/Saigon': TimeZoneNames(
-      city: 'Хошимин',
+      exemplarCity: 'Хошимин',
     ),
     'Asia/Sakhalin': TimeZoneNames(
-      city: 'о-в Сахалин',
+      exemplarCity: 'о-в Сахалин',
     ),
     'Asia/Samarkand': TimeZoneNames(
-      city: 'Самарканд',
+      exemplarCity: 'Самарканд',
     ),
     'Asia/Seoul': TimeZoneNames(
-      city: 'Сеул',
+      exemplarCity: 'Сеул',
     ),
     'Asia/Shanghai': TimeZoneNames(
-      city: 'Шанхай',
+      exemplarCity: 'Шанхай',
     ),
     'Asia/Singapore': TimeZoneNames(
-      city: 'Сингапур',
+      exemplarCity: 'Сингапур',
     ),
     'Asia/Srednekolymsk': TimeZoneNames(
-      city: 'Среднеколымск',
+      exemplarCity: 'Среднеколымск',
     ),
     'Asia/Taipei': TimeZoneNames(
-      city: 'Тайбэй',
+      exemplarCity: 'Тайбэй',
     ),
     'Asia/Tashkent': TimeZoneNames(
-      city: 'Ташкент',
+      exemplarCity: 'Ташкент',
     ),
     'Asia/Tbilisi': TimeZoneNames(
-      city: 'Тбилиси',
+      exemplarCity: 'Тбилиси',
     ),
     'Asia/Tehran': TimeZoneNames(
-      city: 'Тегеран',
+      exemplarCity: 'Тегеран',
     ),
     'Asia/Thimphu': TimeZoneNames(
-      city: 'Тхимпху',
+      exemplarCity: 'Тхимпху',
     ),
     'Asia/Tokyo': TimeZoneNames(
-      city: 'Токио',
+      exemplarCity: 'Токио',
     ),
     'Asia/Tomsk': TimeZoneNames(
-      city: 'Томск',
+      exemplarCity: 'Томск',
     ),
     'Asia/Ulaanbaatar': TimeZoneNames(
-      city: 'Улан-Батор',
+      exemplarCity: 'Улан-Батор',
     ),
     'Asia/Urumqi': TimeZoneNames(
-      city: 'Урумчи',
+      exemplarCity: 'Урумчи',
     ),
     'Asia/Ust-Nera': TimeZoneNames(
-      city: 'Усть-Нера',
+      exemplarCity: 'Усть-Нера',
     ),
     'Asia/Vientiane': TimeZoneNames(
-      city: 'Вьентьян',
+      exemplarCity: 'Вьентьян',
     ),
     'Asia/Vladivostok': TimeZoneNames(
-      city: 'Владивосток',
+      exemplarCity: 'Владивосток',
     ),
     'Asia/Yakutsk': TimeZoneNames(
-      city: 'Якутск',
+      exemplarCity: 'Якутск',
     ),
     'Asia/Yekaterinburg': TimeZoneNames(
-      city: 'Екатеринбург',
+      exemplarCity: 'Екатеринбург',
     ),
     'Asia/Yerevan': TimeZoneNames(
-      city: 'Ереван',
+      exemplarCity: 'Ереван',
     ),
     'Indian/Antananarivo': TimeZoneNames(
-      city: 'Антананариву',
+      exemplarCity: 'Антананариву',
     ),
     'Indian/Chagos': TimeZoneNames(
-      city: 'Чагос',
+      exemplarCity: 'Чагос',
     ),
     'Indian/Christmas': TimeZoneNames(
-      city: 'о-в Рождества',
+      exemplarCity: 'о-в Рождества',
     ),
     'Indian/Cocos': TimeZoneNames(
-      city: 'Кокосовые о-ва',
+      exemplarCity: 'Кокосовые о-ва',
     ),
     'Indian/Comoro': TimeZoneNames(
-      city: 'Коморы',
+      exemplarCity: 'Коморы',
     ),
     'Indian/Kerguelen': TimeZoneNames(
-      city: 'Кергелен',
+      exemplarCity: 'Кергелен',
     ),
     'Indian/Mahe': TimeZoneNames(
-      city: 'Маэ',
+      exemplarCity: 'Маэ',
     ),
     'Indian/Maldives': TimeZoneNames(
-      city: 'Мальдивы',
+      exemplarCity: 'Мальдивы',
     ),
     'Indian/Mauritius': TimeZoneNames(
-      city: 'Маврикий',
+      exemplarCity: 'Маврикий',
     ),
     'Indian/Mayotte': TimeZoneNames(
-      city: 'Майотта',
+      exemplarCity: 'Майотта',
     ),
     'Indian/Reunion': TimeZoneNames(
-      city: 'Реюньон',
+      exemplarCity: 'Реюньон',
     ),
     'Australia/Adelaide': TimeZoneNames(
-      city: 'Аделаида',
+      exemplarCity: 'Аделаида',
     ),
     'Australia/Brisbane': TimeZoneNames(
-      city: 'Брисбен',
+      exemplarCity: 'Брисбен',
     ),
     'Australia/Broken_Hill': TimeZoneNames(
-      city: 'Брокен-Хилл',
+      exemplarCity: 'Брокен-Хилл',
     ),
     'Australia/Darwin': TimeZoneNames(
-      city: 'Дарвин',
+      exemplarCity: 'Дарвин',
     ),
     'Australia/Eucla': TimeZoneNames(
-      city: 'Юкла',
+      exemplarCity: 'Юкла',
     ),
     'Australia/Hobart': TimeZoneNames(
-      city: 'Хобарт',
+      exemplarCity: 'Хобарт',
     ),
     'Australia/Lindeman': TimeZoneNames(
-      city: 'Линдеман',
+      exemplarCity: 'Линдеман',
     ),
     'Australia/Lord_Howe': TimeZoneNames(
-      city: 'Лорд-Хау',
+      exemplarCity: 'Лорд-Хау',
     ),
     'Australia/Melbourne': TimeZoneNames(
-      city: 'Мельбурн',
+      exemplarCity: 'Мельбурн',
     ),
     'Australia/Perth': TimeZoneNames(
-      city: 'Перт',
+      exemplarCity: 'Перт',
     ),
     'Australia/Sydney': TimeZoneNames(
-      city: 'Сидней',
+      exemplarCity: 'Сидней',
     ),
     'Pacific/Apia': TimeZoneNames(
-      city: 'Апиа',
+      exemplarCity: 'Апиа',
     ),
     'Pacific/Auckland': TimeZoneNames(
-      city: 'Окленд',
+      exemplarCity: 'Окленд',
     ),
     'Pacific/Bougainville': TimeZoneNames(
-      city: 'Бугенвиль',
+      exemplarCity: 'Бугенвиль',
     ),
     'Pacific/Chatham': TimeZoneNames(
-      city: 'Чатем',
+      exemplarCity: 'Чатем',
     ),
     'Pacific/Easter': TimeZoneNames(
-      city: 'о-в Пасхи',
+      exemplarCity: 'о-в Пасхи',
     ),
     'Pacific/Efate': TimeZoneNames(
-      city: 'Эфате',
+      exemplarCity: 'Эфате',
     ),
     'Pacific/Enderbury': TimeZoneNames(
-      city: 'о-в Эндербери',
+      exemplarCity: 'о-в Эндербери',
     ),
     'Pacific/Fakaofo': TimeZoneNames(
-      city: 'Факаофо',
+      exemplarCity: 'Факаофо',
     ),
     'Pacific/Fiji': TimeZoneNames(
-      city: 'Фиджи',
+      exemplarCity: 'Фиджи',
     ),
     'Pacific/Funafuti': TimeZoneNames(
-      city: 'Фунафути',
+      exemplarCity: 'Фунафути',
     ),
     'Pacific/Galapagos': TimeZoneNames(
-      city: 'Галапагосские о-ва',
+      exemplarCity: 'Галапагосские о-ва',
     ),
     'Pacific/Gambier': TimeZoneNames(
-      city: 'о-ва Гамбье',
+      exemplarCity: 'о-ва Гамбье',
     ),
     'Pacific/Guadalcanal': TimeZoneNames(
-      city: 'Гуадалканал',
+      exemplarCity: 'Гуадалканал',
     ),
     'Pacific/Guam': TimeZoneNames(
-      city: 'Гуам',
+      exemplarCity: 'Гуам',
     ),
     'Pacific/Honolulu': TimeZoneNames(
-      city: 'Гонолулу',
+      exemplarCity: 'Гонолулу',
     ),
     'Pacific/Kanton': TimeZoneNames(
-      city: 'Кантон',
+      exemplarCity: 'Кантон',
     ),
     'Pacific/Kiritimati': TimeZoneNames(
-      city: 'Киритимати',
+      exemplarCity: 'Киритимати',
     ),
     'Pacific/Kosrae': TimeZoneNames(
-      city: 'Косрае',
+      exemplarCity: 'Косрае',
     ),
     'Pacific/Kwajalein': TimeZoneNames(
-      city: 'Кваджалейн',
+      exemplarCity: 'Кваджалейн',
     ),
     'Pacific/Majuro': TimeZoneNames(
-      city: 'Маджуро',
+      exemplarCity: 'Маджуро',
     ),
     'Pacific/Marquesas': TimeZoneNames(
-      city: 'Маркизские о-ва',
+      exemplarCity: 'Маркизские о-ва',
     ),
     'Pacific/Midway': TimeZoneNames(
-      city: 'о-ва Мидуэй',
+      exemplarCity: 'о-ва Мидуэй',
     ),
     'Pacific/Nauru': TimeZoneNames(
-      city: 'Науру',
+      exemplarCity: 'Науру',
     ),
     'Pacific/Niue': TimeZoneNames(
-      city: 'Ниуэ',
+      exemplarCity: 'Ниуэ',
     ),
     'Pacific/Norfolk': TimeZoneNames(
-      city: 'Норфолк',
+      exemplarCity: 'Норфолк',
     ),
     'Pacific/Noumea': TimeZoneNames(
-      city: 'Нумеа',
+      exemplarCity: 'Нумеа',
     ),
     'Pacific/Pago_Pago': TimeZoneNames(
-      city: 'Паго-Паго',
+      exemplarCity: 'Паго-Паго',
     ),
     'Pacific/Palau': TimeZoneNames(
-      city: 'Палау',
+      exemplarCity: 'Палау',
     ),
     'Pacific/Pitcairn': TimeZoneNames(
-      city: 'Питкэрн',
+      exemplarCity: 'Питкэрн',
     ),
     'Pacific/Ponape': TimeZoneNames(
-      city: 'Понпеи',
+      exemplarCity: 'Понпеи',
     ),
     'Pacific/Port_Moresby': TimeZoneNames(
-      city: 'Порт-Морсби',
+      exemplarCity: 'Порт-Морсби',
     ),
     'Pacific/Rarotonga': TimeZoneNames(
-      city: 'Раротонга',
+      exemplarCity: 'Раротонга',
     ),
     'Pacific/Saipan': TimeZoneNames(
-      city: 'Сайпан',
+      exemplarCity: 'Сайпан',
     ),
     'Pacific/Tahiti': TimeZoneNames(
-      city: 'Таити',
+      exemplarCity: 'Таити',
     ),
     'Pacific/Tarawa': TimeZoneNames(
-      city: 'Тарава',
+      exemplarCity: 'Тарава',
     ),
     'Pacific/Tongatapu': TimeZoneNames(
-      city: 'Тонгатапу',
+      exemplarCity: 'Тонгатапу',
     ),
     'Pacific/Truk': TimeZoneNames(
-      city: 'Трук',
+      exemplarCity: 'Трук',
     ),
     'Pacific/Wake': TimeZoneNames(
-      city: 'Уэйк',
+      exemplarCity: 'Уэйк',
     ),
     'Pacific/Wallis': TimeZoneNames(
-      city: 'Уоллис',
+      exemplarCity: 'Уоллис',
     ),
     'Arctic/Longyearbyen': TimeZoneNames(
-      city: 'Лонгйир',
+      exemplarCity: 'Лонгйир',
     ),
     'Antarctica/Casey': TimeZoneNames(
-      city: 'Кейси',
+      exemplarCity: 'Кейси',
     ),
     'Antarctica/Davis': TimeZoneNames(
-      city: 'Дейвис',
+      exemplarCity: 'Дейвис',
     ),
     'Antarctica/DumontDUrville': TimeZoneNames(
-      city: 'Дюмон-д’Юрвиль',
+      exemplarCity: 'Дюмон-д’Юрвиль',
     ),
     'Antarctica/Macquarie': TimeZoneNames(
-      city: 'Маккуори',
+      exemplarCity: 'Маккуори',
     ),
     'Antarctica/Mawson': TimeZoneNames(
-      city: 'Моусон',
+      exemplarCity: 'Моусон',
     ),
     'Antarctica/McMurdo': TimeZoneNames(
-      city: 'Мак-Мердо',
+      exemplarCity: 'Мак-Мердо',
     ),
     'Antarctica/Palmer': TimeZoneNames(
-      city: 'Палмер',
+      exemplarCity: 'Палмер',
     ),
     'Antarctica/Rothera': TimeZoneNames(
-      city: 'Ротера',
+      exemplarCity: 'Ротера',
     ),
     'Antarctica/Syowa': TimeZoneNames(
-      city: 'Сёва',
+      exemplarCity: 'Сёва',
     ),
     'Antarctica/Troll': TimeZoneNames(
-      city: 'Тролль',
+      exemplarCity: 'Тролль',
     ),
     'Antarctica/Vostok': TimeZoneNames(
-      city: 'Восток',
+      exemplarCity: 'Восток',
     ),
     'Etc/UTC': TimeZoneNames(
       long: TimeZoneName(
@@ -12061,7 +12061,7 @@ class TimeZonesRuKZ extends TimeZones {
       ),
     ),
     'Etc/Unknown': TimeZoneNames(
-      city: 'Неизвестный город',
+      exemplarCity: 'Неизвестный город',
     ),
   }, (key) => key.toLowerCase());
 

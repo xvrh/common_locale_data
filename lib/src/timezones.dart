@@ -253,7 +253,13 @@ class TimeZone {
   final TimeZoneName short;
 
   /// The localized location (most often city, sometimes country) for this timezone.
-  final String location;
+  final String exemplarCity;
+
+  /// The localized country for this timezone.
+  final String? country;
+
+  /// The localized region for this timezone (country when it is the primary or single timezone for a country, exemplarCity otherwise);
+  final String? region;
 
   TimeZone._(this._timeZones,
       {required this.code,
@@ -263,7 +269,9 @@ class TimeZone {
       required this.dateRange,
       required this.long,
       required this.short,
-      required this.location});
+      required this.exemplarCity,
+      required this.country,
+      required this.region});
 
   factory TimeZone(TimeZones timeZones, String code, DateTime? dateTime) {
     dateTime ??= DateTime.timestamp();
@@ -273,13 +281,23 @@ class TimeZone {
 
     var timeZoneName =
         timeZones.timeZoneNames[canonicalCode] ?? TimeZoneNames();
+
     var metaZoneInfo =
         TimeZoneMapping.zoneToMetaZone[canonicalCode]?.get(dateTime: dateTime);
     var metaZoneCode = metaZoneInfo?.value;
-    var dateRange = metaZoneInfo?.key ?? DateRange(null, null);
     var metaZone = timeZones.metaZoneNames[metaZoneCode];
 
-    var parts = canonicalCode.split('/');
+    var territoryCode = TimeZoneMapping.zoneToTerritory[canonicalCode];
+    var country = timeZones._territories.countries[territoryCode]?.name;
+
+    var (isPrimaryOrSingle, dateRange) = _checkPrimaryOrSingle(
+        metaZoneInfo?.key ?? DateRange(), territoryCode, dateTime);
+
+    var fallbackCity = canonicalCode.split('/').last.replaceAll('_', ' ');
+    var exemplarCity = timeZoneName.exemplarCity ?? fallbackCity;
+
+    var region = isPrimaryOrSingle ? country : exemplarCity;
+
     return TimeZone._(
       timeZones,
       code: code,
@@ -289,50 +307,61 @@ class TimeZone {
       metaZone: metaZone,
       long: TimeZoneName._merge(timeZoneName.long, metaZone?.long),
       short: TimeZoneName._merge(timeZoneName.short, metaZone?.short),
-      location: timeZoneName.city ?? parts.last.replaceAll('_', ' '),
+      exemplarCity: exemplarCity,
+      country: country,
+      region: region,
     );
+  }
+
+  static Set<String> _getMetaZonesForTerritory(
+      Set<String> zonesForTerritory, DateTime date) {
+    return zonesForTerritory
+        .map((zone) =>
+            TimeZoneMapping.zoneToMetaZone[zone]?.get(dateTime: date)?.value ??
+            zone)
+        .nonNulls
+        .toSet();
   }
 
   @override
   String toString() {
-    return format(TimeZoneStyle.genericLocation,
-        dateRange.to ?? dateRange.from ?? DateTime.now(), Duration());
+    return format(TimeZoneStyle.genericLocation, Duration());
   }
 
   /// Format the timezone in the desired [style]; the [offset] is used for
   /// numeric formats (or if the textual formats fall back to a numeric format).
-  String format(TimeZoneStyle style, DateTime dateTime, Duration offset) {
+  String format(TimeZoneStyle style, Duration offset) {
     switch (style) {
       case TimeZoneStyle.genericLocation:
-        return _formatGenericLocation(style, dateTime, offset);
+        return _formatGenericLocation(style, offset);
 
       // TODO: implement full fallback for non-location formats to include country or city (https://unicode.org/reports/tr35/tr35-dates.html#using-time-zone-names)
       case TimeZoneStyle.genericShort:
         return short.generic ??
             short.standard ??
-            _formatGenericLocation(style, dateTime, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.genericLong:
         return long.generic ??
             long.standard ??
-            _formatGenericLocation(style, dateTime, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.daylightShort:
         return short.daylight ??
             short.generic ??
             short.standard ??
-            _formatGenericLocation(style, dateTime, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.daylightLong:
         return long.daylight ??
             long.generic ??
             long.standard ??
-            _formatGenericLocation(style, dateTime, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.standardShort:
         return short.standard ??
             short.generic ??
-            _formatGenericLocation(style, dateTime, offset);
+            _formatGenericLocation(style, offset);
       case TimeZoneStyle.standardLong:
         return long.standard ??
             long.generic ??
-            _formatGenericLocation(style, dateTime, offset);
+            _formatGenericLocation(style, offset);
 
       case TimeZoneStyle.localizedGmtShort:
       case TimeZoneStyle.localizedGmtLong:
@@ -350,51 +379,108 @@ class TimeZone {
     }
   }
 
-  String _formatGenericLocation(
-      TimeZoneStyle style, DateTime dateTime, Duration offset) {
-    var territoryCode = TimeZoneMapping.zoneToTerritory[canonicalCode];
-    if (territoryCode == null) {
+  String _formatGenericLocation(TimeZoneStyle style, Duration offset) {
+    var region = this.region;
+    if (region == null) {
       return _timeZones.format(style, offset);
-    }
-
-    var zonesForTerritory = TimeZoneMapping.territoryToZones[territoryCode];
-    var isSingle = zonesForTerritory == null || zonesForTerritory.length == 1;
-    var isSingleMetaZone = true;
-    if (!isSingle) {
-      var metaZonesForTerritory = zonesForTerritory
-          .map((zone) =>
-              TimeZoneMapping.zoneToMetaZone[zone]?.get(dateTime: dateTime))
-          .toSet();
-      isSingleMetaZone = metaZonesForTerritory.length <= 1;
-    }
-    var isPrimary =
-        TimeZoneMapping.territoryToPrimaryZone.containsKey(territoryCode);
-
-    var loc = location;
-    if (isSingleMetaZone || isPrimary) {
-      var country = _timeZones._territories.countries[territoryCode]?.name;
-      if (country != null) {
-        loc = country;
-      }
     }
 
     switch (style) {
       case TimeZoneStyle.genericLocation:
       case TimeZoneStyle.genericShort:
       case TimeZoneStyle.genericLong:
-        return _timeZones._regionFormat.replaceAll('{0}', loc);
+        return _timeZones._regionFormat.replaceAll('{0}', region);
 
       case TimeZoneStyle.daylightShort:
       case TimeZoneStyle.daylightLong:
-        return _timeZones._regionFormatDaylight.replaceAll('{0}', loc);
+        return _timeZones._regionFormatDaylight.replaceAll('{0}', region);
 
       case TimeZoneStyle.standardShort:
       case TimeZoneStyle.standardLong:
-        return _timeZones._regionFormatStandard.replaceAll('{0}', loc);
+        return _timeZones._regionFormatStandard.replaceAll('{0}', region);
 
       case _:
         return _timeZones.format(style, offset);
     }
+  }
+
+  static (bool, DateRange) _checkPrimaryOrSingle(
+      DateRange dateRange, String? territoryCode, DateTime dateTime) {
+    var isPrimaryOrSingle =
+        TimeZoneMapping.territoryToPrimaryZone.containsKey(territoryCode);
+
+    if (!isPrimaryOrSingle) {
+      var zonesForTerritory = TimeZoneMapping.territoryToZones[territoryCode];
+
+      isPrimaryOrSingle =
+          zonesForTerritory == null || zonesForTerritory.length == 1;
+
+      if (!isPrimaryOrSingle) {
+        var dateRangeMaps = zonesForTerritory
+            .map((zone) => TimeZoneMapping.zoneToMetaZone[zone])
+            .nonNulls
+            .toSet();
+
+        if (dateRangeMaps.length <= 1) {
+          isPrimaryOrSingle = true;
+        }
+        if (!isPrimaryOrSingle) {
+          var metaZonesAtCurrentDateTime =
+              _getMetaZonesForTerritory(zonesForTerritory, dateTime);
+
+          isPrimaryOrSingle = metaZonesAtCurrentDateTime.length <= 1;
+
+          // All dates of changes in timezone meta zones
+          var dates = dateRangeMaps
+              .map((e) => e.entries.keys
+                  .map((d) => [d.from, d.to])
+                  .flattenedToSet
+                  .nonNulls)
+              .flattened
+              .where((date) => dateRange.contains(date))
+              .toSet()
+              .toList();
+
+          dates.sort();
+
+          // if original range has no start date, insert start date at start of era
+          if (dateRange.from == null) {
+            dates.insert(0, DateTime.utc(0));
+          }
+
+          // find date range where meta zone information for all zones in the country is the same
+          var idx = dates.lastIndexWhere((e) => !e.isAfter(dateTime));
+
+          int startIdx;
+          for (startIdx = idx - 1; startIdx >= 0; startIdx--) {
+            var date = dates[startIdx];
+            var metaZonesAtDate =
+                _getMetaZonesForTerritory(zonesForTerritory, date);
+            if (!SetEquality()
+                .equals(metaZonesAtDate, metaZonesAtCurrentDateTime)) {
+              startIdx++;
+              break;
+            }
+          }
+
+          int endIdx;
+          for (endIdx = idx + 1; endIdx < dates.length; endIdx++) {
+            var date = dates[endIdx];
+            var metaZonesAtDate =
+                _getMetaZonesForTerritory(zonesForTerritory, date);
+            if (!SetEquality()
+                .equals(metaZonesAtDate, metaZonesAtCurrentDateTime)) {
+              break;
+            }
+          }
+
+          dateRange = DateRange.fromDateTime(
+              startIdx < 0 ? null : dates[startIdx],
+              endIdx >= dates.length ? null : dates[endIdx]);
+        }
+      }
+    }
+    return (isPrimaryOrSingle, dateRange);
   }
 }
 
@@ -409,9 +495,9 @@ class TimeZoneNames {
   final TimeZoneName? short;
 
   /// name of exemplar city.
-  final String? city;
+  final String? exemplarCity;
 
-  TimeZoneNames({this.long, this.short, this.city});
+  TimeZoneNames({this.long, this.short, this.exemplarCity});
 }
 
 /// Combination of generic, standard and daylight savings time names.
@@ -470,7 +556,7 @@ class DateRange {
 
   DateRange._(this.from, this.to);
 
-  factory DateRange(String? fromString, String? toString) {
+  factory DateRange([String? fromString, String? toString]) {
     var from = fromString == null ? null : DateTime.parse(fromString);
     var to = toString == null ? null : DateTime.parse(toString);
     return DateRange._(from, to);
@@ -490,6 +576,23 @@ class DateRange {
       return true;
     }
   }
+
+  @override
+  String toString() {
+    return '$from - $to';
+  }
+
+  @override
+  // TODO: implement hashCode
+  int get hashCode => Object.hash(from, to);
+
+  @override
+  bool operator ==(Object other) =>
+      other is DateRange && from == other.from && to == other.to;
+
+  factory DateRange.fromDateTime(DateTime? from, DateTime? to) {
+    return DateRange._(from, to);
+  }
 }
 
 /// A map of time periods.
@@ -506,6 +609,23 @@ class DateRangeMap<T> {
     dateTime ??= DateTime.timestamp();
     return _map.entries
         .firstWhereOrNull((entry) => entry.key.contains(dateTime!));
+  }
+
+  Map<DateRange, T> get entries {
+    return _map;
+  }
+
+  @override
+  int get hashCode => MapEquality().hash(_map);
+
+  @override
+  bool operator ==(Object other) {
+    return other is DateRangeMap<T> && MapEquality().equals(_map, other._map);
+  }
+
+  @override
+  String toString() {
+    return _map.toString();
   }
 }
 

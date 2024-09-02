@@ -264,7 +264,7 @@ class TimeZones${locale.toUpperCamelCase()} extends TimeZones {
 
       var exemplarCity = timeZone['exemplarCity'] as String?;
       if (exemplarCity != null) {
-        code.writeln('city: ${escapeDartString(exemplarCity)},');
+        code.writeln('exemplarCity: ${escapeDartString(exemplarCity)},');
       }
 
       code.writeln('),');

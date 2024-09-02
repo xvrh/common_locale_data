@@ -9446,1267 +9446,1267 @@ class TimeZonesLo extends TimeZones {
   @override
   final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
     'America/Adak': TimeZoneNames(
-      city: 'ອາແດກ',
+      exemplarCity: 'ອາແດກ',
     ),
     'America/Anchorage': TimeZoneNames(
-      city: 'ແອນເຄີເຣກ',
+      exemplarCity: 'ແອນເຄີເຣກ',
     ),
     'America/Anguilla': TimeZoneNames(
-      city: 'ແອນກິນລາ',
+      exemplarCity: 'ແອນກິນລາ',
     ),
     'America/Antigua': TimeZoneNames(
-      city: 'ແອນທິກົວ',
+      exemplarCity: 'ແອນທິກົວ',
     ),
     'America/Araguaina': TimeZoneNames(
-      city: 'ອາຣາກົວນາ',
+      exemplarCity: 'ອາຣາກົວນາ',
     ),
     'America/Argentina/Rio_Gallegos': TimeZoneNames(
-      city: 'ຣິໂກ ແກວເລກອສ',
+      exemplarCity: 'ຣິໂກ ແກວເລກອສ',
     ),
     'America/Argentina/San_Juan': TimeZoneNames(
-      city: 'ແຊນຮວນ',
+      exemplarCity: 'ແຊນຮວນ',
     ),
     'America/Argentina/Ushuaia': TimeZoneNames(
-      city: 'ອູຊູເອຍ',
+      exemplarCity: 'ອູຊູເອຍ',
     ),
     'America/Argentina/La_Rioja': TimeZoneNames(
-      city: 'ລາ ຣິໂອຈາ',
+      exemplarCity: 'ລາ ຣິໂອຈາ',
     ),
     'America/Argentina/San_Luis': TimeZoneNames(
-      city: 'ແຊນລຸຍສ໌',
+      exemplarCity: 'ແຊນລຸຍສ໌',
     ),
     'America/Argentina/Salta': TimeZoneNames(
-      city: 'ຊານຕາ',
+      exemplarCity: 'ຊານຕາ',
     ),
     'America/Argentina/Tucuman': TimeZoneNames(
-      city: 'ຕູຄູແມນ',
+      exemplarCity: 'ຕູຄູແມນ',
     ),
     'America/Aruba': TimeZoneNames(
-      city: 'ອາຣູບາ',
+      exemplarCity: 'ອາຣູບາ',
     ),
     'America/Asuncion': TimeZoneNames(
-      city: 'ອະຊຸນຊິອອງ',
+      exemplarCity: 'ອະຊຸນຊິອອງ',
     ),
     'America/Bahia': TimeZoneNames(
-      city: 'ບາເຢຍ',
+      exemplarCity: 'ບາເຢຍ',
     ),
     'America/Bahia_Banderas': TimeZoneNames(
-      city: 'ບາເຮຍ ແບນເດີຣາສ',
+      exemplarCity: 'ບາເຮຍ ແບນເດີຣາສ',
     ),
     'America/Barbados': TimeZoneNames(
-      city: 'ບາເບດອສ',
+      exemplarCity: 'ບາເບດອສ',
     ),
     'America/Belem': TimeZoneNames(
-      city: 'ບີເລມ',
+      exemplarCity: 'ບີເລມ',
     ),
     'America/Belize': TimeZoneNames(
-      city: 'ເບລີຊ',
+      exemplarCity: 'ເບລີຊ',
     ),
     'America/Blanc-Sablon': TimeZoneNames(
-      city: 'ບລານ-ຊາບລອນ',
+      exemplarCity: 'ບລານ-ຊາບລອນ',
     ),
     'America/Boa_Vista': TimeZoneNames(
-      city: 'ບົວ ວິສຕາ',
+      exemplarCity: 'ບົວ ວິສຕາ',
     ),
     'America/Bogota': TimeZoneNames(
-      city: 'ໂບໂກຕາ',
+      exemplarCity: 'ໂບໂກຕາ',
     ),
     'America/Boise': TimeZoneNames(
-      city: 'ບອຍຊ໌',
+      exemplarCity: 'ບອຍຊ໌',
     ),
     'America/Buenos_Aires': TimeZoneNames(
-      city: 'ບົວໂນສ ໄອເຣສ',
+      exemplarCity: 'ບົວໂນສ ໄອເຣສ',
     ),
     'America/Cambridge_Bay': TimeZoneNames(
-      city: 'ແຄມບຣິດ ເບ',
+      exemplarCity: 'ແຄມບຣິດ ເບ',
     ),
     'America/Campo_Grande': TimeZoneNames(
-      city: 'ກັງປູຣັງຈີ',
+      exemplarCity: 'ກັງປູຣັງຈີ',
     ),
     'America/Cancun': TimeZoneNames(
-      city: 'ແຄນກຸນ',
+      exemplarCity: 'ແຄນກຸນ',
     ),
     'America/Caracas': TimeZoneNames(
-      city: 'ຄາຣາກັສ',
+      exemplarCity: 'ຄາຣາກັສ',
     ),
     'America/Catamarca': TimeZoneNames(
-      city: 'ຄາຕາມາກາ',
+      exemplarCity: 'ຄາຕາມາກາ',
     ),
     'America/Cayenne': TimeZoneNames(
-      city: 'ຄາເຢນ',
+      exemplarCity: 'ຄາເຢນ',
     ),
     'America/Cayman': TimeZoneNames(
-      city: 'ເຄແມນ',
+      exemplarCity: 'ເຄແມນ',
     ),
     'America/Chicago': TimeZoneNames(
-      city: 'ຊິຄາໂກ',
+      exemplarCity: 'ຊິຄາໂກ',
     ),
     'America/Chihuahua': TimeZoneNames(
-      city: 'ຊິວາວາ',
+      exemplarCity: 'ຊິວາວາ',
     ),
     'America/Ciudad_Juarez': TimeZoneNames(
-      city: 'ຊີອູດັດ ຄົວເຣຊ',
+      exemplarCity: 'ຊີອູດັດ ຄົວເຣຊ',
     ),
     'America/Coral_Harbour': TimeZoneNames(
-      city: 'ອາທິໂຄຄານ',
+      exemplarCity: 'ອາທິໂຄຄານ',
     ),
     'America/Cordoba': TimeZoneNames(
-      city: 'ຄໍໂດບາ',
+      exemplarCity: 'ຄໍໂດບາ',
     ),
     'America/Costa_Rica': TimeZoneNames(
-      city: 'ຄອສຕາຣິກາ',
+      exemplarCity: 'ຄອສຕາຣິກາ',
     ),
     'America/Creston': TimeZoneNames(
-      city: 'ເຄຣສຕັນ',
+      exemplarCity: 'ເຄຣສຕັນ',
     ),
     'America/Cuiaba': TimeZoneNames(
-      city: 'ກຸຢາບາ',
+      exemplarCity: 'ກຸຢາບາ',
     ),
     'America/Curacao': TimeZoneNames(
-      city: 'ກືຣາເຊົາ',
+      exemplarCity: 'ກືຣາເຊົາ',
     ),
     'America/Danmarkshavn': TimeZoneNames(
-      city: 'ເດນມາກແຊນ',
+      exemplarCity: 'ເດນມາກແຊນ',
     ),
     'America/Dawson': TimeZoneNames(
-      city: 'ດໍສັນ',
+      exemplarCity: 'ດໍສັນ',
     ),
     'America/Dawson_Creek': TimeZoneNames(
-      city: 'ດໍສັນ ຄຣີກ',
+      exemplarCity: 'ດໍສັນ ຄຣີກ',
     ),
     'America/Denver': TimeZoneNames(
-      city: 'ເດັນເວີ',
+      exemplarCity: 'ເດັນເວີ',
     ),
     'America/Detroit': TimeZoneNames(
-      city: 'ດີທຣອຍ',
+      exemplarCity: 'ດີທຣອຍ',
     ),
     'America/Dominica': TimeZoneNames(
-      city: 'ໂດມິນິກາ',
+      exemplarCity: 'ໂດມິນິກາ',
     ),
     'America/Edmonton': TimeZoneNames(
-      city: 'ເອດມອນຕອນ',
+      exemplarCity: 'ເອດມອນຕອນ',
     ),
     'America/Eirunepe': TimeZoneNames(
-      city: 'ເອຣຸເນປີ',
+      exemplarCity: 'ເອຣຸເນປີ',
     ),
     'America/El_Salvador': TimeZoneNames(
-      city: 'ເອວ ຊາວາດໍ',
+      exemplarCity: 'ເອວ ຊາວາດໍ',
     ),
     'America/Fort_Nelson': TimeZoneNames(
-      city: 'ຟອດ ເນວສັນ',
+      exemplarCity: 'ຟອດ ເນວສັນ',
     ),
     'America/Fortaleza': TimeZoneNames(
-      city: 'ຟໍຕາເລຊາ',
+      exemplarCity: 'ຟໍຕາເລຊາ',
     ),
     'America/Glace_Bay': TimeZoneNames(
-      city: 'ເກລດເບ',
+      exemplarCity: 'ເກລດເບ',
     ),
     'America/Godthab': TimeZoneNames(
-      city: 'ນູກ',
+      exemplarCity: 'ນູກ',
     ),
     'America/Goose_Bay': TimeZoneNames(
-      city: 'ກູສເບ',
+      exemplarCity: 'ກູສເບ',
     ),
     'America/Grand_Turk': TimeZoneNames(
-      city: 'ແກຣນ ເທີກ',
+      exemplarCity: 'ແກຣນ ເທີກ',
     ),
     'America/Grenada': TimeZoneNames(
-      city: 'ເກຣນາດາ',
+      exemplarCity: 'ເກຣນາດາ',
     ),
     'America/Guadeloupe': TimeZoneNames(
-      city: 'ກາວເດລູບ',
+      exemplarCity: 'ກາວເດລູບ',
     ),
     'America/Guatemala': TimeZoneNames(
-      city: 'ກົວເຕມາລາ',
+      exemplarCity: 'ກົວເຕມາລາ',
     ),
     'America/Guayaquil': TimeZoneNames(
-      city: 'ກົວຢາກິລ',
+      exemplarCity: 'ກົວຢາກິລ',
     ),
     'America/Guyana': TimeZoneNames(
-      city: 'ກູຢານາ',
+      exemplarCity: 'ກູຢານາ',
     ),
     'America/Halifax': TimeZoneNames(
-      city: 'ຮາລິແຟັກ',
+      exemplarCity: 'ຮາລິແຟັກ',
     ),
     'America/Havana': TimeZoneNames(
-      city: 'ຮາວານາ',
+      exemplarCity: 'ຮາວານາ',
     ),
     'America/Hermosillo': TimeZoneNames(
-      city: 'ເອໂມຊິໂຢ',
+      exemplarCity: 'ເອໂມຊິໂຢ',
     ),
     'America/Indiana/Vincennes': TimeZoneNames(
-      city: 'ວິນເຊນເນສ, ອິນເດຍນາ',
+      exemplarCity: 'ວິນເຊນເນສ, ອິນເດຍນາ',
     ),
     'America/Indiana/Petersburg': TimeZoneNames(
-      city: 'ປີເຕີສເປີກ, ອິນເດຍນາ',
+      exemplarCity: 'ປີເຕີສເປີກ, ອິນເດຍນາ',
     ),
     'America/Indiana/Tell_City': TimeZoneNames(
-      city: 'ເທວ ຊິຕີ, ອິນເດຍນາ',
+      exemplarCity: 'ເທວ ຊິຕີ, ອິນເດຍນາ',
     ),
     'America/Indiana/Knox': TimeZoneNames(
-      city: 'ນ໋ອກ, ອິນເດຍນາ',
+      exemplarCity: 'ນ໋ອກ, ອິນເດຍນາ',
     ),
     'America/Indiana/Winamac': TimeZoneNames(
-      city: 'ວິນາແມັກ, ອິນເດຍນາ',
+      exemplarCity: 'ວິນາແມັກ, ອິນເດຍນາ',
     ),
     'America/Indiana/Marengo': TimeZoneNames(
-      city: 'ມາເຣນໂກ, ອິນເດຍນາ',
+      exemplarCity: 'ມາເຣນໂກ, ອິນເດຍນາ',
     ),
     'America/Indiana/Vevay': TimeZoneNames(
-      city: 'ວີເວ, ອິນເດຍນາ',
+      exemplarCity: 'ວີເວ, ອິນເດຍນາ',
     ),
     'America/Indianapolis': TimeZoneNames(
-      city: 'ອິນດີເອນາໂພລິສ',
+      exemplarCity: 'ອິນດີເອນາໂພລິສ',
     ),
     'America/Inuvik': TimeZoneNames(
-      city: 'ອີນູວິກ',
+      exemplarCity: 'ອີນູວິກ',
     ),
     'America/Iqaluit': TimeZoneNames(
-      city: 'ອີກົວລິດ',
+      exemplarCity: 'ອີກົວລິດ',
     ),
     'America/Jamaica': TimeZoneNames(
-      city: 'ຈາໄມກາ',
+      exemplarCity: 'ຈາໄມກາ',
     ),
     'America/Jujuy': TimeZoneNames(
-      city: 'ຈູຈຸຍ',
+      exemplarCity: 'ຈູຈຸຍ',
     ),
     'America/Juneau': TimeZoneNames(
-      city: 'ຈູໂນ',
+      exemplarCity: 'ຈູໂນ',
     ),
     'America/Kentucky/Monticello': TimeZoneNames(
-      city: 'ມອນຕີເຊວໂລ, ເຄນທັກກີ',
+      exemplarCity: 'ມອນຕີເຊວໂລ, ເຄນທັກກີ',
     ),
     'America/Kralendijk': TimeZoneNames(
-      city: 'ຄຣາເລນດິກ',
+      exemplarCity: 'ຄຣາເລນດິກ',
     ),
     'America/La_Paz': TimeZoneNames(
-      city: 'ລາປາສ',
+      exemplarCity: 'ລາປາສ',
     ),
     'America/Lima': TimeZoneNames(
-      city: 'ລີມາ',
+      exemplarCity: 'ລີມາ',
     ),
     'America/Los_Angeles': TimeZoneNames(
-      city: 'ລອສແອນເຈລີສ',
+      exemplarCity: 'ລອສແອນເຈລີສ',
     ),
     'America/Louisville': TimeZoneNames(
-      city: 'ຫລຸຍວິວ',
+      exemplarCity: 'ຫລຸຍວິວ',
     ),
     'America/Lower_Princes': TimeZoneNames(
-      city: 'ໂລເວີ ພຣິນຊ໌ ຄວດເຕີ',
+      exemplarCity: 'ໂລເວີ ພຣິນຊ໌ ຄວດເຕີ',
     ),
     'America/Maceio': TimeZoneNames(
-      city: 'ມາເຊໂອ',
+      exemplarCity: 'ມາເຊໂອ',
     ),
     'America/Managua': TimeZoneNames(
-      city: 'ມານາກົວ',
+      exemplarCity: 'ມານາກົວ',
     ),
     'America/Manaus': TimeZoneNames(
-      city: 'ມາເນົາສ໌',
+      exemplarCity: 'ມາເນົາສ໌',
     ),
     'America/Marigot': TimeZoneNames(
-      city: 'ມາຣີໂກດ',
+      exemplarCity: 'ມາຣີໂກດ',
     ),
     'America/Martinique': TimeZoneNames(
-      city: 'ມາທີນິກ',
+      exemplarCity: 'ມາທີນິກ',
     ),
     'America/Matamoros': TimeZoneNames(
-      city: 'ມາຕາໂມຣອສ',
+      exemplarCity: 'ມາຕາໂມຣອສ',
     ),
     'America/Mazatlan': TimeZoneNames(
-      city: 'ມາຊາດລານ',
+      exemplarCity: 'ມາຊາດລານ',
     ),
     'America/Mendoza': TimeZoneNames(
-      city: 'ເມັນໂດຊ່າ',
+      exemplarCity: 'ເມັນໂດຊ່າ',
     ),
     'America/Menominee': TimeZoneNames(
-      city: 'ເມໂນມິນີ',
+      exemplarCity: 'ເມໂນມິນີ',
     ),
     'America/Merida': TimeZoneNames(
-      city: 'ເມີຣິດາ',
+      exemplarCity: 'ເມີຣິດາ',
     ),
     'America/Metlakatla': TimeZoneNames(
-      city: 'ເມັດລາກັດລາ',
+      exemplarCity: 'ເມັດລາກັດລາ',
     ),
     'America/Mexico_City': TimeZoneNames(
-      city: 'ເມັກຊິໂກ ຊິຕີ',
+      exemplarCity: 'ເມັກຊິໂກ ຊິຕີ',
     ),
     'America/Miquelon': TimeZoneNames(
-      city: 'ມິກົວລອນ',
+      exemplarCity: 'ມິກົວລອນ',
     ),
     'America/Moncton': TimeZoneNames(
-      city: 'ມອນຕັນ',
+      exemplarCity: 'ມອນຕັນ',
     ),
     'America/Monterrey': TimeZoneNames(
-      city: 'ມອນເຕີເຣຍ',
+      exemplarCity: 'ມອນເຕີເຣຍ',
     ),
     'America/Montevideo': TimeZoneNames(
-      city: 'ມອນເຕວິເດໂອ',
+      exemplarCity: 'ມອນເຕວິເດໂອ',
     ),
     'America/Montserrat': TimeZoneNames(
-      city: 'ມອນເຊີຣັດ',
+      exemplarCity: 'ມອນເຊີຣັດ',
     ),
     'America/Nassau': TimeZoneNames(
-      city: 'ແນສຊໍ',
+      exemplarCity: 'ແນສຊໍ',
     ),
     'America/New_York': TimeZoneNames(
-      city: 'ນິວຢອກ',
+      exemplarCity: 'ນິວຢອກ',
     ),
     'America/Nome': TimeZoneNames(
-      city: 'ນອມ',
+      exemplarCity: 'ນອມ',
     ),
     'America/Noronha': TimeZoneNames(
-      city: 'ນໍຣອນຮາ',
+      exemplarCity: 'ນໍຣອນຮາ',
     ),
     'America/North_Dakota/Beulah': TimeZoneNames(
-      city: 'ເບີລາ, ນອດ ດາໂກຕາ',
+      exemplarCity: 'ເບີລາ, ນອດ ດາໂກຕາ',
     ),
     'America/North_Dakota/New_Salem': TimeZoneNames(
-      city: 'ນິວ ຊາເລມ, ນອດ ດາໂກຕາ',
+      exemplarCity: 'ນິວ ຊາເລມ, ນອດ ດາໂກຕາ',
     ),
     'America/North_Dakota/Center': TimeZoneNames(
-      city: 'ເຊັນເຈີ, ນອດ ດາໂກຕາ',
+      exemplarCity: 'ເຊັນເຈີ, ນອດ ດາໂກຕາ',
     ),
     'America/Ojinaga': TimeZoneNames(
-      city: 'ໂອຈິນາກາ',
+      exemplarCity: 'ໂອຈິນາກາ',
     ),
     'America/Panama': TimeZoneNames(
-      city: 'ພານາມາ',
+      exemplarCity: 'ພານາມາ',
     ),
     'America/Paramaribo': TimeZoneNames(
-      city: 'ພາຣາມາຣິໂບ',
+      exemplarCity: 'ພາຣາມາຣິໂບ',
     ),
     'America/Phoenix': TimeZoneNames(
-      city: 'ຟິນິກ',
+      exemplarCity: 'ຟິນິກ',
     ),
     'America/Port-au-Prince': TimeZoneNames(
-      city: 'ປໍໂຕແປຣງ',
+      exemplarCity: 'ປໍໂຕແປຣງ',
     ),
     'America/Port_of_Spain': TimeZoneNames(
-      city: 'ພອດອອບສະເປນ',
+      exemplarCity: 'ພອດອອບສະເປນ',
     ),
     'America/Porto_Velho': TimeZoneNames(
-      city: 'ປໍຕູ ເວວຢູ',
+      exemplarCity: 'ປໍຕູ ເວວຢູ',
     ),
     'America/Puerto_Rico': TimeZoneNames(
-      city: 'ເປີໂທຣິໂກ',
+      exemplarCity: 'ເປີໂທຣິໂກ',
     ),
     'America/Punta_Arenas': TimeZoneNames(
-      city: 'ພຸນທາ ອະຣີນາສ໌',
+      exemplarCity: 'ພຸນທາ ອະຣີນາສ໌',
     ),
     'America/Rankin_Inlet': TimeZoneNames(
-      city: 'ແຣນກິນ ອິນເລັດ',
+      exemplarCity: 'ແຣນກິນ ອິນເລັດ',
     ),
     'America/Recife': TimeZoneNames(
-      city: 'ເຣຊິເຟ',
+      exemplarCity: 'ເຣຊິເຟ',
     ),
     'America/Regina': TimeZoneNames(
-      city: 'ເຣຈິນາ',
+      exemplarCity: 'ເຣຈິນາ',
     ),
     'America/Resolute': TimeZoneNames(
-      city: 'ເຣໂຊລຸດ',
+      exemplarCity: 'ເຣໂຊລຸດ',
     ),
     'America/Rio_Branco': TimeZoneNames(
-      city: 'ຣິໂອ ບຣັນໂກ',
+      exemplarCity: 'ຣິໂອ ບຣັນໂກ',
     ),
     'America/Santarem': TimeZoneNames(
-      city: 'ຊັນຕາເຣມ',
+      exemplarCity: 'ຊັນຕາເຣມ',
     ),
     'America/Santiago': TimeZoneNames(
-      city: 'ຊັນຕີອາໂກ',
+      exemplarCity: 'ຊັນຕີອາໂກ',
     ),
     'America/Santo_Domingo': TimeZoneNames(
-      city: 'ຊານໂຕໂດມິນໂກ',
+      exemplarCity: 'ຊານໂຕໂດມິນໂກ',
     ),
     'America/Sao_Paulo': TimeZoneNames(
-      city: 'ເຊົາ ເປົາໂລ',
+      exemplarCity: 'ເຊົາ ເປົາໂລ',
     ),
     'America/Scoresbysund': TimeZoneNames(
-      city: 'ອິໂຕຄໍທົວມິດ',
+      exemplarCity: 'ອິໂຕຄໍທົວມິດ',
     ),
     'America/Sitka': TimeZoneNames(
-      city: 'ຊິດກາ',
+      exemplarCity: 'ຊິດກາ',
     ),
     'America/St_Barthelemy': TimeZoneNames(
-      city: 'ເຊນບາເທເລມີ',
+      exemplarCity: 'ເຊນບາເທເລມີ',
     ),
     'America/St_Johns': TimeZoneNames(
-      city: 'ເຊນ ຈອນ',
+      exemplarCity: 'ເຊນ ຈອນ',
     ),
     'America/St_Kitts': TimeZoneNames(
-      city: 'ເຊນ ຄິດສ໌',
+      exemplarCity: 'ເຊນ ຄິດສ໌',
     ),
     'America/St_Lucia': TimeZoneNames(
-      city: 'ເຊນ ລູເຊຍ',
+      exemplarCity: 'ເຊນ ລູເຊຍ',
     ),
     'America/St_Thomas': TimeZoneNames(
-      city: 'ເຊນ ໂທມັສ',
+      exemplarCity: 'ເຊນ ໂທມັສ',
     ),
     'America/St_Vincent': TimeZoneNames(
-      city: 'ເຊນ ວິນເຊນ',
+      exemplarCity: 'ເຊນ ວິນເຊນ',
     ),
     'America/Swift_Current': TimeZoneNames(
-      city: 'ສະວິຟ ເຄີເຣນ',
+      exemplarCity: 'ສະວິຟ ເຄີເຣນ',
     ),
     'America/Tegucigalpa': TimeZoneNames(
-      city: 'ເຕກູຊີການປາ',
+      exemplarCity: 'ເຕກູຊີການປາ',
     ),
     'America/Thule': TimeZoneNames(
-      city: 'ທູເລ',
+      exemplarCity: 'ທູເລ',
     ),
     'America/Tijuana': TimeZoneNames(
-      city: 'ທີຈົວນາ',
+      exemplarCity: 'ທີຈົວນາ',
     ),
     'America/Toronto': TimeZoneNames(
-      city: 'ໂທຣອນໂຕ',
+      exemplarCity: 'ໂທຣອນໂຕ',
     ),
     'America/Tortola': TimeZoneNames(
-      city: 'ທໍໂຕລາ',
+      exemplarCity: 'ທໍໂຕລາ',
     ),
     'America/Vancouver': TimeZoneNames(
-      city: 'ແວນຄູເວີ',
+      exemplarCity: 'ແວນຄູເວີ',
     ),
     'America/Whitehorse': TimeZoneNames(
-      city: 'ໄວທ໌ຮອສ',
+      exemplarCity: 'ໄວທ໌ຮອສ',
     ),
     'America/Winnipeg': TimeZoneNames(
-      city: 'ວິນນີເພກ',
+      exemplarCity: 'ວິນນີເພກ',
     ),
     'America/Yakutat': TimeZoneNames(
-      city: 'ຢາຄູຕັດ',
+      exemplarCity: 'ຢາຄູຕັດ',
     ),
     'Atlantic/Azores': TimeZoneNames(
-      city: 'ອາຊໍເຣສ',
+      exemplarCity: 'ອາຊໍເຣສ',
     ),
     'Atlantic/Bermuda': TimeZoneNames(
-      city: 'ເບີມິວດາ',
+      exemplarCity: 'ເບີມິວດາ',
     ),
     'Atlantic/Canary': TimeZoneNames(
-      city: 'ຄານາຣີ',
+      exemplarCity: 'ຄານາຣີ',
     ),
     'Atlantic/Cape_Verde': TimeZoneNames(
-      city: 'ເຄບເວີດ',
+      exemplarCity: 'ເຄບເວີດ',
     ),
     'Atlantic/Faeroe': TimeZoneNames(
-      city: 'ແຟໂຣ',
+      exemplarCity: 'ແຟໂຣ',
     ),
     'Atlantic/Madeira': TimeZoneNames(
-      city: 'ມາເດຣາ',
+      exemplarCity: 'ມາເດຣາ',
     ),
     'Atlantic/Reykjavik': TimeZoneNames(
-      city: 'ເຣກຢາວິກ',
+      exemplarCity: 'ເຣກຢາວິກ',
     ),
     'Atlantic/South_Georgia': TimeZoneNames(
-      city: 'ເຊົາຈໍເຈຍ',
+      exemplarCity: 'ເຊົາຈໍເຈຍ',
     ),
     'Atlantic/St_Helena': TimeZoneNames(
-      city: 'ເຊນ ເຮເລນາ',
+      exemplarCity: 'ເຊນ ເຮເລນາ',
     ),
     'Atlantic/Stanley': TimeZoneNames(
-      city: 'ສະແຕນເລ',
+      exemplarCity: 'ສະແຕນເລ',
     ),
     'Europe/Amsterdam': TimeZoneNames(
-      city: 'ອາມສເຕີດຳ',
+      exemplarCity: 'ອາມສເຕີດຳ',
     ),
     'Europe/Andorra': TimeZoneNames(
-      city: 'ອິນດໍຣາ',
+      exemplarCity: 'ອິນດໍຣາ',
     ),
     'Europe/Astrakhan': TimeZoneNames(
-      city: 'ອາສຕຣາຄານ',
+      exemplarCity: 'ອາສຕຣາຄານ',
     ),
     'Europe/Athens': TimeZoneNames(
-      city: 'ເອເທນສ໌',
+      exemplarCity: 'ເອເທນສ໌',
     ),
     'Europe/Belgrade': TimeZoneNames(
-      city: 'ເບວເກຣດ',
+      exemplarCity: 'ເບວເກຣດ',
     ),
     'Europe/Berlin': TimeZoneNames(
-      city: 'ເບີລິນ',
+      exemplarCity: 'ເບີລິນ',
     ),
     'Europe/Bratislava': TimeZoneNames(
-      city: 'ບຣາທິສລາວາ',
+      exemplarCity: 'ບຣາທິສລາວາ',
     ),
     'Europe/Brussels': TimeZoneNames(
-      city: 'ບຣັສເຊວ',
+      exemplarCity: 'ບຣັສເຊວ',
     ),
     'Europe/Bucharest': TimeZoneNames(
-      city: 'ບູຄາເຣສຕ໌',
+      exemplarCity: 'ບູຄາເຣສຕ໌',
     ),
     'Europe/Budapest': TimeZoneNames(
-      city: 'ບູດາເປສຕ໌',
+      exemplarCity: 'ບູດາເປສຕ໌',
     ),
     'Europe/Busingen': TimeZoneNames(
-      city: 'ບັດຊິນເກນ',
+      exemplarCity: 'ບັດຊິນເກນ',
     ),
     'Europe/Chisinau': TimeZoneNames(
-      city: 'ຄີຊີເນົາ',
+      exemplarCity: 'ຄີຊີເນົາ',
     ),
     'Europe/Copenhagen': TimeZoneNames(
-      city: 'ໂຄເປນເຮເກນ',
+      exemplarCity: 'ໂຄເປນເຮເກນ',
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
         daylight: 'ເວ​ລາ​ມາດ​ຕະ​ຖານ​ໄອ​ຣິ​ຊ',
       ),
-      city: 'ດັບບລິນ',
+      exemplarCity: 'ດັບບລິນ',
     ),
     'Europe/Gibraltar': TimeZoneNames(
-      city: 'ກິບຣອລທາ',
+      exemplarCity: 'ກິບຣອລທາ',
     ),
     'Europe/Guernsey': TimeZoneNames(
-      city: 'ເກີນຊີ',
+      exemplarCity: 'ເກີນຊີ',
     ),
     'Europe/Helsinki': TimeZoneNames(
-      city: 'ເຮວຊິນກິ',
+      exemplarCity: 'ເຮວຊິນກິ',
     ),
     'Europe/Isle_of_Man': TimeZoneNames(
-      city: 'ເກາະແມນ',
+      exemplarCity: 'ເກາະແມນ',
     ),
     'Europe/Istanbul': TimeZoneNames(
-      city: 'ອິສຕັນບູລ໌',
+      exemplarCity: 'ອິສຕັນບູລ໌',
     ),
     'Europe/Jersey': TimeZoneNames(
-      city: 'ເຈີຊີ',
+      exemplarCity: 'ເຈີຊີ',
     ),
     'Europe/Kaliningrad': TimeZoneNames(
-      city: 'ຄາລິນິນກຣາດ',
+      exemplarCity: 'ຄາລິນິນກຣາດ',
     ),
     'Europe/Kiev': TimeZoneNames(
-      city: 'ຂຽບ',
+      exemplarCity: 'ຂຽບ',
     ),
     'Europe/Kirov': TimeZoneNames(
-      city: 'ກິໂຣບ',
+      exemplarCity: 'ກິໂຣບ',
     ),
     'Europe/Lisbon': TimeZoneNames(
-      city: 'ລິສບອນ',
+      exemplarCity: 'ລິສບອນ',
     ),
     'Europe/Ljubljana': TimeZoneNames(
-      city: 'ລູບລີຍານາ',
+      exemplarCity: 'ລູບລີຍານາ',
     ),
     'Europe/London': TimeZoneNames(
       long: TimeZoneName(
         daylight: 'ເວ​ລາ​ລະ​ດູ​ຮ້ອນ​ອັງ​ກິດ',
       ),
-      city: 'ລອນດອນ',
+      exemplarCity: 'ລອນດອນ',
     ),
     'Europe/Luxembourg': TimeZoneNames(
-      city: 'ລັກເຊັມເບີກ',
+      exemplarCity: 'ລັກເຊັມເບີກ',
     ),
     'Europe/Madrid': TimeZoneNames(
-      city: 'ມາດຣິດ',
+      exemplarCity: 'ມາດຣິດ',
     ),
     'Europe/Malta': TimeZoneNames(
-      city: 'ມອລຕາ',
+      exemplarCity: 'ມອລຕາ',
     ),
     'Europe/Mariehamn': TimeZoneNames(
-      city: 'ມາຣີແຮມນ໌',
+      exemplarCity: 'ມາຣີແຮມນ໌',
     ),
     'Europe/Minsk': TimeZoneNames(
-      city: 'ມິນສກ໌',
+      exemplarCity: 'ມິນສກ໌',
     ),
     'Europe/Monaco': TimeZoneNames(
-      city: 'ໂມນາໂຄ',
+      exemplarCity: 'ໂມນາໂຄ',
     ),
     'Europe/Moscow': TimeZoneNames(
-      city: 'ມອສໂຄ',
+      exemplarCity: 'ມອສໂຄ',
     ),
     'Europe/Oslo': TimeZoneNames(
-      city: 'ອອສໂລ',
+      exemplarCity: 'ອອສໂລ',
     ),
     'Europe/Paris': TimeZoneNames(
-      city: 'ປາຣີສ',
+      exemplarCity: 'ປາຣີສ',
     ),
     'Europe/Podgorica': TimeZoneNames(
-      city: 'ພອດກໍຣີກາ',
+      exemplarCity: 'ພອດກໍຣີກາ',
     ),
     'Europe/Prague': TimeZoneNames(
-      city: 'ປຣາກ',
+      exemplarCity: 'ປຣາກ',
     ),
     'Europe/Riga': TimeZoneNames(
-      city: 'ຣິກາ',
+      exemplarCity: 'ຣິກາ',
     ),
     'Europe/Rome': TimeZoneNames(
-      city: 'ໂຣມ',
+      exemplarCity: 'ໂຣມ',
     ),
     'Europe/Samara': TimeZoneNames(
-      city: 'ຊາມາຣາ',
+      exemplarCity: 'ຊາມາຣາ',
     ),
     'Europe/San_Marino': TimeZoneNames(
-      city: 'ຊານມາຣີໂນ',
+      exemplarCity: 'ຊານມາຣີໂນ',
     ),
     'Europe/Sarajevo': TimeZoneNames(
-      city: 'ຊາຣາເຢໂວ',
+      exemplarCity: 'ຊາຣາເຢໂວ',
     ),
     'Europe/Saratov': TimeZoneNames(
-      city: 'ຊາຣາທອບ',
+      exemplarCity: 'ຊາຣາທອບ',
     ),
     'Europe/Simferopol': TimeZoneNames(
-      city: 'ຊີມເຟໂລໂປ',
+      exemplarCity: 'ຊີມເຟໂລໂປ',
     ),
     'Europe/Skopje': TimeZoneNames(
-      city: 'ສະໂກເປຍ',
+      exemplarCity: 'ສະໂກເປຍ',
     ),
     'Europe/Sofia': TimeZoneNames(
-      city: 'ໂຊເຟຍ',
+      exemplarCity: 'ໂຊເຟຍ',
     ),
     'Europe/Stockholm': TimeZoneNames(
-      city: 'ສະຕອກໂຮມ',
+      exemplarCity: 'ສະຕອກໂຮມ',
     ),
     'Europe/Tallinn': TimeZoneNames(
-      city: 'ທາລລິນນ໌',
+      exemplarCity: 'ທາລລິນນ໌',
     ),
     'Europe/Tirane': TimeZoneNames(
-      city: 'ທິຣານ',
+      exemplarCity: 'ທິຣານ',
     ),
     'Europe/Ulyanovsk': TimeZoneNames(
-      city: 'ອູລີອານອບສຄ໌',
+      exemplarCity: 'ອູລີອານອບສຄ໌',
     ),
     'Europe/Vaduz': TimeZoneNames(
-      city: 'ວາດາຊ',
+      exemplarCity: 'ວາດາຊ',
     ),
     'Europe/Vatican': TimeZoneNames(
-      city: 'ວາຕິກັນ',
+      exemplarCity: 'ວາຕິກັນ',
     ),
     'Europe/Vienna': TimeZoneNames(
-      city: 'ວຽນນາ',
+      exemplarCity: 'ວຽນນາ',
     ),
     'Europe/Vilnius': TimeZoneNames(
-      city: 'ວິລນິອຸສ',
+      exemplarCity: 'ວິລນິອຸສ',
     ),
     'Europe/Volgograd': TimeZoneNames(
-      city: 'ວອລໂກກຣາດ',
+      exemplarCity: 'ວອລໂກກຣາດ',
     ),
     'Europe/Warsaw': TimeZoneNames(
-      city: 'ວໍຊໍ',
+      exemplarCity: 'ວໍຊໍ',
     ),
     'Europe/Zagreb': TimeZoneNames(
-      city: 'ຊາເກຣບ',
+      exemplarCity: 'ຊາເກຣບ',
     ),
     'Europe/Zurich': TimeZoneNames(
-      city: 'ຊູຣິກ',
+      exemplarCity: 'ຊູຣິກ',
     ),
     'Africa/Abidjan': TimeZoneNames(
-      city: 'ອາບິດແຈນ',
+      exemplarCity: 'ອາບິດແຈນ',
     ),
     'Africa/Accra': TimeZoneNames(
-      city: 'ອັກຄຣາ',
+      exemplarCity: 'ອັກຄຣາ',
     ),
     'Africa/Addis_Ababa': TimeZoneNames(
-      city: 'ແອດດິສ ອະບາບາ',
+      exemplarCity: 'ແອດດິສ ອະບາບາ',
     ),
     'Africa/Algiers': TimeZoneNames(
-      city: 'ແອວເຈຍ',
+      exemplarCity: 'ແອວເຈຍ',
     ),
     'Africa/Asmera': TimeZoneNames(
-      city: 'ອັສມາຣາ',
+      exemplarCity: 'ອັສມາຣາ',
     ),
     'Africa/Bamako': TimeZoneNames(
-      city: 'ບາມາໂກ',
+      exemplarCity: 'ບາມາໂກ',
     ),
     'Africa/Bangui': TimeZoneNames(
-      city: 'ບັງກຸຍ',
+      exemplarCity: 'ບັງກຸຍ',
     ),
     'Africa/Banjul': TimeZoneNames(
-      city: 'ບານຈູ',
+      exemplarCity: 'ບານຈູ',
     ),
     'Africa/Bissau': TimeZoneNames(
-      city: 'ບິສເຊົາ',
+      exemplarCity: 'ບິສເຊົາ',
     ),
     'Africa/Blantyre': TimeZoneNames(
-      city: 'ແບລນໄທຣ໌',
+      exemplarCity: 'ແບລນໄທຣ໌',
     ),
     'Africa/Brazzaville': TimeZoneNames(
-      city: 'ບຣາຊາວິວ',
+      exemplarCity: 'ບຣາຊາວິວ',
     ),
     'Africa/Bujumbura': TimeZoneNames(
-      city: 'ບູຈູມບູຣາ',
+      exemplarCity: 'ບູຈູມບູຣາ',
     ),
     'Africa/Cairo': TimeZoneNames(
-      city: 'ໄຄໂຣ',
+      exemplarCity: 'ໄຄໂຣ',
     ),
     'Africa/Casablanca': TimeZoneNames(
-      city: 'ຄາຊາບລັງກາ',
+      exemplarCity: 'ຄາຊາບລັງກາ',
     ),
     'Africa/Ceuta': TimeZoneNames(
-      city: 'ຊີວຕາ',
+      exemplarCity: 'ຊີວຕາ',
     ),
     'Africa/Conakry': TimeZoneNames(
-      city: 'ໂຄນາຄຣີ',
+      exemplarCity: 'ໂຄນາຄຣີ',
     ),
     'Africa/Dakar': TimeZoneNames(
-      city: 'ດາກາ',
+      exemplarCity: 'ດາກາ',
     ),
     'Africa/Dar_es_Salaam': TimeZoneNames(
-      city: 'ດາເອສສະລາມ',
+      exemplarCity: 'ດາເອສສະລາມ',
     ),
     'Africa/Djibouti': TimeZoneNames(
-      city: 'ຈີບູຕິ',
+      exemplarCity: 'ຈີບູຕິ',
     ),
     'Africa/Douala': TimeZoneNames(
-      city: 'ດູອາລາ',
+      exemplarCity: 'ດູອາລາ',
     ),
     'Africa/El_Aaiun': TimeZoneNames(
-      city: 'ເອວ ອາຢູນ',
+      exemplarCity: 'ເອວ ອາຢູນ',
     ),
     'Africa/Freetown': TimeZoneNames(
-      city: 'ຟຣີທາວ',
+      exemplarCity: 'ຟຣີທາວ',
     ),
     'Africa/Gaborone': TimeZoneNames(
-      city: 'ກາບໍໂຣນ',
+      exemplarCity: 'ກາບໍໂຣນ',
     ),
     'Africa/Harare': TimeZoneNames(
-      city: 'ຮາຣາເຣ',
+      exemplarCity: 'ຮາຣາເຣ',
     ),
     'Africa/Johannesburg': TimeZoneNames(
-      city: 'ໂຈຮັນເນດສເບີກ',
+      exemplarCity: 'ໂຈຮັນເນດສເບີກ',
     ),
     'Africa/Juba': TimeZoneNames(
-      city: 'ຈູບາ',
+      exemplarCity: 'ຈູບາ',
     ),
     'Africa/Kampala': TimeZoneNames(
-      city: 'ຄຳປາລາ',
+      exemplarCity: 'ຄຳປາລາ',
     ),
     'Africa/Khartoum': TimeZoneNames(
-      city: 'ຄາທູມ',
+      exemplarCity: 'ຄາທູມ',
     ),
     'Africa/Kigali': TimeZoneNames(
-      city: 'ຄີກາລີ',
+      exemplarCity: 'ຄີກາລີ',
     ),
     'Africa/Kinshasa': TimeZoneNames(
-      city: 'ກິນຊາຊາ',
+      exemplarCity: 'ກິນຊາຊາ',
     ),
     'Africa/Lagos': TimeZoneNames(
-      city: 'ລາໂກສ',
+      exemplarCity: 'ລາໂກສ',
     ),
     'Africa/Libreville': TimeZoneNames(
-      city: 'ລິເບຼີວິວ',
+      exemplarCity: 'ລິເບຼີວິວ',
     ),
     'Africa/Lome': TimeZoneNames(
-      city: 'ໂລເມ',
+      exemplarCity: 'ໂລເມ',
     ),
     'Africa/Luanda': TimeZoneNames(
-      city: 'ລວນດາ',
+      exemplarCity: 'ລວນດາ',
     ),
     'Africa/Lubumbashi': TimeZoneNames(
-      city: 'ລູບຳບາຊິ',
+      exemplarCity: 'ລູບຳບາຊິ',
     ),
     'Africa/Lusaka': TimeZoneNames(
-      city: 'ລູຊາກາ',
+      exemplarCity: 'ລູຊາກາ',
     ),
     'Africa/Malabo': TimeZoneNames(
-      city: 'ມາລາໂບ',
+      exemplarCity: 'ມາລາໂບ',
     ),
     'Africa/Maputo': TimeZoneNames(
-      city: 'ມາປູໂຕ',
+      exemplarCity: 'ມາປູໂຕ',
     ),
     'Africa/Maseru': TimeZoneNames(
-      city: 'ມາເຊຣູ',
+      exemplarCity: 'ມາເຊຣູ',
     ),
     'Africa/Mbabane': TimeZoneNames(
-      city: 'ອຳບາບາເນ',
+      exemplarCity: 'ອຳບາບາເນ',
     ),
     'Africa/Mogadishu': TimeZoneNames(
-      city: 'ໂມກາດີຊູ',
+      exemplarCity: 'ໂມກາດີຊູ',
     ),
     'Africa/Monrovia': TimeZoneNames(
-      city: 'ມອນໂຣເວຍ',
+      exemplarCity: 'ມອນໂຣເວຍ',
     ),
     'Africa/Nairobi': TimeZoneNames(
-      city: 'ໄນໂຣບີ',
+      exemplarCity: 'ໄນໂຣບີ',
     ),
     'Africa/Ndjamena': TimeZoneNames(
-      city: 'ເອນຈາເມນ່າ',
+      exemplarCity: 'ເອນຈາເມນ່າ',
     ),
     'Africa/Niamey': TimeZoneNames(
-      city: 'ນີອາເມ',
+      exemplarCity: 'ນີອາເມ',
     ),
     'Africa/Nouakchott': TimeZoneNames(
-      city: 'ນູແອກຊອດ',
+      exemplarCity: 'ນູແອກຊອດ',
     ),
     'Africa/Ouagadougou': TimeZoneNames(
-      city: 'ອູກາດູກູ',
+      exemplarCity: 'ອູກາດູກູ',
     ),
     'Africa/Porto-Novo': TimeZoneNames(
-      city: 'ປໍໂຕ-ໂນໂວ',
+      exemplarCity: 'ປໍໂຕ-ໂນໂວ',
     ),
     'Africa/Sao_Tome': TimeZoneNames(
-      city: 'ຊາວໂຕເມ',
+      exemplarCity: 'ຊາວໂຕເມ',
     ),
     'Africa/Tripoli': TimeZoneNames(
-      city: 'ທຣິໂພລິ',
+      exemplarCity: 'ທຣິໂພລິ',
     ),
     'Africa/Tunis': TimeZoneNames(
-      city: 'ຕູນິສ',
+      exemplarCity: 'ຕູນິສ',
     ),
     'Africa/Windhoek': TimeZoneNames(
-      city: 'ວີນຮູດ',
+      exemplarCity: 'ວີນຮູດ',
     ),
     'Asia/Aden': TimeZoneNames(
-      city: 'ເອເດັນ',
+      exemplarCity: 'ເອເດັນ',
     ),
     'Asia/Almaty': TimeZoneNames(
-      city: 'ອໍມາຕີ',
+      exemplarCity: 'ອໍມາຕີ',
     ),
     'Asia/Amman': TimeZoneNames(
-      city: 'ອຳມານ',
+      exemplarCity: 'ອຳມານ',
     ),
     'Asia/Anadyr': TimeZoneNames(
-      city: 'ອານາດີ',
+      exemplarCity: 'ອານາດີ',
     ),
     'Asia/Aqtau': TimeZoneNames(
-      city: 'ອັດຕາອູ',
+      exemplarCity: 'ອັດຕາອູ',
     ),
     'Asia/Aqtobe': TimeZoneNames(
-      city: 'ອັດໂທບີ',
+      exemplarCity: 'ອັດໂທບີ',
     ),
     'Asia/Ashgabat': TimeZoneNames(
-      city: 'ອາດຊ໌ກາບັດ',
+      exemplarCity: 'ອາດຊ໌ກາບັດ',
     ),
     'Asia/Atyrau': TimeZoneNames(
-      city: 'ອັດທີເຣົາ',
+      exemplarCity: 'ອັດທີເຣົາ',
     ),
     'Asia/Baghdad': TimeZoneNames(
-      city: 'ແບກແດດ',
+      exemplarCity: 'ແບກແດດ',
     ),
     'Asia/Bahrain': TimeZoneNames(
-      city: 'ບາເຣນ',
+      exemplarCity: 'ບາເຣນ',
     ),
     'Asia/Baku': TimeZoneNames(
-      city: 'ບາກູ',
+      exemplarCity: 'ບາກູ',
     ),
     'Asia/Bangkok': TimeZoneNames(
-      city: 'ບາງກອກ',
+      exemplarCity: 'ບາງກອກ',
     ),
     'Asia/Barnaul': TimeZoneNames(
-      city: 'ບານົວ',
+      exemplarCity: 'ບານົວ',
     ),
     'Asia/Beirut': TimeZoneNames(
-      city: 'ເບຣຸດ',
+      exemplarCity: 'ເບຣຸດ',
     ),
     'Asia/Bishkek': TimeZoneNames(
-      city: 'ບິດຊ໌ເຄກ',
+      exemplarCity: 'ບິດຊ໌ເຄກ',
     ),
     'Asia/Brunei': TimeZoneNames(
-      city: 'ບຣູໄນ',
+      exemplarCity: 'ບຣູໄນ',
     ),
     'Asia/Calcutta': TimeZoneNames(
-      city: 'ໂກລກາຕາ',
+      exemplarCity: 'ໂກລກາຕາ',
     ),
     'Asia/Chita': TimeZoneNames(
-      city: 'ຊີຕ່າ',
+      exemplarCity: 'ຊີຕ່າ',
     ),
     'Asia/Choibalsan': TimeZoneNames(
-      city: 'ຊອຍບອລຊານ',
+      exemplarCity: 'ຊອຍບອລຊານ',
     ),
     'Asia/Colombo': TimeZoneNames(
-      city: 'ໂຄລຳໂບ',
+      exemplarCity: 'ໂຄລຳໂບ',
     ),
     'Asia/Damascus': TimeZoneNames(
-      city: 'ດາມາສຄັສ',
+      exemplarCity: 'ດາມາສຄັສ',
     ),
     'Asia/Dhaka': TimeZoneNames(
-      city: 'ດາຫ໌ກາ',
+      exemplarCity: 'ດາຫ໌ກາ',
     ),
     'Asia/Dili': TimeZoneNames(
-      city: 'ດີລີ',
+      exemplarCity: 'ດີລີ',
     ),
     'Asia/Dubai': TimeZoneNames(
-      city: 'ດູໄບ',
+      exemplarCity: 'ດູໄບ',
     ),
     'Asia/Dushanbe': TimeZoneNames(
-      city: 'ດູຊານເບ',
+      exemplarCity: 'ດູຊານເບ',
     ),
     'Asia/Famagusta': TimeZoneNames(
-      city: 'ຟາມາກັສທາ',
+      exemplarCity: 'ຟາມາກັສທາ',
     ),
     'Asia/Gaza': TimeZoneNames(
-      city: 'ກາຊາ',
+      exemplarCity: 'ກາຊາ',
     ),
     'Asia/Hebron': TimeZoneNames(
-      city: 'ເຮບຣອນ',
+      exemplarCity: 'ເຮບຣອນ',
     ),
     'Asia/Hong_Kong': TimeZoneNames(
-      city: 'ຮ່ອງກົງ',
+      exemplarCity: 'ຮ່ອງກົງ',
     ),
     'Asia/Hovd': TimeZoneNames(
-      city: 'ຮອບ',
+      exemplarCity: 'ຮອບ',
     ),
     'Asia/Irkutsk': TimeZoneNames(
-      city: 'ອີຄຸສຄ໌',
+      exemplarCity: 'ອີຄຸສຄ໌',
     ),
     'Asia/Jakarta': TimeZoneNames(
-      city: 'ຈາກາຕາ',
+      exemplarCity: 'ຈາກາຕາ',
     ),
     'Asia/Jayapura': TimeZoneNames(
-      city: 'ຈາຢາປູຣະ',
+      exemplarCity: 'ຈາຢາປູຣະ',
     ),
     'Asia/Jerusalem': TimeZoneNames(
-      city: 'ເຢຣູຊາເລມ',
+      exemplarCity: 'ເຢຣູຊາເລມ',
     ),
     'Asia/Kabul': TimeZoneNames(
-      city: 'ຄາບູ',
+      exemplarCity: 'ຄາບູ',
     ),
     'Asia/Kamchatka': TimeZoneNames(
-      city: 'ຄາມຊາດກາ',
+      exemplarCity: 'ຄາມຊາດກາ',
     ),
     'Asia/Karachi': TimeZoneNames(
-      city: 'ກາຣາຈີ',
+      exemplarCity: 'ກາຣາຈີ',
     ),
     'Asia/Katmandu': TimeZoneNames(
-      city: 'ຄັດມັນດູ',
+      exemplarCity: 'ຄັດມັນດູ',
     ),
     'Asia/Khandyga': TimeZoneNames(
-      city: 'ແຄນດີກາ',
+      exemplarCity: 'ແຄນດີກາ',
     ),
     'Asia/Krasnoyarsk': TimeZoneNames(
-      city: 'ຄຣັສໂນຢາສຄ໌',
+      exemplarCity: 'ຄຣັສໂນຢາສຄ໌',
     ),
     'Asia/Kuala_Lumpur': TimeZoneNames(
-      city: 'ກົວລາລຳເປີ',
+      exemplarCity: 'ກົວລາລຳເປີ',
     ),
     'Asia/Kuching': TimeZoneNames(
-      city: 'ກູຊີງ',
+      exemplarCity: 'ກູຊີງ',
     ),
     'Asia/Kuwait': TimeZoneNames(
-      city: 'ຄູເວດ',
+      exemplarCity: 'ຄູເວດ',
     ),
     'Asia/Macau': TimeZoneNames(
-      city: 'ມາເກົາ',
+      exemplarCity: 'ມາເກົາ',
     ),
     'Asia/Magadan': TimeZoneNames(
-      city: 'ມາກາແດນ',
+      exemplarCity: 'ມາກາແດນ',
     ),
     'Asia/Makassar': TimeZoneNames(
-      city: 'ມາກາສຊາ',
+      exemplarCity: 'ມາກາສຊາ',
     ),
     'Asia/Manila': TimeZoneNames(
-      city: 'ມານີລາ',
+      exemplarCity: 'ມານີລາ',
     ),
     'Asia/Muscat': TimeZoneNames(
-      city: 'ມາສຄັດ',
+      exemplarCity: 'ມາສຄັດ',
     ),
     'Asia/Nicosia': TimeZoneNames(
-      city: 'ນິໂຄເຊຍ',
+      exemplarCity: 'ນິໂຄເຊຍ',
     ),
     'Asia/Novokuznetsk': TimeZoneNames(
-      city: 'ໂນໂວຄຸສເນັດ',
+      exemplarCity: 'ໂນໂວຄຸສເນັດ',
     ),
     'Asia/Novosibirsk': TimeZoneNames(
-      city: 'ໂນໂວຊີບີສຄ໌',
+      exemplarCity: 'ໂນໂວຊີບີສຄ໌',
     ),
     'Asia/Omsk': TimeZoneNames(
-      city: 'ອອມສຄ໌',
+      exemplarCity: 'ອອມສຄ໌',
     ),
     'Asia/Oral': TimeZoneNames(
-      city: 'ອໍຣໍ',
+      exemplarCity: 'ອໍຣໍ',
     ),
     'Asia/Phnom_Penh': TimeZoneNames(
-      city: 'ພະນົມເປັນ',
+      exemplarCity: 'ພະນົມເປັນ',
     ),
     'Asia/Pontianak': TimeZoneNames(
-      city: 'ພອນເທຍນັກ',
+      exemplarCity: 'ພອນເທຍນັກ',
     ),
     'Asia/Pyongyang': TimeZoneNames(
-      city: 'ປຽງຢາງ',
+      exemplarCity: 'ປຽງຢາງ',
     ),
     'Asia/Qatar': TimeZoneNames(
-      city: 'ກາຕາຣ໌',
+      exemplarCity: 'ກາຕາຣ໌',
     ),
     'Asia/Qostanay': TimeZoneNames(
-      city: 'ຄອສຕາເນ',
+      exemplarCity: 'ຄອສຕາເນ',
     ),
     'Asia/Qyzylorda': TimeZoneNames(
-      city: 'ໄຄຊີລໍດາ',
+      exemplarCity: 'ໄຄຊີລໍດາ',
     ),
     'Asia/Rangoon': TimeZoneNames(
-      city: 'ຢາງກອນ',
+      exemplarCity: 'ຢາງກອນ',
     ),
     'Asia/Riyadh': TimeZoneNames(
-      city: 'ຣີຢາດ',
+      exemplarCity: 'ຣີຢາດ',
     ),
     'Asia/Saigon': TimeZoneNames(
-      city: 'ໂຮຈິມິນ',
+      exemplarCity: 'ໂຮຈິມິນ',
     ),
     'Asia/Sakhalin': TimeZoneNames(
-      city: 'ຊາຄາລິນ',
+      exemplarCity: 'ຊາຄາລິນ',
     ),
     'Asia/Samarkand': TimeZoneNames(
-      city: 'ຊາມາແຄນ',
+      exemplarCity: 'ຊາມາແຄນ',
     ),
     'Asia/Seoul': TimeZoneNames(
-      city: 'ໂຊລ໌',
+      exemplarCity: 'ໂຊລ໌',
     ),
     'Asia/Shanghai': TimeZoneNames(
-      city: 'ຊ່ຽງໄຮ້',
+      exemplarCity: 'ຊ່ຽງໄຮ້',
     ),
     'Asia/Singapore': TimeZoneNames(
-      city: 'ສິງກະໂປ',
+      exemplarCity: 'ສິງກະໂປ',
     ),
     'Asia/Srednekolymsk': TimeZoneNames(
-      city: 'ສຣິລເນັກໂກລີດ',
+      exemplarCity: 'ສຣິລເນັກໂກລີດ',
     ),
     'Asia/Taipei': TimeZoneNames(
-      city: 'ໄທເປ',
+      exemplarCity: 'ໄທເປ',
     ),
     'Asia/Tashkent': TimeZoneNames(
-      city: 'ທາດສ໌ເຄນ',
+      exemplarCity: 'ທາດສ໌ເຄນ',
     ),
     'Asia/Tbilisi': TimeZoneNames(
-      city: 'ທິບີລີຊີ',
+      exemplarCity: 'ທິບີລີຊີ',
     ),
     'Asia/Tehran': TimeZoneNames(
-      city: 'ເຕຣານ',
+      exemplarCity: 'ເຕຣານ',
     ),
     'Asia/Thimphu': TimeZoneNames(
-      city: 'ທິມພູ',
+      exemplarCity: 'ທິມພູ',
     ),
     'Asia/Tokyo': TimeZoneNames(
-      city: 'ໂຕກຽວ',
+      exemplarCity: 'ໂຕກຽວ',
     ),
     'Asia/Tomsk': TimeZoneNames(
-      city: 'ທອມສກ໌',
+      exemplarCity: 'ທອມສກ໌',
     ),
     'Asia/Ulaanbaatar': TimeZoneNames(
-      city: 'ອູລານບາຕາຣ໌',
+      exemplarCity: 'ອູລານບາຕາຣ໌',
     ),
     'Asia/Urumqi': TimeZoneNames(
-      city: 'ອູຣຸມຊີ',
+      exemplarCity: 'ອູຣຸມຊີ',
     ),
     'Asia/Ust-Nera': TimeZoneNames(
-      city: 'ອຸສ ເນຣາ',
+      exemplarCity: 'ອຸສ ເນຣາ',
     ),
     'Asia/Vientiane': TimeZoneNames(
-      city: 'ວຽງຈັນ',
+      exemplarCity: 'ວຽງຈັນ',
     ),
     'Asia/Vladivostok': TimeZoneNames(
-      city: 'ວີລາດິໂວສຕອກ',
+      exemplarCity: 'ວີລາດິໂວສຕອກ',
     ),
     'Asia/Yakutsk': TimeZoneNames(
-      city: 'ຢາຄຸທຊ໌',
+      exemplarCity: 'ຢາຄຸທຊ໌',
     ),
     'Asia/Yekaterinburg': TimeZoneNames(
-      city: 'ເຢຄາເຕີຣິນເບີກ',
+      exemplarCity: 'ເຢຄາເຕີຣິນເບີກ',
     ),
     'Asia/Yerevan': TimeZoneNames(
-      city: 'ເຍເຣວານ',
+      exemplarCity: 'ເຍເຣວານ',
     ),
     'Indian/Antananarivo': TimeZoneNames(
-      city: 'ອັນຕານານາຣິໂວ',
+      exemplarCity: 'ອັນຕານານາຣິໂວ',
     ),
     'Indian/Chagos': TimeZoneNames(
-      city: 'ຊາໂກສ',
+      exemplarCity: 'ຊາໂກສ',
     ),
     'Indian/Christmas': TimeZoneNames(
-      city: 'ຄຣິດສະມາດ',
+      exemplarCity: 'ຄຣິດສະມາດ',
     ),
     'Indian/Cocos': TimeZoneNames(
-      city: 'ໂຄໂຄສ',
+      exemplarCity: 'ໂຄໂຄສ',
     ),
     'Indian/Comoro': TimeZoneNames(
-      city: 'ໂຄໂມໂຣ',
+      exemplarCity: 'ໂຄໂມໂຣ',
     ),
     'Indian/Kerguelen': TimeZoneNames(
-      city: 'ແກເກີເລນ',
+      exemplarCity: 'ແກເກີເລນ',
     ),
     'Indian/Mahe': TimeZoneNames(
-      city: 'ມາເຮ',
+      exemplarCity: 'ມາເຮ',
     ),
     'Indian/Maldives': TimeZoneNames(
-      city: 'ມັລດີຟ',
+      exemplarCity: 'ມັລດີຟ',
     ),
     'Indian/Mauritius': TimeZoneNames(
-      city: 'ເມົາຣິທຽສ',
+      exemplarCity: 'ເມົາຣິທຽສ',
     ),
     'Indian/Mayotte': TimeZoneNames(
-      city: 'ມາຢັອດເຕ',
+      exemplarCity: 'ມາຢັອດເຕ',
     ),
     'Indian/Reunion': TimeZoneNames(
-      city: 'ເຣອູນິຢົງ',
+      exemplarCity: 'ເຣອູນິຢົງ',
     ),
     'Australia/Adelaide': TimeZoneNames(
-      city: 'ເອດີແລດ',
+      exemplarCity: 'ເອດີແລດ',
     ),
     'Australia/Brisbane': TimeZoneNames(
-      city: 'ບຣິສເບນ',
+      exemplarCity: 'ບຣິສເບນ',
     ),
     'Australia/Broken_Hill': TimeZoneNames(
-      city: 'ໂບຣກເຄນ ຮິວ',
+      exemplarCity: 'ໂບຣກເຄນ ຮິວ',
     ),
     'Australia/Darwin': TimeZoneNames(
-      city: 'ດາວິນ',
+      exemplarCity: 'ດາວິນ',
     ),
     'Australia/Eucla': TimeZoneNames(
-      city: 'ຢູຄລາ',
+      exemplarCity: 'ຢູຄລາ',
     ),
     'Australia/Hobart': TimeZoneNames(
-      city: 'ໂຮບາດ',
+      exemplarCity: 'ໂຮບາດ',
     ),
     'Australia/Lindeman': TimeZoneNames(
-      city: 'ລິນດີແມນ',
+      exemplarCity: 'ລິນດີແມນ',
     ),
     'Australia/Lord_Howe': TimeZoneNames(
-      city: 'ໂລດໂຮວີ',
+      exemplarCity: 'ໂລດໂຮວີ',
     ),
     'Australia/Melbourne': TimeZoneNames(
-      city: 'ເມວເບິນ',
+      exemplarCity: 'ເມວເບິນ',
     ),
     'Australia/Perth': TimeZoneNames(
-      city: 'ເພີດ',
+      exemplarCity: 'ເພີດ',
     ),
     'Australia/Sydney': TimeZoneNames(
-      city: 'ຊິດນີ',
+      exemplarCity: 'ຊິດນີ',
     ),
     'Pacific/Apia': TimeZoneNames(
-      city: 'ເອປີອາ',
+      exemplarCity: 'ເອປີອາ',
     ),
     'Pacific/Auckland': TimeZoneNames(
-      city: 'ອັກແລນ',
+      exemplarCity: 'ອັກແລນ',
     ),
     'Pacific/Bougainville': TimeZoneNames(
-      city: 'ເວລາຕາມເຂດບູນກຽນວິວ',
+      exemplarCity: 'ເວລາຕາມເຂດບູນກຽນວິວ',
     ),
     'Pacific/Chatham': TimeZoneNames(
-      city: 'ແຊແທມ',
+      exemplarCity: 'ແຊແທມ',
     ),
     'Pacific/Easter': TimeZoneNames(
-      city: 'ເອສເຕີ',
+      exemplarCity: 'ເອສເຕີ',
     ),
     'Pacific/Efate': TimeZoneNames(
-      city: 'ເອຟາເຕ',
+      exemplarCity: 'ເອຟາເຕ',
     ),
     'Pacific/Enderbury': TimeZoneNames(
-      city: 'ເອັນເດີເບີລີ',
+      exemplarCity: 'ເອັນເດີເບີລີ',
     ),
     'Pacific/Fakaofo': TimeZoneNames(
-      city: 'ຟາກາວໂຟ',
+      exemplarCity: 'ຟາກາວໂຟ',
     ),
     'Pacific/Fiji': TimeZoneNames(
-      city: 'ຟູຈິ',
+      exemplarCity: 'ຟູຈິ',
     ),
     'Pacific/Funafuti': TimeZoneNames(
-      city: 'ຟູນະຟູຕິ',
+      exemplarCity: 'ຟູນະຟູຕິ',
     ),
     'Pacific/Galapagos': TimeZoneNames(
-      city: 'ກາລາປາກອສ',
+      exemplarCity: 'ກາລາປາກອສ',
     ),
     'Pacific/Gambier': TimeZoneNames(
-      city: 'ແກມເບຍ',
+      exemplarCity: 'ແກມເບຍ',
     ),
     'Pacific/Guadalcanal': TimeZoneNames(
-      city: 'ກົວດັລຄະແນລ',
+      exemplarCity: 'ກົວດັລຄະແນລ',
     ),
     'Pacific/Guam': TimeZoneNames(
-      city: 'ກວມ',
+      exemplarCity: 'ກວມ',
     ),
     'Pacific/Honolulu': TimeZoneNames(
-      city: 'ໂຮໂນລູລູ',
+      exemplarCity: 'ໂຮໂນລູລູ',
     ),
     'Pacific/Kanton': TimeZoneNames(
-      city: 'ແຄນຕອນ',
+      exemplarCity: 'ແຄນຕອນ',
     ),
     'Pacific/Kiritimati': TimeZoneNames(
-      city: 'ຄີຣິທີມາຕີ',
+      exemplarCity: 'ຄີຣິທີມາຕີ',
     ),
     'Pacific/Kosrae': TimeZoneNames(
-      city: 'ຄໍສແຣ',
+      exemplarCity: 'ຄໍສແຣ',
     ),
     'Pacific/Kwajalein': TimeZoneNames(
-      city: 'ຄວາຈາເລນ',
+      exemplarCity: 'ຄວາຈາເລນ',
     ),
     'Pacific/Majuro': TimeZoneNames(
-      city: 'ມາຈູໂຣ',
+      exemplarCity: 'ມາຈູໂຣ',
     ),
     'Pacific/Marquesas': TimeZoneNames(
-      city: 'ມາຄິວຊາສ',
+      exemplarCity: 'ມາຄິວຊາສ',
     ),
     'Pacific/Midway': TimeZoneNames(
-      city: 'ມິດເວ',
+      exemplarCity: 'ມິດເວ',
     ),
     'Pacific/Nauru': TimeZoneNames(
-      city: 'ນາອູຣູ',
+      exemplarCity: 'ນາອູຣູ',
     ),
     'Pacific/Niue': TimeZoneNames(
-      city: 'ນີອູເອ',
+      exemplarCity: 'ນີອູເອ',
     ),
     'Pacific/Norfolk': TimeZoneNames(
-      city: 'ນໍຟອລ໌ກ',
+      exemplarCity: 'ນໍຟອລ໌ກ',
     ),
     'Pacific/Noumea': TimeZoneNames(
-      city: 'ນູເມອາ',
+      exemplarCity: 'ນູເມອາ',
     ),
     'Pacific/Pago_Pago': TimeZoneNames(
-      city: 'ປາໂກປາໂກ',
+      exemplarCity: 'ປາໂກປາໂກ',
     ),
     'Pacific/Palau': TimeZoneNames(
-      city: 'ປາເລົາ',
+      exemplarCity: 'ປາເລົາ',
     ),
     'Pacific/Pitcairn': TimeZoneNames(
-      city: 'ພິດແຄນ',
+      exemplarCity: 'ພິດແຄນ',
     ),
     'Pacific/Ponape': TimeZoneNames(
-      city: 'ປົນເປີຍ',
+      exemplarCity: 'ປົນເປີຍ',
     ),
     'Pacific/Port_Moresby': TimeZoneNames(
-      city: 'ພອດ ມໍເຣສບີ',
+      exemplarCity: 'ພອດ ມໍເຣສບີ',
     ),
     'Pacific/Rarotonga': TimeZoneNames(
-      city: 'ຣາໂຣຕອງກາ',
+      exemplarCity: 'ຣາໂຣຕອງກາ',
     ),
     'Pacific/Saipan': TimeZoneNames(
-      city: 'ໄຊປານ',
+      exemplarCity: 'ໄຊປານ',
     ),
     'Pacific/Tahiti': TimeZoneNames(
-      city: 'ທາຮີຕິ',
+      exemplarCity: 'ທາຮີຕິ',
     ),
     'Pacific/Tarawa': TimeZoneNames(
-      city: 'ຕາຣາວາ',
+      exemplarCity: 'ຕາຣາວາ',
     ),
     'Pacific/Tongatapu': TimeZoneNames(
-      city: 'ຕອງກາຕາປູ',
+      exemplarCity: 'ຕອງກາຕາປູ',
     ),
     'Pacific/Truk': TimeZoneNames(
-      city: 'ຈັກ',
+      exemplarCity: 'ຈັກ',
     ),
     'Pacific/Wake': TimeZoneNames(
-      city: 'ເວກ',
+      exemplarCity: 'ເວກ',
     ),
     'Pacific/Wallis': TimeZoneNames(
-      city: 'ວາລິດ',
+      exemplarCity: 'ວາລິດ',
     ),
     'Arctic/Longyearbyen': TimeZoneNames(
-      city: 'ລອງເຢຍບຽນ',
+      exemplarCity: 'ລອງເຢຍບຽນ',
     ),
     'Antarctica/Casey': TimeZoneNames(
-      city: 'ເຄຊີ',
+      exemplarCity: 'ເຄຊີ',
     ),
     'Antarctica/Davis': TimeZoneNames(
-      city: 'ດາວີສ',
+      exemplarCity: 'ດາວີສ',
     ),
     'Antarctica/DumontDUrville': TimeZoneNames(
-      city: 'ດູມອນດີຍູວີວສ໌',
+      exemplarCity: 'ດູມອນດີຍູວີວສ໌',
     ),
     'Antarctica/Macquarie': TimeZoneNames(
-      city: 'ແມັກຄົວຣີ',
+      exemplarCity: 'ແມັກຄົວຣີ',
     ),
     'Antarctica/Mawson': TimeZoneNames(
-      city: 'ເມົາຊັນ',
+      exemplarCity: 'ເມົາຊັນ',
     ),
     'Antarctica/McMurdo': TimeZoneNames(
-      city: 'ແມັກມົວໂດ',
+      exemplarCity: 'ແມັກມົວໂດ',
     ),
     'Antarctica/Palmer': TimeZoneNames(
-      city: 'ພາມເມີ',
+      exemplarCity: 'ພາມເມີ',
     ),
     'Antarctica/Rothera': TimeZoneNames(
-      city: 'ໂຣເທຣາ',
+      exemplarCity: 'ໂຣເທຣາ',
     ),
     'Antarctica/Syowa': TimeZoneNames(
-      city: 'ເຊຍວາ',
+      exemplarCity: 'ເຊຍວາ',
     ),
     'Antarctica/Troll': TimeZoneNames(
-      city: 'ໂທຣລ໌',
+      exemplarCity: 'ໂທຣລ໌',
     ),
     'Antarctica/Vostok': TimeZoneNames(
-      city: 'ວໍສະຕອກ',
+      exemplarCity: 'ວໍສະຕອກ',
     ),
     'Etc/UTC': TimeZoneNames(
       long: TimeZoneName(
@@ -10717,7 +10717,7 @@ class TimeZonesLo extends TimeZones {
       ),
     ),
     'Etc/Unknown': TimeZoneNames(
-      city: 'ບໍ່ຮູ້ຊື່ເມືອງ',
+      exemplarCity: 'ບໍ່ຮູ້ຊື່ເມືອງ',
     ),
   }, (key) => key.toLowerCase());
 

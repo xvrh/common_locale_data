@@ -8549,325 +8549,325 @@ class TimeZonesYoBJ extends TimeZones {
   @override
   final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
     'America/Adak': TimeZoneNames(
-      city: 'ìlú Adákì',
+      exemplarCity: 'ìlú Adákì',
     ),
     'America/Anchorage': TimeZoneNames(
-      city: 'ìlú Ankɔ́réèjì',
+      exemplarCity: 'ìlú Ankɔ́réèjì',
     ),
     'America/Anguilla': TimeZoneNames(
-      city: 'ìlú Angúílà',
+      exemplarCity: 'ìlú Angúílà',
     ),
     'America/Antigua': TimeZoneNames(
-      city: 'ìlú Antígùà',
+      exemplarCity: 'ìlú Antígùà',
     ),
     'America/Aruba': TimeZoneNames(
-      city: 'ìlú Arúbá',
+      exemplarCity: 'ìlú Arúbá',
     ),
     'America/Asuncion': TimeZoneNames(
-      city: 'Asunción',
+      exemplarCity: 'Asunción',
     ),
     'America/Bahia_Banderas': TimeZoneNames(
-      city: 'ìlú Báhì Bándɛ́rásì',
+      exemplarCity: 'ìlú Báhì Bándɛ́rásì',
     ),
     'America/Barbados': TimeZoneNames(
-      city: 'ìlú Bábádɔ́ɔ̀sì',
+      exemplarCity: 'ìlú Bábádɔ́ɔ̀sì',
     ),
     'America/Belize': TimeZoneNames(
-      city: 'ìlú Bɛ̀líìsì',
+      exemplarCity: 'ìlú Bɛ̀líìsì',
     ),
     'America/Blanc-Sablon': TimeZoneNames(
-      city: 'ìlú Blank Sabulɔ́ɔ̀nì',
+      exemplarCity: 'ìlú Blank Sabulɔ́ɔ̀nì',
     ),
     'America/Boise': TimeZoneNames(
-      city: 'ìlú Bɔ́isè',
+      exemplarCity: 'ìlú Bɔ́isè',
     ),
     'America/Cambridge_Bay': TimeZoneNames(
-      city: 'ìlú òkun kambíríìjì',
+      exemplarCity: 'ìlú òkun kambíríìjì',
     ),
     'America/Cancun': TimeZoneNames(
-      city: 'ìlú Kancun',
+      exemplarCity: 'ìlú Kancun',
     ),
     'America/Cayman': TimeZoneNames(
-      city: 'ilú Kayman',
+      exemplarCity: 'ilú Kayman',
     ),
     'America/Chicago': TimeZoneNames(
-      city: 'ìlú Chicago',
+      exemplarCity: 'ìlú Chicago',
     ),
     'America/Chihuahua': TimeZoneNames(
-      city: 'ìlú Shihuahua',
+      exemplarCity: 'ìlú Shihuahua',
     ),
     'America/Ciudad_Juarez': TimeZoneNames(
-      city: 'Ciudad Juárez',
+      exemplarCity: 'Ciudad Juárez',
     ),
     'America/Coral_Harbour': TimeZoneNames(
-      city: 'ìlú àtikɔkàn',
+      exemplarCity: 'ìlú àtikɔkàn',
     ),
     'America/Costa_Rica': TimeZoneNames(
-      city: 'ìlú Kosta Ríkà',
+      exemplarCity: 'ìlú Kosta Ríkà',
     ),
     'America/Creston': TimeZoneNames(
-      city: 'ìlú Kírɛstɔ́ɔ̀nù',
+      exemplarCity: 'ìlú Kírɛstɔ́ɔ̀nù',
     ),
     'America/Curacao': TimeZoneNames(
-      city: 'ìlú Kurashao',
+      exemplarCity: 'ìlú Kurashao',
     ),
     'America/Danmarkshavn': TimeZoneNames(
-      city: 'ìlú Banmarkshan',
+      exemplarCity: 'ìlú Banmarkshan',
     ),
     'America/Dawson': TimeZoneNames(
-      city: 'ìlú Dawson',
+      exemplarCity: 'ìlú Dawson',
     ),
     'America/Dawson_Creek': TimeZoneNames(
-      city: 'ìlú Dawson Creek',
+      exemplarCity: 'ìlú Dawson Creek',
     ),
     'America/Denver': TimeZoneNames(
-      city: 'ìlú Denver',
+      exemplarCity: 'ìlú Denver',
     ),
     'America/Detroit': TimeZoneNames(
-      city: 'ìlú Detroit',
+      exemplarCity: 'ìlú Detroit',
     ),
     'America/Dominica': TimeZoneNames(
-      city: 'ìlú Dominika',
+      exemplarCity: 'ìlú Dominika',
     ),
     'America/Edmonton': TimeZoneNames(
-      city: 'ìlú Edmonton',
+      exemplarCity: 'ìlú Edmonton',
     ),
     'America/El_Salvador': TimeZoneNames(
-      city: 'ìlú El Savador',
+      exemplarCity: 'ìlú El Savador',
     ),
     'America/Fort_Nelson': TimeZoneNames(
-      city: 'ìlú Fort Nelson',
+      exemplarCity: 'ìlú Fort Nelson',
     ),
     'America/Glace_Bay': TimeZoneNames(
-      city: 'ìlú omi Glace',
+      exemplarCity: 'ìlú omi Glace',
     ),
     'America/Godthab': TimeZoneNames(
-      city: 'ìlú Nuuk',
+      exemplarCity: 'ìlú Nuuk',
     ),
     'America/Goose_Bay': TimeZoneNames(
-      city: 'ìlú omi Goosù',
+      exemplarCity: 'ìlú omi Goosù',
     ),
     'America/Grand_Turk': TimeZoneNames(
-      city: 'ìlú Grand Turk',
+      exemplarCity: 'ìlú Grand Turk',
     ),
     'America/Grenada': TimeZoneNames(
-      city: 'ìlú Grenada',
+      exemplarCity: 'ìlú Grenada',
     ),
     'America/Guadeloupe': TimeZoneNames(
-      city: 'ìlú Guadeloupe',
+      exemplarCity: 'ìlú Guadeloupe',
     ),
     'America/Guatemala': TimeZoneNames(
-      city: 'ìlú Guatemala',
+      exemplarCity: 'ìlú Guatemala',
     ),
     'America/Halifax': TimeZoneNames(
-      city: 'ìlú Halifásì',
+      exemplarCity: 'ìlú Halifásì',
     ),
     'America/Havana': TimeZoneNames(
-      city: 'ìlú Havana',
+      exemplarCity: 'ìlú Havana',
     ),
     'America/Hermosillo': TimeZoneNames(
-      city: 'ìlú Hermosilo',
+      exemplarCity: 'ìlú Hermosilo',
     ),
     'America/Indiana/Vincennes': TimeZoneNames(
-      city: 'ìlú Vincennes ní Indiana',
+      exemplarCity: 'ìlú Vincennes ní Indiana',
     ),
     'America/Indiana/Petersburg': TimeZoneNames(
-      city: 'ìlú Petersburg',
+      exemplarCity: 'ìlú Petersburg',
     ),
     'America/Indiana/Tell_City': TimeZoneNames(
-      city: 'ìlú Tell City',
+      exemplarCity: 'ìlú Tell City',
     ),
     'America/Indiana/Knox': TimeZoneNames(
-      city: 'ìlú nɔ́sì',
+      exemplarCity: 'ìlú nɔ́sì',
     ),
     'America/Indiana/Winamac': TimeZoneNames(
-      city: 'ìlú Winamak ní Indiana',
+      exemplarCity: 'ìlú Winamak ní Indiana',
     ),
     'America/Indiana/Marengo': TimeZoneNames(
-      city: 'ìlú Marɛ́ngo',
+      exemplarCity: 'ìlú Marɛ́ngo',
     ),
     'America/Indiana/Vevay': TimeZoneNames(
-      city: 'ìlú Vevay',
+      exemplarCity: 'ìlú Vevay',
     ),
     'America/Indianapolis': TimeZoneNames(
-      city: 'ìlú Indianapolis',
+      exemplarCity: 'ìlú Indianapolis',
     ),
     'America/Inuvik': TimeZoneNames(
-      city: 'ìlú Inuvik',
+      exemplarCity: 'ìlú Inuvik',
     ),
     'America/Iqaluit': TimeZoneNames(
-      city: 'ìlú Iqaluit',
+      exemplarCity: 'ìlú Iqaluit',
     ),
     'America/Jamaica': TimeZoneNames(
-      city: 'ìlú Jamaikà',
+      exemplarCity: 'ìlú Jamaikà',
     ),
     'America/Juneau': TimeZoneNames(
-      city: 'ìlú Junu',
+      exemplarCity: 'ìlú Junu',
     ),
     'America/Kentucky/Monticello': TimeZoneNames(
-      city: 'ìlú Montisɛ́lò',
+      exemplarCity: 'ìlú Montisɛ́lò',
     ),
     'America/Kralendijk': TimeZoneNames(
-      city: 'ìlú Kíralɛ́ndáikì',
+      exemplarCity: 'ìlú Kíralɛ́ndáikì',
     ),
     'America/Los_Angeles': TimeZoneNames(
-      city: 'ìlú Los Angeles',
+      exemplarCity: 'ìlú Los Angeles',
     ),
     'America/Louisville': TimeZoneNames(
-      city: 'ìlú Lúífíìlì',
+      exemplarCity: 'ìlú Lúífíìlì',
     ),
     'America/Lower_Princes': TimeZoneNames(
-      city: 'ìlú Lower Prince’s Quarter',
+      exemplarCity: 'ìlú Lower Prince’s Quarter',
     ),
     'America/Managua': TimeZoneNames(
-      city: 'ìlú Managua',
+      exemplarCity: 'ìlú Managua',
     ),
     'America/Marigot': TimeZoneNames(
-      city: 'ìlú Marigɔ́ɔ̀tì',
+      exemplarCity: 'ìlú Marigɔ́ɔ̀tì',
     ),
     'America/Martinique': TimeZoneNames(
-      city: 'ìlú Mátíníkì',
+      exemplarCity: 'ìlú Mátíníkì',
     ),
     'America/Matamoros': TimeZoneNames(
-      city: 'ìlú Matamorosì',
+      exemplarCity: 'ìlú Matamorosì',
     ),
     'America/Mazatlan': TimeZoneNames(
-      city: 'ìlú Masatiani',
+      exemplarCity: 'ìlú Masatiani',
     ),
     'America/Menominee': TimeZoneNames(
-      city: 'ìlú Menominì',
+      exemplarCity: 'ìlú Menominì',
     ),
     'America/Merida': TimeZoneNames(
-      city: 'ìlú Merida',
+      exemplarCity: 'ìlú Merida',
     ),
     'America/Metlakatla': TimeZoneNames(
-      city: 'ìlú Metilakatila',
+      exemplarCity: 'ìlú Metilakatila',
     ),
     'America/Mexico_City': TimeZoneNames(
-      city: 'ìlú Mɛ́síkò',
+      exemplarCity: 'ìlú Mɛ́síkò',
     ),
     'America/Miquelon': TimeZoneNames(
-      city: 'ìlú Mikulɔ́nì',
+      exemplarCity: 'ìlú Mikulɔ́nì',
     ),
     'America/Moncton': TimeZoneNames(
-      city: 'ìlú Montoni',
+      exemplarCity: 'ìlú Montoni',
     ),
     'America/Monterrey': TimeZoneNames(
-      city: 'ìlú Monteri',
+      exemplarCity: 'ìlú Monteri',
     ),
     'America/Montserrat': TimeZoneNames(
-      city: 'ìlú Monseratì',
+      exemplarCity: 'ìlú Monseratì',
     ),
     'America/Nassau': TimeZoneNames(
-      city: 'ìlú Nasaò',
+      exemplarCity: 'ìlú Nasaò',
     ),
     'America/New_York': TimeZoneNames(
-      city: 'ìlú New York',
+      exemplarCity: 'ìlú New York',
     ),
     'America/Nome': TimeZoneNames(
-      city: 'ìlú Nomi',
+      exemplarCity: 'ìlú Nomi',
     ),
     'America/North_Dakota/Beulah': TimeZoneNames(
-      city: 'ìlú Beulà ní North Dakota',
+      exemplarCity: 'ìlú Beulà ní North Dakota',
     ),
     'America/North_Dakota/New_Salem': TimeZoneNames(
-      city: 'ìlú New Salem ni North Dakota',
+      exemplarCity: 'ìlú New Salem ni North Dakota',
     ),
     'America/North_Dakota/Center': TimeZoneNames(
-      city: 'ìlú Senta North Dakota',
+      exemplarCity: 'ìlú Senta North Dakota',
     ),
     'America/Ojinaga': TimeZoneNames(
-      city: 'ìlú Ojinaga',
+      exemplarCity: 'ìlú Ojinaga',
     ),
     'America/Panama': TimeZoneNames(
-      city: 'ìlú Panama',
+      exemplarCity: 'ìlú Panama',
     ),
     'America/Phoenix': TimeZoneNames(
-      city: 'ìlú Fínísì',
+      exemplarCity: 'ìlú Fínísì',
     ),
     'America/Port-au-Prince': TimeZoneNames(
-      city: 'ìlú Port-au-Prince',
+      exemplarCity: 'ìlú Port-au-Prince',
     ),
     'America/Port_of_Spain': TimeZoneNames(
-      city: 'ìlú etí omi Sípéènì',
+      exemplarCity: 'ìlú etí omi Sípéènì',
     ),
     'America/Puerto_Rico': TimeZoneNames(
-      city: 'ìlú Puerto Riko',
+      exemplarCity: 'ìlú Puerto Riko',
     ),
     'America/Rankin_Inlet': TimeZoneNames(
-      city: 'ìlú Rankin Inlet',
+      exemplarCity: 'ìlú Rankin Inlet',
     ),
     'America/Regina': TimeZoneNames(
-      city: 'ìlú Regina',
+      exemplarCity: 'ìlú Regina',
     ),
     'America/Resolute': TimeZoneNames(
-      city: 'ìlú Resolútì',
+      exemplarCity: 'ìlú Resolútì',
     ),
     'America/Santo_Domingo': TimeZoneNames(
-      city: 'ìlú Santo Domigo',
+      exemplarCity: 'ìlú Santo Domigo',
     ),
     'America/Scoresbysund': TimeZoneNames(
-      city: 'ìlú Itokotomiti',
+      exemplarCity: 'ìlú Itokotomiti',
     ),
     'America/Sitka': TimeZoneNames(
-      city: 'ìlú Sika',
+      exemplarCity: 'ìlú Sika',
     ),
     'America/St_Barthelemy': TimeZoneNames(
-      city: 'ìlú Batilemì',
+      exemplarCity: 'ìlú Batilemì',
     ),
     'America/St_Johns': TimeZoneNames(
-      city: 'ìlú St Jɔ́ɔ̀nù',
+      exemplarCity: 'ìlú St Jɔ́ɔ̀nù',
     ),
     'America/St_Kitts': TimeZoneNames(
-      city: 'ìlú St kitisì',
+      exemplarCity: 'ìlú St kitisì',
     ),
     'America/St_Lucia': TimeZoneNames(
-      city: 'ìlú St Lusia',
+      exemplarCity: 'ìlú St Lusia',
     ),
     'America/St_Thomas': TimeZoneNames(
-      city: 'ìlú St Tɔ́màsì',
+      exemplarCity: 'ìlú St Tɔ́màsì',
     ),
     'America/St_Vincent': TimeZoneNames(
-      city: 'ìlú Finsentì',
+      exemplarCity: 'ìlú Finsentì',
     ),
     'America/Swift_Current': TimeZoneNames(
-      city: 'ìlú Súfítù Kɔ̀rentì',
+      exemplarCity: 'ìlú Súfítù Kɔ̀rentì',
     ),
     'America/Tegucigalpa': TimeZoneNames(
-      city: 'ìlú Tegusigapà',
+      exemplarCity: 'ìlú Tegusigapà',
     ),
     'America/Thule': TimeZoneNames(
-      city: 'ìlú Tulè',
+      exemplarCity: 'ìlú Tulè',
     ),
     'America/Tijuana': TimeZoneNames(
-      city: 'ìlú Tíjúana',
+      exemplarCity: 'ìlú Tíjúana',
     ),
     'America/Toronto': TimeZoneNames(
-      city: 'ìlú Toronto',
+      exemplarCity: 'ìlú Toronto',
     ),
     'America/Tortola': TimeZoneNames(
-      city: 'ìlú Totola',
+      exemplarCity: 'ìlú Totola',
     ),
     'America/Vancouver': TimeZoneNames(
-      city: 'ìlú Vankuva',
+      exemplarCity: 'ìlú Vankuva',
     ),
     'America/Whitehorse': TimeZoneNames(
-      city: 'ìlú Whitehosì',
+      exemplarCity: 'ìlú Whitehosì',
     ),
     'America/Winnipeg': TimeZoneNames(
-      city: 'ìlú Winipegì',
+      exemplarCity: 'ìlú Winipegì',
     ),
     'America/Yakutat': TimeZoneNames(
-      city: 'ìlú Yakuta',
+      exemplarCity: 'ìlú Yakuta',
     ),
     'Atlantic/Bermuda': TimeZoneNames(
-      city: 'ìlú Bɛ̀múdà',
+      exemplarCity: 'ìlú Bɛ̀múdà',
     ),
     'Atlantic/Faeroe': TimeZoneNames(
-      city: 'Faroe',
+      exemplarCity: 'Faroe',
     ),
     'Atlantic/St_Helena': TimeZoneNames(
-      city: 'St. Helena',
+      exemplarCity: 'St. Helena',
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
@@ -8875,7 +8875,7 @@ class TimeZonesYoBJ extends TimeZones {
       ),
     ),
     'Europe/Kiev': TimeZoneNames(
-      city: 'Kyiv',
+      exemplarCity: 'Kyiv',
     ),
     'Europe/London': TimeZoneNames(
       long: TimeZoneName(
@@ -8883,37 +8883,37 @@ class TimeZonesYoBJ extends TimeZones {
       ),
     ),
     'Africa/Asmera': TimeZoneNames(
-      city: 'Asmara',
+      exemplarCity: 'Asmara',
     ),
     'Africa/Sao_Tome': TimeZoneNames(
-      city: 'São Tomé',
+      exemplarCity: 'São Tomé',
     ),
     'Asia/Calcutta': TimeZoneNames(
-      city: 'Kolkata',
+      exemplarCity: 'Kolkata',
     ),
     'Asia/Katmandu': TimeZoneNames(
-      city: 'Kathmandu',
+      exemplarCity: 'Kathmandu',
     ),
     'Asia/Macau': TimeZoneNames(
-      city: 'Macao',
+      exemplarCity: 'Macao',
     ),
     'Asia/Rangoon': TimeZoneNames(
-      city: 'Yangon',
+      exemplarCity: 'Yangon',
     ),
     'Asia/Saigon': TimeZoneNames(
-      city: 'Ho Chi Minh',
+      exemplarCity: 'Ho Chi Minh',
     ),
     'Indian/Reunion': TimeZoneNames(
-      city: 'Réunion',
+      exemplarCity: 'Réunion',
     ),
     'Pacific/Ponape': TimeZoneNames(
-      city: 'Pohnpei',
+      exemplarCity: 'Pohnpei',
     ),
     'Pacific/Truk': TimeZoneNames(
-      city: 'Chuuk',
+      exemplarCity: 'Chuuk',
     ),
     'Antarctica/DumontDUrville': TimeZoneNames(
-      city: 'Dumont d’Urville',
+      exemplarCity: 'Dumont d’Urville',
     ),
     'Etc/UTC': TimeZoneNames(
       long: TimeZoneName(
@@ -8924,7 +8924,7 @@ class TimeZonesYoBJ extends TimeZones {
       ),
     ),
     'Etc/Unknown': TimeZoneNames(
-      city: 'Ìlú Àìmɔ̀',
+      exemplarCity: 'Ìlú Àìmɔ̀',
     ),
   }, (key) => key.toLowerCase());
 

@@ -9395,1267 +9395,1267 @@ class TimeZonesKa extends TimeZones {
   @override
   final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
     'America/Adak': TimeZoneNames(
-      city: 'ადაკი',
+      exemplarCity: 'ადაკი',
     ),
     'America/Anchorage': TimeZoneNames(
-      city: 'ენქორაჯი',
+      exemplarCity: 'ენქორაჯი',
     ),
     'America/Anguilla': TimeZoneNames(
-      city: 'ანგილია',
+      exemplarCity: 'ანგილია',
     ),
     'America/Antigua': TimeZoneNames(
-      city: 'ანტიგუა',
+      exemplarCity: 'ანტიგუა',
     ),
     'America/Araguaina': TimeZoneNames(
-      city: 'არაგუაინა',
+      exemplarCity: 'არაგუაინა',
     ),
     'America/Argentina/Rio_Gallegos': TimeZoneNames(
-      city: 'რიო გალეგოსი',
+      exemplarCity: 'რიო გალეგოსი',
     ),
     'America/Argentina/San_Juan': TimeZoneNames(
-      city: 'სან ხუანი',
+      exemplarCity: 'სან ხუანი',
     ),
     'America/Argentina/Ushuaia': TimeZoneNames(
-      city: 'უშუაია',
+      exemplarCity: 'უშუაია',
     ),
     'America/Argentina/La_Rioja': TimeZoneNames(
-      city: 'ლა რიოხა',
+      exemplarCity: 'ლა რიოხა',
     ),
     'America/Argentina/San_Luis': TimeZoneNames(
-      city: 'სან-ლუისი',
+      exemplarCity: 'სან-ლუისი',
     ),
     'America/Argentina/Salta': TimeZoneNames(
-      city: 'სალტა',
+      exemplarCity: 'სალტა',
     ),
     'America/Argentina/Tucuman': TimeZoneNames(
-      city: 'ტუკუმანი',
+      exemplarCity: 'ტუკუმანი',
     ),
     'America/Aruba': TimeZoneNames(
-      city: 'არუბა',
+      exemplarCity: 'არუბა',
     ),
     'America/Asuncion': TimeZoneNames(
-      city: 'ასუნსიონი',
+      exemplarCity: 'ასუნსიონი',
     ),
     'America/Bahia': TimeZoneNames(
-      city: 'ბაია',
+      exemplarCity: 'ბაია',
     ),
     'America/Bahia_Banderas': TimeZoneNames(
-      city: 'ბაჰია ბანდერასი',
+      exemplarCity: 'ბაჰია ბანდერასი',
     ),
     'America/Barbados': TimeZoneNames(
-      city: 'ბარბადოსი',
+      exemplarCity: 'ბარბადოსი',
     ),
     'America/Belem': TimeZoneNames(
-      city: 'ბელემი',
+      exemplarCity: 'ბელემი',
     ),
     'America/Belize': TimeZoneNames(
-      city: 'ბელიზი',
+      exemplarCity: 'ბელიზი',
     ),
     'America/Blanc-Sablon': TimeZoneNames(
-      city: 'ბლან-საბლონი',
+      exemplarCity: 'ბლან-საბლონი',
     ),
     'America/Boa_Vista': TimeZoneNames(
-      city: 'ბოა ვისტა',
+      exemplarCity: 'ბოა ვისტა',
     ),
     'America/Bogota': TimeZoneNames(
-      city: 'ბოგოტა',
+      exemplarCity: 'ბოგოტა',
     ),
     'America/Boise': TimeZoneNames(
-      city: 'ბუასი',
+      exemplarCity: 'ბუასი',
     ),
     'America/Buenos_Aires': TimeZoneNames(
-      city: 'ბუენოს-აირესი',
+      exemplarCity: 'ბუენოს-აირესი',
     ),
     'America/Cambridge_Bay': TimeZoneNames(
-      city: 'კემბრიჯ ბეი',
+      exemplarCity: 'კემბრიჯ ბეი',
     ),
     'America/Campo_Grande': TimeZoneNames(
-      city: 'კამპო გრანდე',
+      exemplarCity: 'კამპო გრანდე',
     ),
     'America/Cancun': TimeZoneNames(
-      city: 'კანკუნი',
+      exemplarCity: 'კანკუნი',
     ),
     'America/Caracas': TimeZoneNames(
-      city: 'კარაკასი',
+      exemplarCity: 'კარაკასი',
     ),
     'America/Catamarca': TimeZoneNames(
-      city: 'კატამარკა',
+      exemplarCity: 'კატამარკა',
     ),
     'America/Cayenne': TimeZoneNames(
-      city: 'კაიენა',
+      exemplarCity: 'კაიენა',
     ),
     'America/Cayman': TimeZoneNames(
-      city: 'კაიმანი',
+      exemplarCity: 'კაიმანი',
     ),
     'America/Chicago': TimeZoneNames(
-      city: 'ჩიკაგო',
+      exemplarCity: 'ჩიკაგო',
     ),
     'America/Chihuahua': TimeZoneNames(
-      city: 'ჩიჰუაჰუა',
+      exemplarCity: 'ჩიჰუაჰუა',
     ),
     'America/Ciudad_Juarez': TimeZoneNames(
-      city: 'სიუდად-ხუარესი',
+      exemplarCity: 'სიუდად-ხუარესი',
     ),
     'America/Coral_Harbour': TimeZoneNames(
-      city: 'ატიკოკანი',
+      exemplarCity: 'ატიკოკანი',
     ),
     'America/Cordoba': TimeZoneNames(
-      city: 'კორდობა',
+      exemplarCity: 'კორდობა',
     ),
     'America/Costa_Rica': TimeZoneNames(
-      city: 'კოსტა-რიკა',
+      exemplarCity: 'კოსტა-რიკა',
     ),
     'America/Creston': TimeZoneNames(
-      city: 'კრესტონი',
+      exemplarCity: 'კრესტონი',
     ),
     'America/Cuiaba': TimeZoneNames(
-      city: 'კუიაბა',
+      exemplarCity: 'კუიაბა',
     ),
     'America/Curacao': TimeZoneNames(
-      city: 'კიურასაო',
+      exemplarCity: 'კიურასაო',
     ),
     'America/Danmarkshavn': TimeZoneNames(
-      city: 'დენმარკშავნი',
+      exemplarCity: 'დენმარკშავნი',
     ),
     'America/Dawson': TimeZoneNames(
-      city: 'დოუსონი',
+      exemplarCity: 'დოუსონი',
     ),
     'America/Dawson_Creek': TimeZoneNames(
-      city: 'დოუსონ ქრიკი',
+      exemplarCity: 'დოუსონ ქრიკი',
     ),
     'America/Denver': TimeZoneNames(
-      city: 'დენვერი',
+      exemplarCity: 'დენვერი',
     ),
     'America/Detroit': TimeZoneNames(
-      city: 'დეტროიტი',
+      exemplarCity: 'დეტროიტი',
     ),
     'America/Dominica': TimeZoneNames(
-      city: 'დომინიკა',
+      exemplarCity: 'დომინიკა',
     ),
     'America/Edmonton': TimeZoneNames(
-      city: 'ედმონტონი',
+      exemplarCity: 'ედმონტონი',
     ),
     'America/Eirunepe': TimeZoneNames(
-      city: 'ეირუნეპე',
+      exemplarCity: 'ეირუნეპე',
     ),
     'America/El_Salvador': TimeZoneNames(
-      city: 'სალვადორი',
+      exemplarCity: 'სალვადორი',
     ),
     'America/Fort_Nelson': TimeZoneNames(
-      city: 'ფორტ-ნელსონი',
+      exemplarCity: 'ფორტ-ნელსონი',
     ),
     'America/Fortaleza': TimeZoneNames(
-      city: 'ფორტალეზა',
+      exemplarCity: 'ფორტალეზა',
     ),
     'America/Glace_Bay': TimeZoneNames(
-      city: 'გლეის ბეი',
+      exemplarCity: 'გლეის ბეი',
     ),
     'America/Godthab': TimeZoneNames(
-      city: 'გოდთები',
+      exemplarCity: 'გოდთები',
     ),
     'America/Goose_Bay': TimeZoneNames(
-      city: 'გუზ ბეი',
+      exemplarCity: 'გუზ ბეი',
     ),
     'America/Grand_Turk': TimeZoneNames(
-      city: 'გრანდ-ტურკი',
+      exemplarCity: 'გრანდ-ტურკი',
     ),
     'America/Grenada': TimeZoneNames(
-      city: 'გრენადა',
+      exemplarCity: 'გრენადა',
     ),
     'America/Guadeloupe': TimeZoneNames(
-      city: 'გვადელუპა',
+      exemplarCity: 'გვადელუპა',
     ),
     'America/Guatemala': TimeZoneNames(
-      city: 'გვატემალა',
+      exemplarCity: 'გვატემალა',
     ),
     'America/Guayaquil': TimeZoneNames(
-      city: 'გუაიაკილი',
+      exemplarCity: 'გუაიაკილი',
     ),
     'America/Guyana': TimeZoneNames(
-      city: 'გაიანა',
+      exemplarCity: 'გაიანა',
     ),
     'America/Halifax': TimeZoneNames(
-      city: 'ჰალიფაქსი',
+      exemplarCity: 'ჰალიფაქსი',
     ),
     'America/Havana': TimeZoneNames(
-      city: 'ჰავანა',
+      exemplarCity: 'ჰავანა',
     ),
     'America/Hermosillo': TimeZoneNames(
-      city: 'ჰერმოსილო',
+      exemplarCity: 'ჰერმოსილო',
     ),
     'America/Indiana/Vincennes': TimeZoneNames(
-      city: 'ვინსენი, ინდიანა',
+      exemplarCity: 'ვინსენი, ინდიანა',
     ),
     'America/Indiana/Petersburg': TimeZoneNames(
-      city: 'პიტერსბურგი, ინდიანა',
+      exemplarCity: 'პიტერსბურგი, ინდიანა',
     ),
     'America/Indiana/Tell_City': TimeZoneNames(
-      city: 'თელ სითი, ინდიანა',
+      exemplarCity: 'თელ სითი, ინდიანა',
     ),
     'America/Indiana/Knox': TimeZoneNames(
-      city: 'ნოქსი, ინდიანა',
+      exemplarCity: 'ნოქსი, ინდიანა',
     ),
     'America/Indiana/Winamac': TimeZoneNames(
-      city: 'უინემაკი, ინდიანა',
+      exemplarCity: 'უინემაკი, ინდიანა',
     ),
     'America/Indiana/Marengo': TimeZoneNames(
-      city: 'მარენგო, ინდიანა',
+      exemplarCity: 'მარენგო, ინდიანა',
     ),
     'America/Indiana/Vevay': TimeZoneNames(
-      city: 'ვივეი, ინდიანა',
+      exemplarCity: 'ვივეი, ინდიანა',
     ),
     'America/Indianapolis': TimeZoneNames(
-      city: 'ინდიანაპოლისი',
+      exemplarCity: 'ინდიანაპოლისი',
     ),
     'America/Inuvik': TimeZoneNames(
-      city: 'ინუვიკი',
+      exemplarCity: 'ინუვიკი',
     ),
     'America/Iqaluit': TimeZoneNames(
-      city: 'იქალუიტი',
+      exemplarCity: 'იქალუიტი',
     ),
     'America/Jamaica': TimeZoneNames(
-      city: 'იამაიკა',
+      exemplarCity: 'იამაიკა',
     ),
     'America/Jujuy': TimeZoneNames(
-      city: 'ჯუჯუი',
+      exemplarCity: 'ჯუჯუი',
     ),
     'America/Juneau': TimeZoneNames(
-      city: 'ჯუნო',
+      exemplarCity: 'ჯუნო',
     ),
     'America/Kentucky/Monticello': TimeZoneNames(
-      city: 'მონტიჩელო, კენტუკი',
+      exemplarCity: 'მონტიჩელო, კენტუკი',
     ),
     'America/Kralendijk': TimeZoneNames(
-      city: 'კრალენდიიკი',
+      exemplarCity: 'კრალენდიიკი',
     ),
     'America/La_Paz': TimeZoneNames(
-      city: 'ლა-პაზი',
+      exemplarCity: 'ლა-პაზი',
     ),
     'America/Lima': TimeZoneNames(
-      city: 'ლიმა',
+      exemplarCity: 'ლიმა',
     ),
     'America/Los_Angeles': TimeZoneNames(
-      city: 'ლოს-ანჯელესი',
+      exemplarCity: 'ლოს-ანჯელესი',
     ),
     'America/Louisville': TimeZoneNames(
-      city: 'ლუისვილი',
+      exemplarCity: 'ლუისვილი',
     ),
     'America/Lower_Princes': TimeZoneNames(
-      city: 'ლოერ პრინც კვორტერი',
+      exemplarCity: 'ლოერ პრინც კვორტერი',
     ),
     'America/Maceio': TimeZoneNames(
-      city: 'მასეიო',
+      exemplarCity: 'მასეიო',
     ),
     'America/Managua': TimeZoneNames(
-      city: 'მანაგუა',
+      exemplarCity: 'მანაგუა',
     ),
     'America/Manaus': TimeZoneNames(
-      city: 'მანაუსი',
+      exemplarCity: 'მანაუსი',
     ),
     'America/Marigot': TimeZoneNames(
-      city: 'მარიგო',
+      exemplarCity: 'მარიგო',
     ),
     'America/Martinique': TimeZoneNames(
-      city: 'მარტინიკი',
+      exemplarCity: 'მარტინიკი',
     ),
     'America/Matamoros': TimeZoneNames(
-      city: 'მატამოროსი',
+      exemplarCity: 'მატამოროსი',
     ),
     'America/Mazatlan': TimeZoneNames(
-      city: 'მაზატლანი',
+      exemplarCity: 'მაზატლანი',
     ),
     'America/Mendoza': TimeZoneNames(
-      city: 'მენდოზა',
+      exemplarCity: 'მენდოზა',
     ),
     'America/Menominee': TimeZoneNames(
-      city: 'მენომინი',
+      exemplarCity: 'მენომინი',
     ),
     'America/Merida': TimeZoneNames(
-      city: 'მერიდა',
+      exemplarCity: 'მერიდა',
     ),
     'America/Metlakatla': TimeZoneNames(
-      city: 'მეტლაკატლა',
+      exemplarCity: 'მეტლაკატლა',
     ),
     'America/Mexico_City': TimeZoneNames(
-      city: 'მეხიკო',
+      exemplarCity: 'მეხიკო',
     ),
     'America/Miquelon': TimeZoneNames(
-      city: 'მიკელონი',
+      exemplarCity: 'მიკელონი',
     ),
     'America/Moncton': TimeZoneNames(
-      city: 'მონქტონი',
+      exemplarCity: 'მონქტონი',
     ),
     'America/Monterrey': TimeZoneNames(
-      city: 'მონტერეი',
+      exemplarCity: 'მონტერეი',
     ),
     'America/Montevideo': TimeZoneNames(
-      city: 'მონტევიდეო',
+      exemplarCity: 'მონტევიდეო',
     ),
     'America/Montserrat': TimeZoneNames(
-      city: 'მონსერატი',
+      exemplarCity: 'მონსერატი',
     ),
     'America/Nassau': TimeZoneNames(
-      city: 'ნასაუ',
+      exemplarCity: 'ნასაუ',
     ),
     'America/New_York': TimeZoneNames(
-      city: 'ნიუ-იორკი',
+      exemplarCity: 'ნიუ-იორკი',
     ),
     'America/Nome': TimeZoneNames(
-      city: 'ნომი',
+      exemplarCity: 'ნომი',
     ),
     'America/Noronha': TimeZoneNames(
-      city: 'ნორონია',
+      exemplarCity: 'ნორონია',
     ),
     'America/North_Dakota/Beulah': TimeZoneNames(
-      city: 'ბიულა, ჩრდილოეთი დაკოტა',
+      exemplarCity: 'ბიულა, ჩრდილოეთი დაკოტა',
     ),
     'America/North_Dakota/New_Salem': TimeZoneNames(
-      city: 'ნიუ-სალემი, ჩრდილოეთი დაკოტა',
+      exemplarCity: 'ნიუ-სალემი, ჩრდილოეთი დაკოტა',
     ),
     'America/North_Dakota/Center': TimeZoneNames(
-      city: 'ცენტრი, ჩრდილოეთი დაკოტა',
+      exemplarCity: 'ცენტრი, ჩრდილოეთი დაკოტა',
     ),
     'America/Ojinaga': TimeZoneNames(
-      city: 'ოხინაგა',
+      exemplarCity: 'ოხინაგა',
     ),
     'America/Panama': TimeZoneNames(
-      city: 'პანამა',
+      exemplarCity: 'პანამა',
     ),
     'America/Paramaribo': TimeZoneNames(
-      city: 'პარამარიბო',
+      exemplarCity: 'პარამარიბო',
     ),
     'America/Phoenix': TimeZoneNames(
-      city: 'ფენიქსი',
+      exemplarCity: 'ფენიქსი',
     ),
     'America/Port-au-Prince': TimeZoneNames(
-      city: 'პორტ-ა-პრინსი',
+      exemplarCity: 'პორტ-ა-პრინსი',
     ),
     'America/Port_of_Spain': TimeZoneNames(
-      city: 'პორტ-ოვ-სპეინი',
+      exemplarCity: 'პორტ-ოვ-სპეინი',
     ),
     'America/Porto_Velho': TimeZoneNames(
-      city: 'პორტუ-ველიო',
+      exemplarCity: 'პორტუ-ველიო',
     ),
     'America/Puerto_Rico': TimeZoneNames(
-      city: 'პუერტო-რიკო',
+      exemplarCity: 'პუერტო-რიკო',
     ),
     'America/Punta_Arenas': TimeZoneNames(
-      city: 'პუნტა-არენასი',
+      exemplarCity: 'პუნტა-არენასი',
     ),
     'America/Rankin_Inlet': TimeZoneNames(
-      city: 'რენკინ ინლეტი',
+      exemplarCity: 'რენკინ ინლეტი',
     ),
     'America/Recife': TimeZoneNames(
-      city: 'რეციფე',
+      exemplarCity: 'რეციფე',
     ),
     'America/Regina': TimeZoneNames(
-      city: 'რეჯინა',
+      exemplarCity: 'რეჯინა',
     ),
     'America/Resolute': TimeZoneNames(
-      city: 'რეზოლუტე',
+      exemplarCity: 'რეზოლუტე',
     ),
     'America/Rio_Branco': TimeZoneNames(
-      city: 'რიო ბრანკო',
+      exemplarCity: 'რიო ბრანკო',
     ),
     'America/Santarem': TimeZoneNames(
-      city: 'სანტარემი',
+      exemplarCity: 'სანტარემი',
     ),
     'America/Santiago': TimeZoneNames(
-      city: 'სანტიაგო',
+      exemplarCity: 'სანტიაგო',
     ),
     'America/Santo_Domingo': TimeZoneNames(
-      city: 'სანტო-დომინგო',
+      exemplarCity: 'სანტო-დომინგო',
     ),
     'America/Sao_Paulo': TimeZoneNames(
-      city: 'სან-პაულუ',
+      exemplarCity: 'სან-პაულუ',
     ),
     'America/Scoresbysund': TimeZoneNames(
-      city: 'სკორსბისუნდი',
+      exemplarCity: 'სკორსბისუნდი',
     ),
     'America/Sitka': TimeZoneNames(
-      city: 'სიტკა',
+      exemplarCity: 'სიტკა',
     ),
     'America/St_Barthelemy': TimeZoneNames(
-      city: 'სენ-ბართელემი',
+      exemplarCity: 'სენ-ბართელემი',
     ),
     'America/St_Johns': TimeZoneNames(
-      city: 'სენტ-ჯონსი',
+      exemplarCity: 'სენტ-ჯონსი',
     ),
     'America/St_Kitts': TimeZoneNames(
-      city: 'სენტ-კიტსი',
+      exemplarCity: 'სენტ-კიტსი',
     ),
     'America/St_Lucia': TimeZoneNames(
-      city: 'სენტ-ლუსია',
+      exemplarCity: 'სენტ-ლუსია',
     ),
     'America/St_Thomas': TimeZoneNames(
-      city: 'სენ-ტომასი',
+      exemplarCity: 'სენ-ტომასი',
     ),
     'America/St_Vincent': TimeZoneNames(
-      city: 'სენ-ვინსენტი',
+      exemplarCity: 'სენ-ვინსენტი',
     ),
     'America/Swift_Current': TimeZoneNames(
-      city: 'სვიფტ კარენტი',
+      exemplarCity: 'სვიფტ კარენტი',
     ),
     'America/Tegucigalpa': TimeZoneNames(
-      city: 'ტეგუჩიგალპა',
+      exemplarCity: 'ტეგუჩიგალპა',
     ),
     'America/Thule': TimeZoneNames(
-      city: 'თულე',
+      exemplarCity: 'თულე',
     ),
     'America/Tijuana': TimeZoneNames(
-      city: 'ტიხუანა',
+      exemplarCity: 'ტიხუანა',
     ),
     'America/Toronto': TimeZoneNames(
-      city: 'ტორონტო',
+      exemplarCity: 'ტორონტო',
     ),
     'America/Tortola': TimeZoneNames(
-      city: 'ტორტოლა',
+      exemplarCity: 'ტორტოლა',
     ),
     'America/Vancouver': TimeZoneNames(
-      city: 'ვანკუვერი',
+      exemplarCity: 'ვანკუვერი',
     ),
     'America/Whitehorse': TimeZoneNames(
-      city: 'უაითჰორსი',
+      exemplarCity: 'უაითჰორსი',
     ),
     'America/Winnipeg': TimeZoneNames(
-      city: 'უინიპეგი',
+      exemplarCity: 'უინიპეგი',
     ),
     'America/Yakutat': TimeZoneNames(
-      city: 'იაკუტატი',
+      exemplarCity: 'იაკუტატი',
     ),
     'Atlantic/Azores': TimeZoneNames(
-      city: 'აზორის კუნძულები',
+      exemplarCity: 'აზორის კუნძულები',
     ),
     'Atlantic/Bermuda': TimeZoneNames(
-      city: 'ბერმუდა',
+      exemplarCity: 'ბერმუდა',
     ),
     'Atlantic/Canary': TimeZoneNames(
-      city: 'კანარი',
+      exemplarCity: 'კანარი',
     ),
     'Atlantic/Cape_Verde': TimeZoneNames(
-      city: 'კაბო-ვერდე',
+      exemplarCity: 'კაბო-ვერდე',
     ),
     'Atlantic/Faeroe': TimeZoneNames(
-      city: 'ფარერის კუნძულები',
+      exemplarCity: 'ფარერის კუნძულები',
     ),
     'Atlantic/Madeira': TimeZoneNames(
-      city: 'მადეირა',
+      exemplarCity: 'მადეირა',
     ),
     'Atlantic/Reykjavik': TimeZoneNames(
-      city: 'რეიკიავიკი',
+      exemplarCity: 'რეიკიავიკი',
     ),
     'Atlantic/South_Georgia': TimeZoneNames(
-      city: 'სამხრეთ ჯორჯია',
+      exemplarCity: 'სამხრეთ ჯორჯია',
     ),
     'Atlantic/St_Helena': TimeZoneNames(
-      city: 'წმ. ელენეს კუნძული',
+      exemplarCity: 'წმ. ელენეს კუნძული',
     ),
     'Atlantic/Stanley': TimeZoneNames(
-      city: 'სტენლი',
+      exemplarCity: 'სტენლი',
     ),
     'Europe/Amsterdam': TimeZoneNames(
-      city: 'ამსტერდამი',
+      exemplarCity: 'ამსტერდამი',
     ),
     'Europe/Andorra': TimeZoneNames(
-      city: 'ანდორა',
+      exemplarCity: 'ანდორა',
     ),
     'Europe/Astrakhan': TimeZoneNames(
-      city: 'ასტრახანი',
+      exemplarCity: 'ასტრახანი',
     ),
     'Europe/Athens': TimeZoneNames(
-      city: 'ათენი',
+      exemplarCity: 'ათენი',
     ),
     'Europe/Belgrade': TimeZoneNames(
-      city: 'ბელგრადი',
+      exemplarCity: 'ბელგრადი',
     ),
     'Europe/Berlin': TimeZoneNames(
-      city: 'ბერლინი',
+      exemplarCity: 'ბერლინი',
     ),
     'Europe/Bratislava': TimeZoneNames(
-      city: 'ბრატისლავა',
+      exemplarCity: 'ბრატისლავა',
     ),
     'Europe/Brussels': TimeZoneNames(
-      city: 'ბრიუსელი',
+      exemplarCity: 'ბრიუსელი',
     ),
     'Europe/Bucharest': TimeZoneNames(
-      city: 'ბუქარესტი',
+      exemplarCity: 'ბუქარესტი',
     ),
     'Europe/Budapest': TimeZoneNames(
-      city: 'ბუდაპეშტი',
+      exemplarCity: 'ბუდაპეშტი',
     ),
     'Europe/Busingen': TimeZoneNames(
-      city: 'ბუსინგენი',
+      exemplarCity: 'ბუსინგენი',
     ),
     'Europe/Chisinau': TimeZoneNames(
-      city: 'კიშინიოვი',
+      exemplarCity: 'კიშინიოვი',
     ),
     'Europe/Copenhagen': TimeZoneNames(
-      city: 'კოპენჰაგენი',
+      exemplarCity: 'კოპენჰაგენი',
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
         daylight: 'ირლანდიის სტანდარტული დრო',
       ),
-      city: 'დუბლინი',
+      exemplarCity: 'დუბლინი',
     ),
     'Europe/Gibraltar': TimeZoneNames(
-      city: 'გიბრალტარი',
+      exemplarCity: 'გიბრალტარი',
     ),
     'Europe/Guernsey': TimeZoneNames(
-      city: 'გერნსი',
+      exemplarCity: 'გერნსი',
     ),
     'Europe/Helsinki': TimeZoneNames(
-      city: 'ჰელსინკი',
+      exemplarCity: 'ჰელსინკი',
     ),
     'Europe/Isle_of_Man': TimeZoneNames(
-      city: 'მენის კუნძული',
+      exemplarCity: 'მენის კუნძული',
     ),
     'Europe/Istanbul': TimeZoneNames(
-      city: 'სტამბოლი',
+      exemplarCity: 'სტამბოლი',
     ),
     'Europe/Jersey': TimeZoneNames(
-      city: 'ჯერსი',
+      exemplarCity: 'ჯერსი',
     ),
     'Europe/Kaliningrad': TimeZoneNames(
-      city: 'კალინინგრადი',
+      exemplarCity: 'კალინინგრადი',
     ),
     'Europe/Kiev': TimeZoneNames(
-      city: 'კიევი',
+      exemplarCity: 'კიევი',
     ),
     'Europe/Kirov': TimeZoneNames(
-      city: 'კიროვი',
+      exemplarCity: 'კიროვი',
     ),
     'Europe/Lisbon': TimeZoneNames(
-      city: 'ლისაბონი',
+      exemplarCity: 'ლისაბონი',
     ),
     'Europe/Ljubljana': TimeZoneNames(
-      city: 'ლიუბლიანა',
+      exemplarCity: 'ლიუბლიანა',
     ),
     'Europe/London': TimeZoneNames(
       long: TimeZoneName(
         daylight: 'ბრიტანეთის ზაფხულის დრო',
       ),
-      city: 'ლონდონი',
+      exemplarCity: 'ლონდონი',
     ),
     'Europe/Luxembourg': TimeZoneNames(
-      city: 'ლუქსემბურგი',
+      exemplarCity: 'ლუქსემბურგი',
     ),
     'Europe/Madrid': TimeZoneNames(
-      city: 'მადრიდი',
+      exemplarCity: 'მადრიდი',
     ),
     'Europe/Malta': TimeZoneNames(
-      city: 'მალტა',
+      exemplarCity: 'მალტა',
     ),
     'Europe/Mariehamn': TimeZoneNames(
-      city: 'მარიჰამნი',
+      exemplarCity: 'მარიჰამნი',
     ),
     'Europe/Minsk': TimeZoneNames(
-      city: 'მინსკი',
+      exemplarCity: 'მინსკი',
     ),
     'Europe/Monaco': TimeZoneNames(
-      city: 'მონაკო',
+      exemplarCity: 'მონაკო',
     ),
     'Europe/Moscow': TimeZoneNames(
-      city: 'მოსკოვი',
+      exemplarCity: 'მოსკოვი',
     ),
     'Europe/Oslo': TimeZoneNames(
-      city: 'ოსლო',
+      exemplarCity: 'ოსლო',
     ),
     'Europe/Paris': TimeZoneNames(
-      city: 'პარიზი',
+      exemplarCity: 'პარიზი',
     ),
     'Europe/Podgorica': TimeZoneNames(
-      city: 'პოდგორიცა',
+      exemplarCity: 'პოდგორიცა',
     ),
     'Europe/Prague': TimeZoneNames(
-      city: 'პრაღა',
+      exemplarCity: 'პრაღა',
     ),
     'Europe/Riga': TimeZoneNames(
-      city: 'რიგა',
+      exemplarCity: 'რიგა',
     ),
     'Europe/Rome': TimeZoneNames(
-      city: 'რომი',
+      exemplarCity: 'რომი',
     ),
     'Europe/Samara': TimeZoneNames(
-      city: 'სამარა',
+      exemplarCity: 'სამარა',
     ),
     'Europe/San_Marino': TimeZoneNames(
-      city: 'სან-მარინო',
+      exemplarCity: 'სან-მარინო',
     ),
     'Europe/Sarajevo': TimeZoneNames(
-      city: 'სარაევო',
+      exemplarCity: 'სარაევო',
     ),
     'Europe/Saratov': TimeZoneNames(
-      city: 'სარატოვი',
+      exemplarCity: 'სარატოვი',
     ),
     'Europe/Simferopol': TimeZoneNames(
-      city: 'სიმფეროპოლი',
+      exemplarCity: 'სიმფეროპოლი',
     ),
     'Europe/Skopje': TimeZoneNames(
-      city: 'სკოპიე',
+      exemplarCity: 'სკოპიე',
     ),
     'Europe/Sofia': TimeZoneNames(
-      city: 'სოფია',
+      exemplarCity: 'სოფია',
     ),
     'Europe/Stockholm': TimeZoneNames(
-      city: 'სტოკჰოლმი',
+      exemplarCity: 'სტოკჰოლმი',
     ),
     'Europe/Tallinn': TimeZoneNames(
-      city: 'ტალინი',
+      exemplarCity: 'ტალინი',
     ),
     'Europe/Tirane': TimeZoneNames(
-      city: 'ტირანა',
+      exemplarCity: 'ტირანა',
     ),
     'Europe/Ulyanovsk': TimeZoneNames(
-      city: 'ულიანოვსკი',
+      exemplarCity: 'ულიანოვსკი',
     ),
     'Europe/Vaduz': TimeZoneNames(
-      city: 'ვადუცი',
+      exemplarCity: 'ვადუცი',
     ),
     'Europe/Vatican': TimeZoneNames(
-      city: 'ვატიკანი',
+      exemplarCity: 'ვატიკანი',
     ),
     'Europe/Vienna': TimeZoneNames(
-      city: 'ვენა',
+      exemplarCity: 'ვენა',
     ),
     'Europe/Vilnius': TimeZoneNames(
-      city: 'ვილნიუსი',
+      exemplarCity: 'ვილნიუსი',
     ),
     'Europe/Volgograd': TimeZoneNames(
-      city: 'ვოლგოგრადი',
+      exemplarCity: 'ვოლგოგრადი',
     ),
     'Europe/Warsaw': TimeZoneNames(
-      city: 'ვარშავა',
+      exemplarCity: 'ვარშავა',
     ),
     'Europe/Zagreb': TimeZoneNames(
-      city: 'ზაგრები',
+      exemplarCity: 'ზაგრები',
     ),
     'Europe/Zurich': TimeZoneNames(
-      city: 'ციურიხი',
+      exemplarCity: 'ციურიხი',
     ),
     'Africa/Abidjan': TimeZoneNames(
-      city: 'აბიჯანი',
+      exemplarCity: 'აბიჯანი',
     ),
     'Africa/Accra': TimeZoneNames(
-      city: 'აკრა',
+      exemplarCity: 'აკრა',
     ),
     'Africa/Addis_Ababa': TimeZoneNames(
-      city: 'ადის-აბება',
+      exemplarCity: 'ადის-აბება',
     ),
     'Africa/Algiers': TimeZoneNames(
-      city: 'ალჟირი',
+      exemplarCity: 'ალჟირი',
     ),
     'Africa/Asmera': TimeZoneNames(
-      city: 'ასმარა',
+      exemplarCity: 'ასმარა',
     ),
     'Africa/Bamako': TimeZoneNames(
-      city: 'ბამაკო',
+      exemplarCity: 'ბამაკო',
     ),
     'Africa/Bangui': TimeZoneNames(
-      city: 'ბანგი',
+      exemplarCity: 'ბანგი',
     ),
     'Africa/Banjul': TimeZoneNames(
-      city: 'ბანჯული',
+      exemplarCity: 'ბანჯული',
     ),
     'Africa/Bissau': TimeZoneNames(
-      city: 'ბისაუ',
+      exemplarCity: 'ბისაუ',
     ),
     'Africa/Blantyre': TimeZoneNames(
-      city: 'ბლანტირი',
+      exemplarCity: 'ბლანტირი',
     ),
     'Africa/Brazzaville': TimeZoneNames(
-      city: 'ბრაზავილი',
+      exemplarCity: 'ბრაზავილი',
     ),
     'Africa/Bujumbura': TimeZoneNames(
-      city: 'ბუჯუმბურა',
+      exemplarCity: 'ბუჯუმბურა',
     ),
     'Africa/Cairo': TimeZoneNames(
-      city: 'კაირო',
+      exemplarCity: 'კაირო',
     ),
     'Africa/Casablanca': TimeZoneNames(
-      city: 'კასაბლანკა',
+      exemplarCity: 'კასაბლანკა',
     ),
     'Africa/Ceuta': TimeZoneNames(
-      city: 'სეუტა',
+      exemplarCity: 'სეუტა',
     ),
     'Africa/Conakry': TimeZoneNames(
-      city: 'კონაკრი',
+      exemplarCity: 'კონაკრი',
     ),
     'Africa/Dakar': TimeZoneNames(
-      city: 'დაკარი',
+      exemplarCity: 'დაკარი',
     ),
     'Africa/Dar_es_Salaam': TimeZoneNames(
-      city: 'დარ-ეს-სალამი',
+      exemplarCity: 'დარ-ეს-სალამი',
     ),
     'Africa/Djibouti': TimeZoneNames(
-      city: 'ჯიბუტი',
+      exemplarCity: 'ჯიბუტი',
     ),
     'Africa/Douala': TimeZoneNames(
-      city: 'დუალა',
+      exemplarCity: 'დუალა',
     ),
     'Africa/El_Aaiun': TimeZoneNames(
-      city: 'ელ-ააიუნი',
+      exemplarCity: 'ელ-ააიუნი',
     ),
     'Africa/Freetown': TimeZoneNames(
-      city: 'ფრიტაუნი',
+      exemplarCity: 'ფრიტაუნი',
     ),
     'Africa/Gaborone': TimeZoneNames(
-      city: 'გაბორონე',
+      exemplarCity: 'გაბორონე',
     ),
     'Africa/Harare': TimeZoneNames(
-      city: 'ჰარარე',
+      exemplarCity: 'ჰარარე',
     ),
     'Africa/Johannesburg': TimeZoneNames(
-      city: 'იოჰანესბურგი',
+      exemplarCity: 'იოჰანესბურგი',
     ),
     'Africa/Juba': TimeZoneNames(
-      city: 'ჯუბა',
+      exemplarCity: 'ჯუბა',
     ),
     'Africa/Kampala': TimeZoneNames(
-      city: 'კამპალა',
+      exemplarCity: 'კამპალა',
     ),
     'Africa/Khartoum': TimeZoneNames(
-      city: 'ხარტუმი',
+      exemplarCity: 'ხარტუმი',
     ),
     'Africa/Kigali': TimeZoneNames(
-      city: 'კიგალი',
+      exemplarCity: 'კიგალი',
     ),
     'Africa/Kinshasa': TimeZoneNames(
-      city: 'კინშასა',
+      exemplarCity: 'კინშასა',
     ),
     'Africa/Lagos': TimeZoneNames(
-      city: 'ლაგოსი',
+      exemplarCity: 'ლაგოსი',
     ),
     'Africa/Libreville': TimeZoneNames(
-      city: 'ლიბრევილი',
+      exemplarCity: 'ლიბრევილი',
     ),
     'Africa/Lome': TimeZoneNames(
-      city: 'ლომე',
+      exemplarCity: 'ლომე',
     ),
     'Africa/Luanda': TimeZoneNames(
-      city: 'ლუანდა',
+      exemplarCity: 'ლუანდა',
     ),
     'Africa/Lubumbashi': TimeZoneNames(
-      city: 'ლუბუმბაში',
+      exemplarCity: 'ლუბუმბაში',
     ),
     'Africa/Lusaka': TimeZoneNames(
-      city: 'ლუსაკა',
+      exemplarCity: 'ლუსაკა',
     ),
     'Africa/Malabo': TimeZoneNames(
-      city: 'მალაბო',
+      exemplarCity: 'მალაბო',
     ),
     'Africa/Maputo': TimeZoneNames(
-      city: 'მაპუტო',
+      exemplarCity: 'მაპუტო',
     ),
     'Africa/Maseru': TimeZoneNames(
-      city: 'მასერუ',
+      exemplarCity: 'მასერუ',
     ),
     'Africa/Mbabane': TimeZoneNames(
-      city: 'მბაბანე',
+      exemplarCity: 'მბაბანე',
     ),
     'Africa/Mogadishu': TimeZoneNames(
-      city: 'მოგადიშუ',
+      exemplarCity: 'მოგადიშუ',
     ),
     'Africa/Monrovia': TimeZoneNames(
-      city: 'მონროვია',
+      exemplarCity: 'მონროვია',
     ),
     'Africa/Nairobi': TimeZoneNames(
-      city: 'ნაირობი',
+      exemplarCity: 'ნაირობი',
     ),
     'Africa/Ndjamena': TimeZoneNames(
-      city: 'ნჯამენა',
+      exemplarCity: 'ნჯამენა',
     ),
     'Africa/Niamey': TimeZoneNames(
-      city: 'ნიამეი',
+      exemplarCity: 'ნიამეი',
     ),
     'Africa/Nouakchott': TimeZoneNames(
-      city: 'ნუაკშოტი',
+      exemplarCity: 'ნუაკშოტი',
     ),
     'Africa/Ouagadougou': TimeZoneNames(
-      city: 'უაგადუგუ',
+      exemplarCity: 'უაგადუგუ',
     ),
     'Africa/Porto-Novo': TimeZoneNames(
-      city: 'პორტო-ნოვო',
+      exemplarCity: 'პორტო-ნოვო',
     ),
     'Africa/Sao_Tome': TimeZoneNames(
-      city: 'სენ-ტომე',
+      exemplarCity: 'სენ-ტომე',
     ),
     'Africa/Tripoli': TimeZoneNames(
-      city: 'ტრიპოლი',
+      exemplarCity: 'ტრიპოლი',
     ),
     'Africa/Tunis': TimeZoneNames(
-      city: 'ტუნისი',
+      exemplarCity: 'ტუნისი',
     ),
     'Africa/Windhoek': TimeZoneNames(
-      city: 'ვინდხუკი',
+      exemplarCity: 'ვინდხუკი',
     ),
     'Asia/Aden': TimeZoneNames(
-      city: 'ადენი',
+      exemplarCity: 'ადენი',
     ),
     'Asia/Almaty': TimeZoneNames(
-      city: 'ალმატი',
+      exemplarCity: 'ალმატი',
     ),
     'Asia/Amman': TimeZoneNames(
-      city: 'ამანი',
+      exemplarCity: 'ამანი',
     ),
     'Asia/Anadyr': TimeZoneNames(
-      city: 'ანადირი',
+      exemplarCity: 'ანადირი',
     ),
     'Asia/Aqtau': TimeZoneNames(
-      city: 'აქტაუ',
+      exemplarCity: 'აქტაუ',
     ),
     'Asia/Aqtobe': TimeZoneNames(
-      city: 'აქტობე',
+      exemplarCity: 'აქტობე',
     ),
     'Asia/Ashgabat': TimeZoneNames(
-      city: 'აშხაბადი',
+      exemplarCity: 'აშხაბადი',
     ),
     'Asia/Atyrau': TimeZoneNames(
-      city: 'ატირაუ',
+      exemplarCity: 'ატირაუ',
     ),
     'Asia/Baghdad': TimeZoneNames(
-      city: 'ბაღდადი',
+      exemplarCity: 'ბაღდადი',
     ),
     'Asia/Bahrain': TimeZoneNames(
-      city: 'ბაჰრეინი',
+      exemplarCity: 'ბაჰრეინი',
     ),
     'Asia/Baku': TimeZoneNames(
-      city: 'ბაქო',
+      exemplarCity: 'ბაქო',
     ),
     'Asia/Bangkok': TimeZoneNames(
-      city: 'ბანგკოკი',
+      exemplarCity: 'ბანგკოკი',
     ),
     'Asia/Barnaul': TimeZoneNames(
-      city: 'ბარნაული',
+      exemplarCity: 'ბარნაული',
     ),
     'Asia/Beirut': TimeZoneNames(
-      city: 'ბეირუთი',
+      exemplarCity: 'ბეირუთი',
     ),
     'Asia/Bishkek': TimeZoneNames(
-      city: 'ბიშკეკი',
+      exemplarCity: 'ბიშკეკი',
     ),
     'Asia/Brunei': TimeZoneNames(
-      city: 'ბრუნეი',
+      exemplarCity: 'ბრუნეი',
     ),
     'Asia/Calcutta': TimeZoneNames(
-      city: 'კალკუტა',
+      exemplarCity: 'კალკუტა',
     ),
     'Asia/Chita': TimeZoneNames(
-      city: 'ჩიტა',
+      exemplarCity: 'ჩიტა',
     ),
     'Asia/Choibalsan': TimeZoneNames(
-      city: 'ჩოიბალსანი',
+      exemplarCity: 'ჩოიბალსანი',
     ),
     'Asia/Colombo': TimeZoneNames(
-      city: 'კოლომბო',
+      exemplarCity: 'კოლომბო',
     ),
     'Asia/Damascus': TimeZoneNames(
-      city: 'დამასკი',
+      exemplarCity: 'დამასკი',
     ),
     'Asia/Dhaka': TimeZoneNames(
-      city: 'დაკა',
+      exemplarCity: 'დაკა',
     ),
     'Asia/Dili': TimeZoneNames(
-      city: 'დილი',
+      exemplarCity: 'დილი',
     ),
     'Asia/Dubai': TimeZoneNames(
-      city: 'დუბაი',
+      exemplarCity: 'დუბაი',
     ),
     'Asia/Dushanbe': TimeZoneNames(
-      city: 'დუშანბე',
+      exemplarCity: 'დუშანბე',
     ),
     'Asia/Famagusta': TimeZoneNames(
-      city: 'ფამაგუსტა',
+      exemplarCity: 'ფამაგუსტა',
     ),
     'Asia/Gaza': TimeZoneNames(
-      city: 'გაზა',
+      exemplarCity: 'გაზა',
     ),
     'Asia/Hebron': TimeZoneNames(
-      city: 'ჰებრონი',
+      exemplarCity: 'ჰებრონი',
     ),
     'Asia/Hong_Kong': TimeZoneNames(
-      city: 'ჰონკონგი',
+      exemplarCity: 'ჰონკონგი',
     ),
     'Asia/Hovd': TimeZoneNames(
-      city: 'ჰოვდი',
+      exemplarCity: 'ჰოვდი',
     ),
     'Asia/Irkutsk': TimeZoneNames(
-      city: 'ირკუტსკი',
+      exemplarCity: 'ირკუტსკი',
     ),
     'Asia/Jakarta': TimeZoneNames(
-      city: 'ჯაკარტა',
+      exemplarCity: 'ჯაკარტა',
     ),
     'Asia/Jayapura': TimeZoneNames(
-      city: 'ჯაიაპურა',
+      exemplarCity: 'ჯაიაპურა',
     ),
     'Asia/Jerusalem': TimeZoneNames(
-      city: 'იერუსალიმი',
+      exemplarCity: 'იერუსალიმი',
     ),
     'Asia/Kabul': TimeZoneNames(
-      city: 'ქაბული',
+      exemplarCity: 'ქაბული',
     ),
     'Asia/Kamchatka': TimeZoneNames(
-      city: 'კამჩატკა',
+      exemplarCity: 'კამჩატკა',
     ),
     'Asia/Karachi': TimeZoneNames(
-      city: 'კარაჩი',
+      exemplarCity: 'კარაჩი',
     ),
     'Asia/Katmandu': TimeZoneNames(
-      city: 'კატმანდუ',
+      exemplarCity: 'კატმანდუ',
     ),
     'Asia/Khandyga': TimeZoneNames(
-      city: 'ხანდიგა',
+      exemplarCity: 'ხანდიგა',
     ),
     'Asia/Krasnoyarsk': TimeZoneNames(
-      city: 'კრასნოიარსკი',
+      exemplarCity: 'კრასნოიარსკი',
     ),
     'Asia/Kuala_Lumpur': TimeZoneNames(
-      city: 'კუალა-ლუმპური',
+      exemplarCity: 'კუალა-ლუმპური',
     ),
     'Asia/Kuching': TimeZoneNames(
-      city: 'კუჩინგი',
+      exemplarCity: 'კუჩინგი',
     ),
     'Asia/Kuwait': TimeZoneNames(
-      city: 'ქუვეითი',
+      exemplarCity: 'ქუვეითი',
     ),
     'Asia/Macau': TimeZoneNames(
-      city: 'მაკაო',
+      exemplarCity: 'მაკაო',
     ),
     'Asia/Magadan': TimeZoneNames(
-      city: 'მაგადანი',
+      exemplarCity: 'მაგადანი',
     ),
     'Asia/Makassar': TimeZoneNames(
-      city: 'მაკასარი',
+      exemplarCity: 'მაკასარი',
     ),
     'Asia/Manila': TimeZoneNames(
-      city: 'მანილა',
+      exemplarCity: 'მანილა',
     ),
     'Asia/Muscat': TimeZoneNames(
-      city: 'მუსკატი',
+      exemplarCity: 'მუსკატი',
     ),
     'Asia/Nicosia': TimeZoneNames(
-      city: 'ნიკოსია',
+      exemplarCity: 'ნიკოსია',
     ),
     'Asia/Novokuznetsk': TimeZoneNames(
-      city: 'ნოვოკუზნეცკი',
+      exemplarCity: 'ნოვოკუზნეცკი',
     ),
     'Asia/Novosibirsk': TimeZoneNames(
-      city: 'ნოვოსიბირსკი',
+      exemplarCity: 'ნოვოსიბირსკი',
     ),
     'Asia/Omsk': TimeZoneNames(
-      city: 'ომსკი',
+      exemplarCity: 'ომსკი',
     ),
     'Asia/Oral': TimeZoneNames(
-      city: 'ორალი',
+      exemplarCity: 'ორალი',
     ),
     'Asia/Phnom_Penh': TimeZoneNames(
-      city: 'პნომპენი',
+      exemplarCity: 'პნომპენი',
     ),
     'Asia/Pontianak': TimeZoneNames(
-      city: 'პონტიანაკი',
+      exemplarCity: 'პონტიანაკი',
     ),
     'Asia/Pyongyang': TimeZoneNames(
-      city: 'ფხენიანი',
+      exemplarCity: 'ფხენიანი',
     ),
     'Asia/Qatar': TimeZoneNames(
-      city: 'კატარი',
+      exemplarCity: 'კატარი',
     ),
     'Asia/Qostanay': TimeZoneNames(
-      city: 'კოსტანაი',
+      exemplarCity: 'კოსტანაი',
     ),
     'Asia/Qyzylorda': TimeZoneNames(
-      city: 'ყიზილორდა',
+      exemplarCity: 'ყიზილორდა',
     ),
     'Asia/Rangoon': TimeZoneNames(
-      city: 'რანგუნი',
+      exemplarCity: 'რანგუნი',
     ),
     'Asia/Riyadh': TimeZoneNames(
-      city: 'ერ-რიადი',
+      exemplarCity: 'ერ-რიადი',
     ),
     'Asia/Saigon': TimeZoneNames(
-      city: 'ჰოჩიმინი',
+      exemplarCity: 'ჰოჩიმინი',
     ),
     'Asia/Sakhalin': TimeZoneNames(
-      city: 'სახალინი',
+      exemplarCity: 'სახალინი',
     ),
     'Asia/Samarkand': TimeZoneNames(
-      city: 'სამარყანდი',
+      exemplarCity: 'სამარყანდი',
     ),
     'Asia/Seoul': TimeZoneNames(
-      city: 'სეული',
+      exemplarCity: 'სეული',
     ),
     'Asia/Shanghai': TimeZoneNames(
-      city: 'შანხაი',
+      exemplarCity: 'შანხაი',
     ),
     'Asia/Singapore': TimeZoneNames(
-      city: 'სინგაპური',
+      exemplarCity: 'სინგაპური',
     ),
     'Asia/Srednekolymsk': TimeZoneNames(
-      city: 'სრედნეკოლიმსკი',
+      exemplarCity: 'სრედნეკოლიმსკი',
     ),
     'Asia/Taipei': TimeZoneNames(
-      city: 'ტაიპეი',
+      exemplarCity: 'ტაიპეი',
     ),
     'Asia/Tashkent': TimeZoneNames(
-      city: 'ტაშკენტი',
+      exemplarCity: 'ტაშკენტი',
     ),
     'Asia/Tbilisi': TimeZoneNames(
-      city: 'თბილისი',
+      exemplarCity: 'თბილისი',
     ),
     'Asia/Tehran': TimeZoneNames(
-      city: 'თეირანი',
+      exemplarCity: 'თეირანი',
     ),
     'Asia/Thimphu': TimeZoneNames(
-      city: 'თხიმფხუ',
+      exemplarCity: 'თხიმფხუ',
     ),
     'Asia/Tokyo': TimeZoneNames(
-      city: 'ტოკიო',
+      exemplarCity: 'ტოკიო',
     ),
     'Asia/Tomsk': TimeZoneNames(
-      city: 'ტომსკი',
+      exemplarCity: 'ტომსკი',
     ),
     'Asia/Ulaanbaatar': TimeZoneNames(
-      city: 'ულანბატარი',
+      exemplarCity: 'ულანბატარი',
     ),
     'Asia/Urumqi': TimeZoneNames(
-      city: 'ურუმქი',
+      exemplarCity: 'ურუმქი',
     ),
     'Asia/Ust-Nera': TimeZoneNames(
-      city: 'უსტ-ნერა',
+      exemplarCity: 'უსტ-ნერა',
     ),
     'Asia/Vientiane': TimeZoneNames(
-      city: 'ვიენტიანი',
+      exemplarCity: 'ვიენტიანი',
     ),
     'Asia/Vladivostok': TimeZoneNames(
-      city: 'ვლადივოსტოკი',
+      exemplarCity: 'ვლადივოსტოკი',
     ),
     'Asia/Yakutsk': TimeZoneNames(
-      city: 'იაკუტსკი',
+      exemplarCity: 'იაკუტსკი',
     ),
     'Asia/Yekaterinburg': TimeZoneNames(
-      city: 'ეკატერინბურგი',
+      exemplarCity: 'ეკატერინბურგი',
     ),
     'Asia/Yerevan': TimeZoneNames(
-      city: 'ერევანი',
+      exemplarCity: 'ერევანი',
     ),
     'Indian/Antananarivo': TimeZoneNames(
-      city: 'ანტანანარივუ',
+      exemplarCity: 'ანტანანარივუ',
     ),
     'Indian/Chagos': TimeZoneNames(
-      city: 'ჩაგოსი',
+      exemplarCity: 'ჩაგოსი',
     ),
     'Indian/Christmas': TimeZoneNames(
-      city: 'შობის კუნძული',
+      exemplarCity: 'შობის კუნძული',
     ),
     'Indian/Cocos': TimeZoneNames(
-      city: 'ქოქოსი',
+      exemplarCity: 'ქოქოსი',
     ),
     'Indian/Comoro': TimeZoneNames(
-      city: 'კომორო',
+      exemplarCity: 'კომორო',
     ),
     'Indian/Kerguelen': TimeZoneNames(
-      city: 'კერგელენი',
+      exemplarCity: 'კერგელენი',
     ),
     'Indian/Mahe': TimeZoneNames(
-      city: 'მაჰე',
+      exemplarCity: 'მაჰე',
     ),
     'Indian/Maldives': TimeZoneNames(
-      city: 'მალდივები',
+      exemplarCity: 'მალდივები',
     ),
     'Indian/Mauritius': TimeZoneNames(
-      city: 'მავრიკი',
+      exemplarCity: 'მავრიკი',
     ),
     'Indian/Mayotte': TimeZoneNames(
-      city: 'მაიოტი',
+      exemplarCity: 'მაიოტი',
     ),
     'Indian/Reunion': TimeZoneNames(
-      city: 'რეიუნიონი',
+      exemplarCity: 'რეიუნიონი',
     ),
     'Australia/Adelaide': TimeZoneNames(
-      city: 'ადელაიდა',
+      exemplarCity: 'ადელაიდა',
     ),
     'Australia/Brisbane': TimeZoneNames(
-      city: 'ბრისბეინი',
+      exemplarCity: 'ბრისბეინი',
     ),
     'Australia/Broken_Hill': TimeZoneNames(
-      city: 'ბროუკენ ჰილი',
+      exemplarCity: 'ბროუკენ ჰილი',
     ),
     'Australia/Darwin': TimeZoneNames(
-      city: 'დარვინი',
+      exemplarCity: 'დარვინი',
     ),
     'Australia/Eucla': TimeZoneNames(
-      city: 'ეუკლა',
+      exemplarCity: 'ეუკლა',
     ),
     'Australia/Hobart': TimeZoneNames(
-      city: 'ჰობარტი',
+      exemplarCity: 'ჰობარტი',
     ),
     'Australia/Lindeman': TimeZoneNames(
-      city: 'ლინდმანი',
+      exemplarCity: 'ლინდმანი',
     ),
     'Australia/Lord_Howe': TimeZoneNames(
-      city: 'ლორდ ჰოუი',
+      exemplarCity: 'ლორდ ჰოუი',
     ),
     'Australia/Melbourne': TimeZoneNames(
-      city: 'მელბურნი',
+      exemplarCity: 'მელბურნი',
     ),
     'Australia/Perth': TimeZoneNames(
-      city: 'პერთი',
+      exemplarCity: 'პერთი',
     ),
     'Australia/Sydney': TimeZoneNames(
-      city: 'სიდნეი',
+      exemplarCity: 'სიდნეი',
     ),
     'Pacific/Apia': TimeZoneNames(
-      city: 'აპია',
+      exemplarCity: 'აპია',
     ),
     'Pacific/Auckland': TimeZoneNames(
-      city: 'ოკლენდი',
+      exemplarCity: 'ოკლენდი',
     ),
     'Pacific/Bougainville': TimeZoneNames(
-      city: 'ბუგენვილი',
+      exemplarCity: 'ბუგენვილი',
     ),
     'Pacific/Chatham': TimeZoneNames(
-      city: 'ჩათამი',
+      exemplarCity: 'ჩათამი',
     ),
     'Pacific/Easter': TimeZoneNames(
-      city: 'ისთერი',
+      exemplarCity: 'ისთერი',
     ),
     'Pacific/Efate': TimeZoneNames(
-      city: 'ეფატე',
+      exemplarCity: 'ეფატე',
     ),
     'Pacific/Enderbury': TimeZoneNames(
-      city: 'ენდერბური',
+      exemplarCity: 'ენდერბური',
     ),
     'Pacific/Fakaofo': TimeZoneNames(
-      city: 'ფაკაოფო',
+      exemplarCity: 'ფაკაოფო',
     ),
     'Pacific/Fiji': TimeZoneNames(
-      city: 'ფიჯი',
+      exemplarCity: 'ფიჯი',
     ),
     'Pacific/Funafuti': TimeZoneNames(
-      city: 'ფუნაფუტი',
+      exemplarCity: 'ფუნაფუტი',
     ),
     'Pacific/Galapagos': TimeZoneNames(
-      city: 'გალაპაგოსი',
+      exemplarCity: 'გალაპაგოსი',
     ),
     'Pacific/Gambier': TimeZoneNames(
-      city: 'გამბიერი',
+      exemplarCity: 'გამბიერი',
     ),
     'Pacific/Guadalcanal': TimeZoneNames(
-      city: 'გვადალკანალი',
+      exemplarCity: 'გვადალკანალი',
     ),
     'Pacific/Guam': TimeZoneNames(
-      city: 'გუამი',
+      exemplarCity: 'გუამი',
     ),
     'Pacific/Honolulu': TimeZoneNames(
-      city: 'ჰონოლულუ',
+      exemplarCity: 'ჰონოლულუ',
     ),
     'Pacific/Kanton': TimeZoneNames(
-      city: 'კანტონი',
+      exemplarCity: 'კანტონი',
     ),
     'Pacific/Kiritimati': TimeZoneNames(
-      city: 'კირიტიმატი',
+      exemplarCity: 'კირიტიმატი',
     ),
     'Pacific/Kosrae': TimeZoneNames(
-      city: 'კოსრაე',
+      exemplarCity: 'კოსრაე',
     ),
     'Pacific/Kwajalein': TimeZoneNames(
-      city: 'კვაჯალეინი',
+      exemplarCity: 'კვაჯალეინი',
     ),
     'Pacific/Majuro': TimeZoneNames(
-      city: 'მახურო',
+      exemplarCity: 'მახურო',
     ),
     'Pacific/Marquesas': TimeZoneNames(
-      city: 'მარკეზასი',
+      exemplarCity: 'მარკეზასი',
     ),
     'Pacific/Midway': TimeZoneNames(
-      city: 'მიდუეი',
+      exemplarCity: 'მიდუეი',
     ),
     'Pacific/Nauru': TimeZoneNames(
-      city: 'ნაურუ',
+      exemplarCity: 'ნაურუ',
     ),
     'Pacific/Niue': TimeZoneNames(
-      city: 'ნიუე',
+      exemplarCity: 'ნიუე',
     ),
     'Pacific/Norfolk': TimeZoneNames(
-      city: 'ნორფოლკი',
+      exemplarCity: 'ნორფოლკი',
     ),
     'Pacific/Noumea': TimeZoneNames(
-      city: 'ნუმეა',
+      exemplarCity: 'ნუმეა',
     ),
     'Pacific/Pago_Pago': TimeZoneNames(
-      city: 'პაგო-პაგო',
+      exemplarCity: 'პაგო-პაგო',
     ),
     'Pacific/Palau': TimeZoneNames(
-      city: 'პალაუ',
+      exemplarCity: 'პალაუ',
     ),
     'Pacific/Pitcairn': TimeZoneNames(
-      city: 'პიტკერნი',
+      exemplarCity: 'პიტკერნი',
     ),
     'Pacific/Ponape': TimeZoneNames(
-      city: 'პონპეი',
+      exemplarCity: 'პონპეი',
     ),
     'Pacific/Port_Moresby': TimeZoneNames(
-      city: 'პორტ მორსბი',
+      exemplarCity: 'პორტ მორსბი',
     ),
     'Pacific/Rarotonga': TimeZoneNames(
-      city: 'რაროტონგა',
+      exemplarCity: 'რაროტონგა',
     ),
     'Pacific/Saipan': TimeZoneNames(
-      city: 'საიპანი',
+      exemplarCity: 'საიპანი',
     ),
     'Pacific/Tahiti': TimeZoneNames(
-      city: 'ტაიტი',
+      exemplarCity: 'ტაიტი',
     ),
     'Pacific/Tarawa': TimeZoneNames(
-      city: 'ტარაუა',
+      exemplarCity: 'ტარაუა',
     ),
     'Pacific/Tongatapu': TimeZoneNames(
-      city: 'ტონგატაპუ',
+      exemplarCity: 'ტონგატაპუ',
     ),
     'Pacific/Truk': TimeZoneNames(
-      city: 'ჩუუკი',
+      exemplarCity: 'ჩუუკი',
     ),
     'Pacific/Wake': TimeZoneNames(
-      city: 'უეიკი',
+      exemplarCity: 'უეიკი',
     ),
     'Pacific/Wallis': TimeZoneNames(
-      city: 'ვალისი',
+      exemplarCity: 'ვალისი',
     ),
     'Arctic/Longyearbyen': TimeZoneNames(
-      city: 'ლონგირბიენი',
+      exemplarCity: 'ლონგირბიენი',
     ),
     'Antarctica/Casey': TimeZoneNames(
-      city: 'კეისი',
+      exemplarCity: 'კეისი',
     ),
     'Antarctica/Davis': TimeZoneNames(
-      city: 'დევისი',
+      exemplarCity: 'დევისი',
     ),
     'Antarctica/DumontDUrville': TimeZoneNames(
-      city: 'დიუმონ დ’ურვილი',
+      exemplarCity: 'დიუმონ დ’ურვილი',
     ),
     'Antarctica/Macquarie': TimeZoneNames(
-      city: 'მექვორი',
+      exemplarCity: 'მექვორი',
     ),
     'Antarctica/Mawson': TimeZoneNames(
-      city: 'მოუსონი',
+      exemplarCity: 'მოუსონი',
     ),
     'Antarctica/McMurdo': TimeZoneNames(
-      city: 'მაკმურდო',
+      exemplarCity: 'მაკმურდო',
     ),
     'Antarctica/Palmer': TimeZoneNames(
-      city: 'პალმერი',
+      exemplarCity: 'პალმერი',
     ),
     'Antarctica/Rothera': TimeZoneNames(
-      city: 'როთერა',
+      exemplarCity: 'როთერა',
     ),
     'Antarctica/Syowa': TimeZoneNames(
-      city: 'სიოუა',
+      exemplarCity: 'სიოუა',
     ),
     'Antarctica/Troll': TimeZoneNames(
-      city: 'ტროლი',
+      exemplarCity: 'ტროლი',
     ),
     'Antarctica/Vostok': TimeZoneNames(
-      city: 'ვოსტოკი',
+      exemplarCity: 'ვოსტოკი',
     ),
     'Etc/UTC': TimeZoneNames(
       long: TimeZoneName(
@@ -10666,7 +10666,7 @@ class TimeZonesKa extends TimeZones {
       ),
     ),
     'Etc/Unknown': TimeZoneNames(
-      city: 'უცნობი ქალაქი',
+      exemplarCity: 'უცნობი ქალაქი',
     ),
   }, (key) => key.toLowerCase());
 

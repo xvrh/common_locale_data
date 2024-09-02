@@ -20,7 +20,7 @@ void main() {
   };
 
   var cld = locales[currentLanguage]!;
-//  var cld=CommonLocaleDataAll.locales[currentLanguage]!;
+
   print(CommonLocaleData.dataDownloadDate);
   print(CommonLocaleData.cldrVersion);
   print(CommonLocaleData.unicodeVersion);
@@ -58,14 +58,16 @@ void main() {
   print(zone.canonicalCode);
   print(zone.iana);
 
-  print(zone.location);
+  print(zone.exemplarCity);
 
-  print(zone.format(
-      TimeZoneStyle.genericLocation, DateTime.now(), Duration(hours: 1)));
-  print(zone.format(
-      TimeZoneStyle.genericLong, DateTime.now(), Duration(hours: 1)));
-  print(zone.format(
-      TimeZoneStyle.genericShort, DateTime.now(), Duration(hours: 1)));
-  print(zone.format(
-      TimeZoneStyle.iso8601ExtendedFixed, DateTime.now(), Duration(hours: 1)));
+  print(zone.format(TimeZoneStyle.genericLocation, Duration(hours: 1)));
+  print(zone.format(TimeZoneStyle.genericLong, Duration(hours: 1)));
+  print(zone.format(TimeZoneStyle.genericShort, Duration(hours: 1)));
+  print(zone.format(TimeZoneStyle.iso8601ExtendedFixed, Duration(hours: 1)));
+
+  // Demonstrate different timezone names at different times
+  print(cld.timeZones['America/Buenos_Aires']);
+  print(cld.timeZones.get('America/Buenos_Aires', dateTime: DateTime(2008)));
+  print(cld.timeZones
+      .get('America/Buenos_Aires', dateTime: DateTime(2004, 6, 2)));
 }

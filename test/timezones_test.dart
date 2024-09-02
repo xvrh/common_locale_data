@@ -20,20 +20,20 @@ void main() {
 
     expect(
         en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericLong, DateTime.now(), Duration()),
+            ?.format(TimeZoneStyle.genericLong, Duration()),
         'Central European Time');
     expect(
         fr.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericLong, DateTime.now(), Duration()),
+            ?.format(TimeZoneStyle.genericLong, Duration()),
         'heure d’Europe centrale');
 
     expect(
         en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericShort, DateTime.now(), Duration()),
+            ?.format(TimeZoneStyle.genericShort, Duration()),
         'France Time');
     expect(
         en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.daylightShort, DateTime.now(), Duration()),
+            ?.format(TimeZoneStyle.daylightShort, Duration()),
         'France Daylight Time');
   });
 
@@ -61,9 +61,8 @@ void main() {
         ['CST6CDT', 'EST5EDT', 'Etc/GMT', 'MST7MDT', 'PST8PDT']);
 
     expect(
-        TimeZoneMapping.zoneToTerritory.values
-            .toSet()
-            .difference(CommonLocaleDataEn().territories.countries.keys.toSet()),
+        TimeZoneMapping.zoneToTerritory.values.toSet().difference(
+            CommonLocaleDataEn().territories.countries.keys.toSet()),
         []);
   });
 }

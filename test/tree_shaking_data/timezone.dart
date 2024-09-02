@@ -6,7 +6,7 @@ void main() {
   print(CommonLocaleDataFr().timeZones['Europe/Paris']);
   print(CommonLocaleDataFr()
       .timeZones['Europe/Paris']
-      ?.format(TimeZoneStyle.daylightLong, DateTime.now(), Duration()));
+      ?.format(TimeZoneStyle.daylightLong, Duration()));
 }
 
 final expected = ['heure :', 'France', 'Central European Time', 'Royaume-Uni'];
