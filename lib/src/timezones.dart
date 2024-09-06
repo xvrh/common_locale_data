@@ -12,29 +12,29 @@ enum TimeZoneStyle {
   /// It is also a fallback format when there is no translation for the generic non-location format.
   genericLocation,
 
-  /// Abbreviated generic non-location format (e.g. PST or CET).
-  genericShort,
-
   /// Long generic non-location format (e.g. Pacific Time or Central European Time).
   genericLong,
 
-  /// Abbreviated non-location daylight savings time format (e.g. PDT or CEST).
-  daylightShort,
-
-  /// Long non-location daylight savings time format (e.g. Pacific Daylight Time or Central European Summer Time).
-  daylightLong,
-
-  /// Abbreviated non-location standard (=non-daylight savings) time format (e.g. PST or CET).
-  standardShort,
+  /// Abbreviated generic non-location format (e.g. PST or CET).
+  genericShort,
 
   /// Long non-location standard (=non-daylight savings) time format (e.g. Pacific Standard Time or Central European Time).
   standardLong,
 
-  /// Short form of constant, specific offset from GMT (or UTC), which may be in a translated form (e.g. GMT, GMT+3:30 or UTC-3).
-  localizedGmtShort,
+  /// Abbreviated non-location standard (=non-daylight savings) time format (e.g. PST or CET).
+  standardShort,
+
+  /// Long non-location daylight savings time format (e.g. Pacific Daylight Time or Central European Summer Time).
+  daylightLong,
+
+  /// Abbreviated non-location daylight savings time format (e.g. PDT or CEST).
+  daylightShort,
 
   /// Long form of constant, specific offset from GMT (or UTC), which may be in a translated form (e.g. GMT, GMT+03:30 or UTC-3.00).
   localizedGmtLong,
+
+  /// Short form of constant, specific offset from GMT (or UTC), which may be in a translated form (e.g. GMT, GMT+3:30 or UTC-3).
+  localizedGmtShort,
 
   /// Short ISO8601 based format without separators (e.g. Z, +01, +0159).
   iso8601BasicShort,
@@ -148,7 +148,7 @@ abstract class TimeZones {
       case TimeZoneStyle.iso8601ExtendedLocalFull:
         return _formatISO8601(offset, false, false, true, false);
 
-      // Fallbacks as the actual TimeZone is not available in teh TimeZones class
+      // Fallbacks as the actual TimeZone is not available in the TimeZones class
       case TimeZoneStyle.genericLocation:
       case TimeZoneStyle.genericLong:
       case TimeZoneStyle.daylightLong:
@@ -253,13 +253,13 @@ class TimeZone {
   final TimeZoneName short;
 
   /// The localized location (most often city, sometimes country) for this timezone.
-  final String exemplarCity;
+  final String? exemplarCity;
 
   /// The localized country for this timezone.
   final String? country;
 
-  /// The localized region for this timezone (country when it is the primary or single timezone for a country, exemplarCity otherwise);
-  final String? region;
+  // The timezone is teh only zone in the country or the primary zone for teh country
+  final bool isPrimaryOrSingle;
 
   TimeZone._(this._timeZones,
       {required this.code,
@@ -271,7 +271,7 @@ class TimeZone {
       required this.short,
       required this.exemplarCity,
       required this.country,
-      required this.region});
+      required this.isPrimaryOrSingle});
 
   factory TimeZone(TimeZones timeZones, String code, DateTime? dateTime) {
     dateTime ??= DateTime.timestamp();
@@ -288,29 +288,28 @@ class TimeZone {
     var metaZone = timeZones.metaZoneNames[metaZoneCode];
 
     var territoryCode = TimeZoneMapping.zoneToTerritory[canonicalCode];
-    var country = timeZones._territories.countries[territoryCode]?.name;
+    var country =
+        timeZones._territories.countries[territoryCode]?.name ?? territoryCode;
 
     var (isPrimaryOrSingle, dateRange) = _checkPrimaryOrSingle(
         metaZoneInfo?.key ?? DateRange(), territoryCode, dateTime);
 
-    var fallbackCity = canonicalCode.split('/').last.replaceAll('_', ' ');
+    var parts = canonicalCode.split('/');
+    var fallbackCity =
+        parts.length < 2 ? null : parts.last.replaceAll('_', ' ');
     var exemplarCity = timeZoneName.exemplarCity ?? fallbackCity;
 
-    var region = isPrimaryOrSingle ? country : exemplarCity;
-
-    return TimeZone._(
-      timeZones,
-      code: code,
-      canonicalCode: canonicalCode,
-      iana: iana,
-      dateRange: dateRange,
-      metaZone: metaZone,
-      long: TimeZoneName._merge(timeZoneName.long, metaZone?.long),
-      short: TimeZoneName._merge(timeZoneName.short, metaZone?.short),
-      exemplarCity: exemplarCity,
-      country: country,
-      region: region,
-    );
+    return TimeZone._(timeZones,
+        code: code,
+        canonicalCode: canonicalCode,
+        iana: iana,
+        dateRange: dateRange,
+        metaZone: metaZone,
+        long: timeZoneName.long ?? TimeZoneName(),
+        short: timeZoneName.short ?? TimeZoneName(),
+        exemplarCity: exemplarCity,
+        country: country,
+        isPrimaryOrSingle: isPrimaryOrSingle);
   }
 
   static Set<String> _getMetaZonesForTerritory(
@@ -330,38 +329,20 @@ class TimeZone {
 
   /// Format the timezone in the desired [style]; the [offset] is used for
   /// numeric formats (or if the textual formats fall back to a numeric format).
-  String format(TimeZoneStyle style, Duration offset) {
+  String format(TimeZoneStyle style, Duration offset,
+      {String? currentTerritoryCode}) {
     switch (style) {
       case TimeZoneStyle.genericLocation:
-        return _formatGenericLocation(style, offset);
+        return _formatLocation(style, offset);
 
-      // TODO: implement full fallback for non-location formats to include country or city (https://unicode.org/reports/tr35/tr35-dates.html#using-time-zone-names)
       case TimeZoneStyle.genericShort:
-        return short.generic ??
-            short.standard ??
-            _formatGenericLocation(style, offset);
       case TimeZoneStyle.genericLong:
-        return long.generic ??
-            long.standard ??
-            _formatGenericLocation(style, offset);
       case TimeZoneStyle.daylightShort:
-        return short.daylight ??
-            short.generic ??
-            short.standard ??
-            _formatGenericLocation(style, offset);
       case TimeZoneStyle.daylightLong:
-        return long.daylight ??
-            long.generic ??
-            long.standard ??
-            _formatGenericLocation(style, offset);
       case TimeZoneStyle.standardShort:
-        return short.standard ??
-            short.generic ??
-            _formatGenericLocation(style, offset);
       case TimeZoneStyle.standardLong:
-        return long.standard ??
-            long.generic ??
-            _formatGenericLocation(style, offset);
+        return _formatNonLocation(style, offset,
+            countryCode: currentTerritoryCode);
 
       case TimeZoneStyle.localizedGmtShort:
       case TimeZoneStyle.localizedGmtLong:
@@ -379,28 +360,126 @@ class TimeZone {
     }
   }
 
-  String _formatGenericLocation(TimeZoneStyle style, Duration offset) {
-    var region = this.region;
+  String _formatLocation(TimeZoneStyle style, Duration offset) {
+    var region = isPrimaryOrSingle ? country : exemplarCity;
+
     if (region == null) {
       return _timeZones.format(style, offset);
+    } else {
+      switch (style) {
+        case TimeZoneStyle.genericLocation:
+        case TimeZoneStyle.genericShort:
+        case TimeZoneStyle.genericLong:
+          return _timeZones._regionFormat.replaceAll('{0}', region);
+        case TimeZoneStyle.daylightShort:
+        case TimeZoneStyle.daylightLong:
+          return _timeZones._regionFormatDaylight.replaceAll('{0}', region);
+        case TimeZoneStyle.standardShort:
+        case TimeZoneStyle.standardLong:
+          return _timeZones._regionFormatStandard.replaceAll('{0}', region);
+
+        case TimeZoneStyle.localizedGmtShort:
+        case TimeZoneStyle.localizedGmtLong:
+        case TimeZoneStyle.iso8601BasicShort:
+        case TimeZoneStyle.iso8601BasicLocalShort:
+        case TimeZoneStyle.iso8601BasicFixed:
+        case TimeZoneStyle.iso8601BasicLocalFixed:
+        case TimeZoneStyle.iso8601BasicFull:
+        case TimeZoneStyle.iso8601BasicLocalFull:
+        case TimeZoneStyle.iso8601ExtendedFixed:
+        case TimeZoneStyle.iso8601ExtendedLocalFixed:
+        case TimeZoneStyle.iso8601ExtendedFull:
+        case TimeZoneStyle.iso8601ExtendedLocalFull:
+          return _timeZones.format(style, offset);
+      }
+    }
+  }
+
+  /// Format non-location according to Unicode tr35 "Using Timezone Names" -
+  /// "For the non-location formats (generic or specific)".
+  ///
+  /// This differs from the icu4c/4j implementation in 2 ways (both because of
+  /// absence of the actual timezone offset / not including tzdb):
+  ///  - Type fallback officially only includes standard if with +/-184 days no
+  ///    daylight change happens. This implementation always tries standard as
+  ///    fallback.
+  ///  - Instead of checking the timezone offset to see if the partial location
+  ///    format should be used it compares the preferred zone to actual zone
+  ///    (which is actually what tr35 specifies).
+  String _formatNonLocation(TimeZoneStyle style, Duration offset,
+      {String? countryCode = '001'}) {
+    // Step 1 explicit translation for timezone
+    var name = switch (style) {
+      TimeZoneStyle.genericShort => short.generic ?? short.standard,
+      TimeZoneStyle.genericLong => long.generic ?? long.standard,
+      TimeZoneStyle.daylightShort =>
+        short.daylight ?? short.generic ?? short.standard,
+      TimeZoneStyle.daylightLong =>
+        long.daylight ?? long.generic ?? long.standard,
+      TimeZoneStyle.standardShort => short.standard ?? short.generic,
+      TimeZoneStyle.standardLong => long.standard ?? long.generic,
+      _ => null,
+    };
+
+    if (name != null) return name;
+
+    // if no meta zone use location format
+    var metaZone = this.metaZone;
+    if (metaZone == null) {
+      return _formatLocation(style, offset);
     }
 
-    switch (style) {
-      case TimeZoneStyle.genericLocation:
-      case TimeZoneStyle.genericShort:
-      case TimeZoneStyle.genericLong:
-        return _timeZones._regionFormat.replaceAll('{0}', region);
+    var metaZoneName = switch (style) {
+      TimeZoneStyle.genericShort =>
+        metaZone.short?.generic ?? metaZone.short?.standard,
+      TimeZoneStyle.genericLong =>
+        metaZone.long?.generic ?? metaZone.long?.standard,
+      TimeZoneStyle.daylightShort => metaZone.short?.daylight ??
+          metaZone.short?.generic ??
+          metaZone.short?.standard,
+      TimeZoneStyle.daylightLong => metaZone.long?.daylight ??
+          metaZone.long?.generic ??
+          metaZone.long?.standard,
+      TimeZoneStyle.standardShort =>
+        metaZone.short?.standard ?? metaZone.short?.generic,
+      TimeZoneStyle.standardLong =>
+        metaZone.long?.standard ?? metaZone.long?.generic,
+      _ => null,
+    };
 
-      case TimeZoneStyle.daylightShort:
-      case TimeZoneStyle.daylightLong:
-        return _timeZones._regionFormatDaylight.replaceAll('{0}', region);
+    // if no meta zone name use location format
+    if (metaZoneName == null) {
+      return _formatLocation(style, offset);
+    }
 
-      case TimeZoneStyle.standardShort:
-      case TimeZoneStyle.standardLong:
-        return _timeZones._regionFormatStandard.replaceAll('{0}', region);
+    var preferredZoneForCurrent = TimeZoneMapping
+            .metaZoneToZoneForTerritory[(metaZone.code, countryCode)] ??
+        TimeZoneMapping.metaZoneToZoneForTerritory[(metaZone.code, '001')];
 
-      case _:
-        return _timeZones.format(style, offset);
+    if (preferredZoneForCurrent == canonicalCode) {
+      // Step 2: check if zone==preferred zone and use meta zone name if true
+      return metaZoneName;
+    } else {
+      // Step 3: check if preferred zone==the requested zone, if so use country, otherwise city
+
+      var territoryForZone =
+          TimeZoneMapping.zoneToTerritory[canonicalCode] ??= '001';
+
+      var preferredZone = TimeZoneMapping
+              .metaZoneToZoneForTerritory[(metaZone.code, territoryForZone)] ??
+          TimeZoneMapping.metaZoneToZoneForTerritory[(metaZone.code, '001')];
+
+      var region = (preferredZone == canonicalCode)
+          ? (country ?? exemplarCity)
+          : exemplarCity;
+
+      if (region == null) {
+        return canonicalCode;
+      } else {
+        return _timeZones._fallbackFormat
+            .replaceAll('{0}', region)
+            .replaceAll('{1}', metaZoneName);
+      }
     }
   }
 
@@ -514,14 +593,6 @@ class TimeZoneName {
   final String? daylight;
 
   TimeZoneName({this.generic, this.standard, this.daylight});
-
-  static TimeZoneName _merge(TimeZoneName? name1, TimeZoneName? name2) {
-    return TimeZoneName(
-      generic: name1?.generic ?? name2?.generic,
-      daylight: name1?.daylight ?? name2?.daylight,
-      standard: name1?.standard ?? name2?.standard,
-    );
-  }
 }
 
 /// Meta zone is used as a generic zone for a group of locations
@@ -583,7 +654,6 @@ class DateRange {
   }
 
   @override
-  // TODO: implement hashCode
   int get hashCode => Object.hash(from, to);
 
   @override

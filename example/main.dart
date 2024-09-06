@@ -10,7 +10,7 @@ void main() {
 
   // If your app support several languages, dynamically choose the language you want
   // from a map you create yourself.
-  var currentLanguage = 'en';
+  var currentLanguage = 'en-GB';
 
   var locales = const {
     'en-GB': CommonLocaleDataEnGB(),
@@ -52,18 +52,25 @@ void main() {
   print(cld.languages['en']!.name); // English
 
   print('');
-  var zone = cld.timeZones['America/Coral_Harbour']!;
+  var zone = cld.timeZones.get('America/Los_Angeles', dateTime: DateTime(2017))!;
 
-  print(zone.code);
-  print(zone.canonicalCode);
-  print(zone.iana);
+  print('code: ${zone.code}');
+  print('canonicalCode: ${zone.canonicalCode}');
+  print('ianaCode: ${zone.iana}');
+  print('exemplarCity: ${zone.exemplarCity}');
+  print('country: ${zone.country}');
+  print('isPrimaryOrSingle: ${zone.isPrimaryOrSingle}');
+  print('dateRange: ${zone.dateRange}');
+  print('');
 
-  print(zone.exemplarCity);
+  for (var style in TimeZoneStyle.values) {
+    print(
+        '${style.name} in own: ${zone.format(style, Duration(hours: -7, minutes: 0))}');
+//    print(
+//        '${style.name} in CA: ${zone.format(style, Duration(hours: -7, minutes: 0), currentTerritoryCode: 'CA')}');
+  }
 
-  print(zone.format(TimeZoneStyle.genericLocation, Duration(hours: 1)));
-  print(zone.format(TimeZoneStyle.genericLong, Duration(hours: 1)));
-  print(zone.format(TimeZoneStyle.genericShort, Duration(hours: 1)));
-  print(zone.format(TimeZoneStyle.iso8601ExtendedFixed, Duration(hours: 1)));
+  return;
 
   // Demonstrate different timezone names at different times
   print(cld.timeZones['America/Buenos_Aires']);
