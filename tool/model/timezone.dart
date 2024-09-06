@@ -113,9 +113,11 @@ class TimeZoneMapping {
 
   var aliasToCanonical = <String, String>{};
   var canonicalToIana = <String, String>{};
+  var canonicalToShort = <String, String>{};
   for (var entry in aliases.entries) {
     if (entry.value is Map<String, dynamic>) {
-      //var key = entry.key; CLDR shortname, curently not used
+      var key = entry.key; // CLDR shortname
+
       var value = (entry.value as Map<String, dynamic>).cast<String, String>();
 
       // description not used
@@ -123,6 +125,8 @@ class TimeZoneMapping {
       var aliases = value['_alias'] ?? '';
       var parts = aliases.split(' ');
       var iana = value['_iana'] ?? parts.first;
+
+      canonicalToShort[parts.first] = key;
 
       if (parts.first != iana) {
         canonicalToIana[parts.first] = iana;
@@ -136,16 +140,29 @@ class TimeZoneMapping {
     }
   }
 
-  writeCanonicalizedMapCode(code, 'aliasToZone', aliasToCanonical, 'Maps timezone code to canonical code.');
+  writeCanonicalizedMapCode(code, 'aliasToZone', aliasToCanonical,
+      'Maps timezone code to canonical code.');
 
-  writeCanonicalizedMapCode(code, 'zoneToIana', canonicalToIana, 'Maps canonical timezone to IANA/Olson.');
+  writeCanonicalizedMapCode(code, 'zoneToIana', canonicalToIana,
+      'Maps canonical timezone to IANA/Olson.');
+
+  writeCanonicalizedMapCode(code, 'zoneToShort', canonicalToShort,
+      'Maps canonical timezone to short id.');
+
+  writeCanonicalizedMapCode(
+      code,
+      'shortToZone',
+      Map.fromEntries(
+          canonicalToShort.entries.map((e) => MapEntry(e.value, e.key))),
+      'Maps short id to canonical timezone.');
 
   var primaryZones = readJsonData(
     'tool/data/core/supplemental/primaryZones.json',
     'supplemental/primaryZones',
   ).cast<String, String>();
 
-  writeCanonicalizedMapCode(code, 'territoryToPrimaryZone', primaryZones, 'Maps territory to primary timezone.');
+  writeCanonicalizedMapCode(code, 'territoryToPrimaryZone', primaryZones,
+      'Maps territory to primary timezone.');
 
   var territoryMappings = readTable('tool/data/tzdb/zone.tab.txt');
   var territoryOverrides = readTable('tool/data/tzdb/icuregions.txt');
@@ -164,7 +181,8 @@ class TimeZoneMapping {
     zoneToTerritory[zone] = territoryOverride[1];
   }
 
-  writeCanonicalizedMapCode(code, 'zoneToTerritory', zoneToTerritory, 'Maps canonical timezone to territory.');
+  writeCanonicalizedMapCode(code, 'zoneToTerritory', zoneToTerritory,
+      'Maps canonical timezone to territory.');
 
   var territories = zoneToTerritory.values.toSet().toList();
   var territoryToZones = {

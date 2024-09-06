@@ -240,6 +240,9 @@ class TimeZone {
   /// Timezone code in IANA/Olson database.
   final String iana;
 
+  /// The short unicode id.
+  final String? short;
+
   /// Meta zone for this timezone.
   final MetaZone? metaZone;
 
@@ -247,10 +250,10 @@ class TimeZone {
   final DateRange dateRange;
 
   /// The localized long names for this timezone.
-  final TimeZoneName long;
+  final TimeZoneName longNames;
 
   /// The localized abbreviated names for this timezone.
-  final TimeZoneName short;
+  final TimeZoneName shortNames;
 
   /// The localized location (most often city, sometimes country) for this timezone.
   final String? exemplarCity;
@@ -265,10 +268,11 @@ class TimeZone {
       {required this.code,
       required this.canonicalCode,
       required this.iana,
+      required this.short,
       required this.metaZone,
       required this.dateRange,
-      required this.long,
-      required this.short,
+      required this.longNames,
+      required this.shortNames,
       required this.exemplarCity,
       required this.country,
       required this.isPrimaryOrSingle});
@@ -278,6 +282,7 @@ class TimeZone {
 
     var canonicalCode = TimeZoneMapping.aliasToZone[code] ?? code;
     var iana = TimeZoneMapping.zoneToIana[canonicalCode] ?? canonicalCode;
+    var short = TimeZoneMapping.zoneToShort[canonicalCode];
 
     var timeZoneName =
         timeZones.timeZoneNames[canonicalCode] ?? TimeZoneNames();
@@ -303,10 +308,11 @@ class TimeZone {
         code: code,
         canonicalCode: canonicalCode,
         iana: iana,
+        short: short,
         dateRange: dateRange,
         metaZone: metaZone,
-        long: timeZoneName.long ?? TimeZoneName(),
-        short: timeZoneName.short ?? TimeZoneName(),
+        longNames: timeZoneName.long ?? TimeZoneName(),
+        shortNames: timeZoneName.short ?? TimeZoneName(),
         exemplarCity: exemplarCity,
         country: country,
         isPrimaryOrSingle: isPrimaryOrSingle);
@@ -410,14 +416,14 @@ class TimeZone {
       {String? countryCode = '001'}) {
     // Step 1 explicit translation for timezone
     var name = switch (style) {
-      TimeZoneStyle.genericShort => short.generic ?? short.standard,
-      TimeZoneStyle.genericLong => long.generic ?? long.standard,
+      TimeZoneStyle.genericShort => shortNames.generic ?? shortNames.standard,
+      TimeZoneStyle.genericLong => longNames.generic ?? longNames.standard,
       TimeZoneStyle.daylightShort =>
-        short.daylight ?? short.generic ?? short.standard,
+        shortNames.daylight ?? shortNames.generic ?? shortNames.standard,
       TimeZoneStyle.daylightLong =>
-        long.daylight ?? long.generic ?? long.standard,
-      TimeZoneStyle.standardShort => short.standard ?? short.generic,
-      TimeZoneStyle.standardLong => long.standard ?? long.generic,
+        longNames.daylight ?? longNames.generic ?? longNames.standard,
+      TimeZoneStyle.standardShort => shortNames.standard ?? shortNames.generic,
+      TimeZoneStyle.standardLong => longNames.standard ?? longNames.generic,
       _ => null,
     };
 

@@ -57,6 +57,7 @@ void main() {
   print('code: ${zone.code}');
   print('canonicalCode: ${zone.canonicalCode}');
   print('ianaCode: ${zone.iana}');
+  print('shortCode: ${zone.short}');
   print('exemplarCity: ${zone.exemplarCity}');
   print('country: ${zone.country}');
   print('isPrimaryOrSingle: ${zone.isPrimaryOrSingle}');
