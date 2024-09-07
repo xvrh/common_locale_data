@@ -282,7 +282,7 @@ class TimeZone {
 
     var canonicalCode = TimeZoneMapping.aliasToZone[code] ?? code;
     var iana = TimeZoneMapping.zoneToIana[canonicalCode] ?? canonicalCode;
-    var short = TimeZoneMapping.zoneToShort[canonicalCode];
+    var short = TimeZoneMapping.zoneToShort[canonicalCode] ?? 'unk';
 
     var timeZoneName =
         timeZones.timeZoneNames[canonicalCode] ?? TimeZoneNames();
@@ -296,12 +296,13 @@ class TimeZone {
     var country =
         timeZones._territories.countries[territoryCode]?.name ?? territoryCode;
 
-    var (isPrimaryOrSingle, dateRange) = _checkPrimaryOrSingle(
+    var (isPrimaryOrSingle, dateRange) = _checkPrimaryOrSingle(canonicalCode,
         metaZoneInfo?.key ?? DateRange(), territoryCode, dateTime);
 
     var parts = canonicalCode.split('/');
-    var fallbackCity =
-        parts.length < 2 ? null : parts.last.replaceAll('_', ' ');
+    var fallbackCity = parts.length < 2 || parts[0] == 'Etc'
+        ? timeZones.timeZoneNames['Etc/Unknown']?.exemplarCity ?? 'unk'
+        : parts.last.replaceAll('_', ' ');
     var exemplarCity = timeZoneName.exemplarCity ?? fallbackCity;
 
     return TimeZone._(timeZones,
@@ -335,8 +336,7 @@ class TimeZone {
 
   /// Format the timezone in the desired [style]; the [offset] is used for
   /// numeric formats (or if the textual formats fall back to a numeric format).
-  String format(TimeZoneStyle style, Duration offset,
-      {String? currentTerritoryCode}) {
+  String format(TimeZoneStyle style, Duration offset, {String? country}) {
     switch (style) {
       case TimeZoneStyle.genericLocation:
         return _formatLocation(style, offset);
@@ -347,8 +347,7 @@ class TimeZone {
       case TimeZoneStyle.daylightLong:
       case TimeZoneStyle.standardShort:
       case TimeZoneStyle.standardLong:
-        return _formatNonLocation(style, offset,
-            countryCode: currentTerritoryCode);
+        return _formatNonLocation(style, offset, countryCode: country);
 
       case TimeZoneStyle.localizedGmtShort:
       case TimeZoneStyle.localizedGmtLong:
@@ -373,17 +372,19 @@ class TimeZone {
       return _timeZones.format(style, offset);
     } else {
       switch (style) {
-        case TimeZoneStyle.genericLocation:
         case TimeZoneStyle.genericShort:
+        case TimeZoneStyle.genericLocation:
         case TimeZoneStyle.genericLong:
           return _timeZones._regionFormat.replaceAll('{0}', region);
-        case TimeZoneStyle.daylightShort:
+
         case TimeZoneStyle.daylightLong:
           return _timeZones._regionFormatDaylight.replaceAll('{0}', region);
-        case TimeZoneStyle.standardShort:
+
         case TimeZoneStyle.standardLong:
           return _timeZones._regionFormatStandard.replaceAll('{0}', region);
 
+        case TimeZoneStyle.daylightShort:
+        case TimeZoneStyle.standardShort:
         case TimeZoneStyle.localizedGmtShort:
         case TimeZoneStyle.localizedGmtLong:
         case TimeZoneStyle.iso8601BasicShort:
@@ -413,7 +414,7 @@ class TimeZone {
   ///    format should be used it compares the preferred zone to actual zone
   ///    (which is actually what tr35 specifies).
   String _formatNonLocation(TimeZoneStyle style, Duration offset,
-      {String? countryCode = '001'}) {
+      {String? countryCode}) {
     // Step 1 explicit translation for timezone
     var name = switch (style) {
       TimeZoneStyle.genericShort => shortNames.generic ?? shortNames.standard,
@@ -440,12 +441,8 @@ class TimeZone {
         metaZone.short?.generic ?? metaZone.short?.standard,
       TimeZoneStyle.genericLong =>
         metaZone.long?.generic ?? metaZone.long?.standard,
-      TimeZoneStyle.daylightShort => metaZone.short?.daylight ??
-          metaZone.short?.generic ??
-          metaZone.short?.standard,
-      TimeZoneStyle.daylightLong => metaZone.long?.daylight ??
-          metaZone.long?.generic ??
-          metaZone.long?.standard,
+      TimeZoneStyle.daylightShort => metaZone.short?.daylight,
+      TimeZoneStyle.daylightLong => metaZone.long?.daylight,
       TimeZoneStyle.standardShort =>
         metaZone.short?.standard ?? metaZone.short?.generic,
       TimeZoneStyle.standardLong =>
@@ -456,6 +453,10 @@ class TimeZone {
     // if no meta zone name use location format
     if (metaZoneName == null) {
       return _formatLocation(style, offset);
+    }
+
+    if (countryCode == null) {
+      return metaZoneName;
     }
 
     var preferredZoneForCurrent = TimeZoneMapping
@@ -489,10 +490,10 @@ class TimeZone {
     }
   }
 
-  static (bool, DateRange) _checkPrimaryOrSingle(
+  static (bool, DateRange) _checkPrimaryOrSingle(String canonicalCode,
       DateRange dateRange, String? territoryCode, DateTime dateTime) {
-    var isPrimaryOrSingle =
-        TimeZoneMapping.territoryToPrimaryZone.containsKey(territoryCode);
+    var primaryZone = TimeZoneMapping.territoryToPrimaryZone[territoryCode];
+    var isPrimaryOrSingle = primaryZone == canonicalCode;
 
     if (!isPrimaryOrSingle) {
       var zonesForTerritory = TimeZoneMapping.territoryToZones[territoryCode];

@@ -126,15 +126,17 @@ class TimeZoneMapping {
       var parts = aliases.split(' ');
       var iana = value['_iana'] ?? parts.first;
 
-      canonicalToShort[parts.first] = key;
+      if (aliases.isNotEmpty) {
+        canonicalToShort[parts.first] = key;
 
-      if (parts.first != iana) {
-        canonicalToIana[parts.first] = iana;
-      }
+        if (parts.first != iana) {
+          canonicalToIana[parts.first] = iana;
+        }
 
-      for (var alias in parts) {
-        if (alias != parts.first) {
-          aliasToCanonical[alias] = parts.first;
+        for (var alias in parts) {
+          if (alias != parts.first) {
+            aliasToCanonical[alias] = parts.first;
+          }
         }
       }
     }
