@@ -1,4 +1,5 @@
 import 'package:common_locale_data/common_locale_data.dart';
+import 'package:common_locale_data/en_gb.dart';
 import 'package:common_locale_data/src/data/en.dart';
 import 'package:common_locale_data/src/data/fr.dart';
 import 'package:test/test.dart';
@@ -14,7 +15,7 @@ List<T> getDuplicates<T>(Iterable<T> iterable) {
 void main() {
   test('timezone names', () {
     var fr = CommonLocaleDataFr();
-    var en = CommonLocaleDataEn();
+    var en = CommonLocaleDataEnGB();
     expect(en.timeZones['europe/paris'].toString(), 'France Time');
     expect(fr.timeZones['europe/paris'].toString(), 'heure : France');
 
@@ -30,11 +31,27 @@ void main() {
     expect(
         en.timeZones['europe/paris']
             ?.format(TimeZoneStyle.genericShort, Duration()),
-        'France Time');
+        'CET');
     expect(
         en.timeZones['europe/paris']
             ?.format(TimeZoneStyle.daylightShort, Duration()),
-        'France Daylight Time');
+        'CEST');
+    expect(
+        en.timeZones['europe/dublin']
+            ?.format(TimeZoneStyle.daylightLong, Duration()),
+        'Irish Standard Time');
+    expect(
+        en.timeZones['europe/dublin']
+            ?.format(TimeZoneStyle.daylightShort, Duration()),
+        'GMT');
+    expect(
+        en.timeZones['europe/dublin']
+            ?.format(TimeZoneStyle.standardLong, Duration()),
+        'Greenwich Mean Time');
+    expect(
+        en.timeZones['europe/dublin']
+            ?.format(TimeZoneStyle.standardShort, Duration()),
+        'GMT');
   });
 
   test('missing timezone data', () {

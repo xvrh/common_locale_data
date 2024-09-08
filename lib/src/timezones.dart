@@ -255,27 +255,33 @@ class TimeZone {
   /// The localized abbreviated names for this timezone.
   final TimeZoneName shortNames;
 
-  /// The localized location (most often city, sometimes country) for this timezone.
-  final String? exemplarCity;
+  /// The code of .
+  final String? territoryCode;
 
   /// The localized country for this timezone.
   final String? country;
 
+  /// The localized location (most often city, sometimes country) for this timezone.
+  final String? exemplarCity;
+
   // The timezone is teh only zone in the country or the primary zone for teh country
   final bool isPrimaryOrSingle;
 
-  TimeZone._(this._timeZones,
-      {required this.code,
-      required this.canonicalCode,
-      required this.iana,
-      required this.short,
-      required this.metaZone,
-      required this.dateRange,
-      required this.longNames,
-      required this.shortNames,
-      required this.exemplarCity,
-      required this.country,
-      required this.isPrimaryOrSingle});
+  TimeZone._(
+    this._timeZones, {
+    required this.code,
+    required this.canonicalCode,
+    required this.iana,
+    required this.short,
+    required this.metaZone,
+    required this.dateRange,
+    required this.longNames,
+    required this.shortNames,
+    required this.territoryCode,
+    required this.exemplarCity,
+    required this.country,
+    required this.isPrimaryOrSingle,
+  });
 
   factory TimeZone(TimeZones timeZones, String code, DateTime? dateTime) {
     dateTime ??= DateTime.timestamp();
@@ -312,6 +318,7 @@ class TimeZone {
         short: short,
         dateRange: dateRange,
         metaZone: metaZone,
+        territoryCode: territoryCode,
         longNames: timeZoneName.long ?? TimeZoneName(),
         shortNames: timeZoneName.short ?? TimeZoneName(),
         exemplarCity: exemplarCity,
@@ -520,7 +527,8 @@ class TimeZone {
           var dates = dateRangeMaps
               .map((e) => e.entries.keys
                   .map((d) => [d.from, d.to])
-                  .flattenedToSet
+                  .flattened
+                  .toSet()
                   .nonNulls)
               .flattened
               .where((date) => dateRange.contains(date))
