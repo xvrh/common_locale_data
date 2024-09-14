@@ -52,7 +52,8 @@ void main() {
   print(cld.languages['en']!.name); // English
 
   print('');
-  var zone = cld.timeZones.get('America/Los_Angeles', dateTime: DateTime(2017))!;
+  var zone =
+      cld.timeZones.get('America/Los_Angeles', dateTime: DateTime(2017))!;
 
   print('code: ${zone.code}');
   print('canonicalCode: ${zone.canonicalCode}');
@@ -67,11 +68,9 @@ void main() {
   for (var style in TimeZoneStyle.values) {
     print(
         '${style.name} in own: ${zone.format(style, Duration(hours: -7, minutes: 0))}');
-//    print(
-//        '${style.name} in CA: ${zone.format(style, Duration(hours: -7, minutes: 0), currentTerritoryCode: 'CA')}');
+    print(
+        '${style.name} in CA: ${zone.format(style, Duration(hours: -7, minutes: 0), country: 'CA')}');
   }
-
-  return;
 
   // Demonstrate different timezone names at different times
   print(cld.timeZones['America/Buenos_Aires']);
