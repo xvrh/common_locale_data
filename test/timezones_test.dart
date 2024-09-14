@@ -1,4 +1,3 @@
-import 'package:common_locale_data/common_locale_data.dart';
 import 'package:common_locale_data/en_gb.dart';
 import 'package:common_locale_data/src/data/en.dart';
 import 'package:common_locale_data/src/data/fr.dart';
