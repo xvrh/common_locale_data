@@ -14,7 +14,10 @@ void main() async {
       'aliases',
       'metaZones',
       'primaryZones',
-      'windowsZones'
+      'windowsZones',
+      'likelySubtags',
+      'languageMatching',
+      'territoryContainment'
     }
   };
 

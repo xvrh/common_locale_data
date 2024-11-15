@@ -3,6 +3,7 @@ import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
 import 'model/date_fields.dart';
 import 'model/language.dart';
+import 'model/locale.dart';
 import 'model/script.dart';
 import 'model/territory.dart';
 import 'model/timezone.dart';
@@ -31,6 +32,8 @@ void main() {
   }
 
   print('Generate common files');
+  File('lib/src/locale_data.dart')
+      .writeAsStringSync(_format(generateLocaleData()));
   File('lib/src/common_locale_data.dart')
       .writeAsStringSync(_format(generateCommon()));
   File('lib/src/units_model.dart')
@@ -208,16 +211,7 @@ library;
 
 import 'package:collection/collection.dart';
 
-export 'src/common_locale_data.dart';
-export 'src/date_fields.dart';
-export 'src/languages.dart';
-export 'src/scripts.dart';
-export 'src/shared.dart';
-export 'src/territories.dart';
-export 'src/timezone_data.dart';
-export 'src/timezones.dart';
-export 'src/units.dart';
-export 'src/variants.dart';
+export 'common_locale_data.dart';
 
   ''');
 

@@ -8,18 +8,18 @@ void main() {
   // The compiler will only retain the languages that are explicitly referenced in your program
   // and discard all the others languages. It will make your deployed program smaller.
 
-  // If your app support several languages, dynamically choose the language you want
-  // from a map you create yourself.
-  var currentLanguage = 'en-GB';
+  // If your app support several languages, dynamically choose the preferred language.
+  var desiredLocales = ['de', 'en-CA'];
 
-  var locales = const {
-    'en-GB': CommonLocaleDataEnGB(),
-    'en': CommonLocaleDataEn(),
-    'fr': CommonLocaleDataFr(),
-    'ar-EG': CommonLocaleDataArEG(),
-  };
-
-  var cld = locales[currentLanguage]!;
+  var cld = LocaleMatcher.selectCommonLocale(
+    desiredLocales,
+    [
+      CommonLocaleDataEnGB(),
+      CommonLocaleDataEn(),
+      CommonLocaleDataFr(),
+      CommonLocaleDataArEG()
+    ],
+  )!;
 
   print('CLDR version: ${CommonLocaleData.cldrVersion}');
   print('Unicode version: ${CommonLocaleData.unicodeVersion}');

@@ -1,4 +1,6 @@
 /// Name in multiple different lengths.
+///
+/// {@category Dates}
 class MultiLength {
   /// Long name.
   final String long;

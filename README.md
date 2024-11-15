@@ -29,10 +29,10 @@ using [common_locale_data].
 For example for English: ```import 'package:common_locale_data/en.dart';``` or for
 French: ```import 'package:common_locale_data/fr.dart';```
 
-You can import all locales via [common_locale_data_all]. However this will increase compilation time
+You can import all locales via [CommonLocaleDataAll]. However this will increase compilation time
 significantly (10x over including just a couple of locales). As long as you don't use
 the [CommonLocaleDataAll.locales] member to dynamically get locales the compiled file size is not
-affected. If you do use the [locales] member, all locales will be compiled in and the files size
+affected. If you do use the [CommonLocaleDataAll.locales] member, all locales will be compiled in and the files size
 will become several 10's of MBs.
 
 ## Source
@@ -58,18 +58,18 @@ void main() {
   // The compiler will only retain the languages that are explicitly referenced in your program
   // and discard all the others languages. It will make your deployed program smaller.
 
-  // If your app support several languages, dynamically choose the language you want
-  // from a map you create yourself.
-  var currentLanguage = 'en-GB';
+  // If your app support several languages, dynamically choose the preferred language.
+  var desiredLocales = ['de', 'en-CA'];
 
-  var locales = const {
-    'en-GB': CommonLocaleDataEnGB(),
-    'en': CommonLocaleDataEn(),
-    'fr': CommonLocaleDataFr(),
-    'ar-EG': CommonLocaleDataArEG(),
-  };
-
-  var cld = locales[currentLanguage]!;
+  var cld = LocaleMatcher.selectCommonLocale(
+    desiredLocales,
+    [
+      CommonLocaleDataEnGB(),
+      CommonLocaleDataEn(),
+      CommonLocaleDataFr(),
+      CommonLocaleDataArEG()
+    ],
+  )!;
 
   print('CLDR version: ${CommonLocaleData.cldrVersion}');
   print('Unicode version: ${CommonLocaleData.unicodeVersion}');
