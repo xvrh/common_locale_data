@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-
 import '../config.dart';
 
 ({DateTime date, String cldr, String unicode}) _readCLDRVersions() {
@@ -20,14 +19,15 @@ String _readTZDBVersions() {
   return version;
 }
 
-({DateTime date, String cldr, String cldrVariant, String unicode, String tzdb}) getDataVersions() {
+({DateTime date, String cldr, String cldrVariant, String unicode, String tzdb})
+    getDataVersions() {
   var cldrVersion = _readCLDRVersions();
   var tzdbVersion = _readTZDBVersions();
 
   return (
     date: cldrVersion.date,
     cldr: cldrVersion.cldr,
-    cldrVariant: fullOrModern,
+    cldrVariant: coverageLevel.name,
     unicode: cldrVersion.unicode,
     tzdb: tzdbVersion
   );

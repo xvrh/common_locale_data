@@ -11,7 +11,7 @@ import 'utils/supported_locales.dart';
 void main() async {
   final miscSets = {
     'bcp47/bcp47': {'timezone'},
-    'core': {'availableLocales', 'package'},
+    'core': {'coverageLevels', 'package'},
     'core/supplemental': {
       'aliases',
       'metaZones',
@@ -47,19 +47,19 @@ void main() async {
   // get zone.tab for zone to territory mapping; get it from the cldr repository to have teh version align to the cldr
   await download(
       tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/cldr/main/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/zone.tab',
+      'https://raw.githubusercontent.com/unicode-org/cldr/$cldrVersion/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/zone.tab',
       client,
       'zone.tab.txt');
 
   await download(
       tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/cldr/main/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/tzdb-version.txt',
+      'https://raw.githubusercontent.com/unicode-org/cldr/$cldrVersion/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/tzdb-version.txt',
       client,
       'tzdb-version.txt');
 
   await download(
       tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/icu/main/icu4c/source/tools/tzcode/icuregions',
+      'https://raw.githubusercontent.com/unicode-org/icu/$icuVersion/icu4c/source/tools/tzcode/icuregions',
       client,
       'icuregions.txt');
 
@@ -68,7 +68,7 @@ void main() async {
       for (var file in miscSets[set]!)
         pool.withResource(() async {
           var url =
-              'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set/$file.json';
+              'https://raw.githubusercontent.com/unicode-org/cldr-json/$cldrJsonVersion/cldr-json/cldr-$set/$file.json';
           var directory = Directory(p.join(dataDirectory.path, set));
           var fileName = '$file.json';
 
@@ -77,27 +77,30 @@ void main() async {
     ]);
   }
 
-  var supportedLocales = getSupportedLocales();
-
-  for (var locale in supportedLocales) {
-    print('Downloading locale data for: $locale');
+  var futures = <Future>[];
+  for (var locale in getSupportedLocales()) {
+    var localeFutures = <Future>[];
     for (var set in sets.keys) {
-      await Future.wait([
-        for (var file in sets[set]!)
-          pool.withResource(() async {
-            var url =
-                'https://raw.githubusercontent.com/unicode-org/cldr-json/master/cldr-json/cldr-$set-$fullOrModern/main/$locale/$file.json';
-            var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
-            var fileName = '$locale.json';
-            try {
-              await download(directory, url, client, fileName);
-            } on Exception catch (e) {
-              print('*** $e');
-            }
-          })
-      ]);
+      for (var file in sets[set]!) {
+        var future = pool.withResource(() async {
+          var url =
+              'https://raw.githubusercontent.com/unicode-org/cldr-json/$cldrJsonVersion/cldr-json/cldr-$set-full/main/$locale/$file.json';
+          var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
+          var fileName = '$locale.json';
+          try {
+            await download(directory, url, client, fileName);
+          } on Exception catch (e) {
+            print('*** $e');
+          }
+        });
+        localeFutures.add(future);
+      }
     }
+    futures.addAll(localeFutures);
+    unawaited(
+        Future.wait(localeFutures).then((_) => print('Downloaded $locale')));
   }
+  await Future.wait(futures);
 
   await pool.close();
   print('All data fetched');

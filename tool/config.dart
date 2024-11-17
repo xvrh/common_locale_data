@@ -1,6 +1,16 @@
+import 'utils/supported_locales.dart';
 
-// CLDR coverage to download 'full' or 'modern'
-const fullOrModern = 'modern';
+/// minimum CLDR coverage level to include (basic will not contain all required info; moderate and modern do
+const CoverageLevel coverageLevel = CoverageLevel.modern;
+
+/// cldr json version to download: 'main' for latest or 'refs/tags/46.0.0' for specific version;
+const String cldrJsonVersion = 'refs/tags/45.0.0';
+
+/// cldr version to download: 'main' for latest or 'refs/tags/release-46' for specific version;
+const String cldrVersion = 'refs/tags/release-45';
+
+/// icu version to download: 'main' for latest or 'refs/tags/release-76-1' for specific version;
+const String icuVersion = 'refs/tags/release-76-1';
 
 // support all possible locales
 const Set<String> supportedLocales = {};
