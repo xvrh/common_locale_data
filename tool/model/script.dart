@@ -24,7 +24,8 @@ class Scripts${locale.toUpperCamelCase()} extends Scripts {
     for (var alt in ['variant', 'short', 'stand-alone']) {
       var altName = translatedScripts['$scriptCode-alt-$alt'];
       if (altName != null) {
-        output.writeln('${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
+        output.writeln(
+            '${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
       }
     }
 

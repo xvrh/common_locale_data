@@ -135,8 +135,10 @@ class UnitPrefixPattern {
 class CompoundUnit {
   /// Localized long unit information.
   CompoundUnitPattern long;
+
   /// Localized short unit information.
   CompoundUnitPattern short;
+
   /// Localized narrow unit information.
   CompoundUnitPattern narrow;
 

@@ -24,7 +24,8 @@ class Languages${locale.toUpperCamelCase()} extends Languages {
     for (var alt in ['variant', 'short', 'menu']) {
       var altName = translatedLanguages['$languageCode-alt-$alt'];
       if (altName != null) {
-        output.writeln('${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
+        output.writeln(
+            '${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
       }
     }
 

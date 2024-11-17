@@ -1,11 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:analyzer/dart/ast/token.dart';
 import 'package:common_locale_data/src/data/en.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
-
 import 'utils/case_format.dart';
 import 'utils/supported_locales.dart';
 import 'utils/versions.dart';

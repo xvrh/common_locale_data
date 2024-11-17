@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-
 import '../config.dart';
 
 ({DateTime date, String cldr, String unicode}) _readCLDRVersions() {

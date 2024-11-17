@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:path/path.dart' as p;
-
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 

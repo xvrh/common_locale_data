@@ -1,5 +1,4 @@
 import 'package:collection/collection.dart';
-
 import '../../common_locale_data.dart';
 
 const _locale = 'es-PE';

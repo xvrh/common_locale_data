@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
-import 'package:common_locale_data/src/territories_model.dart';
-import 'package:common_locale_data/src/timezone_data.dart';
 import 'package:intl/intl.dart';
+import 'territories_model.dart';
+import 'timezone_data.dart';
 
 /// Timezone formatting options.
 ///

@@ -1,8 +1,6 @@
 import 'dart:io';
-
 import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
-
 import 'model/date_fields.dart';
 import 'model/language.dart';
 import 'model/script.dart';

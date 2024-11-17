@@ -15,6 +15,7 @@ abstract class Variants {
 class Variant {
   /// RFC5646 locale variant code.
   final String code;
+
   /// Localized locale variant name.
   final String name;
 

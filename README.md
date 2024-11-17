@@ -41,10 +41,10 @@ The main CLDR data is extracted from this repository: https://github.com/unicode
 Additional timezone related data is extracted from https://github.com/unicode-org/cldr
 and https://github.com/unicode-org/icu.
 
-- Download date 2024-08-31 13:48:40.000Z.
-- CLDR version 45.0.0, variant: modern
-- Unicode version 15.1.0
-- TZDB version 2024a
+- Download date 2024-11-17 12:46:56.000Z.
+- CLDR version 46.0.0, variant: modern
+- Unicode version 16.0.0
+- TZDB version 2024b
 
 ## Example
 
@@ -61,7 +61,7 @@ void main() {
 
   // If your app support several languages, dynamically choose the language you want
   // from a map you create yourself.
-  var currentLanguage = 'en';
+  var currentLanguage = 'en-GB';
 
   var locales = const {
     'en-GB': CommonLocaleDataEnGB(),
@@ -71,7 +71,7 @@ void main() {
   };
 
   var cld = locales[currentLanguage]!;
-//  var cld=CommonLocaleDataAll.locales[currentLanguage]!;
+
   print(CommonLocaleData.dataDownloadDate);
   print(CommonLocaleData.cldrVersion);
   print(CommonLocaleData.unicodeVersion);
@@ -103,22 +103,31 @@ void main() {
   print(cld.languages['en']!.name); // English
 
   print('');
-  var zone = cld.timeZones['America/Coral_Harbour']!;
+  var zone =
+      cld.timeZones.get('America/Los_Angeles', dateTime: DateTime(2017))!;
 
-  print(zone.code);
-  print(zone.canonicalCode);
-  print(zone.iana);
+  print('code: ${zone.code}');
+  print('canonicalCode: ${zone.canonicalCode}');
+  print('ianaCode: ${zone.iana}');
+  print('shortCode: ${zone.short}');
+  print('exemplarCity: ${zone.exemplarCity}');
+  print('country: ${zone.country}');
+  print('isPrimaryOrSingle: ${zone.isPrimaryOrSingle}');
+  print('dateRange: ${zone.dateRange}');
+  print('');
 
-  print(zone.location);
+  for (var style in TimeZoneStyle.values) {
+    print(
+        '${style.name} in own: ${zone.format(style, Duration(hours: -7, minutes: 0))}');
+    print(
+        '${style.name} in CA: ${zone.format(style, Duration(hours: -7, minutes: 0), country: 'CA')}');
+  }
 
-  print(zone.format(
-      TimeZoneStyle.genericLocation, DateTime.now(), Duration(hours: 1)));
-  print(zone.format(
-      TimeZoneStyle.genericLong, DateTime.now(), Duration(hours: 1)));
-  print(zone.format(
-      TimeZoneStyle.genericShort, DateTime.now(), Duration(hours: 1)));
-  print(zone.format(
-      TimeZoneStyle.iso8601ExtendedFixed, DateTime.now(), Duration(hours: 1)));
+  // Demonstrate different timezone names at different times
+  print(cld.timeZones['America/Buenos_Aires']);
+  print(cld.timeZones.get('America/Buenos_Aires', dateTime: DateTime(2008)));
+  print(cld.timeZones
+      .get('America/Buenos_Aires', dateTime: DateTime(2004, 6, 2)));
 }
 ```
 
@@ -402,12 +411,15 @@ void main() {
 | <nobr>jv</nobr> | <nobr>Javanese</nobr> | <nobr>jv</nobr> | <nobr>CommonLocaleDataJv</nobr> | <nobr>import 'package:common_locale_data/jv';</nobr> |  
 | <nobr>ka</nobr> | <nobr>Georgian</nobr> | <nobr>ka</nobr> | <nobr>CommonLocaleDataKa</nobr> | <nobr>import 'package:common_locale_data/ka';</nobr> |  
 | <nobr>kk</nobr> | <nobr>Kazakh</nobr> | <nobr>kk</nobr> | <nobr>CommonLocaleDataKk</nobr> | <nobr>import 'package:common_locale_data/kk';</nobr> |  
+| <nobr>kk-Cyrl</nobr> | <nobr>Kazakh (Cyrillic)</nobr> | <nobr>kkCyrl</nobr> | <nobr>CommonLocaleDataKkCyrl</nobr> | <nobr>import 'package:common_locale_data/kk_cyrl';</nobr> |  
+| <nobr>kk-KZ</nobr> | <nobr>Kazakh (Kazakhstan)</nobr> | <nobr>kkKZ</nobr> | <nobr>CommonLocaleDataKkKZ</nobr> | <nobr>import 'package:common_locale_data/kk_kz';</nobr> |  
 | <nobr>km</nobr> | <nobr>Khmer</nobr> | <nobr>km</nobr> | <nobr>CommonLocaleDataKm</nobr> | <nobr>import 'package:common_locale_data/km';</nobr> |  
 | <nobr>kn</nobr> | <nobr>Kannada</nobr> | <nobr>kn</nobr> | <nobr>CommonLocaleDataKn</nobr> | <nobr>import 'package:common_locale_data/kn';</nobr> |  
 | <nobr>ko</nobr> | <nobr>Korean</nobr> | <nobr>ko</nobr> | <nobr>CommonLocaleDataKo</nobr> | <nobr>import 'package:common_locale_data/ko';</nobr> |  
 | <nobr>ko-CN</nobr> | <nobr>Korean (China)</nobr> | <nobr>koCN</nobr> | <nobr>CommonLocaleDataKoCN</nobr> | <nobr>import 'package:common_locale_data/ko_cn';</nobr> |  
 | <nobr>ko-KP</nobr> | <nobr>Korean (North Korea)</nobr> | <nobr>koKP</nobr> | <nobr>CommonLocaleDataKoKP</nobr> | <nobr>import 'package:common_locale_data/ko_kp';</nobr> |  
 | <nobr>kok</nobr> | <nobr>Konkani</nobr> | <nobr>kok</nobr> | <nobr>CommonLocaleDataKok</nobr> | <nobr>import 'package:common_locale_data/kok';</nobr> |  
+| <nobr>kok-Deva</nobr> | <nobr>Konkani (Devanagari)</nobr> | <nobr>kokDeva</nobr> | <nobr>CommonLocaleDataKokDeva</nobr> | <nobr>import 'package:common_locale_data/kok_deva';</nobr> |  
 | <nobr>ky</nobr> | <nobr>Kyrgyz</nobr> | <nobr>ky</nobr> | <nobr>CommonLocaleDataKy</nobr> | <nobr>import 'package:common_locale_data/ky';</nobr> |  
 | <nobr>lo</nobr> | <nobr>Lao</nobr> | <nobr>lo</nobr> | <nobr>CommonLocaleDataLo</nobr> | <nobr>import 'package:common_locale_data/lo';</nobr> |  
 | <nobr>lt</nobr> | <nobr>Lithuanian</nobr> | <nobr>lt</nobr> | <nobr>CommonLocaleDataLt</nobr> | <nobr>import 'package:common_locale_data/lt';</nobr> |  
@@ -437,6 +449,7 @@ void main() {
 | <nobr>or</nobr> | <nobr>Odia</nobr> | <nobr>or</nobr> | <nobr>CommonLocaleDataOr</nobr> | <nobr>import 'package:common_locale_data/or';</nobr> |  
 | <nobr>pa</nobr> | <nobr>Punjabi</nobr> | <nobr>pa</nobr> | <nobr>CommonLocaleDataPa</nobr> | <nobr>import 'package:common_locale_data/pa';</nobr> |  
 | <nobr>pa-Guru</nobr> | <nobr>Punjabi (Gurmukhi)</nobr> | <nobr>paGuru</nobr> | <nobr>CommonLocaleDataPaGuru</nobr> | <nobr>import 'package:common_locale_data/pa_guru';</nobr> |  
+| <nobr>pcm</nobr> | <nobr>Nigerian Pidgin</nobr> | <nobr>pcm</nobr> | <nobr>CommonLocaleDataPcm</nobr> | <nobr>import 'package:common_locale_data/pcm';</nobr> |  
 | <nobr>pl</nobr> | <nobr>Polish</nobr> | <nobr>pl</nobr> | <nobr>CommonLocaleDataPl</nobr> | <nobr>import 'package:common_locale_data/pl';</nobr> |  
 | <nobr>ps</nobr> | <nobr>Pashto</nobr> | <nobr>ps</nobr> | <nobr>CommonLocaleDataPs</nobr> | <nobr>import 'package:common_locale_data/ps';</nobr> |  
 | <nobr>ps-PK</nobr> | <nobr>Pashto (Pakistan)</nobr> | <nobr>psPK</nobr> | <nobr>CommonLocaleDataPsPK</nobr> | <nobr>import 'package:common_locale_data/ps_pk';</nobr> |  
@@ -494,6 +507,8 @@ void main() {
 | <nobr>ta-SG</nobr> | <nobr>Tamil (Singapore)</nobr> | <nobr>taSG</nobr> | <nobr>CommonLocaleDataTaSG</nobr> | <nobr>import 'package:common_locale_data/ta_sg';</nobr> |  
 | <nobr>te</nobr> | <nobr>Telugu</nobr> | <nobr>te</nobr> | <nobr>CommonLocaleDataTe</nobr> | <nobr>import 'package:common_locale_data/te';</nobr> |  
 | <nobr>th</nobr> | <nobr>Thai</nobr> | <nobr>th</nobr> | <nobr>CommonLocaleDataTh</nobr> | <nobr>import 'package:common_locale_data/th';</nobr> |  
+| <nobr>ti</nobr> | <nobr>Tigrinya</nobr> | <nobr>ti</nobr> | <nobr>CommonLocaleDataTi</nobr> | <nobr>import 'package:common_locale_data/ti';</nobr> |  
+| <nobr>ti-ER</nobr> | <nobr>Tigrinya (Eritrea)</nobr> | <nobr>tiER</nobr> | <nobr>CommonLocaleDataTiER</nobr> | <nobr>import 'package:common_locale_data/ti_er';</nobr> |  
 | <nobr>tk</nobr> | <nobr>Turkmen</nobr> | <nobr>tk</nobr> | <nobr>CommonLocaleDataTk</nobr> | <nobr>import 'package:common_locale_data/tk';</nobr> |  
 | <nobr>tr</nobr> | <nobr>Turkish</nobr> | <nobr>tr</nobr> | <nobr>CommonLocaleDataTr</nobr> | <nobr>import 'package:common_locale_data/tr';</nobr> |  
 | <nobr>tr-CY</nobr> | <nobr>Turkish (Cyprus)</nobr> | <nobr>trCY</nobr> | <nobr>CommonLocaleDataTrCY</nobr> | <nobr>import 'package:common_locale_data/tr_cy';</nobr> |  
@@ -508,14 +523,17 @@ void main() {
 | <nobr>yue</nobr> | <nobr>Cantonese</nobr> | <nobr>yue</nobr> | <nobr>CommonLocaleDataYue</nobr> | <nobr>import 'package:common_locale_data/yue';</nobr> |  
 | <nobr>yue-Hans</nobr> | <nobr>Cantonese (Simplified)</nobr> | <nobr>yueHans</nobr> | <nobr>CommonLocaleDataYueHans</nobr> | <nobr>import 'package:common_locale_data/yue_hans';</nobr> |  
 | <nobr>yue-Hant</nobr> | <nobr>Cantonese (Traditional)</nobr> | <nobr>yueHant</nobr> | <nobr>CommonLocaleDataYueHant</nobr> | <nobr>import 'package:common_locale_data/yue_hant';</nobr> |  
+| <nobr>yue-Hant-CN</nobr> | <nobr>Cantonese (Traditional, China)</nobr> | <nobr>yueHantCN</nobr> | <nobr>CommonLocaleDataYueHantCN</nobr> | <nobr>import 'package:common_locale_data/yue_hant_cn';</nobr> |  
 | <nobr>zh</nobr> | <nobr>Chinese</nobr> | <nobr>zh</nobr> | <nobr>CommonLocaleDataZh</nobr> | <nobr>import 'package:common_locale_data/zh';</nobr> |  
 | <nobr>zh-Hans</nobr> | <nobr>Chinese (Simplified)</nobr> | <nobr>zhHans</nobr> | <nobr>CommonLocaleDataZhHans</nobr> | <nobr>import 'package:common_locale_data/zh_hans';</nobr> |  
 | <nobr>zh-Hans-HK</nobr> | <nobr>Chinese (Simplified, Hong Kong SAR China)</nobr> | <nobr>zhHansHK</nobr> | <nobr>CommonLocaleDataZhHansHK</nobr> | <nobr>import 'package:common_locale_data/zh_hans_hk';</nobr> |  
 | <nobr>zh-Hans-MO</nobr> | <nobr>Chinese (Simplified, Macao SAR China)</nobr> | <nobr>zhHansMO</nobr> | <nobr>CommonLocaleDataZhHansMO</nobr> | <nobr>import 'package:common_locale_data/zh_hans_mo';</nobr> |  
+| <nobr>zh-Hans-MY</nobr> | <nobr>Chinese (Simplified, Malaysia)</nobr> | <nobr>zhHansMY</nobr> | <nobr>CommonLocaleDataZhHansMY</nobr> | <nobr>import 'package:common_locale_data/zh_hans_my';</nobr> |  
 | <nobr>zh-Hans-SG</nobr> | <nobr>Chinese (Simplified, Singapore)</nobr> | <nobr>zhHansSG</nobr> | <nobr>CommonLocaleDataZhHansSG</nobr> | <nobr>import 'package:common_locale_data/zh_hans_sg';</nobr> |  
 | <nobr>zh-Hant</nobr> | <nobr>Chinese (Traditional)</nobr> | <nobr>zhHant</nobr> | <nobr>CommonLocaleDataZhHant</nobr> | <nobr>import 'package:common_locale_data/zh_hant';</nobr> |  
 | <nobr>zh-Hant-HK</nobr> | <nobr>Chinese (Traditional, Hong Kong SAR China)</nobr> | <nobr>zhHantHK</nobr> | <nobr>CommonLocaleDataZhHantHK</nobr> | <nobr>import 'package:common_locale_data/zh_hant_hk';</nobr> |  
 | <nobr>zh-Hant-MO</nobr> | <nobr>Chinese (Traditional, Macao SAR China)</nobr> | <nobr>zhHantMO</nobr> | <nobr>CommonLocaleDataZhHantMO</nobr> | <nobr>import 'package:common_locale_data/zh_hant_mo';</nobr> |  
+| <nobr>zh-Hant-MY</nobr> | <nobr>Chinese (Traditional, Malaysia)</nobr> | <nobr>zhHantMY</nobr> | <nobr>CommonLocaleDataZhHantMY</nobr> | <nobr>import 'package:common_locale_data/zh_hant_my';</nobr> |  
 | <nobr>zu</nobr> | <nobr>Zulu</nobr> | <nobr>zu</nobr> | <nobr>CommonLocaleDataZu</nobr> | <nobr>import 'package:common_locale_data/zu';</nobr> |
 
 To change the included locales modify the ```tool\config.dart``` file and rerun

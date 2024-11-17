@@ -6,10 +6,13 @@ export 'territories_model.dart';
 class Territory {
   /// ISO 3166 territory code.
   final String code;
+
   /// Localized territory name.
   final String name;
+
   /// Localized short script name.
   final String? short;
+
   /// Localized alternative script name.
   final String? variant;
 

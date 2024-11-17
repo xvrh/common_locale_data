@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:path/path.dart' as p;
-
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 import '../utils/split_words.dart';
@@ -50,13 +48,15 @@ class Territories${locale.toUpperCamelCase()} implements Territories {
     var translatedName = translatedTerritories[territoryCode] as String?;
     if (translatedName == null) {
       print('*** $territoryCode is null for $locale');
-      translatedName = '${translatedTerritories['ZZ'] as String} ($territoryCode)';
+      translatedName =
+          '${translatedTerritories['ZZ'] as String} ($territoryCode)';
     }
     output.writeln('${escapeDartString(translatedName)},');
     for (var alt in ['variant', 'short']) {
       var altName = translatedTerritories['$territoryCode-alt-$alt'] as String?;
       if (altName != null) {
-        output.writeln('${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
+        output.writeln(
+            '${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
       }
     }
 

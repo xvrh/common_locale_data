@@ -2,8 +2,10 @@
 class MultiLength {
   /// Long name.
   final String long;
+
   /// Abbreviated name.
   final String short;
+
   /// Narrowest name.
   final String narrow;
 

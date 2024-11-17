@@ -15,12 +15,16 @@ abstract class Scripts {
 class Script {
   /// ISO 15924 script code.
   final String code;
+
   /// Localized script name.
   final String name;
+
   /// Localized short script name.
   final String? short;
+
   /// Localized alternative script name.
   final String? variant;
+
   /// Localized script name for use in stand alone contexts.
   final String? standAlone;
 

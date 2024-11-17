@@ -31,10 +31,8 @@ void main() {
 
   test('timezone treeshaking', () async {
     await check('test/tree_shaking_data/timezone.dart',
-        expected: timezone.expected,
-        notExpected: timezone.notExpected);
+        expected: timezone.expected, notExpected: timezone.notExpected);
   });
-
 }
 
 Future<String> _compileDart2Js(String file) async {
