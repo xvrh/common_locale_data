@@ -38,7 +38,7 @@ void main() async {
     dataDirectory.deleteSync(recursive: true);
   }
   var client = http.Client();
-  var pool = Pool(10);
+  var pool = Pool(100);
 
   print('Downloading locale independent data');
 
