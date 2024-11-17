@@ -27,6 +27,11 @@ void main() {
   }
   dataDirectory.createSync(recursive: true);
 
+  for (var file in Directory('lib').listSync().whereType<File>().where((file) =>
+      RegExp(r'[/\\][a-z]{2,3}(_[a-z0-9]+)*.dart$').hasMatch(file.path))) {
+    file.delete();
+  }
+
   print('Generate common files');
   File('lib/src/common_locale_data.dart')
       .writeAsStringSync(_format(generateCommon()));
