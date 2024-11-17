@@ -207,6 +207,10 @@ class LanguagesKok extends Languages {
       'bla',
       'सिकसिका',
     ),
+    'blo': Language(
+      'blo',
+      'अनी',
+    ),
     'bm': Language(
       'bm',
       'बंबारा',
@@ -899,6 +903,10 @@ class LanguagesKok extends Languages {
       'kwk',
       'क्वाकवाला',
     ),
+    'kxv': Language(
+      'kxv',
+      'कुवी',
+    ),
     'ky': Language(
       'ky',
       'किर्गिझ',
@@ -930,6 +938,10 @@ class LanguagesKok extends Languages {
     'li': Language(
       'li',
       'लिंबर्गिश',
+    ),
+    'lij': Language(
+      'lij',
+      'लिगुरियन',
     ),
     'lil': Language(
       'lil',
@@ -1559,6 +1571,10 @@ class LanguagesKok extends Languages {
       'syr',
       'सिरियाक',
     ),
+    'szl': Language(
+      'szl',
+      'सिलेसियान',
+    ),
     'ta': Language(
       'ta',
       'तमिळ',
@@ -1723,9 +1739,17 @@ class LanguagesKok extends Languages {
       've',
       'वेंदा',
     ),
+    'vec': Language(
+      'vec',
+      'वेनेशियन',
+    ),
     'vi': Language(
       'vi',
       'व्हिएतनामीज',
+    ),
+    'vmw': Language(
+      'vmw',
+      'माखुवा',
     ),
     'vo': Language(
       'vo',
@@ -1766,6 +1790,10 @@ class LanguagesKok extends Languages {
     'xh': Language(
       'xh',
       'खोसा',
+    ),
+    'xnr': Language(
+      'xnr',
+      'कांग्री',
     ),
     'xog': Language(
       'xog',
@@ -2336,14 +2364,14 @@ class UnitsKok implements Units {
   @override
   UnitPrefix get pattern10pMinus9 => UnitPrefix(
         long: UnitPrefixPattern('नॅनो{0}'),
-        short: UnitPrefixPattern('n{0}'),
-        narrow: UnitPrefixPattern('n{0}'),
+        short: UnitPrefixPattern('नॅ{0}'),
+        narrow: UnitPrefixPattern('नॅ{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
         long: UnitPrefixPattern('पिको{0}'),
-        short: UnitPrefixPattern('p{0}'),
-        narrow: UnitPrefixPattern('p{0}'),
+        short: UnitPrefixPattern('पि{0}'),
+        narrow: UnitPrefixPattern('पि{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus15 => UnitPrefix(
@@ -6582,6 +6610,72 @@ class UnitsKok implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'प्रकाश',
+          one: '{0} light',
+          other: '{0} प्रकाश',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'प्रकाश',
+          one: '{0} light',
+          other: '{0} प्रकाश',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'प्रकाश',
+          one: '{0}light',
+          other: '{0} प्रकाश',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'राती',
+          one: '{0} night',
+          other: '{0} राती',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'राती',
+          one: '{0} night',
+          other: '{0} राती',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'राती',
+          one: '{0}night',
+          other: '{0}राती',
+        ),
+      );
 }
 
 class DateFieldsKok implements DateFields {
@@ -6655,18 +6749,18 @@ class DateFieldsKok implements DateFields {
         ),
         previous: MultiLength(
           long: 'फाटलो त्रैमासीक',
-          short: 'फाटलो त्रैमासीक',
-          narrow: 'फाटलो त्रैमासीक',
+          short: 'फाटलें तिम्ह.',
+          narrow: 'फाटलें तिम्ह',
         ),
         now: MultiLength(
           long: 'हो त्रैमासीक',
-          short: 'हो त्रैमासीक',
-          narrow: 'हो त्रैमासीक',
+          short: 'हें तिम्ह.',
+          narrow: 'हें तिम्ह',
         ),
         next: MultiLength(
           long: 'फुडलो त्रैमासीक',
-          short: 'फुडलो त्रैमासीक',
-          narrow: 'फुडलो त्रैमासीक',
+          short: 'फुडलें तिम्ह.',
+          narrow: 'फुडलें तिम्ह',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -6885,9 +6979,9 @@ class DateFieldsKok implements DateFields {
   @override
   DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
         previous: MultiLength(
-          long: 'निमाणो आयतार',
-          short: 'निमाणो आयतार',
-          narrow: 'निमाणो आयतार',
+          long: 'फाटलो आयतार',
+          short: 'फाटलो आयतार',
+          narrow: 'फाटलो आयतार',
         ),
         now: MultiLength(
           long: 'हो आयतार',
@@ -6981,7 +7075,7 @@ class DateFieldsKok implements DateFields {
         previous: MultiLength(
           long: 'निमाणो मंगळार',
           short: 'निमाणो मंगळ.',
-          narrow: 'निमाणो मं.',
+          narrow: 'फाटलो मं.',
         ),
         now: MultiLength(
           long: 'हो मंगळार',
@@ -7026,7 +7120,7 @@ class DateFieldsKok implements DateFields {
   @override
   DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
         previous: MultiLength(
-          long: 'निमाणो बुधवार',
+          long: 'फाटलो बुधवार',
           short: 'निमाणो बुध.',
           narrow: 'निमाणो बु.',
         ),
@@ -7179,7 +7273,7 @@ class DateFieldsKok implements DateFields {
         next: MultiLength(
           long: 'फुडलो शेनवार',
           short: 'फुडलो शेन.',
-          narrow: 'फुडलो शे.',
+          narrow: 'फुडलो शेन.',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -7269,8 +7363,8 @@ class DateFieldsKok implements DateFields {
         ),
         now: MultiLength(
           long: 'हें मिनीट',
-          short: 'हें मिनीट',
-          narrow: 'हें मिनीट',
+          short: 'हो मिन.',
+          narrow: 'हो मिन',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -9480,9 +9574,6 @@ class TimeZonesKok extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'चिटा',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'चोईबाल्सन',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'कोलंबो',
     ),
@@ -10154,14 +10245,6 @@ class TimeZonesKok extends TimeZones {
         daylight: 'चीन डेलायट वेळ',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'चोईबाल्सन वेळ',
-        standard: 'चोईबाल्सन प्रमाणित वेळ',
-        daylight: 'चोईबाल्सन ग्रीष्म वेळ',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10441,6 +10524,12 @@ class TimeZonesKok extends TimeZones {
         generic: 'जपान वेळ',
         standard: 'जपान प्रमाणित वेळ',
         daylight: 'जपान डेलायट वेळ',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'कझाखस्तान वेळ',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

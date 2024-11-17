@@ -267,6 +267,10 @@ class LanguagesMl extends Languages {
       'bla',
       'സിക്സിക',
     ),
+    'blo': Language(
+      'blo',
+      'അനി',
+    ),
     'bm': Language(
       'bm',
       'ബംബാറ',
@@ -1167,6 +1171,10 @@ class LanguagesMl extends Languages {
       'kwk',
       'ക്വാക്വല',
     ),
+    'kxv': Language(
+      'kxv',
+      'കുവി',
+    ),
     'ky': Language(
       'ky',
       'കിർഗിസ്',
@@ -1206,6 +1214,10 @@ class LanguagesMl extends Languages {
     'li': Language(
       'li',
       'ലിംബർഗിഷ്',
+    ),
+    'lij': Language(
+      'lij',
+      'ലിഗൂറിയൻ',
     ),
     'lil': Language(
       'lil',
@@ -1996,6 +2008,10 @@ class LanguagesMl extends Languages {
       'syr',
       'സുറിയാനി',
     ),
+    'szl': Language(
+      'szl',
+      'സൈലേഷ്യൻ',
+    ),
     'ta': Language(
       'ta',
       'തമിഴ്',
@@ -2189,9 +2205,17 @@ class LanguagesMl extends Languages {
       've',
       'വെന്ദ',
     ),
+    'vec': Language(
+      'vec',
+      'വെനീഷ്യൻ',
+    ),
     'vi': Language(
       'vi',
       'വിയറ്റ്നാമീസ്',
+    ),
+    'vmw': Language(
+      'vmw',
+      'മഖുവ',
     ),
     'vo': Language(
       'vo',
@@ -2244,6 +2268,10 @@ class LanguagesMl extends Languages {
     'xh': Language(
       'xh',
       'ഖോസ',
+    ),
+    'xnr': Language(
+      'xnr',
+      'കാങ്ടി',
     ),
     'xog': Language(
       'xog',
@@ -3027,7 +3055,7 @@ class UnitsMl implements Units {
   @override
   UnitPrefix get pattern10p3 => UnitPrefix(
         long: UnitPrefixPattern('കിലോ{0}'),
-        short: UnitPrefixPattern('k{0}'),
+        short: UnitPrefixPattern('കി.{0}'),
         narrow: UnitPrefixPattern('കി.{0}'),
       );
   @override
@@ -3522,21 +3550,21 @@ class UnitsMl implements Units {
   Unit get concentrKarat => Unit(
         long: UnitCountPattern(
           _locale,
-          'ക്യാരറ്റ്',
-          one: '{0} ക്യാരറ്റ്',
-          other: '{0} ക്യാരറ്റ്',
+          'കാരറ്റ്',
+          one: '{0} കാരറ്റ്',
+          other: '{0} കാരറ്റ്',
         ),
         short: UnitCountPattern(
           _locale,
-          'ക്യാരറ്റ്',
-          one: '{0} ക്യാ.',
-          other: '{0} ക്യാ.',
+          'കാരറ്റ്',
+          one: '{0} കാ.',
+          other: '{0} കാ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ക്യാരറ്റ്',
-          one: '{0} ക്യാ.',
-          other: '{0} ക്യാ.',
+          'കാരറ്റ്',
+          one: '{0} കാ.',
+          other: '{0}കാ.',
         ),
       );
 
@@ -3611,7 +3639,7 @@ class UnitsMl implements Units {
         long: UnitCountPattern(
           _locale,
           'പാർട്‌സ് / മില്ല്യൺ',
-          one: 'പാർട്ട് / മില്ല്യൺ',
+          one: '{0} പാർട്ട് / മില്ല്യൺ',
           other: '{0} പാർട്‌സ് / മില്ല്യൺ',
         ),
         short: UnitCountPattern(
@@ -3698,9 +3726,9 @@ class UnitsMl implements Units {
   Unit get concentrMole => Unit(
         long: UnitCountPattern(
           _locale,
-          'മോളുകൾ',
+          'മോൾ',
           one: '{0} മോൾ',
-          other: '{0} മോളുകൾ',
+          other: '{0} മോൾ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4073,7 +4101,7 @@ class UnitsMl implements Units {
         long: UnitCountPattern(
           _locale,
           'ദശാബ്‌ദം',
-          one: 'ദശാബ്‌ദം',
+          one: '{0} ദശാബ്‌ദം',
           other: '{0} ദശാബ്‌ദം',
         ),
         short: UnitCountPattern(
@@ -4644,9 +4672,9 @@ class UnitsMl implements Units {
   Unit get forceNewton => Unit(
         long: UnitCountPattern(
           _locale,
-          'ന്യൂട്ടൻസ്',
+          'ന്യൂട്ടൻ',
           one: '{0} ന്യൂട്ടൻ',
-          other: '{0} ന്യൂട്ടൻസ്',
+          other: '{0} ന്യൂട്ടൻ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4800,7 +4828,7 @@ class UnitsMl implements Units {
           _locale,
           'പിക്സൽസ്',
           one: '{0} പിക്സൽ',
-          other: '{0} px',
+          other: '{0} പിക്സൽ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5744,19 +5772,19 @@ class UnitsMl implements Units {
   Unit get massCarat => Unit(
         long: UnitCountPattern(
           _locale,
-          'ക്യാരറ്റ്',
-          one: '{0} ക്യാരറ്റ്',
-          other: '{0} ക്യാരറ്റ്',
+          'കാരറ്റ്',
+          one: '{0} കാരറ്റ്',
+          other: '{0} കാരറ്റ്',
         ),
         short: UnitCountPattern(
           _locale,
-          'ക്യാരറ്റ്',
-          one: '{0} ക്യാരറ്റ്',
+          'കാരറ്റ്',
+          one: '{0} കാരറ്റ്',
           other: '{0} CD',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ക്യാരറ്റ്',
+          'കാരറ്റ്',
           one: '{0}CD',
           other: '{0}CD',
         ),
@@ -5767,7 +5795,7 @@ class UnitsMl implements Units {
         long: UnitCountPattern(
           _locale,
           'ഡാൽട്ടണുകൾ',
-          one: 'ഡാൽട്ടൻ',
+          one: '{0} ഡാൽട്ടൺ',
           other: '{0} ഡാൽട്ടണുകൾ',
         ),
         short: UnitCountPattern(
@@ -6054,7 +6082,7 @@ class UnitsMl implements Units {
           _locale,
           'ബാറുകൾ',
           one: '{0} ബാർ',
-          other: '{0} ബാറുകൾ',
+          other: '{0} ബാർ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6118,7 +6146,7 @@ class UnitsMl implements Units {
   Unit get pressurePascal => Unit(
         long: UnitCountPattern(
           _locale,
-          'പാസ്കൽസ്',
+          'പാസ്കൽ',
           one: '{0} പാസ്കൽ',
           other: '{0} പാസ്കൽസ്',
         ),
@@ -6140,9 +6168,9 @@ class UnitsMl implements Units {
   Unit get pressureHectopascal => Unit(
         long: UnitCountPattern(
           _locale,
-          'ഹെക്‌ടോപാസ്‌ക്കൽ',
-          one: '{0} ഹെക്‌ടോപാസ്‌ക്കൽ',
-          other: '{0} ഹെക്‌ടോപാസ്‌ക്കൽ',
+          'ഹെക്‌ടോപാസ്‌കൽ',
+          one: '{0} ഹെക്‌ടോപാസ്‌കൽ',
+          other: '{0} ഹെക്‌ടോപാസ്‌കൽ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6186,7 +6214,7 @@ class UnitsMl implements Units {
           _locale,
           'മെഗാപാസ്കൽ',
           one: '{0} മെഗാപാസ്കൽ',
-          other: '{0} മെഗാപാസ്കലുകൾ',
+          other: '{0} മെഗാപാസ്കൽ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6428,7 +6456,7 @@ class UnitsMl implements Units {
           _locale,
           'ന്യൂട്ടൺ മീറ്റർ',
           one: '{0} ന്യൂട്ടൺ മീറ്റർ',
-          other: '{0} ന്യൂട്ടൺ മീറ്ററുകൾ',
+          other: '{0} ന്യൂട്ടൺ മീറ്റർ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -7211,6 +7239,72 @@ class UnitsMl implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'പാർട്‌സ്/ബില്ല്യൺ',
+          one: '{0} പാർട്ട്/ബില്ല്യൺ',
+          other: '{0} പാർട്‌സ്/ബില്ല്യൺ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'പാർട്‌സ്/ബില്ല്യൺ',
+          one: '{0} പി.പി.ബി.',
+          other: '{0} പി.പി.ബി.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'പി.പി.ബി.',
+          one: '{0}പി.പി.ബി.',
+          other: '{0}പി.പി.ബി.',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'രാത്രികൾ',
+          one: '{0} രാത്രി',
+          other: '{0} രാത്രികൾ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'രാത്രികൾ',
+          one: '{0} രാത്രി',
+          other: '{0} രാത്രികൾ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'രാത്രികൾ',
+          one: '{0}രാത്രി',
+          other: '{0}രാത്രികൾ',
         ),
       );
 }
@@ -8899,7 +8993,7 @@ class TerritoriesMl implements Territories {
     ),
     'MO': Territory(
       'MO',
-      'മക്കാവു SAR ചൈന',
+      'മക്കാവു എസ്.എ.ആർ. ചൈന',
       short: 'മക്കാവു',
     ),
     'MP': Territory(
@@ -10202,9 +10296,6 @@ class TimeZonesMl extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ചീറ്റ',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ചൊയ്ബൽസൻ',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'കൊളം‌ബോ',
     ),
@@ -10919,14 +11010,6 @@ class TimeZonesMl extends TimeZones {
         daylight: 'ചൈന ഡേലൈറ്റ് സമയം',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ചോയി‍ബൽസാൻ സമയം',
-        standard: 'ചോയ്‌ബൽസാൻ സ്റ്റാൻഡേർഡ് സമയം',
-        daylight: 'ചോയിബൽസാൻ ഗ്രീഷ്‌മകാല സമയം',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11220,6 +11303,12 @@ class TimeZonesMl extends TimeZones {
         generic: 'പെട്രോപാവ്‌ലോസ്ക് കംചാസ്കി സമയം',
         standard: 'പെട്രോപാവ്‌ലോസ്ക് കംചാസ്കി സ്റ്റാൻഡേർഡ് സമയം',
         daylight: 'പെട്രോപാവ്‌ലോസ്ക് കംചാസ്കി വേനൽക്കാല സമയം',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'കസാഖിസ്ഥാൻ സമയം',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

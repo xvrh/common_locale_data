@@ -896,10 +896,6 @@ class LanguagesEnMH extends Languages {
       'goh',
       'Old High German',
     ),
-    'gom': Language(
-      'gom',
-      'Goan Konkani',
-    ),
     'gon': Language(
       'gon',
       'Gondi',
@@ -2906,6 +2902,10 @@ class ScriptsEnMH extends Scripts {
       'Ethi',
       'Ethiopic',
     ),
+    'Gara': Script(
+      'Gara',
+      'Garay',
+    ),
     'Geok': Script(
       'Geok',
       'Georgian Khutsuri',
@@ -2941,6 +2941,10 @@ class ScriptsEnMH extends Scripts {
     'Gujr': Script(
       'Gujr',
       'Gujarati',
+    ),
+    'Gukh': Script(
+      'Gukh',
+      'Gurung Khema',
     ),
     'Guru': Script(
       'Guru',
@@ -3067,6 +3071,10 @@ class ScriptsEnMH extends Scripts {
     'Kpel': Script(
       'Kpel',
       'Kpelle',
+    ),
+    'Krai': Script(
+      'Krai',
+      'Kirat Rai',
     ),
     'Kthi': Script(
       'Kthi',
@@ -3236,6 +3244,10 @@ class ScriptsEnMH extends Scripts {
       'Olck',
       'Ol Chiki',
     ),
+    'Onao': Script(
+      'Onao',
+      'Ol Onal',
+    ),
     'Orkh': Script(
       'Orkh',
       'Orkhon',
@@ -3377,6 +3389,10 @@ class ScriptsEnMH extends Scripts {
       'Sund',
       'Sundanese',
     ),
+    'Sunu': Script(
+      'Sunu',
+      'Sunuwar',
+    ),
     'Sylo': Script(
       'Sylo',
       'Syloti Nagri',
@@ -3461,9 +3477,17 @@ class ScriptsEnMH extends Scripts {
       'Tnsa',
       'Tangsa',
     ),
+    'Todr': Script(
+      'Todr',
+      'Todhri',
+    ),
     'Toto': Script(
       'Toto',
       'Toto',
+    ),
+    'Tutg': Script(
+      'Tutg',
+      'Tulu-Tigalari',
     ),
     'Ugar': Script(
       'Ugar',
@@ -8049,6 +8073,72 @@ class UnitsEnMH implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0}light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parts per billion',
+          one: '{0} part per billion',
+          other: '{0} parts per billion',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'parts/billion',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0}night',
+          other: '{0}nights',
+        ),
+      );
 }
 
 class DateFieldsEnMH implements DateFields {
@@ -10637,14 +10727,6 @@ class TimeZonesEnMH extends TimeZones {
         daylight: 'China Daylight Time',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choibalsan Time',
-        standard: 'Choibalsan Standard Time',
-        daylight: 'Choibalsan Summer Time',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10946,6 +11028,12 @@ class TimeZonesEnMH extends TimeZones {
         generic: 'Petropavlovsk-Kamchatski Time',
         standard: 'Petropavlovsk-Kamchatski Standard Time',
         daylight: 'Petropavlovsk-Kamchatski Summer Time',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakhstan Time',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

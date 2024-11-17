@@ -219,6 +219,10 @@ class LanguagesAfNA extends Languages {
       'bla',
       'Siksika',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -403,7 +407,7 @@ class LanguagesAfNA extends Languages {
     ),
     'dsb': Language(
       'dsb',
-      'Benedesorbies',
+      'Nedersorbies',
     ),
     'dua': Language(
       'dua',
@@ -881,7 +885,7 @@ class LanguagesAfNA extends Languages {
     ),
     'ks': Language(
       'ks',
-      'Kasjmirs',
+      'Kasjmiri',
     ),
     'ksb': Language(
       'ksb',
@@ -915,6 +919,10 @@ class LanguagesAfNA extends Languages {
       'kwk',
       'Kwak’wala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Kirgisies',
@@ -947,6 +955,10 @@ class LanguagesAfNA extends Languages {
       'li',
       'Limburgs',
     ),
+    'lij': Language(
+      'lij',
+      'Liguries',
+    ),
     'lil': Language(
       'lil',
       'Lillooet',
@@ -954,6 +966,10 @@ class LanguagesAfNA extends Languages {
     'lkt': Language(
       'lkt',
       'Lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Lombardies',
     ),
     'ln': Language(
       'ln',
@@ -1405,7 +1421,7 @@ class LanguagesAfNA extends Languages {
     ),
     'sah': Language(
       'sah',
-      'Sakhaans',
+      'Jakoeties',
     ),
     'saq': Language(
       'saq',
@@ -1571,6 +1587,10 @@ class LanguagesAfNA extends Languages {
       'syr',
       'Siries',
     ),
+    'szl': Language(
+      'szl',
+      'Silesies',
+    ),
     'ta': Language(
       'ta',
       'Tamil',
@@ -1613,7 +1633,7 @@ class LanguagesAfNA extends Languages {
     ),
     'ti': Language(
       'ti',
-      'Tigrinya',
+      'Tigrinja',
     ),
     'tig': Language(
       'tig',
@@ -1721,7 +1741,7 @@ class LanguagesAfNA extends Languages {
     ),
     'uz': Language(
       'uz',
-      'Oezbeeks',
+      'Oesbekies',
     ),
     'vai': Language(
       'vai',
@@ -1731,9 +1751,17 @@ class LanguagesAfNA extends Languages {
       've',
       'Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Venesiaans',
+    ),
     'vi': Language(
       'vi',
       'Viëtnamees',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1779,6 +1807,10 @@ class LanguagesAfNA extends Languages {
       'xh',
       'Xhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
+    ),
     'xog': Language(
       'xog',
       'Soga',
@@ -1797,7 +1829,7 @@ class LanguagesAfNA extends Languages {
     ),
     'yo': Language(
       'yo',
-      'Yoruba',
+      'Joroeba',
     ),
     'yrl': Language(
       'yrl',
@@ -1807,6 +1839,10 @@ class LanguagesAfNA extends Languages {
       'yue',
       'Kantonees',
       menu: 'Kantonese Chinees',
+    ),
+    'za': Language(
+      'za',
+      'Zhuang',
     ),
     'zgh': Language(
       'zgh',
@@ -1884,7 +1920,7 @@ class ScriptsAfNA extends Scripts {
     ),
     'Cyrl': Script(
       'Cyrl',
-      'Sirillies',
+      'Cyrillies',
     ),
     'Deva': Script(
       'Deva',
@@ -1904,7 +1940,7 @@ class ScriptsAfNA extends Scripts {
     ),
     'Gujr': Script(
       'Gujr',
-      'Gudjarati',
+      'Goedjarati',
     ),
     'Guru': Script(
       'Guru',
@@ -1943,10 +1979,6 @@ class ScriptsAfNA extends Scripts {
     'Hrkt': Script(
       'Hrkt',
       'Japannese lettergreepskrif',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
     ),
     'Jpan': Script(
       'Jpan',
@@ -2036,10 +2068,6 @@ class ScriptsAfNA extends Scripts {
       'Thaa',
       'Thaana',
     ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
-    ),
     'Tibt': Script(
       'Tibt',
       'Tibettaans',
@@ -2070,7 +2098,7 @@ class ScriptsAfNA extends Scripts {
     ),
     'Zyyy': Script(
       'Zyyy',
-      'Gemeenskaplik',
+      'Algemeen',
     ),
     'Zzzz': Script(
       'Zzzz',
@@ -3420,7 +3448,7 @@ class UnitsAfNA implements Units {
   Unit get durationCentury => Unit(
         long: UnitCountPattern(
           _locale,
-          'eeu',
+          'eeue',
           one: '{0} eeu',
           other: '{0} eeue',
         ),
@@ -4197,14 +4225,14 @@ class UnitsAfNA implements Units {
         short: UnitCountPattern(
           _locale,
           'megapieksels',
-          one: '{0} Mpx',
-          other: '{0} Mpx',
+          one: '{0} MP',
+          other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'megapieksels',
-          one: '{0}Mpx',
-          other: '{0}Mpx',
+          one: '{0} MP',
+          other: '{0} MP',
         ),
       );
 
@@ -4576,7 +4604,7 @@ class UnitsAfNA implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'voet',
+          'vt.',
           one: '{0}vt.',
           other: '{0}vt.',
         ),
@@ -6583,6 +6611,72 @@ class UnitsAfNA implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'lig',
+          one: '{0} lig',
+          other: '{0} lig',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'lig',
+          one: '{0} lig',
+          other: '{0} lig',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'lig',
+          one: '{0} lig',
+          other: '{0} lig',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'deeltjies per miljard',
+          one: '{0} deeltjie per miljard',
+          other: '{0} deeltjies per miljard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'deeltjies/miljard',
+          one: '{0} deeltjie/miljard',
+          other: '{0} deeltjies/miljard',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'deeltjies/miljard',
+          one: '{0}deeltjie/miljard',
+          other: '{0}deeltjies/miljard',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nagte',
+          one: '{0} nag',
+          other: '{0} nagte',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nagte',
+          one: '{0} nag',
+          other: '{0} nagte',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nagte',
+          one: '{0} nag',
+          other: '{0} nagte',
+        ),
+      );
 }
 
 class DateFieldsAfNA implements DateFields {
@@ -7449,7 +7543,7 @@ class TerritoriesAfNA implements Territories {
   @override
   Territory get world => Territory(
         '001',
-        'Wêreld',
+        'wêreld',
       );
 
   @override
@@ -7811,8 +7905,8 @@ class TerritoriesAfNA implements Territories {
     ),
     'CG': Territory(
       'CG',
-      'Kongo - Brazzaville',
-      variant: 'Kongo (Republiek die)',
+      'Kongo-Brazzaville',
+      variant: 'Kongo (Republiek)',
     ),
     'CH': Territory(
       'CH',
@@ -8733,7 +8827,7 @@ class TimeZonesAfNA extends TimeZones {
       exemplarCity: 'Cambridgebaai',
     ),
     'America/Cancun': TimeZoneNames(
-      exemplarCity: 'Cancun',
+      exemplarCity: 'Cancún',
     ),
     'America/Cayman': TimeZoneNames(
       exemplarCity: 'Kaaiman',
@@ -8787,7 +8881,7 @@ class TimeZonesAfNA extends TimeZones {
       exemplarCity: 'Lower Prince’s Quarter',
     ),
     'America/Merida': TimeZoneNames(
-      exemplarCity: 'Merida',
+      exemplarCity: 'Mérida',
     ),
     'America/Mexico_City': TimeZoneNames(
       exemplarCity: 'Meksikostad',
@@ -8805,7 +8899,7 @@ class TimeZonesAfNA extends TimeZones {
       exemplarCity: 'Ittoqqortoormiit',
     ),
     'America/St_Barthelemy': TimeZoneNames(
-      exemplarCity: 'Sint Barthélemy',
+      exemplarCity: 'Sint Bartholomeus',
     ),
     'America/St_Johns': TimeZoneNames(
       exemplarCity: 'Sint John’s',
@@ -9355,14 +9449,6 @@ class TimeZonesAfNA extends TimeZones {
         daylight: 'China-dagligtyd',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choibalsan-tyd',
-        standard: 'Choibalsan-standaardtyd',
-        daylight: 'Choibalsan-somertyd',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -9380,7 +9466,7 @@ class TimeZonesAfNA extends TimeZones {
       long: TimeZoneName(
         generic: 'Colombië-tyd',
         standard: 'Colombië-standaardtyd',
-        daylight: 'Colombia-somertyd',
+        daylight: 'Colombië-somertyd',
       ),
     ),
     'Cook': MetaZone(
@@ -9647,6 +9733,12 @@ class TimeZonesAfNA extends TimeZones {
         generic: 'Petropavlovsk-Kamchatski-tyd',
         standard: 'Petropavlovsk-Kamchatski-standaardtyd',
         daylight: 'Petropavlovsk-Kamchatski-somertyd',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakstan-tyd',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

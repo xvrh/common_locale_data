@@ -207,6 +207,10 @@ class LanguagesSd extends Languages {
       'bla',
       'سڪسڪا',
     ),
+    'blo': Language(
+      'blo',
+      'آنيائي',
+    ),
     'bm': Language(
       'bm',
       'بمبارا',
@@ -683,6 +687,10 @@ class LanguagesSd extends Languages {
       'id',
       'انڊونيشي',
     ),
+    'ie': Language(
+      'ie',
+      'انٽرلنگئي',
+    ),
     'ig': Language(
       'ig',
       'اگبو',
@@ -891,6 +899,10 @@ class LanguagesSd extends Languages {
       'kwk',
       'ڪئاڪ ولا',
     ),
+    'kxv': Language(
+      'kxv',
+      'ڪووي',
+    ),
     'ky': Language(
       'ky',
       'ڪرغيز',
@@ -923,6 +935,10 @@ class LanguagesSd extends Languages {
       'li',
       'لمبرگش',
     ),
+    'lij': Language(
+      'lij',
+      'لگيوريئن',
+    ),
     'lil': Language(
       'lil',
       'ليلوئيٽ',
@@ -930,6 +946,10 @@ class LanguagesSd extends Languages {
     'lkt': Language(
       'lkt',
       'لڪوٽا',
+    ),
+    'lmo': Language(
+      'lmo',
+      'لامبارڊ',
     ),
     'ln': Language(
       'ln',
@@ -1543,6 +1563,10 @@ class LanguagesSd extends Languages {
       'syr',
       'شامي',
     ),
+    'szl': Language(
+      'szl',
+      'سليسيئن',
+    ),
     'ta': Language(
       'ta',
       'تامل',
@@ -1621,7 +1645,7 @@ class LanguagesSd extends Languages {
     ),
     'tr': Language(
       'tr',
-      'ترڪش',
+      'ترڪي',
     ),
     'trv': Language(
       'trv',
@@ -1699,9 +1723,17 @@ class LanguagesSd extends Languages {
       've',
       'وينڊا',
     ),
+    'vec': Language(
+      'vec',
+      'ونيشن',
+    ),
     'vi': Language(
       'vi',
       'ويتنامي',
+    ),
+    'vmw': Language(
+      'vmw',
+      'مکووا',
     ),
     'vo': Language(
       'vo',
@@ -1743,6 +1775,10 @@ class LanguagesSd extends Languages {
       'xh',
       'زھوسا',
     ),
+    'xnr': Language(
+      'xnr',
+      'ڪينگري',
+    ),
     'xog': Language(
       'xog',
       'سوگا',
@@ -1771,6 +1807,10 @@ class LanguagesSd extends Languages {
       'yue',
       'ڪينٽونيز',
       menu: 'چيني، ڪينٽونيز',
+    ),
+    'za': Language(
+      'za',
+      'جوئنگ',
     ),
     'zgh': Language(
       'zgh',
@@ -1835,7 +1875,7 @@ class ScriptsSd extends Scripts {
     ),
     'Brai': Script(
       'Brai',
-      'بريلي',
+      'بريل',
     ),
     'Cakm': Script(
       'Cakm',
@@ -2686,19 +2726,19 @@ class UnitsSd implements Units {
         long: UnitCountPattern(
           _locale,
           'ملي گرامز في ڊيسي ليٽر',
-          one: '{0} mg/dL',
+          one: '{0} مليگرام في ڊيسيليٽر',
           other: '{0} ملي گرامز في ڊيسي ليٽر',
         ),
         short: UnitCountPattern(
           _locale,
           'ملي گرامز في ڊيسي ليٽر',
-          one: '{0} mg/dL',
+          one: '{0} مليگرام في ڊيسيليٽر',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ملي گرامز في ڊيسي ليٽر',
-          one: '{0} mg/dL',
+          one: '{0} مليگرام في ڊيسيليٽر',
           other: '{0} mg/dL',
         ),
       );
@@ -3192,20 +3232,20 @@ class UnitsSd implements Units {
         long: UnitCountPattern(
           _locale,
           'صديون',
-          one: '{0} c',
+          one: '{0} صدي',
           other: '{0} صديون',
         ),
         short: UnitCountPattern(
           _locale,
-          'c',
-          one: '{0} c',
-          other: '{0} c',
+          'ص',
+          one: '{0} ص',
+          other: '{0} ص',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'c',
-          one: '{0} c',
-          other: '{0} c',
+          'ص',
+          one: '{0}ص',
+          other: '{0}ص',
         ),
       );
 
@@ -3215,19 +3255,19 @@ class UnitsSd implements Units {
           _locale,
           'ڏهاڪا',
           one: '{0} ڏهاڪو',
-          other: '{0} ڏهاڪا',
+          other: '{0} ڏهاڪ',
         ),
         short: UnitCountPattern(
           _locale,
           'ڏهاڪا',
           one: '{0} ڏهاڪو',
-          other: '{0} ڏهاڪا',
+          other: '{0} ڏهاڪ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ڏهاڪا',
-          one: '{0} ڏهاڪو',
-          other: '{0} ڏهاڪا',
+          one: '{0}ڏهاڪ',
+          other: '{0}ڏهاڪ',
         ),
       );
 
@@ -3248,8 +3288,8 @@ class UnitsSd implements Units {
         narrow: UnitCountPattern(
           _locale,
           'سال',
-          one: '{0} سال',
-          other: '{0} سال',
+          one: '{0}س',
+          other: '{0}س',
         ),
       );
 
@@ -3257,21 +3297,21 @@ class UnitsSd implements Units {
   Unit get durationQuarter => Unit(
         long: UnitCountPattern(
           _locale,
-          'ٽه ماهي',
-          one: '{0} ٽه ماهي',
-          other: '{0} ٽه ماهي',
+          'ٽه ماهيون',
+          one: '{0} ٽه ماهيون',
+          other: '{0} ٽه ماهيون',
         ),
         short: UnitCountPattern(
           _locale,
           'ٽه ماهي',
-          one: '{0} ٽه ماهي',
-          other: '{0} ٽه ماهي',
+          one: '{0} ٽه ماهيون',
+          other: '{0} ٽه ماهيون',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ٽه ماهي',
-          one: '{0} ٽه ماهي',
-          other: '{0} ٽه ماهي',
+          one: '{0}ٽه ماهي',
+          other: '{0}ٽه ماهي',
         ),
       );
 
@@ -3280,20 +3320,20 @@ class UnitsSd implements Units {
         long: UnitCountPattern(
           _locale,
           'مهينا',
-          one: '{0} مهينا',
+          one: '{0} مهينو',
           other: '{0} مهينا',
         ),
         short: UnitCountPattern(
           _locale,
           'مهينا',
-          one: '{0} مهينا',
+          one: '{0} مهينو',
           other: '{0} مهينا',
         ),
         narrow: UnitCountPattern(
           _locale,
           'مهينو',
-          one: '{0} مهينا',
-          other: '{0} مهينا',
+          one: '{0}مهينو',
+          other: '{0}مهينا',
         ),
       );
 
@@ -3302,20 +3342,20 @@ class UnitsSd implements Units {
         long: UnitCountPattern(
           _locale,
           'هفتا',
-          one: '{0} هفتا',
+          one: '{0} هفتو',
           other: '{0} هفتا',
         ),
         short: UnitCountPattern(
           _locale,
           'هفتا',
-          one: '{0} هفتا',
+          one: '{0} هفتو',
           other: '{0} هفتا',
         ),
         narrow: UnitCountPattern(
           _locale,
           'هفتو',
-          one: '{0} هفتا',
-          other: '{0} هفتي',
+          one: '{0}هفتو',
+          other: '{0}هفتا',
         ),
       );
 
@@ -3336,8 +3376,8 @@ class UnitsSd implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ڏينهن',
-          one: '{0} ڏينهن',
-          other: '{0} ڏينهن',
+          one: '{0}ڏينهن',
+          other: '{0}ڏينهن',
         ),
       );
 
@@ -3402,8 +3442,8 @@ class UnitsSd implements Units {
         narrow: UnitCountPattern(
           _locale,
           'سيڪنڊ',
-          one: '{0} s',
-          other: '{0} سيڪنڊ',
+          one: '{0}سيڪنڊ',
+          other: '{0}سيڪنڊ',
         ),
       );
 
@@ -3446,8 +3486,8 @@ class UnitsSd implements Units {
         narrow: UnitCountPattern(
           _locale,
           'مائڪرو سيڪنڊ',
-          one: '{0} مائڪرو سيڪنڊ',
-          other: '{0} مائڪرو سيڪنڊ',
+          one: '{0}مائڪرو سيڪنڊ',
+          other: '{0}مائڪرو سيڪنڊ',
         ),
       );
 
@@ -6354,6 +6394,72 @@ class UnitsSd implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'نوري',
+          one: '{0} نوري',
+          other: '{0} نوري',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'نوري',
+          one: '{0} نوري',
+          other: '{0} نوري',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'نوري',
+          one: '{0}نوري',
+          other: '{0}نوري',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'حصا في ارب',
+          one: '{0} حصو في ارب',
+          other: '{0} حصا في ارب',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'حصا/ارب',
+          one: '{0} ح ف ا',
+          other: '{0} ح ف ا',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ح ف ا',
+          one: '{0}ح ف ا',
+          other: '{0}ح ف ا',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'راتيون',
+          one: '{0} رات',
+          other: '{0} راتيون',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'راتيون',
+          one: '{0} رات',
+          other: '{0} راتيون',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'راتيون',
+          one: '{0}رات',
+          other: '{0}راتيون',
+        ),
+      );
 }
 
 class DateFieldsSd implements DateFields {
@@ -7755,7 +7861,7 @@ class TerritoriesSd implements Territories {
     ),
     'GD': Territory(
       'GD',
-      'گرينڊا',
+      'گريناڊا',
     ),
     'GE': Territory(
       'GE',
@@ -9342,9 +9448,6 @@ class TimeZonesSd extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'چيتا',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'چوئي بيلسن',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'ڪولمبو',
     ),
@@ -10019,14 +10122,6 @@ class TimeZonesSd extends TimeZones {
         daylight: 'چائنا جي ڏينهن جو وقت',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'چوئي بيلسن جو وقت',
-        standard: 'چوئي بيلسن جو معياري وقت',
-        daylight: 'چوئي بيلسن جي اونهاري جو وقت',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10303,6 +10398,12 @@ class TimeZonesSd extends TimeZones {
         generic: 'جاپان جو وقت',
         standard: 'جاپان جو معياري وقت',
         daylight: 'جاپان جي ڏينهن جو وقت',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'قزاقستان وقت',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -211,6 +211,10 @@ class LanguagesSqMK extends Languages {
       'bla',
       'siksikaisht',
     ),
+    'blo': Language(
+      'blo',
+      'anisht',
+    ),
     'bm': Language(
       'bm',
       'bambarisht',
@@ -635,6 +639,11 @@ class LanguagesSqMK extends Languages {
       'hi',
       'indisht',
     ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'hindisht (latine)',
+      variant: 'hinglisht',
+    ),
     'hil': Language(
       'hil',
       'hiligajnonisht',
@@ -906,6 +915,10 @@ class LanguagesSqMK extends Languages {
     'kwk': Language(
       'kwk',
       'kuakualaisht',
+    ),
+    'kxv': Language(
+      'kxv',
+      'kuvisht',
     ),
     'ky': Language(
       'ky',
@@ -1579,6 +1592,10 @@ class LanguagesSqMK extends Languages {
       'syr',
       'siriakisht',
     ),
+    'szl': Language(
+      'szl',
+      'silesisht',
+    ),
     'ta': Language(
       'ta',
       'tamilisht',
@@ -1747,6 +1764,10 @@ class LanguagesSqMK extends Languages {
       'vi',
       'vietnamisht',
     ),
+    'vmw': Language(
+      'vmw',
+      'makuvaisht',
+    ),
     'vo': Language(
       'vo',
       'volapykisht',
@@ -1791,6 +1812,10 @@ class LanguagesSqMK extends Languages {
       'xh',
       'xhosaisht',
     ),
+    'xnr': Language(
+      'xnr',
+      'kangrisht',
+    ),
     'xog': Language(
       'xog',
       'sogisht',
@@ -1819,6 +1844,10 @@ class LanguagesSqMK extends Languages {
       'yue',
       'kantonezisht',
       menu: 'kinezishte kantoneze',
+    ),
+    'za': Language(
+      'za',
+      'zhuangisht',
     ),
     'zgh': Language(
       'zgh',
@@ -3135,7 +3164,7 @@ class UnitsSqMK implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'hark-min',
+          'hark-min.',
           one: '{0}′',
           other: '{0}′',
         ),
@@ -3157,7 +3186,7 @@ class UnitsSqMK implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'hark-sek',
+          'hark-sek.',
           one: '{0}″',
           other: '{0}″',
         ),
@@ -3575,7 +3604,7 @@ class UnitsSqMK implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'molë',
+          'mol',
           one: '{0} mol',
           other: '{0} molë',
         ),
@@ -4807,7 +4836,7 @@ class UnitsSqMK implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pika',
+          'pikë',
           one: '{0} pikë',
           other: '{0} pika',
         ),
@@ -5983,9 +6012,9 @@ class UnitsSqMK implements Units {
   Unit get pressurePascal => Unit(
         long: UnitCountPattern(
           _locale,
-          'paskalë',
+          'paskal',
           one: '{0} paskal',
-          other: '{0} paskalë',
+          other: '{0} paskal',
         ),
         short: UnitCountPattern(
           _locale,
@@ -7040,19 +7069,19 @@ class UnitsSqMK implements Units {
         long: UnitCountPattern(
           _locale,
           'çerekë imperialë',
-          one: '{0} çerek imperialë',
+          one: '{0} çerek imperial',
           other: '{0} çerekë imperialë',
         ),
         short: UnitCountPattern(
           _locale,
           'qt Imp',
-          one: '{0} çerek imperialë',
+          one: '{0} çerek imperial',
           other: '{0} qt Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt Imp',
-          one: '{0} çerek imperialë',
+          one: '{0} çerek imperial',
           other: '{0} qt Imp.',
         ),
       );
@@ -7076,6 +7105,72 @@ class UnitsSqMK implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'pjesë për miliard',
+          one: '{0} pjesë për miliard',
+          other: '{0} pjesë për miliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} pjesë për miliard',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} pjesë për miliard',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'net',
+          one: '{0} natë',
+          other: '{0} net',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'net',
+          one: '{0} natë',
+          other: '{0} net',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'net',
+          one: '{0} natë',
+          other: '{0} net',
         ),
       );
 }
@@ -9820,9 +9915,6 @@ class TimeZonesSqMK extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Çita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Çoibalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -10409,14 +10501,6 @@ class TimeZonesSqMK extends TimeZones {
         daylight: 'Ora verore e Kinës',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Ora e Çoibalsanit',
-        standard: 'Ora standarde e Çoibalsanit',
-        daylight: 'Ora verore e Çoibalsanit',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10707,6 +10791,12 @@ class TimeZonesSqMK extends TimeZones {
         generic: 'Ora e Petropavllovsk-Kamçatkës',
         standard: 'Ora standarde e Petropavllovsk-Kamçatkës',
         daylight: 'Ora verore e Petropavllovsk-Kamçatkës',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Ora e Kazakistanit',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

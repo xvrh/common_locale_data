@@ -891,10 +891,6 @@ class LanguagesFi extends Languages {
       'goh',
       'muinaisyläsaksa',
     ),
-    'gom': Language(
-      'gom',
-      'goankonkani',
-    ),
     'gon': Language(
       'gon',
       'gondi',
@@ -1454,10 +1450,6 @@ class LanguagesFi extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2498,10 +2490,6 @@ class LanguagesFi extends Languages {
     'uz': Language(
       'uz',
       'uzbekki',
-    ),
-    'vai': Language(
-      'vai',
-      'vai',
     ),
     've': Language(
       've',
@@ -8003,6 +7991,72 @@ class UnitsFi implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'miljardisosat',
+          one: '{0} miljardisosa',
+          other: '{0} miljardisosaa',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} miljardisosa',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} miljardisosa',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'yöt',
+          one: '{0} yö',
+          other: '{0} yötä',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'yöt',
+          one: '{0} yö',
+          other: '{0} yö',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'yöt',
+          one: '{0}yö',
+          other: '{0}yöt',
+        ),
+      );
 }
 
 class DateFieldsFi implements DateFields {
@@ -10434,9 +10488,6 @@ class TimeZonesFi extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Tšita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tšoibalsa',
-    ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damaskos',
     ),
@@ -10887,14 +10938,6 @@ class TimeZonesFi extends TimeZones {
         daylight: 'Kiinan kesäaika',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Tšoibalsan aika',
-        standard: 'Tšoibalsan normaaliaika',
-        daylight: 'Tšoibalsan kesäaika',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11185,6 +11228,12 @@ class TimeZonesFi extends TimeZones {
         generic: 'Kamtšatkan aika',
         standard: 'Kamtšatkan normaaliaika',
         daylight: 'Kamtšatkan kesäaika',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakstanin aika',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

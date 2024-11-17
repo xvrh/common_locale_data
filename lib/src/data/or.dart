@@ -132,7 +132,7 @@ class LanguagesOr extends Languages {
     ),
     'ar-001': Language(
       'ar-001',
-      'ଆଧୁନିକ ମାନାଙ୍କ ଆରବୀୟ',
+      'ଆଧୁନିକ ମାନକ ଆରବିକ୍‌',
     ),
     'arc': Language(
       'arc',
@@ -246,6 +246,10 @@ class LanguagesOr extends Languages {
     'bla': Language(
       'bla',
       'ସିକସିକା',
+    ),
+    'blo': Language(
+      'blo',
+      'ବ୍ଲୋ',
     ),
     'bm': Language(
       'bm',
@@ -443,7 +447,7 @@ class LanguagesOr extends Languages {
     ),
     'da': Language(
       'da',
-      'ଡାନ୍ନିସ୍',
+      'ଡାନିସ୍‌',
     ),
     'dak': Language(
       'dak',
@@ -585,7 +589,7 @@ class LanguagesOr extends Languages {
     ),
     'es': Language(
       'es',
-      'ସ୍ପେନିୟ',
+      'ସ୍ପାନିସ୍‌',
     ),
     'es-419': Language(
       'es-419',
@@ -645,7 +649,7 @@ class LanguagesOr extends Languages {
     ),
     'fo': Language(
       'fo',
-      'ଫାରୋଏସେ',
+      'ଫାରୋଇଜ୍‌',
     ),
     'fon': Language(
       'fon',
@@ -693,7 +697,7 @@ class LanguagesOr extends Languages {
     ),
     'ga': Language(
       'ga',
-      'ଇରିସ୍',
+      'ଆଇରିସ୍‌',
     ),
     'gaa': Language(
       'gaa',
@@ -721,7 +725,7 @@ class LanguagesOr extends Languages {
     ),
     'gl': Language(
       'gl',
-      'ଗାଲସିଆନ୍',
+      'ଗାଲିସିଆନ୍‌',
     ),
     'gmh': Language(
       'gmh',
@@ -761,7 +765,7 @@ class LanguagesOr extends Languages {
     ),
     'gu': Language(
       'gu',
-      'ଗୁଜୁରାଟୀ',
+      'ଗୁଜରାଟୀ',
     ),
     'guz': Language(
       'guz',
@@ -793,7 +797,7 @@ class LanguagesOr extends Languages {
     ),
     'he': Language(
       'he',
-      'ହେବ୍ର୍ୟୁ',
+      'ହିବ୍ରୁ',
     ),
     'hi': Language(
       'hi',
@@ -817,7 +821,7 @@ class LanguagesOr extends Languages {
     ),
     'hr': Language(
       'hr',
-      'କ୍ରୋଆଟିଆନ୍',
+      'କ୍ରୋଏସୀୟ',
     ),
     'hsb': Language(
       'hsb',
@@ -933,11 +937,11 @@ class LanguagesOr extends Languages {
     ),
     'jv': Language(
       'jv',
-      'ଜାଭାନୀଜ୍',
+      'ଜାଭାନିଜ୍‌',
     ),
     'ka': Language(
       'ka',
-      'ଜର୍ଜିୟ',
+      'ଜର୍ଜିଆନ୍‌',
     ),
     'kaa': Language(
       'kaa',
@@ -1013,7 +1017,7 @@ class LanguagesOr extends Languages {
     ),
     'kk': Language(
       'kk',
-      'କାଜାକ୍',
+      'କାଜାଖ୍‌',
     ),
     'kkj': Language(
       'kkj',
@@ -1111,6 +1115,10 @@ class LanguagesOr extends Languages {
       'kwk',
       'କ୍ଵାକୱାଲା',
     ),
+    'kxv': Language(
+      'kxv',
+      'କୁୱି',
+    ),
     'ky': Language(
       'ky',
       'କୀରଗୀଜ୍',
@@ -1151,6 +1159,10 @@ class LanguagesOr extends Languages {
       'li',
       'ଲିମ୍ବୁର୍ଗିସ୍',
     ),
+    'lij': Language(
+      'lij',
+      'ଲିଗୁରିଆନ୍‌',
+    ),
     'lil': Language(
       'lil',
       'ଲିଲ୍ଲୁଏଟ',
@@ -1158,6 +1170,10 @@ class LanguagesOr extends Languages {
     'lkt': Language(
       'lkt',
       'ଲାକୋଟା',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ଲୋମ୍ବାର୍ଡ୍‌',
     ),
     'ln': Language(
       'ln',
@@ -1309,7 +1325,7 @@ class LanguagesOr extends Languages {
     ),
     'mn': Language(
       'mn',
-      'ମଙ୍ଗୋଳିୟ',
+      'ମଙ୍ଗୋଲୀୟ',
     ),
     'mnc': Language(
       'mnc',
@@ -1349,7 +1365,7 @@ class LanguagesOr extends Languages {
     ),
     'mul': Language(
       'mul',
-      'ବିବିଧ ଭାଷାମାନ',
+      'ବିବିଧ ଭାଷା',
     ),
     'mus': Language(
       'mus',
@@ -1433,7 +1449,7 @@ class LanguagesOr extends Languages {
     ),
     'nn': Language(
       'nn',
-      'ନରୱେଜିଆନ୍ ନିୟୋର୍ସ୍କ',
+      'ନରୱେଜିଆନ୍ ନିନର୍ସ୍କ୍‌',
     ),
     'nnh': Language(
       'nnh',
@@ -1697,7 +1713,7 @@ class LanguagesOr extends Languages {
     ),
     'sah': Language(
       'sah',
-      'ସାଖା',
+      'ୟାକୂଟ୍‌',
     ),
     'sam': Language(
       'sam',
@@ -1725,7 +1741,7 @@ class LanguagesOr extends Languages {
     ),
     'sc': Language(
       'sc',
-      'ସର୍ଦିନିଆନ୍',
+      'ସାର୍ଡିନିଆନ୍‌',
     ),
     'scn': Language(
       'scn',
@@ -1885,7 +1901,7 @@ class LanguagesOr extends Languages {
     ),
     'sw': Language(
       'sw',
-      'ସ୍ୱାହିଲ୍',
+      'ସ୍ୱାହିଲି',
     ),
     'sw-CD': Language(
       'sw-CD',
@@ -1901,7 +1917,11 @@ class LanguagesOr extends Languages {
     ),
     'syr': Language(
       'syr',
-      'ସିରିକ୍',
+      'ସିରିଆକ୍‌',
+    ),
+    'szl': Language(
+      'szl',
+      'ସାଇଲେସିଆନ୍‌',
     ),
     'ta': Language(
       'ta',
@@ -1949,7 +1969,7 @@ class LanguagesOr extends Languages {
     ),
     'ti': Language(
       'ti',
-      'ଟ୍ରିଗିନିଆ',
+      'ଟାଇଗ୍ରିନିଆ',
     ),
     'tig': Language(
       'tig',
@@ -2069,7 +2089,7 @@ class LanguagesOr extends Languages {
     ),
     'uk': Language(
       'uk',
-      'ୟୁକ୍ରାନିଆନ୍',
+      'ୟୁକ୍ରେନିଆନ୍',
     ),
     'umb': Language(
       'umb',
@@ -2095,9 +2115,17 @@ class LanguagesOr extends Languages {
       've',
       'ଭେଣ୍ଡା',
     ),
+    'vec': Language(
+      'vec',
+      'ଭନିଶନ୍‌',
+    ),
     'vi': Language(
       'vi',
       'ଭିଏତନାମିଜ୍',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ମାଖୁୱା',
     ),
     'vo': Language(
       'vo',
@@ -2147,6 +2175,10 @@ class LanguagesOr extends Languages {
       'xh',
       'ଖୋସା',
     ),
+    'xnr': Language(
+      'xnr',
+      'କାଙ୍ଗ୍ରି',
+    ),
     'xog': Language(
       'xog',
       'ସୋଗା',
@@ -2181,12 +2213,12 @@ class LanguagesOr extends Languages {
     ),
     'yue': Language(
       'yue',
-      'କାନଟୋନେସେ',
-      menu: 'ଚାଇନିଜ୍‌, କାନଟୋନେସେ',
+      'କାଣ୍ଟୋନିଜ୍‌',
+      menu: 'ଚାଇନିଜ୍‌, କାଣ୍ଟୋନିଜ୍‌',
     ),
     'za': Language(
       'za',
-      'ଜୁଆଙ୍ଗ',
+      'ଜୁଆଙ୍ଗ୍‌',
     ),
     'zap': Language(
       'zap',
@@ -2211,7 +2243,7 @@ class LanguagesOr extends Languages {
     ),
     'zh-Hans': Language(
       'zh-Hans',
-      'ସରଳୀକୃତ ଚାଇନିଜ୍‌',
+      'ସରଳୀକୃତ ଚାଇନିଜ',
     ),
     'zh-Hant': Language(
       'zh-Hant',
@@ -2251,7 +2283,7 @@ class ScriptsOr extends Scripts {
     ),
     'Aran': Script(
       'Aran',
-      'ଆରାନ',
+      'ନାଷ୍ଟାଲିକ୍‌',
     ),
     'Armi': Script(
       'Armi',
@@ -2343,7 +2375,7 @@ class ScriptsOr extends Scripts {
     ),
     'Deva': Script(
       'Deva',
-      'ଦେବନଗରୀ',
+      'ଦେବନାଗରୀ',
     ),
     'Dsrt': Script(
       'Dsrt',
@@ -2387,7 +2419,7 @@ class ScriptsOr extends Scripts {
     ),
     'Gujr': Script(
       'Gujr',
-      'ଗୁଜୁରାଟୀ',
+      'ଗୁଜରାଟୀ',
     ),
     'Guru': Script(
       'Guru',
@@ -2549,7 +2581,7 @@ class ScriptsOr extends Scripts {
     ),
     'Mlym': Script(
       'Mlym',
-      'ମାଲାୟଲମ୍',
+      'ମାଲାୟାଲମ୍',
     ),
     'Mong': Script(
       'Mong',
@@ -2577,7 +2609,7 @@ class ScriptsOr extends Scripts {
     ),
     'Olck': Script(
       'Olck',
-      'ଓଲ୍ ଚିକି',
+      'ଅଲ୍ ଚିକି',
     ),
     'Orkh': Script(
       'Orkh',
@@ -2629,7 +2661,7 @@ class ScriptsOr extends Scripts {
     ),
     'Rohg': Script(
       'Rohg',
-      'ରୋହଗ',
+      'ହାନିଫି',
     ),
     'Roro': Script(
       'Roro',
@@ -2665,7 +2697,7 @@ class ScriptsOr extends Scripts {
     ),
     'Sund': Script(
       'Sund',
-      'ସୁଦାନୀଜ୍',
+      'ସୁଦାନିଜ୍',
     ),
     'Sylo': Script(
       'Sylo',
@@ -2717,7 +2749,7 @@ class ScriptsOr extends Scripts {
     ),
     'Tfng': Script(
       'Tfng',
-      'ତିଫିଙ୍ଘା',
+      'ଟିଫିନାଘ୍‌',
     ),
     'Tglg': Script(
       'Tglg',
@@ -3697,7 +3729,7 @@ class UnitsOr implements Units {
   Unit get digitalPetabyte => Unit(
         long: UnitCountPattern(
           _locale,
-          'PB',
+          'ପେଟାବାଇଟ୍‌',
           one: '{0} petabyte',
           other: '{0} PB',
         ),
@@ -3969,7 +4001,7 @@ class UnitsOr implements Units {
           _locale,
           'dec',
           one: '{0} ଦଶନ୍ଧି',
-          other: '{0} dec',
+          other: '{0} ଦଶନ୍ଧି',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -5178,14 +5210,14 @@ class UnitsOr implements Units {
         short: UnitCountPattern(
           _locale,
           'ଆୟୁ',
-          one: '{0} ଆୟୁ',
-          other: '{0} ଆୟୁ',
+          one: '{0} au',
+          other: '{0} au',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ଖଗୋ. ଇକା.',
-          one: '{0} ଖଗୋ. ଇକା.',
-          other: '{0} ଖଗୋ. ଇକା.',
+          one: '{0}au',
+          other: '{0}au',
         ),
       );
 
@@ -5228,7 +5260,7 @@ class UnitsOr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ଫେଦମ୍',
-          one: '{0} ଫାଟୋମ',
+          one: '{0}fth',
           other: '{0} fth',
         ),
       );
@@ -5244,8 +5276,8 @@ class UnitsOr implements Units {
         short: UnitCountPattern(
           _locale,
           'ନୌମି',
-          one: '{0} ନୌମି',
-          other: '{0} ନୌମି',
+          one: '{0} nmi',
+          other: '{0} nmi',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -5303,19 +5335,19 @@ class UnitsOr implements Units {
   Unit get lengthSolarRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'ସୋଲାର ରାଡି',
+          'ସୋଲାର ବ୍ୟାସାର୍ଦ୍ଧ',
           one: '{0} ସୋଲାର ବ୍ୟାସାର୍ଦ୍ଧ',
-          other: '{0} ସୋଲାର ରାଡି',
+          other: '{0} ସୋଲାର ବ୍ୟାସାର୍ଦ୍ଧ',
         ),
         short: UnitCountPattern(
           _locale,
-          'ସୋଲାର ରାଡି',
+          'ସୋଲାର ବ୍ୟାସାର୍ଦ୍ଧ',
           one: '{0} ସୋଲାର ବ୍ୟାସାର୍ଦ୍ଧ',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ସୋଲାର ରାଡି',
+          'R☉',
           one: '{0} ସୋଲାର ବ୍ୟାସାର୍ଦ୍ଧ',
           other: '{0} R☉',
         ),
@@ -6294,19 +6326,19 @@ class UnitsOr implements Units {
         long: UnitCountPattern(
           _locale,
           'ପାଉଣ୍ଡ-ଫିଟ',
-          one: '{0} ପାଉଣ୍ଡ-ଫୁଟ',
+          one: '{0} ପାଉଣ୍ଡ୍-ଫୋର୍ସ୍‌-ଫୁଟ୍‌',
           other: '{0} ପାଉଣ୍ଡ-ଫିଟ',
         ),
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} ପାଉଣ୍ଡ-ଫୁଟ',
+          one: '{0} ପାଉଣ୍ଡ୍-ଫୋର୍ସ୍‌-ଫୁଟ୍‌',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} ପାଉଣ୍ଡ-ଫୁଟ',
+          one: '{0} ପାଉଣ୍ଡ୍-ଫୋର୍ସ୍‌-ଫୁଟ୍‌',
           other: '{0} lbf⋅ft',
         ),
       );
@@ -6349,7 +6381,7 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ଘନକି.ମି.',
+          'କିମି³',
           one: '{0}ଘନକି.ମି.',
           other: '{0}ଘନକି.ମି.',
         ),
@@ -6371,7 +6403,7 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ଘନମି',
+          'ମି³',
           one: '{0}/ ଘନମି',
           other: '{0}/ ଘନମି',
         ),
@@ -6393,7 +6425,7 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ଘନସେମି',
+          'ସେମି³',
           one: '{0}/ଘନସେମି',
           other: '{0}/ଘନସେମି',
         ),
@@ -6432,14 +6464,14 @@ class UnitsOr implements Units {
         short: UnitCountPattern(
           _locale,
           'ୟାର୍ଡ୍³',
-          one: '{0} ୟାର୍ଡ୍³',
-          other: '{0} ୟାର୍ଡ୍³',
+          one: '{0} yd³',
+          other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ୟାର୍ଡ୍³',
-          one: '{0} ୟାର୍ଡ୍³',
-          other: '{0} ୟାର୍ଡ୍³',
+          'yd³',
+          one: '{0}yd³',
+          other: '{0}yd³',
         ),
       );
 
@@ -6459,9 +6491,9 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ଫିଟ୍³',
-          one: '{0} ଫିଟ୍³',
-          other: '{0} ଫିଟ୍³',
+          'ft³',
+          one: '{0}ft³',
+          other: '{0}ft³',
         ),
       );
 
@@ -6503,9 +6535,9 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ଏମଏଲ୍',
-          one: '{0} ଏମଏଲ୍',
-          other: '{0} ଏମଏଲ୍',
+          'ML',
+          one: '{0}ML',
+          other: '{0}ML',
         ),
       );
 
@@ -6526,7 +6558,7 @@ class UnitsOr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ହେଲି',
-          one: '{0} ହେଲି',
+          one: '{0}hL',
           other: '{0} ହେଲି',
         ),
       );
@@ -6630,14 +6662,14 @@ class UnitsOr implements Units {
         short: UnitCountPattern(
           _locale,
           'ମେପା',
-          one: '{0} ମେପା',
-          other: '{0} ମେପା',
+          one: '{0} mpt',
+          other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ମେପା',
-          one: '{0} ମେପା',
-          other: '{0} ମେପା',
+          'pt',
+          one: '{0}mpt',
+          other: '{0}mpt',
         ),
       );
 
@@ -6651,15 +6683,15 @@ class UnitsOr implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ମେକ',
+          'mcup',
           one: '{0} ମେକ',
           other: '{0} ମେକ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ମେକ',
-          one: '{0} ମେକ',
-          other: '{0} ମେକ',
+          'mcup',
+          one: '{0}mc',
+          other: '{0}mc',
         ),
       );
 
@@ -6833,7 +6865,7 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ଫ୍ଲୁ ଓଜ୍',
+          'fl oz',
           one: '{0} ଫ୍ଲୁ ଓଜ୍',
           other: '{0} ଫ୍ଲୁ ଓଜ୍',
         ),
@@ -6888,20 +6920,20 @@ class UnitsOr implements Units {
         long: UnitCountPattern(
           _locale,
           'ଛୋଟ ଚାମଚ',
-          one: '{0} ଛୋଟ ଚାମଚ',
-          other: '{0} ଛୋଟ ଚାମଚ',
+          one: '{0} tsp',
+          other: '{0} tsp',
         ),
         short: UnitCountPattern(
           _locale,
           'ଛୋଟ ଚାମଚ',
-          one: '{0} ଛୋଟ ଚାମଚ',
-          other: '{0} ଛୋଟ ଚାମଚ',
+          one: '{0} tsp',
+          other: '{0} tsp',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ଛୋଟ ଚାମଚ',
-          one: '{0} ଛୋଟ ଚାମଚ',
-          other: '{0} ଛୋଟ ଚାମଚ',
+          'tsp',
+          one: '{0}tsp',
+          other: '{0}tsp',
         ),
       );
 
@@ -6943,9 +6975,9 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dstspn',
-          one: '{0} ଡିଜଟ୍ ସ୍ପୁନ୍',
-          other: '{0} dstspn',
+          'dsp',
+          one: '{0}dsp',
+          other: '{0}dsp',
         ),
       );
 
@@ -6954,20 +6986,20 @@ class UnitsOr implements Units {
         long: UnitCountPattern(
           _locale,
           'dstspn Imp',
-          one: '{0} Imp. dessert spoon',
-          other: '{0} dstspn Imp',
+          one: '{0} dsp-Imp.',
+          other: '{0} dsp-Imp.',
         ),
         short: UnitCountPattern(
           _locale,
           'dstspn Imp',
           one: '{0} dsp-Imp.',
-          other: '{0} dstspn Imp',
+          other: '{0} dsp-Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dstspn Imp',
+          'dsp Imp',
           one: '{0}dsp-Imp',
-          other: '{0} dstspn Imp',
+          other: '{0}dsp-Imp',
         ),
       );
 
@@ -6989,7 +7021,7 @@ class UnitsOr implements Units {
           _locale,
           'dr',
           one: '{0}dr',
-          other: '{0} drop',
+          other: '{0}dr',
         ),
       );
 
@@ -7009,9 +7041,9 @@ class UnitsOr implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dram fluid',
+          'fl.dr.',
           one: '{0}fl.dr.',
-          other: '{0} dram fl',
+          other: '{0}fl.dr.',
         ),
       );
 
@@ -7102,6 +7134,72 @@ class UnitsOr implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ଆଲୋକ',
+          one: '{0} ଆଲୋକ',
+          other: '{0} ଆଲୋକ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ଆଲୋକ',
+          one: '{0} ଆଲୋକ',
+          other: '{0} ଆଲୋକ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ଆଲୋକ',
+          one: '{0} ଆଲୋକ',
+          other: '{0} ଆଲୋକ',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ବିଲିୟନ ପ୍ରତି ଅଂଶଗୁଡିକ',
+          one: '{0} ପାର୍ଟ୍ସ ପ୍ରତି ବିଲିୟନ୍',
+          other: '{0} ପାର୍ଟ୍ସ ପ୍ରତି ବିଲିୟନ୍',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ପାର୍ଟ୍ସ/ବିଲିୟନ୍',
+          one: '{0} ପାର୍ଟ୍ସ ପ୍ରତି ବିଲିୟନ୍',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ପାର୍ଟ୍ସ/ବିଲିୟନ୍',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ରାତି',
+          one: '{0} ରାତି',
+          other: '{0} ରାତି',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ରାତି',
+          one: '{0} ରାତି',
+          other: '{0} ରାତି',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ରାତି',
+          one: '{0} ରାତି',
+          other: '{0} ରାତି',
+        ),
+      );
 }
 
 class DateFieldsOr implements DateFields {
@@ -7185,7 +7283,7 @@ class DateFieldsOr implements DateFields {
           narrow: 'ଗତ ତିନିମାସ',
         ),
         now: MultiLength(
-          long: 'ଗତ ତ୍ରୟମାସ',
+          long: 'ଏହି ତ୍ରୟମାସ',
           short: 'ଏହି ତ୍ରୟମାସ',
           narrow: 'ଏହି ତିନିମାସ',
         ),
@@ -7427,9 +7525,9 @@ class DateFieldsOr implements DateFields {
 
   @override
   MultiLength get weekdayOfMonth => MultiLength(
-        long: 'ସାପ୍ତାହିକ ଦିନର ମାସ',
-        short: 'ସା. ଦିନର ମା.',
-        narrow: 'ସା. ଦିନର ମା.',
+        long: 'ମାସର ସାପ୍ତାହିକ ଦିନ',
+        short: 'ମାସର ସାପ୍ତାହିକ ଦି.',
+        narrow: 'ମାସର ସାପ୍ତାହିକ ଦି.',
       );
 
   @override
@@ -7805,9 +7903,9 @@ class DateFieldsOr implements DateFields {
 
   @override
   MultiLength get dayperiod => MultiLength(
-        long: 'ପୂର୍ବାହ୍ନ/ଅପରାହ୍ନ',
-        short: 'ପୂର୍ବାହ୍ନ/ଅପରାହ୍ନ',
-        narrow: 'ପୂର୍ବାହ୍ନ/ଅପରାହ୍ନ',
+        long: 'AM/PM',
+        short: 'AM/PM',
+        narrow: 'AM/PM',
       );
 
   @override
@@ -8277,7 +8375,7 @@ class TerritoriesOr implements Territories {
     ),
     'BO': Territory(
       'BO',
-      'ବୋଲଭିଆ',
+      'ବୋଲିଭିଆ',
     ),
     'BQ': Territory(
       'BQ',
@@ -8348,7 +8446,7 @@ class TerritoriesOr implements Territories {
     ),
     'CL': Territory(
       'CL',
-      'ଚିଲ୍ଲୀ',
+      'ଚିଲି',
     ),
     'CM': Territory(
       'CM',
@@ -8356,11 +8454,11 @@ class TerritoriesOr implements Territories {
     ),
     'CN': Territory(
       'CN',
-      'ଚିନ୍',
+      'ଚୀନ୍‌',
     ),
     'CO': Territory(
       'CO',
-      'କୋଲମ୍ବିଆ',
+      'କଲମ୍ବିଆ',
     ),
     'CP': Territory(
       'CP',
@@ -8376,7 +8474,7 @@ class TerritoriesOr implements Territories {
     ),
     'CU': Territory(
       'CU',
-      'କ୍ୱିବା',
+      'କ‍୍ୟୁବା',
     ),
     'CV': Territory(
       'CV',
@@ -8433,7 +8531,7 @@ class TerritoriesOr implements Territories {
     ),
     'EC': Territory(
       'EC',
-      'ଇକ୍ୱାଡୋର୍',
+      'ଇକ୍ୱେଡର୍‌',
     ),
     'EE': Territory(
       'EE',
@@ -8478,7 +8576,7 @@ class TerritoriesOr implements Territories {
     'FK': Territory(
       'FK',
       'ଫକ୍‌ଲ୍ୟାଣ୍ଡ ଦ୍ଵୀପପୁଞ୍ଜ',
-      variant: 'ଫକଲ୍ୟାଣ୍ଡ ଦ୍ୱୀପପୁଞ୍ଜ (ଇସଲାସ୍‌ ମାଲଭିନାସ୍‌)',
+      variant: 'ଫକ୍‌ଲ୍ୟାଣ୍ଡ ଦ୍ଵୀପପୁଞ୍ଜ (ଇସଲାସ୍‌ ମାଲଭିନାସ୍‌)',
     ),
     'FM': Territory(
       'FM',
@@ -8543,7 +8641,7 @@ class TerritoriesOr implements Territories {
     ),
     'GQ': Territory(
       'GQ',
-      'ଇକ୍ବାଟେରିଆଲ୍ ଗୁଇନିଆ',
+      'ଇକ୍ବାଟୋରିଆଲ୍ ଗୁଇନିଆ',
     ),
     'GR': Territory(
       'GR',
@@ -8620,7 +8718,7 @@ class TerritoriesOr implements Territories {
     ),
     'IO': Territory(
       'IO',
-      'ବ୍ରିଟିଶ୍‌ ଭାରତ ମାହାସାଗର କ୍ଷେତ୍ର',
+      'ବ୍ରିଟିଶ୍‌ ଭାରତୀୟ ମହାସାଗର କ୍ଷେତ୍ର',
     ),
     'IQ': Territory(
       'IQ',
@@ -8696,7 +8794,7 @@ class TerritoriesOr implements Territories {
     ),
     'KZ': Territory(
       'KZ',
-      'କାଜାକାସ୍ତାନ',
+      'କାଜାଖସ୍ତାନ୍‌',
     ),
     'LA': Territory(
       'LA',
@@ -8712,7 +8810,7 @@ class TerritoriesOr implements Territories {
     ),
     'LI': Territory(
       'LI',
-      'ଲିଚେଟନଷ୍ଟେଇନ୍',
+      'ଲିକ୍ଟନ୍‌ଷ୍ଟାଇନ୍‌',
     ),
     'LK': Territory(
       'LK',
@@ -8902,7 +9000,7 @@ class TerritoriesOr implements Territories {
     ),
     'PG': Territory(
       'PG',
-      'ପପୁଆ ନ୍ୟୁ ଗୁଏନିଆ',
+      'ପପୁଆ ନ୍ୟୁ ଗିନି',
     ),
     'PH': Territory(
       'PH',
@@ -8991,7 +9089,7 @@ class TerritoriesOr implements Territories {
     ),
     'SE': Territory(
       'SE',
-      'ସ୍ୱେଡେନ୍',
+      'ସ୍ୱିଡେନ୍‌',
     ),
     'SG': Territory(
       'SG',
@@ -9163,7 +9261,7 @@ class TerritoriesOr implements Territories {
     ),
     'VC': Territory(
       'VC',
-      'ସେଣ୍ଟ ଭିନସେଣ୍ଟ ଏବଂ ଦି ଗ୍ରେନାଡିସ୍',
+      'ସେଣ୍ଟ ଭିନସେଣ୍ଟ ଏବଂ ଗ୍ରେନାଡାଇନ୍ସ',
     ),
     'VE': Territory(
       'VE',
@@ -9175,7 +9273,7 @@ class TerritoriesOr implements Territories {
     ),
     'VI': Territory(
       'VI',
-      'ଯୁକ୍ତରାଷ୍ଟ୍ର ଭିର୍ଜିନ୍ ଦ୍ଵୀପପୁଞ୍ଜ',
+      'ଯୁକ୍ତରାଷ୍ଟ୍ର ଭର୍ଜିନ୍ ଦ୍ଵୀପପୁଞ୍ଜ',
     ),
     'VN': Territory(
       'VN',
@@ -9410,10 +9508,10 @@ class TimeZonesOr extends TimeZones {
       exemplarCity: 'ଗ୍ରେନାଡା',
     ),
     'America/Guadeloupe': TimeZoneNames(
-      exemplarCity: 'ଗୁଆଡେଲୋଉପେ',
+      exemplarCity: 'ଗୁଆଡେଲୋପ୍‌',
     ),
     'America/Guatemala': TimeZoneNames(
-      exemplarCity: 'ଗୁଆତେମାଲା',
+      exemplarCity: 'ଗୁଆଟେମାଲା',
     ),
     'America/Guayaquil': TimeZoneNames(
       exemplarCity: 'ଗୁୟାକ୍ୱିଲ',
@@ -9485,7 +9583,7 @@ class TimeZonesOr extends TimeZones {
       exemplarCity: 'ଲସ୍ ଏଞ୍ଜେଲେସ୍',
     ),
     'America/Louisville': TimeZoneNames(
-      exemplarCity: 'ଲୌଇସଭିଲ୍ଲେ',
+      exemplarCity: 'ଲୁଇଭିଲ୍ଲେ',
     ),
     'America/Lower_Princes': TimeZoneNames(
       exemplarCity: 'ନିମ୍ନ ପ୍ରିନ୍ସ’ର କ୍ଵାଟର୍',
@@ -9701,7 +9799,7 @@ class TimeZonesOr extends TimeZones {
       exemplarCity: 'ଷ୍ଟାନଲି',
     ),
     'Europe/Amsterdam': TimeZoneNames(
-      exemplarCity: 'ଆମଷ୍ଟ୍ରେଡାମ୍',
+      exemplarCity: 'ଆମଷ୍ଟରଡାମ୍',
     ),
     'Europe/Andorra': TimeZoneNames(
       exemplarCity: 'ଆନଡୋରା',
@@ -9713,7 +9811,7 @@ class TimeZonesOr extends TimeZones {
       exemplarCity: 'ଏଥେନ୍ସ',
     ),
     'Europe/Belgrade': TimeZoneNames(
-      exemplarCity: 'ବେଲଗ୍ରେଡେ',
+      exemplarCity: 'ବେଲଗ୍ରେଡ୍‌',
     ),
     'Europe/Berlin': TimeZoneNames(
       exemplarCity: 'ବର୍ଲିନ୍',
@@ -9741,7 +9839,7 @@ class TimeZonesOr extends TimeZones {
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
-        daylight: 'ଆଇରିଶ୍‌ ମାନାଙ୍କ ସମୟ',
+        daylight: 'ଆଇରିଶ୍‌ ମାନକ ସମୟ',
       ),
       exemplarCity: 'ଡବଲିନ୍',
     ),
@@ -10001,7 +10099,7 @@ class TimeZonesOr extends TimeZones {
       exemplarCity: 'ବାବେନ୍‌',
     ),
     'Africa/Mogadishu': TimeZoneNames(
-      exemplarCity: 'ମୋଗାଡିଶୁ',
+      exemplarCity: 'ମୋଗାଦିଶୁ',
     ),
     'Africa/Monrovia': TimeZoneNames(
       exemplarCity: 'ମନରୋଭିଆ',
@@ -10022,7 +10120,7 @@ class TimeZonesOr extends TimeZones {
       exemplarCity: 'ଅଉଗାଡଉଗଉ',
     ),
     'Africa/Porto-Novo': TimeZoneNames(
-      exemplarCity: 'ପୋଟୋ-ନୋଭୋ',
+      exemplarCity: 'ପୋର୍ଟୋ-ନୋଭୋ',
     ),
     'Africa/Sao_Tome': TimeZoneNames(
       exemplarCity: 'ସାଓ ଟୋମେ',
@@ -10089,9 +10187,6 @@ class TimeZonesOr extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ଚିଟା',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ଚୋଇବାଲସାନ୍‌',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'କଲମ୍ବୋ',
@@ -10232,7 +10327,7 @@ class TimeZonesOr extends TimeZones {
       exemplarCity: 'ସିଓଲ',
     ),
     'Asia/Shanghai': TimeZoneNames(
-      exemplarCity: 'ସଂଘାଇ',
+      exemplarCity: 'ସାଂଘାଇ',
     ),
     'Asia/Singapore': TimeZoneNames(
       exemplarCity: 'ସିଙ୍ଗାପୁର୍‌',
@@ -10731,7 +10826,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Azores',
       long: TimeZoneName(
         generic: 'ଆଜୋରେସ୍ ସମୟ',
-        standard: 'ଆଜୋରେସ୍ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଆଜୋରେସ୍ ମାନକ ସମୟ',
         daylight: 'ଆଜୋରେସ୍ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
@@ -10740,7 +10835,7 @@ class TimeZonesOr extends TimeZones {
       long: TimeZoneName(
         generic: 'ବାଂଲାଦେଶ ସମୟ',
         standard: 'ବାଂଲାଦେଶ ମାନାଙ୍କ ସମୟ',
-        daylight: 'ବାଂଲାଦେଶ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
+        daylight: 'ବାଂଲାଦେଶ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
     'Bhutan': MetaZone(
@@ -10774,13 +10869,13 @@ class TimeZonesOr extends TimeZones {
       long: TimeZoneName(
         generic: 'କେପ୍‌ ଭର୍ଦେ ସମୟ',
         standard: 'କେପ୍‌ ଭର୍ଦେ ମାନାଙ୍କ ସମୟ',
-        daylight: 'କେପ୍‌ ଭର୍ଦେ ଖରାଦିନ ସମୟ',
+        daylight: 'କେପ୍‌ ଭର୍ଦେ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
     'Chamorro': MetaZone(
       code: 'Chamorro',
       long: TimeZoneName(
-        standard: 'ଚାମୋରୋ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଚାମୋରୋ ମାନକ ସମୟ',
       ),
     ),
     'Chatham': MetaZone(
@@ -10803,16 +10898,8 @@ class TimeZonesOr extends TimeZones {
       code: 'China',
       long: TimeZoneName(
         generic: 'ଚୀନ ସମୟ',
-        standard: 'ଚୀନ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଚୀନ ମାନକ ସମୟ',
         daylight: 'ଚୀନ ଦିବାଲୋକ ସମୟ',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ଚୋଇବାଲସାନ ସମୟ',
-        standard: 'ଚୋଇବାଲସାନ ମାନାଙ୍କ ସମୟ',
-        daylight: 'ଚୋଇବାଲସାନ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
     'Christmas': MetaZone(
@@ -10831,7 +10918,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Colombia',
       long: TimeZoneName(
         generic: 'କଲମ୍ବିଆ ସମୟ',
-        standard: 'କଲମ୍ବିଆ ମାନାଙ୍କ ସମୟ',
+        standard: 'କଲମ୍ବିଆ ମାନକ ସମୟ',
         daylight: 'କଲମ୍ବିଆ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
@@ -10839,7 +10926,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Cook',
       long: TimeZoneName(
         generic: 'କୁକ୍‌ ଦ୍ୱୀପପୁଞ୍ଜ ସମୟ',
-        standard: 'କୁକ୍‌ ଦ୍ୱୀପପୁଞ୍ଜ ମାନାଙ୍କ ସମୟ',
+        standard: 'କୁକ୍‌ ଦ୍ୱୀପପୁଞ୍ଜ ମାନକ ସମୟ',
         daylight: 'କୁକ୍‌ ଦ୍ୱୀପପୁଞ୍ଜ ଅର୍ଦ୍ଧ ଗୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
@@ -10887,7 +10974,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Europe_Central',
       long: TimeZoneName(
         generic: 'କେନ୍ଦ୍ରୀୟ ୟୁରୋପୀୟ ସମୟ',
-        standard: 'କେନ୍ଦ୍ରୀୟ ୟୁରୋପୀୟ ମାନାଙ୍କ ସମୟ',
+        standard: 'କେନ୍ଦ୍ର ୟୁରୋପୀୟ ମାନକ ସମୟ',
         daylight: 'କେନ୍ଦ୍ରୀୟ ୟୁରୋପୀୟ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
@@ -10917,7 +11004,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Falkland',
       long: TimeZoneName(
         generic: 'ଫକଲ୍ୟାଣ୍ଡ ଦ୍ୱୀପପୁଞ୍ଜ ସମୟ',
-        standard: 'ଫକଲ୍ୟାଣ୍ଡ ଦ୍ୱୀପପୁଞ୍ଜ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଫକଲ୍ୟାଣ୍ଡ ଦ୍ୱୀପପୁଞ୍ଜ ମାନକ ସମୟ',
         daylight: 'ଫକଲ୍ୟାଣ୍ଡ ଦ୍ୱୀପପୁଞ୍ଜ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
@@ -10925,8 +11012,8 @@ class TimeZonesOr extends TimeZones {
       code: 'Fiji',
       long: TimeZoneName(
         generic: 'ଫିଜି ସମୟ',
-        standard: 'ଫିଜି ମାନାଙ୍କ ସମୟ',
-        daylight: 'ଫିଜି ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
+        standard: 'ଫିଜି ମାନକ ସମୟ',
+        daylight: 'ଫିଜି ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
     'French_Guiana': MetaZone(
@@ -11016,7 +11103,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Hong_Kong',
       long: TimeZoneName(
         generic: 'ହଂ କଂ ସମୟ',
-        standard: 'ହଂ କଂ ମାନାଙ୍କ ସମୟ',
+        standard: 'ହଂ କଂ ମାନକ ସମୟ',
         daylight: 'ହଂ କଂ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
@@ -11024,14 +11111,14 @@ class TimeZonesOr extends TimeZones {
       code: 'Hovd',
       long: TimeZoneName(
         generic: 'ହୋଭଡ୍‌ ସମୟ',
-        standard: 'ହୋଭଡ୍‌ ମାନାଙ୍କ ସମୟ',
+        standard: 'ହୋଭଡ୍‌ ମାନକ ସମୟ',
         daylight: 'ହୋଭଡ୍‌ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
     'India': MetaZone(
       code: 'India',
       long: TimeZoneName(
-        standard: 'ଭାରତ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଭାରତୀୟ ମାନକ ସମୟ',
       ),
       short: TimeZoneName(
         standard: 'IST',
@@ -11071,7 +11158,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Iran',
       long: TimeZoneName(
         generic: 'ଇରାନ ସମୟ',
-        standard: 'ଇରାନ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଇରାନ ମାନକ ସମୟ',
         daylight: 'ଇରାନ ଦିବାଲୋକ ସମୟ',
       ),
     ),
@@ -11079,7 +11166,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Irkutsk',
       long: TimeZoneName(
         generic: 'ଇଅରକୁଟସ୍କ ସମୟ',
-        standard: 'ଇଅରକୁଟସ୍କ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଇର୍କୁଟସ୍କ୍ ମାନକ ସମୟ',
         daylight: 'ଇର୍କୁଟସ୍କ୍ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
@@ -11095,7 +11182,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Japan',
       long: TimeZoneName(
         generic: 'ଜାପାନ ସମୟ',
-        standard: 'ଜାପାନ ମାନାଙ୍କ ସମୟ',
+        standard: 'ଜାପାନ ମାନକ ସମୟ',
         daylight: 'ଜାପାନ ଦିବାଲୋକ ସମୟ',
       ),
     ),
@@ -11105,6 +11192,12 @@ class TimeZonesOr extends TimeZones {
         generic: 'ପେଟ୍ରୋପାଭଲୋଭ୍ସକ-କମଚଟସ୍କି ସମୟ',
         standard: 'ପେଟ୍ରୋପାଭଲୋଭ୍ସକ-କମଚଟସ୍କି ମାନକ ସମୟ',
         daylight: 'ପେଟ୍ରୋପାଭଲୋଭ୍ସକ-କମଚଟସ୍କି ଗ୍ରୀଷ୍ମ ସମୟ',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'କାଜାକସ୍ତାନ୍ ସମୟ',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
@@ -11123,7 +11216,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Korea',
       long: TimeZoneName(
         generic: 'କୋରିୟ ସମୟ',
-        standard: 'କୋରିୟ ମାନାଙ୍କ ସମୟ',
+        standard: 'କୋରିୟ ମାନକ ସମୟ',
         daylight: 'କୋରିୟ ଦିବାଲୋକ ସମୟ',
       ),
     ),
@@ -11233,8 +11326,8 @@ class TimeZonesOr extends TimeZones {
       code: 'Mongolia',
       long: TimeZoneName(
         generic: 'ଉଲାନ୍‌ବାଟର୍‌ ସମୟ',
-        standard: 'ଉଲାନ୍‌ବାଟର୍‌ ମାନାଙ୍କ ସମୟ',
-        daylight: 'ଉଲାନ୍‌ ବାଟର୍‌ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
+        standard: 'ଉଲାନ୍‌ବାଟର୍‌ ମାନକ ସମୟ',
+        daylight: 'ଉଲାନ୍‌ବାଟର୍‌ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
     'Moscow': MetaZone(
@@ -11335,7 +11428,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Pakistan',
       long: TimeZoneName(
         generic: 'ପାକିସ୍ତାନ ସମୟ',
-        standard: 'ପାକିସ୍ତାନ ମାନାଙ୍କ ସମୟ',
+        standard: 'ପାକିସ୍ତାନ ମାନକ ସମୟ',
         daylight: 'ପାକିସ୍ତାନ ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
       ),
     ),
@@ -11348,7 +11441,7 @@ class TimeZonesOr extends TimeZones {
     'Papua_New_Guinea': MetaZone(
       code: 'Papua_New_Guinea',
       long: TimeZoneName(
-        standard: 'ପପୁଆ ନ୍ୟୁ ଗୁନିଆ ସମୟ',
+        standard: 'ପପୁଆ ନ୍ୟୁ ଗିନି ସମୟ',
       ),
     ),
     'Paraguay': MetaZone(
@@ -11378,7 +11471,7 @@ class TimeZonesOr extends TimeZones {
     'Phoenix_Islands': MetaZone(
       code: 'Phoenix_Islands',
       long: TimeZoneName(
-        standard: 'ଫୋନିକ୍ସ ଦ୍ୱୀପପୁଞ୍ଜ ସମୟ',
+        standard: 'ଫିନିକ୍ସ ଦ୍ୱୀପପୁଞ୍ଜ ସମୟ',
       ),
     ),
     'Pierre_Miquelon': MetaZone(
@@ -11392,7 +11485,7 @@ class TimeZonesOr extends TimeZones {
     'Pitcairn': MetaZone(
       code: 'Pitcairn',
       long: TimeZoneName(
-        standard: 'ପିଟକାରିନ୍‌ ସମୟ',
+        standard: 'ପିଟକେର୍ନ୍‌ ସମୟ',
       ),
     ),
     'Ponape': MetaZone(
@@ -11447,7 +11540,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Samoa',
       long: TimeZoneName(
         generic: 'ସାମୋଆ ସମୟ',
-        standard: 'ସାମୋଆ ମାନାଙ୍କ ସମୟ',
+        standard: 'ସାମୋଆ ମାନକ ସମୟ',
         daylight: 'ସାମୋଆ ଦିବାଲୋକ ସମୟ',
       ),
     ),
@@ -11460,7 +11553,7 @@ class TimeZonesOr extends TimeZones {
     'Singapore': MetaZone(
       code: 'Singapore',
       long: TimeZoneName(
-        standard: 'ସିଙ୍ଗାପୁର୍‌ ମାନାଙ୍କ ସମୟ',
+        standard: 'ସିଙ୍ଗାପୁର୍‌ ମାନକ ସମୟ',
       ),
     ),
     'Solomon': MetaZone(
@@ -11497,7 +11590,7 @@ class TimeZonesOr extends TimeZones {
       code: 'Taipei',
       long: TimeZoneName(
         generic: 'ତାଇପେଇ ସମୟ',
-        standard: 'ତାଇପେଇ ମାନାଙ୍କ ସମୟ',
+        standard: 'ତାଇପେଇ ମାନକ ସମୟ',
         daylight: 'ତାଇପେଇ ଦିବାଲୋକ ସମୟ',
       ),
     ),
@@ -11517,8 +11610,8 @@ class TimeZonesOr extends TimeZones {
       code: 'Tonga',
       long: TimeZoneName(
         generic: 'ଟୋଙ୍ଗା ସମୟ',
-        standard: 'ଟୋଙ୍ଗା ମାନାଙ୍କ ସମୟ',
-        daylight: 'ଟୋଙ୍ଗା ଗ୍ରୀଷ୍ମକାଳ ସମୟ',
+        standard: 'ଟୋଙ୍ଗା ମାନକ ସମୟ',
+        daylight: 'ଟୋଙ୍ଗା ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
     'Truk': MetaZone(
@@ -11553,16 +11646,16 @@ class TimeZonesOr extends TimeZones {
       code: 'Uzbekistan',
       long: TimeZoneName(
         generic: 'ଉଜବେକିସ୍ତାନ ସମୟ',
-        standard: 'ଉଜବେକିସ୍ତାନ ମାନାଙ୍କ ସମୟ',
-        daylight: 'ଉଜବେକିସ୍ତାନ ଖରାଦିନ ସମୟ',
+        standard: 'ଉଜବେକିସ୍ତାନ ମାନକ ସମୟ',
+        daylight: 'ଉଜବେକିସ୍ତାନ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
     'Vanuatu': MetaZone(
       code: 'Vanuatu',
       long: TimeZoneName(
         generic: 'ଭାନୁଆଟୁ ସମୟ',
-        standard: 'ଭାନୁଆଟୁ ମାନାଙ୍କ ସମୟ',
-        daylight: 'ଭାନୁଆଟୁ ଖରାଦିନ ସମୟ',
+        standard: 'ଭାନୁଆଟୁ ମାନକ ସମୟ',
+        daylight: 'ଭାନୁଆଟୁ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ',
       ),
     ),
     'Venezuela': MetaZone(

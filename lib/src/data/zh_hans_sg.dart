@@ -268,6 +268,10 @@ class LanguagesZhHansSG extends Languages {
       'bla',
       '西克西卡语',
     ),
+    'blo': Language(
+      'blo',
+      '阿尼语',
+    ),
     'bm': Language(
       'bm',
       '班巴拉语',
@@ -844,6 +848,11 @@ class LanguagesZhHansSG extends Languages {
       'hi',
       '印地语',
     ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      '印地语（拉丁字母）',
+      variant: '印地英语',
+    ),
     'hil': Language(
       'hil',
       '希利盖农语',
@@ -922,7 +931,7 @@ class LanguagesZhHansSG extends Languages {
     ),
     'ii': Language(
       'ii',
-      '四川彝语',
+      '凉山彝语',
     ),
     'ik': Language(
       'ik',
@@ -1168,6 +1177,10 @@ class LanguagesZhHansSG extends Languages {
       'kwk',
       '夸夸瓦拉语',
     ),
+    'kxv': Language(
+      'kxv',
+      '库维语',
+    ),
     'ky': Language(
       'ky',
       '柯尔克孜语',
@@ -1219,6 +1232,10 @@ class LanguagesZhHansSG extends Languages {
     'lkt': Language(
       'lkt',
       '拉科塔语',
+    ),
+    'lmo': Language(
+      'lmo',
+      '伦巴第语',
     ),
     'ln': Language(
       'ln',
@@ -1346,7 +1363,7 @@ class LanguagesZhHansSG extends Languages {
     ),
     'mgh': Language(
       'mgh',
-      '马库阿语',
+      '马库阿-梅托语',
     ),
     'mgo': Language(
       'mgo',
@@ -1618,7 +1635,7 @@ class LanguagesZhHansSG extends Languages {
     ),
     'osa': Language(
       'osa',
-      '奥塞治语',
+      '欧塞奇语',
     ),
     'ota': Language(
       'ota',
@@ -2000,6 +2017,10 @@ class LanguagesZhHansSG extends Languages {
       'syr',
       '叙利亚语',
     ),
+    'szl': Language(
+      'szl',
+      '西里西亚语',
+    ),
     'ta': Language(
       'ta',
       '泰米尔语',
@@ -2208,6 +2229,10 @@ class LanguagesZhHansSG extends Languages {
       'vi',
       '越南语',
     ),
+    'vmw': Language(
+      'vmw',
+      '马库阿语',
+    ),
     'vo': Language(
       'vo',
       '沃拉普克语',
@@ -2260,13 +2285,17 @@ class LanguagesZhHansSG extends Languages {
       'xh',
       '科萨语',
     ),
+    'xnr': Language(
+      'xnr',
+      '康格里语',
+    ),
     'xog': Language(
       'xog',
       '索加语',
     ),
     'yao': Language(
       'yao',
-      '瑶族语',
+      '尧语',
     ),
     'yap': Language(
       'yap',
@@ -2421,7 +2450,7 @@ class ScriptsZhHansSG extends Scripts {
     ),
     'Bopo': Script(
       'Bopo',
-      '汉语拼音',
+      '注音符号',
     ),
     'Brah': Script(
       'Brah',
@@ -2573,7 +2602,7 @@ class ScriptsZhHansSG extends Scripts {
     ),
     'Hanb': Script(
       'Hanb',
-      '汉语注音',
+      '注音汉字',
     ),
     'Hang': Script(
       'Hang',
@@ -2623,7 +2652,7 @@ class ScriptsZhHansSG extends Scripts {
     ),
     'Hrkt': Script(
       'Hrkt',
-      '假名表',
+      '假名',
     ),
     'Hung': Script(
       'Hung',
@@ -7664,6 +7693,72 @@ class UnitsZhHansSG implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0}光',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0}光',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0}light',
+          other: '{0}光',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '十亿分比',
+          one: '{0} part per billion',
+          other: '十亿分之{0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0}晚',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0}晚',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0}night',
+          other: '{0}晚',
+        ),
+      );
 }
 
 class DateFieldsZhHansSG implements DateFields {
@@ -7952,9 +8047,9 @@ class DateFieldsZhHansSG implements DateFields {
 
   @override
   MultiLength get weekday => MultiLength(
-        long: '工作日',
-        short: '工作日',
-        narrow: '工作日',
+        long: '星期',
+        short: '星期',
+        narrow: '星期',
       );
 
   @override
@@ -10562,9 +10657,6 @@ class TimeZonesZhHansSG extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: '赤塔',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: '乔巴山',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: '科伦坡',
     ),
@@ -10854,7 +10946,7 @@ class TimeZonesZhHansSG extends TimeZones {
       exemplarCity: '富纳富提',
     ),
     'Pacific/Galapagos': TimeZoneNames(
-      exemplarCity: '加拉帕戈斯',
+      exemplarCity: '科隆群岛',
     ),
     'Pacific/Gambier': TimeZoneNames(
       exemplarCity: '甘比尔',
@@ -11285,14 +11377,6 @@ class TimeZonesZhHansSG extends TimeZones {
         daylight: '中国夏令时间',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: '乔巴山时间',
-        standard: '乔巴山标准时间',
-        daylight: '乔巴山夏令时间',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11422,7 +11506,7 @@ class TimeZonesZhHansSG extends TimeZones {
     'Galapagos': MetaZone(
       code: 'Galapagos',
       long: TimeZoneName(
-        standard: '加拉帕戈斯时间',
+        standard: '科隆群岛时间',
       ),
     ),
     'Gambier': MetaZone(
@@ -11583,6 +11667,12 @@ class TimeZonesZhHansSG extends TimeZones {
         generic: '彼得罗巴甫洛夫斯克-堪察加时间',
         standard: '彼得罗巴甫洛夫斯克-堪察加标准时间',
         daylight: '彼得罗巴甫洛夫斯克-堪察加夏令时间',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: '哈萨克斯坦时间',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

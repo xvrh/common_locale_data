@@ -304,6 +304,10 @@ class LanguagesUk extends Languages {
       'bla',
       'сіксіка',
     ),
+    'blo': Language(
+      'blo',
+      'анії',
+    ),
     'bm': Language(
       'bm',
       'бамбара',
@@ -1170,6 +1174,10 @@ class LanguagesUk extends Languages {
       'kwk',
       'кваквала',
     ),
+    'kxv': Language(
+      'kxv',
+      'куві',
+    ),
     'ky': Language(
       'ky',
       'киргизька',
@@ -1257,6 +1265,10 @@ class LanguagesUk extends Languages {
     'lt': Language(
       'lt',
       'литовська',
+    ),
+    'ltg': Language(
+      'ltg',
+      'латгальська',
     ),
     'lu': Language(
       'lu',
@@ -1780,7 +1792,7 @@ class LanguagesUk extends Languages {
     ),
     'sah': Language(
       'sah',
-      'саха',
+      'якутська',
     ),
     'sam': Language(
       'sam',
@@ -1998,6 +2010,10 @@ class LanguagesUk extends Languages {
       'syr',
       'сирійська',
     ),
+    'szl': Language(
+      'szl',
+      'сілезька',
+    ),
     'ta': Language(
       'ta',
       'тамільська',
@@ -2190,9 +2206,17 @@ class LanguagesUk extends Languages {
       've',
       'венда',
     ),
+    'vec': Language(
+      'vec',
+      'венеційська',
+    ),
     'vi': Language(
       'vi',
       'вʼєтнамська',
+    ),
+    'vmw': Language(
+      'vmw',
+      'макува',
     ),
     'vo': Language(
       'vo',
@@ -2245,6 +2269,10 @@ class LanguagesUk extends Languages {
     'xh': Language(
       'xh',
       'кхоса',
+    ),
+    'xnr': Language(
+      'xnr',
+      'кангрі',
     ),
     'xog': Language(
       'xog',
@@ -3759,10 +3787,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кар.',
-          one: '{0}кар.',
-          few: '{0}кар.',
-          many: '{0}кар.',
-          other: '{0}кар.',
+          one: '{0}кар',
+          few: '{0}кар',
+          many: '{0}кар',
+          other: '{0}кар',
         ),
       );
 
@@ -3806,7 +3834,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'мілімоль/літер',
+          'мілімоль/літр',
           one: '{0} ммоль/л',
           few: '{0} ммоль/л',
           many: '{0} ммоль/л',
@@ -3854,7 +3882,7 @@ class UnitsUk implements Units {
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
-          'мільйонні долі',
+          'м. д.',
           one: '{0} мільйонна доля',
           few: '{0} мільйонні долі',
           many: '{0} мільйонних доль',
@@ -3862,7 +3890,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'мільйонні долі',
+          'м. д.',
           one: '{0} м. д.',
           few: '{0} м. д.',
           many: '{0} м. д.',
@@ -3870,7 +3898,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'м. д.',
+          'м.д.',
           one: '{0}м.д.',
           few: '{0}м.д.',
           many: '{0}м.д.',
@@ -3882,7 +3910,7 @@ class UnitsUk implements Units {
   Unit get concentrPercent => Unit(
         long: UnitCountPattern(
           _locale,
-          'відсоток',
+          '%',
           one: '{0} відсоток',
           few: '{0} відсотки',
           many: '{0} відсотків',
@@ -3890,19 +3918,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'відсоток',
-          one: '{0} відсоток',
-          few: '{0} відсотки',
-          many: '{0} відсотків',
-          other: '{0}%',
+          '%',
+          one: '{0} %',
+          few: '{0} %',
+          many: '{0} %',
+          other: '{0} %',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
-          one: '{0} відсоток',
-          few: '{0} відсотки',
-          many: '{0} відсотків',
-          other: '{0}%',
+          one: '{0} %',
+          few: '{0} %',
+          many: '{0} %',
+          other: '{0} %',
         ),
       );
 
@@ -3910,7 +3938,7 @@ class UnitsUk implements Units {
   Unit get concentrPermille => Unit(
         long: UnitCountPattern(
           _locale,
-          'проміле',
+          '‰',
           one: '{0} проміле',
           few: '{0} проміле',
           many: '{0} проміле',
@@ -3918,19 +3946,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'проміле',
-          one: '{0} проміле',
-          few: '{0} проміле',
-          many: '{0} проміле',
-          other: '{0}‰',
+          '‰',
+          one: '{0} ‰',
+          few: '{0} ‰',
+          many: '{0} ‰',
+          other: '{0} ‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
-          one: '{0} проміле',
-          few: '{0} проміле',
-          many: '{0} проміле',
-          other: '{0}‰',
+          one: '{0} ‰',
+          few: '{0} ‰',
+          many: '{0} ‰',
+          other: '{0} ‰',
         ),
       );
 
@@ -3946,19 +3974,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'проміріада',
-          one: '{0} проміріад',
-          few: '{0} проміріади',
-          many: '{0} проміріадів',
-          other: '{0}‱',
+          '‱',
+          one: '{0} ‱',
+          few: '{0} ‱',
+          many: '{0} ‱',
+          other: '{0} ‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
-          one: '{0} проміріад',
-          few: '{0} проміріади',
-          many: '{0} проміріадів',
-          other: '{0}‱',
+          one: '{0} ‱',
+          few: '{0} ‱',
+          many: '{0} ‱',
+          other: '{0} ‱',
         ),
       );
 
@@ -4058,11 +4086,11 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'милі/гал.',
-          one: '{0} миля/гал.',
-          few: '{0} милі/гал.',
-          many: '{0} миль/гал.',
-          other: '{0} милі/гал.',
+          'милі/гал',
+          one: '{0} миля/гал',
+          few: '{0} милі/гал',
+          many: '{0} миль/гал',
+          other: '{0} милі/гал',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -4086,19 +4114,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'милі/англ. гал.',
-          one: '{0} миля/англ. гал.',
-          few: '{0} милі/англ. гал.',
-          many: '{0} миль/англ. гал.',
-          other: '{0} милі/англ. гал.',
+          'милі/англ. гал',
+          one: '{0} миля/англ. гал',
+          few: '{0} милі/англ. гал',
+          many: '{0} миль/англ. гал',
+          other: '{0} милі/англ. гал',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'мл/англ. гал.',
-          one: '{0}мл/англ.гал.',
-          few: '{0}мл/англ.гал.',
-          many: '{0}мл/англ.гал.',
-          other: '{0}мл/англ.гал.',
+          'мл/англ.гал',
+          one: '{0}мл/англ.гал',
+          few: '{0}мл/англ.гал',
+          many: '{0}мл/англ.гал',
+          other: '{0}мл/англ.гал',
         ),
       );
 
@@ -4114,7 +4142,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ПБ',
+          'Пбайт',
           one: '{0} ПБ',
           few: '{0} ПБ',
           many: '{0} ПБ',
@@ -4122,7 +4150,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ПБ',
+          'Пбайт',
           one: '{0}ПБ',
           few: '{0}ПБ',
           many: '{0}ПБ',
@@ -4442,27 +4470,27 @@ class UnitsUk implements Units {
   Unit get durationDecade => Unit(
         long: UnitCountPattern(
           _locale,
-          'десятиріччя',
-          one: '{0} десятиріччя',
-          few: '{0} десятиріччя',
-          many: '{0} десятиріч',
-          other: '{0} десятиріччя',
+          'десятиліття',
+          one: '{0} десятиліття',
+          few: '{0} десятиліття',
+          many: '{0} десятиліть',
+          other: '{0} десятиліття',
         ),
         short: UnitCountPattern(
           _locale,
-          '10-річчя',
-          one: '{0} 10-річчя',
-          few: '{0} 10-річчя',
-          many: '{0} 10-річ',
-          other: '{0} 10-річ',
+          '10-ліття',
+          one: '{0} 10-ліття',
+          few: '{0} 10-ліття',
+          many: '{0} 10-літь',
+          other: '{0} 10-ліття',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '10-річчя',
-          one: '{0} 10-річчя',
-          few: '{0} 10-річчя',
-          many: '{0} 10-річ',
-          other: '{0} 10-річ',
+          '10-літ.',
+          one: '{0} 10-літ.',
+          few: '{0} 10-літ.',
+          many: '{0} 10-літ.',
+          other: '{0} 10-літ.',
         ),
       );
 
@@ -4582,7 +4610,7 @@ class UnitsUk implements Units {
   Unit get durationDay => Unit(
         long: UnitCountPattern(
           _locale,
-          'дні',
+          'дн.',
           one: '{0} день',
           few: '{0} дні',
           many: '{0} днів',
@@ -4590,7 +4618,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'дні',
+          'дн.',
           one: '{0} дн.',
           few: '{0} дн.',
           many: '{0} дн.',
@@ -5114,7 +5142,7 @@ class UnitsUk implements Units {
   Unit get energyThermUs => Unit(
         long: UnitCountPattern(
           _locale,
-          'американський терм',
+          'американські терми',
           one: '{0} американський терм',
           few: '{0} американських терми',
           many: '{0} американських термів',
@@ -5214,7 +5242,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'кВт⋅год/100 км',
+          'кВт⋅год/100км',
           one: '{0}кВт⋅год/100км',
           few: '{0}кВт⋅год/100км',
           many: '{0}кВт⋅год/100км',
@@ -5562,7 +5590,7 @@ class UnitsUk implements Units {
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'радіус Землі',
+          'радіуси Землі',
           one: '{0} радіус Землі',
           few: '{0} радіуси Землі',
           many: '{0} радіусів Землі',
@@ -6110,7 +6138,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'міл',
+          'ск.мл',
           one: '{0}ск.мл',
           few: '{0}ск.мл',
           many: '{0}ск.мл',
@@ -6570,7 +6598,7 @@ class UnitsUk implements Units {
   Unit get massCarat => Unit(
         long: UnitCountPattern(
           _locale,
-          'карати',
+          'кар.',
           one: '{0} карат',
           few: '{0} карати',
           many: '{0} каратів',
@@ -6578,11 +6606,11 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'карати',
-          one: '{0} кар',
-          few: '{0} кар',
-          many: '{0} кар',
-          other: '{0} кар',
+          'кар.',
+          one: '{0} кар.',
+          few: '{0} кар.',
+          many: '{0} кар.',
+          other: '{0} кар.',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -6950,7 +6978,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'дюйми рт. ст.',
+          'дмрс',
           one: '{0}дмрс',
           few: '{0}дмрс',
           many: '{0}дмрс',
@@ -7000,9 +7028,9 @@ class UnitsUk implements Units {
           _locale,
           'мбар',
           one: '{0} мбар',
-          few: '{0} мбари',
-          many: '{0} мбарів',
-          other: '{0} мбара',
+          few: '{0} мбар',
+          many: '{0} мбар',
+          other: '{0} мбар',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7186,11 +7214,11 @@ class UnitsUk implements Units {
   Unit get speedMeterPerSecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'метри на секунду',
-          one: '{0} метр на секунду',
-          few: '{0} метри на секунду',
-          many: '{0} метрів на секунду',
-          other: '{0} метра на секунду',
+          'метри за секунду',
+          one: '{0} метр за секунду',
+          few: '{0} метри за секунду',
+          many: '{0} метрів за секунду',
+          other: '{0} метра за секунду',
         ),
         short: UnitCountPattern(
           _locale,
@@ -7214,11 +7242,11 @@ class UnitsUk implements Units {
   Unit get speedMilePerHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'милі на годину',
-          one: '{0} миля на годину',
-          few: '{0} милі на годину',
-          many: '{0} миль на годину',
-          other: '{0} милі на годину',
+          'милі за годину',
+          one: '{0} миля за годину',
+          few: '{0} милі за годину',
+          many: '{0} миль за годину',
+          other: '{0} милі за годину',
         ),
         short: UnitCountPattern(
           _locale,
@@ -7242,7 +7270,7 @@ class UnitsUk implements Units {
   Unit get speedKnot => Unit(
         long: UnitCountPattern(
           _locale,
-          'вузол',
+          'вузли',
           one: '{0} вузол',
           few: '{0} вузли',
           many: '{0} вузлів',
@@ -7610,9 +7638,9 @@ class UnitsUk implements Units {
           _locale,
           'фути³',
           one: '{0} фут³',
-          few: '{0} фт³',
-          many: '{0} фт³',
-          other: '{0} фт³',
+          few: '{0} фути³',
+          many: '{0} футів³',
+          other: '{0} фута³',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7824,7 +7852,7 @@ class UnitsUk implements Units {
   Unit get volumePintMetric => Unit(
         long: UnitCountPattern(
           _locale,
-          'метрична пінта',
+          'метричні пінти',
           one: '{0} метрична пінта',
           few: '{0} метричні пінти',
           many: '{0} метричних пінт',
@@ -7832,7 +7860,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'метр. пінта',
+          'метр. пінти',
           one: '{0} метр. пінта',
           few: '{0} метр. пінти',
           many: '{0} метр. пінт',
@@ -8316,7 +8344,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'рід. дрхм',
+          'рід.дрхм',
           one: '{0}рід.дрхм',
           few: '{0}рід.дрхм',
           many: '{0}рід.дрхм',
@@ -8328,7 +8356,7 @@ class UnitsUk implements Units {
   Unit get volumeJigger => Unit(
         long: UnitCountPattern(
           _locale,
-          'мірна склянка',
+          'мірні склянки',
           one: '{0} мірна склянка',
           few: '{0} мірні склянки',
           many: '{0} мірних склянок',
@@ -8356,19 +8384,19 @@ class UnitsUk implements Units {
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
           _locale,
-          'дрібки',
-          one: '{0} дрібка',
-          few: '{0} дрібки',
-          many: '{0} дрібок',
-          other: '{0} дрібки',
+          'дріб.',
+          one: '{0} дріб.',
+          few: '{0} дріб.',
+          many: '{0} дріб.',
+          other: '{0} дріб.',
         ),
         short: UnitCountPattern(
           _locale,
-          'дрібки',
-          one: '{0} дрібка',
-          few: '{0} дрібки',
-          many: '{0} дрібок',
-          other: '{0} дрібки',
+          'дріб.',
+          one: '{0} дріб.',
+          few: '{0} дріб.',
+          many: '{0} дріб.',
+          other: '{0} дріб.',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -8401,10 +8429,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'англ. квар.',
-          one: '{0} англ. квар.',
-          few: '{0} англ. квар.',
-          many: '{0} англ. квар.',
-          other: '{0} англ. квар.',
+          one: '{0}англ.квар.',
+          few: '{0}англ.квар.',
+          many: '{0}англ.квар.',
+          other: '{0}англ.квар.',
         ),
       );
 
@@ -8427,6 +8455,84 @@ class UnitsUk implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'частини на мільярд',
+          one: '{0} частина на мільярд',
+          few: '{0} частини на мільярд',
+          many: '{0} частин на мільярд',
+          other: '{0} частини на мільярд',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'частини/млрд',
+          one: '{0} част/млрд',
+          few: '{0} част/млрд',
+          many: '{0} част/млрд',
+          other: '{0} част/млрд',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ч/млрд',
+          one: '{0} ч/млрд',
+          few: '{0} ч/млрд',
+          many: '{0} ч/млрд',
+          other: '{0} ч/млрд',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ночі',
+          one: '{0} ніч',
+          few: '{0} ночі',
+          many: '{0} ночей',
+          other: '{0} ночі',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'нч.',
+          one: '{0} нч.',
+          few: '{0} нч.',
+          many: '{0} нч.',
+          other: '{0} нч.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'нч',
+          one: '{0}нч',
+          few: '{0}нч',
+          many: '{0}нч',
+          other: '{0}нч',
         ),
       );
 }
@@ -11599,9 +11705,6 @@ class TimeZonesUk extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чита',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чойбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Коломбо',
     ),
@@ -12292,14 +12395,6 @@ class TimeZonesUk extends TimeZones {
         daylight: 'за китайським літнім часом',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'за часом у Чойбалсані',
-        standard: 'за стандартним часом у Чойбалсані',
-        daylight: 'за літнім часом у Чойбалсані',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12584,6 +12679,12 @@ class TimeZonesUk extends TimeZones {
         generic: 'за камчатським часом',
         standard: 'за камчатським стандартним часом',
         daylight: 'за камчатським літнім часом',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'за часом у Казахстані',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

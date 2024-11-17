@@ -215,6 +215,10 @@ class LanguagesSrLatnME extends Languages {
       'bem',
       'bemba',
     ),
+    'bew': Language(
+      'bew',
+      'betavi',
+    ),
     'bez': Language(
       'bez',
       'bena',
@@ -251,6 +255,10 @@ class LanguagesSrLatnME extends Languages {
       'bla',
       'sisika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bamanankan',
@@ -278,6 +286,10 @@ class LanguagesSrLatnME extends Languages {
     'bs': Language(
       'bs',
       'bosanski',
+    ),
+    'bss': Language(
+      'bss',
+      'akose',
     ),
     'bua': Language(
       'bua',
@@ -366,6 +378,10 @@ class LanguagesSrLatnME extends Languages {
     'chy': Language(
       'chy',
       'čejenski',
+    ),
+    'cic': Language(
+      'cic',
+      'čikaso',
     ),
     'ckb': Language(
       'ckb',
@@ -795,6 +811,10 @@ class LanguagesSrLatnME extends Languages {
       'hmn',
       'hmonški',
     ),
+    'hnj': Language(
+      'hnj',
+      'hmong ndžua',
+    ),
     'ho': Language(
       'ho',
       'hiri motu',
@@ -1103,6 +1123,10 @@ class LanguagesSrLatnME extends Languages {
       'kwk',
       'kvakvala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiski',
@@ -1142,6 +1166,10 @@ class LanguagesSrLatnME extends Languages {
     'li': Language(
       'li',
       'limburški',
+    ),
+    'lij': Language(
+      'lij',
+      'ligurski',
     ),
     'lil': Language(
       'lil',
@@ -1866,7 +1894,7 @@ class LanguagesSrLatnME extends Languages {
     ),
     'su': Language(
       'su',
-      'sundanski',
+      'sundski',
     ),
     'suk': Language(
       'suk',
@@ -1903,6 +1931,10 @@ class LanguagesSrLatnME extends Languages {
     'syr': Language(
       'syr',
       'sirijski',
+    ),
+    'szl': Language(
+      'szl',
+      'siležanski',
     ),
     'ta': Language(
       'ta',
@@ -2096,9 +2128,17 @@ class LanguagesSrLatnME extends Languages {
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'venecijanski',
+    ),
     'vi': Language(
       'vi',
       'vijetnamski',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makuva',
     ),
     'vo': Language(
       'vo',
@@ -2151,6 +2191,10 @@ class LanguagesSrLatnME extends Languages {
     'xh': Language(
       'xh',
       'isikosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -4842,20 +4886,23 @@ class UnitsSrLatnME implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'kWh/100km',
-          one: '{0} kilowatt-hour per 100 kilometers',
-          other: '{0} kWh/100km',
+          'kilovat-sati na 100 kilometara',
+          one: '{0} kilovat-sat na 100 kilometara',
+          few: '{0} kilovat-sata na 100 kilometara',
+          other: '{0} kilovat-sati na 100 kilometara',
         ),
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
-          one: '{0} kWh/100km',
+          one: '{0} kilovat-sat na 100 kilometara',
+          few: '{0} kilovat-sata na 100 kilometara',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
-          one: '{0}kWh/100km',
+          one: '{0} kilovat-sat na 100 kilometara',
+          few: '{0} kilovat-sata na 100 kilometara',
           other: '{0} kWh/100km',
         ),
       );
@@ -5661,20 +5708,23 @@ class UnitsSrLatnME implements Units {
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0} point',
-          other: '{0} pt',
+          'tipografske tačke',
+          one: '{0} tipografska tačka',
+          few: '{0} tipografske tačke',
+          other: '{0} tipografskih tačaka',
         ),
         short: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0} pt',
+          'tipografske tačke',
+          one: '{0} tipografska tačka',
+          few: '{0} tipografske tačke',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0}pt',
+          'tipografske tačke',
+          one: '{0} tipografska tačka',
+          few: '{0} tipografske tačke',
           other: '{0} pt',
         ),
       );
@@ -7719,6 +7769,81 @@ class UnitsSrLatnME implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'svetlo',
+          one: '{0} svetlo',
+          few: '{0} svetla',
+          other: '{0} svetala',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'svetlo',
+          one: '{0} svetlo',
+          few: '{0} svetla',
+          other: '{0} svetala',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'svetlo',
+          one: '{0} svetlo',
+          few: '{0} svetla',
+          other: '{0} svetala',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'delovi na milijardu',
+          one: '{0} deo na milijardu',
+          few: '{0} dela na milijardu',
+          other: '{0} delova na milijardu',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'delovi/milijarda',
+          one: '{0} deo na milijardu',
+          few: '{0} dela na milijardu',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'delovi/milijarda',
+          one: '{0} deo na milijardu',
+          few: '{0} dela na milijardu',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noć',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noć',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noć',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+      );
 }
 
 class DateFieldsSrLatnME implements DateFields {
@@ -8861,7 +8986,7 @@ class TerritoriesSrLatnME implements Territories {
   @override
   Territory get unknownRegion => Territory(
         'ZZ',
-        'Nepoznat region',
+        'nepoznat region',
       );
 
   @override
@@ -8976,7 +9101,7 @@ class TerritoriesSrLatnME implements Territories {
     ),
     'BM': Territory(
       'BM',
-      'Bermuda',
+      'Bermudi',
     ),
     'BN': Territory(
       'BN',
@@ -9075,7 +9200,7 @@ class TerritoriesSrLatnME implements Territories {
     ),
     'CQ': Territory(
       'CQ',
-      'Nepoznat region (CQ)',
+      'nepoznat region (CQ)',
     ),
     'CR': Territory(
       'CR',
@@ -9658,7 +9783,7 @@ class TerritoriesSrLatnME implements Territories {
     ),
     'QO': Territory(
       'QO',
-      'Okeanija (udaljena ostrva)',
+      'udaljena ostrva Okeanije',
     ),
     'RE': Territory(
       'RE',
@@ -9903,7 +10028,7 @@ class TerritoriesSrLatnME implements Territories {
     ),
     'XA': Territory(
       'XA',
-      'Pseudoakcenti',
+      'simulirane dijakritike',
     ),
     'XB': Territory(
       'XB',
@@ -10798,9 +10923,6 @@ class TimeZonesSrLatnME extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Čita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Čojbalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -11515,14 +11637,6 @@ class TimeZonesSrLatnME extends TimeZones {
         daylight: 'Kina, letnje vreme',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Čojbalsan vreme',
-        standard: 'Čojbalsan, standardno vreme',
-        daylight: 'Čojbalsan, letnje vreme',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11831,6 +11945,12 @@ class TimeZonesSrLatnME extends TimeZones {
         generic: 'Petropavlovsko-kamčatsko vreme',
         standard: 'Petropavlovsko-kamčatsko standardno vreme',
         daylight: 'Petropavlovsko-kamčatsko letnje računanje vremena',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazahstansko vreme',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

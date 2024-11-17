@@ -267,6 +267,10 @@ class LanguagesEsEA extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1167,6 +1171,10 @@ class LanguagesEsEA extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirguís',
@@ -1206,6 +1214,10 @@ class LanguagesEsEA extends Languages {
     'li': Language(
       'li',
       'limburgués',
+    ),
+    'lij': Language(
+      'lij',
+      'ligur',
     ),
     'lil': Language(
       'lil',
@@ -1266,10 +1278,6 @@ class LanguagesEsEA extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1996,6 +2004,10 @@ class LanguagesEsEA extends Languages {
       'syr',
       'siriaco',
     ),
+    'szl': Language(
+      'szl',
+      'silesio',
+    ),
     'ta': Language(
       'ta',
       'tamil',
@@ -2181,17 +2193,21 @@ class LanguagesEsEA extends Languages {
       'uz',
       'uzbeko',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'veneciano',
+    ),
     'vi': Language(
       'vi',
       'vietnamita',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2244,6 +2260,10 @@ class LanguagesEsEA extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -7189,6 +7209,72 @@ class UnitsEsEA implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0}luz',
+          other: '{0}luz',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'partes por millardo',
+          one: '{0} parte por millardo',
+          other: '{0} partes por millardo',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'partes/millardo',
+          one: '{0} parte por millardo',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'partes/millardo',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0} noche',
+          other: '{0} noches',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0} noche',
+          other: '{0} noches',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0}noche',
+          other: '{0}noches',
+        ),
+      );
 }
 
 class DateFieldsEsEA implements DateFields {
@@ -10226,14 +10312,6 @@ class TimeZonesEsEA extends TimeZones {
         daylight: 'hora de verano de China',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'hora de Choibalsan',
-        standard: 'hora estándar de Choibalsan',
-        daylight: 'hora de verano de Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10542,6 +10620,12 @@ class TimeZonesEsEA extends TimeZones {
         generic: 'hora de Kamchatka',
         standard: 'hora estándar de Kamchatka',
         daylight: 'hora de verano de Kamchatka',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'hora de Kazajistán',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

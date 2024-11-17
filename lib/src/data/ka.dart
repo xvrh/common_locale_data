@@ -247,6 +247,10 @@ class LanguagesKa extends Languages {
       'bla',
       'სიკსიკა',
     ),
+    'blo': Language(
+      'blo',
+      'ანიი',
+    ),
     'bm': Language(
       'bm',
       'ბამბარა',
@@ -1067,6 +1071,10 @@ class LanguagesKa extends Languages {
       'kwk',
       'კვაკვალა',
     ),
+    'kxv': Language(
+      'kxv',
+      'კუვი',
+    ),
     'ky': Language(
       'ky',
       'ყირგიზული',
@@ -1107,6 +1115,10 @@ class LanguagesKa extends Languages {
       'li',
       'ლიმბურგული',
     ),
+    'lij': Language(
+      'lij',
+      'ლიგურიული',
+    ),
     'lil': Language(
       'lil',
       'ლილიეტი',
@@ -1114,6 +1126,10 @@ class LanguagesKa extends Languages {
     'lkt': Language(
       'lkt',
       'ლაკოტა',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ლომბარდიული',
     ),
     'ln': Language(
       'ln',
@@ -1847,6 +1863,10 @@ class LanguagesKa extends Languages {
       'syr',
       'სირიული',
     ),
+    'szl': Language(
+      'szl',
+      'სილესიური',
+    ),
     'ta': Language(
       'ta',
       'ტამილური',
@@ -2011,9 +2031,17 @@ class LanguagesKa extends Languages {
       've',
       'ვენდა',
     ),
+    'vec': Language(
+      'vec',
+      'ვენეციური',
+    ),
     'vi': Language(
       'vi',
       'ვიეტნამური',
+    ),
+    'vmw': Language(
+      'vmw',
+      'მაკჰუვა',
     ),
     'vo': Language(
       'vo',
@@ -2059,6 +2087,10 @@ class LanguagesKa extends Languages {
       'xh',
       'ქჰოსა',
     ),
+    'xnr': Language(
+      'xnr',
+      'კანგრი',
+    ),
     'xog': Language(
       'xog',
       'სოგა',
@@ -2087,6 +2119,10 @@ class LanguagesKa extends Languages {
       'yue',
       'კანტონური',
       menu: 'ჩინური, კანტონური',
+    ),
+    'za': Language(
+      'za',
+      'ზჰუანგი',
     ),
     'zbl': Language(
       'zbl',
@@ -7254,6 +7290,72 @@ class UnitsKa implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ნაწილი მილიარდზე',
+          one: '{0} ნაწილი მილიარდზე',
+          other: '{0} ნაწილი მილიარდზე',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ნაწილი/მილიარდზე',
+          one: '{0} ნ/მ',
+          other: '{0} ნ/მ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ნ/მ',
+          one: '{0} ნ/მ',
+          other: '{0} ნ/მ',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ღამე',
+          one: '{0} ღამე',
+          other: '{0} ღამე',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ღამე',
+          one: '{0} ღამე',
+          other: '{0} ღამე',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ღამე',
+          one: '{0} ღამე',
+          other: '{0} ღამე',
+        ),
+      );
 }
 
 class DateFieldsKa implements DateFields {
@@ -10242,9 +10344,6 @@ class TimeZonesKa extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ჩიტა',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ჩოიბალსანი',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'კოლომბო',
     ),
@@ -10919,14 +11018,6 @@ class TimeZonesKa extends TimeZones {
         daylight: 'ჩინეთის დროის სარტყელი',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ჩოიბალსანის დრო',
-        standard: 'ჩოიბალსანის სტანდარტული დრო',
-        daylight: 'ჩოიბალსანის ზაფხულის დრო',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11203,6 +11294,12 @@ class TimeZonesKa extends TimeZones {
         generic: 'იაპონიის დრო',
         standard: 'იაპონიის სტანდარტული დრო',
         daylight: 'იაპონიის ზაფხულის დრო',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ყაზახეთის დრო',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -323,6 +323,10 @@ class LanguagesTh extends Languages {
       'bla',
       'สิกสิกา',
     ),
+    'blo': Language(
+      'blo',
+      'อานี',
+    ),
     'bm': Language(
       'bm',
       'บัมบารา',
@@ -879,10 +883,6 @@ class LanguagesTh extends Languages {
       'goh',
       'เยอรมันสูงโบราณ',
     ),
-    'gom': Language(
-      'gom',
-      'กอนกานีของกัว',
-    ),
     'gon': Language(
       'gon',
       'กอนดิ',
@@ -1318,6 +1318,10 @@ class LanguagesTh extends Languages {
     'kwk': Language(
       'kwk',
       'ควักวาลา',
+    ),
+    'kxv': Language(
+      'kxv',
+      'กูวี',
     ),
     'ky': Language(
       'ky',
@@ -2504,6 +2508,10 @@ class LanguagesTh extends Languages {
       'vmf',
       'เมน-ฟรานโกเนีย',
     ),
+    'vmw': Language(
+      'vmw',
+      'มากัววา',
+    ),
     'vo': Language(
       'vo',
       'โวลาพึค',
@@ -2563,6 +2571,10 @@ class LanguagesTh extends Languages {
     'xmf': Language(
       'xmf',
       'เมเกรเลีย',
+    ),
+    'xnr': Language(
+      'xnr',
+      'กังกรี',
     ),
     'xog': Language(
       'xog',
@@ -7812,6 +7824,72 @@ class UnitsTh implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'แสง',
+          one: '{0} light',
+          other: '{0} แสง',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'แสง',
+          one: '{0} light',
+          other: '{0} แสง',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'แสง',
+          one: '{0}light',
+          other: '{0}แสง',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ส่วนต่อพันล้าน',
+          one: '{0} part per billion',
+          other: '{0} ส่วนต่อพันล้าน',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ส่วน/พันล้าน',
+          one: '{0} ppb',
+          other: '{0} สตพล.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'สตพล.',
+          one: '{0}ppb',
+          other: '{0}สตพล.',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'คืน',
+          one: '{0} night',
+          other: '{0} คืน',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'คืน',
+          one: '{0} night',
+          other: '{0} คืน',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'คืน',
+          one: '{0}night',
+          other: '{0}คืน',
+        ),
+      );
 }
 
 class DateFieldsTh implements DateFields {
@@ -10710,9 +10788,6 @@ class TimeZonesTh extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ชิตา',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ชอยบาลซาน',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'โคลัมโบ',
     ),
@@ -11433,14 +11508,6 @@ class TimeZonesTh extends TimeZones {
         daylight: 'เวลาออมแสงจีน',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'เวลาชอยปาลชาน',
-        standard: 'เวลามาตรฐานชอยปาลชาน',
-        daylight: 'เวลาฤดูร้อนชอยปาลชาน',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11731,6 +11798,12 @@ class TimeZonesTh extends TimeZones {
         generic: 'เวลาคัมชัตคา',
         standard: 'เวลาเปโตรปัฟลอฟสค์-คัมชัตสกี',
         daylight: 'เวลาฤดูร้อนเปโตรปัฟลอฟสค์-คัมชัตสกี',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'เวลาคาซัคสถาน',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

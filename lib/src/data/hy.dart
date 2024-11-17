@@ -243,6 +243,10 @@ class LanguagesHy extends Languages {
       'bla',
       'սիկսիկա',
     ),
+    'blo': Language(
+      'blo',
+      'անիի',
+    ),
     'bm': Language(
       'bm',
       'բամբարա',
@@ -715,6 +719,11 @@ class LanguagesHy extends Languages {
       'hi',
       'հինդի',
     ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'հինդի (լատինատառ)',
+      variant: 'հինգլիշ',
+    ),
     'hil': Language(
       'hil',
       'հիլիգայնոն',
@@ -991,6 +1000,10 @@ class LanguagesHy extends Languages {
       'kwk',
       'կվակվալա',
     ),
+    'kxv': Language(
+      'kxv',
+      'կուվի',
+    ),
     'ky': Language(
       'ky',
       'ղրղզերեն',
@@ -1023,6 +1036,10 @@ class LanguagesHy extends Languages {
       'li',
       'լիմբուրգերեն',
     ),
+    'lij': Language(
+      'lij',
+      'լիգուրերեն',
+    ),
     'lil': Language(
       'lil',
       'լիլուետ',
@@ -1030,6 +1047,10 @@ class LanguagesHy extends Languages {
     'lkt': Language(
       'lkt',
       'լակոտա',
+    ),
+    'lmo': Language(
+      'lmo',
+      'լոմբարդերեն',
     ),
     'ln': Language(
       'ln',
@@ -1751,6 +1772,10 @@ class LanguagesHy extends Languages {
       'syr',
       'ասորերեն',
     ),
+    'szl': Language(
+      'szl',
+      'սիլեզերեն',
+    ),
     'ta': Language(
       'ta',
       'թամիլերեն',
@@ -1975,6 +2000,10 @@ class LanguagesHy extends Languages {
       'vls',
       'արևմտաֆլամանդերեն',
     ),
+    'vmw': Language(
+      'vmw',
+      'մաքուա',
+    ),
     'vo': Language(
       'vo',
       'վոլապյուկ',
@@ -2030,6 +2059,10 @@ class LanguagesHy extends Languages {
     'xh': Language(
       'xh',
       'քոսա',
+    ),
+    'xnr': Language(
+      'xnr',
+      'կանգրի',
     ),
     'xog': Language(
       'xog',
@@ -2590,18 +2623,18 @@ class UnitsHy implements Units {
         long: UnitCountPattern(
           _locale,
           'ազատ անկման արագացում',
-          one: '{0} g',
-          other: '{0} g',
+          one: '{0} g-ուժ',
+          other: '{0} g-ուժ',
         ),
         short: UnitCountPattern(
           _locale,
-          'g',
+          'g-ուժ',
           one: '{0} g',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'g',
+          'g-ուժ',
           one: '{0}G',
           other: '{0}G',
         ),
@@ -2611,7 +2644,7 @@ class UnitsHy implements Units {
   Unit get accelerationMeterPerSquareSecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'մետրեր/վայրկյան քառակուսի',
+          'մետր քառակուսի վայրկյանի վրա',
           one: '{0} մետր/վայրկյան քառակուսի',
           other: '{0} մետր/վայրկյան քառակուսի',
         ),
@@ -2633,7 +2666,7 @@ class UnitsHy implements Units {
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
           _locale,
-          'պտույտներ',
+          'պտույտ',
           one: '{0} պտույտ',
           other: '{0} պտույտ',
         ),
@@ -2646,8 +2679,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'պտ',
-          one: '{0} պտ',
-          other: '{0} պտ',
+          one: '{0}պտ',
+          other: '{0}պտ',
         ),
       );
 
@@ -2655,7 +2688,7 @@ class UnitsHy implements Units {
   Unit get angleRadian => Unit(
         long: UnitCountPattern(
           _locale,
-          'ռադիաններ',
+          'ռադիան',
           one: '{0} ռադիան',
           other: '{0} ռադիան',
         ),
@@ -2668,8 +2701,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ռադ',
-          one: '{0} ռադ',
-          other: '{0} ռադ',
+          one: '{0}ռադ',
+          other: '{0}ռադ',
         ),
       );
 
@@ -2677,7 +2710,7 @@ class UnitsHy implements Units {
   Unit get angleDegree => Unit(
         long: UnitCountPattern(
           _locale,
-          'աստիճաններ',
+          'աստիճան',
           one: '{0} աստիճան',
           other: '{0} աստիճան',
         ),
@@ -2689,7 +2722,7 @@ class UnitsHy implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'աստիճան',
+          'աստ',
           one: '{0} աստիճան',
           other: '{0}°',
         ),
@@ -2699,13 +2732,13 @@ class UnitsHy implements Units {
   Unit get angleArcMinute => Unit(
         long: UnitCountPattern(
           _locale,
-          'րոպեներ',
+          'րոպե',
           one: '{0} րոպե',
           other: '{0} րոպե',
         ),
         short: UnitCountPattern(
           _locale,
-          'րոպեներ',
+          'րոպե',
           one: '{0} րոպե',
           other: '{0}′',
         ),
@@ -2721,19 +2754,19 @@ class UnitsHy implements Units {
   Unit get angleArcSecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'վայրկյաններ',
+          'վայրկյան',
           one: '{0} վայրկյան',
           other: '{0} վայրկյան',
         ),
         short: UnitCountPattern(
           _locale,
-          'վայրկյաններ',
+          'վայրկյան',
           one: '{0} վայրկյան',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'վայրկյաններ',
+          'վայրկյան',
           one: '{0} վայրկյան',
           other: '{0}″',
         ),
@@ -2743,7 +2776,7 @@ class UnitsHy implements Units {
   Unit get areaSquareKilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'քառակուսի կիլոմետրեր',
+          'քառակուսի կիլոմետր',
           one: '{0} քառակուսի կիլոմետր',
           other: '{0} քառակուսի կիլոմետր',
         ),
@@ -2756,8 +2789,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կմ²',
-          one: '{0} կմ²',
-          other: '{0} կմ²',
+          one: '{0}կմ²',
+          other: '{0}կմ²',
         ),
       );
 
@@ -2765,7 +2798,7 @@ class UnitsHy implements Units {
   Unit get areaHectare => Unit(
         long: UnitCountPattern(
           _locale,
-          'հեկտարներ',
+          'հեկտար',
           one: '{0} հեկտար',
           other: '{0} հեկտար',
         ),
@@ -2778,8 +2811,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'հա',
-          one: '{0} հա',
-          other: '{0} հա',
+          one: '{0}հա',
+          other: '{0}հա',
         ),
       );
 
@@ -2787,7 +2820,7 @@ class UnitsHy implements Units {
   Unit get areaSquareMeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'քառակուսի մետրեր',
+          'քառակուսի մետր',
           one: '{0} քառակուսի մետր',
           other: '{0} քառակուսի մետր',
         ),
@@ -2800,8 +2833,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մ²',
-          one: '{0} մ²',
-          other: '{0} մ²',
+          one: '{0}մ²',
+          other: '{0}մ²',
         ),
       );
 
@@ -2809,7 +2842,7 @@ class UnitsHy implements Units {
   Unit get areaSquareCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'քառակուսի սանտիմետրեր',
+          'քառակուսի սանտիմետր',
           one: '{0} քառակուսի սանտիմետր',
           other: '{0} քառակուսի սանտիմետր',
         ),
@@ -2822,8 +2855,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'սմ²',
-          one: '{0} սմ²',
-          other: '{0} սմ²',
+          one: '{0}սմ²',
+          other: '{0}սմ²',
         ),
       );
 
@@ -2831,7 +2864,7 @@ class UnitsHy implements Units {
   Unit get areaSquareMile => Unit(
         long: UnitCountPattern(
           _locale,
-          'քառակուսի մղոններ',
+          'քառակուսի մղոն',
           one: '{0} քառակուսի մղոն',
           other: '{0} քառակուսի մղոն',
         ),
@@ -2853,7 +2886,7 @@ class UnitsHy implements Units {
   Unit get areaAcre => Unit(
         long: UnitCountPattern(
           _locale,
-          'ակրեր',
+          'ակր',
           one: '{0} ակր',
           other: '{0} ակր',
         ),
@@ -2875,21 +2908,21 @@ class UnitsHy implements Units {
   Unit get areaSquareYard => Unit(
         long: UnitCountPattern(
           _locale,
-          'քառակուսի յարդեր',
+          'քառակուսի յարդ',
           one: '{0} քառակուսի յարդ',
           other: '{0} քառակուսի յարդ',
         ),
         short: UnitCountPattern(
           _locale,
-          'յրդ²',
-          one: '{0} յրդ²',
-          other: '{0} յրդ²',
+          'յդ²',
+          one: '{0} յդ²',
+          other: '{0} յդ²',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'յրդ²',
-          one: '{0} յրդ²',
-          other: '{0} յրդ²',
+          'յդ²',
+          one: '{0}յդ²',
+          other: '{0}յդ²',
         ),
       );
 
@@ -2897,7 +2930,7 @@ class UnitsHy implements Units {
   Unit get areaSquareFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'քառակուսի ֆուտեր',
+          'քառակուսի ֆուտ',
           one: '{0} քառակուսի ֆուտ',
           other: '{0} քառակուսի ֆուտ',
         ),
@@ -2919,7 +2952,7 @@ class UnitsHy implements Units {
   Unit get areaSquareInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'քառակուսի մատնաչափեր',
+          'քառակուսի մատնաչափ',
           one: '{0} քառակուսի մատնաչափ',
           other: '{0} քառակուսի մատնաչափ',
         ),
@@ -2941,7 +2974,7 @@ class UnitsHy implements Units {
   Unit get areaDunam => Unit(
         long: UnitCountPattern(
           _locale,
-          'դունամներ',
+          'դունամ',
           one: '{0} դունամ',
           other: '{0} դունամ',
         ),
@@ -2954,8 +2987,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'դունամ',
-          one: '{0} դունամ',
-          other: '{0} դունամ',
+          one: '{0}դունամ',
+          other: '{0}դունամ',
         ),
       );
 
@@ -2976,8 +3009,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կար',
-          one: '{0} կար',
-          other: '{0} կար',
+          one: '{0}կար',
+          other: '{0}կար',
         ),
       );
 
@@ -2985,7 +3018,7 @@ class UnitsHy implements Units {
   Unit get concentrMilligramOfglucosePerDeciliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիգրամներ դեցիլիտրի վրա',
+          'միլիգրամ դեցիլիտրի վրա',
           one: '{0} միլիգրամ դեցիլիտրի վրա',
           other: '{0} միլիգրամ դեցիլիտրի վրա',
         ),
@@ -3007,7 +3040,7 @@ class UnitsHy implements Units {
   Unit get concentrMillimolePerLiter => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիմոլներ լիտրի վրա',
+          'միլիմոլ լիտրի վրա',
           one: '{0} միլիմոլ լիտրի վրա',
           other: '{0} միլիմոլ լիտրի վրա',
         ),
@@ -3042,8 +3075,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'միույթ',
-          one: '{0} միույթ',
-          other: '{0} միույթ',
+          one: '{0}միույթ',
+          other: '{0}միույթ',
         ),
       );
 
@@ -3051,13 +3084,13 @@ class UnitsHy implements Units {
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
-          'մասնիկներ միլիոնի վրա',
-          one: '{0} մասնիկ միլիոնի վրա',
-          other: '{0} մասնիկ միլիոնի վրա',
+          'մաս միլիոնի վրա',
+          one: '{0} մաս միլիոնի վրա',
+          other: '{0} մաս միլիոնի վրա',
         ),
         short: UnitCountPattern(
           _locale,
-          'մասնիկ/միլիոն',
+          'մաս/միլիոն',
           one: '{0} մմվ',
           other: '{0} մմվ',
         ),
@@ -3139,7 +3172,7 @@ class UnitsHy implements Units {
   Unit get concentrMole => Unit(
         long: UnitCountPattern(
           _locale,
-          'մոլեր',
+          'մոլ',
           one: '{0} մոլ',
           other: '{0} մոլ',
         ),
@@ -3161,7 +3194,7 @@ class UnitsHy implements Units {
   Unit get consumptionLiterPerKilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'լիտրեր կիլոմետրի վրա',
+          'լիտր կիլոմետրի վրա',
           one: '{0} լիտր կիլոմետրի վրա',
           other: '{0} լիտր կիլոմետրի վրա',
         ),
@@ -3183,7 +3216,7 @@ class UnitsHy implements Units {
   Unit get consumptionLiterPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'լիտրեր 100 կիլոմետրի վրա',
+          'լիտր 100 կիլոմետրի վրա',
           one: '{0} լիտր 100 կիլոմետրի վրա',
           other: '{0} լիտր 100 կիլոմետրի վրա',
         ),
@@ -3205,7 +3238,7 @@ class UnitsHy implements Units {
   Unit get consumptionMilePerGallon => Unit(
         long: UnitCountPattern(
           _locale,
-          'մղոններ գալոնի վրա',
+          'մղոն գալոնի վրա',
           one: '{0} մղոն գալոնի վրա',
           other: '{0} մղոն գալոնի վրա',
         ),
@@ -3227,7 +3260,7 @@ class UnitsHy implements Units {
   Unit get consumptionMilePerGallonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'մղոններ անգլիական գալոնի վրա',
+          'մղոն անգլիական գալոնի վրա',
           one: '{0} մղոն անգլիական գալոնի վրա',
           other: '{0} մղոն անգլիական գալոնի վրա',
         ),
@@ -3249,7 +3282,7 @@ class UnitsHy implements Units {
   Unit get digitalPetabyte => Unit(
         long: UnitCountPattern(
           _locale,
-          'պետաբայթեր',
+          'պետաբայթ',
           one: '{0} պետաբայթ',
           other: '{0} պետաբայթ',
         ),
@@ -3262,8 +3295,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ՊԲայթ',
-          one: '{0} ՊԲ',
-          other: '{0} ՊԲ',
+          one: '{0}ՊԲ',
+          other: '{0}ՊԲ',
         ),
       );
 
@@ -3271,7 +3304,7 @@ class UnitsHy implements Units {
   Unit get digitalTerabyte => Unit(
         long: UnitCountPattern(
           _locale,
-          'տերաբայթեր',
+          'տերաբայթ',
           one: '{0} տերաբայթ',
           other: '{0} տերաբայթ',
         ),
@@ -3284,8 +3317,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ՏԲայթ',
-          one: '{0} ՏԲ',
-          other: '{0} ՏԲ',
+          one: '{0}ՏԲ',
+          other: '{0}ՏԲ',
         ),
       );
 
@@ -3293,7 +3326,7 @@ class UnitsHy implements Units {
   Unit get digitalTerabit => Unit(
         long: UnitCountPattern(
           _locale,
-          'տերաբիթեր',
+          'տերաբիթ',
           one: '{0} տերաբիթ',
           other: '{0} տերաբիթ',
         ),
@@ -3306,8 +3339,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Տբիթ',
-          one: '{0} Տբիթ',
-          other: '{0} Տբիթ',
+          one: '{0}Տբիթ',
+          other: '{0}Տբիթ',
         ),
       );
 
@@ -3315,7 +3348,7 @@ class UnitsHy implements Units {
   Unit get digitalGigabyte => Unit(
         long: UnitCountPattern(
           _locale,
-          'գիգաբայթեր',
+          'գիգաբայթ',
           one: '{0} գիգաբայթ',
           other: '{0} գիգաբայթ',
         ),
@@ -3328,8 +3361,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ԳԲ',
-          one: '{0} ԳԲ',
-          other: '{0} ԳԲ',
+          one: '{0}ԳԲ',
+          other: '{0}ԳԲ',
         ),
       );
 
@@ -3337,7 +3370,7 @@ class UnitsHy implements Units {
   Unit get digitalGigabit => Unit(
         long: UnitCountPattern(
           _locale,
-          'գիգաբիթեր',
+          'գիգաբիթ',
           one: '{0} գիգաբիթ',
           other: '{0} գիգաբիթ',
         ),
@@ -3350,8 +3383,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Գբիթ',
-          one: '{0} Գբիթ',
-          other: '{0} Գբիթ',
+          one: '{0}Գբիթ',
+          other: '{0}Գբիթ',
         ),
       );
 
@@ -3359,7 +3392,7 @@ class UnitsHy implements Units {
   Unit get digitalMegabyte => Unit(
         long: UnitCountPattern(
           _locale,
-          'մեգաբայթեր',
+          'մեգաբայթ',
           one: '{0} մեգաբայթ',
           other: '{0} մեգաբայթ',
         ),
@@ -3372,8 +3405,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ՄԲ',
-          one: '{0} ՄԲ',
-          other: '{0} ՄԲ',
+          one: '{0}ՄԲ',
+          other: '{0}ՄԲ',
         ),
       );
 
@@ -3381,7 +3414,7 @@ class UnitsHy implements Units {
   Unit get digitalMegabit => Unit(
         long: UnitCountPattern(
           _locale,
-          'մեգաբիթեր',
+          'մեգաբիթ',
           one: '{0} մեգաբիթ',
           other: '{0} մեգաբիթ',
         ),
@@ -3394,8 +3427,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Մբիթ',
-          one: '{0} Մբիթ',
-          other: '{0} Մբիթ',
+          one: '{0}Մբիթ',
+          other: '{0}Մբիթ',
         ),
       );
 
@@ -3403,7 +3436,7 @@ class UnitsHy implements Units {
   Unit get digitalKilobyte => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոբայթեր',
+          'կիլոբայթ',
           one: '{0} կիլոբայթ',
           other: '{0} կիլոբայթ',
         ),
@@ -3416,8 +3449,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կԲ',
-          one: '{0} կԲ',
-          other: '{0} կԲ',
+          one: '{0}կԲ',
+          other: '{0}կԲ',
         ),
       );
 
@@ -3425,7 +3458,7 @@ class UnitsHy implements Units {
   Unit get digitalKilobit => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոբիթեր',
+          'կիլոբիթ',
           one: '{0} կիլոբիթ',
           other: '{0} կիլոբիթ',
         ),
@@ -3438,8 +3471,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կբիթ',
-          one: '{0} կբիթ',
-          other: '{0} կբիթ',
+          one: '{0}կբիթ',
+          other: '{0}կբիթ',
         ),
       );
 
@@ -3447,21 +3480,21 @@ class UnitsHy implements Units {
   Unit get digitalByte => Unit(
         long: UnitCountPattern(
           _locale,
-          'բայթեր',
+          'բայթ',
           one: '{0} բայթ',
           other: '{0} բայթ',
         ),
         short: UnitCountPattern(
           _locale,
           'Բ',
-          one: '{0} Բայթ',
+          one: '{0} բայթ',
           other: '{0} Բ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Բ',
-          one: '{0} Բ',
-          other: '{0} Բ',
+          one: '{0}Բ',
+          other: '{0}Բ',
         ),
       );
 
@@ -3469,7 +3502,7 @@ class UnitsHy implements Units {
   Unit get digitalBit => Unit(
         long: UnitCountPattern(
           _locale,
-          'բիթեր',
+          'բիթ',
           one: '{0} բիթ',
           other: '{0} բիթ',
         ),
@@ -3482,8 +3515,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'բիթ',
-          one: '{0} բիթ',
-          other: '{0} բիթ',
+          one: '{0}բիթ',
+          other: '{0}բիթ',
         ),
       );
 
@@ -3491,7 +3524,7 @@ class UnitsHy implements Units {
   Unit get durationCentury => Unit(
         long: UnitCountPattern(
           _locale,
-          'դարեր',
+          'դար',
           one: '{0} դար',
           other: '{0} դար',
         ),
@@ -3513,7 +3546,7 @@ class UnitsHy implements Units {
   Unit get durationDecade => Unit(
         long: UnitCountPattern(
           _locale,
-          'տասնամյակներ',
+          'տասնամյակ',
           one: '{0} տասնամյակ',
           other: '{0} տասնամյակ',
         ),
@@ -3535,19 +3568,19 @@ class UnitsHy implements Units {
   Unit get durationYear => Unit(
         long: UnitCountPattern(
           _locale,
-          'տարիներ',
+          'տարի',
           one: '{0} տարի',
           other: '{0} տարի',
         ),
         short: UnitCountPattern(
           _locale,
-          'տ',
+          'տարի',
           one: '{0} տ',
           other: '{0} տ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'տ',
+          'տարի',
           one: '{0} տ',
           other: '{0} տ',
         ),
@@ -3557,7 +3590,7 @@ class UnitsHy implements Units {
   Unit get durationQuarter => Unit(
         long: UnitCountPattern(
           _locale,
-          'եռամսյակներ',
+          'եռամսյակ',
           one: '{0} եռամսյակ',
           other: '{0} եռամսյակ',
         ),
@@ -3579,7 +3612,7 @@ class UnitsHy implements Units {
   Unit get durationMonth => Unit(
         long: UnitCountPattern(
           _locale,
-          'ամիսներ',
+          'ամիս',
           one: '{0} ամիս',
           other: '{0} ամիս',
         ),
@@ -3592,8 +3625,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ա',
-          one: '{0} ա',
-          other: '{0} ա',
+          one: '{0}ա',
+          other: '{0}ա',
         ),
       );
 
@@ -3601,7 +3634,7 @@ class UnitsHy implements Units {
   Unit get durationWeek => Unit(
         long: UnitCountPattern(
           _locale,
-          'շաբաթներ',
+          'շաբաթ',
           one: '{0} շաբաթ',
           other: '{0} շաբաթ',
         ),
@@ -3623,7 +3656,7 @@ class UnitsHy implements Units {
   Unit get durationDay => Unit(
         long: UnitCountPattern(
           _locale,
-          'օրեր',
+          'օր',
           one: '{0} օր',
           other: '{0} օր',
         ),
@@ -3645,21 +3678,21 @@ class UnitsHy implements Units {
   Unit get durationHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'ժամեր',
+          'ժամ',
           one: '{0} ժամ',
           other: '{0} ժամ',
         ),
         short: UnitCountPattern(
           _locale,
-          'ժ',
+          'ժամ',
           one: '{0} ժ',
           other: '{0} ժ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ժ',
-          one: '{0} ժ',
-          other: '{0} ժ',
+          'ժամ',
+          one: '{0}ժ',
+          other: '{0}ժ',
         ),
       );
 
@@ -3667,7 +3700,7 @@ class UnitsHy implements Units {
   Unit get durationMinute => Unit(
         long: UnitCountPattern(
           _locale,
-          'րոպեներ',
+          'րոպե',
           one: '{0} րոպե',
           other: '{0} րոպե',
         ),
@@ -3680,8 +3713,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ր',
-          one: '{0} ր',
-          other: '{0} ր',
+          one: '{0}ր',
+          other: '{0}ր',
         ),
       );
 
@@ -3689,7 +3722,7 @@ class UnitsHy implements Units {
   Unit get durationSecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'վայրկյաններ',
+          'վայրկյան',
           one: '{0} վայրկյան',
           other: '{0} վայրկյան',
         ),
@@ -3711,7 +3744,7 @@ class UnitsHy implements Units {
   Unit get durationMillisecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիվայրկյաններ',
+          'միլիվայրկյան',
           one: '{0} միլիվայրկյան',
           other: '{0} միլիվայրկյան',
         ),
@@ -3733,7 +3766,7 @@ class UnitsHy implements Units {
   Unit get durationMicrosecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'միկրովայրկյաններ',
+          'միկրովայրկյան',
           one: '{0} միկրովայրկյան',
           other: '{0} միկրովայրկյան',
         ),
@@ -3755,7 +3788,7 @@ class UnitsHy implements Units {
   Unit get durationNanosecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'նանովայրկյաններ',
+          'նանովայրկյան',
           one: '{0} նանովայրկյան',
           other: '{0} նանովայրկյան',
         ),
@@ -3777,7 +3810,7 @@ class UnitsHy implements Units {
   Unit get electricAmpere => Unit(
         long: UnitCountPattern(
           _locale,
-          'ամպերներ',
+          'ամպեր',
           one: '{0} ամպեր',
           other: '{0} ամպեր',
         ),
@@ -3790,8 +3823,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Ա',
-          one: '{0} Ա',
-          other: '{0} Ա',
+          one: '{0}Ա',
+          other: '{0}Ա',
         ),
       );
 
@@ -3799,7 +3832,7 @@ class UnitsHy implements Units {
   Unit get electricMilliampere => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիամպերներ',
+          'միլիամպեր',
           one: '{0} միլիամպեր',
           other: '{0} միլիամպեր',
         ),
@@ -3812,8 +3845,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մԱ',
-          one: '{0} մԱ',
-          other: '{0} մԱ',
+          one: '{0}մԱ',
+          other: '{0}մԱ',
         ),
       );
 
@@ -3821,21 +3854,21 @@ class UnitsHy implements Units {
   Unit get electricOhm => Unit(
         long: UnitCountPattern(
           _locale,
-          'օհմեր',
+          'օհմ',
           one: '{0} օհմ',
           other: '{0} օհմ',
         ),
         short: UnitCountPattern(
           _locale,
-          'օհմեր',
-          one: '{0} Օհմ',
-          other: '{0} Օհմ',
+          'օհմ',
+          one: '{0} Ω',
+          other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'օհմեր',
-          one: '{0} Օհմ',
-          other: '{0} Օհմ',
+          'օհմ',
+          one: '{0} Ω',
+          other: '{0}Ω',
         ),
       );
 
@@ -3843,7 +3876,7 @@ class UnitsHy implements Units {
   Unit get electricVolt => Unit(
         long: UnitCountPattern(
           _locale,
-          'վոլտեր',
+          'վոլտ',
           one: '{0} վոլտ',
           other: '{0} վոլտ',
         ),
@@ -3856,8 +3889,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Վ',
-          one: '{0} Վ',
-          other: '{0} Վ',
+          one: '{0}Վ',
+          other: '{0}Վ',
         ),
       );
 
@@ -3865,7 +3898,7 @@ class UnitsHy implements Units {
   Unit get energyKilocalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոկալորիաներ',
+          'կիլոկալորիա',
           one: '{0} կիլոկալորիա',
           other: '{0} կիլոկալորիա',
         ),
@@ -3878,8 +3911,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կկալ',
-          one: '{0} կկալ',
-          other: '{0} կկալ',
+          one: '{0}կկալ',
+          other: '{0}կկալ',
         ),
       );
 
@@ -3887,7 +3920,7 @@ class UnitsHy implements Units {
   Unit get energyCalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          'կալորիաներ',
+          'կալորիա',
           one: '{0} կալորիա',
           other: '{0} կալորիա',
         ),
@@ -3909,7 +3942,7 @@ class UnitsHy implements Units {
   Unit get energyFoodcalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          'կալորիաներ',
+          'կալորիա',
           one: '{0} կալորիա',
           other: '{0} կալորիա',
         ),
@@ -3931,7 +3964,7 @@ class UnitsHy implements Units {
   Unit get energyKilojoule => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոջոուլներ',
+          'կիլոջոուլ',
           one: '{0} կիլոջոուլ',
           other: '{0} կիլոջոուլ',
         ),
@@ -3944,8 +3977,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կՋ',
-          one: '{0} կՋ',
-          other: '{0} կՋ',
+          one: '{0}կՋ',
+          other: '{0}կՋ',
         ),
       );
 
@@ -3953,7 +3986,7 @@ class UnitsHy implements Units {
   Unit get energyJoule => Unit(
         long: UnitCountPattern(
           _locale,
-          'ջոուլներ',
+          'ջոուլ',
           one: '{0} ջոուլ',
           other: '{0} ջոուլ',
         ),
@@ -3975,7 +4008,7 @@ class UnitsHy implements Units {
   Unit get energyKilowattHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլովատտեր-ժամեր',
+          'կիլովատտ-ժամ',
           one: '{0} կիլովատտ-ժամ',
           other: '{0} կիլովատտ-ժամ',
         ),
@@ -3997,7 +4030,7 @@ class UnitsHy implements Units {
   Unit get energyElectronvolt => Unit(
         long: UnitCountPattern(
           _locale,
-          'էլեկտրոն-վոլտեր',
+          'էլեկտրոն-վոլտ',
           one: '{0} էլեկտրոն-վոլտ',
           other: '{0} էլեկտրոն-վոլտ',
         ),
@@ -4010,8 +4043,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'էՎ',
-          one: '{0} էՎ',
-          other: '{0} էՎ',
+          one: '{0}էՎ',
+          other: '{0}էՎ',
         ),
       );
 
@@ -4019,7 +4052,7 @@ class UnitsHy implements Units {
   Unit get energyBritishThermalUnit => Unit(
         long: UnitCountPattern(
           _locale,
-          'բրիտանական ջերմային միավորներ',
+          'բրիտանական ջերմային միավոր',
           one: '{0} բրիտանական ջերմային միավոր',
           other: '{0} բրիտանական ջերմային միավոր',
         ),
@@ -4032,8 +4065,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ԲՋՄ',
-          one: '{0} Բջմ',
-          other: '{0} Բջմ',
+          one: '{0}Բջմ',
+          other: '{0}Բջմ',
         ),
       );
 
@@ -4041,7 +4074,7 @@ class UnitsHy implements Units {
   Unit get energyThermUs => Unit(
         long: UnitCountPattern(
           _locale,
-          'ԱՄՆ ջերմեր',
+          'ԱՄՆ ջերմ',
           one: '{0} ԱՄՆ ջերմ',
           other: '{0} ԱՄՆ ջերմ',
         ),
@@ -4063,7 +4096,7 @@ class UnitsHy implements Units {
   Unit get forcePoundForce => Unit(
         long: UnitCountPattern(
           _locale,
-          'ֆունտ-ուժեր',
+          'ֆունտ-ուժ',
           one: '{0} ֆունտ-ուժ',
           other: '{0} ֆունտ-ուժ',
         ),
@@ -4085,7 +4118,7 @@ class UnitsHy implements Units {
   Unit get forceNewton => Unit(
         long: UnitCountPattern(
           _locale,
-          'նյուտոններ',
+          'նյուտոն',
           one: '{0} նյուտոն',
           other: '{0} նյուտոն',
         ),
@@ -4129,7 +4162,7 @@ class UnitsHy implements Units {
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'գիգահերցեր',
+          'գիգահերց',
           one: '{0} գիգահերց',
           other: '{0} գիգահերց',
         ),
@@ -4142,8 +4175,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ԳՀց',
-          one: '{0} ԳՀց',
-          other: '{0} ԳՀց',
+          one: '{0}ԳՀց',
+          other: '{0}ԳՀց',
         ),
       );
 
@@ -4151,7 +4184,7 @@ class UnitsHy implements Units {
   Unit get frequencyMegahertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'մեգահերցեր',
+          'մեգահերց',
           one: '{0} մեգահերց',
           other: '{0} մեգահերց',
         ),
@@ -4164,8 +4197,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ՄՀց',
-          one: '{0} ՄՀց',
-          other: '{0} ՄՀց',
+          one: '{0}ՄՀց',
+          other: '{0}ՄՀց',
         ),
       );
 
@@ -4173,7 +4206,7 @@ class UnitsHy implements Units {
   Unit get frequencyKilohertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոհերցեր',
+          'կիլոհերց',
           one: '{0} կիլոհերց',
           other: '{0} կիլոհերց',
         ),
@@ -4186,8 +4219,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կՀց',
-          one: '{0} կՀց',
-          other: '{0} կՀց',
+          one: '{0}կՀց',
+          other: '{0}կՀց',
         ),
       );
 
@@ -4195,7 +4228,7 @@ class UnitsHy implements Units {
   Unit get frequencyHertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'հերցեր',
+          'հերց',
           one: '{0} հերց',
           other: '{0} հերց',
         ),
@@ -4208,8 +4241,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Հց',
-          one: '{0} Հց',
-          other: '{0} Հց',
+          one: '{0}Հց',
+          other: '{0}Հց',
         ),
       );
 
@@ -4231,7 +4264,7 @@ class UnitsHy implements Units {
           _locale,
           'em',
           one: '{0}em',
-          other: '{0} em',
+          other: '{0}em',
         ),
       );
 
@@ -4239,13 +4272,13 @@ class UnitsHy implements Units {
   Unit get graphicsPixel => Unit(
         long: UnitCountPattern(
           _locale,
-          'փիքսելներ',
+          'փիքսել',
           one: '{0} փիքսել',
           other: '{0} փիքսել',
         ),
         short: UnitCountPattern(
           _locale,
-          'փիքսելներ',
+          'փիքսել',
           one: '{0} փքս',
           other: '{0} փքս',
         ),
@@ -4261,7 +4294,7 @@ class UnitsHy implements Units {
   Unit get graphicsMegapixel => Unit(
         long: UnitCountPattern(
           _locale,
-          'մեգափիքսելներ',
+          'մեգափիքսել',
           one: '{0} մեգափիքսել',
           other: '{0} մեգափիքսել',
         ),
@@ -4283,7 +4316,7 @@ class UnitsHy implements Units {
   Unit get graphicsPixelPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'փիքսելներ սանտիմետրի վրա',
+          'փիքսել սանտիմետրի վրա',
           one: '{0} փիքսել սանտիմետրի վրա',
           other: '{0} փիքսել սանտիմետրի վրա',
         ),
@@ -4305,7 +4338,7 @@ class UnitsHy implements Units {
   Unit get graphicsPixelPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'փիքսելներ մատնաչափի վրա',
+          'փիքսել մատնաչափի վրա',
           one: '{0} փիքսել մատնաչափի վրա',
           other: '{0} փիքսել մատնաչափի վրա',
         ),
@@ -4327,7 +4360,7 @@ class UnitsHy implements Units {
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'կետեր սանտիմետրի վրա',
+          'կետ սանտիմետրի վրա',
           one: '{0} կետ սանտիմետրի վրա',
           other: '{0} կետ սանտիմետրի վրա',
         ),
@@ -4349,7 +4382,7 @@ class UnitsHy implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'կետեր մատնաչափի վրա',
+          'կետ մատնաչափի վրա',
           one: '{0} կետ մատնաչափի վրա',
           other: '{0} կետ մատնաչափի վրա',
         ),
@@ -4415,7 +4448,7 @@ class UnitsHy implements Units {
   Unit get lengthKilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոմետրեր',
+          'կիլոմետր',
           one: '{0} կիլոմետր',
           other: '{0} կիլոմետր',
         ),
@@ -4437,7 +4470,7 @@ class UnitsHy implements Units {
   Unit get lengthMeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'մետրեր',
+          'մետր',
           one: '{0} մետր',
           other: '{0} մետր',
         ),
@@ -4459,7 +4492,7 @@ class UnitsHy implements Units {
   Unit get lengthDecimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'դեցիմետրեր',
+          'դեցիմետր',
           one: '{0} դեցիմետր',
           other: '{0} դեցիմետր',
         ),
@@ -4481,7 +4514,7 @@ class UnitsHy implements Units {
   Unit get lengthCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'սանտիմետրեր',
+          'սանտիմետր',
           one: '{0} սանտիմետր',
           other: '{0} սանտիմետր',
         ),
@@ -4503,7 +4536,7 @@ class UnitsHy implements Units {
   Unit get lengthMillimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիմետրեր',
+          'միլիմետր',
           one: '{0} միլիմետր',
           other: '{0} միլիմետր',
         ),
@@ -4525,7 +4558,7 @@ class UnitsHy implements Units {
   Unit get lengthMicrometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'միկրոմետրեր',
+          'միկրոմետր',
           one: '{0} միկրոմետր',
           other: '{0} միկրոմետր',
         ),
@@ -4547,7 +4580,7 @@ class UnitsHy implements Units {
   Unit get lengthNanometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'նանոմետրեր',
+          'նանոմետր',
           one: '{0} նանոմետր',
           other: '{0} նանոմետր',
         ),
@@ -4569,7 +4602,7 @@ class UnitsHy implements Units {
   Unit get lengthPicometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'պիկոմետրեր',
+          'պիկոմետր',
           one: '{0} պիկոմետր',
           other: '{0} պիկոմետր',
         ),
@@ -4591,7 +4624,7 @@ class UnitsHy implements Units {
   Unit get lengthMile => Unit(
         long: UnitCountPattern(
           _locale,
-          'մղոններ',
+          'մղոն',
           one: '{0} մղոն',
           other: '{0} մղոն',
         ),
@@ -4613,21 +4646,21 @@ class UnitsHy implements Units {
   Unit get lengthYard => Unit(
         long: UnitCountPattern(
           _locale,
-          'յարդեր',
+          'յարդ',
           one: '{0} յարդ',
           other: '{0} յարդ',
         ),
         short: UnitCountPattern(
           _locale,
-          'յրդ',
-          one: '{0} յրդ',
-          other: '{0} յրդ',
+          'յարդ',
+          one: '{0} յդ',
+          other: '{0} յդ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'յրդ',
-          one: '{0} յդ.',
-          other: '{0} յդ.',
+          'յդ',
+          one: '{0}յդ',
+          other: '{0}յդ',
         ),
       );
 
@@ -4635,7 +4668,7 @@ class UnitsHy implements Units {
   Unit get lengthFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'ֆուտեր',
+          'ֆուտ',
           one: '{0} ֆուտ',
           other: '{0} ֆուտ',
         ),
@@ -4657,7 +4690,7 @@ class UnitsHy implements Units {
   Unit get lengthInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'մատնաչափեր',
+          'մատնաչափ',
           one: '{0} մատնաչափ',
           other: '{0} մատնաչափ',
         ),
@@ -4679,7 +4712,7 @@ class UnitsHy implements Units {
   Unit get lengthParsec => Unit(
         long: UnitCountPattern(
           _locale,
-          'պարսեկներ',
+          'պարսեկ',
           one: '{0} պարսեկ',
           other: '{0} պարսեկ',
         ),
@@ -4701,7 +4734,7 @@ class UnitsHy implements Units {
   Unit get lengthLightYear => Unit(
         long: UnitCountPattern(
           _locale,
-          'լուսատարիներ',
+          'լուսատարի',
           one: '{0} լուսատարի',
           other: '{0} լուսատարի',
         ),
@@ -4723,7 +4756,7 @@ class UnitsHy implements Units {
   Unit get lengthAstronomicalUnit => Unit(
         long: UnitCountPattern(
           _locale,
-          'աստղագիտական միավորներ',
+          'աստղագիտական միավոր',
           one: '{0} աստղագիտական միավոր',
           other: '{0} աստղագիտական միավոր',
         ),
@@ -4767,7 +4800,7 @@ class UnitsHy implements Units {
   Unit get lengthFathom => Unit(
         long: UnitCountPattern(
           _locale,
-          'ծովային սաժեններ',
+          'ծովային սաժեն',
           one: '{0} ծովային սաժեն',
           other: '{0} ծովային սաժեն',
         ),
@@ -4789,7 +4822,7 @@ class UnitsHy implements Units {
   Unit get lengthNauticalMile => Unit(
         long: UnitCountPattern(
           _locale,
-          'ծովային մղոններ',
+          'ծովային մղոն',
           one: '{0} ծովային մղոն',
           other: '{0} ծովային մղոն',
         ),
@@ -4811,7 +4844,7 @@ class UnitsHy implements Units {
   Unit get lengthMileScandinavian => Unit(
         long: UnitCountPattern(
           _locale,
-          'սկանդինավյան մղոններ',
+          'սկանդինավյան մղոն',
           one: '{0} սկանդինավյան մղոն',
           other: '{0} սկանդինավյան մղոն',
         ),
@@ -4833,20 +4866,20 @@ class UnitsHy implements Units {
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0} point',
-          other: '{0} pt',
+          'կտ',
+          one: '{0} կտ',
+          other: '{0} կտ',
         ),
         short: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0} pt',
+          'կտ',
+          one: '{0} կտ',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0}pt',
+          'կտ',
+          one: '{0} կտ',
           other: '{0} pt',
         ),
       );
@@ -4855,7 +4888,7 @@ class UnitsHy implements Units {
   Unit get lengthSolarRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'արեգակնային շառավիղներ',
+          'արեգակնային շառավիղ',
           one: '{0} արեգակնային շառավիղ',
           other: '{0} արեգակնային շառավիղ',
         ),
@@ -4877,7 +4910,7 @@ class UnitsHy implements Units {
   Unit get lightLux => Unit(
         long: UnitCountPattern(
           _locale,
-          'լյուքսեր',
+          'լյուքս',
           one: '{0} լյուքս',
           other: '{0} լյուքս',
         ),
@@ -4890,8 +4923,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'լք',
-          one: '{0} լք',
-          other: '{0} լք',
+          one: '{0}լք',
+          other: '{0}լք',
         ),
       );
 
@@ -4943,7 +4976,7 @@ class UnitsHy implements Units {
   Unit get lightSolarLuminosity => Unit(
         long: UnitCountPattern(
           _locale,
-          'արեգակնային լուսատվություններ',
+          'արեգակնային լուսատվություն',
           one: '{0} արեգակնային լուսատվություն',
           other: '{0} արեգակնային լուսատվություն',
         ),
@@ -4965,7 +4998,7 @@ class UnitsHy implements Units {
   Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
-          'տոննաներ',
+          'տոննա',
           one: '{0} տոննա',
           other: '{0} տոննա',
         ),
@@ -4987,7 +5020,7 @@ class UnitsHy implements Units {
   Unit get massKilogram => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոգրամներ',
+          'կիլոգրամ',
           one: '{0} կիլոգրամ',
           other: '{0} կիլոգրամ',
         ),
@@ -5009,7 +5042,7 @@ class UnitsHy implements Units {
   Unit get massGram => Unit(
         long: UnitCountPattern(
           _locale,
-          'գրամներ',
+          'գրամ',
           one: '{0} գրամ',
           other: '{0} գրամ',
         ),
@@ -5031,7 +5064,7 @@ class UnitsHy implements Units {
   Unit get massMilligram => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիգրամներ',
+          'միլիգրամ',
           one: '{0} միլիգրամ',
           other: '{0} միլիգրամ',
         ),
@@ -5044,8 +5077,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մգ',
-          one: '{0} մգ',
-          other: '{0} մգ',
+          one: '{0}մգ',
+          other: '{0}մգ',
         ),
       );
 
@@ -5053,7 +5086,7 @@ class UnitsHy implements Units {
   Unit get massMicrogram => Unit(
         long: UnitCountPattern(
           _locale,
-          'միկրոգրամներ',
+          'միկրոգրամ',
           one: '{0} միկրոգրամ',
           other: '{0} միկրոգրամ',
         ),
@@ -5066,8 +5099,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մկգ',
-          one: '{0} մկգ',
-          other: '{0} մկգ',
+          one: '{0}մկգ',
+          other: '{0}մկգ',
         ),
       );
 
@@ -5075,7 +5108,7 @@ class UnitsHy implements Units {
   Unit get massTon => Unit(
         long: UnitCountPattern(
           _locale,
-          'ամերիկյան տոննաներ',
+          'ամերիկյան տոննա',
           one: '{0} ամերիկյան տոննա',
           other: '{0} ամերիկյան տոննա',
         ),
@@ -5098,20 +5131,20 @@ class UnitsHy implements Units {
         long: UnitCountPattern(
           _locale,
           'սթոուն',
-          one: '{0} սթոուն',
-          other: '{0} սթոուն',
+          one: '{0} սթ',
+          other: '{0} սթ',
         ),
         short: UnitCountPattern(
           _locale,
           'սթոուն',
-          one: '{0} սթոուն',
-          other: '{0} սթոուն',
+          one: '{0} սթ',
+          other: '{0} սթ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'սթոուն',
-          one: '{0} սթոուն',
-          other: '{0} սթոուն',
+          one: '{0}սթ',
+          other: '{0}սթ',
         ),
       );
 
@@ -5119,7 +5152,7 @@ class UnitsHy implements Units {
   Unit get massPound => Unit(
         long: UnitCountPattern(
           _locale,
-          'ֆունտեր',
+          'ֆունտ',
           one: '{0} ֆունտ',
           other: '{0} ֆունտ',
         ),
@@ -5141,21 +5174,21 @@ class UnitsHy implements Units {
   Unit get massOunce => Unit(
         long: UnitCountPattern(
           _locale,
-          'ունկիներ',
+          'ունկի',
           one: '{0} ունկի',
           other: '{0} ունկի',
         ),
         short: UnitCountPattern(
           _locale,
-          'ունկ.',
-          one: '{0} ունկ.',
-          other: '{0} ունկ.',
+          'ու',
+          one: '{0} ու',
+          other: '{0} ու',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ունկ.',
-          one: '{0} ունց',
-          other: '{0} ունց',
+          'ու',
+          one: '{0}ու',
+          other: '{0}ու',
         ),
       );
 
@@ -5163,21 +5196,21 @@ class UnitsHy implements Units {
   Unit get massOunceTroy => Unit(
         long: UnitCountPattern(
           _locale,
-          'տրոյական ունկիներ',
+          'տրոյական ունկի',
           one: '{0} տրոյական ունկի',
           other: '{0} տրոյական ունկի',
         ),
         short: UnitCountPattern(
           _locale,
-          'տրոյ․ ունկ.',
-          one: '{0} տրոյ․ ունկ.',
-          other: '{0} տրոյ․ ունկ.',
+          'տրոյ․ ու',
+          one: '{0} տ․ ու',
+          other: '{0} տ․ ու',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'տրոյ․ ունկ.',
-          one: '{0} տրոյ․ ունկ.',
-          other: '{0} տրոյ․ ունկ.',
+          'տ․ ու',
+          one: '{0}տ․ու',
+          other: '{0}տ․ու',
         ),
       );
 
@@ -5185,7 +5218,7 @@ class UnitsHy implements Units {
   Unit get massCarat => Unit(
         long: UnitCountPattern(
           _locale,
-          'կարատներ',
+          'կարատ',
           one: '{0} կարատ',
           other: '{0} կարատ',
         ),
@@ -5198,8 +5231,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կար',
-          one: '{0} կար',
-          other: '{0} կար',
+          one: '{0}կար',
+          other: '{0}կար',
         ),
       );
 
@@ -5207,7 +5240,7 @@ class UnitsHy implements Units {
   Unit get massDalton => Unit(
         long: UnitCountPattern(
           _locale,
-          'դալտոններ',
+          'դալտոն',
           one: '{0} դալտոն',
           other: '{0} դալտոն',
         ),
@@ -5229,7 +5262,7 @@ class UnitsHy implements Units {
   Unit get massEarthMass => Unit(
         long: UnitCountPattern(
           _locale,
-          'երկրային զանգվածներ',
+          'երկրային զանգված',
           one: '{0} երկրային զանգված',
           other: '{0} արևային զանգված',
         ),
@@ -5242,8 +5275,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} երկրային զանգված',
-          other: '{0} M⊕',
+          one: '{0}M⊕',
+          other: '{0}M⊕',
         ),
       );
 
@@ -5251,7 +5284,7 @@ class UnitsHy implements Units {
   Unit get massSolarMass => Unit(
         long: UnitCountPattern(
           _locale,
-          'արեգակնային զանգվածներ',
+          'արեգակնային զանգված',
           one: '{0} արեգակնային զանգված',
           other: '{0} արեգակնային զանգված',
         ),
@@ -5264,8 +5297,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} արեգակնային զանգված',
-          other: '{0} M☉',
+          one: '{0}M☉',
+          other: '{0}M☉',
         ),
       );
 
@@ -5295,7 +5328,7 @@ class UnitsHy implements Units {
   Unit get powerGigawatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'գիգավատտեր',
+          'գիգավատտ',
           one: '{0} գիգավատտ',
           other: '{0} գիգավատտ',
         ),
@@ -5317,7 +5350,7 @@ class UnitsHy implements Units {
   Unit get powerMegawatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'մեգավատտեր',
+          'մեգավատտ',
           one: '{0} մեգավատտ',
           other: '{0} մեգավատտ',
         ),
@@ -5339,7 +5372,7 @@ class UnitsHy implements Units {
   Unit get powerKilowatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլովատտեր',
+          'կիլովատտ',
           one: '{0} կիլովատտ',
           other: '{0} կիլովատտ',
         ),
@@ -5361,7 +5394,7 @@ class UnitsHy implements Units {
   Unit get powerWatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'վատտեր',
+          'վատտ',
           one: '{0} վատտ',
           other: '{0} վատտ',
         ),
@@ -5383,7 +5416,7 @@ class UnitsHy implements Units {
   Unit get powerMilliwatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիվատտեր',
+          'միլիվատտ',
           one: '{0} միլիվատտ',
           other: '{0} միլիվատտ',
         ),
@@ -5396,8 +5429,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մՎտ',
-          one: '{0} մՎտ',
-          other: '{0} մՎտ',
+          one: '{0}մՎտ',
+          other: '{0}մՎտ',
         ),
       );
 
@@ -5405,7 +5438,7 @@ class UnitsHy implements Units {
   Unit get powerHorsepower => Unit(
         long: UnitCountPattern(
           _locale,
-          'ձիաուժեր',
+          'ձիաուժ',
           one: '{0} ձիաուժ',
           other: '{0} ձիաուժ',
         ),
@@ -5427,9 +5460,9 @@ class UnitsHy implements Units {
   Unit get pressureMillimeterOfhg => Unit(
         long: UnitCountPattern(
           _locale,
-          'սնդիկի սյան միլիմետրեր',
-          one: '{0} միլիմետր սնդիկի սյուն',
-          other: '{0} միլիմետր սնդիկի սյուն',
+          'միլիմետր՝ սնդիկի սյան',
+          one: '{0} միլիմետր՝ սնդիկի սյան',
+          other: '{0} միլիմետր՝ սնդիկի սյան',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5449,7 +5482,7 @@ class UnitsHy implements Units {
   Unit get pressurePoundForcePerSquareInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'ֆունտեր քառակուսի դյույմի վրա',
+          'ֆունտ քառակուսի դյույմի վրա',
           one: '{0} ֆունտ քառակուսի դյույմի վրա',
           other: '{0} ֆունտ քառակուսի դյույմի վրա',
         ),
@@ -5471,19 +5504,19 @@ class UnitsHy implements Units {
   Unit get pressureInchOfhg => Unit(
         long: UnitCountPattern(
           _locale,
-          'սնդիկի սյան դյույմեր',
-          one: '{0} դյույմ սնդիկի սյուն',
-          other: '{0} դյույմ սնդիկի սյուն',
+          'մատնաչափ՝ սնդիկի սյան',
+          one: '{0} մատնաչափ՝ սնդիկի սյան',
+          other: '{0} մատնաչափ՝ սնդիկի սյան',
         ),
         short: UnitCountPattern(
           _locale,
-          'դյույմ ս.ս.',
-          one: '{0} դյմ. ս.ս.',
-          other: '{0} դյմ. ս.ս.',
+          'մատ. ս.ս.',
+          one: '{0} մատ. ս.ս.',
+          other: '{0} մատ. ս.ս.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'դյույմ ս.ս.',
+          'մատ. ս.ս.',
           one: '{0}" ս.ս.',
           other: '{0}" ս. ս.',
         ),
@@ -5493,7 +5526,7 @@ class UnitsHy implements Units {
   Unit get pressureBar => Unit(
         long: UnitCountPattern(
           _locale,
-          'բարեր',
+          'բար',
           one: '{0} բար',
           other: '{0} բար',
         ),
@@ -5506,8 +5539,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'բար',
-          one: '{0} բար',
-          other: '{0} բար',
+          one: '{0}բար',
+          other: '{0}բար',
         ),
       );
 
@@ -5515,7 +5548,7 @@ class UnitsHy implements Units {
   Unit get pressureMillibar => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիբարեր',
+          'միլիբար',
           one: '{0} միլիբար',
           other: '{0} միլիբար',
         ),
@@ -5528,8 +5561,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մբար',
-          one: '{0} մբ',
-          other: '{0} մբ',
+          one: '{0}մբ',
+          other: '{0}մբ',
         ),
       );
 
@@ -5537,7 +5570,7 @@ class UnitsHy implements Units {
   Unit get pressureAtmosphere => Unit(
         long: UnitCountPattern(
           _locale,
-          'մթնոլորտներ',
+          'մթնոլորտ',
           one: '{0} մթնոլորտ',
           other: '{0} մթնոլորտ',
         ),
@@ -5550,8 +5583,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մթն',
-          one: '{0} մթն',
-          other: '{0} մթն',
+          one: '{0}մթն',
+          other: '{0}մթն',
         ),
       );
 
@@ -5559,7 +5592,7 @@ class UnitsHy implements Units {
   Unit get pressurePascal => Unit(
         long: UnitCountPattern(
           _locale,
-          'պասկալներ',
+          'պասկալ',
           one: '{0} պասկալ',
           other: '{0} պասկալ',
         ),
@@ -5572,8 +5605,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Պա',
-          one: '{0} Պա',
-          other: '{0} Պա',
+          one: '{0}Պա',
+          other: '{0}Պա',
         ),
       );
 
@@ -5594,8 +5627,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'հՊա',
-          one: '{0} հՊա',
-          other: '{0} հՊա',
+          one: '{0}հՊա',
+          other: '{0}հՊա',
         ),
       );
 
@@ -5603,7 +5636,7 @@ class UnitsHy implements Units {
   Unit get pressureKilopascal => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոպասկալներ',
+          'կիլոպասկալ',
           one: '{0} կիլոպասկալ',
           other: '{0} կիլոպասկալ',
         ),
@@ -5616,8 +5649,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կՊա',
-          one: '{0} կՊա',
-          other: '{0} կՊա',
+          one: '{0}կՊա',
+          other: '{0}կՊա',
         ),
       );
 
@@ -5625,7 +5658,7 @@ class UnitsHy implements Units {
   Unit get pressureMegapascal => Unit(
         long: UnitCountPattern(
           _locale,
-          'մեգապասկալներ',
+          'մեգապասկալ',
           one: '{0} մեգապասկալ',
           other: '{0} մեգապասկալ',
         ),
@@ -5638,8 +5671,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ՄՊա',
-          one: '{0} ՄՊա',
-          other: '{0} ՄՊա',
+          one: '{0}ՄՊա',
+          other: '{0}ՄՊա',
         ),
       );
 
@@ -5647,7 +5680,7 @@ class UnitsHy implements Units {
   Unit get speedKilometerPerHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'կիլոմետրեր ժամում',
+          'կիլոմետր ժամում',
           one: '{0} կիլոմետր ժամում',
           other: '{0} կիլոմետր ժամում',
         ),
@@ -5669,7 +5702,7 @@ class UnitsHy implements Units {
   Unit get speedMeterPerSecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'մետրեր վայրկյանում',
+          'մետր վայրկյանում',
           one: '{0} մետր վայրկյանում',
           other: '{0} մետր վայրկյանում',
         ),
@@ -5691,7 +5724,7 @@ class UnitsHy implements Units {
   Unit get speedMilePerHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'մղոններ ժամում',
+          'մղոն ժամում',
           one: '{0} մղոն ժամում',
           other: '{0} մղոն ժամում',
         ),
@@ -5713,7 +5746,7 @@ class UnitsHy implements Units {
   Unit get speedKnot => Unit(
         long: UnitCountPattern(
           _locale,
-          'հանգույցներ',
+          'հանգույց',
           one: '{0} հանգույց',
           other: '{0} հանգույց',
         ),
@@ -5757,7 +5790,7 @@ class UnitsHy implements Units {
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
-          '°',
+          'ջերմաստիճան',
           one: '{0}°',
           other: '{0}°',
         ),
@@ -5779,7 +5812,7 @@ class UnitsHy implements Units {
   Unit get temperatureCelsius => Unit(
         long: UnitCountPattern(
           _locale,
-          'աստիճաններ ըստ Ցելսիուսի',
+          'աստիճան ըստ Ցելսիուսի',
           one: '{0} աստիճան ըստ Ցելսիուսի',
           other: '{0} աստիճան ըստ Ցելսիուսի',
         ),
@@ -5801,7 +5834,7 @@ class UnitsHy implements Units {
   Unit get temperatureFahrenheit => Unit(
         long: UnitCountPattern(
           _locale,
-          'աստիճաններ ըստ Ֆարենհայթի',
+          'աստիճան ըստ Ֆարենհայթի',
           one: '{0} աստիճան ըստ Ֆարենհայթի',
           other: '{0} աստիճան ըստ Ֆարենհայթի',
         ),
@@ -5823,7 +5856,7 @@ class UnitsHy implements Units {
   Unit get temperatureKelvin => Unit(
         long: UnitCountPattern(
           _locale,
-          'կելվիններ',
+          'կելվին',
           one: '{0} կելվին',
           other: '{0} կելվին',
         ),
@@ -5836,8 +5869,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Կ',
-          one: '{0} Կ',
-          other: '{0} Կ',
+          one: '{0}Կ',
+          other: '{0}Կ',
         ),
       );
 
@@ -5845,7 +5878,7 @@ class UnitsHy implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'ֆունտ-ֆուտեր',
+          'ֆունտ-ֆուտ',
           one: '{0} ֆունտ-ֆուտ',
           other: '{0} ֆունտ-ֆուտ',
         ),
@@ -5867,7 +5900,7 @@ class UnitsHy implements Units {
   Unit get torqueNewtonMeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'նյուտոն-մետրեր',
+          'նյուտոն-մետր',
           one: '{0} նյուտոն-մետր',
           other: '{0} նյուտոն-մետր',
         ),
@@ -5889,7 +5922,7 @@ class UnitsHy implements Units {
   Unit get volumeCubicKilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'խորանարդ կիլոմետրեր',
+          'խորանարդ կիլոմետր',
           one: '{0} խորանարդ կիլոմետր',
           other: '{0} խորանարդ կիլոմետր',
         ),
@@ -5911,7 +5944,7 @@ class UnitsHy implements Units {
   Unit get volumeCubicMeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'խորանարդ մետրեր',
+          'խորանարդ մետր',
           one: '{0} խորանարդ մետր',
           other: '{0} խորանարդ մետր',
         ),
@@ -5933,7 +5966,7 @@ class UnitsHy implements Units {
   Unit get volumeCubicCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'խորանարդ սանտիմետրեր',
+          'խորանարդ սանտիմետր',
           one: '{0} խորանարդ սանտիմետր',
           other: '{0} խորանարդ սանտիմետր',
         ),
@@ -5955,7 +5988,7 @@ class UnitsHy implements Units {
   Unit get volumeCubicMile => Unit(
         long: UnitCountPattern(
           _locale,
-          'խորանարդ մղոններ',
+          'խորանարդ մղոն',
           one: '{0} խորանարդ մղոն',
           other: '{0} խորանարդ մղոն',
         ),
@@ -5977,7 +6010,7 @@ class UnitsHy implements Units {
   Unit get volumeCubicYard => Unit(
         long: UnitCountPattern(
           _locale,
-          'խորանարդ յարդեր',
+          'խորանարդ յարդ',
           one: '{0} խորանարդ յարդ',
           other: '{0} խորանարդ յարդ',
         ),
@@ -5990,8 +6023,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'յրդ³',
-          one: '{0} յրդ³',
-          other: '{0} յրդ³',
+          one: '{0}յրդ³',
+          other: '{0}յրդ³',
         ),
       );
 
@@ -6012,8 +6045,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ֆտ³',
-          one: '{0} ֆտ³',
-          other: '{0} ֆտ³',
+          one: '{0}ֆտ³',
+          other: '{0}ֆտ³',
         ),
       );
 
@@ -6021,7 +6054,7 @@ class UnitsHy implements Units {
   Unit get volumeCubicInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'խորանարդ մատնաչափեր',
+          'խորանարդ մատնաչափ',
           one: '{0} խորանարդ մատնաչափ',
           other: '{0} խորանարդ մատնաչափ',
         ),
@@ -6034,8 +6067,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'մատ³',
-          one: '{0} մատ³',
-          other: '{0} մատ³',
+          one: '{0}մատ³',
+          other: '{0}մատ³',
         ),
       );
 
@@ -6043,7 +6076,7 @@ class UnitsHy implements Units {
   Unit get volumeMegaliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'մեգալիտրեր',
+          'մեգալիտր',
           one: '{0} մեգալիտր',
           other: '{0} մեգալիտր',
         ),
@@ -6056,8 +6089,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Մլ',
-          one: '{0} Մլ',
-          other: '{0} Մլ',
+          one: '{0}Մլ',
+          other: '{0}Մլ',
         ),
       );
 
@@ -6065,7 +6098,7 @@ class UnitsHy implements Units {
   Unit get volumeHectoliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'հեկտոլիտրեր',
+          'հեկտոլիտր',
           one: '{0} հեկտոլիտր',
           other: '{0} հեկտոլիտր',
         ),
@@ -6078,8 +6111,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'հլ',
-          one: '{0} հլ',
-          other: '{0} հլ',
+          one: '{0}հլ',
+          other: '{0}հլ',
         ),
       );
 
@@ -6087,7 +6120,7 @@ class UnitsHy implements Units {
   Unit get volumeLiter => Unit(
         long: UnitCountPattern(
           _locale,
-          'լիտրեր',
+          'լիտր',
           one: '{0} լիտր',
           other: '{0} լիտր',
         ),
@@ -6109,7 +6142,7 @@ class UnitsHy implements Units {
   Unit get volumeDeciliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'դեցիլիտրեր',
+          'դեցիլիտր',
           one: '{0} դեցիլիտր',
           other: '{0} դեցիլիտր',
         ),
@@ -6122,8 +6155,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'դլ',
-          one: '{0} դլ',
-          other: '{0} դլ',
+          one: '{0}դլ',
+          other: '{0}դլ',
         ),
       );
 
@@ -6131,7 +6164,7 @@ class UnitsHy implements Units {
   Unit get volumeCentiliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'սանտիլիտրեր',
+          'սանտիլիտր',
           one: '{0} սանտիլիտր',
           other: '{0} սանտիլիտր',
         ),
@@ -6144,8 +6177,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'սլ',
-          one: '{0} սլ',
-          other: '{0} սլ',
+          one: '{0}սլ',
+          other: '{0}սլ',
         ),
       );
 
@@ -6153,7 +6186,7 @@ class UnitsHy implements Units {
   Unit get volumeMilliliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'միլիլիտրեր',
+          'միլիլիտր',
           one: '{0} միլիլիտր',
           other: '{0} միլիլիտր',
         ),
@@ -6175,7 +6208,7 @@ class UnitsHy implements Units {
   Unit get volumePintMetric => Unit(
         long: UnitCountPattern(
           _locale,
-          'մետրիկ փինթեր',
+          'մետրիկ փինթ',
           one: '{0} մետրիկ փինթ',
           other: '{0} մետրիկ փինթ',
         ),
@@ -6197,7 +6230,7 @@ class UnitsHy implements Units {
   Unit get volumeCupMetric => Unit(
         long: UnitCountPattern(
           _locale,
-          'մետրիկ բաժակներ',
+          'մետրիկ բաժակ',
           one: '{0} մետրիկ բաժակ',
           other: '{0} մետրիկ բաժակ',
         ),
@@ -6219,7 +6252,7 @@ class UnitsHy implements Units {
   Unit get volumeAcreFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'ակրոֆուտեր',
+          'ակրոֆուտ',
           one: '{0} ակրոֆուտ',
           other: '{0} ակրոֆուտ',
         ),
@@ -6247,15 +6280,15 @@ class UnitsHy implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'bu',
-          one: '{0} բուշել',
-          other: '{0} bu',
+          'բուշել',
+          one: '{0} բու',
+          other: '{0} բու',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'bu',
-          one: '{0} բուշել',
-          other: '{0} bu',
+          'բուշել',
+          one: '{0}բու',
+          other: '{0}բու',
         ),
       );
 
@@ -6263,7 +6296,7 @@ class UnitsHy implements Units {
   Unit get volumeGallon => Unit(
         long: UnitCountPattern(
           _locale,
-          'գալոններ',
+          'գալոն',
           one: '{0} գալոն',
           other: '{0} գալոն',
         ),
@@ -6276,8 +6309,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'գալ',
-          one: '{0} գալ',
-          other: '{0} գալ',
+          one: '{0}գալ',
+          other: '{0}գալ',
         ),
       );
 
@@ -6285,7 +6318,7 @@ class UnitsHy implements Units {
   Unit get volumeGallonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'անգլիական գալոններ',
+          'անգլիական գալոն',
           one: '{0} անգլիական գալոն',
           other: '{0} անգլիական գալոն',
         ),
@@ -6307,7 +6340,7 @@ class UnitsHy implements Units {
   Unit get volumeQuart => Unit(
         long: UnitCountPattern(
           _locale,
-          'քվարտեր',
+          'քվարտ',
           one: '{0} քվարտ',
           other: '{0} քվարտ',
         ),
@@ -6320,8 +6353,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'քվարտ',
-          one: '{0} քվարտ',
-          other: '{0} քվարտ',
+          one: '{0}քվարտ',
+          other: '{0}քվարտ',
         ),
       );
 
@@ -6329,21 +6362,21 @@ class UnitsHy implements Units {
   Unit get volumePint => Unit(
         long: UnitCountPattern(
           _locale,
-          'փինթեր',
+          'փինթ',
           one: '{0} փինթ',
           other: '{0} փինթ',
         ),
         short: UnitCountPattern(
           _locale,
-          'փինթեր',
+          'փինթ',
           one: '{0} փինթ',
           other: '{0} փինթ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'փինթեր',
-          one: '{0} փինթ',
-          other: '{0} փինթ',
+          'փինթ',
+          one: '{0}փինթ',
+          other: '{0}փինթ',
         ),
       );
 
@@ -6351,21 +6384,21 @@ class UnitsHy implements Units {
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
           _locale,
-          'բաժակներ',
+          'բաժակ',
           one: '{0} բաժակ',
           other: '{0} բաժակ',
         ),
         short: UnitCountPattern(
           _locale,
-          'բաժակներ',
+          'բաժակ',
           one: '{0} բաժ․',
           other: '{0} բաժ․',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'բաժակներ',
-          one: '{0} բաժ․',
-          other: '{0} բաժ․',
+          'բաժ․',
+          one: '{0}բաժ․',
+          other: '{0}բաժ․',
         ),
       );
 
@@ -6373,21 +6406,21 @@ class UnitsHy implements Units {
   Unit get volumeFluidOunce => Unit(
         long: UnitCountPattern(
           _locale,
-          'հեղուկ ունկիներ',
+          'հեղուկ ունկի',
           one: '{0} հեղուկ ունկի',
           other: '{0} հեղուկ ունկի',
         ),
         short: UnitCountPattern(
           _locale,
-          'հղ․ ունկ․',
-          one: '{0} հղ. ունկ․',
-          other: '{0} հղ. ունկ․',
+          'հղ․ ու',
+          one: '{0} հղ. ու',
+          other: '{0} հղ. ու',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'հղ․ ունկ․',
-          one: '{0} հղ. ունկ․',
-          other: '{0} հղ. ունկ․',
+          'հղ․ ու',
+          one: '{0}հղ.ու',
+          other: '{0}հղ.ու',
         ),
       );
 
@@ -6395,7 +6428,7 @@ class UnitsHy implements Units {
   Unit get volumeFluidOunceImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'անգլիական հեղուկ ունկիներ',
+          'անգլիական հեղուկ ունկի',
           one: '{0} անգլիական հեղուկ ունկի',
           other: '{0} անգլիական հեղուկ ունկի',
         ),
@@ -6430,8 +6463,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ճգ.',
-          one: '{0} ճգ.',
-          other: '{0} ճգ.',
+          one: '{0}ճգ.',
+          other: '{0}ճգ.',
         ),
       );
 
@@ -6461,7 +6494,7 @@ class UnitsHy implements Units {
   Unit get volumeBarrel => Unit(
         long: UnitCountPattern(
           _locale,
-          'տակառներ',
+          'տակառ',
           one: '{0} տակառ',
           other: '{0} տակառ',
         ),
@@ -6474,8 +6507,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'տակառ',
-          one: '{0} տկռ',
-          other: '{0} տկռ',
+          one: '{0}տկռ',
+          other: '{0}տկռ',
         ),
       );
 
@@ -6496,8 +6529,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ագ․',
-          one: '{0} ագ․',
-          other: '{0} ագ․',
+          one: '{0}ագ․',
+          other: '{0}ագ․',
         ),
       );
 
@@ -6540,8 +6573,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'կաթիլ',
-          one: '{0} կաթիլ',
-          other: '{0} կաթիլ',
+          one: '{0}կթլ',
+          other: '{0}կթլ',
         ),
       );
 
@@ -6555,15 +6588,15 @@ class UnitsHy implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'հեղուկ դրամ',
+          'դրամ',
           one: '{0} հեղուկ դրամ',
           other: '{0} հեղուկ դրամ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'հեղուկ դրամ',
-          one: '{0} հեղուկ դրամ',
-          other: '{0} հեղուկ դրամ',
+          'դրամ',
+          one: '{0}հեղ. դր.',
+          other: '{0}հեղ. դր.',
         ),
       );
 
@@ -6584,8 +6617,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ջիգեր',
-          one: '{0} ջիգեր',
-          other: '{0} ջիգեր',
+          one: '{0}ջիգեր',
+          other: '{0}ջիգեր',
         ),
       );
 
@@ -6606,8 +6639,8 @@ class UnitsHy implements Units {
         narrow: UnitCountPattern(
           _locale,
           'պտղունց',
-          one: '{0} պտղունց',
-          other: '{0} պտղունց',
+          one: '{0}պտղունց',
+          other: '{0}պտղունց',
         ),
       );
 
@@ -6652,6 +6685,72 @@ class UnitsHy implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'մաս միլիարդի վրա',
+          one: '{0} մաս միլիարդի վրա',
+          other: '{0} մաս միլիարդի վրա',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'մաս/միլիարդ',
+          one: '{0} մմլրդվ',
+          other: '{0} մմլրդվ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'մմլրդվ',
+          one: '{0}մմլրդվ',
+          other: '{0}մմլրդվ',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'գիշեր',
+          one: '{0} գիշեր',
+          other: '{0} գիշեր',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'գիշեր',
+          one: '{0} գիշեր',
+          other: '{0} գիշեր',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'գիշեր',
+          one: '{0}/գ․',
+          other: '{0}/գ․',
         ),
       );
 }
@@ -7853,7 +7952,7 @@ class TerritoriesHy implements Territories {
     ),
     'BW': Territory(
       'BW',
-      'Բոթսվանա',
+      'Բոտսվանա',
     ),
     'BY': Territory(
       'BY',
@@ -8632,7 +8731,7 @@ class TerritoriesHy implements Territories {
     ),
     'TH': Territory(
       'TH',
-      'Թայլանդ',
+      'Թաիլանդ',
     ),
     'TJ': Territory(
       'TJ',
@@ -9643,9 +9742,6 @@ class TimeZonesHy extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Չիտա',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Չոյբալսան',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Կոլոմբո',
     ),
@@ -10320,14 +10416,6 @@ class TimeZonesHy extends TimeZones {
         daylight: 'Չինաստանի ամառային ժամանակ',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Չոյբալսանի ժամանակ',
-        standard: 'Չոյբալսանի ստանդարտ ժամանակ',
-        daylight: 'Չոյբալսանի ամառային ժամանակ',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10604,6 +10692,12 @@ class TimeZonesHy extends TimeZones {
         generic: 'Ճապոնիայի ժամանակ',
         standard: 'Ճապոնիայի ստանդարտ ժամանակ',
         daylight: 'Ճապոնիայի ամառային ժամանակ',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Ղազախստանի ժամանակ',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

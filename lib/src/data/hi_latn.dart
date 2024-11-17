@@ -896,10 +896,6 @@ class LanguagesHiLatn extends Languages {
       'goh',
       'Old High German',
     ),
-    'gom': Language(
-      'gom',
-      'Goan Konkani',
-    ),
     'gon': Language(
       'gon',
       'Gondi',
@@ -2906,6 +2902,10 @@ class ScriptsHiLatn extends Scripts {
       'Ethi',
       'Ethiopic',
     ),
+    'Gara': Script(
+      'Gara',
+      'Garay',
+    ),
     'Geok': Script(
       'Geok',
       'Georgian Khutsuri',
@@ -2941,6 +2941,10 @@ class ScriptsHiLatn extends Scripts {
     'Gujr': Script(
       'Gujr',
       'Gujarati',
+    ),
+    'Gukh': Script(
+      'Gukh',
+      'Gurung Khema',
     ),
     'Guru': Script(
       'Guru',
@@ -3067,6 +3071,10 @@ class ScriptsHiLatn extends Scripts {
     'Kpel': Script(
       'Kpel',
       'Kpelle',
+    ),
+    'Krai': Script(
+      'Krai',
+      'Kirat Rai',
     ),
     'Kthi': Script(
       'Kthi',
@@ -3236,6 +3244,10 @@ class ScriptsHiLatn extends Scripts {
       'Olck',
       'Ol Chiki',
     ),
+    'Onao': Script(
+      'Onao',
+      'Ol Onal',
+    ),
     'Orkh': Script(
       'Orkh',
       'Orkhon',
@@ -3377,6 +3389,10 @@ class ScriptsHiLatn extends Scripts {
       'Sund',
       'Sundanese',
     ),
+    'Sunu': Script(
+      'Sunu',
+      'Sunuwar',
+    ),
     'Sylo': Script(
       'Sylo',
       'Syloti Nagri',
@@ -3461,9 +3477,17 @@ class ScriptsHiLatn extends Scripts {
       'Tnsa',
       'Tangsa',
     ),
+    'Todr': Script(
+      'Todr',
+      'Todhri',
+    ),
     'Toto': Script(
       'Toto',
       'Toto',
+    ),
+    'Tutg': Script(
+      'Tutg',
+      'Tulu-Tigalari',
     ),
     'Ugar': Script(
       'Ugar',
@@ -3998,7 +4022,7 @@ class UnitsHiLatn implements Units {
           _locale,
           'g-force',
           one: '{0}G',
-          other: '{0}Gs',
+          other: '{0}G',
         ),
       );
 
@@ -4188,13 +4212,13 @@ class UnitsHiLatn implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'metres²',
+          'm²',
           one: '{0} m²',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'metres²',
+          'm²',
           one: '{0}m²',
           other: '{0}m²',
         ),
@@ -5502,7 +5526,7 @@ class UnitsHiLatn implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'kilowatt-hour per 100 kilometres',
+          'kilowatt-hours per 100 kilometres',
           one: '{0} kilowatt-hour per 100 kilometres',
           other: '{0} kilowatt-hours per 100 kilometres',
         ),
@@ -5838,13 +5862,13 @@ class UnitsHiLatn implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'metres',
+          'm',
           one: '{0} m',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'metre',
+          'm',
           one: '{0}m',
           other: '{0}m',
         ),
@@ -5854,7 +5878,7 @@ class UnitsHiLatn implements Units {
   Unit get lengthDecimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'decimetre',
+          'decimetres',
           one: '{0} decimetre',
           other: '{0} decimetres',
         ),
@@ -6360,8 +6384,8 @@ class UnitsHiLatn implements Units {
   Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
-          'tonnes',
-          one: '{0} tonne',
+          'metric tonnes',
+          one: '{0} metric ton',
           other: '{0} tonnes',
         ),
         short: UnitCountPattern(
@@ -6471,7 +6495,7 @@ class UnitsHiLatn implements Units {
         long: UnitCountPattern(
           _locale,
           'tons',
-          one: '{0} ton',
+          one: '{0} tonne',
           other: '{0} tons',
         ),
         short: UnitCountPattern(
@@ -6593,8 +6617,8 @@ class UnitsHiLatn implements Units {
         narrow: UnitCountPattern(
           _locale,
           'carat',
-          one: '{0}CD',
-          other: '{0}CD',
+          one: '{0}ct',
+          other: '{0}ct',
         ),
       );
 
@@ -6675,8 +6699,8 @@ class UnitsHiLatn implements Units {
         short: UnitCountPattern(
           _locale,
           'grains',
-          one: '{0} grains',
-          other: '{0} grains',
+          one: '{0} gr',
+          other: '{0} gr',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7187,8 +7211,8 @@ class UnitsHiLatn implements Units {
         narrow: UnitCountPattern(
           _locale,
           '°C',
-          one: '{0}°',
-          other: '{0}°',
+          one: '{0}°C',
+          other: '{0}°C',
         ),
       );
 
@@ -7671,8 +7695,8 @@ class UnitsHiLatn implements Units {
         narrow: UnitCountPattern(
           _locale,
           'US gal',
-          one: '{0}galUS',
-          other: '{0}galUS',
+          one: '{0}USgal',
+          other: '{0}USgal',
         ),
       );
 
@@ -7714,9 +7738,9 @@ class UnitsHiLatn implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'qt',
-          one: '{0}qt',
-          other: '{0}qt',
+          'USqt',
+          one: '{0}USqt',
+          other: '{0}USqt',
         ),
       );
 
@@ -8047,6 +8071,72 @@ class UnitsHiLatn implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0}light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parts per billion',
+          one: '{0} part per billion',
+          other: '{0} parts per billion',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'parts/billion',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0}night',
+          other: '{0}nights',
         ),
       );
 }
@@ -10310,6 +10400,9 @@ class TimeZonesHiLatn extends TimeZones {
     'Asia/Calcutta': TimeZoneNames(
       exemplarCity: 'Kolkata',
     ),
+    'Asia/Hovd': TimeZoneNames(
+      exemplarCity: 'Khovd',
+    ),
     'Asia/Katmandu': TimeZoneNames(
       exemplarCity: 'Kathmandu',
     ),
@@ -10319,8 +10412,11 @@ class TimeZonesHiLatn extends TimeZones {
     'Asia/Qostanay': TimeZoneNames(
       exemplarCity: 'Qostanay',
     ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: 'Kyzylorda',
+    ),
     'Asia/Rangoon': TimeZoneNames(
-      exemplarCity: 'Rangoon',
+      exemplarCity: 'Yangon',
     ),
     'Asia/Saigon': TimeZoneNames(
       exemplarCity: 'Saigon',
@@ -10655,14 +10751,6 @@ class TimeZonesHiLatn extends TimeZones {
         daylight: 'China Daylight Time',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choibalsan Time',
-        standard: 'Choibalsan Standard Time',
-        daylight: 'Choibalsan Summer Time',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10888,9 +10976,9 @@ class TimeZonesHiLatn extends TimeZones {
     'Hovd': MetaZone(
       code: 'Hovd',
       long: TimeZoneName(
-        generic: 'Hovd Time',
-        standard: 'Hovd Standard Time',
-        daylight: 'Hovd Summer Time',
+        generic: 'Khovd Time',
+        standard: 'Khovd Standard Time',
+        daylight: 'Khovd Summer Time',
       ),
     ),
     'India': MetaZone(
@@ -10970,6 +11058,12 @@ class TimeZonesHiLatn extends TimeZones {
         generic: 'Petropavlovsk-Kamchatski Time',
         standard: 'Petropavlovsk-Kamchatski Standard Time',
         daylight: 'Petropavlovsk-Kamchatski Summer Time',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakhstan Time',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

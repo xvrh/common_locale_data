@@ -896,10 +896,6 @@ class LanguagesEnER extends Languages {
       'goh',
       'Old High German',
     ),
-    'gom': Language(
-      'gom',
-      'Goan Konkani',
-    ),
     'gon': Language(
       'gon',
       'Gondi',
@@ -2906,6 +2902,10 @@ class ScriptsEnER extends Scripts {
       'Ethi',
       'Ethiopic',
     ),
+    'Gara': Script(
+      'Gara',
+      'Garay',
+    ),
     'Geok': Script(
       'Geok',
       'Georgian Khutsuri',
@@ -2941,6 +2941,10 @@ class ScriptsEnER extends Scripts {
     'Gujr': Script(
       'Gujr',
       'Gujarati',
+    ),
+    'Gukh': Script(
+      'Gukh',
+      'Gurung Khema',
     ),
     'Guru': Script(
       'Guru',
@@ -3067,6 +3071,10 @@ class ScriptsEnER extends Scripts {
     'Kpel': Script(
       'Kpel',
       'Kpelle',
+    ),
+    'Krai': Script(
+      'Krai',
+      'Kirat Rai',
     ),
     'Kthi': Script(
       'Kthi',
@@ -3236,6 +3244,10 @@ class ScriptsEnER extends Scripts {
       'Olck',
       'Ol Chiki',
     ),
+    'Onao': Script(
+      'Onao',
+      'Ol Onal',
+    ),
     'Orkh': Script(
       'Orkh',
       'Orkhon',
@@ -3377,6 +3389,10 @@ class ScriptsEnER extends Scripts {
       'Sund',
       'Sundanese',
     ),
+    'Sunu': Script(
+      'Sunu',
+      'Sunuwar',
+    ),
     'Sylo': Script(
       'Sylo',
       'Syloti Nagri',
@@ -3461,9 +3477,17 @@ class ScriptsEnER extends Scripts {
       'Tnsa',
       'Tangsa',
     ),
+    'Todr': Script(
+      'Todr',
+      'Todhri',
+    ),
     'Toto': Script(
       'Toto',
       'Toto',
+    ),
+    'Tutg': Script(
+      'Tutg',
+      'Tulu-Tigalari',
     ),
     'Ugar': Script(
       'Ugar',
@@ -3998,7 +4022,7 @@ class UnitsEnER implements Units {
           _locale,
           'g-force',
           one: '{0}G',
-          other: '{0}Gs',
+          other: '{0}G',
         ),
       );
 
@@ -4188,13 +4212,13 @@ class UnitsEnER implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'metres²',
+          'm²',
           one: '{0} m²',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'metres²',
+          'm²',
           one: '{0}m²',
           other: '{0}m²',
         ),
@@ -5502,7 +5526,7 @@ class UnitsEnER implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'kilowatt-hour per 100 kilometres',
+          'kilowatt-hours per 100 kilometres',
           one: '{0} kilowatt-hour per 100 kilometres',
           other: '{0} kilowatt-hours per 100 kilometres',
         ),
@@ -5838,13 +5862,13 @@ class UnitsEnER implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'metres',
+          'm',
           one: '{0} m',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'metre',
+          'm',
           one: '{0}m',
           other: '{0}m',
         ),
@@ -5854,7 +5878,7 @@ class UnitsEnER implements Units {
   Unit get lengthDecimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'decimetre',
+          'decimetres',
           one: '{0} decimetre',
           other: '{0} decimetres',
         ),
@@ -5920,7 +5944,7 @@ class UnitsEnER implements Units {
   Unit get lengthMicrometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'micrometre',
+          'micrometres',
           one: '{0} micrometre',
           other: '{0} micrometres',
         ),
@@ -6593,8 +6617,8 @@ class UnitsEnER implements Units {
         narrow: UnitCountPattern(
           _locale,
           'carat',
-          one: '{0}CD',
-          other: '{0}CD',
+          one: '{0}ct',
+          other: '{0}ct',
         ),
       );
 
@@ -6675,8 +6699,8 @@ class UnitsEnER implements Units {
         short: UnitCountPattern(
           _locale,
           'grains',
-          one: '{0} grains',
-          other: '{0} grains',
+          one: '{0} gr',
+          other: '{0} gr',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7152,7 +7176,7 @@ class UnitsEnER implements Units {
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
-          'degree',
+          'degrees',
           one: '{0} degree temperature',
           other: '{0} degrees temperature',
         ),
@@ -7187,8 +7211,8 @@ class UnitsEnER implements Units {
         narrow: UnitCountPattern(
           _locale,
           '°C',
-          one: '{0}°',
-          other: '{0}°',
+          one: '{0}°C',
+          other: '{0}°C',
         ),
       );
 
@@ -7671,8 +7695,8 @@ class UnitsEnER implements Units {
         narrow: UnitCountPattern(
           _locale,
           'US gal',
-          one: '{0}galUS',
-          other: '{0}galUS',
+          one: '{0}USgal',
+          other: '{0}USgal',
         ),
       );
 
@@ -7714,9 +7738,9 @@ class UnitsEnER implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'qt',
-          one: '{0}qt',
-          other: '{0}qt',
+          'USqt',
+          one: '{0}USqt',
+          other: '{0}USqt',
         ),
       );
 
@@ -7878,7 +7902,7 @@ class UnitsEnER implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'US dessertspoon',
+          'US dessertspoons',
           one: '{0} US dessertspoon',
           other: '{0} US dessertspoons',
         ),
@@ -7900,7 +7924,7 @@ class UnitsEnER implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'dessertspoon',
+          'dessertspoons',
           one: '{0} dessertspoon',
           other: '{0} dessertspoons',
         ),
@@ -7929,7 +7953,7 @@ class UnitsEnER implements Units {
         short: UnitCountPattern(
           _locale,
           'drops',
-          one: '{0} drops',
+          one: '{0} drop',
           other: '{0} drops',
         ),
         narrow: UnitCountPattern(
@@ -7995,7 +8019,7 @@ class UnitsEnER implements Units {
         short: UnitCountPattern(
           _locale,
           'pinches',
-          one: '{0} pinches',
+          one: '{0} pinch',
           other: '{0} pinches',
         ),
         narrow: UnitCountPattern(
@@ -8010,7 +8034,7 @@ class UnitsEnER implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'quart',
+          'quarts',
           one: '{0} quart',
           other: '{0} quarts',
         ),
@@ -8047,6 +8071,72 @@ class UnitsEnER implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0}light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parts per billion',
+          one: '{0} part per billion',
+          other: '{0} parts per billion',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'parts/billion',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0}night',
+          other: '{0}nights',
         ),
       );
 }
@@ -10657,14 +10747,6 @@ class TimeZonesEnER extends TimeZones {
         daylight: 'China Daylight Time',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choibalsan Time',
-        standard: 'Choibalsan Standard Time',
-        daylight: 'Choibalsan Summer Time',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10966,6 +11048,12 @@ class TimeZonesEnER extends TimeZones {
         generic: 'Petropavlovsk-Kamchatski Time',
         standard: 'Petropavlovsk-Kamchatski Standard Time',
         daylight: 'Petropavlovsk-Kamchatski Summer Time',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakhstan Time',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

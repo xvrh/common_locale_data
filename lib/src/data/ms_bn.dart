@@ -259,6 +259,10 @@ class LanguagesMsBN extends Languages {
       'bla',
       'Siksika',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -1027,6 +1031,10 @@ class LanguagesMsBN extends Languages {
       'kwk',
       'Kwak’wala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Kirghiz',
@@ -1063,6 +1071,10 @@ class LanguagesMsBN extends Languages {
       'li',
       'Limburgish',
     ),
+    'lij': Language(
+      'lij',
+      'Liguria',
+    ),
     'lil': Language(
       'lil',
       'Lillooet',
@@ -1070,6 +1082,10 @@ class LanguagesMsBN extends Languages {
     'lkt': Language(
       'lkt',
       'Lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Lombard',
     ),
     'ln': Language(
       'ln',
@@ -1720,6 +1736,10 @@ class LanguagesMsBN extends Languages {
       'syr',
       'Syriac',
     ),
+    'szl': Language(
+      'szl',
+      'Silesia',
+    ),
     'ta': Language(
       'ta',
       'Tamil',
@@ -1885,9 +1905,17 @@ class LanguagesMsBN extends Languages {
       've',
       'Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Venetia',
+    ),
     'vi': Language(
       'vi',
       'Vietnam',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1933,6 +1961,10 @@ class LanguagesMsBN extends Languages {
       'xh',
       'Xhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
+    ),
     'xog': Language(
       'xog',
       'Soga',
@@ -1961,6 +1993,10 @@ class LanguagesMsBN extends Languages {
       'yue',
       'Kantonis',
       menu: 'Cina, Kantonis',
+    ),
+    'za': Language(
+      'za',
+      'Zhuang',
     ),
     'zgh': Language(
       'zgh',
@@ -2010,11 +2046,6 @@ class ScriptsMsBN extends Scripts {
     'Aghb': Script(
       'Aghb',
       'Kaukasia Albania',
-    ),
-    'Arab': Script(
-      'Arab',
-      'Arab',
-      variant: 'Perso-Arab',
     ),
     'Aran': Script(
       'Aran',
@@ -2234,10 +2265,6 @@ class ScriptsMsBN extends Scripts {
       'Ital',
       'Italik Lama',
     ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
-    ),
     'Java': Script(
       'Java',
       'Jawa',
@@ -2393,10 +2420,6 @@ class ScriptsMsBN extends Scripts {
     'Nbat': Script(
       'Nbat',
       'Nabataean',
-    ),
-    'Newa': Script(
-      'Newa',
-      'Newa',
     ),
     'Nkoo': Script(
       'Nkoo',
@@ -2589,10 +2612,6 @@ class ScriptsMsBN extends Scripts {
     'Thaa': Script(
       'Thaa',
       'Thaana',
-    ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
     ),
     'Tibt': Script(
       'Tibt',
@@ -2845,6 +2864,10 @@ class VariantsMsBN extends Variants {
     'SCOTLAND': Variant(
       'SCOTLAND',
       'Inggeris Standard Scotland',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'INGGERIS LIVERPOOL',
     ),
     'SOLBA': Variant(
       'SOLBA',
@@ -4074,7 +4097,7 @@ class UnitsMsBN implements Units {
           _locale,
           'sk',
           one: '{0}q',
-          other: '{0}q',
+          other: '{0} sk',
         ),
       );
 
@@ -7157,6 +7180,72 @@ class UnitsMsBN implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'cahaya',
+          one: '{0} light',
+          other: '{0} cahaya',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'cahaya',
+          one: '{0} light',
+          other: '{0} cahaya',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'cahaya',
+          one: '{0}light',
+          other: '{0} cahaya',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'bahagian per bilion',
+          one: '{0} part per billion',
+          other: '{0} bahagian per bilion',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'bahagian/bilion',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'bahagian/bilion',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'malam',
+          one: '{0} night',
+          other: '{0} malam',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'malam',
+          one: '{0} night',
+          other: '{0} malam',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'malam',
+          one: '{0}night',
+          other: '{0} malam',
+        ),
+      );
 }
 
 class DateFieldsMsBN implements DateFields {
@@ -7379,9 +7468,9 @@ class DateFieldsMsBN implements DateFields {
 
   @override
   MultiLength get weekOfMonth => MultiLength(
-        long: 'Week Of Month',
-        short: 'Week Of Month',
-        narrow: 'Week Of Month',
+        long: 'Minggu dalam Bulan',
+        short: 'Minggu dlm bulan',
+        narrow: 'Minggu dalam Bulan',
       );
 
   @override
@@ -7438,9 +7527,9 @@ class DateFieldsMsBN implements DateFields {
 
   @override
   MultiLength get dayOfYear => MultiLength(
-        long: 'Day Of Year',
-        short: 'Day Of Year',
-        narrow: 'Day Of Year',
+        long: 'Hari dalam Tahun',
+        short: 'Hari dlm Thn',
+        narrow: 'Hari dlm Thn',
       );
 
   @override
@@ -7452,9 +7541,9 @@ class DateFieldsMsBN implements DateFields {
 
   @override
   MultiLength get weekdayOfMonth => MultiLength(
-        long: 'Weekday Of Month',
-        short: 'Weekday Of Month',
-        narrow: 'Weekday Of Month',
+        long: 'Hari dalam Bulan',
+        short: 'Hari dlm bln',
+        narrow: 'Hari dlm bln',
       );
 
   @override
@@ -9673,14 +9762,6 @@ class TimeZonesMsBN extends TimeZones {
         daylight: 'Waktu Siang China',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Waktu Choibalsan',
-        standard: 'Waktu Piawai Choibalsan',
-        daylight: 'Waktu Musim Panas Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -9968,6 +10049,12 @@ class TimeZonesMsBN extends TimeZones {
         generic: 'Waktu Petropavlovsk-Kamchatski',
         standard: 'Waktu Piawai Petropavlovsk-Kamchatski',
         daylight: 'Waktu Musim Panas Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Waktu Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

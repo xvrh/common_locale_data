@@ -215,6 +215,10 @@ class LanguagesFil extends Languages {
       'bla',
       'Siksika',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -381,6 +385,10 @@ class LanguagesFil extends Languages {
       'de',
       'German',
     ),
+    'de-AT': Language(
+      'de-AT',
+      'Austrian German',
+    ),
     'de-CH': Language(
       'de-CH',
       'Swiss High German',
@@ -536,7 +544,7 @@ class LanguagesFil extends Languages {
     ),
     'fy': Language(
       'fy',
-      'Kanlurang Frisian',
+      'Western Frisian',
     ),
     'ga': Language(
       'ga',
@@ -894,6 +902,10 @@ class LanguagesFil extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Kirghiz',
@@ -925,6 +937,10 @@ class LanguagesFil extends Languages {
     'li': Language(
       'li',
       'Limburgish',
+    ),
+    'lij': Language(
+      'lij',
+      'Ligurian',
     ),
     'lil': Language(
       'lil',
@@ -1393,7 +1409,7 @@ class LanguagesFil extends Languages {
     ),
     'sah': Language(
       'sah',
-      'Sakha',
+      'Yakut',
     ),
     'saq': Language(
       'saq',
@@ -1563,6 +1579,10 @@ class LanguagesFil extends Languages {
       'syr',
       'Syriac',
     ),
+    'szl': Language(
+      'szl',
+      'Silesian',
+    ),
     'ta': Language(
       'ta',
       'Tamil',
@@ -1728,9 +1748,17 @@ class LanguagesFil extends Languages {
       've',
       'Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Venetian',
+    ),
     'vi': Language(
       'vi',
       'Vietnamese',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1776,6 +1804,10 @@ class LanguagesFil extends Languages {
       'xh',
       'Xhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
+    ),
     'xog': Language(
       'xog',
       'Soga',
@@ -1804,6 +1836,10 @@ class LanguagesFil extends Languages {
       'yue',
       'Cantonese',
       menu: 'Chinese, Cantonese',
+    ),
+    'za': Language(
+      'za',
+      'Zhuang',
     ),
     'zgh': Language(
       'zgh',
@@ -1949,10 +1985,6 @@ class ScriptsFil extends Scripts {
       'Hrkt',
       'Japanese syllabaries',
     ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
-    ),
     'Jpan': Script(
       'Jpan',
       'Japanese',
@@ -2040,10 +2072,6 @@ class ScriptsFil extends Scripts {
     'Thaa': Script(
       'Thaa',
       'Thaana',
-    ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
     ),
     'Tibt': Script(
       'Tibt',
@@ -3281,7 +3309,7 @@ class UnitsFil implements Units {
           _locale,
           'mga quarter',
           one: '{0} qtr',
-          other: '{0} qaurter',
+          other: '{0} quarter',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5567,7 +5595,7 @@ class UnitsFil implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'pound-feet',
+          'pound-force-feet',
           one: '{0} pound-force-foot',
           other: '{0} pound-feet',
         ),
@@ -6376,6 +6404,72 @@ class UnitsFil implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parts per billion',
+          one: '{0} part per billion',
+          other: '{0} parts per billion',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'parts/billion',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'parts/billion',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'mga gabi',
+          one: '{0} gabi',
+          other: '{0} gabi',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'mga gabi',
+          one: '{0} gabi',
+          other: '{0} gabi',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'mga gabi',
+          one: '{0}gabi',
+          other: '{0}gabi',
+        ),
+      );
 }
 
 class DateFieldsFil implements DateFields {
@@ -7001,8 +7095,8 @@ class DateFieldsFil implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Biy. ang nakalipas',
-            other: '{0} (na) Biyernes ang nakalipas',
+            one: 'sa {0} (na) Biy ang nakalipas',
+            other: '{0} (na) Biy ang nakalipas',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7019,7 +7113,7 @@ class DateFieldsFil implements DateFields {
           narrow: RelativeTime(
             _locale,
             one: 'sa {0} Biy.',
-            other: 'sa {0} (na) Biyernes',
+            other: 'sa {0} Biy',
           ),
         ),
       );
@@ -7894,7 +7988,7 @@ class TerritoriesFil implements Territories {
     ),
     'IO': Territory(
       'IO',
-      'Teritoryo sa Karagatan ng British Indian',
+      'British Indian Ocean Territory',
     ),
     'IQ': Territory(
       'IQ',
@@ -8644,7 +8738,7 @@ class TimeZonesFil extends TimeZones {
       exemplarCity: 'Kostanay',
     ),
     'Asia/Rangoon': TimeZoneNames(
-      exemplarCity: 'Rangoon',
+      exemplarCity: 'Yangon',
     ),
     'Asia/Saigon': TimeZoneNames(
       exemplarCity: 'Lungsod ng Ho Chi Minh',
@@ -8829,25 +8923,25 @@ class TimeZonesFil extends TimeZones {
     'Australia_CentralWestern': MetaZone(
       code: 'Australia_CentralWestern',
       long: TimeZoneName(
-        generic: 'Oras ng Gitnang Kanluran ng Australya',
-        standard: 'Standard Time ng Gitnang Kanluran ng Australya',
-        daylight: 'Daylight Time sa Gitnang Kanlurang Australya',
+        generic: 'Oras ng Gitnang Kanluran ng Australia',
+        standard: 'Standard Time ng Gitnang Kanluran ng Australia',
+        daylight: 'Daylight Time sa Gitnang Kanlurang Australia',
       ),
     ),
     'Australia_Eastern': MetaZone(
       code: 'Australia_Eastern',
       long: TimeZoneName(
-        generic: 'Oras sa Silangang Australya',
-        standard: 'Standard na Oras sa Silangang Australya',
-        daylight: 'Daylight Time sa Silangang Australya',
+        generic: 'Oras sa Silangang Australia',
+        standard: 'Standard na Oras sa Silangang Australia',
+        daylight: 'Daylight Time sa Silangang Australia',
       ),
     ),
     'Australia_Western': MetaZone(
       code: 'Australia_Western',
       long: TimeZoneName(
-        generic: 'Oras sa Kanlurang Australya',
-        standard: 'Standard na Oras sa Kanlurang Australya',
-        daylight: 'Daylight Time sa Kanlurang Australya',
+        generic: 'Oras sa Kanlurang Australia',
+        standard: 'Standard na Oras sa Kanlurang Australia',
+        daylight: 'Daylight Time sa Kanlurang Australia',
       ),
     ),
     'Azerbaijan': MetaZone(
@@ -8936,14 +9030,6 @@ class TimeZonesFil extends TimeZones {
         generic: 'Oras sa China',
         standard: 'Standard na Oras sa China',
         daylight: 'Daylight Time sa China',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Oras sa Choibalsan',
-        standard: 'Standard na Oras sa Choibalsan',
-        daylight: 'Oras sa Tag-init ng Choibalsan',
       ),
     ),
     'Christmas': MetaZone(
@@ -9230,6 +9316,12 @@ class TimeZonesFil extends TimeZones {
         generic: 'Oras sa Petropavlovsk-Kamchatski',
         standard: 'Standard Time sa Petropavlovsk-Kamchatski',
         daylight: 'Summer Time sa Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Oras ng Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

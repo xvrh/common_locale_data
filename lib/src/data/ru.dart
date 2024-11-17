@@ -268,6 +268,10 @@ class LanguagesRu extends Languages {
       'bla',
       'сиксика',
     ),
+    'blo': Language(
+      'blo',
+      'ании',
+    ),
     'bm': Language(
       'bm',
       'бамбара',
@@ -1168,6 +1172,10 @@ class LanguagesRu extends Languages {
       'kwk',
       'квакиутль',
     ),
+    'kxv': Language(
+      'kxv',
+      'куви',
+    ),
     'ky': Language(
       'ky',
       'киргизский',
@@ -1208,6 +1216,10 @@ class LanguagesRu extends Languages {
       'li',
       'лимбургский',
     ),
+    'lij': Language(
+      'lij',
+      'лигурский',
+    ),
     'lil': Language(
       'lil',
       'лиллуэт',
@@ -1215,6 +1227,10 @@ class LanguagesRu extends Languages {
     'lkt': Language(
       'lkt',
       'лакота',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ломбардский',
     ),
     'ln': Language(
       'ln',
@@ -1992,6 +2008,10 @@ class LanguagesRu extends Languages {
       'syr',
       'сирийский',
     ),
+    'szl': Language(
+      'szl',
+      'силезский',
+    ),
     'ta': Language(
       'ta',
       'тамильский',
@@ -2188,9 +2208,17 @@ class LanguagesRu extends Languages {
       've',
       'венда',
     ),
+    'vec': Language(
+      'vec',
+      'венецианский',
+    ),
     'vi': Language(
       'vi',
       'вьетнамский',
+    ),
+    'vmw': Language(
+      'vmw',
+      'макуа',
     ),
     'vo': Language(
       'vo',
@@ -2243,6 +2271,10 @@ class LanguagesRu extends Languages {
     'xh': Language(
       'xh',
       'коса',
+    ),
+    'xnr': Language(
+      'xnr',
+      'кангри',
     ),
     'xog': Language(
       'xog',
@@ -8468,6 +8500,84 @@ class UnitsRu implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'миллиардные доли',
+          one: '{0} миллиардная доля',
+          few: '{0} миллиардные доли',
+          many: '{0} миллиардных долей',
+          other: '{0} миллиардной доли',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} миллиардная доля',
+          few: '{0} миллиардные доли',
+          many: '{0} миллиардных долей',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} миллиардная доля',
+          few: '{0} миллиардные доли',
+          many: '{0} миллиардных долей',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ночи',
+          one: '{0} ночь',
+          few: '{0} ночи',
+          many: '{0} ночей',
+          other: '{0} ночи',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ноч.',
+          one: '{0} ноч.',
+          few: '{0} ноч.',
+          many: '{0} ноч.',
+          other: '{0} ноч.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ноч.',
+          one: '{0} ноч.',
+          few: '{0} ноч.',
+          many: '{0} ноч.',
+          other: '{0} ноч.',
+        ),
+      );
 }
 
 class DateFieldsRu implements DateFields {
@@ -11637,9 +11747,6 @@ class TimeZonesRu extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чита',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чойбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Коломбо',
     ),
@@ -12360,14 +12467,6 @@ class TimeZonesRu extends TimeZones {
         daylight: 'Китай, летнее время',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Чойбалсан',
-        standard: 'Чойбалсан, стандартное время',
-        daylight: 'Чойбалсан, летнее время',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12658,6 +12757,12 @@ class TimeZonesRu extends TimeZones {
         generic: 'Петропавловск-Камчатский',
         standard: 'Петропавловск-Камчатский, стандартное время',
         daylight: 'Петропавловск-Камчатский, летнее время',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Казахстан',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

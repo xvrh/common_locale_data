@@ -211,6 +211,10 @@ class LanguagesKy extends Languages {
       'bla',
       'сиксикача',
     ),
+    'blo': Language(
+      'blo',
+      'анииче',
+    ),
     'bm': Language(
       'bm',
       'бамбарача',
@@ -670,6 +674,10 @@ class LanguagesKy extends Languages {
       'id',
       'индонезияча',
     ),
+    'ie': Language(
+      'ie',
+      'интерлинг',
+    ),
     'ig': Language(
       'ig',
       'игбочо',
@@ -882,6 +890,10 @@ class LanguagesKy extends Languages {
       'kwk',
       'кваквалача (индей тили)',
     ),
+    'kxv': Language(
+      'kxv',
+      'куви',
+    ),
     'ky': Language(
       'ky',
       'кыргызча',
@@ -914,6 +926,10 @@ class LanguagesKy extends Languages {
       'li',
       'лимбургиче',
     ),
+    'lij': Language(
+      'lij',
+      'лигурча',
+    ),
     'lil': Language(
       'lil',
       'лиллуэтче (индей тили)',
@@ -921,6 +937,10 @@ class LanguagesKy extends Languages {
     'lkt': Language(
       'lkt',
       'лакотача',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ломбардча',
     ),
     'ln': Language(
       'ln',
@@ -1542,6 +1562,10 @@ class LanguagesKy extends Languages {
       'syr',
       'сирияча',
     ),
+    'szl': Language(
+      'szl',
+      'силесче',
+    ),
     'ta': Language(
       'ta',
       'тамилче',
@@ -1702,9 +1726,17 @@ class LanguagesKy extends Languages {
       've',
       'вендача',
     ),
+    'vec': Language(
+      'vec',
+      'венециянча',
+    ),
     'vi': Language(
       'vi',
       'вьетнамча',
+    ),
+    'vmw': Language(
+      'vmw',
+      'махувача',
     ),
     'vo': Language(
       'vo',
@@ -1750,6 +1782,10 @@ class LanguagesKy extends Languages {
       'xh',
       'косача',
     ),
+    'xnr': Language(
+      'xnr',
+      'кангри',
+    ),
     'xog': Language(
       'xog',
       'согача',
@@ -1778,6 +1814,10 @@ class LanguagesKy extends Languages {
       'yue',
       'кантончо',
       menu: 'кытайча (кантончо)',
+    ),
+    'za': Language(
+      'za',
+      'чжуанча',
     ),
     'zgh': Language(
       'zgh',
@@ -6561,6 +6601,72 @@ class UnitsKy implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'жарык',
+          one: '{0} жарык',
+          other: '{0} жарык',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'жарык',
+          one: '{0} жарык',
+          other: '{0} жарык',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'жарык',
+          one: '{0} жарык',
+          other: '{0} жарык',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'мкг/л',
+          one: '{0} мкг/л',
+          other: '{0} мкг/л',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'мкг/л',
+          one: '{0} мкг/л',
+          other: '{0} мкг/л',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'мкг/л',
+          one: '{0} мкг/л',
+          other: '{0} мкг/л',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'түн',
+          one: '{0}/түн',
+          other: '{0}/түн',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'түн',
+          one: '{0}/түн',
+          other: '{0}/түн',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'түн',
+          one: '{0}/түн',
+          other: '{0}/түн',
+        ),
+      );
 }
 
 class DateFieldsKy implements DateFields {
@@ -7970,7 +8076,7 @@ class TerritoriesKy implements Territories {
     ),
     'GF': Territory(
       'GF',
-      'Француздук Гвиана',
+      'Франция Гвианасы',
     ),
     'GG': Territory(
       'GG',
@@ -8111,7 +8217,7 @@ class TerritoriesKy implements Territories {
     ),
     'JP': Territory(
       'JP',
-      'Япония',
+      'Жапония',
     ),
     'KE': Territory(
       'KE',
@@ -9549,9 +9655,6 @@ class TimeZonesKy extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чита',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чойбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Коломбо',
     ),
@@ -10226,14 +10329,6 @@ class TimeZonesKy extends TimeZones {
         daylight: 'Кытай жайкы убакыты',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Чойбалсан убактысы',
-        standard: 'Чойбалсан кышкы убакыты',
-        daylight: 'Чойбалсан жайкы убактысы',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10510,6 +10605,12 @@ class TimeZonesKy extends TimeZones {
         generic: 'Жапон убактысы',
         standard: 'Жапон кышкы убакыты',
         daylight: 'Жапон жайкы убактысы',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Казакстан убактысы',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

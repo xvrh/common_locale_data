@@ -324,6 +324,10 @@ class LanguagesNbSJ extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -834,10 +838,6 @@ class LanguagesNbSJ extends Languages {
       'goh',
       'gammelhøytysk',
     ),
-    'gom': Language(
-      'gom',
-      'goansk konkani',
-    ),
     'gon': Language(
       'gon',
       'gondi',
@@ -1274,6 +1274,10 @@ class LanguagesNbSJ extends Languages {
       'kwk',
       'kwak̓wala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgisisk',
@@ -1389,10 +1393,6 @@ class LanguagesNbSJ extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2423,10 +2423,6 @@ class LanguagesNbSJ extends Languages {
       'uz',
       'usbekisk',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2450,6 +2446,10 @@ class LanguagesNbSJ extends Languages {
     'vmf': Language(
       'vmf',
       'Main-frankisk',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -2510,6 +2510,10 @@ class LanguagesNbSJ extends Languages {
     'xmf': Language(
       'xmf',
       'mingrelsk',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -4196,14 +4200,14 @@ class UnitsNbSJ implements Units {
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
-          'milliondeler',
-          one: '{0} milliondel',
+          'deler per million',
+          one: '{0} del per million',
           other: '{0} deler per million',
         ),
         short: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} milliondel',
+          one: '{0} del per million',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
@@ -4231,8 +4235,8 @@ class UnitsNbSJ implements Units {
         narrow: UnitCountPattern(
           _locale,
           '%',
-          one: '{0} %',
-          other: '{0} %',
+          one: '{0}%',
+          other: '{0}%',
         ),
       );
 
@@ -4253,8 +4257,8 @@ class UnitsNbSJ implements Units {
         narrow: UnitCountPattern(
           _locale,
           '‰',
-          one: '{0} ‰',
-          other: '{0} ‰',
+          one: '{0}‰',
+          other: '{0}‰',
         ),
       );
 
@@ -4275,8 +4279,8 @@ class UnitsNbSJ implements Units {
         narrow: UnitCountPattern(
           _locale,
           '‱',
-          one: '{0} ‱',
-          other: '{0} ‱',
+          one: '{0}‱',
+          other: '{0}‱',
         ),
       );
 
@@ -4341,8 +4345,8 @@ class UnitsNbSJ implements Units {
         narrow: UnitCountPattern(
           _locale,
           'l/100km',
-          one: '{0} l/100km',
-          other: '{0} l/100km',
+          one: '{0}l/100km',
+          other: '{0}l/100km',
         ),
       );
 
@@ -7739,18 +7743,18 @@ class UnitsNbSJ implements Units {
         long: UnitCountPattern(
           _locale,
           'klype',
-          one: '{0} klype',
+          one: '{0} klyper',
           other: '{0} klyper',
         ),
         short: UnitCountPattern(
           _locale,
           'klype',
-          one: '{0} klype',
-          other: '{0} klype',
+          one: '{0} klyper',
+          other: '{0} klyper',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'klype',
+          'kl.',
           one: '{0} kl.',
           other: '{0} kl.',
         ),
@@ -7797,6 +7801,72 @@ class UnitsNbSJ implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'lys',
+          one: '{0} lys',
+          other: '{0} lys',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'lys',
+          one: '{0} lys',
+          other: '{0} lys',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'lys',
+          one: '{0}lys',
+          other: '{0}lys',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'deler per milliard',
+          one: '{0} del per milliard',
+          other: '{0} deler per milliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'deler/milliard',
+          one: '{0} del per milliard',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'deler/milliard',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'netter',
+          one: '{0} natt',
+          other: '{0} netter',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'netter',
+          one: '{0} natt',
+          other: '{0} netter',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'netter',
+          one: '{0} natt',
+          other: '{0} netter',
         ),
       );
 }
@@ -8020,8 +8090,8 @@ class DateFieldsNbSJ implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '-{0} u.',
-            other: '-{0} u.',
+            one: 'for {0} u. siden',
+            other: 'for {0} u. siden',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8037,8 +8107,8 @@ class DateFieldsNbSJ implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: '+{0} u.',
-            other: '+{0} u.',
+            one: 'om {0} u.',
+            other: 'om {0} u.',
           ),
         ),
       );
@@ -10191,9 +10261,6 @@ class TimeZonesNbSJ extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Tsjita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Choybalsan',
-    ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damaskus',
     ),
@@ -10652,14 +10719,6 @@ class TimeZonesNbSJ extends TimeZones {
         daylight: 'kinesisk sommertid',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'tidssone for Tsjojbalsan',
-        standard: 'normaltid for Tsjojbalsan',
-        daylight: 'sommertid for Tsjojbalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10973,6 +11032,12 @@ class TimeZonesNbSJ extends TimeZones {
         generic: 'Russisk (Petropavlovsk-Kamtsjatskij) tid',
         standard: 'Russisk (Petropavlovsk-Kamtsjatskij) normaltid',
         daylight: 'Russisk (Petropavlovsk-Kamtsjatskij) sommertid',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kasakhstansk tid',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

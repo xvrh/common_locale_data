@@ -323,6 +323,10 @@ class LanguagesLt extends Languages {
       'bla',
       'siksikų',
     ),
+    'blo': Language(
+      'blo',
+      'guanų',
+    ),
     'bm': Language(
       'bm',
       'bambarų',
@@ -699,18 +703,6 @@ class LanguagesLt extends Languages {
       'es',
       'ispanų',
     ),
-    'es-419': Language(
-      'es-419',
-      'Lotynų Amerikos ispanų',
-    ),
-    'es-ES': Language(
-      'es-ES',
-      'Europos ispanų',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'Meksikos ispanų',
-    ),
     'esu': Language(
       'esu',
       'centrinės Aliaskos jupikų',
@@ -874,10 +866,6 @@ class LanguagesLt extends Languages {
     'goh': Language(
       'goh',
       'senoji Aukštosios Vokietijos',
-    ),
-    'gom': Language(
-      'gom',
-      'Goa konkanių',
     ),
     'gon': Language(
       'gon',
@@ -1315,6 +1303,10 @@ class LanguagesLt extends Languages {
       'kwk',
       'kvakvalų',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgizų',
@@ -1430,10 +1422,6 @@ class LanguagesLt extends Languages {
     'lun': Language(
       'lun',
       'Lundos',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1906,14 +1894,6 @@ class LanguagesLt extends Languages {
     'pt': Language(
       'pt',
       'portugalų',
-    ),
-    'pt-BR': Language(
-      'pt-BR',
-      'Brazilijos portugalų',
-    ),
-    'pt-PT': Language(
-      'pt-PT',
-      'Europos portugalų',
     ),
     'qu': Language(
       'qu',
@@ -2471,10 +2451,6 @@ class LanguagesLt extends Languages {
       'uz',
       'uzbekų',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'vendų',
@@ -2498,6 +2474,10 @@ class LanguagesLt extends Languages {
     'vmf': Language(
       'vmf',
       'pagrindinė frankonų',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2558,6 +2538,10 @@ class LanguagesLt extends Languages {
     'xmf': Language(
       'xmf',
       'megrelų',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -6537,15 +6521,15 @@ class UnitsLt implements Units {
           'punktai',
           one: '{0} punktas',
           few: '{0} punktai',
-          many: '{0} punktų',
-          other: '{0} punkto',
+          many: '{0} punkto',
+          other: '{0} punktų',
         ),
         short: UnitCountPattern(
           _locale,
           'pt',
           one: '{0} punktas',
           few: '{0} punktai',
-          many: '{0} punktų',
+          many: '{0} punkto',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
@@ -6553,7 +6537,7 @@ class UnitsLt implements Units {
           'pt',
           one: '{0} punktas',
           few: '{0} punktai',
-          many: '{0} punktų',
+          many: '{0} punkto',
           other: '{0} pt',
         ),
       );
@@ -8809,6 +8793,84 @@ class UnitsLt implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'milijoninės dalelytės',
+          one: '{0} milijoninė dalelytė',
+          few: '{0} milijoninės dalelytės',
+          many: '{0} milijoninės dalelytės',
+          other: '{0} milijoninių dalelyčių',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'dalelytė/mln.',
+          one: '{0} dalelytė/mln.',
+          few: '{0} dalelytės/mln.',
+          many: '{0} dalelytės/mln.',
+          other: '{0} dalelyčių/mln.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'dalelytė/mln.',
+          one: '{0} dalelytė/mln.',
+          few: '{0} dalelytės/mln.',
+          many: '{0} dalelytės/mln.',
+          other: '{0} dalelyčių/mln.',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'naktis',
+          one: '{0} naktis',
+          few: '{0} naktys',
+          many: '{0} nakties',
+          other: '{0} naktų',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nakt.',
+          one: '{0} nakt.',
+          few: '{0} nakt.',
+          many: '{0} nakt.',
+          other: '{0} nakt.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nakt.',
+          one: '{0} nakt.',
+          few: '{0} nakt.',
+          many: '{0} nakt.',
+          other: '{0} nakt.',
         ),
       );
 }
@@ -11908,9 +11970,6 @@ class TimeZonesLt extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Čita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Čoibalsanas',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombas',
     ),
@@ -12610,14 +12669,6 @@ class TimeZonesLt extends TimeZones {
         daylight: 'Kinijos vasaros laikas',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Čoibalsano laikas',
-        standard: 'Čoibalsano žiemos laikas',
-        daylight: 'Čoibalsano vasaros laikas',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12908,6 +12959,12 @@ class TimeZonesLt extends TimeZones {
         generic: 'Kamčiatkos Petropavlovsko laikas',
         standard: 'Kamčiatkos Petropavlovsko žiemos laikas',
         daylight: 'Kamčiatkos Petropavlovsko vasaros laikas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazachstano laikas',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

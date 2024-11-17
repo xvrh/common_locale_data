@@ -215,6 +215,10 @@ class LanguagesMy extends Languages {
       'bla',
       'စစ္စီကာ',
     ),
+    'blo': Language(
+      'blo',
+      'အန်နီ',
+    ),
     'bm': Language(
       'bm',
       'ဘန်ဘာရာ',
@@ -673,7 +677,12 @@ class LanguagesMy extends Languages {
     ),
     'hi': Language(
       'hi',
-      'ဟိန်ဒူ',
+      'ဟိန္ဒီ',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'ဟိန္ဒီ (လက်တင်)',
+      variant: 'ဟိန္ဒီ (လက်တင်)',
     ),
     'hil': Language(
       'hil',
@@ -730,6 +739,10 @@ class LanguagesMy extends Languages {
     'id': Language(
       'id',
       'အင်ဒိုနီးရှား',
+    ),
+    'ie': Language(
+      'ie',
+      'အင်တာလင်း',
     ),
     'ig': Language(
       'ig',
@@ -955,6 +968,10 @@ class LanguagesMy extends Languages {
       'kwk',
       'ကွပ်ခ်ဝါလာ',
     ),
+    'kxv': Language(
+      'kxv',
+      'ကူဗီ',
+    ),
     'ky': Language(
       'ky',
       'ကာဂျစ်',
@@ -987,6 +1004,10 @@ class LanguagesMy extends Languages {
       'li',
       'လင်ဘာဂစ်ရှ်',
     ),
+    'lij': Language(
+      'lij',
+      'လက်ဂါးရီရန်',
+    ),
     'lil': Language(
       'lil',
       'လာလူးဝစ်တ်',
@@ -994,6 +1015,10 @@ class LanguagesMy extends Languages {
     'lkt': Language(
       'lkt',
       'လာကိုတာ',
+    ),
+    'lmo': Language(
+      'lmo',
+      'လန်းဘတ်',
     ),
     'ln': Language(
       'ln',
@@ -1631,6 +1656,10 @@ class LanguagesMy extends Languages {
       'syr',
       'ဆီးရီးယား',
     ),
+    'szl': Language(
+      'szl',
+      'စလီရှန်',
+    ),
     'ta': Language(
       'ta',
       'တမီးလ်',
@@ -1787,9 +1816,17 @@ class LanguagesMy extends Languages {
       've',
       'ဗင်န်ဒါ',
     ),
+    'vec': Language(
+      'vec',
+      'ဗနီးရှန်',
+    ),
     'vi': Language(
       'vi',
       'ဗီယက်နမ်',
+    ),
+    'vmw': Language(
+      'vmw',
+      'မတ်ကူးဝါး',
     ),
     'vo': Language(
       'vo',
@@ -1835,6 +1872,10 @@ class LanguagesMy extends Languages {
       'xh',
       'ဇိုစာ',
     ),
+    'xnr': Language(
+      'xnr',
+      'ခန်းဂရီ',
+    ),
     'xog': Language(
       'xog',
       'ဆိုဂါ',
@@ -1863,6 +1904,10 @@ class LanguagesMy extends Languages {
       'yue',
       'ကွမ်းတုံ',
       menu: 'တရုတ်/ ကွမ်းတုံ',
+    ),
+    'za': Language(
+      'za',
+      'ဂျွမ်',
     ),
     'zgh': Language(
       'zgh',
@@ -2645,19 +2690,19 @@ class UnitsMy implements Units {
   Unit get areaSquareCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'စတုရန်းစင်တီမီတာ',
+          'cm²',
           one: '{0} square centimeter',
           other: '{0} စတုရန်းစင်တီမီတာ',
         ),
         short: UnitCountPattern(
           _locale,
-          'စတုရန်းစင်တီမီတာ',
+          'cm²',
           one: '{0} cm²',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'စတုရန်းစင်တီမီတာ',
+          'cm²',
           one: '{0}cm²',
           other: '{0} cm²',
         ),
@@ -4559,9 +4604,9 @@ class UnitsMy implements Units {
   Unit get lengthAstronomicalUnit => Unit(
         long: UnitCountPattern(
           _locale,
-          'နက်ခတ်တဗဒေယူနဈ',
+          'နက္ခတဗေဒ ယူနစ်',
           one: '{0} astronomical unit',
-          other: '{0} နက်ခတ်တဗဒေယူနဈ',
+          other: '{0} နက္ခတဗေဒ ယူနစ်',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6488,6 +6533,72 @@ class UnitsMy implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'အလင်း',
+          one: '{0} light',
+          other: '{0} အလင်း',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'အလင်း',
+          one: '{0} light',
+          other: '{0} အလင်း',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'အလင်း',
+          one: '{0}light',
+          other: '{0}အလင်း',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'သန်းတစ်ထောင်ပုံ တစ်ပုံ',
+          one: '{0} part per billion',
+          other: 'သန်းတစ်ထောင်ပုံ {0} ပုံ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'သန်းတစ်ထောင်ပုံ တစ်ပုံ',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'သန်းတစ်ထောင်ပုံ တစ်ပုံ',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ည',
+          one: '{0} night',
+          other: '{0} ည',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ည',
+          one: '{0} night',
+          other: '{0} ည',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ည',
+          one: '{0}night',
+          other: '{0} ည',
         ),
       );
 }
@@ -9388,9 +9499,6 @@ class TimeZonesMy extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ချီတာ',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ချွဲဘောဆန်',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'ကိုလံဘို',
     ),
@@ -9437,7 +9545,7 @@ class TimeZonesMy extends TimeZones {
       exemplarCity: 'ဂျေရုဆလင်',
     ),
     'Asia/Kabul': TimeZoneNames(
-      exemplarCity: 'ကဘူးလျ',
+      exemplarCity: 'ကာဘူးလ်',
     ),
     'Asia/Kamchatka': TimeZoneNames(
       exemplarCity: 'ခမ်ချာ့ခါ',
@@ -10065,14 +10173,6 @@ class TimeZonesMy extends TimeZones {
         daylight: 'တရုတ် နွေရာသီ အချိန်',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ချွဲဘော်ဆန်း အချိန်',
-        standard: 'ချွဲဘော်ဆန်း စံတော်ချိန်',
-        daylight: 'ချွဲဘော်ဆန်း နွေရာသီ အချိန်',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10349,6 +10449,12 @@ class TimeZonesMy extends TimeZones {
         generic: 'ဂျပန် အချိန်',
         standard: 'ဂျပန် စံတော်ချိန်',
         daylight: 'ဂျပန် နွေရာသီ အချိန်',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ကာဇက်စတန် အချိန်',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

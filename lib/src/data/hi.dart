@@ -216,6 +216,10 @@ class LanguagesHi extends Languages {
       'bem',
       'बेम्बा',
     ),
+    'bew': Language(
+      'bew',
+      'बेतावी',
+    ),
     'bez': Language(
       'bez',
       'बेना',
@@ -252,6 +256,10 @@ class LanguagesHi extends Languages {
       'bla',
       'सिक्सिका',
     ),
+    'blo': Language(
+      'blo',
+      'अनी',
+    ),
     'bm': Language(
       'bm',
       'बाम्बारा',
@@ -279,6 +287,10 @@ class LanguagesHi extends Languages {
     'bs': Language(
       'bs',
       'बोस्नियाई',
+    ),
+    'bss': Language(
+      'bss',
+      'अकूसे',
     ),
     'bua': Language(
       'bua',
@@ -367,6 +379,10 @@ class LanguagesHi extends Languages {
     'chy': Language(
       'chy',
       'शेयेन्न',
+    ),
+    'cic': Language(
+      'cic',
+      'चिकसॉ',
     ),
     'ckb': Language(
       'ckb',
@@ -820,6 +836,10 @@ class LanguagesHi extends Languages {
       'hmn',
       'ह्मॉंग',
     ),
+    'hnj': Language(
+      'hnj',
+      'हमोंग नजुआ',
+    ),
     'ho': Language(
       'ho',
       'हिरी मोटू',
@@ -1124,6 +1144,10 @@ class LanguagesHi extends Languages {
       'kwk',
       'क्वॉकवाला',
     ),
+    'kxv': Language(
+      'kxv',
+      'कुवी',
+    ),
     'ky': Language(
       'ky',
       'किर्गीज़',
@@ -1163,6 +1187,10 @@ class LanguagesHi extends Languages {
     'li': Language(
       'li',
       'लिंबर्गिश',
+    ),
+    'lij': Language(
+      'lij',
+      'लिगुरियन',
     ),
     'lil': Language(
       'lil',
@@ -1933,6 +1961,10 @@ class LanguagesHi extends Languages {
       'syr',
       'सिरिएक',
     ),
+    'szl': Language(
+      'szl',
+      'सायलिज़ियन',
+    ),
     'ta': Language(
       'ta',
       'तमिल',
@@ -2125,9 +2157,17 @@ class LanguagesHi extends Languages {
       've',
       'वेन्दा',
     ),
+    'vec': Language(
+      'vec',
+      'वनीशन',
+    ),
     'vi': Language(
       'vi',
       'वियतनामी',
+    ),
+    'vmw': Language(
+      'vmw',
+      'मखुवा',
     ),
     'vo': Language(
       'vo',
@@ -2180,6 +2220,10 @@ class LanguagesHi extends Languages {
     'xh': Language(
       'xh',
       'ख़ोसा',
+    ),
+    'xnr': Language(
+      'xnr',
+      'कांगड़ी',
     ),
     'xog': Language(
       'xog',
@@ -7161,6 +7205,72 @@ class UnitsHi implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'लाइट',
+          one: '{0} लाइट',
+          other: '{0} लाइट',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'लाइट',
+          one: '{0} लाइट',
+          other: '{0} लाइट',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'लाइट',
+          one: '{0} लाइट',
+          other: '{0} लाइट',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'पार्ट्स प्रति बिलियन',
+          one: '{0} पार्ट प्रति बिलियन',
+          other: '{0} पार्ट्स प्रति बिलियन',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'पार्ट्स/बिलियन',
+          one: '{0} पार्ट प्रति बिलियन',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'पार्ट्स/बिलियन',
+          one: '{0} पार्ट प्रति बिलियन',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'रातें',
+          one: '{0} रात',
+          other: '{0} रातें',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'रातें',
+          one: '{0} रात',
+          other: '{0} रातें',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'रातें',
+          one: '{0}रात',
+          other: '{0}रातें',
+        ),
+      );
 }
 
 class DateFieldsHi implements DateFields {
@@ -10149,9 +10259,6 @@ class TimeZonesHi extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'त्शिता',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'चोइबालसन',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'कोलंबो',
     ),
@@ -10839,14 +10946,6 @@ class TimeZonesHi extends TimeZones {
         daylight: 'चीन डेलाइट समय',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'कॉइबाल्सन समय',
-        standard: 'कॉइबाल्सन मानक समय',
-        daylight: 'कॉइबाल्सन ग्रीष्मकालीन समय',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11134,6 +11233,12 @@ class TimeZonesHi extends TimeZones {
         generic: 'पेट्रोपेवलास्क-कैमचात्सकी समय',
         standard: 'पेट्रोपेवलास्क-कैमचात्सकी मानक समय',
         daylight: 'पेट्रोपेवलास्क-कैमचात्सकी ग्रीष्मकालीन समय',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'कज़ाखस्तान समय',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

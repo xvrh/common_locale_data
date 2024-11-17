@@ -203,6 +203,10 @@ class LanguagesHaGH extends Languages {
       'bla',
       'Siksiká',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -437,20 +441,6 @@ class LanguagesHaGH extends Languages {
       'en-AU',
       'Turanci Ostareliya',
     ),
-    'en-CA': Language(
-      'en-CA',
-      'Turanci Kanada',
-    ),
-    'en-GB': Language(
-      'en-GB',
-      'Turanci Biritaniya',
-      short: 'Turancin Ingila',
-    ),
-    'en-US': Language(
-      'en-US',
-      'Turanci Amirka',
-      short: 'Turancin Amurka',
-    ),
     'eo': Language(
       'eo',
       'Esperanto',
@@ -485,7 +475,7 @@ class LanguagesHaGH extends Languages {
     ),
     'fa': Language(
       'fa',
-      'Farisa',
+      'Farisanci',
     ),
     'fa-AF': Language(
       'fa-AF',
@@ -493,7 +483,7 @@ class LanguagesHaGH extends Languages {
     ),
     'ff': Language(
       'ff',
-      'Fulah',
+      'Fula',
     ),
     'fi': Language(
       'fi',
@@ -619,11 +609,6 @@ class LanguagesHaGH extends Languages {
       'hi',
       'Harshen Hindi',
     ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'Hindi (Latinanci)',
-      variant: 'Hinglish',
-    ),
     'hil': Language(
       'hil',
       'Hiligaynon',
@@ -738,7 +723,7 @@ class LanguagesHaGH extends Languages {
     ),
     'jv': Language(
       'jv',
-      'Jafananci',
+      'Javananci',
     ),
     'ka': Language(
       'ka',
@@ -830,7 +815,7 @@ class LanguagesHaGH extends Languages {
     ),
     'ko': Language(
       'ko',
-      'Harshen Koreya',
+      'Harshen Koriya',
     ),
     'kok': Language(
       'kok',
@@ -892,6 +877,10 @@ class LanguagesHaGH extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kavi',
+    ),
     'ky': Language(
       'ky',
       'Kirgizanci',
@@ -924,6 +913,10 @@ class LanguagesHaGH extends Languages {
       'li',
       'Limburgish',
     ),
+    'lij': Language(
+      'lij',
+      'Liguriyanci',
+    ),
     'lil': Language(
       'lil',
       'Lillooet',
@@ -931,6 +924,10 @@ class LanguagesHaGH extends Languages {
     'lkt': Language(
       'lkt',
       'Lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Lombard',
     ),
     'ln': Language(
       'ln',
@@ -1086,7 +1083,7 @@ class LanguagesHaGH extends Languages {
     ),
     'ms': Language(
       'ms',
-      'Harshen Malai',
+      'Harshen Malay',
     ),
     'mt': Language(
       'mt',
@@ -1370,7 +1367,7 @@ class LanguagesHaGH extends Languages {
     ),
     'sah': Language(
       'sah',
-      'Sakha',
+      'Yakut',
     ),
     'saq': Language(
       'saq',
@@ -1519,6 +1516,10 @@ class LanguagesHaGH extends Languages {
     'syr': Language(
       'syr',
       'Syriac',
+    ),
+    'szl': Language(
+      'szl',
+      'Silessiyanci',
     ),
     'ta': Language(
       'ta',
@@ -1680,9 +1681,17 @@ class LanguagesHaGH extends Languages {
       've',
       'Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Veneshiyanci',
+    ),
     'vi': Language(
       'vi',
       'Harshen Biyetinam',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1722,7 +1731,11 @@ class LanguagesHaGH extends Languages {
     ),
     'xh': Language(
       'xh',
-      'Bazosa',
+      'Xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
@@ -1752,6 +1765,10 @@ class LanguagesHaGH extends Languages {
       'yue',
       'Harshen Cantonese',
       menu: 'Sinanci, Cantonese',
+    ),
+    'za': Language(
+      'za',
+      'Zhuang',
     ),
     'zgh': Language(
       'zgh',
@@ -1808,7 +1825,7 @@ class ScriptsHaGH extends Scripts {
     ),
     'Armn': Script(
       'Armn',
-      'Armeniyawa',
+      'Armeniyanci',
     ),
     'Beng': Script(
       'Beng',
@@ -1828,7 +1845,7 @@ class ScriptsHaGH extends Scripts {
     ),
     'Cans': Script(
       'Cans',
-      'Haɗaɗɗun Gaɓoɓin ʼYan Asali na Kanada',
+      'Haɗaɗɗun Gaɓoɓin harshe na Asali na Kanada',
     ),
     'Cher': Script(
       'Cher',
@@ -1852,7 +1869,7 @@ class ScriptsHaGH extends Scripts {
     ),
     'Grek': Script(
       'Grek',
-      'Girka',
+      'Girkanci',
     ),
     'Gujr': Script(
       'Gujr',
@@ -1876,7 +1893,7 @@ class ScriptsHaGH extends Scripts {
     ),
     'Hans': Script(
       'Hans',
-      'Sauƙaƙaƙƙen',
+      'Sauƙaƙaƙƙe',
       standAlone: 'Sauƙaƙaƙƙen Hans',
     ),
     'Hant': Script(
@@ -1895,10 +1912,6 @@ class ScriptsHaGH extends Scripts {
     'Hrkt': Script(
       'Hrkt',
       'kalaman Jafananci',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
     ),
     'Jpan': Script(
       'Jpan',
@@ -1987,10 +2000,6 @@ class ScriptsHaGH extends Scripts {
     'Thaa': Script(
       'Thaa',
       'Yaren Thaana',
-    ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
     ),
     'Tibt': Script(
       'Tibt',
@@ -2342,7 +2351,7 @@ class UnitsHaGH implements Units {
       );
   @override
   UnitPrefix get pattern10p2 => UnitPrefix(
-        long: UnitPrefixPattern('hekta{0}'),
+        long: UnitPrefixPattern('hekto{0}'),
         short: UnitPrefixPattern('h{0}'),
         narrow: UnitPrefixPattern('h{0}'),
       );
@@ -2514,7 +2523,7 @@ class UnitsHaGH implements Units {
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
           _locale,
-          'revolution',
+          'revolutions',
           one: 'revolution {0}',
           other: 'revolutions {0}',
         ),
@@ -4098,7 +4107,7 @@ class UnitsHaGH implements Units {
   Unit get graphicsEm => Unit(
         long: UnitCountPattern(
           _locale,
-          'typographic em',
+          'typographic ems',
           one: 'em {0}',
           other: '{0} ems',
         ),
@@ -4692,7 +4701,7 @@ class UnitsHaGH implements Units {
   Unit get lengthMileScandinavian => Unit(
         long: UnitCountPattern(
           _locale,
-          'mile-scandinavian',
+          'miles-scandinavian',
           one: 'mile-scandinavian {0}',
           other: 'miles-scandinavian {0}',
         ),
@@ -5640,7 +5649,7 @@ class UnitsHaGH implements Units {
           _locale,
           '°',
           one: 'Digirin yanayi {0}',
-          other: 'digiri-digiri {0}',
+          other: 'digiri-digirin yanayi {0}',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5726,7 +5735,7 @@ class UnitsHaGH implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'pound-feet',
+          'pound-force-feet',
           one: 'Pound-force-foot {0}',
           other: 'pound-feet {0}',
         ),
@@ -6364,9 +6373,9 @@ class UnitsHaGH implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'dessert spoon',
+          'dessert spoons',
           one: 'dessert spoon {0}',
-          other: 'dessert spoon {0}',
+          other: 'dessert spoons {0}',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6386,9 +6395,9 @@ class UnitsHaGH implements Units {
   Unit get volumeDessertSpoonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'Imp. dessert spoon',
+          'Imp. dessert spoons',
           one: 'Imp. dessert spoon {0}',
-          other: 'Imp. dessert spoon {0}',
+          other: 'Imp. dessert spoons {0}',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6430,9 +6439,9 @@ class UnitsHaGH implements Units {
   Unit get volumeDram => Unit(
         long: UnitCountPattern(
           _locale,
-          'dram',
+          'drams',
           one: 'dram {0}',
-          other: '{0} dram',
+          other: 'drams {0}',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6496,9 +6505,9 @@ class UnitsHaGH implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'Imp. quart',
+          'Imp. quarts',
           one: 'Imp. quart {0}',
-          other: 'Imp. quart {0}',
+          other: 'Imp. quarts {0}',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6533,6 +6542,72 @@ class UnitsHaGH implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'haske',
+          one: 'haske {0}',
+          other: 'haske {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'hsk',
+          one: 'hsk {0}',
+          other: 'hsk {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'hsk',
+          one: 'hsk {0}',
+          other: 'hsk {0}',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'sashi a cikin biliyan',
+          one: 'sashi {0} a cikin biliyan',
+          other: 'sashi {0} a cikin biliyan',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'sashi/biliyan',
+          one: 'sashi {0} a cikin biliyan',
+          other: 'sashi {0} a cikin biliyan',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'sashi/biliyan',
+          one: 'sashi {0} a cikin biliyan',
+          other: 'sashi {0} a cikin biliyan',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'darare',
+          one: 'dare {0}',
+          other: 'darare {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'darare',
+          one: 'dare {0}',
+          other: 'darare {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'darare',
+          one: 'dare {0}',
+          other: 'darare {0}',
         ),
       );
 }
@@ -6572,18 +6647,18 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'shekara da suka gabata {0}',
-            other: 'shekara da suka gabata {0}',
+            one: 'shekara {0} da ta gabata',
+            other: 'shekaru {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: 'shekara da suka gabata {0}',
-            other: 'shekara da suka gabata {0}',
+            one: 'shekara {0} da ta gabata',
+            other: 'shekaru {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'shekara da suka gabata {0}',
-            other: 'shekara da suka gabata {0}',
+            one: 'shekara {0} da ta gabata',
+            other: 'shekaru {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6630,18 +6705,18 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'kwata da suka gabata {0}',
-            other: 'kwatas da suka gabata {0}',
+            one: 'kwata {0} da suka gabata',
+            other: 'kwata {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: 'kwata da suka gabata {0}',
-            other: 'kwatas da suka gabata {0}',
+            one: 'kwata {0} da suka gabata',
+            other: 'kwata {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'kwata da suka gabata {0}',
-            other: 'kwatas da suka gabata {0}',
+            one: 'kwata {0} da suka gabata',
+            other: 'kwata {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6688,18 +6763,18 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'watan da ya gabata',
-            other: 'watanni da suka gabata {0}}',
+            one: 'wata {0} da ya gabata',
+            other: 'watanni {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: 'watan da ya gabata',
-            other: 'watan da ya gabata {0}',
+            one: 'wata {0} da ya gabata',
+            other: 'watanni {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'watan da ya gabata {0}',
-            other: 'watan da ya gabata {0}',
+            one: 'wata {0} da ya gabata',
+            other: 'watanni {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6746,18 +6821,18 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'mako da ya gabata {0}',
-            other: 'makonni da suka gabata {0}',
+            one: 'mako {0} da ya gabata',
+            other: 'makonni {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: 'mako da ya gabata {0}',
-            other: 'mako da ya gabata {0}',
+            one: 'mako {0} da ya gabata',
+            other: 'makonni {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'mako da suka gabata {0}',
-            other: 'mako da ya gabata {0}',
+            one: 'mako {0} da ya gabata',
+            other: 'mako {0} da ya gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6769,12 +6844,12 @@ class DateFieldsHaGH implements DateFields {
           short: RelativeTime(
             _locale,
             one: 'a cikin mako {0}',
-            other: 'a cikin mako {0}',
+            other: 'a cikin makonni {0}',
           ),
           narrow: RelativeTime(
             _locale,
             one: 'a cikin mako {0}',
-            other: 'a cikin mako {0}',
+            other: 'a cikin makonni {0}',
           ),
         ),
       );
@@ -6811,34 +6886,34 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'rana da ya gabata {0}',
-            other: 'kwanaki da suka gabata {0}',
+            one: 'kwana {0} da ya gabata',
+            other: 'kwanaki {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: 'rana da ya gabata {0}',
-            other: 'kwanaki da suka gabata {0}',
+            one: 'kwana {0} da ya gabata',
+            other: 'kwanaki {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'rana da ya gabata {0}',
-            other: 'kwanaki da suka gabata {0}',
+            one: 'kwana {0} da ya gabata',
+            other: 'kwanaki {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'a cikin rana {0}',
+            one: 'a cikin kwanaki {0}',
             other: 'a cikin kwanaki {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'a cikin rana {0}',
+            one: 'a cikin kwanaki {0}',
             other: 'a cikin kwanaki {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'a cikin rana {0}',
+            one: 'a cikin kwanaki {0}',
             other: 'a cikin kwanaki {0}',
           ),
         ),
@@ -6875,7 +6950,7 @@ class DateFieldsHaGH implements DateFields {
         now: MultiLength(
           long: 'wanan Lahadi',
           short: 'wanan Lahadi',
-          narrow: 'wanan Lahadi',
+          narrow: 'wannan Lahadin',
         ),
         next: MultiLength(
           long: 'Lahadi mai zuwa',
@@ -6885,35 +6960,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} Lahadin da ta gabata',
-            other: '{0} Lahadin da ta gabata',
+            one: 'Lahadi {0} da ta gabata',
+            other: 'Lahadi {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} Lahadin da ta gabata',
-            other: '{0} Lahadin da ta gabata',
+            one: 'Lahadi {0} da ta gabata',
+            other: 'Lahadi {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Lahadin da ta gabata',
-            other: '{0} Lahadin da ta gabata',
+            one: 'Lahadi {0} da ta gabata',
+            other: 'Lahadi {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} Lahadi',
-            other: 'cikin {0} Lahadi',
+            one: 'cikin Lahadi {0}',
+            other: 'cikin Lahadi {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} Lahadi',
-            other: 'cikin {0} Lahadi',
+            one: 'cikin Lahadi {0}',
+            other: 'cikin Lahadi {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} Lahadi',
-            other: 'cikin {0} Lahadi',
+            one: 'cikin Lahadi {0}',
+            other: 'cikin Lahadi {0}',
           ),
         ),
       );
@@ -6931,42 +7006,42 @@ class DateFieldsHaGH implements DateFields {
           narrow: 'wannan Litinin din',
         ),
         next: MultiLength(
-          long: 'Litinin din da ya gabata',
-          short: 'Litinin din da ya gabata',
-          narrow: 'Litinin din da ya gabata',
+          long: 'Litinin mai zuwa',
+          short: 'Litinin mai zuwa',
+          narrow: 'Litinin mai zuwa',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} Litinin din da ta gabata',
-            other: '{0} Litinin din da ta gabata',
+            one: 'Litinin {0} da ta gabata',
+            other: 'Litinin {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} Litinin din da ta gabata',
-            other: '{0} Litinin din da ta gabata',
+            one: 'Litinin {0} da ta gabata',
+            other: 'Litinin {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Litinin din da ta',
-            other: '{0} Litinin din da ta',
+            one: 'Litinin {0} da ta gabata',
+            other: 'Litinin {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} Litinin',
-            other: 'cikin {0} Litinin',
+            one: 'cikin Litinin {0}',
+            other: 'cikin Litinin {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} Litinin',
-            other: 'cikin {0} Litinin',
+            one: 'cikin Litinin {0}',
+            other: 'cikin Litinin {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} Litinin',
-            other: 'cikin {0} Litinin',
+            one: 'cikin Litinin {0}',
+            other: 'cikin Litinin {0}',
           ),
         ),
       );
@@ -6991,35 +7066,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} Talatar da ta gabata',
-            other: '{0} Talatar da ta gabata',
+            one: 'Talata {0} da ta gabata',
+            other: 'Talata {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} Talatar da ta gabata',
-            other: '{0} Talatar da ta gabata',
+            one: 'Talata {0} da ta gabata',
+            other: 'Talata {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Talatar da ta gabata',
-            other: '{0} Talatar da ta gabata',
+            one: 'Talata {0} da ta gabata',
+            other: 'Talata {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} Talata',
-            other: 'cikin {0} Talata',
+            one: 'cikin Talata {0}',
+            other: 'cikin Talata {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} Talata',
-            other: 'cikin {0} Talata',
+            one: 'cikin Talata {0}',
+            other: 'cikin Talata {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} Talata',
-            other: 'cikin {0} Talata',
+            one: 'cikin Talata {0}',
+            other: 'cikin Talata {0}',
           ),
         ),
       );
@@ -7044,35 +7119,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} Laraba da ta gabata',
-            other: '{0} Laraba da ta gabata',
+            one: 'Laraba {0} da ta gabata',
+            other: 'Laraba {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} Laraba da ta gabata',
-            other: '{0} Laraba da ta gabata',
+            one: 'Laraba {0} da ta gabata',
+            other: 'Laraba {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Laraba da ta gabata',
-            other: '{0} Laraba da ta gabata',
+            one: 'Laraba {0} da ta gabata',
+            other: 'Laraba {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} Laraba',
-            other: 'cikin {0} Laraba',
+            one: 'cikin Laraba {0}',
+            other: 'cikin Laraba {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} Laraba',
-            other: 'cikin {0} Laraba',
+            one: 'cikin Laraba {0}',
+            other: 'cikin Laraba {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} Laraba',
-            other: 'cikin {0} Laraba',
+            one: 'cikin Laraba {0}',
+            other: 'cikin Laraba {0}',
           ),
         ),
       );
@@ -7097,35 +7172,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} Alhamis din da ya gabata',
-            other: '{0} Alhamis din da ya gabata',
+            one: 'Alhamis {0} da ta gabata',
+            other: 'Alhamis {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} Alhamis din da ya gabata',
-            other: '{0} Alhamis din da ya gabata',
+            one: 'Alhamis {0} da ta gabata',
+            other: 'Alhamis {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Alhamis din da ya gabata',
-            other: '{0} Alhamis din da ya gabata',
+            one: 'Alhamis {0} da ta gabata',
+            other: 'Alhamis {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} Alhamis',
-            other: 'cikin {0} Alhamis',
+            one: 'cikin Alhamis {0}',
+            other: 'cikin Alhamis {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} Alhamis',
-            other: 'cikin {0} Alhamis',
+            one: 'cikin Alhamis {0}',
+            other: 'cikin Alhamis {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} Alhamis',
-            other: 'cikin {0} Alhamis',
+            one: 'cikin Alhamis {0}',
+            other: 'cikin Alhamis {0}',
           ),
         ),
       );
@@ -7150,35 +7225,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} Jumaʼa da ta wuce',
-            other: '{0} Jumaʼa da ta wuce',
+            one: 'Jumaʼa {0} da ta wuce',
+            other: 'Jumaʼa {0} da suka wuce',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} Jumaʼa da ta wuce',
-            other: '{0} Jumaʼa da ta wuce',
+            one: 'Jumaʼa {0} da ta wuce',
+            other: 'Jumaʼa {0} da suka wuce',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Jumaʼa da ta wuce',
-            other: '{0} Jumaʼa da ta wuce',
+            one: 'Jumaʼa {0} da ta wuce',
+            other: 'Jumaʼa {0} da suka wuce',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} Jumaʼa',
-            other: 'cikin {0} Jumaʼa',
+            one: 'cikin Jumaʼa {0}',
+            other: 'cikin Jumaʼa {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} Jumaʼa',
-            other: 'cikin {0} Jumaʼa',
+            one: 'cikin Jumaʼa {0}',
+            other: 'cikin Jumaʼa {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} Jumaʼa',
-            other: 'cikin {0} Jumaʼa',
+            one: 'cikin Jumaʼa {0}',
+            other: 'cikin Jumaʼa {0}',
           ),
         ),
       );
@@ -7203,35 +7278,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} Asabar din da ya wuce',
-            other: '{0} Asabar din da ya wuce',
+            one: 'Asabar {0} da ta wuce',
+            other: 'Asabar {0} da ta wuce',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} Asabar din da ya wuce',
-            other: '{0} Asabar din da ya wuce',
+            one: 'Asabar {0} da ta wuce',
+            other: 'Asabar {0} da suka wuce',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} Asabar din da ya wuce',
-            other: '{0} Asabar din da ya wuce',
+            one: 'Asabar {0} da ta wuce',
+            other: 'Asabar {0} da suka wuce',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} Asabar',
-            other: 'cikin {0} Asabar',
+            one: 'cikin Asabar {0}',
+            other: 'cikin Asabar {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} Asabar',
-            other: 'cikin {0} Asabar',
+            one: 'cikin Asabar {0}',
+            other: 'cikin Asabar {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} Asabar',
-            other: 'cikin {0} Asabar',
+            one: 'cikin Asabar {0}',
+            other: 'cikin Asabar {0}',
           ),
         ),
       );
@@ -7258,35 +7333,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} awa da ya gabata',
-            other: '{0} awa da ya gabata',
+            one: 'awa {0} da ta gabata',
+            other: 'awanni {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} awa da ya gabata',
-            other: '{0} awa da ya gabata',
+            one: 'awa {0} da ta gabata',
+            other: 'awanni {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} awa da ya gabata',
-            other: '{0} awa da ya gabata',
+            one: 'awa {0} da ta gabata',
+            other: 'awanni {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} awa',
-            other: 'cikin {0} awa',
+            one: 'cikin awa {0}',
+            other: 'cikin awanni {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} awa',
-            other: 'cikin {0} awa',
+            one: 'cikin awa {0}',
+            other: 'cikin awanni {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} awa',
-            other: 'cikin {0} awa',
+            one: 'cikin awa {0}',
+            other: 'cikin awanni {0}',
           ),
         ),
       );
@@ -7306,35 +7381,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} minti da ya gabata',
-            other: '{0} minti da ya gabata',
+            one: 'minti {0} da ya gabata',
+            other: 'mintuna {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} minti da ya gabata',
-            other: '{0} minti da ya gabata',
+            one: 'minti {0} da ya gabata',
+            other: 'mintuna {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} minti da ya gabata',
-            other: '{0} minti da ya gabata',
+            one: 'minti {0} da ya gabata',
+            other: 'mintuna {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} minti',
-            other: 'cikin {0} minti',
+            one: 'cikin minti {0}',
+            other: 'cikin mintuna {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} minti',
-            other: 'cikin {0} minti',
+            one: 'cikin minti {0}',
+            other: 'cikin mintuna {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} minti',
-            other: 'cikin {0} minti',
+            one: 'cikin minti {0}',
+            other: 'cikin mintuna {0}',
           ),
         ),
       );
@@ -7354,35 +7429,35 @@ class DateFieldsHaGH implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} dakika da ya gabata',
-            other: '{0} dakika da ya gabata',
+            one: 'dakika {0} da ta gabata',
+            other: 'dakiku {0} da suka gabata',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} dakika da ya gabata',
-            other: '{0} dakika da ya gabata',
+            one: 'dakika {0} da ta gabata',
+            other: 'dakiku {0} da suka gabata',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} dakika da ya gabata',
-            other: '{0} dakika da ya gabata',
+            one: 'dakika {0} da ta gabata',
+            other: 'dakiku {0} da suka gabata',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'cikin {0} dakika',
-            other: 'cikin {0} dakika',
+            one: 'cikin dakika {0}',
+            other: 'cikin dakiku {0}',
           ),
           short: RelativeTime(
             _locale,
-            one: 'cikin {0} dakika',
-            other: 'cikin {0} dakika',
+            one: 'cikin dakika {0}',
+            other: 'cikin dakiku {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'cikin {0} dakika',
-            other: 'cikin {0} dakika',
+            one: 'cikin dakika {0}',
+            other: 'cikin dakiku {0}',
           ),
         ),
       );
@@ -7509,7 +7584,7 @@ class TerritoriesHaGH implements Territories {
   @override
   Territory get australasia => Territory(
         '053',
-        'Asturesiya',
+        'Asturelasiya',
       );
 
   @override
@@ -7634,7 +7709,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'AR': Territory(
       'AR',
-      'Arjantiniya',
+      'Ajentina',
     ),
     'AS': Territory(
       'AS',
@@ -7670,7 +7745,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'BD': Territory(
       'BD',
-      'Bangiladas',
+      'Bangladesh',
     ),
     'BE': Territory(
       'BE',
@@ -7686,7 +7761,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'BH': Territory(
       'BH',
-      'Baharan',
+      'Baharen',
     ),
     'BI': Territory(
       'BI',
@@ -7777,11 +7852,11 @@ class TerritoriesHaGH implements Territories {
     ),
     'CK': Territory(
       'CK',
-      'Tsibiran Kuku',
+      'Tsibiran Cook',
     ),
     'CL': Territory(
       'CL',
-      'Cayile',
+      'Chile',
     ),
     'CM': Territory(
       'CM',
@@ -7813,7 +7888,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'CV': Territory(
       'CV',
-      'Tsibiran Kap Barde',
+      'Tsibiran Cape Verde',
     ),
     'CW': Territory(
       'CW',
@@ -7825,12 +7900,12 @@ class TerritoriesHaGH implements Territories {
     ),
     'CY': Territory(
       'CY',
-      'Sifurus',
+      'Saifurus',
     ),
     'CZ': Territory(
       'CZ',
-      'Jamhuriyar Cak',
-      variant: 'Jamhuriyar Cak',
+      'Czechia',
+      variant: 'Jamhuriyar Czech',
     ),
     'DE': Territory(
       'DE',
@@ -7940,7 +8015,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'GE': Territory(
       'GE',
-      'Jiwarjiya',
+      'Jojiya',
     ),
     'GF': Territory(
       'GF',
@@ -7976,7 +8051,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'GQ': Territory(
       'GQ',
-      'Gini Ta Ikwaita',
+      'Ikwatoriyal Gini',
     ),
     'GR': Territory(
       'GR',
@@ -7992,7 +8067,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'GU': Territory(
       'GU',
-      'Gwam',
+      'Guam',
     ),
     'GW': Territory(
       'GW',
@@ -8005,7 +8080,7 @@ class TerritoriesHaGH implements Territories {
     'HK': Territory(
       'HK',
       'Babban Yankin Mulkin Hong Kong na Ƙasar Sin',
-      short: 'Babban Yankin Mulkin Hong Kong na Ƙasar Sin',
+      short: 'Hong Kong',
     ),
     'HM': Territory(
       'HM',
@@ -8045,7 +8120,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'IM': Territory(
       'IM',
-      'Isle na Mutum',
+      'Isle of Man',
     ),
     'IN': Territory(
       'IN',
@@ -8121,7 +8196,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'KW': Territory(
       'KW',
-      'Kwiyat',
+      'Kuwet',
     ),
     'KY': Territory(
       'KY',
@@ -8133,7 +8208,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'LA': Territory(
       'LA',
-      'Lawas',
+      'Lawos',
     ),
     'LB': Territory(
       'LB',
@@ -8189,7 +8264,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'ME': Territory(
       'ME',
-      'Mantanegara',
+      'Manteneguro',
     ),
     'MF': Territory(
       'MF',
@@ -8222,7 +8297,7 @@ class TerritoriesHaGH implements Territories {
     'MO': Territory(
       'MO',
       'Babban Yankin Mulkin Macao na Ƙasar Sin',
-      short: 'Babban Yankin Mulkin Macao na Ƙasar Sin',
+      short: 'Macao',
     ),
     'MP': Territory(
       'MP',
@@ -8262,7 +8337,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'MY': Territory(
       'MY',
-      'Malaisiya',
+      'Malesiya',
     ),
     'MZ': Territory(
       'MZ',
@@ -8310,7 +8385,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'NU': Territory(
       'NU',
-      'Niyu',
+      'Niue',
     ),
     'NZ': Territory(
       'NZ',
@@ -8355,7 +8430,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'PN': Territory(
       'PN',
-      'Pitakarin',
+      'Tsibiran Pitcairn',
     ),
     'PR': Territory(
       'PR',
@@ -8525,8 +8600,8 @@ class TerritoriesHaGH implements Territories {
     ),
     'TL': Territory(
       'TL',
-      'Timor Ta Gabas',
-      variant: 'Timor Ta Gabas',
+      'Timor-Leste',
+      variant: 'Timor ta Gabas',
     ),
     'TM': Territory(
       'TM',
@@ -8592,7 +8667,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'VA': Territory(
       'VA',
-      'Batikan',
+      'Birnin Batikan',
     ),
     'VC': Territory(
       'VC',
@@ -8628,11 +8703,11 @@ class TerritoriesHaGH implements Territories {
     ),
     'XA': Territory(
       'XA',
-      'Gogewar Kwalwa',
+      'Gurɓataccen Karin harshe',
     ),
     'XB': Territory(
       'XB',
-      'Gano wani abu ta hanyar amfani da fasaha',
+      'Gurɓataccen Bidi',
     ),
     'XK': Territory(
       'XK',
@@ -8640,7 +8715,7 @@ class TerritoriesHaGH implements Territories {
     ),
     'YE': Territory(
       'YE',
-      'Yamal',
+      'Yamen',
     ),
     'YT': Territory(
       'YT',
@@ -8843,7 +8918,7 @@ class TimeZonesHaGH extends TimeZones {
     'Africa_Southern': MetaZone(
       code: 'Africa_Southern',
       long: TimeZoneName(
-        standard: 'South Africa Standard Time',
+        standard: 'Tsayayyen Lokacin Afirka ta Kudu',
       ),
     ),
     'Africa_Western': MetaZone(
@@ -8914,7 +8989,7 @@ class TimeZonesHaGH extends TimeZones {
       code: 'Arabian',
       long: TimeZoneName(
         generic: 'Lokacin Arebiya',
-        standard: 'Arabian Standard Time',
+        standard: 'Tsayayyen lokacin Arebiya',
         daylight: 'Lokacin Rana na Arebiya',
       ),
     ),
@@ -8953,7 +9028,7 @@ class TimeZonesHaGH extends TimeZones {
     'Australia_Central': MetaZone(
       code: 'Australia_Central',
       long: TimeZoneName(
-        generic: 'Central Australia Time',
+        generic: 'Lokacin Tsakiyar Australiya',
         standard: 'Tsayayyen Lokacin Tsakiyar Austiraliya',
         daylight: 'Lokacin Rana na Tsakiyar Austiraliya',
       ),
@@ -8970,7 +9045,7 @@ class TimeZonesHaGH extends TimeZones {
       code: 'Australia_Eastern',
       long: TimeZoneName(
         generic: 'Lokacin Gabashin Austiraliya',
-        standard: 'Australian Eastern Standard Time',
+        standard: 'Tsayayyen lokacin Gabashin Australia',
         daylight: 'Lokacin Rana na Gabashin Austiraliya',
       ),
     ),
@@ -9009,7 +9084,7 @@ class TimeZonesHaGH extends TimeZones {
     'Bhutan': MetaZone(
       code: 'Bhutan',
       long: TimeZoneName(
-        standard: 'Bhutan Time',
+        standard: 'Lokacin Bhutan',
       ),
     ),
     'Bolivia': MetaZone(
@@ -9036,7 +9111,7 @@ class TimeZonesHaGH extends TimeZones {
       code: 'Cape_Verde',
       long: TimeZoneName(
         generic: 'Lokacin Cape Verde',
-        standard: 'Cape Verde Standard Time',
+        standard: 'Tsayayyen lokacin Cape Verde',
         daylight: 'Lokacin Bazara na Cape Verde',
       ),
     ),
@@ -9068,14 +9143,6 @@ class TimeZonesHaGH extends TimeZones {
         generic: 'Lokacin Sin',
         standard: 'Tsayayyen Lokacin Sin',
         daylight: 'Lokacin Rana na Sin',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Lokacin Choibalsan',
-        standard: 'Tsayayyen Lokacin Choibalsan',
-        daylight: 'Lokacin Bazara na Choibalsan',
       ),
     ),
     'Christmas': MetaZone(
@@ -9221,7 +9288,7 @@ class TimeZonesHaGH extends TimeZones {
       long: TimeZoneName(
         generic: 'Lokacin Georgia',
         standard: 'Tsayayyen Lokacin Georgia',
-        daylight: 'Georgia Summer Time',
+        daylight: 'Lokacin Bazara na Georgia',
       ),
     ),
     'Gilbert_Islands': MetaZone(
@@ -9233,7 +9300,7 @@ class TimeZonesHaGH extends TimeZones {
     'GMT': MetaZone(
       code: 'GMT',
       long: TimeZoneName(
-        standard: 'Lokacin Greenwhich a London',
+        standard: 'Lokacin Greenwich a Ingila',
       ),
     ),
     'Greenland_Eastern': MetaZone(
@@ -9255,7 +9322,7 @@ class TimeZonesHaGH extends TimeZones {
     'Gulf': MetaZone(
       code: 'Gulf',
       long: TimeZoneName(
-        standard: 'Lokacin Golf',
+        standard: 'Tsayayyen lokacin Gulf',
       ),
     ),
     'Guyana': MetaZone(
@@ -9291,7 +9358,7 @@ class TimeZonesHaGH extends TimeZones {
     'India': MetaZone(
       code: 'India',
       long: TimeZoneName(
-        standard: 'India Standard Time',
+        standard: 'Tsayayyen lokacin Indiya',
       ),
     ),
     'Indian_Ocean': MetaZone(
@@ -9315,7 +9382,7 @@ class TimeZonesHaGH extends TimeZones {
     'Indonesia_Eastern': MetaZone(
       code: 'Indonesia_Eastern',
       long: TimeZoneName(
-        standard: 'Eastern Indonesia Time',
+        standard: 'Lokacin Gabashin Indonesia',
       ),
     ),
     'Indonesia_Western': MetaZone(
@@ -9344,16 +9411,22 @@ class TimeZonesHaGH extends TimeZones {
       code: 'Israel',
       long: TimeZoneName(
         generic: 'Lokacin Israʼila',
-        standard: 'Israel Standard Time',
-        daylight: 'Israel Daylight Time',
+        standard: 'Tsayayyen lokacin Israʼila',
+        daylight: 'Lokacin Hasken Rana na Israʼila',
       ),
     ),
     'Japan': MetaZone(
       code: 'Japan',
       long: TimeZoneName(
         generic: 'Lokacin Japan',
-        standard: 'Japan Standard Time',
-        daylight: 'Japan Daylight Time',
+        standard: 'Tsayayyen lokacin Japan',
+        daylight: 'Lokacin Hasken Rana na Japan',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Lokacin Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
@@ -9393,7 +9466,7 @@ class TimeZonesHaGH extends TimeZones {
     'Kyrgystan': MetaZone(
       code: 'Kyrgystan',
       long: TimeZoneName(
-        standard: 'Lokacin Kazakhstan',
+        standard: 'Lokacin Kyrgyzstan',
       ),
     ),
     'Line_Islands': MetaZone(
@@ -9723,7 +9796,7 @@ class TimeZonesHaGH extends TimeZones {
     'Tokelau': MetaZone(
       code: 'Tokelau',
       long: TimeZoneName(
-        standard: 'Tokelau Time',
+        standard: 'Lokacin Tokelau',
       ),
     ),
     'Tonga': MetaZone(
@@ -9745,7 +9818,7 @@ class TimeZonesHaGH extends TimeZones {
       long: TimeZoneName(
         generic: 'Lokacin Turkmenistan',
         standard: 'Tsayayyen Lokacin Turkmenistan',
-        daylight: 'Turkmenistan Summer Time',
+        daylight: 'Lokacin Bazara na Turkmenistan',
       ),
     ),
     'Tuvalu': MetaZone(

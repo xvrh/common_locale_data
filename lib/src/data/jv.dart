@@ -203,6 +203,10 @@ class LanguagesJv extends Languages {
       'bla',
       'Siksiká',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -489,7 +493,7 @@ class LanguagesJv extends Languages {
     ),
     'ff': Language(
       'ff',
-      'Fulah',
+      'Fula',
     ),
     'fi': Language(
       'fi',
@@ -670,6 +674,10 @@ class LanguagesJv extends Languages {
     'id': Language(
       'id',
       'Indonesia',
+    ),
+    'ie': Language(
+      'ie',
+      'Interlingue',
     ),
     'ig': Language(
       'ig',
@@ -879,6 +887,10 @@ class LanguagesJv extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Kirgis',
@@ -910,6 +922,10 @@ class LanguagesJv extends Languages {
     'li': Language(
       'li',
       'Limburgish',
+    ),
+    'lij': Language(
+      'lij',
+      'Liguria',
     ),
     'lil': Language(
       'lil',
@@ -1365,7 +1381,7 @@ class LanguagesJv extends Languages {
     ),
     'sah': Language(
       'sah',
-      'Sakha',
+      'Yakut',
     ),
     'saq': Language(
       'saq',
@@ -1385,7 +1401,7 @@ class LanguagesJv extends Languages {
     ),
     'sc': Language(
       'sc',
-      'Sardinian',
+      'Sardinia',
     ),
     'scn': Language(
       'scn',
@@ -1510,6 +1526,10 @@ class LanguagesJv extends Languages {
     'syr': Language(
       'syr',
       'Siriak',
+    ),
+    'szl': Language(
+      'szl',
+      'Silesia',
     ),
     'ta': Language(
       'ta',
@@ -1667,9 +1687,17 @@ class LanguagesJv extends Languages {
       've',
       'Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Venesia',
+    ),
     'vi': Language(
       'vi',
       'Vietnam',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1711,6 +1739,10 @@ class LanguagesJv extends Languages {
       'xh',
       'Xhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
+    ),
     'xog': Language(
       'xog',
       'Soga',
@@ -1739,6 +1771,10 @@ class LanguagesJv extends Languages {
       'yue',
       'Kanton',
       menu: 'Tyonghwa, Kanton',
+    ),
+    'za': Language(
+      'za',
+      'Zhuang',
     ),
     'zgh': Language(
       'zgh',
@@ -1977,7 +2013,7 @@ class ScriptsJv extends Scripts {
     ),
     'Tibt': Script(
       'Tibt',
-      'Tibetan',
+      'Tibet',
     ),
     'Vaii': Script(
       'Vaii',
@@ -4765,19 +4801,19 @@ class UnitsJv implements Units {
           _locale,
           'kandela',
           one: '{0} candela',
-          other: '{0} kandela',
+          other: '{0} cd',
         ),
         short: UnitCountPattern(
           _locale,
           'kandela',
           one: '{0} cd',
-          other: '{0} kandela',
+          other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kandela',
           one: '{0}cd',
-          other: '{0} kandela',
+          other: '{0} cd',
         ),
       );
 
@@ -6457,21 +6493,21 @@ class UnitsJv implements Units {
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
           _locale,
-          'sak juwit',
+          'jiwit',
           one: '{0} pinch',
-          other: '{0} sak juwit',
+          other: '{0} jiwit',
         ),
         short: UnitCountPattern(
           _locale,
-          'juwit',
+          'jiwit',
           one: '{0} pn',
-          other: '{0} sak juwit',
+          other: '{0} jiwit',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'juwit',
+          'jiwit',
           one: '{0}pn',
-          other: '{0}juwit',
+          other: '{0}jiwit',
         ),
       );
 
@@ -6516,6 +6552,72 @@ class UnitsJv implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'cahya',
+          one: '{0} light',
+          other: '{0} cahya',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'cahya',
+          one: '{0} light',
+          other: '{0} cahya',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'cahya',
+          one: '{0}light',
+          other: '{0} cahya',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'wengi',
+          one: '{0} night',
+          other: '{0} wengi',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'wengi',
+          one: '{0} night',
+          other: '{0} wengi',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'wengi',
+          one: '{0}night',
+          other: '{0} wengi',
         ),
       );
 }
@@ -7615,7 +7717,7 @@ class TerritoriesJv implements Territories {
     ),
     'BS': Territory(
       'BS',
-      'Bahamas',
+      'Bahama',
     ),
     'BT': Territory(
       'BT',
@@ -9107,14 +9209,6 @@ class TimeZonesJv extends TimeZones {
         daylight: 'Wektu Ketigo Cina',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Wektu Choibalsan',
-        standard: 'Wektu Standar Choibalsan',
-        daylight: 'WEktu Ketigo Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -9391,6 +9485,12 @@ class TimeZonesJv extends TimeZones {
         generic: 'Wektu Jepang',
         standard: 'Wektu Standar Jepang',
         daylight: 'Wektu Ketigo Jepang',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Wektu Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

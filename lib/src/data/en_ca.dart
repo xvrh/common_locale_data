@@ -896,10 +896,6 @@ class LanguagesEnCA extends Languages {
       'goh',
       'Old High German',
     ),
-    'gom': Language(
-      'gom',
-      'Goan Konkani',
-    ),
     'gon': Language(
       'gon',
       'Gondi',
@@ -2906,6 +2902,10 @@ class ScriptsEnCA extends Scripts {
       'Ethi',
       'Ethiopic',
     ),
+    'Gara': Script(
+      'Gara',
+      'Garay',
+    ),
     'Geok': Script(
       'Geok',
       'Georgian Khutsuri',
@@ -2941,6 +2941,10 @@ class ScriptsEnCA extends Scripts {
     'Gujr': Script(
       'Gujr',
       'Gujarati',
+    ),
+    'Gukh': Script(
+      'Gukh',
+      'Gurung Khema',
     ),
     'Guru': Script(
       'Guru',
@@ -3067,6 +3071,10 @@ class ScriptsEnCA extends Scripts {
     'Kpel': Script(
       'Kpel',
       'Kpelle',
+    ),
+    'Krai': Script(
+      'Krai',
+      'Kirat Rai',
     ),
     'Kthi': Script(
       'Kthi',
@@ -3236,6 +3244,10 @@ class ScriptsEnCA extends Scripts {
       'Olck',
       'Ol Chiki',
     ),
+    'Onao': Script(
+      'Onao',
+      'Ol Onal',
+    ),
     'Orkh': Script(
       'Orkh',
       'Orkhon',
@@ -3377,6 +3389,10 @@ class ScriptsEnCA extends Scripts {
       'Sund',
       'Sundanese',
     ),
+    'Sunu': Script(
+      'Sunu',
+      'Sunuwar',
+    ),
     'Sylo': Script(
       'Sylo',
       'Syloti Nagri',
@@ -3461,9 +3477,17 @@ class ScriptsEnCA extends Scripts {
       'Tnsa',
       'Tangsa',
     ),
+    'Todr': Script(
+      'Todr',
+      'Todhri',
+    ),
     'Toto': Script(
       'Toto',
       'Toto',
+    ),
+    'Tutg': Script(
+      'Tutg',
+      'Tulu-Tigalari',
     ),
     'Ugar': Script(
       'Ugar',
@@ -4430,7 +4454,7 @@ class UnitsEnCA implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'items',
+          'item',
           one: '{0} item',
           other: '{0} items',
         ),
@@ -4848,7 +4872,7 @@ class UnitsEnCA implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'bytes',
+          'byte',
           one: '{0} byte',
           other: '{0} bytes',
         ),
@@ -4870,7 +4894,7 @@ class UnitsEnCA implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'bits',
+          'bit',
           one: '{0} bit',
           other: '{0} bits',
         ),
@@ -5228,7 +5252,7 @@ class UnitsEnCA implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'Ω',
+          'ohm',
           one: '{0}Ω',
           other: '{0}Ω',
         ),
@@ -7878,21 +7902,21 @@ class UnitsEnCA implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'US dessertspoon',
+          'dessert spoons',
           one: '{0} US dessertspoon',
           other: '{0} US dessertspoons',
         ),
         short: UnitCountPattern(
           _locale,
-          'US dssp',
-          one: '{0} US dssp',
-          other: '{0} US dssp',
+          'dessert spoons',
+          one: '{0} dsp',
+          other: '{0} dsp',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'US dsp',
-          one: '{0}USdsp',
-          other: '{0}USdsp',
+          'dsp',
+          one: '{0}dsp',
+          other: '{0}dsp',
         ),
       );
 
@@ -8047,6 +8071,72 @@ class UnitsEnCA implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0}light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parts per billion',
+          one: '{0} part per billion',
+          other: '{0} parts per billion',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'parts/billion',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0} night',
+          other: '{0} nights',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nights',
+          one: '{0}night',
+          other: '{0}nights',
         ),
       );
 }
@@ -10298,9 +10388,6 @@ class TimeZonesEnCA extends TimeZones {
     'Africa/Sao_Tome': TimeZoneNames(
       exemplarCity: 'São Tomé',
     ),
-    'Asia/Aqtau': TimeZoneNames(
-      exemplarCity: 'Aktau',
-    ),
     'Asia/Calcutta': TimeZoneNames(
       exemplarCity: 'Kolkata',
     ),
@@ -10456,7 +10543,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Mountain Time',
         standard: 'Mountain Standard Time',
-        daylight: 'Mountain Daylight Saving Time',
+        daylight: 'Mountain Daylight Time',
       ),
       short: TimeZoneName(
         generic: 'MT',
@@ -10469,7 +10556,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Pacific Time',
         standard: 'Pacific Standard Time',
-        daylight: 'Pacific Daylight Saving Time',
+        daylight: 'Pacific Daylight Time',
       ),
       short: TimeZoneName(
         generic: 'PT',
@@ -10490,7 +10577,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Apia Time',
         standard: 'Apia Standard Time',
-        daylight: 'Apia Daylight Saving Time',
+        daylight: 'Apia Daylight Time',
       ),
     ),
     'Aqtau': MetaZone(
@@ -10514,7 +10601,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Arabian Time',
         standard: 'Arabian Standard Time',
-        daylight: 'Arabian Daylight Saving Time',
+        daylight: 'Arabian Daylight Time',
       ),
     ),
     'Argentina': MetaZone(
@@ -10549,7 +10636,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Atlantic Time',
         standard: 'Atlantic Standard Time',
-        daylight: 'Atlantic Daylight Saving Time',
+        daylight: 'Atlantic Daylight Time',
       ),
       short: TimeZoneName(
         generic: 'AT',
@@ -10562,7 +10649,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Central Australia Time',
         standard: 'Australian Central Standard Time',
-        daylight: 'Australian Central Daylight Saving Time',
+        daylight: 'Australian Central Daylight Time',
       ),
     ),
     'Australia_CentralWestern': MetaZone(
@@ -10570,7 +10657,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Australian Central Western Time',
         standard: 'Australian Central Western Standard Time',
-        daylight: 'Australian Central Western Daylight Saving Time',
+        daylight: 'Australian Central Western Daylight Time',
       ),
       short: TimeZoneName(
         generic: 'ACWT',
@@ -10583,7 +10670,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Eastern Australia Time',
         standard: 'Australian Eastern Standard Time',
-        daylight: 'Australian Eastern Daylight Saving Time',
+        daylight: 'Australian Eastern Daylight Time',
       ),
       short: TimeZoneName(
         generic: 'AET',
@@ -10596,7 +10683,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Western Australia Time',
         standard: 'Australian Western Standard Time',
-        daylight: 'Australian Western Daylight Saving Time',
+        daylight: 'Australian Western Daylight Time',
       ),
       short: TimeZoneName(
         standard: 'AWST',
@@ -10691,7 +10778,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Chatham Time',
         standard: 'Chatham Standard Time',
-        daylight: 'Chatham Daylight Saving Time',
+        daylight: 'Chatham Daylight Time',
       ),
       short: TimeZoneName(
         standard: 'CHAST',
@@ -10711,15 +10798,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'China Time',
         standard: 'China Standard Time',
-        daylight: 'China Daylight Saving Time',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choibalsan Time',
-        standard: 'Choibalsan Standard Time',
-        daylight: 'Choibalsan Summer Time',
+        daylight: 'China Daylight Time',
       ),
     ),
     'Christmas': MetaZone(
@@ -10764,7 +10843,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Cuba Time',
         standard: 'Cuba Standard Time',
-        daylight: 'Cuba Daylight Saving Time',
+        daylight: 'Cuba Daylight Time',
       ),
     ),
     'Davis': MetaZone(
@@ -10947,6 +11026,9 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         standard: 'Gulf Standard Time',
       ),
+      short: TimeZoneName(
+        standard: 'Gulf Time',
+      ),
     ),
     'Guyana': MetaZone(
       code: 'Guyana',
@@ -10962,7 +11044,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Hawaii-Aleutian Time',
         standard: 'Hawaii-Aleutian Standard Time',
-        daylight: 'Hawaii-Aleutian Daylight Saving Time',
+        daylight: 'Hawaii-Aleutian Daylight Time',
       ),
       short: TimeZoneName(
         generic: 'HAT',
@@ -11062,7 +11144,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Israel Time',
         standard: 'Israel Standard Time',
-        daylight: 'Israel Daylight Saving Time',
+        daylight: 'Israel Daylight Time',
       ),
     ),
     'Japan': MetaZone(
@@ -11070,7 +11152,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Japan Time',
         standard: 'Japan Standard Time',
-        daylight: 'Japan Daylight Saving Time',
+        daylight: 'Japan Daylight Time',
       ),
     ),
     'Kamchatka': MetaZone(
@@ -11079,6 +11161,12 @@ class TimeZonesEnCA extends TimeZones {
         generic: 'Petropavlovsk-Kamchatski Time',
         standard: 'Petropavlovsk-Kamchatski Standard Time',
         daylight: 'Petropavlovsk-Kamchatski Summer Time',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakhstan Time',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
@@ -11098,7 +11186,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Korean Time',
         standard: 'Korean Standard Time',
-        daylight: 'Korean Daylight Saving Time',
+        daylight: 'Korean Daylight Time',
       ),
     ),
     'Kosrae': MetaZone(
@@ -11138,7 +11226,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Lord Howe Time',
         standard: 'Lord Howe Standard Time',
-        daylight: 'Lord Howe Daylight Saving Time',
+        daylight: 'Lord Howe Daylight Time',
       ),
     ),
     'Macau': MetaZone(
@@ -11206,7 +11294,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Mexican Pacific Time',
         standard: 'Mexican Pacific Standard Time',
-        daylight: 'Mexican Pacific Daylight Saving Time',
+        daylight: 'Mexican Pacific Daylight Time',
       ),
     ),
     'Mongolia': MetaZone(
@@ -11259,7 +11347,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'New Zealand Time',
         standard: 'New Zealand Standard Time',
-        daylight: 'New Zealand Daylight Saving Time',
+        daylight: 'New Zealand Daylight Time',
       ),
     ),
     'Newfoundland': MetaZone(
@@ -11267,7 +11355,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Newfoundland Time',
         standard: 'Newfoundland Standard Time',
-        daylight: 'Newfoundland Daylight Saving Time',
+        daylight: 'Newfoundland Daylight Time',
       ),
       short: TimeZoneName(
         generic: 'NT',
@@ -11286,7 +11374,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Norfolk Island Time',
         standard: 'Norfolk Island Standard Time',
-        daylight: 'Norfolk Island Daylight Saving Time',
+        daylight: 'Norfolk Island Daylight Time',
       ),
     ),
     'Noronha': MetaZone(
@@ -11454,7 +11542,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Samoa Time',
         standard: 'Samoa Standard Time',
-        daylight: 'Samoa Daylight Saving Time',
+        daylight: 'Samoan Time',
       ),
     ),
     'Seychelles': MetaZone(
@@ -11504,7 +11592,7 @@ class TimeZonesEnCA extends TimeZones {
       long: TimeZoneName(
         generic: 'Taipei Time',
         standard: 'Taipei Standard Time',
-        daylight: 'Taipei Daylight Saving Time',
+        daylight: 'Taipei Daylight Time',
       ),
     ),
     'Tajikistan': MetaZone(

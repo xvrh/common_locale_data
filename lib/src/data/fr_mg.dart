@@ -323,6 +323,10 @@ class LanguagesFrMG extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -879,10 +883,6 @@ class LanguagesFrMG extends Languages {
       'goh',
       'ancien haut allemand',
     ),
-    'gom': Language(
-      'gom',
-      'konkani de Goa',
-    ),
     'gon': Language(
       'gon',
       'gondi',
@@ -1319,6 +1319,10 @@ class LanguagesFrMG extends Languages {
       'kwk',
       'kwak’wala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirghize',
@@ -1434,10 +1438,6 @@ class LanguagesFrMG extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2505,6 +2505,10 @@ class LanguagesFrMG extends Languages {
       'vmf',
       'franconien du Main',
     ),
+    'vmw': Language(
+      'vmw',
+      'macua',
+    ),
     'vo': Language(
       'vo',
       'volapük',
@@ -2564,6 +2568,10 @@ class LanguagesFrMG extends Languages {
     'xmf': Language(
       'xmf',
       'mingrélien',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -7633,6 +7641,72 @@ class UnitsFrMG implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'lumière',
+          one: '{0} lumière',
+          other: '{0} lumière',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'lumière',
+          one: '{0} lumière',
+          other: '{0} lumière',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'lumière',
+          one: '{0} lumière',
+          other: '{0} lumière',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parts par milliard',
+          one: '{0} part par milliard',
+          other: '{0} parts par milliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part par milliard',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nuits',
+          one: '{0} nuit',
+          other: '{0} nuits',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nuits',
+          one: '{0} nuit',
+          other: '{0} nuits',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nuits',
+          one: '{0}nuit',
+          other: '{0}nuits',
+        ),
+      );
 }
 
 class DateFieldsFrMG implements DateFields {
@@ -10084,9 +10158,6 @@ class TimeZonesFrMG extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Tchita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tchoïbalsan',
-    ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damas',
     ),
@@ -10555,14 +10626,6 @@ class TimeZonesFrMG extends TimeZones {
         daylight: 'heure d’été de Chine',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'heure de Choibalsan',
-        standard: 'heure normale de Choibalsan',
-        daylight: 'heure d’été de Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10853,6 +10916,12 @@ class TimeZonesFrMG extends TimeZones {
         generic: 'heure de Petropavlovsk-Kamchatski',
         standard: 'heure normale de Petropavlovsk-Kamchatski',
         daylight: 'heure d’été de Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'heure du Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -267,6 +267,10 @@ class LanguagesBs extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1117,6 +1121,10 @@ class LanguagesBs extends Languages {
       'kwk',
       'kvakvala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiški',
@@ -1220,10 +1228,6 @@ class LanguagesBs extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1934,6 +1938,10 @@ class LanguagesBs extends Languages {
       'syr',
       'sirijski',
     ),
+    'szl': Language(
+      'szl',
+      'šleski',
+    ),
     'ta': Language(
       'ta',
       'tamilski',
@@ -2118,10 +2126,6 @@ class LanguagesBs extends Languages {
       'uz',
       'uzbečki',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2133,6 +2137,10 @@ class LanguagesBs extends Languages {
     'vi': Language(
       'vi',
       'vijetnamski',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2185,6 +2193,10 @@ class LanguagesBs extends Languages {
     'xh': Language(
       'xh',
       'hosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -3830,7 +3842,7 @@ class UnitsBs implements Units {
   Unit get areaAcre => Unit(
         long: UnitCountPattern(
           _locale,
-          'katastarska jutra',
+          'akeri',
           one: '{0} katastarsko jutro',
           few: '{0} katastarska jutra',
           other: '{0} katastarskih jutara',
@@ -3838,16 +3850,16 @@ class UnitsBs implements Units {
         short: UnitCountPattern(
           _locale,
           'katastarska jutra',
-          one: '{0} kj',
-          few: '{0} kj',
-          other: '{0} kj',
+          one: '{0} ac',
+          few: '{0} ac',
+          other: '{0} ac',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'katastarska jutra',
-          one: '{0} kj',
-          few: '{0} kj',
-          other: '{0} kj',
+          'aker',
+          one: '{0} ac',
+          few: '{0} ac',
+          other: '{0} ac',
         ),
       );
 
@@ -5019,7 +5031,7 @@ class UnitsBs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kal.',
+          'cal',
           one: '{0} kal.',
           few: '{0} kal.',
           other: '{0} cal',
@@ -5498,21 +5510,21 @@ class UnitsBs implements Units {
           _locale,
           'tačaka po centimetru',
           one: '{0} tačka po centimetru',
-          few: '{0} ppcm',
+          few: '{0} dpcm',
           other: '{0} tačaka po centimetru',
         ),
         short: UnitCountPattern(
           _locale,
           'dpcm',
           one: '{0} dpcm',
-          few: '{0} ppcm',
+          few: '{0} dpcm',
           other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpcm',
           one: '{0}dpcm',
-          few: '{0} ppcm',
+          few: '{0} dpcm',
           other: '{0} dpcm',
         ),
       );
@@ -5523,21 +5535,21 @@ class UnitsBs implements Units {
           _locale,
           'tačaka po inču',
           one: '{0} tačka po inču',
-          few: '{0} ppi',
+          few: '{0} dpi',
           other: '{0} tačaka po inču',
         ),
         short: UnitCountPattern(
           _locale,
           'dpi',
           one: '{0} dpi',
-          few: '{0} ppi',
+          few: '{0} dpi',
           other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpi',
           one: '{0}dpi',
-          few: '{0} ppi',
+          few: '{0} dpi',
           other: '{0} dpi',
         ),
       );
@@ -5571,23 +5583,23 @@ class UnitsBs implements Units {
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'radijus zemlje',
-          one: '{0} radijus zemlje',
-          few: '{0} radijusa zemlje',
-          other: '{0} radijus zemlje',
+          'radijus Zemlje',
+          one: '{0} radijus Zemlje',
+          few: '{0} radijusa Zemlje',
+          other: '{0} radijusa Zemlje',
         ),
         short: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} radijus zemlje',
-          few: '{0} radijusa zemlje',
+          one: '{0} radijus Zemlje',
+          few: '{0} radijusa Zemlje',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} radijus zemlje',
-          few: '{0} radijusa zemlje',
+          one: '{0} radijus Zemlje',
+          few: '{0} radijusa Zemlje',
           other: '{0} R⊕',
         ),
       );
@@ -5621,21 +5633,21 @@ class UnitsBs implements Units {
   Unit get lengthMeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'metri',
+          'm',
           one: '{0} metar',
           few: '{0} metra',
           other: '{0} metara',
         ),
         short: UnitCountPattern(
           _locale,
-          'metri',
+          'm',
           one: '{0} metar',
           few: '{0} metra',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'metar',
+          'm',
           one: '{0} metar',
           few: '{0} metra',
           other: '{0} m',
@@ -5810,7 +5822,7 @@ class UnitsBs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'milje',
+          'mi',
           one: '{0} milja',
           few: '{0} milje',
           other: '{0} mi',
@@ -5835,7 +5847,7 @@ class UnitsBs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'jardi',
+          'yd',
           one: '{0} jard',
           few: '{0} jarda',
           other: '{0} yd',
@@ -5860,7 +5872,7 @@ class UnitsBs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'stope',
+          'ft',
           one: '{0} stopa',
           few: '{0} stope',
           other: '{0} ft',
@@ -5885,7 +5897,7 @@ class UnitsBs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'inči',
+          'in',
           one: '{0} inč',
           few: '{0} inča',
           other: '{0} in',
@@ -5935,7 +5947,7 @@ class UnitsBs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'svjetlosne godine',
+          'sg',
           one: '{0} sg',
           few: '{0} sg',
           other: '{0} sg',
@@ -6583,7 +6595,7 @@ class UnitsBs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'grain',
+          'gr',
           one: '{0} gr',
           few: '{0} gr',
           other: '{0} gr',
@@ -7448,17 +7460,17 @@ class UnitsBs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ML',
-          one: '{0} megalitar',
-          few: '{0} megalitra',
-          other: '{0} ML',
+          'Ml',
+          one: '{0} Ml',
+          few: '{0} Ml',
+          other: '{0} Ml',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ML',
-          one: '{0} megalitar',
-          few: '{0} megalitra',
-          other: '{0} ML',
+          'Ml',
+          one: '{0} Ml',
+          few: '{0} Ml',
+          other: '{0} Ml',
         ),
       );
 
@@ -7473,17 +7485,17 @@ class UnitsBs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'hL',
-          one: '{0} hektolitar',
-          few: '{0} hektolitra',
-          other: '{0} hL',
+          'hl',
+          one: '{0} hl',
+          few: '{0} hl',
+          other: '{0} hl',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'hL',
-          one: '{0} hektolitar',
-          few: '{0} hektolitra',
-          other: '{0} hL',
+          'hl',
+          one: '{0} hl',
+          few: '{0} hl',
+          other: '{0} hl',
         ),
       );
 
@@ -7523,17 +7535,17 @@ class UnitsBs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'dL',
-          one: '{0} decilitar',
-          few: '{0} decilitra',
-          other: '{0} dL',
+          'dl',
+          one: '{0} dl',
+          few: '{0} dl',
+          other: '{0} dl',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dL',
-          one: '{0} decilitar',
-          few: '{0} decilitra',
-          other: '{0} dL',
+          'dl',
+          one: '{0} dl',
+          few: '{0} dl',
+          other: '{0} dl',
         ),
       );
 
@@ -7548,17 +7560,17 @@ class UnitsBs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'cL',
-          one: '{0} centilitar',
-          few: '{0} centilitra',
-          other: '{0} cL',
+          'cl',
+          one: '{0} cl',
+          few: '{0} cl',
+          other: '{0} cl',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'cL',
-          one: '{0} centilitar',
-          few: '{0} centilitra',
-          other: '{0} cL',
+          'cl',
+          one: '{0} cl',
+          few: '{0} cl',
+          other: '{0} cl',
         ),
       );
 
@@ -7573,17 +7585,17 @@ class UnitsBs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'mL',
-          one: '{0} mililitar',
-          few: '{0} mililitra',
-          other: '{0} mL',
+          'ml',
+          one: '{0} ml',
+          few: '{0} ml',
+          other: '{0} ml',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mL',
-          one: '{0} mililitar',
-          few: '{0} mililitra',
-          other: '{0} mL',
+          'ml',
+          one: '{0} ml',
+          few: '{0} ml',
+          other: '{0} ml',
         ),
       );
 
@@ -7873,10 +7885,10 @@ class UnitsBs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'tbsp',
+          'kašike',
           one: '{0} kšk.',
           few: '{0} kšk.',
-          other: '{0} tbsp',
+          other: '{0} kšk.',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7898,10 +7910,10 @@ class UnitsBs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'tsp',
+          'kšč.',
           one: '{0} kšč.',
           few: '{0} kšč.',
-          other: '{0} tsp',
+          other: '{0} kšč.',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -8099,16 +8111,16 @@ class UnitsBs implements Units {
         short: UnitCountPattern(
           _locale,
           'imp. kvarc',
-          one: '{0} imp. kvarc',
-          few: '{0} imp. kvarca',
-          other: '{0} imp. kvarca',
+          one: '{0} imp. kvart',
+          few: '{0} imp. kvarta',
+          other: '{0} imp. kvarata',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'imp. kvarc',
-          one: '{0} imp. kvarc',
-          few: '{0} imp. kvarca',
-          other: '{0} imp. kvarca',
+          'imp. kvart',
+          one: '{0} imp. kvart',
+          few: '{0} imp. kvarta',
+          other: '{0} imp. kvarata',
         ),
       );
 
@@ -8131,6 +8143,75 @@ class UnitsBs implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noći',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noći',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noći',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
         ),
       );
 }
@@ -8578,15 +8659,15 @@ class DateFieldsBs implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'prije {0} ponedjeljak',
-            few: 'prije {0} ponedjeljka',
-            other: 'prije {0} ponedjeljaka',
+            one: 'prije {0} pon',
+            few: 'prije {0} pon',
+            other: 'prije {0} pon',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'prije {0} ponedjeljak',
-            few: 'prije {0} ponedjeljka',
-            other: 'prije {0} ponedjeljaka',
+            one: 'prije {0} pon',
+            few: 'prije {0} pon',
+            other: 'prije {0} pon',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8598,15 +8679,15 @@ class DateFieldsBs implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'za {0} ponedjeljak',
-            few: 'za {0} ponedjeljka',
-            other: 'za {0} ponedjeljaka',
+            one: 'za {0} pon',
+            few: 'za {0} pon',
+            other: 'za {0} pon',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'za {0} ponedjeljak',
-            few: 'za {0} ponedjeljka',
-            other: 'za {0} ponedjeljaka',
+            one: 'za {0} pon',
+            few: 'za {0} pon',
+            other: 'za {0} pon',
           ),
         ),
       );
@@ -8972,7 +9053,7 @@ class DateFieldsBs implements DateFields {
         displayName: MultiLength(
           long: 'minuta',
           short: 'min',
-          narrow: 'min.',
+          narrow: 'min',
         ),
         now: MultiLength(
           long: 'ova minuta',
@@ -9008,13 +9089,13 @@ class DateFieldsBs implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'za {0} min.',
+            one: 'za {0} min',
             few: 'za {0} min.',
             other: 'za {0} min.',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'za {0} min.',
+            one: 'za {0} min',
             few: 'za {0} min.',
             other: 'za {0} min.',
           ),
@@ -9025,7 +9106,7 @@ class DateFieldsBs implements DateFields {
   DateFieldDataTime get second => DateFieldDataTime(
         displayName: MultiLength(
           long: 'sekunda',
-          short: 'sek.',
+          short: 's',
           narrow: 's',
         ),
         now: MultiLength(
@@ -9741,7 +9822,7 @@ class TerritoriesBs implements Territories {
     ),
     'IO': Territory(
       'IO',
-      'Nepoznata oblast (IO)',
+      'Britanska Teritorija u Indijskom Okeanu',
     ),
     'IQ': Territory(
       'IQ',
@@ -10653,9 +10734,6 @@ class TimeZonesBs extends TimeZones {
     'Asia/Calcutta': TimeZoneNames(
       exemplarCity: 'Kolkata',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Čojbalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -11133,14 +11211,6 @@ class TimeZonesBs extends TimeZones {
         daylight: 'Kinesko ljetno vrijeme',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Čojbalsansko vrijeme',
-        standard: 'Čojbalsansko standardno vrijeme',
-        daylight: 'Čojbalsansko ljetno vrijeme',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11451,16 +11521,22 @@ class TimeZonesBs extends TimeZones {
         daylight: 'Petropavlovsk-Kamčatski letnje računanje vremena',
       ),
     ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazahstansko vrijeme',
+      ),
+    ),
     'Kazakhstan_Eastern': MetaZone(
       code: 'Kazakhstan_Eastern',
       long: TimeZoneName(
-        standard: 'Istočnokazahstansko vrijeme',
+        standard: 'istočnokazahstansko vrijeme',
       ),
     ),
     'Kazakhstan_Western': MetaZone(
       code: 'Kazakhstan_Western',
       long: TimeZoneName(
-        standard: 'Zapadnokazahstansko vrijeme',
+        standard: 'zapadnokazahstansko vrijeme',
       ),
     ),
     'Korea': MetaZone(
@@ -11488,7 +11564,7 @@ class TimeZonesBs extends TimeZones {
     'Kyrgystan': MetaZone(
       code: 'Kyrgystan',
       long: TimeZoneName(
-        standard: 'Kirgistansko vrijeme',
+        standard: 'kirgistansko vrijeme',
       ),
     ),
     'Lanka': MetaZone(
@@ -11848,7 +11924,7 @@ class TimeZonesBs extends TimeZones {
     'Tajikistan': MetaZone(
       code: 'Tajikistan',
       long: TimeZoneName(
-        standard: 'Tadžikistansko vrijeme',
+        standard: 'tadžikistansko vrijeme',
       ),
     ),
     'Tokelau': MetaZone(
@@ -11874,9 +11950,9 @@ class TimeZonesBs extends TimeZones {
     'Turkmenistan': MetaZone(
       code: 'Turkmenistan',
       long: TimeZoneName(
-        generic: 'Turkmenistansko vrijeme',
-        standard: 'Turkmenistansko standardno vrijeme',
-        daylight: 'Turkmenistansko ljetno vrijeme',
+        generic: 'turkmenistansko vrijeme',
+        standard: 'turkmenistansko standardno vrijeme',
+        daylight: 'turkmenistansko ljetno vrijeme',
       ),
     ),
     'Tuvalu': MetaZone(
@@ -11896,9 +11972,9 @@ class TimeZonesBs extends TimeZones {
     'Uzbekistan': MetaZone(
       code: 'Uzbekistan',
       long: TimeZoneName(
-        generic: 'Uzbekistansko vrijeme',
-        standard: 'Uzbekistansko standardno vrijeme',
-        daylight: 'Uzbekistansko ljetno vrijeme',
+        generic: 'uzbekistansko vrijeme',
+        standard: 'uzbekistansko standardno vrijeme',
+        daylight: 'uzbekistansko ljetno vrijeme',
       ),
     ),
     'Vanuatu': MetaZone(

@@ -211,6 +211,10 @@ class LanguagesKk extends Languages {
       'bla',
       'сиксика тілі',
     ),
+    'blo': Language(
+      'blo',
+      'ании тілі',
+    ),
     'bm': Language(
       'bm',
       'бамбара тілі',
@@ -865,6 +869,10 @@ class LanguagesKk extends Languages {
       'kwk',
       'квакиутль тілі',
     ),
+    'kxv': Language(
+      'kxv',
+      'куви тілі',
+    ),
     'ky': Language(
       'ky',
       'қырғыз тілі',
@@ -911,7 +919,7 @@ class LanguagesKk extends Languages {
     ),
     'lmo': Language(
       'lmo',
-      'Ломбард',
+      'ломбард тілі',
     ),
     'ln': Language(
       'ln',
@@ -1541,6 +1549,10 @@ class LanguagesKk extends Languages {
       'syr',
       'сирия тілі',
     ),
+    'szl': Language(
+      'szl',
+      'силез тілі',
+    ),
     'ta': Language(
       'ta',
       'тамил тілі',
@@ -1709,6 +1721,10 @@ class LanguagesKk extends Languages {
       'vi',
       'вьетнам тілі',
     ),
+    'vmw': Language(
+      'vmw',
+      'макуа тілі',
+    ),
     'vo': Language(
       'vo',
       'волапюк тілі',
@@ -1753,6 +1769,10 @@ class LanguagesKk extends Languages {
       'xh',
       'кхоса тілі',
     ),
+    'xnr': Language(
+      'xnr',
+      'кангри тілі',
+    ),
     'xog': Language(
       'xog',
       'сога тілі',
@@ -1781,6 +1801,10 @@ class LanguagesKk extends Languages {
       'yue',
       'кантон тілі',
       menu: 'қытай тілі (кантон)',
+    ),
+    'za': Language(
+      'za',
+      'чжуан тілі',
     ),
     'zgh': Language(
       'zgh',
@@ -7040,6 +7064,72 @@ class UnitsKk implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'жарық',
+          one: '{0} жарық',
+          other: '{0} жарық',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'жарық',
+          one: '{0} жарық',
+          other: '{0} жарық',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'жарық',
+          one: '{0} жарық',
+          other: '{0} жарық',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'миллиардтағы бөлік',
+          one: '{0} б/млрд',
+          other: '{0} б/млрд',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'бөлік/миллиард',
+          one: '{0} б/млрд',
+          other: '{0} б/млрд',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'б/млрд',
+          one: '{0} б/млрд',
+          other: '{0} б/млрд',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'түн',
+          one: '{0} түн',
+          other: '{0} түн',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'түн',
+          one: '{0} түн',
+          other: '{0} түн',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'түн',
+          one: '{0}түн',
+          other: '{0}түн',
+        ),
+      );
 }
 
 class DateFieldsKk implements DateFields {
@@ -10029,9 +10119,6 @@ class TimeZonesKk extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чита',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чойбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Коломбо',
     ),
@@ -10706,14 +10793,6 @@ class TimeZonesKk extends TimeZones {
         daylight: 'Қытай жазғы уақыты',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Чойбалсан уақыты',
-        standard: 'Чойбалсан стандартты уақыты',
-        daylight: 'Чойбалсан жазғы уақыты',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10995,6 +11074,12 @@ class TimeZonesKk extends TimeZones {
         generic: 'Жапония уақыты',
         standard: 'Жапония стандартты уақыты',
         daylight: 'Жапония жазғы уақыты',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Қазақстан уақыты',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -307,6 +307,10 @@ class LanguagesId extends Languages {
       'bla',
       'Siksika',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -491,7 +495,7 @@ class LanguagesId extends Languages {
     ),
     'cs': Language(
       'cs',
-      'Cheska',
+      'Ceko',
     ),
     'csb': Language(
       'csb',
@@ -648,7 +652,7 @@ class LanguagesId extends Languages {
     ),
     'et': Language(
       'et',
-      'Esti',
+      'Estonia',
     ),
     'eu': Language(
       'eu',
@@ -1182,6 +1186,10 @@ class LanguagesId extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Kirgiz',
@@ -1268,7 +1276,7 @@ class LanguagesId extends Languages {
     ),
     'lt': Language(
       'lt',
-      'Lituavi',
+      'Lituania',
     ),
     'lu': Language(
       'lu',
@@ -1300,7 +1308,7 @@ class LanguagesId extends Languages {
     ),
     'lv': Language(
       'lv',
-      'Latvi',
+      'Latvia',
     ),
     'lzz': Language(
       'lzz',
@@ -1905,7 +1913,7 @@ class LanguagesId extends Languages {
     ),
     'sl': Language(
       'sl',
-      'Sloven',
+      'Slovenia',
     ),
     'slh': Language(
       'slh',
@@ -2244,6 +2252,10 @@ class LanguagesId extends Languages {
       'vi',
       'Vietnam',
     ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
+    ),
     'vo': Language(
       'vo',
       'Volapuk',
@@ -2295,6 +2307,10 @@ class LanguagesId extends Languages {
     'xh': Language(
       'xh',
       'Xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
@@ -2393,11 +2409,6 @@ class ScriptsId extends Scripts {
     'Aghb': Script(
       'Aghb',
       'Albania Kaukasia',
-    ),
-    'Arab': Script(
-      'Arab',
-      'Arab',
-      variant: 'Arab Persia',
     ),
     'Aran': Script(
       'Aran',
@@ -2652,10 +2663,6 @@ class ScriptsId extends Scripts {
     'Ital': Script(
       'Ital',
       'Italia Lama',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
     ),
     'Java': Script(
       'Java',
@@ -3068,10 +3075,6 @@ class ScriptsId extends Scripts {
     'Thaa': Script(
       'Thaa',
       'Thaana',
-    ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
     ),
     'Tibt': Script(
       'Tibt',
@@ -7632,6 +7635,72 @@ class UnitsId implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'cahaya',
+          one: '{0} light',
+          other: '{0} cahaya',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'cahaya',
+          one: '{0} light',
+          other: '{0} cahaya',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'cahaya',
+          one: '{0}light',
+          other: '{0} cahaya',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'bagian per miliar',
+          one: '{0} part per billion',
+          other: '{0} bagian per miliar',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'bagian/miliar',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'bagian/miliar',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'malam',
+          one: '{0} night',
+          other: '{0} malam',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'malam',
+          one: '{0} night',
+          other: '{0} malam',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'malam',
+          one: '{0}night',
+          other: '{0} malam',
+        ),
+      );
 }
 
 class DateFieldsId implements DateFields {
@@ -10262,14 +10331,6 @@ class TimeZonesId extends TimeZones {
         daylight: 'Waktu Musim Panas Tiongkok',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Waktu Choibalsan',
-        standard: 'Waktu Standar Choibalsan',
-        daylight: 'Waktu Musim Panas Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10584,6 +10645,12 @@ class TimeZonesId extends TimeZones {
         generic: 'Waktu Petropavlovsk-Kamchatsky',
         standard: 'Waktu Standar Petropavlovsk-Kamchatsky',
         daylight: 'Waktu Musim Panas Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Waktu Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

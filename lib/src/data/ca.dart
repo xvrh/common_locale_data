@@ -295,6 +295,10 @@ class LanguagesCa extends Languages {
       'bla',
       'blackfoot',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -819,10 +823,6 @@ class LanguagesCa extends Languages {
       'goh',
       'alt alemany antic',
     ),
-    'gom': Language(
-      'gom',
-      'concani de Goa',
-    ),
     'gon': Language(
       'gon',
       'gondi',
@@ -1235,6 +1235,10 @@ class LanguagesCa extends Languages {
       'kwk',
       'kwak’wala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirguís',
@@ -1338,10 +1342,6 @@ class LanguagesCa extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2312,10 +2312,6 @@ class LanguagesCa extends Languages {
       'uz',
       'uzbek',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2335,6 +2331,10 @@ class LanguagesCa extends Languages {
     'vls': Language(
       'vls',
       'flamenc occidental',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2391,6 +2391,10 @@ class LanguagesCa extends Languages {
     'xmf': Language(
       'xmf',
       'mingrelià',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -7636,6 +7640,72 @@ class UnitsCa implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'llum',
+          one: '{0} llum',
+          other: '{0} llum',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'llum',
+          one: '{0} llum',
+          other: '{0} llum',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'llum',
+          one: '{0} llum',
+          other: '{0} llum',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'part per mil milions',
+          one: '{0} part per mil milions',
+          other: '{0} parts per mil milions',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'part/mil milions',
+          one: '{0} part per mil milions',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'part/mil milions',
+          one: '{0} part per mil milions',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nits',
+          one: '{0} nit',
+          other: '{0} nits',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nits',
+          one: '{0} nit',
+          other: '{0} nits',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nit',
+          one: '{0}/nit',
+          other: '{0}/nit',
+        ),
+      );
 }
 
 class DateFieldsCa implements DateFields {
@@ -9011,8 +9081,8 @@ class TerritoriesCa implements Territories {
     ),
     'FK': Territory(
       'FK',
-      'Illes Malvines',
-      variant: 'Illes Malvines (Illes Falkland)',
+      'Illes Falkland',
+      variant: 'Illes Falkland (Illes Malvines)',
     ),
     'FM': Territory(
       'FM',
@@ -9234,7 +9304,7 @@ class TerritoriesCa implements Territories {
     ),
     'LA': Territory(
       'LA',
-      'Laos',
+      'Lao',
     ),
     'LB': Territory(
       'LB',
@@ -9383,7 +9453,7 @@ class TerritoriesCa implements Territories {
     ),
     'NF': Territory(
       'NF',
-      'Norfolk',
+      'Illa Norfolk',
     ),
     'NG': Territory(
       'NG',
@@ -9606,7 +9676,7 @@ class TerritoriesCa implements Territories {
     ),
     'TF': Territory(
       'TF',
-      'Territoris Australs Francesos',
+      'Terres Australs Antàrtiques Franceses',
     ),
     'TG': Territory(
       'TG',
@@ -9648,7 +9718,7 @@ class TerritoriesCa implements Territories {
     ),
     'TT': Territory(
       'TT',
-      'Trinitat i Tobago',
+      'Trinidad i Tobago',
     ),
     'TV': Territory(
       'TV',
@@ -9672,7 +9742,7 @@ class TerritoriesCa implements Territories {
     ),
     'UM': Territory(
       'UM',
-      'Illes Perifèriques Menors dels EUA',
+      'Illes Menors Allunyades dels Estats Units',
     ),
     'UN': Territory(
       'UN',
@@ -9706,11 +9776,11 @@ class TerritoriesCa implements Territories {
     ),
     'VG': Territory(
       'VG',
-      'Illes Verges britàniques',
+      'Illes Verges Britàniques',
     ),
     'VI': Territory(
       'VI',
-      'Illes Verges nord-americanes',
+      'Illes Verges dels Estats Units',
     ),
     'VN': Territory(
       'VN',
@@ -9750,7 +9820,7 @@ class TerritoriesCa implements Territories {
     ),
     'ZA': Territory(
       'ZA',
-      'República de Sud-àfrica',
+      'Sud-àfrica',
     ),
     'ZM': Territory(
       'ZM',
@@ -10241,27 +10311,27 @@ class TimeZonesCa extends TimeZones {
     'Africa_Central': MetaZone(
       code: 'Africa_Central',
       long: TimeZoneName(
-        standard: 'Hora de l’Àfrica Central',
+        standard: 'Hora de l’Àfrica central',
       ),
     ),
     'Africa_Eastern': MetaZone(
       code: 'Africa_Eastern',
       long: TimeZoneName(
-        standard: 'Hora de l’Àfrica Oriental',
+        standard: 'Hora de l’Àfrica oriental',
       ),
     ),
     'Africa_Southern': MetaZone(
       code: 'Africa_Southern',
       long: TimeZoneName(
-        standard: 'Hora estàndard del sud de l’Àfrica',
+        standard: 'Hora estàndard de l’Àfrica meridional',
       ),
     ),
     'Africa_Western': MetaZone(
       code: 'Africa_Western',
       long: TimeZoneName(
-        generic: 'Hora de l’Àfrica Occidental',
-        standard: 'Hora estàndard de l’Àfrica Occidental',
-        daylight: 'Hora d’estiu de l’Àfrica Occidental',
+        generic: 'Hora de l’Àfrica occidental',
+        standard: 'Hora estàndard de l’Àfrica occidental',
+        daylight: 'Hora d’estiu de l’Àfrica occidental',
       ),
     ),
     'Alaska': MetaZone(
@@ -10315,7 +10385,7 @@ class TimeZonesCa extends TimeZones {
     'Anadyr': MetaZone(
       code: 'Anadyr',
       long: TimeZoneName(
-        generic: 'Hora d’Anadyr',
+        generic: 'Hora d’Anàdir',
         standard: 'Hora estàndard d’Anadyr',
         daylight: 'Horari d’estiu d’Anadyr',
       ),
@@ -10371,9 +10441,9 @@ class TimeZonesCa extends TimeZones {
     'Australia_Central': MetaZone(
       code: 'Australia_Central',
       long: TimeZoneName(
-        generic: 'Hora d’Austràlia Central',
-        standard: 'Hora estàndard d’Austràlia Central',
-        daylight: 'Hora d’estiu d’Austràlia Central',
+        generic: 'Hora d’Austràlia central',
+        standard: 'Hora estàndard d’Austràlia central',
+        daylight: 'Hora d’estiu d’Austràlia central',
       ),
     ),
     'Australia_CentralWestern': MetaZone(
@@ -10387,17 +10457,17 @@ class TimeZonesCa extends TimeZones {
     'Australia_Eastern': MetaZone(
       code: 'Australia_Eastern',
       long: TimeZoneName(
-        generic: 'Hora d’Austràlia Oriental',
-        standard: 'Hora estàndard d’Austràlia Oriental',
-        daylight: 'Hora d’estiu d’Austràlia Oriental',
+        generic: 'Hora d’Austràlia oriental',
+        standard: 'Hora estàndard d’Austràlia oriental',
+        daylight: 'Hora d’estiu d’Austràlia oriental',
       ),
     ),
     'Australia_Western': MetaZone(
       code: 'Australia_Western',
       long: TimeZoneName(
-        generic: 'Hora d’Austràlia Occidental',
-        standard: 'Hora estàndard d’Austràlia Occidental',
-        daylight: 'Hora d’estiu d’Austràlia Occidental',
+        generic: 'Hora d’Austràlia occidental',
+        standard: 'Hora estàndard d’Austràlia occidental',
+        daylight: 'Hora d’estiu d’Austràlia occidental',
       ),
     ),
     'Azerbaijan': MetaZone(
@@ -10488,14 +10558,6 @@ class TimeZonesCa extends TimeZones {
         daylight: 'Hora d’estiu de la Xina',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Hora de Choibalsan',
-        standard: 'Hora estàndard de Choibalsan',
-        daylight: 'Hora d’estiu de Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10567,9 +10629,9 @@ class TimeZonesCa extends TimeZones {
     'Europe_Central': MetaZone(
       code: 'Europe_Central',
       long: TimeZoneName(
-        generic: 'Hora del Centre d’Europa',
-        standard: 'Hora estàndard del Centre d’Europa',
-        daylight: 'Hora d’estiu del Centre d’Europa',
+        generic: 'Hora d’Europa central',
+        standard: 'Hora estàndard d’Europa central',
+        daylight: 'Hora d’estiu d’Europa central',
       ),
       short: TimeZoneName(
         generic: 'CET',
@@ -10580,9 +10642,9 @@ class TimeZonesCa extends TimeZones {
     'Europe_Eastern': MetaZone(
       code: 'Europe_Eastern',
       long: TimeZoneName(
-        generic: 'Hora de l’Est d’Europa',
-        standard: 'Hora estàndard de l’Est d’Europa',
-        daylight: 'Hora d’estiu de l’Est d’Europa',
+        generic: 'Hora d’Europa oriental',
+        standard: 'Hora estàndard d’Europa oriental',
+        daylight: 'Hora d’estiu d’Europa oriental',
       ),
       short: TimeZoneName(
         generic: 'EET',
@@ -10593,15 +10655,15 @@ class TimeZonesCa extends TimeZones {
     'Europe_Further_Eastern': MetaZone(
       code: 'Europe_Further_Eastern',
       long: TimeZoneName(
-        standard: 'Hora de l’Extrem Orient Europeu',
+        standard: 'Hora de l’extrem oriental d’Europa',
       ),
     ),
     'Europe_Western': MetaZone(
       code: 'Europe_Western',
       long: TimeZoneName(
-        generic: 'Hora de l’Oest d’Europa',
-        standard: 'Hora estàndard de l’Oest d’Europa',
-        daylight: 'Hora d’estiu de l’Oest d’Europa',
+        generic: 'Hora d’Europa occidental',
+        standard: 'Hora estàndard d’Europa occidental',
+        daylight: 'Hora d’estiu d’Europa occidental',
       ),
       short: TimeZoneName(
         generic: 'WET',
@@ -10634,7 +10696,8 @@ class TimeZonesCa extends TimeZones {
     'French_Southern': MetaZone(
       code: 'French_Southern',
       long: TimeZoneName(
-        standard: 'Hora d’Antàrtida i França del Sud',
+        standard:
+            'Hora d’Antàrtida i de les Terres Australs Antàrtiques Franceses',
       ),
     ),
     'Galapagos': MetaZone(
@@ -10666,7 +10729,7 @@ class TimeZonesCa extends TimeZones {
     'GMT': MetaZone(
       code: 'GMT',
       long: TimeZoneName(
-        standard: 'Hora del Meridià de Greenwich',
+        standard: 'Hora del meridià de Greenwich',
       ),
       short: TimeZoneName(
         standard: 'GMT',
@@ -10798,6 +10861,12 @@ class TimeZonesCa extends TimeZones {
         generic: 'Hora de Kamtxatka',
         standard: 'Hora estàndard de Petropavlovsk de Kamtxatka',
         daylight: 'Horari d’estiu de Petropavlovsk de Kamtxatka',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Hora del Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

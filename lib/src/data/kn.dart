@@ -251,6 +251,10 @@ class LanguagesKn extends Languages {
       'bla',
       'ಸಿಕ್ಸಿಕಾ',
     ),
+    'blo': Language(
+      'blo',
+      'ಅನೀ',
+    ),
     'bm': Language(
       'bm',
       'ಬಂಬಾರಾ',
@@ -885,7 +889,7 @@ class LanguagesKn extends Languages {
     ),
     'ie': Language(
       'ie',
-      'ಇಂಟರ್ಲಿಂಗ್',
+      'ಇಂಟರ್‌ಲಿಂಗ್',
     ),
     'ig': Language(
       'ig',
@@ -1135,6 +1139,10 @@ class LanguagesKn extends Languages {
       'kwk',
       'ಕ್ವಾಕ್‌ವಾಲಾ',
     ),
+    'kxv': Language(
+      'kxv',
+      'ಕುವಿ',
+    ),
     'ky': Language(
       'ky',
       'ಕಿರ್ಗಿಜ್',
@@ -1175,6 +1183,10 @@ class LanguagesKn extends Languages {
       'li',
       'ಲಿಂಬರ್ಗಿಶ್',
     ),
+    'lij': Language(
+      'lij',
+      'ಲಿಗುರಿಯನ್',
+    ),
     'lil': Language(
       'lil',
       'ಲಿಲ್ಲೂವೆಟ್',
@@ -1182,6 +1194,10 @@ class LanguagesKn extends Languages {
     'lkt': Language(
       'lkt',
       'ಲಕೊಟ',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ಲೋಂಬರ್ಡ್',
     ),
     'ln': Language(
       'ln',
@@ -1940,6 +1956,10 @@ class LanguagesKn extends Languages {
       'syr',
       'ಸಿರಿಯಾಕ್',
     ),
+    'szl': Language(
+      'szl',
+      'ಸಿಲೆಸಿಯನ್',
+    ),
     'ta': Language(
       'ta',
       'ತಮಿಳು',
@@ -2133,9 +2153,17 @@ class LanguagesKn extends Languages {
       've',
       'ವೆಂಡಾ',
     ),
+    'vec': Language(
+      'vec',
+      'ವೆನಿಶಿಯನ್',
+    ),
     'vi': Language(
       'vi',
       'ವಿಯೆಟ್ನಾಮೀಸ್',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ಮಖುವಾ',
     ),
     'vo': Language(
       'vo',
@@ -2188,6 +2216,10 @@ class LanguagesKn extends Languages {
     'xh': Language(
       'xh',
       'ಕ್ಸೋಸ',
+    ),
+    'xnr': Language(
+      'xnr',
+      'ಕಂಗ್ರಿ',
     ),
     'xog': Language(
       'xog',
@@ -3199,7 +3231,7 @@ class UnitsKn implements Units {
         short: UnitCountPattern(
           _locale,
           'ಆರ್ಕ್‌ಸೆಕೆಂ',
-          one: '{0} ಆರ್ಕ್ಸ್‌ ಸೆಂ',
+          one: '{0} ಆರ್ಕ್‌ಸೆಕೆಂ',
           other: '{0} ಆರ್ಕ್‌ಸೆಕೆಂ',
         ),
         narrow: UnitCountPattern(
@@ -4503,8 +4535,8 @@ class UnitsKn implements Units {
         narrow: UnitCountPattern(
           _locale,
           'BTU',
-          one: '{0}ಬ್ರಿಉಯು',
-          other: '{0}ಬ್ರಿಉಯು',
+          one: '{0}Btu',
+          other: '{0}Btu',
         ),
       );
 
@@ -4579,7 +4611,7 @@ class UnitsKn implements Units {
         long: UnitCountPattern(
           _locale,
           'ಕಿಲೋವ್ಯಾಟ್-ಗಂಟೆಗಳು ಪ್ರತಿ 100 ಕಿಲೋಮೀಟರ್‌ಗಳಿಗೆ',
-          one: '{0} ಪ್ರತಿ 100 ಕಿಲೋಮೀಟರ್‌ಗೆ ಕಿಲೋವ್ಯಾಟ್-ಗಂಟೆ',
+          one: '{0} ಕಿಲೋವ್ಯಾಟ್-ಗಂಟೆ ಪ್ರತಿ 100 ಕಿಲೋಮೀಟರ್‌ಗಳಿಗೆ',
           other: '{0} ಕಿಲೋವ್ಯಾಟ್-ಗಂಟೆಗಳು ಪ್ರತಿ 100 ಕಿಲೋಮೀಟರ್‌ಗಳಿಗೆ',
         ),
         short: UnitCountPattern(
@@ -4607,13 +4639,13 @@ class UnitsKn implements Units {
         short: UnitCountPattern(
           _locale,
           'ಗಿ.ಹ',
-          one: '{0} ಗಿ.ಹ',
+          one: '{0} ಗಿಗಾಹರ್ಟ್ಸ್‌',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0}ಗಿ.ಹ',
+          one: '{0}GHz',
           other: '{0}GHz',
         ),
       );
@@ -4870,13 +4902,13 @@ class UnitsKn implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'R⊕',
+          'ಭೂಮಿಯ ತ್ರಿಜ್ಯ',
           one: '{0} ಭೂಮಿಯ ತ್ರಿಜ್ಯ',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'R⊕',
+          'ಭೂಮಿಯ ತ್ರಿಜ್ಯ',
           one: '{0} ಭೂಮಿಯ ತ್ರಿಜ್ಯ',
           other: '{0} R⊕',
         ),
@@ -5289,8 +5321,8 @@ class UnitsKn implements Units {
         short: UnitCountPattern(
           _locale,
           'ಸ್ಕ್ಯಾಂ.ಮೈ',
-          one: '{0} ಸ್ಕ್ಯಾಂ.ಮೈ',
-          other: '{0} ಸ್ಕ್ಯಾಂ.ಮೈ',
+          one: '{0} smi',
+          other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -5304,7 +5336,7 @@ class UnitsKn implements Units {
   Unit get lengthPoint => Unit(
         long: UnitCountPattern(
           _locale,
-          'ಪಾಯಿಂಟ್ಸ್',
+          'ಪಾಯಿಂಟ್‌ಗಳು',
           one: '{0} ಪಾಯಿಂಟ್',
           other: '{0} ಪಾಯಿಂಟ್‌ಗಳು',
         ),
@@ -5686,13 +5718,13 @@ class UnitsKn implements Units {
           _locale,
           'ಡಿಎ',
           one: '{0} ಡಿಎ',
-          other: '{0} Da',
+          other: '{0} ಡಿಎ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ಡಿಎ',
           one: '{0}ಡಿಎ',
-          other: '{0} Da',
+          other: '{0} ಡಿಎ',
         ),
       );
 
@@ -7125,6 +7157,72 @@ class UnitsKn implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ಲೈಟ್',
+          one: '{0} ಲೈಟ್',
+          other: '{0} ಲೈಟ್',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ಲೈಟ್',
+          one: '{0} ಲೈಟ್',
+          other: '{0} ಲೈಟ್',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ಲೈಟ್',
+          one: '{0} ಲೈಟ್',
+          other: '{0} ಲೈಟ್',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ಪಾರ್ಟ್ಸ್ ಪರ್ ಬಿಲಿಯನ್',
+          one: '{0} ಪಾರ್ಟ್ಸ್ ಪರ್ ಬಿಲಿಯನ್',
+          other: '{0} ಪಾರ್ಟ್ಸ್ ಪರ್ ಬಿಲಿಯನ್',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ಪಾರ್ಟ್ಸ್/ಬಿಲಿಯನ್',
+          one: '{0} ಪಾರ್ಟ್ಸ್ ಪರ್ ಬಿಲಿಯನ್',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ಪಾರ್ಟ್ಸ್/ಬಿಲಿಯನ್',
+          one: '{0} ಪಾರ್ಟ್ಸ್ ಪರ್ ಬಿಲಿಯನ್',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ರಾತ್ರಿಗಳು',
+          one: '{0} ರಾತ್ರಿ',
+          other: '{0} ರಾತ್ರಿಗಳು',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ರಾತ್ರಿ',
+          one: '{0} ರಾತ್ರಿಯು',
+          other: '{0} ರಾತ್ರಿಗಳು',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ರಾತ್ರಿಗಳು',
+          one: '{0} ರಾತ್ರಿಯು',
+          other: '{0} ರಾತ್ರಿಗಳು',
+        ),
+      );
 }
 
 class DateFieldsKn implements DateFields {
@@ -7257,8 +7355,8 @@ class DateFieldsKn implements DateFields {
   DateFieldFullData get month => DateFieldFullData(
         displayName: MultiLength(
           long: 'ತಿಂಗಳು',
-          short: 'ತಿಂಗಳು',
-          narrow: 'ತಿಂಗಳು',
+          short: 'ತಿಂ.',
+          narrow: 'ತಿಂ',
         ),
         previous: MultiLength(
           long: 'ಕಳೆದ ತಿಂಗಳು',
@@ -7745,7 +7843,7 @@ class DateFieldsKn implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} ಶುಕ್ರವಾರಗಳ ಹಿಂದೆ',
+            one: '{0} ಶುಕ್ರವಾರದ ಹಿಂದೆ',
             other: '{0} ಶುಕ್ರವಾರಗಳ ಹಿಂದೆ',
           ),
           narrow: RelativeTime(
@@ -7829,7 +7927,7 @@ class DateFieldsKn implements DateFields {
   @override
   MultiLength get dayperiod => MultiLength(
         long: 'AM/PM',
-        short: 'ಪೂರ್ವಾಹ್ನ/ಅಪರಾಹ್ನ',
+        short: 'AM/PM',
         narrow: 'AM/PM',
       );
 
@@ -9133,7 +9231,7 @@ class TerritoriesKn implements Territories {
     'TR': Territory(
       'TR',
       'ತುರ್ಕಿಯೆ',
-      variant: 'ಟರ್ಕಿ',
+      variant: 'ತುರ್ಕಿಯೆ',
     ),
     'TT': Territory(
       'TT',
@@ -10114,9 +10212,6 @@ class TimeZonesKn extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ಚಿಟ',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ಚೊಯ್‍ಬಾಲ್ಸನ್',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'ಕೊಲಂಬೊ',
     ),
@@ -10831,14 +10926,6 @@ class TimeZonesKn extends TimeZones {
         daylight: 'ಚೀನಾ ಹಗಲು ಸಮಯ',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ಚೊಯ್‌ಬಲ್ಸಾನ್ ಸಮಯ',
-        standard: 'ಚೊಯ್‌‌ಬಲ್ಸಾನ್‌ ಪ್ರಮಾಣಿತ ಸಮಯ',
-        daylight: 'ಚೊಯ್‌ಬಲ್ಸಾನ್ ಬೇಸಿಗೆ ಸಮಯ',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11134,16 +11221,22 @@ class TimeZonesKn extends TimeZones {
         daylight: 'ಪೆತ್ರೋಪಾವ್ಲೋಸ್ಕ್‌‌-ಕಮ್ಚತ್ಸ್‌ಕೀ ಬೇಸಿಗೆ ಸಮಯ',
       ),
     ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ಕಝಾಖ್‌ಸ್ತಾನ್ ಸಮಯ',
+      ),
+    ),
     'Kazakhstan_Eastern': MetaZone(
       code: 'Kazakhstan_Eastern',
       long: TimeZoneName(
-        standard: 'ಪೂರ್ವ ಕಜಕಿಸ್ತಾನ್ ಸಮಯ',
+        standard: 'ಪೂರ್ವ ಕಝಾಖ್‌ಸ್ತಾನ್ ಸಮಯ',
       ),
     ),
     'Kazakhstan_Western': MetaZone(
       code: 'Kazakhstan_Western',
       long: TimeZoneName(
-        standard: 'ಪಶ್ಚಿಮ ಕಜಕಿಸ್ತಾನ್ ಸಮಯ',
+        standard: 'ಪಶ್ಚಿಮ ಕಝಾಖ್‌ಸ್ತಾನ್ ಸಮಯ',
       ),
     ),
     'Korea': MetaZone(

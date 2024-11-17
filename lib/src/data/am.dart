@@ -164,7 +164,7 @@ class LanguagesAm extends Languages {
     ),
     'as': Language(
       'as',
-      'አሳሜዛዊ',
+      'አሳሜዝ',
     ),
     'asa': Language(
       'asa',
@@ -176,7 +176,7 @@ class LanguagesAm extends Languages {
     ),
     'ast': Language(
       'ast',
-      'አስቱሪያን',
+      'አስቱሪያንኛ',
     ),
     'atj': Language(
       'atj',
@@ -261,7 +261,7 @@ class LanguagesAm extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'ሃርያንቪ',
+      'ሃርያንቪኛ',
     ),
     'bgn': Language(
       'bgn',
@@ -269,7 +269,7 @@ class LanguagesAm extends Languages {
     ),
     'bho': Language(
       'bho',
-      'ቦጁሪ',
+      'ቦጅፑሪ',
     ),
     'bi': Language(
       'bi',
@@ -290,6 +290,10 @@ class LanguagesAm extends Languages {
     'bla': Language(
       'bla',
       'ሲክሲካ',
+    ),
+    'blo': Language(
+      'blo',
+      'አኒኛ',
     ),
     'bm': Language(
       'bm',
@@ -381,7 +385,7 @@ class LanguagesAm extends Languages {
     ),
     'ceb': Language(
       'ceb',
-      'ካቡዋኖ',
+      'ሴብዋኖ',
     ),
     'cgg': Language(
       'cgg',
@@ -499,11 +503,11 @@ class LanguagesAm extends Languages {
     ),
     'cv': Language(
       'cv',
-      'ቹቫሽ',
+      'ቹቫሽኛ',
     ),
     'cy': Language(
       'cy',
-      'ወልሽ',
+      'ዌልሽ',
     ),
     'da': Language(
       'da',
@@ -555,7 +559,7 @@ class LanguagesAm extends Languages {
     ),
     'dsb': Language(
       'dsb',
-      'የታችኛው ሰርቢያኛ',
+      'የታችኛው ሶርቢያኛ',
     ),
     'dtp': Language(
       'dtp',
@@ -677,11 +681,11 @@ class LanguagesAm extends Languages {
     ),
     'ff': Language(
       'ff',
-      'ፉላ',
+      'ፉላኒኛ',
     ),
     'fi': Language(
       'fi',
-      'ፊኒሽ',
+      'ፊንላንድኛ',
     ),
     'fil': Language(
       'fil',
@@ -733,7 +737,7 @@ class LanguagesAm extends Languages {
     ),
     'ga': Language(
       'ga',
-      'አይሪሽ',
+      'አየርላንድኛ',
     ),
     'gaa': Language(
       'gaa',
@@ -749,7 +753,7 @@ class LanguagesAm extends Languages {
     ),
     'gd': Language(
       'gd',
-      'ስኮቲሽ ጋይሊክ',
+      'የስኮትላንድ ጌይሊክ',
     ),
     'gez': Language(
       'gez',
@@ -761,7 +765,7 @@ class LanguagesAm extends Languages {
     ),
     'gl': Language(
       'gl',
-      'ጋሊሽያዊ',
+      'ጋሊሺያንኛ',
     ),
     'gn': Language(
       'gn',
@@ -821,7 +825,12 @@ class LanguagesAm extends Languages {
     ),
     'hi': Language(
       'hi',
-      'ሒንዱኛ',
+      'ሕንድኛ',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'ሕንድኛ (ላቲን)',
+      variant: 'ሕንድኛ (ላቲን)',
     ),
     'hil': Language(
       'hil',
@@ -861,7 +870,7 @@ class LanguagesAm extends Languages {
     ),
     'hy': Language(
       'hy',
-      'አርመናዊ',
+      'አርሜንኛ',
     ),
     'hz': Language(
       'hz',
@@ -945,11 +954,11 @@ class LanguagesAm extends Languages {
     ),
     'jv': Language(
       'jv',
-      'ጃቫኒዝ',
+      'ጃቫኛ',
     ),
     'ka': Language(
       'ka',
-      'ጆርጂያዊ',
+      'ጆርጂያንኛ',
     ),
     'kab': Language(
       'kab',
@@ -1107,6 +1116,10 @@ class LanguagesAm extends Languages {
       'kwk',
       'ክዋክዋላ',
     ),
+    'kxv': Language(
+      'kxv',
+      'ኩቪኛ',
+    ),
     'ky': Language(
       'ky',
       'ክይርግይዝ',
@@ -1139,6 +1152,10 @@ class LanguagesAm extends Languages {
       'li',
       'ሊምቡርጊሽ',
     ),
+    'lij': Language(
+      'lij',
+      'ሊጓሪያኛ',
+    ),
     'lil': Language(
       'lil',
       'ሊሎኤት',
@@ -1146,6 +1163,10 @@ class LanguagesAm extends Languages {
     'lkt': Language(
       'lkt',
       'ላኮታ',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ሎምባርድኛ',
     ),
     'ln': Language(
       'ln',
@@ -1173,7 +1194,7 @@ class LanguagesAm extends Languages {
     ),
     'lt': Language(
       'lt',
-      'ሉቴንያንኛ',
+      'ሊቱዌንያኛ',
     ),
     'lu': Language(
       'lu',
@@ -1201,7 +1222,7 @@ class LanguagesAm extends Languages {
     ),
     'lv': Language(
       'lv',
-      'ላትቪያን',
+      'ላትቪያኛ',
     ),
     'mad': Language(
       'mad',
@@ -1305,7 +1326,7 @@ class LanguagesAm extends Languages {
     ),
     'mt': Language(
       'mt',
-      'ማልቲስ',
+      'ማልቲዝኛ',
     ),
     'mua': Language(
       'mua',
@@ -1413,7 +1434,7 @@ class LanguagesAm extends Languages {
     ),
     'no': Language(
       'no',
-      'ኖርዌጂያን',
+      'ኖርዌይኛ',
     ),
     'nog': Language(
       'nog',
@@ -1618,7 +1639,7 @@ class LanguagesAm extends Languages {
     ),
     'sah': Language(
       'sah',
-      'ሳክሃ',
+      'ያኩት',
     ),
     'saq': Language(
       'saq',
@@ -1800,6 +1821,10 @@ class LanguagesAm extends Languages {
       'syr',
       'ሲሪያክ',
     ),
+    'szl': Language(
+      'szl',
+      'ሲሌሲያኛ',
+    ),
     'ta': Language(
       'ta',
       'ታሚል',
@@ -1935,7 +1960,6 @@ class LanguagesAm extends Languages {
     'ug': Language(
       'ug',
       'ኡይግሁር',
-      variant: 'ኡይገር',
     ),
     'uk': Language(
       'uk',
@@ -1965,9 +1989,17 @@ class LanguagesAm extends Languages {
       've',
       'ቬንዳ',
     ),
+    'vec': Language(
+      'vec',
+      'ቬነቲያንኛ',
+    ),
     'vi': Language(
       'vi',
       'ቪየትናምኛ',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ማክሁዋኛ',
     ),
     'vo': Language(
       'vo',
@@ -2013,6 +2045,10 @@ class LanguagesAm extends Languages {
       'xh',
       'ዞሳኛ',
     ),
+    'xnr': Language(
+      'xnr',
+      'ካንጋሪ',
+    ),
     'xog': Language(
       'xog',
       'ሶጋ',
@@ -2040,7 +2076,7 @@ class LanguagesAm extends Languages {
     'yue': Language(
       'yue',
       'ካንቶኒዝ',
-      menu: 'ቻይና፤ ካንቶንኛ',
+      menu: 'ካንቶኒዝ ቻይንኛ',
     ),
     'za': Language(
       'za',
@@ -2130,7 +2166,7 @@ class ScriptsAm extends Scripts {
     ),
     'Cans': Script(
       'Cans',
-      'የተዋሐዱ የካናዳ ጥንታዊ ምልክቶች',
+      'የተዋሐዱ የካናዳ አቦሪጂኖች ፊደላት',
     ),
     'Cher': Script(
       'Cher',
@@ -2182,7 +2218,7 @@ class ScriptsAm extends Scripts {
     ),
     'Hanb': Script(
       'Hanb',
-      'ሃንብ',
+      'ሃን ከቦፖሞፎ ጋር',
     ),
     'Hang': Script(
       'Hang',
@@ -2216,7 +2252,7 @@ class ScriptsAm extends Scripts {
     ),
     'Hrkt': Script(
       'Hrkt',
-      'ጃፓንኛ ስይላቤሪስ',
+      'ጃፓንኛ ፊደላት',
     ),
     'Jamo': Script(
       'Jamo',
@@ -2236,7 +2272,7 @@ class ScriptsAm extends Scripts {
     ),
     'Knda': Script(
       'Knda',
-      'ካንአዳ',
+      'ካናዳ',
     ),
     'Kore': Script(
       'Kore',
@@ -2292,7 +2328,7 @@ class ScriptsAm extends Scripts {
     ),
     'Orya': Script(
       'Orya',
-      'ኦሪያ',
+      'ኦዲያ',
     ),
     'Osma': Script(
       'Osma',
@@ -2316,11 +2352,11 @@ class ScriptsAm extends Scripts {
     ),
     'Sund': Script(
       'Sund',
-      'ሱዳናዊ',
+      'ሱዳንኛ',
     ),
     'Syrc': Script(
       'Syrc',
-      'ሲሪክ',
+      'ሲሪያክ',
     ),
     'Tagb': Script(
       'Tagb',
@@ -2360,7 +2396,7 @@ class ScriptsAm extends Scripts {
     ),
     'Tibt': Script(
       'Tibt',
-      'ቲቤታን',
+      'ቲቤትኛ',
     ),
     'Ugar': Script(
       'Ugar',
@@ -2400,7 +2436,7 @@ class ScriptsAm extends Scripts {
     ),
     'Zzzz': Script(
       'Zzzz',
-      'ያልታወቀ ስክሪፕት',
+      'ያልታወቀ ፊደል',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -2657,8 +2693,8 @@ class UnitsAm implements Units {
   @override
   UnitPrefix get pattern10pMinus6 => UnitPrefix(
         long: UnitPrefixPattern('ማይክሮ{0}'),
-        short: UnitPrefixPattern('μ{0}'),
-        narrow: UnitPrefixPattern('μ{0}'),
+        short: UnitPrefixPattern('ማይክሮ{0}'),
+        narrow: UnitPrefixPattern('ማይክሮ{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus9 => UnitPrefix(
@@ -2758,21 +2794,21 @@ class UnitsAm implements Units {
       );
   @override
   UnitPrefix get pattern10p21 => UnitPrefix(
-        long: UnitPrefixPattern('Z{0}'),
-        short: UnitPrefixPattern('Z{0}'),
-        narrow: UnitPrefixPattern('Z{0}'),
+        long: UnitPrefixPattern('ዜታ {0}'),
+        short: UnitPrefixPattern('ዜታ {0}'),
+        narrow: UnitPrefixPattern('ዜታ {0}'),
       );
   @override
   UnitPrefix get pattern10p24 => UnitPrefix(
-        long: UnitPrefixPattern('Y{0}'),
-        short: UnitPrefixPattern('Y{0}'),
-        narrow: UnitPrefixPattern('Y{0}'),
+        long: UnitPrefixPattern('ዮታ {0}'),
+        short: UnitPrefixPattern('ዮታ {0}'),
+        narrow: UnitPrefixPattern('ዮታ {0}'),
       );
   @override
   UnitPrefix get pattern10p27 => UnitPrefix(
-        long: UnitPrefixPattern('R{0}'),
-        short: UnitPrefixPattern('R{0}'),
-        narrow: UnitPrefixPattern('R{0}'),
+        long: UnitPrefixPattern('ሮና {0}'),
+        short: UnitPrefixPattern('ሮና {0}'),
+        narrow: UnitPrefixPattern('ሮና {0}'),
       );
   @override
   UnitPrefix get pattern10p30 => UnitPrefix(
@@ -2824,9 +2860,9 @@ class UnitsAm implements Units {
       );
   @override
   UnitPrefix get pattern1024p8 => UnitPrefix(
-        long: UnitPrefixPattern('Yi{0}'),
-        short: UnitPrefixPattern('Yi{0}'),
-        narrow: UnitPrefixPattern('Yi{0}'),
+        long: UnitPrefixPattern('ዮቢ {0}'),
+        short: UnitPrefixPattern('ዮቢ {0}'),
+        narrow: UnitPrefixPattern('ዮቢ {0}'),
       );
   @override
   CompoundUnit get per => CompoundUnit(
@@ -2888,15 +2924,15 @@ class UnitsAm implements Units {
   Unit get angleRevolution => Unit(
         long: UnitCountPattern(
           _locale,
-          'rev',
-          one: '{0} rev',
-          other: '{0} rev',
+          'ኡደት',
+          one: '{0} ኡደት',
+          other: '{0} ኡደት',
         ),
         short: UnitCountPattern(
           _locale,
-          'rev',
-          one: '{0} rev',
-          other: '{0} rev',
+          'ኡደት',
+          one: '{0} ኡደት',
+          other: '{0} ኡደት',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -2910,15 +2946,15 @@ class UnitsAm implements Units {
   Unit get angleRadian => Unit(
         long: UnitCountPattern(
           _locale,
-          'rad',
-          one: '{0} rad',
-          other: '{0} rad',
+          'ራዲ',
+          one: '{0} ራዲ',
+          other: '{0} ራዲ',
         ),
         short: UnitCountPattern(
           _locale,
-          'rad',
-          one: '{0} rad',
-          other: '{0} rad',
+          'ራዲ',
+          one: '{0} ራዲ',
+          other: '{0} ራዲ',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -3130,21 +3166,21 @@ class UnitsAm implements Units {
   Unit get areaSquareYard => Unit(
         long: UnitCountPattern(
           _locale,
-          'yd²',
-          one: '{0} square yard',
-          other: '{0} yd²',
+          'ስኴር ያርድ',
+          one: '{0} ስኴር ያርድ',
+          other: '{0} ስኴር ያርድ',
         ),
         short: UnitCountPattern(
           _locale,
-          'yd²',
-          one: '{0} yd²',
-          other: '{0} yd²',
+          'ስኴር ያርድ',
+          one: '{0} ስኴር ያርድ',
+          other: '{0} ስኴር ያርድ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'yd²',
-          one: '{0}yd²',
-          other: '{0} yd²',
+          'ስኴር ያርድ',
+          one: '{0} ስኴር ያርድ',
+          other: '{0} ስኴር ያርድ',
         ),
       );
 
@@ -4032,21 +4068,21 @@ class UnitsAm implements Units {
   Unit get electricAmpere => Unit(
         long: UnitCountPattern(
           _locale,
-          'amp',
-          one: '{0} A',
-          other: '{0} A',
+          'አምፒር',
+          one: '{0} አምፒር',
+          other: '{0} አምፒር',
         ),
         short: UnitCountPattern(
           _locale,
-          'amp',
-          one: '{0} A',
-          other: '{0} A',
+          'አምፒር',
+          one: '{0} አምፒር',
+          other: '{0} አምፒር',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'amp',
-          one: '{0} A',
-          other: '{0} A',
+          'አምፒር',
+          one: '{0} አምፒር',
+          other: '{0} አምፒር',
         ),
       );
 
@@ -4098,21 +4134,21 @@ class UnitsAm implements Units {
   Unit get electricVolt => Unit(
         long: UnitCountPattern(
           _locale,
-          'volt',
-          one: '{0} V',
-          other: '{0} V',
+          'ቮልት',
+          one: '{0} ቮልት',
+          other: '{0} ቮልት',
         ),
         short: UnitCountPattern(
           _locale,
-          'volt',
-          one: '{0} V',
-          other: '{0} V',
+          'ቮልት',
+          one: '{0} ቮልት',
+          other: '{0} ቮልት',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'volt',
-          one: '{0} V',
-          other: '{0} V',
+          'ቮልት',
+          one: '{0} ቮልት',
+          other: '{0} ቮልት',
         ),
       );
 
@@ -4120,21 +4156,21 @@ class UnitsAm implements Units {
   Unit get energyKilocalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kilocalorie',
-          other: '{0} kcal',
+          'ኪሎ ካሎሪ',
+          one: '{0} ኪሎ ካሎሪ',
+          other: '{0} ኪሎ ካሎሪ',
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          other: '{0} kcal',
+          'ኪሎ ካሎሪ',
+          one: '{0} ኪሎ ካሎሪ',
+          other: '{0} ኪሎ ካሎሪ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0}kcal',
-          other: '{0} kcal',
+          'ኪሎ ካሎሪ',
+          one: '{0} ኪሎ ካሎሪ',
+          other: '{0} ኪሎ ካሎሪ',
         ),
       );
 
@@ -4142,7 +4178,7 @@ class UnitsAm implements Units {
   Unit get energyCalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          'cal',
+          'ካሎሪ',
           one: '{0} ካሎሪ',
           other: '{0} ካሎሪ',
         ),
@@ -4186,21 +4222,21 @@ class UnitsAm implements Units {
   Unit get energyKilojoule => Unit(
         long: UnitCountPattern(
           _locale,
-          'kJ',
-          one: '{0} kilojoule',
-          other: '{0} kJ',
+          'ኪጁ',
+          one: '{0} ኪጁ',
+          other: '{0} ኪጁ',
         ),
         short: UnitCountPattern(
           _locale,
-          'kJ',
-          one: '{0} kJ',
-          other: '{0} kJ',
+          'ኪጁ',
+          one: '{0} ኪጁ',
+          other: '{0} ኪጁ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kJ',
-          one: '{0}kJ',
-          other: '{0} kJ',
+          'ኪጁ',
+          one: '{0} ኪጁ',
+          other: '{0} ኪጁ',
         ),
       );
 
@@ -4208,21 +4244,21 @@ class UnitsAm implements Units {
   Unit get energyJoule => Unit(
         long: UnitCountPattern(
           _locale,
-          'joule',
-          one: '{0} joule',
-          other: '{0} J',
+          'ጁልስ',
+          one: '{0} ጁልስ',
+          other: '{0} ጁልስ',
         ),
         short: UnitCountPattern(
           _locale,
-          'joule',
-          one: '{0} J',
-          other: '{0} J',
+          'ጁልስ',
+          one: '{0} ጁልስ',
+          other: '{0} ጁልስ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'joule',
-          one: '{0}J',
-          other: '{0} J',
+          'ጁልስ',
+          one: '{0} ጁልስ',
+          other: '{0} ጁልስ',
         ),
       );
 
@@ -4384,21 +4420,21 @@ class UnitsAm implements Units {
   Unit get frequencyGigahertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'GHz',
-          one: '{0} gigahertz',
-          other: '{0} GHz',
+          'ጊጋኸርዝ',
+          one: '{0} ጊጋኸርዝ',
+          other: '{0} ጊጋኸርዝ',
         ),
         short: UnitCountPattern(
           _locale,
-          'GHz',
-          one: '{0} GHz',
-          other: '{0} GHz',
+          'ጊጋኸርዝ',
+          one: '{0} ጊጋኸርዝ',
+          other: '{0} ጊጋኸርዝ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'GHz',
-          one: '{0}GHz',
-          other: '{0} GHz',
+          'ጊጋኸርዝ',
+          one: '{0} ጊጋኸርዝ',
+          other: '{0} ጊጋኸርዝ',
         ),
       );
 
@@ -4406,21 +4442,21 @@ class UnitsAm implements Units {
   Unit get frequencyMegahertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'MHz',
-          one: '{0} megahertz',
-          other: '{0} MHz',
+          'ሜጋኸርዝ',
+          one: '{0} ሜጋኸርዝ',
+          other: '{0} ሜጋኸርዝ',
         ),
         short: UnitCountPattern(
           _locale,
-          'MHz',
-          one: '{0} MHz',
-          other: '{0} MHz',
+          'ሜጋኸርዝ',
+          one: '{0} ሜጋኸርዝ',
+          other: '{0} ሜጋኸርዝ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'MHz',
-          one: '{0}MHz',
-          other: '{0} MHz',
+          'ሜጋኸርዝ',
+          one: '{0} ሜጋኸርዝ',
+          other: '{0} ሜጋኸርዝ',
         ),
       );
 
@@ -4428,21 +4464,21 @@ class UnitsAm implements Units {
   Unit get frequencyKilohertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'kHz',
-          one: '{0} kilohertz',
-          other: '{0} kHz',
+          'ኪሎኸርዝ',
+          one: '{0} ኪሎኸርዝ',
+          other: '{0} ኪሎኸርዝ',
         ),
         short: UnitCountPattern(
           _locale,
-          'kHz',
-          one: '{0} kHz',
-          other: '{0} kHz',
+          'ኪሎኸርዝ',
+          one: '{0} ኪሎኸርዝ',
+          other: '{0} ኪሎኸርዝ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kHz',
-          one: '{0}kHz',
-          other: '{0} kHz',
+          'ኪሎኸርዝ',
+          one: '{0} ኪሎኸርዝ',
+          other: '{0} ኪሎኸርዝ',
         ),
       );
 
@@ -4450,21 +4486,21 @@ class UnitsAm implements Units {
   Unit get frequencyHertz => Unit(
         long: UnitCountPattern(
           _locale,
-          'Hz',
-          one: '{0} Hz',
-          other: '{0} Hz',
+          'ኸርዝ',
+          one: '{0} ኸርዝ',
+          other: '{0} ኸርዝ',
         ),
         short: UnitCountPattern(
           _locale,
-          'Hz',
-          one: '{0} Hz',
-          other: '{0} Hz',
+          'ኸርዝ',
+          one: '{0} ኸርዝ',
+          other: '{0} ኸርዝ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'Hz',
-          one: '{0} Hz',
-          other: '{0} Hz',
+          'ኸርዝ',
+          one: '{0} ኸርዝ',
+          other: '{0} ኸርዝ',
         ),
       );
 
@@ -5286,15 +5322,15 @@ class UnitsAm implements Units {
   Unit get massMilligram => Unit(
         long: UnitCountPattern(
           _locale,
-          'mg',
-          one: '{0} milligram',
-          other: '{0} mg',
+          'ሚግ',
+          one: '{0} ሚግ',
+          other: '{0} ሚግ',
         ),
         short: UnitCountPattern(
           _locale,
-          'mg',
-          one: '{0} mg',
-          other: '{0} mg',
+          'ሚግ',
+          one: '{0} ሚግ',
+          other: '{0} ሚግ',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -5308,21 +5344,21 @@ class UnitsAm implements Units {
   Unit get massMicrogram => Unit(
         long: UnitCountPattern(
           _locale,
-          'μg',
-          one: '{0} μg',
-          other: '{0} μg',
+          'ማግ',
+          one: '{0} ማግ',
+          other: '{0} ማግ',
         ),
         short: UnitCountPattern(
           _locale,
-          'μg',
-          one: '{0} μg',
-          other: '{0} μg',
+          'ማግ',
+          one: '{0} ማግ',
+          other: '{0} ማግ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'μg',
-          one: '{0} μg',
-          other: '{0} μg',
+          'ማግ',
+          one: '{0} ማግ',
+          other: '{0} ማግ',
         ),
       );
 
@@ -5462,21 +5498,21 @@ class UnitsAm implements Units {
   Unit get massDalton => Unit(
         long: UnitCountPattern(
           _locale,
-          'ዳተንስ',
-          one: '{0} ዳተንስ',
-          other: '{0} ዳተንስ',
+          'ዳልተንስ',
+          one: '{0} ዳልተንስ',
+          other: '{0} ዳልተንስ',
         ),
         short: UnitCountPattern(
           _locale,
-          'ዳተንስ',
-          one: '{0} ዳተንስ',
-          other: '{0} Da',
+          'ዳልተንስ',
+          one: '{0} ዳልተንስ',
+          other: '{0} ዳልተንስ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ዳተንስ',
-          one: '{0} ዳተንስ',
-          other: '{0} Da',
+          'ዳልተንስ',
+          one: '{0} ዳልተንስ',
+          other: '{0} ዳልተንስ',
         ),
       );
 
@@ -5550,21 +5586,21 @@ class UnitsAm implements Units {
   Unit get powerGigawatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'GW',
-          one: '{0} gigawatt',
-          other: '{0} GW',
+          'ጊጋ ዋት',
+          one: '{0} ጊዋ',
+          other: '{0} ጊዋ',
         ),
         short: UnitCountPattern(
           _locale,
-          'GW',
-          one: '{0} GW',
-          other: '{0} GW',
+          'ጊጋ ዋት',
+          one: '{0} ጊዋ',
+          other: '{0} ጊዋ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'GW',
-          one: '{0}GW',
-          other: '{0} GW',
+          'ጊዋ',
+          one: '{0} ጊዋ',
+          other: '{0} ጊዋ',
         ),
       );
 
@@ -5572,21 +5608,21 @@ class UnitsAm implements Units {
   Unit get powerMegawatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'MW',
-          one: '{0} megawatt',
-          other: '{0} MW',
+          'ሜጋ ዋት',
+          one: '{0} ሜዋ',
+          other: '{0} ሜዋ',
         ),
         short: UnitCountPattern(
           _locale,
-          'MW',
-          one: '{0} MW',
-          other: '{0} MW',
+          'ሜዋ',
+          one: '{0} ሜዋ',
+          other: '{0} ሜዋ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'MW',
-          one: '{0}MW',
-          other: '{0} MW',
+          'ሜዋ',
+          one: '{0} ሜዋ',
+          other: '{0} ሜዋ',
         ),
       );
 
@@ -5638,21 +5674,21 @@ class UnitsAm implements Units {
   Unit get powerMilliwatt => Unit(
         long: UnitCountPattern(
           _locale,
-          'mW',
-          one: '{0} milliwatt',
-          other: '{0} mW',
+          'ሚሊ ዋት',
+          one: '{0} ሚዋ',
+          other: '{0} ሚዋ',
         ),
         short: UnitCountPattern(
           _locale,
-          'mW',
-          one: '{0} mW',
-          other: '{0} mW',
+          'ሚዋ',
+          one: '{0} ሚዋ',
+          other: '{0} ሚዋ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mW',
-          one: '{0}mW',
-          other: '{0} mW',
+          'ሚዋ',
+          one: '{0} ሚዋ',
+          other: '{0} ሚዋ',
         ),
       );
 
@@ -6078,15 +6114,15 @@ class UnitsAm implements Units {
   Unit get temperatureKelvin => Unit(
         long: UnitCountPattern(
           _locale,
-          'K',
-          one: '{0} K',
-          other: '{0} K',
+          'ኬ',
+          one: '{0} ኬ',
+          other: '{0} ኬ',
         ),
         short: UnitCountPattern(
           _locale,
-          'K',
-          one: '{0} K',
-          other: '{0} K',
+          'ኬ',
+          one: '{0} ኬ',
+          other: '{0} ኬ',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -6232,21 +6268,21 @@ class UnitsAm implements Units {
   Unit get volumeCubicYard => Unit(
         long: UnitCountPattern(
           _locale,
-          'yd³',
-          one: '{0} cubic yard',
-          other: '{0} yd³',
+          'ኪዩቢክ ያርድ',
+          one: '{0} ኪዩቢክ ያርድ',
+          other: '{0} ኪዩቢክ ያርድ',
         ),
         short: UnitCountPattern(
           _locale,
-          'yd³',
-          one: '{0} yd³',
-          other: '{0} yd³',
+          'ኪዩቢክ ያርድ',
+          one: '{0} ኪዩቢክ ያርድ',
+          other: '{0} ኪዩቢክ ያርድ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'yd³',
-          one: '{0}yd³',
-          other: '{0} yd³',
+          'ኪዩቢክ ያርድ',
+          one: '{0} ኪዩቢክ ያርድ',
+          other: '{0} ኪዩቢክ ያርድ',
         ),
       );
 
@@ -6298,15 +6334,15 @@ class UnitsAm implements Units {
   Unit get volumeMegaliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'ML',
-          one: '{0} ML',
-          other: '{0} ML',
+          'ሜጋሊትር',
+          one: '{0} ሜሊ',
+          other: '{0} ሜሊ',
         ),
         short: UnitCountPattern(
           _locale,
-          'ML',
-          one: '{0} ML',
-          other: '{0} ML',
+          'ሜጋሊትር',
+          one: '{0} ሜሊ',
+          other: '{0} ሜሊ',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -6320,21 +6356,21 @@ class UnitsAm implements Units {
   Unit get volumeHectoliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'hL',
-          one: '{0} hL',
-          other: '{0} hL',
+          'ሄክቶሊትር',
+          one: '{0} ሄሊ',
+          other: '{0} ሄሊ',
         ),
         short: UnitCountPattern(
           _locale,
-          'hL',
-          one: '{0} hL',
-          other: '{0} hL',
+          'ሄሊ',
+          one: '{0} ሄሊ',
+          other: '{0} ሄሊ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'hL',
-          one: '{0} hL',
-          other: '{0} hL',
+          'ሄሊ',
+          one: '{0} ሄሊ',
+          other: '{0} ሄሊ',
         ),
       );
 
@@ -6518,21 +6554,21 @@ class UnitsAm implements Units {
   Unit get volumeGallon => Unit(
         long: UnitCountPattern(
           _locale,
-          'gal',
-          one: '{0} gal',
-          other: '{0} gal',
+          'ጋሎን',
+          one: '{0}/ጋሎን',
+          other: '{0}/ጋሎን',
         ),
         short: UnitCountPattern(
           _locale,
-          'gal',
-          one: '{0} gal',
-          other: '{0} gal',
+          'ጋሎን',
+          one: '{0}/ጋሎን',
+          other: '{0} ጋሎን',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'gal',
-          one: '{0} gal',
-          other: '{0} gal',
+          'ጋሎን',
+          one: '{0} ጋሎን',
+          other: '{0} ጋሎን',
         ),
       );
 
@@ -6562,21 +6598,21 @@ class UnitsAm implements Units {
   Unit get volumeQuart => Unit(
         long: UnitCountPattern(
           _locale,
-          'qt',
-          one: '{0} quart',
-          other: '{0} qt',
+          'ኳርትስ',
+          one: '{0} ኳርትስ',
+          other: '{0} ኳርትስ',
         ),
         short: UnitCountPattern(
           _locale,
-          'qt',
-          one: '{0} qt',
-          other: '{0} qt',
+          'ኳርትስ',
+          one: '{0} ኳርትስ',
+          other: '{0} ኳርትስ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'qt',
-          one: '{0}qt',
-          other: '{0} qt',
+          'ኳርትስ',
+          one: '{0} ኳርትስ',
+          other: '{0} ኳርትስ',
         ),
       );
 
@@ -6606,15 +6642,15 @@ class UnitsAm implements Units {
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
           _locale,
-          'cup',
-          one: '{0} cup',
-          other: '{0} c',
+          'ኩባያ',
+          one: '{0} ኩባያ',
+          other: '{0} ኩባያ',
         ),
         short: UnitCountPattern(
           _locale,
-          'cup',
-          one: '{0} c',
-          other: '{0} c',
+          'ኩባያ',
+          one: '{0} ኩባያ',
+          other: '{0} ኩባያ',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -6672,21 +6708,21 @@ class UnitsAm implements Units {
   Unit get volumeTablespoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'tbsp',
-          one: '{0} tablespoon',
-          other: '{0} tbsp',
+          'የሻይ ማንኪያ',
+          one: '{0} የሻይ ማንኪያ',
+          other: '{0} የሻይ ማንኪያ',
         ),
         short: UnitCountPattern(
           _locale,
-          'tbsp',
-          one: '{0} tbsp',
-          other: '{0} tbsp',
+          'የሻይ ማንኪያ',
+          one: '{0} የሻይ ማንኪያ',
+          other: '{0} የሻይ ማንኪያ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'tbsp',
-          one: '{0}tbsp',
-          other: '{0} tbsp',
+          'የሻይ ማንኪያ',
+          one: '{0} የሻይ ማንኪያ',
+          other: '{0} የሻይ ማንኪያ',
         ),
       );
 
@@ -6694,21 +6730,21 @@ class UnitsAm implements Units {
   Unit get volumeTeaspoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'tsp',
-          one: '{0} teaspoon',
-          other: '{0} tsp',
+          'የሻይ ማንኪያዎች',
+          one: '{0} የሻይ ማንኪያዎች',
+          other: '{0} የሻይ ማንኪያዎች',
         ),
         short: UnitCountPattern(
           _locale,
-          'tsp',
-          one: '{0} tsp',
-          other: '{0} tsp',
+          'የሻይ ማንኪያዎች',
+          one: '{0} የሻይ ማንኪያዎች',
+          other: '{0} የሻይ ማንኪያዎች',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'tsp',
-          one: '{0}tsp',
-          other: '{0} tsp',
+          'የሻይ ማንኪያዎች',
+          one: '{0} የሻይ ማንኪያዎች',
+          other: '{0} የሻይ ማንኪያዎች',
         ),
       );
 
@@ -6907,6 +6943,72 @@ class UnitsAm implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ብርሃን',
+          one: '{0} ብርሃን',
+          other: '{0} ብርሃን',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ብርሃን',
+          one: '{0} ብርሃን',
+          other: '{0} ብርሃን',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ብርሃን',
+          one: '{0} ብርሃን',
+          other: '{0} ብርሃን',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ለሊት',
+          one: '{0}/ለሊት',
+          other: '{0}/ለሊት',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ለሊቶች',
+          one: '{0} ለሊት',
+          other: '{0} ለሊት',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ለሊቶች',
+          one: '{0} ለሊት',
+          other: '{0} ለሊት',
         ),
       );
 }
@@ -7799,13 +7901,13 @@ class TerritoriesAm implements Territories {
   @override
   Territory get oceania => Territory(
         '009',
-        'ኦሺንያ',
+        'ኦሺያንያ',
       );
 
   @override
   Territory get westernAfrica => Territory(
         '011',
-        'ምስራቃዊ አፍሪካ',
+        'ምዕራባዊ አፍሪካ',
       );
 
   @override
@@ -7865,13 +7967,13 @@ class TerritoriesAm implements Territories {
   @override
   Territory get southernAsia => Territory(
         '034',
-        'ደቡባዊ እሲያ',
+        'ደቡባዊ እስያ',
       );
 
   @override
   Territory get southeastAsia => Territory(
         '035',
-        'ደቡብ ምስራቅ እሲያ',
+        'ደቡብ ምስራቅ እስያ',
       );
 
   @override
@@ -7907,13 +8009,13 @@ class TerritoriesAm implements Territories {
   @override
   Territory get asia => Territory(
         '142',
-        'እሲያ',
+        'እስያ',
       );
 
   @override
   Territory get centralAsia => Territory(
         '143',
-        'መካከለኛው እሲያ',
+        'መካከለኛው እስያ',
       );
 
   @override
@@ -7984,7 +8086,7 @@ class TerritoriesAm implements Territories {
     ),
     'AG': Territory(
       'AG',
-      'አንቲጓ እና ባሩዳ',
+      'አንቲጓ እና ባርቡዳ',
     ),
     'AI': Territory(
       'AI',
@@ -8056,7 +8158,7 @@ class TerritoriesAm implements Territories {
     ),
     'BG': Territory(
       'BG',
-      'ቡልጌሪያ',
+      'ቡልጋሪያ',
     ),
     'BH': Territory(
       'BH',
@@ -8072,7 +8174,7 @@ class TerritoriesAm implements Territories {
     ),
     'BL': Territory(
       'BL',
-      'ቅዱስ በርቴሎሜ',
+      'ሴንት ባርቴሌሚ',
     ),
     'BM': Territory(
       'BM',
@@ -8212,7 +8314,7 @@ class TerritoriesAm implements Territories {
     ),
     'DG': Territory(
       'DG',
-      'ዲዬጎ ጋርሺያ',
+      'ዲዬጎ ጋርሲያ',
     ),
     'DJ': Territory(
       'DJ',
@@ -8272,7 +8374,7 @@ class TerritoriesAm implements Territories {
     ),
     'EZ': Territory(
       'EZ',
-      'የአውሮፓ ዞን',
+      'የዩሮ ዞን',
     ),
     'FI': Territory(
       'FI',
@@ -8289,7 +8391,7 @@ class TerritoriesAm implements Territories {
     ),
     'FM': Territory(
       'FM',
-      'ሚክሮኔዢያ',
+      'ማይክሮኔዢያ',
     ),
     'FO': Territory(
       'FO',
@@ -8306,7 +8408,7 @@ class TerritoriesAm implements Territories {
     'GB': Territory(
       'GB',
       'ዩናይትድ ኪንግደም',
-      short: 'ዩናይትድ ኪንግደም',
+      short: 'ዩኬ',
     ),
     'GD': Territory(
       'GD',
@@ -8383,7 +8485,7 @@ class TerritoriesAm implements Territories {
     ),
     'HM': Territory(
       'HM',
-      'ኽርድ ደሴቶችና ማክዶናልድ ደሴቶች',
+      'ኽርድ ኣና ማክዶናልድ ደሴቶች',
     ),
     'HN': Territory(
       'HN',
@@ -8447,7 +8549,7 @@ class TerritoriesAm implements Territories {
     ),
     'JE': Territory(
       'JE',
-      'ጀርሲ',
+      'ጀርዚ',
     ),
     'JM': Territory(
       'JM',
@@ -8495,7 +8597,7 @@ class TerritoriesAm implements Territories {
     ),
     'KW': Territory(
       'KW',
-      'ክዌት',
+      'ኩዌት',
     ),
     'KY': Territory(
       'KY',
@@ -8575,7 +8677,7 @@ class TerritoriesAm implements Territories {
     ),
     'MH': Territory(
       'MH',
-      'ማርሻል አይላንድ',
+      'ማርሻል ደሴቶች',
     ),
     'MK': Territory(
       'MK',
@@ -8684,12 +8786,12 @@ class TerritoriesAm implements Territories {
     ),
     'NU': Territory(
       'NU',
-      'ኒኡይ',
+      'ኒዌ',
     ),
     'NZ': Territory(
       'NZ',
       'ኒው ዚላንድ',
-      variant: 'ኒው ዚላንድ',
+      variant: 'አዎቴአሮአ ኒው ዚላንድ',
     ),
     'OM': Territory(
       'OM',
@@ -8725,7 +8827,7 @@ class TerritoriesAm implements Territories {
     ),
     'PM': Territory(
       'PM',
-      'ቅዱስ ፒዬር እና ሚኩኤሎን',
+      'ሴንት ፒዬር እና ሚኩኤሎን',
     ),
     'PN': Territory(
       'PN',
@@ -8733,7 +8835,7 @@ class TerritoriesAm implements Territories {
     ),
     'PR': Territory(
       'PR',
-      'ፖርታ ሪኮ',
+      'ፑዌርቶ ሪኮ',
     ),
     'PS': Territory(
       'PS',
@@ -8758,7 +8860,7 @@ class TerritoriesAm implements Territories {
     ),
     'QO': Territory(
       'QO',
-      'አውትላይንግ ኦሽንያ',
+      'የኦሺያንያ ዳርቻ',
     ),
     'RE': Territory(
       'RE',
@@ -8786,7 +8888,7 @@ class TerritoriesAm implements Territories {
     ),
     'SB': Territory(
       'SB',
-      'ሰሎሞን ደሴት',
+      'ሰለሞን ደሴቶች',
     ),
     'SC': Territory(
       'SC',
@@ -8834,7 +8936,7 @@ class TerritoriesAm implements Territories {
     ),
     'SO': Territory(
       'SO',
-      'ሱማሌ',
+      'ሶማሊያ',
     ),
     'SR': Territory(
       'SR',
@@ -8862,12 +8964,12 @@ class TerritoriesAm implements Territories {
     ),
     'SZ': Territory(
       'SZ',
-      'ሱዋዚላንድ',
+      'ኤስዋቲኒ',
       variant: 'ስዋዚላንድ',
     ),
     'TA': Territory(
       'TA',
-      'ትሪስታን ዲ ኩንሃ',
+      'ትሪስታን ዳ ኩንሃ',
     ),
     'TC': Territory(
       'TC',
@@ -8971,7 +9073,7 @@ class TerritoriesAm implements Territories {
     ),
     'VC': Territory(
       'VC',
-      'ቅዱስ ቪንሴንት እና ግሬናዲንስ',
+      'ሴንት ቪንሴንት እና ግሬናዲንስ',
     ),
     'VE': Territory(
       'VE',
@@ -9042,7 +9144,7 @@ class TimeZonesAm extends TimeZones {
             hourFormat: '+HHmm;-HHmm',
             gmtFormat: 'ጂ ኤም ቲ{0}',
             gmtZeroFormat: 'ጂ ኤም ቲ',
-            regionFormat: '{0} ጊዜ',
+            regionFormat: '{0} ሰዓት',
             regionFormatDaylight: '{0} የቀን ብርሃን ሰዓት',
             regionFormatStandard: '{0} መደበኛ ሰዓት',
             fallbackFormat: '{1} ({0})');
@@ -9898,9 +10000,6 @@ class TimeZonesAm extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ቺታ',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ቾይባልሳን',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'ኮሎምቦ',
     ),
@@ -10583,14 +10682,6 @@ class TimeZonesAm extends TimeZones {
         daylight: 'የቻይና የቀን ብርሃን ሰዓት',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'የቾይባልሳ ሰዓት አቆጣጠር',
-        standard: 'የቾይባልሳን መደበኛ የሰዓት አቆጣጠር',
-        daylight: 'የቾይባልሳን የበጋ የሰዓት አቆጣጠር',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10875,6 +10966,12 @@ class TimeZonesAm extends TimeZones {
         generic: 'የካምቻትካ ሰዓት አቆጣጠር',
         standard: 'የፔትሮፓቭሎስኪ - ካምቻትስኪ ሰዓት አቆጣጠር',
         daylight: 'የፔትሮፓቭሎስኪ - ካምቻትስኪ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ካዛኪስታን ሰዓት',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -251,6 +251,10 @@ class LanguagesSl extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambarščina',
@@ -1119,6 +1123,10 @@ class LanguagesSl extends Languages {
       'kwk',
       'kvakvala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiščina',
@@ -1159,6 +1167,10 @@ class LanguagesSl extends Languages {
       'li',
       'limburščina',
     ),
+    'lij': Language(
+      'lij',
+      'ligurščina',
+    ),
     'lil': Language(
       'lil',
       'lilovetščina',
@@ -1166,6 +1178,10 @@ class LanguagesSl extends Languages {
     'lkt': Language(
       'lkt',
       'lakotščina',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardščina',
     ),
     'ln': Language(
       'ln',
@@ -1214,10 +1230,6 @@ class LanguagesSl extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1915,6 +1927,10 @@ class LanguagesSl extends Languages {
       'syr',
       'sirščina',
     ),
+    'szl': Language(
+      'szl',
+      'šlezijščina',
+    ),
     'ta': Language(
       'ta',
       'tamilščina',
@@ -2103,9 +2119,17 @@ class LanguagesSl extends Languages {
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'beneščina',
+    ),
     'vi': Language(
       'vi',
       'vietnamščina',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makuva',
     ),
     'vo': Language(
       'vo',
@@ -2159,6 +2183,10 @@ class LanguagesSl extends Languages {
       'xh',
       'koščina',
     ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
+    ),
     'xog': Language(
       'xog',
       'sogščina',
@@ -2195,6 +2223,10 @@ class LanguagesSl extends Languages {
       'yue',
       'kantonščina',
       menu: 'kitajščina (kantonščina)',
+    ),
+    'za': Language(
+      'za',
+      'džuangščina',
     ),
     'zap': Language(
       'zap',
@@ -4374,7 +4406,7 @@ class UnitsSl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mesecev',
+          'mesec',
           one: '{0} mesec',
           two: '{0} meseca',
           few: '{0} meseci',
@@ -4402,7 +4434,7 @@ class UnitsSl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'tednov',
+          't',
           one: '{0} t',
           two: '{0} t',
           few: '{0} t',
@@ -4458,7 +4490,7 @@ class UnitsSl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ur',
+          'ura',
           one: '{0} ura',
           two: '{0} uri',
           few: '{0} ure',
@@ -5165,7 +5197,7 @@ class UnitsSl implements Units {
         long: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
+          one: '{0} emov',
           two: '{0} ema',
           few: '{0} emi',
           other: '{0} emov',
@@ -5173,18 +5205,18 @@ class UnitsSl implements Units {
         short: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
+          one: '{0} emov',
           two: '{0} ema',
           few: '{0} emi',
-          other: '{0} em',
+          other: '{0} emov',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
+          one: '{0} emov',
           two: '{0} ema',
           few: '{0} emi',
-          other: '{0} em',
+          other: '{0} emov',
         ),
       );
 
@@ -5328,8 +5360,8 @@ class UnitsSl implements Units {
           _locale,
           'pik na palec',
           one: '{0} pika na palec',
-          two: '{0} dpi',
-          few: '{0} dpi',
+          two: '{0} piki na palec',
+          few: '{0} pike na palec',
           other: '{0} pik na palec',
         ),
         short: UnitCountPattern(
@@ -5950,7 +5982,7 @@ class UnitsSl implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'pt',
+          'točke',
           one: '{0} točka',
           two: '{0} točki',
           few: '{0} točke',
@@ -5958,7 +5990,7 @@ class UnitsSl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pt',
+          'točke',
           one: '{0} točka',
           two: '{0} točki',
           few: '{0} točke',
@@ -8253,6 +8285,90 @@ class UnitsSl implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'svetloba',
+          one: '{0} svetloba',
+          two: '{0} svetlobi',
+          few: '{0} svetlobe',
+          other: '{0} svetlob',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'svetloba',
+          one: '{0} svetloba',
+          two: '{0} svetlobi',
+          few: '{0} svetlobe',
+          other: '{0} svetlob',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'svetloba',
+          one: '{0} svetloba',
+          two: '{0} svetlobi',
+          few: '{0} svetlobe',
+          other: '{0} svetlob',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'delci na milijardo',
+          one: '{0} delec na milijardo',
+          two: '{0} delca na milijardo',
+          few: '{0} delci na milijardo',
+          other: '{0} delcev na milijardo',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} delec na milijardo',
+          two: '{0} delca na milijardo',
+          few: '{0} delci na milijardo',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} delec na milijardo',
+          two: '{0} delca na milijardo',
+          few: '{0} delci na milijardo',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noči',
+          one: '{0} noč',
+          two: '{0} noči',
+          few: '{0} noči',
+          other: '{0} noči',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noči',
+          one: '{0} noč',
+          two: '{0} noči',
+          few: '{0} noči',
+          other: '{0} noči',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noči',
+          one: '{0} n',
+          two: '{0} n',
+          few: '{0} n',
+          other: '{0} n',
         ),
       );
 }
@@ -10739,7 +10855,7 @@ class TimeZonesSl extends TimeZones {
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
-        daylight: 'irski standardni čas',
+        daylight: 'Irski standardni čas',
       ),
     ),
     'Europe/Isle_of_Man': TimeZoneNames(
@@ -10753,7 +10869,7 @@ class TimeZonesSl extends TimeZones {
     ),
     'Europe/London': TimeZoneNames(
       long: TimeZoneName(
-        daylight: 'britanski poletni čas',
+        daylight: 'Britanski poletni čas',
       ),
     ),
     'Europe/Luxembourg': TimeZoneNames(
@@ -10875,9 +10991,6 @@ class TimeZonesSl extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Čita',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Čojbalsan',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
@@ -11309,14 +11422,6 @@ class TimeZonesSl extends TimeZones {
         daylight: 'Kitajski poletni čas',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Čojbalsanski čas',
-        standard: 'Čojbalsanski standardni čas',
-        daylight: 'Čojbalsanski poletni čas',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11601,6 +11706,12 @@ class TimeZonesSl extends TimeZones {
         generic: 'Petropavlovsk-Kamčatski čas',
         standard: 'Petropavlovsk-Kamčatski standardni čas',
         daylight: 'Petropavlovsk-Kamčatski poletni čas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazahstanski čas',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

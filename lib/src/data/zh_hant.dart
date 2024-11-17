@@ -324,6 +324,10 @@ class LanguagesZhHant extends Languages {
       'bla',
       '錫克錫卡文',
     ),
+    'blo': Language(
+      'blo',
+      '阿尼文',
+    ),
     'bm': Language(
       'bm',
       '班巴拉文',
@@ -464,6 +468,10 @@ class LanguagesZhHant extends Languages {
       'chy',
       '沙伊安文',
     ),
+    'cic': Language(
+      'cic',
+      '契卡索文',
+    ),
     'ckb': Language(
       'ckb',
       '中庫德文',
@@ -496,7 +504,7 @@ class LanguagesZhHant extends Languages {
     ),
     'crh': Language(
       'crh',
-      '土耳其文（克里米亞半島）',
+      '克里米亞韃靼文',
     ),
     'crj': Language(
       'crj',
@@ -834,10 +842,6 @@ class LanguagesZhHant extends Languages {
       'goh',
       '古高地德文',
     ),
-    'gom': Language(
-      'gom',
-      '孔卡尼文',
-    ),
     'gon': Language(
       'gon',
       '岡德文',
@@ -917,7 +921,7 @@ class LanguagesZhHant extends Languages {
     'hi-Latn': Language(
       'hi-Latn',
       '印地語（拉丁文）',
-      variant: '印地語',
+      variant: '印地英語',
     ),
     'hif': Language(
       'hif',
@@ -1279,6 +1283,10 @@ class LanguagesZhHant extends Languages {
       'kwk',
       '誇誇嘉誇語',
     ),
+    'kxv': Language(
+      'kxv',
+      '庫維文',
+    ),
     'ky': Language(
       'ky',
       '吉爾吉斯文',
@@ -1609,7 +1617,7 @@ class LanguagesZhHant extends Languages {
     ),
     'nb': Language(
       'nb',
-      '巴克摩挪威文',
+      '書面挪威文',
     ),
     'nd': Language(
       'nd',
@@ -1661,7 +1669,7 @@ class LanguagesZhHant extends Languages {
     ),
     'nn': Language(
       'nn',
-      '耐諾斯克挪威文',
+      '新挪威文',
     ),
     'nnh': Language(
       'nnh',
@@ -2137,7 +2145,7 @@ class LanguagesZhHant extends Languages {
     ),
     'sog': Language(
       'sog',
-      '索格底亞納文',
+      '粟特文',
     ),
     'sq': Language(
       'sq',
@@ -2455,6 +2463,10 @@ class LanguagesZhHant extends Languages {
       'vmf',
       '美茵-法蘭克尼亞文',
     ),
+    'vmw': Language(
+      'vmw',
+      '馬庫瓦文',
+    ),
     'vo': Language(
       'vo',
       '沃拉普克文',
@@ -2514,6 +2526,10 @@ class LanguagesZhHant extends Languages {
     'xmf': Language(
       'xmf',
       '明格列爾文',
+    ),
+    'xnr': Language(
+      'xnr',
+      '康格里',
     ),
     'xog': Language(
       'xog',
@@ -2760,7 +2776,7 @@ class ScriptsZhHant extends Scripts {
     ),
     'Egyp': Script(
       'Egyp',
-      '古埃及象形文字',
+      '古埃及聖書體',
     ),
     'Elba': Script(
       'Elba',
@@ -2812,7 +2828,7 @@ class ScriptsZhHant extends Scripts {
     ),
     'Hang': Script(
       'Hang',
-      '韓文字',
+      '諺文',
     ),
     'Hani': Script(
       'Hani',
@@ -2926,7 +2942,7 @@ class ScriptsZhHant extends Scripts {
     ),
     'Laoo': Script(
       'Laoo',
-      '寮國文',
+      '寮文',
     ),
     'Latf': Script(
       'Latf',
@@ -2938,7 +2954,7 @@ class ScriptsZhHant extends Scripts {
     ),
     'Latn': Script(
       'Latn',
-      '拉丁文',
+      '拉丁字母',
     ),
     'Lepc': Script(
       'Lepc',
@@ -2986,7 +3002,7 @@ class ScriptsZhHant extends Scripts {
     ),
     'Marc': Script(
       'Marc',
-      '藏文',
+      '瑪欽文',
     ),
     'Maya': Script(
       'Maya',
@@ -3058,7 +3074,7 @@ class ScriptsZhHant extends Scripts {
     ),
     'Nshu': Script(
       'Nshu',
-      '女書文字',
+      '女書',
     ),
     'Ogam': Script(
       'Ogam',
@@ -3278,7 +3294,7 @@ class ScriptsZhHant extends Scripts {
     ),
     'Tibt': Script(
       'Tibt',
-      '西藏文',
+      '藏文',
     ),
     'Tirh': Script(
       'Tirh',
@@ -4130,7 +4146,7 @@ class UnitsZhHant implements Units {
           _locale,
           '平方英寸',
           one: '{0}in²',
-          other: '{0}in²',
+          other: '{0}平方英寸',
         ),
       );
 
@@ -5670,7 +5686,7 @@ class UnitsZhHant implements Units {
           _locale,
           '公寸',
           one: '{0}dm',
-          other: '{0}dm',
+          other: '{0}公寸',
         ),
       );
 
@@ -5758,7 +5774,7 @@ class UnitsZhHant implements Units {
           _locale,
           '奈米',
           one: '{0}nm',
-          other: '{0}nm',
+          other: '{0}奈米',
         ),
       );
 
@@ -5890,7 +5906,7 @@ class UnitsZhHant implements Units {
           _locale,
           '秒差距',
           one: '{0}pc',
-          other: '{0}pc',
+          other: '{0}秒差距',
         ),
       );
 
@@ -5934,7 +5950,7 @@ class UnitsZhHant implements Units {
           _locale,
           '天文單位',
           one: '{0}au',
-          other: '{0}au',
+          other: '{0}天文單位',
         ),
       );
 
@@ -6008,19 +6024,19 @@ class UnitsZhHant implements Units {
   Unit get lengthMileScandinavian => Unit(
         long: UnitCountPattern(
           _locale,
-          '斯堪地那維亞英里',
+          '斯堪地那維亞里',
           one: '{0} mile-scandinavian',
-          other: '{0} 斯堪地那維亞英里',
+          other: '{0} 斯堪地那維亞里',
         ),
         short: UnitCountPattern(
           _locale,
-          '斯堪地那維亞英里',
+          '斯堪地那維亞里',
           one: '{0} smi',
-          other: '{0} 斯堪地那維亞英里',
+          other: '{0} 斯堪地那維亞里',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '斯堪地那維亞英里',
+          '斯堪地那維亞里',
           one: '{0}smi',
           other: '{0}smi',
         ),
@@ -7851,6 +7867,72 @@ class UnitsZhHant implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '十億分點濃度',
+          one: '{0} part per billion',
+          other: '{0} 十億分點濃度',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '濃度/十億',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '濃度/十億',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '夜',
+          one: '{0} night',
+          other: '{0} 夜',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '夜',
+          one: '{0} night',
+          other: '{0} 夜',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '夜',
+          one: '{0}night',
+          other: '{0}夜',
+        ),
+      );
 }
 
 class DateFieldsZhHant implements DateFields {
@@ -7858,9 +7940,9 @@ class DateFieldsZhHant implements DateFields {
 
   @override
   MultiLength get era => MultiLength(
-        long: '年代',
-        short: '年代',
-        narrow: '年代',
+        long: '紀元',
+        short: '紀元',
+        narrow: '紀元',
       );
 
   @override
@@ -7918,9 +8000,9 @@ class DateFieldsZhHant implements DateFields {
   @override
   DateFieldFullData get quarter => DateFieldFullData(
         displayName: MultiLength(
-          long: '季',
-          short: '季',
-          narrow: '季',
+          long: '季度',
+          short: '季度',
+          narrow: '季度',
         ),
         previous: MultiLength(
           long: '上一季',
@@ -8073,9 +8155,9 @@ class DateFieldsZhHant implements DateFields {
 
   @override
   MultiLength get weekOfMonth => MultiLength(
-        long: '週',
-        short: '週',
-        narrow: '週',
+        long: '該月第幾週',
+        short: '月週次',
+        narrow: '月週次',
       );
 
   @override
@@ -8132,23 +8214,23 @@ class DateFieldsZhHant implements DateFields {
 
   @override
   MultiLength get dayOfYear => MultiLength(
-        long: '年天',
-        short: '年天',
-        narrow: '年天',
+        long: '該年第幾天',
+        short: '該年第幾天',
+        narrow: '該年第幾天',
       );
 
   @override
   MultiLength get weekday => MultiLength(
-        long: '週天',
-        short: '週天',
-        narrow: '週天',
+        long: '星期',
+        short: '星期',
+        narrow: '星期',
       );
 
   @override
   MultiLength get weekdayOfMonth => MultiLength(
-        long: '每月平日',
-        short: '每月平日',
-        narrow: '每月平日',
+        long: '該月第幾週',
+        short: '該月第幾週',
+        narrow: '該月第幾週',
       );
 
   @override
@@ -8482,17 +8564,17 @@ class DateFieldsZhHant implements DateFields {
 
   @override
   MultiLength get dayperiod => MultiLength(
-        long: '上午/下午',
-        short: '上午/下午',
-        narrow: '上午/下午',
+        long: '時段',
+        short: '時段',
+        narrow: '時段',
       );
 
   @override
   DateFieldDataTime get hour => DateFieldDataTime(
         displayName: MultiLength(
           long: '小時',
-          short: '小時',
-          narrow: '小時',
+          short: '時',
+          narrow: '時',
         ),
         now: MultiLength(
           long: '這一小時',
@@ -8533,8 +8615,8 @@ class DateFieldsZhHant implements DateFields {
   DateFieldDataTime get minute => DateFieldDataTime(
         displayName: MultiLength(
           long: '分鐘',
-          short: '分鐘',
-          narrow: '分鐘',
+          short: '分',
+          narrow: '分',
         ),
         now: MultiLength(
           long: '這一分鐘',
@@ -10749,9 +10831,6 @@ class TimeZonesZhHant extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: '赤塔',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: '喬巴山',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: '可倫坡',
     ),
@@ -11502,14 +11581,6 @@ class TimeZonesZhHant extends TimeZones {
         daylight: '中國夏令時間',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: '喬巴山時間',
-        standard: '喬巴山標準時間',
-        daylight: '喬巴山夏令時間',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11808,6 +11879,12 @@ class TimeZonesZhHant extends TimeZones {
         generic: '彼得羅巴甫洛夫斯克時間',
         standard: '彼得羅巴甫洛夫斯克標準時間',
         daylight: '彼得羅巴甫洛夫斯克日光節約時間',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: '哈薩克時間',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

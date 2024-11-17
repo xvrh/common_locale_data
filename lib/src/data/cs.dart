@@ -323,6 +323,10 @@ class LanguagesCs extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'aniiština',
+    ),
     'bm': Language(
       'bm',
       'bambarština',
@@ -851,10 +855,6 @@ class LanguagesCs extends Languages {
       'goh',
       'hornoněmčina (stará)',
     ),
-    'gom': Language(
-      'gom',
-      'konkánština (Goa)',
-    ),
     'gon': Language(
       'gon',
       'góndština',
@@ -1290,6 +1290,10 @@ class LanguagesCs extends Languages {
     'kwk': Language(
       'kwk',
       'kvakiutština',
+    ),
+    'kxv': Language(
+      'kxv',
+      'kúvi',
     ),
     'ky': Language(
       'ky',
@@ -2443,10 +2447,6 @@ class LanguagesCs extends Languages {
       'uz',
       'uzbečtina',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2470,6 +2470,10 @@ class LanguagesCs extends Languages {
     'vmf': Language(
       'vmf',
       'němčina (mohansko-franské dialekty)',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwština',
     ),
     'vo': Language(
       'vo',
@@ -2530,6 +2534,10 @@ class LanguagesCs extends Languages {
     'xmf': Language(
       'xmf',
       'mingrelština',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kángrí',
     ),
     'xog': Language(
       'xog',
@@ -3542,9 +3550,9 @@ class UnitsCs implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0}{1}'),
-        short: CompoundUnitPattern('{0}{1}'),
-        narrow: CompoundUnitPattern('{0}{1}'),
+        long: CompoundUnitPattern('{0}⋅{1}'),
+        short: CompoundUnitPattern('{0}⋅{1}'),
+        narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
   Unit get accelerationGForce => Unit(
@@ -6414,7 +6422,7 @@ class UnitsCs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'pt',
+          'body',
           one: '{0} bod',
           few: '{0} body',
           many: '{0} bodu',
@@ -6422,7 +6430,7 @@ class UnitsCs implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pt',
+          'b.',
           one: '{0} bod',
           few: '{0} body',
           many: '{0} bodu',
@@ -8717,6 +8725,90 @@ class UnitsCs implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'světlo',
+          one: '{0} světlo',
+          few: '{0} světla',
+          many: '{0} světla',
+          other: '{0} světel',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'světlo',
+          one: '{0} světlo',
+          few: '{0} světla',
+          many: '{0} světla',
+          other: '{0} světel',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'světlo',
+          one: '{0} sv.',
+          few: '{0} sv.',
+          many: '{0} sv.',
+          other: '{0} sv.',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'částice na miliardu',
+          one: '{0} částice na miliardu',
+          few: '{0} částice na miliardu',
+          many: '{0} částice na miliardu',
+          other: '{0} částic na miliardu',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'částic/mld.',
+          one: '{0} částice na mld',
+          few: '{0} částice na mld',
+          many: '{0} částic na mld',
+          other: '{0} částic na mld',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'částic/mld.',
+          one: '{0} částice na mld',
+          few: '{0} částice na mld',
+          many: '{0} částic na mld',
+          other: '{0} částic na mld',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
         ),
       );
 }
@@ -11356,9 +11448,6 @@ class TimeZonesCs extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Čita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Čojbalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -11898,14 +11987,6 @@ class TimeZonesCs extends TimeZones {
         daylight: 'čínský letní čas',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'čojbalsanský čas',
-        standard: 'čojbalsanský standardní čas',
-        daylight: 'čojbalsanský letní čas',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12201,6 +12282,12 @@ class TimeZonesCs extends TimeZones {
         generic: 'petropavlovsko-kamčatský čas',
         standard: 'petropavlovsko-kamčatský standardní čas',
         daylight: 'petropavlovsko-kamčatský letní čas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazachstánský čas',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

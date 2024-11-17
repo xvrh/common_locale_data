@@ -324,6 +324,10 @@ class LanguagesJa extends Languages {
       'bla',
       'シクシカ語',
     ),
+    'blo': Language(
+      'blo',
+      'アニ語 (blo)',
+    ),
     'bm': Language(
       'bm',
       'バンバラ語',
@@ -860,10 +864,6 @@ class LanguagesJa extends Languages {
       'goh',
       '古高ドイツ語',
     ),
-    'gom': Language(
-      'gom',
-      'ゴア・コンカニ語',
-    ),
     'gon': Language(
       'gon',
       'ゴーンディー語',
@@ -1299,6 +1299,10 @@ class LanguagesJa extends Languages {
     'kwk': Language(
       'kwk',
       'クヮキゥワラ語',
+    ),
+    'kxv': Language(
+      'kxv',
+      'クーヴィンガ語',
     ),
     'ky': Language(
       'ky',
@@ -2478,6 +2482,10 @@ class LanguagesJa extends Languages {
       'vmf',
       'マインフランク語',
     ),
+    'vmw': Language(
+      'vmw',
+      'マクア語',
+    ),
     'vo': Language(
       'vo',
       'ヴォラピュク語',
@@ -2537,6 +2545,10 @@ class LanguagesJa extends Languages {
     'xmf': Language(
       'xmf',
       'メグレル語',
+    ),
+    'xnr': Language(
+      'xnr',
+      'カーングリー語',
     ),
     'xog': Language(
       'xog',
@@ -7786,6 +7798,72 @@ class UnitsJa implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0} 光',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0} 光',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0}light',
+          other: '{0}光',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '泊',
+          one: '{0} night',
+          other: '{0} 泊',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '泊',
+          one: '{0} night',
+          other: '{0} 泊',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '泊',
+          one: '{0}night',
+          other: '{0}泊',
+        ),
+      );
 }
 
 class DateFieldsJa implements DateFields {
@@ -10685,9 +10763,6 @@ class TimeZonesJa extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'チタ',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'チョイバルサン',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'コロンボ',
     ),
@@ -11408,14 +11483,6 @@ class TimeZonesJa extends TimeZones {
         daylight: '中国夏時間',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'チョイバルサン時間',
-        standard: 'チョイバルサン標準時',
-        daylight: 'チョイバルサン夏時間',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11710,6 +11777,12 @@ class TimeZonesJa extends TimeZones {
         generic: 'ペトロパブロフスク・カムチャツキー時間',
         standard: 'ペトロパブロフスク・カムチャツキー標準時',
         daylight: 'ペトロパブロフスク・カムチャツキー夏時間',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'カザフスタン時間',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

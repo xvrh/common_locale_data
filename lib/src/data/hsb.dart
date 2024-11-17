@@ -211,6 +211,10 @@ class LanguagesHsb extends Languages {
       'bla',
       'siksikášćina',
     ),
+    'blo': Language(
+      'blo',
+      'aniišćina',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -695,6 +699,10 @@ class LanguagesHsb extends Languages {
       'id',
       'indonešćina',
     ),
+    'ie': Language(
+      'ie',
+      'interlinguešćina',
+    ),
     'ig': Language(
       'ig',
       'igbo',
@@ -911,6 +919,10 @@ class LanguagesHsb extends Languages {
       'kwk',
       'kwakʼwalašćina',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvišćina',
+    ),
     'ky': Language(
       'ky',
       'kirgišćina',
@@ -943,6 +955,10 @@ class LanguagesHsb extends Languages {
       'li',
       'limburšćina',
     ),
+    'lij': Language(
+      'lij',
+      'ligurianšćina',
+    ),
     'lil': Language(
       'lil',
       'lillooetšćina',
@@ -950,6 +966,10 @@ class LanguagesHsb extends Languages {
     'lkt': Language(
       'lkt',
       'lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardšćina',
     ),
     'ln': Language(
       'ln',
@@ -990,10 +1010,6 @@ class LanguagesHsb extends Languages {
     'lun': Language(
       'lun',
       'lundašćina',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1567,6 +1583,10 @@ class LanguagesHsb extends Languages {
       'syr',
       'syriacšćina',
     ),
+    'szl': Language(
+      'szl',
+      'šlezišćina',
+    ),
     'ta': Language(
       'ta',
       'tamilšćina',
@@ -1723,17 +1743,21 @@ class LanguagesHsb extends Languages {
       'uz',
       'uzbekšćina',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'vendašćina',
     ),
+    'vec': Language(
+      'vec',
+      'venetišćina',
+    ),
     'vi': Language(
       'vi',
       'vietnamšćina',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwašćina',
     ),
     'vo': Language(
       'vo',
@@ -1774,6 +1798,10 @@ class LanguagesHsb extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangrišćina',
     ),
     'xog': Language(
       'xog',
@@ -7676,6 +7704,90 @@ class UnitsHsb implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'swětłowa spěšnosć',
+          one: '{0} swětłowa spěšnosć',
+          two: '{0} swětłowej spěšnosći',
+          few: '{0} swětłowe spěšnosće',
+          other: '{0} swětłowych spěšnosćow',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'sw. spěšnosć',
+          one: '{0} sw. spěšnosć',
+          two: '{0} sw. spěšnosći',
+          few: '{0} sw. spěšnosće',
+          other: '{0} sw. spěšnosćow',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'c',
+          one: '{0} c',
+          two: '{0} c',
+          few: '{0} c',
+          other: '{0} c',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'miliardćina',
+          one: '{0} miliardćina',
+          two: '{0} miliardćinje',
+          few: '{0} miliardćiny',
+          other: '{0} miliardćinow',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nano',
+          one: '{0} nano',
+          two: '{0} nano',
+          few: '{0} nano',
+          other: '{0} nano',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'n',
+          one: '{0} n',
+          two: '{0} n',
+          few: '{0} n',
+          other: '{0} n',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'přenocowanja',
+          one: '{0} přenocowanje',
+          two: '{0} přenocowani',
+          few: '{0} přenocowanja',
+          other: '{0} přenocowanjow',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nocy',
+          one: '{0} nóc',
+          two: '{0} nocy',
+          few: '{0} nocy',
+          other: '{0} nocow',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nocy',
+          one: '{0} nóc',
+          two: '{0} nocy',
+          few: '{0} nocy',
+          other: '{0} nocow',
+        ),
+      );
 }
 
 class DateFieldsHsb implements DateFields {
@@ -10344,6 +10456,9 @@ class TimeZonesHsb extends TimeZones {
     'Pacific/Easter': TimeZoneNames(
       exemplarCity: 'Jutrowna kupa',
     ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Enderbury',
+    ),
     'Pacific/Fiji': TimeZoneNames(
       exemplarCity: 'Fidźi',
     ),
@@ -10620,14 +10735,6 @@ class TimeZonesHsb extends TimeZones {
         generic: 'chinski čas',
         standard: 'chinski standardny čas',
         daylight: 'chinski lětni čas',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Čojbalsanski čas',
-        standard: 'Čojbalsanski standardny čas',
-        daylight: 'Čojbalsanski lětni čas',
       ),
     ),
     'Christmas': MetaZone(
@@ -10921,6 +11028,12 @@ class TimeZonesHsb extends TimeZones {
         generic: 'japanski čas',
         standard: 'japanski standardny čas',
         daylight: 'japanski lětni čas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazachski čas',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

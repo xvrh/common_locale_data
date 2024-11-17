@@ -268,6 +268,10 @@ class LanguagesHr extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1168,6 +1172,10 @@ class LanguagesHr extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiski',
@@ -1208,6 +1216,10 @@ class LanguagesHr extends Languages {
       'li',
       'limburški',
     ),
+    'lij': Language(
+      'lij',
+      'ligurski',
+    ),
     'lil': Language(
       'lil',
       'lillooet',
@@ -1215,6 +1227,10 @@ class LanguagesHr extends Languages {
     'lkt': Language(
       'lkt',
       'lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardski',
     ),
     'ln': Language(
       'ln',
@@ -1263,10 +1279,6 @@ class LanguagesHr extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1993,6 +2005,10 @@ class LanguagesHr extends Languages {
       'syr',
       'sirijski',
     ),
+    'szl': Language(
+      'szl',
+      'šleski',
+    ),
     'ta': Language(
       'ta',
       'tamilski',
@@ -2177,17 +2193,21 @@ class LanguagesHr extends Languages {
       'uz',
       'uzbečki',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'venecijanski',
+    ),
     'vi': Language(
       'vi',
       'vijetnamski',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -2240,6 +2260,10 @@ class LanguagesHr extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -7980,6 +8004,81 @@ class UnitsHr implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'svjetlo',
+          one: '{0} svjetlo',
+          few: '{0} svjetla',
+          other: '{0} svjetala',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'svjetlo',
+          one: '{0} svjetlo',
+          few: '{0} svjetla',
+          other: '{0} svjetala',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'svjetlo',
+          one: '{0} svjetlo',
+          few: '{0} svjetla',
+          other: '{0} svjetala',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'dijelovi na milijardu',
+          one: '{0} dio na milijardu',
+          few: '{0} dijela na milijardu',
+          other: '{0} dijelova na milijardu',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'dijelovi/milijarda',
+          one: '{0} dio na milijardu',
+          few: '{0} dijela na milijardu',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'dijelovi/milijarda',
+          one: '{0} dio na milijardu',
+          few: '{0} dijela na milijardu',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noći',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noć',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noć',
+          one: '{0} noć',
+          few: '{0} noći',
+          other: '{0} noći',
+        ),
+      );
 }
 
 class DateFieldsHr implements DateFields {
@@ -9129,7 +9228,7 @@ class TerritoriesHr implements Territories {
   final countries = CanonicalizedMap<String, String, Territory>.from({
     'AC': Territory(
       'AC',
-      'Otok Ascension',
+      'Otok Uzašašća',
     ),
     'AD': Territory(
       'AD',
@@ -9285,7 +9384,7 @@ class TerritoriesHr implements Territories {
     ),
     'CC': Territory(
       'CC',
-      'Kokosovi (Keelingovi) otoci',
+      'Kokosovi (Keelingovi) Otoci',
     ),
     'CD': Territory(
       'CD',
@@ -9312,7 +9411,7 @@ class TerritoriesHr implements Territories {
     ),
     'CK': Territory(
       'CK',
-      'Cookovi otoci',
+      'Cookovi Otoci',
     ),
     'CL': Territory(
       'CL',
@@ -9356,7 +9455,7 @@ class TerritoriesHr implements Territories {
     ),
     'CX': Territory(
       'CX',
-      'Božićni otok',
+      'Božićni Otok',
     ),
     'CY': Territory(
       'CY',
@@ -9445,8 +9544,8 @@ class TerritoriesHr implements Territories {
     ),
     'FK': Territory(
       'FK',
-      'Falklandski otoci',
-      variant: 'Falklandski otoci (Malvini)',
+      'Falklandski Otoci',
+      variant: 'Falklandski Otoci (Malvini)',
     ),
     'FM': Territory(
       'FM',
@@ -9454,7 +9553,7 @@ class TerritoriesHr implements Territories {
     ),
     'FO': Territory(
       'FO',
-      'Farski otoci',
+      'Ovčji Otoci',
     ),
     'FR': Territory(
       'FR',
@@ -9519,7 +9618,7 @@ class TerritoriesHr implements Territories {
     ),
     'GS': Territory(
       'GS',
-      'Južna Georgija i Južni Sendvički Otoci',
+      'Južna Georgia i Otoci Južni Sandwich',
     ),
     'GT': Territory(
       'GT',
@@ -9564,7 +9663,7 @@ class TerritoriesHr implements Territories {
     ),
     'IC': Territory(
       'IC',
-      'Kanarski otoci',
+      'Kanari',
     ),
     'ID': Territory(
       'ID',
@@ -9588,7 +9687,7 @@ class TerritoriesHr implements Territories {
     ),
     'IO': Territory(
       'IO',
-      'Britanski Indijskooceanski teritorij',
+      'Britanski Indijskooceanski Teritorij',
     ),
     'IQ': Territory(
       'IQ',
@@ -9660,7 +9759,7 @@ class TerritoriesHr implements Territories {
     ),
     'KY': Territory(
       'KY',
-      'Kajmanski otoci',
+      'Kajmanski Otoci',
     ),
     'KZ': Territory(
       'KZ',
@@ -9761,7 +9860,7 @@ class TerritoriesHr implements Territories {
     ),
     'MP': Territory(
       'MP',
-      'Sjevernomarijanski otoci',
+      'Sjevernomarijanski Otoci',
     ),
     'MQ': Territory(
       'MQ',
@@ -9890,7 +9989,7 @@ class TerritoriesHr implements Territories {
     ),
     'PN': Territory(
       'PN',
-      'Otoci Pitcairn',
+      'Pitcairnovi Otoci',
     ),
     'PR': Territory(
       'PR',
@@ -9947,7 +10046,7 @@ class TerritoriesHr implements Territories {
     ),
     'SB': Territory(
       'SB',
-      'Salomonski Otoci',
+      'Salomonovi Otoci',
     ),
     'SC': Territory(
       'SC',
@@ -10040,7 +10139,7 @@ class TerritoriesHr implements Territories {
     ),
     'TF': Territory(
       'TF',
-      'Francuski južni i antarktički teritoriji',
+      'Francuski Južni Teritoriji',
     ),
     'TG': Territory(
       'TG',
@@ -10128,7 +10227,7 @@ class TerritoriesHr implements Territories {
     ),
     'VA': Territory(
       'VA',
-      'Vatikanski Grad',
+      'Vatikan',
     ),
     'VC': Territory(
       'VC',
@@ -10140,11 +10239,11 @@ class TerritoriesHr implements Territories {
     ),
     'VG': Territory(
       'VG',
-      'Britanski Djevičanski otoci',
+      'Britanski Djevičanski Otoci',
     ),
     'VI': Territory(
       'VI',
-      'Američki Djevičanski otoci',
+      'Američki Djevičanski Otoci',
     ),
     'VN': Territory(
       'VN',
@@ -10322,7 +10421,10 @@ class TimeZonesHr extends TimeZones {
       exemplarCity: 'St. Vincent',
     ),
     'Atlantic/Azores': TimeZoneNames(
-      exemplarCity: 'Azorski otoci',
+      exemplarCity: 'Azori',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      exemplarCity: 'Bermudi',
     ),
     'Atlantic/Canary': TimeZoneNames(
       exemplarCity: 'Kanari',
@@ -10334,7 +10436,7 @@ class TimeZonesHr extends TimeZones {
       exemplarCity: 'Južna Georgija',
     ),
     'Atlantic/St_Helena': TimeZoneNames(
-      exemplarCity: 'St. Helena',
+      exemplarCity: 'Sveta Helena',
     ),
     'Europe/Andorra': TimeZoneNames(
       exemplarCity: 'Andora',
@@ -10499,8 +10601,11 @@ class TimeZonesHr extends TimeZones {
     'Asia/Kamchatka': TimeZoneNames(
       exemplarCity: 'Kamčatka',
     ),
+    'Asia/Karachi': TimeZoneNames(
+      exemplarCity: 'Karači',
+    ),
     'Asia/Katmandu': TimeZoneNames(
-      exemplarCity: 'Kathmandu',
+      exemplarCity: 'Katmandu',
     ),
     'Asia/Khandyga': TimeZoneNames(
       exemplarCity: 'Handiga',
@@ -10533,7 +10638,7 @@ class TimeZonesHr extends TimeZones {
       exemplarCity: 'Kizilorda',
     ),
     'Asia/Rangoon': TimeZoneNames(
-      exemplarCity: 'Rangoon',
+      exemplarCity: 'Rangun',
     ),
     'Asia/Riyadh': TimeZoneNames(
       exemplarCity: 'Rijad',
@@ -10543,6 +10648,9 @@ class TimeZonesHr extends TimeZones {
     ),
     'Asia/Sakhalin': TimeZoneNames(
       exemplarCity: 'Sahalin',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      exemplarCity: 'Seul',
     ),
     'Asia/Shanghai': TimeZoneNames(
       exemplarCity: 'Šangaj',
@@ -10559,8 +10667,14 @@ class TimeZonesHr extends TimeZones {
     'Asia/Tehran': TimeZoneNames(
       exemplarCity: 'Teheran',
     ),
+    'Asia/Tokyo': TimeZoneNames(
+      exemplarCity: 'Tokio',
+    ),
     'Asia/Ulaanbaatar': TimeZoneNames(
       exemplarCity: 'Ulan Bator',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: 'Urumči',
     ),
     'Asia/Yakutsk': TimeZoneNames(
       exemplarCity: 'Jakutsk',
@@ -10910,24 +11024,16 @@ class TimeZonesHr extends TimeZones {
         daylight: 'kinesko ljetno vrijeme',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'choibalsansko vrijeme',
-        standard: 'choibalsansko standardno vrijeme',
-        daylight: 'choibalsansko ljetno vrijeme',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
-        standard: 'vrijeme Božićnog otoka',
+        standard: 'vrijeme Božićnog Otoka',
       ),
     ),
     'Cocos': MetaZone(
       code: 'Cocos',
       long: TimeZoneName(
-        standard: 'vrijeme Kokosovih otoka',
+        standard: 'vrijeme Kokosovih Otoka',
       ),
     ),
     'Colombia': MetaZone(
@@ -10941,9 +11047,9 @@ class TimeZonesHr extends TimeZones {
     'Cook': MetaZone(
       code: 'Cook',
       long: TimeZoneName(
-        generic: 'vrijeme Cookovih otoka',
-        standard: 'standardno vrijeme Cookovih otoka',
-        daylight: 'Cookovi otoci, polusatni pomak, ljetno vrijeme',
+        generic: 'vrijeme Cookovih Otoka',
+        standard: 'standardno vrijeme Cookovih Otoka',
+        daylight: 'Cookovi Otoci, polusatni pomak, ljetno vrijeme',
       ),
     ),
     'Cuba': MetaZone(
@@ -11056,7 +11162,7 @@ class TimeZonesHr extends TimeZones {
     'French_Southern': MetaZone(
       code: 'French_Southern',
       long: TimeZoneName(
-        standard: 'vrijeme Francuskih južnih i antarktičkih teritorija',
+        standard: 'vrijeme Francuskih Južnih Teritorija',
       ),
     ),
     'Galapagos': MetaZone(
@@ -11226,6 +11332,12 @@ class TimeZonesHr extends TimeZones {
         generic: 'Petropavlovsk-kamčatsko vrijeme',
         standard: 'Petropavlovsk-kamčatsko standardno vrijeme',
         daylight: 'Petropavlovsk-kamčatsko ljetno vrijeme',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazahstansko vrijeme',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
@@ -11587,7 +11699,7 @@ class TimeZonesHr extends TimeZones {
     'Solomon': MetaZone(
       code: 'Solomon',
       long: TimeZoneName(
-        standard: 'vrijeme Salomonskih Otoka',
+        standard: 'vrijeme Salomonovih Otoka',
       ),
     ),
     'South_Georgia': MetaZone(

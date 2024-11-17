@@ -319,6 +319,14 @@ class LanguagesGd extends Languages {
       'bla',
       'Siksika',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
+    'blt': Language(
+      'blt',
+      'Tai Dam',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -458,6 +466,10 @@ class LanguagesGd extends Languages {
     'chy': Language(
       'chy',
       'Cheyenne',
+    ),
+    'cic': Language(
+      'cic',
+      'Chickasaw',
     ),
     'ckb': Language(
       'ckb',
@@ -871,10 +883,6 @@ class LanguagesGd extends Languages {
       'goh',
       'Seann-Àrd-Gearmailtis',
     ),
-    'gom': Language(
-      'gom',
-      'Konkani Goa',
-    ),
     'gon': Language(
       'gon',
       'Gondi',
@@ -966,6 +974,10 @@ class LanguagesGd extends Languages {
     'hmn': Language(
       'hmn',
       'Hmong',
+    ),
+    'hnj': Language(
+      'hnj',
+      'Hmong Njua',
     ),
     'ho': Language(
       'ho',
@@ -1299,6 +1311,10 @@ class LanguagesGd extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Cìorgasais',
@@ -1390,6 +1406,10 @@ class LanguagesGd extends Languages {
     'lt': Language(
       'lt',
       'Liotuainis',
+    ),
+    'ltg': Language(
+      'ltg',
+      'Latgailis',
     ),
     'lu': Language(
       'lu',
@@ -2207,6 +2227,10 @@ class LanguagesGd extends Languages {
       'syr',
       'Suraidheac',
     ),
+    'szl': Language(
+      'szl',
+      'Sileisis',
+    ),
     'ta': Language(
       'ta',
       'Taimilis',
@@ -2331,6 +2355,10 @@ class LanguagesGd extends Languages {
       'trv',
       'Taroko',
     ),
+    'trw': Language(
+      'trw',
+      'Torwali',
+    ),
     'ts': Language(
       'ts',
       'Tsonga',
@@ -2431,6 +2459,10 @@ class LanguagesGd extends Languages {
       'vls',
       'Flànrais Shiarach',
     ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
+    ),
     'vo': Language(
       'vo',
       'Volapük',
@@ -2482,6 +2514,10 @@ class LanguagesGd extends Languages {
     'xh': Language(
       'xh',
       'Xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
@@ -2593,10 +2629,6 @@ class ScriptsGd extends Scripts {
       'Aghb',
       'Albàinis Chabhcasach',
     ),
-    'Ahom': Script(
-      'Ahom',
-      'Ahom',
-    ),
     'Arab': Script(
       'Arab',
       'Arabais',
@@ -2616,10 +2648,6 @@ class ScriptsGd extends Scripts {
     'Avst': Script(
       'Avst',
       'Avestanais',
-    ),
-    'Bali': Script(
-      'Bali',
-      'Bali',
     ),
     'Bamu': Script(
       'Bamu',
@@ -2676,10 +2704,6 @@ class ScriptsGd extends Scripts {
     'Cari': Script(
       'Cari',
       'Carian',
-    ),
-    'Cham': Script(
-      'Cham',
-      'Cham',
     ),
     'Cher': Script(
       'Cher',
@@ -2749,6 +2773,10 @@ class ScriptsGd extends Scripts {
       'Ethi',
       'Ge’ez',
     ),
+    'Gara': Script(
+      'Gara',
+      'Garay',
+    ),
     'Geor': Script(
       'Geor',
       'Cairtbheilis',
@@ -2780,6 +2808,10 @@ class ScriptsGd extends Scripts {
     'Gujr': Script(
       'Gujr',
       'Gujarati',
+    ),
+    'Gukh': Script(
+      'Gukh',
+      'Gurung Khema',
     ),
     'Guru': Script(
       'Guru',
@@ -2847,10 +2879,6 @@ class ScriptsGd extends Scripts {
       'Ital',
       'Seann-Eadailtis',
     ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
-    ),
     'Java': Script(
       'Java',
       'Deàbhanais',
@@ -2873,7 +2901,7 @@ class ScriptsGd extends Scripts {
     ),
     'Kawi': Script(
       'Kawi',
-      'Kawi',
+      'KAWI',
     ),
     'Khar': Script(
       'Khar',
@@ -2902,6 +2930,10 @@ class ScriptsGd extends Scripts {
     'Kpel': Script(
       'Kpel',
       'Kpelle',
+    ),
+    'Krai': Script(
+      'Krai',
+      'Kirat Rai',
     ),
     'Kthi': Script(
       'Kthi',
@@ -2945,7 +2977,7 @@ class ScriptsGd extends Scripts {
     ),
     'Lisu': Script(
       'Lisu',
-      'Lisu',
+      'Fraser',
     ),
     'Loma': Script(
       'Loma',
@@ -3003,10 +3035,6 @@ class ScriptsGd extends Scripts {
       'Mlym',
       'Malayalam',
     ),
-    'Modi': Script(
-      'Modi',
-      'Modi',
-    ),
     'Mong': Script(
       'Mong',
       'Mongolais',
@@ -3043,10 +3071,6 @@ class ScriptsGd extends Scripts {
       'Nbat',
       'Nabataean',
     ),
-    'Newa': Script(
-      'Newa',
-      'Newa',
-    ),
     'Nkgb': Script(
       'Nkgb',
       'Naxi Geba',
@@ -3066,6 +3090,10 @@ class ScriptsGd extends Scripts {
     'Olck': Script(
       'Olck',
       'Ol Chiki',
+    ),
+    'Onao': Script(
+      'Onao',
+      'Ol Onal',
     ),
     'Orkh': Script(
       'Orkh',
@@ -3203,6 +3231,10 @@ class ScriptsGd extends Scripts {
       'Sund',
       'Sunda',
     ),
+    'Sunu': Script(
+      'Sunu',
+      'Sunuwar',
+    ),
     'Sylo': Script(
       'Sylo',
       'Syloti Nagri',
@@ -3210,6 +3242,10 @@ class ScriptsGd extends Scripts {
     'Syrc': Script(
       'Syrc',
       'Suraidheac',
+    ),
+    'Syre': Script(
+      'Syre',
+      'Suraidheac Estrangela',
     ),
     'Syrj': Script(
       'Syrj',
@@ -3283,9 +3319,13 @@ class ScriptsGd extends Scripts {
       'Tnsa',
       'Tangsa',
     ),
-    'Toto': Script(
-      'Toto',
-      'Toto',
+    'Todr': Script(
+      'Todr',
+      'Todhri',
+    ),
+    'Tutg': Script(
+      'Tutg',
+      'Tulu-Tigalari',
     ),
     'Ugar': Script(
       'Ugar',
@@ -8960,6 +9000,90 @@ class UnitsGd implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'solas',
+          one: '{0} sholas',
+          two: '{0} sholas',
+          few: '{0} solasan',
+          other: '{0} solas',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'solas',
+          one: '{0} sholas',
+          two: '{0} sholas',
+          few: '{0} solasan',
+          other: '{0} solas',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'solas',
+          one: '{0}sholas',
+          two: '{0}sholas',
+          few: '{0}solas.',
+          other: '{0}solas',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'pàirt sa bhillean',
+          one: '{0} phàirt sa bhillean',
+          two: '{0} phàirt sa bhillean',
+          few: '{0} pàirtean sa bhillean',
+          other: '{0} pàirt sa bhillean',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'pàirt/billean',
+          one: '{0} phàirt sa bhillean',
+          two: '{0} phàirt sa bhillean',
+          few: '{0} pàirtean sa bhillean',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'pàirt/billean',
+          one: '{0}ppb',
+          two: '{0}ppb',
+          few: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'oidhche',
+          one: '{0} oidhche',
+          two: '{0} oidhche',
+          few: '{0} oidhcheannan',
+          other: '{0} oidhche',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'oidhche',
+          one: '{0} oidhche',
+          two: '{0} oidhche',
+          few: '{0} oidhche.',
+          other: '{0} oidhche',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'oidhche',
+          one: '{0}oidh.',
+          two: '{0}oidh.',
+          few: '{0}oidh.',
+          other: '{0}oidh.',
+        ),
+      );
 }
 
 class DateFieldsGd implements DateFields {
@@ -10479,7 +10603,7 @@ class TerritoriesGd implements Territories {
     ),
     'EG': Territory(
       'EG',
-      'An Èiphit',
+      'An Èipheit',
     ),
     'EH': Territory(
       'EH',
@@ -10614,7 +10738,7 @@ class TerritoriesGd implements Territories {
     ),
     'HM': Territory(
       'HM',
-      'Eilean Heard is MhicDhòmhnaill',
+      'Eilean Heard is Eileanan MhicDhòmhnaill',
     ),
     'HN': Territory(
       'HN',
@@ -11842,9 +11966,9 @@ class TimeZonesGd extends TimeZones {
     'America_Central': MetaZone(
       code: 'America_Central',
       long: TimeZoneName(
-        generic: 'Àm Meadhan Aimeireaga a Tuath',
-        standard: 'Bun-àm Meadhan Aimeireaga a Tuath',
-        daylight: 'Tìde samhraidh Meadhan Aimeireaga a Tuath',
+        generic: 'Àm Meadhan Aimeireaga',
+        standard: 'Bun-àm Meadhan Aimeireaga',
+        daylight: 'Tìde samhraidh Meadhan Aimeireaga',
       ),
       short: TimeZoneName(
         generic: 'CT',
@@ -11855,9 +11979,9 @@ class TimeZonesGd extends TimeZones {
     'America_Eastern': MetaZone(
       code: 'America_Eastern',
       long: TimeZoneName(
-        generic: 'Àm Aimeireaga a Tuath an Ear',
-        standard: 'Bun-àm Aimeireaga a Tuath an Ear',
-        daylight: 'Tìde samhraidh Aimeireaga a Tuath an Ear',
+        generic: 'Àm Aimeireaga an Ear',
+        standard: 'Bun-àm Aimeireaga an Ear',
+        daylight: 'Tìde samhraidh Aimeireaga an Ear',
       ),
       short: TimeZoneName(
         generic: 'ET',
@@ -11868,9 +11992,9 @@ class TimeZonesGd extends TimeZones {
     'America_Mountain': MetaZone(
       code: 'America_Mountain',
       long: TimeZoneName(
-        generic: 'Àm Monadh Aimeireaga a Tuath',
-        standard: 'Bun-àm Monadh Aimeireaga a Tuath',
-        daylight: 'Tìde samhraidh Monadh Aimeireaga a Tuath',
+        generic: 'Àm Monadh Aimeireaga',
+        standard: 'Bun-àm Monadh Aimeireaga',
+        daylight: 'Tìde samhraidh Monadh Aimeireaga',
       ),
       short: TimeZoneName(
         generic: 'MT',
@@ -11881,9 +12005,9 @@ class TimeZonesGd extends TimeZones {
     'America_Pacific': MetaZone(
       code: 'America_Pacific',
       long: TimeZoneName(
-        generic: 'Àm a’ Chuain Sèimh',
-        standard: 'Bun-àm a’ Chuain Sèimh',
-        daylight: 'Tìde samhraidh a’ Chuain Sèimh',
+        generic: 'Àm a’ Chuain Shèimh',
+        standard: 'Bun-àm a’ Chuain Shèimh',
+        daylight: 'Tìde samhraidh a’ Chuain Shèimh',
       ),
       short: TimeZoneName(
         generic: 'PT',
@@ -11958,9 +12082,9 @@ class TimeZonesGd extends TimeZones {
     'Atlantic': MetaZone(
       code: 'Atlantic',
       long: TimeZoneName(
-        generic: 'Àm a’ Chuain Siar',
-        standard: 'Bun-àm a’ Chuain Siar',
-        daylight: 'Tìde samhraidh a’ Chuain Siar',
+        generic: 'Àm a’ Chuain Shiar',
+        standard: 'Bun-àm a’ Chuain Shiar',
+        daylight: 'Tìde samhraidh a’ Chuain Shiar',
       ),
       short: TimeZoneName(
         generic: 'AT',
@@ -12092,14 +12216,6 @@ class TimeZonesGd extends TimeZones {
         generic: 'Àm na Sìne',
         standard: 'Bun-àm na Sìne',
         daylight: 'Tìde samhraidh na Sìne',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Àm Choibalsan',
-        standard: 'Bun-àm Choibalsan',
-        daylight: 'Tìde samhraidh Choibalsan',
       ),
     ),
     'Christmas': MetaZone(
@@ -12278,6 +12394,14 @@ class TimeZonesGd extends TimeZones {
         standard: 'GMT',
       ),
     ),
+    'Greenland': MetaZone(
+      code: 'Greenland',
+      long: TimeZoneName(
+        generic: 'Àm na Graonlainne',
+        standard: 'Bun-àm na Graonlainne',
+        daylight: 'Tìde samhraidh na Graonlainne',
+      ),
+    ),
     'Greenland_Eastern': MetaZone(
       code: 'Greenland_Eastern',
       long: TimeZoneName(
@@ -12417,6 +12541,12 @@ class TimeZonesGd extends TimeZones {
         daylight: 'Tìde samhraidh Petropavlovsk-Kamchatsky',
       ),
     ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Àm Casachstàin',
+      ),
+    ),
     'Kazakhstan_Eastern': MetaZone(
       code: 'Kazakhstan_Eastern',
       long: TimeZoneName(
@@ -12534,9 +12664,9 @@ class TimeZonesGd extends TimeZones {
     'Mexico_Pacific': MetaZone(
       code: 'Mexico_Pacific',
       long: TimeZoneName(
-        generic: 'Àm a’ Chuain Sèimh Mheagsago',
-        standard: 'Bun-àm a’ Chuain Sèimh Mheagsago',
-        daylight: 'Tìde samhraidh a’ Chuain Sèimh Mheagsago',
+        generic: 'Àm a’ Chuain Shèimh Mheagsago',
+        standard: 'Bun-àm a’ Chuain Shèimh Mheagsago',
+        daylight: 'Tìde samhraidh a’ Chuain Shèimh Mheagsago',
       ),
     ),
     'Mongolia': MetaZone(

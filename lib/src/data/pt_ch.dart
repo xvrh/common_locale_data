@@ -267,6 +267,10 @@ class LanguagesPtCH extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1167,6 +1171,10 @@ class LanguagesPtCH extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'quirguiz',
@@ -1206,6 +1214,10 @@ class LanguagesPtCH extends Languages {
     'li': Language(
       'li',
       'limburguês',
+    ),
+    'lij': Language(
+      'lij',
+      'ligure',
     ),
     'lil': Language(
       'lil',
@@ -1266,10 +1278,6 @@ class LanguagesPtCH extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1345,7 +1353,7 @@ class LanguagesPtCH extends Languages {
     ),
     'mgh': Language(
       'mgh',
-      'macua',
+      'macua-mêto',
     ),
     'mgo': Language(
       'mgo',
@@ -1996,6 +2004,10 @@ class LanguagesPtCH extends Languages {
       'syr',
       'siríaco',
     ),
+    'szl': Language(
+      'szl',
+      'silesiano',
+    ),
     'ta': Language(
       'ta',
       'tâmil',
@@ -2180,17 +2192,21 @@ class LanguagesPtCH extends Languages {
       'uz',
       'usbeque',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'véneto',
+    ),
     'vi': Language(
       'vi',
       'vietnamita',
+    ),
+    'vmw': Language(
+      'vmw',
+      'macua',
     ),
     'vo': Language(
       'vo',
@@ -2243,6 +2259,10 @@ class LanguagesPtCH extends Languages {
     'xh': Language(
       'xh',
       'xosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -5293,9 +5313,9 @@ class UnitsPtCH implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'milha',
-          one: '{0} milha',
-          other: '{0} milhas',
+          'mi',
+          one: '{0} mi',
+          other: '{0} mi',
         ),
       );
 
@@ -5359,7 +5379,7 @@ class UnitsPtCH implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'polegadas',
+          'pol.',
           one: '{0}″',
           other: '{0}″',
         ),
@@ -7342,6 +7362,72 @@ class UnitsPtCH implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luzes',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luzes',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luzes',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'partes por mil milhões',
+          one: '{0} parte por mil milhões',
+          other: '{0} partes por mil milhões',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'partes/mil milhões',
+          one: '{0} ppmm',
+          other: '{0} ppmm',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppmm',
+          one: '{0} ppmm',
+          other: '{0} ppmm',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
         ),
       );
 }
@@ -10361,14 +10447,6 @@ class TimeZonesPtCH extends TimeZones {
         daylight: 'Hora de verão da China',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Hora de Choibalsan',
-        standard: 'Hora padrão de Choibalsan',
-        daylight: 'Hora de verão de Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10674,6 +10752,12 @@ class TimeZonesPtCH extends TimeZones {
         generic: 'Hora de Petropavlovsk-Kamchatski',
         standard: 'Hora padrão de Petropavlovsk-Kamchatski',
         daylight: 'Hora de verão de Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Hora do Cazaquistão',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

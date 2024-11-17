@@ -215,6 +215,10 @@ class LanguagesUrIN extends Languages {
       'bla',
       'سکسیکا',
     ),
+    'blo': Language(
+      'blo',
+      'عانی',
+    ),
     'bm': Language(
       'bm',
       'بمبارا',
@@ -699,6 +703,10 @@ class LanguagesUrIN extends Languages {
       'id',
       'انڈونیثیائی',
     ),
+    'ie': Language(
+      'ie',
+      'غربی',
+    ),
     'ig': Language(
       'ig',
       'اِگبو',
@@ -915,6 +923,10 @@ class LanguagesUrIN extends Languages {
       'kwk',
       'کیواکوالا',
     ),
+    'kxv': Language(
+      'kxv',
+      'کووی',
+    ),
     'ky': Language(
       'ky',
       'کرغیزی',
@@ -946,6 +958,10 @@ class LanguagesUrIN extends Languages {
     'li': Language(
       'li',
       'لیمبرگش',
+    ),
+    'lij': Language(
+      'lij',
+      'لیگوریائی',
     ),
     'lil': Language(
       'lil',
@@ -1109,7 +1125,7 @@ class LanguagesUrIN extends Languages {
     ),
     'mr': Language(
       'mr',
-      'مراٹهی',
+      'مراٹھی',
     ),
     'ms': Language(
       'ms',
@@ -1583,6 +1599,10 @@ class LanguagesUrIN extends Languages {
       'syr',
       'سریانی',
     ),
+    'szl': Language(
+      'szl',
+      'سیلیزیائی',
+    ),
     'ta': Language(
       'ta',
       'تمل',
@@ -1747,9 +1767,17 @@ class LanguagesUrIN extends Languages {
       've',
       'وینڈا',
     ),
+    'vec': Language(
+      'vec',
+      'وینسی',
+    ),
     'vi': Language(
       'vi',
       'ویتنامی',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ماکوائی',
     ),
     'vo': Language(
       'vo',
@@ -1795,6 +1823,10 @@ class LanguagesUrIN extends Languages {
       'xh',
       'ژوسا',
     ),
+    'xnr': Language(
+      'xnr',
+      'کانگری',
+    ),
     'xog': Language(
       'xog',
       'سوگا',
@@ -1823,6 +1855,10 @@ class LanguagesUrIN extends Languages {
       'yue',
       'کینٹونیز',
       menu: 'چینی، کینٹونیز',
+    ),
+    'za': Language(
+      'za',
+      'ژوانگی',
     ),
     'zgh': Language(
       'zgh',
@@ -6607,6 +6643,72 @@ class UnitsUrIN implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'روشنی',
+          one: '{0} روشنی',
+          other: '{0} روشنی',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'روشنی',
+          one: '{0} روشنی',
+          other: '{0} روشنی',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'روشنی',
+          one: '{0} روشنی',
+          other: '{0} روشنی',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'اجزا فی بلین',
+          one: '{0} جزو فی بلین',
+          other: '{0} اجزا فی بلین',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'اجزا/بلین',
+          one: '{0} جزو فی بلین',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'اجزا/بلین',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'راتیں',
+          one: '{0} رات',
+          other: '{0} راتیں',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'راتیں',
+          one: '{0} رات',
+          other: '{0} راتیں',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'راتیں',
+          one: '{0} رات',
+          other: '{0} راتیں',
+        ),
+      );
 }
 
 class DateFieldsUrIN implements DateFields {
@@ -9595,9 +9697,6 @@ class TimeZonesUrIN extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'چیتا',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'چوئبالسان',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'کولمبو',
     ),
@@ -10280,14 +10379,6 @@ class TimeZonesUrIN extends TimeZones {
         daylight: 'چینی ڈے لائٹ ٹائم',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'کوئبلسان ٹائم',
-        standard: 'کوئبلسان سٹینڈرڈ ٹائم',
-        daylight: 'کوائبلسان سمر ٹائم',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10572,6 +10663,12 @@ class TimeZonesUrIN extends TimeZones {
         generic: 'پیٹروپاؤلووسک-کیمچسکی ٹائم',
         standard: 'پیٹروپاؤلووسک-کیمچسکی اسٹینڈرڈ ٹائم',
         daylight: 'پیٹروپاؤلووسک-کیمچسکی سمر ٹائم',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'قازقستان کا وقت',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

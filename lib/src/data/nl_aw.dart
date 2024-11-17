@@ -324,6 +324,10 @@ class LanguagesNlAW extends Languages {
       'bla',
       'Siksika',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -834,10 +838,6 @@ class LanguagesNlAW extends Languages {
       'goh',
       'Oudhoogduits',
     ),
-    'gom': Language(
-      'gom',
-      'Goa Konkani',
-    ),
     'gon': Language(
       'gon',
       'Gondi',
@@ -1273,6 +1273,10 @@ class LanguagesNlAW extends Languages {
     'kwk': Language(
       'kwk',
       'Kwakʼwala',
+    ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
     ),
     'ky': Language(
       'ky',
@@ -2443,6 +2447,10 @@ class LanguagesNlAW extends Languages {
       'vmf',
       'Opperfrankisch',
     ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
+    ),
     'vo': Language(
       'vo',
       'Volapük',
@@ -2502,6 +2510,10 @@ class LanguagesNlAW extends Languages {
     'xmf': Language(
       'xmf',
       'Mingreels',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
@@ -2605,10 +2617,6 @@ class ScriptsNlAW extends Scripts {
       'Aghb',
       'Kaukasisch Albanees',
     ),
-    'Ahom': Script(
-      'Ahom',
-      'Ahom',
-    ),
     'Arab': Script(
       'Arab',
       'Arabisch',
@@ -2689,10 +2697,6 @@ class ScriptsNlAW extends Scripts {
     'Cari': Script(
       'Cari',
       'Carisch',
-    ),
-    'Cham': Script(
-      'Cham',
-      'Cham',
     ),
     'Cher': Script(
       'Cher',
@@ -2876,10 +2880,6 @@ class ScriptsNlAW extends Scripts {
       'Ital',
       'Oud-italisch',
     ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
-    ),
     'Java': Script(
       'Java',
       'Javaans',
@@ -3031,10 +3031,6 @@ class ScriptsNlAW extends Scripts {
     'Mlym': Script(
       'Mlym',
       'Malayalam',
-    ),
-    'Modi': Script(
-      'Modi',
-      'Modi',
     ),
     'Mong': Script(
       'Mong',
@@ -3307,10 +3303,6 @@ class ScriptsNlAW extends Scripts {
     'Thaa': Script(
       'Thaa',
       'Thaana',
-    ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
     ),
     'Tibt': Script(
       'Tibt',
@@ -3838,9 +3830,9 @@ class UnitsNlAW implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0}{1}'),
-        short: CompoundUnitPattern('{0}{1}'),
-        narrow: CompoundUnitPattern('{0}{1}'),
+        long: CompoundUnitPattern('{0}⋅{1}'),
+        short: CompoundUnitPattern('{0}⋅{1}'),
+        narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
   Unit get accelerationGForce => Unit(
@@ -4287,19 +4279,19 @@ class UnitsNlAW implements Units {
         long: UnitCountPattern(
           _locale,
           'onderdelen',
-          one: '{0} onderdeel',
+          one: '{0} ond.',
           other: '{0} onderdelen',
         ),
         short: UnitCountPattern(
           _locale,
           'onderdeel',
-          one: '{0} onderdeel',
+          one: '{0} ond.',
           other: '{0} ond.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'onderdeel',
-          one: '{0} onderdeel',
+          one: '{0} ond.',
           other: '{0} ond.',
         ),
       );
@@ -7048,7 +7040,7 @@ class UnitsNlAW implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          '°',
+          '°C',
           one: '{0}°',
           other: '{0}°',
         ),
@@ -7909,6 +7901,72 @@ class UnitsNlAW implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'licht',
+          one: '{0} licht',
+          other: '{0} licht',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'licht',
+          one: '{0} licht',
+          other: '{0} licht',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'licht',
+          one: '{0}licht',
+          other: '{0}licht',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nachten',
+          one: '{0} nacht',
+          other: '{0} nachten',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nachten',
+          one: '{0} nacht',
+          other: '{0} nachten',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nachten',
+          one: '{0} nacht',
+          other: '{0} nachten',
         ),
       );
 }
@@ -10296,9 +10354,6 @@ class TimeZonesNlAW extends TimeZones {
     'Asia/Calcutta': TimeZoneNames(
       exemplarCity: 'Calcutta',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tsjojbalsan',
-    ),
     'Asia/Dushanbe': TimeZoneNames(
       exemplarCity: 'Doesjanbe',
     ),
@@ -10751,14 +10806,6 @@ class TimeZonesNlAW extends TimeZones {
         daylight: 'Chinese zomertijd',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Tsjojbalsan-tijd',
-        standard: 'Tsjojbalsan-standaardtijd',
-        daylight: 'Tsjojbalsan-zomertijd',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11072,6 +11119,12 @@ class TimeZonesNlAW extends TimeZones {
         generic: 'Petropavlovsk-Kamtsjatski-tijd',
         standard: 'Petropavlovsk-Kamtsjatski-standaardtijd',
         daylight: 'Petropavlovsk-Kamtsjatski-zomertijd',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazachse tijd',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

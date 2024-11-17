@@ -211,6 +211,10 @@ class LanguagesUz extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -695,6 +699,10 @@ class LanguagesUz extends Languages {
       'id',
       'indonez',
     ),
+    'ie': Language(
+      'ie',
+      'interlingve',
+    ),
     'ig': Language(
       'ig',
       'igbo',
@@ -907,6 +915,10 @@ class LanguagesUz extends Languages {
       'kwk',
       'kvakvala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'qirgʻizcha',
@@ -939,6 +951,10 @@ class LanguagesUz extends Languages {
       'li',
       'limburg',
     ),
+    'lij': Language(
+      'lij',
+      'liguryan',
+    ),
     'lil': Language(
       'lil',
       'lilluet',
@@ -946,6 +962,10 @@ class LanguagesUz extends Languages {
     'lkt': Language(
       'lkt',
       'lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombard',
     ),
     'ln': Language(
       'ln',
@@ -986,10 +1006,6 @@ class LanguagesUz extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1565,7 +1581,11 @@ class LanguagesUz extends Languages {
     ),
     'syr': Language(
       'syr',
-      'suriyacha',
+      'suryoniy',
+    ),
+    'szl': Language(
+      'szl',
+      'silez',
     ),
     'ta': Language(
       'ta',
@@ -1715,17 +1735,21 @@ class LanguagesUz extends Languages {
       'uz',
       'o‘zbek',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'venet',
+    ),
     'vi': Language(
       'vi',
       'vyetnam',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -1771,6 +1795,10 @@ class LanguagesUz extends Languages {
       'xh',
       'kxosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
+    ),
     'xog': Language(
       'xog',
       'soga',
@@ -1800,6 +1828,10 @@ class LanguagesUz extends Languages {
       'kanton',
       menu: 'xitoy, kanton',
     ),
+    'za': Language(
+      'za',
+      'Chjuan',
+    ),
     'zgh': Language(
       'zgh',
       'tamazigxt',
@@ -1808,6 +1840,10 @@ class LanguagesUz extends Languages {
       'zh',
       'xitoy',
       menu: 'xitoy, mandarin',
+    ),
+    'zh-Hans': Language(
+      'zh-Hans',
+      'xitoy (soddalashgan)',
     ),
     'zh-Hant': Language(
       'zh-Hant',
@@ -4528,8 +4564,8 @@ class UnitsUz implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mil',
-          one: '{0} milya',
-          other: '{0} milya',
+          one: '{0} mil',
+          other: '{0} mil',
         ),
       );
 
@@ -4594,8 +4630,8 @@ class UnitsUz implements Units {
         narrow: UnitCountPattern(
           _locale,
           'duym',
-          one: '{0} dyuym',
-          other: '{0} dyuym',
+          one: '{0} duym',
+          other: '{0} duym',
         ),
       );
 
@@ -5276,8 +5312,8 @@ class UnitsUz implements Units {
         narrow: UnitCountPattern(
           _locale,
           'kVt',
-          one: '{0} kW',
-          other: '{0} kW',
+          one: '{0} kVt',
+          other: '{0} kVt',
         ),
       );
 
@@ -5298,8 +5334,8 @@ class UnitsUz implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Vt',
-          one: '{0} W',
-          other: '{0} W',
+          one: '{0} Vt',
+          other: '{0} Vt',
         ),
       );
 
@@ -5342,7 +5378,7 @@ class UnitsUz implements Units {
         narrow: UnitCountPattern(
           _locale,
           'o.k.',
-          one: '{0} hp',
+          one: '{0} o.k.',
           other: '{0} hp',
         ),
       );
@@ -5518,8 +5554,8 @@ class UnitsUz implements Units {
         narrow: UnitCountPattern(
           _locale,
           'gPa',
-          one: '{0} hPa',
-          other: '{0} hPa',
+          one: '{0} gPa',
+          other: '{0} gPa',
         ),
       );
 
@@ -5769,9 +5805,9 @@ class UnitsUz implements Units {
   Unit get torquePoundForceFoot => Unit(
         long: UnitCountPattern(
           _locale,
-          'funt-fut',
+          'funt-kuch-fut',
           one: '{0} funt-kuch-fut',
-          other: '{0} funt-fut',
+          other: '{0} funt-kuch-fut',
         ),
         short: UnitCountPattern(
           _locale,
@@ -5781,9 +5817,9 @@ class UnitsUz implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'funt-fut',
-          one: '{0} funt-fut',
-          other: '{0} funt-fut',
+          'funt-kuch-fut',
+          one: '{0} funt-kuch-fut',
+          other: '{0} funt-kuch-fut',
         ),
       );
 
@@ -6435,15 +6471,15 @@ class UnitsUz implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'imp desert qoshiq',
-          one: '{0} imp desert qoshiq',
-          other: '{0} imp desert qoshiq',
+          'imp. desert qoshiq',
+          one: '{0} imp. desert qoshiq',
+          other: '{0} imp. desert qoshiq',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'imp desert qoshiq',
-          one: '{0} imp desert qoshiq',
-          other: '{0} imp desert qoshiq',
+          'imp. desert qoshiq',
+          one: '{0} imp. desert qoshiq',
+          other: '{0} imp. desert qoshiq',
         ),
       );
 
@@ -6539,19 +6575,19 @@ class UnitsUz implements Units {
   Unit get volumeQuartImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'imp kvarta',
+          'imp.kvarta',
           one: '{0} imp. kvarta',
           other: '{0} imp. kvarta',
         ),
         short: UnitCountPattern(
           _locale,
-          'imp kvarta',
+          'imp.kvarta',
           one: '{0} imp. kvarta',
           other: '{0} imp. kvarta',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'imp kvarta',
+          'imp.kvarta',
           one: '{0} imp. kvarta',
           other: '{0} imp. kvarta',
         ),
@@ -6576,6 +6612,72 @@ class UnitsUz implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'qism/milliard',
+          one: '{0} ta qism/milliard',
+          other: '{0} ta qism/milliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'qism/milliard',
+          one: '{0} ta qism/mlrd',
+          other: '{0} ta qism/mlrd',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'qism/milliard',
+          one: '{0} ta qism/mlrd',
+          other: '{0} ta qism/mlrd',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'kecha',
+          one: '{0} kecha',
+          other: '{0} kecha',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'kecha',
+          one: '{0} kecha',
+          other: '{0} kecha',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'kecha',
+          one: '{0} kecha',
+          other: '{0} kecha',
         ),
       );
 }
@@ -9322,9 +9424,6 @@ class TimeZonesUz extends TimeZones {
     'Asia/Calcutta': TimeZoneNames(
       exemplarCity: 'Kalkutta',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Choybalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -9392,7 +9491,7 @@ class TimeZonesUz extends TimeZones {
       exemplarCity: 'Pxenyan',
     ),
     'Asia/Qostanay': TimeZoneNames(
-      exemplarCity: 'Kustanay',
+      exemplarCity: 'Qoʻstanay',
     ),
     'Asia/Qyzylorda': TimeZoneNames(
       exemplarCity: 'Qizilo‘rda',
@@ -9861,14 +9960,6 @@ class TimeZonesUz extends TimeZones {
         daylight: 'Xitoy yozgi vaqti',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choybalsan vaqti',
-        standard: 'Choybalsan standart vaqti',
-        daylight: 'Choybalsan yozgi vaqti',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10145,6 +10236,12 @@ class TimeZonesUz extends TimeZones {
         generic: 'Yaponiya vaqti',
         standard: 'Yaponiya standart vaqti',
         daylight: 'Yaponiya yozgi vaqti',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Qozogʻiston vaqti',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

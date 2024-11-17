@@ -251,6 +251,10 @@ class LanguagesAzLatn extends Languages {
       'bla',
       'siksikə',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1136,6 +1140,10 @@ class LanguagesAzLatn extends Languages {
       'kwk',
       'Kvakvala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'qırğız',
@@ -1176,6 +1184,10 @@ class LanguagesAzLatn extends Languages {
       'li',
       'limburq',
     ),
+    'lij': Language(
+      'lij',
+      'liquriya dili',
+    ),
     'lil': Language(
       'lil',
       'Liluet',
@@ -1183,6 +1195,10 @@ class LanguagesAzLatn extends Languages {
     'lkt': Language(
       'lkt',
       'lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombard dili',
     ),
     'ln': Language(
       'ln',
@@ -1231,10 +1247,6 @@ class LanguagesAzLatn extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1932,6 +1944,10 @@ class LanguagesAzLatn extends Languages {
       'syr',
       'suriya',
     ),
+    'szl': Language(
+      'szl',
+      'silez dili',
+    ),
     'ta': Language(
       'ta',
       'tamil',
@@ -2116,17 +2132,21 @@ class LanguagesAzLatn extends Languages {
       'uz',
       'özbək',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'venet dili',
+    ),
     'vi': Language(
       'vi',
       'vyetnam',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua dili',
     ),
     'vo': Language(
       'vo',
@@ -2179,6 +2199,10 @@ class LanguagesAzLatn extends Languages {
     'xh': Language(
       'xh',
       'xosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kanqri',
     ),
     'xog': Language(
       'xog',
@@ -7307,6 +7331,72 @@ class UnitsAzLatn implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'işıq',
+          one: '{0} işıq',
+          other: '{0} işıq',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'işıq',
+          one: '{0} işıq',
+          other: '{0} işıq',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'işıq',
+          one: '{0}işıq',
+          other: '{0}işıq',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'bir milyarda düşən hissə sayı',
+          one: 'bir milyarda düşən {0} hissə',
+          other: 'bir milyarda düşən {0} hissə',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'hissə/milyard',
+          one: 'bir milyarda düşən {0} hissə',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'hissə/milyard',
+          one: 'bir milyarda düşən {0} hissə',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'gecə',
+          one: '{0} gecə',
+          other: '{0} gecə',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gecə',
+          one: '{0} gecə',
+          other: '{0} gecə',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gecə',
+          one: '{0}gecə',
+          other: '{0}gecə',
+        ),
+      );
 }
 
 class DateFieldsAzLatn implements DateFields {
@@ -10090,9 +10180,6 @@ class TimeZonesAzLatn extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Çita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Çoybalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -10641,14 +10728,6 @@ class TimeZonesAzLatn extends TimeZones {
         daylight: 'Çin Yay Vaxtı',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Çoybalsan Vaxtı',
-        standard: 'Çoybalsan Standart Vaxtı',
-        daylight: 'Çoybalsan Yay Vaxtı',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10925,6 +11004,12 @@ class TimeZonesAzLatn extends TimeZones {
         generic: 'Yaponiya Vaxtı',
         standard: 'Yaponiya Standart Vaxtı',
         daylight: 'Yaponiya Yay Vaxtı',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Qazaxıstan vaxtı',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

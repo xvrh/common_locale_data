@@ -219,6 +219,10 @@ class LanguagesGl extends Languages {
       'bla',
       'siksiká',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -712,6 +716,10 @@ class LanguagesGl extends Languages {
       'id',
       'indonesio',
     ),
+    'ie': Language(
+      'ie',
+      'occidental',
+    ),
     'ig': Language(
       'ig',
       'igbo',
@@ -928,6 +936,10 @@ class LanguagesGl extends Languages {
       'kwk',
       'kwakiutl',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirguiz',
@@ -960,6 +972,10 @@ class LanguagesGl extends Languages {
       'li',
       'limburgués',
     ),
+    'lij': Language(
+      'lij',
+      'lígur',
+    ),
     'lil': Language(
       'lil',
       'lillooet',
@@ -967,6 +983,10 @@ class LanguagesGl extends Languages {
     'lkt': Language(
       'lkt',
       'lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardo',
     ),
     'ln': Language(
       'ln',
@@ -1007,10 +1027,6 @@ class LanguagesGl extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1592,6 +1608,10 @@ class LanguagesGl extends Languages {
       'syr',
       'siríaco',
     ),
+    'szl': Language(
+      'szl',
+      'silesiano',
+    ),
     'ta': Language(
       'ta',
       'támil',
@@ -1748,17 +1768,21 @@ class LanguagesGl extends Languages {
       'uz',
       'uzbeko',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'véneto',
+    ),
     'vi': Language(
       'vi',
       'vietnamita',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -1804,6 +1828,10 @@ class LanguagesGl extends Languages {
       'xh',
       'xhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
+    ),
     'xog': Language(
       'xog',
       'soga',
@@ -1832,6 +1860,10 @@ class LanguagesGl extends Languages {
       'yue',
       'cantonés',
       menu: 'chinés cantonés',
+    ),
+    'za': Language(
+      'za',
+      'zhuang',
     ),
     'zgh': Language(
       'zgh',
@@ -6616,6 +6648,72 @@ class UnitsGl implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'partes por mil millóns',
+          one: '{0} parte por mil millóns',
+          other: '{0} partes por mil millóns',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'partes/mil millóns',
+          one: '{0} ppmm',
+          other: '{0} ppmm',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppmm',
+          one: '{0} ppmm',
+          other: '{0} ppmm',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+      );
 }
 
 class DateFieldsGl implements DateFields {
@@ -7683,7 +7781,7 @@ class TerritoriesGl implements Territories {
     ),
     'AE': Territory(
       'AE',
-      'Os Emiratos Árabes Unidos',
+      'Emiratos Árabes Unidos',
     ),
     'AF': Territory(
       'AF',
@@ -7711,11 +7809,11 @@ class TerritoriesGl implements Territories {
     ),
     'AQ': Territory(
       'AQ',
-      'A Antártida',
+      'Antártida',
     ),
     'AR': Territory(
       'AR',
-      'A Arxentina',
+      'Arxentina',
     ),
     'AS': Territory(
       'AS',
@@ -7799,7 +7897,7 @@ class TerritoriesGl implements Territories {
     ),
     'BR': Territory(
       'BR',
-      'O Brasil',
+      'Brasil',
     ),
     'BS': Territory(
       'BS',
@@ -7827,7 +7925,7 @@ class TerritoriesGl implements Territories {
     ),
     'CA': Territory(
       'CA',
-      'O Canadá',
+      'Canadá',
     ),
     'CC': Territory(
       'CC',
@@ -7870,7 +7968,7 @@ class TerritoriesGl implements Territories {
     ),
     'CN': Territory(
       'CN',
-      'A China',
+      'China',
     ),
     'CO': Territory(
       'CO',
@@ -7959,7 +8057,7 @@ class TerritoriesGl implements Territories {
     ),
     'EH': Territory(
       'EH',
-      'O Sáhara Occidental',
+      'Sáhara Occidental',
     ),
     'ER': Territory(
       'ER',
@@ -8012,7 +8110,7 @@ class TerritoriesGl implements Territories {
     ),
     'GB': Territory(
       'GB',
-      'O Reino Unido',
+      'Reino Unido',
       short: 'RU',
     ),
     'GD': Territory(
@@ -8077,7 +8175,7 @@ class TerritoriesGl implements Territories {
     ),
     'GW': Territory(
       'GW',
-      'A Guinea Bissau',
+      'Guinea Bissau',
     ),
     'GY': Territory(
       'GY',
@@ -8130,7 +8228,7 @@ class TerritoriesGl implements Territories {
     ),
     'IN': Territory(
       'IN',
-      'A India',
+      'India',
     ),
     'IO': Territory(
       'IO',
@@ -8166,7 +8264,7 @@ class TerritoriesGl implements Territories {
     ),
     'JP': Territory(
       'JP',
-      'O Xapón',
+      'Xapón',
     ),
     'KE': Territory(
       'KE',
@@ -8218,7 +8316,7 @@ class TerritoriesGl implements Territories {
     ),
     'LB': Territory(
       'LB',
-      'O Líbano',
+      'Líbano',
     ),
     'LC': Territory(
       'LC',
@@ -8408,11 +8506,11 @@ class TerritoriesGl implements Territories {
     ),
     'PE': Territory(
       'PE',
-      'O Perú',
+      'Perú',
     ),
     'PF': Territory(
       'PF',
-      'A Polinesia Francesa',
+      'Polinesia Francesa',
     ),
     'PG': Territory(
       'PG',
@@ -8457,7 +8555,7 @@ class TerritoriesGl implements Territories {
     ),
     'PY': Territory(
       'PY',
-      'O Paraguai',
+      'Paraguai',
     ),
     'QA': Territory(
       'QA',
@@ -8501,7 +8599,7 @@ class TerritoriesGl implements Territories {
     ),
     'SD': Territory(
       'SD',
-      'O Sudán',
+      'Sudán',
     ),
     'SE': Territory(
       'SE',
@@ -8549,7 +8647,7 @@ class TerritoriesGl implements Territories {
     ),
     'SS': Territory(
       'SS',
-      'O Sudán do Sur',
+      'Sudán do Sur',
     ),
     'ST': Territory(
       'ST',
@@ -8661,12 +8759,12 @@ class TerritoriesGl implements Territories {
     ),
     'US': Territory(
       'US',
-      'Os Estados Unidos',
+      'Estados Unidos',
       short: 'EUA',
     ),
     'UY': Territory(
       'UY',
-      'O Uruguai',
+      'Uruguai',
     ),
     'UZ': Territory(
       'UZ',
@@ -8722,7 +8820,7 @@ class TerritoriesGl implements Territories {
     ),
     'YE': Territory(
       'YE',
-      'O Iemen',
+      'Iemen',
     ),
     'YT': Territory(
       'YT',
@@ -9293,6 +9391,12 @@ class TimeZonesGl extends TimeZones {
 
   @override
   final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'hora de Acre',
+      ),
+    ),
     'Afghanistan': MetaZone(
       code: 'Afghanistan',
       long: TimeZoneName(
@@ -9376,7 +9480,7 @@ class TimeZonesGl extends TimeZones {
     'Anadyr': MetaZone(
       code: 'Anadyr',
       long: TimeZoneName(
-        generic: 'Horario de Anadir',
+        generic: 'hora de Anadyr',
         standard: 'Horario estándar de Anadir',
         daylight: 'Horario de verán de Anadir',
       ),
@@ -9547,14 +9651,6 @@ class TimeZonesGl extends TimeZones {
         generic: 'hora da China',
         standard: 'hora estándar da China',
         daylight: 'hora de verán da China',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'hora de Choibalsan',
-        standard: 'hora estándar de Choibalsan',
-        daylight: 'hora de verán de Choibalsan',
       ),
     ),
     'Christmas': MetaZone(
@@ -9856,9 +9952,15 @@ class TimeZonesGl extends TimeZones {
     'Kamchatka': MetaZone(
       code: 'Kamchatka',
       long: TimeZoneName(
-        generic: 'Horario de Petropávlovsk-Kamchatski',
+        generic: 'hora estándar de Petropavlovsk-Kamchatski',
         standard: 'Horario estándar de Petropávlovsk-Kamchatski',
         daylight: 'Horario de verán de Petropávlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'hora de Kazakistán',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
@@ -10164,7 +10266,7 @@ class TimeZonesGl extends TimeZones {
     'Samara': MetaZone(
       code: 'Samara',
       long: TimeZoneName(
-        generic: 'Horario de Samara',
+        generic: 'hora de Samara',
         standard: 'Horario estándar de Samara',
         daylight: 'Horario de verán de Samara',
       ),

@@ -268,6 +268,10 @@ class LanguagesArMA extends Languages {
       'bla',
       'السيكسيكية',
     ),
+    'blo': Language(
+      'blo',
+      'الآنية',
+    ),
     'bm': Language(
       'bm',
       'البامبارا',
@@ -498,10 +502,6 @@ class LanguagesArMA extends Languages {
       'de-AT',
       'الألمانية النمساوية',
     ),
-    'de-CH': Language(
-      'de-CH',
-      'الألمانية العليا السويسرية',
-    ),
     'del': Language(
       'del',
       'الديلوير',
@@ -590,24 +590,6 @@ class LanguagesArMA extends Languages {
       'en',
       'الإنجليزية',
     ),
-    'en-AU': Language(
-      'en-AU',
-      'الإنجليزية الأسترالية',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'الإنجليزية الكندية',
-    ),
-    'en-GB': Language(
-      'en-GB',
-      'الإنجليزية البريطانية',
-      short: 'الإنجليزية المملكة المتحدة',
-    ),
-    'en-US': Language(
-      'en-US',
-      'الإنجليزية الأمريكية',
-      short: 'الإنجليزية الولايات المتحدة',
-    ),
     'enm': Language(
       'enm',
       'الإنجليزية الوسطى',
@@ -687,14 +669,6 @@ class LanguagesArMA extends Languages {
     'fr': Language(
       'fr',
       'الفرنسية',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'الفرنسية الكندية',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'الفرنسية السويسرية',
     ),
     'frc': Language(
       'frc',
@@ -1168,6 +1142,10 @@ class LanguagesArMA extends Languages {
       'kwk',
       'الكواكوالا',
     ),
+    'kxv': Language(
+      'kxv',
+      'الكوفية',
+    ),
     'ky': Language(
       'ky',
       'القيرغيزية',
@@ -1207,6 +1185,10 @@ class LanguagesArMA extends Languages {
     'li': Language(
       'li',
       'الليمبورغية',
+    ),
+    'lij': Language(
+      'lij',
+      'الليغورية',
     ),
     'lil': Language(
       'lil',
@@ -1495,10 +1477,6 @@ class LanguagesArMA extends Languages {
     'nl': Language(
       'nl',
       'الهولندية',
-    ),
-    'nl-BE': Language(
-      'nl-BE',
-      'الفلمنكية',
     ),
     'nmg': Language(
       'nmg',
@@ -1989,6 +1967,10 @@ class LanguagesArMA extends Languages {
       'syr',
       'السريانية',
     ),
+    'szl': Language(
+      'szl',
+      'السيليزية',
+    ),
     'ta': Language(
       'ta',
       'التاميلية',
@@ -2182,9 +2164,17 @@ class LanguagesArMA extends Languages {
       've',
       'الفيندا',
     ),
+    'vec': Language(
+      'vec',
+      'البندقية',
+    ),
     'vi': Language(
       'vi',
       'الفيتنامية',
+    ),
+    'vmw': Language(
+      'vmw',
+      'الماكوا',
     ),
     'vo': Language(
       'vo',
@@ -2237,6 +2227,10 @@ class LanguagesArMA extends Languages {
     'xh': Language(
       'xh',
       'الخوسا',
+    ),
+    'xnr': Language(
+      'xnr',
+      'كانغري',
     ),
     'xog': Language(
       'xog',
@@ -3745,33 +3739,33 @@ class UnitsArMA implements Units {
   Unit get concentrMilligramOfglucosePerDeciliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'مغم/ديسيبل',
-          zero: '{0} مغم/ديسيبل',
-          one: '{0} مغم/ديسيبل',
-          two: '{0} مغم/ديسيبل',
-          few: '{0} مغم/ديسيبل',
-          many: '{0} مغم/ديسيبل',
-          other: '{0} مغم/ديسيبل',
+          'مغم/ديسيلتر',
+          zero: '{0} مغم/ديسيل',
+          one: 'مغم/ديسيلتر',
+          two: 'مغم/ديسيلتر',
+          few: '{0} مغم/ديسيلتر',
+          many: '{0} مغم/ديسيلتر',
+          other: '{0} مغم/ديسيلتر',
         ),
         short: UnitCountPattern(
           _locale,
-          'مغم/ديسبل',
-          zero: '{0} مغم/ديسبل',
-          one: '{0} مغم/ديسبل',
-          two: '{0} مغم/ديسبل',
-          few: '{0} مغم/ديسبل',
-          many: '{0} مغم/ديسبل',
-          other: '{0} مغم/ديسبل',
+          'مغم/ديسيل',
+          zero: '{0} مغم/ديسيل',
+          one: '{0} مغم/ديسيل',
+          two: '{0} مغم/ديسيل',
+          few: '{0} مغم/ديسيل',
+          many: '{0} مغم/ديسيل',
+          other: '{0} مغم/ديسيل',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'مغ/ديسبل',
-          zero: '{0} مغ/ديسبل',
-          one: '{0} مغ/ديسبل',
-          two: '{0} مغ/ديسبل',
-          few: '{0} مغ/ديسبل',
-          many: '{0} مغ/ديسبل',
-          other: '{0} مغ/ديسبل',
+          'مغ/ديسيل',
+          zero: '{0} مغ/ديسيل',
+          one: '{0} مغ/ديسيل',
+          two: '{0} مغ/ديسيل',
+          few: '{0} مغ/ديسيل',
+          many: '{0} مغ/ديسيل',
+          other: '{0} مغ/ديسيل',
         ),
       );
 
@@ -5824,7 +5818,7 @@ class UnitsArMA implements Units {
           'نقطة/سم',
           zero: '{0} نقطة/سم',
           one: '{0} نقطة/سم',
-          two: '{0} نقطتان/سم',
+          two: '{0} نقطة/سم',
           few: '{0} نقاط/سم',
           many: '{0} نقطة/سم',
           other: '{0} نقطة/سم',
@@ -5845,7 +5839,7 @@ class UnitsArMA implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'نقطة لكل بوصة',
+          'نقطة/بوصة',
           zero: '{0} نقطة لكل بوصة',
           one: '{0} نقطة لكل بوصة',
           two: 'نقطتان لكل بوصة',
@@ -5855,17 +5849,17 @@ class UnitsArMA implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'نقطة لكل بوصة',
+          'نقطة/بوصة',
           zero: '{0} نقطة/بوصة',
           one: '{0} نقطة/بوصة',
-          two: 'نقطة/بوصة',
+          two: '{0} نقطة/بوصة',
           few: '{0} نقاط/بوصة',
           many: '{0} نقطة/بوصة',
           other: '{0} نقطة/بوصة',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'نقطة لكل بوصة',
+          'ن/بوصة',
           zero: '{0} ن/بوصة',
           one: '{0} ن/بوصة',
           two: '{0} ن/بوصة',
@@ -9374,6 +9368,96 @@ class UnitsArMA implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'جزء بالمليار',
+          zero: '{0} جزء بالمليار',
+          one: '{0} جزء بالمليار',
+          two: 'جزآن بالمليار',
+          few: '{0} أجزاء بالمليار',
+          many: '{0} جزءًا بالمليار',
+          other: '{0} جزء بالمليار',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'جزء/مليار',
+          zero: '{0} جزء/مليار',
+          one: '{0} جزء/مليار',
+          two: 'جزآن/مليار',
+          few: '{0} أجزاء/مليار',
+          many: '{0} جزءًا/مليار',
+          other: '{0} جزء/مليار',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'جزء/مليار',
+          zero: '{0} جزء/مليار',
+          one: '{0} جزء/مليار',
+          two: 'جزآن/مليار',
+          few: '{0} أجزاء/مليار',
+          many: '{0} جزءًا/مليار',
+          other: '{0} جزء/مليار',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ليالي',
+          zero: '{0} ليلة',
+          one: 'ليلة',
+          two: 'ليلتان',
+          few: '{0} ليالٍ',
+          many: '{0} ليلةً',
+          other: '{0} ليلة',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ليلة',
+          zero: '{0} ليلة',
+          one: 'ليلة',
+          two: 'ليلتان',
+          few: '{0} ليالٍ',
+          many: '{0} ليلةً',
+          other: '{0} ليلة',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ليلة',
+          zero: '{0} ل',
+          one: '{0} ل',
+          two: '{0} ل',
+          few: '{0} ل',
+          many: '{0} ل',
+          other: '{0} ل',
+        ),
+      );
 }
 
 class DateFieldsArMA implements DateFields {
@@ -12722,9 +12806,6 @@ class TimeZonesArMA extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'تشيتا',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'تشوبالسان',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'كولومبو',
     ),
@@ -13407,14 +13488,6 @@ class TimeZonesArMA extends TimeZones {
         daylight: 'توقيت الصين الصيفي',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'توقيت شويبالسان',
-        standard: 'توقيت شويبالسان الرسمي',
-        daylight: 'التوقيت الصيفي لشويبالسان',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -13708,6 +13781,12 @@ class TimeZonesArMA extends TimeZones {
         generic: 'توقيت كامشاتكا',
         standard: 'توقيت بيتروبافلوفسك-كامتشاتسكي',
         daylight: 'توقيت بيتروبافلوفسك-كامتشاتسكي الصيفي',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'توقيت كازاخستان',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

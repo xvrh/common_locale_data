@@ -324,6 +324,10 @@ class LanguagesTrCY extends Languages {
       'bla',
       'Karaayak dili',
     ),
+    'blo': Language(
+      'blo',
+      'Aniice',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -880,10 +884,6 @@ class LanguagesTrCY extends Languages {
       'goh',
       'Eski Yüksek Almanca',
     ),
-    'gom': Language(
-      'gom',
-      'Goa Konkanicesi',
-    ),
     'gon': Language(
       'gon',
       'Gondi dili',
@@ -1319,6 +1319,10 @@ class LanguagesTrCY extends Languages {
     'kwk': Language(
       'kwk',
       'Kwakʼwala dili',
+    ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
     ),
     'ky': Language(
       'ky',
@@ -2504,6 +2508,10 @@ class LanguagesTrCY extends Languages {
       'vmf',
       'Main Frankonya Dili',
     ),
+    'vmw': Language(
+      'vmw',
+      'Makuaca',
+    ),
     'vo': Language(
       'vo',
       'Volapük',
@@ -2563,6 +2571,10 @@ class LanguagesTrCY extends Languages {
     'xmf': Language(
       'xmf',
       'Megrelce',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangrice',
     ),
     'xog': Language(
       'xog',
@@ -2751,10 +2763,6 @@ class ScriptsTrCY extends Scripts {
       'Cari',
       'Karya',
     ),
-    'Cham': Script(
-      'Cham',
-      'Cham',
-    ),
     'Cher': Script(
       'Cher',
       'Çeroki',
@@ -2901,10 +2909,6 @@ class ScriptsTrCY extends Scripts {
       'Ital',
       'Eski İtalyan',
     ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
-    ),
     'Java': Script(
       'Java',
       'Cava Dili',
@@ -3036,10 +3040,6 @@ class ScriptsTrCY extends Scripts {
     'Mlym': Script(
       'Mlym',
       'Malayalam',
-    ),
-    'Modi': Script(
-      'Modi',
-      'Modi',
     ),
     'Mong': Script(
       'Mong',
@@ -7768,6 +7768,72 @@ class UnitsTrCY implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ışık',
+          one: '{0} ışık',
+          other: '{0} ışık',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ışık',
+          one: '{0} ışık',
+          other: '{0} ışık',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ışık',
+          one: '{0} ışık',
+          other: '{0} ışık',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parça/milyar',
+          one: '{0} parça/milyar',
+          other: '{0} parça/milyar',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'parça/milyar',
+          one: '{0} parça/milyar',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'parça/milyar',
+          one: '{0} parça/milyar',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'gece',
+          one: '{0} gece',
+          other: '{0} gece',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gece',
+          one: '{0} gece',
+          other: '{0} gece',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gece',
+          one: '{0} gece',
+          other: '{0} gece',
+        ),
+      );
 }
 
 class DateFieldsTrCY implements DateFields {
@@ -10210,9 +10276,6 @@ class TimeZonesTrCY extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Çita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Çoybalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -10669,14 +10732,6 @@ class TimeZonesTrCY extends TimeZones {
         daylight: 'Çin Yaz Saati',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Çoybalsan Saati',
-        standard: 'Çoybalsan Standart Saati',
-        daylight: 'Çoybalsan Yaz Saati',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10967,6 +11022,12 @@ class TimeZonesTrCY extends TimeZones {
         generic: 'Petropavlovsk-Kamçatski Saati',
         standard: 'Petropavlovsk-Kamçatski Standart Saati',
         daylight: 'Petropavlovsk-Kamçatski Yaz Saati',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakistan Saati',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

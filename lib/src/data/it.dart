@@ -323,6 +323,10 @@ class LanguagesIt extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -879,10 +883,6 @@ class LanguagesIt extends Languages {
       'goh',
       'tedesco antico alto',
     ),
-    'gom': Language(
-      'gom',
-      'konkani goano',
-    ),
     'gon': Language(
       'gon',
       'gondi',
@@ -1303,6 +1303,10 @@ class LanguagesIt extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirghiso',
@@ -1418,10 +1422,6 @@ class LanguagesIt extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2455,10 +2455,6 @@ class LanguagesIt extends Languages {
       'uz',
       'uzbeco',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2478,6 +2474,10 @@ class LanguagesIt extends Languages {
     'vls': Language(
       'vls',
       'fiammingo occidentale',
+    ),
+    'vmw': Language(
+      'vmw',
+      'macua',
     ),
     'vo': Language(
       'vo',
@@ -2538,6 +2538,10 @@ class LanguagesIt extends Languages {
     'xmf': Language(
       'xmf',
       'mengrelio',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -3698,7 +3702,7 @@ class UnitsIt implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0} {1}'),
+        long: CompoundUnitPattern('{0}⋅{1}'),
         short: CompoundUnitPattern('{0}⋅{1}'),
         narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
@@ -7771,6 +7775,72 @@ class UnitsIt implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} alla velocità della luce',
+          other: '{0} alla velocità della luce',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} luce',
+          other: '{0} luce',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}l',
+          other: '{0}l',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parti per miliardo',
+          one: '{0} parte per miliardo',
+          other: '{0} parti per miliardo',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} parte per miliardo',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'notti',
+          one: '{0} notte',
+          other: '{0} notti',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'notti',
+          one: '{0} notte',
+          other: '{0} notti',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'notti',
+          one: '{0} notte',
+          other: '{0} notti',
+        ),
+      );
 }
 
 class DateFieldsIt implements DateFields {
@@ -8874,7 +8944,7 @@ class TerritoriesIt implements Territories {
     ),
     'AS': Territory(
       'AS',
-      'Samoa americane',
+      'Samoa Americane',
     ),
     'AT': Territory(
       'AT',
@@ -8950,7 +9020,7 @@ class TerritoriesIt implements Territories {
     ),
     'BQ': Territory(
       'BQ',
-      'Caraibi olandesi',
+      'Caraibi Olandesi',
     ),
     'BR': Territory(
       'BR',
@@ -9114,7 +9184,7 @@ class TerritoriesIt implements Territories {
     ),
     'EH': Territory(
       'EH',
-      'Sahara occidentale',
+      'Sahara Occidentale',
     ),
     'ER': Territory(
       'ER',
@@ -9289,7 +9359,7 @@ class TerritoriesIt implements Territories {
     ),
     'IO': Territory(
       'IO',
-      'Territorio britannico dell’Oceano Indiano',
+      'Territorio Britannico dell’Oceano Indiano',
     ),
     'IQ': Territory(
       'IQ',
@@ -9462,7 +9532,7 @@ class TerritoriesIt implements Territories {
     ),
     'MP': Territory(
       'MP',
-      'Isole Marianne settentrionali',
+      'Isole Marianne Settentrionali',
     ),
     'MQ': Territory(
       'MQ',
@@ -9567,7 +9637,7 @@ class TerritoriesIt implements Territories {
     ),
     'PF': Territory(
       'PF',
-      'Polinesia francese',
+      'Polinesia Francese',
     ),
     'PG': Territory(
       'PG',
@@ -9599,7 +9669,7 @@ class TerritoriesIt implements Territories {
     ),
     'PS': Territory(
       'PS',
-      'Territori palestinesi',
+      'Territori Palestinesi',
       short: 'Palestina',
     ),
     'PT': Territory(
@@ -9741,7 +9811,7 @@ class TerritoriesIt implements Territories {
     ),
     'TF': Territory(
       'TF',
-      'Terre australi francesi',
+      'Terre Australi Francesi',
     ),
     'TG': Territory(
       'TG',
@@ -10557,14 +10627,6 @@ class TimeZonesIt extends TimeZones {
         daylight: 'Ora legale della Cina',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Ora di Choibalsan',
-        standard: 'Ora standard di Choibalsan',
-        daylight: 'Ora legale di Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10864,6 +10926,12 @@ class TimeZonesIt extends TimeZones {
         generic: 'Ora di Petropavlovsk-Kamchatski',
         standard: 'Ora standard di Petropavlovsk-Kamchatski',
         daylight: 'Ora legale di Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Ora del Kazakistan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

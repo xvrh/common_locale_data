@@ -323,6 +323,10 @@ class LanguagesYueHans extends Languages {
       'bla',
       '锡克锡卡文',
     ),
+    'blo': Language(
+      'blo',
+      '阿尼文',
+    ),
     'bm': Language(
       'bm',
       '班巴拉文',
@@ -837,10 +841,6 @@ class LanguagesYueHans extends Languages {
       'goh',
       '古高地日耳曼文',
     ),
-    'gom': Language(
-      'gom',
-      '孔卡尼文',
-    ),
     'gon': Language(
       'gon',
       '冈德文',
@@ -1276,6 +1276,10 @@ class LanguagesYueHans extends Languages {
     'kwk': Language(
       'kwk',
       '夸夸瓦拉文',
+    ),
+    'kxv': Language(
+      'kxv',
+      '库维文',
     ),
     'ky': Language(
       'ky',
@@ -2453,6 +2457,10 @@ class LanguagesYueHans extends Languages {
       'vmf',
       '美茵-法兰克尼亚文',
     ),
+    'vmw': Language(
+      'vmw',
+      '马库瓦文',
+    ),
     'vo': Language(
       'vo',
       '沃拉普克文',
@@ -2512,6 +2520,10 @@ class LanguagesYueHans extends Languages {
     'xmf': Language(
       'xmf',
       '明格列尔文',
+    ),
+    'xnr': Language(
+      'xnr',
+      '康格里文',
     ),
     'xog': Language(
       'xog',
@@ -7725,6 +7737,72 @@ class UnitsYueHans implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '光速',
+          one: '{0} light',
+          other: '{0} 光速',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '光速',
+          one: '{0} light',
+          other: '{0} 光速',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '光速',
+          one: '{0}light',
+          other: '{0}光速',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '十亿分点浓度',
+          one: '{0} part per billion',
+          other: '{0} 十亿分点浓度',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '浓度/十亿',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '浓度/十亿',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0} 晚',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0} 晚',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0}night',
+          other: '{0}晚',
+        ),
+      );
 }
 
 class DateFieldsYueHans implements DateFields {
@@ -10623,9 +10701,6 @@ class TimeZonesYueHans extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: '赤塔',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: '乔巴山',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: '可伦坡',
     ),
@@ -11346,14 +11421,6 @@ class TimeZonesYueHans extends TimeZones {
         daylight: '中国夏令时间',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: '乔巴山时间',
-        standard: '乔巴山标准时间',
-        daylight: '乔巴山夏令时间',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11644,6 +11711,12 @@ class TimeZonesYueHans extends TimeZones {
         generic: '彼得罗巴甫洛夫斯克时间',
         standard: '彼得罗巴甫洛夫斯克标准时间',
         daylight: '彼得罗巴甫洛夫斯克日光节约时间',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: '哈萨克时间',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

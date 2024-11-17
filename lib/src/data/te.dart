@@ -259,6 +259,10 @@ class LanguagesTe extends Languages {
       'bla',
       'సిక్సికా',
     ),
+    'blo': Language(
+      'blo',
+      'అని',
+    ),
     'bm': Language(
       'bm',
       'బంబారా',
@@ -785,7 +789,7 @@ class LanguagesTe extends Languages {
     ),
     'gu': Language(
       'gu',
-      'గుజరాతి',
+      'గుజరాతీ',
     ),
     'guz': Language(
       'guz',
@@ -873,7 +877,7 @@ class LanguagesTe extends Languages {
     ),
     'hy': Language(
       'hy',
-      'ఆర్మేనియన్',
+      'ఆర్మీనియన్',
     ),
     'hz': Language(
       'hz',
@@ -1147,6 +1151,10 @@ class LanguagesTe extends Languages {
       'kwk',
       'క్వాక్‌వాలా',
     ),
+    'kxv': Language(
+      'kxv',
+      'కువి',
+    ),
     'ky': Language(
       'ky',
       'కిర్గిజ్',
@@ -1187,6 +1195,10 @@ class LanguagesTe extends Languages {
       'li',
       'లిమ్బర్గిష్',
     ),
+    'lij': Language(
+      'lij',
+      'లిగూరియన్',
+    ),
     'lil': Language(
       'lil',
       'లిలూయెట్',
@@ -1194,6 +1206,10 @@ class LanguagesTe extends Languages {
     'lkt': Language(
       'lkt',
       'లకొటా',
+    ),
+    'lmo': Language(
+      'lmo',
+      'లొంబార్ద్',
     ),
     'ln': Language(
       'ln',
@@ -1445,7 +1461,7 @@ class LanguagesTe extends Languages {
     ),
     'ne': Language(
       'ne',
-      'నేపాలి',
+      'నేపాలీ',
     ),
     'new': Language(
       'new',
@@ -1613,7 +1629,7 @@ class LanguagesTe extends Languages {
     ),
     'pcm': Language(
       'pcm',
-      'నైజీరియా పిడ్గిన్',
+      'నైజీరియన్ పిడ్గిన్',
     ),
     'peo': Language(
       'peo',
@@ -1702,7 +1718,7 @@ class LanguagesTe extends Languages {
     ),
     'ro': Language(
       'ro',
-      'రోమేనియన్',
+      'రొమేనియన్',
     ),
     'ro-MD': Language(
       'ro-MD',
@@ -1952,9 +1968,13 @@ class LanguagesTe extends Languages {
       'syr',
       'సిరియాక్',
     ),
+    'szl': Language(
+      'szl',
+      'సైలీషియన్',
+    ),
     'ta': Language(
       'ta',
-      'తమిళము',
+      'తమిళం',
     ),
     'tce': Language(
       'tce',
@@ -2148,9 +2168,17 @@ class LanguagesTe extends Languages {
       've',
       'వెండా',
     ),
+    'vec': Language(
+      'vec',
+      'వెనీషియన్',
+    ),
     'vi': Language(
       'vi',
       'వియత్నామీస్',
+    ),
+    'vmw': Language(
+      'vmw',
+      'మఖువా',
     ),
     'vo': Language(
       'vo',
@@ -2203,6 +2231,10 @@ class LanguagesTe extends Languages {
     'xh': Language(
       'xh',
       'షోసా',
+    ),
+    'xnr': Language(
+      'xnr',
+      'కాంగ్‌డీ',
     ),
     'xog': Language(
       'xog',
@@ -2349,7 +2381,7 @@ class ScriptsTe extends Scripts {
     ),
     'Brai': Script(
       'Brai',
-      'బ్రెయిల్',
+      'బ్రెయిలీ',
     ),
     'Bugi': Script(
       'Bugi',
@@ -2377,7 +2409,7 @@ class ScriptsTe extends Scripts {
     ),
     'Cher': Script(
       'Cher',
-      'చిరోకి',
+      'చెరకీ',
     ),
     'Cirt': Script(
       'Cirt',
@@ -2479,7 +2511,7 @@ class ScriptsTe extends Scripts {
     ),
     'Hebr': Script(
       'Hebr',
-      'హీబ్రు',
+      'హీబ్రూ',
     ),
     'Hira': Script(
       'Hira',
@@ -2515,7 +2547,7 @@ class ScriptsTe extends Scripts {
     ),
     'Jpan': Script(
       'Jpan',
-      'జాపనీస్',
+      'జపనీస్',
     ),
     'Kali': Script(
       'Kali',
@@ -2623,7 +2655,7 @@ class ScriptsTe extends Scripts {
     ),
     'Mymr': Script(
       'Mymr',
-      'మయాన్మార్',
+      'మయన్మార్',
     ),
     'Nkoo': Script(
       'Nkoo',
@@ -2827,7 +2859,7 @@ class ScriptsTe extends Scripts {
     ),
     'Zsye': Script(
       'Zsye',
-      'ఎమోజి',
+      'ఎమోజీ',
     ),
     'Zsym': Script(
       'Zsym',
@@ -7152,6 +7184,72 @@ class UnitsTe implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'లైట్',
+          one: '{0} లైట్',
+          other: '{0} లైట్',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'లైట్',
+          one: '{0} లైట్',
+          other: '{0} లైట్',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'లైట్',
+          one: '{0} లైట్',
+          other: '{0} లైట్',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ప్రతి బిలియన్‌కి భాగాలు',
+          one: 'ప్రతి బిలియన్‌కి {0} భాగం',
+          other: 'ప్రతి బిలియన్‌కి {0} భాగాలు',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'భాగాలు/బిలియన్',
+          one: 'ప్రతి బిలియన్‌కి {0} భాగం',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'భాగాలు/బిలియన్',
+          one: 'ప్రతి బిలియన్‌కి {0} భాగం',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'రాత్రి',
+          one: '{0} రాత్రి',
+          other: '{0} రాత్రులు',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'రాత్రులు',
+          one: '{0} రాత్రి',
+          other: '{0} రాత్రులు',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'రాత్రులు',
+          one: '{0}రాత్రి',
+          other: '{0}రాత్రులు',
+        ),
+      );
 }
 
 class DateFieldsTe implements DateFields {
@@ -8042,7 +8140,7 @@ class TerritoriesTe implements Territories {
   @override
   Territory get oceania => Territory(
         '009',
-        'ఓషినియా',
+        'ఓషియానియా',
       );
 
   @override
@@ -8054,7 +8152,7 @@ class TerritoriesTe implements Territories {
   @override
   Territory get centralAmerica => Territory(
         '013',
-        'మధ్యమ అమెరికా',
+        'మధ్య అమెరికా',
       );
 
   @override
@@ -8072,7 +8170,7 @@ class TerritoriesTe implements Territories {
   @override
   Territory get middleAfrica => Territory(
         '017',
-        'మధ్యమ ఆఫ్రికా',
+        'మధ్య ఆఫ్రికా',
       );
 
   @override
@@ -8096,7 +8194,7 @@ class TerritoriesTe implements Territories {
   @override
   Territory get caribbean => Territory(
         '029',
-        'కరిబ్బియన్',
+        'కరీబియన్',
       );
 
   @override
@@ -8138,7 +8236,7 @@ class TerritoriesTe implements Territories {
   @override
   Territory get micronesianRegion => Territory(
         '057',
-        'మైక్రోనేశియ ప్రాంతం',
+        'మైక్రోనేసియన్ ప్రాంతం',
       );
 
   @override
@@ -8168,7 +8266,7 @@ class TerritoriesTe implements Territories {
   @override
   Territory get europe => Territory(
         '150',
-        'యూరోప్',
+        'యూరప్',
       );
 
   @override
@@ -8638,7 +8736,7 @@ class TerritoriesTe implements Territories {
     ),
     'HT': Territory(
       'HT',
-      'హైటి',
+      'హైతీ',
     ),
     'HU': Territory(
       'HU',
@@ -8851,7 +8949,7 @@ class TerritoriesTe implements Territories {
     ),
     'MR': Territory(
       'MR',
-      'మౌరిటేనియా',
+      'మారిటేనియా',
     ),
     'MS': Territory(
       'MS',
@@ -10141,9 +10239,6 @@ class TimeZonesTe extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'చితా',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'చోయిబాల్సన్',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'కొలంబో',
     ),
@@ -10858,14 +10953,6 @@ class TimeZonesTe extends TimeZones {
         daylight: 'చైనా పగటి వెలుతురు సమయం',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'చోయిబల్సాన్ సమయం',
-        standard: 'చోయిబల్సాన్ ప్రామాణిక సమయం',
-        daylight: 'చోయిబల్సాన్ వేసవి సమయం',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11159,6 +11246,12 @@ class TimeZonesTe extends TimeZones {
         generic: 'పెట్రోపావ్లోవ్స్క్-కామ్ఛాట్స్కి సమయం',
         standard: 'పెట్రోపావ్లోవ్స్క్-కామ్ఛాట్స్కి ప్రామాణిక సమయం',
         daylight: 'పెట్రోపావ్లోవ్స్క్-కామ్ఛాట్స్కి వేసవి సమయం',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'కజకిస్తాన్ సమయం',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -323,6 +323,10 @@ class LanguagesDeLU extends Languages {
       'bla',
       'Blackfoot',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
@@ -841,10 +845,6 @@ class LanguagesDeLU extends Languages {
       'goh',
       'Althochdeutsch',
     ),
-    'gom': Language(
-      'gom',
-      'Goa-Konkani',
-    ),
     'gon': Language(
       'gon',
       'Gondi',
@@ -920,6 +920,11 @@ class LanguagesDeLU extends Languages {
     'hi': Language(
       'hi',
       'Hindi',
+    ),
+    'hi-Latn': Language(
+      'hi-Latn',
+      'Hindi (lateinisch)',
+      variant: 'Hinglish',
     ),
     'hif': Language(
       'hif',
@@ -1280,6 +1285,10 @@ class LanguagesDeLU extends Languages {
     'kwk': Language(
       'kwk',
       'Kwakʼwala',
+    ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
     ),
     'ky': Language(
       'ky',
@@ -2457,6 +2466,10 @@ class LanguagesDeLU extends Languages {
       'vmf',
       'Mainfränkisch',
     ),
+    'vmw': Language(
+      'vmw',
+      'Makua',
+    ),
     'vo': Language(
       'vo',
       'Volapük',
@@ -2516,6 +2529,10 @@ class LanguagesDeLU extends Languages {
     'xmf': Language(
       'xmf',
       'Mingrelisch',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
@@ -2694,15 +2711,11 @@ class ScriptsDeLU extends Scripts {
     ),
     'Cans': Script(
       'Cans',
-      'UCAS',
+      'Kanadische Aborigine-Silbenschrift',
     ),
     'Cari': Script(
       'Cari',
       'Karisch',
-    ),
-    'Cham': Script(
-      'Cham',
-      'Cham',
     ),
     'Cher': Script(
       'Cher',
@@ -2850,10 +2863,6 @@ class ScriptsDeLU extends Scripts {
       'Ital',
       'Altitalisch',
     ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
-    ),
     'Java': Script(
       'Java',
       'Javanesisch',
@@ -2985,10 +2994,6 @@ class ScriptsDeLU extends Scripts {
     'Mlym': Script(
       'Mlym',
       'Malayalam',
-    ),
-    'Modi': Script(
-      'Modi',
-      'Modi',
     ),
     'Mong': Script(
       'Mong',
@@ -3226,10 +3231,6 @@ class ScriptsDeLU extends Scripts {
       'Thaa',
       'Thaana',
     ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
-    ),
     'Tibt': Script(
       'Tibt',
       'Tibetisch',
@@ -3292,7 +3293,7 @@ class ScriptsDeLU extends Scripts {
     ),
     'Zyyy': Script(
       'Zyyy',
-      'Verbreitet',
+      'Unbestimmt',
     ),
     'Zzzz': Script(
       'Zzzz',
@@ -7717,6 +7718,72 @@ class UnitsDeLU implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Milliardstel',
+          one: '{0} Milliardstel',
+          other: '{0} Milliardstel',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Milliardstel',
+          one: '{0} Milliardstel',
+          other: '{0} Milliardstel',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Milliardstel',
+          one: '{0} Milliardstel',
+          other: '{0} Milliardstel',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Übernachtungen',
+          one: '{0} Übernachtung',
+          other: '{0} Übernachtungen',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Nächte',
+          one: '{0} Nacht',
+          other: '{0} Nächte',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Nächte',
+          one: '{0}Nacht',
+          other: '{0}Nächte',
+        ),
+      );
 }
 
 class DateFieldsDeLU implements DateFields {
@@ -7725,7 +7792,7 @@ class DateFieldsDeLU implements DateFields {
   @override
   MultiLength get era => MultiLength(
         long: 'Epoche',
-        short: 'Epoche',
+        short: 'Ep.',
         narrow: 'E',
       );
 
@@ -7849,7 +7916,7 @@ class DateFieldsDeLU implements DateFields {
   DateFieldFullData get month => DateFieldFullData(
         displayName: MultiLength(
           long: 'Monat',
-          short: 'Monat',
+          short: 'Mon.',
           narrow: 'M',
         ),
         previous: MultiLength(
@@ -7965,7 +8032,7 @@ class DateFieldsDeLU implements DateFields {
   MultiLength get weekOfMonth => MultiLength(
         long: 'Woche des Monats',
         short: 'W/M',
-        narrow: 'Wo. des Monats',
+        narrow: 'W/M',
       );
 
   @override
@@ -10119,9 +10186,6 @@ class TimeZonesDeLU extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Tschita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tschoibalsan',
-    ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damaskus',
     ),
@@ -10355,9 +10419,9 @@ class TimeZonesDeLU extends TimeZones {
     'America_Mountain': MetaZone(
       code: 'America_Mountain',
       long: TimeZoneName(
-        generic: 'Rocky-Mountain-Zeit',
-        standard: 'Rocky-Mountain-Normalzeit',
-        daylight: 'Rocky-Mountain-Sommerzeit',
+        generic: 'Rocky-Mountains-Zeit',
+        standard: 'Rocky-Mountains-Normalzeit',
+        daylight: 'Rocky-Mountains-Sommerzeit',
       ),
     ),
     'America_Pacific': MetaZone(
@@ -10564,14 +10628,6 @@ class TimeZonesDeLU extends TimeZones {
         generic: 'Chinesische Zeit',
         standard: 'Chinesische Normalzeit',
         daylight: 'Chinesische Sommerzeit',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Tschoibalsan-Zeit',
-        standard: 'Tschoibalsan-Normalzeit',
-        daylight: 'Tschoibalsan-Sommerzeit',
       ),
     ),
     'Christmas': MetaZone(
@@ -10881,6 +10937,12 @@ class TimeZonesDeLU extends TimeZones {
         daylight: 'Kamtschatka-Sommerzeit',
       ),
     ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kasachische Zeit',
+      ),
+    ),
     'Kazakhstan_Eastern': MetaZone(
       code: 'Kazakhstan_Eastern',
       long: TimeZoneName(
@@ -10918,7 +10980,7 @@ class TimeZonesDeLU extends TimeZones {
     'Kyrgystan': MetaZone(
       code: 'Kyrgystan',
       long: TimeZoneName(
-        standard: 'Kirgisistan-Zeit',
+        standard: 'Kirgisische Zeit',
       ),
     ),
     'Lanka': MetaZone(
@@ -11278,7 +11340,7 @@ class TimeZonesDeLU extends TimeZones {
     'Tajikistan': MetaZone(
       code: 'Tajikistan',
       long: TimeZoneName(
-        standard: 'Tadschikistan-Zeit',
+        standard: 'Tadschikische Zeit',
       ),
     ),
     'Tokelau': MetaZone(
@@ -11305,8 +11367,8 @@ class TimeZonesDeLU extends TimeZones {
       code: 'Turkmenistan',
       long: TimeZoneName(
         generic: 'Turkmenistan-Zeit',
-        standard: 'Turkmenistan-Normalzeit',
-        daylight: 'Turkmenistan-Sommerzeit',
+        standard: 'Turkmenische Normalzeit',
+        daylight: 'Turkmenische Sommerzeit',
       ),
     ),
     'Tuvalu': MetaZone(
@@ -11326,9 +11388,9 @@ class TimeZonesDeLU extends TimeZones {
     'Uzbekistan': MetaZone(
       code: 'Uzbekistan',
       long: TimeZoneName(
-        generic: 'Usbekistan-Zeit',
-        standard: 'Usbekistan-Normalzeit',
-        daylight: 'Usbekistan-Sommerzeit',
+        generic: 'Usbekische Zeit',
+        standard: 'Usbekische Normalzeit',
+        daylight: 'Usbekische Sommerzeit',
       ),
     ),
     'Vanuatu': MetaZone(

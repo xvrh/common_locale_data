@@ -207,6 +207,10 @@ class LanguagesTk extends Languages {
       'bla',
       'siksika dili',
     ),
+    'blo': Language(
+      'blo',
+      'blo dili',
+    ),
     'bm': Language(
       'bm',
       'bamana',
@@ -387,7 +391,7 @@ class LanguagesTk extends Languages {
     ),
     'doi': Language(
       'doi',
-      'Dogri',
+      'dogri',
     ),
     'dsb': Language(
       'dsb',
@@ -655,6 +659,10 @@ class LanguagesTk extends Languages {
       'id',
       'indonez dili',
     ),
+    'ie': Language(
+      'ie',
+      'interlingwe dili',
+    ),
     'ig': Language(
       'ig',
       'igbo dili',
@@ -863,6 +871,10 @@ class LanguagesTk extends Languages {
       'kwk',
       'kwakwala dili',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuwi dili',
+    ),
     'ky': Language(
       'ky',
       'gyrgyz dili',
@@ -895,6 +907,10 @@ class LanguagesTk extends Languages {
       'li',
       'limburg dili',
     ),
+    'lij': Language(
+      'lij',
+      'ligur dili',
+    ),
     'lil': Language(
       'lil',
       'lilluet dili',
@@ -902,6 +918,10 @@ class LanguagesTk extends Languages {
     'lkt': Language(
       'lkt',
       'lakota dili',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombard dili',
     ),
     'ln': Language(
       'ln',
@@ -1511,6 +1531,10 @@ class LanguagesTk extends Languages {
       'syr',
       'siriýa dili',
     ),
+    'szl': Language(
+      'szl',
+      'silez dili',
+    ),
     'ta': Language(
       'ta',
       'tamil dili',
@@ -1667,9 +1691,17 @@ class LanguagesTk extends Languages {
       've',
       'wenda dili',
     ),
+    'vec': Language(
+      'vec',
+      'wenesian dili',
+    ),
     'vi': Language(
       'vi',
       'wýetnam dili',
+    ),
+    'vmw': Language(
+      'vmw',
+      'mahuwa dili',
     ),
     'vo': Language(
       'vo',
@@ -1711,6 +1743,10 @@ class LanguagesTk extends Languages {
       'xh',
       'kosa dili',
     ),
+    'xnr': Language(
+      'xnr',
+      'kangri dili',
+    ),
     'xog': Language(
       'xog',
       'soga dili',
@@ -1739,6 +1775,10 @@ class LanguagesTk extends Languages {
       'yue',
       'kanton dili',
       menu: 'hytaý dili, kantonça',
+    ),
+    'za': Language(
+      'za',
+      'çžuan dili',
     ),
     'zgh': Language(
       'zgh',
@@ -2257,9 +2297,9 @@ class UnitsTk implements Units {
       );
   @override
   UnitPrefix get pattern10pMinus2 => UnitPrefix(
-        long: UnitPrefixPattern('senti{0}'),
+        long: UnitPrefixPattern('santi{0}'),
         short: UnitPrefixPattern('c{0}'),
-        narrow: UnitPrefixPattern('c{0}'),
+        narrow: UnitPrefixPattern('s{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus3 => UnitPrefix(
@@ -2383,7 +2423,7 @@ class UnitsTk implements Units {
       );
   @override
   UnitPrefix get pattern10p27 => UnitPrefix(
-        long: UnitPrefixPattern('ronna{0}'),
+        long: UnitPrefixPattern('R{0}'),
         short: UnitPrefixPattern('R{0}'),
         narrow: UnitPrefixPattern('R{0}'),
       );
@@ -4195,9 +4235,9 @@ class UnitsTk implements Units {
   Unit get graphicsDotPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'nsmb',
-          one: '{0} nsmb',
-          other: '{0} nsmb',
+          'santimetr başyna nokat',
+          one: 'santimetr başyna {0} nokat',
+          other: 'santimetr başyna {0} nokat',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4833,7 +4873,7 @@ class UnitsTk implements Units {
   Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
-          'metrik tonna',
+          't',
           one: '{0} metrik tonna',
           other: '{0} metrik tonna',
         ),
@@ -6520,6 +6560,72 @@ class UnitsTk implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ýagtylyk',
+          one: '{0} ýagtylyk',
+          other: '{0} ýagtylyk',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ýagtylyk',
+          one: '{0} ýagtylyk',
+          other: '{0} ýagtylyk',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ýagtylyk',
+          one: '{0} ýagtylyk',
+          other: '{0} ýagtylyk',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'bölejik/milliard',
+          one: 'milliardda {0} bölejik',
+          other: 'milliardda {0} bölejik',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'bölejik/milliard',
+          one: '{0} bölejik/milliard',
+          other: '{0} bölejik/milliard',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'bmlrd',
+          one: '{0} bmlrd',
+          other: '{0} bmlrd',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'gije',
+          one: '{0} gije',
+          other: '{0} gije',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gije',
+          one: '{0} gije',
+          other: '{0} gije',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gije',
+          one: '{0} gije',
+          other: '{0} gije',
         ),
       );
 }
@@ -9307,9 +9413,6 @@ class TimeZonesTk extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Çita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Çoýbalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -9882,14 +9985,6 @@ class TimeZonesTk extends TimeZones {
         daylight: 'Hytaý tomusky wagty',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Çoýbalsan wagty',
-        standard: 'Çoýbalsan standart wagty',
-        daylight: 'Çoýbalsan tomusky wagt',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10172,6 +10267,12 @@ class TimeZonesTk extends TimeZones {
       code: 'Kamchatka',
       long: TimeZoneName(
         generic: 'Petropavlowsk-Kamçatskiý wagty',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Gazagystan wagty',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

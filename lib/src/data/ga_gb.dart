@@ -227,6 +227,10 @@ class LanguagesGaGB extends Languages {
       'bla',
       'Sicsicis',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Bambairis',
@@ -1006,6 +1010,10 @@ class LanguagesGaGB extends Languages {
     'kwk': Language(
       'kwk',
       'Kwakʼwala',
+    ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
     ),
     'ky': Language(
       'ky',
@@ -1911,6 +1919,10 @@ class LanguagesGaGB extends Languages {
       'vls',
       'Pléimeannais Iartharach',
     ),
+    'vmw': Language(
+      'vmw',
+      'Macuais',
+    ),
     'vo': Language(
       'vo',
       'Volapük',
@@ -1950,6 +1962,10 @@ class LanguagesGaGB extends Languages {
     'xh': Language(
       'xh',
       'Cóisis',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
@@ -2037,10 +2053,6 @@ class ScriptsGaGB extends Scripts {
       'Aghb',
       'Albánach Cugasach',
     ),
-    'Ahom': Script(
-      'Ahom',
-      'Ahom',
-    ),
     'Arab': Script(
       'Arab',
       'Arabach',
@@ -2065,6 +2077,14 @@ class ScriptsGaGB extends Scripts {
       'Bali',
       'Bailíoch',
     ),
+    'Bamu': Script(
+      'Bamu',
+      'Bamum',
+    ),
+    'Bass': Script(
+      'Bass',
+      'Bassa Vah',
+    ),
     'Batk': Script(
       'Batk',
       'Batacach',
@@ -2073,9 +2093,17 @@ class ScriptsGaGB extends Scripts {
       'Beng',
       'Beangálach',
     ),
+    'Bhks': Script(
+      'Bhks',
+      'Bhaiksuki',
+    ),
     'Bopo': Script(
       'Bopo',
       'Bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'Brámais',
     ),
     'Brai': Script(
       'Brai',
@@ -2097,6 +2125,10 @@ class ScriptsGaGB extends Scripts {
       'Cans',
       'Siollach Bundúchasach Ceanadach Aontaithe',
     ),
+    'Cari': Script(
+      'Cari',
+      'Cló Cairiach',
+    ),
     'Cher': Script(
       'Cher',
       'Seiricíoch',
@@ -2117,6 +2149,10 @@ class ScriptsGaGB extends Scripts {
       'Deva',
       'Déiveanágrach',
     ),
+    'Dsrt': Script(
+      'Dsrt',
+      'Deseret',
+    ),
     'Dupl': Script(
       'Dupl',
       'Gearrscríobh Duployan',
@@ -2133,6 +2169,10 @@ class ScriptsGaGB extends Scripts {
       'Egyp',
       'Iairiglifí Éigipteacha',
     ),
+    'Elba': Script(
+      'Elba',
+      'Elbasan',
+    ),
     'Ethi': Script(
       'Ethi',
       'Aetóipic',
@@ -2145,9 +2185,17 @@ class ScriptsGaGB extends Scripts {
       'Glag',
       'Glagalach',
     ),
+    'Gonm': Script(
+      'Gonm',
+      'Masaram Gondi',
+    ),
     'Goth': Script(
       'Goth',
       'Gotach',
+    ),
+    'Gran': Script(
+      'Gran',
+      'Grantha',
     ),
     'Grek': Script(
       'Grek',
@@ -2187,6 +2235,10 @@ class ScriptsGaGB extends Scripts {
       'Traidisiúnta',
       standAlone: 'Han Traidisiúnta',
     ),
+    'Hatr': Script(
+      'Hatr',
+      'Hatran',
+    ),
     'Hebr': Script(
       'Hebr',
       'Eabhrach',
@@ -2198,6 +2250,10 @@ class ScriptsGaGB extends Scripts {
     'Hluw': Script(
       'Hluw',
       'Iairiglifí Anatólacha',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'Pahawh Hmong',
     ),
     'Hrkt': Script(
       'Hrkt',
@@ -2223,13 +2279,25 @@ class ScriptsGaGB extends Scripts {
       'Jpan',
       'Seapánach',
     ),
+    'Kali': Script(
+      'Kali',
+      'Kayah Li',
+    ),
     'Kana': Script(
       'Kana',
       'Catacánach',
     ),
+    'Khar': Script(
+      'Khar',
+      'Kharoshthi',
+    ),
     'Khmr': Script(
       'Khmr',
       'Ciméarach',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'Khojki',
     ),
     'Knda': Script(
       'Knda',
@@ -2238,6 +2306,14 @@ class ScriptsGaGB extends Scripts {
     'Kore': Script(
       'Kore',
       'Cóiréach',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'Kaithi',
+    ),
+    'Lana': Script(
+      'Lana',
+      'Lanna',
     ),
     'Laoo': Script(
       'Laoo',
@@ -2250,6 +2326,10 @@ class ScriptsGaGB extends Scripts {
     'Latn': Script(
       'Latn',
       'Laidineach',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'Lepcha',
     ),
     'Limb': Script(
       'Limb',
@@ -2279,9 +2359,17 @@ class ScriptsGaGB extends Scripts {
       'Mahj',
       'Mahasánach',
     ),
+    'Mand': Script(
+      'Mand',
+      'Mandaean',
+    ),
     'Mani': Script(
       'Mani',
       'Mainicéasach',
+    ),
+    'Marc': Script(
+      'Marc',
+      'Marchen',
     ),
     'Maya': Script(
       'Maya',
@@ -2291,6 +2379,14 @@ class ScriptsGaGB extends Scripts {
       'Mend',
       'Meindeach',
     ),
+    'Merc': Script(
+      'Merc',
+      'Meroitic Cursive',
+    ),
+    'Mero': Script(
+      'Mero',
+      'Meroitic',
+    ),
     'Mlym': Script(
       'Mlym',
       'Mailéalamach',
@@ -2298,6 +2394,10 @@ class ScriptsGaGB extends Scripts {
     'Mong': Script(
       'Mong',
       'Mongólach',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'Mro',
     ),
     'Mtei': Script(
       'Mtei',
@@ -2315,13 +2415,17 @@ class ScriptsGaGB extends Scripts {
       'Narb',
       'Sean-Arabach Thuaidh',
     ),
-    'Newa': Script(
-      'Newa',
-      'Newa',
+    'Nbat': Script(
+      'Nbat',
+      'Nabataean',
     ),
     'Nkoo': Script(
       'Nkoo',
       'N-cóis',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'Nüshu',
     ),
     'Ogam': Script(
       'Ogam',
@@ -2331,6 +2435,10 @@ class ScriptsGaGB extends Scripts {
       'Olck',
       'Ol Chiki',
     ),
+    'Orkh': Script(
+      'Orkh',
+      'Orkhon',
+    ),
     'Orya': Script(
       'Orya',
       'Oiríseach',
@@ -2339,9 +2447,33 @@ class ScriptsGaGB extends Scripts {
       'Osge',
       'Ósáis',
     ),
+    'Osma': Script(
+      'Osma',
+      'Osmanya',
+    ),
+    'Palm': Script(
+      'Palm',
+      'Palmyrene',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'Pau Cin Hau',
+    ),
     'Perm': Script(
       'Perm',
       'Sean-Pheirmeach',
+    ),
+    'Phag': Script(
+      'Phag',
+      'Phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'Pachlavais Inscríbhinne',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'Pachlavais Saltrach',
     ),
     'Phnx': Script(
       'Phnx',
@@ -2354,6 +2486,10 @@ class ScriptsGaGB extends Scripts {
     'Prti': Script(
       'Prti',
       'Pairtiach Inscríbhinniúil',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'Rejang',
     ),
     'Rohg': Script(
       'Rohg',
@@ -2371,6 +2507,10 @@ class ScriptsGaGB extends Scripts {
       'Sarb',
       'Sean-Arabach Theas',
     ),
+    'Saur': Script(
+      'Saur',
+      'Saurashtra',
+    ),
     'Sgnw': Script(
       'Sgnw',
       'Litritheoireacht Comharthaí',
@@ -2379,17 +2519,49 @@ class ScriptsGaGB extends Scripts {
       'Shaw',
       'Shawach',
     ),
+    'Shrd': Script(
+      'Shrd',
+      'Sharada',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      'Siddham',
+    ),
+    'Sind': Script(
+      'Sind',
+      'Khudawadi',
+    ),
     'Sinh': Script(
       'Sinh',
       'Siolónach',
+    ),
+    'Sora': Script(
+      'Sora',
+      'Sora Sompeng',
+    ),
+    'Soyo': Script(
+      'Soyo',
+      'Soyombo',
     ),
     'Sund': Script(
       'Sund',
       'Sundainéis',
     ),
+    'Sylo': Script(
+      'Sylo',
+      'Syloti Nagri',
+    ),
     'Syrc': Script(
       'Syrc',
       'Siriceach',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'Tagbanwa',
+    ),
+    'Takr': Script(
+      'Takr',
+      'Takri',
     ),
     'Tale': Script(
       'Tale',
@@ -2402,6 +2574,14 @@ class ScriptsGaGB extends Scripts {
     'Taml': Script(
       'Taml',
       'Tamalach',
+    ),
+    'Tang': Script(
+      'Tang',
+      'Tangut',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'Tai Viet',
     ),
     'Telu': Script(
       'Telu',
@@ -2427,6 +2607,10 @@ class ScriptsGaGB extends Scripts {
       'Tibt',
       'Tibéadach',
     ),
+    'Tirh': Script(
+      'Tirh',
+      'Tirhuta',
+    ),
     'Ugar': Script(
       'Ugar',
       'Úgairíteach',
@@ -2434,6 +2618,10 @@ class ScriptsGaGB extends Scripts {
     'Vaii': Script(
       'Vaii',
       'Vadhais',
+    ),
+    'Wara': Script(
+      'Wara',
+      'Varang Kshiti',
     ),
     'Xpeo': Script(
       'Xpeo',
@@ -2446,6 +2634,10 @@ class ScriptsGaGB extends Scripts {
     'Yiii': Script(
       'Yiii',
       'Ís',
+    ),
+    'Zanb': Script(
+      'Zanb',
+      'Zanabazar Square',
     ),
     'Zinh': Script(
       'Zinh',
@@ -4170,8 +4362,8 @@ class UnitsGaGB implements Units {
   Unit get durationCentury => Unit(
         long: UnitCountPattern(
           _locale,
-          'céadta bliain',
-          one: '{0} chéad bliain',
+          'na céadta bliain',
+          one: 'céad bliain',
           two: '{0} chéad bliain',
           few: '{0} chéad bliain',
           many: '{0} gcéad bliain',
@@ -4179,8 +4371,8 @@ class UnitsGaGB implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'c',
-          one: '{0} chéad bliain',
+          'céadta bl',
+          one: 'céad bliain',
           two: '{0} chéad bliain',
           few: '{0} chéad bliain',
           many: '{0} gcéad bliain',
@@ -4188,8 +4380,8 @@ class UnitsGaGB implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'c',
-          one: '{0} chéad bliain',
+          'céadta bl',
+          one: 'céad bliain',
           two: '{0} chéad bliain',
           few: '{0} chéad bliain',
           many: '{0} gcéad bliain',
@@ -8515,6 +8707,81 @@ class UnitsGaGB implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'oícheanta',
+          one: '{0} oíche amháin',
+          two: '{0} oíche',
+          few: '{0} oíche',
+          many: '{0} n-oíche',
+          other: '{0} oíche',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'oícheanta',
+          one: '{0} oíche',
+          two: '{0} oíche',
+          few: '{0} oíche',
+          many: '{0} n-oíche',
+          other: '{0} oíche',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'oí',
+          one: '{0}oí',
+          two: '{0}oí',
+          few: '{0}oí',
+          many: '{0}oí',
+          other: '{0}oí',
+        ),
+      );
 }
 
 class DateFieldsGaGB implements DateFields {
@@ -11761,14 +12028,6 @@ class TimeZonesGaGB extends TimeZones {
         daylight: 'Am Samhraidh na Síne',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Am Choibalsan',
-        standard: 'Am Caighdeánach Choibalsan',
-        daylight: 'Am Samhraidh Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12077,6 +12336,12 @@ class TimeZonesGaGB extends TimeZones {
         generic: 'Am Phetropavlovsk-Kamchatski',
         standard: 'Am Caighdeánach Phetropavlovsk-Kamchatski',
         daylight: 'Am Samhraidh Phetropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Am na Casacstáine',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

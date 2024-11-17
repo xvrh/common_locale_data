@@ -223,6 +223,10 @@ class LanguagesBe extends Languages {
       'bla',
       'блэкфут',
     ),
+    'blo': Language(
+      'blo',
+      'аніі',
+    ),
     'bm': Language(
       'bm',
       'бамбара',
@@ -943,6 +947,10 @@ class LanguagesBe extends Languages {
       'kwk',
       'квакіутль',
     ),
+    'kxv': Language(
+      'kxv',
+      'куві',
+    ),
     'ky': Language(
       'ky',
       'кіргізская',
@@ -975,6 +983,10 @@ class LanguagesBe extends Languages {
       'li',
       'лімбургская',
     ),
+    'lij': Language(
+      'lij',
+      'лігурская',
+    ),
     'lil': Language(
       'lil',
       'лілуэт',
@@ -982,6 +994,10 @@ class LanguagesBe extends Languages {
     'lkt': Language(
       'lkt',
       'лакота',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ламбардская',
     ),
     'ln': Language(
       'ln',
@@ -1643,6 +1659,10 @@ class LanguagesBe extends Languages {
       'syr',
       'сірыйская',
     ),
+    'szl': Language(
+      'szl',
+      'сілезская',
+    ),
     'ta': Language(
       'ta',
       'тамільская',
@@ -1799,9 +1819,17 @@ class LanguagesBe extends Languages {
       've',
       'венда',
     ),
+    'vec': Language(
+      'vec',
+      'венецыянская',
+    ),
     'vi': Language(
       'vi',
       'в’етнамская',
+    ),
+    'vmw': Language(
+      'vmw',
+      'макуа',
     ),
     'vo': Language(
       'vo',
@@ -1847,6 +1875,10 @@ class LanguagesBe extends Languages {
       'xh',
       'коса',
     ),
+    'xnr': Language(
+      'xnr',
+      'кангры',
+    ),
     'xog': Language(
       'xog',
       'сога',
@@ -1875,6 +1907,10 @@ class LanguagesBe extends Languages {
       'yue',
       'кантонскі дыялект кітайскай',
       menu: 'кітайская, кантонскі дыялект',
+    ),
+    'za': Language(
+      'za',
+      'чжуанская',
     ),
     'zap': Language(
       'zap',
@@ -7766,6 +7802,84 @@ class UnitsBe implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'частак на мільярд',
+          one: '{0} частка на мільярд',
+          few: '{0} часткі на мільярд',
+          many: '{0} частак на мільярд',
+          other: '{0} часткі на мільярд',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'частак/мільярд',
+          one: '{0} ч/млрд',
+          few: '{0} ч/млрд',
+          many: '{0} ч/млрд',
+          other: '{0} ч/млрд',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ч/млрд',
+          one: '{0} ч/млрд',
+          few: '{0} ч/млрд',
+          many: '{0} ч/млрд',
+          other: '{0} ч/млрд',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ночы',
+          one: '{0} ноч',
+          few: '{0} ночы',
+          many: '{0} начэй',
+          other: '{0} ночы',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ночы',
+          one: '{0} ноч',
+          few: '{0} ноч',
+          many: '{0} начэй',
+          other: '{0} ночы',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ночы',
+          one: '{0} ноч',
+          few: '{0} ночы',
+          many: '{0} начэй',
+          other: '{0} ночы',
+        ),
+      );
 }
 
 class DateFieldsBe implements DateFields {
@@ -10934,9 +11048,6 @@ class TimeZonesBe extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чыта',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чайбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Каломба',
     ),
@@ -11611,14 +11722,6 @@ class TimeZonesBe extends TimeZones {
         daylight: 'Летні час Кітая',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Час Чайбалсана',
-        standard: 'Стандартны час Чайбалсана',
-        daylight: 'Летні час Чайбалсана',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11895,6 +11998,12 @@ class TimeZonesBe extends TimeZones {
         generic: 'Час Японіі',
         standard: 'Стандартны час Японіі',
         daylight: 'Летні час Японіі',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Казахстанскі час',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

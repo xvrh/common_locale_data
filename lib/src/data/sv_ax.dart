@@ -324,6 +324,10 @@ class LanguagesSvAX extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -850,7 +854,7 @@ class LanguagesSvAX extends Languages {
     ),
     'gd': Language(
       'gd',
-      'skotsk gäliska',
+      'skotsk gaeliska',
     ),
     'gez': Language(
       'gez',
@@ -879,10 +883,6 @@ class LanguagesSvAX extends Languages {
     'goh': Language(
       'goh',
       'fornhögtyska',
-    ),
-    'gom': Language(
-      'gom',
-      'Goa-konkani',
     ),
     'gon': Language(
       'gon',
@@ -1325,6 +1325,10 @@ class LanguagesSvAX extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiziska',
@@ -1440,10 +1444,6 @@ class LanguagesSvAX extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2511,6 +2511,10 @@ class LanguagesSvAX extends Languages {
       'vmf',
       'Main-frankiska',
     ),
+    'vmw': Language(
+      'vmw',
+      'makua',
+    ),
     'vo': Language(
       'vo',
       'volapük',
@@ -2570,6 +2574,10 @@ class LanguagesSvAX extends Languages {
     'xmf': Language(
       'xmf',
       'mingrelianska',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -3721,7 +3729,7 @@ class UnitsSvAX implements Units {
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
-        long: UnitPrefixPattern('pico{0}'),
+        long: UnitPrefixPattern('piko{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
@@ -7962,6 +7970,72 @@ class UnitsSvAX implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ljus',
+          one: '{0} ljus',
+          other: '{0} ljus',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ljus',
+          one: '{0} ljus',
+          other: '{0} ljus',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ljs',
+          one: '{0}ljs',
+          other: '{0}ljs',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'miljarddelar',
+          one: '{0} miljarddel',
+          other: '{0} miljarddelar',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} miljarddel',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nätter',
+          one: '{0} natt',
+          other: '{0} nätter',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nätter',
+          one: '{0} natt',
+          other: '{0} nätter',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nttr',
+          one: '{0}ntt',
+          other: '{0}nttr',
+        ),
+      );
 }
 
 class DateFieldsSvAX implements DateFields {
@@ -8094,7 +8168,7 @@ class DateFieldsSvAX implements DateFields {
   DateFieldFullData get month => DateFieldFullData(
         displayName: MultiLength(
           long: 'månad',
-          short: 'm',
+          short: 'mån',
           narrow: 'mån',
         ),
         previous: MultiLength(
@@ -8152,8 +8226,8 @@ class DateFieldsSvAX implements DateFields {
   DateFieldFullData get week => DateFieldFullData(
         displayName: MultiLength(
           long: 'vecka',
-          short: 'v',
-          narrow: 'v',
+          short: 'v.',
+          narrow: 'v.',
         ),
         previous: MultiLength(
           long: 'förra veckan',
@@ -8209,16 +8283,16 @@ class DateFieldsSvAX implements DateFields {
   @override
   MultiLength get weekOfMonth => MultiLength(
         long: 'vecka i månaden',
-        short: 'vk. i mån.',
-        narrow: 'vk.i mån.',
+        short: 'v. i mån.',
+        narrow: 'v i mån',
       );
 
   @override
   DateFieldFullData get day => DateFieldFullData(
         displayName: MultiLength(
           long: 'dag',
-          short: 'dag',
-          narrow: 'dag',
+          short: 'd.',
+          narrow: 'd',
         ),
         previous: MultiLength(
           long: 'i går',
@@ -8274,22 +8348,22 @@ class DateFieldsSvAX implements DateFields {
   @override
   MultiLength get dayOfYear => MultiLength(
         long: 'dag under året',
-        short: 'dag under året',
-        narrow: 'dag under året',
+        short: 'd. under å.',
+        narrow: 'd u å',
       );
 
   @override
   MultiLength get weekday => MultiLength(
         long: 'veckodag',
-        short: 'veckodag',
-        narrow: 'veckodag',
+        short: 'veckod.',
+        narrow: 'vd',
       );
 
   @override
   MultiLength get weekdayOfMonth => MultiLength(
         long: 'veckodag i månad',
         short: 'veckodag i mån.',
-        narrow: 'veckodag i mån.',
+        narrow: 'vd i m',
       );
 
   @override
@@ -8900,7 +8974,7 @@ class TerritoriesSvAX implements Territories {
   @override
   Territory get northernAmerica => Territory(
         '021',
-        'Norra Amerika',
+        'norra Amerika',
       );
 
   @override
@@ -10192,9 +10266,6 @@ class TimeZonesSvAX extends TimeZones {
     'America/Merida': TimeZoneNames(
       exemplarCity: 'Mérida',
     ),
-    'America/Mexico_City': TimeZoneNames(
-      exemplarCity: 'Mexiko City',
-    ),
     'America/Noronha': TimeZoneNames(
       exemplarCity: 'Fernando de Noronha',
     ),
@@ -10372,9 +10443,6 @@ class TimeZonesSvAX extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Tjita',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tjojbalsan',
     ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damaskus',
@@ -10810,14 +10878,6 @@ class TimeZonesSvAX extends TimeZones {
         daylight: 'kinesisk sommartid',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Tjojbalsantid',
-        standard: 'Tjojbalsan, normaltid',
-        daylight: 'Tjojbalsan, sommartid',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11126,6 +11186,12 @@ class TimeZonesSvAX extends TimeZones {
         generic: 'Kamtjatkatid',
         standard: 'Kamtjatkanormaltid',
         daylight: 'Kamtjatkasommartid',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazakstansk tid',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

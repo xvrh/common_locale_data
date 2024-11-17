@@ -267,6 +267,10 @@ class LanguagesSk extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambarčina',
@@ -1155,6 +1159,10 @@ class LanguagesSk extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgizština',
@@ -1195,6 +1203,10 @@ class LanguagesSk extends Languages {
       'li',
       'limburčina',
     ),
+    'lij': Language(
+      'lij',
+      'ligurčina',
+    ),
     'lil': Language(
       'lil',
       'lillooet',
@@ -1202,6 +1214,10 @@ class LanguagesSk extends Languages {
     'lkt': Language(
       'lkt',
       'lakotčina',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardčina',
     ),
     'ln': Language(
       'ln',
@@ -1250,10 +1266,6 @@ class LanguagesSk extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1975,6 +1987,10 @@ class LanguagesSk extends Languages {
       'syr',
       'sýrčina',
     ),
+    'szl': Language(
+      'szl',
+      'sliezština',
+    ),
     'ta': Language(
       'ta',
       'tamilčina',
@@ -2159,17 +2175,21 @@ class LanguagesSk extends Languages {
       'uz',
       'uzbečtina',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'vendčina',
     ),
+    'vec': Language(
+      'vec',
+      'benátčina',
+    ),
     'vi': Language(
       'vi',
       'vietnamčina',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwčina',
     ),
     'vo': Language(
       'vo',
@@ -2222,6 +2242,10 @@ class LanguagesSk extends Languages {
     'xh': Language(
       'xh',
       'xhoština',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kángrí',
     ),
     'xog': Language(
       'xog',
@@ -2810,9 +2834,9 @@ class UnitsSk implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0}{1}'),
-        short: CompoundUnitPattern('{0}{1}'),
-        narrow: CompoundUnitPattern('{0}{1}'),
+        long: CompoundUnitPattern('{0}⋅{1}'),
+        short: CompoundUnitPattern('{0}⋅{1}'),
+        narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
   Unit get accelerationGForce => Unit(
@@ -4750,21 +4774,27 @@ class UnitsSk implements Units {
   Unit get forceKilowattHourPer100Kilometer => Unit(
         long: UnitCountPattern(
           _locale,
-          'kWh/100km',
-          one: '{0} kilowatt-hour per 100 kilometers',
-          other: '{0} kWh/100km',
+          'kilowatthodiny na 100 kilometrov',
+          one: '{0} kilowatthodina na 100 kilometrov',
+          few: '{0} kilowatthodiny na 100 kilometrov',
+          many: '{0} kilowatthodiny na 100 kilometrov',
+          other: '{0} kilowatthodín na 100 kilometrov',
         ),
         short: UnitCountPattern(
           _locale,
-          'kWh/100km',
-          one: '{0} kWh/100km',
-          other: '{0} kWh/100km',
+          'kWh/100 km',
+          one: '{0} kWh/100 km',
+          few: '{0} kWh/100 km',
+          many: '{0} kWh/100 km',
+          other: '{0} kWh/100 km',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kWh/100km',
-          one: '{0}kWh/100km',
-          other: '{0} kWh/100km',
+          'kWh/100 km',
+          one: '{0} kWh/100 km',
+          few: '{0} kWh/100 km',
+          many: '{0} kWh/100 km',
+          other: '{0} kWh/100 km',
         ),
       );
 
@@ -5102,20 +5132,26 @@ class UnitsSk implements Units {
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'R⊕',
-          one: '{0} earth radius',
-          other: '{0} R⊕',
+          'polomer Zeme',
+          one: '{0} polomer Zeme',
+          few: '{0} polomery Zeme',
+          many: '{0} polomeru Zeme',
+          other: '{0} polomerov Zeme',
         ),
         short: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} R⊕',
+          one: '{0} polomer Zeme',
+          few: '{0} polomery Zeme',
+          many: '{0} polomeru Zeme',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0}R⊕',
+          one: '{0} polomer Zeme',
+          few: '{0} polomery Zeme',
+          many: '{0} polomeru Zeme',
           other: '{0} R⊕',
         ),
       );
@@ -7969,6 +8005,84 @@ class UnitsSk implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'častice na miliardu',
+          one: '{0} častica na miliardu',
+          few: '{0} častice na miliardu',
+          many: '{0} častice na miliardu',
+          other: '{0} častíc na miliardu',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} častica na miliardu',
+          few: '{0} častice na miliardu',
+          many: '{0} častice na miliardu',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} častica na miliardu',
+          few: '{0} častice na miliardu',
+          many: '{0} častice na miliardu',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
+        ),
+      );
 }
 
 class DateFieldsSk implements DateFields {
@@ -10546,6 +10660,9 @@ class TimeZonesSk extends TimeZones {
     'Europe/Zurich': TimeZoneNames(
       exemplarCity: 'Zürich',
     ),
+    'Africa/Accra': TimeZoneNames(
+      exemplarCity: 'Akkra',
+    ),
     'Africa/Addis_Ababa': TimeZoneNames(
       exemplarCity: 'Addis Abeba',
     ),
@@ -10557,6 +10674,9 @@ class TimeZonesSk extends TimeZones {
     ),
     'Africa/Cairo': TimeZoneNames(
       exemplarCity: 'Káhira',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      exemplarCity: 'Konakry',
     ),
     'Africa/Djibouti': TimeZoneNames(
       exemplarCity: 'Džibuti',
@@ -10581,6 +10701,9 @@ class TimeZonesSk extends TimeZones {
     ),
     'Africa/Tripoli': TimeZoneNames(
       exemplarCity: 'Tripolis',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      exemplarCity: 'Alma‑Ata',
     ),
     'Asia/Amman': TimeZoneNames(
       exemplarCity: 'Ammán',
@@ -10614,9 +10737,6 @@ class TimeZonesSk extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Čita',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Čojbalsan',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
@@ -11121,14 +11241,6 @@ class TimeZonesSk extends TimeZones {
         daylight: 'čínsky letný čas',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'čojbalsanský čas',
-        standard: 'čojbalsanský štandardný čas',
-        daylight: 'čojbalsanský letný čas',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11424,6 +11536,12 @@ class TimeZonesSk extends TimeZones {
         generic: 'Petropavlovsk-Kamčatský čas',
         standard: 'Petropavlovsk-Kamčatský štandardný čas',
         daylight: 'Petropavlovsk-Kamčatskijský letný čas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazachstanský čas',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

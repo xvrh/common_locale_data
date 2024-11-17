@@ -267,6 +267,10 @@ class LanguagesLo extends Languages {
       'bla',
       'ຊິກຊິກາ',
     ),
+    'blo': Language(
+      'blo',
+      'ອານີ',
+    ),
     'bm': Language(
       'bm',
       'ບາມບາຣາ',
@@ -1143,6 +1147,10 @@ class LanguagesLo extends Languages {
       'kwk',
       'ຄວາກຄວາກລາ',
     ),
+    'kxv': Language(
+      'kxv',
+      'ຄູວີ',
+    ),
     'ky': Language(
       'ky',
       'ເກຍກີສ',
@@ -1183,6 +1191,10 @@ class LanguagesLo extends Languages {
       'li',
       'ລິມເບີກີຊ',
     ),
+    'lij': Language(
+      'lij',
+      'ລີກູຣຽນ',
+    ),
     'lil': Language(
       'lil',
       'ລິນລູເອັດ',
@@ -1190,6 +1202,10 @@ class LanguagesLo extends Languages {
     'lkt': Language(
       'lkt',
       'ລາໂກຕາ',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ລອມບາດ',
     ),
     'ln': Language(
       'ln',
@@ -1959,6 +1975,10 @@ class LanguagesLo extends Languages {
       'syr',
       'ຊີເລຍ',
     ),
+    'szl': Language(
+      'szl',
+      'ຊີເລສຊຽນ',
+    ),
     'ta': Language(
       'ta',
       'ທາມິລ',
@@ -2151,9 +2171,17 @@ class LanguagesLo extends Languages {
       've',
       'ເວນດາ',
     ),
+    'vec': Language(
+      'vec',
+      'ເວເນຊຽນ',
+    ),
     'vi': Language(
       'vi',
       'ຫວຽດນາມ',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ມາຄູວາ',
     ),
     'vo': Language(
       'vo',
@@ -2206,6 +2234,10 @@ class LanguagesLo extends Languages {
     'xh': Language(
       'xh',
       'ໂຮຊາ',
+    ),
+    'xnr': Language(
+      'xnr',
+      'ຄັງຣີ',
     ),
     'xog': Language(
       'xog',
@@ -3847,7 +3879,7 @@ class UnitsLo implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ຕໍ່ພັນ',
+          '‰',
           one: '{0}‰',
           other: '{0}‰',
         ),
@@ -4237,15 +4269,15 @@ class UnitsLo implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'c',
+          'ສຕວ',
           one: '{0} c',
-          other: '{0} c',
+          other: '{0} ສຕວ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'c',
+          'ສຕວ',
           one: '{0}c',
-          other: '{0} c',
+          other: '{0} ສຕວ',
         ),
       );
 
@@ -4465,7 +4497,7 @@ class UnitsLo implements Units {
           _locale,
           'ມລວ',
           one: '{0}ms',
-          other: '{0} ມລ. ວິ.',
+          other: '{0} ມລວ',
         ),
       );
 
@@ -7394,6 +7426,72 @@ class UnitsLo implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ແສງ',
+          one: '{0} light',
+          other: '{0} ແສງ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ແສງ',
+          one: '{0} light',
+          other: '{0} ແສງ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ແສງ',
+          one: '{0}light',
+          other: '{0} ແສງ',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ສ່ວນໃນພັນລ້ານສ່ວນ',
+          one: '{0} part per billion',
+          other: '{0} ສ່ວນໃນພັນລ້ານສ່ວນ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ສ່ວນ/ພັນລ້ານສ່ວນ',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ສ່ວນ/ພັນລ້ານສ່ວນ',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ຄືນ',
+          one: '{0} night',
+          other: '{0} ຄືນ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ຄືນ',
+          one: '{0} night',
+          other: '{0} ຄືນ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ຄືນ',
+          one: '{0}night',
+          other: '{0} ຄືນ',
+        ),
+      );
 }
 
 class DateFieldsLo implements DateFields {
@@ -9398,11 +9496,11 @@ class TerritoriesLo implements Territories {
     ),
     'XA': Territory(
       'XA',
-      'Pseudo-Accents',
+      'ສຳນຽງຊູໂດ',
     ),
     'XB': Territory(
       'XB',
-      'Pseudo-Bidi',
+      'ຊູໂດບີດີ',
     ),
     'XK': Territory(
       'XK',
@@ -9874,7 +9972,7 @@ class TimeZonesLo extends TimeZones {
       exemplarCity: 'ຢາຄູຕັດ',
     ),
     'Atlantic/Azores': TimeZoneNames(
-      exemplarCity: 'ອາຊໍເຣສ',
+      exemplarCity: 'ອາ​ໂຊ​ເຣ​ສ',
     ),
     'Atlantic/Bermuda': TimeZoneNames(
       exemplarCity: 'ເບີມິວດາ',
@@ -10292,9 +10390,6 @@ class TimeZonesLo extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ຊີຕ່າ',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ຊອຍບອລຊານ',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'ໂຄລຳໂບ',
@@ -11008,14 +11103,6 @@ class TimeZonesLo extends TimeZones {
         daylight: '​ເວ​ລາ​ຕອນ​ທ່ຽງ​ຈີນ',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ເວ​ລາ​ໂຊຍ​ບາ​ຊັນ',
-        standard: 'ເວລາມາດຕະຖານໂຊຍບາຊັນ',
-        daylight: 'ເວລາລະ​ດູ​ຮ້ອນໂຊຍບາຊັນ',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11241,7 +11328,7 @@ class TimeZonesLo extends TimeZones {
     'Indian_Ocean': MetaZone(
       code: 'Indian_Ocean',
       long: TimeZoneName(
-        standard: 'ເວລາຫມະຫາສະຫມຸດອິນເດຍ',
+        standard: 'ເວລາມະຫາສະຫມຸດອິນເດຍ',
       ),
     ),
     'Indochina': MetaZone(
@@ -11298,6 +11385,12 @@ class TimeZonesLo extends TimeZones {
         generic: 'ເວ​ລາ​ຍີ່​ປຸ່ນ',
         standard: 'ເວ​ລາ​ມາດ​ຕະ​ຖານ​ຍີ່​ປຸ່ນ',
         daylight: 'ເວ​ລາ​ຕອນ​ທ່ຽງ​ຍີ່​ປຸ່ນ',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ເວລາຄາຊັກສຖານ',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

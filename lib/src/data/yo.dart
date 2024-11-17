@@ -104,7 +104,11 @@ class LanguagesYo extends Languages {
     ),
     'ar': Language(
       'ar',
-      'Èdè Árábìkì',
+      'Èdè Lárúbáwá',
+    ),
+    'ar-001': Language(
+      'ar-001',
+      'Èdè Lárúbáwá (Agbáyé)',
     ),
     'arn': Language(
       'arn',
@@ -120,7 +124,7 @@ class LanguagesYo extends Languages {
     ),
     'as': Language(
       'as',
-      'Èdè Ti Assam',
+      'Èdè Assam',
     ),
     'asa': Language(
       'asa',
@@ -148,8 +152,8 @@ class LanguagesYo extends Languages {
     ),
     'az': Language(
       'az',
-      'Èdè Azerbaijani',
-      short: 'Èdè Azerbaijani',
+      'Èdè Asabaijani',
+      short: 'Èdè Aseri',
     ),
     'ba': Language(
       'ba',
@@ -199,6 +203,10 @@ class LanguagesYo extends Languages {
       'bla',
       'Èdè Sikiska',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
     'bm': Language(
       'bm',
       'Èdè Báḿbàrà',
@@ -233,7 +241,7 @@ class LanguagesYo extends Languages {
     ),
     'ca': Language(
       'ca',
-      'Èdè Catala',
+      'Èdè Katala',
     ),
     'cay': Language(
       'cay',
@@ -249,7 +257,7 @@ class LanguagesYo extends Languages {
     ),
     'ceb': Language(
       'ceb',
-      'Èdè Cebuano',
+      'Èdè Sebuano',
     ),
     'cgg': Language(
       'cgg',
@@ -277,7 +285,7 @@ class LanguagesYo extends Languages {
     ),
     'chr': Language(
       'chr',
-      'Èdè Shẹ́rókiì',
+      'Èdè Ṣẹ́rókiì',
     ),
     'chy': Language(
       'chy',
@@ -335,7 +343,7 @@ class LanguagesYo extends Languages {
     ),
     'cv': Language(
       'cv',
-      'Èdè Shufasi',
+      'Èdè Ṣufasi',
     ),
     'cy': Language(
       'cy',
@@ -343,7 +351,7 @@ class LanguagesYo extends Languages {
     ),
     'da': Language(
       'da',
-      'Èdè Ilẹ̀ Denmark',
+      'Èdè Denmaki',
     ),
     'dak': Language(
       'dak',
@@ -645,7 +653,7 @@ class LanguagesYo extends Languages {
     ),
     'hy': Language(
       'hy',
-      'Èdè Ile Armenia',
+      'Èdè Armenia',
     ),
     'hz': Language(
       'hz',
@@ -669,7 +677,7 @@ class LanguagesYo extends Languages {
     ),
     'ie': Language(
       'ie',
-      'Iru Èdè',
+      'Èdè àtọwọ́dá',
     ),
     'ig': Language(
       'ig',
@@ -879,6 +887,10 @@ class LanguagesYo extends Languages {
       'kwk',
       'Èdè Kwawala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kufi',
+    ),
     'ky': Language(
       'ky',
       'Kírígíìsì',
@@ -911,6 +923,10 @@ class LanguagesYo extends Languages {
       'li',
       'Èdè Limbogishi',
     ),
+    'lij': Language(
+      'lij',
+      'Liguriani',
+    ),
     'lil': Language(
       'lil',
       'Èdè Liloeti',
@@ -918,6 +934,10 @@ class LanguagesYo extends Languages {
     'lkt': Language(
       'lkt',
       'Lákota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Lombardi',
     ),
     'ln': Language(
       'ln',
@@ -969,7 +989,7 @@ class LanguagesYo extends Languages {
     ),
     'lv': Language(
       'lv',
-      'Èdè Latvianu',
+      'Èdè látífíànì',
     ),
     'mad': Language(
       'mad',
@@ -1037,7 +1057,7 @@ class LanguagesYo extends Languages {
     ),
     'mk': Language(
       'mk',
-      'Èdè Macedonia',
+      'Èdè Masidonia',
     ),
     'ml': Language(
       'ml',
@@ -1151,6 +1171,10 @@ class LanguagesYo extends Languages {
       'nl',
       'Èdè Dọ́ọ̀ṣì',
     ),
+    'nl-BE': Language(
+      'nl-BE',
+      'Èdè Flemiṣi',
+    ),
     'nmg': Language(
       'nmg',
       'Kíwáṣíò',
@@ -1201,7 +1225,7 @@ class LanguagesYo extends Languages {
     ),
     'oc': Language(
       'oc',
-      'Èdè Occitani',
+      'Èdè Ọ̀kísítáànì',
     ),
     'ojb': Language(
       'ojb',
@@ -1229,7 +1253,7 @@ class LanguagesYo extends Languages {
     ),
     'or': Language(
       'or',
-      'Òdíà',
+      'Èdè Òdíà',
     ),
     'os': Language(
       'os',
@@ -1294,6 +1318,10 @@ class LanguagesYo extends Languages {
     'qu': Language(
       'qu',
       'Kúẹ́ńjùà',
+    ),
+    'raj': Language(
+      'raj',
+      'Rajastánì',
     ),
     'rap': Language(
       'rap',
@@ -1499,6 +1527,10 @@ class LanguagesYo extends Languages {
       'syr',
       'Èdè Siriaki',
     ),
+    'szl': Language(
+      'szl',
+      'Silìṣíànì',
+    ),
     'ta': Language(
       'ta',
       'Èdè Tamili',
@@ -1525,7 +1557,7 @@ class LanguagesYo extends Languages {
     ),
     'tg': Language(
       'tg',
-      'Tàjíìkì',
+      'Èdè Tàjíìkì',
     ),
     'tgx': Language(
       'tgx',
@@ -1589,7 +1621,7 @@ class LanguagesYo extends Languages {
     ),
     'tt': Language(
       'tt',
-      'Tatarí',
+      'Tátárì',
     ),
     'ttm': Language(
       'ttm',
@@ -1651,9 +1683,17 @@ class LanguagesYo extends Languages {
       've',
       'Èdè Fenda',
     ),
+    'vec': Language(
+      'vec',
+      'Fènéṣìànì',
+    ),
     'vi': Language(
       'vi',
       'Èdè Jetinamu',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Màkúwà',
     ),
     'vo': Language(
       'vo',
@@ -1695,6 +1735,10 @@ class LanguagesYo extends Languages {
       'xh',
       'Èdè Xhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kangiri',
+    ),
     'xog': Language(
       'xog',
       'Ṣógà',
@@ -1721,8 +1765,12 @@ class LanguagesYo extends Languages {
     ),
     'yue': Language(
       'yue',
-      'Èdè Cantonese',
-      menu: 'Èdè Cantonese',
+      'Èdè Kantonese',
+      menu: 'Èdè Kantonese',
+    ),
+    'za': Language(
+      'za',
+      'Ṣúwáànù',
     ),
     'zgh': Language(
       'zgh',
@@ -1781,6 +1829,14 @@ class ScriptsYo extends Scripts {
       'Armn',
       'Àmẹ́níà',
     ),
+    'Bamu': Script(
+      'Bamu',
+      'Bamumu',
+    ),
+    'Batk': Script(
+      'Batk',
+      'Bataki',
+    ),
     'Beng': Script(
       'Beng',
       'Báńgílà',
@@ -1821,9 +1877,13 @@ class ScriptsYo extends Scripts {
       'Geor',
       'Jọ́jíànù',
     ),
+    'Gong': Script(
+      'Gong',
+      'Gunjala Gondi',
+    ),
     'Grek': Script(
       'Grek',
-      'Jọ́jíà',
+      'Gíríkì',
     ),
     'Gujr': Script(
       'Gujr',
@@ -1852,8 +1912,8 @@ class ScriptsYo extends Scripts {
     ),
     'Hant': Script(
       'Hant',
-      'Hans àtọwọ́dọ́wọ́',
-      standAlone: 'Hans àtọwọ́dọ́wọ́',
+      'Àbáláyé',
+      standAlone: 'Hans àbáláyé',
     ),
     'Hebr': Script(
       'Hebr',
@@ -1863,13 +1923,25 @@ class ScriptsYo extends Scripts {
       'Hira',
       'Hiragánà',
     ),
+    'Hmnp': Script(
+      'Hmnp',
+      'Nyiakengi Puase Himongi',
+    ),
     'Hrkt': Script(
       'Hrkt',
       'ìlànà àfọwọ́kọ ará Jàpánù',
     ),
+    'Java': Script(
+      'Java',
+      'Èdè Jafaniisi',
+    ),
     'Jpan': Script(
       'Jpan',
       'èdè jàpáànù',
+    ),
+    'Kali': Script(
+      'Kali',
+      'Èdè Kaya Li',
     ),
     'Kana': Script(
       'Kana',
@@ -1887,6 +1959,10 @@ class ScriptsYo extends Scripts {
       'Kore',
       'Kóríà',
     ),
+    'Lana': Script(
+      'Lana',
+      'Èdè Lana',
+    ),
     'Laoo': Script(
       'Laoo',
       'Láò',
@@ -1895,13 +1971,29 @@ class ScriptsYo extends Scripts {
       'Latn',
       'Èdè Látìn',
     ),
+    'Lepc': Script(
+      'Lepc',
+      'Èdè Lepika',
+    ),
+    'Limb': Script(
+      'Limb',
+      'Èdè Limbu',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'Furasa',
+    ),
+    'Mand': Script(
+      'Mand',
+      'Èdè Mandaiani',
+    ),
     'Mlym': Script(
       'Mlym',
       'Málàyálámù',
     ),
     'Mong': Script(
       'Mong',
-      'Mòngólíà',
+      'Èdè Mòngólíà',
     ),
     'Mtei': Script(
       'Mtei',
@@ -1910,6 +2002,10 @@ class ScriptsYo extends Scripts {
     'Mymr': Script(
       'Mymr',
       'Myánmarà',
+    ),
+    'Newa': Script(
+      'Newa',
+      'Èdè Newa',
     ),
     'Nkoo': Script(
       'Nkoo',
@@ -1923,9 +2019,21 @@ class ScriptsYo extends Scripts {
       'Orya',
       'Òdíà',
     ),
+    'Osge': Script(
+      'Osge',
+      'Èdè Osage',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Fonẹtiiki Polaadi',
+    ),
     'Rohg': Script(
       'Rohg',
       'Èdè Hanifi',
+    ),
+    'Saur': Script(
+      'Saur',
+      'Èdè Saurasitira',
     ),
     'Sinh': Script(
       'Sinh',
@@ -1966,6 +2074,10 @@ class ScriptsYo extends Scripts {
     'Yiii': Script(
       'Yiii',
       'Èdè Yi',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'Tí a jogún',
     ),
     'Zmth': Script(
       'Zmth',
@@ -2227,145 +2339,145 @@ class UnitsYo implements Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => UnitPrefix(
-        long: UnitPrefixPattern('d{0}'),
+        long: UnitPrefixPattern('desi{0}'),
         short: UnitPrefixPattern('d{0}'),
         narrow: UnitPrefixPattern('d{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus2 => UnitPrefix(
-        long: UnitPrefixPattern('c{0}'),
+        long: UnitPrefixPattern('senti{0}'),
         short: UnitPrefixPattern('c{0}'),
         narrow: UnitPrefixPattern('c{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus3 => UnitPrefix(
-        long: UnitPrefixPattern('m{0}'),
+        long: UnitPrefixPattern('mili{0}'),
         short: UnitPrefixPattern('m{0}'),
         narrow: UnitPrefixPattern('m{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus6 => UnitPrefix(
-        long: UnitPrefixPattern('μ{0}'),
+        long: UnitPrefixPattern('maikiro{0}'),
         short: UnitPrefixPattern('μ{0}'),
         narrow: UnitPrefixPattern('μ{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus9 => UnitPrefix(
-        long: UnitPrefixPattern('n{0}'),
+        long: UnitPrefixPattern('nano{0}'),
         short: UnitPrefixPattern('n{0}'),
         narrow: UnitPrefixPattern('n{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
-        long: UnitPrefixPattern('p{0}'),
+        long: UnitPrefixPattern('piko{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus15 => UnitPrefix(
-        long: UnitPrefixPattern('f{0}'),
+        long: UnitPrefixPattern('femuto{0}'),
         short: UnitPrefixPattern('f{0}'),
         narrow: UnitPrefixPattern('f{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus18 => UnitPrefix(
-        long: UnitPrefixPattern('a{0}'),
+        long: UnitPrefixPattern('ato{0}'),
         short: UnitPrefixPattern('a{0}'),
         narrow: UnitPrefixPattern('a{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus21 => UnitPrefix(
-        long: UnitPrefixPattern('z{0}'),
+        long: UnitPrefixPattern('seputo{0}'),
         short: UnitPrefixPattern('z{0}'),
         narrow: UnitPrefixPattern('z{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus24 => UnitPrefix(
-        long: UnitPrefixPattern('y{0}'),
+        long: UnitPrefixPattern('yokito{0}'),
         short: UnitPrefixPattern('y{0}'),
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus27 => UnitPrefix(
-        long: UnitPrefixPattern('r{0}'),
+        long: UnitPrefixPattern('ronto{0}'),
         short: UnitPrefixPattern('r{0}'),
         narrow: UnitPrefixPattern('r{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus30 => UnitPrefix(
-        long: UnitPrefixPattern('q{0}'),
+        long: UnitPrefixPattern('kuekito{0}'),
         short: UnitPrefixPattern('q{0}'),
         narrow: UnitPrefixPattern('q{0}'),
       );
   @override
   UnitPrefix get pattern10p1 => UnitPrefix(
-        long: UnitPrefixPattern('da{0}'),
+        long: UnitPrefixPattern('deka{0}'),
         short: UnitPrefixPattern('da{0}'),
         narrow: UnitPrefixPattern('da{0}'),
       );
   @override
   UnitPrefix get pattern10p2 => UnitPrefix(
-        long: UnitPrefixPattern('h{0}'),
+        long: UnitPrefixPattern('hekito{0}'),
         short: UnitPrefixPattern('h{0}'),
         narrow: UnitPrefixPattern('h{0}'),
       );
   @override
   UnitPrefix get pattern10p3 => UnitPrefix(
-        long: UnitPrefixPattern('k{0}'),
+        long: UnitPrefixPattern('kilo{0}'),
         short: UnitPrefixPattern('k{0}'),
         narrow: UnitPrefixPattern('k{0}'),
       );
   @override
   UnitPrefix get pattern10p6 => UnitPrefix(
-        long: UnitPrefixPattern('M{0}'),
+        long: UnitPrefixPattern('mega{0}'),
         short: UnitPrefixPattern('M{0}'),
         narrow: UnitPrefixPattern('M{0}'),
       );
   @override
   UnitPrefix get pattern10p9 => UnitPrefix(
-        long: UnitPrefixPattern('G{0}'),
+        long: UnitPrefixPattern('giga{0}'),
         short: UnitPrefixPattern('G{0}'),
         narrow: UnitPrefixPattern('G{0}'),
       );
   @override
   UnitPrefix get pattern10p12 => UnitPrefix(
-        long: UnitPrefixPattern('T{0}'),
+        long: UnitPrefixPattern('tera{0}'),
         short: UnitPrefixPattern('T{0}'),
         narrow: UnitPrefixPattern('T{0}'),
       );
   @override
   UnitPrefix get pattern10p15 => UnitPrefix(
-        long: UnitPrefixPattern('P{0}'),
+        long: UnitPrefixPattern('peta{0}'),
         short: UnitPrefixPattern('P{0}'),
         narrow: UnitPrefixPattern('P{0}'),
       );
   @override
   UnitPrefix get pattern10p18 => UnitPrefix(
-        long: UnitPrefixPattern('E{0}'),
+        long: UnitPrefixPattern('ekisa{0}'),
         short: UnitPrefixPattern('E{0}'),
         narrow: UnitPrefixPattern('E{0}'),
       );
   @override
   UnitPrefix get pattern10p21 => UnitPrefix(
-        long: UnitPrefixPattern('Z{0}'),
+        long: UnitPrefixPattern('seta{0}'),
         short: UnitPrefixPattern('Z{0}'),
         narrow: UnitPrefixPattern('Z{0}'),
       );
   @override
   UnitPrefix get pattern10p24 => UnitPrefix(
-        long: UnitPrefixPattern('Y{0}'),
+        long: UnitPrefixPattern('yota{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
       );
   @override
   UnitPrefix get pattern10p27 => UnitPrefix(
-        long: UnitPrefixPattern('R{0}'),
+        long: UnitPrefixPattern('ronna{0}'),
         short: UnitPrefixPattern('R{0}'),
         narrow: UnitPrefixPattern('R{0}'),
       );
   @override
   UnitPrefix get pattern10p30 => UnitPrefix(
-        long: UnitPrefixPattern('Q{0}'),
+        long: UnitPrefixPattern('kueta{0}'),
         short: UnitPrefixPattern('Q{0}'),
         narrow: UnitPrefixPattern('Q{0}'),
       );
@@ -2609,19 +2721,19 @@ class UnitsYo implements Units {
   Unit get areaHectare => Unit(
         long: UnitCountPattern(
           _locale,
-          'hectare',
+          'hekita',
           one: '{0} hectare',
           other: '{0} ha',
         ),
         short: UnitCountPattern(
           _locale,
-          'hectare',
+          'hekita',
           one: '{0} ha',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'hectare',
+          'hekita',
           one: '{0}ha',
           other: '{0}ha',
         ),
@@ -2697,19 +2809,19 @@ class UnitsYo implements Units {
   Unit get areaAcre => Unit(
         long: UnitCountPattern(
           _locale,
-          'acre',
+          'sare',
           one: '{0} acre',
           other: '{0} ac',
         ),
         short: UnitCountPattern(
           _locale,
-          'acre',
+          'sare',
           one: '{0} ac',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'acre',
+          'sare',
           one: '{0}ac',
           other: '{0}ac',
         ),
@@ -3071,7 +3183,7 @@ class UnitsYo implements Units {
   Unit get consumptionMilePerGallonImperial => Unit(
         long: UnitCountPattern(
           _locale,
-          'mpg Imp.',
+          'maili ninu ami galọọnu kan',
           one: '{0} mile per Imp. gallon',
           other: '{0} mpg Imp.',
         ),
@@ -3381,7 +3493,7 @@ class UnitsYo implements Units {
           _locale,
           'ọ̀dún',
           one: '{0} year',
-          other: '{0} ọd',
+          other: '{0} ọ̀dún',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4281,19 +4393,19 @@ class UnitsYo implements Units {
   Unit get lengthMeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'meter',
+          'mita',
           one: '{0} meter',
           other: '{0} m',
         ),
         short: UnitCountPattern(
           _locale,
-          'meter',
+          'mita',
           one: '{0} m',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'meter',
+          'mita',
           one: '{0}m',
           other: '{0} m',
         ),
@@ -4749,7 +4861,7 @@ class UnitsYo implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'sídiì',
+          'kandẹ́là',
           one: '{0} cd',
           other: '{0} sídiì',
         ),
@@ -4809,7 +4921,7 @@ class UnitsYo implements Units {
   Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
-          't',
+          'mẹtiriki tọọnu',
           one: '{0} metric ton',
           other: '{0} t',
         ),
@@ -5271,7 +5383,7 @@ class UnitsYo implements Units {
   Unit get pressureMillimeterOfhg => Unit(
         long: UnitCountPattern(
           _locale,
-          'mm Hg',
+          'milimita ti makuiri',
           one: '{0} millimeter of mercury',
           other: '{0} mm Hg',
         ),
@@ -5931,19 +6043,19 @@ class UnitsYo implements Units {
   Unit get volumeLiter => Unit(
         long: UnitCountPattern(
           _locale,
-          'liter',
+          'lita',
           one: '{0} liter',
           other: '{0} l',
         ),
         short: UnitCountPattern(
           _locale,
-          'liter',
+          'lita',
           one: '{0} L',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'liter',
+          'lita',
           one: '{0}L',
           other: '{0} l',
         ),
@@ -6195,19 +6307,19 @@ class UnitsYo implements Units {
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
           _locale,
-          'cup',
+          'àwọn ife',
           one: '{0} cup',
           other: '{0} c',
         ),
         short: UnitCountPattern(
           _locale,
-          'cup',
+          'ife',
           one: '{0} c',
           other: '{0} c',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'cup',
+          'ife',
           one: '{0}c',
           other: '{0}c',
         ),
@@ -6327,9 +6439,9 @@ class UnitsYo implements Units {
   Unit get volumeDessertSpoon => Unit(
         long: UnitCountPattern(
           _locale,
-          'àmì ṣíbí oúnjẹ́ kékeré',
+          'àwọn ṣíbí oúnjẹ́ kékeré',
           one: '{0} dessert spoon',
-          other: '{0} àmì ṣíbí oúnjẹ́ kékeré',
+          other: 'àwọn {0} àmì ṣíbí oúnjẹ́ kékeré',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6498,6 +6610,72 @@ class UnitsYo implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ìmọ́lẹ̀',
+          one: '{0} light',
+          other: '{0} ìmọ́lẹ̀',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ìmọ́lẹ̀',
+          one: '{0} light',
+          other: '{0} ìmọ́lẹ̀',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ìmọ́lẹ̀',
+          one: '{0}light',
+          other: '{0}ìmọ́lẹ̀',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ẹ̀yà nínú ìdá blíọ̀nù',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'àwọn alẹ́',
+          one: '{0} night',
+          other: 'àwọn alẹ́ {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'àwọn alẹ́',
+          one: '{0} night',
+          other: 'àwọn alẹ́ {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'àwọn alẹ́',
+          one: '{0}night',
+          other: 'àwọn alẹ́{0}',
+        ),
+      );
 }
 
 class DateFieldsYo implements DateFields {
@@ -6518,12 +6696,12 @@ class DateFieldsYo implements DateFields {
           narrow: 'Ọdún',
         ),
         previous: MultiLength(
-          long: 'Èṣín',
+          long: 'Èṣí',
           short: 'Ọdún tó kọjá',
           narrow: 'Ọdún tó kọjá',
         ),
         now: MultiLength(
-          long: 'Ọdúnǹí',
+          long: 'Ọdún yìí',
           short: 'Ọdún yìí',
           narrow: 'Ọdún yìí',
         ),
@@ -6535,29 +6713,29 @@ class DateFieldsYo implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            other: '-{0} y',
+            other: '{0} Ọdún sẹ́yìn',
           ),
           short: RelativeTime(
             _locale,
-            other: '-{0} y',
+            other: 'Ọdún {0} sẹ́yìn',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '-{0} y',
+            other: 'Ọdún {0} sẹ́yìn',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            other: '+{0} y',
+            other: 'ní {0} Ọdún',
           ),
           short: RelativeTime(
             _locale,
-            other: '+{0} y',
+            other: 'ní {0} Ọdún',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '+{0} y',
+            other: 'ní {0} Ọdún',
           ),
         ),
       );
@@ -6780,8 +6958,8 @@ class DateFieldsYo implements DateFields {
   @override
   MultiLength get dayOfYear => MultiLength(
         long: 'Ọjọ́ inú ọdún',
-        short: 'Ọjọ́ inú ọd.',
-        narrow: 'Ọjọ́ inú ọd.',
+        short: 'Ọjọ́ inú ọdún.',
+        narrow: 'Ọjọ́ inú ọdún.',
       );
 
   @override
@@ -6848,14 +7026,14 @@ class DateFieldsYo implements DateFields {
   @override
   DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
         previous: MultiLength(
-          long: 'last Monday',
-          short: 'last Monday',
-          narrow: 'last Monday',
+          long: 'ọjọ́ Ajé tó kọjá',
+          short: 'ọjọ́ Ajé tó kọjá',
+          narrow: 'ọjọ́ Ajé tó kọjá',
         ),
         now: MultiLength(
-          long: 'this Monday',
-          short: 'this Monday',
-          narrow: 'this Monday',
+          long: 'ọjọ́ Ajé yìí',
+          short: 'ọjọ́ Ajé yìí',
+          narrow: 'ọjọ́ Ajé yìí',
         ),
         next: MultiLength(
           long: 'next Monday',
@@ -7142,9 +7320,9 @@ class DateFieldsYo implements DateFields {
           narrow: 'Wákàtí',
         ),
         now: MultiLength(
-          long: 'this hour',
-          short: 'this hour',
-          narrow: 'this hour',
+          long: 'wákàtí yìí',
+          short: 'wákàtí yìí',
+          narrow: 'wákàtí yìí',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -7184,9 +7362,9 @@ class DateFieldsYo implements DateFields {
           narrow: 'Ìsẹ́jú',
         ),
         now: MultiLength(
-          long: 'this minute',
-          short: 'this minute',
-          narrow: 'this minute',
+          long: 'ìṣẹ́jú yìí',
+          short: 'ìṣẹ́jú yìí',
+          narrow: 'ìṣẹ́jú yìí',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -7226,9 +7404,9 @@ class DateFieldsYo implements DateFields {
           narrow: 'Ìsẹ́jú Ààyá',
         ),
         now: MultiLength(
-          long: 'now',
-          short: 'now',
-          narrow: 'now',
+          long: 'nísinsìyí',
+          short: 'nísinsìyí',
+          narrow: 'nísinsìyí',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -7263,8 +7441,8 @@ class DateFieldsYo implements DateFields {
   @override
   MultiLength get zone => MultiLength(
         long: 'Agbègbè àkókò',
-        short: 'Agbègbè àkókò',
-        narrow: 'Agbègbè àkókò',
+        short: 'Agbègbè',
+        narrow: 'Agbègbè',
       );
 }
 
@@ -7519,7 +7697,7 @@ class TerritoriesYo implements Territories {
     ),
     'AU': Territory(
       'AU',
-      'Ástràlìá',
+      'Austrálíà',
     ),
     'AW': Territory(
       'AW',
@@ -7527,7 +7705,7 @@ class TerritoriesYo implements Territories {
     ),
     'AX': Territory(
       'AX',
-      'Àwọn Erékùsù ti Åland',
+      'Àwọn Erékùsù ti Aland',
     ),
     'AZ': Territory(
       'AZ',
@@ -7703,7 +7881,7 @@ class TerritoriesYo implements Territories {
     'CZ': Territory(
       'CZ',
       'Ṣẹ́ẹ́kì',
-      variant: 'Ṣẹ́ẹ́kì',
+      variant: 'Ṣẹ́ẹ́kì Olómìnira',
     ),
     'DE': Territory(
       'DE',
@@ -7759,7 +7937,7 @@ class TerritoriesYo implements Territories {
     ),
     'ES': Territory(
       'ES',
-      'Sipani',
+      'Sípéìnì',
     ),
     'ET': Territory(
       'ET',
@@ -7779,7 +7957,7 @@ class TerritoriesYo implements Territories {
     ),
     'FJ': Territory(
       'FJ',
-      'Fiji',
+      'Fíjì',
     ),
     'FK': Territory(
       'FK',
@@ -7853,7 +8031,7 @@ class TerritoriesYo implements Territories {
     ),
     'GR': Territory(
       'GR',
-      'Geriisi',
+      'Gíríìsì',
     ),
     'GS': Territory(
       'GS',
@@ -7861,7 +8039,7 @@ class TerritoriesYo implements Territories {
     ),
     'GT': Territory(
       'GT',
-      'Guatemala',
+      'Guatemálà',
     ),
     'GU': Territory(
       'GU',
@@ -7906,7 +8084,7 @@ class TerritoriesYo implements Territories {
     ),
     'ID': Territory(
       'ID',
-      'Indonesia',
+      'Indonéṣíà',
     ),
     'IE': Territory(
       'IE',
@@ -7918,11 +8096,11 @@ class TerritoriesYo implements Territories {
     ),
     'IM': Territory(
       'IM',
-      'Isle of Man',
+      'Erékùṣù ilẹ̀ Man',
     ),
     'IN': Territory(
       'IN',
-      'India',
+      'Íńdíà',
     ),
     'IO': Territory(
       'IO',
@@ -7946,7 +8124,7 @@ class TerritoriesYo implements Territories {
     ),
     'JE': Territory(
       'JE',
-      'Jersey',
+      'Jẹsì',
     ),
     'JM': Territory(
       'JM',
@@ -8062,7 +8240,7 @@ class TerritoriesYo implements Territories {
     ),
     'ME': Territory(
       'ME',
-      'Montenegro',
+      'Montenégrò',
     ),
     'MF': Territory(
       'MF',
@@ -8155,7 +8333,7 @@ class TerritoriesYo implements Territories {
     ),
     'NF': Territory(
       'NF',
-      'Etikun Nọ́úfókì',
+      'Erékùsù Nọ́úfókì',
     ),
     'NG': Territory(
       'NG',
@@ -8196,11 +8374,11 @@ class TerritoriesYo implements Territories {
     ),
     'PA': Territory(
       'PA',
-      'Panama',
+      'Paramá',
     ),
     'PE': Territory(
       'PE',
-      'Peru',
+      'Pèérù',
     ),
     'PF': Territory(
       'PF',
@@ -8398,12 +8576,12 @@ class TerritoriesYo implements Territories {
     ),
     'TL': Territory(
       'TL',
-      'ÌlàOòrùn Tímọ̀',
+      'Tímọ̀ Lẹsiti',
       variant: 'Ìlà Òòrùn Tímọ̀',
     ),
     'TM': Territory(
       'TM',
-      'Tọọkimenisita',
+      'Tọ́kìmẹ́nísítànì',
     ),
     'TN': Territory(
       'TN',
@@ -8416,7 +8594,7 @@ class TerritoriesYo implements Territories {
     'TR': Territory(
       'TR',
       'Tọọki',
-      variant: 'Tọọki',
+      variant: 'Tọ́kì',
     ),
     'TT': Territory(
       'TT',
@@ -8457,7 +8635,7 @@ class TerritoriesYo implements Territories {
     ),
     'UY': Territory(
       'UY',
-      'Nruguayi',
+      'Úrúgúwè',
     ),
     'UZ': Territory(
       'UZ',
@@ -8505,7 +8683,7 @@ class TerritoriesYo implements Territories {
     ),
     'XB': Territory(
       'XB',
-      'ibi irọ́',
+      'Agbègbè irọ́',
     ),
     'XK': Territory(
       'XK',
@@ -8870,7 +9048,7 @@ class TimeZonesYo extends TimeZones {
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
-        daylight: 'Irish Standard Time',
+        daylight: 'Àkókò Àfẹnukò Airiisi',
       ),
     ),
     'Europe/Kiev': TimeZoneNames(
@@ -8878,7 +9056,7 @@ class TimeZonesYo extends TimeZones {
     ),
     'Europe/London': TimeZoneNames(
       long: TimeZoneName(
-        daylight: 'British Summer Time',
+        daylight: 'Àkókò Sọmà Gẹẹsi',
       ),
     ),
     'Africa/Asmera': TimeZoneNames(
@@ -8900,7 +9078,7 @@ class TimeZonesYo extends TimeZones {
       exemplarCity: 'Yangon',
     ),
     'Asia/Saigon': TimeZoneNames(
-      exemplarCity: 'Ho Chi Minh',
+      exemplarCity: 'Ilu Ho Chi Minh',
     ),
     'Indian/Reunion': TimeZoneNames(
       exemplarCity: 'Réunion',
@@ -8932,7 +9110,7 @@ class TimeZonesYo extends TimeZones {
     'Afghanistan': MetaZone(
       code: 'Afghanistan',
       long: TimeZoneName(
-        standard: 'Afghanistan Time',
+        standard: 'Àkókò Afghanistan',
       ),
     ),
     'Africa_Central': MetaZone(
@@ -8966,7 +9144,7 @@ class TimeZonesYo extends TimeZones {
       long: TimeZoneName(
         generic: 'Àkókò Alásíkà',
         standard: 'Àkókò Àfẹnukò Alásíkà',
-        daylight: 'Àkókò Ìyálẹ̀ta Alásíkà',
+        daylight: 'Àkókò Ojúmọ́ Alásíkà',
       ),
     ),
     'Amazon': MetaZone(
@@ -9012,17 +9190,17 @@ class TimeZonesYo extends TimeZones {
     'Apia': MetaZone(
       code: 'Apia',
       long: TimeZoneName(
-        generic: 'Apia Time',
-        standard: 'Apia Standard Time',
-        daylight: 'Apia Daylight Time',
+        generic: 'Àkókò Apia',
+        standard: 'Àkókò Àfẹnukò Apia',
+        daylight: 'Àkókò Ojúmọmọ Apia',
       ),
     ),
     'Arabian': MetaZone(
       code: 'Arabian',
       long: TimeZoneName(
-        generic: 'Arabian Time',
-        standard: 'Arabian Standard Time',
-        daylight: 'Arabian Daylight Time',
+        generic: 'Àkókò Arabia',
+        standard: 'Àkókò Àfẹnukò Arabia',
+        daylight: 'Àkókò Ojúmọmọ Arabia',
       ),
     ),
     'Argentina': MetaZone(
@@ -9044,9 +9222,9 @@ class TimeZonesYo extends TimeZones {
     'Armenia': MetaZone(
       code: 'Armenia',
       long: TimeZoneName(
-        generic: 'Armenia Time',
-        standard: 'Armenia Standard Time',
-        daylight: 'Armenia Summer Time',
+        generic: 'Àkókò Armenia',
+        standard: 'Àkókò Àfẹnukò Armenia',
+        daylight: 'Àkókò Sọmà Arabia',
       ),
     ),
     'Atlantic': MetaZone(
@@ -9060,41 +9238,41 @@ class TimeZonesYo extends TimeZones {
     'Australia_Central': MetaZone(
       code: 'Australia_Central',
       long: TimeZoneName(
-        generic: 'Central Australia Time',
-        standard: 'Australian Central Standard Time',
-        daylight: 'Australian Central Daylight Time',
+        generic: 'Àkókò Ààrin Gùngùn Australia',
+        standard: 'Àkókò Àfẹnukò Ààrin Gùngùn Australia',
+        daylight: 'Àkókò Ojúmọmọ Ààrin Gùngùn Australia',
       ),
     ),
     'Australia_CentralWestern': MetaZone(
       code: 'Australia_CentralWestern',
       long: TimeZoneName(
-        generic: 'Australian Central Western Time',
-        standard: 'Australian Central Western Standard Time',
-        daylight: 'Australian Central Western Daylight Time',
+        generic: 'Àkókò Ààrin Gùngùn Ìwọ̀-Oòrùn Australia',
+        standard: 'Àkókò Àfẹnukò Ààrin Gùngùn Ìwọ̀-Oòrùn Australia',
+        daylight: 'Àkókò Ojúmọmọ Ààrin Gùngùn Ìwọ̀-Oòrùn Australia',
       ),
     ),
     'Australia_Eastern': MetaZone(
       code: 'Australia_Eastern',
       long: TimeZoneName(
-        generic: 'Eastern Australia Time',
-        standard: 'Australian Eastern Standard Time',
-        daylight: 'Australian Eastern Daylight Time',
+        generic: 'Àkókò Ìlà-Oòrùn Australia',
+        standard: 'Àkókò Àfẹnukò Ìlà-Oòrùn Australia',
+        daylight: 'Àkókò Ojúmọmọ Ìlà-Oòrùn Australia',
       ),
     ),
     'Australia_Western': MetaZone(
       code: 'Australia_Western',
       long: TimeZoneName(
-        generic: 'Western Australia Time',
-        standard: 'Australian Western Standard Time',
-        daylight: 'Australian Western Daylight Time',
+        generic: 'Àkókò Ìwọ̀-Oòrùn Australia',
+        standard: 'Àkókò Àfẹnukò Ìwọ̀-Oòrùn Australia',
+        daylight: 'Àkókò Ojúmọmọ Ìwọ̀-Oòrùn Australia',
       ),
     ),
     'Azerbaijan': MetaZone(
       code: 'Azerbaijan',
       long: TimeZoneName(
-        generic: 'Azerbaijan Time',
-        standard: 'Azerbaijan Standard Time',
-        daylight: 'Azerbaijan Summer Time',
+        generic: 'Àkókò Azerbaijan',
+        standard: 'Àkókò Àfẹnukò Azerbaijan',
+        daylight: 'Àkókò Sọmà Azerbaijan',
       ),
     ),
     'Azores': MetaZone(
@@ -9108,15 +9286,15 @@ class TimeZonesYo extends TimeZones {
     'Bangladesh': MetaZone(
       code: 'Bangladesh',
       long: TimeZoneName(
-        generic: 'Bangladesh Time',
-        standard: 'Bangladesh Standard Time',
-        daylight: 'Bangladesh Summer Time',
+        generic: 'Àkókò Bangladesh',
+        standard: 'Àkókò Àfẹnukò Bangladesh',
+        daylight: 'Àkókò Sọmà Bangladesh',
       ),
     ),
     'Bhutan': MetaZone(
       code: 'Bhutan',
       long: TimeZoneName(
-        standard: 'Bhutan Time',
+        standard: 'Àkókò Bhutan',
       ),
     ),
     'Bolivia': MetaZone(
@@ -9144,21 +9322,21 @@ class TimeZonesYo extends TimeZones {
       long: TimeZoneName(
         generic: 'Àkókò Képú Fáàdì',
         standard: 'Àkókò Àfẹnukò Képú Fáàdì',
-        daylight: 'Àkókò Sọ́mà Képú Fáàdì',
+        daylight: 'Àkókò Ẹ̀rún Képú Fáàdì',
       ),
     ),
     'Chamorro': MetaZone(
       code: 'Chamorro',
       long: TimeZoneName(
-        standard: 'Chamorro Standard Time',
+        standard: 'Àkókò Àfẹnukò Chamorro',
       ),
     ),
     'Chatham': MetaZone(
       code: 'Chatham',
       long: TimeZoneName(
-        generic: 'Chatham Time',
-        standard: 'Chatham Standard Time',
-        daylight: 'Chatham Daylight Time',
+        generic: 'Àkókò Chatam',
+        standard: 'Àkókò Àfẹnukò Chatam',
+        daylight: 'Àkókò Ojúmọmọ Chatam',
       ),
     ),
     'Chile': MetaZone(
@@ -9177,24 +9355,16 @@ class TimeZonesYo extends TimeZones {
         daylight: 'Àkókò Ojúmọmọ Ṣáínà',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choibalsan Time',
-        standard: 'Choibalsan Standard Time',
-        daylight: 'Choibalsan Summer Time',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
-        standard: 'Christmas Island Time',
+        standard: 'Àkókò Erékùsù Christmas',
       ),
     ),
     'Cocos': MetaZone(
       code: 'Cocos',
       long: TimeZoneName(
-        standard: 'Cocos Islands Time',
+        standard: 'Àkókò Àwọn Erékùsù Cocos',
       ),
     ),
     'Colombia': MetaZone(
@@ -9208,9 +9378,9 @@ class TimeZonesYo extends TimeZones {
     'Cook': MetaZone(
       code: 'Cook',
       long: TimeZoneName(
-        generic: 'Cook Islands Time',
-        standard: 'Cook Islands Standard Time',
-        daylight: 'Cook Islands Half Summer Time',
+        generic: 'Àkókò Àwọn Erekusu Kuuku',
+        standard: 'Àkókò Àfẹnukò Àwọn Erekusu Kuuku',
+        daylight: 'Àkókò Ilaji Sọma Àwọn Erekusu Kuuku',
       ),
     ),
     'Cuba': MetaZone(
@@ -9224,13 +9394,13 @@ class TimeZonesYo extends TimeZones {
     'Davis': MetaZone(
       code: 'Davis',
       long: TimeZoneName(
-        standard: 'Davis Time',
+        standard: 'Àkókò Davis',
       ),
     ),
     'DumontDUrville': MetaZone(
       code: 'DumontDUrville',
       long: TimeZoneName(
-        standard: 'Dumont-d’Urville Time',
+        standard: 'Àkókò Dumont-d’Urville',
       ),
     ),
     'East_Timor': MetaZone(
@@ -9294,9 +9464,9 @@ class TimeZonesYo extends TimeZones {
     'Fiji': MetaZone(
       code: 'Fiji',
       long: TimeZoneName(
-        generic: 'Fiji Time',
-        standard: 'Fiji Standard Time',
-        daylight: 'Fiji Summer Time',
+        generic: 'Àkókò Fiji',
+        standard: 'Àkókò Àfẹnukò Fiji',
+        daylight: 'Àkókò Sọma Fiji',
       ),
     ),
     'French_Guiana': MetaZone(
@@ -9320,21 +9490,21 @@ class TimeZonesYo extends TimeZones {
     'Gambier': MetaZone(
       code: 'Gambier',
       long: TimeZoneName(
-        standard: 'Gambier Time',
+        standard: 'Àkókò Gambia',
       ),
     ),
     'Georgia': MetaZone(
       code: 'Georgia',
       long: TimeZoneName(
-        generic: 'Georgia Time',
-        standard: 'Georgia Standard Time',
-        daylight: 'Georgia Summer Time',
+        generic: 'Àkókò Georgia',
+        standard: 'Àkókò Àfẹnukò Georgia',
+        daylight: 'Àkókò Sọmà Georgia',
       ),
     ),
     'Gilbert_Islands': MetaZone(
       code: 'Gilbert_Islands',
       long: TimeZoneName(
-        standard: 'Gilbert Islands Time',
+        standard: 'Àkókò Àwọn Erekusu Gilibati',
       ),
     ),
     'GMT': MetaZone(
@@ -9362,7 +9532,7 @@ class TimeZonesYo extends TimeZones {
     'Gulf': MetaZone(
       code: 'Gulf',
       long: TimeZoneName(
-        standard: 'Gulf Standard Time',
+        standard: 'Àkókò Àfẹnukò Gulf',
       ),
     ),
     'Guyana': MetaZone(
@@ -9382,23 +9552,23 @@ class TimeZonesYo extends TimeZones {
     'Hong_Kong': MetaZone(
       code: 'Hong_Kong',
       long: TimeZoneName(
-        generic: 'Hong Kong Time',
-        standard: 'Hong Kong Standard Time',
-        daylight: 'Hong Kong Summer Time',
+        generic: 'Àkókò Hong Kong',
+        standard: 'Àkókò Ìfẹnukòsí Hong Kong',
+        daylight: 'Àkókò Sọmà Hong Kong',
       ),
     ),
     'Hovd': MetaZone(
       code: 'Hovd',
       long: TimeZoneName(
-        generic: 'Hovd Time',
-        standard: 'Hovd Standard Time',
-        daylight: 'Hovd Summer Time',
+        generic: 'Àkókò Hofidi',
+        standard: 'Àkókò Ìfẹnukòsí Hofidi',
+        daylight: 'Àkókò Sọmà Hofidi',
       ),
     ),
     'India': MetaZone(
       code: 'India',
       long: TimeZoneName(
-        standard: 'India Standard Time',
+        standard: 'Àkókò Àfẹnukò India',
       ),
     ),
     'Indian_Ocean': MetaZone(
@@ -9422,7 +9592,7 @@ class TimeZonesYo extends TimeZones {
     'Indonesia_Eastern': MetaZone(
       code: 'Indonesia_Eastern',
       long: TimeZoneName(
-        standard: 'Eastern Indonesia Time',
+        standard: 'Àkókò Ìlà oorùn Indonesia',
       ),
     ),
     'Indonesia_Western': MetaZone(
@@ -9434,9 +9604,9 @@ class TimeZonesYo extends TimeZones {
     'Iran': MetaZone(
       code: 'Iran',
       long: TimeZoneName(
-        generic: 'Iran Time',
-        standard: 'Iran Standard Time',
-        daylight: 'Iran Daylight Time',
+        generic: 'Àkókò Irani',
+        standard: 'Àkókò Àfẹnukò Irani',
+        daylight: 'Àkókò Ojúmọmọ Irani',
       ),
     ),
     'Irkutsk': MetaZone(
@@ -9450,103 +9620,109 @@ class TimeZonesYo extends TimeZones {
     'Israel': MetaZone(
       code: 'Israel',
       long: TimeZoneName(
-        generic: 'Israel Time',
-        standard: 'Israel Standard Time',
-        daylight: 'Israel Daylight Time',
+        generic: 'Àkókò Israel',
+        standard: 'Àkókò Àfẹnukò Israel',
+        daylight: 'Àkókò Ojúmọmọ Israel',
       ),
     ),
     'Japan': MetaZone(
       code: 'Japan',
       long: TimeZoneName(
-        generic: 'Japan Time',
-        standard: 'Japan Standard Time',
-        daylight: 'Japan Daylight Time',
+        generic: 'Àkókò Japan',
+        standard: 'Àkókò Ìfẹnukòsí Japan',
+        daylight: 'Àkókò Sọmà Japan',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Aago Kasasitáànì',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
       code: 'Kazakhstan_Eastern',
       long: TimeZoneName(
-        standard: 'East Kazakhstan Time',
+        standard: 'Àkókò Ìlà-Oòrùn Kasasitáànì',
       ),
     ),
     'Kazakhstan_Western': MetaZone(
       code: 'Kazakhstan_Western',
       long: TimeZoneName(
-        standard: 'West Kazakhstan Time',
+        standard: 'Àkókò Ìwọ̀-Oòrùn Kasasitáànì',
       ),
     ),
     'Korea': MetaZone(
       code: 'Korea',
       long: TimeZoneName(
-        generic: 'Korean Time',
-        standard: 'Korean Standard Time',
-        daylight: 'Korean Daylight Time',
+        generic: 'Àkókò Koria',
+        standard: 'Àkókò Ìfẹnukòsí Koria',
+        daylight: 'Àkókò Ojúmọmọ Koria',
       ),
     ),
     'Kosrae': MetaZone(
       code: 'Kosrae',
       long: TimeZoneName(
-        standard: 'Kosrae Time',
+        standard: 'Àkókò Kosirai',
       ),
     ),
     'Krasnoyarsk': MetaZone(
       code: 'Krasnoyarsk',
       long: TimeZoneName(
-        generic: 'Krasnoyarsk Time',
-        standard: 'Krasnoyarsk Standard Time',
-        daylight: 'Krasnoyarsk Summer Time',
+        generic: 'Àkókò Krasinoyasiki',
+        standard: 'Àkókò Àfẹnukò Krasinoyasiki',
+        daylight: 'Àkókò Sọmà Krasinoyasiki',
       ),
     ),
     'Kyrgystan': MetaZone(
       code: 'Kyrgystan',
       long: TimeZoneName(
-        standard: 'Kyrgyzstan Time',
+        standard: 'Àkókò Kirigisitaani',
       ),
     ),
     'Line_Islands': MetaZone(
       code: 'Line_Islands',
       long: TimeZoneName(
-        standard: 'Line Islands Time',
+        standard: 'Àkókò Àwọn Erekusu Laini',
       ),
     ),
     'Lord_Howe': MetaZone(
       code: 'Lord_Howe',
       long: TimeZoneName(
-        generic: 'Lord Howe Time',
-        standard: 'Lord Howe Standard Time',
-        daylight: 'Lord Howe Daylight Time',
+        generic: 'Àkókò Lord Howe',
+        standard: 'Àkókò Àfẹnukò Lord Howe',
+        daylight: 'Àkókò Ojúmọmọ Lord Howe',
       ),
     ),
     'Magadan': MetaZone(
       code: 'Magadan',
       long: TimeZoneName(
-        generic: 'Magadan Time',
-        standard: 'Magadan Standard Time',
-        daylight: 'Magadan Summer Time',
+        generic: 'Àkókò Magadani',
+        standard: 'Àkókò Àfẹnukò Magadani',
+        daylight: 'Àkókò Sọmà Magadani',
       ),
     ),
     'Malaysia': MetaZone(
       code: 'Malaysia',
       long: TimeZoneName(
-        standard: 'Malaysia Time',
+        standard: 'Àkókò Malaysia',
       ),
     ),
     'Maldives': MetaZone(
       code: 'Maldives',
       long: TimeZoneName(
-        standard: 'Maldives Time',
+        standard: 'Àkókò Maldives',
       ),
     ),
     'Marquesas': MetaZone(
       code: 'Marquesas',
       long: TimeZoneName(
-        standard: 'Marquesas Time',
+        standard: 'Àkókò Makuesasi',
       ),
     ),
     'Marshall_Islands': MetaZone(
       code: 'Marshall_Islands',
       long: TimeZoneName(
-        standard: 'Marshall Islands Time',
+        standard: 'Àkókò Àwọn Erekusu Masaali',
       ),
     ),
     'Mauritius': MetaZone(
@@ -9560,7 +9736,7 @@ class TimeZonesYo extends TimeZones {
     'Mawson': MetaZone(
       code: 'Mawson',
       long: TimeZoneName(
-        standard: 'Mawson Time',
+        standard: 'Àkókò Mawson',
       ),
     ),
     'Mexico_Pacific': MetaZone(
@@ -9574,51 +9750,51 @@ class TimeZonesYo extends TimeZones {
     'Mongolia': MetaZone(
       code: 'Mongolia',
       long: TimeZoneName(
-        generic: 'Ulaanbaatar Time',
-        standard: 'Ulaanbaatar Standard Time',
-        daylight: 'Ulaanbaatar Summer Time',
+        generic: 'Àkókò Ulaanbaatar',
+        standard: 'Àkókò Ìfẹnukòsí Ulaanbaatar',
+        daylight: 'Àkókò Sọmà Ulaanbaatar',
       ),
     ),
     'Moscow': MetaZone(
       code: 'Moscow',
       long: TimeZoneName(
-        generic: 'Moscow Time',
-        standard: 'Moscow Standard Time',
-        daylight: 'Moscow Summer Time',
+        generic: 'Àkókò Mosiko',
+        standard: 'Àkókò Àfẹnukò Mosiko',
+        daylight: 'Àkókò Sọmà Mosiko',
       ),
     ),
     'Myanmar': MetaZone(
       code: 'Myanmar',
       long: TimeZoneName(
-        standard: 'Myanmar Time',
+        standard: 'Àkókò Ìlà Myanmar',
       ),
     ),
     'Nauru': MetaZone(
       code: 'Nauru',
       long: TimeZoneName(
-        standard: 'Nauru Time',
+        standard: 'Àkókò Nauru',
       ),
     ),
     'Nepal': MetaZone(
       code: 'Nepal',
       long: TimeZoneName(
-        standard: 'Nepal Time',
+        standard: 'Àkókò Nepali',
       ),
     ),
     'New_Caledonia': MetaZone(
       code: 'New_Caledonia',
       long: TimeZoneName(
-        generic: 'New Caledonia Time',
-        standard: 'New Caledonia Standard Time',
-        daylight: 'New Caledonia Summer Time',
+        generic: 'Àkókò Kalidonia Tuntun',
+        standard: 'Àkókò Àfẹnukò Kalidonia Tuntun',
+        daylight: 'Àkókò Sọma Kalidonia Tuntun',
       ),
     ),
     'New_Zealand': MetaZone(
       code: 'New_Zealand',
       long: TimeZoneName(
-        generic: 'New Zealand Time',
-        standard: 'New Zealand Standard Time',
-        daylight: 'New Zealand Daylight Time',
+        generic: 'Àkókò New Zealand',
+        standard: 'Àkókò Àfẹnukò New zealand',
+        daylight: 'Àkókò Ojúmọmọ New Zealand',
       ),
     ),
     'Newfoundland': MetaZone(
@@ -9632,15 +9808,15 @@ class TimeZonesYo extends TimeZones {
     'Niue': MetaZone(
       code: 'Niue',
       long: TimeZoneName(
-        standard: 'Niue Time',
+        standard: 'Àkókò Niue',
       ),
     ),
     'Norfolk': MetaZone(
       code: 'Norfolk',
       long: TimeZoneName(
-        generic: 'Norfolk Island Time',
-        standard: 'Norfolk Island Standard Time',
-        daylight: 'Norfolk Island Daylight Time',
+        generic: 'Àkókò Erékùsù Norfolk',
+        standard: 'Àkókò Àfẹnukò Erékùsù Norfolk',
+        daylight: 'Àkókò Ojúmọmọ Erékùsù Norfolk',
       ),
     ),
     'Noronha': MetaZone(
@@ -9654,37 +9830,37 @@ class TimeZonesYo extends TimeZones {
     'Novosibirsk': MetaZone(
       code: 'Novosibirsk',
       long: TimeZoneName(
-        generic: 'Novosibirsk Time',
-        standard: 'Novosibirsk Standard Time',
-        daylight: 'Novosibirsk Summer Time',
+        generic: 'Àkókò Nofosibiriski',
+        standard: 'Àkókò Àfẹnukò Nofosibiriki',
+        daylight: 'Àkókò Sọmà Noforibisiki',
       ),
     ),
     'Omsk': MetaZone(
       code: 'Omsk',
       long: TimeZoneName(
-        generic: 'Omsk Time',
-        standard: 'Omsk Standard Time',
-        daylight: 'Omsk Summer Time',
+        generic: 'Àkókò Omisiki',
+        standard: 'Àkókò Àfẹnukò Omisiki',
+        daylight: 'Àkókò Sọmà Omisiki',
       ),
     ),
     'Pakistan': MetaZone(
       code: 'Pakistan',
       long: TimeZoneName(
-        generic: 'Pakistan Time',
-        standard: 'Pakistan Standard Time',
-        daylight: 'Pakistan Summer Time',
+        generic: 'Àkókò Pakistani',
+        standard: 'Àkókò Àfẹnukò Pakistani',
+        daylight: 'Àkókò Sọmà Pakistani',
       ),
     ),
     'Palau': MetaZone(
       code: 'Palau',
       long: TimeZoneName(
-        standard: 'Palau Time',
+        standard: 'Àkókò Palau',
       ),
     ),
     'Papua_New_Guinea': MetaZone(
       code: 'Papua_New_Guinea',
       long: TimeZoneName(
-        standard: 'Papua New Guinea Time',
+        standard: 'Àkókò Papua New Guinea',
       ),
     ),
     'Paraguay': MetaZone(
@@ -9706,15 +9882,15 @@ class TimeZonesYo extends TimeZones {
     'Philippines': MetaZone(
       code: 'Philippines',
       long: TimeZoneName(
-        generic: 'Philippine Time',
-        standard: 'Philippine Standard Time',
-        daylight: 'Philippine Summer Time',
+        generic: 'Àkókò Filipininni',
+        standard: 'Àkókò Àfẹnukò Filipininni',
+        daylight: 'Àkókò Sọmà Filipininni',
       ),
     ),
     'Phoenix_Islands': MetaZone(
       code: 'Phoenix_Islands',
       long: TimeZoneName(
-        standard: 'Phoenix Islands Time',
+        standard: 'Àkókò Àwọn Erékùsù Phoenix',
       ),
     ),
     'Pierre_Miquelon': MetaZone(
@@ -9728,19 +9904,19 @@ class TimeZonesYo extends TimeZones {
     'Pitcairn': MetaZone(
       code: 'Pitcairn',
       long: TimeZoneName(
-        standard: 'Pitcairn Time',
+        standard: 'Àkókò Pitcairn',
       ),
     ),
     'Ponape': MetaZone(
       code: 'Ponape',
       long: TimeZoneName(
-        standard: 'Ponape Time',
+        standard: 'Àkókò Ponape',
       ),
     ),
     'Pyongyang': MetaZone(
       code: 'Pyongyang',
       long: TimeZoneName(
-        standard: 'Pyongyang Time',
+        standard: 'Àkókò Pyongyangi',
       ),
     ),
     'Reunion': MetaZone(
@@ -9752,23 +9928,23 @@ class TimeZonesYo extends TimeZones {
     'Rothera': MetaZone(
       code: 'Rothera',
       long: TimeZoneName(
-        standard: 'Rothera Time',
+        standard: 'Àkókò Rothera',
       ),
     ),
     'Sakhalin': MetaZone(
       code: 'Sakhalin',
       long: TimeZoneName(
-        generic: 'Sakhalin Time',
-        standard: 'Sakhalin Standard Time',
-        daylight: 'Sakhalin Summer Time',
+        generic: 'Àkókò Sakhalin',
+        standard: 'Àkókò Àfẹnukò Sakhalin',
+        daylight: 'Àkókò Sọmà Sakhalin',
       ),
     ),
     'Samoa': MetaZone(
       code: 'Samoa',
       long: TimeZoneName(
-        generic: 'Samoa Time',
-        standard: 'Samoa Standard Time',
-        daylight: 'Samoa Daylight Time',
+        generic: 'Àkókò Samoa',
+        standard: 'Àkókò Àfẹnukò Samoa',
+        daylight: 'Àkókò Ojúmọmọ Samoa',
       ),
     ),
     'Seychelles': MetaZone(
@@ -9780,13 +9956,13 @@ class TimeZonesYo extends TimeZones {
     'Singapore': MetaZone(
       code: 'Singapore',
       long: TimeZoneName(
-        standard: 'Singapore Standard Time',
+        standard: 'Àkókò Àfẹnukò Singapore',
       ),
     ),
     'Solomon': MetaZone(
       code: 'Solomon',
       long: TimeZoneName(
-        standard: 'Solomon Islands Time',
+        standard: 'Àkókò Àwọn Erekusu Solomon',
       ),
     ),
     'South_Georgia': MetaZone(
@@ -9804,61 +9980,61 @@ class TimeZonesYo extends TimeZones {
     'Syowa': MetaZone(
       code: 'Syowa',
       long: TimeZoneName(
-        standard: 'Syowa Time',
+        standard: 'Àkókò Syowa',
       ),
     ),
     'Tahiti': MetaZone(
       code: 'Tahiti',
       long: TimeZoneName(
-        standard: 'Tahiti Time',
+        standard: 'Àkókò Tahiti',
       ),
     ),
     'Taipei': MetaZone(
       code: 'Taipei',
       long: TimeZoneName(
-        generic: 'Taipei Time',
-        standard: 'Taipei Standard Time',
-        daylight: 'Taipei Daylight Time',
+        generic: 'Àkókò Taipei',
+        standard: 'Àkókò Ìfẹnukòsí Taipei',
+        daylight: 'Àkókò Ojúmọmọ Taipei',
       ),
     ),
     'Tajikistan': MetaZone(
       code: 'Tajikistan',
       long: TimeZoneName(
-        standard: 'Tajikistan Time',
+        standard: 'Àkókò Tajikisitaani',
       ),
     ),
     'Tokelau': MetaZone(
       code: 'Tokelau',
       long: TimeZoneName(
-        standard: 'Tokelau Time',
+        standard: 'Àkókò Tokelau',
       ),
     ),
     'Tonga': MetaZone(
       code: 'Tonga',
       long: TimeZoneName(
-        generic: 'Tonga Time',
-        standard: 'Tonga Standard Time',
-        daylight: 'Tonga Summer Time',
+        generic: 'Àkókò Tonga',
+        standard: 'Àkókò Àfẹnukò Tonga',
+        daylight: 'Àkókò Sọmà Tonga',
       ),
     ),
     'Truk': MetaZone(
       code: 'Truk',
       long: TimeZoneName(
-        standard: 'Chuuk Time',
+        standard: 'Àkókò Chuuk',
       ),
     ),
     'Turkmenistan': MetaZone(
       code: 'Turkmenistan',
       long: TimeZoneName(
-        generic: 'Turkmenistan Time',
-        standard: 'Turkmenistan Standard Time',
-        daylight: 'Turkmenistan Summer Time',
+        generic: 'Àkókò Turkimenistani',
+        standard: 'Àkókò Àfẹnukò Turkimenistani',
+        daylight: 'Àkókò Sọmà Turkmenistani',
       ),
     ),
     'Tuvalu': MetaZone(
       code: 'Tuvalu',
       long: TimeZoneName(
-        standard: 'Tuvalu Time',
+        standard: 'Àkókò Tufalu',
       ),
     ),
     'Uruguay': MetaZone(
@@ -9872,17 +10048,17 @@ class TimeZonesYo extends TimeZones {
     'Uzbekistan': MetaZone(
       code: 'Uzbekistan',
       long: TimeZoneName(
-        generic: 'Uzbekistan Time',
-        standard: 'Uzbekistan Standard Time',
-        daylight: 'Uzbekistan Summer Time',
+        generic: 'Àkókò Usibekistani',
+        standard: 'Àkókò Àfẹnukò Usibekistani',
+        daylight: 'Àkókò Sọmà Usibekistani',
       ),
     ),
     'Vanuatu': MetaZone(
       code: 'Vanuatu',
       long: TimeZoneName(
-        generic: 'Vanuatu Time',
-        standard: 'Vanuatu Standard Time',
-        daylight: 'Vanuatu Summer Time',
+        generic: 'Àkókò Fanuatu',
+        standard: 'Àkókò Àfẹnukò Fanuatu',
+        daylight: 'Àkókò Sọmà Fanuatu',
       ),
     ),
     'Venezuela': MetaZone(
@@ -9894,51 +10070,51 @@ class TimeZonesYo extends TimeZones {
     'Vladivostok': MetaZone(
       code: 'Vladivostok',
       long: TimeZoneName(
-        generic: 'Vladivostok Time',
-        standard: 'Vladivostok Standard Time',
-        daylight: 'Vladivostok Summer Time',
+        generic: 'Àkókò Filadifositoki',
+        standard: 'Àkókò Àfẹnukò Filadifositoki',
+        daylight: 'Àkókò Sọmà Filadifositoki',
       ),
     ),
     'Volgograd': MetaZone(
       code: 'Volgograd',
       long: TimeZoneName(
-        generic: 'Volgograd Time',
-        standard: 'Volgograd Standard Time',
-        daylight: 'Volgograd Summer Time',
+        generic: 'Àkókò Foligogiradi',
+        standard: 'Àkókò Àfẹnukò Foligogiradi',
+        daylight: 'Àkókò Sọmà Foligogiradi',
       ),
     ),
     'Vostok': MetaZone(
       code: 'Vostok',
       long: TimeZoneName(
-        standard: 'Vostok Time',
+        standard: 'Àkókò Vostok',
       ),
     ),
     'Wake': MetaZone(
       code: 'Wake',
       long: TimeZoneName(
-        standard: 'Wake Island Time',
+        standard: 'Àkókò Erékùsù Wake',
       ),
     ),
     'Wallis': MetaZone(
       code: 'Wallis',
       long: TimeZoneName(
-        standard: 'Wallis & Futuna Time',
+        standard: 'Àkókò Wallis & Futuina',
       ),
     ),
     'Yakutsk': MetaZone(
       code: 'Yakutsk',
       long: TimeZoneName(
-        generic: 'Yakutsk Time',
-        standard: 'Yakutsk Standard Time',
-        daylight: 'Yakutsk Summer Time',
+        generic: 'Àkókò Yatutsk',
+        standard: 'Àkókò Àfẹnukò Yatutsk',
+        daylight: 'Àkókò Sọmà Yatutsk',
       ),
     ),
     'Yekaterinburg': MetaZone(
       code: 'Yekaterinburg',
       long: TimeZoneName(
-        generic: 'Yekaterinburg Time',
-        standard: 'Yekaterinburg Standard Time',
-        daylight: 'Yekaterinburg Summer Time',
+        generic: 'Àkókò Yekaterinburg',
+        standard: 'Àkókò Àfẹnukò Yekaterinburg',
+        daylight: 'Àkókò Sọmà Yekaterinburg',
       ),
     ),
     'Yukon': MetaZone(

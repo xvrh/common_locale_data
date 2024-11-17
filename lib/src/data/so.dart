@@ -153,7 +153,7 @@ class LanguagesSo extends Languages {
     'az': Language(
       'az',
       'Asarbayjan',
-      short: 'Aseeri',
+      short: 'Asarbayjan',
     ),
     'ba': Language(
       'ba',
@@ -189,7 +189,7 @@ class LanguagesSo extends Languages {
     ),
     'bho': Language(
       'bho',
-      'U dhashay Bhohp',
+      'Bhojpuri',
     ),
     'bi': Language(
       'bi',
@@ -202,6 +202,10 @@ class LanguagesSo extends Languages {
     'bla': Language(
       'bla',
       'Siksiká',
+    ),
+    'blo': Language(
+      'blo',
+      'Anii',
     ),
     'bm': Language(
       'bm',
@@ -465,7 +469,7 @@ class LanguagesSo extends Languages {
     ),
     'es-ES': Language(
       'es-ES',
-      'Isbaanish (Isbayn)',
+      'Isbaanish Yurub',
     ),
     'es-MX': Language(
       'es-MX',
@@ -680,6 +684,10 @@ class LanguagesSo extends Languages {
       'id',
       'Indunusiyaan',
     ),
+    'ie': Language(
+      'ie',
+      'Interlingue',
+    ),
     'ig': Language(
       'ig',
       'Igbo',
@@ -888,6 +896,10 @@ class LanguagesSo extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kufi',
+    ),
     'ky': Language(
       'ky',
       'Kirgiis',
@@ -920,6 +932,10 @@ class LanguagesSo extends Languages {
       'li',
       'Limburgish',
     ),
+    'lij': Language(
+      'lij',
+      'Liguuriyaan',
+    ),
     'lil': Language(
       'lil',
       'Lillooet',
@@ -927,6 +943,10 @@ class LanguagesSo extends Languages {
     'lkt': Language(
       'lkt',
       'Laakoota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Lombard',
     ),
     'ln': Language(
       'ln',
@@ -994,7 +1014,7 @@ class LanguagesSo extends Languages {
     ),
     'mai': Language(
       'mai',
-      'Dadka Maithili',
+      'Maithili',
     ),
     'mak': Language(
       'mak',
@@ -1026,7 +1046,7 @@ class LanguagesSo extends Languages {
     ),
     'mgh': Language(
       'mgh',
-      'Makhuwa',
+      'Luuqadda Makhuwa-Meetto',
     ),
     'mgo': Language(
       'mgo',
@@ -1094,7 +1114,7 @@ class LanguagesSo extends Languages {
     ),
     'mul': Language(
       'mul',
-      'Luuqado kala duwan',
+      'Luuqaddo badan',
     ),
     'mus': Language(
       'mus',
@@ -1290,7 +1310,7 @@ class LanguagesSo extends Languages {
     ),
     'prg': Language(
       'prg',
-      'Brashiyaanki Hore',
+      'Brashiyaan',
     ),
     'ps': Language(
       'ps',
@@ -1306,11 +1326,11 @@ class LanguagesSo extends Languages {
     ),
     'pt-PT': Language(
       'pt-PT',
-      'Boortaqiis (Boortuqaal)',
+      'Boortaqiiska Yurub',
     ),
     'qu': Language(
       'qu',
-      'Quwejuwa',
+      'Quechua',
     ),
     'raj': Language(
       'raj',
@@ -1370,7 +1390,7 @@ class LanguagesSo extends Languages {
     ),
     'sah': Language(
       'sah',
-      'Saaqa',
+      'Yakut',
     ),
     'saq': Language(
       'saq',
@@ -1430,7 +1450,7 @@ class LanguagesSo extends Languages {
     ),
     'si': Language(
       'si',
-      'Sinhaleys',
+      'Sinhala',
     ),
     'sk': Language(
       'sk',
@@ -1514,7 +1534,11 @@ class LanguagesSo extends Languages {
     ),
     'syr': Language(
       'syr',
-      'Syria',
+      'Af-Siriyak',
+    ),
+    'szl': Language(
+      'szl',
+      'Sileshiyaan',
     ),
     'ta': Language(
       'ta',
@@ -1672,9 +1696,17 @@ class LanguagesSo extends Languages {
       've',
       'Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Dadka Fenaays',
+    ),
     'vi': Language(
       'vi',
       'Fiitnaamays',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Af-Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1714,7 +1746,11 @@ class LanguagesSo extends Languages {
     ),
     'xh': Language(
       'xh',
-      'Hoosta',
+      'Xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
@@ -1745,14 +1781,18 @@ class LanguagesSo extends Languages {
       'Kantoneese',
       menu: 'Shiinays, Cantonese',
     ),
+    'za': Language(
+      'za',
+      'Zhuang',
+    ),
     'zgh': Language(
       'zgh',
       'Morokaanka Tamasayt Rasmiga',
     ),
     'zh': Language(
       'zh',
-      'Shiinaha Mandarin',
-      menu: 'Shiinaha Mandarin',
+      'Shinees',
+      menu: 'Af-Shiineeska Mandarin',
     ),
     'zh-Hans': Language(
       'zh-Hans',
@@ -1760,7 +1800,7 @@ class LanguagesSo extends Languages {
     ),
     'zh-Hant': Language(
       'zh-Hant',
-      'Shiinahii Hore',
+      'Af-Shiineeska Qadiimiga ah',
     ),
     'zu': Language(
       'zu',
@@ -2278,7 +2318,7 @@ class ScriptsSo extends Scripts {
     ),
     'Rohg': Script(
       'Rohg',
-      'Hanifi Rohingya',
+      'Hanifi',
     ),
     'Runr': Script(
       'Runr',
@@ -2660,49 +2700,49 @@ class UnitsSo implements Units {
       );
   @override
   UnitPrefix get pattern10pMinus3 => UnitPrefix(
-        long: UnitPrefixPattern('m{0}'),
+        long: UnitPrefixPattern('milli{0}'),
         short: UnitPrefixPattern('m{0}'),
         narrow: UnitPrefixPattern('m{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus6 => UnitPrefix(
-        long: UnitPrefixPattern('μ{0}'),
+        long: UnitPrefixPattern('mikro{0}'),
         short: UnitPrefixPattern('μ{0}'),
         narrow: UnitPrefixPattern('μ{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus9 => UnitPrefix(
-        long: UnitPrefixPattern('n{0}'),
+        long: UnitPrefixPattern('nano{0}'),
         short: UnitPrefixPattern('n{0}'),
         narrow: UnitPrefixPattern('n{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
-        long: UnitPrefixPattern('p{0}'),
+        long: UnitPrefixPattern('pico{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus15 => UnitPrefix(
-        long: UnitPrefixPattern('f{0}'),
+        long: UnitPrefixPattern('femto{0}'),
         short: UnitPrefixPattern('f{0}'),
         narrow: UnitPrefixPattern('f{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus18 => UnitPrefix(
-        long: UnitPrefixPattern('a{0}'),
+        long: UnitPrefixPattern('atto{0}'),
         short: UnitPrefixPattern('a{0}'),
         narrow: UnitPrefixPattern('a{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus21 => UnitPrefix(
-        long: UnitPrefixPattern('z{0}'),
+        long: UnitPrefixPattern('zepto{0}'),
         short: UnitPrefixPattern('z{0}'),
         narrow: UnitPrefixPattern('z{0}'),
       );
   @override
   UnitPrefix get pattern10pMinus24 => UnitPrefix(
-        long: UnitPrefixPattern('y{0}'),
+        long: UnitPrefixPattern('yocto{0}'),
         short: UnitPrefixPattern('y{0}'),
         narrow: UnitPrefixPattern('y{0}'),
       );
@@ -2720,37 +2760,37 @@ class UnitsSo implements Units {
       );
   @override
   UnitPrefix get pattern10p1 => UnitPrefix(
-        long: UnitPrefixPattern('da{0}'),
+        long: UnitPrefixPattern('deka{0}'),
         short: UnitPrefixPattern('da{0}'),
         narrow: UnitPrefixPattern('da{0}'),
       );
   @override
   UnitPrefix get pattern10p2 => UnitPrefix(
-        long: UnitPrefixPattern('h{0}'),
+        long: UnitPrefixPattern('hecto{0}'),
         short: UnitPrefixPattern('h{0}'),
         narrow: UnitPrefixPattern('h{0}'),
       );
   @override
   UnitPrefix get pattern10p3 => UnitPrefix(
-        long: UnitPrefixPattern('k{0}'),
+        long: UnitPrefixPattern('kilo{0}'),
         short: UnitPrefixPattern('k{0}'),
         narrow: UnitPrefixPattern('k{0}'),
       );
   @override
   UnitPrefix get pattern10p6 => UnitPrefix(
-        long: UnitPrefixPattern('M{0}'),
+        long: UnitPrefixPattern('mega{0}'),
         short: UnitPrefixPattern('M{0}'),
         narrow: UnitPrefixPattern('M{0}'),
       );
   @override
   UnitPrefix get pattern10p9 => UnitPrefix(
-        long: UnitPrefixPattern('G{0}'),
+        long: UnitPrefixPattern('giga{0}'),
         short: UnitPrefixPattern('G{0}'),
         narrow: UnitPrefixPattern('G{0}'),
       );
   @override
   UnitPrefix get pattern10p12 => UnitPrefix(
-        long: UnitPrefixPattern('T{0}'),
+        long: UnitPrefixPattern('tera{0}'),
         short: UnitPrefixPattern('T{0}'),
         narrow: UnitPrefixPattern('T{0}'),
       );
@@ -2792,55 +2832,55 @@ class UnitsSo implements Units {
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
-        long: UnitPrefixPattern('Ki{0}'),
+        long: UnitPrefixPattern('kibi{0}'),
         short: UnitPrefixPattern('Ki{0}'),
         narrow: UnitPrefixPattern('Ki{0}'),
       );
   @override
   UnitPrefix get pattern1024p2 => UnitPrefix(
-        long: UnitPrefixPattern('Mi{0}'),
+        long: UnitPrefixPattern('mebi{0}'),
         short: UnitPrefixPattern('Mi{0}'),
         narrow: UnitPrefixPattern('Mi{0}'),
       );
   @override
   UnitPrefix get pattern1024p3 => UnitPrefix(
-        long: UnitPrefixPattern('Gi{0}'),
+        long: UnitPrefixPattern('gibi{0}'),
         short: UnitPrefixPattern('Gi{0}'),
         narrow: UnitPrefixPattern('Gi{0}'),
       );
   @override
   UnitPrefix get pattern1024p4 => UnitPrefix(
-        long: UnitPrefixPattern('Ti{0}'),
+        long: UnitPrefixPattern('tebi{0}'),
         short: UnitPrefixPattern('Ti{0}'),
         narrow: UnitPrefixPattern('Ti{0}'),
       );
   @override
   UnitPrefix get pattern1024p5 => UnitPrefix(
-        long: UnitPrefixPattern('Pi{0}'),
+        long: UnitPrefixPattern('pebi{0}'),
         short: UnitPrefixPattern('Pi{0}'),
         narrow: UnitPrefixPattern('Pi{0}'),
       );
   @override
   UnitPrefix get pattern1024p6 => UnitPrefix(
-        long: UnitPrefixPattern('Ei{0}'),
+        long: UnitPrefixPattern('exbi{0}'),
         short: UnitPrefixPattern('Ei{0}'),
         narrow: UnitPrefixPattern('Ei{0}'),
       );
   @override
   UnitPrefix get pattern1024p7 => UnitPrefix(
-        long: UnitPrefixPattern('Zi{0}'),
+        long: UnitPrefixPattern('zebi{0}'),
         short: UnitPrefixPattern('Zi{0}'),
         narrow: UnitPrefixPattern('Zi{0}'),
       );
   @override
   UnitPrefix get pattern1024p8 => UnitPrefix(
-        long: UnitPrefixPattern('dheer{0}'),
+        long: UnitPrefixPattern('yobi{0}'),
         short: UnitPrefixPattern('Yi{0}'),
         narrow: UnitPrefixPattern('Yi{0}'),
       );
   @override
   CompoundUnit get per => CompoundUnit(
-        long: CompoundUnitPattern('{0}/{1}'),
+        long: CompoundUnitPattern('{0} kiiba {1}'),
         short: CompoundUnitPattern('{0}/{1}'),
         narrow: CompoundUnitPattern('{0}/{1}'),
       );
@@ -3756,7 +3796,7 @@ class UnitsSo implements Units {
   Unit get durationCentury => Unit(
         long: UnitCountPattern(
           _locale,
-          'qarni',
+          'qarniyo',
           one: '{0} qarni',
           other: '{0} qarniyo',
         ),
@@ -5010,20 +5050,20 @@ class UnitsSo implements Units {
   Unit get lengthFurlong => Unit(
         long: UnitCountPattern(
           _locale,
-          'fur',
+          'furlongs',
           one: '{0} furlong',
-          other: '{0} fur',
+          other: '{0} furlongs',
         ),
         short: UnitCountPattern(
           _locale,
-          'fur',
-          one: '{0} fur',
+          'furlongs',
+          one: '{0} furlong',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'fur',
-          one: '{0}fur',
+          'furlong',
+          one: '{0} furlong',
           other: '{0} fur',
         ),
       );
@@ -5032,20 +5072,20 @@ class UnitsSo implements Units {
   Unit get lengthFathom => Unit(
         long: UnitCountPattern(
           _locale,
-          'fm',
+          'fathoms',
           one: '{0} fathom',
-          other: '{0} fth',
+          other: '{0} fathoms',
         ),
         short: UnitCountPattern(
           _locale,
-          'fm',
-          one: '{0} fth',
+          'fathoms',
+          one: '{0} fathom',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'fm',
-          one: '{0}fth',
+          'fathom',
+          one: '{0} fathom',
           other: '{0} fth',
         ),
       );
@@ -5164,19 +5204,19 @@ class UnitsSo implements Units {
   Unit get lightCandela => Unit(
         long: UnitCountPattern(
           _locale,
-          'cd',
+          'candela',
           one: '{0} candela',
-          other: '{0} cd',
+          other: '{0} candela',
         ),
         short: UnitCountPattern(
           _locale,
-          'cd',
-          one: '{0} cd',
+          'candela',
+          one: '{0} candela',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'cd',
+          'candela',
           one: '{0}cd',
           other: '{0}cd',
         ),
@@ -5186,19 +5226,19 @@ class UnitsSo implements Units {
   Unit get lightLumen => Unit(
         long: UnitCountPattern(
           _locale,
-          'lm',
+          'lumen',
           one: '{0} lumen',
-          other: '{0} lm',
+          other: '{0} lumen',
         ),
         short: UnitCountPattern(
           _locale,
-          'lm',
-          one: '{0} lm',
+          'lumen',
+          one: '{0} lumen',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'lm',
+          'lumen',
           one: '{0}lm',
           other: '{0}lm',
         ),
@@ -5362,21 +5402,21 @@ class UnitsSo implements Units {
   Unit get massStone => Unit(
         long: UnitCountPattern(
           _locale,
-          'st',
-          one: '{0} stone',
-          other: '{0} st',
+          'dhagaxo',
+          one: '{0} dhagax',
+          other: '{0} dhagaxo',
         ),
         short: UnitCountPattern(
           _locale,
-          'st',
-          one: '{0} st',
-          other: '{0} st',
+          'dhagaxo',
+          one: '{0} dx',
+          other: '{0} dx',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'st',
-          one: '{0}st',
-          other: '{0} st',
+          'dx',
+          one: '{0}dx',
+          other: '{0}dx',
         ),
       );
 
@@ -5991,8 +6031,8 @@ class UnitsSo implements Units {
         narrow: UnitCountPattern(
           _locale,
           'nt',
-          one: '{0} nt',
-          other: '{0} nt',
+          one: '{0}nt',
+          other: '{0}nt',
         ),
       );
 
@@ -6919,6 +6959,72 @@ class UnitsSo implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nal',
+          one: '{0} nal',
+          other: '{0} nal',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nal',
+          one: '{0} nal',
+          other: '{0} nal',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nal',
+          one: '{0}nal',
+          other: '{0}nal',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'qeybaha bilyankiiba',
+          one: '{0} qeybaha bilyankiiba',
+          other: '{0} qeybaha bilyankiiba',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'qeybaha/bilyan',
+          one: '{0} qb',
+          other: '{0} qb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'qb',
+          one: '{0}qb',
+          other: '{0}qb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'habeeno',
+          one: '{0} habeen',
+          other: '{0} habeeno',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'habeeno',
+          one: '{0} habeen',
+          other: '{0} habeeno',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'habeeno',
+          one: '{0}habeen',
+          other: '{0}habeeno',
+        ),
+      );
 }
 
 class DateFieldsSo implements DateFields {
@@ -6934,7 +7040,7 @@ class DateFieldsSo implements DateFields {
   @override
   DateFieldFullData get year => DateFieldFullData(
         displayName: MultiLength(
-          long: 'Sannad',
+          long: 'sannad',
           short: 'snd',
           narrow: 'Snd',
         ),
@@ -6992,7 +7098,7 @@ class DateFieldsSo implements DateFields {
   @override
   DateFieldFullData get quarter => DateFieldFullData(
         displayName: MultiLength(
-          long: 'Rubuc',
+          long: 'rubuc',
           short: 'rbc',
           narrow: 'rbc',
         ),
@@ -7785,7 +7891,7 @@ class TerritoriesSo implements Territories {
   @override
   Territory get world => Territory(
         '001',
-        'Dunida',
+        'dunida',
       );
 
   @override
@@ -8909,7 +9015,7 @@ class TerritoriesSo implements Territories {
     ),
     'TL': Territory(
       'TL',
-      'Timoor',
+      'Timor-Leste',
       variant: 'Bariga Timor',
     ),
     'TM': Territory(
@@ -8976,7 +9082,7 @@ class TerritoriesSo implements Territories {
     ),
     'VA': Territory(
       'VA',
-      'Faatikaan',
+      'Magaalada Faatikaan',
     ),
     'VC': Territory(
       'VC',
@@ -9811,9 +9917,6 @@ class TimeZonesSo extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Jiita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Joybalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -10453,14 +10556,6 @@ class TimeZonesSo extends TimeZones {
         daylight: 'Waqtiga Dharaarta ee Shiinaha',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Waqtiga Joybalsan',
-        standard: 'Waqtiga Caadiga Ah ee Joybalsan',
-        daylight: 'Waqtiga Xagaaga ee Joybalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10750,6 +10845,12 @@ class TimeZonesSo extends TimeZones {
         generic: 'Wakhtiga Petropavlovsk-Kamchatski',
         standard: 'Wakhtiga Caadiga ah ee Petropavlovsk-Kamchatski',
         daylight: 'Wakhtiga Kulka ee Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Wakhtiga Kazakhistan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -267,6 +267,10 @@ class LanguagesRo extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1129,6 +1133,10 @@ class LanguagesRo extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kârgâză',
@@ -1181,6 +1189,10 @@ class LanguagesRo extends Languages {
       'lkt',
       'lakota',
     ),
+    'lmo': Language(
+      'lmo',
+      'lombardă',
+    ),
     'ln': Language(
       'ln',
       'lingala',
@@ -1228,10 +1240,6 @@ class LanguagesRo extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1950,6 +1958,10 @@ class LanguagesRo extends Languages {
       'syr',
       'siriacă',
     ),
+    'szl': Language(
+      'szl',
+      'sileziană',
+    ),
     'ta': Language(
       'ta',
       'tamilă',
@@ -2134,10 +2146,6 @@ class LanguagesRo extends Languages {
       'uz',
       'uzbecă',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2149,6 +2157,10 @@ class LanguagesRo extends Languages {
     'vi': Language(
       'vi',
       'vietnameză',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -2201,6 +2213,10 @@ class LanguagesRo extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -5341,18 +5357,21 @@ class UnitsRo implements Units {
           _locale,
           'em tipografic',
           one: '{0} em',
-          other: '{0} em',
+          few: '{0} em',
+          other: '{0} de em',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
           one: '{0} em',
+          few: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
-          one: '{0}em',
+          one: '{0} em',
+          few: '{0} em',
           other: '{0} em',
         ),
       );
@@ -8101,6 +8120,81 @@ class UnitsRo implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'lumină',
+          one: '{0} lumină',
+          few: '{0} lumină',
+          other: '{0} lumină',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'lumină',
+          one: '{0} lumină',
+          few: '{0} lumină',
+          other: '{0} lumină',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'lumină',
+          one: '{0} lumină',
+          few: '{0} lumină',
+          other: '{0} lumină',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'părți pe miliard',
+          one: '{0} parte pe miliard',
+          few: '{0} părți pe miliard',
+          other: '{0} de părți pe miliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'părți/miliard',
+          one: '{0} parte pe miliard',
+          few: '{0} părți pe miliard',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'părți/miliard',
+          one: '{0} parte pe miliard',
+          few: '{0} părți pe miliard',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noapte',
+          one: '{0}/noapte',
+          few: '{0} nopți',
+          other: '{0} de nopți',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nopți',
+          one: '{0} noapte',
+          few: '{0} nopți',
+          other: '{0} de nopți',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nopți',
+          one: '{0} noapte',
+          few: '{0} nopți',
+          other: '{0} de nopți',
         ),
       );
 }
@@ -10980,14 +11074,6 @@ class TimeZonesRo extends TimeZones {
         daylight: 'Ora de vară a Chinei',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Ora din Choibalsan',
-        standard: 'Ora standard din Choibalsan',
-        daylight: 'Ora de vară din Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11290,6 +11376,12 @@ class TimeZonesRo extends TimeZones {
         generic: 'Ora din Petropavlovsk-Kamciațki',
         standard: 'Ora standard din Petropavlovsk-Kamciațki',
         daylight: 'Ora de vară din Petropavlovsk-Kamciațki',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Ora din Kazahstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

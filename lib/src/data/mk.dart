@@ -323,6 +323,10 @@ class LanguagesMk extends Languages {
       'bla',
       'сиксика',
     ),
+    'blo': Language(
+      'blo',
+      'ании',
+    ),
     'bm': Language(
       'bm',
       'бамбара',
@@ -861,7 +865,7 @@ class LanguagesMk extends Languages {
     ),
     'gl': Language(
       'gl',
-      'галициски',
+      'галисиски',
     ),
     'glk': Language(
       'glk',
@@ -878,10 +882,6 @@ class LanguagesMk extends Languages {
     'goh': Language(
       'goh',
       'старогорногермански',
-    ),
-    'gom': Language(
-      'gom',
-      'гоански конкани',
     ),
     'gon': Language(
       'gon',
@@ -1033,7 +1033,7 @@ class LanguagesMk extends Languages {
     ),
     'ie': Language(
       'ie',
-      'окцидентал',
+      'интерлингве',
     ),
     'ig': Language(
       'ig',
@@ -1318,6 +1318,10 @@ class LanguagesMk extends Languages {
     'kwk': Language(
       'kwk',
       'кваквала',
+    ),
+    'kxv': Language(
+      'kxv',
+      'куви',
     ),
     'ky': Language(
       'ky',
@@ -2481,7 +2485,7 @@ class LanguagesMk extends Languages {
     ),
     'vec': Language(
       'vec',
-      'венетски',
+      'венецијански',
     ),
     'vep': Language(
       'vep',
@@ -2498,6 +2502,10 @@ class LanguagesMk extends Languages {
     'vmf': Language(
       'vmf',
       'мајнскофранконски',
+    ),
+    'vmw': Language(
+      'vmw',
+      'макуа',
     ),
     'vo': Language(
       'vo',
@@ -2558,6 +2566,10 @@ class LanguagesMk extends Languages {
     'xmf': Language(
       'xmf',
       'мегрелски',
+    ),
+    'xnr': Language(
+      'xnr',
+      'кангри',
     ),
     'xog': Language(
       'xog',
@@ -7634,6 +7646,72 @@ class UnitsMk implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'светлина',
+          one: '{0} светлина',
+          other: '{0} светлини',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'светлина',
+          one: '{0} светлина',
+          other: '{0} светлини',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'светлина',
+          one: '{0} светлина',
+          other: '{0} светлини',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'делови на милијарда',
+          one: '{0} дел на милијарда',
+          other: '{0} дела на милијарда',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} дел на милијарда',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} дел на милијарда',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ноќи',
+          one: '{0} ноќ',
+          other: '{0} ноќи',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ноќи',
+          one: '{0} ноќ',
+          other: '{0} ноќи',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ноќи',
+          one: '{0} н.',
+          other: '{0} н.',
+        ),
+      );
 }
 
 class DateFieldsMk implements DateFields {
@@ -10623,9 +10701,6 @@ class TimeZonesMk extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чита',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чојбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Коломбо',
     ),
@@ -11316,14 +11391,6 @@ class TimeZonesMk extends TimeZones {
         daylight: 'Летно сметање на времето во Кина',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Време во Чојбалсан',
-        standard: 'Стандардно време во Чојбалсан',
-        daylight: 'Летно време во Чојбалсан',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11615,6 +11682,12 @@ class TimeZonesMk extends TimeZones {
         generic: 'Време во Јапонија',
         standard: 'Стандардно време во Јапонија',
         daylight: 'Летно сметање на времето во Јапонија',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Време во Казахстан',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

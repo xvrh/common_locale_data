@@ -323,6 +323,10 @@ class LanguagesYue extends Languages {
       'bla',
       '錫克錫卡文',
     ),
+    'blo': Language(
+      'blo',
+      '阿尼文',
+    ),
     'bm': Language(
       'bm',
       '班巴拉文',
@@ -837,10 +841,6 @@ class LanguagesYue extends Languages {
       'goh',
       '古高地日耳曼文',
     ),
-    'gom': Language(
-      'gom',
-      '孔卡尼文',
-    ),
     'gon': Language(
       'gon',
       '岡德文',
@@ -1276,6 +1276,10 @@ class LanguagesYue extends Languages {
     'kwk': Language(
       'kwk',
       '誇誇瓦拉文',
+    ),
+    'kxv': Language(
+      'kxv',
+      '庫維文',
     ),
     'ky': Language(
       'ky',
@@ -2453,6 +2457,10 @@ class LanguagesYue extends Languages {
       'vmf',
       '美茵-法蘭克尼亞文',
     ),
+    'vmw': Language(
+      'vmw',
+      '馬庫瓦文',
+    ),
     'vo': Language(
       'vo',
       '沃拉普克文',
@@ -2512,6 +2520,10 @@ class LanguagesYue extends Languages {
     'xmf': Language(
       'xmf',
       '明格列爾文',
+    ),
+    'xnr': Language(
+      'xnr',
+      '康格里文',
     ),
     'xog': Language(
       'xog',
@@ -7725,6 +7737,72 @@ class UnitsYue implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '光速',
+          one: '{0} light',
+          other: '{0} 光速',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '光速',
+          one: '{0} light',
+          other: '{0} 光速',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '光速',
+          one: '{0}light',
+          other: '{0}光速',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '十億分點濃度',
+          one: '{0} part per billion',
+          other: '{0} 十億分點濃度',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '濃度/十億',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '濃度/十億',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0} 晚',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0} 晚',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0}night',
+          other: '{0}晚',
+        ),
+      );
 }
 
 class DateFieldsYue implements DateFields {
@@ -8758,7 +8836,7 @@ class TerritoriesYue implements Territories {
     ),
     'AZ': Territory(
       'AZ',
-      '亞塞拜然',
+      '阿塞拜疆',
     ),
     'BA': Territory(
       'BA',
@@ -8889,7 +8967,7 @@ class TerritoriesYue implements Territories {
     ),
     'CN': Territory(
       'CN',
-      '中華人民共和國',
+      '中國',
     ),
     'CO': Territory(
       'CO',
@@ -9040,7 +9118,7 @@ class TerritoriesYue implements Territories {
     ),
     'GE': Territory(
       'GE',
-      '喬治亞共和國',
+      '格魯吉亞',
     ),
     'GF': Territory(
       'GF',
@@ -9104,7 +9182,7 @@ class TerritoriesYue implements Territories {
     ),
     'HK': Territory(
       'HK',
-      '中華人民共和國香港特別行政區',
+      '中國香港特別行政區',
       short: '香港',
     ),
     'HM': Territory(
@@ -9169,7 +9247,7 @@ class TerritoriesYue implements Territories {
     ),
     'IT': Territory(
       'IT',
-      '義大利',
+      '意大利',
     ),
     'JE': Territory(
       'JE',
@@ -9233,7 +9311,7 @@ class TerritoriesYue implements Territories {
     ),
     'LA': Territory(
       'LA',
-      '寮國',
+      '老撾',
     ),
     'LB': Territory(
       'LB',
@@ -9321,7 +9399,7 @@ class TerritoriesYue implements Territories {
     ),
     'MO': Territory(
       'MO',
-      '中華人民共和國澳門特別行政區',
+      '中國澳門特別行政區',
       short: '澳門',
     ),
     'MP': Territory(
@@ -9414,8 +9492,8 @@ class TerritoriesYue implements Territories {
     ),
     'NZ': Territory(
       'NZ',
-      '紐西蘭',
-      variant: '紐西蘭',
+      '新西蘭',
+      variant: '新西蘭',
     ),
     'OM': Territory(
       'OM',
@@ -9508,7 +9586,7 @@ class TerritoriesYue implements Territories {
     ),
     'SA': Territory(
       'SA',
-      '沙烏地阿拉伯',
+      '沙特阿拉伯',
     ),
     'SB': Territory(
       'SB',
@@ -9740,7 +9818,7 @@ class TerritoriesYue implements Territories {
     ),
     'YE': Territory(
       'YE',
-      '葉門',
+      '也門',
     ),
     'YT': Territory(
       'YT',
@@ -10623,9 +10701,6 @@ class TimeZonesYue extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: '赤塔',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: '喬巴山',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: '可倫坡',
     ),
@@ -11346,14 +11421,6 @@ class TimeZonesYue extends TimeZones {
         daylight: '中國夏令時間',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: '喬巴山時間',
-        standard: '喬巴山標準時間',
-        daylight: '喬巴山夏令時間',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11644,6 +11711,12 @@ class TimeZonesYue extends TimeZones {
         generic: '彼得羅巴甫洛夫斯克時間',
         standard: '彼得羅巴甫洛夫斯克標準時間',
         daylight: '彼得羅巴甫洛夫斯克日光節約時間',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: '哈薩克時間',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

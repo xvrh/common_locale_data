@@ -46,6 +46,10 @@ class LanguagesIg extends Languages {
 
   @override
   final languages = CanonicalizedMap<String, String, Language>.from({
+    'aa': Language(
+      'aa',
+      'Afar',
+    ),
     'ab': Language(
       'ab',
       'Abkaziani',
@@ -80,11 +84,11 @@ class LanguagesIg extends Languages {
     ),
     'ale': Language(
       'ale',
-      'Alụt',
+      'Aleut',
     ),
     'alt': Language(
       'alt',
-      'Sọutarn Altai',
+      'Southern Altai',
     ),
     'am': Language(
       'am',
@@ -96,7 +100,7 @@ class LanguagesIg extends Languages {
     ),
     'ann': Language(
       'ann',
-      'Obolọ',
+      'Obolo',
     ),
     'anp': Language(
       'anp',
@@ -136,7 +140,7 @@ class LanguagesIg extends Languages {
     ),
     'atj': Language(
       'atj',
-      'Atikamekwe',
+      'Atikamekw',
     ),
     'av': Language(
       'av',
@@ -144,24 +148,28 @@ class LanguagesIg extends Languages {
     ),
     'awa': Language(
       'awa',
-      'Awadị',
+      'Awadhi',
     ),
     'ay': Language(
       'ay',
-      'Ayịmarà',
+      'Aymara',
     ),
     'az': Language(
       'az',
-      'Azerbajanị',
+      'Azerbaijani',
       short: 'Azeri',
     ),
     'ba': Language(
       'ba',
-      'Bashki',
+      'Bashkir',
+    ),
+    'bal': Language(
+      'bal',
+      'Baluchi',
     ),
     'ban': Language(
       'ban',
-      'Balinisị',
+      'Balinese',
     ),
     'bas': Language(
       'bas',
@@ -169,11 +177,15 @@ class LanguagesIg extends Languages {
     ),
     'be': Language(
       'be',
-      'Belarusianụ',
+      'Belarusian',
     ),
     'bem': Language(
       'bem',
       'Bembà',
+    ),
+    'bew': Language(
+      'bew',
+      'Betawi',
     ),
     'bez': Language(
       'bez',
@@ -181,11 +193,15 @@ class LanguagesIg extends Languages {
     ),
     'bg': Language(
       'bg',
-      'Bọlụgarịa',
+      'Bulgarian',
     ),
     'bgc': Language(
       'bgc',
       'Haryanvi',
+    ),
+    'bgn': Language(
+      'bgn',
+      'Western Balochi',
     ),
     'bho': Language(
       'bho',
@@ -203,13 +219,21 @@ class LanguagesIg extends Languages {
       'bla',
       'Siksikà',
     ),
+    'blo': Language(
+      'blo',
+      'Anii',
+    ),
+    'blt': Language(
+      'blt',
+      'Tai Dam',
+    ),
     'bm': Language(
       'bm',
       'Bambara',
     ),
     'bn': Language(
       'bn',
-      'Bengali',
+      'Bangla',
     ),
     'bo': Language(
       'bo',
@@ -221,15 +245,19 @@ class LanguagesIg extends Languages {
     ),
     'brx': Language(
       'brx',
-      'Bọdọ',
+      'Bodo',
     ),
     'bs': Language(
       'bs',
-      'Bosnia',
+      'Bosnian',
+    ),
+    'bss': Language(
+      'bss',
+      'Akoose',
     ),
     'bug': Language(
       'bug',
-      'Buginisị',
+      'Buginese',
     ),
     'byn': Language(
       'byn',
@@ -239,9 +267,17 @@ class LanguagesIg extends Languages {
       'ca',
       'Catalan',
     ),
+    'cad': Language(
+      'cad',
+      'Caddo',
+    ),
     'cay': Language(
       'cay',
       'Cayuga',
+    ),
+    'cch': Language(
+      'cch',
+      'Atsam',
     ),
     'ccp': Language(
       'ccp',
@@ -253,7 +289,7 @@ class LanguagesIg extends Languages {
     ),
     'ceb': Language(
       'ceb',
-      'Cebụanọ',
+      'Cebuano',
     ),
     'cgg': Language(
       'cgg',
@@ -261,11 +297,11 @@ class LanguagesIg extends Languages {
     ),
     'ch': Language(
       'ch',
-      'Chamoro',
+      'Chamorro',
     ),
     'chk': Language(
       'chk',
-      'Chukisị',
+      'Chuukese',
     ),
     'chm': Language(
       'chm',
@@ -273,65 +309,69 @@ class LanguagesIg extends Languages {
     ),
     'cho': Language(
       'cho',
-      'Choctawu',
+      'Choctaw',
     ),
     'chp': Language(
       'chp',
-      'Chipewan',
+      'Chipewyan',
     ),
     'chr': Language(
       'chr',
-      'Cheroke',
+      'Cherokee',
     ),
     'chy': Language(
       'chy',
       'Cheyene',
     ),
+    'cic': Language(
+      'cic',
+      'Chickasaw',
+    ),
     'ckb': Language(
       'ckb',
-      'Kurdish ọsote',
-      variant: 'Kurdish ọzọ',
-      menu: 'Kurdish ọsote',
+      'Central Kurdish',
+      variant: 'Kurdish, Sorani',
+      menu: 'Kurdish, Central',
     ),
     'clc': Language(
       'clc',
-      'Chilcotinị',
+      'Chilcotin',
     ),
     'co': Language(
       'co',
-      'Kọsịan',
+      'Corsican',
     ),
     'crg': Language(
       'crg',
-      'Mịchif',
+      'Michif',
     ),
     'crj': Language(
       'crj',
-      'Sọutarn East kree',
+      'Southern East Cree',
     ),
     'crk': Language(
       'crk',
-      'Plains kree',
+      'Plains Cree',
     ),
     'crl': Language(
       'crl',
-      'Nọrtan Eastị Kree',
+      'Northern East Cree',
     ),
     'crm': Language(
       'crm',
-      'Moọse kree',
+      'Moose Cree',
     ),
     'crr': Language(
       'crr',
-      'Carolina Algonịkwan',
+      'Carolina Algonquian',
     ),
     'cs': Language(
       'cs',
-      'Cheekị',
+      'Czech',
     ),
     'csw': Language(
       'csw',
-      'Swampi kree',
+      'Asụsụ Swampy Kree',
     ),
     'cu': Language(
       'cu',
@@ -343,11 +383,11 @@ class LanguagesIg extends Languages {
     ),
     'cy': Language(
       'cy',
-      'Wesh',
+      'Welsh',
     ),
     'da': Language(
       'da',
-      'Danịsh',
+      'Danish',
     ),
     'dak': Language(
       'dak',
@@ -355,27 +395,27 @@ class LanguagesIg extends Languages {
     ),
     'dar': Language(
       'dar',
-      'Dagwa',
+      'Dargwa',
     ),
     'dav': Language(
       'dav',
-      'Taịta',
+      'Taita',
     ),
     'de': Language(
       'de',
-      'Jamanị',
+      'German',
     ),
     'de-AT': Language(
       'de-AT',
-      'Jaman ndị Austria',
+      'Austrian German',
     ),
     'de-CH': Language(
       'de-CH',
-      'Jaman Izugbe ndị Switzerland',
+      'Swiss High German',
     ),
     'dgr': Language(
       'dgr',
-      'Dogribụ',
+      'Dogrib',
     ),
     'dje': Language(
       'dje',
@@ -387,11 +427,11 @@ class LanguagesIg extends Languages {
     ),
     'dsb': Language(
       'dsb',
-      'Lowa Sorbịan',
+      'Lower Sorbian',
     ),
     'dua': Language(
       'dua',
-      'Dụala',
+      'Duala',
     ),
     'dv': Language(
       'dv',
@@ -399,7 +439,7 @@ class LanguagesIg extends Languages {
     ),
     'dyo': Language(
       'dyo',
-      'Jọla-Fọnyị',
+      'Jola-Fonyi',
     ),
     'dz': Language(
       'dz',
@@ -411,7 +451,7 @@ class LanguagesIg extends Languages {
     ),
     'ebu': Language(
       'ebu',
-      'Ebụm',
+      'Embu',
     ),
     'ee': Language(
       'ee',
@@ -423,11 +463,11 @@ class LanguagesIg extends Languages {
     ),
     'eka': Language(
       'eka',
-      'Ekajukụ',
+      'Ekajuk',
     ),
     'el': Language(
       'el',
-      'Giriikị',
+      'Grik',
     ),
     'en': Language(
       'en',
@@ -453,39 +493,43 @@ class LanguagesIg extends Languages {
     ),
     'eo': Language(
       'eo',
-      'Ndị Esperantọ',
+      'Esperanto',
     ),
     'es': Language(
       'es',
-      'Spanishi',
+      'Spanish',
     ),
     'es-419': Language(
       'es-419',
-      'Spanishi ndị Latin America',
+      'Spanish ndị Latin America',
     ),
     'es-ES': Language(
       'es-ES',
-      'Spanishi ndị Europe',
+      'Spanish ndị Europe',
     ),
     'es-MX': Language(
       'es-MX',
-      'Spanishi ndị Mexico',
+      'Spanish ndị Mexico',
     ),
     'et': Language(
       'et',
-      'Ndị Estọnịa',
+      'Estonian',
     ),
     'eu': Language(
       'eu',
-      'Baskwe',
+      'Basque',
     ),
     'ewo': Language(
       'ewo',
-      'Ewọndọ',
+      'Ewondo',
     ),
     'fa': Language(
       'fa',
-      'Peshianụ',
+      'Asụsụ Persia',
+    ),
+    'fa-AF': Language(
+      'fa-AF',
+      'Dari',
     ),
     'ff': Language(
       'ff',
@@ -493,11 +537,11 @@ class LanguagesIg extends Languages {
     ),
     'fi': Language(
       'fi',
-      'Fịnịsh',
+      'Finnish',
     ),
     'fil': Language(
       'fil',
-      'Fịlịpịnọ',
+      'Filipino',
     ),
     'fj': Language(
       'fj',
@@ -505,7 +549,7 @@ class LanguagesIg extends Languages {
     ),
     'fo': Language(
       'fo',
-      'Farọse',
+      'Faroese',
     ),
     'fon': Language(
       'fon',
@@ -513,35 +557,35 @@ class LanguagesIg extends Languages {
     ),
     'fr': Language(
       'fr',
-      'Fụrenchị',
+      'French',
     ),
     'fr-CA': Language(
       'fr-CA',
-      'Fụrench ndị Canada',
+      'Canadian French',
     ),
     'fr-CH': Language(
       'fr-CH',
-      'Fụrench ndị Switzerland',
+      'Swiss French',
     ),
     'frc': Language(
       'frc',
-      'Kajun Furenchị',
+      'Cajun French',
     ),
     'frr': Language(
       'frr',
-      'Nọrtan Frisian',
+      'Northern Frisian',
     ),
     'fur': Language(
       'fur',
-      'Frụlịan',
+      'Friulian',
     ),
     'fy': Language(
       'fy',
-      'Westan Frịsịan',
+      'Ọdịda anyanwụ Frisian',
     ),
     'ga': Language(
       'ga',
-      'Ịrịsh',
+      'Irish',
     ),
     'gaa': Language(
       'gaa',
@@ -549,23 +593,23 @@ class LanguagesIg extends Languages {
     ),
     'gd': Language(
       'gd',
-      'Sụkọtịs Gelị',
+      'Asụsụ Scottish Gaelic',
     ),
     'gez': Language(
       'gez',
-      'Gịzị',
+      'Geez',
     ),
     'gil': Language(
       'gil',
-      'Gilbertisị',
+      'Gilbertese',
     ),
     'gl': Language(
       'gl',
-      'Galịcịan',
+      'Galician',
     ),
     'gn': Language(
       'gn',
-      'Gwarani',
+      'Guarani',
     ),
     'gor': Language(
       'gor',
@@ -577,11 +621,11 @@ class LanguagesIg extends Languages {
     ),
     'gu': Language(
       'gu',
-      'Gụaratị',
+      'Gujarati',
     ),
     'guz': Language(
       'guz',
-      'Gụshị',
+      'Gusii',
     ),
     'gv': Language(
       'gv',
@@ -589,7 +633,7 @@ class LanguagesIg extends Languages {
     ),
     'gwi': Language(
       'gwi',
-      'Gwichin',
+      'Gwichʼin',
     ),
     'ha': Language(
       'ha',
@@ -605,7 +649,7 @@ class LanguagesIg extends Languages {
     ),
     'hax': Language(
       'hax',
-      'Sọutarn Haida',
+      'Southern Haida',
     ),
     'he': Language(
       'he',
@@ -613,7 +657,7 @@ class LanguagesIg extends Languages {
     ),
     'hi': Language(
       'hi',
-      'Hindị',
+      'Hindi',
     ),
     'hil': Language(
       'hil',
@@ -623,13 +667,17 @@ class LanguagesIg extends Languages {
       'hmn',
       'Hmong',
     ),
+    'hnj': Language(
+      'hnj',
+      'Hmong Njua',
+    ),
     'hr': Language(
       'hr',
-      'Kọrọtịan',
+      'Croatian',
     ),
     'hsb': Language(
       'hsb',
-      'Ụpa Sọrbịa',
+      'Upper Sorbian',
     ),
     'ht': Language(
       'ht',
@@ -637,7 +685,7 @@ class LanguagesIg extends Languages {
     ),
     'hu': Language(
       'hu',
-      'Hụngarian',
+      'Hungarian',
     ),
     'hup': Language(
       'hup',
@@ -657,11 +705,11 @@ class LanguagesIg extends Languages {
     ),
     'ia': Language(
       'ia',
-      'Intalịgụa',
+      'Interlingua',
     ),
     'iba': Language(
       'iba',
-      'Ibanị',
+      'Iban',
     ),
     'ibb': Language(
       'ibb',
@@ -669,7 +717,11 @@ class LanguagesIg extends Languages {
     ),
     'id': Language(
       'id',
-      'Indonisia',
+      'Indonesian',
+    ),
+    'ie': Language(
+      'ie',
+      'Interlingue',
     ),
     'ig': Language(
       'ig',
@@ -677,7 +729,7 @@ class LanguagesIg extends Languages {
     ),
     'ii': Language(
       'ii',
-      'Sịchụayị',
+      'Sichuan Yi',
     ),
     'ikt': Language(
       'ikt',
@@ -697,19 +749,19 @@ class LanguagesIg extends Languages {
     ),
     'is': Language(
       'is',
-      'Icịlandịk',
+      'Icelandic',
     ),
     'it': Language(
       'it',
-      'Italịanu',
+      'Italian',
     ),
     'iu': Language(
       'iu',
-      'Inuktitutị',
+      'Inuktitut',
     ),
     'ja': Language(
       'ja',
-      'Japaniisi',
+      'Japanese',
     ),
     'jbo': Language(
       'jbo',
@@ -717,7 +769,7 @@ class LanguagesIg extends Languages {
     ),
     'jgo': Language(
       'jgo',
-      'Ngọmba',
+      'Ngomba',
     ),
     'jmc': Language(
       'jmc',
@@ -725,11 +777,15 @@ class LanguagesIg extends Languages {
     ),
     'jv': Language(
       'jv',
-      'Java',
+      'Javanese',
     ),
     'ka': Language(
       'ka',
-      'Geọjịan',
+      'Georgian',
+    ),
+    'kaa': Language(
+      'kaa',
+      'Kara-Kalpak',
     ),
     'kab': Language(
       'kab',
@@ -741,7 +797,7 @@ class LanguagesIg extends Languages {
     ),
     'kaj': Language(
       'kaj',
-      'Ju',
+      'Jju',
     ),
     'kam': Language(
       'kam',
@@ -753,15 +809,19 @@ class LanguagesIg extends Languages {
     ),
     'kcg': Language(
       'kcg',
-      'Tịyap',
+      'Tyap',
     ),
     'kde': Language(
       'kde',
-      'Makọnde',
+      'Makonde',
     ),
     'kea': Language(
       'kea',
       'Kabụverdịanụ',
+    ),
+    'ken': Language(
+      'ken',
+      'Kenyang',
     ),
     'kfo': Language(
       'kfo',
@@ -769,7 +829,7 @@ class LanguagesIg extends Languages {
     ),
     'kgp': Language(
       'kgp',
-      'Kainganga',
+      'Kaingang',
     ),
     'kha': Language(
       'kha',
@@ -777,55 +837,55 @@ class LanguagesIg extends Languages {
     ),
     'khq': Language(
       'khq',
-      'Kọyra Chịnị',
+      'Koyra Chiini',
     ),
     'ki': Language(
       'ki',
-      'Kịkụyụ',
+      'Kikuyu',
     ),
     'kj': Language(
       'kj',
-      'Kwanyama',
+      'Kuanyama',
     ),
     'kk': Language(
       'kk',
-      'Kazak',
+      'Kazakh',
     ),
     'kkj': Language(
       'kkj',
-      'Kakọ',
+      'Kako',
     ),
     'kl': Language(
       'kl',
-      'Kalaalịsụt',
+      'Kalaallisut',
     ),
     'kln': Language(
       'kln',
-      'Kalenjịn',
+      'Kalenjin',
     ),
     'km': Language(
       'km',
-      'Keme',
+      'Khmer',
     ),
     'kmb': Language(
       'kmb',
-      'Kimbundụ',
+      'Kimbundu',
     ),
     'kn': Language(
       'kn',
-      'Kanhada',
+      'Kannada',
     ),
     'ko': Language(
       'ko',
-      'Korịa',
+      'Korean',
     ),
     'kok': Language(
       'kok',
-      'Kọnkanị',
+      'Konkani',
     ),
     'kpe': Language(
       'kpe',
-      'Kpele',
+      'Kpelle',
     ),
     'kr': Language(
       'kr',
@@ -833,7 +893,7 @@ class LanguagesIg extends Languages {
     ),
     'krc': Language(
       'krc',
-      'Karaché-Balka',
+      'Karachay-Balkar',
     ),
     'krl': Language(
       'krl',
@@ -841,15 +901,15 @@ class LanguagesIg extends Languages {
     ),
     'kru': Language(
       'kru',
-      'Kuruk',
+      'Kurukh',
     ),
     'ks': Language(
       'ks',
-      'Kashmịrị',
+      'Kashmiri',
     ),
     'ksb': Language(
       'ksb',
-      'Shabala',
+      'Shambala',
     ),
     'ksf': Language(
       'ksf',
@@ -857,11 +917,11 @@ class LanguagesIg extends Languages {
     ),
     'ksh': Language(
       'ksh',
-      'Colognịan',
+      'Colognian',
     ),
     'ku': Language(
       'ku',
-      'Ndị Kụrdịsh',
+      'Kurdish',
     ),
     'kum': Language(
       'kum',
@@ -873,19 +933,23 @@ class LanguagesIg extends Languages {
     ),
     'kw': Language(
       'kw',
-      'Kọnịsh',
+      'Cornish',
     ),
     'kwk': Language(
       'kwk',
-      'Kwakwala',
+      'Kwakʼwala',
+    ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
     ),
     'ky': Language(
       'ky',
-      'Kyrayz',
+      'Kyrgyz',
     ),
     'la': Language(
       'la',
-      'Latịn',
+      'Latin',
     ),
     'lad': Language(
       'lad',
@@ -897,11 +961,11 @@ class LanguagesIg extends Languages {
     ),
     'lb': Language(
       'lb',
-      'Lụxenbọụgịsh',
+      'Luxembourgish',
     ),
     'lez': Language(
       'lez',
-      'Lezgian',
+      'Lezghian',
     ),
     'lg': Language(
       'lg',
@@ -911,6 +975,10 @@ class LanguagesIg extends Languages {
       'li',
       'Limburgish',
     ),
+    'lij': Language(
+      'lij',
+      'Ligurian',
+    ),
     'lil': Language(
       'lil',
       'Liloetị',
@@ -919,17 +987,21 @@ class LanguagesIg extends Languages {
       'lkt',
       'Lakota',
     ),
+    'lmo': Language(
+      'lmo',
+      'Lombard',
+    ),
     'ln': Language(
       'ln',
-      'Lịngala',
+      'Lingala',
     ),
     'lo': Language(
       'lo',
-      'Laọ',
+      'Lao',
     ),
     'lou': Language(
       'lou',
-      'Louisiana Kreole',
+      'Louisiana Creole',
     ),
     'loz': Language(
       'loz',
@@ -937,19 +1009,23 @@ class LanguagesIg extends Languages {
     ),
     'lrc': Language(
       'lrc',
-      'Nọrtụ Lụrị',
+      'Northern Luri',
     ),
     'lsm': Language(
       'lsm',
-      'Samia',
+      'Saamia',
     ),
     'lt': Language(
       'lt',
-      'Lituanian',
+      'Lithuanian',
+    ),
+    'ltg': Language(
+      'ltg',
+      'Latgalian',
     ),
     'lu': Language(
       'lu',
-      'Lịba-Katanga',
+      'Luba-Katanga',
     ),
     'lua': Language(
       'lua',
@@ -965,11 +1041,11 @@ class LanguagesIg extends Languages {
     ),
     'luy': Language(
       'luy',
-      'Lụyịa',
+      'Luyia',
     ),
     'lv': Language(
       'lv',
-      'Latviani',
+      'Latvian',
     ),
     'mad': Language(
       'mad',
@@ -981,15 +1057,15 @@ class LanguagesIg extends Languages {
     ),
     'mai': Language(
       'mai',
-      'Maịtịlị',
+      'Maithili',
     ),
     'mak': Language(
       'mak',
-      'Makasa',
+      'Makasar',
     ),
     'mas': Language(
       'mas',
-      'Masaị',
+      'Masai',
     ),
     'mdf': Language(
       'mdf',
@@ -1001,19 +1077,19 @@ class LanguagesIg extends Languages {
     ),
     'mer': Language(
       'mer',
-      'Merụ',
+      'Meru',
     ),
     'mfe': Language(
       'mfe',
-      'Mọrịsye',
+      'Morisyen',
     ),
     'mg': Language(
       'mg',
-      'Malagasị',
+      'Malagasy',
     ),
     'mgh': Language(
       'mgh',
-      'Makụwa Metọ',
+      'Makhuwa-Meetto',
     ),
     'mgo': Language(
       'mgo',
@@ -1021,23 +1097,23 @@ class LanguagesIg extends Languages {
     ),
     'mh': Language(
       'mh',
-      'Marshalese',
+      'Marshallese',
     ),
     'mi': Language(
       'mi',
-      'Maọrị',
+      'Māori',
     ),
     'mic': Language(
       'mic',
-      'Mịkmak',
+      "Mi'kmaw",
     ),
     'min': Language(
       'min',
-      'Mịnangkabau',
+      'Minangkabau',
     ),
     'mk': Language(
       'mk',
-      'Masedọnịa',
+      'Macedonian',
     ),
     'ml': Language(
       'ml',
@@ -1049,15 +1125,15 @@ class LanguagesIg extends Languages {
     ),
     'mni': Language(
       'mni',
-      'Manịpụrị',
+      'Asụsụ Manipuri',
     ),
     'moe': Language(
       'moe',
-      'Inu-imun',
+      'Innu-aimun',
     ),
     'moh': Language(
       'moh',
-      'Mohọk',
+      'Mohawk',
     ),
     'mos': Language(
       'mos',
@@ -1065,19 +1141,19 @@ class LanguagesIg extends Languages {
     ),
     'mr': Language(
       'mr',
-      'Maratị',
+      'Asụsụ Marathi',
     ),
     'ms': Language(
       'ms',
-      'Maleyi',
+      'Malay',
     ),
     'mt': Language(
       'mt',
-      'Matịse',
+      'Asụsụ Malta',
     ),
     'mua': Language(
       'mua',
-      'Mụdang',
+      'Mundang',
     ),
     'mul': Language(
       'mul',
@@ -1089,19 +1165,19 @@ class LanguagesIg extends Languages {
     ),
     'mwl': Language(
       'mwl',
-      'Mịrandisị',
+      'Mirandese',
     ),
     'my': Language(
       'my',
-      'Bụrmese',
+      'Burmese',
     ),
     'myv': Language(
       'myv',
-      'Erzaya',
+      'Erzya',
     ),
     'mzn': Language(
       'mzn',
-      'Mazandaranị',
+      'Mazanderani',
     ),
     'na': Language(
       'na',
@@ -1109,7 +1185,7 @@ class LanguagesIg extends Languages {
     ),
     'nap': Language(
       'nap',
-      'Nịapolitan',
+      'Neapolitan',
     ),
     'naq': Language(
       'naq',
@@ -1117,15 +1193,19 @@ class LanguagesIg extends Languages {
     ),
     'nb': Language(
       'nb',
-      'Nọrweyịan Bọkmal',
+      'Norwegian Bokmål',
     ),
     'nd': Language(
       'nd',
-      'Nọrtụ Ndabede',
+      'North Ndebele',
     ),
     'nds': Language(
       'nds',
-      'Lowa German',
+      'Low German',
+    ),
+    'nds-NL': Language(
+      'nds-NL',
+      'Low Saxon',
     ),
     'ne': Language(
       'ne',
@@ -1133,7 +1213,7 @@ class LanguagesIg extends Languages {
     ),
     'new': Language(
       'new',
-      'Nịwari',
+      'Newari',
     ),
     'ng': Language(
       'ng',
@@ -1145,27 +1225,31 @@ class LanguagesIg extends Languages {
     ),
     'niu': Language(
       'niu',
-      'Niwan',
+      'Niuean',
     ),
     'nl': Language(
       'nl',
-      'Dọchị',
+      'Dutch',
+    ),
+    'nl-BE': Language(
+      'nl-BE',
+      'Flemish',
     ),
     'nmg': Language(
       'nmg',
-      'Kwasịọ',
+      'Kwasio',
     ),
     'nn': Language(
       'nn',
-      'Nọrweyịan Nynersk',
+      'Norwegian Nynorsk',
     ),
     'nnh': Language(
       'nnh',
-      'Nglembọn',
+      'Ngiemboon',
     ),
     'no': Language(
       'no',
-      'Nọrweyịan',
+      'Norwegian',
     ),
     'nog': Language(
       'nog',
@@ -1173,19 +1257,19 @@ class LanguagesIg extends Languages {
     ),
     'nqo': Language(
       'nqo',
-      'Nkọ',
+      'N’Ko',
     ),
     'nr': Language(
       'nr',
-      'Sọut Ndebele',
+      'South Ndebele',
     ),
     'nso': Language(
       'nso',
-      'Nọrtan Sotọ',
+      'Northern Sotho',
     ),
     'nus': Language(
       'nus',
-      'Nụer',
+      'Nuer',
     ),
     'nv': Language(
       'nv',
@@ -1197,23 +1281,23 @@ class LanguagesIg extends Languages {
     ),
     'nyn': Language(
       'nyn',
-      'Nyakọle',
+      'Nyankole',
     ),
     'oc': Language(
       'oc',
-      'Osịtan',
+      'Asụsụ Osịtan',
     ),
     'ojb': Language(
       'ojb',
-      'Nọrtwestan Ojibwa',
+      'Northwestern Ojibwa',
     ),
     'ojc': Language(
       'ojc',
-      'Ojibwa ọsote',
+      'Central Ojibwa',
     ),
     'ojs': Language(
       'ojs',
-      'Oji-kree',
+      'Oji-Cree',
     ),
     'ojw': Language(
       'ojw',
@@ -1225,7 +1309,7 @@ class LanguagesIg extends Languages {
     ),
     'om': Language(
       'om',
-      'Ọromo',
+      'Oromo',
     ),
     'or': Language(
       'or',
@@ -1233,7 +1317,11 @@ class LanguagesIg extends Languages {
     ),
     'os': Language(
       'os',
-      'Osetik',
+      'Ossetic',
+    ),
+    'osa': Language(
+      'osa',
+      'Osage',
     ),
     'pa': Language(
       'pa',
@@ -1249,27 +1337,27 @@ class LanguagesIg extends Languages {
     ),
     'pap': Language(
       'pap',
-      'Papịamento',
+      'Papiamento',
     ),
     'pau': Language(
       'pau',
-      'Palawan',
+      'Palauan',
     ),
     'pcm': Language(
       'pcm',
-      'Pidgịn',
+      'Pidgin ndị Naijirịa',
     ),
     'pis': Language(
       'pis',
-      'Pijịn',
+      'Pijin',
     ),
     'pl': Language(
       'pl',
-      'Poliishi',
+      'Asụsụ Polish',
     ),
     'pqm': Language(
       'pqm',
-      'Maliset-Pasamakwodị',
+      'Maliseet-Passamaquoddy',
     ),
     'prg': Language(
       'prg',
@@ -1285,7 +1373,7 @@ class LanguagesIg extends Languages {
     ),
     'pt-BR': Language(
       'pt-BR',
-      'Pọrtụgụese ndị Brazil',
+      'Asụsụ Portugese ndị Brazil',
     ),
     'pt-PT': Language(
       'pt-PT',
@@ -1293,7 +1381,11 @@ class LanguagesIg extends Languages {
     ),
     'qu': Language(
       'qu',
-      'Qụechụa',
+      'Asụsụ Quechua',
+    ),
+    'quc': Language(
+      'quc',
+      'Kʼicheʼ',
     ),
     'raj': Language(
       'raj',
@@ -1301,35 +1393,43 @@ class LanguagesIg extends Languages {
     ),
     'rap': Language(
       'rap',
-      'Rapunwị',
+      'Rapanui',
     ),
     'rar': Language(
       'rar',
-      'Rarotonganị',
+      'Rarotongan',
     ),
     'rhg': Language(
       'rhg',
-      'Rohinga',
+      'Rohingya',
+    ),
+    'rif': Language(
+      'rif',
+      'Riffian',
     ),
     'rm': Language(
       'rm',
-      'Rọmansị',
+      'Asụsụ Romansh',
     ),
     'rn': Language(
       'rn',
-      'Rụndị',
+      'Rundi',
     ),
     'ro': Language(
       'ro',
-      'Romania',
+      'Asụsụ Romanian',
+    ),
+    'ro-MD': Language(
+      'ro-MD',
+      'Moldavian',
     ),
     'rof': Language(
       'rof',
-      'Rọmbọ',
+      'Rombo',
     ),
     'ru': Language(
       'ru',
-      'Rọshian',
+      'Asụsụ Russia',
     ),
     'rup': Language(
       'rup',
@@ -1345,7 +1445,7 @@ class LanguagesIg extends Languages {
     ),
     'sa': Language(
       'sa',
-      'Sansịkịt',
+      'Asụsụ Sanskrit',
     ),
     'sad': Language(
       'sad',
@@ -1353,31 +1453,31 @@ class LanguagesIg extends Languages {
     ),
     'sah': Language(
       'sah',
-      'Saka',
+      'Yakut',
     ),
     'saq': Language(
       'saq',
-      'Sambụrụ',
+      'Samburu',
     ),
     'sat': Language(
       'sat',
-      'Santalị',
+      'Asụsụ Santali',
     ),
     'sba': Language(
       'sba',
-      'Nkambé',
+      'Ngambay',
     ),
     'sbp': Language(
       'sbp',
-      'Sangụ',
+      'Sangu',
     ),
     'sc': Language(
       'sc',
-      'Sardinian',
+      'Asụsụ Sardini',
     ),
     'scn': Language(
       'scn',
-      'Sisịlian',
+      'Sicilian',
     ),
     'sco': Language(
       'sco',
@@ -1385,11 +1485,15 @@ class LanguagesIg extends Languages {
     ),
     'sd': Language(
       'sd',
-      'Sịndh',
+      'Asụsụ Sindhi',
+    ),
+    'sdh': Language(
+      'sdh',
+      'Southern Kurdish',
     ),
     'se': Language(
       'se',
-      'Nọrtan Samị',
+      'Northern Sami',
     ),
     'seh': Language(
       'seh',
@@ -1397,11 +1501,11 @@ class LanguagesIg extends Languages {
     ),
     'ses': Language(
       'ses',
-      'Kọyraboro Senị',
+      'Koyraboro Senni',
     ),
     'sg': Language(
       'sg',
-      'Sangọ',
+      'Sango',
     ),
     'shi': Language(
       'shi',
@@ -1415,25 +1519,37 @@ class LanguagesIg extends Languages {
       'si',
       'Sinhala',
     ),
+    'sid': Language(
+      'sid',
+      'Sidamo',
+    ),
     'sk': Language(
       'sk',
-      'Slova',
+      'Asụsụ Slovak',
     ),
     'sl': Language(
       'sl',
-      'Slovịan',
+      'Asụsụ Slovenia',
     ),
     'slh': Language(
       'slh',
-      'Sọutarn Lushoọtseed',
+      'Southern Lushootseed',
     ),
     'sm': Language(
       'sm',
-      'Samọa',
+      'Samoan',
+    ),
+    'sma': Language(
+      'sma',
+      'Southern Sami',
+    ),
+    'smj': Language(
+      'smj',
+      'Lule Sami',
     ),
     'smn': Language(
       'smn',
-      'Inarị Samị',
+      'Inari Sami',
     ),
     'sms': Language(
       'sms',
@@ -1441,11 +1557,11 @@ class LanguagesIg extends Languages {
     ),
     'sn': Language(
       'sn',
-      'Shọna',
+      'Shona',
     ),
     'snk': Language(
       'snk',
-      'Soninké',
+      'Soninke',
     ),
     'so': Language(
       'so',
@@ -1453,11 +1569,11 @@ class LanguagesIg extends Languages {
     ),
     'sq': Language(
       'sq',
-      'Albanianị',
+      'Asụsụ Albania',
     ),
     'sr': Language(
       'sr',
-      'Sebịan',
+      'Asụsụ Serbia',
     ),
     'srn': Language(
       'srn',
@@ -1467,9 +1583,13 @@ class LanguagesIg extends Languages {
       'ss',
       'Swati',
     ),
+    'ssy': Language(
+      'ssy',
+      'Saho',
+    ),
     'st': Language(
       'st',
-      'Sọụth Soto',
+      'Southern Sotho',
     ),
     'str': Language(
       'str',
@@ -1477,7 +1597,7 @@ class LanguagesIg extends Languages {
     ),
     'su': Language(
       'su',
-      'Sudanese',
+      'Asụsụ Sundan',
     ),
     'suk': Language(
       'suk',
@@ -1489,15 +1609,19 @@ class LanguagesIg extends Languages {
     ),
     'sw': Language(
       'sw',
-      'Swahili',
+      'Asụsụ Swahili',
     ),
     'swb': Language(
       'swb',
-      'Komorịan',
+      'Comorian',
     ),
     'syr': Language(
       'syr',
       'Sirịak',
+    ),
+    'szl': Language(
+      'szl',
+      'Asụsụ Sileshia',
     ),
     'ta': Language(
       'ta',
@@ -1505,11 +1629,11 @@ class LanguagesIg extends Languages {
     ),
     'tce': Language(
       'tce',
-      'Sọutarn Tuchone',
+      'Southern Tutchone',
     ),
     'te': Language(
       'te',
-      'Telụgụ',
+      'Telugu',
     ),
     'tem': Language(
       'tem',
@@ -1517,7 +1641,7 @@ class LanguagesIg extends Languages {
     ),
     'teo': Language(
       'teo',
-      'Tesọ',
+      'Teso',
     ),
     'tet': Language(
       'tet',
@@ -1525,7 +1649,7 @@ class LanguagesIg extends Languages {
     ),
     'tg': Language(
       'tg',
-      'Tajịk',
+      'Tajik',
     ),
     'tgx': Language(
       'tgx',
@@ -1533,7 +1657,7 @@ class LanguagesIg extends Languages {
     ),
     'th': Language(
       'th',
-      'Taị',
+      'Thai',
     ),
     'tht': Language(
       'tht',
@@ -1541,15 +1665,15 @@ class LanguagesIg extends Languages {
     ),
     'ti': Language(
       'ti',
-      'Tịgrịnya',
+      'Tigrinya',
     ),
     'tig': Language(
       'tig',
-      'Tịgre',
+      'Tigre',
     ),
     'tk': Language(
       'tk',
-      'Turkịs',
+      'Turkmen',
     ),
     'tlh': Language(
       'tlh',
@@ -1557,19 +1681,19 @@ class LanguagesIg extends Languages {
     ),
     'tli': Language(
       'tli',
-      'Tlịngịt',
+      'Tlingit',
     ),
     'tn': Language(
       'tn',
-      'Swana',
+      'Tswana',
     ),
     'to': Language(
       'to',
-      'Tọngan',
+      'Tongan',
     ),
     'tok': Language(
       'tok',
-      'Tokị pọna',
+      'Toki Pona',
     ),
     'tpi': Language(
       'tpi',
@@ -1577,23 +1701,27 @@ class LanguagesIg extends Languages {
     ),
     'tr': Language(
       'tr',
-      'Tọkiishi',
+      'Turkish',
     ),
     'trv': Language(
       'trv',
-      'Tarokọ',
+      'Taroko',
+    ),
+    'trw': Language(
+      'trw',
+      'Torwali',
     ),
     'ts': Language(
       'ts',
-      'Songa',
+      'Tsonga',
     ),
     'tt': Language(
       'tt',
-      'Tata',
+      'Asụsụ Tatar',
     ),
     'ttm': Language(
       'ttm',
-      'Nọrtan Tuchone',
+      'Northern Tutchone',
     ),
     'tum': Language(
       'tum',
@@ -1605,7 +1733,7 @@ class LanguagesIg extends Languages {
     ),
     'twq': Language(
       'twq',
-      'Tasawa',
+      'Tasawaq',
     ),
     'ty': Language(
       'ty',
@@ -1617,91 +1745,103 @@ class LanguagesIg extends Languages {
     ),
     'tzm': Language(
       'tzm',
-      'Central Atlas',
+      'Central Atlas Tamazight',
     ),
     'udm': Language(
       'udm',
-      'Udumụrt',
+      'Udmurt',
     ),
     'ug': Language(
       'ug',
-      'Ụyghụr',
+      'Uyghur',
     ),
     'uk': Language(
       'uk',
-      'Ukureenị',
+      'Asụsụ Ukrain',
     ),
     'umb': Language(
       'umb',
-      'Umbụndụ',
+      'Umbundu',
     ),
     'und': Language(
       'und',
-      'Asụsụ amaghị',
+      'Asụsụ a na-amaghị',
     ),
     'ur': Language(
       'ur',
-      'Urdụ',
+      'Urdu',
     ),
     'uz': Language(
       'uz',
-      'Ụzbek',
-    ),
-    'vai': Language(
-      'vai',
-      'Val',
+      'Uzbek',
     ),
     've': Language(
       've',
       'Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Asụsụ Veneshia',
+    ),
     'vi': Language(
       'vi',
-      'Vietnamisi',
+      'Vietnamese',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
     ),
     'vo': Language(
       'vo',
-      'Volapụ',
+      'Volapük',
     ),
     'vun': Language(
       'vun',
-      'Vụnjọ',
+      'Vunjo',
     ),
     'wa': Language(
       'wa',
-      'Waloọn',
+      'Walloon',
     ),
     'wae': Language(
       'wae',
-      'Wasa',
+      'Walser',
     ),
     'wal': Language(
       'wal',
-      'Woleịta',
+      'Wolaytta',
     ),
     'war': Language(
       'war',
-      'Waraị',
+      'Waray',
+    ),
+    'wbp': Language(
+      'wbp',
+      'Warlpiri',
     ),
     'wo': Language(
       'wo',
-      'Wolọf',
+      'Wolof',
     ),
     'wuu': Language(
       'wuu',
-      'Wụ Chainisị',
+      'Wu Chinese',
     ),
     'xal': Language(
       'xal',
-      'Kalmik',
+      'Kalmyk',
     ),
     'xh': Language(
       'xh',
-      'Xhọsa',
+      'Xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
     ),
     'xog': Language(
       'xog',
-      'Sọga',
+      'Soga',
     ),
     'yav': Language(
       'yav',
@@ -1713,7 +1853,7 @@ class LanguagesIg extends Languages {
     ),
     'yi': Language(
       'yi',
-      'Yịdịsh',
+      'Yiddish',
     ),
     'yo': Language(
       'yo',
@@ -1721,29 +1861,33 @@ class LanguagesIg extends Languages {
     ),
     'yrl': Language(
       'yrl',
-      'Nheengatụ',
+      'Asụsụ Nheengatu',
     ),
     'yue': Language(
       'yue',
-      'Katọnịse',
-      menu: 'Chinese,Cantonese',
+      'Cantonese',
+      menu: 'Chaịniiz,Cantonese',
+    ),
+    'za': Language(
+      'za',
+      'Zhuang',
     ),
     'zgh': Language(
       'zgh',
-      'Standard Moroccan Tamazait',
+      'Standard Moroccan Tamazight',
     ),
     'zh': Language(
       'zh',
-      'Chainisi',
-      menu: 'Chainisi',
+      'Chaịniiz',
+      menu: 'Chaịniiz, Mandarin',
     ),
     'zh-Hans': Language(
       'zh-Hans',
-      'Asụsụ Chinese dị mfe',
+      'Asụsụ Chaịniiz dị mfe',
     ),
     'zh-Hant': Language(
       'zh-Hant',
-      'Asụsụ Chinese Izugbe',
+      'Asụsụ ọdịnala Chaịniiz',
     ),
     'zu': Language(
       'zu',
@@ -1755,7 +1899,7 @@ class LanguagesIg extends Languages {
     ),
     'zxx': Language(
       'zxx',
-      'Ndị ọzọ abụghị asụsụ',
+      'Enweghị asụsụ dịnaya',
     ),
     'zza': Language(
       'zza',
@@ -1773,29 +1917,73 @@ class ScriptsIg extends Scripts {
       'Adlm',
       'Adlam',
     ),
+    'Aghb': Script(
+      'Aghb',
+      'Caucasian Albanian',
+    ),
     'Arab': Script(
       'Arab',
       'Mkpụrụ Okwu Arabic',
     ),
     'Aran': Script(
       'Aran',
-      'Nastalik',
+      'Nastaliq',
+    ),
+    'Armi': Script(
+      'Armi',
+      'Imperial Aramaic',
     ),
     'Armn': Script(
       'Armn',
       'Mkpụrụ ọkwụ Armenịan',
     ),
+    'Avst': Script(
+      'Avst',
+      'Avestan',
+    ),
+    'Bali': Script(
+      'Bali',
+      'Balinese',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'Bamum',
+    ),
+    'Bass': Script(
+      'Bass',
+      'Bassa Vah',
+    ),
+    'Batk': Script(
+      'Batk',
+      'Batak',
+    ),
     'Beng': Script(
       'Beng',
       'Mkpụrụ ọkwụ Bangla',
+    ),
+    'Bhks': Script(
+      'Bhks',
+      'Bhaiksuki',
     ),
     'Bopo': Script(
       'Bopo',
       'Mkpụrụ ọkwụ Bopomofo',
     ),
+    'Brah': Script(
+      'Brah',
+      'Brahmi',
+    ),
     'Brai': Script(
       'Brai',
-      'Braịlle',
+      'Braille',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'Buginese',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'Buhid',
     ),
     'Cakm': Script(
       'Cakm',
@@ -1805,25 +1993,101 @@ class ScriptsIg extends Scripts {
       'Cans',
       'Unified Canadian Aboriginal Syllabics',
     ),
+    'Cari': Script(
+      'Cari',
+      'Carian',
+    ),
     'Cher': Script(
       'Cher',
-      'Cherọkee',
+      'Cherokee',
+    ),
+    'Chrs': Script(
+      'Chrs',
+      'Chorasmian',
+    ),
+    'Copt': Script(
+      'Copt',
+      'Coptic',
+    ),
+    'Cpmn': Script(
+      'Cpmn',
+      'Cypro-Minoan',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'Cypriot',
     ),
     'Cyrl': Script(
       'Cyrl',
-      'Mkpụrụ Okwu Cyrillic',
+      'Cyrillic',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'Old Church Slavonic Cyrillic',
     ),
     'Deva': Script(
       'Deva',
       'Mkpụrụ ọkwụ Devangarị',
     ),
+    'Diak': Script(
+      'Diak',
+      'Dives Akuru',
+    ),
+    'Dogr': Script(
+      'Dogr',
+      'Dogra',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'Deseret',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'Duployan shorthand',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'Egyptian hieroglyphs',
+    ),
+    'Elba': Script(
+      'Elba',
+      'Elbasan',
+    ),
+    'Elym': Script(
+      'Elym',
+      'Elymaic',
+    ),
     'Ethi': Script(
       'Ethi',
       'Mkpụrụ ọkwụ Etọpịa',
     ),
+    'Gara': Script(
+      'Gara',
+      'Garay',
+    ),
     'Geor': Script(
       'Geor',
       'Mkpụrụ ọkwụ Geọjịan',
+    ),
+    'Glag': Script(
+      'Glag',
+      'Glagolitic',
+    ),
+    'Gong': Script(
+      'Gong',
+      'Gunjala Gondi',
+    ),
+    'Gonm': Script(
+      'Gonm',
+      'Masaram Gondi',
+    ),
+    'Goth': Script(
+      'Goth',
+      'Gothic',
+    ),
+    'Gran': Script(
+      'Gran',
+      'Grantha',
     ),
     'Grek': Script(
       'Grek',
@@ -1832,6 +2096,10 @@ class ScriptsIg extends Scripts {
     'Gujr': Script(
       'Gujr',
       'Mkpụrụ ọkwụ Gụjaratị',
+    ),
+    'Gukh': Script(
+      'Gukh',
+      'Gurung Khema',
     ),
     'Guru': Script(
       'Guru',
@@ -1849,6 +2117,10 @@ class ScriptsIg extends Scripts {
       'Hani',
       'Mkpụrụ ọkwụ Han',
     ),
+    'Hano': Script(
+      'Hano',
+      'Hanunoo',
+    ),
     'Hans': Script(
       'Hans',
       'Nke dị mfe',
@@ -1856,8 +2128,12 @@ class ScriptsIg extends Scripts {
     ),
     'Hant': Script(
       'Hant',
-      'Izugbe',
-      standAlone: 'Han Izugbe',
+      'Omenala',
+      standAlone: 'Han site na omenala',
+    ),
+    'Hatr': Script(
+      'Hatr',
+      'Hatran',
     ),
     'Hebr': Script(
       'Hebr',
@@ -1867,113 +2143,485 @@ class ScriptsIg extends Scripts {
       'Hira',
       'Mkpụrụ okwụ Hịragana',
     ),
+    'Hluw': Script(
+      'Hluw',
+      'Anatolian Hieroglyphs',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'Pahawh Hmong',
+    ),
+    'Hmnp': Script(
+      'Hmnp',
+      'Nyiakeng Puachue Hmong',
+    ),
     'Hrkt': Script(
       'Hrkt',
       'mkpụrụ ọkwụ Japanịsị',
     ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamọ',
+    'Hung': Script(
+      'Hung',
+      'Old Hungarian',
+    ),
+    'Ital': Script(
+      'Ital',
+      'Old Italic',
+    ),
+    'Java': Script(
+      'Java',
+      'Javanese',
     ),
     'Jpan': Script(
       'Jpan',
       'Japanese',
     ),
+    'Kali': Script(
+      'Kali',
+      'Kayah Li',
+    ),
     'Kana': Script(
       'Kana',
       'Katakana',
+    ),
+    'Kawi': Script(
+      'Kawi',
+      'KAWI',
+    ),
+    'Khar': Script(
+      'Khar',
+      'Kharoshthi',
     ),
     'Khmr': Script(
       'Khmr',
       'Khmer',
     ),
+    'Khoj': Script(
+      'Khoj',
+      'Khojki',
+    ),
+    'Kits': Script(
+      'Kits',
+      'Khitan small script',
+    ),
     'Knda': Script(
       'Knda',
-      'Kannaada',
+      'Kannada',
     ),
     'Kore': Script(
       'Kore',
-      'Korea',
+      'Korean',
+    ),
+    'Krai': Script(
+      'Krai',
+      'Kirat Rai',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'Kaithi',
+    ),
+    'Lana': Script(
+      'Lana',
+      'Lanna',
     ),
     'Laoo': Script(
       'Laoo',
-      'Laọ',
+      'Lao',
+    ),
+    'Latf': Script(
+      'Latf',
+      'Fraktur Latin',
+    ),
+    'Latg': Script(
+      'Latg',
+      'Gaelic Latin',
     ),
     'Latn': Script(
       'Latn',
       'Latin',
     ),
+    'Lepc': Script(
+      'Lepc',
+      'Lepcha',
+    ),
+    'Limb': Script(
+      'Limb',
+      'Limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'Linear A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'Linear B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'Fraser',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'Lycian',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'Lydian',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      'Mahajani',
+    ),
+    'Maka': Script(
+      'Maka',
+      'Makasar',
+    ),
+    'Mand': Script(
+      'Mand',
+      'Mandaean',
+    ),
+    'Mani': Script(
+      'Mani',
+      'Manichaean',
+    ),
+    'Marc': Script(
+      'Marc',
+      'Marchen',
+    ),
+    'Medf': Script(
+      'Medf',
+      'Medefaidrin',
+    ),
+    'Mend': Script(
+      'Mend',
+      'Mende',
+    ),
+    'Merc': Script(
+      'Merc',
+      'Meroitic Cursive',
+    ),
+    'Mero': Script(
+      'Mero',
+      'Meroitic',
+    ),
     'Mlym': Script(
       'Mlym',
-      'Malayala',
+      'Malayalam',
     ),
     'Mong': Script(
       'Mong',
-      'Mọngọlịan',
+      'Mongolian',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'Mro',
     ),
     'Mtei': Script(
       'Mtei',
       'Meitei Mayek',
     ),
+    'Mult': Script(
+      'Mult',
+      'Multani',
+    ),
     'Mymr': Script(
       'Mymr',
       'Myanmar',
     ),
+    'Nagm': Script(
+      'Nagm',
+      'Nag Mundari',
+    ),
+    'Nand': Script(
+      'Nand',
+      'Nandinagari',
+    ),
+    'Narb': Script(
+      'Narb',
+      'Old North Arabian',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'Nabataean',
+    ),
     'Nkoo': Script(
       'Nkoo',
-      'Nkoọ',
+      'N’Ko',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'Nüshu',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'Ogham',
     ),
     'Olck': Script(
       'Olck',
-      'Ochiki',
+      'Ol Chiki',
+    ),
+    'Onao': Script(
+      'Onao',
+      'Ol Onal',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'Orkhon',
     ),
     'Orya': Script(
       'Orya',
-      'Ọdịa',
+      'Odia',
+    ),
+    'Osge': Script(
+      'Osge',
+      'Osage',
+    ),
+    'Osma': Script(
+      'Osma',
+      'Osmanya',
+    ),
+    'Ougr': Script(
+      'Ougr',
+      'Old Uyghur',
+    ),
+    'Palm': Script(
+      'Palm',
+      'Palmyrene',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'Pau Cin Hau',
+    ),
+    'Perm': Script(
+      'Perm',
+      'Old Permic',
+    ),
+    'Phag': Script(
+      'Phag',
+      'Phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'Inscriptional Pahlavi',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'Psalter Pahlavi',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'Phoenician',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Pollard Phonetic',
+    ),
+    'Prti': Script(
+      'Prti',
+      'Inscriptional Parthian',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'Zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'Rejang',
     ),
     'Rohg': Script(
       'Rohg',
       'Hanifi',
     ),
+    'Runr': Script(
+      'Runr',
+      'Runic',
+    ),
+    'Samr': Script(
+      'Samr',
+      'Samaritan',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      'Old South Arabian',
+    ),
+    'Saur': Script(
+      'Saur',
+      'Saurashtra',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'SignWriting',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'Shavian',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'Sharada',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      'Siddham',
+    ),
+    'Sind': Script(
+      'Sind',
+      'Khudawadi',
+    ),
     'Sinh': Script(
       'Sinh',
       'Sinhala',
     ),
+    'Sogd': Script(
+      'Sogd',
+      'Sogdian',
+    ),
+    'Sogo': Script(
+      'Sogo',
+      'Old Sogdian',
+    ),
+    'Sora': Script(
+      'Sora',
+      'Sora Sompeng',
+    ),
+    'Soyo': Script(
+      'Soyo',
+      'Soyombo',
+    ),
     'Sund': Script(
       'Sund',
-      'Sundanisị',
+      'Sundanese',
+    ),
+    'Sunu': Script(
+      'Sunu',
+      'Sunuwar',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'Syloti Nagri',
     ),
     'Syrc': Script(
       'Syrc',
-      'Syriak',
+      'Siriak',
+    ),
+    'Syre': Script(
+      'Syre',
+      'Estrangelo Syriac',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'Western Syriac',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'Eastern Syriac',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'Tagbanwa',
+    ),
+    'Takr': Script(
+      'Takr',
+      'Takri',
+    ),
+    'Tale': Script(
+      'Tale',
+      'Tai Le',
+    ),
+    'Talu': Script(
+      'Talu',
+      'New Tai Lue',
     ),
     'Taml': Script(
       'Taml',
-      'Tamịl',
+      'Tamil',
+    ),
+    'Tang': Script(
+      'Tang',
+      'Tangut',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'Tai Viet',
     ),
     'Telu': Script(
       'Telu',
-      'Telụgụ',
+      'Telugu',
     ),
     'Tfng': Script(
       'Tfng',
-      'Tifinag',
+      'Tifinagh',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'Tagalog',
     ),
     'Thaa': Script(
       'Thaa',
-      'Taa',
+      'Thaana',
     ),
     'Tibt': Script(
       'Tibt',
-      'Tịbeta',
+      'Tibetan',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'Tirhuta',
+    ),
+    'Tnsa': Script(
+      'Tnsa',
+      'Tangsa',
+    ),
+    'Todr': Script(
+      'Todr',
+      'Todhri',
+    ),
+    'Tutg': Script(
+      'Tutg',
+      'Tulu-Tigalari',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'Ugaritic',
     ),
     'Vaii': Script(
       'Vaii',
       'Vai',
     ),
+    'Vith': Script(
+      'Vith',
+      'Vithkuqi',
+    ),
+    'Wara': Script(
+      'Wara',
+      'Varang Kshiti',
+    ),
+    'Wcho': Script(
+      'Wcho',
+      'Wancho',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'Old Persian',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'Sumero-Akkadian Cuneiform',
+    ),
+    'Yezi': Script(
+      'Yezi',
+      'Yezidi',
+    ),
     'Yiii': Script(
       'Yiii',
-      'Yị',
+      'Yi',
+    ),
+    'Zanb': Script(
+      'Zanb',
+      'Zanabazar Square',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'Inherited',
     ),
     'Zmth': Script(
       'Zmth',
@@ -1981,7 +2629,7 @@ class ScriptsIg extends Scripts {
     ),
     'Zsye': Script(
       'Zsye',
-      'Emojị',
+      'Emoji',
     ),
     'Zsym': Script(
       'Zsym',
@@ -1989,15 +2637,15 @@ class ScriptsIg extends Scripts {
     ),
     'Zxxx': Script(
       'Zxxx',
-      'Edeghị ede',
+      'A na-edeghị ede',
     ),
     'Zyyy': Script(
       'Zyyy',
-      'kọmọn',
+      'Common',
     ),
     'Zzzz': Script(
       'Zzzz',
-      'Mkpụrụ okwu amaghị',
+      'Edemede a na-amaghi',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -2235,7 +2883,7 @@ class UnitsIg implements Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => UnitPrefix(
-        long: UnitPrefixPattern('d{0}'),
+        long: UnitPrefixPattern('deci{0}'),
         short: UnitPrefixPattern('d{0}'),
         narrow: UnitPrefixPattern('d{0}'),
       );
@@ -2253,7 +2901,7 @@ class UnitsIg implements Units {
       );
   @override
   UnitPrefix get pattern10pMinus6 => UnitPrefix(
-        long: UnitPrefixPattern('μ{0}'),
+        long: UnitPrefixPattern('obere{0}'),
         short: UnitPrefixPattern('μ{0}'),
         narrow: UnitPrefixPattern('μ{0}'),
       );
@@ -2325,19 +2973,19 @@ class UnitsIg implements Units {
       );
   @override
   UnitPrefix get pattern10p6 => UnitPrefix(
-        long: UnitPrefixPattern('M{0}'),
+        long: UnitPrefixPattern('mega{0}'),
         short: UnitPrefixPattern('M{0}'),
         narrow: UnitPrefixPattern('M{0}'),
       );
   @override
   UnitPrefix get pattern10p9 => UnitPrefix(
-        long: UnitPrefixPattern('G{0}'),
+        long: UnitPrefixPattern('giga{0}'),
         short: UnitPrefixPattern('G{0}'),
         narrow: UnitPrefixPattern('G{0}'),
       );
   @override
   UnitPrefix get pattern10p12 => UnitPrefix(
-        long: UnitPrefixPattern('T{0}'),
+        long: UnitPrefixPattern('tera{0}'),
         short: UnitPrefixPattern('T{0}'),
         narrow: UnitPrefixPattern('T{0}'),
       );
@@ -2427,7 +3075,7 @@ class UnitsIg implements Units {
       );
   @override
   CompoundUnit get per => CompoundUnit(
-        long: CompoundUnitPattern('{0}/{1}'),
+        long: CompoundUnitPattern('{0} per {1}'),
         short: CompoundUnitPattern('{0}/{1}'),
         narrow: CompoundUnitPattern('{0}/{1}'),
       );
@@ -3345,7 +3993,7 @@ class UnitsIg implements Units {
           _locale,
           'Ọtụtụ nari afọ',
           one: '{0} century',
-          other: '{0} c',
+          other: '{0} Ọtụtụ nari afọ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3367,7 +4015,7 @@ class UnitsIg implements Units {
           _locale,
           'Ọtụtụ afọ iri',
           one: '{0} decade',
-          other: '{0} dec',
+          other: '{0} Ọtụtụ afọ iri',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3389,7 +4037,7 @@ class UnitsIg implements Units {
           _locale,
           'Ọtụtụ Afọ',
           one: '{0} year',
-          other: '{0} y',
+          other: '{0} Ọtụtụ Afọ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3433,19 +4081,19 @@ class UnitsIg implements Units {
           _locale,
           'Ọtụtụ Ọnwa',
           one: '{0} month',
-          other: '{0} m',
+          other: '{0} Ọnwa',
         ),
         short: UnitCountPattern(
           _locale,
           'mon',
           one: '{0} mth',
-          other: '{0} m',
+          other: '{0} mths',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mon',
           one: '{0}m',
-          other: '{0} m',
+          other: '{0} mths',
         ),
       );
 
@@ -3455,19 +4103,19 @@ class UnitsIg implements Units {
           _locale,
           'Ọtụtụ Izu',
           one: '{0} week',
-          other: '{0} w',
+          other: '{0} Ọtụtụ Izu',
         ),
         short: UnitCountPattern(
           _locale,
           'wk',
           one: '{0} wk',
-          other: '{0} w',
+          other: '{0} wks',
         ),
         narrow: UnitCountPattern(
           _locale,
           'wk',
           one: '{0}w',
-          other: '{0} w',
+          other: '{0} wks',
         ),
       );
 
@@ -3477,19 +4125,19 @@ class UnitsIg implements Units {
           _locale,
           'Ọtụtụ Ubochi',
           one: '{0} day',
-          other: '{0} d',
+          other: '{0} Ọtụtụ Ubochi',
         ),
         short: UnitCountPattern(
           _locale,
-          'day',
+          'Ọtụtụ Ubochi',
           one: '{0} day',
-          other: '{0} d',
+          other: '{0} Ọtụtụ Ubochi',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'day',
+          'Ubochi',
           one: '{0}d',
-          other: '{0} d',
+          other: '{0} Ọtụtụ Ubochi',
         ),
       );
 
@@ -3497,21 +4145,21 @@ class UnitsIg implements Units {
   Unit get durationHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'hr',
+          'Ọtụtụ awa',
           one: '{0} hour',
-          other: '{0} h',
+          other: '{0} Ọtụtụ awa',
         ),
         short: UnitCountPattern(
           _locale,
-          'hr',
+          'Ọtụtụ awa',
           one: '{0} hr',
-          other: '{0} h',
+          other: '{0} awa',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'hr',
+          'awa',
           one: '{0}h',
-          other: '{0} h',
+          other: '{0} awa',
         ),
       );
 
@@ -3519,9 +4167,9 @@ class UnitsIg implements Units {
   Unit get durationMinute => Unit(
         long: UnitCountPattern(
           _locale,
-          'min',
+          'nkeji',
           one: '{0} minute',
-          other: '{0} min',
+          other: '{0} nkeji',
         ),
         short: UnitCountPattern(
           _locale,
@@ -3541,9 +4189,9 @@ class UnitsIg implements Units {
   Unit get durationSecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'sec',
+          'sekọnd',
           one: '{0} second',
-          other: '{0} s',
+          other: '{0} sekọnd',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4093,7 +4741,7 @@ class UnitsIg implements Units {
           _locale,
           'px',
           one: '{0} pixel',
-          other: '{0} px',
+          other: '{0} pixels',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4113,7 +4761,7 @@ class UnitsIg implements Units {
   Unit get graphicsMegapixel => Unit(
         long: UnitCountPattern(
           _locale,
-          'MP',
+          'megapixels',
           one: '{0} megapixel',
           other: '{0} MP',
         ),
@@ -4135,9 +4783,9 @@ class UnitsIg implements Units {
   Unit get graphicsPixelPerCentimeter => Unit(
         long: UnitCountPattern(
           _locale,
-          'ppcm',
+          'pixels per centimeter',
           one: '{0} pixel per centimeter',
-          other: '{0} ppcm',
+          other: '{0} pixels per centimeter',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4147,9 +4795,9 @@ class UnitsIg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pksm',
+          'ppcm',
           one: '{0}ppcm',
-          other: '{0}pksm',
+          other: '{0} ppcm',
         ),
       );
 
@@ -4157,9 +4805,9 @@ class UnitsIg implements Units {
   Unit get graphicsPixelPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'ppi',
+          'pixels per inch',
           one: '{0} pixel per inch',
-          other: '{0} ppi',
+          other: '{0} pixels per inch',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4169,9 +4817,9 @@ class UnitsIg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pki',
+          'ppi',
           one: '{0}ppi',
-          other: '{0}pki',
+          other: '{0} ppi',
         ),
       );
 
@@ -4185,15 +4833,15 @@ class UnitsIg implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'nksm',
+          'dpcm',
           one: '{0} dpcm',
-          other: '{0} nksm',
+          other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'nksm',
+          'dpcm',
           one: '{0}dpcm',
-          other: '{0}nksm',
+          other: '{0}dpcm',
         ),
       );
 
@@ -4207,15 +4855,15 @@ class UnitsIg implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'nki',
+          'dpi',
           one: '{0} dpi',
           other: '{0} nki',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'nki',
+          'dpi',
           one: '{0}dpi',
-          other: '{0}nki',
+          other: '{0}dpi',
         ),
       );
 
@@ -6341,13 +6989,13 @@ class UnitsIg implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'dstspn',
+          'ngaji mégharia onu',
           one: '{0} dsp',
           other: '{0} dstspn',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dstspn',
+          'ngaji mégharia onu',
           one: '{0}dsp',
           other: '{0} dstspn',
         ),
@@ -6506,6 +7154,72 @@ class UnitsIg implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ìhè',
+          one: '{0} light',
+          other: '{0} ìhè',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ìhè',
+          one: '{0} light',
+          other: '{0} ìhè',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ìhè',
+          one: '{0}light',
+          other: '{0}ìhè',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'akụkụ kwa ijeri',
+          one: '{0} part per billion',
+          other: '{0} akụkụ kwa ijeri',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'akụkụ/ijeri',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'akụkụ/ijeri',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Ọtụtụ abali',
+          one: '{0} night',
+          other: '{0} Ọtụtụ abali',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Ọtụtụ abali',
+          one: '{0} night',
+          other: '{0} Ọtụtụ abali',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Ọtụtụ abali',
+          one: '{0}night',
+          other: '{0}Ọtụtụ abali',
+        ),
+      );
 }
 
 class DateFieldsIg implements DateFields {
@@ -6513,9 +7227,9 @@ class DateFieldsIg implements DateFields {
 
   @override
   MultiLength get era => MultiLength(
-        long: 'Agba',
-        short: 'Agba',
-        narrow: 'Agba',
+        long: 'Oge',
+        short: 'Oge',
+        narrow: 'Oge',
       );
 
   @override
@@ -6536,9 +7250,9 @@ class DateFieldsIg implements DateFields {
           narrow: 'Afọ a',
         ),
         next: MultiLength(
-          long: 'Afọ ọzọ',
-          short: 'Afọ ọzọ',
-          narrow: 'Afọ ọzọ',
+          long: 'Afọ na-abịa',
+          short: 'afọ na-abịa',
+          narrow: 'afọ na-abịa',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -6551,7 +7265,7 @@ class DateFieldsIg implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            other: '-{0} y',
+            other: 'Afọ {0} gara aga',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6595,29 +7309,29 @@ class DateFieldsIg implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            other: '-{0} Q',
+            other: 'Nkejị keanọ {0} gara aga',
           ),
           short: RelativeTime(
             _locale,
-            other: '-{0} Q',
+            other: 'Nkejị keanọ {0} gara aga',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '-{0} Q',
+            other: 'Nkejị keanọ {0} gara aga',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            other: '+{0} Q',
+            other: 'Nkejị keanọ {0}',
           ),
           short: RelativeTime(
             _locale,
-            other: '+{0} Q',
+            other: 'Nkejị keanọ {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '+{0} Q',
+            other: 'Nkejị keanọ {0}',
           ),
         ),
       );
@@ -6640,9 +7354,9 @@ class DateFieldsIg implements DateFields {
           narrow: 'Ọnwa a',
         ),
         next: MultiLength(
-          long: 'Ọnwa ọzọ',
-          short: 'Ọnwa ọzọ',
-          narrow: 'Ọnwa ọzọ',
+          long: 'Ọnwa na-abịa',
+          short: 'Ọnwa na-abịa',
+          narrow: 'Ọnwa na-abịa',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -6762,11 +7476,11 @@ class DateFieldsIg implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            other: '-{0} d',
+            other: 'n’ụbọchị {0} gara aga',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '-{0} d',
+            other: 'n’ụbọchị {0} gara aga',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -6776,11 +7490,11 @@ class DateFieldsIg implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            other: '+{0} d',
+            other: 'n’ụbọchị {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '+{0} d',
+            other: 'n’ụbọchị {0}',
           ),
         ),
       );
@@ -6811,17 +7525,17 @@ class DateFieldsIg implements DateFields {
         previous: MultiLength(
           long: 'Ụbọchị ụka gara aga',
           short: 'ụbọchị ụka gara aga',
-          narrow: 'ụbọchị ụka gara aga',
+          narrow: 'ụbọchị Sọnde gara aga',
         ),
         now: MultiLength(
           long: 'ụbọchị ụka a',
           short: 'ubochị ụka a',
-          narrow: 'ụbọchị ụka a',
+          narrow: 'ụbọchị Sọnde a',
         ),
         next: MultiLength(
           long: 'ụbọchị ụka na abịa',
           short: 'ụbọchị ụka na abịa',
-          narrow: 'ụbọchị ụka na abịa',
+          narrow: 'ụbọchị Sọnde na abịa',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -6903,19 +7617,19 @@ class DateFieldsIg implements DateFields {
   @override
   DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
         previous: MultiLength(
-          long: 'ụbọchị Tuesde gara aga',
+          long: 'ụbọchị Tuzde gara aga',
           short: 'ụbọchị Tụesde gara aga',
-          narrow: 'ụbọchị Tuesde gara aga',
+          narrow: 'ụbọchị Tuzde gara aga',
         ),
         now: MultiLength(
-          long: 'ụbọchị Tuesde a',
-          short: 'ụbọchị Tuesde a',
-          narrow: 'ụbọchị Tuesde a',
+          long: 'ụbọchị Tuzde a',
+          short: 'ụbọchị Tuzde a',
+          narrow: 'ụbọchị Tuzde a',
         ),
         next: MultiLength(
-          long: 'ụbọchị Tuesde na abịa',
-          short: 'ụbọchị Tuesde na abịa',
-          narrow: 'ụbọchị Tuesde na abịa',
+          long: 'ụbọchị Tuzde na abịa',
+          short: 'ụbọchị Tuzde na abịa',
+          narrow: 'ụbọchị Tuzde na abịa',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -7065,11 +7779,11 @@ class DateFieldsIg implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            other: '-{0} Fridays',
+            other: 'n’ụbọchị Faraịde gara aga {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '-{0} Fridays',
+            other: 'n’ụbọchị Faraịde gara aga {0}',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7079,11 +7793,11 @@ class DateFieldsIg implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            other: '+{0} Fridays',
+            other: 'n’ụbọchị Faraịde {0}',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '+{0} Fridays',
+            other: 'n’ụbọchị Faraịde {0}',
           ),
         ),
       );
@@ -7108,15 +7822,15 @@ class DateFieldsIg implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            other: '-{0} Saturdays',
+            other: 'Ụbọchị Satụde {0} gara aga',
           ),
           short: RelativeTime(
             _locale,
-            other: '-{0} Saturdays',
+            other: 'Ụbọchị Satụde {0} gara aga',
           ),
           narrow: RelativeTime(
             _locale,
-            other: '-{0} Saturdays',
+            other: 'Ụbọchị Satụde {0} gara aga',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7229,9 +7943,9 @@ class DateFieldsIg implements DateFields {
   @override
   DateFieldDataTime get second => DateFieldDataTime(
         displayName: MultiLength(
-          long: 'Tịm kọm',
-          short: 'Tịm kọm',
-          narrow: 'Tịm kọm',
+          long: 'Second',
+          short: 'sekọnd',
+          narrow: 'sekọnd',
         ),
         now: MultiLength(
           long: 'ụgbụa',
@@ -7360,7 +8074,7 @@ class TerritoriesIg implements Territories {
   @override
   Territory get caribbean => Territory(
         '029',
-        'Onye Carrabean',
+        'Caribbean',
       );
 
   @override
@@ -7468,7 +8182,7 @@ class TerritoriesIg implements Territories {
   @override
   Territory get unknownRegion => Territory(
         'ZZ',
-        'Mpaghara Amaghị',
+        'Mpaghara A na-amaghị',
       );
 
   @override
@@ -7535,7 +8249,7 @@ class TerritoriesIg implements Territories {
     ),
     'AX': Territory(
       'AX',
-      'Agwaetiti Aland',
+      'Åland Islands',
     ),
     'AZ': Territory(
       'AZ',
@@ -7575,11 +8289,11 @@ class TerritoriesIg implements Territories {
     ),
     'BJ': Territory(
       'BJ',
-      'Binin',
+      'Benin',
     ),
     'BL': Territory(
       'BL',
-      'Barthélemy Dị nsọ',
+      'St. Barthélemy',
     ),
     'BM': Territory(
       'BM',
@@ -7611,7 +8325,7 @@ class TerritoriesIg implements Territories {
     ),
     'BV': Territory(
       'BV',
-      'Agwaetiti Bouvet',
+      'Bouvet Island',
     ),
     'BW': Territory(
       'BW',
@@ -7627,7 +8341,7 @@ class TerritoriesIg implements Territories {
     ),
     'CA': Territory(
       'CA',
-      'Kanada',
+      'Canada',
     ),
     'CC': Territory(
       'CC',
@@ -7682,7 +8396,7 @@ class TerritoriesIg implements Territories {
     ),
     'CQ': Territory(
       'CQ',
-      'Mpaghara Amaghị (CQ)',
+      'Sark',
     ),
     'CR': Territory(
       'CR',
@@ -7715,7 +8429,7 @@ class TerritoriesIg implements Territories {
     ),
     'DE': Territory(
       'DE',
-      'Jamanị',
+      'Germany',
     ),
     'DG': Territory(
       'DG',
@@ -7731,7 +8445,7 @@ class TerritoriesIg implements Territories {
     ),
     'DM': Territory(
       'DM',
-      'Dominika',
+      'Dominica',
     ),
     'DO': Territory(
       'DO',
@@ -7791,8 +8505,8 @@ class TerritoriesIg implements Territories {
     ),
     'FK': Territory(
       'FK',
-      'Agwaetiti Falkland',
-      variant: 'Agwaetiti Falkland',
+      'Falkland Islands',
+      variant: 'Falkland Islands (Islas Malvinas)',
     ),
     'FM': Territory(
       'FM',
@@ -7800,7 +8514,7 @@ class TerritoriesIg implements Territories {
     ),
     'FO': Territory(
       'FO',
-      'Agwaetiti Faroe',
+      'Faroe Islands',
     ),
     'FR': Territory(
       'FR',
@@ -7825,7 +8539,7 @@ class TerritoriesIg implements Territories {
     ),
     'GF': Territory(
       'GF',
-      'Frenchi Guiana',
+      'French Guiana',
     ),
     'GG': Territory(
       'GG',
@@ -7865,7 +8579,7 @@ class TerritoriesIg implements Territories {
     ),
     'GS': Territory(
       'GS',
-      'South Georgia na Agwaetiti South Sandwich',
+      'South Georgia & South Sandwich Islands',
     ),
     'GT': Territory(
       'GT',
@@ -7886,7 +8600,7 @@ class TerritoriesIg implements Territories {
     'HK': Territory(
       'HK',
       'Hong Kong SAR China',
-      short: 'Hong Kong SAR China',
+      short: 'Hong Kong',
     ),
     'HM': Territory(
       'HM',
@@ -7902,7 +8616,7 @@ class TerritoriesIg implements Territories {
     ),
     'HT': Territory(
       'HT',
-      'Hati',
+      'Haiti',
     ),
     'HU': Territory(
       'HU',
@@ -7910,7 +8624,7 @@ class TerritoriesIg implements Territories {
     ),
     'IC': Territory(
       'IC',
-      'Agwaetiti Kanarị',
+      'Canary Islands',
     ),
     'ID': Territory(
       'ID',
@@ -7986,15 +8700,15 @@ class TerritoriesIg implements Territories {
     ),
     'KM': Territory(
       'KM',
-      'Comorosu',
+      'Comoros',
     ),
     'KN': Territory(
       'KN',
-      'Kitts na Nevis Dị nsọ',
+      'St. Kitts & Nevis',
     ),
     'KP': Territory(
       'KP',
-      'Ugwu Korea',
+      'North Korea',
     ),
     'KR': Territory(
       'KR',
@@ -8006,7 +8720,7 @@ class TerritoriesIg implements Territories {
     ),
     'KY': Territory(
       'KY',
-      'Agwaetiti Cayman',
+      'Cayman Islands',
     ),
     'KZ': Territory(
       'KZ',
@@ -8022,7 +8736,7 @@ class TerritoriesIg implements Territories {
     ),
     'LC': Territory(
       'LC',
-      'Lucia Dị nsọ',
+      'St. Lucia',
     ),
     'LI': Territory(
       'LI',
@@ -8074,11 +8788,11 @@ class TerritoriesIg implements Territories {
     ),
     'MF': Territory(
       'MF',
-      'Martin Dị nsọ',
+      'St. Martin',
     ),
     'MG': Territory(
       'MG',
-      'Madagaskar',
+      'Madagascar',
     ),
     'MH': Territory(
       'MH',
@@ -8147,7 +8861,7 @@ class TerritoriesIg implements Territories {
     ),
     'MZ': Territory(
       'MZ',
-      'Mozambik',
+      'Mozambique',
     ),
     'NA': Territory(
       'NA',
@@ -8196,7 +8910,7 @@ class TerritoriesIg implements Territories {
     'NZ': Territory(
       'NZ',
       'New Zealand',
-      variant: 'New Zealand',
+      variant: 'Aotearoa New Zealand',
     ),
     'OM': Territory(
       'OM',
@@ -8212,7 +8926,7 @@ class TerritoriesIg implements Territories {
     ),
     'PF': Territory(
       'PF',
-      'Frenchi Polynesia',
+      'French Polynesia',
     ),
     'PG': Territory(
       'PG',
@@ -8232,7 +8946,7 @@ class TerritoriesIg implements Territories {
     ),
     'PM': Territory(
       'PM',
-      'Pierre na Miquelon Dị nsọ',
+      'St. Pierre & Miquelon',
     ),
     'PN': Territory(
       'PN',
@@ -8244,8 +8958,8 @@ class TerritoriesIg implements Territories {
     ),
     'PS': Territory(
       'PS',
-      'Palestinian Territories',
-      short: 'Palestinian Territories',
+      'Mpaghara ndị Palestine',
+      short: 'Palestine',
     ),
     'PT': Territory(
       'PT',
@@ -8281,7 +8995,7 @@ class TerritoriesIg implements Territories {
     ),
     'RU': Territory(
       'RU',
-      'Rụssịa',
+      'Russia',
     ),
     'RW': Territory(
       'RW',
@@ -8378,7 +9092,7 @@ class TerritoriesIg implements Territories {
     ),
     'TC': Territory(
       'TC',
-      'Agwaetiti Turks na Caicos',
+      'Turks & Caicos Islands',
     ),
     'TD': Territory(
       'TD',
@@ -8423,8 +9137,8 @@ class TerritoriesIg implements Territories {
     ),
     'TR': Territory(
       'TR',
-      'Turkey',
-      variant: 'Turkey',
+      'Türkiye',
+      variant: 'Türkiye',
     ),
     'TT': Territory(
       'TT',
@@ -8477,7 +9191,7 @@ class TerritoriesIg implements Territories {
     ),
     'VC': Territory(
       'VC',
-      'Vincent na Grenadines Dị nsọ',
+      'St. Vincent & Grenadines',
     ),
     'VE': Territory(
       'VE',
@@ -8485,11 +9199,11 @@ class TerritoriesIg implements Territories {
     ),
     'VG': Territory(
       'VG',
-      'Agwaetiti British Virgin',
+      'British Virgin Islands',
     ),
     'VI': Territory(
       'VI',
-      'Agwaetiti Virgin nke US',
+      'U.S. Virgin Islands',
     ),
     'VN': Territory(
       'VN',
@@ -8678,6 +9392,9 @@ class TimeZonesIg extends TimeZones {
     ),
     'Indian/Reunion': TimeZoneNames(
       exemplarCity: 'Réunion',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Enderbury',
     ),
     'Pacific/Ponape': TimeZoneNames(
       exemplarCity: 'Pohnpei',
@@ -8949,14 +9666,6 @@ class TimeZonesIg extends TimeZones {
         generic: 'Oge China',
         standard: 'Oge Izugbe China',
         daylight: 'Oge Ihe China',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Oge Choibals',
-        standard: 'Oge Izugbe Choibals',
-        daylight: 'Oge Okpomọkụ Choibals',
       ),
     ),
     'Christmas': MetaZone(
@@ -9235,6 +9944,12 @@ class TimeZonesIg extends TimeZones {
         generic: 'Oge Japan',
         standard: 'Oge Izugbe Japan',
         daylight: 'Oge Ihe Japan',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Oge Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

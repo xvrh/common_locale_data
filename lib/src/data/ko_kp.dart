@@ -283,6 +283,10 @@ class LanguagesKoKP extends Languages {
       'bla',
       '식시카어',
     ),
+    'blo': Language(
+      'blo',
+      '아니이어',
+    ),
     'bm': Language(
       'bm',
       '밤바라어',
@@ -765,10 +769,6 @@ class LanguagesKoKP extends Languages {
       'goh',
       '고대 고지 독일어',
     ),
-    'gom': Language(
-      'gom',
-      '고아 콘칸어',
-    ),
     'gon': Language(
       'gon',
       '곤디어',
@@ -1169,6 +1169,10 @@ class LanguagesKoKP extends Languages {
       'kwk',
       '곽왈라어',
     ),
+    'kxv': Language(
+      'kxv',
+      '쿠비어',
+    ),
     'ky': Language(
       'ky',
       '키르기스어',
@@ -1213,6 +1217,10 @@ class LanguagesKoKP extends Languages {
       'li',
       '림버거어',
     ),
+    'lij': Language(
+      'lij',
+      '리구리아어',
+    ),
     'lil': Language(
       'lil',
       '릴루엣어',
@@ -1220,6 +1228,10 @@ class LanguagesKoKP extends Languages {
     'lkt': Language(
       'lkt',
       '라코타어',
+    ),
+    'lmo': Language(
+      'lmo',
+      '롬바르드어',
     ),
     'ln': Language(
       'ln',
@@ -2005,6 +2017,10 @@ class LanguagesKoKP extends Languages {
       'syr',
       '시리아어',
     ),
+    'szl': Language(
+      'szl',
+      '실레시아어',
+    ),
     'ta': Language(
       'ta',
       '타밀어',
@@ -2115,7 +2131,7 @@ class LanguagesKoKP extends Languages {
     ),
     'tr': Language(
       'tr',
-      '터키어',
+      '튀르키예어',
     ),
     'trv': Language(
       'trv',
@@ -2205,9 +2221,17 @@ class LanguagesKoKP extends Languages {
       've',
       '벤다어',
     ),
+    'vec': Language(
+      'vec',
+      '베네치아어',
+    ),
     'vi': Language(
       'vi',
       '베트남어',
+    ),
+    'vmw': Language(
+      'vmw',
+      '마쿠와어',
     ),
     'vo': Language(
       'vo',
@@ -2260,6 +2284,10 @@ class LanguagesKoKP extends Languages {
     'xh': Language(
       'xh',
       '코사어',
+    ),
+    'xnr': Language(
+      'xnr',
+      '캉리어',
     ),
     'xog': Language(
       'xog',
@@ -7357,6 +7385,72 @@ class UnitsKoKP implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0}ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0}ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '박',
+          one: '{0} night',
+          other: '{0}박',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '박',
+          one: '{0} night',
+          other: '{0}박',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '박',
+          one: '{0}night',
+          other: '{0}박',
+        ),
+      );
 }
 
 class DateFieldsKoKP implements DateFields {
@@ -10256,9 +10350,6 @@ class TimeZonesKoKP extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: '치타',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: '초이발산',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: '콜롬보',
     ),
@@ -10979,14 +11070,6 @@ class TimeZonesKoKP extends TimeZones {
         daylight: '중국 하계 표준시',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: '초이발산 시간',
-        standard: '초이발산 표준시',
-        daylight: '초이발산 하계 표준시',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11271,6 +11354,12 @@ class TimeZonesKoKP extends TimeZones {
         generic: '페트로파블롭스크-캄차츠키 시간',
         standard: '페트로파블롭스크-캄차츠키 표준시',
         daylight: '페트로파블롭스크-캄차츠키 하계 표준시',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: '카자흐스탄 시간',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

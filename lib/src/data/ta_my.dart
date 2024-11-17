@@ -259,6 +259,10 @@ class LanguagesTaMY extends Languages {
       'bla',
       'சிக்சிகா',
     ),
+    'blo': Language(
+      'blo',
+      'அனீ',
+    ),
     'bm': Language(
       'bm',
       'பம்பாரா',
@@ -1151,6 +1155,10 @@ class LanguagesTaMY extends Languages {
       'kwk',
       'குவாக்வாலா',
     ),
+    'kxv': Language(
+      'kxv',
+      'குவி',
+    ),
     'ky': Language(
       'ky',
       'கிர்கிஸ்',
@@ -1972,6 +1980,10 @@ class LanguagesTaMY extends Languages {
       'syr',
       'சிரியாக்',
     ),
+    'szl': Language(
+      'szl',
+      'சிலேசியன்',
+    ),
     'ta': Language(
       'ta',
       'தமிழ்',
@@ -2164,9 +2176,17 @@ class LanguagesTaMY extends Languages {
       've',
       'வென்டா',
     ),
+    'vec': Language(
+      'vec',
+      'வினிசியன்',
+    ),
     'vi': Language(
       'vi',
       'வியட்நாமீஸ்',
+    ),
+    'vmw': Language(
+      'vmw',
+      'மகுவா',
     ),
     'vo': Language(
       'vo',
@@ -2219,6 +2239,10 @@ class LanguagesTaMY extends Languages {
     'xh': Language(
       'xh',
       'ஹோசா',
+    ),
+    'xnr': Language(
+      'xnr',
+      'காங்கிரி',
     ),
     'xog': Language(
       'xog',
@@ -7156,6 +7180,72 @@ class UnitsTaMY implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ஒளிவேகம்',
+          one: '{0} ஒளிவேகம்',
+          other: '{0} ஒளிவேகம்',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ஒளிவேகம்',
+          one: '{0} ஒளிவேகம்',
+          other: '{0} ஒளிவேகம்',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ஒளிவேகம்',
+          one: '{0}ஒ.வே',
+          other: '{0}ஒ.வே',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'பார்ட்ஸ்/பில்லியன்',
+          one: '{0} பார்ட்ஸ்/பில்லியன்',
+          other: '{0} பார்ட்ஸ்/பில்லியன்',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'பார்ட்ஸ்/பில்லியன்',
+          one: '{0} பார்ட்ஸ்/பில்லியன்',
+          other: '{0} பார்ட்ஸ்/பில்லியன்',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'பா/பி',
+          one: '{0} பா/பி',
+          other: '{0} பா/பி',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'இரவுகள்',
+          one: '{0} இரவு',
+          other: '{0} இரவுகள்',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'இரவுகள்',
+          one: '{0} இரவு',
+          other: '{0} இரவுகள்',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'இரவுகள்',
+          one: '{0} இ',
+          other: '{0} இ',
+        ),
+      );
 }
 
 class DateFieldsTaMY implements DateFields {
@@ -10145,9 +10235,6 @@ class TimeZonesTaMY extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'சிடா',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'சோய்பால்சான்',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'கொழும்பு',
     ),
@@ -10862,14 +10949,6 @@ class TimeZonesTaMY extends TimeZones {
         daylight: 'சீன பகலொளி நேரம்',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'சோய்பால்சன் நேரம்',
-        standard: 'சோய்பால்சன் நிலையான நேரம்',
-        daylight: 'சோய்பால்சன் கோடை நேரம்',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11160,6 +11239,12 @@ class TimeZonesTaMY extends TimeZones {
         generic: 'பெட்ரோபவ்லோவ்ஸ்க் கம்சட்ஸ்கி நேரம்',
         standard: 'பெட்ரோபவ்லோவ்ஸ்க் கம்சட்ஸ்கி தர நேரம்',
         daylight: 'பெட்ரோபவ்லோவ்ஸ்க் கம்சட்ஸ்கி கோடை நேரம்',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'கஜகஸ்தான் நேரம்',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

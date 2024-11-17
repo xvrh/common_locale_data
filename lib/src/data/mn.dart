@@ -189,7 +189,7 @@ class LanguagesMn extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'Харьянви',
+      'харьянви',
     ),
     'bho': Language(
       'bho',
@@ -206,6 +206,10 @@ class LanguagesMn extends Languages {
     'bla': Language(
       'bla',
       'сиксика',
+    ),
+    'blo': Language(
+      'blo',
+      'Ани',
     ),
     'bm': Language(
       'bm',
@@ -373,13 +377,9 @@ class LanguagesMn extends Languages {
       'de',
       'герман',
     ),
-    'de-AT': Language(
-      'de-AT',
-      'австри-герман',
-    ),
     'de-CH': Language(
       'de-CH',
-      'швейцарь-герман',
+      'герман (Швейцар)',
     ),
     'dgr': Language(
       'dgr',
@@ -523,13 +523,9 @@ class LanguagesMn extends Languages {
       'fr',
       'франц',
     ),
-    'fr-CA': Language(
-      'fr-CA',
-      'канад-франц',
-    ),
     'fr-CH': Language(
       'fr-CH',
-      'швейцари-франц',
+      'франц (Швейцар)',
     ),
     'frc': Language(
       'frc',
@@ -899,6 +895,10 @@ class LanguagesMn extends Languages {
       'kwk',
       'квак вала',
     ),
+    'kxv': Language(
+      'kxv',
+      'куви',
+    ),
     'ky': Language(
       'ky',
       'киргиз',
@@ -933,7 +933,7 @@ class LanguagesMn extends Languages {
     ),
     'lij': Language(
       'lij',
-      'Лигури',
+      'лигури',
     ),
     'lil': Language(
       'lil',
@@ -942,6 +942,10 @@ class LanguagesMn extends Languages {
     'lkt': Language(
       'lkt',
       'лакота',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ломбард',
     ),
     'ln': Language(
       'ln',
@@ -1559,6 +1563,10 @@ class LanguagesMn extends Languages {
       'syr',
       'сири',
     ),
+    'szl': Language(
+      'szl',
+      'силез',
+    ),
     'ta': Language(
       'ta',
       'тамил',
@@ -1701,7 +1709,7 @@ class LanguagesMn extends Languages {
     ),
     'und': Language(
       'und',
-      'Үл мэдэгдэх хэл',
+      'үл мэдэгдэх хэл',
     ),
     'ur': Language(
       'ur',
@@ -1726,6 +1734,10 @@ class LanguagesMn extends Languages {
     'vi': Language(
       'vi',
       'вьетнам',
+    ),
+    'vmw': Language(
+      'vmw',
+      'макуа',
     ),
     'vo': Language(
       'vo',
@@ -1767,6 +1779,10 @@ class LanguagesMn extends Languages {
       'xh',
       'хоса',
     ),
+    'xnr': Language(
+      'xnr',
+      'кангри',
+    ),
     'xog': Language(
       'xog',
       'сога',
@@ -1795,6 +1811,10 @@ class LanguagesMn extends Languages {
       'yue',
       'кантон',
       menu: 'хятад, кантон',
+    ),
+    'za': Language(
+      'za',
+      'чжуанг',
     ),
     'zgh': Language(
       'zgh',
@@ -2783,7 +2803,7 @@ class UnitsMn implements Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => UnitPrefix(
-        long: UnitPrefixPattern('деси{0}'),
+        long: UnitPrefixPattern('деци{0}'),
         short: UnitPrefixPattern('д{0}'),
         narrow: UnitPrefixPattern('д{0}'),
       );
@@ -3458,7 +3478,7 @@ class UnitsMn implements Units {
         short: UnitCountPattern(
           _locale,
           'хувь/сая',
-          one: '{0}x10⁻⁶',
+          one: 'саяны {0} хувь',
           other: '{0}x10⁻⁶',
         ),
         narrow: UnitCountPattern(
@@ -4749,15 +4769,15 @@ class UnitsMn implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'dots per inch',
-          one: '{0} dot per inch',
-          other: '{0} dots per inch',
+          'цэг/инч',
+          one: '{0} цэг/инч',
+          other: '{0} цэг/инч',
         ),
         short: UnitCountPattern(
           _locale,
-          'dpi',
-          one: '{0} dpi',
-          other: '{0} dpi',
+          'цэг/инч',
+          one: '{0} цэг/инч',
+          other: '{0} цэг/инч',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -5123,21 +5143,21 @@ class UnitsMn implements Units {
   Unit get lengthAstronomicalUnit => Unit(
         long: UnitCountPattern(
           _locale,
-          'сансрын нэгж',
-          one: '{0} сансрын нэгж',
-          other: '{0} сансрын нэгж',
+          'одон орны нэгж',
+          one: '{0} одон орны нэгж',
+          other: '{0} одон орны нэгж',
         ),
         short: UnitCountPattern(
           _locale,
-          'сн',
-          one: '{0} сн',
-          other: '{0} сн',
+          'о.о.н',
+          one: '{0} о.о.н',
+          other: '{0} о.о.н',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'au',
-          one: '{0}au',
-          other: '{0}au',
+          'о.о.н',
+          one: '{0}о.о.н',
+          other: '{0}о.о.н',
         ),
       );
 
@@ -5327,9 +5347,9 @@ class UnitsMn implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'lm',
+          'люмен',
           one: '{0} люмен',
-          other: '{0} lm',
+          other: '{0} люмен',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7054,6 +7074,72 @@ class UnitsMn implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'мкг/кг',
+          one: '{0} мкг/кг',
+          other: '{0} мкг/кг',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'мкг/кг',
+          one: '{0} мкг/кг',
+          other: '{0} мкг/кг',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'мкг/кг',
+          one: '{0} мкг/кг',
+          other: '{0} мкг/кг',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'шөнө',
+          one: '{0} шөнө',
+          other: '{0} шөнө',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'шөнө',
+          one: '{0} шөнө',
+          other: '{0} шөнө',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'шөнө',
+          one: '{0}шөнө',
+          other: '{0}шөнө',
+        ),
+      );
 }
 
 class DateFieldsMn implements DateFields {
@@ -8121,7 +8207,7 @@ class TerritoriesMn implements Territories {
     ),
     'AE': Territory(
       'AE',
-      'Арабын Нэгдсэн Эмирт Улс',
+      'Арабын Нэгдсэн Эмират Улс',
     ),
     'AF': Territory(
       'AF',
@@ -8181,7 +8267,7 @@ class TerritoriesMn implements Territories {
     ),
     'BA': Territory(
       'BA',
-      'Босни-Герцеговин',
+      'Босни-Херцеговин',
     ),
     'BB': Territory(
       'BB',
@@ -8287,12 +8373,12 @@ class TerritoriesMn implements Territories {
     ),
     'CH': Territory(
       'CH',
-      'Швейцарь',
+      'Швейцар',
     ),
     'CI': Territory(
       'CI',
       'Кот-д’Ивуар',
-      variant: 'Зааны ясан эрэг',
+      variant: 'Кот-д’Ивуар',
     ),
     'CK': Territory(
       'CK',
@@ -8421,7 +8507,7 @@ class TerritoriesMn implements Territories {
     ),
     'FI': Territory(
       'FI',
-      'Финлянд',
+      'Финланд',
     ),
     'FJ': Territory(
       'FJ',
@@ -8523,7 +8609,7 @@ class TerritoriesMn implements Territories {
     ),
     'HK': Territory(
       'HK',
-      'БНХАУ-ын Тусгай захиргааны бүс Хонг Конг',
+      'БНХАУ-ын Тусгай захиргааны бүс Хонг-Конг',
       short: 'Хонг Конг',
     ),
     'HM': Territory(
@@ -8560,7 +8646,7 @@ class TerritoriesMn implements Territories {
     ),
     'IL': Territory(
       'IL',
-      'Израиль',
+      'Израил',
     ),
     'IM': Territory(
       'IM',
@@ -8612,7 +8698,7 @@ class TerritoriesMn implements Territories {
     ),
     'KG': Territory(
       'KG',
-      'Кыргызстан',
+      'Киргиз',
     ),
     'KH': Territory(
       'KH',
@@ -8664,7 +8750,7 @@ class TerritoriesMn implements Territories {
     ),
     'LI': Territory(
       'LI',
-      'Лихтенштейн',
+      'Лихтенштайн',
     ),
     'LK': Territory(
       'LK',
@@ -8817,7 +8903,7 @@ class TerritoriesMn implements Territories {
     ),
     'NO': Territory(
       'NO',
-      'Норвеги',
+      'Норвег',
     ),
     'NP': Territory(
       'NP',
@@ -9249,7 +9335,7 @@ class TimeZonesMn extends TimeZones {
       exemplarCity: 'Белем',
     ),
     'America/Belize': TimeZoneNames(
-      exemplarCity: 'Белизе',
+      exemplarCity: 'Белиз',
     ),
     'America/Blanc-Sablon': TimeZoneNames(
       exemplarCity: 'Блан-Саблон',
@@ -9330,7 +9416,7 @@ class TimeZonesMn extends TimeZones {
       exemplarCity: 'Детройт',
     ),
     'America/Dominica': TimeZoneNames(
-      exemplarCity: 'Доминика',
+      exemplarCity: 'Доминик',
     ),
     'America/Edmonton': TimeZoneNames(
       exemplarCity: 'Эдмонтон',
@@ -9690,7 +9776,7 @@ class TimeZonesMn extends TimeZones {
       exemplarCity: 'Кишинёв',
     ),
     'Europe/Copenhagen': TimeZoneNames(
-      exemplarCity: 'Копенгаген',
+      exemplarCity: 'Копенхаген',
     ),
     'Europe/Dublin': TimeZoneNames(
       long: TimeZoneName(
@@ -9726,7 +9812,7 @@ class TimeZonesMn extends TimeZones {
       exemplarCity: 'Киров',
     ),
     'Europe/Lisbon': TimeZoneNames(
-      exemplarCity: 'Лиссабон',
+      exemplarCity: 'Лисбон',
     ),
     'Europe/Ljubljana': TimeZoneNames(
       exemplarCity: 'Любляна',
@@ -9795,10 +9881,10 @@ class TimeZonesMn extends TimeZones {
       exemplarCity: 'Скопье',
     ),
     'Europe/Sofia': TimeZoneNames(
-      exemplarCity: 'София',
+      exemplarCity: 'Софи',
     ),
     'Europe/Stockholm': TimeZoneNames(
-      exemplarCity: 'Стокольм',
+      exemplarCity: 'Стокхолм',
     ),
     'Europe/Tallinn': TimeZoneNames(
       exemplarCity: 'Таллин',
@@ -10043,9 +10129,6 @@ class TimeZonesMn extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чита',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чойбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Коломбо',
     ),
@@ -10089,7 +10172,7 @@ class TimeZonesMn extends TimeZones {
       exemplarCity: 'Жайпур',
     ),
     'Asia/Jerusalem': TimeZoneNames(
-      exemplarCity: 'Ерусалем',
+      exemplarCity: 'Йерусалим',
     ),
     'Asia/Kabul': TimeZoneNames(
       exemplarCity: 'Кабул',
@@ -10263,7 +10346,7 @@ class TimeZonesMn extends TimeZones {
       exemplarCity: 'Мальдив',
     ),
     'Indian/Mauritius': TimeZoneNames(
-      exemplarCity: 'Маврикий',
+      exemplarCity: 'Маврики',
     ),
     'Indian/Mayotte': TimeZoneNames(
       exemplarCity: 'Майотта',
@@ -10720,14 +10803,6 @@ class TimeZonesMn extends TimeZones {
         daylight: 'Хятадын зуны цаг',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Чойбалсангийн цаг',
-        standard: 'Чойбалсангийн стандарт цаг',
-        daylight: 'Чойбалсангийн зуны цаг',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11004,6 +11079,12 @@ class TimeZonesMn extends TimeZones {
         generic: 'Японы цаг',
         standard: 'Японы стандарт цаг',
         daylight: 'Японы зуны цаг',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Казахстаны цаг',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

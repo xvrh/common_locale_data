@@ -268,6 +268,10 @@ class LanguagesDa extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1168,6 +1172,10 @@ class LanguagesDa extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgisisk',
@@ -1208,6 +1216,10 @@ class LanguagesDa extends Languages {
       'li',
       'limburgsk',
     ),
+    'lij': Language(
+      'lij',
+      'ligurisk',
+    ),
     'lil': Language(
       'lil',
       'lillooet',
@@ -1215,6 +1227,10 @@ class LanguagesDa extends Languages {
     'lkt': Language(
       'lkt',
       'lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardisk',
     ),
     'ln': Language(
       'ln',
@@ -1263,10 +1279,6 @@ class LanguagesDa extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1398,7 +1410,7 @@ class LanguagesDa extends Languages {
     ),
     'mr': Language(
       'mr',
-      'marathisk',
+      'marathi',
     ),
     'ms': Language(
       'ms',
@@ -1618,7 +1630,7 @@ class LanguagesDa extends Languages {
     ),
     'pa': Language(
       'pa',
-      'punjabisk',
+      'punjabi',
     ),
     'pag': Language(
       'pag',
@@ -1989,6 +2001,10 @@ class LanguagesDa extends Languages {
       'syr',
       'syrisk',
     ),
+    'szl': Language(
+      'szl',
+      'schlesisk',
+    ),
     'ta': Language(
       'ta',
       'tamil',
@@ -2174,17 +2190,21 @@ class LanguagesDa extends Languages {
       'uz',
       'usbekisk',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'venetiansk',
+    ),
     'vi': Language(
       'vi',
       'vietnamesisk',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -2237,6 +2257,10 @@ class LanguagesDa extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -3385,8 +3409,8 @@ class UnitsDa implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0} gange {1}'),
-        short: CompoundUnitPattern('{0} ⋅ {1}'),
+        long: CompoundUnitPattern('{0}⋅{1}'),
+        short: CompoundUnitPattern('{0}⋅{1}'),
         narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
@@ -4925,7 +4949,7 @@ class UnitsDa implements Units {
           _locale,
           'kWh/100 km',
           one: '{0}kWh/100km',
-          other: '{0}kWh/100km',
+          other: '{0} kWh/100 km',
         ),
       );
 
@@ -5396,19 +5420,19 @@ class UnitsDa implements Units {
         long: UnitCountPattern(
           _locale,
           'miles',
-          one: '{0} engelsk mil',
+          one: '{0} mile',
           other: '{0} miles',
         ),
         short: UnitCountPattern(
           _locale,
           'miles',
-          one: '{0} engelsk mil',
+          one: '{0} mile',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mile',
-          one: '{0} engelsk mil',
+          one: '{0} mile',
           other: '{0} mi',
         ),
       );
@@ -6288,8 +6312,8 @@ class UnitsDa implements Units {
         narrow: UnitCountPattern(
           _locale,
           '# Hg',
-          one: '{0}" Hg',
-          other: '{0}" Hg',
+          one: '{0}″ Hg',
+          other: '{0}″ Hg',
         ),
       );
 
@@ -7456,6 +7480,72 @@ class UnitsDa implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'milliardtedele',
+          one: '{0} milliardtedel',
+          other: '{0} milliardtedele',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'dele/milliard',
+          one: '{0} milliardtedel',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'dele/milliard',
+          one: '{0} milliardtedel',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nætter',
+          one: '{0} nat',
+          other: '{0} nætter',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nætter',
+          one: '{0} nat',
+          other: '{0} nætter',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nætter',
+          one: '{0}nat',
+          other: '{0}nætter',
         ),
       );
 }
@@ -9788,9 +9878,6 @@ class TimeZonesDa extends TimeZones {
     'Asia/Calcutta': TimeZoneNames(
       exemplarCity: 'Kolkata',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tsjojbalsan',
-    ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damaskus',
     ),
@@ -10181,14 +10268,6 @@ class TimeZonesDa extends TimeZones {
         daylight: 'Kinesisk sommertid',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Tsjojbalsan-tid',
-        standard: 'Tsjojbalsan-normaltid',
-        daylight: 'Tsjojbalsan-sommertid',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10494,6 +10573,12 @@ class TimeZonesDa extends TimeZones {
         generic: 'Petropavlovsk-Kamchatski tid',
         standard: 'Petropavlovsk-Kamchatski normaltid',
         daylight: 'Petropavlovsk-Kamchatski sommertid',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kasakhstansk tid',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

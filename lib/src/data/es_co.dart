@@ -267,6 +267,10 @@ class LanguagesEsCO extends Languages {
       'bla',
       'siksiká',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1167,6 +1171,10 @@ class LanguagesEsCO extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirguís',
@@ -1206,6 +1214,10 @@ class LanguagesEsCO extends Languages {
     'li': Language(
       'li',
       'limburgués',
+    ),
+    'lij': Language(
+      'lij',
+      'genovés',
     ),
     'lil': Language(
       'lil',
@@ -1266,10 +1278,6 @@ class LanguagesEsCO extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1996,6 +2004,10 @@ class LanguagesEsCO extends Languages {
       'syr',
       'siríaco',
     ),
+    'szl': Language(
+      'szl',
+      'silesio',
+    ),
     'ta': Language(
       'ta',
       'tamil',
@@ -2181,17 +2193,21 @@ class LanguagesEsCO extends Languages {
       'uz',
       'uzbeko',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'véneto',
+    ),
     'vi': Language(
       'vi',
       'vietnamita',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2244,6 +2260,10 @@ class LanguagesEsCO extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -3520,7 +3540,7 @@ class UnitsEsCO implements Units {
   Unit get concentrMilligramOfglucosePerDeciliter => Unit(
         long: UnitCountPattern(
           _locale,
-          'mg/dL',
+          'miligramos por decilitro',
           one: '{0} miligramo por decilitro',
           other: '{0} miligramos por decilitro',
         ),
@@ -4435,7 +4455,7 @@ class UnitsEsCO implements Units {
         narrow: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
+          one: '{0}cal',
           other: '{0}cal',
         ),
       );
@@ -5250,7 +5270,7 @@ class UnitsEsCO implements Units {
           _locale,
           'aa. l.',
           one: '{0}a. l.',
-          other: '{0}a.a. l.',
+          other: '{0}aa. l.',
         ),
       );
 
@@ -5271,8 +5291,8 @@ class UnitsEsCO implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ua',
-          one: '{0}au',
-          other: '{0}au',
+          one: '{0}ua',
+          other: '{0}ua',
         ),
       );
 
@@ -5667,7 +5687,7 @@ class UnitsEsCO implements Units {
         narrow: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
+          one: '{0}lb',
           other: '{0}lb',
         ),
       );
@@ -5689,7 +5709,7 @@ class UnitsEsCO implements Units {
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
+          one: '{0}oz',
           other: '{0}oz',
         ),
       );
@@ -7163,7 +7183,7 @@ class UnitsEsCO implements Units {
         narrow: UnitCountPattern(
           _locale,
           'qt imp',
-          one: '{0} qt imp.',
+          one: '{0}qt imp',
           other: '{0}qt imp',
         ),
       );
@@ -7187,6 +7207,72 @@ class UnitsEsCO implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'partes por mil millones',
+          one: '{0} parte por mil millones',
+          other: '{0} partes por mil millones',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'partes/millardo',
+          one: '{0} parte por mil millones',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'partes/millardo',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0} noche',
+          other: '{0} noches',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0} noche',
+          other: '{0} noches',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0} noche',
+          other: '{0} noches',
         ),
       );
 }
@@ -7809,13 +7895,13 @@ class DateFieldsEsCO implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'hace {0} viernes',
-            other: 'hace {0} viernes',
+            one: 'hace {0} vie.',
+            other: 'hace {0} vie.',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'hace {0} viernes',
-            other: 'hace {0} viernes',
+            one: 'hace {0} VI',
+            other: 'hace {0} VI',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -7867,8 +7953,8 @@ class DateFieldsEsCO implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'hace {0} sábados',
-            other: 'hace {0} sábados',
+            one: 'hace {0} SA',
+            other: 'hace {0} SA',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -10238,14 +10324,6 @@ class TimeZonesEsCO extends TimeZones {
         daylight: 'hora de verano de China',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'hora de Choibalsan',
-        standard: 'hora estándar de Choibalsan',
-        daylight: 'hora de verano de Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10541,6 +10619,12 @@ class TimeZonesEsCO extends TimeZones {
         generic: 'hora de Kamchatka',
         standard: 'hora estándar de Kamchatka',
         daylight: 'hora de verano de Kamchatka',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'hora de Kazajistán',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

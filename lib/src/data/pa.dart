@@ -219,6 +219,10 @@ class LanguagesPa extends Languages {
       'bla',
       'ਸਿਕਸਿਕਾ',
     ),
+    'blo': Language(
+      'blo',
+      'ਅਨੀ',
+    ),
     'bm': Language(
       'bm',
       'ਬੰਬਾਰਾ',
@@ -707,6 +711,10 @@ class LanguagesPa extends Languages {
       'id',
       'ਇੰਡੋਨੇਸ਼ੀਆਈ',
     ),
+    'ie': Language(
+      'ie',
+      'ਇੰਟਰਲਿੰਗੁਈ',
+    ),
     'ig': Language(
       'ig',
       'ਇਗਬੋ',
@@ -919,6 +927,10 @@ class LanguagesPa extends Languages {
       'kwk',
       'ਕਵਾਕ’ਵਾਲਾ',
     ),
+    'kxv': Language(
+      'kxv',
+      'ਕੁਵੀ',
+    ),
     'ky': Language(
       'ky',
       'ਕਿਰਗੀਜ਼',
@@ -951,6 +963,10 @@ class LanguagesPa extends Languages {
       'li',
       'ਲਿਮਬੁਰਗੀ',
     ),
+    'lij': Language(
+      'lij',
+      'ਲਿਗੂਰੀ',
+    ),
     'lil': Language(
       'lil',
       'ਲਿਲੂਏਟ',
@@ -958,6 +974,10 @@ class LanguagesPa extends Languages {
     'lkt': Language(
       'lkt',
       'ਲਕੋਟਾ',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ਲੰਬਾਰਡ',
     ),
     'ln': Language(
       'ln',
@@ -1587,6 +1607,10 @@ class LanguagesPa extends Languages {
       'syr',
       'ਸੀਰੀਆਈ',
     ),
+    'szl': Language(
+      'szl',
+      'ਸਿਲੇਸੀਅਨ',
+    ),
     'ta': Language(
       'ta',
       'ਤਮਿਲ',
@@ -1747,9 +1771,17 @@ class LanguagesPa extends Languages {
       've',
       'ਵੇਂਡਾ',
     ),
+    'vec': Language(
+      'vec',
+      'ਵੇਨੇਸ਼ੀਅਨ',
+    ),
     'vi': Language(
       'vi',
       'ਵੀਅਤਨਾਮੀ',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ਮਖੂਵਾ',
     ),
     'vo': Language(
       'vo',
@@ -1795,6 +1827,10 @@ class LanguagesPa extends Languages {
       'xh',
       'ਖੋਸਾ',
     ),
+    'xnr': Language(
+      'xnr',
+      'ਕਾਂਗੜੀ',
+    ),
     'xog': Language(
       'xog',
       'ਸੋਗਾ',
@@ -1823,6 +1859,10 @@ class LanguagesPa extends Languages {
       'yue',
       'ਕੈਂਟੋਨੀਜ਼',
       menu: 'ਚੀਨੀ, ਕੈਂਟੋਨੀਜ਼',
+    ),
+    'za': Language(
+      'za',
+      'ਜ਼ੁਆਂਗ',
     ),
     'zgh': Language(
       'zgh',
@@ -5598,14 +5638,14 @@ class UnitsPa implements Units {
         short: UnitCountPattern(
           _locale,
           'ਕਿ.ਮੀ./ਘੰਟਾ',
-          one: '{0} ਕਿ.ਪ੍ਰ.ਘੰ.',
-          other: '{0} ਕਿ.ਪ੍ਰ.ਘੰ.',
+          one: '{0} ਕਿ.ਮੀ./ਘੰ.',
+          other: '{0} ਕਿ.ਮੀ./ਘੰ.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ਕਿ.ਮੀ./ਘੰਟਾ',
-          one: '{0} ਕਿ.ਪ੍ਰ.ਘੰ.',
-          other: '{0} ਕਿ.ਪ੍ਰ.ਘੰ.',
+          one: '{0} ਕਿ.ਮੀ./ਘੰ.',
+          other: '{0} ਕਿ.ਮੀ./ਘੰ.',
         ),
       );
 
@@ -5642,14 +5682,14 @@ class UnitsPa implements Units {
         short: UnitCountPattern(
           _locale,
           'ਮੀਲ/ਘੰਟਾ',
-          one: '{0} ਮੀ.ਪ੍ਰ.ਘੰ.',
-          other: '{0} ਮੀ.ਪ੍ਰ.ਘੰ.',
+          one: '{0} ਮੀਲ/ਘੰ.',
+          other: '{0} ਮੀਲ/ਘੰ.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ਮੀਲ/ਘੰਟਾ',
-          one: '{0} ਮੀ.ਪ੍ਰ.ਘੰ.',
-          other: '{0} ਮੀ.ਪ੍ਰ.ਘੰ.',
+          one: '{0} ਮੀਲ/ਘੰ.',
+          other: '{0} ਮੀਲ/ਘੰ.',
         ),
       );
 
@@ -6596,6 +6636,72 @@ class UnitsPa implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ਪ੍ਰਕਾਸ਼',
+          one: '{0} ਪ੍ਰਕਾਸ਼',
+          other: '{0} ਪ੍ਰਕਾਸ਼',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ਪ੍ਰਕਾਸ਼',
+          one: '{0} ਪ੍ਰਕਾਸ਼',
+          other: '{0} ਪ੍ਰਕਾਸ਼',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ਪ੍ਰਕਾਸ਼',
+          one: '{0} ਪ੍ਰਕਾਸ਼',
+          other: '{0} ਪ੍ਰਕਾਸ਼',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ਹਿੱਸਾ ਪ੍ਰਤੀ ਅਰਬ',
+          one: '{0} ਹਿੱਸਾ ਪ੍ਰਤੀ ਅਰਬ',
+          other: '{0} ਹਿੱਸਾ ਪ੍ਰਤੀ ਅਰਬ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ਹਿੱਸਾ/ਅਰਬ',
+          one: '{0} ਹਿੱਸਾ ਪ੍ਰਤੀ ਅਰਬ',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ਹਿੱਸਾ/ਅਰਬ',
+          one: '{0} ਹਿੱਸਾ ਪ੍ਰਤੀ ਅਰਬ',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ਰਾਤਾਂ',
+          one: '{0} ਰਾਤ',
+          other: '{0} ਰਾਤਾਂ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ਰਾਤਾਂ',
+          one: '{0} ਰਾਤ',
+          other: '{0} ਰਾਤਾਂ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ਰਾਤਾਂ',
+          one: '{0} ਰਾਤ',
+          other: '{0} ਰਾਤਾਂ',
         ),
       );
 }
@@ -7905,7 +8011,7 @@ class TerritoriesPa implements Territories {
     ),
     'DJ': Territory(
       'DJ',
-      'ਜ਼ੀਬੂਤੀ',
+      'ਜਿਬੂਤੀ',
     ),
     'DK': Territory(
       'DK',
@@ -9432,7 +9538,7 @@ class TimeZonesPa extends TimeZones {
       exemplarCity: 'ਦਾਰ ਏਸ ਸਲਾਮ',
     ),
     'Africa/Djibouti': TimeZoneNames(
-      exemplarCity: 'ਜ਼ੀਬੂਤੀ',
+      exemplarCity: 'ਜਿਬੂਤੀ',
     ),
     'Africa/Douala': TimeZoneNames(
       exemplarCity: 'ਡੌਆਲਾ',
@@ -9586,9 +9692,6 @@ class TimeZonesPa extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ਚਿਤਾ',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ਚੋਇਲਬਾਲਸਨ',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'ਕੋਲੰਬੋ',
@@ -10294,14 +10397,6 @@ class TimeZonesPa extends TimeZones {
         daylight: 'ਚੀਨ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ਚੌਇਬਾਲਸਨ ਵੇਲਾ',
-        standard: 'ਚੌਇਬਾਲਸਨ ਮਿਆਰੀ ਵੇਲਾ',
-        daylight: 'ਚੌਇਬਾਲਸਨ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10587,6 +10682,12 @@ class TimeZonesPa extends TimeZones {
         generic: 'ਜਪਾਨ ਵੇਲਾ',
         standard: 'ਜਪਾਨ ਮਿਆਰੀ ਵੇਲਾ',
         daylight: 'ਜਪਾਨ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ਕਜ਼ਾਖ਼ਸਤਾਨ ਵੇਲਾ',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

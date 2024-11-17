@@ -251,6 +251,10 @@ class LanguagesBg extends Languages {
       'bla',
       'сиксика',
     ),
+    'blo': Language(
+      'blo',
+      'ании',
+    ),
     'bm': Language(
       'bm',
       'бамбара',
@@ -845,7 +849,7 @@ class LanguagesBg extends Languages {
     ),
     'ie': Language(
       'ie',
-      'оксидентал',
+      'интерлингве',
     ),
     'ig': Language(
       'ig',
@@ -1095,6 +1099,10 @@ class LanguagesBg extends Languages {
       'kwk',
       'куак’уала',
     ),
+    'kxv': Language(
+      'kxv',
+      'кови',
+    ),
     'ky': Language(
       'ky',
       'киргизки',
@@ -1134,6 +1142,10 @@ class LanguagesBg extends Languages {
     'li': Language(
       'li',
       'лимбургски',
+    ),
+    'lij': Language(
+      'lij',
+      'лигурски',
     ),
     'lil': Language(
       'lil',
@@ -1892,6 +1904,10 @@ class LanguagesBg extends Languages {
       'syr',
       'сирийски',
     ),
+    'szl': Language(
+      'szl',
+      'силезийски',
+    ),
     'ta': Language(
       'ta',
       'тамилски',
@@ -2084,9 +2100,17 @@ class LanguagesBg extends Languages {
       've',
       'венда',
     ),
+    'vec': Language(
+      'vec',
+      'венециански',
+    ),
     'vi': Language(
       'vi',
       'виетнамски',
+    ),
+    'vmw': Language(
+      'vmw',
+      'макува',
     ),
     'vo': Language(
       'vo',
@@ -2139,6 +2163,10 @@ class LanguagesBg extends Languages {
     'xh': Language(
       'xh',
       'кхоса',
+    ),
+    'xnr': Language(
+      'xnr',
+      'кангри',
     ),
     'xog': Language(
       'xog',
@@ -3400,8 +3428,8 @@ class UnitsBg implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} кв. фут',
-          other: '{0} кв. фута',
+          one: '{0} квадратен фут',
+          other: '{0} ft²',
         ),
       );
 
@@ -3619,7 +3647,7 @@ class UnitsBg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'базисен пункт',
+          '‱',
           one: '{0} базисен пункт',
           other: '{0}‱',
         ),
@@ -3751,7 +3779,7 @@ class UnitsBg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'PByte',
+          'PB',
           one: '{0} петабайт',
           other: '{0} PB',
         ),
@@ -5095,7 +5123,7 @@ class UnitsBg implements Units {
           _locale,
           'mi',
           one: '{0} миля',
-          other: '{0} мили',
+          other: '{0} mi',
         ),
       );
 
@@ -5117,7 +5145,7 @@ class UnitsBg implements Units {
           _locale,
           'yd',
           one: '{0} ярд',
-          other: '{0} ярда',
+          other: '{0} yd',
         ),
       );
 
@@ -5139,7 +5167,7 @@ class UnitsBg implements Units {
           _locale,
           'ft',
           one: '{0} фут',
-          other: '{0} фута',
+          other: '{0} ft',
         ),
       );
 
@@ -5623,7 +5651,7 @@ class UnitsBg implements Units {
           _locale,
           'lb',
           one: '{0} фунт',
-          other: '{0} фунта',
+          other: '{0} lb',
         ),
       );
 
@@ -5644,8 +5672,8 @@ class UnitsBg implements Units {
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} унц.',
-          other: '{0} унц.',
+          one: '{0} унция',
+          other: '{0} oz',
         ),
       );
 
@@ -6304,8 +6332,8 @@ class UnitsBg implements Units {
         narrow: UnitCountPattern(
           _locale,
           '°F',
-          one: '{0} °F',
-          other: '{0} °F',
+          one: '{0} градус по Фаренхайт',
+          other: '{0}°F',
         ),
       );
 
@@ -6458,8 +6486,8 @@ class UnitsBg implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} куб. миля',
-          other: '{0} куб. мили',
+          one: '{0} кубическа миля',
+          other: '{0} mi³',
         ),
       );
 
@@ -6677,7 +6705,7 @@ class UnitsBg implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'mpt',
+          'pt',
           one: '{0} метрична пинта',
           other: '{0} mpt',
         ),
@@ -7142,6 +7170,72 @@ class UnitsBg implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'светлина',
+          one: '{0} светлина',
+          other: '{0} светлина',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'светлина',
+          one: '{0} светлина',
+          other: '{0} светлина',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'светлина',
+          one: '{0} светлина',
+          other: '{0} светлина',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'части на милиард',
+          one: '{0} част на милиард',
+          other: '{0} части на милиард',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'части/милиард',
+          one: '{0} част на милиард',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'части/милиард',
+          one: '{0} част на милиард',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'нощи',
+          one: '{0} нощ',
+          other: '{0} нощи',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'нощи',
+          one: '{0} нощ',
+          other: '{0} нощи',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'нощи',
+          one: '{0} нощ',
+          other: '{0} нощи',
         ),
       );
 }
@@ -10132,9 +10226,6 @@ class TimeZonesBg extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Чита',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Чойбалсан',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Коломбо',
     ),
@@ -10817,14 +10908,6 @@ class TimeZonesBg extends TimeZones {
         daylight: 'Китайско лятно часово време',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Чойбалсанско време',
-        standard: 'Чойбалсанско стандартно време',
-        daylight: 'Чойбалсанско лятно часово време',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11109,6 +11192,12 @@ class TimeZonesBg extends TimeZones {
         generic: 'Петропавловск-Камчатски време',
         standard: 'Петропавловск-Камчатски стандартно време',
         daylight: 'Петропавловск-Камчатски – лятно часово време',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Казахстанско време',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -215,6 +215,10 @@ class LanguagesSi extends Languages {
       'bla',
       'සික්සිකා',
     ),
+    'blo': Language(
+      'blo',
+      'අනී',
+    ),
     'bm': Language(
       'bm',
       'බම්බරා',
@@ -707,6 +711,10 @@ class LanguagesSi extends Languages {
       'id',
       'ඉන්දුනීසියානු',
     ),
+    'ie': Language(
+      'ie',
+      'ඉන්ටර්ලින්ග්',
+    ),
     'ig': Language(
       'ig',
       'ඉග්බෝ',
@@ -919,6 +927,10 @@ class LanguagesSi extends Languages {
       'kwk',
       'ක්වාක්වාලා',
     ),
+    'kxv': Language(
+      'kxv',
+      'කුවි',
+    ),
     'ky': Language(
       'ky',
       'කිර්ගිස්',
@@ -951,6 +963,10 @@ class LanguagesSi extends Languages {
       'li',
       'ලිම්බර්ගිශ්',
     ),
+    'lij': Language(
+      'lij',
+      'ලිගුරියන්',
+    ),
     'lil': Language(
       'lil',
       'ලිලූට්',
@@ -958,6 +974,10 @@ class LanguagesSi extends Languages {
     'lkt': Language(
       'lkt',
       'ලකොට',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ලොම්බාර්ඩ්',
     ),
     'ln': Language(
       'ln',
@@ -1583,6 +1603,10 @@ class LanguagesSi extends Languages {
       'syr',
       'ස්‍රයෑක්',
     ),
+    'szl': Language(
+      'szl',
+      'සිලේසියානු',
+    ),
     'ta': Language(
       'ta',
       'දෙමළ',
@@ -1739,9 +1763,17 @@ class LanguagesSi extends Languages {
       've',
       'වෙන්ඩා',
     ),
+    'vec': Language(
+      'vec',
+      'වැනේසියානු',
+    ),
     'vi': Language(
       'vi',
       'වියට්නාම්',
+    ),
+    'vmw': Language(
+      'vmw',
+      'මකුවා',
     ),
     'vo': Language(
       'vo',
@@ -1787,6 +1819,10 @@ class LanguagesSi extends Languages {
       'xh',
       'ශෝසා',
     ),
+    'xnr': Language(
+      'xnr',
+      'කැන්ග්‍රි',
+    ),
     'xog': Language(
       'xog',
       'සොගා',
@@ -1815,6 +1851,10 @@ class LanguagesSi extends Languages {
       'yue',
       'කැන්ටොනීස්',
       menu: 'චීන, කැන්ටොනීස්',
+    ),
+    'za': Language(
+      'za',
+      'ෂුවාං',
     ),
     'zgh': Language(
       'zgh',
@@ -6598,6 +6638,72 @@ class UnitsSi implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ආලෝකය',
+          one: '{0} ආලෝකය',
+          other: 'ආලෝකය {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ආලෝකය',
+          one: 'ආලෝකය {0}',
+          other: 'ආලෝකය {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ආලෝකය',
+          one: 'ආලෝකය {0}',
+          other: 'ආලෝකය {0}',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'බිලියනයකට කොටස්',
+          one: 'බිලියනයකට කොටස් {0}',
+          other: 'බිලියනයකට කොටස් {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'කොටස්/බිලියනය',
+          one: 'බිකො {0}',
+          other: 'බිකො {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'බිකො',
+          one: 'බිකො {0}',
+          other: 'බිකො {0}',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'රාත්‍රිය',
+          one: '{0} රාත්‍රිය',
+          other: 'රාත්‍රිය {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'රාත්‍රිය',
+          one: 'රාත්‍රිය {0}',
+          other: 'රාත්‍රිය {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'රාත්‍රිය',
+          one: 'රාත්‍රිය {0}',
+          other: 'රාත්‍රිය {0}',
+        ),
+      );
 }
 
 class DateFieldsSi implements DateFields {
@@ -9586,9 +9692,6 @@ class TimeZonesSi extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'චිටා',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'චොයිබල්සාන්',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'කොළඹ',
     ),
@@ -10263,14 +10366,6 @@ class TimeZonesSi extends TimeZones {
         daylight: 'චීන දහවල් වේලාව',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'චොයිබල්සාන් වේලාව',
-        standard: 'චොයිබල්සාන් සම්මත වේලාව',
-        daylight: 'චොයිබල්සාන් ග්‍රීෂ්ම වේලාව',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10547,6 +10642,12 @@ class TimeZonesSi extends TimeZones {
         generic: 'ජපාන වේලාව',
         standard: 'ජපාන සම්මත වේලාව',
         daylight: 'ජපාන දහවල් වේලාව',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'කසකස්තාන වේලාව',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

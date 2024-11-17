@@ -217,7 +217,7 @@ class LanguagesCy extends Languages {
     'az': Language(
       'az',
       'Aserbaijaneg',
-      short: 'Aseri',
+      short: 'Aserbaijaneg',
     ),
     'ba': Language(
       'ba',
@@ -294,6 +294,10 @@ class LanguagesCy extends Languages {
     'bla': Language(
       'bla',
       'Siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'Anii',
     ),
     'bm': Language(
       'bm',
@@ -1135,6 +1139,10 @@ class LanguagesCy extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Cirgiseg',
@@ -1174,6 +1182,10 @@ class LanguagesCy extends Languages {
     'li': Language(
       'li',
       'Limbwrgeg',
+    ),
+    'lij': Language(
+      'lij',
+      'Ligwreg',
     ),
     'lil': Language(
       'lil',
@@ -2219,6 +2231,10 @@ class LanguagesCy extends Languages {
       'vls',
       'Fflemeg Gorllewinol',
     ),
+    'vmw': Language(
+      'vmw',
+      'Macua',
+    ),
     'vo': Language(
       'vo',
       'Folapük',
@@ -2271,6 +2287,10 @@ class LanguagesCy extends Languages {
       'xh',
       'Xhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
+    ),
     'xog': Language(
       'xog',
       'Soga',
@@ -2299,6 +2319,10 @@ class LanguagesCy extends Languages {
       'yue',
       'Cantoneeg',
       menu: 'Tsieinëeg, Cantoneg',
+    ),
+    'za': Language(
+      'za',
+      'Zhuang',
     ),
     'zap': Language(
       'zap',
@@ -2454,10 +2478,6 @@ class ScriptsCy extends Scripts {
     'Hrkt': Script(
       'Hrkt',
       'Syllwyddor Japaneaidd',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
     ),
     'Jpan': Script(
       'Jpan',
@@ -9106,6 +9126,108 @@ class UnitsCy implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'golau',
+          zero: 'golau',
+          one: 'golau',
+          two: 'golau',
+          few: 'golau',
+          many: 'golau',
+          other: '{0} golau',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'golau',
+          zero: 'golau',
+          one: '{0} golau',
+          two: '{0} golau',
+          few: '{0} golau',
+          many: '{0} golau',
+          other: '{0} golau',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'golau',
+          zero: '{0} golau',
+          one: '{0} golau',
+          two: '{0} golau',
+          few: '{0} golau',
+          many: '{0} golau',
+          other: '{0} golau',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'rhannau fesul biliwn',
+          zero: 'ppb',
+          one: '{0} rhan fesul biliwn',
+          two: '{0} rhan fesul biliwn',
+          few: '{0} rhan fesul biliwn',
+          many: '{0} rhan fesul biliwn',
+          other: '{0} rhan fesul biliwn',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'rhannau/biliwn',
+          zero: 'ppb',
+          one: '{0} rhan fesul biliwn',
+          two: '{0} rhan fesul biliwn',
+          few: '{0} rhan fesul biliwn',
+          many: '{0} rhan fesul biliwn',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'rhannau/biliwn',
+          zero: '{0} ppb',
+          one: '{0}ppb',
+          two: '{0} ppb',
+          few: '{0} ppb',
+          many: '{0} ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nosau',
+          zero: '{0} noson',
+          one: '{0} noson',
+          two: '{0} noson',
+          few: '{0} noson',
+          many: '{0} noson',
+          other: '{0} noson',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nosau',
+          zero: '{0} noson',
+          one: '{0} noson',
+          two: '{0} noson',
+          few: '{0} noson',
+          many: '{0} noson',
+          other: '{0} noson',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nosau',
+          zero: '{0} noson',
+          one: '{0}noson',
+          two: '{0}noson',
+          few: '{0}noson',
+          many: '{0}noson',
+          other: '{0}noson',
+        ),
+      );
 }
 
 class DateFieldsCy implements DateFields {
@@ -9146,8 +9268,8 @@ class DateFieldsCy implements DateFields {
             zero: '{0} o flynyddoedd yn ôl',
             one: 'blwyddyn yn ôl',
             two: '{0} flynedd yn ôl',
-            few: '{0} blynedd yn ôl',
-            many: '{0} blynedd yn ôl',
+            few: '{0} o flynyddoedd yn ôl',
+            many: '{0} o flynyddoedd yn ôl',
             other: '{0} o flynyddoedd yn ôl',
           ),
           short: RelativeTime(
@@ -9155,24 +9277,24 @@ class DateFieldsCy implements DateFields {
             zero: '{0} o flynyddoedd yn ôl',
             one: '{0} bl. yn ôl',
             two: '{0} flynedd yn ôl',
-            few: '{0} blynedd yn ôl',
-            many: '{0} blynedd yn ôl',
-            other: '{0} bl. yn ôl',
+            few: '{0} o flynyddoedd yn ôl',
+            many: '{0} o flynyddoedd yn ôl',
+            other: '{0} o flynyddoedd yn ôl',
           ),
           narrow: RelativeTime(
             _locale,
             zero: '{0} o flynyddoedd yn ôl',
             one: 'blwyddyn yn ôl',
             two: '{0} flynedd yn ôl',
-            few: '{0} blynedd yn ôl',
-            many: '{0} blynedd yn ôl',
-            other: '{0} bl. yn ôl',
+            few: '{0} o flynyddoedd yn ôl',
+            many: '{0} o flynyddoedd yn ôl',
+            other: '{0} o flynyddoedd yn ôl',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            zero: 'ymhen {0} mlynedd',
+            zero: 'ymhen {0} o flynyddoedd',
             one: 'ymhen blwyddyn',
             two: 'ymhen {0} flynedd',
             few: 'ymhen {0} blynedd',
@@ -9181,21 +9303,21 @@ class DateFieldsCy implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            zero: 'ymhen {0} mlynedd',
+            zero: 'ymhen {0} o flynyddoedd',
             one: 'ymhen blwyddyn',
             two: 'ymhen {0} flynedd',
             few: 'ymhen {0} blynedd',
             many: 'ymhen {0} blynedd',
-            other: 'ymhen {0} mlynedd',
+            other: 'ymhen {0} o flynyddoedd',
           ),
           narrow: RelativeTime(
             _locale,
-            zero: 'ymhen {0} mlynedd',
+            zero: 'ymhen {0} o flynyddoedd',
             one: 'ymhen bl.',
             two: 'ymhen {0} flynedd',
             few: 'ymhen {0} blynedd',
             many: 'ymhen {0} blynedd',
-            other: 'ymhen {0} mlynedd',
+            other: 'ymhen {0} o flynyddoedd',
           ),
         ),
       );
@@ -12097,14 +12219,6 @@ class TimeZonesCy extends TimeZones {
         daylight: 'Amser Haf Tsieina',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Amser Choibalsan',
-        standard: 'Amser Safonol Choibalsan',
-        daylight: 'Amser Haf Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12399,6 +12513,12 @@ class TimeZonesCy extends TimeZones {
         generic: 'Amser Japan',
         standard: 'Amser Safonol Japan',
         daylight: 'Amser Haf Japan',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Amser Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

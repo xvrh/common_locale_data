@@ -13,19 +13,19 @@ abstract class CommonLocaleData {
 
   /// Date when the CLDR data was downloaded.
   static final DateTime dataDownloadDate =
-      DateTime.parse('2024-11-17T12:24:49.000Z');
+      DateTime.parse('2024-11-17T12:50:16.000Z');
 
   /// Version of the CLDR data.
-  static const String cldrVersion = '45.0.0';
+  static const String cldrVersion = '46.0.0';
 
   /// Variant of the CLDR data.
   static const String cldrVariant = 'modern';
 
   /// Version of the Unicode data.
-  static const String unicodeVersion = '15.1.0';
+  static const String unicodeVersion = '16.0.0';
 
   /// Version of the IANA Timezone database.
-  static const String tzdbVersion = '2024a';
+  static const String tzdbVersion = '2024b';
 
   /// Version of the ICU data.
   static const String icuVersion = '76.1.0.0';
@@ -329,12 +329,15 @@ abstract class CommonLocaleData {
     'jv',
     'ka',
     'kk',
+    'kk-Cyrl',
+    'kk-KZ',
     'km',
     'kn',
     'ko',
     'ko-CN',
     'ko-KP',
     'kok',
+    'kok-Deva',
     'ky',
     'lo',
     'lt',
@@ -364,6 +367,7 @@ abstract class CommonLocaleData {
     'or',
     'pa',
     'pa-Guru',
+    'pcm',
     'pl',
     'ps',
     'ps-PK',
@@ -421,6 +425,8 @@ abstract class CommonLocaleData {
     'ta-SG',
     'te',
     'th',
+    'ti',
+    'ti-ER',
     'tk',
     'tr',
     'tr-CY',
@@ -435,14 +441,17 @@ abstract class CommonLocaleData {
     'yue',
     'yue-Hans',
     'yue-Hant',
+    'yue-Hant-CN',
     'zh',
     'zh-Hans',
     'zh-Hans-HK',
     'zh-Hans-MO',
+    'zh-Hans-MY',
     'zh-Hans-SG',
     'zh-Hant',
     'zh-Hant-HK',
     'zh-Hant-MO',
+    'zh-Hant-MY',
     'zu',
   };
 }

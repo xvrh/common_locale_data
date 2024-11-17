@@ -271,6 +271,10 @@ class LanguagesHe extends Languages {
       'bla',
       'סיקסיקה',
     ),
+    'blo': Language(
+      'blo',
+      'אני',
+    ),
     'bm': Language(
       'bm',
       'במבארה',
@@ -497,10 +501,6 @@ class LanguagesHe extends Languages {
       'de',
       'גרמנית',
     ),
-    'de-CH': Language(
-      'de-CH',
-      'גרמנית (שוויץ)',
-    ),
     'del': Language(
       'del',
       'דלאוור',
@@ -656,10 +656,6 @@ class LanguagesHe extends Languages {
     'fr': Language(
       'fr',
       'צרפתית',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'צרפתית (שוויץ)',
     ),
     'frc': Language(
       'frc',
@@ -1133,6 +1129,10 @@ class LanguagesHe extends Languages {
       'kwk',
       'קוואקוואלה',
     ),
+    'kxv': Language(
+      'kxv',
+      'קווי',
+    ),
     'ky': Language(
       'ky',
       'קירגיזית',
@@ -1184,6 +1184,10 @@ class LanguagesHe extends Languages {
     'lkt': Language(
       'lkt',
       'לקוטה',
+    ),
+    'lmo': Language(
+      'lmo',
+      'לומברדית',
     ),
     'ln': Language(
       'ln',
@@ -1954,6 +1958,10 @@ class LanguagesHe extends Languages {
       'syr',
       'סורית',
     ),
+    'szl': Language(
+      'szl',
+      'שלזית',
+    ),
     'ta': Language(
       'ta',
       'טמילית',
@@ -2146,9 +2154,17 @@ class LanguagesHe extends Languages {
       've',
       'וונדה',
     ),
+    'vec': Language(
+      'vec',
+      'ונציאנית',
+    ),
     'vi': Language(
       'vi',
       'וייטנאמית',
+    ),
+    'vmw': Language(
+      'vmw',
+      'מאקואה',
     ),
     'vo': Language(
       'vo',
@@ -2201,6 +2217,10 @@ class LanguagesHe extends Languages {
     'xh': Language(
       'xh',
       'קוסה',
+    ),
+    'xnr': Language(
+      'xnr',
+      'קאנגרי',
     ),
     'xog': Language(
       'xog',
@@ -3606,7 +3626,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'דקות קשת',
-          one: 'דקת קשת {0}',
+          one: '{0} דקת קשת',
           two: '{0} דקות קשת',
           many: '{0} דקות קשת',
           other: '{0} דקות קשת',
@@ -3614,7 +3634,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'דק׳ קשת',
-          one: 'ד׳ קשת {0}',
+          one: '{0} ד׳ קשת',
           two: '{0} דק׳ קשת',
           many: '{0} דקות קשת',
           other: '{0} דק׳ קשת',
@@ -3622,7 +3642,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'דק׳ קשת',
-          one: 'דקה {0}',
+          one: '{0} דקה',
           two: '{0} דקות',
           many: '{0} דקות',
           other: '{0} דקות',
@@ -3634,7 +3654,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'שניות קשת',
-          one: 'שניית קשת {0}',
+          one: '{0} שניית קשת',
           two: '{0} שניות קשת',
           many: '{0} שניות קשת',
           other: '{0} שניות קשת',
@@ -3642,7 +3662,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'שנ׳ קשת',
-          one: 'שנ׳ קשת {0}',
+          one: '{0} שנ׳ קשת',
           two: '{0} שנ׳ קשת',
           many: '{0} שניות קשת',
           other: '{0} שנ׳ קשת',
@@ -3650,7 +3670,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'שנ׳ קשת',
-          one: 'שנ׳ {0}',
+          one: '{0} שנ׳',
           two: '{0} שנ׳',
           many: '{0} שנ׳',
           other: '{0} שנ׳',
@@ -3662,7 +3682,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילומטר רבוע',
-          one: 'קילומטר רבוע {0}',
+          one: '{0} קילומטר רבוע',
           two: '{0} קילומטר רבוע',
           many: '{0} קילומטר רבוע',
           other: '{0} קילומטר רבוע',
@@ -3678,7 +3698,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'קמ״ר',
-          one: 'קמ״ר {0}',
+          one: '{0} קמ״ר',
           two: '{0} קמ״ר',
           many: '{0} קילומטר רבוע',
           other: '{0} קמ״ר',
@@ -3690,7 +3710,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'הקטאר',
-          one: 'הקטאר {0}',
+          one: '{0} הקטאר',
           two: '{0} הקטאר',
           many: '{0} הקטאר',
           other: '{0} הקטאר',
@@ -3698,18 +3718,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'הקטאר',
-          one: '‎{0} ha',
-          two: '‎{0} ha',
+          one: '{0} ha',
+          two: '{0} ha',
           many: '{0} הקטאר',
-          other: '‎{0} ha',
+          other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'הקטאר',
-          one: 'הקטאר {0}',
-          two: '{0} הקטאר',
+          one: '{0} ha',
+          two: '{0} ha',
           many: '{0} הקטאר',
-          other: '{0} הקטאר',
+          other: '{0} ha',
         ),
       );
 
@@ -3718,7 +3738,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מטר רבוע',
-          one: 'מטר רבוע {0}',
+          one: '{0} מטר רבוע',
           two: '{0} מטר רבוע',
           many: '{0} מטר רבוע',
           other: '{0} מטר רבוע',
@@ -3726,7 +3746,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'מ״ר',
-          one: 'מ״ר {0}',
+          one: '{0} מ״ר',
           two: '{0} מ״ר',
           many: '{0} מטר רבוע',
           other: '{0} מ״ר',
@@ -3734,7 +3754,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'מ״ר',
-          one: 'מ״ר {0}',
+          one: '{0} מ״ר',
           two: '{0} מ״ר',
           many: '{0} מטר רבוע',
           other: '{0} מ״ר',
@@ -3746,7 +3766,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'סנטימטר רבוע',
-          one: 'סנטימטר רבוע {0}',
+          one: '{0} סנטימטר רבוע',
           two: '{0} סנטימטר רבוע',
           many: '{0} סנטימטר רבוע',
           other: '{0} סנטימטר רבוע',
@@ -3774,7 +3794,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מייל רבוע',
-          one: 'מייל רבוע {0}',
+          one: '{0} מייל רבוע',
           two: '{0} מייל רבוע',
           many: '{0} מייל רבוע',
           other: '{0} מייל רבוע',
@@ -3782,18 +3802,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'מייל רבוע',
-          one: '‎{0} sq mi',
-          two: '‎{0} sq mi',
+          one: '{0} sq mi',
+          two: '{0} sq mi',
           many: '{0} מייל רבוע',
-          other: '‎{0} sq mi',
+          other: '{0} sq mi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'מייל רבוע',
-          one: 'מייל רבוע {0}',
-          two: '{0} מייל רבוע',
+          one: '{0} sq mi',
+          two: '{0} sq mi',
           many: '{0} מייל רבוע',
-          other: '{0} מייל רבוע',
+          other: '{0} sq mi',
         ),
       );
 
@@ -3802,7 +3822,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אקר',
-          one: 'אקר {0}',
+          one: '{0} אקר',
           two: '{0} אקר',
           many: '{0} אקר',
           other: '{0} אקר',
@@ -3810,15 +3830,15 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'אקר',
-          one: '‎{0} ac',
-          two: '{0} ac',
+          one: '{0} אקר',
+          two: '{0} אקר',
           many: '{0} אקר',
-          other: '‎{0} ac',
+          other: '{0} אקר',
         ),
         narrow: UnitCountPattern(
           _locale,
           'אקר',
-          one: 'אקר {0}',
+          one: '{0} אקר',
           two: '{0} אקר',
           many: '{0} אקר',
           other: '{0} אקר',
@@ -3830,7 +3850,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'יארד רבוע',
-          one: 'יארד רבוע {0}',
+          one: '{0} יארד רבוע',
           two: '{0} יארד רבוע',
           many: '{0} יארד רבוע',
           other: '{0} יארד רבוע',
@@ -3838,18 +3858,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'yards²',
-          one: '‎{0} yd²',
-          two: '‎{0} yd²',
+          one: '{0} yd²',
+          two: '{0} yd²',
           many: '{0} יארד רבוע',
-          other: '‎{0} yd²',
+          other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yards²',
-          one: '‎{0} yd²',
-          two: '‎{0} yd²',
+          one: '{0} yd²',
+          two: '{0} yd²',
           many: '{0} יארד רבוע',
-          other: '‎{0} yd²',
+          other: '{0} yd²',
         ),
       );
 
@@ -3858,7 +3878,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'רגל רבועה',
-          one: 'רגל רבועה {0}',
+          one: '{0} רגל רבועה',
           two: '{0} רגל רבועה',
           many: '{0} רגל רבועה',
           other: '{0} רגל רבועה',
@@ -3866,18 +3886,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ft²',
-          one: '‎{0} sq ft',
-          two: '‎{0} sq ft',
+          one: '{0} sq ft',
+          two: '{0} sq ft',
           many: '{0} רגל רבועה',
-          other: '‎{0} sq ft',
+          other: '{0} sq ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
-          one: 'רגל רבועה {0}',
-          two: '{0} רגל רבועה',
+          one: '{0} sq ft',
+          two: '{0} sq ft',
           many: '{0} רגל רבועה',
-          other: '{0} רגל רבועה',
+          other: '{0} sq ft',
         ),
       );
 
@@ -3886,7 +3906,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אינץ׳ רבוע',
-          one: 'אינץ׳ רבוע {0}',
+          one: '{0} אינץ׳ רבוע',
           two: '{0} אינץ׳ רבוע',
           many: '{0} אינץ׳ רבוע',
           other: '{0} אינץ׳ רבוע',
@@ -3894,18 +3914,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'in²',
-          one: '‎{0} in²',
-          two: '‎{0} in²',
+          one: '{0} in²',
+          two: '{0} in²',
           many: '{0} אינץ׳ רבוע',
-          other: '‎{0} in²',
+          other: '{0} in²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
-          one: '‎{0} in²',
-          two: '‎{0} in²',
+          one: '{0} in²',
+          two: '{0} in²',
           many: '{0} אינץ׳ רבוע',
-          other: '‎{0} in²',
+          other: '{0} in²',
         ),
       );
 
@@ -3939,7 +3959,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קראט',
-          one: 'קראט אחד',
+          one: '{0} קראט',
           two: '{0} קראט',
           many: '{0} קראט',
           other: '{0} קראט',
@@ -3947,16 +3967,16 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'kt',
-          one: 'קראט אחד',
-          two: '{0} קראט',
+          one: '{0} kt',
+          two: '{0} kt',
           many: '{0} קראט',
           other: '{0} kt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kt',
-          one: 'קראט אחד',
-          two: '{0} קראט',
+          one: '{0} kt',
+          two: '{0} kt',
           many: '{0} קראט',
           other: '{0} kt',
         ),
@@ -3975,16 +3995,16 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} מיליגרם/דציליטר',
-          two: '{0} מיליגרם/דציליטר',
+          one: '{0} mg/dL',
+          two: '{0} mg/dL',
           many: '{0} מיליגרם/דציליטר',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} מיליגרם/דציליטר',
-          two: '{0} מיליגרם/דציליטר',
+          one: '{0} mg/dL',
+          two: '{0} mg/dL',
           many: '{0} מיליגרם/דציליטר',
           other: '{0} mg/dL',
         ),
@@ -4023,21 +4043,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פריטים',
-          one: 'פריט {0}',
+          one: '{0} פריט',
           two: '{0} פריטים',
           other: '{0} פריטים',
         ),
         short: UnitCountPattern(
           _locale,
           'פריט',
-          one: 'פריט {0}',
+          one: '{0} פריט',
           two: '{0} פריטים',
           other: '{0} פריטים',
         ),
         narrow: UnitCountPattern(
           _locale,
           'פריט',
-          one: 'פריט {0}',
+          one: '{0} פריט',
           two: "{0} פר'",
           many: "{0} פר'",
           other: "{0} פר'",
@@ -4133,7 +4153,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'רבבית',
-          one: 'רבבית {0}',
+          one: '{0} רבבית',
           two: '{0} רבביות',
           many: '{0} רבביות',
           other: '{0} רבביות',
@@ -4141,7 +4161,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           '‱',
-          one: 'רבבית {0}',
+          one: '{0} רבבית',
           two: '{0} רבביות',
           many: '{0} רבביות',
           other: '{0}‱',
@@ -4149,7 +4169,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           '‱',
-          one: 'רבבית {0}',
+          one: '{0} רבבית',
           two: '{0} רבביות',
           many: '{0} רבביות',
           other: '{0}‱',
@@ -4225,7 +4245,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ל׳/100 ק״מ',
-          one: 'ל׳ {0}/100 ק״מ',
+          one: '{0} ל׳/100 ק״מ',
           two: '{0} ל׳/100 ק״מ',
           many: '{0} ליטר/100 ק״מ',
           other: '{0} ל׳/100 ק״מ',
@@ -4329,25 +4349,25 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'טרה-בייט',
-          one: 'טרה-בייט {0}',
-          two: 'טרה-בייט {0}',
-          many: 'טרה-בייט {0}',
-          other: 'טרה-בייט {0}',
+          one: '{0} טרה-בייט',
+          two: '{0} טרה-בייט',
+          many: '{0} טרה-בייט',
+          other: '{0} טרה-בייט',
         ),
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: 'טרה-בייט {0}',
-          two: 'טרה-בייט {0}',
-          many: 'טרה-בייט {0}',
+          one: '{0} טרה-בייט',
+          two: '{0} טרה-בייט',
+          many: '{0} טרה-בייט',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
-          one: 'טרה-בייט {0}',
-          two: 'טרה-בייט {0}',
-          many: 'טרה-בייט {0}',
+          one: '{0} טרה-בייט',
+          two: '{0} טרה-בייט',
+          many: '{0} טרה-בייט',
           other: '{0} TB',
         ),
       );
@@ -4400,11 +4420,11 @@ class UnitsHe implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ג״ב',
-          one: '{0} ג״ב',
-          two: '{0} ג״ב',
-          many: '{0} ג״ב',
-          other: '{0} ג״ב',
+          'GB',
+          one: '{0} ג׳יגה-בייט',
+          two: '{0} ג׳יגה-בייט',
+          many: '{0} ג׳יגה-בייט',
+          other: '{0} GB',
         ),
       );
 
@@ -4413,25 +4433,25 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ג׳יגה-ביט',
-          one: "{0} ג'יגה-ביט",
-          two: "{0} ג'יגה-ביט",
-          many: "{0} ג'יגה-ביט",
-          other: "{0} ג'יגה-ביט",
+          one: '{0} ג׳יגה-ביט',
+          two: '{0} ג׳יגה-ביט',
+          many: '{0} ג׳יגה-ביט',
+          other: '{0} ג׳יגה-ביט',
         ),
         short: UnitCountPattern(
           _locale,
           'Gbit',
-          one: "{0} ג'יגה-ביט",
-          two: "{0} ג'יגה-ביט",
-          many: "{0} ג'יגה-ביט",
+          one: '{0} ג׳יגה-ביט',
+          two: '{0} ג׳יגה-ביט',
+          many: '{0} ג׳יגה-ביט',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gbit',
-          one: "{0} ג'יגה-ביט",
-          two: "{0} ג'יגה-ביט",
-          many: "{0} ג'יגה-ביט",
+          one: '{0} ג׳יגה-ביט',
+          two: '{0} ג׳יגה-ביט',
+          many: '{0} ג׳יגה-ביט',
           other: '{0} Gb',
         ),
       );
@@ -4441,7 +4461,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מגה-בייט',
-          one: 'מגה-בייט',
+          one: '{0} מגה-בייט',
           two: '{0} מגה-בייט',
           many: '{0} מגה-בייט',
           other: '{0} מגה-בייט',
@@ -4449,7 +4469,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: 'מגה-בייט',
+          one: '{0} מגה-בייט',
           two: '{0} מגה-בייט',
           many: '{0} מגה-בייט',
           other: '{0} MB',
@@ -4457,10 +4477,10 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} מ״ב',
-          two: '{0} מ״ב',
-          many: '{0} מ״ב',
-          other: '{0} מ״ב',
+          one: '{0} מגה-בייט',
+          two: '{0} מגה-בייט',
+          many: '{0} מגה-בייט',
+          other: '{0} MB',
         ),
       );
 
@@ -4512,11 +4532,11 @@ class UnitsHe implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ק״ב',
-          one: 'ק״ב {0}',
-          two: '{0} ק״ב',
-          many: '{0} ק״ב',
-          other: '{0} ק״ב',
+          'kB',
+          one: '{0} קילו-בייט',
+          two: '{0} קילו-בייט',
+          many: '{0} קילו-בייט',
+          other: '{0} kB',
         ),
       );
 
@@ -4603,21 +4623,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מאות',
-          one: 'מאה {0}',
+          one: '{0} מאה',
           two: '{0} מאות',
           other: '{0} מאות',
         ),
         short: UnitCountPattern(
           _locale,
           'מאות',
-          one: 'מאה {0}',
+          one: '{0} מאה',
           two: '{0} מאות',
           other: '{0} מאות',
         ),
         narrow: UnitCountPattern(
           _locale,
           'מאות',
-          one: 'מאה {0}',
+          one: '{0} מאה',
           two: '{0} מאות',
           other: '{0} מאות',
         ),
@@ -4628,21 +4648,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'עשורים',
-          one: 'עשור {0}',
+          one: '{0} עשור',
           two: '{0} עשורים',
           other: '{0} עשורים',
         ),
         short: UnitCountPattern(
           _locale,
           'עשור',
-          one: 'עשור {0}',
+          one: '{0} עשור',
           two: '{0} עשורים',
           other: '{0} עשורים',
         ),
         narrow: UnitCountPattern(
           _locale,
           'עשור',
-          one: 'עשור {0}',
+          one: '{0} עשור',
           two: '{0} עשורים',
           other: '{0} עשורים',
         ),
@@ -4653,21 +4673,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'שנים',
-          one: 'שנה',
-          two: 'שנתיים',
+          one: '{0} שנה',
+          two: '{0} שנים',
           other: '{0} שנים',
         ),
         short: UnitCountPattern(
           _locale,
           'שנים',
-          one: 'שנה {0}',
+          one: '{0} שנה',
           two: '{0} שנים',
           other: '{0} שנים',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ש׳',
-          one: 'ש′ {0}',
+          one: '{0} ש′',
           two: '{0} ש′',
           many: '{0} ש′',
           other: '{0} ש′',
@@ -4707,7 +4727,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'חודשים',
-          one: 'חודש',
+          one: '{0} חודש',
           two: 'חודשיים',
           many: '{0} חודשים',
           other: '{0} חודשים',
@@ -4715,15 +4735,15 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'חודשים',
-          one: 'חודש',
-          two: 'חודשיים',
+          one: '{0} ח׳',
+          two: '{0} ח׳',
           many: '{0} חודשים',
           other: '{0} ח׳',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ח׳',
-          one: 'ח׳ {0}',
+          one: '{0} ח׳',
           two: '{0} ח׳',
           many: '{0} חודשים',
           other: '{0} ח׳',
@@ -4735,21 +4755,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'שבועות',
-          one: 'שבוע',
+          one: '{0} שבוע',
           two: 'שבועיים',
           other: '{0} שבועות',
         ),
         short: UnitCountPattern(
           _locale,
           'שבועות',
-          one: 'שבוע {0}',
+          one: '{0} שבוע',
           two: 'שבועיים',
           other: '{0} שבועות',
         ),
         narrow: UnitCountPattern(
           _locale,
           'שבוע',
-          one: 'ש′ {0}',
+          one: '{0} ש′',
           two: '{0} ש′',
           many: '{0} ש′',
           other: '{0} ש′',
@@ -4761,7 +4781,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ימים',
-          one: 'יום {0}',
+          one: '{0} יום',
           two: 'יומיים',
           many: '{0} יום',
           other: '{0} ימים',
@@ -4769,7 +4789,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ימים',
-          one: 'יום',
+          one: '{0} יום',
           two: 'יומיים',
           many: '{0} יום',
           other: '{0} ימ׳',
@@ -4777,7 +4797,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'יום',
-          one: 'י׳',
+          one: '{0} י׳',
           two: '{0} י׳',
           many: '{0} י׳',
           other: '{0} י׳',
@@ -4789,7 +4809,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'שעות',
-          one: 'שעה',
+          one: '{0} שעה',
           two: 'שעתיים',
           many: '{0} שעות',
           other: '{0} שעות',
@@ -4797,7 +4817,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'שע׳',
-          one: 'שעה',
+          one: '{0} שעה',
           two: 'שעתיים',
           many: '{0} שעות',
           other: '{0} שע׳',
@@ -4805,7 +4825,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'שע׳',
-          one: 'שעה {0}',
+          one: '{0} שע׳',
           two: '{0} שע׳',
           many: '{0} שעות',
           other: '{0} שע׳',
@@ -4817,7 +4837,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'דקות',
-          one: 'דקה',
+          one: '{0} דקה',
           two: 'שתי דקות',
           many: '{0} דקות',
           other: '{0} דקות',
@@ -4825,16 +4845,16 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'דק׳',
-          one: 'דקה',
-          two: 'שתי דק׳',
+          one: '{0} דק׳',
+          two: '{0} דק׳',
           many: '{0} דקות',
           other: '{0} דק׳',
         ),
         narrow: UnitCountPattern(
           _locale,
           'דק׳',
-          one: 'דקה',
-          two: 'שתי דק׳',
+          one: '{0} דק׳',
+          two: '{0} דק׳',
           many: '{0} דקות',
           other: '{0} דק׳',
         ),
@@ -4845,25 +4865,25 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'שניות',
-          one: 'שניה',
+          one: '{0} שניה',
           two: 'שתי שניות',
-          many: '‏{0} שניות',
+          many: '{0} שניות',
           other: '{0} שניות',
         ),
         short: UnitCountPattern(
           _locale,
           'שנ׳',
-          one: 'שנ׳',
-          two: 'שתי שנ׳',
-          many: '‏{0} שניות',
+          one: '{0} שנ׳',
+          two: '{0} שנ׳',
+          many: '{0} שניות',
           other: '{0} שנ׳',
         ),
         narrow: UnitCountPattern(
           _locale,
           'שנ׳',
-          one: 'שניה',
-          two: 'שתי שנ׳',
-          many: '‏{0} שניות',
+          one: '{0} שנ׳',
+          two: '{0} שנ׳',
+          many: '{0} שניות',
           other: '{0} שנ׳',
         ),
       );
@@ -4873,7 +4893,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אלפיות השניה',
-          one: 'אלפית שנייה {0}',
+          one: '{0} אלפית שנייה',
           two: '{0} אלפיות שנייה',
           many: '{0} אלפיות שנייה',
           other: '{0} אלפיות שנייה',
@@ -4881,7 +4901,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
-          one: 'אלפית שנייה {0}',
+          one: '{0} אלפית שנייה',
           two: '{0} אלפיות שנייה',
           many: '{0} אלפיות שנייה',
           other: '{0} ms',
@@ -4889,7 +4909,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ms',
-          one: 'אלפית שנייה {0}',
+          one: '{0} אלפית שנייה',
           two: '{0} אלפיות שנייה',
           many: '{0} אלפיות שנייה',
           other: '{0} ms',
@@ -4944,7 +4964,7 @@ class UnitsHe implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ננו שניות',
+          'ns',
           one: '{0} ננו שנייה',
           two: '{0} ננו שניות',
           many: '{0} ננו שניות',
@@ -4957,7 +4977,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אמפר',
-          one: 'אמפר {0}',
+          one: '{0} אמפר',
           two: '{0} אמפר',
           many: '{0} אמפר',
           other: '{0} אמפר',
@@ -4965,7 +4985,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'amps',
-          one: 'אמפר {0}',
+          one: '{0} אמפר',
           two: '{0} אמפר',
           many: '{0} אמפר',
           other: '{0} A',
@@ -4973,7 +4993,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'amps',
-          one: 'אמפר {0}',
+          one: '{0} אמפר',
           two: '{0} אמפר',
           many: '{0} אמפר',
           other: '{0} A',
@@ -4985,7 +5005,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מיליאמפר',
-          one: 'מיליאמפר {0}',
+          one: '{0} מיליאמפר',
           two: '{0} מיליאמפר',
           many: '{0} מיליאמפר',
           other: '{0} מיליאמפר',
@@ -4993,7 +5013,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: 'מיליאמפר {0}',
+          one: '{0} מיליאמפר',
           two: '{0} מיליאמפר',
           many: '{0} מיליאמפר',
           other: '{0} mA',
@@ -5001,7 +5021,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mA',
-          one: 'מיליאמפר {0}',
+          one: '{0} מיליאמפר',
           two: '{0} מיליאמפר',
           many: '{0} מיליאמפר',
           other: '{0} mA',
@@ -5041,7 +5061,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'וולט',
-          one: 'וולט {0}',
+          one: '{0} וולט',
           two: '{0} וולט',
           many: '{0} וולט',
           other: '{0} וולט',
@@ -5049,7 +5069,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'וולט',
-          one: 'וולט {0}',
+          one: '{0} וולט',
           two: '{0} וולט',
           many: '{0} וולט',
           other: '{0} V',
@@ -5057,7 +5077,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'וולט',
-          one: 'וולט {0}',
+          one: '{0} וולט',
           two: '{0} וולט',
           many: '{0} וולט',
           other: '{0} V',
@@ -5069,7 +5089,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילו קלוריות',
-          one: 'קילו קלוריה {0}',
+          one: '{0} קילו קלוריה',
           two: '{0} קילו קלוריות',
           many: '{0} קילו קלוריות',
           other: '{0} קילו קלוריות',
@@ -5077,7 +5097,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: 'קילו קלוריה {0}',
+          one: '{0} קילו קלוריה',
           two: '{0} קילו קלוריות',
           many: '{0} קילו קלוריות',
           other: '{0} kcal',
@@ -5085,7 +5105,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'kcal',
-          one: 'קילו קלוריה {0}',
+          one: '{0} קילו קלוריה',
           two: '{0} קילו קלוריות',
           many: '{0} קילו קלוריות',
           other: '{0} kcal',
@@ -5097,7 +5117,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קלוריות',
-          one: 'קלוריה {0}',
+          one: '{0} קלוריה',
           two: '{0} קלוריות',
           many: '{0} קלוריות',
           other: '{0} קלוריות',
@@ -5105,7 +5125,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
-          one: 'קלוריה {0}',
+          one: '{0} קלוריה',
           two: '{0} קלוריות',
           many: '{0} קלוריות',
           other: '{0} cal',
@@ -5113,7 +5133,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'cal',
-          one: 'קלוריה {0}',
+          one: '{0} קלוריה',
           two: '{0} קלוריות',
           many: '{0} קלוריות',
           other: '{0} cal',
@@ -5125,16 +5145,16 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קלוריות',
-          one: 'קלוריה אחת',
-          two: 'שתי קלוריות',
+          one: '{0} קלוריה',
+          two: '{0} קלוריות',
           many: '{0} קלוריות',
           other: '{0} קלוריות',
         ),
         short: UnitCountPattern(
           _locale,
           'קלו׳',
-          one: 'קלו׳ אחת',
-          two: 'שתי קלו׳',
+          one: '{0} קלו׳',
+          two: '{0} קלו׳',
           many: '{0} קלו׳',
           other: '{0} קלו׳',
         ),
@@ -5153,7 +5173,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילו ג׳אול',
-          one: 'קילו ג׳אול {0}',
+          one: '{0} קילו ג׳אול',
           two: '{0} קילו ג׳אול',
           many: '{0} קילו ג׳אול',
           other: '{0} קילו ג׳אול',
@@ -5161,7 +5181,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'קילו ג׳אול',
-          one: 'קילו ג׳אול {0}',
+          one: '{0} קילו ג׳אול',
           two: '{0} קילו ג׳אול',
           many: '{0} קילו ג׳אול',
           other: '{0} kJ',
@@ -5169,7 +5189,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'קילו ג׳אול',
-          one: 'קילו ג׳אול {0}',
+          one: '{0} קילו ג׳אול',
           two: '{0} קילו ג׳אול',
           many: '{0} קילו ג׳אול',
           other: '{0} kJ',
@@ -5209,7 +5229,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילוואט־שעה',
-          one: 'קילוואט־שעה {0}',
+          one: '{0} קילוואט־שעה',
           two: '{0} קילוואט-שעה',
           many: '{0} קילוואט-שעה',
           other: '{0} קילוואט-שעה',
@@ -5379,16 +5399,16 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'קוט״ש/100 ק״מ',
-          one: '{0} קוט"ש/100 ק"מ',
-          two: '{0} קוט"ש/100 ק"מ',
-          many: '{0} קילוואט/שעה ל-100 קילומטר',
-          other: '{0} קוט"ש/100 ק"מ',
+          one: '{0} קוט״ש/100 ק״מ',
+          two: '{0} קוט״ש/100 ק״מ',
+          many: '{0} קוט״ש/100 ק״מ',
+          other: '{0} קוט״ש/100 ק״מ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
           one: '{0} kWh/100km',
-          two: '{0} קוט"ש/100 ק"מ',
+          two: '{0} kWh/100km',
           many: '{0} kWh/100km',
           other: '{0} kWh',
         ),
@@ -5399,7 +5419,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ג׳יגה-הרץ',
-          one: 'ג׳יגה-הרץ {0}',
+          one: '{0} ג׳יגה-הרץ',
           two: '{0} ג׳יגה-הרץ',
           many: '{0} ג׳יגה-הרץ',
           other: '{0} ג׳יגה-הרץ',
@@ -5407,7 +5427,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: 'ג׳יגה-הרץ {0}',
+          one: '{0} ג׳יגה-הרץ',
           two: '{0} ג׳יגה-הרץ',
           many: '{0} ג׳יגה-הרץ',
           other: '{0} GHz',
@@ -5415,7 +5435,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'GHz',
-          one: 'ג׳יגה-הרץ {0}',
+          one: '{0} ג׳יגה-הרץ',
           two: '{0} ג׳יגה-הרץ',
           many: '{0} ג׳יגה-הרץ',
           other: '{0} GHz',
@@ -5427,7 +5447,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מגה-הרץ',
-          one: 'מגה-הרץ {0}',
+          one: '{0} מגה-הרץ',
           two: '{0} מגה-הרץ',
           many: '{0} מגה-הרץ',
           other: '{0} מגה-הרץ',
@@ -5435,7 +5455,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: 'מגה-הרץ {0}',
+          one: '{0} מגה-הרץ',
           two: '{0} מגה-הרץ',
           many: '{0} מגה-הרץ',
           other: '{0} MHz',
@@ -5443,7 +5463,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'MHz',
-          one: 'מגה-הרץ {0}',
+          one: '{0} מגה-הרץ',
           two: '{0} מגה-הרץ',
           many: '{0} מגה-הרץ',
           other: '{0} MHz',
@@ -5455,7 +5475,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילו-הרץ',
-          one: 'קילו-הרץ {0}',
+          one: '{0} קילו-הרץ',
           two: '{0} קילו-הרץ',
           many: '{0} קילו-הרץ',
           other: '{0} קילו-הרץ',
@@ -5463,7 +5483,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: 'קילו-הרץ {0}',
+          one: '{0} קילו-הרץ',
           two: '{0} קילו-הרץ',
           many: '{0} קילו-הרץ',
           other: '{0} kHz',
@@ -5471,7 +5491,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'kHz',
-          one: 'קילו-הרץ {0}',
+          one: '{0} קילו-הרץ',
           two: '{0} קילו-הרץ',
           many: '{0} קילו-הרץ',
           other: '{0} kHz',
@@ -5483,7 +5503,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'הרץ',
-          one: 'הרץ {0}',
+          one: '{0} הרץ',
           two: '{0} הרץ',
           many: '{0} הרץ',
           other: '{0} הרץ',
@@ -5491,7 +5511,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: 'הרץ {0}',
+          one: '{0} הרץ',
           two: '{0} הרץ',
           many: '{0} הרץ',
           other: '{0} Hz',
@@ -5499,7 +5519,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Hz',
-          one: 'הרץ {0}',
+          one: '{0} הרץ',
           two: '{0} הרץ',
           many: '{0} הרץ',
           other: '{0} Hz',
@@ -5511,23 +5531,23 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קו מפריד מסוג em',
-          one: '‎{0} em ‎',
-          two: '‎{0} em ‎',
-          other: '‎{0} ems ‎',
+          one: '{0} em',
+          two: '{0} em',
+          other: '{0} ems',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
-          one: '‎{0} em ‎',
-          two: '‎{0} em ‎',
-          other: '‎{0} em ‎',
+          one: '{0} em',
+          two: '{0} em',
+          other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
-          one: '‎{0} em ‎',
-          two: '‎{0} em ‎',
-          other: '‎{0} em ‎',
+          one: '{0} em',
+          two: '{0} em',
+          other: '{0} em',
         ),
       );
 
@@ -5536,23 +5556,23 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פיקסלים',
-          one: '‎{0} px ‎',
-          two: '‎{0} px ‎',
-          other: '‎{0} px ‎',
+          one: '{0} px',
+          two: '{0} px',
+          other: '{0} px',
         ),
         short: UnitCountPattern(
           _locale,
           'px',
-          one: '‎{0} px ‎',
-          two: '‎{0} px ‎',
-          other: '‎{0} px ‎',
+          one: '{0} px',
+          two: '{0} px',
+          other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
-          one: '‎{0} px ‎',
-          two: '‎{0} px ‎',
-          other: '‎{0} px ‎',
+          one: '{0} px',
+          two: '{0} px',
+          other: '{0} px',
         ),
       );
 
@@ -5561,23 +5581,23 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מגה-פיקסל',
-          one: '‎{0} MP ‎',
-          two: '‎{0} MP ‎',
-          other: '‎{0} MP ‎',
+          one: '{0} MP',
+          two: '{0} MP',
+          other: '{0} MP',
         ),
         short: UnitCountPattern(
           _locale,
           'MP',
-          one: '‎{0} MP ‎',
-          two: '‎{0} MP ‎',
-          other: '‎{0} MP ‎',
+          one: '{0} MP',
+          two: '{0} MP',
+          other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
-          one: '‎{0} MP ‎',
-          two: '‎{0} MP ‎',
-          other: '‎{0} MP ‎',
+          one: '{0} MP',
+          two: '{0} MP',
+          other: '{0} MP',
         ),
       );
 
@@ -5586,23 +5606,23 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פיקסלים לסנטימטר',
-          one: '‎{0} ppcm‎',
-          two: '‎{0} ppcm‎',
-          other: '‎{0} ppcm‎',
+          one: '{0} ppcm',
+          two: '{0} ppcm',
+          other: '{0} ppcm',
         ),
         short: UnitCountPattern(
           _locale,
           'ppcm',
-          one: '‎{0} ppcm‎',
-          two: '‎{0} ppcm‎',
-          other: '‎{0} ppcm‎',
+          one: '{0} ppcm',
+          two: '{0} ppcm',
+          other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
-          one: '‎{0} ppcm‎',
-          two: '‎{0} ppcm‎',
-          other: '‎{0} ppcm‎',
+          one: '{0} ppcm',
+          two: '{0} ppcm',
+          other: '{0} ppcm',
         ),
       );
 
@@ -5612,22 +5632,25 @@ class UnitsHe implements Units {
           _locale,
           'פיקסלים לאינץ׳',
           one: "{0} פיקסל לאינץ'",
-          two: '‎{0} ppi‎',
+          two: "{0} פיקסלים לאינץ'",
+          many: "{0} פיקסלים לאינץ'",
           other: "{0} פיקסלים לאינץ'",
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
-          one: '‎{0} ppi‎',
-          two: '‎{0} ppi‎',
-          other: '‎{0} ppi‎',
+          one: '{0} ppi',
+          two: '{0} ppi',
+          many: "{0} פיקסלים לאינץ'",
+          other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
-          one: '‎{0} ppi‎',
-          two: '‎{0} ppi‎',
-          other: '‎{0} ppi‎',
+          one: '{0} ppi',
+          two: '{0} ppi',
+          many: "{0} פיקסלים לאינץ'",
+          other: '{0} ppi',
         ),
       );
 
@@ -5636,26 +5659,20 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'נקודות לסנטימטר',
-          one: 'נקודה {0} לסנטימטר',
-          two: '‎{0} נקודות לסנטימטר',
-          many: '‎{0} נקודות לסנטימטר',
-          other: '{0} נקודות לסנטימטר',
+          one: '{0} dot per centimeter',
+          other: '{0} dots per centimeter',
         ),
         short: UnitCountPattern(
           _locale,
           'נקודות לסנטימטר',
-          one: 'נקודה {0} לסנטימטר',
-          two: '‎{0} נקודות לסנטימטר',
-          many: '‎{0} נקודות לסנטימטר',
-          other: '{0} נקודות לסנטימטר',
+          one: '{0} dpcm',
+          other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'נקודות לסנטימטר',
-          one: '‎{0} ppcm‎',
-          two: '‎{0} ppcm‎',
-          many: '‎{0} נקודות לסנטימטר',
-          other: '‎{0} נק׳ ס״מ',
+          one: '{0}dpcm',
+          other: '{0}dpcm',
         ),
       );
 
@@ -5663,27 +5680,24 @@ class UnitsHe implements Units {
   Unit get graphicsDotPerInch => Unit(
         long: UnitCountPattern(
           _locale,
-          'נקודות לאינץ׳',
-          one: 'נקודות לאינץ׳',
+          'dpi',
+          one: '{0} ppi',
           two: '{0} ppi',
-          many: '{0} ppi',
-          other: '‎{0} dpi‎',
+          other: '{0} dpi',
         ),
         short: UnitCountPattern(
           _locale,
-          'נקודות לאינץ׳',
-          one: '{0} dpi',
-          two: '‎{0} ppi‎',
-          many: '{0} ppi',
-          other: '‎{0} dpi‎',
+          'dpi',
+          one: '{0} ppi',
+          two: '{0} ppi',
+          other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'נקודות לאינץ׳',
-          one: '{0} dpi',
+          'dpi',
+          one: '{0} ppi',
           two: '{0} ppi',
-          many: '{0} ppi',
-          other: '‎{0} dpi‎',
+          other: '{0} dpi',
         ),
       );
 
@@ -5692,23 +5706,20 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'נקודות קטנות',
-          one: '{0} נקודה',
-          two: '‎{0} px ‎',
-          other: '‎{0} px ‎',
+          one: '{0} dot',
+          other: '{0} dots',
         ),
         short: UnitCountPattern(
           _locale,
           'נקודה קטנה',
-          one: '{0} נקודה',
-          two: '‎{0} px ‎',
-          other: '‎{0} px ‎',
+          one: '{0} dot',
+          other: '{0} dots',
         ),
         narrow: UnitCountPattern(
           _locale,
           'נקודה',
-          one: '{0} נקודה',
-          two: '‎{0} px ‎',
-          other: '‎{0} px ‎',
+          one: '{0}dot',
+          other: '{0}dot',
         ),
       );
 
@@ -5717,7 +5728,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'רדיוס כדור-הארץ',
-          one: 'רדיוס כדור-הארץ',
+          one: '{0} רדיוס כדור-הארץ',
           two: '{0} רדיוס כדור-הארץ',
           many: '{0} רדיוס כדור-הארץ',
           other: '{0} רדיוס כדור-הארץ',
@@ -5725,7 +5736,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
-          one: 'רדיוס כדור-הארץ',
+          one: '{0} רדיוס כדור-הארץ',
           two: '{0} רדיוס כדור-הארץ',
           many: '{0} רדיוס כדור-הארץ',
           other: '{0} R⊕',
@@ -5733,7 +5744,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          one: 'רדיוס כדור-הארץ',
+          one: '{0} רדיוס כדור-הארץ',
           two: '{0} רדיוס כדור-הארץ',
           many: '{0} רדיוס כדור-הארץ',
           other: '{0} R⊕',
@@ -5745,7 +5756,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילומטרים',
-          one: 'קילומטר {0}',
+          one: '{0} קילומטר',
           two: '{0} קילומטרים',
           many: '{0} קילומטרים',
           other: '{0} קילומטרים',
@@ -5773,7 +5784,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מטרים',
-          one: 'מטר {0}',
+          one: '{0} מטר',
           two: '{0} מטרים',
           many: '{0} מטרים',
           other: '{0} מטרים',
@@ -5790,7 +5801,7 @@ class UnitsHe implements Units {
           _locale,
           'מטר',
           one: '{0} מ׳',
-          two: '{0} מ′',
+          two: '{0} מ׳',
           many: '{0} מטרים',
           other: '{0} מ׳',
         ),
@@ -5801,7 +5812,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'דצימטר',
-          one: 'דצימטר אחד',
+          one: '{0} דצימטר',
           two: '{0} דצימטרים',
           many: '{0} דצימטרים',
           other: '{0} דצימטרים',
@@ -5829,7 +5840,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'סנטימטרים',
-          one: 'סנטימטר {0}',
+          one: '{0} סנטימטר',
           two: '{0} סנטימטרים',
           many: '{0} סנטימטרים',
           other: '{0} סנטימטרים',
@@ -5845,7 +5856,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ס״מ',
-          one: 'ס"מ {0}',
+          one: '{0} ס״מ',
           two: '{0} ס״מ',
           many: '{0} סנטימטרים',
           other: '{0} ס״מ',
@@ -5857,7 +5868,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מילימטרים',
-          one: 'מילימטר {0}',
+          one: '{0} מילימטר',
           two: '{0} מילימטרים',
           many: '{0} מילימטרים',
           other: '{0} מילימטרים',
@@ -5865,7 +5876,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'מ״מ',
-          one: 'מ″מ {0}',
+          one: '{0} מ″מ',
           two: '{0} מ״מ',
           many: '{0} מילימטרים',
           other: '{0} מ״מ',
@@ -5873,7 +5884,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'מ״מ',
-          one: 'מ״מ {0}',
+          one: '{0} מ″מ',
           two: '{0} מ״מ',
           many: '{0} מילימטרים',
           other: '{0} מ״מ',
@@ -5885,7 +5896,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מיקרומטרים',
-          one: 'מיקרומטר {0}',
+          one: '{0} מיקרומטר',
           two: '{0} מיקרומטרים',
           many: '{0} מיקרומטרים',
           other: '{0} מיקרומטרים',
@@ -5893,17 +5904,17 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '‎{0} μm‎',
-          two: '‎{0} μm‎',
+          one: '{0} μm',
+          two: '{0} μm',
           many: '{0} מיקרומטרים',
-          other: '‎{0} μm‎',
+          other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
           one: '{0} μm',
           two: '{0} μm',
-          many: '{0} μm',
+          many: '{0} מיקרומטרים',
           other: '{0} μm',
         ),
       );
@@ -5913,7 +5924,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ננומטרים',
-          one: 'ננומטר {0}',
+          one: '{0} ננומטר',
           two: '{0} ננומטרים',
           many: '{0} ננומטרים',
           other: '{0} ננומטרים',
@@ -5921,17 +5932,17 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '‎{0} nm',
-          two: '‎{0} nm',
+          one: '{0} nm',
+          two: '{0} nm',
           many: '{0} ננומטרים',
-          other: '‎{0} nm',
+          other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
           one: '{0} nm',
           two: '{0} nm',
-          many: '{0} nm',
+          many: '{0} ננומטרים',
           other: '{0} nm',
         ),
       );
@@ -5941,7 +5952,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פיקומטרים',
-          one: 'פיקומטר {0}',
+          one: '{0} פיקומטר',
           two: '{0} פיקומטרים',
           many: '{0} פיקומטרים',
           other: '{0} פיקומטרים',
@@ -5949,18 +5960,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'פ״מ',
-          one: 'פ“מ {0}',
-          two: '{0} פ"מ',
+          one: '{0} פ“מ',
+          two: '{0} פ״מ',
           many: '{0} פיקומטרים',
           other: '{0} פ"מ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'פ״מ',
-          one: 'פיקומטר {0}',
-          two: '{0} פיקומטר',
-          many: '{0} פיקומטר',
-          other: '{0} פיקומטר',
+          one: '{0} פ“מ',
+          two: '{0} פ״מ',
+          many: '{0} פיקומטרים',
+          other: '{0} פ"מ',
         ),
       );
 
@@ -5969,7 +5980,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מייל',
-          one: 'מייל {0}',
+          one: '{0} מייל',
           two: '{0} מייל',
           other: '{0} מייל',
         ),
@@ -5983,7 +5994,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'מייל',
-          one: 'מייל {0}',
+          one: '{0} מייל',
           two: '{0} מייל',
           other: '{0} מייל',
         ),
@@ -5994,21 +6005,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'יארד',
-          one: 'יארד {0}',
+          one: '{0} יארד',
           two: '{0} יארד',
           other: '{0} יארד',
         ),
         short: UnitCountPattern(
           _locale,
           'יארד',
-          one: 'יארד {0}',
+          one: '{0} יארד',
           two: '{0} יארד',
           other: '{0} יארד',
         ),
         narrow: UnitCountPattern(
           _locale,
           'יארד',
-          one: 'יארד {0}',
+          one: '{0} יארד',
           two: '{0} יארד',
           other: '{0} יארד',
         ),
@@ -6019,7 +6030,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'רגל',
-          one: 'רגל {0}',
+          one: '{0} רגל',
           two: '{0} רגל',
           many: '{0} רגל',
           other: '{0} רגל',
@@ -6027,18 +6038,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'רגל',
-          one: '‎{0} ft',
-          two: '‎{0} ft',
+          one: '{0} ft',
+          two: '{0} ft',
           many: '{0} רגל',
-          other: '‎{0} ft',
+          other: '{0} ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'רגל',
-          one: 'רגל {0}',
-          two: '{0} רגל',
+          one: '{0} ft',
+          two: '{0} ft',
           many: '{0} רגל',
-          other: '{0} רגל',
+          other: '{0} ft',
         ),
       );
 
@@ -6047,7 +6058,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אינץ׳',
-          one: 'אינץ׳ {0}',
+          one: '{0} אינץ׳',
           two: '{0} אינץ׳',
           many: '{0} אינץ׳',
           other: '{0} אינץ׳',
@@ -6055,18 +6066,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'אינץ׳',
-          one: '‎{0} in',
-          two: '‎{0} in',
+          one: '{0} in',
+          two: '{0} in',
           many: '{0} אינץ׳',
-          other: '‎{0} in',
+          other: '{0} in',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'אינץ׳',
-          one: 'אינץ׳ {0}',
-          two: '{0} אינץ׳',
+          'in',
+          one: '{0} in',
+          two: '{0} in',
           many: '{0} אינץ׳',
-          other: '{0} אינץ׳',
+          other: '{0} in',
         ),
       );
 
@@ -6083,17 +6094,17 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'pc',
-          one: '‎{0} pc',
-          two: '‎{0} pc',
+          one: '{0} pc',
+          two: '{0} pc',
           many: '{0} פארסק',
-          other: '‎{0} pc',
+          other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pc',
           one: '{0} pc',
           two: '{0} pc',
-          many: '{0} pc',
+          many: '{0} פארסק',
           other: '{0} pc',
         ),
       );
@@ -6103,21 +6114,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'שנות אור',
-          one: 'שנת אור {0}',
+          one: '{0} שנת אור',
           two: '{0} שנות אור',
           other: '{0} שנות אור',
         ),
         short: UnitCountPattern(
           _locale,
           'שנות אור',
-          one: 'שנת אור {0}',
+          one: '{0} שנת אור',
           two: '{0} שנות אור',
           other: '{0} שנות אור',
         ),
         narrow: UnitCountPattern(
           _locale,
           'שנות אור',
-          one: 'שנת אור {0}',
+          one: '{0} שנת אור',
           two: '{0} שנות אור',
           other: '{0} שנות אור',
         ),
@@ -6128,7 +6139,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'יחידות אסטרונומיות',
-          one: 'יחידה אסטרונומית {0}',
+          one: '{0} יחידה אסטרונומית',
           two: '{0} יחידות אסטרונומיות',
           many: '{0} יחידות אסטרונומיות',
           other: '{0} יחידות אסטרונומיות',
@@ -6136,17 +6147,17 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'au',
-          one: '‎{0} au',
-          two: '‎{0} au',
+          one: '{0} au',
+          two: '{0} au',
           many: '{0} יחידות אסטרונומיות',
-          other: '‎{0} au',
+          other: '{0} au',
         ),
         narrow: UnitCountPattern(
           _locale,
           'au',
           one: '{0} au',
           two: '{0} au',
-          many: '{0} au',
+          many: '{0} יחידות אסטרונומיות',
           other: '{0} au',
         ),
       );
@@ -6212,7 +6223,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מייל ימי',
-          one: 'מייל ימי {0}',
+          one: '{0} מייל ימי',
           two: '{0} מייל ימי',
           many: '{0} מייל ימי',
           other: '{0} מייל ימי',
@@ -6240,7 +6251,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מייל-סקנדינביה',
-          one: 'מייל-סקנדינביה {0}',
+          one: '{0} מייל-סקנדינביה',
           two: '{0} מייל-סקנדינביה',
           many: '{0} מייל-סקנדינביה',
           other: '{0} מייל-סקנדינביה',
@@ -6248,7 +6259,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'smi',
-          one: 'מייל-סקנדינביה {0}',
+          one: '{0} מייל-סקנדינביה',
           two: '{0} מייל-סקנדינביה',
           many: '{0} מייל-סקנדינביה',
           other: '{0} smi',
@@ -6256,7 +6267,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'smi',
-          one: 'מייל-סקנדינביה {0}',
+          one: '{0} מייל-סקנדינביה',
           two: '{0} מייל-סקנדינביה',
           many: '{0} מייל-סקנדינביה',
           other: '{0} smi',
@@ -6268,23 +6279,25 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'נקודות',
-          one: 'נקודה',
-          two: "{0} נק'",
+          one: '{0} נקודה',
+          two: '{0} נקודות',
+          many: '{0} נקודות',
           other: '{0} נקודות',
         ),
         short: UnitCountPattern(
           _locale,
           'נקודות',
-          one: "{0} נק'",
-          two: "{0} נק'",
+          one: '{0} נק׳',
+          two: '{0} נק׳',
+          many: '{0} נקודות',
           other: "{0} נק'",
         ),
         narrow: UnitCountPattern(
           _locale,
           'נק׳',
-          one: 'נק׳ {0}',
+          one: '{0} נק׳',
           two: '{0} נק׳',
-          many: '{0} נק׳',
+          many: '{0} נקודות',
           other: "{0} נק'",
         ),
       );
@@ -6302,18 +6315,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
-          one: '‎{0} R☉‎',
-          two: '‎{0} R☉‎',
+          one: '{0} R☉‎',
+          two: '{0} R☉‎',
           many: '{0} רדיוס סולרי',
-          other: '‎{0} R☉‎',
+          other: '{0} R☉‎',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
-          one: '‎{0} R☉‎',
-          two: '‎{0} R☉‎',
+          one: '{0} R☉‎',
+          two: '{0} R☉‎',
           many: '{0} רדיוס סולרי',
-          other: '‎{0} R☉‎',
+          other: '{0} R☉‎',
         ),
       );
 
@@ -6322,7 +6335,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'לוקס',
-          one: 'לוקס אחד',
+          one: '{0} לוקס',
           two: '{0} לוקס',
           many: '{0} לוקס',
           other: '{0} לוקס',
@@ -6330,7 +6343,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'lux',
-          one: 'לוקס אחד',
+          one: '{0} לוקס',
           two: '{0} לוקס',
           many: '{0} לוקס',
           other: '{0} lx',
@@ -6338,7 +6351,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'lux',
-          one: 'לוקס אחד',
+          one: '{0} לוקס',
           two: '{0} לוקס',
           many: '{0} לוקס',
           other: '{0} lx',
@@ -6350,7 +6363,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קנדלה',
-          one: 'קנדלה',
+          one: '{0} קנדלה',
           two: '{0} קנדלה',
           many: '{0} קנדלה',
           other: '{0} קנדלה',
@@ -6358,7 +6371,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
-          one: 'קנדלה',
+          one: '{0} קנדלה',
           two: '{0} קנדלה',
           many: '{0} קנדלה',
           other: '{0} cd',
@@ -6366,7 +6379,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'cd',
-          one: 'קנדלה',
+          one: '{0} קנדלה',
           two: '{0} קנדלה',
           many: '{0} קנדלה',
           other: '{0} cd',
@@ -6378,7 +6391,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'לומן',
-          one: 'לומן {0}',
+          one: '{0} לומן',
           two: '{0} לומן',
           many: '{0} לומן',
           other: '{0} לומן',
@@ -6386,7 +6399,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
-          one: 'לומן {0}',
+          one: '{0} לומן',
           two: '{0} לומן',
           many: '{0} לומן',
           other: '{0} lm',
@@ -6394,7 +6407,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'lm',
-          one: 'לומן {0}',
+          one: '{0} לומן',
           two: '{0} לומן',
           many: '{0} לומן',
           other: '{0} lm',
@@ -6428,14 +6441,14 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'טון מטרי',
-          one: 'טון מטרי אחד',
-          two: 'שני טון מטרי',
+          one: '{0} טון מטרי',
+          two: '{0} טון מטרי',
           many: '{0} טון מטרי',
           other: '{0} טון מטרי',
         ),
         short: UnitCountPattern(
           _locale,
-          't',
+          'טון מ׳',
           one: '{0} טון מ׳',
           two: '{0} טון מ׳',
           many: '{0} טון מטרי',
@@ -6443,7 +6456,7 @@ class UnitsHe implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          't',
+          'טון מ׳',
           one: '{0} t',
           two: '{0} t',
           many: '{0} t',
@@ -6456,7 +6469,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילוגרם',
-          one: 'קילוגרם {0}',
+          one: '{0} קילוגרם',
           two: '{0} קילוגרם',
           many: '{0} קילוגרם',
           other: '{0} קילוגרם',
@@ -6464,7 +6477,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ק״ג',
-          one: 'ק״ג {0}',
+          one: '{0} ק״ג',
           two: '{0} ק״ג',
           many: '{0} קילוגרם',
           other: '{0} ק״ג',
@@ -6484,7 +6497,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'גרם',
-          one: 'גרם {0}',
+          one: '{0} גרם',
           two: '{0} גרם',
           many: '{0} גרם',
           other: '{0} גרם',
@@ -6492,7 +6505,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'גרם',
-          one: 'גר׳ {0}',
+          one: '{0} גר׳',
           two: '{0} גר׳',
           many: '{0} גרם',
           other: '{0} גר׳',
@@ -6512,8 +6525,8 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מיליגרם',
-          one: 'מיליגרם אחד',
-          two: 'שני מיליגרם',
+          one: '{0} מיליגרם',
+          two: '{0} מיליגרם',
           many: '{0} מיליגרם',
           other: '{0} מיליגרם',
         ),
@@ -6540,8 +6553,8 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מיקרוגרם',
-          one: 'מיקרוגרם אחד',
-          two: 'שני מיקרוגרם',
+          one: '{0} מיקרוגרם',
+          two: '{0} מיקרוגרם',
           many: '{0} מיקרוגרם',
           other: '{0} מיקרוגרם',
         ),
@@ -6556,7 +6569,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'מק״ג',
-          one: 'מק״ג {0}',
+          one: '{0} מק״ג',
           two: '{0} מק״ג',
           many: '{0} מיקרוגרם',
           other: '{0} מק״ג',
@@ -6568,15 +6581,15 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'טונות',
-          one: 'טונה אחת',
-          two: 'שתי טונות',
+          one: '{0} טונה',
+          two: '{0} טונות',
           many: '{0} טונות',
           other: '{0} טונות',
         ),
         short: UnitCountPattern(
           _locale,
           'טונה',
-          one: 'ט׳ {0}',
+          one: '{0} ט׳',
           two: '{0} ט׳',
           many: '{0} טונות',
           other: '{0} ט׳',
@@ -6584,7 +6597,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'טונה',
-          one: 'ט׳ {0}',
+          one: '{0} ט׳',
           two: '{0} ט׳',
           many: '{0} טונות',
           other: '{0} ט׳',
@@ -6596,21 +6609,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'סטון',
-          one: 'סטון {0}',
+          one: '{0} סטון',
           two: '{0} סטון',
           other: '{0} סטון',
         ),
         short: UnitCountPattern(
           _locale,
           'סטון',
-          one: 'סטון {0}',
+          one: '{0} סטון',
           two: '{0} סטון',
           other: '{0} סטון',
         ),
         narrow: UnitCountPattern(
           _locale,
           'סטון',
-          one: 'סטון {0}',
+          one: '{0} סטון',
           two: '{0} סטון',
           other: '{0} סטון',
         ),
@@ -6621,8 +6634,8 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פאונד',
-          one: 'פאונד אחד',
-          two: 'שני פאונד',
+          one: '{0} פאונד',
+          two: '{0} פאונד',
           many: '{0} פאונד',
           other: '{0} פאונד',
         ),
@@ -6649,7 +6662,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אונקיות',
-          one: 'אונקיה {0}',
+          one: '{0} אונקיה',
           two: '{0} אונקיות',
           many: '{0} אונקיות',
           other: '{0} אונקיות',
@@ -6657,7 +6670,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: 'אונקיה {0}',
+          one: '{0} אונקיה',
           two: '{0} אונקיות',
           many: '{0} אונקיות',
           other: '{0} oz',
@@ -6665,7 +6678,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: 'אונקיה {0}',
+          one: '{0} אונקיה',
           two: '{0} אונקיות',
           many: '{0} אונקיות',
           other: '{0} oz',
@@ -6677,24 +6690,24 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אונקיות טרוי',
-          one: 'אונקיית טרוי אחת',
-          two: 'שתי אונקיות טרוי',
+          one: '{0} אונקיית טרוי',
+          two: '{0} אונקיות טרוי',
           many: '{0} אונקיות טרוי',
           other: '{0} אונקיות טרוי',
         ),
         short: UnitCountPattern(
           _locale,
           'oz t',
-          one: 'אונקיית טרוי אחת',
-          two: 'שתי אונקיות טרוי',
+          one: '{0} אונקיית טרוי',
+          two: '{0} אונקיות טרוי',
           many: '{0} אונקיות טרוי',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
-          one: 'אונקיית טרוי אחת',
-          two: 'שתי אונקיות טרוי',
+          one: '{0} אונקיית טרוי',
+          two: '{0} אונקיות טרוי',
           many: '{0} אונקיות טרוי',
           other: '{0} oz t',
         ),
@@ -6705,24 +6718,24 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קרט',
-          one: 'קרט אחד',
-          two: 'שני קרט',
+          one: '{0} קרט',
+          two: '{0} קרט',
           many: '{0} קרט',
           other: '{0} קרט',
         ),
         short: UnitCountPattern(
           _locale,
           'קרט',
-          one: 'קרט אחד',
-          two: 'שני קרט',
+          one: '{0} קרט',
+          two: '{0} קרט',
           many: '{0} קרט',
           other: '{0} CD',
         ),
         narrow: UnitCountPattern(
           _locale,
           'קרט',
-          one: 'קרט אחד',
-          two: 'שני קרט',
+          one: '{0} קרט',
+          two: '{0} קרט',
           many: '{0} קרט',
           other: '{0} CD',
         ),
@@ -6764,7 +6777,7 @@ class UnitsHe implements Units {
           one: '{0} מסת כדור הארץ',
           two: '{0} מסות כדור הארץ',
           many: '{0} מסות כדור הארץ',
-          other: '{0} M⊕',
+          other: '{0} מסות כדור הארץ',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6817,21 +6830,21 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'גרעין',
-          one: 'גרעין {0}',
+          one: '{0} גרעין',
           two: '{0} גרעינים',
           other: '{0} גרעינים',
         ),
         short: UnitCountPattern(
           _locale,
           'גרעין',
-          one: 'גרעין {0}',
+          one: '{0} גרעין',
           two: '{0} גרעינים',
           other: '{0} גרעינים',
         ),
         narrow: UnitCountPattern(
           _locale,
           'גרעין',
-          one: 'גרעין {0}',
+          one: '{0} גרעין',
           two: '{0} גרעינים',
           other: '{0} גרעינים',
         ),
@@ -6842,7 +6855,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ג׳יגה ואט',
-          one: 'ג׳יגה ואט {0}',
+          one: '{0} ג׳יגה ואט',
           two: '{0} ג׳יגה ואט',
           many: '{0} ג׳יגה ואט',
           other: '{0} ג׳יגה ואט',
@@ -6850,7 +6863,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: 'ג׳יגה ואט {0}',
+          one: '{0} ג׳יגה ואט',
           two: '{0} ג׳יגה ואט',
           many: '{0} ג׳יגה ואט',
           other: '{0} GW',
@@ -6858,7 +6871,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'GW',
-          one: 'ג׳יגה ואט {0}',
+          one: '{0} ג׳יגה ואט',
           two: '{0} ג׳יגה ואט',
           many: '{0} ג׳יגה ואט',
           other: '{0} GW',
@@ -6870,7 +6883,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מגה ואט',
-          one: 'מגה ואט {0}',
+          one: '{0} מגה ואט',
           two: '{0} מגה ואט',
           many: '{0} מגה ואט',
           other: '{0} מגה ואט',
@@ -6878,7 +6891,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: 'מגה ואט {0}',
+          one: '{0} מגה ואט',
           two: '{0} מגה ואט',
           many: '{0} מגה ואט',
           other: '{0} MW',
@@ -6886,7 +6899,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'MW',
-          one: 'מגה ואט {0}',
+          one: '{0} מגה ואט',
           two: '{0} מגה ואט',
           many: '{0} מגה ואט',
           other: '{0} MW',
@@ -6898,7 +6911,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילוואט',
-          one: 'קילוואט {0}',
+          one: '{0} קילוואט',
           two: '{0} קילוואט',
           many: '{0} קילוואט',
           other: '{0} קילוואט',
@@ -6906,7 +6919,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: 'קילוואט {0}',
+          one: '{0} קילוואט',
           two: '{0} קילוואט',
           many: '{0} קילוואט',
           other: '{0} kW',
@@ -6914,7 +6927,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'kW',
-          one: 'קילוואט {0}',
+          one: '{0} קילוואט',
           two: '{0} קילוואט',
           many: '{0} קילוואט',
           other: '{0} kW',
@@ -6926,7 +6939,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ואט',
-          one: 'ואט {0}',
+          one: '{0} ואט',
           two: '{0} ואט',
           many: '{0} ואט',
           other: '{0} ואט',
@@ -6934,7 +6947,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ואט',
-          one: 'ואט {0}',
+          one: '{0} ואט',
           two: '{0} ואט',
           many: '{0} ואט',
           other: '{0} W',
@@ -6942,7 +6955,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ואט',
-          one: 'ואט {0}',
+          one: '{0} ואט',
           two: '{0} ואט',
           many: '{0} ואט',
           other: '{0} W',
@@ -6954,7 +6967,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מיליוואט',
-          one: 'מיליוואט {0}',
+          one: '{0} מיליוואט',
           two: '{0} מיליוואט',
           many: '{0} מיליוואט',
           other: '{0} מיליוואט',
@@ -6962,7 +6975,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: 'מיליוואט {0}',
+          one: '{0} מיליוואט',
           two: '{0} מיליוואט',
           many: '{0} מיליוואט',
           other: '{0} mW',
@@ -6970,7 +6983,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mW',
-          one: 'מיליוואט {0}',
+          one: '{0} מיליוואט',
           two: '{0} מיליוואט',
           many: '{0} מיליוואט',
           other: '{0} mW',
@@ -6982,7 +6995,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'כוח סוס',
-          one: 'כוח סוס {0}',
+          one: '{0} כוח סוס',
           two: '{0} כוח סוס',
           many: '{0} כוח סוס',
           other: '{0} כוח סוס',
@@ -6990,7 +7003,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'כ״ס',
-          one: 'כ״ס {0}',
+          one: '{0} כ״ס',
           two: '{0} כ״ס',
           many: '{0} כוח סוס',
           other: '{0} כ״ס',
@@ -6998,7 +7011,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'כ״ס',
-          one: 'כ״ס {0}',
+          one: '{0} כ״ס',
           two: '{0} כ״ס',
           many: '{0} כוח סוס',
           other: '{0} כ״ס',
@@ -7010,24 +7023,24 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מילימטר כספית',
-          one: 'מילימטר כספית אחד',
-          two: 'שני מילימטר כספית',
+          one: '{0} מילימטר כספית',
+          two: '{0} מילימטר כספית',
           many: '{0} מילימטר כספית',
           other: '{0} מילימטר כספית',
         ),
         short: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: 'מילימטר כספית אחד',
-          two: 'שני מילימטר כספית',
+          one: '{0} מילימטר כספית',
+          two: '{0} מילימטר כספית',
           many: '{0} מילימטר כספית',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: 'מילימטר כספית אחד',
-          two: 'שני מילימטר כספית',
+          one: '{0} מילימטר כספית',
+          two: '{0} מילימטר כספית',
           many: '{0} מילימטר כספית',
           other: '{0} mm Hg',
         ),
@@ -7038,24 +7051,24 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פאונד לאינץ׳ רבוע',
-          one: 'פאונד אחד לאינץ׳ רבוע',
-          two: 'שני פאונד לאינץ׳ רבוע',
+          one: 'פאונד {0} לאינץ׳ רבוע',
+          two: '{0} פאונד לאינץ׳ רבוע',
           many: '{0} פאונד לאינץ׳ רבוע',
           other: '{0} פאונד לאינץ׳ רבוע',
         ),
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: 'פאונד אחד לאינץ׳ רבוע',
-          two: 'שני פאונד לאינץ׳ רבוע',
+          one: 'פאונד {0} לאינץ׳ רבוע',
+          two: '{0} פאונד לאינץ׳ רבוע',
           many: '{0} פאונד לאינץ׳ רבוע',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
-          one: 'פאונד אחד לאינץ׳ רבוע',
-          two: 'שני פאונד לאינץ׳ רבוע',
+          one: 'פאונד {0} לאינץ׳ רבוע',
+          two: '{0} פאונד לאינץ׳ רבוע',
           many: '{0} פאונד לאינץ׳ רבוע',
           other: '{0} psi',
         ),
@@ -7066,7 +7079,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אינץ׳ כספית',
-          one: 'אינץ׳ כספית {0}',
+          one: '{0} אינץ׳ כספית',
           two: '{0} אינץ׳ כספית',
           many: '{0} אינץ׳ כספית',
           other: '{0} אינץ׳ כספית',
@@ -7074,7 +7087,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'in Hg',
-          one: 'אינץ׳ כספית {0}',
+          one: '{0} אינץ׳ כספית',
           two: '{0} אינץ׳ כספית',
           many: '{0} אינץ׳ כספית',
           other: '{0} inHg',
@@ -7082,7 +7095,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'in Hg',
-          one: 'אינץ׳ כספית {0}',
+          one: '{0} אינץ׳ כספית',
           two: '{0} אינץ׳ כספית',
           many: '{0} אינץ׳ כספית',
           other: '{0} inHg',
@@ -7135,10 +7148,10 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'מ״ב',
-          one: 'מיליבר {0}',
-          two: '{0} מיליבר',
-          many: '{0} מיליבר',
-          other: '{0} מיליבר',
+          one: '{0} מ″ב',
+          two: '{0} מ″ב',
+          many: '{0} מ″ב',
+          other: '{0} מ″ב',
         ),
       );
 
@@ -7203,7 +7216,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'הקטופסקל',
-          one: 'הקטופסקל {0}',
+          one: '{0} הקטופסקל',
           two: '{0} הקטופסקל',
           many: '{0} הקטופסקל',
           other: '{0} הקטופסקל',
@@ -7211,7 +7224,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: 'הקטופסקל {0}',
+          one: '{0} הקטופסקל',
           two: '{0} הקטופסקל',
           many: '{0} הקטופסקל',
           other: '{0} hPa',
@@ -7219,7 +7232,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'hPa',
-          one: 'הקטופסקל {0}',
+          one: '{0} הקטופסקל',
           two: '{0} הקטופסקל',
           many: '{0} הקטופסקל',
           other: '{0} hPa',
@@ -7331,10 +7344,10 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'מ׳/שנ׳',
-          one: '{0} מ/ש',
-          two: '{0} מ/ש',
-          many: '{0} מ/ש',
-          other: '{0} מ/ש',
+          one: '{0} מ׳/שנ׳',
+          two: '{0} מ׳/שנ׳',
+          many: '{0} מטר לשנייה',
+          other: '{0} מ׳/שנ׳',
         ),
       );
 
@@ -7371,24 +7384,24 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קשר',
-          one: 'קשר אחד',
-          two: 'שני קשר',
+          one: '{0} קשר',
+          two: '{0} קשר',
           many: '{0} קשר',
           other: '{0} קשר',
         ),
         short: UnitCountPattern(
           _locale,
           'kn',
-          one: 'קשר אחד',
-          two: 'שני קשר',
+          one: '{0} קשר',
+          two: '{0} קשר',
           many: '{0} קשר',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kn',
-          one: 'קשר אחד',
-          two: 'שני קשר',
+          one: '{0} קשר',
+          two: '{0} קשר',
           many: '{0} קשר',
           other: '{0} kn',
         ),
@@ -7399,23 +7412,23 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'בופורט',
-          one: 'בופורט {0}',
-          two: 'B {0}',
-          other: 'בופורט {0}',
+          one: '{0} בופורט',
+          two: '{0} בופורט',
+          other: '{0} בופורט',
         ),
         short: UnitCountPattern(
           _locale,
           'Bft',
-          one: 'בופורט {0}',
-          two: 'B {0}',
+          one: '{0} בופורט',
+          two: '{0} בופורט',
           other: 'B {0}',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Bft',
-          one: 'B{0}',
-          two: 'B {0}',
-          other: 'B{0}',
+          one: '{0} B',
+          two: '{0} B',
+          other: '{0} B',
         ),
       );
 
@@ -7423,7 +7436,7 @@ class UnitsHe implements Units {
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
-          '°',
+          'מעלת טמפרטורה',
           one: '{0} degree temperature',
           other: '{0}°',
         ),
@@ -7446,7 +7459,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מעלות צלזיוס',
-          one: 'מעלת צלזיוס {0}',
+          one: '{0} מעלת צלזיוס',
           two: '{0} מעלות צלזיוס',
           many: '{0} מעלות צלזיוס',
           other: '{0} מעלות צלזיוס',
@@ -7454,7 +7467,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           '°C',
-          one: 'מעלת צלזיוס {0}',
+          one: '{0} מעלת צלזיוס',
           two: '{0} מעלות צלזיוס',
           many: '{0} מעלות צלזיוס',
           other: '{0}°C',
@@ -7462,7 +7475,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           '°C',
-          one: 'מעלת צלזיוס {0}',
+          one: '{0} מעלת צלזיוס',
           two: '{0} מעלות צלזיוס',
           many: '{0} מעלות צלזיוס',
           other: '{0}°C',
@@ -7474,7 +7487,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מעלות פרנהייט',
-          one: 'מעלת פרנהייט {0}',
+          one: '{0} מעלת פרנהייט',
           two: '{0} מעלות פרנהייט',
           many: '{0} מעלות פרנהייט',
           other: '{0} מעלות פרנהייט',
@@ -7482,7 +7495,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           '°F',
-          one: 'מעלת פרנהייט {0}',
+          one: '{0} מעלת פרנהייט',
           two: '{0} מעלות פרנהייט',
           many: '{0} מעלות פרנהייט',
           other: '{0}°F',
@@ -7490,7 +7503,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           '°F',
-          one: 'מעלת פרנהייט {0}',
+          one: '{0} מעלת פרנהייט',
           two: '{0} מעלות פרנהייט',
           many: '{0} מעלות פרנהייט',
           other: '{0}°F',
@@ -7502,7 +7515,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מעלות קלווין',
-          one: 'קלווין {0}',
+          one: '{0} קלווין',
           two: '{0} קלווין',
           many: '{0} קלווין',
           other: '{0} קלווין',
@@ -7510,7 +7523,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: 'קלווין {0}',
+          one: '{0} קלווין',
           two: '{0} קלווין',
           many: '{0} קלווין',
           other: '{0} K',
@@ -7518,7 +7531,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'K',
-          one: 'קלווין {0}',
+          one: '{0} קלווין',
           two: '{0} קלווין',
           many: '{0} קלווין',
           other: '{0} K',
@@ -7586,7 +7599,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קילומטר מעוקב',
-          one: 'קילומטר מעוקב {0}',
+          one: '{0} קילומטר מעוקב',
           two: '{0} קילומטר מעוקב',
           many: '{0} קילומטר מעוקב',
           other: '{0} קילומטר מעוקב',
@@ -7594,7 +7607,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'קמ״ק',
-          one: 'קמ״ק {0}',
+          one: '{0} קמ״ק',
           two: '{0} קמ״ק',
           many: '{0} קילומטר מעוקב',
           other: '{0} קמ״ק',
@@ -7614,7 +7627,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מטר מעוקב',
-          one: 'מטר מעוקב {0}',
+          one: '{0} מטר מעוקב',
           two: '{0} מטר מעוקב',
           many: '{0} מטר מעוקב',
           other: '{0} מטר מעוקב',
@@ -7622,18 +7635,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '‎{0} m³',
-          two: '‎{0} m³',
+          one: '{0} m³',
+          two: '{0} m³',
           many: '{0} מטר מעוקב',
-          other: '‎{0} m³',
+          other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
-          one: '‎{0} m³',
-          two: '‎{0} m³',
+          one: '{0} m³',
+          two: '{0} m³',
           many: '{0} מטר מעוקב',
-          other: '‎{0} m³',
+          other: '{0} m³',
         ),
       );
 
@@ -7642,7 +7655,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'סנטימטר מעוקב',
-          one: 'סנטימטר מעוקב {0}',
+          one: '{0} סנטימטר מעוקב',
           two: '{0} סנטימטר מעוקב',
           many: '{0} סנטימטר מעוקב',
           other: '{0} סנטימטר מעוקב',
@@ -7670,7 +7683,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מייל מעוקב',
-          one: 'מייל מעוקב {0}',
+          one: '{0} מייל מעוקב',
           two: '{0} מייל מעוקב',
           many: '{0} מייל מעוקב',
           other: '{0} מייל מעוקב',
@@ -7678,17 +7691,17 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '‎{0} mi³',
-          two: '‎{0} mi³',
+          one: '{0} mi³',
+          two: '{0} mi³',
           many: '{0} מייל מעוקב',
-          other: '‎{0} mi³',
+          other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
           one: '{0} mi³',
           two: '{0} mi³',
-          many: '{0} mi³',
+          many: '{0} מייל מעוקב',
           other: '{0} mi³',
         ),
       );
@@ -7706,18 +7719,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'yd³',
-          one: '‎{0} yd³',
-          two: '‎{0} yd³',
+          one: '{0} yd³',
+          two: '{0} yd³',
           many: '{0} יארד מעוקב',
-          other: '‎{0} yd³',
+          other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
-          one: '‎{0} yd³',
-          two: '‎{0} yd³',
+          one: '{0} yd³',
+          two: '{0} yd³',
           many: '{0} יארד מעוקב',
-          other: '‎{0} yd³',
+          other: '{0} yd³',
         ),
       );
 
@@ -7726,7 +7739,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'רגל מעוקב',
-          one: 'רגל מעוקב {0}',
+          one: '{0} רגל מעוקב',
           two: '{0} רגל מעוקב',
           many: '{0} רגל מעוקב',
           other: '{0} רגל מעוקב',
@@ -7734,18 +7747,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'feet³',
-          one: '‎{0} ft³',
-          two: '‎{0} ft³',
+          one: '{0} ft³',
+          two: '{0} ft³',
           many: '{0} רגל מעוקב',
-          other: '‎{0} ft³',
+          other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'feet³',
-          one: '‎{0} ft³',
-          two: '‎{0} ft³',
+          one: '{0} ft³',
+          two: '{0} ft³',
           many: '{0} רגל מעוקב',
-          other: '‎{0} ft³',
+          other: '{0} ft³',
         ),
       );
 
@@ -7754,7 +7767,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אינץ׳ מעוקב',
-          one: 'אינץ׳ מעוקב {0}',
+          one: '{0} אינץ׳ מעוקב',
           two: '{0} אינץ׳ מעוקב',
           many: '{0} אינץ׳ מעוקב',
           other: '{0} אינץ׳ מעוקב',
@@ -7762,18 +7775,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '‎{0} in³',
-          two: '‎{0} in³',
+          one: '{0} in³',
+          two: '{0} in³',
           many: '{0} אינץ׳ מעוקב',
-          other: '‎{0} in³',
+          other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
-          one: '‎{0} in³',
-          two: '‎{0} in³',
+          one: '{0} in³',
+          two: '{0} in³',
           many: '{0} אינץ׳ מעוקב',
-          other: '‎{0} in³',
+          other: '{0} in³',
         ),
       );
 
@@ -7782,7 +7795,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מגה ליטר',
-          one: 'מגה ליטר {0}',
+          one: '{0} מגה ליטר',
           two: '{0} מגה ליטר',
           many: '{0} מגה ליטר',
           other: '{0} מגה ליטר',
@@ -7790,18 +7803,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ML',
-          one: '‎{0} ML',
-          two: '‎{0} ML',
+          one: '{0} ML',
+          two: '{0} ML',
           many: '{0} מגה ליטר',
-          other: '‎{0} ML',
+          other: '{0} ML',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ML',
-          one: '‎{0} ML',
-          two: '‎{0} ML',
+          one: '{0} ML',
+          two: '{0} ML',
           many: '{0} מגה ליטר',
-          other: '‎{0} ML',
+          other: '{0} ML',
         ),
       );
 
@@ -7810,7 +7823,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'הקטוליטר',
-          one: 'הקטוליטר {0}',
+          one: '{0} הקטוליטר',
           two: '{0} הקטוליטר',
           many: '{0} הקטוליטר',
           other: '{0} הקטוליטר',
@@ -7818,18 +7831,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'hL',
-          one: '‎{0} hL',
-          two: '‎{0} hL',
+          one: '{0} hL',
+          two: '{0} hL',
           many: '{0} הקטוליטר',
-          other: '‎{0} hL',
+          other: '{0} hL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hL',
-          one: '‎{0} hL',
-          two: '‎{0} hL',
+          one: '{0} hL',
+          two: '{0} hL',
           many: '{0} הקטוליטר',
-          other: '‎{0} hL',
+          other: '{0} hL',
         ),
       );
 
@@ -7838,7 +7851,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ליטר',
-          one: 'ליטר {0}',
+          one: '{0} ליטר',
           two: '{0} ליטר',
           many: '{0} ליטר',
           other: '{0} ליטר',
@@ -7846,7 +7859,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ליטר',
-          one: 'ל׳ {0}',
+          one: '{0} ל׳',
           two: '{0} ל׳',
           many: '{0} ליטר',
           other: '{0} ל׳',
@@ -7866,7 +7879,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'דציליטר',
-          one: 'דציליטר {0}',
+          one: '{0} דציליטר',
           two: '{0} דציליטר',
           many: '{0} דציליטר',
           other: '{0} דציליטר',
@@ -7894,7 +7907,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'סנטיליטר',
-          one: 'סנטיליטר {0}',
+          one: '{0} סנטיליטר',
           two: '{0} סנטיליטר',
           many: '{0} סנטיליטר',
           other: '{0} סנטיליטר',
@@ -7902,18 +7915,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'cL',
-          one: '‎{0} cL',
-          two: '‎{0} cL',
+          one: '{0} cL',
+          two: '{0} cL',
           many: '{0} סנטיליטר',
-          other: '‎{0} cL',
+          other: '{0} cL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cL',
-          one: '‎{0} cL',
-          two: '‎{0} cL',
+          one: '{0} cL',
+          two: '{0} cL',
           many: '{0} סנטיליטר',
-          other: '‎{0} cL',
+          other: '{0} cL',
         ),
       );
 
@@ -7922,7 +7935,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'מיליליטר',
-          one: 'מיליליטר {0}',
+          one: '{0} מיליליטר',
           two: '{0} מיליליטר',
           many: '{0} מיליליטר',
           other: '{0} מיליליטר',
@@ -7930,7 +7943,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'מ״ל',
-          one: 'מ״ל {0}',
+          one: '{0} מ״ל',
           two: '{0} מ״ל',
           many: '{0} מיליליטר',
           other: '{0} מ״ל',
@@ -7938,7 +7951,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'מ״ל',
-          one: 'מ״ל {0}',
+          one: '{0} מ״ל',
           two: '{0} מ״ל',
           many: '{0} מיליליטר',
           other: '{0} מ״ל',
@@ -7950,7 +7963,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פינט מטרי',
-          one: 'פינט מטרי {0}',
+          one: '{0} פינט מטרי',
           two: '{0} פינט מטרי',
           many: '{0} פינט מטרי',
           other: '{0} פינט מטרי',
@@ -7958,18 +7971,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'mpt',
-          one: '‎{0} mpt',
-          two: '‎{0} mpt',
+          one: '{0} mpt',
+          two: '{0} mpt',
           many: '{0} פינט מטרי',
-          other: '‎{0} mpt',
+          other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpt',
-          one: '‎{0} mpt',
-          two: '‎{0} mpt',
+          one: '{0} mpt',
+          two: '{0} mpt',
           many: '{0} פינט מטרי',
-          other: '‎{0} mpt',
+          other: '{0} mpt',
         ),
       );
 
@@ -7978,7 +7991,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'כוס מידה מטרית',
-          one: 'כוס מידה מטרית {0}',
+          one: '{0} כוס מידה מטרית',
           two: '{0} כ׳ מידה מטרית',
           many: '{0} כ׳ מידה מטרית',
           other: '{0} כ׳ מידה מטרית',
@@ -7986,18 +7999,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'mcup',
-          one: '‎{0} mc',
-          two: '‎{0} mc',
+          one: '{0} mc',
+          two: '{0} mc',
           many: '{0} כ׳ מידה מטרית',
-          other: '‎{0} mc',
+          other: '{0} mc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mcup',
-          one: '‎{0} mc',
-          two: '‎{0} mc',
+          one: '{0} mc',
+          two: '{0} mc',
           many: '{0} כ׳ מידה מטרית',
-          other: '‎{0} mc',
+          other: '{0} mc',
         ),
       );
 
@@ -8006,7 +8019,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אקר-רגל',
-          one: 'אקר-רגל {0}',
+          one: '{0} אקר-רגל',
           two: '{0} אקר-רגל',
           many: '{0} אקר-רגל',
           other: '{0} אקר-רגל',
@@ -8014,18 +8027,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '‎{0} ac ft',
-          two: '‎{0} ac ft',
+          one: '{0} ac ft',
+          two: '{0} ac ft',
           many: '{0} אקר-רגל',
-          other: '‎{0} ac ft',
+          other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '‎{0} ac ft',
-          two: '‎{0} ac ft',
+          one: '{0} ac ft',
+          two: '{0} ac ft',
           many: '{0} אקר-רגל',
-          other: '‎{0} ac ft',
+          other: '{0} ac ft',
         ),
       );
 
@@ -8062,7 +8075,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'גלון',
-          one: 'גלון {0}',
+          one: '{0} גלון',
           two: '{0} גלונים',
           many: '{0} גלונים',
           other: '{0} גלונים',
@@ -8090,7 +8103,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'גלון אימפריאלי',
-          one: 'גלון אימפריאלי {0}',
+          one: '{0} גלון אימפריאלי',
           two: '{0} גלון אימפריאלי',
           many: '{0} גלון אימפריאלי',
           other: '{0} גלון אימפריאלי',
@@ -8118,7 +8131,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קווארטות',
-          one: 'קווארטה {0}',
+          one: '{0} קווארטה',
           two: '{0} קווארטות',
           many: '{0} קווארטות',
           other: '{0} קווארטות',
@@ -8126,18 +8139,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'qts',
-          one: '‎{0} qt',
-          two: '‎{0} qt',
+          one: '{0} qt',
+          two: '{0} qt',
           many: '{0} קווארטות',
-          other: '‎{0} qt',
+          other: '{0} qt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qts',
-          one: '‎{0} qt',
-          two: '‎{0} qt',
+          one: '{0} qt',
+          two: '{0} qt',
           many: '{0} קווארטות',
-          other: '‎{0} qt',
+          other: '{0} qt',
         ),
       );
 
@@ -8146,7 +8159,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פינט',
-          one: 'פינט {0}',
+          one: '{0} פינט',
           two: '{0} פינט',
           many: '{0} פינט',
           other: '{0} פינט',
@@ -8154,18 +8167,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'פינט',
-          one: '‎{0} pt',
-          two: '‎{0} pt',
+          one: '{0} pt',
+          two: '{0} pt',
           many: '{0} פינט',
-          other: '‎{0} pt',
+          other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'פינט',
-          one: '‎{0} pt',
-          two: '‎{0} pt',
+          one: '{0} pt',
+          two: '{0} pt',
           many: '{0} פינט',
-          other: '‎{0} pt',
+          other: '{0} pt',
         ),
       );
 
@@ -8174,7 +8187,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'כוסות',
-          one: 'כוס {0}',
+          one: '{0} כוס',
           two: '{0} כוסות',
           many: '{0} כוסות',
           other: '{0} כוסות',
@@ -8182,7 +8195,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'כוסות',
-          one: 'כ׳ {0}',
+          one: '{0} כ׳',
           two: '{0} כ׳',
           many: '{0} כוסות',
           other: '{0} כ׳',
@@ -8190,7 +8203,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'כוסות',
-          one: 'כ׳ {0}',
+          one: '{0} כ׳',
           two: '{0} כ׳',
           many: '{0} כוסות',
           other: '{0} כ׳',
@@ -8202,7 +8215,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'אונקיות נוזלים',
-          one: 'אונקיית נוזלים {0}',
+          one: '{0} אונקיית נוזלים',
           two: '{0} אונקיות נוזלים',
           many: '{0} אונקיות נוזלים',
           other: '{0} אונקיות נוזלים',
@@ -8210,18 +8223,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'fl oz',
-          one: '‎{0} fl oz',
-          two: '‎{0} fl oz',
+          one: '{0} fl oz',
+          two: '{0} fl oz',
           many: '{0} אונקיות נוזלים',
-          other: '‎{0} fl oz',
+          other: '{0} fl oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fl oz',
-          one: '‎{0} fl oz',
-          two: '‎{0} fl oz',
+          one: '{0} fl oz',
+          two: '{0} fl oz',
           many: '{0} אונקיות נוזלים',
-          other: '‎{0} fl oz',
+          other: '{0} fl oz',
         ),
       );
 
@@ -8238,18 +8251,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'Imp. fl oz',
-          one: '‎{0} fl oz Imp.‎',
-          two: '‎{0} fl oz Imp.‎',
+          one: '{0} fl oz Imp.',
+          two: '{0} fl oz Imp.',
           many: '{0} אונקיית נוזלים אימפריאלית',
-          other: '‎{0} fl oz Imp.‎',
+          other: '{0} fl oz Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Imp. fl oz',
-          one: '‎{0} fl oz Imp.‎',
-          two: '‎{0} fl oz Imp.‎',
+          one: '{0} fl oz Imp.',
+          two: '{0} fl oz Imp.',
           many: '{0} אונקיית נוזלים אימפריאלית',
-          other: '‎{0} fl oz Imp.‎',
+          other: '{0} fl oz Imp.',
         ),
       );
 
@@ -8258,8 +8271,8 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'כפות',
-          one: 'כף אחת',
-          two: 'שתי כפות',
+          one: '{0} כפ׳',
+          two: '{0} כפות',
           many: '{0} כפות',
           other: '{0} כפות',
         ),
@@ -8286,7 +8299,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'כפיות',
-          one: 'כפית {0}',
+          one: '{0} כפית',
           two: '{0} כפיות',
           many: '{0} כפיות',
           other: '{0} כפיות',
@@ -8322,18 +8335,18 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'bbl',
-          one: '‎{0} bbl',
-          two: '‎{0} bbl',
+          one: '{0} bbl',
+          two: '{0} bbl',
           many: '{0} חביות',
-          other: '‎{0} bbl',
+          other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
-          one: '‎{0} bbl',
-          two: '‎{0} bbl',
+          one: '{0} bbl',
+          two: '{0} bbl',
           many: '{0} חביות',
-          other: '‎{0} bbl',
+          other: '{0} bbl',
         ),
       );
 
@@ -8342,7 +8355,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'כפית קינוחים',
-          one: 'כפית קינוחים',
+          one: '{0} כפית קינוחים',
           two: '{0} כפיות קינוחים',
           many: '{0} כפיות קינוחים',
           other: '{0} כפיות קינוחים',
@@ -8350,7 +8363,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'dstspn',
-          one: 'כפית קינוחים',
+          one: '{0} כפית קינוחים',
           two: '{0} כפיות קינוחים',
           many: '{0} כפיות קינוחים',
           other: '{0} dstspn',
@@ -8358,7 +8371,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'dstspn',
-          one: 'כפית קינוחים',
+          one: '{0} כפית קינוחים',
           two: '{0} כפיות קינוחים',
           many: '{0} כפיות קינוחים',
           other: '{0} dstspn',
@@ -8370,7 +8383,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'כפית קינוחים בארה״ב',
-          one: 'כפית קינוחים בארה״ב',
+          one: '{0} כפית קינוחים בארה״ב',
           two: '{0} כפיות קינוחים בארה"ב',
           many: '{0} כפיות קינוחים בארה"ב',
           other: '{0} כפיות קינוחים בארה"ב',
@@ -8378,7 +8391,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'dstspn Imp',
-          one: 'כפית קינוחים בארה״ב',
+          one: '{0} כפית קינוחים בארה״ב',
           two: '{0} כפיות קינוחים בארה"ב',
           many: '{0} כפיות קינוחים בארה"ב',
           other: '{0} dstspn Imp',
@@ -8388,7 +8401,7 @@ class UnitsHe implements Units {
           'dstspn Imp',
           one: '{0}dsp-Imp',
           two: '{0}dsp-Imp',
-          many: '{0} dstspn',
+          many: '{0}dsp-Imp',
           other: '{0}dsp-Imp',
         ),
       );
@@ -8397,7 +8410,7 @@ class UnitsHe implements Units {
   Unit get volumeDrop => Unit(
         long: UnitCountPattern(
           _locale,
-          'טיפה',
+          'טיפות',
           one: 'טיפה',
           two: '{0} טיפות',
           other: '{0} טיפות',
@@ -8423,7 +8436,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'דראם אלכוהול',
-          one: 'דראם אלכוהול {0}',
+          one: '{0} דראם אלכוהול',
           two: '{0} דראם אלכוהול',
           many: '{0} דראם אלכוהול',
           other: '{0} דראם אלכוהול',
@@ -8431,7 +8444,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'dram fluid',
-          one: 'דראם אלכוהול {0}',
+          one: '{0} דראם אלכוהול',
           two: '{0} דראם אלכוהול',
           many: '{0} דראם אלכוהול',
           other: '{0} dram fl',
@@ -8439,7 +8452,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'dram fluid',
-          one: 'דראם אלכוהול {0}',
+          one: '{0} דראם אלכוהול',
           two: '{0} דראם אלכוהול',
           many: '{0} דראם אלכוהול',
           other: '{0} dram fl',
@@ -8451,7 +8464,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'ג׳יגר',
-          one: "ג'יגר {0}",
+          one: '{0} ג׳יגר',
           two: "{0} ג'יגר",
           many: "{0} ג'יגר",
           other: "{0} ג'יגר",
@@ -8459,7 +8472,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'jigger',
-          one: "ג'יגר {0}",
+          one: '{0} ג׳יגר',
           two: "{0} ג'יגר",
           many: "{0} ג'יגר",
           other: '{0} jigger',
@@ -8467,7 +8480,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'jigger',
-          one: "ג'יגר {0}",
+          one: '{0} ג׳יגר',
           two: "{0} ג'יגר",
           many: "{0} ג'יגר",
           other: '{0} jigger',
@@ -8479,7 +8492,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'פינץ׳',
-          one: "פינץ' {0}",
+          one: '{0} פינץ׳',
           two: "{0} פינץ'",
           other: "{0} פינץ'",
         ),
@@ -8504,7 +8517,7 @@ class UnitsHe implements Units {
         long: UnitCountPattern(
           _locale,
           'קווארט אימפריאלי',
-          one: 'קווארט אימפריאלי {0}',
+          one: '{0} קווארט אימפריאלי',
           two: '{0} קווארטות אימפריאליות',
           many: '{0} קווארטות אימפריאליות',
           other: '{0} קווארטות אימפריאליות',
@@ -8512,7 +8525,7 @@ class UnitsHe implements Units {
         short: UnitCountPattern(
           _locale,
           'qt Imp',
-          one: 'קווארט אימפריאלי {0}',
+          one: '{0} קווארט אימפריאלי',
           two: '{0} קווארטות אימפריאליות',
           many: '{0} קווארטות אימפריאליות',
           other: '{0} qt Imp.',
@@ -8520,7 +8533,7 @@ class UnitsHe implements Units {
         narrow: UnitCountPattern(
           _locale,
           'qt Imp',
-          one: 'קווארט אימפריאלי {0}',
+          one: '{0} קווארט אימפריאלי',
           two: '{0} קווארטות אימפריאליות',
           many: '{0} קווארטות אימפריאליות',
           other: '{0} qt Imp.',
@@ -8546,6 +8559,81 @@ class UnitsHe implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'אור',
+          one: '{0} אור',
+          two: '{0} אור',
+          other: '{0} אור',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'אור',
+          one: '{0} אור',
+          two: '{0} אור',
+          other: '{0} אור',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'אור',
+          one: '{0} אור',
+          two: '{0} אור',
+          other: '{0} אור',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'חלקים למיליארד',
+          one: '{0} חלקים למיליארד',
+          two: '{0} חלקים למיליארד',
+          other: '{0} חלקים למיליארד',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} חלקים למיליארד',
+          two: '{0} חלקים למיליארד',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} חלקים למיליארד',
+          two: '{0} חלקים למיליארד',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'לילות',
+          one: '{0} לילה',
+          two: '{0} לילות',
+          other: '{0} לילות',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'לילות',
+          one: '{0} לילה',
+          two: '{0} לילות',
+          other: '{0} לילות',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'לילות',
+          one: '{0} לילה',
+          two: '{0} לילות',
+          other: '{0} לילות',
         ),
       );
 }
@@ -8587,21 +8675,18 @@ class DateFieldsHe implements DateFields {
             _locale,
             one: 'לפני שנה',
             two: 'לפני שנתיים',
-            many: 'לפני {0} שנה',
             other: 'לפני {0} שנים',
           ),
           short: RelativeTime(
             _locale,
             one: 'לפני שנה',
             two: 'לפני שנתיים',
-            many: 'לפני {0} שנה',
             other: 'לפני {0} שנים',
           ),
           narrow: RelativeTime(
             _locale,
             one: 'לפני שנה',
             two: 'לפני שנתיים',
-            many: 'לפני {0} שנה',
             other: 'לפני {0} שנים',
           ),
         ),
@@ -8610,21 +8695,18 @@ class DateFieldsHe implements DateFields {
             _locale,
             one: 'בעוד שנה',
             two: 'בעוד שנתיים',
-            many: 'בעוד {0} שנה',
             other: 'בעוד {0} שנים',
           ),
           short: RelativeTime(
             _locale,
             one: 'בעוד שנה',
             two: 'בעוד שנתיים',
-            many: 'בעוד {0} שנה',
             other: 'בעוד {0} שנים',
           ),
           narrow: RelativeTime(
             _locale,
             one: 'בעוד שנה',
             two: 'בעוד שנתיים',
-            many: 'בעוד {0} שנה',
             other: 'בעוד {0} שנים',
           ),
         ),
@@ -8977,7 +9059,7 @@ class DateFieldsHe implements DateFields {
           narrow: RelativeTime(
             _locale,
             one: 'בעוד יום ראשון {0}',
-            two: 'בעוד {0} ימי ראשון',
+            two: 'בעוד {0} ימי א׳',
             other: 'בעוד {0} ימי ראשון',
           ),
         ),
@@ -9239,19 +9321,19 @@ class DateFieldsHe implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'לפני יום שישי {0}',
+            one: 'לפני יום שישי אחד {0}',
             two: 'לפני {0} ימי שישי',
             other: 'לפני {0} ימי שישי',
           ),
           short: RelativeTime(
             _locale,
-            one: 'לפני יום שישי {0}',
+            one: 'לפני יום שישי אחד {0}',
             two: 'לפני {0} ימי שישי',
             other: 'לפני {0} ימי שישי',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'לפני יום שישי {0}',
+            one: 'לפני יום ו׳ אחד {0}',
             two: 'לפני {0} ימי שישי',
             other: 'לפני {0} ימי שישי',
           ),
@@ -9259,21 +9341,22 @@ class DateFieldsHe implements DateFields {
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'בעוד יום שישי {0}',
+            one: 'בעוד יום שישי אחד {0}',
             two: 'בעוד {0} ימי שישי',
             other: 'בעוד {0} ימי שישי',
           ),
           short: RelativeTime(
             _locale,
-            one: 'בעוד יום שישי {0}',
+            one: 'בעוד יום שישי אחד {0}',
             two: 'בעוד {0} ימי שישי',
             other: 'בעוד {0} ימי שישי',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'בעוד יום שישי {0}',
-            two: 'בעוד {0} ימי שישי',
-            other: 'בעוד {0} ימי שישי',
+            one: 'בעוד יום ו׳ אחד {0}',
+            two: 'בעוד {0} ימי ו׳',
+            many: 'בעוד {0} ימי ו׳',
+            other: 'בעוד {0} ימי ו׳',
           ),
         ),
       );
@@ -9298,19 +9381,19 @@ class DateFieldsHe implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'לפני שבת {0}',
+            one: 'לפני שבת אחת {0}',
             two: 'לפני {0} שבתות',
             other: 'לפני {0} שבתות',
           ),
           short: RelativeTime(
             _locale,
-            one: 'לפני שבת {0}',
+            one: 'לפני שבת אחת {0}',
             two: 'לפני {0} שבתות',
             other: 'לפני {0} שבתות',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'לפני שבת {0}',
+            one: 'לפני שבת אחת {0}',
             two: 'לפני {0} שבתות',
             other: 'לפני {0} שבתות',
           ),
@@ -11654,9 +11737,6 @@ class TimeZonesHe extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'צ׳יטה',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'צ׳ויבלסן',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'קולומבו',
     ),
@@ -12363,14 +12443,6 @@ class TimeZonesHe extends TimeZones {
         daylight: 'שעון סין (קיץ)',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'שעון צ׳ויבלסן',
-        standard: 'שעון צ׳ויבלסן (חורף)',
-        daylight: 'שעון צ׳ויבלסן (קיץ)',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12661,6 +12733,12 @@ class TimeZonesHe extends TimeZones {
         generic: 'שעון פטרופבלובסק-קמצ׳טסקי',
         standard: 'שעון רגיל פטרופבלובסק-קמצ׳טסקי',
         daylight: 'שעון קיץ פטרופבלובסק-קמצ׳טסקי',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'שעון קזחסטן',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

@@ -268,6 +268,10 @@ class LanguagesHu extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1173,6 +1177,10 @@ class LanguagesHu extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiz',
@@ -1276,10 +1284,6 @@ class LanguagesHu extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2193,10 +2197,6 @@ class LanguagesHu extends Languages {
       'uz',
       'üzbég',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2208,6 +2208,10 @@ class LanguagesHu extends Languages {
     'vi': Language(
       'vi',
       'vietnámi',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2260,6 +2264,10 @@ class LanguagesHu extends Languages {
     'xh': Language(
       'xh',
       'xhosza',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -2362,11 +2370,6 @@ class ScriptsHu extends Scripts {
     'Aghb': Script(
       'Aghb',
       'Kaukázusi albaniai',
-    ),
-    'Arab': Script(
-      'Arab',
-      'Arab',
-      variant: 'Perzsa-arab',
     ),
     'Aran': Script(
       'Aran',
@@ -2569,10 +2572,6 @@ class ScriptsHu extends Scripts {
     'Ital': Script(
       'Ital',
       'Régi olasz',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'Jamo',
     ),
     'Java': Script(
       'Java',
@@ -2869,10 +2868,6 @@ class ScriptsHu extends Scripts {
     'Thaa': Script(
       'Thaa',
       'Thaana',
-    ),
-    'Thai': Script(
-      'Thai',
-      'Thai',
     ),
     'Tibt': Script(
       'Tibt',
@@ -7369,6 +7364,72 @@ class UnitsHu implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'éjszakák',
+          one: '{0} éjszaka',
+          other: '{0} éjszaka',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'éjszakák',
+          one: '{0} éjszaka',
+          other: '{0} éjszaka',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'éjszakák',
+          one: '{0} éjszaka',
+          other: '{0} éjszaka',
+        ),
+      );
 }
 
 class DateFieldsHu implements DateFields {
@@ -9790,7 +9851,7 @@ class TimeZonesHu extends TimeZones {
       exemplarCity: 'Algír',
     ),
     'Africa/Asmera': TimeZoneNames(
-      exemplarCity: 'Asmera',
+      exemplarCity: 'Aszmara',
     ),
     'Africa/Cairo': TimeZoneNames(
       exemplarCity: 'Kairó',
@@ -9857,9 +9918,6 @@ class TimeZonesHu extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Csita',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Csojbalszan',
     ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damaszkusz',
@@ -10392,14 +10450,6 @@ class TimeZonesHu extends TimeZones {
         daylight: 'kínai nyári idő',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'csojbalszani idő',
-        standard: 'csojbalszani téli idő',
-        daylight: 'csojbalszani nyári idő',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10708,6 +10758,12 @@ class TimeZonesHu extends TimeZones {
         generic: 'Petropavlovszk-kamcsatkai idő',
         standard: 'Petropavlovszk-kamcsatkai zónaidő',
         daylight: 'Petropavlovszk-kamcsatkai nyári idő',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazahsztáni idő',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

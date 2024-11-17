@@ -207,6 +207,10 @@ class LanguagesChr extends Languages {
       'bla',
       'ᏏᎩᏏᎧ',
     ),
+    'blo': Language(
+      'blo',
+      'ᎠᏂᎵ',
+    ),
     'bm': Language(
       'bm',
       'ᏆᎻᏆᎳ',
@@ -683,6 +687,10 @@ class LanguagesChr extends Languages {
       'id',
       'ᎢᏂᏙᏂᏏᎠ',
     ),
+    'ie': Language(
+      'ie',
+      'ᏈᏖᎵᏆ',
+    ),
     'ig': Language(
       'ig',
       'ᎢᎦᎪ',
@@ -891,6 +899,10 @@ class LanguagesChr extends Languages {
       'kwk',
       'ᏆᏆᎳ',
     ),
+    'kxv': Language(
+      'kxv',
+      'ᎫᏈ',
+    ),
     'ky': Language(
       'ky',
       'ᎩᎵᏣᎢᏍ',
@@ -923,6 +935,10 @@ class LanguagesChr extends Languages {
       'li',
       'ᎴᎹᏊᎵᏏ',
     ),
+    'lij': Language(
+      'lij',
+      'ᎵᏇᎢᎠ',
+    ),
     'lil': Language(
       'lil',
       'ᎵᎶᎡᏘ',
@@ -930,6 +946,10 @@ class LanguagesChr extends Languages {
     'lkt': Language(
       'lkt',
       'ᎳᎪᏓ',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ᎶᏆᏗ',
     ),
     'ln': Language(
       'ln',
@@ -1551,6 +1571,10 @@ class LanguagesChr extends Languages {
       'syr',
       'ᏏᎵᎠᎩ',
     ),
+    'szl': Language(
+      'szl',
+      'ᏏᎴᏏᏂ',
+    ),
     'ta': Language(
       'ta',
       'ᏔᎻᎵ',
@@ -1707,9 +1731,17 @@ class LanguagesChr extends Languages {
       've',
       'ᏫᏂᏓ',
     ),
+    'vec': Language(
+      'vec',
+      'ᏈᏂᏒᏂ',
+    ),
     'vi': Language(
       'vi',
       'ᏫᎡᏘᎾᎻᏍ',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ᎹᎱᏩ',
     ),
     'vo': Language(
       'vo',
@@ -1751,6 +1783,10 @@ class LanguagesChr extends Languages {
       'xh',
       'ᏠᏌ',
     ),
+    'xnr': Language(
+      'xnr',
+      'ᎧᏈᎢ',
+    ),
     'xog': Language(
       'xog',
       'ᏐᎦ',
@@ -1779,6 +1815,10 @@ class LanguagesChr extends Languages {
       'yue',
       'ᎨᎾᏙᏂᏏ',
       menu: 'ᏓᎶᏂᎨ, ᎨᎾᏙᏂᏏ',
+    ),
+    'za': Language(
+      'za',
+      'ᎱᎠᏂ',
     ),
     'zgh': Language(
       'zgh',
@@ -6562,6 +6602,72 @@ class UnitsChr implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ᎠᏨᏍᏗ',
+          one: '{0} ᎠᏨᏍᏗ',
+          other: '{0} ᎠᏨᏍᏗ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ᎠᏨᏍᏗ',
+          one: '{0} ᎠᏨᏍᏗ',
+          other: '{0} ᎠᏨᏍᏗ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ᎠᏨᏍᏗ',
+          one: '{0}ᎠᏨᏍᏗ',
+          other: '{0}ᎠᏨᏍᏗ',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ᏚᏙᏢᏒ ᎢᏳᏓᎵ ᎢᏳᏔᎵᎳᏗᏅᏛ',
+          one: '{0} ᎤᏙᏢᏒ ᎢᏳᏓᎵ ᎢᏳᏔᎵᎳᏗᏅᏛ',
+          other: '{0} ᏚᏙᏢᏒ ᎢᏳᏓᎵ ᎢᏳᏔᎵᎳᏗᏅᏛ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ᏚᏙᏢᏒ/ᎢᏳᏔᎵᎳᏗᏅᏛ',
+          one: '{0} ᎤᏙᏢᏒ ᎢᏳᏓᎵ ᎢᏳᏔᎵᎳᏗᏅᏛ',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ᏚᏙᏢᏒ/ᎢᏳᏔᎵᎳᏗᏅᏛ',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ᏚᎵᏏᏂᏒ',
+          one: '{0} ᎤᏒ',
+          other: '{0} ᏚᎵᏏᏂᏒ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ᏚᎵᏏᏂᏒ',
+          one: '{0} ᎤᏒ',
+          other: '{0} ᏚᎵᏏᏂᏒ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ᏚᎵᏏᏂᏒ',
+          one: '{0}ᎤᏒ',
+          other: '{0}ᏚᎵᏏᏂᏒ',
+        ),
+      );
 }
 
 class DateFieldsChr implements DateFields {
@@ -9550,9 +9656,6 @@ class TimeZonesChr extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ᏥᏔ',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ᏦᏱᏆᎵᏌᏂ',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'ᎪᎶᎻᏉ',
     ),
@@ -10262,14 +10365,6 @@ class TimeZonesChr extends TimeZones {
         daylight: 'ᏓᎶᏂᎨᏍᏛ ᎪᎯ ᎢᎦ ᎠᏟᎢᎵᏒ',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ᏦᏱᏆᎵᏌᏂ ᎠᏟᎢᎵᏒ',
-        standard: 'ᏦᏱᏆᎵᏌᏂ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ',
-        daylight: 'ᏦᏱᏆᎵᏌᏂ ᎪᎩ ᎠᏟᎢᎵᏒ',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10551,6 +10646,12 @@ class TimeZonesChr extends TimeZones {
         generic: 'ᏣᏩᏂᏏ ᎠᏟᎢᎵᏒ',
         standard: 'ᏣᏩᏂᏏ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ',
         daylight: 'ᏣᏩᏂᏏ ᎪᎯ ᎢᎦ ᎠᏟᎢᎵᏒ',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ᎧᏎᎧᏍᏕᏂ ᎠᏟᎢᎵᏒ',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

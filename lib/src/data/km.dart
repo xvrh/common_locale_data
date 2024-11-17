@@ -116,7 +116,7 @@ class LanguagesKm extends Languages {
     ),
     'ar-001': Language(
       'ar-001',
-      'អារ៉ាប់ (ស្តង់ដារ)',
+      'អារ៉ាប់ស្តង់ដារទំនើប',
     ),
     'arn': Language(
       'arn',
@@ -161,7 +161,7 @@ class LanguagesKm extends Languages {
     'az': Language(
       'az',
       'អាស៊ែបៃហ្សង់',
-      short: 'អាហ្សេរី',
+      short: 'អាហ្ស៊ែរី',
     ),
     'ba': Language(
       'ba',
@@ -215,6 +215,10 @@ class LanguagesKm extends Languages {
       'bla',
       'ស៊ីកស៊ីកា',
     ),
+    'blo': Language(
+      'blo',
+      'អានី',
+    ),
     'bm': Language(
       'bm',
       'បាម្បារា',
@@ -237,7 +241,7 @@ class LanguagesKm extends Languages {
     ),
     'bs': Language(
       'bs',
-      'បូស្នី',
+      'បូស្ន៊ី',
     ),
     'bug': Language(
       'bug',
@@ -653,6 +657,10 @@ class LanguagesKm extends Languages {
       'id',
       'ឥណ្ឌូណេស៊ី',
     ),
+    'ie': Language(
+      'ie',
+      'អ៊ីនធើលីងវេ',
+    ),
     'ig': Language(
       'ig',
       'អ៊ីកបូ',
@@ -865,6 +873,10 @@ class LanguagesKm extends Languages {
       'kwk',
       'ក្វាក់វ៉ាឡា',
     ),
+    'kxv': Language(
+      'kxv',
+      'គូវី',
+    ),
     'ky': Language(
       'ky',
       '​កៀហ្ស៊ីស',
@@ -908,6 +920,10 @@ class LanguagesKm extends Languages {
     'lkt': Language(
       'lkt',
       'ឡាកូតា',
+    ),
+    'lmo': Language(
+      'lmo',
+      'ឡំបាត',
     ),
     'ln': Language(
       'ln',
@@ -1363,7 +1379,7 @@ class LanguagesKm extends Languages {
     ),
     'sah': Language(
       'sah',
-      'សាខា',
+      'យ៉ាឃុត',
     ),
     'saq': Language(
       'saq',
@@ -1533,6 +1549,10 @@ class LanguagesKm extends Languages {
       'syr',
       'ស៊ីរី',
     ),
+    'szl': Language(
+      'szl',
+      'ស៊ីឡេស៊ី',
+    ),
     'ta': Language(
       'ta',
       'តាមីល',
@@ -1701,6 +1721,10 @@ class LanguagesKm extends Languages {
       'vi',
       'វៀតណាម',
     ),
+    'vmw': Language(
+      'vmw',
+      'ម៉ាឃូវ៉ា',
+    ),
     'vo': Language(
       'vo',
       'វូឡាពូក',
@@ -1744,6 +1768,10 @@ class LanguagesKm extends Languages {
     'xh': Language(
       'xh',
       'ឃសា',
+    ),
+    'xnr': Language(
+      'xnr',
+      'ខែងគ្រី',
     ),
     'xog': Language(
       'xog',
@@ -3581,7 +3609,7 @@ class UnitsKm implements Units {
           _locale,
           'ទសវត្សរ៍',
           one: '{0}dec',
-          other: '{0} ទ.វ.',
+          other: '{0} ទសវត្សរ៍',
         ),
       );
 
@@ -6708,6 +6736,72 @@ class UnitsKm implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ពន្លឺ',
+          one: '{0} light',
+          other: '{0} ពន្លឺ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ពន្លឺ',
+          one: '{0} light',
+          other: '{0} ពន្លឺ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ពន្លឺ',
+          one: '{0}light',
+          other: '{0} ពន្លឺ',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ផ្នែកក្នុងមួយប៊ីលាន',
+          one: '{0} part per billion',
+          other: '{0} ផ្នែកក្នុងមួយប៊ីលាន',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ផ្នែក/ប៊ីលាន',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ផ្នែក/ប៊ីលាន',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'យប់',
+          one: '{0} night',
+          other: '{0} យប់',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'យប់',
+          one: '{0} night',
+          other: '{0} យប់',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'យប់',
+          one: '{0}night',
+          other: '{0} យប់',
+        ),
+      );
 }
 
 class DateFieldsKm implements DateFields {
@@ -7050,7 +7144,7 @@ class DateFieldsKm implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            other: 'ក្នុងពេល {0} ថ្ងៃអាទិត្យទៀត',
+            other: 'ថ្ងៃអាទិត្យ {0} សប្តាហ៍ទៀត',
           ),
         ),
       );
@@ -8626,7 +8720,7 @@ class TerritoriesKm implements Territories {
     'TR': Territory(
       'TR',
       'តួកគី',
-      variant: 'តួកគីយេ',
+      variant: 'តួកគី',
     ),
     'TT': Territory(
       'TT',
@@ -9607,9 +9701,6 @@ class TimeZonesKm extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ឈីតា',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ឈូបាល់សាន',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'កូឡុំបូ',
     ),
@@ -10284,14 +10375,6 @@ class TimeZonesKm extends TimeZones {
         daylight: 'ម៉ោង​ពេល​ថ្ងៃ​នៅ​ចិន',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ម៉ោង​នៅ​ឆូបាល់សាន',
-        standard: 'ម៉ោង​ស្តង់ដារ​នៅ​ឆូបាល់សាន',
-        daylight: 'ម៉ោង​នៅ​ឆូបាល់សាននារដូវ​ក្ដៅ​',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10568,6 +10651,12 @@ class TimeZonesKm extends TimeZones {
         generic: 'ម៉ោង​នៅ​ជប៉ុន',
         standard: 'ម៉ោង​ស្តង់ដារ​នៅ​ជប៉ុន',
         daylight: 'ម៉ោង​ពេល​ថ្ងៃ​នៅជប៉ុន',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'ពេលវេលានៅកាហ្សាក់ស្ថាន',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

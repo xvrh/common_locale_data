@@ -207,6 +207,10 @@ class LanguagesAs extends Languages {
       'bla',
       'ছিক্সিকা',
     ),
+    'blo': Language(
+      'blo',
+      'আনি',
+    ),
     'bm': Language(
       'bm',
       'বামবাৰা',
@@ -683,6 +687,10 @@ class LanguagesAs extends Languages {
       'id',
       'ইণ্ডোনেচিয়',
     ),
+    'ie': Language(
+      'ie',
+      'ইণ্টাৰলিংগুৱে',
+    ),
     'ig': Language(
       'ig',
       'ইগ্বো',
@@ -891,6 +899,10 @@ class LanguagesAs extends Languages {
       'kwk',
       'ক্বাকৱালা',
     ),
+    'kxv': Language(
+      'kxv',
+      'কুভি',
+    ),
     'ky': Language(
       'ky',
       'কিৰ্গিজ',
@@ -922,6 +934,10 @@ class LanguagesAs extends Languages {
     'li': Language(
       'li',
       'লিম্বুৰ্গিচ',
+    ),
+    'lij': Language(
+      'lij',
+      'লিংগুৰিয়ান',
     ),
     'lil': Language(
       'lil',
@@ -1547,6 +1563,10 @@ class LanguagesAs extends Languages {
       'syr',
       'চিৰিয়াক',
     ),
+    'szl': Language(
+      'szl',
+      'ছাইলেছিয়ান',
+    ),
     'ta': Language(
       'ta',
       'তামিল',
@@ -1703,9 +1723,17 @@ class LanguagesAs extends Languages {
       've',
       'ভেণ্ডা',
     ),
+    'vec': Language(
+      'vec',
+      'ভেনেছিয়ান',
+    ),
     'vi': Language(
       'vi',
       'ভিয়েটনামী',
+    ),
+    'vmw': Language(
+      'vmw',
+      'মাখুৱা',
     ),
     'vo': Language(
       'vo',
@@ -1747,6 +1775,10 @@ class LanguagesAs extends Languages {
       'xh',
       'হোছা',
     ),
+    'xnr': Language(
+      'xnr',
+      'কাংগৰি',
+    ),
     'xog': Language(
       'xog',
       'ছোগা',
@@ -1775,6 +1807,10 @@ class LanguagesAs extends Languages {
       'yue',
       'কেণ্টোনীজ',
       menu: 'চাইনিজ, কেণ্টোনীজ',
+    ),
+    'za': Language(
+      'za',
+      'ঝুৱাং',
     ),
     'zgh': Language(
       'zgh',
@@ -4024,7 +4060,7 @@ class UnitsAs implements Units {
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
-          one: 'প্ৰতি 100 কিলোমিটাৰত {0} কিলোৱাট-ঘণ্টা',
+          one: '{0}kWh/100km',
           other: '{0} kWh/100km',
         ),
       );
@@ -6556,6 +6592,72 @@ class UnitsAs implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'আলোক',
+          one: '{0} আলোক',
+          other: '{0} আলোক',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'আলোক',
+          one: '{0} আলোক',
+          other: '{0} আলোক',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'আলোক',
+          one: '{0}আলোক',
+          other: '{0}আলোক',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'প্ৰতি বিলিয়নত অংশ',
+          one: '{0} প্ৰতি বিলিয়নত অংশ',
+          other: '{0} প্ৰতি বিলিয়নত অংশ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'অংশ/বিলিয়ন',
+          one: '{0} প্ৰতি বিলিয়নত অংশ',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'অংশ/বিলিয়ন',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'নিশা',
+          one: '{0} নিশা',
+          other: '{0} নিশা',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'নিশা',
+          one: '{0} নিশা',
+          other: '{0} নিশা',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'নিশা',
+          one: '{0} নিশা',
+          other: '{0} নিশা',
         ),
       );
 }
@@ -9546,9 +9648,6 @@ class TimeZonesAs extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'চিটা',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'কোইবাল্ছন',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'কলম্বো',
     ),
@@ -10220,14 +10319,6 @@ class TimeZonesAs extends TimeZones {
         daylight: 'চীনৰ ডেলাইট সময়',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'কোইবাল্ছনৰ সময়',
-        standard: 'কোইবাল্ছনৰ মান সময়',
-        daylight: 'কোইবাল্ছনৰ গ্ৰীষ্মকালীন সময়',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10507,6 +10598,12 @@ class TimeZonesAs extends TimeZones {
         generic: 'জাপানৰ সময়',
         standard: 'জাপানৰ মান সময়',
         daylight: 'জাপানৰ ডেলাইট সময়',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'কাজাখস্তানৰ সময়',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

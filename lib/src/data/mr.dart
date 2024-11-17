@@ -251,6 +251,10 @@ class LanguagesMr extends Languages {
       'bla',
       'सिक्सिका',
     ),
+    'blo': Language(
+      'blo',
+      'ॲनीआय',
+    ),
     'bm': Language(
       'bm',
       'बाम्बारा',
@@ -861,7 +865,7 @@ class LanguagesMr extends Languages {
     ),
     'hy': Language(
       'hy',
-      'आर्मेनियन',
+      'अर्मेनियन',
     ),
     'hz': Language(
       'hz',
@@ -885,7 +889,7 @@ class LanguagesMr extends Languages {
     ),
     'ie': Language(
       'ie',
-      'इन्टरलिंग',
+      'इंटरलिंग',
     ),
     'ig': Language(
       'ig',
@@ -1135,6 +1139,10 @@ class LanguagesMr extends Languages {
       'kwk',
       'क्वक्क्वाला',
     ),
+    'kxv': Language(
+      'kxv',
+      'कुवी',
+    ),
     'ky': Language(
       'ky',
       'किरगीझ',
@@ -1175,6 +1183,10 @@ class LanguagesMr extends Languages {
       'li',
       'लिंबूर्गिश',
     ),
+    'lij': Language(
+      'lij',
+      'लिगुरिअन',
+    ),
     'lil': Language(
       'lil',
       'लिलूएट',
@@ -1182,6 +1194,10 @@ class LanguagesMr extends Languages {
     'lkt': Language(
       'lkt',
       'लाकोटा',
+    ),
+    'lmo': Language(
+      'lmo',
+      'लोंबार्ड',
     ),
     'ln': Language(
       'ln',
@@ -1473,7 +1489,7 @@ class LanguagesMr extends Languages {
     ),
     'no': Language(
       'no',
-      'नोर्वेजियन',
+      'नॉर्वेजियन',
     ),
     'nog': Language(
       'nog',
@@ -1940,6 +1956,10 @@ class LanguagesMr extends Languages {
       'syr',
       'सिरियाक',
     ),
+    'szl': Language(
+      'szl',
+      'सिलेशियन',
+    ),
     'ta': Language(
       'ta',
       'तामिळ',
@@ -2132,9 +2152,17 @@ class LanguagesMr extends Languages {
       've',
       'व्हेंदा',
     ),
+    'vec': Language(
+      'vec',
+      'व्हेनेशियन',
+    ),
     'vi': Language(
       'vi',
       'व्हिएतनामी',
+    ),
+    'vmw': Language(
+      'vmw',
+      'मखुवा',
     ),
     'vo': Language(
       'vo',
@@ -2187,6 +2215,10 @@ class LanguagesMr extends Languages {
     'xh': Language(
       'xh',
       'खोसा',
+    ),
+    'xnr': Language(
+      'xnr',
+      'कांगरी',
     ),
     'xog': Language(
       'xog',
@@ -3456,19 +3488,19 @@ class UnitsMr implements Units {
         long: UnitCountPattern(
           _locale,
           'मिलीग्रामस् पर डेसीलिटर',
-          one: '{0} मिलीग्राम पर डेसीलिटर',
-          other: '{0} मिलीग्रामस् पर डेसीलिटर',
+          one: '{0} मिलीग्रॅम प्रति डेसीलिटर',
+          other: '{0} मिलीग्रॅम्स प्रति डेसीलिटर',
         ),
         short: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} मिलीग्राम पर डेसीलिटर',
+          one: '{0} मिलीग्रॅम प्रति डेसीलिटर',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} मिलीग्राम पर डेसीलिटर',
+          one: '{0} मिलीग्रॅम प्रति डेसीलिटर',
           other: '{0} mg/dL',
         ),
       );
@@ -4335,21 +4367,21 @@ class UnitsMr implements Units {
   Unit get energyKilocalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          'किलोकॅलोरी',
-          one: '{0} किलोकॅलोरी',
-          other: '{0} किलोकॅलोरी',
+          'किलोकॅलरी',
+          one: '{0} किलोकॅलरी',
+          other: '{0} किलोकॅलरी',
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} किलोकॅलोरी',
-          other: '{0} kcal',
+          'किकॅ',
+          one: '{0} किकॅ',
+          other: '{0} किकॅ',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} किलोकॅलोरी',
-          other: '{0} kcal',
+          'किकॅल',
+          one: '{0} किकॅ',
+          other: '{0} किकॅ',
         ),
       );
 
@@ -4363,13 +4395,13 @@ class UnitsMr implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'cal',
+          'कॅ',
           one: '{0} कॅलरी',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'cal',
+          'कॅ',
           one: '{0} कॅलरी',
           other: '{0} cal',
         ),
@@ -5074,8 +5106,8 @@ class UnitsMr implements Units {
         narrow: UnitCountPattern(
           _locale,
           'मैल',
-          one: '{0}मैल',
-          other: '{0}मैल',
+          one: '{0} मैल',
+          other: '{0} मैल',
         ),
       );
 
@@ -6030,19 +6062,19 @@ class UnitsMr implements Units {
         long: UnitCountPattern(
           _locale,
           'पास्काल',
-          one: '{0} पास्काल',
-          other: '{0} पास्काल',
+          one: '{0} पास्कल',
+          other: '{0} पास्कल',
         ),
         short: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} पास्काल',
+          one: '{0} पास्कल',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} पास्काल',
+          one: '{0} पास्कल',
           other: '{0} Pa',
         ),
       );
@@ -7124,6 +7156,72 @@ class UnitsMr implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'प्रकाश',
+          one: 'प्रकाश',
+          other: '{0} प्रकाश',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'प्र',
+          one: '{0} प्रकाश',
+          other: '{0} प्रकाश',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'प्र',
+          one: '{0} प्रकाश',
+          other: '{0} प्रकाश',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'भाग प्रति अब्ज',
+          one: '{0} भाग प्रति अब्ज',
+          other: '{0} भाग प्रति अब्ज',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'भाग/अब्ज',
+          one: '{0} भाग प्रति अब्ज',
+          other: '{0} भाप्रअ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'भाग/अब्ज',
+          one: '{0} भाग/अब्ज',
+          other: '{0} भाग/अब्ज',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'रात्री',
+          one: 'रात्र',
+          other: '{0} रात्री',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'रात्री',
+          one: '{0} रात्र',
+          other: '{0} रात्र',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'रात्री',
+          one: '{0} रात्र',
+          other: '{0} रात्र',
+        ),
+      );
 }
 
 class DateFieldsMr implements DateFields {
@@ -7990,7 +8088,7 @@ class TerritoriesMr implements Territories {
   @override
   Territory get world => Territory(
         '001',
-        'विश्व',
+        'जग',
       );
 
   @override
@@ -10087,7 +10185,7 @@ class TimeZonesMr extends TimeZones {
       exemplarCity: 'बगदाद',
     ),
     'Asia/Bahrain': TimeZoneNames(
-      exemplarCity: 'बेहरीन',
+      exemplarCity: 'बहारिन',
     ),
     'Asia/Baku': TimeZoneNames(
       exemplarCity: 'बाकु',
@@ -10112,9 +10210,6 @@ class TimeZonesMr extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'चिता',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'चोईबाल्सन',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'कोलंबो',
@@ -10830,14 +10925,6 @@ class TimeZonesMr extends TimeZones {
         daylight: 'चीनी सूर्यप्रकाश वेळ',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'चोईबाल्सन वेळ',
-        standard: 'चोईबाल्सन प्रमाण वेळ',
-        daylight: 'चोईबाल्सन उन्हाळी वेळ',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11066,7 +11153,7 @@ class TimeZonesMr extends TimeZones {
     'Indian_Ocean': MetaZone(
       code: 'Indian_Ocean',
       long: TimeZoneName(
-        standard: 'हिंदमहासागर वेळ',
+        standard: 'हिंद महासागर वेळ',
       ),
     ),
     'Indochina': MetaZone(
@@ -11131,6 +11218,12 @@ class TimeZonesMr extends TimeZones {
         generic: 'पेट्रोपाव्हलोस्क- कामचाट्स्की वेळ',
         standard: 'पेट्रोपाव्हलोस्क- कामचाट्स्की प्रमाणवेळ',
         daylight: 'पेट्रोपाव्हलोस्क- कामचाट्स्की ग्रीष्मकालीन वेळ',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'कझाकस्तान वेळ',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

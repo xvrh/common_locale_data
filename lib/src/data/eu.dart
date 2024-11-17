@@ -211,6 +211,10 @@ class LanguagesEu extends Languages {
       'bla',
       'siksikera',
     ),
+    'blo': Language(
+      'blo',
+      'aniiera',
+    ),
     'bm': Language(
       'bm',
       'bambarera',
@@ -698,7 +702,7 @@ class LanguagesEu extends Languages {
     ),
     'ie': Language(
       'ie',
-      'interlingue',
+      'interlinguea',
     ),
     'ig': Language(
       'ig',
@@ -916,6 +920,10 @@ class LanguagesEu extends Languages {
       'kwk',
       'kwakwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvia',
+    ),
     'ky': Language(
       'ky',
       'kirgizera',
@@ -959,6 +967,10 @@ class LanguagesEu extends Languages {
     'lkt': Language(
       'lkt',
       'lakotera',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardiera',
     ),
     'ln': Language(
       'ln',
@@ -1580,6 +1592,10 @@ class LanguagesEu extends Languages {
       'syr',
       'asiriera',
     ),
+    'szl': Language(
+      'szl',
+      'silesiera',
+    ),
     'ta': Language(
       'ta',
       'tamilera',
@@ -1752,6 +1768,10 @@ class LanguagesEu extends Languages {
       'vi',
       'vietnamera',
     ),
+    'vmw': Language(
+      'vmw',
+      'makhuwera',
+    ),
     'vo': Language(
       'vo',
       'volapük',
@@ -1792,6 +1812,10 @@ class LanguagesEu extends Languages {
       'xh',
       'xhosera',
     ),
+    'xnr': Language(
+      'xnr',
+      'kangrera',
+    ),
     'xog': Language(
       'xog',
       'sogera',
@@ -1821,6 +1845,10 @@ class LanguagesEu extends Languages {
       'kantonera',
       menu: 'Kantongo txinera',
     ),
+    'za': Language(
+      'za',
+      'zhuangera',
+    ),
     'zgh': Language(
       'zgh',
       'amazigera estandarra',
@@ -1828,7 +1856,7 @@ class LanguagesEu extends Languages {
     'zh': Language(
       'zh',
       'txinera',
-      menu: 'mandarinera',
+      menu: 'mandarina',
     ),
     'zh-Hans': Language(
       'zh-Hans',
@@ -1945,7 +1973,7 @@ class ScriptsEu extends Scripts {
     ),
     'Cans': Script(
       'Cans',
-      'Kanadiako aborigenen silabiko bateratua',
+      'Kanadako aborigenen silabario bateratua',
     ),
     'Cari': Script(
       'Cari',
@@ -2115,7 +2143,7 @@ class ScriptsEu extends Scripts {
     ),
     'Jamo': Script(
       'Jamo',
-      'jamo-bihurketa',
+      'jamoa',
     ),
     'Java': Script(
       'Java',
@@ -2143,7 +2171,7 @@ class ScriptsEu extends Scripts {
     ),
     'Khmr': Script(
       'Khmr',
-      'khemerarra',
+      'khmertarra',
     ),
     'Khoj': Script(
       'Khoj',
@@ -2171,7 +2199,7 @@ class ScriptsEu extends Scripts {
     ),
     'Laoo': Script(
       'Laoo',
-      'laosarra',
+      'laostarra',
     ),
     'Latn': Script(
       'Latn',
@@ -2243,7 +2271,7 @@ class ScriptsEu extends Scripts {
     ),
     'Mlym': Script(
       'Mlym',
-      'malayalamarra',
+      'malabartarra',
     ),
     'Modi': Script(
       'Modi',
@@ -2459,7 +2487,7 @@ class ScriptsEu extends Scripts {
     ),
     'Taml': Script(
       'Taml',
-      'tamilarra',
+      'tamildarra',
     ),
     'Tang': Script(
       'Tang',
@@ -2867,7 +2895,7 @@ class UnitsEu implements Units {
       );
   @override
   UnitPrefix get pattern10pMinus30 => UnitPrefix(
-        long: UnitPrefixPattern('quecto{0}'),
+        long: UnitPrefixPattern('kekto{0}'),
         short: UnitPrefixPattern('q{0}'),
         narrow: UnitPrefixPattern('q{0}'),
       );
@@ -7072,6 +7100,72 @@ class UnitsEu implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'argia',
+          one: '{0} argi',
+          other: '{0} argi',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'argia',
+          one: '{0} argi',
+          other: '{0} argi',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'argia',
+          one: '{0} a.',
+          other: '{0} a.',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'zati mila milioiko',
+          one: '{0} zati mila milioiko',
+          other: '{0} zati mila milioiko',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'zati / mila milioi',
+          one: '{0} zati / m. m.',
+          other: '{0} zati / m. m.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'zati / m. m.',
+          one: '{0} zati / m. m.',
+          other: '{0} zati / m. m.',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'gauak',
+          one: '{0} gau',
+          other: '{0} gau',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gau',
+          one: '{0} gau',
+          other: '{0} gau',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gau',
+          one: '{0} g.',
+          other: '{0} g.',
+        ),
+      );
 }
 
 class DateFieldsEu implements DateFields {
@@ -9201,7 +9295,7 @@ class TerritoriesEu implements Territories {
 class TimeZonesEu extends TimeZones {
   TimeZonesEu._(Territories territories)
       : super(_locale, territories,
-            hourFormat: '+HH:mm;−HH:mm',
+            hourFormat: '+HH:mm;–HH:mm',
             gmtFormat: 'GMT{0}',
             gmtZeroFormat: 'GMT',
             regionFormat: '{0} aldeko ordua',
@@ -9521,9 +9615,6 @@ class TimeZonesEu extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Txita',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Txoibalsan',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
@@ -10004,14 +10095,6 @@ class TimeZonesEu extends TimeZones {
         daylight: 'Txinako udako ordua',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Txoibalsango ordua',
-        standard: 'Txoibalsango ordu estandarra',
-        daylight: 'Txoibalsango udako ordua',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10325,6 +10408,12 @@ class TimeZonesEu extends TimeZones {
         generic: 'Petropavlovsk-Kamchatskiko ordua',
         standard: 'Petropavlovsk-Kamchatskiko ordu estandarra',
         daylight: 'Petropavlovsk-Kamchatskiko udako ordua',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazakhstango ordua',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

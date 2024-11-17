@@ -251,6 +251,10 @@ class LanguagesSwCD extends Languages {
       'bla',
       'Kisiksika',
     ),
+    'blo': Language(
+      'blo',
+      'Kianii',
+    ),
     'bm': Language(
       'bm',
       'Kibambara',
@@ -970,6 +974,10 @@ class LanguagesSwCD extends Languages {
       'kwk',
       'Kikwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kikuvi',
+    ),
     'ky': Language(
       'ky',
       'Kikirigizi',
@@ -1006,6 +1014,10 @@ class LanguagesSwCD extends Languages {
       'li',
       'Kilimburgi',
     ),
+    'lij': Language(
+      'lij',
+      'Kiliguria',
+    ),
     'lil': Language(
       'lil',
       'Kilillooet',
@@ -1013,6 +1025,10 @@ class LanguagesSwCD extends Languages {
     'lkt': Language(
       'lkt',
       'Kilakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Kilongobardi',
     ),
     'ln': Language(
       'ln',
@@ -1675,6 +1691,10 @@ class LanguagesSwCD extends Languages {
       'syr',
       'Kisiria',
     ),
+    'szl': Language(
+      'szl',
+      'Kisilesia',
+    ),
     'ta': Language(
       'ta',
       'Kitamili',
@@ -1835,9 +1855,17 @@ class LanguagesSwCD extends Languages {
       've',
       'Kivenda',
     ),
+    'vec': Language(
+      'vec',
+      'Kivenisi',
+    ),
     'vi': Language(
       'vi',
       'Kivietinamu',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Kimakhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1883,6 +1911,10 @@ class LanguagesSwCD extends Languages {
       'xh',
       'Kixhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kikangri',
+    ),
     'xog': Language(
       'xog',
       'Kisoga',
@@ -1915,6 +1947,10 @@ class LanguagesSwCD extends Languages {
       'yue',
       'Kikantoni',
       menu: 'Kichina, Kikantoni',
+    ),
+    'za': Language(
+      'za',
+      'Kizhuang',
     ),
     'zgh': Language(
       'zgh',
@@ -6699,6 +6735,72 @@ class UnitsSwCD implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'mwanga',
+          one: 'mwanga {0}',
+          other: 'mianga {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'mwanga',
+          one: 'mwanga {0}',
+          other: 'mianga {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'mwanga',
+          one: 'mwanga {0}',
+          other: 'mianga {0}',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'sehemu kwa kila bilioni',
+          one: 'sehemu {0} kwa kila bilioni',
+          other: 'sehemu {0} kwa kila bilioni',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'sehemu kwa bilioni',
+          one: 'sehemu {0} kwa kila bilioni',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'sehemu kwa kila bilioni',
+          one: 'sehemu {0} kwa kila bilioni',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'usiku',
+          one: 'usiku {0}',
+          other: 'usiku {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'usiku',
+          one: 'usiku {0}',
+          other: 'usiku {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'usiku',
+          one: 'usiku {0}',
+          other: 'usiku {0}',
+        ),
+      );
 }
 
 class DateFieldsSwCD implements DateFields {
@@ -9257,14 +9359,6 @@ class TimeZonesSwCD extends TimeZones {
         daylight: 'Saa za Mchana za Uchina',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Saa za Choibalsan',
-        standard: 'Saa za Wastani za Choibalsan',
-        daylight: 'Saa za Majira ya joto za Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -9549,6 +9643,12 @@ class TimeZonesSwCD extends TimeZones {
         generic: 'Saa za Petropavlovsk-Kamchatski',
         standard: 'Saa za Wastani za Petropavlovsk-Kamchatski',
         daylight: 'Saa za Kiangazi za Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Saa za Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

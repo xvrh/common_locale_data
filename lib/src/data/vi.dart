@@ -76,7 +76,7 @@ class LanguagesVi extends Languages {
     ),
     'af': Language(
       'af',
-      'Tiếng Afrikaans',
+      'Tiếng Hà Lan (Nam Phi)',
     ),
     'afh': Language(
       'afh',
@@ -310,6 +310,10 @@ class LanguagesVi extends Languages {
     'bla': Language(
       'bla',
       'Tiếng Siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'Anii',
     ),
     'bm': Language(
       'bm',
@@ -835,10 +839,6 @@ class LanguagesVi extends Languages {
       'goh',
       'Tiếng Thượng Giéc-man cổ',
     ),
-    'gom': Language(
-      'gom',
-      'Tiếng Goan Konkani',
-    ),
     'gon': Language(
       'gon',
       'Tiếng Gondi',
@@ -1251,6 +1251,10 @@ class LanguagesVi extends Languages {
       'kwk',
       'Tiếng Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Tiếng Kuvi',
+    ),
     'ky': Language(
       'ky',
       'Tiếng Kyrgyz',
@@ -1290,6 +1294,10 @@ class LanguagesVi extends Languages {
     'li': Language(
       'li',
       'Tiếng Limburg',
+    ),
+    'lij': Language(
+      'lij',
+      'Tiếng Liguria',
     ),
     'lil': Language(
       'lil',
@@ -1501,7 +1509,7 @@ class LanguagesVi extends Languages {
     ),
     'mul': Language(
       'mul',
-      'Nhiều Ngôn ngữ',
+      'Nhiều ngôn ngữ',
     ),
     'mus': Language(
       'mus',
@@ -1557,7 +1565,7 @@ class LanguagesVi extends Languages {
     ),
     'nds': Language(
       'nds',
-      'Tiếng Hạ Giéc-man',
+      'Tiếng Hạ Đức',
     ),
     'nds-NL': Language(
       'nds-NL',
@@ -1590,10 +1598,6 @@ class LanguagesVi extends Languages {
     'nl': Language(
       'nl',
       'Tiếng Hà Lan',
-    ),
-    'nl-BE': Language(
-      'nl-BE',
-      'Tiếng Flemish',
     ),
     'nmg': Language(
       'nmg',
@@ -1737,7 +1741,7 @@ class LanguagesVi extends Languages {
     ),
     'pcm': Language(
       'pcm',
-      'Tiếng Nigeria Pidgin',
+      'Pidgin Nigeria',
     ),
     'peo': Language(
       'peo',
@@ -2084,6 +2088,10 @@ class LanguagesVi extends Languages {
       'syr',
       'Tiếng Syriac',
     ),
+    'szl': Language(
+      'szl',
+      'Tiếng Silesia',
+    ),
     'ta': Language(
       'ta',
       'Tiếng Tamil',
@@ -2276,9 +2284,17 @@ class LanguagesVi extends Languages {
       've',
       'Tiếng Venda',
     ),
+    'vec': Language(
+      'vec',
+      'Tiếng Veneto',
+    ),
     'vi': Language(
       'vi',
       'Tiếng Việt',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Tiếng Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -2331,6 +2347,10 @@ class LanguagesVi extends Languages {
     'xh': Language(
       'xh',
       'Tiếng Xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Tiếng Kangri',
     ),
     'xog': Language(
       'xog',
@@ -3063,11 +3083,11 @@ class ScriptsVi extends Scripts {
     ),
     'Zsye': Script(
       'Zsye',
-      'Biểu tượng',
+      'Biểu tượng cảm xúc',
     ),
     'Zsym': Script(
       'Zsym',
-      'Ký hiệu',
+      'Biểu tượng | Ký hiệu',
     ),
     'Zxxx': Script(
       'Zxxx',
@@ -3112,6 +3132,10 @@ class VariantsVi extends Variants {
     '1959ACAD': Variant(
       '1959ACAD',
       'Hàn lâm',
+    ),
+    'ABL1943': Variant(
+      'ABL1943',
+      'Orthographic formulation of 1943',
     ),
     'ALALC97': Variant(
       'ALALC97',
@@ -7548,6 +7572,72 @@ class UnitsVi implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'phần tỷ',
+          one: '{0} part per billion',
+          other: '{0} phần tỷ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'phần tỷ',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'phần tỷ',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'đêm',
+          one: '{0} night',
+          other: '{0} đêm',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'đêm',
+          one: '{0} night',
+          other: '{0} đêm',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'đêm',
+          one: '{0}night',
+          other: '{0} đêm',
+        ),
+      );
 }
 
 class DateFieldsVi implements DateFields {
@@ -9498,12 +9588,13 @@ class TerritoriesVi implements Territories {
     ),
     'UN': Territory(
       'UN',
-      'Liên hiệp quốc',
+      'Liên hợp quốc',
+      short: 'LHQ',
     ),
     'US': Territory(
       'US',
       'Hoa Kỳ',
-      short: 'Hoa Kỳ',
+      short: 'Mỹ',
     ),
     'UY': Territory(
       'UY',
@@ -10113,14 +10204,6 @@ class TimeZonesVi extends TimeZones {
         daylight: 'Giờ Mùa Hè Trung Quốc',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Giờ Choibalsan',
-        standard: 'Giờ Chuẩn Choibalsan',
-        daylight: 'Giờ Mùa Hè Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10416,6 +10499,12 @@ class TimeZonesVi extends TimeZones {
         generic: 'Giờ Petropavlovsk-Kamchatski',
         standard: 'Giờ chuẩn Petropavlovsk-Kamchatski',
         daylight: 'Giờ mùa hè Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Giờ Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

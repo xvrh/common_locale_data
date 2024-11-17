@@ -251,6 +251,10 @@ class LanguagesBnIN extends Languages {
       'bla',
       'সিকসিকা',
     ),
+    'blo': Language(
+      'blo',
+      'অ্যানি',
+    ),
     'bm': Language(
       'bm',
       'বামবারা',
@@ -1094,6 +1098,10 @@ class LanguagesBnIN extends Languages {
       'kwk',
       'কোয়াক’ওয়ালা',
     ),
+    'kxv': Language(
+      'kxv',
+      'কুভি',
+    ),
     'ky': Language(
       'ky',
       'কির্গিজ',
@@ -1133,6 +1141,10 @@ class LanguagesBnIN extends Languages {
     'li': Language(
       'li',
       'লিম্বুর্গিশ',
+    ),
+    'lij': Language(
+      'lij',
+      'লিগুরিয়ান',
     ),
     'lil': Language(
       'lil',
@@ -1895,6 +1907,10 @@ class LanguagesBnIN extends Languages {
       'syr',
       'সিরিয়াক',
     ),
+    'szl': Language(
+      'szl',
+      'সিলেশিয়ান',
+    ),
     'ta': Language(
       'ta',
       'তামিল',
@@ -2087,9 +2103,17 @@ class LanguagesBnIN extends Languages {
       've',
       'ভেন্ডা',
     ),
+    'vec': Language(
+      'vec',
+      'ভেনেশিয়ান',
+    ),
     'vi': Language(
       'vi',
       'ভিয়েতনামী',
+    ),
+    'vmw': Language(
+      'vmw',
+      'মাখুওয়া',
     ),
     'vo': Language(
       'vo',
@@ -2142,6 +2166,10 @@ class LanguagesBnIN extends Languages {
     'xh': Language(
       'xh',
       'জোসা',
+    ),
+    'xnr': Language(
+      'xnr',
+      'কাংরি',
     ),
     'xog': Language(
       'xog',
@@ -7283,6 +7311,72 @@ class UnitsBnIN implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'পার্ট প্রতি বিলিয়ন',
+          one: '{0} পার্ট প্রতি বিলিয়ন',
+          other: '{0} পার্ট প্রতি বিলিয়ন',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'পার্ট/ বিলিয়ন',
+          one: '{0} পার্ট প্রতি বিলিয়ন',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'পার্ট/ বিলিয়ন',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'রাত্রি',
+          one: '{0} রাত্রি',
+          other: '{0} রাত্রি',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'রাত্রি',
+          one: '{0} রাত্রি',
+          other: '{0} রাত্রি',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'রাত্রি',
+          one: '{0}রাত্রি',
+          other: '{0}রাত্রি',
+        ),
+      );
 }
 
 class DateFieldsBnIN implements DateFields {
@@ -8102,13 +8196,13 @@ class DateFieldsBnIN implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} সেকেন্ড পূর্বে',
+            one: '{0} সেকেন্ড আগে',
             other: '{0} সেকেন্ড পূর্বে',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} সেকেন্ড পূর্বে',
-            other: '{0} সেকেন্ড পূর্বে',
+            one: '{0} সেকেন্ড আগে',
+            other: '{0} সেকেন্ড আগে',
           ),
           narrow: RelativeTime(
             _locale,
@@ -10271,9 +10365,6 @@ class TimeZonesBnIN extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'চিতা',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'চোইবাল্‌স্যান',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'কলম্বো',
     ),
@@ -10964,14 +11055,6 @@ class TimeZonesBnIN extends TimeZones {
         daylight: 'চীন দিবালোক সময়',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'চয়বালসন সময়',
-        standard: 'চয়বালসন মানক সময়',
-        daylight: 'চয়বালসন গ্রীষ্মকালীন সময়',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11259,6 +11342,12 @@ class TimeZonesBnIN extends TimeZones {
         generic: 'পিত্রেপ্যাভলস্ক- ক্যামচ্যাটস্কি সময়',
         standard: 'পিত্রেপ্যাভলস্ক- ক্যামচ্যাটস্কি মান সময়',
         daylight: 'পিত্রেপ্যাভলস্ক- ক্যামচ্যাটস্কি গৃষ্মকালীন সময়',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'কাজাখাস্তান সময়',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

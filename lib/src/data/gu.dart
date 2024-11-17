@@ -241,7 +241,7 @@ class LanguagesGu extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'હરયાણવી',
+      'હરિયાણવી',
     ),
     'bgn': Language(
       'bgn',
@@ -266,6 +266,10 @@ class LanguagesGu extends Languages {
     'bla': Language(
       'bla',
       'સિક્સિકા',
+    ),
+    'blo': Language(
+      'blo',
+      'અની',
     ),
     'bm': Language(
       'bm',
@@ -601,7 +605,7 @@ class LanguagesGu extends Languages {
     'en-US': Language(
       'en-US',
       'અમેરિકન અંગ્રેજી',
-      short: 'યુ. એસ. અંગ્રેજી',
+      short: 'અમેરિકન અંગ્રેજી',
     ),
     'enm': Language(
       'enm',
@@ -657,7 +661,7 @@ class LanguagesGu extends Languages {
     ),
     'ff': Language(
       'ff',
-      'ફુલાહ',
+      'ફુલા',
     ),
     'fi': Language(
       'fi',
@@ -682,10 +686,6 @@ class LanguagesGu extends Languages {
     'fr': Language(
       'fr',
       'ફ્રેન્ચ',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'કેનેડિયન ફ્રેંચ',
     ),
     'fr-CH': Language(
       'fr-CH',
@@ -774,10 +774,6 @@ class LanguagesGu extends Languages {
     'goh': Language(
       'goh',
       'જૂની હાઇ જર્મન',
-    ),
-    'gom': Language(
-      'gom',
-      'ગોઅન કોંકણી',
     ),
     'gon': Language(
       'gon',
@@ -1163,6 +1159,10 @@ class LanguagesGu extends Languages {
       'kwk',
       'ક્વેકવાલા',
     ),
+    'kxv': Language(
+      'kxv',
+      'કૂવી',
+    ),
     'ky': Language(
       'ky',
       'કિર્ગીઝ',
@@ -1207,6 +1207,10 @@ class LanguagesGu extends Languages {
       'li',
       'લિંબૂર્ગિશ',
     ),
+    'lij': Language(
+      'lij',
+      'લિગુરીઅન',
+    ),
     'lil': Language(
       'lil',
       'લિલુએટ',
@@ -1214,6 +1218,10 @@ class LanguagesGu extends Languages {
     'lkt': Language(
       'lkt',
       'લાકોટા',
+    ),
+    'lmo': Language(
+      'lmo',
+      'લોંબાર્ડ',
     ),
     'ln': Language(
       'ln',
@@ -1972,6 +1980,10 @@ class LanguagesGu extends Languages {
       'syr',
       'સિરિએક',
     ),
+    'szl': Language(
+      'szl',
+      'સિલેસ્યિન',
+    ),
     'ta': Language(
       'ta',
       'તમિલ',
@@ -2172,9 +2184,17 @@ class LanguagesGu extends Languages {
       've',
       'વેન્દા',
     ),
+    'vec': Language(
+      'vec',
+      'વેનેશ્યિન',
+    ),
     'vi': Language(
       'vi',
       'વિયેતનામીસ',
+    ),
+    'vmw': Language(
+      'vmw',
+      'મખુવા',
     ),
     'vo': Language(
       'vo',
@@ -2227,6 +2247,10 @@ class LanguagesGu extends Languages {
     'xh': Language(
       'xh',
       'ખોસા',
+    ),
+    'xnr': Language(
+      'xnr',
+      'કંગરી',
     ),
     'xog': Language(
       'xog',
@@ -7160,6 +7184,72 @@ class UnitsGu implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'લાઇટ',
+          one: '{0} લાઇટ',
+          other: '{0} લાઇટ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'લાઇટ',
+          one: '{0} લાઇટ',
+          other: '{0} લાઇટ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'લાઇટ',
+          one: '{0} લાઇટ',
+          other: '{0} લાઇટ',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'પ્રતિ અબજ ભાગ',
+          one: '{0} પ્રતિ અબજ ભાગ',
+          other: '{0} પ્રતિ અબજ ભાગ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ભાગ/અબજ',
+          one: '{0} પ્રતિ અબજ ભાગ',
+          other: '{0} પ્રતિ અબજ ભાગ',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ભાગ/અબજ',
+          one: '{0} પ્રતિ અબજ ભાગ',
+          other: '{0} પ્રતિ અબજ ભાગ',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'રાત',
+          one: '{0} રાત',
+          other: '{0} રાત',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'રાત',
+          one: '{0} રાત',
+          other: '{0} રાત',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'રાત',
+          one: '{0} રાત',
+          other: '{0} રાત',
+        ),
+      );
 }
 
 class DateFieldsGu implements DateFields {
@@ -10149,9 +10239,6 @@ class TimeZonesGu extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'ચિતા',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'ચોઇબાલ્સન',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'કોલંબો',
     ),
@@ -10866,14 +10953,6 @@ class TimeZonesGu extends TimeZones {
         daylight: 'ચીન દિવસ સમય',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'ચોઇબાલ્સન સમય',
-        standard: 'ચોઇબાલ્સન માનક સમય',
-        daylight: 'ચોઇબાલ્સન ગ્રીષ્મ સમય',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11167,6 +11246,12 @@ class TimeZonesGu extends TimeZones {
         generic: 'પેટ્રોપેવલોવ્સ્ક-કામચતસ્કી સમય',
         standard: 'પેટ્રોપેવલોવ્સ્ક-કામચતસ્કી પ્રમાણભૂત સમય',
         daylight: 'પેટ્રોપેવલોવ્સ્ક-કામચતસ્કી ગ્રીષ્મ સમય',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'કઝાકિસ્તાન સમય',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

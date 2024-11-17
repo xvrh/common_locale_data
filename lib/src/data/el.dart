@@ -267,6 +267,10 @@ class LanguagesEl extends Languages {
       'bla',
       'Σικσίκα',
     ),
+    'blo': Language(
+      'blo',
+      'Ανίι',
+    ),
     'bm': Language(
       'bm',
       'Μπαμπάρα',
@@ -1155,6 +1159,10 @@ class LanguagesEl extends Languages {
       'kwk',
       'Κουακουάλα',
     ),
+    'kxv': Language(
+      'kxv',
+      'Κούβι',
+    ),
     'ky': Language(
       'ky',
       'Κιργιζικά',
@@ -1195,6 +1203,10 @@ class LanguagesEl extends Languages {
       'li',
       'Λιμβουργιανά',
     ),
+    'lij': Language(
+      'lij',
+      'Λιγουριανά',
+    ),
     'lil': Language(
       'lil',
       'Λιλουέτ',
@@ -1202,6 +1214,10 @@ class LanguagesEl extends Languages {
     'lkt': Language(
       'lkt',
       'Λακότα',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Λομβαρδικά',
     ),
     'ln': Language(
       'ln',
@@ -1975,6 +1991,10 @@ class LanguagesEl extends Languages {
       'syr',
       'Συριακά',
     ),
+    'szl': Language(
+      'szl',
+      'Σιλεσικά',
+    ),
     'ta': Language(
       'ta',
       'Ταμιλικά',
@@ -2168,9 +2188,17 @@ class LanguagesEl extends Languages {
       've',
       'Βέντα',
     ),
+    'vec': Language(
+      'vec',
+      'Βενετικά',
+    ),
     'vi': Language(
       'vi',
       'Βιετναμικά',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Μακούα',
     ),
     'vo': Language(
       'vo',
@@ -2223,6 +2251,10 @@ class LanguagesEl extends Languages {
     'xh': Language(
       'xh',
       'Κόσα',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Κάνγκρι',
     ),
     'xog': Language(
       'xog',
@@ -7284,6 +7316,72 @@ class UnitsEl implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'φως',
+          one: '{0} φως',
+          other: '{0} φως',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'φως',
+          one: '{0} φως',
+          other: '{0} φως',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'φώς',
+          one: '{0} φως',
+          other: '{0} φως',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'μέρη στο δισεκατομμύριο',
+          one: '{0} μέρος στο δισεκατομμύριο',
+          other: '{0} μέρη στο δισεκατομμύριο',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'μέρη/δισεκατομμύριο',
+          one: '{0} μέρος στο δισεκατομμύριο',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'μέρη/δισεκατομμύριο',
+          one: '{0} μέρος στο δισεκατομμύριο',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'νύχτες',
+          one: '{0} νύχτα',
+          other: '{0} νύχτες',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'νύχτ.',
+          one: '{0} νύχτ.',
+          other: '{0} νύχτ.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'νύχτ.',
+          one: '{0} νύχτ.',
+          other: '{0} νύχτ.',
+        ),
+      );
 }
 
 class DateFieldsEl implements DateFields {
@@ -10273,9 +10371,6 @@ class TimeZonesEl extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Τσιτά',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Τσοϊμπαλσάν',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Κολόμπο',
     ),
@@ -10958,14 +11053,6 @@ class TimeZonesEl extends TimeZones {
         daylight: 'Θερινή ώρα Κίνας',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Ώρα Τσοϊμπαλσάν',
-        standard: 'Χειμερινή ώρα Τσοϊμπαλσάν',
-        daylight: 'Θερινή ώρα Τσοϊμπαλσάν',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11271,6 +11358,12 @@ class TimeZonesEl extends TimeZones {
         generic: 'Ώρα Καμτσάτκα',
         standard: 'Χειμερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι',
         daylight: 'Θερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Ώρα Καζακστάν',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

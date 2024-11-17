@@ -831,10 +831,6 @@ class LanguagesEt extends Languages {
       'ga',
       'iiri',
     ),
-    'gaa': Language(
-      'gaa',
-      'gaa',
-    ),
     'gag': Language(
       'gag',
       'gagauusi',
@@ -1430,10 +1426,6 @@ class LanguagesEt extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2467,10 +2459,6 @@ class LanguagesEt extends Languages {
       'uz',
       'usbeki',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2558,6 +2546,10 @@ class LanguagesEt extends Languages {
     'xmf': Language(
       'xmf',
       'megreli',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -2825,6 +2817,10 @@ class ScriptsEt extends Scripts {
     'Ethi': Script(
       'Ethi',
       'etioopia',
+    ),
+    'Gara': Script(
+      'Gara',
+      'garai',
     ),
     'Geok': Script(
       'Geok',
@@ -3271,6 +3267,10 @@ class ScriptsEt extends Scripts {
     'Sund': Script(
       'Sund',
       'sunda',
+    ),
+    'Sunu': Script(
+      'Sunu',
+      'sunvari',
     ),
     'Sylo': Script(
       'Sylo',
@@ -7875,6 +7875,72 @@ class UnitsEt implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'miljardikosa',
+          one: '{0} miljardikosa',
+          other: '{0} miljardikosa',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'osakesed/miljard',
+          one: '{0} miljardikosa',
+          other: '{0} miljardikosa',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'osakesed/miljard',
+          one: '{0} miljardikosa',
+          other: '{0} miljardikosa',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ööd',
+          one: '{0} öö',
+          other: '{0} ööd',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ööd',
+          one: '{0} öö',
+          other: '{0} ööd',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ööd',
+          one: '{0} öö',
+          other: '{0} ööd',
+        ),
+      );
 }
 
 class DateFieldsEt implements DateFields {
@@ -10259,8 +10325,17 @@ class TimeZonesEt extends TimeZones {
     'Africa/Cairo': TimeZoneNames(
       exemplarCity: 'Kairo',
     ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      exemplarCity: 'El Aaiún',
+    ),
     'Africa/Khartoum': TimeZoneNames(
       exemplarCity: 'Hartum',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: 'Lomé',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: 'Muqdisho',
     ),
     'Africa/Ndjamena': TimeZoneNames(
       exemplarCity: 'N’Djamena',
@@ -10303,9 +10378,6 @@ class TimeZonesEt extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Tšita',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tšojbalsan',
     ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damaskus',
@@ -10359,7 +10431,7 @@ class TimeZonesEt extends TimeZones {
       exemplarCity: 'Ar-Riyāḑ',
     ),
     'Asia/Saigon': TimeZoneNames(
-      exemplarCity: 'Ho Chi Minh',
+      exemplarCity: 'Hô Chi Minh',
     ),
     'Asia/Sakhalin': TimeZoneNames(
       exemplarCity: 'Sahhalin',
@@ -10403,6 +10475,9 @@ class TimeZonesEt extends TimeZones {
     'Indian/Cocos': TimeZoneNames(
       exemplarCity: 'Kookossaared',
     ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: 'Mahé',
+    ),
     'Indian/Maldives': TimeZoneNames(
       exemplarCity: 'Maldiivid',
     ),
@@ -10424,8 +10499,14 @@ class TimeZonesEt extends TimeZones {
     'Pacific/Honolulu': TimeZoneNames(
       exemplarCity: 'Honolulu',
     ),
+    'Pacific/Kanton': TimeZoneNames(
+      exemplarCity: 'Abariringa',
+    ),
     'Pacific/Marquesas': TimeZoneNames(
       exemplarCity: 'Markiisaared',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: 'Nouméa',
     ),
     'Pacific/Palau': TimeZoneNames(
       exemplarCity: 'Belau',
@@ -10748,14 +10829,6 @@ class TimeZonesEt extends TimeZones {
         daylight: 'Hiina suveaeg',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Tšojbalsani aeg',
-        standard: 'Tšojbalsani standardaeg',
-        daylight: 'Tšojbalsani suveaeg',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10801,7 +10874,7 @@ class TimeZonesEt extends TimeZones {
     'DumontDUrville': MetaZone(
       code: 'DumontDUrville',
       long: TimeZoneName(
-        standard: 'Dumont-d’Urville’i aeg',
+        standard: 'Dumont d’Urville’i aeg',
       ),
     ),
     'East_Timor': MetaZone(
@@ -10912,6 +10985,14 @@ class TimeZonesEt extends TimeZones {
       code: 'GMT',
       long: TimeZoneName(
         standard: 'Greenwichi aeg',
+      ),
+    ),
+    'Greenland': MetaZone(
+      code: 'Greenland',
+      long: TimeZoneName(
+        generic: 'Gröönimaa aeg',
+        standard: 'Gröönimaa standardaeg',
+        daylight: 'Gröönimaa suveaeg',
       ),
     ),
     'Greenland_Eastern': MetaZone(
@@ -11046,6 +11127,12 @@ class TimeZonesEt extends TimeZones {
         generic: 'Petropavlovsk-Kamtšatski aeg',
         standard: 'Kamtšatka standardaeg',
         daylight: 'Kamtšatka suveaeg',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kasahstani aeg',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

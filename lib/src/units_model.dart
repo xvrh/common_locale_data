@@ -660,4 +660,13 @@ abstract class Units {
 
   /// of gasoline equivalent
   Unit get pressureGasolineEnergyDensity;
+
+  /// light
+  Unit get speedLightSpeed;
+
+  /// parts per billion
+  Unit get concentrPortionPer1e9;
+
+  /// nights
+  Unit get durationNight;
 }

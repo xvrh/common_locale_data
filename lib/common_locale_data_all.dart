@@ -286,12 +286,15 @@ import 'ja.dart';
 import 'jv.dart';
 import 'ka.dart';
 import 'kk.dart';
+import 'kk_cyrl.dart';
+import 'kk_kz.dart';
 import 'km.dart';
 import 'kn.dart';
 import 'ko.dart';
 import 'ko_cn.dart';
 import 'ko_kp.dart';
 import 'kok.dart';
+import 'kok_deva.dart';
 import 'ky.dart';
 import 'lo.dart';
 import 'lt.dart';
@@ -321,6 +324,7 @@ import 'no.dart';
 import 'or.dart';
 import 'pa.dart';
 import 'pa_guru.dart';
+import 'pcm.dart';
 import 'pl.dart';
 import 'ps.dart';
 import 'ps_pk.dart';
@@ -378,6 +382,8 @@ import 'ta_my.dart';
 import 'ta_sg.dart';
 import 'te.dart';
 import 'th.dart';
+import 'ti.dart';
+import 'ti_er.dart';
 import 'tk.dart';
 import 'tr.dart';
 import 'tr_cy.dart';
@@ -392,14 +398,17 @@ import 'yo_bj.dart';
 import 'yue.dart';
 import 'yue_hans.dart';
 import 'yue_hant.dart';
+import 'yue_hant_cn.dart';
 import 'zh.dart';
 import 'zh_hans.dart';
 import 'zh_hans_hk.dart';
 import 'zh_hans_mo.dart';
+import 'zh_hans_my.dart';
 import 'zh_hans_sg.dart';
 import 'zh_hant.dart';
 import 'zh_hant_hk.dart';
 import 'zh_hant_mo.dart';
+import 'zh_hant_my.dart';
 import 'zu.dart';
 
 export 'af.dart';
@@ -678,12 +687,15 @@ export 'ja.dart';
 export 'jv.dart';
 export 'ka.dart';
 export 'kk.dart';
+export 'kk_cyrl.dart';
+export 'kk_kz.dart';
 export 'km.dart';
 export 'kn.dart';
 export 'ko.dart';
 export 'ko_cn.dart';
 export 'ko_kp.dart';
 export 'kok.dart';
+export 'kok_deva.dart';
 export 'ky.dart';
 export 'lo.dart';
 export 'lt.dart';
@@ -713,6 +725,7 @@ export 'no.dart';
 export 'or.dart';
 export 'pa.dart';
 export 'pa_guru.dart';
+export 'pcm.dart';
 export 'pl.dart';
 export 'ps.dart';
 export 'ps_pk.dart';
@@ -780,6 +793,8 @@ export 'ta_my.dart';
 export 'ta_sg.dart';
 export 'te.dart';
 export 'th.dart';
+export 'ti.dart';
+export 'ti_er.dart';
 export 'tk.dart';
 export 'tr.dart';
 export 'tr_cy.dart';
@@ -794,14 +809,17 @@ export 'yo_bj.dart';
 export 'yue.dart';
 export 'yue_hans.dart';
 export 'yue_hant.dart';
+export 'yue_hant_cn.dart';
 export 'zh.dart';
 export 'zh_hans.dart';
 export 'zh_hans_hk.dart';
 export 'zh_hans_mo.dart';
+export 'zh_hans_my.dart';
 export 'zh_hans_sg.dart';
 export 'zh_hant.dart';
 export 'zh_hant_hk.dart';
 export 'zh_hant_mo.dart';
+export 'zh_hant_my.dart';
 export 'zu.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
@@ -1634,6 +1652,12 @@ extension CommonLocaleDataAll on CommonLocaleData {
   /// Access the [CommonLocaleData] for kk
   static const kk = CommonLocaleDataKk();
 
+  /// Access the [CommonLocaleData] for kk-Cyrl
+  static const kkCyrl = CommonLocaleDataKkCyrl();
+
+  /// Access the [CommonLocaleData] for kk-KZ
+  static const kkKZ = CommonLocaleDataKkKZ();
+
   /// Access the [CommonLocaleData] for km
   static const km = CommonLocaleDataKm();
 
@@ -1651,6 +1675,9 @@ extension CommonLocaleDataAll on CommonLocaleData {
 
   /// Access the [CommonLocaleData] for kok
   static const kok = CommonLocaleDataKok();
+
+  /// Access the [CommonLocaleData] for kok-Deva
+  static const kokDeva = CommonLocaleDataKokDeva();
 
   /// Access the [CommonLocaleData] for ky
   static const ky = CommonLocaleDataKy();
@@ -1738,6 +1765,9 @@ extension CommonLocaleDataAll on CommonLocaleData {
 
   /// Access the [CommonLocaleData] for pa-Guru
   static const paGuru = CommonLocaleDataPaGuru();
+
+  /// Access the [CommonLocaleData] for pcm
+  static const pcm = CommonLocaleDataPcm();
 
   /// Access the [CommonLocaleData] for pl
   static const pl = CommonLocaleDataPl();
@@ -1910,6 +1940,12 @@ extension CommonLocaleDataAll on CommonLocaleData {
   /// Access the [CommonLocaleData] for th
   static const th = CommonLocaleDataTh();
 
+  /// Access the [CommonLocaleData] for ti
+  static const ti = CommonLocaleDataTi();
+
+  /// Access the [CommonLocaleData] for ti-ER
+  static const tiER = CommonLocaleDataTiER();
+
   /// Access the [CommonLocaleData] for tk
   static const tk = CommonLocaleDataTk();
 
@@ -1952,6 +1988,9 @@ extension CommonLocaleDataAll on CommonLocaleData {
   /// Access the [CommonLocaleData] for yue-Hant
   static const yueHant = CommonLocaleDataYueHant();
 
+  /// Access the [CommonLocaleData] for yue-Hant-CN
+  static const yueHantCN = CommonLocaleDataYueHantCN();
+
   /// Access the [CommonLocaleData] for zh
   static const zh = CommonLocaleDataZh();
 
@@ -1964,6 +2003,9 @@ extension CommonLocaleDataAll on CommonLocaleData {
   /// Access the [CommonLocaleData] for zh-Hans-MO
   static const zhHansMO = CommonLocaleDataZhHansMO();
 
+  /// Access the [CommonLocaleData] for zh-Hans-MY
+  static const zhHansMY = CommonLocaleDataZhHansMY();
+
   /// Access the [CommonLocaleData] for zh-Hans-SG
   static const zhHansSG = CommonLocaleDataZhHansSG();
 
@@ -1975,6 +2017,9 @@ extension CommonLocaleDataAll on CommonLocaleData {
 
   /// Access the [CommonLocaleData] for zh-Hant-MO
   static const zhHantMO = CommonLocaleDataZhHantMO();
+
+  /// Access the [CommonLocaleData] for zh-Hant-MY
+  static const zhHantMY = CommonLocaleDataZhHantMY();
 
   /// Access the [CommonLocaleData] for zu
   static const zu = CommonLocaleDataZu();
@@ -2264,12 +2309,15 @@ extension CommonLocaleDataAll on CommonLocaleData {
     'jv': jv,
     'ka': ka,
     'kk': kk,
+    'kk-Cyrl': kkCyrl,
+    'kk-KZ': kkKZ,
     'km': km,
     'kn': kn,
     'ko': ko,
     'ko-CN': koCN,
     'ko-KP': koKP,
     'kok': kok,
+    'kok-Deva': kokDeva,
     'ky': ky,
     'lo': lo,
     'lt': lt,
@@ -2299,6 +2347,7 @@ extension CommonLocaleDataAll on CommonLocaleData {
     'or': or,
     'pa': pa,
     'pa-Guru': paGuru,
+    'pcm': pcm,
     'pl': pl,
     'ps': ps,
     'ps-PK': psPK,
@@ -2356,6 +2405,8 @@ extension CommonLocaleDataAll on CommonLocaleData {
     'ta-SG': taSG,
     'te': te,
     'th': th,
+    'ti': ti,
+    'ti-ER': tiER,
     'tk': tk,
     'tr': tr,
     'tr-CY': trCY,
@@ -2370,14 +2421,17 @@ extension CommonLocaleDataAll on CommonLocaleData {
     'yue': yue,
     'yue-Hans': yueHans,
     'yue-Hant': yueHant,
+    'yue-Hant-CN': yueHantCN,
     'zh': zh,
     'zh-Hans': zhHans,
     'zh-Hans-HK': zhHansHK,
     'zh-Hans-MO': zhHansMO,
+    'zh-Hans-MY': zhHansMY,
     'zh-Hans-SG': zhHansSG,
     'zh-Hant': zhHant,
     'zh-Hant-HK': zhHantHK,
     'zh-Hant-MO': zhHantMO,
+    'zh-Hant-MY': zhHantMY,
     'zu': zu,
   }, (key) => key.toLowerCase());
 }

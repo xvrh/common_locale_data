@@ -319,6 +319,10 @@ class LanguagesNeIN extends Languages {
       'bla',
       'सिक्सिका',
     ),
+    'blo': Language(
+      'blo',
+      'अनी',
+    ),
     'bm': Language(
       'bm',
       'बाम्बारा',
@@ -863,10 +867,6 @@ class LanguagesNeIN extends Languages {
       'goh',
       'पुरातन उच्च जर्मन',
     ),
-    'gom': Language(
-      'gom',
-      'गोवा कोन्कानी',
-    ),
     'gon': Language(
       'gon',
       'गोन्डी',
@@ -1298,6 +1298,10 @@ class LanguagesNeIN extends Languages {
     'kwk': Language(
       'kwk',
       'क्वाकवाला',
+    ),
+    'kxv': Language(
+      'kxv',
+      'कुभी',
     ),
     'ky': Language(
       'ky',
@@ -2151,6 +2155,10 @@ class LanguagesNeIN extends Languages {
       'syr',
       'सिरियाक',
     ),
+    'szl': Language(
+      'szl',
+      'सिलेसियाली',
+    ),
     'ta': Language(
       'ta',
       'तामिल',
@@ -2315,6 +2323,10 @@ class LanguagesNeIN extends Languages {
       've',
       'भेन्डा',
     ),
+    'vec': Language(
+      'vec',
+      'भेनेसियाली',
+    ),
     'vi': Language(
       'vi',
       'भियतनामी',
@@ -2322,6 +2334,10 @@ class LanguagesNeIN extends Languages {
     'vmf': Language(
       'vmf',
       'मुख्य-फ्राङ्कोनियाली',
+    ),
+    'vmw': Language(
+      'vmw',
+      'मखुवा',
     ),
     'vo': Language(
       'vo',
@@ -2371,6 +2387,10 @@ class LanguagesNeIN extends Languages {
       'xmf',
       'मिनग्रेलियाली',
     ),
+    'xnr': Language(
+      'xnr',
+      'काङ्ग्री',
+    ),
     'xog': Language(
       'xog',
       'सोगा',
@@ -2399,6 +2419,10 @@ class LanguagesNeIN extends Languages {
       'yue',
       'क्यान्टोनिज',
       menu: 'चिनियाँ, क्यान्टोनिज',
+    ),
+    'za': Language(
+      'za',
+      'झुुआङ्ग',
     ),
     'zbl': Language(
       'zbl',
@@ -7270,6 +7294,72 @@ class UnitsNeIN implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'प्रकाश',
+          one: 'प्रकाश',
+          other: '{0} प्रकाश',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'प्रकाश',
+          one: '{0} प्रकाश',
+          other: '{0} प्रकाश',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'प्रकाश',
+          one: '{0}प्रकाश',
+          other: '{0}प्रकाशा',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'अंश प्रति बरब',
+          one: '{0} अंश प्रति अरब',
+          other: '{0} अंश प्रति अरब',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'अंश/अरब',
+          one: '{0} अंश प्रति अरब',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'अंश/अरब',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'रात',
+          one: '{0} रात',
+          other: '{0} रात',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'रात',
+          one: '{0} रात',
+          other: '{0} रात',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'रात',
+          one: '{0}रात',
+          other: '{0}रात',
+        ),
+      );
 }
 
 class DateFieldsNeIN implements DateFields {
@@ -10259,9 +10349,6 @@ class TimeZonesNeIN extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'चिता',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'चोइबाल्सान',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'कोलम्बो',
     ),
@@ -10936,14 +11023,6 @@ class TimeZonesNeIN extends TimeZones {
         daylight: 'चीन दिवा समय',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'चोइबाल्सन समय',
-        standard: 'चोइबाल्सन मानक समय',
-        daylight: 'चोइबाल्सन ग्रीष्मकालीन समय',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11223,6 +11302,12 @@ class TimeZonesNeIN extends TimeZones {
         generic: 'जापान समय',
         standard: 'जापान मानक समय',
         daylight: 'जापान दिवा समय',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'काजकस्तानको समय',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

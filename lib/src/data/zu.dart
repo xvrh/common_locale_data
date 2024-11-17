@@ -116,7 +116,7 @@ class LanguagesZu extends Languages {
     ),
     'ar-001': Language(
       'ar-001',
-      'isi-Arabic esivamile sesimanje',
+      'Isi-Arabic Esivamile Sesimanje',
     ),
     'arn': Language(
       'arn',
@@ -214,6 +214,10 @@ class LanguagesZu extends Languages {
     'bla': Language(
       'bla',
       'isi-Siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'isi-Anii',
     ),
     'bm': Language(
       'bm',
@@ -927,6 +931,10 @@ class LanguagesZu extends Languages {
       'kwk',
       'Kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'Kuvi',
+    ),
     'ky': Language(
       'ky',
       'isi-Kyrgyz',
@@ -959,6 +967,10 @@ class LanguagesZu extends Languages {
       'li',
       'isi-Limburgish',
     ),
+    'lij': Language(
+      'lij',
+      'IsiLigurian',
+    ),
     'lil': Language(
       'lil',
       'isi-Lillooet',
@@ -966,6 +978,10 @@ class LanguagesZu extends Languages {
     'lkt': Language(
       'lkt',
       'isi-Lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'IsiLombard',
     ),
     'ln': Language(
       'ln',
@@ -1596,6 +1612,10 @@ class LanguagesZu extends Languages {
       'syr',
       'isi-Syriac',
     ),
+    'szl': Language(
+      'szl',
+      'iSilesian',
+    ),
     'ta': Language(
       'ta',
       'isi-Tamil',
@@ -1756,9 +1776,17 @@ class LanguagesZu extends Languages {
       've',
       'isi-Venda',
     ),
+    'vec': Language(
+      'vec',
+      'IsiVenetian',
+    ),
     'vi': Language(
       'vi',
       'isi-Vietnamese',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -1804,6 +1832,10 @@ class LanguagesZu extends Languages {
       'xh',
       'isiXhosa',
     ),
+    'xnr': Language(
+      'xnr',
+      'Kangri',
+    ),
     'xog': Language(
       'xog',
       'isi-Soga',
@@ -1833,6 +1865,10 @@ class LanguagesZu extends Languages {
       'isi-Cantonese',
       menu: 'isi-Chinese, Cantonese',
     ),
+    'za': Language(
+      'za',
+      'IsiZhuang',
+    ),
     'zgh': Language(
       'zgh',
       'isi-Moroccan Tamazight esivamile',
@@ -1848,7 +1884,7 @@ class LanguagesZu extends Languages {
     ),
     'zh-Hant': Language(
       'zh-Hant',
-      'isi-Chinese (Sasendulo)',
+      'Isi-Chinese Sasendulo',
     ),
     'zu': Language(
       'zu',
@@ -3933,20 +3969,20 @@ class UnitsZu implements Units {
   Unit get durationYear => Unit(
         long: UnitCountPattern(
           _locale,
-          'y',
-          one: '{0} y',
+          'yr',
+          one: '{0} year',
           other: '{0} y',
         ),
         short: UnitCountPattern(
           _locale,
-          'y',
-          one: '{0} y',
-          other: '{0} yrs',
+          'yr',
+          one: '{0} yr',
+          other: '{0} y',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'y',
-          one: '{0} y',
+          'yr',
+          one: '{0}y',
           other: '{0} y',
         ),
       );
@@ -7052,6 +7088,72 @@ class UnitsZu implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'night',
+          one: '{0} night',
+          other: '{0} night',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'night',
+          one: '{0} night',
+          other: '{0} night',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'night',
+          one: '{0}night',
+          other: '{0} night',
+        ),
+      );
 }
 
 class DateFieldsZu implements DateFields {
@@ -10038,9 +10140,6 @@ class TimeZonesZu extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'i-Chita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'i-Choibalsan',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'i-Colombo',
     ),
@@ -10717,14 +10816,6 @@ class TimeZonesZu extends TimeZones {
         daylight: 'Isikhathi semini sase-China',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Isikhathi sase-Choibalsan',
-        standard: 'Isikhathi Esivamile sase-Choibalsan',
-        daylight: 'Isikhathi sehlobo e-Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11009,6 +11100,12 @@ class TimeZonesZu extends TimeZones {
         generic: 'esase-Petropavlovsk-Kamchatski Time',
         standard: 'esase-Petropavlovsk-Kamchatski Standard Time',
         daylight: 'esase-Petropavlovsk-Kamchatski Summer Time',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Isikhathi saseKazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

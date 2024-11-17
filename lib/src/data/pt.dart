@@ -267,6 +267,10 @@ class LanguagesPt extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1125,6 +1129,10 @@ class LanguagesPt extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'quirguiz',
@@ -1164,6 +1172,10 @@ class LanguagesPt extends Languages {
     'li': Language(
       'li',
       'limburguês',
+    ),
+    'lij': Language(
+      'lij',
+      'ligure',
     ),
     'lil': Language(
       'lil',
@@ -1224,10 +1236,6 @@ class LanguagesPt extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1303,7 +1311,7 @@ class LanguagesPt extends Languages {
     ),
     'mgh': Language(
       'mgh',
-      'macua',
+      'macua-mêto',
     ),
     'mgo': Language(
       'mgo',
@@ -1946,6 +1954,10 @@ class LanguagesPt extends Languages {
       'syr',
       'siríaco',
     ),
+    'szl': Language(
+      'szl',
+      'silesiano',
+    ),
     'ta': Language(
       'ta',
       'tâmil',
@@ -2130,17 +2142,21 @@ class LanguagesPt extends Languages {
       'uz',
       'uzbeque',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'vêneto',
+    ),
     'vi': Language(
       'vi',
       'vietnamita',
+    ),
+    'vmw': Language(
+      'vmw',
+      'macua',
     ),
     'vo': Language(
       'vo',
@@ -2193,6 +2209,10 @@ class LanguagesPt extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kandri',
     ),
     'xog': Language(
       'xog',
@@ -7294,6 +7314,72 @@ class UnitsPt implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luzes',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luzes',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luzes',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'partes por bilhão',
+          one: '{0} parte por bilhão',
+          other: '{0} partes por bilhão',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'partes/bilhão',
+          one: '{0} parte por bilhão',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'partes/bilhão',
+          one: '{0} parte por bilhão',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noites',
+          one: '{0} noite',
+          other: '{0} noites',
+        ),
+      );
 }
 
 class DateFieldsPt implements DateFields {
@@ -7644,8 +7730,8 @@ class DateFieldsPt implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: 'há {0} domigo',
-            other: 'há {0} domigos',
+            one: 'há {0} domingo',
+            other: 'há {0} domingos',
           ),
           short: RelativeTime(
             _locale,
@@ -8055,7 +8141,7 @@ class DateFieldsPt implements DateFields {
         displayName: MultiLength(
           long: 'minuto',
           short: 'min.',
-          narrow: 'min.',
+          narrow: 'min',
         ),
         now: MultiLength(
           long: 'este minuto',
@@ -8208,7 +8294,7 @@ class TerritoriesPt implements Territories {
   @override
   Territory get northernAfrica => Territory(
         '015',
-        'África do Norte',
+        'África Setentrional',
       );
 
   @override
@@ -10246,14 +10332,6 @@ class TimeZonesPt extends TimeZones {
         daylight: 'Horário de Verão da China',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Horário de Choibalsan',
-        standard: 'Horário Padrão de Choibalsan',
-        daylight: 'Horário de Verão de Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10546,16 +10624,22 @@ class TimeZonesPt extends TimeZones {
         daylight: 'Horário de Verão de Petropavlovsk-Kamchatski',
       ),
     ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Horário do Cazaquistão',
+      ),
+    ),
     'Kazakhstan_Eastern': MetaZone(
       code: 'Kazakhstan_Eastern',
       long: TimeZoneName(
-        standard: 'Horário do Casaquistão Oriental',
+        standard: 'Horário do Cazaquistão Oriental',
       ),
     ),
     'Kazakhstan_Western': MetaZone(
       code: 'Kazakhstan_Western',
       long: TimeZoneName(
-        standard: 'Horário do Casaquistão Ocidental',
+        standard: 'Horário do Cazaquistão Ocidental',
       ),
     ),
     'Korea': MetaZone(

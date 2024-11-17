@@ -255,6 +255,10 @@ class LanguagesIs extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -1135,6 +1139,10 @@ class LanguagesIs extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kúví',
+    ),
     'ky': Language(
       'ky',
       'kirgiska',
@@ -1175,6 +1183,10 @@ class LanguagesIs extends Languages {
       'li',
       'limbúrgíska',
     ),
+    'lij': Language(
+      'lij',
+      'lígúríska',
+    ),
     'lil': Language(
       'lil',
       'lillooet',
@@ -1182,6 +1194,10 @@ class LanguagesIs extends Languages {
     'lkt': Language(
       'lkt',
       'lakóta',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardíska',
     ),
     'ln': Language(
       'ln',
@@ -1935,6 +1951,10 @@ class LanguagesIs extends Languages {
       'syr',
       'sýrlenska',
     ),
+    'szl': Language(
+      'szl',
+      'slesíska',
+    ),
     'ta': Language(
       'ta',
       'tamílska',
@@ -2127,9 +2147,17 @@ class LanguagesIs extends Languages {
       've',
       'venda',
     ),
+    'vec': Language(
+      'vec',
+      'feneyska',
+    ),
     'vi': Language(
       'vi',
       'víetnamska',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makúva',
     ),
     'vo': Language(
       'vo',
@@ -2182,6 +2210,10 @@ class LanguagesIs extends Languages {
     'xh': Language(
       'xh',
       'sósa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangrí',
     ),
     'xog': Language(
       'xog',
@@ -2474,11 +2506,11 @@ class ScriptsIs extends Scripts {
     ),
     'Sund': Script(
       'Sund',
-      'sundanesíska',
+      'sundanesískt',
     ),
     'Syrc': Script(
       'Syrc',
-      'syriakíska',
+      'syriakískt',
     ),
     'Taml': Script(
       'Taml',
@@ -2980,7 +3012,7 @@ class UnitsIs implements Units {
           _locale,
           'þyngdarhröðun',
           one: '{0} þyngdarhröðun',
-          other: '{0} þyngdarhröðun',
+          other: '{0} þyngdarhraðanir',
         ),
         short: UnitCountPattern(
           _locale,
@@ -4760,7 +4792,7 @@ class UnitsIs implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'pixlar',
+          'punktar',
           one: '{0} pixill',
           other: '{0} pixlar',
         ),
@@ -5817,19 +5849,19 @@ class UnitsIs implements Units {
         long: UnitCountPattern(
           _locale,
           'millimetrar af kvikasilfri',
-          one: '{0} millimetrar af kvikasilfri',
+          one: '{0} millimetri af kvikasilfri',
           other: '{0} millimetrar af kvikasilfri',
         ),
         short: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} millimetrar af kvikasilfri',
+          one: '{0} millimetri af kvikasilfri',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} millimetrar af kvikasilfri',
+          one: '{0} millimetri af kvikasilfri',
           other: '{0} mm Hg',
         ),
       );
@@ -7043,6 +7075,72 @@ class UnitsIs implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'hlutar á milljarð',
+          one: '{0} hluti á milljarð',
+          other: '{0} hlutar á milljarð',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} hluti á milljarð',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} hluti á milljarð',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nætur',
+          one: '{0} nótt',
+          other: '{0} nætur',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'næt.',
+          one: '{0} nótt',
+          other: '{0} næt.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'n.',
+          one: '{0} n.',
+          other: '{0} n.',
+        ),
+      );
 }
 
 class DateFieldsIs implements DateFields {
@@ -7090,7 +7188,7 @@ class DateFieldsIs implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'fyrir {0} árum',
+            one: 'fyrir {0} ári',
             other: 'fyrir {0} árum',
           ),
         ),
@@ -7382,7 +7480,7 @@ class DateFieldsIs implements DateFields {
         ),
         now: MultiLength(
           long: 'núna á sunnudag',
-          short: 'þessi sun.',
+          short: 'á sun.',
           narrow: 'á sun.',
         ),
         next: MultiLength(
@@ -7436,7 +7534,7 @@ class DateFieldsIs implements DateFields {
         now: MultiLength(
           long: 'núna á mánudag',
           short: 'núna á mán.',
-          narrow: 'þessi mán.',
+          narrow: 'á mán.',
         ),
         next: MultiLength(
           long: 'næsta mánudag',
@@ -7483,13 +7581,13 @@ class DateFieldsIs implements DateFields {
   DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'síðasta þriðjudag',
-          short: 'síðasti þri.',
-          narrow: 'síðasti þri.',
+          short: 'síðasta þri.',
+          narrow: 'síðasta þri.',
         ),
         now: MultiLength(
           long: 'núna á þriðjudaginn',
-          short: 'þessi þri.',
-          narrow: 'þessi þri.',
+          short: 'á þri.',
+          narrow: 'á þri.',
         ),
         next: MultiLength(
           long: 'næsta þriðjudag',
@@ -7536,13 +7634,13 @@ class DateFieldsIs implements DateFields {
   DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'síðasta miðvikudag',
-          short: 'síðasti mið.',
-          narrow: 'síðasti mið.',
+          short: 'síðasta mið.',
+          narrow: 'síðasta mið.',
         ),
         now: MultiLength(
           long: 'núna á miðvikudaginn',
-          short: 'þessi mið.',
-          narrow: 'þessi mið.',
+          short: 'á mið.',
+          narrow: 'á mið.',
         ),
         next: MultiLength(
           long: 'næsta miðvikudag',
@@ -7589,13 +7687,13 @@ class DateFieldsIs implements DateFields {
   DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
         previous: MultiLength(
           long: 'síðasta fimmtudag',
-          short: 'síðasti fim.',
-          narrow: 'síðasti fim.',
+          short: 'síðasta fim.',
+          narrow: 'síðasta fim.',
         ),
         now: MultiLength(
           long: 'núna á fimmtudaginn',
-          short: 'þessi fim.',
-          narrow: 'þessi fim.',
+          short: 'á fim.',
+          narrow: 'á fim.',
         ),
         next: MultiLength(
           long: 'næsta fimmtudag',
@@ -8996,8 +9094,8 @@ class TerritoriesIs implements Territories {
     ),
     'SZ': Territory(
       'SZ',
-      'Svasíland',
-      variant: 'Svasíland',
+      'Esvatíní',
+      variant: 'Esvatíní',
     ),
     'TA': Territory(
       'TA',
@@ -9551,6 +9649,9 @@ class TimeZonesIs extends TimeZones {
     'Asia/Ulaanbaatar': TimeZoneNames(
       exemplarCity: 'Úlan Bator',
     ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'Jerevan',
+    ),
     'Indian/Christmas': TimeZoneNames(
       exemplarCity: 'Jólaey',
     ),
@@ -9873,14 +9974,6 @@ class TimeZonesIs extends TimeZones {
         daylight: 'Sumartími í Kína',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Tími í Choibalsan',
-        standard: 'Staðaltími í Choibalsan',
-        daylight: 'Sumartími í Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10165,6 +10258,12 @@ class TimeZonesIs extends TimeZones {
         generic: 'Tími í Petropavlovsk-Kamchatski',
         standard: 'Staðaltími í Petropavlovsk-Kamchatski',
         daylight: 'Sumartími í Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Tími í Kasakstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
@@ -10462,9 +10561,9 @@ class TimeZonesIs extends TimeZones {
     'Sakhalin': MetaZone(
       code: 'Sakhalin',
       long: TimeZoneName(
-        generic: 'Tími í Sakhalin',
-        standard: 'Staðaltími í Sakhalin',
-        daylight: 'Sumartími í Sakhalin',
+        generic: 'Tími á Sakhalin',
+        standard: 'Staðaltími á Sakhalin',
+        daylight: 'Sumartími á Sakhalin',
       ),
     ),
     'Samara': MetaZone(

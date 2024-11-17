@@ -323,6 +323,10 @@ class LanguagesPl extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -879,10 +883,6 @@ class LanguagesPl extends Languages {
       'goh',
       'staro-wysoko-niemiecki',
     ),
-    'gom': Language(
-      'gom',
-      'konkani (Goa)',
-    ),
     'gon': Language(
       'gon',
       'gondi',
@@ -1324,6 +1324,10 @@ class LanguagesPl extends Languages {
       'kwk',
       'kwakiutl',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiski',
@@ -1440,10 +1444,6 @@ class LanguagesPl extends Languages {
       'lun',
       'lunda',
     ),
-    'luo': Language(
-      'luo',
-      'luo',
-    ),
     'lus': Language(
       'lus',
       'mizo',
@@ -1526,7 +1526,7 @@ class LanguagesPl extends Languages {
     ),
     'mgh': Language(
       'mgh',
-      'makua',
+      'makua-meetto',
     ),
     'mgo': Language(
       'mgo',
@@ -2509,6 +2509,10 @@ class LanguagesPl extends Languages {
       'vmf',
       'meński frankoński',
     ),
+    'vmw': Language(
+      'vmw',
+      'makua',
+    ),
     'vo': Language(
       'vo',
       'wolapik',
@@ -2568,6 +2572,10 @@ class LanguagesPl extends Languages {
     'xmf': Language(
       'xmf',
       'megrelski',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -3568,20 +3576,26 @@ class UnitsPl implements Units {
   Unit get accelerationGForce => Unit(
         long: UnitCountPattern(
           _locale,
-          'stała grawitacji',
-          one: '{0} g-force',
-          other: '{0} G',
+          'przyspieszenie ziemskie',
+          one: 'przyspieszenie ziemskie',
+          few: '{0} przyspieszenia ziemskie',
+          many: '{0} przyspieszeń ziemskich',
+          other: '{0} przyspieszenia ziemskiego',
         ),
         short: UnitCountPattern(
           _locale,
           'G',
-          one: '{0} G',
+          one: 'przyspieszenie ziemskie',
+          few: '{0} przyspieszenia ziemskie',
+          many: '{0} przyspieszeń ziemskich',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'G',
-          one: '{0}G',
+          one: 'przyspieszenie ziemskie',
+          few: '{0} przyspieszenia ziemskie',
+          many: '{0} przyspieszeń ziemskich',
           other: '{0} G',
         ),
       );
@@ -4878,23 +4892,23 @@ class UnitsPl implements Units {
   Unit get durationDay => Unit(
         long: UnitCountPattern(
           _locale,
-          'doby',
-          one: '{0} doba',
-          few: '{0} doby',
-          many: '{0} dób',
-          other: '{0} doby',
+          'dzień',
+          one: '{0} dzień',
+          few: '{0} dni',
+          many: '{0} dni',
+          other: '{0} dnia',
         ),
         short: UnitCountPattern(
           _locale,
-          'doby',
-          one: '{0} doba',
-          few: '{0} doby',
-          many: '{0} dób',
-          other: '{0} doby',
+          'dzień',
+          one: '{0} dzień',
+          few: '{0} dni',
+          many: '{0} dni',
+          other: '{0} dnia',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'doba',
+          'dzień',
           one: '{0} d.',
           few: '{0} d.',
           many: '{0} d.',
@@ -7281,25 +7295,25 @@ class UnitsPl implements Units {
         long: UnitCountPattern(
           _locale,
           'milibary',
-          one: '{0} millibar',
-          few: '{0} millibary',
-          many: '{0} millibarów',
-          other: '{0} millibara',
+          one: '{0} milibar',
+          few: '{0} milibary',
+          many: '{0} milibarów',
+          other: '{0} milibara',
         ),
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} millibar',
-          few: '{0} millibary',
-          many: '{0} millibarów',
+          one: '{0} milibar',
+          few: '{0} milibary',
+          many: '{0} milibarów',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} millibar',
-          few: '{0} millibary',
-          many: '{0} millibarów',
+          one: '{0} milibar',
+          few: '{0} milibary',
+          many: '{0} milibarów',
           other: '{0} mbar',
         ),
       );
@@ -7464,7 +7478,7 @@ class UnitsPl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'km/godz.',
+          'km/h',
           one: '{0} km/h',
           few: '{0} km/h',
           many: '{0} km/h',
@@ -8723,6 +8737,90 @@ class UnitsPl implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'światło',
+          one: '{0} światło',
+          few: '{0} światła',
+          many: '{0} świateł',
+          other: '{0} światła',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'św.',
+          one: '{0} św.',
+          few: '{0} św.',
+          many: '{0} św.',
+          other: '{0} św.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'św.',
+          one: '{0} św.',
+          few: '{0} św.',
+          many: '{0} św.',
+          other: '{0} św.',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'części na miliard',
+          one: '{0} część na miliard',
+          few: '{0} części na miliard',
+          many: '{0} części na miliard',
+          other: '{0} części na miliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} część na miliard',
+          few: '{0} części na miliard',
+          many: '{0} części na miliard',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} część na miliard',
+          few: '{0} części na miliard',
+          many: '{0} części na miliard',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noce',
+          one: '{0} noc',
+          few: '{0} noce',
+          many: '{0} nocy',
+          other: '{0} nocy',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noce',
+          one: '{0} noc',
+          few: '{0} noce',
+          many: '{0} nocy',
+          other: '{0} nocy',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noce',
+          one: '{0} noc',
+          few: '{0} noce',
+          many: '{0} nocy',
+          other: '{0} nocy',
         ),
       );
 }
@@ -11130,7 +11228,7 @@ class TimeZonesPl extends TimeZones {
       exemplarCity: 'Jamajka',
     ),
     'America/Kentucky/Monticello': TimeZoneNames(
-      exemplarCity: 'Monticello',
+      exemplarCity: 'Monticello, Kentucky',
     ),
     'America/Lower_Princes': TimeZoneNames(
       exemplarCity: 'Lower Prince’s Quarter',
@@ -11454,9 +11552,6 @@ class TimeZonesPl extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Czyta',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Czojbalsan',
     ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
@@ -11933,14 +12028,6 @@ class TimeZonesPl extends TimeZones {
         daylight: 'Chiny (czas letni)',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'czas Czojbalsan',
-        standard: 'Czojbalsan (czas standardowy)',
-        daylight: 'Czojbalsan (czas letni)',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -12240,6 +12327,12 @@ class TimeZonesPl extends TimeZones {
         generic: 'czas Pietropawłowsk Kamczacki',
         standard: 'czas standardowy Pietropawłowsk Kamczacki',
         daylight: 'czas Pietropawłowsk Kamczacki letni',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'czas Kazachstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

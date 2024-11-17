@@ -323,6 +323,10 @@ class LanguagesFrCA extends Languages {
       'bla',
       'siksika',
     ),
+    'blo': Language(
+      'blo',
+      'anii',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -680,7 +684,7 @@ class LanguagesFrCA extends Languages {
     'en-GB': Language(
       'en-GB',
       'anglais britannique',
-      short: 'anglais britannique',
+      short: 'anglais (R.-U.)',
     ),
     'en-US': Language(
       'en-US',
@@ -878,10 +882,6 @@ class LanguagesFrCA extends Languages {
     'goh': Language(
       'goh',
       'vieux haut-allemand',
-    ),
-    'gom': Language(
-      'gom',
-      'konkani de Goa',
     ),
     'gon': Language(
       'gon',
@@ -1173,7 +1173,7 @@ class LanguagesFrCA extends Languages {
     ),
     'kg': Language(
       'kg',
-      'kongo',
+      'kikongo',
     ),
     'kgp': Language(
       'kgp',
@@ -1319,6 +1319,10 @@ class LanguagesFrCA extends Languages {
       'kwk',
       'kwak’wala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirghize',
@@ -1434,10 +1438,6 @@ class LanguagesFrCA extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1577,7 +1577,7 @@ class LanguagesFrCA extends Languages {
     ),
     'mr': Language(
       'mr',
-      'marathe',
+      'marathi',
     ),
     'mrj': Language(
       'mrj',
@@ -2505,6 +2505,10 @@ class LanguagesFrCA extends Languages {
       'vmf',
       'franconien du Main',
     ),
+    'vmw': Language(
+      'vmw',
+      'macua',
+    ),
     'vo': Language(
       'vo',
       'volapük',
@@ -2564,6 +2568,10 @@ class LanguagesFrCA extends Languages {
     'xmf': Language(
       'xmf',
       'mingrélien',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -7633,6 +7641,72 @@ class UnitsFrCA implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'lumière',
+          one: '{0} lumière',
+          other: '{0} lumière',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'lumière',
+          one: '{0} lumière',
+          other: '{0} lumière',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'lumière',
+          one: '{0} lumière',
+          other: '{0} lumière',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'parties par milliard',
+          one: '{0} partie par milliard',
+          other: '{0} parties par milliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'p.p. 10⁹',
+          one: '{0} p.p. 10⁹',
+          other: '{0} p.p. 10⁹',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'p.p. 10⁹',
+          one: '{0}pp10⁹',
+          other: '{0}pp10⁹',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nuits',
+          one: '{0} nuit',
+          other: '{0} nuits',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nuits',
+          one: '{0} nuit',
+          other: '{0} nuits',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nuits',
+          one: '{0}nuit',
+          other: '{0}nuits',
+        ),
+      );
 }
 
 class DateFieldsFrCA implements DateFields {
@@ -7968,17 +8042,17 @@ class DateFieldsFrCA implements DateFields {
         previous: MultiLength(
           long: 'dimanche dernier',
           short: 'dim. dernier',
-          narrow: 'dim. dernier',
+          narrow: 'dim dernier',
         ),
         now: MultiLength(
           long: 'ce dimanche',
           short: 'ce dim.',
-          narrow: 'ce dim.',
+          narrow: 'ce dim',
         ),
         next: MultiLength(
           long: 'dimanche prochain',
           short: 'dim. prochain',
-          narrow: 'dim. prochain',
+          narrow: 'dim prochain',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -8021,17 +8095,17 @@ class DateFieldsFrCA implements DateFields {
         previous: MultiLength(
           long: 'lundi dernier',
           short: 'lun. dernier',
-          narrow: 'lun. dernier',
+          narrow: 'lun dernier',
         ),
         now: MultiLength(
           long: 'ce lundi',
           short: 'ce lun.',
-          narrow: 'ce lun.',
+          narrow: 'ce lun',
         ),
         next: MultiLength(
           long: 'lundi prochain',
           short: 'lun. prochain',
-          narrow: 'lun. prochain',
+          narrow: 'lun prochain',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -8074,17 +8148,17 @@ class DateFieldsFrCA implements DateFields {
         previous: MultiLength(
           long: 'mardi dernier',
           short: 'mar. dernier',
-          narrow: 'mar. dernier',
+          narrow: 'mar dernier',
         ),
         now: MultiLength(
           long: 'ce mardi',
           short: 'ce mar.',
-          narrow: 'ce mar.',
+          narrow: 'ce mar',
         ),
         next: MultiLength(
           long: 'mardi prochain',
           short: 'mar. prochain',
-          narrow: 'mar. prochain',
+          narrow: 'mar prochain',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -8127,17 +8201,17 @@ class DateFieldsFrCA implements DateFields {
         previous: MultiLength(
           long: 'mercredi dernier',
           short: 'mer. dernier',
-          narrow: 'mer. dernier',
+          narrow: 'mer dernier',
         ),
         now: MultiLength(
           long: 'ce mercredi',
           short: 'ce mer.',
-          narrow: 'ce mer.',
+          narrow: 'ce mer',
         ),
         next: MultiLength(
           long: 'mercredi prochain',
           short: 'mer. prochain',
-          narrow: 'mer. prochain',
+          narrow: 'mer prochain',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -8180,17 +8254,17 @@ class DateFieldsFrCA implements DateFields {
         previous: MultiLength(
           long: 'jeudi dernier',
           short: 'jeu. dernier',
-          narrow: 'jeu. dernier',
+          narrow: 'jeu dernier',
         ),
         now: MultiLength(
           long: 'ce jeudi',
           short: 'ce jeu.',
-          narrow: 'ce jeu.',
+          narrow: 'ce jeu',
         ),
         next: MultiLength(
           long: 'jeudi prochain',
           short: 'jeu. prochain',
-          narrow: 'jeu. prochain',
+          narrow: 'jeu prochain',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -8233,17 +8307,17 @@ class DateFieldsFrCA implements DateFields {
         previous: MultiLength(
           long: 'vendredi dernier',
           short: 'ven. dernier',
-          narrow: 'ven. dernier',
+          narrow: 'ven dernier',
         ),
         now: MultiLength(
           long: 'ce vendredi',
           short: 'ce ven.',
-          narrow: 'ce ven.',
+          narrow: 'ce ven',
         ),
         next: MultiLength(
           long: 'vendredi prochain',
           short: 'ven. prochain',
-          narrow: 'ven. prochain',
+          narrow: 'ven prochain',
         ),
         past: MultiLengthRelativeTime(
           long: RelativeTime(
@@ -8286,7 +8360,7 @@ class DateFieldsFrCA implements DateFields {
         previous: MultiLength(
           long: 'samedi dernier',
           short: 'sam. dernier',
-          narrow: 'sam. dernier',
+          narrow: 'sam dernier',
         ),
         now: MultiLength(
           long: 'ce samedi',
@@ -8895,7 +8969,7 @@ class TerritoriesFrCA implements Territories {
     ),
     'CP': Territory(
       'CP',
-      'Île Clipperton',
+      'île Clipperton',
     ),
     'CQ': Territory(
       'CQ',
@@ -9885,7 +9959,7 @@ class TimeZonesFrCA extends TimeZones {
       exemplarCity: 'Beulah [Dakota du Nord]',
     ),
     'America/North_Dakota/New_Salem': TimeZoneNames(
-      exemplarCity: 'New Salem, Dakota du Nord',
+      exemplarCity: 'New Salem [Dakota du Nord]',
     ),
     'America/North_Dakota/Center': TimeZoneNames(
       exemplarCity: 'Center [Dakota du Nord]',
@@ -9926,9 +10000,6 @@ class TimeZonesFrCA extends TimeZones {
     'America/St_Vincent': TimeZoneNames(
       exemplarCity: 'Saint-Vincent',
     ),
-    'America/Tegucigalpa': TimeZoneNames(
-      exemplarCity: 'Tégucigalpa',
-    ),
     'America/Thule': TimeZoneNames(
       exemplarCity: 'Thulé',
     ),
@@ -9939,7 +10010,7 @@ class TimeZonesFrCA extends TimeZones {
       exemplarCity: 'Bermudes',
     ),
     'Atlantic/Canary': TimeZoneNames(
-      exemplarCity: 'Îles Canaries',
+      exemplarCity: 'îles Canaries',
     ),
     'Atlantic/Cape_Verde': TimeZoneNames(
       exemplarCity: 'Cap-Vert',
@@ -10086,9 +10157,6 @@ class TimeZonesFrCA extends TimeZones {
     ),
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Tchita',
-    ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Tchoïbalsan',
     ),
     'Asia/Damascus': TimeZoneNames(
       exemplarCity: 'Damas',
@@ -10584,14 +10652,6 @@ class TimeZonesFrCA extends TimeZones {
         daylight: 'heure avancée de Chine',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'heure de Choibalsan',
-        standard: 'heure normale de Choibalsan',
-        daylight: 'heure avancée de Choibalsan',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -10817,7 +10877,7 @@ class TimeZonesFrCA extends TimeZones {
     'Indian_Ocean': MetaZone(
       code: 'Indian_Ocean',
       long: TimeZoneName(
-        standard: 'heure de l’Océan Indien',
+        standard: 'heure de l’océan Indien',
       ),
     ),
     'Indochina': MetaZone(
@@ -10882,6 +10942,12 @@ class TimeZonesFrCA extends TimeZones {
         generic: 'heure de Petropavlovsk-Kamchatski',
         standard: 'heure normale de Petropavlovsk-Kamchatski',
         daylight: 'heure avancée de Petropavlovsk-Kamchatski',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'heure du Kazakhstan',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

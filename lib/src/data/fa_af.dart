@@ -280,6 +280,10 @@ class LanguagesFaAF extends Languages {
       'bla',
       'سیکسیکا',
     ),
+    'blo': Language(
+      'blo',
+      'باسیلا',
+    ),
     'bm': Language(
       'bm',
       'بامبارایی',
@@ -1164,6 +1168,10 @@ class LanguagesFaAF extends Languages {
       'kwk',
       'کواک والا',
     ),
+    'kxv': Language(
+      'kxv',
+      'کووی',
+    ),
     'ky': Language(
       'ky',
       'قرغزی',
@@ -1203,6 +1211,10 @@ class LanguagesFaAF extends Languages {
     'li': Language(
       'li',
       'لیمبورگی',
+    ),
+    'lij': Language(
+      'lij',
+      'لیگوری',
     ),
     'lil': Language(
       'lil',
@@ -2177,9 +2189,17 @@ class LanguagesFaAF extends Languages {
       've',
       'وندایی',
     ),
+    'vec': Language(
+      'vec',
+      'ونیزی',
+    ),
     'vi': Language(
       'vi',
       'ویتنامی',
+    ),
+    'vmw': Language(
+      'vmw',
+      'ماکوا',
     ),
     'vo': Language(
       'vo',
@@ -2233,6 +2253,10 @@ class LanguagesFaAF extends Languages {
       'xh',
       'خوسایی',
     ),
+    'xnr': Language(
+      'xnr',
+      'کانگری',
+    ),
     'xog': Language(
       'xog',
       'سوگایی',
@@ -2272,7 +2296,7 @@ class LanguagesFaAF extends Languages {
     ),
     'za': Language(
       'za',
-      'چوانگی',
+      'ژوانگی',
     ),
     'zap': Language(
       'zap',
@@ -3136,9 +3160,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'نیروی جاذبه',
+          'گرانش',
           one: '{0}G',
-          other: '{0}G',
+          other: '{0}Gs',
         ),
       );
 
@@ -3158,7 +3182,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'متر/مجذور ثانیه',
+          'm/s²',
           one: '{0}‎ m/s²',
           other: '{0}‎ m/s²',
         ),
@@ -3290,7 +3314,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'کیلومتر مربع',
+          'km²',
           one: '{0}km²',
           other: '{0}km²',
         ),
@@ -3307,8 +3331,8 @@ class UnitsFaAF implements Units {
         short: UnitCountPattern(
           _locale,
           'هکتار',
-          one: '{0} هک',
-          other: '{0} هک',
+          one: '{0} هکتار',
+          other: '{0} هکتار',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -3378,7 +3402,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'مایل مربع',
+          'mi²',
           one: '{0} mi²',
           other: '{0} mi²',
         ),
@@ -3401,8 +3425,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'جریب',
-          one: '{0}جریب',
-          other: '{0} جریب',
+          one: '{0}ac',
+          other: '{0}ac',
         ),
       );
 
@@ -4099,14 +4123,14 @@ class UnitsFaAF implements Units {
         short: UnitCountPattern(
           _locale,
           'سه‌ماه',
-          one: '{0} فصل',
-          other: '{0} فصل',
+          one: '{0} سه‌ماه',
+          other: '{0}سه‌ماه',
         ),
         narrow: UnitCountPattern(
           _locale,
           'سه‌ماه',
-          one: '{0}فصل',
-          other: '{0}فصل',
+          one: '{0}سه‌ماه',
+          other: '{0}سه‌ماه',
         ),
       );
 
@@ -4324,9 +4348,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'آمپر',
-          one: '{0} آمپر',
-          other: '{0} آمپر',
+          'amp',
+          one: '{0}A',
+          other: '{0}A',
         ),
       );
 
@@ -4346,9 +4370,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'میلی‌آمپر',
-          one: '{0} میلی‌آمپر',
-          other: '{0} میلی‌آمپر',
+          'mA',
+          one: '{0}mA',
+          other: '{0}mA',
         ),
       );
 
@@ -4369,8 +4393,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'اهم',
-          one: '{0} اهم',
-          other: '{0} اهم',
+          one: '{0}Ω',
+          other: '{0}Ω',
         ),
       );
 
@@ -4391,8 +4415,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ولت',
-          one: '{0} ولت',
-          other: '{0} ولت',
+          one: '{0}V',
+          other: '{0}V',
         ),
       );
 
@@ -4434,9 +4458,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'کالری',
-          one: '{0} کالری',
-          other: '{0} کالری',
+          'cal',
+          one: '{0}cal',
+          other: '{0}cal',
         ),
       );
 
@@ -4456,9 +4480,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'کالری',
-          one: '{0} کالری',
-          other: '{0} کالری',
+          'Cal',
+          one: '{0}Cal',
+          other: '{0}Cal',
         ),
       );
 
@@ -4478,9 +4502,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ک.ژول',
-          one: '{0} ک.ژول',
-          other: '{0} ک.ژول',
+          'kJ',
+          one: '{0}kJ',
+          other: '{0}kJ',
         ),
       );
 
@@ -4501,8 +4525,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ژول',
-          one: '{0} ژول',
-          other: '{0} ژول',
+          one: '{0}J',
+          other: '{0}J',
         ),
       );
 
@@ -4522,9 +4546,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ک.وات‌ساعت',
-          one: '{0} ک.و.ساعت',
-          other: '{0} ک.و.ساعت',
+          'kWh',
+          one: '{0}kWh',
+          other: '{0}kWh',
         ),
       );
 
@@ -4544,9 +4568,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'الکترون‌ولت',
-          one: '{0}الکترون‌ولت',
-          other: '{0}الکترون‌ولت',
+          'eV',
+          one: '{0}eV',
+          other: '{0}eV',
         ),
       );
 
@@ -4566,9 +4590,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'بی‌تی‌یو',
-          one: '{0} بی‌تی‌یو',
-          other: '{0} بی‌تی‌یو',
+          'BTU',
+          one: '{0}Btu',
+          other: '{0}Btu',
         ),
       );
 
@@ -4676,9 +4700,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'گ‌.هرتز',
-          one: '{0} گ.هرتز',
-          other: '{0} گ.هرتز',
+          'GHz',
+          one: '{0}GHz',
+          other: '{0}GHz',
         ),
       );
 
@@ -4698,9 +4722,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'مگاهرتز',
-          one: '{0} مگاهرتز',
-          other: '{0} مگاهرتز',
+          'MHz',
+          one: '{0}MHz',
+          other: '{0}MHz',
         ),
       );
 
@@ -4720,9 +4744,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ک.هرتز',
-          one: '{0} ک.هرتز',
-          other: '{0} ک.هرتز',
+          'kHz',
+          one: '{0}kHz',
+          other: '{0}kHz',
         ),
       );
 
@@ -4742,9 +4766,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'هرتز',
-          one: '{0} هرتز',
-          other: '{0} هرتز',
+          'Hz',
+          one: '{0}Hz',
+          other: '{0}Hz',
         ),
       );
 
@@ -4919,8 +4943,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'نقطه',
-          one: '{0} نقطه',
-          other: '{0} نقطه',
+          one: '{0}dot',
+          other: '{0}dot',
         ),
       );
 
@@ -5204,7 +5228,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'اینچ',
+          'in',
           one: '{0}in',
           other: '{0}in',
         ),
@@ -5227,8 +5251,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'پارسک',
-          one: '{0} پارسک',
-          other: '{0} پارسک',
+          one: '{0}pc',
+          other: '{0}pc',
         ),
       );
 
@@ -5248,7 +5272,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'سال نوری',
+          'ly',
           one: '{0}ly',
           other: '{0}ly',
         ),
@@ -5270,9 +5294,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'واحد نجومی',
-          one: '{0}واحد نجومی',
-          other: '{0}واحد نجومی',
+          'au',
+          one: '{0}au',
+          other: '{0}au',
         ),
       );
 
@@ -5293,8 +5317,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'فرلانگ',
-          one: '{0}فرلانگ',
-          other: '{0}فرلانگ',
+          one: '{0}fur',
+          other: '{0}fur',
         ),
       );
 
@@ -5315,8 +5339,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'فاتوم',
-          one: '{0}فاتوم',
-          other: '{0}فاتوم',
+          one: '{0}fth',
+          other: '{0}fth',
         ),
       );
 
@@ -5336,9 +5360,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'مایل دریایی',
-          one: '{0}مایل دریایی',
-          other: '{0}مایل دریایی',
+          'nmi',
+          one: '{0}nmi',
+          other: '{0}nmi',
         ),
       );
 
@@ -5358,7 +5382,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'مایل اسکاندیناوی',
+          'smi',
           one: '{0}‎ smi',
           other: '{0}‎ smi',
         ),
@@ -5380,9 +5404,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'پوینت',
-          one: '{0}پوینت',
-          other: '{0}پوینت',
+          'pts',
+          one: '{0}pt',
+          other: '{0}pt',
         ),
       );
 
@@ -5402,9 +5426,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'شعاع خورشید',
-          one: '{0}شعاع خورشید',
-          other: '{0}شعاع خورشید',
+          'R☉',
+          one: '{0}R☉',
+          other: '{0}R☉',
         ),
       );
 
@@ -5506,15 +5530,15 @@ class UnitsFaAF implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          't',
-          one: '{0} تن متریک',
-          other: '{0} t',
+          'تُن',
+          one: '{0} تُن',
+          other: '{0} تُن',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'تن متریک',
-          one: '{0} تن',
-          other: '{0} تن',
+          'تُن',
+          one: '{0}t',
+          other: '{0}t',
         ),
       );
 
@@ -5557,8 +5581,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'گرم',
-          one: '{0} گرم',
-          other: '{0} گرم',
+          one: '{0}g',
+          other: '{0}g',
         ),
       );
 
@@ -5578,7 +5602,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'میلی‌گرم',
+          'mg',
           one: '{0}mg',
           other: '{0}mg',
         ),
@@ -5594,7 +5618,7 @@ class UnitsFaAF implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'μg',
+          'میکروگرم',
           one: '{0} میکروگرم',
           other: '{0} میکروگرم',
         ),
@@ -5654,19 +5678,19 @@ class UnitsFaAF implements Units {
   Unit get massPound => Unit(
         long: UnitCountPattern(
           _locale,
-          'پوند',
+          'lb',
           one: '{0} پوند',
           other: '{0} پوند',
         ),
         short: UnitCountPattern(
           _locale,
-          'پوند',
+          'lb',
           one: '{0} پوند',
           other: '{0} پوند',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'پوند',
+          'lb',
           one: '{0}lb',
           other: '{0}lb',
         ),
@@ -5688,7 +5712,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'اونس',
+          'oz',
           one: '{0}oz',
           other: '{0}oz',
         ),
@@ -5710,9 +5734,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'اونس تروا',
-          one: '{0}اونس تروا',
-          other: '{0}اونس تروا',
+          'oz t',
+          one: '{0}oz t',
+          other: '{0}oz t',
         ),
       );
 
@@ -5754,7 +5778,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'دالتون',
+          'Da',
           one: '{0}Da',
           other: '{0}Da',
         ),
@@ -5776,7 +5800,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'جرم زمین',
+          'M⊕',
           one: '{0}M⊕',
           other: '{0}M⊕',
         ),
@@ -5798,7 +5822,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'جرم خورشید',
+          'M☉',
           one: '{0}M☉',
           other: '{0}M☉',
         ),
@@ -5820,7 +5844,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'دانه',
+          'gr',
           one: '{0}gr',
           other: '{0}gr',
         ),
@@ -5842,9 +5866,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'گیگاوات',
-          one: '{0} گیگاوات',
-          other: '{0} گیگاوات',
+          'GW',
+          one: '{0}GW',
+          other: '{0}GW',
         ),
       );
 
@@ -5930,9 +5954,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'میلی‌وات',
-          one: '{0} میلی‌وات',
-          other: '{0} میلی‌وات',
+          'mW',
+          one: '{0}mW',
+          other: '{0}mW',
         ),
       );
 
@@ -5952,7 +5976,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'اسب بخار',
+          'hp',
           one: '{0}hp',
           other: '{0}hp',
         ),
@@ -6194,7 +6218,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'کیلومتر/ساعت',
+          'km/hr',
           one: '{0}‎ km/h',
           other: '{0}‎ km/h',
         ),
@@ -6216,7 +6240,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'متر در ثانیه',
+          'm/s',
           one: '{0}m/s',
           other: '{0}m/s',
         ),
@@ -6238,7 +6262,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'مایل در ساعت',
+          'mi/h',
           one: '{0}mph',
           other: '{0}mph',
         ),
@@ -6260,9 +6284,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'گره',
-          one: '{0} گره',
-          other: '{0} گره',
+          'kn',
+          one: '{0}kn',
+          other: '{0}kn',
         ),
       );
 
@@ -6833,8 +6857,8 @@ class UnitsFaAF implements Units {
         narrow: UnitCountPattern(
           _locale,
           'گالن امپریال',
-          one: '{0} گالن امپریال',
-          other: '{0} گالن امپریال',
+          one: '{0}galIm',
+          other: '{0}galIm',
         ),
       );
 
@@ -6942,9 +6966,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'اونس سیال انگلیسی',
-          one: '{0}اونس سیال انگلیسی',
-          other: '{0}اونس سیال انگلیسی',
+          'Imp fl oz',
+          one: '{0}fl oz Im',
+          other: '{0}fl oz Im',
         ),
       );
 
@@ -6960,13 +6984,13 @@ class UnitsFaAF implements Units {
           _locale,
           'قاشق غ.',
           one: '{0} ق.غ.خ',
-          other: '{0} قاشق غ.',
+          other: '{0} ق.غ.خ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'قاشق غ.',
           one: '{0} ق.غ.خ',
-          other: '{0} قاشق غ.',
+          other: '{0} ق.غ.خ',
         ),
       );
 
@@ -6980,13 +7004,13 @@ class UnitsFaAF implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'قاشق چ.',
+          'ق.چای‌خوری',
           one: '{0} ق.چ.',
           other: '{0} ق.چ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'قاشق چ.',
+          'ق.چ.خ',
           one: '{0}ق.چ.',
           other: '{0}ق.چ.',
         ),
@@ -7008,9 +7032,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'بشکه',
-          one: '{0} بشکه',
-          other: '{0} بشکه',
+          'bbl',
+          one: '{0}bbl',
+          other: '{0}bbl',
         ),
       );
 
@@ -7030,7 +7054,7 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'قاشق دسرخوری',
+          'ق.دس.خ',
           one: '{0} ق.دس.خ.',
           other: '{0} ق.دس.خ.',
         ),
@@ -7096,9 +7120,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'درم سیال',
-          one: '{0} درم سیال',
-          other: '{0} درم سیال',
+          'fl.dr.',
+          one: '{0}fl.dr.',
+          other: '{0}fl.dr.',
         ),
       );
 
@@ -7162,9 +7186,9 @@ class UnitsFaAF implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'کوارت انگلیسی',
-          one: '{0}کوارت انگلیسی',
-          other: '{0} کورت انگلیسی',
+          'qt Imp',
+          one: '{0}qt-Imp.',
+          other: '{0}qt-Imp.',
         ),
       );
 
@@ -7187,6 +7211,72 @@ class UnitsFaAF implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'بخش در بیلیون',
+          one: '{0} بخش در بیلیون',
+          other: '{0} بخش در بیلیون',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'بخش در بیلیون',
+          one: '{0} بخش در بیلیون',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'بخش در بیلیون',
+          one: '{0} بخش در بیلیون',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'شب',
+          one: '{0} شب',
+          other: '{0} شب',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'شب',
+          one: '{0} شب',
+          other: '{0} شب',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'شب',
+          one: '{0} شب',
+          other: '{0} شب',
         ),
       );
 }
@@ -7539,35 +7629,35 @@ class DateFieldsFaAF implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} یکشنبهٔ پیش',
-            other: '{0} یکشنبهٔ پیش',
+            one: '{0} یکشنبه قبل',
+            other: '{0} یکشنبه قبل',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} یکشنبهٔ پیش',
-            other: '{0} یکشنبهٔ پیش',
+            one: '{0} یکشنبه قبل',
+            other: '{0} یکشنبه قبل',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} یکشنبهٔ پیش',
-            other: '{0} یکشنبهٔ پیش',
+            one: '{0} یکشنبه قبل',
+            other: '{0} یکشنبه قبل',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} یکشنبهٔ بعد',
-            other: '{0} یکشنبهٔ بعد',
+            one: '{0} یکشنبه بعد',
+            other: '{0} یکشنبه بعد',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} یکشنبهٔ بعد',
-            other: '{0} یکشنبهٔ بعد',
+            one: '{0} یکشنبه بعد',
+            other: '{0} یکشنبه بعد',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} یکشنبهٔ بعد',
-            other: '{0} یکشنبهٔ بعد',
+            one: '{0} یکشنبه بعد',
+            other: '{0} یکشنبه بعد',
           ),
         ),
       );
@@ -7592,35 +7682,35 @@ class DateFieldsFaAF implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} دوشنبهٔ پیش',
-            other: '{0} دوشنبهٔ پیش',
+            one: '{0} دوشنبه قبل',
+            other: '{0} دوشنبه قبل',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} دوشنبهٔ پیش',
-            other: '{0} دوشنبهٔ پیش',
+            one: '{0} دوشنبه قبل',
+            other: '{0} دوشنبه قبل',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} دوشنبهٔ پیش',
-            other: '{0} دوشنبهٔ پیش',
+            one: '{0} دوشنبه قبل',
+            other: '{0} دوشنبه قبل',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} دوشنبهٔ بعد',
-            other: '{0} دوشنبهٔ بعد',
+            one: '{0} دوشنبه بعد',
+            other: '{0} دوشنبه بعد',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} دوشنبهٔ بعد',
-            other: '{0} دوشنبهٔ بعد',
+            one: '{0} دوشنبه بعد',
+            other: '{0} دوشنبه بعد',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} دوشنبهٔ بعد',
-            other: '{0} دوشنبهٔ بعد',
+            one: '{0} دوشنبه بعد',
+            other: '{0} دوشنبه بعد',
           ),
         ),
       );
@@ -7645,35 +7735,35 @@ class DateFieldsFaAF implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} سه‌شنبهٔ پیش',
-            other: '{0} سه‌شنبهٔ پیش',
+            one: '{0} سه‌شنبه قبل',
+            other: '{0} سه‌شنبه قبل',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} سه‌شنبهٔ پیش',
-            other: '{0} سه‌شنبهٔ پیش',
+            one: '{0} سه‌شنبه قبل',
+            other: '{0} سه‌شنبه قبل',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} سه‌شنبهٔ پیش',
-            other: '{0} سه‌شنبهٔ پیش',
+            one: '{0} سه‌شنبه قبل',
+            other: '{0} سه‌شنبه قبل',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} سه‌شنبهٔ بعد',
-            other: '{0} سه‌شنبهٔ بعد',
+            one: '{0} سه‌شنبه بعد',
+            other: '{0} سه‌شنبه بعد',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} سه‌شنبهٔ بعد',
-            other: '{0} سه‌شنبهٔ بعد',
+            one: '{0} سه‌شنبه بعد',
+            other: '{0} سه‌شنبه بعد',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} سه‌شنبهٔ بعد',
-            other: '{0} سه‌شنبهٔ بعد',
+            one: '{0} سه‌شنبه بعد',
+            other: '{0} سه‌شنبه بعد',
           ),
         ),
       );
@@ -7698,35 +7788,35 @@ class DateFieldsFaAF implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} چهارشنبهٔ پیش',
-            other: '{0} چهارشنبهٔ پیش',
+            one: '{0} چهارشنبه قبل',
+            other: '{0} چهارشنبه قبل',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} چهارشنبهٔ پیش',
-            other: '{0} چهارشنبهٔ پیش',
+            one: '{0} چهارشنبه قبل',
+            other: '{0} چهارشنبه قبل',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} چهارشنبهٔ پیش',
-            other: '{0} چهارشنبهٔ پیش',
+            one: '{0} چهارشنبه قبل',
+            other: '{0} چهارشنبه قبل',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} چهارشنبهٔ بعد',
-            other: '{0} چهارشنبهٔ بعد',
+            one: '{0} چهارشنبه بعد',
+            other: '{0} چهارشنبه بعد',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} چهارشنبهٔ بعد',
-            other: '{0} چهارشنبهٔ بعد',
+            one: '{0} چهارشنبه بعد',
+            other: '{0} چهارشنبه بعد',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} چهارشنبهٔ بعد',
-            other: '{0} چهارشنبهٔ بعد',
+            one: '{0} چهارشنبه بعد',
+            other: '{0} چهارشنبه بعد',
           ),
         ),
       );
@@ -7751,35 +7841,35 @@ class DateFieldsFaAF implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} پنجشنبهٔ پیش',
-            other: '{0} پنجشنبهٔ پیش',
+            one: '{0} پنجشنبه قبل',
+            other: '{0} پنجشنبه قبل',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} پنجشنبهٔ پیش',
-            other: '{0} پنجشنبهٔ پیش',
+            one: '{0} پنجشنبه قبل',
+            other: '{0} پنجشنبه قبل',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} پنجشنبهٔ پیش',
-            other: '{0} پنجشنبهٔ پیش',
+            one: '{0} پنجشنبه قبل',
+            other: '{0} پنجشنبه قبل',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} پنجشنبهٔ بعد',
-            other: '{0} پنجشنبهٔ بعد',
+            one: '{0} پنجشنبه بعد',
+            other: '{0} پنجشنبه بعد',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} پنجشنبهٔ بعد',
-            other: '{0} پنجشنبهٔ بعد',
+            one: '{0} پنجشنبه بعد',
+            other: '{0} پنجشنبه بعد',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} پنجشنبهٔ بعد',
-            other: '{0} پنجشنبهٔ بعد',
+            one: '{0} پنجشنبه بعد',
+            other: '{0} پنجشنبه بعد',
           ),
         ),
       );
@@ -7804,35 +7894,35 @@ class DateFieldsFaAF implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} جمعهٔ پیش',
-            other: '{0} جمعهٔ پیش',
+            one: '{0} جمعه قبل',
+            other: '{0} جمعه قبل',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} جمعهٔ پیش',
-            other: '{0} جمعهٔ پیش',
+            one: '{0} جمعه قبل',
+            other: '{0} جمعه قبل',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} جمعهٔ پیش',
-            other: '{0} جمعهٔ پیش',
+            one: '{0} جمعه قبل',
+            other: '{0} جمعه قبل',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} جمعهٔ بعد',
-            other: '{0} جمعهٔ بعد',
+            one: '{0} جمعه بعد',
+            other: '{0} جمعه بعد',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} جمعهٔ بعد',
-            other: '{0} جمعهٔ بعد',
+            one: '{0} جمعه بعد',
+            other: '{0} جمعه بعد',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} جمعهٔ بعد',
-            other: '{0} جمعهٔ بعد',
+            one: '{0} جمعه بعد',
+            other: '{0} جمعه بعد',
           ),
         ),
       );
@@ -7857,35 +7947,35 @@ class DateFieldsFaAF implements DateFields {
         past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} شنبهٔ پیش',
-            other: '{0} شنبهٔ پیش',
+            one: '{0} شنبه قبل',
+            other: '{0} شنبه قبل',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} شنبهٔ پیش',
-            other: '{0} شنبهٔ پیش',
+            one: '{0} شنبه قبل',
+            other: '{0} شنبه قبل',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} شنبهٔ پیش',
-            other: '{0} شنبهٔ پیش',
+            one: '{0} شنبه قبل',
+            other: '{0} شنبه قبل',
           ),
         ),
         future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
-            one: '{0} شنبهٔ بعد',
-            other: '{0} شنبهٔ بعد',
+            one: '{0} شنبه بعد',
+            other: '{0} شنبه بعد',
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} شنبهٔ بعد',
-            other: '{0} شنبهٔ بعد',
+            one: '{0} شنبه بعد',
+            other: '{0} شنبه بعد',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} شنبهٔ بعد',
-            other: '{0} شنبهٔ بعد',
+            one: '{0} شنبه بعد',
+            other: '{0} شنبه بعد',
           ),
         ),
       );
@@ -9652,7 +9742,7 @@ class TimeZonesFaAF extends TimeZones {
       exemplarCity: 'سنتر، داکوتای شمالی',
     ),
     'America/Ojinaga': TimeZoneNames(
-      exemplarCity: 'اخیناگا',
+      exemplarCity: 'اوجیناگا',
     ),
     'America/Panama': TimeZoneNames(
       exemplarCity: 'پاناما',
@@ -10179,9 +10269,6 @@ class TimeZonesFaAF extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'چیتا',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'چویبالسان',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'کلمبو',
     ),
@@ -10450,7 +10537,7 @@ class TimeZonesFaAF extends TimeZones {
       exemplarCity: 'بوگنویل',
     ),
     'Pacific/Chatham': TimeZoneNames(
-      exemplarCity: 'چتم',
+      exemplarCity: 'چت‌هام',
     ),
     'Pacific/Easter': TimeZoneNames(
       exemplarCity: 'ایستر',
@@ -10763,25 +10850,25 @@ class TimeZonesFaAF extends TimeZones {
     'Australia_CentralWestern': MetaZone(
       code: 'Australia_CentralWestern',
       long: TimeZoneName(
-        generic: 'وقت مرکز-غرب استرالیا',
-        standard: 'وقت عادی مرکز-غرب استرالیا',
-        daylight: 'وقت تابستانی مرکز-غرب استرالیا',
+        generic: 'وقت مرکز استرالیای غربی',
+        standard: 'وقت عادی مرکز استرالیای غربی',
+        daylight: 'وقت تابستانی مرکز استرالیای غربی',
       ),
     ),
     'Australia_Eastern': MetaZone(
       code: 'Australia_Eastern',
       long: TimeZoneName(
-        generic: 'وقت شرق استرالیا',
-        standard: 'وقت عادی شرق استرالیا',
-        daylight: 'وقت تابستانی شرق استرالیا',
+        generic: 'وقت استرالیای شرقی',
+        standard: 'وقت عادی استرالیای شرقی',
+        daylight: 'وقت تابستانی استرالیای شرقی',
       ),
     ),
     'Australia_Western': MetaZone(
       code: 'Australia_Western',
       long: TimeZoneName(
-        generic: 'وقت غرب استرالیا',
-        standard: 'وقت عادی غرب استرالیا',
-        daylight: 'وقت تابستانی غرب استرالیا',
+        generic: 'وقت استرالیای غربی',
+        standard: 'وقت عادی استرالیای غربی',
+        daylight: 'وقت تابستانی استرالیای غربی',
       ),
     ),
     'Azerbaijan': MetaZone(
@@ -10870,14 +10957,6 @@ class TimeZonesFaAF extends TimeZones {
         generic: 'وقت چین',
         standard: 'وقت عادی چین',
         daylight: 'وقت تابستانی چین',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'وقت چویبالسان',
-        standard: 'وقت عادی چویبالسان',
-        daylight: 'وقت تابستانی چویبالسان',
       ),
     ),
     'Christmas': MetaZone(
@@ -11170,6 +11249,12 @@ class TimeZonesFaAF extends TimeZones {
         generic: 'وقت پتروپاولوسک‐کامچاتسکی',
         standard: 'وقت عادی پتروپاولوسک‐کامچاتسکی',
         daylight: 'وقت تابستانی پتروپاولوسک‐کامچاتسکی',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'وقت قزاقستان',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

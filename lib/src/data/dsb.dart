@@ -211,6 +211,10 @@ class LanguagesDsb extends Languages {
       'bla',
       'siksikášćina',
     ),
+    'blo': Language(
+      'blo',
+      'aniišćina',
+    ),
     'bm': Language(
       'bm',
       'bambara',
@@ -695,6 +699,10 @@ class LanguagesDsb extends Languages {
       'id',
       'indonešćina',
     ),
+    'ie': Language(
+      'ie',
+      'interlinguešćina',
+    ),
     'ig': Language(
       'ig',
       'igbo',
@@ -911,6 +919,10 @@ class LanguagesDsb extends Languages {
       'kwk',
       'kwakʼwalašćina',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvišćina',
+    ),
     'ky': Language(
       'ky',
       'kirgišćina',
@@ -943,6 +955,10 @@ class LanguagesDsb extends Languages {
       'li',
       'limburšćina',
     ),
+    'lij': Language(
+      'lij',
+      'liguriańšćina',
+    ),
     'lil': Language(
       'lil',
       'lillooetšćina',
@@ -950,6 +966,10 @@ class LanguagesDsb extends Languages {
     'lkt': Language(
       'lkt',
       'lakotšćina',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardišćina',
     ),
     'ln': Language(
       'ln',
@@ -990,10 +1010,6 @@ class LanguagesDsb extends Languages {
     'lun': Language(
       'lun',
       'lundašćina',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1567,6 +1583,10 @@ class LanguagesDsb extends Languages {
       'syr',
       'syriacšćina',
     ),
+    'szl': Language(
+      'szl',
+      'šlazyńšćina',
+    ),
     'ta': Language(
       'ta',
       'tamilšćina',
@@ -1723,17 +1743,21 @@ class LanguagesDsb extends Languages {
       'uz',
       'usbekšćina',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'vendašćina',
     ),
+    'vec': Language(
+      'vec',
+      'venetišćina',
+    ),
     'vi': Language(
       'vi',
       'vietnamšćina',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwašćina',
     ),
     'vo': Language(
       'vo',
@@ -1774,6 +1798,10 @@ class LanguagesDsb extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangrišćina',
     ),
     'xog': Language(
       'xog',
@@ -7676,6 +7704,90 @@ class UnitsDsb implements Units {
           other: '{0}gas-equiv',
         ),
       );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'spěšnosć swětła',
+          one: '{0} spěšnosć swětła',
+          two: '{0} spěšnosći swětła',
+          few: '{0} spěšnosći swětła',
+          other: '{0} spěšnosćow swětła',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'spěšnosć sw.',
+          one: '{0} spěšnosć sw.',
+          two: '{0} spěšnosći sw.',
+          few: '{0} spěšnosći sw.',
+          other: '{0} spěšnosćow sw.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'c',
+          one: '{0} c',
+          two: '{0} c',
+          few: '{0} c',
+          other: '{0} c',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'miliardnina',
+          one: '{0} miliardnina',
+          two: '{0} miliardninje',
+          few: '{0} miliardniny',
+          other: '{0} miliardninow',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nano',
+          one: '{0} nano',
+          two: '{0} nano',
+          few: '{0} nano',
+          other: '{0} nano',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'n',
+          one: '{0} n',
+          two: '{0} n',
+          few: '{0} n',
+          other: '{0} n',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'pśenocowanja',
+          one: '{0} pśenocowanje',
+          two: '{0} pśenocowani',
+          few: '{0} pśenocowanja',
+          other: '{0} pśenocowanjow',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nocy',
+          one: '{0} noc',
+          two: '{0} nocy',
+          few: '{0} nocy',
+          other: '{0} nocow',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nocy',
+          one: '{0} noc',
+          two: '{0} nocy',
+          few: '{0} nocy',
+          other: '{0} nocow',
+        ),
+      );
 }
 
 class DateFieldsDsb implements DateFields {
@@ -10347,6 +10459,9 @@ class TimeZonesDsb extends TimeZones {
     'Pacific/Easter': TimeZoneNames(
       exemplarCity: 'Jatšowne kupy',
     ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Enderbury',
+    ),
     'Pacific/Fiji': TimeZoneNames(
       exemplarCity: 'Fidži',
     ),
@@ -10623,14 +10738,6 @@ class TimeZonesDsb extends TimeZones {
         generic: 'Chinski cas',
         standard: 'Chinski standardny cas',
         daylight: 'Chinski lěśojski cas',
-      ),
-    ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Choibalsański cas',
-        standard: 'Choibalsański standardny cas',
-        daylight: 'Choibalsański lěśojski cas',
       ),
     ),
     'Christmas': MetaZone(
@@ -10924,6 +11031,12 @@ class TimeZonesDsb extends TimeZones {
         generic: 'Japański cas',
         standard: 'Japański standardny cas',
         daylight: 'Japański lěśojski cas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazachiski cas',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(

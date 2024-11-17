@@ -267,6 +267,10 @@ class LanguagesLv extends Languages {
       'bla',
       'siksiku',
     ),
+    'blo': Language(
+      'blo',
+      'anī',
+    ),
     'bm': Language(
       'bm',
       'bambaru',
@@ -1118,6 +1122,10 @@ class LanguagesLv extends Languages {
       'kwk',
       'kvakvala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgīzu',
@@ -1158,6 +1166,10 @@ class LanguagesLv extends Languages {
       'li',
       'limburgiešu',
     ),
+    'lij': Language(
+      'lij',
+      'ligūriešu',
+    ),
     'lil': Language(
       'lil',
       'lilluetu',
@@ -1165,6 +1177,10 @@ class LanguagesLv extends Languages {
     'lkt': Language(
       'lkt',
       'lakotu',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardiešu',
     ),
     'ln': Language(
       'ln',
@@ -1213,10 +1229,6 @@ class LanguagesLv extends Languages {
     'lun': Language(
       'lun',
       'lundu',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1292,7 +1304,7 @@ class LanguagesLv extends Languages {
     ),
     'mgh': Language(
       'mgh',
-      'makua',
+      'makua-mīto',
     ),
     'mgo': Language(
       'mgo',
@@ -1930,6 +1942,10 @@ class LanguagesLv extends Languages {
       'syr',
       'sīriešu',
     ),
+    'szl': Language(
+      'szl',
+      'silēziešu',
+    ),
     'ta': Language(
       'ta',
       'tamilu',
@@ -2122,9 +2138,17 @@ class LanguagesLv extends Languages {
       've',
       'vendu',
     ),
+    'vec': Language(
+      'vec',
+      'venēciešu',
+    ),
     'vi': Language(
       'vi',
       'vjetnamiešu',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2177,6 +2201,10 @@ class LanguagesLv extends Languages {
     'xh': Language(
       'xh',
       'khosu',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -2935,7 +2963,7 @@ class UnitsLv implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'Brīvās krišanas paātrinājums:',
+          'smagumspēks',
           zero: '{0}G',
           one: '{0}G',
           other: '{0}G',
@@ -4622,21 +4650,21 @@ class UnitsLv implements Units {
         long: UnitCountPattern(
           _locale,
           'ņūtoni',
-          zero: '{0} N',
+          zero: '{0} ņūtonu',
           one: '{0} ņūtons',
           other: '{0} ņūtoni',
         ),
         short: UnitCountPattern(
           _locale,
           'ņūtons',
-          zero: '{0} N',
+          zero: '{0} ņūtonu',
           one: '{0} ņūtons',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ņūtons',
-          zero: '{0} N',
+          zero: '{0} ņūtonu',
           one: '{0} ņūtons',
           other: '{0} N',
         ),
@@ -4794,21 +4822,21 @@ class UnitsLv implements Units {
         long: UnitCountPattern(
           _locale,
           'pikseļi',
-          zero: '{0} px',
+          zero: '{0} pikseļu',
           one: '{0} pikselis',
           other: '{0} pikseļi',
         ),
         short: UnitCountPattern(
           _locale,
           'pikseļi',
-          zero: '{0} px',
+          zero: '{0} pikseļu',
           one: '{0} pikselis',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pikseļi',
-          zero: '{0} px',
+          zero: '{0} pikseļu',
           one: '{0} pikselis',
           other: '{0} px',
         ),
@@ -4819,21 +4847,21 @@ class UnitsLv implements Units {
         long: UnitCountPattern(
           _locale,
           'megapikseļi',
-          zero: '{0} MP',
+          zero: '{0} megapikseļu',
           one: '{0} megapikselis',
           other: '{0} megapikseļi',
         ),
         short: UnitCountPattern(
           _locale,
           'megapikseļi',
-          zero: '{0} MP',
+          zero: '{0} megapikseļu',
           one: '{0} megapikselis',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
-          zero: '{0} MP',
+          zero: '{0} megapikseļu',
           one: '{0} megapikselis',
           other: '{0} MP',
         ),
@@ -4844,21 +4872,21 @@ class UnitsLv implements Units {
         long: UnitCountPattern(
           _locale,
           'pikseļi centimetrā',
-          zero: '{0} ppcm',
+          zero: '{0} pikseļu centimetrā',
           one: '{0} pikselis centimetrā',
           other: '{0} pikseļi centimetrā',
         ),
         short: UnitCountPattern(
           _locale,
           'ppcm',
-          zero: '{0} ppcm',
+          zero: '{0} pikseļu centimetrā',
           one: '{0} pikselis centimetrā',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
-          zero: '{0} ppcm',
+          zero: '{0} pikseļu centimetrā',
           one: '{0} pikselis centimetrā',
           other: '{0} ppcm',
         ),
@@ -5108,8 +5136,8 @@ class UnitsLv implements Units {
         narrow: UnitCountPattern(
           _locale,
           'mm',
-          zero: '{0} mm',
-          one: '{0}mm',
+          zero: '{0} milimetru',
+          one: '{0} milimetrs',
           other: '{0} mm',
         ),
       );
@@ -6344,21 +6372,21 @@ class UnitsLv implements Units {
         long: UnitCountPattern(
           _locale,
           'kilopaskāli',
-          zero: '{0} kPa',
+          zero: '{0} kilopaskālu',
           one: '{0} kilopaskāls',
           other: '{0} kilopaskāli',
         ),
         short: UnitCountPattern(
           _locale,
           'kPa',
-          zero: '{0} kPa',
+          zero: '{0} kilopaskālu',
           one: '{0} kilopaskāls',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
-          zero: '{0} kPa',
+          zero: '{0} kilopaskālu',
           one: '{0} kilopaskāls',
           other: '{0} kPa',
         ),
@@ -7533,6 +7561,81 @@ class UnitsLv implements Units {
           'gas-equiv',
           one: '{0}gas-equiv',
           other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'gaisma',
+          zero: '{0} gaismas',
+          one: '{0} gaisma',
+          other: '{0} gaismas',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gaisma',
+          zero: '{0} gaismu',
+          one: '{0} gaisma',
+          other: '{0} gaismas',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gaisma',
+          zero: '{0} gaismu',
+          one: '{0} gaisma',
+          other: '{0} gaismas',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'miljarddaļas',
+          zero: '{0} miljarddaļu',
+          one: '{0} miljarddaļa',
+          other: '{0} miljarddaļas',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'miljarddaļas',
+          zero: '{0} miljarddaļu',
+          one: '{0} miljarddaļa',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'miljarddaļas',
+          zero: '{0} miljarddaļu',
+          one: '{0} miljarddaļa',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'naktis',
+          zero: '{0} nakšu',
+          one: '{0} nakts',
+          other: '{0} naktis',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'naktis',
+          zero: '{0} nakšu',
+          one: '{0} nakts',
+          other: '{0} naktis',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'naktis',
+          zero: '{0} nakšu',
+          one: '{0} nakts',
+          other: '{0} naktis',
         ),
       );
 }
@@ -10506,9 +10609,6 @@ class TimeZonesLv extends TimeZones {
     'Asia/Chita': TimeZoneNames(
       exemplarCity: 'Čita',
     ),
-    'Asia/Choibalsan': TimeZoneNames(
-      exemplarCity: 'Čoibalsana',
-    ),
     'Asia/Colombo': TimeZoneNames(
       exemplarCity: 'Kolombo',
     ),
@@ -11149,14 +11249,6 @@ class TimeZonesLv extends TimeZones {
         daylight: 'Ķīnas vasaras laiks',
       ),
     ),
-    'Choibalsan': MetaZone(
-      code: 'Choibalsan',
-      long: TimeZoneName(
-        generic: 'Čoibalsanas laiks',
-        standard: 'Čoibalsanas ziemas laiks',
-        daylight: 'Čoibalsanas vasaras laiks',
-      ),
-    ),
     'Christmas': MetaZone(
       code: 'Christmas',
       long: TimeZoneName(
@@ -11456,6 +11548,12 @@ class TimeZonesLv extends TimeZones {
         generic: 'Petropavlovskas-Kamčatskas laiks',
         standard: 'Petropavlovskas-Kamčatskas ziemas laiks',
         daylight: 'Petropavlovskas-Kamčatskas vasaras laiks',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Kazahstānas laiks',
       ),
     ),
     'Kazakhstan_Eastern': MetaZone(
