@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+
 import '../config.dart';
 
 ({DateTime date, String cldr, String unicode}) _readCLDRVersions() {
@@ -19,16 +20,32 @@ String _readTZDBVersions() {
   return version;
 }
 
-({DateTime date, String cldr, String cldrVariant, String unicode, String tzdb})
-    getDataVersions() {
+String _readICUVersions() {
+  var file = File('tool/data/tzdb/icuver.txt');
+  var content = file.readAsStringSync();
+  var version =
+      RegExp(r'DataVersion{"([0-9.]+)"}').firstMatch(content)?.group(1);
+  return version ?? '?';
+}
+
+({
+  String cldr,
+  String cldrVariant,
+  DateTime date,
+  String icu,
+  String tzdb,
+  String unicode
+}) getDataVersions() {
   var cldrVersion = _readCLDRVersions();
   var tzdbVersion = _readTZDBVersions();
+  var icuVersion = _readICUVersions();
 
   return (
     date: cldrVersion.date,
     cldr: cldrVersion.cldr,
     cldrVariant: coverageLevel.name,
     unicode: cldrVersion.unicode,
-    tzdb: tzdbVersion
+    tzdb: tzdbVersion,
+    icu: icuVersion
   );
 }

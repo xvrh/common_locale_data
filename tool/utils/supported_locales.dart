@@ -15,6 +15,48 @@ enum CoverageLevel {
   final int value;
 }
 
+class Locales {
+  /// support all possible locales
+  static const Set<String> all = {};
+
+  /// support the main locales (locales without a - in the name)
+  static const Set<String> main = {'main'};
+
+  /// support small set for testing purposes
+  static const Set<String> test = {'main'};
+
+  /// for compatibility with original languages of this package
+  static const Set<String> compatibility = {
+    'ar',
+    'bg',
+    'ca',
+    'cs',
+    'da',
+    'de',
+    'el',
+    'en',
+    'es',
+    'et',
+    'fi',
+    'fr',
+    'hr',
+    'id',
+    'it',
+    'ja',
+    'nl',
+    'pl',
+    'pt',
+    'ro',
+    'ru',
+    'sk',
+    'sl',
+    'sr',
+    'sv',
+    'uk',
+    'zh'
+  };
+}
+
 Set<String> getSupportedLocales() {
   var locales = getLocales();
   var mainLocales = locales.whereNot((str) => str.contains('-')).toSet();

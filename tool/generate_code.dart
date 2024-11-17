@@ -158,6 +158,9 @@ abstract class CommonLocaleData {
   /// Version of the IANA Timezone database.
   static const String tzdbVersion=${escapeDartString(versions.tzdb)};
 
+  /// Version of the ICU data.
+  static const String icuVersion=${escapeDartString(versions.icu)};
+
   /// Localized date/time-related fields.
   DateFields get date;
 

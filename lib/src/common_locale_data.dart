@@ -13,7 +13,7 @@ abstract class CommonLocaleData {
 
   /// Date when the CLDR data was downloaded.
   static final DateTime dataDownloadDate =
-      DateTime.parse('2024-08-31T13:48:40.000Z');
+      DateTime.parse('2024-11-17T12:24:49.000Z');
 
   /// Version of the CLDR data.
   static const String cldrVersion = '45.0.0';
@@ -26,6 +26,9 @@ abstract class CommonLocaleData {
 
   /// Version of the IANA Timezone database.
   static const String tzdbVersion = '2024a';
+
+  /// Version of the ICU data.
+  static const String icuVersion = '76.1.0.0';
 
   /// Localized date/time-related fields.
   DateFields get date;

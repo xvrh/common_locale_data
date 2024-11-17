@@ -1,25 +1,18 @@
 import 'utils/supported_locales.dart';
 
-/// minimum CLDR coverage level to include (basic will not contain all required info; moderate and modern do
+/// Minimum CLDR coverage level to include (basic will not contain all required info; moderate and modern do
 const CoverageLevel coverageLevel = CoverageLevel.modern;
 
-/// cldr json version to download: 'main' for latest or 'refs/tags/46.0.0' for specific version;
-const String cldrJsonVersion = 'refs/tags/45.0.0';
+/// Set of the supported locales
+/// Choose from [Locales] or set a custom set, e.g. "{'en', 'fr'}"
+const Set<String> supportedLocales = Locales.all;
 
-/// cldr version to download: 'main' for latest or 'refs/tags/release-46' for specific version;
-const String cldrVersion = 'refs/tags/release-45';
+/// CLDR version to download: 'refs/tags/46.0.0' for specific version, 'main' for the development branch
+const String cldrJsonVersion = 'refs/tags/46.0.0';
 
-/// icu version to download: 'main' for latest or 'refs/tags/release-76-1' for specific version;
+/// CLDR JSON version to download: 'refs/tags/release-45' for specific version, 'main' for the development branch
+const String cldrVersion = 'refs/tags/release-46';
+
+/// ICU version to download: 'refs/tags/release-76-1' for specific version, 'main' for the development branch
+
 const String icuVersion = 'refs/tags/release-76-1';
-
-// support all possible locales
-const Set<String> supportedLocales = {};
-
-// support the main locales (locales without a - in the name)
-// const Set<String> supportedLocales = {'main'};
-
-// only support English, French and German
-// const Set<String> supportedLocales = {'ar', 'ar-EG', 'en', 'en-GB', 'de', 'fr'};
-
-// for compatibility with original languages of this package
-// const Set<String> supportedLocales = {'ar', 'bg', 'ca', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'hr', 'id', 'it', 'ja', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'uk', 'zh'};

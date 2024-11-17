@@ -63,6 +63,12 @@ void main() async {
       client,
       'icuregions.txt');
 
+  await download(
+      tzdbDirectory,
+      'https://raw.githubusercontent.com/unicode-org/icu/$icuVersion/icu4c/source/data/misc/icuver.txt',
+      client,
+      'icuver.txt');
+
   for (var set in miscSets.keys) {
     await Future.wait([
       for (var file in miscSets[set]!)
