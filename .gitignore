@@ -16,5 +16,3 @@ _*
 !.github
 !.pubignore
 
-# Downloaded CLDR data
-/tool/data/
