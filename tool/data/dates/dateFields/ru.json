@@ -2,9 +2,6 @@
   "main": {
     "ru": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "ru"
       },
       "dates": {

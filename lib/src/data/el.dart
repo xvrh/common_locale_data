@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'el';
 
-/// Translations in Greek of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataEl implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataEl();
@@ -22,6 +20,14 @@ class CommonLocaleDataEl implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsEl._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsEl._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsEl._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataEl implements CommonLocaleData {
   static final _territories = TerritoriesEl._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesEl._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesEl extends Languages {
@@ -227,7 +237,7 @@ class LanguagesEl extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'Χαργιάνβι',
     ),
     'bgn': Language(
       'bgn',
@@ -256,6 +266,10 @@ class LanguagesEl extends Languages {
     'bla': Language(
       'bla',
       'Σικσίκα',
+    ),
+    'blo': Language(
+      'blo',
+      'Ανίι',
     ),
     'bm': Language(
       'bm',
@@ -825,11 +839,6 @@ class LanguagesEl extends Languages {
       'hi',
       'Χίντι',
     ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'Χίντι (Λατινικό)',
-      variant: 'Hinglish',
-    ),
     'hil': Language(
       'hil',
       'Χιλιγκαϊνόν',
@@ -1150,6 +1159,10 @@ class LanguagesEl extends Languages {
       'kwk',
       'Κουακουάλα',
     ),
+    'kxv': Language(
+      'kxv',
+      'Κούβι',
+    ),
     'ky': Language(
       'ky',
       'Κιργιζικά',
@@ -1192,7 +1205,7 @@ class LanguagesEl extends Languages {
     ),
     'lij': Language(
       'lij',
-      'lij',
+      'Λιγουριανά',
     ),
     'lil': Language(
       'lil',
@@ -1201,6 +1214,10 @@ class LanguagesEl extends Languages {
     'lkt': Language(
       'lkt',
       'Λακότα',
+    ),
+    'lmo': Language(
+      'lmo',
+      'Λομβαρδικά',
     ),
     'ln': Language(
       'ln',
@@ -1974,6 +1991,10 @@ class LanguagesEl extends Languages {
       'syr',
       'Συριακά',
     ),
+    'szl': Language(
+      'szl',
+      'Σιλεσικά',
+    ),
     'ta': Language(
       'ta',
       'Ταμιλικά',
@@ -2169,11 +2190,15 @@ class LanguagesEl extends Languages {
     ),
     'vec': Language(
       'vec',
-      'vec',
+      'Βενετικά',
     ),
     'vi': Language(
       'vi',
       'Βιετναμικά',
+    ),
+    'vmw': Language(
+      'vmw',
+      'Μακούα',
     ),
     'vo': Language(
       'vo',
@@ -2226,6 +2251,10 @@ class LanguagesEl extends Languages {
     'xh': Language(
       'xh',
       'Κόσα',
+    ),
+    'xnr': Language(
+      'xnr',
+      'Κάνγκρι',
     ),
     'xog': Language(
       'xog',
@@ -2316,6 +2345,701 @@ class LanguagesEl extends Languages {
   }, (key) => key.toLowerCase());
 }
 
+class ScriptsEl extends Scripts {
+  ScriptsEl._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'Άντλαμ',
+    ),
+    'Arab': Script(
+      'Arab',
+      'Αραβικό',
+      variant: 'Περσικό-Αραβικό',
+    ),
+    'Aran': Script(
+      'Aran',
+      'Νασταλίκ',
+    ),
+    'Armi': Script(
+      'Armi',
+      'Αυτοκρατορικό Αραμαϊκό',
+    ),
+    'Armn': Script(
+      'Armn',
+      'Αρμενικό',
+    ),
+    'Avst': Script(
+      'Avst',
+      'Αβεστάν',
+    ),
+    'Bali': Script(
+      'Bali',
+      'Μπαλινίζ',
+    ),
+    'Batk': Script(
+      'Batk',
+      'Μπατάκ',
+    ),
+    'Beng': Script(
+      'Beng',
+      'Μπενγκάλι',
+    ),
+    'Blis': Script(
+      'Blis',
+      'Σύμβολα Bliss',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'Μποπομόφο',
+    ),
+    'Brah': Script(
+      'Brah',
+      'Μπραχμί',
+    ),
+    'Brai': Script(
+      'Brai',
+      'Μπράιγ',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'Μπούγκις',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'Μπουχίντ',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'Τσάκμα',
+    ),
+    'Cans': Script(
+      'Cans',
+      'Ενοποιημένοι Καναδεζικοί Συλλαβισμοί Ιθαγενών',
+    ),
+    'Cari': Script(
+      'Cari',
+      'Καριάν',
+    ),
+    'Cham': Script(
+      'Cham',
+      'Τσαμ',
+    ),
+    'Cher': Script(
+      'Cher',
+      'Τσερόκι',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'Σερθ',
+    ),
+    'Copt': Script(
+      'Copt',
+      'Κοπτικό',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'Κυπριακό',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'Κυριλλικό',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'Παλαιό Εκκλησιαστικό Σλαβικό Κυριλλικό',
+    ),
+    'Deva': Script(
+      'Deva',
+      'Ντεβαναγκάρι',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'Ντεσερέ',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'Λαϊκό Αιγυπτιακό',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'Ιερατικό Αιγυπτιακό',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'Αιγυπτιακά Ιερογλυφικά',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'Αιθιοπικό',
+    ),
+    'Geok': Script(
+      'Geok',
+      'Γεωργιανό Κχουτσούρι',
+    ),
+    'Geor': Script(
+      'Geor',
+      'Γεωργιανό',
+    ),
+    'Glag': Script(
+      'Glag',
+      'Γκλαγκολιτικό',
+    ),
+    'Goth': Script(
+      'Goth',
+      'Γοτθικό',
+    ),
+    'Grek': Script(
+      'Grek',
+      'Ελληνικό',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'Γκουγιαράτι',
+    ),
+    'Guru': Script(
+      'Guru',
+      'Γκουρμουκχί',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'Χανμπ',
+    ),
+    'Hang': Script(
+      'Hang',
+      'Χανγκούλ',
+    ),
+    'Hani': Script(
+      'Hani',
+      'Χαν',
+    ),
+    'Hano': Script(
+      'Hano',
+      'Χανούνου',
+    ),
+    'Hans': Script(
+      'Hans',
+      'Απλοποιημένο',
+      standAlone: 'Απλοποιημένο Χαν',
+    ),
+    'Hant': Script(
+      'Hant',
+      'Παραδοσιακό',
+      standAlone: 'Παραδοσιακό Χαν',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'Εβραϊκό',
+    ),
+    'Hira': Script(
+      'Hira',
+      'Χιραγκάνα',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'Παχάχ Χμονγκ',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'Κατακάνα ή Χιραγκάνα',
+    ),
+    'Hung': Script(
+      'Hung',
+      'Παλαιό Ουγγρικό',
+    ),
+    'Inds': Script(
+      'Inds',
+      'Ίνδους',
+    ),
+    'Ital': Script(
+      'Ital',
+      'Παλαιό Ιταλικό',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'Τζάμο',
+    ),
+    'Java': Script(
+      'Java',
+      'Ιαβανεζικό',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'Ιαπωνικό',
+    ),
+    'Kali': Script(
+      'Kali',
+      'Καγιάχ Λι',
+    ),
+    'Kana': Script(
+      'Kana',
+      'Κατακάνα',
+    ),
+    'Khar': Script(
+      'Khar',
+      'Καρόσθι',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'Χμερ',
+    ),
+    'Knda': Script(
+      'Knda',
+      'Κανάντα',
+    ),
+    'Kore': Script(
+      'Kore',
+      'Κορεατικό',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'Καϊθί',
+    ),
+    'Lana': Script(
+      'Lana',
+      'Λάννα',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'Λαοτινό',
+    ),
+    'Latf': Script(
+      'Latf',
+      'Φράκτουρ Λατινικό',
+    ),
+    'Latg': Script(
+      'Latg',
+      'Γαελικό Λατινικό',
+    ),
+    'Latn': Script(
+      'Latn',
+      'Λατινικό',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'Λέπτσα',
+    ),
+    'Limb': Script(
+      'Limb',
+      'Λιμπού',
+    ),
+    'Lina': Script(
+      'Lina',
+      'Γραμμικό Α',
+    ),
+    'Linb': Script(
+      'Linb',
+      'Γραμμικό Β',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'Λυκιανικό',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'Λυδιανικό',
+    ),
+    'Mand': Script(
+      'Mand',
+      'Μανδαϊκό',
+    ),
+    'Mani': Script(
+      'Mani',
+      'Μανιχαϊκό',
+    ),
+    'Maya': Script(
+      'Maya',
+      'Ιερογλυφικά Μάγια',
+    ),
+    'Mero': Script(
+      'Mero',
+      'Μεροϊτικό',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'Μαλαγιάλαμ',
+    ),
+    'Mong': Script(
+      'Mong',
+      'Μογγολικό',
+    ),
+    'Moon': Script(
+      'Moon',
+      'Μουν',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'Μεϊτέι Μάγεκ',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'Μιανμάρ',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'Ν’Κο',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'Όγκχαμ',
+    ),
+    'Olck': Script(
+      'Olck',
+      'Ολ Τσίκι',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'Όρκχον',
+    ),
+    'Orya': Script(
+      'Orya',
+      'Όντια',
+    ),
+    'Osma': Script(
+      'Osma',
+      'Οσμάνγια',
+    ),
+    'Perm': Script(
+      'Perm',
+      'Παλαιό Περμικό',
+    ),
+    'Phag': Script(
+      'Phag',
+      'Παγκς-πα',
+    ),
+    'Phli': Script(
+      'Phli',
+      'Επιγραφικό Παχλάβι',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'Ψάλτερ Παχλάβι',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'Μπουκ Παχλαβί',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'Φοινικικό',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Φωνητικό Πόλαρντ',
+    ),
+    'Prti': Script(
+      'Prti',
+      'Επιγραφικό Παρθιάν',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'Ρετζάνγκ',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'Χανίφι',
+    ),
+    'Roro': Script(
+      'Roro',
+      'Ρονγκορόνγκο',
+    ),
+    'Runr': Script(
+      'Runr',
+      'Ρουνίκ',
+    ),
+    'Samr': Script(
+      'Samr',
+      'Σαμαριτικό',
+    ),
+    'Sara': Script(
+      'Sara',
+      'Σαράθι',
+    ),
+    'Saur': Script(
+      'Saur',
+      'Σαουράστρα',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'Νοηματική γραφή',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'Σαβιανό',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'Σινχάλα',
+    ),
+    'Sund': Script(
+      'Sund',
+      'Σουνδανικό',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'Συλότι Νάγκρι',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'Συριακό',
+    ),
+    'Syre': Script(
+      'Syre',
+      'Εστραντζέλο Συριακό',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'Δυτικό Συριακό',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'Ανατολικό Συριακό',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'Ταγκμάνγουα',
+    ),
+    'Tale': Script(
+      'Tale',
+      'Τάι Λε',
+    ),
+    'Talu': Script(
+      'Talu',
+      'Νέο Τάι Λούε',
+    ),
+    'Taml': Script(
+      'Taml',
+      'Ταμίλ',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'Τάι Βιέτ',
+    ),
+    'Telu': Script(
+      'Telu',
+      'Τελούγκου',
+    ),
+    'Teng': Script(
+      'Teng',
+      'Τεγνγουάρ',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'Τιφινάγκ',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'Ταγκαλόγκ',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'Θαανά',
+    ),
+    'Thai': Script(
+      'Thai',
+      'Ταϊλανδικό',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'Θιβετιανό',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'Ουγκαριτικό',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'Βάι',
+    ),
+    'Visp': Script(
+      'Visp',
+      'Ορατή ομιλία',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'Παλαιό Περσικό',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'Σούμερο-Ακάντιαν Κουνεϊφόρμ',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'Γι',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'Κληρονομημένο',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'Μαθηματική σημειογραφία',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'Emoji',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'Σύμβολα',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'Άγραφο',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'Κοινό',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'Άγνωστη γραφή',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsEl extends Variants {
+  VariantsEl._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'Παραδοσιακή γερμανική ορθογραφία',
+    ),
+    '1994': Variant(
+      '1994',
+      'Τυποποιημένη ορθογραφία Ρεσιάν',
+    ),
+    '1996': Variant(
+      '1996',
+      'Γερμανική ορθογραφία του 1996',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'Νεότερα Μέσα Γαλλικά του 1606',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      'Πρώιμα Σύγχρονα Γαλλικά',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      'Ακαδημαϊκά',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'Ανατολικά Αρμενικά',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'Δυτικά Αρμενικά',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'Ενοποιημένη τουρκική λατινική αλφάβητος',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'Διάλεκτος Σαν Τζιόρτζιο/Βίλα',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'Μπούντλινγκ',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'Διεθνής φωνητική αλφάβητος',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'Ουραλική φωνητική αλφάβητος',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'Κοινή ορθογραφία',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'Διάλεκτος Λιποβάζ της Ρεσιάν',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'Μονοτονικό',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'Διάλεκτος Νατισόνε',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Διάλεκτος Γκνιβά/Ντζιβά',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'Διάλεκτος Οσεακό/Οσοτζάν',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'Εκλατινισμένα Πινγίν',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'Πολυτονικό',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Υπολογιστής',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'Αναθεωρημένη ορθογραφία',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'Ρεσιάν',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'Σάχο',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'Σκοτσεζικά τυποποιημένα Αγγλικά',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'Σκουζ',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'Διάλεκτος Στολβιτζά/Σολμπικά',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'Ταρασκιεβική ορθογραφία',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'Ενωποιημένη ορθογραφία',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      'Ενωποιημένη αναθεωρημένη ορθογραφία',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'Βαλενθιανά',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Εκλατινισμένα Γουάντ-Γκιλς',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
 class UnitsEl implements Units {
   UnitsEl._();
 
@@ -2380,6 +3104,18 @@ class UnitsEl implements Units {
         narrow: UnitPrefixPattern('γιοκ-{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ροντο-{0}'),
+        short: UnitPrefixPattern('ροντ-{0}'),
+        narrow: UnitPrefixPattern('ρντ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('κουεκτο-{0}'),
+        short: UnitPrefixPattern('κουεκ-{0}'),
+        narrow: UnitPrefixPattern('κκτ-{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('δεκα-{0}'),
         short: UnitPrefixPattern('δκ-{0}'),
@@ -2438,6 +3174,18 @@ class UnitsEl implements Units {
         long: UnitPrefixPattern('γιοττα-{0}'),
         short: UnitPrefixPattern('γττ-{0}'),
         narrow: UnitPrefixPattern('γιοτ-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ροννα-{0}'),
+        short: UnitPrefixPattern('ρον-{0}'),
+        narrow: UnitPrefixPattern('ρνν-{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('κεττα-{0}'),
+        short: UnitPrefixPattern('κττ-{0}'),
+        narrow: UnitPrefixPattern('κετ-{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2532,13 +3280,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μέτρα/τετρ. δευτ.',
-          one: '{0} m/s²',
+          one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
+          one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
           other: '{0} m/s²',
         ),
       );
@@ -2598,13 +3346,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μοίρες',
-          one: '{0}°',
+          one: '{0} μοίρα',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} μοίρα',
           other: '{0}°',
         ),
       );
@@ -2906,13 +3654,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} mg/dL',
+          one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} mg/dL',
+          one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
           other: '{0} mg/dL',
         ),
       );
@@ -2928,13 +3676,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'mmol/L',
-          one: '{0} mmol/L',
+          one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmol/L',
-          one: '{0} mmol/L',
+          one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
           other: '{0} mmol/L',
         ),
       );
@@ -2972,13 +3720,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μέρη/εκατ.',
-          one: '{0} ppm',
+          one: '{0} μέρος ανά εκατομμύριο',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
+          one: '{0} μέρος ανά εκατομμύριο',
           other: '{0} ppm',
         ),
       );
@@ -2994,13 +3742,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'τοις εκατό',
-          one: '{0}%',
+          one: '{0} τοις εκατό',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
-          one: '{0}%',
+          one: '{0} τοις εκατό',
           other: '{0}%',
         ),
       );
@@ -3016,13 +3764,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'τοις χιλίοις',
-          one: '{0}‰',
+          one: '{0} τοις χιλίοις',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
-          one: '{0}‰',
+          one: '{0} τοις χιλίοις',
           other: '{0}‰',
         ),
       );
@@ -3038,13 +3786,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'τοις δεκάκις χιλίοις',
-          one: '{0}‱',
+          one: '{0} τοις δεκάκις χιλίοις',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
-          one: '{0}‱',
+          one: '{0} τοις δεκάκις χιλίοις',
           other: '{0}‱',
         ),
       );
@@ -3170,13 +3918,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'PByte',
-          one: '{0} PB',
+          one: '{0} petabyte',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
+          one: '{0} petabyte',
           other: '{0} PB',
         ),
       );
@@ -3192,13 +3940,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
+          one: '{0} terabyte',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
+          one: '{0} terabyte',
           other: '{0} TB',
         ),
       );
@@ -3214,13 +3962,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
+          one: '{0} terabit',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
+          one: '{0} terabit',
           other: '{0} Tb',
         ),
       );
@@ -3236,13 +3984,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
+          one: '{0} gigabyte',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
+          one: '{0} gigabyte',
           other: '{0} GB',
         ),
       );
@@ -3258,13 +4006,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
+          one: '{0} gigabit',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
+          one: '{0} gigabit',
           other: '{0} Gb',
         ),
       );
@@ -3280,13 +4028,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
+          one: '{0} megabyte',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
+          one: '{0} megabyte',
           other: '{0} MB',
         ),
       );
@@ -3302,13 +4050,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
+          one: '{0} megabit',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
+          one: '{0} megabit',
           other: '{0} Mb',
         ),
       );
@@ -3324,13 +4072,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
+          one: '{0} kilobyte',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
+          one: '{0} kilobyte',
           other: '{0} kB',
         ),
       );
@@ -3346,13 +4094,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
+          one: '{0} kilobit',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
+          one: '{0} kilobit',
           other: '{0} kb',
         ),
       );
@@ -3374,7 +4122,7 @@ class UnitsEl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'byte',
-          one: '{0} byte',
+          one: '{0}B',
           other: '{0} byte',
         ),
       );
@@ -3396,7 +4144,7 @@ class UnitsEl implements Units {
         narrow: UnitCountPattern(
           _locale,
           'bit',
-          one: '{0} bit',
+          one: '{0}bit',
           other: '{0} bit',
         ),
       );
@@ -3632,13 +4380,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'χιλιοστά δευτ.',
-          one: '{0} ms',
+          one: '{0} χιλιοστό του δευτερολέπτου',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'χιλ. δευτ.',
-          one: '{0} ms',
+          one: '{0} χιλιοστό του δευτερολέπτου',
           other: '{0} ms',
         ),
       );
@@ -3654,13 +4402,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μικροδεύτερα',
-          one: '{0} μs',
+          one: '{0} μικροδευτερόλεπτο',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
+          one: '{0} μικροδευτερόλεπτο',
           other: '{0} μs',
         ),
       );
@@ -3676,13 +4424,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'νανοδεύτερα',
-          one: '{0} ns',
+          one: '{0} νανοδευτερόλεπτο',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
+          one: '{0} νανοδευτερόλεπτο',
           other: '{0} ns',
         ),
       );
@@ -3698,13 +4446,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
+          one: '{0} αμπέρ',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
+          one: '{0} αμπέρ',
           other: '{0} A',
         ),
       );
@@ -3720,13 +4468,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
+          one: '{0} μιλιαμπέρ',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
+          one: '{0} μιλιαμπέρ',
           other: '{0} mA',
         ),
       );
@@ -3742,13 +4490,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
+          one: '{0} ωμ',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
+          one: '{0} ωμ',
           other: '{0} Ω',
         ),
       );
@@ -3764,13 +4512,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
+          one: '{0} βολτ',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
+          one: '{0} βολτ',
           other: '{0} V',
         ),
       );
@@ -3786,13 +4534,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
+          one: '{0} χιλιοθερμίδα',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
+          one: '{0} χιλιοθερμίδα',
           other: '{0} kcal',
         ),
       );
@@ -3823,7 +4571,7 @@ class UnitsEl implements Units {
   Unit get energyFoodcalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          'Θερμίδες',
+          'θερμίδες',
           one: '{0} θερμίδα',
           other: '{0} θερμίδες',
         ),
@@ -3852,13 +4600,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'κιλοτζάουλ',
-          one: '{0} kJ',
+          one: '{0} κιλοτζάουλ',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
+          one: '{0} κιλοτζάουλ',
           other: '{0} kJ',
         ),
       );
@@ -3874,13 +4622,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'τζάουλ',
-          one: '{0} J',
+          one: '{0} τζάουλ',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
+          one: '{0} τζάουλ',
           other: '{0} J',
         ),
       );
@@ -3918,13 +4666,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ηλεκτρονιοβόλτ',
-          one: '{0} eV',
+          one: '{0} ηλεκτρονιοβόλτ',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
+          one: '{0} ηλεκτρονιοβόλτ',
           other: '{0} eV',
         ),
       );
@@ -3984,13 +4732,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'λίβρες δύναμης',
-          one: '{0} lbf',
+          one: '{0} λίβρα δύναμης',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
-          one: '{0} lbf',
+          one: '{0} λίβρα δύναμης',
           other: '{0} lbf',
         ),
       );
@@ -4006,13 +4754,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'νιούτον',
-          one: '{0} N',
+          one: '{0} νιούτον',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N',
-          one: '{0} N',
+          one: '{0} νιούτον',
           other: '{0} N',
         ),
       );
@@ -4050,13 +4798,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
+          one: '{0} γιγαχέρτζ',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
+          one: '{0} γιγαχέρτζ',
           other: '{0} GHz',
         ),
       );
@@ -4072,13 +4820,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
+          one: '{0} μεγαχέρτζ',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
+          one: '{0} μεγαχέρτζ',
           other: '{0} MHz',
         ),
       );
@@ -4094,13 +4842,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
+          one: '{0} κιλοχέρτζ',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
+          one: '{0} κιλοχέρτζ',
           other: '{0} kHz',
         ),
       );
@@ -4116,13 +4864,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
+          one: '{0} χερτζ',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
+          one: '{0} χερτζ',
           other: '{0} Hz',
         ),
       );
@@ -4138,11 +4886,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} τυπογραφικό em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} τυπογραφικό em',
           other: '{0} em',
         ),
       );
@@ -4158,11 +4908,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'pixel',
+          one: '{0} pixel',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pixel',
+          one: '{0} pixel',
           other: '{0} px',
         ),
       );
@@ -4178,11 +4930,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'megapixel',
+          one: '{0} megapixel',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0} megapixel',
           other: '{0} MP',
         ),
       );
@@ -4198,11 +4952,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} pixel ανά εκατοστό',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} pixel ανά εκατοστό',
           other: '{0} ppcm',
         ),
       );
@@ -4218,11 +4974,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} pixel ανά ίντσα',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} pixel ανά ίντσα',
           other: '{0} ppi',
         ),
       );
@@ -4243,9 +5001,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dpcm',
-          one: '{0} dpcm',
-          other: '{0} dpcm',
+          'κουκ./εκ.',
+          one: '{0} κουκ./εκ.',
+          other: '{0} κουκ./εκ.',
         ),
       );
 
@@ -4265,9 +5023,9 @@ class UnitsEl implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dpi',
-          one: '{0} dpi',
-          other: '{0} dpi',
+          'κουκ./ίντσα',
+          one: '{0} κουκ./ίντσα',
+          other: '{0} κουκ./ίντσα',
         ),
       );
 
@@ -4275,21 +5033,21 @@ class UnitsEl implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'κουκκίδα',
+          'κουκκίδες',
           one: '{0} κουκκίδα',
           other: '{0} κουκκίδες',
         ),
         short: UnitCountPattern(
           _locale,
-          'pixel',
-          one: '{0} px',
-          other: '{0} px',
+          'κουκ.',
+          one: '{0} κουκ.',
+          other: '{0} κουκ.',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pixel',
-          one: '{0} px',
-          other: '{0} px',
+          'κουκ.',
+          one: '{0} κουκ.',
+          other: '{0} κουκ.',
         ),
       );
 
@@ -4304,13 +5062,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} R⊕',
+          one: '{0} ακτίνα της Γης',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} R⊕',
+          one: '{0} ακτίνα της Γης',
           other: '{0} R⊕',
         ),
       );
@@ -4436,13 +5194,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μικρόμετρα',
-          one: '{0} μm',
+          one: '{0} μικρόμετρο',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
+          one: '{0} μικρόμετρο',
           other: '{0} μm',
         ),
       );
@@ -4458,13 +5216,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
+          one: '{0} νανόμετρο',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
+          one: '{0} νανόμετρο',
           other: '{0} nm',
         ),
       );
@@ -4480,13 +5238,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} πικόμετρο',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} πικόμετρο',
           other: '{0} pm',
         ),
       );
@@ -4590,13 +5348,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'παρσέκ',
-          one: '{0} pc',
+          one: '{0} παρσέκ',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pc',
-          one: '{0} pc',
+          one: '{0} παρσέκ',
           other: '{0} pc',
         ),
       );
@@ -4766,11 +5524,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ακτίνες Ήλιου',
+          one: '{0} ακτίνα του Ήλιου',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} ακτίνα του Ήλιου',
           other: '{0} R☉',
         ),
       );
@@ -4852,13 +5612,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ηλιακές φωτεινότητες',
-          one: '{0} L☉',
+          one: '{0} ηλιακή φωτεινότητα',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
-          one: '{0} L☉',
+          one: '{0} ηλιακή φωτεινότητα',
           other: '{0} L☉',
         ),
       );
@@ -4940,13 +5700,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
+          one: '{0} χιλιοστόγραμμο',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
+          one: '{0} χιλιοστόγραμμο',
           other: '{0} mg',
         ),
       );
@@ -4962,13 +5722,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
+          one: '{0} μικρογραμμάριο',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
+          one: '{0} μικρογραμμάριο',
           other: '{0} μg',
         ),
       );
@@ -5006,13 +5766,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
+          one: '{0} stone',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
+          one: '{0} stone',
           other: '{0} st',
         ),
       );
@@ -5050,13 +5810,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
+          one: '{0} ουγγιά',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
+          one: '{0} ουγγιά',
           other: '{0} oz',
         ),
       );
@@ -5072,13 +5832,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ευγενής ουγγιά',
-          one: '{0} oz t',
+          one: '{0} ευγενής ουγγιά',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
+          one: '{0} ευγενής ουγγιά',
           other: '{0} oz t',
         ),
       );
@@ -5116,13 +5876,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'Ντάλτον',
-          one: '{0} Da',
+          one: '{0} Ντάλτον',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
+          one: '{0} Ντάλτον',
           other: '{0} Da',
         ),
       );
@@ -5138,13 +5898,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μάζες Γης',
-          one: '{0} M⊕',
+          one: '{0} μάζα της Γης',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
+          one: '{0} μάζα της Γης',
           other: '{0} M⊕',
         ),
       );
@@ -5160,13 +5920,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μάζες Ήλιου',
-          one: '{0} M☉',
+          one: '{0} μάζα του Ήλιου',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} M☉',
+          one: '{0} μάζα του Ήλιου',
           other: '{0} M☉',
         ),
       );
@@ -5204,13 +5964,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'γιγαβάτ',
-          one: '{0} GW',
+          one: '{0} γιγαβάτ',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
+          one: '{0} γιγαβάτ',
           other: '{0} GW',
         ),
       );
@@ -5226,13 +5986,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μεγαβάτ',
-          one: '{0} MW',
+          one: '{0} μεγαβάτ',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
+          one: '{0} μεγαβάτ',
           other: '{0} MW',
         ),
       );
@@ -5248,13 +6008,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'κιλοβάτ',
-          one: '{0} kW',
+          one: '{0} κιλοβάτ',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
+          one: '{0} κιλοβάτ',
           other: '{0} kW',
         ),
       );
@@ -5270,13 +6030,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'βατ',
-          one: '{0} W',
+          one: '{0} βατ',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
+          one: '{0} βατ',
           other: '{0} W',
         ),
       );
@@ -5292,13 +6052,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'μιλιβάτ',
-          one: '{0} mW',
+          one: '{0} μιλιβάτ',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
+          one: '{0} μιλιβάτ',
           other: '{0} mW',
         ),
       );
@@ -5358,13 +6118,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
+          one: '{0} λίβρα ανά τετραγωνική ίντσα',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
+          one: '{0} λίβρα ανά τετραγωνική ίντσα',
           other: '{0} psi',
         ),
       );
@@ -5380,13 +6140,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
+          one: '{0} ίντσα στήλης υδραργύρου',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
+          one: '{0} ίντσα στήλης υδραργύρου',
           other: '{0} inHg',
         ),
       );
@@ -5424,13 +6184,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
+          one: '{0} μιλιμπάρ',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
+          one: '{0} μιλιμπάρ',
           other: '{0} mbar',
         ),
       );
@@ -5446,13 +6206,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
+          one: '{0} ατμόσφαιρα',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
+          one: '{0} ατμόσφαιρα',
           other: '{0} atm',
         ),
       );
@@ -5468,13 +6228,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
+          one: '{0} πασκάλ',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
+          one: '{0} πασκάλ',
           other: '{0} Pa',
         ),
       );
@@ -5490,13 +6250,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
+          one: '{0} εκτοπασκάλ',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
+          one: '{0} εκτοπασκάλ',
           other: '{0} hPa',
         ),
       );
@@ -5512,13 +6272,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
+          one: '{0} κιλοπασκάλ',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
+          one: '{0} κιλοπασκάλ',
           other: '{0} kPa',
         ),
       );
@@ -5534,13 +6294,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
+          one: '{0} μεγαπασκάλ',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
+          one: '{0} μεγαπασκάλ',
           other: '{0} MPa',
         ),
       );
@@ -5634,6 +6394,28 @@ class UnitsEl implements Units {
       );
 
   @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'μποφόρ',
+          one: '{0} μποφόρ',
+          other: '{0} μποφόρ',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'μποφ.',
+          one: '{0} μποφ.',
+          other: '{0} μποφ.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bf',
+          one: '{0} Bf',
+          other: '{0} Bf',
+        ),
+      );
+
+  @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
@@ -5644,13 +6426,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} βαθμός',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} βαθμός',
           other: '{0}°',
         ),
       );
@@ -5666,13 +6448,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'βθμ C',
-          one: '{0}°C',
+          one: '{0} βαθμός Κελσίου',
           other: '{0}°C',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°C',
-          one: '{0}°C',
+          one: '{0} βαθμός Κελσίου',
           other: '{0}°C',
         ),
       );
@@ -5688,13 +6470,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'βθμ F',
-          one: '{0}°F',
+          one: '{0} βαθμός Φαρενάιτ',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°F',
-          one: '{0}°F',
+          one: '{0} βαθμός Φαρενάιτ',
           other: '{0}°F',
         ),
       );
@@ -5710,13 +6492,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
+          one: '{0} βαθμός Κέλβιν',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
+          one: '{0} βαθμός Κέλβιν',
           other: '{0} K',
         ),
       );
@@ -5754,13 +6536,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
+          one: '{0} νιουτόμετρο',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
+          one: '{0} νιουτόμετρο',
           other: '{0} N⋅m',
         ),
       );
@@ -5776,13 +6558,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
+          one: '{0} κυβικό χιλιόμετρο',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
+          one: '{0} κυβικό χιλιόμετρο',
           other: '{0} km³',
         ),
       );
@@ -5798,13 +6580,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
+          one: '{0} κυβικό μέτρο',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
+          one: '{0} κυβικό μέτρο',
           other: '{0} m³',
         ),
       );
@@ -5820,13 +6602,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
+          one: '{0} κυβικό εκατοστό',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
+          one: '{0} κυβικό εκατοστό',
           other: '{0} cm³',
         ),
       );
@@ -5842,13 +6624,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
+          one: '{0} κυβικό μίλι',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
+          one: '{0} κυβικό μίλι',
           other: '{0} mi³',
         ),
       );
@@ -5886,13 +6668,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
+          one: '{0} κυβικό πόδι',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
+          one: '{0} κυβικό πόδι',
           other: '{0} ft³',
         ),
       );
@@ -5908,13 +6690,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
+          one: '{0} κυβική ίντσα',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
+          one: '{0} κυβική ίντσα',
           other: '{0} in³',
         ),
       );
@@ -5930,13 +6712,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'ML',
-          one: '{0} ML',
+          one: '{0} μεγαλίτρο',
           other: '{0} ML',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ML',
-          one: '{0} ML',
+          one: '{0} μεγαλίτρο',
           other: '{0} ML',
         ),
       );
@@ -5952,13 +6734,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'hL',
-          one: '{0} hL',
+          one: '{0} εκτόλιτρο',
           other: '{0} hL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hL',
-          one: '{0} hL',
+          one: '{0} εκτόλιτρο',
           other: '{0} hL',
         ),
       );
@@ -5996,13 +6778,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'dL',
-          one: '{0} dL',
+          one: '{0} δεκατόλιτρο',
           other: '{0} dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dL',
-          one: '{0} dL',
+          one: '{0} δεκατόλιτρο',
           other: '{0} dL',
         ),
       );
@@ -6018,13 +6800,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'cL',
-          one: '{0} cL',
+          one: '{0} εκατοστόλιτρο',
           other: '{0} cL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cL',
-          one: '{0} cL',
+          one: '{0} εκατοστόλιτρο',
           other: '{0} cL',
         ),
       );
@@ -6040,13 +6822,13 @@ class UnitsEl implements Units {
         short: UnitCountPattern(
           _locale,
           'mL',
-          one: '{0} mL',
+          one: '{0} χιλιοστόλιτρο',
           other: '{0} mL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mL',
-          one: '{0} mL',
+          one: '{0} χιλιοστόλιτρο',
           other: '{0} mL',
         ),
       );
@@ -6510,6 +7292,94 @@ class UnitsEl implements Units {
           'αγγλ. τέτ. γαλ.',
           one: '{0} αγγλ. τέτ. γαλ.',
           other: '{0} αγγλ. τέτ. γαλ.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'φως',
+          one: '{0} φως',
+          other: '{0} φως',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'φως',
+          one: '{0} φως',
+          other: '{0} φως',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'φώς',
+          one: '{0} φως',
+          other: '{0} φως',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'μέρη στο δισεκατομμύριο',
+          one: '{0} μέρος στο δισεκατομμύριο',
+          other: '{0} μέρη στο δισεκατομμύριο',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'μέρη/δισεκατομμύριο',
+          one: '{0} μέρος στο δισεκατομμύριο',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'μέρη/δισεκατομμύριο',
+          one: '{0} μέρος στο δισεκατομμύριο',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'νύχτες',
+          one: '{0} νύχτα',
+          other: '{0} νύχτες',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'νύχτ.',
+          one: '{0} νύχτ.',
+          other: '{0} νύχτ.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'νύχτ.',
+          one: '{0} νύχτ.',
+          other: '{0} νύχτ.',
         ),
       );
 }
@@ -7776,6 +8646,10 @@ class TerritoriesEl implements Territories {
       'CP',
       'Νήσος Κλίπερτον',
     ),
+    'CQ': Territory(
+      'CQ',
+      'Άγνωστη περιοχή (CQ)',
+    ),
     'CR': Territory(
       'CR',
       'Κόστα Ρίκα',
@@ -8631,6 +9505,2372 @@ class TerritoriesEl implements Territories {
     'ZW': Territory(
       'ZW',
       'Ζιμπάμπουε',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesEl extends TimeZones {
+  TimeZonesEl._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'Ώρα ({0})',
+            regionFormatDaylight: 'Θερινή ώρα ({0})',
+            regionFormatStandard: 'Χειμερινή ώρα ({0})',
+            fallbackFormat: '[{1} ({0})]');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Adak': TimeZoneNames(
+      exemplarCity: 'Άντακ',
+    ),
+    'America/Anchorage': TimeZoneNames(
+      exemplarCity: 'Άνκορατζ',
+    ),
+    'America/Anguilla': TimeZoneNames(
+      exemplarCity: 'Ανγκουίλα',
+    ),
+    'America/Antigua': TimeZoneNames(
+      exemplarCity: 'Αντίγκουα',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      exemplarCity: 'Αραγκουάινα',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Ρίο Γκαγιέγκος',
+    ),
+    'America/Argentina/San_Juan': TimeZoneNames(
+      exemplarCity: 'Σαν Χουάν',
+    ),
+    'America/Argentina/Ushuaia': TimeZoneNames(
+      exemplarCity: 'Ουσουάια',
+    ),
+    'America/Argentina/La_Rioja': TimeZoneNames(
+      exemplarCity: 'Λα Ριόχα',
+    ),
+    'America/Argentina/San_Luis': TimeZoneNames(
+      exemplarCity: 'Σαν Λούις',
+    ),
+    'America/Argentina/Salta': TimeZoneNames(
+      exemplarCity: 'Σάλτα',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      exemplarCity: 'Τουκουμάν',
+    ),
+    'America/Aruba': TimeZoneNames(
+      exemplarCity: 'Αρούμπα',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: 'Ασουνσιόν',
+    ),
+    'America/Bahia': TimeZoneNames(
+      exemplarCity: 'Μπαΐα',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'Μπαΐα ντε Μπαντέρας',
+    ),
+    'America/Barbados': TimeZoneNames(
+      exemplarCity: 'Μπαρμπέιντος',
+    ),
+    'America/Belem': TimeZoneNames(
+      exemplarCity: 'Μπελέμ',
+    ),
+    'America/Belize': TimeZoneNames(
+      exemplarCity: 'Μπελίζ',
+    ),
+    'America/Blanc-Sablon': TimeZoneNames(
+      exemplarCity: 'Μπλαν Σαμπλόν',
+    ),
+    'America/Boa_Vista': TimeZoneNames(
+      exemplarCity: 'Μπόα Βίστα',
+    ),
+    'America/Bogota': TimeZoneNames(
+      exemplarCity: 'Μπογκοτά',
+    ),
+    'America/Boise': TimeZoneNames(
+      exemplarCity: 'Μπόιζι',
+    ),
+    'America/Buenos_Aires': TimeZoneNames(
+      exemplarCity: 'Μπουένος Άιρες',
+    ),
+    'America/Cambridge_Bay': TimeZoneNames(
+      exemplarCity: 'Κέμπριτζ Μπέι',
+    ),
+    'America/Campo_Grande': TimeZoneNames(
+      exemplarCity: 'Κάμπο Γκράντε',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: 'Κανκούν',
+    ),
+    'America/Caracas': TimeZoneNames(
+      exemplarCity: 'Καράκας',
+    ),
+    'America/Catamarca': TimeZoneNames(
+      exemplarCity: 'Καταμάρκα',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      exemplarCity: 'Καγιέν',
+    ),
+    'America/Cayman': TimeZoneNames(
+      exemplarCity: 'Κέιμαν',
+    ),
+    'America/Chicago': TimeZoneNames(
+      exemplarCity: 'Σικάγο',
+    ),
+    'America/Chihuahua': TimeZoneNames(
+      exemplarCity: 'Τσιουάουα',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: 'Σιουδάδ Χουάρες',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: 'Ατικόκαν',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      exemplarCity: 'Κόρδοβα',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      exemplarCity: 'Κόστα Ρίκα',
+    ),
+    'America/Creston': TimeZoneNames(
+      exemplarCity: 'Κρέστον',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      exemplarCity: 'Κουιαμπά',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: 'Κουρασάο',
+    ),
+    'America/Danmarkshavn': TimeZoneNames(
+      exemplarCity: 'Ντανμαρκσάβν',
+    ),
+    'America/Dawson': TimeZoneNames(
+      exemplarCity: 'Ντόσον',
+    ),
+    'America/Dawson_Creek': TimeZoneNames(
+      exemplarCity: 'Ντόσον Κρικ',
+    ),
+    'America/Denver': TimeZoneNames(
+      exemplarCity: 'Ντένβερ',
+    ),
+    'America/Detroit': TimeZoneNames(
+      exemplarCity: 'Ντιτρόιτ',
+    ),
+    'America/Dominica': TimeZoneNames(
+      exemplarCity: 'Ντομίνικα',
+    ),
+    'America/Edmonton': TimeZoneNames(
+      exemplarCity: 'Έντμοντον',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      exemplarCity: 'Εϊρουνεπέ',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      exemplarCity: 'Ελ Σαλβαδόρ',
+    ),
+    'America/Fort_Nelson': TimeZoneNames(
+      exemplarCity: 'Φορτ Νέλσον',
+    ),
+    'America/Fortaleza': TimeZoneNames(
+      exemplarCity: 'Φορταλέζα',
+    ),
+    'America/Glace_Bay': TimeZoneNames(
+      exemplarCity: 'Γκλέις Μπέι',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: 'Νουούκ',
+    ),
+    'America/Goose_Bay': TimeZoneNames(
+      exemplarCity: 'Γκους Μπέι',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      exemplarCity: 'Γκραντ Τουρκ',
+    ),
+    'America/Grenada': TimeZoneNames(
+      exemplarCity: 'Γρενάδα',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      exemplarCity: 'Γουαδελούπη',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      exemplarCity: 'Γουατεμάλα',
+    ),
+    'America/Guayaquil': TimeZoneNames(
+      exemplarCity: 'Γκουαγιακίλ',
+    ),
+    'America/Guyana': TimeZoneNames(
+      exemplarCity: 'Γουιάνα',
+    ),
+    'America/Halifax': TimeZoneNames(
+      exemplarCity: 'Χάλιφαξ',
+    ),
+    'America/Havana': TimeZoneNames(
+      exemplarCity: 'Αβάνα',
+    ),
+    'America/Hermosillo': TimeZoneNames(
+      exemplarCity: 'Ερμοσίγιο',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Βανσέν, Ιντιάνα',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Πίτερσμπεργκ, Ιντιάνα',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Τελ Σίτι, Ιντιάνα',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: 'Νοξ, Ιντιάνα',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Γουίναμακ, Ιντιάνα',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'Μαρένγκο, Ιντιάνα',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: 'Βιβέι, Ιντιάνα',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      exemplarCity: 'Ιντιανάπολις',
+    ),
+    'America/Inuvik': TimeZoneNames(
+      exemplarCity: 'Ινούβικ',
+    ),
+    'America/Iqaluit': TimeZoneNames(
+      exemplarCity: 'Ικαλούιτ',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      exemplarCity: 'Τζαμάικα',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      exemplarCity: 'Χουχούι',
+    ),
+    'America/Juneau': TimeZoneNames(
+      exemplarCity: 'Τζούνο',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Μοντιτσέλο, Κεντάκι',
+    ),
+    'America/Kralendijk': TimeZoneNames(
+      exemplarCity: 'Κράλεντικ',
+    ),
+    'America/La_Paz': TimeZoneNames(
+      exemplarCity: 'Λα Παζ',
+    ),
+    'America/Lima': TimeZoneNames(
+      exemplarCity: 'Λίμα',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      exemplarCity: 'Λος Άντζελες',
+    ),
+    'America/Louisville': TimeZoneNames(
+      exemplarCity: 'Λούιβιλ',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
+    'America/Maceio': TimeZoneNames(
+      exemplarCity: 'Μασεϊό',
+    ),
+    'America/Managua': TimeZoneNames(
+      exemplarCity: 'Μανάγκουα',
+    ),
+    'America/Manaus': TimeZoneNames(
+      exemplarCity: 'Μανάους',
+    ),
+    'America/Marigot': TimeZoneNames(
+      exemplarCity: 'Μαριγκό',
+    ),
+    'America/Martinique': TimeZoneNames(
+      exemplarCity: 'Μαρτινίκα',
+    ),
+    'America/Matamoros': TimeZoneNames(
+      exemplarCity: 'Ματαμόρος',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      exemplarCity: 'Μαζατλάν',
+    ),
+    'America/Mendoza': TimeZoneNames(
+      exemplarCity: 'Μεντόζα',
+    ),
+    'America/Menominee': TimeZoneNames(
+      exemplarCity: 'Μενομίνε',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: 'Μέριδα',
+    ),
+    'America/Metlakatla': TimeZoneNames(
+      exemplarCity: 'Μετλακάτλα',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      exemplarCity: 'Πόλη του Μεξικού',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      exemplarCity: 'Μικελόν',
+    ),
+    'America/Moncton': TimeZoneNames(
+      exemplarCity: 'Μόνκτον',
+    ),
+    'America/Monterrey': TimeZoneNames(
+      exemplarCity: 'Μοντερέι',
+    ),
+    'America/Montevideo': TimeZoneNames(
+      exemplarCity: 'Μοντεβιδέο',
+    ),
+    'America/Montserrat': TimeZoneNames(
+      exemplarCity: 'Μονσεράτ',
+    ),
+    'America/Nassau': TimeZoneNames(
+      exemplarCity: 'Νασάου',
+    ),
+    'America/New_York': TimeZoneNames(
+      exemplarCity: 'Νέα Υόρκη',
+    ),
+    'America/Nome': TimeZoneNames(
+      exemplarCity: 'Νόμε',
+    ),
+    'America/Noronha': TimeZoneNames(
+      exemplarCity: 'Νορόνια',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Μπέουλα, Βόρεια Ντακότα',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'Νιου Σέιλεμ, Βόρεια Ντακότα',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Σέντερ, Βόρεια Ντακότα',
+    ),
+    'America/Ojinaga': TimeZoneNames(
+      exemplarCity: 'Οχινάγκα',
+    ),
+    'America/Panama': TimeZoneNames(
+      exemplarCity: 'Παναμάς',
+    ),
+    'America/Paramaribo': TimeZoneNames(
+      exemplarCity: 'Παραμαρίμπο',
+    ),
+    'America/Phoenix': TimeZoneNames(
+      exemplarCity: 'Φοίνιξ',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      exemplarCity: 'Πορτ-ο-Πρενς',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      exemplarCity: 'Πορτ οφ Σπέιν',
+    ),
+    'America/Porto_Velho': TimeZoneNames(
+      exemplarCity: 'Πόρτο Βέλιο',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      exemplarCity: 'Πουέρτο Ρίκο',
+    ),
+    'America/Punta_Arenas': TimeZoneNames(
+      exemplarCity: 'Πούντα Αρένας',
+    ),
+    'America/Rankin_Inlet': TimeZoneNames(
+      exemplarCity: 'Ράνκιν Ίνλετ',
+    ),
+    'America/Recife': TimeZoneNames(
+      exemplarCity: 'Ρεσίφε',
+    ),
+    'America/Regina': TimeZoneNames(
+      exemplarCity: 'Ρετζάινα',
+    ),
+    'America/Resolute': TimeZoneNames(
+      exemplarCity: 'Ρέζολουτ',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      exemplarCity: 'Ρίο Μπράνκο',
+    ),
+    'America/Santarem': TimeZoneNames(
+      exemplarCity: 'Σανταρέμ',
+    ),
+    'America/Santiago': TimeZoneNames(
+      exemplarCity: 'Σαντιάγκο',
+    ),
+    'America/Santo_Domingo': TimeZoneNames(
+      exemplarCity: 'Άγιος Δομίνικος',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      exemplarCity: 'Σάο Πάολο',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: 'Σκορεσμπίσουντ',
+    ),
+    'America/Sitka': TimeZoneNames(
+      exemplarCity: 'Σίτκα',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: 'Άγιος Βαρθολομαίος',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: 'Σεν Τζονς',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: 'Σεν Κιτς',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: 'Αγία Λουκία',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: 'Άγιος Θωμάς',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: 'Άγιος Βικέντιος',
+    ),
+    'America/Swift_Current': TimeZoneNames(
+      exemplarCity: 'Σουίφτ Κάρεντ',
+    ),
+    'America/Tegucigalpa': TimeZoneNames(
+      exemplarCity: 'Τεγκουσιγκάλπα',
+    ),
+    'America/Thule': TimeZoneNames(
+      exemplarCity: 'Θούλη',
+    ),
+    'America/Tijuana': TimeZoneNames(
+      exemplarCity: 'Τιχουάνα',
+    ),
+    'America/Toronto': TimeZoneNames(
+      exemplarCity: 'Τορόντο',
+    ),
+    'America/Tortola': TimeZoneNames(
+      exemplarCity: 'Τορτόλα',
+    ),
+    'America/Vancouver': TimeZoneNames(
+      exemplarCity: 'Βανκούβερ',
+    ),
+    'America/Whitehorse': TimeZoneNames(
+      exemplarCity: 'Γουάιτχορς',
+    ),
+    'America/Winnipeg': TimeZoneNames(
+      exemplarCity: 'Γουίνιπεγκ',
+    ),
+    'America/Yakutat': TimeZoneNames(
+      exemplarCity: 'Γιάκουτατ',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      exemplarCity: 'Αζόρες',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      exemplarCity: 'Βερμούδες',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: 'Κανάρια',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: 'Πράσινο Ακρωτήριο',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: 'Φερόες',
+    ),
+    'Atlantic/Madeira': TimeZoneNames(
+      exemplarCity: 'Μαδέρα',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      exemplarCity: 'Ρέυκιαβικ',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: 'Νότια Γεωργία',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: 'Αγ. Ελένη',
+    ),
+    'Atlantic/Stanley': TimeZoneNames(
+      exemplarCity: 'Στάνλεϊ',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      exemplarCity: 'Άμστερνταμ',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      exemplarCity: 'Ανδόρα',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      exemplarCity: 'Αστραχάν',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: 'Αθήνα',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: 'Βελιγράδι',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      exemplarCity: 'Βερολίνο',
+    ),
+    'Europe/Bratislava': TimeZoneNames(
+      exemplarCity: 'Μπρατισλάβα',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: 'Βρυξέλλες',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: 'Βουκουρέστι',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      exemplarCity: 'Βουδαπέστη',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      exemplarCity: 'Μπίσινγκεν',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: 'Κισινάου',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: 'Κοπεγχάγη',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Χειμερινή ώρα Ιρλανδίας',
+      ),
+      exemplarCity: 'Δουβλίνο',
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      exemplarCity: 'Γιβραλτάρ',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      exemplarCity: 'Γκέρνζι',
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      exemplarCity: 'Ελσίνκι',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      exemplarCity: 'Νήσος του Μαν',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      exemplarCity: 'Κωνσταντινούπολη',
+    ),
+    'Europe/Jersey': TimeZoneNames(
+      exemplarCity: 'Τζέρσεϊ',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      exemplarCity: 'Καλίνινγκραντ',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: 'Κίεβο',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      exemplarCity: 'Κίροφ',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: 'Λισαβόνα',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      exemplarCity: 'Λιουμπλιάνα',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Θερινή ώρα Βρετανίας',
+      ),
+      exemplarCity: 'Λονδίνο',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: 'Λουξεμβούργο',
+    ),
+    'Europe/Madrid': TimeZoneNames(
+      exemplarCity: 'Μαδρίτη',
+    ),
+    'Europe/Malta': TimeZoneNames(
+      exemplarCity: 'Μάλτα',
+    ),
+    'Europe/Mariehamn': TimeZoneNames(
+      exemplarCity: 'Μάριεχαμν',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      exemplarCity: 'Μινσκ',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      exemplarCity: 'Μονακό',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: 'Μόσχα',
+    ),
+    'Europe/Oslo': TimeZoneNames(
+      exemplarCity: 'Όσλο',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      exemplarCity: 'Παρίσι',
+    ),
+    'Europe/Podgorica': TimeZoneNames(
+      exemplarCity: 'Ποντγκόριτσα',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: 'Πράγα',
+    ),
+    'Europe/Riga': TimeZoneNames(
+      exemplarCity: 'Ρίγα',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: 'Ρώμη',
+    ),
+    'Europe/Samara': TimeZoneNames(
+      exemplarCity: 'Σαμάρα',
+    ),
+    'Europe/San_Marino': TimeZoneNames(
+      exemplarCity: 'Άγιος Μαρίνος',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      exemplarCity: 'Σαράγεβο',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      exemplarCity: 'Σαράτοφ',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      exemplarCity: 'Συμφερόπολη',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      exemplarCity: 'Σκόπια',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      exemplarCity: 'Σόφια',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      exemplarCity: 'Στοκχόλμη',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      exemplarCity: 'Ταλίν',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: 'Τίρανα',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: 'Ουλιάνοφσκ',
+    ),
+    'Europe/Vaduz': TimeZoneNames(
+      exemplarCity: 'Βαντούζ',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      exemplarCity: 'Βατικανό',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: 'Βιέννη',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      exemplarCity: 'Βίλνιους',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      exemplarCity: 'Βόλγκοκραντ',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: 'Βαρσοβία',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      exemplarCity: 'Ζάγκρεμπ',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: 'Ζυρίχη',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      exemplarCity: 'Αμπιτζάν',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      exemplarCity: 'Άκρα',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: 'Αντίς Αμπέμπα',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: 'Αλγέρι',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: 'Ασμάρα',
+    ),
+    'Africa/Bamako': TimeZoneNames(
+      exemplarCity: 'Μπαμάκο',
+    ),
+    'Africa/Bangui': TimeZoneNames(
+      exemplarCity: 'Μπανγκί',
+    ),
+    'Africa/Banjul': TimeZoneNames(
+      exemplarCity: 'Μπανζούλ',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      exemplarCity: 'Μπισάου',
+    ),
+    'Africa/Blantyre': TimeZoneNames(
+      exemplarCity: 'Μπλαντάιρ',
+    ),
+    'Africa/Brazzaville': TimeZoneNames(
+      exemplarCity: 'Μπραζαβίλ',
+    ),
+    'Africa/Bujumbura': TimeZoneNames(
+      exemplarCity: 'Μπουζουμπούρα',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      exemplarCity: 'Κάιρο',
+    ),
+    'Africa/Casablanca': TimeZoneNames(
+      exemplarCity: 'Καζαμπλάνκα',
+    ),
+    'Africa/Ceuta': TimeZoneNames(
+      exemplarCity: 'Θέουτα',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      exemplarCity: 'Κόνακρι',
+    ),
+    'Africa/Dakar': TimeZoneNames(
+      exemplarCity: 'Ντακάρ',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      exemplarCity: 'Νταρ ες Σαλάμ',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      exemplarCity: 'Τζιμπουτί',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      exemplarCity: 'Ντουάλα',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      exemplarCity: 'Ελ Αγιούν',
+    ),
+    'Africa/Freetown': TimeZoneNames(
+      exemplarCity: 'Φρίταουν',
+    ),
+    'Africa/Gaborone': TimeZoneNames(
+      exemplarCity: 'Γκαμπορόνε',
+    ),
+    'Africa/Harare': TimeZoneNames(
+      exemplarCity: 'Χαράρε',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      exemplarCity: 'Γιοχάνεσμπουργκ',
+    ),
+    'Africa/Juba': TimeZoneNames(
+      exemplarCity: 'Τζούμπα',
+    ),
+    'Africa/Kampala': TimeZoneNames(
+      exemplarCity: 'Καμπάλα',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      exemplarCity: 'Χαρτούμ',
+    ),
+    'Africa/Kigali': TimeZoneNames(
+      exemplarCity: 'Κιγκάλι',
+    ),
+    'Africa/Kinshasa': TimeZoneNames(
+      exemplarCity: 'Κινσάσα',
+    ),
+    'Africa/Lagos': TimeZoneNames(
+      exemplarCity: 'Λάγκος',
+    ),
+    'Africa/Libreville': TimeZoneNames(
+      exemplarCity: 'Λιμπρεβίλ',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: 'Λομέ',
+    ),
+    'Africa/Luanda': TimeZoneNames(
+      exemplarCity: 'Λουάντα',
+    ),
+    'Africa/Lubumbashi': TimeZoneNames(
+      exemplarCity: 'Λουμπουμπάσι',
+    ),
+    'Africa/Lusaka': TimeZoneNames(
+      exemplarCity: 'Λουζάκα',
+    ),
+    'Africa/Malabo': TimeZoneNames(
+      exemplarCity: 'Μαλάμπο',
+    ),
+    'Africa/Maputo': TimeZoneNames(
+      exemplarCity: 'Μαπούτο',
+    ),
+    'Africa/Maseru': TimeZoneNames(
+      exemplarCity: 'Μασέρου',
+    ),
+    'Africa/Mbabane': TimeZoneNames(
+      exemplarCity: 'Μπαμπάνε',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: 'Μογκαντίσου',
+    ),
+    'Africa/Monrovia': TimeZoneNames(
+      exemplarCity: 'Μονρόβια',
+    ),
+    'Africa/Nairobi': TimeZoneNames(
+      exemplarCity: 'Ναϊρόμπι',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: 'Ντζαμένα',
+    ),
+    'Africa/Niamey': TimeZoneNames(
+      exemplarCity: 'Νιαμέι',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      exemplarCity: 'Νουακσότ',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      exemplarCity: 'Ουαγκαντούγκου',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      exemplarCity: 'Πόρτο-Νόβο',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: 'Σάο Τομέ',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      exemplarCity: 'Τρίπολη',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      exemplarCity: 'Τύνιδα',
+    ),
+    'Africa/Windhoek': TimeZoneNames(
+      exemplarCity: 'Βίντχουκ',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      exemplarCity: 'Άντεν',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      exemplarCity: 'Αλμάτι',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      exemplarCity: 'Αμμάν',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      exemplarCity: 'Αναντίρ',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: 'Ακτάου',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: 'Ακτόμπε',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: 'Ασχαμπάτ',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      exemplarCity: 'Ατιράου',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: 'Βαγδάτη',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      exemplarCity: 'Μπαχρέιν',
+    ),
+    'Asia/Baku': TimeZoneNames(
+      exemplarCity: 'Μπακού',
+    ),
+    'Asia/Bangkok': TimeZoneNames(
+      exemplarCity: 'Μπανγκόκ',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      exemplarCity: 'Μπαρναούλ',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      exemplarCity: 'Βυρητός',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      exemplarCity: 'Μπισκέκ',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      exemplarCity: 'Μπρουνέι',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: 'Καλκούτα',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: 'Τσιτά',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      exemplarCity: 'Κολόμπο',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: 'Δαμασκός',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      exemplarCity: 'Ντάκα',
+    ),
+    'Asia/Dili': TimeZoneNames(
+      exemplarCity: 'Ντίλι',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      exemplarCity: 'Ντουμπάι',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: 'Ντουσάνμπε',
+    ),
+    'Asia/Famagusta': TimeZoneNames(
+      exemplarCity: 'Αμμόχωστος',
+    ),
+    'Asia/Gaza': TimeZoneNames(
+      exemplarCity: 'Γάζα',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      exemplarCity: 'Χεβρώνα',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      exemplarCity: 'Χονγκ Κονγκ',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      exemplarCity: 'Χοβντ',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      exemplarCity: 'Ιρκούτσκ',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      exemplarCity: 'Τζακάρτα',
+    ),
+    'Asia/Jayapura': TimeZoneNames(
+      exemplarCity: 'Τζαγιαπούρα',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      exemplarCity: 'Ιερουσαλήμ',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      exemplarCity: 'Καμπούλ',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      exemplarCity: 'Καμτσάτκα',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      exemplarCity: 'Καράτσι',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: 'Κατμαντού',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      exemplarCity: 'Χαντίγκα',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      exemplarCity: 'Κρασνογιάρσκ',
+    ),
+    'Asia/Kuala_Lumpur': TimeZoneNames(
+      exemplarCity: 'Κουάλα Λουμπούρ',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      exemplarCity: 'Κουτσίνγκ',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      exemplarCity: 'Κουβέιτ',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: 'Μακάο',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      exemplarCity: 'Μαγκαντάν',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      exemplarCity: 'Μακασάρ',
+    ),
+    'Asia/Manila': TimeZoneNames(
+      exemplarCity: 'Μανίλα',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      exemplarCity: 'Μασκάτ',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      exemplarCity: 'Λευκωσία',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      exemplarCity: 'Νοβοκουζνέτσκ',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      exemplarCity: 'Νοβοσιμπίρσκ',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      exemplarCity: 'Ομσκ',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      exemplarCity: 'Οράλ',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      exemplarCity: 'Πνομ Πενχ',
+    ),
+    'Asia/Pontianak': TimeZoneNames(
+      exemplarCity: 'Πόντιανακ',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      exemplarCity: 'Πιονγκγιάνγκ',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      exemplarCity: 'Κατάρ',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: 'Κοστανάι',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: 'Κιζιλορντά',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: 'Ρανγκούν',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      exemplarCity: 'Ριάντ',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: 'Πόλη Χο Τσι Μινχ',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: 'Σαχαλίνη',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      exemplarCity: 'Σαμαρκάνδη',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      exemplarCity: 'Σεούλ',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      exemplarCity: 'Σανγκάη',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      exemplarCity: 'Σιγκαπούρη',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      exemplarCity: 'Σρεντνεκολίμσκ',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      exemplarCity: 'Ταϊπέι',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: 'Τασκένδη',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      exemplarCity: 'Τιφλίδα',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: 'Τεχεράνη',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      exemplarCity: 'Θίμφου',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      exemplarCity: 'Τόκιο',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      exemplarCity: 'Τομσκ',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      exemplarCity: 'Ουλάν Μπατόρ',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: 'Ουρούμτσι',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      exemplarCity: 'Ουστ-Νερά',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      exemplarCity: 'Βιεντιάν',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      exemplarCity: 'Βλαδιβοστόκ',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      exemplarCity: 'Γιακούτσκ',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: 'Αικατερινούπολη',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'Ερεβάν',
+    ),
+    'Indian/Antananarivo': TimeZoneNames(
+      exemplarCity: 'Ανταναναρίβο',
+    ),
+    'Indian/Chagos': TimeZoneNames(
+      exemplarCity: 'Τσάγκος',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      exemplarCity: 'Νήσος Χριστουγέννων',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      exemplarCity: 'Κόκος',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: 'Κομόρο',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      exemplarCity: 'Κεργκελέν',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: 'Μάχε',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: 'Μαλδίβες',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      exemplarCity: 'Μαυρίκιος',
+    ),
+    'Indian/Mayotte': TimeZoneNames(
+      exemplarCity: 'Μαγιότ',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: 'Ρεϊνιόν',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      exemplarCity: 'Αδελαΐδα',
+    ),
+    'Australia/Brisbane': TimeZoneNames(
+      exemplarCity: 'Μπρισμπέιν',
+    ),
+    'Australia/Broken_Hill': TimeZoneNames(
+      exemplarCity: 'Μπρόκεν Χιλ',
+    ),
+    'Australia/Darwin': TimeZoneNames(
+      exemplarCity: 'Ντάργουιν',
+    ),
+    'Australia/Eucla': TimeZoneNames(
+      exemplarCity: 'Γιούκλα',
+    ),
+    'Australia/Hobart': TimeZoneNames(
+      exemplarCity: 'Χόμπαρτ',
+    ),
+    'Australia/Lindeman': TimeZoneNames(
+      exemplarCity: 'Λίντεμαν',
+    ),
+    'Australia/Lord_Howe': TimeZoneNames(
+      exemplarCity: 'Λορντ Χάου',
+    ),
+    'Australia/Melbourne': TimeZoneNames(
+      exemplarCity: 'Μελβούρνη',
+    ),
+    'Australia/Perth': TimeZoneNames(
+      exemplarCity: 'Περθ',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      exemplarCity: 'Σίδνεϊ',
+    ),
+    'Pacific/Apia': TimeZoneNames(
+      exemplarCity: 'Απία',
+    ),
+    'Pacific/Auckland': TimeZoneNames(
+      exemplarCity: 'Όκλαντ',
+    ),
+    'Pacific/Bougainville': TimeZoneNames(
+      exemplarCity: 'Μπουγκενβίλ',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      exemplarCity: 'Τσάταμ',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: 'Νήσος Πάσχα',
+    ),
+    'Pacific/Efate': TimeZoneNames(
+      exemplarCity: 'Εφάτε',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Έντερμπερι',
+    ),
+    'Pacific/Fakaofo': TimeZoneNames(
+      exemplarCity: 'Φακαόφο',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      exemplarCity: 'Φίτζι',
+    ),
+    'Pacific/Funafuti': TimeZoneNames(
+      exemplarCity: 'Φουναφούτι',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      exemplarCity: 'Γκαλάπαγκος',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      exemplarCity: 'Γκάμπιερ',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      exemplarCity: 'Γκουανταλκανάλ',
+    ),
+    'Pacific/Guam': TimeZoneNames(
+      exemplarCity: 'Γκουάμ',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      exemplarCity: 'Χονολουλού',
+    ),
+    'Pacific/Kanton': TimeZoneNames(
+      exemplarCity: 'Καντών',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      exemplarCity: 'Κιριτιμάτι',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      exemplarCity: 'Κόσραϊ',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      exemplarCity: 'Κουατζαλέιν',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      exemplarCity: 'Ματζούρο',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      exemplarCity: 'Μαρκέζας',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      exemplarCity: 'Μίντγουεϊ',
+    ),
+    'Pacific/Nauru': TimeZoneNames(
+      exemplarCity: 'Ναούρου',
+    ),
+    'Pacific/Niue': TimeZoneNames(
+      exemplarCity: 'Νιούε',
+    ),
+    'Pacific/Norfolk': TimeZoneNames(
+      exemplarCity: 'Νόρφολκ',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: 'Νουμέα',
+    ),
+    'Pacific/Pago_Pago': TimeZoneNames(
+      exemplarCity: 'Πάγκο Πάγκο',
+    ),
+    'Pacific/Palau': TimeZoneNames(
+      exemplarCity: 'Παλάου',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      exemplarCity: 'Πίτκερν',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: 'Πονάπε',
+    ),
+    'Pacific/Port_Moresby': TimeZoneNames(
+      exemplarCity: 'Πορτ Μόρεσμπι',
+    ),
+    'Pacific/Rarotonga': TimeZoneNames(
+      exemplarCity: 'Ραροτόνγκα',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      exemplarCity: 'Σαϊπάν',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      exemplarCity: 'Ταϊτή',
+    ),
+    'Pacific/Tarawa': TimeZoneNames(
+      exemplarCity: 'Ταράουα',
+    ),
+    'Pacific/Tongatapu': TimeZoneNames(
+      exemplarCity: 'Τονγκατάπου',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: 'Τσουκ',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      exemplarCity: 'Γουέικ',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      exemplarCity: 'Γουάλις',
+    ),
+    'Arctic/Longyearbyen': TimeZoneNames(
+      exemplarCity: 'Λόνγκιεαρμπιεν',
+    ),
+    'Antarctica/Casey': TimeZoneNames(
+      exemplarCity: 'Κάσεϊ',
+    ),
+    'Antarctica/Davis': TimeZoneNames(
+      exemplarCity: 'Ντέιβις',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Ντιμόν ντ’ Ουρβίλ',
+    ),
+    'Antarctica/Macquarie': TimeZoneNames(
+      exemplarCity: 'Μακουάρι',
+    ),
+    'Antarctica/Mawson': TimeZoneNames(
+      exemplarCity: 'Μόσον',
+    ),
+    'Antarctica/McMurdo': TimeZoneNames(
+      exemplarCity: 'Μακμέρντο',
+    ),
+    'Antarctica/Palmer': TimeZoneNames(
+      exemplarCity: 'Πάλμερ',
+    ),
+    'Antarctica/Rothera': TimeZoneNames(
+      exemplarCity: 'Ρόθερα',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      exemplarCity: 'Σίοβα',
+    ),
+    'Antarctica/Troll': TimeZoneNames(
+      exemplarCity: 'Τρολ',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      exemplarCity: 'Βόστοκ',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'Συντονισμένη Παγκόσμια Ώρα',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: 'Άγνωστη πόλη',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'Ώρα Αφγανιστάν',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'Ώρα Κεντρικής Αφρικής',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'Ώρα Ανατολικής Αφρικής',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'Χειμερινή ώρα Νότιας Αφρικής',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Αφρικής',
+        standard: 'Χειμερινή ώρα Δυτικής Αφρικής',
+        daylight: 'Θερινή ώρα Δυτικής Αφρικής',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'Ώρα Αλάσκας',
+        standard: 'Χειμερινή ώρα Αλάσκας',
+        daylight: 'Θερινή ώρα Αλάσκας',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'Ώρα Αμαζονίου',
+        standard: 'Χειμερινή ώρα Αμαζονίου',
+        daylight: 'Θερινή ώρα Αμαζονίου',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'Κεντρική ώρα Βόρειας Αμερικής',
+        standard: 'Κεντρική χειμερινή ώρα Βόρειας Αμερικής',
+        daylight: 'Κεντρική θερινή ώρα Βόρειας Αμερικής',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Ανατολική ώρα Βόρειας Αμερικής',
+        standard: 'Ανατολική χειμερινή ώρα Βόρειας Αμερικής',
+        daylight: 'Ανατολική θερινή ώρα Βόρειας Αμερικής',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Ορεινή ώρα Βόρειας Αμερικής',
+        standard: 'Ορεινή χειμερινή ώρα Βόρειας Αμερικής',
+        daylight: 'Ορεινή θερινή ώρα Βόρειας Αμερικής',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Ώρα Ειρηνικού',
+        standard: 'Χειμερινή ώρα Ειρηνικού',
+        daylight: 'Θερινή ώρα Ειρηνικού',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'Ώρα Αναντίρ',
+        standard: 'Χειμερινή ώρα Αναντίρ',
+        daylight: 'Θερινή ώρα Αναντίρ',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'Ώρα Απία',
+        standard: 'Χειμερινή ώρα Απία',
+        daylight: 'Θερινή ώρα Απία',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'Αραβική ώρα',
+        standard: 'Αραβική χειμερινή ώρα',
+        daylight: 'Αραβική θερινή ώρα',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'Ώρα Αργεντινής',
+        standard: 'Χειμερινή ώρα Αργεντινής',
+        daylight: 'Θερινή ώρα Αργεντινής',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Αργεντινής',
+        standard: 'Χειμερινή ώρα Δυτικής Αργεντινής',
+        daylight: 'Θερινή ώρα Δυτικής Αργεντινής',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'Ώρα Αρμενίας',
+        standard: 'Χειμερινή ώρα Αρμενίας',
+        daylight: 'Θερινή ώρα Αρμενίας',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'Ώρα Ατλαντικού',
+        standard: 'Χειμερινή ώρα Ατλαντικού',
+        daylight: 'Θερινή ώρα Ατλαντικού',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Ώρα Κεντρικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Κεντρικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Κεντρικής Αυστραλίας',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Ώρα Κεντροδυτικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Κεντροδυτικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Κεντροδυτικής Αυστραλίας',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Ώρα Ανατολικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Ανατολικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Ανατολικής Αυστραλίας',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Δυτικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Δυτικής Αυστραλίας',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Ώρα Αζερμπαϊτζάν',
+        standard: 'Χειμερινή ώρα Αζερμπαϊτζάν',
+        daylight: 'Θερινή ώρα Αζερμπαϊτζάν',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'Ώρα Αζορών',
+        standard: 'Χειμερινή ώρα Αζορών',
+        daylight: 'Θερινή ώρα Αζορών',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Ώρα Μπανγκλαντές',
+        standard: 'Χειμερινή ώρα Μπανγκλαντές',
+        daylight: 'Θερινή ώρα Μπανγκλαντές',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'Ώρα Μπουτάν',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'Ώρα Βολιβίας',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'Ώρα Μπραζίλιας',
+        standard: 'Χειμερινή ώρα Μπραζίλιας',
+        daylight: 'Θερινή ώρα Μπραζίλιας',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'Ώρα Μπρουνέι Νταρουσαλάμ',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Ώρα Πράσινου Ακρωτηρίου',
+        standard: 'Χειμερινή ώρα Πράσινου Ακρωτηρίου',
+        daylight: 'Θερινή ώρα Πράσινου Ακρωτηρίου',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'Ώρα Τσαμόρο',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'Ώρα Τσάταμ',
+        standard: 'Χειμερινή ώρα Τσάταμ',
+        daylight: 'Θερινή ώρα Τσάταμ',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'Ώρα Χιλής',
+        standard: 'Χειμερινή ώρα Χιλής',
+        daylight: 'Θερινή ώρα Χιλής',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'Ώρα Κίνας',
+        standard: 'Χειμερινή ώρα Κίνας',
+        daylight: 'Θερινή ώρα Κίνας',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσου Χριστουγέννων',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσων Κόκος',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'Ώρα Κολομβίας',
+        standard: 'Χειμερινή ώρα Κολομβίας',
+        daylight: 'Θερινή ώρα Κολομβίας',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσων Κουκ',
+        standard: 'Χειμερινή ώρα Νήσων Κουκ',
+        daylight: 'Θερινή ώρα Νήσων Κουκ',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'Ώρα Κούβας',
+        standard: 'Χειμερινή ώρα Κούβας',
+        daylight: 'Θερινή ώρα Κούβας',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'Ώρα Ντέιβις',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'Ώρα Ντιμόν ντ’ Ουρβίλ',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'Ώρα Ανατολικού Τιμόρ',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσου Πάσχα',
+        standard: 'Χειμερινή ώρα Νήσου Πάσχα',
+        daylight: 'Θερινή ώρα Νήσου Πάσχα',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'Ώρα Ισημερινού',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Ώρα Κεντρικής Ευρώπης',
+        standard: 'Χειμερινή ώρα Κεντρικής Ευρώπης',
+        daylight: 'Θερινή ώρα Κεντρικής Ευρώπης',
+      ),
+      short: TimeZoneName(
+        generic: 'CET',
+        standard: 'CET',
+        daylight: 'CEST',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Ώρα Ανατολικής Ευρώπης',
+        standard: 'Χειμερινή ώρα Ανατολικής Ευρώπης',
+        daylight: 'Θερινή ώρα Ανατολικής Ευρώπης',
+      ),
+      short: TimeZoneName(
+        generic: 'EET',
+        standard: 'EET',
+        daylight: 'EEST',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'Ώρα περαιτέρω Ανατολικής Ευρώπης',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Ευρώπης',
+        standard: 'Χειμερινή ώρα Δυτικής Ευρώπης',
+        daylight: 'Θερινή ώρα Δυτικής Ευρώπης',
+      ),
+      short: TimeZoneName(
+        generic: 'WET',
+        standard: 'WET',
+        daylight: 'WEST',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσων Φόκλαντ',
+        standard: 'Χειμερινή ώρα Νήσων Φόκλαντ',
+        daylight: 'Θερινή ώρα Νήσων Φόκλαντ',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'Ώρα Φίτζι',
+        standard: 'Χειμερινή ώρα Φίτζι',
+        daylight: 'Θερινή ώρα Φίτζι',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'Ώρα Γαλλικής Γουιάνας',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'Ώρα Γαλλικού Νότου και Ανταρκτικής',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'Ώρα Γκαλάπαγκος',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'Ώρα Γκάμπιερ',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'Ώρα Γεωργίας',
+        standard: 'Χειμερινή ώρα Γεωργίας',
+        daylight: 'Θερινή ώρα Γεωργίας',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσων Γκίλμπερτ',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'Μέση ώρα Γκρίνουιτς',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Ώρα Ανατολικής Γροιλανδίας',
+        standard: 'Χειμερινή ώρα Ανατολικής Γροιλανδίας',
+        daylight: 'Θερινή ώρα Ανατολικής Γροιλανδίας',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Γροιλανδίας',
+        standard: 'Χειμερινή ώρα Δυτικής Γροιλανδίας',
+        daylight: 'Θερινή ώρα Δυτικής Γροιλανδίας',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'Ώρα Γκουάμ',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'Ώρα Κόλπου',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'Ώρα Γουιάνας',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Ώρα Χαβάης-Αλεούτιων Νήσων',
+        standard: 'Χειμερινή ώρα Χαβάης-Αλεούτιων Νήσων',
+        daylight: 'Θερινή ώρα Χαβάης-Αλεούτιων Νήσων',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Ώρα Χονγκ Κονγκ',
+        standard: 'Χειμερινή ώρα Χονγκ Κονγκ',
+        daylight: 'Θερινή ώρα Χονγκ Κονγκ',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'Ώρα Χοβντ',
+        standard: 'Χειμερινή ώρα Χοβντ',
+        daylight: 'Θερινή ώρα Χοβντ',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'Ώρα Ινδίας',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'Ώρα Ινδικού Ωκεανού',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'Ώρα Ινδοκίνας',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'Ώρα Κεντρικής Ινδονησίας',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'Ώρα Ανατολικής Ινδονησίας',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'Ώρα Δυτικής Ινδονησίας',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'Ώρα Ιράν',
+        standard: 'Χειμερινή ώρα Ιράν',
+        daylight: 'Θερινή ώρα Ιράν',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Ιρκούτσκ',
+        standard: 'Χειμερινή ώρα Ιρκούτσκ',
+        daylight: 'Θερινή ώρα Ιρκούτσκ',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'Ώρα Ισραήλ',
+        standard: 'Χειμερινή ώρα Ισραήλ',
+        daylight: 'Θερινή ώρα Ισραήλ',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'Ώρα Ιαπωνίας',
+        standard: 'Χειμερινή ώρα Ιαπωνίας',
+        daylight: 'Θερινή ώρα Ιαπωνίας',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Ώρα Καμτσάτκα',
+        standard: 'Χειμερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι',
+        daylight: 'Θερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Ώρα Καζακστάν',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'Ώρα Ανατολικού Καζακστάν',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'Ώρα Δυτικού Καζακστάν',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'Ώρα Κορέας',
+        standard: 'Χειμερινή ώρα Κορέας',
+        daylight: 'Θερινή ώρα Κορέας',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'Ώρα Κόσραϊ',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Κρασνογιάρσκ',
+        standard: 'Χειμερινή ώρα Κρασνογιάρσκ',
+        daylight: 'Θερινή ώρα Κρασνογιάρσκ',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'Ώρα Κιργιστάν',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσων Λάιν',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Ώρα Λορντ Χάου',
+        standard: 'Χειμερινή ώρα Λορντ Χάου',
+        daylight: 'Θερινή ώρα Λορντ Χάου',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'Ώρα Μακάο',
+        standard: 'Χειμερινή ώρα Μακάο',
+        daylight: 'Θερινή ώρα Μακάο',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'Ώρα Μαγκαντάν',
+        standard: 'Χειμερινή ώρα Μαγκαντάν',
+        daylight: 'Θερινή ώρα Μαγκαντάν',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'Ώρα Μαλαισίας',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'Ώρα Μαλδίβων',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'Ώρα Μαρκέζας',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσων Μάρσαλ',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'Ώρα Μαυρίκιου',
+        standard: 'Χειμερινή ώρα Μαυρίκιου',
+        daylight: 'Θερινή ώρα Μαυρίκιου',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'Ώρα Μόσον',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Ώρα Ειρηνικού Μεξικού',
+        standard: 'Χειμερινή ώρα Ειρηνικού Μεξικού',
+        daylight: 'Θερινή ώρα Ειρηνικού Μεξικού',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'Ώρα Ουλάν Μπατόρ',
+        standard: 'Χειμερινή ώρα Ουλάν Μπατόρ',
+        daylight: 'Θερινή ώρα Ουλάν Μπατόρ',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'Ώρα Μόσχας',
+        standard: 'Χειμερινή ώρα Μόσχας',
+        daylight: 'Θερινή ώρα Μόσχας',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'Ώρα Μιανμάρ',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'Ώρα Ναούρου',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'Ώρα Νεπάλ',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Ώρα Νέας Καληδονίας',
+        standard: 'Χειμερινή ώρα Νέας Καληδονίας',
+        daylight: 'Θερινή ώρα Νέας Καληδονίας',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Ώρα Νέας Ζηλανδίας',
+        standard: 'Χειμερινή ώρα Νέας Ζηλανδίας',
+        daylight: 'Θερινή ώρα Νέας Ζηλανδίας',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Ώρα Νέας Γης',
+        standard: 'Χειμερινή ώρα Νέας Γης',
+        daylight: 'Θερινή ώρα Νέας Γης',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'Ώρα Νιούε',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσου Νόρφολκ',
+        standard: 'Χειμερινή ώρα Νήσου Νόρφολκ',
+        daylight: 'Θερινή ώρα Νήσου Νόρφολκ',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'Ώρα Φερνάρντο ντε Νορόνια',
+        standard: 'Χειμερινή ώρα Φερνάρντο ντε Νορόνια',
+        daylight: 'Θερινή ώρα Φερνάρντο ντε Νορόνια',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'Ώρα Νησιών Βόρειες Μαριάνες',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Νοβοσιμπίρσκ',
+        standard: 'Χειμερινή ώρα Νοβοσιμπίρσκ',
+        daylight: 'Θερινή ώρα Νοβοσιμπίρσκ',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Ομσκ',
+        standard: 'Χειμερινή ώρα Ομσκ',
+        daylight: 'Θερινή ώρα Ομσκ',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'Ώρα Πακιστάν',
+        standard: 'Χειμερινή ώρα Πακιστάν',
+        daylight: 'Θερινή ώρα Πακιστάν',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'Ώρα Παλάου',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'Ώρα Παπούας Νέας Γουινέας',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'Ώρα Παραγουάης',
+        standard: 'Χειμερινή ώρα Παραγουάης',
+        daylight: 'Θερινή ώρα Παραγουάης',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'Ώρα Περού',
+        standard: 'Χειμερινή ώρα Περού',
+        daylight: 'Θερινή ώρα Περού',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'Ώρα Φιλιππινών',
+        standard: 'Χειμερινή ώρα Φιλιππινών',
+        daylight: 'Θερινή ώρα Φιλιππινών',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσων Φοίνιξ',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Ώρα Σεν Πιερ και Μικελόν',
+        standard: 'Χειμερινή ώρα Σεν Πιερ και Μικελόν',
+        daylight: 'Θερινή ώρα Σεν Πιερ και Μικελόν',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'Ώρα Πίτκερν',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'Ώρα Πονάπε',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'Ώρα Πιονγιάνγκ',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'Ώρα Ρεϊνιόν',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'Ώρα Ρόθερα',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Ώρα Σαχαλίνης',
+        standard: 'Χειμερινή ώρα Σαχαλίνης',
+        daylight: 'Θερινή ώρα Σαχαλίνης',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'Ώρα Σάμαρας',
+        standard: 'Χειμερινή ώρα Σάμαρας',
+        daylight: 'Θερινή ώρα Σαμάρας',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'Ώρα Σαμόα',
+        standard: 'Χειμερινή ώρα Σαμόα',
+        daylight: 'Θερινή ώρα Σαμόα',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'Ώρα Σεϋχελλών',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'Ώρα Σιγκαπούρης',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσων Σολομώντος',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'Ώρα Νότιας Γεωργίας',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'Ώρα Σουρινάμ',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'Ώρα Σίοβα',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'Ώρα Ταϊτής',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'Ώρα Ταϊπέι',
+        standard: 'Χειμερινή ώρα Ταϊπέι',
+        daylight: 'Θερινή ώρα Ταϊπέι',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'Ώρα Τατζικιστάν',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'Ώρα Τοκελάου',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'Ώρα Τόνγκα',
+        standard: 'Χειμερινή ώρα Τόνγκα',
+        daylight: 'Θερινή ώρα Τόνγκα',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'Ώρα Τσουκ',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Ώρα Τουρκμενιστάν',
+        standard: 'Χειμερινή ώρα Τουρκμενιστάν',
+        daylight: 'Θερινή ώρα Τουρκμενιστάν',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'Ώρα Τουβαλού',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'Ώρα Ουρουγουάης',
+        standard: 'Χειμερινή ώρα Ουρουγουάης',
+        daylight: 'Θερινή ώρα Ουρουγουάης',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Ώρα Ουζμπεκιστάν',
+        standard: 'Χειμερινή ώρα Ουζμπεκιστάν',
+        daylight: 'Θερινή ώρα Ουζμπεκιστάν',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Ώρα Βανουάτου',
+        standard: 'Χειμερινή ώρα Βανουάτου',
+        daylight: 'Θερινή ώρα Βανουάτου',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'Ώρα Βενεζουέλας',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Ώρα Βλαδιβοστόκ',
+        standard: 'Χειμερινή ώρα Βλαδιβοστόκ',
+        daylight: 'Θερινή ώρα Βλαδιβοστόκ',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'Ώρα Βόλγκογκραντ',
+        standard: 'Χειμερινή ώρα Βόλγκογκραντ',
+        daylight: 'Θερινή ώρα Βόλγκογκραντ',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'Ώρα Βόστοκ',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'Ώρα Νήσου Γουέικ',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'Ώρα Ουάλις και Φουτούνα',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Γιακούτσκ',
+        standard: 'Χειμερινή ώρα Γιακούτσκ',
+        daylight: 'Θερινή ώρα Γιακούτσκ',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Ώρα Αικατερίνμπουργκ',
+        standard: 'Χειμερινή ώρα Αικατερίνμπουργκ',
+        daylight: 'Θερινή ώρα Αικατερίνμπουργκ',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'Ώρα Γιούκον',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

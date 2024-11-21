@@ -2,9 +2,6 @@
   "main": {
     "sk": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "sk"
       },
       "localeDisplayNames": {
@@ -160,6 +157,8 @@
           "IM": "Ostrov Man",
           "IN": "India",
           "IO": "Britské indickooceánske územie",
+          "IO-alt-biot": "Britské indickooceánske územie",
+          "IO-alt-chagos": "Čagoské ostrovy",
           "IQ": "Irak",
           "IR": "Irán",
           "IS": "Island",
@@ -226,7 +225,7 @@
           "NR": "Nauru",
           "NU": "Niue",
           "NZ": "Nový Zéland",
-          "NZ-alt-variant": "Nový Zéland",
+          "NZ-alt-variant": "Aotearoa – Nový Zéland",
           "OM": "Omán",
           "PA": "Panama",
           "PE": "Peru",

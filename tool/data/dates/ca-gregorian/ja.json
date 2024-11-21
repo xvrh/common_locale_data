@@ -2,9 +2,6 @@
   "main": {
     "ja": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "ja"
       },
       "dates": {

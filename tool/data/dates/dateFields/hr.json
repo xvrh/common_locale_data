@@ -2,9 +2,6 @@
   "main": {
     "hr": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "hr"
       },
       "dates": {

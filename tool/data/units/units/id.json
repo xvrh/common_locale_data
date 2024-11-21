@@ -2,9 +2,6 @@
   "main": {
     "id": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "id"
       },
       "units": {
@@ -39,6 +36,12 @@
           "10p-24": {
             "unitPrefixPattern": "yocto{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ronto{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "quecto{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "deka{0}"
           },
@@ -68,6 +71,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "yotta{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "ronna{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "quetta{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "kibi{0}"
@@ -701,6 +710,10 @@
             "displayName": "knot",
             "unitPattern-count-other": "{0} knot"
           },
+          "speed-beaufort": {
+            "displayName": "Beaufort",
+            "unitPattern-count-other": "Beaufort {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-other": "{0}°"
@@ -866,6 +879,19 @@
             "displayName": "quart Imp.",
             "unitPattern-count-other": "{0} quart Imp."
           },
+          "speed-light-speed": {
+            "displayName": "cahaya",
+            "unitPattern-count-other": "{0} cahaya"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "bagian per miliar",
+            "unitPattern-count-other": "{0} bagian per miliar"
+          },
+          "duration-night": {
+            "displayName": "malam",
+            "unitPattern-count-other": "{0} malam",
+            "perUnitPattern": "{0} per malam"
+          },
           "coordinateUnit": {
             "displayName": "arah mata angin",
             "east": "{0} timur",
@@ -905,6 +931,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -934,6 +966,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -1310,6 +1348,10 @@
             "displayName": "dpi",
             "unitPattern-count-other": "{0} dpi"
           },
+          "graphics-dot": {
+            "displayName": "dot",
+            "unitPattern-count-other": "{0} dot"
+          },
           "length-earth-radius": {
             "displayName": "R⊕",
             "unitPattern-count-other": "{0} R⊕"
@@ -1563,6 +1605,10 @@
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-other": "{0}°"
@@ -1728,6 +1774,19 @@
             "displayName": "qt Imp.",
             "unitPattern-count-other": "{0} qt Imp."
           },
+          "speed-light-speed": {
+            "displayName": "cahaya",
+            "unitPattern-count-other": "{0} cahaya"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "bagian/miliar",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "malam",
+            "unitPattern-count-other": "{0} malam",
+            "perUnitPattern": "{0}/malam"
+          },
           "coordinateUnit": {
             "displayName": "arah",
             "east": "{0} T",
@@ -1767,6 +1826,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -1796,6 +1861,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -2429,6 +2500,10 @@
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-other": "{0}°"
@@ -2593,6 +2668,19 @@
           "volume-quart-imperial": {
             "displayName": "qt Imp",
             "unitPattern-count-other": "{0} qt Imp."
+          },
+          "speed-light-speed": {
+            "displayName": "cahaya",
+            "unitPattern-count-other": "{0} cahaya"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "bagian/miliar",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "malam",
+            "unitPattern-count-other": "{0} malam",
+            "perUnitPattern": "{0}/malam"
           },
           "coordinateUnit": {
             "displayName": "arah",

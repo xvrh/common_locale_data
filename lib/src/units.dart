@@ -2,8 +2,18 @@ import 'package:intl/intl.dart';
 
 export 'units_model.dart';
 
+/// Localized unit information.
+///
+/// {@category Units}
 class Unit {
-  UnitCountPattern long, short, narrow;
+  /// Localized long unit information.
+  UnitCountPattern long;
+
+  /// Localized short unit information.
+  UnitCountPattern short;
+
+  /// Localized narrow unit information.
+  UnitCountPattern narrow;
 
   Unit({required this.long, required this.short, required this.narrow});
 
@@ -11,11 +21,32 @@ class Unit {
   String toString() => long.displayName;
 }
 
+/// Localized unit information for single length.
+///
+/// {@category Units}
 class UnitCountPattern {
   final String _locale;
+
+  /// Localized display name of the unit.
   final String displayName;
+
+  /// Localized pattern for 0 units.
+  final String? zero;
+
+  /// Localized pattern for 1 unit.
+  final String? one;
+
+  /// Localized pattern for 2 units.
+  final String? two;
+
+  /// Localized pattern for a few units.
+  final String? few;
+
+  /// Localized pattern for many units.
+  final String? many;
+
+  /// Localized pattern for an other amount of units.
   final String other;
-  final String? one, zero, two, few, many;
 
   UnitCountPattern(
     this._locale,
@@ -57,8 +88,18 @@ class UnitCountPattern {
   String toString([num? howMany]) => call(howMany ?? 1);
 }
 
+/// Localized unit prefix information.
+///
+/// {@category Units}
 class UnitPrefix {
-  UnitPrefixPattern long, short, narrow;
+  /// Localized long unit information.
+  UnitPrefixPattern long;
+
+  /// Localized short unit information.
+  UnitPrefixPattern short;
+
+  /// Localized narrow unit information.
+  UnitPrefixPattern narrow;
 
   UnitPrefix({required this.long, required this.short, required this.narrow});
 
@@ -68,7 +109,11 @@ class UnitPrefix {
   String toString() => long.pattern;
 }
 
+/// Localized unit prefix information for a single length.
+///
+/// {@category Units}
 class UnitPrefixPattern {
+  /// Localized pattern for unit prefix.
   final String pattern;
 
   UnitPrefixPattern(this.pattern);
@@ -84,8 +129,18 @@ class UnitPrefixPattern {
   String call(String value) => pattern.replaceAll('{0}', value);
 }
 
+/// Localized compound unit information.
+///
+/// {@category Units}
 class CompoundUnit {
-  CompoundUnitPattern long, short, narrow;
+  /// Localized long unit information.
+  CompoundUnitPattern long;
+
+  /// Localized short unit information.
+  CompoundUnitPattern short;
+
+  /// Localized narrow unit information.
+  CompoundUnitPattern narrow;
 
   CompoundUnit({required this.long, required this.short, required this.narrow});
 
@@ -95,7 +150,11 @@ class CompoundUnit {
   String toString() => long.pattern;
 }
 
+/// Localized compound unit information for a single length.
+///
+/// {@category Units}
 class CompoundUnitPattern {
+  /// Localized pattern for compound unit.
   final String pattern;
 
   CompoundUnitPattern(this.pattern);

@@ -1,5 +1,8 @@
 import 'units.dart';
 
+/// Container for localized unit names.
+///
+/// {@category Units}
 abstract class Units {
   /// deci{0}
   UnitPrefix get pattern10pMinus1;
@@ -31,6 +34,12 @@ abstract class Units {
   /// yocto{0}
   UnitPrefix get pattern10pMinus24;
 
+  /// ronto{0}
+  UnitPrefix get pattern10pMinus27;
+
+  /// quecto{0}
+  UnitPrefix get pattern10pMinus30;
+
   /// deka{0}
   UnitPrefix get pattern10p1;
 
@@ -60,6 +69,12 @@ abstract class Units {
 
   /// yotta{0}
   UnitPrefix get pattern10p24;
+
+  /// ronna{0}
+  UnitPrefix get pattern10p27;
+
+  /// quetta{0}
+  UnitPrefix get pattern10p30;
 
   /// kibi{0}
   UnitPrefix get pattern1024p1;
@@ -520,6 +535,9 @@ abstract class Units {
   /// knots
   Unit get speedKnot;
 
+  /// Beaufort
+  Unit get speedBeaufort;
+
   /// degrees temperature
   Unit get temperatureGeneric;
 
@@ -639,4 +657,16 @@ abstract class Units {
 
   /// Imp. quarts
   Unit get volumeQuartImperial;
+
+  /// of gasoline equivalent
+  Unit get pressureGasolineEnergyDensity;
+
+  /// light
+  Unit get speedLightSpeed;
+
+  /// parts per billion
+  Unit get concentrPortionPer1e9;
+
+  /// nights
+  Unit get durationNight;
 }

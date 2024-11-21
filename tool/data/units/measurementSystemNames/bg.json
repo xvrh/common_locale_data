@@ -2,9 +2,6 @@
   "main": {
     "bg": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "bg"
       },
       "localeDisplayNames": {

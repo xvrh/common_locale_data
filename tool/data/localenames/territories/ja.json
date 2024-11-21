@@ -2,9 +2,6 @@
   "main": {
     "ja": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "ja"
       },
       "localeDisplayNames": {
@@ -160,6 +157,8 @@
           "IM": "マン島",
           "IN": "インド",
           "IO": "英領インド洋地域",
+          "IO-alt-biot": "英領インド洋地域",
+          "IO-alt-chagos": "チャゴス諸島",
           "IQ": "イラク",
           "IR": "イラン",
           "IS": "アイスランド",

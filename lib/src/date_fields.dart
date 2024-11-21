@@ -1,6 +1,9 @@
 import 'package:intl/intl.dart';
 import 'shared.dart';
 
+/// Localized date and time related texts.
+///
+/// {@category Dates}
 abstract class DateFields {
   MultiLength get era;
   DateFieldFullData get year;
@@ -31,17 +34,26 @@ abstract class DateFields {
   MultiLength get dayperiod;
 }
 
+/// Localized date/time field names.
+///
+/// {@category Dates}
 class DateFieldData {
   final MultiLength now;
 
   DateFieldData({required this.now});
 }
 
+/// Localized relative date/time field names.
+///
+/// {@category Dates}
 abstract class RelativeDateFieldData {
   MultiLengthRelativeTime get past;
   MultiLengthRelativeTime get future;
 }
 
+/// Localized relative date/time field names.
+///
+/// {@category Dates}
 class DateFieldDataWithRelative extends DateFieldData
     implements RelativeDateFieldData {
   final MultiLength previous, next;
@@ -49,35 +61,36 @@ class DateFieldDataWithRelative extends DateFieldData
   final MultiLengthRelativeTime past, future;
 
   DateFieldDataWithRelative({
-    required MultiLength now,
+    required super.now,
     required this.previous,
     required this.next,
     required this.past,
     required this.future,
-  }) : super(now: now);
+  });
 }
 
+/// Localized full date/time field names.
+///
+/// {@category Dates}
 class DateFieldFullData extends DateFieldDataWithRelative {
   final MultiLength displayName;
 
   DateFieldFullData({
     required this.displayName,
-    required MultiLength now,
-    required MultiLength previous,
-    required MultiLength next,
-    required MultiLengthRelativeTime past,
-    required MultiLengthRelativeTime future,
-  }) : super(
-            now: now,
-            previous: previous,
-            next: next,
-            past: past,
-            future: future);
+    required super.now,
+    required super.previous,
+    required super.next,
+    required super.past,
+    required super.future,
+  });
 
   @override
   String toString() => displayName.toString();
 }
 
+/// Localized full time field names.
+///
+/// {@category Dates}
 class DateFieldDataTime extends DateFieldData implements RelativeDateFieldData {
   final MultiLength displayName;
   @override
@@ -85,15 +98,18 @@ class DateFieldDataTime extends DateFieldData implements RelativeDateFieldData {
 
   DateFieldDataTime({
     required this.displayName,
-    required MultiLength now,
+    required super.now,
     required this.past,
     required this.future,
-  }) : super(now: now);
+  });
 
   @override
   String toString() => displayName.toString();
 }
 
+/// Localized relative time field names.
+///
+/// {@category Dates}
 class MultiLengthRelativeTime {
   RelativeTime long, short, narrow;
 
@@ -112,6 +128,9 @@ class MultiLengthRelativeTime {
       long(howMany, numberFormat: numberFormat, placeholder: placeholder);
 }
 
+/// Localized relative time field names for single length.
+///
+/// {@category Dates}
 class RelativeTime {
   final String _locale;
   final String other;

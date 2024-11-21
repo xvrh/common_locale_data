@@ -1,9 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:common_locale_data/common_locale_data.dart';
-import 'package:common_locale_data/src/supported_locales.dart';
+import 'package:analyzer/dart/ast/token.dart';
+import 'package:common_locale_data/src/data/en.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
+import 'utils/case_format.dart';
+import 'utils/supported_locales.dart';
+import 'utils/versions.dart';
 
 final RegExp _importRegex = RegExp(r"import '([^']+)';\r?\n");
 
@@ -40,10 +43,52 @@ String generateReadme(File source) {
   });
 
   readme = readme.replaceAll(
-      '##LANGUAGE_LIST##',
-      supportedLocales
-          .map((l) => CommonLocaleData.en.languages[l]!.name)
-          .join(', '));
+      '##LOCALE_LIST##',
+      ([
+                '| Locale | Description | Constant | Class | Import |',
+                '| ------ | ----------- | ------ | ----- | ------ |'
+              ] +
+              getSupportedLocales().map((locale) {
+                var localeParts = locale.split('-');
+                var description =
+                    CommonLocaleDataEn().languages[localeParts.first]?.name ??
+                        '?';
+
+                var script = localeParts.length > 1
+                    ? CommonLocaleDataEn().scripts[localeParts[1]]?.name
+                    : null;
+
+                var country = localeParts.length > 1
+                    ? CommonLocaleDataEn()
+                        .territories
+                        .countries[localeParts.last]
+                        ?.name
+                    : null;
+
+                if (country != null || script != null) {
+                  description = '$description (${[
+                    script,
+                    country
+                  ].whereType<String>().join(', ')})';
+                }
+
+                var localeConstantName = locale.toLowerCamelCase();
+                if (Keyword.keywords.containsKey(localeConstantName)) {
+                  localeConstantName = '\$$localeConstantName';
+                }
+
+                return "| <nobr>$locale</nobr> | <nobr>$description</nobr> | <nobr>$localeConstantName</nobr> | <nobr>CommonLocaleData${locale.toUpperCamelCase()}</nobr> | <nobr>import 'package:common_locale_data/${locale.toSnakeCase()}';</nobr> |";
+              }).toList())
+          .join(Platform.isWindows ? '  \r\n' : '  \n'));
+
+  var version = getDataVersions();
+
+  readme =
+      readme.replaceAll('##DOWNLOAD_DATE##', version.date.toUtc().toString());
+  readme = readme.replaceAll('##CLDR_VERSION##', version.cldr);
+  readme = readme.replaceAll('##CLDR_VARIANT##', version.cldrVariant);
+  readme = readme.replaceAll('##UNICODE_VERSION##', version.unicode);
+  readme = readme.replaceAll('##TZDB_VERSION##', version.tzdb);
 
   return readme;
 }

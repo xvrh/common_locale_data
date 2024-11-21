@@ -2,9 +2,6 @@
   "main": {
     "da": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "da"
       },
       "localeDisplayNames": {

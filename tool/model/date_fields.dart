@@ -2,21 +2,21 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:path/path.dart' as p;
-import '../generate_code.dart';
+import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 
 part 'date_fields.g.dart';
 
-void generateDateFields(String language, StringBuffer buffer) {
-  var file = File(p.join('tool/data/dates/dateFields/$language.json'));
+void generateDateFields(String locale, StringBuffer buffer) {
+  var file = File(p.join('tool/data/dates/dateFields/$locale.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
   var fields =
       // ignore: avoid_dynamic_calls
-      json['main'][language]['dates']['fields'] as Map<String, dynamic>;
+      json['main'][locale]['dates']['fields'] as Map<String, dynamic>;
   buffer.writeln(
-      '''class DateFields${languageUpper(language)} implements DateFields {
-      DateFields${languageUpper(language)}._();
+      '''class DateFields${locale.toUpperCamelCase()} implements DateFields {
+      DateFields${locale.toUpperCamelCase()}._();
       ''');
   for (var key in fields.keys.where((k) => !k.contains('-'))) {
     var field = DateField.fromJson(fields[key] as Map<String, dynamic>);

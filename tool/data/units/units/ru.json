@@ -2,9 +2,6 @@
   "main": {
     "ru": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "ru"
       },
       "units": {
@@ -39,6 +36,12 @@
           "10p-24": {
             "unitPrefixPattern": "иокто{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ронто{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "квекто{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "дека{0}"
           },
@@ -68,6 +71,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "иотта{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "ронна{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "кветта{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "киби{0}"
@@ -105,7 +114,6 @@
             "compoundUnitPattern1-count-one-case-instrumental": "квадратным {0}",
             "compoundUnitPattern1-count-one-case-locative": "квадратном {0}",
             "compoundUnitPattern1-count-one-case-prepositional": "квадратном {0}",
-            "compoundUnitPattern1-count-one-case-vocative": "квадратный {0}",
             "compoundUnitPattern1-gender-feminine-count-one": "квадратная {0}",
             "compoundUnitPattern1-gender-feminine-count-one-case-accusative": "квадратную {0}",
             "compoundUnitPattern1-gender-feminine-count-one-case-dative": "квадратной {0}",
@@ -131,7 +139,6 @@
             "compoundUnitPattern1-gender-feminine-count-few-case-dative": "квадратным {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-genitive": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-instrumental": "квадратными {0}",
-            "compoundUnitPattern1-gender-feminine-count-few-case-locative": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-prepositional": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-vocative": "квадратные {0}",
             "compoundUnitPattern1-gender-masculine-count-few": "квадратных {0}",
@@ -145,17 +152,13 @@
             "compoundUnitPattern1-count-many-case-dative": "квадратным {0}",
             "compoundUnitPattern1-count-many-case-genitive": "квадратных {0}",
             "compoundUnitPattern1-count-many-case-instrumental": "квадратными {0}",
-            "compoundUnitPattern1-count-many-case-locative": "квадратных {0}",
             "compoundUnitPattern1-count-many-case-prepositional": "квадратных {0}",
-            "compoundUnitPattern1-count-many-case-vocative": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-many": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-accusative": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-dative": "квадратным {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-genitive": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-instrumental": "квадратными {0}",
-            "compoundUnitPattern1-gender-feminine-count-many-case-locative": "квадратных {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-prepositional": "квадратных {0}",
-            "compoundUnitPattern1-gender-feminine-count-many-case-vocative": "квадратных {0}",
             "compoundUnitPattern1-gender-masculine-count-many": "квадратных {0}",
             "compoundUnitPattern1-gender-masculine-count-many-case-accusative": "квадратных {0}",
             "compoundUnitPattern1-gender-masculine-count-many-case-dative": "квадратным {0}",
@@ -167,9 +170,7 @@
             "compoundUnitPattern1-count-other-case-dative": "квадратного {0}",
             "compoundUnitPattern1-count-other-case-genitive": "квадратного {0}",
             "compoundUnitPattern1-count-other-case-instrumental": "квадратного {0}",
-            "compoundUnitPattern1-count-other-case-locative": "квадратного {0}",
             "compoundUnitPattern1-count-other-case-prepositional": "квадратного {0}",
-            "compoundUnitPattern1-count-other-case-vocative": "квадратного {0}",
             "compoundUnitPattern1-gender-feminine-count-other": "квадратной {0}",
             "compoundUnitPattern1-gender-feminine-count-other-case-accusative": "квадратной {0}",
             "compoundUnitPattern1-gender-feminine-count-other-case-dative": "квадратной {0}",
@@ -194,7 +195,6 @@
             "compoundUnitPattern1-count-one-case-instrumental": "кубическим {0}",
             "compoundUnitPattern1-count-one-case-locative": "кубическом {0}",
             "compoundUnitPattern1-count-one-case-prepositional": "кубическом {0}",
-            "compoundUnitPattern1-count-one-case-vocative": "кубический {0}",
             "compoundUnitPattern1-gender-feminine-count-one": "кубическая {0}",
             "compoundUnitPattern1-gender-feminine-count-one-case-accusative": "кубическую {0}",
             "compoundUnitPattern1-gender-feminine-count-one-case-dative": "кубической {0}",
@@ -220,7 +220,6 @@
             "compoundUnitPattern1-gender-feminine-count-few-case-dative": "кубическим {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-genitive": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-instrumental": "кубическими {0}",
-            "compoundUnitPattern1-gender-feminine-count-few-case-locative": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-prepositional": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-few-case-vocative": "кубические {0}",
             "compoundUnitPattern1-gender-masculine-count-few": "кубических {0}",
@@ -234,17 +233,13 @@
             "compoundUnitPattern1-count-many-case-dative": "кубическим {0}",
             "compoundUnitPattern1-count-many-case-genitive": "кубических {0}",
             "compoundUnitPattern1-count-many-case-instrumental": "кубическими {0}",
-            "compoundUnitPattern1-count-many-case-locative": "кубических {0}",
             "compoundUnitPattern1-count-many-case-prepositional": "кубических {0}",
-            "compoundUnitPattern1-count-many-case-vocative": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-many": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-accusative": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-dative": "кубическим {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-genitive": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-instrumental": "кубическими {0}",
-            "compoundUnitPattern1-gender-feminine-count-many-case-locative": "кубических {0}",
             "compoundUnitPattern1-gender-feminine-count-many-case-prepositional": "кубических {0}",
-            "compoundUnitPattern1-gender-feminine-count-many-case-vocative": "кубических {0}",
             "compoundUnitPattern1-gender-masculine-count-many": "кубических {0}",
             "compoundUnitPattern1-gender-masculine-count-many-case-accusative": "кубических {0}",
             "compoundUnitPattern1-gender-masculine-count-many-case-dative": "кубическим {0}",
@@ -256,9 +251,7 @@
             "compoundUnitPattern1-count-other-case-dative": "кубического {0}",
             "compoundUnitPattern1-count-other-case-genitive": "кубического {0}",
             "compoundUnitPattern1-count-other-case-instrumental": "кубического {0}",
-            "compoundUnitPattern1-count-other-case-locative": "кубического {0}",
             "compoundUnitPattern1-count-other-case-prepositional": "кубического {0}",
-            "compoundUnitPattern1-count-other-case-vocative": "кубического {0}",
             "compoundUnitPattern1-gender-feminine-count-other": "кубической {0}",
             "compoundUnitPattern1-gender-feminine-count-other-case-accusative": "кубической {0}",
             "compoundUnitPattern1-gender-feminine-count-other-case-dative": "кубической {0}",
@@ -281,35 +274,9 @@
             "gender": "masculine",
             "displayName": "ускорение свободного падения",
             "unitPattern-count-one": "{0} g",
-            "accusative-count-one": "{0} g",
-            "dative-count-one": "{0} g",
-            "genitive-count-one": "{0} g",
-            "instrumental-count-one": "{0} g",
-            "locative-count-one": "{0} g",
-            "prepositional-count-one": "{0} g",
-            "vocative-count-one": "{0} g",
             "unitPattern-count-few": "{0} g",
-            "accusative-count-few": "{0} g",
-            "dative-count-few": "{0} g",
-            "genitive-count-few": "{0} g",
-            "instrumental-count-few": "{0} g",
-            "locative-count-few": "{0} g",
-            "prepositional-count-few": "{0} g",
-            "vocative-count-few": "{0} g",
             "unitPattern-count-many": "{0} g",
-            "accusative-count-many": "{0} g",
-            "dative-count-many": "{0} g",
-            "genitive-count-many": "{0} g",
-            "instrumental-count-many": "{0} g",
-            "locative-count-many": "{0} g",
-            "prepositional-count-many": "{0} g",
-            "vocative-count-many": "{0} g",
-            "unitPattern-count-other": "{0} g",
-            "accusative-count-other": "{0} g",
-            "dative-count-other": "{0} g",
-            "genitive-count-other": "{0} g",
-            "instrumental-count-other": "{0} g",
-            "prepositional-count-other": "{0} g"
+            "unitPattern-count-other": "{0} g"
           },
           "acceleration-meter-per-square-second": {
             "gender": "masculine",
@@ -321,7 +288,6 @@
             "instrumental-count-one": "{0} метром на секунду в квадрате",
             "locative-count-one": "{0} метре на секунду в квадрате",
             "prepositional-count-one": "{0} метре на секунду в квадрате",
-            "vocative-count-one": "{0} метр на секунду в квадрате",
             "unitPattern-count-few": "{0} метра на секунду в квадрате",
             "accusative-count-few": "{0} метра на секунду в квадрате",
             "dative-count-few": "{0} метрам на секунду в квадрате",
@@ -329,7 +295,6 @@
             "instrumental-count-few": "{0} метрами на секунду в квадрате",
             "locative-count-few": "{0} метрах на секунду в квадрате",
             "prepositional-count-few": "{0} метрах на секунду в квадрате",
-            "vocative-count-few": "{0} метра на секунду в квадрате",
             "unitPattern-count-many": "{0} метров на секунду в квадрате",
             "accusative-count-many": "{0} метров на секунду в квадрате",
             "dative-count-many": "{0} метрам на секунду в квадрате",
@@ -337,15 +302,12 @@
             "instrumental-count-many": "{0} метрами на секунду в квадрате",
             "locative-count-many": "{0} метрах на секунду в квадрате",
             "prepositional-count-many": "{0} метрах на секунду в квадрате",
-            "vocative-count-many": "{0} метров на секунду в квадрате",
             "unitPattern-count-other": "{0} метра на секунду в квадрате",
             "accusative-count-other": "{0} метра на секунду в квадрате",
             "dative-count-other": "{0} метра на секунду в квадрате",
             "genitive-count-other": "{0} метра на секунду в квадрате",
             "instrumental-count-other": "{0} метра на секунду в квадрате",
-            "locative-count-other": "{0} метра на секунду в квадрате",
-            "prepositional-count-other": "{0} метра на секунду в квадрате",
-            "vocative-count-other": "{0} метра на секунду в квадрате"
+            "prepositional-count-other": "{0} метра на секунду в квадрате"
           },
           "angle-revolution": {
             "gender": "masculine",
@@ -497,7 +459,6 @@
             "instrumental-count-one": "{0} квадратным километром",
             "locative-count-one": "{0} квадратном километре",
             "prepositional-count-one": "{0} квадратном километре",
-            "vocative-count-one": "{0} квадратный километр",
             "unitPattern-count-few": "{0} квадратных километра",
             "accusative-count-few": "{0} квадратных километра",
             "dative-count-few": "{0} квадратным километрам",
@@ -530,7 +491,6 @@
             "instrumental-count-one": "{0} гектаром",
             "locative-count-one": "{0} гектаре",
             "prepositional-count-one": "{0} гектаре",
-            "vocative-count-one": "{0} гектар",
             "unitPattern-count-few": "{0} гектара",
             "accusative-count-few": "{0} гектара",
             "dative-count-few": "{0} гектарам",
@@ -591,7 +551,6 @@
             "instrumental-count-one": "{0} квадратным сантиметром",
             "locative-count-one": "{0} квадратном сантиметре",
             "prepositional-count-one": "{0} квадратном сантиметре",
-            "vocative-count-one": "{0} квадратный сантиметр",
             "unitPattern-count-few": "{0} квадратных сантиметра",
             "accusative-count-few": "{0} квадратных сантиметра",
             "dative-count-few": "{0} квадратным сантиметрам",
@@ -624,7 +583,6 @@
             "instrumental-count-one": "{0} квадратной милей",
             "locative-count-one": "{0} квадратной миле",
             "prepositional-count-one": "{0} квадратной миле",
-            "vocative-count-one": "{0} квадратная миля",
             "unitPattern-count-few": "{0} квадратные мили",
             "accusative-count-few": "{0} квадратные мили",
             "dative-count-few": "{0} квадратным милям",
@@ -632,7 +590,6 @@
             "instrumental-count-few": "{0} квадратными милями",
             "locative-count-few": "{0} квадратных милях",
             "prepositional-count-few": "{0} квадратных милях",
-            "vocative-count-few": "{0} квадратные мили",
             "unitPattern-count-many": "{0} квадратных миль",
             "accusative-count-many": "{0} квадратных миль",
             "dative-count-many": "{0} квадратным милям",
@@ -657,7 +614,6 @@
             "instrumental-count-one": "{0} акром",
             "locative-count-one": "{0} акре",
             "prepositional-count-one": "{0} акре",
-            "vocative-count-one": "{0} акр",
             "unitPattern-count-few": "{0} акра",
             "accusative-count-few": "{0} акра",
             "dative-count-few": "{0} акрам",
@@ -695,7 +651,6 @@
             "instrumental-count-one": "{0} квадратным футом",
             "locative-count-one": "{0} квадратном футе",
             "prepositional-count-one": "{0} квадратном футе",
-            "vocative-count-one": "{0} квадратный фут",
             "unitPattern-count-few": "{0} квадратных фута",
             "accusative-count-few": "{0} квадратных фута",
             "dative-count-few": "{0} квадратным футам",
@@ -760,11 +715,32 @@
             "prepositional-count-other": "{0} карата"
           },
           "concentr-milligram-ofglucose-per-deciliter": {
+            "gender": "masculine",
             "displayName": "миллиграммы на децилитр",
             "unitPattern-count-one": "{0} миллиграмм на децилитр",
+            "accusative-count-one": "{0} миллиграмм на децилитр",
+            "dative-count-one": "{0} миллиграмму на децилитр",
+            "genitive-count-one": "{0} миллиграмма на децилитр",
+            "instrumental-count-one": "{0} миллиграммом на децилитр",
+            "prepositional-count-one": "{0} миллиграмме на децилитр",
             "unitPattern-count-few": "{0} миллиграмма на децилитр",
+            "accusative-count-few": "{0} миллиграмма на децилитр",
+            "dative-count-few": "{0} миллиграммам на децилитр",
+            "genitive-count-few": "{0} миллиграммов на децилитр",
+            "instrumental-count-few": "{0} миллиграммами на децилитр",
+            "prepositional-count-few": "{0} миллиграммах на децилитр",
             "unitPattern-count-many": "{0} миллиграммов на децилитр",
-            "unitPattern-count-other": "{0} миллиграмма на децилитр"
+            "accusative-count-many": "{0} миллиграммов на децилитр",
+            "dative-count-many": "{0} миллиграммам на децилитр",
+            "genitive-count-many": "{0} миллиграммов на децилитр",
+            "instrumental-count-many": "{0} миллиграммами на децилитр",
+            "prepositional-count-many": "{0} миллиграммах на децилитр",
+            "unitPattern-count-other": "{0} миллиграмма на децилитр",
+            "accusative-count-other": "{0} миллиграмма на децилитр",
+            "dative-count-other": "{0} миллиграмма на децилитр",
+            "genitive-count-other": "{0} миллиграмма на децилитр",
+            "instrumental-count-other": "{0} миллиграмма на децилитр",
+            "prepositional-count-other": "{0} миллиграмма на децилитр"
           },
           "concentr-millimole-per-liter": {
             "gender": "masculine",
@@ -860,7 +836,6 @@
             "instrumental-count-one": "{0} процентом",
             "locative-count-one": "{0} проценте",
             "prepositional-count-one": "{0} проценте",
-            "vocative-count-one": "{0} процент",
             "unitPattern-count-few": "{0} процента",
             "accusative-count-few": "{0} процента",
             "dative-count-few": "{0} процентам",
@@ -883,7 +858,7 @@
             "prepositional-count-other": "{0} процента"
           },
           "concentr-permille": {
-            "gender": "feminine",
+            "gender": "neuter",
             "displayName": "промилле",
             "unitPattern-count-one": "{0} промилле",
             "accusative-count-one": "{0} промилле",
@@ -1004,7 +979,6 @@
             "instrumental-count-one": "{0} литром на 100 километров",
             "locative-count-one": "{0} литре на 100 километров",
             "prepositional-count-one": "{0} литре на 100 километров",
-            "vocative-count-one": "{0} литр на 100 километров",
             "unitPattern-count-few": "{0} литра на 100 километров",
             "accusative-count-few": "{0} литра на 100 километров",
             "dative-count-few": "{0} литрам на 100 километров",
@@ -1036,7 +1010,6 @@
             "instrumental-count-one": "{0} милей на амер. галлон",
             "locative-count-one": "{0} миле на амер. галлон",
             "prepositional-count-one": "{0} миле на амер. галлон",
-            "vocative-count-one": "{0} миля на амер. галлон",
             "unitPattern-count-few": "{0} мили на амер. галлон",
             "accusative-count-few": "{0} мили на амер. галлон",
             "dative-count-few": "{0} милям на амер. галлон",
@@ -1044,7 +1017,6 @@
             "instrumental-count-few": "{0} милями на амер. галлон",
             "locative-count-few": "{0} милях на амер. галлон",
             "prepositional-count-few": "{0} милях на амер. галлон",
-            "vocative-count-few": "{0} мили на амер. галлон",
             "unitPattern-count-many": "{0} миль на амер. галлон",
             "accusative-count-many": "{0} миль на амер. галлон",
             "dative-count-many": "{0} милям на амер. галлон",
@@ -1052,14 +1024,11 @@
             "instrumental-count-many": "{0} милями на амер. галлон",
             "locative-count-many": "{0} милях на амер. галлон",
             "prepositional-count-many": "{0} милях на амер. галлон",
-            "vocative-count-many": "{0} миль на амер. галлон",
             "unitPattern-count-other": "{0} мили на амер. галлон",
             "accusative-count-other": "{0} мили на амер. галлон",
             "dative-count-other": "{0} мили на амер. галлон",
             "genitive-count-other": "{0} мили на амер. галлон",
-            "instrumental-count-other": "{0} мили на амер. галлон",
-            "locative-count-other": "{0} мили на амер. галлон",
-            "vocative-count-other": "{0} мили на амер. галлон"
+            "instrumental-count-other": "{0} мили на амер. галлон"
           },
           "consumption-mile-per-gallon-imperial": {
             "gender": "feminine",
@@ -1071,7 +1040,6 @@
             "instrumental-count-one": "{0} милей на имп. галлон",
             "locative-count-one": "{0} миле на имп. галлон",
             "prepositional-count-one": "{0} миле на имп. галлон",
-            "vocative-count-one": "{0} миля на имп. галлон",
             "unitPattern-count-few": "{0} мили на имп. галлон",
             "accusative-count-few": "{0} мили на имп. галлон",
             "dative-count-few": "{0} милям на имп. галлон",
@@ -1079,7 +1047,6 @@
             "instrumental-count-few": "{0} милями на имп. галлон",
             "locative-count-few": "{0} милях на имп. галлон",
             "prepositional-count-few": "{0} милях на имп. галлон",
-            "vocative-count-few": "{0} мили на имп. галлон",
             "unitPattern-count-many": "{0} миль на имп. галлон",
             "accusative-count-many": "{0} миль на имп. галлон",
             "dative-count-many": "{0} милям на имп. галлон",
@@ -1131,7 +1098,6 @@
             "instrumental-count-one": "{0} терабайтом",
             "locative-count-one": "{0} терабайте",
             "prepositional-count-one": "{0} терабайте",
-            "vocative-count-one": "{0} терабайт",
             "unitPattern-count-few": "{0} терабайта",
             "accusative-count-few": "{0} терабайта",
             "dative-count-few": "{0} терабайтам",
@@ -1163,7 +1129,6 @@
             "instrumental-count-one": "{0} терабитом",
             "locative-count-one": "{0} терабите",
             "prepositional-count-one": "{0} терабите",
-            "vocative-count-one": "{0} терабит",
             "unitPattern-count-few": "{0} терабита",
             "accusative-count-few": "{0} терабита",
             "dative-count-few": "{0} терабитам",
@@ -1195,7 +1160,6 @@
             "instrumental-count-one": "{0} гигабайтом",
             "locative-count-one": "{0} гигабайте",
             "prepositional-count-one": "{0} гигабайте",
-            "vocative-count-one": "{0} гигабайт",
             "unitPattern-count-few": "{0} гигабайта",
             "accusative-count-few": "{0} гигабайта",
             "dative-count-few": "{0} гигабайтам",
@@ -1227,7 +1191,6 @@
             "instrumental-count-one": "{0} гигабитом",
             "locative-count-one": "{0} гигабите",
             "prepositional-count-one": "{0} гигабите",
-            "vocative-count-one": "{0} гигабит",
             "unitPattern-count-few": "{0} гигабита",
             "accusative-count-few": "{0} гигабита",
             "dative-count-few": "{0} гигабитам",
@@ -1259,7 +1222,6 @@
             "instrumental-count-one": "{0} мегабайтом",
             "locative-count-one": "{0} мегабайте",
             "prepositional-count-one": "{0} мегабайте",
-            "vocative-count-one": "{0} мегабайт",
             "unitPattern-count-few": "{0} мегабайта",
             "accusative-count-few": "{0} мегабайта",
             "dative-count-few": "{0} мегабайтам",
@@ -1291,7 +1253,6 @@
             "instrumental-count-one": "{0} мегабитом",
             "locative-count-one": "{0} мегабите",
             "prepositional-count-one": "{0} мегабите",
-            "vocative-count-one": "{0} мегабит",
             "unitPattern-count-few": "{0} мегабита",
             "accusative-count-few": "{0} мегабита",
             "dative-count-few": "{0} мегабитам",
@@ -1323,7 +1284,6 @@
             "instrumental-count-one": "{0} килобайтом",
             "locative-count-one": "{0} килобайте",
             "prepositional-count-one": "{0} килобайте",
-            "vocative-count-one": "{0} килобайт",
             "unitPattern-count-few": "{0} килобайта",
             "accusative-count-few": "{0} килобайта",
             "dative-count-few": "{0} килобайтам",
@@ -1355,7 +1315,6 @@
             "instrumental-count-one": "{0} килобитом",
             "locative-count-one": "{0} килобите",
             "prepositional-count-one": "{0} килобите",
-            "vocative-count-one": "{0} килобит",
             "unitPattern-count-few": "{0} килобита",
             "accusative-count-few": "{0} килобита",
             "dative-count-few": "{0} килобитам",
@@ -1499,7 +1458,6 @@
             "instrumental-count-one": "{0} годом",
             "locative-count-one": "{0} годе",
             "prepositional-count-one": "{0} годе",
-            "vocative-count-one": "{0} год",
             "unitPattern-count-few": "{0} года",
             "accusative-count-few": "{0} года",
             "dative-count-few": "{0} годам",
@@ -1561,7 +1519,6 @@
             "instrumental-count-one": "{0} месяцем",
             "locative-count-one": "{0} месяце",
             "prepositional-count-one": "{0} месяце",
-            "vocative-count-one": "{0} месяц",
             "unitPattern-count-few": "{0} месяца",
             "accusative-count-few": "{0} месяца",
             "dative-count-few": "{0} месяцам",
@@ -1594,7 +1551,6 @@
             "instrumental-count-one": "{0} неделей",
             "locative-count-one": "{0} неделе",
             "prepositional-count-one": "{0} неделе",
-            "vocative-count-one": "{0} неделя",
             "unitPattern-count-few": "{0} недели",
             "accusative-count-few": "{0} недели",
             "dative-count-few": "{0} неделям",
@@ -1602,7 +1558,6 @@
             "instrumental-count-few": "{0} неделями",
             "locative-count-few": "{0} неделях",
             "prepositional-count-few": "{0} неделях",
-            "vocative-count-few": "{0} недели",
             "unitPattern-count-many": "{0} недель",
             "accusative-count-many": "{0} недель",
             "dative-count-many": "{0} неделям",
@@ -1628,7 +1583,6 @@
             "instrumental-count-one": "{0} днём",
             "locative-count-one": "{0} дне",
             "prepositional-count-one": "{0} дне",
-            "vocative-count-one": "{0} день",
             "unitPattern-count-few": "{0} дня",
             "accusative-count-few": "{0} дня",
             "dative-count-few": "{0} дням",
@@ -1661,7 +1615,6 @@
             "instrumental-count-one": "{0} часом",
             "locative-count-one": "{0} часе",
             "prepositional-count-one": "{0} часе",
-            "vocative-count-one": "{0} час",
             "unitPattern-count-few": "{0} часа",
             "accusative-count-few": "{0} часа",
             "dative-count-few": "{0} часам",
@@ -1694,7 +1647,6 @@
             "instrumental-count-one": "{0} минутой",
             "locative-count-one": "{0} минуте",
             "prepositional-count-one": "{0} минуте",
-            "vocative-count-one": "{0} минута",
             "unitPattern-count-few": "{0} минуты",
             "accusative-count-few": "{0} минуты",
             "dative-count-few": "{0} минутам",
@@ -1702,7 +1654,6 @@
             "instrumental-count-few": "{0} минутами",
             "locative-count-few": "{0} минутах",
             "prepositional-count-few": "{0} минутах",
-            "vocative-count-few": "{0} минуты",
             "unitPattern-count-many": "{0} минут",
             "accusative-count-many": "{0} минут",
             "dative-count-many": "{0} минутам",
@@ -1728,7 +1679,6 @@
             "instrumental-count-one": "{0} секундой",
             "locative-count-one": "{0} секунде",
             "prepositional-count-one": "{0} секунде",
-            "vocative-count-one": "{0} секунда",
             "unitPattern-count-few": "{0} секунды",
             "accusative-count-few": "{0} секунды",
             "dative-count-few": "{0} секундам",
@@ -1736,7 +1686,6 @@
             "instrumental-count-few": "{0} секундами",
             "locative-count-few": "{0} секундах",
             "prepositional-count-few": "{0} секундах",
-            "vocative-count-few": "{0} секунды",
             "unitPattern-count-many": "{0} секунд",
             "accusative-count-many": "{0} секунд",
             "dative-count-many": "{0} секундам",
@@ -1958,7 +1907,6 @@
             "instrumental-count-one": "{0} килокалорией",
             "locative-count-one": "{0} килокалории",
             "prepositional-count-one": "{0} килокалории",
-            "vocative-count-one": "{0} килокалория",
             "unitPattern-count-few": "{0} килокалории",
             "accusative-count-few": "{0} килокалории",
             "dative-count-few": "{0} килокалориям",
@@ -1966,7 +1914,6 @@
             "instrumental-count-few": "{0} килокалориями",
             "locative-count-few": "{0} килокалориях",
             "prepositional-count-few": "{0} килокалориях",
-            "vocative-count-few": "{0} килокалории",
             "unitPattern-count-many": "{0} килокалорий",
             "accusative-count-many": "{0} килокалорий",
             "dative-count-many": "{0} килокалориям",
@@ -1978,7 +1925,8 @@
             "accusative-count-other": "{0} килокалории",
             "dative-count-other": "{0} килокалории",
             "genitive-count-other": "{0} килокалории",
-            "instrumental-count-other": "{0} килокалории"
+            "instrumental-count-other": "{0} килокалории",
+            "prepositional-count-other": "{0} килокалории"
           },
           "energy-calorie": {
             "gender": "feminine",
@@ -2018,7 +1966,6 @@
             "instrumental-count-one": "{0} килокалорией",
             "locative-count-one": "{0} килокалории",
             "prepositional-count-one": "{0} килокалории",
-            "vocative-count-one": "{0} килокалория",
             "unitPattern-count-few": "{0} килокалории",
             "accusative-count-few": "{0} килокалории",
             "dative-count-few": "{0} килокалориям",
@@ -2026,7 +1973,6 @@
             "instrumental-count-few": "{0} килокалориями",
             "locative-count-few": "{0} килокалориях",
             "prepositional-count-few": "{0} килокалориях",
-            "vocative-count-few": "{0} килокалории",
             "unitPattern-count-many": "{0} килокалорий",
             "accusative-count-many": "{0} килокалорий",
             "dative-count-many": "{0} килокалориям",
@@ -2034,14 +1980,11 @@
             "instrumental-count-many": "{0} килокалориями",
             "locative-count-many": "{0} килокалориях",
             "prepositional-count-many": "{0} килокалориях",
-            "vocative-count-many": "{0} килокалорий",
             "unitPattern-count-other": "{0} килокалории",
             "accusative-count-other": "{0} килокалории",
             "dative-count-other": "{0} килокалории",
             "genitive-count-other": "{0} килокалории",
-            "instrumental-count-other": "{0} килокалории",
-            "locative-count-other": "{0} килокалории",
-            "vocative-count-other": "{0} килокалории"
+            "instrumental-count-other": "{0} килокалории"
           },
           "energy-kilojoule": {
             "gender": "masculine",
@@ -2327,29 +2270,9 @@
             "gender": "neuter",
             "displayName": "эм",
             "unitPattern-count-one": "{0} эм",
-            "accusative-count-one": "{0} эм",
-            "dative-count-one": "{0} эм",
-            "genitive-count-one": "{0} эм",
-            "instrumental-count-one": "{0} эм",
-            "prepositional-count-one": "{0} эм",
             "unitPattern-count-few": "{0} эм",
-            "accusative-count-few": "{0} эм",
-            "dative-count-few": "{0} эм",
-            "genitive-count-few": "{0} эм",
-            "instrumental-count-few": "{0} эм",
-            "prepositional-count-few": "{0} эм",
             "unitPattern-count-many": "{0} эм",
-            "accusative-count-many": "{0} эм",
-            "dative-count-many": "{0} эм",
-            "genitive-count-many": "{0} эм",
-            "instrumental-count-many": "{0} эм",
-            "prepositional-count-many": "{0} эм",
-            "unitPattern-count-other": "{0} эм",
-            "accusative-count-other": "{0} эм",
-            "dative-count-other": "{0} эм",
-            "genitive-count-other": "{0} эм",
-            "instrumental-count-other": "{0} эм",
-            "prepositional-count-other": "{0} эм"
+            "unitPattern-count-other": "{0} эм"
           },
           "graphics-pixel": {
             "gender": "masculine",
@@ -2457,7 +2380,7 @@
             "unitPattern-count-other": "{0} точки на дюйм"
           },
           "graphics-dot": {
-            "displayName": "точка",
+            "displayName": "точки",
             "unitPattern-count-one": "{0} точка",
             "unitPattern-count-few": "{0} точки",
             "unitPattern-count-many": "{0} точек",
@@ -2480,7 +2403,6 @@
             "instrumental-count-one": "{0} километром",
             "locative-count-one": "{0} километре",
             "prepositional-count-one": "{0} километре",
-            "vocative-count-one": "{0} километр",
             "unitPattern-count-few": "{0} километра",
             "accusative-count-few": "{0} километра",
             "dative-count-few": "{0} километрам",
@@ -2513,7 +2435,6 @@
             "instrumental-count-one": "{0} метром",
             "locative-count-one": "{0} метре",
             "prepositional-count-one": "{0} метре",
-            "vocative-count-one": "{0} метр",
             "unitPattern-count-few": "{0} метра",
             "accusative-count-few": "{0} метра",
             "dative-count-few": "{0} метрам",
@@ -2574,7 +2495,6 @@
             "instrumental-count-one": "{0} сантиметром",
             "locative-count-one": "{0} сантиметре",
             "prepositional-count-one": "{0} сантиметре",
-            "vocative-count-one": "{0} сантиметр",
             "unitPattern-count-few": "{0} сантиметра",
             "accusative-count-few": "{0} сантиметра",
             "dative-count-few": "{0} сантиметрам",
@@ -2607,7 +2527,6 @@
             "instrumental-count-one": "{0} миллиметром",
             "locative-count-one": "{0} миллиметре",
             "prepositional-count-one": "{0} миллиметре",
-            "vocative-count-one": "{0} миллиметр",
             "unitPattern-count-few": "{0} миллиметра",
             "accusative-count-few": "{0} миллиметра",
             "dative-count-few": "{0} миллиметрам",
@@ -2695,7 +2614,6 @@
             "instrumental-count-one": "{0} пикометром",
             "locative-count-one": "{0} пикометре",
             "prepositional-count-one": "{0} пикометре",
-            "vocative-count-one": "{0} пикометр",
             "unitPattern-count-few": "{0} пикометра",
             "accusative-count-few": "{0} пикометра",
             "dative-count-few": "{0} пикометрам",
@@ -2727,7 +2645,6 @@
             "instrumental-count-one": "{0} милей",
             "locative-count-one": "{0} миле",
             "prepositional-count-one": "{0} миле",
-            "vocative-count-one": "{0} миля",
             "unitPattern-count-few": "{0} мили",
             "accusative-count-few": "{0} мили",
             "dative-count-few": "{0} милям",
@@ -2735,7 +2652,6 @@
             "instrumental-count-few": "{0} милями",
             "locative-count-few": "{0} милях",
             "prepositional-count-few": "{0} милях",
-            "vocative-count-few": "{0} мили",
             "unitPattern-count-many": "{0} миль",
             "accusative-count-many": "{0} миль",
             "dative-count-many": "{0} милям",
@@ -2759,7 +2675,6 @@
             "instrumental-count-one": "{0} ярдом",
             "locative-count-one": "{0} ярде",
             "prepositional-count-one": "{0} ярде",
-            "vocative-count-one": "{0} ярд",
             "unitPattern-count-few": "{0} ярда",
             "accusative-count-few": "{0} ярда",
             "dative-count-few": "{0} ярдам",
@@ -2790,7 +2705,6 @@
             "instrumental-count-one": "{0} футом",
             "locative-count-one": "{0} футе",
             "prepositional-count-one": "{0} футе",
-            "vocative-count-one": "{0} фут",
             "unitPattern-count-few": "{0} фута",
             "accusative-count-few": "{0} фута",
             "dative-count-few": "{0} футам",
@@ -2822,7 +2736,6 @@
             "instrumental-count-one": "{0} дюймом",
             "locative-count-one": "{0} дюйме",
             "prepositional-count-one": "{0} дюйме",
-            "vocative-count-one": "{0} дюйм",
             "unitPattern-count-few": "{0} дюйма",
             "accusative-count-few": "{0} дюйма",
             "dative-count-few": "{0} дюймам",
@@ -2854,7 +2767,6 @@
             "instrumental-count-one": "{0} парсеком",
             "locative-count-one": "{0} парсеке",
             "prepositional-count-one": "{0} парсеке",
-            "vocative-count-one": "{0} парсек",
             "unitPattern-count-few": "{0} парсека",
             "accusative-count-few": "{0} парсека",
             "dative-count-few": "{0} парсекам",
@@ -2939,11 +2851,32 @@
             "prepositional-count-other": "{0} скандинавской мили"
           },
           "length-point": {
+            "gender": "masculine",
             "displayName": "пункты",
             "unitPattern-count-one": "{0} пункт",
+            "accusative-count-one": "{0} пункт",
+            "dative-count-one": "{0} пункту",
+            "genitive-count-one": "{0} пункта",
+            "instrumental-count-one": "{0} пунктом",
+            "prepositional-count-one": "{0} пункте",
             "unitPattern-count-few": "{0} пункта",
+            "accusative-count-few": "{0} пункта",
+            "dative-count-few": "{0} пунктам",
+            "genitive-count-few": "{0} пунктов",
+            "instrumental-count-few": "{0} пунктами",
+            "prepositional-count-few": "{0} пунктах",
             "unitPattern-count-many": "{0} пунктов",
-            "unitPattern-count-other": "{0} пункта"
+            "accusative-count-many": "{0} пунктов",
+            "dative-count-many": "{0} пунктам",
+            "genitive-count-many": "{0} пунктов",
+            "instrumental-count-many": "{0} пунктами",
+            "prepositional-count-many": "{0} пунктах",
+            "unitPattern-count-other": "{0} пункта",
+            "accusative-count-other": "{0} пункта",
+            "dative-count-other": "{0} пункта",
+            "genitive-count-other": "{0} пункта",
+            "instrumental-count-other": "{0} пункта",
+            "prepositional-count-other": "{0} пункта"
           },
           "length-solar-radius": {
             "gender": "masculine",
@@ -2962,7 +2895,6 @@
             "instrumental-count-few": "{0} солнечными радиусами",
             "locative-count-few": "{0} солнечных радиусах",
             "prepositional-count-few": "{0} солнечных радиусах",
-            "vocative-count-few": "{0} солнечных радиуса",
             "unitPattern-count-many": "{0} солнечных радиусов",
             "accusative-count-many": "{0} солнечных радиусов",
             "dative-count-many": "{0} солнечным радиусам",
@@ -3070,7 +3002,6 @@
             "instrumental-count-one": "{0} солнечной светимостью",
             "locative-count-one": "{0} солнечной светимости",
             "prepositional-count-one": "{0} солнечной светимости",
-            "vocative-count-one": "{0} солнечная светимость",
             "unitPattern-count-few": "{0} солнечные светимости",
             "accusative-count-few": "{0} солнечные светимости",
             "dative-count-few": "{0} солнечным светимостям",
@@ -3078,7 +3009,6 @@
             "instrumental-count-few": "{0} солнечными светимостями",
             "locative-count-few": "{0} солнечных светимостях",
             "prepositional-count-few": "{0} солнечных светимостях",
-            "vocative-count-few": "{0} солнечные светимости",
             "unitPattern-count-many": "{0} солнечных светимостей",
             "accusative-count-many": "{0} солнечных светимостей",
             "dative-count-many": "{0} солнечным светимостям",
@@ -3096,7 +3026,7 @@
             "gender": "feminine",
             "displayName": "тонны",
             "unitPattern-count-one": "{0} тонна",
-            "accusative-count-one": "{0} тонна",
+            "accusative-count-one": "{0} тонну",
             "dative-count-one": "{0} тонне",
             "genitive-count-one": "{0} тонны",
             "instrumental-count-one": "{0} тонной",
@@ -3130,7 +3060,6 @@
             "instrumental-count-one": "{0} килограммом",
             "locative-count-one": "{0} килограмме",
             "prepositional-count-one": "{0} килограмме",
-            "vocative-count-one": "{0} килограмм",
             "unitPattern-count-few": "{0} килограмма",
             "accusative-count-few": "{0} килограмма",
             "dative-count-few": "{0} килограммам",
@@ -3163,7 +3092,6 @@
             "instrumental-count-one": "{0} граммом",
             "locative-count-one": "{0} грамме",
             "prepositional-count-one": "{0} грамме",
-            "vocative-count-one": "{0} грамм",
             "unitPattern-count-few": "{0} грамма",
             "accusative-count-few": "{0} грамма",
             "dative-count-few": "{0} граммам",
@@ -3196,7 +3124,6 @@
             "instrumental-count-one": "{0} миллиграммом",
             "locative-count-one": "{0} миллиграмме",
             "prepositional-count-one": "{0} миллиграмме",
-            "vocative-count-one": "{0} миллиграмм",
             "unitPattern-count-few": "{0} миллиграмма",
             "accusative-count-few": "{0} миллиграмма",
             "dative-count-few": "{0} миллиграммам",
@@ -3211,7 +3138,6 @@
             "instrumental-count-many": "{0} миллиграммами",
             "locative-count-many": "{0} миллиграммах",
             "prepositional-count-many": "{0} миллиграммах",
-            "vocative-count-many": "{0} миллиграмм",
             "unitPattern-count-other": "{0} миллиграмма",
             "accusative-count-other": "{0} миллиграмма",
             "dative-count-other": "{0} миллиграмма",
@@ -3271,7 +3197,6 @@
             "instrumental-count-one": "{0} фунтом",
             "locative-count-one": "{0} фунте",
             "prepositional-count-one": "{0} фунте",
-            "vocative-count-one": "{0} фунт",
             "unitPattern-count-few": "{0} фунта",
             "accusative-count-few": "{0} фунта",
             "dative-count-few": "{0} фунтам",
@@ -3303,7 +3228,6 @@
             "instrumental-count-one": "{0} унцией",
             "locative-count-one": "{0} унции",
             "prepositional-count-one": "{0} унции",
-            "vocative-count-one": "{0} унция",
             "unitPattern-count-few": "{0} унции",
             "accusative-count-few": "{0} унции",
             "dative-count-few": "{0} унциям",
@@ -3311,7 +3235,6 @@
             "instrumental-count-few": "{0} унциями",
             "locative-count-few": "{0} унциях",
             "prepositional-count-few": "{0} унциях",
-            "vocative-count-few": "{0} унции",
             "unitPattern-count-many": "{0} унций",
             "accusative-count-many": "{0} унций",
             "dative-count-many": "{0} унциям",
@@ -3378,7 +3301,6 @@
             "instrumental-count-few": "{0} дальтонами",
             "locative-count-few": "{0} дальтонах",
             "prepositional-count-few": "{0} дальтонах",
-            "vocative-count-few": "{0} дальтона",
             "unitPattern-count-many": "{0} дальтонов",
             "accusative-count-many": "{0} дальтонов",
             "dative-count-many": "{0} дальтонам",
@@ -3386,7 +3308,6 @@
             "instrumental-count-many": "{0} дальтонами",
             "locative-count-many": "{0} дальтонах",
             "prepositional-count-many": "{0} дальтонах",
-            "vocative-count-many": "{0} дальтонов",
             "unitPattern-count-other": "{0} дальтона",
             "accusative-count-other": "{0} дальтона",
             "dative-count-other": "{0} дальтона",
@@ -3403,7 +3324,6 @@
             "instrumental-count-one": "{0} массой Земли",
             "locative-count-one": "{0} массе Земли",
             "prepositional-count-one": "{0} массе Земли",
-            "vocative-count-one": "{0} масса Земли",
             "unitPattern-count-few": "{0} массы Земли",
             "accusative-count-few": "{0} массы Земли",
             "dative-count-few": "{0} массам Земли",
@@ -3411,7 +3331,6 @@
             "instrumental-count-few": "{0} массами Земли",
             "locative-count-few": "{0} массах Земли",
             "prepositional-count-few": "{0} массах Земли",
-            "vocative-count-few": "{0} массы Земли",
             "unitPattern-count-many": "{0} масс Земли",
             "accusative-count-many": "{0} масс Земли",
             "dative-count-many": "{0} массам Земли",
@@ -3449,7 +3368,6 @@
             "instrumental-count-many": "{0} солнечными массами",
             "locative-count-many": "{0} солнечных массах",
             "prepositional-count-many": "{0} солнечных массах",
-            "vocative-count-many": "{0} солнечных масс",
             "unitPattern-count-other": "{0} солнечной массы",
             "accusative-count-other": "{0} солнечной массы",
             "dative-count-other": "{0} солнечной массы",
@@ -3466,7 +3384,6 @@
             "instrumental-count-one": "{0} граном",
             "locative-count-one": "{0} гране",
             "prepositional-count-one": "{0} гране",
-            "vocative-count-one": "{0} гран",
             "unitPattern-count-few": "{0} грана",
             "accusative-count-few": "{0} грана",
             "dative-count-few": "{0} гранам",
@@ -3481,14 +3398,11 @@
             "instrumental-count-many": "{0} гранами",
             "locative-count-many": "{0} гранах",
             "prepositional-count-many": "{0} гранах",
-            "vocative-count-many": "{0} гранов",
             "unitPattern-count-other": "{0} грана",
             "accusative-count-other": "{0} грана",
             "dative-count-other": "{0} грана",
             "genitive-count-other": "{0} грана",
-            "instrumental-count-other": "{0} грана",
-            "locative-count-other": "{0} грана",
-            "vocative-count-other": "{0} грана"
+            "instrumental-count-other": "{0} грана"
           },
           "power-gigawatt": {
             "gender": "masculine",
@@ -3638,11 +3552,32 @@
             "unitPattern-count-other": "{0} лошадиной силы"
           },
           "pressure-millimeter-ofhg": {
+            "gender": "masculine",
             "displayName": "миллиметры ртутного столба",
             "unitPattern-count-one": "{0} миллиметр ртутного столба",
+            "accusative-count-one": "{0} миллиметр ртутного столба",
+            "dative-count-one": "{0} миллиметру ртутного столба",
+            "genitive-count-one": "{0} миллиметра ртутного столба",
+            "instrumental-count-one": "{0} миллиметром ртутного столба",
+            "prepositional-count-one": "{0} миллиметре ртутного столба",
             "unitPattern-count-few": "{0} миллиметра ртутного столба",
+            "accusative-count-few": "{0} миллиметра ртутного столба",
+            "dative-count-few": "{0} миллиметрам ртутного столба",
+            "genitive-count-few": "{0} миллиметров ртутного столба",
+            "instrumental-count-few": "{0} миллиметрами ртутного столба",
+            "prepositional-count-few": "{0} миллиметрах ртутного столба",
             "unitPattern-count-many": "{0} миллиметров ртутного столба",
-            "unitPattern-count-other": "{0} миллиметра ртутного столба"
+            "accusative-count-many": "{0} миллиметров ртутного столба",
+            "dative-count-many": "{0} миллиметрам ртутного столба",
+            "genitive-count-many": "{0} миллиметров ртутного столба",
+            "instrumental-count-many": "{0} миллиметрами ртутного столба",
+            "prepositional-count-many": "{0} миллиметрах ртутного столба",
+            "unitPattern-count-other": "{0} миллиметра ртутного столба",
+            "accusative-count-other": "{0} миллиметра ртутного столба",
+            "dative-count-other": "{0} миллиметра ртутного столба",
+            "genitive-count-other": "{0} миллиметра ртутного столба",
+            "instrumental-count-other": "{0} миллиметра ртутного столба",
+            "prepositional-count-other": "{0} миллиметра ртутного столба"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "фунты на квадратный дюйм",
@@ -3808,7 +3743,6 @@
             "instrumental-count-one": "{0} килопаскалем",
             "locative-count-one": "{0} килопаскале",
             "prepositional-count-one": "{0} килопаскале",
-            "vocative-count-one": "{0} килопаскаль",
             "unitPattern-count-few": "{0} килопаскаля",
             "accusative-count-few": "{0} килопаскаля",
             "dative-count-few": "{0} килопаскалям",
@@ -3868,7 +3802,6 @@
             "instrumental-count-one": "{0} километром в час",
             "locative-count-one": "{0} километре в час",
             "prepositional-count-one": "{0} километре в час",
-            "vocative-count-one": "{0} километр в час",
             "unitPattern-count-few": "{0} километра в час",
             "accusative-count-few": "{0} километра в час",
             "dative-count-few": "{0} километрам в час",
@@ -3900,7 +3833,6 @@
             "instrumental-count-one": "{0} метром в секунду",
             "locative-count-one": "{0} метре в секунду",
             "prepositional-count-one": "{0} метре в секунду",
-            "vocative-count-one": "{0} метр в секунду",
             "unitPattern-count-few": "{0} метра в секунду",
             "accusative-count-few": "{0} метра в секунду",
             "dative-count-few": "{0} метрам в секунду",
@@ -3932,7 +3864,6 @@
             "instrumental-count-one": "{0} милей в час",
             "locative-count-one": "{0} миле в час",
             "prepositional-count-one": "{0} миле в час",
-            "vocative-count-one": "{0} миля в час",
             "unitPattern-count-few": "{0} мили в час",
             "accusative-count-few": "{0} мили в час",
             "dative-count-few": "{0} милям в час",
@@ -3940,7 +3871,6 @@
             "instrumental-count-few": "{0} милями в час",
             "locative-count-few": "{0} милях в час",
             "prepositional-count-few": "{0} милях в час",
-            "vocative-count-few": "{0} мили в час",
             "unitPattern-count-many": "{0} миль в час",
             "accusative-count-many": "{0} миль в час",
             "dative-count-many": "{0} милям в час",
@@ -3961,6 +3891,13 @@
             "unitPattern-count-many": "{0} узлов",
             "unitPattern-count-other": "{0} узла"
           },
+          "speed-beaufort": {
+            "displayName": "баллы Бофорта",
+            "unitPattern-count-one": "{0} балл Бофорта",
+            "unitPattern-count-few": "{0} балла Бофорта",
+            "unitPattern-count-many": "{0} баллов Бофорта",
+            "unitPattern-count-other": "{0} балла Бофорта"
+          },
           "temperature-generic": {
             "gender": "masculine",
             "displayName": "°",
@@ -3971,7 +3908,6 @@
             "instrumental-count-one": "{0} градусом",
             "locative-count-one": "{0} градусе",
             "prepositional-count-one": "{0} градусе",
-            "vocative-count-one": "{0} градус",
             "unitPattern-count-few": "{0} градуса",
             "accusative-count-few": "{0} градуса",
             "dative-count-few": "{0} градусам",
@@ -3979,7 +3915,6 @@
             "instrumental-count-few": "{0} градусами",
             "locative-count-few": "{0} градусах",
             "prepositional-count-few": "{0} градусах",
-            "vocative-count-few": "{0} градуса",
             "unitPattern-count-many": "{0} градусов",
             "accusative-count-many": "{0} градусов",
             "dative-count-many": "{0} градусам",
@@ -3987,15 +3922,12 @@
             "instrumental-count-many": "{0} градусами",
             "locative-count-many": "{0} градусах",
             "prepositional-count-many": "{0} градусах",
-            "vocative-count-many": "{0} градусов",
             "unitPattern-count-other": "{0} градуса",
             "accusative-count-other": "{0} градуса",
             "dative-count-other": "{0} градуса",
             "genitive-count-other": "{0} градуса",
             "instrumental-count-other": "{0} градуса",
-            "locative-count-other": "{0} градуса",
-            "prepositional-count-other": "{0} градуса",
-            "vocative-count-other": "{0} градуса"
+            "prepositional-count-other": "{0} градуса"
           },
           "temperature-celsius": {
             "gender": "masculine",
@@ -4007,7 +3939,6 @@
             "instrumental-count-one": "{0} градусом Цельсия",
             "locative-count-one": "{0} градусе Цельсия",
             "prepositional-count-one": "{0} градусе Цельсия",
-            "vocative-count-one": "{0} градус Цельсия",
             "unitPattern-count-few": "{0} градуса Цельсия",
             "accusative-count-few": "{0} градуса Цельсия",
             "dative-count-few": "{0} градусам Цельсия",
@@ -4039,7 +3970,6 @@
             "instrumental-count-one": "{0} градусом Фаренгейта",
             "locative-count-one": "{0} градусе Фаренгейта",
             "prepositional-count-one": "{0} градусе Фаренгейта",
-            "vocative-count-one": "{0} градус Фаренгейта",
             "unitPattern-count-few": "{0} градуса Фаренгейта",
             "accusative-count-few": "{0} градуса Фаренгейта",
             "dative-count-few": "{0} градусам Фаренгейта",
@@ -4193,7 +4123,6 @@
             "instrumental-count-one": "{0} кубическим сантиметром",
             "locative-count-one": "{0} кубическом сантиметре",
             "prepositional-count-one": "{0} кубическом сантиметре",
-            "vocative-count-one": "{0} кубический сантиметр",
             "unitPattern-count-few": "{0} кубических сантиметра",
             "accusative-count-few": "{0} кубических сантиметра",
             "dative-count-few": "{0} кубическим сантиметрам",
@@ -4226,7 +4155,6 @@
             "instrumental-count-one": "{0} кубической милей",
             "locative-count-one": "{0} кубической миле",
             "prepositional-count-one": "{0} кубической миле",
-            "vocative-count-one": "{0} кубическая миля",
             "unitPattern-count-few": "{0} кубические мили",
             "accusative-count-few": "{0} кубические мили",
             "dative-count-few": "{0} кубическим милям",
@@ -4234,7 +4162,6 @@
             "instrumental-count-few": "{0} кубическими милями",
             "locative-count-few": "{0} кубических милях",
             "prepositional-count-few": "{0} кубических милях",
-            "vocative-count-few": "{0} кубические мили",
             "unitPattern-count-many": "{0} кубических миль",
             "accusative-count-many": "{0} кубических миль",
             "dative-count-many": "{0} кубическим милям",
@@ -4265,7 +4192,6 @@
             "instrumental-count-one": "{0} кубическим футом",
             "locative-count-one": "{0} кубическом футе",
             "prepositional-count-one": "{0} кубическом футе",
-            "vocative-count-one": "{0} кубический фут",
             "unitPattern-count-few": "{0} кубических фута",
             "accusative-count-few": "{0} кубических фута",
             "dative-count-few": "{0} кубическим футам",
@@ -4359,7 +4285,6 @@
             "instrumental-count-one": "{0} литром",
             "locative-count-one": "{0} литре",
             "prepositional-count-one": "{0} литре",
-            "vocative-count-one": "{0} литр",
             "unitPattern-count-few": "{0} литра",
             "accusative-count-few": "{0} литра",
             "dative-count-few": "{0} литрам",
@@ -4392,7 +4317,6 @@
             "instrumental-count-one": "{0} децилитром",
             "locative-count-one": "{0} децилитре",
             "prepositional-count-one": "{0} децилитре",
-            "vocative-count-one": "{0} децилитр",
             "unitPattern-count-few": "{0} децилитра",
             "accusative-count-few": "{0} децилитра",
             "dative-count-few": "{0} децилитрам",
@@ -4424,7 +4348,6 @@
             "instrumental-count-one": "{0} сантилитром",
             "locative-count-one": "{0} сантилитре",
             "prepositional-count-one": "{0} сантилитре",
-            "vocative-count-one": "{0} сантилитр",
             "unitPattern-count-few": "{0} сантилитра",
             "accusative-count-few": "{0} сантилитра",
             "dative-count-few": "{0} сантилитрам",
@@ -4456,7 +4379,6 @@
             "instrumental-count-one": "{0} миллилитром",
             "locative-count-one": "{0} миллилитре",
             "prepositional-count-one": "{0} миллилитре",
-            "vocative-count-one": "{0} миллилитр",
             "unitPattern-count-few": "{0} миллилитра",
             "accusative-count-few": "{0} миллилитра",
             "dative-count-few": "{0} миллилитрам",
@@ -4558,7 +4480,6 @@
             "instrumental-count-one": "{0} амер. галлоном",
             "locative-count-one": "{0} амер. галлоне",
             "prepositional-count-one": "{0} амер. галлоне",
-            "vocative-count-one": "{0} амер. галлон",
             "unitPattern-count-few": "{0} амер. галлона",
             "accusative-count-few": "{0} амер. галлона",
             "dative-count-few": "{0} амер. галлонам",
@@ -4566,7 +4487,6 @@
             "instrumental-count-few": "{0} амер. галлонами",
             "locative-count-few": "{0} амер. галлонах",
             "prepositional-count-few": "{0} амер. галлонах",
-            "vocative-count-few": "{0} амер. галлона",
             "unitPattern-count-many": "{0} амер. галлонов",
             "accusative-count-many": "{0} амер. галлонов",
             "dative-count-many": "{0} амер. галлонам",
@@ -4574,14 +4494,11 @@
             "instrumental-count-many": "{0} амер. галлонами",
             "locative-count-many": "{0} амер. галлонах",
             "prepositional-count-many": "{0} амер. галлонах",
-            "vocative-count-many": "{0} амер. галлонов",
             "unitPattern-count-other": "{0} амер. галлона",
             "accusative-count-other": "{0} амер. галлона",
             "dative-count-other": "{0} амер. галлона",
             "genitive-count-other": "{0} амер. галлона",
             "instrumental-count-other": "{0} амер. галлона",
-            "locative-count-other": "{0} амер. галлона",
-            "vocative-count-other": "{0} амер. галлона",
             "perUnitPattern": "{0} на амер. галлон"
           },
           "volume-gallon-imperial": {
@@ -4625,7 +4542,6 @@
             "instrumental-count-one": "{0} амер. квартой",
             "locative-count-one": "{0} амер. кварте",
             "prepositional-count-one": "{0} амер. кварте",
-            "vocative-count-one": "{0} амер. кварта",
             "unitPattern-count-few": "{0} амер. кварты",
             "accusative-count-few": "{0} амер. кварты",
             "dative-count-few": "{0} амер. квартам",
@@ -4633,7 +4549,6 @@
             "instrumental-count-few": "{0} амер. квартами",
             "locative-count-few": "{0} амер. квартах",
             "prepositional-count-few": "{0} амер. квартах",
-            "vocative-count-few": "{0} амер. кварты",
             "unitPattern-count-many": "{0} амер. кварт",
             "accusative-count-many": "{0} амер. кварт",
             "dative-count-many": "{0} амер. квартам",
@@ -4641,14 +4556,11 @@
             "instrumental-count-many": "{0} амер. квартами",
             "locative-count-many": "{0} амер. квартах",
             "prepositional-count-many": "{0} амер. квартах",
-            "vocative-count-many": "{0} амер. кварт",
             "unitPattern-count-other": "{0} амер. кварты",
             "accusative-count-other": "{0} амер. кварты",
             "dative-count-other": "{0} амер. кварты",
             "genitive-count-other": "{0} амер. кварты",
-            "instrumental-count-other": "{0} амер. кварты",
-            "locative-count-other": "{0} амер. кварты",
-            "vocative-count-other": "{0} амер. кварты"
+            "instrumental-count-other": "{0} амер. кварты"
           },
           "volume-pint": {
             "gender": "feminine",
@@ -4660,7 +4572,6 @@
             "instrumental-count-one": "{0} амер. пинтой",
             "locative-count-one": "{0} амер. пинте",
             "prepositional-count-one": "{0} амер. пинте",
-            "vocative-count-one": "{0} амер. пинта",
             "unitPattern-count-few": "{0} амер. пинты",
             "accusative-count-few": "{0} амер. пинты",
             "dative-count-few": "{0} амер. пинтам",
@@ -4668,7 +4579,6 @@
             "instrumental-count-few": "{0} амер. пинтами",
             "locative-count-few": "{0} амер. пинтах",
             "prepositional-count-few": "{0} амер. пинтах",
-            "vocative-count-few": "{0} амер. пинты",
             "unitPattern-count-many": "{0} амер. пинт",
             "accusative-count-many": "{0} амер. пинт",
             "dative-count-many": "{0} амер. пинтам",
@@ -4680,9 +4590,7 @@
             "accusative-count-other": "{0} амер. пинты",
             "dative-count-other": "{0} амер. пинты",
             "genitive-count-other": "{0} амер. пинты",
-            "instrumental-count-other": "{0} амер. пинты",
-            "locative-count-other": "{0} амер. пинты",
-            "vocative-count-other": "{0} амер. пинты"
+            "instrumental-count-other": "{0} амер. пинты"
           },
           "volume-cup": {
             "gender": "feminine",
@@ -4694,7 +4602,6 @@
             "instrumental-count-one": "{0} амер. чашкой",
             "locative-count-one": "{0} амер. чашке",
             "prepositional-count-one": "{0} амер. чашке",
-            "vocative-count-one": "{0} амер. чашка",
             "unitPattern-count-few": "{0} амер. чашки",
             "accusative-count-few": "{0} амер. чашки",
             "dative-count-few": "{0} амер. чашкам",
@@ -4702,7 +4609,6 @@
             "instrumental-count-few": "{0} амер. чашками",
             "locative-count-few": "{0} амер. чашках",
             "prepositional-count-few": "{0} амер. чашках",
-            "vocative-count-few": "{0} амер. чашки",
             "unitPattern-count-many": "{0} амер. чашек",
             "accusative-count-many": "{0} амер. чашек",
             "dative-count-many": "{0} амер. чашкам",
@@ -4710,14 +4616,11 @@
             "instrumental-count-many": "{0} амер. чашками",
             "locative-count-many": "{0} амер. чашках",
             "prepositional-count-many": "{0} амер. чашках",
-            "vocative-count-many": "{0} амер. чашек",
             "unitPattern-count-other": "{0} амер. чашки",
             "accusative-count-other": "{0} амер. чашки",
             "dative-count-other": "{0} амер. чашки",
             "genitive-count-other": "{0} амер. чашки",
-            "instrumental-count-other": "{0} амер. чашки",
-            "locative-count-other": "{0} амер. чашки",
-            "vocative-count-other": "{0} амер. чашки"
+            "instrumental-count-other": "{0} амер. чашки"
           },
           "volume-fluid-ounce": {
             "gender": "feminine",
@@ -4729,7 +4632,6 @@
             "instrumental-count-one": "{0} амер. жидкой унцией",
             "locative-count-one": "{0} амер. жидкой унции",
             "prepositional-count-one": "{0} амер. жидкой унции",
-            "vocative-count-one": "{0} амер. жидкая унция",
             "unitPattern-count-few": "{0} амер. жидкие унции",
             "accusative-count-few": "{0} амер. жидкие унции",
             "dative-count-few": "{0} амер. жидким унциям",
@@ -4737,7 +4639,6 @@
             "instrumental-count-few": "{0} амер. жидкими унциями",
             "locative-count-few": "{0} амер. жидких унциях",
             "prepositional-count-few": "{0} амер. жидких унциях",
-            "vocative-count-few": "{0} амер. жидкие унции",
             "unitPattern-count-many": "{0} амер. жидких унций",
             "accusative-count-many": "{0} амер. жидких унций",
             "dative-count-many": "{0} амер. жидким унциям",
@@ -4745,14 +4646,11 @@
             "instrumental-count-many": "{0} амер. жидкими унциями",
             "locative-count-many": "{0} амер. жидких унциях",
             "prepositional-count-many": "{0} амер. жидких унциях",
-            "vocative-count-many": "{0} амер. жидких унций",
             "unitPattern-count-other": "{0} амер. жидкой унции",
             "accusative-count-other": "{0} амер. жидкой унции",
             "dative-count-other": "{0} амер. жидкой унции",
             "genitive-count-other": "{0} амер. жидкой унции",
-            "instrumental-count-other": "{0} амер. жидкой унции",
-            "locative-count-other": "{0} амер. жидкой унции",
-            "vocative-count-other": "{0} амер. жидкой унции"
+            "instrumental-count-other": "{0} амер. жидкой унции"
           },
           "volume-fluid-ounce-imperial": {
             "gender": "feminine",
@@ -4764,7 +4662,6 @@
             "instrumental-count-one": "{0} имп. жидкой унцией",
             "locative-count-one": "{0} имп. жидкой унции",
             "prepositional-count-one": "{0} имп. жидкой унции",
-            "vocative-count-one": "{0} имп. жидкая унция",
             "unitPattern-count-few": "{0} имп. жидкие унции",
             "accusative-count-few": "{0} имп. жидкие унции",
             "dative-count-few": "{0} имп. жидким унциям",
@@ -4772,7 +4669,6 @@
             "instrumental-count-few": "{0} имп. жидкими унциями",
             "locative-count-few": "{0} имп. жидких унциях",
             "prepositional-count-few": "{0} имп. жидких унциях",
-            "vocative-count-few": "{0} имп. жидкие унции",
             "unitPattern-count-many": "{0} имп. жидких унций",
             "accusative-count-many": "{0} имп. жидких унций",
             "dative-count-many": "{0} имп. жидким унциям",
@@ -4780,14 +4676,11 @@
             "instrumental-count-many": "{0} имп. жидкими унциями",
             "locative-count-many": "{0} имп. жидких унциях",
             "prepositional-count-many": "{0} имп. жидких унциях",
-            "vocative-count-many": "{0} имп. жидких унций",
             "unitPattern-count-other": "{0} имп. жидкой унции",
             "accusative-count-other": "{0} имп. жидкой унции",
             "dative-count-other": "{0} имп. жидкой унции",
             "genitive-count-other": "{0} имп. жидкой унции",
-            "instrumental-count-other": "{0} имп. жидкой унции",
-            "locative-count-other": "{0} имп. жидкой унции",
-            "vocative-count-other": "{0} имп. жидкой унции"
+            "instrumental-count-other": "{0} имп. жидкой унции"
           },
           "volume-tablespoon": {
             "gender": "feminine",
@@ -4806,7 +4699,6 @@
             "instrumental-count-few": "{0} столовыми ложками",
             "locative-count-few": "{0} столовых ложках",
             "prepositional-count-few": "{0} столовых ложках",
-            "vocative-count-few": "{0} столовые ложки",
             "unitPattern-count-many": "{0} столовых ложек",
             "accusative-count-many": "{0} столовых ложек",
             "dative-count-many": "{0} столовым ложкам",
@@ -4814,7 +4706,6 @@
             "instrumental-count-many": "{0} столовыми ложками",
             "locative-count-many": "{0} столовых ложках",
             "prepositional-count-many": "{0} столовых ложках",
-            "vocative-count-many": "{0} столовых ложек",
             "unitPattern-count-other": "{0} столовой ложки",
             "accusative-count-other": "{0} столовой ложки",
             "dative-count-other": "{0} столовой ложки",
@@ -4868,7 +4759,6 @@
             "instrumental-count-one": "{0} десертной ложкой",
             "locative-count-one": "{0} десертной ложке",
             "prepositional-count-one": "{0} десертной ложке",
-            "vocative-count-one": "{0} десертная ложка",
             "unitPattern-count-few": "{0} десертные ложки",
             "accusative-count-few": "{0} десертные ложки",
             "dative-count-few": "{0} десертным ложкам",
@@ -4876,7 +4766,6 @@
             "instrumental-count-few": "{0} десертными ложками",
             "locative-count-few": "{0} десертных ложках",
             "prepositional-count-few": "{0} десертных ложках",
-            "vocative-count-few": "{0} десертные ложки",
             "unitPattern-count-many": "{0} десертных ложек",
             "accusative-count-many": "{0} десертных ложек",
             "dative-count-many": "{0} десертным ложкам",
@@ -4884,14 +4773,11 @@
             "instrumental-count-many": "{0} десертными ложками",
             "locative-count-many": "{0} десертных ложках",
             "prepositional-count-many": "{0} десертных ложках",
-            "vocative-count-many": "{0} десертных ложек",
             "unitPattern-count-other": "{0} десертной ложки",
             "accusative-count-other": "{0} десертной ложки",
             "dative-count-other": "{0} десертной ложки",
             "genitive-count-other": "{0} десертной ложки",
-            "instrumental-count-other": "{0} десертной ложки",
-            "locative-count-other": "{0} десертной ложки",
-            "vocative-count-other": "{0} десертной ложки"
+            "instrumental-count-other": "{0} десертной ложки"
           },
           "volume-dessert-spoon-imperial": {
             "gender": "feminine",
@@ -4903,7 +4789,6 @@
             "instrumental-count-one": "{0} имп. десертной ложкой",
             "locative-count-one": "{0} имп. десертной ложке",
             "prepositional-count-one": "{0} имп. десертной ложке",
-            "vocative-count-one": "{0} имп. десертная ложка",
             "unitPattern-count-few": "{0} имп. десертные ложки",
             "accusative-count-few": "{0} имп. десертные ложки",
             "dative-count-few": "{0} имп. десертным ложкам",
@@ -4911,7 +4796,6 @@
             "instrumental-count-few": "{0} имп. десертными ложками",
             "locative-count-few": "{0} имп. десертных ложках",
             "prepositional-count-few": "{0} имп. десертных ложках",
-            "vocative-count-few": "{0} имп. десертные ложки",
             "unitPattern-count-many": "{0} имп. десертных ложек",
             "accusative-count-many": "{0} имп. десертных ложек",
             "dative-count-many": "{0} имп. десертным ложкам",
@@ -4919,14 +4803,11 @@
             "instrumental-count-many": "{0} имп. десертными ложками",
             "locative-count-many": "{0} имп. десертных ложках",
             "prepositional-count-many": "{0} имп. десертных ложках",
-            "vocative-count-many": "{0} имп. десертных ложек",
             "unitPattern-count-other": "{0} имп. десертной ложки",
             "accusative-count-other": "{0} имп. десертной ложки",
             "dative-count-other": "{0} имп. десертной ложки",
             "genitive-count-other": "{0} имп. десертной ложки",
-            "instrumental-count-other": "{0} имп. десертной ложки",
-            "locative-count-other": "{0} имп. десертной ложки",
-            "vocative-count-other": "{0} имп. десертной ложки"
+            "instrumental-count-other": "{0} имп. десертной ложки"
           },
           "volume-drop": {
             "gender": "feminine",
@@ -4938,7 +4819,6 @@
             "instrumental-count-one": "{0} каплей",
             "locative-count-one": "{0} капле",
             "prepositional-count-one": "{0} капле",
-            "vocative-count-one": "{0} капля",
             "unitPattern-count-few": "{0} капли",
             "accusative-count-few": "{0} капли",
             "dative-count-few": "{0} каплям",
@@ -4946,7 +4826,6 @@
             "instrumental-count-few": "{0} каплями",
             "locative-count-few": "{0} каплях",
             "prepositional-count-few": "{0} каплях",
-            "vocative-count-few": "{0} капли",
             "unitPattern-count-many": "{0} капель",
             "accusative-count-many": "{0} капель",
             "dative-count-many": "{0} каплям",
@@ -4954,7 +4833,6 @@
             "instrumental-count-many": "{0} каплями",
             "locative-count-many": "{0} каплях",
             "prepositional-count-many": "{0} каплях",
-            "vocative-count-many": "{0} капель",
             "unitPattern-count-other": "{0} капли",
             "accusative-count-other": "{0} капли",
             "dative-count-other": "{0} капли",
@@ -4971,7 +4849,6 @@
             "instrumental-count-one": "{0} жидкой драхмой",
             "locative-count-one": "{0} жидкой драхме",
             "prepositional-count-one": "{0} жидкой драхме",
-            "vocative-count-one": "{0} жидкая драхма",
             "unitPattern-count-few": "{0} жидкие драхмы",
             "accusative-count-few": "{0} жидкие драхмы",
             "dative-count-few": "{0} жидким драхмам",
@@ -4979,7 +4856,6 @@
             "instrumental-count-few": "{0} жидкими драхмами",
             "locative-count-few": "{0} жидких драхмах",
             "prepositional-count-few": "{0} жидких драхмах",
-            "vocative-count-few": "{0} жидкие драхмы",
             "unitPattern-count-many": "{0} жидких драхм",
             "accusative-count-many": "{0} жидких драхм",
             "dative-count-many": "{0} жидким драхмам",
@@ -4987,14 +4863,11 @@
             "instrumental-count-many": "{0} жидкими драхмами",
             "locative-count-many": "{0} жидких драхмах",
             "prepositional-count-many": "{0} жидких драхмах",
-            "vocative-count-many": "{0} жидких драхм",
             "unitPattern-count-other": "{0} жидкой драхмы",
             "accusative-count-other": "{0} жидкой драхмы",
             "dative-count-other": "{0} жидкой драхмы",
             "genitive-count-other": "{0} жидкой драхмы",
-            "instrumental-count-other": "{0} жидкой драхмы",
-            "locative-count-other": "{0} жидкой драхмы",
-            "vocative-count-other": "{0} жидкой драхмы"
+            "instrumental-count-other": "{0} жидкой драхмы"
           },
           "volume-jigger": {
             "gender": "masculine",
@@ -5006,7 +4879,6 @@
             "instrumental-count-one": "{0} джиггером",
             "locative-count-one": "{0} джиггере",
             "prepositional-count-one": "{0} джиггере",
-            "vocative-count-one": "{0} джиггер",
             "unitPattern-count-few": "{0} джиггера",
             "accusative-count-few": "{0} джиггера",
             "dative-count-few": "{0} джиггерам",
@@ -5025,9 +4897,7 @@
             "accusative-count-other": "{0} джиггера",
             "dative-count-other": "{0} джиггера",
             "genitive-count-other": "{0} джиггера",
-            "instrumental-count-other": "{0} джиггера",
-            "locative-count-other": "{0} джиггера",
-            "vocative-count-other": "{0} джиггера"
+            "instrumental-count-other": "{0} джиггера"
           },
           "volume-pinch": {
             "gender": "feminine",
@@ -5039,7 +4909,6 @@
             "instrumental-count-one": "{0} щепоткой",
             "locative-count-one": "{0} щепотке",
             "prepositional-count-one": "{0} щепотке",
-            "vocative-count-one": "{0} щепотка",
             "unitPattern-count-few": "{0} щепотки",
             "accusative-count-few": "{0} щепотки",
             "dative-count-few": "{0} щепоткам",
@@ -5047,7 +4916,6 @@
             "instrumental-count-few": "{0} щепотками",
             "locative-count-few": "{0} щепотках",
             "prepositional-count-few": "{0} щепотках",
-            "vocative-count-few": "{0} щепотки",
             "unitPattern-count-many": "{0} щепоток",
             "accusative-count-many": "{0} щепоток",
             "dative-count-many": "{0} щепоткам",
@@ -5055,7 +4923,6 @@
             "instrumental-count-many": "{0} щепотками",
             "locative-count-many": "{0} щепотках",
             "prepositional-count-many": "{0} щепотках",
-            "vocative-count-many": "{0} щепоток",
             "unitPattern-count-other": "{0} щепотки",
             "accusative-count-other": "{0} щепотки",
             "dative-count-other": "{0} щепотки",
@@ -5072,7 +4939,6 @@
             "instrumental-count-one": "{0} имп. квартой",
             "locative-count-one": "{0} имп. кварте",
             "prepositional-count-one": "{0} имп. кварте",
-            "vocative-count-one": "{0} имп. кварта",
             "unitPattern-count-few": "{0} имп. кварты",
             "accusative-count-few": "{0} имп. кварты",
             "dative-count-few": "{0} имп. квартам",
@@ -5080,7 +4946,6 @@
             "instrumental-count-few": "{0} имп. квартами",
             "locative-count-few": "{0} имп. квартах",
             "prepositional-count-few": "{0} имп. квартах",
-            "vocative-count-few": "{0} имп. кварты",
             "unitPattern-count-many": "{0} имп. кварт",
             "accusative-count-many": "{0} имп. кварт",
             "dative-count-many": "{0} имп. квартам",
@@ -5088,14 +4953,72 @@
             "instrumental-count-many": "{0} имп. квартами",
             "locative-count-many": "{0} имп. квартах",
             "prepositional-count-many": "{0} имп. квартах",
-            "vocative-count-many": "{0} имп. кварт",
             "unitPattern-count-other": "{0} имп. кварты",
             "accusative-count-other": "{0} имп. кварты",
             "dative-count-other": "{0} имп. кварты",
             "genitive-count-other": "{0} имп. кварты",
-            "instrumental-count-other": "{0} имп. кварты",
-            "locative-count-other": "{0} имп. кварты",
-            "vocative-count-other": "{0} имп. кварты"
+            "instrumental-count-other": "{0} имп. кварты"
+          },
+          "speed-light-speed": {
+            "displayName": "light",
+            "unitPattern-count-other": "{0} light"
+          },
+          "concentr-portion-per-1e9": {
+            "gender": "feminine",
+            "displayName": "миллиардные доли",
+            "unitPattern-count-one": "{0} миллиардная доля",
+            "accusative-count-one": "{0} миллиардную долю",
+            "dative-count-one": "{0} миллиардной доле",
+            "genitive-count-one": "{0} миллиардной доли",
+            "instrumental-count-one": "{0} миллиардной долей",
+            "prepositional-count-one": "{0} миллиардной доле",
+            "unitPattern-count-few": "{0} миллиардные доли",
+            "accusative-count-few": "{0} миллиардные доли",
+            "dative-count-few": "{0} миллиардным долям",
+            "genitive-count-few": "{0} миллиардных долей",
+            "instrumental-count-few": "{0} миллиардными долями",
+            "prepositional-count-few": "{0} миллиардных долях",
+            "unitPattern-count-many": "{0} миллиардных долей",
+            "accusative-count-many": "{0} миллиардных долей",
+            "dative-count-many": "{0} миллиардным долям",
+            "genitive-count-many": "{0} миллиардных долей",
+            "instrumental-count-many": "{0} миллиардными долями",
+            "prepositional-count-many": "{0} миллиардных долях",
+            "unitPattern-count-other": "{0} миллиардной доли",
+            "accusative-count-other": "{0} миллиардной доли",
+            "dative-count-other": "{0} миллиардной доли",
+            "genitive-count-other": "{0} миллиардной доли",
+            "instrumental-count-other": "{0} миллиардной доли",
+            "prepositional-count-other": "{0} миллиардной доли"
+          },
+          "duration-night": {
+            "gender": "feminine",
+            "displayName": "ночи",
+            "unitPattern-count-one": "{0} ночь",
+            "accusative-count-one": "{0} ночь",
+            "dative-count-one": "{0} ночи",
+            "genitive-count-one": "{0} ночи",
+            "instrumental-count-one": "{0} ночью",
+            "prepositional-count-one": "{0} ночи",
+            "unitPattern-count-few": "{0} ночи",
+            "accusative-count-few": "{0} ночи",
+            "dative-count-few": "{0} ночам",
+            "genitive-count-few": "{0} ночей",
+            "instrumental-count-few": "{0} ночами",
+            "prepositional-count-few": "{0} ночах",
+            "unitPattern-count-many": "{0} ночей",
+            "accusative-count-many": "{0} ночей",
+            "dative-count-many": "{0} ночам",
+            "genitive-count-many": "{0} ночей",
+            "instrumental-count-many": "{0} ночами",
+            "prepositional-count-many": "{0} ночах",
+            "unitPattern-count-other": "{0} ночи",
+            "accusative-count-other": "{0} ночи",
+            "dative-count-other": "{0} ночи",
+            "genitive-count-other": "{0} ночи",
+            "instrumental-count-other": "{0} ночи",
+            "prepositional-count-other": "{0} ночи",
+            "perUnitPattern": "{0}/ночь"
           },
           "coordinateUnit": {
             "displayName": "направление",
@@ -5136,6 +5059,12 @@
           "10p-24": {
             "unitPrefixPattern": "и{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "р{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "кв{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "да{0}"
           },
@@ -5165,6 +5094,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "И{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "Р{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Кв{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ки{0}"
@@ -5199,9 +5134,6 @@
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
-            "compoundUnitPattern1-count-few": "{0}³",
-            "compoundUnitPattern1-count-many": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -5237,23 +5169,14 @@
           },
           "angle-degree": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-few": "{0}°",
-            "unitPattern-count-many": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "′",
-            "unitPattern-count-one": "{0}′",
-            "unitPattern-count-few": "{0}′",
-            "unitPattern-count-many": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "″",
-            "unitPattern-count-one": "{0}″",
-            "unitPattern-count-few": "{0}″",
-            "unitPattern-count-many": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -5361,9 +5284,6 @@
           },
           "concentr-permillion": {
             "displayName": "ppm",
-            "unitPattern-count-one": "{0} ppm",
-            "unitPattern-count-few": "{0} ppm",
-            "unitPattern-count-many": "{0} ppm",
             "unitPattern-count-other": "{0} ppm"
           },
           "concentr-percent": {
@@ -5639,13 +5559,6 @@
             "unitPattern-count-few": "{0} кал",
             "unitPattern-count-many": "{0} кал",
             "unitPattern-count-other": "{0} кал"
-          },
-          "energy-foodcalorie": {
-            "displayName": "ккал",
-            "unitPattern-count-one": "{0} ккал",
-            "unitPattern-count-few": "{0} ккал",
-            "unitPattern-count-many": "{0} ккал",
-            "unitPattern-count-other": "{0} ккал"
           },
           "energy-kilojoule": {
             "displayName": "кДж",
@@ -5945,9 +5858,6 @@
           },
           "length-solar-radius": {
             "displayName": "R☉",
-            "unitPattern-count-one": "{0} R☉",
-            "unitPattern-count-few": "{0} R☉",
-            "unitPattern-count-many": "{0} R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -6218,11 +6128,15 @@
             "unitPattern-count-many": "{0} уз",
             "unitPattern-count-other": "{0} уз"
           },
+          "speed-beaufort": {
+            "displayName": "Бфт",
+            "unitPattern-count-one": "{0} Бфт",
+            "unitPattern-count-few": "{0} Бфт",
+            "unitPattern-count-many": "{0} Бфт",
+            "unitPattern-count-other": "{0} Бфт"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-few": "{0}°",
-            "unitPattern-count-many": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -6241,9 +6155,6 @@
           },
           "temperature-kelvin": {
             "displayName": "K",
-            "unitPattern-count-one": "{0} K",
-            "unitPattern-count-few": "{0} K",
-            "unitPattern-count-many": "{0} K",
             "unitPattern-count-other": "{0} K"
           },
           "torque-pound-force-foot": {
@@ -6503,6 +6414,22 @@
             "unitPattern-count-many": "{0} имп. кварт.",
             "unitPattern-count-other": "{0} имп. кварт."
           },
+          "speed-light-speed": {
+            "displayName": "light",
+            "unitPattern-count-other": "{0} light"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "ppb",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "ноч.",
+            "unitPattern-count-one": "{0} ноч.",
+            "unitPattern-count-few": "{0} ноч.",
+            "unitPattern-count-many": "{0} ноч.",
+            "unitPattern-count-other": "{0} ноч.",
+            "perUnitPattern": "{0}/ноч."
+          },
           "coordinateUnit": {
             "displayName": "направление",
             "east": "{0} в. д.",
@@ -6542,6 +6469,12 @@
           "10p-24": {
             "unitPrefixPattern": "и{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "р{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "кв{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "да{0}"
           },
@@ -6571,6 +6504,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "И{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "Р{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Кв{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ки{0}"
@@ -6605,9 +6544,6 @@
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
-            "compoundUnitPattern1-count-few": "{0}³",
-            "compoundUnitPattern1-count-many": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -6643,23 +6579,14 @@
           },
           "angle-degree": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-few": "{0}°",
-            "unitPattern-count-many": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "′",
-            "unitPattern-count-one": "{0}′",
-            "unitPattern-count-few": "{0}′",
-            "unitPattern-count-many": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "″",
-            "unitPattern-count-one": "{0}″",
-            "unitPattern-count-few": "{0}″",
-            "unitPattern-count-many": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -6767,9 +6694,6 @@
           },
           "concentr-permillion": {
             "displayName": "ppm",
-            "unitPattern-count-one": "{0} ppm",
-            "unitPattern-count-few": "{0} ppm",
-            "unitPattern-count-many": "{0} ppm",
             "unitPattern-count-other": "{0} ppm"
           },
           "concentr-percent": {
@@ -7045,13 +6969,6 @@
             "unitPattern-count-few": "{0} кал",
             "unitPattern-count-many": "{0} кал",
             "unitPattern-count-other": "{0} кал"
-          },
-          "energy-foodcalorie": {
-            "displayName": "ккал",
-            "unitPattern-count-one": "{0} ккал",
-            "unitPattern-count-few": "{0} ккал",
-            "unitPattern-count-many": "{0} ккал",
-            "unitPattern-count-other": "{0} ккал"
           },
           "energy-kilojoule": {
             "displayName": "кДж",
@@ -7351,9 +7268,6 @@
           },
           "length-solar-radius": {
             "displayName": "R☉",
-            "unitPattern-count-one": "{0} R☉",
-            "unitPattern-count-few": "{0} R☉",
-            "unitPattern-count-many": "{0} R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -7624,11 +7538,15 @@
             "unitPattern-count-many": "{0} уз",
             "unitPattern-count-other": "{0} уз"
           },
+          "speed-beaufort": {
+            "displayName": "Бфт",
+            "unitPattern-count-one": "{0} Бфт",
+            "unitPattern-count-few": "{0} Бфт",
+            "unitPattern-count-many": "{0} Бфт",
+            "unitPattern-count-other": "{0} Бфт"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-few": "{0}°",
-            "unitPattern-count-many": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -7647,9 +7565,6 @@
           },
           "temperature-kelvin": {
             "displayName": "K",
-            "unitPattern-count-one": "{0} K",
-            "unitPattern-count-few": "{0} K",
-            "unitPattern-count-many": "{0} K",
             "unitPattern-count-other": "{0} K"
           },
           "torque-pound-force-foot": {
@@ -7908,6 +7823,22 @@
             "unitPattern-count-few": "{0} имп. кварт.",
             "unitPattern-count-many": "{0} имп. кварт.",
             "unitPattern-count-other": "{0} имп. кварт."
+          },
+          "speed-light-speed": {
+            "displayName": "light",
+            "unitPattern-count-other": "{0} light"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "ppb",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "ноч.",
+            "unitPattern-count-one": "{0} ноч.",
+            "unitPattern-count-few": "{0} ноч.",
+            "unitPattern-count-many": "{0} ноч.",
+            "unitPattern-count-other": "{0} ноч.",
+            "perUnitPattern": "{0}/ноч."
           },
           "coordinateUnit": {
             "displayName": "напр.",

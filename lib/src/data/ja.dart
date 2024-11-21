@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'ja';
 
-/// Translations in Japanese of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataJa implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataJa();
@@ -22,6 +20,14 @@ class CommonLocaleDataJa implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsJa._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsJa._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsJa._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataJa implements CommonLocaleData {
   static final _territories = TerritoriesJa._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesJa._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesJa extends Languages {
@@ -280,7 +290,7 @@ class LanguagesJa extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'ハリヤーンウィー語',
     ),
     'bgn': Language(
       'bgn',
@@ -313,6 +323,10 @@ class LanguagesJa extends Languages {
     'bla': Language(
       'bla',
       'シクシカ語',
+    ),
+    'blo': Language(
+      'blo',
+      'アニ語 (blo)',
     ),
     'bm': Language(
       'bm',
@@ -556,10 +570,6 @@ class LanguagesJa extends Languages {
       'de',
       'ドイツ語',
     ),
-    'de-AT': Language(
-      'de-AT',
-      'ドイツ語 (オーストリア)',
-    ),
     'de-CH': Language(
       'de-CH',
       '標準ドイツ語 (スイス)',
@@ -690,17 +700,9 @@ class LanguagesJa extends Languages {
       'es',
       'スペイン語',
     ),
-    'es-419': Language(
-      'es-419',
-      'スペイン語 (ラテンアメリカ)',
-    ),
     'es-ES': Language(
       'es-ES',
       'スペイン語 (イベリア半島)',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'スペイン語 (メキシコ)',
     ),
     'esu': Language(
       'esu',
@@ -769,14 +771,6 @@ class LanguagesJa extends Languages {
     'fr': Language(
       'fr',
       'フランス語',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'フランス語 (カナダ)',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'フランス語 (スイス)',
     ),
     'frc': Language(
       'frc',
@@ -870,10 +864,6 @@ class LanguagesJa extends Languages {
       'goh',
       '古高ドイツ語',
     ),
-    'gom': Language(
-      'gom',
-      'ゴア・コンカニ語',
-    ),
     'gon': Language(
       'gon',
       'ゴーンディー語',
@@ -949,11 +939,6 @@ class LanguagesJa extends Languages {
     'hi': Language(
       'hi',
       'ヒンディー語',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'ヒンディー語 (ラテン文字)',
-      variant: 'インド英語 (ヒングリッシュ)',
     ),
     'hif': Language(
       'hif',
@@ -1315,6 +1300,10 @@ class LanguagesJa extends Languages {
       'kwk',
       'クヮキゥワラ語',
     ),
+    'kxv': Language(
+      'kxv',
+      'クーヴィンガ語',
+    ),
     'ky': Language(
       'ky',
       'キルギス語',
@@ -1655,10 +1644,6 @@ class LanguagesJa extends Languages {
       'nds',
       '低地ドイツ語',
     ),
-    'nds-NL': Language(
-      'nds-NL',
-      '低地ドイツ語 (オランダ)',
-    ),
     'ne': Language(
       'ne',
       'ネパール語',
@@ -1907,10 +1892,6 @@ class LanguagesJa extends Languages {
     'pt': Language(
       'pt',
       'ポルトガル語',
-    ),
-    'pt-BR': Language(
-      'pt-BR',
-      'ポルトガル語 (ブラジル)',
     ),
     'pt-PT': Language(
       'pt-PT',
@@ -2501,6 +2482,10 @@ class LanguagesJa extends Languages {
       'vmf',
       'マインフランク語',
     ),
+    'vmw': Language(
+      'vmw',
+      'マクア語',
+    ),
     'vo': Language(
       'vo',
       'ヴォラピュク語',
@@ -2560,6 +2545,10 @@ class LanguagesJa extends Languages {
     'xmf': Language(
       'xmf',
       'メグレル語',
+    ),
+    'xnr': Language(
+      'xnr',
+      'カーングリー語',
     ),
     'xog': Language(
       'xog',
@@ -2654,6 +2643,885 @@ class LanguagesJa extends Languages {
   }, (key) => key.toLowerCase());
 }
 
+class ScriptsJa extends Scripts {
+  ScriptsJa._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'アドラム文字',
+    ),
+    'Afak': Script(
+      'Afak',
+      'アファカ文字',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'カフカス・アルバニア文字',
+    ),
+    'Arab': Script(
+      'Arab',
+      'アラビア文字',
+      variant: 'ペルソ・アラビア文字',
+    ),
+    'Aran': Script(
+      'Aran',
+      'ナスタアリーク体',
+    ),
+    'Armi': Script(
+      'Armi',
+      '帝国アラム文字',
+    ),
+    'Armn': Script(
+      'Armn',
+      'アルメニア文字',
+    ),
+    'Avst': Script(
+      'Avst',
+      'アヴェスター文字',
+    ),
+    'Bali': Script(
+      'Bali',
+      'バリ文字',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'バムン文字',
+    ),
+    'Bass': Script(
+      'Bass',
+      'バサ文字',
+    ),
+    'Batk': Script(
+      'Batk',
+      'バタク文字',
+    ),
+    'Beng': Script(
+      'Beng',
+      'ベンガル文字',
+    ),
+    'Blis': Script(
+      'Blis',
+      'ブリスシンボル',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      '注音字母',
+    ),
+    'Brah': Script(
+      'Brah',
+      'ブラーフミー文字',
+    ),
+    'Brai': Script(
+      'Brai',
+      'ブライユ点字',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'ブギス文字',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'ブヒッド文字',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'チャクマ文字',
+    ),
+    'Cans': Script(
+      'Cans',
+      '統合カナダ先住民音節文字',
+    ),
+    'Cari': Script(
+      'Cari',
+      'カリア文字',
+    ),
+    'Cham': Script(
+      'Cham',
+      'チャム文字',
+    ),
+    'Cher': Script(
+      'Cher',
+      'チェロキー文字',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'キアス文字',
+    ),
+    'Copt': Script(
+      'Copt',
+      'コプト文字',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'キプロス文字',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'キリル文字',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      '古代教会スラブ語キリル文字',
+    ),
+    'Deva': Script(
+      'Deva',
+      'デーバナーガリー文字',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'デセレット文字',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'デュプロワエ式速記',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'エジプト民衆文字',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'エジプト神官文字',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'エジプト聖刻文字',
+    ),
+    'Elba': Script(
+      'Elba',
+      'エルバサン文字',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'エチオピア文字',
+    ),
+    'Geok': Script(
+      'Geok',
+      'ジョージア文字(フツリ)',
+    ),
+    'Geor': Script(
+      'Geor',
+      'ジョージア文字',
+    ),
+    'Glag': Script(
+      'Glag',
+      'グラゴル文字',
+    ),
+    'Goth': Script(
+      'Goth',
+      'ゴート文字',
+    ),
+    'Gran': Script(
+      'Gran',
+      'グランタ文字',
+    ),
+    'Grek': Script(
+      'Grek',
+      'ギリシャ文字',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'グジャラート文字',
+    ),
+    'Guru': Script(
+      'Guru',
+      'グルムキー文字',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      '漢語注音字母',
+    ),
+    'Hang': Script(
+      'Hang',
+      'ハングル',
+    ),
+    'Hani': Script(
+      'Hani',
+      '漢字',
+    ),
+    'Hano': Script(
+      'Hano',
+      'ハヌノオ文字',
+    ),
+    'Hans': Script(
+      'Hans',
+      '簡体字',
+      standAlone: '漢字(簡体字)',
+    ),
+    'Hant': Script(
+      'Hant',
+      '繁体字',
+      standAlone: '漢字(繁体字)',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'ヘブライ文字',
+    ),
+    'Hira': Script(
+      'Hira',
+      'ひらがな',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'アナトリア象形文字',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'パハウ・フモン文字',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      '仮名',
+    ),
+    'Hung': Script(
+      'Hung',
+      '古代ハンガリー文字',
+    ),
+    'Inds': Script(
+      'Inds',
+      'インダス文字',
+    ),
+    'Ital': Script(
+      'Ital',
+      '古イタリア文字',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      '字母',
+    ),
+    'Java': Script(
+      'Java',
+      'ジャワ文字',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      '日本語の文字',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      '女真文字',
+    ),
+    'Kali': Script(
+      'Kali',
+      'カヤー文字',
+    ),
+    'Kana': Script(
+      'Kana',
+      'カタカナ',
+    ),
+    'Khar': Script(
+      'Khar',
+      'カローシュティー文字',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'クメール文字',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'ホジャ文字',
+    ),
+    'Knda': Script(
+      'Knda',
+      'カンナダ文字',
+    ),
+    'Kore': Script(
+      'Kore',
+      '韓国語の文字',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      'クペレ文字',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'カイティ文字',
+    ),
+    'Lana': Script(
+      'Lana',
+      'ラーンナー文字',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'ラオ文字',
+    ),
+    'Latf': Script(
+      'Latf',
+      'ラテン文字(ドイツ文字)',
+    ),
+    'Latg': Script(
+      'Latg',
+      'ラテン文字 (ゲール文字)',
+    ),
+    'Latn': Script(
+      'Latn',
+      'ラテン文字',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'レプチャ文字',
+    ),
+    'Limb': Script(
+      'Limb',
+      'リンブ文字',
+    ),
+    'Lina': Script(
+      'Lina',
+      '線文字A',
+    ),
+    'Linb': Script(
+      'Linb',
+      '線文字B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'フレイザー文字',
+    ),
+    'Loma': Script(
+      'Loma',
+      'ロマ文字',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'リキア文字',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'リディア文字',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      'マハージャニー文字',
+    ),
+    'Mand': Script(
+      'Mand',
+      'マンダ文字',
+    ),
+    'Mani': Script(
+      'Mani',
+      'マニ文字',
+    ),
+    'Maya': Script(
+      'Maya',
+      'マヤ象形文字',
+    ),
+    'Mend': Script(
+      'Mend',
+      'メンデ文字',
+    ),
+    'Merc': Script(
+      'Merc',
+      'メロエ文字草書体',
+    ),
+    'Mero': Script(
+      'Mero',
+      'メロエ文字',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'マラヤーラム文字',
+    ),
+    'Modi': Script(
+      'Modi',
+      'モーディー文字',
+    ),
+    'Mong': Script(
+      'Mong',
+      'モンゴル文字',
+    ),
+    'Moon': Script(
+      'Moon',
+      'ムーン文字',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'ムロ文字',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'メイテイ文字',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'ミャンマー文字',
+    ),
+    'Narb': Script(
+      'Narb',
+      '古代北アラビア文字',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'ナバテア文字',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      'ナシ族ゲバ文字',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'ンコ文字',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      '女書',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'オガム文字',
+    ),
+    'Olck': Script(
+      'Olck',
+      'オルチキ文字',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'オルホン文字',
+    ),
+    'Orya': Script(
+      'Orya',
+      'オディア文字',
+    ),
+    'Osma': Script(
+      'Osma',
+      'オスマニア文字',
+    ),
+    'Palm': Script(
+      'Palm',
+      'パルミラ文字',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'パウ・チン・ハウ文字',
+    ),
+    'Perm': Script(
+      'Perm',
+      '古ぺルム文字',
+    ),
+    'Phag': Script(
+      'Phag',
+      'パスパ文字',
+    ),
+    'Phli': Script(
+      'Phli',
+      '碑文パフラヴィー文字',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      '詩編用パフラヴィー文字',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      '書物用パフラヴィー文字',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'フェニキア文字',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'ポラード音声記号',
+    ),
+    'Prti': Script(
+      'Prti',
+      '碑文パルティア文字',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'ルジャン文字',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'ロヒンギャ文字',
+    ),
+    'Roro': Script(
+      'Roro',
+      'ロンゴロンゴ文字',
+    ),
+    'Runr': Script(
+      'Runr',
+      'ルーン文字',
+    ),
+    'Samr': Script(
+      'Samr',
+      'サマリア文字',
+    ),
+    'Sara': Script(
+      'Sara',
+      'サラティ文字',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      '古代南アラビア文字',
+    ),
+    'Saur': Script(
+      'Saur',
+      'サウラーシュトラ文字',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      '手話文字',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'ショー文字',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'シャーラダー文字',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      '梵字',
+    ),
+    'Sind': Script(
+      'Sind',
+      'クダワディ文字',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'シンハラ文字',
+    ),
+    'Sora': Script(
+      'Sora',
+      'ソラング・ソンペング文字',
+    ),
+    'Sund': Script(
+      'Sund',
+      'スンダ文字',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'シロティ・ナグリ文字',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'シリア文字',
+    ),
+    'Syre': Script(
+      'Syre',
+      'シリア文字(エストランゲロ文字)',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'シリア文字(西方シリア文字)',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'シリア文字(東方シリア文字)',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'タグバンワ文字',
+    ),
+    'Takr': Script(
+      'Takr',
+      'タークリー文字',
+    ),
+    'Tale': Script(
+      'Tale',
+      'タイ・レ文字',
+    ),
+    'Talu': Script(
+      'Talu',
+      '新タイ・ルー文字',
+    ),
+    'Taml': Script(
+      'Taml',
+      'タミル文字',
+    ),
+    'Tang': Script(
+      'Tang',
+      '西夏文字',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'タイ・ヴェト文字',
+    ),
+    'Telu': Script(
+      'Telu',
+      'テルグ文字',
+    ),
+    'Teng': Script(
+      'Teng',
+      'テングワール文字',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'ティフナグ文字',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'タガログ文字',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'ターナ文字',
+    ),
+    'Thai': Script(
+      'Thai',
+      'タイ文字',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'チベット文字',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'ティルフータ文字',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'ウガリット文字',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'ヴァイ文字',
+    ),
+    'Visp': Script(
+      'Visp',
+      '視話法',
+    ),
+    'Wara': Script(
+      'Wara',
+      'バラン・クシティ文字',
+    ),
+    'Wole': Script(
+      'Wole',
+      'ウォレアイ文字',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      '古代ペルシア文字',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'シュメール＝アッカド語楔形文字',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'イ文字',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      '基底文字の種別を継承する結合文字',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      '数学記号',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      '絵文字',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      '記号文字',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      '非表記',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      '共通文字',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      '不明な文字',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsJa extends Variants {
+  VariantsJa._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'ドイツ語旧正書法',
+    ),
+    '1994': Variant(
+      '1994',
+      '標準レージア方言正書法',
+    ),
+    '1996': Variant(
+      '1996',
+      'ドイツ語正書法(1996)',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      '後期中世フランス語(〜1606)',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      '初期現代フランス語',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      '標準ベラルーシ語 (1959)',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      'ALA-LCラテン文字化(1997)',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'アロコ方言',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      '東アルメニア文語',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      '西アルメニア文語',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      '統一トルコラテン文字',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'サン・ジョルジョ/ビーラ方言',
+    ),
+    'BOHORIC': Variant(
+      'BOHORIC',
+      'ボホリッツ・アルファベット',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'ブーントリング',
+    ),
+    'DAJNKO': Variant(
+      'DAJNKO',
+      'ダインチッツァ',
+    ),
+    'EMODENG': Variant(
+      'EMODENG',
+      '初期近代英語',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      '国際音声記号',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'ウラル音声記号',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      'ヘボン式ローマ字',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      '共通コーンウォール語正書法',
+    ),
+    'KSCOR': Variant(
+      'KSCOR',
+      '標準コーンウォール語正書法',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'レージア方言 リポヴァツ方言',
+    ),
+    'METELKO': Variant(
+      'METELKO',
+      'メテルチッツァ',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'モノトニック',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'ンジュカ方言',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'ナティゾーネ方言',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'ニヴァ方言',
+    ),
+    'NULIK': Variant(
+      'NULIK',
+      '現代ヴォラピュク語',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'オゼアッコ/オソヤネ方言',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'パマカ方言',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'ピン音(ローマ字表記法)',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'ポリトニック',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'コンピュータ',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      '改訂版',
+    ),
+    'RIGIK': Variant(
+      'RIGIK',
+      '古典ヴォラピュク語',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'レシア方言',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'サホ語',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'スコットランド標準英語',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'リバプール方言',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'ストルヴィッツァ/ソルビツァ方言',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'タラシケヴィツァ正書法',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      '統一コーンウォール語正書法',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      '改訂統一コーンウォール語正書法',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'バレンシア方言',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'ウェード式ローマ字表記法',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
 class UnitsJa implements Units {
   UnitsJa._();
 
@@ -2718,6 +3586,18 @@ class UnitsJa implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ロント{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('クエクト{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('デカ{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2776,6 +3656,18 @@ class UnitsJa implements Units {
         long: UnitPrefixPattern('ヨタ{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ロナ{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('クエタ{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2842,16 +3734,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '重力加速度',
+          one: '{0} g-force',
           other: '{0} G',
         ),
         short: UnitCountPattern(
           _locale,
           '重力加速度',
+          one: '{0} G',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           '重力加速度',
+          one: '{0}G',
           other: '{0}G',
         ),
       );
@@ -2861,16 +3756,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メートル毎秒毎秒',
+          one: '{0} meter per second squared',
           other: '{0} メートル毎秒毎秒',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0} m/s²',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0}m/s²',
           other: '{0}m/s²',
         ),
       );
@@ -2880,16 +3778,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '回転',
+          one: '{0} revolution',
           other: '{0} 回転',
         ),
         short: UnitCountPattern(
           _locale,
           '回転',
+          one: '{0} rev',
           other: '{0} rev',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rev',
+          one: '{0}rev',
           other: '{0}rev',
         ),
       );
@@ -2899,16 +3800,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ラジアン',
+          one: '{0} radian',
           other: '{0} ラジアン',
         ),
         short: UnitCountPattern(
           _locale,
           'ラジアン',
+          one: '{0} rad',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rad',
+          one: '{0}rad',
           other: '{0}rad',
         ),
       );
@@ -2918,16 +3822,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} degree',
           other: '{0} 度',
         ),
         short: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} deg',
           other: '{0} 度',
         ),
         narrow: UnitCountPattern(
           _locale,
           '度',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -2937,16 +3844,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} arcminute',
           other: '{0} 分',
         ),
         short: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} arcmin',
           other: '{0} 分',
         ),
         narrow: UnitCountPattern(
           _locale,
           '分',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -2956,16 +3866,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} arcsecond',
           other: '{0} 秒',
         ),
         short: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} arcsec',
           other: '{0} 秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -2975,16 +3888,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方キロメートル',
+          one: '{0} square kilometer',
           other: '{0} 平方キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0} km²',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0}km²',
           other: '{0}km²',
         ),
       );
@@ -2994,16 +3910,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘクタール',
+          one: '{0} hectare',
           other: '{0} ヘクタール',
         ),
         short: UnitCountPattern(
           _locale,
           'ヘクタール',
+          one: '{0} ha',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ヘクタール',
+          one: '{0}ha',
           other: '{0}ha',
         ),
       );
@@ -3013,16 +3932,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方メートル',
+          one: '{0} square meter',
           other: '{0} 平方メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm²',
+          one: '{0} m²',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm²',
+          one: '{0}m²',
           other: '{0}m²',
         ),
       );
@@ -3032,16 +3954,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方センチメートル',
+          one: '{0} square centimeter',
           other: '{0} 平方センチメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0} cm²',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0}cm²',
           other: '{0}cm²',
         ),
       );
@@ -3051,16 +3976,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方マイル',
+          one: '{0} square mile',
           other: '{0} 平方マイル',
         ),
         short: UnitCountPattern(
           _locale,
           '平方マイル',
+          one: '{0} sq mi',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
+          one: '{0}mi²',
           other: '{0}mi²',
         ),
       );
@@ -3070,16 +3998,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'エーカー',
+          one: '{0} acre',
           other: '{0} エーカー',
         ),
         short: UnitCountPattern(
           _locale,
           'エーカー',
+          one: '{0} ac',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
           _locale,
           'エーカー',
+          one: '{0}ac',
           other: '{0}ac',
         ),
       );
@@ -3089,16 +4020,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方ヤード',
+          one: '{0} square yard',
           other: '{0} 平方ヤード',
         ),
         short: UnitCountPattern(
           _locale,
           '平方ヤード',
+          one: '{0} yd²',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
+          one: '{0}yd²',
           other: '{0}yd²',
         ),
       );
@@ -3108,16 +4042,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方フィート',
+          one: '{0} square foot',
           other: '{0} 平方フィート',
         ),
         short: UnitCountPattern(
           _locale,
           '平方フィート',
+          one: '{0} sq ft',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
+          one: '{0}ft²',
           other: '{0}ft²',
         ),
       );
@@ -3127,16 +4064,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '平方インチ',
+          one: '{0} square inch',
           other: '{0} 平方インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '平方インチ',
+          one: '{0} in²',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
+          one: '{0}in²',
           other: '{0}in²',
         ),
       );
@@ -3146,16 +4086,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドゥナム',
+          one: '{0} dunam',
           other: '{0} ドゥナム',
         ),
         short: UnitCountPattern(
           _locale,
           'ドゥナム',
+          one: '{0} dunam',
           other: '{0}ドゥナム',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ドゥナム',
+          one: '{0}dunam',
           other: '{0}ドゥナム',
         ),
       );
@@ -3165,16 +4108,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '金',
+          one: '{0} karat',
           other: '{0} 金',
         ),
         short: UnitCountPattern(
           _locale,
           '金',
+          one: '{0} kt',
           other: '{0} 金',
         ),
         narrow: UnitCountPattern(
           _locale,
           '金',
+          one: '{0}kt',
           other: '{0}K',
         ),
       );
@@ -3184,16 +4130,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリグラム毎デシリットル',
+          one: '{0} milligram per deciliter',
           other: '{0} ミリグラム毎デシリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリグラム毎デシリットル',
+          one: '{0} mg/dL',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
+          one: '{0}mg/dL',
           other: '{0}mg/dL',
         ),
       );
@@ -3203,16 +4152,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリモル毎リットル',
+          one: '{0} millimole per liter',
           other: '{0} ミリモル毎リットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリモル毎リットル',
+          one: '{0} mmol/L',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmol/L',
+          one: '{0}mmol/L',
           other: '{0}mmol/L',
         ),
       );
@@ -3222,16 +4174,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '項目',
+          one: '{0} item',
           other: '{0} 項目',
         ),
         short: UnitCountPattern(
           _locale,
           '項目',
+          one: '{0} item',
           other: '{0} 項目',
         ),
         narrow: UnitCountPattern(
           _locale,
           '項目',
+          one: '{0}item',
           other: '{0}項目',
         ),
       );
@@ -3241,16 +4196,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} part per million',
           other: '{0} ppm',
         ),
         short: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} ppm',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0}ppm',
           other: '{0}ppm',
         ),
       );
@@ -3260,16 +4218,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーセント',
+          one: '{0} percent',
           other: '{0} パーセント',
         ),
         short: UnitCountPattern(
           _locale,
           'パーセント',
+          one: '{0}%',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
+          one: '{0}%',
           other: '{0}%',
         ),
       );
@@ -3279,16 +4240,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーミル',
+          one: '{0} permille',
           other: '{0} パーミル',
         ),
         short: UnitCountPattern(
           _locale,
           'パーミル',
+          one: '{0}‰',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0}‰',
           other: '{0}‰',
         ),
       );
@@ -3298,16 +4262,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーミリアド',
+          one: '{0} permyriad',
           other: '{0} パーミリアド',
         ),
         short: UnitCountPattern(
           _locale,
           'パーミリアド',
+          one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
       );
@@ -3317,16 +4284,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'モル',
+          one: '{0} mole',
           other: '{0} モル',
         ),
         short: UnitCountPattern(
           _locale,
           'モル',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0}mol',
           other: '{0}mol',
         ),
       );
@@ -3336,16 +4306,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'リットル毎キロメートル',
+          one: '{0} liter per kilometer',
           other: '{0} リットル毎キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0} L/km',
           other: '{0} L/km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0}L/km',
           other: '{0}L/km',
         ),
       );
@@ -3355,16 +4328,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'リットル毎100キロメートル',
+          one: '{0} liter per 100 kilometers',
           other: '{0} リットル毎100キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0} L/100 km',
           other: '{0} L/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0}L/100km',
           other: '{0}L/100km',
         ),
       );
@@ -3374,16 +4350,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル毎ガロン',
+          one: '{0} mile per gallon',
           other: '{0} マイル毎ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル/ガロン',
+          one: '{0} mpg',
           other: '{0} mpg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpg',
+          one: '{0}mpg',
           other: '{0}mpg',
         ),
       );
@@ -3393,16 +4372,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル毎英ガロン',
+          one: '{0} mile per Imp. gallon',
           other: '{0} マイル毎英ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル毎英ガロン',
+          one: '{0} mpg Imp.',
           other: '{0} mpg Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイル/英ガロン',
+          one: '{0}m/gUK',
           other: '{0}mpg Imp.',
         ),
       );
@@ -3412,16 +4394,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ペタバイト',
+          one: '{0} petabyte',
           other: '{0} ペタバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'ペタバイト',
+          one: '{0} PB',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0}PB',
           other: '{0}PB',
         ),
       );
@@ -3431,16 +4416,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'テラバイト',
+          one: '{0} terabyte',
           other: '{0} テラバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'テラバイト',
+          one: '{0} TB',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0}TB',
           other: '{0}TB',
         ),
       );
@@ -3450,16 +4438,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'テラビット',
+          one: '{0} terabit',
           other: '{0} テラビット',
         ),
         short: UnitCountPattern(
           _locale,
           'テラビット',
+          one: '{0} Tb',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0}Tb',
           other: '{0}Tb',
         ),
       );
@@ -3469,16 +4460,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガバイト',
+          one: '{0} gigabyte',
           other: '{0} ギガバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0} GB',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0}GB',
           other: '{0}GB',
         ),
       );
@@ -3488,16 +4482,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガビット',
+          one: '{0} gigabit',
           other: '{0} ギガビット',
         ),
         short: UnitCountPattern(
           _locale,
           'ギガビット',
+          one: '{0} Gb',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0}Gb',
           other: '{0}Gb',
         ),
       );
@@ -3507,16 +4504,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガバイト',
+          one: '{0} megabyte',
           other: '{0} メガバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0} MB',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0}MB',
           other: '{0}MB',
         ),
       );
@@ -3526,16 +4526,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガビット',
+          one: '{0} megabit',
           other: '{0} メガビット',
         ),
         short: UnitCountPattern(
           _locale,
           'メガビット',
+          one: '{0} Mb',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0}Mb',
           other: '{0}Mb',
         ),
       );
@@ -3545,16 +4548,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロバイト',
+          one: '{0} kilobyte',
           other: '{0} キロバイト',
         ),
         short: UnitCountPattern(
           _locale,
           'KB',
+          one: '{0} kB',
           other: '{0} KB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'KB',
+          one: '{0}kB',
           other: '{0}KB',
         ),
       );
@@ -3564,16 +4570,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロビット',
+          one: '{0} kilobit',
           other: '{0} キロビット',
         ),
         short: UnitCountPattern(
           _locale,
           'キロビット',
+          one: '{0} kb',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0}kb',
           other: '{0}kb',
         ),
       );
@@ -3583,16 +4592,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'バイト',
+          one: '{0} byte',
           other: '{0} バイト',
         ),
         short: UnitCountPattern(
           _locale,
           'バイト',
+          one: '{0} byte',
           other: '{0} byte',
         ),
         narrow: UnitCountPattern(
           _locale,
           'B',
+          one: '{0}B',
           other: '{0}B',
         ),
       );
@@ -3602,16 +4614,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ビット',
+          one: '{0} bit',
           other: '{0} ビット',
         ),
         short: UnitCountPattern(
           _locale,
           'ビット',
+          one: '{0} bit',
           other: '{0} bit',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ビット',
+          one: '{0}bit',
           other: '{0}b',
         ),
       );
@@ -3621,16 +4636,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '世紀',
+          one: '{0} century',
           other: '{0} 世紀',
         ),
         short: UnitCountPattern(
           _locale,
           '世紀',
+          one: '{0} c',
           other: '{0} 世紀',
         ),
         narrow: UnitCountPattern(
           _locale,
           '世紀',
+          one: '{0}c',
           other: '{0}世紀',
         ),
       );
@@ -3640,16 +4658,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '十年',
+          one: '{0} decade',
           other: '{0} 十年',
         ),
         short: UnitCountPattern(
           _locale,
           '十年',
+          one: '{0} dec',
           other: '{0} 十年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '十年',
+          one: '{0}dec',
           other: '{0}十年',
         ),
       );
@@ -3659,16 +4680,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} year',
           other: '{0} 年',
         ),
         short: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} yr',
           other: '{0} 年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '年',
+          one: '{0}y',
           other: '{0}y',
         ),
       );
@@ -3678,16 +4702,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '四半期',
+          one: '{0} quarter',
           other: '{0} 四半期',
         ),
         short: UnitCountPattern(
           _locale,
           '四半期',
+          one: '{0} qtr',
           other: '{0}四半期',
         ),
         narrow: UnitCountPattern(
           _locale,
           '四半期',
+          one: '{0}q',
           other: '{0}Q',
         ),
       );
@@ -3697,16 +4724,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'か月',
+          one: '{0} month',
           other: '{0} か月',
         ),
         short: UnitCountPattern(
           _locale,
           'か月',
+          one: '{0} mth',
           other: '{0} か月',
         ),
         narrow: UnitCountPattern(
           _locale,
           'か月',
+          one: '{0}m',
           other: '{0}m',
         ),
       );
@@ -3716,16 +4746,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '週間',
+          one: '{0} week',
           other: '{0} 週間',
         ),
         short: UnitCountPattern(
           _locale,
           '週間',
+          one: '{0} wk',
           other: '{0} 週間',
         ),
         narrow: UnitCountPattern(
           _locale,
           '週間',
+          one: '{0}w',
           other: '{0}w',
         ),
       );
@@ -3735,16 +4768,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '日',
+          one: '{0} day',
           other: '{0} 日',
         ),
         short: UnitCountPattern(
           _locale,
           '日',
+          one: '{0} day',
           other: '{0} 日',
         ),
         narrow: UnitCountPattern(
           _locale,
           '日',
+          one: '{0}d',
           other: '{0}d',
         ),
       );
@@ -3754,16 +4790,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '時間',
+          one: '{0} hour',
           other: '{0} 時間',
         ),
         short: UnitCountPattern(
           _locale,
           '時間',
+          one: '{0} hr',
           other: '{0} 時間',
         ),
         narrow: UnitCountPattern(
           _locale,
           '時間',
+          one: '{0}h',
           other: '{0}h',
         ),
       );
@@ -3773,16 +4812,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} minute',
           other: '{0} 分',
         ),
         short: UnitCountPattern(
           _locale,
           '分',
+          one: '{0} min',
           other: '{0} 分',
         ),
         narrow: UnitCountPattern(
           _locale,
           '分',
+          one: '{0}m',
           other: '{0}m',
         ),
       );
@@ -3792,16 +4834,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} second',
           other: '{0} 秒',
         ),
         short: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} sec',
           other: '{0} 秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0}s',
           other: '{0}s',
         ),
       );
@@ -3811,16 +4856,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリ秒',
+          one: '{0} millisecond',
           other: '{0} ミリ秒',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリ秒',
+          one: '{0} ms',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ms',
+          one: '{0}ms',
           other: '{0}ms',
         ),
       );
@@ -3830,16 +4878,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイクロ秒',
+          one: '{0} microsecond',
           other: '{0} マイクロ秒',
         ),
         short: UnitCountPattern(
           _locale,
           'マイクロ秒',
+          one: '{0} μs',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
+          one: '{0}μs',
           other: '{0}μs',
         ),
       );
@@ -3849,16 +4900,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ナノ秒',
+          one: '{0} nanosecond',
           other: '{0} ナノ秒',
         ),
         short: UnitCountPattern(
           _locale,
           'ナノ秒',
+          one: '{0} ns',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
+          one: '{0}ns',
           other: '{0}ns',
         ),
       );
@@ -3868,16 +4922,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'アンペア',
+          one: '{0} ampere',
           other: '{0} アンペア',
         ),
         short: UnitCountPattern(
           _locale,
           'アンペア',
+          one: '{0} A',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'アンペア',
+          one: '{0}A',
           other: '{0}A',
         ),
       );
@@ -3887,16 +4944,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリアンペア',
+          one: '{0} milliampere',
           other: '{0} ミリアンペア',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリアンペア',
+          one: '{0} mA',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ミリアンペア',
+          one: '{0}mA',
           other: '{0}mA',
         ),
       );
@@ -3906,16 +4966,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'オーム',
+          one: '{0} ohm',
           other: '{0} オーム',
         ),
         short: UnitCountPattern(
           _locale,
           'オーム',
+          one: '{0} Ω',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'オーム',
+          one: '{0}Ω',
           other: '{0}Ω',
         ),
       );
@@ -3925,16 +4988,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ボルト',
+          one: '{0} volt',
           other: '{0} ボルト',
         ),
         short: UnitCountPattern(
           _locale,
           'ボルト',
+          one: '{0} V',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ボルト',
+          one: '{0}V',
           other: '{0}V',
         ),
       );
@@ -3944,16 +5010,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロカロリー',
+          one: '{0} kilocalorie',
           other: '{0} キロカロリー',
         ),
         short: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0} kcal',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0}kcal',
           other: '{0}kcal',
         ),
       );
@@ -3963,16 +5032,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カロリー',
+          one: '{0} calorie',
           other: '{0} カロリー',
         ),
         short: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0} cal',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0}cal',
           other: '{0}calth',
         ),
       );
@@ -3982,16 +5054,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カロリー',
+          one: '{0} Calorie',
           other: '{0} カロリー',
         ),
         short: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0} Cal',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0}Cal',
           other: '{0}cal',
         ),
       );
@@ -4001,16 +5076,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロジュール',
+          one: '{0} kilojoule',
           other: '{0} キロジュール',
         ),
         short: UnitCountPattern(
           _locale,
           'キロジュール',
+          one: '{0} kJ',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'キロジュール',
+          one: '{0}kJ',
           other: '{0}kJ',
         ),
       );
@@ -4020,16 +5098,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ジュール',
+          one: '{0} joule',
           other: '{0} ジュール',
         ),
         short: UnitCountPattern(
           _locale,
           'ジュール',
+          one: '{0} J',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ジュール',
+          one: '{0}J',
           other: '{0}J',
         ),
       );
@@ -4039,16 +5120,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロワット時',
+          one: '{0} kilowatt hour',
           other: '{0} キロワット時',
         ),
         short: UnitCountPattern(
           _locale,
           'キロワット時',
+          one: '{0} kWh',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
+          one: '{0}kWh',
           other: '{0}kWh',
         ),
       );
@@ -4058,16 +5142,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '電子ボルト',
+          one: '{0} electronvolt',
           other: '{0} 電子ボルト',
         ),
         short: UnitCountPattern(
           _locale,
           '電子ボルト',
+          one: '{0} eV',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
+          one: '{0}eV',
           other: '{0} eV',
         ),
       );
@@ -4077,16 +5164,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英熱量',
+          one: '{0} British thermal unit',
           other: '{0} 英熱量',
         ),
         short: UnitCountPattern(
           _locale,
           '英熱量',
+          one: '{0} Btu',
           other: '{0} BTU',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英熱量',
+          one: '{0}Btu',
           other: '{0}BTU',
         ),
       );
@@ -4096,16 +5186,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '米サーム',
+          one: '{0} US therm',
           other: '{0} 米サーム',
         ),
         short: UnitCountPattern(
           _locale,
           '米サーム',
+          one: '{0} US therm',
           other: '{0} 米サーム',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米サーム',
+          one: '{0}US therm',
           other: '{0}米サーム',
         ),
       );
@@ -4115,16 +5208,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '重量ポンド',
+          one: '{0} pound of force',
           other: '{0} 重量ポンド',
         ),
         short: UnitCountPattern(
           _locale,
           '重量ポンド',
+          one: '{0} lbf',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0}lbf',
           other: '{0}lbf',
         ),
       );
@@ -4134,16 +5230,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ニュートン',
+          one: '{0} newton',
           other: '{0} ニュートン',
         ),
         short: UnitCountPattern(
           _locale,
           'ニュートン',
+          one: '{0} N',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N',
+          one: '{0}N',
           other: '{0}N',
         ),
       );
@@ -4153,16 +5252,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロワット時毎100キロメートル',
+          one: '{0} kilowatt-hour per 100 kilometers',
           other: '{0} キロワット時毎100キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kWh/100km',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0}kWh/100km',
           other: '{0}kWh/100km',
         ),
       );
@@ -4172,16 +5274,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガヘルツ',
+          one: '{0} gigahertz',
           other: '{0} ギガヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0} GHz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0}GHz',
           other: '{0}GHz',
         ),
       );
@@ -4191,16 +5296,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガヘルツ',
+          one: '{0} megahertz',
           other: '{0} メガヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0} MHz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0}MHz',
           other: '{0}MHz',
         ),
       );
@@ -4210,16 +5318,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロヘルツ',
+          one: '{0} kilohertz',
           other: '{0} キロヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0} kHz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0}kHz',
           other: '{0}kHz',
         ),
       );
@@ -4229,16 +5340,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘルツ',
+          one: '{0} hertz',
           other: '{0} ヘルツ',
         ),
         short: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0} Hz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0}Hz',
           other: '{0}Hz',
         ),
       );
@@ -4248,16 +5362,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'フォントサイズ em',
+          one: '{0} em',
           other: '{0} em',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
+          one: '{0}em',
           other: '{0}em',
         ),
       );
@@ -4267,16 +5384,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピクセル',
+          one: '{0} pixel',
           other: '{0} ピクセル',
         ),
         short: UnitCountPattern(
           _locale,
           'ピクセル',
+          one: '{0} px',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
+          one: '{0}px',
           other: '{0}px',
         ),
       );
@@ -4286,16 +5406,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガピクセル',
+          one: '{0} megapixel',
           other: '{0} メガピクセル',
         ),
         short: UnitCountPattern(
           _locale,
           'メガピクセル',
+          one: '{0} MP',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0}MP',
           other: '{0}MP',
         ),
       );
@@ -4305,16 +5428,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピクセル/cm',
+          one: '{0} pixel per centimeter',
           other: '{0} ピクセル/cm',
         ),
         short: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} ppcm',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0}ppcm',
           other: '{0}ppcm',
         ),
       );
@@ -4324,16 +5450,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピクセル/インチ',
+          one: '{0} pixel per inch',
           other: '{0} ピクセル/インチ',
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} ppi',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0}ppi',
           other: '{0}ppi',
         ),
       );
@@ -4343,16 +5472,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドット/cm',
+          one: '{0} dot per centimeter',
           other: '{0} ドット/cm',
         ),
         short: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0} dpcm',
           other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0}dpcm',
           other: '{0}dpcm',
         ),
       );
@@ -4362,16 +5494,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドット/インチ',
+          one: '{0} dot per inch',
           other: '{0} ドット/インチ',
         ),
         short: UnitCountPattern(
           _locale,
           'dpi',
+          one: '{0} dpi',
           other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpi',
+          one: '{0}dpi',
           other: '{0}dpi',
         ),
       );
@@ -4381,16 +5516,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドット',
+          one: '{0} dot',
           other: '{0} ドット',
         ),
         short: UnitCountPattern(
           _locale,
           'ドット',
+          one: '{0} dot',
           other: '{0} ドット',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ドット',
+          one: '{0}dot',
           other: '{0}ドット',
         ),
       );
@@ -4400,16 +5538,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '地球半径',
+          one: '{0} earth radius',
           other: '{0} 地球半径',
         ),
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} R⊕',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0}R⊕',
           other: '{0}R⊕',
         ),
       );
@@ -4419,16 +5560,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロメートル',
+          one: '{0} kilometer',
           other: '{0} キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km',
+          one: '{0} km',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km',
+          one: '{0}km',
           other: '{0}km',
         ),
       );
@@ -4438,16 +5582,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メートル',
+          one: '{0} meter',
           other: '{0} メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm',
+          one: '{0} m',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm',
+          one: '{0}m',
           other: '{0}m',
         ),
       );
@@ -4457,16 +5604,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'デシメートル',
+          one: '{0} decimeter',
           other: '{0} デシメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'デシメートル',
+          one: '{0} dm',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'デシメートル',
+          one: '{0}dm',
           other: '{0}dm',
         ),
       );
@@ -4476,16 +5626,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'センチメートル',
+          one: '{0} centimeter',
           other: '{0} センチメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'cm',
+          one: '{0} cm',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm',
+          one: '{0}cm',
           other: '{0}cm',
         ),
       );
@@ -4495,16 +5648,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリメートル',
+          one: '{0} millimeter',
           other: '{0} ミリメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'mm',
+          one: '{0} mm',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm',
+          one: '{0}mm',
           other: '{0}mm',
         ),
       );
@@ -4514,16 +5670,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイクロメートル',
+          one: '{0} micrometer',
           other: '{0} マイクロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'マイクロメートル',
+          one: '{0} μm',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイクロメートル',
+          one: '{0}μm',
           other: '{0}μm',
         ),
       );
@@ -4533,16 +5692,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ナノメートル',
+          one: '{0} nanometer',
           other: '{0} ナノメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'ナノメートル',
+          one: '{0} nm',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ナノメートル',
+          one: '{0}nm',
           other: '{0}nm',
         ),
       );
@@ -4552,16 +5714,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ピコメートル',
+          one: '{0} picometer',
           other: '{0} ピコメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'ピコメートル',
+          one: '{0} pm',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ピコメートル',
+          one: '{0}pm',
           other: '{0}pm',
         ),
       );
@@ -4571,16 +5736,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル',
+          one: '{0} mile',
           other: '{0} マイル',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル',
+          one: '{0} mi',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイル',
+          one: '{0}mi',
           other: '{0}mi',
         ),
       );
@@ -4590,16 +5758,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヤード',
+          one: '{0} yard',
           other: '{0} ヤード',
         ),
         short: UnitCountPattern(
           _locale,
           'ヤード',
+          one: '{0} yd',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ヤード',
+          one: '{0}yd',
           other: '{0}yd',
         ),
       );
@@ -4609,16 +5780,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'フィート',
+          one: '{0} foot',
           other: '{0} フィート',
         ),
         short: UnitCountPattern(
           _locale,
           'フィート',
+          one: '{0} ft',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'フィート',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -4628,16 +5802,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'インチ',
+          one: '{0} inch',
           other: '{0} インチ',
         ),
         short: UnitCountPattern(
           _locale,
           'インチ',
+          one: '{0} in',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
           _locale,
           'インチ',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -4647,16 +5824,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パーセク',
+          one: '{0} parsec',
           other: '{0} パーセク',
         ),
         short: UnitCountPattern(
           _locale,
           'パーセク',
+          one: '{0} pc',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'パーセク',
+          one: '{0}pc',
           other: '{0}pc',
         ),
       );
@@ -4666,16 +5846,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} light year',
           other: '{0} 光年',
         ),
         short: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} ly',
           other: '{0} 光年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0}ly',
           other: '{0}光年',
         ),
       );
@@ -4685,16 +5868,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '天文単位',
+          one: '{0} astronomical unit',
           other: '{0} 天文単位',
         ),
         short: UnitCountPattern(
           _locale,
           '天文単位',
+          one: '{0} au',
           other: '{0} au',
         ),
         narrow: UnitCountPattern(
           _locale,
           '天文単位',
+          one: '{0}au',
           other: '{0}au',
         ),
       );
@@ -4704,16 +5890,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ハロン',
+          one: '{0} furlong',
           other: '{0} ハロン',
         ),
         short: UnitCountPattern(
           _locale,
           'ハロン',
+          one: '{0} fur',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ハロン',
+          one: '{0}fur',
           other: '{0}fur',
         ),
       );
@@ -4723,16 +5912,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ファゾム',
+          one: '{0} fathom',
           other: '{0} ファゾム',
         ),
         short: UnitCountPattern(
           _locale,
           'ファゾム',
+          one: '{0} fth',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ファゾム',
+          one: '{0}fth',
           other: '{0}fth',
         ),
       );
@@ -4742,16 +5934,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nautical mile',
           other: '{0} 海里',
         ),
         short: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nmi',
           other: '{0} 海里',
         ),
         narrow: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0}nmi',
           other: '{0}海里',
         ),
       );
@@ -4761,16 +5956,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'スカンジナビアマイル',
+          one: '{0} mile-scandinavian',
           other: '{0} スカンジナビアマイル',
         ),
         short: UnitCountPattern(
           _locale,
           'スカンジナビアマイル',
+          one: '{0} smi',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'スカンジナビアマイル',
+          one: '{0}smi',
           other: '{0}smi',
         ),
       );
@@ -4780,16 +5978,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ポイント',
+          one: '{0} point',
           other: '{0} ポイント',
         ),
         short: UnitCountPattern(
           _locale,
           'ポイント',
+          one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -4799,16 +6000,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '太陽半径',
+          one: '{0} solar radius',
           other: '{0} 太陽半径',
         ),
         short: UnitCountPattern(
           _locale,
           '太陽半径',
+          one: '{0} R☉',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0}R☉',
           other: '{0}R☉',
         ),
       );
@@ -4818,16 +6022,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ルクス',
+          one: '{0} lux',
           other: '{0} ルクス',
         ),
         short: UnitCountPattern(
           _locale,
           'ルクス',
+          one: '{0} lx',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ルクス',
+          one: '{0}lx',
           other: '{0}lx',
         ),
       );
@@ -4837,16 +6044,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カンデラ',
+          one: '{0} candela',
           other: '{0} カンデラ',
         ),
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} cd',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0}cd',
           other: '{0}cd',
         ),
       );
@@ -4856,16 +6066,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ルーメン',
+          one: '{0} lumen',
           other: '{0} ルーメン',
         ),
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lm',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0}lm',
           other: '{0}lm',
         ),
       );
@@ -4875,16 +6088,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '太陽光度',
+          one: '{0} solar luminosity',
           other: '{0} 太陽光度',
         ),
         short: UnitCountPattern(
           _locale,
           '太陽光度',
+          one: '{0} L☉',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0}L☉',
           other: '{0}L☉',
         ),
       );
@@ -4894,16 +6110,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'トン',
+          one: '{0} metric ton',
           other: '{0} トン',
         ),
         short: UnitCountPattern(
           _locale,
-          'トン',
+          't',
+          one: '{0} t',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
+          one: '{0}t',
           other: '{0}t',
         ),
       );
@@ -4913,16 +6132,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キログラム',
+          one: '{0} kilogram',
           other: '{0} キログラム',
         ),
         short: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0} kg',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0}kg',
           other: '{0}kg',
         ),
       );
@@ -4932,16 +6154,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'グラム',
+          one: '{0} gram',
           other: '{0} グラム',
         ),
         short: UnitCountPattern(
           _locale,
           'グラム',
+          one: '{0} g',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
+          one: '{0}g',
           other: '{0}g',
         ),
       );
@@ -4951,16 +6176,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリグラム',
+          one: '{0} milligram',
           other: '{0} ミリグラム',
         ),
         short: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0} mg',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0}mg',
           other: '{0}mg',
         ),
       );
@@ -4970,16 +6198,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイクログラム',
+          one: '{0} microgram',
           other: '{0} マイクログラム',
         ),
         short: UnitCountPattern(
           _locale,
           'マイクログラム',
+          one: '{0} μg',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0}μg',
           other: '{0}μg',
         ),
       );
@@ -4989,16 +6220,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '米トン',
+          one: '{0} ton',
           other: '{0} 米トン',
         ),
         short: UnitCountPattern(
           _locale,
           '米トン',
+          one: '{0} tn',
           other: '{0} s/t',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米トン',
+          one: '{0}tn',
           other: '{0}s/t',
         ),
       );
@@ -5008,16 +6242,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ストーン',
+          one: '{0} stone',
           other: '{0} ストーン',
         ),
         short: UnitCountPattern(
           _locale,
           'ストーン',
+          one: '{0} st',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ストーン',
+          one: '{0}st',
           other: '{0}st',
         ),
       );
@@ -5027,16 +6264,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ポンド',
+          one: '{0} pound',
           other: '{0} ポンド',
         ),
         short: UnitCountPattern(
           _locale,
           'ポンド',
+          one: '{0} lb',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ポンド',
+          one: '{0}#',
           other: '{0}lb',
         ),
       );
@@ -5046,16 +6286,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'オンス',
+          one: '{0} ounce',
           other: '{0} オンス',
         ),
         short: UnitCountPattern(
           _locale,
           'オンス',
+          one: '{0} oz',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'オンス',
+          one: '{0}oz',
           other: '{0}oz',
         ),
       );
@@ -5065,16 +6308,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'トロイオンス',
+          one: '{0} troy ounce',
           other: '{0} トロイオンス',
         ),
         short: UnitCountPattern(
           _locale,
           'トロイオンス',
+          one: '{0} oz t',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0}oz t',
           other: '{0}oz t',
         ),
       );
@@ -5084,16 +6330,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'カラット',
+          one: '{0} carat',
           other: '{0} カラット',
         ),
         short: UnitCountPattern(
           _locale,
           'カラット',
+          one: '{0} CD',
           other: '{0} ct',
         ),
         narrow: UnitCountPattern(
           _locale,
           'カラット',
+          one: '{0}CD',
           other: '{0}ct',
         ),
       );
@@ -5103,16 +6352,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ダルトン',
+          one: '{0} dalton',
           other: '{0} ダルトン',
         ),
         short: UnitCountPattern(
           _locale,
           'ダルトン',
+          one: '{0} Da',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0}Da',
           other: '{0}Da',
         ),
       );
@@ -5122,16 +6374,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '地球質量',
+          one: '{0} Earth mass',
           other: '{0} 地球質量',
         ),
         short: UnitCountPattern(
           _locale,
           '地球質量',
+          one: '{0} M⊕',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0}M⊕',
           other: '{0}M⊕',
         ),
       );
@@ -5141,16 +6396,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '太陽質量',
+          one: '{0} solar mass',
           other: '{0} 太陽質量',
         ),
         short: UnitCountPattern(
           _locale,
           '太陽質量',
+          one: '{0} M☉',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0}M☉',
           other: '{0}M☉',
         ),
       );
@@ -5160,16 +6418,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'グレーン',
+          one: '{0} grain',
           other: '{0} グレーン',
         ),
         short: UnitCountPattern(
           _locale,
           'グレーン',
+          one: '{0} gr',
           other: '{0} グレーン',
         ),
         narrow: UnitCountPattern(
           _locale,
           'グレーン',
+          one: '{0}gr',
           other: '{0}グレーン',
         ),
       );
@@ -5179,16 +6440,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ギガワット',
+          one: '{0} gigawatt',
           other: '{0} ギガワット',
         ),
         short: UnitCountPattern(
           _locale,
           'ギガワット',
+          one: '{0} GW',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ギガワット',
+          one: '{0}GW',
           other: '{0}GW',
         ),
       );
@@ -5198,16 +6462,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガワット',
+          one: '{0} megawatt',
           other: '{0} メガワット',
         ),
         short: UnitCountPattern(
           _locale,
           'メガワット',
+          one: '{0} MW',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'メガワット',
+          one: '{0}MW',
           other: '{0}MW',
         ),
       );
@@ -5217,16 +6484,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロワット',
+          one: '{0} kilowatt',
           other: '{0} キロワット',
         ),
         short: UnitCountPattern(
           _locale,
           'キロワット',
+          one: '{0} kW',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
+          one: '{0}kW',
           other: '{0}kW',
         ),
       );
@@ -5236,16 +6506,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ワット',
+          one: '{0} watt',
           other: '{0} ワット',
         ),
         short: UnitCountPattern(
           _locale,
           'ワット',
+          one: '{0} W',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ワット',
+          one: '{0}W',
           other: '{0}W',
         ),
       );
@@ -5255,16 +6528,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリワット',
+          one: '{0} milliwatt',
           other: '{0} ミリワット',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリワット',
+          one: '{0} mW',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
+          one: '{0}mW',
           other: '{0}mW',
         ),
       );
@@ -5274,16 +6550,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '馬力',
+          one: '{0} horsepower',
           other: '{0} 馬力',
         ),
         short: UnitCountPattern(
           _locale,
           '馬力',
+          one: '{0} hp',
           other: '{0} 馬力',
         ),
         narrow: UnitCountPattern(
           _locale,
           '馬力',
+          one: '{0}hp',
           other: '{0}hp',
         ),
       );
@@ -5293,16 +6572,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '水銀柱ミリメートル',
+          one: '{0} millimeter of mercury',
           other: '{0} 水銀柱ミリメートル',
         ),
         short: UnitCountPattern(
           _locale,
           '水銀柱ミリメートル',
+          one: '{0} mmHg',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
           _locale,
           '水銀柱ミリメートル',
+          one: '{0}mmHg',
           other: '{0}mmHg',
         ),
       );
@@ -5312,16 +6594,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '重量ポンド毎平方インチ',
+          one: '{0} pound-force per square inch',
           other: '{0} 重量ポンド毎平方インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '重量ポンド毎平方インチ',
+          one: '{0} psi',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           '重量ポンド毎平方インチ',
+          one: '{0}psi',
           other: '{0}psi',
         ),
       );
@@ -5331,16 +6616,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '水銀柱インチ',
+          one: '{0} inch of mercury',
           other: '{0} 水銀柱インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '水銀柱インチ',
+          one: '{0} inHg',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           '水銀柱インチ',
+          one: '{0}″ Hg',
           other: '{0}" Hg',
         ),
       );
@@ -5350,16 +6638,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'バール',
+          one: '{0} bar',
           other: '{0} バール',
         ),
         short: UnitCountPattern(
           _locale,
           'バール',
+          one: '{0} bar',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'バール',
+          one: '{0}bar',
           other: '{0}bar',
         ),
       );
@@ -5369,16 +6660,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリバール',
+          one: '{0} millibar',
           other: '{0} ミリバール',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリバール',
+          one: '{0} mbar',
           other: '{0} mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ミリバール',
+          one: '{0}mb',
           other: '{0}mb',
         ),
       );
@@ -5388,16 +6682,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '気圧',
+          one: '{0} atmosphere',
           other: '{0} 気圧',
         ),
         short: UnitCountPattern(
           _locale,
           '気圧',
+          one: '{0} atm',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           '気圧',
+          one: '{0}atm',
           other: '{0}atm',
         ),
       );
@@ -5407,16 +6704,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パスカル',
+          one: '{0} pascal',
           other: '{0} パスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'パスカル',
+          one: '{0} Pa',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0}Pa',
           other: '{0}Pa',
         ),
       );
@@ -5426,16 +6726,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘクトパスカル',
+          one: '{0} hectopascal',
           other: '{0} ヘクトパスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0} hPa',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0}hPa',
           other: '{0}hPa',
         ),
       );
@@ -5445,16 +6748,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロパスカル',
+          one: '{0} kilopascal',
           other: '{0} キロパスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} kPa',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0}kPa',
           other: '{0}kPa',
         ),
       );
@@ -5464,16 +6770,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガパスカル',
+          one: '{0} megapascal',
           other: '{0} メガパスカル',
         ),
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} MPa',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0}MPa',
           other: '{0}MPa',
         ),
       );
@@ -5483,16 +6792,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'キロメートル毎時',
+          one: '{0} kilometer per hour',
           other: '時速 {0} キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0} km/h',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0}km/h',
           other: '{0}km/h',
         ),
       );
@@ -5502,16 +6814,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メートル毎秒',
+          one: '{0} meter per second',
           other: '秒速 {0} メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0} m/s',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0}m/s',
           other: '{0}m/s',
         ),
       );
@@ -5521,16 +6836,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'マイル毎時',
+          one: '{0} mile per hour',
           other: '時速 {0} マイル',
         ),
         short: UnitCountPattern(
           _locale,
           'マイル毎時',
+          one: '{0} mph',
           other: '{0} mph',
         ),
         narrow: UnitCountPattern(
           _locale,
           'マイル毎時',
+          one: '{0}mph',
           other: '{0}mi/h',
         ),
       );
@@ -5540,17 +6858,42 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ノット',
+          one: '{0} knot',
           other: '{0} ノット',
         ),
         short: UnitCountPattern(
           _locale,
           'ノット',
+          one: '{0} kn',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ノット',
+          one: '{0}kn',
           other: '{0}kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ビューフォート風力階級',
+          one: 'Beaufort {0}',
+          other: 'ビューフォート風力階級 {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '風力階級',
+          one: 'B {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '風力階級',
+          one: 'B{0}',
+          other: 'B{0}',
         ),
       );
 
@@ -5559,16 +6902,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} degree temperature',
           other: '{0}度',
         ),
         short: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -5578,16 +6924,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '摂氏',
+          one: '{0} degree Celsius',
           other: '摂氏 {0} 度',
         ),
         short: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
       );
@@ -5597,16 +6946,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '華氏',
+          one: '{0} degree Fahrenheit',
           other: '華氏 {0} 度',
         ),
         short: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°F',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°',
           other: '{0}°F',
         ),
       );
@@ -5616,16 +6968,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ケルビン',
+          one: '{0} kelvin',
           other: '{0} ケルビン',
         ),
         short: UnitCountPattern(
           _locale,
           'K',
+          one: '{0} K',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
+          one: '{0}K',
           other: '{0}K',
         ),
       );
@@ -5635,16 +6990,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ポンドフィート',
+          one: '{0} pound-force-foot',
           other: '{0} ポンドフィート',
         ),
         short: UnitCountPattern(
           _locale,
           'ポンドフィート',
+          one: '{0} lbf⋅ft',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0}lbf⋅ft',
           other: '{0}lbf⋅ft',
         ),
       );
@@ -5654,16 +7012,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ニュートンメートル',
+          one: '{0} newton-meter',
           other: '{0} ニュートンメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'ニュートンメートル',
+          one: '{0} N⋅m',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N⋅m',
+          one: '{0}N⋅m',
           other: '{0}N⋅m',
         ),
       );
@@ -5673,16 +7034,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方キロメートル',
+          one: '{0} cubic kilometer',
           other: '{0} 立方キロメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0} km³',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0}km³',
           other: '{0}km³',
         ),
       );
@@ -5692,16 +7056,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方メートル',
+          one: '{0} cubic meter',
           other: '{0} 立方メートル',
         ),
         short: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0} m³',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0}m³',
           other: '{0}m³',
         ),
       );
@@ -5711,16 +7078,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方センチメートル',
+          one: '{0} cubic centimeter',
           other: '{0} 立方センチメートル',
         ),
         short: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0} cm³',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0}cm³',
           other: '{0}cm³',
         ),
       );
@@ -5730,16 +7100,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方マイル',
+          one: '{0} cubic mile',
           other: '{0} 立方マイル',
         ),
         short: UnitCountPattern(
           _locale,
           '立方マイル',
+          one: '{0} mi³',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
+          one: '{0}mi³',
           other: '{0}mi³',
         ),
       );
@@ -5749,16 +7122,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方ヤード',
+          one: '{0} cubic yard',
           other: '{0} 立方ヤード',
         ),
         short: UnitCountPattern(
           _locale,
           '立方ヤード',
+          one: '{0} yd³',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
+          one: '{0}yd³',
           other: '{0}yd³',
         ),
       );
@@ -5768,16 +7144,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方フィート',
+          one: '{0} cubic foot',
           other: '{0} 立方フィート',
         ),
         short: UnitCountPattern(
           _locale,
           '立方フィート',
+          one: '{0} ft³',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
+          one: '{0}ft³',
           other: '{0}ft³',
         ),
       );
@@ -5787,16 +7166,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '立方インチ',
+          one: '{0} cubic inch',
           other: '{0} 立方インチ',
         ),
         short: UnitCountPattern(
           _locale,
           '立方インチ',
+          one: '{0} in³',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
+          one: '{0}in³',
           other: '{0}in³',
         ),
       );
@@ -5806,16 +7188,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メガリットル',
+          one: '{0} megaliter',
           other: '{0} メガリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'メガリットル',
+          one: '{0} ML',
           other: '{0} ML',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ML',
+          one: '{0}ML',
           other: '{0}ML',
         ),
       );
@@ -5825,16 +7210,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ヘクトリットル',
+          one: '{0} hectoliter',
           other: '{0} ヘクトリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ヘクトリットル',
+          one: '{0} hL',
           other: '{0} hL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hL',
+          one: '{0}hL',
           other: '{0}hL',
         ),
       );
@@ -5844,16 +7232,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'リットル',
+          one: '{0} liter',
           other: '{0} リットル',
         ),
         short: UnitCountPattern(
           _locale,
           'リットル',
+          one: '{0} L',
           other: '{0} L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L',
+          one: '{0}L',
           other: '{0}L',
         ),
       );
@@ -5863,16 +7254,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'デシリットル',
+          one: '{0} deciliter',
           other: '{0} デシリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'デシリットル',
+          one: '{0} dL',
           other: '{0} dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dL',
+          one: '{0}dL',
           other: '{0}dL',
         ),
       );
@@ -5882,16 +7276,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'センチリットル',
+          one: '{0} centiliter',
           other: '{0} センチリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'センチリットル',
+          one: '{0} cL',
           other: '{0} cL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cL',
+          one: '{0}cL',
           other: '{0}cL',
         ),
       );
@@ -5901,16 +7298,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ミリリットル',
+          one: '{0} milliliter',
           other: '{0} ミリリットル',
         ),
         short: UnitCountPattern(
           _locale,
           'ミリリットル',
+          one: '{0} mL',
           other: '{0} ml',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mL',
+          one: '{0}mL',
           other: '{0}ml',
         ),
       );
@@ -5920,16 +7320,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メトリックパイント',
+          one: '{0} metric pint',
           other: '{0} メトリックパイント',
         ),
         short: UnitCountPattern(
           _locale,
           'メトリックパイント',
+          one: '{0} mpt',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'メトリックパイント',
+          one: '{0}mpt',
           other: '{0}mpt',
         ),
       );
@@ -5939,16 +7342,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'メトリックカップ',
+          one: '{0} metric cup',
           other: '{0} メトリックカップ',
         ),
         short: UnitCountPattern(
           _locale,
           'メトリックカップ',
+          one: '{0} mc',
           other: '{0} mc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'メトリックカップ',
+          one: '{0}mc',
           other: '{0}mc',
         ),
       );
@@ -5958,16 +7364,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'エーカーフィート',
+          one: '{0} acre-foot',
           other: '{0} エーカーフィート',
         ),
         short: UnitCountPattern(
           _locale,
           'エーカーフィート',
+          one: '{0} ac ft',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac ft',
+          one: '{0}ac ft',
           other: '{0}ac ft',
         ),
       );
@@ -5977,16 +7386,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ブッシェル',
+          one: '{0} bushel',
           other: '{0} ブッシェル',
         ),
         short: UnitCountPattern(
           _locale,
           'ブッシェル',
+          one: '{0} bu',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ブッシェル',
+          one: '{0}bu',
           other: '{0}bu',
         ),
       );
@@ -5996,16 +7408,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ガロン',
+          one: '{0} gallon',
           other: '{0} ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           'ガロン',
+          one: '{0} gal',
           other: '{0} gal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'gal',
+          one: '{0}gal',
           other: '{0}gal',
         ),
       );
@@ -6015,16 +7430,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英ガロン',
+          one: '{0} Imp. gallon',
           other: '{0} 英ガロン',
         ),
         short: UnitCountPattern(
           _locale,
           '英ガロン',
+          one: '{0} gal Imp.',
           other: '{0} gal Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Imp gal',
+          one: '{0}galIm',
           other: '{0}gal Imp.',
         ),
       );
@@ -6034,16 +7452,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'クォート',
+          one: '{0} quart',
           other: '{0} クォート',
         ),
         short: UnitCountPattern(
           _locale,
           'クォート',
+          one: '{0} qt',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
+          one: '{0}qt',
           other: '{0}qt',
         ),
       );
@@ -6053,16 +7474,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'パイント',
+          one: '{0} pint',
           other: '{0} パイント',
         ),
         short: UnitCountPattern(
           _locale,
           'パイント',
+          one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -6071,17 +7495,20 @@ class UnitsJa implements Units {
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
           _locale,
-          'カップ',
-          other: '{0} カップ',
+          'カップ - 米国',
+          one: '{0} cup',
+          other: '{0} カップ - 米国',
         ),
         short: UnitCountPattern(
           _locale,
-          'カップ',
-          other: '{0} カップ',
+          'カップ - 米国',
+          one: '{0} c',
+          other: '{0} カップ - 米国',
         ),
         narrow: UnitCountPattern(
           _locale,
           'カップ',
+          one: '{0}c',
           other: '{0}カップ',
         ),
       );
@@ -6091,16 +7518,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '液量オンス',
+          one: '{0} fluid ounce',
           other: '{0} 液量オンス',
         ),
         short: UnitCountPattern(
           _locale,
           '液量オンス',
+          one: '{0} fl oz',
           other: '{0} fl oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fl oz',
+          one: '{0}fl oz',
           other: '{0}fl oz',
         ),
       );
@@ -6110,16 +7540,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英液量オンス',
+          one: '{0} Imp. fluid ounce',
           other: '{0} 英液量オンス',
         ),
         short: UnitCountPattern(
           _locale,
           '英液量オンス',
+          one: '{0} fl oz Imp.',
           other: '{0} fl oz Imp',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Imp fl oz',
+          one: '{0}fl oz Im',
           other: '{0}Imp fl oz',
         ),
       );
@@ -6128,18 +7561,21 @@ class UnitsJa implements Units {
   Unit get volumeTablespoon => Unit(
         long: UnitCountPattern(
           _locale,
-          '大さじ',
-          other: '大さじ {0}',
+          'テーブルスプーン',
+          one: '{0} tablespoon',
+          other: '{0} テーブルスプーン',
         ),
         short: UnitCountPattern(
           _locale,
-          '大さじ',
-          other: '大さじ {0}',
+          'テーブルスプーン',
+          one: '{0} tbsp',
+          other: '{0} tbsp',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '大さじ',
-          other: '大さじ{0}',
+          'tbsp',
+          one: '{0}tbsp',
+          other: '{0}tbsp',
         ),
       );
 
@@ -6147,18 +7583,21 @@ class UnitsJa implements Units {
   Unit get volumeTeaspoon => Unit(
         long: UnitCountPattern(
           _locale,
-          '小さじ',
-          other: '小さじ {0}',
+          'ティースプーン',
+          one: '{0} teaspoon',
+          other: '{0} ティースプーン',
         ),
         short: UnitCountPattern(
           _locale,
-          '小さじ',
-          other: '小さじ {0}',
+          'ティースプーン',
+          one: '{0} tsp',
+          other: '{0} tsp',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '小さじ',
-          other: '小さじ{0}',
+          'tsp',
+          one: '{0}tsp',
+          other: '{0}tsp',
         ),
       );
 
@@ -6167,16 +7606,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'バレル',
+          one: '{0} barrel',
           other: '{0} バレル',
         ),
         short: UnitCountPattern(
           _locale,
           'バレル',
+          one: '{0} bbl',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
+          one: '{0}bbl',
           other: '{0}bbl',
         ),
       );
@@ -6186,16 +7628,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '中さじ',
+          one: '{0} dessert spoon',
           other: '中さじ {0}',
         ),
         short: UnitCountPattern(
           _locale,
           '中さじ',
+          one: '{0} dsp',
           other: '中さじ {0}',
         ),
         narrow: UnitCountPattern(
           _locale,
           '中さじ',
+          one: '{0}dsp',
           other: '中さじ{0}',
         ),
       );
@@ -6205,16 +7650,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英デザートスプーン',
+          one: '{0} Imp. dessert spoon',
           other: '{0} 英デザートスプーン',
         ),
         short: UnitCountPattern(
           _locale,
           '英デザートスプーン',
+          one: '{0} dsp-Imp.',
           other: '{0} 英デザートスプーン',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英デザートスプーン',
+          one: '{0}dsp-Imp',
           other: '{0}英デザートスプーン',
         ),
       );
@@ -6224,16 +7672,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} drop',
           other: '{0} 滴',
         ),
         short: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} dr',
           other: '{0} 滴',
         ),
         narrow: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0}dr',
           other: '{0}滴',
         ),
       );
@@ -6243,16 +7694,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ドラム',
+          one: '{0} dram',
           other: '{0} ドラム',
         ),
         short: UnitCountPattern(
           _locale,
           '液量ドラム',
+          one: '{0} dram',
           other: '{0} 液量ドラム',
         ),
         narrow: UnitCountPattern(
           _locale,
           '液量ドラム',
+          one: '{0}fl.dr.',
           other: '{0}fl dr',
         ),
       );
@@ -6262,16 +7716,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'ジガー',
+          one: '{0} jigger',
           other: '{0} ジガー',
         ),
         short: UnitCountPattern(
           _locale,
           'ジガー',
+          one: '{0} jigger',
           other: '{0} ジガー',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ジガー',
+          one: '{0}jigger',
           other: '{0}ジガー',
         ),
       );
@@ -6281,16 +7738,19 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           'つまみ',
+          one: '{0} pinch',
           other: '{0} つまみ',
         ),
         short: UnitCountPattern(
           _locale,
           'つまみ',
+          one: '{0} pn',
           other: '{0} つまみ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'つまみ',
+          one: '{0}pn',
           other: '{0}つまみ',
         ),
       );
@@ -6300,17 +7760,108 @@ class UnitsJa implements Units {
         long: UnitCountPattern(
           _locale,
           '英クォート',
+          one: '{0} Imp. quart',
           other: '{0} 英クォート',
         ),
         short: UnitCountPattern(
           _locale,
           '英クォート',
+          one: '{0} qt-Imp.',
           other: '{0} qt Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt Imp',
+          one: '{0}qt-Imp.',
           other: '{0}qt-Imp.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0} 光',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0} 光',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0}light',
+          other: '{0}光',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} part per billion',
+          other: '{0} ppb',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '泊',
+          one: '{0} night',
+          other: '{0} 泊',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '泊',
+          one: '{0} night',
+          other: '{0} 泊',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '泊',
+          one: '{0}night',
+          other: '{0}泊',
         ),
       );
 }
@@ -7487,6 +9038,10 @@ class TerritoriesJa implements Territories {
       'CP',
       'クリッパートン島',
     ),
+    'CQ': Territory(
+      'CQ',
+      '不明な地域 (CQ)',
+    ),
     'CR': Territory(
       'CR',
       'コスタリカ',
@@ -8342,6 +9897,2413 @@ class TerritoriesJa implements Territories {
     'ZW': Territory(
       'ZW',
       'ジンバブエ',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesJa extends TimeZones {
+  TimeZonesJa._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: '{0}時間',
+            regionFormatDaylight: '{0}夏時間',
+            regionFormatStandard: '{0}標準時',
+            fallbackFormat: '{1}（{0}）');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Adak': TimeZoneNames(
+      exemplarCity: 'アダック',
+    ),
+    'America/Anchorage': TimeZoneNames(
+      exemplarCity: 'アンカレッジ',
+    ),
+    'America/Anguilla': TimeZoneNames(
+      exemplarCity: 'アンギラ',
+    ),
+    'America/Antigua': TimeZoneNames(
+      exemplarCity: 'アンティグア',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      exemplarCity: 'アラグァイナ',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'リオガジェゴス',
+    ),
+    'America/Argentina/San_Juan': TimeZoneNames(
+      exemplarCity: 'サンファン',
+    ),
+    'America/Argentina/Ushuaia': TimeZoneNames(
+      exemplarCity: 'ウシュアイア',
+    ),
+    'America/Argentina/La_Rioja': TimeZoneNames(
+      exemplarCity: 'ラリオハ',
+    ),
+    'America/Argentina/San_Luis': TimeZoneNames(
+      exemplarCity: 'サンルイス',
+    ),
+    'America/Argentina/Salta': TimeZoneNames(
+      exemplarCity: 'サルタ',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      exemplarCity: 'トゥクマン',
+    ),
+    'America/Aruba': TimeZoneNames(
+      exemplarCity: 'アルバ',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: 'アスンシオン',
+    ),
+    'America/Bahia': TimeZoneNames(
+      exemplarCity: 'バイーア',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'バイアバンデラ',
+    ),
+    'America/Barbados': TimeZoneNames(
+      exemplarCity: 'バルバドス',
+    ),
+    'America/Belem': TimeZoneNames(
+      exemplarCity: 'ベレン',
+    ),
+    'America/Belize': TimeZoneNames(
+      exemplarCity: 'ベリーズ',
+    ),
+    'America/Blanc-Sablon': TimeZoneNames(
+      exemplarCity: 'ブラン・サブロン',
+    ),
+    'America/Boa_Vista': TimeZoneNames(
+      exemplarCity: 'ボアビスタ',
+    ),
+    'America/Bogota': TimeZoneNames(
+      exemplarCity: 'ボゴタ',
+    ),
+    'America/Boise': TimeZoneNames(
+      exemplarCity: 'ボイシ',
+    ),
+    'America/Buenos_Aires': TimeZoneNames(
+      exemplarCity: 'ブエノスアイレス',
+    ),
+    'America/Cambridge_Bay': TimeZoneNames(
+      exemplarCity: 'ケンブリッジベイ',
+    ),
+    'America/Campo_Grande': TimeZoneNames(
+      exemplarCity: 'カンポグランデ',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: 'カンクン',
+    ),
+    'America/Caracas': TimeZoneNames(
+      exemplarCity: 'カラカス',
+    ),
+    'America/Catamarca': TimeZoneNames(
+      exemplarCity: 'カタマルカ',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      exemplarCity: 'カイエンヌ',
+    ),
+    'America/Cayman': TimeZoneNames(
+      exemplarCity: 'ケイマン',
+    ),
+    'America/Chicago': TimeZoneNames(
+      exemplarCity: 'シカゴ',
+    ),
+    'America/Chihuahua': TimeZoneNames(
+      exemplarCity: 'チワワ',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: 'シウダー・フアレス',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: 'アティコカン',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      exemplarCity: 'コルドバ',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      exemplarCity: 'コスタリカ',
+    ),
+    'America/Creston': TimeZoneNames(
+      exemplarCity: 'クレストン',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      exemplarCity: 'クイアバ',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: 'キュラソー',
+    ),
+    'America/Danmarkshavn': TimeZoneNames(
+      exemplarCity: 'デンマークシャウン',
+    ),
+    'America/Dawson': TimeZoneNames(
+      exemplarCity: 'ドーソン',
+    ),
+    'America/Dawson_Creek': TimeZoneNames(
+      exemplarCity: 'ドーソンクリーク',
+    ),
+    'America/Denver': TimeZoneNames(
+      exemplarCity: 'デンバー',
+    ),
+    'America/Detroit': TimeZoneNames(
+      exemplarCity: 'デトロイト',
+    ),
+    'America/Dominica': TimeZoneNames(
+      exemplarCity: 'ドミニカ',
+    ),
+    'America/Edmonton': TimeZoneNames(
+      exemplarCity: 'エドモントン',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      exemplarCity: 'エイルネペ',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      exemplarCity: 'エルサルバドル',
+    ),
+    'America/Fort_Nelson': TimeZoneNames(
+      exemplarCity: 'フォートネルソン',
+    ),
+    'America/Fortaleza': TimeZoneNames(
+      exemplarCity: 'フォルタレザ',
+    ),
+    'America/Glace_Bay': TimeZoneNames(
+      exemplarCity: 'グレースベイ',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: 'ヌーク',
+    ),
+    'America/Goose_Bay': TimeZoneNames(
+      exemplarCity: 'グースベイ',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      exemplarCity: 'グランドターク',
+    ),
+    'America/Grenada': TimeZoneNames(
+      exemplarCity: 'グレナダ',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      exemplarCity: 'グアドループ',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      exemplarCity: 'グアテマラ',
+    ),
+    'America/Guayaquil': TimeZoneNames(
+      exemplarCity: 'グアヤキル',
+    ),
+    'America/Guyana': TimeZoneNames(
+      exemplarCity: 'ガイアナ',
+    ),
+    'America/Halifax': TimeZoneNames(
+      exemplarCity: 'ハリファクス',
+    ),
+    'America/Havana': TimeZoneNames(
+      exemplarCity: 'ハバナ',
+    ),
+    'America/Hermosillo': TimeZoneNames(
+      exemplarCity: 'エルモシヨ',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'インディアナ州ビンセンス',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'インディアナ州ピーターズバーグ',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'インディアナ州テルシティ',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: 'インディアナ州ノックス',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'インディアナ州ウィナマック',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'インディアナ州マレンゴ',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: 'インディアナ州ビベー',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      exemplarCity: 'インディアナポリス',
+    ),
+    'America/Inuvik': TimeZoneNames(
+      exemplarCity: 'イヌヴィク',
+    ),
+    'America/Iqaluit': TimeZoneNames(
+      exemplarCity: 'イカルイット',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      exemplarCity: 'ジャマイカ',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      exemplarCity: 'フフイ',
+    ),
+    'America/Juneau': TimeZoneNames(
+      exemplarCity: 'ジュノー',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'ケンタッキー州モンティチェロ',
+    ),
+    'America/Kralendijk': TimeZoneNames(
+      exemplarCity: 'クラレンダイク',
+    ),
+    'America/La_Paz': TimeZoneNames(
+      exemplarCity: 'ラパス',
+    ),
+    'America/Lima': TimeZoneNames(
+      exemplarCity: 'リマ',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      exemplarCity: 'ロサンゼルス',
+    ),
+    'America/Louisville': TimeZoneNames(
+      exemplarCity: 'ルイビル',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'ローワー・プリンセズ・クウォーター',
+    ),
+    'America/Maceio': TimeZoneNames(
+      exemplarCity: 'マセイオ',
+    ),
+    'America/Managua': TimeZoneNames(
+      exemplarCity: 'マナグア',
+    ),
+    'America/Manaus': TimeZoneNames(
+      exemplarCity: 'マナウス',
+    ),
+    'America/Marigot': TimeZoneNames(
+      exemplarCity: 'マリゴ',
+    ),
+    'America/Martinique': TimeZoneNames(
+      exemplarCity: 'マルティニーク',
+    ),
+    'America/Matamoros': TimeZoneNames(
+      exemplarCity: 'マタモロス',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      exemplarCity: 'マサトラン',
+    ),
+    'America/Mendoza': TimeZoneNames(
+      exemplarCity: 'メンドーサ',
+    ),
+    'America/Menominee': TimeZoneNames(
+      exemplarCity: 'メノミニー',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: 'メリダ',
+    ),
+    'America/Metlakatla': TimeZoneNames(
+      exemplarCity: 'メトラカトラ',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      exemplarCity: 'メキシコシティー',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      exemplarCity: 'ミクロン島',
+    ),
+    'America/Moncton': TimeZoneNames(
+      exemplarCity: 'モンクトン',
+    ),
+    'America/Monterrey': TimeZoneNames(
+      exemplarCity: 'モンテレイ',
+    ),
+    'America/Montevideo': TimeZoneNames(
+      exemplarCity: 'モンテビデオ',
+    ),
+    'America/Montserrat': TimeZoneNames(
+      exemplarCity: 'モントセラト',
+    ),
+    'America/Nassau': TimeZoneNames(
+      exemplarCity: 'ナッソー',
+    ),
+    'America/New_York': TimeZoneNames(
+      exemplarCity: 'ニューヨーク',
+    ),
+    'America/Nome': TimeZoneNames(
+      exemplarCity: 'ノーム',
+    ),
+    'America/Noronha': TimeZoneNames(
+      exemplarCity: 'ノローニャ',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'ノースダコタ州ビューラー',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'ノースダコタ州ニューセーラム',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'ノースダコタ州センター',
+    ),
+    'America/Ojinaga': TimeZoneNames(
+      exemplarCity: 'オヒナガ',
+    ),
+    'America/Panama': TimeZoneNames(
+      exemplarCity: 'パナマ',
+    ),
+    'America/Paramaribo': TimeZoneNames(
+      exemplarCity: 'パラマリボ',
+    ),
+    'America/Phoenix': TimeZoneNames(
+      exemplarCity: 'フェニックス',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      exemplarCity: 'ポルトープランス',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      exemplarCity: 'ポートオブスペイン',
+    ),
+    'America/Porto_Velho': TimeZoneNames(
+      exemplarCity: 'ポルトベーリョ',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      exemplarCity: 'プエルトリコ',
+    ),
+    'America/Punta_Arenas': TimeZoneNames(
+      exemplarCity: 'プンタアレナス',
+    ),
+    'America/Rankin_Inlet': TimeZoneNames(
+      exemplarCity: 'ランキンインレット',
+    ),
+    'America/Recife': TimeZoneNames(
+      exemplarCity: 'レシフェ',
+    ),
+    'America/Regina': TimeZoneNames(
+      exemplarCity: 'レジャイナ',
+    ),
+    'America/Resolute': TimeZoneNames(
+      exemplarCity: 'レゾリュート',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      exemplarCity: 'リオブランコ',
+    ),
+    'America/Santarem': TimeZoneNames(
+      exemplarCity: 'サンタレム',
+    ),
+    'America/Santiago': TimeZoneNames(
+      exemplarCity: 'サンチアゴ',
+    ),
+    'America/Santo_Domingo': TimeZoneNames(
+      exemplarCity: 'サントドミンゴ',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      exemplarCity: 'サンパウロ',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: 'イトコルトルミット',
+    ),
+    'America/Sitka': TimeZoneNames(
+      exemplarCity: 'シトカ',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: 'サン・バルテルミー',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: 'セントジョンズ',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: 'セントクリストファー',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: 'セントルシア',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: 'セントトーマス',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: 'セントビンセント',
+    ),
+    'America/Swift_Current': TimeZoneNames(
+      exemplarCity: 'スウィフトカレント',
+    ),
+    'America/Tegucigalpa': TimeZoneNames(
+      exemplarCity: 'テグシガルパ',
+    ),
+    'America/Thule': TimeZoneNames(
+      exemplarCity: 'チューレ',
+    ),
+    'America/Tijuana': TimeZoneNames(
+      exemplarCity: 'ティフアナ',
+    ),
+    'America/Toronto': TimeZoneNames(
+      exemplarCity: 'トロント',
+    ),
+    'America/Tortola': TimeZoneNames(
+      exemplarCity: 'トルトーラ',
+    ),
+    'America/Vancouver': TimeZoneNames(
+      exemplarCity: 'バンクーバー',
+    ),
+    'America/Whitehorse': TimeZoneNames(
+      exemplarCity: 'ホワイトホース',
+    ),
+    'America/Winnipeg': TimeZoneNames(
+      exemplarCity: 'ウィニペグ',
+    ),
+    'America/Yakutat': TimeZoneNames(
+      exemplarCity: 'ヤクタット',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      exemplarCity: 'アゾレス',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      exemplarCity: 'バミューダ',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: 'カナリア',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: 'カーボベルデ',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: 'フェロー',
+    ),
+    'Atlantic/Madeira': TimeZoneNames(
+      exemplarCity: 'マデイラ',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      exemplarCity: 'レイキャビク',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: 'サウスジョージア',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: 'セントヘレナ',
+    ),
+    'Atlantic/Stanley': TimeZoneNames(
+      exemplarCity: 'スタンレー',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      exemplarCity: 'アムステルダム',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      exemplarCity: 'アンドラ',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      exemplarCity: 'アストラハン',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: 'アテネ',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: 'ベオグラード',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      exemplarCity: 'ベルリン',
+    ),
+    'Europe/Bratislava': TimeZoneNames(
+      exemplarCity: 'ブラチスラバ',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: 'ブリュッセル',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: 'ブカレスト',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      exemplarCity: 'ブダペスト',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      exemplarCity: 'ビュージンゲン',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: 'キシナウ',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: 'コペンハーゲン',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'アイルランド標準時',
+      ),
+      exemplarCity: 'ダブリン',
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      exemplarCity: 'ジブラルタル',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      exemplarCity: 'ガーンジー',
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      exemplarCity: 'ヘルシンキ',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      exemplarCity: 'マン島',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      exemplarCity: 'イスタンブール',
+    ),
+    'Europe/Jersey': TimeZoneNames(
+      exemplarCity: 'ジャージー',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      exemplarCity: 'カリーニングラード',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: 'キーウ',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      exemplarCity: 'キーロフ',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: 'リスボン',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      exemplarCity: 'リュブリャナ',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: '英国夏時間',
+      ),
+      exemplarCity: 'ロンドン',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: 'ルクセンブルク',
+    ),
+    'Europe/Madrid': TimeZoneNames(
+      exemplarCity: 'マドリード',
+    ),
+    'Europe/Malta': TimeZoneNames(
+      exemplarCity: 'マルタ',
+    ),
+    'Europe/Mariehamn': TimeZoneNames(
+      exemplarCity: 'マリエハムン',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      exemplarCity: 'ミンスク',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      exemplarCity: 'モナコ',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: 'モスクワ',
+    ),
+    'Europe/Oslo': TimeZoneNames(
+      exemplarCity: 'オスロ',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      exemplarCity: 'パリ',
+    ),
+    'Europe/Podgorica': TimeZoneNames(
+      exemplarCity: 'ポドゴリツァ',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: 'プラハ',
+    ),
+    'Europe/Riga': TimeZoneNames(
+      exemplarCity: 'リガ',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: 'ローマ',
+    ),
+    'Europe/Samara': TimeZoneNames(
+      exemplarCity: 'サマラ',
+    ),
+    'Europe/San_Marino': TimeZoneNames(
+      exemplarCity: 'サンマリノ',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      exemplarCity: 'サラエボ',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      exemplarCity: 'サラトフ',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      exemplarCity: 'シンフェロポリ',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      exemplarCity: 'スコピエ',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      exemplarCity: 'ソフィア',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      exemplarCity: 'ストックホルム',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      exemplarCity: 'タリン',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: 'ティラナ',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: 'ウリヤノフスク',
+    ),
+    'Europe/Vaduz': TimeZoneNames(
+      exemplarCity: 'ファドゥーツ',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      exemplarCity: 'バチカン',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: 'ウィーン',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      exemplarCity: 'ヴィリニュス',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      exemplarCity: 'ボルゴグラード',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: 'ワルシャワ',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      exemplarCity: 'ザグレブ',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: 'チューリッヒ',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      exemplarCity: 'アビジャン',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      exemplarCity: 'アクラ',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: 'アジスアベバ',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: 'アルジェ',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: 'アスマラ',
+    ),
+    'Africa/Bamako': TimeZoneNames(
+      exemplarCity: 'バマコ',
+    ),
+    'Africa/Bangui': TimeZoneNames(
+      exemplarCity: 'バンギ',
+    ),
+    'Africa/Banjul': TimeZoneNames(
+      exemplarCity: 'バンジュール',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      exemplarCity: 'ビサウ',
+    ),
+    'Africa/Blantyre': TimeZoneNames(
+      exemplarCity: 'ブランタイヤ',
+    ),
+    'Africa/Brazzaville': TimeZoneNames(
+      exemplarCity: 'ブラザビル',
+    ),
+    'Africa/Bujumbura': TimeZoneNames(
+      exemplarCity: 'ブジュンブラ',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      exemplarCity: 'カイロ',
+    ),
+    'Africa/Casablanca': TimeZoneNames(
+      exemplarCity: 'カサブランカ',
+    ),
+    'Africa/Ceuta': TimeZoneNames(
+      exemplarCity: 'セウタ',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      exemplarCity: 'コナクリ',
+    ),
+    'Africa/Dakar': TimeZoneNames(
+      exemplarCity: 'ダカール',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      exemplarCity: 'ダルエスサラーム',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      exemplarCity: 'ジブチ',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      exemplarCity: 'ドゥアラ',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      exemplarCity: 'アイウン',
+    ),
+    'Africa/Freetown': TimeZoneNames(
+      exemplarCity: 'フリータウン',
+    ),
+    'Africa/Gaborone': TimeZoneNames(
+      exemplarCity: 'ハボローネ',
+    ),
+    'Africa/Harare': TimeZoneNames(
+      exemplarCity: 'ハラレ',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      exemplarCity: 'ヨハネスブルグ',
+    ),
+    'Africa/Juba': TimeZoneNames(
+      exemplarCity: 'ジュバ',
+    ),
+    'Africa/Kampala': TimeZoneNames(
+      exemplarCity: 'カンパラ',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      exemplarCity: 'ハルツーム',
+    ),
+    'Africa/Kigali': TimeZoneNames(
+      exemplarCity: 'キガリ',
+    ),
+    'Africa/Kinshasa': TimeZoneNames(
+      exemplarCity: 'キンシャサ',
+    ),
+    'Africa/Lagos': TimeZoneNames(
+      exemplarCity: 'ラゴス',
+    ),
+    'Africa/Libreville': TimeZoneNames(
+      exemplarCity: 'リーブルヴィル',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: 'ロメ',
+    ),
+    'Africa/Luanda': TimeZoneNames(
+      exemplarCity: 'ルアンダ',
+    ),
+    'Africa/Lubumbashi': TimeZoneNames(
+      exemplarCity: 'ルブンバシ',
+    ),
+    'Africa/Lusaka': TimeZoneNames(
+      exemplarCity: 'ルサカ',
+    ),
+    'Africa/Malabo': TimeZoneNames(
+      exemplarCity: 'マラボ',
+    ),
+    'Africa/Maputo': TimeZoneNames(
+      exemplarCity: 'マプト',
+    ),
+    'Africa/Maseru': TimeZoneNames(
+      exemplarCity: 'マセル',
+    ),
+    'Africa/Mbabane': TimeZoneNames(
+      exemplarCity: 'ムババーネ',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: 'モガディシオ',
+    ),
+    'Africa/Monrovia': TimeZoneNames(
+      exemplarCity: 'モンロビア',
+    ),
+    'Africa/Nairobi': TimeZoneNames(
+      exemplarCity: 'ナイロビ',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: 'ンジャメナ',
+    ),
+    'Africa/Niamey': TimeZoneNames(
+      exemplarCity: 'ニアメ',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      exemplarCity: 'ヌアクショット',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      exemplarCity: 'ワガドゥグー',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      exemplarCity: 'ポルトノボ',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: 'サントメ',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      exemplarCity: 'トリポリ',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      exemplarCity: 'チュニス',
+    ),
+    'Africa/Windhoek': TimeZoneNames(
+      exemplarCity: 'ウィントフック',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      exemplarCity: 'アデン',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      exemplarCity: 'アルマトイ',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      exemplarCity: 'アンマン',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      exemplarCity: 'アナディリ',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: 'アクタウ',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: 'アクトベ',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: 'アシガバード',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      exemplarCity: 'アティラウ',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: 'バグダッド',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      exemplarCity: 'バーレーン',
+    ),
+    'Asia/Baku': TimeZoneNames(
+      exemplarCity: 'バクー',
+    ),
+    'Asia/Bangkok': TimeZoneNames(
+      exemplarCity: 'バンコク',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      exemplarCity: 'バルナウル',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      exemplarCity: 'ベイルート',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      exemplarCity: 'ビシュケク',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      exemplarCity: 'ブルネイ',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: 'コルカタ',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: 'チタ',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      exemplarCity: 'コロンボ',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: 'ダマスカス',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      exemplarCity: 'ダッカ',
+    ),
+    'Asia/Dili': TimeZoneNames(
+      exemplarCity: 'ディリ',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      exemplarCity: 'ドバイ',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: 'ドゥシャンベ',
+    ),
+    'Asia/Famagusta': TimeZoneNames(
+      exemplarCity: 'ファマグスタ',
+    ),
+    'Asia/Gaza': TimeZoneNames(
+      exemplarCity: 'ガザ',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      exemplarCity: 'ヘブロン',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      exemplarCity: '香港',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      exemplarCity: 'ホブド',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      exemplarCity: 'イルクーツク',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      exemplarCity: 'ジャカルタ',
+    ),
+    'Asia/Jayapura': TimeZoneNames(
+      exemplarCity: 'ジャヤプラ',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      exemplarCity: 'エルサレム',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      exemplarCity: 'カブール',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      exemplarCity: 'カムチャッカ',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      exemplarCity: 'カラチ',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: 'カトマンズ',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      exemplarCity: 'ハンドゥイガ',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      exemplarCity: 'クラスノヤルスク',
+    ),
+    'Asia/Kuala_Lumpur': TimeZoneNames(
+      exemplarCity: 'クアラルンプール',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      exemplarCity: 'クチン',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      exemplarCity: 'クウェート',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: 'マカオ',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      exemplarCity: 'マガダン',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      exemplarCity: 'マカッサル',
+    ),
+    'Asia/Manila': TimeZoneNames(
+      exemplarCity: 'マニラ',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      exemplarCity: 'マスカット',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      exemplarCity: 'ニコシア',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      exemplarCity: 'ノヴォクズネツク',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      exemplarCity: 'ノヴォシビルスク',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      exemplarCity: 'オムスク',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      exemplarCity: 'オラル',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      exemplarCity: 'プノンペン',
+    ),
+    'Asia/Pontianak': TimeZoneNames(
+      exemplarCity: 'ポンティアナック',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      exemplarCity: '平壌',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      exemplarCity: 'カタール',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: 'コスタナイ',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: 'クズロルダ',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: 'ヤンゴン',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      exemplarCity: 'リヤド',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: 'ホーチミン',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: 'サハリン',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      exemplarCity: 'サマルカンド',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      exemplarCity: 'ソウル',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      exemplarCity: '上海',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      exemplarCity: 'シンガポール',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      exemplarCity: 'スレドネコリムスク',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      exemplarCity: '台北',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: 'タシケント',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      exemplarCity: 'トビリシ',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: 'テヘラン',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      exemplarCity: 'ティンプー',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      exemplarCity: '東京',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      exemplarCity: 'トムスク',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      exemplarCity: 'ウランバートル',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: 'ウルムチ',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      exemplarCity: 'ウスチネラ',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      exemplarCity: 'ビエンチャン',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      exemplarCity: 'ウラジオストク',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      exemplarCity: 'ヤクーツク',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: 'エカテリンブルグ',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'エレバン',
+    ),
+    'Indian/Antananarivo': TimeZoneNames(
+      exemplarCity: 'アンタナナリボ',
+    ),
+    'Indian/Chagos': TimeZoneNames(
+      exemplarCity: 'チャゴス',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      exemplarCity: 'クリスマス島',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      exemplarCity: 'ココス諸島',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: 'コモロ',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      exemplarCity: 'ケルゲレン諸島',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: 'マヘ',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: 'モルディブ',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      exemplarCity: 'モーリシャス',
+    ),
+    'Indian/Mayotte': TimeZoneNames(
+      exemplarCity: 'マヨット',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: 'レユニオン',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      exemplarCity: 'アデレード',
+    ),
+    'Australia/Brisbane': TimeZoneNames(
+      exemplarCity: 'ブリスベン',
+    ),
+    'Australia/Broken_Hill': TimeZoneNames(
+      exemplarCity: 'ブロークンヒル',
+    ),
+    'Australia/Darwin': TimeZoneNames(
+      exemplarCity: 'ダーウィン',
+    ),
+    'Australia/Eucla': TimeZoneNames(
+      exemplarCity: 'ユークラ',
+    ),
+    'Australia/Hobart': TimeZoneNames(
+      exemplarCity: 'ホバート',
+    ),
+    'Australia/Lindeman': TimeZoneNames(
+      exemplarCity: 'リンデマン',
+    ),
+    'Australia/Lord_Howe': TimeZoneNames(
+      exemplarCity: 'ロードハウ',
+    ),
+    'Australia/Melbourne': TimeZoneNames(
+      exemplarCity: 'メルボルン',
+    ),
+    'Australia/Perth': TimeZoneNames(
+      exemplarCity: 'パース',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      exemplarCity: 'シドニー',
+    ),
+    'Pacific/Apia': TimeZoneNames(
+      exemplarCity: 'アピア',
+    ),
+    'Pacific/Auckland': TimeZoneNames(
+      exemplarCity: 'オークランド',
+    ),
+    'Pacific/Bougainville': TimeZoneNames(
+      exemplarCity: 'ブーゲンビル',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      exemplarCity: 'チャタム',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: 'イースター島',
+    ),
+    'Pacific/Efate': TimeZoneNames(
+      exemplarCity: 'エフェテ島',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'エンダーベリー島',
+    ),
+    'Pacific/Fakaofo': TimeZoneNames(
+      exemplarCity: 'ファカオフォ',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      exemplarCity: 'フィジー',
+    ),
+    'Pacific/Funafuti': TimeZoneNames(
+      exemplarCity: 'フナフティ',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      exemplarCity: 'ガラパゴス',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      exemplarCity: 'ガンビエ諸島',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      exemplarCity: 'ガダルカナル',
+    ),
+    'Pacific/Guam': TimeZoneNames(
+      exemplarCity: 'グアム',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      exemplarCity: 'ホノルル',
+    ),
+    'Pacific/Kanton': TimeZoneNames(
+      exemplarCity: 'カントン島',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      exemplarCity: 'キリスィマスィ島',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      exemplarCity: 'コスラエ',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      exemplarCity: 'クェゼリン',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      exemplarCity: 'マジュロ',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      exemplarCity: 'マルキーズ',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      exemplarCity: 'ミッドウェー島',
+    ),
+    'Pacific/Nauru': TimeZoneNames(
+      exemplarCity: 'ナウル',
+    ),
+    'Pacific/Niue': TimeZoneNames(
+      exemplarCity: 'ニウエ',
+    ),
+    'Pacific/Norfolk': TimeZoneNames(
+      exemplarCity: 'ノーフォーク島',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: 'ヌメア',
+    ),
+    'Pacific/Pago_Pago': TimeZoneNames(
+      exemplarCity: 'パゴパゴ',
+    ),
+    'Pacific/Palau': TimeZoneNames(
+      exemplarCity: 'パラオ',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      exemplarCity: 'ピトケアン諸島',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: 'ポンペイ島',
+    ),
+    'Pacific/Port_Moresby': TimeZoneNames(
+      exemplarCity: 'ポートモレスビー',
+    ),
+    'Pacific/Rarotonga': TimeZoneNames(
+      exemplarCity: 'ラロトンガ',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      exemplarCity: 'サイパン',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      exemplarCity: 'タヒチ',
+    ),
+    'Pacific/Tarawa': TimeZoneNames(
+      exemplarCity: 'タラワ',
+    ),
+    'Pacific/Tongatapu': TimeZoneNames(
+      exemplarCity: 'トンガタプ',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: 'チューク',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      exemplarCity: 'ウェーク島',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      exemplarCity: 'ウォリス諸島',
+    ),
+    'Arctic/Longyearbyen': TimeZoneNames(
+      exemplarCity: 'ロングイェールビーン',
+    ),
+    'Antarctica/Casey': TimeZoneNames(
+      exemplarCity: 'ケーシー基地',
+    ),
+    'Antarctica/Davis': TimeZoneNames(
+      exemplarCity: 'デービス基地',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'デュモン・デュルヴィル基地',
+    ),
+    'Antarctica/Macquarie': TimeZoneNames(
+      exemplarCity: 'マッコリー',
+    ),
+    'Antarctica/Mawson': TimeZoneNames(
+      exemplarCity: 'モーソン基地',
+    ),
+    'Antarctica/McMurdo': TimeZoneNames(
+      exemplarCity: 'マクマード基地',
+    ),
+    'Antarctica/Palmer': TimeZoneNames(
+      exemplarCity: 'パーマー基地',
+    ),
+    'Antarctica/Rothera': TimeZoneNames(
+      exemplarCity: 'ロゼラ基地',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      exemplarCity: '昭和基地',
+    ),
+    'Antarctica/Troll': TimeZoneNames(
+      exemplarCity: 'トロル基地',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      exemplarCity: 'ボストーク基地',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: '協定世界時',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: '地域不明',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'アクレ時間',
+        standard: 'アクレ標準時',
+        daylight: 'アクレ夏時間',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'アフガニスタン時間',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: '中央アフリカ時間',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: '東アフリカ時間',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: '南アフリカ標準時',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: '西アフリカ時間',
+        standard: '西アフリカ標準時',
+        daylight: '西アフリカ夏時間',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'アラスカ時間',
+        standard: 'アラスカ標準時',
+        daylight: 'アラスカ夏時間',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'アルトマイ時間',
+        standard: 'アルトマイ標準時',
+        daylight: 'アルマトイ夏時間',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'アマゾン時間',
+        standard: 'アマゾン標準時',
+        daylight: 'アマゾン夏時間',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'アメリカ中部時間',
+        standard: 'アメリカ中部標準時',
+        daylight: 'アメリカ中部夏時間',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'アメリカ東部時間',
+        standard: 'アメリカ東部標準時',
+        daylight: 'アメリカ東部夏時間',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'アメリカ山地時間',
+        standard: 'アメリカ山地標準時',
+        daylight: 'アメリカ山地夏時間',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'アメリカ太平洋時間',
+        standard: 'アメリカ太平洋標準時',
+        daylight: 'アメリカ太平洋夏時間',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'アナディリ時間',
+        standard: 'アナディリ標準時',
+        daylight: 'アナディリ夏時間',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'アピア時間',
+        standard: 'アピア標準時',
+        daylight: 'アピア夏時間',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'アクタウ時間',
+        standard: 'アクタウ標準時',
+        daylight: 'アクタウ夏時間',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'アクトベ時間',
+        standard: 'アクトベ標準時',
+        daylight: 'アクトベ夏時間',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'アラビア時間',
+        standard: 'アラビア標準時',
+        daylight: 'アラビア夏時間',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'アルゼンチン時間',
+        standard: 'アルゼンチン標準時',
+        daylight: 'アルゼンチン夏時間',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: '西部アルゼンチン時間',
+        standard: '西部アルゼンチン標準時',
+        daylight: '西部アルゼンチン夏時間',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'アルメニア時間',
+        standard: 'アルメニア標準時',
+        daylight: 'アルメニア夏時間',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: '大西洋時間',
+        standard: '大西洋標準時',
+        daylight: '大西洋夏時間',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'オーストラリア中部時間',
+        standard: 'オーストラリア中部標準時',
+        daylight: 'オーストラリア中部夏時間',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'オーストラリア中西部時間',
+        standard: 'オーストラリア中西部標準時',
+        daylight: 'オーストラリア中西部夏時間',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'オーストラリア東部時間',
+        standard: 'オーストラリア東部標準時',
+        daylight: 'オーストラリア東部夏時間',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'オーストラリア西部時間',
+        standard: 'オーストラリア西部標準時',
+        daylight: 'オーストラリア西部夏時間',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'アゼルバイジャン時間',
+        standard: 'アゼルバイジャン標準時',
+        daylight: 'アゼルバイジャン夏時間',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'アゾレス時間',
+        standard: 'アゾレス標準時',
+        daylight: 'アゾレス夏時間',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'バングラデシュ時間',
+        standard: 'バングラデシュ標準時',
+        daylight: 'バングラデシュ夏時間',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'ブータン時間',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'ボリビア時間',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'ブラジリア時間',
+        standard: 'ブラジリア標準時',
+        daylight: 'ブラジリア夏時間',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'ブルネイ・ダルサラーム時間',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'カーボベルデ時間',
+        standard: 'カーボベルデ標準時',
+        daylight: 'カーボベルデ夏時間',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'ケイシー基地時間',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'チャモロ時間',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'チャタム時間',
+        standard: 'チャタム標準時',
+        daylight: 'チャタム夏時間',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'チリ時間',
+        standard: 'チリ標準時',
+        daylight: 'チリ夏時間',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: '中国時間',
+        standard: '中国標準時',
+        daylight: '中国夏時間',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'クリスマス島時間',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'ココス諸島時間',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'コロンビア時間',
+        standard: 'コロンビア標準時',
+        daylight: 'コロンビア夏時間',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'クック諸島時間',
+        standard: 'クック諸島標準時',
+        daylight: 'クック諸島夏時間',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'キューバ時間',
+        standard: 'キューバ標準時',
+        daylight: 'キューバ夏時間',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'デービス基地時間',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'デュモン・デュルヴィル基地時間',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: '東ティモール時間',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'イースター島時間',
+        standard: 'イースター島標準時',
+        daylight: 'イースター島夏時間',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'エクアドル時間',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: '中央ヨーロッパ時間',
+        standard: '中央ヨーロッパ標準時',
+        daylight: '中央ヨーロッパ夏時間',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: '東ヨーロッパ時間',
+        standard: '東ヨーロッパ標準時',
+        daylight: '東ヨーロッパ夏時間',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: '極東ヨーロッパ時間',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: '西ヨーロッパ時間',
+        standard: '西ヨーロッパ標準時',
+        daylight: '西ヨーロッパ夏時間',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'フォークランド諸島時間',
+        standard: 'フォークランド諸島標準時',
+        daylight: 'フォークランド諸島夏時間',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'フィジー時間',
+        standard: 'フィジー標準時',
+        daylight: 'フィジー夏時間',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: '仏領ギアナ時間',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: '仏領南方南極時間',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'ガラパゴス時間',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'ガンビエ諸島時間',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'ジョージア時間',
+        standard: 'ジョージア標準時',
+        daylight: 'ジョージア夏時間',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'ギルバート諸島時間',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'グリニッジ標準時',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'グリーンランド東部時間',
+        standard: 'グリーンランド東部標準時',
+        daylight: 'グリーンランド東部夏時間',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'グリーンランド西部時間',
+        standard: 'グリーンランド西部標準時',
+        daylight: 'グリーンランド西部夏時間',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'グアム時間',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: '湾岸標準時',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'ガイアナ時間',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'ハワイ・アリューシャン時間',
+        standard: 'ハワイ・アリューシャン標準時',
+        daylight: 'ハワイ・アリューシャン夏時間',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: '香港時間',
+        standard: '香港標準時',
+        daylight: '香港夏時間',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'ホブド時間',
+        standard: 'ホブド標準時',
+        daylight: 'ホブド夏時間',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'インド標準時',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'インド洋時間',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'インドシナ時間',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'インドネシア中部時間',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'インドネシア東部時間',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'インドネシア西部時間',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'イラン時間',
+        standard: 'イラン標準時',
+        daylight: 'イラン夏時間',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'イルクーツク時間',
+        standard: 'イルクーツク標準時',
+        daylight: 'イルクーツク夏時間',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'イスラエル時間',
+        standard: 'イスラエル標準時',
+        daylight: 'イスラエル夏時間',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: '日本時間',
+        standard: '日本標準時',
+        daylight: '日本夏時間',
+      ),
+      short: TimeZoneName(
+        standard: 'JST',
+        daylight: 'JDT',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'ペトロパブロフスク・カムチャツキー時間',
+        standard: 'ペトロパブロフスク・カムチャツキー標準時',
+        daylight: 'ペトロパブロフスク・カムチャツキー夏時間',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'カザフスタン時間',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: '東カザフスタン時間',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: '西カザフスタン時間',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: '韓国時間',
+        standard: '韓国標準時',
+        daylight: '韓国夏時間',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'コスラエ時間',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'クラスノヤルスク時間',
+        standard: 'クラスノヤルスク標準時',
+        daylight: 'クラスノヤルスク夏時間',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'キルギス時間',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'ランカ時間',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'ライン諸島時間',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'ロードハウ時間',
+        standard: 'ロードハウ標準時',
+        daylight: 'ロードハウ夏時間',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'マカオ時間',
+        standard: 'マカオ標準時',
+        daylight: 'マカオ夏時間',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'マガダン時間',
+        standard: 'マガダン標準時',
+        daylight: 'マガダン夏時間',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'マレーシア時間',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'モルディブ時間',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'マルキーズ時間',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'マーシャル諸島時間',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'モーリシャス時間',
+        standard: 'モーリシャス標準時',
+        daylight: 'モーリシャス夏時間',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'モーソン基地時間',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'メキシコ太平洋時間',
+        standard: 'メキシコ太平洋標準時',
+        daylight: 'メキシコ太平洋夏時間',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'ウランバートル時間',
+        standard: 'ウランバートル標準時',
+        daylight: 'ウランバートル夏時間',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'モスクワ時間',
+        standard: 'モスクワ標準時',
+        daylight: 'モスクワ夏時間',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'ミャンマー時間',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'ナウル時間',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'ネパール時間',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'ニューカレドニア時間',
+        standard: 'ニューカレドニア標準時',
+        daylight: 'ニューカレドニア夏時間',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'ニュージーランド時間',
+        standard: 'ニュージーランド標準時',
+        daylight: 'ニュージーランド夏時間',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'ニューファンドランド時間',
+        standard: 'ニューファンドランド標準時',
+        daylight: 'ニューファンドランド夏時間',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'ニウエ時間',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'ノーフォーク島時間',
+        standard: 'ノーフォーク島標準時',
+        daylight: 'ノーフォーク島夏時間',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'フェルナンド・デ・ノローニャ時間',
+        standard: 'フェルナンド・デ・ノローニャ標準時',
+        daylight: 'フェルナンド・デ・ノローニャ夏時間',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: '北マリアナ諸島時間',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'ノヴォシビルスク時間',
+        standard: 'ノヴォシビルスク標準時',
+        daylight: 'ノヴォシビルスク夏時間',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'オムスク時間',
+        standard: 'オムスク標準時',
+        daylight: 'オムスク夏時間',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'パキスタン時間',
+        standard: 'パキスタン標準時',
+        daylight: 'パキスタン夏時間',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'パラオ時間',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'パプアニューギニア時間',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'パラグアイ時間',
+        standard: 'パラグアイ標準時',
+        daylight: 'パラグアイ夏時間',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'ペルー時間',
+        standard: 'ペルー標準時',
+        daylight: 'ペルー夏時間',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'フィリピン時間',
+        standard: 'フィリピン標準時',
+        daylight: 'フィリピン夏時間',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'フェニックス諸島時間',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'サンピエール島・ミクロン島時間',
+        standard: 'サンピエール島・ミクロン島標準時',
+        daylight: 'サンピエール島・ミクロン島夏時間',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'ピトケアン時間',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'ポナペ時間',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: '平壌時間',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'クズロルダ時間',
+        standard: 'クズロルダ標準時',
+        daylight: 'クズロルダ夏時間',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'レユニオン時間',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'ロゼラ基地時間',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'サハリン時間',
+        standard: 'サハリン標準時',
+        daylight: 'サハリン夏時間',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'サマラ時間',
+        standard: 'サマラ標準時',
+        daylight: 'サマラ夏時間',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'サモア時間',
+        standard: 'サモア標準時',
+        daylight: 'サモア夏時間',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'セーシェル時間',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'シンガポール標準時',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'ソロモン諸島時間',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'サウスジョージア時間',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'スリナム時間',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: '昭和基地時間',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'タヒチ時間',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: '台北時間',
+        standard: '台北標準時',
+        daylight: '台北夏時間',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'タジキスタン時間',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'トケラウ時間',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'トンガ時間',
+        standard: 'トンガ標準時',
+        daylight: 'トンガ夏時間',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'チューク時間',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'トルクメニスタン時間',
+        standard: 'トルクメニスタン標準時',
+        daylight: 'トルクメニスタン夏時間',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'ツバル時間',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'ウルグアイ時間',
+        standard: 'ウルグアイ標準時',
+        daylight: 'ウルグアイ夏時間',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'ウズベキスタン時間',
+        standard: 'ウズベキスタン標準時',
+        daylight: 'ウズベキスタン夏時間',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'バヌアツ時間',
+        standard: 'バヌアツ標準時',
+        daylight: 'バヌアツ夏時間',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'ベネズエラ時間',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'ウラジオストク時間',
+        standard: 'ウラジオストク標準時',
+        daylight: 'ウラジオストク夏時間',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'ボルゴグラード時間',
+        standard: 'ボルゴグラード標準時',
+        daylight: 'ボルゴグラード夏時間',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'ボストーク基地時間',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'ウェーク島時間',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'ウォリス・フツナ時間',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'ヤクーツク時間',
+        standard: 'ヤクーツク標準時',
+        daylight: 'ヤクーツク夏時間',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'エカテリンブルグ時間',
+        standard: 'エカテリンブルグ標準時',
+        daylight: 'エカテリンブルグ夏時間',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'ユーコン時間',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

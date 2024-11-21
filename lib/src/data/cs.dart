@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'cs';
 
-/// Translations in Czech of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataCs implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataCs();
@@ -22,6 +20,14 @@ class CommonLocaleDataCs implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsCs._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsCs._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsCs._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataCs implements CommonLocaleData {
   static final _territories = TerritoriesCs._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesCs._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesCs extends Languages {
@@ -211,7 +221,7 @@ class LanguagesCs extends Languages {
     'az': Language(
       'az',
       'ázerbájdžánština',
-      short: 'ázerbájdžánština',
+      short: 'azerština',
     ),
     'ba': Language(
       'ba',
@@ -279,7 +289,7 @@ class LanguagesCs extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'harijánština',
     ),
     'bgn': Language(
       'bgn',
@@ -312,6 +322,10 @@ class LanguagesCs extends Languages {
     'bla': Language(
       'bla',
       'siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'aniiština',
     ),
     'bm': Language(
       'bm',
@@ -457,7 +471,7 @@ class LanguagesCs extends Languages {
       'ckb',
       'kurdština (sorání)',
       variant: 'kurdština (sorání)',
-      menu: 'kurdština (sorání)',
+      menu: 'kurdština (centrální)',
     ),
     'clc': Language(
       'clc',
@@ -554,10 +568,6 @@ class LanguagesCs extends Languages {
     'de': Language(
       'de',
       'němčina',
-    ),
-    'de-AT': Language(
-      'de-AT',
-      'němčina (Rakousko)',
     ),
     'de-CH': Language(
       'de-CH',
@@ -659,14 +669,6 @@ class LanguagesCs extends Languages {
       'en',
       'angličtina',
     ),
-    'en-AU': Language(
-      'en-AU',
-      'angličtina (Austrálie)',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'angličtina (Kanada)',
-    ),
     'en-GB': Language(
       'en-GB',
       'angličtina (Velká Británie)',
@@ -689,17 +691,9 @@ class LanguagesCs extends Languages {
       'es',
       'španělština',
     ),
-    'es-419': Language(
-      'es-419',
-      'španělština (Latinská Amerika)',
-    ),
     'es-ES': Language(
       'es-ES',
       'španělština (Evropa)',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'španělština (Mexiko)',
     ),
     'esu': Language(
       'esu',
@@ -768,14 +762,6 @@ class LanguagesCs extends Languages {
     'fr': Language(
       'fr',
       'francouzština',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'francouzština (Kanada)',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'francouzština (Švýcarsko)',
     ),
     'frc': Language(
       'frc',
@@ -869,10 +855,6 @@ class LanguagesCs extends Languages {
       'goh',
       'hornoněmčina (stará)',
     ),
-    'gom': Language(
-      'gom',
-      'konkánština (Goa)',
-    ),
     'gon': Language(
       'gon',
       'góndština',
@@ -948,11 +930,6 @@ class LanguagesCs extends Languages {
     'hi': Language(
       'hi',
       'hindština',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'hindština (latinka)',
-      variant: 'hingliš',
     ),
     'hif': Language(
       'hif',
@@ -1313,6 +1290,10 @@ class LanguagesCs extends Languages {
     'kwk': Language(
       'kwk',
       'kvakiutština',
+    ),
+    'kxv': Language(
+      'kxv',
+      'kúvi',
     ),
     'ky': Language(
       'ky',
@@ -1906,10 +1887,6 @@ class LanguagesCs extends Languages {
       'pt',
       'portugalština',
     ),
-    'pt-BR': Language(
-      'pt-BR',
-      'portugalština (Brazílie)',
-    ),
     'pt-PT': Language(
       'pt-PT',
       'portugalština (Evropa)',
@@ -2470,10 +2447,6 @@ class LanguagesCs extends Languages {
       'uz',
       'uzbečtina',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2497,6 +2470,10 @@ class LanguagesCs extends Languages {
     'vmf': Language(
       'vmf',
       'němčina (mohansko-franské dialekty)',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwština',
     ),
     'vo': Language(
       'vo',
@@ -2557,6 +2534,10 @@ class LanguagesCs extends Languages {
     'xmf': Language(
       'xmf',
       'mingrelština',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kángrí',
     ),
     'xog': Language(
       'xog',
@@ -2628,10 +2609,6 @@ class LanguagesCs extends Languages {
       'zh-Hans',
       'čínština (zjednodušená)',
     ),
-    'zh-Hant': Language(
-      'zh-Hant',
-      'čínština (tradiční)',
-    ),
     'zu': Language(
       'zu',
       'zuluština',
@@ -2647,6 +2624,725 @@ class LanguagesCs extends Languages {
     'zza': Language(
       'zza',
       'zaza',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class ScriptsCs extends Scripts {
+  ScriptsCs._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'adlam',
+    ),
+    'Afak': Script(
+      'Afak',
+      'afaka',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'kavkazskoalbánské',
+    ),
+    'Arab': Script(
+      'Arab',
+      'arabské',
+      variant: 'persko-arabské',
+    ),
+    'Aran': Script(
+      'Aran',
+      'nastalik',
+    ),
+    'Armi': Script(
+      'Armi',
+      'aramejské (imperiální)',
+    ),
+    'Armn': Script(
+      'Armn',
+      'arménské',
+    ),
+    'Avst': Script(
+      'Avst',
+      'avestánské',
+    ),
+    'Bali': Script(
+      'Bali',
+      'balijské',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'bamumské',
+    ),
+    'Bass': Script(
+      'Bass',
+      'bassa vah',
+    ),
+    'Batk': Script(
+      'Batk',
+      'batacké',
+    ),
+    'Beng': Script(
+      'Beng',
+      'bengálské',
+    ),
+    'Blis': Script(
+      'Blis',
+      'Blissovo písmo',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'bráhmí',
+    ),
+    'Brai': Script(
+      'Brai',
+      'Braillovo písmo',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'buginské',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'buhidské',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'čakma',
+    ),
+    'Cans': Script(
+      'Cans',
+      'slabičné písmo kanadských domorodců',
+    ),
+    'Cari': Script(
+      'Cari',
+      'karijské',
+    ),
+    'Cham': Script(
+      'Cham',
+      'čam',
+    ),
+    'Cher': Script(
+      'Cher',
+      'čerokí',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'kirt',
+    ),
+    'Copt': Script(
+      'Copt',
+      'koptské',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'kyperské',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'cyrilice',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'cyrilce - staroslověnská',
+    ),
+    'Deva': Script(
+      'Deva',
+      'dévanágarí',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'deseret',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'Duployého těsnopis',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'egyptské démotické',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'egyptské hieratické',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'egyptské hieroglyfy',
+    ),
+    'Elba': Script(
+      'Elba',
+      'elbasanské',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'etiopské',
+    ),
+    'Geok': Script(
+      'Geok',
+      'gruzínské chutsuri',
+    ),
+    'Geor': Script(
+      'Geor',
+      'gruzínské',
+    ),
+    'Glag': Script(
+      'Glag',
+      'hlaholice',
+    ),
+    'Gong': Script(
+      'Gong',
+      'gundžala gondí',
+    ),
+    'Goth': Script(
+      'Goth',
+      'gotické',
+    ),
+    'Gran': Script(
+      'Gran',
+      'grantha',
+    ),
+    'Grek': Script(
+      'Grek',
+      'řecké',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'gudžarátí',
+    ),
+    'Guru': Script(
+      'Guru',
+      'gurmukhi',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'hanb',
+    ),
+    'Hang': Script(
+      'Hang',
+      'hangul',
+    ),
+    'Hani': Script(
+      'Hani',
+      'han',
+    ),
+    'Hano': Script(
+      'Hano',
+      'hanunóo',
+    ),
+    'Hans': Script(
+      'Hans',
+      'zjednodušené',
+      standAlone: 'han (zjednodušené)',
+    ),
+    'Hant': Script(
+      'Hant',
+      'tradiční',
+      standAlone: 'han (tradiční)',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'hebrejské',
+    ),
+    'Hira': Script(
+      'Hira',
+      'hiragana',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'anatolské hieroglyfy',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'hmongské',
+    ),
+    'Hmnp': Script(
+      'Hmnp',
+      'nyiakeng puachue hmong',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'japonské slabičné',
+    ),
+    'Hung': Script(
+      'Hung',
+      'staromaďarské',
+    ),
+    'Inds': Script(
+      'Inds',
+      'harappské',
+    ),
+    'Ital': Script(
+      'Ital',
+      'etruské',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'javánské',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'japonské',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      'džürčenské',
+    ),
+    'Kali': Script(
+      'Kali',
+      'kayah li',
+    ),
+    'Kana': Script(
+      'Kana',
+      'katakana',
+    ),
+    'Khar': Script(
+      'Khar',
+      'kháróšthí',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'khmerské',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'chodžiki',
+    ),
+    'Knda': Script(
+      'Knda',
+      'kannadské',
+    ),
+    'Kore': Script(
+      'Kore',
+      'korejské',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      'kpelle',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'kaithi',
+    ),
+    'Lana': Script(
+      'Lana',
+      'lanna',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'laoské',
+    ),
+    'Latf': Script(
+      'Latf',
+      'latinka - lomená',
+    ),
+    'Latg': Script(
+      'Latg',
+      'latinka - galská',
+    ),
+    'Latn': Script(
+      'Latn',
+      'latinka',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'lepčské',
+    ),
+    'Limb': Script(
+      'Limb',
+      'limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'lineární A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'lineární B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'Fraserovo',
+    ),
+    'Loma': Script(
+      'Loma',
+      'loma',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'lýkijské',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'lýdské',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      'mahádžaní',
+    ),
+    'Mand': Script(
+      'Mand',
+      'mandejské',
+    ),
+    'Mani': Script(
+      'Mani',
+      'manichejské',
+    ),
+    'Maya': Script(
+      'Maya',
+      'mayské hieroglyfy',
+    ),
+    'Mend': Script(
+      'Mend',
+      'mendské',
+    ),
+    'Merc': Script(
+      'Merc',
+      'meroitické psací',
+    ),
+    'Mero': Script(
+      'Mero',
+      'meroitické',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'malajlámské',
+    ),
+    'Modi': Script(
+      'Modi',
+      'modí',
+    ),
+    'Mong': Script(
+      'Mong',
+      'mongolské',
+    ),
+    'Moon': Script(
+      'Moon',
+      'Moonovo písmo',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'mro',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'mejtej majek (manipurské)',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'myanmarské',
+    ),
+    'Narb': Script(
+      'Narb',
+      'staroseveroarabské',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'nabatejské',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      'naxi geba',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'n’ko',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'nü-šu',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'ogamské',
+    ),
+    'Olck': Script(
+      'Olck',
+      'santálské (ol chiki)',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'orchonské',
+    ),
+    'Orya': Script(
+      'Orya',
+      'urijské',
+    ),
+    'Osma': Script(
+      'Osma',
+      'osmanské',
+    ),
+    'Palm': Script(
+      'Palm',
+      'palmýrské',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'pau cin hau',
+    ),
+    'Perm': Script(
+      'Perm',
+      'staropermské',
+    ),
+    'Phag': Script(
+      'Phag',
+      'phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'pahlavské klínové',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'pahlavské žalmové',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'pahlavské knižní',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'fénické',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Pollardova fonetická abeceda',
+    ),
+    'Prti': Script(
+      'Prti',
+      'parthské klínové',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'redžanské',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'hanifi',
+    ),
+    'Roro': Script(
+      'Roro',
+      'rongorongo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'runové',
+    ),
+    'Samr': Script(
+      'Samr',
+      'samařské',
+    ),
+    'Sara': Script(
+      'Sara',
+      'sarati',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      'starojihoarabské',
+    ),
+    'Saur': Script(
+      'Saur',
+      'saurášterské',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'SignWriting',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'Shawova abeceda',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'šáradá',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      'siddham',
+    ),
+    'Sind': Script(
+      'Sind',
+      'chudábádí',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'sinhálské',
+    ),
+    'Sora': Script(
+      'Sora',
+      'sora sompeng',
+    ),
+    'Sund': Script(
+      'Sund',
+      'sundské',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'sylhetské',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'syrské',
+    ),
+    'Syre': Script(
+      'Syre',
+      'syrské - estrangelo',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'syrské - západní',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'syrské - východní',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'tagbanwa',
+    ),
+    'Takr': Script(
+      'Takr',
+      'takrí',
+    ),
+    'Tale': Script(
+      'Tale',
+      'tai le',
+    ),
+    'Talu': Script(
+      'Talu',
+      'tai lü nové',
+    ),
+    'Taml': Script(
+      'Taml',
+      'tamilské',
+    ),
+    'Tang': Script(
+      'Tang',
+      'tangut',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'tai viet',
+    ),
+    'Telu': Script(
+      'Telu',
+      'telugské',
+    ),
+    'Teng': Script(
+      'Teng',
+      'tengwar',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'berberské',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'tagalské',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'thaana',
+    ),
+    'Thai': Script(
+      'Thai',
+      'thajské',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'tibetské',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'tirhuta',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'ugaritské klínové',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'vai',
+    ),
+    'Visp': Script(
+      'Visp',
+      'viditelná řeč',
+    ),
+    'Wara': Script(
+      'Wara',
+      'varang kšiti',
+    ),
+    'Wole': Script(
+      'Wole',
+      'karolínské (woleai)',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'staroperské klínové písmo',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'sumero-akkadské klínové písmo',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'yi',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'zděděné',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'matematický zápis',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'emodži',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'symboly',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'bez zápisu',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'obecné',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'neznámé písmo',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsCs extends Variants {
+  VariantsCs._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'angličtina (Skotsko)',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Wade-Giles',
     ),
   }, (key) => key.toLowerCase());
 }
@@ -2715,6 +3411,18 @@ class UnitsCs implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('quecto{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('deka{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2775,6 +3483,18 @@ class UnitsCs implements Units {
         narrow: UnitPrefixPattern('Y{0}'),
       );
   @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('quetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
+      );
+  @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
         long: UnitPrefixPattern('kibi{0}'),
         short: UnitPrefixPattern('Ki{0}'),
@@ -2830,9 +3550,9 @@ class UnitsCs implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0}{1}'),
-        short: CompoundUnitPattern('{0}{1}'),
-        narrow: CompoundUnitPattern('{0}{1}'),
+        long: CompoundUnitPattern('{0}⋅{1}'),
+        short: CompoundUnitPattern('{0}⋅{1}'),
+        narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
   Unit get accelerationGForce => Unit(
@@ -2847,17 +3567,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'G',
-          one: '{0} G',
-          few: '{0} G',
-          many: '{0} G',
+          one: '{0} gravitační síla',
+          few: '{0} gravitační síly',
+          many: '{0} gravitační síly',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'G',
-          one: '{0} G',
-          few: '{0} G',
-          many: '{0} G',
+          one: '{0} gravitační síla',
+          few: '{0} gravitační síly',
+          many: '{0} gravitační síly',
           other: '{0} G',
         ),
       );
@@ -2875,17 +3595,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
-          few: '{0} m/s²',
-          many: '{0} m/s²',
+          one: '{0} metr za sekundu na druhou',
+          few: '{0} metry za sekundu na druhou',
+          many: '{0} metru za sekundu na druhou',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
-          few: '{0} m/s²',
-          many: '{0} m/s²',
+          one: '{0} metr za sekundu na druhou',
+          few: '{0} metry za sekundu na druhou',
+          many: '{0} metru za sekundu na druhou',
           other: '{0} m/s²',
         ),
       );
@@ -2931,17 +3651,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
-          few: '{0} rad',
-          many: '{0} rad',
+          one: '{0} radián',
+          few: '{0} radiány',
+          many: '{0} radiánu',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
-          few: '{0} rad',
-          many: '{0} rad',
+          one: '{0} radián',
+          few: '{0} radiány',
+          many: '{0} radiánu',
           other: '{0} rad',
         ),
       );
@@ -2959,17 +3679,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} stupeň',
+          few: '{0} stupně',
+          many: '{0} stupně',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} stupeň',
+          few: '{0} stupně',
+          many: '{0} stupně',
           other: '{0}°',
         ),
       );
@@ -2987,17 +3707,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
-          few: '{0}′',
-          many: '{0}′',
+          one: '{0} minuta',
+          few: '{0} minuty',
+          many: '{0} minuty',
           other: '{0}′',
         ),
         narrow: UnitCountPattern(
           _locale,
           '′',
-          one: '{0}′',
-          few: '{0}′',
-          many: '{0}′',
+          one: '{0} minuta',
+          few: '{0} minuty',
+          many: '{0} minuty',
           other: '{0}′',
         ),
       );
@@ -3015,17 +3735,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
-          few: '{0}″',
-          many: '{0}″',
+          one: '{0} vteřina',
+          few: '{0} vteřiny',
+          many: '{0} vteřiny',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
           '″',
-          one: '{0}″',
-          few: '{0}″',
-          many: '{0}″',
+          one: '{0} vteřina',
+          few: '{0} vteřiny',
+          many: '{0} vteřiny',
           other: '{0}″',
         ),
       );
@@ -3043,17 +3763,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
-          few: '{0} km²',
-          many: '{0} km²',
+          one: '{0} kilometr čtvereční',
+          few: '{0} kilometry čtvereční',
+          many: '{0} kilometru čtverečního',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
-          few: '{0} km²',
-          many: '{0} km²',
+          one: '{0} kilometr čtvereční',
+          few: '{0} kilometry čtvereční',
+          many: '{0} kilometru čtverečního',
           other: '{0} km²',
         ),
       );
@@ -3071,17 +3791,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ha',
-          one: '{0} ha',
-          few: '{0} ha',
-          many: '{0} ha',
+          one: '{0} hektar',
+          few: '{0} hektary',
+          many: '{0} hektaru',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ha',
-          one: '{0} ha',
-          few: '{0} ha',
-          many: '{0} ha',
+          one: '{0} hektar',
+          few: '{0} hektary',
+          many: '{0} hektaru',
           other: '{0} ha',
         ),
       );
@@ -3099,17 +3819,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
-          few: '{0} m²',
-          many: '{0} m²',
+          one: '{0} metr čtvereční',
+          few: '{0} metry čtvereční',
+          many: '{0} metru čtverečního',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
-          few: '{0} m²',
-          many: '{0} m²',
+          one: '{0} metr čtvereční',
+          few: '{0} metry čtvereční',
+          many: '{0} metru čtverečního',
           other: '{0} m²',
         ),
       );
@@ -3127,17 +3847,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
-          few: '{0} cm²',
-          many: '{0} cm²',
+          one: '{0} centimetr čtvereční',
+          few: '{0} centimetry čtvereční',
+          many: '{0} centimetru čtverečního',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
-          few: '{0} cm²',
-          many: '{0} cm²',
+          one: '{0} centimetr čtvereční',
+          few: '{0} centimetry čtvereční',
+          many: '{0} centimetru čtverečního',
           other: '{0} cm²',
         ),
       );
@@ -3155,17 +3875,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
-          few: '{0} mi²',
-          many: '{0} mi²',
+          one: '{0} míle čtvereční',
+          few: '{0} míle čtvereční',
+          many: '{0} míle čtvereční',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
-          few: '{0} mi²',
-          many: '{0} mi²',
+          one: '{0} míle čtvereční',
+          few: '{0} míle čtvereční',
+          many: '{0} míle čtvereční',
           other: '{0} mi²',
         ),
       );
@@ -3183,17 +3903,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ac',
-          one: '{0} ac',
-          few: '{0} ac',
-          many: '{0} ac',
+          one: '{0} akr',
+          few: '{0} akry',
+          many: '{0} akru',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac',
-          one: '{0} ac',
-          few: '{0} ac',
-          many: '{0} ac',
+          one: '{0} akr',
+          few: '{0} akry',
+          many: '{0} akru',
           other: '{0} ac',
         ),
       );
@@ -3211,17 +3931,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
-          few: '{0} yd²',
-          many: '{0} yd²',
+          one: '{0} yard čtvereční',
+          few: '{0} yardy čtvereční',
+          many: '{0} yardu čtverečního',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
-          few: '{0} yd²',
-          many: '{0} yd²',
+          one: '{0} yard čtvereční',
+          few: '{0} yardy čtvereční',
+          many: '{0} yardu čtverečního',
           other: '{0} yd²',
         ),
       );
@@ -3239,17 +3959,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
-          few: '{0} ft²',
-          many: '{0} ft²',
+          one: '{0} stopa čtvereční',
+          few: '{0} stopy čtvereční',
+          many: '{0} stopy čtvereční',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
-          few: '{0} ft²',
-          many: '{0} ft²',
+          one: '{0} stopa čtvereční',
+          few: '{0} stopy čtvereční',
+          many: '{0} stopy čtvereční',
           other: '{0} ft²',
         ),
       );
@@ -3267,17 +3987,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
-          few: '{0} in²',
-          many: '{0} in²',
+          one: '{0} palec čtvereční',
+          few: '{0} palce čtvereční',
+          many: '{0} palce čtverečního',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
-          few: '{0} in²',
-          many: '{0} in²',
+          one: '{0} palec čtvereční',
+          few: '{0} palce čtvereční',
+          many: '{0} palce čtverečního',
           other: '{0} in²',
         ),
       );
@@ -3323,17 +4043,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kt',
-          one: '{0} kt',
-          few: '{0} kt',
-          many: '{0} kt',
+          one: '{0} karát',
+          few: '{0} karáty',
+          many: '{0} karátu',
           other: '{0} kt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kt',
-          one: '{0} kt',
-          few: '{0} kt',
-          many: '{0} kt',
+          one: '{0} karát',
+          few: '{0} karáty',
+          many: '{0} karátu',
           other: '{0} kt',
         ),
       );
@@ -3435,17 +4155,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
-          many: '{0} ppm',
+          one: '{0} díl z milionu',
+          few: '{0} díly z milionu',
+          many: '{0} dílu z milionu',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
-          many: '{0} ppm',
+          one: '{0} díl z milionu',
+          few: '{0} díly z milionu',
+          many: '{0} dílu z milionu',
           other: '{0} ppm',
         ),
       );
@@ -3548,16 +4268,16 @@ class UnitsCs implements Units {
           _locale,
           'mol',
           one: '{0} mol',
-          few: '{0} mol',
-          many: '{0} mol',
+          few: '{0} moly',
+          many: '{0} molu',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mol',
           one: '{0} mol',
-          few: '{0} mol',
-          many: '{0} mol',
+          few: '{0} moly',
+          many: '{0} molu',
           other: '{0} mol',
         ),
       );
@@ -3659,9 +4379,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mpg Imp.',
-          one: '{0} mpg Imp.',
-          few: '{0} mpg Imp.',
-          many: '{0} mpg Imp.',
+          one: '{0} míle na britský galon',
+          few: '{0} míle na britský galon',
+          many: '{0} míle na britský galon',
           other: '{0} mpg Imp.',
         ),
         narrow: UnitCountPattern(
@@ -3687,17 +4407,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
-          few: '{0} PB',
-          many: '{0} PB',
+          one: '{0} petabajt',
+          few: '{0} petabajty',
+          many: '{0} petabajtu',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
-          few: '{0} PB',
-          many: '{0} PB',
+          one: '{0} petabajt',
+          few: '{0} petabajty',
+          many: '{0} petabajtu',
           other: '{0} PB',
         ),
       );
@@ -3715,17 +4435,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
-          few: '{0} TB',
-          many: '{0} TB',
+          one: '{0} terabajt',
+          few: '{0} terabajty',
+          many: '{0} terabajtu',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
-          few: '{0} TB',
-          many: '{0} TB',
+          one: '{0} terabajt',
+          few: '{0} terabajty',
+          many: '{0} terabajtu',
           other: '{0} TB',
         ),
       );
@@ -3743,17 +4463,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
-          few: '{0} Tb',
-          many: '{0} Tb',
+          one: '{0} terabit',
+          few: '{0} terabity',
+          many: '{0} terabitu',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
-          few: '{0} Tb',
-          many: '{0} Tb',
+          one: '{0} terabit',
+          few: '{0} terabity',
+          many: '{0} terabitu',
           other: '{0} Tb',
         ),
       );
@@ -3771,17 +4491,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
-          few: '{0} GB',
-          many: '{0} GB',
+          one: '{0} gigabajt',
+          few: '{0} gigabajty',
+          many: '{0} gigabajtu',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
-          few: '{0} GB',
-          many: '{0} GB',
+          one: '{0} gigabajt',
+          few: '{0} gigabajty',
+          many: '{0} gigabajtu',
           other: '{0} GB',
         ),
       );
@@ -3799,17 +4519,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
-          few: '{0} Gb',
-          many: '{0} Gb',
+          one: '{0} gigabit',
+          few: '{0} gigabity',
+          many: '{0} gigabitu',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
-          few: '{0} Gb',
-          many: '{0} Gb',
+          one: '{0} gigabit',
+          few: '{0} gigabity',
+          many: '{0} gigabitu',
           other: '{0} Gb',
         ),
       );
@@ -3827,17 +4547,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
-          few: '{0} MB',
-          many: '{0} MB',
+          one: '{0} megabajt',
+          few: '{0} megabajty',
+          many: '{0} megabajtu',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
-          few: '{0} MB',
-          many: '{0} MB',
+          one: '{0} megabajt',
+          few: '{0} megabajty',
+          many: '{0} megabajtu',
           other: '{0} MB',
         ),
       );
@@ -3855,17 +4575,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
-          few: '{0} Mb',
-          many: '{0} Mb',
+          one: '{0} megabit',
+          few: '{0} megabity',
+          many: '{0} megabitu',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
-          few: '{0} Mb',
-          many: '{0} Mb',
+          one: '{0} megabit',
+          few: '{0} megabity',
+          many: '{0} megabitu',
           other: '{0} Mb',
         ),
       );
@@ -3883,17 +4603,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
-          few: '{0} kB',
-          many: '{0} kB',
+          one: '{0} kilobajt',
+          few: '{0} kilobajty',
+          many: '{0} kilobajtu',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
-          few: '{0} kB',
-          many: '{0} kB',
+          one: '{0} kilobajt',
+          few: '{0} kilobajty',
+          many: '{0} kilobajtu',
           other: '{0} kB',
         ),
       );
@@ -3911,17 +4631,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
-          few: '{0} kb',
-          many: '{0} kb',
+          one: '{0} kilobit',
+          few: '{0} kilobity',
+          many: '{0} kilobitu',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
-          few: '{0} kb',
-          many: '{0} kb',
+          one: '{0} kilobit',
+          few: '{0} kilobity',
+          many: '{0} kilobitu',
           other: '{0} kb',
         ),
       );
@@ -4191,17 +4911,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'h',
-          one: '{0} h',
-          few: '{0} h',
-          many: '{0} h',
+          one: '{0} hodina',
+          few: '{0} hodiny',
+          many: '{0} hodiny',
           other: '{0} h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'h',
-          one: '{0} h',
-          few: '{0} h',
-          many: '{0} h',
+          one: '{0} hodina',
+          few: '{0} hodiny',
+          many: '{0} hodiny',
           other: '{0} h',
         ),
       );
@@ -4219,9 +4939,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'min',
-          one: '{0} min',
-          few: '{0} min',
-          many: '{0} min',
+          one: '{0} minuta',
+          few: '{0} minuty',
+          many: '{0} minuty',
           other: '{0} min',
         ),
         narrow: UnitCountPattern(
@@ -4247,17 +4967,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           's',
-          one: '{0} s',
-          few: '{0} s',
-          many: '{0} s',
+          one: '{0} sekunda',
+          few: '{0} sekundy',
+          many: '{0} sekundy',
           other: '{0} s',
         ),
         narrow: UnitCountPattern(
           _locale,
           's',
-          one: '{0} s',
-          few: '{0} s',
-          many: '{0} s',
+          one: '{0} sekunda',
+          few: '{0} sekundy',
+          many: '{0} sekundy',
           other: '{0} s',
         ),
       );
@@ -4275,17 +4995,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
-          few: '{0} ms',
-          many: '{0} ms',
+          one: '{0} milisekunda',
+          few: '{0} milisekundy',
+          many: '{0} milisekundy',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
-          few: '{0} ms',
-          many: '{0} ms',
+          one: '{0} milisekunda',
+          few: '{0} milisekundy',
+          many: '{0} milisekundy',
           other: '{0} ms',
         ),
       );
@@ -4303,17 +5023,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
-          few: '{0} μs',
-          many: '{0} μs',
+          one: '{0} mikrosekunda',
+          few: '{0} mikrosekundy',
+          many: '{0} mikrosekundy',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
-          few: '{0} μs',
-          many: '{0} μs',
+          one: '{0} mikrosekunda',
+          few: '{0} mikrosekundy',
+          many: '{0} mikrosekundy',
           other: '{0} μs',
         ),
       );
@@ -4331,17 +5051,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
-          few: '{0} ns',
-          many: '{0} ns',
+          one: '{0} nanosekunda',
+          few: '{0} nanosekundy',
+          many: '{0} nanosekundy',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
-          few: '{0} ns',
-          many: '{0} ns',
+          one: '{0} nanosekunda',
+          few: '{0} nanosekundy',
+          many: '{0} nanosekundy',
           other: '{0} ns',
         ),
       );
@@ -4359,17 +5079,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
-          few: '{0} A',
-          many: '{0} A',
+          one: '{0} ampér',
+          few: '{0} ampéry',
+          many: '{0} ampéru',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
-          few: '{0} A',
-          many: '{0} A',
+          one: '{0} ampér',
+          few: '{0} ampéry',
+          many: '{0} ampéru',
           other: '{0} A',
         ),
       );
@@ -4387,17 +5107,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
-          few: '{0} mA',
-          many: '{0} mA',
+          one: '{0} miliampér',
+          few: '{0} miliampéry',
+          many: '{0} miliampéru',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
-          few: '{0} mA',
-          many: '{0} mA',
+          one: '{0} miliampér',
+          few: '{0} miliampéry',
+          many: '{0} miliampéru',
           other: '{0} mA',
         ),
       );
@@ -4415,17 +5135,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
-          few: '{0} Ω',
-          many: '{0} Ω',
+          one: '{0} ohm',
+          few: '{0} ohmy',
+          many: '{0} ohmu',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
-          few: '{0} Ω',
-          many: '{0} Ω',
+          one: '{0} ohm',
+          few: '{0} ohmy',
+          many: '{0} ohmu',
           other: '{0} Ω',
         ),
       );
@@ -4443,17 +5163,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
-          few: '{0} V',
-          many: '{0} V',
+          one: '{0} volt',
+          few: '{0} volty',
+          many: '{0} voltu',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
-          few: '{0} V',
-          many: '{0} V',
+          one: '{0} volt',
+          few: '{0} volty',
+          many: '{0} voltu',
           other: '{0} V',
         ),
       );
@@ -4471,17 +5191,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          many: '{0} kcal',
+          one: '{0} kilokalorie',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorie',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          many: '{0} kcal',
+          one: '{0} kilokalorie',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorie',
           other: '{0} kcal',
         ),
       );
@@ -4499,17 +5219,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
-          few: '{0} cal',
-          many: '{0} cal',
+          one: '{0} kalorie',
+          few: '{0} kalorie',
+          many: '{0} kalorie',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
-          few: '{0} cal',
-          many: '{0} cal',
+          one: '{0} kalorie',
+          few: '{0} kalorie',
+          many: '{0} kalorie',
           other: '{0} cal',
         ),
       );
@@ -4526,19 +5246,19 @@ class UnitsCs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          many: '{0} kcal',
-          other: '{0} kcal',
+          'kilokalorie',
+          one: '{0} kilokalorie',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorie',
+          other: '{0} kilokalorií',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          many: '{0} kcal',
-          other: '{0} kcal',
+          'kilokalorie',
+          one: '{0} kilokalorie',
+          few: '{0} kilokalorie',
+          many: '{0} kilokalorie',
+          other: '{0} kilokalorií',
         ),
       );
 
@@ -4555,17 +5275,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
-          few: '{0} kJ',
-          many: '{0} kJ',
+          one: '{0} kilojoule',
+          few: '{0} kilojouly',
+          many: '{0} kilojoulu',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
-          few: '{0} kJ',
-          many: '{0} kJ',
+          one: '{0} kilojoule',
+          few: '{0} kilojouly',
+          many: '{0} kilojoulu',
           other: '{0} kJ',
         ),
       );
@@ -4583,17 +5303,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
-          few: '{0} J',
-          many: '{0} J',
+          one: '{0} joule',
+          few: '{0} jouly',
+          many: '{0} joulu',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
-          few: '{0} J',
-          many: '{0} J',
+          one: '{0} joule',
+          few: '{0} jouly',
+          many: '{0} joulu',
           other: '{0} J',
         ),
       );
@@ -4611,17 +5331,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
-          few: '{0} kWh',
-          many: '{0} kWh',
+          one: '{0} kilowatthodina',
+          few: '{0} kilowatthodiny',
+          many: '{0} kilowatthodiny',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
-          few: '{0} kWh',
-          many: '{0} kWh',
+          one: '{0} kilowatthodina',
+          few: '{0} kilowatthodiny',
+          many: '{0} kilowatthodiny',
           other: '{0} kWh',
         ),
       );
@@ -4639,17 +5359,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
-          few: '{0} eV',
-          many: '{0} eV',
+          one: '{0} elektronvolt',
+          few: '{0} elektronvolty',
+          many: '{0} elektronvoltu',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
-          few: '{0} eV',
-          many: '{0} eV',
+          one: '{0} elektronvolt',
+          few: '{0} elektronvolty',
+          many: '{0} elektronvoltu',
           other: '{0} eV',
         ),
       );
@@ -4723,17 +5443,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf',
-          one: '{0} lbf',
-          few: '{0} lbf',
-          many: '{0} lbf',
+          one: '{0} libra síly',
+          few: '{0} libry síly',
+          many: '{0} libry síly',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
-          one: '{0} lbf',
-          few: '{0} lbf',
-          many: '{0} lbf',
+          one: '{0} libra síly',
+          few: '{0} libry síly',
+          many: '{0} libry síly',
           other: '{0} lbf',
         ),
       );
@@ -4751,17 +5471,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'N',
-          one: '{0} N',
-          few: '{0} N',
-          many: '{0} N',
+          one: '{0} newton',
+          few: '{0} newtony',
+          many: '{0} newtonu',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N',
-          one: '{0} N',
-          few: '{0} N',
-          many: '{0} N',
+          one: '{0} newton',
+          few: '{0} newtony',
+          many: '{0} newtonu',
           other: '{0} N',
         ),
       );
@@ -4779,17 +5499,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
-          one: '{0} kWh/100km',
-          few: '{0} kWh/100km',
-          many: '{0} kWh/100km',
+          one: '{0} kilowatthodina na sto kilometrů',
+          few: '{0} kilowatthodiny na sto kilometrů',
+          many: '{0} kilowatthodiny na sto kilometrů',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
-          one: '{0} kWh/100km',
-          few: '{0} kWh/100km',
-          many: '{0} kWh/100km',
+          one: '{0} kilowatthodina na sto kilometrů',
+          few: '{0} kilowatthodiny na sto kilometrů',
+          many: '{0} kilowatthodiny na sto kilometrů',
           other: '{0} kWh/100km',
         ),
       );
@@ -4807,17 +5527,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
-          few: '{0} GHz',
-          many: '{0} GHz',
+          one: '{0} gigahertz',
+          few: '{0} gigahertzy',
+          many: '{0} gigahertzu',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
-          few: '{0} GHz',
-          many: '{0} GHz',
+          one: '{0} gigahertz',
+          few: '{0} gigahertzy',
+          many: '{0} gigahertzu',
           other: '{0} GHz',
         ),
       );
@@ -4835,17 +5555,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
-          few: '{0} MHz',
-          many: '{0} MHz',
+          one: '{0} megahertz',
+          few: '{0} megahertzy',
+          many: '{0} megahertzu',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
-          few: '{0} MHz',
-          many: '{0} MHz',
+          one: '{0} megahertz',
+          few: '{0} megahertzy',
+          many: '{0} megahertzu',
           other: '{0} MHz',
         ),
       );
@@ -4863,17 +5583,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
-          few: '{0} kHz',
-          many: '{0} kHz',
+          one: '{0} kilohertz',
+          few: '{0} kilohertzy',
+          many: '{0} kilohertzu',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
-          few: '{0} kHz',
-          many: '{0} kHz',
+          one: '{0} kilohertz',
+          few: '{0} kilohertzy',
+          many: '{0} kilohertzu',
           other: '{0} kHz',
         ),
       );
@@ -4891,17 +5611,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
-          few: '{0} Hz',
-          many: '{0} Hz',
+          one: '{0} hertz',
+          few: '{0} hertzy',
+          many: '{0} hertzu',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
-          few: '{0} Hz',
-          many: '{0} Hz',
+          one: '{0} hertz',
+          few: '{0} hertzy',
+          many: '{0} hertzu',
           other: '{0} Hz',
         ),
       );
@@ -4919,17 +5639,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
-          few: '{0} em',
-          many: '{0} em',
+          one: '{0} čtverčík',
+          few: '{0} čtverčíky',
+          many: '{0} čtverčíku',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
-          few: '{0} em',
-          many: '{0} em',
+          one: '{0} čtverčík',
+          few: '{0} čtverčíky',
+          many: '{0} čtverčíku',
           other: '{0} em',
         ),
       );
@@ -4947,17 +5667,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'px',
-          one: '{0} px',
-          few: '{0} px',
-          many: '{0} px',
+          one: '{0} pixel',
+          few: '{0} pixely',
+          many: '{0} pixelu',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
-          one: '{0} px',
-          few: '{0} px',
-          many: '{0} px',
+          one: '{0} pixel',
+          few: '{0} pixely',
+          many: '{0} pixelu',
           other: '{0} px',
         ),
       );
@@ -5115,18 +5835,18 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'pixely',
-          one: '{0} px',
-          few: '{0} px',
-          many: '{0} px',
-          other: '{0} px',
+          one: '{0} obrazový bod',
+          few: '{0} obrazové body',
+          many: '{0} obrazového bodu',
+          other: '{0} obrazových bodů',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bod',
-          one: '{0} px',
-          few: '{0} px',
-          many: '{0} px',
-          other: '{0} px',
+          one: '{0} obrazový bod',
+          few: '{0} obrazové body',
+          many: '{0} obrazového bodu',
+          other: '{0} obrazových bodů',
         ),
       );
 
@@ -5143,17 +5863,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} R⊕',
-          few: '{0} R⊕',
-          many: '{0} R⊕',
+          one: '{0} poloměr Země',
+          few: '{0} poloměry Země',
+          many: '{0} poloměru Země',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          one: '{0} R⊕',
-          few: '{0} R⊕',
-          many: '{0} R⊕',
+          one: '{0} poloměr Země',
+          few: '{0} poloměry Země',
+          many: '{0} poloměru Země',
           other: '{0} R⊕',
         ),
       );
@@ -5171,17 +5891,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
-          few: '{0} km',
-          many: '{0} km',
+          one: '{0} kilometr',
+          few: '{0} kilometry',
+          many: '{0} kilometru',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
-          few: '{0} km',
-          many: '{0} km',
+          one: '{0} kilometr',
+          few: '{0} kilometry',
+          many: '{0} kilometru',
           other: '{0} km',
         ),
       );
@@ -5199,17 +5919,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
-          few: '{0} m',
-          many: '{0} m',
+          one: '{0} metr',
+          few: '{0} metry',
+          many: '{0} metru',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
-          few: '{0} m',
-          many: '{0} m',
+          one: '{0} metr',
+          few: '{0} metry',
+          many: '{0} metru',
           other: '{0} m',
         ),
       );
@@ -5227,17 +5947,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
-          few: '{0} dm',
-          many: '{0} dm',
+          one: '{0} decimetr',
+          few: '{0} decimetry',
+          many: '{0} decimetru',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
-          few: '{0} dm',
-          many: '{0} dm',
+          one: '{0} decimetr',
+          few: '{0} decimetry',
+          many: '{0} decimetru',
           other: '{0} dm',
         ),
       );
@@ -5255,17 +5975,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
-          few: '{0} cm',
-          many: '{0} cm',
+          one: '{0} centimetr',
+          few: '{0} centimetry',
+          many: '{0} centimetru',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
-          few: '{0} cm',
-          many: '{0} cm',
+          one: '{0} centimetr',
+          few: '{0} centimetry',
+          many: '{0} centimetru',
           other: '{0} cm',
         ),
       );
@@ -5283,17 +6003,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
-          few: '{0} mm',
-          many: '{0} mm',
+          one: '{0} milimetr',
+          few: '{0} milimetry',
+          many: '{0} milimetru',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
-          few: '{0} mm',
-          many: '{0} mm',
+          one: '{0} milimetr',
+          few: '{0} milimetry',
+          many: '{0} milimetru',
           other: '{0} mm',
         ),
       );
@@ -5311,17 +6031,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
-          few: '{0} μm',
-          many: '{0} μm',
+          one: '{0} mikrometr',
+          few: '{0} mikrometry',
+          many: '{0} mikrometru',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
-          few: '{0} μm',
-          many: '{0} μm',
+          one: '{0} mikrometr',
+          few: '{0} mikrometry',
+          many: '{0} mikrometru',
           other: '{0} μm',
         ),
       );
@@ -5339,17 +6059,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
-          few: '{0} nm',
-          many: '{0} nm',
+          one: '{0} nanometr',
+          few: '{0} nanometry',
+          many: '{0} nanometru',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
-          few: '{0} nm',
-          many: '{0} nm',
+          one: '{0} nanometr',
+          few: '{0} nanometry',
+          many: '{0} nanometru',
           other: '{0} nm',
         ),
       );
@@ -5367,17 +6087,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
-          few: '{0} pm',
-          many: '{0} pm',
+          one: '{0} pikometr',
+          few: '{0} pikometry',
+          many: '{0} pikometru',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
-          few: '{0} pm',
-          many: '{0} pm',
+          one: '{0} pikometr',
+          few: '{0} pikometry',
+          many: '{0} pikometru',
           other: '{0} pm',
         ),
       );
@@ -5395,17 +6115,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi',
-          one: '{0} mi',
-          few: '{0} mi',
-          many: '{0} mi',
+          one: '{0} míle',
+          few: '{0} míle',
+          many: '{0} míle',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi',
-          one: '{0} mi',
-          few: '{0} mi',
-          many: '{0} mi',
+          one: '{0} míle',
+          few: '{0} míle',
+          many: '{0} míle',
           other: '{0} mi',
         ),
       );
@@ -5423,17 +6143,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
-          few: '{0} yd',
-          many: '{0} yd',
+          one: '{0} yard',
+          few: '{0} yardy',
+          many: '{0} yardu',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
-          few: '{0} yd',
-          many: '{0} yd',
+          one: '{0} yard',
+          few: '{0} yardy',
+          many: '{0} yardu',
           other: '{0} yd',
         ),
       );
@@ -5451,9 +6171,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
-          few: '{0} ft',
-          many: '{0} ft',
+          one: '{0} stopa',
+          few: '{0} stopy',
+          many: '{0} stopy',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
@@ -5479,9 +6199,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'in',
-          one: '{0} in',
-          few: '{0} in',
-          many: '{0} in',
+          one: '{0} palec',
+          few: '{0} palce',
+          many: '{0} palce',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
@@ -5507,17 +6227,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'pc',
-          one: '{0} pc',
-          few: '{0} pc',
-          many: '{0} pc',
+          one: '{0} parsek',
+          few: '{0} parseky',
+          many: '{0} parseku',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pc',
-          one: '{0} pc',
-          few: '{0} pc',
-          many: '{0} pc',
+          one: '{0} parsek',
+          few: '{0} parseky',
+          many: '{0} parseku',
           other: '{0} pc',
         ),
       );
@@ -5535,17 +6255,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ly',
-          one: '{0} ly',
-          few: '{0} ly',
-          many: '{0} ly',
+          one: '{0} světelný rok',
+          few: '{0} světelné roky',
+          many: '{0} světelného roku',
           other: '{0} ly',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ly',
-          one: '{0} ly',
-          few: '{0} ly',
-          many: '{0} ly',
+          one: '{0} světelný rok',
+          few: '{0} světelné roky',
+          many: '{0} světelného roku',
           other: '{0} ly',
         ),
       );
@@ -5563,17 +6283,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'au',
-          one: '{0} au',
-          few: '{0} au',
-          many: '{0} au',
+          one: '{0} astronomická jednotka',
+          few: '{0} astronomické jednotky',
+          many: '{0} astronomické jednotky',
           other: '{0} au',
         ),
         narrow: UnitCountPattern(
           _locale,
           'au',
-          one: '{0} au',
-          few: '{0} au',
-          many: '{0} au',
+          one: '{0} astronomická jednotka',
+          few: '{0} astronomické jednotky',
+          many: '{0} astronomické jednotky',
           other: '{0} au',
         ),
       );
@@ -5591,17 +6311,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'fur',
-          one: '{0} fur',
-          few: '{0} fur',
-          many: '{0} fur',
+          one: '{0} furlong',
+          few: '{0} furlongy',
+          many: '{0} furlongu',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fur',
-          one: '{0} fur',
-          few: '{0} fur',
-          many: '{0} fur',
+          one: '{0} furlong',
+          few: '{0} furlongy',
+          many: '{0} furlongu',
           other: '{0} fur',
         ),
       );
@@ -5619,17 +6339,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'fm',
-          one: '{0} fth',
-          few: '{0} fth',
-          many: '{0} fth',
+          one: '{0} sáh',
+          few: '{0} sáhy',
+          many: '{0} sáhu',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fm',
-          one: '{0} fth',
-          few: '{0} fth',
-          many: '{0} fth',
+          one: '{0} sáh',
+          few: '{0} sáhy',
+          many: '{0} sáhu',
           other: '{0} fth',
         ),
       );
@@ -5647,17 +6367,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'nmi',
-          one: '{0} nmi',
-          few: '{0} nmi',
-          many: '{0} nmi',
+          one: '{0} námořní míle',
+          few: '{0} námořní míle',
+          many: '{0} námořní míle',
           other: '{0} nmi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nmi',
-          one: '{0} nmi',
-          few: '{0} nmi',
-          many: '{0} nmi',
+          one: '{0} námořní míle',
+          few: '{0} námořní míle',
+          many: '{0} námořní míle',
           other: '{0} nmi',
         ),
       );
@@ -5675,17 +6395,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
-          few: '{0} smi',
-          many: '{0} smi',
+          one: '{0} skandinávská míle',
+          few: '{0} skandinávské míle',
+          many: '{0} skandinávské míle',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
-          few: '{0} smi',
-          many: '{0} smi',
+          one: '{0} skandinávská míle',
+          few: '{0} skandinávské míle',
+          many: '{0} skandinávské míle',
           other: '{0} smi',
         ),
       );
@@ -5702,18 +6422,18 @@ class UnitsCs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0} pt',
-          few: '{0} pt',
-          many: '{0} pt',
+          'body',
+          one: '{0} bod',
+          few: '{0} body',
+          many: '{0} bodu',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'pt',
-          one: '{0} pt',
-          few: '{0} pt',
-          many: '{0} pt',
+          'b.',
+          one: '{0} bod',
+          few: '{0} body',
+          many: '{0} bodu',
           other: '{0} pt',
         ),
       );
@@ -5731,17 +6451,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
-          one: '{0} R☉',
-          few: '{0} R☉',
-          many: '{0} R☉',
+          one: '{0} poloměr Slunce',
+          few: '{0} poloměry Slunce',
+          many: '{0} poloměru Slunce',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
-          one: '{0} R☉',
-          few: '{0} R☉',
-          many: '{0} R☉',
+          one: '{0} poloměr Slunce',
+          few: '{0} poloměry Slunce',
+          many: '{0} poloměru Slunce',
           other: '{0} R☉',
         ),
       );
@@ -5759,17 +6479,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
-          few: '{0} lx',
-          many: '{0} lx',
+          one: '{0} lux',
+          few: '{0} luxy',
+          many: '{0} luxu',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
-          few: '{0} lx',
-          many: '{0} lx',
+          one: '{0} lux',
+          few: '{0} luxy',
+          many: '{0} luxu',
           other: '{0} lx',
         ),
       );
@@ -5787,17 +6507,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
-          one: '{0} cd',
-          few: '{0} cd',
-          many: '{0} cd',
+          one: '{0} kandela',
+          few: '{0} kandely',
+          many: '{0} kandely',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
-          one: '{0} cd',
-          few: '{0} cd',
-          many: '{0} cd',
+          one: '{0} kandela',
+          few: '{0} kandely',
+          many: '{0} kandely',
           other: '{0} cd',
         ),
       );
@@ -5815,17 +6535,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
-          one: '{0} lm',
-          few: '{0} lm',
-          many: '{0} lm',
+          one: '{0} lumen',
+          few: '{0} lumeny',
+          many: '{0} lumenu',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
-          one: '{0} lm',
-          few: '{0} lm',
-          many: '{0} lm',
+          one: '{0} lumen',
+          few: '{0} lumeny',
+          many: '{0} lumenu',
           other: '{0} lm',
         ),
       );
@@ -5843,17 +6563,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'L☉',
-          one: '{0} L☉',
-          few: '{0} L☉',
-          many: '{0} L☉',
+          one: '{0} zářivý výkon Slunce',
+          few: '{0} zářivé výkony Slunce',
+          many: '{0} zářivého výkonu Slunce',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
-          one: '{0} L☉',
-          few: '{0} L☉',
-          many: '{0} L☉',
+          one: '{0} zářivý výkon Slunce',
+          few: '{0} zářivé výkony Slunce',
+          many: '{0} zářivého výkonu Slunce',
           other: '{0} L☉',
         ),
       );
@@ -5871,17 +6591,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
-          few: '{0} t',
-          many: '{0} t',
+          one: '{0} tuna',
+          few: '{0} tuny',
+          many: '{0} tuny',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
-          few: '{0} t',
-          many: '{0} t',
+          one: '{0} tuna',
+          few: '{0} tuny',
+          many: '{0} tuny',
           other: '{0} t',
         ),
       );
@@ -5899,17 +6619,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
-          few: '{0} kg',
-          many: '{0} kg',
+          one: '{0} kilogram',
+          few: '{0} kilogramy',
+          many: '{0} kilogramu',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
-          few: '{0} kg',
-          many: '{0} kg',
+          one: '{0} kilogram',
+          few: '{0} kilogramy',
+          many: '{0} kilogramu',
           other: '{0} kg',
         ),
       );
@@ -5927,17 +6647,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
-          few: '{0} g',
-          many: '{0} g',
+          one: '{0} gram',
+          few: '{0} gramy',
+          many: '{0} gramu',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
-          few: '{0} g',
-          many: '{0} g',
+          one: '{0} gram',
+          few: '{0} gramy',
+          many: '{0} gramu',
           other: '{0} g',
         ),
       );
@@ -5955,17 +6675,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
-          few: '{0} mg',
-          many: '{0} mg',
+          one: '{0} miligram',
+          few: '{0} miligramy',
+          many: '{0} miligramu',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
-          few: '{0} mg',
-          many: '{0} mg',
+          one: '{0} miligram',
+          few: '{0} miligramy',
+          many: '{0} miligramu',
           other: '{0} mg',
         ),
       );
@@ -5983,17 +6703,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
-          few: '{0} μg',
-          many: '{0} μg',
+          one: '{0} mikrogram',
+          few: '{0} mikrogramy',
+          many: '{0} mikrogramu',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
-          few: '{0} μg',
-          many: '{0} μg',
+          one: '{0} mikrogram',
+          few: '{0} mikrogramy',
+          many: '{0} mikrogramu',
           other: '{0} μg',
         ),
       );
@@ -6039,17 +6759,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
-          few: '{0} st',
-          many: '{0} st',
+          one: '{0} kámen',
+          few: '{0} kameny',
+          many: '{0} kamene',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
-          few: '{0} st',
-          many: '{0} st',
+          one: '{0} kámen',
+          few: '{0} kameny',
+          many: '{0} kamene',
           other: '{0} st',
         ),
       );
@@ -6067,17 +6787,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
-          few: '{0} lb',
-          many: '{0} lb',
+          one: '{0} libra',
+          few: '{0} libry',
+          many: '{0} libry',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
-          few: '{0} lb',
-          many: '{0} lb',
+          one: '{0} libra',
+          few: '{0} libry',
+          many: '{0} libry',
           other: '{0} lb',
         ),
       );
@@ -6095,17 +6815,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
-          few: '{0} oz',
-          many: '{0} oz',
+          one: '{0} unce',
+          few: '{0} unce',
+          many: '{0} unce',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
-          few: '{0} oz',
-          many: '{0} oz',
+          one: '{0} unce',
+          few: '{0} unce',
+          many: '{0} unce',
           other: '{0} oz',
         ),
       );
@@ -6123,17 +6843,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
-          few: '{0} oz t',
-          many: '{0} oz t',
+          one: '{0} trojská unce',
+          few: '{0} trojské unce',
+          many: '{0} trojské unce',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
-          few: '{0} oz t',
-          many: '{0} oz t',
+          one: '{0} trojská unce',
+          few: '{0} trojské unce',
+          many: '{0} trojské unce',
           other: '{0} oz t',
         ),
       );
@@ -6151,17 +6871,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'CD',
-          one: '{0} CD',
-          few: '{0} CD',
-          many: '{0} CD',
+          one: '{0} karát',
+          few: '{0} karáty',
+          many: '{0} karátu',
           other: '{0} CD',
         ),
         narrow: UnitCountPattern(
           _locale,
           'CD',
-          one: '{0} CD',
-          few: '{0} CD',
-          many: '{0} CD',
+          one: '{0} karát',
+          few: '{0} karáty',
+          many: '{0} karátu',
           other: '{0} CD',
         ),
       );
@@ -6179,17 +6899,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
-          few: '{0} Da',
-          many: '{0} Da',
+          one: '{0} dalton',
+          few: '{0} daltony',
+          many: '{0} daltonu',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
-          few: '{0} Da',
-          many: '{0} Da',
+          one: '{0} dalton',
+          few: '{0} daltony',
+          many: '{0} daltonu',
           other: '{0} Da',
         ),
       );
@@ -6207,17 +6927,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
-          few: '{0} M⊕',
-          many: '{0} M⊕',
+          one: '{0} hmotnost Země',
+          few: '{0} hmotnosti Země',
+          many: '{0} hmotnosti Země',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
-          few: '{0} M⊕',
-          many: '{0} M⊕',
+          one: '{0} hmotnost Země',
+          few: '{0} hmotnosti Země',
+          many: '{0} hmotnosti Země',
           other: '{0} M⊕',
         ),
       );
@@ -6235,17 +6955,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} M☉',
-          few: '{0} M☉',
-          many: '{0} M☉',
+          one: '{0} hmotnost Slunce',
+          few: '{0} hmotnosti Slunce',
+          many: '{0} hmotnosti Slunce',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} M☉',
-          few: '{0} M☉',
-          many: '{0} M☉',
+          one: '{0} hmotnost Slunce',
+          few: '{0} hmotnosti Slunce',
+          many: '{0} hmotnosti Slunce',
           other: '{0} M☉',
         ),
       );
@@ -6291,17 +7011,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
-          few: '{0} GW',
-          many: '{0} GW',
+          one: '{0} gigawatt',
+          few: '{0} gigawatty',
+          many: '{0} gigawattu',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
-          few: '{0} GW',
-          many: '{0} GW',
+          one: '{0} gigawatt',
+          few: '{0} gigawatty',
+          many: '{0} gigawattu',
           other: '{0} GW',
         ),
       );
@@ -6319,17 +7039,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
-          few: '{0} MW',
-          many: '{0} MW',
+          one: '{0} megawatt',
+          few: '{0} megawatty',
+          many: '{0} megawattu',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
-          few: '{0} MW',
-          many: '{0} MW',
+          one: '{0} megawatt',
+          few: '{0} megawatty',
+          many: '{0} megawattu',
           other: '{0} MW',
         ),
       );
@@ -6347,17 +7067,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
-          few: '{0} kW',
-          many: '{0} kW',
+          one: '{0} kilowatt',
+          few: '{0} kilowatty',
+          many: '{0} kilowattu',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
-          few: '{0} kW',
-          many: '{0} kW',
+          one: '{0} kilowatt',
+          few: '{0} kilowatty',
+          many: '{0} kilowattu',
           other: '{0} kW',
         ),
       );
@@ -6375,17 +7095,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
-          few: '{0} W',
-          many: '{0} W',
+          one: '{0} watt',
+          few: '{0} watty',
+          many: '{0} wattu',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
-          few: '{0} W',
-          many: '{0} W',
+          one: '{0} watt',
+          few: '{0} watty',
+          many: '{0} wattu',
           other: '{0} W',
         ),
       );
@@ -6403,17 +7123,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
-          few: '{0} mW',
-          many: '{0} mW',
+          one: '{0} miliwatt',
+          few: '{0} miliwatty',
+          many: '{0} miliwattu',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
-          few: '{0} mW',
-          many: '{0} mW',
+          one: '{0} miliwatt',
+          few: '{0} miliwatty',
+          many: '{0} miliwattu',
           other: '{0} mW',
         ),
       );
@@ -6431,17 +7151,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'hp',
-          one: '{0} hp',
-          few: '{0} hp',
-          many: '{0} hp',
+          one: '{0} koňská síla',
+          few: '{0} koňské síly',
+          many: '{0} koňské síly',
           other: '{0} hp',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hp',
-          one: '{0} hp',
-          few: '{0} hp',
-          many: '{0} hp',
+          one: '{0} koňská síla',
+          few: '{0} koňské síly',
+          many: '{0} koňské síly',
           other: '{0} hp',
         ),
       );
@@ -6459,9 +7179,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} mm Hg',
-          few: '{0} mm Hg',
-          many: '{0} mm Hg',
+          one: '{0} milimetr rtuťového sloupce',
+          few: '{0} milimetry rtuťového sloupce',
+          many: '{0} milimetru rtuťového sloupce',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
@@ -6487,17 +7207,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
-          few: '{0} psi',
-          many: '{0} psi',
+          one: '{0} libra na čtvereční palec',
+          few: '{0} libry na čtvereční palec',
+          many: '{0} libry na čtvereční palec',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
-          few: '{0} psi',
-          many: '{0} psi',
+          one: '{0} libra na čtvereční palec',
+          few: '{0} libry na čtvereční palec',
+          many: '{0} libry na čtvereční palec',
           other: '{0} psi',
         ),
       );
@@ -6515,9 +7235,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
-          few: '{0} inHg',
-          many: '{0} inHg',
+          one: '{0} palec rtuťového sloupce',
+          few: '{0} palce rtuťového sloupce',
+          many: '{0} palce rtuťového sloupce',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
@@ -6544,16 +7264,16 @@ class UnitsCs implements Units {
           _locale,
           'bar',
           one: '{0} bar',
-          few: '{0} bar',
-          many: '{0} bar',
+          few: '{0} bary',
+          many: '{0} baru',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bar',
           one: '{0} bar',
-          few: '{0} bar',
-          many: '{0} bar',
+          few: '{0} bary',
+          many: '{0} baru',
           other: '{0} bar',
         ),
       );
@@ -6599,17 +7319,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
-          few: '{0} atm',
-          many: '{0} atm',
+          one: '{0} atmosféra',
+          few: '{0} atmosféry',
+          many: '{0} atmosféry',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
-          few: '{0} atm',
-          many: '{0} atm',
+          one: '{0} atmosféra',
+          few: '{0} atmosféry',
+          many: '{0} atmosféry',
           other: '{0} atm',
         ),
       );
@@ -6627,17 +7347,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
-          few: '{0} Pa',
-          many: '{0} Pa',
+          one: '{0} pascal',
+          few: '{0} pascaly',
+          many: '{0} pascalu',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
-          few: '{0} Pa',
-          many: '{0} Pa',
+          one: '{0} pascal',
+          few: '{0} pascaly',
+          many: '{0} pascalu',
           other: '{0} Pa',
         ),
       );
@@ -6655,17 +7375,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
-          few: '{0} hPa',
-          many: '{0} hPa',
+          one: '{0} hektopascal',
+          few: '{0} hektopascaly',
+          many: '{0} hektopascalu',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
-          few: '{0} hPa',
-          many: '{0} hPa',
+          one: '{0} hektopascal',
+          few: '{0} hektopascaly',
+          many: '{0} hektopascalu',
           other: '{0} hPa',
         ),
       );
@@ -6683,17 +7403,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
-          few: '{0} kPa',
-          many: '{0} kPa',
+          one: '{0} kilopascal',
+          few: '{0} kilopascaly',
+          many: '{0} kilopascalu',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
-          few: '{0} kPa',
-          many: '{0} kPa',
+          one: '{0} kilopascal',
+          few: '{0} kilopascaly',
+          many: '{0} kilopascalu',
           other: '{0} kPa',
         ),
       );
@@ -6711,17 +7431,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
-          few: '{0} MPa',
-          many: '{0} MPa',
+          one: '{0} megapascal',
+          few: '{0} megapascaly',
+          many: '{0} megapascalu',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
-          few: '{0} MPa',
-          many: '{0} MPa',
+          one: '{0} megapascal',
+          few: '{0} megapascaly',
+          many: '{0} megapascalu',
           other: '{0} MPa',
         ),
       );
@@ -6739,17 +7459,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
-          few: '{0} km/h',
-          many: '{0} km/h',
+          one: '{0} kilometr za hodinu',
+          few: '{0} kilometry za hodinu',
+          many: '{0} kilometru za hodinu',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
-          few: '{0} km/h',
-          many: '{0} km/h',
+          one: '{0} kilometr za hodinu',
+          few: '{0} kilometry za hodinu',
+          many: '{0} kilometru za hodinu',
           other: '{0} km/h',
         ),
       );
@@ -6767,17 +7487,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
-          few: '{0} m/s',
-          many: '{0} m/s',
+          one: '{0} metr za sekundu',
+          few: '{0} metry za sekundu',
+          many: '{0} metru za sekundu',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
-          few: '{0} m/s',
-          many: '{0} m/s',
+          one: '{0} metr za sekundu',
+          few: '{0} metry za sekundu',
+          many: '{0} metru za sekundu',
           other: '{0} m/s',
         ),
       );
@@ -6795,17 +7515,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
-          few: '{0} mi/h',
-          many: '{0} mi/h',
+          one: '{0} míle za hodinu',
+          few: '{0} míle za hodinu',
+          many: '{0} míle za hodinu',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
-          few: '{0} mi/h',
-          many: '{0} mi/h',
+          one: '{0} míle za hodinu',
+          few: '{0} míle za hodinu',
+          many: '{0} míle za hodinu',
           other: '{0} mi/h',
         ),
       );
@@ -6823,18 +7543,46 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
-          few: '{0} kn',
-          many: '{0} kn',
+          one: '{0} uzel',
+          few: '{0} uzly',
+          many: '{0} uzlu',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
-          few: '{0} kn',
-          many: '{0} kn',
+          one: '{0} uzel',
+          few: '{0} uzly',
+          many: '{0} uzlu',
           other: '{0} kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'stupně Beaufortovy stupnice',
+          one: '{0}. stupeň Beaufortovy stupnice',
+          few: '{0}. stupeň Beaufortovy stupnice',
+          many: '{0}. stupeň Beaufortovy stupnice',
+          other: '{0}. stupeň Beaufortovy stupnice',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0} Bft',
+          few: '{0} Bft',
+          many: '{0} Bft',
+          other: '{0} Bft',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: '{0} Bft',
+          few: '{0} Bft',
+          many: '{0} Bft',
+          other: '{0} Bft',
         ),
       );
 
@@ -6851,17 +7599,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} stupeň',
+          few: '{0} stupně',
+          many: '{0} stupně',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} stupeň',
+          few: '{0} stupně',
+          many: '{0} stupně',
           other: '{0}°',
         ),
       );
@@ -6935,17 +7683,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
-          many: '{0} K',
+          one: '{0} kelvin',
+          few: '{0} kelviny',
+          many: '{0} kelvinu',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
-          many: '{0} K',
+          one: '{0} kelvin',
+          few: '{0} kelviny',
+          many: '{0} kelvinu',
           other: '{0} K',
         ),
       );
@@ -6963,17 +7711,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} lbf⋅ft',
-          few: '{0} lbf⋅ft',
-          many: '{0} lbf⋅ft',
+          one: '{0} librostopa',
+          few: '{0} librostopy',
+          many: '{0} librostopy',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
-          one: '{0} lbf⋅ft',
-          few: '{0} lbf⋅ft',
-          many: '{0} lbf⋅ft',
+          one: '{0} librostopa',
+          few: '{0} librostopy',
+          many: '{0} librostopy',
           other: '{0} lbf⋅ft',
         ),
       );
@@ -7019,17 +7767,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
-          few: '{0} km³',
-          many: '{0} km³',
+          one: '{0} kilometr krychlový',
+          few: '{0} kilometry krychlové',
+          many: '{0} kilometru krychlového',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
-          few: '{0} km³',
-          many: '{0} km³',
+          one: '{0} kilometr krychlový',
+          few: '{0} kilometry krychlové',
+          many: '{0} kilometru krychlového',
           other: '{0} km³',
         ),
       );
@@ -7047,17 +7795,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
-          few: '{0} m³',
-          many: '{0} m³',
+          one: '{0} metr krychlový',
+          few: '{0} metry krychlové',
+          many: '{0} metru krychlového',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
-          few: '{0} m³',
-          many: '{0} m³',
+          one: '{0} metr krychlový',
+          few: '{0} metry krychlové',
+          many: '{0} metru krychlového',
           other: '{0} m³',
         ),
       );
@@ -7075,17 +7823,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
-          few: '{0} cm³',
-          many: '{0} cm³',
+          one: '{0} centimetr krychlový',
+          few: '{0} centimetry krychlové',
+          many: '{0} centimetru krychlového',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
-          few: '{0} cm³',
-          many: '{0} cm³',
+          one: '{0} centimetr krychlový',
+          few: '{0} centimetry krychlové',
+          many: '{0} centimetru krychlového',
           other: '{0} cm³',
         ),
       );
@@ -7103,17 +7851,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
-          few: '{0} mi³',
-          many: '{0} mi³',
+          one: '{0} míle krychlová',
+          few: '{0} míle krychlové',
+          many: '{0} míle krychlové',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
-          few: '{0} mi³',
-          many: '{0} mi³',
+          one: '{0} míle krychlová',
+          few: '{0} míle krychlové',
+          many: '{0} míle krychlové',
           other: '{0} mi³',
         ),
       );
@@ -7131,17 +7879,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
-          few: '{0} yd³',
-          many: '{0} yd³',
+          one: '{0} yard krychlový',
+          few: '{0} yardy krychlové',
+          many: '{0} yardu krychlového',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
-          few: '{0} yd³',
-          many: '{0} yd³',
+          one: '{0} yard krychlový',
+          few: '{0} yardy krychlové',
+          many: '{0} yardu krychlového',
           other: '{0} yd³',
         ),
       );
@@ -7159,17 +7907,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
-          few: '{0} ft³',
-          many: '{0} ft³',
+          one: '{0} stopa krychlová',
+          few: '{0} stopy krychlové',
+          many: '{0} stopy krychlové',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
-          few: '{0} ft³',
-          many: '{0} ft³',
+          one: '{0} stopa krychlová',
+          few: '{0} stopy krychlové',
+          many: '{0} stopy krychlové',
           other: '{0} ft³',
         ),
       );
@@ -7187,17 +7935,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
-          few: '{0} in³',
-          many: '{0} in³',
+          one: '{0} palec krychlový',
+          few: '{0} palce krychlové',
+          many: '{0} palce krychlového',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
-          few: '{0} in³',
-          many: '{0} in³',
+          one: '{0} palec krychlový',
+          few: '{0} palce krychlové',
+          many: '{0} palce krychlového',
           other: '{0} in³',
         ),
       );
@@ -7271,17 +8019,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
-          few: '{0} l',
-          many: '{0} l',
+          one: '{0} litr',
+          few: '{0} litry',
+          many: '{0} litru',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
-          few: '{0} l',
-          many: '{0} l',
+          one: '{0} litr',
+          few: '{0} litry',
+          many: '{0} litru',
           other: '{0} l',
         ),
       );
@@ -7383,17 +8131,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
-          few: '{0} mpt',
-          many: '{0} mpt',
+          one: '{0} metrická pinta',
+          few: '{0} metrické pinty',
+          many: '{0} metrické pinty',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
-          few: '{0} mpt',
-          many: '{0} mpt',
+          one: '{0} metrická pinta',
+          few: '{0} metrické pinty',
+          many: '{0} metrické pinty',
           other: '{0} mpt',
         ),
       );
@@ -7411,17 +8159,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
-          few: '{0} mc',
-          many: '{0} mc',
+          one: '{0} metrický šálek',
+          few: '{0} metrické šálky',
+          many: '{0} metrického šálku',
           other: '{0} mc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
-          few: '{0} mc',
-          many: '{0} mc',
+          one: '{0} metrický šálek',
+          few: '{0} metrické šálky',
+          many: '{0} metrického šálku',
           other: '{0} mc',
         ),
       );
@@ -7439,17 +8187,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
-          few: '{0} ac ft',
-          many: '{0} ac ft',
+          one: '{0} akro-stopa',
+          few: '{0} akro-stopy',
+          many: '{0} akro-stopy',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
-          few: '{0} ac ft',
-          many: '{0} ac ft',
+          one: '{0} akro-stopa',
+          few: '{0} akro-stopy',
+          many: '{0} akro-stopy',
           other: '{0} ac ft',
         ),
       );
@@ -7467,17 +8215,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'bu',
-          one: '{0} bu',
-          few: '{0} bu',
-          many: '{0} bu',
+          one: '{0} bušl',
+          few: '{0} bušly',
+          many: '{0} bušlu',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bu',
-          one: '{0} bu',
-          few: '{0} bu',
-          many: '{0} bu',
+          one: '{0} bušl',
+          few: '{0} bušly',
+          many: '{0} bušlu',
           other: '{0} bu',
         ),
       );
@@ -7523,9 +8271,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'gal Imp.',
-          one: '{0} gal Imp.',
-          few: '{0} gal Imp.',
-          many: '{0} gal Imp.',
+          one: '{0} britský galon',
+          few: '{0} britské galony',
+          many: '{0} britského galonu',
           other: '{0} gal Imp.',
         ),
         narrow: UnitCountPattern(
@@ -7551,17 +8299,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
-          few: '{0} qt',
-          many: '{0} qt',
+          one: '{0} kvart',
+          few: '{0} kvarty',
+          many: '{0} kvartu',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
-          few: '{0} qt',
-          many: '{0} qt',
+          one: '{0} kvart',
+          few: '{0} kvarty',
+          many: '{0} kvartu',
           other: '{0} qt',
         ),
       );
@@ -7579,17 +8327,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
-          many: '{0} pt',
+          one: '{0} pinta',
+          few: '{0} pinty',
+          many: '{0} pinty',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
-          many: '{0} pt',
+          one: '{0} pinta',
+          few: '{0} pinty',
+          many: '{0} pinty',
           other: '{0} pt',
         ),
       );
@@ -7607,17 +8355,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'c',
-          one: '{0} c',
-          few: '{0} c',
-          many: '{0} c',
+          one: '{0} šálek',
+          few: '{0} šálky',
+          many: '{0} šálku',
           other: '{0} c',
         ),
         narrow: UnitCountPattern(
           _locale,
           'c',
-          one: '{0} c',
-          few: '{0} c',
-          many: '{0} c',
+          one: '{0} šálek',
+          few: '{0} šálky',
+          many: '{0} šálku',
           other: '{0} c',
         ),
       );
@@ -7663,9 +8411,9 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'fl oz Imp.',
-          one: '{0} fl oz Imp.',
-          few: '{0} fl oz Imp.',
-          many: '{0} fl oz Imp.',
+          one: '{0} britská dutá unce',
+          few: '{0} britské duté unce',
+          many: '{0} britské duté unce',
           other: '{0} fl oz Imp.',
         ),
         narrow: UnitCountPattern(
@@ -7691,17 +8439,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'tbsp',
-          one: '{0} tbsp',
-          few: '{0} tbsp',
-          many: '{0} tbsp',
+          one: '{0} lžíce',
+          few: '{0} lžíce',
+          many: '{0} lžíce',
           other: '{0} tbsp',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tbsp',
-          one: '{0} tbsp',
-          few: '{0} tbsp',
-          many: '{0} tbsp',
+          one: '{0} lžíce',
+          few: '{0} lžíce',
+          many: '{0} lžíce',
           other: '{0} tbsp',
         ),
       );
@@ -7719,17 +8467,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'tsp',
-          one: '{0} tsp',
-          few: '{0} tsp',
-          many: '{0} tsp',
+          one: '{0} lžička',
+          few: '{0} lžičky',
+          many: '{0} lžičky',
           other: '{0} tsp',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tsp',
-          one: '{0} tsp',
-          few: '{0} tsp',
-          many: '{0} tsp',
+          one: '{0} lžička',
+          few: '{0} lžičky',
+          many: '{0} lžičky',
           other: '{0} tsp',
         ),
       );
@@ -7747,17 +8495,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'bbl',
-          one: '{0} bbl',
-          few: '{0} bbl',
-          many: '{0} bbl',
+          one: '{0} barel',
+          few: '{0} barely',
+          many: '{0} barelu',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
-          one: '{0} bbl',
-          few: '{0} bbl',
-          many: '{0} bbl',
+          one: '{0} barel',
+          few: '{0} barely',
+          many: '{0} barelu',
           other: '{0} bbl',
         ),
       );
@@ -7775,17 +8523,17 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'dstspn',
-          one: '{0} dstspn',
-          few: '{0} dstspn',
-          many: '{0} dstspn',
+          one: '{0} dezertní lžička',
+          few: '{0} dezertní lžičky',
+          many: '{0} dezertní lžičky',
           other: '{0} dstspn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dstspn',
-          one: '{0} dstspn',
-          few: '{0} dstspn',
-          many: '{0} dstspn',
+          one: '{0} dezertní lžička',
+          few: '{0} dezertní lžičky',
+          many: '{0} dezertní lžičky',
           other: '{0} dstspn',
         ),
       );
@@ -7943,18 +8691,124 @@ class UnitsCs implements Units {
         short: UnitCountPattern(
           _locale,
           'qt Imp.',
-          one: '{0} qt Imp.',
-          few: '{0} qt Imp.',
-          many: '{0} qt Imp.',
+          one: '{0} britský kvart',
+          few: '{0} britské kvarty',
+          many: '{0} britského kvartu',
           other: '{0} qt Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt Imp.',
-          one: '{0} qt Imp.',
-          few: '{0} qt Imp.',
-          many: '{0} qt Imp.',
+          one: '{0} britský kvart',
+          few: '{0} britské kvarty',
+          many: '{0} britského kvartu',
           other: '{0} qt Imp.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'světlo',
+          one: '{0} světlo',
+          few: '{0} světla',
+          many: '{0} světla',
+          other: '{0} světel',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'světlo',
+          one: '{0} světlo',
+          few: '{0} světla',
+          many: '{0} světla',
+          other: '{0} světel',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'světlo',
+          one: '{0} sv.',
+          few: '{0} sv.',
+          many: '{0} sv.',
+          other: '{0} sv.',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'částice na miliardu',
+          one: '{0} částice na miliardu',
+          few: '{0} částice na miliardu',
+          many: '{0} částice na miliardu',
+          other: '{0} částic na miliardu',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'částic/mld.',
+          one: '{0} částice na mld',
+          few: '{0} částice na mld',
+          many: '{0} částic na mld',
+          other: '{0} částic na mld',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'částic/mld.',
+          one: '{0} částice na mld',
+          few: '{0} částice na mld',
+          many: '{0} částic na mld',
+          other: '{0} částic na mld',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noci',
+          one: '{0} noc',
+          few: '{0} noci',
+          many: '{0} noci',
+          other: '{0} nocí',
         ),
       );
 }
@@ -9401,6 +10255,10 @@ class TerritoriesCs implements Territories {
       'CP',
       'Clippertonův ostrov',
     ),
+    'CQ': Territory(
+      'CQ',
+      'neznámá oblast (CQ)',
+    ),
     'CR': Territory(
       'CR',
       'Kostarika',
@@ -10256,6 +11114,1701 @@ class TerritoriesCs implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabwe',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesCs extends TimeZones {
+  TimeZonesCs._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+H:mm;-H:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'časové pásmo {0}',
+            regionFormatDaylight: '{0} (+1)',
+            regionFormatStandard: '{0} (+0)',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: 'Asunción',
+    ),
+    'America/Bahia': TimeZoneNames(
+      exemplarCity: 'Bahía',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'Bahia Banderas',
+    ),
+    'America/Belem': TimeZoneNames(
+      exemplarCity: 'Belém',
+    ),
+    'America/Bogota': TimeZoneNames(
+      exemplarCity: 'Bogotá',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: 'Cancún',
+    ),
+    'America/Cayman': TimeZoneNames(
+      exemplarCity: 'Kajmanské ostrovy',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: 'Ciudad Juárez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: 'Atikokan',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      exemplarCity: 'Córdoba',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      exemplarCity: 'Kostarika',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: 'Curaçao',
+    ),
+    'America/Dominica': TimeZoneNames(
+      exemplarCity: 'Dominika',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      exemplarCity: 'Salvador',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: 'Nuuk',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: 'Vevay, Indiana',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      exemplarCity: 'Jamajka',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
+    'America/Martinique': TimeZoneNames(
+      exemplarCity: 'Martinik',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      exemplarCity: 'Mazatlán',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: 'Merida',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      exemplarCity: 'Ciudad de México',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Beulah, Severní Dakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'New Salem, Severní Dakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Center, Severní Dakota',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      exemplarCity: 'Portoriko',
+    ),
+    'America/Santarem': TimeZoneNames(
+      exemplarCity: 'Santarém',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      exemplarCity: 'São Paulo',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: 'Svatý Bartoloměj',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: 'St. John’s',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: 'Svatý Kryštof',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: 'Svatá Lucie',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: 'Svatý Tomáš (Karibik)',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: 'Svatý Vincenc',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      exemplarCity: 'Azorské ostrovy',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      exemplarCity: 'Bermudy',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: 'Kanárské ostrovy',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: 'Kapverdy',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: 'Faerské ostrovy',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      exemplarCity: 'Reykjavík',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: 'Jižní Georgie',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: 'Svatá Helena',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      exemplarCity: 'Astrachaň',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: 'Athény',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: 'Bělehrad',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      exemplarCity: 'Berlín',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: 'Brusel',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: 'Bukurešť',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      exemplarCity: 'Budapešť',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: 'Kišiněv',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: 'Kodaň',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'irský letní čas',
+      ),
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      exemplarCity: 'Helsinky',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      exemplarCity: 'Ostrov Man',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: 'Kyjev',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: 'Lisabon',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      exemplarCity: 'Lublaň',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'britský letní čas',
+      ),
+      exemplarCity: 'Londýn',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: 'Lucemburk',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      exemplarCity: 'Monako',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: 'Moskva',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      exemplarCity: 'Paříž',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: 'Praha',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: 'Řím',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      exemplarCity: 'Sofie',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: 'Tirana',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: 'Uljanovsk',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      exemplarCity: 'Vatikán',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: 'Vídeň',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: 'Varšava',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      exemplarCity: 'Záhřeb',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: 'Curych',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      exemplarCity: 'Abidžan',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: 'Addis Abeba',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: 'Alžír',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: 'Asmara',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      exemplarCity: 'Káhira',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      exemplarCity: 'Džibuti',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      exemplarCity: 'Chartúm',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: 'Lomé',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: 'Mogadišu',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: 'Ndžamena',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      exemplarCity: 'Nuakšott',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: 'Svatý Tomáš',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      exemplarCity: 'Tripolis',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      exemplarCity: 'Ammán',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: 'Aktobe',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: 'Ašchabad',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: 'Bagdád',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      exemplarCity: 'Bahrajn',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      exemplarCity: 'Bejrút',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      exemplarCity: 'Biškek',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      exemplarCity: 'Brunej',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: 'Kalkata',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: 'Čita',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      exemplarCity: 'Kolombo',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: 'Damašek',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      exemplarCity: 'Dháka',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      exemplarCity: 'Dubaj',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: 'Dušanbe',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      exemplarCity: 'Hongkong',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      exemplarCity: 'Jeruzalém',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      exemplarCity: 'Kábul',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      exemplarCity: 'Kamčatka',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      exemplarCity: 'Karáčí',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: 'Káthmándú',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      exemplarCity: 'Chandyga',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      exemplarCity: 'Krasnojarsk',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      exemplarCity: 'Kučing',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      exemplarCity: 'Kuvajt',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: 'Macao',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      exemplarCity: 'Maskat',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      exemplarCity: 'Nikósie',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      exemplarCity: 'Novokuzněck',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      exemplarCity: 'Uralsk',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      exemplarCity: 'Phnompenh',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      exemplarCity: 'Pchjongjang',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      exemplarCity: 'Katar',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: 'Kostanaj',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: 'Kyzylorda',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: 'Rangún',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      exemplarCity: 'Rijád',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: 'Ho Či Minovo město',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: 'Sachalin',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      exemplarCity: 'Soul',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      exemplarCity: 'Šanghaj',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      exemplarCity: 'Singapur',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      exemplarCity: 'Sredněkolymsk',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      exemplarCity: 'Tchaj-pej',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: 'Taškent',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: 'Teherán',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      exemplarCity: 'Thimbú',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      exemplarCity: 'Tokio',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      exemplarCity: 'Ulánbátar',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: 'Urumči',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      exemplarCity: 'Jakutsk',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: 'Jekatěrinburg',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'Jerevan',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      exemplarCity: 'Vánoční ostrov',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      exemplarCity: 'Kokosové ostrovy',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: 'Komory',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      exemplarCity: 'Kerguelenovy ostrovy',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: 'Mahé',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: 'Maledivy',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      exemplarCity: 'Mauricius',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: 'Réunion',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      exemplarCity: 'Chathamské ostrovy',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: 'Velikonoční ostrov',
+    ),
+    'Pacific/Efate': TimeZoneNames(
+      exemplarCity: 'Éfaté',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Enderbury',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      exemplarCity: 'Fidži',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      exemplarCity: 'Galapágy',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      exemplarCity: 'Gambierovy ostrovy',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      short: TimeZoneName(
+        generic: 'HST',
+        standard: 'HST',
+        daylight: 'HDT',
+      ),
+      exemplarCity: 'Honolulu',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      exemplarCity: 'Markézy',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: 'Nouméa',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      exemplarCity: 'Pitcairnovy ostrovy',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: 'Pohnpei',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: 'Chuukské ostrovy',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Dumont d’Urville',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'koordinovaný světový čas',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: 'neznámé město',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'acrejský čas',
+        standard: 'acrejský standardní čas',
+        daylight: 'acrejský letní čas',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'afghánský čas',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'středoafrický čas',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'východoafrický čas',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'jihoafrický čas',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'západoafrický čas',
+        standard: 'západoafrický standardní čas',
+        daylight: 'západoafrický letní čas',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'aljašský čas',
+        standard: 'aljašský standardní čas',
+        daylight: 'aljašský letní čas',
+      ),
+      short: TimeZoneName(
+        generic: 'AKT',
+        standard: 'AKST',
+        daylight: 'AKDT',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'Almatský čas',
+        standard: 'Almatský standardní čas',
+        daylight: 'Almatský letní čas',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'amazonský čas',
+        standard: 'amazonský standardní čas',
+        daylight: 'amazonský letní čas',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'severoamerický centrální čas',
+        standard: 'severoamerický centrální standardní čas',
+        daylight: 'severoamerický centrální letní čas',
+      ),
+      short: TimeZoneName(
+        generic: 'CT',
+        standard: 'CST',
+        daylight: 'CDT',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'severoamerický východní čas',
+        standard: 'severoamerický východní standardní čas',
+        daylight: 'severoamerický východní letní čas',
+      ),
+      short: TimeZoneName(
+        generic: 'ET',
+        standard: 'EST',
+        daylight: 'EDT',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'severoamerický horský čas',
+        standard: 'severoamerický horský standardní čas',
+        daylight: 'severoamerický horský letní čas',
+      ),
+      short: TimeZoneName(
+        generic: 'MT',
+        standard: 'MST',
+        daylight: 'MDT',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'severoamerický pacifický čas',
+        standard: 'severoamerický pacifický standardní čas',
+        daylight: 'severoamerický pacifický letní čas',
+      ),
+      short: TimeZoneName(
+        generic: 'PT',
+        standard: 'PST',
+        daylight: 'PDT',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'anadyrský čas',
+        standard: 'anadyrský standardní čas',
+        daylight: 'anadyrský letní čas',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'apijský čas',
+        standard: 'apijský standardní čas',
+        daylight: 'apijský letní čas',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'Aktauský čas',
+        standard: 'Aktauský standardní čas',
+        daylight: 'Aktauský letní čas',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Aktobský čas',
+        standard: 'Aktobský standardní čas',
+        daylight: 'Aktobský letní čas',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'arabský čas',
+        standard: 'arabský standardní čas',
+        daylight: 'arabský letní čas',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'argentinský čas',
+        standard: 'argentinský standardní čas',
+        daylight: 'argentinský letní čas',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'západoargentinský čas',
+        standard: 'západoargentinský standardní čas',
+        daylight: 'západoargentinský letní čas',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'arménský čas',
+        standard: 'arménský standardní čas',
+        daylight: 'arménský letní čas',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'atlantický čas',
+        standard: 'atlantický standardní čas',
+        daylight: 'atlantický letní čas',
+      ),
+      short: TimeZoneName(
+        generic: 'AT',
+        standard: 'AST',
+        daylight: 'ADT',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'středoaustralský čas',
+        standard: 'středoaustralský standardní čas',
+        daylight: 'středoaustralský letní čas',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'středozápadní australský čas',
+        standard: 'středozápadní australský standardní čas',
+        daylight: 'středozápadní australský letní čas',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'východoaustralský čas',
+        standard: 'východoaustralský standardní čas',
+        daylight: 'východoaustralský letní čas',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'západoaustralský čas',
+        standard: 'západoaustralský standardní čas',
+        daylight: 'západoaustralský letní čas',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'ázerbájdžánský čas',
+        standard: 'ázerbájdžánský standardní čas',
+        daylight: 'ázerbájdžánský letní čas',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'azorský čas',
+        standard: 'azorský standardní čas',
+        daylight: 'azorský letní čas',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'bangladéšský čas',
+        standard: 'bangladéšský standardní čas',
+        daylight: 'bangladéšský letní čas',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'bhútánský čas',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'bolivijský čas',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'brasilijský čas',
+        standard: 'brasilijský standardní čas',
+        daylight: 'brasilijský letní čas',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'brunejský čas',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'kapverdský čas',
+        standard: 'kapverdský standardní čas',
+        daylight: 'kapverdský letní čas',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'čas Caseyho stanice',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'chamorrský čas',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'chathamský čas',
+        standard: 'chathamský standardní čas',
+        daylight: 'chathamský letní čas',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'chilský čas',
+        standard: 'chilský standardní čas',
+        daylight: 'chilský letní čas',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'čínský čas',
+        standard: 'čínský standardní čas',
+        daylight: 'čínský letní čas',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'čas Vánočního ostrova',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'čas Kokosových ostrovů',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'kolumbijský čas',
+        standard: 'kolumbijský standardní čas',
+        daylight: 'kolumbijský letní čas',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'čas Cookových ostrovů',
+        standard: 'standardní čas Cookových ostrovů',
+        daylight: 'letní čas Cookových ostrovů',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'kubánský čas',
+        standard: 'kubánský standardní čas',
+        daylight: 'kubánský letní čas',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'čas Davisovy stanice',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'čas stanice Dumonta d’Urvilla',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'východotimorský čas',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'čas Velikonočního ostrova',
+        standard: 'standardní čas Velikonočního ostrova',
+        daylight: 'letní čas Velikonočního ostrova',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'ekvádorský čas',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'středoevropský čas',
+        standard: 'středoevropský standardní čas',
+        daylight: 'středoevropský letní čas',
+      ),
+      short: TimeZoneName(
+        generic: 'SEČ',
+        standard: 'SEČ',
+        daylight: 'SELČ',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'východoevropský čas',
+        standard: 'východoevropský standardní čas',
+        daylight: 'východoevropský letní čas',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'dálněvýchodoevropský čas',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'západoevropský čas',
+        standard: 'západoevropský standardní čas',
+        daylight: 'západoevropský letní čas',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'falklandský čas',
+        standard: 'falklandský standardní čas',
+        daylight: 'falklandský letní čas',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'fidžijský čas',
+        standard: 'fidžijský standardní čas',
+        daylight: 'fidžijský letní čas',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'francouzskoguyanský čas',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'čas Francouzských jižních a antarktických území',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'galapážský čas',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'gambierský čas',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'gruzínský čas',
+        standard: 'gruzínský standardní čas',
+        daylight: 'gruzínský letní čas',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'čas Gilbertových ostrovů',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'greenwichský střední čas',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'východogrónský čas',
+        standard: 'východogrónský standardní čas',
+        daylight: 'východogrónský letní čas',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'západogrónský čas',
+        standard: 'západogrónský standardní čas',
+        daylight: 'západogrónský letní čas',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'Guamský čas',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'standardní čas Perského zálivu',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'guyanský čas',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'havajsko-aleutský čas',
+        standard: 'havajsko-aleutský standardní čas',
+        daylight: 'havajsko-aleutský letní čas',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'hongkongský čas',
+        standard: 'hongkongský standardní čas',
+        daylight: 'hongkongský letní čas',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'hovdský čas',
+        standard: 'hovdský standardní čas',
+        daylight: 'hovdský letní čas',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'indický čas',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'indickooceánský čas',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'indočínský čas',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'středoindonéský čas',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'východoindonéský čas',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'západoindonéský čas',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'íránský čas',
+        standard: 'íránský standardní čas',
+        daylight: 'íránský letní čas',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'irkutský čas',
+        standard: 'irkutský standardní čas',
+        daylight: 'irkutský letní čas',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'izraelský čas',
+        standard: 'izraelský standardní čas',
+        daylight: 'izraelský letní čas',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'japonský čas',
+        standard: 'japonský standardní čas',
+        daylight: 'japonský letní čas',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'petropavlovsko-kamčatský čas',
+        standard: 'petropavlovsko-kamčatský standardní čas',
+        daylight: 'petropavlovsko-kamčatský letní čas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazachstánský čas',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'východokazachstánský čas',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'západokazachstánský čas',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'korejský čas',
+        standard: 'korejský standardní čas',
+        daylight: 'korejský letní čas',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'kosrajský čas',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'krasnojarský čas',
+        standard: 'krasnojarský standardní čas',
+        daylight: 'krasnojarský letní čas',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'kyrgyzský čas',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'Srílanský čas',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'čas Rovníkových ostrovů',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'čas ostrova lorda Howa',
+        standard: 'standardní čas ostrova lorda Howa',
+        daylight: 'letní čas ostrova lorda Howa',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'Macajský čas',
+        standard: 'Macajský standardní čas',
+        daylight: 'Macajský letní čas',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'magadanský čas',
+        standard: 'magadanský standardní čas',
+        daylight: 'magadanský letní čas',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'malajský čas',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'maledivský čas',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'markézský čas',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'čas Marshallových ostrovů',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'mauricijský čas',
+        standard: 'mauricijský standardní čas',
+        daylight: 'mauricijský letní čas',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'čas Mawsonovy stanice',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'mexický pacifický čas',
+        standard: 'mexický pacifický standardní čas',
+        daylight: 'mexický pacifický letní čas',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'ulánbátarský čas',
+        standard: 'ulánbátarský standardní čas',
+        daylight: 'ulánbátarský letní čas',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'moskevský čas',
+        standard: 'moskevský standardní čas',
+        daylight: 'moskevský letní čas',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'myanmarský čas',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'naurský čas',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'nepálský čas',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'novokaledonský čas',
+        standard: 'novokaledonský standardní čas',
+        daylight: 'novokaledonský letní čas',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'novozélandský čas',
+        standard: 'novozélandský standardní čas',
+        daylight: 'novozélandský letní čas',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'newfoundlandský čas',
+        standard: 'newfoundlandský standardní čas',
+        daylight: 'newfoundlandský letní čas',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'niuejský čas',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'norfolkský čas',
+        standard: 'norfolkský standardní čas',
+        daylight: 'norfolkský letní čas',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'čas souostroví Fernando de Noronha',
+        standard: 'standardní čas souostroví Fernando de Noronha',
+        daylight: 'letní čas souostroví Fernando de Noronha',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'Severomariánský čas',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'novosibirský čas',
+        standard: 'novosibirský standardní čas',
+        daylight: 'novosibirský letní čas',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'omský čas',
+        standard: 'omský standardní čas',
+        daylight: 'omský letní čas',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'pákistánský čas',
+        standard: 'pákistánský standardní čas',
+        daylight: 'pákistánský letní čas',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'palauský čas',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'čas Papuy-Nové Guiney',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'paraguayský čas',
+        standard: 'paraguayský standardní čas',
+        daylight: 'paraguayský letní čas',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'peruánský čas',
+        standard: 'peruánský standardní čas',
+        daylight: 'peruánský letní čas',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'filipínský čas',
+        standard: 'filipínský standardní čas',
+        daylight: 'filipínský letní čas',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'čas Fénixových ostrovů',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'pierre-miquelonský čas',
+        standard: 'pierre-miquelonský standardní čas',
+        daylight: 'pierre-miquelonský letní čas',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'čas Pitcairnových ostrovů',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'ponapský čas',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'pchjongjangský čas',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Kyzylordský čas',
+        standard: 'Kyzylordský standardní čas',
+        daylight: 'Kyzylordský letní čas',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'réunionský čas',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'čas Rotherovy stanice',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'sachalinský čas',
+        standard: 'sachalinský standardní čas',
+        daylight: 'sachalinský letní čas',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'samarský čas',
+        standard: 'samarský standardní čas',
+        daylight: 'samarský letní čas',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'samojský čas',
+        standard: 'samojský standardní čas',
+        daylight: 'samojský letní čas',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'seychelský čas',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'singapurský čas',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'čas Šalamounových ostrovů',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'čas Jižní Georgie',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'surinamský čas',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'čas stanice Šówa',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'tahitský čas',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'tchajpejský čas',
+        standard: 'tchajpejský standardní čas',
+        daylight: 'tchajpejský letní čas',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'tádžický čas',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'tokelauský čas',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'tonžský čas',
+        standard: 'tonžský standardní čas',
+        daylight: 'tonžský letní čas',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'chuukský čas',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'turkmenský čas',
+        standard: 'turkmenský standardní čas',
+        daylight: 'turkmenský letní čas',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'tuvalský čas',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'uruguayský čas',
+        standard: 'uruguayský standardní čas',
+        daylight: 'uruguayský letní čas',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'uzbecký čas',
+        standard: 'uzbecký standardní čas',
+        daylight: 'uzbecký letní čas',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'vanuatský čas',
+        standard: 'vanuatský standardní čas',
+        daylight: 'vanuatský letní čas',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'venezuelský čas',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'vladivostocký čas',
+        standard: 'vladivostocký standardní čas',
+        daylight: 'vladivostocký letní čas',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'volgogradský čas',
+        standard: 'volgogradský standardní čas',
+        daylight: 'volgogradský letní čas',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'čas stanice Vostok',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'čas ostrova Wake',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'čas ostrovů Wallis a Futuna',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'jakutský čas',
+        standard: 'jakutský standardní čas',
+        daylight: 'jakutský letní čas',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'jekatěrinburský čas',
+        standard: 'jekatěrinburský standardní čas',
+        daylight: 'jekatěrinburský letní čas',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'yukonský čas',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

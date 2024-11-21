@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'zh';
 
-/// Translations in Chinese of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataZh implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataZh();
@@ -22,6 +20,14 @@ class CommonLocaleDataZh implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsZh._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsZh._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsZh._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataZh implements CommonLocaleData {
   static final _territories = TerritoriesZh._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesZh._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesZh extends Languages {
@@ -228,7 +238,7 @@ class LanguagesZh extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      '哈里亚纳语',
     ),
     'bgn': Language(
       'bgn',
@@ -257,6 +267,10 @@ class LanguagesZh extends Languages {
     'bla': Language(
       'bla',
       '西克西卡语',
+    ),
+    'blo': Language(
+      'blo',
+      '阿尼语',
     ),
     'bm': Language(
       'bm',
@@ -836,8 +850,8 @@ class LanguagesZh extends Languages {
     ),
     'hi-Latn': Language(
       'hi-Latn',
-      '印地语（拉丁文）',
-      variant: '印式英语',
+      '印地语（拉丁字母）',
+      variant: '印地英语',
     ),
     'hil': Language(
       'hil',
@@ -917,7 +931,7 @@ class LanguagesZh extends Languages {
     ),
     'ii': Language(
       'ii',
-      '四川彝语',
+      '凉山彝语',
     ),
     'ik': Language(
       'ik',
@@ -1163,6 +1177,10 @@ class LanguagesZh extends Languages {
       'kwk',
       '夸夸瓦拉语',
     ),
+    'kxv': Language(
+      'kxv',
+      '库维语',
+    ),
     'ky': Language(
       'ky',
       '柯尔克孜语',
@@ -1214,6 +1232,10 @@ class LanguagesZh extends Languages {
     'lkt': Language(
       'lkt',
       '拉科塔语',
+    ),
+    'lmo': Language(
+      'lmo',
+      '伦巴第语',
     ),
     'ln': Language(
       'ln',
@@ -1341,7 +1363,7 @@ class LanguagesZh extends Languages {
     ),
     'mgh': Language(
       'mgh',
-      '马库阿语',
+      '马库阿-梅托语',
     ),
     'mgo': Language(
       'mgo',
@@ -1613,7 +1635,7 @@ class LanguagesZh extends Languages {
     ),
     'osa': Language(
       'osa',
-      '奥塞治语',
+      '欧塞奇语',
     ),
     'ota': Language(
       'ota',
@@ -1723,6 +1745,10 @@ class LanguagesZh extends Languages {
       'rhg',
       '罗兴亚语',
     ),
+    'rif': Language(
+      'rif',
+      '里夫语',
+    ),
     'rm': Language(
       'rm',
       '罗曼什语',
@@ -1785,7 +1811,7 @@ class LanguagesZh extends Languages {
     ),
     'sas': Language(
       'sas',
-      '萨萨克文',
+      '萨萨克语',
     ),
     'sat': Language(
       'sat',
@@ -1991,6 +2017,10 @@ class LanguagesZh extends Languages {
       'syr',
       '叙利亚语',
     ),
+    'szl': Language(
+      'szl',
+      '西里西亚语',
+    ),
     'ta': Language(
       'ta',
       '泰米尔语',
@@ -2099,6 +2129,10 @@ class LanguagesZh extends Languages {
       'trv',
       '赛德克语',
     ),
+    'trw': Language(
+      'trw',
+      '托尔瓦利语',
+    ),
     'ts': Language(
       'ts',
       '聪加语',
@@ -2195,6 +2229,10 @@ class LanguagesZh extends Languages {
       'vi',
       '越南语',
     ),
+    'vmw': Language(
+      'vmw',
+      '马库阿语',
+    ),
     'vo': Language(
       'vo',
       '沃拉普克语',
@@ -2247,13 +2285,17 @@ class LanguagesZh extends Languages {
       'xh',
       '科萨语',
     ),
+    'xnr': Language(
+      'xnr',
+      '康格里语',
+    ),
     'xog': Language(
       'xog',
       '索加语',
     ),
     'yao': Language(
       'yao',
-      '瑶族语',
+      '尧语',
     ),
     'yap': Language(
       'yap',
@@ -2336,6 +2378,1045 @@ class LanguagesZh extends Languages {
   }, (key) => key.toLowerCase());
 }
 
+class ScriptsZh extends Scripts {
+  ScriptsZh._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      '阿德拉姆文',
+    ),
+    'Afak': Script(
+      'Afak',
+      '阿法卡文',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      '高加索阿尔巴尼亚文',
+    ),
+    'Ahom': Script(
+      'Ahom',
+      '阿豪姆文',
+    ),
+    'Arab': Script(
+      'Arab',
+      '阿拉伯文',
+      variant: '波斯阿拉伯文',
+    ),
+    'Aran': Script(
+      'Aran',
+      '波斯体',
+    ),
+    'Armi': Script(
+      'Armi',
+      '皇室亚拉姆文',
+    ),
+    'Armn': Script(
+      'Armn',
+      '亚美尼亚文',
+    ),
+    'Avst': Script(
+      'Avst',
+      '阿维斯陀文',
+    ),
+    'Bali': Script(
+      'Bali',
+      '巴厘文',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      '巴姆穆文',
+    ),
+    'Bass': Script(
+      'Bass',
+      '巴萨文',
+    ),
+    'Batk': Script(
+      'Batk',
+      '巴塔克文',
+    ),
+    'Beng': Script(
+      'Beng',
+      '孟加拉文',
+    ),
+    'Bhks': Script(
+      'Bhks',
+      '拜克舒克文',
+    ),
+    'Blis': Script(
+      'Blis',
+      '布列斯符号',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      '注音符号',
+    ),
+    'Brah': Script(
+      'Brah',
+      '婆罗米文字',
+    ),
+    'Brai': Script(
+      'Brai',
+      '布莱叶盲文',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      '布吉文',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      '布希德文',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      '查克马文',
+    ),
+    'Cans': Script(
+      'Cans',
+      '加拿大土著统一音节',
+    ),
+    'Cari': Script(
+      'Cari',
+      '卡里亚文',
+    ),
+    'Cham': Script(
+      'Cham',
+      '占文',
+    ),
+    'Cher': Script(
+      'Cher',
+      '切罗基文',
+    ),
+    'Chrs': Script(
+      'Chrs',
+      '花拉子模文',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      '色斯文',
+    ),
+    'Copt': Script(
+      'Copt',
+      '克普特文',
+    ),
+    'Cpmn': Script(
+      'Cpmn',
+      '塞浦路斯米诺斯文',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      '塞浦路斯文',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      '西里尔文',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      '西里尔文字（古教会斯拉夫文的变体）',
+    ),
+    'Deva': Script(
+      'Deva',
+      '天城文',
+    ),
+    'Diak': Script(
+      'Diak',
+      '迪维西阿库鲁文',
+    ),
+    'Dogr': Script(
+      'Dogr',
+      '多格拉文',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      '德塞莱特文',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      '杜普洛伊速记',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      '后期埃及文',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      '古埃及僧侣书写体',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      '古埃及象形文',
+    ),
+    'Elba': Script(
+      'Elba',
+      '爱尔巴桑文',
+    ),
+    'Elym': Script(
+      'Elym',
+      '埃利迈文',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      '埃塞俄比亚文',
+    ),
+    'Geok': Script(
+      'Geok',
+      '格鲁吉亚文（教堂体）',
+    ),
+    'Geor': Script(
+      'Geor',
+      '格鲁吉亚文',
+    ),
+    'Glag': Script(
+      'Glag',
+      '格拉哥里文',
+    ),
+    'Gong': Script(
+      'Gong',
+      '贡贾拉贡德文',
+    ),
+    'Gonm': Script(
+      'Gonm',
+      '马萨拉姆冈德文',
+    ),
+    'Goth': Script(
+      'Goth',
+      '哥特文',
+    ),
+    'Gran': Script(
+      'Gran',
+      '格兰塔文',
+    ),
+    'Grek': Script(
+      'Grek',
+      '希腊文',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      '古吉拉特文',
+    ),
+    'Guru': Script(
+      'Guru',
+      '果鲁穆奇文',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      '注音汉字',
+    ),
+    'Hang': Script(
+      'Hang',
+      '谚文',
+    ),
+    'Hani': Script(
+      'Hani',
+      '汉字',
+    ),
+    'Hano': Script(
+      'Hano',
+      '汉奴罗文',
+    ),
+    'Hans': Script(
+      'Hans',
+      '简体',
+      standAlone: '简体中文',
+    ),
+    'Hant': Script(
+      'Hant',
+      '繁体',
+      standAlone: '繁体中文',
+    ),
+    'Hatr': Script(
+      'Hatr',
+      '哈特兰文',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      '希伯来文',
+    ),
+    'Hira': Script(
+      'Hira',
+      '平假名',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      '安那托利亚象形文字',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      '杨松录苗文',
+    ),
+    'Hmnp': Script(
+      'Hmnp',
+      '尼亚肯蒲丘苗文',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      '假名',
+    ),
+    'Hung': Script(
+      'Hung',
+      '古匈牙利文',
+    ),
+    'Inds': Script(
+      'Inds',
+      '印度河文字',
+    ),
+    'Ital': Script(
+      'Ital',
+      '古意大利文',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      '韩文字母',
+    ),
+    'Java': Script(
+      'Java',
+      '爪哇文',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      '日文',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      '女真文',
+    ),
+    'Kali': Script(
+      'Kali',
+      '克耶李文字',
+    ),
+    'Kana': Script(
+      'Kana',
+      '片假名',
+    ),
+    'Kawi': Script(
+      'Kawi',
+      '卡维文',
+    ),
+    'Khar': Script(
+      'Khar',
+      '卡罗须提文',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      '高棉文',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      '克吉奇文字',
+    ),
+    'Kits': Script(
+      'Kits',
+      '契丹小字',
+    ),
+    'Knda': Script(
+      'Knda',
+      '卡纳达文',
+    ),
+    'Kore': Script(
+      'Kore',
+      '韩文',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      '克佩列文',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      '凯提文',
+    ),
+    'Lana': Script(
+      'Lana',
+      '兰拿文',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      '老挝文',
+    ),
+    'Latf': Script(
+      'Latf',
+      '拉丁文（哥特式字体变体）',
+    ),
+    'Latg': Script(
+      'Latg',
+      '拉丁文（盖尔文变体）',
+    ),
+    'Latn': Script(
+      'Latn',
+      '拉丁文',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      '雷布查文',
+    ),
+    'Limb': Script(
+      'Limb',
+      '林布文',
+    ),
+    'Lina': Script(
+      'Lina',
+      '线形文字（A）',
+    ),
+    'Linb': Script(
+      'Linb',
+      '线形文字（B）',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      '傈僳文',
+    ),
+    'Loma': Script(
+      'Loma',
+      '洛马文',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      '利西亚文',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      '吕底亚文',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      '默哈金文',
+    ),
+    'Maka': Script(
+      'Maka',
+      '望加锡文',
+    ),
+    'Mand': Script(
+      'Mand',
+      '阿拉米文',
+    ),
+    'Mani': Script(
+      'Mani',
+      '摩尼教文',
+    ),
+    'Marc': Script(
+      'Marc',
+      '大玛尔文',
+    ),
+    'Maya': Script(
+      'Maya',
+      '玛雅圣符文',
+    ),
+    'Medf': Script(
+      'Medf',
+      '梅德法伊德林文',
+    ),
+    'Mend': Script(
+      'Mend',
+      '门迪文',
+    ),
+    'Merc': Script(
+      'Merc',
+      '麦罗埃草书',
+    ),
+    'Mero': Script(
+      'Mero',
+      '麦若提克文',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      '马拉雅拉姆文',
+    ),
+    'Modi': Script(
+      'Modi',
+      '莫迪文',
+    ),
+    'Mong': Script(
+      'Mong',
+      '蒙古文',
+    ),
+    'Moon': Script(
+      'Moon',
+      '穆恩字母',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      '谬文',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      '曼尼普尔文',
+    ),
+    'Mult': Script(
+      'Mult',
+      '穆尔坦文',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      '缅甸文',
+    ),
+    'Nand': Script(
+      'Nand',
+      '楠迪梵文',
+    ),
+    'Narb': Script(
+      'Narb',
+      '古北方阿拉伯文',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      '纳巴泰文',
+    ),
+    'Newa': Script(
+      'Newa',
+      '尼瓦文',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      '纳西格巴文',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      '西非书面文字（N’Ko）',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      '女书',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      '欧甘文',
+    ),
+    'Olck': Script(
+      'Olck',
+      '桑塔利文',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      '鄂尔浑文',
+    ),
+    'Orya': Script(
+      'Orya',
+      '奥里亚文',
+    ),
+    'Osge': Script(
+      'Osge',
+      '欧塞奇文',
+    ),
+    'Osma': Script(
+      'Osma',
+      '奥斯曼亚文',
+    ),
+    'Ougr': Script(
+      'Ougr',
+      '回鹘文',
+    ),
+    'Palm': Script(
+      'Palm',
+      '帕尔迈拉文',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      '包金豪文',
+    ),
+    'Perm': Script(
+      'Perm',
+      '古彼尔姆文',
+    ),
+    'Phag': Script(
+      'Phag',
+      '八思巴文',
+    ),
+    'Phli': Script(
+      'Phli',
+      '巴列维文碑铭体',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      '巴列维文（圣诗体）',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      '巴列维文（书体）',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      '腓尼基文',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      '波拉德音标文字',
+    ),
+    'Prti': Script(
+      'Prti',
+      '帕提亚文碑铭体',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      '照济文',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      '拉让文',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      '哈乃斐文',
+    ),
+    'Roro': Script(
+      'Roro',
+      '朗格朗格文',
+    ),
+    'Runr': Script(
+      'Runr',
+      '古代北欧文',
+    ),
+    'Samr': Script(
+      'Samr',
+      '撒马利亚文',
+    ),
+    'Sara': Script(
+      'Sara',
+      '沙拉堤文',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      '古南阿拉伯文',
+    ),
+    'Saur': Script(
+      'Saur',
+      '索拉什特拉文',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      '书写符号',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      '萧伯纳式文',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      '夏拉达文',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      '悉昙文',
+    ),
+    'Sind': Script(
+      'Sind',
+      '信德文',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      '僧伽罗文',
+    ),
+    'Sogd': Script(
+      'Sogd',
+      '粟特文',
+    ),
+    'Sogo': Script(
+      'Sogo',
+      '古粟特文',
+    ),
+    'Sora': Script(
+      'Sora',
+      '索朗桑朋文',
+    ),
+    'Soyo': Script(
+      'Soyo',
+      '索永布文',
+    ),
+    'Sund': Script(
+      'Sund',
+      '巽他文',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      '锡尔赫特文',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      '叙利亚文',
+    ),
+    'Syre': Script(
+      'Syre',
+      '福音体叙利亚文',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      '西叙利亚文',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      '东叙利亚文',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      '塔格班瓦文',
+    ),
+    'Takr': Script(
+      'Takr',
+      '泰克里文',
+    ),
+    'Tale': Script(
+      'Tale',
+      '泰乐文',
+    ),
+    'Talu': Script(
+      'Talu',
+      '新傣文',
+    ),
+    'Taml': Script(
+      'Taml',
+      '泰米尔文',
+    ),
+    'Tang': Script(
+      'Tang',
+      '唐古特文',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      '越南傣文',
+    ),
+    'Telu': Script(
+      'Telu',
+      '泰卢固文',
+    ),
+    'Teng': Script(
+      'Teng',
+      '腾格瓦文字',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      '提非纳文',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      '塔加路文',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      '塔安那文',
+    ),
+    'Thai': Script(
+      'Thai',
+      '泰文',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      '藏文',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      '迈蒂利文',
+    ),
+    'Tnsa': Script(
+      'Tnsa',
+      '坦萨文',
+    ),
+    'Toto': Script(
+      'Toto',
+      '投投文',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      '乌加里特文',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      '瓦依文',
+    ),
+    'Visp': Script(
+      'Visp',
+      '可见语言',
+    ),
+    'Wara': Script(
+      'Wara',
+      '瓦郎奇蒂文字',
+    ),
+    'Wcho': Script(
+      'Wcho',
+      '万秋文',
+    ),
+    'Wole': Script(
+      'Wole',
+      '沃莱艾文',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      '古波斯文',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      '苏美尔-阿卡德楔形文字',
+    ),
+    'Yezi': Script(
+      'Yezi',
+      '雅兹迪文',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      '彝文',
+    ),
+    'Zanb': Script(
+      'Zanb',
+      '札那巴札尔方块文字',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      '遗传学术语',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      '数学符号',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      '表情符号',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      '符号',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      '非书面文字',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      '通用',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      '未知文字',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsZh extends Variants {
+  VariantsZh._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      '传统德文拼字',
+    ),
+    '1994': Variant(
+      '1994',
+      '标准雷西亚拼字',
+    ),
+    '1996': Variant(
+      '1996',
+      '1996 年德文拼字',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      '1606 年前中后期法文',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      '早期现代法文',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      '学术',
+    ),
+    'ABL1943': Variant(
+      'ABL1943',
+      '1943年正写法构想',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      '1997 版 ALA-LC 罗马字',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      '阿鲁库方言',
+    ),
+    'AO1990': Variant(
+      'AO1990',
+      '1990年葡萄牙语正写法协议',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      '东亚美尼亚文',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      '西亚美尼亚文',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      '统一土耳其拉丁字母',
+    ),
+    'BALANKA': Variant(
+      'BALANKA',
+      '阿尼语Balanka方言',
+    ),
+    'BARLA': Variant(
+      'BARLA',
+      '佛得角语向风方言组',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      '圣乔治/比拉方言',
+    ),
+    'BOHORIC': Variant(
+      'BOHORIC',
+      '博霍里奇字母',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      '布恩特林方言',
+    ),
+    'COLB1945': Variant(
+      'COLB1945',
+      '1945年葡萄牙-巴西正写法协定',
+    ),
+    'DAJNKO': Variant(
+      'DAJNKO',
+      '达金科字母',
+    ),
+    'EKAVSK': Variant(
+      'EKAVSK',
+      '塞尔维亚语伊卡维亚发音',
+    ),
+    'EMODENG': Variant(
+      'EMODENG',
+      '近代英语',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      '国际音标',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'UPA 音标',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      '赫伯恩罗马字',
+    ),
+    'IJEKAVSK': Variant(
+      'IJEKAVSK',
+      '塞尔维亚语伊吉卡维亚发音',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      '常用拼字',
+    ),
+    'KSCOR': Variant(
+      'KSCOR',
+      '标准正写法',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      '雷西亚 Lipovaz 方言',
+    ),
+    'METELKO': Variant(
+      'METELKO',
+      '梅特尔科字母',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      '单音字母',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'Ndyuka 方言',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      '纳蒂索内方言',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Gniva/Njiva 方言',
+    ),
+    'NULIK': Variant(
+      'NULIK',
+      '现代沃拉普克语',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'Oseacco/Osojane 方言',
+    ),
+    'OXENDICT': Variant(
+      'OXENDICT',
+      '《牛津英语词典》拼法',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'Pamaka 方言',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      '拼音罗马字',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      '多音字母',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      '电脑',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      '修订的拼字',
+    ),
+    'RIGIK': Variant(
+      'RIGIK',
+      '古典沃拉普克语',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      '雷西亚文',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      '萨霍文',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      '苏格兰标准英文',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      '斯高斯方言',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'Stolvizza/Solbica 方言',
+    ),
+    'SOTAV': Variant(
+      'SOTAV',
+      '佛得角语背风方言组',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      '传统正写法',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      '统一的拼字',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      '统一和修订的拼字',
+    ),
+    'UNIFON': Variant(
+      'UNIFON',
+      'Unifon音位字母',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      '巴伦西亚文',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'WG 威氏拼音法',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
 class UnitsZh implements Units {
   UnitsZh._();
 
@@ -2400,6 +3481,18 @@ class UnitsZh implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('柔{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('亏{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('十{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2458,6 +3551,18 @@ class UnitsZh implements Units {
         long: UnitPrefixPattern('尧{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('容{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('昆{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2524,16 +3629,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'G力',
+          one: '{0} g-force',
           other: '{0}G力',
         ),
         short: UnitCountPattern(
           _locale,
           'G力',
+          one: '{0} G',
           other: '{0}G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'G力',
+          one: '{0}G',
           other: '{0}G',
         ),
       );
@@ -2543,16 +3651,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '米/秒²',
+          one: '{0} meter per second squared',
           other: '每平方秒{0}米',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s²',
+          one: '{0} m/s²',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米/秒²',
+          one: '{0}m/s²',
           other: '{0}米/秒²',
         ),
       );
@@ -2562,16 +3673,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '转',
+          one: '{0} revolution',
           other: '{0}转',
         ),
         short: UnitCountPattern(
           _locale,
           '转',
+          one: '{0} rev',
           other: '{0}转',
         ),
         narrow: UnitCountPattern(
           _locale,
           '转',
+          one: '{0}rev',
           other: '{0}转',
         ),
       );
@@ -2581,16 +3695,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弧度',
+          one: '{0} radian',
           other: '{0}弧度',
         ),
         short: UnitCountPattern(
           _locale,
           '弧度',
+          one: '{0} rad',
           other: '{0}弧度',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弧度',
+          one: '{0}rad',
           other: '{0}弧度',
         ),
       );
@@ -2600,16 +3717,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} degree',
           other: '{0}度',
         ),
         short: UnitCountPattern(
           _locale,
           '度',
+          one: '{0} deg',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '度',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -2619,16 +3739,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弧分',
+          one: '{0} arcminute',
           other: '{0}弧分',
         ),
         short: UnitCountPattern(
           _locale,
           '弧分',
+          one: '{0} arcmin',
           other: '{0}弧分',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弧分',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -2638,16 +3761,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弧秒',
+          one: '{0} arcsecond',
           other: '{0}弧秒',
         ),
         short: UnitCountPattern(
           _locale,
           '弧秒',
+          one: '{0} arcsec',
           other: '{0}弧秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弧秒',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -2657,16 +3783,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方公里',
+          one: '{0} square kilometer',
           other: '{0}平方公里',
         ),
         short: UnitCountPattern(
           _locale,
           '平方公里',
+          one: '{0} km²',
           other: '{0}平方公里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
+          one: '{0}km²',
           other: '{0}km²',
         ),
       );
@@ -2676,16 +3805,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公顷',
+          one: '{0} hectare',
           other: '{0}公顷',
         ),
         short: UnitCountPattern(
           _locale,
           '公顷',
+          one: '{0} ha',
           other: '{0}公顷',
         ),
         narrow: UnitCountPattern(
           _locale,
           '公顷',
+          one: '{0}ha',
           other: '{0}ha',
         ),
       );
@@ -2695,16 +3827,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方米',
+          one: '{0} square meter',
           other: '{0}平方米',
         ),
         short: UnitCountPattern(
           _locale,
           '平方米',
+          one: '{0} m²',
           other: '{0}平方米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '平方米',
+          one: '{0}m²',
           other: '{0}m²',
         ),
       );
@@ -2714,16 +3849,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方厘米',
+          one: '{0} square centimeter',
           other: '{0}平方厘米',
         ),
         short: UnitCountPattern(
           _locale,
           '平方厘米',
+          one: '{0} cm²',
           other: '{0}平方厘米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
+          one: '{0}cm²',
           other: '{0}cm²',
         ),
       );
@@ -2733,16 +3871,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方英里',
+          one: '{0} square mile',
           other: '{0}平方英里',
         ),
         short: UnitCountPattern(
           _locale,
           '平方英里',
+          one: '{0} sq mi',
           other: '{0}平方英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
+          one: '{0}mi²',
           other: '{0}mi²',
         ),
       );
@@ -2752,16 +3893,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英亩',
+          one: '{0} acre',
           other: '{0}英亩',
         ),
         short: UnitCountPattern(
           _locale,
           '英亩',
+          one: '{0} ac',
           other: '{0}英亩',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英亩',
+          one: '{0}ac',
           other: '{0}ac',
         ),
       );
@@ -2771,16 +3915,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方码',
+          one: '{0} square yard',
           other: '{0}平方码',
         ),
         short: UnitCountPattern(
           _locale,
           '平方码',
+          one: '{0} yd²',
           other: '{0}平方码',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
+          one: '{0}yd²',
           other: '{0}yd²',
         ),
       );
@@ -2790,16 +3937,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方英尺',
+          one: '{0} square foot',
           other: '{0}平方英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '平方英尺',
+          one: '{0} sq ft',
           other: '{0}平方英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
+          one: '{0}ft²',
           other: '{0}ft²',
         ),
       );
@@ -2809,16 +3959,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '平方英寸',
+          one: '{0} square inch',
           other: '{0}平方英寸',
         ),
         short: UnitCountPattern(
           _locale,
           '平方英寸',
+          one: '{0} in²',
           other: '{0}平方英寸',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
+          one: '{0}in²',
           other: '{0}in²',
         ),
       );
@@ -2828,16 +3981,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '杜纳亩',
+          one: '{0} dunam',
           other: '{0}杜纳亩',
         ),
         short: UnitCountPattern(
           _locale,
           '杜纳亩',
+          one: '{0} dunam',
           other: '{0}杜纳亩',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dunam',
+          one: '{0}dunam',
           other: '{0}dunam',
         ),
       );
@@ -2847,17 +4003,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '克拉',
+          one: '{0} karat',
           other: '{0}克拉',
         ),
         short: UnitCountPattern(
           _locale,
           'kt',
+          one: '{0} kt',
           other: '{0} kt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kt',
-          other: '{0} kt',
+          one: '{0}kt',
+          other: '{0}kt',
         ),
       );
 
@@ -2866,17 +4025,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫克/分升',
+          one: '{0} milligram per deciliter',
           other: '每分升{0}毫克',
         ),
         short: UnitCountPattern(
           _locale,
           'mg/dL',
+          one: '{0} mg/dL',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg/dL',
-          other: '{0} mg/dL',
+          one: '{0}mg/dL',
+          other: '{0}mg/dL',
         ),
       );
 
@@ -2885,17 +4047,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫摩尔/升',
+          one: '{0} millimole per liter',
           other: '每升{0}毫摩尔',
         ),
         short: UnitCountPattern(
           _locale,
           'mmol/L',
+          one: '{0} mmol/L',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmol/L',
-          other: '{0} mmol/L',
+          one: '{0}mmol/L',
+          other: '{0}mmol/L',
         ),
       );
 
@@ -2904,16 +4069,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '项',
+          one: '{0} item',
           other: '{0}项',
         ),
         short: UnitCountPattern(
           _locale,
           '项',
+          one: '{0} item',
           other: '{0}项',
         ),
         narrow: UnitCountPattern(
           _locale,
           '项',
+          one: '{0}item',
           other: '{0}项',
         ),
       );
@@ -2923,16 +4091,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} part per million',
           other: '百万分之{0}',
         ),
         short: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0} ppm',
           other: '{0}ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
+          one: '{0}ppm',
           other: '{0}ppm',
         ),
       );
@@ -2942,16 +4113,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '%',
+          one: '{0} percent',
           other: '{0}%',
         ),
         short: UnitCountPattern(
           _locale,
           '%',
+          one: '{0}%',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
+          one: '{0}%',
           other: '{0}%',
         ),
       );
@@ -2961,16 +4135,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0} permille',
           other: '{0}‰',
         ),
         short: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0}‰',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
+          one: '{0}‰',
           other: '{0}‰',
         ),
       );
@@ -2980,16 +4157,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0} permyriad',
           other: '{0}‱',
         ),
         short: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0}‱',
           other: '{0}‱',
         ),
       );
@@ -2999,17 +4179,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '摩尔',
+          one: '{0} mole',
           other: '{0}摩尔',
         ),
         short: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mol',
-          other: '{0} mol',
+          one: '{0}mol',
+          other: '{0}mol',
         ),
       );
 
@@ -3018,16 +4201,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '升/公里',
+          one: '{0} liter per kilometer',
           other: '每公里{0}升',
         ),
         short: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0} L/km',
           other: '{0} L/km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/km',
+          one: '{0}L/km',
           other: '{0}L/km',
         ),
       );
@@ -3037,16 +4223,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '升/100千米',
+          one: '{0} liter per 100 kilometers',
           other: '{0}升/100千米',
         ),
         short: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0} L/100 km',
           other: '{0} L/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L/100km',
+          one: '{0}L/100km',
           other: '{0}L/100km',
         ),
       );
@@ -3056,16 +4245,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里/加仑',
+          one: '{0} mile per gallon',
           other: '每加仑{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           'mpg US',
+          one: '{0} mpg',
           other: '{0} mpg US',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpg US',
+          one: '{0}mpg',
           other: '{0}mpg',
         ),
       );
@@ -3075,16 +4267,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里/英制加仑',
+          one: '{0} mile per Imp. gallon',
           other: '每英制加仑{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           'mpg Imp.',
+          one: '{0} mpg Imp.',
           other: '{0} mpg Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpg Imp.',
+          one: '{0}m/gUK',
           other: '{0}m/gUK',
         ),
       );
@@ -3094,16 +4289,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '拍字节',
+          one: '{0} petabyte',
           other: '{0}拍字节',
         ),
         short: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0} PB',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
+          one: '{0}PB',
           other: '{0} PB',
         ),
       );
@@ -3113,16 +4311,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太字节',
+          one: '{0} terabyte',
           other: '{0}太字节',
         ),
         short: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0} TB',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
+          one: '{0}TB',
           other: '{0} TB',
         ),
       );
@@ -3132,16 +4333,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太比特',
+          one: '{0} terabit',
           other: '{0}太比特',
         ),
         short: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0} Tb',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
+          one: '{0}Tb',
           other: '{0} Tb',
         ),
       );
@@ -3151,16 +4355,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉字节',
+          one: '{0} gigabyte',
           other: '{0}吉字节',
         ),
         short: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0} GB',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
+          one: '{0}GB',
           other: '{0} GB',
         ),
       );
@@ -3170,16 +4377,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉比特',
+          one: '{0} gigabit',
           other: '{0}吉比特',
         ),
         short: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0} Gb',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
+          one: '{0}Gb',
           other: '{0} Gb',
         ),
       );
@@ -3189,16 +4399,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆字节',
+          one: '{0} megabyte',
           other: '{0}兆字节',
         ),
         short: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0} MB',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
+          one: '{0}MB',
           other: '{0} MB',
         ),
       );
@@ -3208,16 +4421,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆比特',
+          one: '{0} megabit',
           other: '{0}兆比特',
         ),
         short: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0} Mb',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
+          one: '{0}Mb',
           other: '{0} Mb',
         ),
       );
@@ -3227,16 +4443,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千字节',
+          one: '{0} kilobyte',
           other: '{0}千字节',
         ),
         short: UnitCountPattern(
           _locale,
           'kB',
+          one: '{0} kB',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
+          one: '{0}kB',
           other: '{0} kB',
         ),
       );
@@ -3246,16 +4465,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千比特',
+          one: '{0} kilobit',
           other: '{0}千比特',
         ),
         short: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0} kb',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
+          one: '{0}kb',
           other: '{0} kb',
         ),
       );
@@ -3265,16 +4487,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '字节',
+          one: '{0} byte',
           other: '{0}字节',
         ),
         short: UnitCountPattern(
           _locale,
           'B',
+          one: '{0} byte',
           other: '{0} B',
         ),
         narrow: UnitCountPattern(
           _locale,
           'B',
+          one: '{0}B',
           other: '{0} B',
         ),
       );
@@ -3284,16 +4509,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '比特',
+          one: '{0} bit',
           other: '{0}比特',
         ),
         short: UnitCountPattern(
           _locale,
           'b',
+          one: '{0} bit',
           other: '{0} b',
         ),
         narrow: UnitCountPattern(
           _locale,
           'b',
+          one: '{0}bit',
           other: '{0} b',
         ),
       );
@@ -3303,16 +4531,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '个世纪',
+          one: '{0} century',
           other: '{0}个世纪',
         ),
         short: UnitCountPattern(
           _locale,
           '个世纪',
+          one: '{0} c',
           other: '{0}个世纪',
         ),
         narrow: UnitCountPattern(
           _locale,
           '个世纪',
+          one: '{0}c',
           other: '{0}个世纪',
         ),
       );
@@ -3322,16 +4553,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '个十年',
+          one: '{0} decade',
           other: '{0}个十年',
         ),
         short: UnitCountPattern(
           _locale,
           '个十年',
+          one: '{0} dec',
           other: '{0}个十年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '个十年',
+          one: '{0}dec',
           other: '{0}个十年',
         ),
       );
@@ -3341,16 +4575,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} year',
           other: '{0}年',
         ),
         short: UnitCountPattern(
           _locale,
           '年',
+          one: '{0} yr',
           other: '{0}年',
         ),
         narrow: UnitCountPattern(
           _locale,
           '年',
+          one: '{0}y',
           other: '{0}年',
         ),
       );
@@ -3360,16 +4597,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '季度',
+          one: '{0} quarter',
           other: '{0}季',
         ),
         short: UnitCountPattern(
           _locale,
           '季',
+          one: '{0} qtr',
           other: '{0}季',
         ),
         narrow: UnitCountPattern(
           _locale,
           '季',
+          one: '{0}q',
           other: '{0}季',
         ),
       );
@@ -3379,16 +4619,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '个月',
+          one: '{0} month',
           other: '{0}个月',
         ),
         short: UnitCountPattern(
           _locale,
           '个月',
+          one: '{0} mth',
           other: '{0}个月',
         ),
         narrow: UnitCountPattern(
           _locale,
           '个月',
+          one: '{0}m',
           other: '{0}个月',
         ),
       );
@@ -3398,16 +4641,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '周',
+          one: '{0} week',
           other: '{0}周',
         ),
         short: UnitCountPattern(
           _locale,
           '周',
+          one: '{0} wk',
           other: '{0}周',
         ),
         narrow: UnitCountPattern(
           _locale,
           '周',
+          one: '{0}w',
           other: '{0}周',
         ),
       );
@@ -3417,16 +4663,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '天',
+          one: '{0} day',
           other: '{0}天',
         ),
         short: UnitCountPattern(
           _locale,
           '天',
+          one: '{0} day',
           other: '{0}天',
         ),
         narrow: UnitCountPattern(
           _locale,
           '天',
+          one: '{0}d',
           other: '{0}天',
         ),
       );
@@ -3436,16 +4685,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '小时',
+          one: '{0} hour',
           other: '{0}小时',
         ),
         short: UnitCountPattern(
           _locale,
           '小时',
+          one: '{0} hr',
           other: '{0}小时',
         ),
         narrow: UnitCountPattern(
           _locale,
           '小时',
+          one: '{0}h',
           other: '{0}小时',
         ),
       );
@@ -3455,16 +4707,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '分钟',
+          one: '{0} minute',
           other: '{0}分钟',
         ),
         short: UnitCountPattern(
           _locale,
           '分钟',
+          one: '{0} min',
           other: '{0}分钟',
         ),
         narrow: UnitCountPattern(
           _locale,
           '分钟',
+          one: '{0}m',
           other: '{0}分钟',
         ),
       );
@@ -3474,16 +4729,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '秒钟',
+          one: '{0} second',
           other: '{0}秒钟',
         ),
         short: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0} sec',
           other: '{0}秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒',
+          one: '{0}s',
           other: '{0}秒',
         ),
       );
@@ -3493,16 +4751,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫秒',
+          one: '{0} millisecond',
           other: '{0}毫秒',
         ),
         short: UnitCountPattern(
           _locale,
           '毫秒',
+          one: '{0} ms',
           other: '{0}毫秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '毫秒',
+          one: '{0}ms',
           other: '{0}ms',
         ),
       );
@@ -3512,16 +4773,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '微秒',
+          one: '{0} microsecond',
           other: '{0}微秒',
         ),
         short: UnitCountPattern(
           _locale,
           '微秒',
+          one: '{0} μs',
           other: '{0}微秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
+          one: '{0}μs',
           other: '{0}μs',
         ),
       );
@@ -3531,16 +4795,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '纳秒',
+          one: '{0} nanosecond',
           other: '{0}纳秒',
         ),
         short: UnitCountPattern(
           _locale,
           '纳秒',
+          one: '{0} ns',
           other: '{0}纳秒',
         ),
         narrow: UnitCountPattern(
           _locale,
           '纳秒',
+          one: '{0}ns',
           other: '{0}ns',
         ),
       );
@@ -3550,16 +4817,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '安培',
+          one: '{0} ampere',
           other: '{0}安培',
         ),
         short: UnitCountPattern(
           _locale,
           'A',
+          one: '{0} A',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
+          one: '{0}A',
           other: '{0}A',
         ),
       );
@@ -3569,16 +4839,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫安',
+          one: '{0} milliampere',
           other: '{0}毫安',
         ),
         short: UnitCountPattern(
           _locale,
           'mA',
+          one: '{0} mA',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
+          one: '{0}mA',
           other: '{0}mA',
         ),
       );
@@ -3588,16 +4861,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '欧姆',
+          one: '{0} ohm',
           other: '{0}欧姆',
         ),
         short: UnitCountPattern(
           _locale,
           'Ω',
+          one: '{0} Ω',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
+          one: '{0}Ω',
           other: '{0}Ω',
         ),
       );
@@ -3607,16 +4883,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '伏特',
+          one: '{0} volt',
           other: '{0}伏特',
         ),
         short: UnitCountPattern(
           _locale,
           'V',
+          one: '{0} V',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
+          one: '{0}V',
           other: '{0}V',
         ),
       );
@@ -3626,16 +4905,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千卡',
+          one: '{0} kilocalorie',
           other: '{0}千卡',
         ),
         short: UnitCountPattern(
           _locale,
           '千卡',
+          one: '{0} kcal',
           other: '{0}千卡',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
+          one: '{0}kcal',
           other: '{0}kcal',
         ),
       );
@@ -3645,16 +4927,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '卡路里',
+          one: '{0} calorie',
           other: '{0}卡路里',
         ),
         short: UnitCountPattern(
           _locale,
           '卡',
+          one: '{0} cal',
           other: '{0}卡',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
+          one: '{0}cal',
           other: '{0}cal',
         ),
       );
@@ -3663,17 +4948,20 @@ class UnitsZh implements Units {
   Unit get energyFoodcalorie => Unit(
         long: UnitCountPattern(
           _locale,
-          '卡路里',
-          other: '{0}卡路里',
+          '大卡',
+          one: '{0} Calorie',
+          other: '{0}大卡',
         ),
         short: UnitCountPattern(
           _locale,
           '大卡',
-          other: '{0}大卡',
+          one: '{0} Cal',
+          other: '{0} Cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Cal',
+          one: '{0}Cal',
           other: '{0}Cal',
         ),
       );
@@ -3683,16 +4971,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千焦',
+          one: '{0} kilojoule',
           other: '{0}千焦',
         ),
         short: UnitCountPattern(
           _locale,
           '千焦',
+          one: '{0} kJ',
           other: '{0}千焦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
+          one: '{0}kJ',
           other: '{0}kJ',
         ),
       );
@@ -3702,16 +4993,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '焦耳',
+          one: '{0} joule',
           other: '{0}焦耳',
         ),
         short: UnitCountPattern(
           _locale,
           '焦耳',
+          one: '{0} J',
           other: '{0}焦耳',
         ),
         narrow: UnitCountPattern(
           _locale,
           '焦耳',
+          one: '{0}J',
           other: '{0}J',
         ),
       );
@@ -3721,16 +5015,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千瓦时',
+          one: '{0} kilowatt hour',
           other: '{0}千瓦时',
         ),
         short: UnitCountPattern(
           _locale,
           '千瓦时',
+          one: '{0} kWh',
           other: '{0}千瓦时',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
+          one: '{0}kWh',
           other: '{0}kWh',
         ),
       );
@@ -3740,16 +5037,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '电子伏特',
+          one: '{0} electronvolt',
           other: '{0}电子伏特',
         ),
         short: UnitCountPattern(
           _locale,
           '电子伏',
+          one: '{0} eV',
           other: '{0}电子伏',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
+          one: '{0}eV',
           other: '{0}eV',
         ),
       );
@@ -3759,16 +5059,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英热单位',
+          one: '{0} British thermal unit',
           other: '{0}英热单位',
         ),
         short: UnitCountPattern(
           _locale,
           '英热单位',
+          one: '{0} Btu',
           other: '{0}英热单位',
         ),
         narrow: UnitCountPattern(
           _locale,
           'BTU',
+          one: '{0}Btu',
           other: '{0}Btu',
         ),
       );
@@ -3778,16 +5081,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '美制克卡',
+          one: '{0} US therm',
           other: '{0}美制克卡',
         ),
         short: UnitCountPattern(
           _locale,
           '美制克卡',
+          one: '{0} US therm',
           other: '{0}美制克卡',
         ),
         narrow: UnitCountPattern(
           _locale,
           '美制克卡',
+          one: '{0}US therm',
           other: '{0}美制克卡',
         ),
       );
@@ -3797,16 +5103,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅力',
+          one: '{0} pound of force',
           other: '{0}磅力',
         ),
         short: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0} lbf',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0}lbf',
           other: '{0}lbf',
         ),
       );
@@ -3816,16 +5125,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '牛顿',
+          one: '{0} newton',
           other: '{0}牛顿',
         ),
         short: UnitCountPattern(
           _locale,
           '牛',
+          one: '{0} N',
           other: '{0}牛',
         ),
         narrow: UnitCountPattern(
           _locale,
           '牛',
+          one: '{0}N',
           other: '{0}牛',
         ),
       );
@@ -3835,16 +5147,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千瓦时/100千米',
+          one: '{0} kilowatt-hour per 100 kilometers',
           other: '{0}千瓦时/100千米',
         ),
         short: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0} kWh/100km',
           other: '{0} kWh/100km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh/100km',
+          one: '{0}kWh/100km',
           other: '{0}kWh/100km',
         ),
       );
@@ -3854,16 +5169,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉赫',
+          one: '{0} gigahertz',
           other: '{0}吉赫',
         ),
         short: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0} GHz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
+          one: '{0}GHz',
           other: '{0}GHz',
         ),
       );
@@ -3873,16 +5191,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆赫',
+          one: '{0} megahertz',
           other: '{0}兆赫',
         ),
         short: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0} MHz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
+          one: '{0}MHz',
           other: '{0}MHz',
         ),
       );
@@ -3892,16 +5213,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千赫',
+          one: '{0} kilohertz',
           other: '{0}千赫',
         ),
         short: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0} kHz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0}kHz',
           other: '{0}kHz',
         ),
       );
@@ -3911,16 +5235,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '赫兹',
+          one: '{0} hertz',
           other: '{0}赫兹',
         ),
         short: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0} Hz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
+          one: '{0}Hz',
           other: '{0}Hz',
         ),
       );
@@ -3930,16 +5257,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
           other: '{0} em',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
+          one: '{0}em',
           other: '{0}em',
         ),
       );
@@ -3949,16 +5279,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '像素',
+          one: '{0} pixel',
           other: '{0}像素',
         ),
         short: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} px',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
+          one: '{0}px',
           other: '{0}px',
         ),
       );
@@ -3968,16 +5301,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '百万像素',
+          one: '{0} megapixel',
           other: '{0}百万像素',
         ),
         short: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0} MP',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0}MP',
           other: '{0}MP',
         ),
       );
@@ -3987,16 +5323,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '像素/厘米',
-          other: '{0} 像素/厘米',
+          one: '{0} pixel per centimeter',
+          other: '{0}像素/厘米',
         ),
         short: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0} ppcm',
           other: '{0} ppcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppcm',
+          one: '{0}ppcm',
           other: '{0}ppcm',
         ),
       );
@@ -4006,16 +5345,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '像素/英寸',
-          other: '{0} 像素/英寸',
+          one: '{0} pixel per inch',
+          other: '{0}像素/英寸',
         ),
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} ppi',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0}ppi',
           other: '{0}ppi',
         ),
       );
@@ -4025,16 +5367,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '点/厘米',
-          other: '{0} 点/厘米',
+          one: '{0} dot per centimeter',
+          other: '{0}点/厘米',
         ),
         short: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0} dpcm',
           other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpcm',
+          one: '{0}dpcm',
           other: '{0}dpcm',
         ),
       );
@@ -4044,17 +5389,20 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '点/英寸',
+          one: '{0} dot per inch',
           other: '{0}点/英寸',
         ),
         short: UnitCountPattern(
           _locale,
           'dpi',
+          one: '{0} dpi',
           other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dpi',
-          other: '{0} dpi',
+          one: '{0}dpi',
+          other: '{0}dpi',
         ),
       );
 
@@ -4063,16 +5411,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '点',
+          one: '{0} dot',
           other: '{0}点',
         ),
         short: UnitCountPattern(
           _locale,
           '点',
+          one: '{0} dot',
           other: '{0}点',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'dot',
+          '点',
+          one: '{0}dot',
           other: '{0}dot',
         ),
       );
@@ -4082,16 +5433,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '地球半径',
+          one: '{0} earth radius',
           other: '{0}地球半径',
         ),
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} R⊕',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0}R⊕',
           other: '{0}R⊕',
         ),
       );
@@ -4101,16 +5455,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公里',
+          one: '{0} kilometer',
           other: '{0}公里',
         ),
         short: UnitCountPattern(
           _locale,
           '公里',
+          one: '{0} km',
           other: '{0}公里',
         ),
         narrow: UnitCountPattern(
           _locale,
           '公里',
+          one: '{0}km',
           other: '{0}公里',
         ),
       );
@@ -4120,16 +5477,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '米',
+          one: '{0} meter',
           other: '{0}米',
         ),
         short: UnitCountPattern(
           _locale,
           '米',
+          one: '{0} m',
           other: '{0}米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米',
+          one: '{0}m',
           other: '{0}米',
         ),
       );
@@ -4139,16 +5499,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '分米',
+          one: '{0} decimeter',
           other: '{0}分米',
         ),
         short: UnitCountPattern(
           _locale,
           '分米',
+          one: '{0} dm',
           other: '{0}分米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dm',
+          one: '{0}dm',
           other: '{0}dm',
         ),
       );
@@ -4158,16 +5521,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '厘米',
+          one: '{0} centimeter',
           other: '{0}厘米',
         ),
         short: UnitCountPattern(
           _locale,
           '厘米',
+          one: '{0} cm',
           other: '{0}厘米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '厘米',
+          one: '{0}cm',
           other: '{0}厘米',
         ),
       );
@@ -4177,16 +5543,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫米',
+          one: '{0} millimeter',
           other: '{0}毫米',
         ),
         short: UnitCountPattern(
           _locale,
           '毫米',
+          one: '{0} mm',
           other: '{0}毫米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '毫米',
+          one: '{0}mm',
           other: '{0}毫米',
         ),
       );
@@ -4196,16 +5565,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '微米',
+          one: '{0} micrometer',
           other: '{0}微米',
         ),
         short: UnitCountPattern(
           _locale,
           '微米',
+          one: '{0} μm',
           other: '{0}微米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
+          one: '{0}μm',
           other: '{0}μm',
         ),
       );
@@ -4215,16 +5587,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '纳米',
+          one: '{0} nanometer',
           other: '{0}纳米',
         ),
         short: UnitCountPattern(
           _locale,
           '纳米',
+          one: '{0} nm',
           other: '{0}纳米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
+          one: '{0}nm',
           other: '{0}nm',
         ),
       );
@@ -4234,16 +5609,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '皮米',
+          one: '{0} picometer',
           other: '{0}皮米',
         ),
         short: UnitCountPattern(
           _locale,
           '皮米',
+          one: '{0} pm',
           other: '{0}皮米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
+          one: '{0}pm',
           other: '{0}pm',
         ),
       );
@@ -4253,16 +5631,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里',
+          one: '{0} mile',
           other: '{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           '英里',
+          one: '{0} mi',
           other: '{0}英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi',
+          one: '{0}mi',
           other: '{0}mi',
         ),
       );
@@ -4272,16 +5653,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '码',
+          one: '{0} yard',
           other: '{0}码',
         ),
         short: UnitCountPattern(
           _locale,
           '码',
+          one: '{0} yd',
           other: '{0}码',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd',
+          one: '{0}yd',
           other: '{0}yd',
         ),
       );
@@ -4291,16 +5675,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英尺',
+          one: '{0} foot',
           other: '{0}英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '英尺',
+          one: '{0} ft',
           other: '{0}英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft',
+          one: '{0}′',
           other: '{0}′',
         ),
       );
@@ -4310,16 +5697,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英寸',
+          one: '{0} inch',
           other: '{0}英寸',
         ),
         short: UnitCountPattern(
           _locale,
           '英寸',
+          one: '{0} in',
           other: '{0}英寸',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in',
+          one: '{0}″',
           other: '{0}″',
         ),
       );
@@ -4329,16 +5719,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '秒差距',
+          one: '{0} parsec',
           other: '{0}秒差距',
         ),
         short: UnitCountPattern(
           _locale,
           '秒差距',
+          one: '{0} pc',
           other: '{0}秒差距',
         ),
         narrow: UnitCountPattern(
           _locale,
           '秒差距',
+          one: '{0}pc',
           other: '{0}pc',
         ),
       );
@@ -4348,16 +5741,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} light year',
           other: '{0}光年',
         ),
         short: UnitCountPattern(
           _locale,
           '光年',
+          one: '{0} ly',
           other: '{0}光年',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ly',
+          one: '{0}ly',
           other: '{0}ly',
         ),
       );
@@ -4367,16 +5763,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '天文单位',
+          one: '{0} astronomical unit',
           other: '{0}天文单位',
         ),
         short: UnitCountPattern(
           _locale,
           '天文单位',
+          one: '{0} au',
           other: '{0}天文单位',
         ),
         narrow: UnitCountPattern(
           _locale,
           'au',
+          one: '{0}au',
           other: '{0}au',
         ),
       );
@@ -4386,16 +5785,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '弗隆',
+          one: '{0} furlong',
           other: '{0}弗隆',
         ),
         short: UnitCountPattern(
           _locale,
           '弗隆',
+          one: '{0} fur',
           other: '{0}弗隆',
         ),
         narrow: UnitCountPattern(
           _locale,
           '弗隆',
+          one: '{0}fur',
           other: '{0}fur',
         ),
       );
@@ -4405,16 +5807,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英寻',
+          one: '{0} fathom',
           other: '{0}英寻',
         ),
         short: UnitCountPattern(
           _locale,
           '英寻',
+          one: '{0} fth',
           other: '{0}英寻',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英寻',
+          one: '{0}fth',
           other: '{0}fth',
         ),
       );
@@ -4424,16 +5829,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nautical mile',
           other: '{0}海里',
         ),
         short: UnitCountPattern(
           _locale,
           '海里',
+          one: '{0} nmi',
           other: '{0}海里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nmi',
+          one: '{0}nmi',
           other: '{0}nmi',
         ),
       );
@@ -4443,16 +5851,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '斯堪的纳维亚英里',
+          one: '{0} mile-scandinavian',
           other: '{0}斯堪的纳维亚英里',
         ),
         short: UnitCountPattern(
           _locale,
           '斯堪的纳维亚英里',
+          one: '{0} smi',
           other: '{0}斯堪的纳维亚英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'smi',
+          one: '{0}smi',
           other: '{0}smi',
         ),
       );
@@ -4462,16 +5873,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0} point',
           other: '{0} pt',
         ),
         short: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0} pt',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -4481,16 +5895,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太阳半径',
+          one: '{0} solar radius',
           other: '{0}太阳半径',
         ),
         short: UnitCountPattern(
           _locale,
           '太阳半径',
+          one: '{0} R☉',
           other: '{0}太阳半径',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0}R☉',
           other: '{0}R☉',
         ),
       );
@@ -4500,16 +5917,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '勒克斯',
+          one: '{0} lux',
           other: '{0}勒克斯',
         ),
         short: UnitCountPattern(
           _locale,
           'lx',
+          one: '{0} lx',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lx',
+          one: '{0}lx',
           other: '{0}lx',
         ),
       );
@@ -4519,16 +5939,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '坎德拉',
+          one: '{0} candela',
           other: '{0}坎德拉',
         ),
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} cd',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0}cd',
           other: '{0}cd',
         ),
       );
@@ -4538,16 +5961,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '流明',
+          one: '{0} lumen',
           other: '{0}流明',
         ),
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lm',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0}lm',
           other: '{0}lm',
         ),
       );
@@ -4557,16 +5983,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太阳光度',
+          one: '{0} solar luminosity',
           other: '{0}太阳光度',
         ),
         short: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} L☉',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0}L☉',
           other: '{0}L☉',
         ),
       );
@@ -4576,16 +6005,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公吨',
+          one: '{0} metric ton',
           other: '{0}公吨',
         ),
         short: UnitCountPattern(
           _locale,
           't',
+          one: '{0} t',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
+          one: '{0}t',
           other: '{0}t',
         ),
       );
@@ -4595,16 +6027,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千克',
+          one: '{0} kilogram',
           other: '{0}千克',
         ),
         short: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0} kg',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
+          one: '{0}kg',
           other: '{0}kg',
         ),
       );
@@ -4614,16 +6049,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '克',
+          one: '{0} gram',
           other: '{0}克',
         ),
         short: UnitCountPattern(
           _locale,
           '克',
+          one: '{0} g',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
+          one: '{0}g',
           other: '{0}g',
         ),
       );
@@ -4633,16 +6071,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫克',
+          one: '{0} milligram',
           other: '{0}毫克',
         ),
         short: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0} mg',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
+          one: '{0}mg',
           other: '{0}mg',
         ),
       );
@@ -4652,16 +6093,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '微克',
+          one: '{0} microgram',
           other: '{0}微克',
         ),
         short: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0} μg',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
+          one: '{0}μg',
           other: '{0}μg',
         ),
       );
@@ -4671,16 +6115,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吨',
+          one: '{0} ton',
           other: '{0}吨',
         ),
         short: UnitCountPattern(
           _locale,
           'tn',
+          one: '{0} tn',
           other: '{0} tn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tn',
+          one: '{0}tn',
           other: '{0}tn',
         ),
       );
@@ -4690,16 +6137,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英石',
+          one: '{0} stone',
           other: '{0}英石',
         ),
         short: UnitCountPattern(
           _locale,
           '英石',
+          one: '{0} st',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英石',
+          one: '{0}st',
           other: '{0}st',
         ),
       );
@@ -4709,16 +6159,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅',
+          one: '{0} pound',
           other: '{0}磅',
         ),
         short: UnitCountPattern(
           _locale,
           'lb',
+          one: '{0} lb',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lb',
+          one: '{0}#',
           other: '{0}#',
         ),
       );
@@ -4728,16 +6181,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '盎司',
+          one: '{0} ounce',
           other: '{0}盎司',
         ),
         short: UnitCountPattern(
           _locale,
           'oz',
+          one: '{0} oz',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz',
+          one: '{0}oz',
           other: '{0}oz',
         ),
       );
@@ -4747,16 +6203,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '金衡制盎司',
+          one: '{0} troy ounce',
           other: '{0}金衡制盎司',
         ),
         short: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0} oz t',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
+          one: '{0}oz t',
           other: '{0}oz t',
         ),
       );
@@ -4766,16 +6225,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '克拉',
+          one: '{0} carat',
           other: '{0}克拉',
         ),
         short: UnitCountPattern(
           _locale,
           'CD',
+          one: '{0} CD',
           other: '{0} CD',
         ),
         narrow: UnitCountPattern(
           _locale,
           'CD',
+          one: '{0}CD',
           other: '{0}CD',
         ),
       );
@@ -4785,16 +6247,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '道尔顿',
+          one: '{0} dalton',
           other: '{0}道尔顿',
         ),
         short: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0} Da',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0}Da',
           other: '{0}Da',
         ),
       );
@@ -4804,16 +6269,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '地球质量',
+          one: '{0} Earth mass',
           other: '{0}地球质量',
         ),
         short: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} M⊕',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0}M⊕',
           other: '{0}M⊕',
         ),
       );
@@ -4823,16 +6291,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '太阳质量',
+          one: '{0} solar mass',
           other: '{0}太阳质量',
         ),
         short: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} M☉',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0}M☉',
           other: '{0}M☉',
         ),
       );
@@ -4842,16 +6313,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '格令',
+          one: '{0} grain',
           other: '{0}格令',
         ),
         short: UnitCountPattern(
           _locale,
           'gr',
+          one: '{0} gr',
           other: '{0} gr',
         ),
         narrow: UnitCountPattern(
           _locale,
           'gr',
+          one: '{0}gr',
           other: '{0}gr',
         ),
       );
@@ -4861,16 +6335,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '吉瓦',
+          one: '{0} gigawatt',
           other: '{0}吉瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '吉瓦',
+          one: '{0} GW',
           other: '{0}吉瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
+          one: '{0}GW',
           other: '{0}GW',
         ),
       );
@@ -4880,16 +6357,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆瓦',
+          one: '{0} megawatt',
           other: '{0}兆瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '兆瓦',
+          one: '{0} MW',
           other: '{0}兆瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
+          one: '{0}MW',
           other: '{0}MW',
         ),
       );
@@ -4899,16 +6379,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千瓦',
+          one: '{0} kilowatt',
           other: '{0}千瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '千瓦',
+          one: '{0} kW',
           other: '{0}千瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
+          one: '{0}kW',
           other: '{0}kW',
         ),
       );
@@ -4918,16 +6401,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '瓦特',
+          one: '{0} watt',
           other: '{0}瓦特',
         ),
         short: UnitCountPattern(
           _locale,
           '瓦特',
+          one: '{0} W',
           other: '{0}瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '瓦特',
+          'W',
+          one: '{0}W',
           other: '{0}W',
         ),
       );
@@ -4937,16 +6423,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫瓦',
+          one: '{0} milliwatt',
           other: '{0}毫瓦',
         ),
         short: UnitCountPattern(
           _locale,
           '毫瓦',
+          one: '{0} mW',
           other: '{0}毫瓦',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
+          one: '{0}mW',
           other: '{0}mW',
         ),
       );
@@ -4956,16 +6445,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '马力',
+          one: '{0} horsepower',
           other: '{0}马力',
         ),
         short: UnitCountPattern(
           _locale,
           '马力',
+          one: '{0} hp',
           other: '{0}马力',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hp',
+          one: '{0}hp',
           other: '{0}hp',
         ),
       );
@@ -4975,16 +6467,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫米汞柱',
+          one: '{0} millimeter of mercury',
           other: '{0}毫米汞柱',
         ),
         short: UnitCountPattern(
           _locale,
           'mmHg',
+          one: '{0} mmHg',
           other: '{0} mmHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mmHg',
+          one: '{0}mmHg',
           other: '{0}mmHg',
         ),
       );
@@ -4994,16 +6489,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅/平方英寸',
+          one: '{0} pound-force per square inch',
           other: '每平方英寸{0}磅',
         ),
         short: UnitCountPattern(
           _locale,
           'psi',
+          one: '{0} psi',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
+          one: '{0}psi',
           other: '{0}psi',
         ),
       );
@@ -5013,16 +6511,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英寸汞柱',
+          one: '{0} inch of mercury',
           other: '{0}英寸汞柱',
         ),
         short: UnitCountPattern(
           _locale,
           'inHg',
+          one: '{0} inHg',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'inHg',
+          one: '{0}″ Hg',
           other: '{0}″ Hg',
         ),
       );
@@ -5032,16 +6533,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '巴',
+          one: '{0} bar',
           other: '{0}巴',
         ),
         short: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0}bar',
           other: '{0}bar',
         ),
       );
@@ -5051,16 +6555,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫巴',
+          one: '{0} millibar',
           other: '{0}毫巴',
         ),
         short: UnitCountPattern(
           _locale,
           'mbar',
+          one: '{0} mbar',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mbar',
+          one: '{0}mb',
           other: '{0}mb',
         ),
       );
@@ -5070,16 +6577,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '标准大气压',
+          one: '{0} atmosphere',
           other: '{0}个标准大气压',
         ),
         short: UnitCountPattern(
           _locale,
           'atm',
+          one: '{0} atm',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
+          one: '{0}atm',
           other: '{0}atm',
         ),
       );
@@ -5089,16 +6599,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '帕斯卡',
+          one: '{0} pascal',
           other: '{0}帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} Pa',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0}Pa',
           other: '{0}Pa',
         ),
       );
@@ -5108,16 +6621,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '百帕斯卡',
+          one: '{0} hectopascal',
           other: '{0}百帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0} hPa',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
+          one: '{0}hPa',
           other: '{0}hPa',
         ),
       );
@@ -5127,16 +6643,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '千帕斯卡',
+          one: '{0} kilopascal',
           other: '{0}千帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} kPa',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0}kPa',
           other: '{0}kPa',
         ),
       );
@@ -5146,16 +6665,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆帕斯卡',
+          one: '{0} megapascal',
           other: '{0}兆帕斯卡',
         ),
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} MPa',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0}MPa',
           other: '{0}MPa',
         ),
       );
@@ -5165,16 +6687,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公里/小时',
+          one: '{0} kilometer per hour',
           other: '每小时{0}公里',
         ),
         short: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0} km/h',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
+          one: '{0}km/h',
           other: '{0}km/h',
         ),
       );
@@ -5184,16 +6709,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '米/秒',
+          one: '{0} meter per second',
           other: '每秒{0}米',
         ),
         short: UnitCountPattern(
           _locale,
           'm/s',
+          one: '{0} m/s',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           '米/秒',
+          one: '{0}m/s',
           other: '{0}m/s',
         ),
       );
@@ -5203,16 +6731,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英里/小时',
+          one: '{0} mile per hour',
           other: '每小时{0}英里',
         ),
         short: UnitCountPattern(
           _locale,
           'mi/h',
+          one: '{0} mph',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi/hr',
+          one: '{0}mph',
           other: '{0}mph',
         ),
       );
@@ -5222,17 +6753,42 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '节',
+          one: '{0} knot',
           other: '{0}节',
         ),
         short: UnitCountPattern(
           _locale,
           'kn',
+          one: '{0} kn',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kn',
+          one: '{0}kn',
           other: '{0}kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '蒲福风级',
+          one: 'Beaufort {0}',
+          other: '{0}级',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'B {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'B{0}',
+          other: 'B{0}',
         ),
       );
 
@@ -5241,16 +6797,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '°',
+          one: '{0} degree temperature',
           other: '{0}°',
         ),
         short: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
+          one: '{0}°',
           other: '{0}°',
         ),
       );
@@ -5260,16 +6819,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '摄氏度',
+          one: '{0} degree Celsius',
           other: '{0}摄氏度',
         ),
         short: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°C',
+          one: '{0}°C',
           other: '{0}°C',
         ),
       );
@@ -5279,16 +6841,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '华氏度',
+          one: '{0} degree Fahrenheit',
           other: '{0}华氏度',
         ),
         short: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°F',
           other: '{0}°F',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°F',
+          one: '{0}°',
           other: '{0}°F',
         ),
       );
@@ -5298,16 +6863,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '开尔文',
+          one: '{0} kelvin',
           other: '{0}开尔文',
         ),
         short: UnitCountPattern(
           _locale,
           'K',
+          one: '{0} K',
           other: '{0}K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
+          one: '{0}K',
           other: '{0}K',
         ),
       );
@@ -5317,16 +6885,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '磅英尺',
+          one: '{0} pound-force-foot',
           other: '{0}磅英尺',
         ),
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0} lbf⋅ft',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0}lbf⋅ft',
           other: '{0}lbf⋅ft',
         ),
       );
@@ -5336,16 +6907,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '牛顿米',
+          one: '{0} newton-meter',
           other: '{0}牛顿米',
         ),
         short: UnitCountPattern(
           _locale,
           '牛米',
+          one: '{0} N⋅m',
           other: '{0}牛米',
         ),
         narrow: UnitCountPattern(
           _locale,
           '牛米',
+          one: '{0}N⋅m',
           other: '{0}牛米',
         ),
       );
@@ -5355,16 +6929,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方千米',
+          one: '{0} cubic kilometer',
           other: '{0}立方千米',
         ),
         short: UnitCountPattern(
           _locale,
           '立方千米',
+          one: '{0} km³',
           other: '{0}立方千米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
+          one: '{0}km³',
           other: '{0}km³',
         ),
       );
@@ -5374,16 +6951,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方米',
+          one: '{0} cubic meter',
           other: '{0}立方米',
         ),
         short: UnitCountPattern(
           _locale,
           '立方米',
+          one: '{0} m³',
           other: '{0}立方米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
+          one: '{0}m³',
           other: '{0}m³',
         ),
       );
@@ -5393,16 +6973,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方厘米',
+          one: '{0} cubic centimeter',
           other: '{0}立方厘米',
         ),
         short: UnitCountPattern(
           _locale,
           '立方厘米',
+          one: '{0} cm³',
           other: '{0}立方厘米',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
+          one: '{0}cm³',
           other: '{0}cm³',
         ),
       );
@@ -5412,16 +6995,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方英里',
+          one: '{0} cubic mile',
           other: '{0}立方英里',
         ),
         short: UnitCountPattern(
           _locale,
           '立方英里',
+          one: '{0} mi³',
           other: '{0}立方英里',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
+          one: '{0}mi³',
           other: '{0}mi³',
         ),
       );
@@ -5431,16 +7017,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方码',
+          one: '{0} cubic yard',
           other: '{0}立方码',
         ),
         short: UnitCountPattern(
           _locale,
           '立方码',
+          one: '{0} yd³',
           other: '{0}立方码',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
+          one: '{0}yd³',
           other: '{0}yd³',
         ),
       );
@@ -5450,16 +7039,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方英尺',
+          one: '{0} cubic foot',
           other: '{0}立方英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '立方英尺',
+          one: '{0} ft³',
           other: '{0}立方英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
+          one: '{0}ft³',
           other: '{0}ft³',
         ),
       );
@@ -5469,16 +7061,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '立方英寸',
+          one: '{0} cubic inch',
           other: '{0}立方英寸',
         ),
         short: UnitCountPattern(
           _locale,
           '立方英寸',
+          one: '{0} in³',
           other: '{0}立方英寸',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
+          one: '{0}in³',
           other: '{0}in³',
         ),
       );
@@ -5488,16 +7083,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '兆升',
+          one: '{0} megaliter',
           other: '{0}兆升',
         ),
         short: UnitCountPattern(
           _locale,
           '兆升',
+          one: '{0} ML',
           other: '{0}兆升',
         ),
         narrow: UnitCountPattern(
           _locale,
           '兆升',
+          one: '{0}ML',
           other: '{0}兆升',
         ),
       );
@@ -5507,16 +7105,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公石',
+          one: '{0} hectoliter',
           other: '{0}公石',
         ),
         short: UnitCountPattern(
           _locale,
           '公石',
+          one: '{0} hL',
           other: '{0}公石',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hL',
+          one: '{0}hL',
           other: '{0}hL',
         ),
       );
@@ -5526,16 +7127,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '升',
+          one: '{0} liter',
           other: '{0}升',
         ),
         short: UnitCountPattern(
           _locale,
           '升',
+          one: '{0} L',
           other: '{0}升',
         ),
         narrow: UnitCountPattern(
           _locale,
           '升',
+          one: '{0}L',
           other: '{0}升',
         ),
       );
@@ -5545,16 +7149,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '分升',
+          one: '{0} deciliter',
           other: '{0}分升',
         ),
         short: UnitCountPattern(
           _locale,
           '分升',
+          one: '{0} dL',
           other: '{0}分升',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dL',
+          one: '{0}dL',
           other: '{0}dL',
         ),
       );
@@ -5564,16 +7171,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '厘升',
+          one: '{0} centiliter',
           other: '{0}厘升',
         ),
         short: UnitCountPattern(
           _locale,
           '厘升',
+          one: '{0} cL',
           other: '{0}厘升',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cL',
+          one: '{0}cL',
           other: '{0}cL',
         ),
       );
@@ -5583,16 +7193,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '毫升',
+          one: '{0} milliliter',
           other: '{0}毫升',
         ),
         short: UnitCountPattern(
           _locale,
           '毫升',
+          one: '{0} mL',
           other: '{0}毫升',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mL',
+          one: '{0}mL',
           other: '{0}mL',
         ),
       );
@@ -5602,16 +7215,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公制品脱',
+          one: '{0} metric pint',
           other: '{0}公制品脱',
         ),
         short: UnitCountPattern(
           _locale,
           '公制品脱',
+          one: '{0} mpt',
           other: '{0}公制品脱',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}mpt',
           other: '{0}mpt',
         ),
       );
@@ -5621,16 +7237,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '公制杯',
+          one: '{0} metric cup',
           other: '{0}公制杯',
         ),
         short: UnitCountPattern(
           _locale,
           '公制杯',
+          one: '{0} mc',
           other: '{0}公制杯',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mcup',
+          one: '{0}mc',
           other: '{0}mc',
         ),
       );
@@ -5640,16 +7259,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英亩英尺',
+          one: '{0} acre-foot',
           other: '{0}英亩英尺',
         ),
         short: UnitCountPattern(
           _locale,
           '英亩英尺',
+          one: '{0} ac ft',
           other: '{0}英亩英尺',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英亩英尺',
+          one: '{0}ac ft',
           other: '{0}ac ft',
         ),
       );
@@ -5659,16 +7281,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '蒲式耳',
+          one: '{0} bushel',
           other: '{0}蒲式耳',
         ),
         short: UnitCountPattern(
           _locale,
           '蒲式耳',
+          one: '{0} bu',
           other: '{0}蒲式耳',
         ),
         narrow: UnitCountPattern(
           _locale,
           '蒲式耳',
+          one: '{0}bu',
           other: '{0}bu',
         ),
       );
@@ -5678,16 +7303,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '加仑',
+          one: '{0} gallon',
           other: '{0}加仑',
         ),
         short: UnitCountPattern(
           _locale,
           '加仑',
+          one: '{0} gal',
           other: '{0}加仑',
         ),
         narrow: UnitCountPattern(
           _locale,
           'gal',
+          one: '{0}gal',
           other: '{0}gal',
         ),
       );
@@ -5697,16 +7325,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制加仑',
+          one: '{0} Imp. gallon',
           other: '{0}英制加仑',
         ),
         short: UnitCountPattern(
           _locale,
           '英制加仑',
+          one: '{0} gal Imp.',
           other: '{0}英制加仑',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制加仑',
+          one: '{0}galIm',
           other: '{0}galIm',
         ),
       );
@@ -5716,16 +7347,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '夸脱',
+          one: '{0} quart',
           other: '{0}夸脱',
         ),
         short: UnitCountPattern(
           _locale,
           '夸脱',
+          one: '{0} qt',
           other: '{0}夸脱',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
+          one: '{0}qt',
           other: '{0}qt',
         ),
       );
@@ -5735,16 +7369,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '品脱',
+          one: '{0} pint',
           other: '{0}品脱',
         ),
         short: UnitCountPattern(
           _locale,
           '品脱',
+          one: '{0} pt',
           other: '{0}品脱',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
+          one: '{0}pt',
           other: '{0}pt',
         ),
       );
@@ -5754,16 +7391,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '杯',
+          one: '{0} cup',
           other: '{0}杯',
         ),
         short: UnitCountPattern(
           _locale,
           '杯',
+          one: '{0} c',
           other: '{0}杯',
         ),
         narrow: UnitCountPattern(
           _locale,
           '杯',
+          one: '{0}c',
           other: '{0}c',
         ),
       );
@@ -5773,16 +7413,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '液盎司',
+          one: '{0} fluid ounce',
           other: '{0}液盎司',
         ),
         short: UnitCountPattern(
           _locale,
           '液盎司',
+          one: '{0} fl oz',
           other: '{0}液盎司',
         ),
         narrow: UnitCountPattern(
           _locale,
           '液盎司',
+          one: '{0}fl oz',
           other: '{0}fl oz',
         ),
       );
@@ -5792,16 +7435,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制液盎司',
+          one: '{0} Imp. fluid ounce',
           other: '{0}英制液盎司',
         ),
         short: UnitCountPattern(
           _locale,
           '英制液盎司',
+          one: '{0} fl oz Imp.',
           other: '{0}英制液盎司',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制液盎司',
+          one: '{0}fl oz Im',
           other: '{0}fl oz Im',
         ),
       );
@@ -5811,16 +7457,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '汤匙',
+          one: '{0} tablespoon',
           other: '{0}汤匙',
         ),
         short: UnitCountPattern(
           _locale,
           '汤匙',
+          one: '{0} tbsp',
           other: '{0}汤匙',
         ),
         narrow: UnitCountPattern(
           _locale,
           '汤匙',
+          one: '{0}tbsp',
           other: '{0}tbsp',
         ),
       );
@@ -5830,16 +7479,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '茶匙',
+          one: '{0} teaspoon',
           other: '{0}茶匙',
         ),
         short: UnitCountPattern(
           _locale,
           '茶匙',
+          one: '{0} tsp',
           other: '{0}茶匙',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tsp',
+          one: '{0}tsp',
           other: '{0}tsp',
         ),
       );
@@ -5849,16 +7501,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '桶',
+          one: '{0} barrel',
           other: '{0}桶',
         ),
         short: UnitCountPattern(
           _locale,
           '桶',
+          one: '{0} bbl',
           other: '{0}桶',
         ),
         narrow: UnitCountPattern(
           _locale,
           '桶',
+          one: '{0}bbl',
           other: '{0}bbl',
         ),
       );
@@ -5868,16 +7523,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '甜点匙',
+          one: '{0} dessert spoon',
           other: '{0}甜点匙',
         ),
         short: UnitCountPattern(
           _locale,
           '甜点匙',
+          one: '{0} dsp',
           other: '{0}甜点匙',
         ),
         narrow: UnitCountPattern(
           _locale,
           '甜点匙',
+          one: '{0}dsp',
           other: '{0}dsp',
         ),
       );
@@ -5887,16 +7545,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制甜点匙',
+          one: '{0} Imp. dessert spoon',
           other: '{0}英制甜点匙',
         ),
         short: UnitCountPattern(
           _locale,
           'dstspn Imp',
+          one: '{0} dsp-Imp.',
           other: '{0} dstspn Imp',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制甜点匙',
+          one: '{0}dsp-Imp',
           other: '{0}dsp-Imp',
         ),
       );
@@ -5906,16 +7567,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} drop',
           other: '{0}滴',
         ),
         short: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0} dr',
           other: '{0}滴',
         ),
         narrow: UnitCountPattern(
           _locale,
           '滴',
+          one: '{0}dr',
           other: '{0}dr',
         ),
       );
@@ -5925,16 +7589,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '打兰',
+          one: '{0} dram',
           other: '{0}打兰',
         ),
         short: UnitCountPattern(
           _locale,
           '液量打兰',
+          one: '{0} dram',
           other: '{0}液量打兰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '液量打兰',
+          one: '{0}fl.dr.',
           other: '{0}fl.dr.',
         ),
       );
@@ -5944,16 +7611,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '量杯',
+          one: '{0} jigger',
           other: '{0}量杯',
         ),
         short: UnitCountPattern(
           _locale,
           '量杯',
+          one: '{0} jigger',
           other: '{0}量杯',
         ),
         narrow: UnitCountPattern(
           _locale,
           '量杯',
+          one: '{0}jigger',
           other: '{0}jigger',
         ),
       );
@@ -5963,16 +7633,19 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '撮',
+          one: '{0} pinch',
           other: '{0}撮',
         ),
         short: UnitCountPattern(
           _locale,
           '撮',
+          one: '{0} pn',
           other: '{0}撮',
         ),
         narrow: UnitCountPattern(
           _locale,
           '撮',
+          one: '{0}pn',
           other: '{0}pn',
         ),
       );
@@ -5982,17 +7655,108 @@ class UnitsZh implements Units {
         long: UnitCountPattern(
           _locale,
           '英制夸脱',
+          one: '{0} Imp. quart',
           other: '{0}英制夸脱',
         ),
         short: UnitCountPattern(
           _locale,
           'qt Imp',
+          one: '{0} qt-Imp.',
           other: '{0} qt Imp.',
         ),
         narrow: UnitCountPattern(
           _locale,
           '英制夸脱',
+          one: '{0}qt-Imp.',
           other: '{0}qt-Imp.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0}光',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0} light',
+          other: '{0}光',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '光',
+          one: '{0}light',
+          other: '{0}光',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '十亿分比',
+          one: '{0} part per billion',
+          other: '十亿分之{0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} ppb',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0}晚',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0} night',
+          other: '{0}晚',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          '晚',
+          one: '{0}night',
+          other: '{0}晚',
         ),
       );
 }
@@ -6283,9 +8047,9 @@ class DateFieldsZh implements DateFields {
 
   @override
   MultiLength get weekday => MultiLength(
-        long: '工作日',
-        short: '工作日',
-        narrow: '工作日',
+        long: '星期',
+        short: '星期',
+        narrow: '星期',
       );
 
   @override
@@ -7169,6 +8933,10 @@ class TerritoriesZh implements Territories {
       'CP',
       '克利珀顿岛',
     ),
+    'CQ': Territory(
+      'CQ',
+      '未知地区 (CQ)',
+    ),
     'CR': Territory(
       'CR',
       '哥斯达黎加',
@@ -8023,6 +9791,2409 @@ class TerritoriesZh implements Territories {
     'ZW': Territory(
       'ZW',
       '津巴布韦',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesZh extends TimeZones {
+  TimeZonesZh._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: '{0}时间',
+            regionFormatDaylight: '{0}夏令时间',
+            regionFormatStandard: '{0}标准时间',
+            fallbackFormat: '{1}（{0}）');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Adak': TimeZoneNames(
+      exemplarCity: '埃达克',
+    ),
+    'America/Anchorage': TimeZoneNames(
+      exemplarCity: '安克雷奇',
+    ),
+    'America/Anguilla': TimeZoneNames(
+      exemplarCity: '安圭拉',
+    ),
+    'America/Antigua': TimeZoneNames(
+      exemplarCity: '安提瓜',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      exemplarCity: '阿拉瓜伊纳',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: '里奥加耶戈斯',
+    ),
+    'America/Argentina/San_Juan': TimeZoneNames(
+      exemplarCity: '圣胡安',
+    ),
+    'America/Argentina/Ushuaia': TimeZoneNames(
+      exemplarCity: '乌斯怀亚',
+    ),
+    'America/Argentina/La_Rioja': TimeZoneNames(
+      exemplarCity: '拉里奥哈',
+    ),
+    'America/Argentina/San_Luis': TimeZoneNames(
+      exemplarCity: '圣路易斯',
+    ),
+    'America/Argentina/Salta': TimeZoneNames(
+      exemplarCity: '萨尔塔',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      exemplarCity: '图库曼',
+    ),
+    'America/Aruba': TimeZoneNames(
+      exemplarCity: '阿鲁巴',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: '亚松森',
+    ),
+    'America/Bahia': TimeZoneNames(
+      exemplarCity: '巴伊亚',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: '巴伊亚班德拉斯',
+    ),
+    'America/Barbados': TimeZoneNames(
+      exemplarCity: '巴巴多斯',
+    ),
+    'America/Belem': TimeZoneNames(
+      exemplarCity: '贝伦',
+    ),
+    'America/Belize': TimeZoneNames(
+      exemplarCity: '伯利兹',
+    ),
+    'America/Blanc-Sablon': TimeZoneNames(
+      exemplarCity: '布兰克萨布隆',
+    ),
+    'America/Boa_Vista': TimeZoneNames(
+      exemplarCity: '博阿维斯塔',
+    ),
+    'America/Bogota': TimeZoneNames(
+      exemplarCity: '波哥大',
+    ),
+    'America/Boise': TimeZoneNames(
+      exemplarCity: '博伊西',
+    ),
+    'America/Buenos_Aires': TimeZoneNames(
+      exemplarCity: '布宜诺斯艾利斯',
+    ),
+    'America/Cambridge_Bay': TimeZoneNames(
+      exemplarCity: '剑桥湾',
+    ),
+    'America/Campo_Grande': TimeZoneNames(
+      exemplarCity: '大坎普',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: '坎昆',
+    ),
+    'America/Caracas': TimeZoneNames(
+      exemplarCity: '加拉加斯',
+    ),
+    'America/Catamarca': TimeZoneNames(
+      exemplarCity: '卡塔马卡',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      exemplarCity: '卡宴',
+    ),
+    'America/Cayman': TimeZoneNames(
+      exemplarCity: '开曼',
+    ),
+    'America/Chicago': TimeZoneNames(
+      exemplarCity: '芝加哥',
+    ),
+    'America/Chihuahua': TimeZoneNames(
+      exemplarCity: '奇瓦瓦',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: '华雷斯城',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: '阿蒂科肯',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      exemplarCity: '科尔多瓦',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      exemplarCity: '哥斯达黎加',
+    ),
+    'America/Creston': TimeZoneNames(
+      exemplarCity: '克雷斯顿',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      exemplarCity: '库亚巴',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: '库拉索',
+    ),
+    'America/Danmarkshavn': TimeZoneNames(
+      exemplarCity: '丹马沙文',
+    ),
+    'America/Dawson': TimeZoneNames(
+      exemplarCity: '道森',
+    ),
+    'America/Dawson_Creek': TimeZoneNames(
+      exemplarCity: '道森克里克',
+    ),
+    'America/Denver': TimeZoneNames(
+      exemplarCity: '丹佛',
+    ),
+    'America/Detroit': TimeZoneNames(
+      exemplarCity: '底特律',
+    ),
+    'America/Dominica': TimeZoneNames(
+      exemplarCity: '多米尼加',
+    ),
+    'America/Edmonton': TimeZoneNames(
+      exemplarCity: '埃德蒙顿',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      exemplarCity: '依伦尼贝',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      exemplarCity: '萨尔瓦多',
+    ),
+    'America/Fort_Nelson': TimeZoneNames(
+      exemplarCity: '纳尔逊堡',
+    ),
+    'America/Fortaleza': TimeZoneNames(
+      exemplarCity: '福塔雷萨',
+    ),
+    'America/Glace_Bay': TimeZoneNames(
+      exemplarCity: '格莱斯贝',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: '努克',
+    ),
+    'America/Goose_Bay': TimeZoneNames(
+      exemplarCity: '古斯湾',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      exemplarCity: '大特克',
+    ),
+    'America/Grenada': TimeZoneNames(
+      exemplarCity: '格林纳达',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      exemplarCity: '瓜德罗普',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      exemplarCity: '危地马拉',
+    ),
+    'America/Guayaquil': TimeZoneNames(
+      exemplarCity: '瓜亚基尔',
+    ),
+    'America/Guyana': TimeZoneNames(
+      exemplarCity: '圭亚那',
+    ),
+    'America/Halifax': TimeZoneNames(
+      exemplarCity: '哈利法克斯',
+    ),
+    'America/Havana': TimeZoneNames(
+      exemplarCity: '哈瓦那',
+    ),
+    'America/Hermosillo': TimeZoneNames(
+      exemplarCity: '埃莫西约',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: '印第安纳州温森斯',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: '印第安纳州彼得斯堡',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: '印第安纳州特尔城',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: '印第安纳州诺克斯',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: '印第安纳州威纳马克',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: '印第安纳州马伦戈',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: '印第安纳州维维市',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      exemplarCity: '印第安纳波利斯',
+    ),
+    'America/Inuvik': TimeZoneNames(
+      exemplarCity: '伊努维克',
+    ),
+    'America/Iqaluit': TimeZoneNames(
+      exemplarCity: '伊魁特',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      exemplarCity: '牙买加',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      exemplarCity: '胡胡伊',
+    ),
+    'America/Juneau': TimeZoneNames(
+      exemplarCity: '朱诺',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: '肯塔基州蒙蒂塞洛',
+    ),
+    'America/Kralendijk': TimeZoneNames(
+      exemplarCity: '克拉伦代克',
+    ),
+    'America/La_Paz': TimeZoneNames(
+      exemplarCity: '拉巴斯',
+    ),
+    'America/Lima': TimeZoneNames(
+      exemplarCity: '利马',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      exemplarCity: '洛杉矶',
+    ),
+    'America/Louisville': TimeZoneNames(
+      exemplarCity: '路易斯维尔',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: '下太子区',
+    ),
+    'America/Maceio': TimeZoneNames(
+      exemplarCity: '马塞约',
+    ),
+    'America/Managua': TimeZoneNames(
+      exemplarCity: '马那瓜',
+    ),
+    'America/Manaus': TimeZoneNames(
+      exemplarCity: '马瑙斯',
+    ),
+    'America/Marigot': TimeZoneNames(
+      exemplarCity: '马里戈特',
+    ),
+    'America/Martinique': TimeZoneNames(
+      exemplarCity: '马提尼克',
+    ),
+    'America/Matamoros': TimeZoneNames(
+      exemplarCity: '马塔莫罗斯',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      exemplarCity: '马萨特兰',
+    ),
+    'America/Mendoza': TimeZoneNames(
+      exemplarCity: '门多萨',
+    ),
+    'America/Menominee': TimeZoneNames(
+      exemplarCity: '梅诺米尼',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: '梅里达',
+    ),
+    'America/Metlakatla': TimeZoneNames(
+      exemplarCity: '梅特拉卡特拉',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      exemplarCity: '墨西哥城',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      exemplarCity: '密克隆',
+    ),
+    'America/Moncton': TimeZoneNames(
+      exemplarCity: '蒙克顿',
+    ),
+    'America/Monterrey': TimeZoneNames(
+      exemplarCity: '蒙特雷',
+    ),
+    'America/Montevideo': TimeZoneNames(
+      exemplarCity: '蒙得维的亚',
+    ),
+    'America/Montserrat': TimeZoneNames(
+      exemplarCity: '蒙特塞拉特',
+    ),
+    'America/Nassau': TimeZoneNames(
+      exemplarCity: '拿骚',
+    ),
+    'America/New_York': TimeZoneNames(
+      exemplarCity: '纽约',
+    ),
+    'America/Nome': TimeZoneNames(
+      exemplarCity: '诺姆',
+    ),
+    'America/Noronha': TimeZoneNames(
+      exemplarCity: '洛罗尼亚',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: '北达科他州比尤拉',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: '北达科他州新塞勒姆',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: '北达科他州申特',
+    ),
+    'America/Ojinaga': TimeZoneNames(
+      exemplarCity: '奥希纳加',
+    ),
+    'America/Panama': TimeZoneNames(
+      exemplarCity: '巴拿马',
+    ),
+    'America/Paramaribo': TimeZoneNames(
+      exemplarCity: '帕拉马里博',
+    ),
+    'America/Phoenix': TimeZoneNames(
+      exemplarCity: '凤凰城',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      exemplarCity: '太子港',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      exemplarCity: '西班牙港',
+    ),
+    'America/Porto_Velho': TimeZoneNames(
+      exemplarCity: '波多韦柳',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      exemplarCity: '波多黎各',
+    ),
+    'America/Punta_Arenas': TimeZoneNames(
+      exemplarCity: '蓬塔阿雷纳斯',
+    ),
+    'America/Rankin_Inlet': TimeZoneNames(
+      exemplarCity: '兰今湾',
+    ),
+    'America/Recife': TimeZoneNames(
+      exemplarCity: '累西腓',
+    ),
+    'America/Regina': TimeZoneNames(
+      exemplarCity: '里贾纳',
+    ),
+    'America/Resolute': TimeZoneNames(
+      exemplarCity: '雷索卢特',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      exemplarCity: '里奥布郎库',
+    ),
+    'America/Santarem': TimeZoneNames(
+      exemplarCity: '圣塔伦',
+    ),
+    'America/Santiago': TimeZoneNames(
+      exemplarCity: '圣地亚哥',
+    ),
+    'America/Santo_Domingo': TimeZoneNames(
+      exemplarCity: '圣多明各',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      exemplarCity: '圣保罗',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: '斯科列斯比桑德',
+    ),
+    'America/Sitka': TimeZoneNames(
+      exemplarCity: '锡特卡',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: '圣巴泰勒米岛',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: '圣约翰斯',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: '圣基茨',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: '圣卢西亚',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: '圣托马斯',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: '圣文森特',
+    ),
+    'America/Swift_Current': TimeZoneNames(
+      exemplarCity: '斯威夫特卡伦特',
+    ),
+    'America/Tegucigalpa': TimeZoneNames(
+      exemplarCity: '特古西加尔巴',
+    ),
+    'America/Thule': TimeZoneNames(
+      exemplarCity: '图勒',
+    ),
+    'America/Tijuana': TimeZoneNames(
+      exemplarCity: '蒂华纳',
+    ),
+    'America/Toronto': TimeZoneNames(
+      exemplarCity: '多伦多',
+    ),
+    'America/Tortola': TimeZoneNames(
+      exemplarCity: '托尔托拉',
+    ),
+    'America/Vancouver': TimeZoneNames(
+      exemplarCity: '温哥华',
+    ),
+    'America/Whitehorse': TimeZoneNames(
+      exemplarCity: '怀特霍斯',
+    ),
+    'America/Winnipeg': TimeZoneNames(
+      exemplarCity: '温尼伯',
+    ),
+    'America/Yakutat': TimeZoneNames(
+      exemplarCity: '亚库塔特',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      exemplarCity: '亚速尔群岛',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      exemplarCity: '百慕大',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: '加那利',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: '佛得角',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: '法罗',
+    ),
+    'Atlantic/Madeira': TimeZoneNames(
+      exemplarCity: '马德拉',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      exemplarCity: '雷克雅未克',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: '南乔治亚',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: '圣赫勒拿',
+    ),
+    'Atlantic/Stanley': TimeZoneNames(
+      exemplarCity: '斯坦利',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      exemplarCity: '阿姆斯特丹',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      exemplarCity: '安道尔',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      exemplarCity: '阿斯特拉罕',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: '雅典',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: '贝尔格莱德',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      exemplarCity: '柏林',
+    ),
+    'Europe/Bratislava': TimeZoneNames(
+      exemplarCity: '布拉迪斯拉发',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: '布鲁塞尔',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: '布加勒斯特',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      exemplarCity: '布达佩斯',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      exemplarCity: '布辛根',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: '基希讷乌',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: '哥本哈根',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: '爱尔兰标准时间',
+      ),
+      exemplarCity: '都柏林',
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      exemplarCity: '直布罗陀',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      exemplarCity: '根西岛',
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      exemplarCity: '赫尔辛基',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      exemplarCity: '马恩岛',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      exemplarCity: '伊斯坦布尔',
+    ),
+    'Europe/Jersey': TimeZoneNames(
+      exemplarCity: '泽西岛',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      exemplarCity: '加里宁格勒',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: '基辅',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      exemplarCity: '基洛夫',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: '里斯本',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      exemplarCity: '卢布尔雅那',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: '英国夏令时间',
+      ),
+      exemplarCity: '伦敦',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: '卢森堡',
+    ),
+    'Europe/Madrid': TimeZoneNames(
+      exemplarCity: '马德里',
+    ),
+    'Europe/Malta': TimeZoneNames(
+      exemplarCity: '马耳他',
+    ),
+    'Europe/Mariehamn': TimeZoneNames(
+      exemplarCity: '玛丽港',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      exemplarCity: '明斯克',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      exemplarCity: '摩纳哥',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: '莫斯科',
+    ),
+    'Europe/Oslo': TimeZoneNames(
+      exemplarCity: '奥斯陆',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      exemplarCity: '巴黎',
+    ),
+    'Europe/Podgorica': TimeZoneNames(
+      exemplarCity: '波德戈里察',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: '布拉格',
+    ),
+    'Europe/Riga': TimeZoneNames(
+      exemplarCity: '里加',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: '罗马',
+    ),
+    'Europe/Samara': TimeZoneNames(
+      exemplarCity: '萨马拉',
+    ),
+    'Europe/San_Marino': TimeZoneNames(
+      exemplarCity: '圣马力诺',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      exemplarCity: '萨拉热窝',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      exemplarCity: '萨拉托夫',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      exemplarCity: '辛菲罗波尔',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      exemplarCity: '斯科普里',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      exemplarCity: '索非亚',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      exemplarCity: '斯德哥尔摩',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      exemplarCity: '塔林',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: '地拉那',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: '乌里扬诺夫斯克',
+    ),
+    'Europe/Vaduz': TimeZoneNames(
+      exemplarCity: '瓦杜兹',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      exemplarCity: '梵蒂冈',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: '维也纳',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      exemplarCity: '维尔纽斯',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      exemplarCity: '伏尔加格勒',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: '华沙',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      exemplarCity: '萨格勒布',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: '苏黎世',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      exemplarCity: '阿比让',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      exemplarCity: '阿克拉',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: '亚的斯亚贝巴',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: '阿尔及尔',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: '阿斯马拉',
+    ),
+    'Africa/Bamako': TimeZoneNames(
+      exemplarCity: '巴马科',
+    ),
+    'Africa/Bangui': TimeZoneNames(
+      exemplarCity: '班吉',
+    ),
+    'Africa/Banjul': TimeZoneNames(
+      exemplarCity: '班珠尔',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      exemplarCity: '比绍',
+    ),
+    'Africa/Blantyre': TimeZoneNames(
+      exemplarCity: '布兰太尔',
+    ),
+    'Africa/Brazzaville': TimeZoneNames(
+      exemplarCity: '布拉柴维尔',
+    ),
+    'Africa/Bujumbura': TimeZoneNames(
+      exemplarCity: '布琼布拉',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      exemplarCity: '开罗',
+    ),
+    'Africa/Casablanca': TimeZoneNames(
+      exemplarCity: '卡萨布兰卡',
+    ),
+    'Africa/Ceuta': TimeZoneNames(
+      exemplarCity: '休达',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      exemplarCity: '科纳克里',
+    ),
+    'Africa/Dakar': TimeZoneNames(
+      exemplarCity: '达喀尔',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      exemplarCity: '达累斯萨拉姆',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      exemplarCity: '吉布提',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      exemplarCity: '杜阿拉',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      exemplarCity: '阿尤恩',
+    ),
+    'Africa/Freetown': TimeZoneNames(
+      exemplarCity: '弗里敦',
+    ),
+    'Africa/Gaborone': TimeZoneNames(
+      exemplarCity: '哈博罗内',
+    ),
+    'Africa/Harare': TimeZoneNames(
+      exemplarCity: '哈拉雷',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      exemplarCity: '约翰内斯堡',
+    ),
+    'Africa/Juba': TimeZoneNames(
+      exemplarCity: '朱巴',
+    ),
+    'Africa/Kampala': TimeZoneNames(
+      exemplarCity: '坎帕拉',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      exemplarCity: '喀土穆',
+    ),
+    'Africa/Kigali': TimeZoneNames(
+      exemplarCity: '基加利',
+    ),
+    'Africa/Kinshasa': TimeZoneNames(
+      exemplarCity: '金沙萨',
+    ),
+    'Africa/Lagos': TimeZoneNames(
+      exemplarCity: '拉各斯',
+    ),
+    'Africa/Libreville': TimeZoneNames(
+      exemplarCity: '利伯维尔',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: '洛美',
+    ),
+    'Africa/Luanda': TimeZoneNames(
+      exemplarCity: '罗安达',
+    ),
+    'Africa/Lubumbashi': TimeZoneNames(
+      exemplarCity: '卢本巴希',
+    ),
+    'Africa/Lusaka': TimeZoneNames(
+      exemplarCity: '卢萨卡',
+    ),
+    'Africa/Malabo': TimeZoneNames(
+      exemplarCity: '马拉博',
+    ),
+    'Africa/Maputo': TimeZoneNames(
+      exemplarCity: '马普托',
+    ),
+    'Africa/Maseru': TimeZoneNames(
+      exemplarCity: '马塞卢',
+    ),
+    'Africa/Mbabane': TimeZoneNames(
+      exemplarCity: '姆巴巴纳',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: '摩加迪沙',
+    ),
+    'Africa/Monrovia': TimeZoneNames(
+      exemplarCity: '蒙罗维亚',
+    ),
+    'Africa/Nairobi': TimeZoneNames(
+      exemplarCity: '内罗毕',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: '恩贾梅纳',
+    ),
+    'Africa/Niamey': TimeZoneNames(
+      exemplarCity: '尼亚美',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      exemplarCity: '努瓦克肖特',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      exemplarCity: '瓦加杜古',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      exemplarCity: '波多诺伏',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: '圣多美',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      exemplarCity: '的黎波里',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      exemplarCity: '突尼斯',
+    ),
+    'Africa/Windhoek': TimeZoneNames(
+      exemplarCity: '温得和克',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      exemplarCity: '亚丁',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      exemplarCity: '阿拉木图',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      exemplarCity: '安曼',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      exemplarCity: '阿纳德尔',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: '阿克套',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: '阿克托别',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: '阿什哈巴德',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      exemplarCity: '阿特劳',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: '巴格达',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      exemplarCity: '巴林',
+    ),
+    'Asia/Baku': TimeZoneNames(
+      exemplarCity: '巴库',
+    ),
+    'Asia/Bangkok': TimeZoneNames(
+      exemplarCity: '曼谷',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      exemplarCity: '巴尔瑙尔',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      exemplarCity: '贝鲁特',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      exemplarCity: '比什凯克',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      exemplarCity: '文莱',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: '加尔各答',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: '赤塔',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      exemplarCity: '科伦坡',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: '大马士革',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      exemplarCity: '达卡',
+    ),
+    'Asia/Dili': TimeZoneNames(
+      exemplarCity: '帝力',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      exemplarCity: '迪拜',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: '杜尚别',
+    ),
+    'Asia/Famagusta': TimeZoneNames(
+      exemplarCity: '法马古斯塔',
+    ),
+    'Asia/Gaza': TimeZoneNames(
+      exemplarCity: '加沙',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      exemplarCity: '希伯伦',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      exemplarCity: '香港',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      exemplarCity: '科布多',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      exemplarCity: '伊尔库茨克',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      exemplarCity: '雅加达',
+    ),
+    'Asia/Jayapura': TimeZoneNames(
+      exemplarCity: '查亚普拉',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      exemplarCity: '耶路撒冷',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      exemplarCity: '喀布尔',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      exemplarCity: '堪察加',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      exemplarCity: '卡拉奇',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: '加德满都',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      exemplarCity: '汉德加',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      exemplarCity: '克拉斯诺亚尔斯克',
+    ),
+    'Asia/Kuala_Lumpur': TimeZoneNames(
+      exemplarCity: '吉隆坡',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      exemplarCity: '古晋',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      exemplarCity: '科威特',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: '澳门',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      exemplarCity: '马加丹',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      exemplarCity: '望加锡',
+    ),
+    'Asia/Manila': TimeZoneNames(
+      exemplarCity: '马尼拉',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      exemplarCity: '马斯喀特',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      exemplarCity: '尼科西亚',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      exemplarCity: '新库兹涅茨克',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      exemplarCity: '新西伯利亚',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      exemplarCity: '鄂木斯克',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      exemplarCity: '乌拉尔',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      exemplarCity: '金边',
+    ),
+    'Asia/Pontianak': TimeZoneNames(
+      exemplarCity: '坤甸',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      exemplarCity: '平壤',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      exemplarCity: '卡塔尔',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: '库斯塔奈',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: '克孜洛尔达',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: '仰光',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      exemplarCity: '利雅得',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: '胡志明市',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: '萨哈林',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      exemplarCity: '撒马尔罕',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      exemplarCity: '首尔',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      exemplarCity: '上海',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      exemplarCity: '新加坡',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      exemplarCity: '中科雷姆斯克',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      exemplarCity: '台北',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: '塔什干',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      exemplarCity: '第比利斯',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: '德黑兰',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      exemplarCity: '廷布',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      exemplarCity: '东京',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      exemplarCity: '托木斯克',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      exemplarCity: '乌兰巴托',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: '乌鲁木齐',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      exemplarCity: '乌斯内拉',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      exemplarCity: '万象',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      exemplarCity: '符拉迪沃斯托克',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      exemplarCity: '雅库茨克',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: '叶卡捷琳堡',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: '埃里温',
+    ),
+    'Indian/Antananarivo': TimeZoneNames(
+      exemplarCity: '安塔那那利佛',
+    ),
+    'Indian/Chagos': TimeZoneNames(
+      exemplarCity: '查戈斯',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      exemplarCity: '圣诞岛',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      exemplarCity: '可可斯',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: '科摩罗',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      exemplarCity: '凯尔盖朗',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: '马埃岛',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: '马尔代夫',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      exemplarCity: '毛里求斯',
+    ),
+    'Indian/Mayotte': TimeZoneNames(
+      exemplarCity: '马约特',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: '留尼汪',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      exemplarCity: '阿德莱德',
+    ),
+    'Australia/Brisbane': TimeZoneNames(
+      exemplarCity: '布里斯班',
+    ),
+    'Australia/Broken_Hill': TimeZoneNames(
+      exemplarCity: '布罗肯希尔',
+    ),
+    'Australia/Darwin': TimeZoneNames(
+      exemplarCity: '达尔文',
+    ),
+    'Australia/Eucla': TimeZoneNames(
+      exemplarCity: '尤克拉',
+    ),
+    'Australia/Hobart': TimeZoneNames(
+      exemplarCity: '霍巴特',
+    ),
+    'Australia/Lindeman': TimeZoneNames(
+      exemplarCity: '林德曼',
+    ),
+    'Australia/Lord_Howe': TimeZoneNames(
+      exemplarCity: '豪勋爵岛',
+    ),
+    'Australia/Melbourne': TimeZoneNames(
+      exemplarCity: '墨尔本',
+    ),
+    'Australia/Perth': TimeZoneNames(
+      exemplarCity: '珀斯',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      exemplarCity: '悉尼',
+    ),
+    'Pacific/Apia': TimeZoneNames(
+      exemplarCity: '阿皮亚',
+    ),
+    'Pacific/Auckland': TimeZoneNames(
+      exemplarCity: '奥克兰',
+    ),
+    'Pacific/Bougainville': TimeZoneNames(
+      exemplarCity: '布干维尔',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      exemplarCity: '查塔姆',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: '复活节岛',
+    ),
+    'Pacific/Efate': TimeZoneNames(
+      exemplarCity: '埃法特',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: '恩德伯里',
+    ),
+    'Pacific/Fakaofo': TimeZoneNames(
+      exemplarCity: '法考福',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      exemplarCity: '斐济',
+    ),
+    'Pacific/Funafuti': TimeZoneNames(
+      exemplarCity: '富纳富提',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      exemplarCity: '科隆群岛',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      exemplarCity: '甘比尔',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      exemplarCity: '瓜达尔卡纳尔',
+    ),
+    'Pacific/Guam': TimeZoneNames(
+      exemplarCity: '关岛',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      exemplarCity: '檀香山',
+    ),
+    'Pacific/Kanton': TimeZoneNames(
+      exemplarCity: '坎顿岛',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      exemplarCity: '基里地马地岛',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      exemplarCity: '库赛埃',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      exemplarCity: '夸贾林',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      exemplarCity: '马朱罗',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      exemplarCity: '马克萨斯',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      exemplarCity: '中途岛',
+    ),
+    'Pacific/Nauru': TimeZoneNames(
+      exemplarCity: '瑙鲁',
+    ),
+    'Pacific/Niue': TimeZoneNames(
+      exemplarCity: '纽埃',
+    ),
+    'Pacific/Norfolk': TimeZoneNames(
+      exemplarCity: '诺福克',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: '努美阿',
+    ),
+    'Pacific/Pago_Pago': TimeZoneNames(
+      exemplarCity: '帕果帕果',
+    ),
+    'Pacific/Palau': TimeZoneNames(
+      exemplarCity: '帕劳',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      exemplarCity: '皮特凯恩',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: '波纳佩岛',
+    ),
+    'Pacific/Port_Moresby': TimeZoneNames(
+      exemplarCity: '莫尔兹比港',
+    ),
+    'Pacific/Rarotonga': TimeZoneNames(
+      exemplarCity: '拉罗汤加',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      exemplarCity: '塞班',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      exemplarCity: '塔希提',
+    ),
+    'Pacific/Tarawa': TimeZoneNames(
+      exemplarCity: '塔拉瓦',
+    ),
+    'Pacific/Tongatapu': TimeZoneNames(
+      exemplarCity: '东加塔布',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: '特鲁克群岛',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      exemplarCity: '威克',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      exemplarCity: '瓦利斯',
+    ),
+    'Arctic/Longyearbyen': TimeZoneNames(
+      exemplarCity: '朗伊尔城',
+    ),
+    'Antarctica/Casey': TimeZoneNames(
+      exemplarCity: '卡塞',
+    ),
+    'Antarctica/Davis': TimeZoneNames(
+      exemplarCity: '戴维斯',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: '迪蒙·迪维尔',
+    ),
+    'Antarctica/Macquarie': TimeZoneNames(
+      exemplarCity: '麦格理',
+    ),
+    'Antarctica/Mawson': TimeZoneNames(
+      exemplarCity: '莫森',
+    ),
+    'Antarctica/McMurdo': TimeZoneNames(
+      exemplarCity: '麦克默多',
+    ),
+    'Antarctica/Palmer': TimeZoneNames(
+      exemplarCity: '帕尔默',
+    ),
+    'Antarctica/Rothera': TimeZoneNames(
+      exemplarCity: '罗瑟拉',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      exemplarCity: '昭和',
+    ),
+    'Antarctica/Troll': TimeZoneNames(
+      exemplarCity: '特罗尔',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      exemplarCity: '沃斯托克',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: '协调世界时',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: '未知城市',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: '阿克里时间',
+        standard: '阿克里标准时间',
+        daylight: '阿克里夏令时间',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: '阿富汗时间',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: '中部非洲时间',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: '东部非洲时间',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: '南非标准时间',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: '西部非洲时间',
+        standard: '西部非洲标准时间',
+        daylight: '西部非洲夏令时间',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: '阿拉斯加时间',
+        standard: '阿拉斯加标准时间',
+        daylight: '阿拉斯加夏令时间',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: '阿拉木图时间',
+        standard: '阿拉木图标准时间',
+        daylight: '阿拉木图夏令时间',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: '亚马逊时间',
+        standard: '亚马逊标准时间',
+        daylight: '亚马逊夏令时间',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: '北美中部时间',
+        standard: '北美中部标准时间',
+        daylight: '北美中部夏令时间',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: '北美东部时间',
+        standard: '北美东部标准时间',
+        daylight: '北美东部夏令时间',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: '北美山区时间',
+        standard: '北美山区标准时间',
+        daylight: '北美山区夏令时间',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: '北美太平洋时间',
+        standard: '北美太平洋标准时间',
+        daylight: '北美太平洋夏令时间',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: '阿纳德尔时间',
+        standard: '阿纳德尔标准时间',
+        daylight: '阿纳德尔夏令时间',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: '阿皮亚时间',
+        standard: '阿皮亚标准时间',
+        daylight: '阿皮亚夏令时间',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: '阿克套时间',
+        standard: '阿克套标准时间',
+        daylight: '阿克套夏令时间',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: '阿克托别时间',
+        standard: '阿克托别标准时间',
+        daylight: '阿克托别夏令时间',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: '阿拉伯时间',
+        standard: '阿拉伯标准时间',
+        daylight: '阿拉伯夏令时间',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: '阿根廷时间',
+        standard: '阿根廷标准时间',
+        daylight: '阿根廷夏令时间',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: '阿根廷西部时间',
+        standard: '阿根廷西部标准时间',
+        daylight: '阿根廷西部夏令时间',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: '亚美尼亚时间',
+        standard: '亚美尼亚标准时间',
+        daylight: '亚美尼亚夏令时间',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: '大西洋时间',
+        standard: '大西洋标准时间',
+        daylight: '大西洋夏令时间',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: '澳大利亚中部时间',
+        standard: '澳大利亚中部标准时间',
+        daylight: '澳大利亚中部夏令时间',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: '澳大利亚中西部时间',
+        standard: '澳大利亚中西部标准时间',
+        daylight: '澳大利亚中西部夏令时间',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: '澳大利亚东部时间',
+        standard: '澳大利亚东部标准时间',
+        daylight: '澳大利亚东部夏令时间',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: '澳大利亚西部时间',
+        standard: '澳大利亚西部标准时间',
+        daylight: '澳大利亚西部夏令时间',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: '阿塞拜疆时间',
+        standard: '阿塞拜疆标准时间',
+        daylight: '阿塞拜疆夏令时间',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: '亚速尔群岛时间',
+        standard: '亚速尔群岛标准时间',
+        daylight: '亚速尔群岛夏令时间',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: '孟加拉时间',
+        standard: '孟加拉标准时间',
+        daylight: '孟加拉夏令时间',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: '不丹时间',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: '玻利维亚标准时间',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: '巴西利亚时间',
+        standard: '巴西利亚标准时间',
+        daylight: '巴西利亚夏令时间',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: '文莱达鲁萨兰时间',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: '佛得角时间',
+        standard: '佛得角标准时间',
+        daylight: '佛得角夏令时间',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: '凯西时间',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: '查莫罗时间',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: '查塔姆时间',
+        standard: '查塔姆标准时间',
+        daylight: '查塔姆夏令时间',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: '智利时间',
+        standard: '智利标准时间',
+        daylight: '智利夏令时间',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: '中国时间',
+        standard: '中国标准时间',
+        daylight: '中国夏令时间',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: '圣诞岛时间',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: '科科斯群岛时间',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: '哥伦比亚时间',
+        standard: '哥伦比亚标准时间',
+        daylight: '哥伦比亚夏令时间',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: '库克群岛时间',
+        standard: '库克群岛标准时间',
+        daylight: '库克群岛仲夏时间',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: '古巴时间',
+        standard: '古巴标准时间',
+        daylight: '古巴夏令时间',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: '戴维斯时间',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: '迪蒙·迪维尔时间',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: '东帝汶时间',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: '复活节岛时间',
+        standard: '复活节岛标准时间',
+        daylight: '复活节岛夏令时间',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: '厄瓜多尔标准时间',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: '中欧时间',
+        standard: '中欧标准时间',
+        daylight: '中欧夏令时间',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: '东欧时间',
+        standard: '东欧标准时间',
+        daylight: '东欧夏令时间',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: '欧洲极东时间',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: '西欧时间',
+        standard: '西欧标准时间',
+        daylight: '西欧夏令时间',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: '福克兰群岛时间',
+        standard: '福克兰群岛标准时间',
+        daylight: '福克兰群岛夏令时间',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: '斐济时间',
+        standard: '斐济标准时间',
+        daylight: '斐济夏令时间',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: '法属圭亚那标准时间',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: '法属南方和南极领地时间',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: '科隆群岛时间',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: '甘比尔时间',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: '格鲁吉亚时间',
+        standard: '格鲁吉亚标准时间',
+        daylight: '格鲁吉亚夏令时间',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: '吉尔伯特群岛时间',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: '格林尼治标准时间',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: '格陵兰岛东部时间',
+        standard: '格陵兰岛东部标准时间',
+        daylight: '格陵兰岛东部夏令时间',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: '格陵兰岛西部时间',
+        standard: '格陵兰岛西部标准时间',
+        daylight: '格陵兰岛西部夏令时间',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: '关岛时间',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: '海湾标准时间',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: '圭亚那时间',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: '夏威夷-阿留申时间',
+        standard: '夏威夷-阿留申标准时间',
+        daylight: '夏威夷-阿留申夏令时间',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: '香港时间',
+        standard: '香港标准时间',
+        daylight: '香港夏令时间',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: '科布多时间',
+        standard: '科布多标准时间',
+        daylight: '科布多夏令时间',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: '印度时间',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: '印度洋时间',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: '中南半岛时间',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: '印度尼西亚中部时间',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: '印度尼西亚东部时间',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: '印度尼西亚西部时间',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: '伊朗时间',
+        standard: '伊朗标准时间',
+        daylight: '伊朗夏令时间',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: '伊尔库茨克时间',
+        standard: '伊尔库茨克标准时间',
+        daylight: '伊尔库茨克夏令时间',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: '以色列时间',
+        standard: '以色列标准时间',
+        daylight: '以色列夏令时间',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: '日本时间',
+        standard: '日本标准时间',
+        daylight: '日本夏令时间',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: '彼得罗巴甫洛夫斯克-堪察加时间',
+        standard: '彼得罗巴甫洛夫斯克-堪察加标准时间',
+        daylight: '彼得罗巴甫洛夫斯克-堪察加夏令时间',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: '哈萨克斯坦时间',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: '哈萨克斯坦东部时间',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: '哈萨克斯坦西部时间',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: '韩国时间',
+        standard: '韩国标准时间',
+        daylight: '韩国夏令时间',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: '科斯雷时间',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: '克拉斯诺亚尔斯克时间',
+        standard: '克拉斯诺亚尔斯克标准时间',
+        daylight: '克拉斯诺亚尔斯克夏令时间',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: '吉尔吉斯斯坦时间',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: '兰卡时间',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: '莱恩群岛时间',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: '豪勋爵岛时间',
+        standard: '豪勋爵岛标准时间',
+        daylight: '豪勋爵岛夏令时间',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: '澳门时间',
+        standard: '澳门标准时间',
+        daylight: '澳门夏令时间',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: '马加丹时间',
+        standard: '马加丹标准时间',
+        daylight: '马加丹夏令时间',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: '马来西亚时间',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: '马尔代夫时间',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: '马克萨斯群岛时间',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: '马绍尔群岛时间',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: '毛里求斯时间',
+        standard: '毛里求斯标准时间',
+        daylight: '毛里求斯夏令时间',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: '莫森时间',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: '墨西哥太平洋时间',
+        standard: '墨西哥太平洋标准时间',
+        daylight: '墨西哥太平洋夏令时间',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: '乌兰巴托时间',
+        standard: '乌兰巴托标准时间',
+        daylight: '乌兰巴托夏令时间',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: '莫斯科时间',
+        standard: '莫斯科标准时间',
+        daylight: '莫斯科夏令时间',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: '缅甸时间',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: '瑙鲁时间',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: '尼泊尔时间',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: '新喀里多尼亚时间',
+        standard: '新喀里多尼亚标准时间',
+        daylight: '新喀里多尼亚夏令时间',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: '新西兰时间',
+        standard: '新西兰标准时间',
+        daylight: '新西兰夏令时间',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: '纽芬兰时间',
+        standard: '纽芬兰标准时间',
+        daylight: '纽芬兰夏令时间',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: '纽埃时间',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: '诺福克岛时间',
+        standard: '诺福克岛标准时间',
+        daylight: '诺福克岛夏令时间',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: '费尔南多-迪诺罗尼亚岛时间',
+        standard: '费尔南多-迪诺罗尼亚岛标准时间',
+        daylight: '费尔南多-迪诺罗尼亚岛夏令时间',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: '北马里亚纳群岛时间',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: '新西伯利亚时间',
+        standard: '新西伯利亚标准时间',
+        daylight: '新西伯利亚夏令时间',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: '鄂木斯克时间',
+        standard: '鄂木斯克标准时间',
+        daylight: '鄂木斯克夏令时间',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: '巴基斯坦时间',
+        standard: '巴基斯坦标准时间',
+        daylight: '巴基斯坦夏令时间',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: '帕劳时间',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: '巴布亚新几内亚时间',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: '巴拉圭时间',
+        standard: '巴拉圭标准时间',
+        daylight: '巴拉圭夏令时间',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: '秘鲁时间',
+        standard: '秘鲁标准时间',
+        daylight: '秘鲁夏令时间',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: '菲律宾时间',
+        standard: '菲律宾标准时间',
+        daylight: '菲律宾夏令时间',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: '菲尼克斯群岛时间',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: '圣皮埃尔和密克隆群岛时间',
+        standard: '圣皮埃尔和密克隆群岛标准时间',
+        daylight: '圣皮埃尔和密克隆群岛夏令时间',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: '皮特凯恩时间',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: '波纳佩时间',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: '平壤时间',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: '克孜洛尔达时间',
+        standard: '克孜洛尔达标准时间',
+        daylight: '克孜洛尔达夏令时间',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: '留尼汪时间',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: '罗瑟拉时间',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: '库页岛时间',
+        standard: '库页岛标准时间',
+        daylight: '库页岛夏令时间',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: '萨马拉时间',
+        standard: '萨马拉标准时间',
+        daylight: '萨马拉夏令时间',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: '萨摩亚时间',
+        standard: '萨摩亚标准时间',
+        daylight: '萨摩亚夏令时间',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: '塞舌尔时间',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: '新加坡标准时间',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: '所罗门群岛时间',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: '南乔治亚岛时间',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: '苏里南时间',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: '昭和时间',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: '塔希提岛时间',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: '台北时间',
+        standard: '台北标准时间',
+        daylight: '台北夏令时间',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: '塔吉克斯坦时间',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: '托克劳时间',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: '汤加时间',
+        standard: '汤加标准时间',
+        daylight: '汤加夏令时间',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: '楚克时间',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: '土库曼斯坦时间',
+        standard: '土库曼斯坦标准时间',
+        daylight: '土库曼斯坦夏令时间',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: '图瓦卢时间',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: '乌拉圭时间',
+        standard: '乌拉圭标准时间',
+        daylight: '乌拉圭夏令时间',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: '乌兹别克斯坦时间',
+        standard: '乌兹别克斯坦标准时间',
+        daylight: '乌兹别克斯坦夏令时间',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: '瓦努阿图时间',
+        standard: '瓦努阿图标准时间',
+        daylight: '瓦努阿图夏令时间',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: '委内瑞拉时间',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: '海参崴时间',
+        standard: '海参崴标准时间',
+        daylight: '海参崴夏令时间',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: '伏尔加格勒时间',
+        standard: '伏尔加格勒标准时间',
+        daylight: '伏尔加格勒夏令时间',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: '沃斯托克时间',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: '威克岛时间',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: '瓦利斯和富图纳时间',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: '雅库茨克时间',
+        standard: '雅库茨克标准时间',
+        daylight: '雅库茨克夏令时间',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: '叶卡捷琳堡时间',
+        standard: '叶卡捷琳堡标准时间',
+        daylight: '叶卡捷琳堡夏令时间',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: '育空时间',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

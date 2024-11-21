@@ -2,9 +2,6 @@
   "main": {
     "ro": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "ro"
       },
       "dates": {

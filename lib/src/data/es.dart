@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'es';
 
-/// Translations in Spanish of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataEs implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataEs();
@@ -22,6 +20,14 @@ class CommonLocaleDataEs implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsEs._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsEs._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsEs._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataEs implements CommonLocaleData {
   static final _territories = TerritoriesEs._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesEs._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesEs extends Languages {
@@ -227,7 +237,7 @@ class LanguagesEs extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'haryanvi',
     ),
     'bgn': Language(
       'bgn',
@@ -256,6 +266,10 @@ class LanguagesEs extends Languages {
     'bla': Language(
       'bla',
       'siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'anii',
     ),
     'bm': Language(
       'bm',
@@ -833,11 +847,6 @@ class LanguagesEs extends Languages {
       'hi',
       'hindi',
     ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'hindi (latino)',
-      variant: 'hinglish',
-    ),
     'hil': Language(
       'hil',
       'hiligaynon',
@@ -988,7 +997,7 @@ class LanguagesEs extends Languages {
     ),
     'kab': Language(
       'kab',
-      'cabila',
+      'cabileño',
     ),
     'kac': Language(
       'kac',
@@ -1162,6 +1171,10 @@ class LanguagesEs extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirguís',
@@ -1204,7 +1217,7 @@ class LanguagesEs extends Languages {
     ),
     'lij': Language(
       'lij',
-      'lij',
+      'ligur',
     ),
     'lil': Language(
       'lil',
@@ -1213,6 +1226,10 @@ class LanguagesEs extends Languages {
     'lkt': Language(
       'lkt',
       'lakota',
+    ),
+    'lmo': Language(
+      'lmo',
+      'lombardo',
     ),
     'ln': Language(
       'ln',
@@ -1261,10 +1278,6 @@ class LanguagesEs extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1991,6 +2004,10 @@ class LanguagesEs extends Languages {
       'syr',
       'siriaco',
     ),
+    'szl': Language(
+      'szl',
+      'silesio',
+    ),
     'ta': Language(
       'ta',
       'tamil',
@@ -2176,21 +2193,21 @@ class LanguagesEs extends Languages {
       'uz',
       'uzbeko',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
     ),
     'vec': Language(
       'vec',
-      'vec',
+      'veneciano',
     ),
     'vi': Language(
       'vi',
       'vietnamita',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makua',
     ),
     'vo': Language(
       'vo',
@@ -2243,6 +2260,10 @@ class LanguagesEs extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -2333,6 +2354,585 @@ class LanguagesEs extends Languages {
   }, (key) => key.toLowerCase());
 }
 
+class ScriptsEs extends Scripts {
+  ScriptsEs._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'ádlam',
+    ),
+    'Arab': Script(
+      'Arab',
+      'árabe',
+      variant: 'perso-árabe',
+    ),
+    'Aran': Script(
+      'Aran',
+      'nastaliq',
+    ),
+    'Armn': Script(
+      'Armn',
+      'armenio',
+    ),
+    'Avst': Script(
+      'Avst',
+      'avéstico',
+    ),
+    'Bali': Script(
+      'Bali',
+      'balinés',
+    ),
+    'Batk': Script(
+      'Batk',
+      'batak',
+    ),
+    'Beng': Script(
+      'Beng',
+      'bengalí',
+    ),
+    'Blis': Script(
+      'Blis',
+      'símbolos blis',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'brahmi',
+    ),
+    'Brai': Script(
+      'Brai',
+      'braille',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'buginés',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'buhid',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'chakma',
+    ),
+    'Cans': Script(
+      'Cans',
+      'silabarios aborígenes canadienses unificados',
+    ),
+    'Cari': Script(
+      'Cari',
+      'cario',
+    ),
+    'Cham': Script(
+      'Cham',
+      'cham',
+    ),
+    'Cher': Script(
+      'Cher',
+      'cheroqui',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'cirth',
+    ),
+    'Copt': Script(
+      'Copt',
+      'copto',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'chipriota',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'cirílico',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'cirílico del antiguo eslavo eclesiástico',
+    ),
+    'Deva': Script(
+      'Deva',
+      'devanagari',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'deseret',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'egipcio demótico',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'egipcio hierático',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'jeroglíficos egipcios',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'etiópico',
+    ),
+    'Geok': Script(
+      'Geok',
+      'georgiano eclesiástico',
+    ),
+    'Geor': Script(
+      'Geor',
+      'georgiano',
+    ),
+    'Glag': Script(
+      'Glag',
+      'glagolítico',
+    ),
+    'Goth': Script(
+      'Goth',
+      'gótico',
+    ),
+    'Grek': Script(
+      'Grek',
+      'griego',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'guyaratí',
+    ),
+    'Guru': Script(
+      'Guru',
+      'gurmuji',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'han con bopomofo',
+    ),
+    'Hang': Script(
+      'Hang',
+      'hangul',
+    ),
+    'Hani': Script(
+      'Hani',
+      'han',
+    ),
+    'Hano': Script(
+      'Hano',
+      'hanunoo',
+    ),
+    'Hans': Script(
+      'Hans',
+      'simplificado',
+      standAlone: 'han simplificado',
+    ),
+    'Hant': Script(
+      'Hant',
+      'tradicional',
+      standAlone: 'han tradicional',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'hebreo',
+    ),
+    'Hira': Script(
+      'Hira',
+      'hiragana',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'pahawh hmong',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'silabarios japoneses',
+    ),
+    'Hung': Script(
+      'Hung',
+      'húngaro antiguo',
+    ),
+    'Inds': Script(
+      'Inds',
+      'Indio (harappan)',
+    ),
+    'Ital': Script(
+      'Ital',
+      'antigua bastardilla',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'javanés',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'japonés',
+    ),
+    'Kali': Script(
+      'Kali',
+      'kayah li',
+    ),
+    'Kana': Script(
+      'Kana',
+      'katakana',
+    ),
+    'Khar': Script(
+      'Khar',
+      'kharosthi',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'jemer',
+    ),
+    'Knda': Script(
+      'Knda',
+      'canarés',
+    ),
+    'Kore': Script(
+      'Kore',
+      'coreano',
+    ),
+    'Lana': Script(
+      'Lana',
+      'lanna',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'laosiano',
+    ),
+    'Latf': Script(
+      'Latf',
+      'latino fraktur',
+    ),
+    'Latg': Script(
+      'Latg',
+      'latino gaélico',
+    ),
+    'Latn': Script(
+      'Latn',
+      'latino',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'lepcha',
+    ),
+    'Limb': Script(
+      'Limb',
+      'limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'lineal A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'lineal B',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'licio',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'lidio',
+    ),
+    'Mand': Script(
+      'Mand',
+      'mandeo',
+    ),
+    'Maya': Script(
+      'Maya',
+      'jeroglíficos mayas',
+    ),
+    'Mero': Script(
+      'Mero',
+      'meroítico',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'malayálam',
+    ),
+    'Mong': Script(
+      'Mong',
+      'mongol',
+    ),
+    'Moon': Script(
+      'Moon',
+      'moon',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'meitei',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'birmano',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'n’ko',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'ogham',
+    ),
+    'Olck': Script(
+      'Olck',
+      'ol chiki',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'orkhon',
+    ),
+    'Orya': Script(
+      'Orya',
+      'oriya',
+    ),
+    'Osma': Script(
+      'Osma',
+      'osmaniya',
+    ),
+    'Perm': Script(
+      'Perm',
+      'permiano antiguo',
+    ),
+    'Phag': Script(
+      'Phag',
+      'phags-pa',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'fenicio',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'Pollard Miao',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'rejang',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'hanifi',
+    ),
+    'Roro': Script(
+      'Roro',
+      'rongo-rongo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'rúnico',
+    ),
+    'Sara': Script(
+      'Sara',
+      'sarati',
+    ),
+    'Saur': Script(
+      'Saur',
+      'saurashtra',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'SignWriting',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'shaviano',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'cingalés',
+    ),
+    'Sund': Script(
+      'Sund',
+      'sundanés',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'syloti nagri',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'siriaco',
+    ),
+    'Syre': Script(
+      'Syre',
+      'siriaco estrangelo',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'siriaco occidental',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'siriaco oriental',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'tagbanúa',
+    ),
+    'Tale': Script(
+      'Tale',
+      'tai le',
+    ),
+    'Talu': Script(
+      'Talu',
+      'nuevo tai lue',
+    ),
+    'Taml': Script(
+      'Taml',
+      'tamil',
+    ),
+    'Telu': Script(
+      'Telu',
+      'telugu',
+    ),
+    'Teng': Script(
+      'Teng',
+      'tengwar',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'tifinagh',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'tagalo',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'thaana',
+    ),
+    'Thai': Script(
+      'Thai',
+      'tailandés',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'tibetano',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'ugarítico',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'vai',
+    ),
+    'Visp': Script(
+      'Visp',
+      'lenguaje visible',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'persa antiguo',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'cuneiforme sumerio-acadio',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'yi',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'heredado',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'notación matemática',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'emojis',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'símbolos',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'no escrito',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'común',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'alfabeto desconocido',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsEs extends Variants {
+  VariantsEs._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'Ortografía alemana tradicional',
+    ),
+    '1996': Variant(
+      '1996',
+      'Ortografía alemana de 1996',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'Armenio oriental',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'Alfabeto fonético internacional IPA',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'Monotónico',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'Romanización pinyin',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'Politónico',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Ordenador',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'Ortografía revisada',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'Inglés escocés estándar',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'Valenciano',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Romanización Wade-Giles',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
 class UnitsEs implements Units {
   UnitsEs._();
 
@@ -2397,6 +2997,18 @@ class UnitsEs implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('quecto{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('deca{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2455,6 +3067,18 @@ class UnitsEs implements Units {
         long: UnitPrefixPattern('yotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('quetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2549,7 +3173,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
+          one: '{0} metro por segundo al cuadrado',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
@@ -2571,7 +3195,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'rev',
-          one: '{0} rev',
+          one: '{0} revolución',
           other: '{0} rev',
         ),
         narrow: UnitCountPattern(
@@ -2593,7 +3217,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
+          one: '{0} radián',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
@@ -2615,13 +3239,13 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'grad.',
-          one: '{0}°',
+          one: '{0} grado',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           'grad',
-          one: '{0}°',
+          one: '{0} grado',
           other: '{0}°',
         ),
       );
@@ -2681,7 +3305,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
+          one: '{0} kilómetro cuadrado',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
@@ -2703,7 +3327,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ha',
-          one: '{0} ha',
+          one: '{0} hectárea',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
@@ -2725,7 +3349,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
+          one: '{0} metro cuadrado',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
@@ -2747,7 +3371,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
+          one: '{0} centímetro cuadrado',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
@@ -2769,7 +3393,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
+          one: '{0} milla cuadrada',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
@@ -2791,7 +3415,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ac',
-          one: '{0} ac',
+          one: '{0} acre',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
@@ -2813,7 +3437,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
+          one: '{0} yarda cuadrada',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
@@ -2835,7 +3459,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
+          one: '{0} pie cuadrado',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
@@ -2857,7 +3481,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
+          one: '{0} pulgada cuadrada',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
@@ -2923,7 +3547,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mg/dL',
-          one: '{0} mg/dL',
+          one: '{0} miligramo por decilitro',
           other: '{0} mg/dL',
         ),
         narrow: UnitCountPattern(
@@ -2945,7 +3569,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mmol/L',
-          one: '{0} mmol/L',
+          one: '{0} milimol por litro',
           other: '{0} mmol/L',
         ),
         narrow: UnitCountPattern(
@@ -2989,7 +3613,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
+          one: '{0} parte por millón',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
@@ -3187,7 +3811,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
+          one: '{0} petabyte',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
@@ -3209,7 +3833,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
+          one: '{0} terabyte',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
@@ -3231,7 +3855,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
+          one: '{0} terabit',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
@@ -3253,7 +3877,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
+          one: '{0} gigabyte',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
@@ -3275,7 +3899,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
+          one: '{0} gigabit',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
@@ -3297,7 +3921,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
+          one: '{0} megabyte',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
@@ -3319,7 +3943,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
+          one: '{0} megabit',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
@@ -3341,7 +3965,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
+          one: '{0} kilobyte',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
@@ -3363,7 +3987,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
+          one: '{0} kilobit',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
@@ -3561,7 +4185,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'd',
-          one: '{0} d',
+          one: '{0} día',
           other: '{0} d',
         ),
         narrow: UnitCountPattern(
@@ -3583,7 +4207,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'horas',
-          one: '{0} h',
+          one: '{0} hora',
           other: '{0} h',
         ),
         narrow: UnitCountPattern(
@@ -3605,7 +4229,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'min',
-          one: '{0} min',
+          one: '{0} minuto',
           other: '{0} min',
         ),
         narrow: UnitCountPattern(
@@ -3627,7 +4251,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           's',
-          one: '{0} s',
+          one: '{0} segundo',
           other: '{0} s',
         ),
         narrow: UnitCountPattern(
@@ -3649,7 +4273,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
+          one: '{0} milisegundo',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
@@ -3671,7 +4295,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
+          one: '{0} microsegundo',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
@@ -3693,7 +4317,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
+          one: '{0} nanosegundo',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
@@ -3715,7 +4339,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
+          one: '{0} amperio',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
@@ -3737,7 +4361,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
+          one: '{0} miliamperio',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
@@ -3759,7 +4383,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
+          one: '{0} ohmio',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
@@ -3781,7 +4405,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
+          one: '{0} voltio',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
@@ -3803,7 +4427,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
+          one: '{0} kilocaloría',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
@@ -3825,7 +4449,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
+          one: '{0} caloría',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
@@ -3846,13 +4470,13 @@ class UnitsEs implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          other: '{0} kcal',
+          'kilocalorías',
+          one: '{0} kilocaloría',
+          other: '{0} kilocalorías',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
+          'kilocalorías',
           one: '{0}kcal',
           other: '{0}kcal',
         ),
@@ -3869,7 +4493,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
+          one: '{0} kilojulio',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
@@ -3891,7 +4515,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
+          one: '{0} julio',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
@@ -3913,7 +4537,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
+          one: '{0} kilovatio hora',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
@@ -3935,6 +4559,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'eV',
+          one: '{0} electronvoltio',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
@@ -4000,6 +4625,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0} libra de fuerza',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
@@ -4021,6 +4647,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'N',
+          one: '{0} newton',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
@@ -4064,7 +4691,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
+          one: '{0} gigahercio',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
@@ -4086,7 +4713,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
+          one: '{0} megahercio',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
@@ -4108,7 +4735,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
+          one: '{0} kilohercio',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
@@ -4130,7 +4757,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
+          one: '{0} hercio',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
@@ -4152,7 +4779,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'em',
-          one: '{0} em',
+          one: '{0} espacio eme',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
@@ -4174,7 +4801,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'px',
-          one: '{0} px',
+          one: '{0} píxel',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
@@ -4328,6 +4955,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} radio terrestre',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
@@ -4349,7 +4977,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
+          one: '{0} kilómetro',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
@@ -4371,7 +4999,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
+          one: '{0} metro',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
@@ -4393,7 +5021,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
+          one: '{0} decímetro',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
@@ -4415,7 +5043,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
+          one: '{0} centímetro',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
@@ -4437,7 +5065,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
+          one: '{0} milímetro',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
@@ -4459,7 +5087,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
+          one: '{0} micrómetro',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
@@ -4481,7 +5109,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
+          one: '{0} nanómetro',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
@@ -4503,7 +5131,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} picómetro',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
@@ -4525,7 +5153,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi',
-          one: '{0} mi',
+          one: '{0} milla',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
@@ -4547,7 +5175,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
+          one: '{0} yarda',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
@@ -4569,7 +5197,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
+          one: '{0} pie',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
@@ -4591,7 +5219,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'in',
-          one: '{0} in',
+          one: '{0} pulgada',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
@@ -4613,7 +5241,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'pc',
-          one: '{0} pc',
+          one: '{0} parsec',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
@@ -4657,7 +5285,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'au',
-          one: '{0} au',
+          one: '{0} unidad astronómica',
           other: '{0} au',
         ),
         narrow: UnitCountPattern(
@@ -4679,6 +5307,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'fur',
+          one: '{0} furlong',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
@@ -4788,6 +5417,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} radio solar',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
@@ -4809,7 +5439,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
+          one: '{0} lux',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
@@ -4831,6 +5461,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} candela',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
@@ -4852,6 +5483,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lumen',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
@@ -4873,6 +5505,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} luminosidad solar',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
@@ -4894,7 +5527,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
+          one: '{0} tonelada',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
@@ -4916,7 +5549,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
+          one: '{0} kilogramo',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
@@ -4938,7 +5571,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
+          one: '{0} gramo',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
@@ -4960,7 +5593,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
+          one: '{0} miligramo',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
@@ -4982,7 +5615,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
+          one: '{0} microgramo',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
@@ -5026,6 +5659,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
+          one: '{0} stone',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
@@ -5047,7 +5681,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
+          one: '{0} libra',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
@@ -5069,7 +5703,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
+          one: '{0} onza',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
@@ -5091,7 +5725,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
+          one: '{0} onza troy',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
@@ -5135,6 +5769,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'Da',
+          one: '{0} dalton',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
@@ -5156,6 +5791,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} masa terrestre',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
@@ -5177,6 +5813,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} masa solar',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
@@ -5220,7 +5857,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
+          one: '{0} gigavatio',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
@@ -5242,7 +5879,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
+          one: '{0} megavatio',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
@@ -5264,7 +5901,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
+          one: '{0} kilovatio',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
@@ -5286,7 +5923,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
+          one: '{0} vatio',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
@@ -5308,7 +5945,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
+          one: '{0} milivatio',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
@@ -5374,7 +6011,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
+          one: '{0} libra por pulgada cuadrada',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
@@ -5396,7 +6033,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'inHg',
-          one: '{0} inHg',
+          one: '{0} pulgada de mercurio',
           other: '{0} inHg',
         ),
         narrow: UnitCountPattern(
@@ -5440,7 +6077,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
+          one: '{0} milibar',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
@@ -5462,7 +6099,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
+          one: '{0} atmósfera',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
@@ -5484,7 +6121,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
-          one: '{0} Pa',
+          one: '{0} pascal',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
@@ -5506,7 +6143,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
+          one: '{0} hectopascal',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
@@ -5528,6 +6165,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} kilopascal',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
@@ -5549,6 +6187,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} megapascal',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
@@ -5570,7 +6209,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
+          one: '{0} kilómetro por hora',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
@@ -5592,7 +6231,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
+          one: '{0} metro por segundo',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
@@ -5614,7 +6253,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
+          one: '{0} milla por hora',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
@@ -5636,7 +6275,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
+          one: '{0} nudo',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
@@ -5644,6 +6283,28 @@ class UnitsEs implements Units {
           'kn',
           one: '{0}kn',
           other: '{0}kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Beaufort',
+          one: 'Beaufort {0}',
+          other: 'Beaufort {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'B{0}',
+          other: 'B{0}',
         ),
       );
 
@@ -5658,13 +6319,13 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grado',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grado',
           other: '{0}°',
         ),
       );
@@ -5724,7 +6385,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
+          one: '{0} kelvin',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
@@ -5790,7 +6451,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
+          one: '{0} kilómetro cúbico',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
@@ -5812,7 +6473,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
+          one: '{0} metro cúbico',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
@@ -5834,7 +6495,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
+          one: '{0} centímetro cúbico',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
@@ -5856,7 +6517,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
+          one: '{0} milla cúbica',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
@@ -5878,7 +6539,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
+          one: '{0} yarda cúbica',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
@@ -5900,7 +6561,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
+          one: '{0} pie cúbico',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
@@ -5922,7 +6583,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
+          one: '{0} pulgada cúbica',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
@@ -5988,7 +6649,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
+          one: '{0} litro',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
@@ -6076,7 +6737,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
+          one: '{0} pinta métrica',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
@@ -6120,7 +6781,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
+          one: '{0} acre-pie',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
@@ -6142,6 +6803,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'bu',
+          one: '{0} bushel',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
@@ -6207,7 +6869,7 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
+          one: '{0} cuarto',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
@@ -6361,13 +7023,13 @@ class UnitsEs implements Units {
         short: UnitCountPattern(
           _locale,
           'bbl',
-          one: '{0} bbl',
+          one: '{0} barril',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bbl',
-          one: '{0} bbl',
+          one: '{0} barril',
           other: '{0} bbl',
         ),
       );
@@ -6523,6 +7185,94 @@ class UnitsEs implements Units {
           'qt imp',
           one: '{0}qt imp',
           other: '{0}qt imp',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0} luz',
+          other: '{0} luz',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'luz',
+          one: '{0}luz',
+          other: '{0}luz',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'partes por millardo',
+          one: '{0} parte por millardo',
+          other: '{0} partes por millardo',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'partes/millardo',
+          one: '{0} parte por millardo',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'partes/millardo',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0} noche',
+          other: '{0} noches',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0} noche',
+          other: '{0} noches',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'noches',
+          one: '{0}noche',
+          other: '{0}noches',
         ),
       );
 }
@@ -7789,6 +8539,10 @@ class TerritoriesEs implements Territories {
       'CP',
       'Isla Clipperton',
     ),
+    'CQ': Territory(
+      'CQ',
+      'Región desconocida (CQ)',
+    ),
     'CR': Territory(
       'CR',
       'Costa Rica',
@@ -8643,6 +9397,1756 @@ class TerritoriesEs implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabue',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesEs extends TimeZones {
+  TimeZonesEs._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'hora de {0}',
+            regionFormatDaylight: 'horario de verano de {0}',
+            regionFormatStandard: 'horario estándar de {0}',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Anguilla': TimeZoneNames(
+      exemplarCity: 'Anguila',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      exemplarCity: 'Araguaína',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Río Gallegos',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      exemplarCity: 'Tucumán',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: 'Asunción',
+    ),
+    'America/Bahia': TimeZoneNames(
+      exemplarCity: 'Bahía',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'Bahía de Banderas',
+    ),
+    'America/Belem': TimeZoneNames(
+      exemplarCity: 'Belén',
+    ),
+    'America/Belize': TimeZoneNames(
+      exemplarCity: 'Belice',
+    ),
+    'America/Bogota': TimeZoneNames(
+      exemplarCity: 'Bogotá',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: 'Cancún',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      exemplarCity: 'Cayena',
+    ),
+    'America/Cayman': TimeZoneNames(
+      exemplarCity: 'Caimán',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: 'Ciudad Juárez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: 'Atikokan',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      exemplarCity: 'Córdoba',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      exemplarCity: 'Cuiabá',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: 'Curazao',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      exemplarCity: 'Eirunepé',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: 'Nuuk',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      exemplarCity: 'Gran Turca',
+    ),
+    'America/Grenada': TimeZoneNames(
+      exemplarCity: 'Granada',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      exemplarCity: 'Guadalupe',
+    ),
+    'America/Havana': TimeZoneNames(
+      exemplarCity: 'La Habana',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: 'Vevay, Indiana',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      exemplarCity: 'Indianápolis',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Monticello, Kentucky',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      exemplarCity: 'Los Ángeles',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
+    'America/Maceio': TimeZoneNames(
+      exemplarCity: 'Maceió',
+    ),
+    'America/Manaus': TimeZoneNames(
+      exemplarCity: 'Manaos',
+    ),
+    'America/Martinique': TimeZoneNames(
+      exemplarCity: 'Martinica',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      exemplarCity: 'Mazatlán',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: 'Mérida',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      exemplarCity: 'Ciudad de México',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      exemplarCity: 'Miquelón',
+    ),
+    'America/New_York': TimeZoneNames(
+      exemplarCity: 'Nueva York',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Beulah, Dakota del Norte',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'New Salem, Dakota del Norte',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Center, Dakota del Norte',
+    ),
+    'America/Panama': TimeZoneNames(
+      exemplarCity: 'Panamá',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      exemplarCity: 'Puerto Príncipe',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      exemplarCity: 'Puerto España',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      exemplarCity: 'Río Branco',
+    ),
+    'America/Santarem': TimeZoneNames(
+      exemplarCity: 'Santarém',
+    ),
+    'America/Santiago': TimeZoneNames(
+      exemplarCity: 'Santiago de Chile',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      exemplarCity: 'São Paulo',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: 'San Bartolomé',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: 'San Juan de Terranova',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: 'San Cristóbal',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: 'Santa Lucía',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: 'St. Thomas',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: 'San Vicente',
+    ),
+    'America/Tortola': TimeZoneNames(
+      exemplarCity: 'Tórtola',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      exemplarCity: 'Bermudas',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: 'Canarias',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: 'Cabo Verde',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: 'Islas Feroe',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      exemplarCity: 'Reikiavik',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: 'Georgia del Sur',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: 'Santa Elena',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      exemplarCity: 'Ámsterdam',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      exemplarCity: 'Astracán',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: 'Atenas',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: 'Belgrado',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      exemplarCity: 'Berlín',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: 'Bruselas',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: 'Bucarest',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: 'Chisináu',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: 'Copenhague',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'hora de verano de Irlanda',
+      ),
+      exemplarCity: 'Dublín',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      exemplarCity: 'Guernesey',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      exemplarCity: 'Isla de Man',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      exemplarCity: 'Estambul',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      exemplarCity: 'Kaliningrado',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: 'Kiev',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      exemplarCity: 'Kírov',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: 'Lisboa',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      exemplarCity: 'Liubliana',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'hora de verano británica',
+      ),
+      exemplarCity: 'Londres',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: 'Luxemburgo',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      exemplarCity: 'Mónaco',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: 'Moscú',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      exemplarCity: 'París',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: 'Praga',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: 'Roma',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      exemplarCity: 'Sarátov',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      exemplarCity: 'Simferópol',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      exemplarCity: 'Skopie',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      exemplarCity: 'Sofía',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      exemplarCity: 'Estocolmo',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      exemplarCity: 'Tallin',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: 'Tirana',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: 'Uliánovsk',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      exemplarCity: 'El Vaticano',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: 'Viena',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      exemplarCity: 'Vilna',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      exemplarCity: 'Volgogrado',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: 'Varsovia',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: 'Zúrich',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      exemplarCity: 'Abiyán',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      exemplarCity: 'Acra',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: 'Adís Abeba',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: 'Argel',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: 'Asmara',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      exemplarCity: 'Bisáu',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      exemplarCity: 'El Cairo',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      exemplarCity: 'Conakri',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      exemplarCity: 'Dar es-Salam',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      exemplarCity: 'Yibuti',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      exemplarCity: 'Duala',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      exemplarCity: 'El Aaiún',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      exemplarCity: 'Johannesburgo',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      exemplarCity: 'Jartum',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: 'Lomé',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: 'Mogadiscio',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: 'Yamena',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      exemplarCity: 'Nuakchot',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      exemplarCity: 'Uagadugú',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      exemplarCity: 'Portonovo',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: 'Santo Tomé',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      exemplarCity: 'Trípoli',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      exemplarCity: 'Túnez',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      exemplarCity: 'Adén',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      exemplarCity: 'Ammán',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      exemplarCity: 'Anádyr',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: 'Aktobe',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: 'Asjabad',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: 'Bagdad',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      exemplarCity: 'Baréin',
+    ),
+    'Asia/Baku': TimeZoneNames(
+      exemplarCity: 'Bakú',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      exemplarCity: 'Barnaúl',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      exemplarCity: 'Brunéi',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: 'Calcuta',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: 'Chitá',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: 'Damasco',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      exemplarCity: 'Daca',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      exemplarCity: 'Dubái',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: 'Dusambé',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      exemplarCity: 'Hebrón',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      exemplarCity: 'Yakarta',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      exemplarCity: 'Jerusalén',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: 'Katmandú',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      exemplarCity: 'Khandiga',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: 'Macao',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      exemplarCity: 'Magadán',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      exemplarCity: 'Makasar',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      exemplarCity: 'Mascate',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      exemplarCity: 'Catar',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: 'Kostanái',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: 'Kyzylorda',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: 'Yangón (Rangún)',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      exemplarCity: 'Riad',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: 'Ciudad Ho Chi Minh',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: 'Sajalín',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      exemplarCity: 'Samarcanda',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      exemplarCity: 'Seúl',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      exemplarCity: 'Shanghái',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      exemplarCity: 'Singapur',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      exemplarCity: 'Srednekolimsk',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      exemplarCity: 'Taipéi',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: 'Taskent',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      exemplarCity: 'Tiflis',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: 'Teherán',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      exemplarCity: 'Timbu',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      exemplarCity: 'Tokio',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      exemplarCity: 'Ulán Bator',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: 'Ürümqi',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      exemplarCity: 'Vientián',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: 'Ekaterimburgo',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'Ereván',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      exemplarCity: 'Navidad',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: 'Comoras',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: 'Mahé',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: 'Maldivas',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      exemplarCity: 'Mauricio',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: 'Reunión',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      exemplarCity: 'Adelaida',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      exemplarCity: 'Sídney',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: 'Isla de Pascua',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Enderbury',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      exemplarCity: 'Fiyi',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      exemplarCity: 'Galápagos',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      exemplarCity: 'Honolulú',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: 'Numea',
+    ),
+    'Pacific/Palau': TimeZoneNames(
+      exemplarCity: 'Palaos',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: 'Pohnpei',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      exemplarCity: 'Saipán',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      exemplarCity: 'Tahití',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: 'Chuuk',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Dumont d’Urville',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'tiempo universal coordinado',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: 'Ciudad desconocida',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'Hora de Acre',
+        standard: 'Hora estándar de Acre',
+        daylight: 'Hora de verano de Acre',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'hora de Afganistán',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'hora de África central',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'hora de África oriental',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'hora de Sudáfrica',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'hora de África occidental',
+        standard: 'hora estándar de África occidental',
+        daylight: 'hora de verano de África occidental',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'hora de Alaska',
+        standard: 'hora estándar de Alaska',
+        daylight: 'hora de verano de Alaska',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'hora del Amazonas',
+        standard: 'hora estándar del Amazonas',
+        daylight: 'hora de verano del Amazonas',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'hora central',
+        standard: 'hora estándar central',
+        daylight: 'hora de verano central',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'hora oriental',
+        standard: 'hora estándar oriental',
+        daylight: 'hora de verano oriental',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'hora de las Montañas Rocosas',
+        standard: 'hora estándar de las Montañas Rocosas',
+        daylight: 'hora de verano de las Montañas Rocosas',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'hora del Pacífico',
+        standard: 'hora estándar del Pacífico',
+        daylight: 'hora de verano del Pacífico',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'hora de Anadyr',
+        standard: 'hora estándar de Anadyr',
+        daylight: 'hora de verano de Anadyr',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'hora de Apia',
+        standard: 'hora estándar de Apia',
+        daylight: 'horario de verano de Apia',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'Hora de Aktau',
+        standard: 'Hora estándar de Aktau',
+        daylight: 'Hora de verano de Aktau',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Hora de Aktobe',
+        standard: 'Hora estándar de Aktobe',
+        daylight: 'Hora de verano de Aktobe',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'hora de Arabia',
+        standard: 'hora estándar de Arabia',
+        daylight: 'hora de verano de Arabia',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'hora de Argentina',
+        standard: 'hora estándar de Argentina',
+        daylight: 'hora de verano de Argentina',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'hora de Argentina occidental',
+        standard: 'hora estándar de Argentina occidental',
+        daylight: 'hora de verano de Argentina occidental',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'hora de Armenia',
+        standard: 'hora estándar de Armenia',
+        daylight: 'hora de verano de Armenia',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'hora del Atlántico',
+        standard: 'hora estándar del Atlántico',
+        daylight: 'hora de verano del Atlántico',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'hora de Australia central',
+        standard: 'hora estándar de Australia central',
+        daylight: 'hora de verano de Australia central',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'hora de Australia centroccidental',
+        standard: 'hora estándar de Australia centroccidental',
+        daylight: 'hora de verano de Australia centroccidental',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'hora de Australia oriental',
+        standard: 'hora estándar de Australia oriental',
+        daylight: 'hora de verano de Australia oriental',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'hora de Australia occidental',
+        standard: 'hora estándar de Australia occidental',
+        daylight: 'hora de verano de Australia occidental',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'hora de Azerbaiyán',
+        standard: 'hora estándar de Azerbaiyán',
+        daylight: 'hora de verano de Azerbaiyán',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'hora de las Azores',
+        standard: 'hora estándar de las Azores',
+        daylight: 'hora de verano de las Azores',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'hora de Bangladés',
+        standard: 'hora estándar de Bangladés',
+        daylight: 'hora de verano de Bangladés',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'hora de Bután',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'hora de Bolivia',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'hora de Brasilia',
+        standard: 'hora estándar de Brasilia',
+        daylight: 'hora de verano de Brasilia',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'hora de Brunéi',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'hora de Cabo Verde',
+        standard: 'hora estándar de Cabo Verde',
+        daylight: 'hora de verano de Cabo Verde',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'hora estándar de Chamorro',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'hora de Chatham',
+        standard: 'hora estándar de Chatham',
+        daylight: 'hora de verano de Chatham',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'hora de Chile',
+        standard: 'hora estándar de Chile',
+        daylight: 'hora de verano de Chile',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'hora de China',
+        standard: 'hora estándar de China',
+        daylight: 'hora de verano de China',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'hora de la Isla de Navidad',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'hora de las Islas Cocos',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'hora de Colombia',
+        standard: 'hora estándar de Colombia',
+        daylight: 'hora de verano de Colombia',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'hora de las Islas Cook',
+        standard: 'hora estándar de las Islas Cook',
+        daylight: 'hora de verano media de las Islas Cook',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'hora de Cuba',
+        standard: 'hora estándar de Cuba',
+        daylight: 'hora de verano de Cuba',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'hora de Davis',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'hora de Dumont-d’Urville',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'hora de Timor Oriental',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'hora de la isla de Pascua',
+        standard: 'hora estándar de la isla de Pascua',
+        daylight: 'hora de verano de la isla de Pascua',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'hora de Ecuador',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'hora de Europa central',
+        standard: 'hora estándar de Europa central',
+        daylight: 'hora de verano de Europa central',
+      ),
+      short: TimeZoneName(
+        generic: 'CET',
+        standard: 'CET',
+        daylight: 'CEST',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'hora de Europa oriental',
+        standard: 'hora estándar de Europa oriental',
+        daylight: 'hora de verano de Europa oriental',
+      ),
+      short: TimeZoneName(
+        generic: 'EET',
+        standard: 'EET',
+        daylight: 'EEST',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'hora del extremo oriental de Europa',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'hora de Europa occidental',
+        standard: 'hora estándar de Europa occidental',
+        daylight: 'hora de verano de Europa occidental',
+      ),
+      short: TimeZoneName(
+        generic: 'WET',
+        standard: 'WET',
+        daylight: 'WEST',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'hora de las islas Malvinas',
+        standard: 'hora estándar de las islas Malvinas',
+        daylight: 'hora de verano de las islas Malvinas',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'hora de Fiyi',
+        standard: 'hora estándar de Fiyi',
+        daylight: 'hora de verano de Fiyi',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'hora de la Guayana Francesa',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'hora de Antártida y Territorios Australes Franceses',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'hora de Galápagos',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'hora de Gambier',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'hora de Georgia',
+        standard: 'hora estándar de Georgia',
+        daylight: 'hora de verano de Georgia',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'hora de las islas Gilbert',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'hora del meridiano de Greenwich',
+      ),
+      short: TimeZoneName(
+        standard: 'GMT',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'hora de Groenlandia oriental',
+        standard: 'hora estándar de Groenlandia oriental',
+        daylight: 'hora de verano de Groenlandia oriental',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'hora de Groenlandia occidental',
+        standard: 'hora estándar de Groenlandia occidental',
+        daylight: 'hora de verano de Groenlandia occidental',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'Hora estándar de Guam',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'hora estándar del Golfo',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'hora de Guyana',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'hora de Hawái-Aleutianas',
+        standard: 'hora estándar de Hawái-Aleutianas',
+        daylight: 'hora de verano de Hawái-Aleutianas',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'hora de Hong Kong',
+        standard: 'hora estándar de Hong Kong',
+        daylight: 'hora de verano de Hong Kong',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'hora de Hovd',
+        standard: 'hora estándar de Hovd',
+        daylight: 'hora de verano de Hovd',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'hora estándar de la India',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'hora del océano Índico',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'hora de Indochina',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'hora de Indonesia central',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'hora de Indonesia oriental',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'hora de Indonesia occidental',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'hora de Irán',
+        standard: 'hora estándar de Irán',
+        daylight: 'hora de verano de Irán',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'hora de Irkutsk',
+        standard: 'hora estándar de Irkutsk',
+        daylight: 'hora de verano de Irkutsk',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'hora de Israel',
+        standard: 'hora estándar de Israel',
+        daylight: 'hora de verano de Israel',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'hora de Japón',
+        standard: 'hora estándar de Japón',
+        daylight: 'hora de verano de Japón',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'hora de Kamchatka',
+        standard: 'hora estándar de Kamchatka',
+        daylight: 'hora de verano de Kamchatka',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'hora de Kazajistán',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'hora de Kazajistán oriental',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'hora de Kazajistán occidental',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'hora de Corea',
+        standard: 'hora estándar de Corea',
+        daylight: 'hora de verano de Corea',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'hora de Kosrae',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'hora de Krasnoyarsk',
+        standard: 'hora estándar de Krasnoyarsk',
+        daylight: 'hora de verano de Krasnoyarsk',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'hora de Kirguistán',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'Hora de Sri Lanka',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'hora de las Espóradas Ecuatoriales',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'hora de Lord Howe',
+        standard: 'hora estándar de Lord Howe',
+        daylight: 'hora de verano de Lord Howe',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'Hora de Macao',
+        standard: 'Hora estándar de Macao',
+        daylight: 'Hora de verano de Macao',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'hora de Magadán',
+        standard: 'hora estándar de Magadán',
+        daylight: 'hora de verano de Magadán',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'hora de Malasia',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'hora de Maldivas',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'hora de Marquesas',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'hora de las Islas Marshall',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'hora de Mauricio',
+        standard: 'hora estándar de Mauricio',
+        daylight: 'hora de verano de Mauricio',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'hora de Mawson',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'hora del Pacífico de México',
+        standard: 'hora estándar del Pacífico de México',
+        daylight: 'hora de verano del Pacífico de México',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'hora de Ulán Bator',
+        standard: 'hora estándar de Ulán Bator',
+        daylight: 'hora de verano de Ulán Bator',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'hora de Moscú',
+        standard: 'hora estándar de Moscú',
+        daylight: 'hora de verano de Moscú',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'hora de Myanmar',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'hora de Nauru',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'hora de Nepal',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'hora de Nueva Caledonia',
+        standard: 'hora estándar de Nueva Caledonia',
+        daylight: 'hora de verano de Nueva Caledonia',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'hora de Nueva Zelanda',
+        standard: 'hora estándar de Nueva Zelanda',
+        daylight: 'hora de verano de Nueva Zelanda',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'hora de Terranova',
+        standard: 'hora estándar de Terranova',
+        daylight: 'hora de verano de Terranova',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'hora de Niue',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'hora de la isla Norfolk',
+        standard: 'hora estándar de la isla Norfolk',
+        daylight: 'hora de verano de la isla Norfolk',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'hora de Fernando de Noronha',
+        standard: 'hora estándar de Fernando de Noronha',
+        daylight: 'hora de verano de Fernando de Noronha',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'Hora de las Islas Marianas del Norte',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'hora de Novosibirsk',
+        standard: 'hora estándar de Novosibirsk',
+        daylight: 'hora de verano de Novosibirsk',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'hora de Omsk',
+        standard: 'hora estándar de Omsk',
+        daylight: 'hora de verano de Omsk',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'hora de Pakistán',
+        standard: 'hora estándar de Pakistán',
+        daylight: 'hora de verano de Pakistán',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'hora de Palaos',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'hora de Papúa Nueva Guinea',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'hora de Paraguay',
+        standard: 'hora estándar de Paraguay',
+        daylight: 'hora de verano de Paraguay',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'hora de Perú',
+        standard: 'hora estándar de Perú',
+        daylight: 'hora de verano de Perú',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'hora de Filipinas',
+        standard: 'hora estándar de Filipinas',
+        daylight: 'hora de verano de Filipinas',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'hora de las Islas Fénix',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'hora de San Pedro y Miquelón',
+        standard: 'hora estándar de San Pedro y Miquelón',
+        daylight: 'hora de verano de San Pedro y Miquelón',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'hora de Pitcairn',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'hora de Pohnpei',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'hora de Pyongyang',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Hora de Qyzylorda',
+        standard: 'Hora estándar de Qyzylorda',
+        daylight: 'Hora de verano de Qyzylorda',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'hora de Reunión',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'hora de Rothera',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'hora de Sajalín',
+        standard: 'hora estándar de Sajalín',
+        daylight: 'hora de verano de Sajalín',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'hora de Samara',
+        standard: 'hora estándar de Samara',
+        daylight: 'hora de verano de Samara',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'hora de Samoa',
+        standard: 'hora estándar de Samoa',
+        daylight: 'hora de verano de Samoa',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'hora de Seychelles',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'hora de Singapur',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'hora de las Islas Salomón',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'hora de Georgia del Sur',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'hora de Surinam',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'hora de Syowa',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'hora de Tahití',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'hora de Taipéi',
+        standard: 'hora estándar de Taipéi',
+        daylight: 'hora de verano de Taipéi',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'hora de Tayikistán',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'hora de Tokelau',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'hora de Tonga',
+        standard: 'hora estándar de Tonga',
+        daylight: 'hora de verano de Tonga',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'hora de Chuuk',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'hora de Turkmenistán',
+        standard: 'hora estándar de Turkmenistán',
+        daylight: 'hora de verano de Turkmenistán',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'hora de Tuvalu',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'hora de Uruguay',
+        standard: 'hora estándar de Uruguay',
+        daylight: 'hora de verano de Uruguay',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'hora de Uzbekistán',
+        standard: 'hora estándar de Uzbekistán',
+        daylight: 'hora de verano de Uzbekistán',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'hora de Vanuatu',
+        standard: 'hora estándar de Vanuatu',
+        daylight: 'hora de verano de Vanuatu',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'hora de Venezuela',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'hora de Vladivostok',
+        standard: 'hora estándar de Vladivostok',
+        daylight: 'hora de verano de Vladivostok',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'hora de Volgogrado',
+        standard: 'hora estándar de Volgogrado',
+        daylight: 'hora de verano de Volgogrado',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'hora de Vostok',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'hora de la isla Wake',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'hora de Wallis y Futuna',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'hora de Yakutsk',
+        standard: 'hora estándar de Yakutsk',
+        daylight: 'hora de verano de Yakutsk',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'hora de Ekaterimburgo',
+        standard: 'hora estándar de Ekaterimburgo',
+        daylight: 'hora de verano de Ekaterimburgo',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'hora de Yukón',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

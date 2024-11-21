@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'uk';
 
-/// Translations in Ukrainian of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataUk implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataUk();
@@ -22,6 +20,14 @@ class CommonLocaleDataUk implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsUk._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsUk._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsUk._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataUk implements CommonLocaleData {
   static final _territories = TerritoriesUk._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesUk._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesUk extends Languages {
@@ -260,7 +270,7 @@ class LanguagesUk extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'харʼянві',
     ),
     'bgn': Language(
       'bgn',
@@ -293,6 +303,10 @@ class LanguagesUk extends Languages {
     'bla': Language(
       'bla',
       'сіксіка',
+    ),
+    'blo': Language(
+      'blo',
+      'анії',
     ),
     'bm': Language(
       'bm',
@@ -524,13 +538,9 @@ class LanguagesUk extends Languages {
       'de',
       'німецька',
     ),
-    'de-AT': Language(
-      'de-AT',
-      'німецька (Австрія)',
-    ),
     'de-CH': Language(
       'de-CH',
-      'німецька (Швейцарія)',
+      'верхньонімецька (Швейцарія)',
     ),
     'del': Language(
       'del',
@@ -620,24 +630,6 @@ class LanguagesUk extends Languages {
       'en',
       'англійська',
     ),
-    'en-AU': Language(
-      'en-AU',
-      'англійська (Австралія)',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'англійська (Канада)',
-    ),
-    'en-GB': Language(
-      'en-GB',
-      'англійська (Велика Британія)',
-      short: 'англійська (Брит.)',
-    ),
-    'en-US': Language(
-      'en-US',
-      'англійська (Сполучені Штати)',
-      short: 'англійська (США)',
-    ),
     'enm': Language(
       'enm',
       'середньоанглійська',
@@ -649,18 +641,6 @@ class LanguagesUk extends Languages {
     'es': Language(
       'es',
       'іспанська',
-    ),
-    'es-419': Language(
-      'es-419',
-      'латиноамериканська іспанська',
-    ),
-    'es-ES': Language(
-      'es-ES',
-      'європейська іспанська',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'мексиканська іспанська',
     ),
     'et': Language(
       'et',
@@ -717,14 +697,6 @@ class LanguagesUk extends Languages {
     'fr': Language(
       'fr',
       'французька',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'французька (Канада)',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'французька (Швейцарія)',
     ),
     'frc': Language(
       'frc',
@@ -832,7 +804,7 @@ class LanguagesUk extends Languages {
     ),
     'gsw': Language(
       'gsw',
-      'швейцарська німецька',
+      'німецька (Швейцарія)',
     ),
     'gu': Language(
       'gu',
@@ -877,11 +849,6 @@ class LanguagesUk extends Languages {
     'hi': Language(
       'hi',
       'гінді',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'гінді (латиниця)',
-      variant: 'гінгліш',
     ),
     'hil': Language(
       'hil',
@@ -1207,6 +1174,10 @@ class LanguagesUk extends Languages {
       'kwk',
       'кваквала',
     ),
+    'kxv': Language(
+      'kxv',
+      'куві',
+    ),
     'ky': Language(
       'ky',
       'киргизька',
@@ -1259,6 +1230,10 @@ class LanguagesUk extends Languages {
       'lkt',
       'лакота',
     ),
+    'lmo': Language(
+      'lmo',
+      'ломбардська',
+    ),
     'ln': Language(
       'ln',
       'лінгала',
@@ -1290,6 +1265,10 @@ class LanguagesUk extends Languages {
     'lt': Language(
       'lt',
       'литовська',
+    ),
+    'ltg': Language(
+      'ltg',
+      'латгальська',
     ),
     'lu': Language(
       'lu',
@@ -1739,14 +1718,6 @@ class LanguagesUk extends Languages {
       'pt',
       'португальська',
     ),
-    'pt-BR': Language(
-      'pt-BR',
-      'бразильська португальська',
-    ),
-    'pt-PT': Language(
-      'pt-PT',
-      'європейська португальська',
-    ),
     'qu': Language(
       'qu',
       'кечуа',
@@ -1821,7 +1792,7 @@ class LanguagesUk extends Languages {
     ),
     'sah': Language(
       'sah',
-      'саха',
+      'якутська',
     ),
     'sam': Language(
       'sam',
@@ -2039,6 +2010,10 @@ class LanguagesUk extends Languages {
       'syr',
       'сирійська',
     ),
+    'szl': Language(
+      'szl',
+      'сілезька',
+    ),
     'ta': Language(
       'ta',
       'тамільська',
@@ -2233,11 +2208,15 @@ class LanguagesUk extends Languages {
     ),
     'vec': Language(
       'vec',
-      'vec',
+      'венеційська',
     ),
     'vi': Language(
       'vi',
       'вʼєтнамська',
+    ),
+    'vmw': Language(
+      'vmw',
+      'макува',
     ),
     'vo': Language(
       'vo',
@@ -2281,7 +2260,7 @@ class LanguagesUk extends Languages {
     ),
     'wuu': Language(
       'wuu',
-      'уська китайська',
+      'китайська уська',
     ),
     'xal': Language(
       'xal',
@@ -2290,6 +2269,10 @@ class LanguagesUk extends Languages {
     'xh': Language(
       'xh',
       'кхоса',
+    ),
+    'xnr': Language(
+      'xnr',
+      'кангрі',
     ),
     'xog': Language(
       'xog',
@@ -2380,6 +2363,726 @@ class LanguagesUk extends Languages {
   }, (key) => key.toLowerCase());
 }
 
+class ScriptsUk extends Scripts {
+  ScriptsUk._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'адлам',
+    ),
+    'Afak': Script(
+      'Afak',
+      'афака',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'кавказька албанська',
+    ),
+    'Ahom': Script(
+      'Ahom',
+      'ахом',
+    ),
+    'Arab': Script(
+      'Arab',
+      'арабиця',
+      variant: 'персько-арабська',
+    ),
+    'Aran': Script(
+      'Aran',
+      'насталік',
+    ),
+    'Armi': Script(
+      'Armi',
+      'армі',
+    ),
+    'Armn': Script(
+      'Armn',
+      'вірменська',
+    ),
+    'Avst': Script(
+      'Avst',
+      'авестійський',
+    ),
+    'Bali': Script(
+      'Bali',
+      'балійський',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'бамум',
+    ),
+    'Bass': Script(
+      'Bass',
+      'басса',
+    ),
+    'Batk': Script(
+      'Batk',
+      'батак',
+    ),
+    'Beng': Script(
+      'Beng',
+      'бенгальська',
+    ),
+    'Blis': Script(
+      'Blis',
+      'символи Блісса',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'бопомофо',
+    ),
+    'Brah': Script(
+      'Brah',
+      'брахмі',
+    ),
+    'Brai': Script(
+      'Brai',
+      'шрифт Брайля',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'бугійський',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'бухід',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'чакма',
+    ),
+    'Cans': Script(
+      'Cans',
+      'уніфіковані символи канадських тубільців',
+    ),
+    'Cari': Script(
+      'Cari',
+      'каріанський',
+    ),
+    'Cham': Script(
+      'Cham',
+      'хамітський',
+    ),
+    'Cher': Script(
+      'Cher',
+      'черокі',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'кирт',
+    ),
+    'Copt': Script(
+      'Copt',
+      'коптський',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'кіпрський',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'кирилиця',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'давньоцерковнословʼянський',
+    ),
+    'Deva': Script(
+      'Deva',
+      'деванагарі',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'дезерет',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'єгипетський демотичний',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'єгипетський ієратичний',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'єгипетський ієрогліфічний',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'ефіопська',
+    ),
+    'Geok': Script(
+      'Geok',
+      'кхутсурі',
+    ),
+    'Geor': Script(
+      'Geor',
+      'грузинська',
+    ),
+    'Glag': Script(
+      'Glag',
+      'глаголичний',
+    ),
+    'Goth': Script(
+      'Goth',
+      'готичний',
+    ),
+    'Grek': Script(
+      'Grek',
+      'грецька',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'гуджараті',
+    ),
+    'Guru': Script(
+      'Guru',
+      'гурмухі',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'хань',
+    ),
+    'Hang': Script(
+      'Hang',
+      'хангиль',
+    ),
+    'Hani': Script(
+      'Hani',
+      'китайська',
+    ),
+    'Hano': Script(
+      'Hano',
+      'хануну',
+    ),
+    'Hans': Script(
+      'Hans',
+      'спрощена',
+      standAlone: 'китайська спрощена',
+    ),
+    'Hant': Script(
+      'Hant',
+      'традиційна',
+      standAlone: 'китайська традиційна',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'іврит',
+    ),
+    'Hira': Script(
+      'Hira',
+      'хірагана',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'пахау хмонг',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'японські силабарії',
+    ),
+    'Hung': Script(
+      'Hung',
+      'давньоугорський',
+    ),
+    'Inds': Script(
+      'Inds',
+      'харапський',
+    ),
+    'Ital': Script(
+      'Ital',
+      'давньоіталійський',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'чамо',
+    ),
+    'Java': Script(
+      'Java',
+      'яванський',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'японська',
+    ),
+    'Kali': Script(
+      'Kali',
+      'кая лі',
+    ),
+    'Kana': Script(
+      'Kana',
+      'катакана',
+    ),
+    'Khar': Script(
+      'Khar',
+      'кхароштхі',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'кхмерська',
+    ),
+    'Knda': Script(
+      'Knda',
+      'каннада',
+    ),
+    'Kore': Script(
+      'Kore',
+      'корейська',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'каїті',
+    ),
+    'Lana': Script(
+      'Lana',
+      'ланна',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'лаоська',
+    ),
+    'Latf': Script(
+      'Latf',
+      'латинський фрактурний',
+    ),
+    'Latg': Script(
+      'Latg',
+      'латинський гельський',
+    ),
+    'Latn': Script(
+      'Latn',
+      'латиниця',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'лепча',
+    ),
+    'Limb': Script(
+      'Limb',
+      'лімбу',
+    ),
+    'Lina': Script(
+      'Lina',
+      'лінійний А',
+    ),
+    'Linb': Script(
+      'Linb',
+      'лінійний В',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'абетка Фрейзера',
+    ),
+    'Loma': Script(
+      'Loma',
+      'лома',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'лікійський',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'лідійський',
+    ),
+    'Mand': Script(
+      'Mand',
+      'мандейський',
+    ),
+    'Mani': Script(
+      'Mani',
+      'маніхейський',
+    ),
+    'Maya': Script(
+      'Maya',
+      'майя ієрогліфічний',
+    ),
+    'Mero': Script(
+      'Mero',
+      'мероїтський',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'малаяламська',
+    ),
+    'Mong': Script(
+      'Mong',
+      'монгольська',
+    ),
+    'Moon': Script(
+      'Moon',
+      'мун',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'мейтей майєк',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'мʼянмська',
+    ),
+    'Newa': Script(
+      'Newa',
+      'нева',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'нко',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'огамічний',
+    ),
+    'Olck': Script(
+      'Olck',
+      'ол-чикі',
+      variant: 'сантальська',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'орхонський',
+    ),
+    'Orya': Script(
+      'Orya',
+      'орія',
+    ),
+    'Osge': Script(
+      'Osge',
+      'осейджиська',
+    ),
+    'Osma': Script(
+      'Osma',
+      'османський',
+    ),
+    'Perm': Script(
+      'Perm',
+      'давньопермський',
+    ),
+    'Phag': Script(
+      'Phag',
+      'пхагс-па',
+    ),
+    'Phli': Script(
+      'Phli',
+      'пехлеві написів',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'пехлеві релігійний',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'пехлеві літературний',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'фінікійський',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'писемність Полларда',
+    ),
+    'Prti': Script(
+      'Prti',
+      'парфянський',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'зоджі',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'реджанг',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'ханіфі',
+    ),
+    'Roro': Script(
+      'Roro',
+      'ронго-ронго',
+    ),
+    'Runr': Script(
+      'Runr',
+      'рунічний',
+    ),
+    'Samr': Script(
+      'Samr',
+      'самаритянський',
+    ),
+    'Sara': Script(
+      'Sara',
+      'сараті',
+    ),
+    'Saur': Script(
+      'Saur',
+      'саураштра',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'знаковий',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'шоу',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'сингальська',
+    ),
+    'Sund': Script(
+      'Sund',
+      'сунданська',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'сілоті нагрі',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'сирійська',
+    ),
+    'Syre': Script(
+      'Syre',
+      'давньосирійський естрангело',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'давньосирійський західний',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'давньосирійський східний',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'тагбанва',
+    ),
+    'Tale': Script(
+      'Tale',
+      'тай-лі',
+    ),
+    'Talu': Script(
+      'Talu',
+      'новий тайський луе',
+    ),
+    'Taml': Script(
+      'Taml',
+      'тамільська',
+    ),
+    'Tang': Script(
+      'Tang',
+      'тангут',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'тай-вʼєт',
+    ),
+    'Telu': Script(
+      'Telu',
+      'телугу',
+    ),
+    'Teng': Script(
+      'Teng',
+      'тенгвар',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'тифінаг',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'тагальський',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'таана',
+    ),
+    'Thai': Script(
+      'Thai',
+      'тайська',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'тибетська',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'угаритський',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'ваї',
+    ),
+    'Visp': Script(
+      'Visp',
+      'видиме мовлення',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'давньоперський',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'шумеро-аккадський клінопис',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'йї',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'успадкована',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'математична',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'емодзі',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'символьна',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'безписемна',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'звичайна',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'невідома система письма',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsUk extends Variants {
+  VariantsUk._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'Традиційна німецька орфографія',
+    ),
+    '1994': Variant(
+      '1994',
+      'Стандартизована резьянська орфографія',
+    ),
+    '1996': Variant(
+      '1996',
+      'Нова німецька орфографія з 1996 р.',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'Пізньосередньофранцузська до 1606',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'Східновірменський',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'Західновірменський',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'Уніфікований турецький латинський алфавіт',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'Діалект Сан-Джорджіо/Біла',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'Бунтлінг',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'Міжнародний фонетичний алфавіт',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'Уральський фонетичний алфавіт',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'Ліповазський діалект резьянської мови',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'Монотонічний',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'Натісонський діалект',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Діалект Нджіва',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'Осоянський діалект',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'Романізація піньїн',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'Політонічний',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Компʼютерний',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'Нова орфографія',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'Резьянський',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'Сахо',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'Шотландська англійська',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'Ліверпульський діалект',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'Діалект Столвіца/Солбіка',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'Орфографія Тараскевича',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'Валенсійська',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Романізація Вейда-Джайлза',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
 class UnitsUk implements Units {
   UnitsUk._();
 
@@ -2444,6 +3147,18 @@ class UnitsUk implements Units {
         narrow: UnitPrefixPattern('й{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ронто{0}'),
+        short: UnitPrefixPattern('р{0}'),
+        narrow: UnitPrefixPattern('р{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('квекто{0}'),
+        short: UnitPrefixPattern('кв{0}'),
+        narrow: UnitPrefixPattern('кв{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('дека{0}'),
         short: UnitPrefixPattern('да{0}'),
@@ -2502,6 +3217,18 @@ class UnitsUk implements Units {
         long: UnitPrefixPattern('йота{0}'),
         short: UnitPrefixPattern('Й{0}'),
         narrow: UnitPrefixPattern('Й{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('рона{0}'),
+        short: UnitPrefixPattern('Р{0}'),
+        narrow: UnitPrefixPattern('Р{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('квета{0}'),
+        short: UnitPrefixPattern('Кв{0}'),
+        narrow: UnitPrefixPattern('Кв{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2640,10 +3367,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'об',
-          one: '{0} об',
-          few: '{0} об',
-          many: '{0} об',
-          other: '{0} об',
+          one: '{0}об',
+          few: '{0}об',
+          many: '{0}об',
+          other: '{0}об',
         ),
       );
 
@@ -2668,10 +3395,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'рад.',
-          one: '{0} рад.',
-          few: '{0} рад.',
-          many: '{0} рад.',
-          other: '{0} рад.',
+          one: '{0}рад.',
+          few: '{0}рад.',
+          many: '{0}рад.',
+          other: '{0}рад.',
         ),
       );
 
@@ -2688,17 +3415,17 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'градуси',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} градус',
+          few: '{0} градуси',
+          many: '{0} градусів',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} градус',
+          few: '{0} градуси',
+          many: '{0} градусів',
           other: '{0}°',
         ),
       );
@@ -2780,10 +3507,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'км²',
-          one: '{0} км²',
-          few: '{0} км²',
-          many: '{0} км²',
-          other: '{0} км²',
+          one: '{0}км²',
+          few: '{0}км²',
+          many: '{0}км²',
+          other: '{0}км²',
         ),
       );
 
@@ -2836,10 +3563,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'м²',
-          one: '{0} м²',
-          few: '{0} м²',
-          many: '{0} м²',
-          other: '{0} м²',
+          one: '{0}м²',
+          few: '{0}м²',
+          many: '{0}м²',
+          other: '{0}м²',
         ),
       );
 
@@ -2864,10 +3591,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'см²',
-          one: '{0} см²',
-          few: '{0} см²',
-          many: '{0} см²',
-          other: '{0} см²',
+          one: '{0}см²',
+          few: '{0}см²',
+          many: '{0}см²',
+          other: '{0}см²',
         ),
       );
 
@@ -2891,11 +3618,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'милі²',
-          one: '{0} мл²',
-          few: '{0} мл²',
-          many: '{0} мл²',
-          other: '{0} мл²',
+          'мл²',
+          one: '{0}мл²',
+          few: '{0}мл²',
+          many: '{0}мл²',
+          other: '{0}мл²',
         ),
       );
 
@@ -2919,11 +3646,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'акри',
-          one: '{0} акр',
-          few: '{0} акр',
-          many: '{0} акр',
-          other: '{0} акр',
+          'акр',
+          one: '{0}акр',
+          few: '{0}акр',
+          many: '{0}акр',
+          other: '{0}акр',
         ),
       );
 
@@ -2947,11 +3674,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ярди²',
-          one: '{0} ярд²',
-          few: '{0} ярди²',
-          many: '{0} ярдів²',
-          other: '{0} ярда²',
+          'ярд²',
+          one: '{0}ярд²',
+          few: '{0}ярд²',
+          many: '{0}ярд²',
+          other: '{0}ярд²',
         ),
       );
 
@@ -2976,10 +3703,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'фт²',
-          one: '{0} фт²',
-          few: '{0} фт²',
-          many: '{0} фт²',
-          other: '{0} фт²',
+          one: '{0}фт²',
+          few: '{0}фт²',
+          many: '{0}фт²',
+          other: '{0}фт²',
         ),
       );
 
@@ -3003,11 +3730,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'дюйми²',
-          one: '{0} дюйм²',
-          few: '{0} дюйми²',
-          many: '{0} дюймів²',
-          other: '{0} дюйма²',
+          'дюйм²',
+          one: '{0}дюйм²',
+          few: '{0}дюйм²',
+          many: '{0}дюйм²',
+          other: '{0}дюйм²',
         ),
       );
 
@@ -3031,8 +3758,8 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'дунам',
-          one: '{0}дунам',
+          'дун.',
+          one: '{0}дун.',
           few: '{0}дун.',
           many: '{0}дун.',
           other: '{0}дун.',
@@ -3060,10 +3787,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кар.',
-          one: '{0} кар.',
-          few: '{0} кар.',
-          many: '{0} кар.',
-          other: '{0} кар.',
+          one: '{0}кар',
+          few: '{0}кар',
+          many: '{0}кар',
+          other: '{0}кар',
         ),
       );
 
@@ -3088,10 +3815,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мг/дл',
-          one: '{0} мг/дл',
-          few: '{0} мг/дл',
-          many: '{0} мг/дл',
-          other: '{0} мг/дл',
+          one: '{0}мг/дл',
+          few: '{0}мг/дл',
+          many: '{0}мг/дл',
+          other: '{0}мг/дл',
         ),
       );
 
@@ -3107,7 +3834,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'мілімоль/літер',
+          'мілімоль/літр',
           one: '{0} ммоль/л',
           few: '{0} ммоль/л',
           many: '{0} ммоль/л',
@@ -3116,10 +3843,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ммоль/л',
-          one: '{0} ммоль/л',
-          few: '{0} ммоль/л',
-          many: '{0} ммоль/л',
-          other: '{0} ммоль/л',
+          one: '{0}ммоль/л',
+          few: '{0}ммоль/л',
+          many: '{0}ммоль/л',
+          other: '{0}ммоль/л',
         ),
       );
 
@@ -3155,7 +3882,7 @@ class UnitsUk implements Units {
   Unit get concentrPermillion => Unit(
         long: UnitCountPattern(
           _locale,
-          'мільйонні долі',
+          'м. д.',
           one: '{0} мільйонна доля',
           few: '{0} мільйонні долі',
           many: '{0} мільйонних доль',
@@ -3163,7 +3890,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'мільйонні долі',
+          'м. д.',
           one: '{0} м. д.',
           few: '{0} м. д.',
           many: '{0} м. д.',
@@ -3171,7 +3898,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'м. д.',
+          'м.д.',
           one: '{0}м.д.',
           few: '{0}м.д.',
           many: '{0}м.д.',
@@ -3183,7 +3910,7 @@ class UnitsUk implements Units {
   Unit get concentrPercent => Unit(
         long: UnitCountPattern(
           _locale,
-          'відсоток',
+          '%',
           one: '{0} відсоток',
           few: '{0} відсотки',
           many: '{0} відсотків',
@@ -3191,19 +3918,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'відсоток',
-          one: '{0}%',
-          few: '{0}%',
-          many: '{0}%',
-          other: '{0}%',
+          '%',
+          one: '{0} %',
+          few: '{0} %',
+          many: '{0} %',
+          other: '{0} %',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
-          one: '{0}%',
-          few: '{0}%',
-          many: '{0}%',
-          other: '{0}%',
+          one: '{0} %',
+          few: '{0} %',
+          many: '{0} %',
+          other: '{0} %',
         ),
       );
 
@@ -3211,7 +3938,7 @@ class UnitsUk implements Units {
   Unit get concentrPermille => Unit(
         long: UnitCountPattern(
           _locale,
-          'проміле',
+          '‰',
           one: '{0} проміле',
           few: '{0} проміле',
           many: '{0} проміле',
@@ -3219,19 +3946,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'проміле',
-          one: '{0}‰',
-          few: '{0}‰',
-          many: '{0}‰',
-          other: '{0}‰',
+          '‰',
+          one: '{0} ‰',
+          few: '{0} ‰',
+          many: '{0} ‰',
+          other: '{0} ‰',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‰',
-          one: '{0}‰',
-          few: '{0}‰',
-          many: '{0}‰',
-          other: '{0}‰',
+          one: '{0} ‰',
+          few: '{0} ‰',
+          many: '{0} ‰',
+          other: '{0} ‰',
         ),
       );
 
@@ -3247,13 +3974,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'проміріада',
-          other: '{0}‱',
+          '‱',
+          one: '{0} ‱',
+          few: '{0} ‱',
+          many: '{0} ‱',
+          other: '{0} ‱',
         ),
         narrow: UnitCountPattern(
           _locale,
           '‱',
-          other: '{0}‱',
+          one: '{0} ‱',
+          few: '{0} ‱',
+          many: '{0} ‱',
+          other: '{0} ‱',
         ),
       );
 
@@ -3306,10 +4039,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'л/км',
-          one: '{0} л/км',
-          few: '{0} л/км',
-          many: '{0} л/км',
-          other: '{0} л/км',
+          one: '{0}л/км',
+          few: '{0}л/км',
+          many: '{0}л/км',
+          other: '{0}л/км',
         ),
       );
 
@@ -3334,10 +4067,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'л/100 км',
-          one: '{0} л/100 км',
-          few: '{0} л/100 км',
-          many: '{0} л/100 км',
-          other: '{0} л/100 км',
+          one: '{0}л/100 км',
+          few: '{0}л/100 км',
+          many: '{0}л/100 км',
+          other: '{0}л/100 км',
         ),
       );
 
@@ -3353,19 +4086,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'милі/гал.',
-          one: '{0} миля/гал.',
-          few: '{0} милі/гал.',
-          many: '{0} миль/гал.',
-          other: '{0} милі/гал.',
+          'милі/гал',
+          one: '{0} миля/гал',
+          few: '{0} милі/гал',
+          many: '{0} миль/гал',
+          other: '{0} милі/гал',
         ),
         narrow: UnitCountPattern(
           _locale,
           'мл/гал',
-          one: '{0} мл/гал',
-          few: '{0} мл/гал',
-          many: '{0} мл/гал',
-          other: '{0} мл/гал',
+          one: '{0}мл/гал',
+          few: '{0}мл/гал',
+          many: '{0}мл/гал',
+          other: '{0}мл/гал',
         ),
       );
 
@@ -3381,19 +4114,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'милі/англ. гал.',
-          one: '{0} миля/англ. гал.',
-          few: '{0} милі/англ. гал.',
-          many: '{0} миль/англ. гал.',
-          other: '{0} милі/англ. гал.',
+          'милі/англ. гал',
+          one: '{0} миля/англ. гал',
+          few: '{0} милі/англ. гал',
+          many: '{0} миль/англ. гал',
+          other: '{0} милі/англ. гал',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'мл/англ. гал.',
-          one: '{0} мл/англ. гал.',
-          few: '{0} мл/англ. гал.',
-          many: '{0} мл/англ. гал.',
-          other: '{0} мл/англ. гал.',
+          'мл/англ.гал',
+          one: '{0}мл/англ.гал',
+          few: '{0}мл/англ.гал',
+          many: '{0}мл/англ.гал',
+          other: '{0}мл/англ.гал',
         ),
       );
 
@@ -3409,7 +4142,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ПБ',
+          'Пбайт',
           one: '{0} ПБ',
           few: '{0} ПБ',
           many: '{0} ПБ',
@@ -3417,11 +4150,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ПБ',
-          one: '{0} ПБ',
-          few: '{0} ПБ',
-          many: '{0} ПБ',
-          other: '{0} ПБ',
+          'Пбайт',
+          one: '{0}ПБ',
+          few: '{0}ПБ',
+          many: '{0}ПБ',
+          other: '{0}ПБ',
         ),
       );
 
@@ -3446,10 +4179,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ТБ',
-          one: '{0} ТБ',
-          few: '{0} ТБ',
-          many: '{0} ТБ',
-          other: '{0} ТБ',
+          one: '{0}ТБ',
+          few: '{0}ТБ',
+          many: '{0}ТБ',
+          other: '{0}ТБ',
         ),
       );
 
@@ -3474,10 +4207,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Тб',
-          one: '{0} Тб',
-          few: '{0} Тб',
-          many: '{0} Тб',
-          other: '{0} Тб',
+          one: '{0}Тб',
+          few: '{0}Тб',
+          many: '{0}Тб',
+          other: '{0}Тб',
         ),
       );
 
@@ -3502,10 +4235,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ГБ',
-          one: '{0} ГБ',
-          few: '{0} ГБ',
-          many: '{0} ГБ',
-          other: '{0} ГБ',
+          one: '{0}ГБ',
+          few: '{0}ГБ',
+          many: '{0}ГБ',
+          other: '{0}ГБ',
         ),
       );
 
@@ -3530,10 +4263,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Гб',
-          one: '{0} Гб',
-          few: '{0} Гб',
-          many: '{0} Гб',
-          other: '{0} Гб',
+          one: '{0}Гб',
+          few: '{0}Гб',
+          many: '{0}Гб',
+          other: '{0}Гб',
         ),
       );
 
@@ -3558,10 +4291,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'МБ',
-          one: '{0} МБ',
-          few: '{0} МБ',
-          many: '{0} МБ',
-          other: '{0} МБ',
+          one: '{0}МБ',
+          few: '{0}МБ',
+          many: '{0}МБ',
+          other: '{0}МБ',
         ),
       );
 
@@ -3586,10 +4319,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Мб',
-          one: '{0} Мб',
-          few: '{0} Мб',
-          many: '{0} Мб',
-          other: '{0} Мб',
+          one: '{0}Мб',
+          few: '{0}Мб',
+          many: '{0}Мб',
+          other: '{0}Мб',
         ),
       );
 
@@ -3614,10 +4347,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кБ',
-          one: '{0} кБ',
-          few: '{0} кБ',
-          many: '{0} кБ',
-          other: '{0} кБ',
+          one: '{0}кБ',
+          few: '{0}кБ',
+          many: '{0}кБ',
+          other: '{0}кБ',
         ),
       );
 
@@ -3642,10 +4375,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кб',
-          one: '{0} кб',
-          few: '{0} кб',
-          many: '{0} кб',
-          other: '{0} кб',
+          one: '{0}кб',
+          few: '{0}кб',
+          many: '{0}кб',
+          other: '{0}кб',
         ),
       );
 
@@ -3670,10 +4403,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Б',
-          one: '{0} Б',
-          few: '{0} Б',
-          many: '{0} Б',
-          other: '{0} Б',
+          one: '{0}Б',
+          few: '{0}Б',
+          many: '{0}Б',
+          other: '{0}Б',
         ),
       );
 
@@ -3698,10 +4431,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'б',
-          one: '{0} б',
-          few: '{0} б',
-          many: '{0} б',
-          other: '{0} б',
+          one: '{0}б',
+          few: '{0}б',
+          many: '{0}б',
+          other: '{0}б',
         ),
       );
 
@@ -3737,27 +4470,27 @@ class UnitsUk implements Units {
   Unit get durationDecade => Unit(
         long: UnitCountPattern(
           _locale,
-          'десятиріччя',
-          one: '{0} десятиріччя',
-          few: '{0} десятиріччя',
-          many: '{0} десятиріч',
-          other: '{0} десятиріччя',
+          'десятиліття',
+          one: '{0} десятиліття',
+          few: '{0} десятиліття',
+          many: '{0} десятиліть',
+          other: '{0} десятиліття',
         ),
         short: UnitCountPattern(
           _locale,
-          '10-річчя',
-          one: '{0} 10-річчя',
-          few: '{0} 10-річчя',
-          many: '{0} 10-річ',
-          other: '{0} 10-річчя',
+          '10-ліття',
+          one: '{0} 10-ліття',
+          few: '{0} 10-ліття',
+          many: '{0} 10-літь',
+          other: '{0} 10-ліття',
         ),
         narrow: UnitCountPattern(
           _locale,
-          '10-річчя',
-          one: '{0} 10-річчя',
-          few: '{0} 10-річчя',
-          many: '{0} 10-річ',
-          other: '{0} 10-річчя',
+          '10-літ.',
+          one: '{0} 10-літ.',
+          few: '{0} 10-літ.',
+          many: '{0} 10-літ.',
+          other: '{0} 10-літ.',
         ),
       );
 
@@ -3810,10 +4543,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кв',
-          one: '{0} кв',
-          few: '{0} кв',
-          many: '{0} кв',
-          other: '{0} кв',
+          one: '{0}кв',
+          few: '{0}кв',
+          many: '{0}кв',
+          other: '{0}кв',
         ),
       );
 
@@ -3877,7 +4610,7 @@ class UnitsUk implements Units {
   Unit get durationDay => Unit(
         long: UnitCountPattern(
           _locale,
-          'дні',
+          'дн.',
           one: '{0} день',
           few: '{0} дні',
           many: '{0} днів',
@@ -3885,7 +4618,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'дні',
+          'дн.',
           one: '{0} дн.',
           few: '{0} дн.',
           many: '{0} дн.',
@@ -3922,10 +4655,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'г',
-          one: '{0} год.',
-          few: '{0} год.',
-          many: '{0} год.',
-          other: '{0} год.',
+          one: '{0}г',
+          few: '{0}г',
+          many: '{0}г',
+          other: '{0}г',
         ),
       );
 
@@ -4090,10 +4823,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'А',
-          one: '{0} А',
-          few: '{0} А',
-          many: '{0} А',
-          other: '{0} А',
+          one: '{0}А',
+          few: '{0}А',
+          many: '{0}А',
+          other: '{0}А',
         ),
       );
 
@@ -4118,10 +4851,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мА',
-          one: '{0} мА',
-          few: '{0} мА',
-          many: '{0} мА',
-          other: '{0} мА',
+          one: '{0}мА',
+          few: '{0}мА',
+          many: '{0}мА',
+          other: '{0}мА',
         ),
       );
 
@@ -4137,7 +4870,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'оми',
+          'Ом',
           one: '{0} Ом',
           few: '{0} Ом',
           many: '{0} Ом',
@@ -4146,10 +4879,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Ом',
-          one: '{0} Ом',
-          few: '{0} Ом',
-          many: '{0} Ом',
-          other: '{0} Ом',
+          one: '{0}Ом',
+          few: '{0}Ом',
+          many: '{0}Ом',
+          other: '{0}Ом',
         ),
       );
 
@@ -4165,7 +4898,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'вольти',
+          'В',
           one: '{0} В',
           few: '{0} В',
           many: '{0} В',
@@ -4174,10 +4907,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'В',
-          one: '{0} В',
-          few: '{0} В',
-          many: '{0} В',
-          other: '{0} В',
+          one: '{0}В',
+          few: '{0}В',
+          many: '{0}В',
+          other: '{0}В',
         ),
       );
 
@@ -4202,10 +4935,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ккал',
-          one: '{0} ккал',
-          few: '{0} ккал',
-          many: '{0} ккал',
-          other: '{0} ккал',
+          one: '{0}ккал',
+          few: '{0}ккал',
+          many: '{0}ккал',
+          other: '{0}ккал',
         ),
       );
 
@@ -4230,10 +4963,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кал',
-          one: '{0} кал',
-          few: '{0} кал',
-          many: '{0} кал',
-          other: '{0} кал',
+          one: '{0}кал',
+          few: '{0}кал',
+          many: '{0}кал',
+          other: '{0}кал',
         ),
       );
 
@@ -4249,19 +4982,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ккал',
-          one: '{0} ккал',
-          few: '{0} ккал',
-          many: '{0} ккал',
-          other: '{0} ккал',
+          'кілокалорії',
+          one: '{0} кілокалорія',
+          few: '{0} кілокалорії',
+          many: '{0} кілокалорій',
+          other: '{0} кілокалорії',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ккал',
-          one: '{0} ккал',
-          few: '{0} ккал',
-          many: '{0} ккал',
-          other: '{0} ккал',
+          'кілокалорії',
+          one: '{0}ккал',
+          few: '{0}ккал',
+          many: '{0}ккал',
+          other: '{0}ккал',
         ),
       );
 
@@ -4277,7 +5010,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'кілоджоуль',
+          'кДж',
           one: '{0} кДж',
           few: '{0} кДж',
           many: '{0} кДж',
@@ -4286,10 +5019,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кДж',
-          one: '{0} кДж',
-          few: '{0} кДж',
-          many: '{0} кДж',
-          other: '{0} кДж',
+          one: '{0}кДж',
+          few: '{0}кДж',
+          many: '{0}кДж',
+          other: '{0}кДж',
         ),
       );
 
@@ -4305,7 +5038,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'джоулі',
+          'Дж',
           one: '{0} Дж',
           few: '{0} Дж',
           many: '{0} Дж',
@@ -4314,10 +5047,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Дж',
-          one: '{0} Дж',
-          few: '{0} Дж',
-          many: '{0} Дж',
-          other: '{0} Дж',
+          one: '{0}Дж',
+          few: '{0}Дж',
+          many: '{0}Дж',
+          other: '{0}Дж',
         ),
       );
 
@@ -4342,10 +5075,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кВт⋅год',
-          one: '{0} кВт⋅год',
-          few: '{0} кВт⋅год',
-          many: '{0} кВт⋅год',
-          other: '{0} кВт⋅год',
+          one: '{0}кВт⋅год',
+          few: '{0}кВт⋅год',
+          many: '{0}кВт⋅год',
+          other: '{0}кВт⋅год',
         ),
       );
 
@@ -4361,7 +5094,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'електрон-вольт',
+          'еВ',
           one: '{0} еВ',
           few: '{0} еВ',
           many: '{0} еВ',
@@ -4381,27 +5114,27 @@ class UnitsUk implements Units {
   Unit get energyBritishThermalUnit => Unit(
         long: UnitCountPattern(
           _locale,
-          'одиниці теплові британські',
-          one: '{0} одиниця теплова британська',
-          few: '{0} одиниці теплові британські',
-          many: '{0} одиниць теплових британських',
-          other: '{0} одиниці теплової британської',
+          'британські теплові одиниці',
+          one: '{0} британська теплова одиниця',
+          few: '{0} британські теплові одиниці',
+          many: '{0} британських теплових одиниць',
+          other: '{0} британської теплової одиниці',
         ),
         short: UnitCountPattern(
           _locale,
-          'Отб',
-          one: '{0} Отб',
-          few: '{0} Отб',
-          many: '{0} Отб',
-          other: '{0} Отб',
+          'БТО',
+          one: '{0} БТО',
+          few: '{0} БТО',
+          many: '{0} БТО',
+          other: '{0} БТО',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'Отб',
-          one: '{0}Отб',
-          few: '{0}Отб',
-          many: '{0}Отб',
-          other: '{0}Отб',
+          'БТО',
+          one: '{0}БТО',
+          few: '{0}БТО',
+          many: '{0}БТО',
+          other: '{0}БТО',
         ),
       );
 
@@ -4409,7 +5142,7 @@ class UnitsUk implements Units {
   Unit get energyThermUs => Unit(
         long: UnitCountPattern(
           _locale,
-          'американський терм',
+          'американські терми',
           one: '{0} американський терм',
           few: '{0} американських терми',
           many: '{0} американських термів',
@@ -4426,10 +5159,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ам. терм.',
-          one: '{0} ам. терм.',
-          few: '{0} ам. терм.',
-          many: '{0} ам. терм.',
-          other: '{0} ам. терм.',
+          one: '{0}ам.терм.',
+          few: '{0}ам.терм.',
+          many: '{0}ам.терм.',
+          other: '{0}ам.терм.',
         ),
       );
 
@@ -4509,7 +5242,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'кВт⋅год/100 км',
+          'кВт⋅год/100км',
           one: '{0}кВт⋅год/100км',
           few: '{0}кВт⋅год/100км',
           many: '{0}кВт⋅год/100км',
@@ -4538,10 +5271,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ГГц',
-          one: '{0} ГГц',
-          few: '{0} ГГц',
-          many: '{0} ГГц',
-          other: '{0} ГГц',
+          one: '{0}ГГц',
+          few: '{0}ГГц',
+          many: '{0}ГГц',
+          other: '{0}ГГц',
         ),
       );
 
@@ -4566,10 +5299,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'МГц',
-          one: '{0} МГц',
-          few: '{0} МГц',
-          many: '{0} МГц',
-          other: '{0} МГц',
+          one: '{0}МГц',
+          few: '{0}МГц',
+          many: '{0}МГц',
+          other: '{0}МГц',
         ),
       );
 
@@ -4594,10 +5327,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кГц',
-          one: '{0} кГц',
-          few: '{0} кГц',
-          many: '{0} кГц',
-          other: '{0} кГц',
+          one: '{0}кГц',
+          few: '{0}кГц',
+          many: '{0}кГц',
+          other: '{0}кГц',
         ),
       );
 
@@ -4622,10 +5355,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Гц',
-          one: '{0} Гц',
-          few: '{0} Гц',
-          many: '{0} Гц',
-          other: '{0} Гц',
+          one: '{0}Гц',
+          few: '{0}Гц',
+          many: '{0}Гц',
+          other: '{0}Гц',
         ),
       );
 
@@ -4650,10 +5383,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ем',
-          one: '{0} ем',
-          few: '{0} ем',
-          many: '{0} ем',
-          other: '{0} ем',
+          one: '{0}ем',
+          few: '{0}ем',
+          many: '{0}ем',
+          other: '{0}ем',
         ),
       );
 
@@ -4678,10 +5411,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'п',
-          one: '{0}п',
-          few: '{0}п',
-          many: '{0}п',
-          other: '{0}п',
+          one: '{0}пкс',
+          few: '{0}пкс',
+          many: '{0}пкс',
+          other: '{0}пкс',
         ),
       );
 
@@ -4697,11 +5430,11 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'Мп',
-          one: '{0} Мп',
-          few: '{0} Мп',
-          many: '{0} Мп',
-          other: '{0} Мп',
+          'Мпкс',
+          one: '{0} Мпкс',
+          few: '{0} Мпкс',
+          many: '{0} Мпкс',
+          other: '{0} Мпкс',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -4725,19 +5458,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ppcm',
-          one: '{0} ppcm',
-          few: '{0} ppcm',
-          many: '{0} ppcm',
-          other: '{0} ppcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'пкс/см',
+          'пкс на см',
           one: '{0} пкс/см',
           few: '{0} пкс/см',
           many: '{0} пкс/см',
           other: '{0} пкс/см',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'пкс/см',
+          one: '{0}пкс/см',
+          few: '{0}пкс/см',
+          many: '{0}пкс/см',
+          other: '{0}пкс/см',
         ),
       );
 
@@ -4753,19 +5486,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ppi',
-          one: '{0} ppi',
-          few: '{0} ppi',
-          many: '{0} ppi',
-          other: '{0} ppi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'пкс/“',
+          'пкс на дюйм',
           one: '{0} пкс/“',
           few: '{0} пкс/“',
           many: '{0} пкс/“',
           other: '{0} пкс/“',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'пкс/“',
+          one: '{0}пкс/“',
+          few: '{0}пкс/“',
+          many: '{0}пкс/“',
+          other: '{0}пкс/“',
         ),
       );
 
@@ -4785,15 +5518,15 @@ class UnitsUk implements Units {
           one: '{0} точка на см',
           few: '{0} точки на см',
           many: '{0} точок на см',
-          other: '{0} dpcm',
+          other: '{0} точки на см',
         ),
         narrow: UnitCountPattern(
           _locale,
           'тчк/см',
-          one: '{0} тчк/см',
-          few: '{0} тчк/см',
-          many: '{0} тчк/см',
-          other: '{0} тчк/см',
+          one: '{0}тчк/см',
+          few: '{0}тчк/см',
+          many: '{0}тчк/см',
+          other: '{0}тчк/см',
         ),
       );
 
@@ -4809,19 +5542,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'dpi',
-          one: '{0} ppi',
-          few: '{0} ppi',
-          many: '{0} ppi',
-          other: '{0} dpi',
+          'тчк/дюйм',
+          one: '{0} тчк/дюйм',
+          few: '{0} тчк/дюйм',
+          many: '{0} тчк/дюйм',
+          other: '{0} тчк/дюйм',
         ),
         narrow: UnitCountPattern(
           _locale,
           'тчк/“',
-          one: '{0} тчк/“',
-          few: '{0} тчк/“',
-          many: '{0} тчк/“',
-          other: '{0} тчк/“',
+          one: '{0}тчк/“',
+          few: '{0}тчк/“',
+          many: '{0}тчк/“',
+          other: '{0}тчк/“',
         ),
       );
 
@@ -4846,10 +5579,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'тчк',
-          one: '{0} тчк',
-          few: '{0} тчк',
-          many: '{0} тчк',
-          other: '{0} тчк',
+          one: '{0}тчк',
+          few: '{0}тчк',
+          many: '{0}тчк',
+          other: '{0}тчк',
         ),
       );
 
@@ -4857,7 +5590,7 @@ class UnitsUk implements Units {
   Unit get lengthEarthRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'радіус Землі',
+          'радіуси Землі',
           one: '{0} радіус Землі',
           few: '{0} радіуси Землі',
           many: '{0} радіусів Землі',
@@ -4866,12 +5599,18 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} радіус Землі',
+          few: '{0} радіуси Землі',
+          many: '{0} радіусів Землі',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
-          other: '{0} R⊕',
+          one: '{0}R⊕',
+          few: '{0}R⊕',
+          many: '{0}R⊕',
+          other: '{0}R⊕',
         ),
       );
 
@@ -4896,10 +5635,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'км',
-          one: '{0} км',
-          few: '{0} км',
-          many: '{0} км',
-          other: '{0} км',
+          one: '{0}км',
+          few: '{0}км',
+          many: '{0}км',
+          other: '{0}км',
         ),
       );
 
@@ -4980,10 +5719,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'см',
-          one: '{0} см',
-          few: '{0} см',
-          many: '{0} см',
-          other: '{0} см',
+          one: '{0}см',
+          few: '{0}см',
+          many: '{0}см',
+          other: '{0}см',
         ),
       );
 
@@ -5008,10 +5747,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мм',
-          one: '{0} мм',
-          few: '{0} мм',
-          many: '{0} мм',
-          other: '{0} мм',
+          one: '{0}мм',
+          few: '{0}мм',
+          many: '{0}мм',
+          other: '{0}мм',
         ),
       );
 
@@ -5092,10 +5831,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'пм',
-          one: '{0} пм',
-          few: '{0} пм',
-          many: '{0} пм',
-          other: '{0} пм',
+          one: '{0}пм',
+          few: '{0}пм',
+          many: '{0}пм',
+          other: '{0}пм',
         ),
       );
 
@@ -5120,10 +5859,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мл',
-          one: '{0} мл',
-          few: '{0} мл',
-          many: '{0} мл',
-          other: '{0} мл',
+          one: '{0}мл',
+          few: '{0}мл',
+          many: '{0}мл',
+          other: '{0}мл',
         ),
       );
 
@@ -5147,11 +5886,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ярди',
-          one: '{0} ярд',
-          few: '{0} ярди',
-          many: '{0} ярдів',
-          other: '{0} ярда',
+          'ярд',
+          one: '{0}ярд',
+          few: '{0}ярд',
+          many: '{0}ярд',
+          other: '{0}ярд',
         ),
       );
 
@@ -5176,10 +5915,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'фт',
-          one: '{0} фт',
-          few: '{0} фт',
-          many: '{0} фт',
-          other: '{0} фт',
+          one: '{0}фт',
+          few: '{0}фт',
+          many: '{0}фт',
+          other: '{0}фт',
         ),
       );
 
@@ -5203,11 +5942,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'дюйми',
-          one: '{0} дм',
-          few: '{0} дм',
-          many: '{0} дм',
-          other: '{0} дм',
+          'дюйм',
+          one: '{0}″',
+          few: '{0}″',
+          many: '{0}″',
+          other: '{0}″',
         ),
       );
 
@@ -5251,7 +5990,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'св. р.',
+          'св. роки',
           one: '{0} св. р.',
           few: '{0} св. р.',
           many: '{0} св. р.',
@@ -5260,10 +5999,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'св. р.',
-          one: '{0} св. р.',
-          few: '{0} св. р.',
-          many: '{0} св. р.',
-          other: '{0} св. р.',
+          one: '{0}св.р.',
+          few: '{0}св.р.',
+          many: '{0}св.р.',
+          other: '{0}св.р.',
         ),
       );
 
@@ -5288,10 +6027,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'а. о.',
-          one: '{0} а. о.',
-          few: '{0} а. о.',
-          many: '{0} а. о.',
-          other: '{0} а. о.',
+          one: '{0}а.о.',
+          few: '{0}а.о.',
+          many: '{0}а.о.',
+          other: '{0}а.о.',
         ),
       );
 
@@ -5308,18 +6047,18 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'фурлонги',
-          one: '{0} fur',
-          few: '{0} fur',
-          many: '{0} fur',
-          other: '{0} fur',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'фрл',
           one: '{0} фрл',
           few: '{0} фрл',
           many: '{0} фрл',
           other: '{0} фрл',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'фрл',
+          one: '{0}фрл',
+          few: '{0}фрл',
+          many: '{0}фрл',
+          other: '{0}фрл',
         ),
       );
 
@@ -5344,10 +6083,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'фтм',
-          one: '{0} фтм',
-          few: '{0} фтм',
-          many: '{0} фтм',
-          other: '{0} фтм',
+          one: '{0}фтм',
+          few: '{0}фтм',
+          many: '{0}фтм',
+          other: '{0}фтм',
         ),
       );
 
@@ -5371,11 +6110,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'м. милі',
-          one: '{0} м. мл',
-          few: '{0} м. мл',
-          many: '{0} м. мл',
-          other: '{0} м. мл',
+          'м. мл',
+          one: '{0}м.мл',
+          few: '{0}м.мл',
+          many: '{0}м.мл',
+          other: '{0}м.мл',
         ),
       );
 
@@ -5391,7 +6130,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'сканд. миля',
+          'сканд. милі',
           one: '{0} сканд. миля',
           few: '{0} сканд. милі',
           many: '{0} сканд. миль',
@@ -5399,11 +6138,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'міл',
-          one: '{0} сканд. мл',
-          few: '{0} сканд. мл',
-          many: '{0} сканд. мл',
-          other: '{0} сканд. мл',
+          'ск.мл',
+          one: '{0}ск.мл',
+          few: '{0}ск.мл',
+          many: '{0}ск.мл',
+          other: '{0}ск.мл',
         ),
       );
 
@@ -5439,7 +6178,7 @@ class UnitsUk implements Units {
   Unit get lengthSolarRadius => Unit(
         long: UnitCountPattern(
           _locale,
-          'радіус Сонця',
+          'радіуси Сонця',
           one: '{0} радіус Сонця',
           few: '{0} радіуси Сонця',
           many: '{0} радіусів Сонця',
@@ -5447,7 +6186,10 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'радіус Сонця',
+          'R☉',
+          one: '{0} радіус Сонця',
+          few: '{0} радіуси Сонця',
+          many: '{0} радіусів Сонця',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
@@ -5481,10 +6223,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'лк',
-          one: '{0} лк',
-          few: '{0} лк',
-          many: '{0} лк',
-          other: '{0} лк',
+          one: '{0}лк',
+          few: '{0}лк',
+          many: '{0}лк',
+          other: '{0}лк',
         ),
       );
 
@@ -5509,10 +6251,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кд',
-          one: '{0} кд',
-          few: '{0} кд',
-          many: '{0} кд',
-          other: '{0} кд',
+          one: '{0}кд',
+          few: '{0}кд',
+          many: '{0}кд',
+          other: '{0}кд',
         ),
       );
 
@@ -5537,10 +6279,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'лм',
-          one: '{0} лм',
-          few: '{0} лм',
-          many: '{0} лм',
-          other: '{0} лм',
+          one: '{0}лм',
+          few: '{0}лм',
+          many: '{0}лм',
+          other: '{0}лм',
         ),
       );
 
@@ -5557,6 +6299,9 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'світності Сонця',
+          one: '{0} світність Сонця',
+          few: '{0} світності Сонця',
+          many: '{0} світностей Сонця',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
@@ -5721,7 +6466,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'тонни',
+          'т',
           one: '{0} т',
           few: '{0} т',
           many: '{0} т',
@@ -5729,7 +6474,7 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'тонни',
+          'т',
           one: '{0}т',
           few: '{0}т',
           many: '{0}т',
@@ -5749,7 +6494,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'стоун',
+          'стн',
           one: '{0} стн',
           few: '{0} стн',
           many: '{0} стн',
@@ -5758,10 +6503,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'стн',
-          one: '{0} стн',
-          few: '{0} стн',
-          many: '{0} стн',
-          other: '{0} стн',
+          one: '{0}стн',
+          few: '{0}стн',
+          many: '{0}стн',
+          other: '{0}стн',
         ),
       );
 
@@ -5777,19 +6522,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'фунти',
-          one: '{0} фунт',
-          few: '{0} фунти',
-          many: '{0} фунтів',
-          other: '{0} фунта',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
           'фнт',
           one: '{0} фнт',
           few: '{0} фнт',
           many: '{0} фнт',
           other: '{0} фнт',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'фнт',
+          one: '{0}фнт',
+          few: '{0}фнт',
+          many: '{0}фнт',
+          other: '{0}фнт',
         ),
       );
 
@@ -5814,10 +6559,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ун.',
-          one: '{0} ун.',
-          few: '{0} ун.',
-          many: '{0} ун.',
-          other: '{0} ун.',
+          one: '{0}ун.',
+          few: '{0}ун.',
+          many: '{0}ун.',
+          other: '{0}ун.',
         ),
       );
 
@@ -5842,10 +6587,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'тр. ун.',
-          one: '{0} тр. ун.',
-          few: '{0} тр. ун.',
-          many: '{0} тр. ун.',
-          other: '{0} тр. ун.',
+          one: '{0}тр.ун.',
+          few: '{0}тр.ун.',
+          many: '{0}тр.ун.',
+          other: '{0}тр.ун.',
         ),
       );
 
@@ -5853,7 +6598,7 @@ class UnitsUk implements Units {
   Unit get massCarat => Unit(
         long: UnitCountPattern(
           _locale,
-          'карати',
+          'кар.',
           one: '{0} карат',
           few: '{0} карати',
           many: '{0} каратів',
@@ -5861,19 +6606,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'карати',
-          one: '{0} кар',
-          few: '{0} кар',
-          many: '{0} кар',
-          other: '{0} кар',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'карат',
+          'кар.',
           one: '{0} кар.',
           few: '{0} кар.',
           many: '{0} кар.',
           other: '{0} кар.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'кар',
+          one: '{0}кар',
+          few: '{0}кар',
+          many: '{0}кар',
+          other: '{0}кар',
         ),
       );
 
@@ -5918,6 +6663,9 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'маси Землі',
+          one: '{0} маса Землі',
+          few: '{0} маси Землі',
+          many: '{0} мас Землі',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
@@ -5943,6 +6691,9 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'маси Сонця',
+          one: '{0} маса Сонця',
+          few: '{0} маси Сонця',
+          many: '{0} мас Сонця',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
@@ -5976,10 +6727,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'гр.',
-          one: '{0} гр.',
-          few: '{0} гр.',
-          many: '{0} гр.',
-          other: '{0} гр.',
+          one: '{0}гр.',
+          few: '{0}гр.',
+          many: '{0}гр.',
+          other: '{0}гр.',
         ),
       );
 
@@ -6004,10 +6755,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ГВт',
-          one: '{0} ГВт',
-          few: '{0} ГВт',
-          many: '{0} ГВт',
-          other: '{0} ГВт',
+          one: '{0}ГВт',
+          few: '{0}ГВт',
+          many: '{0}ГВт',
+          other: '{0}ГВт',
         ),
       );
 
@@ -6032,10 +6783,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'МВт',
-          one: '{0} МВт',
-          few: '{0} МВт',
-          many: '{0} МВт',
-          other: '{0} МВт',
+          one: '{0}МВт',
+          few: '{0}МВт',
+          many: '{0}МВт',
+          other: '{0}МВт',
         ),
       );
 
@@ -6060,10 +6811,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кВт',
-          one: '{0} кВт',
-          few: '{0} кВт',
-          many: '{0} кВт',
-          other: '{0} кВт',
+          one: '{0}кВт',
+          few: '{0}кВт',
+          many: '{0}кВт',
+          other: '{0}кВт',
         ),
       );
 
@@ -6079,7 +6830,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'вати',
+          'Вт',
           one: '{0} Вт',
           few: '{0} Вт',
           many: '{0} Вт',
@@ -6088,10 +6839,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Вт',
-          one: '{0} Вт',
-          few: '{0} Вт',
-          many: '{0} Вт',
-          other: '{0} Вт',
+          one: '{0}Вт',
+          few: '{0}Вт',
+          many: '{0}Вт',
+          other: '{0}Вт',
         ),
       );
 
@@ -6116,10 +6867,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мВт',
-          one: '{0} мВт',
-          few: '{0} мВт',
-          many: '{0} мВт',
-          other: '{0} мВт',
+          one: '{0}мВт',
+          few: '{0}мВт',
+          many: '{0}мВт',
+          other: '{0}мВт',
         ),
       );
 
@@ -6144,10 +6895,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'к. с.',
-          one: '{0} к.с.',
-          few: '{0} к.с.',
-          many: '{0} к.с.',
-          other: '{0} к.с.',
+          one: '{0}к.с.',
+          few: '{0}к.с.',
+          many: '{0}к.с.',
+          other: '{0}к.с.',
         ),
       );
 
@@ -6200,10 +6951,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'фнт/дюйм²',
-          one: '{0}psi',
-          few: '{0}psi',
-          many: '{0}psi',
-          other: '{0}psi',
+          one: '{0}фнт/дюйм²',
+          few: '{0}фнт/дюйм²',
+          many: '{0}фнт/дюйм²',
+          other: '{0}фнт/дюйм²',
         ),
       );
 
@@ -6227,11 +6978,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'дюйми рт. ст.',
-          one: '{0} дюйм рт. ст.',
-          few: '{0} дюйми рт. ст.',
-          many: '{0} дюймів рт. ст.',
-          other: '{0} дюйма рт. ст.',
+          'дмрс',
+          one: '{0}дмрс',
+          few: '{0}дмрс',
+          many: '{0}дмрс',
+          other: '{0}дмрс',
         ),
       );
 
@@ -6256,10 +7007,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'бар',
-          one: '{0} бар',
-          few: '{0} бар',
-          many: '{0} бар',
-          other: '{0} бар',
+          one: '{0}бар',
+          few: '{0}бар',
+          many: '{0}бар',
+          other: '{0}бар',
         ),
       );
 
@@ -6277,17 +7028,17 @@ class UnitsUk implements Units {
           _locale,
           'мбар',
           one: '{0} мбар',
-          few: '{0} мбари',
-          many: '{0} мбарів',
-          other: '{0} мбара',
+          few: '{0} мбар',
+          many: '{0} мбар',
+          other: '{0} мбар',
         ),
         narrow: UnitCountPattern(
           _locale,
           'мбар',
-          one: '{0} мбар',
-          few: '{0} мбари',
-          many: '{0} мбарів',
-          other: '{0} мбара',
+          one: '{0}мбар',
+          few: '{0}мбар',
+          many: '{0}мбар',
+          other: '{0}мбар',
         ),
       );
 
@@ -6312,10 +7063,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'атм',
-          one: '{0} атм',
-          few: '{0} атм',
-          many: '{0} атм',
-          other: '{0} атм',
+          one: '{0}атм',
+          few: '{0}атм',
+          many: '{0}атм',
+          other: '{0}атм',
         ),
       );
 
@@ -6340,10 +7091,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Па',
-          one: '{0} Па',
-          few: '{0} Па',
-          many: '{0} Па',
-          other: '{0} Па',
+          one: '{0}Па',
+          few: '{0}Па',
+          many: '{0}Па',
+          other: '{0}Па',
         ),
       );
 
@@ -6368,10 +7119,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'гПа',
-          one: '{0} гПа',
-          few: '{0} гПа',
-          many: '{0} гПа',
-          other: '{0} гПа',
+          one: '{0}гПа',
+          few: '{0}гПа',
+          many: '{0}гПа',
+          other: '{0}гПа',
         ),
       );
 
@@ -6396,10 +7147,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кПа',
-          one: '{0} кПа',
-          few: '{0} кПа',
-          many: '{0} кПа',
-          other: '{0} кПа',
+          one: '{0}кПа',
+          few: '{0}кПа',
+          many: '{0}кПа',
+          other: '{0}кПа',
         ),
       );
 
@@ -6424,10 +7175,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'МПа',
-          one: '{0} МПа',
-          few: '{0} МПа',
-          many: '{0} МПа',
-          other: '{0} МПа',
+          one: '{0}МПа',
+          few: '{0}МПа',
+          many: '{0}МПа',
+          other: '{0}МПа',
         ),
       );
 
@@ -6435,11 +7186,11 @@ class UnitsUk implements Units {
   Unit get speedKilometerPerHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'кілометри на годину',
-          one: '{0} кілометр на годину',
-          few: '{0} кілометри на годину',
-          many: '{0} кілометрів на годину',
-          other: '{0} кілометра на годину',
+          'кілометри за годину',
+          one: '{0} кілометр за годину',
+          few: '{0} кілометри за годину',
+          many: '{0} кілометрів за годину',
+          other: '{0} кілометра за годину',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6452,10 +7203,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'км/год',
-          one: '{0} км/год',
-          few: '{0} км/год',
-          many: '{0} км/год',
-          other: '{0} км/год',
+          one: '{0}км/год',
+          few: '{0}км/год',
+          many: '{0}км/год',
+          other: '{0}км/год',
         ),
       );
 
@@ -6463,11 +7214,11 @@ class UnitsUk implements Units {
   Unit get speedMeterPerSecond => Unit(
         long: UnitCountPattern(
           _locale,
-          'метри на секунду',
-          one: '{0} метр на секунду',
-          few: '{0} метри на секунду',
-          many: '{0} метрів на секунду',
-          other: '{0} метра на секунду',
+          'метри за секунду',
+          one: '{0} метр за секунду',
+          few: '{0} метри за секунду',
+          many: '{0} метрів за секунду',
+          other: '{0} метра за секунду',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6480,10 +7231,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'м/с',
-          one: '{0} м/с',
-          few: '{0} м/с',
-          many: '{0} м/с',
-          other: '{0} м/с',
+          one: '{0}м/с',
+          few: '{0}м/с',
+          many: '{0}м/с',
+          other: '{0}м/с',
         ),
       );
 
@@ -6491,11 +7242,11 @@ class UnitsUk implements Units {
   Unit get speedMilePerHour => Unit(
         long: UnitCountPattern(
           _locale,
-          'милі на годину',
-          one: '{0} миля на годину',
-          few: '{0} милі на годину',
-          many: '{0} миль на годину',
-          other: '{0} милі на годину',
+          'милі за годину',
+          one: '{0} миля за годину',
+          few: '{0} милі за годину',
+          many: '{0} миль за годину',
+          other: '{0} милі за годину',
         ),
         short: UnitCountPattern(
           _locale,
@@ -6508,10 +7259,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мл/год',
-          one: '{0} мл/год',
-          few: '{0} мл/год',
-          many: '{0} мл/год',
-          other: '{0} мл/год',
+          one: '{0}мл/год',
+          few: '{0}мл/год',
+          many: '{0}мл/год',
+          other: '{0}мл/год',
         ),
       );
 
@@ -6519,7 +7270,7 @@ class UnitsUk implements Units {
   Unit get speedKnot => Unit(
         long: UnitCountPattern(
           _locale,
-          'вузол',
+          'вузли',
           one: '{0} вузол',
           few: '{0} вузли',
           many: '{0} вузлів',
@@ -6527,19 +7278,47 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'kn',
-          one: '{0} kn',
-          few: '{0} kn',
-          many: '{0} kn',
-          other: '{0} kn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
           'вуз.',
           one: '{0} вуз.',
           few: '{0} вуз.',
           many: '{0} вуз.',
           other: '{0} вуз.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'вуз.',
+          one: '{0}вуз.',
+          few: '{0}вуз.',
+          many: '{0}вуз.',
+          other: '{0}вуз.',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'бали за шкалою Бофорта',
+          one: '{0} бал за шкалою Бофорта',
+          few: '{0} бали за шкалою Бофорта',
+          many: '{0} балів за шкалою Бофорта',
+          other: '{0} бала за шкалою Бофорта',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'бали Бофорта',
+          one: '{0} бал Бофорта',
+          few: '{0} бали Бофорта',
+          many: '{0} балів Бофорта',
+          other: '{0} бала Бофорта',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Бофорт',
+          one: '{0} бал',
+          few: '{0} бали',
+          many: '{0} балів',
+          other: '{0} бала',
         ),
       );
 
@@ -6548,25 +7327,19 @@ class UnitsUk implements Units {
         long: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
+          one: '{0} degree temperature',
           other: '{0}°',
         ),
         short: UnitCountPattern(
           _locale,
           '°',
           one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
           one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
           other: '{0}°',
         ),
       );
@@ -6639,7 +7412,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'кельвін',
+          'К',
           one: '{0} К',
           few: '{0} К',
           many: '{0} К',
@@ -6648,10 +7421,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'К',
-          one: '{0} К',
-          few: '{0} К',
-          many: '{0} К',
-          other: '{0} К',
+          one: '{0}К',
+          few: '{0}К',
+          many: '{0}К',
+          other: '{0}К',
         ),
       );
 
@@ -6675,11 +7448,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'фунт-фут',
-          one: '{0}фн-фт',
-          few: '{0}фн-фт',
-          many: '{0}фн-фт',
-          other: '{0}фн-фт',
+          'фнт-фт',
+          one: '{0}фнт-фт',
+          few: '{0}фнт-фт',
+          many: '{0}фнт-фт',
+          other: '{0}фнт-фт',
         ),
       );
 
@@ -6732,10 +7505,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'км³',
-          one: '{0} км³',
-          few: '{0} км³',
-          many: '{0} км³',
-          other: '{0} км³',
+          one: '{0}км³',
+          few: '{0}км³',
+          many: '{0}км³',
+          other: '{0}км³',
         ),
       );
 
@@ -6760,10 +7533,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'м³',
-          one: '{0} м³',
-          few: '{0} м³',
-          many: '{0} м³',
-          other: '{0} м³',
+          one: '{0}м³',
+          few: '{0}м³',
+          many: '{0}м³',
+          other: '{0}м³',
         ),
       );
 
@@ -6788,10 +7561,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'см³',
-          one: '{0} см³',
-          few: '{0} см³',
-          many: '{0} см³',
-          other: '{0} см³',
+          one: '{0}см³',
+          few: '{0}см³',
+          many: '{0}см³',
+          other: '{0}см³',
         ),
       );
 
@@ -6816,10 +7589,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'милі³',
-          one: '{0} миля³',
-          few: '{0} милі³',
-          many: '{0} миль³',
-          other: '{0} милі³',
+          one: '{0}мл³',
+          few: '{0}мл³',
+          many: '{0}мл³',
+          other: '{0}мл³',
         ),
       );
 
@@ -6844,10 +7617,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'ярди³',
-          one: '{0} ярд³',
-          few: '{0} ярди³',
-          many: '{0} ярдів³',
-          other: '{0} ярда³',
+          one: '{0}ярд³',
+          few: '{0}ярд³',
+          many: '{0}ярд³',
+          other: '{0}ярд³',
         ),
       );
 
@@ -6872,10 +7645,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'фт³',
-          one: '{0} фт³',
-          few: '{0} фт³',
-          many: '{0} фт³',
-          other: '{0} фт³',
+          one: '{0}фт³',
+          few: '{0}фт³',
+          many: '{0}фт³',
+          other: '{0}фт³',
         ),
       );
 
@@ -6900,10 +7673,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'дюйми³',
-          one: '{0} дюйм³',
-          few: '{0} дюйми³',
-          many: '{0} дюймів³',
-          other: '{0} дюйма³',
+          one: '{0}дюйм³',
+          few: '{0}дюйм³',
+          many: '{0}дюйм³',
+          other: '{0}дюйм³',
         ),
       );
 
@@ -6928,10 +7701,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'Мл',
-          one: '{0} Мл',
-          few: '{0} Мл',
-          many: '{0} Мл',
-          other: '{0} Мл',
+          one: '{0}Мл',
+          few: '{0}Мл',
+          many: '{0}Мл',
+          other: '{0}Мл',
         ),
       );
 
@@ -6956,10 +7729,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'гл',
-          one: '{0} гл',
-          few: '{0} гл',
-          many: '{0} гл',
-          other: '{0} гл',
+          one: '{0}гл',
+          few: '{0}гл',
+          many: '{0}гл',
+          other: '{0}гл',
         ),
       );
 
@@ -7012,10 +7785,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'дл',
-          one: '{0} дл',
-          few: '{0} дл',
-          many: '{0} дл',
-          other: '{0} дл',
+          one: '{0}дл',
+          few: '{0}дл',
+          many: '{0}дл',
+          other: '{0}дл',
         ),
       );
 
@@ -7040,10 +7813,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'сл',
-          one: '{0} сл',
-          few: '{0} сл',
-          many: '{0} сл',
-          other: '{0} сл',
+          one: '{0}сл',
+          few: '{0}сл',
+          many: '{0}сл',
+          other: '{0}сл',
         ),
       );
 
@@ -7068,10 +7841,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мл',
-          one: '{0} мл',
-          few: '{0} мл',
-          many: '{0} мл',
-          other: '{0} мл',
+          one: '{0}мл',
+          few: '{0}мл',
+          many: '{0}мл',
+          other: '{0}мл',
         ),
       );
 
@@ -7079,7 +7852,7 @@ class UnitsUk implements Units {
   Unit get volumePintMetric => Unit(
         long: UnitCountPattern(
           _locale,
-          'метрична пінта',
+          'метричні пінти',
           one: '{0} метрична пінта',
           few: '{0} метричні пінти',
           many: '{0} метричних пінт',
@@ -7087,7 +7860,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'метр. пінта',
+          'метр. пінти',
           one: '{0} метр. пінта',
           few: '{0} метр. пінти',
           many: '{0} метр. пінт',
@@ -7096,10 +7869,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'м. пінт.',
-          one: '{0} м. пінт.',
-          few: '{0} м. пінт.',
-          many: '{0} м. пінт.',
-          other: '{0} м. пінт.',
+          one: '{0}м.пінт.',
+          few: '{0}м.пінт.',
+          many: '{0}м.пінт.',
+          other: '{0}м.пінт.',
         ),
       );
 
@@ -7124,10 +7897,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'м. чаш.',
-          one: '{0} м. чаш.',
-          few: '{0} м. чаш.',
-          many: '{0} м. чаш.',
-          other: '{0} м. чаш.',
+          one: '{0}м.чаш.',
+          few: '{0}м.чаш.',
+          many: '{0}м.чаш.',
+          other: '{0}м.чаш.',
         ),
       );
 
@@ -7144,18 +7917,18 @@ class UnitsUk implements Units {
         short: UnitCountPattern(
           _locale,
           'акр-фути',
-          one: '{0} акр-фут',
-          few: '{0} акр-фути',
-          many: '{0} акр-футів',
-          other: '{0} акр-фута',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'акр-фт',
           one: '{0} акр-фт',
           few: '{0} акр-фт',
           many: '{0} акр-фт',
           other: '{0} акр-фт',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'акр-фт',
+          one: '{0}акр-фт',
+          few: '{0}акр-фт',
+          many: '{0}акр-фт',
+          other: '{0}акр-фт',
         ),
       );
 
@@ -7208,10 +7981,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'гал.',
-          one: '{0} гал.',
-          few: '{0} гал.',
-          many: '{0} гал.',
-          other: '{0} гал.',
+          one: '{0}гал.',
+          few: '{0}гал.',
+          many: '{0}гал.',
+          other: '{0}гал.',
         ),
       );
 
@@ -7227,7 +8000,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'англ. галон',
+          'англ. галони',
           one: '{0} англ. галон',
           few: '{0} англ. галони',
           many: '{0} англ. галонів',
@@ -7236,10 +8009,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'англ. гал.',
-          one: '{0} англ. гал.',
-          few: '{0} англ. гал.',
-          many: '{0} англ. гал.',
-          other: '{0} англ. гал.',
+          one: '{0}англ.гал.',
+          few: '{0}англ.гал.',
+          many: '{0}англ.гал.',
+          other: '{0}англ.гал.',
         ),
       );
 
@@ -7264,10 +8037,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'квар.',
-          one: '{0} квар.',
-          few: '{0} квар.',
-          many: '{0} квар.',
-          other: '{0} квар.',
+          one: '{0}квар.',
+          few: '{0}квар.',
+          many: '{0}квар.',
+          other: '{0}квар.',
         ),
       );
 
@@ -7292,10 +8065,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'пінт.',
-          one: '{0} пінт.',
-          few: '{0} пінт.',
-          many: '{0} пінт.',
-          other: '{0} пінт.',
+          one: '{0}пінт.',
+          few: '{0}пінт.',
+          many: '{0}пінт.',
+          other: '{0}пінт.',
         ),
       );
 
@@ -7303,27 +8076,27 @@ class UnitsUk implements Units {
   Unit get volumeCup => Unit(
         long: UnitCountPattern(
           _locale,
-          'склянки',
-          one: '{0} склянка',
-          few: '{0} склянки',
-          many: '{0} склянок',
-          other: '{0} склянки',
+          'чашки',
+          one: '{0} чашка',
+          few: '{0} чашки',
+          many: '{0} чашок',
+          other: '{0} чашки',
         ),
         short: UnitCountPattern(
           _locale,
-          'склянки',
-          one: '{0} скл.',
-          few: '{0} скл.',
-          many: '{0} скл.',
-          other: '{0} скл.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'чаш.',
+          'чашки',
           one: '{0} чаш.',
           few: '{0} чаш.',
           many: '{0} чаш.',
           other: '{0} чаш.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'чаш.',
+          one: '{0}чаш.',
+          few: '{0}чаш.',
+          many: '{0}чаш.',
+          other: '{0}чаш.',
         ),
       );
 
@@ -7331,15 +8104,15 @@ class UnitsUk implements Units {
   Unit get volumeFluidOunce => Unit(
         long: UnitCountPattern(
           _locale,
-          'рідкі унції',
-          one: '{0} рідка унція',
-          few: '{0} рідкі унції',
-          many: '{0} рідких унцій',
-          other: '{0} рідкої унції',
+          'рідинні унції',
+          one: '{0} рідинна унція',
+          few: '{0} рідинні унції',
+          many: '{0} рідинних унцій',
+          other: '{0} рідинної унції',
         ),
         short: UnitCountPattern(
           _locale,
-          'рід. унція',
+          'рід. унції',
           one: '{0} рід. унція',
           few: '{0} рід. унції',
           many: '{0} рід. унцій',
@@ -7347,11 +8120,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'рід. унція',
-          one: '{0} рід. унція',
-          few: '{0} рід. унції',
-          many: '{0} рід. унцій',
-          other: '{0} рід. унції',
+          'рід. ун.',
+          one: '{0}рід.ун.',
+          few: '{0}рід.ун.',
+          many: '{0}рід.ун.',
+          other: '{0}рід.ун.',
         ),
       );
 
@@ -7376,10 +8149,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'англ. рід. ун.',
-          one: '{0} англ. рід. ун.',
-          few: '{0} англ. рід. ун.',
-          many: '{0} англ. рід. ун.',
-          other: '{0} англ. рід. ун.',
+          one: '{0}англ.рід.ун.',
+          few: '{0}англ.рід.ун.',
+          many: '{0}англ.рід.ун.',
+          other: '{0}англ.рід.ун.',
         ),
       );
 
@@ -7395,7 +8168,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ст. ложка',
+          'ст. ложки',
           one: '{0} ст. ложка',
           few: '{0} ст. ложки',
           many: '{0} ст. ложок',
@@ -7403,11 +8176,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'ст. ложка',
-          one: '{0} ст. ложка',
-          few: '{0} ст. ложки',
-          many: '{0} ст. ложок',
-          other: '{0} ст. ложки',
+          'ст. л.',
+          one: '{0}ст.л.',
+          few: '{0}ст.л.',
+          many: '{0}ст.л.',
+          other: '{0}ст.л.',
         ),
       );
 
@@ -7423,19 +8196,19 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'ч. л.',
-          one: '{0} ч. л.',
-          few: '{0} ч. л.',
-          many: '{0} ч. л.',
-          other: '{0} ч. л.',
+          'ч. ложки',
+          one: '{0} ч. ложка',
+          few: '{0} ч. ложки',
+          many: '{0} ч. ложок',
+          other: '{0} ч. ложки',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ч. л.',
-          one: '{0} ч. л.',
-          few: '{0} ч. л.',
-          many: '{0} ч. л.',
-          other: '{0} ч. л.',
+          one: '{0}ч.л.',
+          few: '{0}ч.л.',
+          many: '{0}ч.л.',
+          other: '{0}ч.л.',
         ),
       );
 
@@ -7451,7 +8224,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'барель',
+          'барелі',
           one: '{0} брл',
           few: '{0} брл',
           many: '{0} брл',
@@ -7479,11 +8252,11 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'дес. л.',
-          one: '{0} дес. л.',
-          few: '{0} дес. л.',
-          many: '{0} дес. л.',
-          other: '{0} дес. л.',
+          'дес. ложки',
+          one: '{0} дес. ложка',
+          few: '{0} дес. ложки',
+          many: '{0} дес. ложок',
+          other: '{0} дес. ложки',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -7535,7 +8308,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'крапля',
+          'краплі',
           one: '{0} крапля',
           few: '{0} краплі',
           many: '{0} крапель',
@@ -7544,10 +8317,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'кр.',
-          one: '{0} кр.',
-          few: '{0} кр.',
-          many: '{0} кр.',
-          other: '{0} кр.',
+          one: '{0}кр.',
+          few: '{0}кр.',
+          many: '{0}кр.',
+          other: '{0}кр.',
         ),
       );
 
@@ -7563,7 +8336,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'рід. драхма',
+          'рід. драхми',
           one: '{0} рід. драхма',
           few: '{0} рід. драхми',
           many: '{0} рід. драхм',
@@ -7571,11 +8344,11 @@ class UnitsUk implements Units {
         ),
         narrow: UnitCountPattern(
           _locale,
-          'рід. дрхм',
-          one: '{0} рід. дрхм',
-          few: '{0} рід. дрхм',
-          many: '{0} рід. дрхм',
-          other: '{0} рід. дрхм',
+          'рід.дрхм',
+          one: '{0}рід.дрхм',
+          few: '{0}рід.дрхм',
+          many: '{0}рід.дрхм',
+          other: '{0}рід.дрхм',
         ),
       );
 
@@ -7583,7 +8356,7 @@ class UnitsUk implements Units {
   Unit get volumeJigger => Unit(
         long: UnitCountPattern(
           _locale,
-          'мірна склянка',
+          'мірні склянки',
           one: '{0} мірна склянка',
           few: '{0} мірні склянки',
           many: '{0} мірних склянок',
@@ -7591,7 +8364,7 @@ class UnitsUk implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'мірка',
+          'мірки',
           one: '{0} мірка',
           few: '{0} мірки',
           many: '{0} мірок',
@@ -7600,10 +8373,10 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'мір.',
-          one: '{0} мір.',
-          few: '{0} мір.',
-          many: '{0} мір.',
-          other: '{0} мір.',
+          one: '{0}мір.',
+          few: '{0}мір.',
+          many: '{0}мір.',
+          other: '{0}мір.',
         ),
       );
 
@@ -7611,27 +8384,27 @@ class UnitsUk implements Units {
   Unit get volumePinch => Unit(
         long: UnitCountPattern(
           _locale,
-          'дрібка',
-          one: '{0} дрібка',
-          few: '{0} дрібки',
-          many: '{0} дрібок',
-          other: '{0} дрібки',
+          'дріб.',
+          one: '{0} дріб.',
+          few: '{0} дріб.',
+          many: '{0} дріб.',
+          other: '{0} дріб.',
         ),
         short: UnitCountPattern(
-          _locale,
-          'дрібка',
-          one: '{0} дрібка',
-          few: '{0} дрібки',
-          many: '{0} дрібок',
-          other: '{0} дрібки',
-        ),
-        narrow: UnitCountPattern(
           _locale,
           'дріб.',
           one: '{0} дріб.',
           few: '{0} дріб.',
           many: '{0} дріб.',
           other: '{0} дріб.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'дріб.',
+          one: '{0}дріб.',
+          few: '{0}дріб.',
+          many: '{0}дріб.',
+          other: '{0}дріб.',
         ),
       );
 
@@ -7656,10 +8429,110 @@ class UnitsUk implements Units {
         narrow: UnitCountPattern(
           _locale,
           'англ. квар.',
-          one: '{0} англ. квар.',
-          few: '{0} англ. квар.',
-          many: '{0} англ. квар.',
-          other: '{0} англ. квар.',
+          one: '{0}англ.квар.',
+          few: '{0}англ.квар.',
+          many: '{0}англ.квар.',
+          other: '{0}англ.квар.',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0} light',
+          other: '{0} light',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'light',
+          one: '{0}light',
+          other: '{0} light',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'частини на мільярд',
+          one: '{0} частина на мільярд',
+          few: '{0} частини на мільярд',
+          many: '{0} частин на мільярд',
+          other: '{0} частини на мільярд',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'частини/млрд',
+          one: '{0} част/млрд',
+          few: '{0} част/млрд',
+          many: '{0} част/млрд',
+          other: '{0} част/млрд',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ч/млрд',
+          one: '{0} ч/млрд',
+          few: '{0} ч/млрд',
+          many: '{0} ч/млрд',
+          other: '{0} ч/млрд',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ночі',
+          one: '{0} ніч',
+          few: '{0} ночі',
+          many: '{0} ночей',
+          other: '{0} ночі',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'нч.',
+          one: '{0} нч.',
+          few: '{0} нч.',
+          many: '{0} нч.',
+          other: '{0} нч.',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'нч',
+          one: '{0}нч',
+          few: '{0}нч',
+          many: '{0}нч',
+          other: '{0}нч',
         ),
       );
 }
@@ -8023,10 +8896,10 @@ class DateFieldsUk implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'за {0} д.',
-            few: 'за {0} д.',
-            many: 'за {0} д.',
-            other: 'за {0} д.',
+            one: 'за {0} дн.',
+            few: 'за {0} дн.',
+            many: 'за {0} дн.',
+            other: 'за {0} дн.',
           ),
         ),
       );
@@ -8079,17 +8952,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} неділю тому',
-            few: '{0} неділі тому',
-            many: '{0} неділь тому',
-            other: '{0} неділі тому',
+            one: '{0} нд тому',
+            few: '{0} нд тому',
+            many: '{0} нд тому',
+            other: '{0} нд тому',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} неділю тому',
-            few: '{0} неділі тому',
-            many: '{0} неділь тому',
-            other: '{0} неділі тому',
+            one: '{0} нд тому',
+            few: '{0} нд тому',
+            many: '{0} нд тому',
+            other: '{0} нд тому',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8102,17 +8975,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'через {0} неділю',
-            few: 'через {0} неділі',
-            many: 'через {0} неділь',
-            other: 'через {0} неділі',
+            one: 'через {0} нд',
+            few: 'через {0} нд',
+            many: 'через {0} нд',
+            other: 'через {0} нд',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'через {0} неділю',
-            few: 'через {0} неділі',
-            many: 'через {0} неділь',
-            other: 'через {0} неділі',
+            one: 'за {0} нд',
+            few: 'за {0} нд',
+            many: 'за {0} нд',
+            other: 'за {0} нд',
           ),
         ),
       );
@@ -8144,17 +9017,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} понеділок тому',
-            few: '{0} понеділки тому',
-            many: '{0} понеділків тому',
-            other: '{0} понеділка тому',
+            one: '{0} пн тому',
+            few: '{0} пн тому',
+            many: '{0} пн тому',
+            other: '{0} пн тому',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} понеділок тому',
-            few: '{0} понеділки тому',
-            many: '{0} понеділків тому',
-            other: '{0} понеділка тому',
+            one: '{0} пн тому',
+            few: '{0} пн тому',
+            many: '{0} пн тому',
+            other: '{0} пн тому',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8167,17 +9040,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'через {0} понеділок',
-            few: 'через {0} понеділки',
-            many: 'через {0} понеділків',
-            other: 'через {0} понеділка',
+            one: 'через {0} пн',
+            few: 'через {0} пн',
+            many: 'через {0} пн',
+            other: 'через {0} пн',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'через {0} понеділок',
-            few: 'через {0} понеділки',
-            many: 'через {0} понеділків',
-            other: 'через {0} понеділка',
+            one: 'за {0} пн',
+            few: 'за {0} пн',
+            many: 'за {0} пн',
+            other: 'за {0} пн',
           ),
         ),
       );
@@ -8209,17 +9082,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} вівторок тому',
-            few: '{0} вівторки тому',
-            many: '{0} вівторків тому',
-            other: '{0} вівторка тому',
+            one: '{0} вт тому',
+            few: '{0} вт тому',
+            many: '{0} вт тому',
+            other: '{0} вт тому',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} вівторок тому',
-            few: '{0} вівторки тому',
-            many: '{0} вівторків тому',
-            other: '{0} вівторка тому',
+            one: '{0} вт тому',
+            few: '{0} вт тому',
+            many: '{0} вт тому',
+            other: '{0} вт тому',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8232,17 +9105,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'через {0} вівторок',
-            few: 'через {0} вівторки',
-            many: 'через {0} вівторків',
-            other: 'через {0} вівторка',
+            one: 'через {0} вт',
+            few: 'через {0} вт',
+            many: 'через {0} вт',
+            other: 'через {0} вт',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'через {0} вівторок',
-            few: 'через {0} вівторки',
-            many: 'через {0} вівторків',
-            other: 'через {0} вівторка',
+            one: 'за {0} вт',
+            few: 'за {0} вт',
+            many: 'за {0} вт',
+            other: 'за {0} вт',
           ),
         ),
       );
@@ -8274,17 +9147,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} середу тому',
-            few: '{0} середи тому',
-            many: '{0} серед тому',
-            other: '{0} середи тому',
+            one: '{0} ср тому',
+            few: '{0} ср тому',
+            many: '{0} ср тому',
+            other: '{0} ср тому',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} середу тому',
-            few: '{0} середи тому',
-            many: '{0} серед тому',
-            other: '{0} середи тому',
+            one: '{0} ср тому',
+            few: '{0} ср тому',
+            many: '{0} ср тому',
+            other: '{0} ср тому',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8300,14 +9173,14 @@ class DateFieldsUk implements DateFields {
             one: 'через {0} ср',
             few: 'через {0} ср',
             many: 'через {0} ср',
-            other: 'через {0} середи',
+            other: 'через {0} ср',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'через {0} середу',
-            few: 'через {0} середи',
-            many: 'через {0} серед',
-            other: 'через {0} середи',
+            one: 'за {0} ср',
+            few: 'за {0} ср',
+            many: 'за {0} ср',
+            other: 'за {0} ср',
           ),
         ),
       );
@@ -8339,17 +9212,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} четвер тому',
-            few: '{0} четверги тому',
-            many: '{0} четвергів тому',
-            other: '{0} четверга тому',
+            one: '{0} чт тому',
+            few: '{0} чт тому',
+            many: '{0} чт тому',
+            other: '{0} чт тому',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} четвер тому',
-            few: '{0} четверги тому',
-            many: '{0} четвергів тому',
-            other: '{0} четверга тому',
+            one: '{0} чт тому',
+            few: '{0} чт тому',
+            many: '{0} чт тому',
+            other: '{0} чт тому',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8362,17 +9235,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'через {0} четвер',
-            few: 'через {0} четверги',
-            many: 'через {0} четвергів',
-            other: 'через {0} четверга',
+            one: 'через {0} чт',
+            few: 'через {0} чт',
+            many: 'через {0} чт',
+            other: 'через {0} чт',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'через {0} четвер',
-            few: 'через {0} четверги',
-            many: 'через {0} четвергів',
-            other: 'через {0} четверга',
+            one: 'за {0} чт',
+            few: 'за {0} чт',
+            many: 'за {0} чт',
+            other: 'за {0} чт',
           ),
         ),
       );
@@ -8434,10 +9307,10 @@ class DateFieldsUk implements DateFields {
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'через {0} пт',
-            few: 'через {0} пт',
-            many: 'через {0} пт',
-            other: 'через {0} пт',
+            one: 'за {0} пт',
+            few: 'за {0} пт',
+            many: 'за {0} пт',
+            other: 'за {0} пт',
           ),
         ),
       );
@@ -8469,17 +9342,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: '{0} суботу тому',
-            few: '{0} суботи тому',
-            many: '{0} субот тому',
-            other: '{0} суботи тому',
+            one: '{0} сб тому',
+            few: '{0} сб тому',
+            many: '{0} сб тому',
+            other: '{0} сб тому',
           ),
           narrow: RelativeTime(
             _locale,
-            one: '{0} суботу тому',
-            few: '{0} суботи тому',
-            many: '{0} субот тому',
-            other: '{0} суботи тому',
+            one: '{0} сб тому',
+            few: '{0} сб тому',
+            many: '{0} сб тому',
+            other: '{0} сб тому',
           ),
         ),
         future: MultiLengthRelativeTime(
@@ -8492,17 +9365,17 @@ class DateFieldsUk implements DateFields {
           ),
           short: RelativeTime(
             _locale,
-            one: 'через {0} суботу',
-            few: 'через {0} суботи',
-            many: 'через {0} субот',
-            other: 'через {0} суботи',
+            one: 'через {0} сб',
+            few: 'через {0} сб',
+            many: 'через {0} сб',
+            other: 'через {0} сб',
           ),
           narrow: RelativeTime(
             _locale,
-            one: 'через {0} суботу',
-            few: 'через {0} суботи',
-            many: 'через {0} субот',
-            other: 'через {0} суботи',
+            one: 'за {0} сб',
+            few: 'за {0} сб',
+            many: 'за {0} сб',
+            other: 'за {0} сб',
           ),
         ),
       );
@@ -9106,6 +9979,10 @@ class TerritoriesUk implements Territories {
       'CP',
       'Острів Кліппертон',
     ),
+    'CQ': Territory(
+      'CQ',
+      'Невідомий регіон (CQ)',
+    ),
     'CR': Territory(
       'CR',
       'Коста-Рика',
@@ -9357,7 +10234,7 @@ class TerritoriesUk implements Territories {
     ),
     'IO': Territory(
       'IO',
-      'Британська територія в Індійському Океані',
+      'Британська територія в Індійському океані',
     ),
     'IQ': Territory(
       'IQ',
@@ -9962,6 +10839,2359 @@ class TerritoriesUk implements Territories {
     'ZW': Territory(
       'ZW',
       'Зімбабве',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesUk extends TimeZones {
+  TimeZonesUk._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'час: {0}',
+            regionFormatDaylight: 'час: {0}, літній',
+            regionFormatStandard: 'час: {0}, стандартний',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Adak': TimeZoneNames(
+      exemplarCity: 'Адак',
+    ),
+    'America/Anchorage': TimeZoneNames(
+      exemplarCity: 'Анкоридж',
+    ),
+    'America/Anguilla': TimeZoneNames(
+      exemplarCity: 'Анґілья',
+    ),
+    'America/Antigua': TimeZoneNames(
+      exemplarCity: 'Антиґуа',
+    ),
+    'America/Araguaina': TimeZoneNames(
+      exemplarCity: 'Араґуаіна',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Ріо-Ґальєґос',
+    ),
+    'America/Argentina/San_Juan': TimeZoneNames(
+      exemplarCity: 'Сан-Хуан',
+    ),
+    'America/Argentina/Ushuaia': TimeZoneNames(
+      exemplarCity: 'Ушуая',
+    ),
+    'America/Argentina/La_Rioja': TimeZoneNames(
+      exemplarCity: 'Ла-Ріоха',
+    ),
+    'America/Argentina/San_Luis': TimeZoneNames(
+      exemplarCity: 'Сан-Луїс',
+    ),
+    'America/Argentina/Salta': TimeZoneNames(
+      exemplarCity: 'Сальта',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      exemplarCity: 'Тукуман',
+    ),
+    'America/Aruba': TimeZoneNames(
+      exemplarCity: 'Аруба',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: 'Асунсьйон',
+    ),
+    'America/Bahia': TimeZoneNames(
+      exemplarCity: 'Байя',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'Баїя Бандерас',
+    ),
+    'America/Barbados': TimeZoneNames(
+      exemplarCity: 'Барбадос',
+    ),
+    'America/Belem': TimeZoneNames(
+      exemplarCity: 'Белен',
+    ),
+    'America/Belize': TimeZoneNames(
+      exemplarCity: 'Беліз',
+    ),
+    'America/Blanc-Sablon': TimeZoneNames(
+      exemplarCity: 'Блан-Саблон',
+    ),
+    'America/Boa_Vista': TimeZoneNames(
+      exemplarCity: 'Боа-Віста',
+    ),
+    'America/Bogota': TimeZoneNames(
+      exemplarCity: 'Боґота',
+    ),
+    'America/Boise': TimeZoneNames(
+      exemplarCity: 'Бойсе',
+    ),
+    'America/Buenos_Aires': TimeZoneNames(
+      exemplarCity: 'Буенос-Айрес',
+    ),
+    'America/Cambridge_Bay': TimeZoneNames(
+      exemplarCity: 'Кеймбрідж-Бей',
+    ),
+    'America/Campo_Grande': TimeZoneNames(
+      exemplarCity: 'Кампу-Ґранді',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: 'Канкун',
+    ),
+    'America/Caracas': TimeZoneNames(
+      exemplarCity: 'Каракас',
+    ),
+    'America/Catamarca': TimeZoneNames(
+      exemplarCity: 'Катамарка',
+    ),
+    'America/Cayenne': TimeZoneNames(
+      exemplarCity: 'Каєнна',
+    ),
+    'America/Cayman': TimeZoneNames(
+      exemplarCity: 'Кайманові Острови',
+    ),
+    'America/Chicago': TimeZoneNames(
+      exemplarCity: 'Чікаґо',
+    ),
+    'America/Chihuahua': TimeZoneNames(
+      exemplarCity: 'Чіуауа',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: 'С’юдад-Хуарес',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: 'Атікокан',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      exemplarCity: 'Кордова',
+    ),
+    'America/Costa_Rica': TimeZoneNames(
+      exemplarCity: 'Коста-Ріка',
+    ),
+    'America/Creston': TimeZoneNames(
+      exemplarCity: 'Крестон',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      exemplarCity: 'Куяба',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: 'Кюрасао',
+    ),
+    'America/Danmarkshavn': TimeZoneNames(
+      exemplarCity: 'Денмарксхавн',
+    ),
+    'America/Dawson': TimeZoneNames(
+      exemplarCity: 'Доусон',
+    ),
+    'America/Dawson_Creek': TimeZoneNames(
+      exemplarCity: 'Доусон-Крік',
+    ),
+    'America/Denver': TimeZoneNames(
+      exemplarCity: 'Денвер',
+    ),
+    'America/Detroit': TimeZoneNames(
+      exemplarCity: 'Детройт',
+    ),
+    'America/Dominica': TimeZoneNames(
+      exemplarCity: 'Домініка',
+    ),
+    'America/Edmonton': TimeZoneNames(
+      exemplarCity: 'Едмонтон',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      exemplarCity: 'Ейрунепе',
+    ),
+    'America/El_Salvador': TimeZoneNames(
+      exemplarCity: 'Сальвадор',
+    ),
+    'America/Fort_Nelson': TimeZoneNames(
+      exemplarCity: 'Форт Нельсон',
+    ),
+    'America/Fortaleza': TimeZoneNames(
+      exemplarCity: 'Форталеза',
+    ),
+    'America/Glace_Bay': TimeZoneNames(
+      exemplarCity: 'Ґлейс-Бей',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: 'Нуук',
+    ),
+    'America/Goose_Bay': TimeZoneNames(
+      exemplarCity: 'Ґус-Бей',
+    ),
+    'America/Grand_Turk': TimeZoneNames(
+      exemplarCity: 'Ґранд-Терк',
+    ),
+    'America/Grenada': TimeZoneNames(
+      exemplarCity: 'Ґренада',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      exemplarCity: 'Ґваделупа',
+    ),
+    'America/Guatemala': TimeZoneNames(
+      exemplarCity: 'Ґватемала',
+    ),
+    'America/Guayaquil': TimeZoneNames(
+      exemplarCity: 'Ґуаякіль',
+    ),
+    'America/Guyana': TimeZoneNames(
+      exemplarCity: 'Ґайана',
+    ),
+    'America/Halifax': TimeZoneNames(
+      exemplarCity: 'Галіфакс',
+    ),
+    'America/Havana': TimeZoneNames(
+      exemplarCity: 'Гавана',
+    ),
+    'America/Hermosillo': TimeZoneNames(
+      exemplarCity: 'Ермосільйо',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Вінсенс, Індіана',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Пітерсберг, Індіана',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Телл-Сіті, Індіана',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: 'Нокс, Індіана',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Вінамак, Індіана',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'Маренго, Індіана',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: 'Вівей, Індіана',
+    ),
+    'America/Indianapolis': TimeZoneNames(
+      exemplarCity: 'Індіанаполіс',
+    ),
+    'America/Inuvik': TimeZoneNames(
+      exemplarCity: 'Інувік',
+    ),
+    'America/Iqaluit': TimeZoneNames(
+      exemplarCity: 'Ікалуїт',
+    ),
+    'America/Jamaica': TimeZoneNames(
+      exemplarCity: 'Ямайка',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      exemplarCity: 'Жужуй',
+    ),
+    'America/Juneau': TimeZoneNames(
+      exemplarCity: 'Джуно',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Монтіселло, Кентуккі',
+    ),
+    'America/Kralendijk': TimeZoneNames(
+      exemplarCity: 'Кралендейк',
+    ),
+    'America/La_Paz': TimeZoneNames(
+      exemplarCity: 'Ла-Пас',
+    ),
+    'America/Lima': TimeZoneNames(
+      exemplarCity: 'Ліма',
+    ),
+    'America/Los_Angeles': TimeZoneNames(
+      exemplarCity: 'Лос-Анджелес',
+    ),
+    'America/Louisville': TimeZoneNames(
+      exemplarCity: 'Луїсвілл',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Лоуер-Принсес-Квотер',
+    ),
+    'America/Maceio': TimeZoneNames(
+      exemplarCity: 'Масейо',
+    ),
+    'America/Managua': TimeZoneNames(
+      exemplarCity: 'Манаґуа',
+    ),
+    'America/Manaus': TimeZoneNames(
+      exemplarCity: 'Манаус',
+    ),
+    'America/Marigot': TimeZoneNames(
+      exemplarCity: 'Маріґо',
+    ),
+    'America/Martinique': TimeZoneNames(
+      exemplarCity: 'Мартініка',
+    ),
+    'America/Matamoros': TimeZoneNames(
+      exemplarCity: 'Матаморос',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      exemplarCity: 'Масатлан',
+    ),
+    'America/Mendoza': TimeZoneNames(
+      exemplarCity: 'Мендоса',
+    ),
+    'America/Menominee': TimeZoneNames(
+      exemplarCity: 'Меноміні',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: 'Меріда',
+    ),
+    'America/Metlakatla': TimeZoneNames(
+      exemplarCity: 'Метлакатла',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      exemplarCity: 'Мехіко',
+    ),
+    'America/Miquelon': TimeZoneNames(
+      exemplarCity: 'Мікелон',
+    ),
+    'America/Moncton': TimeZoneNames(
+      exemplarCity: 'Монктон',
+    ),
+    'America/Monterrey': TimeZoneNames(
+      exemplarCity: 'Монтерей',
+    ),
+    'America/Montevideo': TimeZoneNames(
+      exemplarCity: 'Монтевідео',
+    ),
+    'America/Montserrat': TimeZoneNames(
+      exemplarCity: 'Монтсеррат',
+    ),
+    'America/Nassau': TimeZoneNames(
+      exemplarCity: 'Насау',
+    ),
+    'America/New_York': TimeZoneNames(
+      exemplarCity: 'Нью-Йорк',
+    ),
+    'America/Nome': TimeZoneNames(
+      exemplarCity: 'Ном',
+    ),
+    'America/Noronha': TimeZoneNames(
+      exemplarCity: 'Норонья',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Бʼюла, Північна Дакота',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'Нью-Салем, Північна Дакота',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Сентр, Північна Дакота',
+    ),
+    'America/Ojinaga': TimeZoneNames(
+      exemplarCity: 'Охінаґа',
+    ),
+    'America/Panama': TimeZoneNames(
+      exemplarCity: 'Панама',
+    ),
+    'America/Paramaribo': TimeZoneNames(
+      exemplarCity: 'Парамарибо',
+    ),
+    'America/Phoenix': TimeZoneNames(
+      exemplarCity: 'Фінікс',
+    ),
+    'America/Port-au-Prince': TimeZoneNames(
+      exemplarCity: 'Порт-о-Пренс',
+    ),
+    'America/Port_of_Spain': TimeZoneNames(
+      exemplarCity: 'Порт-оф-Спейн',
+    ),
+    'America/Porto_Velho': TimeZoneNames(
+      exemplarCity: 'Порту-Велью',
+    ),
+    'America/Puerto_Rico': TimeZoneNames(
+      exemplarCity: 'Пуерто-Ріко',
+    ),
+    'America/Punta_Arenas': TimeZoneNames(
+      exemplarCity: 'Пунта-Аренас',
+    ),
+    'America/Rankin_Inlet': TimeZoneNames(
+      exemplarCity: 'Ренкін-Інлет',
+    ),
+    'America/Recife': TimeZoneNames(
+      exemplarCity: 'Ресіфі',
+    ),
+    'America/Regina': TimeZoneNames(
+      exemplarCity: 'Реджайна',
+    ),
+    'America/Resolute': TimeZoneNames(
+      exemplarCity: 'Резольют',
+    ),
+    'America/Rio_Branco': TimeZoneNames(
+      exemplarCity: 'Ріо-Бранко',
+    ),
+    'America/Santarem': TimeZoneNames(
+      exemplarCity: 'Сантарен',
+    ),
+    'America/Santiago': TimeZoneNames(
+      exemplarCity: 'Сантьяґо',
+    ),
+    'America/Santo_Domingo': TimeZoneNames(
+      exemplarCity: 'Санто-Домінґо',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      exemplarCity: 'Сан-Паулу',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: 'Іттоккортоорміут',
+    ),
+    'America/Sitka': TimeZoneNames(
+      exemplarCity: 'Сітка',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: 'Сен-Бартелемі',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: 'Сент-Джонс',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: 'Сент-Кіттс',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: 'Сент-Люсія',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: 'Сент-Томас',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: 'Сент-Вінсент',
+    ),
+    'America/Swift_Current': TimeZoneNames(
+      exemplarCity: 'Свіфт-Каррент',
+    ),
+    'America/Tegucigalpa': TimeZoneNames(
+      exemplarCity: 'Теґусіґальпа',
+    ),
+    'America/Thule': TimeZoneNames(
+      exemplarCity: 'Туле',
+    ),
+    'America/Tijuana': TimeZoneNames(
+      exemplarCity: 'Тіхуана',
+    ),
+    'America/Toronto': TimeZoneNames(
+      exemplarCity: 'Торонто',
+    ),
+    'America/Tortola': TimeZoneNames(
+      exemplarCity: 'Тортола',
+    ),
+    'America/Vancouver': TimeZoneNames(
+      exemplarCity: 'Ванкувер',
+    ),
+    'America/Whitehorse': TimeZoneNames(
+      exemplarCity: 'Вайтгорс',
+    ),
+    'America/Winnipeg': TimeZoneNames(
+      exemplarCity: 'Вінніпеґ',
+    ),
+    'America/Yakutat': TimeZoneNames(
+      exemplarCity: 'Якутат',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      exemplarCity: 'Азорські острови',
+    ),
+    'Atlantic/Bermuda': TimeZoneNames(
+      exemplarCity: 'Бермуди',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: 'Канарські острови',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: 'Кабо-Верде',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: 'Фарерські острови',
+    ),
+    'Atlantic/Madeira': TimeZoneNames(
+      exemplarCity: 'Мадейра',
+    ),
+    'Atlantic/Reykjavik': TimeZoneNames(
+      exemplarCity: 'Рейкʼявік',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: 'Південна Джорджія',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: 'Острів Святої Єлени',
+    ),
+    'Atlantic/Stanley': TimeZoneNames(
+      exemplarCity: 'Стенлі',
+    ),
+    'Europe/Amsterdam': TimeZoneNames(
+      exemplarCity: 'Амстердам',
+    ),
+    'Europe/Andorra': TimeZoneNames(
+      exemplarCity: 'Андорра',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      exemplarCity: 'Астрахань',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: 'Афіни',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: 'Белград',
+    ),
+    'Europe/Berlin': TimeZoneNames(
+      exemplarCity: 'Берлін',
+    ),
+    'Europe/Bratislava': TimeZoneNames(
+      exemplarCity: 'Братислава',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: 'Брюссель',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: 'Бухарест',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      exemplarCity: 'Будапешт',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      exemplarCity: 'Бюзінген',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: 'Кишинів',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: 'Копенгаген',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'за літнім часом в Ірландії',
+      ),
+      exemplarCity: 'Дублін',
+    ),
+    'Europe/Gibraltar': TimeZoneNames(
+      exemplarCity: 'Гібралтар',
+    ),
+    'Europe/Guernsey': TimeZoneNames(
+      exemplarCity: 'Гернсі',
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      exemplarCity: 'Гельсінкі',
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      exemplarCity: 'Острів Мен',
+    ),
+    'Europe/Istanbul': TimeZoneNames(
+      exemplarCity: 'Стамбул',
+    ),
+    'Europe/Jersey': TimeZoneNames(
+      exemplarCity: 'Джерсі',
+    ),
+    'Europe/Kaliningrad': TimeZoneNames(
+      exemplarCity: 'Калінінград',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: 'Київ',
+    ),
+    'Europe/Kirov': TimeZoneNames(
+      exemplarCity: 'Кіров',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: 'Лісабон',
+    ),
+    'Europe/Ljubljana': TimeZoneNames(
+      exemplarCity: 'Любляна',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'за літнім часом у Великій Британії',
+      ),
+      exemplarCity: 'Лондон',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: 'Люксембург',
+    ),
+    'Europe/Madrid': TimeZoneNames(
+      exemplarCity: 'Мадрид',
+    ),
+    'Europe/Malta': TimeZoneNames(
+      exemplarCity: 'Мальта',
+    ),
+    'Europe/Mariehamn': TimeZoneNames(
+      exemplarCity: 'Марієгамн',
+    ),
+    'Europe/Minsk': TimeZoneNames(
+      exemplarCity: 'Мінськ',
+    ),
+    'Europe/Monaco': TimeZoneNames(
+      exemplarCity: 'Монако',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: 'Москва',
+    ),
+    'Europe/Oslo': TimeZoneNames(
+      exemplarCity: 'Осло',
+    ),
+    'Europe/Paris': TimeZoneNames(
+      exemplarCity: 'Париж',
+    ),
+    'Europe/Podgorica': TimeZoneNames(
+      exemplarCity: 'Подгориця',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: 'Прага',
+    ),
+    'Europe/Riga': TimeZoneNames(
+      exemplarCity: 'Рига',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: 'Рим',
+    ),
+    'Europe/Samara': TimeZoneNames(
+      exemplarCity: 'Самара',
+    ),
+    'Europe/San_Marino': TimeZoneNames(
+      exemplarCity: 'Сан-Марино',
+    ),
+    'Europe/Sarajevo': TimeZoneNames(
+      exemplarCity: 'Сараєво',
+    ),
+    'Europe/Saratov': TimeZoneNames(
+      exemplarCity: 'Саратов',
+    ),
+    'Europe/Simferopol': TimeZoneNames(
+      exemplarCity: 'Сімферополь',
+    ),
+    'Europe/Skopje': TimeZoneNames(
+      exemplarCity: 'Скопʼє',
+    ),
+    'Europe/Sofia': TimeZoneNames(
+      exemplarCity: 'Софія',
+    ),
+    'Europe/Stockholm': TimeZoneNames(
+      exemplarCity: 'Стокгольм',
+    ),
+    'Europe/Tallinn': TimeZoneNames(
+      exemplarCity: 'Таллінн',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: 'Тирана',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: 'Ульянівськ',
+    ),
+    'Europe/Vaduz': TimeZoneNames(
+      exemplarCity: 'Вадуц',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      exemplarCity: 'Ватикан',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: 'Відень',
+    ),
+    'Europe/Vilnius': TimeZoneNames(
+      exemplarCity: 'Вільнюс',
+    ),
+    'Europe/Volgograd': TimeZoneNames(
+      exemplarCity: 'Волгоград',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: 'Варшава',
+    ),
+    'Europe/Zagreb': TimeZoneNames(
+      exemplarCity: 'Загреб',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: 'Цюріх',
+    ),
+    'Africa/Abidjan': TimeZoneNames(
+      exemplarCity: 'Абіджан',
+    ),
+    'Africa/Accra': TimeZoneNames(
+      exemplarCity: 'Аккра',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: 'Аддис-Абеба',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: 'Алжир',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: 'Асмера',
+    ),
+    'Africa/Bamako': TimeZoneNames(
+      exemplarCity: 'Бамако',
+    ),
+    'Africa/Bangui': TimeZoneNames(
+      exemplarCity: 'Банґі',
+    ),
+    'Africa/Banjul': TimeZoneNames(
+      exemplarCity: 'Банжул',
+    ),
+    'Africa/Bissau': TimeZoneNames(
+      exemplarCity: 'Бісау',
+    ),
+    'Africa/Blantyre': TimeZoneNames(
+      exemplarCity: 'Блантайр',
+    ),
+    'Africa/Brazzaville': TimeZoneNames(
+      exemplarCity: 'Браззавіль',
+    ),
+    'Africa/Bujumbura': TimeZoneNames(
+      exemplarCity: 'Бужумбура',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      exemplarCity: 'Каїр',
+    ),
+    'Africa/Casablanca': TimeZoneNames(
+      exemplarCity: 'Касабланка',
+    ),
+    'Africa/Ceuta': TimeZoneNames(
+      exemplarCity: 'Сеута',
+    ),
+    'Africa/Conakry': TimeZoneNames(
+      exemplarCity: 'Конакрі',
+    ),
+    'Africa/Dakar': TimeZoneNames(
+      exemplarCity: 'Дакар',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      exemplarCity: 'Дар-ес-Салам',
+    ),
+    'Africa/Djibouti': TimeZoneNames(
+      exemplarCity: 'Джібуті',
+    ),
+    'Africa/Douala': TimeZoneNames(
+      exemplarCity: 'Дуала',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      exemplarCity: 'Ель-Аюн',
+    ),
+    'Africa/Freetown': TimeZoneNames(
+      exemplarCity: 'Фрітаун',
+    ),
+    'Africa/Gaborone': TimeZoneNames(
+      exemplarCity: 'Ґабороне',
+    ),
+    'Africa/Harare': TimeZoneNames(
+      exemplarCity: 'Хараре',
+    ),
+    'Africa/Johannesburg': TimeZoneNames(
+      exemplarCity: 'Йоганнесбурґ',
+    ),
+    'Africa/Juba': TimeZoneNames(
+      exemplarCity: 'Джуба',
+    ),
+    'Africa/Kampala': TimeZoneNames(
+      exemplarCity: 'Кампала',
+    ),
+    'Africa/Khartoum': TimeZoneNames(
+      exemplarCity: 'Хартум',
+    ),
+    'Africa/Kigali': TimeZoneNames(
+      exemplarCity: 'Кігалі',
+    ),
+    'Africa/Kinshasa': TimeZoneNames(
+      exemplarCity: 'Кіншаса',
+    ),
+    'Africa/Lagos': TimeZoneNames(
+      exemplarCity: 'Лаґос',
+    ),
+    'Africa/Libreville': TimeZoneNames(
+      exemplarCity: 'Лібревіль',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: 'Ломе',
+    ),
+    'Africa/Luanda': TimeZoneNames(
+      exemplarCity: 'Луанда',
+    ),
+    'Africa/Lubumbashi': TimeZoneNames(
+      exemplarCity: 'Лубумбаші',
+    ),
+    'Africa/Lusaka': TimeZoneNames(
+      exemplarCity: 'Лусака',
+    ),
+    'Africa/Malabo': TimeZoneNames(
+      exemplarCity: 'Малабо',
+    ),
+    'Africa/Maputo': TimeZoneNames(
+      exemplarCity: 'Мапуту',
+    ),
+    'Africa/Maseru': TimeZoneNames(
+      exemplarCity: 'Масеру',
+    ),
+    'Africa/Mbabane': TimeZoneNames(
+      exemplarCity: 'Мбабане',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: 'Моґадішо',
+    ),
+    'Africa/Monrovia': TimeZoneNames(
+      exemplarCity: 'Монровія',
+    ),
+    'Africa/Nairobi': TimeZoneNames(
+      exemplarCity: 'Найробі',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: 'Нджамена',
+    ),
+    'Africa/Niamey': TimeZoneNames(
+      exemplarCity: 'Ніамей',
+    ),
+    'Africa/Nouakchott': TimeZoneNames(
+      exemplarCity: 'Нуакшотт',
+    ),
+    'Africa/Ouagadougou': TimeZoneNames(
+      exemplarCity: 'Уаґадуґу',
+    ),
+    'Africa/Porto-Novo': TimeZoneNames(
+      exemplarCity: 'Порто-Ново',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: 'Сан-Томе',
+    ),
+    'Africa/Tripoli': TimeZoneNames(
+      exemplarCity: 'Триполі',
+    ),
+    'Africa/Tunis': TimeZoneNames(
+      exemplarCity: 'Туніс',
+    ),
+    'Africa/Windhoek': TimeZoneNames(
+      exemplarCity: 'Віндгук',
+    ),
+    'Asia/Aden': TimeZoneNames(
+      exemplarCity: 'Аден',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      exemplarCity: 'Алмати',
+    ),
+    'Asia/Amman': TimeZoneNames(
+      exemplarCity: 'Амман',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      exemplarCity: 'Анадир',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: 'Актау',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: 'Актобе',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: 'Ашгабат',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      exemplarCity: 'Атирау',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: 'Багдад',
+    ),
+    'Asia/Bahrain': TimeZoneNames(
+      exemplarCity: 'Бахрейн',
+    ),
+    'Asia/Baku': TimeZoneNames(
+      exemplarCity: 'Баку',
+    ),
+    'Asia/Bangkok': TimeZoneNames(
+      exemplarCity: 'Бангкок',
+    ),
+    'Asia/Barnaul': TimeZoneNames(
+      exemplarCity: 'Барнаул',
+    ),
+    'Asia/Beirut': TimeZoneNames(
+      exemplarCity: 'Бейрут',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      exemplarCity: 'Бішкек',
+    ),
+    'Asia/Brunei': TimeZoneNames(
+      exemplarCity: 'Бруней',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: 'Колката',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: 'Чита',
+    ),
+    'Asia/Colombo': TimeZoneNames(
+      exemplarCity: 'Коломбо',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: 'Дамаск',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      exemplarCity: 'Дакка',
+    ),
+    'Asia/Dili': TimeZoneNames(
+      exemplarCity: 'Ділі',
+    ),
+    'Asia/Dubai': TimeZoneNames(
+      exemplarCity: 'Дубай',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: 'Душанбе',
+    ),
+    'Asia/Famagusta': TimeZoneNames(
+      exemplarCity: 'Фамагуста',
+    ),
+    'Asia/Gaza': TimeZoneNames(
+      exemplarCity: 'Газа',
+    ),
+    'Asia/Hebron': TimeZoneNames(
+      exemplarCity: 'Хеврон',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      exemplarCity: 'Гонконг',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      exemplarCity: 'Ховд',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      exemplarCity: 'Іркутськ',
+    ),
+    'Asia/Jakarta': TimeZoneNames(
+      exemplarCity: 'Джакарта',
+    ),
+    'Asia/Jayapura': TimeZoneNames(
+      exemplarCity: 'Джайпур',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      exemplarCity: 'Єрусалим',
+    ),
+    'Asia/Kabul': TimeZoneNames(
+      exemplarCity: 'Кабул',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      exemplarCity: 'Камчатка',
+    ),
+    'Asia/Karachi': TimeZoneNames(
+      exemplarCity: 'Карачі',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: 'Катманду',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      exemplarCity: 'Хандига',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      exemplarCity: 'Красноярськ',
+    ),
+    'Asia/Kuala_Lumpur': TimeZoneNames(
+      exemplarCity: 'Куала-Лумпур',
+    ),
+    'Asia/Kuching': TimeZoneNames(
+      exemplarCity: 'Кучинг',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      exemplarCity: 'Кувейт',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: 'Макао',
+    ),
+    'Asia/Magadan': TimeZoneNames(
+      exemplarCity: 'Магадан',
+    ),
+    'Asia/Makassar': TimeZoneNames(
+      exemplarCity: 'Макассар',
+    ),
+    'Asia/Manila': TimeZoneNames(
+      exemplarCity: 'Маніла',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      exemplarCity: 'Маскат',
+    ),
+    'Asia/Nicosia': TimeZoneNames(
+      exemplarCity: 'Нікосія',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      exemplarCity: 'Новокузнецьк',
+    ),
+    'Asia/Novosibirsk': TimeZoneNames(
+      exemplarCity: 'Новосибірськ',
+    ),
+    'Asia/Omsk': TimeZoneNames(
+      exemplarCity: 'Омськ',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      exemplarCity: 'Орал',
+    ),
+    'Asia/Phnom_Penh': TimeZoneNames(
+      exemplarCity: 'Пномпень',
+    ),
+    'Asia/Pontianak': TimeZoneNames(
+      exemplarCity: 'Понтіанак',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      exemplarCity: 'Пхеньян',
+    ),
+    'Asia/Qatar': TimeZoneNames(
+      exemplarCity: 'Катар',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: 'Костанай',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: 'Кизилорда',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: 'Янгон',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      exemplarCity: 'Ер-Ріяд',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: 'Хошимін',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: 'Сахалін',
+    ),
+    'Asia/Samarkand': TimeZoneNames(
+      exemplarCity: 'Самарканд',
+    ),
+    'Asia/Seoul': TimeZoneNames(
+      exemplarCity: 'Сеул',
+    ),
+    'Asia/Shanghai': TimeZoneNames(
+      exemplarCity: 'Шанхай',
+    ),
+    'Asia/Singapore': TimeZoneNames(
+      exemplarCity: 'Сінгапур',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      exemplarCity: 'Середньоколимськ',
+    ),
+    'Asia/Taipei': TimeZoneNames(
+      exemplarCity: 'Тайбей',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: 'Ташкент',
+    ),
+    'Asia/Tbilisi': TimeZoneNames(
+      exemplarCity: 'Тбілісі',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: 'Тегеран',
+    ),
+    'Asia/Thimphu': TimeZoneNames(
+      exemplarCity: 'Тхімпху',
+    ),
+    'Asia/Tokyo': TimeZoneNames(
+      exemplarCity: 'Токіо',
+    ),
+    'Asia/Tomsk': TimeZoneNames(
+      exemplarCity: 'Томськ',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      exemplarCity: 'Улан-Батор',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: 'Урумчі',
+    ),
+    'Asia/Ust-Nera': TimeZoneNames(
+      exemplarCity: 'Усть-Нера',
+    ),
+    'Asia/Vientiane': TimeZoneNames(
+      exemplarCity: 'Вʼєнтьян',
+    ),
+    'Asia/Vladivostok': TimeZoneNames(
+      exemplarCity: 'Владивосток',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      exemplarCity: 'Якутськ',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: 'Єкатеринбург',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'Єреван',
+    ),
+    'Indian/Antananarivo': TimeZoneNames(
+      exemplarCity: 'Антананаріву',
+    ),
+    'Indian/Chagos': TimeZoneNames(
+      exemplarCity: 'Чаґос',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      exemplarCity: 'Острів Різдва',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      exemplarCity: 'Кокосові острови',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: 'Комори',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      exemplarCity: 'Керґелен',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: 'Махе',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: 'Мальдіви',
+    ),
+    'Indian/Mauritius': TimeZoneNames(
+      exemplarCity: 'Маврикій',
+    ),
+    'Indian/Mayotte': TimeZoneNames(
+      exemplarCity: 'Майотта',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: 'Реюньйон',
+    ),
+    'Australia/Adelaide': TimeZoneNames(
+      exemplarCity: 'Аделаїда',
+    ),
+    'Australia/Brisbane': TimeZoneNames(
+      exemplarCity: 'Брісбен',
+    ),
+    'Australia/Broken_Hill': TimeZoneNames(
+      exemplarCity: 'Брокен-Хілл',
+    ),
+    'Australia/Darwin': TimeZoneNames(
+      exemplarCity: 'Дарвін',
+    ),
+    'Australia/Eucla': TimeZoneNames(
+      exemplarCity: 'Евкла',
+    ),
+    'Australia/Hobart': TimeZoneNames(
+      exemplarCity: 'Гобарт',
+    ),
+    'Australia/Lindeman': TimeZoneNames(
+      exemplarCity: 'Ліндеман',
+    ),
+    'Australia/Lord_Howe': TimeZoneNames(
+      exemplarCity: 'Лорд-Хау',
+    ),
+    'Australia/Melbourne': TimeZoneNames(
+      exemplarCity: 'Мельбурн',
+    ),
+    'Australia/Perth': TimeZoneNames(
+      exemplarCity: 'Перт',
+    ),
+    'Australia/Sydney': TimeZoneNames(
+      exemplarCity: 'Сідней',
+    ),
+    'Pacific/Apia': TimeZoneNames(
+      exemplarCity: 'Апіа',
+    ),
+    'Pacific/Auckland': TimeZoneNames(
+      exemplarCity: 'Окленд',
+    ),
+    'Pacific/Bougainville': TimeZoneNames(
+      exemplarCity: 'Буґенвіль',
+    ),
+    'Pacific/Chatham': TimeZoneNames(
+      exemplarCity: 'Чатем',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: 'Острів Пасхи',
+    ),
+    'Pacific/Efate': TimeZoneNames(
+      exemplarCity: 'Ефате',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Ендербері',
+    ),
+    'Pacific/Fakaofo': TimeZoneNames(
+      exemplarCity: 'Факаофо',
+    ),
+    'Pacific/Fiji': TimeZoneNames(
+      exemplarCity: 'Фіджі',
+    ),
+    'Pacific/Funafuti': TimeZoneNames(
+      exemplarCity: 'Фунафуті',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      exemplarCity: 'Ґалапаґос',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      exemplarCity: 'Гамбʼє',
+    ),
+    'Pacific/Guadalcanal': TimeZoneNames(
+      exemplarCity: 'Гуадалканал',
+    ),
+    'Pacific/Guam': TimeZoneNames(
+      exemplarCity: 'Гуам',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      exemplarCity: 'Гонолулу',
+    ),
+    'Pacific/Kanton': TimeZoneNames(
+      exemplarCity: 'Кантон',
+    ),
+    'Pacific/Kiritimati': TimeZoneNames(
+      exemplarCity: 'Кірітіматі',
+    ),
+    'Pacific/Kosrae': TimeZoneNames(
+      exemplarCity: 'Косрае',
+    ),
+    'Pacific/Kwajalein': TimeZoneNames(
+      exemplarCity: 'Кваджалейн',
+    ),
+    'Pacific/Majuro': TimeZoneNames(
+      exemplarCity: 'Маджуро',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      exemplarCity: 'Маркізькі острови',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      exemplarCity: 'Мідвей',
+    ),
+    'Pacific/Nauru': TimeZoneNames(
+      exemplarCity: 'Науру',
+    ),
+    'Pacific/Niue': TimeZoneNames(
+      exemplarCity: 'Ніуе',
+    ),
+    'Pacific/Norfolk': TimeZoneNames(
+      exemplarCity: 'Норфолк',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: 'Нумеа',
+    ),
+    'Pacific/Pago_Pago': TimeZoneNames(
+      exemplarCity: 'Паго-Паго',
+    ),
+    'Pacific/Palau': TimeZoneNames(
+      exemplarCity: 'Палау',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      exemplarCity: 'Піткерн',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: 'Понапе',
+    ),
+    'Pacific/Port_Moresby': TimeZoneNames(
+      exemplarCity: 'Порт-Морсбі',
+    ),
+    'Pacific/Rarotonga': TimeZoneNames(
+      exemplarCity: 'Раротонга',
+    ),
+    'Pacific/Saipan': TimeZoneNames(
+      exemplarCity: 'Сайпан',
+    ),
+    'Pacific/Tahiti': TimeZoneNames(
+      exemplarCity: 'Таїті',
+    ),
+    'Pacific/Tarawa': TimeZoneNames(
+      exemplarCity: 'Тарава',
+    ),
+    'Pacific/Tongatapu': TimeZoneNames(
+      exemplarCity: 'Тонгатапу',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: 'Чуук',
+    ),
+    'Pacific/Wake': TimeZoneNames(
+      exemplarCity: 'Вейк',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      exemplarCity: 'Уолліс',
+    ),
+    'Arctic/Longyearbyen': TimeZoneNames(
+      exemplarCity: 'Лонгʼїр',
+    ),
+    'Antarctica/Casey': TimeZoneNames(
+      exemplarCity: 'Кейсі',
+    ),
+    'Antarctica/Davis': TimeZoneNames(
+      exemplarCity: 'Девіс',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Дюмон-дʼЮрвіль',
+    ),
+    'Antarctica/Macquarie': TimeZoneNames(
+      exemplarCity: 'Маккуорі',
+    ),
+    'Antarctica/Mawson': TimeZoneNames(
+      exemplarCity: 'Моусон',
+    ),
+    'Antarctica/McMurdo': TimeZoneNames(
+      exemplarCity: 'Мак-Мердо',
+    ),
+    'Antarctica/Palmer': TimeZoneNames(
+      exemplarCity: 'Палмер',
+    ),
+    'Antarctica/Rothera': TimeZoneNames(
+      exemplarCity: 'Ротера',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      exemplarCity: 'Сьова',
+    ),
+    'Antarctica/Troll': TimeZoneNames(
+      exemplarCity: 'Тролл',
+    ),
+    'Antarctica/Vostok': TimeZoneNames(
+      exemplarCity: 'Восток',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'за всесвітнім координованим часом',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: 'Невідоме місто',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'час: Акрі',
+        standard: 'час: Акрі, стандартний',
+        daylight: 'час: Акрі, літній',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'за часом в Афганістані',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'за центральноафриканським часом',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'за східноафриканським часом',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'за південноафриканським часом',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'за західноафриканським часом',
+        standard: 'за західноафриканським стандартним часом',
+        daylight: 'за західноафриканським літнім часом',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'за часом на Алясці',
+        standard: 'за стандартним часом на Алясці',
+        daylight: 'за літнім часом на Алясці',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'за часом на Амазонці',
+        standard: 'за стандартним часом на Амазонці',
+        daylight: 'за літнім часом на Амазонці',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'за північноамериканським центральним часом',
+        standard: 'за північноамериканським центральним стандартним часом',
+        daylight: 'за північноамериканським центральним літнім часом',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'за північноамериканським східним часом',
+        standard: 'за північноамериканським східним стандартним часом',
+        daylight: 'за північноамериканським східним літнім часом',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'за північноамериканським гірським часом',
+        standard: 'за північноамериканським гірським стандартним часом',
+        daylight: 'за північноамериканським гірським літнім часом',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'за північноамериканським тихоокеанським часом',
+        standard: 'за північноамериканським тихоокеанським стандартним часом',
+        daylight: 'за північноамериканським тихоокеанським літнім часом',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'час: Анадир',
+        standard: 'час: Анадир, стандартний',
+        daylight: 'час: Анадир, літній',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'за часом в Апіа',
+        standard: 'за стандартним часом в Апіа',
+        daylight: 'за літнім часом в Апіа',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'за арабським часом',
+        standard: 'за арабським стандартним часом',
+        daylight: 'за арабським літнім часом',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'за аргентинським часом',
+        standard: 'за стандартним аргентинським часом',
+        daylight: 'за літнім аргентинським часом',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'за західноаргентинським часом',
+        standard: 'за стандартним західноаргентинським часом',
+        daylight: 'за літнім за західноаргентинським часом',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'за вірменським часом',
+        standard: 'за вірменським стандартним часом',
+        daylight: 'за вірменським літнім часом',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'за атлантичним часом',
+        standard: 'за атлантичним стандартним часом',
+        daylight: 'за атлантичним літнім часом',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'за центральноавстралійським часом',
+        standard: 'за стандартним центральноавстралійським часом',
+        daylight: 'за літнім центральноавстралійським часом',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'за центральнозахідним австралійським часом',
+        standard: 'за стандартним центральнозахідним австралійським часом',
+        daylight: 'за літнім центральнозахідним австралійським часом',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'за східноавстралійським часом',
+        standard: 'за стандартним східноавстралійським часом',
+        daylight: 'за літнім східноавстралійським часом',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'за західноавстралійським часом',
+        standard: 'за стандартним західноавстралійським часом',
+        daylight: 'за літнім західноавстралійським часом',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'за азербайджанським часом',
+        standard: 'за стандартним азербайджанським часом',
+        daylight: 'за літнім азербайджанським часом',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'за часом на Азорських островах',
+        standard: 'за стандартним часом на Азорських островах',
+        daylight: 'за літнім часом на Азорських островах',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'за часом у Бангладеш',
+        standard: 'за стандартним часом у Бангладеш',
+        daylight: 'за літнім часом у Бангладеш',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'за часом у Бутані',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'за болівійським часом',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'за бразильським часом',
+        standard: 'за стандартним бразильським часом',
+        daylight: 'за літнім бразильським часом',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'за часом у Брунеї',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'за часом на островах Кабо-Верде',
+        standard: 'за стандартним часом на островах Кабо-Верде',
+        daylight: 'за літнім часом на островах Кабо-Верде',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'за часом на Північних Маріанських островах',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'за часом на архіпелазі Чатем',
+        standard: 'за стандартним часом на архіпелазі Чатем',
+        daylight: 'за літнім часом на архіпелазі Чатем',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'за чилійським часом',
+        standard: 'за стандартним чилійським часом',
+        daylight: 'за літнім чилійським часом',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'за китайським часом',
+        standard: 'за китайським стандартним часом',
+        daylight: 'за китайським літнім часом',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'за часом на острові Різдва',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'за часом на Кокосових островах',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'за колумбійським часом',
+        standard: 'за стандартним колумбійським часом',
+        daylight: 'за літнім колумбійським часом',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'за часом на Островах Кука',
+        standard: 'за стандартним часом на Островах Кука',
+        daylight: 'за літнім часом на Островах Кука',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'за часом на Кубі',
+        standard: 'за стандартним часом на Кубі',
+        daylight: 'за літнім часом на Кубі',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'за часом на станції Девіс',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'за часом на станції Дюмон дʼЮрвіль',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'за часом у Східному Тиморі',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'за часом на острові Пасхи',
+        standard: 'за стандартним часом на острові Пасхи',
+        daylight: 'за літнім часом на острові Пасхи',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'за часом в Еквадорі',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'за центральноєвропейським часом',
+        standard: 'за центральноєвропейським стандартним часом',
+        daylight: 'за центральноєвропейським літнім часом',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'за східноєвропейським часом',
+        standard: 'за східноєвропейським стандартним часом',
+        daylight: 'за східноєвропейським літнім часом',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'за далекосхідним європейським часом',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'за західноєвропейським часом',
+        standard: 'за західноєвропейським стандартним часом',
+        daylight: 'за західноєвропейським літнім часом',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'за часом на Фолклендських Островах',
+        standard: 'за стандартним часом на Фолклендських Островах',
+        daylight: 'за літнім часом на Фолклендських Островах',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'за часом у Фіджі',
+        standard: 'за стандартним часом у Фіджі',
+        daylight: 'за літнім часом у Фіджі',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'за часом Французької Ґвіани',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'за часом на Французьких Південних і Антарктичних територіях',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'за часом Ґалапаґосу',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'за часом на острові Ґамбʼє',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'за грузинським часом',
+        standard: 'за стандартним грузинським часом',
+        daylight: 'за літнім грузинським часом',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'за часом на островах Гілберта',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'за Гринвічем',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'за східним часом у Ґренландії',
+        standard: 'за стандартним східним часом у Ґренландії',
+        daylight: 'за літнім східним часом у Ґренландії',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'за західним часом у Ґренландії',
+        standard: 'за стандартним західним часом у Ґренландії',
+        daylight: 'за літнім західним часом у Ґренландії',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'за часом Перської затоки',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'за часом у Ґаяні',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'за гавайсько-алеутським часом',
+        standard: 'за стандартним гавайсько-алеутським часом',
+        daylight: 'за літнім гавайсько-алеутським часом',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'за часом у Гонконзі',
+        standard: 'за стандартним часом у Гонконзі',
+        daylight: 'за літнім часом у Гонконзі',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'за часом у Ховді',
+        standard: 'за стандартним часом у Ховді',
+        daylight: 'за літнім часом у Ховді',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'за індійським стандартним часом',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'за часом в Індійському Океані',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'за часом в Індокитаї',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'за центральноіндонезійським часом',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'за східноіндонезійським часом',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'за західноіндонезійським часом',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'за іранським часом',
+        standard: 'за іранським стандартним часом',
+        daylight: 'за іранським літнім часом',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'за іркутським часом',
+        standard: 'за іркутським стандартним часом',
+        daylight: 'за іркутським літнім часом',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'за ізраїльським часом',
+        standard: 'за ізраїльським стандартним часом',
+        daylight: 'за ізраїльським літнім часом',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'за японським часом',
+        standard: 'за японським стандартним часом',
+        daylight: 'за японським літнім часом',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'за камчатським часом',
+        standard: 'за камчатським стандартним часом',
+        daylight: 'за камчатським літнім часом',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'за часом у Казахстані',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'за східним часом у Казахстані',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'за західним часом у Казахстані',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'за корейським часом',
+        standard: 'за корейським стандартним часом',
+        daylight: 'за корейським літнім часом',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'за часом на острові Косрае',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'за красноярським часом',
+        standard: 'за красноярським стандартним часом',
+        daylight: 'за красноярським літнім часом',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'за часом у Киргизстані',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'час: Ланка',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'за часом на острові Лайн',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'за часом на острові Лорд-Хау',
+        standard: 'за стандартним часом на острові Лорд-Хау',
+        daylight: 'за літнім часом на острові Лорд-Хау',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'за магаданським часом',
+        standard: 'за магаданським стандартним часом',
+        daylight: 'за магаданським літнім часом',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'за часом у Малайзії',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'за часом на Мальдівах',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'за часом на Маркізьких островах',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'за часом на Маршаллових Островах',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'за часом на острові Маврикій',
+        standard: 'за стандартним часом на острові Маврикій',
+        daylight: 'за літнім часом на острові Маврикій',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'за часом на станції Моусон',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'за тихоокеанським часом у Мексиці',
+        standard: 'за стандартним тихоокеанським часом у Мексиці',
+        daylight: 'за літнім тихоокеанським часом у Мексиці',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'за часом в Улан-Баторі',
+        standard: 'за стандартним часом в Улан-Баторі',
+        daylight: 'за літнім часом в Улан-Баторі',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'за московським часом',
+        standard: 'за московським стандартним часом',
+        daylight: 'за московським літнім часом',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'за часом у Мʼянмі',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'за часом на острові Науру',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'за часом у Непалі',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'за часом на островах Нової Каледонії',
+        standard: 'за стандартним часом на островах Нової Каледонії',
+        daylight: 'за літнім часом на островах Нової Каледонії',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'за часом у Новій Зеландії',
+        standard: 'за стандартним часом у Новій Зеландії',
+        daylight: 'за літнім часом у Новій Зеландії',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'за часом на острові Ньюфаундленд',
+        standard: 'за стандартним часом на острові Ньюфаундленд',
+        daylight: 'за літнім часом у Ньюфаундленд',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'за часом на острові Ніуе',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'за часом на острові Норфолк',
+        standard: 'за стандартним часом на острові Норфолк',
+        daylight: 'за літнім часом на острові Норфолк',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'за часом на архіпелазі Фернанду-ді-Норонья',
+        standard: 'за стандартним часом на архіпелазі Фернанду-ді-Норонья',
+        daylight: 'за літнім часом на архіпелазі Фернанду-ді-Норонья',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'за новосибірським часом',
+        standard: 'за новосибірським стандартним часом',
+        daylight: 'за новосибірським літнім часом',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'за омським часом',
+        standard: 'за омським стандартним часом',
+        daylight: 'за омським літнім часом',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'за часом у Пакистані',
+        standard: 'за стандартним часом у Пакистані',
+        daylight: 'за літнім часом у Пакистані',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'за часом на острові Палау',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'за часом на островах Папуа-Нова Ґвінея',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'за параґвайським часом',
+        standard: 'за стандартним параґвайським часом',
+        daylight: 'за літнім параґвайським часом',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'за часом у Перу',
+        standard: 'за стандартним часом у Перу',
+        daylight: 'за літнім часом у Перу',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'за часом на Філіппінах',
+        standard: 'за стандартним часом на Філіппінах',
+        daylight: 'за літнім часом на Філіппінах',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'за часом на островах Фенікс',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'за часом на островах Сен-П’єр і Мікелон',
+        standard: 'за стандартним часом на островах Сен-П’єр і Мікелон',
+        daylight: 'за літнім часом на островах Сен-П’єр і Мікелон',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'за часом на островах Піткерн',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'за часом на острові Понапе',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'за часом у Пхеньяні',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'час: Кизилорда',
+        standard: 'час: Кизилорда, стандартний',
+        daylight: 'час: Кизилорда, літній',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'за часом на острові Реюньйон',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'за часом на станції Ротера',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'за сахалінським часом',
+        standard: 'за сахалінським стандартним часом',
+        daylight: 'за сахалінським літнім часом',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'за самарським часом',
+        standard: 'за самарським стандартним часом',
+        daylight: 'за самарським літнім часом',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'за часом на острові Самоа',
+        standard: 'за стандартним часом на острові Самоа',
+        daylight: 'за літнім часом на острові Самоа',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'за часом на Сейшельських Островах',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'за часом у Сінгапурі',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'за часом на Соломонових Островах',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'за часом на острові Південна Джорджія',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'за часом у Суринамі',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'за часом на станції Сева',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'за часом на острові Таїті',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'за часом у Тайбеї',
+        standard: 'за стандартним часом у Тайбеї',
+        daylight: 'за літнім часом у Тайбеї',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'за часом у Таджикистані',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'за часом на островах Токелау',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'за часом на островах Тонга',
+        standard: 'за стандартним часом на островах Тонга',
+        daylight: 'за літнім часом на островах Тонга',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'за часом на островах Чуук',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'за часом у Туркменістані',
+        standard: 'за стандартним часом у Туркменістані',
+        daylight: 'за літнім часом у Туркменістані',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'за часом на островах Тувалу',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'за часом в Уруґваї',
+        standard: 'за стандартним часом в Уруґваї',
+        daylight: 'за літнім часом в Уруґваї',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'за часом в Узбекистані',
+        standard: 'за стандартним часом в Узбекистані',
+        daylight: 'за літнім часом в Узбекистані',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'за часом на островах Вануату',
+        standard: 'за стандартним часом на островах Вануату',
+        daylight: 'за літнім часом на островах Вануату',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'за часом у Венесуелі',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'за владивостоцьким часом',
+        standard: 'за владивостоцьким стандартним часом',
+        daylight: 'за владивостоцьким літнім часом',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'за волгоградським часом',
+        standard: 'за волгоградським стандартним часом',
+        daylight: 'за волгоградським літнім часом',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'за часом на станції Восток',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'за часом на острові Вейк',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'за часом на островах Уолліс і Футуна',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'за якутським часом',
+        standard: 'за якутським стандартним часом',
+        daylight: 'за якутським літнім часом',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'за єкатеринбурзьким часом',
+        standard: 'за єкатеринбурзьким стандартним часом',
+        daylight: 'за єкатеринбурзьким літнім часом',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'за стандартним часом на Юконі',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

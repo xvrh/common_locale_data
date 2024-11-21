@@ -2,9 +2,6 @@
   "main": {
     "bg": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "bg"
       },
       "dates": {
@@ -118,6 +115,9 @@
               },
               "Chihuahua": {
                 "exemplarCity": "Чиуауа"
+              },
+              "Ciudad_Juarez": {
+                "exemplarCity": "Сиудад Хуарес"
               },
               "Coral_Harbour": {
                 "exemplarCity": "Атикокан"
@@ -327,9 +327,6 @@
               "New_York": {
                 "exemplarCity": "Ню Йорк"
               },
-              "Nipigon": {
-                "exemplarCity": "Нипигон"
-              },
               "Nome": {
                 "exemplarCity": "Ноум"
               },
@@ -353,9 +350,6 @@
               "Panama": {
                 "exemplarCity": "Панама"
               },
-              "Pangnirtung": {
-                "exemplarCity": "Пангниртунг"
-              },
               "Paramaribo": {
                 "exemplarCity": "Парамарибо"
               },
@@ -377,9 +371,6 @@
               "Punta_Arenas": {
                 "exemplarCity": "Пунта Аренас"
               },
-              "Rainy_River": {
-                "exemplarCity": "Рейни Ривър"
-              },
               "Rankin_Inlet": {
                 "exemplarCity": "Ранкин Инлет"
               },
@@ -394,9 +385,6 @@
               },
               "Rio_Branco": {
                 "exemplarCity": "Рио Бранко"
-              },
-              "Santa_Isabel": {
-                "exemplarCity": "Санта Исабел"
               },
               "Santarem": {
                 "exemplarCity": "Сантарем"
@@ -443,9 +431,6 @@
               "Thule": {
                 "exemplarCity": "Туле"
               },
-              "Thunder_Bay": {
-                "exemplarCity": "Тъндър Бей"
-              },
               "Tijuana": {
                 "exemplarCity": "Тихуана"
               },
@@ -466,9 +451,6 @@
               },
               "Yakutat": {
                 "exemplarCity": "Якутат"
-              },
-              "Yellowknife": {
-                "exemplarCity": "Йелоунайф"
               }
             },
             "Atlantic": {
@@ -660,9 +642,6 @@
               "Ulyanovsk": {
                 "exemplarCity": "Уляновск"
               },
-              "Uzhgorod": {
-                "exemplarCity": "Ужгород"
-              },
               "Vaduz": {
                 "exemplarCity": "Вадуц"
               },
@@ -683,9 +662,6 @@
               },
               "Zagreb": {
                 "exemplarCity": "Загреб"
-              },
-              "Zaporozhye": {
-                "exemplarCity": "Запорожие"
               },
               "Zurich": {
                 "exemplarCity": "Цюрих"
@@ -903,9 +879,6 @@
               },
               "Chita": {
                 "exemplarCity": "Чита"
-              },
-              "Choibalsan": {
-                "exemplarCity": "Чойбалсан"
               },
               "Colombo": {
                 "exemplarCity": "Коломбо"
@@ -1145,9 +1118,6 @@
               "Broken_Hill": {
                 "exemplarCity": "Броукън Хил"
               },
-              "Currie": {
-                "exemplarCity": "Къри"
-              },
               "Darwin": {
                 "exemplarCity": "Дарвин"
               },
@@ -1218,9 +1188,6 @@
               },
               "Honolulu": {
                 "exemplarCity": "Хонолулу"
-              },
-              "Johnston": {
-                "exemplarCity": "Джонстън"
               },
               "Kanton": {
                 "exemplarCity": "Кантон"
@@ -1572,13 +1539,6 @@
                 "daylight": "Китайско лятно часово време"
               }
             },
-            "Choibalsan": {
-              "long": {
-                "generic": "Чойбалсанско време",
-                "standard": "Чойбалсанско стандартно време",
-                "daylight": "Чойбалсанско лятно часово време"
-              }
-            },
             "Christmas": {
               "long": {
                 "standard": "Остров Рождество"
@@ -1824,6 +1784,11 @@
                 "daylight": "Петропавловск-Камчатски – лятно часово време"
               }
             },
+            "Kazakhstan": {
+              "long": {
+                "standard": "Казахстанско време"
+              }
+            },
             "Kazakhstan_Eastern": {
               "long": {
                 "standard": "Източноказахстанско време"
@@ -1870,11 +1835,6 @@
                 "daylight": "Лорд Хау – лятно часово време"
               }
             },
-            "Macquarie": {
-              "long": {
-                "standard": "Маккуори"
-              }
-            },
             "Magadan": {
               "long": {
                 "generic": "Магаданско време",
@@ -1912,13 +1872,6 @@
             "Mawson": {
               "long": {
                 "standard": "Моусън"
-              }
-            },
-            "Mexico_Northwest": {
-              "long": {
-                "generic": "Северозападно мексиканско време",
-                "standard": "Северозападно стандартно мексиканско време",
-                "daylight": "Северозападно лятно часово мексиканско време"
               }
             },
             "Mexico_Pacific": {

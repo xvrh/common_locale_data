@@ -2,9 +2,6 @@
   "main": {
     "pl": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "pl"
       },
       "units": {
@@ -39,6 +36,12 @@
           "10p-24": {
             "unitPrefixPattern": "jokto{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ronto{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "quecto{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "deka{0}"
           },
@@ -68,6 +71,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "jotta{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "ronna{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "quetta{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "kibi{0}"
@@ -104,7 +113,6 @@
             "compoundUnitPattern1-count-one-case-genitive": "{0} kwadratowego",
             "compoundUnitPattern1-count-one-case-instrumental": "{0} kwadratowym",
             "compoundUnitPattern1-count-one-case-locative": "{0} kwadratowym",
-            "compoundUnitPattern1-count-one-case-vocative": "{0} kwadratowe",
             "compoundUnitPattern1-gender-feminine-count-one": "{0} kwadratowa",
             "compoundUnitPattern1-gender-feminine-count-one-case-accusative": "{0} kwadratową",
             "compoundUnitPattern1-gender-feminine-count-one-case-dative": "{0} kwadratowej",
@@ -114,10 +122,7 @@
             "compoundUnitPattern1-gender-feminine-count-one-case-vocative": "{0} kwadratowa",
             "compoundUnitPattern1-gender-inanimate-count-one": "{0} kwadratowy",
             "compoundUnitPattern1-gender-inanimate-count-one-case-accusative": "{0} kwadratowy",
-            "compoundUnitPattern1-gender-inanimate-count-one-case-dative": "{0} kwadratowemu",
             "compoundUnitPattern1-gender-inanimate-count-one-case-genitive": "{0} kwadratowego",
-            "compoundUnitPattern1-gender-inanimate-count-one-case-instrumental": "{0} kwadratowym",
-            "compoundUnitPattern1-gender-inanimate-count-one-case-locative": "{0} kwadratowym",
             "compoundUnitPattern1-gender-inanimate-count-one-case-vocative": "{0} kwadratowy",
             "compoundUnitPattern1-count-few": "{0} kwadratowe",
             "compoundUnitPattern1-count-few-case-accusative": "{0} kwadratowe",
@@ -125,49 +130,26 @@
             "compoundUnitPattern1-count-few-case-genitive": "{0} kwadratowych",
             "compoundUnitPattern1-count-few-case-instrumental": "{0} kwadratowymi",
             "compoundUnitPattern1-count-few-case-locative": "{0} kwadratowych",
-            "compoundUnitPattern1-count-few-case-vocative": "{0} kwadratowe",
             "compoundUnitPattern1-gender-feminine-count-few": "{0} kwadratowe",
             "compoundUnitPattern1-gender-feminine-count-few-case-accusative": "{0} kwadratowe",
-            "compoundUnitPattern1-gender-feminine-count-few-case-dative": "{0} kwadratowym",
             "compoundUnitPattern1-gender-feminine-count-few-case-genitive": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-feminine-count-few-case-instrumental": "{0} kwadratowymi",
-            "compoundUnitPattern1-gender-feminine-count-few-case-locative": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-feminine-count-few-case-vocative": "{0} kwadratowe",
             "compoundUnitPattern1-gender-inanimate-count-few": "{0} kwadratowe",
             "compoundUnitPattern1-gender-inanimate-count-few-case-accusative": "{0} kwadratowe",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-dative": "{0} kwadratowym",
             "compoundUnitPattern1-gender-inanimate-count-few-case-genitive": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-instrumental": "{0} kwadratowymi",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-locative": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-vocative": "{0} kwadratowe",
             "compoundUnitPattern1-count-many": "{0} kwadratowych",
             "compoundUnitPattern1-count-many-case-accusative": "{0} kwadratowych",
             "compoundUnitPattern1-count-many-case-dative": "{0} kwadratowym",
             "compoundUnitPattern1-count-many-case-genitive": "{0} kwadratowych",
             "compoundUnitPattern1-count-many-case-instrumental": "{0} kwadratowymi",
-            "compoundUnitPattern1-count-many-case-locative": "{0} kwadratowych",
-            "compoundUnitPattern1-count-many-case-vocative": "{0} kwadratowych",
             "compoundUnitPattern1-gender-feminine-count-many": "{0} kwadratowych",
             "compoundUnitPattern1-gender-feminine-count-many-case-accusative": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-feminine-count-many-case-dative": "{0} kwadratowym",
             "compoundUnitPattern1-gender-feminine-count-many-case-genitive": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-feminine-count-many-case-instrumental": "{0} kwadratowymi",
-            "compoundUnitPattern1-gender-feminine-count-many-case-locative": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-feminine-count-many-case-vocative": "{0} kwadratowych",
             "compoundUnitPattern1-gender-inanimate-count-many": "{0} kwadratowych",
             "compoundUnitPattern1-gender-inanimate-count-many-case-accusative": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-dative": "{0} kwadratowym",
             "compoundUnitPattern1-gender-inanimate-count-many-case-genitive": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-instrumental": "{0} kwadratowymi",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-locative": "{0} kwadratowych",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-vocative": "{0} kwadratowych",
             "compoundUnitPattern1-count-other": "{0} kwadratowego",
             "compoundUnitPattern1-count-other-case-accusative": "{0} kwadratowego",
-            "compoundUnitPattern1-count-other-case-dative": "{0} kwadratowego",
             "compoundUnitPattern1-count-other-case-genitive": "{0} kwadratowego",
-            "compoundUnitPattern1-count-other-case-instrumental": "{0} kwadratowego",
-            "compoundUnitPattern1-count-other-case-locative": "{0} kwadratowego",
-            "compoundUnitPattern1-count-other-case-vocative": "{0} kwadratowego",
             "compoundUnitPattern1-gender-feminine-count-other": "{0} kwadratowej",
             "compoundUnitPattern1-gender-feminine-count-other-case-accusative": "{0} kwadratowej",
             "compoundUnitPattern1-gender-feminine-count-other-case-dative": "{0} kwadratowej",
@@ -177,11 +159,7 @@
             "compoundUnitPattern1-gender-feminine-count-other-case-vocative": "{0} kwadratowej",
             "compoundUnitPattern1-gender-inanimate-count-other": "{0} kwadratowego",
             "compoundUnitPattern1-gender-inanimate-count-other-case-accusative": "{0} kwadratowego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-dative": "{0} kwadratowego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-genitive": "{0} kwadratowego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-instrumental": "{0} kwadratowego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-locative": "{0} kwadratowego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-vocative": "{0} kwadratowego"
+            "compoundUnitPattern1-gender-inanimate-count-other-case-genitive": "{0} kwadratowego"
           },
           "power3": {
             "compoundUnitPattern1": "{0} sześc.",
@@ -191,7 +169,6 @@
             "compoundUnitPattern1-count-one-case-genitive": "{0} sześciennego",
             "compoundUnitPattern1-count-one-case-instrumental": "{0} sześciennym",
             "compoundUnitPattern1-count-one-case-locative": "{0} sześciennym",
-            "compoundUnitPattern1-count-one-case-vocative": "{0} sześcienne",
             "compoundUnitPattern1-gender-feminine-count-one": "{0} sześcienna",
             "compoundUnitPattern1-gender-feminine-count-one-case-accusative": "{0} sześcienną",
             "compoundUnitPattern1-gender-feminine-count-one-case-dative": "{0} sześciennej",
@@ -201,10 +178,7 @@
             "compoundUnitPattern1-gender-feminine-count-one-case-vocative": "{0} sześcienna",
             "compoundUnitPattern1-gender-inanimate-count-one": "{0} sześcienny",
             "compoundUnitPattern1-gender-inanimate-count-one-case-accusative": "{0} sześcienny",
-            "compoundUnitPattern1-gender-inanimate-count-one-case-dative": "{0} sześciennemu",
             "compoundUnitPattern1-gender-inanimate-count-one-case-genitive": "{0} sześciennego",
-            "compoundUnitPattern1-gender-inanimate-count-one-case-instrumental": "{0} sześciennym",
-            "compoundUnitPattern1-gender-inanimate-count-one-case-locative": "{0} sześciennym",
             "compoundUnitPattern1-gender-inanimate-count-one-case-vocative": "{0} sześcienny",
             "compoundUnitPattern1-count-few": "{0} sześcienne",
             "compoundUnitPattern1-count-few-case-accusative": "{0} sześcienne",
@@ -212,49 +186,26 @@
             "compoundUnitPattern1-count-few-case-genitive": "{0} sześciennych",
             "compoundUnitPattern1-count-few-case-instrumental": "{0} sześciennymi",
             "compoundUnitPattern1-count-few-case-locative": "{0} sześciennych",
-            "compoundUnitPattern1-count-few-case-vocative": "{0} sześcienne",
             "compoundUnitPattern1-gender-feminine-count-few": "{0} sześcienne",
             "compoundUnitPattern1-gender-feminine-count-few-case-accusative": "{0} sześcienne",
-            "compoundUnitPattern1-gender-feminine-count-few-case-dative": "{0} sześciennym",
             "compoundUnitPattern1-gender-feminine-count-few-case-genitive": "{0} sześciennych",
-            "compoundUnitPattern1-gender-feminine-count-few-case-instrumental": "{0} sześciennymi",
-            "compoundUnitPattern1-gender-feminine-count-few-case-locative": "{0} sześciennych",
-            "compoundUnitPattern1-gender-feminine-count-few-case-vocative": "{0} sześcienne",
             "compoundUnitPattern1-gender-inanimate-count-few": "{0} sześcienne",
             "compoundUnitPattern1-gender-inanimate-count-few-case-accusative": "{0} sześcienne",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-dative": "{0} sześciennym",
             "compoundUnitPattern1-gender-inanimate-count-few-case-genitive": "{0} sześciennych",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-instrumental": "{0} sześciennymi",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-locative": "{0} sześciennych",
-            "compoundUnitPattern1-gender-inanimate-count-few-case-vocative": "{0} sześcienne",
             "compoundUnitPattern1-count-many": "{0} sześciennych",
             "compoundUnitPattern1-count-many-case-accusative": "{0} sześciennych",
             "compoundUnitPattern1-count-many-case-dative": "{0} sześciennym",
             "compoundUnitPattern1-count-many-case-genitive": "{0} sześciennych",
             "compoundUnitPattern1-count-many-case-instrumental": "{0} sześciennymi",
-            "compoundUnitPattern1-count-many-case-locative": "{0} sześciennych",
-            "compoundUnitPattern1-count-many-case-vocative": "{0} sześciennych",
             "compoundUnitPattern1-gender-feminine-count-many": "{0} sześciennych",
             "compoundUnitPattern1-gender-feminine-count-many-case-accusative": "{0} sześciennych",
-            "compoundUnitPattern1-gender-feminine-count-many-case-dative": "{0} sześciennym",
             "compoundUnitPattern1-gender-feminine-count-many-case-genitive": "{0} sześciennych",
-            "compoundUnitPattern1-gender-feminine-count-many-case-instrumental": "{0} sześciennymi",
-            "compoundUnitPattern1-gender-feminine-count-many-case-locative": "{0} sześciennych",
-            "compoundUnitPattern1-gender-feminine-count-many-case-vocative": "{0} sześciennych",
             "compoundUnitPattern1-gender-inanimate-count-many": "{0} sześciennych",
             "compoundUnitPattern1-gender-inanimate-count-many-case-accusative": "{0} sześciennych",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-dative": "{0} sześciennym",
             "compoundUnitPattern1-gender-inanimate-count-many-case-genitive": "{0} sześciennych",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-instrumental": "{0} sześciennymi",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-locative": "{0} sześciennych",
-            "compoundUnitPattern1-gender-inanimate-count-many-case-vocative": "{0} sześciennych",
             "compoundUnitPattern1-count-other": "{0} sześciennego",
             "compoundUnitPattern1-count-other-case-accusative": "{0} sześciennego",
-            "compoundUnitPattern1-count-other-case-dative": "{0} sześciennego",
             "compoundUnitPattern1-count-other-case-genitive": "{0} sześciennego",
-            "compoundUnitPattern1-count-other-case-instrumental": "{0} sześciennego",
-            "compoundUnitPattern1-count-other-case-locative": "{0} sześciennego",
-            "compoundUnitPattern1-count-other-case-vocative": "{0} sześciennego",
             "compoundUnitPattern1-gender-feminine-count-other": "{0} sześciennej",
             "compoundUnitPattern1-gender-feminine-count-other-case-accusative": "{0} sześciennej",
             "compoundUnitPattern1-gender-feminine-count-other-case-dative": "{0} sześciennej",
@@ -264,19 +215,42 @@
             "compoundUnitPattern1-gender-feminine-count-other-case-vocative": "{0} sześciennej",
             "compoundUnitPattern1-gender-inanimate-count-other": "{0} sześciennego",
             "compoundUnitPattern1-gender-inanimate-count-other-case-accusative": "{0} sześciennego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-dative": "{0} sześciennego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-genitive": "{0} sześciennego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-instrumental": "{0} sześciennego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-locative": "{0} sześciennego",
-            "compoundUnitPattern1-gender-inanimate-count-other-case-vocative": "{0} sześciennego"
+            "compoundUnitPattern1-gender-inanimate-count-other-case-genitive": "{0} sześciennego"
           },
           "times": {
             "compoundUnitPattern": "{0}⋅{1}"
           },
           "acceleration-g-force": {
             "gender": "neuter",
-            "displayName": "stała grawitacji",
-            "unitPattern-count-other": "{0} G"
+            "displayName": "przyspieszenie ziemskie",
+            "unitPattern-count-one": "przyspieszenie ziemskie",
+            "accusative-count-one": "przyspieszenie ziemskie",
+            "dative-count-one": "przyspieszeniu ziemskiemu",
+            "genitive-count-one": "przyspieszenia ziemskiego",
+            "instrumental-count-one": "przyspieszeniem ziemskim",
+            "locative-count-one": "przyspieszeniu ziemskim",
+            "vocative-count-one": "przyspieszenie ziemskie",
+            "unitPattern-count-few": "{0} przyspieszenia ziemskie",
+            "accusative-count-few": "{0} przyspieszenia ziemskie",
+            "dative-count-few": "{0} przyspieszeniom ziemskim",
+            "genitive-count-few": "{0} przyspieszeń ziemskich",
+            "instrumental-count-few": "{0} przyspieszeniami ziemskimi",
+            "locative-count-few": "{0} przyspieszeniach ziemskich",
+            "vocative-count-few": "{0} przyspieszenia ziemskie",
+            "unitPattern-count-many": "{0} przyspieszeń ziemskich",
+            "accusative-count-many": "{0} przyspieszeń ziemskich",
+            "dative-count-many": "{0} przyspieszeniami ziemskimi",
+            "genitive-count-many": "{0} przyspieszeń ziemskich",
+            "instrumental-count-many": "{0} przyspieszeniami ziemskimi",
+            "locative-count-many": "{0} przyspieszeniach ziemskich",
+            "vocative-count-many": "{0} przyspieszeń ziemskich",
+            "unitPattern-count-other": "{0} przyspieszenia ziemskiego",
+            "accusative-count-other": "{0} przyspieszenia ziemskiego",
+            "dative-count-other": "{0} przyspieszenia ziemskiego",
+            "genitive-count-other": "{0} przyspieszenia ziemskiego",
+            "instrumental-count-other": "{0} przyspieszenia ziemskiego",
+            "locative-count-other": "{0} przyspieszenia ziemskiego",
+            "vocative-count-other": "{0} przyspieszenia ziemskiego"
           },
           "acceleration-meter-per-square-second": {
             "gender": "inanimate",
@@ -294,7 +268,6 @@
             "genitive-count-few": "{0} metrów na sekundę do kwadratu",
             "instrumental-count-few": "{0} metrami na sekundę do kwadratu",
             "locative-count-few": "{0} metrach na sekundę do kwadratu",
-            "vocative-count-few": "{0} metry na sekundę do kwadratu",
             "unitPattern-count-many": "{0} metrów na sekundę do kwadratu",
             "accusative-count-many": "{0} metrów na sekundę do kwadratu",
             "dative-count-many": "{0} metrom na sekundę do kwadratu",
@@ -401,7 +374,6 @@
             "genitive-count-few": "{0} kilometrów kwadratowych",
             "instrumental-count-few": "{0} kilometrami kwadratowymi",
             "locative-count-few": "{0} kilometrach kwadratowych",
-            "vocative-count-few": "{0} kilometry kwadratowe",
             "unitPattern-count-many": "{0} kilometrów kwadratowych",
             "accusative-count-many": "{0} kilometrów kwadratowych",
             "dative-count-many": "{0} kilometrom kwadratowym",
@@ -429,7 +401,6 @@
             "genitive-count-few": "{0} hektarów",
             "instrumental-count-few": "{0} hektarami",
             "locative-count-few": "{0} hektarach",
-            "vocative-count-few": "{0} hektary",
             "unitPattern-count-many": "{0} hektarów",
             "accusative-count-many": "{0} hektarów",
             "dative-count-many": "{0} hektarom",
@@ -473,7 +444,6 @@
             "genitive-count-few": "{0} centymetrów kwadratowych",
             "instrumental-count-few": "{0} centymetrami kwadratowymi",
             "locative-count-few": "{0} centymetrach kwadratowych",
-            "vocative-count-few": "{0} centymetry kwadratowe",
             "unitPattern-count-many": "{0} centymetrów kwadratowych",
             "accusative-count-many": "{0} centymetrów kwadratowych",
             "dative-count-many": "{0} centymetrom kwadratowym",
@@ -501,7 +471,6 @@
             "genitive-count-few": "{0} mil kwadratowych",
             "instrumental-count-few": "{0} milami kwadratowymi",
             "locative-count-few": "{0} milach kwadratowych",
-            "vocative-count-few": "{0} mile kwadratowe",
             "unitPattern-count-many": "{0} mil kwadratowych",
             "accusative-count-many": "{0} mil kwadratowych",
             "dative-count-many": "{0} milom kwadratowym",
@@ -529,7 +498,6 @@
             "genitive-count-few": "{0} akrów",
             "instrumental-count-few": "{0} akrami",
             "locative-count-few": "{0} akrach",
-            "vocative-count-few": "{0} akry",
             "unitPattern-count-many": "{0} akrów",
             "accusative-count-many": "{0} akrów",
             "dative-count-many": "{0} akrom",
@@ -563,7 +531,6 @@
             "genitive-count-few": "{0} stóp kwadratowych",
             "instrumental-count-few": "{0} stopami kwadratowymi",
             "locative-count-few": "{0} stopach kwadratowych",
-            "vocative-count-few": "{0} stopy kwadratowe",
             "unitPattern-count-many": "{0} stóp kwadratowych",
             "accusative-count-many": "{0} stóp kwadratowych",
             "dative-count-many": "{0} stopom kwadratowym",
@@ -606,11 +573,20 @@
             "genitive-count-other": "{0} karata"
           },
           "concentr-milligram-ofglucose-per-deciliter": {
+            "gender": "inanimate",
             "displayName": "miligramy na decylitr",
             "unitPattern-count-one": "{0} miligram na decylitr",
+            "accusative-count-one": "{0} miligram na decylitr",
+            "genitive-count-one": "{0} miligrama na decylitr",
             "unitPattern-count-few": "{0} miligramy na decylitr",
+            "accusative-count-few": "{0} miligramy na decylitr",
+            "genitive-count-few": "{0} miligramów na decylitr",
             "unitPattern-count-many": "{0} miligramów na decylitr",
-            "unitPattern-count-other": "{0} miligrama na decylitr"
+            "accusative-count-many": "{0} miligramów na decylitr",
+            "genitive-count-many": "{0} miligramów na decylitr",
+            "unitPattern-count-other": "{0} miligrama na decylitr",
+            "accusative-count-other": "{0} miligrama na decylitr",
+            "genitive-count-other": "{0} miligrama na decylitr"
           },
           "concentr-millimole-per-liter": {
             "gender": "inanimate",
@@ -766,7 +742,6 @@
             "genitive-count-few": "{0} litrów na 100 kilometrów",
             "instrumental-count-few": "{0} litrami na 100 kilometrów",
             "locative-count-few": "{0} litrach na 100 kilometrów",
-            "vocative-count-few": "{0} litry na 100 kilometrów",
             "unitPattern-count-many": "{0} litrów na 100 kilometrów",
             "accusative-count-many": "{0} litrów na 100 kilometrów",
             "dative-count-many": "{0} litrom na 100 kilometrów",
@@ -793,14 +768,12 @@
             "genitive-count-few": "{0} mil na galon",
             "instrumental-count-few": "{0} milami na galon",
             "locative-count-few": "{0} milach na galon",
-            "vocative-count-few": "{0} mile na galon",
             "unitPattern-count-many": "{0} mil na galon",
             "accusative-count-many": "{0} mil na galon",
             "dative-count-many": "{0} milom na galon",
             "genitive-count-many": "{0} mil na galon",
             "instrumental-count-many": "{0} milami na galon",
             "locative-count-many": "{0} milach na galon",
-            "vocative-count-many": "{0} mil na galon",
             "unitPattern-count-other": "{0} mili na galon",
             "accusative-count-other": "{0} mili na galon",
             "genitive-count-other": "{0} mili na galon"
@@ -821,7 +794,6 @@
             "genitive-count-few": "{0} mil na galon angielski",
             "instrumental-count-few": "{0} milami na galon angielski",
             "locative-count-few": "{0} milach na galon angielski",
-            "vocative-count-few": "{0} mile na galon angielski",
             "unitPattern-count-many": "{0} mil na galon angielski",
             "accusative-count-many": "{0} mil na galon angielski",
             "dative-count-many": "{0} milom na galon angielski",
@@ -965,7 +937,7 @@
             "displayName": "kilobity",
             "unitPattern-count-one": "{0} kilobit",
             "accusative-count-one": "{0} kilobit",
-            "genitive-count-one": "{0} kilobita",
+            "genitive-count-one": "{0} kilobitu",
             "unitPattern-count-few": "{0} kilobity",
             "accusative-count-few": "{0} kilobity",
             "genitive-count-few": "{0} kilobitów",
@@ -1100,7 +1072,6 @@
             "genitive-count-few": "{0} miesięcy",
             "instrumental-count-few": "{0} miesiącami",
             "locative-count-few": "{0} miesiącach",
-            "vocative-count-few": "{0} miesiące",
             "unitPattern-count-many": "{0} miesięcy",
             "accusative-count-many": "{0} miesięcy",
             "dative-count-many": "{0} miesiącom",
@@ -1128,7 +1099,6 @@
             "genitive-count-few": "{0} tygodni",
             "instrumental-count-few": "{0} tygodniami",
             "locative-count-few": "{0} tygodniach",
-            "vocative-count-few": "{0} tygodnie",
             "unitPattern-count-many": "{0} tygodni",
             "accusative-count-many": "{0} tygodni",
             "dative-count-many": "{0} tygodniom",
@@ -1141,51 +1111,46 @@
             "perUnitPattern": "{0} na tydzień"
           },
           "duration-day": {
-            "gender": "feminine",
-            "displayName": "doby",
-            "unitPattern-count-one": "{0} doba",
-            "accusative-count-one": "{0} dobę",
-            "dative-count-one": "{0} dobie",
-            "genitive-count-one": "{0} doby",
-            "instrumental-count-one": "{0} dobą",
-            "locative-count-one": "{0} dobie",
-            "vocative-count-one": "{0} dobo",
-            "unitPattern-count-few": "{0} doby",
-            "accusative-count-few": "{0} doby",
-            "dative-count-few": "{0} dobom",
-            "genitive-count-few": "{0} dób",
-            "instrumental-count-few": "{0} dobami",
-            "locative-count-few": "{0} dobach",
-            "vocative-count-few": "{0} doby",
-            "unitPattern-count-many": "{0} dób",
-            "accusative-count-many": "{0} dób",
-            "dative-count-many": "{0} dobom",
-            "genitive-count-many": "{0} dób",
-            "instrumental-count-many": "{0} dobami",
-            "locative-count-many": "{0} dobach",
-            "unitPattern-count-other": "{0} doby",
-            "accusative-count-other": "{0} doby",
-            "dative-count-other": "{0} doby",
-            "genitive-count-other": "{0} doby",
-            "instrumental-count-other": "{0} doby",
-            "locative-count-other": "{0} doby",
-            "vocative-count-other": "{0} doby",
+            "gender": "inanimate",
+            "displayName": "dzień",
+            "unitPattern-count-one": "{0} dzień",
+            "accusative-count-one": "{0} dzień",
+            "dative-count-one": "{0} dniowi",
+            "genitive-count-one": "{0} dnia",
+            "instrumental-count-one": "{0} dniem",
+            "locative-count-one": "{0} dniu",
+            "vocative-count-one": "{0} dniu",
+            "unitPattern-count-few": "{0} dni",
+            "accusative-count-few": "{0} dni",
+            "dative-count-few": "{0} dniom",
+            "genitive-count-few": "{0} dni",
+            "instrumental-count-few": "{0} dniami",
+            "locative-count-few": "{0} dniach",
+            "unitPattern-count-many": "{0} dni",
+            "accusative-count-many": "{0} dni",
+            "dative-count-many": "{0} dniom",
+            "genitive-count-many": "{0} dni",
+            "instrumental-count-many": "{0} dniami",
+            "locative-count-many": "{0} dniach",
+            "unitPattern-count-other": "{0} dnia",
+            "accusative-count-other": "{0} dnia",
+            "genitive-count-other": "{0} dnia",
             "perUnitPattern": "{0} na dobę"
           },
           "duration-day-person": {
-            "gender": "feminine",
-            "unitPattern-count-one": "{0} doba",
-            "accusative-count-one": "{0} dobę",
-            "genitive-count-one": "{0} doby",
-            "unitPattern-count-few": "{0} doby",
-            "accusative-count-few": "{0} doby",
-            "genitive-count-few": "{0} dób",
-            "unitPattern-count-many": "{0} dób",
-            "accusative-count-many": "{0} dób",
-            "genitive-count-many": "{0} dób",
-            "unitPattern-count-other": "{0} doby",
-            "accusative-count-other": "{0} doby",
-            "genitive-count-other": "{0} doby"
+            "gender": "inanimate",
+            "unitPattern-count-one": "{0} dzień",
+            "accusative-count-one": "{0} dzień",
+            "genitive-count-one": "{0} dnia",
+            "unitPattern-count-few": "{0} dni",
+            "accusative-count-few": "{0} dni",
+            "genitive-count-few": "{0} dni",
+            "unitPattern-count-many": "{0} dni",
+            "accusative-count-many": "{0} dni",
+            "genitive-count-many": "{0} dni",
+            "unitPattern-count-other": "{0} dnia",
+            "accusative-count-other": "{0} dnia",
+            "genitive-count-other": "{0} dnia"
           },
           "duration-hour": {
             "gender": "feminine",
@@ -1203,7 +1168,6 @@
             "genitive-count-few": "{0} godzin",
             "instrumental-count-few": "{0} godzinami",
             "locative-count-few": "{0} godzinach",
-            "vocative-count-few": "{0} godziny",
             "unitPattern-count-many": "{0} godzin",
             "accusative-count-many": "{0} godzin",
             "dative-count-many": "{0} godzinom",
@@ -1231,7 +1195,6 @@
             "genitive-count-few": "{0} minut",
             "instrumental-count-few": "{0} minutami",
             "locative-count-few": "{0} minutach",
-            "vocative-count-few": "{0} minuty",
             "unitPattern-count-many": "{0} minut",
             "accusative-count-many": "{0} minut",
             "dative-count-many": "{0} minutom",
@@ -1259,7 +1222,6 @@
             "genitive-count-few": "{0} sekund",
             "instrumental-count-few": "{0} sekundami",
             "locative-count-few": "{0} sekundach",
-            "vocative-count-few": "{0} sekundy",
             "unitPattern-count-many": "{0} sekund",
             "accusative-count-many": "{0} sekund",
             "dative-count-many": "{0} sekundom",
@@ -1399,7 +1361,6 @@
             "genitive-count-few": "{0} kilokalorii",
             "instrumental-count-few": "{0} kilokaloriami",
             "locative-count-few": "{0} kilokaloriach",
-            "vocative-count-few": "{0} kilokalorie",
             "unitPattern-count-many": "{0} kilokalorii",
             "accusative-count-many": "{0} kilokalorii",
             "dative-count-many": "{0} kilokaloriom",
@@ -1436,19 +1397,18 @@
             "instrumental-count-one": "{0} kalorią",
             "locative-count-one": "{0} kalorii",
             "vocative-count-one": "{0} kalorio",
-            "unitPattern-count-few": "{0} kalorie",
-            "accusative-count-few": "{0} kalorie",
-            "dative-count-few": "{0} kaloriom",
-            "genitive-count-few": "{0} kalorii",
-            "instrumental-count-few": "{0} kaloriami",
-            "locative-count-few": "{0} kaloriach",
-            "vocative-count-few": "{0} kalorie",
-            "unitPattern-count-many": "{0} kalorii",
-            "accusative-count-many": "{0} kalorii",
-            "dative-count-many": "{0} kaloriom",
-            "genitive-count-many": "{0} kalorii",
-            "instrumental-count-many": "{0} kaloriami",
-            "locative-count-many": "{0} kaloriach",
+            "unitPattern-count-few": "{0} kilokalorie",
+            "accusative-count-few": "{0} kilokalorie",
+            "dative-count-few": "{0} kilokaloriom",
+            "genitive-count-few": "{0} kilokalorii",
+            "instrumental-count-few": "{0} kilokaloriami",
+            "locative-count-few": "{0} kilokaloriach",
+            "unitPattern-count-many": "{0} kilokalorii",
+            "accusative-count-many": "{0} kilokalorii",
+            "dative-count-many": "{0} kilokaloriom",
+            "genitive-count-many": "{0} kilokalorii",
+            "instrumental-count-many": "{0} kilokaloriami",
+            "locative-count-many": "{0} kilokaloriach",
             "unitPattern-count-other": "{0} kalorii",
             "accusative-count-other": "{0} kalorii",
             "genitive-count-other": "{0} kalorii"
@@ -1675,12 +1635,40 @@
           },
           "graphics-pixel-per-centimeter": {
             "gender": "inanimate",
-            "displayName": "ppcm",
-            "unitPattern-count-other": "{0} ppcm"
+            "displayName": "piksele na centymetr",
+            "unitPattern-count-one": "{0} piksel na centymetr",
+            "accusative-count-one": "{0} piksel na centymetr",
+            "genitive-count-one": "{0} piksela na centymetr",
+            "unitPattern-count-few": "{0} piksele na centymetr",
+            "accusative-count-few": "{0} piksele na centymetr",
+            "genitive-count-few": "{0} pikseli na centymetr",
+            "unitPattern-count-many": "{0} pikseli na centymetr",
+            "accusative-count-many": "{0} pikseli na centymetr",
+            "genitive-count-many": "{0} pikseli na centymetr",
+            "unitPattern-count-other": "{0} piksela na centymetr",
+            "accusative-count-other": "{0} piksela na centymetr",
+            "genitive-count-other": "{0} piksela na centymetr"
           },
           "graphics-pixel-per-inch": {
-            "displayName": "ppi",
-            "unitPattern-count-other": "{0} ppi"
+            "displayName": "piksele na cal",
+            "unitPattern-count-one": "{0} piksel na cal",
+            "unitPattern-count-few": "{0} piksele na cal",
+            "unitPattern-count-many": "{0} pikseli na cal",
+            "unitPattern-count-other": "{0} piksela na cal"
+          },
+          "graphics-dot-per-centimeter": {
+            "displayName": "punkty na centymetr",
+            "unitPattern-count-one": "{0} punkt na centymetr",
+            "unitPattern-count-few": "{0} punkty na centymetr",
+            "unitPattern-count-many": "{0} punktów na centymetr",
+            "unitPattern-count-other": "{0} punktu na centymetr"
+          },
+          "graphics-dot-per-inch": {
+            "displayName": "punkty na cal",
+            "unitPattern-count-one": "{0} punkt na cal",
+            "unitPattern-count-few": "{0} punkty na cal",
+            "unitPattern-count-many": "{0} punktów na cal",
+            "unitPattern-count-other": "{0} punktu na cal"
           },
           "length-earth-radius": {
             "displayName": "promień Ziemi",
@@ -1705,7 +1693,6 @@
             "genitive-count-few": "{0} kilometrów",
             "instrumental-count-few": "{0} kilometrami",
             "locative-count-few": "{0} kilometrach",
-            "vocative-count-few": "{0} kilometry",
             "unitPattern-count-many": "{0} kilometrów",
             "accusative-count-many": "{0} kilometrów",
             "dative-count-many": "{0} kilometrom",
@@ -1733,7 +1720,6 @@
             "genitive-count-few": "{0} metrów",
             "instrumental-count-few": "{0} metrami",
             "locative-count-few": "{0} metrach",
-            "vocative-count-few": "{0} metry",
             "unitPattern-count-many": "{0} metrów",
             "accusative-count-many": "{0} metrów",
             "dative-count-many": "{0} metrom",
@@ -1777,7 +1763,6 @@
             "genitive-count-few": "{0} centymetrów",
             "instrumental-count-few": "{0} centymetrami",
             "locative-count-few": "{0} centymetrach",
-            "vocative-count-few": "{0} centymetry",
             "unitPattern-count-many": "{0} centymetrów",
             "accusative-count-many": "{0} centymetrów",
             "dative-count-many": "{0} centymetrom",
@@ -1805,7 +1790,6 @@
             "genitive-count-few": "{0} milimetrów",
             "instrumental-count-few": "{0} milimetrami",
             "locative-count-few": "{0} milimetrach",
-            "vocative-count-few": "{0} milimetry",
             "unitPattern-count-many": "{0} milimetrów",
             "accusative-count-many": "{0} milimetrów",
             "dative-count-many": "{0} milimetrom",
@@ -1864,7 +1848,6 @@
             "genitive-count-few": "{0} pikometrów",
             "instrumental-count-few": "{0} pikometrami",
             "locative-count-few": "{0} pikometrach",
-            "vocative-count-few": "{0} pikometry",
             "unitPattern-count-many": "{0} pikometrów",
             "accusative-count-many": "{0} pikometrów",
             "dative-count-many": "{0} pikometrom",
@@ -1943,7 +1926,6 @@
             "genitive-count-few": "{0} stóp",
             "instrumental-count-few": "{0} stopami",
             "locative-count-few": "{0} stopach",
-            "vocative-count-few": "{0} stopy",
             "unitPattern-count-many": "{0} stóp",
             "accusative-count-many": "{0} stóp",
             "dative-count-many": "{0} stopom",
@@ -1971,7 +1953,6 @@
             "genitive-count-few": "{0} cali",
             "instrumental-count-few": "{0} calami",
             "locative-count-few": "{0} calach",
-            "vocative-count-few": "{0} cale",
             "unitPattern-count-many": "{0} cali",
             "accusative-count-many": "{0} cali",
             "dative-count-many": "{0} calom",
@@ -1999,7 +1980,6 @@
             "genitive-count-few": "{0} parseków",
             "instrumental-count-few": "{0} parsekami",
             "locative-count-few": "{0} parsekach",
-            "vocative-count-few": "{0} parseki",
             "unitPattern-count-many": "{0} parseków",
             "accusative-count-many": "{0} parseków",
             "dative-count-many": "{0} parsekom",
@@ -2062,11 +2042,20 @@
             "genitive-count-other": "{0} mili skandynawskiej"
           },
           "length-point": {
+            "gender": "inanimate",
             "displayName": "punkty",
             "unitPattern-count-one": "{0} punkt",
+            "accusative-count-one": "{0} punkt",
+            "genitive-count-one": "{0} punktu",
             "unitPattern-count-few": "{0} punkty",
+            "accusative-count-few": "{0} punkty",
+            "genitive-count-few": "{0} punktów",
             "unitPattern-count-many": "{0} punktów",
-            "unitPattern-count-other": "{0} punktu"
+            "accusative-count-many": "{0} punktów",
+            "genitive-count-many": "{0} punktów",
+            "unitPattern-count-other": "{0} punktu",
+            "accusative-count-other": "{0} punktu",
+            "genitive-count-other": "{0} punktu"
           },
           "length-solar-radius": {
             "gender": "inanimate",
@@ -2084,7 +2073,6 @@
             "genitive-count-few": "{0} promieni Słońca",
             "instrumental-count-few": "{0} promieniami Słońca",
             "locative-count-few": "{0} promieniach Słońca",
-            "vocative-count-few": "{0} promienie Słońca",
             "unitPattern-count-many": "{0} promieni Słońca",
             "accusative-count-many": "{0} promieni Słońca",
             "dative-count-many": "{0} promieniom Słońca",
@@ -2159,14 +2147,12 @@
             "genitive-count-few": "{0} jasności Słońca",
             "instrumental-count-few": "{0} jasnościami Słońca",
             "locative-count-few": "{0} jasnościach Słońca",
-            "vocative-count-few": "{0} jasności Słońca",
             "unitPattern-count-many": "{0} jasności Słońca",
             "accusative-count-many": "{0} jasności Słońca",
             "dative-count-many": "{0} jasnościom Słońca",
             "genitive-count-many": "{0} jasności Słońca",
             "instrumental-count-many": "{0} jasnościami Słońca",
             "locative-count-many": "{0} jasnościach Słońca",
-            "vocative-count-many": "{0} jasności Słońca",
             "unitPattern-count-other": "{0} jasności Słońca",
             "accusative-count-other": "{0} jasności Słońca",
             "genitive-count-other": "{0} jasności Słońca"
@@ -2203,7 +2189,6 @@
             "genitive-count-few": "{0} kilogramów",
             "instrumental-count-few": "{0} kilogramami",
             "locative-count-few": "{0} kilogramach",
-            "vocative-count-few": "{0} kilogramy",
             "unitPattern-count-many": "{0} kilogramów",
             "accusative-count-many": "{0} kilogramów",
             "dative-count-many": "{0} kilogramom",
@@ -2231,7 +2216,6 @@
             "genitive-count-few": "{0} gramów",
             "instrumental-count-few": "{0} gramami",
             "locative-count-few": "{0} gramach",
-            "vocative-count-few": "{0} gramy",
             "unitPattern-count-many": "{0} gramów",
             "accusative-count-many": "{0} gramów",
             "dative-count-many": "{0} gramom",
@@ -2259,7 +2243,6 @@
             "genitive-count-few": "{0} miligramów",
             "instrumental-count-few": "{0} miligramami",
             "locative-count-few": "{0} miligramach",
-            "vocative-count-few": "{0} miligramy",
             "unitPattern-count-many": "{0} miligramów",
             "accusative-count-many": "{0} miligramów",
             "dative-count-many": "{0} miligramom",
@@ -2316,7 +2299,6 @@
             "genitive-count-few": "{0} funtów",
             "instrumental-count-few": "{0} funtami",
             "locative-count-few": "{0} funtach",
-            "vocative-count-few": "{0} funty",
             "unitPattern-count-many": "{0} funtów",
             "accusative-count-many": "{0} funtów",
             "dative-count-many": "{0} funtom",
@@ -2344,7 +2326,6 @@
             "genitive-count-few": "{0} uncji",
             "instrumental-count-few": "{0} uncjami",
             "locative-count-few": "{0} uncjach",
-            "vocative-count-few": "{0} uncje",
             "unitPattern-count-many": "{0} uncji",
             "accusative-count-many": "{0} uncji",
             "dative-count-many": "{0} uncjom",
@@ -2395,21 +2376,15 @@
             "genitive-count-few": "{0} jednostek masy atomowej",
             "instrumental-count-few": "{0} jednostkami masy atomowej",
             "locative-count-few": "{0} jednostkach masy atomowej",
-            "vocative-count-few": "{0} jednostki masy atomowej",
             "unitPattern-count-many": "{0} jednostek masy atomowej",
             "accusative-count-many": "{0} jednostek masy atomowej",
             "dative-count-many": "{0} jednostkom masy atomowej",
             "genitive-count-many": "{0} jednostek masy atomowej",
             "instrumental-count-many": "{0} jednostkami masy atomowej",
             "locative-count-many": "{0} jednostkach masy atomowej",
-            "vocative-count-many": "{0} jednostek masy atomowej",
             "unitPattern-count-other": "{0} jednostki masy atomowej",
             "accusative-count-other": "{0} jednostki masy atomowej",
-            "dative-count-other": "{0} jednostki masy atomowej",
-            "genitive-count-other": "{0} jednostki masy atomowej",
-            "instrumental-count-other": "{0} jednostki masy atomowej",
-            "locative-count-other": "{0} jednostki masy atomowej",
-            "vocative-count-other": "{0} jednostki masy atomowej"
+            "genitive-count-other": "{0} jednostki masy atomowej"
           },
           "mass-earth-mass": {
             "gender": "feminine",
@@ -2427,7 +2402,6 @@
             "genitive-count-few": "{0} mas Ziemi",
             "instrumental-count-few": "{0} masami Ziemi",
             "locative-count-few": "{0} masach Ziemi",
-            "vocative-count-few": "{0} masy Ziemi",
             "unitPattern-count-many": "{0} mas Ziemi",
             "accusative-count-many": "{0} mas Ziemi",
             "dative-count-many": "{0} masom Ziemi",
@@ -2436,11 +2410,7 @@
             "locative-count-many": "{0} masach Ziemi",
             "unitPattern-count-other": "{0} masy Ziemi",
             "accusative-count-other": "{0} masy Ziemi",
-            "dative-count-other": "{0} masy Ziemi",
-            "genitive-count-other": "{0} masy Ziemi",
-            "instrumental-count-other": "{0} masy Ziemi",
-            "locative-count-other": "{0} masy Ziemi",
-            "vocative-count-other": "{0} masy Ziemi"
+            "genitive-count-other": "{0} masy Ziemi"
           },
           "mass-solar-mass": {
             "gender": "feminine",
@@ -2458,7 +2428,6 @@
             "genitive-count-few": "{0} mas Słońca",
             "instrumental-count-few": "{0} masami Słońca",
             "locative-count-few": "{0} masach Słońca",
-            "vocative-count-few": "{0} masy Słońca",
             "unitPattern-count-many": "{0} mas Słońca",
             "accusative-count-many": "{0} mas Słońca",
             "dative-count-many": "{0} masom Słońca",
@@ -2485,21 +2454,15 @@
             "genitive-count-few": "{0} granów",
             "instrumental-count-few": "{0} granami",
             "locative-count-few": "{0} granach",
-            "vocative-count-few": "{0} grany",
             "unitPattern-count-many": "{0} granów",
             "accusative-count-many": "{0} granów",
             "dative-count-many": "{0} granom",
             "genitive-count-many": "{0} granów",
             "instrumental-count-many": "{0} granami",
             "locative-count-many": "{0} granach",
-            "vocative-count-many": "{0} granów",
             "unitPattern-count-other": "{0} grana",
             "accusative-count-other": "{0} grana",
-            "dative-count-other": "{0} grana",
-            "genitive-count-other": "{0} grana",
-            "instrumental-count-other": "{0} grana",
-            "locative-count-other": "{0} grana",
-            "vocative-count-other": "{0} grana"
+            "genitive-count-other": "{0} grana"
           },
           "power-gigawatt": {
             "gender": "inanimate",
@@ -2589,11 +2552,20 @@
             "unitPattern-count-other": "{0} konia mechanicznego"
           },
           "pressure-millimeter-ofhg": {
+            "gender": "inanimate",
             "displayName": "milimetry słupa rtęci",
             "unitPattern-count-one": "{0} milimetr słupa rtęci",
+            "accusative-count-one": "{0} milimetr słupa rtęci",
+            "genitive-count-one": "{0} milimetra słupa rtęci",
             "unitPattern-count-few": "{0} milimetry słupa rtęci",
+            "accusative-count-few": "{0} milimetry słupa rtęci",
+            "genitive-count-few": "{0} milimetrów słupa rtęci",
             "unitPattern-count-many": "{0} milimetrów słupa rtęci",
-            "unitPattern-count-other": "{0} milimetra słupa rtęci"
+            "accusative-count-many": "{0} milimetrów słupa rtęci",
+            "genitive-count-many": "{0} milimetrów słupa rtęci",
+            "unitPattern-count-other": "{0} milimetra słupa rtęci",
+            "accusative-count-other": "{0} milimetra słupa rtęci",
+            "genitive-count-other": "{0} milimetra słupa rtęci"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "funty na cal kwadratowy",
@@ -2628,18 +2600,18 @@
           "pressure-millibar": {
             "gender": "inanimate",
             "displayName": "milibary",
-            "unitPattern-count-one": "{0} millibar",
-            "accusative-count-one": "{0} millibar",
+            "unitPattern-count-one": "{0} milibar",
+            "accusative-count-one": "{0} milibar",
             "genitive-count-one": "{0} milibara",
-            "unitPattern-count-few": "{0} millibary",
-            "accusative-count-few": "{0} millibary",
+            "unitPattern-count-few": "{0} milibary",
+            "accusative-count-few": "{0} milibary",
             "genitive-count-few": "{0} milibarów",
-            "unitPattern-count-many": "{0} millibarów",
-            "accusative-count-many": "{0} millibarów",
-            "genitive-count-many": "{0} millibarów",
-            "unitPattern-count-other": "{0} millibara",
-            "accusative-count-other": "{0} millibara",
-            "genitive-count-other": "{0} millibara"
+            "unitPattern-count-many": "{0} milibarów",
+            "accusative-count-many": "{0} milibarów",
+            "genitive-count-many": "{0} milibarów",
+            "unitPattern-count-other": "{0} milibara",
+            "accusative-count-other": "{0} milibara",
+            "genitive-count-other": "{0} milibara"
           },
           "pressure-atmosphere": {
             "gender": "feminine",
@@ -2705,7 +2677,6 @@
             "genitive-count-few": "{0} kilopaskali",
             "instrumental-count-few": "{0} kilopaskalami",
             "locative-count-few": "{0} kilopaskalach",
-            "vocative-count-few": "{0} kilopaskale",
             "unitPattern-count-many": "{0} kilopaskali",
             "accusative-count-many": "{0} kilopaskali",
             "dative-count-many": "{0} kilopaskalom",
@@ -2748,7 +2719,6 @@
             "genitive-count-few": "{0} kilometrów na godzinę",
             "instrumental-count-few": "{0} kilometrami na godzinę",
             "locative-count-few": "{0} kilometrach na godzinę",
-            "vocative-count-few": "{0} kilometry na godzinę",
             "unitPattern-count-many": "{0} kilometrów na godzinę",
             "accusative-count-many": "{0} kilometrów na godzinę",
             "dative-count-many": "{0} kilometrom na godzinę",
@@ -2775,7 +2745,6 @@
             "genitive-count-few": "{0} metrów na sekundę",
             "instrumental-count-few": "{0} metrami na sekundę",
             "locative-count-few": "{0} metrach na sekundę",
-            "vocative-count-few": "{0} metry na sekundę",
             "unitPattern-count-many": "{0} metrów na sekundę",
             "accusative-count-many": "{0} metrów na sekundę",
             "dative-count-many": "{0} metrom na sekundę",
@@ -2802,7 +2771,6 @@
             "genitive-count-few": "{0} mil na godzinę",
             "instrumental-count-few": "{0} milami na godzinę",
             "locative-count-few": "{0} milach na godzinę",
-            "vocative-count-few": "{0} mile na godzinę",
             "unitPattern-count-many": "{0} mil na godzinę",
             "accusative-count-many": "{0} mil na godzinę",
             "dative-count-many": "{0} milom na godzinę",
@@ -2820,6 +2788,13 @@
             "unitPattern-count-many": "{0} węzłów",
             "unitPattern-count-other": "{0} węzła"
           },
+          "speed-beaufort": {
+            "displayName": "Beaufort",
+            "unitPattern-count-one": "{0} w skali Beauforta",
+            "unitPattern-count-few": "{0} w skali Beauforta",
+            "unitPattern-count-many": "{0} w skali Beauforta",
+            "unitPattern-count-other": "{0} w skali Beauforta"
+          },
           "temperature-generic": {
             "gender": "inanimate",
             "displayName": "stopnie",
@@ -2836,7 +2811,6 @@
             "genitive-count-few": "{0} stopni",
             "instrumental-count-few": "{0} stopniami",
             "locative-count-few": "{0} stopniach",
-            "vocative-count-few": "{0} stopnie",
             "unitPattern-count-many": "{0} stopni",
             "accusative-count-many": "{0} stopni",
             "dative-count-many": "{0} stopniom",
@@ -2863,7 +2837,6 @@
             "genitive-count-few": "{0} stopni Celsjusza",
             "instrumental-count-few": "{0} stopniami Celsjusza",
             "locative-count-few": "{0} stopniach Celsjusza",
-            "vocative-count-few": "{0} stopnie Celsjusza",
             "unitPattern-count-many": "{0} stopni Celsjusza",
             "accusative-count-many": "{0} stopni Celsjusza",
             "dative-count-many": "{0} stopniom Celsjusza",
@@ -2890,7 +2863,6 @@
             "genitive-count-few": "{0} stopni Fahrenheita",
             "instrumental-count-few": "{0} stopniami Fahrenheita",
             "locative-count-few": "{0} stopniach Fahrenheita",
-            "vocative-count-few": "{0} stopnie Fahrenheita",
             "unitPattern-count-many": "{0} stopni Fahrenheita",
             "accusative-count-many": "{0} stopni Fahrenheita",
             "dative-count-many": "{0} stopniom Fahrenheita",
@@ -2917,7 +2889,6 @@
             "genitive-count-few": "{0} kelwinów",
             "instrumental-count-few": "{0} kelwinami",
             "locative-count-few": "{0} kelwinach",
-            "vocative-count-few": "{0} kelwiny",
             "unitPattern-count-many": "{0} kelwinów",
             "accusative-count-many": "{0} kelwinów",
             "dative-count-many": "{0} kelwinom",
@@ -3000,7 +2971,6 @@
             "genitive-count-few": "{0} centymetrów sześciennych",
             "instrumental-count-few": "{0} centymetrami sześciennymi",
             "locative-count-few": "{0} centymetrach sześciennych",
-            "vocative-count-few": "{0} centymetry sześcienne",
             "unitPattern-count-many": "{0} centymetrów sześciennych",
             "accusative-count-many": "{0} centymetrów sześciennych",
             "dative-count-many": "{0} centymetrom sześciennym",
@@ -3028,7 +2998,6 @@
             "genitive-count-few": "{0} mil sześciennych",
             "instrumental-count-few": "{0} milami sześciennymi",
             "locative-count-few": "{0} milach sześciennych",
-            "vocative-count-few": "{0} mile sześcienne",
             "unitPattern-count-many": "{0} mil sześciennych",
             "accusative-count-many": "{0} mil sześciennych",
             "dative-count-many": "{0} milom sześciennym",
@@ -3062,7 +3031,6 @@
             "genitive-count-few": "{0} stóp sześciennych",
             "instrumental-count-few": "{0} stopami sześciennymi",
             "locative-count-few": "{0} stopach sześciennych",
-            "vocative-count-few": "{0} stopy sześcienne",
             "unitPattern-count-many": "{0} stóp sześciennych",
             "accusative-count-many": "{0} stóp sześciennych",
             "dative-count-many": "{0} stopom sześciennym",
@@ -3128,7 +3096,6 @@
             "genitive-count-few": "{0} litrów",
             "instrumental-count-few": "{0} litrami",
             "locative-count-few": "{0} litrach",
-            "vocative-count-few": "{0} litry",
             "unitPattern-count-many": "{0} litrów",
             "accusative-count-many": "{0} litrów",
             "dative-count-many": "{0} litrom",
@@ -3156,7 +3123,6 @@
             "genitive-count-few": "{0} decylitrów",
             "instrumental-count-few": "{0} decylitrami",
             "locative-count-few": "{0} decylitrach",
-            "vocative-count-few": "{0} decylitry",
             "unitPattern-count-many": "{0} decylitrów",
             "accusative-count-many": "{0} decylitrów",
             "dative-count-many": "{0} decylitrom",
@@ -3183,7 +3149,6 @@
             "genitive-count-few": "{0} centylitrów",
             "instrumental-count-few": "{0} centylitrami",
             "locative-count-few": "{0} centylitrach",
-            "vocative-count-few": "{0} centylitry",
             "unitPattern-count-many": "{0} centylitrów",
             "accusative-count-many": "{0} centylitrów",
             "dative-count-many": "{0} centylitrom",
@@ -3210,7 +3175,6 @@
             "genitive-count-few": "{0} mililitrów",
             "instrumental-count-few": "{0} mililitrami",
             "locative-count-few": "{0} mililitrach",
-            "vocative-count-few": "{0} mililitry",
             "unitPattern-count-many": "{0} mililitrów",
             "accusative-count-many": "{0} mililitrów",
             "dative-count-many": "{0} mililitrom",
@@ -3283,21 +3247,15 @@
             "genitive-count-few": "{0} galonów amerykańskich",
             "instrumental-count-few": "{0} galonami amerykańskimi",
             "locative-count-few": "{0} galonach amerykańskich",
-            "vocative-count-few": "{0} galony amerykańskie",
             "unitPattern-count-many": "{0} galonów amerykańskich",
             "accusative-count-many": "{0} galonów amerykańskich",
             "dative-count-many": "{0} galonom amerykańskim",
             "genitive-count-many": "{0} galonów amerykańskich",
             "instrumental-count-many": "{0} galonami amerykańskimi",
             "locative-count-many": "{0} galonach amerykańskich",
-            "vocative-count-many": "{0} galonów amerykańskich",
             "unitPattern-count-other": "{0} galona amerykańskiego",
             "accusative-count-other": "{0} galona amerykańskiego",
-            "dative-count-other": "{0} galona amerykańskiego",
             "genitive-count-other": "{0} galona amerykańskiego",
-            "instrumental-count-other": "{0} galona amerykańskiego",
-            "locative-count-other": "{0} galona amerykańskiego",
-            "vocative-count-other": "{0} galona amerykańskiego",
             "perUnitPattern": "{0} na galon amerykański"
           },
           "volume-gallon-imperial": {
@@ -3343,21 +3301,15 @@
             "genitive-count-few": "{0} kwart amerykańskich",
             "instrumental-count-few": "{0} kwartami amerykańskimi",
             "locative-count-few": "{0} kwartach amerykańskich",
-            "vocative-count-few": "{0} kwarty amerykańskie",
             "unitPattern-count-many": "{0} kwart amerykańskich",
             "accusative-count-many": "{0} kwart amerykańskich",
             "dative-count-many": "{0} kwartom amerykańskim",
             "genitive-count-many": "{0} kwart amerykańskich",
             "instrumental-count-many": "{0} kwartami amerykańskimi",
             "locative-count-many": "{0} kwartach amerykańskich",
-            "vocative-count-many": "{0} kwart amerykańskich",
             "unitPattern-count-other": "{0} kwarty amerykańskiej",
             "accusative-count-other": "{0} kwarty amerykańskiej",
-            "dative-count-other": "{0} kwarty amerykańskiej",
-            "genitive-count-other": "{0} kwarty amerykańskiej",
-            "instrumental-count-other": "{0} kwarty amerykańskiej",
-            "locative-count-other": "{0} kwarty amerykańskiej",
-            "vocative-count-other": "{0} kwarty amerykańskiej"
+            "genitive-count-other": "{0} kwarty amerykańskiej"
           },
           "volume-pint": {
             "gender": "feminine",
@@ -3375,21 +3327,15 @@
             "genitive-count-few": "{0} półkwart amerykańskich",
             "instrumental-count-few": "{0} półkwartami amerykańskimi",
             "locative-count-few": "{0} półkwartach amerykańskich",
-            "vocative-count-few": "{0} półkwarty amerykańskie",
             "unitPattern-count-many": "{0} półkwart amerykańskich",
             "accusative-count-many": "{0} półkwart amerykańskich",
             "dative-count-many": "{0} półkwartom amerykańskim",
             "genitive-count-many": "{0} półkwart amerykańskich",
             "instrumental-count-many": "{0} półkwartami amerykańskimi",
             "locative-count-many": "{0} półkwartach amerykańskich",
-            "vocative-count-many": "{0} półkwart amerykańskich",
             "unitPattern-count-other": "{0} półkwarty amerykańskiej",
             "accusative-count-other": "{0} półkwarty amerykańskiej",
-            "dative-count-other": "{0} półkwarty amerykańskiej",
-            "genitive-count-other": "{0} półkwarty amerykańskiej",
-            "instrumental-count-other": "{0} półkwarty amerykańskiej",
-            "locative-count-other": "{0} półkwarty amerykańskiej",
-            "vocative-count-other": "{0} półkwarty amerykańskiej"
+            "genitive-count-other": "{0} półkwarty amerykańskiej"
           },
           "volume-cup": {
             "gender": "feminine",
@@ -3407,20 +3353,15 @@
             "genitive-count-few": "{0} ćwierćkwart amerykańskich",
             "instrumental-count-few": "{0} ćwierćkwartami amerykańskimi",
             "locative-count-few": "{0} ćwierćkwartach amerykańskich",
-            "vocative-count-few": "{0} ćwierćkwarty amerykańskie",
             "unitPattern-count-many": "{0} ćwierćkwart amerykańskich",
             "accusative-count-many": "{0} ćwierćkwart amerykańskich",
             "dative-count-many": "{0} ćwierćkwartom amerykańskim",
             "genitive-count-many": "{0} ćwierćkwart amerykańskich",
             "instrumental-count-many": "{0} ćwierćkwartami amerykańskimi",
             "locative-count-many": "{0} ćwierćkwartach amerykańskich",
-            "vocative-count-many": "{0} ćwierćkwart amerykańskich",
             "unitPattern-count-other": "{0} ćwierćkwarty amerykańskiej",
             "accusative-count-other": "{0} ćwierćkwarty amerykańskiej",
-            "dative-count-other": "{0} ćwierćkwarty amerykańskiej",
             "genitive-count-other": "{0} ćwierćkwarty amerykańskiej",
-            "instrumental-count-other": "{0} ćwierćkwarty amerykańskiej",
-            "locative-count-other": "{0} ćwierćkwarty amerykańskiej",
             "vocative-count-other": "{0} ćwierćkwarty am."
           },
           "volume-fluid-ounce": {
@@ -3439,21 +3380,15 @@
             "genitive-count-few": "{0} uncji płynu amerykańskich",
             "instrumental-count-few": "{0} uncjami płynu amerykańskimi",
             "locative-count-few": "{0} uncjach płynu amerykańskich",
-            "vocative-count-few": "{0} uncje płynu amerykańskie",
             "unitPattern-count-many": "{0} uncji płynu amerykańskich",
             "accusative-count-many": "{0} uncji płynu amerykańskich",
             "dative-count-many": "{0} uncjom płynu amerykańskim",
             "genitive-count-many": "{0} uncji płynu amerykańskich",
             "instrumental-count-many": "{0} uncjami płynu amerykańskimi",
             "locative-count-many": "{0} uncjach płynu amerykańskich",
-            "vocative-count-many": "{0} uncji płynu amerykańskich",
             "unitPattern-count-other": "{0} uncji płynu amerykańskiej",
             "accusative-count-other": "{0} uncji płynu amerykańskiej",
-            "dative-count-other": "{0} uncji płynu amerykańskiej",
-            "genitive-count-other": "{0} uncji płynu amerykańskiej",
-            "instrumental-count-other": "{0} uncji płynu amerykańskiej",
-            "locative-count-other": "{0} uncji płynu amerykańskiej",
-            "vocative-count-other": "{0} uncji płynu amerykańskiej"
+            "genitive-count-other": "{0} uncji płynu amerykańskiej"
           },
           "volume-fluid-ounce-imperial": {
             "gender": "feminine",
@@ -3471,21 +3406,15 @@
             "genitive-count-few": "{0} uncji płynu angielskich",
             "instrumental-count-few": "{0} uncjami płynu angielskimi",
             "locative-count-few": "{0} uncjach płynu angielskich",
-            "vocative-count-few": "{0} uncje płynu angielskie",
             "unitPattern-count-many": "{0} uncji płynu angielskich",
             "accusative-count-many": "{0} uncji płynu angielskich",
             "dative-count-many": "{0} uncjom płynu angielskim",
             "genitive-count-many": "{0} uncji płynu angielskich",
             "instrumental-count-many": "{0} uncjami płynu angielskimi",
             "locative-count-many": "{0} uncjach płynu angielskich",
-            "vocative-count-many": "{0} uncji płynu angielskich",
             "unitPattern-count-other": "{0} uncji płynu angielskiej",
             "accusative-count-other": "{0} uncji płynu angielskiej",
-            "dative-count-other": "{0} uncji płynu angielskiej",
-            "genitive-count-other": "{0} uncji płynu angielskiej",
-            "instrumental-count-other": "{0} uncji płynu angielskiej",
-            "locative-count-other": "{0} uncji płynu angielskiej",
-            "vocative-count-other": "{0} uncji płynu angielskiej"
+            "genitive-count-other": "{0} uncji płynu angielskiej"
           },
           "volume-tablespoon": {
             "gender": "feminine",
@@ -3518,7 +3447,7 @@
             "displayName": "łyżeczki",
             "unitPattern-count-one": "{0} łyżeczka",
             "accusative-count-one": "{0} łyżeczkę",
-            "dative-count-one": "{0} łyżeczkce",
+            "dative-count-one": "łyżeczce",
             "genitive-count-one": "{0} łyżeczki",
             "instrumental-count-one": "{0} łyżeczką",
             "locative-count-one": "{0} łyżeczce",
@@ -3562,28 +3491,22 @@
             "genitive-count-few": "{0} łyżek deserowych",
             "instrumental-count-few": "{0} łyżkami deserowymi",
             "locative-count-few": "{0} łyżkach deserowych",
-            "vocative-count-few": "{0} łyżki deserowe",
             "unitPattern-count-many": "{0} łyżek deserowych",
             "accusative-count-many": "{0} łyżek deserowych",
             "dative-count-many": "{0} łyżkom deserowym",
             "genitive-count-many": "{0} łyżek deserowych",
             "instrumental-count-many": "{0} łyżkami deserowymi",
             "locative-count-many": "{0} łyżkach deserowych",
-            "vocative-count-many": "{0} łyżek deserowych",
             "unitPattern-count-other": "{0} łyżki deserowej",
             "accusative-count-other": "{0} łyżki deserowej",
-            "dative-count-other": "{0} łyżki deserowej",
-            "genitive-count-other": "{0} łyżki deserowej",
-            "instrumental-count-other": "{0} łyżki deserowej",
-            "locative-count-other": "{0} łyżki deserowej",
-            "vocative-count-other": "{0} łyżki deserowej"
+            "genitive-count-other": "{0} łyżki deserowej"
           },
           "volume-dessert-spoon-imperial": {
             "gender": "feminine",
             "displayName": "imperialna łyżeczka deserowa",
             "unitPattern-count-one": "{0} imperialna łyżeczka deserowa",
             "accusative-count-one": "{0} imperialną łyżeczkę deserową",
-            "dative-count-one": "{0} imperialnej łyżeczkce deserowej",
+            "dative-count-one": "{0} imperialnej łyżeczce deserowej",
             "genitive-count-one": "{0} imperialnej łyżeczki deserowej",
             "instrumental-count-one": "{0} imperialną łyżeczką deserową",
             "locative-count-one": "{0} imperialnej łyżeczce deserowej",
@@ -3594,21 +3517,15 @@
             "genitive-count-few": "{0} imperialnych łyżeczek deserowych",
             "instrumental-count-few": "{0} imperialnymi łyżeczkami deserowymi",
             "locative-count-few": "{0} imperialnych łyżeczkach deserowych",
-            "vocative-count-few": "{0} imperialne łyżeczki deserowe",
             "unitPattern-count-many": "{0} imperialnych łyżeczek deserowych",
             "accusative-count-many": "{0} imperialnych łyżeczek deserowych",
             "dative-count-many": "{0} imperialnym łyżeczkom deserowym",
             "genitive-count-many": "{0} imperialnych łyżeczek deserowych",
             "instrumental-count-many": "{0} imperialnymi łyżeczkami deserowymi",
             "locative-count-many": "{0} imperialnych łyżeczkach deserowych",
-            "vocative-count-many": "{0} imperialnych łyżeczek deserowych",
             "unitPattern-count-other": "{0} imperialnej łyżeczki deserowej",
             "accusative-count-other": "{0} imperialnej łyżeczki deserowej",
-            "dative-count-other": "{0} imperialnej łyżeczki deserowej",
-            "genitive-count-other": "{0} imperialnej łyżeczki deserowej",
-            "instrumental-count-other": "{0} imperialnej łyżeczki deserowej",
-            "locative-count-other": "{0} imperialnej łyżeczki deserowej",
-            "vocative-count-other": "{0} imperialnej łyżeczki deserowej"
+            "genitive-count-other": "{0} imperialnej łyżeczki deserowej"
           },
           "volume-drop": {
             "gender": "feminine",
@@ -3626,21 +3543,15 @@
             "genitive-count-few": "{0} kropel",
             "instrumental-count-few": "{0} kroplami",
             "locative-count-few": "{0} kroplach",
-            "vocative-count-few": "{0} krople",
             "unitPattern-count-many": "{0} kropli",
             "accusative-count-many": "{0} kropli",
             "dative-count-many": "{0} kroplom",
-            "genitive-count-many": "{0} kropel",
+            "genitive-count-many": "{0} kropli",
             "instrumental-count-many": "{0} kroplami",
             "locative-count-many": "{0} kroplach",
-            "vocative-count-many": "{0} kropli",
             "unitPattern-count-other": "{0} kropli",
             "accusative-count-other": "{0} kropli",
-            "dative-count-other": "{0} kropli",
-            "genitive-count-other": "{0} kropli",
-            "instrumental-count-other": "{0} kropli",
-            "locative-count-other": "{0} kropli",
-            "vocative-count-other": "{0} kropli"
+            "genitive-count-other": "{0} kropli"
           },
           "volume-dram": {
             "gender": "feminine",
@@ -3664,14 +3575,9 @@
             "genitive-count-many": "{0} drachm płynu",
             "instrumental-count-many": "{0} drachmami płynu",
             "locative-count-many": "{0} drachmach płynu",
-            "vocative-count-many": "{0} drachm płynu",
             "unitPattern-count-other": "{0} drachmy płynu",
             "accusative-count-other": "{0} drachmy płynu",
-            "dative-count-other": "{0} drachmy płynu",
-            "genitive-count-other": "{0} drachmy płynu",
-            "instrumental-count-other": "{0} drachmy płynu",
-            "locative-count-other": "{0} drachmy płynu",
-            "vocative-count-other": "{0} drachmy płynu"
+            "genitive-count-other": "{0} drachmy płynu"
           },
           "volume-jigger": {
             "gender": "inanimate",
@@ -3689,21 +3595,15 @@
             "genitive-count-few": "{0} jiggerów",
             "instrumental-count-few": "{0} jiggerami",
             "locative-count-few": "{0} jiggerach",
-            "vocative-count-few": "{0} jiggery",
             "unitPattern-count-many": "{0} jiggerów",
             "accusative-count-many": "{0} jiggerów",
             "dative-count-many": "{0} jiggerom",
             "genitive-count-many": "{0} jiggerów",
             "instrumental-count-many": "{0} jiggerami",
             "locative-count-many": "{0} jiggerach",
-            "vocative-count-many": "{0} jiggerów",
             "unitPattern-count-other": "{0} jiggera",
             "accusative-count-other": "{0} jiggera",
-            "dative-count-other": "{0} jiggera",
-            "genitive-count-other": "{0} jiggera",
-            "instrumental-count-other": "{0} jiggera",
-            "locative-count-other": "{0} jiggera",
-            "vocative-count-other": "{0} jiggera"
+            "genitive-count-other": "{0} jiggera"
           },
           "volume-pinch": {
             "gender": "feminine",
@@ -3721,14 +3621,12 @@
             "genitive-count-few": "{0} szczypt",
             "instrumental-count-few": "{0} szczyptami",
             "locative-count-few": "{0} szczyptach",
-            "vocative-count-few": "{0} szczypty",
             "unitPattern-count-many": "{0} szczypt",
             "accusative-count-many": "{0} szczypt",
             "dative-count-many": "{0} szczyptom",
             "genitive-count-many": "{0} szczypt",
             "instrumental-count-many": "{0} szczyptami",
             "locative-count-many": "{0} szczyptach",
-            "vocative-count-many": "{0} szczypt",
             "unitPattern-count-other": "{0} szczypty",
             "accusative-count-other": "{0} szczypty",
             "genitive-count-other": "{0} szczypty"
@@ -3749,21 +3647,64 @@
             "genitive-count-few": "{0} kwart angielskich",
             "instrumental-count-few": "{0} kwartami angielskimi",
             "locative-count-few": "{0} kwartach angielskich",
-            "vocative-count-few": "{0} kwarty angielskie",
             "unitPattern-count-many": "{0} kwart angielskich",
             "accusative-count-many": "{0} kwart angielskich",
             "dative-count-many": "{0} kwartom angielskim",
             "genitive-count-many": "{0} kwart angielskich",
             "instrumental-count-many": "{0} kwartami angielskimi",
             "locative-count-many": "{0} kwartach angielskich",
-            "vocative-count-many": "{0} kwart angielskich",
             "unitPattern-count-other": "{0} kwarty angielskiej",
             "accusative-count-other": "{0} kwarty angielskiej",
-            "dative-count-other": "{0} kwarty angielskiej",
-            "genitive-count-other": "{0} kwarty angielskiej",
-            "instrumental-count-other": "{0} kwarty angielskiej",
-            "locative-count-other": "{0} kwarty angielskiej",
-            "vocative-count-other": "{0} kwarty angielskiej"
+            "genitive-count-other": "{0} kwarty angielskiej"
+          },
+          "speed-light-speed": {
+            "gender": "neuter",
+            "displayName": "światło",
+            "unitPattern-count-one": "{0} światło",
+            "accusative-count-one": "{0} światło",
+            "genitive-count-one": "{0} światła",
+            "unitPattern-count-few": "{0} światła",
+            "accusative-count-few": "{0} światła",
+            "genitive-count-few": "{0} świateł",
+            "unitPattern-count-many": "{0} świateł",
+            "accusative-count-many": "{0} świateł",
+            "genitive-count-many": "{0} świateł",
+            "unitPattern-count-other": "{0} światła",
+            "accusative-count-other": "{0} światła",
+            "genitive-count-other": "{0} światła"
+          },
+          "concentr-portion-per-1e9": {
+            "gender": "feminine",
+            "displayName": "części na miliard",
+            "unitPattern-count-one": "{0} część na miliard",
+            "accusative-count-one": "{0} część na miliard",
+            "genitive-count-one": "{0} części na miliard",
+            "unitPattern-count-few": "{0} części na miliard",
+            "accusative-count-few": "{0} części na miliard",
+            "genitive-count-few": "{0} części na miliard",
+            "unitPattern-count-many": "{0} części na miliard",
+            "accusative-count-many": "{0} części na miliard",
+            "genitive-count-many": "{0} części na miliard",
+            "unitPattern-count-other": "{0} części na miliard",
+            "accusative-count-other": "{0} części na miliard",
+            "genitive-count-other": "{0} części na miliard"
+          },
+          "duration-night": {
+            "gender": "feminine",
+            "displayName": "noce",
+            "unitPattern-count-one": "{0} noc",
+            "accusative-count-one": "{0} noc",
+            "genitive-count-one": "{0} nocy",
+            "unitPattern-count-few": "{0} noce",
+            "accusative-count-few": "{0} noce",
+            "genitive-count-few": "{0} nocy",
+            "unitPattern-count-many": "{0} nocy",
+            "accusative-count-many": "{0} nocy",
+            "genitive-count-many": "{0} nocy",
+            "unitPattern-count-other": "{0} nocy",
+            "accusative-count-other": "{0} nocy",
+            "genitive-count-other": "{0} nocy",
+            "perUnitPattern": "{0}/noc"
           },
           "coordinateUnit": {
             "displayName": "kierunek świata",
@@ -3804,6 +3745,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -3833,6 +3780,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -4005,9 +3958,6 @@
           },
           "concentr-permyriad": {
             "displayName": "‱",
-            "unitPattern-count-one": "{0}‱",
-            "unitPattern-count-few": "{0}‱",
-            "unitPattern-count-many": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -4142,11 +4092,11 @@
             "perUnitPattern": "{0}/tydz."
           },
           "duration-day": {
-            "displayName": "doby",
-            "unitPattern-count-one": "{0} doba",
-            "unitPattern-count-few": "{0} doby",
-            "unitPattern-count-many": "{0} dób",
-            "unitPattern-count-other": "{0} doby",
+            "displayName": "dzień",
+            "unitPattern-count-one": "{0} dzień",
+            "unitPattern-count-few": "{0} dni",
+            "unitPattern-count-many": "{0} dni",
+            "unitPattern-count-other": "{0} dnia",
             "perUnitPattern": "{0}/dobę"
           },
           "duration-hour": {
@@ -4206,13 +4156,6 @@
             "displayName": "cal",
             "unitPattern-count-other": "{0} cal"
           },
-          "energy-foodcalorie": {
-            "displayName": "kcal",
-            "unitPattern-count-one": "{0} kcal",
-            "unitPattern-count-few": "{0} kcal",
-            "unitPattern-count-many": "{0} kcal",
-            "unitPattern-count-other": "{0} kcal"
-          },
           "energy-kilojoule": {
             "displayName": "kJ",
             "unitPattern-count-other": "{0} kJ"
@@ -4227,16 +4170,10 @@
           },
           "energy-electronvolt": {
             "displayName": "elektronowolt",
-            "unitPattern-count-one": "{0} eV",
-            "unitPattern-count-few": "{0} eV",
-            "unitPattern-count-many": "{0} eV",
             "unitPattern-count-other": "{0} eV"
           },
           "energy-british-thermal-unit": {
             "displayName": "BTU",
-            "unitPattern-count-one": "{0} Btu",
-            "unitPattern-count-few": "{0} Btu",
-            "unitPattern-count-many": "{0} Btu",
             "unitPattern-count-other": "{0} Btu"
           },
           "energy-therm-us": {
@@ -4248,16 +4185,10 @@
           },
           "force-pound-force": {
             "displayName": "funt-siła",
-            "unitPattern-count-one": "{0} lbf",
-            "unitPattern-count-few": "{0} lbf",
-            "unitPattern-count-many": "{0} lbf",
             "unitPattern-count-other": "{0} lbf"
           },
           "force-newton": {
             "displayName": "N",
-            "unitPattern-count-one": "{0} N",
-            "unitPattern-count-few": "{0} N",
-            "unitPattern-count-many": "{0} N",
             "unitPattern-count-other": "{0} N"
           },
           "force-kilowatt-hour-per-100-kilometer": {
@@ -4351,16 +4282,10 @@
           },
           "length-yard": {
             "displayName": "yd",
-            "unitPattern-count-one": "{0} yd",
-            "unitPattern-count-few": "{0} yd",
-            "unitPattern-count-many": "{0} yd",
             "unitPattern-count-other": "{0} yd"
           },
           "length-foot": {
             "displayName": "stopy",
-            "unitPattern-count-one": "{0} ft",
-            "unitPattern-count-few": "{0} ft",
-            "unitPattern-count-many": "{0} ft",
             "unitPattern-count-other": "{0} ft",
             "perUnitPattern": "{0}/ft"
           },
@@ -4418,9 +4343,6 @@
           },
           "length-solar-radius": {
             "displayName": "R☉",
-            "unitPattern-count-one": "{0} R☉",
-            "unitPattern-count-few": "{0} R☉",
-            "unitPattern-count-many": "{0} R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -4429,23 +4351,14 @@
           },
           "light-candela": {
             "displayName": "cd",
-            "unitPattern-count-one": "{0} cd",
-            "unitPattern-count-few": "{0} cd",
-            "unitPattern-count-many": "{0} cd",
             "unitPattern-count-other": "{0} cd"
           },
           "light-lumen": {
             "displayName": "lm",
-            "unitPattern-count-one": "{0} lm",
-            "unitPattern-count-few": "{0} lm",
-            "unitPattern-count-many": "{0} lm",
             "unitPattern-count-other": "{0} lm"
           },
           "light-solar-luminosity": {
             "displayName": "L☉",
-            "unitPattern-count-one": "{0} L☉",
-            "unitPattern-count-few": "{0} L☉",
-            "unitPattern-count-many": "{0} L☉",
             "unitPattern-count-other": "{0} L☉"
           },
           "mass-tonne": {
@@ -4479,9 +4392,6 @@
           },
           "mass-stone": {
             "displayName": "st",
-            "unitPattern-count-one": "{0} st",
-            "unitPattern-count-few": "{0} st",
-            "unitPattern-count-many": "{0} st",
             "unitPattern-count-other": "{0} st"
           },
           "mass-pound": {
@@ -4510,23 +4420,14 @@
           },
           "mass-dalton": {
             "displayName": "Da",
-            "unitPattern-count-one": "{0} Da",
-            "unitPattern-count-few": "{0} Da",
-            "unitPattern-count-many": "{0} Da",
             "unitPattern-count-other": "{0} Da"
           },
           "mass-earth-mass": {
             "displayName": "M⊕",
-            "unitPattern-count-one": "{0} M⊕",
-            "unitPattern-count-few": "{0} M⊕",
-            "unitPattern-count-many": "{0} M⊕",
             "unitPattern-count-other": "{0} M⊕"
           },
           "mass-solar-mass": {
             "displayName": "M☉",
-            "unitPattern-count-one": "{0} M☉",
-            "unitPattern-count-few": "{0} M☉",
-            "unitPattern-count-many": "{0} M☉",
             "unitPattern-count-other": "{0} M☉"
           },
           "mass-grain": {
@@ -4600,16 +4501,10 @@
           },
           "pressure-kilopascal": {
             "displayName": "kPa",
-            "unitPattern-count-one": "{0} kPa",
-            "unitPattern-count-few": "{0} kPa",
-            "unitPattern-count-many": "{0} kPa",
             "unitPattern-count-other": "{0} kPa"
           },
           "pressure-megapascal": {
             "displayName": "MPa",
-            "unitPattern-count-one": "{0} MPa",
-            "unitPattern-count-few": "{0} MPa",
-            "unitPattern-count-many": "{0} MPa",
             "unitPattern-count-other": "{0} MPa"
           },
           "speed-kilometer-per-hour": {
@@ -4637,6 +4532,13 @@
             "unitPattern-count-many": "{0} w.",
             "unitPattern-count-other": "{0} w."
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-one": "{0} Bft",
+            "unitPattern-count-few": "{0} Bft",
+            "unitPattern-count-many": "{0} Bft",
+            "unitPattern-count-other": "{0} Bft"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-other": "{0}°"
@@ -4658,16 +4560,10 @@
           },
           "torque-pound-force-foot": {
             "displayName": "lbf⋅ft",
-            "unitPattern-count-one": "{0} lbf⋅ft",
-            "unitPattern-count-few": "{0} lbf⋅ft",
-            "unitPattern-count-many": "{0} lbf⋅ft",
             "unitPattern-count-other": "{0} lbf⋅ft"
           },
           "torque-newton-meter": {
             "displayName": "N⋅m",
-            "unitPattern-count-one": "{0} N⋅m",
-            "unitPattern-count-few": "{0} N⋅m",
-            "unitPattern-count-many": "{0} N⋅m",
             "unitPattern-count-other": "{0} N⋅m"
           },
           "volume-cubic-kilometer": {
@@ -4844,9 +4740,6 @@
           },
           "volume-barrel": {
             "displayName": "baryłki",
-            "unitPattern-count-one": "{0} bbl",
-            "unitPattern-count-few": "{0} bbl",
-            "unitPattern-count-many": "{0} bbl",
             "unitPattern-count-other": "{0} bbl"
           },
           "volume-dessert-spoon": {
@@ -4898,6 +4791,25 @@
             "unitPattern-count-many": "{0} kwart ang.",
             "unitPattern-count-other": "{0} kwarty ang."
           },
+          "speed-light-speed": {
+            "displayName": "św.",
+            "unitPattern-count-one": "{0} św.",
+            "unitPattern-count-few": "{0} św.",
+            "unitPattern-count-many": "{0} św.",
+            "unitPattern-count-other": "{0} św."
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "ppb",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "noce",
+            "unitPattern-count-one": "{0} noc",
+            "unitPattern-count-few": "{0} noce",
+            "unitPattern-count-many": "{0} nocy",
+            "unitPattern-count-other": "{0} nocy",
+            "perUnitPattern": "{0}/noc"
+          },
           "coordinateUnit": {
             "displayName": "kierunek",
             "east": "{0}°E",
@@ -4937,6 +4849,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -4966,6 +4884,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -5007,9 +4931,6 @@
           },
           "acceleration-g-force": {
             "displayName": "G",
-            "unitPattern-count-one": "{0} G",
-            "unitPattern-count-few": "{0} G",
-            "unitPattern-count-many": "{0} G",
             "unitPattern-count-other": "{0} G"
           },
           "acceleration-meter-per-square-second": {
@@ -5033,16 +4954,10 @@
           },
           "angle-arc-minute": {
             "displayName": "minuty",
-            "unitPattern-count-one": "{0}′",
-            "unitPattern-count-few": "{0}′",
-            "unitPattern-count-many": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "sekundy",
-            "unitPattern-count-one": "{0}″",
-            "unitPattern-count-few": "{0}″",
-            "unitPattern-count-many": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -5147,9 +5062,6 @@
           },
           "concentr-permyriad": {
             "displayName": "‱",
-            "unitPattern-count-one": "{0}‱",
-            "unitPattern-count-few": "{0}‱",
-            "unitPattern-count-many": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -5277,14 +5189,14 @@
           },
           "duration-week": {
             "displayName": "tydz.",
-            "unitPattern-count-one": "{0} tydz.",
+            "unitPattern-count-one": "{0} t.",
             "unitPattern-count-few": "{0} t.",
-            "unitPattern-count-many": "{0} tyg.",
-            "unitPattern-count-other": "{0} tyg.",
+            "unitPattern-count-many": "{0} t.",
+            "unitPattern-count-other": "{0} t.",
             "perUnitPattern": "{0}/t."
           },
           "duration-day": {
-            "displayName": "doba",
+            "displayName": "dzień",
             "unitPattern-count-one": "{0} d.",
             "unitPattern-count-few": "{0} d.",
             "unitPattern-count-many": "{0} d.",
@@ -5348,13 +5260,6 @@
             "displayName": "cal",
             "unitPattern-count-other": "{0} cal"
           },
-          "energy-foodcalorie": {
-            "displayName": "kcal",
-            "unitPattern-count-one": "{0} kcal",
-            "unitPattern-count-few": "{0} kcal",
-            "unitPattern-count-many": "{0} kcal",
-            "unitPattern-count-other": "{0} kcal"
-          },
           "energy-kilojoule": {
             "displayName": "kJ",
             "unitPattern-count-other": "{0} kJ"
@@ -5369,16 +5274,10 @@
           },
           "energy-electronvolt": {
             "displayName": "eV",
-            "unitPattern-count-one": "{0} eV",
-            "unitPattern-count-few": "{0} eV",
-            "unitPattern-count-many": "{0} eV",
             "unitPattern-count-other": "{0} eV"
           },
           "energy-british-thermal-unit": {
             "displayName": "BTU",
-            "unitPattern-count-one": "{0} Btu",
-            "unitPattern-count-few": "{0} Btu",
-            "unitPattern-count-many": "{0} Btu",
             "unitPattern-count-other": "{0} Btu"
           },
           "energy-therm-us": {
@@ -5390,16 +5289,10 @@
           },
           "force-pound-force": {
             "displayName": "lbf",
-            "unitPattern-count-one": "{0} lbf",
-            "unitPattern-count-few": "{0} lbf",
-            "unitPattern-count-many": "{0} lbf",
             "unitPattern-count-other": "{0} lbf"
           },
           "force-newton": {
             "displayName": "N",
-            "unitPattern-count-one": "{0} N",
-            "unitPattern-count-few": "{0} N",
-            "unitPattern-count-many": "{0} N",
             "unitPattern-count-other": "{0} N"
           },
           "force-kilowatt-hour-per-100-kilometer": {
@@ -5493,16 +5386,10 @@
           },
           "length-yard": {
             "displayName": "yd",
-            "unitPattern-count-one": "{0} yd",
-            "unitPattern-count-few": "{0} yd",
-            "unitPattern-count-many": "{0} yd",
             "unitPattern-count-other": "{0} yd"
           },
           "length-foot": {
             "displayName": "ft",
-            "unitPattern-count-one": "{0} ft",
-            "unitPattern-count-few": "{0} ft",
-            "unitPattern-count-many": "{0} ft",
             "unitPattern-count-other": "{0} ft",
             "perUnitPattern": "{0}/ft"
           },
@@ -5560,9 +5447,6 @@
           },
           "length-solar-radius": {
             "displayName": "R☉",
-            "unitPattern-count-one": "{0} R☉",
-            "unitPattern-count-few": "{0} R☉",
-            "unitPattern-count-many": "{0} R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -5571,23 +5455,14 @@
           },
           "light-candela": {
             "displayName": "cd",
-            "unitPattern-count-one": "{0} cd",
-            "unitPattern-count-few": "{0} cd",
-            "unitPattern-count-many": "{0} cd",
             "unitPattern-count-other": "{0} cd"
           },
           "light-lumen": {
             "displayName": "lm",
-            "unitPattern-count-one": "{0} lm",
-            "unitPattern-count-few": "{0} lm",
-            "unitPattern-count-many": "{0} lm",
             "unitPattern-count-other": "{0} lm"
           },
           "light-solar-luminosity": {
             "displayName": "L☉",
-            "unitPattern-count-one": "{0} L☉",
-            "unitPattern-count-few": "{0} L☉",
-            "unitPattern-count-many": "{0} L☉",
             "unitPattern-count-other": "{0} L☉"
           },
           "mass-tonne": {
@@ -5621,9 +5496,6 @@
           },
           "mass-stone": {
             "displayName": "st",
-            "unitPattern-count-one": "{0} st",
-            "unitPattern-count-few": "{0} st",
-            "unitPattern-count-many": "{0} st",
             "unitPattern-count-other": "{0} st"
           },
           "mass-pound": {
@@ -5659,16 +5531,10 @@
           },
           "mass-earth-mass": {
             "displayName": "M⊕",
-            "unitPattern-count-one": "{0} M⊕",
-            "unitPattern-count-few": "{0} M⊕",
-            "unitPattern-count-many": "{0} M⊕",
             "unitPattern-count-other": "{0} M⊕"
           },
           "mass-solar-mass": {
             "displayName": "M☉",
-            "unitPattern-count-one": "{0} M☉",
-            "unitPattern-count-few": "{0} M☉",
-            "unitPattern-count-many": "{0} M☉",
             "unitPattern-count-other": "{0} M☉"
           },
           "mass-grain": {
@@ -5742,24 +5608,18 @@
           },
           "pressure-kilopascal": {
             "displayName": "kPa",
-            "unitPattern-count-one": "{0} kPa",
-            "unitPattern-count-few": "{0} kPa",
-            "unitPattern-count-many": "{0} kPa",
             "unitPattern-count-other": "{0} kPa"
           },
           "pressure-megapascal": {
             "displayName": "MPa",
-            "unitPattern-count-one": "{0} MPa",
-            "unitPattern-count-few": "{0} MPa",
-            "unitPattern-count-many": "{0} MPa",
             "unitPattern-count-other": "{0} MPa"
           },
           "speed-kilometer-per-hour": {
-            "displayName": "km/godz.",
-            "unitPattern-count-one": "{0} km/godz.",
-            "unitPattern-count-few": "{0} km/godz.",
-            "unitPattern-count-many": "{0} km/godz.",
-            "unitPattern-count-other": "{0} km/godz."
+            "displayName": "km/h",
+            "unitPattern-count-one": "{0} km/h",
+            "unitPattern-count-few": "{0} km/h",
+            "unitPattern-count-many": "{0} km/h",
+            "unitPattern-count-other": "{0}km/h"
           },
           "speed-meter-per-second": {
             "displayName": "m/s",
@@ -5778,6 +5638,13 @@
             "unitPattern-count-few": "{0} w.",
             "unitPattern-count-many": "{0} w.",
             "unitPattern-count-other": "{0} w."
+          },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-one": "{0} Bft",
+            "unitPattern-count-few": "{0} Bft",
+            "unitPattern-count-many": "{0} Bft",
+            "unitPattern-count-other": "{0} Bft"
           },
           "temperature-generic": {
             "displayName": "°",
@@ -5800,16 +5667,10 @@
           },
           "torque-pound-force-foot": {
             "displayName": "lbf⋅ft",
-            "unitPattern-count-one": "{0} lbf⋅ft",
-            "unitPattern-count-few": "{0} lbf⋅ft",
-            "unitPattern-count-many": "{0} lbf⋅ft",
             "unitPattern-count-other": "{0} lbf⋅ft"
           },
           "torque-newton-meter": {
             "displayName": "N⋅m",
-            "unitPattern-count-one": "{0} N⋅m",
-            "unitPattern-count-few": "{0} N⋅m",
-            "unitPattern-count-many": "{0} N⋅m",
             "unitPattern-count-other": "{0} N⋅m"
           },
           "volume-cubic-kilometer": {
@@ -5986,9 +5847,6 @@
           },
           "volume-barrel": {
             "displayName": "bbl",
-            "unitPattern-count-one": "{0} bbl",
-            "unitPattern-count-few": "{0} bbl",
-            "unitPattern-count-many": "{0} bbl",
             "unitPattern-count-other": "{0} bbl"
           },
           "volume-dessert-spoon": {
@@ -6039,6 +5897,25 @@
             "unitPattern-count-few": "{0} kwarty ang.",
             "unitPattern-count-many": "{0} kwart ang.",
             "unitPattern-count-other": "{0} kwarty ang."
+          },
+          "speed-light-speed": {
+            "displayName": "św.",
+            "unitPattern-count-one": "{0} św.",
+            "unitPattern-count-few": "{0} św.",
+            "unitPattern-count-many": "{0} św.",
+            "unitPattern-count-other": "{0} św."
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "ppb",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "noce",
+            "unitPattern-count-one": "{0} noc",
+            "unitPattern-count-few": "{0} noce",
+            "unitPattern-count-many": "{0} nocy",
+            "unitPattern-count-other": "{0} nocy",
+            "perUnitPattern": "{0}/noc"
           },
           "coordinateUnit": {
             "displayName": "kierunek",

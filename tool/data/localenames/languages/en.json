@@ -2,16 +2,13 @@
   "main": {
     "en": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "en"
       },
       "localeDisplayNames": {
         "languages": {
           "aa": "Afar",
           "ab": "Abkhazian",
-          "ace": "Achinese",
+          "ace": "Acehnese",
           "ach": "Acoli",
           "ada": "Adangme",
           "ady": "Adyghe",
@@ -80,6 +77,7 @@
           "bjn": "Banjar",
           "bkm": "Kom",
           "bla": "Siksiká",
+          "blo": "Anii",
           "blt": "Tai Dam",
           "bm": "Bambara",
           "bn": "Bangla",
@@ -225,7 +223,6 @@
           "gmh": "Middle High German",
           "gn": "Guarani",
           "goh": "Old High German",
-          "gom": "Goan Konkani",
           "gon": "Gondi",
           "gor": "Gorontalo",
           "got": "Gothic",
@@ -340,6 +337,7 @@
           "kv": "Komi",
           "kw": "Cornish",
           "kwk": "Kwakʼwala",
+          "kxv": "Kuvi",
           "ky": "Kyrgyz",
           "ky-alt-variant": "Kirghiz",
           "la": "Latin",
@@ -395,7 +393,7 @@
           "mgo": "Metaʼ",
           "mh": "Marshallese",
           "mi": "Māori",
-          "mic": "Mi'kmaq",
+          "mic": "Mi'kmaw",
           "min": "Minangkabau",
           "mk": "Macedonian",
           "ml": "Malayalam",
@@ -412,6 +410,7 @@
           "mua": "Mundang",
           "mul": "Multiple languages",
           "mus": "Muscogee",
+          "mus-alt-official": "Mvskoke",
           "mwl": "Mirandese",
           "mwr": "Marwari",
           "mwv": "Mentawai",
@@ -648,6 +647,7 @@
           "vi": "Vietnamese",
           "vls": "West Flemish",
           "vmf": "Main-Franconian",
+          "vmw": "Makhuwa",
           "vo": "Volapük",
           "vot": "Votic",
           "vro": "Võro",
@@ -663,6 +663,7 @@
           "xal": "Kalmyk",
           "xh": "Xhosa",
           "xmf": "Mingrelian",
+          "xnr": "Kangri",
           "xog": "Soga",
           "yao": "Yao",
           "yap": "Yapese",

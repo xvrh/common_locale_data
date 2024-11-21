@@ -2,9 +2,6 @@
   "main": {
     "pl": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "pl"
       },
       "localeDisplayNames": {
@@ -160,6 +157,8 @@
           "IM": "Wyspa Man",
           "IN": "Indie",
           "IO": "Brytyjskie Terytorium Oceanu Indyjskiego",
+          "IO-alt-biot": "Brytyjskie Terytorium Oceanu Indyjskiego",
+          "IO-alt-chagos": "Archipelag Czagos",
           "IQ": "Irak",
           "IR": "Iran",
           "IS": "Islandia",

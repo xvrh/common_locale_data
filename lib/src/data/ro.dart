@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'ro';
 
-/// Translations in Romanian of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataRo implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataRo();
@@ -22,6 +20,14 @@ class CommonLocaleDataRo implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsRo._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsRo._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsRo._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataRo implements CommonLocaleData {
   static final _territories = TerritoriesRo._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesRo._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesRo extends Languages {
@@ -227,7 +237,7 @@ class LanguagesRo extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'haryanvi',
     ),
     'bgn': Language(
       'bgn',
@@ -256,6 +266,10 @@ class LanguagesRo extends Languages {
     'bla': Language(
       'bla',
       'siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'anii',
     ),
     'bm': Language(
       'bm',
@@ -389,7 +403,7 @@ class LanguagesRo extends Languages {
       'ckb',
       'kurdă centrală',
       variant: 'kurdă sorani',
-      menu: 'kurdă centrală',
+      menu: 'kurdă, centrală',
     ),
     'clc': Language(
       'clc',
@@ -483,10 +497,6 @@ class LanguagesRo extends Languages {
       'de',
       'germană',
     ),
-    'de-AT': Language(
-      'de-AT',
-      'germană (Austria)',
-    ),
     'de-CH': Language(
       'de-CH',
       'germană standard (Elveția)',
@@ -579,24 +589,6 @@ class LanguagesRo extends Languages {
       'en',
       'engleză',
     ),
-    'en-AU': Language(
-      'en-AU',
-      'engleză (Australia)',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'engleză (Canada)',
-    ),
-    'en-GB': Language(
-      'en-GB',
-      'engleză (Regatul Unit)',
-      short: 'engleză (Regatul Unit)',
-    ),
-    'en-US': Language(
-      'en-US',
-      'engleză (Statele Unite ale Americii)',
-      short: 'engleză (S.U.A)',
-    ),
     'enm': Language(
       'enm',
       'engleză medie',
@@ -609,17 +601,9 @@ class LanguagesRo extends Languages {
       'es',
       'spaniolă',
     ),
-    'es-419': Language(
-      'es-419',
-      'spaniolă (America Latină)',
-    ),
     'es-ES': Language(
       'es-ES',
       'spaniolă (Europa)',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'spaniolă (Mexic)',
     ),
     'et': Language(
       'et',
@@ -676,14 +660,6 @@ class LanguagesRo extends Languages {
     'fr': Language(
       'fr',
       'franceză',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'franceză (Canada)',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'franceză (Elveția)',
     ),
     'frc': Language(
       'frc',
@@ -832,11 +808,6 @@ class LanguagesRo extends Languages {
     'hi': Language(
       'hi',
       'hindi',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'hindi (latină)',
-      variant: 'hinglish',
     ),
     'hil': Language(
       'hil',
@@ -1162,6 +1133,10 @@ class LanguagesRo extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kârgâză',
@@ -1214,6 +1189,10 @@ class LanguagesRo extends Languages {
       'lkt',
       'lakota',
     ),
+    'lmo': Language(
+      'lmo',
+      'lombardă',
+    ),
     'ln': Language(
       'ln',
       'lingala',
@@ -1261,10 +1240,6 @@ class LanguagesRo extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -1691,10 +1666,6 @@ class LanguagesRo extends Languages {
       'pt',
       'portugheză',
     ),
-    'pt-BR': Language(
-      'pt-BR',
-      'portugheză (Brazilia)',
-    ),
     'pt-PT': Language(
       'pt-PT',
       'portugheză (Europa)',
@@ -1734,10 +1705,6 @@ class LanguagesRo extends Languages {
     'ro': Language(
       'ro',
       'română',
-    ),
-    'ro-MD': Language(
-      'ro-MD',
-      'română (Republica Moldova)',
     ),
     'rof': Language(
       'rof',
@@ -1991,6 +1958,10 @@ class LanguagesRo extends Languages {
       'syr',
       'siriacă',
     ),
+    'szl': Language(
+      'szl',
+      'sileziană',
+    ),
     'ta': Language(
       'ta',
       'tamilă',
@@ -2175,10 +2146,6 @@ class LanguagesRo extends Languages {
       'uz',
       'uzbecă',
     ),
-    'vai': Language(
-      'vai',
-      'vai',
-    ),
     've': Language(
       've',
       'venda',
@@ -2190,6 +2157,10 @@ class LanguagesRo extends Languages {
     'vi': Language(
       'vi',
       'vietnameză',
+    ),
+    'vmw': Language(
+      'vmw',
+      'makhuwa',
     ),
     'vo': Language(
       'vo',
@@ -2242,6 +2213,10 @@ class LanguagesRo extends Languages {
     'xh': Language(
       'xh',
       'xhosa',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -2332,6 +2307,993 @@ class LanguagesRo extends Languages {
   }, (key) => key.toLowerCase());
 }
 
+class ScriptsRo extends Scripts {
+  ScriptsRo._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'adlam',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'albaneză caucaziană',
+    ),
+    'Ahom': Script(
+      'Ahom',
+      'ahom',
+    ),
+    'Arab': Script(
+      'Arab',
+      'arabă',
+      variant: 'persano-arabă',
+    ),
+    'Aran': Script(
+      'Aran',
+      'nastaaliq',
+    ),
+    'Armi': Script(
+      'Armi',
+      'aramaică imperială',
+    ),
+    'Armn': Script(
+      'Armn',
+      'armeană',
+    ),
+    'Avst': Script(
+      'Avst',
+      'avestică',
+    ),
+    'Bali': Script(
+      'Bali',
+      'balineză',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'bamum',
+    ),
+    'Bass': Script(
+      'Bass',
+      'bassa vah',
+    ),
+    'Batk': Script(
+      'Batk',
+      'batak',
+    ),
+    'Beng': Script(
+      'Beng',
+      'bengaleză',
+    ),
+    'Bhks': Script(
+      'Bhks',
+      'bhaiksuki',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'brahmanică',
+    ),
+    'Brai': Script(
+      'Brai',
+      'braille',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'bugineză',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'buhidă',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'chakma',
+    ),
+    'Cans': Script(
+      'Cans',
+      'silabică aborigenă canadiană unificată',
+    ),
+    'Cari': Script(
+      'Cari',
+      'cariană',
+    ),
+    'Cham': Script(
+      'Cham',
+      'cham',
+    ),
+    'Cher': Script(
+      'Cher',
+      'cherokee',
+    ),
+    'Chrs': Script(
+      'Chrs',
+      'khorezmiană',
+    ),
+    'Copt': Script(
+      'Copt',
+      'coptă',
+    ),
+    'Cpmn': Script(
+      'Cpmn',
+      'cipro-minoană',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'cipriotă',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'chirilică',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'chirilică slavonă bisericească veche',
+    ),
+    'Deva': Script(
+      'Deva',
+      'devanagari',
+    ),
+    'Diak': Script(
+      'Diak',
+      'dives akuru',
+    ),
+    'Dogr': Script(
+      'Dogr',
+      'dogra',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'mormonă',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'stenografie duployană',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'demotică egipteană',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'hieratică egipteană',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'hieroglife egiptene',
+    ),
+    'Elba': Script(
+      'Elba',
+      'elbasan',
+    ),
+    'Elym': Script(
+      'Elym',
+      'elimaică',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'etiopiană',
+    ),
+    'Geok': Script(
+      'Geok',
+      'georgiană bisericească',
+    ),
+    'Geor': Script(
+      'Geor',
+      'georgiană',
+    ),
+    'Glag': Script(
+      'Glag',
+      'glagolitică',
+    ),
+    'Gong': Script(
+      'Gong',
+      'gunjala gondi',
+    ),
+    'Gonm': Script(
+      'Gonm',
+      'masaram gondi',
+    ),
+    'Goth': Script(
+      'Goth',
+      'gotică',
+    ),
+    'Gran': Script(
+      'Gran',
+      'grantha',
+    ),
+    'Grek': Script(
+      'Grek',
+      'greacă',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'gujarati',
+    ),
+    'Guru': Script(
+      'Guru',
+      'gurmukhi',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'hanb',
+    ),
+    'Hang': Script(
+      'Hang',
+      'hangul',
+    ),
+    'Hani': Script(
+      'Hani',
+      'han',
+    ),
+    'Hano': Script(
+      'Hano',
+      'hanunoo',
+    ),
+    'Hans': Script(
+      'Hans',
+      'simplificată',
+      standAlone: 'han simplificată',
+    ),
+    'Hant': Script(
+      'Hant',
+      'tradițională',
+      standAlone: 'han tradițională',
+    ),
+    'Hatr': Script(
+      'Hatr',
+      'hatrană',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'ebraică',
+    ),
+    'Hira': Script(
+      'Hira',
+      'hiragana',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'hieroglife anatoliene',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'pahawh hmong',
+    ),
+    'Hmnp': Script(
+      'Hmnp',
+      'nyiakeng puachue hmong',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'silabică japoneză',
+    ),
+    'Hung': Script(
+      'Hung',
+      'maghiară veche',
+    ),
+    'Inds': Script(
+      'Inds',
+      'indus',
+    ),
+    'Ital': Script(
+      'Ital',
+      'italică veche',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'javaneză',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'japoneză',
+    ),
+    'Kali': Script(
+      'Kali',
+      'kayah li',
+    ),
+    'Kana': Script(
+      'Kana',
+      'katakana',
+    ),
+    'Kawi': Script(
+      'Kawi',
+      'kawi',
+    ),
+    'Khar': Script(
+      'Khar',
+      'kharosthi',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'khmeră',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'khojki',
+    ),
+    'Kits': Script(
+      'Kits',
+      'litere mici khitane',
+    ),
+    'Knda': Script(
+      'Knda',
+      'kannada',
+    ),
+    'Kore': Script(
+      'Kore',
+      'coreeană',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'kaithi',
+    ),
+    'Lana': Script(
+      'Lana',
+      'lanna',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'laoțiană',
+    ),
+    'Latf': Script(
+      'Latf',
+      'latină Fraktur',
+    ),
+    'Latg': Script(
+      'Latg',
+      'latină gaelică',
+    ),
+    'Latn': Script(
+      'Latn',
+      'latină',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'lepcha',
+    ),
+    'Limb': Script(
+      'Limb',
+      'limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'lineară A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'lineară B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'fraser',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'liciană',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'lidiană',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      'mahajani',
+    ),
+    'Maka': Script(
+      'Maka',
+      'makasar',
+    ),
+    'Mand': Script(
+      'Mand',
+      'mandeană',
+    ),
+    'Mani': Script(
+      'Mani',
+      'maniheeană',
+    ),
+    'Marc': Script(
+      'Marc',
+      'marchen',
+    ),
+    'Maya': Script(
+      'Maya',
+      'hieroglife maya',
+    ),
+    'Medf': Script(
+      'Medf',
+      'medefaidrin',
+    ),
+    'Mend': Script(
+      'Mend',
+      'mende',
+    ),
+    'Merc': Script(
+      'Merc',
+      'meroitică cursivă',
+    ),
+    'Mero': Script(
+      'Mero',
+      'meroitică',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'malayalam',
+    ),
+    'Modi': Script(
+      'Modi',
+      'modi',
+    ),
+    'Mong': Script(
+      'Mong',
+      'mongolă',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'mro',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'meitei mayek',
+    ),
+    'Mult': Script(
+      'Mult',
+      'multani',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'birmană',
+    ),
+    'Nagm': Script(
+      'Nagm',
+      'nag mundari',
+    ),
+    'Nand': Script(
+      'Nand',
+      'nandinagari',
+    ),
+    'Narb': Script(
+      'Narb',
+      'arabă veche din nord',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'nabateeană',
+    ),
+    'Newa': Script(
+      'Newa',
+      'newa',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'n’ko',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'nüshu',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'ogham',
+    ),
+    'Olck': Script(
+      'Olck',
+      'ol chiki',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'orhon',
+    ),
+    'Orya': Script(
+      'Orya',
+      'oriya',
+    ),
+    'Osge': Script(
+      'Osge',
+      'osage',
+    ),
+    'Osma': Script(
+      'Osma',
+      'osmanya',
+    ),
+    'Ougr': Script(
+      'Ougr',
+      'uigură veche',
+    ),
+    'Palm': Script(
+      'Palm',
+      'palmirenă',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'pau cin hau',
+    ),
+    'Perm': Script(
+      'Perm',
+      'permică veche',
+    ),
+    'Phag': Script(
+      'Phag',
+      'phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'pahlavi pentru inscripții',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'pahlavi pentru psaltire',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'feniciană',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'pollardă fonetică',
+    ),
+    'Prti': Script(
+      'Prti',
+      'partă pentru inscripții',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'rejang',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'hanifi',
+    ),
+    'Runr': Script(
+      'Runr',
+      'runică',
+    ),
+    'Samr': Script(
+      'Samr',
+      'samariteană',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      'arabă veche din sud',
+    ),
+    'Saur': Script(
+      'Saur',
+      'saurashtra',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'scrierea simbolică',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'savă',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'sharadă',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      'siddham',
+    ),
+    'Sind': Script(
+      'Sind',
+      'khudawadi',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'singaleză',
+    ),
+    'Sogd': Script(
+      'Sogd',
+      'sogdiană',
+    ),
+    'Sogo': Script(
+      'Sogo',
+      'sogdiană veche',
+    ),
+    'Sora': Script(
+      'Sora',
+      'sora sompeng',
+    ),
+    'Soyo': Script(
+      'Soyo',
+      'soyombo',
+    ),
+    'Sund': Script(
+      'Sund',
+      'sundaneză',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'syloti nagri',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'siriacă',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'siriacă occidentală',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'siriacă orientală',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'tagbanwa',
+    ),
+    'Takr': Script(
+      'Takr',
+      'takri',
+    ),
+    'Tale': Script(
+      'Tale',
+      'tai le',
+    ),
+    'Talu': Script(
+      'Talu',
+      'tai le nouă',
+    ),
+    'Taml': Script(
+      'Taml',
+      'tamilă',
+    ),
+    'Tang': Script(
+      'Tang',
+      'tangut',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'tai viet',
+    ),
+    'Telu': Script(
+      'Telu',
+      'telugu',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'tifinagh',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'tagalog',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'thaana',
+    ),
+    'Thai': Script(
+      'Thai',
+      'thailandeză',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'tibetană',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'tirhuta',
+    ),
+    'Tnsa': Script(
+      'Tnsa',
+      'tangsa',
+    ),
+    'Toto': Script(
+      'Toto',
+      'toto',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'ugaritică',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'vai',
+    ),
+    'Vith': Script(
+      'Vith',
+      'vithkuqi',
+    ),
+    'Wara': Script(
+      'Wara',
+      'varang kshiti',
+    ),
+    'Wcho': Script(
+      'Wcho',
+      'wancho',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'persană veche',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'cuneiformă sumero-akkadiană',
+    ),
+    'Yezi': Script(
+      'Yezi',
+      'yazidită',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'yi',
+    ),
+    'Zanb': Script(
+      'Zanb',
+      'Piața Zanabazar',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'moștenită',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'notație matematică',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'emoji',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'simboluri',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'nescrisă',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'comună',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'scriere necunoscută',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsRo extends Variants {
+  VariantsRo._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'ortografie germană tradițională',
+    ),
+    '1994': Variant(
+      '1994',
+      'ortografie resiană standardizată',
+    ),
+    '1996': Variant(
+      '1996',
+      'ortografie germană de la 1996',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      'franceză medievală târzie până la 1606',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      'franceză modernă veche',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      'belarusă academică',
+    ),
+    'ABL1943': Variant(
+      'ABL1943',
+      'formularea ortografică de la 1943',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      'ALA-LC, ediția din 1997',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'dialect aluku',
+    ),
+    'AO1990': Variant(
+      'AO1990',
+      'Acordul de ortografie a limbii portugheze de la 1990',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'armeană orientală',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'armeană occidentală',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      'alfabet latin altaic unificat',
+    ),
+    'BALANKA': Variant(
+      'BALANKA',
+      'dialectul balanka al limbii anii',
+    ),
+    'BARLA': Variant(
+      'BARLA',
+      'grupul de dialecte barlavento al limbii kabuverdianu',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'dialect San Giorgio/Bila',
+    ),
+    'BOHORIC': Variant(
+      'BOHORIC',
+      'alfabet Bohorič',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'boontling',
+    ),
+    'COLB1945': Variant(
+      'COLB1945',
+      'Convenția ortografică a limbii portugheze braziliene de la 1945',
+    ),
+    'DAJNKO': Variant(
+      'DAJNKO',
+      'alfabet dajnko',
+    ),
+    'EKAVSK': Variant(
+      'EKAVSK',
+      'sârbă cu pronunție ekaviană',
+    ),
+    'EMODENG': Variant(
+      'EMODENG',
+      'limba engleză modernă timpurie',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'alfabet fonetic internațional',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'alfabet fonetic uralic',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      'hepburn',
+    ),
+    'IJEKAVSK': Variant(
+      'IJEKAVSK',
+      'sârbă cu pronunție ijekaviană',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'ortografie comuna cornish',
+    ),
+    'KSCOR': Variant(
+      'KSCOR',
+      'ortografie standard',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'dialect lipovaz din resiană',
+    ),
+    'METELKO': Variant(
+      'METELKO',
+      'alfabet metelko',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'monotonică',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'dialect ndyuka',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'dialect Natisone',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'dialect Gniva/Njiva',
+    ),
+    'NULIK': Variant(
+      'NULIK',
+      'volapük modernă',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'dialect Oseacco/Osojane',
+    ),
+    'OXENDICT': Variant(
+      'OXENDICT',
+      'ortografia dicționarului Oxford de limbă engleză',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'dialect pamaka',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'pinyin',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'politonică',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'informatică',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'ortografie revizuită',
+    ),
+    'RIGIK': Variant(
+      'RIGIK',
+      'volapük clasică',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'dialect resian',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'dialect saho',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'engleză standard scoțiană',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'dialect scouse',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'dialect Stolvizza/Solbica',
+    ),
+    'SOTAV': Variant(
+      'SOTAV',
+      'grupul de dialecte sotavento al limbii kabuverdianu',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'ortografie taraskievica',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'ortografie unificată cornish',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      'ortografie revizuită unificată cornish',
+    ),
+    'UNIFON': Variant(
+      'UNIFON',
+      'alfabet fonetic unifon',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'valenciană',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Wade-Giles',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
 class UnitsRo implements Units {
   UnitsRo._();
 
@@ -2396,6 +3358,18 @@ class UnitsRo implements Units {
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('quecto{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
+      );
+  @override
   UnitPrefix get pattern10p1 => UnitPrefix(
         long: UnitPrefixPattern('deca{0}'),
         short: UnitPrefixPattern('da{0}'),
@@ -2454,6 +3428,18 @@ class UnitsRo implements Units {
         long: UnitPrefixPattern('yotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('quetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
@@ -2527,15 +3513,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'forță g',
-          one: '{0} G',
-          few: '{0} G',
+          one: '{0} forță g',
+          few: '{0} forță g',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
           _locale,
           'forță g',
-          one: '{0} G',
-          few: '{0} G',
+          one: '{0} forță g',
+          few: '{0} forță g',
           other: '{0} G',
         ),
       );
@@ -2552,15 +3538,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
-          few: '{0} m/s²',
+          one: '{0} metru pe secundă la pătrat',
+          few: '{0} metri pe secundă la pătrat',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
-          few: '{0} m/s²',
+          one: '{0} metru pe secundă la pătrat',
+          few: '{0} metri pe secundă la pătrat',
           other: '{0} m/s²',
         ),
       );
@@ -2602,15 +3588,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
-          few: '{0} rad',
+          one: '{0} radian',
+          few: '{0} radiani',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
           _locale,
           'rad',
-          one: '{0} rad',
-          few: '{0} rad',
+          one: '{0} radian',
+          few: '{0} radiani',
           other: '{0} rad',
         ),
       );
@@ -2627,15 +3613,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'grade',
-          one: '{0}°',
-          few: '{0}°',
+          one: '{0} grad',
+          few: '{0} grade',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           'grad',
-          one: '{0}°',
-          few: '{0}°',
+          one: '{0} grad',
+          few: '{0} grade',
           other: '{0}°',
         ),
       );
@@ -2702,15 +3688,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
-          few: '{0} km²',
+          one: '{0} kilometru pătrat',
+          few: '{0} kilometri pătrați',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
-          few: '{0} km²',
+          one: '{0} kilometru pătrat',
+          few: '{0} kilometri pătrați',
           other: '{0} km²',
         ),
       );
@@ -2727,15 +3713,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ha',
-          one: '{0} ha',
-          few: '{0} ha',
+          one: '{0} hectar',
+          few: '{0} hectare',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hectar',
-          one: '{0} ha',
-          few: '{0} ha',
+          one: '{0} hectar',
+          few: '{0} hectare',
           other: '{0} ha',
         ),
       );
@@ -2752,15 +3738,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
-          few: '{0} m²',
+          one: '{0} metru pătrat',
+          few: '{0} metri pătrați',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
-          few: '{0} m²',
+          one: '{0} metru pătrat',
+          few: '{0} metri pătrați',
           other: '{0} m²',
         ),
       );
@@ -2777,15 +3763,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
-          few: '{0} cm²',
+          one: '{0} centimetru pătrat',
+          few: '{0} centimetri pătrați',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
-          few: '{0} cm²',
+          one: '{0} centimetru pătrat',
+          few: '{0} centimetri pătrați',
           other: '{0} cm²',
         ),
       );
@@ -2802,15 +3788,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
-          few: '{0} mi²',
+          one: '{0} milă pătrată',
+          few: '{0} mile pătrate',
           other: '{0} mi²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi²',
-          one: '{0} mi²',
-          few: '{0} mi²',
+          one: '{0} milă pătrată',
+          few: '{0} mile pătrate',
           other: '{0} mi²',
         ),
       );
@@ -2852,15 +3838,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
-          few: '{0} yd²',
+          one: '{0} iard pătrat',
+          few: '{0} iarzi pătrați',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd²',
-          one: '{0} yd²',
-          few: '{0} yd²',
+          one: '{0} iard pătrat',
+          few: '{0} iarzi pătrați',
           other: '{0} yd²',
         ),
       );
@@ -2877,15 +3863,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
-          few: '{0} ft²',
+          one: '{0} picior pătrat',
+          few: '{0} picioare pătrate',
           other: '{0} ft²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft²',
-          one: '{0} ft²',
-          few: '{0} ft²',
+          one: '{0} picior pătrat',
+          few: '{0} picioare pătrate',
           other: '{0} ft²',
         ),
       );
@@ -2902,15 +3888,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
-          few: '{0} in²',
+          one: '{0} inch pătrat',
+          few: '{0} inchi pătrați',
           other: '{0} in²',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in²',
-          one: '{0} in²',
-          few: '{0} in²',
+          one: '{0} inch pătrat',
+          few: '{0} inchi pătrați',
           other: '{0} in²',
         ),
       );
@@ -2952,15 +3938,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kt',
-          one: '{0} kt',
-          few: '{0} kt',
+          one: '{0} carat',
+          few: '{0} carate',
           other: '{0} kt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'carat',
-          one: '{0} kt',
-          few: '{0} kt',
+          one: '{0} carat',
+          few: '{0} carate',
           other: '{0} kt',
         ),
       );
@@ -3052,15 +4038,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
+          one: '{0} parte pe milion',
+          few: '{0} părți pe milion',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppm',
-          one: '{0} ppm',
-          few: '{0} ppm',
+          one: '{0} parte pe milion',
+          few: '{0} părți pe milion',
           other: '{0} ppm',
         ),
       );
@@ -3077,15 +4063,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           '%',
-          one: '{0}%',
-          few: '{0}%',
+          one: '{0} procent',
+          few: '{0} procente',
           other: '{0}%',
         ),
         narrow: UnitCountPattern(
           _locale,
           '%',
-          one: '{0}%',
-          few: '{0}%',
+          one: '{0} procent',
+          few: '{0} procente',
           other: '{0}%',
         ),
       );
@@ -3102,8 +4088,8 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           '‰',
-          one: '{0}‰',
-          few: '{0}‰',
+          one: '{0} promilă',
+          few: '{0} promile',
           other: '{0}‰',
         ),
         narrow: UnitCountPattern(
@@ -3127,6 +4113,8 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           '‱',
+          one: '{0} la zece mii',
+          few: '{0} la zece mii',
           other: '{0}‱',
         ),
         narrow: UnitCountPattern(
@@ -3275,15 +4263,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
-          few: '{0} PB',
+          one: '{0} petabyte',
+          few: '{0} petabyți',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
-          few: '{0} PB',
+          one: '{0} petabyte',
+          few: '{0} petabyți',
           other: '{0} PB',
         ),
       );
@@ -3300,15 +4288,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
-          few: '{0} TB',
+          one: '{0} terabyte',
+          few: '{0} terabyți',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
-          few: '{0} TB',
+          one: '{0} terabyte',
+          few: '{0} terabyți',
           other: '{0} TB',
         ),
       );
@@ -3325,15 +4313,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
-          few: '{0} Tb',
+          one: '{0} terabit',
+          few: '{0} terabiți',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
-          few: '{0} Tb',
+          one: '{0} terabit',
+          few: '{0} terabiți',
           other: '{0} Tb',
         ),
       );
@@ -3350,15 +4338,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
-          few: '{0} GB',
+          one: '{0} gigabyte',
+          few: '{0} gigabyți',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
-          few: '{0} GB',
+          one: '{0} gigabyte',
+          few: '{0} gigabyți',
           other: '{0} GB',
         ),
       );
@@ -3375,15 +4363,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
-          few: '{0} Gb',
+          one: '{0} gigabit',
+          few: '{0} gigabiți',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
-          few: '{0} Gb',
+          one: '{0} gigabit',
+          few: '{0} gigabiți',
           other: '{0} Gb',
         ),
       );
@@ -3400,15 +4388,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
-          few: '{0} MB',
+          one: '{0} megabyte',
+          few: '{0} megabyți',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
-          few: '{0} MB',
+          one: '{0} megabyte',
+          few: '{0} megabyți',
           other: '{0} MB',
         ),
       );
@@ -3425,15 +4413,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
-          few: '{0} Mb',
+          one: '{0} megabit',
+          few: '{0} megabiți',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
-          few: '{0} Mb',
+          one: '{0} megabit',
+          few: '{0} megabiți',
           other: '{0} Mb',
         ),
       );
@@ -3450,15 +4438,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
-          few: '{0} kB',
+          one: '{0} kilobyte',
+          few: '{0} kilobyți',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
-          few: '{0} kB',
+          one: '{0} kilobyte',
+          few: '{0} kilobyți',
           other: '{0} kB',
         ),
       );
@@ -3475,15 +4463,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
-          few: '{0} kb',
+          one: '{0} kilobit',
+          few: '{0} kilobiți',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
-          few: '{0} kb',
+          one: '{0} kilobit',
+          few: '{0} kilobiți',
           other: '{0} kb',
         ),
       );
@@ -3775,15 +4763,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           's',
-          one: '{0} s',
-          few: '{0} s',
+          one: '{0} secundă',
+          few: '{0} secunde',
           other: '{0} s',
         ),
         narrow: UnitCountPattern(
           _locale,
           's',
-          one: '{0} s',
-          few: '{0} s',
+          one: '{0} secundă',
+          few: '{0} secunde',
           other: '{0} s',
         ),
       );
@@ -3800,15 +4788,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
-          few: '{0} ms',
+          one: '{0} milisecundă',
+          few: '{0} milisecunde',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
-          few: '{0} ms',
+          one: '{0} milisecundă',
+          few: '{0} milisecunde',
           other: '{0} ms',
         ),
       );
@@ -3825,15 +4813,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
-          few: '{0} μs',
+          one: '{0} microsecundă',
+          few: '{0} microsecunde',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
-          few: '{0} μs',
+          one: '{0} microsecundă',
+          few: '{0} microsecunde',
           other: '{0} μs',
         ),
       );
@@ -3850,15 +4838,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
-          few: '{0} ns',
+          one: '{0} nanosecundă',
+          few: '{0} nanosecunde',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
-          few: '{0} ns',
+          one: '{0} nanosecundă',
+          few: '{0} nanosecunde',
           other: '{0} ns',
         ),
       );
@@ -3875,15 +4863,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
-          few: '{0} A',
+          one: '{0} amper',
+          few: '{0} amperi',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
-          few: '{0} A',
+          one: '{0} amper',
+          few: '{0} amperi',
           other: '{0} A',
         ),
       );
@@ -3900,15 +4888,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
-          few: '{0} mA',
+          one: '{0} miliamper',
+          few: '{0} miliamperi',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
-          few: '{0} mA',
+          one: '{0} miliamper',
+          few: '{0} miliamperi',
           other: '{0} mA',
         ),
       );
@@ -3925,15 +4913,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
-          few: '{0} Ω',
+          one: '{0} ohm',
+          few: '{0} ohmi',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Ω',
-          one: '{0} Ω',
-          few: '{0} Ω',
+          one: '{0} ohm',
+          few: '{0} ohmi',
           other: '{0} Ω',
         ),
       );
@@ -3950,15 +4938,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
-          few: '{0} V',
+          one: '{0} volt',
+          few: '{0} volți',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
           _locale,
           'V',
-          one: '{0} V',
-          few: '{0} V',
+          one: '{0} volt',
+          few: '{0} volți',
           other: '{0} V',
         ),
       );
@@ -3975,15 +4963,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
+          one: '{0} kilocalorie',
+          few: '{0} kilocalorii',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
+          one: '{0} kilocalorie',
+          few: '{0} kilocalorii',
           other: '{0} kcal',
         ),
       );
@@ -4000,15 +4988,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
-          few: '{0} cal',
+          one: '{0} calorie',
+          few: '{0} calorii',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
-          few: '{0} cal',
+          one: '{0} calorie',
+          few: '{0} calorii',
           other: '{0} cal',
         ),
       );
@@ -4024,17 +5012,17 @@ class UnitsRo implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          other: '{0} kcal',
+          'kilocalorii',
+          one: '{0} kilocalorie',
+          few: '{0} kilocalorii',
+          other: '{0} de kilocalorii',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          few: '{0} kcal',
-          other: '{0} kcal',
+          'kilocalorii',
+          one: '{0} kilocalorie',
+          few: '{0} kilocalorii',
+          other: '{0} de kilocalorii',
         ),
       );
 
@@ -4050,15 +5038,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
-          few: '{0} kJ',
+          one: '{0} kilojoule',
+          few: '{0} kilojouli',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
-          few: '{0} kJ',
+          one: '{0} kilojoule',
+          few: '{0} kilojouli',
           other: '{0} kJ',
         ),
       );
@@ -4075,15 +5063,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
-          few: '{0} J',
+          one: '{0} joule',
+          few: '{0} jouli',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
-          few: '{0} J',
+          one: '{0} joule',
+          few: '{0} jouli',
           other: '{0} J',
         ),
       );
@@ -4100,15 +5088,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
-          few: '{0} kWh',
+          one: 'kilowatt-oră',
+          few: '{0} kilowați-oră',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
-          few: '{0} kWh',
+          one: 'kilowatt-oră',
+          few: '{0} kilowați-oră',
           other: '{0} kWh',
         ),
       );
@@ -4125,15 +5113,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
-          few: '{0} eV',
+          one: '{0} electronvolt',
+          few: '{0} electronvolți',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
           _locale,
           'eV',
-          one: '{0} eV',
-          few: '{0} eV',
+          one: '{0} electronvolt',
+          few: '{0} electronvolți',
           other: '{0} eV',
         ),
       );
@@ -4200,11 +5188,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'livră-forță',
+          one: '{0} livră-forță',
+          few: '{0} livre-forță',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf',
+          one: '{0} livră-forță',
+          few: '{0} livre-forță',
           other: '{0} lbf',
         ),
       );
@@ -4221,15 +5213,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'N',
-          one: '{0} N',
-          few: '{0} N',
+          one: '{0} newton',
+          few: '{0} newtoni',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N',
-          one: '{0} N',
-          few: '{0} N',
+          one: '{0} newton',
+          few: '{0} newtoni',
           other: '{0} N',
         ),
       );
@@ -4271,15 +5263,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
-          few: '{0} GHz',
+          one: '{0} gigahertz',
+          few: '{0} gigahertzi',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
-          few: '{0} GHz',
+          one: '{0} gigahertz',
+          few: '{0} gigahertzi',
           other: '{0} GHz',
         ),
       );
@@ -4296,15 +5288,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
-          few: '{0} MHz',
+          one: '{0} megahertz',
+          few: '{0} megahertzi',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
-          few: '{0} MHz',
+          one: '{0} megahertz',
+          few: '{0} megahertzi',
           other: '{0} MHz',
         ),
       );
@@ -4321,15 +5313,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
-          few: '{0} kHz',
+          one: '{0} kilohertz',
+          few: '{0} kilohertzi',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kHz',
-          one: '{0} kHz',
-          few: '{0} kHz',
+          one: '{0} kilohertz',
+          few: '{0} kilohertzi',
           other: '{0} kHz',
         ),
       );
@@ -4346,15 +5338,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
-          few: '{0} Hz',
+          one: '{0} hertz',
+          few: '{0} hertzi',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
-          few: '{0} Hz',
+          one: '{0} hertz',
+          few: '{0} hertzi',
           other: '{0} Hz',
         ),
       );
@@ -4364,16 +5356,22 @@ class UnitsRo implements Units {
         long: UnitCountPattern(
           _locale,
           'em tipografic',
-          other: '{0} em',
+          one: '{0} em',
+          few: '{0} em',
+          other: '{0} de em',
         ),
         short: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
+          few: '{0} em',
           other: '{0} em',
         ),
         narrow: UnitCountPattern(
           _locale,
           'em',
+          one: '{0} em',
+          few: '{0} em',
           other: '{0} em',
         ),
       );
@@ -4390,11 +5388,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'pixeli',
+          one: '{0} pixel',
+          few: '{0} pixeli',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} pixel',
+          few: '{0} pixeli',
           other: '{0} px',
         ),
       );
@@ -4410,12 +5412,16 @@ class UnitsRo implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'MP',
+          'megapixeli',
+          one: '{0} megapixel',
+          few: '{0} megapixeli',
           other: '{0} MP',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MP',
+          one: '{0} megapixel',
+          few: '{0} megapixeli',
           other: '{0} MP',
         ),
       );
@@ -4457,11 +5463,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} pixel pe inch',
+          few: '{0} pixeli pe inch',
           other: '{0} ppi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ppi',
+          one: '{0} pixel pe inch',
+          few: '{0} pixeli pe inch',
           other: '{0} ppi',
         ),
       );
@@ -4520,7 +5530,7 @@ class UnitsRo implements Units {
   Unit get graphicsDot => Unit(
         long: UnitCountPattern(
           _locale,
-          'punct',
+          'puncte tipografice',
           one: '{0} punct',
           few: '{0} puncte',
           other: '{0} de puncte',
@@ -4530,14 +5540,14 @@ class UnitsRo implements Units {
           'pct.',
           one: '{0} pct',
           few: '{0} pct.',
-          other: '{0} de pct.',
+          other: '{0} pct.',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pct.',
           one: '{0} pct',
           few: '{0} pct.',
-          other: '{0} de pct.',
+          other: '{0} pct.',
         ),
       );
 
@@ -4553,11 +5563,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} rază terestră',
+          few: '{0} raze terestre',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} rază terestră',
+          few: '{0} raze terestre',
           other: '{0} R⊕',
         ),
       );
@@ -4574,15 +5588,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
-          few: '{0} km',
+          one: '{0} kilometru',
+          few: '{0} kilometri',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
-          few: '{0} km',
+          one: '{0} kilometru',
+          few: '{0} kilometri',
           other: '{0} km',
         ),
       );
@@ -4599,15 +5613,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'metri',
-          one: '{0} m',
-          few: '{0} m',
+          one: '{0} metru',
+          few: '{0} metri',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
-          few: '{0} m',
+          one: '{0} metru',
+          few: '{0} metri',
           other: '{0} m',
         ),
       );
@@ -4624,15 +5638,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
-          few: '{0} dm',
+          one: '{0} decimetru',
+          few: '{0} decimetri',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
-          few: '{0} dm',
+          one: '{0} decimetru',
+          few: '{0} decimetri',
           other: '{0} dm',
         ),
       );
@@ -4649,15 +5663,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
-          few: '{0} cm',
+          one: '{0} centimetru',
+          few: '{0} centimetri',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
-          few: '{0} cm',
+          one: '{0} centimetru',
+          few: '{0} centimetri',
           other: '{0} cm',
         ),
       );
@@ -4674,15 +5688,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
-          few: '{0} mm',
+          one: '{0} milimetru',
+          few: '{0} milimetri',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
-          few: '{0} mm',
+          one: '{0} milimetru',
+          few: '{0} milimetri',
           other: '{0} mm',
         ),
       );
@@ -4699,15 +5713,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
-          few: '{0} μm',
+          one: '{0} micrometru',
+          few: '{0} micrometri',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
-          few: '{0} μm',
+          one: '{0} micrometru',
+          few: '{0} micrometri',
           other: '{0} μm',
         ),
       );
@@ -4724,15 +5738,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
-          few: '{0} nm',
+          one: '{0} nanometru',
+          few: '{0} nanometri',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
-          few: '{0} nm',
+          one: '{0} nanometru',
+          few: '{0} nanometri',
           other: '{0} nm',
         ),
       );
@@ -4749,15 +5763,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
-          few: '{0} pm',
+          one: '{0} picometru',
+          few: '{0} picometri',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
-          few: '{0} pm',
+          one: '{0} picometru',
+          few: '{0} picometri',
           other: '{0} pm',
         ),
       );
@@ -4774,15 +5788,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mi',
-          one: '{0} mi',
-          few: '{0} mi',
+          one: '{0} milă',
+          few: '{0} mile',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi',
-          one: '{0} mi',
-          few: '{0} mi',
+          one: '{0} milă',
+          few: '{0} mile',
           other: '{0} mi',
         ),
       );
@@ -4799,15 +5813,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
-          few: '{0} yd',
+          one: '{0} iard',
+          few: '{0} iarzi',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd',
-          one: '{0} yd',
-          few: '{0} yd',
+          one: '{0} iard',
+          few: '{0} iarzi',
           other: '{0} yd',
         ),
       );
@@ -4824,15 +5838,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
-          few: '{0} ft',
+          one: '{0} picior',
+          few: '{0} picioare',
           other: '{0} ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft',
-          one: '{0} ft',
-          few: '{0} ft',
+          one: '{0} picior',
+          few: '{0} picioare',
           other: '{0} ft',
         ),
       );
@@ -4849,15 +5863,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'in',
-          one: '{0} in',
-          few: '{0} in',
+          one: '{0} inch',
+          few: '{0} inchi',
           other: '{0} in',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in',
-          one: '{0} in',
-          few: '{0} in',
+          one: '{0} inch',
+          few: '{0} inchi',
           other: '{0} in',
         ),
       );
@@ -4874,15 +5888,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'pc',
-          one: '{0} pc',
-          few: '{0} pc',
+          one: '{0} parsec',
+          few: '{0} parseci',
           other: '{0} pc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pc',
-          one: '{0} pc',
-          few: '{0} pc',
+          one: '{0} parsec',
+          few: '{0} parseci',
           other: '{0} pc',
         ),
       );
@@ -4949,11 +5963,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'furlongi',
+          one: '{0} furlong',
+          few: '{0} furlongi',
           other: '{0} fur',
         ),
         narrow: UnitCountPattern(
           _locale,
           'furlong',
+          one: '{0} furlong',
+          few: '{0} furlongi',
           other: '{0} fur',
         ),
       );
@@ -4970,11 +5988,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'fathomi',
+          one: '{0} fathom',
+          few: '{0} fathomi',
           other: '{0} fth',
         ),
         narrow: UnitCountPattern(
           _locale,
           'fathom',
+          one: '{0} fathom',
+          few: '{0} fathomi',
           other: '{0} fth',
         ),
       );
@@ -5016,15 +6038,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
-          few: '{0} smi',
+          one: '{0} milă scandinavă',
+          few: '{0} mile scandinave',
           other: '{0} smi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'smi',
-          one: '{0} smi',
-          few: '{0} smi',
+          one: '{0} milă scandinavă',
+          few: '{0} mile scandinave',
           other: '{0} smi',
         ),
       );
@@ -5041,15 +6063,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0} punct tipografic',
+          few: '{0} puncte tipografice',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pt',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0} punct tipografic',
+          few: '{0} puncte tipografice',
           other: '{0} pt',
         ),
       );
@@ -5066,11 +6088,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} rază solară',
+          few: '{0} raze solare',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} rază solară',
+          few: '{0} raze solare',
           other: '{0} R☉',
         ),
       );
@@ -5087,15 +6113,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
-          few: '{0} lx',
+          one: '{0} lux',
+          few: '{0} lucși',
           other: '{0} lx',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lx',
-          one: '{0} lx',
-          few: '{0} lx',
+          one: '{0} lux',
+          few: '{0} lucși',
           other: '{0} lx',
         ),
       );
@@ -5112,11 +6138,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} candelă',
+          few: '{0} candele',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} candelă',
+          few: '{0} candele',
           other: '{0} cd',
         ),
       );
@@ -5133,11 +6163,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lumen',
+          few: '{0} lumeni',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lm',
+          one: '{0} lumen',
+          few: '{0} lumeni',
           other: '{0} lm',
         ),
       );
@@ -5154,15 +6188,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'L☉',
-          one: '{0} L☉',
-          few: '{0} L☉',
+          one: '{0} luminozitate solară',
+          few: '{0} luminozități solare',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'L☉',
-          one: '{0} L☉',
-          few: '{0} L☉',
+          one: '{0} luminozitate solară',
+          few: '{0} luminozități solare',
           other: '{0} L☉',
         ),
       );
@@ -5171,23 +6205,23 @@ class UnitsRo implements Units {
   Unit get massTonne => Unit(
         long: UnitCountPattern(
           _locale,
-          'tone',
-          one: '{0} tonă',
-          few: '{0} tone',
-          other: '{0} de tone',
+          'tone metrice',
+          one: '{0} tonă metrică',
+          few: '{0} tone metrice',
+          other: '{0} de tone metrice',
         ),
         short: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
-          few: '{0} t',
+          one: '{0} tonă metrică',
+          few: '{0} tone metrice',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
-          few: '{0} t',
+          one: '{0} tonă metrică',
+          few: '{0} tone metrice',
           other: '{0} t',
         ),
       );
@@ -5204,15 +6238,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
-          few: '{0} kg',
+          one: '{0} kilogram',
+          few: '{0} kilograme',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
-          few: '{0} kg',
+          one: '{0} kilogram',
+          few: '{0} kilograme',
           other: '{0} kg',
         ),
       );
@@ -5229,15 +6263,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'grame',
-          one: '{0} g',
-          few: '{0} g',
+          one: '{0} gram',
+          few: '{0} grame',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
-          few: '{0} g',
+          one: '{0} gram',
+          few: '{0} grame',
           other: '{0} g',
         ),
       );
@@ -5254,15 +6288,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
-          few: '{0} mg',
+          one: '{0} miligram',
+          few: '{0} miligrame',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
-          few: '{0} mg',
+          one: '{0} miligram',
+          few: '{0} miligrame',
           other: '{0} mg',
         ),
       );
@@ -5279,15 +6313,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
-          few: '{0} μg',
+          one: '{0} microgram',
+          few: '{0} micrograme',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
-          few: '{0} μg',
+          one: '{0} microgram',
+          few: '{0} micrograme',
           other: '{0} μg',
         ),
       );
@@ -5329,13 +6363,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'st',
+          one: '{0} stone',
+          few: '{0} stone',
           other: '{0} st',
         ),
         narrow: UnitCountPattern(
           _locale,
           'st',
-          one: '{0} st',
-          few: '{0} st',
+          one: '{0} stone',
+          few: '{0} stone',
           other: '{0} st',
         ),
       );
@@ -5352,15 +6388,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
-          few: '{0} lb',
+          one: '{0} livră',
+          few: '{0} livre',
           other: '{0} lb',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lb',
-          one: '{0} lb',
-          few: '{0} lb',
+          one: '{0} livră',
+          few: '{0} livre',
           other: '{0} lb',
         ),
       );
@@ -5377,15 +6413,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
-          few: '{0} oz',
+          one: '{0} uncie',
+          few: '{0} uncii',
           other: '{0} oz',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz',
-          one: '{0} oz',
-          few: '{0} oz',
+          one: '{0} uncie',
+          few: '{0} uncii',
           other: '{0} oz',
         ),
       );
@@ -5402,15 +6438,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
-          few: '{0} oz t',
+          one: '{0} uncie monetară',
+          few: '{0} uncii monetare',
           other: '{0} oz t',
         ),
         narrow: UnitCountPattern(
           _locale,
           'oz t',
-          one: '{0} oz t',
-          few: '{0} oz t',
+          one: '{0} uncie monetară',
+          few: '{0} uncii monetare',
           other: '{0} oz t',
         ),
       );
@@ -5452,15 +6488,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
-          few: '{0} Da',
+          one: '{0} dalton',
+          few: '{0} daltoni',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Da',
-          one: '{0} Da',
-          few: '{0} Da',
+          one: '{0} dalton',
+          few: '{0} daltoni',
           other: '{0} Da',
         ),
       );
@@ -5477,15 +6513,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
-          few: '{0} M⊕',
+          one: '{0} masă terestră',
+          few: '{0} mase terestre',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M⊕',
-          one: '{0} M⊕',
-          few: '{0} M⊕',
+          one: '{0} masă terestră',
+          few: '{0} mase terestre',
           other: '{0} M⊕',
         ),
       );
@@ -5502,15 +6538,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} M☉',
-          few: '{0} M☉',
+          one: '{0} masă solară',
+          few: '{0} mase solare',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
           _locale,
           'M☉',
-          one: '{0} M☉',
-          few: '{0} M☉',
+          one: '{0} masă solară',
+          few: '{0} mase solare',
           other: '{0} M☉',
         ),
       );
@@ -5552,15 +6588,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
-          few: '{0} GW',
+          one: '{0} gigawatt',
+          few: '{0} gigawați',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
-          few: '{0} GW',
+          one: '{0} gigawatt',
+          few: '{0} gigawați',
           other: '{0} GW',
         ),
       );
@@ -5577,15 +6613,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
-          few: '{0} MW',
+          one: '{0} megawatt',
+          few: '{0} megawați',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
-          few: '{0} MW',
+          one: '{0} megawatt',
+          few: '{0} megawați',
           other: '{0} MW',
         ),
       );
@@ -5602,15 +6638,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
-          few: '{0} kW',
+          one: '{0} kilowatt',
+          few: '{0} kilowați',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
-          few: '{0} kW',
+          one: '{0} kilowatt',
+          few: '{0} kilowați',
           other: '{0} kW',
         ),
       );
@@ -5627,15 +6663,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
-          few: '{0} W',
+          one: '{0} watt',
+          few: '{0} wați',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
-          few: '{0} W',
+          one: '{0} watt',
+          few: '{0} wați',
           other: '{0} W',
         ),
       );
@@ -5652,15 +6688,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
-          few: '{0} mW',
+          one: '{0} miliwatt',
+          few: '{0} miliwați',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
-          few: '{0} mW',
+          one: '{0} miliwatt',
+          few: '{0} miliwați',
           other: '{0} mW',
         ),
       );
@@ -5702,15 +6738,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} mm Hg',
-          few: '{0} mm Hg',
+          one: '{0} milimetru coloană de mercur',
+          few: '{0} milimetri coloană de mercur',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} mm Hg',
-          few: '{0} mm Hg',
+          one: '{0} milimetru coloană de mercur',
+          few: '{0} milimetri coloană de mercur',
           other: '{0} mm Hg',
         ),
       );
@@ -5727,15 +6763,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
-          few: '{0} psi',
+          one: '{0} livră pe inch pătrat',
+          few: '{0} livre pe inch pătrat',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
-          few: '{0} psi',
+          one: '{0} livră pe inch pătrat',
+          few: '{0} livre pe inch pătrat',
           other: '{0} psi',
         ),
       );
@@ -5759,9 +6795,9 @@ class UnitsRo implements Units {
         narrow: UnitCountPattern(
           _locale,
           'in Hg',
-          one: '{0} in Hg',
-          few: '{0} in Hg',
-          other: '{0} in Hg',
+          one: '{0}″ Hg',
+          few: '{0}″ Hg',
+          other: '{0}″ Hg',
         ),
       );
 
@@ -5777,11 +6813,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
+          few: '{0} bari',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
+          few: '{0} bari',
           other: '{0} bar',
         ),
       );
@@ -5798,8 +6838,8 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
-          few: '{0} mbar',
+          one: '{0} milibar',
+          few: '{0} milibari',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
@@ -5823,15 +6863,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
-          few: '{0} atm',
+          one: '{0} atmosferă',
+          few: '{0} atmosfere',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
-          few: '{0} atm',
+          one: '{0} atmosferă',
+          few: '{0} atmosfere',
           other: '{0} atm',
         ),
       );
@@ -5848,11 +6888,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} pascal',
+          few: '{0} pascali',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} pascal',
+          few: '{0} pascali',
           other: '{0} Pa',
         ),
       );
@@ -5869,15 +6913,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
-          few: '{0} hPa',
+          one: '{0} hectopascal',
+          few: '{0} hectopascali',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
-          few: '{0} hPa',
+          one: '{0} hectopascal',
+          few: '{0} hectopascali',
           other: '{0} hPa',
         ),
       );
@@ -5894,15 +6938,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
-          few: '{0} kPa',
+          one: '{0} kilopascal',
+          few: '{0} kilopascali',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kPa',
-          one: '{0} kPa',
-          few: '{0} kPa',
+          one: '{0} kilopascal',
+          few: '{0} kilopascali',
           other: '{0} kPa',
         ),
       );
@@ -5919,15 +6963,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
-          few: '{0} MPa',
+          one: '{0} megapascal',
+          few: '{0} megapascali',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
           _locale,
           'MPa',
-          one: '{0} MPa',
-          few: '{0} MPa',
+          one: '{0} megapascal',
+          few: '{0} megapascali',
           other: '{0} MPa',
         ),
       );
@@ -5944,15 +6988,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
-          few: '{0} km/h',
+          one: '{0} kilometru pe oră',
+          few: '{0} kilometri pe oră',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
-          few: '{0} km/h',
+          one: '{0} kilometru pe oră',
+          few: '{0} kilometri pe oră',
           other: '{0} km/h',
         ),
       );
@@ -5969,15 +7013,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
-          few: '{0} m/s',
+          one: '{0} metru pe secundă',
+          few: '{0} metri pe secundă',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
-          few: '{0} m/s',
+          one: '{0} metru pe secundă',
+          few: '{0} metri pe secundă',
           other: '{0} m/s',
         ),
       );
@@ -5994,15 +7038,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
-          few: '{0} mi/h',
+          one: '{0} milă pe oră',
+          few: '{0} mile pe oră',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi/h',
-          one: '{0} mi/h',
-          few: '{0} mi/h',
+          one: '{0} milă pe oră',
+          few: '{0} mile pe oră',
           other: '{0} mi/h',
         ),
       );
@@ -6019,16 +7063,41 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
-          few: '{0} kn',
+          one: '{0} nod',
+          few: '{0} noduri',
           other: '{0} kn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'kn',
-          one: '{0} kn',
-          few: '{0} kn',
+          one: '{0} nod',
+          few: '{0} noduri',
           other: '{0} kn',
+        ),
+      );
+
+  @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          few: 'Beaufort {0}',
+          other: 'Beaufort {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          few: 'Beaufort {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          few: 'Beaufort {0}',
+          other: 'B {0}',
         ),
       );
 
@@ -6044,15 +7113,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
+          one: '{0} grad',
+          few: '{0} grade',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
-          few: '{0}°',
+          one: '{0} grad',
+          few: '{0} grade',
           other: '{0}°',
         ),
       );
@@ -6119,15 +7188,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
+          one: '{0} kelvin',
+          few: '{0} kelvini',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
-          few: '{0} K',
+          one: '{0} kelvin',
+          few: '{0} kelvini',
           other: '{0} K',
         ),
       );
@@ -6144,11 +7213,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'livră-forță picior',
+          one: '{0} livră-forță picior',
+          few: '{0} livră-forță picioare',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0} livră-forță picior',
+          few: '{0} livră-forță picioare',
           other: '{0} lbf⋅ft',
         ),
       );
@@ -6165,15 +7238,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
-          few: '{0} N⋅m',
+          one: '{0} newton metru',
+          few: '{0} newton metri',
           other: '{0} N⋅m',
         ),
         narrow: UnitCountPattern(
           _locale,
           'N⋅m',
-          one: '{0} N⋅m',
-          few: '{0} N⋅m',
+          one: '{0} newton metru',
+          few: '{0} newton metri',
           other: '{0} N⋅m',
         ),
       );
@@ -6190,15 +7263,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
-          few: '{0} km³',
+          one: '{0} kilometru cub',
+          few: '{0} kilometri cubi',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
-          few: '{0} km³',
+          one: '{0} kilometru cub',
+          few: '{0} kilometri cubi',
           other: '{0} km³',
         ),
       );
@@ -6215,15 +7288,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
-          few: '{0} m³',
+          one: '{0} metru cub',
+          few: '{0} metri cubi',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
-          few: '{0} m³',
+          one: '{0} metru cub',
+          few: '{0} metri cubi',
           other: '{0} m³',
         ),
       );
@@ -6240,15 +7313,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
-          few: '{0} cm³',
+          one: '{0} centimetru cub',
+          few: '{0} centimetri cubi',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
-          few: '{0} cm³',
+          one: '{0} centimetru cub',
+          few: '{0} centimetri cubi',
           other: '{0} cm³',
         ),
       );
@@ -6265,15 +7338,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
-          few: '{0} mi³',
+          one: '{0} milă cubică',
+          few: '{0} mile cubice',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
-          few: '{0} mi³',
+          one: '{0} milă cubică',
+          few: '{0} mile cubice',
           other: '{0} mi³',
         ),
       );
@@ -6290,15 +7363,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
-          few: '{0} yd³',
+          one: '{0} iard cubic',
+          few: '{0} iarzi cubici',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'yd³',
-          one: '{0} yd³',
-          few: '{0} yd³',
+          one: '{0} iard cubic',
+          few: '{0} iarzi cubici',
           other: '{0} yd³',
         ),
       );
@@ -6315,15 +7388,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
-          few: '{0} ft³',
+          one: '{0} picior cubic',
+          few: '{0} picioare cubice',
           other: '{0} ft³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ft³',
-          one: '{0} ft³',
-          few: '{0} ft³',
+          one: '{0} picior cubic',
+          few: '{0} picioare cubice',
           other: '{0} ft³',
         ),
       );
@@ -6340,15 +7413,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
-          few: '{0} in³',
+          one: '{0} inch cubic',
+          few: '{0} inchi cubici',
           other: '{0} in³',
         ),
         narrow: UnitCountPattern(
           _locale,
           'in³',
-          one: '{0} in³',
-          few: '{0} in³',
+          one: '{0} inch cubic',
+          few: '{0} inchi cubici',
           other: '{0} in³',
         ),
       );
@@ -6415,15 +7488,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'litri',
-          one: '{0} l',
-          few: '{0} l',
+          one: '{0} litru',
+          few: '{0} litri',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
           _locale,
           'l',
-          one: '{0} l',
-          few: '{0} l',
+          one: '{0} litru',
+          few: '{0} litri',
           other: '{0} l',
         ),
       );
@@ -6515,15 +7588,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
-          few: '{0} mpt',
+          one: '{0} pintă metrică',
+          few: '{0} pinte metrice',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mpt',
-          one: '{0} mpt',
-          few: '{0} mpt',
+          one: '{0} pintă metrică',
+          few: '{0} pinte metrice',
           other: '{0} mpt',
         ),
       );
@@ -6540,15 +7613,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
-          few: '{0} mc',
+          one: '{0} cană metrică',
+          few: '{0} căni metrice',
           other: '{0} mc',
         ),
         narrow: UnitCountPattern(
           _locale,
           'mcup',
-          one: '{0} mc',
-          few: '{0} mc',
+          one: '{0} cană metrică',
+          few: '{0} căni metrice',
           other: '{0} mc',
         ),
       );
@@ -6565,15 +7638,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
-          few: '{0} ac ft',
+          one: '{0} acru-picior',
+          few: '{0} acru-picioare',
           other: '{0} ac ft',
         ),
         narrow: UnitCountPattern(
           _locale,
           'ac ft',
-          one: '{0} ac ft',
-          few: '{0} ac ft',
+          one: '{0} acru-picior',
+          few: '{0} acru-picioare',
           other: '{0} ac ft',
         ),
       );
@@ -6590,11 +7663,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'banițe',
+          one: '{0} baniță',
+          few: '{0} banițe',
           other: '{0} bu',
         ),
         narrow: UnitCountPattern(
           _locale,
           'baniță',
+          one: '{0} baniță',
+          few: '{0} banițe',
           other: '{0} bu',
         ),
       );
@@ -6661,15 +7738,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
-          few: '{0} qt',
+          one: '{0} quart',
+          few: '{0} quarte',
           other: '{0} qt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'qt',
-          one: '{0} qt',
-          few: '{0} qt',
+          one: '{0} quart',
+          few: '{0} quarte',
           other: '{0} qt',
         ),
       );
@@ -6686,15 +7763,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'pinte',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0} pintă',
+          few: '{0} pinte',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pintă',
-          one: '{0} pt',
-          few: '{0} pt',
+          one: '{0} pintă',
+          few: '{0} pinte',
           other: '{0} pt',
         ),
       );
@@ -6711,15 +7788,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'căni',
-          one: '{0} c',
-          few: '{0} c',
+          one: '{0} cană',
+          few: '{0} căni',
           other: '{0} c',
         ),
         narrow: UnitCountPattern(
           _locale,
           'cană',
-          one: '{0} c',
-          few: '{0} c',
+          one: '{0} cană',
+          few: '{0} căni',
           other: '{0} c',
         ),
       );
@@ -6786,15 +7863,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'tbsp',
-          one: '{0} tbsp',
-          few: '{0} tbsp',
+          one: '{0} lingură',
+          few: '{0} linguri',
           other: '{0} tbsp',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tbsp',
-          one: '{0} tbsp',
-          few: '{0} tbsp',
+          one: '{0} lingură',
+          few: '{0} linguri',
           other: '{0} tbsp',
         ),
       );
@@ -6811,15 +7888,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'tsp',
-          one: '{0} tsp',
-          few: '{0} tsp',
+          one: '{0} linguriță',
+          few: '{0} lingurițe',
           other: '{0} tsp',
         ),
         narrow: UnitCountPattern(
           _locale,
           'tsp',
-          one: '{0} tsp',
-          few: '{0} tsp',
+          one: '{0} linguriță',
+          few: '{0} lingurițe',
           other: '{0} tsp',
         ),
       );
@@ -6836,11 +7913,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'baril',
+          one: '{0} baril',
+          few: '{0} barili',
           other: '{0} bbl',
         ),
         narrow: UnitCountPattern(
           _locale,
           'baril',
+          one: '{0} baril',
+          few: '{0} barili',
           other: '{0} bbl',
         ),
       );
@@ -6857,11 +7938,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'dstspn',
+          one: '{0} lingură de desert',
+          few: '{0} linguri de desert',
           other: '{0} dstspn',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dstspn',
+          one: '{0} lingură de desert',
+          few: '{0} linguri de desert',
           other: '{0} dstspn',
         ),
       );
@@ -6878,12 +7963,14 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'dstspn Imp',
-          other: '{0} dstspn Imp',
+          one: '{0} dsp im',
+          few: '{0} dsp im',
+          other: '{0} dsp im',
         ),
         narrow: UnitCountPattern(
           _locale,
           'dsp im',
-          one: 'dsp im',
+          one: '{0} dsp im',
           few: '{0} dsp im',
           other: '{0} dsp im',
         ),
@@ -6926,6 +8013,8 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'dram lichid',
+          one: '{0} dram lichid',
+          few: '{0} drami lichizi',
           other: '{0} dram fl',
         ),
         narrow: UnitCountPattern(
@@ -6949,11 +8038,15 @@ class UnitsRo implements Units {
         short: UnitCountPattern(
           _locale,
           'jigger',
+          one: '{0} jigger',
+          few: '{0} jiggere',
           other: '{0} jigger',
         ),
         narrow: UnitCountPattern(
           _locale,
           'jigger',
+          one: '{0} jigger',
+          few: '{0} jiggere',
           other: '{0} jigger',
         ),
       );
@@ -7005,6 +8098,103 @@ class UnitsRo implements Units {
           one: '{0} qt im',
           few: '{0} qt im',
           other: '{0} qt im',
+        ),
+      );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'lumină',
+          one: '{0} lumină',
+          few: '{0} lumină',
+          other: '{0} lumină',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'lumină',
+          one: '{0} lumină',
+          few: '{0} lumină',
+          other: '{0} lumină',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'lumină',
+          one: '{0} lumină',
+          few: '{0} lumină',
+          other: '{0} lumină',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'părți pe miliard',
+          one: '{0} parte pe miliard',
+          few: '{0} părți pe miliard',
+          other: '{0} de părți pe miliard',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'părți/miliard',
+          one: '{0} parte pe miliard',
+          few: '{0} părți pe miliard',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'părți/miliard',
+          one: '{0} parte pe miliard',
+          few: '{0} părți pe miliard',
+          other: '{0} ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'noapte',
+          one: '{0}/noapte',
+          few: '{0} nopți',
+          other: '{0} de nopți',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nopți',
+          one: '{0} noapte',
+          few: '{0} nopți',
+          other: '{0} de nopți',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nopți',
+          one: '{0} noapte',
+          few: '{0} nopți',
+          other: '{0} de nopți',
         ),
       );
 }
@@ -8361,6 +9551,10 @@ class TerritoriesRo implements Territories {
       'CP',
       'Insula Clipperton',
     ),
+    'CQ': Territory(
+      'CQ',
+      'Regiune necunoscută (CQ)',
+    ),
     'CR': Territory(
       'CR',
       'Costa Rica',
@@ -9216,6 +10410,1471 @@ class TerritoriesRo implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabwe',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesRo extends TimeZones {
+  TimeZonesRo._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;-HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: 'Ora din {0}',
+            regionFormatDaylight: 'Ora de vară din {0}',
+            regionFormatStandard: 'Ora standard din {0}',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: 'Asunción',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'Bahia Banderas',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: 'Cancun',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: 'Ciudad Juárez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: 'Atikokan',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: 'Curaçao',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: 'Nuuk',
+    ),
+    'America/Guadeloupe': TimeZoneNames(
+      exemplarCity: 'Guadelupa',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: 'Vevay, Indiana',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
+    'America/Martinique': TimeZoneNames(
+      exemplarCity: 'Martinica',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: 'Merida',
+    ),
+    'America/Mexico_City': TimeZoneNames(
+      exemplarCity: 'Ciudad de Mexico',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Beulah, Dakota de Nord',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'New Salem, Dakota de Nord',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Center, Dakota de Nord',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: 'Saint Barthélemy',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: 'St. John’s',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: 'St. Kitts',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: 'St. Lucia',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: 'St. Thomas',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: 'St. Vincent',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      exemplarCity: 'Azore',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: 'Canare',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: 'Capul Verde',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: 'Feroe',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: 'Georgia de Sud',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: 'Sf. Elena',
+    ),
+    'Europe/Astrakhan': TimeZoneNames(
+      exemplarCity: 'Astrahan',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: 'Atena',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: 'Belgrad',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: 'Bruxelles',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: 'București',
+    ),
+    'Europe/Budapest': TimeZoneNames(
+      exemplarCity: 'Budapesta',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: 'Chișinău',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: 'Copenhaga',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Ora de vară a Irlandei',
+      ),
+    ),
+    'Europe/Isle_of_Man': TimeZoneNames(
+      exemplarCity: 'Insula Man',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: 'Kiev',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: 'Lisabona',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'Ora de vară britanică',
+      ),
+      exemplarCity: 'Londra',
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: 'Luxemburg',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: 'Moscova',
+    ),
+    'Europe/Podgorica': TimeZoneNames(
+      exemplarCity: 'Podgorița',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: 'Praga',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: 'Roma',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: 'Tirana',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: 'Ulianovsk',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: 'Viena',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: 'Varșovia',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: 'Zürich',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: 'Addis Abeba',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: 'Alger',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: 'Asmara',
+    ),
+    'Africa/Mogadishu': TimeZoneNames(
+      exemplarCity: 'Mogadiscio',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: 'N’Djamena',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: 'Sao Tomé',
+    ),
+    'Asia/Almaty': TimeZoneNames(
+      exemplarCity: 'Almatî',
+    ),
+    'Asia/Anadyr': TimeZoneNames(
+      exemplarCity: 'Anadir',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: 'Aktobe',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: 'Așgabat',
+    ),
+    'Asia/Atyrau': TimeZoneNames(
+      exemplarCity: 'Atîrau',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: 'Bagdad',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      exemplarCity: 'Bișkek',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: 'Calcutta',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: 'Cita',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: 'Damasc',
+    ),
+    'Asia/Dhaka': TimeZoneNames(
+      exemplarCity: 'Dacca',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: 'Dușanbe',
+    ),
+    'Asia/Irkutsk': TimeZoneNames(
+      exemplarCity: 'Irkuțk',
+    ),
+    'Asia/Jerusalem': TimeZoneNames(
+      exemplarCity: 'Ierusalim',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      exemplarCity: 'Kamciatka',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: 'Kathmandu',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      exemplarCity: 'Krasnoiarsk',
+    ),
+    'Asia/Kuwait': TimeZoneNames(
+      exemplarCity: 'Kuweit',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: 'Macao',
+    ),
+    'Asia/Novokuznetsk': TimeZoneNames(
+      exemplarCity: 'Novokuznețk',
+    ),
+    'Asia/Oral': TimeZoneNames(
+      exemplarCity: 'Uralsk',
+    ),
+    'Asia/Pyongyang': TimeZoneNames(
+      exemplarCity: 'Phenian',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: 'Kostanay',
+    ),
+    'Asia/Qyzylorda': TimeZoneNames(
+      exemplarCity: 'Kyzylorda',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: 'Yangon',
+    ),
+    'Asia/Riyadh': TimeZoneNames(
+      exemplarCity: 'Riad',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: 'Ho Și Min',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: 'Sahalin',
+    ),
+    'Asia/Srednekolymsk': TimeZoneNames(
+      exemplarCity: 'Srednekolimsk',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: 'Tașkent',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: 'Teheran',
+    ),
+    'Asia/Ulaanbaatar': TimeZoneNames(
+      exemplarCity: 'Ulan Bator',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      exemplarCity: 'Iakuțk',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: 'Ekaterinburg',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'Erevan',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: 'Comore',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: 'Maldive',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: 'Réunion',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: 'Insula Paștelui',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Enderbury',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      exemplarCity: 'Honolulu',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      exemplarCity: 'Marchize',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      exemplarCity: 'Insula Pitcairn',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: 'Pohnpei',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: 'Chuuk',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Dumont d’Urville',
+    ),
+    'Antarctica/Syowa': TimeZoneNames(
+      exemplarCity: 'Showa',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'Timpul universal coordonat',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: 'Oraș necunoscut',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'Ora Acre',
+        standard: 'Ora standard Acre',
+        daylight: 'Ora de vară Acre',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'Ora Afganistanului',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'Ora Africii Centrale',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'Ora Africii Orientale',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'Ora Africii Meridionale',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Ora Africii Occidentale',
+        standard: 'Ora standard a Africii Occidentale',
+        daylight: 'Ora de vară a Africii Occidentale',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'Ora din Alaska',
+        standard: 'Ora standard din Alaska',
+        daylight: 'Ora de vară din Alaska',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'Ora Almaty',
+        standard: 'Ora standard Almaty',
+        daylight: 'Ora de vară Almaty',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'Ora Amazonului',
+        standard: 'Ora standard a Amazonului',
+        daylight: 'Ora de vară a Amazonului',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'Ora centrală nord-americană',
+        standard: 'Ora standard centrală nord-americană',
+        daylight: 'Ora de vară centrală nord-americană',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Ora orientală nord-americană',
+        standard: 'Ora standard orientală nord-americană',
+        daylight: 'Ora de vară orientală nord-americană',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Ora zonei montane nord-americane',
+        standard: 'Ora standard în zona montană nord-americană',
+        daylight: 'Ora de vară în zona montană nord-americană',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Ora zonei Pacific nord-americane',
+        standard: 'Ora standard în zona Pacific nord-americană',
+        daylight: 'Ora de vară în zona Pacific nord-americană',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'Ora din Anadyr',
+        standard: 'Ora standard din Anadyr',
+        daylight: 'Ora de vară din Anadyr',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'Ora din Apia',
+        standard: 'Ora standard din Apia',
+        daylight: 'Ora de vară din Apia',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'Ora Aqtau',
+        standard: 'Ora standard Aqtau',
+        daylight: 'Ora de vară a zonei Aqtau',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Ora Aqtobe',
+        standard: 'Ora standard Aqtobe',
+        daylight: 'Ora de vară a zonei Aqtobe',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'Ora arabă',
+        standard: 'Ora standard arabă',
+        daylight: 'Ora de vară arabă',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'Ora Argentinei',
+        standard: 'Ora standard a Argentinei',
+        daylight: 'Ora de vară a Argentinei',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Ora Argentinei Occidentale',
+        standard: 'Ora standard a Argentinei Occidentale',
+        daylight: 'Ora de vară a Argentinei Occidentale',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'Ora Armeniei',
+        standard: 'Ora standard a Armeniei',
+        daylight: 'Ora de vară a Armeniei',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'Ora zonei Atlantic nord-americane',
+        standard: 'Ora standard în zona Atlantic nord-americană',
+        daylight: 'Ora de vară în zona Atlantic nord-americană',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Ora Australiei Centrale',
+        standard: 'Ora standard a Australiei Centrale',
+        daylight: 'Ora de vară a Australiei Centrale',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Ora Australiei Central Occidentale',
+        standard: 'Ora standard a Australiei Central Occidentale',
+        daylight: 'Ora de vară a Australiei Central Occidentale',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Ora Australiei Orientale',
+        standard: 'Ora standard a Australiei Orientale',
+        daylight: 'Ora de vară a Australiei Orientale',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Ora Australiei Occidentale',
+        standard: 'Ora standard a Australiei Occidentale',
+        daylight: 'Ora de vară a Australiei Occidentale',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Ora Azerbaidjanului',
+        standard: 'Ora standard a Azerbaidjanului',
+        daylight: 'Ora de vară a Azerbaidjanului',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'Ora din Azore',
+        standard: 'Ora standard din Azore',
+        daylight: 'Ora de vară din Azore',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Ora din Bangladesh',
+        standard: 'Ora standard din Bangladesh',
+        daylight: 'Ora de vară din Bangladesh',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'Ora Bhutanului',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'Ora Boliviei',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'Ora Brasiliei',
+        standard: 'Ora standard a Brasiliei',
+        daylight: 'Ora de vară a Brasiliei',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'Ora din Brunei Darussalam',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Ora din Capul Verde',
+        standard: 'Ora standard din Capul Verde',
+        daylight: 'Ora de vară din Capul Verde',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'Ora din Chamorro',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'Ora din Chatham',
+        standard: 'Ora standard din Chatham',
+        daylight: 'Ora de vară din Chatham',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'Ora din Chile',
+        standard: 'Ora standard din Chile',
+        daylight: 'Ora de vară din Chile',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'Ora Chinei',
+        standard: 'Ora standard a Chinei',
+        daylight: 'Ora de vară a Chinei',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'Ora din Insula Christmas',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'Ora Insulelor Cocos',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'Ora Columbiei',
+        standard: 'Ora standard a Columbiei',
+        daylight: 'Ora de vară a Columbiei',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'Ora Insulelor Cook',
+        standard: 'Ora standard a Insulelor Cook',
+        daylight: 'Ora de vară a Insulelor Cook',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'Ora Cubei',
+        standard: 'Ora standard a Cubei',
+        daylight: 'Ora de vară a Cubei',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'Ora din Davis',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'Ora din Dumont-d’Urville',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'Ora Timorului de Est',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'Ora din Insula Paștelui',
+        standard: 'Ora standard din Insula Paștelui',
+        daylight: 'Ora de vară din Insula Paștelui',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'Ora Ecuadorului',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Ora Europei Centrale',
+        standard: 'Ora standard a Europei Centrale',
+        daylight: 'Ora de vară a Europei Centrale',
+      ),
+      short: TimeZoneName(
+        generic: 'CET',
+        standard: 'CET',
+        daylight: 'CEST',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Ora Europei de Est',
+        standard: 'Ora standard a Europei de Est',
+        daylight: 'Ora de vară a Europei de Est',
+      ),
+      short: TimeZoneName(
+        generic: 'EET',
+        standard: 'EET',
+        daylight: 'EEST',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'Ora Europei de Est îndepărtate',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Ora Europei de Vest',
+        standard: 'Ora standard a Europei de Vest',
+        daylight: 'Ora de vară a Europei de Vest',
+      ),
+      short: TimeZoneName(
+        generic: 'WET',
+        standard: 'WET',
+        daylight: 'WEST',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'Ora din Insulele Falkland',
+        standard: 'Ora standard din Insulele Falkland',
+        daylight: 'Ora de vară din Insulele Falkland',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'Ora din Fiji',
+        standard: 'Ora standard din Fiji',
+        daylight: 'Ora de vară din Fiji',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'Ora din Guyana Franceză',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'Ora din Teritoriile Australe și Antarctice Franceze',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'Ora din Galapagos',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'Ora din Gambier',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'Ora Georgiei',
+        standard: 'Ora standard a Georgiei',
+        daylight: 'Ora de vară a Georgiei',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'Ora Insulelor Gilbert',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'Ora de Greenwhich',
+      ),
+      short: TimeZoneName(
+        standard: 'GMT',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Ora Groenlandei orientale',
+        standard: 'Ora standard a Groenlandei orientale',
+        daylight: 'Ora de vară a Groenlandei orientale',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Ora Groenlandei occidentale',
+        standard: 'Ora standard a Groenlandei occidentale',
+        daylight: 'Ora de vară a Groenlandei occidentale',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'Ora standard a Golfului',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'Ora din Guyana',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Ora din Hawaii-Aleutine',
+        standard: 'Ora standard din Hawaii-Aleutine',
+        daylight: 'Ora de vară din Hawaii-Aleutine',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Ora din Hong Kong',
+        standard: 'Ora standard din Hong Kong',
+        daylight: 'Ora de vară din Hong Kong',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'Ora din Hovd',
+        standard: 'Ora standard din Hovd',
+        daylight: 'Ora de vară din Hovd',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'Ora Indiei',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'Ora Oceanului Indian',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'Ora Indochinei',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'Ora Indoneziei Centrale',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'Ora Indoneziei de Est',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'Ora Indoneziei de Vest',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'Ora Iranului',
+        standard: 'Ora standard a Iranului',
+        daylight: 'Ora de vară a Iranului',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Ora din Irkuțk',
+        standard: 'Ora standard din Irkuțk',
+        daylight: 'Ora de vară din Irkuțk',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'Ora Israelului',
+        standard: 'Ora standard a Israelului',
+        daylight: 'Ora de vară a Israelului',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'Ora Japoniei',
+        standard: 'Ora standard a Japoniei',
+        daylight: 'Ora de vară a Japoniei',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Ora din Petropavlovsk-Kamciațki',
+        standard: 'Ora standard din Petropavlovsk-Kamciațki',
+        daylight: 'Ora de vară din Petropavlovsk-Kamciațki',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'Ora din Kazahstan',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'Ora din Kazahstanul de Est',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'Ora din Kazahstanul de Vest',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'Ora Coreei',
+        standard: 'Ora standard a Coreei',
+        daylight: 'Ora de vară a Coreei',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'Ora din Kosrae',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Ora din Krasnoiarsk',
+        standard: 'Ora standard din Krasnoiarsk',
+        daylight: 'Ora de vară din Krasnoiarsk',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'Ora din Kârgâzstan',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'Ora din Insulele Line',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Ora din Lord Howe',
+        standard: 'Ora standard din Lord Howe',
+        daylight: 'Ora de vară din Lord Howe',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'Ora din Magadan',
+        standard: 'Ora standard din Magadan',
+        daylight: 'Ora de vară din Magadan',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'Ora din Malaysia',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'Ora din Maldive',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'Ora Insulelor Marchize',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'Ora Insulelor Marshall',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'Ora din Mauritius',
+        standard: 'Ora standard din Mauritius',
+        daylight: 'Ora de vară din Mauritius',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'Ora din Mawson',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Ora zonei Pacific mexicane',
+        standard: 'Ora standard a zonei Pacific mexicane',
+        daylight: 'Ora de vară a zonei Pacific mexicane',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'Ora din Ulan Bator',
+        standard: 'Ora standard din Ulan Bator',
+        daylight: 'Ora de vară din Ulan Bator',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'Ora Moscovei',
+        standard: 'Ora standard a Moscovei',
+        daylight: 'Ora de vară a Moscovei',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'Ora Myanmarului',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'Ora din Nauru',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'Ora Nepalului',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Ora Noii Caledonii',
+        standard: 'Ora standard a Noii Caledonii',
+        daylight: 'Ora de vară a Noii Caledonii',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Ora Noii Zeelande',
+        standard: 'Ora standard a Noii Zeelande',
+        daylight: 'Ora de vară a Noii Zeelande',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Ora din Newfoundland',
+        standard: 'Ora standard din Newfoundland',
+        daylight: 'Ora de vară din Newfoundland',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'Ora din Niue',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'Ora Insulei Norfolk',
+        standard: 'Ora standard a Insulei Norfolk',
+        daylight: 'Ora de vară a Insulei Norfolk',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'Ora din Fernando de Noronha',
+        standard: 'Ora standard din Fernando de Noronha',
+        daylight: 'Ora de vară din Fernando de Noronha',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Ora din Novosibirsk',
+        standard: 'Ora standard din Novosibirsk',
+        daylight: 'Ora de vară din Novosibirsk',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'Ora din Omsk',
+        standard: 'Ora standard din Omsk',
+        daylight: 'Ora de vară din Omsk',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'Ora Pakistanului',
+        standard: 'Ora standard a Pakistanului',
+        daylight: 'Ora de vară a Pakistanului',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'Ora din Palau',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'Ora din Papua Noua Guinee',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'Ora din Paraguay',
+        standard: 'Ora standard din Paraguay',
+        daylight: 'Ora de vară din Paraguay',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'Ora din Peru',
+        standard: 'Ora standard din Peru',
+        daylight: 'Ora de vară din Peru',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'Ora din Filipine',
+        standard: 'Ora standard din Filipine',
+        daylight: 'Ora de vară din Filipine',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'Ora Insulelor Phoenix',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Ora din Saint-Pierre și Miquelon',
+        standard: 'Ora standard din Saint-Pierre și Miquelon',
+        daylight: 'Ora de vară din Saint-Pierre și Miquelon',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'Ora din Pitcairn',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'Ora din Ponape',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'Ora din Pyongyang',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'Ora din Reunion',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'Ora din Rothera',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Ora din Sahalin',
+        standard: 'Ora standard din Sahalin',
+        daylight: 'Ora de vară din Sahalin',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'Ora din Samara',
+        standard: 'Ora standard din Samara',
+        daylight: 'Ora de vară din Samara',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'Ora din Samoa',
+        standard: 'Ora standard din Samoa',
+        daylight: 'Ora de vară din Samoa',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'Ora din Seychelles',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'Ora din Singapore',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'Ora Insulelor Solomon',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'Ora Georgiei de Sud',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'Ora Surinamului',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'Ora din Syowa',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'Ora din Tahiti',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'Ora din Taipei',
+        standard: 'Ora standard din Taipei',
+        daylight: 'Ora de vară din Taipei',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'Ora din Tadjikistan',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'Ora din Tokelau',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'Ora din Tonga',
+        standard: 'Ora standard din Tonga',
+        daylight: 'Ora de vară din Tonga',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'Ora din Chuuk',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Ora din Turkmenistan',
+        standard: 'Ora standard din Turkmenistan',
+        daylight: 'Ora de vară din Turkmenistan',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'Ora din Tuvalu',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'Ora Uruguayului',
+        standard: 'Ora standard a Uruguayului',
+        daylight: 'Ora de vară a Uruguayului',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Ora din Uzbekistan',
+        standard: 'Ora standard din Uzbekistan',
+        daylight: 'Ora de vară din Uzbekistan',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Ora din Vanuatu',
+        standard: 'Ora standard din Vanuatu',
+        daylight: 'Ora de vară din Vanuatu',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'Ora Venezuelei',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Ora din Vladivostok',
+        standard: 'Ora standard din Vladivostok',
+        daylight: 'Ora de vară din Vladivostok',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'Ora din Volgograd',
+        standard: 'Ora standard din Volgograd',
+        daylight: 'Ora de vară din Volgograd',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'Ora din Vostok',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'Ora Insulei Wake',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'Ora din Wallis și Futuna',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Ora din Iakuțk',
+        standard: 'Ora standard din Iakuțk',
+        daylight: 'Ora de vară din Iakuțk',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Ora din Ekaterinburg',
+        standard: 'Ora standard din Ekaterinburg',
+        daylight: 'Ora de vară din Ekaterinburg',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'Ora din Yukon',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

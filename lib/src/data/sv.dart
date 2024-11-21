@@ -1,15 +1,13 @@
 import 'package:collection/collection.dart';
-import '../../common_locale_data.dart' show CommonLocaleData;
-import '../date_fields.dart';
-import '../languages.dart';
-import '../shared.dart';
-import '../territories.dart';
-import '../units.dart';
+import '../../common_locale_data.dart';
 
 const _locale = 'sv';
 
-/// Translations in Swedish of [CommonLocaleData]
+/// Translations of [CommonLocaleData]
+///
+/// @nodoc
 class CommonLocaleDataSv implements CommonLocaleData {
+  @override
   String get locale => _locale;
 
   const CommonLocaleDataSv();
@@ -22,6 +20,14 @@ class CommonLocaleDataSv implements CommonLocaleData {
   @override
   Languages get languages => _languages;
 
+  static final _scripts = ScriptsSv._();
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _variants = VariantsSv._();
+  @override
+  Variants get variants => _variants;
+
   static final _units = UnitsSv._();
   @override
   Units get units => _units;
@@ -29,6 +35,10 @@ class CommonLocaleDataSv implements CommonLocaleData {
   static final _territories = TerritoriesSv._();
   @override
   Territories get territories => _territories;
+
+  static final _timeZones = TimeZonesSv._(_territories);
+  @override
+  TimeZones get timeZones => _timeZones;
 }
 
 class LanguagesSv extends Languages {
@@ -248,7 +258,7 @@ class LanguagesSv extends Languages {
     ),
     'be': Language(
       'be',
-      'vitryska',
+      'belarusiska',
     ),
     'bej': Language(
       'bej',
@@ -280,7 +290,7 @@ class LanguagesSv extends Languages {
     ),
     'bgc': Language(
       'bgc',
-      'bgc',
+      'hariyanvi',
     ),
     'bgn': Language(
       'bgn',
@@ -313,6 +323,10 @@ class LanguagesSv extends Languages {
     'bla': Language(
       'bla',
       'siksika',
+    ),
+    'blo': Language(
+      'blo',
+      'anii',
     ),
     'bm': Language(
       'bm',
@@ -456,7 +470,7 @@ class LanguagesSv extends Languages {
     ),
     'ckb': Language(
       'ckb',
-      'soranisk kurdiska',
+      'centralkurdiska',
       variant: 'soranisk kurdiska',
       menu: 'kurdiska (sorani)',
     ),
@@ -840,7 +854,7 @@ class LanguagesSv extends Languages {
     ),
     'gd': Language(
       'gd',
-      'skotsk gäliska',
+      'skotsk gaeliska',
     ),
     'gez': Language(
       'gez',
@@ -869,10 +883,6 @@ class LanguagesSv extends Languages {
     'goh': Language(
       'goh',
       'fornhögtyska',
-    ),
-    'gom': Language(
-      'gom',
-      'Goa-konkani',
     ),
     'gon': Language(
       'gon',
@@ -1315,6 +1325,10 @@ class LanguagesSv extends Languages {
       'kwk',
       'kwakʼwala',
     ),
+    'kxv': Language(
+      'kxv',
+      'kuvi',
+    ),
     'ky': Language(
       'ky',
       'kirgiziska',
@@ -1430,10 +1444,6 @@ class LanguagesSv extends Languages {
     'lun': Language(
       'lun',
       'lunda',
-    ),
-    'luo': Language(
-      'luo',
-      'luo',
     ),
     'lus': Language(
       'lus',
@@ -2501,6 +2511,10 @@ class LanguagesSv extends Languages {
       'vmf',
       'Main-frankiska',
     ),
+    'vmw': Language(
+      'vmw',
+      'makua',
+    ),
     'vo': Language(
       'vo',
       'volapük',
@@ -2560,6 +2574,10 @@ class LanguagesSv extends Languages {
     'xmf': Language(
       'xmf',
       'mingrelianska',
+    ),
+    'xnr': Language(
+      'xnr',
+      'kangri',
     ),
     'xog': Language(
       'xog',
@@ -2654,6 +2672,1028 @@ class LanguagesSv extends Languages {
   }, (key) => key.toLowerCase());
 }
 
+class ScriptsSv extends Scripts {
+  ScriptsSv._();
+
+  @override
+  final scripts = CanonicalizedMap<String, String, Script>.from({
+    'Adlm': Script(
+      'Adlm',
+      'adlamiska',
+    ),
+    'Afak': Script(
+      'Afak',
+      'afakiska',
+    ),
+    'Aghb': Script(
+      'Aghb',
+      'kaukasiska albanska',
+    ),
+    'Ahom': Script(
+      'Ahom',
+      'ahom',
+    ),
+    'Arab': Script(
+      'Arab',
+      'arabiska',
+    ),
+    'Aran': Script(
+      'Aran',
+      'nastaliq',
+    ),
+    'Armi': Script(
+      'Armi',
+      'imperisk arameiska',
+    ),
+    'Armn': Script(
+      'Armn',
+      'armeniska',
+    ),
+    'Avst': Script(
+      'Avst',
+      'avestiska',
+    ),
+    'Bali': Script(
+      'Bali',
+      'balinesiska',
+    ),
+    'Bamu': Script(
+      'Bamu',
+      'bamunska',
+    ),
+    'Bass': Script(
+      'Bass',
+      'bassaiska vah',
+    ),
+    'Batk': Script(
+      'Batk',
+      'batak',
+    ),
+    'Beng': Script(
+      'Beng',
+      'bengaliska',
+    ),
+    'Bhks': Script(
+      'Bhks',
+      'bhaiksukiska',
+    ),
+    'Blis': Script(
+      'Blis',
+      'blissymboler',
+    ),
+    'Bopo': Script(
+      'Bopo',
+      'bopomofo',
+    ),
+    'Brah': Script(
+      'Brah',
+      'brami',
+    ),
+    'Brai': Script(
+      'Brai',
+      'punktskrift',
+    ),
+    'Bugi': Script(
+      'Bugi',
+      'buginesiska',
+    ),
+    'Buhd': Script(
+      'Buhd',
+      'buhid',
+    ),
+    'Cakm': Script(
+      'Cakm',
+      'chakma',
+    ),
+    'Cans': Script(
+      'Cans',
+      'kanadensiska stavelsetecken',
+    ),
+    'Cari': Script(
+      'Cari',
+      'kariska',
+    ),
+    'Cham': Script(
+      'Cham',
+      'cham',
+    ),
+    'Cher': Script(
+      'Cher',
+      'cherokee',
+    ),
+    'Chrs': Script(
+      'Chrs',
+      'khwarezmiska',
+    ),
+    'Cirt': Script(
+      'Cirt',
+      'cirt',
+    ),
+    'Copt': Script(
+      'Copt',
+      'koptiska',
+    ),
+    'Cpmn': Script(
+      'Cpmn',
+      'cypro-minoisk skrift',
+    ),
+    'Cprt': Script(
+      'Cprt',
+      'cypriotiska',
+    ),
+    'Cyrl': Script(
+      'Cyrl',
+      'kyrilliska',
+    ),
+    'Cyrs': Script(
+      'Cyrs',
+      'fornkyrkoslavisk kyrilliska',
+    ),
+    'Deva': Script(
+      'Deva',
+      'devanagari',
+    ),
+    'Diak': Script(
+      'Diak',
+      'dives akuru',
+    ),
+    'Dogr': Script(
+      'Dogr',
+      'dogriska',
+    ),
+    'Dsrt': Script(
+      'Dsrt',
+      'deseret',
+    ),
+    'Dupl': Script(
+      'Dupl',
+      'Duployéstenografiska',
+    ),
+    'Egyd': Script(
+      'Egyd',
+      'demotiska',
+    ),
+    'Egyh': Script(
+      'Egyh',
+      'hieratiska',
+    ),
+    'Egyp': Script(
+      'Egyp',
+      'egyptiska hieroglyfer',
+    ),
+    'Elba': Script(
+      'Elba',
+      'elbasiska',
+    ),
+    'Elym': Script(
+      'Elym',
+      'elymaiska',
+    ),
+    'Ethi': Script(
+      'Ethi',
+      'etiopiska',
+    ),
+    'Geok': Script(
+      'Geok',
+      'kutsuri',
+    ),
+    'Geor': Script(
+      'Geor',
+      'georgiska',
+    ),
+    'Glag': Script(
+      'Glag',
+      'glagolitiska',
+    ),
+    'Gong': Script(
+      'Gong',
+      'gunjalgondiska',
+    ),
+    'Gonm': Script(
+      'Gonm',
+      'masaram-gondi',
+    ),
+    'Goth': Script(
+      'Goth',
+      'gotiska',
+    ),
+    'Gran': Script(
+      'Gran',
+      'gammaltamilska',
+    ),
+    'Grek': Script(
+      'Grek',
+      'grekiska',
+    ),
+    'Gujr': Script(
+      'Gujr',
+      'gujarati',
+    ),
+    'Guru': Script(
+      'Guru',
+      'gurmukhiska',
+    ),
+    'Hanb': Script(
+      'Hanb',
+      'han med bopomofo',
+    ),
+    'Hang': Script(
+      'Hang',
+      'hangul',
+    ),
+    'Hani': Script(
+      'Hani',
+      'han',
+    ),
+    'Hano': Script(
+      'Hano',
+      'hanunó’o',
+    ),
+    'Hans': Script(
+      'Hans',
+      'förenklad',
+      standAlone: 'förenklade han-tecken',
+    ),
+    'Hant': Script(
+      'Hant',
+      'traditionell',
+      standAlone: 'traditionella han-tecken',
+    ),
+    'Hatr': Script(
+      'Hatr',
+      'hatran',
+    ),
+    'Hebr': Script(
+      'Hebr',
+      'hebreiska',
+    ),
+    'Hira': Script(
+      'Hira',
+      'hiragana',
+    ),
+    'Hluw': Script(
+      'Hluw',
+      'hittitiska hieroglyfer',
+    ),
+    'Hmng': Script(
+      'Hmng',
+      'pahaw mong',
+    ),
+    'Hmnp': Script(
+      'Hmnp',
+      'nyiakeng puachue hmong',
+    ),
+    'Hrkt': Script(
+      'Hrkt',
+      'katakana/hiragana',
+    ),
+    'Hung': Script(
+      'Hung',
+      'fornungerska',
+    ),
+    'Inds': Script(
+      'Inds',
+      'indus',
+    ),
+    'Ital': Script(
+      'Ital',
+      'fornitaliska',
+    ),
+    'Jamo': Script(
+      'Jamo',
+      'jamo',
+    ),
+    'Java': Script(
+      'Java',
+      'javanska',
+    ),
+    'Jpan': Script(
+      'Jpan',
+      'japanska',
+    ),
+    'Jurc': Script(
+      'Jurc',
+      'jurchenska',
+    ),
+    'Kali': Script(
+      'Kali',
+      'kaya li',
+    ),
+    'Kana': Script(
+      'Kana',
+      'katakana',
+    ),
+    'Khar': Script(
+      'Khar',
+      'kharoshti',
+    ),
+    'Khmr': Script(
+      'Khmr',
+      'khmeriska',
+    ),
+    'Khoj': Script(
+      'Khoj',
+      'khojkiska',
+    ),
+    'Kits': Script(
+      'Kits',
+      'khitanska',
+    ),
+    'Knda': Script(
+      'Knda',
+      'kanaresiska',
+    ),
+    'Kore': Script(
+      'Kore',
+      'koreanska',
+    ),
+    'Kpel': Script(
+      'Kpel',
+      'kpellé',
+    ),
+    'Kthi': Script(
+      'Kthi',
+      'kaithiska',
+    ),
+    'Lana': Script(
+      'Lana',
+      'lanna',
+    ),
+    'Laoo': Script(
+      'Laoo',
+      'laotiska',
+    ),
+    'Latf': Script(
+      'Latf',
+      'frakturlatin',
+    ),
+    'Latg': Script(
+      'Latg',
+      'gaeliskt latin',
+    ),
+    'Latn': Script(
+      'Latn',
+      'latinska',
+    ),
+    'Lepc': Script(
+      'Lepc',
+      'rong',
+    ),
+    'Limb': Script(
+      'Limb',
+      'limbu',
+    ),
+    'Lina': Script(
+      'Lina',
+      'linjär A',
+    ),
+    'Linb': Script(
+      'Linb',
+      'linjär B',
+    ),
+    'Lisu': Script(
+      'Lisu',
+      'Fraser',
+    ),
+    'Loma': Script(
+      'Loma',
+      'loma',
+    ),
+    'Lyci': Script(
+      'Lyci',
+      'lykiska',
+    ),
+    'Lydi': Script(
+      'Lydi',
+      'lydiska',
+    ),
+    'Mahj': Script(
+      'Mahj',
+      'mahajaniska',
+    ),
+    'Maka': Script(
+      'Maka',
+      'makasariska',
+    ),
+    'Mand': Script(
+      'Mand',
+      'mandaéiska',
+    ),
+    'Mani': Script(
+      'Mani',
+      'manikeanska',
+    ),
+    'Marc': Script(
+      'Marc',
+      'marchenska',
+    ),
+    'Maya': Script(
+      'Maya',
+      'mayahieroglyfer',
+    ),
+    'Medf': Script(
+      'Medf',
+      'medefaidrin',
+    ),
+    'Mend': Script(
+      'Mend',
+      'mende',
+    ),
+    'Merc': Script(
+      'Merc',
+      'kursiv-meroitiska',
+    ),
+    'Mero': Script(
+      'Mero',
+      'meroitiska',
+    ),
+    'Mlym': Script(
+      'Mlym',
+      'malayalam',
+    ),
+    'Modi': Script(
+      'Modi',
+      'modiska',
+    ),
+    'Mong': Script(
+      'Mong',
+      'mongoliska',
+    ),
+    'Moon': Script(
+      'Moon',
+      'moon',
+    ),
+    'Mroo': Script(
+      'Mroo',
+      'mru',
+    ),
+    'Mtei': Script(
+      'Mtei',
+      'meitei-mayek',
+    ),
+    'Mult': Script(
+      'Mult',
+      'multaniska',
+    ),
+    'Mymr': Script(
+      'Mymr',
+      'burmesiska',
+    ),
+    'Nand': Script(
+      'Nand',
+      'nandinagari',
+    ),
+    'Narb': Script(
+      'Narb',
+      'fornnordarabiska',
+    ),
+    'Nbat': Script(
+      'Nbat',
+      'nabateiska',
+    ),
+    'Newa': Script(
+      'Newa',
+      'newariska',
+    ),
+    'Nkgb': Script(
+      'Nkgb',
+      'naxi geba',
+    ),
+    'Nkoo': Script(
+      'Nkoo',
+      'n-kå',
+    ),
+    'Nshu': Script(
+      'Nshu',
+      'nüshu',
+    ),
+    'Ogam': Script(
+      'Ogam',
+      'ogham',
+    ),
+    'Olck': Script(
+      'Olck',
+      'ol-chiki',
+    ),
+    'Orkh': Script(
+      'Orkh',
+      'orkon',
+    ),
+    'Orya': Script(
+      'Orya',
+      'oriya',
+    ),
+    'Osge': Script(
+      'Osge',
+      'osage',
+    ),
+    'Osma': Script(
+      'Osma',
+      'osmanja',
+    ),
+    'Palm': Script(
+      'Palm',
+      'palmyreniska',
+    ),
+    'Pauc': Script(
+      'Pauc',
+      'Pau Cin Hau-skrift',
+    ),
+    'Perm': Script(
+      'Perm',
+      'fornpermiska',
+    ),
+    'Phag': Script(
+      'Phag',
+      'phags-pa',
+    ),
+    'Phli': Script(
+      'Phli',
+      'tidig pahlavi',
+    ),
+    'Phlp': Script(
+      'Phlp',
+      'psaltaren-pahlavi',
+    ),
+    'Phlv': Script(
+      'Phlv',
+      'bokpahlavi',
+    ),
+    'Phnx': Script(
+      'Phnx',
+      'feniciska',
+    ),
+    'Plrd': Script(
+      'Plrd',
+      'pollardtecken',
+    ),
+    'Prti': Script(
+      'Prti',
+      'tidig parthianska',
+    ),
+    'Qaag': Script(
+      'Qaag',
+      'zawgyi',
+    ),
+    'Rjng': Script(
+      'Rjng',
+      'rejang',
+    ),
+    'Rohg': Script(
+      'Rohg',
+      'hanifiska',
+    ),
+    'Roro': Script(
+      'Roro',
+      'rongo-rongo',
+    ),
+    'Runr': Script(
+      'Runr',
+      'runor',
+    ),
+    'Samr': Script(
+      'Samr',
+      'samaritiska',
+    ),
+    'Sara': Script(
+      'Sara',
+      'sarati',
+    ),
+    'Sarb': Script(
+      'Sarb',
+      'fornsydarabiska',
+    ),
+    'Saur': Script(
+      'Saur',
+      'saurashtra',
+    ),
+    'Sgnw': Script(
+      'Sgnw',
+      'teckningsskrift',
+    ),
+    'Shaw': Script(
+      'Shaw',
+      'shawiska',
+    ),
+    'Shrd': Script(
+      'Shrd',
+      'sharada',
+    ),
+    'Sidd': Script(
+      'Sidd',
+      'siddhamska',
+    ),
+    'Sind': Script(
+      'Sind',
+      'sindhiska',
+    ),
+    'Sinh': Script(
+      'Sinh',
+      'singalesiska',
+    ),
+    'Sogd': Script(
+      'Sogd',
+      'sogdiska',
+    ),
+    'Sogo': Script(
+      'Sogo',
+      'gammalsogdiska',
+    ),
+    'Sora': Script(
+      'Sora',
+      'sora sompeng',
+    ),
+    'Soyo': Script(
+      'Soyo',
+      'soyombo',
+    ),
+    'Sund': Script(
+      'Sund',
+      'sundanesiska',
+    ),
+    'Sylo': Script(
+      'Sylo',
+      'syloti nagri',
+    ),
+    'Syrc': Script(
+      'Syrc',
+      'syriska',
+    ),
+    'Syre': Script(
+      'Syre',
+      'estrangelosyriska',
+    ),
+    'Syrj': Script(
+      'Syrj',
+      'västsyriska',
+    ),
+    'Syrn': Script(
+      'Syrn',
+      'östsyriska',
+    ),
+    'Tagb': Script(
+      'Tagb',
+      'tagbanwa',
+    ),
+    'Takr': Script(
+      'Takr',
+      'takritiska',
+    ),
+    'Tale': Script(
+      'Tale',
+      'tai le',
+    ),
+    'Talu': Script(
+      'Talu',
+      'tai lue',
+    ),
+    'Taml': Script(
+      'Taml',
+      'tamilska',
+    ),
+    'Tang': Script(
+      'Tang',
+      'tangutiska',
+    ),
+    'Tavt': Script(
+      'Tavt',
+      'tai viet',
+    ),
+    'Telu': Script(
+      'Telu',
+      'telugu',
+    ),
+    'Teng': Script(
+      'Teng',
+      'tengwar',
+    ),
+    'Tfng': Script(
+      'Tfng',
+      'tifinaghiska',
+    ),
+    'Tglg': Script(
+      'Tglg',
+      'tagalog',
+    ),
+    'Thaa': Script(
+      'Thaa',
+      'taana',
+    ),
+    'Thai': Script(
+      'Thai',
+      'thailändska',
+    ),
+    'Tibt': Script(
+      'Tibt',
+      'tibetanska',
+    ),
+    'Tirh': Script(
+      'Tirh',
+      'tirhuta',
+    ),
+    'Ugar': Script(
+      'Ugar',
+      'ugaritiska',
+    ),
+    'Vaii': Script(
+      'Vaii',
+      'vaj',
+    ),
+    'Visp': Script(
+      'Visp',
+      'synligt tal',
+    ),
+    'Wara': Script(
+      'Wara',
+      'varang kshiti',
+    ),
+    'Wcho': Script(
+      'Wcho',
+      'wancho',
+    ),
+    'Wole': Script(
+      'Wole',
+      'woleai',
+    ),
+    'Xpeo': Script(
+      'Xpeo',
+      'fornpersiska',
+    ),
+    'Xsux': Script(
+      'Xsux',
+      'sumero-akkadisk kilskrift',
+    ),
+    'Yezi': Script(
+      'Yezi',
+      'yazidiska',
+    ),
+    'Yiii': Script(
+      'Yiii',
+      'yi',
+    ),
+    'Zanb': Script(
+      'Zanb',
+      'zanabazar kvadratisk skrift',
+    ),
+    'Zinh': Script(
+      'Zinh',
+      'ärvda',
+    ),
+    'Zmth': Script(
+      'Zmth',
+      'matematisk notation',
+    ),
+    'Zsye': Script(
+      'Zsye',
+      'emoji',
+    ),
+    'Zsym': Script(
+      'Zsym',
+      'symboler',
+    ),
+    'Zxxx': Script(
+      'Zxxx',
+      'oskrivet språk',
+    ),
+    'Zyyy': Script(
+      'Zyyy',
+      'gemensamma',
+    ),
+    'Zzzz': Script(
+      'Zzzz',
+      'okänt skriftsystem',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class VariantsSv extends Variants {
+  VariantsSv._();
+
+  @override
+  final variants = CanonicalizedMap<String, String, Variant>.from({
+    '1901': Variant(
+      '1901',
+      'traditionell tysk stavning',
+    ),
+    '1994': Variant(
+      '1994',
+      '1994 års resisk stavning',
+    ),
+    '1996': Variant(
+      '1996',
+      '1996 års reformerad tysk stavning',
+    ),
+    '1606NICT': Variant(
+      '1606NICT',
+      '1606 års stavning',
+    ),
+    '1694ACAD': Variant(
+      '1694ACAD',
+      '1694 års stavning',
+    ),
+    '1959ACAD': Variant(
+      '1959ACAD',
+      '1959 års stavning',
+    ),
+    'ABL1943': Variant(
+      'ABL1943',
+      '1943 års stavning',
+    ),
+    'ALALC97': Variant(
+      'ALALC97',
+      '1997 års ALA-LC',
+    ),
+    'ALUKU': Variant(
+      'ALUKU',
+      'Aluku-dialekt',
+    ),
+    'AO1990': Variant(
+      'AO1990',
+      'stavning enligt 1990 års överenskommelse',
+    ),
+    'AREVELA': Variant(
+      'AREVELA',
+      'östarmeniska',
+    ),
+    'AREVMDA': Variant(
+      'AREVMDA',
+      'västarmeniska',
+    ),
+    'BAKU1926': Variant(
+      'BAKU1926',
+      '1926 års stavning',
+    ),
+    'BALANKA': Variant(
+      'BALANKA',
+      'balanka-dialekt',
+    ),
+    'BARLA': Variant(
+      'BARLA',
+      'barlavento-dialekt',
+    ),
+    'BISKE': Variant(
+      'BISKE',
+      'Bila-dialekt',
+    ),
+    'BOHORIC': Variant(
+      'BOHORIC',
+      'Bohorič-alfabetet',
+    ),
+    'BOONT': Variant(
+      'BOONT',
+      'boontling',
+    ),
+    'COLB1945': Variant(
+      'COLB1945',
+      'stavning enligt 1945 års konvention mellan Portugal och Brasilien',
+    ),
+    'DAJNKO': Variant(
+      'DAJNKO',
+      'Dajnko-alfabetet',
+    ),
+    'EKAVSK': Variant(
+      'EKAVSK',
+      'ekavisk dialekt',
+    ),
+    'EMODENG': Variant(
+      'EMODENG',
+      'tidig modern engelska',
+    ),
+    'FONIPA': Variant(
+      'FONIPA',
+      'internationell fonetisk notation - IPA',
+    ),
+    'FONUPA': Variant(
+      'FONUPA',
+      'uralisk fonetisk notation',
+    ),
+    'HEPBURN': Variant(
+      'HEPBURN',
+      'Hepburn',
+    ),
+    'IJEKAVSK': Variant(
+      'IJEKAVSK',
+      'ijekavisk dialekt',
+    ),
+    'KKCOR': Variant(
+      'KKCOR',
+      'vanlig stavning',
+    ),
+    'KSCOR': Variant(
+      'KSCOR',
+      'standardstavning',
+    ),
+    'LIPAW': Variant(
+      'LIPAW',
+      'Lipovaz-dialekt',
+    ),
+    'METELKO': Variant(
+      'METELKO',
+      'Metelko-alfabetet',
+    ),
+    'MONOTON': Variant(
+      'MONOTON',
+      'monotonisk stavning',
+    ),
+    'NDYUKA': Variant(
+      'NDYUKA',
+      'Ndyuka-dialekt',
+    ),
+    'NEDIS': Variant(
+      'NEDIS',
+      'natisonsk dialekt',
+    ),
+    'NJIVA': Variant(
+      'NJIVA',
+      'Njiva-dialekt',
+    ),
+    'NULIK': Variant(
+      'NULIK',
+      'nulik-stavning',
+    ),
+    'OSOJS': Variant(
+      'OSOJS',
+      'Osojane-dialekt',
+    ),
+    'OXENDICT': Variant(
+      'OXENDICT',
+      'Oxford-stavning',
+    ),
+    'PAMAKA': Variant(
+      'PAMAKA',
+      'Pamaka-dialekt',
+    ),
+    'PINYIN': Variant(
+      'PINYIN',
+      'pinyin',
+    ),
+    'POLYTON': Variant(
+      'POLYTON',
+      'polytonisk stavning',
+    ),
+    'POSIX': Variant(
+      'POSIX',
+      'Posix',
+    ),
+    'REVISED': Variant(
+      'REVISED',
+      'reformerad stavning',
+    ),
+    'RIGIK': Variant(
+      'RIGIK',
+      'klassisk volapük',
+    ),
+    'ROZAJ': Variant(
+      'ROZAJ',
+      'resisk dialekt',
+    ),
+    'SAAHO': Variant(
+      'SAAHO',
+      'saho-dialekt',
+    ),
+    'SCOTLAND': Variant(
+      'SCOTLAND',
+      'skotsk engelska',
+    ),
+    'SCOUSE': Variant(
+      'SCOUSE',
+      'scouse',
+    ),
+    'SOLBA': Variant(
+      'SOLBA',
+      'Solbica-dialekt',
+    ),
+    'SOTAV': Variant(
+      'SOTAV',
+      'sotavento-dialekt',
+    ),
+    'TARASK': Variant(
+      'TARASK',
+      'Taraskievika-stavning',
+    ),
+    'UCCOR': Variant(
+      'UCCOR',
+      'unifierad stavning',
+    ),
+    'UCRCOR': Variant(
+      'UCRCOR',
+      'reviderad unifierad stavning',
+    ),
+    'UNIFON': Variant(
+      'UNIFON',
+      'unifon-skrift',
+    ),
+    'VALENCIA': Variant(
+      'VALENCIA',
+      'valensisk dialekt',
+    ),
+    'WADEGILE': Variant(
+      'WADEGILE',
+      'Wade-Giles',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
 class UnitsSv implements Units {
   UnitsSv._();
 
@@ -2689,7 +3729,7 @@ class UnitsSv implements Units {
       );
   @override
   UnitPrefix get pattern10pMinus12 => UnitPrefix(
-        long: UnitPrefixPattern('pico{0}'),
+        long: UnitPrefixPattern('piko{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
@@ -2716,6 +3756,18 @@ class UnitsSv implements Units {
         long: UnitPrefixPattern('yokto{0}'),
         short: UnitPrefixPattern('y{0}'),
         narrow: UnitPrefixPattern('y{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+        long: UnitPrefixPattern('ronto{0}'),
+        short: UnitPrefixPattern('r{0}'),
+        narrow: UnitPrefixPattern('r{0}'),
+      );
+  @override
+  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+        long: UnitPrefixPattern('q{0}'),
+        short: UnitPrefixPattern('q{0}'),
+        narrow: UnitPrefixPattern('q{0}'),
       );
   @override
   UnitPrefix get pattern10p1 => UnitPrefix(
@@ -2778,6 +3830,18 @@ class UnitsSv implements Units {
         narrow: UnitPrefixPattern('Y{0}'),
       );
   @override
+  UnitPrefix get pattern10p27 => UnitPrefix(
+        long: UnitPrefixPattern('ronna{0}'),
+        short: UnitPrefixPattern('R{0}'),
+        narrow: UnitPrefixPattern('R{0}'),
+      );
+  @override
+  UnitPrefix get pattern10p30 => UnitPrefix(
+        long: UnitPrefixPattern('quetta{0}'),
+        short: UnitPrefixPattern('Q{0}'),
+        narrow: UnitPrefixPattern('Q{0}'),
+      );
+  @override
   UnitPrefix get pattern1024p1 => UnitPrefix(
         long: UnitPrefixPattern('kibi{0}'),
         short: UnitPrefixPattern('Ki{0}'),
@@ -2833,7 +3897,7 @@ class UnitsSv implements Units {
       );
   @override
   CompoundUnit get times => CompoundUnit(
-        long: CompoundUnitPattern('{0}-{1}'),
+        long: CompoundUnitPattern('{0}–{1}'),
         short: CompoundUnitPattern('{0}⋅{1}'),
         narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
@@ -2848,7 +3912,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'g-kraft',
-          one: '{0} G',
+          one: '{0} g-kraft',
           other: '{0} G',
         ),
         narrow: UnitCountPattern(
@@ -2870,7 +3934,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s²',
-          one: '{0} m/s²',
+          one: '{0} meter per kvadratsekund',
           other: '{0} m/s²',
         ),
         narrow: UnitCountPattern(
@@ -2914,7 +3978,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'radianer',
-          one: '{0} rad',
+          one: '{0} radian',
           other: '{0} rad',
         ),
         narrow: UnitCountPattern(
@@ -2936,13 +4000,13 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'grader',
-          one: '{0}°',
+          one: '{0} grad',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grad',
           other: '{0}°',
         ),
       );
@@ -2958,13 +4022,13 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'bågminuter',
-          one: '{0}′',
+          one: '{0} bågminut',
           other: '{0}′',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bågmin',
-          one: '{0}′',
+          one: '{0} bågminut',
           other: '{0}′',
         ),
       );
@@ -2980,13 +4044,13 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'bågsekunder',
-          one: '{0}″',
+          one: '{0} bågsekund',
           other: '{0}″',
         ),
         narrow: UnitCountPattern(
           _locale,
           'bågsek',
-          one: '{0}″',
+          one: '{0} bågsekund',
           other: '{0}″',
         ),
       );
@@ -3002,7 +4066,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'km²',
-          one: '{0} km²',
+          one: '{0} kvadratkilometer',
           other: '{0} km²',
         ),
         narrow: UnitCountPattern(
@@ -3024,7 +4088,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'hektar',
-          one: '{0} ha',
+          one: '{0} hektar',
           other: '{0} ha',
         ),
         narrow: UnitCountPattern(
@@ -3046,7 +4110,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'm²',
-          one: '{0} m²',
+          one: '{0} kvadratmeter',
           other: '{0} m²',
         ),
         narrow: UnitCountPattern(
@@ -3068,7 +4132,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'cm²',
-          one: '{0} cm²',
+          one: '{0} kvadratcentimeter',
           other: '{0} cm²',
         ),
         narrow: UnitCountPattern(
@@ -3112,7 +4176,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'eng. tunnland',
-          one: '{0} ac',
+          one: '{0} engelskt tunnland',
           other: '{0} ac',
         ),
         narrow: UnitCountPattern(
@@ -3134,7 +4198,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'yard²',
-          one: '{0} yd²',
+          one: '{0} kvadratyard',
           other: '{0} yd²',
         ),
         narrow: UnitCountPattern(
@@ -3194,11 +4258,13 @@ class UnitsSv implements Units {
         long: UnitCountPattern(
           _locale,
           'dunam',
+          one: '{0} dunam',
           other: '{0} dunam',
         ),
         short: UnitCountPattern(
           _locale,
           'dunam',
+          one: '{0} dunam',
           other: '{0} dunam',
         ),
         narrow: UnitCountPattern(
@@ -3308,7 +4374,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'miljondelar',
-          one: '{0} ppm',
+          one: '{0} miljondel',
           other: '{0} ppm',
         ),
         narrow: UnitCountPattern(
@@ -3396,6 +4462,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mol',
+          one: '{0} mol',
           other: '{0} mol',
         ),
         narrow: UnitCountPattern(
@@ -3505,7 +4572,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'PB',
-          one: '{0} PB',
+          one: '{0} petabyte',
           other: '{0} PB',
         ),
         narrow: UnitCountPattern(
@@ -3527,7 +4594,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'TB',
-          one: '{0} TB',
+          one: '{0} terabyte',
           other: '{0} TB',
         ),
         narrow: UnitCountPattern(
@@ -3549,7 +4616,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'Tb',
-          one: '{0} Tb',
+          one: '{0} terabit',
           other: '{0} Tb',
         ),
         narrow: UnitCountPattern(
@@ -3571,7 +4638,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'GB',
-          one: '{0} GB',
+          one: '{0} gigabyte',
           other: '{0} GB',
         ),
         narrow: UnitCountPattern(
@@ -3593,7 +4660,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'Gb',
-          one: '{0} Gb',
+          one: '{0} gigabit',
           other: '{0} Gb',
         ),
         narrow: UnitCountPattern(
@@ -3615,7 +4682,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'MB',
-          one: '{0} MB',
+          one: '{0} megabyte',
           other: '{0} MB',
         ),
         narrow: UnitCountPattern(
@@ -3637,7 +4704,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'Mb',
-          one: '{0} Mb',
+          one: '{0} megabit',
           other: '{0} Mb',
         ),
         narrow: UnitCountPattern(
@@ -3659,7 +4726,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kB',
-          one: '{0} kB',
+          one: '{0} kilobyte',
           other: '{0} kB',
         ),
         narrow: UnitCountPattern(
@@ -3681,7 +4748,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kb',
-          one: '{0} kb',
+          one: '{0} kilobit',
           other: '{0} kb',
         ),
         narrow: UnitCountPattern(
@@ -3879,7 +4946,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'dygn',
-          one: '{0} d',
+          one: '{0} dygn',
           other: '{0} d',
         ),
         narrow: UnitCountPattern(
@@ -3923,7 +4990,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'min',
-          one: '{0} min',
+          one: '{0} minut',
           other: '{0} min',
         ),
         narrow: UnitCountPattern(
@@ -3945,7 +5012,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'sek',
-          one: '{0} s',
+          one: '{0} sekund',
           other: '{0} s',
         ),
         narrow: UnitCountPattern(
@@ -3967,7 +5034,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'ms',
-          one: '{0} ms',
+          one: '{0} millisekund',
           other: '{0} ms',
         ),
         narrow: UnitCountPattern(
@@ -3989,7 +5056,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'μs',
-          one: '{0} μs',
+          one: '{0} mikrosekund',
           other: '{0} μs',
         ),
         narrow: UnitCountPattern(
@@ -4011,7 +5078,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'ns',
-          one: '{0} ns',
+          one: '{0} nanosekund',
           other: '{0} ns',
         ),
         narrow: UnitCountPattern(
@@ -4033,7 +5100,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'A',
-          one: '{0} A',
+          one: '{0} ampere',
           other: '{0} A',
         ),
         narrow: UnitCountPattern(
@@ -4055,7 +5122,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mA',
-          one: '{0} mA',
+          one: '{0} milliampere',
           other: '{0} mA',
         ),
         narrow: UnitCountPattern(
@@ -4077,7 +5144,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'ohm',
-          one: '{0} Ω',
+          one: '{0} ohm',
           other: '{0} Ω',
         ),
         narrow: UnitCountPattern(
@@ -4099,7 +5166,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'volt',
-          one: '{0} V',
+          one: '{0} volt',
           other: '{0} V',
         ),
         narrow: UnitCountPattern(
@@ -4121,7 +5188,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kcal',
-          one: '{0} kcal',
+          one: '{0} kilokalori',
           other: '{0} kcal',
         ),
         narrow: UnitCountPattern(
@@ -4143,7 +5210,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'cal',
-          one: '{0} cal',
+          one: '{0} kalori',
           other: '{0} cal',
         ),
         narrow: UnitCountPattern(
@@ -4164,13 +5231,13 @@ class UnitsSv implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'kcal',
-          one: '{0} kcal',
-          other: '{0} kcal',
+          'kilokalorier',
+          one: '{0} kilokalori',
+          other: '{0} kilokalorier',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'kcal',
+          'kilokalorier',
           one: '{0}kcal',
           other: '{0}kcal',
         ),
@@ -4187,7 +5254,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kJ',
-          one: '{0} kJ',
+          one: '{0} kilojoule',
           other: '{0} kJ',
         ),
         narrow: UnitCountPattern(
@@ -4209,7 +5276,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'J',
-          one: '{0} J',
+          one: '{0} joule',
           other: '{0} J',
         ),
         narrow: UnitCountPattern(
@@ -4231,7 +5298,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kWh',
-          one: '{0} kWh',
+          one: '{0} kilowattimme',
           other: '{0} kWh',
         ),
         narrow: UnitCountPattern(
@@ -4253,6 +5320,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'eV',
+          one: '{0} elektronvolt',
           other: '{0} eV',
         ),
         narrow: UnitCountPattern(
@@ -4274,6 +5342,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'BTU',
+          one: '{0} British thermal unit',
           other: '{0} Btu',
         ),
         narrow: UnitCountPattern(
@@ -4317,6 +5386,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'pound-force',
+          one: '{0} pound of force',
           other: '{0} lbf',
         ),
         narrow: UnitCountPattern(
@@ -4338,6 +5408,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'newton',
+          one: '{0} newton',
           other: '{0} N',
         ),
         narrow: UnitCountPattern(
@@ -4381,7 +5452,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'GHz',
-          one: '{0} GHz',
+          one: '{0} gigahertz',
           other: '{0} GHz',
         ),
         narrow: UnitCountPattern(
@@ -4403,7 +5474,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'MHz',
-          one: '{0} MHz',
+          one: '{0} megahertz',
           other: '{0} MHz',
         ),
         narrow: UnitCountPattern(
@@ -4425,6 +5496,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kHz',
+          one: '{0} kilohertz',
           other: '{0} kHz',
         ),
         narrow: UnitCountPattern(
@@ -4446,7 +5518,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'Hz',
-          one: '{0} Hz',
+          one: '{0} hertz',
           other: '{0} Hz',
         ),
         narrow: UnitCountPattern(
@@ -4490,11 +5562,13 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} pixel',
           other: '{0} px',
         ),
         narrow: UnitCountPattern(
           _locale,
           'px',
+          one: '{0} pixel',
           other: '{0} px',
         ),
       );
@@ -4575,15 +5649,15 @@ class UnitsSv implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'd/cm',
-          one: '{0} d/cm',
-          other: '{0} d/cm',
+          'dpcm',
+          one: '{0} dpcm',
+          other: '{0} dpcm',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'd/cm',
-          one: '{0}d/cm',
-          other: '{0}d/cm',
+          'dpcm',
+          one: '{0}dpcm',
+          other: '{0}dpcm',
         ),
       );
 
@@ -4597,15 +5671,15 @@ class UnitsSv implements Units {
         ),
         short: UnitCountPattern(
           _locale,
-          'd/tum',
-          one: '{0} d/tum',
-          other: '{0} d/tum',
+          'dpi',
+          one: '{0} dpi',
+          other: '{0} dpi',
         ),
         narrow: UnitCountPattern(
           _locale,
-          'd/tum',
-          one: '{0}d/tum',
-          other: '{0}d/tum',
+          'dpi',
+          one: '{0}dpi',
+          other: '{0}dpi',
         ),
       );
 
@@ -4614,13 +5688,14 @@ class UnitsSv implements Units {
         long: UnitCountPattern(
           _locale,
           'punkt',
-          one: '{0} px',
+          one: '{0} punkt',
           other: '{0} punkter',
         ),
         short: UnitCountPattern(
           _locale,
-          'pixlar',
-          other: '{0}pkt',
+          'punkt',
+          one: '{0} p',
+          other: '{0} p',
         ),
         narrow: UnitCountPattern(
           _locale,
@@ -4641,6 +5716,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'R⊕',
+          one: '{0} jordradie',
           other: '{0} R⊕',
         ),
         narrow: UnitCountPattern(
@@ -4662,7 +5738,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'km',
-          one: '{0} km',
+          one: '{0} kilometer',
           other: '{0} km',
         ),
         narrow: UnitCountPattern(
@@ -4684,7 +5760,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'm',
-          one: '{0} m',
+          one: '{0} meter',
           other: '{0} m',
         ),
         narrow: UnitCountPattern(
@@ -4706,7 +5782,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'dm',
-          one: '{0} dm',
+          one: '{0} decimeter',
           other: '{0} dm',
         ),
         narrow: UnitCountPattern(
@@ -4728,7 +5804,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'cm',
-          one: '{0} cm',
+          one: '{0} centimeter',
           other: '{0} cm',
         ),
         narrow: UnitCountPattern(
@@ -4750,7 +5826,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mm',
-          one: '{0} mm',
+          one: '{0} millimeter',
           other: '{0} mm',
         ),
         narrow: UnitCountPattern(
@@ -4772,7 +5848,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'μm',
-          one: '{0} μm',
+          one: '{0} mikrometer',
           other: '{0} μm',
         ),
         narrow: UnitCountPattern(
@@ -4794,7 +5870,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'nm',
-          one: '{0} nm',
+          one: '{0} nanometer',
           other: '{0} nm',
         ),
         narrow: UnitCountPattern(
@@ -4816,13 +5892,13 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} pikometer',
           other: '{0} pm',
         ),
         narrow: UnitCountPattern(
           _locale,
           'pm',
-          one: '{0} pm',
+          one: '{0} pikometer',
           other: '{0} pm',
         ),
       );
@@ -4838,7 +5914,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mile',
-          one: '{0} mi',
+          one: '{0} mile',
           other: '{0} mi',
         ),
         narrow: UnitCountPattern(
@@ -4860,7 +5936,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'yard',
-          one: '{0} yd',
+          one: '{0} yard',
           other: '{0} yd',
         ),
         narrow: UnitCountPattern(
@@ -5102,6 +6178,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'R☉',
+          one: '{0} solradie',
           other: '{0} R☉',
         ),
         narrow: UnitCountPattern(
@@ -5145,6 +6222,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'cd',
+          one: '{0} candela',
           other: '{0} cd',
         ),
         narrow: UnitCountPattern(
@@ -5166,7 +6244,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'lm',
-          one: '{0} lm',
+          one: '{0} lumen',
           other: '{0} lm',
         ),
         narrow: UnitCountPattern(
@@ -5188,6 +6266,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'L☉',
+          one: '{0} solluminositet',
           other: '{0} L☉',
         ),
         narrow: UnitCountPattern(
@@ -5209,7 +6288,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           't',
-          one: '{0} t',
+          one: '{0} ton',
           other: '{0} t',
         ),
         narrow: UnitCountPattern(
@@ -5231,7 +6310,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kg',
-          one: '{0} kg',
+          one: '{0} kilogram',
           other: '{0} kg',
         ),
         narrow: UnitCountPattern(
@@ -5253,7 +6332,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'g',
-          one: '{0} g',
+          one: '{0} gram',
           other: '{0} g',
         ),
         narrow: UnitCountPattern(
@@ -5275,7 +6354,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mg',
-          one: '{0} mg',
+          one: '{0} milligram',
           other: '{0} mg',
         ),
         narrow: UnitCountPattern(
@@ -5297,7 +6376,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'μg',
-          one: '{0} μg',
+          one: '{0} mikrogram',
           other: '{0} μg',
         ),
         narrow: UnitCountPattern(
@@ -5451,6 +6530,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'dalton',
+          one: '{0} dalton',
           other: '{0} Da',
         ),
         narrow: UnitCountPattern(
@@ -5472,6 +6552,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'M⊕',
+          one: '{0} jordmassa',
           other: '{0} M⊕',
         ),
         narrow: UnitCountPattern(
@@ -5493,6 +6574,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'M☉',
+          one: '{0} solmassa',
           other: '{0} M☉',
         ),
         narrow: UnitCountPattern(
@@ -5514,6 +6596,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'grain',
+          one: '{0} grain',
           other: '{0} grain',
         ),
         narrow: UnitCountPattern(
@@ -5535,7 +6618,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'GW',
-          one: '{0} GW',
+          one: '{0} gigawatt',
           other: '{0} GW',
         ),
         narrow: UnitCountPattern(
@@ -5557,7 +6640,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'MW',
-          one: '{0} MW',
+          one: '{0} megawatt',
           other: '{0} MW',
         ),
         narrow: UnitCountPattern(
@@ -5579,7 +6662,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kW',
-          one: '{0} kW',
+          one: '{0} kilowatt',
           other: '{0} kW',
         ),
         narrow: UnitCountPattern(
@@ -5601,7 +6684,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'W',
-          one: '{0} W',
+          one: '{0} watt',
           other: '{0} W',
         ),
         narrow: UnitCountPattern(
@@ -5623,7 +6706,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mW',
-          one: '{0} mW',
+          one: '{0} milliwatt',
           other: '{0} mW',
         ),
         narrow: UnitCountPattern(
@@ -5667,7 +6750,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mm Hg',
-          one: '{0} mm Hg',
+          one: '{0} millimeter kvicksilver',
           other: '{0} mm Hg',
         ),
         narrow: UnitCountPattern(
@@ -5689,7 +6772,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'psi',
-          one: '{0} psi',
+          one: '{0} pund per kvadrattum',
           other: '{0} psi',
         ),
         narrow: UnitCountPattern(
@@ -5733,6 +6816,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'bar',
+          one: '{0} bar',
           other: '{0} bar',
         ),
         narrow: UnitCountPattern(
@@ -5754,7 +6838,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mbar',
-          one: '{0} mbar',
+          one: '{0} millibar',
           other: '{0} mbar',
         ),
         narrow: UnitCountPattern(
@@ -5776,7 +6860,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'atm',
-          one: '{0} atm',
+          one: '{0} atmosfär',
           other: '{0} atm',
         ),
         narrow: UnitCountPattern(
@@ -5798,6 +6882,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'Pa',
+          one: '{0} pascal',
           other: '{0} Pa',
         ),
         narrow: UnitCountPattern(
@@ -5819,7 +6904,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'hPa',
-          one: '{0} hPa',
+          one: '{0} hektopascal',
           other: '{0} hPa',
         ),
         narrow: UnitCountPattern(
@@ -5841,6 +6926,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'kPa',
+          one: '{0} kilopascal',
           other: '{0} kPa',
         ),
         narrow: UnitCountPattern(
@@ -5862,6 +6948,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'MPa',
+          one: '{0} megapascal',
           other: '{0} MPa',
         ),
         narrow: UnitCountPattern(
@@ -5883,7 +6970,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'km/h',
-          one: '{0} km/h',
+          one: '{0} kilometer per timme',
           other: '{0} km/h',
         ),
         narrow: UnitCountPattern(
@@ -5905,7 +6992,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'm/s',
-          one: '{0} m/s',
+          one: '{0} meter per sekund',
           other: '{0} m/s',
         ),
         narrow: UnitCountPattern(
@@ -5927,7 +7014,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mile/timme',
-          one: '{0} mi/h',
+          one: '{0} mile per timme',
           other: '{0} mi/h',
         ),
         narrow: UnitCountPattern(
@@ -5961,6 +7048,28 @@ class UnitsSv implements Units {
       );
 
   @override
+  Unit get speedBeaufort => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'Beaufort',
+          one: 'Beaufort {0}',
+          other: 'Beaufort {0}',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          other: 'B {0}',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'Bft',
+          one: 'Beaufort {0}',
+          other: 'B {0}',
+        ),
+      );
+
+  @override
   Unit get temperatureGeneric => Unit(
         long: UnitCountPattern(
           _locale,
@@ -5971,13 +7080,13 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grad',
           other: '{0}°',
         ),
         narrow: UnitCountPattern(
           _locale,
           '°',
-          one: '{0}°',
+          one: '{0} grad',
           other: '{0}°',
         ),
       );
@@ -6037,7 +7146,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'K',
-          one: '{0} K',
+          one: '{0} kelvin',
           other: '{0} K',
         ),
         narrow: UnitCountPattern(
@@ -6059,6 +7168,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'lbf⋅ft',
+          one: '{0} pound-force-foot',
           other: '{0} lbf⋅ft',
         ),
         narrow: UnitCountPattern(
@@ -6102,7 +7212,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'km³',
-          one: '{0} km³',
+          one: '{0} kubikkilometer',
           other: '{0} km³',
         ),
         narrow: UnitCountPattern(
@@ -6124,7 +7234,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'm³',
-          one: '{0} m³',
+          one: '{0} kubikmeter',
           other: '{0} m³',
         ),
         narrow: UnitCountPattern(
@@ -6146,7 +7256,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'cm³',
-          one: '{0} cm³',
+          one: '{0} kubikcentimeter',
           other: '{0} cm³',
         ),
         narrow: UnitCountPattern(
@@ -6168,7 +7278,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mi³',
-          one: '{0} mi³',
+          one: '{0} kubikmile',
           other: '{0} mi³',
         ),
         narrow: UnitCountPattern(
@@ -6190,7 +7300,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'yard³',
-          one: '{0} yd³',
+          one: '{0} kubikyard',
           other: '{0} yd³',
         ),
         narrow: UnitCountPattern(
@@ -6300,7 +7410,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'liter',
-          one: '{0} l',
+          one: '{0} liter',
           other: '{0} l',
         ),
         narrow: UnitCountPattern(
@@ -6388,6 +7498,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'mpt',
+          one: '{0} metrisk pint',
           other: '{0} mpt',
         ),
         narrow: UnitCountPattern(
@@ -6541,7 +7652,7 @@ class UnitsSv implements Units {
         short: UnitCountPattern(
           _locale,
           'pint',
-          one: '{0} pt',
+          one: '{0} pint',
           other: '{0} pt',
         ),
         narrow: UnitCountPattern(
@@ -6837,6 +7948,94 @@ class UnitsSv implements Units {
           other: '{0}br.qt',
         ),
       );
+
+  @override
+  Unit get pressureGasolineEnergyDensity => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'of gasoline equivalent',
+          one: '{0} of gasoline equivalent',
+          other: '{0} of gasoline equivalent',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0} gas-equiv',
+          other: '{0} gas-equiv',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'gas-equiv',
+          one: '{0}gas-equiv',
+          other: '{0}gas-equiv',
+        ),
+      );
+
+  @override
+  Unit get speedLightSpeed => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'ljus',
+          one: '{0} ljus',
+          other: '{0} ljus',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ljus',
+          one: '{0} ljus',
+          other: '{0} ljus',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ljs',
+          one: '{0}ljs',
+          other: '{0}ljs',
+        ),
+      );
+
+  @override
+  Unit get concentrPortionPer1e9 => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'miljarddelar',
+          one: '{0} miljarddel',
+          other: '{0} miljarddelar',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0} miljarddel',
+          other: '{0} ppb',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'ppb',
+          one: '{0}ppb',
+          other: '{0}ppb',
+        ),
+      );
+
+  @override
+  Unit get durationNight => Unit(
+        long: UnitCountPattern(
+          _locale,
+          'nätter',
+          one: '{0} natt',
+          other: '{0} nätter',
+        ),
+        short: UnitCountPattern(
+          _locale,
+          'nätter',
+          one: '{0} natt',
+          other: '{0} nätter',
+        ),
+        narrow: UnitCountPattern(
+          _locale,
+          'nttr',
+          one: '{0}ntt',
+          other: '{0}nttr',
+        ),
+      );
 }
 
 class DateFieldsSv implements DateFields {
@@ -6969,7 +8168,7 @@ class DateFieldsSv implements DateFields {
   DateFieldFullData get month => DateFieldFullData(
         displayName: MultiLength(
           long: 'månad',
-          short: 'm',
+          short: 'mån',
           narrow: 'mån',
         ),
         previous: MultiLength(
@@ -6978,7 +8177,7 @@ class DateFieldsSv implements DateFields {
           narrow: 'förra mån.',
         ),
         now: MultiLength(
-          long: 'denna månad',
+          long: 'den här månaden',
           short: 'denna mån.',
           narrow: 'denna mån.',
         ),
@@ -7027,8 +8226,8 @@ class DateFieldsSv implements DateFields {
   DateFieldFullData get week => DateFieldFullData(
         displayName: MultiLength(
           long: 'vecka',
-          short: 'v',
-          narrow: 'v',
+          short: 'v.',
+          narrow: 'v.',
         ),
         previous: MultiLength(
           long: 'förra veckan',
@@ -7084,16 +8283,16 @@ class DateFieldsSv implements DateFields {
   @override
   MultiLength get weekOfMonth => MultiLength(
         long: 'vecka i månaden',
-        short: 'vk. i mån.',
-        narrow: 'vk.i mån.',
+        short: 'v. i mån.',
+        narrow: 'v i mån',
       );
 
   @override
   DateFieldFullData get day => DateFieldFullData(
         displayName: MultiLength(
           long: 'dag',
-          short: 'dag',
-          narrow: 'dag',
+          short: 'd.',
+          narrow: 'd',
         ),
         previous: MultiLength(
           long: 'i går',
@@ -7149,22 +8348,22 @@ class DateFieldsSv implements DateFields {
   @override
   MultiLength get dayOfYear => MultiLength(
         long: 'dag under året',
-        short: 'dag under året',
-        narrow: 'dag under året',
+        short: 'd. under å.',
+        narrow: 'd u å',
       );
 
   @override
   MultiLength get weekday => MultiLength(
         long: 'veckodag',
-        short: 'veckodag',
-        narrow: 'veckodag',
+        short: 'veckod.',
+        narrow: 'vd',
       );
 
   @override
   MultiLength get weekdayOfMonth => MultiLength(
         long: 'veckodag i månad',
         short: 'veckodag i mån.',
-        narrow: 'veckodag i mån.',
+        narrow: 'vd i m',
       );
 
   @override
@@ -7775,7 +8974,7 @@ class TerritoriesSv implements Territories {
   @override
   Territory get northernAmerica => Territory(
         '021',
-        'Norra Amerika',
+        'norra Amerika',
       );
 
   @override
@@ -8040,7 +9239,7 @@ class TerritoriesSv implements Territories {
     ),
     'BY': Territory(
       'BY',
-      'Vitryssland',
+      'Belarus',
     ),
     'BZ': Territory(
       'BZ',
@@ -8074,7 +9273,7 @@ class TerritoriesSv implements Territories {
     ),
     'CI': Territory(
       'CI',
-      'Côte d’Ivoire',
+      'Elfenbenskusten',
       variant: 'Côte d’Ivoire',
     ),
     'CK': Territory(
@@ -8100,6 +9299,10 @@ class TerritoriesSv implements Territories {
     'CP': Territory(
       'CP',
       'Clippertonön',
+    ),
+    'CQ': Territory(
+      'CQ',
+      'okänd region (CQ)',
     ),
     'CR': Territory(
       'CR',
@@ -8956,6 +10159,1560 @@ class TerritoriesSv implements Territories {
     'ZW': Territory(
       'ZW',
       'Zimbabwe',
+    ),
+  }, (key) => key.toLowerCase());
+}
+
+class TimeZonesSv extends TimeZones {
+  TimeZonesSv._(Territories territories)
+      : super(_locale, territories,
+            hourFormat: '+HH:mm;−HH:mm',
+            gmtFormat: 'GMT{0}',
+            gmtZeroFormat: 'GMT',
+            regionFormat: '{0}tid',
+            regionFormatDaylight: '{0} (sommartid)',
+            regionFormatStandard: '{0} (normaltid)',
+            fallbackFormat: '{1} ({0})');
+
+  @override
+  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+    'America/Araguaina': TimeZoneNames(
+      exemplarCity: 'Araguaína',
+    ),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Río Gallegos',
+    ),
+    'America/Argentina/Tucuman': TimeZoneNames(
+      exemplarCity: 'Tucumán',
+    ),
+    'America/Asuncion': TimeZoneNames(
+      exemplarCity: 'Asunción',
+    ),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'Bahía de Banderas',
+    ),
+    'America/Belem': TimeZoneNames(
+      exemplarCity: 'Belém',
+    ),
+    'America/Bogota': TimeZoneNames(
+      exemplarCity: 'Bogotá',
+    ),
+    'America/Cancun': TimeZoneNames(
+      exemplarCity: 'Cancún',
+    ),
+    'America/Cayman': TimeZoneNames(
+      exemplarCity: 'Caymanöarna',
+    ),
+    'America/Ciudad_Juarez': TimeZoneNames(
+      exemplarCity: 'Ciudad Juárez',
+    ),
+    'America/Coral_Harbour': TimeZoneNames(
+      exemplarCity: 'Atikokan',
+    ),
+    'America/Cordoba': TimeZoneNames(
+      exemplarCity: 'Córdoba',
+    ),
+    'America/Cuiaba': TimeZoneNames(
+      exemplarCity: 'Cuiabá',
+    ),
+    'America/Curacao': TimeZoneNames(
+      exemplarCity: 'Curaçao',
+    ),
+    'America/Eirunepe': TimeZoneNames(
+      exemplarCity: 'Eirunepé',
+    ),
+    'America/Godthab': TimeZoneNames(
+      exemplarCity: 'Nuuk',
+    ),
+    'America/Havana': TimeZoneNames(
+      exemplarCity: 'Havanna',
+    ),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Tell City, Indiana',
+    ),
+    'America/Indiana/Knox': TimeZoneNames(
+      exemplarCity: 'Knox, Indiana',
+    ),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Winamac, Indiana',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'Marengo, Indiana',
+    ),
+    'America/Indiana/Vevay': TimeZoneNames(
+      exemplarCity: 'Vevay, Indiana',
+    ),
+    'America/Jujuy': TimeZoneNames(
+      exemplarCity: 'San Salvador de Jujuy',
+    ),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
+    'America/Maceio': TimeZoneNames(
+      exemplarCity: 'Maceió',
+    ),
+    'America/Mazatlan': TimeZoneNames(
+      exemplarCity: 'Mazatlán',
+    ),
+    'America/Merida': TimeZoneNames(
+      exemplarCity: 'Mérida',
+    ),
+    'America/Noronha': TimeZoneNames(
+      exemplarCity: 'Fernando de Noronha',
+    ),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Beulah, North Dakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'New Salem, North Dakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Center, North Dakota',
+    ),
+    'America/Santarem': TimeZoneNames(
+      exemplarCity: 'Santarém',
+    ),
+    'America/Sao_Paulo': TimeZoneNames(
+      exemplarCity: 'São Paulo',
+    ),
+    'America/Scoresbysund': TimeZoneNames(
+      exemplarCity: 'Ittoqqortoormiit',
+    ),
+    'America/St_Barthelemy': TimeZoneNames(
+      exemplarCity: 'Saint-Barthélemy',
+    ),
+    'America/St_Johns': TimeZoneNames(
+      exemplarCity: 'Saint John’s',
+    ),
+    'America/St_Kitts': TimeZoneNames(
+      exemplarCity: 'Saint Kitts',
+    ),
+    'America/St_Lucia': TimeZoneNames(
+      exemplarCity: 'Saint Lucia',
+    ),
+    'America/St_Thomas': TimeZoneNames(
+      exemplarCity: 'Saint Thomas',
+    ),
+    'America/St_Vincent': TimeZoneNames(
+      exemplarCity: 'Saint Vincent',
+    ),
+    'America/Thule': TimeZoneNames(
+      exemplarCity: 'Qaanaaq',
+    ),
+    'Atlantic/Azores': TimeZoneNames(
+      exemplarCity: 'Azorerna',
+    ),
+    'Atlantic/Canary': TimeZoneNames(
+      exemplarCity: 'Kanarieöarna',
+    ),
+    'Atlantic/Cape_Verde': TimeZoneNames(
+      exemplarCity: 'Kap Verde',
+    ),
+    'Atlantic/Faeroe': TimeZoneNames(
+      exemplarCity: 'Torshamn',
+    ),
+    'Atlantic/South_Georgia': TimeZoneNames(
+      exemplarCity: 'Sydgeorgien',
+    ),
+    'Atlantic/St_Helena': TimeZoneNames(
+      exemplarCity: 'Sankt Helena',
+    ),
+    'Europe/Athens': TimeZoneNames(
+      exemplarCity: 'Aten',
+    ),
+    'Europe/Belgrade': TimeZoneNames(
+      exemplarCity: 'Belgrad',
+    ),
+    'Europe/Brussels': TimeZoneNames(
+      exemplarCity: 'Bryssel',
+    ),
+    'Europe/Bucharest': TimeZoneNames(
+      exemplarCity: 'Bukarest',
+    ),
+    'Europe/Busingen': TimeZoneNames(
+      exemplarCity: 'Büsingen am Hochrhein',
+    ),
+    'Europe/Chisinau': TimeZoneNames(
+      exemplarCity: 'Chișinău',
+    ),
+    'Europe/Copenhagen': TimeZoneNames(
+      exemplarCity: 'Köpenhamn',
+    ),
+    'Europe/Dublin': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'irländsk sommartid',
+      ),
+    ),
+    'Europe/Helsinki': TimeZoneNames(
+      exemplarCity: 'Helsingfors',
+    ),
+    'Europe/Kiev': TimeZoneNames(
+      exemplarCity: 'Kiev',
+    ),
+    'Europe/Lisbon': TimeZoneNames(
+      exemplarCity: 'Lissabon',
+    ),
+    'Europe/London': TimeZoneNames(
+      long: TimeZoneName(
+        daylight: 'brittisk sommartid',
+      ),
+    ),
+    'Europe/Luxembourg': TimeZoneNames(
+      exemplarCity: 'Luxemburg',
+    ),
+    'Europe/Moscow': TimeZoneNames(
+      exemplarCity: 'Moskva',
+    ),
+    'Europe/Prague': TimeZoneNames(
+      exemplarCity: 'Prag',
+    ),
+    'Europe/Rome': TimeZoneNames(
+      exemplarCity: 'Rom',
+    ),
+    'Europe/Tirane': TimeZoneNames(
+      exemplarCity: 'Tirana',
+    ),
+    'Europe/Ulyanovsk': TimeZoneNames(
+      exemplarCity: 'Uljanovsk',
+    ),
+    'Europe/Vatican': TimeZoneNames(
+      exemplarCity: 'Vatikanen',
+    ),
+    'Europe/Vienna': TimeZoneNames(
+      exemplarCity: 'Wien',
+    ),
+    'Europe/Warsaw': TimeZoneNames(
+      exemplarCity: 'Warszawa',
+    ),
+    'Europe/Zurich': TimeZoneNames(
+      exemplarCity: 'Zürich',
+    ),
+    'Africa/Addis_Ababa': TimeZoneNames(
+      exemplarCity: 'Addis Abeba',
+    ),
+    'Africa/Algiers': TimeZoneNames(
+      exemplarCity: 'Alger',
+    ),
+    'Africa/Asmera': TimeZoneNames(
+      exemplarCity: 'Asmara',
+    ),
+    'Africa/Cairo': TimeZoneNames(
+      exemplarCity: 'Kairo',
+    ),
+    'Africa/Dar_es_Salaam': TimeZoneNames(
+      exemplarCity: 'Dar es-Salaam',
+    ),
+    'Africa/El_Aaiun': TimeZoneNames(
+      exemplarCity: 'El-Aaiún',
+    ),
+    'Africa/Lome': TimeZoneNames(
+      exemplarCity: 'Lomé',
+    ),
+    'Africa/Ndjamena': TimeZoneNames(
+      exemplarCity: 'N’Djamena',
+    ),
+    'Africa/Sao_Tome': TimeZoneNames(
+      exemplarCity: 'São Tomé',
+    ),
+    'Asia/Aqtau': TimeZoneNames(
+      exemplarCity: 'Aktau',
+    ),
+    'Asia/Aqtobe': TimeZoneNames(
+      exemplarCity: 'Aqtöbe',
+    ),
+    'Asia/Ashgabat': TimeZoneNames(
+      exemplarCity: 'Asjchabad',
+    ),
+    'Asia/Baghdad': TimeZoneNames(
+      exemplarCity: 'Bagdad',
+    ),
+    'Asia/Bishkek': TimeZoneNames(
+      exemplarCity: 'Bisjkek',
+    ),
+    'Asia/Calcutta': TimeZoneNames(
+      exemplarCity: 'Kolkata',
+    ),
+    'Asia/Chita': TimeZoneNames(
+      exemplarCity: 'Tjita',
+    ),
+    'Asia/Damascus': TimeZoneNames(
+      exemplarCity: 'Damaskus',
+    ),
+    'Asia/Dushanbe': TimeZoneNames(
+      exemplarCity: 'Dusjanbe',
+    ),
+    'Asia/Hong_Kong': TimeZoneNames(
+      exemplarCity: 'Hongkong',
+    ),
+    'Asia/Hovd': TimeZoneNames(
+      exemplarCity: 'Chovd',
+    ),
+    'Asia/Kamchatka': TimeZoneNames(
+      exemplarCity: 'Kamtjatka',
+    ),
+    'Asia/Katmandu': TimeZoneNames(
+      exemplarCity: 'Katmandu',
+    ),
+    'Asia/Khandyga': TimeZoneNames(
+      exemplarCity: 'Chandyga',
+    ),
+    'Asia/Krasnoyarsk': TimeZoneNames(
+      exemplarCity: 'Krasnojarsk',
+    ),
+    'Asia/Macau': TimeZoneNames(
+      exemplarCity: 'Macao',
+    ),
+    'Asia/Muscat': TimeZoneNames(
+      exemplarCity: 'Muskat',
+    ),
+    'Asia/Qostanay': TimeZoneNames(
+      exemplarCity: 'Kostanaj',
+    ),
+    'Asia/Rangoon': TimeZoneNames(
+      exemplarCity: 'Yangon',
+    ),
+    'Asia/Saigon': TimeZoneNames(
+      exemplarCity: 'Ho Chi Minh-staden',
+    ),
+    'Asia/Sakhalin': TimeZoneNames(
+      exemplarCity: 'Sachalin',
+    ),
+    'Asia/Tashkent': TimeZoneNames(
+      exemplarCity: 'Tasjkent',
+    ),
+    'Asia/Tehran': TimeZoneNames(
+      exemplarCity: 'Teheran',
+    ),
+    'Asia/Urumqi': TimeZoneNames(
+      exemplarCity: 'Ürümqi',
+    ),
+    'Asia/Yakutsk': TimeZoneNames(
+      exemplarCity: 'Jakutsk',
+    ),
+    'Asia/Yekaterinburg': TimeZoneNames(
+      exemplarCity: 'Jekaterinburg',
+    ),
+    'Asia/Yerevan': TimeZoneNames(
+      exemplarCity: 'Jerevan',
+    ),
+    'Indian/Christmas': TimeZoneNames(
+      exemplarCity: 'Julön',
+    ),
+    'Indian/Cocos': TimeZoneNames(
+      exemplarCity: 'Kokosöarna',
+    ),
+    'Indian/Comoro': TimeZoneNames(
+      exemplarCity: 'Komorerna',
+    ),
+    'Indian/Kerguelen': TimeZoneNames(
+      exemplarCity: 'Kerguelenöarna',
+    ),
+    'Indian/Mahe': TimeZoneNames(
+      exemplarCity: 'Mahé',
+    ),
+    'Indian/Maldives': TimeZoneNames(
+      exemplarCity: 'Maldiverna',
+    ),
+    'Indian/Reunion': TimeZoneNames(
+      exemplarCity: 'Réunion',
+    ),
+    'Pacific/Easter': TimeZoneNames(
+      exemplarCity: 'Påskön',
+    ),
+    'Pacific/Enderbury': TimeZoneNames(
+      exemplarCity: 'Enderbury',
+    ),
+    'Pacific/Galapagos': TimeZoneNames(
+      exemplarCity: 'Galápagos',
+    ),
+    'Pacific/Gambier': TimeZoneNames(
+      exemplarCity: 'Gambieröarna',
+    ),
+    'Pacific/Honolulu': TimeZoneNames(
+      short: TimeZoneName(
+        generic: 'Honolulutid',
+        standard: 'Honolulunormaltid',
+        daylight: 'Honolulusommartid',
+      ),
+      exemplarCity: 'Honolulu',
+    ),
+    'Pacific/Marquesas': TimeZoneNames(
+      exemplarCity: 'Marquesasöarna',
+    ),
+    'Pacific/Midway': TimeZoneNames(
+      exemplarCity: 'Midwayöarna',
+    ),
+    'Pacific/Noumea': TimeZoneNames(
+      exemplarCity: 'Nouméa',
+    ),
+    'Pacific/Pitcairn': TimeZoneNames(
+      exemplarCity: 'Pitcairnöarna',
+    ),
+    'Pacific/Ponape': TimeZoneNames(
+      exemplarCity: 'Pohnpei',
+    ),
+    'Pacific/Truk': TimeZoneNames(
+      exemplarCity: 'Chuuk',
+    ),
+    'Pacific/Wallis': TimeZoneNames(
+      exemplarCity: 'Wallisön',
+    ),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Dumont d’Urville',
+    ),
+    'Etc/UTC': TimeZoneNames(
+      long: TimeZoneName(
+        standard: 'koordinerad universell tid',
+      ),
+      short: TimeZoneName(
+        standard: 'UTC',
+      ),
+    ),
+    'Etc/Unknown': TimeZoneNames(
+      exemplarCity: 'okänd stad',
+    ),
+  }, (key) => key.toLowerCase());
+
+  @override
+  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+    'Acre': MetaZone(
+      code: 'Acre',
+      long: TimeZoneName(
+        generic: 'västbrasiliansk tid',
+        standard: 'västbrasiliansk normaltid',
+        daylight: 'västbrasiliansk sommartid',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      code: 'Afghanistan',
+      long: TimeZoneName(
+        standard: 'afghansk tid',
+      ),
+    ),
+    'Africa_Central': MetaZone(
+      code: 'Africa_Central',
+      long: TimeZoneName(
+        standard: 'centralafrikansk tid',
+      ),
+    ),
+    'Africa_Eastern': MetaZone(
+      code: 'Africa_Eastern',
+      long: TimeZoneName(
+        standard: 'östafrikansk tid',
+      ),
+    ),
+    'Africa_Southern': MetaZone(
+      code: 'Africa_Southern',
+      long: TimeZoneName(
+        standard: 'sydafrikansk tid',
+      ),
+    ),
+    'Africa_Western': MetaZone(
+      code: 'Africa_Western',
+      long: TimeZoneName(
+        generic: 'västafrikansk tid',
+        standard: 'västafrikansk normaltid',
+        daylight: 'västafrikansk sommartid',
+      ),
+    ),
+    'Alaska': MetaZone(
+      code: 'Alaska',
+      long: TimeZoneName(
+        generic: 'Alaskatid',
+        standard: 'Alaska, normaltid',
+        daylight: 'Alaska, sommartid',
+      ),
+    ),
+    'Almaty': MetaZone(
+      code: 'Almaty',
+      long: TimeZoneName(
+        generic: 'Almatytid',
+        standard: 'Almatynormaltid',
+        daylight: 'Almatysommartid',
+      ),
+    ),
+    'Amazon': MetaZone(
+      code: 'Amazon',
+      long: TimeZoneName(
+        generic: 'Amazonastid',
+        standard: 'Amazonas, normaltid',
+        daylight: 'Amazonas, sommartid',
+      ),
+    ),
+    'America_Central': MetaZone(
+      code: 'America_Central',
+      long: TimeZoneName(
+        generic: 'centralnordamerikansk tid',
+        standard: 'centralnordamerikansk normaltid',
+        daylight: 'centralnordamerikansk sommartid',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      code: 'America_Eastern',
+      long: TimeZoneName(
+        generic: 'östnordamerikansk tid',
+        standard: 'östnordamerikansk normaltid',
+        daylight: 'östnordamerikansk sommartid',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      code: 'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Klippiga bergentid',
+        standard: 'Klippiga bergen, normaltid',
+        daylight: 'Klippiga bergen, sommartid',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      code: 'America_Pacific',
+      long: TimeZoneName(
+        generic: 'västnordamerikansk tid',
+        standard: 'västnordamerikansk normaltid',
+        daylight: 'västnordamerikansk sommartid',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      code: 'Anadyr',
+      long: TimeZoneName(
+        generic: 'Anadyrtid',
+        standard: 'Anadyrnormaltid',
+        daylight: 'Anadyrsommartid',
+      ),
+    ),
+    'Apia': MetaZone(
+      code: 'Apia',
+      long: TimeZoneName(
+        generic: 'Apiatid',
+        standard: 'Apia, normaltid',
+        daylight: 'Apia, sommartid',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      code: 'Aqtau',
+      long: TimeZoneName(
+        generic: 'Aqtautid',
+        standard: 'Aqtaunormaltid',
+        daylight: 'Aqtausommartid',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      code: 'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Aqtöbetid',
+        standard: 'Aqtöbenormaltid',
+        daylight: 'Aqtöbesommartid',
+      ),
+    ),
+    'Arabian': MetaZone(
+      code: 'Arabian',
+      long: TimeZoneName(
+        generic: 'saudiarabisk tid',
+        standard: 'saudiarabisk normaltid',
+        daylight: 'saudiarabisk sommartid',
+      ),
+    ),
+    'Argentina': MetaZone(
+      code: 'Argentina',
+      long: TimeZoneName(
+        generic: 'östargentinsk tid',
+        standard: 'östargentinsk normaltid',
+        daylight: 'östargentinsk sommartid',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      code: 'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'västargentinsk tid',
+        standard: 'västargentinsk normaltid',
+        daylight: 'västargentinsk sommartid',
+      ),
+    ),
+    'Armenia': MetaZone(
+      code: 'Armenia',
+      long: TimeZoneName(
+        generic: 'armenisk tid',
+        standard: 'armenisk normaltid',
+        daylight: 'armenisk sommartid',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      code: 'Atlantic',
+      long: TimeZoneName(
+        generic: 'nordamerikansk atlanttid',
+        standard: 'nordamerikansk atlantnormaltid',
+        daylight: 'nordamerikansk atlantsommartid',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      code: 'Australia_Central',
+      long: TimeZoneName(
+        generic: 'centralaustralisk tid',
+        standard: 'centralaustralisk normaltid',
+        daylight: 'centralaustralisk sommartid',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      code: 'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'västcentralaustralisk tid',
+        standard: 'västcentralaustralisk normaltid',
+        daylight: 'västcentralaustralisk sommartid',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      code: 'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'östaustralisk tid',
+        standard: 'östaustralisk normaltid',
+        daylight: 'östaustralisk sommartid',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      code: 'Australia_Western',
+      long: TimeZoneName(
+        generic: 'västaustralisk tid',
+        standard: 'västaustralisk normaltid',
+        daylight: 'västaustralisk sommartid',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      code: 'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'azerbajdzjansk tid',
+        standard: 'azerbajdzjansk normaltid',
+        daylight: 'azerbajdzjansk sommartid',
+      ),
+    ),
+    'Azores': MetaZone(
+      code: 'Azores',
+      long: TimeZoneName(
+        generic: 'azorisk tid',
+        standard: 'azorisk normaltid',
+        daylight: 'azorisk sommartid',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      code: 'Bangladesh',
+      long: TimeZoneName(
+        generic: 'bangladeshisk tid',
+        standard: 'bangladeshisk normaltid',
+        daylight: 'bangladeshisk sommartid',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      code: 'Bhutan',
+      long: TimeZoneName(
+        standard: 'bhutansk tid',
+      ),
+    ),
+    'Bolivia': MetaZone(
+      code: 'Bolivia',
+      long: TimeZoneName(
+        standard: 'boliviansk tid',
+      ),
+    ),
+    'Brasilia': MetaZone(
+      code: 'Brasilia',
+      long: TimeZoneName(
+        generic: 'Brasiliatid',
+        standard: 'Brasilia, normaltid',
+        daylight: 'Brasilia, sommartid',
+      ),
+    ),
+    'Brunei': MetaZone(
+      code: 'Brunei',
+      long: TimeZoneName(
+        standard: 'Bruneitid',
+      ),
+    ),
+    'Cape_Verde': MetaZone(
+      code: 'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Kap Verdetid',
+        standard: 'Kap Verde, normaltid',
+        daylight: 'Kap Verde, sommartid',
+      ),
+    ),
+    'Casey': MetaZone(
+      code: 'Casey',
+      long: TimeZoneName(
+        standard: 'Caseytid',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      code: 'Chamorro',
+      long: TimeZoneName(
+        standard: 'Chamorrotid',
+      ),
+    ),
+    'Chatham': MetaZone(
+      code: 'Chatham',
+      long: TimeZoneName(
+        generic: 'Chathamtid',
+        standard: 'Chatham, normaltid',
+        daylight: 'Chatham, sommartid',
+      ),
+    ),
+    'Chile': MetaZone(
+      code: 'Chile',
+      long: TimeZoneName(
+        generic: 'chilensk tid',
+        standard: 'chilensk normaltid',
+        daylight: 'chilensk sommartid',
+      ),
+    ),
+    'China': MetaZone(
+      code: 'China',
+      long: TimeZoneName(
+        generic: 'kinesisk tid',
+        standard: 'kinesisk normaltid',
+        daylight: 'kinesisk sommartid',
+      ),
+    ),
+    'Christmas': MetaZone(
+      code: 'Christmas',
+      long: TimeZoneName(
+        standard: 'Julöns tid',
+      ),
+    ),
+    'Cocos': MetaZone(
+      code: 'Cocos',
+      long: TimeZoneName(
+        standard: 'Keelingöarnas tid',
+      ),
+    ),
+    'Colombia': MetaZone(
+      code: 'Colombia',
+      long: TimeZoneName(
+        generic: 'colombiansk tid',
+        standard: 'colombiansk normaltid',
+        daylight: 'colombiansk sommartid',
+      ),
+    ),
+    'Cook': MetaZone(
+      code: 'Cook',
+      long: TimeZoneName(
+        generic: 'Cooköarnas tid',
+        standard: 'Cooköarnas normaltid',
+        daylight: 'Cooköarnas sommartid',
+      ),
+    ),
+    'Cuba': MetaZone(
+      code: 'Cuba',
+      long: TimeZoneName(
+        generic: 'kubansk tid',
+        standard: 'kubansk normaltid',
+        daylight: 'kubansk sommartid',
+      ),
+    ),
+    'Davis': MetaZone(
+      code: 'Davis',
+      long: TimeZoneName(
+        standard: 'Davistid',
+      ),
+    ),
+    'DumontDUrville': MetaZone(
+      code: 'DumontDUrville',
+      long: TimeZoneName(
+        standard: 'Dumont d’Urville-tid',
+      ),
+    ),
+    'East_Timor': MetaZone(
+      code: 'East_Timor',
+      long: TimeZoneName(
+        standard: 'östtimorisk tid',
+      ),
+    ),
+    'Easter': MetaZone(
+      code: 'Easter',
+      long: TimeZoneName(
+        generic: 'Påskötid',
+        standard: 'Påskön, normaltid',
+        daylight: 'Påskön, sommartid',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      code: 'Ecuador',
+      long: TimeZoneName(
+        standard: 'ecuadoriansk tid',
+      ),
+    ),
+    'Europe_Central': MetaZone(
+      code: 'Europe_Central',
+      long: TimeZoneName(
+        generic: 'centraleuropeisk tid',
+        standard: 'centraleuropeisk normaltid',
+        daylight: 'centraleuropeisk sommartid',
+      ),
+      short: TimeZoneName(
+        generic: 'CET',
+        standard: 'CET',
+        daylight: 'CEST',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      code: 'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'östeuropeisk tid',
+        standard: 'östeuropeisk normaltid',
+        daylight: 'östeuropeisk sommartid',
+      ),
+      short: TimeZoneName(
+        generic: 'EET',
+        standard: 'EET',
+        daylight: 'EEST',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      code: 'Europe_Further_Eastern',
+      long: TimeZoneName(
+        standard: 'Kaliningradtid',
+      ),
+    ),
+    'Europe_Western': MetaZone(
+      code: 'Europe_Western',
+      long: TimeZoneName(
+        generic: 'västeuropeisk tid',
+        standard: 'västeuropeisk normaltid',
+        daylight: 'västeuropeisk sommartid',
+      ),
+      short: TimeZoneName(
+        generic: 'WET',
+        standard: 'WET',
+        daylight: 'WEST',
+      ),
+    ),
+    'Falkland': MetaZone(
+      code: 'Falkland',
+      long: TimeZoneName(
+        generic: 'Falklandsöarnas tid',
+        standard: 'Falklandsöarna, normaltid',
+        daylight: 'Falklandsöarna, sommartid',
+      ),
+    ),
+    'Fiji': MetaZone(
+      code: 'Fiji',
+      long: TimeZoneName(
+        generic: 'Fijitid',
+        standard: 'Fiji, normaltid',
+        daylight: 'Fiji, sommartid',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      code: 'French_Guiana',
+      long: TimeZoneName(
+        standard: 'Franska Guyanatid',
+      ),
+    ),
+    'French_Southern': MetaZone(
+      code: 'French_Southern',
+      long: TimeZoneName(
+        standard: 'Franska Sydterritoriernas tid',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      code: 'Galapagos',
+      long: TimeZoneName(
+        standard: 'Galápagostid',
+      ),
+    ),
+    'Gambier': MetaZone(
+      code: 'Gambier',
+      long: TimeZoneName(
+        standard: 'Gambiertid',
+      ),
+    ),
+    'Georgia': MetaZone(
+      code: 'Georgia',
+      long: TimeZoneName(
+        generic: 'georgisk tid',
+        standard: 'georgisk normaltid',
+        daylight: 'georgisk sommartid',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      code: 'Gilbert_Islands',
+      long: TimeZoneName(
+        standard: 'Kiribatitid',
+      ),
+    ),
+    'GMT': MetaZone(
+      code: 'GMT',
+      long: TimeZoneName(
+        standard: 'Greenwichtid',
+      ),
+      short: TimeZoneName(
+        standard: 'GMT',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      code: 'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'östgrönländsk tid',
+        standard: 'östgrönländsk normaltid',
+        daylight: 'östgrönländsk sommartid',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      code: 'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'västgrönländsk tid',
+        standard: 'västgrönländsk normaltid',
+        daylight: 'västgrönländsk sommartid',
+      ),
+    ),
+    'Guam': MetaZone(
+      code: 'Guam',
+      long: TimeZoneName(
+        standard: 'Guamtid',
+      ),
+    ),
+    'Gulf': MetaZone(
+      code: 'Gulf',
+      long: TimeZoneName(
+        standard: 'Persiska vikentid',
+      ),
+    ),
+    'Guyana': MetaZone(
+      code: 'Guyana',
+      long: TimeZoneName(
+        standard: 'Guyanatid',
+      ),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      code: 'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Honolulutid',
+        standard: 'Honolulu, normaltid',
+        daylight: 'Honolulu, sommartid',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      code: 'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Hongkongtid',
+        standard: 'Hongkong, normaltid',
+        daylight: 'Hongkong, sommartid',
+      ),
+    ),
+    'Hovd': MetaZone(
+      code: 'Hovd',
+      long: TimeZoneName(
+        generic: 'Chovdtid',
+        standard: 'Chovd, normaltid',
+        daylight: 'Chovd, sommartid',
+      ),
+    ),
+    'India': MetaZone(
+      code: 'India',
+      long: TimeZoneName(
+        standard: 'indisk tid',
+      ),
+    ),
+    'Indian_Ocean': MetaZone(
+      code: 'Indian_Ocean',
+      long: TimeZoneName(
+        standard: 'Brittiska Indiska oceanöarnas tid',
+      ),
+    ),
+    'Indochina': MetaZone(
+      code: 'Indochina',
+      long: TimeZoneName(
+        standard: 'indokinesisk tid',
+      ),
+    ),
+    'Indonesia_Central': MetaZone(
+      code: 'Indonesia_Central',
+      long: TimeZoneName(
+        standard: 'centralindonesisk tid',
+      ),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      code: 'Indonesia_Eastern',
+      long: TimeZoneName(
+        standard: 'östindonesisk tid',
+      ),
+    ),
+    'Indonesia_Western': MetaZone(
+      code: 'Indonesia_Western',
+      long: TimeZoneName(
+        standard: 'västindonesisk tid',
+      ),
+    ),
+    'Iran': MetaZone(
+      code: 'Iran',
+      long: TimeZoneName(
+        generic: 'iransk tid',
+        standard: 'iransk normaltid',
+        daylight: 'iransk sommartid',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      code: 'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Irkutsktid',
+        standard: 'Irkutsk, normaltid',
+        daylight: 'Irkutsk, sommartid',
+      ),
+    ),
+    'Israel': MetaZone(
+      code: 'Israel',
+      long: TimeZoneName(
+        generic: 'israelisk tid',
+        standard: 'israelisk normaltid',
+        daylight: 'israelisk sommartid',
+      ),
+    ),
+    'Japan': MetaZone(
+      code: 'Japan',
+      long: TimeZoneName(
+        generic: 'japansk tid',
+        standard: 'japansk normaltid',
+        daylight: 'japansk sommartid',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      code: 'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Kamtjatkatid',
+        standard: 'Kamtjatkanormaltid',
+        daylight: 'Kamtjatkasommartid',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      code: 'Kazakhstan',
+      long: TimeZoneName(
+        standard: 'kazakstansk tid',
+      ),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      code: 'Kazakhstan_Eastern',
+      long: TimeZoneName(
+        standard: 'östkazakstansk tid',
+      ),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      code: 'Kazakhstan_Western',
+      long: TimeZoneName(
+        standard: 'västkazakstansk tid',
+      ),
+    ),
+    'Korea': MetaZone(
+      code: 'Korea',
+      long: TimeZoneName(
+        generic: 'koreansk tid',
+        standard: 'koreansk normaltid',
+        daylight: 'koreansk sommartid',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      code: 'Kosrae',
+      long: TimeZoneName(
+        standard: 'Kosraetid',
+      ),
+    ),
+    'Krasnoyarsk': MetaZone(
+      code: 'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Krasnojarsktid',
+        standard: 'Krasnojarsk, normaltid',
+        daylight: 'Krasnojarsk, sommartid',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      code: 'Kyrgystan',
+      long: TimeZoneName(
+        standard: 'kirgizisk tid',
+      ),
+    ),
+    'Lanka': MetaZone(
+      code: 'Lanka',
+      long: TimeZoneName(
+        standard: 'Sri Lankatid',
+      ),
+    ),
+    'Line_Islands': MetaZone(
+      code: 'Line_Islands',
+      long: TimeZoneName(
+        standard: 'Lineöarnas tid',
+      ),
+    ),
+    'Lord_Howe': MetaZone(
+      code: 'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Lord Howetid',
+        standard: 'Lord Howe, normaltid',
+        daylight: 'Lord Howe, sommartid',
+      ),
+    ),
+    'Macau': MetaZone(
+      code: 'Macau',
+      long: TimeZoneName(
+        generic: 'Macaotid',
+        standard: 'Macaonormaltid',
+        daylight: 'Macaosommartid',
+      ),
+    ),
+    'Magadan': MetaZone(
+      code: 'Magadan',
+      long: TimeZoneName(
+        generic: 'Magadantid',
+        standard: 'Magadan, normaltid',
+        daylight: 'Magadan, sommartid',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      code: 'Malaysia',
+      long: TimeZoneName(
+        standard: 'malaysisk tid',
+      ),
+    ),
+    'Maldives': MetaZone(
+      code: 'Maldives',
+      long: TimeZoneName(
+        standard: 'Maldivernatid',
+      ),
+    ),
+    'Marquesas': MetaZone(
+      code: 'Marquesas',
+      long: TimeZoneName(
+        standard: 'Marquesastid',
+      ),
+    ),
+    'Marshall_Islands': MetaZone(
+      code: 'Marshall_Islands',
+      long: TimeZoneName(
+        standard: 'Marshallöarnas tid',
+      ),
+    ),
+    'Mauritius': MetaZone(
+      code: 'Mauritius',
+      long: TimeZoneName(
+        generic: 'Mauritiustid',
+        standard: 'Mauritius, normaltid',
+        daylight: 'Mauritius, sommartid',
+      ),
+    ),
+    'Mawson': MetaZone(
+      code: 'Mawson',
+      long: TimeZoneName(
+        standard: 'Mawsontid',
+      ),
+    ),
+    'Mexico_Pacific': MetaZone(
+      code: 'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'mexikansk stillahavstid',
+        standard: 'mexikansk stillahavstid, normaltid',
+        daylight: 'mexikansk stillahavstid, sommartid',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      code: 'Mongolia',
+      long: TimeZoneName(
+        generic: 'Ulaanbaatartid',
+        standard: 'Ulaanbaatar, normaltid',
+        daylight: 'Ulaanbaatar, sommartid',
+      ),
+    ),
+    'Moscow': MetaZone(
+      code: 'Moscow',
+      long: TimeZoneName(
+        generic: 'Moskvatid',
+        standard: 'Moskva, normaltid',
+        daylight: 'Moskva, sommartid',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      code: 'Myanmar',
+      long: TimeZoneName(
+        standard: 'burmesisk tid',
+      ),
+    ),
+    'Nauru': MetaZone(
+      code: 'Nauru',
+      long: TimeZoneName(
+        standard: 'Naurutid',
+      ),
+    ),
+    'Nepal': MetaZone(
+      code: 'Nepal',
+      long: TimeZoneName(
+        standard: 'nepalesisk tid',
+      ),
+    ),
+    'New_Caledonia': MetaZone(
+      code: 'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Nya Kaledonientid',
+        standard: 'Nya Kaledonien, normaltid',
+        daylight: 'Nya Kaledonien, sommartid',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      code: 'New_Zealand',
+      long: TimeZoneName(
+        generic: 'nyzeeländsk tid',
+        standard: 'nyzeeländsk normaltid',
+        daylight: 'nyzeeländsk sommartid',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      code: 'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Newfoundlandtid',
+        standard: 'Newfoundland, normaltid',
+        daylight: 'Newfoundland, sommartid',
+      ),
+    ),
+    'Niue': MetaZone(
+      code: 'Niue',
+      long: TimeZoneName(
+        standard: 'Niuetid',
+      ),
+    ),
+    'Norfolk': MetaZone(
+      code: 'Norfolk',
+      long: TimeZoneName(
+        generic: 'Norfolköns tid',
+        standard: 'Norfolköns normaltid',
+        daylight: 'Norfolköns sommartid',
+      ),
+    ),
+    'Noronha': MetaZone(
+      code: 'Noronha',
+      long: TimeZoneName(
+        generic: 'Fernando de Noronhatid',
+        standard: 'Fernando de Noronha, normaltid',
+        daylight: 'Fernando de Noronha, sommartid',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      code: 'North_Mariana',
+      long: TimeZoneName(
+        standard: 'Nordmarianernas tid',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      code: 'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Novosibirsktid',
+        standard: 'Novosibirsk, normaltid',
+        daylight: 'Novosibirsk, sommartid',
+      ),
+    ),
+    'Omsk': MetaZone(
+      code: 'Omsk',
+      long: TimeZoneName(
+        generic: 'Omsktid',
+        standard: 'Omsk, normaltid',
+        daylight: 'Omsk, sommartid',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      code: 'Pakistan',
+      long: TimeZoneName(
+        generic: 'pakistansk tid',
+        standard: 'pakistansk normaltid',
+        daylight: 'pakistansk sommartid',
+      ),
+    ),
+    'Palau': MetaZone(
+      code: 'Palau',
+      long: TimeZoneName(
+        standard: 'Palautid',
+      ),
+    ),
+    'Papua_New_Guinea': MetaZone(
+      code: 'Papua_New_Guinea',
+      long: TimeZoneName(
+        standard: 'Papua Nya Guineas tid',
+      ),
+    ),
+    'Paraguay': MetaZone(
+      code: 'Paraguay',
+      long: TimeZoneName(
+        generic: 'paraguayansk tid',
+        standard: 'paraguayansk normaltid',
+        daylight: 'paraguayansk sommartid',
+      ),
+    ),
+    'Peru': MetaZone(
+      code: 'Peru',
+      long: TimeZoneName(
+        generic: 'peruansk tid',
+        standard: 'peruansk normaltid',
+        daylight: 'peruansk sommartid',
+      ),
+    ),
+    'Philippines': MetaZone(
+      code: 'Philippines',
+      long: TimeZoneName(
+        generic: 'filippinsk tid',
+        standard: 'filippinsk normaltid',
+        daylight: 'filippinsk sommartid',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      code: 'Phoenix_Islands',
+      long: TimeZoneName(
+        standard: 'Enderburytid',
+      ),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      code: 'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Saint-Pierre-et-Miquelon-tid',
+        standard: 'Saint-Pierre-et-Miquelon, normaltid',
+        daylight: 'Saint-Pierre-et-Miquelon, sommartid',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      code: 'Pitcairn',
+      long: TimeZoneName(
+        standard: 'Pitcairntid',
+      ),
+    ),
+    'Ponape': MetaZone(
+      code: 'Ponape',
+      long: TimeZoneName(
+        standard: 'Ponapetid',
+      ),
+    ),
+    'Pyongyang': MetaZone(
+      code: 'Pyongyang',
+      long: TimeZoneName(
+        standard: 'Pyongyangtid',
+      ),
+    ),
+    'Qyzylorda': MetaZone(
+      code: 'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Qyzylordatid',
+        standard: 'Qyzylordanormaltid',
+        daylight: 'Qyzylordasommartid',
+      ),
+    ),
+    'Reunion': MetaZone(
+      code: 'Reunion',
+      long: TimeZoneName(
+        standard: 'Réuniontid',
+      ),
+    ),
+    'Rothera': MetaZone(
+      code: 'Rothera',
+      long: TimeZoneName(
+        standard: 'Rotheratid',
+      ),
+    ),
+    'Sakhalin': MetaZone(
+      code: 'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Sachalintid',
+        standard: 'Sachalin, normaltid',
+        daylight: 'Sachalin, sommartid',
+      ),
+    ),
+    'Samara': MetaZone(
+      code: 'Samara',
+      long: TimeZoneName(
+        generic: 'Samaratid',
+        standard: 'Samaranormaltid',
+        daylight: 'Samarasommartid',
+      ),
+    ),
+    'Samoa': MetaZone(
+      code: 'Samoa',
+      long: TimeZoneName(
+        generic: 'samoansk tid',
+        standard: 'samoansk normaltid',
+        daylight: 'samoansk sommartid',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      code: 'Seychelles',
+      long: TimeZoneName(
+        standard: 'Seychellernatid',
+      ),
+    ),
+    'Singapore': MetaZone(
+      code: 'Singapore',
+      long: TimeZoneName(
+        standard: 'Singaporetid',
+      ),
+    ),
+    'Solomon': MetaZone(
+      code: 'Solomon',
+      long: TimeZoneName(
+        standard: 'Salomonöarnas tid',
+      ),
+    ),
+    'South_Georgia': MetaZone(
+      code: 'South_Georgia',
+      long: TimeZoneName(
+        standard: 'sydgeorgisk tid',
+      ),
+    ),
+    'Suriname': MetaZone(
+      code: 'Suriname',
+      long: TimeZoneName(
+        standard: 'Surinamtid',
+      ),
+    ),
+    'Syowa': MetaZone(
+      code: 'Syowa',
+      long: TimeZoneName(
+        standard: 'Syowatid',
+      ),
+    ),
+    'Tahiti': MetaZone(
+      code: 'Tahiti',
+      long: TimeZoneName(
+        standard: 'Tahititid',
+      ),
+    ),
+    'Taipei': MetaZone(
+      code: 'Taipei',
+      long: TimeZoneName(
+        generic: 'Taipeitid',
+        standard: 'Taipei, normaltid',
+        daylight: 'Taipei, sommartid',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      code: 'Tajikistan',
+      long: TimeZoneName(
+        standard: 'Tadzjikistantid',
+      ),
+    ),
+    'Tokelau': MetaZone(
+      code: 'Tokelau',
+      long: TimeZoneName(
+        standard: 'Tokelautid',
+      ),
+    ),
+    'Tonga': MetaZone(
+      code: 'Tonga',
+      long: TimeZoneName(
+        generic: 'Tongatid',
+        standard: 'Tonga, normaltid',
+        daylight: 'Tonga, sommartid',
+      ),
+    ),
+    'Truk': MetaZone(
+      code: 'Truk',
+      long: TimeZoneName(
+        standard: 'Chuuktid',
+      ),
+    ),
+    'Turkmenistan': MetaZone(
+      code: 'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'turkmensk tid',
+        standard: 'turkmensk normaltid',
+        daylight: 'turkmensk sommartid',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      code: 'Tuvalu',
+      long: TimeZoneName(
+        standard: 'Tuvalutid',
+      ),
+    ),
+    'Uruguay': MetaZone(
+      code: 'Uruguay',
+      long: TimeZoneName(
+        generic: 'uruguayansk tid',
+        standard: 'uruguayansk normaltid',
+        daylight: 'uruguayansk sommartid',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      code: 'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'uzbekisk tid',
+        standard: 'uzbekisk normaltid',
+        daylight: 'uzbekisk sommartid',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      code: 'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Vanuatutid',
+        standard: 'Vanuatu, normaltid',
+        daylight: 'Vanuatu, sommartid',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      code: 'Venezuela',
+      long: TimeZoneName(
+        standard: 'venezuelansk tid',
+      ),
+    ),
+    'Vladivostok': MetaZone(
+      code: 'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Vladivostoktid',
+        standard: 'Vladivostok, normaltid',
+        daylight: 'Vladivostok, sommartid',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      code: 'Volgograd',
+      long: TimeZoneName(
+        generic: 'Volgogradtid',
+        standard: 'Volgograd, normaltid',
+        daylight: 'Volgograd, sommartid',
+      ),
+    ),
+    'Vostok': MetaZone(
+      code: 'Vostok',
+      long: TimeZoneName(
+        standard: 'Vostoktid',
+      ),
+    ),
+    'Wake': MetaZone(
+      code: 'Wake',
+      long: TimeZoneName(
+        standard: 'Wakeöarnas tid',
+      ),
+    ),
+    'Wallis': MetaZone(
+      code: 'Wallis',
+      long: TimeZoneName(
+        standard: 'Wallis- och Futunaöarnas tid',
+      ),
+    ),
+    'Yakutsk': MetaZone(
+      code: 'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Jakutsktid',
+        standard: 'Jakutsk, normaltid',
+        daylight: 'Jakutsk, sommartid',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      code: 'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Jekaterinburgtid',
+        standard: 'Jekaterinburg, normaltid',
+        daylight: 'Jekaterinburg, sommartid',
+      ),
+    ),
+    'Yukon': MetaZone(
+      code: 'Yukon',
+      long: TimeZoneName(
+        standard: 'Yukontid',
+      ),
     ),
   }, (key) => key.toLowerCase());
 }

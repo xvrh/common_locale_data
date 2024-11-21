@@ -2,9 +2,6 @@
   "main": {
     "pt": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "pt"
       },
       "localeDisplayNames": {
@@ -17,7 +14,7 @@
           "011": "África Ocidental",
           "013": "América Central",
           "014": "África Oriental",
-          "015": "África do Norte",
+          "015": "África Setentrional",
           "017": "África Central",
           "018": "África Meridional",
           "019": "Américas",
@@ -160,6 +157,8 @@
           "IM": "Ilha de Man",
           "IN": "Índia",
           "IO": "Território Britânico do Oceano Índico",
+          "IO-alt-biot": "Território Britânico do Oceano Índico",
+          "IO-alt-chagos": "Arquipélago de Chagos",
           "IQ": "Iraque",
           "IR": "Irã",
           "IS": "Islândia",

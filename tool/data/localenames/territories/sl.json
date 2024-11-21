@@ -2,9 +2,6 @@
   "main": {
     "sl": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "sl"
       },
       "localeDisplayNames": {
@@ -160,6 +157,8 @@
           "IM": "Otok Man",
           "IN": "Indija",
           "IO": "Britansko ozemlje v Indijskem oceanu",
+          "IO-alt-biot": "Britansko ozemlje v Indijskem oceanu",
+          "IO-alt-chagos": "Otočje Chagos",
           "IQ": "Irak",
           "IR": "Iran",
           "IS": "Islandija",

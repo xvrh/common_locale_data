@@ -2,9 +2,6 @@
   "main": {
     "da": {
       "identity": {
-        "version": {
-          "_cldrVersion": "42"
-        },
         "language": "da"
       },
       "localeDisplayNames": {
@@ -160,6 +157,8 @@
           "IM": "Isle of Man",
           "IN": "Indien",
           "IO": "Det Britiske Territorium i Det Indiske Ocean",
+          "IO-alt-biot": "Det Britiske Territorium i Det Indiske Ocean",
+          "IO-alt-chagos": "Chagosøerne",
           "IQ": "Irak",
           "IR": "Iran",
           "IS": "Island",

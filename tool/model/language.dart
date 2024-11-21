@@ -1,16 +1,16 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:path/path.dart' as p;
-import '../generate_code.dart';
+import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 
-void generateLanguages(String language, StringBuffer output) {
+void generateLanguages(String locale, StringBuffer output) {
   var reference = readLanguages('en');
-  var translatedLanguages = readLanguages(language);
+  var translatedLanguages = readLanguages(locale);
 
   output.writeln('''
-class Languages${languageUpper(language)} extends Languages {
-  Languages${languageUpper(language)}._();
+class Languages${locale.toUpperCamelCase()} extends Languages {
+  Languages${locale.toUpperCamelCase()}._();
 ''');
 
   String? translatedLanguage(String languageCode) {
@@ -24,7 +24,8 @@ class Languages${languageUpper(language)} extends Languages {
     for (var alt in ['variant', 'short', 'menu']) {
       var altName = translatedLanguages['$languageCode-alt-$alt'];
       if (altName != null) {
-        output.writeln('$alt: ${escapeDartString(altName)},');
+        output.writeln(
+            '${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
       }
     }
 
@@ -50,13 +51,13 @@ final languages = CanonicalizedMap<String, String, Language>.from({
   output.writeln('}');
 }
 
-Map<String, String> readLanguages(String language) {
-  var file = File(p.join('tool/data/localenames/languages/$language.json'));
+Map<String, String> readLanguages(String locale) {
+  var file = File(p.join('tool/data/localenames/languages/$locale.json'));
   var content = file.readAsStringSync();
   var json = jsonDecode(content) as Map<String, dynamic>;
   return
       // ignore: avoid_dynamic_calls
-      (json['main'][language]['localeDisplayNames']['languages']
+      (json['main'][locale]['localeDisplayNames']['languages']
               as Map<String, dynamic>)
           .cast<String, String>();
 }
