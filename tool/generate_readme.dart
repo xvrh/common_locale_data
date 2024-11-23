@@ -83,8 +83,6 @@ String generateReadme(File source) {
 
   var version = getDataVersions();
 
-  readme =
-      readme.replaceAll('##DOWNLOAD_DATE##', version.date.toUtc().toString());
   readme = readme.replaceAll('##CLDR_VERSION##', version.cldr);
   readme = readme.replaceAll('##CLDR_VARIANT##', version.cldrVariant);
   readme = readme.replaceAll('##UNICODE_VERSION##', version.unicode);
