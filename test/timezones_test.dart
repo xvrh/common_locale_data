@@ -62,7 +62,7 @@ void main() {
             .difference(zones),
         []);
     expect(TimeZoneMapping.aliasToZone.values.toSet().difference(zones),
-        ['Etc/UTC', 'Etc/GMT+5', 'Etc/GMT+7', 'Etc/GMT+10']);
+        ['Etc/Unknown', 'Etc/UTC']);
 
     expect(TimeZoneMapping.zoneToIana.keys.toSet().difference(zones), []);
 
@@ -74,11 +74,25 @@ void main() {
         ['Europe/Kirov', 'Asia/Barnaul', 'Asia/Tomsk']);
 
     expect(zones.difference(TimeZoneMapping.zoneToTerritory.keys.toSet()),
-        ['CST6CDT', 'EST5EDT', 'Etc/GMT', 'MST7MDT', 'PST8PDT']);
+        ['Etc/GMT']);
+
+    expect(zones.difference(TimeZoneMapping.zoneToShort.keys.toSet()), []);
+
+    expect(
+        TimeZoneMapping.zoneToShort.keys
+            .toSet()
+            .difference(TimeZoneMapping.shortToZone.values.toSet()),
+        []);
+
+    expect(
+        TimeZoneMapping.shortToZone.values
+            .toSet()
+            .difference(TimeZoneMapping.zoneToShort.keys.toSet()),
+        []);
 
     expect(
         TimeZoneMapping.zoneToTerritory.values.toSet().difference(
             CommonLocaleDataEn().territories.countries.keys.toSet()),
         []);
-  }, skip: 'arjanmels to check :-)');
+  });
 }
