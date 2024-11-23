@@ -82,7 +82,7 @@ String generateReadme(File source) {
           .join(Platform.isWindows ? '  \r\n' : '  \n'));
 
   var version = getDataVersions();
-  
+
   readme = readme.replaceAll('##CLDR_VERSION##', version.cldr);
   readme = readme.replaceAll('##CLDR_VARIANT##', version.cldrVariant);
   readme = readme.replaceAll('##UNICODE_VERSION##', version.unicode);

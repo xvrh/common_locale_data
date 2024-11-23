@@ -41,7 +41,6 @@ The main CLDR data is extracted from this repository: https://github.com/unicode
 Additional timezone related data is extracted from https://github.com/unicode-org/cldr
 and https://github.com/unicode-org/icu.
 
-- Download date 2024-11-23 17:28:05.000Z.
 - CLDR version 46.0.0, variant: modern
 - Unicode version 16.0.0
 - TZDB version 2024b
