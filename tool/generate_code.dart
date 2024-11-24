@@ -51,7 +51,6 @@ void main() {
 
     buffer.writeln('''
 import 'package:collection/collection.dart';
-
 import '../../common_locale_data.dart';
 
 const _locale = '$locale';
@@ -140,9 +139,6 @@ import 'timezones.dart';
 abstract class CommonLocaleData {
   /// Locale code.
   String get locale;
-  
-  /// Date when the CLDR data was downloaded.
-  static final DateTime dataDownloadDate=DateTime.parse(${escapeDartString(versions.date.toIso8601String())});
   
   /// Version of the CLDR data.
   static const String cldrVersion=${escapeDartString(versions.cldr)};

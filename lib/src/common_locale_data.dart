@@ -11,10 +11,6 @@ abstract class CommonLocaleData {
   /// Locale code.
   String get locale;
 
-  /// Date when the CLDR data was downloaded.
-  static final DateTime dataDownloadDate =
-      DateTime.parse('2024-11-17T12:50:16.000Z');
-
   /// Version of the CLDR data.
   static const String cldrVersion = '46.0.0';
 
