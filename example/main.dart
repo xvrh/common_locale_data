@@ -21,12 +21,13 @@ void main() {
 
   var cld = locales[currentLanguage]!;
 
-  print(CommonLocaleData.dataDownloadDate);
-  print(CommonLocaleData.cldrVersion);
-  print(CommonLocaleData.unicodeVersion);
-  print(CommonLocaleData.tzdbVersion);
+  print('CLDR version: ${CommonLocaleData.cldrVersion}');
+  print('Unicode version: ${CommonLocaleData.unicodeVersion}');
+  print('ICU version: ${CommonLocaleData.icuVersion}');
+  print('Timezone DB version: ${CommonLocaleData.tzdbVersion}');
 
-  print(cld.locale);
+  print('');
+  print('Current language: ${cld.locale} (${cld.languages[cld.locale]!.name})');
   print('');
 
   // Units
@@ -39,18 +40,22 @@ void main() {
   print(cld.units.areaSquareMeter.narrow(3)); // 3m²
 
   // Date fields
+  print('');
   print(cld.date.year.future.long(2)); // in 2 years
   print(cld.date.year.past.long(2)); // 2 years ago
   print(cld.date.year.next.long); // next year
   print(cld.date.year.previous.long); // last year
 
   // Territories
+  print('');
   print(cld.territories.africa); // Africa
   print(cld.territories.countries['US']); // United States
 
   // Languages
+  print('');
   print(cld.languages['en']!.name); // English
 
+  // Timezones
   print('');
   var zone =
       cld.timeZones.get('America/Los_Angeles', dateTime: DateTime(2017))!;
@@ -63,16 +68,20 @@ void main() {
   print('country: ${zone.country}');
   print('isPrimaryOrSingle: ${zone.isPrimaryOrSingle}');
   print('dateRange: ${zone.dateRange}');
-  print('');
 
+  // Different formats for timezone
+  print('');
   for (var style in TimeZoneStyle.values) {
     print(
         '${style.name} in own: ${zone.format(style, Duration(hours: -7, minutes: 0))}');
+
+    // also depend on the current country
     print(
         '${style.name} in CA: ${zone.format(style, Duration(hours: -7, minutes: 0), country: 'CA')}');
   }
 
   // Demonstrate different timezone names at different times
+  print('');
   print(cld.timeZones['America/Buenos_Aires']);
   print(cld.timeZones.get('America/Buenos_Aires', dateTime: DateTime(2008)));
   print(cld.timeZones
