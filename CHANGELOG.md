@@ -1,3 +1,10 @@
+## 2.0.0
+- Include all locales that are available from CLDR
+- Change the `import`s to improve compile times when only a limited number of locales is used (breaking change)
+- Add support for Timezones
+- Improved documentation
+- Update to CLDR 46
+
 ## 1.2.0
 
 - Added timezone data
