@@ -1,10 +1,14 @@
 import 'dart:core';
+
 import 'package:collection/collection.dart';
+
+import '../locale_data.dart';
 import 'base_language_id.dart';
 import 'language_id.dart';
-import 'locale_data.dart';
+import 'unicode_extensions.dart';
 
 export 'language_id.dart';
+export 'unicode_extensions.dart';
 
 // Relevant specs:
 // https://www.rfc-editor.org/info/bcp47
@@ -15,14 +19,13 @@ export 'language_id.dart';
 // https://www.unicode.org/reports/tr35/
 //    BCP47 id, CLR id, ICU locale ID: https://www.unicode.org/reports/tr35/#Legacy_Variants
 
-// TODO: old extension implementation: https://www.unicode.org/reports/tr35/#Old_Locale_Extension_Syntax
-// TODO: implement validation?
-// TODO; well-formed check and canonicalization of 'u' and 't' extensions
-
 final _regExpExtension =
-    RegExp(r'^([a-wy-zA-WY-Z0-9](?:[-_][a-zA-Z0-9]{2,8})+)(?=[-_]|$)');
-final _regExpPrivateUse = RegExp(
-    r'^([xX](?:[-_][a-zA-Z0-9]{1,8})+)'); // nothing allowed after private use
+    RegExp(r'^([a-wy-zA-WY-Z0-9](?:[-_][a-zA-Z0-9]{2,8})+)(?=[^a-zA-Z0-9]|$)');
+final _regExpPrivateUse =
+    RegExp(r'^([xX](?:[-_][a-zA-Z0-9]{1,8})+)(?=[^a-zA-Z0-9]|$)');
+final _regExpCharacterEncoding = RegExp(r'^\.([a-zA-Z0-9-_]+)');
+final _regExpLegacyExtensions = RegExp(
+    r'^@([a-zA-Z0-9-_]+=[a-zA-Z0-9-_/\\]+(?:;[a-zA-Z0-9-_]+=[a-zA-Z0-9-_/\\]+)*)');
 final _regExpSeparator = RegExp(r'[-_]');
 
 /// A locale identifier (= Unicode language identifier + extensions and privateUse field).
@@ -43,6 +46,14 @@ class LocaleId extends LanguageId {
   /// Language tag private use part
   final String? privateUse;
 
+  /// Legacy extensions (LDML versions before 1.7.2)
+  final String? legacyExtensions;
+
+  /// Character encoding
+  final String? characterEncoding;
+
+  final UnicodeExtensions? unicodeExtensions;
+
   // for BCP47 language tag is mandatory, for CLDR it is not.
 
   /// Create a new [LocaleId] from the constituent fields.
@@ -53,7 +64,10 @@ class LocaleId extends LanguageId {
     super.variants,
     this.extensions = const [],
     this.privateUse,
+    this.legacyExtensions,
+    this.characterEncoding,
     super.remainder,
+    this.unicodeExtensions,
   });
 
   /// Parse the input into a [LocaleId]
@@ -74,7 +88,9 @@ class LocaleId extends LanguageId {
     String? extension;
     do {
       (extension, input) = BaseLanguageId.matchRegExp(_regExpExtension, input);
-      if (extension != null) extensions.add(extension.replaceAll('_', '-'));
+      if (extension != null) {
+        extensions.add(extension.replaceAll('_', '-'));
+      }
     } while (extension != null);
 
     String? privateUse;
@@ -82,28 +98,51 @@ class LocaleId extends LanguageId {
         expectSeparatorBefore: input != org);
     privateUse = privateUse?.replaceAll('_', '-');
 
+    String? characterEncoding;
+    (characterEncoding, input) = BaseLanguageId.matchRegExp(
+        _regExpCharacterEncoding, input,
+        expectSeparatorBefore: false);
+
+    String? legacyExtensions;
+    (legacyExtensions, input) = BaseLanguageId.matchRegExp(
+        _regExpLegacyExtensions, input,
+        expectSeparatorBefore: false);
+
+    var unicodeExtensions =
+        UnicodeExtensions.parse(extensions, legacyExtensions);
+
     return LocaleId(
-      lang: languageId.lang,
-      script: languageId.script,
-      region: languageId.region,
-      variants: List.unmodifiable(languageId.variants),
-      extensions: List.unmodifiable(extensions),
-      privateUse: privateUse,
-      remainder: input.isEmpty ? null : input,
-    );
+        lang: languageId.lang,
+        script: languageId.script,
+        region: languageId.region,
+        variants: List.unmodifiable(languageId.variants),
+        extensions: List.unmodifiable(extensions),
+        privateUse: privateUse,
+        characterEncoding: characterEncoding,
+        legacyExtensions: legacyExtensions,
+        remainder: input.isEmpty ? null : input,
+        unicodeExtensions:
+            unicodeExtensions.isEmpty ? null : unicodeExtensions);
   }
 
-  /// Tag with only private use field (allowed for BCP47 tag, not allowed for Unicode tag)
-  bool get isWellFormedPrivateUse =>
+  /// Check if no attributes are defined
+  @override
+  bool get isEmpty => super.isEmpty && extensions.isEmpty && privateUse == null;
+
+  /// Private Use Tag, which does not contain any other parts (except for possibly [remainder])
+  bool get isPrivateUse =>
       lang == null &&
       script == null &&
       region == null &&
       variants.isEmpty &&
       extensions.isEmpty &&
-      privateUse != null &&
-      remainder == null;
+      privateUse != null;
 
-  /// Check if the locale is well-formed language tag
+  /// Tag with only private use field (allowed for BCP47 tag, not allowed for Unicode tag)
+  bool get isWellFormedPrivateUse => isPrivateUse && remainder == null;
+
+  /// Check if the locale is well-formed language tag (BCP47 or Unicode),
+  /// but not a grandfathered or private use tag.
   ///
   /// Absence of the lang tag is allowed
   ///
@@ -153,7 +192,8 @@ class LocaleId extends LanguageId {
   bool get isWellFormedUnicode =>
       isWellFormed &&
       (lang != null || script != null) &&
-      !(lang?.contains(_regExpSeparator) ?? false);
+      !(lang?.contains(_regExpSeparator) ?? false) &&
+      unicodeExtensions?.isWellFormed != false;
 
   /// Two [LocaleId]s are considered equal when all fields are equal (ignoring the remainder)
   @override
@@ -169,20 +209,19 @@ class LocaleId extends LanguageId {
   int get hashCode =>
       Object.hash(super.hashCode, Object.hashAll(extensions), privateUse);
 
-  /// Private Use Tag, which does not contain any other parts (except for possibly [remainder])
-  bool get isPrivateUse =>
-      lang == null &&
-      script == null &&
-      region == null &&
-      variants.isEmpty &&
-      extensions.isEmpty &&
-      privateUse != null;
-
   @override
   String toBCP47() {
     if (isGrandfatheredIrregular) return remainder ?? 'und';
     if (isPrivateUse) return privateUse ?? 'und';
     return [super.toBCP47(), ...extensions, privateUse].nonNulls.join('-');
+  }
+
+  String toLegacy() {
+    var res = toBCP47();
+    if (characterEncoding != null) res += '.$characterEncoding';
+    if (legacyExtensions != null) res += '@$legacyExtensions';
+    if (remainder != null) res += '$remainder';
+    return res;
   }
 
   @override
@@ -207,7 +246,7 @@ class LocaleId extends LanguageId {
 
   @override
   String toString() {
-    return toBCP47();
+    return toLegacy();
   }
 
   LocaleId _replaceGrandFathered() => isGrandfatheredIrregular
@@ -239,26 +278,53 @@ class LocaleId extends LanguageId {
   @override
   LocaleId addLikelySubTags() => _replaceGrandFathered()._addLikelySubTags();
 
-  LocaleId _removeLikelySubTags() =>
-      _canonicalizeLocaleIdParts(super.removeLikelySubTags());
+  LocaleId _removeLikelySubTags({bool favorScript = false}) =>
+      _canonicalizeLocaleIdParts(
+          super.removeLikelySubTags(favorScript: favorScript));
 
-  /// Return a [LocaleId] with likely sub tags removes.
+  /// Return a [LocaleId] with likely sub tags removed.
   ///
   /// This will remove sub tags for language, script and region, based on the other fields and the CLDR data.
   /// This is also referred to as minimized form.
   ///
+  /// If [favorScript] is true then it will favor a matching script over a matching region.
+  ///
   /// This function will implicitly canonicalize the input before likely sub tags are added.
   @override
-  LocaleId removeLikelySubTags() =>
-      _replaceGrandFathered()._removeLikelySubTags();
+  LocaleId removeLikelySubTags({bool favorScript = false}) =>
+      _replaceGrandFathered()._removeLikelySubTags(favorScript: favorScript);
 
   LocaleId _canonicalizeLocaleIdParts(LanguageId langId) {
-    // TODO: ordering of -t- -u- extensions needs to be done
-    // TODO: removal of tfield true
-    var newExtensions = extensions
-        .map((e) => e.toLowerCase().replaceAll('_', '-'))
-        .toSet()
-        .sorted();
+    var newExtensions =
+        extensions.map((e) => e.toLowerCase().replaceAll('_', '-')).toSet();
+
+    var (unicodeExtensions, otherExtensions, newLegacyExtensions) =
+        UnicodeExtensions.parse(newExtensions, legacyExtensions).canonicalize();
+
+    newExtensions.removeWhere((e) => e.startsWith('u-') || e.startsWith('t-'));
+    newExtensions.addAll(otherExtensions.where((e) => !e.startsWith('x-')));
+
+    var private = otherExtensions.firstWhereOrNull((e) => e.startsWith('x'));
+
+    var privateUse = this.privateUse ?? private;
+
+    var uExtension = unicodeExtensions.attributes.join('-');
+    for (var uField in unicodeExtensions.uFields) {
+      if (uExtension.isNotEmpty) uExtension += '-';
+      uExtension += uField.key;
+      if (uField.value != null) {
+        uExtension += '-${uField.value}';
+      }
+    }
+
+    if (uExtension.isNotEmpty) {
+      newExtensions.add('u-$uExtension');
+    }
+
+    var tExtension = unicodeExtensions.tExtension;
+    if (tExtension.isNotEmpty) {
+      newExtensions.add('t-$tExtension');
+    }
 
     // change posix variant to extension
     var newVariants = langId.variants;
@@ -270,19 +336,19 @@ class LocaleId extends LanguageId {
       var res = newExtensions.firstWhereOrNull((e) => e.startsWith('u-'));
       if (res == null) {
         newExtensions.add('u-va-posix');
-        newExtensions = newExtensions.sorted();
       } else if (!res.contains('-va-posix')) {
         newExtensions.removeWhere((e) => e.startsWith('u-'));
         newExtensions.add('$res-va-posix');
-        newExtensions = newExtensions.sorted();
       }
     }
+
     return LocaleId(
         lang: langId.lang,
         script: langId.script,
         region: langId.region,
         variants: List.unmodifiable(newVariants),
-        extensions: List.unmodifiable(newExtensions),
-        privateUse: privateUse?.toLowerCase().replaceAll('_', '-'));
+        extensions: List.unmodifiable(newExtensions.sorted()),
+        privateUse: privateUse?.toLowerCase().replaceAll('_', '-'),
+        unicodeExtensions: unicodeExtensions);
   }
 }

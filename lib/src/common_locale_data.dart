@@ -1,10 +1,10 @@
 import 'date_fields.dart';
 import 'languages.dart';
 import 'scripts.dart';
-import 'territories.dart';
-import 'timezones.dart';
-import 'units.dart';
 import 'variants.dart';
+import 'territories.dart';
+import 'units.dart';
+import 'timezones.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {

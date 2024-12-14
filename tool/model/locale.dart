@@ -1,8 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
+
 import 'package:collection/collection.dart';
-import 'package:common_locale_data/src/base_language_id.dart';
+import 'package:common_locale_data/src/locale_id/base_language_id.dart';
 import 'package:path/path.dart' as p;
+
 import '../utils/escape_dart_string.dart';
 
 String generateLocaleData() {
@@ -27,6 +29,30 @@ String generateLocaleData() {
     'supplemental/languageMatching',
   );
 
+  var bcp47 = <Map<String, dynamic>>[];
+  for (var name in [
+    'calendar',
+    'collation',
+    'currency',
+    'measure',
+    'number',
+    'segmentation',
+    'timezone',
+    'transform-destination',
+    'transform',
+    'transform_hybrid',
+    'transform_ime',
+    'transform_keyboard',
+    'transform_mt',
+    'transform_private_use',
+    'variant',
+  ]) {
+    bcp47.add(readJsonData(
+      'tool/data/bcp47/bcp47/$name.json',
+      'keyword',
+    ));
+  }
+
   // languageMatching.json as of Unicode 46 contains incomplete information
   // a patch has been submitted: https://github.com/unicode-org/cldr/pull/4216
   // in the mean time, check if file is fixed, otherwise use manually corrected file
@@ -44,7 +70,7 @@ String generateLocaleData() {
 
   code.writeln('''
 import 'package:collection/collection.dart';
-import 'base_language_id.dart';
+import 'locale_id/base_language_id.dart';
 
 /// Locale independent data about locales.
 /// 
@@ -54,12 +80,13 @@ class LocaleMapping {
 
   var legacyToCanonical = <String, String>{};
   var canonicalizationRules = <LanguageCanonicalizationRule>[];
+  var subDivisionAlias = <String, String>{};
   for (var entry in aliasGroups.entries) {
     if (entry.value is Map<String, dynamic>) {
       var aliasType = entry.key;
-      if (aliasType == 'subdivisionAlias' || aliasType == 'zoneAlias') {
+      if (aliasType == 'zoneAlias') {
+        // zoneAlias handled by timezone
         continue;
-        //TODO: handle subdivision aliases
       }
 
       var aliases = entry.value as Map<String, dynamic>;
@@ -72,39 +99,43 @@ class LocaleMapping {
         var replacement = value['_replacement'];
 
         if (replacement != null) {
-          var languageId = switch (aliasType) {
-            'languageAlias' => BaseLanguageId.parse(type),
-            'scriptAlias' => BaseLanguageId(lang: 'und', script: type),
-            'territoryAlias' => BaseLanguageId(lang: 'und', region: type),
-            'variantAlias' => BaseLanguageId(lang: 'und', variants: [type]),
-            _ => throw Exception('Unknown Alias Type $type'),
-          };
-
-          if (!languageId.isWellFormed) {
-            if (aliasType == 'languageAlias') {
-              legacyToCanonical[type] = replacement;
-            }
-            //discard
+          if (aliasType == 'subdivisionAlias') {
+            subDivisionAlias[type] = replacement.split(' ')[0];
           } else {
-            var uLocaleReplacements = replacement
-                .split(' ')
-                .map((r) => switch (aliasType) {
-                      'languageAlias' => BaseLanguageId.parse(r),
-                      'scriptAlias' => BaseLanguageId(lang: 'und', script: r),
-                      'territoryAlias' =>
-                        BaseLanguageId(lang: 'und', region: r),
-                      'variantAlias' =>
-                        BaseLanguageId(lang: 'und', variants: [r]),
-                      _ => throw Exception('Unknown Alias Type $r'),
-                    })
-                .toList();
+            var languageId = switch (aliasType) {
+              'languageAlias' => BaseLanguageId.parse(type),
+              'scriptAlias' => BaseLanguageId(lang: 'und', script: type),
+              'territoryAlias' => BaseLanguageId(lang: 'und', region: type),
+              'variantAlias' => BaseLanguageId(lang: 'und', variants: [type]),
+              _ => throw Exception('Unknown Alias Type $type'),
+            };
 
-            canonicalizationRules.add(LanguageCanonicalizationRule(
-                lang: languageId.lang,
-                script: languageId.script,
-                region: languageId.region,
-                variants: languageId.variants,
-                replacements: uLocaleReplacements));
+            if (!languageId.isWellFormed) {
+              if (aliasType == 'languageAlias') {
+                legacyToCanonical[type] = replacement;
+              }
+              //discard
+            } else {
+              var uLocaleReplacements = replacement
+                  .split(' ')
+                  .map((r) => switch (aliasType) {
+                        'languageAlias' => BaseLanguageId.parse(r),
+                        'scriptAlias' => BaseLanguageId(lang: 'und', script: r),
+                        'territoryAlias' =>
+                          BaseLanguageId(lang: 'und', region: r),
+                        'variantAlias' =>
+                          BaseLanguageId(lang: 'und', variants: [r]),
+                        _ => throw Exception('Unknown Alias Type $r'),
+                      })
+                  .toList();
+
+              canonicalizationRules.add(LanguageCanonicalizationRule(
+                  lang: languageId.lang,
+                  script: languageId.script,
+                  region: languageId.region,
+                  variants: languageId.variants,
+                  replacements: uLocaleReplacements));
+            }
           }
         }
       }
@@ -135,6 +166,16 @@ class LocaleMapping {
     code.writeln('  LanguageCanonicalizationRule(${args.join(', ')}),');
   }
   code.writeln('];');
+
+  code.writeln('''
+  
+  /// Subdivision alias mapping
+  static final subDivisionAlias = CanonicalizedMap<String, String, String>.from({
+''');
+  for (var e in subDivisionAlias.entries) {
+    code.writeln('${escapeDartString(e.key)}: ${escapeDartString(e.value)},');
+  }
+  code.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
 
   code.writeln('''
   
@@ -282,8 +323,138 @@ class LocaleMapping {
 
   code.writeln('];');
 
-  code.writeln('}');
+  var keys = <String, ExtensionKeys>{};
 
+  for (var file in bcp47) {
+    for (var extension in file.entries) {
+      for (var key in (extension.value as Map<String, dynamic>).entries) {
+        var keyValues = key.value as Map<String, dynamic>;
+        var keyAliasesString = keyValues['_alias'] as String? ?? '';
+        var valueType = switch (
+            (keyValues['_valueType'] as String? ?? 'single').toLowerCase()) {
+          'single' => ValueType.single,
+          'multiple' => ValueType.multiple,
+          'any' => ValueType.any,
+          'incremental' => ValueType.incremental,
+          _ => throw Exception('Unknown valueType')
+        };
+        var keyType = KeyType.regular;
+
+        var valueAliases =
+            CanonicalizedMap<String, String, String>((e) => e.toLowerCase());
+        var values = <String>[];
+
+        for (var value in keyValues.entries) {
+          if (value.key == value.key.toUpperCase()) {
+            keyType = switch (value.key) {
+              'CODEPOINTS' => KeyType.codePoints,
+              'REORDER_CODE' => KeyType.reorderCode,
+              'RG_KEY_VALUE' => KeyType.rgKeyValue,
+              'SCRIPT_CODE' => KeyType.scriptCode,
+              'SUBDIVISION_CODE' => KeyType.subdivisionCode,
+              'PRIVATE_USE' => KeyType.privateUse,
+              _ => throw Exception('Unknown keyType')
+            };
+          } else if (!value.key.startsWith('_')) {
+            var deprecated = ((value.value
+                    as Map<String, dynamic>)['_deprecated'] as bool?) ==
+                true;
+
+            var preferredString = (value.value
+                    as Map<String, dynamic>)['_preferred'] as String? ??
+                '';
+
+            if (deprecated && preferredString.isNotEmpty) {
+              valueAliases[value.key] = preferredString;
+            } else {
+              values.add(value.key);
+
+              var valueAliasesString =
+                  (value.value as Map<String, dynamic>)['_alias'] as String? ??
+                      '';
+
+              for (var valueAlias in valueAliasesString.split(' ')) {
+                if (valueAlias.isNotEmpty &&
+                    !(deprecated && valueAlias != value.key)) {
+                  valueAliases[valueAlias] = value.key;
+                }
+              }
+            }
+          }
+        }
+
+        var extensionKey = ExtensionKey(
+            keyType: keyType,
+            valueType: valueType,
+            values: values,
+            valueAliases: valueAliases);
+
+        if (keys[extension.key] == null) {
+          keys[extension.key] = ExtensionKeys(
+              CanonicalizedMap((e) => e.toLowerCase()),
+              CanonicalizedMap((e) => e.toLowerCase()));
+        }
+        keys[extension.key]!.keys[key.key] = extensionKey;
+        var extensionKeys = keys[extension.key]!;
+
+        for (var keyAlias in keyAliasesString.split(' ')) {
+          if (keyAlias.isNotEmpty) {
+            extensionKeys.keyAliases[keyAlias] = key.key;
+          }
+        }
+      }
+    }
+  }
+
+  code.writeln('''
+  
+  /// Locale matching variables
+  static final extensionKeys = CanonicalizedMap<String, String, ExtensionKeys>.from({
+  ''');
+
+  for (var extension in keys.entries) {
+    code.writeln('${escapeDartString(extension.key)}: ExtensionKeys(');
+
+    code.writeln('CanonicalizedMap<String, String, ExtensionKey>.from({');
+
+    for (var key in extension.value.keys.entries) {
+      code.writeln('${escapeDartString(key.key)}: ExtensionKey(');
+      if (key.value.keyType != KeyType.regular) {
+        code.writeln('keyType: ${key.value.keyType},');
+      }
+      if (key.value.valueType != ValueType.single) {
+        code.writeln('valueType: ${key.value.valueType},');
+      }
+      if (key.value.values.isNotEmpty) {
+        code.writeln(
+            'values: [${key.value.values.map((e) => escapeDartString(e)).join(',')}],');
+      }
+      if (key.value.valueAliases.isNotEmpty) {
+        code.writeln(
+            ' valueAliases: CanonicalizedMap<String, String, String>.from({');
+        for (var alias in key.value.valueAliases.entries) {
+          code.writeln(
+              '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},');
+        }
+        code.writeln('}, (key) => key.toLowerCase()),');
+      }
+      code.writeln(' ),');
+    }
+
+    code.writeln('}, (key) => key.toLowerCase()),');
+    code.writeln('CanonicalizedMap<String, String, String>.from({');
+
+    for (var alias in extension.value.keyAliases.entries) {
+      code.writeln(
+          '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},');
+    }
+    code.writeln('}, (key) => key.toLowerCase())');
+    code.writeln('),');
+  }
+
+  code.writeln('}, (key) => key.toLowerCase());');
+
+  code.writeln('}');
   return code.toString();
 }
 

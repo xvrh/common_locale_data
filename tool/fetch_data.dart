@@ -1,15 +1,36 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:pool/pool.dart';
+
 import 'config.dart';
 import 'utils/supported_locales.dart';
 
 void main() async {
   final miscSets = {
-    'bcp47/bcp47': {'timezone'},
-    'core': {'coverageLevels', 'package'},
+    'bcp47/bcp47': {
+      'calendar',
+      'collation',
+      'currency',
+      'measure',
+      'number',
+      'segmentation',
+      'timezone',
+      'transform-destination',
+      'transform',
+      'transform_hybrid',
+      'transform_ime',
+      'transform_keyboard',
+      'transform_mt',
+      'transform_private_use',
+      'variant',
+    },
+    'core': {
+      'coverageLevels',
+      'package',
+    },
     'core/supplemental': {
       'aliases',
       'metaZones',

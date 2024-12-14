@@ -59,9 +59,9 @@ void main() {
   // and discard all the others languages. It will make your deployed program smaller.
 
   // If your app support several languages, dynamically choose the preferred language.
-  var desiredLocales = ['de', 'en-CA'];
+  var desiredLocales = ['de', 'en-IR'];
 
-  var cld = LocaleMatcher.selectCommonLocale(
+  var cld = LocaleMatcher.getBestCommonLocaleData(
     desiredLocales,
     [
       CommonLocaleDataEnGB(),

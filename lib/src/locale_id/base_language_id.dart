@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:collection/collection.dart';
 
 // NOTE: This file cannot import locale_data.dart as it is also used during code generation!
@@ -6,12 +7,13 @@ import 'package:collection/collection.dart';
 // BCP47 allows for 4 character language tags: not certain how we would distinguish script & language tags
 // except by checking against list of known values
 final _regExpLangExtLang = RegExp(
-    r'^((root|[a-zA-Z]{2,3}|[a-zA-Z]{5,8})([-_][a-zA-Z]{3}){0,3})(?=[-_]|$)'); // strictly speaking when lang='root, no script, region or variant allowed
-final _regExpScript = RegExp(r'^([a-zA-Z]{4})(?=[-_]|$)');
+    r'^((root|[a-zA-Z]{2,3}|[a-zA-Z]{5,8})([-_][a-zA-Z]{3}){0,3})(?=[^a-zA-Z0-9]|$)(?=[^a-zA-Z0-9]|$)'); // strictly speaking when lang='root, no script, region or variant allowed
+final _regExpScript =
+RegExp(r'^([a-zA-Z]{4})(?=[^a-zA-Z0-9]|$)(?=[^a-zA-Z0-9]|$)');
 final _regExpRegion = RegExp(
-    r'^([a-zA-Z]{2,3}|[0-9]{3})(?=[-_]|$)'); // strictly speaking 3 letter region codes are not allowed, we allow it for compatibility reasons
+    r'^([a-zA-Z]{2,3}|[0-9]{3})(?=[^a-zA-Z0-9]|$)(?=[^a-zA-Z0-9]|$)'); // strictly speaking 3 letter region codes are not allowed, we allow it for compatibility reasons
 final _regExpVariant =
-    RegExp(r'^([a-zA-Z0-9]{5,8}|[0-9][a-zA-Z0-9]{3})(?=[-_]|$)');
+RegExp(r'^([a-zA-Z0-9]{5,8}|(?:[0-9][a-zA-Z0-9]{3}))(?=[^a-zA-Z0-9]|$)');
 final _regExpSeparator = RegExp(r'[-_]');
 
 /// Unicode language identifier
@@ -37,12 +39,11 @@ class BaseLanguageId {
   final String? remainder;
 
   /// Create a new [BaseLanguageId] from the constituent fields.
-  BaseLanguageId(
-      {this.lang,
-      this.script,
-      this.region,
-      this.variants = const [],
-      this.remainder});
+  BaseLanguageId({this.lang,
+    this.script,
+    this.region,
+    this.variants = const [],
+    this.remainder});
 
   /// Parse the input into a [BaseLanguageId]
   factory BaseLanguageId.parse(final String input) => _parse(input);
@@ -52,9 +53,9 @@ class BaseLanguageId {
     var variants = <String>[];
 
     (lang, input) =
-        matchRegExp(_regExpLangExtLang, input, expectSeparatorBefore: false);
+    matchRegExp(_regExpLangExtLang, input, expectSeparatorBefore: false);
     (script, input) =
-        matchRegExp(_regExpScript, input, expectSeparatorBefore: lang != null);
+    matchRegExp(_regExpScript, input, expectSeparatorBefore: lang != null);
     (region, input) = matchRegExp(_regExpRegion, input);
 
     String? variant;
@@ -71,6 +72,14 @@ class BaseLanguageId {
         remainder: input.isEmpty ? null : input);
   }
 
+  /// Check if no attributes are defined
+  bool get isEmpty =>
+      lang == null &&
+          script == null &&
+          region == null &&
+          variants.isEmpty &&
+          remainder == null;
+
   /// The identifier is well-formed.
   ///
   /// An empty lang tag is allowed
@@ -85,7 +94,10 @@ class BaseLanguageId {
 
     // variants can only occur once
     isWellFormed &= (variants.length ==
-        variants.map((e) => e.toLowerCase()).toSet().length);
+        variants
+            .map((e) => e.toLowerCase())
+            .toSet()
+            .length);
 
     return isWellFormed;
   }
@@ -99,8 +111,8 @@ class BaseLanguageId {
   /// The language is null or 'und' or 'root'.
   bool get isLangNullOrUnd =>
       lang == null ||
-      lang?.toLowerCase() == 'und' ||
-      lang?.toLowerCase() == 'root';
+          lang?.toLowerCase() == 'und' ||
+          lang?.toLowerCase() == 'root';
 
   /// Format the locale in BCP47 format
   ///
@@ -121,7 +133,7 @@ class BaseLanguageId {
   String toUnicode() {
     return [
       lang?.toLowerCase() == 'root' ||
-              (langOrNullIfUndefined == null && script == null)
+          (langOrNullIfUndefined == null && script == null)
           ? 'und'
           : lang,
       script,
@@ -149,9 +161,9 @@ class BaseLanguageId {
   String toUnicodeCLDR() {
     return [
       (langOrNullIfUndefined == null &&
-              script == null &&
-              region == null &&
-              variants.isEmpty)
+          script == null &&
+          region == null &&
+          variants.isEmpty)
           ? 'root'
           : (langOrNullIfUndefined == null ? 'und' : lang),
       script,
@@ -169,10 +181,10 @@ class BaseLanguageId {
   @override
   bool operator ==(Object other) =>
       other is BaseLanguageId &&
-      langOrNullIfUndefined == other.langOrNullIfUndefined &&
-      script == other.script &&
-      region == other.region &&
-      ListEquality().equals(variants, other.variants);
+          langOrNullIfUndefined == other.langOrNullIfUndefined &&
+          script == other.script &&
+          region == other.region &&
+          ListEquality().equals(variants, other.variants);
 
   /// Check if two locales have same language, script and region
   bool equalLanguageScriptAndRegion(BaseLanguageId other) {
@@ -182,9 +194,14 @@ class BaseLanguageId {
   }
 
   @override
-  int get hashCode => Object.hash(
-      langOrNullIfUndefined, script, region, Object.hashAll(variants));
+  int get hashCode =>
+      Object.hash(
+          langOrNullIfUndefined, script, region, Object.hashAll(variants));
 
+  /// Match [str] to [regExp] and return the result of group 1 and the remainder.
+  ///
+  /// If expectSeparatorBefore is true then the string needs to start with a separator.
+  ///
   /// @nodoc
   static (String?, String) matchRegExp(RegExp regExp, String str,
       {bool expectSeparatorBefore = true}) {
@@ -220,12 +237,11 @@ class BaseLanguageId {
 /// @nodoc
 class LanguageIdForCanonicalizationRule extends BaseLanguageId
     implements Comparable<BaseLanguageId> {
-  LanguageIdForCanonicalizationRule(
-      {super.lang,
-      super.script,
-      super.region,
-      super.variants,
-      super.remainder});
+  LanguageIdForCanonicalizationRule({super.lang,
+    super.script,
+    super.region,
+    super.variants,
+    super.remainder});
 
   bool matches(BaseLanguageId languageId) {
     if (langOrNullIfUndefined != null && languageId.lang != lang) return false;
@@ -265,9 +281,9 @@ class LanguageIdForCanonicalizationRule extends BaseLanguageId
     if (variants.isNotEmpty && other.variants.isEmpty) return -1;
     if (variants.isEmpty && other.variants.isNotEmpty) return 1;
     var compareL =
-        (langOrNullIfUndefined != null && other.langOrNullIfUndefined != null)
-            ? langOrNullIfUndefined!.compareTo(other.langOrNullIfUndefined!)
-            : 0;
+    (langOrNullIfUndefined != null && other.langOrNullIfUndefined != null)
+        ? langOrNullIfUndefined!.compareTo(other.langOrNullIfUndefined!)
+        : 0;
     if (compareL != 0) return compareL;
     var compareS = (script != null && other.script != null)
         ? script!.compareTo(other.script!)
@@ -289,47 +305,6 @@ class LanguageIdForCanonicalizationRule extends BaseLanguageId
 
     return 0;
   }
-
-  BaseLanguageId applyRules(Iterable<LanguageCanonicalizationRule> rules) {
-    BaseLanguageId source = this;
-    for (var rule in rules) {
-      if (!rule.matches(source)) continue;
-
-// TODO: when multiple territories present
-// see: https://www.unicode.org/reports/tr35/tr35.html#territory-exception
-      if (rule.replacements.length >= 1) {
-        var replacement = rule.replacements[0];
-        var resLang =
-            (rule.type.lang != null || source.langOrNullIfUndefined == null)
-                ? replacement.lang
-                : source.lang;
-
-        var resScript = (rule.type.script != null || source.script == null)
-            ? replacement.script
-            : source.script;
-
-        var resRegion = (rule.type.region != null || source.region == null)
-            ? replacement.region
-            : source.region;
-
-        var resVariants = List<String>.from(source.variants);
-        if (rule.type.variants.isNotEmpty) {
-          for (var e in rule.type.variants) {
-            resVariants.remove(e);
-          }
-          resVariants.addAll(replacement.variants);
-        } else if (variants.isEmpty) {
-          resVariants = replacement.variants;
-        }
-        source = BaseLanguageId(
-            lang: resLang,
-            script: resScript,
-            region: resRegion,
-            variants: resVariants);
-      }
-    }
-    return source;
-  }
 }
 
 /// Rule to canonicalize [LanguageId]
@@ -339,14 +314,13 @@ class LanguageCanonicalizationRule
   final LanguageIdForCanonicalizationRule type;
   final List<BaseLanguageId> replacements;
 
-  LanguageCanonicalizationRule(
-      {String? lang,
-      String? script,
-      String? region,
-      List<String> variants = const [],
-      this.replacements = const []})
+  LanguageCanonicalizationRule({String? lang,
+    String? script,
+    String? region,
+    List<String> variants = const [],
+    this.replacements = const []})
       : type = LanguageIdForCanonicalizationRule(
-            lang: lang, script: script, region: region, variants: variants);
+      lang: lang, script: script, region: region, variants: variants);
 
   @override
   String toString() {
@@ -385,8 +359,8 @@ class LanguageMatchRule {
   final int distance;
   final bool oneWay;
 
-  LanguageMatchRule(
-      BaseLanguageId desired, BaseLanguageId supported, this.distance,
+  LanguageMatchRule(BaseLanguageId desired, BaseLanguageId supported,
+      this.distance,
       [this.oneWay = false])
       : desired = LanguageIdForMatchRule(desired),
         supported = LanguageIdForMatchRule(supported);
@@ -395,4 +369,45 @@ class LanguageMatchRule {
   String toString() {
     return '$desired => $supported $distance $oneWay';
   }
+}
+
+enum KeyType {
+  regular,
+  codePoints,
+  reorderCode,
+  rgKeyValue,
+  scriptCode,
+  subdivisionCode,
+  privateUse
+}
+
+enum ValueType {
+  single,
+  multiple,
+  incremental,
+  any,
+}
+
+/// Unicode -u- or -t- extension key
+/// @nodoc
+class ExtensionKey {
+  final KeyType keyType;
+  final ValueType valueType;
+  final List<String> values;
+  final CanonicalizedMap<String, String, String> valueAliases;
+
+  ExtensionKey({this.keyType = KeyType.regular,
+    this.valueType = ValueType.single,
+    this.values = const [],
+    CanonicalizedMap<String, String, String>? valueAliases})
+      : valueAliases = valueAliases ?? CanonicalizedMap((e) => e.toLowerCase());
+}
+
+/// Set of unicode -u- or -t- extension key
+/// @nodoc
+class ExtensionKeys {
+  CanonicalizedMap<String, String, ExtensionKey> keys;
+  CanonicalizedMap<String, String, String> keyAliases;
+
+  ExtensionKeys(this.keys, this.keyAliases);
 }

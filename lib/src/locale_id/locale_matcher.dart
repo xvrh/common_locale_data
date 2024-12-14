@@ -1,13 +1,13 @@
 import 'package:collection/collection.dart';
 
-import '../af.dart';
+import '../../af.dart';
+import '../locale_data.dart';
 import 'base_language_id.dart';
-import 'locale_data.dart';
 
 /// Enables match of supported locales to the desired locales.
 ///
 /// The class caches information for supported locales so it only needs to be
-/// calculated once for multiple [match] operations.
+/// calculated once for multiple [getBestMatch] operations.
 ///
 /// The matcher uses the CLDR information (see: https://unicode.org/reports/tr35/#LanguageMatching)
 /// to determine which [LanguageId]s are "close" to each other.
@@ -126,7 +126,40 @@ class LocaleMatcher {
     );
   }
 
-  /// Match the [desiredLocales] against the [supportedLocales].
+  /// Check if the [desiredLocale] matches the [supportedLocale].
+  ///
+  /// If [favorScript] is set to true then script difference will become more important,
+  /// by dividing language differences by 4.
+  ///
+  /// If [ignoreFallback] is set then only bidirectional matches will be used.
+  /// So fallbacks to languages that many of the [desiredLocales] speakers understand,
+  /// but are not related to the original locale, will not be included.
+  bool isMatch(
+    LanguageId desiredLocale,
+    LanguageId supportedLocale, {
+    bool favorScript = false,
+    bool ignoreFallback = false,
+  }) =>
+      _isMatch(
+        desiredLocale,
+        supportedLocale,
+        favorScript: favorScript,
+        ignoreFallback: ignoreFallback,
+      );
+
+  bool _isMatch(
+    LanguageId desiredLocale,
+    LanguageId supportedLocale, {
+    required bool favorScript,
+    required bool ignoreFallback,
+  }) {
+    var dist = _calcPrimaryDistance(
+        _maximizeLocale(desiredLocale), _maximizeLocale(supportedLocale),
+        ignoreFallback: ignoreFallback, favorScript: favorScript);
+    return dist <= threshold;
+  }
+
+  /// Get the best match from the [desiredLocales] out of the [supportedLocales].
   ///
   /// If [favorScript] is set to true then script difference will become more important,
   /// by dividing language differences by 4.
@@ -137,33 +170,37 @@ class LocaleMatcher {
   /// If [ignoreFallback] is set then only bidirectional matches will be used.
   /// So fallbacks to languages that many of the [desiredLocales] speakers understand,
   /// but are not related to the original locale, will not be included.
-  MatchResult match(
+  MatchResult getBestMatch(
     Iterable<LanguageId> desiredLocales, {
     bool favorScript = false,
     bool favorEarlier = true,
     bool ignoreFallback = false,
   }) =>
-      _matchLocales(
+      _getBestMatch(
         desiredLocales,
         favorScript: favorScript,
         favorEarlier: favorEarlier,
         ignoreFallback: ignoreFallback,
       );
 
-  /// Help method to select the [desiredLocales] from a list of [CommonLocaleData]s.
-  static CommonLocaleData? selectCommonLocale(Iterable<String> desiredLocales,
+  /// Helper method to select the [desiredLocales] from a list of [CommonLocaleData]s.
+  ///
+  /// Creates a [LocaleMatcher] with the locales from the supported [CommonLocaleData]s
+  /// and select the best matching [desiredLocales] from them.
+  static CommonLocaleData? getBestCommonLocaleData(
+      Iterable<String> desiredLocales,
       Iterable<CommonLocaleData> supportedLocales) {
     var selectedLocale = LocaleMatcher(
-      supportedLocales.map((e) => LocaleId.parse(e.locale)),
+      supportedLocales.map((e) => LanguageId.parse(e.locale)),
     )
-        ._matchLocales(desiredLocales.map((e) => LocaleId.parse(e)))
+        ._getBestMatch(desiredLocales.map((e) => LanguageId.parse(e)))
         .supportedLocale;
 
     return supportedLocales
         .firstWhereOrNull((e) => selectedLocale.toString() == e.locale);
   }
 
-  MatchResult _matchLocales(
+  MatchResult _getBestMatch(
     Iterable<LanguageId> desiredLocales, {
     bool favorScript = false,
     bool favorEarlier = true,
@@ -192,6 +229,7 @@ class LocaleMatcher {
             _calcPrimaryDistance(
                 maximizedDesiredLocale, maximizedSupportedLocale,
                 ignoreFallback: ignoreFallback, favorScript: favorScript);
+
         if (dist >= threshold || dist > bestDistance) {
           continue;
         }
@@ -234,11 +272,13 @@ class LocaleMatcher {
   }
 
   static Iterable<LanguageId> _maximizeLocales(Iterable<LanguageId> locales) {
-    return locales.map((e) {
-      var c = e.canonicalize();
-      var r = c == LanguageId() ? c : _replacePseudoCodes(e.addLikelySubTags());
-      return r;
-    });
+    return locales.map(_maximizeLocale);
+  }
+
+  static LanguageId _maximizeLocale(LanguageId e) {
+    var c = e.canonicalize();
+    var r = c == LanguageId() ? c : _replacePseudoCodes(e.addLikelySubTags());
+    return r;
   }
 
   static int _calcThreshold(int? threshold, LanguageId? maxDistanceDesired,
@@ -257,7 +297,7 @@ class LocaleMatcher {
     }
   }
 
-  int _calcPrimaryDistance(
+  static int _calcPrimaryDistance(
       BaseLanguageId desiredLocale, BaseLanguageId supportedLocale,
       {bool ignoreFallback = false, bool favorScript = false}) {
     // workaround for privateUse

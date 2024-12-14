@@ -1,11 +1,9 @@
-import 'package:common_locale_data/src/locale_id.dart';
-import 'package:common_locale_data/src/locale_matcher.dart';
+import 'package:common_locale_data/src/locale_id/locale_id.dart';
+import 'package:common_locale_data/src/locale_id/locale_matcher.dart';
 import 'package:test/test.dart';
 
 Iterable<LocaleId> toLocales(Iterable<String> input) =>
     input.map((e) => LocaleId.parse(e));
-
-// TODO: add file based locale matches
 
 void main() {
   group('LocaleMatcher - distances', () {
@@ -132,15 +130,25 @@ void main() {
     expectLocales(tests);
   });
   group('LocaleMatcher - basics', () {
-    var tests = [
+    var tests1 = [
       (['en-GB'], 'en-GB'),
-      (['en-US'], 'en'), // TODO: goes wrong!
+      (['en-US'], 'en'),
       (['fr-FR'], 'fr'),
       (['ja-JP'], 'fr'),
     ];
 
-    expectLocalesSameSupported(tests, ['fr', 'en-GB', 'en']);
-//TODO: not yet complete
+    expectLocalesSameSupported(tests1, ['fr', 'en-GB', 'en']);
+
+    var tests2 = [
+      (['en-GB'], 'en-GB'),
+      (['en-US'], 'en'),
+      (['fr-FR'], 'fr'),
+      (['ja-JP'], 'de'),
+    ];
+    expectLocalesSameSupported(tests2, ['fr', 'en-GB', 'en'],
+        defaultLocale: 'de');
+
+    // skip index/distinct object tests
   });
   group('LocaleMatcher - fallbacks', () {
     var tests = [
@@ -324,36 +332,79 @@ void main() {
     expectLocalesSameSupported(tests, ['it', 'en']);
   });
   group('LocaleMatcher - demotion', () {
+    expectString(['fr-CH', 'de-CH', 'it'], ['fr', 'de-CH', 'it'], 'de-CH',
+        favorEarlier: false);
+    expectString(['fr-CH', 'de-CH', 'it'], ['fr', 'de-CH', 'it'], 'fr');
+  });
+  group('LocaleMatcher - direction', () {
     expectString(['arz-EG', 'nb-DK'], ['ar', 'nn'], 'ar');
     expectString(['arz-EG', 'nb-DK'], ['ar', 'nn'], 'nn', ignoreFallback: true);
+  });
+  group('LocaleMatcher - maxDistanceAndIsMatch', () {
+    isMatchString('de-Phnx-AT', 'de', false);
+
+    isMatchString('de-LU', 'de', true);
+    isMatchString('de-Phnx-AT', 'de', false);
+    isMatchString('de-LU', 'de', true, 'de-Phnx-AT', 'de');
+    isMatchString('de-Phnx-AT', 'de', true, 'de-Phnx-AT', 'de');
+    isMatchString('el', 'de', false, 'de-Phnx-AT', 'de');
+    isMatchString('de-LU', 'de', true, 'de-AT', 'de');
+    isMatchString('da', 'no', false, 'de-AT', 'de');
+    isMatchString('zh_Hant', 'zh', false, 'de-AT', 'de');
+  });
+
+  // skip canonicalize: using general canonicalization
+  // skip PerfCase: not optimized for performance
+}
+
+void isMatchString(String desired, String supported, bool expected,
+    [String? dist1, String? dist2]) {
+  var localeMatcher = LocaleMatcher(
+    [],
+    desiredForThreshold: dist1 == null ? null : LocaleId.parse(dist1),
+    supportedForThreshold: dist2 == null ? null : LocaleId.parse(dist2),
+  );
+  test('$desired $supported (${localeMatcher.threshold}) => $expected', () {
+    expect(
+        localeMatcher.isMatch(
+            LocaleId.parse(desired), LocaleId.parse(supported)),
+        expected);
   });
 }
 
 MatchResult matchString(Iterable<String> desired, Iterable<String> supported,
-    {bool ignoreFallback = false}) {
-  return LocaleMatcher(toLocales(supported))
-      .match(toLocales(desired), ignoreFallback: ignoreFallback);
+    {bool ignoreFallback = false, String? defaultLocale}) {
+  return LocaleMatcher(toLocales(supported),
+          defaultLocale:
+              defaultLocale == null ? null : LocaleId.parse(defaultLocale))
+      .getBestMatch(toLocales(desired), ignoreFallback: ignoreFallback);
 }
 
 void expectString(
     Iterable<String> desired, Iterable<String> supported, String expected,
-    {bool ignoreFallback = false}) {
+    {bool ignoreFallback = false, bool favorEarlier = true}) {
   test(
       '$desired $supported => $expected',
       () => expect(
           LocaleMatcher(toLocales(supported))
-              .match(toLocales(desired), ignoreFallback: ignoreFallback)
+              .getBestMatch(toLocales(desired),
+                  ignoreFallback: ignoreFallback, favorEarlier: favorEarlier)
               .supportedLocale,
           LocaleId.parse(expected)));
 }
 
 void expectLocalesSameSupported(
-    Iterable<(Iterable<String>, String)> tests, Iterable<String> supported) {
+    Iterable<(Iterable<String>, String)> tests, Iterable<String> supported,
+    {String? defaultLocale}) {
   for (var t in tests) {
     test(
-        '${t.$1} $supported => ${t.$2}',
-        () => expect(matchString(t.$1, supported).supportedLocale,
-            LocaleId.parse(t.$2)));
+      '${t.$1} $supported => ${t.$2}',
+      () => expect(
+        matchString(t.$1, supported, defaultLocale: defaultLocale)
+            .supportedLocale,
+        LocaleId.parse(t.$2),
+      ),
+    );
   }
 }
 

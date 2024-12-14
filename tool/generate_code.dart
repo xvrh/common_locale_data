@@ -1,6 +1,8 @@
 import 'dart:io';
+
 import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
+
 import 'model/date_fields.dart';
 import 'model/language.dart';
 import 'model/locale.dart';
@@ -21,15 +23,6 @@ final _formatter = DartFormatter();
 
 void main() {
   var dataDirectory = Directory('lib/src/data');
-  if (dataDirectory.existsSync()) {
-    dataDirectory.deleteSync(recursive: true);
-  }
-  dataDirectory.createSync(recursive: true);
-
-  for (var file in Directory('lib').listSync().whereType<File>().where((file) =>
-      RegExp(r'[/\\][a-z]{2,3}(_[a-z0-9]+)*.dart$').hasMatch(file.path))) {
-    file.delete();
-  }
 
   print('Generate common files');
   File('lib/src/locale_data.dart')
@@ -44,6 +37,16 @@ void main() {
       .writeAsStringSync(_format(generateTimeZoneData()));
   File('lib/common_locale_data_all.dart')
       .writeAsStringSync(_format(generateCommonAll()));
+
+  if (dataDirectory.existsSync()) {
+    dataDirectory.deleteSync(recursive: true);
+  }
+  dataDirectory.createSync(recursive: true);
+
+  for (var file in Directory('lib').listSync().whereType<File>().where((file) =>
+      RegExp(r'[/\\][a-z]{2,3}(_[a-z0-9]+)*.dart$').hasMatch(file.path))) {
+    file.delete();
+  }
 
   for (var locale in supportedLocales) {
     print('Generate file for $locale');

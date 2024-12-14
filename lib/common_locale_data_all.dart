@@ -10,6 +10,9 @@
 library;
 
 import 'package:collection/collection.dart';
+
+export 'common_locale_data.dart';
+
 import 'af.dart';
 import 'af_na.dart';
 import 'am.dart';
@@ -410,7 +413,6 @@ import 'zh_hant_hk.dart';
 import 'zh_hant_mo.dart';
 import 'zh_hant_my.dart';
 import 'zu.dart';
-
 export 'af.dart';
 export 'af_na.dart';
 export 'am.dart';
@@ -458,7 +460,6 @@ export 'ca_es_valencia.dart';
 export 'ca_fr.dart';
 export 'ca_it.dart';
 export 'chr.dart';
-export 'common_locale_data.dart';
 export 'cs.dart';
 export 'cy.dart';
 export 'da.dart';

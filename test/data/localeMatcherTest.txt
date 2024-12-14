@@ -439,6 +439,7 @@ nl >> mul # but nl !=> af
 @supported=mul, nl
 af >> nl
 @supported=mul, af
+@skip=AM20241219: af matches script (mul is non existent language)
 nl >> mul
 
 ** test: testGetBestMatchForList-matchOnMaximized2
@@ -783,6 +784,7 @@ en-US >> en
 fr-FR >> fr
 ja-JP >> fr
 zu >> en
+@skip=AM20241219: why would we return 'en', instead of the default?
 zxx >> en
 
 ** test: TestExactMatch

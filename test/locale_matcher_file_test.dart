@@ -1,10 +1,11 @@
 import 'dart:io';
 
-import 'package:common_locale_data/src/locale_id.dart';
-import 'package:common_locale_data/src/locale_matcher.dart';
+import 'package:common_locale_data/src/locale_id/locale_id.dart';
+import 'package:common_locale_data/src/locale_id/locale_matcher.dart';
 import 'package:test/test.dart';
 
 typedef Entry = ({
+  int lineNr,
   List<String> desired,
   List<String> supported,
   String? expectedSupported,
@@ -38,6 +39,7 @@ void main() async {
           defaultLocale: t.defaultLocale,
           threshold: t.threshold,
           skipReason: t.skipReason,
+          lineNr: t.lineNr,
         );
       }
     });
@@ -48,25 +50,32 @@ Iterable<LocaleId> toLocales(Iterable<String> input) =>
     input.map((e) => LocaleId.parse(e));
 
 void expectString(
-    Iterable<String> desired,
-    Iterable<String> supported,
-    String? expectedSupported,
-    String? expectedDesired,
-    String? expectedCombined,
-    {bool ignoreFallback = false,
-    String? defaultLocale,
-    bool favorScript = false,
-    int? threshold,
-    String? skipReason}) {
+  Iterable<String> desired,
+  Iterable<String> supported,
+  String? expectedSupported,
+  String? expectedDesired,
+  String? expectedCombined, {
+  bool ignoreFallback = false,
+  String? defaultLocale,
+  bool favorScript = false,
+  int? threshold,
+  String? skipReason,
+  required int lineNr,
+}) {
   test(
-      '$desired, $supported => $expectedSupported, $expectedDesired, $expectedCombined',
+      '$desired, $supported => $expectedSupported, $expectedDesired, $expectedCombined, '
+      '${defaultLocale != null ? "defaultLocale: $defaultLocale, " : ""}'
+      '${favorScript ? "favorScript" : ""}'
+      '${ignoreFallback ? "ignoreFallback" : ""}'
+      '${threshold != null ? "threshold: $threshold, " : ""}'
+      ' (line: $lineNr)',
       skip: skipReason, () {
     var res = LocaleMatcher(
       toLocales(supported),
       defaultLocale:
           defaultLocale != null ? LocaleId.parse(defaultLocale) : null,
       threshold: threshold,
-    ).match(
+    ).getBestMatch(
       toLocales(desired),
       ignoreFallback: ignoreFallback,
       favorScript: favorScript,
@@ -94,7 +103,7 @@ void expectString(
 }
 
 Future<List<(String, List<Entry>)>> readDataFile() async {
-  final file = File('test/localeMatcherTest.txt');
+  final file = File('test/data/localeMatcherTest.txt');
   final lines = await file.readAsLines();
 
   var root = <(String, List<Entry>)>[];
@@ -107,7 +116,7 @@ Future<List<(String, List<Entry>)>> readDataFile() async {
   var favorScript = false;
   int? threshold;
   String? skipReason;
-  for (var line in lines) {
+  for (var (lineNr, line) in lines.indexed) {
     line = line.trim();
     if (line.startsWith('#')) {
       continue;
@@ -152,6 +161,7 @@ Future<List<(String, List<Entry>)>> readDataFile() async {
               : expectedParts[2]
           : null;
       group.add((
+        lineNr: lineNr + 1,
         desired: desired,
         supported: supported,
         expectedSupported: expectedSupported,

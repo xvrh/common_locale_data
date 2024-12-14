@@ -1,6 +1,7 @@
 import 'package:collection/collection.dart';
+
+import '../locale_data.dart';
 import 'base_language_id.dart';
-import 'locale_data.dart';
 
 final _regExpSeparator = RegExp(r'[-_]');
 
@@ -57,13 +58,13 @@ class LanguageId extends BaseLanguageId {
     var casedRegion = region?.toUpperCase();
     var casedVariants = variants.map((e) => e.toLowerCase()).toSet().sorted();
 
-    var source = LanguageIdForCanonicalizationRule(
+    var source = LanguageId(
         lang: casedLang,
         script: casedScript,
         region: casedRegion,
         variants: casedVariants);
 
-    var canonical = source.applyRules(LocaleMapping.canonicalizationRules);
+    var canonical = _applyRules(source, LocaleMapping.canonicalizationRules);
 
     // ordering of variants is taken from tr35 and not from bcp47:
     // https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers
@@ -74,6 +75,59 @@ class LanguageId extends BaseLanguageId {
         script: canonical.script,
         region: canonical.region,
         variants: List.unmodifiable(newVariants));
+  }
+
+  static BaseLanguageId _applyRules(
+      LanguageId source, Iterable<LanguageCanonicalizationRule> rules) {
+    var replaced = false;
+    do {
+      replaced = false;
+      for (var rule in rules) {
+        if (!rule.matches(source)) continue;
+        if (rule.replacements.isEmpty) continue;
+
+        var replacement = rule.replacements[0];
+        if (rule.type.region != null ||
+            source.region == null && rule.replacements.length > 1) {
+          var region = LanguageId(lang: source.lang, script: source.script)
+              .addLikelySubTags()
+              .region;
+          replacement = rule.replacements.firstWhereOrNull(
+                  (e) => e.region?.toUpperCase() == region?.toUpperCase()) ??
+              replacement;
+        }
+        var resLang =
+            (rule.type.lang != null || source.langOrNullIfUndefined == null)
+                ? replacement.lang
+                : source.lang;
+
+        var resScript = (rule.type.script != null || source.script == null)
+            ? replacement.script
+            : source.script;
+
+        var resRegion = (rule.type.region != null || source.region == null)
+            ? replacement.region
+            : source.region;
+
+        var resVariants = List<String>.from(source.variants);
+        if (rule.type.variants.isNotEmpty) {
+          for (var e in rule.type.variants) {
+            resVariants.remove(e);
+          }
+          resVariants.addAll(replacement.variants);
+        } else if (source.variants.isEmpty) {
+          resVariants = replacement.variants;
+        }
+        source = LanguageId(
+            lang: resLang,
+            script: resScript,
+            region: resRegion,
+            variants: resVariants);
+        replaced = true;
+        break;
+      }
+    } while (replaced);
+    return source;
   }
 
   /// Return a [LanguageId] with likely sub tags added.
@@ -101,7 +155,8 @@ class LanguageId extends BaseLanguageId {
             LocaleMapping.likelySubtags['${lang ?? "und"}_$script'] ??
             LocaleMapping.likelySubtags['${lang ?? "und"}_$region'] ??
             LocaleMapping.likelySubtags[lang ?? 'und'] ??
-            LocaleMapping.likelySubtags['und']!;
+            LanguageId();
+    //LocaleMapping.likelySubtags['und']!;
 
     return LanguageId(
         lang: lang ?? replacement.lang,
@@ -116,26 +171,51 @@ class LanguageId extends BaseLanguageId {
   /// This is also referred to as minimized form.
   ///
   /// This function will implicitly canonicalize the input before likely sub tags are added.
-  LanguageId removeLikelySubTags() {
+  LanguageId removeLikelySubTags({bool favorScript = false}) {
     var max = addLikelySubTags();
 
-    var trial = LanguageId(lang: max.lang).addLikelySubTags();
-    if (trial.lang == max.lang &&
-        trial.script == max.script &&
-        trial.region == max.region) {
-      return LanguageId(lang: trial.lang, variants: variants);
+    var trialLang = LanguageId(lang: max.lang).addLikelySubTags();
+    if (trialLang.lang == max.lang &&
+        trialLang.script == max.script &&
+        trialLang.region == max.region) {
+      return LanguageId(lang: trialLang.lang, variants: variants);
     }
-    trial = LanguageId(lang: max.lang, region: max.region).addLikelySubTags();
-    if (trial.lang == max.lang &&
-        trial.script == max.script &&
-        trial.region == max.region) {
-      return LanguageId(
-          lang: trial.lang, region: trial.region, variants: variants);
+
+    if (favorScript) {
+      var trialLangScript =
+          LanguageId(lang: max.lang, script: max.script).addLikelySubTags();
+      if (trialLangScript.lang == max.lang &&
+          trialLangScript.script == max.script &&
+          trialLangScript.region == max.region) {
+        return LanguageId(
+            lang: trialLangScript.lang,
+            script: trialLangScript.script,
+            variants: variants);
+      }
     }
-    trial = LanguageId(lang: max.lang, script: max.script).addLikelySubTags();
-    if (trial.lang == max.lang && trial.script == max.script) {
+
+    var trialLangRegion =
+        LanguageId(lang: max.lang, region: max.region).addLikelySubTags();
+    if (trialLangRegion.lang == max.lang &&
+        trialLangRegion.script == max.script &&
+        trialLangRegion.region == max.region) {
       return LanguageId(
-          lang: trial.lang, script: trial.script, variants: variants);
+          lang: trialLangRegion.lang,
+          region: trialLangRegion.region,
+          variants: variants);
+    }
+
+    if (!favorScript) {
+      var trialLangScript =
+          LanguageId(lang: max.lang, script: max.script).addLikelySubTags();
+      if (trialLangScript.lang == max.lang &&
+          trialLangScript.script == max.script &&
+          trialLangScript.region == max.region) {
+        return LanguageId(
+            lang: trialLangScript.lang,
+            script: trialLangScript.script,
+            variants: variants);
+      }
     }
     return max;
   }
