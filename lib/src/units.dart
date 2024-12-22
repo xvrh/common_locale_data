@@ -1,21 +1,21 @@
 import 'package:intl/intl.dart';
 
-export 'units_model.dart';
+export 'units.model.dart';
 
 /// Localized unit information.
 ///
 /// {@category Units}
 class Unit {
   /// Localized long unit information.
-  UnitCountPattern long;
+  final UnitCountPattern long;
 
   /// Localized short unit information.
-  UnitCountPattern short;
+  final UnitCountPattern short;
 
   /// Localized narrow unit information.
-  UnitCountPattern narrow;
+  final UnitCountPattern narrow;
 
-  Unit({required this.long, required this.short, required this.narrow});
+  const Unit({required this.long, required this.short, required this.narrow});
 
   @override
   String toString() => long.displayName;
@@ -48,7 +48,7 @@ class UnitCountPattern {
   /// Localized pattern for an other amount of units.
   final String other;
 
-  UnitCountPattern(
+  const UnitCountPattern(
     this._locale,
     this.displayName, {
     this.one,
@@ -93,15 +93,16 @@ class UnitCountPattern {
 /// {@category Units}
 class UnitPrefix {
   /// Localized long unit information.
-  UnitPrefixPattern long;
+  final UnitPrefixPattern long;
 
   /// Localized short unit information.
-  UnitPrefixPattern short;
+  final UnitPrefixPattern short;
 
   /// Localized narrow unit information.
-  UnitPrefixPattern narrow;
+  final UnitPrefixPattern narrow;
 
-  UnitPrefix({required this.long, required this.short, required this.narrow});
+  const UnitPrefix(
+      {required this.long, required this.short, required this.narrow});
 
   String call(String value) => long.call(value);
 
@@ -116,7 +117,7 @@ class UnitPrefixPattern {
   /// Localized pattern for unit prefix.
   final String pattern;
 
-  UnitPrefixPattern(this.pattern);
+  const UnitPrefixPattern(this.pattern);
 
   String format(String value) {
     return call(value);
@@ -134,15 +135,16 @@ class UnitPrefixPattern {
 /// {@category Units}
 class CompoundUnit {
   /// Localized long unit information.
-  CompoundUnitPattern long;
+  final CompoundUnitPattern long;
 
   /// Localized short unit information.
-  CompoundUnitPattern short;
+  final CompoundUnitPattern short;
 
   /// Localized narrow unit information.
-  CompoundUnitPattern narrow;
+  final CompoundUnitPattern narrow;
 
-  CompoundUnit({required this.long, required this.short, required this.narrow});
+  const CompoundUnit(
+      {required this.long, required this.short, required this.narrow});
 
   String call(String a, String b) => long.call(a, b);
 
@@ -157,7 +159,7 @@ class CompoundUnitPattern {
   /// Localized pattern for compound unit.
   final String pattern;
 
-  CompoundUnitPattern(this.pattern);
+  const CompoundUnitPattern(this.pattern);
 
   String format(String a, String b) {
     return call(a, b);

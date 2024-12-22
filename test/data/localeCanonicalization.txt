@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/unicode-org/icu/refs/tags/release-76-1/icu4j/main/core/src/test/resources/com/ibm/icu/dev/data/cldr/localeIdentifiers/localeCanonicalization.txt
+# Downloaded from: https://raw.githubusercontent.com/unicode-org/cldr/refs/tags/release-46/common/testData/localeIdentifiers/localeCanonicalization.txt
 # Lines like "@skip=<comment>" indicate the next test case should be ignored, with <comment> as reason.
 
 # Test data for locale identifier canonicalization

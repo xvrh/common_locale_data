@@ -1,10 +1,16 @@
 import 'package:intl/intl.dart';
+import 'common_locale_data.dart';
 import 'shared.dart';
 
 /// Localized date and time related texts.
 ///
 /// {@category Dates}
 abstract class DateFields {
+  /// Parent [CommonLocaleData]
+  final CommonLocaleData cld;
+
+  const DateFields(this.cld);
+
   MultiLength get era;
   DateFieldFullData get year;
   DateFieldFullData get quarter;
@@ -40,7 +46,7 @@ abstract class DateFields {
 class DateFieldData {
   final MultiLength now;
 
-  DateFieldData({required this.now});
+  const DateFieldData({required this.now});
 }
 
 /// Localized relative date/time field names.
@@ -60,7 +66,7 @@ class DateFieldDataWithRelative extends DateFieldData
   @override
   final MultiLengthRelativeTime past, future;
 
-  DateFieldDataWithRelative({
+  const DateFieldDataWithRelative({
     required super.now,
     required this.previous,
     required this.next,
@@ -75,7 +81,7 @@ class DateFieldDataWithRelative extends DateFieldData
 class DateFieldFullData extends DateFieldDataWithRelative {
   final MultiLength displayName;
 
-  DateFieldFullData({
+  const DateFieldFullData({
     required this.displayName,
     required super.now,
     required super.previous,
@@ -96,7 +102,7 @@ class DateFieldDataTime extends DateFieldData implements RelativeDateFieldData {
   @override
   final MultiLengthRelativeTime past, future;
 
-  DateFieldDataTime({
+  const DateFieldDataTime({
     required this.displayName,
     required super.now,
     required this.past,
@@ -111,9 +117,9 @@ class DateFieldDataTime extends DateFieldData implements RelativeDateFieldData {
 ///
 /// {@category Dates}
 class MultiLengthRelativeTime {
-  RelativeTime long, short, narrow;
+  final RelativeTime long, short, narrow;
 
-  MultiLengthRelativeTime({
+  const MultiLengthRelativeTime({
     required this.long,
     required this.short,
     required this.narrow,
@@ -136,7 +142,7 @@ class RelativeTime {
   final String other;
   final String? one, zero, two, few, many;
 
-  RelativeTime(
+  const RelativeTime(
     this._locale, {
     required this.other,
     this.one,

@@ -1,3 +1,5 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
 /// Library to access ALL translated common data.
 ///
 /// Individual locales can be used via the [CommonLocaleDataAll] extension.
@@ -10,9 +12,6 @@
 library;
 
 import 'package:collection/collection.dart';
-
-export 'common_locale_data.dart';
-
 import 'af.dart';
 import 'af_na.dart';
 import 'am.dart';
@@ -413,6 +412,7 @@ import 'zh_hant_hk.dart';
 import 'zh_hant_mo.dart';
 import 'zh_hant_my.dart';
 import 'zu.dart';
+
 export 'af.dart';
 export 'af_na.dart';
 export 'am.dart';
@@ -460,6 +460,7 @@ export 'ca_es_valencia.dart';
 export 'ca_fr.dart';
 export 'ca_it.dart';
 export 'chr.dart';
+export 'common_locale_data.dart';
 export 'cs.dart';
 export 'cy.dart';
 export 'da.dart';
@@ -817,1204 +818,1204 @@ export 'zu.dart';
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 extension CommonLocaleDataAll on CommonLocaleData {
   /// Access the [CommonLocaleData] for af
-  static const af = CommonLocaleDataAf();
+  static const af = CommonLocaleDataAf.staticInstance;
 
   /// Access the [CommonLocaleData] for af-NA
-  static const afNA = CommonLocaleDataAfNA();
+  static const afNA = CommonLocaleDataAfNA.staticInstance;
 
   /// Access the [CommonLocaleData] for am
-  static const am = CommonLocaleDataAm();
+  static const am = CommonLocaleDataAm.staticInstance;
 
   /// Access the [CommonLocaleData] for ar
-  static const ar = CommonLocaleDataAr();
+  static const ar = CommonLocaleDataAr.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-AE
-  static const arAE = CommonLocaleDataArAE();
+  static const arAE = CommonLocaleDataArAE.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-BH
-  static const arBH = CommonLocaleDataArBH();
+  static const arBH = CommonLocaleDataArBH.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-DJ
-  static const arDJ = CommonLocaleDataArDJ();
+  static const arDJ = CommonLocaleDataArDJ.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-DZ
-  static const arDZ = CommonLocaleDataArDZ();
+  static const arDZ = CommonLocaleDataArDZ.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-EG
-  static const arEG = CommonLocaleDataArEG();
+  static const arEG = CommonLocaleDataArEG.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-EH
-  static const arEH = CommonLocaleDataArEH();
+  static const arEH = CommonLocaleDataArEH.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-ER
-  static const arER = CommonLocaleDataArER();
+  static const arER = CommonLocaleDataArER.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-IL
-  static const arIL = CommonLocaleDataArIL();
+  static const arIL = CommonLocaleDataArIL.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-IQ
-  static const arIQ = CommonLocaleDataArIQ();
+  static const arIQ = CommonLocaleDataArIQ.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-JO
-  static const arJO = CommonLocaleDataArJO();
+  static const arJO = CommonLocaleDataArJO.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-KM
-  static const arKM = CommonLocaleDataArKM();
+  static const arKM = CommonLocaleDataArKM.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-KW
-  static const arKW = CommonLocaleDataArKW();
+  static const arKW = CommonLocaleDataArKW.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-LB
-  static const arLB = CommonLocaleDataArLB();
+  static const arLB = CommonLocaleDataArLB.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-LY
-  static const arLY = CommonLocaleDataArLY();
+  static const arLY = CommonLocaleDataArLY.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-MA
-  static const arMA = CommonLocaleDataArMA();
+  static const arMA = CommonLocaleDataArMA.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-MR
-  static const arMR = CommonLocaleDataArMR();
+  static const arMR = CommonLocaleDataArMR.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-OM
-  static const arOM = CommonLocaleDataArOM();
+  static const arOM = CommonLocaleDataArOM.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-PS
-  static const arPS = CommonLocaleDataArPS();
+  static const arPS = CommonLocaleDataArPS.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-QA
-  static const arQA = CommonLocaleDataArQA();
+  static const arQA = CommonLocaleDataArQA.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-SA
-  static const arSA = CommonLocaleDataArSA();
+  static const arSA = CommonLocaleDataArSA.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-SD
-  static const arSD = CommonLocaleDataArSD();
+  static const arSD = CommonLocaleDataArSD.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-SO
-  static const arSO = CommonLocaleDataArSO();
+  static const arSO = CommonLocaleDataArSO.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-SS
-  static const arSS = CommonLocaleDataArSS();
+  static const arSS = CommonLocaleDataArSS.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-SY
-  static const arSY = CommonLocaleDataArSY();
+  static const arSY = CommonLocaleDataArSY.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-TD
-  static const arTD = CommonLocaleDataArTD();
+  static const arTD = CommonLocaleDataArTD.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-TN
-  static const arTN = CommonLocaleDataArTN();
+  static const arTN = CommonLocaleDataArTN.staticInstance;
 
   /// Access the [CommonLocaleData] for ar-YE
-  static const arYE = CommonLocaleDataArYE();
+  static const arYE = CommonLocaleDataArYE.staticInstance;
 
   /// Access the [CommonLocaleData] for as
-  static const $as = CommonLocaleDataAs();
+  static const $as = CommonLocaleDataAs.staticInstance;
 
   /// Access the [CommonLocaleData] for az
-  static const az = CommonLocaleDataAz();
+  static const az = CommonLocaleDataAz.staticInstance;
 
   /// Access the [CommonLocaleData] for az-Latn
-  static const azLatn = CommonLocaleDataAzLatn();
+  static const azLatn = CommonLocaleDataAzLatn.staticInstance;
 
   /// Access the [CommonLocaleData] for be
-  static const be = CommonLocaleDataBe();
+  static const be = CommonLocaleDataBe.staticInstance;
 
   /// Access the [CommonLocaleData] for be-tarask
-  static const beTarask = CommonLocaleDataBeTarask();
+  static const beTarask = CommonLocaleDataBeTarask.staticInstance;
 
   /// Access the [CommonLocaleData] for bg
-  static const bg = CommonLocaleDataBg();
+  static const bg = CommonLocaleDataBg.staticInstance;
 
   /// Access the [CommonLocaleData] for bn
-  static const bn = CommonLocaleDataBn();
+  static const bn = CommonLocaleDataBn.staticInstance;
 
   /// Access the [CommonLocaleData] for bn-IN
-  static const bnIN = CommonLocaleDataBnIN();
+  static const bnIN = CommonLocaleDataBnIN.staticInstance;
 
   /// Access the [CommonLocaleData] for bs
-  static const bs = CommonLocaleDataBs();
+  static const bs = CommonLocaleDataBs.staticInstance;
 
   /// Access the [CommonLocaleData] for bs-Latn
-  static const bsLatn = CommonLocaleDataBsLatn();
+  static const bsLatn = CommonLocaleDataBsLatn.staticInstance;
 
   /// Access the [CommonLocaleData] for ca
-  static const ca = CommonLocaleDataCa();
+  static const ca = CommonLocaleDataCa.staticInstance;
 
   /// Access the [CommonLocaleData] for ca-AD
-  static const caAD = CommonLocaleDataCaAD();
+  static const caAD = CommonLocaleDataCaAD.staticInstance;
 
   /// Access the [CommonLocaleData] for ca-ES-valencia
-  static const caESValencia = CommonLocaleDataCaESValencia();
+  static const caESValencia = CommonLocaleDataCaESValencia.staticInstance;
 
   /// Access the [CommonLocaleData] for ca-FR
-  static const caFR = CommonLocaleDataCaFR();
+  static const caFR = CommonLocaleDataCaFR.staticInstance;
 
   /// Access the [CommonLocaleData] for ca-IT
-  static const caIT = CommonLocaleDataCaIT();
+  static const caIT = CommonLocaleDataCaIT.staticInstance;
 
   /// Access the [CommonLocaleData] for chr
-  static const chr = CommonLocaleDataChr();
+  static const chr = CommonLocaleDataChr.staticInstance;
 
   /// Access the [CommonLocaleData] for cs
-  static const cs = CommonLocaleDataCs();
+  static const cs = CommonLocaleDataCs.staticInstance;
 
   /// Access the [CommonLocaleData] for cy
-  static const cy = CommonLocaleDataCy();
+  static const cy = CommonLocaleDataCy.staticInstance;
 
   /// Access the [CommonLocaleData] for da
-  static const da = CommonLocaleDataDa();
+  static const da = CommonLocaleDataDa.staticInstance;
 
   /// Access the [CommonLocaleData] for da-GL
-  static const daGL = CommonLocaleDataDaGL();
+  static const daGL = CommonLocaleDataDaGL.staticInstance;
 
   /// Access the [CommonLocaleData] for de
-  static const de = CommonLocaleDataDe();
+  static const de = CommonLocaleDataDe.staticInstance;
 
   /// Access the [CommonLocaleData] for de-AT
-  static const deAT = CommonLocaleDataDeAT();
+  static const deAT = CommonLocaleDataDeAT.staticInstance;
 
   /// Access the [CommonLocaleData] for de-BE
-  static const deBE = CommonLocaleDataDeBE();
+  static const deBE = CommonLocaleDataDeBE.staticInstance;
 
   /// Access the [CommonLocaleData] for de-CH
-  static const deCH = CommonLocaleDataDeCH();
+  static const deCH = CommonLocaleDataDeCH.staticInstance;
 
   /// Access the [CommonLocaleData] for de-IT
-  static const deIT = CommonLocaleDataDeIT();
+  static const deIT = CommonLocaleDataDeIT.staticInstance;
 
   /// Access the [CommonLocaleData] for de-LI
-  static const deLI = CommonLocaleDataDeLI();
+  static const deLI = CommonLocaleDataDeLI.staticInstance;
 
   /// Access the [CommonLocaleData] for de-LU
-  static const deLU = CommonLocaleDataDeLU();
+  static const deLU = CommonLocaleDataDeLU.staticInstance;
 
   /// Access the [CommonLocaleData] for dsb
-  static const dsb = CommonLocaleDataDsb();
+  static const dsb = CommonLocaleDataDsb.staticInstance;
 
   /// Access the [CommonLocaleData] for el
-  static const el = CommonLocaleDataEl();
+  static const el = CommonLocaleDataEl.staticInstance;
 
   /// Access the [CommonLocaleData] for el-CY
-  static const elCY = CommonLocaleDataElCY();
+  static const elCY = CommonLocaleDataElCY.staticInstance;
 
   /// Access the [CommonLocaleData] for el-polyton
-  static const elPolyton = CommonLocaleDataElPolyton();
+  static const elPolyton = CommonLocaleDataElPolyton.staticInstance;
 
   /// Access the [CommonLocaleData] for en
-  static const en = CommonLocaleDataEn();
+  static const en = CommonLocaleDataEn.staticInstance;
 
   /// Access the [CommonLocaleData] for en-001
-  static const en001 = CommonLocaleDataEn001();
+  static const en001 = CommonLocaleDataEn001.staticInstance;
 
   /// Access the [CommonLocaleData] for en-150
-  static const en150 = CommonLocaleDataEn150();
+  static const en150 = CommonLocaleDataEn150.staticInstance;
 
   /// Access the [CommonLocaleData] for en-AE
-  static const enAE = CommonLocaleDataEnAE();
+  static const enAE = CommonLocaleDataEnAE.staticInstance;
 
   /// Access the [CommonLocaleData] for en-AG
-  static const enAG = CommonLocaleDataEnAG();
+  static const enAG = CommonLocaleDataEnAG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-AI
-  static const enAI = CommonLocaleDataEnAI();
+  static const enAI = CommonLocaleDataEnAI.staticInstance;
 
   /// Access the [CommonLocaleData] for en-AS
-  static const enAS = CommonLocaleDataEnAS();
+  static const enAS = CommonLocaleDataEnAS.staticInstance;
 
   /// Access the [CommonLocaleData] for en-AT
-  static const enAT = CommonLocaleDataEnAT();
+  static const enAT = CommonLocaleDataEnAT.staticInstance;
 
   /// Access the [CommonLocaleData] for en-AU
-  static const enAU = CommonLocaleDataEnAU();
+  static const enAU = CommonLocaleDataEnAU.staticInstance;
 
   /// Access the [CommonLocaleData] for en-BB
-  static const enBB = CommonLocaleDataEnBB();
+  static const enBB = CommonLocaleDataEnBB.staticInstance;
 
   /// Access the [CommonLocaleData] for en-BE
-  static const enBE = CommonLocaleDataEnBE();
+  static const enBE = CommonLocaleDataEnBE.staticInstance;
 
   /// Access the [CommonLocaleData] for en-BI
-  static const enBI = CommonLocaleDataEnBI();
+  static const enBI = CommonLocaleDataEnBI.staticInstance;
 
   /// Access the [CommonLocaleData] for en-BM
-  static const enBM = CommonLocaleDataEnBM();
+  static const enBM = CommonLocaleDataEnBM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-BS
-  static const enBS = CommonLocaleDataEnBS();
+  static const enBS = CommonLocaleDataEnBS.staticInstance;
 
   /// Access the [CommonLocaleData] for en-BW
-  static const enBW = CommonLocaleDataEnBW();
+  static const enBW = CommonLocaleDataEnBW.staticInstance;
 
   /// Access the [CommonLocaleData] for en-BZ
-  static const enBZ = CommonLocaleDataEnBZ();
+  static const enBZ = CommonLocaleDataEnBZ.staticInstance;
 
   /// Access the [CommonLocaleData] for en-CA
-  static const enCA = CommonLocaleDataEnCA();
+  static const enCA = CommonLocaleDataEnCA.staticInstance;
 
   /// Access the [CommonLocaleData] for en-CC
-  static const enCC = CommonLocaleDataEnCC();
+  static const enCC = CommonLocaleDataEnCC.staticInstance;
 
   /// Access the [CommonLocaleData] for en-CH
-  static const enCH = CommonLocaleDataEnCH();
+  static const enCH = CommonLocaleDataEnCH.staticInstance;
 
   /// Access the [CommonLocaleData] for en-CK
-  static const enCK = CommonLocaleDataEnCK();
+  static const enCK = CommonLocaleDataEnCK.staticInstance;
 
   /// Access the [CommonLocaleData] for en-CM
-  static const enCM = CommonLocaleDataEnCM();
+  static const enCM = CommonLocaleDataEnCM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-CX
-  static const enCX = CommonLocaleDataEnCX();
+  static const enCX = CommonLocaleDataEnCX.staticInstance;
 
   /// Access the [CommonLocaleData] for en-CY
-  static const enCY = CommonLocaleDataEnCY();
+  static const enCY = CommonLocaleDataEnCY.staticInstance;
 
   /// Access the [CommonLocaleData] for en-DE
-  static const enDE = CommonLocaleDataEnDE();
+  static const enDE = CommonLocaleDataEnDE.staticInstance;
 
   /// Access the [CommonLocaleData] for en-DG
-  static const enDG = CommonLocaleDataEnDG();
+  static const enDG = CommonLocaleDataEnDG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-DK
-  static const enDK = CommonLocaleDataEnDK();
+  static const enDK = CommonLocaleDataEnDK.staticInstance;
 
   /// Access the [CommonLocaleData] for en-DM
-  static const enDM = CommonLocaleDataEnDM();
+  static const enDM = CommonLocaleDataEnDM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-ER
-  static const enER = CommonLocaleDataEnER();
+  static const enER = CommonLocaleDataEnER.staticInstance;
 
   /// Access the [CommonLocaleData] for en-FI
-  static const enFI = CommonLocaleDataEnFI();
+  static const enFI = CommonLocaleDataEnFI.staticInstance;
 
   /// Access the [CommonLocaleData] for en-FJ
-  static const enFJ = CommonLocaleDataEnFJ();
+  static const enFJ = CommonLocaleDataEnFJ.staticInstance;
 
   /// Access the [CommonLocaleData] for en-FK
-  static const enFK = CommonLocaleDataEnFK();
+  static const enFK = CommonLocaleDataEnFK.staticInstance;
 
   /// Access the [CommonLocaleData] for en-FM
-  static const enFM = CommonLocaleDataEnFM();
+  static const enFM = CommonLocaleDataEnFM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GB
-  static const enGB = CommonLocaleDataEnGB();
+  static const enGB = CommonLocaleDataEnGB.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GD
-  static const enGD = CommonLocaleDataEnGD();
+  static const enGD = CommonLocaleDataEnGD.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GG
-  static const enGG = CommonLocaleDataEnGG();
+  static const enGG = CommonLocaleDataEnGG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GH
-  static const enGH = CommonLocaleDataEnGH();
+  static const enGH = CommonLocaleDataEnGH.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GI
-  static const enGI = CommonLocaleDataEnGI();
+  static const enGI = CommonLocaleDataEnGI.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GM
-  static const enGM = CommonLocaleDataEnGM();
+  static const enGM = CommonLocaleDataEnGM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GU
-  static const enGU = CommonLocaleDataEnGU();
+  static const enGU = CommonLocaleDataEnGU.staticInstance;
 
   /// Access the [CommonLocaleData] for en-GY
-  static const enGY = CommonLocaleDataEnGY();
+  static const enGY = CommonLocaleDataEnGY.staticInstance;
 
   /// Access the [CommonLocaleData] for en-HK
-  static const enHK = CommonLocaleDataEnHK();
+  static const enHK = CommonLocaleDataEnHK.staticInstance;
 
   /// Access the [CommonLocaleData] for en-ID
-  static const enID = CommonLocaleDataEnID();
+  static const enID = CommonLocaleDataEnID.staticInstance;
 
   /// Access the [CommonLocaleData] for en-IE
-  static const enIE = CommonLocaleDataEnIE();
+  static const enIE = CommonLocaleDataEnIE.staticInstance;
 
   /// Access the [CommonLocaleData] for en-IL
-  static const enIL = CommonLocaleDataEnIL();
+  static const enIL = CommonLocaleDataEnIL.staticInstance;
 
   /// Access the [CommonLocaleData] for en-IM
-  static const enIM = CommonLocaleDataEnIM();
+  static const enIM = CommonLocaleDataEnIM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-IN
-  static const enIN = CommonLocaleDataEnIN();
+  static const enIN = CommonLocaleDataEnIN.staticInstance;
 
   /// Access the [CommonLocaleData] for en-IO
-  static const enIO = CommonLocaleDataEnIO();
+  static const enIO = CommonLocaleDataEnIO.staticInstance;
 
   /// Access the [CommonLocaleData] for en-JE
-  static const enJE = CommonLocaleDataEnJE();
+  static const enJE = CommonLocaleDataEnJE.staticInstance;
 
   /// Access the [CommonLocaleData] for en-JM
-  static const enJM = CommonLocaleDataEnJM();
+  static const enJM = CommonLocaleDataEnJM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-KE
-  static const enKE = CommonLocaleDataEnKE();
+  static const enKE = CommonLocaleDataEnKE.staticInstance;
 
   /// Access the [CommonLocaleData] for en-KI
-  static const enKI = CommonLocaleDataEnKI();
+  static const enKI = CommonLocaleDataEnKI.staticInstance;
 
   /// Access the [CommonLocaleData] for en-KN
-  static const enKN = CommonLocaleDataEnKN();
+  static const enKN = CommonLocaleDataEnKN.staticInstance;
 
   /// Access the [CommonLocaleData] for en-KY
-  static const enKY = CommonLocaleDataEnKY();
+  static const enKY = CommonLocaleDataEnKY.staticInstance;
 
   /// Access the [CommonLocaleData] for en-LC
-  static const enLC = CommonLocaleDataEnLC();
+  static const enLC = CommonLocaleDataEnLC.staticInstance;
 
   /// Access the [CommonLocaleData] for en-LR
-  static const enLR = CommonLocaleDataEnLR();
+  static const enLR = CommonLocaleDataEnLR.staticInstance;
 
   /// Access the [CommonLocaleData] for en-LS
-  static const enLS = CommonLocaleDataEnLS();
+  static const enLS = CommonLocaleDataEnLS.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MG
-  static const enMG = CommonLocaleDataEnMG();
+  static const enMG = CommonLocaleDataEnMG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MH
-  static const enMH = CommonLocaleDataEnMH();
+  static const enMH = CommonLocaleDataEnMH.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MO
-  static const enMO = CommonLocaleDataEnMO();
+  static const enMO = CommonLocaleDataEnMO.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MP
-  static const enMP = CommonLocaleDataEnMP();
+  static const enMP = CommonLocaleDataEnMP.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MS
-  static const enMS = CommonLocaleDataEnMS();
+  static const enMS = CommonLocaleDataEnMS.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MT
-  static const enMT = CommonLocaleDataEnMT();
+  static const enMT = CommonLocaleDataEnMT.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MU
-  static const enMU = CommonLocaleDataEnMU();
+  static const enMU = CommonLocaleDataEnMU.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MV
-  static const enMV = CommonLocaleDataEnMV();
+  static const enMV = CommonLocaleDataEnMV.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MW
-  static const enMW = CommonLocaleDataEnMW();
+  static const enMW = CommonLocaleDataEnMW.staticInstance;
 
   /// Access the [CommonLocaleData] for en-MY
-  static const enMY = CommonLocaleDataEnMY();
+  static const enMY = CommonLocaleDataEnMY.staticInstance;
 
   /// Access the [CommonLocaleData] for en-NA
-  static const enNA = CommonLocaleDataEnNA();
+  static const enNA = CommonLocaleDataEnNA.staticInstance;
 
   /// Access the [CommonLocaleData] for en-NF
-  static const enNF = CommonLocaleDataEnNF();
+  static const enNF = CommonLocaleDataEnNF.staticInstance;
 
   /// Access the [CommonLocaleData] for en-NG
-  static const enNG = CommonLocaleDataEnNG();
+  static const enNG = CommonLocaleDataEnNG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-NL
-  static const enNL = CommonLocaleDataEnNL();
+  static const enNL = CommonLocaleDataEnNL.staticInstance;
 
   /// Access the [CommonLocaleData] for en-NR
-  static const enNR = CommonLocaleDataEnNR();
+  static const enNR = CommonLocaleDataEnNR.staticInstance;
 
   /// Access the [CommonLocaleData] for en-NU
-  static const enNU = CommonLocaleDataEnNU();
+  static const enNU = CommonLocaleDataEnNU.staticInstance;
 
   /// Access the [CommonLocaleData] for en-NZ
-  static const enNZ = CommonLocaleDataEnNZ();
+  static const enNZ = CommonLocaleDataEnNZ.staticInstance;
 
   /// Access the [CommonLocaleData] for en-PG
-  static const enPG = CommonLocaleDataEnPG();
+  static const enPG = CommonLocaleDataEnPG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-PH
-  static const enPH = CommonLocaleDataEnPH();
+  static const enPH = CommonLocaleDataEnPH.staticInstance;
 
   /// Access the [CommonLocaleData] for en-PK
-  static const enPK = CommonLocaleDataEnPK();
+  static const enPK = CommonLocaleDataEnPK.staticInstance;
 
   /// Access the [CommonLocaleData] for en-PN
-  static const enPN = CommonLocaleDataEnPN();
+  static const enPN = CommonLocaleDataEnPN.staticInstance;
 
   /// Access the [CommonLocaleData] for en-PR
-  static const enPR = CommonLocaleDataEnPR();
+  static const enPR = CommonLocaleDataEnPR.staticInstance;
 
   /// Access the [CommonLocaleData] for en-PW
-  static const enPW = CommonLocaleDataEnPW();
+  static const enPW = CommonLocaleDataEnPW.staticInstance;
 
   /// Access the [CommonLocaleData] for en-RW
-  static const enRW = CommonLocaleDataEnRW();
+  static const enRW = CommonLocaleDataEnRW.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SB
-  static const enSB = CommonLocaleDataEnSB();
+  static const enSB = CommonLocaleDataEnSB.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SC
-  static const enSC = CommonLocaleDataEnSC();
+  static const enSC = CommonLocaleDataEnSC.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SD
-  static const enSD = CommonLocaleDataEnSD();
+  static const enSD = CommonLocaleDataEnSD.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SE
-  static const enSE = CommonLocaleDataEnSE();
+  static const enSE = CommonLocaleDataEnSE.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SG
-  static const enSG = CommonLocaleDataEnSG();
+  static const enSG = CommonLocaleDataEnSG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SH
-  static const enSH = CommonLocaleDataEnSH();
+  static const enSH = CommonLocaleDataEnSH.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SI
-  static const enSI = CommonLocaleDataEnSI();
+  static const enSI = CommonLocaleDataEnSI.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SL
-  static const enSL = CommonLocaleDataEnSL();
+  static const enSL = CommonLocaleDataEnSL.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SS
-  static const enSS = CommonLocaleDataEnSS();
+  static const enSS = CommonLocaleDataEnSS.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SX
-  static const enSX = CommonLocaleDataEnSX();
+  static const enSX = CommonLocaleDataEnSX.staticInstance;
 
   /// Access the [CommonLocaleData] for en-SZ
-  static const enSZ = CommonLocaleDataEnSZ();
+  static const enSZ = CommonLocaleDataEnSZ.staticInstance;
 
   /// Access the [CommonLocaleData] for en-TC
-  static const enTC = CommonLocaleDataEnTC();
+  static const enTC = CommonLocaleDataEnTC.staticInstance;
 
   /// Access the [CommonLocaleData] for en-TK
-  static const enTK = CommonLocaleDataEnTK();
+  static const enTK = CommonLocaleDataEnTK.staticInstance;
 
   /// Access the [CommonLocaleData] for en-TO
-  static const enTO = CommonLocaleDataEnTO();
+  static const enTO = CommonLocaleDataEnTO.staticInstance;
 
   /// Access the [CommonLocaleData] for en-TT
-  static const enTT = CommonLocaleDataEnTT();
+  static const enTT = CommonLocaleDataEnTT.staticInstance;
 
   /// Access the [CommonLocaleData] for en-TV
-  static const enTV = CommonLocaleDataEnTV();
+  static const enTV = CommonLocaleDataEnTV.staticInstance;
 
   /// Access the [CommonLocaleData] for en-TZ
-  static const enTZ = CommonLocaleDataEnTZ();
+  static const enTZ = CommonLocaleDataEnTZ.staticInstance;
 
   /// Access the [CommonLocaleData] for en-UG
-  static const enUG = CommonLocaleDataEnUG();
+  static const enUG = CommonLocaleDataEnUG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-UM
-  static const enUM = CommonLocaleDataEnUM();
+  static const enUM = CommonLocaleDataEnUM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-VC
-  static const enVC = CommonLocaleDataEnVC();
+  static const enVC = CommonLocaleDataEnVC.staticInstance;
 
   /// Access the [CommonLocaleData] for en-VG
-  static const enVG = CommonLocaleDataEnVG();
+  static const enVG = CommonLocaleDataEnVG.staticInstance;
 
   /// Access the [CommonLocaleData] for en-VI
-  static const enVI = CommonLocaleDataEnVI();
+  static const enVI = CommonLocaleDataEnVI.staticInstance;
 
   /// Access the [CommonLocaleData] for en-VU
-  static const enVU = CommonLocaleDataEnVU();
+  static const enVU = CommonLocaleDataEnVU.staticInstance;
 
   /// Access the [CommonLocaleData] for en-WS
-  static const enWS = CommonLocaleDataEnWS();
+  static const enWS = CommonLocaleDataEnWS.staticInstance;
 
   /// Access the [CommonLocaleData] for en-ZA
-  static const enZA = CommonLocaleDataEnZA();
+  static const enZA = CommonLocaleDataEnZA.staticInstance;
 
   /// Access the [CommonLocaleData] for en-ZM
-  static const enZM = CommonLocaleDataEnZM();
+  static const enZM = CommonLocaleDataEnZM.staticInstance;
 
   /// Access the [CommonLocaleData] for en-ZW
-  static const enZW = CommonLocaleDataEnZW();
+  static const enZW = CommonLocaleDataEnZW.staticInstance;
 
   /// Access the [CommonLocaleData] for es
-  static const es = CommonLocaleDataEs();
+  static const es = CommonLocaleDataEs.staticInstance;
 
   /// Access the [CommonLocaleData] for es-419
-  static const es419 = CommonLocaleDataEs419();
+  static const es419 = CommonLocaleDataEs419.staticInstance;
 
   /// Access the [CommonLocaleData] for es-AR
-  static const esAR = CommonLocaleDataEsAR();
+  static const esAR = CommonLocaleDataEsAR.staticInstance;
 
   /// Access the [CommonLocaleData] for es-BO
-  static const esBO = CommonLocaleDataEsBO();
+  static const esBO = CommonLocaleDataEsBO.staticInstance;
 
   /// Access the [CommonLocaleData] for es-BR
-  static const esBR = CommonLocaleDataEsBR();
+  static const esBR = CommonLocaleDataEsBR.staticInstance;
 
   /// Access the [CommonLocaleData] for es-BZ
-  static const esBZ = CommonLocaleDataEsBZ();
+  static const esBZ = CommonLocaleDataEsBZ.staticInstance;
 
   /// Access the [CommonLocaleData] for es-CL
-  static const esCL = CommonLocaleDataEsCL();
+  static const esCL = CommonLocaleDataEsCL.staticInstance;
 
   /// Access the [CommonLocaleData] for es-CO
-  static const esCO = CommonLocaleDataEsCO();
+  static const esCO = CommonLocaleDataEsCO.staticInstance;
 
   /// Access the [CommonLocaleData] for es-CR
-  static const esCR = CommonLocaleDataEsCR();
+  static const esCR = CommonLocaleDataEsCR.staticInstance;
 
   /// Access the [CommonLocaleData] for es-CU
-  static const esCU = CommonLocaleDataEsCU();
+  static const esCU = CommonLocaleDataEsCU.staticInstance;
 
   /// Access the [CommonLocaleData] for es-DO
-  static const esDO = CommonLocaleDataEsDO();
+  static const esDO = CommonLocaleDataEsDO.staticInstance;
 
   /// Access the [CommonLocaleData] for es-EA
-  static const esEA = CommonLocaleDataEsEA();
+  static const esEA = CommonLocaleDataEsEA.staticInstance;
 
   /// Access the [CommonLocaleData] for es-EC
-  static const esEC = CommonLocaleDataEsEC();
+  static const esEC = CommonLocaleDataEsEC.staticInstance;
 
   /// Access the [CommonLocaleData] for es-GQ
-  static const esGQ = CommonLocaleDataEsGQ();
+  static const esGQ = CommonLocaleDataEsGQ.staticInstance;
 
   /// Access the [CommonLocaleData] for es-GT
-  static const esGT = CommonLocaleDataEsGT();
+  static const esGT = CommonLocaleDataEsGT.staticInstance;
 
   /// Access the [CommonLocaleData] for es-HN
-  static const esHN = CommonLocaleDataEsHN();
+  static const esHN = CommonLocaleDataEsHN.staticInstance;
 
   /// Access the [CommonLocaleData] for es-IC
-  static const esIC = CommonLocaleDataEsIC();
+  static const esIC = CommonLocaleDataEsIC.staticInstance;
 
   /// Access the [CommonLocaleData] for es-MX
-  static const esMX = CommonLocaleDataEsMX();
+  static const esMX = CommonLocaleDataEsMX.staticInstance;
 
   /// Access the [CommonLocaleData] for es-NI
-  static const esNI = CommonLocaleDataEsNI();
+  static const esNI = CommonLocaleDataEsNI.staticInstance;
 
   /// Access the [CommonLocaleData] for es-PA
-  static const esPA = CommonLocaleDataEsPA();
+  static const esPA = CommonLocaleDataEsPA.staticInstance;
 
   /// Access the [CommonLocaleData] for es-PE
-  static const esPE = CommonLocaleDataEsPE();
+  static const esPE = CommonLocaleDataEsPE.staticInstance;
 
   /// Access the [CommonLocaleData] for es-PH
-  static const esPH = CommonLocaleDataEsPH();
+  static const esPH = CommonLocaleDataEsPH.staticInstance;
 
   /// Access the [CommonLocaleData] for es-PR
-  static const esPR = CommonLocaleDataEsPR();
+  static const esPR = CommonLocaleDataEsPR.staticInstance;
 
   /// Access the [CommonLocaleData] for es-PY
-  static const esPY = CommonLocaleDataEsPY();
+  static const esPY = CommonLocaleDataEsPY.staticInstance;
 
   /// Access the [CommonLocaleData] for es-SV
-  static const esSV = CommonLocaleDataEsSV();
+  static const esSV = CommonLocaleDataEsSV.staticInstance;
 
   /// Access the [CommonLocaleData] for es-US
-  static const esUS = CommonLocaleDataEsUS();
+  static const esUS = CommonLocaleDataEsUS.staticInstance;
 
   /// Access the [CommonLocaleData] for es-UY
-  static const esUY = CommonLocaleDataEsUY();
+  static const esUY = CommonLocaleDataEsUY.staticInstance;
 
   /// Access the [CommonLocaleData] for es-VE
-  static const esVE = CommonLocaleDataEsVE();
+  static const esVE = CommonLocaleDataEsVE.staticInstance;
 
   /// Access the [CommonLocaleData] for et
-  static const et = CommonLocaleDataEt();
+  static const et = CommonLocaleDataEt.staticInstance;
 
   /// Access the [CommonLocaleData] for eu
-  static const eu = CommonLocaleDataEu();
+  static const eu = CommonLocaleDataEu.staticInstance;
 
   /// Access the [CommonLocaleData] for fa
-  static const fa = CommonLocaleDataFa();
+  static const fa = CommonLocaleDataFa.staticInstance;
 
   /// Access the [CommonLocaleData] for fa-AF
-  static const faAF = CommonLocaleDataFaAF();
+  static const faAF = CommonLocaleDataFaAF.staticInstance;
 
   /// Access the [CommonLocaleData] for fi
-  static const fi = CommonLocaleDataFi();
+  static const fi = CommonLocaleDataFi.staticInstance;
 
   /// Access the [CommonLocaleData] for fil
-  static const fil = CommonLocaleDataFil();
+  static const fil = CommonLocaleDataFil.staticInstance;
 
   /// Access the [CommonLocaleData] for fr
-  static const fr = CommonLocaleDataFr();
+  static const fr = CommonLocaleDataFr.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-BE
-  static const frBE = CommonLocaleDataFrBE();
+  static const frBE = CommonLocaleDataFrBE.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-BF
-  static const frBF = CommonLocaleDataFrBF();
+  static const frBF = CommonLocaleDataFrBF.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-BI
-  static const frBI = CommonLocaleDataFrBI();
+  static const frBI = CommonLocaleDataFrBI.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-BJ
-  static const frBJ = CommonLocaleDataFrBJ();
+  static const frBJ = CommonLocaleDataFrBJ.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-BL
-  static const frBL = CommonLocaleDataFrBL();
+  static const frBL = CommonLocaleDataFrBL.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-CA
-  static const frCA = CommonLocaleDataFrCA();
+  static const frCA = CommonLocaleDataFrCA.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-CD
-  static const frCD = CommonLocaleDataFrCD();
+  static const frCD = CommonLocaleDataFrCD.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-CF
-  static const frCF = CommonLocaleDataFrCF();
+  static const frCF = CommonLocaleDataFrCF.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-CG
-  static const frCG = CommonLocaleDataFrCG();
+  static const frCG = CommonLocaleDataFrCG.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-CH
-  static const frCH = CommonLocaleDataFrCH();
+  static const frCH = CommonLocaleDataFrCH.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-CI
-  static const frCI = CommonLocaleDataFrCI();
+  static const frCI = CommonLocaleDataFrCI.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-CM
-  static const frCM = CommonLocaleDataFrCM();
+  static const frCM = CommonLocaleDataFrCM.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-DJ
-  static const frDJ = CommonLocaleDataFrDJ();
+  static const frDJ = CommonLocaleDataFrDJ.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-DZ
-  static const frDZ = CommonLocaleDataFrDZ();
+  static const frDZ = CommonLocaleDataFrDZ.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-GA
-  static const frGA = CommonLocaleDataFrGA();
+  static const frGA = CommonLocaleDataFrGA.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-GF
-  static const frGF = CommonLocaleDataFrGF();
+  static const frGF = CommonLocaleDataFrGF.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-GN
-  static const frGN = CommonLocaleDataFrGN();
+  static const frGN = CommonLocaleDataFrGN.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-GP
-  static const frGP = CommonLocaleDataFrGP();
+  static const frGP = CommonLocaleDataFrGP.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-GQ
-  static const frGQ = CommonLocaleDataFrGQ();
+  static const frGQ = CommonLocaleDataFrGQ.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-HT
-  static const frHT = CommonLocaleDataFrHT();
+  static const frHT = CommonLocaleDataFrHT.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-KM
-  static const frKM = CommonLocaleDataFrKM();
+  static const frKM = CommonLocaleDataFrKM.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-LU
-  static const frLU = CommonLocaleDataFrLU();
+  static const frLU = CommonLocaleDataFrLU.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-MA
-  static const frMA = CommonLocaleDataFrMA();
+  static const frMA = CommonLocaleDataFrMA.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-MC
-  static const frMC = CommonLocaleDataFrMC();
+  static const frMC = CommonLocaleDataFrMC.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-MF
-  static const frMF = CommonLocaleDataFrMF();
+  static const frMF = CommonLocaleDataFrMF.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-MG
-  static const frMG = CommonLocaleDataFrMG();
+  static const frMG = CommonLocaleDataFrMG.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-ML
-  static const frML = CommonLocaleDataFrML();
+  static const frML = CommonLocaleDataFrML.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-MQ
-  static const frMQ = CommonLocaleDataFrMQ();
+  static const frMQ = CommonLocaleDataFrMQ.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-MR
-  static const frMR = CommonLocaleDataFrMR();
+  static const frMR = CommonLocaleDataFrMR.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-MU
-  static const frMU = CommonLocaleDataFrMU();
+  static const frMU = CommonLocaleDataFrMU.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-NC
-  static const frNC = CommonLocaleDataFrNC();
+  static const frNC = CommonLocaleDataFrNC.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-NE
-  static const frNE = CommonLocaleDataFrNE();
+  static const frNE = CommonLocaleDataFrNE.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-PF
-  static const frPF = CommonLocaleDataFrPF();
+  static const frPF = CommonLocaleDataFrPF.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-PM
-  static const frPM = CommonLocaleDataFrPM();
+  static const frPM = CommonLocaleDataFrPM.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-RE
-  static const frRE = CommonLocaleDataFrRE();
+  static const frRE = CommonLocaleDataFrRE.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-RW
-  static const frRW = CommonLocaleDataFrRW();
+  static const frRW = CommonLocaleDataFrRW.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-SC
-  static const frSC = CommonLocaleDataFrSC();
+  static const frSC = CommonLocaleDataFrSC.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-SN
-  static const frSN = CommonLocaleDataFrSN();
+  static const frSN = CommonLocaleDataFrSN.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-SY
-  static const frSY = CommonLocaleDataFrSY();
+  static const frSY = CommonLocaleDataFrSY.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-TD
-  static const frTD = CommonLocaleDataFrTD();
+  static const frTD = CommonLocaleDataFrTD.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-TG
-  static const frTG = CommonLocaleDataFrTG();
+  static const frTG = CommonLocaleDataFrTG.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-TN
-  static const frTN = CommonLocaleDataFrTN();
+  static const frTN = CommonLocaleDataFrTN.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-VU
-  static const frVU = CommonLocaleDataFrVU();
+  static const frVU = CommonLocaleDataFrVU.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-WF
-  static const frWF = CommonLocaleDataFrWF();
+  static const frWF = CommonLocaleDataFrWF.staticInstance;
 
   /// Access the [CommonLocaleData] for fr-YT
-  static const frYT = CommonLocaleDataFrYT();
+  static const frYT = CommonLocaleDataFrYT.staticInstance;
 
   /// Access the [CommonLocaleData] for ga
-  static const ga = CommonLocaleDataGa();
+  static const ga = CommonLocaleDataGa.staticInstance;
 
   /// Access the [CommonLocaleData] for ga-GB
-  static const gaGB = CommonLocaleDataGaGB();
+  static const gaGB = CommonLocaleDataGaGB.staticInstance;
 
   /// Access the [CommonLocaleData] for gd
-  static const gd = CommonLocaleDataGd();
+  static const gd = CommonLocaleDataGd.staticInstance;
 
   /// Access the [CommonLocaleData] for gl
-  static const gl = CommonLocaleDataGl();
+  static const gl = CommonLocaleDataGl.staticInstance;
 
   /// Access the [CommonLocaleData] for gu
-  static const gu = CommonLocaleDataGu();
+  static const gu = CommonLocaleDataGu.staticInstance;
 
   /// Access the [CommonLocaleData] for ha
-  static const ha = CommonLocaleDataHa();
+  static const ha = CommonLocaleDataHa.staticInstance;
 
   /// Access the [CommonLocaleData] for ha-GH
-  static const haGH = CommonLocaleDataHaGH();
+  static const haGH = CommonLocaleDataHaGH.staticInstance;
 
   /// Access the [CommonLocaleData] for ha-NE
-  static const haNE = CommonLocaleDataHaNE();
+  static const haNE = CommonLocaleDataHaNE.staticInstance;
 
   /// Access the [CommonLocaleData] for he
-  static const he = CommonLocaleDataHe();
+  static const he = CommonLocaleDataHe.staticInstance;
 
   /// Access the [CommonLocaleData] for hi
-  static const hi = CommonLocaleDataHi();
+  static const hi = CommonLocaleDataHi.staticInstance;
 
   /// Access the [CommonLocaleData] for hi-Latn
-  static const hiLatn = CommonLocaleDataHiLatn();
+  static const hiLatn = CommonLocaleDataHiLatn.staticInstance;
 
   /// Access the [CommonLocaleData] for hr
-  static const hr = CommonLocaleDataHr();
+  static const hr = CommonLocaleDataHr.staticInstance;
 
   /// Access the [CommonLocaleData] for hr-BA
-  static const hrBA = CommonLocaleDataHrBA();
+  static const hrBA = CommonLocaleDataHrBA.staticInstance;
 
   /// Access the [CommonLocaleData] for hsb
-  static const hsb = CommonLocaleDataHsb();
+  static const hsb = CommonLocaleDataHsb.staticInstance;
 
   /// Access the [CommonLocaleData] for hu
-  static const hu = CommonLocaleDataHu();
+  static const hu = CommonLocaleDataHu.staticInstance;
 
   /// Access the [CommonLocaleData] for hy
-  static const hy = CommonLocaleDataHy();
+  static const hy = CommonLocaleDataHy.staticInstance;
 
   /// Access the [CommonLocaleData] for id
-  static const id = CommonLocaleDataId();
+  static const id = CommonLocaleDataId.staticInstance;
 
   /// Access the [CommonLocaleData] for ig
-  static const ig = CommonLocaleDataIg();
+  static const ig = CommonLocaleDataIg.staticInstance;
 
   /// Access the [CommonLocaleData] for is
-  static const $is = CommonLocaleDataIs();
+  static const $is = CommonLocaleDataIs.staticInstance;
 
   /// Access the [CommonLocaleData] for it
-  static const it = CommonLocaleDataIt();
+  static const it = CommonLocaleDataIt.staticInstance;
 
   /// Access the [CommonLocaleData] for it-CH
-  static const itCH = CommonLocaleDataItCH();
+  static const itCH = CommonLocaleDataItCH.staticInstance;
 
   /// Access the [CommonLocaleData] for it-SM
-  static const itSM = CommonLocaleDataItSM();
+  static const itSM = CommonLocaleDataItSM.staticInstance;
 
   /// Access the [CommonLocaleData] for it-VA
-  static const itVA = CommonLocaleDataItVA();
+  static const itVA = CommonLocaleDataItVA.staticInstance;
 
   /// Access the [CommonLocaleData] for ja
-  static const ja = CommonLocaleDataJa();
+  static const ja = CommonLocaleDataJa.staticInstance;
 
   /// Access the [CommonLocaleData] for jv
-  static const jv = CommonLocaleDataJv();
+  static const jv = CommonLocaleDataJv.staticInstance;
 
   /// Access the [CommonLocaleData] for ka
-  static const ka = CommonLocaleDataKa();
+  static const ka = CommonLocaleDataKa.staticInstance;
 
   /// Access the [CommonLocaleData] for kk
-  static const kk = CommonLocaleDataKk();
+  static const kk = CommonLocaleDataKk.staticInstance;
 
   /// Access the [CommonLocaleData] for kk-Cyrl
-  static const kkCyrl = CommonLocaleDataKkCyrl();
+  static const kkCyrl = CommonLocaleDataKkCyrl.staticInstance;
 
   /// Access the [CommonLocaleData] for kk-KZ
-  static const kkKZ = CommonLocaleDataKkKZ();
+  static const kkKZ = CommonLocaleDataKkKZ.staticInstance;
 
   /// Access the [CommonLocaleData] for km
-  static const km = CommonLocaleDataKm();
+  static const km = CommonLocaleDataKm.staticInstance;
 
   /// Access the [CommonLocaleData] for kn
-  static const kn = CommonLocaleDataKn();
+  static const kn = CommonLocaleDataKn.staticInstance;
 
   /// Access the [CommonLocaleData] for ko
-  static const ko = CommonLocaleDataKo();
+  static const ko = CommonLocaleDataKo.staticInstance;
 
   /// Access the [CommonLocaleData] for ko-CN
-  static const koCN = CommonLocaleDataKoCN();
+  static const koCN = CommonLocaleDataKoCN.staticInstance;
 
   /// Access the [CommonLocaleData] for ko-KP
-  static const koKP = CommonLocaleDataKoKP();
+  static const koKP = CommonLocaleDataKoKP.staticInstance;
 
   /// Access the [CommonLocaleData] for kok
-  static const kok = CommonLocaleDataKok();
+  static const kok = CommonLocaleDataKok.staticInstance;
 
   /// Access the [CommonLocaleData] for kok-Deva
-  static const kokDeva = CommonLocaleDataKokDeva();
+  static const kokDeva = CommonLocaleDataKokDeva.staticInstance;
 
   /// Access the [CommonLocaleData] for ky
-  static const ky = CommonLocaleDataKy();
+  static const ky = CommonLocaleDataKy.staticInstance;
 
   /// Access the [CommonLocaleData] for lo
-  static const lo = CommonLocaleDataLo();
+  static const lo = CommonLocaleDataLo.staticInstance;
 
   /// Access the [CommonLocaleData] for lt
-  static const lt = CommonLocaleDataLt();
+  static const lt = CommonLocaleDataLt.staticInstance;
 
   /// Access the [CommonLocaleData] for lv
-  static const lv = CommonLocaleDataLv();
+  static const lv = CommonLocaleDataLv.staticInstance;
 
   /// Access the [CommonLocaleData] for mk
-  static const mk = CommonLocaleDataMk();
+  static const mk = CommonLocaleDataMk.staticInstance;
 
   /// Access the [CommonLocaleData] for ml
-  static const ml = CommonLocaleDataMl();
+  static const ml = CommonLocaleDataMl.staticInstance;
 
   /// Access the [CommonLocaleData] for mn
-  static const mn = CommonLocaleDataMn();
+  static const mn = CommonLocaleDataMn.staticInstance;
 
   /// Access the [CommonLocaleData] for mr
-  static const mr = CommonLocaleDataMr();
+  static const mr = CommonLocaleDataMr.staticInstance;
 
   /// Access the [CommonLocaleData] for ms
-  static const ms = CommonLocaleDataMs();
+  static const ms = CommonLocaleDataMs.staticInstance;
 
   /// Access the [CommonLocaleData] for ms-BN
-  static const msBN = CommonLocaleDataMsBN();
+  static const msBN = CommonLocaleDataMsBN.staticInstance;
 
   /// Access the [CommonLocaleData] for ms-ID
-  static const msID = CommonLocaleDataMsID();
+  static const msID = CommonLocaleDataMsID.staticInstance;
 
   /// Access the [CommonLocaleData] for ms-SG
-  static const msSG = CommonLocaleDataMsSG();
+  static const msSG = CommonLocaleDataMsSG.staticInstance;
 
   /// Access the [CommonLocaleData] for my
-  static const my = CommonLocaleDataMy();
+  static const my = CommonLocaleDataMy.staticInstance;
 
   /// Access the [CommonLocaleData] for nb
-  static const nb = CommonLocaleDataNb();
+  static const nb = CommonLocaleDataNb.staticInstance;
 
   /// Access the [CommonLocaleData] for nb-SJ
-  static const nbSJ = CommonLocaleDataNbSJ();
+  static const nbSJ = CommonLocaleDataNbSJ.staticInstance;
 
   /// Access the [CommonLocaleData] for ne
-  static const ne = CommonLocaleDataNe();
+  static const ne = CommonLocaleDataNe.staticInstance;
 
   /// Access the [CommonLocaleData] for ne-IN
-  static const neIN = CommonLocaleDataNeIN();
+  static const neIN = CommonLocaleDataNeIN.staticInstance;
 
   /// Access the [CommonLocaleData] for nl
-  static const nl = CommonLocaleDataNl();
+  static const nl = CommonLocaleDataNl.staticInstance;
 
   /// Access the [CommonLocaleData] for nl-AW
-  static const nlAW = CommonLocaleDataNlAW();
+  static const nlAW = CommonLocaleDataNlAW.staticInstance;
 
   /// Access the [CommonLocaleData] for nl-BE
-  static const nlBE = CommonLocaleDataNlBE();
+  static const nlBE = CommonLocaleDataNlBE.staticInstance;
 
   /// Access the [CommonLocaleData] for nl-BQ
-  static const nlBQ = CommonLocaleDataNlBQ();
+  static const nlBQ = CommonLocaleDataNlBQ.staticInstance;
 
   /// Access the [CommonLocaleData] for nl-CW
-  static const nlCW = CommonLocaleDataNlCW();
+  static const nlCW = CommonLocaleDataNlCW.staticInstance;
 
   /// Access the [CommonLocaleData] for nl-SR
-  static const nlSR = CommonLocaleDataNlSR();
+  static const nlSR = CommonLocaleDataNlSR.staticInstance;
 
   /// Access the [CommonLocaleData] for nl-SX
-  static const nlSX = CommonLocaleDataNlSX();
+  static const nlSX = CommonLocaleDataNlSX.staticInstance;
 
   /// Access the [CommonLocaleData] for nn
-  static const nn = CommonLocaleDataNn();
+  static const nn = CommonLocaleDataNn.staticInstance;
 
   /// Access the [CommonLocaleData] for no
-  static const no = CommonLocaleDataNo();
+  static const no = CommonLocaleDataNo.staticInstance;
 
   /// Access the [CommonLocaleData] for or
-  static const or = CommonLocaleDataOr();
+  static const or = CommonLocaleDataOr.staticInstance;
 
   /// Access the [CommonLocaleData] for pa
-  static const pa = CommonLocaleDataPa();
+  static const pa = CommonLocaleDataPa.staticInstance;
 
   /// Access the [CommonLocaleData] for pa-Guru
-  static const paGuru = CommonLocaleDataPaGuru();
+  static const paGuru = CommonLocaleDataPaGuru.staticInstance;
 
   /// Access the [CommonLocaleData] for pcm
-  static const pcm = CommonLocaleDataPcm();
+  static const pcm = CommonLocaleDataPcm.staticInstance;
 
   /// Access the [CommonLocaleData] for pl
-  static const pl = CommonLocaleDataPl();
+  static const pl = CommonLocaleDataPl.staticInstance;
 
   /// Access the [CommonLocaleData] for ps
-  static const ps = CommonLocaleDataPs();
+  static const ps = CommonLocaleDataPs.staticInstance;
 
   /// Access the [CommonLocaleData] for ps-PK
-  static const psPK = CommonLocaleDataPsPK();
+  static const psPK = CommonLocaleDataPsPK.staticInstance;
 
   /// Access the [CommonLocaleData] for pt
-  static const pt = CommonLocaleDataPt();
+  static const pt = CommonLocaleDataPt.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-AO
-  static const ptAO = CommonLocaleDataPtAO();
+  static const ptAO = CommonLocaleDataPtAO.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-CH
-  static const ptCH = CommonLocaleDataPtCH();
+  static const ptCH = CommonLocaleDataPtCH.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-CV
-  static const ptCV = CommonLocaleDataPtCV();
+  static const ptCV = CommonLocaleDataPtCV.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-GQ
-  static const ptGQ = CommonLocaleDataPtGQ();
+  static const ptGQ = CommonLocaleDataPtGQ.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-GW
-  static const ptGW = CommonLocaleDataPtGW();
+  static const ptGW = CommonLocaleDataPtGW.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-LU
-  static const ptLU = CommonLocaleDataPtLU();
+  static const ptLU = CommonLocaleDataPtLU.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-MO
-  static const ptMO = CommonLocaleDataPtMO();
+  static const ptMO = CommonLocaleDataPtMO.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-MZ
-  static const ptMZ = CommonLocaleDataPtMZ();
+  static const ptMZ = CommonLocaleDataPtMZ.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-PT
-  static const ptPT = CommonLocaleDataPtPT();
+  static const ptPT = CommonLocaleDataPtPT.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-ST
-  static const ptST = CommonLocaleDataPtST();
+  static const ptST = CommonLocaleDataPtST.staticInstance;
 
   /// Access the [CommonLocaleData] for pt-TL
-  static const ptTL = CommonLocaleDataPtTL();
+  static const ptTL = CommonLocaleDataPtTL.staticInstance;
 
   /// Access the [CommonLocaleData] for ro
-  static const ro = CommonLocaleDataRo();
+  static const ro = CommonLocaleDataRo.staticInstance;
 
   /// Access the [CommonLocaleData] for ro-MD
-  static const roMD = CommonLocaleDataRoMD();
+  static const roMD = CommonLocaleDataRoMD.staticInstance;
 
   /// Access the [CommonLocaleData] for ru
-  static const ru = CommonLocaleDataRu();
+  static const ru = CommonLocaleDataRu.staticInstance;
 
   /// Access the [CommonLocaleData] for ru-BY
-  static const ruBY = CommonLocaleDataRuBY();
+  static const ruBY = CommonLocaleDataRuBY.staticInstance;
 
   /// Access the [CommonLocaleData] for ru-KG
-  static const ruKG = CommonLocaleDataRuKG();
+  static const ruKG = CommonLocaleDataRuKG.staticInstance;
 
   /// Access the [CommonLocaleData] for ru-KZ
-  static const ruKZ = CommonLocaleDataRuKZ();
+  static const ruKZ = CommonLocaleDataRuKZ.staticInstance;
 
   /// Access the [CommonLocaleData] for ru-MD
-  static const ruMD = CommonLocaleDataRuMD();
+  static const ruMD = CommonLocaleDataRuMD.staticInstance;
 
   /// Access the [CommonLocaleData] for ru-UA
-  static const ruUA = CommonLocaleDataRuUA();
+  static const ruUA = CommonLocaleDataRuUA.staticInstance;
 
   /// Access the [CommonLocaleData] for sd
-  static const sd = CommonLocaleDataSd();
+  static const sd = CommonLocaleDataSd.staticInstance;
 
   /// Access the [CommonLocaleData] for sd-Arab
-  static const sdArab = CommonLocaleDataSdArab();
+  static const sdArab = CommonLocaleDataSdArab.staticInstance;
 
   /// Access the [CommonLocaleData] for si
-  static const si = CommonLocaleDataSi();
+  static const si = CommonLocaleDataSi.staticInstance;
 
   /// Access the [CommonLocaleData] for sk
-  static const sk = CommonLocaleDataSk();
+  static const sk = CommonLocaleDataSk.staticInstance;
 
   /// Access the [CommonLocaleData] for sl
-  static const sl = CommonLocaleDataSl();
+  static const sl = CommonLocaleDataSl.staticInstance;
 
   /// Access the [CommonLocaleData] for so
-  static const so = CommonLocaleDataSo();
+  static const so = CommonLocaleDataSo.staticInstance;
 
   /// Access the [CommonLocaleData] for so-DJ
-  static const soDJ = CommonLocaleDataSoDJ();
+  static const soDJ = CommonLocaleDataSoDJ.staticInstance;
 
   /// Access the [CommonLocaleData] for so-ET
-  static const soET = CommonLocaleDataSoET();
+  static const soET = CommonLocaleDataSoET.staticInstance;
 
   /// Access the [CommonLocaleData] for so-KE
-  static const soKE = CommonLocaleDataSoKE();
+  static const soKE = CommonLocaleDataSoKE.staticInstance;
 
   /// Access the [CommonLocaleData] for sq
-  static const sq = CommonLocaleDataSq();
+  static const sq = CommonLocaleDataSq.staticInstance;
 
   /// Access the [CommonLocaleData] for sq-MK
-  static const sqMK = CommonLocaleDataSqMK();
+  static const sqMK = CommonLocaleDataSqMK.staticInstance;
 
   /// Access the [CommonLocaleData] for sq-XK
-  static const sqXK = CommonLocaleDataSqXK();
+  static const sqXK = CommonLocaleDataSqXK.staticInstance;
 
   /// Access the [CommonLocaleData] for sr
-  static const sr = CommonLocaleDataSr();
+  static const sr = CommonLocaleDataSr.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Cyrl
-  static const srCyrl = CommonLocaleDataSrCyrl();
+  static const srCyrl = CommonLocaleDataSrCyrl.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Cyrl-BA
-  static const srCyrlBA = CommonLocaleDataSrCyrlBA();
+  static const srCyrlBA = CommonLocaleDataSrCyrlBA.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Cyrl-ME
-  static const srCyrlME = CommonLocaleDataSrCyrlME();
+  static const srCyrlME = CommonLocaleDataSrCyrlME.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Cyrl-XK
-  static const srCyrlXK = CommonLocaleDataSrCyrlXK();
+  static const srCyrlXK = CommonLocaleDataSrCyrlXK.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Latn
-  static const srLatn = CommonLocaleDataSrLatn();
+  static const srLatn = CommonLocaleDataSrLatn.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Latn-BA
-  static const srLatnBA = CommonLocaleDataSrLatnBA();
+  static const srLatnBA = CommonLocaleDataSrLatnBA.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Latn-ME
-  static const srLatnME = CommonLocaleDataSrLatnME();
+  static const srLatnME = CommonLocaleDataSrLatnME.staticInstance;
 
   /// Access the [CommonLocaleData] for sr-Latn-XK
-  static const srLatnXK = CommonLocaleDataSrLatnXK();
+  static const srLatnXK = CommonLocaleDataSrLatnXK.staticInstance;
 
   /// Access the [CommonLocaleData] for sv
-  static const sv = CommonLocaleDataSv();
+  static const sv = CommonLocaleDataSv.staticInstance;
 
   /// Access the [CommonLocaleData] for sv-AX
-  static const svAX = CommonLocaleDataSvAX();
+  static const svAX = CommonLocaleDataSvAX.staticInstance;
 
   /// Access the [CommonLocaleData] for sv-FI
-  static const svFI = CommonLocaleDataSvFI();
+  static const svFI = CommonLocaleDataSvFI.staticInstance;
 
   /// Access the [CommonLocaleData] for sw
-  static const sw = CommonLocaleDataSw();
+  static const sw = CommonLocaleDataSw.staticInstance;
 
   /// Access the [CommonLocaleData] for sw-CD
-  static const swCD = CommonLocaleDataSwCD();
+  static const swCD = CommonLocaleDataSwCD.staticInstance;
 
   /// Access the [CommonLocaleData] for sw-KE
-  static const swKE = CommonLocaleDataSwKE();
+  static const swKE = CommonLocaleDataSwKE.staticInstance;
 
   /// Access the [CommonLocaleData] for sw-UG
-  static const swUG = CommonLocaleDataSwUG();
+  static const swUG = CommonLocaleDataSwUG.staticInstance;
 
   /// Access the [CommonLocaleData] for ta
-  static const ta = CommonLocaleDataTa();
+  static const ta = CommonLocaleDataTa.staticInstance;
 
   /// Access the [CommonLocaleData] for ta-LK
-  static const taLK = CommonLocaleDataTaLK();
+  static const taLK = CommonLocaleDataTaLK.staticInstance;
 
   /// Access the [CommonLocaleData] for ta-MY
-  static const taMY = CommonLocaleDataTaMY();
+  static const taMY = CommonLocaleDataTaMY.staticInstance;
 
   /// Access the [CommonLocaleData] for ta-SG
-  static const taSG = CommonLocaleDataTaSG();
+  static const taSG = CommonLocaleDataTaSG.staticInstance;
 
   /// Access the [CommonLocaleData] for te
-  static const te = CommonLocaleDataTe();
+  static const te = CommonLocaleDataTe.staticInstance;
 
   /// Access the [CommonLocaleData] for th
-  static const th = CommonLocaleDataTh();
+  static const th = CommonLocaleDataTh.staticInstance;
 
   /// Access the [CommonLocaleData] for ti
-  static const ti = CommonLocaleDataTi();
+  static const ti = CommonLocaleDataTi.staticInstance;
 
   /// Access the [CommonLocaleData] for ti-ER
-  static const tiER = CommonLocaleDataTiER();
+  static const tiER = CommonLocaleDataTiER.staticInstance;
 
   /// Access the [CommonLocaleData] for tk
-  static const tk = CommonLocaleDataTk();
+  static const tk = CommonLocaleDataTk.staticInstance;
 
   /// Access the [CommonLocaleData] for tr
-  static const tr = CommonLocaleDataTr();
+  static const tr = CommonLocaleDataTr.staticInstance;
 
   /// Access the [CommonLocaleData] for tr-CY
-  static const trCY = CommonLocaleDataTrCY();
+  static const trCY = CommonLocaleDataTrCY.staticInstance;
 
   /// Access the [CommonLocaleData] for uk
-  static const uk = CommonLocaleDataUk();
+  static const uk = CommonLocaleDataUk.staticInstance;
 
   /// Access the [CommonLocaleData] for ur
-  static const ur = CommonLocaleDataUr();
+  static const ur = CommonLocaleDataUr.staticInstance;
 
   /// Access the [CommonLocaleData] for ur-IN
-  static const urIN = CommonLocaleDataUrIN();
+  static const urIN = CommonLocaleDataUrIN.staticInstance;
 
   /// Access the [CommonLocaleData] for uz
-  static const uz = CommonLocaleDataUz();
+  static const uz = CommonLocaleDataUz.staticInstance;
 
   /// Access the [CommonLocaleData] for uz-Latn
-  static const uzLatn = CommonLocaleDataUzLatn();
+  static const uzLatn = CommonLocaleDataUzLatn.staticInstance;
 
   /// Access the [CommonLocaleData] for vi
-  static const vi = CommonLocaleDataVi();
+  static const vi = CommonLocaleDataVi.staticInstance;
 
   /// Access the [CommonLocaleData] for yo
-  static const yo = CommonLocaleDataYo();
+  static const yo = CommonLocaleDataYo.staticInstance;
 
   /// Access the [CommonLocaleData] for yo-BJ
-  static const yoBJ = CommonLocaleDataYoBJ();
+  static const yoBJ = CommonLocaleDataYoBJ.staticInstance;
 
   /// Access the [CommonLocaleData] for yue
-  static const yue = CommonLocaleDataYue();
+  static const yue = CommonLocaleDataYue.staticInstance;
 
   /// Access the [CommonLocaleData] for yue-Hans
-  static const yueHans = CommonLocaleDataYueHans();
+  static const yueHans = CommonLocaleDataYueHans.staticInstance;
 
   /// Access the [CommonLocaleData] for yue-Hant
-  static const yueHant = CommonLocaleDataYueHant();
+  static const yueHant = CommonLocaleDataYueHant.staticInstance;
 
   /// Access the [CommonLocaleData] for yue-Hant-CN
-  static const yueHantCN = CommonLocaleDataYueHantCN();
+  static const yueHantCN = CommonLocaleDataYueHantCN.staticInstance;
 
   /// Access the [CommonLocaleData] for zh
-  static const zh = CommonLocaleDataZh();
+  static const zh = CommonLocaleDataZh.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hans
-  static const zhHans = CommonLocaleDataZhHans();
+  static const zhHans = CommonLocaleDataZhHans.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hans-HK
-  static const zhHansHK = CommonLocaleDataZhHansHK();
+  static const zhHansHK = CommonLocaleDataZhHansHK.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hans-MO
-  static const zhHansMO = CommonLocaleDataZhHansMO();
+  static const zhHansMO = CommonLocaleDataZhHansMO.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hans-MY
-  static const zhHansMY = CommonLocaleDataZhHansMY();
+  static const zhHansMY = CommonLocaleDataZhHansMY.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hans-SG
-  static const zhHansSG = CommonLocaleDataZhHansSG();
+  static const zhHansSG = CommonLocaleDataZhHansSG.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hant
-  static const zhHant = CommonLocaleDataZhHant();
+  static const zhHant = CommonLocaleDataZhHant.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hant-HK
-  static const zhHantHK = CommonLocaleDataZhHantHK();
+  static const zhHantHK = CommonLocaleDataZhHantHK.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hant-MO
-  static const zhHantMO = CommonLocaleDataZhHantMO();
+  static const zhHantMO = CommonLocaleDataZhHantMO.staticInstance;
 
   /// Access the [CommonLocaleData] for zh-Hant-MY
-  static const zhHantMY = CommonLocaleDataZhHantMY();
+  static const zhHantMY = CommonLocaleDataZhHantMY.staticInstance;
 
   /// Access the [CommonLocaleData] for zu
-  static const zu = CommonLocaleDataZu();
+  static const zu = CommonLocaleDataZu.staticInstance;
 
   /// Map with all supported locales.
   ///

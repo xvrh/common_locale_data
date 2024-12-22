@@ -1,16 +1,11 @@
-import 'dart:convert';
 import 'dart:io';
 import '../config.dart';
+import 'read_json_data.dart';
 
-({DateTime date, String cldr, String unicode}) _readCLDRVersions() {
-  var file = File('tool/data/core/package.json');
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  return (
-    date: file.lastModifiedSync().toUtc(),
-    cldr: json['version'] as String,
-    unicode: json['unicodeVersion'] as String
-  );
+({String cldr, String unicode}) _readCLDRVersions() {
+  var json =
+      readJsonData('tool/data/core/package.json', '').cast<String, String>();
+  return (cldr: json['version']!, unicode: json['unicodeVersion']!);
 }
 
 String _readTZDBVersions() {
@@ -27,20 +22,13 @@ String _readICUVersions() {
   return version ?? '?';
 }
 
-({
-  String cldr,
-  String cldrVariant,
-  DateTime date,
-  String icu,
-  String tzdb,
-  String unicode
-}) getDataVersions() {
+({String cldr, String cldrVariant, String icu, String tzdb, String unicode})
+    getDataVersions() {
   var cldrVersion = _readCLDRVersions();
   var tzdbVersion = _readTZDBVersions();
   var icuVersion = _readICUVersions();
 
   return (
-    date: cldrVersion.date,
     cldr: cldrVersion.cldr,
     cldrVariant: coverageLevel.name,
     unicode: cldrVersion.unicode,

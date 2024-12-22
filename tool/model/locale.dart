@@ -1,11 +1,7 @@
-import 'dart:convert';
-import 'dart:io';
-
 import 'package:collection/collection.dart';
 import 'package:common_locale_data/src/locale_id/base_language_id.dart';
-import 'package:path/path.dart' as p;
-
 import '../utils/escape_dart_string.dart';
+import '../utils/read_json_data.dart';
 
 String generateLocaleData() {
   var code = StringBuffer();
@@ -69,13 +65,15 @@ String generateLocaleData() {
   }
 
   code.writeln('''
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
 import 'package:collection/collection.dart';
 import 'locale_id/base_language_id.dart';
 
 /// Locale independent data about locales.
 /// 
 /// {@category Locales}
-class LocaleMapping {
+class LocaleData {
 ''');
 
   var legacyToCanonical = <String, String>{};
@@ -342,6 +340,8 @@ class LocaleMapping {
 
         var valueAliases =
             CanonicalizedMap<String, String, String>((e) => e.toLowerCase());
+
+        // possible values: not currently used
         var values = <String>[];
 
         for (var value in keyValues.entries) {
@@ -355,6 +355,10 @@ class LocaleMapping {
               'PRIVATE_USE' => KeyType.privateUse,
               _ => throw Exception('Unknown keyType')
             };
+          } else if (key.key == 'tz') {
+            keyType = KeyType.timeZone;
+          } else if (key.key == 'cu') {
+            keyType = KeyType.currency;
           } else if (!value.key.startsWith('_')) {
             var deprecated = ((value.value
                     as Map<String, dynamic>)['_deprecated'] as bool?) ==
@@ -384,10 +388,7 @@ class LocaleMapping {
         }
 
         var extensionKey = ExtensionKey(
-            keyType: keyType,
-            valueType: valueType,
-            values: values,
-            valueAliases: valueAliases);
+            keyType: keyType, valueType: valueType, valueAliases: valueAliases);
 
         if (keys[extension.key] == null) {
           keys[extension.key] = ExtensionKeys(
@@ -425,10 +426,6 @@ class LocaleMapping {
       if (key.value.valueType != ValueType.single) {
         code.writeln('valueType: ${key.value.valueType},');
       }
-      if (key.value.values.isNotEmpty) {
-        code.writeln(
-            'values: [${key.value.values.map((e) => escapeDartString(e)).join(',')}],');
-      }
       if (key.value.valueAliases.isNotEmpty) {
         code.writeln(
             ' valueAliases: CanonicalizedMap<String, String, String>.from({');
@@ -460,7 +457,7 @@ class LocaleMapping {
 
 List<String> languageIdToArgs(BaseLanguageId m) {
   var args = <String>[];
-  if (m.lang != null && m.lang != 'und') {
+  if (!m.isLangNullOrUnd) {
     args.add('lang: ${escapeDartString(m.lang!)}');
   }
   if (m.script != null) args.add('script: ${escapeDartString(m.script!)}');
@@ -474,16 +471,4 @@ List<String> languageIdToArgs(BaseLanguageId m) {
 
 String languageIdToString(BaseLanguageId e) {
   return 'BaseLanguageId(${languageIdToArgs(e).join(', ')})';
-}
-
-Map<String, dynamic> readJsonData(String fileName, String path) {
-  var file = File(p.join(fileName));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-
-  var current = json;
-  for (var part in path.split('/')) {
-    current = current[part] as Map<String, dynamic>;
-  }
-  return current;
 }

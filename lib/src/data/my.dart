@@ -1,7 +1,7 @@
-import 'package:collection/collection.dart';
 import '../../common_locale_data.dart';
 
 const _locale = 'my';
+const _cld = CommonLocaleDataMy._();
 
 /// Translations of [CommonLocaleData]
 ///
@@ -10,2464 +10,265 @@ class CommonLocaleDataMy implements CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataMy();
+  const CommonLocaleDataMy._();
 
-  static final _dateFields = DateFieldsMy._();
+  factory CommonLocaleDataMy() => _cld;
+
   @override
-  DateFields get date => _dateFields;
+  CommonLocaleData get instance => _cld;
 
-  static final _languages = LanguagesMy._();
-  @override
-  Languages get languages => _languages;
+  static const CommonLocaleData staticInstance = _cld;
 
-  static final _scripts = ScriptsMy._();
-  @override
-  Scripts get scripts => _scripts;
-
-  static final _variants = VariantsMy._();
-  @override
-  Variants get variants => _variants;
-
-  static final _units = UnitsMy._();
+  static final _units = UnitsMy._(_cld);
   @override
   Units get units => _units;
 
-  static final _territories = TerritoriesMy._();
+  static final _dateFields = DateFieldsMy._(_cld);
+  @override
+  DateFields get date => _dateFields;
+
+  static final _languages = LanguagesMy._(_cld);
+  @override
+  Languages get languages => _languages;
+
+  static final _scripts = ScriptsMy._(_cld);
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _territories = TerritoriesMy._(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _timeZones = TimeZonesMy._(_territories);
+  static final _variants = VariantsMy._(_cld);
+  @override
+  Variants get variants => _variants;
+
+  static final _subdivisions = SubdivisionsMy._(_cld);
+  @override
+  Subdivisions get subdivisions => _subdivisions;
+
+  static final _currencies = CurrenciesMy._(_cld);
+  @override
+  Currencies get currencies => _currencies;
+
+  static final _timeZones = TimeZonesMy._(_cld);
   @override
   TimeZones get timeZones => _timeZones;
+
+  static final _localeDisplayName = LocaleDisplayNameMy._(_cld);
+  @override
+  LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
-class LanguagesMy extends Languages {
-  LanguagesMy._();
+class UnitsMy extends Units {
+  UnitsMy._(super.cld);
 
   @override
-  final languages = CanonicalizedMap<String, String, Language>.from({
-    'aa': Language(
-      'aa',
-      'အာဖာ',
-    ),
-    'ab': Language(
-      'ab',
-      'အဘ်ခါဇီရာ',
-    ),
-    'ace': Language(
-      'ace',
-      'အာချေး',
-    ),
-    'ada': Language(
-      'ada',
-      'ဒန်မဲ',
-    ),
-    'ady': Language(
-      'ady',
-      'အဒိုင်ဂီ',
-    ),
-    'af': Language(
-      'af',
-      'အာဖရိကန်',
-    ),
-    'agq': Language(
-      'agq',
-      'အာဂ်ဟိန်း',
-    ),
-    'ain': Language(
-      'ain',
-      'အိန်နု',
-    ),
-    'ak': Language(
-      'ak',
-      'အာကန်',
-    ),
-    'ale': Language(
-      'ale',
-      'အာလီယု',
-    ),
-    'alt': Language(
-      'alt',
-      'တောင် အာလ်တိုင်း',
-    ),
-    'am': Language(
-      'am',
-      'အမ်ဟာရစ်ခ်',
-    ),
-    'an': Language(
-      'an',
-      'အာရာဂွန်',
-    ),
-    'ang': Language(
-      'ang',
-      'အင်ဂလို ဆက္ကစွန်',
-    ),
-    'ann': Language(
-      'ann',
-      'အိုဘိုလို',
-    ),
-    'anp': Language(
-      'anp',
-      'အန်ဂီကာ',
-    ),
-    'ar': Language(
-      'ar',
-      'အာရဗီ',
-    ),
-    'ar-001': Language(
-      'ar-001',
-      'ခေတ်သစ် ရှေ့ဆောင် အာရဗီ',
-    ),
-    'arn': Language(
-      'arn',
-      'မာပုချီ',
-    ),
-    'arp': Language(
-      'arp',
-      'အာရာပါဟို',
-    ),
-    'ars': Language(
-      'ars',
-      'နာ့ဂျဒီ အာရဗစ်',
-    ),
-    'as': Language(
-      'as',
-      'အာသံ',
-    ),
-    'asa': Language(
-      'asa',
-      'အာစု',
-    ),
-    'ast': Language(
-      'ast',
-      'အက်စ်တိုးရီးယား',
-    ),
-    'atj': Language(
-      'atj',
-      'အာတီကမဲကု',
-    ),
-    'av': Language(
-      'av',
-      'အာဗာရစ်ခ်',
-    ),
-    'awa': Language(
-      'awa',
-      'အာဝါဒီ',
-    ),
-    'ay': Language(
-      'ay',
-      'အိုင်မာရ',
-    ),
-    'az': Language(
-      'az',
-      'အဇာဘိုင်ဂျန်',
-      short: 'အဇာရီ',
-    ),
-    'ba': Language(
-      'ba',
-      'ဘက်ရှ်ကာ',
-    ),
-    'ban': Language(
-      'ban',
-      'ဘာလီ',
-    ),
-    'bas': Language(
-      'bas',
-      'ဘာဆာ',
-    ),
-    'be': Language(
-      'be',
-      'ဘီလာရုစ်',
-    ),
-    'bem': Language(
-      'bem',
-      'ဘိန်ဘာ',
-    ),
-    'bez': Language(
-      'bez',
-      'ဘီနာ',
-    ),
-    'bg': Language(
-      'bg',
-      'ဘူလ်ဂေးရီးယား',
-    ),
-    'bgc': Language(
-      'bgc',
-      'ဟာယန်ဗီ',
-    ),
-    'bgn': Language(
-      'bgn',
-      'အနောက် ဘဲလိုချီ',
-    ),
-    'bho': Language(
-      'bho',
-      'ဘို့ဂျ်ပူရီ',
-    ),
-    'bi': Language(
-      'bi',
-      'ဘစ်စ်လာမာ',
-    ),
-    'bin': Language(
-      'bin',
-      'ဘီနီ',
-    ),
-    'bla': Language(
-      'bla',
-      'စစ္စီကာ',
-    ),
-    'blo': Language(
-      'blo',
-      'အန်နီ',
-    ),
-    'bm': Language(
-      'bm',
-      'ဘန်ဘာရာ',
-    ),
-    'bn': Language(
-      'bn',
-      'ဘင်္ဂါလီ',
-    ),
-    'bo': Language(
-      'bo',
-      'တိဘက်',
-    ),
-    'br': Language(
-      'br',
-      'ဘရီတွန်',
-    ),
-    'brx': Language(
-      'brx',
-      'ဗိုဒို',
-    ),
-    'bs': Language(
-      'bs',
-      'ဘော့စ်နီးယား',
-    ),
-    'bug': Language(
-      'bug',
-      'ဘူဂစ်စ်',
-    ),
-    'byn': Language(
-      'byn',
-      'ဘလင်',
-    ),
-    'ca': Language(
-      'ca',
-      'ကတ်တလန်',
-    ),
-    'cay': Language(
-      'cay',
-      'ကာယုဂါ',
-    ),
-    'ccp': Language(
-      'ccp',
-      'ချတ်ခ်မာ',
-    ),
-    'ce': Language(
-      'ce',
-      'ချက်ချန်း',
-    ),
-    'ceb': Language(
-      'ceb',
-      'စီဗူအာနို',
-    ),
-    'cgg': Language(
-      'cgg',
-      'ချီဂါ',
-    ),
-    'ch': Language(
-      'ch',
-      'ချမိုရို',
-    ),
-    'chk': Language(
-      'chk',
-      'ချူကီးစ်',
-    ),
-    'chm': Language(
-      'chm',
-      'မာရီ',
-    ),
-    'cho': Language(
-      'cho',
-      'ချော့တို',
-    ),
-    'chp': Language(
-      'chp',
-      'ချီပွေဝိုင်ရန်',
-    ),
-    'chr': Language(
-      'chr',
-      'ချာရိုကီ',
-    ),
-    'chy': Language(
-      'chy',
-      'ချေယန်း',
-    ),
-    'ckb': Language(
-      'ckb',
-      'ဗဟိုဒေသသုံး ကဒ်ဘာသာ',
-      variant: 'ကဒ် ဆိုရာနီ',
-      menu: 'ကဒ် ဗဟို',
-    ),
-    'clc': Language(
-      'clc',
-      'ချီကိုလ်တင်',
-    ),
-    'co': Language(
-      'co',
-      'ခိုစီကန်',
-    ),
-    'cr': Language(
-      'cr',
-      'ခရီး',
-    ),
-    'crg': Language(
-      'crg',
-      'မစ်ချစ်ခ်',
-    ),
-    'crj': Language(
-      'crj',
-      'တောင်ပိုင်း အရှေ့ခရီ',
-    ),
-    'crk': Language(
-      'crk',
-      'ပလိန်းစ် ခရီ',
-    ),
-    'crl': Language(
-      'crl',
-      'မြောက်ပိုင်း အရှေ့ခရီ',
-    ),
-    'crm': Language(
-      'crm',
-      'မုစ်ခရီး',
-    ),
-    'crr': Language(
-      'crr',
-      'ကယ်ရိုလိုင်းနား အယ်လ်ဂွန်းကီယန်',
-    ),
-    'crs': Language(
-      'crs',
-      'ခရီအိုလီ',
-    ),
-    'cs': Language(
-      'cs',
-      'ချက်',
-    ),
-    'csw': Language(
-      'csw',
-      'ဆွမ်ပီ ခရီ',
-    ),
-    'cu': Language(
-      'cu',
-      'ချပ်ချ် စလာဗစ်',
-    ),
-    'cv': Language(
-      'cv',
-      'ချူဗက်ရှ်',
-    ),
-    'cy': Language(
-      'cy',
-      'ဝေလ',
-    ),
-    'da': Language(
-      'da',
-      'ဒိန်းမတ်',
-    ),
-    'dak': Language(
-      'dak',
-      'ဒါကိုတာ',
-    ),
-    'dar': Language(
-      'dar',
-      'ဒါဂ်ဝါ',
-    ),
-    'dav': Language(
-      'dav',
-      'တိုင်တာ',
-    ),
-    'de': Language(
-      'de',
-      'ဂျာမန်',
-    ),
-    'de-AT': Language(
-      'de-AT',
-      'ဩစတြီးယား ဂျာမန်',
-    ),
-    'de-CH': Language(
-      'de-CH',
-      'အလီမဲန်နစ် ဂျာမန်',
-    ),
-    'del': Language(
-      'del',
-      'ဒယ်လာဝဲလ်',
-    ),
-    'dgr': Language(
-      'dgr',
-      'ဒေါ့ဂ်ရစ်ဘ်',
-    ),
-    'dje': Language(
-      'dje',
-      'ဇာမာ',
-    ),
-    'doi': Language(
-      'doi',
-      'ဒိုဂရီ',
-    ),
-    'dsb': Language(
-      'dsb',
-      'အနိမ့် ဆိုဘီယန်း',
-    ),
-    'dua': Language(
-      'dua',
-      'ဒူအလာ',
-    ),
-    'dum': Language(
-      'dum',
-      'အလယ်ပိုင်း ဒတ်ချ်',
-    ),
-    'dv': Language(
-      'dv',
-      'ဒီဗာဟီ',
-    ),
-    'dyo': Language(
-      'dyo',
-      'ဂျိုလာ-ဖွန်ရီ',
-    ),
-    'dz': Language(
-      'dz',
-      'ဒဇွန်ကာ',
-    ),
-    'dzg': Language(
-      'dzg',
-      'ဒဇာဂါ',
-    ),
-    'ebu': Language(
-      'ebu',
-      'အမ်ဘူ',
-    ),
-    'ee': Language(
-      'ee',
-      'အီဝီ',
-    ),
-    'efi': Language(
-      'efi',
-      'အာဖိခ်',
-    ),
-    'egy': Language(
-      'egy',
-      'ရှေးဟောင်း အီဂျစ်',
-    ),
-    'eka': Language(
-      'eka',
-      'အီကာဂျုခ်',
-    ),
-    'el': Language(
-      'el',
-      'ဂရိ',
-    ),
-    'en': Language(
-      'en',
-      'အင်္ဂလိပ်',
-    ),
-    'en-AU': Language(
-      'en-AU',
-      'ဩစတြေးလျ အင်္ဂလိပ်',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'ကနေဒါ အင်္ဂလိပ်',
-    ),
-    'en-GB': Language(
-      'en-GB',
-      'ဗြိတိသျှ အင်္ဂလိပ်',
-      short: 'ယူကေ အင်္ဂလိပ်',
-    ),
-    'en-US': Language(
-      'en-US',
-      'အမေရိကန် အင်္ဂလိပ်',
-      short: 'ယူအက်စ် အင်္ဂလိပ်',
-    ),
-    'enm': Language(
-      'enm',
-      'အလယ်ပိုင်း အင်္ဂလိပ်',
-    ),
-    'eo': Language(
-      'eo',
-      'အက်စ်ပရန်တို',
-    ),
-    'es': Language(
-      'es',
-      'စပိန်',
-    ),
-    'es-ES': Language(
-      'es-ES',
-      'စပိန် (ဥရောပ)',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'စပိန် (မက္ကဆီကို)',
-    ),
-    'et': Language(
-      'et',
-      'အက်စ်တိုးနီးယား',
-    ),
-    'eu': Language(
-      'eu',
-      'ဘာစ်ခ်',
-    ),
-    'ewo': Language(
-      'ewo',
-      'အီဝန်ဒို',
-    ),
-    'fa': Language(
-      'fa',
-      'ပါရှန်',
-    ),
-    'fa-AF': Language(
-      'fa-AF',
-      'ဒါရီ',
-    ),
-    'ff': Language(
-      'ff',
-      'ဖူလာ',
-    ),
-    'fi': Language(
-      'fi',
-      'ဖင်လန်',
-    ),
-    'fil': Language(
-      'fil',
-      'ဖိလစ်ပိုင်',
-    ),
-    'fj': Language(
-      'fj',
-      'ဖီဂျီ',
-    ),
-    'fo': Language(
-      'fo',
-      'ဖာရို',
-    ),
-    'fon': Language(
-      'fon',
-      'ဖော်န်',
-    ),
-    'fr': Language(
-      'fr',
-      'ပြင်သစ်',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'ကနေဒါ ပြင်သစ်',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'ဆွစ် ပြင်သစ်',
-    ),
-    'frc': Language(
-      'frc',
-      'ကေဂျန် ဖရန့်စ်',
-    ),
-    'frm': Language(
-      'frm',
-      'အလယ်ပိုင်း ပြင်သစ်',
-    ),
-    'fro': Language(
-      'fro',
-      'ဖရန်စီစ်',
-    ),
-    'frr': Language(
-      'frr',
-      'မြောက် ဖရီစီရန်',
-    ),
-    'frs': Language(
-      'frs',
-      'အရှေ့ ဖရီစီရန်',
-    ),
-    'fur': Language(
-      'fur',
-      'ဖရူလီယန်း',
-    ),
-    'fy': Language(
-      'fy',
-      'အနောက် ဖရီစီရန်',
-    ),
-    'ga': Language(
-      'ga',
-      'အိုင်းရစ်ရှ်',
-    ),
-    'gaa': Language(
-      'gaa',
-      'ဂါ',
-    ),
-    'gag': Language(
-      'gag',
-      'ဂါဂုဇ်',
-    ),
-    'gd': Language(
-      'gd',
-      'စကော့တစ်ရှ် ဂေးလစ်ခ်',
-    ),
-    'gez': Language(
-      'gez',
-      'ဂီးဇ်',
-    ),
-    'gil': Language(
-      'gil',
-      'ကာရီဗာတီ',
-    ),
-    'gl': Language(
-      'gl',
-      'ဂါလီစီယာ',
-    ),
-    'gmh': Language(
-      'gmh',
-      'အလယ်ပိုင်း အမြင့် ဂျာမန်',
-    ),
-    'gn': Language(
-      'gn',
-      'ဂူအာရာနီ',
-    ),
-    'gor': Language(
-      'gor',
-      'ဂိုရိုတာလို',
-    ),
-    'grc': Language(
-      'grc',
-      'ရှေးဟောင်း ဂရိ',
-    ),
-    'gsw': Language(
-      'gsw',
-      'ဆွစ် ဂျာမန်',
-    ),
-    'gu': Language(
-      'gu',
-      'ဂူဂျာရသီ',
-    ),
-    'guz': Language(
-      'guz',
-      'ဂူစီး',
-    ),
-    'gv': Language(
-      'gv',
-      'မန်းဇ်',
-    ),
-    'gwi': Language(
-      'gwi',
-      'ဂွစ်ချင်',
-    ),
-    'ha': Language(
-      'ha',
-      'ဟာဥစာ',
-    ),
-    'hai': Language(
-      'hai',
-      'ဟေဒါ',
-    ),
-    'haw': Language(
-      'haw',
-      'ဟာဝိုင်ယီ',
-    ),
-    'hax': Language(
-      'hax',
-      'တောင် ဟိုင်ဒါ',
-    ),
-    'he': Language(
-      'he',
-      'ဟီဘရူး',
-    ),
-    'hi': Language(
-      'hi',
-      'ဟိန္ဒီ',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'ဟိန္ဒီ (လက်တင်)',
-      variant: 'ဟိန္ဒီ (လက်တင်)',
-    ),
-    'hil': Language(
-      'hil',
-      'ဟီလီဂေနွန်',
-    ),
-    'hmn': Language(
-      'hmn',
-      'မုံ',
-    ),
-    'hr': Language(
-      'hr',
-      'ခရိုအေးရှား',
-    ),
-    'hsb': Language(
-      'hsb',
-      'ဆက္ကဆိုနီ',
-    ),
-    'ht': Language(
-      'ht',
-      'ဟေတီ',
-    ),
-    'hu': Language(
-      'hu',
-      'ဟန်ဂေရီ',
-    ),
-    'hup': Language(
-      'hup',
-      'ဟူပါ',
-    ),
-    'hur': Language(
-      'hur',
-      'ဟော့ကမိုလွမ်',
-    ),
-    'hy': Language(
-      'hy',
-      'အာမေးနီးယား',
-    ),
-    'hz': Language(
-      'hz',
-      'ဟီရဲရို',
-    ),
-    'ia': Language(
-      'ia',
-      'အင်တာလင်ဂွါ',
-    ),
-    'iba': Language(
-      'iba',
-      'အီဗန်',
-    ),
-    'ibb': Language(
-      'ibb',
-      'အီဘီဘီယို',
-    ),
-    'id': Language(
-      'id',
-      'အင်ဒိုနီးရှား',
-    ),
-    'ie': Language(
-      'ie',
-      'အင်တာလင်း',
-    ),
-    'ig': Language(
-      'ig',
-      'အစ္ဂဘို',
-    ),
-    'ii': Language(
-      'ii',
-      'စီချွမ် ရီ',
-    ),
-    'ikt': Language(
-      'ikt',
-      'အနောက် ကနေဒီယန် အီနုတီတွတ်',
-    ),
-    'ilo': Language(
-      'ilo',
-      'အီလိုကို',
-    ),
-    'inh': Language(
-      'inh',
-      'အင်ဂုရှ်',
-    ),
-    'io': Language(
-      'io',
-      'အီဒို',
-    ),
-    'is': Language(
-      'is',
-      'အိုက်စ်လန်',
-    ),
-    'it': Language(
-      'it',
-      'အီတလီ',
-    ),
-    'iu': Language(
-      'iu',
-      'အီနုခ်တီတု',
-    ),
-    'ja': Language(
-      'ja',
-      'ဂျပန်',
-    ),
-    'jbo': Language(
-      'jbo',
-      'လိုဂျ်ဘန်',
-    ),
-    'jgo': Language(
-      'jgo',
-      'ဂွမ်ဘာ',
-    ),
-    'jmc': Language(
-      'jmc',
-      'မချာမီ',
-    ),
-    'jpr': Language(
-      'jpr',
-      'ဂျူဒီယို-ပါရှန်',
-    ),
-    'jrb': Language(
-      'jrb',
-      'ဂျူဒီယို-အာရဗီ',
-    ),
-    'jv': Language(
-      'jv',
-      'ဂျာဗား',
-    ),
-    'ka': Language(
-      'ka',
-      'ဂျော်ဂျီယာ',
-    ),
-    'kab': Language(
-      'kab',
-      'ကဘိုင်လ်',
-    ),
-    'kac': Language(
-      'kac',
-      'ကချင်',
-    ),
-    'kaj': Language(
-      'kaj',
-      'ဂျူအူ',
-    ),
-    'kam': Language(
-      'kam',
-      'ကမ်ဘာ',
-    ),
-    'kbd': Language(
-      'kbd',
-      'ကဘာဒင်',
-    ),
-    'kcg': Language(
-      'kcg',
-      'တိုင်အပ်',
-    ),
-    'kde': Language(
-      'kde',
-      'မာခွန်ဒီ',
-    ),
-    'kea': Language(
-      'kea',
-      'ကဘူဗာဒီအာနူ',
-    ),
-    'kfo': Language(
-      'kfo',
-      'ကိုရို',
-    ),
-    'kg': Language(
-      'kg',
-      'ကွန်ဂို',
-    ),
-    'kgp': Language(
-      'kgp',
-      'ကိန်းဂန်',
-    ),
-    'kha': Language(
-      'kha',
-      'ခါစီ',
-    ),
-    'khq': Language(
-      'khq',
-      'ကိုရာ ချီအီနီ',
-    ),
-    'ki': Language(
-      'ki',
-      'ကီကူယူ',
-    ),
-    'kj': Language(
-      'kj',
-      'ကွန်းယာမာ',
-    ),
-    'kk': Language(
-      'kk',
-      'ကာဇာချ',
-    ),
-    'kkj': Language(
-      'kkj',
-      'ကကို',
-    ),
-    'kl': Language(
-      'kl',
-      'ကလာအ်လီဆပ်',
-    ),
-    'kln': Language(
-      'kln',
-      'ကလန်ဂျင်',
-    ),
-    'km': Language(
-      'km',
-      'ခမာ',
-    ),
-    'kmb': Language(
-      'kmb',
-      'ကင်ဘွန်ဒူ',
-    ),
-    'kn': Language(
-      'kn',
-      'ကန်နာဒါ',
-    ),
-    'ko': Language(
-      'ko',
-      'ကိုရီးယား',
-    ),
-    'koi': Language(
-      'koi',
-      'ကိုမီ-ပါမြက်',
-    ),
-    'kok': Language(
-      'kok',
-      'ကွန်ကနီ',
-    ),
-    'kpe': Language(
-      'kpe',
-      'ကပ်ပဲလ်',
-    ),
-    'kr': Language(
-      'kr',
-      'ကနူရီ',
-    ),
-    'krc': Language(
-      'krc',
-      'ကရာချေး-ဘာကာ',
-    ),
-    'krl': Language(
-      'krl',
-      'ကာရီလီယန်',
-    ),
-    'kru': Language(
-      'kru',
-      'ကူရုပ်ခ်',
-    ),
-    'ks': Language(
-      'ks',
-      'ကက်ရှ်မီးယား',
-    ),
-    'ksb': Language(
-      'ksb',
-      'ရှန်ဘာလာ',
-    ),
-    'ksf': Language(
-      'ksf',
-      'ဘာဖီအာ',
-    ),
-    'ksh': Language(
-      'ksh',
-      'ကိုလိုနီယန်း',
-    ),
-    'ku': Language(
-      'ku',
-      'ကဒ်',
-    ),
-    'kum': Language(
-      'kum',
-      'ကွမ်မိုက်',
-    ),
-    'kv': Language(
-      'kv',
-      'ကိုမီ',
-    ),
-    'kw': Language(
-      'kw',
-      'ခိုနီရှ်',
-    ),
-    'kwk': Language(
-      'kwk',
-      'ကွပ်ခ်ဝါလာ',
-    ),
-    'kxv': Language(
-      'kxv',
-      'ကူဗီ',
-    ),
-    'ky': Language(
-      'ky',
-      'ကာဂျစ်',
-    ),
-    'la': Language(
-      'la',
-      'လက်တင်',
-    ),
-    'lad': Language(
-      'lad',
-      'လာဒီနို',
-    ),
-    'lag': Language(
-      'lag',
-      'လန်ဂီ',
-    ),
-    'lb': Language(
-      'lb',
-      'လူဇင်ဘတ်',
-    ),
-    'lez': Language(
-      'lez',
-      'လက်ဇ်ဂီးယား',
-    ),
-    'lg': Language(
-      'lg',
-      'ဂန်ဒါ',
-    ),
-    'li': Language(
-      'li',
-      'လင်ဘာဂစ်ရှ်',
-    ),
-    'lij': Language(
-      'lij',
-      'လက်ဂါးရီရန်',
-    ),
-    'lil': Language(
-      'lil',
-      'လာလူးဝစ်တ်',
-    ),
-    'lkt': Language(
-      'lkt',
-      'လာကိုတာ',
-    ),
-    'lmo': Language(
-      'lmo',
-      'လန်းဘတ်',
-    ),
-    'ln': Language(
-      'ln',
-      'လင်ဂါလာ',
-    ),
-    'lo': Language(
-      'lo',
-      'လာအို',
-    ),
-    'lou': Language(
-      'lou',
-      'လူဝီဇီယားနား ခရီးယို',
-    ),
-    'loz': Language(
-      'loz',
-      'လိုဇီ',
-    ),
-    'lrc': Language(
-      'lrc',
-      'မြောက်လူရီ',
-    ),
-    'lsm': Language(
-      'lsm',
-      'ဆာမိအာ',
-    ),
-    'lt': Language(
-      'lt',
-      'လစ်သူဝေးနီးယား',
-    ),
-    'lu': Language(
-      'lu',
-      'လူဘာ-ကတန်ဂါ',
-    ),
-    'lua': Language(
-      'lua',
-      'လူဘာ-လူလူအာ',
-    ),
-    'lun': Language(
-      'lun',
-      'လွန်ဒါ',
-    ),
-    'luo': Language(
-      'luo',
-      'လူအို',
-    ),
-    'lus': Language(
-      'lus',
-      'မီဇို',
-    ),
-    'luy': Language(
-      'luy',
-      'လူရီအာ',
-    ),
-    'lv': Language(
-      'lv',
-      'လတ်ဗီးယား',
-    ),
-    'mad': Language(
-      'mad',
-      'မဒူရာ',
-    ),
-    'mag': Language(
-      'mag',
-      'မဂါဟီ',
-    ),
-    'mai': Language(
-      'mai',
-      'မိုင်သီလီ',
-    ),
-    'mak': Language(
-      'mak',
-      'မကာဆာ',
-    ),
-    'mas': Language(
-      'mas',
-      'မာဆိုင်',
-    ),
-    'mdf': Language(
-      'mdf',
-      'မို့ခ်ရှာ',
-    ),
-    'men': Language(
-      'men',
-      'မန်ဒဲ',
-    ),
-    'mer': Language(
-      'mer',
-      'မီရု',
-    ),
-    'mfe': Language(
-      'mfe',
-      'မောရစ်ရှ',
-    ),
-    'mg': Language(
-      'mg',
-      'မာလဂက်စီ',
-    ),
-    'mga': Language(
-      'mga',
-      'အလယ်ပိုင်း အိုင်းရစ်ရှ်',
-    ),
-    'mgh': Language(
-      'mgh',
-      'မာခူဝါ-မီအီတို',
-    ),
-    'mgo': Language(
-      'mgo',
-      'မီတာ',
-    ),
-    'mh': Language(
-      'mh',
-      'မာရှယ်လိဇ်',
-    ),
-    'mi': Language(
-      'mi',
-      'မာအိုရီ',
-    ),
-    'mic': Language(
-      'mic',
-      'မစ်ခ်မက်ခ်',
-    ),
-    'min': Language(
-      'min',
-      'စူကူမီနန်',
-    ),
-    'mk': Language(
-      'mk',
-      'မက်ဆီဒိုးနီးယား',
-    ),
-    'ml': Language(
-      'ml',
-      'မလေယာလမ်',
-    ),
-    'mn': Language(
-      'mn',
-      'မွန်ဂိုလီးယား',
-    ),
-    'mnc': Language(
-      'mnc',
-      'မန်ချူး',
-    ),
-    'mni': Language(
-      'mni',
-      'မနိပူရ',
-    ),
-    'moe': Language(
-      'moe',
-      'အီနုအေမွန်',
-    ),
-    'moh': Language(
-      'moh',
-      'မိုဟော့ခ်',
-    ),
-    'mos': Language(
-      'mos',
-      'မိုစီ',
-    ),
-    'mr': Language(
-      'mr',
-      'မာရသီ',
-    ),
-    'ms': Language(
-      'ms',
-      'မလေး',
-    ),
-    'mt': Language(
-      'mt',
-      'မော်လ်တာ',
-    ),
-    'mua': Language(
-      'mua',
-      'မွန်ဒန်း',
-    ),
-    'mul': Language(
-      'mul',
-      'ဘာသာစကား အမျိုးမျိုး',
-    ),
-    'mus': Language(
-      'mus',
-      'ခရိချ',
-    ),
-    'mwl': Language(
-      'mwl',
-      'မီရန်ဒီးဇ်',
-    ),
-    'my': Language(
-      'my',
-      'မြန်မာ',
-    ),
-    'myv': Language(
-      'myv',
-      'အီဇယာ',
-    ),
-    'mzn': Language(
-      'mzn',
-      'မာဇန်ဒါရန်နီ',
-    ),
-    'na': Language(
-      'na',
-      'နော်ရူး',
-    ),
-    'nap': Language(
-      'nap',
-      'နပိုလီတန်',
-    ),
-    'naq': Language(
-      'naq',
-      'နာမာ',
-    ),
-    'nb': Language(
-      'nb',
-      'နော်ဝေ ဘွတ်ခ်မော်လ်',
-    ),
-    'nd': Language(
-      'nd',
-      'မြောက် အွန်န်ဒီဘီလီ',
-    ),
-    'nds': Language(
-      'nds',
-      'အနိမ့် ဂျာမန်',
-    ),
-    'nds-NL': Language(
-      'nds-NL',
-      'ဂျာမန် (နယ်သာလန်)',
-    ),
-    'ne': Language(
-      'ne',
-      'နီပေါ',
-    ),
-    'new': Language(
-      'new',
-      'နီဝါရီ',
-    ),
-    'ng': Language(
-      'ng',
-      'အွန်ဒွန်ဂါ',
-    ),
-    'nia': Language(
-      'nia',
-      'နီးရပ်စ်',
-    ),
-    'niu': Language(
-      'niu',
-      'နူအဲယန်း',
-    ),
-    'nl': Language(
-      'nl',
-      'ဒတ်ခ်ျ',
-    ),
-    'nl-BE': Language(
-      'nl-BE',
-      'ဖလီမစ်ရှ်',
-    ),
-    'nmg': Language(
-      'nmg',
-      'ကွာစီအို',
-    ),
-    'nn': Language(
-      'nn',
-      'နော်ဝေ နီးနောစ်',
-    ),
-    'nnh': Language(
-      'nnh',
-      'အွန်ရဲဘွန်း',
-    ),
-    'no': Language(
-      'no',
-      'နော်ဝေ',
-    ),
-    'nog': Language(
-      'nog',
-      'နိုဂိုင်',
-    ),
-    'nqo': Language(
-      'nqo',
-      'အွန်ကို',
-    ),
-    'nr': Language(
-      'nr',
-      'တောင် အွန်န်ဘီလီ',
-    ),
-    'nso': Language(
-      'nso',
-      'မြောက် ဆိုသို',
-    ),
-    'nus': Language(
-      'nus',
-      'နူအာ',
-    ),
-    'nv': Language(
-      'nv',
-      'နာဗာဟို',
-    ),
-    'ny': Language(
-      'ny',
-      'နရန်ဂျာ',
-    ),
-    'nyn': Language(
-      'nyn',
-      'နရန်ကိုလီ',
-    ),
-    'oc': Language(
-      'oc',
-      'အိုစီတန်',
-    ),
-    'ojb': Language(
-      'ojb',
-      'အိုဂျစ်ဘွာ',
-    ),
-    'ojc': Language(
-      'ojc',
-      'အိုဂျစ်ဘွေး',
-    ),
-    'ojs': Language(
-      'ojs',
-      'အိုဂျီခရီ',
-    ),
-    'ojw': Language(
-      'ojw',
-      'အနောက် အိုဂျီဘွာ',
-    ),
-    'oka': Language(
-      'oka',
-      'အိုကနဂန်',
-    ),
-    'om': Language(
-      'om',
-      'အိုရိုမို',
-    ),
-    'or': Language(
-      'or',
-      'အိုရီရာ',
-    ),
-    'os': Language(
-      'os',
-      'အိုဆဲတစ်ခ်',
-    ),
-    'pa': Language(
-      'pa',
-      'ပန်ချာပီ',
-    ),
-    'pag': Language(
-      'pag',
-      'ပန်ဂါစီနန်',
-    ),
-    'pam': Language(
-      'pam',
-      'ပမ်ပန်ညာ',
-    ),
-    'pap': Language(
-      'pap',
-      'ပါပီမင်တို',
-    ),
-    'pau': Language(
-      'pau',
-      'ပလာအို',
-    ),
-    'pcm': Language(
-      'pcm',
-      'နိုင်ဂျီးရီးယား ပစ်ဂျင်',
-    ),
-    'peo': Language(
-      'peo',
-      'ပါရှန် အဟောင်း',
-    ),
-    'pi': Language(
-      'pi',
-      'ပါဠိ',
-    ),
-    'pis': Language(
-      'pis',
-      'ပီဂျင်',
-    ),
-    'pl': Language(
-      'pl',
-      'ပိုလန်',
-    ),
-    'pqm': Language(
-      'pqm',
-      'မလိဇိ ပါစမ်မကွာဒီ',
-    ),
-    'prg': Language(
-      'prg',
-      'ပရူရှန်',
-    ),
-    'ps': Language(
-      'ps',
-      'ပက်ရှ်တွန်း',
-    ),
-    'pt': Language(
-      'pt',
-      'ပေါ်တူဂီ',
-    ),
-    'pt-BR': Language(
-      'pt-BR',
-      'ဘရာဇီး ပေါ်တူဂီ',
-    ),
-    'pt-PT': Language(
-      'pt-PT',
-      'ဥရောပ ပေါ်တူဂီ',
-    ),
-    'qu': Language(
-      'qu',
-      'ခီချူဝါအိုဝါ',
-    ),
-    'quc': Language(
-      'quc',
-      'ကီခ်အီချီ',
-    ),
-    'raj': Language(
-      'raj',
-      'ရာဂျာစတာနီ',
-    ),
-    'rap': Language(
-      'rap',
-      'ရပန်နူအီ',
-    ),
-    'rar': Language(
-      'rar',
-      'ရရိုတွန်ဂန်',
-    ),
-    'rhg': Language(
-      'rhg',
-      'ရိုဟင်ဂျာ',
-    ),
-    'rm': Language(
-      'rm',
-      'ရောမ',
-    ),
-    'rn': Language(
-      'rn',
-      'ရွန်ဒီ',
-    ),
-    'ro': Language(
-      'ro',
-      'ရိုမေနီယား',
-    ),
-    'ro-MD': Language(
-      'ro-MD',
-      'မော်လဒိုဗာ',
-    ),
-    'rof': Language(
-      'rof',
-      'ရွမ်ဘို',
-    ),
-    'ru': Language(
-      'ru',
-      'ရုရှ',
-    ),
-    'rup': Language(
-      'rup',
-      'အာရိုမန်းနီးယန်း',
-    ),
-    'rw': Language(
-      'rw',
-      'ကင်ရာဝန်ဒါ',
-    ),
-    'rwk': Language(
-      'rwk',
-      'ရူဝမ်',
-    ),
-    'sa': Language(
-      'sa',
-      'သင်္သကရိုက်',
-    ),
-    'sad': Language(
-      'sad',
-      'ဆန်ဒါဝီ',
-    ),
-    'sah': Language(
-      'sah',
-      'ဆခါ',
-    ),
-    'saq': Language(
-      'saq',
-      'ဆမ်ဘူရူ',
-    ),
-    'sat': Language(
-      'sat',
-      'ဆန်တာလီ',
-    ),
-    'sba': Language(
-      'sba',
-      'အွန်ဂမ်းဘေး',
-    ),
-    'sbp': Language(
-      'sbp',
-      'ဆန်ဂု',
-    ),
-    'sc': Language(
-      'sc',
-      'ဆာဒီနီးယား',
-    ),
-    'scn': Language(
-      'scn',
-      'စစ္စလီ',
-    ),
-    'sco': Language(
-      'sco',
-      'စကော့တ်',
-    ),
-    'sd': Language(
-      'sd',
-      'စင်ဒီ',
-    ),
-    'se': Language(
-      'se',
-      'မြောက် ဆာမိ',
-    ),
-    'seh': Language(
-      'seh',
-      'စီနာ',
-    ),
-    'ses': Language(
-      'ses',
-      'ကိုရာဘိုရို ဆမ်နီ',
-    ),
-    'sg': Language(
-      'sg',
-      'ဆန်ဂို',
-    ),
-    'sga': Language(
-      'sga',
-      'အိုင်းရစ် ဟောင်း',
-    ),
-    'shi': Language(
-      'shi',
-      'တာချယ်လ်ဟစ်',
-    ),
-    'shn': Language(
-      'shn',
-      'ရှမ်း',
-    ),
-    'si': Language(
-      'si',
-      'စင်ဟာလာ',
-    ),
-    'sk': Language(
-      'sk',
-      'ဆလိုဗက်',
-    ),
-    'sl': Language(
-      'sl',
-      'ဆလိုဗေးနီးယား',
-    ),
-    'slh': Language(
-      'slh',
-      'တောင် လာ့ရှုစတိ',
-    ),
-    'sm': Language(
-      'sm',
-      'ဆမိုအာ',
-    ),
-    'sma': Language(
-      'sma',
-      'တောင် ဆာမိ',
-    ),
-    'smj': Language(
-      'smj',
-      'လူလီ ဆာမိ',
-    ),
-    'smn': Language(
-      'smn',
-      'အီနာရီ ဆာမိ',
-    ),
-    'sms': Language(
-      'sms',
-      'စခိုးလ် ဆာမိ',
-    ),
-    'sn': Language(
-      'sn',
-      'ရှိုနာ',
-    ),
-    'snk': Language(
-      'snk',
-      'ဆိုနင်ကေး',
-    ),
-    'so': Language(
-      'so',
-      'ဆိုမာလီ',
-    ),
-    'sq': Language(
-      'sq',
-      'အယ်လ်ဘေးနီးယား',
-    ),
-    'sr': Language(
-      'sr',
-      'ဆားဘီးယား',
-    ),
-    'srn': Language(
-      'srn',
-      'ဆရာနန် တွန်ဂို',
-    ),
-    'ss': Language(
-      'ss',
-      'ဆွာဇီလန်',
-    ),
-    'ssy': Language(
-      'ssy',
-      'ဆာဟို',
-    ),
-    'st': Language(
-      'st',
-      'တောင်ပိုင်း ဆိုသို',
-    ),
-    'str': Language(
-      'str',
-      'ဆဲလစ်ရှ် ရေလက်ကြား',
-    ),
-    'su': Language(
-      'su',
-      'ဆူဒန်',
-    ),
-    'suk': Language(
-      'suk',
-      'ဆူကူမာ',
-    ),
-    'sv': Language(
-      'sv',
-      'ဆွီဒင်',
-    ),
-    'sw': Language(
-      'sw',
-      'ဆွာဟီလီ',
-    ),
-    'sw-CD': Language(
-      'sw-CD',
-      'ကွန်ဂို ဆွာဟီလီ',
-    ),
-    'swb': Language(
-      'swb',
-      'ကိုမိုရီးယန်း',
-    ),
-    'syr': Language(
-      'syr',
-      'ဆီးရီးယား',
-    ),
-    'szl': Language(
-      'szl',
-      'စလီရှန်',
-    ),
-    'ta': Language(
-      'ta',
-      'တမီးလ်',
-    ),
-    'tce': Language(
-      'tce',
-      'တောင် တပ်ချွန်',
-    ),
-    'te': Language(
-      'te',
-      'တီလီဂူ',
-    ),
-    'tem': Language(
-      'tem',
-      'တင်မ်နဲ',
-    ),
-    'teo': Language(
-      'teo',
-      'တီဆို',
-    ),
-    'tet': Language(
-      'tet',
-      'တီတွမ်',
-    ),
-    'tg': Language(
-      'tg',
-      'တာဂျစ်',
-    ),
-    'tgx': Language(
-      'tgx',
-      'တာဂစ်ရှ်',
-    ),
-    'th': Language(
-      'th',
-      'ထိုင်း',
-    ),
-    'tht': Language(
-      'tht',
-      'တဟီတန်',
-    ),
-    'ti': Language(
-      'ti',
-      'တီဂ်ရင်ယာ',
-    ),
-    'tig': Language(
-      'tig',
-      'တီဂရီ',
-    ),
-    'tk': Language(
-      'tk',
-      'တာ့ခ်မင်နစ္စတန်',
-    ),
-    'tlh': Language(
-      'tlh',
-      'ကလင်ဂွန်',
-    ),
-    'tli': Language(
-      'tli',
-      'တလင်းဂစ်',
-    ),
-    'tn': Language(
-      'tn',
-      'တီဆဝါနာ',
-    ),
-    'to': Language(
-      'to',
-      'တွန်ဂါ',
-    ),
-    'tok': Language(
-      'tok',
-      'တိုကီပိုနာ',
-    ),
-    'tpi': Language(
-      'tpi',
-      'တော့ခ် ပိစင်',
-    ),
-    'tr': Language(
-      'tr',
-      'တူရကီ',
-    ),
-    'trv': Language(
-      'trv',
-      'တရိုကို',
-    ),
-    'ts': Language(
-      'ts',
-      'ဆွန်ဂါ',
-    ),
-    'tt': Language(
-      'tt',
-      'တာတာ',
-    ),
-    'ttm': Language(
-      'ttm',
-      'မြောက် တပ်ချွန်',
-    ),
-    'tum': Language(
-      'tum',
-      'တမ်ဘူကာ',
-    ),
-    'tvl': Language(
-      'tvl',
-      'တူဗာလူ',
-    ),
-    'twq': Language(
-      'twq',
-      'တာဆာဝါချ',
-    ),
-    'ty': Language(
-      'ty',
-      'တဟီတီ',
-    ),
-    'tyv': Language(
-      'tyv',
-      'တူဗန်',
-    ),
-    'tzm': Language(
-      'tzm',
-      'အလယ်အာ့တလာစ် တာမာဇိုက်',
-    ),
-    'udm': Language(
-      'udm',
-      'အူမူရတ်',
-    ),
-    'ug': Language(
-      'ug',
-      'ဝီဂါ',
-    ),
-    'uk': Language(
-      'uk',
-      'ယူကရိန်း',
-    ),
-    'umb': Language(
-      'umb',
-      'အူဘန်ဒူ',
-    ),
-    'und': Language(
-      'und',
-      'မသိသော ဘာသာ',
-    ),
-    'ur': Language(
-      'ur',
-      'အူရ်ဒူ',
-    ),
-    'uz': Language(
-      'uz',
-      'ဥဇဘတ်',
-    ),
-    'vai': Language(
-      'vai',
-      'ဗိုင်',
-    ),
-    've': Language(
-      've',
-      'ဗင်န်ဒါ',
-    ),
-    'vec': Language(
-      'vec',
-      'ဗနီးရှန်',
-    ),
-    'vi': Language(
-      'vi',
-      'ဗီယက်နမ်',
-    ),
-    'vmw': Language(
-      'vmw',
-      'မတ်ကူးဝါး',
-    ),
-    'vo': Language(
-      'vo',
-      'ဗိုလာပိုက်',
-    ),
-    'vun': Language(
-      'vun',
-      'ဗွန်ဂျို',
-    ),
-    'wa': Language(
-      'wa',
-      'ဝါလူးန်',
-    ),
-    'wae': Language(
-      'wae',
-      'ဝေါလ်ဆာ',
-    ),
-    'wal': Language(
-      'wal',
-      'ဝိုလက်တာ',
-    ),
-    'war': Language(
-      'war',
-      'ဝါရေး',
-    ),
-    'wbp': Language(
-      'wbp',
-      'ဝေါလ်ပီရီ',
-    ),
-    'wo': Language(
-      'wo',
-      'ဝူလိုဖ်',
-    ),
-    'wuu': Language(
-      'wuu',
-      'ဝူ တရုတ်',
-    ),
-    'xal': Language(
-      'xal',
-      'ကာလ်မိုက်',
-    ),
-    'xh': Language(
-      'xh',
-      'ဇိုစာ',
-    ),
-    'xnr': Language(
-      'xnr',
-      'ခန်းဂရီ',
-    ),
-    'xog': Language(
-      'xog',
-      'ဆိုဂါ',
-    ),
-    'yav': Language(
-      'yav',
-      'ရန်ဘဲန်',
-    ),
-    'ybb': Language(
-      'ybb',
-      'ရမ်ဘာ',
-    ),
-    'yi': Language(
-      'yi',
-      'ရဟူဒီ',
-    ),
-    'yo': Language(
-      'yo',
-      'ယိုရူဘာ',
-    ),
-    'yrl': Language(
-      'yrl',
-      'အန်ဟင်းဂတူ',
-    ),
-    'yue': Language(
-      'yue',
-      'ကွမ်းတုံ',
-      menu: 'တရုတ်/ ကွမ်းတုံ',
-    ),
-    'za': Language(
-      'za',
-      'ဂျွမ်',
-    ),
-    'zgh': Language(
-      'zgh',
-      'မိုရိုကို တမဇိုက်',
-    ),
-    'zh': Language(
-      'zh',
-      'တရုတ်',
-      menu: 'ပြည်ကြီးတရုတ်',
-    ),
-    'zu': Language(
-      'zu',
-      'ဇူးလူး',
-    ),
-    'zun': Language(
-      'zun',
-      'ဇူနီ',
-    ),
-    'zxx': Language(
-      'zxx',
-      'ဘာသာစကားနှင့် ပတ်သက်သောအရာ မရှိပါ',
-    ),
-    'zza': Language(
-      'zza',
-      'ဇာဇာ',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class ScriptsMy extends Scripts {
-  ScriptsMy._();
-
-  @override
-  final scripts = CanonicalizedMap<String, String, Script>.from({
-    'Adlm': Script(
-      'Adlm',
-      'အက်ဒ်လမ်',
-    ),
-    'Arab': Script(
-      'Arab',
-      'အာရေဗျ',
-    ),
-    'Aran': Script(
-      'Aran',
-      'နက်စ်တာလိခ်',
-    ),
-    'Armn': Script(
-      'Armn',
-      'အာမေးနီးယား',
-    ),
-    'Beng': Script(
-      'Beng',
-      'ဘင်္ဂါလီ',
-    ),
-    'Bopo': Script(
-      'Bopo',
-      'ဘိုပို',
-    ),
-    'Brah': Script(
-      'Brah',
-      'ဗွဟ်မမီ',
-    ),
-    'Brai': Script(
-      'Brai',
-      'ဘရေ',
-    ),
-    'Cakm': Script(
-      'Cakm',
-      'ချပ်ခ်မာ',
-    ),
-    'Cans': Script(
-      'Cans',
-      'ကင်န်စ်',
-    ),
-    'Cher': Script(
-      'Cher',
-      'ချာရိုကီး',
-    ),
-    'Cyrl': Script(
-      'Cyrl',
-      'စစ်ရိလစ်',
-    ),
-    'Deva': Script(
-      'Deva',
-      'ဒီဗနာဂရီ',
-    ),
-    'Ethi': Script(
-      'Ethi',
-      'အီသီယိုးပီးယား',
-    ),
-    'Geor': Script(
-      'Geor',
-      'ဂျော်ဂျီယာ',
-    ),
-    'Grek': Script(
-      'Grek',
-      'ဂရိ',
-    ),
-    'Gujr': Script(
-      'Gujr',
-      'ဂုဂျာရသီ',
-    ),
-    'Guru': Script(
-      'Guru',
-      'ဂူရူ',
-    ),
-    'Hanb': Script(
-      'Hanb',
-      'ဟန်ဘ်',
-    ),
-    'Hang': Script(
-      'Hang',
-      'ဟန်ဂူးလ်',
-    ),
-    'Hani': Script(
-      'Hani',
-      'ဟန်',
-    ),
-    'Hans': Script(
-      'Hans',
-      'ရိုးရှင်း',
-      standAlone: 'ဟန် ရိုးရှင်း',
-    ),
-    'Hant': Script(
-      'Hant',
-      'ရိုးရာ',
-      standAlone: 'ဟန် ရိုးရာ',
-    ),
-    'Hebr': Script(
-      'Hebr',
-      'ဟီဗရူး',
-    ),
-    'Hira': Script(
-      'Hira',
-      'ဟီရဂန',
-    ),
-    'Hrkt': Script(
-      'Hrkt',
-      'ဂျပန် အက္ခရာ',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'ဂျမို',
-    ),
-    'Java': Script(
-      'Java',
-      'ဂျာဗားနီးစ်',
-    ),
-    'Jpan': Script(
-      'Jpan',
-      'ဂျပန်',
-    ),
-    'Kali': Script(
-      'Kali',
-      'ကယားလီ',
-    ),
-    'Kana': Script(
-      'Kana',
-      'ခတခန',
-    ),
-    'Khmr': Script(
-      'Khmr',
-      'ခမာ',
-    ),
-    'Knda': Script(
-      'Knda',
-      'ခန်နာဒါ',
-    ),
-    'Kore': Script(
-      'Kore',
-      'ကိုရီးယား',
-    ),
-    'Laoo': Script(
-      'Laoo',
-      'လာအို',
-    ),
-    'Latn': Script(
-      'Latn',
-      'လက်တင်',
-    ),
-    'Mlym': Script(
-      'Mlym',
-      'မလေယာလမ်',
-    ),
-    'Mong': Script(
-      'Mong',
-      'မွန်ဂိုလီးယား',
-    ),
-    'Mtei': Script(
-      'Mtei',
-      'မေတဲမာယက်',
-    ),
-    'Mymr': Script(
-      'Mymr',
-      'မြန်မာ',
-    ),
-    'Nkoo': Script(
-      'Nkoo',
-      'အွန်ကို',
-    ),
-    'Olck': Script(
-      'Olck',
-      'အိုလ်ချီကီ',
-    ),
-    'Orya': Script(
-      'Orya',
-      'အိုရာ',
-    ),
-    'Rohg': Script(
-      'Rohg',
-      'ဟာနီဖီ',
-    ),
-    'Sinh': Script(
-      'Sinh',
-      'ဆင်ဟာလ',
-    ),
-    'Sund': Script(
-      'Sund',
-      'ဆူဒန်',
-    ),
-    'Syrc': Script(
-      'Syrc',
-      'ဆီရီရက်ခ်',
-    ),
-    'Tale': Script(
-      'Tale',
-      'တိုင်လီ',
-    ),
-    'Taml': Script(
-      'Taml',
-      'တမီးလ်',
-    ),
-    'Telu': Script(
-      'Telu',
-      'တီလု',
-    ),
-    'Tfng': Script(
-      'Tfng',
-      'တီဖီနော',
-    ),
-    'Tglg': Script(
-      'Tglg',
-      'တဂလော့ဂ်',
-    ),
-    'Thaa': Script(
-      'Thaa',
-      'သာအ်',
-    ),
-    'Thai': Script(
-      'Thai',
-      'ထိုင်း',
-    ),
-    'Tibt': Script(
-      'Tibt',
-      'တိဘက်',
-    ),
-    'Vaii': Script(
-      'Vaii',
-      'ဗိုင်း',
-    ),
-    'Visp': Script(
-      'Visp',
-      'မြင်နိုင်သော စကား',
-    ),
-    'Xpeo': Script(
-      'Xpeo',
-      'ပါရှန် အဟောင်း',
-    ),
-    'Yiii': Script(
-      'Yiii',
-      'ရီ',
-    ),
-    'Zmth': Script(
-      'Zmth',
-      'ဂဏန်းသင်္ချာ',
-    ),
-    'Zsye': Script(
-      'Zsye',
-      'အီမိုဂျီ',
-    ),
-    'Zsym': Script(
-      'Zsym',
-      'သင်္ကေတ',
-    ),
-    'Zxxx': Script(
-      'Zxxx',
-      'ထုံးတမ်းသဖွယ်လိုက်နာလျက်ရှိသော',
-    ),
-    'Zyyy': Script(
-      'Zyyy',
-      'အများနှင့်သက်ဆိုင်သော',
-    ),
-    'Zzzz': Script(
-      'Zzzz',
-      'မသိ သို့မဟုတ် မရှိသော စကားလုံး',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class VariantsMy extends Variants {
-  VariantsMy._();
-
-  @override
-  final variants = CanonicalizedMap<String, String, Variant>.from({
-    '1901': Variant(
-      '1901',
-      'ရှေးရိုးစဉ်လာ ဂျာမန် ရေးထုံး',
-    ),
-    '1996': Variant(
-      '1996',
-      '၁၉၉၆ ဂျာမန် ရေးထုံး',
-    ),
-    '1606NICT': Variant(
-      '1606NICT',
-      'အလယ်ပိုင်းနောက်ကျသောပြင်သစ်မှ ၁၆၀၆',
-    ),
-    '1694ACAD': Variant(
-      '1694ACAD',
-      '၁၆၉၄ACAD',
-    ),
-    'AREVELA': Variant(
-      'AREVELA',
-      'အရှေ့ပိုင်းအာမေးနီးယန်း',
-    ),
-    'BAKU1926': Variant(
-      'BAKU1926',
-      'ပေါင်းစပ်ထားသော တူရကီ လက်တင်စကားလုံး',
-    ),
-    'FONIPA': Variant(
-      'FONIPA',
-      'IPA အသံထွက်',
-    ),
-    'FONUPA': Variant(
-      'FONUPA',
-      'UPA အသံထွက်',
-    ),
-    'POSIX': Variant(
-      'POSIX',
-      'ကွန်ပျူတာ',
-    ),
-    'REVISED': Variant(
-      'REVISED',
-      'ပြန်လည်စီစစ်ထားသော ရေးထုံး',
-    ),
-    'SCOTLAND': Variant(
-      'SCOTLAND',
-      'စကော့ စံ အင်္ဂလိပ်',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class UnitsMy implements Units {
-  UnitsMy._();
-
-  @override
-  UnitPrefix get pattern10pMinus1 => UnitPrefix(
+  UnitPrefix get pattern10pMinus1 => const UnitPrefix(
         long: UnitPrefixPattern('ဒက်စီ{0}'),
         short: UnitPrefixPattern('d{0}'),
         narrow: UnitPrefixPattern('d{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus2 => UnitPrefix(
+  UnitPrefix get pattern10pMinus2 => const UnitPrefix(
         long: UnitPrefixPattern('စင်တီ{0}'),
         short: UnitPrefixPattern('c{0}'),
         narrow: UnitPrefixPattern('c{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus3 => UnitPrefix(
+  UnitPrefix get pattern10pMinus3 => const UnitPrefix(
         long: UnitPrefixPattern('မီလီ{0}'),
         short: UnitPrefixPattern('m{0}'),
         narrow: UnitPrefixPattern('m{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus6 => UnitPrefix(
+  UnitPrefix get pattern10pMinus6 => const UnitPrefix(
         long: UnitPrefixPattern('မိုက်ခရို{0}'),
         short: UnitPrefixPattern('μ{0}'),
         narrow: UnitPrefixPattern('μ{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus9 => UnitPrefix(
+  UnitPrefix get pattern10pMinus9 => const UnitPrefix(
         long: UnitPrefixPattern('နာနို{0}'),
         short: UnitPrefixPattern('n{0}'),
         narrow: UnitPrefixPattern('n{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus12 => UnitPrefix(
+  UnitPrefix get pattern10pMinus12 => const UnitPrefix(
         long: UnitPrefixPattern('ပီကို{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus15 => UnitPrefix(
+  UnitPrefix get pattern10pMinus15 => const UnitPrefix(
         long: UnitPrefixPattern('ဖမ်တို{0}'),
         short: UnitPrefixPattern('f{0}'),
         narrow: UnitPrefixPattern('f{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus18 => UnitPrefix(
+  UnitPrefix get pattern10pMinus18 => const UnitPrefix(
         long: UnitPrefixPattern('အက်တို{0}'),
         short: UnitPrefixPattern('a{0}'),
         narrow: UnitPrefixPattern('a{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus21 => UnitPrefix(
+  UnitPrefix get pattern10pMinus21 => const UnitPrefix(
         long: UnitPrefixPattern('ဇက်ပ်တို{0}'),
         short: UnitPrefixPattern('z{0}'),
         narrow: UnitPrefixPattern('z{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus24 => UnitPrefix(
+  UnitPrefix get pattern10pMinus24 => const UnitPrefix(
         long: UnitPrefixPattern('ယောက်တို{0}'),
         short: UnitPrefixPattern('y{0}'),
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+  UnitPrefix get pattern10pMinus27 => const UnitPrefix(
         long: UnitPrefixPattern('ရွန်တို{0}'),
         short: UnitPrefixPattern('r{0}'),
         narrow: UnitPrefixPattern('r{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+  UnitPrefix get pattern10pMinus30 => const UnitPrefix(
         long: UnitPrefixPattern('ကွီတို{0}'),
         short: UnitPrefixPattern('q{0}'),
         narrow: UnitPrefixPattern('q{0}'),
       );
   @override
-  UnitPrefix get pattern10p1 => UnitPrefix(
+  UnitPrefix get pattern10p1 => const UnitPrefix(
         long: UnitPrefixPattern('ဒက်ကာ{0}'),
         short: UnitPrefixPattern('da{0}'),
         narrow: UnitPrefixPattern('da{0}'),
       );
   @override
-  UnitPrefix get pattern10p2 => UnitPrefix(
+  UnitPrefix get pattern10p2 => const UnitPrefix(
         long: UnitPrefixPattern('ဟက်တို{0}'),
         short: UnitPrefixPattern('h{0}'),
         narrow: UnitPrefixPattern('h{0}'),
       );
   @override
-  UnitPrefix get pattern10p3 => UnitPrefix(
+  UnitPrefix get pattern10p3 => const UnitPrefix(
         long: UnitPrefixPattern('ကီလို{0}'),
         short: UnitPrefixPattern('k{0}'),
         narrow: UnitPrefixPattern('k{0}'),
       );
   @override
-  UnitPrefix get pattern10p6 => UnitPrefix(
+  UnitPrefix get pattern10p6 => const UnitPrefix(
         long: UnitPrefixPattern('မီဂါ{0}'),
         short: UnitPrefixPattern('M{0}'),
         narrow: UnitPrefixPattern('M{0}'),
       );
   @override
-  UnitPrefix get pattern10p9 => UnitPrefix(
+  UnitPrefix get pattern10p9 => const UnitPrefix(
         long: UnitPrefixPattern('ဂီဂါ{0}'),
         short: UnitPrefixPattern('G{0}'),
         narrow: UnitPrefixPattern('G{0}'),
       );
   @override
-  UnitPrefix get pattern10p12 => UnitPrefix(
+  UnitPrefix get pattern10p12 => const UnitPrefix(
         long: UnitPrefixPattern('တယ်ရာ{0}'),
         short: UnitPrefixPattern('T{0}'),
         narrow: UnitPrefixPattern('T{0}'),
       );
   @override
-  UnitPrefix get pattern10p15 => UnitPrefix(
+  UnitPrefix get pattern10p15 => const UnitPrefix(
         long: UnitPrefixPattern('ပက်တာ{0}'),
         short: UnitPrefixPattern('P{0}'),
         narrow: UnitPrefixPattern('P{0}'),
       );
   @override
-  UnitPrefix get pattern10p18 => UnitPrefix(
+  UnitPrefix get pattern10p18 => const UnitPrefix(
         long: UnitPrefixPattern('အိတ်စ်ဆာ{0}'),
         short: UnitPrefixPattern('E{0}'),
         narrow: UnitPrefixPattern('E{0}'),
       );
   @override
-  UnitPrefix get pattern10p21 => UnitPrefix(
+  UnitPrefix get pattern10p21 => const UnitPrefix(
         long: UnitPrefixPattern('ဇက်တာ{0}'),
         short: UnitPrefixPattern('Z{0}'),
         narrow: UnitPrefixPattern('Z{0}'),
       );
   @override
-  UnitPrefix get pattern10p24 => UnitPrefix(
+  UnitPrefix get pattern10p24 => const UnitPrefix(
         long: UnitPrefixPattern('ယိုဒါ{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
       );
   @override
-  UnitPrefix get pattern10p27 => UnitPrefix(
+  UnitPrefix get pattern10p27 => const UnitPrefix(
         long: UnitPrefixPattern('ရွန်နာ{0}'),
         short: UnitPrefixPattern('R{0}'),
         narrow: UnitPrefixPattern('R{0}'),
       );
   @override
-  UnitPrefix get pattern10p30 => UnitPrefix(
+  UnitPrefix get pattern10p30 => const UnitPrefix(
         long: UnitPrefixPattern('ကွက်တာ{0}'),
         short: UnitPrefixPattern('Q{0}'),
         narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
-  UnitPrefix get pattern1024p1 => UnitPrefix(
+  UnitPrefix get pattern1024p1 => const UnitPrefix(
         long: UnitPrefixPattern('ကီဘီ{0}'),
         short: UnitPrefixPattern('Ki{0}'),
         narrow: UnitPrefixPattern('Ki{0}'),
       );
   @override
-  UnitPrefix get pattern1024p2 => UnitPrefix(
+  UnitPrefix get pattern1024p2 => const UnitPrefix(
         long: UnitPrefixPattern('မက်ဘီ{0}'),
         short: UnitPrefixPattern('Mi{0}'),
         narrow: UnitPrefixPattern('Mi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p3 => UnitPrefix(
+  UnitPrefix get pattern1024p3 => const UnitPrefix(
         long: UnitPrefixPattern('ဂီဘီ{0}'),
         short: UnitPrefixPattern('Gi{0}'),
         narrow: UnitPrefixPattern('Gi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p4 => UnitPrefix(
+  UnitPrefix get pattern1024p4 => const UnitPrefix(
         long: UnitPrefixPattern('တယ်ဘီ{0}'),
         short: UnitPrefixPattern('Ti{0}'),
         narrow: UnitPrefixPattern('Ti{0}'),
       );
   @override
-  UnitPrefix get pattern1024p5 => UnitPrefix(
+  UnitPrefix get pattern1024p5 => const UnitPrefix(
         long: UnitPrefixPattern('ပယ်ဘီ{0}'),
         short: UnitPrefixPattern('Pi{0}'),
         narrow: UnitPrefixPattern('Pi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p6 => UnitPrefix(
+  UnitPrefix get pattern1024p6 => const UnitPrefix(
         long: UnitPrefixPattern('အိတ်ဇ်ဘီ{0}'),
         short: UnitPrefixPattern('Ei{0}'),
         narrow: UnitPrefixPattern('Ei{0}'),
       );
   @override
-  UnitPrefix get pattern1024p7 => UnitPrefix(
+  UnitPrefix get pattern1024p7 => const UnitPrefix(
         long: UnitPrefixPattern('ဇက်ဘီ{0}'),
         short: UnitPrefixPattern('Zi{0}'),
         narrow: UnitPrefixPattern('Zi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p8 => UnitPrefix(
+  UnitPrefix get pattern1024p8 => const UnitPrefix(
         long: UnitPrefixPattern('ယိုဘီ{0}'),
         short: UnitPrefixPattern('Yi{0}'),
         narrow: UnitPrefixPattern('Yi{0}'),
       );
   @override
-  CompoundUnit get per => CompoundUnit(
+  CompoundUnit get per => const CompoundUnit(
         long: CompoundUnitPattern('တစ်{1} လျှင် {0}'),
         short: CompoundUnitPattern('{0}/{1}'),
         narrow: CompoundUnitPattern('{0}/{1}'),
       );
   @override
-  CompoundUnit get times => CompoundUnit(
+  CompoundUnit get times => const CompoundUnit(
         long: CompoundUnitPattern('{0}⋅{1}'),
         short: CompoundUnitPattern('{0}⋅{1}'),
         narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
-  Unit get accelerationGForce => Unit(
+  Unit get accelerationGForce => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဆွဲငင်အား',
@@ -2489,7 +290,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get accelerationMeterPerSquareSecond => Unit(
+  Unit get accelerationMeterPerSquareSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီတာ/စက္ကန့်နှစ်ထပ်ကိန်း',
@@ -2511,7 +312,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get angleRevolution => Unit(
+  Unit get angleRevolution => const Unit(
         long: UnitCountPattern(
           _locale,
           'လည်ပတ်ခြင်း',
@@ -2533,7 +334,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get angleRadian => Unit(
+  Unit get angleRadian => const Unit(
         long: UnitCountPattern(
           _locale,
           'ရေဒီယဲန်း',
@@ -2555,7 +356,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get angleDegree => Unit(
+  Unit get angleDegree => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဒီဂရီ',
@@ -2577,7 +378,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get angleArcMinute => Unit(
+  Unit get angleArcMinute => const Unit(
         long: UnitCountPattern(
           _locale,
           'မိနစ်',
@@ -2599,7 +400,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get angleArcSecond => Unit(
+  Unit get angleArcSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'စက္ကန့်',
@@ -2621,7 +422,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaSquareKilometer => Unit(
+  Unit get areaSquareKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'စတုရန်းကီလိုမီတာ',
@@ -2643,7 +444,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaHectare => Unit(
+  Unit get areaHectare => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဟက်တာ',
@@ -2665,7 +466,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaSquareMeter => Unit(
+  Unit get areaSquareMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'စတုရန်းမီတာ',
@@ -2687,7 +488,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaSquareCentimeter => Unit(
+  Unit get areaSquareCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'cm²',
@@ -2709,7 +510,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaSquareMile => Unit(
+  Unit get areaSquareMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'စတုရန်းမိုင်',
@@ -2731,7 +532,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaAcre => Unit(
+  Unit get areaAcre => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဧက',
@@ -2753,7 +554,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaSquareYard => Unit(
+  Unit get areaSquareYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'စတုရန်းကိုက်',
@@ -2775,7 +576,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaSquareFoot => Unit(
+  Unit get areaSquareFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'စတုရန်းပေ',
@@ -2797,7 +598,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaSquareInch => Unit(
+  Unit get areaSquareInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'စတုရန်းလက်မ',
@@ -2819,7 +620,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get areaDunam => Unit(
+  Unit get areaDunam => const Unit(
         long: UnitCountPattern(
           _locale,
           'dunams',
@@ -2841,7 +642,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrKarat => Unit(
+  Unit get concentrKarat => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကာရက်',
@@ -2863,7 +664,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrMilligramOfglucosePerDeciliter => Unit(
+  Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်ဒက်စီလီတာရှိ မီလီဂရမ်',
@@ -2885,7 +686,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrMillimolePerLiter => Unit(
+  Unit get concentrMillimolePerLiter => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်လီတာရှိ မီလီမိုးလ်',
@@ -2907,7 +708,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrItem => Unit(
+  Unit get concentrItem => const Unit(
         long: UnitCountPattern(
           _locale,
           'item',
@@ -2929,7 +730,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrPermillion => Unit(
+  Unit get concentrPermillion => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်သန်းပုံ တစ်ပုံ',
@@ -2951,7 +752,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrPercent => Unit(
+  Unit get concentrPercent => const Unit(
         long: UnitCountPattern(
           _locale,
           'ရာခိုင်နှုန်း',
@@ -2973,7 +774,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrPermille => Unit(
+  Unit get concentrPermille => const Unit(
         long: UnitCountPattern(
           _locale,
           'ထောင်လီစိတ်',
@@ -2995,7 +796,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrPermyriad => Unit(
+  Unit get concentrPermyriad => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပါမီရိတ်',
@@ -3017,7 +818,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrMole => Unit(
+  Unit get concentrMole => const Unit(
         long: UnitCountPattern(
           _locale,
           'mol',
@@ -3039,7 +840,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get consumptionLiterPerKilometer => Unit(
+  Unit get consumptionLiterPerKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်ကီလိုမီတာရှိ လီတာ',
@@ -3061,7 +862,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get consumptionLiterPer100Kilometer => Unit(
+  Unit get consumptionLiterPer100Kilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်ရာကီလိုမီတာရှိ လီတာ',
@@ -3083,7 +884,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get consumptionMilePerGallon => Unit(
+  Unit get consumptionMilePerGallon => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်ဂါလံ မိုင်နှုန်း',
@@ -3105,7 +906,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get consumptionMilePerGallonImperial => Unit(
+  Unit get consumptionMilePerGallonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'ယူကေတစ်ဂါလံ မိုင်နှုန်း',
@@ -3127,7 +928,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalPetabyte => Unit(
+  Unit get digitalPetabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပက်တာဘိုက်',
@@ -3149,7 +950,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalTerabyte => Unit(
+  Unit get digitalTerabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'တယ်ရာဘိုက်',
@@ -3171,7 +972,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalTerabit => Unit(
+  Unit get digitalTerabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'တယ်ရာဘစ်',
@@ -3193,7 +994,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalGigabyte => Unit(
+  Unit get digitalGigabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂစ်ဂါဘိုက်',
@@ -3215,7 +1016,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalGigabit => Unit(
+  Unit get digitalGigabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂစ်ဂါဘစ်',
@@ -3237,7 +1038,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalMegabyte => Unit(
+  Unit get digitalMegabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီဂါဘိုက်',
@@ -3259,7 +1060,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalMegabit => Unit(
+  Unit get digitalMegabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီဂါဘစ်',
@@ -3281,7 +1082,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalKilobyte => Unit(
+  Unit get digitalKilobyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုဘိုက်',
@@ -3303,7 +1104,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalKilobit => Unit(
+  Unit get digitalKilobit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုဘစ်',
@@ -3325,7 +1126,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalByte => Unit(
+  Unit get digitalByte => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဘိုက်',
@@ -3347,7 +1148,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get digitalBit => Unit(
+  Unit get digitalBit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဘစ်',
@@ -3369,7 +1170,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationCentury => Unit(
+  Unit get durationCentury => const Unit(
         long: UnitCountPattern(
           _locale,
           'ရာစုနှစ်',
@@ -3391,7 +1192,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationDecade => Unit(
+  Unit get durationDecade => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဆယ်စုနှစ်',
@@ -3413,7 +1214,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationYear => Unit(
+  Unit get durationYear => const Unit(
         long: UnitCountPattern(
           _locale,
           'နှစ်',
@@ -3435,7 +1236,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationQuarter => Unit(
+  Unit get durationQuarter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကွာတား',
@@ -3457,7 +1258,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationMonth => Unit(
+  Unit get durationMonth => const Unit(
         long: UnitCountPattern(
           _locale,
           'လ',
@@ -3479,7 +1280,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationWeek => Unit(
+  Unit get durationWeek => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပတ်',
@@ -3501,7 +1302,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationDay => Unit(
+  Unit get durationDay => const Unit(
         long: UnitCountPattern(
           _locale,
           'ရက်',
@@ -3523,7 +1324,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationHour => Unit(
+  Unit get durationHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'နာရီ',
@@ -3545,7 +1346,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationMinute => Unit(
+  Unit get durationMinute => const Unit(
         long: UnitCountPattern(
           _locale,
           'မိနစ်',
@@ -3567,7 +1368,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationSecond => Unit(
+  Unit get durationSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'စက္ကန့်',
@@ -3589,7 +1390,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationMillisecond => Unit(
+  Unit get durationMillisecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီလီစက္ကန့်',
@@ -3611,7 +1412,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationMicrosecond => Unit(
+  Unit get durationMicrosecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'မိုက်ခရိုစက္ကန့်',
@@ -3633,7 +1434,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationNanosecond => Unit(
+  Unit get durationNanosecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'နာနိုစက္ကန့်',
@@ -3655,7 +1456,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get electricAmpere => Unit(
+  Unit get electricAmpere => const Unit(
         long: UnitCountPattern(
           _locale,
           'အမ်ပီယာ',
@@ -3677,7 +1478,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get electricMilliampere => Unit(
+  Unit get electricMilliampere => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီလီအမ်ပီယာ',
@@ -3699,7 +1500,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get electricOhm => Unit(
+  Unit get electricOhm => const Unit(
         long: UnitCountPattern(
           _locale,
           'အုမ်း',
@@ -3721,7 +1522,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get electricVolt => Unit(
+  Unit get electricVolt => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဗို့',
@@ -3743,7 +1544,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyKilocalorie => Unit(
+  Unit get energyKilocalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုကယ်လိုရီ',
@@ -3765,7 +1566,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyCalorie => Unit(
+  Unit get energyCalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကယ်လိုရီ',
@@ -3787,7 +1588,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyFoodcalorie => Unit(
+  Unit get energyFoodcalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကယ်လိုရီ',
@@ -3809,7 +1610,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyKilojoule => Unit(
+  Unit get energyKilojoule => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုဂျူးလ်',
@@ -3831,7 +1632,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyJoule => Unit(
+  Unit get energyJoule => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂျူးလ်',
@@ -3853,7 +1654,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyKilowattHour => Unit(
+  Unit get energyKilowattHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုဝပ်-နာရီ',
@@ -3875,7 +1676,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyElectronvolt => Unit(
+  Unit get energyElectronvolt => const Unit(
         long: UnitCountPattern(
           _locale,
           'အီလက်ထရွန်ဗို့',
@@ -3897,7 +1698,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyBritishThermalUnit => Unit(
+  Unit get energyBritishThermalUnit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဗြိတိသျှ သာမယ်လ်ယူနစ်',
@@ -3919,7 +1720,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get energyThermUs => Unit(
+  Unit get energyThermUs => const Unit(
         long: UnitCountPattern(
           _locale,
           'ယူအက်စ် သာမယ်လ်',
@@ -3941,7 +1742,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get forcePoundForce => Unit(
+  Unit get forcePoundForce => const Unit(
         long: UnitCountPattern(
           _locale,
           'lbf',
@@ -3963,7 +1764,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get forceNewton => Unit(
+  Unit get forceNewton => const Unit(
         long: UnitCountPattern(
           _locale,
           'နယူတန်',
@@ -3985,7 +1786,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get forceKilowattHourPer100Kilometer => Unit(
+  Unit get forceKilowattHourPer100Kilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'kWh/100km',
@@ -4007,7 +1808,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get frequencyGigahertz => Unit(
+  Unit get frequencyGigahertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂီဂါဟတ်ဇ်',
@@ -4029,7 +1830,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get frequencyMegahertz => Unit(
+  Unit get frequencyMegahertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီဂါဟတ်ဇ်',
@@ -4051,7 +1852,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get frequencyKilohertz => Unit(
+  Unit get frequencyKilohertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုဟတ်ဇ်',
@@ -4073,7 +1874,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get frequencyHertz => Unit(
+  Unit get frequencyHertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဟတ်ဇ်',
@@ -4095,7 +1896,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsEm => Unit(
+  Unit get graphicsEm => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပုံနှိပ်စာလုံး အရွယ်အစား',
@@ -4117,7 +1918,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsPixel => Unit(
+  Unit get graphicsPixel => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပစ်ဆယ်',
@@ -4139,7 +1940,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsMegapixel => Unit(
+  Unit get graphicsMegapixel => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီဂါပစ်ဆယ်',
@@ -4161,7 +1962,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsPixelPerCentimeter => Unit(
+  Unit get graphicsPixelPerCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်စင်တီမီတာပါ ပစ်ဆယ်',
@@ -4183,7 +1984,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsPixelPerInch => Unit(
+  Unit get graphicsPixelPerInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်လက်မပါ ပစ်ဆယ်',
@@ -4205,7 +2006,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsDotPerCentimeter => Unit(
+  Unit get graphicsDotPerCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်စင်တီမီတာပါ အစက်',
@@ -4227,7 +2028,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsDotPerInch => Unit(
+  Unit get graphicsDotPerInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်လက်မပါ အစက်',
@@ -4249,7 +2050,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get graphicsDot => Unit(
+  Unit get graphicsDot => const Unit(
         long: UnitCountPattern(
           _locale,
           'အစက်',
@@ -4271,7 +2072,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthEarthRadius => Unit(
+  Unit get lengthEarthRadius => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကမ္ဘာ့ အချင်းဝက်',
@@ -4293,7 +2094,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthKilometer => Unit(
+  Unit get lengthKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုမီတာ',
@@ -4315,7 +2116,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthMeter => Unit(
+  Unit get lengthMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီတာ',
@@ -4337,7 +2138,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthDecimeter => Unit(
+  Unit get lengthDecimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဒက်စီမီတာ',
@@ -4359,7 +2160,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthCentimeter => Unit(
+  Unit get lengthCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'စင်တီမီတာ',
@@ -4381,7 +2182,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthMillimeter => Unit(
+  Unit get lengthMillimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီလီမီတာ',
@@ -4403,7 +2204,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthMicrometer => Unit(
+  Unit get lengthMicrometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'မိုက်ခရိုမီတာ',
@@ -4425,7 +2226,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthNanometer => Unit(
+  Unit get lengthNanometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'နာနိုမီတာ',
@@ -4447,7 +2248,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthPicometer => Unit(
+  Unit get lengthPicometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပီကိုမီတာ',
@@ -4469,7 +2270,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthMile => Unit(
+  Unit get lengthMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'မိုင်',
@@ -4491,7 +2292,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthYard => Unit(
+  Unit get lengthYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကိုက်',
@@ -4513,7 +2314,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthFoot => Unit(
+  Unit get lengthFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပေ',
@@ -4535,7 +2336,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthInch => Unit(
+  Unit get lengthInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'လက်မ',
@@ -4557,7 +2358,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthParsec => Unit(
+  Unit get lengthParsec => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပါစက်ခ်',
@@ -4579,7 +2380,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthLightYear => Unit(
+  Unit get lengthLightYear => const Unit(
         long: UnitCountPattern(
           _locale,
           'အလင်းနှစ်',
@@ -4601,7 +2402,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthAstronomicalUnit => Unit(
+  Unit get lengthAstronomicalUnit => const Unit(
         long: UnitCountPattern(
           _locale,
           'နက္ခတဗေဒ ယူနစ်',
@@ -4623,7 +2424,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthFurlong => Unit(
+  Unit get lengthFurlong => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဖာလုံ',
@@ -4645,7 +2446,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthFathom => Unit(
+  Unit get lengthFathom => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဖန်တမ်',
@@ -4667,7 +2468,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthNauticalMile => Unit(
+  Unit get lengthNauticalMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'ရေမိုင်',
@@ -4689,7 +2490,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthMileScandinavian => Unit(
+  Unit get lengthMileScandinavian => const Unit(
         long: UnitCountPattern(
           _locale,
           'စကင်ဒီနေဗီးယန်း မိုင်',
@@ -4711,7 +2512,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthPoint => Unit(
+  Unit get lengthPoint => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပွိုင့်',
@@ -4733,7 +2534,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lengthSolarRadius => Unit(
+  Unit get lengthSolarRadius => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဆိုလာ ရာဒီ',
@@ -4755,7 +2556,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lightLux => Unit(
+  Unit get lightLux => const Unit(
         long: UnitCountPattern(
           _locale,
           'လတ်ခ်',
@@ -4777,7 +2578,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lightCandela => Unit(
+  Unit get lightCandela => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကန်ဒဲလာ',
@@ -4799,7 +2600,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lightLumen => Unit(
+  Unit get lightLumen => const Unit(
         long: UnitCountPattern(
           _locale,
           'လူမန်',
@@ -4821,7 +2622,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get lightSolarLuminosity => Unit(
+  Unit get lightSolarLuminosity => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဆိုလာ လူမီနိုစီတီးစ်',
@@ -4843,7 +2644,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massTonne => Unit(
+  Unit get massTonne => const Unit(
         long: UnitCountPattern(
           _locale,
           'မက်ထရစ်တန်',
@@ -4865,7 +2666,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massKilogram => Unit(
+  Unit get massKilogram => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုဂရမ်',
@@ -4887,7 +2688,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massGram => Unit(
+  Unit get massGram => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂရမ်',
@@ -4909,7 +2710,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massMilligram => Unit(
+  Unit get massMilligram => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီလီဂရမ်',
@@ -4931,7 +2732,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massMicrogram => Unit(
+  Unit get massMicrogram => const Unit(
         long: UnitCountPattern(
           _locale,
           'မိုက်ခရို ဂရမ်',
@@ -4953,7 +2754,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massTon => Unit(
+  Unit get massTon => const Unit(
         long: UnitCountPattern(
           _locale,
           'တန်',
@@ -4975,7 +2776,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massStone => Unit(
+  Unit get massStone => const Unit(
         long: UnitCountPattern(
           _locale,
           'စတုန်',
@@ -4997,7 +2798,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massPound => Unit(
+  Unit get massPound => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပေါင်',
@@ -5019,7 +2820,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massOunce => Unit(
+  Unit get massOunce => const Unit(
         long: UnitCountPattern(
           _locale,
           'အောင်စ',
@@ -5041,7 +2842,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massOunceTroy => Unit(
+  Unit get massOunceTroy => const Unit(
         long: UnitCountPattern(
           _locale,
           'ထရိုအောင်စ',
@@ -5063,7 +2864,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massCarat => Unit(
+  Unit get massCarat => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကာရက်',
@@ -5085,7 +2886,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massDalton => Unit(
+  Unit get massDalton => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဒဲလ်တန်စ်',
@@ -5107,7 +2908,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massEarthMass => Unit(
+  Unit get massEarthMass => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကမ္ဘာ့ဒြပ်ထု',
@@ -5129,7 +2930,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massSolarMass => Unit(
+  Unit get massSolarMass => const Unit(
         long: UnitCountPattern(
           _locale,
           'နေရောင်ခြည် ဒြပ်ထု',
@@ -5151,7 +2952,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get massGrain => Unit(
+  Unit get massGrain => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂရိန်',
@@ -5173,7 +2974,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get powerGigawatt => Unit(
+  Unit get powerGigawatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂစ်ဂါဝပ်',
@@ -5195,7 +2996,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get powerMegawatt => Unit(
+  Unit get powerMegawatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီဂါဝပ်',
@@ -5217,7 +3018,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get powerKilowatt => Unit(
+  Unit get powerKilowatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုဝပ်',
@@ -5239,7 +3040,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get powerWatt => Unit(
+  Unit get powerWatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဝပ်',
@@ -5261,7 +3062,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get powerMilliwatt => Unit(
+  Unit get powerMilliwatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီလီဝပ်',
@@ -5283,7 +3084,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get powerHorsepower => Unit(
+  Unit get powerHorsepower => const Unit(
         long: UnitCountPattern(
           _locale,
           'မြင်းကောင်ရေအား',
@@ -5305,7 +3106,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureMillimeterOfhg => Unit(
+  Unit get pressureMillimeterOfhg => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပြဒါးမီလီမီတာ',
@@ -5327,7 +3128,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressurePoundForcePerSquareInch => Unit(
+  Unit get pressurePoundForcePerSquareInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပေါင်/စတုရန်းလက်မ',
@@ -5349,7 +3150,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureInchOfhg => Unit(
+  Unit get pressureInchOfhg => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပြဒါးလက်မ',
@@ -5371,7 +3172,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureBar => Unit(
+  Unit get pressureBar => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဘား',
@@ -5393,7 +3194,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureMillibar => Unit(
+  Unit get pressureMillibar => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီလီဘား',
@@ -5415,7 +3216,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureAtmosphere => Unit(
+  Unit get pressureAtmosphere => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကမ္ဘာ့လေထု',
@@ -5437,7 +3238,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressurePascal => Unit(
+  Unit get pressurePascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'Pa',
@@ -5459,7 +3260,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureHectopascal => Unit(
+  Unit get pressureHectopascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဟက်တိုပါစကယ်',
@@ -5481,7 +3282,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureKilopascal => Unit(
+  Unit get pressureKilopascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုပါစကယ်',
@@ -5503,7 +3304,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureMegapascal => Unit(
+  Unit get pressureMegapascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီဂါပါစကယ်',
@@ -5525,7 +3326,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get speedKilometerPerHour => Unit(
+  Unit get speedKilometerPerHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကီလိုမီတာ/နာရီ',
@@ -5547,7 +3348,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get speedMeterPerSecond => Unit(
+  Unit get speedMeterPerSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီတာ/စက္ကန့်',
@@ -5569,7 +3370,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get speedMilePerHour => Unit(
+  Unit get speedMilePerHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'မိုင်/နာရီ',
@@ -5591,7 +3392,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get speedKnot => Unit(
+  Unit get speedKnot => const Unit(
         long: UnitCountPattern(
           _locale,
           'နော့တီကယ်မိုင်',
@@ -5613,7 +3414,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get speedBeaufort => Unit(
+  Unit get speedBeaufort => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဗျူးဖို့တ်',
@@ -5635,7 +3436,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get temperatureGeneric => Unit(
+  Unit get temperatureGeneric => const Unit(
         long: UnitCountPattern(
           _locale,
           '°',
@@ -5657,7 +3458,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get temperatureCelsius => Unit(
+  Unit get temperatureCelsius => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဒီဂရီ စင်တီဂရိတ်',
@@ -5679,7 +3480,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get temperatureFahrenheit => Unit(
+  Unit get temperatureFahrenheit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဒီဂရီ ဖာရင်ဟိုက်',
@@ -5701,7 +3502,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get temperatureKelvin => Unit(
+  Unit get temperatureKelvin => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကယ်လ်ဗင်',
@@ -5723,7 +3524,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get torquePoundForceFoot => Unit(
+  Unit get torquePoundForceFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'lbf.ft',
@@ -5745,7 +3546,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get torqueNewtonMeter => Unit(
+  Unit get torqueNewtonMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'နယူတန်−မီတာ',
@@ -5767,7 +3568,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCubicKilometer => Unit(
+  Unit get volumeCubicKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကုဗကီလိုမီတာ',
@@ -5789,7 +3590,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCubicMeter => Unit(
+  Unit get volumeCubicMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကုဗမီတာ',
@@ -5811,7 +3612,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCubicCentimeter => Unit(
+  Unit get volumeCubicCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကုဗစင်တီမီတာ',
@@ -5833,7 +3634,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCubicMile => Unit(
+  Unit get volumeCubicMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကုဗမိုင်',
@@ -5855,7 +3656,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCubicYard => Unit(
+  Unit get volumeCubicYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကုဗကိုက်',
@@ -5877,7 +3678,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCubicFoot => Unit(
+  Unit get volumeCubicFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကုဗပေ',
@@ -5899,7 +3700,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCubicInch => Unit(
+  Unit get volumeCubicInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကုဗလက်မ',
@@ -5921,7 +3722,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeMegaliter => Unit(
+  Unit get volumeMegaliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီဂါလီတာ',
@@ -5943,7 +3744,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeHectoliter => Unit(
+  Unit get volumeHectoliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဟက်တိုလီတာ',
@@ -5965,7 +3766,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeLiter => Unit(
+  Unit get volumeLiter => const Unit(
         long: UnitCountPattern(
           _locale,
           'လီတာ',
@@ -5987,7 +3788,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeDeciliter => Unit(
+  Unit get volumeDeciliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဒက်စီလီတာ',
@@ -6009,7 +3810,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCentiliter => Unit(
+  Unit get volumeCentiliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'စင်တီလီတာ',
@@ -6031,7 +3832,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeMilliliter => Unit(
+  Unit get volumeMilliliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'မီလီလီတာ',
@@ -6053,7 +3854,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumePintMetric => Unit(
+  Unit get volumePintMetric => const Unit(
         long: UnitCountPattern(
           _locale,
           'မထ္ထရစ် ပိုင့်',
@@ -6075,7 +3876,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCupMetric => Unit(
+  Unit get volumeCupMetric => const Unit(
         long: UnitCountPattern(
           _locale,
           'မထ္ထရစ် ခွက်',
@@ -6097,7 +3898,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeAcreFoot => Unit(
+  Unit get volumeAcreFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဧက-ပေ',
@@ -6119,7 +3920,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeBushel => Unit(
+  Unit get volumeBushel => const Unit(
         long: UnitCountPattern(
           _locale,
           '၈ ဂါလံဝင်ပုံး',
@@ -6141,7 +3942,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeGallon => Unit(
+  Unit get volumeGallon => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဂါလံ',
@@ -6163,7 +3964,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeGallonImperial => Unit(
+  Unit get volumeGallonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'ယူကေ ဂါလံ',
@@ -6185,7 +3986,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeQuart => Unit(
+  Unit get volumeQuart => const Unit(
         long: UnitCountPattern(
           _locale,
           'ကွတ်',
@@ -6207,7 +4008,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumePint => Unit(
+  Unit get volumePint => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပိုင့်',
@@ -6229,7 +4030,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeCup => Unit(
+  Unit get volumeCup => const Unit(
         long: UnitCountPattern(
           _locale,
           'ခွက်',
@@ -6251,7 +4052,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeFluidOunce => Unit(
+  Unit get volumeFluidOunce => const Unit(
         long: UnitCountPattern(
           _locale,
           'အရည်အောင်စ',
@@ -6273,7 +4074,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeFluidOunceImperial => Unit(
+  Unit get volumeFluidOunceImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'Imp. fl oz',
@@ -6295,7 +4096,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeTablespoon => Unit(
+  Unit get volumeTablespoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'စားပွဲဇွန်း',
@@ -6317,7 +4118,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeTeaspoon => Unit(
+  Unit get volumeTeaspoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'လက်ဖက်ရည်ဇွန်း',
@@ -6339,7 +4140,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeBarrel => Unit(
+  Unit get volumeBarrel => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဘယ်ရလ်စ်',
@@ -6361,7 +4162,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeDessertSpoon => Unit(
+  Unit get volumeDessertSpoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'အချိုပွဲဇွန်း',
@@ -6383,7 +4184,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeDessertSpoonImperial => Unit(
+  Unit get volumeDessertSpoonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဗြိတိသျှသုံး အချိုပွဲဇွန်း',
@@ -6405,7 +4206,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeDrop => Unit(
+  Unit get volumeDrop => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်စက်',
@@ -6427,7 +4228,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeDram => Unit(
+  Unit get volumeDram => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဒရမ်',
@@ -6449,7 +4250,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeJigger => Unit(
+  Unit get volumeJigger => const Unit(
         long: UnitCountPattern(
           _locale,
           'ပက်',
@@ -6471,7 +4272,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumePinch => Unit(
+  Unit get volumePinch => const Unit(
         long: UnitCountPattern(
           _locale,
           'တစ်ဆိတ်',
@@ -6493,7 +4294,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get volumeQuartImperial => Unit(
+  Unit get volumeQuartImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'ဗြိတိသျှသုံး ကွတ်',
@@ -6515,7 +4316,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get pressureGasolineEnergyDensity => Unit(
+  Unit get pressureGasolineEnergyDensity => const Unit(
         long: UnitCountPattern(
           _locale,
           'of gasoline equivalent',
@@ -6537,7 +4338,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get speedLightSpeed => Unit(
+  Unit get speedLightSpeed => const Unit(
         long: UnitCountPattern(
           _locale,
           'အလင်း',
@@ -6559,7 +4360,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get concentrPortionPer1e9 => Unit(
+  Unit get concentrPortionPer1e9 => const Unit(
         long: UnitCountPattern(
           _locale,
           'သန်းတစ်ထောင်ပုံ တစ်ပုံ',
@@ -6581,7 +4382,7 @@ class UnitsMy implements Units {
       );
 
   @override
-  Unit get durationNight => Unit(
+  Unit get durationNight => const Unit(
         long: UnitCountPattern(
           _locale,
           'ည',
@@ -6603,11 +4404,11 @@ class UnitsMy implements Units {
       );
 }
 
-class DateFieldsMy implements DateFields {
-  DateFieldsMy._();
+class DateFieldsMy extends DateFields {
+  DateFieldsMy._(super.cld);
 
   @override
-  MultiLength get era => MultiLength(
+  MultiLength get era => const MultiLength(
         long: 'ခေတ်',
         short: 'ခေတ်',
         narrow: 'ခေတ်',
@@ -6615,27 +4416,27 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldFullData get year => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'နှစ်',
           short: 'နှစ်',
           narrow: 'နှစ်',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ယမန်နှစ်',
           short: 'ယမန်နှစ်',
           narrow: 'ယမန်နှစ်',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ယခုနှစ်',
           short: 'ယခုနှစ်',
           narrow: 'ယခုနှစ်',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့်နှစ်',
           short: 'လာမည့်နှစ်',
           narrow: 'လာမည့်နှစ်',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် {0} နှစ်',
@@ -6649,7 +4450,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် {0} နှစ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} နှစ်အတွင်း',
@@ -6667,27 +4468,27 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldFullData get quarter => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'သုံးလပတ်',
           short: 'သုံးလပတ်',
           narrow: 'သုံးလပတ်',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် သုံးလပတ်',
           short: 'ပြီးခဲ့သောသုံးလပတ်',
           narrow: 'ပြီးခဲ့သောသုံးလပတ်',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ယခု သုံးလပတ်',
           short: 'ယခုသုံးလပတ်',
           narrow: 'ယခုသုံးလပတ်',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် သုံးလပတ်',
           short: 'နောက်လာမည့်သုံးလပတ်',
           narrow: 'နောက်လာမည့်သုံးလပတ်',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် သုံးလပတ်ကာလ {0} ခုအတွင်း',
@@ -6701,7 +4502,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် သုံးလပတ်ကာလ {0} ခုအတွင်း',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'သုံးလပတ်ကာလ {0} အတွင်း',
@@ -6719,27 +4520,27 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldFullData get month => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'လ',
           short: 'လ',
           narrow: 'လ',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့်လ',
           short: 'ပြီးခဲ့သည့်လ',
           narrow: 'ပြီးခဲ့သည့်လ',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ယခုလ',
           short: 'ယခုလ',
           narrow: 'ယခုလ',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့်လ',
           short: 'လာမည့်လ',
           narrow: 'လာမည့်လ',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် {0} လ',
@@ -6753,7 +4554,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် {0} လ',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} လအတွင်း',
@@ -6771,27 +4572,27 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldFullData get week => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'ပတ်',
           short: 'ပတ်',
           narrow: 'ပတ်',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် သီတင်းပတ်',
           short: 'ပြီးခဲ့သည့် သီတင်းပတ်',
           narrow: 'ပြီးခဲ့သည့် သီတင်းပတ်',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ယခု သီတင်းပတ်',
           short: 'ယခု သီတင်းပတ်',
           narrow: 'ယခု သီတင်းပတ်',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် သီတင်းပတ်',
           short: 'လာမည့် သီတင်းပတ်',
           narrow: 'လာမည့် သီတင်းပတ်',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် {0} ပတ်',
@@ -6805,7 +4606,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် {0} ပတ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} ပတ်အတွင်း',
@@ -6822,7 +4623,7 @@ class DateFieldsMy implements DateFields {
       );
 
   @override
-  MultiLength get weekOfMonth => MultiLength(
+  MultiLength get weekOfMonth => const MultiLength(
         long: 'တစ်လအတွင်းရှိသီတင်းပတ်',
         short: 'တစ်လအတွင်းရှိသီတင်းပတ်',
         narrow: 'တစ်လအတွင်းရှိသီတင်းပတ်',
@@ -6830,27 +4631,27 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldFullData get day => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'ရက်',
           short: 'ရက်',
           narrow: 'ရက်',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'မနေ့က',
           short: 'မနေ့က',
           narrow: 'မနေ့က',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ယနေ့',
           short: 'ယနေ့',
           narrow: 'ယနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'မနက်ဖြန်',
           short: 'မနက်ဖြန်',
           narrow: 'မနက်ဖြန်',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် {0} ရက်',
@@ -6864,7 +4665,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် {0} ရက်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} ရက်အတွင်း',
@@ -6881,21 +4682,21 @@ class DateFieldsMy implements DateFields {
       );
 
   @override
-  MultiLength get dayOfYear => MultiLength(
+  MultiLength get dayOfYear => const MultiLength(
         long: 'တစ်နှစ်အတွင်း ရက်ရေတွက်ပုံ',
         short: 'တစ်နှစ်အတွင်း ရက်ရေတွက်ပုံ',
         narrow: 'တစ်နှစ်အတွင်း ရက်ရေတွက်ပုံ',
       );
 
   @override
-  MultiLength get weekday => MultiLength(
+  MultiLength get weekday => const MultiLength(
         long: 'နေ့',
         short: 'နေ့',
         narrow: 'နေ့',
       );
 
   @override
-  MultiLength get weekdayOfMonth => MultiLength(
+  MultiLength get weekdayOfMonth => const MultiLength(
         long: 'တစ်လအတွင်းရှိအလုပ်ရက်',
         short: 'တစ်လအတွင်းရှိအလုပ်ရက်',
         narrow: 'တစ်လအတွင်းရှိအလုပ်ရက်',
@@ -6903,22 +4704,22 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် တနင်္ဂနွေနေ့',
           short: 'ပြီးခဲ့သည့် တနင်္ဂနွေနေ့',
           narrow: 'ပြီးခဲ့သည့် တနင်္ဂနွေနေ့',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤတနင်္ဂနွေနေ့',
           short: 'ဤတနင်္ဂနွေနေ့',
           narrow: 'ဤတနင်္ဂနွေနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် တနင်္ဂနွေနေ့',
           short: 'လာမည့် တနင်္ဂနွေနေ့',
           narrow: 'လာမည့် တနင်္ဂနွေနေ့',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် တနင်္ဂနွေ {0} ပတ်',
@@ -6932,7 +4733,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် တနင်္ဂနွေ {0} ပတ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'တနင်္ဂနွေ {0} ပတ်အတွင်း',
@@ -6950,22 +4751,22 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် တနင်္လာနေ့',
           short: 'ပြီးခဲ့သည့် တနင်္လာနေ့',
           narrow: 'ပြီးခဲ့သည့် တနင်္လာနေ့',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤတနင်္လာနေ့',
           short: 'ဤတနင်္လာနေ့',
           narrow: 'ဤတနင်္လာနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် တနင်္လာနေ့',
           short: 'လာမည့် တနင်္လာနေ့',
           narrow: 'လာမည့် တနင်္လာနေ့',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် တနင်္လာ {0} ပတ်',
@@ -6979,7 +4780,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် တနင်္လာ {0} ပတ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'တနင်္လာ {0} ပတ်အတွင်း',
@@ -6997,22 +4798,22 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် အင်္ဂါနေ့',
           short: 'ပြီးခဲ့သည့် အင်္ဂါနေ့',
           narrow: 'ပြီးခဲ့သည့် အင်္ဂါနေ့',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤအင်္ဂါနေ့',
           short: 'ဤအင်္ဂါနေ့',
           narrow: 'ဤအင်္ဂါနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် အင်္ဂါနေ့',
           short: 'လာမည့် အင်္ဂါနေ့',
           narrow: 'လာမည့် အင်္ဂါနေ့',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် အင်္ဂါ {0} ပတ်',
@@ -7026,7 +4827,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် အင်္ဂါ {0} ပတ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'အင်္ဂါ {0} ပတ်အတွင်း',
@@ -7044,22 +4845,22 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် ဗုဒ္ဓဟူးနေ့',
           short: 'ပြီးခဲ့သည့် ဗုဒ္ဓဟူးနေ့',
           narrow: 'ပြီးခဲ့သည့် ဗုဒ္ဓဟူးနေ့',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤဗုဒ္ဓဟူးနေ့',
           short: 'ဤဗုဒ္ဓဟူးနေ့',
           narrow: 'ဤဗုဒ္ဓဟူးနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် ဗုဒ္ဓဟူးနေ့',
           short: 'လာမည့် ဗုဒ္ဓဟူးနေ့',
           narrow: 'လာမည့် ဗုဒ္ဓဟူးနေ့',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် ဗုဒ္ဓဟူး {0} ပတ်',
@@ -7073,7 +4874,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် ဗုဒ္ဓဟူး {0} ပတ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ဗုဒ္ဓဟူး {0} ပတ်အတွင်း',
@@ -7091,22 +4892,22 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် ကြာသပတေးနေ့',
           short: 'ပြီးခဲ့သည့် ကြာသပတေးနေ့',
           narrow: 'ပြီးခဲ့သည့် ကြာသပတေးနေ့',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤကြာသပတေးနေ့',
           short: 'ဤကြာသပတေးနေ့',
           narrow: 'ဤကြာသပတေးနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် ကြာသပတေးနေ့',
           short: 'လာမည့် ကြာသပတေးနေ့',
           narrow: 'လာမည့် ကြာသပတေးနေ့',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် ကြာသပတေး {0} ပတ်',
@@ -7120,7 +4921,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် ကြာသပတေး {0} ပတ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ကြာသပတေး {0} ပတ်အတွင်း',
@@ -7138,22 +4939,22 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် သောကြာနေ့',
           short: 'ပြီးခဲ့သည့် သောကြာနေ့',
           narrow: 'ပြီးခဲ့သည့် သောကြာနေ့',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤသောကြာနေ့',
           short: 'ဤသောကြာနေ့',
           narrow: 'ဤသောကြာနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် သောကြာနေ့',
           short: 'လာမည့် သောကြာနေ့',
           narrow: 'လာမည့် သောကြာနေ့',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် သောကြာ {0} ပတ်အတွင်း',
@@ -7167,7 +4968,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် သောကြာ {0} ပတ်အတွင်း',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'သောကြာ {0} ပတ်အတွင်း',
@@ -7185,22 +4986,22 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ပြီးခဲ့သည့် စနေနေ့',
           short: 'ပြီးခဲ့သည့် စနေနေ့',
           narrow: 'ပြီးခဲ့သည့် စနေနေ့',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤစနေနေ့',
           short: 'ဤစနေနေ့',
           narrow: 'ဤစနေနေ့',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'လာမည့် စနေနေ့',
           short: 'လာမည့် စနေနေ့',
           narrow: 'လာမည့် စနေနေ့',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် စနေ {0} ပတ်အတွင်း',
@@ -7214,7 +5015,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် စနေ {0} ပတ်အတွင်း',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'စနေ {0} ပတ်အတွင်း',
@@ -7231,7 +5032,7 @@ class DateFieldsMy implements DateFields {
       );
 
   @override
-  MultiLength get dayperiod => MultiLength(
+  MultiLength get dayperiod => const MultiLength(
         long: 'နံနက်/ညနေ',
         short: 'နံနက်/ညနေ',
         narrow: 'နံနက်/ညနေ',
@@ -7239,17 +5040,17 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'နာရီ',
           short: 'နာရီ',
           narrow: 'နာရီ',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤအချိန်',
           short: 'ဤအချိန်',
           narrow: 'ဤအချိန်',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် {0} နာရီ',
@@ -7263,7 +5064,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် {0} နာရီ',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} နာရီအတွင်း',
@@ -7281,17 +5082,17 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'မိနစ်',
           short: 'မိနစ်',
           narrow: 'မိနစ်',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ဤမိနစ်',
           short: 'ဤမိနစ်',
           narrow: 'ဤမိနစ်',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် {0} မိနစ်',
@@ -7305,7 +5106,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် {0} မိနစ်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} မိနစ်အတွင်း',
@@ -7323,17 +5124,17 @@ class DateFieldsMy implements DateFields {
 
   @override
   DateFieldDataTime get second => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'စက္ကန့်',
           short: 'စက္ကန့်',
           narrow: 'စက္ကန့်',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'ယခု',
           short: 'ယခု',
           narrow: 'ယခု',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ပြီးခဲ့သည့် {0} စက္ကန့်',
@@ -7347,7 +5148,7 @@ class DateFieldsMy implements DateFields {
             other: 'ပြီးခဲ့သည့် {0} စက္ကန့်',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} စက္ကန့်အတွင်း',
@@ -7364,3596 +5165,6650 @@ class DateFieldsMy implements DateFields {
       );
 
   @override
-  MultiLength get zone => MultiLength(
+  MultiLength get zone => const MultiLength(
         long: 'ဇုန်',
         short: 'ဇုန်',
         narrow: 'ဇုန်',
       );
 }
 
-class TerritoriesMy implements Territories {
-  TerritoriesMy._();
+class LanguagesMy extends Languages {
+  const LanguagesMy._(super.cld);
+
+  static const _aa = Language('aa', 'အာဖာ');
+  static const _ab = Language('ab', 'အဘ်ခါဇီရာ');
+  static const _ace = Language('ace', 'အာချေး');
+  static const _ada = Language('ada', 'ဒန်မဲ');
+  static const _ady = Language('ady', 'အဒိုင်ဂီ');
+  static const _af = Language('af', 'အာဖရိကန်');
+  static const _agq = Language('agq', 'အာဂ်ဟိန်း');
+  static const _ain = Language('ain', 'အိန်နု');
+  static const _ak = Language('ak', 'အာကန်');
+  static const _ale = Language('ale', 'အာလီယု');
+  static const _alt = Language('alt', 'တောင် အာလ်တိုင်း');
+  static const _am = Language('am', 'အမ်ဟာရစ်ခ်');
+  static const _an = Language('an', 'အာရာဂွန်');
+  static const _ang = Language('ang', 'အင်ဂလို ဆက္ကစွန်');
+  static const _ann = Language('ann', 'အိုဘိုလို');
+  static const _anp = Language('anp', 'အန်ဂီကာ');
+  static const _ar = Language('ar', 'အာရဗီ');
+  static const _ar001 = Language('ar-001', 'ခေတ်သစ် ရှေ့ဆောင် အာရဗီ');
+  static const _arn = Language('arn', 'မာပုချီ');
+  static const _arp = Language('arp', 'အာရာပါဟို');
+  static const _ars = Language('ars', 'နာ့ဂျဒီ အာရဗစ်');
+  static const _$as = Language('as', 'အာသံ');
+  static const _asa = Language('asa', 'အာစု');
+  static const _ast = Language('ast', 'အက်စ်တိုးရီးယား');
+  static const _atj = Language('atj', 'အာတီကမဲကု');
+  static const _av = Language('av', 'အာဗာရစ်ခ်');
+  static const _awa = Language('awa', 'အာဝါဒီ');
+  static const _ay = Language('ay', 'အိုင်မာရ');
+  static const _az = Language('az', 'အဇာဘိုင်ဂျန်', short: 'အဇာရီ');
+  static const _ba = Language('ba', 'ဘက်ရှ်ကာ');
+  static const _ban = Language('ban', 'ဘာလီ');
+  static const _bas = Language('bas', 'ဘာဆာ');
+  static const _be = Language('be', 'ဘီလာရုစ်');
+  static const _bem = Language('bem', 'ဘိန်ဘာ');
+  static const _bez = Language('bez', 'ဘီနာ');
+  static const _bg = Language('bg', 'ဘူလ်ဂေးရီးယား');
+  static const _bgc = Language('bgc', 'ဟာယန်ဗီ');
+  static const _bgn = Language('bgn', 'အနောက် ဘဲလိုချီ');
+  static const _bho = Language('bho', 'ဘို့ဂျ်ပူရီ');
+  static const _bi = Language('bi', 'ဘစ်စ်လာမာ');
+  static const _bin = Language('bin', 'ဘီနီ');
+  static const _bla = Language('bla', 'စစ္စီကာ');
+  static const _blo = Language('blo', 'အန်နီ');
+  static const _bm = Language('bm', 'ဘန်ဘာရာ');
+  static const _bn = Language('bn', 'ဘင်္ဂါလီ');
+  static const _bo = Language('bo', 'တိဘက်');
+  static const _br = Language('br', 'ဘရီတွန်');
+  static const _brx = Language('brx', 'ဗိုဒို');
+  static const _bs = Language('bs', 'ဘော့စ်နီးယား');
+  static const _bug = Language('bug', 'ဘူဂစ်စ်');
+  static const _byn = Language('byn', 'ဘလင်');
+  static const _ca = Language('ca', 'ကတ်တလန်');
+  static const _cay = Language('cay', 'ကာယုဂါ');
+  static const _ccp = Language('ccp', 'ချတ်ခ်မာ');
+  static const _ce = Language('ce', 'ချက်ချန်း');
+  static const _ceb = Language('ceb', 'စီဗူအာနို');
+  static const _cgg = Language('cgg', 'ချီဂါ');
+  static const _ch = Language('ch', 'ချမိုရို');
+  static const _chk = Language('chk', 'ချူကီးစ်');
+  static const _chm = Language('chm', 'မာရီ');
+  static const _cho = Language('cho', 'ချော့တို');
+  static const _chp = Language('chp', 'ချီပွေဝိုင်ရန်');
+  static const _chr = Language('chr', 'ချာရိုကီ');
+  static const _chy = Language('chy', 'ချေယန်း');
+  static const _ckb = Language('ckb', 'ဗဟိုဒေသသုံး ကဒ်ဘာသာ',
+      variant: 'ကဒ် ဆိုရာနီ', menu: 'ကဒ် ဗဟို');
+  static const _clc = Language('clc', 'ချီကိုလ်တင်');
+  static const _co = Language('co', 'ခိုစီကန်');
+  static const _cr = Language('cr', 'ခရီး');
+  static const _crg = Language('crg', 'မစ်ချစ်ခ်');
+  static const _crj = Language('crj', 'တောင်ပိုင်း အရှေ့ခရီ');
+  static const _crk = Language('crk', 'ပလိန်းစ် ခရီ');
+  static const _crl = Language('crl', 'မြောက်ပိုင်း အရှေ့ခရီ');
+  static const _crm = Language('crm', 'မုစ်ခရီး');
+  static const _crr = Language('crr', 'ကယ်ရိုလိုင်းနား အယ်လ်ဂွန်းကီယန်');
+  static const _crs = Language('crs', 'ခရီအိုလီ');
+  static const _cs = Language('cs', 'ချက်');
+  static const _csw = Language('csw', 'ဆွမ်ပီ ခရီ');
+  static const _cu = Language('cu', 'ချပ်ချ် စလာဗစ်');
+  static const _cv = Language('cv', 'ချူဗက်ရှ်');
+  static const _cy = Language('cy', 'ဝေလ');
+  static const _da = Language('da', 'ဒိန်းမတ်');
+  static const _dak = Language('dak', 'ဒါကိုတာ');
+  static const _dar = Language('dar', 'ဒါဂ်ဝါ');
+  static const _dav = Language('dav', 'တိုင်တာ');
+  static const _de = Language('de', 'ဂျာမန်');
+  static const _deAT = Language('de-AT', 'ဩစတြီးယား ဂျာမန်');
+  static const _deCH = Language('de-CH', 'အလီမဲန်နစ် ဂျာမန်');
+  static const _del = Language('del', 'ဒယ်လာဝဲလ်');
+  static const _dgr = Language('dgr', 'ဒေါ့ဂ်ရစ်ဘ်');
+  static const _dje = Language('dje', 'ဇာမာ');
+  static const _doi = Language('doi', 'ဒိုဂရီ');
+  static const _dsb = Language('dsb', 'အနိမ့် ဆိုဘီယန်း');
+  static const _dua = Language('dua', 'ဒူအလာ');
+  static const _dum = Language('dum', 'အလယ်ပိုင်း ဒတ်ချ်');
+  static const _dv = Language('dv', 'ဒီဗာဟီ');
+  static const _dyo = Language('dyo', 'ဂျိုလာ-ဖွန်ရီ');
+  static const _dz = Language('dz', 'ဒဇွန်ကာ');
+  static const _dzg = Language('dzg', 'ဒဇာဂါ');
+  static const _ebu = Language('ebu', 'အမ်ဘူ');
+  static const _ee = Language('ee', 'အီဝီ');
+  static const _efi = Language('efi', 'အာဖိခ်');
+  static const _egy = Language('egy', 'ရှေးဟောင်း အီဂျစ်');
+  static const _eka = Language('eka', 'အီကာဂျုခ်');
+  static const _el = Language('el', 'ဂရိ');
+  static const _en = Language('en', 'အင်္ဂလိပ်');
+  static const _enAU = Language('en-AU', 'ဩစတြေးလျ အင်္ဂလိပ်');
+  static const _enCA = Language('en-CA', 'ကနေဒါ အင်္ဂလိပ်');
+  static const _enGB =
+      Language('en-GB', 'ဗြိတိသျှ အင်္ဂလိပ်', short: 'ယူကေ အင်္ဂလိပ်');
+  static const _enUS =
+      Language('en-US', 'အမေရိကန် အင်္ဂလိပ်', short: 'ယူအက်စ် အင်္ဂလိပ်');
+  static const _enm = Language('enm', 'အလယ်ပိုင်း အင်္ဂလိပ်');
+  static const _eo = Language('eo', 'အက်စ်ပရန်တို');
+  static const _es = Language('es', 'စပိန်');
+  static const _esES = Language('es-ES', 'စပိန် (ဥရောပ)');
+  static const _esMX = Language('es-MX', 'စပိန် (မက္ကဆီကို)');
+  static const _et = Language('et', 'အက်စ်တိုးနီးယား');
+  static const _eu = Language('eu', 'ဘာစ်ခ်');
+  static const _ewo = Language('ewo', 'အီဝန်ဒို');
+  static const _fa = Language('fa', 'ပါရှန်');
+  static const _faAF = Language('fa-AF', 'ဒါရီ');
+  static const _ff = Language('ff', 'ဖူလာ');
+  static const _fi = Language('fi', 'ဖင်လန်');
+  static const _fil = Language('fil', 'ဖိလစ်ပိုင်');
+  static const _fj = Language('fj', 'ဖီဂျီ');
+  static const _fo = Language('fo', 'ဖာရို');
+  static const _fon = Language('fon', 'ဖော်န်');
+  static const _fr = Language('fr', 'ပြင်သစ်');
+  static const _frCA = Language('fr-CA', 'ကနေဒါ ပြင်သစ်');
+  static const _frCH = Language('fr-CH', 'ဆွစ် ပြင်သစ်');
+  static const _frc = Language('frc', 'ကေဂျန် ဖရန့်စ်');
+  static const _frm = Language('frm', 'အလယ်ပိုင်း ပြင်သစ်');
+  static const _fro = Language('fro', 'ဖရန်စီစ်');
+  static const _frr = Language('frr', 'မြောက် ဖရီစီရန်');
+  static const _frs = Language('frs', 'အရှေ့ ဖရီစီရန်');
+  static const _fur = Language('fur', 'ဖရူလီယန်း');
+  static const _fy = Language('fy', 'အနောက် ဖရီစီရန်');
+  static const _ga = Language('ga', 'အိုင်းရစ်ရှ်');
+  static const _gaa = Language('gaa', 'ဂါ');
+  static const _gag = Language('gag', 'ဂါဂုဇ်');
+  static const _gd = Language('gd', 'စကော့တစ်ရှ် ဂေးလစ်ခ်');
+  static const _gez = Language('gez', 'ဂီးဇ်');
+  static const _gil = Language('gil', 'ကာရီဗာတီ');
+  static const _gl = Language('gl', 'ဂါလီစီယာ');
+  static const _gmh = Language('gmh', 'အလယ်ပိုင်း အမြင့် ဂျာမန်');
+  static const _gn = Language('gn', 'ဂူအာရာနီ');
+  static const _gor = Language('gor', 'ဂိုရိုတာလို');
+  static const _grc = Language('grc', 'ရှေးဟောင်း ဂရိ');
+  static const _gsw = Language('gsw', 'ဆွစ် ဂျာမန်');
+  static const _gu = Language('gu', 'ဂူဂျာရသီ');
+  static const _guz = Language('guz', 'ဂူစီး');
+  static const _gv = Language('gv', 'မန်းဇ်');
+  static const _gwi = Language('gwi', 'ဂွစ်ချင်');
+  static const _ha = Language('ha', 'ဟာဥစာ');
+  static const _hai = Language('hai', 'ဟေဒါ');
+  static const _haw = Language('haw', 'ဟာဝိုင်ယီ');
+  static const _hax = Language('hax', 'တောင် ဟိုင်ဒါ');
+  static const _he = Language('he', 'ဟီဘရူး');
+  static const _hi = Language('hi', 'ဟိန္ဒီ');
+  static const _hiLatn =
+      Language('hi-Latn', 'ဟိန္ဒီ (လက်တင်)', variant: 'ဟိန္ဒီ (လက်တင်)');
+  static const _hil = Language('hil', 'ဟီလီဂေနွန်');
+  static const _hmn = Language('hmn', 'မုံ');
+  static const _hr = Language('hr', 'ခရိုအေးရှား');
+  static const _hsb = Language('hsb', 'ဆက္ကဆိုနီ');
+  static const _ht = Language('ht', 'ဟေတီ');
+  static const _hu = Language('hu', 'ဟန်ဂေရီ');
+  static const _hup = Language('hup', 'ဟူပါ');
+  static const _hur = Language('hur', 'ဟော့ကမိုလွမ်');
+  static const _hy = Language('hy', 'အာမေးနီးယား');
+  static const _hz = Language('hz', 'ဟီရဲရို');
+  static const _ia = Language('ia', 'အင်တာလင်ဂွါ');
+  static const _iba = Language('iba', 'အီဗန်');
+  static const _ibb = Language('ibb', 'အီဘီဘီယို');
+  static const _id = Language('id', 'အင်ဒိုနီးရှား');
+  static const _ie = Language('ie', 'အင်တာလင်း');
+  static const _ig = Language('ig', 'အစ္ဂဘို');
+  static const _ii = Language('ii', 'စီချွမ် ရီ');
+  static const _ikt = Language('ikt', 'အနောက် ကနေဒီယန် အီနုတီတွတ်');
+  static const _ilo = Language('ilo', 'အီလိုကို');
+  static const _inh = Language('inh', 'အင်ဂုရှ်');
+  static const _io = Language('io', 'အီဒို');
+  static const _$is = Language('is', 'အိုက်စ်လန်');
+  static const _it = Language('it', 'အီတလီ');
+  static const _iu = Language('iu', 'အီနုခ်တီတု');
+  static const _ja = Language('ja', 'ဂျပန်');
+  static const _jbo = Language('jbo', 'လိုဂျ်ဘန်');
+  static const _jgo = Language('jgo', 'ဂွမ်ဘာ');
+  static const _jmc = Language('jmc', 'မချာမီ');
+  static const _jpr = Language('jpr', 'ဂျူဒီယို-ပါရှန်');
+  static const _jrb = Language('jrb', 'ဂျူဒီယို-အာရဗီ');
+  static const _jv = Language('jv', 'ဂျာဗား');
+  static const _ka = Language('ka', 'ဂျော်ဂျီယာ');
+  static const _kab = Language('kab', 'ကဘိုင်လ်');
+  static const _kac = Language('kac', 'ကချင်');
+  static const _kaj = Language('kaj', 'ဂျူအူ');
+  static const _kam = Language('kam', 'ကမ်ဘာ');
+  static const _kbd = Language('kbd', 'ကဘာဒင်');
+  static const _kcg = Language('kcg', 'တိုင်အပ်');
+  static const _kde = Language('kde', 'မာခွန်ဒီ');
+  static const _kea = Language('kea', 'ကဘူဗာဒီအာနူ');
+  static const _kfo = Language('kfo', 'ကိုရို');
+  static const _kg = Language('kg', 'ကွန်ဂို');
+  static const _kgp = Language('kgp', 'ကိန်းဂန်');
+  static const _kha = Language('kha', 'ခါစီ');
+  static const _khq = Language('khq', 'ကိုရာ ချီအီနီ');
+  static const _ki = Language('ki', 'ကီကူယူ');
+  static const _kj = Language('kj', 'ကွန်းယာမာ');
+  static const _kk = Language('kk', 'ကာဇာချ');
+  static const _kkj = Language('kkj', 'ကကို');
+  static const _kl = Language('kl', 'ကလာအ်လီဆပ်');
+  static const _kln = Language('kln', 'ကလန်ဂျင်');
+  static const _km = Language('km', 'ခမာ');
+  static const _kmb = Language('kmb', 'ကင်ဘွန်ဒူ');
+  static const _kn = Language('kn', 'ကန်နာဒါ');
+  static const _ko = Language('ko', 'ကိုရီးယား');
+  static const _koi = Language('koi', 'ကိုမီ-ပါမြက်');
+  static const _kok = Language('kok', 'ကွန်ကနီ');
+  static const _kpe = Language('kpe', 'ကပ်ပဲလ်');
+  static const _kr = Language('kr', 'ကနူရီ');
+  static const _krc = Language('krc', 'ကရာချေး-ဘာကာ');
+  static const _krl = Language('krl', 'ကာရီလီယန်');
+  static const _kru = Language('kru', 'ကူရုပ်ခ်');
+  static const _ks = Language('ks', 'ကက်ရှ်မီးယား');
+  static const _ksb = Language('ksb', 'ရှန်ဘာလာ');
+  static const _ksf = Language('ksf', 'ဘာဖီအာ');
+  static const _ksh = Language('ksh', 'ကိုလိုနီယန်း');
+  static const _ku = Language('ku', 'ကဒ်');
+  static const _kum = Language('kum', 'ကွမ်မိုက်');
+  static const _kv = Language('kv', 'ကိုမီ');
+  static const _kw = Language('kw', 'ခိုနီရှ်');
+  static const _kwk = Language('kwk', 'ကွပ်ခ်ဝါလာ');
+  static const _kxv = Language('kxv', 'ကူဗီ');
+  static const _ky = Language('ky', 'ကာဂျစ်');
+  static const _la = Language('la', 'လက်တင်');
+  static const _lad = Language('lad', 'လာဒီနို');
+  static const _lag = Language('lag', 'လန်ဂီ');
+  static const _lb = Language('lb', 'လူဇင်ဘတ်');
+  static const _lez = Language('lez', 'လက်ဇ်ဂီးယား');
+  static const _lg = Language('lg', 'ဂန်ဒါ');
+  static const _li = Language('li', 'လင်ဘာဂစ်ရှ်');
+  static const _lij = Language('lij', 'လက်ဂါးရီရန်');
+  static const _lil = Language('lil', 'လာလူးဝစ်တ်');
+  static const _lkt = Language('lkt', 'လာကိုတာ');
+  static const _lmo = Language('lmo', 'လန်းဘတ်');
+  static const _ln = Language('ln', 'လင်ဂါလာ');
+  static const _lo = Language('lo', 'လာအို');
+  static const _lou = Language('lou', 'လူဝီဇီယားနား ခရီးယို');
+  static const _loz = Language('loz', 'လိုဇီ');
+  static const _lrc = Language('lrc', 'မြောက်လူရီ');
+  static const _lsm = Language('lsm', 'ဆာမိအာ');
+  static const _lt = Language('lt', 'လစ်သူဝေးနီးယား');
+  static const _lu = Language('lu', 'လူဘာ-ကတန်ဂါ');
+  static const _lua = Language('lua', 'လူဘာ-လူလူအာ');
+  static const _lun = Language('lun', 'လွန်ဒါ');
+  static const _luo = Language('luo', 'လူအို');
+  static const _lus = Language('lus', 'မီဇို');
+  static const _luy = Language('luy', 'လူရီအာ');
+  static const _lv = Language('lv', 'လတ်ဗီးယား');
+  static const _mad = Language('mad', 'မဒူရာ');
+  static const _mag = Language('mag', 'မဂါဟီ');
+  static const _mai = Language('mai', 'မိုင်သီလီ');
+  static const _mak = Language('mak', 'မကာဆာ');
+  static const _mas = Language('mas', 'မာဆိုင်');
+  static const _mdf = Language('mdf', 'မို့ခ်ရှာ');
+  static const _men = Language('men', 'မန်ဒဲ');
+  static const _mer = Language('mer', 'မီရု');
+  static const _mfe = Language('mfe', 'မောရစ်ရှ');
+  static const _mg = Language('mg', 'မာလဂက်စီ');
+  static const _mga = Language('mga', 'အလယ်ပိုင်း အိုင်းရစ်ရှ်');
+  static const _mgh = Language('mgh', 'မာခူဝါ-မီအီတို');
+  static const _mgo = Language('mgo', 'မီတာ');
+  static const _mh = Language('mh', 'မာရှယ်လိဇ်');
+  static const _mi = Language('mi', 'မာအိုရီ');
+  static const _mic = Language('mic', 'မစ်ခ်မက်ခ်');
+  static const _min = Language('min', 'စူကူမီနန်');
+  static const _mk = Language('mk', 'မက်ဆီဒိုးနီးယား');
+  static const _ml = Language('ml', 'မလေယာလမ်');
+  static const _mn = Language('mn', 'မွန်ဂိုလီးယား');
+  static const _mnc = Language('mnc', 'မန်ချူး');
+  static const _mni = Language('mni', 'မနိပူရ');
+  static const _moe = Language('moe', 'အီနုအေမွန်');
+  static const _moh = Language('moh', 'မိုဟော့ခ်');
+  static const _mos = Language('mos', 'မိုစီ');
+  static const _mr = Language('mr', 'မာရသီ');
+  static const _ms = Language('ms', 'မလေး');
+  static const _mt = Language('mt', 'မော်လ်တာ');
+  static const _mua = Language('mua', 'မွန်ဒန်း');
+  static const _mul = Language('mul', 'ဘာသာစကား အမျိုးမျိုး');
+  static const _mus = Language('mus', 'ခရိချ');
+  static const _mwl = Language('mwl', 'မီရန်ဒီးဇ်');
+  static const _my = Language('my', 'မြန်မာ');
+  static const _myv = Language('myv', 'အီဇယာ');
+  static const _mzn = Language('mzn', 'မာဇန်ဒါရန်နီ');
+  static const _na = Language('na', 'နော်ရူး');
+  static const _nap = Language('nap', 'နပိုလီတန်');
+  static const _naq = Language('naq', 'နာမာ');
+  static const _nb = Language('nb', 'နော်ဝေ ဘွတ်ခ်မော်လ်');
+  static const _nd = Language('nd', 'မြောက် အွန်န်ဒီဘီလီ');
+  static const _nds = Language('nds', 'အနိမ့် ဂျာမန်');
+  static const _ndsNL = Language('nds-NL', 'ဂျာမန် (နယ်သာလန်)');
+  static const _ne = Language('ne', 'နီပေါ');
+  static const _$new = Language('new', 'နီဝါရီ');
+  static const _ng = Language('ng', 'အွန်ဒွန်ဂါ');
+  static const _nia = Language('nia', 'နီးရပ်စ်');
+  static const _niu = Language('niu', 'နူအဲယန်း');
+  static const _nl = Language('nl', 'ဒတ်ခ်ျ');
+  static const _nlBE = Language('nl-BE', 'ဖလီမစ်ရှ်');
+  static const _nmg = Language('nmg', 'ကွာစီအို');
+  static const _nn = Language('nn', 'နော်ဝေ နီးနောစ်');
+  static const _nnh = Language('nnh', 'အွန်ရဲဘွန်း');
+  static const _no = Language('no', 'နော်ဝေ');
+  static const _nog = Language('nog', 'နိုဂိုင်');
+  static const _nqo = Language('nqo', 'အွန်ကို');
+  static const _nr = Language('nr', 'တောင် အွန်န်ဘီလီ');
+  static const _nso = Language('nso', 'မြောက် ဆိုသို');
+  static const _nus = Language('nus', 'နူအာ');
+  static const _nv = Language('nv', 'နာဗာဟို');
+  static const _ny = Language('ny', 'နရန်ဂျာ');
+  static const _nyn = Language('nyn', 'နရန်ကိုလီ');
+  static const _oc = Language('oc', 'အိုစီတန်');
+  static const _ojb = Language('ojb', 'အိုဂျစ်ဘွာ');
+  static const _ojc = Language('ojc', 'အိုဂျစ်ဘွေး');
+  static const _ojs = Language('ojs', 'အိုဂျီခရီ');
+  static const _ojw = Language('ojw', 'အနောက် အိုဂျီဘွာ');
+  static const _oka = Language('oka', 'အိုကနဂန်');
+  static const _om = Language('om', 'အိုရိုမို');
+  static const _or = Language('or', 'အိုရီရာ');
+  static const _os = Language('os', 'အိုဆဲတစ်ခ်');
+  static const _pa = Language('pa', 'ပန်ချာပီ');
+  static const _pag = Language('pag', 'ပန်ဂါစီနန်');
+  static const _pam = Language('pam', 'ပမ်ပန်ညာ');
+  static const _pap = Language('pap', 'ပါပီမင်တို');
+  static const _pau = Language('pau', 'ပလာအို');
+  static const _pcm = Language('pcm', 'နိုင်ဂျီးရီးယား ပစ်ဂျင်');
+  static const _peo = Language('peo', 'ပါရှန် အဟောင်း');
+  static const _pi = Language('pi', 'ပါဠိ');
+  static const _pis = Language('pis', 'ပီဂျင်');
+  static const _pl = Language('pl', 'ပိုလန်');
+  static const _pqm = Language('pqm', 'မလိဇိ ပါစမ်မကွာဒီ');
+  static const _prg = Language('prg', 'ပရူရှန်');
+  static const _ps = Language('ps', 'ပက်ရှ်တွန်း');
+  static const _pt = Language('pt', 'ပေါ်တူဂီ');
+  static const _ptBR = Language('pt-BR', 'ဘရာဇီး ပေါ်တူဂီ');
+  static const _ptPT = Language('pt-PT', 'ဥရောပ ပေါ်တူဂီ');
+  static const _qu = Language('qu', 'ခီချူဝါအိုဝါ');
+  static const _quc = Language('quc', 'ကီခ်အီချီ');
+  static const _raj = Language('raj', 'ရာဂျာစတာနီ');
+  static const _rap = Language('rap', 'ရပန်နူအီ');
+  static const _rar = Language('rar', 'ရရိုတွန်ဂန်');
+  static const _rhg = Language('rhg', 'ရိုဟင်ဂျာ');
+  static const _rm = Language('rm', 'ရောမ');
+  static const _rn = Language('rn', 'ရွန်ဒီ');
+  static const _ro = Language('ro', 'ရိုမေနီယား');
+  static const _roMD = Language('ro-MD', 'မော်လဒိုဗာ');
+  static const _rof = Language('rof', 'ရွမ်ဘို');
+  static const _ru = Language('ru', 'ရုရှ');
+  static const _rup = Language('rup', 'အာရိုမန်းနီးယန်း');
+  static const _rw = Language('rw', 'ကင်ရာဝန်ဒါ');
+  static const _rwk = Language('rwk', 'ရူဝမ်');
+  static const _sa = Language('sa', 'သင်္သကရိုက်');
+  static const _sad = Language('sad', 'ဆန်ဒါဝီ');
+  static const _sah = Language('sah', 'ဆခါ');
+  static const _saq = Language('saq', 'ဆမ်ဘူရူ');
+  static const _sat = Language('sat', 'ဆန်တာလီ');
+  static const _sba = Language('sba', 'အွန်ဂမ်းဘေး');
+  static const _sbp = Language('sbp', 'ဆန်ဂု');
+  static const _sc = Language('sc', 'ဆာဒီနီးယား');
+  static const _scn = Language('scn', 'စစ္စလီ');
+  static const _sco = Language('sco', 'စကော့တ်');
+  static const _sd = Language('sd', 'စင်ဒီ');
+  static const _se = Language('se', 'မြောက် ဆာမိ');
+  static const _seh = Language('seh', 'စီနာ');
+  static const _ses = Language('ses', 'ကိုရာဘိုရို ဆမ်နီ');
+  static const _sg = Language('sg', 'ဆန်ဂို');
+  static const _sga = Language('sga', 'အိုင်းရစ် ဟောင်း');
+  static const _shi = Language('shi', 'တာချယ်လ်ဟစ်');
+  static const _shn = Language('shn', 'ရှမ်း');
+  static const _si = Language('si', 'စင်ဟာလာ');
+  static const _sk = Language('sk', 'ဆလိုဗက်');
+  static const _sl = Language('sl', 'ဆလိုဗေးနီးယား');
+  static const _slh = Language('slh', 'တောင် လာ့ရှုစတိ');
+  static const _sm = Language('sm', 'ဆမိုအာ');
+  static const _sma = Language('sma', 'တောင် ဆာမိ');
+  static const _smj = Language('smj', 'လူလီ ဆာမိ');
+  static const _smn = Language('smn', 'အီနာရီ ဆာမိ');
+  static const _sms = Language('sms', 'စခိုးလ် ဆာမိ');
+  static const _sn = Language('sn', 'ရှိုနာ');
+  static const _snk = Language('snk', 'ဆိုနင်ကေး');
+  static const _so = Language('so', 'ဆိုမာလီ');
+  static const _sq = Language('sq', 'အယ်လ်ဘေးနီးယား');
+  static const _sr = Language('sr', 'ဆားဘီးယား');
+  static const _srn = Language('srn', 'ဆရာနန် တွန်ဂို');
+  static const _ss = Language('ss', 'ဆွာဇီလန်');
+  static const _ssy = Language('ssy', 'ဆာဟို');
+  static const _st = Language('st', 'တောင်ပိုင်း ဆိုသို');
+  static const _str = Language('str', 'ဆဲလစ်ရှ် ရေလက်ကြား');
+  static const _su = Language('su', 'ဆူဒန်');
+  static const _suk = Language('suk', 'ဆူကူမာ');
+  static const _sv = Language('sv', 'ဆွီဒင်');
+  static const _sw = Language('sw', 'ဆွာဟီလီ');
+  static const _swCD = Language('sw-CD', 'ကွန်ဂို ဆွာဟီလီ');
+  static const _swb = Language('swb', 'ကိုမိုရီးယန်း');
+  static const _syr = Language('syr', 'ဆီးရီးယား');
+  static const _szl = Language('szl', 'စလီရှန်');
+  static const _ta = Language('ta', 'တမီးလ်');
+  static const _tce = Language('tce', 'တောင် တပ်ချွန်');
+  static const _te = Language('te', 'တီလီဂူ');
+  static const _tem = Language('tem', 'တင်မ်နဲ');
+  static const _teo = Language('teo', 'တီဆို');
+  static const _tet = Language('tet', 'တီတွမ်');
+  static const _tg = Language('tg', 'တာဂျစ်');
+  static const _tgx = Language('tgx', 'တာဂစ်ရှ်');
+  static const _th = Language('th', 'ထိုင်း');
+  static const _tht = Language('tht', 'တဟီတန်');
+  static const _ti = Language('ti', 'တီဂ်ရင်ယာ');
+  static const _tig = Language('tig', 'တီဂရီ');
+  static const _tk = Language('tk', 'တာ့ခ်မင်နစ္စတန်');
+  static const _tlh = Language('tlh', 'ကလင်ဂွန်');
+  static const _tli = Language('tli', 'တလင်းဂစ်');
+  static const _tn = Language('tn', 'တီဆဝါနာ');
+  static const _to = Language('to', 'တွန်ဂါ');
+  static const _tok = Language('tok', 'တိုကီပိုနာ');
+  static const _tpi = Language('tpi', 'တော့ခ် ပိစင်');
+  static const _tr = Language('tr', 'တူရကီ');
+  static const _trv = Language('trv', 'တရိုကို');
+  static const _ts = Language('ts', 'ဆွန်ဂါ');
+  static const _tt = Language('tt', 'တာတာ');
+  static const _ttm = Language('ttm', 'မြောက် တပ်ချွန်');
+  static const _tum = Language('tum', 'တမ်ဘူကာ');
+  static const _tvl = Language('tvl', 'တူဗာလူ');
+  static const _twq = Language('twq', 'တာဆာဝါချ');
+  static const _ty = Language('ty', 'တဟီတီ');
+  static const _tyv = Language('tyv', 'တူဗန်');
+  static const _tzm = Language('tzm', 'အလယ်အာ့တလာစ် တာမာဇိုက်');
+  static const _udm = Language('udm', 'အူမူရတ်');
+  static const _ug = Language('ug', 'ဝီဂါ');
+  static const _uk = Language('uk', 'ယူကရိန်း');
+  static const _umb = Language('umb', 'အူဘန်ဒူ');
+  static const _und = Language('und', 'မသိသော ဘာသာ');
+  static const _ur = Language('ur', 'အူရ်ဒူ');
+  static const _uz = Language('uz', 'ဥဇဘတ်');
+  static const _vai = Language('vai', 'ဗိုင်');
+  static const _ve = Language('ve', 'ဗင်န်ဒါ');
+  static const _vec = Language('vec', 'ဗနီးရှန်');
+  static const _vi = Language('vi', 'ဗီယက်နမ်');
+  static const _vmw = Language('vmw', 'မတ်ကူးဝါး');
+  static const _vo = Language('vo', 'ဗိုလာပိုက်');
+  static const _vun = Language('vun', 'ဗွန်ဂျို');
+  static const _wa = Language('wa', 'ဝါလူးန်');
+  static const _wae = Language('wae', 'ဝေါလ်ဆာ');
+  static const _wal = Language('wal', 'ဝိုလက်တာ');
+  static const _war = Language('war', 'ဝါရေး');
+  static const _wbp = Language('wbp', 'ဝေါလ်ပီရီ');
+  static const _wo = Language('wo', 'ဝူလိုဖ်');
+  static const _wuu = Language('wuu', 'ဝူ တရုတ်');
+  static const _xal = Language('xal', 'ကာလ်မိုက်');
+  static const _xh = Language('xh', 'ဇိုစာ');
+  static const _xnr = Language('xnr', 'ခန်းဂရီ');
+  static const _xog = Language('xog', 'ဆိုဂါ');
+  static const _yav = Language('yav', 'ရန်ဘဲန်');
+  static const _ybb = Language('ybb', 'ရမ်ဘာ');
+  static const _yi = Language('yi', 'ရဟူဒီ');
+  static const _yo = Language('yo', 'ယိုရူဘာ');
+  static const _yrl = Language('yrl', 'အန်ဟင်းဂတူ');
+  static const _yue = Language('yue', 'ကွမ်းတုံ', menu: 'တရုတ်/ ကွမ်းတုံ');
+  static const _za = Language('za', 'ဂျွမ်');
+  static const _zgh = Language('zgh', 'မိုရိုကို တမဇိုက်');
+  static const _zh = Language('zh', 'တရုတ်', menu: 'ပြည်ကြီးတရုတ်');
+  static const _zu = Language('zu', 'ဇူးလူး');
+  static const _zun = Language('zun', 'ဇူနီ');
+  static const _zxx = Language('zxx', 'ဘာသာစကားနှင့် ပတ်သက်သောအရာ မရှိပါ');
+  static const _zza = Language('zza', 'ဇာဇာ');
 
   @override
-  Territory get world => Territory(
-        '001',
-        'ကမ္ဘာ',
-      );
+  final unknownLanguage = _und;
+  @override
+  final aa = _aa;
+  @override
+  final ab = _ab;
+  @override
+  final ace = _ace;
+  @override
+  final ach = _und;
+  @override
+  final ada = _ada;
+  @override
+  final ady = _ady;
+  @override
+  final ae = _und;
+  @override
+  final aeb = _und;
+  @override
+  final af = _af;
+  @override
+  final afh = _und;
+  @override
+  final agq = _agq;
+  @override
+  final ain = _ain;
+  @override
+  final ak = _ak;
+  @override
+  final akk = _und;
+  @override
+  final akz = _und;
+  @override
+  final ale = _ale;
+  @override
+  final aln = _und;
+  @override
+  final alt = _alt;
+  @override
+  final am = _am;
+  @override
+  final an = _an;
+  @override
+  final ang = _ang;
+  @override
+  final ann = _ann;
+  @override
+  final anp = _anp;
+  @override
+  final ar = _ar;
+  @override
+  final ar001 = _ar001;
+  @override
+  final arc = _und;
+  @override
+  final arn = _arn;
+  @override
+  final aro = _und;
+  @override
+  final arp = _arp;
+  @override
+  final arq = _und;
+  @override
+  final ars = _ars;
+  @override
+  final arw = _und;
+  @override
+  final ary = _und;
+  @override
+  final arz = _und;
+  @override
+  final $as = _$as;
+  @override
+  final asa = _asa;
+  @override
+  final ase = _und;
+  @override
+  final ast = _ast;
+  @override
+  final atj = _atj;
+  @override
+  final av = _av;
+  @override
+  final avk = _und;
+  @override
+  final awa = _awa;
+  @override
+  final ay = _ay;
+  @override
+  final az = _az;
+  @override
+  final ba = _ba;
+  @override
+  final bal = _und;
+  @override
+  final ban = _ban;
+  @override
+  final bar = _und;
+  @override
+  final bas = _bas;
+  @override
+  final bax = _und;
+  @override
+  final bbc = _und;
+  @override
+  final bbj = _und;
+  @override
+  final be = _be;
+  @override
+  final bej = _und;
+  @override
+  final bem = _bem;
+  @override
+  final bew = _und;
+  @override
+  final bez = _bez;
+  @override
+  final bfd = _und;
+  @override
+  final bfq = _und;
+  @override
+  final bg = _bg;
+  @override
+  final bgc = _bgc;
+  @override
+  final bgn = _bgn;
+  @override
+  final bho = _bho;
+  @override
+  final bi = _bi;
+  @override
+  final bik = _und;
+  @override
+  final bin = _bin;
+  @override
+  final bjn = _und;
+  @override
+  final bkm = _und;
+  @override
+  final bla = _bla;
+  @override
+  final blo = _blo;
+  @override
+  final blt = _und;
+  @override
+  final bm = _bm;
+  @override
+  final bn = _bn;
+  @override
+  final bo = _bo;
+  @override
+  final bpy = _und;
+  @override
+  final bqi = _und;
+  @override
+  final br = _br;
+  @override
+  final bra = _und;
+  @override
+  final brh = _und;
+  @override
+  final brx = _brx;
+  @override
+  final bs = _bs;
+  @override
+  final bss = _und;
+  @override
+  final bua = _und;
+  @override
+  final bug = _bug;
+  @override
+  final bum = _und;
+  @override
+  final byn = _byn;
+  @override
+  final byv = _und;
+  @override
+  final ca = _ca;
+  @override
+  final cad = _und;
+  @override
+  final car = _und;
+  @override
+  final cay = _cay;
+  @override
+  final cch = _und;
+  @override
+  final ccp = _ccp;
+  @override
+  final ce = _ce;
+  @override
+  final ceb = _ceb;
+  @override
+  final cgg = _cgg;
+  @override
+  final ch = _ch;
+  @override
+  final chb = _und;
+  @override
+  final chg = _und;
+  @override
+  final chk = _chk;
+  @override
+  final chm = _chm;
+  @override
+  final chn = _und;
+  @override
+  final cho = _cho;
+  @override
+  final chp = _chp;
+  @override
+  final chr = _chr;
+  @override
+  final chy = _chy;
+  @override
+  final cic = _und;
+  @override
+  final ckb = _ckb;
+  @override
+  final clc = _clc;
+  @override
+  final co = _co;
+  @override
+  final cop = _und;
+  @override
+  final cps = _und;
+  @override
+  final cr = _cr;
+  @override
+  final crg = _crg;
+  @override
+  final crh = _und;
+  @override
+  final crj = _crj;
+  @override
+  final crk = _crk;
+  @override
+  final crl = _crl;
+  @override
+  final crm = _crm;
+  @override
+  final crr = _crr;
+  @override
+  final crs = _crs;
+  @override
+  final cs = _cs;
+  @override
+  final csb = _und;
+  @override
+  final csw = _csw;
+  @override
+  final cu = _cu;
+  @override
+  final cv = _cv;
+  @override
+  final cwd = _und;
+  @override
+  final cy = _cy;
+  @override
+  final da = _da;
+  @override
+  final dak = _dak;
+  @override
+  final dar = _dar;
+  @override
+  final dav = _dav;
+  @override
+  final de = _de;
+  @override
+  final deAT = _deAT;
+  @override
+  final deCH = _deCH;
+  @override
+  final del = _del;
+  @override
+  final den = _und;
+  @override
+  final dgr = _dgr;
+  @override
+  final din = _und;
+  @override
+  final dje = _dje;
+  @override
+  final doi = _doi;
+  @override
+  final dsb = _dsb;
+  @override
+  final dtp = _und;
+  @override
+  final dua = _dua;
+  @override
+  final dum = _dum;
+  @override
+  final dv = _dv;
+  @override
+  final dyo = _dyo;
+  @override
+  final dyu = _und;
+  @override
+  final dz = _dz;
+  @override
+  final dzg = _dzg;
+  @override
+  final ebu = _ebu;
+  @override
+  final ee = _ee;
+  @override
+  final efi = _efi;
+  @override
+  final egl = _und;
+  @override
+  final egy = _egy;
+  @override
+  final eka = _eka;
+  @override
+  final el = _el;
+  @override
+  final elx = _und;
+  @override
+  final en = _en;
+  @override
+  final enAU = _enAU;
+  @override
+  final enCA = _enCA;
+  @override
+  final enGB = _enGB;
+  @override
+  final enUS = _enUS;
+  @override
+  final enm = _enm;
+  @override
+  final eo = _eo;
+  @override
+  final es = _es;
+  @override
+  final es419 = _und;
+  @override
+  final esES = _esES;
+  @override
+  final esMX = _esMX;
+  @override
+  final esu = _und;
+  @override
+  final et = _et;
+  @override
+  final eu = _eu;
+  @override
+  final ewo = _ewo;
+  @override
+  final ext = _und;
+  @override
+  final fa = _fa;
+  @override
+  final faAF = _faAF;
+  @override
+  final fan = _und;
+  @override
+  final fat = _und;
+  @override
+  final ff = _ff;
+  @override
+  final fi = _fi;
+  @override
+  final fil = _fil;
+  @override
+  final fit = _und;
+  @override
+  final fj = _fj;
+  @override
+  final fo = _fo;
+  @override
+  final fon = _fon;
+  @override
+  final fr = _fr;
+  @override
+  final frCA = _frCA;
+  @override
+  final frCH = _frCH;
+  @override
+  final frc = _frc;
+  @override
+  final frm = _frm;
+  @override
+  final fro = _fro;
+  @override
+  final frp = _und;
+  @override
+  final frr = _frr;
+  @override
+  final frs = _frs;
+  @override
+  final fur = _fur;
+  @override
+  final fy = _fy;
+  @override
+  final ga = _ga;
+  @override
+  final gaa = _gaa;
+  @override
+  final gag = _gag;
+  @override
+  final gan = _und;
+  @override
+  final gay = _und;
+  @override
+  final gba = _und;
+  @override
+  final gbz = _und;
+  @override
+  final gd = _gd;
+  @override
+  final gez = _gez;
+  @override
+  final gil = _gil;
+  @override
+  final gl = _gl;
+  @override
+  final glk = _und;
+  @override
+  final gmh = _gmh;
+  @override
+  final gn = _gn;
+  @override
+  final goh = _und;
+  @override
+  final gon = _und;
+  @override
+  final gor = _gor;
+  @override
+  final got = _und;
+  @override
+  final grb = _und;
+  @override
+  final grc = _grc;
+  @override
+  final gsw = _gsw;
+  @override
+  final gu = _gu;
+  @override
+  final guc = _und;
+  @override
+  final gur = _und;
+  @override
+  final guz = _guz;
+  @override
+  final gv = _gv;
+  @override
+  final gwi = _gwi;
+  @override
+  final ha = _ha;
+  @override
+  final hai = _hai;
+  @override
+  final hak = _und;
+  @override
+  final haw = _haw;
+  @override
+  final hax = _hax;
+  @override
+  final hdn = _und;
+  @override
+  final he = _he;
+  @override
+  final hi = _hi;
+  @override
+  final hiLatn = _hiLatn;
+  @override
+  final hif = _und;
+  @override
+  final hil = _hil;
+  @override
+  final hit = _und;
+  @override
+  final hmn = _hmn;
+  @override
+  final hnj = _und;
+  @override
+  final ho = _und;
+  @override
+  final hr = _hr;
+  @override
+  final hsb = _hsb;
+  @override
+  final hsn = _und;
+  @override
+  final ht = _ht;
+  @override
+  final hu = _hu;
+  @override
+  final hup = _hup;
+  @override
+  final hur = _hur;
+  @override
+  final hy = _hy;
+  @override
+  final hz = _hz;
+  @override
+  final ia = _ia;
+  @override
+  final iba = _iba;
+  @override
+  final ibb = _ibb;
+  @override
+  final id = _id;
+  @override
+  final ie = _ie;
+  @override
+  final ig = _ig;
+  @override
+  final ii = _ii;
+  @override
+  final ik = _und;
+  @override
+  final ike = _und;
+  @override
+  final ikt = _ikt;
+  @override
+  final ilo = _ilo;
+  @override
+  final inh = _inh;
+  @override
+  final io = _io;
+  @override
+  final $is = _$is;
+  @override
+  final it = _it;
+  @override
+  final iu = _iu;
+  @override
+  final izh = _und;
+  @override
+  final ja = _ja;
+  @override
+  final jam = _und;
+  @override
+  final jbo = _jbo;
+  @override
+  final jgo = _jgo;
+  @override
+  final jmc = _jmc;
+  @override
+  final jpr = _jpr;
+  @override
+  final jrb = _jrb;
+  @override
+  final jut = _und;
+  @override
+  final jv = _jv;
+  @override
+  final ka = _ka;
+  @override
+  final kaa = _und;
+  @override
+  final kab = _kab;
+  @override
+  final kac = _kac;
+  @override
+  final kaj = _kaj;
+  @override
+  final kam = _kam;
+  @override
+  final kaw = _und;
+  @override
+  final kbd = _kbd;
+  @override
+  final kbl = _und;
+  @override
+  final kcg = _kcg;
+  @override
+  final kde = _kde;
+  @override
+  final kea = _kea;
+  @override
+  final ken = _und;
+  @override
+  final kfo = _kfo;
+  @override
+  final kg = _kg;
+  @override
+  final kgp = _kgp;
+  @override
+  final kha = _kha;
+  @override
+  final kho = _und;
+  @override
+  final khq = _khq;
+  @override
+  final khw = _und;
+  @override
+  final ki = _ki;
+  @override
+  final kiu = _und;
+  @override
+  final kj = _kj;
+  @override
+  final kk = _kk;
+  @override
+  final kkj = _kkj;
+  @override
+  final kl = _kl;
+  @override
+  final kln = _kln;
+  @override
+  final km = _km;
+  @override
+  final kmb = _kmb;
+  @override
+  final kn = _kn;
+  @override
+  final ko = _ko;
+  @override
+  final koi = _koi;
+  @override
+  final kok = _kok;
+  @override
+  final kos = _und;
+  @override
+  final kpe = _kpe;
+  @override
+  final kr = _kr;
+  @override
+  final krc = _krc;
+  @override
+  final kri = _und;
+  @override
+  final krj = _und;
+  @override
+  final krl = _krl;
+  @override
+  final kru = _kru;
+  @override
+  final ks = _ks;
+  @override
+  final ksb = _ksb;
+  @override
+  final ksf = _ksf;
+  @override
+  final ksh = _ksh;
+  @override
+  final ku = _ku;
+  @override
+  final kum = _kum;
+  @override
+  final kut = _und;
+  @override
+  final kv = _kv;
+  @override
+  final kw = _kw;
+  @override
+  final kwk = _kwk;
+  @override
+  final kxv = _kxv;
+  @override
+  final ky = _ky;
+  @override
+  final la = _la;
+  @override
+  final lad = _lad;
+  @override
+  final lag = _lag;
+  @override
+  final lah = _und;
+  @override
+  final lam = _und;
+  @override
+  final lb = _lb;
+  @override
+  final lez = _lez;
+  @override
+  final lfn = _und;
+  @override
+  final lg = _lg;
+  @override
+  final li = _li;
+  @override
+  final lij = _lij;
+  @override
+  final lil = _lil;
+  @override
+  final liv = _und;
+  @override
+  final lkt = _lkt;
+  @override
+  final lmo = _lmo;
+  @override
+  final ln = _ln;
+  @override
+  final lo = _lo;
+  @override
+  final lol = _und;
+  @override
+  final lou = _lou;
+  @override
+  final loz = _loz;
+  @override
+  final lrc = _lrc;
+  @override
+  final lsm = _lsm;
+  @override
+  final lt = _lt;
+  @override
+  final ltg = _und;
+  @override
+  final lu = _lu;
+  @override
+  final lua = _lua;
+  @override
+  final lui = _und;
+  @override
+  final lun = _lun;
+  @override
+  final luo = _luo;
+  @override
+  final lus = _lus;
+  @override
+  final luy = _luy;
+  @override
+  final lv = _lv;
+  @override
+  final lzh = _und;
+  @override
+  final lzz = _und;
+  @override
+  final mad = _mad;
+  @override
+  final maf = _und;
+  @override
+  final mag = _mag;
+  @override
+  final mai = _mai;
+  @override
+  final mak = _mak;
+  @override
+  final man = _und;
+  @override
+  final mas = _mas;
+  @override
+  final mde = _und;
+  @override
+  final mdf = _mdf;
+  @override
+  final mdr = _und;
+  @override
+  final men = _men;
+  @override
+  final mer = _mer;
+  @override
+  final mfe = _mfe;
+  @override
+  final mg = _mg;
+  @override
+  final mga = _mga;
+  @override
+  final mgh = _mgh;
+  @override
+  final mgo = _mgo;
+  @override
+  final mh = _mh;
+  @override
+  final mi = _mi;
+  @override
+  final mic = _mic;
+  @override
+  final min = _min;
+  @override
+  final mk = _mk;
+  @override
+  final ml = _ml;
+  @override
+  final mn = _mn;
+  @override
+  final mnc = _mnc;
+  @override
+  final mni = _mni;
+  @override
+  final moe = _moe;
+  @override
+  final moh = _moh;
+  @override
+  final mos = _mos;
+  @override
+  final mr = _mr;
+  @override
+  final mrj = _und;
+  @override
+  final ms = _ms;
+  @override
+  final mt = _mt;
+  @override
+  final mua = _mua;
+  @override
+  final mul = _mul;
+  @override
+  final mus = _mus;
+  @override
+  final mwl = _mwl;
+  @override
+  final mwr = _und;
+  @override
+  final mwv = _und;
+  @override
+  final my = _my;
+  @override
+  final mye = _und;
+  @override
+  final myv = _myv;
+  @override
+  final mzn = _mzn;
+  @override
+  final na = _na;
+  @override
+  final nan = _und;
+  @override
+  final nap = _nap;
+  @override
+  final naq = _naq;
+  @override
+  final nb = _nb;
+  @override
+  final nd = _nd;
+  @override
+  final nds = _nds;
+  @override
+  final ndsNL = _ndsNL;
+  @override
+  final ne = _ne;
+  @override
+  final $new = _$new;
+  @override
+  final ng = _ng;
+  @override
+  final nia = _nia;
+  @override
+  final niu = _niu;
+  @override
+  final njo = _und;
+  @override
+  final nl = _nl;
+  @override
+  final nlBE = _nlBE;
+  @override
+  final nmg = _nmg;
+  @override
+  final nn = _nn;
+  @override
+  final nnh = _nnh;
+  @override
+  final no = _no;
+  @override
+  final nog = _nog;
+  @override
+  final non = _und;
+  @override
+  final nov = _und;
+  @override
+  final nqo = _nqo;
+  @override
+  final nr = _nr;
+  @override
+  final nso = _nso;
+  @override
+  final nus = _nus;
+  @override
+  final nv = _nv;
+  @override
+  final nwc = _und;
+  @override
+  final ny = _ny;
+  @override
+  final nym = _und;
+  @override
+  final nyn = _nyn;
+  @override
+  final nyo = _und;
+  @override
+  final nzi = _und;
+  @override
+  final oc = _oc;
+  @override
+  final oj = _und;
+  @override
+  final ojb = _ojb;
+  @override
+  final ojc = _ojc;
+  @override
+  final ojg = _und;
+  @override
+  final ojs = _ojs;
+  @override
+  final ojw = _ojw;
+  @override
+  final oka = _oka;
+  @override
+  final om = _om;
+  @override
+  final or = _or;
+  @override
+  final os = _os;
+  @override
+  final osa = _und;
+  @override
+  final ota = _und;
+  @override
+  final pa = _pa;
+  @override
+  final pag = _pag;
+  @override
+  final pal = _und;
+  @override
+  final pam = _pam;
+  @override
+  final pap = _pap;
+  @override
+  final pau = _pau;
+  @override
+  final pcd = _und;
+  @override
+  final pcm = _pcm;
+  @override
+  final pdc = _und;
+  @override
+  final pdt = _und;
+  @override
+  final peo = _peo;
+  @override
+  final pfl = _und;
+  @override
+  final phn = _und;
+  @override
+  final pi = _pi;
+  @override
+  final pis = _pis;
+  @override
+  final pl = _pl;
+  @override
+  final pms = _und;
+  @override
+  final pnt = _und;
+  @override
+  final pon = _und;
+  @override
+  final pqm = _pqm;
+  @override
+  final prg = _prg;
+  @override
+  final pro = _und;
+  @override
+  final ps = _ps;
+  @override
+  final pt = _pt;
+  @override
+  final ptBR = _ptBR;
+  @override
+  final ptPT = _ptPT;
+  @override
+  final qu = _qu;
+  @override
+  final quc = _quc;
+  @override
+  final qug = _und;
+  @override
+  final raj = _raj;
+  @override
+  final rap = _rap;
+  @override
+  final rar = _rar;
+  @override
+  final rgn = _und;
+  @override
+  final rhg = _rhg;
+  @override
+  final rif = _und;
+  @override
+  final rm = _rm;
+  @override
+  final rn = _rn;
+  @override
+  final ro = _ro;
+  @override
+  final roMD = _roMD;
+  @override
+  final rof = _rof;
+  @override
+  final rom = _und;
+  @override
+  final rtm = _und;
+  @override
+  final ru = _ru;
+  @override
+  final rue = _und;
+  @override
+  final rug = _und;
+  @override
+  final rup = _rup;
+  @override
+  final rw = _rw;
+  @override
+  final rwk = _rwk;
+  @override
+  final sa = _sa;
+  @override
+  final sad = _sad;
+  @override
+  final sah = _sah;
+  @override
+  final sam = _und;
+  @override
+  final saq = _saq;
+  @override
+  final sas = _und;
+  @override
+  final sat = _sat;
+  @override
+  final saz = _und;
+  @override
+  final sba = _sba;
+  @override
+  final sbp = _sbp;
+  @override
+  final sc = _sc;
+  @override
+  final scn = _scn;
+  @override
+  final sco = _sco;
+  @override
+  final sd = _sd;
+  @override
+  final sdc = _und;
+  @override
+  final sdh = _und;
+  @override
+  final se = _se;
+  @override
+  final see = _und;
+  @override
+  final seh = _seh;
+  @override
+  final sei = _und;
+  @override
+  final sel = _und;
+  @override
+  final ses = _ses;
+  @override
+  final sg = _sg;
+  @override
+  final sga = _sga;
+  @override
+  final sgs = _und;
+  @override
+  final sh = _und;
+  @override
+  final shi = _shi;
+  @override
+  final shn = _shn;
+  @override
+  final shu = _und;
+  @override
+  final si = _si;
+  @override
+  final sid = _und;
+  @override
+  final sk = _sk;
+  @override
+  final sl = _sl;
+  @override
+  final slh = _slh;
+  @override
+  final sli = _und;
+  @override
+  final sly = _und;
+  @override
+  final sm = _sm;
+  @override
+  final sma = _sma;
+  @override
+  final smj = _smj;
+  @override
+  final smn = _smn;
+  @override
+  final sms = _sms;
+  @override
+  final sn = _sn;
+  @override
+  final snk = _snk;
+  @override
+  final so = _so;
+  @override
+  final sog = _und;
+  @override
+  final sq = _sq;
+  @override
+  final sr = _sr;
+  @override
+  final srME = _und;
+  @override
+  final srn = _srn;
+  @override
+  final srr = _und;
+  @override
+  final ss = _ss;
+  @override
+  final ssy = _ssy;
+  @override
+  final st = _st;
+  @override
+  final stq = _und;
+  @override
+  final str = _str;
+  @override
+  final su = _su;
+  @override
+  final suk = _suk;
+  @override
+  final sus = _und;
+  @override
+  final sux = _und;
+  @override
+  final sv = _sv;
+  @override
+  final sw = _sw;
+  @override
+  final swCD = _swCD;
+  @override
+  final swb = _swb;
+  @override
+  final syc = _und;
+  @override
+  final syr = _syr;
+  @override
+  final szl = _szl;
+  @override
+  final ta = _ta;
+  @override
+  final tce = _tce;
+  @override
+  final tcy = _und;
+  @override
+  final te = _te;
+  @override
+  final tem = _tem;
+  @override
+  final teo = _teo;
+  @override
+  final ter = _und;
+  @override
+  final tet = _tet;
+  @override
+  final tg = _tg;
+  @override
+  final tgx = _tgx;
+  @override
+  final th = _th;
+  @override
+  final tht = _tht;
+  @override
+  final ti = _ti;
+  @override
+  final tig = _tig;
+  @override
+  final tiv = _und;
+  @override
+  final tk = _tk;
+  @override
+  final tkl = _und;
+  @override
+  final tkr = _und;
+  @override
+  final tl = _und;
+  @override
+  final tlh = _tlh;
+  @override
+  final tli = _tli;
+  @override
+  final tly = _und;
+  @override
+  final tmh = _und;
+  @override
+  final tn = _tn;
+  @override
+  final to = _to;
+  @override
+  final tog = _und;
+  @override
+  final tok = _tok;
+  @override
+  final tpi = _tpi;
+  @override
+  final tr = _tr;
+  @override
+  final tru = _und;
+  @override
+  final trv = _trv;
+  @override
+  final trw = _und;
+  @override
+  final ts = _ts;
+  @override
+  final tsd = _und;
+  @override
+  final tsi = _und;
+  @override
+  final tt = _tt;
+  @override
+  final ttm = _ttm;
+  @override
+  final ttt = _und;
+  @override
+  final tum = _tum;
+  @override
+  final tvl = _tvl;
+  @override
+  final tw = _und;
+  @override
+  final twq = _twq;
+  @override
+  final ty = _ty;
+  @override
+  final tyv = _tyv;
+  @override
+  final tzm = _tzm;
+  @override
+  final udm = _udm;
+  @override
+  final ug = _ug;
+  @override
+  final uga = _und;
+  @override
+  final uk = _uk;
+  @override
+  final umb = _umb;
+  @override
+  final und = _und;
+  @override
+  final ur = _ur;
+  @override
+  final uz = _uz;
+  @override
+  final vai = _vai;
+  @override
+  final ve = _ve;
+  @override
+  final vec = _vec;
+  @override
+  final vep = _und;
+  @override
+  final vi = _vi;
+  @override
+  final vls = _und;
+  @override
+  final vmf = _und;
+  @override
+  final vmw = _vmw;
+  @override
+  final vo = _vo;
+  @override
+  final vot = _und;
+  @override
+  final vro = _und;
+  @override
+  final vun = _vun;
+  @override
+  final wa = _wa;
+  @override
+  final wae = _wae;
+  @override
+  final wal = _wal;
+  @override
+  final war = _war;
+  @override
+  final was = _und;
+  @override
+  final wbp = _wbp;
+  @override
+  final wo = _wo;
+  @override
+  final wuu = _wuu;
+  @override
+  final xal = _xal;
+  @override
+  final xh = _xh;
+  @override
+  final xmf = _und;
+  @override
+  final xnr = _xnr;
+  @override
+  final xog = _xog;
+  @override
+  final yao = _und;
+  @override
+  final yap = _und;
+  @override
+  final yav = _yav;
+  @override
+  final ybb = _ybb;
+  @override
+  final yi = _yi;
+  @override
+  final yo = _yo;
+  @override
+  final yrl = _yrl;
+  @override
+  final yue = _yue;
+  @override
+  final za = _za;
+  @override
+  final zap = _und;
+  @override
+  final zbl = _und;
+  @override
+  final zea = _und;
+  @override
+  final zen = _und;
+  @override
+  final zgh = _zgh;
+  @override
+  final zh = _zh;
+  @override
+  final zhHans = _und;
+  @override
+  final zhHant = _und;
+  @override
+  final zu = _zu;
+  @override
+  final zun = _zun;
+  @override
+  final zxx = _zxx;
+  @override
+  final zza = _zza;
 
   @override
-  Territory get africa => Territory(
-        '002',
-        'အာဖရိက',
-      );
+  final languages = const {
+    'aa': _aa,
+    'ab': _ab,
+    'ace': _ace,
+    'ada': _ada,
+    'ady': _ady,
+    'af': _af,
+    'agq': _agq,
+    'ain': _ain,
+    'ak': _ak,
+    'ale': _ale,
+    'alt': _alt,
+    'am': _am,
+    'an': _an,
+    'ang': _ang,
+    'ann': _ann,
+    'anp': _anp,
+    'ar': _ar,
+    'ar-001': _ar001,
+    'arn': _arn,
+    'arp': _arp,
+    'ars': _ars,
+    'as': _$as,
+    'asa': _asa,
+    'ast': _ast,
+    'atj': _atj,
+    'av': _av,
+    'awa': _awa,
+    'ay': _ay,
+    'az': _az,
+    'ba': _ba,
+    'ban': _ban,
+    'bas': _bas,
+    'be': _be,
+    'bem': _bem,
+    'bez': _bez,
+    'bg': _bg,
+    'bgc': _bgc,
+    'bgn': _bgn,
+    'bho': _bho,
+    'bi': _bi,
+    'bin': _bin,
+    'bla': _bla,
+    'blo': _blo,
+    'bm': _bm,
+    'bn': _bn,
+    'bo': _bo,
+    'br': _br,
+    'brx': _brx,
+    'bs': _bs,
+    'bug': _bug,
+    'byn': _byn,
+    'ca': _ca,
+    'cay': _cay,
+    'ccp': _ccp,
+    'ce': _ce,
+    'ceb': _ceb,
+    'cgg': _cgg,
+    'ch': _ch,
+    'chk': _chk,
+    'chm': _chm,
+    'cho': _cho,
+    'chp': _chp,
+    'chr': _chr,
+    'chy': _chy,
+    'ckb': _ckb,
+    'clc': _clc,
+    'co': _co,
+    'cr': _cr,
+    'crg': _crg,
+    'crj': _crj,
+    'crk': _crk,
+    'crl': _crl,
+    'crm': _crm,
+    'crr': _crr,
+    'crs': _crs,
+    'cs': _cs,
+    'csw': _csw,
+    'cu': _cu,
+    'cv': _cv,
+    'cy': _cy,
+    'da': _da,
+    'dak': _dak,
+    'dar': _dar,
+    'dav': _dav,
+    'de': _de,
+    'de-AT': _deAT,
+    'de-CH': _deCH,
+    'del': _del,
+    'dgr': _dgr,
+    'dje': _dje,
+    'doi': _doi,
+    'dsb': _dsb,
+    'dua': _dua,
+    'dum': _dum,
+    'dv': _dv,
+    'dyo': _dyo,
+    'dz': _dz,
+    'dzg': _dzg,
+    'ebu': _ebu,
+    'ee': _ee,
+    'efi': _efi,
+    'egy': _egy,
+    'eka': _eka,
+    'el': _el,
+    'en': _en,
+    'en-AU': _enAU,
+    'en-CA': _enCA,
+    'en-GB': _enGB,
+    'en-US': _enUS,
+    'enm': _enm,
+    'eo': _eo,
+    'es': _es,
+    'es-ES': _esES,
+    'es-MX': _esMX,
+    'et': _et,
+    'eu': _eu,
+    'ewo': _ewo,
+    'fa': _fa,
+    'fa-AF': _faAF,
+    'ff': _ff,
+    'fi': _fi,
+    'fil': _fil,
+    'fj': _fj,
+    'fo': _fo,
+    'fon': _fon,
+    'fr': _fr,
+    'fr-CA': _frCA,
+    'fr-CH': _frCH,
+    'frc': _frc,
+    'frm': _frm,
+    'fro': _fro,
+    'frr': _frr,
+    'frs': _frs,
+    'fur': _fur,
+    'fy': _fy,
+    'ga': _ga,
+    'gaa': _gaa,
+    'gag': _gag,
+    'gd': _gd,
+    'gez': _gez,
+    'gil': _gil,
+    'gl': _gl,
+    'gmh': _gmh,
+    'gn': _gn,
+    'gor': _gor,
+    'grc': _grc,
+    'gsw': _gsw,
+    'gu': _gu,
+    'guz': _guz,
+    'gv': _gv,
+    'gwi': _gwi,
+    'ha': _ha,
+    'hai': _hai,
+    'haw': _haw,
+    'hax': _hax,
+    'he': _he,
+    'hi': _hi,
+    'hi-Latn': _hiLatn,
+    'hil': _hil,
+    'hmn': _hmn,
+    'hr': _hr,
+    'hsb': _hsb,
+    'ht': _ht,
+    'hu': _hu,
+    'hup': _hup,
+    'hur': _hur,
+    'hy': _hy,
+    'hz': _hz,
+    'ia': _ia,
+    'iba': _iba,
+    'ibb': _ibb,
+    'id': _id,
+    'ie': _ie,
+    'ig': _ig,
+    'ii': _ii,
+    'ikt': _ikt,
+    'ilo': _ilo,
+    'inh': _inh,
+    'io': _io,
+    'is': _$is,
+    'it': _it,
+    'iu': _iu,
+    'ja': _ja,
+    'jbo': _jbo,
+    'jgo': _jgo,
+    'jmc': _jmc,
+    'jpr': _jpr,
+    'jrb': _jrb,
+    'jv': _jv,
+    'ka': _ka,
+    'kab': _kab,
+    'kac': _kac,
+    'kaj': _kaj,
+    'kam': _kam,
+    'kbd': _kbd,
+    'kcg': _kcg,
+    'kde': _kde,
+    'kea': _kea,
+    'kfo': _kfo,
+    'kg': _kg,
+    'kgp': _kgp,
+    'kha': _kha,
+    'khq': _khq,
+    'ki': _ki,
+    'kj': _kj,
+    'kk': _kk,
+    'kkj': _kkj,
+    'kl': _kl,
+    'kln': _kln,
+    'km': _km,
+    'kmb': _kmb,
+    'kn': _kn,
+    'ko': _ko,
+    'koi': _koi,
+    'kok': _kok,
+    'kpe': _kpe,
+    'kr': _kr,
+    'krc': _krc,
+    'krl': _krl,
+    'kru': _kru,
+    'ks': _ks,
+    'ksb': _ksb,
+    'ksf': _ksf,
+    'ksh': _ksh,
+    'ku': _ku,
+    'kum': _kum,
+    'kv': _kv,
+    'kw': _kw,
+    'kwk': _kwk,
+    'kxv': _kxv,
+    'ky': _ky,
+    'la': _la,
+    'lad': _lad,
+    'lag': _lag,
+    'lb': _lb,
+    'lez': _lez,
+    'lg': _lg,
+    'li': _li,
+    'lij': _lij,
+    'lil': _lil,
+    'lkt': _lkt,
+    'lmo': _lmo,
+    'ln': _ln,
+    'lo': _lo,
+    'lou': _lou,
+    'loz': _loz,
+    'lrc': _lrc,
+    'lsm': _lsm,
+    'lt': _lt,
+    'lu': _lu,
+    'lua': _lua,
+    'lun': _lun,
+    'luo': _luo,
+    'lus': _lus,
+    'luy': _luy,
+    'lv': _lv,
+    'mad': _mad,
+    'mag': _mag,
+    'mai': _mai,
+    'mak': _mak,
+    'mas': _mas,
+    'mdf': _mdf,
+    'men': _men,
+    'mer': _mer,
+    'mfe': _mfe,
+    'mg': _mg,
+    'mga': _mga,
+    'mgh': _mgh,
+    'mgo': _mgo,
+    'mh': _mh,
+    'mi': _mi,
+    'mic': _mic,
+    'min': _min,
+    'mk': _mk,
+    'ml': _ml,
+    'mn': _mn,
+    'mnc': _mnc,
+    'mni': _mni,
+    'moe': _moe,
+    'moh': _moh,
+    'mos': _mos,
+    'mr': _mr,
+    'ms': _ms,
+    'mt': _mt,
+    'mua': _mua,
+    'mul': _mul,
+    'mus': _mus,
+    'mwl': _mwl,
+    'my': _my,
+    'myv': _myv,
+    'mzn': _mzn,
+    'na': _na,
+    'nap': _nap,
+    'naq': _naq,
+    'nb': _nb,
+    'nd': _nd,
+    'nds': _nds,
+    'nds-NL': _ndsNL,
+    'ne': _ne,
+    'new': _$new,
+    'ng': _ng,
+    'nia': _nia,
+    'niu': _niu,
+    'nl': _nl,
+    'nl-BE': _nlBE,
+    'nmg': _nmg,
+    'nn': _nn,
+    'nnh': _nnh,
+    'no': _no,
+    'nog': _nog,
+    'nqo': _nqo,
+    'nr': _nr,
+    'nso': _nso,
+    'nus': _nus,
+    'nv': _nv,
+    'ny': _ny,
+    'nyn': _nyn,
+    'oc': _oc,
+    'ojb': _ojb,
+    'ojc': _ojc,
+    'ojs': _ojs,
+    'ojw': _ojw,
+    'oka': _oka,
+    'om': _om,
+    'or': _or,
+    'os': _os,
+    'pa': _pa,
+    'pag': _pag,
+    'pam': _pam,
+    'pap': _pap,
+    'pau': _pau,
+    'pcm': _pcm,
+    'peo': _peo,
+    'pi': _pi,
+    'pis': _pis,
+    'pl': _pl,
+    'pqm': _pqm,
+    'prg': _prg,
+    'ps': _ps,
+    'pt': _pt,
+    'pt-BR': _ptBR,
+    'pt-PT': _ptPT,
+    'qu': _qu,
+    'quc': _quc,
+    'raj': _raj,
+    'rap': _rap,
+    'rar': _rar,
+    'rhg': _rhg,
+    'rm': _rm,
+    'rn': _rn,
+    'ro': _ro,
+    'ro-MD': _roMD,
+    'rof': _rof,
+    'ru': _ru,
+    'rup': _rup,
+    'rw': _rw,
+    'rwk': _rwk,
+    'sa': _sa,
+    'sad': _sad,
+    'sah': _sah,
+    'saq': _saq,
+    'sat': _sat,
+    'sba': _sba,
+    'sbp': _sbp,
+    'sc': _sc,
+    'scn': _scn,
+    'sco': _sco,
+    'sd': _sd,
+    'se': _se,
+    'seh': _seh,
+    'ses': _ses,
+    'sg': _sg,
+    'sga': _sga,
+    'shi': _shi,
+    'shn': _shn,
+    'si': _si,
+    'sk': _sk,
+    'sl': _sl,
+    'slh': _slh,
+    'sm': _sm,
+    'sma': _sma,
+    'smj': _smj,
+    'smn': _smn,
+    'sms': _sms,
+    'sn': _sn,
+    'snk': _snk,
+    'so': _so,
+    'sq': _sq,
+    'sr': _sr,
+    'srn': _srn,
+    'ss': _ss,
+    'ssy': _ssy,
+    'st': _st,
+    'str': _str,
+    'su': _su,
+    'suk': _suk,
+    'sv': _sv,
+    'sw': _sw,
+    'sw-CD': _swCD,
+    'swb': _swb,
+    'syr': _syr,
+    'szl': _szl,
+    'ta': _ta,
+    'tce': _tce,
+    'te': _te,
+    'tem': _tem,
+    'teo': _teo,
+    'tet': _tet,
+    'tg': _tg,
+    'tgx': _tgx,
+    'th': _th,
+    'tht': _tht,
+    'ti': _ti,
+    'tig': _tig,
+    'tk': _tk,
+    'tlh': _tlh,
+    'tli': _tli,
+    'tn': _tn,
+    'to': _to,
+    'tok': _tok,
+    'tpi': _tpi,
+    'tr': _tr,
+    'trv': _trv,
+    'ts': _ts,
+    'tt': _tt,
+    'ttm': _ttm,
+    'tum': _tum,
+    'tvl': _tvl,
+    'twq': _twq,
+    'ty': _ty,
+    'tyv': _tyv,
+    'tzm': _tzm,
+    'udm': _udm,
+    'ug': _ug,
+    'uk': _uk,
+    'umb': _umb,
+    'und': _und,
+    'ur': _ur,
+    'uz': _uz,
+    'vai': _vai,
+    've': _ve,
+    'vec': _vec,
+    'vi': _vi,
+    'vmw': _vmw,
+    'vo': _vo,
+    'vun': _vun,
+    'wa': _wa,
+    'wae': _wae,
+    'wal': _wal,
+    'war': _war,
+    'wbp': _wbp,
+    'wo': _wo,
+    'wuu': _wuu,
+    'xal': _xal,
+    'xh': _xh,
+    'xnr': _xnr,
+    'xog': _xog,
+    'yav': _yav,
+    'ybb': _ybb,
+    'yi': _yi,
+    'yo': _yo,
+    'yrl': _yrl,
+    'yue': _yue,
+    'za': _za,
+    'zgh': _zgh,
+    'zh': _zh,
+    'zu': _zu,
+    'zun': _zun,
+    'zxx': _zxx,
+    'zza': _zza,
+  };
+}
+
+class ScriptsMy extends Scripts {
+  const ScriptsMy._(super.cld);
+
+  static const _adlm = Script('Adlm', 'အက်ဒ်လမ်');
+  static const _arab = Script('Arab', 'အာရေဗျ');
+  static const _aran = Script('Aran', 'နက်စ်တာလိခ်');
+  static const _armn = Script('Armn', 'အာမေးနီးယား');
+  static const _beng = Script('Beng', 'ဘင်္ဂါလီ');
+  static const _bopo = Script('Bopo', 'ဘိုပို');
+  static const _brah = Script('Brah', 'ဗွဟ်မမီ');
+  static const _brai = Script('Brai', 'ဘရေ');
+  static const _cakm = Script('Cakm', 'ချပ်ခ်မာ');
+  static const _cans = Script('Cans', 'ကင်န်စ်');
+  static const _cher = Script('Cher', 'ချာရိုကီး');
+  static const _cyrl = Script('Cyrl', 'စစ်ရိလစ်');
+  static const _deva = Script('Deva', 'ဒီဗနာဂရီ');
+  static const _ethi = Script('Ethi', 'အီသီယိုးပီးယား');
+  static const _geor = Script('Geor', 'ဂျော်ဂျီယာ');
+  static const _grek = Script('Grek', 'ဂရိ');
+  static const _gujr = Script('Gujr', 'ဂုဂျာရသီ');
+  static const _guru = Script('Guru', 'ဂူရူ');
+  static const _hanb = Script('Hanb', 'ဟန်ဘ်');
+  static const _hang = Script('Hang', 'ဟန်ဂူးလ်');
+  static const _hani = Script('Hani', 'ဟန်');
+  static const _hans = Script('Hans', 'ရိုးရှင်း', standAlone: 'ဟန် ရိုးရှင်း');
+  static const _hant = Script('Hant', 'ရိုးရာ', standAlone: 'ဟန် ရိုးရာ');
+  static const _hebr = Script('Hebr', 'ဟီဗရူး');
+  static const _hira = Script('Hira', 'ဟီရဂန');
+  static const _hrkt = Script('Hrkt', 'ဂျပန် အက္ခရာ');
+  static const _jamo = Script('Jamo', 'ဂျမို');
+  static const _java = Script('Java', 'ဂျာဗားနီးစ်');
+  static const _jpan = Script('Jpan', 'ဂျပန်');
+  static const _kali = Script('Kali', 'ကယားလီ');
+  static const _kana = Script('Kana', 'ခတခန');
+  static const _khmr = Script('Khmr', 'ခမာ');
+  static const _knda = Script('Knda', 'ခန်နာဒါ');
+  static const _kore = Script('Kore', 'ကိုရီးယား');
+  static const _laoo = Script('Laoo', 'လာအို');
+  static const _latn = Script('Latn', 'လက်တင်');
+  static const _mlym = Script('Mlym', 'မလေယာလမ်');
+  static const _mong = Script('Mong', 'မွန်ဂိုလီးယား');
+  static const _mtei = Script('Mtei', 'မေတဲမာယက်');
+  static const _mymr = Script('Mymr', 'မြန်မာ');
+  static const _nkoo = Script('Nkoo', 'အွန်ကို');
+  static const _olck = Script('Olck', 'အိုလ်ချီကီ');
+  static const _orya = Script('Orya', 'အိုရာ');
+  static const _rohg = Script('Rohg', 'ဟာနီဖီ');
+  static const _sinh = Script('Sinh', 'ဆင်ဟာလ');
+  static const _sund = Script('Sund', 'ဆူဒန်');
+  static const _syrc = Script('Syrc', 'ဆီရီရက်ခ်');
+  static const _tale = Script('Tale', 'တိုင်လီ');
+  static const _taml = Script('Taml', 'တမီးလ်');
+  static const _telu = Script('Telu', 'တီလု');
+  static const _tfng = Script('Tfng', 'တီဖီနော');
+  static const _tglg = Script('Tglg', 'တဂလော့ဂ်');
+  static const _thaa = Script('Thaa', 'သာအ်');
+  static const _thai = Script('Thai', 'ထိုင်း');
+  static const _tibt = Script('Tibt', 'တိဘက်');
+  static const _vaii = Script('Vaii', 'ဗိုင်း');
+  static const _visp = Script('Visp', 'မြင်နိုင်သော စကား');
+  static const _xpeo = Script('Xpeo', 'ပါရှန် အဟောင်း');
+  static const _yiii = Script('Yiii', 'ရီ');
+  static const _zmth = Script('Zmth', 'ဂဏန်းသင်္ချာ');
+  static const _zsye = Script('Zsye', 'အီမိုဂျီ');
+  static const _zsym = Script('Zsym', 'သင်္ကေတ');
+  static const _zxxx = Script('Zxxx', 'ထုံးတမ်းသဖွယ်လိုက်နာလျက်ရှိသော');
+  static const _zyyy = Script('Zyyy', 'အများနှင့်သက်ဆိုင်သော');
+  static const _zzzz = Script('Zzzz', 'မသိ သို့မဟုတ် မရှိသော စကားလုံး');
 
   @override
-  Territory get northAmerica => Territory(
-        '003',
-        'မြောက် အမေရိကတိုက်',
-      );
+  final unknownScript = _zzzz;
+  @override
+  final adlm = _adlm;
+  @override
+  final afak = _zzzz;
+  @override
+  final aghb = _zzzz;
+  @override
+  final ahom = _zzzz;
+  @override
+  final arab = _arab;
+  @override
+  final aran = _aran;
+  @override
+  final armi = _zzzz;
+  @override
+  final armn = _armn;
+  @override
+  final avst = _zzzz;
+  @override
+  final bali = _zzzz;
+  @override
+  final bamu = _zzzz;
+  @override
+  final bass = _zzzz;
+  @override
+  final batk = _zzzz;
+  @override
+  final beng = _beng;
+  @override
+  final bhks = _zzzz;
+  @override
+  final blis = _zzzz;
+  @override
+  final bopo = _bopo;
+  @override
+  final brah = _brah;
+  @override
+  final brai = _brai;
+  @override
+  final bugi = _zzzz;
+  @override
+  final buhd = _zzzz;
+  @override
+  final cakm = _cakm;
+  @override
+  final cans = _cans;
+  @override
+  final cari = _zzzz;
+  @override
+  final cham = _zzzz;
+  @override
+  final cher = _cher;
+  @override
+  final chrs = _zzzz;
+  @override
+  final cirt = _zzzz;
+  @override
+  final copt = _zzzz;
+  @override
+  final cpmn = _zzzz;
+  @override
+  final cprt = _zzzz;
+  @override
+  final cyrl = _cyrl;
+  @override
+  final cyrs = _zzzz;
+  @override
+  final deva = _deva;
+  @override
+  final diak = _zzzz;
+  @override
+  final dogr = _zzzz;
+  @override
+  final dsrt = _zzzz;
+  @override
+  final dupl = _zzzz;
+  @override
+  final egyd = _zzzz;
+  @override
+  final egyh = _zzzz;
+  @override
+  final egyp = _zzzz;
+  @override
+  final elba = _zzzz;
+  @override
+  final elym = _zzzz;
+  @override
+  final ethi = _ethi;
+  @override
+  final gara = _zzzz;
+  @override
+  final geok = _zzzz;
+  @override
+  final geor = _geor;
+  @override
+  final glag = _zzzz;
+  @override
+  final gong = _zzzz;
+  @override
+  final gonm = _zzzz;
+  @override
+  final goth = _zzzz;
+  @override
+  final gran = _zzzz;
+  @override
+  final grek = _grek;
+  @override
+  final gujr = _gujr;
+  @override
+  final gukh = _zzzz;
+  @override
+  final guru = _guru;
+  @override
+  final hanb = _hanb;
+  @override
+  final hang = _hang;
+  @override
+  final hani = _hani;
+  @override
+  final hano = _zzzz;
+  @override
+  final hans = _hans;
+  @override
+  final hant = _hant;
+  @override
+  final hatr = _zzzz;
+  @override
+  final hebr = _hebr;
+  @override
+  final hira = _hira;
+  @override
+  final hluw = _zzzz;
+  @override
+  final hmng = _zzzz;
+  @override
+  final hmnp = _zzzz;
+  @override
+  final hrkt = _hrkt;
+  @override
+  final hung = _zzzz;
+  @override
+  final inds = _zzzz;
+  @override
+  final ital = _zzzz;
+  @override
+  final jamo = _jamo;
+  @override
+  final java = _java;
+  @override
+  final jpan = _jpan;
+  @override
+  final jurc = _zzzz;
+  @override
+  final kali = _kali;
+  @override
+  final kana = _kana;
+  @override
+  final kawi = _zzzz;
+  @override
+  final khar = _zzzz;
+  @override
+  final khmr = _khmr;
+  @override
+  final khoj = _zzzz;
+  @override
+  final kits = _zzzz;
+  @override
+  final knda = _knda;
+  @override
+  final kore = _kore;
+  @override
+  final kpel = _zzzz;
+  @override
+  final krai = _zzzz;
+  @override
+  final kthi = _zzzz;
+  @override
+  final lana = _zzzz;
+  @override
+  final laoo = _laoo;
+  @override
+  final latf = _zzzz;
+  @override
+  final latg = _zzzz;
+  @override
+  final latn = _latn;
+  @override
+  final lepc = _zzzz;
+  @override
+  final limb = _zzzz;
+  @override
+  final lina = _zzzz;
+  @override
+  final linb = _zzzz;
+  @override
+  final lisu = _zzzz;
+  @override
+  final loma = _zzzz;
+  @override
+  final lyci = _zzzz;
+  @override
+  final lydi = _zzzz;
+  @override
+  final mahj = _zzzz;
+  @override
+  final maka = _zzzz;
+  @override
+  final mand = _zzzz;
+  @override
+  final mani = _zzzz;
+  @override
+  final marc = _zzzz;
+  @override
+  final maya = _zzzz;
+  @override
+  final medf = _zzzz;
+  @override
+  final mend = _zzzz;
+  @override
+  final merc = _zzzz;
+  @override
+  final mero = _zzzz;
+  @override
+  final mlym = _mlym;
+  @override
+  final modi = _zzzz;
+  @override
+  final mong = _mong;
+  @override
+  final moon = _zzzz;
+  @override
+  final mroo = _zzzz;
+  @override
+  final mtei = _mtei;
+  @override
+  final mult = _zzzz;
+  @override
+  final mymr = _mymr;
+  @override
+  final nagm = _zzzz;
+  @override
+  final nand = _zzzz;
+  @override
+  final narb = _zzzz;
+  @override
+  final nbat = _zzzz;
+  @override
+  final newa = _zzzz;
+  @override
+  final nkgb = _zzzz;
+  @override
+  final nkoo = _nkoo;
+  @override
+  final nshu = _zzzz;
+  @override
+  final ogam = _zzzz;
+  @override
+  final olck = _olck;
+  @override
+  final onao = _zzzz;
+  @override
+  final orkh = _zzzz;
+  @override
+  final orya = _orya;
+  @override
+  final osge = _zzzz;
+  @override
+  final osma = _zzzz;
+  @override
+  final ougr = _zzzz;
+  @override
+  final palm = _zzzz;
+  @override
+  final pauc = _zzzz;
+  @override
+  final perm = _zzzz;
+  @override
+  final phag = _zzzz;
+  @override
+  final phli = _zzzz;
+  @override
+  final phlp = _zzzz;
+  @override
+  final phlv = _zzzz;
+  @override
+  final phnx = _zzzz;
+  @override
+  final plrd = _zzzz;
+  @override
+  final prti = _zzzz;
+  @override
+  final qaag = _zzzz;
+  @override
+  final rjng = _zzzz;
+  @override
+  final rohg = _rohg;
+  @override
+  final roro = _zzzz;
+  @override
+  final runr = _zzzz;
+  @override
+  final samr = _zzzz;
+  @override
+  final sara = _zzzz;
+  @override
+  final sarb = _zzzz;
+  @override
+  final saur = _zzzz;
+  @override
+  final sgnw = _zzzz;
+  @override
+  final shaw = _zzzz;
+  @override
+  final shrd = _zzzz;
+  @override
+  final sidd = _zzzz;
+  @override
+  final sind = _zzzz;
+  @override
+  final sinh = _sinh;
+  @override
+  final sogd = _zzzz;
+  @override
+  final sogo = _zzzz;
+  @override
+  final sora = _zzzz;
+  @override
+  final soyo = _zzzz;
+  @override
+  final sund = _sund;
+  @override
+  final sunu = _zzzz;
+  @override
+  final sylo = _zzzz;
+  @override
+  final syrc = _syrc;
+  @override
+  final syre = _zzzz;
+  @override
+  final syrj = _zzzz;
+  @override
+  final syrn = _zzzz;
+  @override
+  final tagb = _zzzz;
+  @override
+  final takr = _zzzz;
+  @override
+  final tale = _tale;
+  @override
+  final talu = _zzzz;
+  @override
+  final taml = _taml;
+  @override
+  final tang = _zzzz;
+  @override
+  final tavt = _zzzz;
+  @override
+  final telu = _telu;
+  @override
+  final teng = _zzzz;
+  @override
+  final tfng = _tfng;
+  @override
+  final tglg = _tglg;
+  @override
+  final thaa = _thaa;
+  @override
+  final thai = _thai;
+  @override
+  final tibt = _tibt;
+  @override
+  final tirh = _zzzz;
+  @override
+  final tnsa = _zzzz;
+  @override
+  final todr = _zzzz;
+  @override
+  final toto = _zzzz;
+  @override
+  final tutg = _zzzz;
+  @override
+  final ugar = _zzzz;
+  @override
+  final vaii = _vaii;
+  @override
+  final visp = _visp;
+  @override
+  final vith = _zzzz;
+  @override
+  final wara = _zzzz;
+  @override
+  final wcho = _zzzz;
+  @override
+  final wole = _zzzz;
+  @override
+  final xpeo = _xpeo;
+  @override
+  final xsux = _zzzz;
+  @override
+  final yezi = _zzzz;
+  @override
+  final yiii = _yiii;
+  @override
+  final zanb = _zzzz;
+  @override
+  final zinh = _zzzz;
+  @override
+  final zmth = _zmth;
+  @override
+  final zsye = _zsye;
+  @override
+  final zsym = _zsym;
+  @override
+  final zxxx = _zxxx;
+  @override
+  final zyyy = _zyyy;
+  @override
+  final zzzz = _zzzz;
 
   @override
-  Territory get southAmerica => Territory(
-        '005',
-        'တောင် အမေရိက',
-      );
+  final scripts = const {
+    'Adlm': _adlm,
+    'Arab': _arab,
+    'Aran': _aran,
+    'Armn': _armn,
+    'Beng': _beng,
+    'Bopo': _bopo,
+    'Brah': _brah,
+    'Brai': _brai,
+    'Cakm': _cakm,
+    'Cans': _cans,
+    'Cher': _cher,
+    'Cyrl': _cyrl,
+    'Deva': _deva,
+    'Ethi': _ethi,
+    'Geor': _geor,
+    'Grek': _grek,
+    'Gujr': _gujr,
+    'Guru': _guru,
+    'Hanb': _hanb,
+    'Hang': _hang,
+    'Hani': _hani,
+    'Hans': _hans,
+    'Hant': _hant,
+    'Hebr': _hebr,
+    'Hira': _hira,
+    'Hrkt': _hrkt,
+    'Jamo': _jamo,
+    'Java': _java,
+    'Jpan': _jpan,
+    'Kali': _kali,
+    'Kana': _kana,
+    'Khmr': _khmr,
+    'Knda': _knda,
+    'Kore': _kore,
+    'Laoo': _laoo,
+    'Latn': _latn,
+    'Mlym': _mlym,
+    'Mong': _mong,
+    'Mtei': _mtei,
+    'Mymr': _mymr,
+    'Nkoo': _nkoo,
+    'Olck': _olck,
+    'Orya': _orya,
+    'Rohg': _rohg,
+    'Sinh': _sinh,
+    'Sund': _sund,
+    'Syrc': _syrc,
+    'Tale': _tale,
+    'Taml': _taml,
+    'Telu': _telu,
+    'Tfng': _tfng,
+    'Tglg': _tglg,
+    'Thaa': _thaa,
+    'Thai': _thai,
+    'Tibt': _tibt,
+    'Vaii': _vaii,
+    'Visp': _visp,
+    'Xpeo': _xpeo,
+    'Yiii': _yiii,
+    'Zmth': _zmth,
+    'Zsye': _zsye,
+    'Zsym': _zsym,
+    'Zxxx': _zxxx,
+    'Zyyy': _zyyy,
+    'Zzzz': _zzzz,
+  };
+}
+
+class TerritoriesMy extends Territories {
+  const TerritoriesMy._(super.cld);
+
+  static const _$001 = Territory('001', 'ကမ္ဘာ');
+  static const _$002 = Territory('002', 'အာဖရိက');
+  static const _$003 = Territory('003', 'မြောက် အမေရိကတိုက်');
+  static const _$005 = Territory('005', 'တောင် အမေရိက');
+  static const _$009 = Territory('009', 'သမုဒ္ဒရာဒေသ');
+  static const _$011 = Territory('011', 'အနောက် အာဖရိက');
+  static const _$013 = Territory('013', 'ဗဟို အမေရိက');
+  static const _$014 = Territory('014', 'အရှေ့ အာဖရိက');
+  static const _$015 = Territory('015', 'မြောက် အာဖရိက');
+  static const _$017 = Territory('017', 'အလယ် အာဖရိက');
+  static const _$018 = Territory('018', 'အာဖရိက တောင်ပိုင်း');
+  static const _$019 = Territory('019', 'အမေရိကန်');
+  static const _$021 = Territory('021', 'မြောက် အမေရိက');
+  static const _$029 = Territory('029', 'ကာရစ်ဘီယံ');
+  static const _$030 = Territory('030', 'အရှေ့အာရှ');
+  static const _$034 = Territory('034', 'တောင်အာရှ');
+  static const _$035 = Territory('035', 'အရှေ့တောင်အာရှ');
+  static const _$039 = Territory('039', 'တောင်ဥရောပ');
+  static const _$053 = Territory('053', 'ဩစတြေးလျနှင့် နယူးဇီလန်');
+  static const _$054 = Territory('054', 'မီလာနီးရှား');
+  static const _$057 = Territory('057', 'မိုက်ခရိုနီးရှား ဒေသ');
+  static const _$061 = Territory('061', 'ပိုလီနီရှား');
+  static const _$142 = Territory('142', 'အာရှ');
+  static const _$143 = Territory('143', 'အလယ်အာရှ');
+  static const _$145 = Territory('145', 'အနောက်အာရှ');
+  static const _$150 = Territory('150', 'ဥရောပ');
+  static const _$151 = Territory('151', 'အရှေ့ ဥရောပ');
+  static const _$154 = Territory('154', 'မြောက် ဥရောပ');
+  static const _$155 = Territory('155', 'အနောက် ဥရောပ');
+  static const _$202 = Territory('202', 'ဆာဟာရ-အောက်ပိုင်း အာဖရိက');
+  static const _$419 = Territory('419', 'လက်တင်အမေရိက');
+  static const _ac = Territory('AC', 'အဆန်းရှင်းကျွန်း');
+  static const _ad = Territory('AD', 'အန်ဒိုရာ');
+  static const _ae = Territory('AE', 'ယူအေအီး');
+  static const _af = Territory('AF', 'အာဖဂန်နစ္စတန်');
+  static const _ag = Territory('AG', 'အန်တီဂွါနှင့် ဘာဘူဒါ');
+  static const _ai = Territory('AI', 'အန်ဂီလာ');
+  static const _al = Territory('AL', 'အယ်လ်ဘေးနီးယား');
+  static const _am = Territory('AM', 'အာမေးနီးယား');
+  static const _ao = Territory('AO', 'အန်ဂိုလာ');
+  static const _aq = Territory('AQ', 'အန်တာတိက');
+  static const _ar = Territory('AR', 'အာဂျင်တီးနား');
+  static const _$as = Territory('AS', 'အမေရိကန် ဆမိုးအား');
+  static const _at = Territory('AT', 'ဩစတြီးယား');
+  static const _au = Territory('AU', 'ဩစတြေးလျ');
+  static const _aw = Territory('AW', 'အာရူးဗား');
+  static const _ax = Territory('AX', 'အာလန်ကျွန်း');
+  static const _az = Territory('AZ', 'အဇာဘိုင်ဂျန်');
+  static const _ba = Territory('BA', 'ဘော့စနီးယားနှင့် ဟာဇီဂိုဗီနား');
+  static const _bb = Territory('BB', 'ဘာဘေးဒိုးစ်');
+  static const _bd = Territory('BD', 'ဘင်္ဂလားဒေ့ရှ်');
+  static const _be = Territory('BE', 'ဘယ်လ်ဂျီယမ်');
+  static const _bf = Territory('BF', 'ဘာကီးနား ဖားဆို');
+  static const _bg = Territory('BG', 'ဘူလ်ဂေးရီးယား');
+  static const _bh = Territory('BH', 'ဘာရိန်း');
+  static const _bi = Territory('BI', 'ဘူရွန်ဒီ');
+  static const _bj = Territory('BJ', 'ဘီနင်');
+  static const _bl = Territory('BL', 'စိန့်ဘာသယ်လ်မီ');
+  static const _bm = Territory('BM', 'ဘာမြူဒါ');
+  static const _bn = Territory('BN', 'ဘရူနိုင်း');
+  static const _bo = Territory('BO', 'ဘိုလီးဗီးယား');
+  static const _bq = Territory('BQ', 'ကာရစ်ဘီယံ နယ်သာလန်');
+  static const _br = Territory('BR', 'ဘရာဇီး');
+  static const _bs = Territory('BS', 'ဘဟားမား');
+  static const _bt = Territory('BT', 'ဘူတန်');
+  static const _bv = Territory('BV', 'ဘူဗက်ကျွန်း');
+  static const _bw = Territory('BW', 'ဘော့ဆွာနာ');
+  static const _by = Territory('BY', 'ဘီလာရုစ်');
+  static const _bz = Territory('BZ', 'ဘလိဇ်');
+  static const _ca = Territory('CA', 'ကနေဒါ');
+  static const _cc = Territory('CC', 'ကိုကိုးကျွန်း');
+  static const _cd =
+      Territory('CD', 'ကွန်ဂို', variant: 'ကွန်ဂို ဒီမိုကရက်တစ် သမ္မတနိုင်ငံ');
+  static const _cf = Territory('CF', 'ဗဟို အာဖရိက ပြည်ထောင်စု');
+  static const _cg =
+      Territory('CG', 'ကွန်ဂို-ဘရာဇာဗီးလ်', variant: 'ကွန်ဂို သမ္မတနိုင်ငံ');
+  static const _ch = Territory('CH', 'ဆွစ်ဇာလန်');
+  static const _ci = Territory('CI', 'ကို့တ် ဒီဗွာ', variant: 'အိုင်ဗရီကို့စ်');
+  static const _ck = Territory('CK', 'ကွတ် ကျွန်းစု');
+  static const _cl = Territory('CL', 'ချီလီ');
+  static const _cm = Territory('CM', 'ကင်မရွန်း');
+  static const _cn = Territory('CN', 'တရုတ်');
+  static const _co = Territory('CO', 'ကိုလံဘီယာ');
+  static const _cp = Territory('CP', 'ကလစ်ပါတန်ကျွန်း');
+  static const _cr = Territory('CR', 'ကို့စ်တာရီကာ');
+  static const _cu = Territory('CU', 'ကျူးဘား');
+  static const _cv = Territory('CV', 'ကိတ်ဗာဒီ');
+  static const _cw = Territory('CW', 'ကျူရေးကိုးစ်');
+  static const _cx = Territory('CX', 'ခရစ်စမတ် ကျွန်း');
+  static const _cy = Territory('CY', 'ဆိုက်ပရပ်စ်');
+  static const _cz = Territory('CZ', 'ချက်ကီယား', variant: 'ချက် ပြည်ထောင်စု');
+  static const _de = Territory('DE', 'ဂျာမနီ');
+  static const _dg = Territory('DG', 'ဒီအဲဂိုဂါစီရာ');
+  static const _dj = Territory('DJ', 'ဂျီဘူတီ');
+  static const _dk = Territory('DK', 'ဒိန်းမတ်');
+  static const _dm = Territory('DM', 'ဒိုမီနီကာ');
+  static const _$do = Territory('DO', 'ဒိုမီနီကန်');
+  static const _dz = Territory('DZ', 'အယ်လ်ဂျီးရီးယား');
+  static const _ea = Territory('EA', 'ဆယ်ဥတာနှင့်မယ်လီလ်လာ');
+  static const _ec = Territory('EC', 'အီကွေဒေါ');
+  static const _ee = Territory('EE', 'အက်စတိုးနီးယား');
+  static const _eg = Territory('EG', 'အီဂျစ်');
+  static const _eh = Territory('EH', 'အနောက် ဆာဟာရ');
+  static const _er = Territory('ER', 'အီရီထရီးယား');
+  static const _es = Territory('ES', 'စပိန်');
+  static const _et = Territory('ET', 'အီသီယိုးပီးယား');
+  static const _eu = Territory('EU', 'ဥရောပသမဂ္ဂ');
+  static const _ez = Territory('EZ', 'ဥရောပဒေသ');
+  static const _fi = Territory('FI', 'ဖင်လန်');
+  static const _fj = Territory('FJ', 'ဖီဂျီ');
+  static const _fk = Territory('FK', 'ဖော့ကလန် ကျွန်းစု',
+      variant: 'ဖော့ကလန် ကျွန်းစု (အီလားစ် မောလ်ဗီနာစ်)');
+  static const _fm = Territory('FM', 'မိုင်ခရိုနီရှား');
+  static const _fo = Territory('FO', 'ဖာရိုး ကျွန်းစုများ');
+  static const _fr = Territory('FR', 'ပြင်သစ်');
+  static const _ga = Territory('GA', 'ဂါဘွန်');
+  static const _gb = Territory('GB', 'ယူနိုက်တက်ကင်းဒမ်း', short: 'ယူကေ');
+  static const _gd = Territory('GD', 'ဂရီနေဒါ');
+  static const _ge = Territory('GE', 'ဂျော်ဂျီယာ');
+  static const _gf = Territory('GF', 'ပြင်သစ် ဂီယာနာ');
+  static const _gg = Territory('GG', 'ဂွန်းဇီ');
+  static const _gh = Territory('GH', 'ဂါနာ');
+  static const _gi = Territory('GI', 'ဂျီဘရော်လ်တာ');
+  static const _gl = Territory('GL', 'ဂရင်းလန်း');
+  static const _gm = Territory('GM', 'ဂမ်ဘီရာ');
+  static const _gn = Territory('GN', 'ဂီနီ');
+  static const _gp = Territory('GP', 'ဂွါဒီလု');
+  static const _gq = Territory('GQ', 'အီကွေတာ ဂီနီ');
+  static const _gr = Territory('GR', 'ဂရိ');
+  static const _gs =
+      Territory('GS', 'တောင် ဂျော်ဂျီယာ နှင့် တောင် ဆင်းဒဝစ်ဂျ် ကျွန်းစုများ');
+  static const _gt = Territory('GT', 'ဂွါတီမာလာ');
+  static const _gu = Territory('GU', 'ဂူအမ်');
+  static const _gw = Territory('GW', 'ဂီနီ-ဘီစော');
+  static const _gy = Territory('GY', 'ဂိုင်ယာနာ');
+  static const _hk =
+      Territory('HK', 'ဟောင်ကောင် (တရုတ်ပြည်)', short: 'ဟောင်ကောင်');
+  static const _hm = Territory('HM', 'ဟတ်ကျွန်းနှင့်မက်ဒေါနယ်ကျွန်းစု');
+  static const _hn = Territory('HN', 'ဟွန်ဒူးရပ်စ်');
+  static const _hr = Territory('HR', 'ခရိုအေးရှား');
+  static const _ht = Territory('HT', 'ဟေတီ');
+  static const _hu = Territory('HU', 'ဟန်ဂေရီ');
+  static const _ic = Territory('IC', 'ကနေရီ ကျွန်းစု');
+  static const _id = Territory('ID', 'အင်ဒိုနီးရှား');
+  static const _ie = Territory('IE', 'အိုင်ယာလန်');
+  static const _il = Territory('IL', 'အစ္စရေး');
+  static const _im = Territory('IM', 'မန်ကျွန်း');
+  static const _$in = Territory('IN', 'အိန္ဒိယ');
+  static const _io = Territory('IO', 'ဗြိတိသျှပိုင် အိန္ဒိယသမုဒ္ဒရာကျွန်းများ');
+  static const _iq = Territory('IQ', 'အီရတ်');
+  static const _ir = Territory('IR', 'အီရန်');
+  static const _$is = Territory('IS', 'အိုက်စလန်');
+  static const _it = Territory('IT', 'အီတလီ');
+  static const _je = Territory('JE', 'ဂျာစီ');
+  static const _jm = Territory('JM', 'ဂျမေကာ');
+  static const _jo = Territory('JO', 'ဂျော်ဒန်');
+  static const _jp = Territory('JP', 'ဂျပန်');
+  static const _ke = Territory('KE', 'ကင်ညာ');
+  static const _kg = Territory('KG', 'ကာဂျစ္စတန်');
+  static const _kh = Territory('KH', 'ကမ္ဘောဒီးယား');
+  static const _ki = Territory('KI', 'ခီရီဘာတီ');
+  static const _km = Territory('KM', 'ကိုမိုရိုစ်');
+  static const _kn = Territory('KN', 'စိန့်ကစ်နှင့်နီဗီစ်');
+  static const _kp = Territory('KP', 'မြောက်ကိုရီးယား');
+  static const _kr = Territory('KR', 'တောင်ကိုရီးယား');
+  static const _kw = Territory('KW', 'ကူဝိတ်');
+  static const _ky = Territory('KY', 'ကေမန် ကျွန်းစု');
+  static const _kz = Territory('KZ', 'ကာဇက်စတန်');
+  static const _la = Territory('LA', 'လာအို');
+  static const _lb = Territory('LB', 'လက်ဘနွန်');
+  static const _lc = Territory('LC', 'စိန့်လူစီယာ');
+  static const _li = Territory('LI', 'လစ်တန်စတိန်း');
+  static const _lk = Territory('LK', 'သီရိလင်္ကာ');
+  static const _lr = Territory('LR', 'လိုက်ဘေးရီးယား');
+  static const _ls = Territory('LS', 'လီဆိုသို');
+  static const _lt = Territory('LT', 'လစ်သူဝေးနီးယား');
+  static const _lu = Territory('LU', 'လူဇင်ဘတ်');
+  static const _lv = Territory('LV', 'လတ်ဗီးယား');
+  static const _ly = Territory('LY', 'လစ်ဗျား');
+  static const _ma = Territory('MA', 'မော်ရိုကို');
+  static const _mc = Territory('MC', 'မိုနာကို');
+  static const _md = Territory('MD', 'မောလ်ဒိုဗာ');
+  static const _me = Territory('ME', 'မွန်တီနိဂရိုး');
+  static const _mf = Territory('MF', 'စိန့်မာတင်');
+  static const _mg = Territory('MG', 'မဒါဂတ်စကား');
+  static const _mh = Territory('MH', 'မာရှယ် ကျွန်းစု');
+  static const _mk = Territory('MK', 'မြောက် မက်ဆီဒိုးနီးယား');
+  static const _ml = Territory('ML', 'မာလီ');
+  static const _mm = Territory('MM', 'မြန်မာ');
+  static const _mn = Territory('MN', 'မွန်ဂိုးလီးယား');
+  static const _mo = Territory('MO', 'မကာအို (တရုတ်ပြည်)', short: 'မကာအို');
+  static const _mp = Territory('MP', 'မြောက်ပိုင်းမာရီအာနာကျွန်းစု');
+  static const _mq = Territory('MQ', 'မာတီနိခ်');
+  static const _mr = Territory('MR', 'မော်ရီတေးနီးယား');
+  static const _ms = Territory('MS', 'မောင့်စဲရက်');
+  static const _mt = Territory('MT', 'မောလ်တာ');
+  static const _mu = Territory('MU', 'မောရစ်ရှ');
+  static const _mv = Territory('MV', 'မော်လ်ဒိုက်');
+  static const _mw = Territory('MW', 'မာလာဝီ');
+  static const _mx = Territory('MX', 'မက်ကဆီကို');
+  static const _my = Territory('MY', 'မလေးရှား');
+  static const _mz = Territory('MZ', 'မိုဇမ်ဘစ်');
+  static const _na = Territory('NA', 'နမီးဘီးယား');
+  static const _nc = Territory('NC', 'နယူး ကယ်လီဒိုနီးယား');
+  static const _ne = Territory('NE', 'နိုင်ဂျာ');
+  static const _nf = Territory('NF', 'နောဖုတ်ကျွန်း');
+  static const _ng = Territory('NG', 'နိုင်ဂျီးရီးယား');
+  static const _ni = Territory('NI', 'နီကာရာဂွါ');
+  static const _nl = Territory('NL', 'နယ်သာလန်');
+  static const _no = Territory('NO', 'နော်ဝေ');
+  static const _np = Territory('NP', 'နီပေါ');
+  static const _nr = Territory('NR', 'နော်ရူး');
+  static const _nu = Territory('NU', 'နီဥူအေ');
+  static const _nz =
+      Territory('NZ', 'နယူးဇီလန်', variant: 'အေအိုတေးအာရိုအာ နယူးဇီလန်');
+  static const _om = Territory('OM', 'အိုမန်');
+  static const _pa = Territory('PA', 'ပနားမား');
+  static const _pe = Territory('PE', 'ပီရူး');
+  static const _pf = Territory('PF', 'ပြင်သစ် ပေါ်လီနီးရှား');
+  static const _pg = Territory('PG', 'ပါပူအာ နယူးဂီနီ');
+  static const _ph = Territory('PH', 'ဖိလစ်ပိုင်');
+  static const _pk = Territory('PK', 'ပါကစ္စတန်');
+  static const _pl = Territory('PL', 'ပိုလန်');
+  static const _pm = Territory('PM', 'စိန့်ပီအဲရ်နှင့် မီကွီလွန်');
+  static const _pn = Territory('PN', 'ပစ်တ်ကိန်းကျွန်းစု');
+  static const _pr = Territory('PR', 'ပေါ်တိုရီကို');
+  static const _ps =
+      Territory('PS', 'ပါလက်စတိုင်း ပိုင်နက်', short: 'ပါလက်စတိုင်း');
+  static const _pt = Territory('PT', 'ပေါ်တူဂီ');
+  static const _pw = Territory('PW', 'ပလာအို');
+  static const _py = Territory('PY', 'ပါရာဂွေး');
+  static const _qa = Territory('QA', 'ကာတာ');
+  static const _qo = Territory('QO', 'သမုဒ္ဒရာ အပြင်ဘက်ရှိ ကျွန်းနိုင်ငံများ');
+  static const _re = Territory('RE', 'ရီယူနီယန်');
+  static const _ro = Territory('RO', 'ရိုမေးနီးယား');
+  static const _rs = Territory('RS', 'ဆားဘီးယား');
+  static const _ru = Territory('RU', 'ရုရှား');
+  static const _rw = Territory('RW', 'ရဝန်ဒါ');
+  static const _sa = Territory('SA', 'ဆော်ဒီအာရေးဘီးယား');
+  static const _sb = Territory('SB', 'ဆော်လမွန်ကျွန်းစု');
+  static const _sc = Territory('SC', 'ဆေးရှဲ');
+  static const _sd = Territory('SD', 'ဆူဒန်');
+  static const _se = Territory('SE', 'ဆွီဒင်');
+  static const _sg = Territory('SG', 'စင်္ကာပူ');
+  static const _sh = Territory('SH', 'စိန့်ဟယ်လယ်နာ');
+  static const _si = Territory('SI', 'ဆလိုဗေးနီးယား');
+  static const _sj = Territory('SJ', 'စဗိုလ်ဘတ်နှင့်ဂျန်မေရန်');
+  static const _sk = Territory('SK', 'ဆလိုဗက်ကီးယား');
+  static const _sl = Territory('SL', 'ဆီယာရာ လီယွန်း');
+  static const _sm = Territory('SM', 'ဆန်မာရီနို');
+  static const _sn = Territory('SN', 'ဆီနီဂေါ');
+  static const _so = Territory('SO', 'ဆိုမာလီယာ');
+  static const _sr = Territory('SR', 'ဆူရာနမ်');
+  static const _ss = Territory('SS', 'တောင် ဆူဒန်');
+  static const _st = Territory('ST', 'ဆောင်တူမေးနှင့် ပရင်စီပီ');
+  static const _sv = Territory('SV', 'အယ်လ်ဆာဗေးဒိုး');
+  static const _sx = Territory('SX', 'စင့်မာတင်');
+  static const _sy = Territory('SY', 'ဆီးရီးယား');
+  static const _sz = Territory('SZ', 'ဆွာဇီလန်', variant: 'ဆွာဇီလန်');
+  static const _ta = Territory('TA', 'ထရစ္စတန် ဒါ ကွန်ဟာ');
+  static const _tc = Territory('TC', 'တခ်စ်နှင့်ကာအီကိုစ်ကျွန်းစု');
+  static const _td = Territory('TD', 'ချဒ်');
+  static const _tf = Territory('TF', 'ပြင်သစ် တောင်ပိုင်း ပိုင်နက်များ');
+  static const _tg = Territory('TG', 'တိုဂို');
+  static const _th = Territory('TH', 'ထိုင်း');
+  static const _tj = Territory('TJ', 'တာဂျီကစ္စတန်');
+  static const _tk = Territory('TK', 'တိုကလောင်');
+  static const _tl = Territory('TL', 'အရှေ့တီမော', variant: 'အရှေ့တီမော');
+  static const _tm = Territory('TM', 'တာ့ခ်မင်နစ္စတန်');
+  static const _tn = Territory('TN', 'တူနီးရှား');
+  static const _to = Territory('TO', 'တွန်ဂါ');
+  static const _tr = Territory('TR', 'တူရကီ', variant: 'တူရကီယဲ');
+  static const _tt = Territory('TT', 'ထရီနီဒတ်နှင့် တိုဘက်ဂို');
+  static const _tv = Territory('TV', 'တူဗားလူ');
+  static const _tw = Territory('TW', 'ထိုင်ဝမ်');
+  static const _tz = Territory('TZ', 'တန်ဇန်းနီးယား');
+  static const _ua = Territory('UA', 'ယူကရိန်း');
+  static const _ug = Territory('UG', 'ယူဂန်းဒါး');
+  static const _um = Territory('UM', 'ယူနိုက်တက်စတိတ် ကျွန်းနိုင်ငံများ');
+  static const _un = Territory('UN', 'ကုလသမဂ္ဂ');
+  static const _us = Territory('US', 'အမေရိကန် ပြည်ထောင်စု', short: 'ယူအက်စ်');
+  static const _uy = Territory('UY', 'ဥရုဂွေး');
+  static const _uz = Territory('UZ', 'ဥဇဘက်ကစ္စတန်');
+  static const _va = Territory('VA', 'ဗာတီကန်စီးတီး');
+  static const _vc = Territory('VC', 'စိန့်ဗင်းဆင့်နှင့် ဂရိနေဒိုင်');
+  static const _ve = Territory('VE', 'ဗင်နီဇွဲလား');
+  static const _vg = Territory('VG', 'ဗြိတိသျှ ဗာဂျင်း ကျွန်းစု');
+  static const _vi = Territory('VI', 'ယူအက်စ် ဗာဂျင်း ကျွန်းစု');
+  static const _vn = Territory('VN', 'ဗီယက်နမ်');
+  static const _vu = Territory('VU', 'ဗနွားတူ');
+  static const _wf = Territory('WF', 'ဝေါလစ်နှင့် ဖူကျူးနား');
+  static const _ws = Territory('WS', 'ဆမိုးအား');
+  static const _xa = Territory('XA', 'နိုင်ငံခြားသံ');
+  static const _xb = Territory('XB', 'စာပြောင်းပြန်');
+  static const _xk = Territory('XK', 'ကိုဆိုဗို');
+  static const _ye = Territory('YE', 'ယီမင်');
+  static const _yt = Territory('YT', 'မေယော့');
+  static const _za = Territory('ZA', 'တောင်အာဖရိက');
+  static const _zm = Territory('ZM', 'ဇမ်ဘီယာ');
+  static const _zw = Territory('ZW', 'ဇင်ဘာဘွေ');
+  static const _zz = Territory('ZZ', 'မသိ (သို့) မရှိသော ဒေသ');
 
   @override
-  Territory get oceania => Territory(
-        '009',
-        'သမုဒ္ဒရာဒေသ',
-      );
+  final world = _$001;
+  @override
+  final africa = _$002;
+  @override
+  final northAmerica = _$003;
+  @override
+  final southAmerica = _$005;
+  @override
+  final oceania = _$009;
+  @override
+  final westernAfrica = _$011;
+  @override
+  final centralAmerica = _$013;
+  @override
+  final easternAfrica = _$014;
+  @override
+  final northernAfrica = _$015;
+  @override
+  final middleAfrica = _$017;
+  @override
+  final southernAfrica = _$018;
+  @override
+  final americas = _$019;
+  @override
+  final northernAmerica = _$021;
+  @override
+  final caribbean = _$029;
+  @override
+  final easternAsia = _$030;
+  @override
+  final southernAsia = _$034;
+  @override
+  final southeastAsia = _$035;
+  @override
+  final southernEurope = _$039;
+  @override
+  final australasia = _$053;
+  @override
+  final melanesia = _$054;
+  @override
+  final micronesianRegion = _$057;
+  @override
+  final polynesia = _$061;
+  @override
+  final asia = _$142;
+  @override
+  final centralAsia = _$143;
+  @override
+  final westernAsia = _$145;
+  @override
+  final europe = _$150;
+  @override
+  final easternEurope = _$151;
+  @override
+  final northernEurope = _$154;
+  @override
+  final westernEurope = _$155;
+  @override
+  final subSaharanAfrica = _$202;
+  @override
+  final latinAmerica = _$419;
+  @override
+  final europeanUnion = _eu;
+  @override
+  final eurozone = _ez;
+  @override
+  final outlyingOceania = _qo;
+  @override
+  final unitedNations = _un;
+  @override
+  final pseudoAccents = _xa;
+  @override
+  final pseudoBidi = _xb;
+  @override
+  final unknownRegion = _zz;
+  @override
+  final $001 = _$001;
+  @override
+  final $002 = _$002;
+  @override
+  final $003 = _$003;
+  @override
+  final $005 = _$005;
+  @override
+  final $009 = _$009;
+  @override
+  final $011 = _$011;
+  @override
+  final $013 = _$013;
+  @override
+  final $014 = _$014;
+  @override
+  final $015 = _$015;
+  @override
+  final $017 = _$017;
+  @override
+  final $018 = _$018;
+  @override
+  final $019 = _$019;
+  @override
+  final $021 = _$021;
+  @override
+  final $029 = _$029;
+  @override
+  final $030 = _$030;
+  @override
+  final $034 = _$034;
+  @override
+  final $035 = _$035;
+  @override
+  final $039 = _$039;
+  @override
+  final $053 = _$053;
+  @override
+  final $054 = _$054;
+  @override
+  final $057 = _$057;
+  @override
+  final $061 = _$061;
+  @override
+  final $142 = _$142;
+  @override
+  final $143 = _$143;
+  @override
+  final $145 = _$145;
+  @override
+  final $150 = _$150;
+  @override
+  final $151 = _$151;
+  @override
+  final $154 = _$154;
+  @override
+  final $155 = _$155;
+  @override
+  final $202 = _$202;
+  @override
+  final $419 = _$419;
+  @override
+  final ac = _ac;
+  @override
+  final ad = _ad;
+  @override
+  final ae = _ae;
+  @override
+  final af = _af;
+  @override
+  final ag = _ag;
+  @override
+  final ai = _ai;
+  @override
+  final al = _al;
+  @override
+  final am = _am;
+  @override
+  final ao = _ao;
+  @override
+  final aq = _aq;
+  @override
+  final ar = _ar;
+  @override
+  final $as = _$as;
+  @override
+  final at = _at;
+  @override
+  final au = _au;
+  @override
+  final aw = _aw;
+  @override
+  final ax = _ax;
+  @override
+  final az = _az;
+  @override
+  final ba = _ba;
+  @override
+  final bb = _bb;
+  @override
+  final bd = _bd;
+  @override
+  final be = _be;
+  @override
+  final bf = _bf;
+  @override
+  final bg = _bg;
+  @override
+  final bh = _bh;
+  @override
+  final bi = _bi;
+  @override
+  final bj = _bj;
+  @override
+  final bl = _bl;
+  @override
+  final bm = _bm;
+  @override
+  final bn = _bn;
+  @override
+  final bo = _bo;
+  @override
+  final bq = _bq;
+  @override
+  final br = _br;
+  @override
+  final bs = _bs;
+  @override
+  final bt = _bt;
+  @override
+  final bv = _bv;
+  @override
+  final bw = _bw;
+  @override
+  final by = _by;
+  @override
+  final bz = _bz;
+  @override
+  final ca = _ca;
+  @override
+  final cc = _cc;
+  @override
+  final cd = _cd;
+  @override
+  final cf = _cf;
+  @override
+  final cg = _cg;
+  @override
+  final ch = _ch;
+  @override
+  final ci = _ci;
+  @override
+  final ck = _ck;
+  @override
+  final cl = _cl;
+  @override
+  final cm = _cm;
+  @override
+  final cn = _cn;
+  @override
+  final co = _co;
+  @override
+  final cp = _cp;
+  @override
+  final cq = _zz;
+  @override
+  final cr = _cr;
+  @override
+  final cu = _cu;
+  @override
+  final cv = _cv;
+  @override
+  final cw = _cw;
+  @override
+  final cx = _cx;
+  @override
+  final cy = _cy;
+  @override
+  final cz = _cz;
+  @override
+  final de = _de;
+  @override
+  final dg = _dg;
+  @override
+  final dj = _dj;
+  @override
+  final dk = _dk;
+  @override
+  final dm = _dm;
+  @override
+  final $do = _$do;
+  @override
+  final dz = _dz;
+  @override
+  final ea = _ea;
+  @override
+  final ec = _ec;
+  @override
+  final ee = _ee;
+  @override
+  final eg = _eg;
+  @override
+  final eh = _eh;
+  @override
+  final er = _er;
+  @override
+  final es = _es;
+  @override
+  final et = _et;
+  @override
+  final eu = _eu;
+  @override
+  final ez = _ez;
+  @override
+  final fi = _fi;
+  @override
+  final fj = _fj;
+  @override
+  final fk = _fk;
+  @override
+  final fm = _fm;
+  @override
+  final fo = _fo;
+  @override
+  final fr = _fr;
+  @override
+  final ga = _ga;
+  @override
+  final gb = _gb;
+  @override
+  final gd = _gd;
+  @override
+  final ge = _ge;
+  @override
+  final gf = _gf;
+  @override
+  final gg = _gg;
+  @override
+  final gh = _gh;
+  @override
+  final gi = _gi;
+  @override
+  final gl = _gl;
+  @override
+  final gm = _gm;
+  @override
+  final gn = _gn;
+  @override
+  final gp = _gp;
+  @override
+  final gq = _gq;
+  @override
+  final gr = _gr;
+  @override
+  final gs = _gs;
+  @override
+  final gt = _gt;
+  @override
+  final gu = _gu;
+  @override
+  final gw = _gw;
+  @override
+  final gy = _gy;
+  @override
+  final hk = _hk;
+  @override
+  final hm = _hm;
+  @override
+  final hn = _hn;
+  @override
+  final hr = _hr;
+  @override
+  final ht = _ht;
+  @override
+  final hu = _hu;
+  @override
+  final ic = _ic;
+  @override
+  final id = _id;
+  @override
+  final ie = _ie;
+  @override
+  final il = _il;
+  @override
+  final im = _im;
+  @override
+  final $in = _$in;
+  @override
+  final io = _io;
+  @override
+  final iq = _iq;
+  @override
+  final ir = _ir;
+  @override
+  final $is = _$is;
+  @override
+  final it = _it;
+  @override
+  final je = _je;
+  @override
+  final jm = _jm;
+  @override
+  final jo = _jo;
+  @override
+  final jp = _jp;
+  @override
+  final ke = _ke;
+  @override
+  final kg = _kg;
+  @override
+  final kh = _kh;
+  @override
+  final ki = _ki;
+  @override
+  final km = _km;
+  @override
+  final kn = _kn;
+  @override
+  final kp = _kp;
+  @override
+  final kr = _kr;
+  @override
+  final kw = _kw;
+  @override
+  final ky = _ky;
+  @override
+  final kz = _kz;
+  @override
+  final la = _la;
+  @override
+  final lb = _lb;
+  @override
+  final lc = _lc;
+  @override
+  final li = _li;
+  @override
+  final lk = _lk;
+  @override
+  final lr = _lr;
+  @override
+  final ls = _ls;
+  @override
+  final lt = _lt;
+  @override
+  final lu = _lu;
+  @override
+  final lv = _lv;
+  @override
+  final ly = _ly;
+  @override
+  final ma = _ma;
+  @override
+  final mc = _mc;
+  @override
+  final md = _md;
+  @override
+  final me = _me;
+  @override
+  final mf = _mf;
+  @override
+  final mg = _mg;
+  @override
+  final mh = _mh;
+  @override
+  final mk = _mk;
+  @override
+  final ml = _ml;
+  @override
+  final mm = _mm;
+  @override
+  final mn = _mn;
+  @override
+  final mo = _mo;
+  @override
+  final mp = _mp;
+  @override
+  final mq = _mq;
+  @override
+  final mr = _mr;
+  @override
+  final ms = _ms;
+  @override
+  final mt = _mt;
+  @override
+  final mu = _mu;
+  @override
+  final mv = _mv;
+  @override
+  final mw = _mw;
+  @override
+  final mx = _mx;
+  @override
+  final my = _my;
+  @override
+  final mz = _mz;
+  @override
+  final na = _na;
+  @override
+  final nc = _nc;
+  @override
+  final ne = _ne;
+  @override
+  final nf = _nf;
+  @override
+  final ng = _ng;
+  @override
+  final ni = _ni;
+  @override
+  final nl = _nl;
+  @override
+  final no = _no;
+  @override
+  final np = _np;
+  @override
+  final nr = _nr;
+  @override
+  final nu = _nu;
+  @override
+  final nz = _nz;
+  @override
+  final om = _om;
+  @override
+  final pa = _pa;
+  @override
+  final pe = _pe;
+  @override
+  final pf = _pf;
+  @override
+  final pg = _pg;
+  @override
+  final ph = _ph;
+  @override
+  final pk = _pk;
+  @override
+  final pl = _pl;
+  @override
+  final pm = _pm;
+  @override
+  final pn = _pn;
+  @override
+  final pr = _pr;
+  @override
+  final ps = _ps;
+  @override
+  final pt = _pt;
+  @override
+  final pw = _pw;
+  @override
+  final py = _py;
+  @override
+  final qa = _qa;
+  @override
+  final qo = _qo;
+  @override
+  final re = _re;
+  @override
+  final ro = _ro;
+  @override
+  final rs = _rs;
+  @override
+  final ru = _ru;
+  @override
+  final rw = _rw;
+  @override
+  final sa = _sa;
+  @override
+  final sb = _sb;
+  @override
+  final sc = _sc;
+  @override
+  final sd = _sd;
+  @override
+  final se = _se;
+  @override
+  final sg = _sg;
+  @override
+  final sh = _sh;
+  @override
+  final si = _si;
+  @override
+  final sj = _sj;
+  @override
+  final sk = _sk;
+  @override
+  final sl = _sl;
+  @override
+  final sm = _sm;
+  @override
+  final sn = _sn;
+  @override
+  final so = _so;
+  @override
+  final sr = _sr;
+  @override
+  final ss = _ss;
+  @override
+  final st = _st;
+  @override
+  final sv = _sv;
+  @override
+  final sx = _sx;
+  @override
+  final sy = _sy;
+  @override
+  final sz = _sz;
+  @override
+  final ta = _ta;
+  @override
+  final tc = _tc;
+  @override
+  final td = _td;
+  @override
+  final tf = _tf;
+  @override
+  final tg = _tg;
+  @override
+  final th = _th;
+  @override
+  final tj = _tj;
+  @override
+  final tk = _tk;
+  @override
+  final tl = _tl;
+  @override
+  final tm = _tm;
+  @override
+  final tn = _tn;
+  @override
+  final to = _to;
+  @override
+  final tr = _tr;
+  @override
+  final tt = _tt;
+  @override
+  final tv = _tv;
+  @override
+  final tw = _tw;
+  @override
+  final tz = _tz;
+  @override
+  final ua = _ua;
+  @override
+  final ug = _ug;
+  @override
+  final um = _um;
+  @override
+  final un = _un;
+  @override
+  final us = _us;
+  @override
+  final uy = _uy;
+  @override
+  final uz = _uz;
+  @override
+  final va = _va;
+  @override
+  final vc = _vc;
+  @override
+  final ve = _ve;
+  @override
+  final vg = _vg;
+  @override
+  final vi = _vi;
+  @override
+  final vn = _vn;
+  @override
+  final vu = _vu;
+  @override
+  final wf = _wf;
+  @override
+  final ws = _ws;
+  @override
+  final xa = _xa;
+  @override
+  final xb = _xb;
+  @override
+  final xk = _xk;
+  @override
+  final ye = _ye;
+  @override
+  final yt = _yt;
+  @override
+  final za = _za;
+  @override
+  final zm = _zm;
+  @override
+  final zw = _zw;
+  @override
+  final zz = _zz;
 
   @override
-  Territory get westernAfrica => Territory(
-        '011',
-        'အနောက် အာဖရိက',
-      );
+  final territories = const {
+    '001': _$001,
+    '002': _$002,
+    '003': _$003,
+    '005': _$005,
+    '009': _$009,
+    '011': _$011,
+    '013': _$013,
+    '014': _$014,
+    '015': _$015,
+    '017': _$017,
+    '018': _$018,
+    '019': _$019,
+    '021': _$021,
+    '029': _$029,
+    '030': _$030,
+    '034': _$034,
+    '035': _$035,
+    '039': _$039,
+    '053': _$053,
+    '054': _$054,
+    '057': _$057,
+    '061': _$061,
+    '142': _$142,
+    '143': _$143,
+    '145': _$145,
+    '150': _$150,
+    '151': _$151,
+    '154': _$154,
+    '155': _$155,
+    '202': _$202,
+    '419': _$419,
+    'AC': _ac,
+    'AD': _ad,
+    'AE': _ae,
+    'AF': _af,
+    'AG': _ag,
+    'AI': _ai,
+    'AL': _al,
+    'AM': _am,
+    'AO': _ao,
+    'AQ': _aq,
+    'AR': _ar,
+    'AS': _$as,
+    'AT': _at,
+    'AU': _au,
+    'AW': _aw,
+    'AX': _ax,
+    'AZ': _az,
+    'BA': _ba,
+    'BB': _bb,
+    'BD': _bd,
+    'BE': _be,
+    'BF': _bf,
+    'BG': _bg,
+    'BH': _bh,
+    'BI': _bi,
+    'BJ': _bj,
+    'BL': _bl,
+    'BM': _bm,
+    'BN': _bn,
+    'BO': _bo,
+    'BQ': _bq,
+    'BR': _br,
+    'BS': _bs,
+    'BT': _bt,
+    'BV': _bv,
+    'BW': _bw,
+    'BY': _by,
+    'BZ': _bz,
+    'CA': _ca,
+    'CC': _cc,
+    'CD': _cd,
+    'CF': _cf,
+    'CG': _cg,
+    'CH': _ch,
+    'CI': _ci,
+    'CK': _ck,
+    'CL': _cl,
+    'CM': _cm,
+    'CN': _cn,
+    'CO': _co,
+    'CP': _cp,
+    'CR': _cr,
+    'CU': _cu,
+    'CV': _cv,
+    'CW': _cw,
+    'CX': _cx,
+    'CY': _cy,
+    'CZ': _cz,
+    'DE': _de,
+    'DG': _dg,
+    'DJ': _dj,
+    'DK': _dk,
+    'DM': _dm,
+    'DO': _$do,
+    'DZ': _dz,
+    'EA': _ea,
+    'EC': _ec,
+    'EE': _ee,
+    'EG': _eg,
+    'EH': _eh,
+    'ER': _er,
+    'ES': _es,
+    'ET': _et,
+    'EU': _eu,
+    'EZ': _ez,
+    'FI': _fi,
+    'FJ': _fj,
+    'FK': _fk,
+    'FM': _fm,
+    'FO': _fo,
+    'FR': _fr,
+    'GA': _ga,
+    'GB': _gb,
+    'GD': _gd,
+    'GE': _ge,
+    'GF': _gf,
+    'GG': _gg,
+    'GH': _gh,
+    'GI': _gi,
+    'GL': _gl,
+    'GM': _gm,
+    'GN': _gn,
+    'GP': _gp,
+    'GQ': _gq,
+    'GR': _gr,
+    'GS': _gs,
+    'GT': _gt,
+    'GU': _gu,
+    'GW': _gw,
+    'GY': _gy,
+    'HK': _hk,
+    'HM': _hm,
+    'HN': _hn,
+    'HR': _hr,
+    'HT': _ht,
+    'HU': _hu,
+    'IC': _ic,
+    'ID': _id,
+    'IE': _ie,
+    'IL': _il,
+    'IM': _im,
+    'IN': _$in,
+    'IO': _io,
+    'IQ': _iq,
+    'IR': _ir,
+    'IS': _$is,
+    'IT': _it,
+    'JE': _je,
+    'JM': _jm,
+    'JO': _jo,
+    'JP': _jp,
+    'KE': _ke,
+    'KG': _kg,
+    'KH': _kh,
+    'KI': _ki,
+    'KM': _km,
+    'KN': _kn,
+    'KP': _kp,
+    'KR': _kr,
+    'KW': _kw,
+    'KY': _ky,
+    'KZ': _kz,
+    'LA': _la,
+    'LB': _lb,
+    'LC': _lc,
+    'LI': _li,
+    'LK': _lk,
+    'LR': _lr,
+    'LS': _ls,
+    'LT': _lt,
+    'LU': _lu,
+    'LV': _lv,
+    'LY': _ly,
+    'MA': _ma,
+    'MC': _mc,
+    'MD': _md,
+    'ME': _me,
+    'MF': _mf,
+    'MG': _mg,
+    'MH': _mh,
+    'MK': _mk,
+    'ML': _ml,
+    'MM': _mm,
+    'MN': _mn,
+    'MO': _mo,
+    'MP': _mp,
+    'MQ': _mq,
+    'MR': _mr,
+    'MS': _ms,
+    'MT': _mt,
+    'MU': _mu,
+    'MV': _mv,
+    'MW': _mw,
+    'MX': _mx,
+    'MY': _my,
+    'MZ': _mz,
+    'NA': _na,
+    'NC': _nc,
+    'NE': _ne,
+    'NF': _nf,
+    'NG': _ng,
+    'NI': _ni,
+    'NL': _nl,
+    'NO': _no,
+    'NP': _np,
+    'NR': _nr,
+    'NU': _nu,
+    'NZ': _nz,
+    'OM': _om,
+    'PA': _pa,
+    'PE': _pe,
+    'PF': _pf,
+    'PG': _pg,
+    'PH': _ph,
+    'PK': _pk,
+    'PL': _pl,
+    'PM': _pm,
+    'PN': _pn,
+    'PR': _pr,
+    'PS': _ps,
+    'PT': _pt,
+    'PW': _pw,
+    'PY': _py,
+    'QA': _qa,
+    'QO': _qo,
+    'RE': _re,
+    'RO': _ro,
+    'RS': _rs,
+    'RU': _ru,
+    'RW': _rw,
+    'SA': _sa,
+    'SB': _sb,
+    'SC': _sc,
+    'SD': _sd,
+    'SE': _se,
+    'SG': _sg,
+    'SH': _sh,
+    'SI': _si,
+    'SJ': _sj,
+    'SK': _sk,
+    'SL': _sl,
+    'SM': _sm,
+    'SN': _sn,
+    'SO': _so,
+    'SR': _sr,
+    'SS': _ss,
+    'ST': _st,
+    'SV': _sv,
+    'SX': _sx,
+    'SY': _sy,
+    'SZ': _sz,
+    'TA': _ta,
+    'TC': _tc,
+    'TD': _td,
+    'TF': _tf,
+    'TG': _tg,
+    'TH': _th,
+    'TJ': _tj,
+    'TK': _tk,
+    'TL': _tl,
+    'TM': _tm,
+    'TN': _tn,
+    'TO': _to,
+    'TR': _tr,
+    'TT': _tt,
+    'TV': _tv,
+    'TW': _tw,
+    'TZ': _tz,
+    'UA': _ua,
+    'UG': _ug,
+    'UM': _um,
+    'UN': _un,
+    'US': _us,
+    'UY': _uy,
+    'UZ': _uz,
+    'VA': _va,
+    'VC': _vc,
+    'VE': _ve,
+    'VG': _vg,
+    'VI': _vi,
+    'VN': _vn,
+    'VU': _vu,
+    'WF': _wf,
+    'WS': _ws,
+    'XA': _xa,
+    'XB': _xb,
+    'XK': _xk,
+    'YE': _ye,
+    'YT': _yt,
+    'ZA': _za,
+    'ZM': _zm,
+    'ZW': _zw,
+    'ZZ': _zz,
+  };
+}
+
+class VariantsMy extends Variants {
+  const VariantsMy._(super.cld);
+
+  static const _$1901 = Variant('1901', 'ရှေးရိုးစဉ်လာ ဂျာမန် ရေးထုံး');
+  static const _$1996 = Variant('1996', '၁၉၉၆ ဂျာမန် ရေးထုံး');
+  static const _$1606NICT =
+      Variant('1606NICT', 'အလယ်ပိုင်းနောက်ကျသောပြင်သစ်မှ ၁၆၀၆');
+  static const _$1694ACAD = Variant('1694ACAD', '၁၆၉၄ACAD');
+  static const _arevela = Variant('AREVELA', 'အရှေ့ပိုင်းအာမေးနီးယန်း');
+  static const _baku1926 =
+      Variant('BAKU1926', 'ပေါင်းစပ်ထားသော တူရကီ လက်တင်စကားလုံး');
+  static const _fonipa = Variant('FONIPA', 'IPA အသံထွက်');
+  static const _fonupa = Variant('FONUPA', 'UPA အသံထွက်');
+  static const _posix = Variant('POSIX', 'ကွန်ပျူတာ');
+  static const _revised = Variant('REVISED', 'ပြန်လည်စီစစ်ထားသော ရေးထုံး');
+  static const _scotland = Variant('SCOTLAND', 'စကော့ စံ အင်္ဂလိပ်');
 
   @override
-  Territory get centralAmerica => Territory(
-        '013',
-        'ဗဟို အမေရိက',
-      );
+  final $1901 = _$1901;
+  @override
+  final $1996 = _$1996;
+  @override
+  final $1606NICT = _$1606NICT;
+  @override
+  final $1694ACAD = _$1694ACAD;
+  @override
+  final arevela = _arevela;
+  @override
+  final baku1926 = _baku1926;
+  @override
+  final fonipa = _fonipa;
+  @override
+  final fonupa = _fonupa;
+  @override
+  final posix = _posix;
+  @override
+  final revised = _revised;
+  @override
+  final scotland = _scotland;
 
   @override
-  Territory get easternAfrica => Territory(
-        '014',
-        'အရှေ့ အာဖရိက',
-      );
+  final variants = const {
+    '1901': _$1901,
+    '1996': _$1996,
+    '1606NICT': _$1606NICT,
+    '1694ACAD': _$1694ACAD,
+    'AREVELA': _arevela,
+    'BAKU1926': _baku1926,
+    'FONIPA': _fonipa,
+    'FONUPA': _fonupa,
+    'POSIX': _posix,
+    'REVISED': _revised,
+    'SCOTLAND': _scotland,
+  };
+}
+
+class SubdivisionsMy extends Subdivisions {
+  const SubdivisionsMy._(super.cld);
 
   @override
-  Territory get northernAfrica => Territory(
-        '015',
-        'မြောက် အာဖရိက',
-      );
+  final subdivisions = const {
+    'amer': 'ယေရေဗန်',
+    'arc': 'ဗျူနိုအေးရိစ်မြို့',
+    'arz': 'လော့စ်ဂလက်ဆရားရက်စ် အမျိုးသားဥယျာဉ်',
+    'at9': 'ဗီယင်နာမြို့',
+    'aunsw': 'နယူးဆောက်ဝေးပြည်နယ်',
+    'aunt': 'မြောက်ဩစတြေးလျပြည်နယ်',
+    'auqld': 'ကွင်းစလန်ပြည်နယ်',
+    'ausa': 'တောင်ဩစတြေးလီးယားပြည်နယ်',
+    'autas': 'တက်စမေးနီးယားကျွန်း',
+    'auvic': 'ဝိတိုရိယ ပြည်နယ်',
+    'auwa': 'အနောက်ဩစတြေးလျပြည်နယ်',
+    'azba': 'ဗားကူးမြို့',
+    'basrp': 'ဆာ့ပ်စ်ကာသမ္မတနိုင်ငံ',
+    'bebru': 'ဘရပ်ဆဲလ်မြို့',
+    'bram': 'အမေဇုံနက်စ်ပြည်နယ် (ဘရာဇီး ပြည်နယ်)',
+    'brba': 'ဘာဟီယာပြည်နယ်',
+    'brce': 'ဆီအာရာပြည်နယ်',
+    'brpa': 'ပါရာပြည်နယ်',
+    'brpb': 'ပါရိုင်ဘာပြည်နယ်',
+    'brpe': 'ပါနမ်ဘူကိုပြည်နယ်',
+    'brpr': 'ပါရာနာပြည်နယ်',
+    'brrj': 'ရီယိုဒီဂျနေးရိုးပြည်နယ်',
+    'brrs': 'ရီယိုဂရန်းဒေးဒိုဆူလ်ပြည်နယ်',
+    'brsp': 'ဆောပိုလိုမြို့',
+    'bt41': 'တြာရှီဂန်ခရိုင်',
+    'bt45': 'ဆမ်ဒြပ်ဂျုံခါရ် ခရိုင်',
+    'bwga': 'ဂါဘိုရိုနေမြို့',
+    'caab': 'အယ်လဗားတားပြည်နယ်',
+    'cabc': 'ဗြိတိသျှ ကိုလံဘီယာ ပြည်နယ်',
+    'camb': 'မနီတိုးဗားပြည်နယ်',
+    'canl': 'နယူးဖောင်လန် နှင့် လာဘရာဒေါ ပြည်နယ်',
+    'cans': 'နိုဗာစကိုးရှားပြည်နယ်',
+    'caon': 'အွန်တေးရီးယိုးပြည်နယ်',
+    'caqc': 'ကွီဗက်ပြည်နယ်',
+    'cask': 'ဆက်စကက်ချီဝမ်နယ်',
+    'cayt': 'ယူးကွန်းနယ်',
+    'cdkn': 'ကင်ရှာဆာမြို့',
+    'cfbgf': 'ဘန်ဂီမြို့',
+    'cgbzv': 'ဘရာဇာဗီးလ်မြို့',
+    'cnah': 'အန်းဟွေးပြည်နယ်',
+    'cnbj': 'ပေကျင်းမြို့',
+    'cncq': 'ချုံချင့်မြို့',
+    'cnfj': 'ဖူကျန့်ပြည်နယ်',
+    'cngd': 'ကွမ်တုန်းပြည်နယ်',
+    'cngs': 'ကန်းစုပြည်နယ်',
+    'cngx': 'ကွမ်ရှီး (ကျွမ့်ကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရဒေသ)',
+    'cnha': 'ဟယ်နန်',
+    'cnhb': 'ဟူပေပြည်နယ်',
+    'cnhk': 'ဟောင်ကောင်',
+    'cnhn': 'ဟူနန်ပြည်နယ်',
+    'cnln': 'လျောင်းနင်ပြည်နယ်',
+    'cnmo': 'မကာအို',
+    'cnsc': 'စီချွမ်',
+    'cnsh': 'ရှန်ဟိုင်းမြို့',
+    'cntj': 'ထျန်းကျင်းမြို့',
+    'cnxj': 'ရှင်းကျန်း',
+    'cnyn': 'ယူနန်ပြည်နယ်',
+    'cnzj': 'ကျဲ့ကျန်းပြည်နယ်',
+    'codc': 'ဘိုဂိုတာမြို့',
+    'cz10': 'ပရက်ဂ်မြို့',
+    'debe': 'ဘာလင်မြို့',
+    'deby': 'ဘာဗေးရီးယားပြည်နယ်',
+    'dehh': 'ဟမ်းဗတ်မြို့',
+    'escn': 'ကနေရီကျွန်းစု',
+    'esct': 'ကက်တလိုနီးယားနိုင်ငံ',
+    'etaa': 'အာဒစ် အာဘာဘာမြို့',
+    'fmtrk': 'ချုခ်ပြည်နယ်',
+    'fr20r': 'ကော်စီကာ',
+    'fr75c': 'ပါရီမြို့',
+    'fr971': 'ဂွါဒလ်ကျွန်း',
+    'fr972': 'မာတီနစ်',
+    'gbabe': 'အဘာဒင်းမြို့',
+    'gbans': 'အားအန်ဂက်စ်၊ စကော့တလန်',
+    'gbcrf': 'ကားဒစ်မြို့',
+    'gbdby': 'ဒါဘီရှိုင်းယား',
+    'gbedh': 'အက်ဒင်ဗာရာမြို့',
+    'gbeng': 'အင်္ဂလန်နိုင်ငံ',
+    'gbesx': 'အိစက်စက်',
+    'gbglg': 'ဂလပ်စဂိုးမြို့',
+    'gbiow': 'အယ်လော့ဝိုက်',
+    'gblnd': 'လန်ဒန်မြို့',
+    'gbnir': 'မြောက်အိုင်ယာလန်နိုင်ငံ',
+    'gboxf': 'အောက်စဖို့မြို့',
+    'gbsct': 'စကော့တလန်နိုင်ငံ',
+    'gbsom': 'ဆမ်းမားဆတ်',
+    'gbsth': 'ဆောက်သမ္ပတန်မြို့',
+    'gbukm': 'ယူနိုက်တက် ကင်းဒမ်း',
+    'gbwls': 'ဝေလနိုင်ငံ',
+    'hubu': 'ဗူးဒပက်မြို့',
+    'idji': 'အရှေ့ ဂျာဗား',
+    'idjk': 'ဂျကာတာမြို့',
+    'idjw': 'ဂျားဗားကျွန်း',
+    'idki': 'အရှေ့ကာလီမန်တန်ပြည်နယ်',
+    'idkt': 'အလယ်ပိုင်း ကာလီမန်တန်',
+    'idku': 'မြောက်ကာလီမန်တန်ပြည်နယ်',
+    'idsl': 'ဆူလာဝေစီကျွန်း',
+    'idsm': 'ဆူမတြာကျွန်း',
+    'inan': 'ကပ္ပလီကျွန်း',
+    'inap': 'အန်ဒရာပရာဒစ် ပြည်နယ်',
+    'inar': 'အရုဏာစလပဒေသပြည်နယ်',
+    'inas': 'အာသံပြည်နယ်',
+    'inbr': 'ဘီဟာပြည်နယ်',
+    'incg': 'ဆတ္တိံသဂြဟပြည်နယ်',
+    'indl': 'ဒေလီမြို့',
+    'inga': 'ဂိုအာ',
+    'ingj': 'ဂုဇရာတ်',
+    'inhp': 'ဟိမာစလပဒေသပြည်နယ်',
+    'inhr': 'ဟရိယာဏာပြည်နယ်',
+    'injh': 'ဈာရခဏ္ဍပြည်နယ်',
+    'injk': 'ဂျမ်မူး နှင့် ကက်ရှမီးယားပြည်နယ်',
+    'inka': 'ကာနာတာကာပြည်နယ်',
+    'inla': 'လာတက်',
+    'inmh': 'မဟာရဋ္ဌပြည်နယ်',
+    'inml': 'မေဃာလယ',
+    'inmn': 'မဏိပူရပြည်နယ်',
+    'inmp': 'မဇ္ဈဒေသ ပြည်နယ်',
+    'inmz': 'မီဇိုရမ်ပြည်နယ်',
+    'innl': 'နာဂလန်ပြည်နယ်',
+    'inod': 'သြရိဿပြည်နယ်',
+    'inrj': 'ရာဇဌာန်ပြည်နယ်',
+    'insk': 'ဆစ်ကင်ပြည်နယ်',
+    'intn': 'မဒရပ်ပြည်နယ်',
+    'intr': 'တြိပူရပြည်နယ်',
+    'ints': 'တေလံဂါနာပြည်နယ်',
+    'inup': 'ဥတ်တရဒသေ',
+    'it62': 'လာဇီယို',
+    'it82': 'စစ္စလီကျွန်း',
+    'it88': 'ဆာဒင်းနီးယားကျွန်း',
+    'itve': 'ဗင်းနစ်မြို့',
+    'jp02': 'အအိုမိုရိခရိုင်',
+    'jp13': 'တိုကျိုမြို့',
+    'jp25': 'ရှိဂါ့စီရင်စု',
+    'kggb': 'ဘီရှကက်မြို့',
+    'kh12': 'ဖနွမ်းပင်မြို့',
+    'kp01': 'ပြုံယမ်းမြို့',
+    'kr11': 'ဆိုးလ်မြို့',
+    'kr26': 'ဘူဆန်မြို့',
+    'kr27': 'ဒယ်ဂူမြို့',
+    'kr28': 'အင်ချွန်းမြို့',
+    'kr29': 'ဂွမ်းဂျူမြို့',
+    'kr30': 'ဒယ်ဂျောန်မြို့',
+    'kr31': 'အောလ်ဆန်မြို့',
+    'kr41': 'ဂယောင်းဂီတိုင်း',
+    'kr50': 'ဆဲဂျွံမြို့',
+    'kz71': 'နျူ-ဆူလ်တန်မြို့',
+    'lalm': 'လွမ်နမ်ထာပြည်နယ်',
+    'lvrix': 'ရီဂါမြို့',
+    'macas': 'ကာဆာဘလန်ကာမြို့',
+    'mamar': 'မာရကက်ရှ်မြို့',
+    'matng': 'တန်ဂျီးယားမြို့',
+    'mcmc': 'မွန်တီကာလိုမြို့',
+    'mm01': 'စစ်ကိုင်းတိုင်း',
+    'mm02': 'ပဲခူးတိုင်း',
+    'mm03': 'မကွေးတိုင်း',
+    'mm04': 'မန္တလေးတိုင်း',
+    'mm05': 'တနင်္သာရီတိုင်း',
+    'mm06': 'ရန်ကုန်တိုင်း',
+    'mm07': 'ဧရာဝတီတိုင်း',
+    'mm11': 'ကချင်ပြည်နယ်',
+    'mm12': 'ကယားပြည်နယ်',
+    'mm13': 'ကရင်ပြည်နယ်',
+    'mm14': 'ချင်းပြည်နယ်',
+    'mm15': 'မွန်ပြည်နယ်',
+    'mm16': 'ရခိုင်ပြည်နယ်',
+    'mm17': 'ရှမ်းပြည်နယ်',
+    'mm18': 'နေပြည်တော် ပြည်ထောင်စုနယ်မြေ',
+    'mn1': 'ဦလန်ဘာတာမြို့',
+    'mt60': 'ဗယ်လက်တာမြို့',
+    'mvmle': 'မာလေမြို့',
+    'mxcmx': 'မက္ကဆီကိုမြို့',
+    'mxoax': 'အိုအေဂျေစီအ',
+    'mxver': 'ဗေရကရုမြို့',
+    'my12': 'ဆာဘား',
+    'my13': 'ဆာရာဝပ်နယ်',
+    'my14': 'ကွာလာလမ်ပူမြို့',
+    'no03': 'အော့စလိုမြို့',
+    'no18': 'နို့ဒ်လန်းဒ်',
+    'ph00': 'မက်ထရို မနီလာ',
+    'ph01': 'အီလိုကော့',
+    'ph02': 'ကာဂယံတောင်ကြားဒေသ',
+    'ph03': 'အလယ်လူဇွန်',
+    'ph08': 'အရှေ့ဝိစာရ',
+    'ph10': 'မြောက်မင်းဒနောင်',
+    'ph40': 'ကလဘားဇွန်',
+    'phpan': 'ပန်ဂါဆီနန်',
+    'pkpb': 'ပန်ဂျပ်၊ ပါကစ္စတန်',
+    'pt30': 'မဒီးရကျွန်းများ',
+    'pyasu': 'အာဆွန်စီယွန်မြို့',
+    'qada': 'ဒိုဟာမြို့',
+    'rob': 'ဗူးခရက်မြို့',
+    'rumow': 'မော်စကိုမြို့',
+    'ruspe': 'စိန့်ပီတာစဘတ်မြို့',
+    'ruta': 'တာ့တာစတန်',
+    'th10': 'ဘန်ကောက်မြို့',
+    'th12': 'နွန်ထဘူရီပြည်နယ်',
+    'th14': 'ဘုရာ့နခွန်စီအယုဓယပြည်နယ်',
+    'th20': 'ချွန်ဘူရီ ပြည်နယ်',
+    'th46': 'ကာဠသိန္ဓုပြည်နယ်',
+    'th55': 'နန်းပြည်နယ်',
+    'th61': 'ဥဒယဌာနီပြည်နယ်',
+    'th63': 'တာ့ခ်ခရိုင်',
+    'th71': 'ကန်ချနဘူရီ ခရိုင်',
+    'th77': 'ပရာချုပ်ဂီရီခဏ္ဍပြည်နယ်',
+    'ths': 'ပတ္တရားမြို့',
+    'tjdu': 'ဒူရှန်ဘဲမြို့',
+    'tms': 'အက်ရှ်ဂါဘတ်မြို့',
+    'twkhh': 'ကောင်းရှုံမြို့',
+    'twnwt': 'ထိုင်ပေမြို့သစ်',
+    'twtpe': 'ထိုင်ပေမြို့',
+    'ua30': 'ကီးယက်မြို့',
+    'ua40': 'ဆီပတ်စတိုပိုမြို့',
+    'usak': 'အလက်စကာပြည်နယ်',
+    'usal': 'အလာဘားမားပြည်နယ်',
+    'usar': 'အာကင်ဆောပြည်နယ်',
+    'usaz': 'အရီဇိုးနားပြည်နယ်',
+    'usca': 'ကယ်လီဖိုးနီးယားပြည်နယ်',
+    'usco': 'ကော်လိုရာဒိုပြည်နယ်',
+    'usct': 'ကွန်နက်တီကတ်ပြည်နယ်',
+    'usde': 'ဒယ်လာဝဲပြည်နယ်',
+    'usfl': 'ဖလော်ရီဒါပြည်နယ်',
+    'usga': 'ဂျော်ဂျီယာပြည်နယ်',
+    'ushi': 'ဟာဝိုင်ယီပြည်နယ်',
+    'usia': 'အိုင်အိုဝါပြည်နယ်',
+    'usid': 'အိုင်ဒါဟိုပြည်နယ်',
+    'usil': 'အီလီနွိုင်းပြည်နယ်',
+    'usin': 'အင်ဒီယားနားပြည်နယ်',
+    'usks': 'ကန်းဆပ်ပြည်နယ်',
+    'usky': 'ကင်တပ်ကီပြည်နယ်',
+    'usla': 'လူဝီစီယားနားပြည်နယ်',
+    'usma': 'မက်ဆာချူးဆက်ပြည်နယ်',
+    'usmd': 'မေရီလန်းပြည်နယ်',
+    'usme': 'မိန်းပြည်နယ်',
+    'usmi': 'မီချီဂန်ပြည်နယ်',
+    'usmn': 'မင်နီဆိုးတားပြည်နယ်',
+    'usmo': 'မစ်ဆိုရီပြည်နယ်',
+    'usms': 'မစ္စစ္စပီပြည်နယ်',
+    'usmt': 'မွန်တားနားပြည်နယ်',
+    'usnc': 'မြောက်ကယ်ရိုလိုင်းနားပြည်နယ်',
+    'usnd': 'မြောက်ဒါကိုတာပြည်နယ်',
+    'usne': 'နီဘရားစကားပြည်နယ်',
+    'usnh': 'နယူးဟမ်ရှိုင်းယားပြည်နယ်',
+    'usnj': 'နယူးဂျာစီပြည်နယ်',
+    'usnm': 'နယူးမက္ကဆီကိုပြည်နယ်',
+    'usnv': 'နီဗားဒါးပြည်နယ်',
+    'usny': 'နယူးယောက်ပြည်နယ်',
+    'usoh': 'အိုဟိုင်းယိုးပြည်နယ်',
+    'usok': 'ဥက္ကလာဟိုးမားပြည်နယ်',
+    'usor': 'အိုရီဂွန်ပြည်နယ်',
+    'uspa': 'ပင်ဆယ်ဗေးနီးယားပြည်နယ်',
+    'usri': 'ရုဒ်အိုင်းလန်းပြည်နယ်',
+    'ussc': 'တောင်ကယ်ရိုလိုင်းနားပြည်နယ်',
+    'ussd': 'တောင်ဒါကိုတာပြည်နယ်',
+    'ustn': 'တင်နက်ဆီပြည်နယ်',
+    'ustx': 'တက္ကဆပ်ပြည်နယ်',
+    'usut': 'ယူးတားပြည်နယ်',
+    'usva': 'ဗာဂျီးနီးယားပြည်နယ်',
+    'usvt': 'ဗားမောင့်ပြည်နယ်',
+    'uswa': 'ဝါရှင်တန်ပြည်နယ်',
+    'uswi': 'ဝစ္စကွန်းဆင်းပြည်နယ်',
+    'uswv': 'အနောက် ဗာဂျီးနီးယားပြည်နယ်',
+    'uswy': 'ဝိုင်အိုးမင်းပြည်နယ်',
+    'uymo': 'မွန်တီဗစ်ဒီအိုမြို့',
+    'uztk': 'တာ့ရှ်ကန့်မြို့',
+    'vn01': 'လိုင်ချောင်ပြည်နယ်',
+    'vn02': 'လောင်ကိုင်ပြည်နယ်',
+    'vn03': 'ဟာကျန်ပြည်နယ်',
+    'vn07': 'တူယန်ကွမ်းပြည်နယ်',
+    'vnct': 'ကန်သို',
+    'vndn': 'ဒါနန်မြို့',
+    'vnhn': 'ဟနွိုင်းမြို့',
+    'vnsg': 'ဟိုချီမင်းစီးတီး',
+    'zafs': 'ဩရိန်းပြည်နယ်',
+  };
+}
+
+class CurrenciesMy extends Currencies {
+  const CurrenciesMy._(super.cld);
+
+  static const _aed =
+      Currency(_cld, 'AED', 'အာရပ်စော်ဘွားများ ပြည်ထောင်စု ဒါဟမ်း');
+  static const _afn =
+      Currency(_cld, 'AFN', 'အာဖဂန် အာဖဂါနီ', symbolNarrow: '؋');
+  static const _all = Currency(_cld, 'ALL', 'အယ်ဘေးနီးယား လီခ်');
+  static const _amd =
+      Currency(_cld, 'AMD', 'အာမေးနီးယား ဒရမ်', symbolNarrow: '֏');
+  static const _ang =
+      Currency(_cld, 'ANG', 'နယ်သာလန် အန်တီလန် ဂင်းဒါး', symbol: 'NAf');
+  static const _aoa =
+      Currency(_cld, 'AOA', 'အန်ဂိုလာ ကွမ်ဇာ', symbolNarrow: 'Kz');
+  static const _arp = Currency(_cld, 'ARP', 'အာဂျင်တီးနား ပီဆို (၁၉၈၃–၁၉၈၅)');
+  static const _ars =
+      Currency(_cld, 'ARS', 'အာဂျင်တီးနား ပီဆို', symbolNarrow: r'$');
+  static const _aud = Currency(_cld, 'AUD', 'ဩစတြေးလျ ဒေါ်လာ',
+      symbol: r'A$', symbolNarrow: r'$');
+  static const _awg = Currency(_cld, 'AWG', 'အရူးဗာ ဖလိုရင်း', symbol: 'Afl');
+  static const _azn =
+      Currency(_cld, 'AZN', 'အဇာဘိုင်ဂျန် မာနတ်', symbolNarrow: '₼');
+  static const _bam = Currency(
+      _cld, 'BAM', 'ဘော့စနီးယားနှင့် ဟာဇီဂိုဘီးနား ငွေလဲနိုင်သော မတ်က်',
+      other: 'ဘော့စနီးယားနှင့် ဟာဇီဂိုဘီးနားမတ်က်', symbolNarrow: 'KM');
+  static const _bbd =
+      Currency(_cld, 'BBD', 'ဘာဘေးဒိုးစ် ဒေါ်လာ', symbolNarrow: r'Bds$');
+  static const _bdt =
+      Currency(_cld, 'BDT', 'ဘင်္ဂလားဒေ့ရှ် တာကာ', symbolNarrow: '৳');
+  static const _bef = Currency(_cld, 'BEF', 'ဘယ်လ်ဂျီယမ် ဖရန့်');
+  static const _bgn = Currency(_cld, 'BGN', 'ဘူလ်ဂေးရီးယား လက်ဖ်');
+  static const _bhd = Currency(_cld, 'BHD', 'ဘာရိန်း ဒီနား');
+  static const _bif = Currency(_cld, 'BIF', 'ဘူရွန်ဒီ ဖရန့်');
+  static const _bmd =
+      Currency(_cld, 'BMD', 'ဘာမြူဒါ ဒေါ်လာ', symbolNarrow: r'$');
+  static const _bnd =
+      Currency(_cld, 'BND', 'ဘရူနိုင်း ဒေါ်လာ', symbolNarrow: r'$');
+  static const _bob =
+      Currency(_cld, 'BOB', 'ဘိုလီးဗီးယား ဘိုလီးဗီယားနို', symbolNarrow: 'Bs');
+  static const _bop = Currency(_cld, 'BOP', 'ဘိုလီးဘီးယား ပီဆို');
+  static const _brl =
+      Currency(_cld, 'BRL', 'ဘရာဇီး ရီးယဲ', symbol: r'R$', symbolNarrow: r'R$');
+  static const _bsd =
+      Currency(_cld, 'BSD', 'ဘဟားမား ဒေါ်လာ', symbolNarrow: r'B$');
+  static const _btn = Currency(_cld, 'BTN', 'ဘူတန် အံဂါလ်ထရန်');
+  static const _buk = Currency(_cld, 'BUK', 'ဗမာ ကျပ်');
+  static const _bwp = Currency(_cld, 'BWP', 'ဘော့ဆွာနာ ပုလ', symbolNarrow: 'P');
+  static const _byb = Currency(_cld, 'BYB', 'ဘီလာရုစ် ရူဘယ်အသစ် (၁၉၉၄–၁၉၉၉)');
+  static const _byn =
+      Currency(_cld, 'BYN', 'ဘီလာရုစ် ရူဘယ်', symbolNarrow: 'р.');
+  static const _byr = Currency(_cld, 'BYR', 'ဘီလာရုဇ် ရူဘယ် (၂၀၀၀–၂၀၁၆)');
+  static const _bzd = Currency(_cld, 'BZD', 'ဘလိဇ် ဒေါ်လာ', symbolNarrow: r'$');
+  static const _cad =
+      Currency(_cld, 'CAD', 'ကနေဒါ ဒေါ်လာ', symbol: r'CA$', symbolNarrow: r'$');
+  static const _cdf = Currency(_cld, 'CDF', 'ကွန်ဂို ဖရန့်');
+  static const _chf = Currency(_cld, 'CHF', 'ဆွစ် ဖရန့်');
+  static const _clp = Currency(_cld, 'CLP', 'ချီလီ ပီဆို', symbolNarrow: r'$');
+  static const _cnh = Currency(_cld, 'CNH', 'တရုတ် ယွမ် (ဟောင်ကောင်)');
+  static const _cny =
+      Currency(_cld, 'CNY', 'တရုတ် ယွမ်', symbol: 'CN¥', symbolNarrow: '¥');
+  static const _cop =
+      Currency(_cld, 'COP', 'ကိုလံဘီယာ ပီဆို', symbolNarrow: r'$');
+  static const _crc =
+      Currency(_cld, 'CRC', 'ကို့စတာရီကာ ကိုလွန်', symbolNarrow: '₡');
+  static const _cuc = Currency(
+      _cld, 'CUC', 'နိုင်ငံခြားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို',
+      symbolNarrow: r'$');
+  static const _cup =
+      Currency(_cld, 'CUP', 'ကျူးဘား ပီဆို', symbolNarrow: r'$');
+  static const _cve = Currency(_cld, 'CVE', 'ကိတ်ပ်ဗာဒီ အက်စ်ခူဒို');
+  static const _cyp = Currency(_cld, 'CYP', 'ဆိုက်ပရက်စ် ပေါင်');
+  static const _czk =
+      Currency(_cld, 'CZK', 'ချက် ခိုရိုနာ', symbolNarrow: 'Kč');
+  static const _dem = Currency(_cld, 'DEM', 'ဂျာမဏီ မတ်');
+  static const _djf = Currency(_cld, 'DJF', 'ဂျီဘူတီ ဖရန့်');
+  static const _dkk =
+      Currency(_cld, 'DKK', 'ဒိန်းမတ် ခရိုဏာ', symbolNarrow: 'kr');
+  static const _dop =
+      Currency(_cld, 'DOP', 'ဒိုမီနီကန် ပီဆို', symbolNarrow: r'$');
+  static const _dzd = Currency(_cld, 'DZD', 'အယ်လ်ဂျီးရီးယား ဒီနာ');
+  static const _egp = Currency(_cld, 'EGP', 'အီဂျစ် ပေါင်', symbolNarrow: 'E£');
+  static const _ern = Currency(_cld, 'ERN', 'အီရီထရီးယား နာ့ခ်ဖာ');
+  static const _esp =
+      Currency(_cld, 'ESP', 'စပိန် ပယ်စေးတာ', symbolNarrow: '₧');
+  static const _etb = Currency(_cld, 'ETB', 'အီသီယိုးပီးယား ဘီးယာ');
+  static const _eur =
+      Currency(_cld, 'EUR', 'ယူရို', symbol: '€', symbolNarrow: '€');
+  static const _fjd = Currency(_cld, 'FJD', 'ဖီဂျီ ဒေါ်လာ', symbolNarrow: r'$');
+  static const _fkp =
+      Currency(_cld, 'FKP', 'ဖော့ကလန်ကျွန်းစု ပေါင်', symbolNarrow: '£');
+  static const _frf = Currency(_cld, 'FRF', 'ပြင်သစ် ဖရန့်');
+  static const _gbp =
+      Currency(_cld, 'GBP', 'ဗြိတိသျှ ပေါင်', symbol: '£', symbolNarrow: '£');
+  static const _gel =
+      Currency(_cld, 'GEL', 'ဂျော်ဂျီယာ လားရီ', symbolNarrow: '₾');
+  static const _ghs = Currency(_cld, 'GHS', 'ဂါနာ ဆဲဒီ', symbolNarrow: 'GH₵');
+  static const _gip =
+      Currency(_cld, 'GIP', 'ဂျီဘရော်လ်တာ ပေါင်', symbolNarrow: '£');
+  static const _gmd = Currency(_cld, 'GMD', 'ဂမ်ဘီယာ ဒါလာစီ');
+  static const _gnf = Currency(_cld, 'GNF', 'ဂီနီရာ ဖရန့်', symbolNarrow: 'FG');
+  static const _gtq =
+      Currency(_cld, 'GTQ', 'ဂွါတီမာလာ ခက်ဇော်လ်', symbolNarrow: 'Q');
+  static const _gyd =
+      Currency(_cld, 'GYD', 'ဂိုင်ယာနာ ဒေါ်လာ', symbolNarrow: r'$');
+  static const _hkd = Currency(_cld, 'HKD', 'ဟောင်ကောင် ဒေါ်လာ',
+      symbol: r'HK$', symbolNarrow: r'$');
+  static const _hnl =
+      Currency(_cld, 'HNL', 'ဟွန်ဒူးရပ်စ် လမ်းပီရာ', symbolNarrow: 'L');
+  static const _hrk =
+      Currency(_cld, 'HRK', 'ခရိုအေးရှား ခူးနာ', symbolNarrow: 'kn');
+  static const _htg = Currency(_cld, 'HTG', 'ဟေတီဂူးအော်ဒ်', symbol: 'G');
+  static const _huf =
+      Currency(_cld, 'HUF', 'ဟန်ဂေရီယံ ဖော်ရင့်တ်', symbolNarrow: 'Ft');
+  static const _idr =
+      Currency(_cld, 'IDR', 'အင်ဒိုနီးရှား ရူပီးယား', symbolNarrow: 'Rp');
+  static const _ilp = Currency(_cld, 'ILP', 'အစ္စရေး ပေါင်');
+  static const _ils = Currency(_cld, 'ILS', 'အစ္စရေး ရှဲကလ်အသစ်',
+      symbol: '₪', symbolNarrow: '₪');
+  static const _inr =
+      Currency(_cld, 'INR', 'အိန္ဒိယ ရူပီး', symbol: '₹', symbolNarrow: '₹');
+  static const _iqd = Currency(_cld, 'IQD', 'အီရတ် ဒီနာ');
+  static const _irr = Currency(_cld, 'IRR', 'အီရန် ရီအော်လ်');
+  static const _isk =
+      Currency(_cld, 'ISK', 'အိုက်စလန် ခရိုဏာ', symbolNarrow: 'kr');
+  static const _jmd =
+      Currency(_cld, 'JMD', 'ဂျမေကာ ဒေါ်လာ', symbolNarrow: r'$');
+  static const _jod = Currency(_cld, 'JOD', 'ဂျော်ဒန် ဒီနာ');
+  static const _jpy =
+      Currency(_cld, 'JPY', 'ဂျပန် ယန်း', symbol: 'JP¥', symbolNarrow: '¥');
+  static const _kes = Currency(_cld, 'KES', 'ကင်ညာ သျှီလင်');
+  static const _kgs =
+      Currency(_cld, 'KGS', 'ကာဂျစ္စတန် ဆော်မ်', symbolNarrow: '⃀');
+  static const _khr =
+      Currency(_cld, 'KHR', 'ကမ္ဘောဒီးယား ရီးယဲ', symbolNarrow: '៛');
+  static const _kmf =
+      Currency(_cld, 'KMF', 'ကိုမိုရိုစ် ဖရန့်', symbolNarrow: 'CF');
+  static const _kpw =
+      Currency(_cld, 'KPW', 'မြောက်ကိုရီးယား ဝမ်', symbolNarrow: '₩');
+  static const _krw = Currency(_cld, 'KRW', 'တောင်ကိုရီးယား ဝမ်',
+      symbol: '₩', symbolNarrow: '₩');
+  static const _kwd = Currency(_cld, 'KWD', 'ကူဝိတ် ဒီနာ');
+  static const _kyd =
+      Currency(_cld, 'KYD', 'ကေမန် ကျွန်းစု ဒေါ်လာ', symbolNarrow: r'$');
+  static const _kzt =
+      Currency(_cld, 'KZT', 'ကာဇက်စတန် ထိန်ဂျီ', symbolNarrow: '₸');
+  static const _lak = Currency(_cld, 'LAK', 'လာအို ကစ်', symbolNarrow: '₭');
+  static const _lbp =
+      Currency(_cld, 'LBP', 'လက်ဘနွန် ပေါင်', symbolNarrow: 'L£');
+  static const _lkr =
+      Currency(_cld, 'LKR', 'သီရိလင်္ကာ ရူပီး', symbolNarrow: 'Rs');
+  static const _lrd =
+      Currency(_cld, 'LRD', 'လိုက်ဘေးရီးယား ဒေါ်လာ', symbolNarrow: r'$');
+  static const _lsl =
+      Currency(_cld, 'LSL', 'လီဆိုသို လိုတီ', other: 'လီဆိုသို လိုတီစ်');
+  static const _ltl =
+      Currency(_cld, 'LTL', 'လစ်သူယေးနီးယားလီတားစ်', symbolNarrow: 'Lt');
+  static const _lvl = Currency(_cld, 'LVL', 'လတ်ဗီးယားလတ်', symbolNarrow: 'Ls');
+  static const _lyd = Currency(_cld, 'LYD', 'လစ်ဗျား ဒိုင်နာ');
+  static const _mad = Currency(_cld, 'MAD', 'မိုရိုကို ဒရမ်');
+  static const _mdl = Currency(_cld, 'MDL', 'မောလ်ဒိုဗာ လယ်အို');
+  static const _mga =
+      Currency(_cld, 'MGA', 'မာလာဂါစီ အရီရရီ', symbolNarrow: 'Ar');
+  static const _mkd = Currency(_cld, 'MKD', 'မက်ဆီဒိုးနီးယား ဒီနာ');
+  static const _mmk =
+      Currency(_cld, 'MMK', 'မြန်မာ ကျပ်', symbol: 'K', symbolNarrow: 'K');
+  static const _mnt =
+      Currency(_cld, 'MNT', 'မွန်ဂိုးလီးယား ထူးဂရခ်', symbolNarrow: '₮');
+  static const _mop = Currency(_cld, 'MOP', 'မကာအို ပါတားကား');
+  static const _mro =
+      Currency(_cld, 'MRO', 'မော်ရီတေးနီးယား အူဂီးယာ (၁၉၇၃–၂၀၁၇)');
+  static const _mru = Currency(_cld, 'MRU', 'မော်ရီတေးနီးယန်း အူဂီးယာ');
+  static const _mur =
+      Currency(_cld, 'MUR', 'မောရစ်ရှ ရူပီး', symbolNarrow: 'Rs');
+  static const _mvr = Currency(_cld, 'MVR', 'မော်လ်ဒိုက် ရူးဖီရာ');
+  static const _mwk = Currency(_cld, 'MWK', 'မာလာဝီ ခွါးချာ');
+  static const _mxn = Currency(_cld, 'MXN', 'မက်ကဆီကို ပီဆို',
+      symbol: r'MX$', symbolNarrow: r'$');
+  static const _myr =
+      Currency(_cld, 'MYR', 'မလေးရှား ရင်းဂစ်', symbolNarrow: 'RM');
+  static const _mzn = Currency(_cld, 'MZN', 'မိုဇမ်ဘစ် မက်တီခယ်လ်');
+  static const _nad =
+      Currency(_cld, 'NAD', 'နမီးဘီးယား ဒေါ်လာ', symbolNarrow: r'$');
+  static const _ngn =
+      Currency(_cld, 'NGN', 'နိုင်ဂျီးရီးယား နိုင်းရာ', symbolNarrow: '₦');
+  static const _nio =
+      Currency(_cld, 'NIO', 'နီကာရာဂွါ ခိုးဒိုဘာ', symbolNarrow: r'C$');
+  static const _nok =
+      Currency(_cld, 'NOK', 'နော်ဝေ ခရိုဏာ', symbolNarrow: 'kr');
+  static const _npr = Currency(_cld, 'NPR', 'နီပေါ ရူပီး', symbolNarrow: 'Rs');
+  static const _nzd = Currency(_cld, 'NZD', 'နယူးဇီလန် ဒေါ်လာ',
+      symbol: r'NZ$', symbolNarrow: r'$');
+  static const _omr = Currency(_cld, 'OMR', 'အိုမန်နီ ရီရယ်');
+  static const _pab = Currency(_cld, 'PAB', 'ပနားမား ဘလျဘိုးအာ', symbol: 'B/.');
+  static const _pen = Currency(_cld, 'PEN', 'ပီရူး ဆိုးလ်');
+  static const _pgk = Currency(_cld, 'PGK', 'ပါပူအာ နယူးဂီနီ ခီးနာ');
+  static const _php =
+      Currency(_cld, 'PHP', 'ဖိလစ်ပိုင် ပီဆို', symbol: '₱', symbolNarrow: '₱');
+  static const _pkr =
+      Currency(_cld, 'PKR', 'ပါကစ္စတန် ရူပီး', symbolNarrow: 'Rs');
+  static const _pln =
+      Currency(_cld, 'PLN', 'ပိုလန် ဇလော့တီ', symbolNarrow: 'zł');
+  static const _pyg =
+      Currency(_cld, 'PYG', 'ပါရာဂွေး ဂွါးအ်နီး', symbolNarrow: '₲');
+  static const _qar = Currency(_cld, 'QAR', 'ကာတာရီ ရီရယ်');
+  static const _ron =
+      Currency(_cld, 'RON', 'ရိုမေးနီးယား လယ်အို', symbolNarrow: 'lei');
+  static const _rsd = Currency(_cld, 'RSD', 'ဆားဘီးယား ဒယ်နား');
+  static const _rub = Currency(_cld, 'RUB', 'ရုရှ ရူဘယ်', symbolNarrow: '₽');
+  static const _rur = Currency(_cld, 'RUR', 'ရုရှ ရူဘယ် (၁၉၉၁–၁၉၉၈)');
+  static const _rwf = Currency(_cld, 'RWF', 'ရဝန်ဒါ ဖရန့်', symbolNarrow: 'RF');
+  static const _sar = Currency(_cld, 'SAR', 'ဆော်ဒီအာရေးဗီးယား ရီယော်လ်');
+  static const _sbd =
+      Currency(_cld, 'SBD', 'ဆော်လမွန်ကျွန်းစု ဒေါ်လာ', symbolNarrow: r'$');
+  static const _scr = Currency(_cld, 'SCR', 'ဆေးရှဲ ရူပီး');
+  static const _sdg = Currency(_cld, 'SDG', 'ဆူဒန် ပေါင်');
+  static const _sdp = Currency(_cld, 'SDP', 'ဆူဒန် ပေါင်အဟောင်း');
+  static const _sek =
+      Currency(_cld, 'SEK', 'ဆွီဒင် ခရိုဏာ', symbolNarrow: 'kr');
+  static const _sgd =
+      Currency(_cld, 'SGD', 'စင်္ကာပူ ဒေါ်လာ', symbolNarrow: r'$');
+  static const _shp =
+      Currency(_cld, 'SHP', 'စိန့်ဟယ်လယ်နာ ပေါင်', symbolNarrow: '£');
+  static const _sle = Currency(_cld, 'SLE', 'ဆီယာရာလီယွန်း လီအိုနီ');
+  static const _sll = Currency(_cld, 'SLL', 'ဆီယာရာလီယွန်း လီအိုနီ (၁၉၆၄—၂၀၂၂)',
+      other: 'ဆီယာရာလီယွန်း လီအိုနီ (၁၉၆၄—၂၀၂၂)');
+  static const _sos = Currency(_cld, 'SOS', 'ဆိုမာလီ သျှီလင်');
+  static const _srd =
+      Currency(_cld, 'SRD', 'ဆူရီနမ်း ဒေါ်လာ', symbolNarrow: r'$');
+  static const _ssp =
+      Currency(_cld, 'SSP', 'တောင်ဆူဒန် ပေါင်', symbolNarrow: '£');
+  static const _std = Currency(_cld, 'STD', 'ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာ');
+  static const _stn = Currency(
+      _cld, 'STN', 'ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာ (၂၀၁၈)',
+      other: 'ဆောင်တူမေးနှင့် ပရင်စီပီ ဒိုဘရာစ် (၂၀၁၈)', symbolNarrow: 'Db');
+  static const _sur = Currency(_cld, 'SUR', 'ဆိုဗီယက် ရူဗယ်');
+  static const _syp =
+      Currency(_cld, 'SYP', 'ဆီးရီးယား ပေါင်', symbolNarrow: '£');
+  static const _szl = Currency(_cld, 'SZL', 'ဆွာဇီလန် လီလန်းဂီနီ');
+  static const _thb =
+      Currency(_cld, 'THB', 'ထိုင်း ဘတ်', symbol: '฿', symbolNarrow: '฿');
+  static const _tjs = Currency(_cld, 'TJS', 'တာဂျစ်ကစ္စတန် ဆိုမိုနီ');
+  static const _tmt = Currency(_cld, 'TMT', 'တာ့ခ်မင်နစ္စတန် မာနတ်');
+  static const _tnd = Currency(_cld, 'TND', 'တူနီးရှား ဒိုင်နာ');
+  static const _top =
+      Currency(_cld, 'TOP', 'တွန်ဂါ ဗန်ဂါ', symbolNarrow: r'T$');
+  static const _trl = Currency(_cld, 'TRL', 'ရှေးဟောင်းတူရကီ လိုင်ရာ');
+  static const _$try = Currency(_cld, 'TRY', 'တူရကီ လိုင်ရာ',
+      symbolNarrow: '₺', symbolVariant: 'TL');
+  static const _ttd = Currency(_cld, 'TTD', 'ထရီနီဒတ်နှင့် တိုဘက်ဂို ဒေါ်လာ',
+      symbol: r'TT$', symbolNarrow: r'$');
+  static const _twd = Currency(_cld, 'TWD', 'ထိုင်ဝမ် ဒေါ်လာအသစ်',
+      symbol: r'NT$', symbolNarrow: r'$');
+  static const _tzs = Currency(_cld, 'TZS', 'တန်ဇန်းနီးယား သျှီလင်');
+  static const _uah =
+      Currency(_cld, 'UAH', 'ယူကရိန်း ဟီရီဗင်းညား', symbolNarrow: '₴');
+  static const _ugx = Currency(_cld, 'UGX', 'ယူဂန္ဒာ သျှီလင်');
+  static const _usd = Currency(_cld, 'USD', 'အမေရိကန် ဒေါ်လာ',
+      symbol: r'US$', symbolNarrow: r'$');
+  static const _usn = Currency(_cld, 'USN', 'အမေရိကန် ဒေါ်လာ (နောက်နေ့)');
+  static const _uss = Currency(_cld, 'USS', 'အမေရိကန် ဒေါ်လာ (တနေ့တည်း)');
+  static const _uyu =
+      Currency(_cld, 'UYU', 'ဥရုဂွေး ပီဆို', symbolNarrow: r'$');
+  static const _uzs = Currency(_cld, 'UZS', 'ဥဇဘက်ကစ္စတန် ဆော်မ်');
+  static const _vef = Currency(_cld, 'VEF', 'ဗင်နီဇွဲလား ဘိုလီဗာ (၂၀၀၈–၂၀၁၈)',
+      symbolNarrow: 'Bs');
+  static const _ves = Currency(_cld, 'VES', 'ဗင်နီဇွဲလန်း ဘိုလီဗာ');
+  static const _vnd =
+      Currency(_cld, 'VND', 'ဗီယက်နမ် ဒေါင်', symbol: '₫', symbolNarrow: '₫');
+  static const _vuv = Currency(_cld, 'VUV', 'ဗနွားတူ ဗားထူ');
+  static const _wst = Currency(_cld, 'WST', 'ဆမိုအား ထားလာ');
+  static const _xaf = Currency(_cld, 'XAF', 'ကင်မရွန်း ဖရန့်', symbol: 'FCFA');
+  static const _xag = Currency(_cld, 'XAG', 'ငွေ');
+  static const _xau = Currency(_cld, 'XAU', 'ရွှေ');
+  static const _xbb = Currency(_cld, 'XBB', 'ဥရောပငွေကြေးစံနစ်');
+  static const _xcd = Currency(_cld, 'XCD', 'အရှေ့ကာရစ်ဘီယံ ဒေါ်လာ',
+      symbol: r'EC$', symbolNarrow: r'$');
+  static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
+  static const _xdr = Currency(_cld, 'XDR', 'အထူးထုတ်ယူခွင့်');
+  static const _xof = Currency(_cld, 'XOF', 'အနောက် အာဖရိက [CFA ]ဖရန့်',
+      other: 'အနောက် အာဖရိက [CFA] ဖရန့်', symbol: 'F CFA');
+  static const _xpf = Currency(_cld, 'XPF', '[CFP] ဖရန့်', symbol: 'CFPF');
+  static const _xpt = Currency(_cld, 'XPT', 'ပလက်တီနမ်');
+  static const _xts = Currency(_cld, 'XTS', 'စမ်းသပ် ငွေကြေး ကုဒ်');
+  static const _xxx = Currency(_cld, 'XXX', 'မသိသို့မဟုတ်မရှိသောငွေကြေး',
+      other: '(မသိသို့မဟုတ်မရှိသောငွေကြေး)', symbol: '¤');
+  static const _yer = Currency(_cld, 'YER', 'ယီမင်နီ ရီရယ်');
+  static const _zar =
+      Currency(_cld, 'ZAR', 'တောင်အာဖရိက ရန်း', symbolNarrow: 'R');
+  static const _zmw =
+      Currency(_cld, 'ZMW', 'ဇင်ဘာဘွေ ခွါးချာ', symbolNarrow: 'ZK');
+  static const _zwd = Currency(_cld, 'ZWD', 'ဇင်ဘာဘွေ ဒေါ်လာ');
 
   @override
-  Territory get middleAfrica => Territory(
-        '017',
-        'အလယ် အာဖရိက',
-      );
+  final unknownCurrency = _xxx;
+  @override
+  final adp = _xxx;
+  @override
+  final aed = _aed;
+  @override
+  final afa = _xxx;
+  @override
+  final afn = _afn;
+  @override
+  final alk = _xxx;
+  @override
+  final all = _all;
+  @override
+  final amd = _amd;
+  @override
+  final ang = _ang;
+  @override
+  final aoa = _aoa;
+  @override
+  final aok = _xxx;
+  @override
+  final aon = _xxx;
+  @override
+  final aor = _xxx;
+  @override
+  final ara = _xxx;
+  @override
+  final arl = _xxx;
+  @override
+  final arm = _xxx;
+  @override
+  final arp = _arp;
+  @override
+  final ars = _ars;
+  @override
+  final ats = _xxx;
+  @override
+  final aud = _aud;
+  @override
+  final awg = _awg;
+  @override
+  final azm = _xxx;
+  @override
+  final azn = _azn;
+  @override
+  final bad = _xxx;
+  @override
+  final bam = _bam;
+  @override
+  final ban = _xxx;
+  @override
+  final bbd = _bbd;
+  @override
+  final bdt = _bdt;
+  @override
+  final bec = _xxx;
+  @override
+  final bef = _bef;
+  @override
+  final bel = _xxx;
+  @override
+  final bgl = _xxx;
+  @override
+  final bgm = _xxx;
+  @override
+  final bgn = _bgn;
+  @override
+  final bgo = _xxx;
+  @override
+  final bhd = _bhd;
+  @override
+  final bif = _bif;
+  @override
+  final bmd = _bmd;
+  @override
+  final bnd = _bnd;
+  @override
+  final bob = _bob;
+  @override
+  final bol = _xxx;
+  @override
+  final bop = _bop;
+  @override
+  final bov = _xxx;
+  @override
+  final brb = _xxx;
+  @override
+  final brc = _xxx;
+  @override
+  final bre = _xxx;
+  @override
+  final brl = _brl;
+  @override
+  final brn = _xxx;
+  @override
+  final brr = _xxx;
+  @override
+  final brz = _xxx;
+  @override
+  final bsd = _bsd;
+  @override
+  final btn = _btn;
+  @override
+  final buk = _buk;
+  @override
+  final bwp = _bwp;
+  @override
+  final byb = _byb;
+  @override
+  final byn = _byn;
+  @override
+  final byr = _byr;
+  @override
+  final bzd = _bzd;
+  @override
+  final cad = _cad;
+  @override
+  final cdf = _cdf;
+  @override
+  final che = _xxx;
+  @override
+  final chf = _chf;
+  @override
+  final chw = _xxx;
+  @override
+  final cle = _xxx;
+  @override
+  final clf = _xxx;
+  @override
+  final clp = _clp;
+  @override
+  final cnh = _cnh;
+  @override
+  final cnx = _xxx;
+  @override
+  final cny = _cny;
+  @override
+  final cop = _cop;
+  @override
+  final cou = _xxx;
+  @override
+  final crc = _crc;
+  @override
+  final csd = _xxx;
+  @override
+  final csk = _xxx;
+  @override
+  final cuc = _cuc;
+  @override
+  final cup = _cup;
+  @override
+  final cve = _cve;
+  @override
+  final cyp = _cyp;
+  @override
+  final czk = _czk;
+  @override
+  final ddm = _xxx;
+  @override
+  final dem = _dem;
+  @override
+  final djf = _djf;
+  @override
+  final dkk = _dkk;
+  @override
+  final dop = _dop;
+  @override
+  final dzd = _dzd;
+  @override
+  final ecs = _xxx;
+  @override
+  final ecv = _xxx;
+  @override
+  final eek = _xxx;
+  @override
+  final egp = _egp;
+  @override
+  final ern = _ern;
+  @override
+  final esa = _xxx;
+  @override
+  final esb = _xxx;
+  @override
+  final esp = _esp;
+  @override
+  final etb = _etb;
+  @override
+  final eur = _eur;
+  @override
+  final fim = _xxx;
+  @override
+  final fjd = _fjd;
+  @override
+  final fkp = _fkp;
+  @override
+  final frf = _frf;
+  @override
+  final gbp = _gbp;
+  @override
+  final gek = _xxx;
+  @override
+  final gel = _gel;
+  @override
+  final ghc = _xxx;
+  @override
+  final ghs = _ghs;
+  @override
+  final gip = _gip;
+  @override
+  final gmd = _gmd;
+  @override
+  final gnf = _gnf;
+  @override
+  final gns = _xxx;
+  @override
+  final gqe = _xxx;
+  @override
+  final grd = _xxx;
+  @override
+  final gtq = _gtq;
+  @override
+  final gwe = _xxx;
+  @override
+  final gwp = _xxx;
+  @override
+  final gyd = _gyd;
+  @override
+  final hkd = _hkd;
+  @override
+  final hnl = _hnl;
+  @override
+  final hrd = _xxx;
+  @override
+  final hrk = _hrk;
+  @override
+  final htg = _htg;
+  @override
+  final huf = _huf;
+  @override
+  final idr = _idr;
+  @override
+  final iep = _xxx;
+  @override
+  final ilp = _ilp;
+  @override
+  final ilr = _xxx;
+  @override
+  final ils = _ils;
+  @override
+  final inr = _inr;
+  @override
+  final iqd = _iqd;
+  @override
+  final irr = _irr;
+  @override
+  final isj = _xxx;
+  @override
+  final isk = _isk;
+  @override
+  final itl = _xxx;
+  @override
+  final jmd = _jmd;
+  @override
+  final jod = _jod;
+  @override
+  final jpy = _jpy;
+  @override
+  final kes = _kes;
+  @override
+  final kgs = _kgs;
+  @override
+  final khr = _khr;
+  @override
+  final kmf = _kmf;
+  @override
+  final kpw = _kpw;
+  @override
+  final krh = _xxx;
+  @override
+  final kro = _xxx;
+  @override
+  final krw = _krw;
+  @override
+  final kwd = _kwd;
+  @override
+  final kyd = _kyd;
+  @override
+  final kzt = _kzt;
+  @override
+  final lak = _lak;
+  @override
+  final lbp = _lbp;
+  @override
+  final lkr = _lkr;
+  @override
+  final lrd = _lrd;
+  @override
+  final lsl = _lsl;
+  @override
+  final ltl = _ltl;
+  @override
+  final ltt = _xxx;
+  @override
+  final luc = _xxx;
+  @override
+  final luf = _xxx;
+  @override
+  final lul = _xxx;
+  @override
+  final lvl = _lvl;
+  @override
+  final lvr = _xxx;
+  @override
+  final lyd = _lyd;
+  @override
+  final mad = _mad;
+  @override
+  final maf = _xxx;
+  @override
+  final mcf = _xxx;
+  @override
+  final mdc = _xxx;
+  @override
+  final mdl = _mdl;
+  @override
+  final mga = _mga;
+  @override
+  final mgf = _xxx;
+  @override
+  final mkd = _mkd;
+  @override
+  final mkn = _xxx;
+  @override
+  final mlf = _xxx;
+  @override
+  final mmk = _mmk;
+  @override
+  final mnt = _mnt;
+  @override
+  final mop = _mop;
+  @override
+  final mro = _mro;
+  @override
+  final mru = _mru;
+  @override
+  final mtl = _xxx;
+  @override
+  final mtp = _xxx;
+  @override
+  final mur = _mur;
+  @override
+  final mvp = _xxx;
+  @override
+  final mvr = _mvr;
+  @override
+  final mwk = _mwk;
+  @override
+  final mxn = _mxn;
+  @override
+  final mxp = _xxx;
+  @override
+  final mxv = _xxx;
+  @override
+  final myr = _myr;
+  @override
+  final mze = _xxx;
+  @override
+  final mzm = _xxx;
+  @override
+  final mzn = _mzn;
+  @override
+  final nad = _nad;
+  @override
+  final ngn = _ngn;
+  @override
+  final nic = _xxx;
+  @override
+  final nio = _nio;
+  @override
+  final nlg = _xxx;
+  @override
+  final nok = _nok;
+  @override
+  final npr = _npr;
+  @override
+  final nzd = _nzd;
+  @override
+  final omr = _omr;
+  @override
+  final pab = _pab;
+  @override
+  final pei = _xxx;
+  @override
+  final pen = _pen;
+  @override
+  final pes = _xxx;
+  @override
+  final pgk = _pgk;
+  @override
+  final php = _php;
+  @override
+  final pkr = _pkr;
+  @override
+  final pln = _pln;
+  @override
+  final plz = _xxx;
+  @override
+  final pte = _xxx;
+  @override
+  final pyg = _pyg;
+  @override
+  final qar = _qar;
+  @override
+  final rhd = _xxx;
+  @override
+  final rol = _xxx;
+  @override
+  final ron = _ron;
+  @override
+  final rsd = _rsd;
+  @override
+  final rub = _rub;
+  @override
+  final rur = _rur;
+  @override
+  final rwf = _rwf;
+  @override
+  final sar = _sar;
+  @override
+  final sbd = _sbd;
+  @override
+  final scr = _scr;
+  @override
+  final sdd = _xxx;
+  @override
+  final sdg = _sdg;
+  @override
+  final sdp = _sdp;
+  @override
+  final sek = _sek;
+  @override
+  final sgd = _sgd;
+  @override
+  final shp = _shp;
+  @override
+  final sit = _xxx;
+  @override
+  final skk = _xxx;
+  @override
+  final sle = _sle;
+  @override
+  final sll = _sll;
+  @override
+  final sos = _sos;
+  @override
+  final srd = _srd;
+  @override
+  final srg = _xxx;
+  @override
+  final ssp = _ssp;
+  @override
+  final std = _std;
+  @override
+  final stn = _stn;
+  @override
+  final sur = _sur;
+  @override
+  final svc = _xxx;
+  @override
+  final syp = _syp;
+  @override
+  final szl = _szl;
+  @override
+  final thb = _thb;
+  @override
+  final tjr = _xxx;
+  @override
+  final tjs = _tjs;
+  @override
+  final tmm = _xxx;
+  @override
+  final tmt = _tmt;
+  @override
+  final tnd = _tnd;
+  @override
+  final top = _top;
+  @override
+  final tpe = _xxx;
+  @override
+  final trl = _trl;
+  @override
+  final $try = _$try;
+  @override
+  final ttd = _ttd;
+  @override
+  final twd = _twd;
+  @override
+  final tzs = _tzs;
+  @override
+  final uah = _uah;
+  @override
+  final uak = _xxx;
+  @override
+  final ugs = _xxx;
+  @override
+  final ugx = _ugx;
+  @override
+  final usd = _usd;
+  @override
+  final usn = _usn;
+  @override
+  final uss = _uss;
+  @override
+  final uyi = _xxx;
+  @override
+  final uyp = _xxx;
+  @override
+  final uyu = _uyu;
+  @override
+  final uyw = _xxx;
+  @override
+  final uzs = _uzs;
+  @override
+  final veb = _xxx;
+  @override
+  final ved = _xxx;
+  @override
+  final vef = _vef;
+  @override
+  final ves = _ves;
+  @override
+  final vnd = _vnd;
+  @override
+  final vnn = _xxx;
+  @override
+  final vuv = _vuv;
+  @override
+  final wst = _wst;
+  @override
+  final xaf = _xaf;
+  @override
+  final xag = _xag;
+  @override
+  final xau = _xau;
+  @override
+  final xba = _xxx;
+  @override
+  final xbb = _xbb;
+  @override
+  final xbc = _xxx;
+  @override
+  final xbd = _xxx;
+  @override
+  final xcd = _xcd;
+  @override
+  final xcg = _xcg;
+  @override
+  final xdr = _xdr;
+  @override
+  final xeu = _xxx;
+  @override
+  final xfo = _xxx;
+  @override
+  final xfu = _xxx;
+  @override
+  final xof = _xof;
+  @override
+  final xpd = _xxx;
+  @override
+  final xpf = _xpf;
+  @override
+  final xpt = _xpt;
+  @override
+  final xre = _xxx;
+  @override
+  final xsu = _xxx;
+  @override
+  final xts = _xts;
+  @override
+  final xua = _xxx;
+  @override
+  final xxx = _xxx;
+  @override
+  final ydd = _xxx;
+  @override
+  final yer = _yer;
+  @override
+  final yud = _xxx;
+  @override
+  final yum = _xxx;
+  @override
+  final yun = _xxx;
+  @override
+  final yur = _xxx;
+  @override
+  final zal = _xxx;
+  @override
+  final zar = _zar;
+  @override
+  final zmk = _xxx;
+  @override
+  final zmw = _zmw;
+  @override
+  final zrn = _xxx;
+  @override
+  final zrz = _xxx;
+  @override
+  final zwd = _zwd;
+  @override
+  final zwg = _xxx;
+  @override
+  final zwl = _xxx;
+  @override
+  final zwr = _xxx;
 
   @override
-  Territory get southernAfrica => Territory(
-        '018',
-        'အာဖရိက တောင်ပိုင်း',
-      );
-
-  @override
-  Territory get americas => Territory(
-        '019',
-        'အမေရိကန်',
-      );
-
-  @override
-  Territory get northernAmerica => Territory(
-        '021',
-        'မြောက် အမေရိက',
-      );
-
-  @override
-  Territory get caribbean => Territory(
-        '029',
-        'ကာရစ်ဘီယံ',
-      );
-
-  @override
-  Territory get easternAsia => Territory(
-        '030',
-        'အရှေ့အာရှ',
-      );
-
-  @override
-  Territory get southernAsia => Territory(
-        '034',
-        'တောင်အာရှ',
-      );
-
-  @override
-  Territory get southeastAsia => Territory(
-        '035',
-        'အရှေ့တောင်အာရှ',
-      );
-
-  @override
-  Territory get southernEurope => Territory(
-        '039',
-        'တောင်ဥရောပ',
-      );
-
-  @override
-  Territory get australasia => Territory(
-        '053',
-        'ဩစတြေးလျနှင့် နယူးဇီလန်',
-      );
-
-  @override
-  Territory get melanesia => Territory(
-        '054',
-        'မီလာနီးရှား',
-      );
-
-  @override
-  Territory get micronesianRegion => Territory(
-        '057',
-        'မိုက်ခရိုနီးရှား ဒေသ',
-      );
-
-  @override
-  Territory get polynesia => Territory(
-        '061',
-        'ပိုလီနီရှား',
-      );
-
-  @override
-  Territory get asia => Territory(
-        '142',
-        'အာရှ',
-      );
-
-  @override
-  Territory get centralAsia => Territory(
-        '143',
-        'အလယ်အာရှ',
-      );
-
-  @override
-  Territory get westernAsia => Territory(
-        '145',
-        'အနောက်အာရှ',
-      );
-
-  @override
-  Territory get europe => Territory(
-        '150',
-        'ဥရောပ',
-      );
-
-  @override
-  Territory get easternEurope => Territory(
-        '151',
-        'အရှေ့ ဥရောပ',
-      );
-
-  @override
-  Territory get northernEurope => Territory(
-        '154',
-        'မြောက် ဥရောပ',
-      );
-
-  @override
-  Territory get westernEurope => Territory(
-        '155',
-        'အနောက် ဥရောပ',
-      );
-
-  @override
-  Territory get subSaharanAfrica => Territory(
-        '202',
-        'ဆာဟာရ-အောက်ပိုင်း အာဖရိက',
-      );
-
-  @override
-  Territory get latinAmerica => Territory(
-        '419',
-        'လက်တင်အမေရိက',
-      );
-
-  @override
-  Territory get unknownRegion => Territory(
-        'ZZ',
-        'မသိ (သို့) မရှိသော ဒေသ',
-      );
-
-  @override
-  final countries = CanonicalizedMap<String, String, Territory>.from({
-    'AC': Territory(
-      'AC',
-      'အဆန်းရှင်းကျွန်း',
-    ),
-    'AD': Territory(
-      'AD',
-      'အန်ဒိုရာ',
-    ),
-    'AE': Territory(
-      'AE',
-      'ယူအေအီး',
-    ),
-    'AF': Territory(
-      'AF',
-      'အာဖဂန်နစ္စတန်',
-    ),
-    'AG': Territory(
-      'AG',
-      'အန်တီဂွါနှင့် ဘာဘူဒါ',
-    ),
-    'AI': Territory(
-      'AI',
-      'အန်ဂီလာ',
-    ),
-    'AL': Territory(
-      'AL',
-      'အယ်လ်ဘေးနီးယား',
-    ),
-    'AM': Territory(
-      'AM',
-      'အာမေးနီးယား',
-    ),
-    'AO': Territory(
-      'AO',
-      'အန်ဂိုလာ',
-    ),
-    'AQ': Territory(
-      'AQ',
-      'အန်တာတိက',
-    ),
-    'AR': Territory(
-      'AR',
-      'အာဂျင်တီးနား',
-    ),
-    'AS': Territory(
-      'AS',
-      'အမေရိကန် ဆမိုးအား',
-    ),
-    'AT': Territory(
-      'AT',
-      'ဩစတြီးယား',
-    ),
-    'AU': Territory(
-      'AU',
-      'ဩစတြေးလျ',
-    ),
-    'AW': Territory(
-      'AW',
-      'အာရူးဗား',
-    ),
-    'AX': Territory(
-      'AX',
-      'အာလန်ကျွန်း',
-    ),
-    'AZ': Territory(
-      'AZ',
-      'အဇာဘိုင်ဂျန်',
-    ),
-    'BA': Territory(
-      'BA',
-      'ဘော့စနီးယားနှင့် ဟာဇီဂိုဗီနား',
-    ),
-    'BB': Territory(
-      'BB',
-      'ဘာဘေးဒိုးစ်',
-    ),
-    'BD': Territory(
-      'BD',
-      'ဘင်္ဂလားဒေ့ရှ်',
-    ),
-    'BE': Territory(
-      'BE',
-      'ဘယ်လ်ဂျီယမ်',
-    ),
-    'BF': Territory(
-      'BF',
-      'ဘာကီးနား ဖားဆို',
-    ),
-    'BG': Territory(
-      'BG',
-      'ဘူလ်ဂေးရီးယား',
-    ),
-    'BH': Territory(
-      'BH',
-      'ဘာရိန်း',
-    ),
-    'BI': Territory(
-      'BI',
-      'ဘူရွန်ဒီ',
-    ),
-    'BJ': Territory(
-      'BJ',
-      'ဘီနင်',
-    ),
-    'BL': Territory(
-      'BL',
-      'စိန့်ဘာသယ်လ်မီ',
-    ),
-    'BM': Territory(
-      'BM',
-      'ဘာမြူဒါ',
-    ),
-    'BN': Territory(
-      'BN',
-      'ဘရူနိုင်း',
-    ),
-    'BO': Territory(
-      'BO',
-      'ဘိုလီးဗီးယား',
-    ),
-    'BQ': Territory(
-      'BQ',
-      'ကာရစ်ဘီယံ နယ်သာလန်',
-    ),
-    'BR': Territory(
-      'BR',
-      'ဘရာဇီး',
-    ),
-    'BS': Territory(
-      'BS',
-      'ဘဟားမား',
-    ),
-    'BT': Territory(
-      'BT',
-      'ဘူတန်',
-    ),
-    'BV': Territory(
-      'BV',
-      'ဘူဗက်ကျွန်း',
-    ),
-    'BW': Territory(
-      'BW',
-      'ဘော့ဆွာနာ',
-    ),
-    'BY': Territory(
-      'BY',
-      'ဘီလာရုစ်',
-    ),
-    'BZ': Territory(
-      'BZ',
-      'ဘလိဇ်',
-    ),
-    'CA': Territory(
-      'CA',
-      'ကနေဒါ',
-    ),
-    'CC': Territory(
-      'CC',
-      'ကိုကိုးကျွန်း',
-    ),
-    'CD': Territory(
-      'CD',
-      'ကွန်ဂို',
-      variant: 'ကွန်ဂို ဒီမိုကရက်တစ် သမ္မတနိုင်ငံ',
-    ),
-    'CF': Territory(
-      'CF',
-      'ဗဟို အာဖရိက ပြည်ထောင်စု',
-    ),
-    'CG': Territory(
-      'CG',
-      'ကွန်ဂို-ဘရာဇာဗီးလ်',
-      variant: 'ကွန်ဂို သမ္မတနိုင်ငံ',
-    ),
-    'CH': Territory(
-      'CH',
-      'ဆွစ်ဇာလန်',
-    ),
-    'CI': Territory(
-      'CI',
-      'ကို့တ် ဒီဗွာ',
-      variant: 'အိုင်ဗရီကို့စ်',
-    ),
-    'CK': Territory(
-      'CK',
-      'ကွတ် ကျွန်းစု',
-    ),
-    'CL': Territory(
-      'CL',
-      'ချီလီ',
-    ),
-    'CM': Territory(
-      'CM',
-      'ကင်မရွန်း',
-    ),
-    'CN': Territory(
-      'CN',
-      'တရုတ်',
-    ),
-    'CO': Territory(
-      'CO',
-      'ကိုလံဘီယာ',
-    ),
-    'CP': Territory(
-      'CP',
-      'ကလစ်ပါတန်ကျွန်း',
-    ),
-    'CQ': Territory(
-      'CQ',
-      'မသိ (သို့) မရှိသော ဒေသ (CQ)',
-    ),
-    'CR': Territory(
-      'CR',
-      'ကို့စ်တာရီကာ',
-    ),
-    'CU': Territory(
-      'CU',
-      'ကျူးဘား',
-    ),
-    'CV': Territory(
-      'CV',
-      'ကိတ်ဗာဒီ',
-    ),
-    'CW': Territory(
-      'CW',
-      'ကျူရေးကိုးစ်',
-    ),
-    'CX': Territory(
-      'CX',
-      'ခရစ်စမတ် ကျွန်း',
-    ),
-    'CY': Territory(
-      'CY',
-      'ဆိုက်ပရပ်စ်',
-    ),
-    'CZ': Territory(
-      'CZ',
-      'ချက်ကီယား',
-      variant: 'ချက် ပြည်ထောင်စု',
-    ),
-    'DE': Territory(
-      'DE',
-      'ဂျာမနီ',
-    ),
-    'DG': Territory(
-      'DG',
-      'ဒီအဲဂိုဂါစီရာ',
-    ),
-    'DJ': Territory(
-      'DJ',
-      'ဂျီဘူတီ',
-    ),
-    'DK': Territory(
-      'DK',
-      'ဒိန်းမတ်',
-    ),
-    'DM': Territory(
-      'DM',
-      'ဒိုမီနီကာ',
-    ),
-    'DO': Territory(
-      'DO',
-      'ဒိုမီနီကန်',
-    ),
-    'DZ': Territory(
-      'DZ',
-      'အယ်လ်ဂျီးရီးယား',
-    ),
-    'EA': Territory(
-      'EA',
-      'ဆယ်ဥတာနှင့်မယ်လီလ်လာ',
-    ),
-    'EC': Territory(
-      'EC',
-      'အီကွေဒေါ',
-    ),
-    'EE': Territory(
-      'EE',
-      'အက်စတိုးနီးယား',
-    ),
-    'EG': Territory(
-      'EG',
-      'အီဂျစ်',
-    ),
-    'EH': Territory(
-      'EH',
-      'အနောက် ဆာဟာရ',
-    ),
-    'ER': Territory(
-      'ER',
-      'အီရီထရီးယား',
-    ),
-    'ES': Territory(
-      'ES',
-      'စပိန်',
-    ),
-    'ET': Territory(
-      'ET',
-      'အီသီယိုးပီးယား',
-    ),
-    'EU': Territory(
-      'EU',
-      'ဥရောပသမဂ္ဂ',
-    ),
-    'EZ': Territory(
-      'EZ',
-      'ဥရောပဒေသ',
-    ),
-    'FI': Territory(
-      'FI',
-      'ဖင်လန်',
-    ),
-    'FJ': Territory(
-      'FJ',
-      'ဖီဂျီ',
-    ),
-    'FK': Territory(
-      'FK',
-      'ဖော့ကလန် ကျွန်းစု',
-      variant: 'ဖော့ကလန် ကျွန်းစု (အီလားစ် မောလ်ဗီနာစ်)',
-    ),
-    'FM': Territory(
-      'FM',
-      'မိုင်ခရိုနီရှား',
-    ),
-    'FO': Territory(
-      'FO',
-      'ဖာရိုး ကျွန်းစုများ',
-    ),
-    'FR': Territory(
-      'FR',
-      'ပြင်သစ်',
-    ),
-    'GA': Territory(
-      'GA',
-      'ဂါဘွန်',
-    ),
-    'GB': Territory(
-      'GB',
-      'ယူနိုက်တက်ကင်းဒမ်း',
-      short: 'ယူကေ',
-    ),
-    'GD': Territory(
-      'GD',
-      'ဂရီနေဒါ',
-    ),
-    'GE': Territory(
-      'GE',
-      'ဂျော်ဂျီယာ',
-    ),
-    'GF': Territory(
-      'GF',
-      'ပြင်သစ် ဂီယာနာ',
-    ),
-    'GG': Territory(
-      'GG',
-      'ဂွန်းဇီ',
-    ),
-    'GH': Territory(
-      'GH',
-      'ဂါနာ',
-    ),
-    'GI': Territory(
-      'GI',
-      'ဂျီဘရော်လ်တာ',
-    ),
-    'GL': Territory(
-      'GL',
-      'ဂရင်းလန်း',
-    ),
-    'GM': Territory(
-      'GM',
-      'ဂမ်ဘီရာ',
-    ),
-    'GN': Territory(
-      'GN',
-      'ဂီနီ',
-    ),
-    'GP': Territory(
-      'GP',
-      'ဂွါဒီလု',
-    ),
-    'GQ': Territory(
-      'GQ',
-      'အီကွေတာ ဂီနီ',
-    ),
-    'GR': Territory(
-      'GR',
-      'ဂရိ',
-    ),
-    'GS': Territory(
-      'GS',
-      'တောင် ဂျော်ဂျီယာ နှင့် တောင် ဆင်းဒဝစ်ဂျ် ကျွန်းစုများ',
-    ),
-    'GT': Territory(
-      'GT',
-      'ဂွါတီမာလာ',
-    ),
-    'GU': Territory(
-      'GU',
-      'ဂူအမ်',
-    ),
-    'GW': Territory(
-      'GW',
-      'ဂီနီ-ဘီစော',
-    ),
-    'GY': Territory(
-      'GY',
-      'ဂိုင်ယာနာ',
-    ),
-    'HK': Territory(
-      'HK',
-      'ဟောင်ကောင် (တရုတ်ပြည်)',
-      short: 'ဟောင်ကောင်',
-    ),
-    'HM': Territory(
-      'HM',
-      'ဟတ်ကျွန်းနှင့်မက်ဒေါနယ်ကျွန်းစု',
-    ),
-    'HN': Territory(
-      'HN',
-      'ဟွန်ဒူးရပ်စ်',
-    ),
-    'HR': Territory(
-      'HR',
-      'ခရိုအေးရှား',
-    ),
-    'HT': Territory(
-      'HT',
-      'ဟေတီ',
-    ),
-    'HU': Territory(
-      'HU',
-      'ဟန်ဂေရီ',
-    ),
-    'IC': Territory(
-      'IC',
-      'ကနေရီ ကျွန်းစု',
-    ),
-    'ID': Territory(
-      'ID',
-      'အင်ဒိုနီးရှား',
-    ),
-    'IE': Territory(
-      'IE',
-      'အိုင်ယာလန်',
-    ),
-    'IL': Territory(
-      'IL',
-      'အစ္စရေး',
-    ),
-    'IM': Territory(
-      'IM',
-      'မန်ကျွန်း',
-    ),
-    'IN': Territory(
-      'IN',
-      'အိန္ဒိယ',
-    ),
-    'IO': Territory(
-      'IO',
-      'ဗြိတိသျှပိုင် အိန္ဒိယသမုဒ္ဒရာကျွန်းများ',
-    ),
-    'IQ': Territory(
-      'IQ',
-      'အီရတ်',
-    ),
-    'IR': Territory(
-      'IR',
-      'အီရန်',
-    ),
-    'IS': Territory(
-      'IS',
-      'အိုက်စလန်',
-    ),
-    'IT': Territory(
-      'IT',
-      'အီတလီ',
-    ),
-    'JE': Territory(
-      'JE',
-      'ဂျာစီ',
-    ),
-    'JM': Territory(
-      'JM',
-      'ဂျမေကာ',
-    ),
-    'JO': Territory(
-      'JO',
-      'ဂျော်ဒန်',
-    ),
-    'JP': Territory(
-      'JP',
-      'ဂျပန်',
-    ),
-    'KE': Territory(
-      'KE',
-      'ကင်ညာ',
-    ),
-    'KG': Territory(
-      'KG',
-      'ကာဂျစ္စတန်',
-    ),
-    'KH': Territory(
-      'KH',
-      'ကမ္ဘောဒီးယား',
-    ),
-    'KI': Territory(
-      'KI',
-      'ခီရီဘာတီ',
-    ),
-    'KM': Territory(
-      'KM',
-      'ကိုမိုရိုစ်',
-    ),
-    'KN': Territory(
-      'KN',
-      'စိန့်ကစ်နှင့်နီဗီစ်',
-    ),
-    'KP': Territory(
-      'KP',
-      'မြောက်ကိုရီးယား',
-    ),
-    'KR': Territory(
-      'KR',
-      'တောင်ကိုရီးယား',
-    ),
-    'KW': Territory(
-      'KW',
-      'ကူဝိတ်',
-    ),
-    'KY': Territory(
-      'KY',
-      'ကေမန် ကျွန်းစု',
-    ),
-    'KZ': Territory(
-      'KZ',
-      'ကာဇက်စတန်',
-    ),
-    'LA': Territory(
-      'LA',
-      'လာအို',
-    ),
-    'LB': Territory(
-      'LB',
-      'လက်ဘနွန်',
-    ),
-    'LC': Territory(
-      'LC',
-      'စိန့်လူစီယာ',
-    ),
-    'LI': Territory(
-      'LI',
-      'လစ်တန်စတိန်း',
-    ),
-    'LK': Territory(
-      'LK',
-      'သီရိလင်္ကာ',
-    ),
-    'LR': Territory(
-      'LR',
-      'လိုက်ဘေးရီးယား',
-    ),
-    'LS': Territory(
-      'LS',
-      'လီဆိုသို',
-    ),
-    'LT': Territory(
-      'LT',
-      'လစ်သူဝေးနီးယား',
-    ),
-    'LU': Territory(
-      'LU',
-      'လူဇင်ဘတ်',
-    ),
-    'LV': Territory(
-      'LV',
-      'လတ်ဗီးယား',
-    ),
-    'LY': Territory(
-      'LY',
-      'လစ်ဗျား',
-    ),
-    'MA': Territory(
-      'MA',
-      'မော်ရိုကို',
-    ),
-    'MC': Territory(
-      'MC',
-      'မိုနာကို',
-    ),
-    'MD': Territory(
-      'MD',
-      'မောလ်ဒိုဗာ',
-    ),
-    'ME': Territory(
-      'ME',
-      'မွန်တီနိဂရိုး',
-    ),
-    'MF': Territory(
-      'MF',
-      'စိန့်မာတင်',
-    ),
-    'MG': Territory(
-      'MG',
-      'မဒါဂတ်စကား',
-    ),
-    'MH': Territory(
-      'MH',
-      'မာရှယ် ကျွန်းစု',
-    ),
-    'MK': Territory(
-      'MK',
-      'မြောက် မက်ဆီဒိုးနီးယား',
-    ),
-    'ML': Territory(
-      'ML',
-      'မာလီ',
-    ),
-    'MM': Territory(
-      'MM',
-      'မြန်မာ',
-    ),
-    'MN': Territory(
-      'MN',
-      'မွန်ဂိုးလီးယား',
-    ),
-    'MO': Territory(
-      'MO',
-      'မကာအို (တရုတ်ပြည်)',
-      short: 'မကာအို',
-    ),
-    'MP': Territory(
-      'MP',
-      'မြောက်ပိုင်းမာရီအာနာကျွန်းစု',
-    ),
-    'MQ': Territory(
-      'MQ',
-      'မာတီနိခ်',
-    ),
-    'MR': Territory(
-      'MR',
-      'မော်ရီတေးနီးယား',
-    ),
-    'MS': Territory(
-      'MS',
-      'မောင့်စဲရက်',
-    ),
-    'MT': Territory(
-      'MT',
-      'မောလ်တာ',
-    ),
-    'MU': Territory(
-      'MU',
-      'မောရစ်ရှ',
-    ),
-    'MV': Territory(
-      'MV',
-      'မော်လ်ဒိုက်',
-    ),
-    'MW': Territory(
-      'MW',
-      'မာလာဝီ',
-    ),
-    'MX': Territory(
-      'MX',
-      'မက်ကဆီကို',
-    ),
-    'MY': Territory(
-      'MY',
-      'မလေးရှား',
-    ),
-    'MZ': Territory(
-      'MZ',
-      'မိုဇမ်ဘစ်',
-    ),
-    'NA': Territory(
-      'NA',
-      'နမီးဘီးယား',
-    ),
-    'NC': Territory(
-      'NC',
-      'နယူး ကယ်လီဒိုနီးယား',
-    ),
-    'NE': Territory(
-      'NE',
-      'နိုင်ဂျာ',
-    ),
-    'NF': Territory(
-      'NF',
-      'နောဖုတ်ကျွန်း',
-    ),
-    'NG': Territory(
-      'NG',
-      'နိုင်ဂျီးရီးယား',
-    ),
-    'NI': Territory(
-      'NI',
-      'နီကာရာဂွါ',
-    ),
-    'NL': Territory(
-      'NL',
-      'နယ်သာလန်',
-    ),
-    'NO': Territory(
-      'NO',
-      'နော်ဝေ',
-    ),
-    'NP': Territory(
-      'NP',
-      'နီပေါ',
-    ),
-    'NR': Territory(
-      'NR',
-      'နော်ရူး',
-    ),
-    'NU': Territory(
-      'NU',
-      'နီဥူအေ',
-    ),
-    'NZ': Territory(
-      'NZ',
-      'နယူးဇီလန်',
-      variant: 'အေအိုတေးအာရိုအာ နယူးဇီလန်',
-    ),
-    'OM': Territory(
-      'OM',
-      'အိုမန်',
-    ),
-    'PA': Territory(
-      'PA',
-      'ပနားမား',
-    ),
-    'PE': Territory(
-      'PE',
-      'ပီရူး',
-    ),
-    'PF': Territory(
-      'PF',
-      'ပြင်သစ် ပေါ်လီနီးရှား',
-    ),
-    'PG': Territory(
-      'PG',
-      'ပါပူအာ နယူးဂီနီ',
-    ),
-    'PH': Territory(
-      'PH',
-      'ဖိလစ်ပိုင်',
-    ),
-    'PK': Territory(
-      'PK',
-      'ပါကစ္စတန်',
-    ),
-    'PL': Territory(
-      'PL',
-      'ပိုလန်',
-    ),
-    'PM': Territory(
-      'PM',
-      'စိန့်ပီအဲရ်နှင့် မီကွီလွန်',
-    ),
-    'PN': Territory(
-      'PN',
-      'ပစ်တ်ကိန်းကျွန်းစု',
-    ),
-    'PR': Territory(
-      'PR',
-      'ပေါ်တိုရီကို',
-    ),
-    'PS': Territory(
-      'PS',
-      'ပါလက်စတိုင်း ပိုင်နက်',
-      short: 'ပါလက်စတိုင်း',
-    ),
-    'PT': Territory(
-      'PT',
-      'ပေါ်တူဂီ',
-    ),
-    'PW': Territory(
-      'PW',
-      'ပလာအို',
-    ),
-    'PY': Territory(
-      'PY',
-      'ပါရာဂွေး',
-    ),
-    'QA': Territory(
-      'QA',
-      'ကာတာ',
-    ),
-    'QO': Territory(
-      'QO',
-      'သမုဒ္ဒရာ အပြင်ဘက်ရှိ ကျွန်းနိုင်ငံများ',
-    ),
-    'RE': Territory(
-      'RE',
-      'ရီယူနီယန်',
-    ),
-    'RO': Territory(
-      'RO',
-      'ရိုမေးနီးယား',
-    ),
-    'RS': Territory(
-      'RS',
-      'ဆားဘီးယား',
-    ),
-    'RU': Territory(
-      'RU',
-      'ရုရှား',
-    ),
-    'RW': Territory(
-      'RW',
-      'ရဝန်ဒါ',
-    ),
-    'SA': Territory(
-      'SA',
-      'ဆော်ဒီအာရေးဘီးယား',
-    ),
-    'SB': Territory(
-      'SB',
-      'ဆော်လမွန်ကျွန်းစု',
-    ),
-    'SC': Territory(
-      'SC',
-      'ဆေးရှဲ',
-    ),
-    'SD': Territory(
-      'SD',
-      'ဆူဒန်',
-    ),
-    'SE': Territory(
-      'SE',
-      'ဆွီဒင်',
-    ),
-    'SG': Territory(
-      'SG',
-      'စင်္ကာပူ',
-    ),
-    'SH': Territory(
-      'SH',
-      'စိန့်ဟယ်လယ်နာ',
-    ),
-    'SI': Territory(
-      'SI',
-      'ဆလိုဗေးနီးယား',
-    ),
-    'SJ': Territory(
-      'SJ',
-      'စဗိုလ်ဘတ်နှင့်ဂျန်မေရန်',
-    ),
-    'SK': Territory(
-      'SK',
-      'ဆလိုဗက်ကီးယား',
-    ),
-    'SL': Territory(
-      'SL',
-      'ဆီယာရာ လီယွန်း',
-    ),
-    'SM': Territory(
-      'SM',
-      'ဆန်မာရီနို',
-    ),
-    'SN': Territory(
-      'SN',
-      'ဆီနီဂေါ',
-    ),
-    'SO': Territory(
-      'SO',
-      'ဆိုမာလီယာ',
-    ),
-    'SR': Territory(
-      'SR',
-      'ဆူရာနမ်',
-    ),
-    'SS': Territory(
-      'SS',
-      'တောင် ဆူဒန်',
-    ),
-    'ST': Territory(
-      'ST',
-      'ဆောင်တူမေးနှင့် ပရင်စီပီ',
-    ),
-    'SV': Territory(
-      'SV',
-      'အယ်လ်ဆာဗေးဒိုး',
-    ),
-    'SX': Territory(
-      'SX',
-      'စင့်မာတင်',
-    ),
-    'SY': Territory(
-      'SY',
-      'ဆီးရီးယား',
-    ),
-    'SZ': Territory(
-      'SZ',
-      'ဆွာဇီလန်',
-      variant: 'ဆွာဇီလန်',
-    ),
-    'TA': Territory(
-      'TA',
-      'ထရစ္စတန် ဒါ ကွန်ဟာ',
-    ),
-    'TC': Territory(
-      'TC',
-      'တခ်စ်နှင့်ကာအီကိုစ်ကျွန်းစု',
-    ),
-    'TD': Territory(
-      'TD',
-      'ချဒ်',
-    ),
-    'TF': Territory(
-      'TF',
-      'ပြင်သစ် တောင်ပိုင်း ပိုင်နက်များ',
-    ),
-    'TG': Territory(
-      'TG',
-      'တိုဂို',
-    ),
-    'TH': Territory(
-      'TH',
-      'ထိုင်း',
-    ),
-    'TJ': Territory(
-      'TJ',
-      'တာဂျီကစ္စတန်',
-    ),
-    'TK': Territory(
-      'TK',
-      'တိုကလောင်',
-    ),
-    'TL': Territory(
-      'TL',
-      'အရှေ့တီမော',
-      variant: 'အရှေ့တီမော',
-    ),
-    'TM': Territory(
-      'TM',
-      'တာ့ခ်မင်နစ္စတန်',
-    ),
-    'TN': Territory(
-      'TN',
-      'တူနီးရှား',
-    ),
-    'TO': Territory(
-      'TO',
-      'တွန်ဂါ',
-    ),
-    'TR': Territory(
-      'TR',
-      'တူရကီ',
-      variant: 'တူရကီယဲ',
-    ),
-    'TT': Territory(
-      'TT',
-      'ထရီနီဒတ်နှင့် တိုဘက်ဂို',
-    ),
-    'TV': Territory(
-      'TV',
-      'တူဗားလူ',
-    ),
-    'TW': Territory(
-      'TW',
-      'ထိုင်ဝမ်',
-    ),
-    'TZ': Territory(
-      'TZ',
-      'တန်ဇန်းနီးယား',
-    ),
-    'UA': Territory(
-      'UA',
-      'ယူကရိန်း',
-    ),
-    'UG': Territory(
-      'UG',
-      'ယူဂန်းဒါး',
-    ),
-    'UM': Territory(
-      'UM',
-      'ယူနိုက်တက်စတိတ် ကျွန်းနိုင်ငံများ',
-    ),
-    'UN': Territory(
-      'UN',
-      'ကုလသမဂ္ဂ',
-    ),
-    'US': Territory(
-      'US',
-      'အမေရိကန် ပြည်ထောင်စု',
-      short: 'ယူအက်စ်',
-    ),
-    'UY': Territory(
-      'UY',
-      'ဥရုဂွေး',
-    ),
-    'UZ': Territory(
-      'UZ',
-      'ဥဇဘက်ကစ္စတန်',
-    ),
-    'VA': Territory(
-      'VA',
-      'ဗာတီကန်စီးတီး',
-    ),
-    'VC': Territory(
-      'VC',
-      'စိန့်ဗင်းဆင့်နှင့် ဂရိနေဒိုင်',
-    ),
-    'VE': Territory(
-      'VE',
-      'ဗင်နီဇွဲလား',
-    ),
-    'VG': Territory(
-      'VG',
-      'ဗြိတိသျှ ဗာဂျင်း ကျွန်းစု',
-    ),
-    'VI': Territory(
-      'VI',
-      'ယူအက်စ် ဗာဂျင်း ကျွန်းစု',
-    ),
-    'VN': Territory(
-      'VN',
-      'ဗီယက်နမ်',
-    ),
-    'VU': Territory(
-      'VU',
-      'ဗနွားတူ',
-    ),
-    'WF': Territory(
-      'WF',
-      'ဝေါလစ်နှင့် ဖူကျူးနား',
-    ),
-    'WS': Territory(
-      'WS',
-      'ဆမိုးအား',
-    ),
-    'XA': Territory(
-      'XA',
-      'နိုင်ငံခြားသံ',
-    ),
-    'XB': Territory(
-      'XB',
-      'စာပြောင်းပြန်',
-    ),
-    'XK': Territory(
-      'XK',
-      'ကိုဆိုဗို',
-    ),
-    'YE': Territory(
-      'YE',
-      'ယီမင်',
-    ),
-    'YT': Territory(
-      'YT',
-      'မေယော့',
-    ),
-    'ZA': Territory(
-      'ZA',
-      'တောင်အာဖရိက',
-    ),
-    'ZM': Territory(
-      'ZM',
-      'ဇမ်ဘီယာ',
-    ),
-    'ZW': Territory(
-      'ZW',
-      'ဇင်ဘာဘွေ',
-    ),
-  }, (key) => key.toLowerCase());
+  final currencies = const {
+    'AED': _aed,
+    'AFN': _afn,
+    'ALL': _all,
+    'AMD': _amd,
+    'ANG': _ang,
+    'AOA': _aoa,
+    'ARP': _arp,
+    'ARS': _ars,
+    'AUD': _aud,
+    'AWG': _awg,
+    'AZN': _azn,
+    'BAM': _bam,
+    'BBD': _bbd,
+    'BDT': _bdt,
+    'BEF': _bef,
+    'BGN': _bgn,
+    'BHD': _bhd,
+    'BIF': _bif,
+    'BMD': _bmd,
+    'BND': _bnd,
+    'BOB': _bob,
+    'BOP': _bop,
+    'BRL': _brl,
+    'BSD': _bsd,
+    'BTN': _btn,
+    'BUK': _buk,
+    'BWP': _bwp,
+    'BYB': _byb,
+    'BYN': _byn,
+    'BYR': _byr,
+    'BZD': _bzd,
+    'CAD': _cad,
+    'CDF': _cdf,
+    'CHF': _chf,
+    'CLP': _clp,
+    'CNH': _cnh,
+    'CNY': _cny,
+    'COP': _cop,
+    'CRC': _crc,
+    'CUC': _cuc,
+    'CUP': _cup,
+    'CVE': _cve,
+    'CYP': _cyp,
+    'CZK': _czk,
+    'DEM': _dem,
+    'DJF': _djf,
+    'DKK': _dkk,
+    'DOP': _dop,
+    'DZD': _dzd,
+    'EGP': _egp,
+    'ERN': _ern,
+    'ESP': _esp,
+    'ETB': _etb,
+    'EUR': _eur,
+    'FJD': _fjd,
+    'FKP': _fkp,
+    'FRF': _frf,
+    'GBP': _gbp,
+    'GEL': _gel,
+    'GHS': _ghs,
+    'GIP': _gip,
+    'GMD': _gmd,
+    'GNF': _gnf,
+    'GTQ': _gtq,
+    'GYD': _gyd,
+    'HKD': _hkd,
+    'HNL': _hnl,
+    'HRK': _hrk,
+    'HTG': _htg,
+    'HUF': _huf,
+    'IDR': _idr,
+    'ILP': _ilp,
+    'ILS': _ils,
+    'INR': _inr,
+    'IQD': _iqd,
+    'IRR': _irr,
+    'ISK': _isk,
+    'JMD': _jmd,
+    'JOD': _jod,
+    'JPY': _jpy,
+    'KES': _kes,
+    'KGS': _kgs,
+    'KHR': _khr,
+    'KMF': _kmf,
+    'KPW': _kpw,
+    'KRW': _krw,
+    'KWD': _kwd,
+    'KYD': _kyd,
+    'KZT': _kzt,
+    'LAK': _lak,
+    'LBP': _lbp,
+    'LKR': _lkr,
+    'LRD': _lrd,
+    'LSL': _lsl,
+    'LTL': _ltl,
+    'LVL': _lvl,
+    'LYD': _lyd,
+    'MAD': _mad,
+    'MDL': _mdl,
+    'MGA': _mga,
+    'MKD': _mkd,
+    'MMK': _mmk,
+    'MNT': _mnt,
+    'MOP': _mop,
+    'MRO': _mro,
+    'MRU': _mru,
+    'MUR': _mur,
+    'MVR': _mvr,
+    'MWK': _mwk,
+    'MXN': _mxn,
+    'MYR': _myr,
+    'MZN': _mzn,
+    'NAD': _nad,
+    'NGN': _ngn,
+    'NIO': _nio,
+    'NOK': _nok,
+    'NPR': _npr,
+    'NZD': _nzd,
+    'OMR': _omr,
+    'PAB': _pab,
+    'PEN': _pen,
+    'PGK': _pgk,
+    'PHP': _php,
+    'PKR': _pkr,
+    'PLN': _pln,
+    'PYG': _pyg,
+    'QAR': _qar,
+    'RON': _ron,
+    'RSD': _rsd,
+    'RUB': _rub,
+    'RUR': _rur,
+    'RWF': _rwf,
+    'SAR': _sar,
+    'SBD': _sbd,
+    'SCR': _scr,
+    'SDG': _sdg,
+    'SDP': _sdp,
+    'SEK': _sek,
+    'SGD': _sgd,
+    'SHP': _shp,
+    'SLE': _sle,
+    'SLL': _sll,
+    'SOS': _sos,
+    'SRD': _srd,
+    'SSP': _ssp,
+    'STD': _std,
+    'STN': _stn,
+    'SUR': _sur,
+    'SYP': _syp,
+    'SZL': _szl,
+    'THB': _thb,
+    'TJS': _tjs,
+    'TMT': _tmt,
+    'TND': _tnd,
+    'TOP': _top,
+    'TRL': _trl,
+    'TRY': _$try,
+    'TTD': _ttd,
+    'TWD': _twd,
+    'TZS': _tzs,
+    'UAH': _uah,
+    'UGX': _ugx,
+    'USD': _usd,
+    'USN': _usn,
+    'USS': _uss,
+    'UYU': _uyu,
+    'UZS': _uzs,
+    'VEF': _vef,
+    'VES': _ves,
+    'VND': _vnd,
+    'VUV': _vuv,
+    'WST': _wst,
+    'XAF': _xaf,
+    'XAG': _xag,
+    'XAU': _xau,
+    'XBB': _xbb,
+    'XCD': _xcd,
+    'XCG': _xcg,
+    'XDR': _xdr,
+    'XOF': _xof,
+    'XPF': _xpf,
+    'XPT': _xpt,
+    'XTS': _xts,
+    'XXX': _xxx,
+    'YER': _yer,
+    'ZAR': _zar,
+    'ZMW': _zmw,
+    'ZWD': _zwd,
+  };
 }
 
 class TimeZonesMy extends TimeZones {
-  TimeZonesMy._(Territories territories)
-      : super(_locale, territories,
-            hourFormat: '+HH:mm;-HH:mm',
+  const TimeZonesMy._(super.cld)
+      : super(
             gmtFormat: 'GMT{0}',
             gmtZeroFormat: 'GMT',
             regionFormat: '{0} အချိန်',
             regionFormatDaylight: '{0} နွေရာသီ စံတော်ချိန်',
             regionFormatStandard: '{0} စံတော်ချိန်',
-            fallbackFormat: '{1} ({0})');
+            fallbackFormat: '{1} ({0})',
+            positiveH: '+HH',
+            positiveHM: '+HH:mm',
+            positiveHMS: '+HH:mm:ss',
+            negativeH: '-HH',
+            negativeHM: '-HH:mm',
+            negativeHMS: '-HH:mm:ss');
 
   @override
-  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
-    'America/Adak': TimeZoneNames(
-      exemplarCity: 'အာဒချ',
-    ),
-    'America/Anchorage': TimeZoneNames(
-      exemplarCity: 'အန်ကာရေ့ဂျ်',
-    ),
-    'America/Anguilla': TimeZoneNames(
-      exemplarCity: 'အန်ဂီလာ',
-    ),
-    'America/Antigua': TimeZoneNames(
-      exemplarCity: 'အန်တီဂွါ',
-    ),
-    'America/Araguaina': TimeZoneNames(
-      exemplarCity: 'အာရာဂွါအီနာ',
-    ),
-    'America/Argentina/Rio_Gallegos': TimeZoneNames(
-      exemplarCity: 'ရီယို ဂါလီဂိုစ်',
-    ),
-    'America/Argentina/San_Juan': TimeZoneNames(
-      exemplarCity: 'ဆန် ဂွမ်',
-    ),
-    'America/Argentina/Ushuaia': TimeZoneNames(
-      exemplarCity: 'ဥဆွာအီအာ',
-    ),
-    'America/Argentina/La_Rioja': TimeZoneNames(
-      exemplarCity: 'လာ ရီယိုဟာ',
-    ),
-    'America/Argentina/San_Luis': TimeZoneNames(
-      exemplarCity: 'ဆန် လူဝီစ်',
-    ),
-    'America/Argentina/Salta': TimeZoneNames(
-      exemplarCity: 'ဆာလ်တာ',
-    ),
-    'America/Argentina/Tucuman': TimeZoneNames(
-      exemplarCity: 'တူကူမန်',
-    ),
-    'America/Aruba': TimeZoneNames(
-      exemplarCity: 'အာရူးဗာ',
-    ),
-    'America/Asuncion': TimeZoneNames(
-      exemplarCity: 'အာဆူစီအွန်း',
-    ),
-    'America/Bahia': TimeZoneNames(
-      exemplarCity: 'ဘာဟီအာ',
-    ),
-    'America/Bahia_Banderas': TimeZoneNames(
-      exemplarCity: 'ဘာဟီအာ ဘန်ဒရက်စ်',
-    ),
-    'America/Barbados': TimeZoneNames(
-      exemplarCity: 'ဘာဘေးဒိုးစ်',
-    ),
-    'America/Belem': TimeZoneNames(
-      exemplarCity: 'ဘီလင်မ်',
-    ),
-    'America/Belize': TimeZoneNames(
-      exemplarCity: 'ဘလိဇ်',
-    ),
-    'America/Blanc-Sablon': TimeZoneNames(
-      exemplarCity: 'ဘလွန်ခ်-စာဘလွန်',
-    ),
-    'America/Boa_Vista': TimeZoneNames(
-      exemplarCity: 'ဘိုအာဗီစ်တာ',
-    ),
-    'America/Bogota': TimeZoneNames(
-      exemplarCity: 'ဘိုဂိုတာ',
-    ),
-    'America/Boise': TimeZoneNames(
-      exemplarCity: 'ဗွိုက်စီ',
-    ),
-    'America/Buenos_Aires': TimeZoneNames(
-      exemplarCity: 'ဗျူနိုအေးရိစ်',
-    ),
-    'America/Cambridge_Bay': TimeZoneNames(
-      exemplarCity: 'ကိန်းဘရစ်ချ် ဘေး',
-    ),
-    'America/Campo_Grande': TimeZoneNames(
-      exemplarCity: 'ကိမ်ပို ဂရန်ဒီ',
-    ),
-    'America/Cancun': TimeZoneNames(
-      exemplarCity: 'ကန်ခန်',
-    ),
-    'America/Caracas': TimeZoneNames(
-      exemplarCity: 'ကာရာကာစ်',
-    ),
-    'America/Catamarca': TimeZoneNames(
-      exemplarCity: 'ကာတာမာရကာ',
-    ),
-    'America/Cayenne': TimeZoneNames(
-      exemplarCity: 'ကေညင်န်',
-    ),
-    'America/Cayman': TimeZoneNames(
-      exemplarCity: 'ကေမန်',
-    ),
-    'America/Chicago': TimeZoneNames(
-      exemplarCity: 'ချီကာကို',
-    ),
-    'America/Chihuahua': TimeZoneNames(
-      exemplarCity: 'ချီဟူအာဟူအာ',
-    ),
-    'America/Ciudad_Juarez': TimeZoneNames(
-      exemplarCity: 'စီယူဒတ်စ် ဟွာရက်စ်',
-    ),
-    'America/Coral_Harbour': TimeZoneNames(
-      exemplarCity: 'အာတီကိုကန်',
-    ),
-    'America/Cordoba': TimeZoneNames(
-      exemplarCity: 'ကိုဒိုဘာ',
-    ),
-    'America/Costa_Rica': TimeZoneNames(
-      exemplarCity: 'ကို့စတာရီကာ',
-    ),
-    'America/Creston': TimeZoneNames(
-      exemplarCity: 'ကရစ်စတွန်',
-    ),
-    'America/Cuiaba': TimeZoneNames(
-      exemplarCity: 'ကွီရာဘာ',
-    ),
-    'America/Curacao': TimeZoneNames(
-      exemplarCity: 'ကျူရေးကိုး',
-    ),
-    'America/Danmarkshavn': TimeZoneNames(
-      exemplarCity: 'ဒန်မတ်ရှ်ဗာန်',
-    ),
-    'America/Dawson': TimeZoneNames(
-      exemplarCity: 'ဒေါ်ဆန်',
-    ),
-    'America/Dawson_Creek': TimeZoneNames(
-      exemplarCity: 'ဒေါ်ဆန် ခရိခ်',
-    ),
-    'America/Denver': TimeZoneNames(
-      exemplarCity: 'ဒင်န်ဗာ',
-    ),
-    'America/Detroit': TimeZoneNames(
-      exemplarCity: 'ဒက်ထရွိုက်',
-    ),
-    'America/Dominica': TimeZoneNames(
-      exemplarCity: 'ဒိုမီနီကာ',
-    ),
-    'America/Edmonton': TimeZoneNames(
-      exemplarCity: 'အက်ဒ်မွန်တန်',
-    ),
-    'America/Eirunepe': TimeZoneNames(
-      exemplarCity: 'အီရူနီပီ',
-    ),
-    'America/El_Salvador': TimeZoneNames(
-      exemplarCity: 'အယ်လ်ဆာဗေဒို',
-    ),
-    'America/Fort_Nelson': TimeZoneNames(
-      exemplarCity: 'ဖို့တ် နယ်လ်ဆင်',
-    ),
-    'America/Fortaleza': TimeZoneNames(
-      exemplarCity: 'ဖို့တ်တာလီဇာ',
-    ),
-    'America/Glace_Bay': TimeZoneNames(
-      exemplarCity: 'ဂလဲစ်ဘေး',
-    ),
-    'America/Godthab': TimeZoneNames(
-      exemplarCity: 'နုခ်',
-    ),
-    'America/Goose_Bay': TimeZoneNames(
-      exemplarCity: 'ဂူးစ်ဘေး',
-    ),
-    'America/Grand_Turk': TimeZoneNames(
-      exemplarCity: 'ဂရန်ဒ် တခ်',
-    ),
-    'America/Grenada': TimeZoneNames(
-      exemplarCity: 'ဂရီနေဒါ',
-    ),
-    'America/Guadeloupe': TimeZoneNames(
-      exemplarCity: 'ဂွါဒီလုပ်',
-    ),
-    'America/Guatemala': TimeZoneNames(
-      exemplarCity: 'ဂွါတီမာလာ',
-    ),
-    'America/Guayaquil': TimeZoneNames(
-      exemplarCity: 'ဂွါရာကွီးလ်',
-    ),
-    'America/Guyana': TimeZoneNames(
-      exemplarCity: 'ဂိုင်ယာနာ',
-    ),
-    'America/Halifax': TimeZoneNames(
-      exemplarCity: 'ဟလီဖက်စ်',
-    ),
-    'America/Havana': TimeZoneNames(
-      exemplarCity: 'ဟာဗာနာ',
-    ),
-    'America/Hermosillo': TimeZoneNames(
-      exemplarCity: 'ဟာမိုစ်စီလို',
-    ),
-    'America/Indiana/Vincennes': TimeZoneNames(
-      exemplarCity: 'ဗင်ဆင့်စ်၊ အင်ဒီယားနား',
-    ),
-    'America/Indiana/Petersburg': TimeZoneNames(
-      exemplarCity: 'ပီတာစ်ဘတ်ခ်၊ အင်ဒီယားနား',
-    ),
-    'America/Indiana/Tell_City': TimeZoneNames(
-      exemplarCity: 'တဲလ်စီးတီး၊ အင်ဒီယားနား',
-    ),
-    'America/Indiana/Knox': TimeZoneNames(
-      exemplarCity: 'နောက်ခ်စ်၊ အင်ဒီယားနား',
-    ),
-    'America/Indiana/Winamac': TimeZoneNames(
-      exemplarCity: 'ဝီနာမက်ခ်၊ အင်ဒီယားနား',
-    ),
-    'America/Indiana/Marengo': TimeZoneNames(
-      exemplarCity: 'မာရန်ဂို၊ အင်ဒီယားနား',
-    ),
-    'America/Indiana/Vevay': TimeZoneNames(
-      exemplarCity: 'ဗီဗဲ၊ အင်ဒီယားနား',
-    ),
-    'America/Indianapolis': TimeZoneNames(
-      exemplarCity: 'အင်ဒီယားနား ပိုလိစ်',
-    ),
-    'America/Inuvik': TimeZoneNames(
-      exemplarCity: 'အီနုဗီခ်',
-    ),
-    'America/Iqaluit': TimeZoneNames(
-      exemplarCity: 'အီကာလူအီတ်',
-    ),
-    'America/Jamaica': TimeZoneNames(
-      exemplarCity: 'ဂျမေကာ',
-    ),
-    'America/Jujuy': TimeZoneNames(
-      exemplarCity: 'ဂျုဂျေ',
-    ),
-    'America/Juneau': TimeZoneNames(
-      exemplarCity: 'ဂျုနိုအော',
-    ),
-    'America/Kentucky/Monticello': TimeZoneNames(
-      exemplarCity: 'မွန်တီချယ်လို၊ ကင်တပ်ကီ',
-    ),
-    'America/Kralendijk': TimeZoneNames(
-      exemplarCity: 'ခရာလဲန်းဒစ်ချ်',
-    ),
-    'America/La_Paz': TimeZoneNames(
-      exemplarCity: 'လာပါဇ်',
-    ),
-    'America/Lima': TimeZoneNames(
-      exemplarCity: 'လီမာ',
-    ),
-    'America/Los_Angeles': TimeZoneNames(
-      exemplarCity: 'လော့စ်အိန်ဂျယ်လိစ်',
-    ),
-    'America/Louisville': TimeZoneNames(
-      exemplarCity: 'လူဝီဗီးလ်',
-    ),
-    'America/Lower_Princes': TimeZoneNames(
-      exemplarCity: 'လိုအာပရင့်စ် ကွာတာ',
-    ),
-    'America/Maceio': TimeZoneNames(
-      exemplarCity: 'မာဆဲသွာ',
-    ),
-    'America/Managua': TimeZoneNames(
-      exemplarCity: 'မာနာဂွါ',
-    ),
-    'America/Manaus': TimeZoneNames(
-      exemplarCity: 'မာနောက်စ်',
-    ),
-    'America/Marigot': TimeZoneNames(
-      exemplarCity: 'မာရီဂေါ့',
-    ),
-    'America/Martinique': TimeZoneNames(
-      exemplarCity: 'မာတီနီဂ်',
-    ),
-    'America/Matamoros': TimeZoneNames(
-      exemplarCity: 'မာတာမိုရိုစ်',
-    ),
-    'America/Mazatlan': TimeZoneNames(
-      exemplarCity: 'မာဇတ်လန်',
-    ),
-    'America/Mendoza': TimeZoneNames(
-      exemplarCity: 'မန်ဒိုဇာ',
-    ),
-    'America/Menominee': TimeZoneNames(
-      exemplarCity: 'မီနိုမီနီး',
-    ),
-    'America/Merida': TimeZoneNames(
-      exemplarCity: 'မီရီဒါ',
-    ),
-    'America/Metlakatla': TimeZoneNames(
-      exemplarCity: 'မက်တ်လာကက်လာ',
-    ),
-    'America/Mexico_City': TimeZoneNames(
-      exemplarCity: 'မက်ကဆီကို စီးတီး',
-    ),
-    'America/Miquelon': TimeZoneNames(
-      exemplarCity: 'မီကွီလွန်',
-    ),
-    'America/Moncton': TimeZoneNames(
-      exemplarCity: 'မွန်ခ်တွန်',
-    ),
-    'America/Monterrey': TimeZoneNames(
-      exemplarCity: 'မွန်တဲရေး',
-    ),
-    'America/Montevideo': TimeZoneNames(
-      exemplarCity: 'မွန်တီဗီဒီအို',
-    ),
-    'America/Montserrat': TimeZoneNames(
-      exemplarCity: 'မွန့်(တ်)ဆေးရတ်',
-    ),
-    'America/Nassau': TimeZoneNames(
-      exemplarCity: 'နာ့ဆော်',
-    ),
-    'America/New_York': TimeZoneNames(
-      exemplarCity: 'နယူးယောက်',
-    ),
-    'America/Nome': TimeZoneNames(
-      exemplarCity: 'နိုမီ',
-    ),
-    'America/Noronha': TimeZoneNames(
-      exemplarCity: 'နိုရိုညာ',
-    ),
-    'America/North_Dakota/Beulah': TimeZoneNames(
-      exemplarCity: 'ဗြူလာ၊ မြောက်ဒါကိုတာ',
-    ),
-    'America/North_Dakota/New_Salem': TimeZoneNames(
-      exemplarCity: 'နယူးဆေးလမ်၊ မြောက်ဒါကိုတာ',
-    ),
-    'America/North_Dakota/Center': TimeZoneNames(
-      exemplarCity: 'စင်တာ၊ မြောက်ဒါကိုတာ',
-    ),
-    'America/Ojinaga': TimeZoneNames(
-      exemplarCity: 'အိုခီနဂါ',
-    ),
-    'America/Panama': TimeZoneNames(
-      exemplarCity: 'ပနားမား',
-    ),
-    'America/Paramaribo': TimeZoneNames(
-      exemplarCity: 'ပါရာမာရီဘို',
-    ),
-    'America/Phoenix': TimeZoneNames(
-      exemplarCity: 'ဖီးနစ်',
-    ),
-    'America/Port-au-Prince': TimeZoneNames(
-      exemplarCity: 'ပို့တ်-အို-ပရင့်စ်',
-    ),
-    'America/Port_of_Spain': TimeZoneNames(
-      exemplarCity: 'ပို့တ် အော့ဖ် စပိန်',
-    ),
-    'America/Porto_Velho': TimeZoneNames(
-      exemplarCity: 'ပို့တ်တို ဗဲလီယို',
-    ),
-    'America/Puerto_Rico': TimeZoneNames(
-      exemplarCity: 'ပေါ်တိုရီကို',
-    ),
-    'America/Punta_Arenas': TimeZoneNames(
-      exemplarCity: 'ပွန်တာ အရီနာစ်',
-    ),
-    'America/Rankin_Inlet': TimeZoneNames(
-      exemplarCity: 'ရန်ကင် အင်းလက်',
-    ),
-    'America/Recife': TimeZoneNames(
-      exemplarCity: 'ဟေစီဖီလ်',
-    ),
-    'America/Regina': TimeZoneNames(
-      exemplarCity: 'ရယ်ဂျီနာ',
-    ),
-    'America/Resolute': TimeZoneNames(
-      exemplarCity: 'ရီဆိုလုပ်(တ်)',
-    ),
-    'America/Rio_Branco': TimeZoneNames(
-      exemplarCity: 'ရီယို ဘရန်ကို',
-    ),
-    'America/Santarem': TimeZoneNames(
-      exemplarCity: 'ဆန်တာရမ်',
-    ),
-    'America/Santiago': TimeZoneNames(
-      exemplarCity: 'ဆန်တီအာဂို',
-    ),
-    'America/Santo_Domingo': TimeZoneNames(
-      exemplarCity: 'ဆန်တို ဒိုမင်းဂို',
-    ),
-    'America/Sao_Paulo': TimeZoneNames(
-      exemplarCity: 'ဆော်ပိုလို',
-    ),
-    'America/Scoresbysund': TimeZoneNames(
-      exemplarCity: 'အစ်တာကာ တိုးမိရက်တ်',
-    ),
-    'America/Sitka': TimeZoneNames(
-      exemplarCity: 'စစ်ကာ',
-    ),
-    'America/St_Barthelemy': TimeZoneNames(
-      exemplarCity: 'စိန့်ဘာသယ်လမီ',
-    ),
-    'America/St_Johns': TimeZoneNames(
-      exemplarCity: 'စိန့်ဂျွန်း',
-    ),
-    'America/St_Kitts': TimeZoneNames(
-      exemplarCity: 'စိန့်ကိစ်',
-    ),
-    'America/St_Lucia': TimeZoneNames(
-      exemplarCity: 'စိန့်လူစီယာ',
-    ),
-    'America/St_Thomas': TimeZoneNames(
-      exemplarCity: 'စိန့်သောမတ်စ်',
-    ),
-    'America/St_Vincent': TimeZoneNames(
-      exemplarCity: 'စိန့်ဗင်းဆင့်',
-    ),
-    'America/Swift_Current': TimeZoneNames(
-      exemplarCity: 'စွတ်ဖ်တ် ကားရင့်',
-    ),
-    'America/Tegucigalpa': TimeZoneNames(
-      exemplarCity: 'တီဂူစီဂလ်ပါ',
-    ),
-    'America/Thule': TimeZoneNames(
-      exemplarCity: 'သုလီ',
-    ),
-    'America/Tijuana': TimeZoneNames(
-      exemplarCity: 'တီဂွါနာ',
-    ),
-    'America/Toronto': TimeZoneNames(
-      exemplarCity: 'တိုရန်တို',
-    ),
-    'America/Tortola': TimeZoneNames(
-      exemplarCity: 'တောတိုလာ',
-    ),
-    'America/Vancouver': TimeZoneNames(
-      exemplarCity: 'ဗန်ကူးဗား',
-    ),
-    'America/Whitehorse': TimeZoneNames(
-      exemplarCity: 'ဝိုက်(တ်)ဟိုစ်',
-    ),
-    'America/Winnipeg': TimeZoneNames(
-      exemplarCity: 'ဝီနီဗက်ဂ်',
-    ),
-    'America/Yakutat': TimeZoneNames(
-      exemplarCity: 'ရာကုတတ်',
-    ),
-    'Atlantic/Azores': TimeZoneNames(
-      exemplarCity: 'အေဇိုးရီးစ်',
-    ),
-    'Atlantic/Bermuda': TimeZoneNames(
-      exemplarCity: 'ဘာမြူဒါ',
-    ),
-    'Atlantic/Canary': TimeZoneNames(
-      exemplarCity: 'ကနေရီ',
-    ),
-    'Atlantic/Cape_Verde': TimeZoneNames(
-      exemplarCity: 'ကိတ်ပ် ဗာဒီ',
-    ),
-    'Atlantic/Faeroe': TimeZoneNames(
-      exemplarCity: 'ဖါရို',
-    ),
-    'Atlantic/Madeira': TimeZoneNames(
-      exemplarCity: 'မဒီးရာ',
-    ),
-    'Atlantic/Reykjavik': TimeZoneNames(
-      exemplarCity: 'ရေးကီဗစ်ခ်',
-    ),
-    'Atlantic/South_Georgia': TimeZoneNames(
-      exemplarCity: 'တောင်ဂျော်ဂျီယာ',
-    ),
-    'Atlantic/St_Helena': TimeZoneNames(
-      exemplarCity: 'စိန့်ဟယ်လယ်နာ',
-    ),
-    'Atlantic/Stanley': TimeZoneNames(
-      exemplarCity: 'စတန်လေ',
-    ),
-    'Europe/Amsterdam': TimeZoneNames(
-      exemplarCity: 'အမ်စတာဒမ်',
-    ),
-    'Europe/Andorra': TimeZoneNames(
-      exemplarCity: 'အန်ဒိုရာ',
-    ),
-    'Europe/Astrakhan': TimeZoneNames(
-      exemplarCity: 'အားစ်တရခန်း',
-    ),
-    'Europe/Athens': TimeZoneNames(
-      exemplarCity: 'အေသင်',
-    ),
-    'Europe/Belgrade': TimeZoneNames(
-      exemplarCity: 'ဘဲလ်ဂရိတ်',
-    ),
-    'Europe/Berlin': TimeZoneNames(
-      exemplarCity: 'ဘာလင်',
-    ),
-    'Europe/Bratislava': TimeZoneNames(
-      exemplarCity: 'ဘရာတီးစ်လားဗာ',
-    ),
-    'Europe/Brussels': TimeZoneNames(
-      exemplarCity: 'ဘရပ်ဆဲလ်',
-    ),
-    'Europe/Bucharest': TimeZoneNames(
-      exemplarCity: 'ဘူခါရက်စ်',
-    ),
-    'Europe/Budapest': TimeZoneNames(
-      exemplarCity: 'ဘူဒါပက်စ်',
-    ),
-    'Europe/Busingen': TimeZoneNames(
-      exemplarCity: 'ဘူရှင်ဂျင်',
-    ),
-    'Europe/Chisinau': TimeZoneNames(
-      exemplarCity: 'ချီရှီနားအူ',
-    ),
-    'Europe/Copenhagen': TimeZoneNames(
-      exemplarCity: 'ကိုပင်ဟေဂင်',
-    ),
+  final timeZoneNames = const {
+    'America/Adak': TimeZoneNames(exemplarCity: 'အာဒချ'),
+    'America/Anchorage': TimeZoneNames(exemplarCity: 'အန်ကာရေ့ဂျ်'),
+    'America/Anguilla': TimeZoneNames(exemplarCity: 'အန်ဂီလာ'),
+    'America/Antigua': TimeZoneNames(exemplarCity: 'အန်တီဂွါ'),
+    'America/Araguaina': TimeZoneNames(exemplarCity: 'အာရာဂွါအီနာ'),
+    'America/Argentina/Rio_Gallegos':
+        TimeZoneNames(exemplarCity: 'ရီယို ဂါလီဂိုစ်'),
+    'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'ဆန် ဂွမ်'),
+    'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'ဥဆွာအီအာ'),
+    'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'လာ ရီယိုဟာ'),
+    'America/Argentina/San_Luis': TimeZoneNames(exemplarCity: 'ဆန် လူဝီစ်'),
+    'America/Argentina/Salta': TimeZoneNames(exemplarCity: 'ဆာလ်တာ'),
+    'America/Argentina/Tucuman': TimeZoneNames(exemplarCity: 'တူကူမန်'),
+    'America/Aruba': TimeZoneNames(exemplarCity: 'အာရူးဗာ'),
+    'America/Asuncion': TimeZoneNames(exemplarCity: 'အာဆူစီအွန်း'),
+    'America/Bahia': TimeZoneNames(exemplarCity: 'ဘာဟီအာ'),
+    'America/Bahia_Banderas': TimeZoneNames(exemplarCity: 'ဘာဟီအာ ဘန်ဒရက်စ်'),
+    'America/Barbados': TimeZoneNames(exemplarCity: 'ဘာဘေးဒိုးစ်'),
+    'America/Belem': TimeZoneNames(exemplarCity: 'ဘီလင်မ်'),
+    'America/Belize': TimeZoneNames(exemplarCity: 'ဘလိဇ်'),
+    'America/Blanc-Sablon': TimeZoneNames(exemplarCity: 'ဘလွန်ခ်-စာဘလွန်'),
+    'America/Boa_Vista': TimeZoneNames(exemplarCity: 'ဘိုအာဗီစ်တာ'),
+    'America/Bogota': TimeZoneNames(exemplarCity: 'ဘိုဂိုတာ'),
+    'America/Boise': TimeZoneNames(exemplarCity: 'ဗွိုက်စီ'),
+    'America/Buenos_Aires': TimeZoneNames(exemplarCity: 'ဗျူနိုအေးရိစ်'),
+    'America/Cambridge_Bay': TimeZoneNames(exemplarCity: 'ကိန်းဘရစ်ချ် ဘေး'),
+    'America/Campo_Grande': TimeZoneNames(exemplarCity: 'ကိမ်ပို ဂရန်ဒီ'),
+    'America/Cancun': TimeZoneNames(exemplarCity: 'ကန်ခန်'),
+    'America/Caracas': TimeZoneNames(exemplarCity: 'ကာရာကာစ်'),
+    'America/Catamarca': TimeZoneNames(exemplarCity: 'ကာတာမာရကာ'),
+    'America/Cayenne': TimeZoneNames(exemplarCity: 'ကေညင်န်'),
+    'America/Cayman': TimeZoneNames(exemplarCity: 'ကေမန်'),
+    'America/Chicago': TimeZoneNames(exemplarCity: 'ချီကာကို'),
+    'America/Chihuahua': TimeZoneNames(exemplarCity: 'ချီဟူအာဟူအာ'),
+    'America/Ciudad_Juarez': TimeZoneNames(exemplarCity: 'စီယူဒတ်စ် ဟွာရက်စ်'),
+    'America/Coral_Harbour': TimeZoneNames(exemplarCity: 'အာတီကိုကန်'),
+    'America/Cordoba': TimeZoneNames(exemplarCity: 'ကိုဒိုဘာ'),
+    'America/Costa_Rica': TimeZoneNames(exemplarCity: 'ကို့စတာရီကာ'),
+    'America/Creston': TimeZoneNames(exemplarCity: 'ကရစ်စတွန်'),
+    'America/Cuiaba': TimeZoneNames(exemplarCity: 'ကွီရာဘာ'),
+    'America/Curacao': TimeZoneNames(exemplarCity: 'ကျူရေးကိုး'),
+    'America/Danmarkshavn': TimeZoneNames(exemplarCity: 'ဒန်မတ်ရှ်ဗာန်'),
+    'America/Dawson': TimeZoneNames(exemplarCity: 'ဒေါ်ဆန်'),
+    'America/Dawson_Creek': TimeZoneNames(exemplarCity: 'ဒေါ်ဆန် ခရိခ်'),
+    'America/Denver': TimeZoneNames(exemplarCity: 'ဒင်န်ဗာ'),
+    'America/Detroit': TimeZoneNames(exemplarCity: 'ဒက်ထရွိုက်'),
+    'America/Dominica': TimeZoneNames(exemplarCity: 'ဒိုမီနီကာ'),
+    'America/Edmonton': TimeZoneNames(exemplarCity: 'အက်ဒ်မွန်တန်'),
+    'America/Eirunepe': TimeZoneNames(exemplarCity: 'အီရူနီပီ'),
+    'America/El_Salvador': TimeZoneNames(exemplarCity: 'အယ်လ်ဆာဗေဒို'),
+    'America/Fort_Nelson': TimeZoneNames(exemplarCity: 'ဖို့တ် နယ်လ်ဆင်'),
+    'America/Fortaleza': TimeZoneNames(exemplarCity: 'ဖို့တ်တာလီဇာ'),
+    'America/Glace_Bay': TimeZoneNames(exemplarCity: 'ဂလဲစ်ဘေး'),
+    'America/Godthab': TimeZoneNames(exemplarCity: 'နုခ်'),
+    'America/Goose_Bay': TimeZoneNames(exemplarCity: 'ဂူးစ်ဘေး'),
+    'America/Grand_Turk': TimeZoneNames(exemplarCity: 'ဂရန်ဒ် တခ်'),
+    'America/Grenada': TimeZoneNames(exemplarCity: 'ဂရီနေဒါ'),
+    'America/Guadeloupe': TimeZoneNames(exemplarCity: 'ဂွါဒီလုပ်'),
+    'America/Guatemala': TimeZoneNames(exemplarCity: 'ဂွါတီမာလာ'),
+    'America/Guayaquil': TimeZoneNames(exemplarCity: 'ဂွါရာကွီးလ်'),
+    'America/Guyana': TimeZoneNames(exemplarCity: 'ဂိုင်ယာနာ'),
+    'America/Halifax': TimeZoneNames(exemplarCity: 'ဟလီဖက်စ်'),
+    'America/Havana': TimeZoneNames(exemplarCity: 'ဟာဗာနာ'),
+    'America/Hermosillo': TimeZoneNames(exemplarCity: 'ဟာမိုစ်စီလို'),
+    'America/Indiana/Vincennes':
+        TimeZoneNames(exemplarCity: 'ဗင်ဆင့်စ်၊ အင်ဒီယားနား'),
+    'America/Indiana/Petersburg':
+        TimeZoneNames(exemplarCity: 'ပီတာစ်ဘတ်ခ်၊ အင်ဒီယားနား'),
+    'America/Indiana/Tell_City':
+        TimeZoneNames(exemplarCity: 'တဲလ်စီးတီး၊ အင်ဒီယားနား'),
+    'America/Indiana/Knox':
+        TimeZoneNames(exemplarCity: 'နောက်ခ်စ်၊ အင်ဒီယားနား'),
+    'America/Indiana/Winamac':
+        TimeZoneNames(exemplarCity: 'ဝီနာမက်ခ်၊ အင်ဒီယားနား'),
+    'America/Indiana/Marengo':
+        TimeZoneNames(exemplarCity: 'မာရန်ဂို၊ အင်ဒီယားနား'),
+    'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'ဗီဗဲ၊ အင်ဒီယားနား'),
+    'America/Indianapolis': TimeZoneNames(exemplarCity: 'အင်ဒီယားနား ပိုလိစ်'),
+    'America/Inuvik': TimeZoneNames(exemplarCity: 'အီနုဗီခ်'),
+    'America/Iqaluit': TimeZoneNames(exemplarCity: 'အီကာလူအီတ်'),
+    'America/Jamaica': TimeZoneNames(exemplarCity: 'ဂျမေကာ'),
+    'America/Jujuy': TimeZoneNames(exemplarCity: 'ဂျုဂျေ'),
+    'America/Juneau': TimeZoneNames(exemplarCity: 'ဂျုနိုအော'),
+    'America/Kentucky/Monticello':
+        TimeZoneNames(exemplarCity: 'မွန်တီချယ်လို၊ ကင်တပ်ကီ'),
+    'America/Kralendijk': TimeZoneNames(exemplarCity: 'ခရာလဲန်းဒစ်ချ်'),
+    'America/La_Paz': TimeZoneNames(exemplarCity: 'လာပါဇ်'),
+    'America/Lima': TimeZoneNames(exemplarCity: 'လီမာ'),
+    'America/Los_Angeles': TimeZoneNames(exemplarCity: 'လော့စ်အိန်ဂျယ်လိစ်'),
+    'America/Louisville': TimeZoneNames(exemplarCity: 'လူဝီဗီးလ်'),
+    'America/Lower_Princes': TimeZoneNames(exemplarCity: 'လိုအာပရင့်စ် ကွာတာ'),
+    'America/Maceio': TimeZoneNames(exemplarCity: 'မာဆဲသွာ'),
+    'America/Managua': TimeZoneNames(exemplarCity: 'မာနာဂွါ'),
+    'America/Manaus': TimeZoneNames(exemplarCity: 'မာနောက်စ်'),
+    'America/Marigot': TimeZoneNames(exemplarCity: 'မာရီဂေါ့'),
+    'America/Martinique': TimeZoneNames(exemplarCity: 'မာတီနီဂ်'),
+    'America/Matamoros': TimeZoneNames(exemplarCity: 'မာတာမိုရိုစ်'),
+    'America/Mazatlan': TimeZoneNames(exemplarCity: 'မာဇတ်လန်'),
+    'America/Mendoza': TimeZoneNames(exemplarCity: 'မန်ဒိုဇာ'),
+    'America/Menominee': TimeZoneNames(exemplarCity: 'မီနိုမီနီး'),
+    'America/Merida': TimeZoneNames(exemplarCity: 'မီရီဒါ'),
+    'America/Metlakatla': TimeZoneNames(exemplarCity: 'မက်တ်လာကက်လာ'),
+    'America/Mexico_City': TimeZoneNames(exemplarCity: 'မက်ကဆီကို စီးတီး'),
+    'America/Miquelon': TimeZoneNames(exemplarCity: 'မီကွီလွန်'),
+    'America/Moncton': TimeZoneNames(exemplarCity: 'မွန်ခ်တွန်'),
+    'America/Monterrey': TimeZoneNames(exemplarCity: 'မွန်တဲရေး'),
+    'America/Montevideo': TimeZoneNames(exemplarCity: 'မွန်တီဗီဒီအို'),
+    'America/Montserrat': TimeZoneNames(exemplarCity: 'မွန့်(တ်)ဆေးရတ်'),
+    'America/Nassau': TimeZoneNames(exemplarCity: 'နာ့ဆော်'),
+    'America/New_York': TimeZoneNames(exemplarCity: 'နယူးယောက်'),
+    'America/Nome': TimeZoneNames(exemplarCity: 'နိုမီ'),
+    'America/Noronha': TimeZoneNames(exemplarCity: 'နိုရိုညာ'),
+    'America/North_Dakota/Beulah':
+        TimeZoneNames(exemplarCity: 'ဗြူလာ၊ မြောက်ဒါကိုတာ'),
+    'America/North_Dakota/New_Salem':
+        TimeZoneNames(exemplarCity: 'နယူးဆေးလမ်၊ မြောက်ဒါကိုတာ'),
+    'America/North_Dakota/Center':
+        TimeZoneNames(exemplarCity: 'စင်တာ၊ မြောက်ဒါကိုတာ'),
+    'America/Ojinaga': TimeZoneNames(exemplarCity: 'အိုခီနဂါ'),
+    'America/Panama': TimeZoneNames(exemplarCity: 'ပနားမား'),
+    'America/Paramaribo': TimeZoneNames(exemplarCity: 'ပါရာမာရီဘို'),
+    'America/Phoenix': TimeZoneNames(exemplarCity: 'ဖီးနစ်'),
+    'America/Port-au-Prince': TimeZoneNames(exemplarCity: 'ပို့တ်-အို-ပရင့်စ်'),
+    'America/Port_of_Spain': TimeZoneNames(exemplarCity: 'ပို့တ် အော့ဖ် စပိန်'),
+    'America/Porto_Velho': TimeZoneNames(exemplarCity: 'ပို့တ်တို ဗဲလီယို'),
+    'America/Puerto_Rico': TimeZoneNames(exemplarCity: 'ပေါ်တိုရီကို'),
+    'America/Punta_Arenas': TimeZoneNames(exemplarCity: 'ပွန်တာ အရီနာစ်'),
+    'America/Rankin_Inlet': TimeZoneNames(exemplarCity: 'ရန်ကင် အင်းလက်'),
+    'America/Recife': TimeZoneNames(exemplarCity: 'ဟေစီဖီလ်'),
+    'America/Regina': TimeZoneNames(exemplarCity: 'ရယ်ဂျီနာ'),
+    'America/Resolute': TimeZoneNames(exemplarCity: 'ရီဆိုလုပ်(တ်)'),
+    'America/Rio_Branco': TimeZoneNames(exemplarCity: 'ရီယို ဘရန်ကို'),
+    'America/Santarem': TimeZoneNames(exemplarCity: 'ဆန်တာရမ်'),
+    'America/Santiago': TimeZoneNames(exemplarCity: 'ဆန်တီအာဂို'),
+    'America/Santo_Domingo': TimeZoneNames(exemplarCity: 'ဆန်တို ဒိုမင်းဂို'),
+    'America/Sao_Paulo': TimeZoneNames(exemplarCity: 'ဆော်ပိုလို'),
+    'America/Scoresbysund': TimeZoneNames(exemplarCity: 'အစ်တာကာ တိုးမိရက်တ်'),
+    'America/Sitka': TimeZoneNames(exemplarCity: 'စစ်ကာ'),
+    'America/St_Barthelemy': TimeZoneNames(exemplarCity: 'စိန့်ဘာသယ်လမီ'),
+    'America/St_Johns': TimeZoneNames(exemplarCity: 'စိန့်ဂျွန်း'),
+    'America/St_Kitts': TimeZoneNames(exemplarCity: 'စိန့်ကိစ်'),
+    'America/St_Lucia': TimeZoneNames(exemplarCity: 'စိန့်လူစီယာ'),
+    'America/St_Thomas': TimeZoneNames(exemplarCity: 'စိန့်သောမတ်စ်'),
+    'America/St_Vincent': TimeZoneNames(exemplarCity: 'စိန့်ဗင်းဆင့်'),
+    'America/Swift_Current': TimeZoneNames(exemplarCity: 'စွတ်ဖ်တ် ကားရင့်'),
+    'America/Tegucigalpa': TimeZoneNames(exemplarCity: 'တီဂူစီဂလ်ပါ'),
+    'America/Thule': TimeZoneNames(exemplarCity: 'သုလီ'),
+    'America/Tijuana': TimeZoneNames(exemplarCity: 'တီဂွါနာ'),
+    'America/Toronto': TimeZoneNames(exemplarCity: 'တိုရန်တို'),
+    'America/Tortola': TimeZoneNames(exemplarCity: 'တောတိုလာ'),
+    'America/Vancouver': TimeZoneNames(exemplarCity: 'ဗန်ကူးဗား'),
+    'America/Whitehorse': TimeZoneNames(exemplarCity: 'ဝိုက်(တ်)ဟိုစ်'),
+    'America/Winnipeg': TimeZoneNames(exemplarCity: 'ဝီနီဗက်ဂ်'),
+    'America/Yakutat': TimeZoneNames(exemplarCity: 'ရာကုတတ်'),
+    'Atlantic/Azores': TimeZoneNames(exemplarCity: 'အေဇိုးရီးစ်'),
+    'Atlantic/Bermuda': TimeZoneNames(exemplarCity: 'ဘာမြူဒါ'),
+    'Atlantic/Canary': TimeZoneNames(exemplarCity: 'ကနေရီ'),
+    'Atlantic/Cape_Verde': TimeZoneNames(exemplarCity: 'ကိတ်ပ် ဗာဒီ'),
+    'Atlantic/Faeroe': TimeZoneNames(exemplarCity: 'ဖါရို'),
+    'Atlantic/Madeira': TimeZoneNames(exemplarCity: 'မဒီးရာ'),
+    'Atlantic/Reykjavik': TimeZoneNames(exemplarCity: 'ရေးကီဗစ်ခ်'),
+    'Atlantic/South_Georgia': TimeZoneNames(exemplarCity: 'တောင်ဂျော်ဂျီယာ'),
+    'Atlantic/St_Helena': TimeZoneNames(exemplarCity: 'စိန့်ဟယ်လယ်နာ'),
+    'Atlantic/Stanley': TimeZoneNames(exemplarCity: 'စတန်လေ'),
+    'Europe/Amsterdam': TimeZoneNames(exemplarCity: 'အမ်စတာဒမ်'),
+    'Europe/Andorra': TimeZoneNames(exemplarCity: 'အန်ဒိုရာ'),
+    'Europe/Astrakhan': TimeZoneNames(exemplarCity: 'အားစ်တရခန်း'),
+    'Europe/Athens': TimeZoneNames(exemplarCity: 'အေသင်'),
+    'Europe/Belgrade': TimeZoneNames(exemplarCity: 'ဘဲလ်ဂရိတ်'),
+    'Europe/Berlin': TimeZoneNames(exemplarCity: 'ဘာလင်'),
+    'Europe/Bratislava': TimeZoneNames(exemplarCity: 'ဘရာတီးစ်လားဗာ'),
+    'Europe/Brussels': TimeZoneNames(exemplarCity: 'ဘရပ်ဆဲလ်'),
+    'Europe/Bucharest': TimeZoneNames(exemplarCity: 'ဘူခါရက်စ်'),
+    'Europe/Budapest': TimeZoneNames(exemplarCity: 'ဘူဒါပက်စ်'),
+    'Europe/Busingen': TimeZoneNames(exemplarCity: 'ဘူရှင်ဂျင်'),
+    'Europe/Chisinau': TimeZoneNames(exemplarCity: 'ချီရှီနားအူ'),
+    'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'ကိုပင်ဟေဂင်'),
     'Europe/Dublin': TimeZoneNames(
-      long: TimeZoneName(
-        daylight: 'အိုင်းရစ်ရှ် စံတော်ချိန်',
-      ),
-      exemplarCity: 'ဒတ်ဘလင်',
-    ),
-    'Europe/Gibraltar': TimeZoneNames(
-      exemplarCity: 'ဂျီဘရော်လ်တာ',
-    ),
-    'Europe/Guernsey': TimeZoneNames(
-      exemplarCity: 'ဂွန်းဇီ',
-    ),
-    'Europe/Helsinki': TimeZoneNames(
-      exemplarCity: 'ဟဲလ်စင်ကီ',
-    ),
-    'Europe/Isle_of_Man': TimeZoneNames(
-      exemplarCity: 'မန်းကျွန်း',
-    ),
-    'Europe/Istanbul': TimeZoneNames(
-      exemplarCity: 'အစ္စတန်ဘူလ်',
-    ),
-    'Europe/Jersey': TimeZoneNames(
-      exemplarCity: 'ဂျာစီ',
-    ),
-    'Europe/Kaliningrad': TimeZoneNames(
-      exemplarCity: 'ခါလီနင်ဂရက်',
-    ),
-    'Europe/Kiev': TimeZoneNames(
-      exemplarCity: 'ခီးအက်ဖ်',
-    ),
-    'Europe/Kirov': TimeZoneNames(
-      exemplarCity: 'ခီရိုဗ်',
-    ),
-    'Europe/Lisbon': TimeZoneNames(
-      exemplarCity: 'လစ္စဘွန်း',
-    ),
-    'Europe/Ljubljana': TimeZoneNames(
-      exemplarCity: 'လူဘလီအားနား',
-    ),
+        exemplarCity: 'ဒတ်ဘလင်',
+        long: TimeZoneName(daylight: 'အိုင်းရစ်ရှ် စံတော်ချိန်')),
+    'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'ဂျီဘရော်လ်တာ'),
+    'Europe/Guernsey': TimeZoneNames(exemplarCity: 'ဂွန်းဇီ'),
+    'Europe/Helsinki': TimeZoneNames(exemplarCity: 'ဟဲလ်စင်ကီ'),
+    'Europe/Isle_of_Man': TimeZoneNames(exemplarCity: 'မန်းကျွန်း'),
+    'Europe/Istanbul': TimeZoneNames(exemplarCity: 'အစ္စတန်ဘူလ်'),
+    'Europe/Jersey': TimeZoneNames(exemplarCity: 'ဂျာစီ'),
+    'Europe/Kaliningrad': TimeZoneNames(exemplarCity: 'ခါလီနင်ဂရက်'),
+    'Europe/Kiev': TimeZoneNames(exemplarCity: 'ခီးအက်ဖ်'),
+    'Europe/Kirov': TimeZoneNames(exemplarCity: 'ခီရိုဗ်'),
+    'Europe/Lisbon': TimeZoneNames(exemplarCity: 'လစ္စဘွန်း'),
+    'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'လူဘလီအားနား'),
     'Europe/London': TimeZoneNames(
-      long: TimeZoneName(
-        daylight: 'ဗြိတိန် နွေရာသီ အချိန်',
-      ),
-      exemplarCity: 'လန်ဒန်',
-    ),
-    'Europe/Luxembourg': TimeZoneNames(
-      exemplarCity: 'လူဇင်ဘတ်',
-    ),
-    'Europe/Madrid': TimeZoneNames(
-      exemplarCity: 'မဒရစ်',
-    ),
-    'Europe/Malta': TimeZoneNames(
-      exemplarCity: 'မော်လ်တာ',
-    ),
-    'Europe/Mariehamn': TimeZoneNames(
-      exemplarCity: 'မရီအာ ဟားမန်',
-    ),
-    'Europe/Minsk': TimeZoneNames(
-      exemplarCity: 'မင်းစခ်',
-    ),
-    'Europe/Monaco': TimeZoneNames(
-      exemplarCity: 'မိုနာကို',
-    ),
-    'Europe/Moscow': TimeZoneNames(
-      exemplarCity: 'မော်စကို',
-    ),
-    'Europe/Oslo': TimeZoneNames(
-      exemplarCity: 'အော်စလို',
-    ),
-    'Europe/Paris': TimeZoneNames(
-      exemplarCity: 'ပဲရစ်',
-    ),
-    'Europe/Podgorica': TimeZoneNames(
-      exemplarCity: 'ပေါ့ဂိုရီကာ',
-    ),
-    'Europe/Prague': TimeZoneNames(
-      exemplarCity: 'ပရက်ဂ်',
-    ),
-    'Europe/Riga': TimeZoneNames(
-      exemplarCity: 'ရီဂါ',
-    ),
-    'Europe/Rome': TimeZoneNames(
-      exemplarCity: 'ရောမ',
-    ),
-    'Europe/Samara': TimeZoneNames(
-      exemplarCity: 'ဆာမားရာ',
-    ),
-    'Europe/San_Marino': TimeZoneNames(
-      exemplarCity: 'ဆန်မရီးနို',
-    ),
-    'Europe/Sarajevo': TimeZoneNames(
-      exemplarCity: 'ဆာရာယေဗို',
-    ),
-    'Europe/Saratov': TimeZoneNames(
-      exemplarCity: 'ဆာရာတို့ဖ်',
-    ),
-    'Europe/Simferopol': TimeZoneNames(
-      exemplarCity: 'စင်ဖာရိုးဖို',
-    ),
-    'Europe/Skopje': TimeZoneNames(
-      exemplarCity: 'စကော့ပ်ရာ',
-    ),
-    'Europe/Sofia': TimeZoneNames(
-      exemplarCity: 'ဆိုဖီအာ',
-    ),
-    'Europe/Stockholm': TimeZoneNames(
-      exemplarCity: 'စတော့ဟုမ်း',
-    ),
-    'Europe/Tallinn': TimeZoneNames(
-      exemplarCity: 'ထားလင်',
-    ),
-    'Europe/Tirane': TimeZoneNames(
-      exemplarCity: 'တီရာနီ',
-    ),
-    'Europe/Ulyanovsk': TimeZoneNames(
-      exemplarCity: 'အူလီယာနိုစကစ်ဖ်',
-    ),
-    'Europe/Vaduz': TimeZoneNames(
-      exemplarCity: 'ဗာဒူးစ်',
-    ),
-    'Europe/Vatican': TimeZoneNames(
-      exemplarCity: 'ဗာတီကန်',
-    ),
-    'Europe/Vienna': TimeZoneNames(
-      exemplarCity: 'ဗီယင်နာ',
-    ),
-    'Europe/Vilnius': TimeZoneNames(
-      exemplarCity: 'ဗီးလ်နီအိုးစ်',
-    ),
-    'Europe/Volgograd': TimeZoneNames(
-      exemplarCity: 'ဗိုလ်ဂိုဂရက်',
-    ),
-    'Europe/Warsaw': TimeZoneNames(
-      exemplarCity: 'ဝါဆော',
-    ),
-    'Europe/Zagreb': TimeZoneNames(
-      exemplarCity: 'ဇာဂ်ဂရက်ဘ်',
-    ),
-    'Europe/Zurich': TimeZoneNames(
-      exemplarCity: 'ဇူးရစ်ချ်',
-    ),
-    'Africa/Abidjan': TimeZoneNames(
-      exemplarCity: 'အာဘီဂျန်',
-    ),
-    'Africa/Accra': TimeZoneNames(
-      exemplarCity: 'အက်ကရာ',
-    ),
-    'Africa/Addis_Ababa': TimeZoneNames(
-      exemplarCity: 'အားဒစ် အဘာဘာ',
-    ),
-    'Africa/Algiers': TimeZoneNames(
-      exemplarCity: 'အယ်လ်ဂျီးရီးယား',
-    ),
-    'Africa/Asmera': TimeZoneNames(
-      exemplarCity: 'အားစ်မားရာ',
-    ),
-    'Africa/Bamako': TimeZoneNames(
-      exemplarCity: 'ဘာမာကို',
-    ),
-    'Africa/Bangui': TimeZoneNames(
-      exemplarCity: 'ဘာန်ဂီး',
-    ),
-    'Africa/Banjul': TimeZoneNames(
-      exemplarCity: 'ဘန်ဂျုးလ်',
-    ),
-    'Africa/Bissau': TimeZoneNames(
-      exemplarCity: 'ဘီစာအို',
-    ),
-    'Africa/Blantyre': TimeZoneNames(
-      exemplarCity: 'ဘလန်တိုင်းရဲလ်',
-    ),
-    'Africa/Brazzaville': TimeZoneNames(
-      exemplarCity: 'ဘရားဇာဗီးလ်',
-    ),
-    'Africa/Bujumbura': TimeZoneNames(
-      exemplarCity: 'ဘူဂျွန်ဘူးရာ',
-    ),
-    'Africa/Cairo': TimeZoneNames(
-      exemplarCity: 'ကိုင်ရို',
-    ),
-    'Africa/Casablanca': TimeZoneNames(
-      exemplarCity: 'ကာဆာဘလန်ကာ',
-    ),
-    'Africa/Ceuta': TimeZoneNames(
-      exemplarCity: 'ဆီရူးတာ',
-    ),
-    'Africa/Conakry': TimeZoneNames(
-      exemplarCity: 'ကိုနာကရီး',
-    ),
-    'Africa/Dakar': TimeZoneNames(
-      exemplarCity: 'ဒကျကား',
-    ),
-    'Africa/Dar_es_Salaam': TimeZoneNames(
-      exemplarCity: 'ဒါရက်စ်ဆာလမ်',
-    ),
-    'Africa/Djibouti': TimeZoneNames(
-      exemplarCity: 'ဂျီဘူတီ',
-    ),
-    'Africa/Douala': TimeZoneNames(
-      exemplarCity: 'ဒိုအူအာလာ',
-    ),
-    'Africa/El_Aaiun': TimeZoneNames(
-      exemplarCity: 'အယ်လ်အာယွန်း',
-    ),
-    'Africa/Freetown': TimeZoneNames(
-      exemplarCity: 'ဖရီးတောင်းန်',
-    ),
-    'Africa/Gaborone': TimeZoneNames(
-      exemplarCity: 'ဂါဘာရွန်းနီ',
-    ),
-    'Africa/Harare': TimeZoneNames(
-      exemplarCity: 'ဟာရားရဲယ်',
-    ),
-    'Africa/Johannesburg': TimeZoneNames(
-      exemplarCity: 'ဂျိုဟန်းနက်စဘတ်',
-    ),
-    'Africa/Juba': TimeZoneNames(
-      exemplarCity: 'ဂျုဘာ',
-    ),
-    'Africa/Kampala': TimeZoneNames(
-      exemplarCity: 'ကမ်ပါလာ',
-    ),
-    'Africa/Khartoum': TimeZoneNames(
-      exemplarCity: 'ခါတိုအန်',
-    ),
-    'Africa/Kigali': TimeZoneNames(
-      exemplarCity: 'ကီဂါးလီ',
-    ),
-    'Africa/Kinshasa': TimeZoneNames(
-      exemplarCity: 'ကင်ရှာစာ',
-    ),
-    'Africa/Lagos': TimeZoneNames(
-      exemplarCity: 'လာဂိုစ်',
-    ),
-    'Africa/Libreville': TimeZoneNames(
-      exemplarCity: 'လီဗရာဗီးလ်',
-    ),
-    'Africa/Lome': TimeZoneNames(
-      exemplarCity: 'လိုမီ',
-    ),
-    'Africa/Luanda': TimeZoneNames(
-      exemplarCity: 'လူဝမ်ဒါ',
-    ),
-    'Africa/Lubumbashi': TimeZoneNames(
-      exemplarCity: 'လူဘွန်းဘာရှီ',
-    ),
-    'Africa/Lusaka': TimeZoneNames(
-      exemplarCity: 'လူစာကာ',
-    ),
-    'Africa/Malabo': TimeZoneNames(
-      exemplarCity: 'မာလာဘို',
-    ),
-    'Africa/Maputo': TimeZoneNames(
-      exemplarCity: 'မာပူးတို',
-    ),
-    'Africa/Maseru': TimeZoneNames(
-      exemplarCity: 'မာဆူရူး',
-    ),
-    'Africa/Mbabane': TimeZoneNames(
-      exemplarCity: 'ဘားဘာန်း',
-    ),
-    'Africa/Mogadishu': TimeZoneNames(
-      exemplarCity: 'မော်ဂါဒီးသျုး',
-    ),
-    'Africa/Monrovia': TimeZoneNames(
-      exemplarCity: 'မွန်ရိုးဗီးယား',
-    ),
-    'Africa/Nairobi': TimeZoneNames(
-      exemplarCity: 'နိုင်ရိုဘီ',
-    ),
-    'Africa/Ndjamena': TimeZoneNames(
-      exemplarCity: 'အင်ဂျာမီနာ',
-    ),
-    'Africa/Niamey': TimeZoneNames(
-      exemplarCity: 'ညာမဲယ်',
-    ),
-    'Africa/Nouakchott': TimeZoneNames(
-      exemplarCity: 'နိုအာ့ခ်ရှော့တ်',
-    ),
-    'Africa/Ouagadougou': TimeZoneNames(
-      exemplarCity: 'ဝါဂါဒူးဂူ',
-    ),
-    'Africa/Porto-Novo': TimeZoneNames(
-      exemplarCity: 'ပိုတို-နိုဗို',
-    ),
-    'Africa/Sao_Tome': TimeZoneNames(
-      exemplarCity: 'ဆောင်တူမေး',
-    ),
-    'Africa/Tripoli': TimeZoneNames(
-      exemplarCity: 'ထရီပိုလီ',
-    ),
-    'Africa/Tunis': TimeZoneNames(
-      exemplarCity: 'တူနီစ်',
-    ),
-    'Africa/Windhoek': TimeZoneNames(
-      exemplarCity: 'ဗင်းဟူးခ်',
-    ),
-    'Asia/Aden': TimeZoneNames(
-      exemplarCity: 'အာဒင်',
-    ),
-    'Asia/Almaty': TimeZoneNames(
-      exemplarCity: 'အော်မာတီ',
-    ),
-    'Asia/Amman': TimeZoneNames(
-      exemplarCity: 'အာမာန်း',
-    ),
-    'Asia/Anadyr': TimeZoneNames(
-      exemplarCity: 'အန်အာဒီအာ',
-    ),
-    'Asia/Aqtau': TimeZoneNames(
-      exemplarCity: 'အက်တာဥု',
-    ),
-    'Asia/Aqtobe': TimeZoneNames(
-      exemplarCity: 'အာချတူးဘီ',
-    ),
-    'Asia/Ashgabat': TimeZoneNames(
-      exemplarCity: 'အာရှ်ဂါဘာဒ်',
-    ),
-    'Asia/Atyrau': TimeZoneNames(
-      exemplarCity: 'အာတီရအူ',
-    ),
-    'Asia/Baghdad': TimeZoneNames(
-      exemplarCity: 'ဘဂ္ဂဒက်',
-    ),
-    'Asia/Bahrain': TimeZoneNames(
-      exemplarCity: 'ဘာရိန်း',
-    ),
-    'Asia/Baku': TimeZoneNames(
-      exemplarCity: 'ဘာကူ',
-    ),
-    'Asia/Bangkok': TimeZoneNames(
-      exemplarCity: 'ဘန်ကောက်',
-    ),
-    'Asia/Barnaul': TimeZoneNames(
-      exemplarCity: 'ဘရ်နာအူ',
-    ),
-    'Asia/Beirut': TimeZoneNames(
-      exemplarCity: 'ဘေရွတ်',
-    ),
-    'Asia/Bishkek': TimeZoneNames(
-      exemplarCity: 'ဘီရှ်ခက်',
-    ),
-    'Asia/Brunei': TimeZoneNames(
-      exemplarCity: 'ဘရူနိုင်း',
-    ),
-    'Asia/Calcutta': TimeZoneNames(
-      exemplarCity: 'ကိုလျကတ်တား',
-    ),
-    'Asia/Chita': TimeZoneNames(
-      exemplarCity: 'ချီတာ',
-    ),
-    'Asia/Colombo': TimeZoneNames(
-      exemplarCity: 'ကိုလံဘို',
-    ),
-    'Asia/Damascus': TimeZoneNames(
-      exemplarCity: 'ဒမားစကပ်',
-    ),
-    'Asia/Dhaka': TimeZoneNames(
-      exemplarCity: 'ဒက်ကာ',
-    ),
-    'Asia/Dili': TimeZoneNames(
-      exemplarCity: 'ဒစ်လီ',
-    ),
-    'Asia/Dubai': TimeZoneNames(
-      exemplarCity: 'ဒူဘိုင်း',
-    ),
-    'Asia/Dushanbe': TimeZoneNames(
-      exemplarCity: 'ဒူရှန်းဘဲ',
-    ),
-    'Asia/Famagusta': TimeZoneNames(
-      exemplarCity: 'ဖာမာဂူစတာ',
-    ),
-    'Asia/Gaza': TimeZoneNames(
-      exemplarCity: 'ဂါဇာ',
-    ),
-    'Asia/Hebron': TimeZoneNames(
-      exemplarCity: 'ဟီဘရွန်',
-    ),
-    'Asia/Hong_Kong': TimeZoneNames(
-      exemplarCity: 'ဟောင်ကောင်',
-    ),
-    'Asia/Hovd': TimeZoneNames(
-      exemplarCity: 'ဟိုးဗျ',
-    ),
-    'Asia/Irkutsk': TimeZoneNames(
-      exemplarCity: 'အီရူခူတ်',
-    ),
-    'Asia/Jakarta': TimeZoneNames(
-      exemplarCity: 'ဂျကာတာ',
-    ),
-    'Asia/Jayapura': TimeZoneNames(
-      exemplarCity: 'ဂျာရာပူရာ',
-    ),
-    'Asia/Jerusalem': TimeZoneNames(
-      exemplarCity: 'ဂျေရုဆလင်',
-    ),
-    'Asia/Kabul': TimeZoneNames(
-      exemplarCity: 'ကာဘူးလ်',
-    ),
-    'Asia/Kamchatka': TimeZoneNames(
-      exemplarCity: 'ခမ်ချာ့ခါ',
-    ),
-    'Asia/Karachi': TimeZoneNames(
-      exemplarCity: 'ကရာချိ',
-    ),
-    'Asia/Katmandu': TimeZoneNames(
-      exemplarCity: 'ခတ်တမန်ဒူ',
-    ),
-    'Asia/Khandyga': TimeZoneNames(
-      exemplarCity: 'ခန်ဒိုင်ဂါ',
-    ),
-    'Asia/Krasnoyarsk': TimeZoneNames(
-      exemplarCity: 'ခရာ့စ်နိုရာစ်',
-    ),
-    'Asia/Kuala_Lumpur': TimeZoneNames(
-      exemplarCity: 'ကွာလာလမ်ပူ',
-    ),
-    'Asia/Kuching': TimeZoneNames(
-      exemplarCity: 'ကူချင်',
-    ),
-    'Asia/Kuwait': TimeZoneNames(
-      exemplarCity: 'ကူဝိတ်',
-    ),
-    'Asia/Macau': TimeZoneNames(
-      exemplarCity: 'မကာအို',
-    ),
-    'Asia/Magadan': TimeZoneNames(
-      exemplarCity: 'မာဂါဒန်း',
-    ),
-    'Asia/Makassar': TimeZoneNames(
-      exemplarCity: 'မခက်စ်ဆာ',
-    ),
-    'Asia/Manila': TimeZoneNames(
-      exemplarCity: 'မနီလာ',
-    ),
-    'Asia/Muscat': TimeZoneNames(
-      exemplarCity: 'မတ်စ်ကက်တ်',
-    ),
-    'Asia/Nicosia': TimeZoneNames(
-      exemplarCity: 'နီကိုရှား',
-    ),
-    'Asia/Novokuznetsk': TimeZoneNames(
-      exemplarCity: 'နိုဗိုခူဇ်နက်စ်',
-    ),
-    'Asia/Novosibirsk': TimeZoneNames(
-      exemplarCity: 'နိုဗိုစဲဘီအဲယ်စ်',
-    ),
-    'Asia/Omsk': TimeZoneNames(
-      exemplarCity: 'အွမ်းစ်ခ်',
-    ),
-    'Asia/Oral': TimeZoneNames(
-      exemplarCity: 'အော်ရဲလ်',
-    ),
-    'Asia/Phnom_Penh': TimeZoneNames(
-      exemplarCity: 'ဖနွမ်ပင်',
-    ),
-    'Asia/Pontianak': TimeZoneNames(
-      exemplarCity: 'ပွန်တီအားနာ့ခ်',
-    ),
-    'Asia/Pyongyang': TimeZoneNames(
-      exemplarCity: 'ပြုံယန်း',
-    ),
-    'Asia/Qatar': TimeZoneNames(
-      exemplarCity: 'ကာတာ',
-    ),
-    'Asia/Qostanay': TimeZoneNames(
-      exemplarCity: 'ကော့စ်တနေ',
-    ),
-    'Asia/Qyzylorda': TimeZoneNames(
-      exemplarCity: 'ကီဇလော်ဒါ',
-    ),
-    'Asia/Rangoon': TimeZoneNames(
-      exemplarCity: 'ရန်ကုန်',
-    ),
-    'Asia/Riyadh': TimeZoneNames(
-      exemplarCity: 'ရီယားဒ်',
-    ),
-    'Asia/Saigon': TimeZoneNames(
-      exemplarCity: 'ဟိုချီမင်းစီးတီး',
-    ),
-    'Asia/Sakhalin': TimeZoneNames(
-      exemplarCity: 'ဆာခါလင်',
-    ),
-    'Asia/Samarkand': TimeZoneNames(
-      exemplarCity: 'ဆမ်းမာခန်းဒ်',
-    ),
-    'Asia/Seoul': TimeZoneNames(
-      exemplarCity: 'ဆိုးလ်',
-    ),
-    'Asia/Shanghai': TimeZoneNames(
-      exemplarCity: 'ရှန်ဟိုင်း',
-    ),
-    'Asia/Singapore': TimeZoneNames(
-      exemplarCity: 'စင်္ကာပူ',
-    ),
-    'Asia/Srednekolymsk': TimeZoneNames(
-      exemplarCity: 'ဆရစ်နစ်ကာလင်မ်စ်',
-    ),
-    'Asia/Taipei': TimeZoneNames(
-      exemplarCity: 'တိုင်ပေ',
-    ),
-    'Asia/Tashkent': TimeZoneNames(
-      exemplarCity: 'တာရှ်ကဲန့်',
-    ),
-    'Asia/Tbilisi': TimeZoneNames(
-      exemplarCity: 'တဘီးလီစီ',
-    ),
-    'Asia/Tehran': TimeZoneNames(
-      exemplarCity: 'တီဟီရန်',
-    ),
-    'Asia/Thimphu': TimeZoneNames(
-      exemplarCity: 'တင်ဖူး',
-    ),
-    'Asia/Tokyo': TimeZoneNames(
-      exemplarCity: 'တိုကျို',
-    ),
-    'Asia/Tomsk': TimeZoneNames(
-      exemplarCity: 'တွန်မ်စ်ခ်',
-    ),
-    'Asia/Ulaanbaatar': TimeZoneNames(
-      exemplarCity: 'ဥလန်ဘာတော',
-    ),
-    'Asia/Urumqi': TimeZoneNames(
-      exemplarCity: 'အူရုမ်ချီ',
-    ),
-    'Asia/Ust-Nera': TimeZoneNames(
-      exemplarCity: 'အူးစ် နီရား',
-    ),
-    'Asia/Vientiane': TimeZoneNames(
-      exemplarCity: 'ဗီယင်ကျန်း',
-    ),
-    'Asia/Vladivostok': TimeZoneNames(
-      exemplarCity: 'ဗလာဒီဗော့စတော့ခ်',
-    ),
-    'Asia/Yakutsk': TimeZoneNames(
-      exemplarCity: 'ယူခူးတ်စ်',
-    ),
-    'Asia/Yekaterinburg': TimeZoneNames(
-      exemplarCity: 'ရယ်ခါးတီရင်ဘားခ်',
-    ),
-    'Asia/Yerevan': TimeZoneNames(
-      exemplarCity: 'ရဲယ်ရေဗန်း',
-    ),
-    'Indian/Antananarivo': TimeZoneNames(
-      exemplarCity: 'အန်တာနာနာရီးဘို',
-    ),
-    'Indian/Chagos': TimeZoneNames(
-      exemplarCity: 'ချာဂိုစ်',
-    ),
-    'Indian/Christmas': TimeZoneNames(
-      exemplarCity: 'ခရစ်စမတ်',
-    ),
-    'Indian/Cocos': TimeZoneNames(
-      exemplarCity: 'ကိုကိုးစ်',
-    ),
-    'Indian/Comoro': TimeZoneNames(
-      exemplarCity: 'ကိုမိုရို',
-    ),
-    'Indian/Kerguelen': TimeZoneNames(
-      exemplarCity: 'ခါဂါလန်',
-    ),
-    'Indian/Mahe': TimeZoneNames(
-      exemplarCity: 'မာဟီ',
-    ),
-    'Indian/Maldives': TimeZoneNames(
-      exemplarCity: 'မော်လဒိုက်',
-    ),
-    'Indian/Mauritius': TimeZoneNames(
-      exemplarCity: 'မောရစ်ရှ',
-    ),
-    'Indian/Mayotte': TimeZoneNames(
-      exemplarCity: 'မာယိုတဲ',
-    ),
-    'Indian/Reunion': TimeZoneNames(
-      exemplarCity: 'ရီယူနီယန်',
-    ),
-    'Australia/Adelaide': TimeZoneNames(
-      exemplarCity: 'အန္ဒီလိတ်ဒ်',
-    ),
-    'Australia/Brisbane': TimeZoneNames(
-      exemplarCity: 'ဘရစ္စဘိန်း',
-    ),
-    'Australia/Broken_Hill': TimeZoneNames(
-      exemplarCity: 'ဘရိုကင်ဟီးလ်',
-    ),
-    'Australia/Darwin': TimeZoneNames(
-      exemplarCity: 'ဒါဝင်',
-    ),
-    'Australia/Eucla': TimeZoneNames(
-      exemplarCity: 'ယူးခလာ',
-    ),
-    'Australia/Hobart': TimeZoneNames(
-      exemplarCity: 'ဟိုးဘားတ်',
-    ),
-    'Australia/Lindeman': TimeZoneNames(
-      exemplarCity: 'လင်းဒီမန်း',
-    ),
-    'Australia/Lord_Howe': TimeZoneNames(
-      exemplarCity: 'လော့ဒ် ဟောင်',
-    ),
-    'Australia/Melbourne': TimeZoneNames(
-      exemplarCity: 'မဲလ်ဘုန်း',
-    ),
-    'Australia/Perth': TimeZoneNames(
-      exemplarCity: 'ပါးသ်',
-    ),
-    'Australia/Sydney': TimeZoneNames(
-      exemplarCity: 'ဆစ်ဒနီ',
-    ),
-    'Pacific/Apia': TimeZoneNames(
-      exemplarCity: 'အားပီအား',
-    ),
-    'Pacific/Auckland': TimeZoneNames(
-      exemplarCity: 'အော့ကလန်',
-    ),
-    'Pacific/Bougainville': TimeZoneNames(
-      exemplarCity: 'ဘူဂန်ဗီးလီးယား',
-    ),
-    'Pacific/Chatham': TimeZoneNames(
-      exemplarCity: 'ချားသမ်',
-    ),
-    'Pacific/Easter': TimeZoneNames(
-      exemplarCity: 'အီစတာ',
-    ),
-    'Pacific/Efate': TimeZoneNames(
-      exemplarCity: 'အီဖာတီ',
-    ),
-    'Pacific/Enderbury': TimeZoneNames(
-      exemplarCity: 'အန်ဒါဘူရီ',
-    ),
-    'Pacific/Fakaofo': TimeZoneNames(
-      exemplarCity: 'ဖာခါအိုဖို',
-    ),
-    'Pacific/Fiji': TimeZoneNames(
-      exemplarCity: 'ဖီဂျီ',
-    ),
-    'Pacific/Funafuti': TimeZoneNames(
-      exemplarCity: 'ဖူနာဖူတီ',
-    ),
-    'Pacific/Galapagos': TimeZoneNames(
-      exemplarCity: 'ဂါလာပါကပ်စ်',
-    ),
-    'Pacific/Gambier': TimeZoneNames(
-      exemplarCity: 'ဂမ်ဘီယာ',
-    ),
-    'Pacific/Guadalcanal': TimeZoneNames(
-      exemplarCity: 'ဂွါဒါကနဲလ်',
-    ),
-    'Pacific/Guam': TimeZoneNames(
-      exemplarCity: 'ဂူအမ်',
-    ),
-    'Pacific/Honolulu': TimeZoneNames(
-      exemplarCity: 'ဟိုနိုလူလူ',
-    ),
-    'Pacific/Kanton': TimeZoneNames(
-      exemplarCity: 'ကန်တွန်',
-    ),
-    'Pacific/Kiritimati': TimeZoneNames(
-      exemplarCity: 'ခရိဒီမတီ',
-    ),
-    'Pacific/Kosrae': TimeZoneNames(
-      exemplarCity: 'ခိုစ်ရိုင်',
-    ),
-    'Pacific/Kwajalein': TimeZoneNames(
-      exemplarCity: 'ခွာဂျာလိန်',
-    ),
-    'Pacific/Majuro': TimeZoneNames(
-      exemplarCity: 'မာဂျူးရို',
-    ),
-    'Pacific/Marquesas': TimeZoneNames(
-      exemplarCity: 'မာခေးအပ်စ်',
-    ),
-    'Pacific/Midway': TimeZoneNames(
-      exemplarCity: 'မစ်ဒ်ဝေး',
-    ),
-    'Pacific/Nauru': TimeZoneNames(
-      exemplarCity: 'နာဥူရူ',
-    ),
-    'Pacific/Niue': TimeZoneNames(
-      exemplarCity: 'နီဦးအေ',
-    ),
-    'Pacific/Norfolk': TimeZoneNames(
-      exemplarCity: 'နော်ဖော့ခ်',
-    ),
-    'Pacific/Noumea': TimeZoneNames(
-      exemplarCity: 'နူမယ်အာ',
-    ),
-    'Pacific/Pago_Pago': TimeZoneNames(
-      exemplarCity: 'ပါဂိုပါဂို',
-    ),
-    'Pacific/Palau': TimeZoneNames(
-      exemplarCity: 'ပလာအို',
-    ),
-    'Pacific/Pitcairn': TimeZoneNames(
-      exemplarCity: 'ပါတ်ကယ်ရင်',
-    ),
-    'Pacific/Ponape': TimeZoneNames(
-      exemplarCity: 'ဖိုနာဖဲအ်',
-    ),
-    'Pacific/Port_Moresby': TimeZoneNames(
-      exemplarCity: 'ဖို့တ် မိုရက်စ်ဘီ',
-    ),
-    'Pacific/Rarotonga': TimeZoneNames(
-      exemplarCity: 'ရာရိုတွန်းဂါ',
-    ),
-    'Pacific/Saipan': TimeZoneNames(
-      exemplarCity: 'ဆိုင်ပန်',
-    ),
-    'Pacific/Tahiti': TimeZoneNames(
-      exemplarCity: 'တဟီတီ',
-    ),
-    'Pacific/Tarawa': TimeZoneNames(
-      exemplarCity: 'တာရာဝါ',
-    ),
-    'Pacific/Tongatapu': TimeZoneNames(
-      exemplarCity: 'တွန်ဂါတာပု',
-    ),
-    'Pacific/Truk': TimeZoneNames(
-      exemplarCity: 'ချုခ်',
-    ),
-    'Pacific/Wake': TimeZoneNames(
-      exemplarCity: 'ဝိတ်ခ်',
-    ),
-    'Pacific/Wallis': TimeZoneNames(
-      exemplarCity: 'ဝေါလီစ်',
-    ),
-    'Arctic/Longyearbyen': TimeZoneNames(
-      exemplarCity: 'လောင်ရီယားဘရံ',
-    ),
-    'Antarctica/Casey': TimeZoneNames(
-      exemplarCity: 'ကေစီ',
-    ),
-    'Antarctica/Davis': TimeZoneNames(
-      exemplarCity: 'ဒေးဗစ်',
-    ),
-    'Antarctica/DumontDUrville': TimeZoneNames(
-      exemplarCity: 'ဒူးမော့တ် ဒါရ်ဗီးလ်',
-    ),
-    'Antarctica/Macquarie': TimeZoneNames(
-      exemplarCity: 'မက်ကွယ်ရီ',
-    ),
-    'Antarctica/Mawson': TimeZoneNames(
-      exemplarCity: 'မော်စွန်',
-    ),
-    'Antarctica/McMurdo': TimeZoneNames(
-      exemplarCity: 'မက်မူဒိုး',
-    ),
-    'Antarctica/Palmer': TimeZoneNames(
-      exemplarCity: 'ပါလ်မာ',
-    ),
-    'Antarctica/Rothera': TimeZoneNames(
-      exemplarCity: 'ရိုသီရာ',
-    ),
-    'Antarctica/Syowa': TimeZoneNames(
-      exemplarCity: 'ရှိုးဝါ',
-    ),
-    'Antarctica/Troll': TimeZoneNames(
-      exemplarCity: 'ထရိုလ်',
-    ),
-    'Antarctica/Vostok': TimeZoneNames(
-      exemplarCity: 'ဗိုစ်တိုခ်',
-    ),
+        exemplarCity: 'လန်ဒန်',
+        long: TimeZoneName(daylight: 'ဗြိတိန် နွေရာသီ အချိန်')),
+    'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'လူဇင်ဘတ်'),
+    'Europe/Madrid': TimeZoneNames(exemplarCity: 'မဒရစ်'),
+    'Europe/Malta': TimeZoneNames(exemplarCity: 'မော်လ်တာ'),
+    'Europe/Mariehamn': TimeZoneNames(exemplarCity: 'မရီအာ ဟားမန်'),
+    'Europe/Minsk': TimeZoneNames(exemplarCity: 'မင်းစခ်'),
+    'Europe/Monaco': TimeZoneNames(exemplarCity: 'မိုနာကို'),
+    'Europe/Moscow': TimeZoneNames(exemplarCity: 'မော်စကို'),
+    'Europe/Oslo': TimeZoneNames(exemplarCity: 'အော်စလို'),
+    'Europe/Paris': TimeZoneNames(exemplarCity: 'ပဲရစ်'),
+    'Europe/Podgorica': TimeZoneNames(exemplarCity: 'ပေါ့ဂိုရီကာ'),
+    'Europe/Prague': TimeZoneNames(exemplarCity: 'ပရက်ဂ်'),
+    'Europe/Riga': TimeZoneNames(exemplarCity: 'ရီဂါ'),
+    'Europe/Rome': TimeZoneNames(exemplarCity: 'ရောမ'),
+    'Europe/Samara': TimeZoneNames(exemplarCity: 'ဆာမားရာ'),
+    'Europe/San_Marino': TimeZoneNames(exemplarCity: 'ဆန်မရီးနို'),
+    'Europe/Sarajevo': TimeZoneNames(exemplarCity: 'ဆာရာယေဗို'),
+    'Europe/Saratov': TimeZoneNames(exemplarCity: 'ဆာရာတို့ဖ်'),
+    'Europe/Simferopol': TimeZoneNames(exemplarCity: 'စင်ဖာရိုးဖို'),
+    'Europe/Skopje': TimeZoneNames(exemplarCity: 'စကော့ပ်ရာ'),
+    'Europe/Sofia': TimeZoneNames(exemplarCity: 'ဆိုဖီအာ'),
+    'Europe/Stockholm': TimeZoneNames(exemplarCity: 'စတော့ဟုမ်း'),
+    'Europe/Tallinn': TimeZoneNames(exemplarCity: 'ထားလင်'),
+    'Europe/Tirane': TimeZoneNames(exemplarCity: 'တီရာနီ'),
+    'Europe/Ulyanovsk': TimeZoneNames(exemplarCity: 'အူလီယာနိုစကစ်ဖ်'),
+    'Europe/Vaduz': TimeZoneNames(exemplarCity: 'ဗာဒူးစ်'),
+    'Europe/Vatican': TimeZoneNames(exemplarCity: 'ဗာတီကန်'),
+    'Europe/Vienna': TimeZoneNames(exemplarCity: 'ဗီယင်နာ'),
+    'Europe/Vilnius': TimeZoneNames(exemplarCity: 'ဗီးလ်နီအိုးစ်'),
+    'Europe/Volgograd': TimeZoneNames(exemplarCity: 'ဗိုလ်ဂိုဂရက်'),
+    'Europe/Warsaw': TimeZoneNames(exemplarCity: 'ဝါဆော'),
+    'Europe/Zagreb': TimeZoneNames(exemplarCity: 'ဇာဂ်ဂရက်ဘ်'),
+    'Europe/Zurich': TimeZoneNames(exemplarCity: 'ဇူးရစ်ချ်'),
+    'Africa/Abidjan': TimeZoneNames(exemplarCity: 'အာဘီဂျန်'),
+    'Africa/Accra': TimeZoneNames(exemplarCity: 'အက်ကရာ'),
+    'Africa/Addis_Ababa': TimeZoneNames(exemplarCity: 'အားဒစ် အဘာဘာ'),
+    'Africa/Algiers': TimeZoneNames(exemplarCity: 'အယ်လ်ဂျီးရီးယား'),
+    'Africa/Asmera': TimeZoneNames(exemplarCity: 'အားစ်မားရာ'),
+    'Africa/Bamako': TimeZoneNames(exemplarCity: 'ဘာမာကို'),
+    'Africa/Bangui': TimeZoneNames(exemplarCity: 'ဘာန်ဂီး'),
+    'Africa/Banjul': TimeZoneNames(exemplarCity: 'ဘန်ဂျုးလ်'),
+    'Africa/Bissau': TimeZoneNames(exemplarCity: 'ဘီစာအို'),
+    'Africa/Blantyre': TimeZoneNames(exemplarCity: 'ဘလန်တိုင်းရဲလ်'),
+    'Africa/Brazzaville': TimeZoneNames(exemplarCity: 'ဘရားဇာဗီးလ်'),
+    'Africa/Bujumbura': TimeZoneNames(exemplarCity: 'ဘူဂျွန်ဘူးရာ'),
+    'Africa/Cairo': TimeZoneNames(exemplarCity: 'ကိုင်ရို'),
+    'Africa/Casablanca': TimeZoneNames(exemplarCity: 'ကာဆာဘလန်ကာ'),
+    'Africa/Ceuta': TimeZoneNames(exemplarCity: 'ဆီရူးတာ'),
+    'Africa/Conakry': TimeZoneNames(exemplarCity: 'ကိုနာကရီး'),
+    'Africa/Dakar': TimeZoneNames(exemplarCity: 'ဒကျကား'),
+    'Africa/Dar_es_Salaam': TimeZoneNames(exemplarCity: 'ဒါရက်စ်ဆာလမ်'),
+    'Africa/Djibouti': TimeZoneNames(exemplarCity: 'ဂျီဘူတီ'),
+    'Africa/Douala': TimeZoneNames(exemplarCity: 'ဒိုအူအာလာ'),
+    'Africa/El_Aaiun': TimeZoneNames(exemplarCity: 'အယ်လ်အာယွန်း'),
+    'Africa/Freetown': TimeZoneNames(exemplarCity: 'ဖရီးတောင်းန်'),
+    'Africa/Gaborone': TimeZoneNames(exemplarCity: 'ဂါဘာရွန်းနီ'),
+    'Africa/Harare': TimeZoneNames(exemplarCity: 'ဟာရားရဲယ်'),
+    'Africa/Johannesburg': TimeZoneNames(exemplarCity: 'ဂျိုဟန်းနက်စဘတ်'),
+    'Africa/Juba': TimeZoneNames(exemplarCity: 'ဂျုဘာ'),
+    'Africa/Kampala': TimeZoneNames(exemplarCity: 'ကမ်ပါလာ'),
+    'Africa/Khartoum': TimeZoneNames(exemplarCity: 'ခါတိုအန်'),
+    'Africa/Kigali': TimeZoneNames(exemplarCity: 'ကီဂါးလီ'),
+    'Africa/Kinshasa': TimeZoneNames(exemplarCity: 'ကင်ရှာစာ'),
+    'Africa/Lagos': TimeZoneNames(exemplarCity: 'လာဂိုစ်'),
+    'Africa/Libreville': TimeZoneNames(exemplarCity: 'လီဗရာဗီးလ်'),
+    'Africa/Lome': TimeZoneNames(exemplarCity: 'လိုမီ'),
+    'Africa/Luanda': TimeZoneNames(exemplarCity: 'လူဝမ်ဒါ'),
+    'Africa/Lubumbashi': TimeZoneNames(exemplarCity: 'လူဘွန်းဘာရှီ'),
+    'Africa/Lusaka': TimeZoneNames(exemplarCity: 'လူစာကာ'),
+    'Africa/Malabo': TimeZoneNames(exemplarCity: 'မာလာဘို'),
+    'Africa/Maputo': TimeZoneNames(exemplarCity: 'မာပူးတို'),
+    'Africa/Maseru': TimeZoneNames(exemplarCity: 'မာဆူရူး'),
+    'Africa/Mbabane': TimeZoneNames(exemplarCity: 'ဘားဘာန်း'),
+    'Africa/Mogadishu': TimeZoneNames(exemplarCity: 'မော်ဂါဒီးသျုး'),
+    'Africa/Monrovia': TimeZoneNames(exemplarCity: 'မွန်ရိုးဗီးယား'),
+    'Africa/Nairobi': TimeZoneNames(exemplarCity: 'နိုင်ရိုဘီ'),
+    'Africa/Ndjamena': TimeZoneNames(exemplarCity: 'အင်ဂျာမီနာ'),
+    'Africa/Niamey': TimeZoneNames(exemplarCity: 'ညာမဲယ်'),
+    'Africa/Nouakchott': TimeZoneNames(exemplarCity: 'နိုအာ့ခ်ရှော့တ်'),
+    'Africa/Ouagadougou': TimeZoneNames(exemplarCity: 'ဝါဂါဒူးဂူ'),
+    'Africa/Porto-Novo': TimeZoneNames(exemplarCity: 'ပိုတို-နိုဗို'),
+    'Africa/Sao_Tome': TimeZoneNames(exemplarCity: 'ဆောင်တူမေး'),
+    'Africa/Tripoli': TimeZoneNames(exemplarCity: 'ထရီပိုလီ'),
+    'Africa/Tunis': TimeZoneNames(exemplarCity: 'တူနီစ်'),
+    'Africa/Windhoek': TimeZoneNames(exemplarCity: 'ဗင်းဟူးခ်'),
+    'Asia/Aden': TimeZoneNames(exemplarCity: 'အာဒင်'),
+    'Asia/Almaty': TimeZoneNames(exemplarCity: 'အော်မာတီ'),
+    'Asia/Amman': TimeZoneNames(exemplarCity: 'အာမာန်း'),
+    'Asia/Anadyr': TimeZoneNames(exemplarCity: 'အန်အာဒီအာ'),
+    'Asia/Aqtau': TimeZoneNames(exemplarCity: 'အက်တာဥု'),
+    'Asia/Aqtobe': TimeZoneNames(exemplarCity: 'အာချတူးဘီ'),
+    'Asia/Ashgabat': TimeZoneNames(exemplarCity: 'အာရှ်ဂါဘာဒ်'),
+    'Asia/Atyrau': TimeZoneNames(exemplarCity: 'အာတီရအူ'),
+    'Asia/Baghdad': TimeZoneNames(exemplarCity: 'ဘဂ္ဂဒက်'),
+    'Asia/Bahrain': TimeZoneNames(exemplarCity: 'ဘာရိန်း'),
+    'Asia/Baku': TimeZoneNames(exemplarCity: 'ဘာကူ'),
+    'Asia/Bangkok': TimeZoneNames(exemplarCity: 'ဘန်ကောက်'),
+    'Asia/Barnaul': TimeZoneNames(exemplarCity: 'ဘရ်နာအူ'),
+    'Asia/Beirut': TimeZoneNames(exemplarCity: 'ဘေရွတ်'),
+    'Asia/Bishkek': TimeZoneNames(exemplarCity: 'ဘီရှ်ခက်'),
+    'Asia/Brunei': TimeZoneNames(exemplarCity: 'ဘရူနိုင်း'),
+    'Asia/Calcutta': TimeZoneNames(exemplarCity: 'ကိုလျကတ်တား'),
+    'Asia/Chita': TimeZoneNames(exemplarCity: 'ချီတာ'),
+    'Asia/Colombo': TimeZoneNames(exemplarCity: 'ကိုလံဘို'),
+    'Asia/Damascus': TimeZoneNames(exemplarCity: 'ဒမားစကပ်'),
+    'Asia/Dhaka': TimeZoneNames(exemplarCity: 'ဒက်ကာ'),
+    'Asia/Dili': TimeZoneNames(exemplarCity: 'ဒစ်လီ'),
+    'Asia/Dubai': TimeZoneNames(exemplarCity: 'ဒူဘိုင်း'),
+    'Asia/Dushanbe': TimeZoneNames(exemplarCity: 'ဒူရှန်းဘဲ'),
+    'Asia/Famagusta': TimeZoneNames(exemplarCity: 'ဖာမာဂူစတာ'),
+    'Asia/Gaza': TimeZoneNames(exemplarCity: 'ဂါဇာ'),
+    'Asia/Hebron': TimeZoneNames(exemplarCity: 'ဟီဘရွန်'),
+    'Asia/Hong_Kong': TimeZoneNames(exemplarCity: 'ဟောင်ကောင်'),
+    'Asia/Hovd': TimeZoneNames(exemplarCity: 'ဟိုးဗျ'),
+    'Asia/Irkutsk': TimeZoneNames(exemplarCity: 'အီရူခူတ်'),
+    'Asia/Jakarta': TimeZoneNames(exemplarCity: 'ဂျကာတာ'),
+    'Asia/Jayapura': TimeZoneNames(exemplarCity: 'ဂျာရာပူရာ'),
+    'Asia/Jerusalem': TimeZoneNames(exemplarCity: 'ဂျေရုဆလင်'),
+    'Asia/Kabul': TimeZoneNames(exemplarCity: 'ကာဘူးလ်'),
+    'Asia/Kamchatka': TimeZoneNames(exemplarCity: 'ခမ်ချာ့ခါ'),
+    'Asia/Karachi': TimeZoneNames(exemplarCity: 'ကရာချိ'),
+    'Asia/Katmandu': TimeZoneNames(exemplarCity: 'ခတ်တမန်ဒူ'),
+    'Asia/Khandyga': TimeZoneNames(exemplarCity: 'ခန်ဒိုင်ဂါ'),
+    'Asia/Krasnoyarsk': TimeZoneNames(exemplarCity: 'ခရာ့စ်နိုရာစ်'),
+    'Asia/Kuala_Lumpur': TimeZoneNames(exemplarCity: 'ကွာလာလမ်ပူ'),
+    'Asia/Kuching': TimeZoneNames(exemplarCity: 'ကူချင်'),
+    'Asia/Kuwait': TimeZoneNames(exemplarCity: 'ကူဝိတ်'),
+    'Asia/Macau': TimeZoneNames(exemplarCity: 'မကာအို'),
+    'Asia/Magadan': TimeZoneNames(exemplarCity: 'မာဂါဒန်း'),
+    'Asia/Makassar': TimeZoneNames(exemplarCity: 'မခက်စ်ဆာ'),
+    'Asia/Manila': TimeZoneNames(exemplarCity: 'မနီလာ'),
+    'Asia/Muscat': TimeZoneNames(exemplarCity: 'မတ်စ်ကက်တ်'),
+    'Asia/Nicosia': TimeZoneNames(exemplarCity: 'နီကိုရှား'),
+    'Asia/Novokuznetsk': TimeZoneNames(exemplarCity: 'နိုဗိုခူဇ်နက်စ်'),
+    'Asia/Novosibirsk': TimeZoneNames(exemplarCity: 'နိုဗိုစဲဘီအဲယ်စ်'),
+    'Asia/Omsk': TimeZoneNames(exemplarCity: 'အွမ်းစ်ခ်'),
+    'Asia/Oral': TimeZoneNames(exemplarCity: 'အော်ရဲလ်'),
+    'Asia/Phnom_Penh': TimeZoneNames(exemplarCity: 'ဖနွမ်ပင်'),
+    'Asia/Pontianak': TimeZoneNames(exemplarCity: 'ပွန်တီအားနာ့ခ်'),
+    'Asia/Pyongyang': TimeZoneNames(exemplarCity: 'ပြုံယန်း'),
+    'Asia/Qatar': TimeZoneNames(exemplarCity: 'ကာတာ'),
+    'Asia/Qostanay': TimeZoneNames(exemplarCity: 'ကော့စ်တနေ'),
+    'Asia/Qyzylorda': TimeZoneNames(exemplarCity: 'ကီဇလော်ဒါ'),
+    'Asia/Rangoon': TimeZoneNames(exemplarCity: 'ရန်ကုန်'),
+    'Asia/Riyadh': TimeZoneNames(exemplarCity: 'ရီယားဒ်'),
+    'Asia/Saigon': TimeZoneNames(exemplarCity: 'ဟိုချီမင်းစီးတီး'),
+    'Asia/Sakhalin': TimeZoneNames(exemplarCity: 'ဆာခါလင်'),
+    'Asia/Samarkand': TimeZoneNames(exemplarCity: 'ဆမ်းမာခန်းဒ်'),
+    'Asia/Seoul': TimeZoneNames(exemplarCity: 'ဆိုးလ်'),
+    'Asia/Shanghai': TimeZoneNames(exemplarCity: 'ရှန်ဟိုင်း'),
+    'Asia/Singapore': TimeZoneNames(exemplarCity: 'စင်္ကာပူ'),
+    'Asia/Srednekolymsk': TimeZoneNames(exemplarCity: 'ဆရစ်နစ်ကာလင်မ်စ်'),
+    'Asia/Taipei': TimeZoneNames(exemplarCity: 'တိုင်ပေ'),
+    'Asia/Tashkent': TimeZoneNames(exemplarCity: 'တာရှ်ကဲန့်'),
+    'Asia/Tbilisi': TimeZoneNames(exemplarCity: 'တဘီးလီစီ'),
+    'Asia/Tehran': TimeZoneNames(exemplarCity: 'တီဟီရန်'),
+    'Asia/Thimphu': TimeZoneNames(exemplarCity: 'တင်ဖူး'),
+    'Asia/Tokyo': TimeZoneNames(exemplarCity: 'တိုကျို'),
+    'Asia/Tomsk': TimeZoneNames(exemplarCity: 'တွန်မ်စ်ခ်'),
+    'Asia/Ulaanbaatar': TimeZoneNames(exemplarCity: 'ဥလန်ဘာတော'),
+    'Asia/Urumqi': TimeZoneNames(exemplarCity: 'အူရုမ်ချီ'),
+    'Asia/Ust-Nera': TimeZoneNames(exemplarCity: 'အူးစ် နီရား'),
+    'Asia/Vientiane': TimeZoneNames(exemplarCity: 'ဗီယင်ကျန်း'),
+    'Asia/Vladivostok': TimeZoneNames(exemplarCity: 'ဗလာဒီဗော့စတော့ခ်'),
+    'Asia/Yakutsk': TimeZoneNames(exemplarCity: 'ယူခူးတ်စ်'),
+    'Asia/Yekaterinburg': TimeZoneNames(exemplarCity: 'ရယ်ခါးတီရင်ဘားခ်'),
+    'Asia/Yerevan': TimeZoneNames(exemplarCity: 'ရဲယ်ရေဗန်း'),
+    'Indian/Antananarivo': TimeZoneNames(exemplarCity: 'အန်တာနာနာရီးဘို'),
+    'Indian/Chagos': TimeZoneNames(exemplarCity: 'ချာဂိုစ်'),
+    'Indian/Christmas': TimeZoneNames(exemplarCity: 'ခရစ်စမတ်'),
+    'Indian/Cocos': TimeZoneNames(exemplarCity: 'ကိုကိုးစ်'),
+    'Indian/Comoro': TimeZoneNames(exemplarCity: 'ကိုမိုရို'),
+    'Indian/Kerguelen': TimeZoneNames(exemplarCity: 'ခါဂါလန်'),
+    'Indian/Mahe': TimeZoneNames(exemplarCity: 'မာဟီ'),
+    'Indian/Maldives': TimeZoneNames(exemplarCity: 'မော်လဒိုက်'),
+    'Indian/Mauritius': TimeZoneNames(exemplarCity: 'မောရစ်ရှ'),
+    'Indian/Mayotte': TimeZoneNames(exemplarCity: 'မာယိုတဲ'),
+    'Indian/Reunion': TimeZoneNames(exemplarCity: 'ရီယူနီယန်'),
+    'Australia/Adelaide': TimeZoneNames(exemplarCity: 'အန္ဒီလိတ်ဒ်'),
+    'Australia/Brisbane': TimeZoneNames(exemplarCity: 'ဘရစ္စဘိန်း'),
+    'Australia/Broken_Hill': TimeZoneNames(exemplarCity: 'ဘရိုကင်ဟီးလ်'),
+    'Australia/Darwin': TimeZoneNames(exemplarCity: 'ဒါဝင်'),
+    'Australia/Eucla': TimeZoneNames(exemplarCity: 'ယူးခလာ'),
+    'Australia/Hobart': TimeZoneNames(exemplarCity: 'ဟိုးဘားတ်'),
+    'Australia/Lindeman': TimeZoneNames(exemplarCity: 'လင်းဒီမန်း'),
+    'Australia/Lord_Howe': TimeZoneNames(exemplarCity: 'လော့ဒ် ဟောင်'),
+    'Australia/Melbourne': TimeZoneNames(exemplarCity: 'မဲလ်ဘုန်း'),
+    'Australia/Perth': TimeZoneNames(exemplarCity: 'ပါးသ်'),
+    'Australia/Sydney': TimeZoneNames(exemplarCity: 'ဆစ်ဒနီ'),
+    'Pacific/Apia': TimeZoneNames(exemplarCity: 'အားပီအား'),
+    'Pacific/Auckland': TimeZoneNames(exemplarCity: 'အော့ကလန်'),
+    'Pacific/Bougainville': TimeZoneNames(exemplarCity: 'ဘူဂန်ဗီးလီးယား'),
+    'Pacific/Chatham': TimeZoneNames(exemplarCity: 'ချားသမ်'),
+    'Pacific/Easter': TimeZoneNames(exemplarCity: 'အီစတာ'),
+    'Pacific/Efate': TimeZoneNames(exemplarCity: 'အီဖာတီ'),
+    'Pacific/Enderbury': TimeZoneNames(exemplarCity: 'အန်ဒါဘူရီ'),
+    'Pacific/Fakaofo': TimeZoneNames(exemplarCity: 'ဖာခါအိုဖို'),
+    'Pacific/Fiji': TimeZoneNames(exemplarCity: 'ဖီဂျီ'),
+    'Pacific/Funafuti': TimeZoneNames(exemplarCity: 'ဖူနာဖူတီ'),
+    'Pacific/Galapagos': TimeZoneNames(exemplarCity: 'ဂါလာပါကပ်စ်'),
+    'Pacific/Gambier': TimeZoneNames(exemplarCity: 'ဂမ်ဘီယာ'),
+    'Pacific/Guadalcanal': TimeZoneNames(exemplarCity: 'ဂွါဒါကနဲလ်'),
+    'Pacific/Guam': TimeZoneNames(exemplarCity: 'ဂူအမ်'),
+    'Pacific/Honolulu': TimeZoneNames(exemplarCity: 'ဟိုနိုလူလူ'),
+    'Pacific/Kanton': TimeZoneNames(exemplarCity: 'ကန်တွန်'),
+    'Pacific/Kiritimati': TimeZoneNames(exemplarCity: 'ခရိဒီမတီ'),
+    'Pacific/Kosrae': TimeZoneNames(exemplarCity: 'ခိုစ်ရိုင်'),
+    'Pacific/Kwajalein': TimeZoneNames(exemplarCity: 'ခွာဂျာလိန်'),
+    'Pacific/Majuro': TimeZoneNames(exemplarCity: 'မာဂျူးရို'),
+    'Pacific/Marquesas': TimeZoneNames(exemplarCity: 'မာခေးအပ်စ်'),
+    'Pacific/Midway': TimeZoneNames(exemplarCity: 'မစ်ဒ်ဝေး'),
+    'Pacific/Nauru': TimeZoneNames(exemplarCity: 'နာဥူရူ'),
+    'Pacific/Niue': TimeZoneNames(exemplarCity: 'နီဦးအေ'),
+    'Pacific/Norfolk': TimeZoneNames(exemplarCity: 'နော်ဖော့ခ်'),
+    'Pacific/Noumea': TimeZoneNames(exemplarCity: 'နူမယ်အာ'),
+    'Pacific/Pago_Pago': TimeZoneNames(exemplarCity: 'ပါဂိုပါဂို'),
+    'Pacific/Palau': TimeZoneNames(exemplarCity: 'ပလာအို'),
+    'Pacific/Pitcairn': TimeZoneNames(exemplarCity: 'ပါတ်ကယ်ရင်'),
+    'Pacific/Ponape': TimeZoneNames(exemplarCity: 'ဖိုနာဖဲအ်'),
+    'Pacific/Port_Moresby': TimeZoneNames(exemplarCity: 'ဖို့တ် မိုရက်စ်ဘီ'),
+    'Pacific/Rarotonga': TimeZoneNames(exemplarCity: 'ရာရိုတွန်းဂါ'),
+    'Pacific/Saipan': TimeZoneNames(exemplarCity: 'ဆိုင်ပန်'),
+    'Pacific/Tahiti': TimeZoneNames(exemplarCity: 'တဟီတီ'),
+    'Pacific/Tarawa': TimeZoneNames(exemplarCity: 'တာရာဝါ'),
+    'Pacific/Tongatapu': TimeZoneNames(exemplarCity: 'တွန်ဂါတာပု'),
+    'Pacific/Truk': TimeZoneNames(exemplarCity: 'ချုခ်'),
+    'Pacific/Wake': TimeZoneNames(exemplarCity: 'ဝိတ်ခ်'),
+    'Pacific/Wallis': TimeZoneNames(exemplarCity: 'ဝေါလီစ်'),
+    'Arctic/Longyearbyen': TimeZoneNames(exemplarCity: 'လောင်ရီယားဘရံ'),
+    'Antarctica/Casey': TimeZoneNames(exemplarCity: 'ကေစီ'),
+    'Antarctica/Davis': TimeZoneNames(exemplarCity: 'ဒေးဗစ်'),
+    'Antarctica/DumontDUrville':
+        TimeZoneNames(exemplarCity: 'ဒူးမော့တ် ဒါရ်ဗီးလ်'),
+    'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'မက်ကွယ်ရီ'),
+    'Antarctica/Mawson': TimeZoneNames(exemplarCity: 'မော်စွန်'),
+    'Antarctica/McMurdo': TimeZoneNames(exemplarCity: 'မက်မူဒိုး'),
+    'Antarctica/Palmer': TimeZoneNames(exemplarCity: 'ပါလ်မာ'),
+    'Antarctica/Rothera': TimeZoneNames(exemplarCity: 'ရိုသီရာ'),
+    'Antarctica/Syowa': TimeZoneNames(exemplarCity: 'ရှိုးဝါ'),
+    'Antarctica/Troll': TimeZoneNames(exemplarCity: 'ထရိုလ်'),
+    'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'ဗိုစ်တိုခ်'),
     'Etc/UTC': TimeZoneNames(
-      long: TimeZoneName(
-        standard: 'ညှိထားသည့် ကမ္ဘာ့ စံတော်ချိန်',
-      ),
-      short: TimeZoneName(
-        standard: 'UTC',
-      ),
-    ),
-    'Etc/Unknown': TimeZoneNames(
-      exemplarCity: 'အမည်မသိသောမြို့',
-    ),
-  }, (key) => key.toLowerCase());
+        long: TimeZoneName(standard: 'ညှိထားသည့် ကမ္ဘာ့ စံတော်ချိန်'),
+        short: TimeZoneName(standard: 'UTC')),
+    'Etc/Unknown': TimeZoneNames(exemplarCity: 'အမည်မသိသောမြို့'),
+  };
 
   @override
-  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
-    'Afghanistan': MetaZone(
-      code: 'Afghanistan',
-      long: TimeZoneName(
-        standard: 'အာဖဂန်နစ္စတန် အချိန်',
-      ),
-    ),
-    'Africa_Central': MetaZone(
-      code: 'Africa_Central',
-      long: TimeZoneName(
-        standard: 'အလယ်အာဖရိက အချိန်',
-      ),
-    ),
-    'Africa_Eastern': MetaZone(
-      code: 'Africa_Eastern',
-      long: TimeZoneName(
-        standard: 'အရှေ့အာဖရိက အချိန်',
-      ),
-    ),
-    'Africa_Southern': MetaZone(
-      code: 'Africa_Southern',
-      long: TimeZoneName(
-        standard: 'တောင်အာဖရိက အချိန်',
-      ),
-    ),
-    'Africa_Western': MetaZone(
-      code: 'Africa_Western',
-      long: TimeZoneName(
-        generic: 'အနောက်အာဖရိက အချိန်',
-        standard: 'အနောက်အာဖရိက စံတော်ချိန်',
-        daylight: 'အနောက်အာဖရိက နွေရာသီ အချိန်',
-      ),
-    ),
-    'Alaska': MetaZone(
-      code: 'Alaska',
-      long: TimeZoneName(
-        generic: 'အလာစကာ အချိန်',
-        standard: 'အလာစကာ စံတော်ချိန်',
-        daylight: 'အလာစကာ နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Amazon': MetaZone(
-      code: 'Amazon',
-      long: TimeZoneName(
-        generic: 'အမေဇုံ အချိန်',
-        standard: 'အမေဇုံ စံတော်ချိန်',
-        daylight: 'အမေဇုံ နွေရာသီအချိန်',
-      ),
-    ),
-    'America_Central': MetaZone(
-      code: 'America_Central',
-      long: TimeZoneName(
-        generic: 'အလယ်ပိုင်းအချိန်',
-        standard: 'အလယ်ပိုင်းစံတော်ချိန်',
-        daylight: 'အလယ်ပိုင်း နွေရာသီစံတော်ချိန်',
-      ),
-    ),
-    'America_Eastern': MetaZone(
-      code: 'America_Eastern',
-      long: TimeZoneName(
-        generic: 'အရှေ့ပိုင်းအချိန်',
-        standard: 'အရှေ့ပိုင်းစံတော်ချိန်',
-        daylight: 'အရှေ့ပိုင်း နွေရာသီစံတော်ချိန်',
-      ),
-    ),
-    'America_Mountain': MetaZone(
-      code: 'America_Mountain',
-      long: TimeZoneName(
-        generic: 'တောင်တန်းအချိန်',
-        standard: 'တောင်တန်းစံတော်ချိန်',
-        daylight: 'တောင်တန်း နွေရာသီစံတော်ချိန်',
-      ),
-    ),
-    'America_Pacific': MetaZone(
-      code: 'America_Pacific',
-      long: TimeZoneName(
-        generic: 'ပစိဖိတ်အချိန်',
-        standard: 'ပစိဖိတ်စံတော်ချိန်',
-        daylight: 'ပစိဖိတ် နွေရာသီစံတော်ချိန်',
-      ),
-    ),
-    'Apia': MetaZone(
-      code: 'Apia',
-      long: TimeZoneName(
-        generic: 'အပီယာ အချိန်',
-        standard: 'အပီယာ စံတော်ချိန်',
-        daylight: 'အပီယာ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Arabian': MetaZone(
-      code: 'Arabian',
-      long: TimeZoneName(
-        generic: 'အာရေဗျ အချိန်',
-        standard: 'အာရေဗျ စံတော်ချိန်',
-        daylight: 'အာရေဗျ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Argentina': MetaZone(
-      code: 'Argentina',
-      long: TimeZoneName(
-        generic: 'အာဂျင်တီးနား အချိန်',
-        standard: 'အာဂျင်တီးနား စံတော်ချိန်',
-        daylight: 'အာဂျင်တီးနား နွေရာသီအချိန်',
-      ),
-    ),
-    'Argentina_Western': MetaZone(
-      code: 'Argentina_Western',
-      long: TimeZoneName(
-        generic: 'အနောက် အာဂျင်တီးနား အချိန်',
-        standard: 'အနောက် အာဂျင်တီးနား စံတော်ချိန်',
-        daylight: 'အနောက် အာဂျင်တီးနား နွေရာသီ အချိန်',
-      ),
-    ),
-    'Armenia': MetaZone(
-      code: 'Armenia',
-      long: TimeZoneName(
-        generic: 'အာမေးနီးယား အချိန်',
-        standard: 'အာမေးနီးယား စံတော်ချိန်',
-        daylight: 'အာမေးနီးယား နွေရာသီ အချိန်',
-      ),
-    ),
-    'Atlantic': MetaZone(
-      code: 'Atlantic',
-      long: TimeZoneName(
-        generic: 'အတ္တလန်တစ် အချိန်',
-        standard: 'အတ္တလန်တစ် စံတော်ချိန်',
-        daylight: 'အတ္တလန်တစ် နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Australia_Central': MetaZone(
-      code: 'Australia_Central',
-      long: TimeZoneName(
-        generic: 'ဩစတြေးလျ အလယ်ပိုင်း အချိန်',
-        standard: 'ဩစတြေးလျ အလယ်ပိုင်း စံတော်ချိန်',
-        daylight: 'ဩစတြေးလျ အလယ်ပိုင်း နွေရာသီ အချိန်',
-      ),
-    ),
-    'Australia_CentralWestern': MetaZone(
-      code: 'Australia_CentralWestern',
-      long: TimeZoneName(
-        generic: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း အချိန်',
-        standard: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း စံတော်ချိန်',
-        daylight: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း နွေရာသီ အချိန်',
-      ),
-    ),
-    'Australia_Eastern': MetaZone(
-      code: 'Australia_Eastern',
-      long: TimeZoneName(
-        generic: 'အရှေ့ဩစတြေးလျ အချိန်',
-        standard: 'အရှေ့ဩစတြေးလျ စံတော်ချိန်',
-        daylight: 'အရှေ့ဩစတြေးလျ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Australia_Western': MetaZone(
-      code: 'Australia_Western',
-      long: TimeZoneName(
-        generic: 'အနောက်ဩစတြေးလျ အချိန်',
-        standard: 'အနောက်ဩစတြေးလျ စံတော်ချိန်',
-        daylight: 'ဩစတြေးလျ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Azerbaijan': MetaZone(
-      code: 'Azerbaijan',
-      long: TimeZoneName(
-        generic: 'အဇာဘိုင်ဂျန် အချိန်',
-        standard: 'အဇာဘိုင်ဂျန် စံတော်ချိန်',
-        daylight: 'အဇာဘိုင်ဂျန် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Azores': MetaZone(
-      code: 'Azores',
-      long: TimeZoneName(
-        generic: 'အေဇိုးရီးစ် အချိန်',
-        standard: 'အေဇိုးရီးစ် စံတော်ချိန်',
-        daylight: 'အေဇိုးရီးစ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Bangladesh': MetaZone(
-      code: 'Bangladesh',
-      long: TimeZoneName(
-        generic: 'ဘင်္ဂလားဒေ့ရှ် အချိန်',
-        standard: 'ဘင်္ဂလားဒေ့ရှ် စံတော်ချိန်',
-        daylight: 'ဘင်္ဂလားဒေ့ရှ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Bhutan': MetaZone(
-      code: 'Bhutan',
-      long: TimeZoneName(
-        standard: 'ဘူတန် အချိန်',
-      ),
-    ),
-    'Bolivia': MetaZone(
-      code: 'Bolivia',
-      long: TimeZoneName(
-        standard: 'ဘိုလီးဘီးယား အချိန်',
-      ),
-    ),
-    'Brasilia': MetaZone(
-      code: 'Brasilia',
-      long: TimeZoneName(
-        generic: 'ဘရာဇီး အချိန်',
-        standard: 'ဘရာဇီး စံတော်ချိန်',
-        daylight: 'ဘရာဇီး နွေရာသီ အချိန်',
-      ),
-    ),
-    'Brunei': MetaZone(
-      code: 'Brunei',
-      long: TimeZoneName(
-        standard: 'ဘရူနိုင်း စံတော်ချိန်',
-      ),
-    ),
-    'Cape_Verde': MetaZone(
-      code: 'Cape_Verde',
-      long: TimeZoneName(
-        generic: 'ကိတ်ဗာဒီ အချိန်',
-        standard: 'ကိတ်ဗာဒီ စံတော်ချိန်',
-        daylight: 'ကိတ်ဗာဒီ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Chamorro': MetaZone(
-      code: 'Chamorro',
-      long: TimeZoneName(
-        standard: 'ချာမိုရို အချိန်',
-      ),
-    ),
-    'Chatham': MetaZone(
-      code: 'Chatham',
-      long: TimeZoneName(
-        generic: 'ချားသမ်အချိန်',
-        standard: 'ချားသမ်စံတော်ချိန်',
-        daylight: 'ချားသမ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Chile': MetaZone(
-      code: 'Chile',
-      long: TimeZoneName(
-        generic: 'ချီလီ အချိန်',
-        standard: 'ချီလီ စံတော်ချိန်',
-        daylight: 'ချီလီ နွေရာသီ အချိန်',
-      ),
-    ),
-    'China': MetaZone(
-      code: 'China',
-      long: TimeZoneName(
-        generic: 'တရုတ် အချိန်',
-        standard: 'တရုတ် စံတော်ချိန်',
-        daylight: 'တရုတ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Christmas': MetaZone(
-      code: 'Christmas',
-      long: TimeZoneName(
-        standard: 'ခရစ်စမတ်ကျွန်း အချိန်',
-      ),
-    ),
-    'Cocos': MetaZone(
-      code: 'Cocos',
-      long: TimeZoneName(
-        standard: 'ကိုကိုးကျွန်း အချိန်',
-      ),
-    ),
-    'Colombia': MetaZone(
-      code: 'Colombia',
-      long: TimeZoneName(
-        generic: 'ကိုလံဘီယာ အချိန်',
-        standard: 'ကိုလံဘီယာ စံတော်ချိန်',
-        daylight: 'ကိုလံဘီယာ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Cook': MetaZone(
-      code: 'Cook',
-      long: TimeZoneName(
-        generic: 'ကွတ်ကျွန်းစု အချိန်',
-        standard: 'ကွတ်ကျွန်းစု စံတော်ချိန်',
-        daylight: 'ကွတ်ကျွန်းစု နွေရာသီ အချိန်',
-      ),
-    ),
-    'Cuba': MetaZone(
-      code: 'Cuba',
-      long: TimeZoneName(
-        generic: 'ကျူးဘား အချိန်',
-        standard: 'ကျူးဘား စံတော်ချိန်',
-        daylight: 'ကျူးဘား နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Davis': MetaZone(
-      code: 'Davis',
-      long: TimeZoneName(
-        standard: 'ဒေးဗစ် အချိန်',
-      ),
-    ),
-    'DumontDUrville': MetaZone(
-      code: 'DumontDUrville',
-      long: TimeZoneName(
-        standard: 'ဒူးမော့တ် ဒါရ်ဗီးလ် အချိန်',
-      ),
-    ),
-    'East_Timor': MetaZone(
-      code: 'East_Timor',
-      long: TimeZoneName(
-        standard: 'အရှေ့တီမော အချိန်',
-      ),
-    ),
-    'Easter': MetaZone(
-      code: 'Easter',
-      long: TimeZoneName(
-        generic: 'အီစတာကျွန်း အချိန်',
-        standard: 'အီစတာကျွန်း စံတော်ချိန်',
-        daylight: 'အီစတာကျွန်း နွေရာသီ အချိန်',
-      ),
-    ),
-    'Ecuador': MetaZone(
-      code: 'Ecuador',
-      long: TimeZoneName(
-        standard: 'အီကွေဒေါ အချိန်',
-      ),
-    ),
-    'Europe_Central': MetaZone(
-      code: 'Europe_Central',
-      long: TimeZoneName(
-        generic: 'ဥရောပအလယ်ပိုင်း အချိန်',
-        standard: 'ဥရောပအလယ်ပိုင်း စံတော်ချိန်',
-        daylight: 'ဥရောပအလယ်ပိုင်း နွေရာသီ အချိန်',
-      ),
-    ),
-    'Europe_Eastern': MetaZone(
-      code: 'Europe_Eastern',
-      long: TimeZoneName(
-        generic: 'အရှေ့ဥရောပ အချိန်',
-        standard: 'အရှေ့ဥရောပ စံတော်ချိန်',
-        daylight: 'အရှေ့ဥရောပ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Europe_Further_Eastern': MetaZone(
-      code: 'Europe_Further_Eastern',
-      long: TimeZoneName(
-        standard: 'အရှေ့ဖျား ဥရောပဒေသ အချိန်',
-      ),
-    ),
-    'Europe_Western': MetaZone(
-      code: 'Europe_Western',
-      long: TimeZoneName(
-        generic: 'အနောက်ဥရောပ အချိန်',
-        standard: 'အနောက်ဥရောပ စံတော်ချိန်',
-        daylight: 'အနောက်ဥရောပ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Falkland': MetaZone(
-      code: 'Falkland',
-      long: TimeZoneName(
-        generic: 'ဖော့ကလန်ကျွန်းစု အချိန်',
-        standard: 'ဖော့ကလန်ကျွန်းစု စံတော်ချိန်',
-        daylight: 'ဖော့ကလန်ကျွန်းစု နွေရာသီ အချိန်',
-      ),
-    ),
-    'Fiji': MetaZone(
-      code: 'Fiji',
-      long: TimeZoneName(
-        generic: 'ဖီဂျီ အချိန်',
-        standard: 'ဖီဂျီ စံတော်ချိန်',
-        daylight: 'ဖီဂျီ နွေရာသီ အချိန်',
-      ),
-    ),
-    'French_Guiana': MetaZone(
-      code: 'French_Guiana',
-      long: TimeZoneName(
-        standard: 'ပြင်သစ် ဂီအားနား အချိန်',
-      ),
-    ),
-    'French_Southern': MetaZone(
-      code: 'French_Southern',
-      long: TimeZoneName(
-        standard: 'ပြင်သစ်တောင်ပိုင်းနှင့် အန္တာတိတ် အချိန်',
-      ),
-    ),
-    'Galapagos': MetaZone(
-      code: 'Galapagos',
-      long: TimeZoneName(
-        standard: 'ဂါလားပါဂိုးစ် အချိန်',
-      ),
-    ),
-    'Gambier': MetaZone(
-      code: 'Gambier',
-      long: TimeZoneName(
-        standard: 'ဂမ်ဘီယာ အချိန်',
-      ),
-    ),
-    'Georgia': MetaZone(
-      code: 'Georgia',
-      long: TimeZoneName(
-        generic: 'ဂျော်ဂျီယာ အချိန်',
-        standard: 'ဂျော်ဂျီယာ စံတော်ချိန်',
-        daylight: 'ဂျော်ဂျီယာ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Gilbert_Islands': MetaZone(
-      code: 'Gilbert_Islands',
-      long: TimeZoneName(
-        standard: 'ဂီလ်ဘတ်ကျွန်းစု အချိန်',
-      ),
-    ),
-    'GMT': MetaZone(
-      code: 'GMT',
-      long: TimeZoneName(
-        standard: 'ဂရင်းနစ် စံတော်ချိန်',
-      ),
-    ),
-    'Greenland_Eastern': MetaZone(
-      code: 'Greenland_Eastern',
-      long: TimeZoneName(
-        generic: 'အရှေ့ဂရင်းလန်း အချိန်',
-        standard: 'အရှေ့ဂရင်းလန်း စံတော်ချိန်',
-        daylight: 'အရှေ့ဂရင်းလန် နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Greenland_Western': MetaZone(
-      code: 'Greenland_Western',
-      long: TimeZoneName(
-        generic: 'အနောက် ဂရင်းလန်း အချိန်',
-        standard: 'အနောက် ဂရင်းလန်း စံတော်ချိန်',
-        daylight: 'အနောက် ဂရင်းလန် နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Gulf': MetaZone(
-      code: 'Gulf',
-      long: TimeZoneName(
-        standard: 'ပင်လယ်ကွေ့ အချိန်',
-      ),
-    ),
-    'Guyana': MetaZone(
-      code: 'Guyana',
-      long: TimeZoneName(
-        standard: 'ဂိုင်ယာနာ အချိန်',
-      ),
-    ),
-    'Hawaii_Aleutian': MetaZone(
-      code: 'Hawaii_Aleutian',
-      long: TimeZoneName(
-        generic: 'ဟာဝိုင်ယီ အယ်လူးရှန်း အချိန်',
-        standard: 'ဟာဝိုင်ယီ အယ်လူးရှန်း စံတော်ချိန်',
-        daylight: 'ဟာဝိုင်ယီ အယ်လူးရှန်း နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Hong_Kong': MetaZone(
-      code: 'Hong_Kong',
-      long: TimeZoneName(
-        generic: 'ဟောင်ကောင် အချိန်',
-        standard: 'ဟောင်ကောင် စံတော်ချိန်',
-        daylight: 'ဟောင်ကောင် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Hovd': MetaZone(
-      code: 'Hovd',
-      long: TimeZoneName(
-        generic: 'ဟိုးဗ် အချိန်',
-        standard: 'ဟိုးဗ် စံတော်ချိန်',
-        daylight: 'ဟိုးဗ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'India': MetaZone(
-      code: 'India',
-      long: TimeZoneName(
-        standard: 'အိန္ဒိယ စံတော်ချိန်',
-      ),
-    ),
-    'Indian_Ocean': MetaZone(
-      code: 'Indian_Ocean',
-      long: TimeZoneName(
-        standard: 'အိန္ဒိယသမုဒ္ဒရာ အချိန်',
-      ),
-    ),
-    'Indochina': MetaZone(
-      code: 'Indochina',
-      long: TimeZoneName(
-        standard: 'အင်ဒိုချိုင်းနား အချိန်',
-      ),
-    ),
-    'Indonesia_Central': MetaZone(
-      code: 'Indonesia_Central',
-      long: TimeZoneName(
-        standard: 'အလယ်ပိုင်း အင်ဒိုနီးရှား အချိန်',
-      ),
-    ),
-    'Indonesia_Eastern': MetaZone(
-      code: 'Indonesia_Eastern',
-      long: TimeZoneName(
-        standard: 'အရှေ့ပိုင်း အင်ဒိုနီးရှား အချိန်',
-      ),
-    ),
-    'Indonesia_Western': MetaZone(
-      code: 'Indonesia_Western',
-      long: TimeZoneName(
-        standard: 'အနောက်ပိုင်း အင်ဒိုနီးရှား အချိန်',
-      ),
-    ),
-    'Iran': MetaZone(
-      code: 'Iran',
-      long: TimeZoneName(
-        generic: 'အီရန် အချိန်',
-        standard: 'အီရန် စံတော်ချိန်',
-        daylight: 'အီရန် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Irkutsk': MetaZone(
-      code: 'Irkutsk',
-      long: TimeZoneName(
-        generic: 'အီရူခူတ် အချိန်',
-        standard: 'အီရူခူတ် စံတော်ချိန်',
-        daylight: 'အီရူခူတ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Israel': MetaZone(
-      code: 'Israel',
-      long: TimeZoneName(
-        generic: 'အစ္စရေး အချိန်',
-        standard: 'အစ္စရေး စံတော်ချိန်',
-        daylight: 'အစ္စရေး နွေရာသီ အချိန်',
-      ),
-    ),
-    'Japan': MetaZone(
-      code: 'Japan',
-      long: TimeZoneName(
-        generic: 'ဂျပန် အချိန်',
-        standard: 'ဂျပန် စံတော်ချိန်',
-        daylight: 'ဂျပန် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Kazakhstan': MetaZone(
-      code: 'Kazakhstan',
-      long: TimeZoneName(
-        standard: 'ကာဇက်စတန် အချိန်',
-      ),
-    ),
-    'Kazakhstan_Eastern': MetaZone(
-      code: 'Kazakhstan_Eastern',
-      long: TimeZoneName(
-        standard: 'အရှေ့ကာဇက်စတန် အချိန်',
-      ),
-    ),
-    'Kazakhstan_Western': MetaZone(
-      code: 'Kazakhstan_Western',
-      long: TimeZoneName(
-        standard: 'အနောက်ကာဇက်စတန် အချိန်',
-      ),
-    ),
-    'Korea': MetaZone(
-      code: 'Korea',
-      long: TimeZoneName(
-        generic: 'ကိုရီးယား အချိန်',
-        standard: 'ကိုရီးယား စံတော်ချိန်',
-        daylight: 'ကိုရီးယား နွေရာသီ အချိန်',
-      ),
-    ),
-    'Kosrae': MetaZone(
-      code: 'Kosrae',
-      long: TimeZoneName(
-        standard: 'ခိုစ်ရိုင် အချိန်',
-      ),
-    ),
-    'Krasnoyarsk': MetaZone(
-      code: 'Krasnoyarsk',
-      long: TimeZoneName(
-        generic: 'ခရာ့စ်နိုရာစ် အချိန်',
-        standard: 'ခရာ့စ်နိုရာစ် စံတော်ချိန်',
-        daylight: 'ခရာ့စ်နိုရာစ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Kyrgystan': MetaZone(
-      code: 'Kyrgystan',
-      long: TimeZoneName(
-        standard: 'ကာဂျစ္စတန် အချိန်',
-      ),
-    ),
-    'Lanka': MetaZone(
-      code: 'Lanka',
-      long: TimeZoneName(
-        standard: 'သီရိလင်္ကာ အချိန်',
-      ),
-    ),
-    'Line_Islands': MetaZone(
-      code: 'Line_Islands',
-      long: TimeZoneName(
-        standard: 'လိုင်းကျွန်းစု အချိန်',
-      ),
-    ),
-    'Lord_Howe': MetaZone(
-      code: 'Lord_Howe',
-      long: TimeZoneName(
-        generic: 'လော့ဒ်ဟောင် အချိန်',
-        standard: 'လော့ဒ်ဟောင် စံတော်ချိန်',
-        daylight: 'လော့ဒ်ဟောင် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Macau': MetaZone(
-      code: 'Macau',
-      long: TimeZoneName(
-        generic: 'မကာအို အချိန်',
-        standard: 'မကာအို စံတော်ချိန်',
-        daylight: 'မကာအို နွေရာသီ အချိန်',
-      ),
-    ),
-    'Magadan': MetaZone(
-      code: 'Magadan',
-      long: TimeZoneName(
-        generic: 'မာဂါဒန်း အချိန်',
-        standard: 'မာဂါဒန်း စံတော်ချိန်',
-        daylight: 'မာဂါဒန်း နွေရာသီ အချိန်',
-      ),
-    ),
-    'Malaysia': MetaZone(
-      code: 'Malaysia',
-      long: TimeZoneName(
-        standard: 'မလေးရှား အချိန်',
-      ),
-    ),
-    'Maldives': MetaZone(
-      code: 'Maldives',
-      long: TimeZoneName(
-        standard: 'မော်လဒိုက် အချိန်',
-      ),
-    ),
-    'Marquesas': MetaZone(
-      code: 'Marquesas',
-      long: TimeZoneName(
-        standard: 'မာခေးအပ်စ် အချိန်',
-      ),
-    ),
-    'Marshall_Islands': MetaZone(
-      code: 'Marshall_Islands',
-      long: TimeZoneName(
-        standard: 'မာရှယ်ကျွန်းစု အချိန်',
-      ),
-    ),
-    'Mauritius': MetaZone(
-      code: 'Mauritius',
-      long: TimeZoneName(
-        generic: 'မောရစ်ရှ အချိန်',
-        standard: 'မောရစ်ရှ စံတော်ချိန်',
-        daylight: 'မောရစ်ရှ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Mawson': MetaZone(
-      code: 'Mawson',
-      long: TimeZoneName(
-        standard: 'မော်စွန် အချိန်',
-      ),
-    ),
-    'Mexico_Pacific': MetaZone(
-      code: 'Mexico_Pacific',
-      long: TimeZoneName(
-        generic: 'မက္ကဆီကန် ပစိဖိတ် အချိန်',
-        standard: 'မက္ကဆီကန် ပစိဖိတ် စံတော်ချိန်',
-        daylight: 'မက္ကစီကန် ပစိဖိတ် နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Mongolia': MetaZone(
-      code: 'Mongolia',
-      long: TimeZoneName(
-        generic: 'ဥလန်ဘာတော အချိန်',
-        standard: 'ဥလန်ဘာတော စံတော်ချိန်',
-        daylight: 'ဥလန်ဘာတော နွေရာသီ အချိန်',
-      ),
-    ),
-    'Moscow': MetaZone(
-      code: 'Moscow',
-      long: TimeZoneName(
-        generic: 'မော်စကို အချိန်',
-        standard: 'မော်စကို စံတော်ချိန်',
-        daylight: 'မော်စကို နွေရာသီ အချိန်',
-      ),
-    ),
-    'Myanmar': MetaZone(
-      code: 'Myanmar',
-      long: TimeZoneName(
-        standard: 'မြန်မာ အချိန်',
-      ),
-    ),
-    'Nauru': MetaZone(
-      code: 'Nauru',
-      long: TimeZoneName(
-        standard: 'နာဥူရူ အချိန်',
-      ),
-    ),
-    'Nepal': MetaZone(
-      code: 'Nepal',
-      long: TimeZoneName(
-        standard: 'နီပေါ အချိန်',
-      ),
-    ),
-    'New_Caledonia': MetaZone(
-      code: 'New_Caledonia',
-      long: TimeZoneName(
-        generic: 'နယူးကယ်လီဒိုးနီးယား အချိန်',
-        standard: 'နယူးကာလီဒိုးနီးယား စံတော်ချိန်',
-        daylight: 'နယူးကာလီဒိုးနီးယား နွေရာသီ အချိန်',
-      ),
-    ),
-    'New_Zealand': MetaZone(
-      code: 'New_Zealand',
-      long: TimeZoneName(
-        generic: 'နယူးဇီလန် အချိန်',
-        standard: 'နယူးဇီလန် စံတော်ချိန်',
-        daylight: 'နယူးဇီလန် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Newfoundland': MetaZone(
-      code: 'Newfoundland',
-      long: TimeZoneName(
-        generic: 'နယူးဖောင်လန် အချိန်',
-        standard: 'နယူးဖောင်လန် စံတော်ချိန်',
-        daylight: 'နယူးဖောင်လန် နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Niue': MetaZone(
-      code: 'Niue',
-      long: TimeZoneName(
-        standard: 'နီဥူအေ အချိန်',
-      ),
-    ),
-    'Norfolk': MetaZone(
-      code: 'Norfolk',
-      long: TimeZoneName(
-        generic: 'နောဖော့ခ်ကျွန်း အချိန်',
-        standard: 'နောဖော့ခ်ကျွန်း စံတော်ချိန်',
-        daylight: 'နောဖော့ခ်ကျွန်း နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Noronha': MetaZone(
-      code: 'Noronha',
-      long: TimeZoneName(
-        generic: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ အချိန်',
-        standard: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ စံတော်ချိန်',
-        daylight: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Novosibirsk': MetaZone(
-      code: 'Novosibirsk',
-      long: TimeZoneName(
-        generic: 'နိုဗိုစဲဘီအဲယ်စ် အချိန်',
-        standard: 'နိုဗိုစဲဘီအဲယ်စ် စံတော်ချိန်',
-        daylight: 'နိုဗိုစဲဘီအဲယ်စ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Omsk': MetaZone(
-      code: 'Omsk',
-      long: TimeZoneName(
-        generic: 'အွမ်းစ်ခ် အချိန်',
-        standard: 'အွမ်းစ်ခ် စံတော်ချိန်',
-        daylight: 'အွမ်းစ်ခ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Pakistan': MetaZone(
-      code: 'Pakistan',
-      long: TimeZoneName(
-        generic: 'ပါကစ္စတန် အချိန်',
-        standard: 'ပါကစ္စတန် စံတော်ချိန်',
-        daylight: 'ပါကစ္စတန် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Palau': MetaZone(
-      code: 'Palau',
-      long: TimeZoneName(
-        standard: 'ပလာအို အချိန်',
-      ),
-    ),
-    'Papua_New_Guinea': MetaZone(
-      code: 'Papua_New_Guinea',
-      long: TimeZoneName(
-        standard: 'ပါပူအာနယူးဂီနီ အချိန်',
-      ),
-    ),
-    'Paraguay': MetaZone(
-      code: 'Paraguay',
-      long: TimeZoneName(
-        generic: 'ပါရာဂွေး အချိန်',
-        standard: 'ပါရာဂွေး စံတော်ချိန်',
-        daylight: 'ပါရာဂွေး နွေရာသီ အချိန်',
-      ),
-    ),
-    'Peru': MetaZone(
-      code: 'Peru',
-      long: TimeZoneName(
-        generic: 'ပီရူး အချိန်',
-        standard: 'ပီရူး စံတော်ချိန်',
-        daylight: 'ပီရူး နွေရာသီ အချိန်',
-      ),
-    ),
-    'Philippines': MetaZone(
-      code: 'Philippines',
-      long: TimeZoneName(
-        generic: 'ဖိလစ်ပိုင် အချိန်',
-        standard: 'ဖိလစ်ပိုင် စံတော်ချိန်',
-        daylight: 'ဖိလစ်ပိုင် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Phoenix_Islands': MetaZone(
-      code: 'Phoenix_Islands',
-      long: TimeZoneName(
-        standard: 'ဖီးနစ်ကျွန်းစု အချိန်',
-      ),
-    ),
-    'Pierre_Miquelon': MetaZone(
-      code: 'Pierre_Miquelon',
-      long: TimeZoneName(
-        generic: 'စိန့်ပီအဲနှင့်မီခွီလွန်အချိန်',
-        standard: 'စိန့်ပီအဲနှင့်မီခွီလွန်စံတော်ချိန်',
-        daylight: 'စိန့်ပီအဲနှင့် မီခွီလွန် နွေရာသီ စံတော်ချိန်',
-      ),
-    ),
-    'Pitcairn': MetaZone(
-      code: 'Pitcairn',
-      long: TimeZoneName(
-        standard: 'ပါတ်ကယ်ရင် အချိန်',
-      ),
-    ),
-    'Ponape': MetaZone(
-      code: 'Ponape',
-      long: TimeZoneName(
-        standard: 'ဖိုနာဖဲအ် အချိန်',
-      ),
-    ),
-    'Pyongyang': MetaZone(
-      code: 'Pyongyang',
-      long: TimeZoneName(
-        standard: 'ပြုံယန်း အချိန်',
-      ),
-    ),
-    'Reunion': MetaZone(
-      code: 'Reunion',
-      long: TimeZoneName(
-        standard: 'ရီယူနီယံ အချိန်',
-      ),
-    ),
-    'Rothera': MetaZone(
-      code: 'Rothera',
-      long: TimeZoneName(
-        standard: 'ရိုသီရာ အချိန်',
-      ),
-    ),
-    'Sakhalin': MetaZone(
-      code: 'Sakhalin',
-      long: TimeZoneName(
-        generic: 'ဆာခါလင် အချိန်',
-        standard: 'ဆာခါလင် စံတော်ချိန်',
-        daylight: 'ဆာခါလင် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Samoa': MetaZone(
-      code: 'Samoa',
-      long: TimeZoneName(
-        generic: 'ဆမိုအာ အချိန်',
-        standard: 'ဆမိုအာ စံတော်ချိန်',
-        daylight: 'ဆမိုးအား နွေရာသီ အချိန်',
-      ),
-    ),
-    'Seychelles': MetaZone(
-      code: 'Seychelles',
-      long: TimeZoneName(
-        standard: 'ဆေးရှဲ အချိန်',
-      ),
-    ),
-    'Singapore': MetaZone(
-      code: 'Singapore',
-      long: TimeZoneName(
-        standard: 'စင်္ကာပူ အချိန်',
-      ),
-    ),
-    'Solomon': MetaZone(
-      code: 'Solomon',
-      long: TimeZoneName(
-        standard: 'ဆော်လမွန်ကျွန်းစု အချိန်',
-      ),
-    ),
-    'South_Georgia': MetaZone(
-      code: 'South_Georgia',
-      long: TimeZoneName(
-        standard: 'တောင်ဂျော်ဂျီယာ အချိန်',
-      ),
-    ),
-    'Suriname': MetaZone(
-      code: 'Suriname',
-      long: TimeZoneName(
-        standard: 'စူးရီနာမ်အချိန်',
-      ),
-    ),
-    'Syowa': MetaZone(
-      code: 'Syowa',
-      long: TimeZoneName(
-        standard: 'ရှိုဝါ အချိန်',
-      ),
-    ),
-    'Tahiti': MetaZone(
-      code: 'Tahiti',
-      long: TimeZoneName(
-        standard: 'တဟီတီ အချိန်',
-      ),
-    ),
-    'Taipei': MetaZone(
-      code: 'Taipei',
-      long: TimeZoneName(
-        generic: 'ထိုင်ပေ အချိန်',
-        standard: 'ထိုင်ပေ စံတော်ချိန်',
-        daylight: 'ထိုင်ပေ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Tajikistan': MetaZone(
-      code: 'Tajikistan',
-      long: TimeZoneName(
-        standard: 'တာဂျစ်ကစ္စတန် အချိန်',
-      ),
-    ),
-    'Tokelau': MetaZone(
-      code: 'Tokelau',
-      long: TimeZoneName(
-        standard: 'တိုကီလာဥ အချိန်',
-      ),
-    ),
-    'Tonga': MetaZone(
-      code: 'Tonga',
-      long: TimeZoneName(
-        generic: 'တွန်ဂါ အချိန်',
-        standard: 'တွန်ဂါ စံတော်ချိန်',
-        daylight: 'တွန်ဂါ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Truk': MetaZone(
-      code: 'Truk',
-      long: TimeZoneName(
-        standard: 'ချုခ် အချိန်',
-      ),
-    ),
-    'Turkmenistan': MetaZone(
-      code: 'Turkmenistan',
-      long: TimeZoneName(
-        generic: 'တာ့ခ်မင်နစ္စတန် အချိန်',
-        standard: 'တာ့ခ်မင်နစ္စတန် စံတော်ချိန်',
-        daylight: 'တာ့ခ်မင်နစ္စတန် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Tuvalu': MetaZone(
-      code: 'Tuvalu',
-      long: TimeZoneName(
-        standard: 'တူဗားလူ အချိန်',
-      ),
-    ),
-    'Uruguay': MetaZone(
-      code: 'Uruguay',
-      long: TimeZoneName(
-        generic: 'ဥရုဂွေး အချိန်',
-        standard: 'ဥရုဂွေး စံတော်ချိန်',
-        daylight: 'ဥရုဂွေး နွေရာသီ အချိန်',
-      ),
-    ),
-    'Uzbekistan': MetaZone(
-      code: 'Uzbekistan',
-      long: TimeZoneName(
-        generic: 'ဥဇဘက်ကစ္စတန် အချိန်',
-        standard: 'ဥဇဘက်ကစ္စတန် စံတော်ချိန်',
-        daylight: 'ဥဇဘက်ကစ္စတန် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Vanuatu': MetaZone(
-      code: 'Vanuatu',
-      long: TimeZoneName(
-        generic: 'ဗနွားတူ အချိန်',
-        standard: 'ဗနွားတူ စံတော်ချိန်',
-        daylight: 'ဗနွားတူ နွေရာသီ အချိန်',
-      ),
-    ),
-    'Venezuela': MetaZone(
-      code: 'Venezuela',
-      long: TimeZoneName(
-        standard: 'ဗင်နီဇွဲလား အချိန်',
-      ),
-    ),
-    'Vladivostok': MetaZone(
-      code: 'Vladivostok',
-      long: TimeZoneName(
-        generic: 'ဗလာဒီဗော့စတော့ခ် အချိန်',
-        standard: 'ဗလာဒီဗော့စတော့ခ် စံတော်ချိန်',
-        daylight: 'ဗလာဒီဗော့စတော့ခ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Volgograd': MetaZone(
-      code: 'Volgograd',
-      long: TimeZoneName(
-        generic: 'ဗိုလ်ဂိုဂရက် အချိန်',
-        standard: 'ဗိုလ်ဂိုဂရက် စံတော်ချိန်',
-        daylight: 'ဗိုဂိုဂရက် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Vostok': MetaZone(
-      code: 'Vostok',
-      long: TimeZoneName(
-        standard: 'ဗိုစ်တိုခ် အချိန်',
-      ),
-    ),
-    'Wake': MetaZone(
-      code: 'Wake',
-      long: TimeZoneName(
-        standard: 'ဝိတ်ခ်ကျွန်း အချိန်',
-      ),
-    ),
-    'Wallis': MetaZone(
-      code: 'Wallis',
-      long: TimeZoneName(
-        standard: 'ဝေါလီစ်နှင့် ဖူကျူနာ အချိန်',
-      ),
-    ),
-    'Yakutsk': MetaZone(
-      code: 'Yakutsk',
-      long: TimeZoneName(
-        generic: 'ယူခူးတ်စ် အချိန်',
-        standard: 'ယူခူးတ်စ် စံတော်ချိန်',
-        daylight: 'ယူခူးတ်စ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Yekaterinburg': MetaZone(
-      code: 'Yekaterinburg',
-      long: TimeZoneName(
-        generic: 'ရယ်ခါးတီရင်ဘားခ် အချိန်',
-        standard: 'ရယ်ခါးတီရင်ဘားခ် စံတော်ချိန်',
-        daylight: 'ရယ်ခါးတီရင်ဘာခ် နွေရာသီ အချိန်',
-      ),
-    ),
-    'Yukon': MetaZone(
-      code: 'Yukon',
-      long: TimeZoneName(
-        standard: 'ယူကွန်း အချိန်',
-      ),
-    ),
-  }, (key) => key.toLowerCase());
+  final metaZoneNames = const {
+    'Afghanistan': MetaZone('Afghanistan',
+        long: TimeZoneName(standard: 'အာဖဂန်နစ္စတန် အချိန်')),
+    'Africa_Central': MetaZone('Africa_Central',
+        long: TimeZoneName(standard: 'အလယ်အာဖရိက အချိန်')),
+    'Africa_Eastern': MetaZone('Africa_Eastern',
+        long: TimeZoneName(standard: 'အရှေ့အာဖရိက အချိန်')),
+    'Africa_Southern': MetaZone('Africa_Southern',
+        long: TimeZoneName(standard: 'တောင်အာဖရိက အချိန်')),
+    'Africa_Western': MetaZone('Africa_Western',
+        long: TimeZoneName(
+            generic: 'အနောက်အာဖရိက အချိန်',
+            standard: 'အနောက်အာဖရိက စံတော်ချိန်',
+            daylight: 'အနောက်အာဖရိက နွေရာသီ အချိန်')),
+    'Alaska': MetaZone('Alaska',
+        long: TimeZoneName(
+            generic: 'အလာစကာ အချိန်',
+            standard: 'အလာစကာ စံတော်ချိန်',
+            daylight: 'အလာစကာ နွေရာသီ စံတော်ချိန်')),
+    'Amazon': MetaZone('Amazon',
+        long: TimeZoneName(
+            generic: 'အမေဇုံ အချိန်',
+            standard: 'အမေဇုံ စံတော်ချိန်',
+            daylight: 'အမေဇုံ နွေရာသီအချိန်')),
+    'America_Central': MetaZone('America_Central',
+        long: TimeZoneName(
+            generic: 'အလယ်ပိုင်းအချိန်',
+            standard: 'အလယ်ပိုင်းစံတော်ချိန်',
+            daylight: 'အလယ်ပိုင်း နွေရာသီစံတော်ချိန်')),
+    'America_Eastern': MetaZone('America_Eastern',
+        long: TimeZoneName(
+            generic: 'အရှေ့ပိုင်းအချိန်',
+            standard: 'အရှေ့ပိုင်းစံတော်ချိန်',
+            daylight: 'အရှေ့ပိုင်း နွေရာသီစံတော်ချိန်')),
+    'America_Mountain': MetaZone('America_Mountain',
+        long: TimeZoneName(
+            generic: 'တောင်တန်းအချိန်',
+            standard: 'တောင်တန်းစံတော်ချိန်',
+            daylight: 'တောင်တန်း နွေရာသီစံတော်ချိန်')),
+    'America_Pacific': MetaZone('America_Pacific',
+        long: TimeZoneName(
+            generic: 'ပစိဖိတ်အချိန်',
+            standard: 'ပစိဖိတ်စံတော်ချိန်',
+            daylight: 'ပစိဖိတ် နွေရာသီစံတော်ချိန်')),
+    'Apia': MetaZone('Apia',
+        long: TimeZoneName(
+            generic: 'အပီယာ အချိန်',
+            standard: 'အပီယာ စံတော်ချိန်',
+            daylight: 'အပီယာ နွေရာသီ အချိန်')),
+    'Arabian': MetaZone('Arabian',
+        long: TimeZoneName(
+            generic: 'အာရေဗျ အချိန်',
+            standard: 'အာရေဗျ စံတော်ချိန်',
+            daylight: 'အာရေဗျ နွေရာသီ အချိန်')),
+    'Argentina': MetaZone('Argentina',
+        long: TimeZoneName(
+            generic: 'အာဂျင်တီးနား အချိန်',
+            standard: 'အာဂျင်တီးနား စံတော်ချိန်',
+            daylight: 'အာဂျင်တီးနား နွေရာသီအချိန်')),
+    'Argentina_Western': MetaZone('Argentina_Western',
+        long: TimeZoneName(
+            generic: 'အနောက် အာဂျင်တီးနား အချိန်',
+            standard: 'အနောက် အာဂျင်တီးနား စံတော်ချိန်',
+            daylight: 'အနောက် အာဂျင်တီးနား နွေရာသီ အချိန်')),
+    'Armenia': MetaZone('Armenia',
+        long: TimeZoneName(
+            generic: 'အာမေးနီးယား အချိန်',
+            standard: 'အာမေးနီးယား စံတော်ချိန်',
+            daylight: 'အာမေးနီးယား နွေရာသီ အချိန်')),
+    'Atlantic': MetaZone('Atlantic',
+        long: TimeZoneName(
+            generic: 'အတ္တလန်တစ် အချိန်',
+            standard: 'အတ္တလန်တစ် စံတော်ချိန်',
+            daylight: 'အတ္တလန်တစ် နွေရာသီ စံတော်ချိန်')),
+    'Australia_Central': MetaZone('Australia_Central',
+        long: TimeZoneName(
+            generic: 'ဩစတြေးလျ အလယ်ပိုင်း အချိန်',
+            standard: 'ဩစတြေးလျ အလယ်ပိုင်း စံတော်ချိန်',
+            daylight: 'ဩစတြေးလျ အလယ်ပိုင်း နွေရာသီ အချိန်')),
+    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
+        long: TimeZoneName(
+            generic: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း အချိန်',
+            standard: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း စံတော်ချိန်',
+            daylight: 'သြစတြေးလျား အနောက်အလယ်ပိုင်း နွေရာသီ အချိန်')),
+    'Australia_Eastern': MetaZone('Australia_Eastern',
+        long: TimeZoneName(
+            generic: 'အရှေ့ဩစတြေးလျ အချိန်',
+            standard: 'အရှေ့ဩစတြေးလျ စံတော်ချိန်',
+            daylight: 'အရှေ့ဩစတြေးလျ နွေရာသီ အချိန်')),
+    'Australia_Western': MetaZone('Australia_Western',
+        long: TimeZoneName(
+            generic: 'အနောက်ဩစတြေးလျ အချိန်',
+            standard: 'အနောက်ဩစတြေးလျ စံတော်ချိန်',
+            daylight: 'ဩစတြေးလျ နွေရာသီ အချိန်')),
+    'Azerbaijan': MetaZone('Azerbaijan',
+        long: TimeZoneName(
+            generic: 'အဇာဘိုင်ဂျန် အချိန်',
+            standard: 'အဇာဘိုင်ဂျန် စံတော်ချိန်',
+            daylight: 'အဇာဘိုင်ဂျန် နွေရာသီ အချိန်')),
+    'Azores': MetaZone('Azores',
+        long: TimeZoneName(
+            generic: 'အေဇိုးရီးစ် အချိန်',
+            standard: 'အေဇိုးရီးစ် စံတော်ချိန်',
+            daylight: 'အေဇိုးရီးစ် နွေရာသီ အချိန်')),
+    'Bangladesh': MetaZone('Bangladesh',
+        long: TimeZoneName(
+            generic: 'ဘင်္ဂလားဒေ့ရှ် အချိန်',
+            standard: 'ဘင်္ဂလားဒေ့ရှ် စံတော်ချိန်',
+            daylight: 'ဘင်္ဂလားဒေ့ရှ် နွေရာသီ အချိန်')),
+    'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'ဘူတန် အချိန်')),
+    'Bolivia': MetaZone('Bolivia',
+        long: TimeZoneName(standard: 'ဘိုလီးဘီးယား အချိန်')),
+    'Brasilia': MetaZone('Brasilia',
+        long: TimeZoneName(
+            generic: 'ဘရာဇီး အချိန်',
+            standard: 'ဘရာဇီး စံတော်ချိန်',
+            daylight: 'ဘရာဇီး နွေရာသီ အချိန်')),
+    'Brunei': MetaZone('Brunei',
+        long: TimeZoneName(standard: 'ဘရူနိုင်း စံတော်ချိန်')),
+    'Cape_Verde': MetaZone('Cape_Verde',
+        long: TimeZoneName(
+            generic: 'ကိတ်ဗာဒီ အချိန်',
+            standard: 'ကိတ်ဗာဒီ စံတော်ချိန်',
+            daylight: 'ကိတ်ဗာဒီ နွေရာသီ အချိန်')),
+    'Chamorro':
+        MetaZone('Chamorro', long: TimeZoneName(standard: 'ချာမိုရို အချိန်')),
+    'Chatham': MetaZone('Chatham',
+        long: TimeZoneName(
+            generic: 'ချားသမ်အချိန်',
+            standard: 'ချားသမ်စံတော်ချိန်',
+            daylight: 'ချားသမ် နွေရာသီ အချိန်')),
+    'Chile': MetaZone('Chile',
+        long: TimeZoneName(
+            generic: 'ချီလီ အချိန်',
+            standard: 'ချီလီ စံတော်ချိန်',
+            daylight: 'ချီလီ နွေရာသီ အချိန်')),
+    'China': MetaZone('China',
+        long: TimeZoneName(
+            generic: 'တရုတ် အချိန်',
+            standard: 'တရုတ် စံတော်ချိန်',
+            daylight: 'တရုတ် နွေရာသီ အချိန်')),
+    'Christmas': MetaZone('Christmas',
+        long: TimeZoneName(standard: 'ခရစ်စမတ်ကျွန်း အချိန်')),
+    'Cocos':
+        MetaZone('Cocos', long: TimeZoneName(standard: 'ကိုကိုးကျွန်း အချိန်')),
+    'Colombia': MetaZone('Colombia',
+        long: TimeZoneName(
+            generic: 'ကိုလံဘီယာ အချိန်',
+            standard: 'ကိုလံဘီယာ စံတော်ချိန်',
+            daylight: 'ကိုလံဘီယာ နွေရာသီ အချိန်')),
+    'Cook': MetaZone('Cook',
+        long: TimeZoneName(
+            generic: 'ကွတ်ကျွန်းစု အချိန်',
+            standard: 'ကွတ်ကျွန်းစု စံတော်ချိန်',
+            daylight: 'ကွတ်ကျွန်းစု နွေရာသီ အချိန်')),
+    'Cuba': MetaZone('Cuba',
+        long: TimeZoneName(
+            generic: 'ကျူးဘား အချိန်',
+            standard: 'ကျူးဘား စံတော်ချိန်',
+            daylight: 'ကျူးဘား နွေရာသီ စံတော်ချိန်')),
+    'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'ဒေးဗစ် အချိန်')),
+    'DumontDUrville': MetaZone('DumontDUrville',
+        long: TimeZoneName(standard: 'ဒူးမော့တ် ဒါရ်ဗီးလ် အချိန်')),
+    'East_Timor': MetaZone('East_Timor',
+        long: TimeZoneName(standard: 'အရှေ့တီမော အချိန်')),
+    'Easter': MetaZone('Easter',
+        long: TimeZoneName(
+            generic: 'အီစတာကျွန်း အချိန်',
+            standard: 'အီစတာကျွန်း စံတော်ချိန်',
+            daylight: 'အီစတာကျွန်း နွေရာသီ အချိန်')),
+    'Ecuador':
+        MetaZone('Ecuador', long: TimeZoneName(standard: 'အီကွေဒေါ အချိန်')),
+    'Europe_Central': MetaZone('Europe_Central',
+        long: TimeZoneName(
+            generic: 'ဥရောပအလယ်ပိုင်း အချိန်',
+            standard: 'ဥရောပအလယ်ပိုင်း စံတော်ချိန်',
+            daylight: 'ဥရောပအလယ်ပိုင်း နွေရာသီ အချိန်')),
+    'Europe_Eastern': MetaZone('Europe_Eastern',
+        long: TimeZoneName(
+            generic: 'အရှေ့ဥရောပ အချိန်',
+            standard: 'အရှေ့ဥရောပ စံတော်ချိန်',
+            daylight: 'အရှေ့ဥရောပ နွေရာသီ အချိန်')),
+    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
+        long: TimeZoneName(standard: 'အရှေ့ဖျား ဥရောပဒေသ အချိန်')),
+    'Europe_Western': MetaZone('Europe_Western',
+        long: TimeZoneName(
+            generic: 'အနောက်ဥရောပ အချိန်',
+            standard: 'အနောက်ဥရောပ စံတော်ချိန်',
+            daylight: 'အနောက်ဥရောပ နွေရာသီ အချိန်')),
+    'Falkland': MetaZone('Falkland',
+        long: TimeZoneName(
+            generic: 'ဖော့ကလန်ကျွန်းစု အချိန်',
+            standard: 'ဖော့ကလန်ကျွန်းစု စံတော်ချိန်',
+            daylight: 'ဖော့ကလန်ကျွန်းစု နွေရာသီ အချိန်')),
+    'Fiji': MetaZone('Fiji',
+        long: TimeZoneName(
+            generic: 'ဖီဂျီ အချိန်',
+            standard: 'ဖီဂျီ စံတော်ချိန်',
+            daylight: 'ဖီဂျီ နွေရာသီ အချိန်')),
+    'French_Guiana': MetaZone('French_Guiana',
+        long: TimeZoneName(standard: 'ပြင်သစ် ဂီအားနား အချိန်')),
+    'French_Southern': MetaZone('French_Southern',
+        long:
+            TimeZoneName(standard: 'ပြင်သစ်တောင်ပိုင်းနှင့် အန္တာတိတ် အချိန်')),
+    'Galapagos': MetaZone('Galapagos',
+        long: TimeZoneName(standard: 'ဂါလားပါဂိုးစ် အချိန်')),
+    'Gambier':
+        MetaZone('Gambier', long: TimeZoneName(standard: 'ဂမ်ဘီယာ အချိန်')),
+    'Georgia': MetaZone('Georgia',
+        long: TimeZoneName(
+            generic: 'ဂျော်ဂျီယာ အချိန်',
+            standard: 'ဂျော်ဂျီယာ စံတော်ချိန်',
+            daylight: 'ဂျော်ဂျီယာ နွေရာသီ အချိန်')),
+    'Gilbert_Islands': MetaZone('Gilbert_Islands',
+        long: TimeZoneName(standard: 'ဂီလ်ဘတ်ကျွန်းစု အချိန်')),
+    'GMT':
+        MetaZone('GMT', long: TimeZoneName(standard: 'ဂရင်းနစ် စံတော်ချိန်')),
+    'Greenland_Eastern': MetaZone('Greenland_Eastern',
+        long: TimeZoneName(
+            generic: 'အရှေ့ဂရင်းလန်း အချိန်',
+            standard: 'အရှေ့ဂရင်းလန်း စံတော်ချိန်',
+            daylight: 'အရှေ့ဂရင်းလန် နွေရာသီ စံတော်ချိန်')),
+    'Greenland_Western': MetaZone('Greenland_Western',
+        long: TimeZoneName(
+            generic: 'အနောက် ဂရင်းလန်း အချိန်',
+            standard: 'အနောက် ဂရင်းလန်း စံတော်ချိန်',
+            daylight: 'အနောက် ဂရင်းလန် နွေရာသီ စံတော်ချိန်')),
+    'Gulf': MetaZone('Gulf', long: TimeZoneName(standard: 'ပင်လယ်ကွေ့ အချိန်')),
+    'Guyana':
+        MetaZone('Guyana', long: TimeZoneName(standard: 'ဂိုင်ယာနာ အချိန်')),
+    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
+        long: TimeZoneName(
+            generic: 'ဟာဝိုင်ယီ အယ်လူးရှန်း အချိန်',
+            standard: 'ဟာဝိုင်ယီ အယ်လူးရှန်း စံတော်ချိန်',
+            daylight: 'ဟာဝိုင်ယီ အယ်လူးရှန်း နွေရာသီ စံတော်ချိန်')),
+    'Hong_Kong': MetaZone('Hong_Kong',
+        long: TimeZoneName(
+            generic: 'ဟောင်ကောင် အချိန်',
+            standard: 'ဟောင်ကောင် စံတော်ချိန်',
+            daylight: 'ဟောင်ကောင် နွေရာသီ အချိန်')),
+    'Hovd': MetaZone('Hovd',
+        long: TimeZoneName(
+            generic: 'ဟိုးဗ် အချိန်',
+            standard: 'ဟိုးဗ် စံတော်ချိန်',
+            daylight: 'ဟိုးဗ် နွေရာသီ အချိန်')),
+    'India':
+        MetaZone('India', long: TimeZoneName(standard: 'အိန္ဒိယ စံတော်ချိန်')),
+    'Indian_Ocean': MetaZone('Indian_Ocean',
+        long: TimeZoneName(standard: 'အိန္ဒိယသမုဒ္ဒရာ အချိန်')),
+    'Indochina': MetaZone('Indochina',
+        long: TimeZoneName(standard: 'အင်ဒိုချိုင်းနား အချိန်')),
+    'Indonesia_Central': MetaZone('Indonesia_Central',
+        long: TimeZoneName(standard: 'အလယ်ပိုင်း အင်ဒိုနီးရှား အချိန်')),
+    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
+        long: TimeZoneName(standard: 'အရှေ့ပိုင်း အင်ဒိုနီးရှား အချိန်')),
+    'Indonesia_Western': MetaZone('Indonesia_Western',
+        long: TimeZoneName(standard: 'အနောက်ပိုင်း အင်ဒိုနီးရှား အချိန်')),
+    'Iran': MetaZone('Iran',
+        long: TimeZoneName(
+            generic: 'အီရန် အချိန်',
+            standard: 'အီရန် စံတော်ချိန်',
+            daylight: 'အီရန် နွေရာသီ အချိန်')),
+    'Irkutsk': MetaZone('Irkutsk',
+        long: TimeZoneName(
+            generic: 'အီရူခူတ် အချိန်',
+            standard: 'အီရူခူတ် စံတော်ချိန်',
+            daylight: 'အီရူခူတ် နွေရာသီ အချိန်')),
+    'Israel': MetaZone('Israel',
+        long: TimeZoneName(
+            generic: 'အစ္စရေး အချိန်',
+            standard: 'အစ္စရေး စံတော်ချိန်',
+            daylight: 'အစ္စရေး နွေရာသီ အချိန်')),
+    'Japan': MetaZone('Japan',
+        long: TimeZoneName(
+            generic: 'ဂျပန် အချိန်',
+            standard: 'ဂျပန် စံတော်ချိန်',
+            daylight: 'ဂျပန် နွေရာသီ အချိန်')),
+    'Kazakhstan': MetaZone('Kazakhstan',
+        long: TimeZoneName(standard: 'ကာဇက်စတန် အချိန်')),
+    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
+        long: TimeZoneName(standard: 'အရှေ့ကာဇက်စတန် အချိန်')),
+    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
+        long: TimeZoneName(standard: 'အနောက်ကာဇက်စတန် အချိန်')),
+    'Korea': MetaZone('Korea',
+        long: TimeZoneName(
+            generic: 'ကိုရီးယား အချိန်',
+            standard: 'ကိုရီးယား စံတော်ချိန်',
+            daylight: 'ကိုရီးယား နွေရာသီ အချိန်')),
+    'Kosrae':
+        MetaZone('Kosrae', long: TimeZoneName(standard: 'ခိုစ်ရိုင် အချိန်')),
+    'Krasnoyarsk': MetaZone('Krasnoyarsk',
+        long: TimeZoneName(
+            generic: 'ခရာ့စ်နိုရာစ် အချိန်',
+            standard: 'ခရာ့စ်နိုရာစ် စံတော်ချိန်',
+            daylight: 'ခရာ့စ်နိုရာစ် နွေရာသီ အချိန်')),
+    'Kyrgystan': MetaZone('Kyrgystan',
+        long: TimeZoneName(standard: 'ကာဂျစ္စတန် အချိန်')),
+    'Lanka':
+        MetaZone('Lanka', long: TimeZoneName(standard: 'သီရိလင်္ကာ အချိန်')),
+    'Line_Islands': MetaZone('Line_Islands',
+        long: TimeZoneName(standard: 'လိုင်းကျွန်းစု အချိန်')),
+    'Lord_Howe': MetaZone('Lord_Howe',
+        long: TimeZoneName(
+            generic: 'လော့ဒ်ဟောင် အချိန်',
+            standard: 'လော့ဒ်ဟောင် စံတော်ချိန်',
+            daylight: 'လော့ဒ်ဟောင် နွေရာသီ အချိန်')),
+    'Macau': MetaZone('Macau',
+        long: TimeZoneName(
+            generic: 'မကာအို အချိန်',
+            standard: 'မကာအို စံတော်ချိန်',
+            daylight: 'မကာအို နွေရာသီ အချိန်')),
+    'Magadan': MetaZone('Magadan',
+        long: TimeZoneName(
+            generic: 'မာဂါဒန်း အချိန်',
+            standard: 'မာဂါဒန်း စံတော်ချိန်',
+            daylight: 'မာဂါဒန်း နွေရာသီ အချိန်')),
+    'Malaysia':
+        MetaZone('Malaysia', long: TimeZoneName(standard: 'မလေးရှား အချိန်')),
+    'Maldives':
+        MetaZone('Maldives', long: TimeZoneName(standard: 'မော်လဒိုက် အချိန်')),
+    'Marquesas': MetaZone('Marquesas',
+        long: TimeZoneName(standard: 'မာခေးအပ်စ် အချိန်')),
+    'Marshall_Islands': MetaZone('Marshall_Islands',
+        long: TimeZoneName(standard: 'မာရှယ်ကျွန်းစု အချိန်')),
+    'Mauritius': MetaZone('Mauritius',
+        long: TimeZoneName(
+            generic: 'မောရစ်ရှ အချိန်',
+            standard: 'မောရစ်ရှ စံတော်ချိန်',
+            daylight: 'မောရစ်ရှ နွေရာသီ အချိန်')),
+    'Mawson':
+        MetaZone('Mawson', long: TimeZoneName(standard: 'မော်စွန် အချိန်')),
+    'Mexico_Pacific': MetaZone('Mexico_Pacific',
+        long: TimeZoneName(
+            generic: 'မက္ကဆီကန် ပစိဖိတ် အချိန်',
+            standard: 'မက္ကဆီကန် ပစိဖိတ် စံတော်ချိန်',
+            daylight: 'မက္ကစီကန် ပစိဖိတ် နွေရာသီ စံတော်ချိန်')),
+    'Mongolia': MetaZone('Mongolia',
+        long: TimeZoneName(
+            generic: 'ဥလန်ဘာတော အချိန်',
+            standard: 'ဥလန်ဘာတော စံတော်ချိန်',
+            daylight: 'ဥလန်ဘာတော နွေရာသီ အချိန်')),
+    'Moscow': MetaZone('Moscow',
+        long: TimeZoneName(
+            generic: 'မော်စကို အချိန်',
+            standard: 'မော်စကို စံတော်ချိန်',
+            daylight: 'မော်စကို နွေရာသီ အချိန်')),
+    'Myanmar':
+        MetaZone('Myanmar', long: TimeZoneName(standard: 'မြန်မာ အချိန်')),
+    'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'နာဥူရူ အချိန်')),
+    'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'နီပေါ အချိန်')),
+    'New_Caledonia': MetaZone('New_Caledonia',
+        long: TimeZoneName(
+            generic: 'နယူးကယ်လီဒိုးနီးယား အချိန်',
+            standard: 'နယူးကာလီဒိုးနီးယား စံတော်ချိန်',
+            daylight: 'နယူးကာလီဒိုးနီးယား နွေရာသီ အချိန်')),
+    'New_Zealand': MetaZone('New_Zealand',
+        long: TimeZoneName(
+            generic: 'နယူးဇီလန် အချိန်',
+            standard: 'နယူးဇီလန် စံတော်ချိန်',
+            daylight: 'နယူးဇီလန် နွေရာသီ အချိန်')),
+    'Newfoundland': MetaZone('Newfoundland',
+        long: TimeZoneName(
+            generic: 'နယူးဖောင်လန် အချိန်',
+            standard: 'နယူးဖောင်လန် စံတော်ချိန်',
+            daylight: 'နယူးဖောင်လန် နွေရာသီ စံတော်ချိန်')),
+    'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'နီဥူအေ အချိန်')),
+    'Norfolk': MetaZone('Norfolk',
+        long: TimeZoneName(
+            generic: 'နောဖော့ခ်ကျွန်း အချိန်',
+            standard: 'နောဖော့ခ်ကျွန်း စံတော်ချိန်',
+            daylight: 'နောဖော့ခ်ကျွန်း နွေရာသီ စံတော်ချိန်')),
+    'Noronha': MetaZone('Noronha',
+        long: TimeZoneName(
+            generic: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ အချိန်',
+            standard: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ စံတော်ချိန်',
+            daylight: 'ဖာနန်ဒိုးဒီနိုးရိုးညာ နွေရာသီ အချိန်')),
+    'Novosibirsk': MetaZone('Novosibirsk',
+        long: TimeZoneName(
+            generic: 'နိုဗိုစဲဘီအဲယ်စ် အချိန်',
+            standard: 'နိုဗိုစဲဘီအဲယ်စ် စံတော်ချိန်',
+            daylight: 'နိုဗိုစဲဘီအဲယ်စ် နွေရာသီ အချိန်')),
+    'Omsk': MetaZone('Omsk',
+        long: TimeZoneName(
+            generic: 'အွမ်းစ်ခ် အချိန်',
+            standard: 'အွမ်းစ်ခ် စံတော်ချိန်',
+            daylight: 'အွမ်းစ်ခ် နွေရာသီ အချိန်')),
+    'Pakistan': MetaZone('Pakistan',
+        long: TimeZoneName(
+            generic: 'ပါကစ္စတန် အချိန်',
+            standard: 'ပါကစ္စတန် စံတော်ချိန်',
+            daylight: 'ပါကစ္စတန် နွေရာသီ အချိန်')),
+    'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'ပလာအို အချိန်')),
+    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
+        long: TimeZoneName(standard: 'ပါပူအာနယူးဂီနီ အချိန်')),
+    'Paraguay': MetaZone('Paraguay',
+        long: TimeZoneName(
+            generic: 'ပါရာဂွေး အချိန်',
+            standard: 'ပါရာဂွေး စံတော်ချိန်',
+            daylight: 'ပါရာဂွေး နွေရာသီ အချိန်')),
+    'Peru': MetaZone('Peru',
+        long: TimeZoneName(
+            generic: 'ပီရူး အချိန်',
+            standard: 'ပီရူး စံတော်ချိန်',
+            daylight: 'ပီရူး နွေရာသီ အချိန်')),
+    'Philippines': MetaZone('Philippines',
+        long: TimeZoneName(
+            generic: 'ဖိလစ်ပိုင် အချိန်',
+            standard: 'ဖိလစ်ပိုင် စံတော်ချိန်',
+            daylight: 'ဖိလစ်ပိုင် နွေရာသီ အချိန်')),
+    'Phoenix_Islands': MetaZone('Phoenix_Islands',
+        long: TimeZoneName(standard: 'ဖီးနစ်ကျွန်းစု အချိန်')),
+    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
+        long: TimeZoneName(
+            generic: 'စိန့်ပီအဲနှင့်မီခွီလွန်အချိန်',
+            standard: 'စိန့်ပီအဲနှင့်မီခွီလွန်စံတော်ချိန်',
+            daylight: 'စိန့်ပီအဲနှင့် မီခွီလွန် နွေရာသီ စံတော်ချိန်')),
+    'Pitcairn':
+        MetaZone('Pitcairn', long: TimeZoneName(standard: 'ပါတ်ကယ်ရင် အချိန်')),
+    'Ponape':
+        MetaZone('Ponape', long: TimeZoneName(standard: 'ဖိုနာဖဲအ် အချိန်')),
+    'Pyongyang':
+        MetaZone('Pyongyang', long: TimeZoneName(standard: 'ပြုံယန်း အချိန်')),
+    'Reunion':
+        MetaZone('Reunion', long: TimeZoneName(standard: 'ရီယူနီယံ အချိန်')),
+    'Rothera':
+        MetaZone('Rothera', long: TimeZoneName(standard: 'ရိုသီရာ အချိန်')),
+    'Sakhalin': MetaZone('Sakhalin',
+        long: TimeZoneName(
+            generic: 'ဆာခါလင် အချိန်',
+            standard: 'ဆာခါလင် စံတော်ချိန်',
+            daylight: 'ဆာခါလင် နွေရာသီ အချိန်')),
+    'Samoa': MetaZone('Samoa',
+        long: TimeZoneName(
+            generic: 'ဆမိုအာ အချိန်',
+            standard: 'ဆမိုအာ စံတော်ချိန်',
+            daylight: 'ဆမိုးအား နွေရာသီ အချိန်')),
+    'Seychelles':
+        MetaZone('Seychelles', long: TimeZoneName(standard: 'ဆေးရှဲ အချိန်')),
+    'Singapore':
+        MetaZone('Singapore', long: TimeZoneName(standard: 'စင်္ကာပူ အချိန်')),
+    'Solomon': MetaZone('Solomon',
+        long: TimeZoneName(standard: 'ဆော်လမွန်ကျွန်းစု အချိန်')),
+    'South_Georgia': MetaZone('South_Georgia',
+        long: TimeZoneName(standard: 'တောင်ဂျော်ဂျီယာ အချိန်')),
+    'Suriname':
+        MetaZone('Suriname', long: TimeZoneName(standard: 'စူးရီနာမ်အချိန်')),
+    'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'ရှိုဝါ အချိန်')),
+    'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'တဟီတီ အချိန်')),
+    'Taipei': MetaZone('Taipei',
+        long: TimeZoneName(
+            generic: 'ထိုင်ပေ အချိန်',
+            standard: 'ထိုင်ပေ စံတော်ချိန်',
+            daylight: 'ထိုင်ပေ နွေရာသီ အချိန်')),
+    'Tajikistan': MetaZone('Tajikistan',
+        long: TimeZoneName(standard: 'တာဂျစ်ကစ္စတန် အချိန်')),
+    'Tokelau':
+        MetaZone('Tokelau', long: TimeZoneName(standard: 'တိုကီလာဥ အချိန်')),
+    'Tonga': MetaZone('Tonga',
+        long: TimeZoneName(
+            generic: 'တွန်ဂါ အချိန်',
+            standard: 'တွန်ဂါ စံတော်ချိန်',
+            daylight: 'တွန်ဂါ နွေရာသီ အချိန်')),
+    'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'ချုခ် အချိန်')),
+    'Turkmenistan': MetaZone('Turkmenistan',
+        long: TimeZoneName(
+            generic: 'တာ့ခ်မင်နစ္စတန် အချိန်',
+            standard: 'တာ့ခ်မင်နစ္စတန် စံတော်ချိန်',
+            daylight: 'တာ့ခ်မင်နစ္စတန် နွေရာသီ အချိန်')),
+    'Tuvalu':
+        MetaZone('Tuvalu', long: TimeZoneName(standard: 'တူဗားလူ အချိန်')),
+    'Uruguay': MetaZone('Uruguay',
+        long: TimeZoneName(
+            generic: 'ဥရုဂွေး အချိန်',
+            standard: 'ဥရုဂွေး စံတော်ချိန်',
+            daylight: 'ဥရုဂွေး နွေရာသီ အချိန်')),
+    'Uzbekistan': MetaZone('Uzbekistan',
+        long: TimeZoneName(
+            generic: 'ဥဇဘက်ကစ္စတန် အချိန်',
+            standard: 'ဥဇဘက်ကစ္စတန် စံတော်ချိန်',
+            daylight: 'ဥဇဘက်ကစ္စတန် နွေရာသီ အချိန်')),
+    'Vanuatu': MetaZone('Vanuatu',
+        long: TimeZoneName(
+            generic: 'ဗနွားတူ အချိန်',
+            standard: 'ဗနွားတူ စံတော်ချိန်',
+            daylight: 'ဗနွားတူ နွေရာသီ အချိန်')),
+    'Venezuela': MetaZone('Venezuela',
+        long: TimeZoneName(standard: 'ဗင်နီဇွဲလား အချိန်')),
+    'Vladivostok': MetaZone('Vladivostok',
+        long: TimeZoneName(
+            generic: 'ဗလာဒီဗော့စတော့ခ် အချိန်',
+            standard: 'ဗလာဒီဗော့စတော့ခ် စံတော်ချိန်',
+            daylight: 'ဗလာဒီဗော့စတော့ခ် နွေရာသီ အချိန်')),
+    'Volgograd': MetaZone('Volgograd',
+        long: TimeZoneName(
+            generic: 'ဗိုလ်ဂိုဂရက် အချိန်',
+            standard: 'ဗိုလ်ဂိုဂရက် စံတော်ချိန်',
+            daylight: 'ဗိုဂိုဂရက် နွေရာသီ အချိန်')),
+    'Vostok':
+        MetaZone('Vostok', long: TimeZoneName(standard: 'ဗိုစ်တိုခ် အချိန်')),
+    'Wake':
+        MetaZone('Wake', long: TimeZoneName(standard: 'ဝိတ်ခ်ကျွန်း အချိန်')),
+    'Wallis': MetaZone('Wallis',
+        long: TimeZoneName(standard: 'ဝေါလီစ်နှင့် ဖူကျူနာ အချိန်')),
+    'Yakutsk': MetaZone('Yakutsk',
+        long: TimeZoneName(
+            generic: 'ယူခူးတ်စ် အချိန်',
+            standard: 'ယူခူးတ်စ် စံတော်ချိန်',
+            daylight: 'ယူခူးတ်စ် နွေရာသီ အချိန်')),
+    'Yekaterinburg': MetaZone('Yekaterinburg',
+        long: TimeZoneName(
+            generic: 'ရယ်ခါးတီရင်ဘားခ် အချိန်',
+            standard: 'ရယ်ခါးတီရင်ဘားခ် စံတော်ချိန်',
+            daylight: 'ရယ်ခါးတီရင်ဘာခ် နွေရာသီ အချိန်')),
+    'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'ယူကွန်း အချိန်')),
+  };
+}
+
+class LocaleDisplayNameMy extends LocaleDisplayName {
+  const LocaleDisplayNameMy._(super.cld)
+      : super(
+            localePattern: '{0} ({1})',
+            localeSeparator: '{0}/ {1}',
+            localeKeyTypePattern: '{0}- {1}',
+            codePatternLanguage: 'ဘာသာစကား - {0}',
+            codePatternScript: 'စာ - {0}',
+            codePatternTerritory: 'နယ်ပယ်ဒေသ - {0}');
+
+  @override
+  final keyNames = const {
+    'ca': 'ပြက္ခဒိန်',
+    'cf': 'ငွေရေတွက်ပုံစနစ်',
+    'co': 'အစဉ်လိုက်စီရန်',
+    'cu': 'ငွေကြေး',
+    'hc': 'နာရီစက်ဝန်း (၁၂ နှင့် ၂၄)',
+    'lb': 'စာပိုဒ်ခွဲပုံစံ',
+    'ms': 'တိုင်းတာရေးစနစ်',
+    'nu': 'ကိန်းဂဏန်း',
+  };
+
+  @override
+  final valueNames = const {
+    'ca': {
+      'buddhist': 'ဗုဒ္ဓ ပြက္ခဒိန်',
+      'chinese': 'တရုတ် ပြက္ခဒိန်',
+      'coptic': 'ကို့ပ်တစ် ပြက္ခဒိန်',
+      'dangi': 'ဒန်းဂိ ပြက္ခဒိန်',
+      'ethiopic': 'အီသီယိုးပီးယား ပြက္ခဒိန်',
+      'ethioaa': 'အီသီယိုပစ်ခ် အာမဲတဲ အာလင်မ် ပြက္ခဒိန်',
+      'gregory': 'နိုင်ငံတကာသုံး ပြက္ခဒိန်',
+      'hebrew': 'ဟီဘရူး ပြက္ခဒိန်',
+      'indian': 'အိန္ဒြိယ အမျိုးသား ပြက္ခဒိန်',
+      'islamic': 'အစ္စလာမ် ပြက္ခဒိန်',
+      'islamic-civil': 'အစ္စလာမ်မစ် ပြက္ခဒိန်',
+      'islamic-umalqura': 'အယ်လ်ကူရာ အစ္စလာမ်မစ် ပြက္ခဒိန်',
+      'iso8601': 'ISO-8601 ပြက္ခဒိန်',
+      'japanese': 'ဂျပန် ပြက္ခဒိန်',
+      'persian': 'ပါရှား ပြက္ခဒိန်',
+      'roc': 'မင်ဂုအို ပြက္ခဒိန်',
+    },
+    'cf': {
+      'account': 'စာရင်းကိုင်သုံး ငွေရေတွက်ပုံစနစ်',
+      'standard': 'ပုံမှန် ငွေရေတွက်ပုံစနစ်',
+    },
+    'co': {
+      'ducet': 'အစဉ်လိုက်စီထားသော ယူနီကုတ်',
+      'phonebk': 'ဖုန်းစာအုပ် အစီအစဉ်',
+      'search': 'ယေဘုယျရှာခြင်း',
+      'standard': 'ပုံမှန်စီထားသော',
+    },
+    'hc': {
+      'h11': '၁၂ နာရီ စနစ် (၀–၁၁)',
+      'h12': '၁၂ နာရီစနစ် (၁–၁၂)',
+      'h23': '၂၄ နာရီ စနစ် (၀–၂၃)',
+      'h24': '၂၄ နာရီ စနစ်(၁–၂၄)',
+    },
+    'lb': {
+      'loose': 'ကန့်သတ်မထားသော စာပိုဒ်ခွဲပုံစံ',
+      'normal': 'ပုံမှန်စာပိုဒ်ခွဲပုံစံ',
+      'strict': 'ကန့်သတ်ထားသော စာပိုဒ်ခွဲပုံစံ',
+    },
+    'ms': {
+      'metric': 'မက်ထရစ်စနစ်',
+      'uksystem': 'ဗြိတိသျှတိုင်းတာစနစ်',
+      'ussystem': 'အမေရိကန်တိုင်းတာစနစ်',
+    },
+    'nu': {
+      'arab': 'အာရပ် ဂဏန်းခြေ',
+      'arabext': 'တိုးချဲ့အာရပ် ဂဏန်းခြေ',
+      'armn': 'အာမေးနီးယား ဂဏန်းခြေ',
+      'armnlow': 'အာမေးနီးယား ဂဏန်းခြေ စာလုံးသေး',
+      'beng': 'ဘင်္ဂါလီ ဂဏန်းခြေ',
+      'cakm': 'ချာ့ခ်မာ ဂဏန်းခြေ',
+      'deva': 'ဒီဗာနာဂရီ ဂဏန်းခြေ',
+      'ethi': 'အီသီယိုပီးယား ဂဏန်းခြေ',
+      'fullwide': 'ဗြက်ပြည့် ဂဏန်းခြေ',
+      'geor': 'နိုင်ငံတကာသုံးဂဏန်းခြေ',
+      'grek': 'ဂရိ ဂဏန်းခြေ',
+      'greklow': 'ဂရိ ဂဏန်းခြေ စာလုံးသေး',
+      'gujr': 'ဂုဂျာရတီ ဂဏန်းခြေ',
+      'guru': 'ဂူမူခီ ဂဏန်းခြေ',
+      'hanidec': 'တရုတ် ဆယ်လီစနစ် ဂဏန်းခြေ',
+      'hans': 'ရိုးရှင်း တရုတ် ဂဏန်းခြေ',
+      'hansfin': 'ရိုးရှင်း တရုတ် ဘဏ္ဍာရေးသုံး ဂဏန်းခြေ',
+      'hant': 'ရိုးရာ တရုတ် ဂဏန်းခြေ',
+      'hantfin': 'ရိုးရာ တရုတ် ဘဏ္ဍာရေးသုံး ဂဏန်းခြေ',
+      'hebr': 'ဟီဘရူး ဂဏန်းခြေ',
+      'java': 'ဂျာဗား ဂဏန်းခြေ',
+      'jpan': 'ဂျပန် ဂဏန်းခြေ',
+      'jpanfin': 'ဂျပန် ဘဏ္ဍာရေးသုံး ဂဏန်းခြေ',
+      'khmr': 'ခမာ ဂဏန်းခြေ',
+      'knda': 'ခန္နဒါ ဂဏန်းခြေ',
+      'laoo': 'လာအို ဂဏန်းခြေ',
+      'latn': 'အနောက်တိုင်း ဂဏန်းခြေ',
+      'mlym': 'မလေယာလမ် ဂဏန်းခြေ',
+      'mtei': 'မီတဲမာယစ်ခ် ဂဏန်းခြေ',
+      'mymr': 'မြန်မာ ဂဏန်းခြေ',
+      'mymrshan': 'ရှမ်း ဂဏန်းခြေ',
+      'olck': 'အိုလ်ချီကီ ဂဏန်းခြေ',
+      'orya': 'ဩရီရာ ဂဏန်းခြေ',
+      'roman': 'ရောမ ဂဏန်းခြေ',
+      'romanlow': 'ရောမ ဂဏန်းခြေ စာလုံးသေး',
+      'taml': 'ရိုးရာ တမီးလ် ဂဏန်းခြေ',
+      'tamldec': 'တမီးလ် ဂဏန်းခြေ',
+      'telu': 'တလုဂု ဂဏန်းခြေ',
+      'thai': 'ထိုင်း ဂဏန်းခြေ',
+      'tibt': 'တိဘက် ဂဏန်းခြေ',
+      'vaii': 'ဗိုင်း ဂဏန်းခြေ',
+    },
+  };
 }

@@ -1,12 +1,17 @@
+import 'dart:async';
 import 'dart:io';
-
+import 'dart:isolate';
 import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
-
+import 'package:pool/pool.dart';
+import 'code_style/fix_import_order.dart';
+import 'model/currency.dart';
 import 'model/date_fields.dart';
 import 'model/language.dart';
 import 'model/locale.dart';
+import 'model/locale_display_name.dart';
 import 'model/script.dart';
+import 'model/subdivision.dart';
 import 'model/territory.dart';
 import 'model/timezone.dart';
 import 'model/units.dart';
@@ -21,22 +26,37 @@ var supportedLocales = getSupportedLocales();
 
 final _formatter = DartFormatter();
 
-void main() {
+Future<void> main() async {
+  print('Generating common files');
+
   var dataDirectory = Directory('lib/src/data');
 
-  print('Generate common files');
-  File('lib/src/locale_data.dart')
-      .writeAsStringSync(_format(generateLocaleData()));
-  File('lib/src/common_locale_data.dart')
-      .writeAsStringSync(_format(generateCommon()));
-  File('lib/src/units_model.dart')
-      .writeAsStringSync(_format(generateUnitsModel()));
-  File('lib/src/territories_model.dart')
-      .writeAsStringSync(_format(generateTerritoriesModel()));
-  File('lib/src/timezone_data.dart')
-      .writeAsStringSync(_format(generateTimeZoneData()));
   File('lib/common_locale_data_all.dart')
       .writeAsStringSync(_format(generateCommonAll()));
+
+  File('lib/src/common_locale_data.dart')
+      .writeAsStringSync(_format(generateCommon()));
+
+  File('lib/src/locale.data.dart')
+      .writeAsStringSync(_format(generateLocaleData()));
+  File('lib/src/territory.data.dart')
+      .writeAsStringSync(_format(generateTerritoryData()));
+  File('lib/src/timezone.data.dart')
+      .writeAsStringSync(_format(generateTimeZoneData()));
+
+  File('lib/src/units.model.dart')
+      .writeAsStringSync(_format(generateUnitsModel()));
+
+  File('lib/src/territories.model.dart').writeAsStringSync(
+      _format(updateTerritoriesModel('lib/src/territories.model.dart')));
+  File('lib/src/languages.model.dart').writeAsStringSync(
+      _format(updateLanguagesModel('lib/src/languages.model.dart')));
+  File('lib/src/scripts.model.dart').writeAsStringSync(
+      _format(updateScriptsModel('lib/src/scripts.model.dart')));
+  File('lib/src/variants.model.dart').writeAsStringSync(
+      _format(updateVariantsModel('lib/src/variants.model.dart')));
+  File('lib/src/currencies.model.dart').writeAsStringSync(
+      _format(updateCurrenciesModel('lib/src/currencies.model.dart')));
 
   if (dataDirectory.existsSync()) {
     dataDirectory.deleteSync(recursive: true);
@@ -45,87 +65,130 @@ void main() {
 
   for (var file in Directory('lib').listSync().whereType<File>().where((file) =>
       RegExp(r'[/\\][a-z]{2,3}(_[a-z0-9]+)*.dart$').hasMatch(file.path))) {
-    file.delete();
+    file.deleteSync();
   }
 
-  for (var locale in supportedLocales) {
-    print('Generate file for $locale');
+  // Much of the generation is IO, so we can have multiple isolates per processor (5 is an empirical optimum)
+  var pool = Pool(Platform.numberOfProcessors * 5);
 
-    var localeUpperCamel = locale.toUpperCamelCase();
+  if (true) {
+    await Future.wait([
+      for (var locale in supportedLocales)
+        pool.withResource(() => Isolate.run(() => generateLocale(locale)))
+    ]);
+    // ignore: dead_code
+  } else {
+    print('');
+    print('Running in debug mode!');
+    print('');
+    for (var locale in supportedLocales) {
+      await generateLocale(locale);
+    }
+  }
 
-    var buffer = StringBuffer();
-
-    buffer.writeln('''
-import 'package:collection/collection.dart';
-import '../../common_locale_data.dart';
-
-const _locale = '$locale';
-
-/// Translations of [CommonLocaleData]
-///
-/// @nodoc
-class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
-  @override
-  String get locale => _locale;
-  
-  const CommonLocaleData$localeUpperCamel();
-
-  static final _dateFields = DateFields$localeUpperCamel._();
-  @override
-  DateFields get date => _dateFields;
-  
-  static final _languages = Languages$localeUpperCamel._();
-  @override
-  Languages get languages => _languages;
-  
-  static final _scripts = Scripts$localeUpperCamel._();
-  @override
-  Scripts get scripts => _scripts;
-  
-  static final _variants = Variants$localeUpperCamel._();
-  @override
-  Variants get variants => _variants;
-  
-  static final _units = Units$localeUpperCamel._();
-  @override
-  Units get units => _units;
-  
-  static final _territories = Territories$localeUpperCamel._();
-  @override
-  Territories get territories => _territories;
-  
-  static final _timeZones = TimeZones$localeUpperCamel._(_territories);
-  @override
-  TimeZones get timeZones => _timeZones;
+  print('');
+  print('All files generated');
 }
-''');
 
-    generateLanguages(locale, buffer);
-    generateScripts(locale, buffer);
-    generateVariants(locale, buffer);
-    generateUnits(locale, buffer);
-    generateDateFields(locale, buffer);
-    generateTerritories(locale, buffer);
-    generateTimeZones(locale, buffer);
+Future<void> generateLocale(String locale) async {
+  print('Generating file for: $locale');
 
-    var formatted = _format(buffer.toString());
+  var localeUpperCamel = locale.toUpperCamelCase();
+  var localeSnakeCase = locale.toSnakeCase();
 
-    File('lib/src/data/${locale.toSnakeCase()}.dart')
-        .writeAsStringSync(formatted);
+  var buffer = StringBuffer();
+  buffer.writeln('''
+  // GENERATED CODE - DO NOT MODIFY BY HAND
+  /// @nodoc
+  library;
+  
+  export 'common_locale_data.dart';
+  export 'src/data/$localeSnakeCase.dart' show CommonLocaleData${locale.toUpperCamelCase()};
+  ''');
 
-    buffer = StringBuffer();
+  unawaited(File('lib/$localeSnakeCase.dart')
+      .writeAsString(_format(buffer.toString())));
 
-    buffer.writeln('''
-/// @nodoc
-library;
+  buffer = StringBuffer();
 
-export 'common_locale_data.dart';
-export 'src/data/${locale.toSnakeCase()}.dart' show CommonLocaleData${locale.toUpperCamelCase()};
-''');
+  buffer.writeln('''
+  import '../../common_locale_data.dart';
+  
+  const _locale = '$locale';
+  const _cld = CommonLocaleData$localeUpperCamel._();
+  
+  /// Translations of [CommonLocaleData]
+  ///
+  /// @nodoc
+  class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
+    @override
+    String get locale => _locale;
+    
+    const CommonLocaleData$localeUpperCamel._();
+    
+    factory CommonLocaleData$localeUpperCamel() => _cld;
 
-    File('lib/${locale.toSnakeCase()}.dart')
-        .writeAsStringSync(_format(buffer.toString()));
+    @override
+    CommonLocaleData get instance => _cld;
+  
+    static const CommonLocaleData staticInstance = _cld;
+
+    static final _units = Units$localeUpperCamel._(_cld);
+    @override
+    Units get units => _units;
+    
+    static final _dateFields = DateFields$localeUpperCamel._(_cld);
+    @override
+    DateFields get date => _dateFields;
+    
+    static final _languages = Languages$localeUpperCamel._(_cld);
+    @override
+    Languages get languages => _languages;
+    
+    static final _scripts = Scripts$localeUpperCamel._(_cld);
+    @override
+    Scripts get scripts => _scripts;
+    
+    static final _territories = Territories$localeUpperCamel._(_cld);
+    @override
+    Territories get territories => _territories;
+    
+    static final _variants = Variants$localeUpperCamel._(_cld);
+    @override
+    Variants get variants => _variants;
+    
+    static final _subdivisions = Subdivisions$localeUpperCamel._(_cld);
+    @override
+    Subdivisions get subdivisions => _subdivisions;
+    
+    static final _currencies = Currencies$localeUpperCamel._(_cld);
+    @override
+    Currencies get currencies => _currencies;
+    
+    static final _timeZones = TimeZones$localeUpperCamel._(_cld);
+    @override
+    TimeZones get timeZones => _timeZones;
+  
+    static final _localeDisplayName = LocaleDisplayName$localeUpperCamel._(_cld);
+    @override
+    LocaleDisplayName get localeDisplayName => _localeDisplayName;
   }
+  ''');
+
+  generateUnits(locale, buffer);
+  generateDateFields(locale, buffer);
+  generateLanguages(locale, buffer);
+  generateScripts(locale, buffer);
+  generateTerritories(locale, buffer);
+  generateVariants(locale, buffer);
+  generateSubdivisions(locale, buffer);
+  generateCurrencies(locale, buffer);
+  generateTimeZones(locale, buffer);
+  generateLocaleDisplayName(locale, buffer);
+
+  await File('lib/src/data/$localeSnakeCase.dart')
+      .writeAsString(_format(buffer.toString()));
+  return;
 }
 
 String generateCommon() {
@@ -133,11 +196,16 @@ String generateCommon() {
 
   var code = StringBuffer();
   code.writeln('''
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
 import 'date_fields.dart';
 import 'languages.dart';
 import 'scripts.dart';
 import 'variants.dart';
+import 'currencies.dart';
 import 'territories.dart';
+import 'subdivisions.dart';
+import 'locale_display_name.dart';
 import 'units.dart';
 import 'timezones.dart';
 
@@ -146,6 +214,9 @@ abstract class CommonLocaleData {
   /// Locale code.
   String get locale;
   
+  /// Locale instance.
+  CommonLocaleData get instance;
+
   /// Version of the CLDR data.
   static const String cldrVersion=${escapeDartString(versions.cldr)};
   
@@ -173,14 +244,23 @@ abstract class CommonLocaleData {
   /// Localized variant names.
   Variants get variants;
 
+  /// Localized currency names.
+  Currencies get currencies;
+
   /// Localized measurement units.
   Units get units;
 
   /// Localized territory names.
   Territories get territories;
 
+  /// Localized subdivision names.
+  Subdivisions get subdivisions;
+
   /// Localized timezone names.
   TimeZones get timeZones;
+
+  /// Localized locale display name fields.
+  LocaleDisplayName get localeDisplayName;
 ''');
 
   code.writeln('''
@@ -201,6 +281,8 @@ abstract class CommonLocaleData {
 String generateCommonAll() {
   var code = StringBuffer();
   code.writeln('''
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
 /// Library to access ALL translated common data.
 ///
 /// Individual locales can be used via the [CommonLocaleDataAll] extension.
@@ -237,7 +319,7 @@ extension CommonLocaleDataAll on CommonLocaleData {
     }
     code.writeln('''
   /// Access the [CommonLocaleData] for $locale
-  static const $localeConstantName = CommonLocaleData${locale.toUpperCamelCase()}();
+  static const $localeConstantName = CommonLocaleData${locale.toUpperCamelCase()}.staticInstance;
 ''');
   }
 
@@ -268,7 +350,9 @@ extension CommonLocaleDataAll on CommonLocaleData {
 
 String _format(String code) {
   try {
-    return _formatter.format(code);
+    return reorderImports(_formatter.format(code))
+        .replaceAll('\r\n', '\n')
+        .replaceAll('\n', Platform.lineTerminator);
   } catch (e) {
     print('Fail to format code.\n$e');
     return code;

@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
-
-import '../locale_data.dart';
+import '../locale.data.dart';
+import '../timezone.data.dart';
 import 'base_language_id.dart';
 import 'locale_id.dart';
 
@@ -258,34 +258,42 @@ List<MapEntry<String, String?>> _canonicalizeFields(
     Iterable<MapEntry<String, String?>> entries, String extension,
     {bool removeTrue = false}) {
   final map = <String, String?>{};
-  for (var entry in entries) {
-    var key = (LocaleMapping.extensionKeys[extension]?.keyAliases[entry.key] ??
-            entry.key)
-        .toLowerCase();
+  var extensionKeys = LocaleData.extensionKeys[extension];
 
-    var value = (LocaleMapping.extensionKeys[extension]?.keys[key]
-                ?.valueAliases[entry.value] ??
-            entry.value)
-        ?.toLowerCase();
+  for (var entry in entries) {
+    var key = (extensionKeys?.keyAliases[entry.key] ?? entry.key).toLowerCase();
+
+    String? value;
+    if (extensionKeys?.keys[key]?.keyType == KeyType.timeZone) {
+      value = (TimeZoneData.zoneToShort[
+                  TimeZoneData.aliasToZone[entry.value] ?? entry.value] ??
+              entry.value)
+          ?.toLowerCase();
+    } else {
+      value =
+          (extensionKeys?.keys[key]?.valueAliases[entry.value] ?? entry.value)
+              ?.toLowerCase();
+    }
     value = (value == 'on' || value == 'yes' || value == 'true')
         ? (removeTrue ? null : 'true')
         : value;
 
+    // check if key-value pair is well formed (use a- as dummy extension)
     if (value == null ||
         _regExpExtension.matchAsPrefix('a-$key-$value')?.end ==
             'a-$key-$value'.length ||
         _regExpPrivateUse.matchAsPrefix('x-$key-$value')?.end ==
-            'a-$key-$value'.length) {
+            'x-$key-$value'.length) {
       map.putIfAbsent(key, () => value);
     }
   }
 
   return map.entries.map((e) {
     var subdivision = e.value;
-    var keyType = LocaleMapping.extensionKeys[extension]?.keys[e.key]?.keyType;
+    var keyType = extensionKeys?.keys[e.key]?.keyType;
     if ((keyType == KeyType.subdivisionCode || keyType == KeyType.rgKeyValue) &&
         subdivision != null) {
-      var alias = LocaleMapping.subDivisionAlias[subdivision];
+      var alias = LocaleData.subDivisionAlias[subdivision];
       if (alias != null && alias.length == 2) {
         alias += 'zzzz';
       }

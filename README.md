@@ -1,26 +1,52 @@
 # common_locale_data
 
 This packages provides a type-safe and tree-shakable way to access translated common data.  
-The translations are extracted from the Common Locale Data
-Repository ([CLDR](https://cldr.unicode.org/)).
+The translations are extracted from the Common Locale Data Repository ([CLDR](https://cldr.unicode.org/)).
+
+It also includes helper function to use this data to format units, timezone names and locale names.
 
 ## Available data
 
-- Translations for measurement units in full and abbreviated forms including singular/plural
-  modifications.
-- Translations for language names.
-- Translations for territory and country names.
-- Translations for currency names, including singular/plural modifications.
-- Translations for weekday, month, era, period of day, in full and abbreviated forms.
-- Translations for time zones and example cities (or similar) for time zones.
-- Translations for calendar fields.
-- Translations for relative time fields.
+Translations for:
+  - measurement units in full and abbreviated forms including singular/plural
+    modifications
+  - language names
+  - script, variant and unicode extension names
+  - territory and country names
+  - country subdivision names
+  - currency names, including singular/plural modifications
+  - weekday, month, era, period of day, in full and abbreviated forms
+  - calendar fields
+  - relative time fields
+  - time zones and example cities (or similar) for time zones
+
+## Functionality
+
+Translations can be accessed via static member functions or dynamic maps.
+
+Formatting functions are available for: units, currencies, relative time fields, timezones and 
+locale identifiers.
+
+Locale identifiers support parsing, canonicalization, adding and removing of likely subtags and
+formatting in various forms.
 
 ## Tree-shaking
 
 All the data and translations are stored as literal strings in the code. The APIs are designed to be
-tree-shakeable. The final application's binaries won't include the translations for languages you
-don't use.
+tree-shakeable (mechanism to remove unused data from final program file). The final application's
+binaries won't include the translations for languages you don't use also it won't include types of
+data not used.
+
+If you use locales individually (e.g. not stored in a collection), the tree-shaking will be
+optimal: only those data types of each locale are included that are actually used.
+
+If members are accessed via static access the compiler can also reduce to only those fields (e.g. 
+countries, currencies, languages) used. If dynamic access is used (via [] operator), then all fields
+are included.
+
+If you store locales in a collection and then dynamically choose a collection member (or iterate
+over the collection), the compiler cannot determine which locales are actually used, so it will
+include the data for all the locales in the collection and for all teh data types used.
 
 ## Compilation
 
@@ -30,10 +56,12 @@ For example for English: ```import 'package:common_locale_data/en.dart';``` or f
 French: ```import 'package:common_locale_data/fr.dart';```
 
 You can import all locales via [CommonLocaleDataAll]. However this will increase compilation time
-significantly (10x over including just a couple of locales). As long as you don't use
-the [CommonLocaleDataAll.locales] member to dynamically get locales the compiled file size is not
-affected. If you do use the [CommonLocaleDataAll.locales] member, all locales will be compiled in and the files size
-will become several 10's of MBs.
+significantly (10x over including just a couple of locales).
+
+As long as you don't use the [CommonLocaleDataAll.locales] member to dynamically get locales the
+compiled file size is not affected. If you do use the [CommonLocaleDataAll.locales] member, all
+locales will be compiled in and the files size will become several 10's of MBs (depending on which
+types of data you use).
 
 ## Source
 
@@ -48,46 +76,76 @@ and https://github.com/unicode-org/icu.
 ## Example
 
 ```dart
-import 'package:common_locale_data/ar_eg.dart';
+// Import specific locales instead of common_locale_data_all.dart to save
+// significant compilation time.
+
+import 'package:common_locale_data/de.dart';
 import 'package:common_locale_data/en.dart';
 import 'package:common_locale_data/en_gb.dart';
+import 'package:common_locale_data/es.dart';
 import 'package:common_locale_data/fr.dart';
+import 'package:common_locale_data/zh_hans.dart';
+import 'package:intl/intl.dart';
 
 void main() {
-  // To preserve tree-shaking, you should explicitly choose the language your want
-  // The compiler will only retain the languages that are explicitly referenced in your program
-  // and discard all the others languages. It will make your deployed program smaller.
-
-  // If your app support several languages, dynamically choose the preferred language.
-  var desiredLocales = ['de', 'en-IR'];
-
-  var cld = LocaleMatcher.getBestCommonLocaleData(
-    desiredLocales,
-    [
-      CommonLocaleDataEnGB(),
-      CommonLocaleDataEn(),
-      CommonLocaleDataFr(),
-      CommonLocaleDataArEG()
-    ],
-  )!;
-
-  print('CLDR version: ${CommonLocaleData.cldrVersion}');
+  // Print basic version data for this package.
+  print(
+      'CLDR version: ${CommonLocaleData.cldrVersion} - ${CommonLocaleData.cldrVariant} ');
   print('Unicode version: ${CommonLocaleData.unicodeVersion}');
   print('ICU version: ${CommonLocaleData.icuVersion}');
   print('Timezone DB version: ${CommonLocaleData.tzdbVersion}');
 
+  // For optimal tree-shaking you should explicitly choose the language you want
+  // to use, e.g. `var cld = CommonLocaleDataEnGB()`.
+
+  // However in practise you often want to dynamically select the users
+  // preferred language from a set of supported languages.
+  // You can use e.g. Platform.localeName for this purpose or
+  // Intl.defaultLocale.
+
+  // For illustration purposes we fix the set of desiredLocales here:
+  var desiredLocales = ['nl', 'en-IR'];
+
+  // Arbitrarily chosen set of supported locales.
+  var supportedLocales = [
+    CommonLocaleDataDe(),
+    CommonLocaleDataEn(),
+    CommonLocaleDataEnGB(),
+    CommonLocaleDataEs(),
+    CommonLocaleDataFr(),
+    CommonLocaleDataZhHans(),
+  ];
+
+  // Get the best matching locale.
+  var cld =
+      LocaleMatcher.getBestCommonLocaleData(desiredLocales, supportedLocales)!;
+
+  // Print the current locale name.
   print('');
-  print('Current language: ${cld.locale} (${cld.languages[cld.locale]!.name})');
-  print('');
+  print(
+      'Current localeId: ${cld.locale}: ${cld.localeDisplayName.formatWithExtensions(LocaleId.parse(cld.locale))}');
 
   // Units
+  print('');
   print(cld.units.lengthMeter); // meters
+  print(cld.units.lengthMeter.long(3.5)); // 3 meters
   print(cld.units.lengthMeter.long(3)); // 3 meters
   print(cld.units.lengthMeter.long(1)); // 1 meter
 
-  print(cld.units.areaSquareMeter.long(3)); // 3 square meters
-  print(cld.units.areaSquareMeter.short(3)); // 3 m²
-  print(cld.units.areaSquareMeter.narrow(3)); // 3m²
+  print(cld.units.areaSquareMeter.long(3.5)); // 3 square meters
+  print(cld.units.areaSquareMeter.short(3.5)); // 3 m²
+  print(cld.units.areaSquareMeter.narrow(3.5)); // 3m²
+
+  // Units with different formats
+  print('');
+  print(cld.units.areaSquareMeter.short(3541.53));
+  print(cld.units.areaSquareMeter.short(3541.53,
+      numberFormat: NumberFormat.decimalPatternDigits(decimalDigits: 2)));
+
+  print(cld.units.areaSquareMeter
+      .short(3541.53, numberFormat: NumberFormat.compact()));
+  print(cld.units.areaSquareMeter
+      .short(3541.53, numberFormat: NumberFormat.compactLong()));
 
   // Date fields
   print('');
@@ -98,17 +156,60 @@ void main() {
 
   // Territories
   print('');
+  print(cld.territories.world); // world
   print(cld.territories.africa); // Africa
-  print(cld.territories.countries['US']); // United States
+  print(cld.territories.$019); // Americas
+  print(cld.territories.us); // South Africa
 
-  // Languages
+  // Territories with dynamic access: this will cause all territory data to be included in the binaries
+  print(cld.territories.territories['019']); // Americas
+  print(cld.territories.territories['US']); // United States
+
+  // Languages names
   print('');
+  print(cld.languages.en.name); // English
+  print(cld.languages.zhHans.name); // Simplified Chinese
+  print(cld.languages.und.name); // Undefined language
+
+  // Languages with dynamic access: this will cause all territory data to be included in the binaries
   print(cld.languages['en']!.name); // English
+
+  // Currencies
+  print('');
+  var currency = cld.currencies.usd;
+  print(currency.displayName);
+  print(currency.symbol);
+  print(currency.symbolNarrow);
+  print(currency.symbolVariant);
+
+  print(currency(1.51));
+  print(currency.short(1.51));
+  print(currency.narrow(1.51));
+  print(currency.variant(1.51));
+  print(currency.iso(1.51));
+  print(currency.hidden(1.51));
+
+  print(currency.full(0));
+  print(currency.full(0.51));
+  print(currency.full(1));
+  print(currency.full(1, decimalDigits: 1));
+  print(currency.full(1.51));
+  print(currency.full(2));
+  print(currency.full(2.51));
+  print(currency.full(3));
+  print(currency.full(10));
+
+  print(currency.short(1513));
+  print(currency.short(1513, compact: true));
+  print(currency.full(1513));
+  print(currency.full(1513, compact: true));
+
+  // Currencies with dynamic access: this will cause all territory data to be included in the binaries
+  print(cld.currencies['eur']!.displayName);
 
   // Timezones
   print('');
-  var zone =
-      cld.timeZones.get('America/Los_Angeles', dateTime: DateTime(2017))!;
+  var zone = cld.timeZones.get('europe/athens', dateTime: DateTime(2017))!;
 
   print('code: ${zone.code}');
   print('canonicalCode: ${zone.canonicalCode}');
@@ -116,33 +217,85 @@ void main() {
   print('shortCode: ${zone.short}');
   print('exemplarCity: ${zone.exemplarCity}');
   print('country: ${zone.country}');
+  print('metaZone code: ${zone.metaZone?.code}');
   print('isPrimaryOrSingle: ${zone.isPrimaryOrSingle}');
   print('dateRange: ${zone.dateRange}');
 
   // Different formats for timezone
   print('');
+  var otherCountry = 'US';
   for (var style in TimeZoneStyle.values) {
-    print(
-        '${style.name} in own: ${zone.format(style, Duration(hours: -7, minutes: 0))}');
-
+    // The offset is manually obtained, use the timezone package to obtain it
+    // for a given date/time.
+    var zoneNameOwn = zone.format(style, Duration(hours: 2, minutes: 0));
     // also depend on the current country
+    var zoneNameOther = zone.format(style, Duration(hours: 2, minutes: 0),
+        country: otherCountry);
     print(
-        '${style.name} in CA: ${zone.format(style, Duration(hours: -7, minutes: 0), country: 'CA')}');
+        '${style.name.padLeft(28)}: $zoneNameOwn${zoneNameOwn != zoneNameOther ? " (in $otherCountry: $zoneNameOther)".padLeft(50) : ""}');
   }
 
   // Demonstrate different timezone names at different times
   print('');
-  print(cld.timeZones['America/Buenos_Aires']);
+  print(cld.timeZones['America/Buenos_Aires']); // uses current DateTime
   print(cld.timeZones.get('America/Buenos_Aires', dateTime: DateTime(2008)));
   print(cld.timeZones
       .get('America/Buenos_Aires', dateTime: DateTime(2004, 6, 2)));
+
+  // Locale manipulations
+  print('');
+  var localeId = LanguageId(lang: 'en', region: 'us');
+  print('           toString: $localeId');
+  print('            toBCP47: ${localeId.toBCP47()}');
+  print('     toUnicodeBCP47: ${localeId.toUnicodeBCP47()}');
+  print('      toUnicodeCLDR: ${localeId.toUnicodeCLDR()}');
+  print('       canonicalize: ${localeId.canonicalize()}');
+  print('   addLikelySubTags: ${localeId.addLikelySubTags()}');
+  print('removeLikelySubTags: ${localeId.removeLikelySubTags()}');
+  print(
+      '  localeDisplayName: ${cld.localeDisplayName.formatWithExtensions(localeId)}');
+
+  print('');
+  localeId = LocaleId.parse(
+      'en_US_POSIX_fonipa_u_co_phonebk_kb_yes_x_private@calendar=japanese;timezone=europe/paris###');
+  print('           toString: $localeId');
+  print('            toBCP47: ${localeId.toBCP47()}');
+  print('     toUnicodeBCP47: ${localeId.toUnicodeBCP47()}');
+  print('      toUnicodeCLDR: ${localeId.toUnicodeCLDR()}');
+  print('       canonicalize: ${localeId.canonicalize()}');
+  print('   addLikelySubTags: ${localeId.addLikelySubTags()}');
+  print('removeLikelySubTags: ${localeId.removeLikelySubTags()}');
+  print('  localeDisplayName: ${cld.localeDisplayName.format(localeId)}');
+  print(
+      '    with Extensions: ${cld.localeDisplayName.formatWithExtensions(localeId)}');
+
+  // Locale Display Names
+  print('');
+  print(cld.localeDisplayName.format(LanguageId.parse('en-GB')));
+  print(cld.localeDisplayName
+      .format(LanguageId.parse('en-GB'), preferComposition: true));
+  print(cld.localeDisplayName.format(LanguageId.parse('hi-Latn-GB')));
+  print(cld.localeDisplayName.format(LanguageId.parse('hi-Latn-GB'),
+      preferType: LocaleDisplayNameStyle.variant));
+  print(cld.localeDisplayName.format(LanguageId.parse('hi-Latn-GB'),
+      preferType: LocaleDisplayNameStyle.short));
+  print(cld.localeDisplayName.format(LanguageId.parse('hi-Latn-GB'),
+      preferType: LocaleDisplayNameStyle.menu));
+
+  // format without extensions
+  print(cld.localeDisplayName.format(LocaleId.parse(
+      'en-GB-scoUse-fonipa-abl1943-u-cu-eur-ms-uksystem-rg-gband-sd-gblnd')));
+
+  // format with extensions (and therefore pulls in subdivision, currency and timezone data)
+  print(cld.localeDisplayName.formatWithExtensions(LocaleId.parse(
+      'en-GB-scoUse-fonipa-abl1943-u-cu-eur-ms-ussystem-rg-gband-sd-gblnd')));
 }
 ```
 
 ## Supported languages/locales
 
 | Locale | Description | Constant | Class | Import |  
-| ------ | ----------- | ------ | ----- | ------ |  
+| ------ | ----------- | -------- | ----- | ------ |  
 | <nobr>af</nobr> | <nobr>Afrikaans</nobr> | <nobr>af</nobr> | <nobr>CommonLocaleDataAf</nobr> | <nobr>import 'package:common_locale_data/af';</nobr> |  
 | <nobr>af-NA</nobr> | <nobr>Afrikaans (Namibia)</nobr> | <nobr>afNA</nobr> | <nobr>CommonLocaleDataAfNA</nobr> | <nobr>import 'package:common_locale_data/af_na';</nobr> |  
 | <nobr>am</nobr> | <nobr>Amharic</nobr> | <nobr>am</nobr> | <nobr>CommonLocaleDataAm</nobr> | <nobr>import 'package:common_locale_data/am';</nobr> |  
@@ -178,7 +331,7 @@ void main() {
 | <nobr>az</nobr> | <nobr>Azerbaijani</nobr> | <nobr>az</nobr> | <nobr>CommonLocaleDataAz</nobr> | <nobr>import 'package:common_locale_data/az';</nobr> |  
 | <nobr>az-Latn</nobr> | <nobr>Azerbaijani (Latin)</nobr> | <nobr>azLatn</nobr> | <nobr>CommonLocaleDataAzLatn</nobr> | <nobr>import 'package:common_locale_data/az_latn';</nobr> |  
 | <nobr>be</nobr> | <nobr>Belarusian</nobr> | <nobr>be</nobr> | <nobr>CommonLocaleDataBe</nobr> | <nobr>import 'package:common_locale_data/be';</nobr> |  
-| <nobr>be-tarask</nobr> | <nobr>Belarusian</nobr> | <nobr>beTarask</nobr> | <nobr>CommonLocaleDataBeTarask</nobr> | <nobr>import 'package:common_locale_data/be_tarask';</nobr> |  
+| <nobr>be-tarask</nobr> | <nobr>Belarusian (Taraskievica orthography)</nobr> | <nobr>beTarask</nobr> | <nobr>CommonLocaleDataBeTarask</nobr> | <nobr>import 'package:common_locale_data/be_tarask';</nobr> |  
 | <nobr>bg</nobr> | <nobr>Bulgarian</nobr> | <nobr>bg</nobr> | <nobr>CommonLocaleDataBg</nobr> | <nobr>import 'package:common_locale_data/bg';</nobr> |  
 | <nobr>bn</nobr> | <nobr>Bangla</nobr> | <nobr>bn</nobr> | <nobr>CommonLocaleDataBn</nobr> | <nobr>import 'package:common_locale_data/bn';</nobr> |  
 | <nobr>bn-IN</nobr> | <nobr>Bangla (India)</nobr> | <nobr>bnIN</nobr> | <nobr>CommonLocaleDataBnIN</nobr> | <nobr>import 'package:common_locale_data/bn_in';</nobr> |  
@@ -186,7 +339,7 @@ void main() {
 | <nobr>bs-Latn</nobr> | <nobr>Bosnian (Latin)</nobr> | <nobr>bsLatn</nobr> | <nobr>CommonLocaleDataBsLatn</nobr> | <nobr>import 'package:common_locale_data/bs_latn';</nobr> |  
 | <nobr>ca</nobr> | <nobr>Catalan</nobr> | <nobr>ca</nobr> | <nobr>CommonLocaleDataCa</nobr> | <nobr>import 'package:common_locale_data/ca';</nobr> |  
 | <nobr>ca-AD</nobr> | <nobr>Catalan (Andorra)</nobr> | <nobr>caAD</nobr> | <nobr>CommonLocaleDataCaAD</nobr> | <nobr>import 'package:common_locale_data/ca_ad';</nobr> |  
-| <nobr>ca-ES-valencia</nobr> | <nobr>Catalan</nobr> | <nobr>caESValencia</nobr> | <nobr>CommonLocaleDataCaESValencia</nobr> | <nobr>import 'package:common_locale_data/ca_es_valencia';</nobr> |  
+| <nobr>ca-ES-valencia</nobr> | <nobr>Catalan (Spain, Valencian)</nobr> | <nobr>caESValencia</nobr> | <nobr>CommonLocaleDataCaESValencia</nobr> | <nobr>import 'package:common_locale_data/ca_es_valencia';</nobr> |  
 | <nobr>ca-FR</nobr> | <nobr>Catalan (France)</nobr> | <nobr>caFR</nobr> | <nobr>CommonLocaleDataCaFR</nobr> | <nobr>import 'package:common_locale_data/ca_fr';</nobr> |  
 | <nobr>ca-IT</nobr> | <nobr>Catalan (Italy)</nobr> | <nobr>caIT</nobr> | <nobr>CommonLocaleDataCaIT</nobr> | <nobr>import 'package:common_locale_data/ca_it';</nobr> |  
 | <nobr>chr</nobr> | <nobr>Cherokee</nobr> | <nobr>chr</nobr> | <nobr>CommonLocaleDataChr</nobr> | <nobr>import 'package:common_locale_data/chr';</nobr> |  
@@ -195,25 +348,25 @@ void main() {
 | <nobr>da</nobr> | <nobr>Danish</nobr> | <nobr>da</nobr> | <nobr>CommonLocaleDataDa</nobr> | <nobr>import 'package:common_locale_data/da';</nobr> |  
 | <nobr>da-GL</nobr> | <nobr>Danish (Greenland)</nobr> | <nobr>daGL</nobr> | <nobr>CommonLocaleDataDaGL</nobr> | <nobr>import 'package:common_locale_data/da_gl';</nobr> |  
 | <nobr>de</nobr> | <nobr>German</nobr> | <nobr>de</nobr> | <nobr>CommonLocaleDataDe</nobr> | <nobr>import 'package:common_locale_data/de';</nobr> |  
-| <nobr>de-AT</nobr> | <nobr>German (Austria)</nobr> | <nobr>deAT</nobr> | <nobr>CommonLocaleDataDeAT</nobr> | <nobr>import 'package:common_locale_data/de_at';</nobr> |  
+| <nobr>de-AT</nobr> | <nobr>Austrian German</nobr> | <nobr>deAT</nobr> | <nobr>CommonLocaleDataDeAT</nobr> | <nobr>import 'package:common_locale_data/de_at';</nobr> |  
 | <nobr>de-BE</nobr> | <nobr>German (Belgium)</nobr> | <nobr>deBE</nobr> | <nobr>CommonLocaleDataDeBE</nobr> | <nobr>import 'package:common_locale_data/de_be';</nobr> |  
-| <nobr>de-CH</nobr> | <nobr>German (Switzerland)</nobr> | <nobr>deCH</nobr> | <nobr>CommonLocaleDataDeCH</nobr> | <nobr>import 'package:common_locale_data/de_ch';</nobr> |  
+| <nobr>de-CH</nobr> | <nobr>Swiss High German</nobr> | <nobr>deCH</nobr> | <nobr>CommonLocaleDataDeCH</nobr> | <nobr>import 'package:common_locale_data/de_ch';</nobr> |  
 | <nobr>de-IT</nobr> | <nobr>German (Italy)</nobr> | <nobr>deIT</nobr> | <nobr>CommonLocaleDataDeIT</nobr> | <nobr>import 'package:common_locale_data/de_it';</nobr> |  
 | <nobr>de-LI</nobr> | <nobr>German (Liechtenstein)</nobr> | <nobr>deLI</nobr> | <nobr>CommonLocaleDataDeLI</nobr> | <nobr>import 'package:common_locale_data/de_li';</nobr> |  
 | <nobr>de-LU</nobr> | <nobr>German (Luxembourg)</nobr> | <nobr>deLU</nobr> | <nobr>CommonLocaleDataDeLU</nobr> | <nobr>import 'package:common_locale_data/de_lu';</nobr> |  
 | <nobr>dsb</nobr> | <nobr>Lower Sorbian</nobr> | <nobr>dsb</nobr> | <nobr>CommonLocaleDataDsb</nobr> | <nobr>import 'package:common_locale_data/dsb';</nobr> |  
 | <nobr>el</nobr> | <nobr>Greek</nobr> | <nobr>el</nobr> | <nobr>CommonLocaleDataEl</nobr> | <nobr>import 'package:common_locale_data/el';</nobr> |  
 | <nobr>el-CY</nobr> | <nobr>Greek (Cyprus)</nobr> | <nobr>elCY</nobr> | <nobr>CommonLocaleDataElCY</nobr> | <nobr>import 'package:common_locale_data/el_cy';</nobr> |  
-| <nobr>el-polyton</nobr> | <nobr>Greek</nobr> | <nobr>elPolyton</nobr> | <nobr>CommonLocaleDataElPolyton</nobr> | <nobr>import 'package:common_locale_data/el_polyton';</nobr> |  
+| <nobr>el-polyton</nobr> | <nobr>Greek (Polytonic)</nobr> | <nobr>elPolyton</nobr> | <nobr>CommonLocaleDataElPolyton</nobr> | <nobr>import 'package:common_locale_data/el_polyton';</nobr> |  
 | <nobr>en</nobr> | <nobr>English</nobr> | <nobr>en</nobr> | <nobr>CommonLocaleDataEn</nobr> | <nobr>import 'package:common_locale_data/en';</nobr> |  
-| <nobr>en-001</nobr> | <nobr>English</nobr> | <nobr>en001</nobr> | <nobr>CommonLocaleDataEn001</nobr> | <nobr>import 'package:common_locale_data/en_001';</nobr> |  
-| <nobr>en-150</nobr> | <nobr>English</nobr> | <nobr>en150</nobr> | <nobr>CommonLocaleDataEn150</nobr> | <nobr>import 'package:common_locale_data/en_150';</nobr> |  
+| <nobr>en-001</nobr> | <nobr>English (world)</nobr> | <nobr>en001</nobr> | <nobr>CommonLocaleDataEn001</nobr> | <nobr>import 'package:common_locale_data/en_001';</nobr> |  
+| <nobr>en-150</nobr> | <nobr>English (Europe)</nobr> | <nobr>en150</nobr> | <nobr>CommonLocaleDataEn150</nobr> | <nobr>import 'package:common_locale_data/en_150';</nobr> |  
 | <nobr>en-AE</nobr> | <nobr>English (United Arab Emirates)</nobr> | <nobr>enAE</nobr> | <nobr>CommonLocaleDataEnAE</nobr> | <nobr>import 'package:common_locale_data/en_ae';</nobr> |  
 | <nobr>en-AG</nobr> | <nobr>English (Antigua & Barbuda)</nobr> | <nobr>enAG</nobr> | <nobr>CommonLocaleDataEnAG</nobr> | <nobr>import 'package:common_locale_data/en_ag';</nobr> |  
 | <nobr>en-AI</nobr> | <nobr>English (Anguilla)</nobr> | <nobr>enAI</nobr> | <nobr>CommonLocaleDataEnAI</nobr> | <nobr>import 'package:common_locale_data/en_ai';</nobr> |  
 | <nobr>en-AS</nobr> | <nobr>English (American Samoa)</nobr> | <nobr>enAS</nobr> | <nobr>CommonLocaleDataEnAS</nobr> | <nobr>import 'package:common_locale_data/en_as';</nobr> |  
 | <nobr>en-AT</nobr> | <nobr>English (Austria)</nobr> | <nobr>enAT</nobr> | <nobr>CommonLocaleDataEnAT</nobr> | <nobr>import 'package:common_locale_data/en_at';</nobr> |  
-| <nobr>en-AU</nobr> | <nobr>English (Australia)</nobr> | <nobr>enAU</nobr> | <nobr>CommonLocaleDataEnAU</nobr> | <nobr>import 'package:common_locale_data/en_au';</nobr> |  
+| <nobr>en-AU</nobr> | <nobr>Australian English</nobr> | <nobr>enAU</nobr> | <nobr>CommonLocaleDataEnAU</nobr> | <nobr>import 'package:common_locale_data/en_au';</nobr> |  
 | <nobr>en-BB</nobr> | <nobr>English (Barbados)</nobr> | <nobr>enBB</nobr> | <nobr>CommonLocaleDataEnBB</nobr> | <nobr>import 'package:common_locale_data/en_bb';</nobr> |  
 | <nobr>en-BE</nobr> | <nobr>English (Belgium)</nobr> | <nobr>enBE</nobr> | <nobr>CommonLocaleDataEnBE</nobr> | <nobr>import 'package:common_locale_data/en_be';</nobr> |  
 | <nobr>en-BI</nobr> | <nobr>English (Burundi)</nobr> | <nobr>enBI</nobr> | <nobr>CommonLocaleDataEnBI</nobr> | <nobr>import 'package:common_locale_data/en_bi';</nobr> |  
@@ -221,8 +374,8 @@ void main() {
 | <nobr>en-BS</nobr> | <nobr>English (Bahamas)</nobr> | <nobr>enBS</nobr> | <nobr>CommonLocaleDataEnBS</nobr> | <nobr>import 'package:common_locale_data/en_bs';</nobr> |  
 | <nobr>en-BW</nobr> | <nobr>English (Botswana)</nobr> | <nobr>enBW</nobr> | <nobr>CommonLocaleDataEnBW</nobr> | <nobr>import 'package:common_locale_data/en_bw';</nobr> |  
 | <nobr>en-BZ</nobr> | <nobr>English (Belize)</nobr> | <nobr>enBZ</nobr> | <nobr>CommonLocaleDataEnBZ</nobr> | <nobr>import 'package:common_locale_data/en_bz';</nobr> |  
-| <nobr>en-CA</nobr> | <nobr>English (Canada)</nobr> | <nobr>enCA</nobr> | <nobr>CommonLocaleDataEnCA</nobr> | <nobr>import 'package:common_locale_data/en_ca';</nobr> |  
-| <nobr>en-CC</nobr> | <nobr>English (Cocos (Keeling) Islands)</nobr> | <nobr>enCC</nobr> | <nobr>CommonLocaleDataEnCC</nobr> | <nobr>import 'package:common_locale_data/en_cc';</nobr> |  
+| <nobr>en-CA</nobr> | <nobr>Canadian English</nobr> | <nobr>enCA</nobr> | <nobr>CommonLocaleDataEnCA</nobr> | <nobr>import 'package:common_locale_data/en_ca';</nobr> |  
+| <nobr>en-CC</nobr> | <nobr>English (Cocos [Keeling] Islands)</nobr> | <nobr>enCC</nobr> | <nobr>CommonLocaleDataEnCC</nobr> | <nobr>import 'package:common_locale_data/en_cc';</nobr> |  
 | <nobr>en-CH</nobr> | <nobr>English (Switzerland)</nobr> | <nobr>enCH</nobr> | <nobr>CommonLocaleDataEnCH</nobr> | <nobr>import 'package:common_locale_data/en_ch';</nobr> |  
 | <nobr>en-CK</nobr> | <nobr>English (Cook Islands)</nobr> | <nobr>enCK</nobr> | <nobr>CommonLocaleDataEnCK</nobr> | <nobr>import 'package:common_locale_data/en_ck';</nobr> |  
 | <nobr>en-CM</nobr> | <nobr>English (Cameroon)</nobr> | <nobr>enCM</nobr> | <nobr>CommonLocaleDataEnCM</nobr> | <nobr>import 'package:common_locale_data/en_cm';</nobr> |  
@@ -237,7 +390,7 @@ void main() {
 | <nobr>en-FJ</nobr> | <nobr>English (Fiji)</nobr> | <nobr>enFJ</nobr> | <nobr>CommonLocaleDataEnFJ</nobr> | <nobr>import 'package:common_locale_data/en_fj';</nobr> |  
 | <nobr>en-FK</nobr> | <nobr>English (Falkland Islands)</nobr> | <nobr>enFK</nobr> | <nobr>CommonLocaleDataEnFK</nobr> | <nobr>import 'package:common_locale_data/en_fk';</nobr> |  
 | <nobr>en-FM</nobr> | <nobr>English (Micronesia)</nobr> | <nobr>enFM</nobr> | <nobr>CommonLocaleDataEnFM</nobr> | <nobr>import 'package:common_locale_data/en_fm';</nobr> |  
-| <nobr>en-GB</nobr> | <nobr>English (United Kingdom)</nobr> | <nobr>enGB</nobr> | <nobr>CommonLocaleDataEnGB</nobr> | <nobr>import 'package:common_locale_data/en_gb';</nobr> |  
+| <nobr>en-GB</nobr> | <nobr>British English</nobr> | <nobr>enGB</nobr> | <nobr>CommonLocaleDataEnGB</nobr> | <nobr>import 'package:common_locale_data/en_gb';</nobr> |  
 | <nobr>en-GD</nobr> | <nobr>English (Grenada)</nobr> | <nobr>enGD</nobr> | <nobr>CommonLocaleDataEnGD</nobr> | <nobr>import 'package:common_locale_data/en_gd';</nobr> |  
 | <nobr>en-GG</nobr> | <nobr>English (Guernsey)</nobr> | <nobr>enGG</nobr> | <nobr>CommonLocaleDataEnGG</nobr> | <nobr>import 'package:common_locale_data/en_gg';</nobr> |  
 | <nobr>en-GH</nobr> | <nobr>English (Ghana)</nobr> | <nobr>enGH</nobr> | <nobr>CommonLocaleDataEnGH</nobr> | <nobr>import 'package:common_locale_data/en_gh';</nobr> |  
@@ -313,7 +466,7 @@ void main() {
 | <nobr>en-ZM</nobr> | <nobr>English (Zambia)</nobr> | <nobr>enZM</nobr> | <nobr>CommonLocaleDataEnZM</nobr> | <nobr>import 'package:common_locale_data/en_zm';</nobr> |  
 | <nobr>en-ZW</nobr> | <nobr>English (Zimbabwe)</nobr> | <nobr>enZW</nobr> | <nobr>CommonLocaleDataEnZW</nobr> | <nobr>import 'package:common_locale_data/en_zw';</nobr> |  
 | <nobr>es</nobr> | <nobr>Spanish</nobr> | <nobr>es</nobr> | <nobr>CommonLocaleDataEs</nobr> | <nobr>import 'package:common_locale_data/es';</nobr> |  
-| <nobr>es-419</nobr> | <nobr>Spanish</nobr> | <nobr>es419</nobr> | <nobr>CommonLocaleDataEs419</nobr> | <nobr>import 'package:common_locale_data/es_419';</nobr> |  
+| <nobr>es-419</nobr> | <nobr>Latin American Spanish</nobr> | <nobr>es419</nobr> | <nobr>CommonLocaleDataEs419</nobr> | <nobr>import 'package:common_locale_data/es_419';</nobr> |  
 | <nobr>es-AR</nobr> | <nobr>Spanish (Argentina)</nobr> | <nobr>esAR</nobr> | <nobr>CommonLocaleDataEsAR</nobr> | <nobr>import 'package:common_locale_data/es_ar';</nobr> |  
 | <nobr>es-BO</nobr> | <nobr>Spanish (Bolivia)</nobr> | <nobr>esBO</nobr> | <nobr>CommonLocaleDataEsBO</nobr> | <nobr>import 'package:common_locale_data/es_bo';</nobr> |  
 | <nobr>es-BR</nobr> | <nobr>Spanish (Brazil)</nobr> | <nobr>esBR</nobr> | <nobr>CommonLocaleDataEsBR</nobr> | <nobr>import 'package:common_locale_data/es_br';</nobr> |  
@@ -329,7 +482,7 @@ void main() {
 | <nobr>es-GT</nobr> | <nobr>Spanish (Guatemala)</nobr> | <nobr>esGT</nobr> | <nobr>CommonLocaleDataEsGT</nobr> | <nobr>import 'package:common_locale_data/es_gt';</nobr> |  
 | <nobr>es-HN</nobr> | <nobr>Spanish (Honduras)</nobr> | <nobr>esHN</nobr> | <nobr>CommonLocaleDataEsHN</nobr> | <nobr>import 'package:common_locale_data/es_hn';</nobr> |  
 | <nobr>es-IC</nobr> | <nobr>Spanish (Canary Islands)</nobr> | <nobr>esIC</nobr> | <nobr>CommonLocaleDataEsIC</nobr> | <nobr>import 'package:common_locale_data/es_ic';</nobr> |  
-| <nobr>es-MX</nobr> | <nobr>Spanish (Mexico)</nobr> | <nobr>esMX</nobr> | <nobr>CommonLocaleDataEsMX</nobr> | <nobr>import 'package:common_locale_data/es_mx';</nobr> |  
+| <nobr>es-MX</nobr> | <nobr>Mexican Spanish</nobr> | <nobr>esMX</nobr> | <nobr>CommonLocaleDataEsMX</nobr> | <nobr>import 'package:common_locale_data/es_mx';</nobr> |  
 | <nobr>es-NI</nobr> | <nobr>Spanish (Nicaragua)</nobr> | <nobr>esNI</nobr> | <nobr>CommonLocaleDataEsNI</nobr> | <nobr>import 'package:common_locale_data/es_ni';</nobr> |  
 | <nobr>es-PA</nobr> | <nobr>Spanish (Panama)</nobr> | <nobr>esPA</nobr> | <nobr>CommonLocaleDataEsPA</nobr> | <nobr>import 'package:common_locale_data/es_pa';</nobr> |  
 | <nobr>es-PE</nobr> | <nobr>Spanish (Peru)</nobr> | <nobr>esPE</nobr> | <nobr>CommonLocaleDataEsPE</nobr> | <nobr>import 'package:common_locale_data/es_pe';</nobr> |  
@@ -343,7 +496,7 @@ void main() {
 | <nobr>et</nobr> | <nobr>Estonian</nobr> | <nobr>et</nobr> | <nobr>CommonLocaleDataEt</nobr> | <nobr>import 'package:common_locale_data/et';</nobr> |  
 | <nobr>eu</nobr> | <nobr>Basque</nobr> | <nobr>eu</nobr> | <nobr>CommonLocaleDataEu</nobr> | <nobr>import 'package:common_locale_data/eu';</nobr> |  
 | <nobr>fa</nobr> | <nobr>Persian</nobr> | <nobr>fa</nobr> | <nobr>CommonLocaleDataFa</nobr> | <nobr>import 'package:common_locale_data/fa';</nobr> |  
-| <nobr>fa-AF</nobr> | <nobr>Persian (Afghanistan)</nobr> | <nobr>faAF</nobr> | <nobr>CommonLocaleDataFaAF</nobr> | <nobr>import 'package:common_locale_data/fa_af';</nobr> |  
+| <nobr>fa-AF</nobr> | <nobr>Dari</nobr> | <nobr>faAF</nobr> | <nobr>CommonLocaleDataFaAF</nobr> | <nobr>import 'package:common_locale_data/fa_af';</nobr> |  
 | <nobr>fi</nobr> | <nobr>Finnish</nobr> | <nobr>fi</nobr> | <nobr>CommonLocaleDataFi</nobr> | <nobr>import 'package:common_locale_data/fi';</nobr> |  
 | <nobr>fil</nobr> | <nobr>Filipino</nobr> | <nobr>fil</nobr> | <nobr>CommonLocaleDataFil</nobr> | <nobr>import 'package:common_locale_data/fil';</nobr> |  
 | <nobr>fr</nobr> | <nobr>French</nobr> | <nobr>fr</nobr> | <nobr>CommonLocaleDataFr</nobr> | <nobr>import 'package:common_locale_data/fr';</nobr> |  
@@ -352,11 +505,11 @@ void main() {
 | <nobr>fr-BI</nobr> | <nobr>French (Burundi)</nobr> | <nobr>frBI</nobr> | <nobr>CommonLocaleDataFrBI</nobr> | <nobr>import 'package:common_locale_data/fr_bi';</nobr> |  
 | <nobr>fr-BJ</nobr> | <nobr>French (Benin)</nobr> | <nobr>frBJ</nobr> | <nobr>CommonLocaleDataFrBJ</nobr> | <nobr>import 'package:common_locale_data/fr_bj';</nobr> |  
 | <nobr>fr-BL</nobr> | <nobr>French (St. Barthélemy)</nobr> | <nobr>frBL</nobr> | <nobr>CommonLocaleDataFrBL</nobr> | <nobr>import 'package:common_locale_data/fr_bl';</nobr> |  
-| <nobr>fr-CA</nobr> | <nobr>French (Canada)</nobr> | <nobr>frCA</nobr> | <nobr>CommonLocaleDataFrCA</nobr> | <nobr>import 'package:common_locale_data/fr_ca';</nobr> |  
+| <nobr>fr-CA</nobr> | <nobr>Canadian French</nobr> | <nobr>frCA</nobr> | <nobr>CommonLocaleDataFrCA</nobr> | <nobr>import 'package:common_locale_data/fr_ca';</nobr> |  
 | <nobr>fr-CD</nobr> | <nobr>French (Congo - Kinshasa)</nobr> | <nobr>frCD</nobr> | <nobr>CommonLocaleDataFrCD</nobr> | <nobr>import 'package:common_locale_data/fr_cd';</nobr> |  
 | <nobr>fr-CF</nobr> | <nobr>French (Central African Republic)</nobr> | <nobr>frCF</nobr> | <nobr>CommonLocaleDataFrCF</nobr> | <nobr>import 'package:common_locale_data/fr_cf';</nobr> |  
 | <nobr>fr-CG</nobr> | <nobr>French (Congo - Brazzaville)</nobr> | <nobr>frCG</nobr> | <nobr>CommonLocaleDataFrCG</nobr> | <nobr>import 'package:common_locale_data/fr_cg';</nobr> |  
-| <nobr>fr-CH</nobr> | <nobr>French (Switzerland)</nobr> | <nobr>frCH</nobr> | <nobr>CommonLocaleDataFrCH</nobr> | <nobr>import 'package:common_locale_data/fr_ch';</nobr> |  
+| <nobr>fr-CH</nobr> | <nobr>Swiss French</nobr> | <nobr>frCH</nobr> | <nobr>CommonLocaleDataFrCH</nobr> | <nobr>import 'package:common_locale_data/fr_ch';</nobr> |  
 | <nobr>fr-CI</nobr> | <nobr>French (Côte d’Ivoire)</nobr> | <nobr>frCI</nobr> | <nobr>CommonLocaleDataFrCI</nobr> | <nobr>import 'package:common_locale_data/fr_ci';</nobr> |  
 | <nobr>fr-CM</nobr> | <nobr>French (Cameroon)</nobr> | <nobr>frCM</nobr> | <nobr>CommonLocaleDataFrCM</nobr> | <nobr>import 'package:common_locale_data/fr_cm';</nobr> |  
 | <nobr>fr-DJ</nobr> | <nobr>French (Djibouti)</nobr> | <nobr>frDJ</nobr> | <nobr>CommonLocaleDataFrDJ</nobr> | <nobr>import 'package:common_locale_data/fr_dj';</nobr> |  
@@ -402,7 +555,7 @@ void main() {
 | <nobr>ha-NE</nobr> | <nobr>Hausa (Niger)</nobr> | <nobr>haNE</nobr> | <nobr>CommonLocaleDataHaNE</nobr> | <nobr>import 'package:common_locale_data/ha_ne';</nobr> |  
 | <nobr>he</nobr> | <nobr>Hebrew</nobr> | <nobr>he</nobr> | <nobr>CommonLocaleDataHe</nobr> | <nobr>import 'package:common_locale_data/he';</nobr> |  
 | <nobr>hi</nobr> | <nobr>Hindi</nobr> | <nobr>hi</nobr> | <nobr>CommonLocaleDataHi</nobr> | <nobr>import 'package:common_locale_data/hi';</nobr> |  
-| <nobr>hi-Latn</nobr> | <nobr>Hindi (Latin)</nobr> | <nobr>hiLatn</nobr> | <nobr>CommonLocaleDataHiLatn</nobr> | <nobr>import 'package:common_locale_data/hi_latn';</nobr> |  
+| <nobr>hi-Latn</nobr> | <nobr>Hindi [Latin]</nobr> | <nobr>hiLatn</nobr> | <nobr>CommonLocaleDataHiLatn</nobr> | <nobr>import 'package:common_locale_data/hi_latn';</nobr> |  
 | <nobr>hr</nobr> | <nobr>Croatian</nobr> | <nobr>hr</nobr> | <nobr>CommonLocaleDataHr</nobr> | <nobr>import 'package:common_locale_data/hr';</nobr> |  
 | <nobr>hr-BA</nobr> | <nobr>Croatian (Bosnia & Herzegovina)</nobr> | <nobr>hrBA</nobr> | <nobr>CommonLocaleDataHrBA</nobr> | <nobr>import 'package:common_locale_data/hr_ba';</nobr> |  
 | <nobr>hsb</nobr> | <nobr>Upper Sorbian</nobr> | <nobr>hsb</nobr> | <nobr>CommonLocaleDataHsb</nobr> | <nobr>import 'package:common_locale_data/hsb';</nobr> |  
@@ -447,7 +600,7 @@ void main() {
 | <nobr>ne-IN</nobr> | <nobr>Nepali (India)</nobr> | <nobr>neIN</nobr> | <nobr>CommonLocaleDataNeIN</nobr> | <nobr>import 'package:common_locale_data/ne_in';</nobr> |  
 | <nobr>nl</nobr> | <nobr>Dutch</nobr> | <nobr>nl</nobr> | <nobr>CommonLocaleDataNl</nobr> | <nobr>import 'package:common_locale_data/nl';</nobr> |  
 | <nobr>nl-AW</nobr> | <nobr>Dutch (Aruba)</nobr> | <nobr>nlAW</nobr> | <nobr>CommonLocaleDataNlAW</nobr> | <nobr>import 'package:common_locale_data/nl_aw';</nobr> |  
-| <nobr>nl-BE</nobr> | <nobr>Dutch (Belgium)</nobr> | <nobr>nlBE</nobr> | <nobr>CommonLocaleDataNlBE</nobr> | <nobr>import 'package:common_locale_data/nl_be';</nobr> |  
+| <nobr>nl-BE</nobr> | <nobr>Flemish</nobr> | <nobr>nlBE</nobr> | <nobr>CommonLocaleDataNlBE</nobr> | <nobr>import 'package:common_locale_data/nl_be';</nobr> |  
 | <nobr>nl-BQ</nobr> | <nobr>Dutch (Caribbean Netherlands)</nobr> | <nobr>nlBQ</nobr> | <nobr>CommonLocaleDataNlBQ</nobr> | <nobr>import 'package:common_locale_data/nl_bq';</nobr> |  
 | <nobr>nl-CW</nobr> | <nobr>Dutch (Curaçao)</nobr> | <nobr>nlCW</nobr> | <nobr>CommonLocaleDataNlCW</nobr> | <nobr>import 'package:common_locale_data/nl_cw';</nobr> |  
 | <nobr>nl-SR</nobr> | <nobr>Dutch (Suriname)</nobr> | <nobr>nlSR</nobr> | <nobr>CommonLocaleDataNlSR</nobr> | <nobr>import 'package:common_locale_data/nl_sr';</nobr> |  
@@ -470,11 +623,11 @@ void main() {
 | <nobr>pt-LU</nobr> | <nobr>Portuguese (Luxembourg)</nobr> | <nobr>ptLU</nobr> | <nobr>CommonLocaleDataPtLU</nobr> | <nobr>import 'package:common_locale_data/pt_lu';</nobr> |  
 | <nobr>pt-MO</nobr> | <nobr>Portuguese (Macao SAR China)</nobr> | <nobr>ptMO</nobr> | <nobr>CommonLocaleDataPtMO</nobr> | <nobr>import 'package:common_locale_data/pt_mo';</nobr> |  
 | <nobr>pt-MZ</nobr> | <nobr>Portuguese (Mozambique)</nobr> | <nobr>ptMZ</nobr> | <nobr>CommonLocaleDataPtMZ</nobr> | <nobr>import 'package:common_locale_data/pt_mz';</nobr> |  
-| <nobr>pt-PT</nobr> | <nobr>Portuguese (Portugal)</nobr> | <nobr>ptPT</nobr> | <nobr>CommonLocaleDataPtPT</nobr> | <nobr>import 'package:common_locale_data/pt_pt';</nobr> |  
+| <nobr>pt-PT</nobr> | <nobr>European Portuguese</nobr> | <nobr>ptPT</nobr> | <nobr>CommonLocaleDataPtPT</nobr> | <nobr>import 'package:common_locale_data/pt_pt';</nobr> |  
 | <nobr>pt-ST</nobr> | <nobr>Portuguese (São Tomé & Príncipe)</nobr> | <nobr>ptST</nobr> | <nobr>CommonLocaleDataPtST</nobr> | <nobr>import 'package:common_locale_data/pt_st';</nobr> |  
 | <nobr>pt-TL</nobr> | <nobr>Portuguese (Timor-Leste)</nobr> | <nobr>ptTL</nobr> | <nobr>CommonLocaleDataPtTL</nobr> | <nobr>import 'package:common_locale_data/pt_tl';</nobr> |  
 | <nobr>ro</nobr> | <nobr>Romanian</nobr> | <nobr>ro</nobr> | <nobr>CommonLocaleDataRo</nobr> | <nobr>import 'package:common_locale_data/ro';</nobr> |  
-| <nobr>ro-MD</nobr> | <nobr>Romanian (Moldova)</nobr> | <nobr>roMD</nobr> | <nobr>CommonLocaleDataRoMD</nobr> | <nobr>import 'package:common_locale_data/ro_md';</nobr> |  
+| <nobr>ro-MD</nobr> | <nobr>Moldavian</nobr> | <nobr>roMD</nobr> | <nobr>CommonLocaleDataRoMD</nobr> | <nobr>import 'package:common_locale_data/ro_md';</nobr> |  
 | <nobr>ru</nobr> | <nobr>Russian</nobr> | <nobr>ru</nobr> | <nobr>CommonLocaleDataRu</nobr> | <nobr>import 'package:common_locale_data/ru';</nobr> |  
 | <nobr>ru-BY</nobr> | <nobr>Russian (Belarus)</nobr> | <nobr>ruBY</nobr> | <nobr>CommonLocaleDataRuBY</nobr> | <nobr>import 'package:common_locale_data/ru_by';</nobr> |  
 | <nobr>ru-KG</nobr> | <nobr>Russian (Kyrgyzstan)</nobr> | <nobr>ruKG</nobr> | <nobr>CommonLocaleDataRuKG</nobr> | <nobr>import 'package:common_locale_data/ru_kg';</nobr> |  
@@ -496,17 +649,17 @@ void main() {
 | <nobr>sr</nobr> | <nobr>Serbian</nobr> | <nobr>sr</nobr> | <nobr>CommonLocaleDataSr</nobr> | <nobr>import 'package:common_locale_data/sr';</nobr> |  
 | <nobr>sr-Cyrl</nobr> | <nobr>Serbian (Cyrillic)</nobr> | <nobr>srCyrl</nobr> | <nobr>CommonLocaleDataSrCyrl</nobr> | <nobr>import 'package:common_locale_data/sr_cyrl';</nobr> |  
 | <nobr>sr-Cyrl-BA</nobr> | <nobr>Serbian (Cyrillic, Bosnia & Herzegovina)</nobr> | <nobr>srCyrlBA</nobr> | <nobr>CommonLocaleDataSrCyrlBA</nobr> | <nobr>import 'package:common_locale_data/sr_cyrl_ba';</nobr> |  
-| <nobr>sr-Cyrl-ME</nobr> | <nobr>Serbian (Cyrillic, Montenegro)</nobr> | <nobr>srCyrlME</nobr> | <nobr>CommonLocaleDataSrCyrlME</nobr> | <nobr>import 'package:common_locale_data/sr_cyrl_me';</nobr> |  
+| <nobr>sr-Cyrl-ME</nobr> | <nobr>Montenegrin (Cyrillic)</nobr> | <nobr>srCyrlME</nobr> | <nobr>CommonLocaleDataSrCyrlME</nobr> | <nobr>import 'package:common_locale_data/sr_cyrl_me';</nobr> |  
 | <nobr>sr-Cyrl-XK</nobr> | <nobr>Serbian (Cyrillic, Kosovo)</nobr> | <nobr>srCyrlXK</nobr> | <nobr>CommonLocaleDataSrCyrlXK</nobr> | <nobr>import 'package:common_locale_data/sr_cyrl_xk';</nobr> |  
 | <nobr>sr-Latn</nobr> | <nobr>Serbian (Latin)</nobr> | <nobr>srLatn</nobr> | <nobr>CommonLocaleDataSrLatn</nobr> | <nobr>import 'package:common_locale_data/sr_latn';</nobr> |  
 | <nobr>sr-Latn-BA</nobr> | <nobr>Serbian (Latin, Bosnia & Herzegovina)</nobr> | <nobr>srLatnBA</nobr> | <nobr>CommonLocaleDataSrLatnBA</nobr> | <nobr>import 'package:common_locale_data/sr_latn_ba';</nobr> |  
-| <nobr>sr-Latn-ME</nobr> | <nobr>Serbian (Latin, Montenegro)</nobr> | <nobr>srLatnME</nobr> | <nobr>CommonLocaleDataSrLatnME</nobr> | <nobr>import 'package:common_locale_data/sr_latn_me';</nobr> |  
+| <nobr>sr-Latn-ME</nobr> | <nobr>Montenegrin (Latin)</nobr> | <nobr>srLatnME</nobr> | <nobr>CommonLocaleDataSrLatnME</nobr> | <nobr>import 'package:common_locale_data/sr_latn_me';</nobr> |  
 | <nobr>sr-Latn-XK</nobr> | <nobr>Serbian (Latin, Kosovo)</nobr> | <nobr>srLatnXK</nobr> | <nobr>CommonLocaleDataSrLatnXK</nobr> | <nobr>import 'package:common_locale_data/sr_latn_xk';</nobr> |  
 | <nobr>sv</nobr> | <nobr>Swedish</nobr> | <nobr>sv</nobr> | <nobr>CommonLocaleDataSv</nobr> | <nobr>import 'package:common_locale_data/sv';</nobr> |  
 | <nobr>sv-AX</nobr> | <nobr>Swedish (Åland Islands)</nobr> | <nobr>svAX</nobr> | <nobr>CommonLocaleDataSvAX</nobr> | <nobr>import 'package:common_locale_data/sv_ax';</nobr> |  
 | <nobr>sv-FI</nobr> | <nobr>Swedish (Finland)</nobr> | <nobr>svFI</nobr> | <nobr>CommonLocaleDataSvFI</nobr> | <nobr>import 'package:common_locale_data/sv_fi';</nobr> |  
 | <nobr>sw</nobr> | <nobr>Swahili</nobr> | <nobr>sw</nobr> | <nobr>CommonLocaleDataSw</nobr> | <nobr>import 'package:common_locale_data/sw';</nobr> |  
-| <nobr>sw-CD</nobr> | <nobr>Swahili (Congo - Kinshasa)</nobr> | <nobr>swCD</nobr> | <nobr>CommonLocaleDataSwCD</nobr> | <nobr>import 'package:common_locale_data/sw_cd';</nobr> |  
+| <nobr>sw-CD</nobr> | <nobr>Congo Swahili</nobr> | <nobr>swCD</nobr> | <nobr>CommonLocaleDataSwCD</nobr> | <nobr>import 'package:common_locale_data/sw_cd';</nobr> |  
 | <nobr>sw-KE</nobr> | <nobr>Swahili (Kenya)</nobr> | <nobr>swKE</nobr> | <nobr>CommonLocaleDataSwKE</nobr> | <nobr>import 'package:common_locale_data/sw_ke';</nobr> |  
 | <nobr>sw-UG</nobr> | <nobr>Swahili (Uganda)</nobr> | <nobr>swUG</nobr> | <nobr>CommonLocaleDataSwUG</nobr> | <nobr>import 'package:common_locale_data/sw_ug';</nobr> |  
 | <nobr>ta</nobr> | <nobr>Tamil</nobr> | <nobr>ta</nobr> | <nobr>CommonLocaleDataTa</nobr> | <nobr>import 'package:common_locale_data/ta';</nobr> |  
@@ -533,15 +686,15 @@ void main() {
 | <nobr>yue-Hant</nobr> | <nobr>Cantonese (Traditional)</nobr> | <nobr>yueHant</nobr> | <nobr>CommonLocaleDataYueHant</nobr> | <nobr>import 'package:common_locale_data/yue_hant';</nobr> |  
 | <nobr>yue-Hant-CN</nobr> | <nobr>Cantonese (Traditional, China)</nobr> | <nobr>yueHantCN</nobr> | <nobr>CommonLocaleDataYueHantCN</nobr> | <nobr>import 'package:common_locale_data/yue_hant_cn';</nobr> |  
 | <nobr>zh</nobr> | <nobr>Chinese</nobr> | <nobr>zh</nobr> | <nobr>CommonLocaleDataZh</nobr> | <nobr>import 'package:common_locale_data/zh';</nobr> |  
-| <nobr>zh-Hans</nobr> | <nobr>Chinese (Simplified)</nobr> | <nobr>zhHans</nobr> | <nobr>CommonLocaleDataZhHans</nobr> | <nobr>import 'package:common_locale_data/zh_hans';</nobr> |  
-| <nobr>zh-Hans-HK</nobr> | <nobr>Chinese (Simplified, Hong Kong SAR China)</nobr> | <nobr>zhHansHK</nobr> | <nobr>CommonLocaleDataZhHansHK</nobr> | <nobr>import 'package:common_locale_data/zh_hans_hk';</nobr> |  
-| <nobr>zh-Hans-MO</nobr> | <nobr>Chinese (Simplified, Macao SAR China)</nobr> | <nobr>zhHansMO</nobr> | <nobr>CommonLocaleDataZhHansMO</nobr> | <nobr>import 'package:common_locale_data/zh_hans_mo';</nobr> |  
-| <nobr>zh-Hans-MY</nobr> | <nobr>Chinese (Simplified, Malaysia)</nobr> | <nobr>zhHansMY</nobr> | <nobr>CommonLocaleDataZhHansMY</nobr> | <nobr>import 'package:common_locale_data/zh_hans_my';</nobr> |  
-| <nobr>zh-Hans-SG</nobr> | <nobr>Chinese (Simplified, Singapore)</nobr> | <nobr>zhHansSG</nobr> | <nobr>CommonLocaleDataZhHansSG</nobr> | <nobr>import 'package:common_locale_data/zh_hans_sg';</nobr> |  
-| <nobr>zh-Hant</nobr> | <nobr>Chinese (Traditional)</nobr> | <nobr>zhHant</nobr> | <nobr>CommonLocaleDataZhHant</nobr> | <nobr>import 'package:common_locale_data/zh_hant';</nobr> |  
-| <nobr>zh-Hant-HK</nobr> | <nobr>Chinese (Traditional, Hong Kong SAR China)</nobr> | <nobr>zhHantHK</nobr> | <nobr>CommonLocaleDataZhHantHK</nobr> | <nobr>import 'package:common_locale_data/zh_hant_hk';</nobr> |  
-| <nobr>zh-Hant-MO</nobr> | <nobr>Chinese (Traditional, Macao SAR China)</nobr> | <nobr>zhHantMO</nobr> | <nobr>CommonLocaleDataZhHantMO</nobr> | <nobr>import 'package:common_locale_data/zh_hant_mo';</nobr> |  
-| <nobr>zh-Hant-MY</nobr> | <nobr>Chinese (Traditional, Malaysia)</nobr> | <nobr>zhHantMY</nobr> | <nobr>CommonLocaleDataZhHantMY</nobr> | <nobr>import 'package:common_locale_data/zh_hant_my';</nobr> |  
+| <nobr>zh-Hans</nobr> | <nobr>Simplified Chinese</nobr> | <nobr>zhHans</nobr> | <nobr>CommonLocaleDataZhHans</nobr> | <nobr>import 'package:common_locale_data/zh_hans';</nobr> |  
+| <nobr>zh-Hans-HK</nobr> | <nobr>Simplified Chinese (Hong Kong SAR China)</nobr> | <nobr>zhHansHK</nobr> | <nobr>CommonLocaleDataZhHansHK</nobr> | <nobr>import 'package:common_locale_data/zh_hans_hk';</nobr> |  
+| <nobr>zh-Hans-MO</nobr> | <nobr>Simplified Chinese (Macao SAR China)</nobr> | <nobr>zhHansMO</nobr> | <nobr>CommonLocaleDataZhHansMO</nobr> | <nobr>import 'package:common_locale_data/zh_hans_mo';</nobr> |  
+| <nobr>zh-Hans-MY</nobr> | <nobr>Simplified Chinese (Malaysia)</nobr> | <nobr>zhHansMY</nobr> | <nobr>CommonLocaleDataZhHansMY</nobr> | <nobr>import 'package:common_locale_data/zh_hans_my';</nobr> |  
+| <nobr>zh-Hans-SG</nobr> | <nobr>Simplified Chinese (Singapore)</nobr> | <nobr>zhHansSG</nobr> | <nobr>CommonLocaleDataZhHansSG</nobr> | <nobr>import 'package:common_locale_data/zh_hans_sg';</nobr> |  
+| <nobr>zh-Hant</nobr> | <nobr>Traditional Chinese</nobr> | <nobr>zhHant</nobr> | <nobr>CommonLocaleDataZhHant</nobr> | <nobr>import 'package:common_locale_data/zh_hant';</nobr> |  
+| <nobr>zh-Hant-HK</nobr> | <nobr>Traditional Chinese (Hong Kong SAR China)</nobr> | <nobr>zhHantHK</nobr> | <nobr>CommonLocaleDataZhHantHK</nobr> | <nobr>import 'package:common_locale_data/zh_hant_hk';</nobr> |  
+| <nobr>zh-Hant-MO</nobr> | <nobr>Traditional Chinese (Macao SAR China)</nobr> | <nobr>zhHantMO</nobr> | <nobr>CommonLocaleDataZhHantMO</nobr> | <nobr>import 'package:common_locale_data/zh_hant_mo';</nobr> |  
+| <nobr>zh-Hant-MY</nobr> | <nobr>Traditional Chinese (Malaysia)</nobr> | <nobr>zhHantMY</nobr> | <nobr>CommonLocaleDataZhHantMY</nobr> | <nobr>import 'package:common_locale_data/zh_hant_my';</nobr> |  
 | <nobr>zu</nobr> | <nobr>Zulu</nobr> | <nobr>zu</nobr> | <nobr>CommonLocaleDataZu</nobr> | <nobr>import 'package:common_locale_data/zu';</nobr> |
 
 To change the included locales modify the ```tool\config.dart``` file and rerun

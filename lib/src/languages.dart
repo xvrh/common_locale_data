@@ -1,13 +1,4 @@
-/// Container for localized language names.
-///
-/// {@category Languages}
-abstract class Languages {
-  Map<String, Language> get languages;
-
-  Language? operator [](String code) {
-    return languages[code];
-  }
-}
+export 'languages.model.dart';
 
 /// Localized language names.
 ///
@@ -28,7 +19,7 @@ class Language {
   /// Localized name for use in menus.
   final String? menu;
 
-  Language(this.code, this.name, {this.short, this.variant, this.menu});
+  const Language(this.code, this.name, {this.short, this.variant, this.menu});
 
   @override
   String toString() => name;

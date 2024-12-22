@@ -1,10 +1,8 @@
 import 'dart:async';
 import 'dart:io';
-
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:pool/pool.dart';
-
 import 'config.dart';
 import 'utils/supported_locales.dart';
 
@@ -45,6 +43,7 @@ void main() async {
   final sets = <String, Set<String>>{
     'units': {'units', 'measurementSystemNames'},
     'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
+    'numbers': {'currencies'},
     'localenames': {
       'languages',
       'territories',
@@ -60,6 +59,8 @@ void main() async {
     dataDirectory.deleteSync(recursive: true);
   }
   var client = http.Client();
+
+  // Most of the fetching is downloading, 100 is an empirical optimum
   var pool = Pool(100);
 
   print('Downloading locale independent data');
@@ -118,7 +119,7 @@ void main() async {
           try {
             await download(directory, url, client, fileName);
           } on Exception catch (e) {
-            print('*** $e');
+            stderr.write('*** $e for $locale\n');
           }
         });
         localeFutures.add(future);

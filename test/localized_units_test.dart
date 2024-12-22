@@ -61,8 +61,8 @@ void main() {
   test('countries', () {
     // Territories
     expect(CommonLocaleDataEn().territories.africa.name, 'Africa');
-    expect(CommonLocaleDataEn().territories.countries['US']!.name,
+    expect(CommonLocaleDataEn().territories.territories['US']!.name,
         'United States');
-    expect(CommonLocaleDataEn().territories.countries['US']!.short, 'US');
+    expect(CommonLocaleDataEn().territories.territories['US']!.short, 'US');
   });
 }

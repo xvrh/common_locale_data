@@ -1,7 +1,7 @@
-import 'package:collection/collection.dart';
 import '../../common_locale_data.dart';
 
 const _locale = 'sq-MK';
+const _cld = CommonLocaleDataSqMK._();
 
 /// Translations of [CommonLocaleData]
 ///
@@ -10,3036 +10,265 @@ class CommonLocaleDataSqMK implements CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataSqMK();
+  const CommonLocaleDataSqMK._();
 
-  static final _dateFields = DateFieldsSqMK._();
+  factory CommonLocaleDataSqMK() => _cld;
+
   @override
-  DateFields get date => _dateFields;
+  CommonLocaleData get instance => _cld;
 
-  static final _languages = LanguagesSqMK._();
-  @override
-  Languages get languages => _languages;
+  static const CommonLocaleData staticInstance = _cld;
 
-  static final _scripts = ScriptsSqMK._();
-  @override
-  Scripts get scripts => _scripts;
-
-  static final _variants = VariantsSqMK._();
-  @override
-  Variants get variants => _variants;
-
-  static final _units = UnitsSqMK._();
+  static final _units = UnitsSqMK._(_cld);
   @override
   Units get units => _units;
 
-  static final _territories = TerritoriesSqMK._();
+  static final _dateFields = DateFieldsSqMK._(_cld);
+  @override
+  DateFields get date => _dateFields;
+
+  static final _languages = LanguagesSqMK._(_cld);
+  @override
+  Languages get languages => _languages;
+
+  static final _scripts = ScriptsSqMK._(_cld);
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _territories = TerritoriesSqMK._(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _timeZones = TimeZonesSqMK._(_territories);
+  static final _variants = VariantsSqMK._(_cld);
+  @override
+  Variants get variants => _variants;
+
+  static final _subdivisions = SubdivisionsSqMK._(_cld);
+  @override
+  Subdivisions get subdivisions => _subdivisions;
+
+  static final _currencies = CurrenciesSqMK._(_cld);
+  @override
+  Currencies get currencies => _currencies;
+
+  static final _timeZones = TimeZonesSqMK._(_cld);
   @override
   TimeZones get timeZones => _timeZones;
+
+  static final _localeDisplayName = LocaleDisplayNameSqMK._(_cld);
+  @override
+  LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
-class LanguagesSqMK extends Languages {
-  LanguagesSqMK._();
+class UnitsSqMK extends Units {
+  UnitsSqMK._(super.cld);
 
   @override
-  final languages = CanonicalizedMap<String, String, Language>.from({
-    'aa': Language(
-      'aa',
-      'afarisht',
-    ),
-    'ab': Language(
-      'ab',
-      'abkazisht',
-    ),
-    'ace': Language(
-      'ace',
-      'akinezisht',
-    ),
-    'ada': Language(
-      'ada',
-      'andangmeisht',
-    ),
-    'ady': Language(
-      'ady',
-      'adigisht',
-    ),
-    'af': Language(
-      'af',
-      'afrikanisht',
-    ),
-    'agq': Language(
-      'agq',
-      'agemisht',
-    ),
-    'ain': Language(
-      'ain',
-      'ajnuisht',
-    ),
-    'ak': Language(
-      'ak',
-      'akanisht',
-    ),
-    'ale': Language(
-      'ale',
-      'aleutisht',
-    ),
-    'alt': Language(
-      'alt',
-      'altaishte jugore',
-    ),
-    'am': Language(
-      'am',
-      'amarisht',
-    ),
-    'an': Language(
-      'an',
-      'aragonezisht',
-    ),
-    'ann': Language(
-      'ann',
-      'oboloisht',
-    ),
-    'anp': Language(
-      'anp',
-      'angikisht',
-    ),
-    'ar': Language(
-      'ar',
-      'arabisht',
-    ),
-    'ar-001': Language(
-      'ar-001',
-      'arabishte standarde moderne',
-    ),
-    'arn': Language(
-      'arn',
-      'mapuçisht',
-    ),
-    'arp': Language(
-      'arp',
-      'arapahoisht',
-    ),
-    'ars': Language(
-      'ars',
-      'arabishte naxhdi',
-    ),
-    'as': Language(
-      'as',
-      'asamezisht',
-    ),
-    'asa': Language(
-      'asa',
-      'asuisht',
-    ),
-    'ast': Language(
-      'ast',
-      'asturisht',
-    ),
-    'atj': Language(
-      'atj',
-      'atikamekisht',
-    ),
-    'av': Language(
-      'av',
-      'avarikisht',
-    ),
-    'awa': Language(
-      'awa',
-      'auadhisht',
-    ),
-    'ay': Language(
-      'ay',
-      'ajmarisht',
-    ),
-    'az': Language(
-      'az',
-      'azerbajxhanisht',
-      short: 'azerisht',
-    ),
-    'ba': Language(
-      'ba',
-      'bashkirisht',
-    ),
-    'ban': Language(
-      'ban',
-      'balinezisht',
-    ),
-    'bas': Language(
-      'bas',
-      'basaisht',
-    ),
-    'be': Language(
-      'be',
-      'bjellorusisht',
-    ),
-    'bem': Language(
-      'bem',
-      'bembaisht',
-    ),
-    'bez': Language(
-      'bez',
-      'benaisht',
-    ),
-    'bg': Language(
-      'bg',
-      'bullgarisht',
-    ),
-    'bgc': Language(
-      'bgc',
-      'harjanvisht',
-    ),
-    'bgn': Language(
-      'bgn',
-      'balokishte perëndimore',
-    ),
-    'bho': Language(
-      'bho',
-      'boxhpurisht',
-    ),
-    'bi': Language(
-      'bi',
-      'bislamisht',
-    ),
-    'bin': Language(
-      'bin',
-      'binisht',
-    ),
-    'bla': Language(
-      'bla',
-      'siksikaisht',
-    ),
-    'blo': Language(
-      'blo',
-      'anisht',
-    ),
-    'bm': Language(
-      'bm',
-      'bambarisht',
-    ),
-    'bn': Language(
-      'bn',
-      'bengalisht',
-    ),
-    'bo': Language(
-      'bo',
-      'tibetisht',
-    ),
-    'br': Language(
-      'br',
-      'bretonisht',
-    ),
-    'brx': Language(
-      'brx',
-      'bodoisht',
-    ),
-    'bs': Language(
-      'bs',
-      'boshnjakisht',
-    ),
-    'bug': Language(
-      'bug',
-      'buginezisht',
-    ),
-    'byn': Language(
-      'byn',
-      'blinisht',
-    ),
-    'ca': Language(
-      'ca',
-      'katalonisht',
-    ),
-    'cay': Language(
-      'cay',
-      'kajugaisht',
-    ),
-    'ccp': Language(
-      'ccp',
-      'çakmaisht',
-    ),
-    'ce': Language(
-      'ce',
-      'çeçenisht',
-    ),
-    'ceb': Language(
-      'ceb',
-      'sebuanisht',
-    ),
-    'cgg': Language(
-      'cgg',
-      'çigisht',
-    ),
-    'ch': Language(
-      'ch',
-      'kamoroisht',
-    ),
-    'chk': Language(
-      'chk',
-      'çukezisht',
-    ),
-    'chm': Language(
-      'chm',
-      'marisht',
-    ),
-    'cho': Language(
-      'cho',
-      'çoktauisht',
-    ),
-    'chp': Language(
-      'chp',
-      'çipeuajanisht',
-    ),
-    'chr': Language(
-      'chr',
-      'çerokisht',
-    ),
-    'chy': Language(
-      'chy',
-      'çejenisht',
-    ),
-    'ckb': Language(
-      'ckb',
-      'kurdishte qendrore',
-      variant: 'kurdishte qendrore',
-      menu: 'kurdishte qendrore',
-    ),
-    'clc': Language(
-      'clc',
-      'çilkotinisht',
-    ),
-    'co': Language(
-      'co',
-      'korsikisht',
-    ),
-    'crg': Language(
-      'crg',
-      'miçifisht',
-    ),
-    'crj': Language(
-      'crj',
-      'krijishte juglindore',
-    ),
-    'crk': Language(
-      'crk',
-      'krijishte fusharake',
-    ),
-    'crl': Language(
-      'crl',
-      'krijishte verilindore',
-    ),
-    'crm': Language(
-      'crm',
-      'krijishte e Muzit',
-    ),
-    'crr': Language(
-      'crr',
-      'algonkuianishte e Karolinës',
-    ),
-    'crs': Language(
-      'crs',
-      'frëngjishte kreole seselve',
-    ),
-    'cs': Language(
-      'cs',
-      'çekisht',
-    ),
-    'csw': Language(
-      'csw',
-      'krijishte e moçaleve (Ontario)',
-    ),
-    'cu': Language(
-      'cu',
-      'sllavishte kishtare',
-    ),
-    'cv': Language(
-      'cv',
-      'çuvashisht',
-    ),
-    'cy': Language(
-      'cy',
-      'uellsisht',
-    ),
-    'da': Language(
-      'da',
-      'danisht',
-    ),
-    'dak': Language(
-      'dak',
-      'dakotisht',
-    ),
-    'dar': Language(
-      'dar',
-      'darguaisht',
-    ),
-    'dav': Language(
-      'dav',
-      'tajtaisht',
-    ),
-    'de': Language(
-      'de',
-      'gjermanisht',
-    ),
-    'de-AT': Language(
-      'de-AT',
-      'gjermanishte austriake',
-    ),
-    'de-CH': Language(
-      'de-CH',
-      'gjermanishte zvicerane (dialekti i Alpeve)',
-    ),
-    'dgr': Language(
-      'dgr',
-      'dogribisht',
-    ),
-    'dje': Language(
-      'dje',
-      'zarmaisht',
-    ),
-    'doi': Language(
-      'doi',
-      'dogrisht',
-    ),
-    'dsb': Language(
-      'dsb',
-      'sorbishte e poshtme',
-    ),
-    'dua': Language(
-      'dua',
-      'dualaisht',
-    ),
-    'dv': Language(
-      'dv',
-      'divehisht',
-    ),
-    'dyo': Language(
-      'dyo',
-      'xhulafonjisht',
-    ),
-    'dz': Language(
-      'dz',
-      'xhongaisht',
-    ),
-    'dzg': Language(
-      'dzg',
-      'dazagauisht',
-    ),
-    'ebu': Language(
-      'ebu',
-      'embuisht',
-    ),
-    'ee': Language(
-      'ee',
-      'eveisht',
-    ),
-    'efi': Language(
-      'efi',
-      'efikisht',
-    ),
-    'eka': Language(
-      'eka',
-      'ekajukisht',
-    ),
-    'el': Language(
-      'el',
-      'greqisht',
-    ),
-    'en': Language(
-      'en',
-      'anglisht',
-    ),
-    'en-AU': Language(
-      'en-AU',
-      'anglishte australiane',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'anglishte kanadeze',
-    ),
-    'en-GB': Language(
-      'en-GB',
-      'anglishte britanike',
-      short: 'anglishte e Mbretërisë së Bashkuar',
-    ),
-    'en-US': Language(
-      'en-US',
-      'anglishte amerikane',
-      short: 'anglishte e SHBA-së',
-    ),
-    'eo': Language(
-      'eo',
-      'esperanto',
-    ),
-    'es': Language(
-      'es',
-      'spanjisht',
-    ),
-    'es-419': Language(
-      'es-419',
-      'spanjishte amerikano-latine',
-    ),
-    'es-ES': Language(
-      'es-ES',
-      'spanjishte evropiane',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'spanjishte meksikane',
-    ),
-    'et': Language(
-      'et',
-      'estonisht',
-    ),
-    'eu': Language(
-      'eu',
-      'baskisht',
-    ),
-    'ewo': Language(
-      'ewo',
-      'euondoisht',
-    ),
-    'fa': Language(
-      'fa',
-      'persisht',
-    ),
-    'fa-AF': Language(
-      'fa-AF',
-      'darisht',
-    ),
-    'ff': Language(
-      'ff',
-      'fulaisht',
-    ),
-    'fi': Language(
-      'fi',
-      'finlandisht',
-    ),
-    'fil': Language(
-      'fil',
-      'filipinisht',
-    ),
-    'fj': Language(
-      'fj',
-      'fixhianisht',
-    ),
-    'fo': Language(
-      'fo',
-      'faroisht',
-    ),
-    'fon': Language(
-      'fon',
-      'fonisht',
-    ),
-    'fr': Language(
-      'fr',
-      'frëngjisht',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'frëngjishte kanadeze',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'frëngjishte zvicerane',
-    ),
-    'frc': Language(
-      'frc',
-      'frëngjishte kajune',
-    ),
-    'frr': Language(
-      'frr',
-      'frisianishte veriore',
-    ),
-    'fur': Language(
-      'fur',
-      'friulianisht',
-    ),
-    'fy': Language(
-      'fy',
-      'frizianishte perëndimore',
-    ),
-    'ga': Language(
-      'ga',
-      'irlandisht',
-    ),
-    'gaa': Language(
-      'gaa',
-      'gaisht',
-    ),
-    'gag': Language(
-      'gag',
-      'gagauzisht',
-    ),
-    'gd': Language(
-      'gd',
-      'galishte skoceze',
-    ),
-    'gez': Language(
-      'gez',
-      'gizisht',
-    ),
-    'gil': Language(
-      'gil',
-      'gilbertazisht',
-    ),
-    'gl': Language(
-      'gl',
-      'galicisht',
-    ),
-    'gn': Language(
-      'gn',
-      'guaranisht',
-    ),
-    'gor': Language(
-      'gor',
-      'gorontaloisht',
-    ),
-    'gsw': Language(
-      'gsw',
-      'gjermanishte zvicerane',
-    ),
-    'gu': Language(
-      'gu',
-      'guxharatisht',
-    ),
-    'guz': Language(
-      'guz',
-      'gusisht',
-    ),
-    'gv': Language(
-      'gv',
-      'manksisht',
-    ),
-    'gwi': Language(
-      'gwi',
-      'guiçinisht',
-    ),
-    'ha': Language(
-      'ha',
-      'hausisht',
-    ),
-    'hai': Language(
-      'hai',
-      'haidaisht',
-    ),
-    'haw': Language(
-      'haw',
-      'havaisht',
-    ),
-    'hax': Language(
-      'hax',
-      'haidaishte jugore',
-    ),
-    'he': Language(
-      'he',
-      'hebraisht',
-    ),
-    'hi': Language(
-      'hi',
-      'indisht',
-    ),
-    'hi-Latn': Language(
-      'hi-Latn',
-      'hindisht (latine)',
-      variant: 'hinglisht',
-    ),
-    'hil': Language(
-      'hil',
-      'hiligajnonisht',
-    ),
-    'hmn': Language(
-      'hmn',
-      'hmongisht',
-    ),
-    'hr': Language(
-      'hr',
-      'kroatisht',
-    ),
-    'hsb': Language(
-      'hsb',
-      'sorbishte e sipërme',
-    ),
-    'ht': Language(
-      'ht',
-      'kreolishte e Haitit',
-    ),
-    'hu': Language(
-      'hu',
-      'hungarisht',
-    ),
-    'hup': Language(
-      'hup',
-      'hupaisht',
-    ),
-    'hur': Language(
-      'hur',
-      'halkemejlemisht',
-    ),
-    'hy': Language(
-      'hy',
-      'armenisht',
-    ),
-    'hz': Language(
-      'hz',
-      'hereroisht',
-    ),
-    'ia': Language(
-      'ia',
-      'interlingua',
-    ),
-    'iba': Language(
-      'iba',
-      'ibanisht',
-    ),
-    'ibb': Language(
-      'ibb',
-      'ibibioisht',
-    ),
-    'id': Language(
-      'id',
-      'indonezisht',
-    ),
-    'ie': Language(
-      'ie',
-      'gjuha oksidentale',
-    ),
-    'ig': Language(
-      'ig',
-      'igboisht',
-    ),
-    'ii': Language(
-      'ii',
-      'sishuanisht',
-    ),
-    'ikt': Language(
-      'ikt',
-      'inuktitutishte kanadeze perëndimore',
-    ),
-    'ilo': Language(
-      'ilo',
-      'ilokoisht',
-    ),
-    'inh': Language(
-      'inh',
-      'ingushisht',
-    ),
-    'io': Language(
-      'io',
-      'idoisht',
-    ),
-    'is': Language(
-      'is',
-      'islandisht',
-    ),
-    'it': Language(
-      'it',
-      'italisht',
-    ),
-    'iu': Language(
-      'iu',
-      'inuktitutisht',
-    ),
-    'ja': Language(
-      'ja',
-      'japonisht',
-    ),
-    'jbo': Language(
-      'jbo',
-      'lojbanisht',
-    ),
-    'jgo': Language(
-      'jgo',
-      'ngombisht',
-    ),
-    'jmc': Language(
-      'jmc',
-      'maçamisht',
-    ),
-    'jv': Language(
-      'jv',
-      'javanisht',
-    ),
-    'ka': Language(
-      'ka',
-      'gjeorgjisht',
-    ),
-    'kab': Language(
-      'kab',
-      'kabilisht',
-    ),
-    'kac': Language(
-      'kac',
-      'kaçinisht',
-    ),
-    'kaj': Language(
-      'kaj',
-      'kajeisht',
-    ),
-    'kam': Language(
-      'kam',
-      'kambaisht',
-    ),
-    'kbd': Language(
-      'kbd',
-      'kabardianisht',
-    ),
-    'kcg': Language(
-      'kcg',
-      'tjapisht',
-    ),
-    'kde': Language(
-      'kde',
-      'makondisht',
-    ),
-    'kea': Language(
-      'kea',
-      'kreolishte e Kepit të Gjelbër',
-    ),
-    'kfo': Language(
-      'kfo',
-      'koroisht',
-    ),
-    'kgp': Language(
-      'kgp',
-      'kaingangisht',
-    ),
-    'kha': Language(
-      'kha',
-      'kasisht',
-    ),
-    'khq': Language(
-      'khq',
-      'kojraçinisht',
-    ),
-    'ki': Language(
-      'ki',
-      'kikujuisht',
-    ),
-    'kj': Language(
-      'kj',
-      'kuanjamaisht',
-    ),
-    'kk': Language(
-      'kk',
-      'kazakisht',
-    ),
-    'kkj': Language(
-      'kkj',
-      'kakoisht',
-    ),
-    'kl': Language(
-      'kl',
-      'kalalisutisht',
-    ),
-    'kln': Language(
-      'kln',
-      'kalenxhinisht',
-    ),
-    'km': Language(
-      'km',
-      'kmerisht',
-    ),
-    'kmb': Language(
-      'kmb',
-      'kimbunduisht',
-    ),
-    'kn': Language(
-      'kn',
-      'kanadisht',
-    ),
-    'ko': Language(
-      'ko',
-      'koreanisht',
-    ),
-    'koi': Language(
-      'koi',
-      'komi-parmjakisht',
-    ),
-    'kok': Language(
-      'kok',
-      'konkanisht',
-    ),
-    'kpe': Language(
-      'kpe',
-      'kpeleisht',
-    ),
-    'kr': Language(
-      'kr',
-      'kanurisht',
-    ),
-    'krc': Language(
-      'krc',
-      'karaçaj-balkarisht',
-    ),
-    'krl': Language(
-      'krl',
-      'karelianisht',
-    ),
-    'kru': Language(
-      'kru',
-      'kurukisht',
-    ),
-    'ks': Language(
-      'ks',
-      'kashmirisht',
-    ),
-    'ksb': Language(
-      'ksb',
-      'shambalisht',
-    ),
-    'ksf': Language(
-      'ksf',
-      'bafianisht',
-    ),
-    'ksh': Language(
-      'ksh',
-      'këlnisht',
-    ),
-    'ku': Language(
-      'ku',
-      'kurdisht',
-    ),
-    'kum': Language(
-      'kum',
-      'kumikisht',
-    ),
-    'kv': Language(
-      'kv',
-      'komisht',
-    ),
-    'kw': Language(
-      'kw',
-      'kornisht',
-    ),
-    'kwk': Language(
-      'kwk',
-      'kuakualaisht',
-    ),
-    'kxv': Language(
-      'kxv',
-      'kuvisht',
-    ),
-    'ky': Language(
-      'ky',
-      'kirgizisht',
-    ),
-    'la': Language(
-      'la',
-      'latinisht',
-    ),
-    'lad': Language(
-      'lad',
-      'ladinoisht',
-    ),
-    'lag': Language(
-      'lag',
-      'langisht',
-    ),
-    'lb': Language(
-      'lb',
-      'luksemburgisht',
-    ),
-    'lez': Language(
-      'lez',
-      'lezgianisht',
-    ),
-    'lg': Language(
-      'lg',
-      'gandaisht',
-    ),
-    'li': Language(
-      'li',
-      'limburgisht',
-    ),
-    'lij': Language(
-      'lij',
-      'ligurianisht',
-    ),
-    'lil': Language(
-      'lil',
-      'lilluetisht',
-    ),
-    'lkt': Language(
-      'lkt',
-      'lakotisht',
-    ),
-    'lmo': Language(
-      'lmo',
-      'lombardisht',
-    ),
-    'ln': Language(
-      'ln',
-      'lingalisht',
-    ),
-    'lo': Language(
-      'lo',
-      'laosisht',
-    ),
-    'lou': Language(
-      'lou',
-      'kreolishte e Luizianës',
-    ),
-    'loz': Language(
-      'loz',
-      'lozisht',
-    ),
-    'lrc': Language(
-      'lrc',
-      'lurishte veriore',
-    ),
-    'lsm': Language(
-      'lsm',
-      'samisht',
-    ),
-    'lt': Language(
-      'lt',
-      'lituanisht',
-    ),
-    'lu': Language(
-      'lu',
-      'luba-katangaisht',
-    ),
-    'lua': Language(
-      'lua',
-      'luba-luluaisht',
-    ),
-    'lun': Language(
-      'lun',
-      'lundaisht',
-    ),
-    'luo': Language(
-      'luo',
-      'luoisht',
-    ),
-    'lus': Language(
-      'lus',
-      'mizoisht',
-    ),
-    'luy': Language(
-      'luy',
-      'lujaisht',
-    ),
-    'lv': Language(
-      'lv',
-      'letonisht',
-    ),
-    'mad': Language(
-      'mad',
-      'madurezisht',
-    ),
-    'mag': Language(
-      'mag',
-      'magaisht',
-    ),
-    'mai': Language(
-      'mai',
-      'maitilisht',
-    ),
-    'mak': Language(
-      'mak',
-      'makasarisht',
-    ),
-    'mas': Language(
-      'mas',
-      'masaisht',
-    ),
-    'mdf': Language(
-      'mdf',
-      'mokshaisht',
-    ),
-    'men': Language(
-      'men',
-      'mendisht',
-    ),
-    'mer': Language(
-      'mer',
-      'meruisht',
-    ),
-    'mfe': Language(
-      'mfe',
-      'morisjenisht',
-    ),
-    'mg': Language(
-      'mg',
-      'madagaskarisht',
-    ),
-    'mgh': Language(
-      'mgh',
-      'makua-mitoisht',
-    ),
-    'mgo': Language(
-      'mgo',
-      'metaisht',
-    ),
-    'mh': Language(
-      'mh',
-      'marshallisht',
-    ),
-    'mi': Language(
-      'mi',
-      'maorisht',
-    ),
-    'mic': Language(
-      'mic',
-      'mikmakisht',
-    ),
-    'min': Language(
-      'min',
-      'minangkabauisht',
-    ),
-    'mk': Language(
-      'mk',
-      'maqedonisht',
-    ),
-    'ml': Language(
-      'ml',
-      'malajalamisht',
-    ),
-    'mn': Language(
-      'mn',
-      'mongolisht',
-    ),
-    'mni': Language(
-      'mni',
-      'manipurisht',
-    ),
-    'moe': Language(
-      'moe',
-      'inuaimunisht',
-    ),
-    'moh': Language(
-      'moh',
-      'mohokisht',
-    ),
-    'mos': Language(
-      'mos',
-      'mosisht',
-    ),
-    'mr': Language(
-      'mr',
-      'maratisht',
-    ),
-    'ms': Language(
-      'ms',
-      'malajisht',
-    ),
-    'mt': Language(
-      'mt',
-      'maltisht',
-    ),
-    'mua': Language(
-      'mua',
-      'mundangisht',
-    ),
-    'mul': Language(
-      'mul',
-      'gjuhë të shumëfishta',
-    ),
-    'mus': Language(
-      'mus',
-      'krikisht',
-    ),
-    'mwl': Language(
-      'mwl',
-      'mirandisht',
-    ),
-    'my': Language(
-      'my',
-      'birmanisht',
-    ),
-    'myv': Language(
-      'myv',
-      'erzjaisht',
-    ),
-    'mzn': Language(
-      'mzn',
-      'mazanderanisht',
-    ),
-    'na': Language(
-      'na',
-      'nauruisht',
-    ),
-    'nap': Language(
-      'nap',
-      'napoletanisht',
-    ),
-    'naq': Language(
-      'naq',
-      'namaisht',
-    ),
-    'nb': Language(
-      'nb',
-      'norvegjishte letrare',
-    ),
-    'nd': Language(
-      'nd',
-      'ndebelishte veriore',
-    ),
-    'nds': Language(
-      'nds',
-      'gjermanishte e vendeve të ulëta',
-    ),
-    'nds-NL': Language(
-      'nds-NL',
-      'gjermanishte saksone e vendeve të ulëta',
-    ),
-    'ne': Language(
-      'ne',
-      'nepalisht',
-    ),
-    'new': Language(
-      'new',
-      'neuarisht',
-    ),
-    'ng': Language(
-      'ng',
-      'ndongaisht',
-    ),
-    'nia': Language(
-      'nia',
-      'niasisht',
-    ),
-    'niu': Language(
-      'niu',
-      'niueanisht',
-    ),
-    'nl': Language(
-      'nl',
-      'holandisht',
-    ),
-    'nl-BE': Language(
-      'nl-BE',
-      'flamandisht',
-    ),
-    'nmg': Language(
-      'nmg',
-      'kuasisht',
-    ),
-    'nn': Language(
-      'nn',
-      'norvegjishte nynorsk',
-    ),
-    'nnh': Language(
-      'nnh',
-      'ngiembunisht',
-    ),
-    'no': Language(
-      'no',
-      'norvegjisht',
-    ),
-    'nog': Language(
-      'nog',
-      'nogajisht',
-    ),
-    'nqo': Language(
-      'nqo',
-      'nkoisht',
-    ),
-    'nr': Language(
-      'nr',
-      'ndebelishte jugore',
-    ),
-    'nso': Language(
-      'nso',
-      'sotoishte veriore',
-    ),
-    'nus': Language(
-      'nus',
-      'nuerisht',
-    ),
-    'nv': Language(
-      'nv',
-      'navahoisht',
-    ),
-    'ny': Language(
-      'ny',
-      'nianjisht',
-    ),
-    'nyn': Language(
-      'nyn',
-      'niankolisht',
-    ),
-    'oc': Language(
-      'oc',
-      'oksitanisht',
-    ),
-    'ojb': Language(
-      'ojb',
-      'oxhibuaishte verilindore',
-    ),
-    'ojc': Language(
-      'ojc',
-      'oxhibuaishte qendrore',
-    ),
-    'ojs': Language(
-      'ojs',
-      'oxhikrijisht',
-    ),
-    'ojw': Language(
-      'ojw',
-      'oxhibuaishte perëndimore',
-    ),
-    'oka': Language(
-      'oka',
-      'okanaganisht',
-    ),
-    'om': Language(
-      'om',
-      'oromoisht',
-    ),
-    'or': Language(
-      'or',
-      'odisht',
-    ),
-    'os': Language(
-      'os',
-      'osetisht',
-    ),
-    'pa': Language(
-      'pa',
-      'punxhabisht',
-    ),
-    'pag': Language(
-      'pag',
-      'pangasinanisht',
-    ),
-    'pam': Language(
-      'pam',
-      'pampangaisht',
-    ),
-    'pap': Language(
-      'pap',
-      'papiamentisht',
-    ),
-    'pau': Language(
-      'pau',
-      'paluanisht',
-    ),
-    'pcm': Language(
-      'pcm',
-      'pixhinishte nigeriane',
-    ),
-    'pis': Language(
-      'pis',
-      'pixhinisht',
-    ),
-    'pl': Language(
-      'pl',
-      'polonisht',
-    ),
-    'pqm': Language(
-      'pqm',
-      'malisit-pasamakuadisht',
-    ),
-    'prg': Language(
-      'prg',
-      'prusisht',
-    ),
-    'ps': Language(
-      'ps',
-      'pashtoisht',
-    ),
-    'pt': Language(
-      'pt',
-      'portugalisht',
-    ),
-    'pt-BR': Language(
-      'pt-BR',
-      'portugalishte braziliane',
-    ),
-    'pt-PT': Language(
-      'pt-PT',
-      'portugalishte evropiane',
-    ),
-    'qu': Language(
-      'qu',
-      'keçuaisht',
-    ),
-    'quc': Language(
-      'quc',
-      'kiçeisht',
-    ),
-    'raj': Language(
-      'raj',
-      'raxhastanisht',
-    ),
-    'rap': Language(
-      'rap',
-      'rapanuisht',
-    ),
-    'rar': Language(
-      'rar',
-      'rarontonganisht',
-    ),
-    'rhg': Language(
-      'rhg',
-      'rohingiaisht',
-    ),
-    'rm': Language(
-      'rm',
-      'retoromanisht',
-    ),
-    'rn': Language(
-      'rn',
-      'rundisht',
-    ),
-    'ro': Language(
-      'ro',
-      'rumanisht',
-    ),
-    'ro-MD': Language(
-      'ro-MD',
-      'moldavisht',
-    ),
-    'rof': Language(
-      'rof',
-      'romboisht',
-    ),
-    'ru': Language(
-      'ru',
-      'rusisht',
-    ),
-    'rup': Language(
-      'rup',
-      'vllahisht',
-    ),
-    'rw': Language(
-      'rw',
-      'kiniaruandisht',
-    ),
-    'rwk': Language(
-      'rwk',
-      'ruaisht',
-    ),
-    'sa': Language(
-      'sa',
-      'sanskritisht',
-    ),
-    'sad': Language(
-      'sad',
-      'sandauisht',
-    ),
-    'sah': Language(
-      'sah',
-      'sakaisht',
-    ),
-    'saq': Language(
-      'saq',
-      'samburisht',
-    ),
-    'sat': Language(
-      'sat',
-      'santalisht',
-    ),
-    'sba': Language(
-      'sba',
-      'ngambajisht',
-    ),
-    'sbp': Language(
-      'sbp',
-      'sanguisht',
-    ),
-    'sc': Language(
-      'sc',
-      'sardenjisht',
-    ),
-    'scn': Language(
-      'scn',
-      'siçilianisht',
-    ),
-    'sco': Language(
-      'sco',
-      'skotisht',
-    ),
-    'sd': Language(
-      'sd',
-      'sindisht',
-    ),
-    'sdh': Language(
-      'sdh',
-      'kurdishte jugore',
-    ),
-    'se': Language(
-      'se',
-      'samishte veriore',
-    ),
-    'seh': Language(
-      'seh',
-      'senaisht',
-    ),
-    'ses': Language(
-      'ses',
-      'senishte kojrabore',
-    ),
-    'sg': Language(
-      'sg',
-      'sangoisht',
-    ),
-    'sh': Language(
-      'sh',
-      'serbo-kroatisht',
-    ),
-    'shi': Language(
-      'shi',
-      'taçelitisht',
-    ),
-    'shn': Language(
-      'shn',
-      'shanisht',
-    ),
-    'si': Language(
-      'si',
-      'sinhalisht',
-    ),
-    'sk': Language(
-      'sk',
-      'sllovakisht',
-    ),
-    'sl': Language(
-      'sl',
-      'sllovenisht',
-    ),
-    'slh': Language(
-      'slh',
-      'lashutsidishte jugore',
-    ),
-    'sm': Language(
-      'sm',
-      'samoanisht',
-    ),
-    'sma': Language(
-      'sma',
-      'samishte jugore',
-    ),
-    'smj': Language(
-      'smj',
-      'samishte lule',
-    ),
-    'smn': Language(
-      'smn',
-      'samishte inari',
-    ),
-    'sms': Language(
-      'sms',
-      'samishte skolti',
-    ),
-    'sn': Language(
-      'sn',
-      'shonisht',
-    ),
-    'snk': Language(
-      'snk',
-      'soninkisht',
-    ),
-    'so': Language(
-      'so',
-      'somalisht',
-    ),
-    'sq': Language(
-      'sq',
-      'shqip',
-    ),
-    'sr': Language(
-      'sr',
-      'serbisht',
-    ),
-    'srn': Language(
-      'srn',
-      'srananisht (sranantongoisht)',
-    ),
-    'ss': Language(
-      'ss',
-      'suatisht',
-    ),
-    'ssy': Language(
-      'ssy',
-      'sahoisht',
-    ),
-    'st': Language(
-      'st',
-      'sotoishte jugore',
-    ),
-    'str': Language(
-      'str',
-      'sejlishte e Ngushticave të Rozarios',
-    ),
-    'su': Language(
-      'su',
-      'sundanisht',
-    ),
-    'suk': Language(
-      'suk',
-      'sukumaisht',
-    ),
-    'sv': Language(
-      'sv',
-      'suedisht',
-    ),
-    'sw': Language(
-      'sw',
-      'suahilisht',
-    ),
-    'sw-CD': Language(
-      'sw-CD',
-      'suahilishte kongoleze',
-    ),
-    'swb': Language(
-      'swb',
-      'kamorianisht',
-    ),
-    'syr': Language(
-      'syr',
-      'siriakisht',
-    ),
-    'szl': Language(
-      'szl',
-      'silesisht',
-    ),
-    'ta': Language(
-      'ta',
-      'tamilisht',
-    ),
-    'tce': Language(
-      'tce',
-      'tatshonishte jugore',
-    ),
-    'te': Language(
-      'te',
-      'teluguisht',
-    ),
-    'tem': Language(
-      'tem',
-      'timneisht',
-    ),
-    'teo': Language(
-      'teo',
-      'tesoisht',
-    ),
-    'tet': Language(
-      'tet',
-      'tetumisht',
-    ),
-    'tg': Language(
-      'tg',
-      'taxhikisht',
-    ),
-    'tgx': Language(
-      'tgx',
-      'tagishisht',
-    ),
-    'th': Language(
-      'th',
-      'tajlandisht',
-    ),
-    'tht': Language(
-      'tht',
-      'taltanisht',
-    ),
-    'ti': Language(
-      'ti',
-      'tigrinjaisht',
-    ),
-    'tig': Language(
-      'tig',
-      'tigreisht',
-    ),
-    'tk': Language(
-      'tk',
-      'turkmenisht',
-    ),
-    'tlh': Language(
-      'tlh',
-      'klingonisht',
-    ),
-    'tli': Language(
-      'tli',
-      'tlingitisht',
-    ),
-    'tn': Language(
-      'tn',
-      'cuanaisht',
-    ),
-    'to': Language(
-      'to',
-      'tonganisht',
-    ),
-    'tok': Language(
-      'tok',
-      'tokiponaisht',
-    ),
-    'tpi': Language(
-      'tpi',
-      'pisinishte toku',
-    ),
-    'tr': Language(
-      'tr',
-      'turqisht',
-    ),
-    'trv': Language(
-      'trv',
-      'torokoisht',
-    ),
-    'ts': Language(
-      'ts',
-      'congaisht',
-    ),
-    'tt': Language(
-      'tt',
-      'tatarisht',
-    ),
-    'ttm': Language(
-      'ttm',
-      'taçoneishte veriore',
-    ),
-    'tum': Language(
-      'tum',
-      'tumbukaisht',
-    ),
-    'tvl': Language(
-      'tvl',
-      'tuvaluisht',
-    ),
-    'tw': Language(
-      'tw',
-      'tuisht',
-    ),
-    'twq': Language(
-      'twq',
-      'tasavakisht',
-    ),
-    'ty': Language(
-      'ty',
-      'tahitisht',
-    ),
-    'tyv': Language(
-      'tyv',
-      'tuvinianisht',
-    ),
-    'tzm': Language(
-      'tzm',
-      'tamazajtisht e Atlasit Qendror',
-    ),
-    'udm': Language(
-      'udm',
-      'udmurtisht',
-    ),
-    'ug': Language(
-      'ug',
-      'ujgurisht',
-    ),
-    'uk': Language(
-      'uk',
-      'ukrainisht',
-    ),
-    'umb': Language(
-      'umb',
-      'umbunduisht',
-    ),
-    'und': Language(
-      'und',
-      'E panjohur',
-    ),
-    'ur': Language(
-      'ur',
-      'urduisht',
-    ),
-    'uz': Language(
-      'uz',
-      'uzbekisht',
-    ),
-    'vai': Language(
-      'vai',
-      'vaisht',
-    ),
-    've': Language(
-      've',
-      'vendaisht',
-    ),
-    'vec': Language(
-      'vec',
-      'venetisht',
-    ),
-    'vi': Language(
-      'vi',
-      'vietnamisht',
-    ),
-    'vmw': Language(
-      'vmw',
-      'makuvaisht',
-    ),
-    'vo': Language(
-      'vo',
-      'volapykisht',
-    ),
-    'vun': Language(
-      'vun',
-      'vunxhoisht',
-    ),
-    'wa': Language(
-      'wa',
-      'ualunisht',
-    ),
-    'wae': Language(
-      'wae',
-      'ualserisht',
-    ),
-    'wal': Language(
-      'wal',
-      'ulajtaisht',
-    ),
-    'war': Language(
-      'war',
-      'uarajisht',
-    ),
-    'wbp': Language(
-      'wbp',
-      'uarlpirisht',
-    ),
-    'wo': Language(
-      'wo',
-      'uolofisht',
-    ),
-    'wuu': Language(
-      'wuu',
-      'kinezishte vu',
-    ),
-    'xal': Language(
-      'xal',
-      'kalmikisht',
-    ),
-    'xh': Language(
-      'xh',
-      'xhosaisht',
-    ),
-    'xnr': Language(
-      'xnr',
-      'kangrisht',
-    ),
-    'xog': Language(
-      'xog',
-      'sogisht',
-    ),
-    'yav': Language(
-      'yav',
-      'jangbenisht',
-    ),
-    'ybb': Language(
-      'ybb',
-      'jembaisht',
-    ),
-    'yi': Language(
-      'yi',
-      'jidisht',
-    ),
-    'yo': Language(
-      'yo',
-      'jorubaisht',
-    ),
-    'yrl': Language(
-      'yrl',
-      'nejengatuisht',
-    ),
-    'yue': Language(
-      'yue',
-      'kantonezisht',
-      menu: 'kinezishte kantoneze',
-    ),
-    'za': Language(
-      'za',
-      'zhuangisht',
-    ),
-    'zgh': Language(
-      'zgh',
-      'tamaziatishte standarde marokene',
-    ),
-    'zh': Language(
-      'zh',
-      'kinezisht',
-      menu: 'kinezishte mandarine',
-    ),
-    'zh-Hans': Language(
-      'zh-Hans',
-      'kinezishte e thjeshtuar',
-    ),
-    'zh-Hant': Language(
-      'zh-Hant',
-      'kinezishte tradicionale',
-    ),
-    'zu': Language(
-      'zu',
-      'zuluisht',
-    ),
-    'zun': Language(
-      'zun',
-      'zunisht',
-    ),
-    'zxx': Language(
-      'zxx',
-      'nuk ka përmbajtje gjuhësore',
-    ),
-    'zza': Language(
-      'zza',
-      'zazaisht',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class ScriptsSqMK extends Scripts {
-  ScriptsSqMK._();
-
-  @override
-  final scripts = CanonicalizedMap<String, String, Script>.from({
-    'Adlm': Script(
-      'Adlm',
-      'adlam',
-    ),
-    'Aghb': Script(
-      'Aghb',
-      'albanishte e Kaukazit',
-    ),
-    'Ahom': Script(
-      'Ahom',
-      'ahomisht',
-    ),
-    'Arab': Script(
-      'Arab',
-      'arabik',
-    ),
-    'Aran': Script(
-      'Aran',
-      'nastalik',
-    ),
-    'Armi': Script(
-      'Armi',
-      'aramaishte perandorake',
-    ),
-    'Armn': Script(
-      'Armn',
-      'armen',
-    ),
-    'Avst': Script(
-      'Avst',
-      'avestanisht',
-    ),
-    'Bali': Script(
-      'Bali',
-      'bali',
-    ),
-    'Bamu': Script(
-      'Bamu',
-      'bamu',
-    ),
-    'Bass': Script(
-      'Bass',
-      'basavahisht',
-    ),
-    'Batk': Script(
-      'Batk',
-      'batak',
-    ),
-    'Beng': Script(
-      'Beng',
-      'bengal',
-    ),
-    'Bhks': Script(
-      'Bhks',
-      'baiksukisht',
-    ),
-    'Bopo': Script(
-      'Bopo',
-      'bopomof',
-    ),
-    'Brah': Script(
-      'Brah',
-      'brahmisht',
-    ),
-    'Brai': Script(
-      'Brai',
-      'brailisht',
-    ),
-    'Bugi': Script(
-      'Bugi',
-      'buginisht',
-    ),
-    'Buhd': Script(
-      'Buhd',
-      'buhidisht',
-    ),
-    'Cakm': Script(
-      'Cakm',
-      'çakma',
-    ),
-    'Cans': Script(
-      'Cans',
-      'rrokje të unifikuara aborigjene kanadeze',
-    ),
-    'Cari': Script(
-      'Cari',
-      'karianisht',
-    ),
-    'Cham': Script(
-      'Cham',
-      'çam',
-    ),
-    'Cher': Script(
-      'Cher',
-      'çeroki',
-    ),
-    'Chrs': Script(
-      'Chrs',
-      'korasmianisht',
-    ),
-    'Copt': Script(
-      'Copt',
-      'koptisht',
-    ),
-    'Cpmn': Script(
-      'Cpmn',
-      'minoishte e Qipros',
-    ),
-    'Cprt': Script(
-      'Cprt',
-      'qipriotisht',
-    ),
-    'Cyrl': Script(
-      'Cyrl',
-      'cirilik',
-    ),
-    'Deva': Script(
-      'Deva',
-      'devanagar',
-    ),
-    'Diak': Script(
-      'Diak',
-      'divesakuruisht',
-    ),
-    'Dogr': Script(
-      'Dogr',
-      'dograisht',
-    ),
-    'Dsrt': Script(
-      'Dsrt',
-      'deseretisht',
-    ),
-    'Dupl': Script(
-      'Dupl',
-      'duplojanisht - formë e shkurtër',
-    ),
-    'Egyp': Script(
-      'Egyp',
-      'hieroglife egjiptiane',
-    ),
-    'Elba': Script(
-      'Elba',
-      'shkrim i Elbasanit',
-    ),
-    'Elym': Script(
-      'Elym',
-      'elimaisht',
-    ),
-    'Ethi': Script(
-      'Ethi',
-      'etiopik',
-    ),
-    'Geor': Script(
-      'Geor',
-      'gjeorgjian',
-    ),
-    'Glag': Script(
-      'Glag',
-      'glagolitikisht',
-    ),
-    'Gong': Script(
-      'Gong',
-      'gong',
-    ),
-    'Gonm': Script(
-      'Gonm',
-      'masaramgondisht',
-    ),
-    'Goth': Script(
-      'Goth',
-      'gotik',
-    ),
-    'Gran': Script(
-      'Gran',
-      'grantaisht',
-    ),
-    'Grek': Script(
-      'Grek',
-      'grek',
-    ),
-    'Gujr': Script(
-      'Gujr',
-      'guxharat',
-    ),
-    'Guru': Script(
-      'Guru',
-      'gurmuk',
-    ),
-    'Hanb': Script(
-      'Hanb',
-      'hanbik',
-    ),
-    'Hang': Script(
-      'Hang',
-      'hangul',
-    ),
-    'Hani': Script(
-      'Hani',
-      'han',
-    ),
-    'Hano': Script(
-      'Hano',
-      'hanunoisht',
-    ),
-    'Hans': Script(
-      'Hans',
-      'i thjeshtuar',
-      standAlone: 'han i thjeshtuar',
-    ),
-    'Hant': Script(
-      'Hant',
-      'tradicional',
-      standAlone: 'han tradicional',
-    ),
-    'Hatr': Script(
-      'Hatr',
-      'hatranisht',
-    ),
-    'Hebr': Script(
-      'Hebr',
-      'hebraik',
-    ),
-    'Hira': Script(
-      'Hira',
-      'hiragan',
-    ),
-    'Hluw': Script(
-      'Hluw',
-      'hieroglife anatoliane',
-    ),
-    'Hmng': Script(
-      'Hmng',
-      'pahauhmonisht',
-    ),
-    'Hmnp': Script(
-      'Hmnp',
-      'niakeng puaçue hmong',
-    ),
-    'Hrkt': Script(
-      'Hrkt',
-      'alfabet rrokjesor japonez',
-    ),
-    'Hung': Script(
-      'Hung',
-      'hungarishte e vjetër',
-    ),
-    'Ital': Script(
-      'Ital',
-      'italishte e vjetër',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'jamosisht',
-    ),
-    'Java': Script(
-      'Java',
-      'java',
-    ),
-    'Jpan': Script(
-      'Jpan',
-      'japonez',
-    ),
-    'Kali': Script(
-      'Kali',
-      'kajali',
-    ),
-    'Kana': Script(
-      'Kana',
-      'katakan',
-    ),
-    'Kawi': Script(
-      'Kawi',
-      'kavi',
-    ),
-    'Khar': Script(
-      'Khar',
-      'karoshtisht',
-    ),
-    'Khmr': Script(
-      'Khmr',
-      'kmer',
-    ),
-    'Khoj': Script(
-      'Khoj',
-      'koxhkisht',
-    ),
-    'Kits': Script(
-      'Kits',
-      'shkrim i vogël kitan',
-    ),
-    'Knda': Script(
-      'Knda',
-      'kanad',
-    ),
-    'Kore': Script(
-      'Kore',
-      'korean',
-    ),
-    'Kthi': Script(
-      'Kthi',
-      'kaitisht',
-    ),
-    'Lana': Script(
-      'Lana',
-      'lana',
-    ),
-    'Laoo': Script(
-      'Laoo',
-      'laosisht',
-    ),
-    'Latn': Script(
-      'Latn',
-      'latin',
-    ),
-    'Lepc': Script(
-      'Lepc',
-      'lepça',
-    ),
-    'Limb': Script(
-      'Limb',
-      'limbu',
-    ),
-    'Lina': Script(
-      'Lina',
-      'Linear A',
-    ),
-    'Linb': Script(
-      'Linb',
-      'Linear B',
-    ),
-    'Lisu': Script(
-      'Lisu',
-      'fraser',
-    ),
-    'Lyci': Script(
-      'Lyci',
-      'licianisht',
-    ),
-    'Lydi': Script(
-      'Lydi',
-      'lidianisht',
-    ),
-    'Mahj': Script(
-      'Mahj',
-      'mahaxhanisht',
-    ),
-    'Maka': Script(
-      'Maka',
-      'makasarisht',
-    ),
-    'Mand': Script(
-      'Mand',
-      'mande',
-    ),
-    'Mani': Script(
-      'Mani',
-      'manikeanisht',
-    ),
-    'Marc': Script(
-      'Marc',
-      'markenisht',
-    ),
-    'Medf': Script(
-      'Medf',
-      'medefaidrinisht',
-    ),
-    'Mend': Script(
-      'Mend',
-      'mendeisht',
-    ),
-    'Merc': Script(
-      'Merc',
-      'meroitik kursiv',
-    ),
-    'Mero': Script(
-      'Mero',
-      'meroitik',
-    ),
-    'Mlym': Script(
-      'Mlym',
-      'malajalam',
-    ),
-    'Modi': Script(
-      'Modi',
-      'modisht',
-    ),
-    'Mong': Script(
-      'Mong',
-      'mongolisht',
-    ),
-    'Mroo': Script(
-      'Mroo',
-      'mroisht',
-    ),
-    'Mtei': Script(
-      'Mtei',
-      'mitei-majek',
-    ),
-    'Mult': Script(
-      'Mult',
-      'multanisht',
-    ),
-    'Mymr': Script(
-      'Mymr',
-      'birman',
-    ),
-    'Nagm': Script(
-      'Nagm',
-      'nag mundari',
-    ),
-    'Nand': Script(
-      'Nand',
-      'nandigarisht',
-    ),
-    'Narb': Script(
-      'Narb',
-      'arabishte veriore e vjetër',
-    ),
-    'Nbat': Script(
-      'Nbat',
-      'nabateanisht',
-    ),
-    'Newa': Script(
-      'Newa',
-      'neva',
-    ),
-    'Nkoo': Script(
-      'Nkoo',
-      'nko',
-    ),
-    'Nshu': Script(
-      'Nshu',
-      'nyshuisht',
-    ),
-    'Ogam': Script(
-      'Ogam',
-      'ogamisht',
-    ),
-    'Olck': Script(
-      'Olck',
-      'ol çiki',
-    ),
-    'Orkh': Script(
-      'Orkh',
-      'orkonisht',
-    ),
-    'Orya': Script(
-      'Orya',
-      'orija',
-    ),
-    'Osge': Script(
-      'Osge',
-      'osage',
-    ),
-    'Osma': Script(
-      'Osma',
-      'osmaniaisht',
-    ),
-    'Ougr': Script(
-      'Ougr',
-      'ujgurishte e vjetër',
-    ),
-    'Palm': Script(
-      'Palm',
-      'palmirenisht',
-    ),
-    'Pauc': Script(
-      'Pauc',
-      'pausinhauisht',
-    ),
-    'Perm': Script(
-      'Perm',
-      'permike e vjetër',
-    ),
-    'Phag': Script(
-      'Phag',
-      'fagspaisht',
-    ),
-    'Phli': Script(
-      'Phli',
-      'palavishte mbishkrimesh',
-    ),
-    'Phlp': Script(
-      'Phlp',
-      'palavishte psalteri',
-    ),
-    'Phnx': Script(
-      'Phnx',
-      'fenikisht',
-    ),
-    'Plrd': Script(
-      'Plrd',
-      'polard fonetik',
-    ),
-    'Prti': Script(
-      'Prti',
-      'persishte mbishkrimesh',
-    ),
-    'Qaag': Script(
-      'Qaag',
-      'zaugi',
-    ),
-    'Rjng': Script(
-      'Rjng',
-      'rexhangisht',
-    ),
-    'Rohg': Script(
-      'Rohg',
-      'hanifi',
-    ),
-    'Runr': Script(
-      'Runr',
-      'runike',
-    ),
-    'Samr': Script(
-      'Samr',
-      'samaritanisht',
-    ),
-    'Sarb': Script(
-      'Sarb',
-      'arabishte jugore e vjetër',
-    ),
-    'Saur': Script(
-      'Saur',
-      'saurashtra',
-    ),
-    'Sgnw': Script(
-      'Sgnw',
-      'shkrim sing',
-    ),
-    'Shaw': Script(
-      'Shaw',
-      'shavianisht',
-    ),
-    'Shrd': Script(
-      'Shrd',
-      'sharadisht',
-    ),
-    'Sidd': Script(
-      'Sidd',
-      'sidamisht',
-    ),
-    'Sind': Script(
-      'Sind',
-      'kudavadisht',
-    ),
-    'Sinh': Script(
-      'Sinh',
-      'sinhal',
-    ),
-    'Sogd': Script(
-      'Sogd',
-      'sogdianisht',
-    ),
-    'Sogo': Script(
-      'Sogo',
-      'sogdianishte e vjetër',
-    ),
-    'Sora': Script(
-      'Sora',
-      'sorasompengisht',
-    ),
-    'Soyo': Script(
-      'Soyo',
-      'sojomboisht',
-    ),
-    'Sund': Script(
-      'Sund',
-      'sundan',
-    ),
-    'Sylo': Script(
-      'Sylo',
-      'siloti nagri',
-    ),
-    'Syrc': Script(
-      'Syrc',
-      'siriak',
-    ),
-    'Tagb': Script(
-      'Tagb',
-      'tagbanvaisht',
-    ),
-    'Takr': Script(
-      'Takr',
-      'takri',
-    ),
-    'Tale': Script(
-      'Tale',
-      'tai le',
-    ),
-    'Talu': Script(
-      'Talu',
-      'tai lue i ri',
-    ),
-    'Taml': Script(
-      'Taml',
-      'tamil',
-    ),
-    'Tang': Script(
-      'Tang',
-      'tangut',
-    ),
-    'Tavt': Script(
-      'Tavt',
-      'tai viet',
-    ),
-    'Telu': Script(
-      'Telu',
-      'telug',
-    ),
-    'Tfng': Script(
-      'Tfng',
-      'tifinag',
-    ),
-    'Tglg': Script(
-      'Tglg',
-      'tagalog',
-    ),
-    'Thaa': Script(
-      'Thaa',
-      'tanisht',
-    ),
-    'Thai': Script(
-      'Thai',
-      'tajlandez',
-    ),
-    'Tibt': Script(
-      'Tibt',
-      'tibetisht',
-    ),
-    'Tirh': Script(
-      'Tirh',
-      'tirhuta',
-    ),
-    'Tnsa': Script(
-      'Tnsa',
-      'tangsa',
-    ),
-    'Toto': Script(
-      'Toto',
-      'toto',
-    ),
-    'Ugar': Script(
-      'Ugar',
-      'ugaritik',
-    ),
-    'Vaii': Script(
-      'Vaii',
-      'vai',
-    ),
-    'Vith': Script(
-      'Vith',
-      'vithkuqi',
-    ),
-    'Wara': Script(
-      'Wara',
-      'varang kshiti',
-    ),
-    'Wcho': Script(
-      'Wcho',
-      'vanço',
-    ),
-    'Xpeo': Script(
-      'Xpeo',
-      'persian i vjetër',
-    ),
-    'Xsux': Script(
-      'Xsux',
-      'kuneiform sumero-akadian',
-    ),
-    'Yezi': Script(
-      'Yezi',
-      'jezidi',
-    ),
-    'Yiii': Script(
-      'Yiii',
-      'ji',
-    ),
-    'Zanb': Script(
-      'Zanb',
-      'katror zanabazar',
-    ),
-    'Zinh': Script(
-      'Zinh',
-      'zin',
-    ),
-    'Zmth': Script(
-      'Zmth',
-      'simbole matematikore',
-    ),
-    'Zsye': Script(
-      'Zsye',
-      'emoji',
-    ),
-    'Zsym': Script(
-      'Zsym',
-      'me simbole',
-    ),
-    'Zxxx': Script(
-      'Zxxx',
-      'i pashkruar',
-    ),
-    'Zyyy': Script(
-      'Zyyy',
-      'i zakonshëm',
-    ),
-    'Zzzz': Script(
-      'Zzzz',
-      'i panjohur',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class VariantsSqMK extends Variants {
-  VariantsSqMK._();
-
-  @override
-  final variants = CanonicalizedMap<String, String, Variant>.from({
-    '1901': Variant(
-      '1901',
-      'Traditional German orthography',
-    ),
-    '1994': Variant(
-      '1994',
-      'Standardized Resian orthography',
-    ),
-    '1996': Variant(
-      '1996',
-      'German orthography of 1996',
-    ),
-    '1606NICT': Variant(
-      '1606NICT',
-      'Late Middle French to 1606',
-    ),
-    '1694ACAD': Variant(
-      '1694ACAD',
-      'Early Modern French',
-    ),
-    '1959ACAD': Variant(
-      '1959ACAD',
-      'Academic',
-    ),
-    'ABL1943': Variant(
-      'ABL1943',
-      'Orthographic formulation of 1943',
-    ),
-    'ALALC97': Variant(
-      'ALALC97',
-      'ALA-LC Romanization, 1997 edition',
-    ),
-    'ALUKU': Variant(
-      'ALUKU',
-      'Aluku dialect',
-    ),
-    'AO1990': Variant(
-      'AO1990',
-      'Portuguese Language Orthographic Agreement of 1990',
-    ),
-    'AREVELA': Variant(
-      'AREVELA',
-      'Eastern Armenian',
-    ),
-    'AREVMDA': Variant(
-      'AREVMDA',
-      'Western Armenian',
-    ),
-    'BAKU1926': Variant(
-      'BAKU1926',
-      'Unified Turkic Latin Alphabet',
-    ),
-    'BALANKA': Variant(
-      'BALANKA',
-      'Balanka dialect of Anii',
-    ),
-    'BARLA': Variant(
-      'BARLA',
-      'Barlavento dialect group of Kabuverdianu',
-    ),
-    'BISKE': Variant(
-      'BISKE',
-      'San Giorgio/Bila dialect',
-    ),
-    'BOHORIC': Variant(
-      'BOHORIC',
-      'Bohorič alphabet',
-    ),
-    'BOONT': Variant(
-      'BOONT',
-      'Boontling',
-    ),
-    'COLB1945': Variant(
-      'COLB1945',
-      'Portuguese-Brazilian Orthographic Convention of 1945',
-    ),
-    'DAJNKO': Variant(
-      'DAJNKO',
-      'Dajnko alphabet',
-    ),
-    'EKAVSK': Variant(
-      'EKAVSK',
-      'Serbian with Ekavian pronunciation',
-    ),
-    'EMODENG': Variant(
-      'EMODENG',
-      'Early Modern English',
-    ),
-    'FONIPA': Variant(
-      'FONIPA',
-      'IPA Phonetics',
-    ),
-    'FONUPA': Variant(
-      'FONUPA',
-      'UPA Phonetics',
-    ),
-    'HEPBURN': Variant(
-      'HEPBURN',
-      'Hepburn romanization',
-    ),
-    'IJEKAVSK': Variant(
-      'IJEKAVSK',
-      'Serbian with Ijekavian pronunciation',
-    ),
-    'KKCOR': Variant(
-      'KKCOR',
-      'Common Orthography',
-    ),
-    'KSCOR': Variant(
-      'KSCOR',
-      'Standard Orthography',
-    ),
-    'LIPAW': Variant(
-      'LIPAW',
-      'The Lipovaz dialect of Resian',
-    ),
-    'METELKO': Variant(
-      'METELKO',
-      'Metelko alphabet',
-    ),
-    'MONOTON': Variant(
-      'MONOTON',
-      'Monotonic',
-    ),
-    'NDYUKA': Variant(
-      'NDYUKA',
-      'Ndyuka dialect',
-    ),
-    'NEDIS': Variant(
-      'NEDIS',
-      'Natisone dialect',
-    ),
-    'NJIVA': Variant(
-      'NJIVA',
-      'Gniva/Njiva dialect',
-    ),
-    'NULIK': Variant(
-      'NULIK',
-      'Modern Volapük',
-    ),
-    'OSOJS': Variant(
-      'OSOJS',
-      'Oseacco/Osojane dialect',
-    ),
-    'OXENDICT': Variant(
-      'OXENDICT',
-      'Oxford English Dictionary spelling',
-    ),
-    'PAMAKA': Variant(
-      'PAMAKA',
-      'Pamaka dialect',
-    ),
-    'PINYIN': Variant(
-      'PINYIN',
-      'Pinyin Romanization',
-    ),
-    'POLYTON': Variant(
-      'POLYTON',
-      'Polytonic',
-    ),
-    'POSIX': Variant(
-      'POSIX',
-      'Computer',
-    ),
-    'REVISED': Variant(
-      'REVISED',
-      'Revised Orthography',
-    ),
-    'RIGIK': Variant(
-      'RIGIK',
-      'Classic Volapük',
-    ),
-    'ROZAJ': Variant(
-      'ROZAJ',
-      'Resian',
-    ),
-    'SAAHO': Variant(
-      'SAAHO',
-      'Saho',
-    ),
-    'SCOTLAND': Variant(
-      'SCOTLAND',
-      'Scottish Standard English',
-    ),
-    'SCOUSE': Variant(
-      'SCOUSE',
-      'Scouse',
-    ),
-    'SOLBA': Variant(
-      'SOLBA',
-      'Stolvizza/Solbica dialect',
-    ),
-    'SOTAV': Variant(
-      'SOTAV',
-      'Sotavento dialect group of Kabuverdianu',
-    ),
-    'TARASK': Variant(
-      'TARASK',
-      'Taraskievica orthography',
-    ),
-    'UCCOR': Variant(
-      'UCCOR',
-      'Unified Orthography',
-    ),
-    'UCRCOR': Variant(
-      'UCRCOR',
-      'Unified Revised Orthography',
-    ),
-    'UNIFON': Variant(
-      'UNIFON',
-      'Unifon phonetic alphabet',
-    ),
-    'VALENCIA': Variant(
-      'VALENCIA',
-      'Valencian',
-    ),
-    'WADEGILE': Variant(
-      'WADEGILE',
-      'Wade-Giles Romanization',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class UnitsSqMK implements Units {
-  UnitsSqMK._();
-
-  @override
-  UnitPrefix get pattern10pMinus1 => UnitPrefix(
+  UnitPrefix get pattern10pMinus1 => const UnitPrefix(
         long: UnitPrefixPattern('deci{0}'),
         short: UnitPrefixPattern('d{0}'),
         narrow: UnitPrefixPattern('d{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus2 => UnitPrefix(
+  UnitPrefix get pattern10pMinus2 => const UnitPrefix(
         long: UnitPrefixPattern('centi{0}'),
         short: UnitPrefixPattern('c{0}'),
         narrow: UnitPrefixPattern('c{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus3 => UnitPrefix(
+  UnitPrefix get pattern10pMinus3 => const UnitPrefix(
         long: UnitPrefixPattern('mili{0}'),
         short: UnitPrefixPattern('m{0}'),
         narrow: UnitPrefixPattern('m{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus6 => UnitPrefix(
+  UnitPrefix get pattern10pMinus6 => const UnitPrefix(
         long: UnitPrefixPattern('mikro{0}'),
         short: UnitPrefixPattern('μ{0}'),
         narrow: UnitPrefixPattern('μ{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus9 => UnitPrefix(
+  UnitPrefix get pattern10pMinus9 => const UnitPrefix(
         long: UnitPrefixPattern('nano{0}'),
         short: UnitPrefixPattern('n{0}'),
         narrow: UnitPrefixPattern('n{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus12 => UnitPrefix(
+  UnitPrefix get pattern10pMinus12 => const UnitPrefix(
         long: UnitPrefixPattern('piko{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus15 => UnitPrefix(
+  UnitPrefix get pattern10pMinus15 => const UnitPrefix(
         long: UnitPrefixPattern('femto{0}'),
         short: UnitPrefixPattern('f{0}'),
         narrow: UnitPrefixPattern('f{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus18 => UnitPrefix(
+  UnitPrefix get pattern10pMinus18 => const UnitPrefix(
         long: UnitPrefixPattern('ato{0}'),
         short: UnitPrefixPattern('a{0}'),
         narrow: UnitPrefixPattern('a{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus21 => UnitPrefix(
+  UnitPrefix get pattern10pMinus21 => const UnitPrefix(
         long: UnitPrefixPattern('zepto{0}'),
         short: UnitPrefixPattern('z{0}'),
         narrow: UnitPrefixPattern('z{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus24 => UnitPrefix(
+  UnitPrefix get pattern10pMinus24 => const UnitPrefix(
         long: UnitPrefixPattern('josto{0}'),
         short: UnitPrefixPattern('y{0}'),
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+  UnitPrefix get pattern10pMinus27 => const UnitPrefix(
         long: UnitPrefixPattern('ronto{0}'),
         short: UnitPrefixPattern('r{0}'),
         narrow: UnitPrefixPattern('r{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+  UnitPrefix get pattern10pMinus30 => const UnitPrefix(
         long: UnitPrefixPattern('kuekto{0}'),
         short: UnitPrefixPattern('q{0}'),
         narrow: UnitPrefixPattern('q{0}'),
       );
   @override
-  UnitPrefix get pattern10p1 => UnitPrefix(
+  UnitPrefix get pattern10p1 => const UnitPrefix(
         long: UnitPrefixPattern('deka{0}'),
         short: UnitPrefixPattern('da{0}'),
         narrow: UnitPrefixPattern('da{0}'),
       );
   @override
-  UnitPrefix get pattern10p2 => UnitPrefix(
+  UnitPrefix get pattern10p2 => const UnitPrefix(
         long: UnitPrefixPattern('hekto{0}'),
         short: UnitPrefixPattern('h{0}'),
         narrow: UnitPrefixPattern('h{0}'),
       );
   @override
-  UnitPrefix get pattern10p3 => UnitPrefix(
+  UnitPrefix get pattern10p3 => const UnitPrefix(
         long: UnitPrefixPattern('kilo{0}'),
         short: UnitPrefixPattern('k{0}'),
         narrow: UnitPrefixPattern('k{0}'),
       );
   @override
-  UnitPrefix get pattern10p6 => UnitPrefix(
+  UnitPrefix get pattern10p6 => const UnitPrefix(
         long: UnitPrefixPattern('mega{0}'),
         short: UnitPrefixPattern('M{0}'),
         narrow: UnitPrefixPattern('M{0}'),
       );
   @override
-  UnitPrefix get pattern10p9 => UnitPrefix(
+  UnitPrefix get pattern10p9 => const UnitPrefix(
         long: UnitPrefixPattern('giga{0}'),
         short: UnitPrefixPattern('G{0}'),
         narrow: UnitPrefixPattern('G{0}'),
       );
   @override
-  UnitPrefix get pattern10p12 => UnitPrefix(
+  UnitPrefix get pattern10p12 => const UnitPrefix(
         long: UnitPrefixPattern('tera{0}'),
         short: UnitPrefixPattern('T{0}'),
         narrow: UnitPrefixPattern('T{0}'),
       );
   @override
-  UnitPrefix get pattern10p15 => UnitPrefix(
+  UnitPrefix get pattern10p15 => const UnitPrefix(
         long: UnitPrefixPattern('peta{0}'),
         short: UnitPrefixPattern('P{0}'),
         narrow: UnitPrefixPattern('P{0}'),
       );
   @override
-  UnitPrefix get pattern10p18 => UnitPrefix(
+  UnitPrefix get pattern10p18 => const UnitPrefix(
         long: UnitPrefixPattern('ekza{0}'),
         short: UnitPrefixPattern('E{0}'),
         narrow: UnitPrefixPattern('E{0}'),
       );
   @override
-  UnitPrefix get pattern10p21 => UnitPrefix(
+  UnitPrefix get pattern10p21 => const UnitPrefix(
         long: UnitPrefixPattern('zeta{0}'),
         short: UnitPrefixPattern('Z{0}'),
         narrow: UnitPrefixPattern('Z{0}'),
       );
   @override
-  UnitPrefix get pattern10p24 => UnitPrefix(
+  UnitPrefix get pattern10p24 => const UnitPrefix(
         long: UnitPrefixPattern('jota{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
       );
   @override
-  UnitPrefix get pattern10p27 => UnitPrefix(
+  UnitPrefix get pattern10p27 => const UnitPrefix(
         long: UnitPrefixPattern('rona{0}'),
         short: UnitPrefixPattern('R{0}'),
         narrow: UnitPrefixPattern('R{0}'),
       );
   @override
-  UnitPrefix get pattern10p30 => UnitPrefix(
+  UnitPrefix get pattern10p30 => const UnitPrefix(
         long: UnitPrefixPattern('kueta{0}'),
         short: UnitPrefixPattern('Q{0}'),
         narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
-  UnitPrefix get pattern1024p1 => UnitPrefix(
+  UnitPrefix get pattern1024p1 => const UnitPrefix(
         long: UnitPrefixPattern('kibi{0}'),
         short: UnitPrefixPattern('Ki{0}'),
         narrow: UnitPrefixPattern('Ki{0}'),
       );
   @override
-  UnitPrefix get pattern1024p2 => UnitPrefix(
+  UnitPrefix get pattern1024p2 => const UnitPrefix(
         long: UnitPrefixPattern('mebi{0}'),
         short: UnitPrefixPattern('Mi{0}'),
         narrow: UnitPrefixPattern('Mi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p3 => UnitPrefix(
+  UnitPrefix get pattern1024p3 => const UnitPrefix(
         long: UnitPrefixPattern('gibi{0}'),
         short: UnitPrefixPattern('Gi{0}'),
         narrow: UnitPrefixPattern('Gi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p4 => UnitPrefix(
+  UnitPrefix get pattern1024p4 => const UnitPrefix(
         long: UnitPrefixPattern('tebi{0}'),
         short: UnitPrefixPattern('Ti{0}'),
         narrow: UnitPrefixPattern('Ti{0}'),
       );
   @override
-  UnitPrefix get pattern1024p5 => UnitPrefix(
+  UnitPrefix get pattern1024p5 => const UnitPrefix(
         long: UnitPrefixPattern('pebi{0}'),
         short: UnitPrefixPattern('Pi{0}'),
         narrow: UnitPrefixPattern('Pi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p6 => UnitPrefix(
+  UnitPrefix get pattern1024p6 => const UnitPrefix(
         long: UnitPrefixPattern('eksbi{0}'),
         short: UnitPrefixPattern('Ei{0}'),
         narrow: UnitPrefixPattern('Ei{0}'),
       );
   @override
-  UnitPrefix get pattern1024p7 => UnitPrefix(
+  UnitPrefix get pattern1024p7 => const UnitPrefix(
         long: UnitPrefixPattern('zebi{0}'),
         short: UnitPrefixPattern('Zi{0}'),
         narrow: UnitPrefixPattern('Zi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p8 => UnitPrefix(
+  UnitPrefix get pattern1024p8 => const UnitPrefix(
         long: UnitPrefixPattern('jobe{0}'),
         short: UnitPrefixPattern('Yi{0}'),
         narrow: UnitPrefixPattern('Yi{0}'),
       );
   @override
-  CompoundUnit get per => CompoundUnit(
+  CompoundUnit get per => const CompoundUnit(
         long: CompoundUnitPattern('{0} në {1}'),
         short: CompoundUnitPattern('{0}/{1}'),
         narrow: CompoundUnitPattern('{0}/{1}'),
       );
   @override
-  CompoundUnit get times => CompoundUnit(
+  CompoundUnit get times => const CompoundUnit(
         long: CompoundUnitPattern('{0}⋅{1}'),
         short: CompoundUnitPattern('{0}⋅{1}'),
         narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
-  Unit get accelerationGForce => Unit(
+  Unit get accelerationGForce => const Unit(
         long: UnitCountPattern(
           _locale,
           'g-forcë',
@@ -3061,7 +290,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get accelerationMeterPerSquareSecond => Unit(
+  Unit get accelerationMeterPerSquareSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'metra për sekondë në katror',
@@ -3083,7 +312,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get angleRevolution => Unit(
+  Unit get angleRevolution => const Unit(
         long: UnitCountPattern(
           _locale,
           'rrotullim',
@@ -3105,7 +334,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get angleRadian => Unit(
+  Unit get angleRadian => const Unit(
         long: UnitCountPattern(
           _locale,
           'radianë',
@@ -3127,7 +356,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get angleDegree => Unit(
+  Unit get angleDegree => const Unit(
         long: UnitCountPattern(
           _locale,
           'gradë',
@@ -3149,7 +378,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get angleArcMinute => Unit(
+  Unit get angleArcMinute => const Unit(
         long: UnitCountPattern(
           _locale,
           'hark-minuta',
@@ -3171,7 +400,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get angleArcSecond => Unit(
+  Unit get angleArcSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'hark-sekonda',
@@ -3193,7 +422,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaSquareKilometer => Unit(
+  Unit get areaSquareKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilometra katrore',
@@ -3215,7 +444,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaHectare => Unit(
+  Unit get areaHectare => const Unit(
         long: UnitCountPattern(
           _locale,
           'hektarë',
@@ -3237,7 +466,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaSquareMeter => Unit(
+  Unit get areaSquareMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'metra katrore',
@@ -3259,7 +488,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaSquareCentimeter => Unit(
+  Unit get areaSquareCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'centimetra katrore',
@@ -3281,7 +510,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaSquareMile => Unit(
+  Unit get areaSquareMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje katrore',
@@ -3303,7 +532,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaAcre => Unit(
+  Unit get areaAcre => const Unit(
         long: UnitCountPattern(
           _locale,
           'akra',
@@ -3325,7 +554,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaSquareYard => Unit(
+  Unit get areaSquareYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'jardë katrore',
@@ -3347,7 +576,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaSquareFoot => Unit(
+  Unit get areaSquareFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'këmbë katrore',
@@ -3369,7 +598,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaSquareInch => Unit(
+  Unit get areaSquareInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'inç katrore',
@@ -3391,7 +620,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get areaDunam => Unit(
+  Unit get areaDunam => const Unit(
         long: UnitCountPattern(
           _locale,
           'dynym',
@@ -3413,7 +642,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrKarat => Unit(
+  Unit get concentrKarat => const Unit(
         long: UnitCountPattern(
           _locale,
           'karatë',
@@ -3435,7 +664,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrMilligramOfglucosePerDeciliter => Unit(
+  Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'miligramë për decilitër',
@@ -3457,7 +686,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrMillimolePerLiter => Unit(
+  Unit get concentrMillimolePerLiter => const Unit(
         long: UnitCountPattern(
           _locale,
           'milimolë për litër',
@@ -3479,7 +708,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrItem => Unit(
+  Unit get concentrItem => const Unit(
         long: UnitCountPattern(
           _locale,
           'njësi',
@@ -3501,7 +730,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrPermillion => Unit(
+  Unit get concentrPermillion => const Unit(
         long: UnitCountPattern(
           _locale,
           'pjesë për milion',
@@ -3523,7 +752,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrPercent => Unit(
+  Unit get concentrPercent => const Unit(
         long: UnitCountPattern(
           _locale,
           'përqind',
@@ -3545,7 +774,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrPermille => Unit(
+  Unit get concentrPermille => const Unit(
         long: UnitCountPattern(
           _locale,
           'përmijë',
@@ -3567,7 +796,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrPermyriad => Unit(
+  Unit get concentrPermyriad => const Unit(
         long: UnitCountPattern(
           _locale,
           'përdhjetëmijë',
@@ -3589,7 +818,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrMole => Unit(
+  Unit get concentrMole => const Unit(
         long: UnitCountPattern(
           _locale,
           'molë',
@@ -3611,7 +840,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get consumptionLiterPerKilometer => Unit(
+  Unit get consumptionLiterPerKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'litra për kilometër',
@@ -3633,7 +862,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get consumptionLiterPer100Kilometer => Unit(
+  Unit get consumptionLiterPer100Kilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'litra për 100 kilometra',
@@ -3655,7 +884,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get consumptionMilePerGallon => Unit(
+  Unit get consumptionMilePerGallon => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje për gallon',
@@ -3677,7 +906,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get consumptionMilePerGallonImperial => Unit(
+  Unit get consumptionMilePerGallonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje për gallon imperial',
@@ -3699,7 +928,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalPetabyte => Unit(
+  Unit get digitalPetabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'petabajt',
@@ -3721,7 +950,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalTerabyte => Unit(
+  Unit get digitalTerabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'terabajt',
@@ -3743,7 +972,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalTerabit => Unit(
+  Unit get digitalTerabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'terabit',
@@ -3765,7 +994,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalGigabyte => Unit(
+  Unit get digitalGigabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'gigabajt',
@@ -3787,7 +1016,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalGigabit => Unit(
+  Unit get digitalGigabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'gigabit',
@@ -3809,7 +1038,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalMegabyte => Unit(
+  Unit get digitalMegabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'megabajt',
@@ -3831,7 +1060,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalMegabit => Unit(
+  Unit get digitalMegabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'megabit',
@@ -3853,7 +1082,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalKilobyte => Unit(
+  Unit get digitalKilobyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilobajt',
@@ -3875,7 +1104,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalKilobit => Unit(
+  Unit get digitalKilobit => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilobit',
@@ -3897,7 +1126,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalByte => Unit(
+  Unit get digitalByte => const Unit(
         long: UnitCountPattern(
           _locale,
           'bajt',
@@ -3919,7 +1148,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get digitalBit => Unit(
+  Unit get digitalBit => const Unit(
         long: UnitCountPattern(
           _locale,
           'bit',
@@ -3941,7 +1170,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationCentury => Unit(
+  Unit get durationCentury => const Unit(
         long: UnitCountPattern(
           _locale,
           'shekuj',
@@ -3963,7 +1192,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationDecade => Unit(
+  Unit get durationDecade => const Unit(
         long: UnitCountPattern(
           _locale,
           'dekada',
@@ -3985,7 +1214,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationYear => Unit(
+  Unit get durationYear => const Unit(
         long: UnitCountPattern(
           _locale,
           'vjet',
@@ -4007,7 +1236,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationQuarter => Unit(
+  Unit get durationQuarter => const Unit(
         long: UnitCountPattern(
           _locale,
           'çerekë',
@@ -4029,7 +1258,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationMonth => Unit(
+  Unit get durationMonth => const Unit(
         long: UnitCountPattern(
           _locale,
           'muaj',
@@ -4051,7 +1280,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationWeek => Unit(
+  Unit get durationWeek => const Unit(
         long: UnitCountPattern(
           _locale,
           'javë',
@@ -4073,7 +1302,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationDay => Unit(
+  Unit get durationDay => const Unit(
         long: UnitCountPattern(
           _locale,
           'ditë',
@@ -4095,7 +1324,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationHour => Unit(
+  Unit get durationHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'orë',
@@ -4117,7 +1346,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationMinute => Unit(
+  Unit get durationMinute => const Unit(
         long: UnitCountPattern(
           _locale,
           'minuta',
@@ -4139,7 +1368,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationSecond => Unit(
+  Unit get durationSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'sekonda',
@@ -4161,7 +1390,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationMillisecond => Unit(
+  Unit get durationMillisecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'milisekonda',
@@ -4183,7 +1412,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationMicrosecond => Unit(
+  Unit get durationMicrosecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'mikrosekonda',
@@ -4205,7 +1434,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationNanosecond => Unit(
+  Unit get durationNanosecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'nanosekonda',
@@ -4227,7 +1456,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get electricAmpere => Unit(
+  Unit get electricAmpere => const Unit(
         long: UnitCountPattern(
           _locale,
           'amper',
@@ -4249,7 +1478,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get electricMilliampere => Unit(
+  Unit get electricMilliampere => const Unit(
         long: UnitCountPattern(
           _locale,
           'miliamper',
@@ -4271,7 +1500,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get electricOhm => Unit(
+  Unit get electricOhm => const Unit(
         long: UnitCountPattern(
           _locale,
           'om',
@@ -4293,7 +1522,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get electricVolt => Unit(
+  Unit get electricVolt => const Unit(
         long: UnitCountPattern(
           _locale,
           'volt',
@@ -4315,7 +1544,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyKilocalorie => Unit(
+  Unit get energyKilocalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilokalori',
@@ -4337,7 +1566,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyCalorie => Unit(
+  Unit get energyCalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'kalori',
@@ -4359,7 +1588,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyFoodcalorie => Unit(
+  Unit get energyFoodcalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'kalori ushqimore',
@@ -4381,7 +1610,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyKilojoule => Unit(
+  Unit get energyKilojoule => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilozhul',
@@ -4403,7 +1632,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyJoule => Unit(
+  Unit get energyJoule => const Unit(
         long: UnitCountPattern(
           _locale,
           'zhul',
@@ -4425,7 +1654,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyKilowattHour => Unit(
+  Unit get energyKilowattHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilovat-orë',
@@ -4447,7 +1676,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyElectronvolt => Unit(
+  Unit get energyElectronvolt => const Unit(
         long: UnitCountPattern(
           _locale,
           'elektrovolt',
@@ -4469,7 +1698,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyBritishThermalUnit => Unit(
+  Unit get energyBritishThermalUnit => const Unit(
         long: UnitCountPattern(
           _locale,
           'njësi termale britanike',
@@ -4491,7 +1720,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get energyThermUs => Unit(
+  Unit get energyThermUs => const Unit(
         long: UnitCountPattern(
           _locale,
           'njësi termale amerikane',
@@ -4513,7 +1742,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get forcePoundForce => Unit(
+  Unit get forcePoundForce => const Unit(
         long: UnitCountPattern(
           _locale,
           'paund force',
@@ -4535,7 +1764,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get forceNewton => Unit(
+  Unit get forceNewton => const Unit(
         long: UnitCountPattern(
           _locale,
           'njuton',
@@ -4557,7 +1786,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get forceKilowattHourPer100Kilometer => Unit(
+  Unit get forceKilowattHourPer100Kilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilovat-orë në 100 kilometra',
@@ -4579,7 +1808,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get frequencyGigahertz => Unit(
+  Unit get frequencyGigahertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'gigaherc',
@@ -4601,7 +1830,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get frequencyMegahertz => Unit(
+  Unit get frequencyMegahertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'megaherc',
@@ -4623,7 +1852,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get frequencyKilohertz => Unit(
+  Unit get frequencyKilohertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'kiloherc',
@@ -4645,7 +1874,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get frequencyHertz => Unit(
+  Unit get frequencyHertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'herc',
@@ -4667,7 +1896,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsEm => Unit(
+  Unit get graphicsEm => const Unit(
         long: UnitCountPattern(
           _locale,
           'em tipografike',
@@ -4689,7 +1918,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsPixel => Unit(
+  Unit get graphicsPixel => const Unit(
         long: UnitCountPattern(
           _locale,
           'pikselë',
@@ -4711,7 +1940,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsMegapixel => Unit(
+  Unit get graphicsMegapixel => const Unit(
         long: UnitCountPattern(
           _locale,
           'megapikselë',
@@ -4733,7 +1962,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsPixelPerCentimeter => Unit(
+  Unit get graphicsPixelPerCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'pikselë për centimetër',
@@ -4755,7 +1984,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsPixelPerInch => Unit(
+  Unit get graphicsPixelPerInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'pikselë për inç',
@@ -4777,7 +2006,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsDotPerCentimeter => Unit(
+  Unit get graphicsDotPerCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'pika për centimetër',
@@ -4799,7 +2028,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsDotPerInch => Unit(
+  Unit get graphicsDotPerInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'pika për inç',
@@ -4821,7 +2050,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get graphicsDot => Unit(
+  Unit get graphicsDot => const Unit(
         long: UnitCountPattern(
           _locale,
           'pika',
@@ -4843,7 +2072,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthEarthRadius => Unit(
+  Unit get lengthEarthRadius => const Unit(
         long: UnitCountPattern(
           _locale,
           'rreze toke',
@@ -4865,7 +2094,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthKilometer => Unit(
+  Unit get lengthKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilometra',
@@ -4887,7 +2116,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthMeter => Unit(
+  Unit get lengthMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'metra',
@@ -4909,7 +2138,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthDecimeter => Unit(
+  Unit get lengthDecimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'decimetra',
@@ -4931,7 +2160,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthCentimeter => Unit(
+  Unit get lengthCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'centimetra',
@@ -4953,7 +2182,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthMillimeter => Unit(
+  Unit get lengthMillimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'milimetra',
@@ -4975,7 +2204,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthMicrometer => Unit(
+  Unit get lengthMicrometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'mikrometra',
@@ -4997,7 +2226,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthNanometer => Unit(
+  Unit get lengthNanometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'nanometra',
@@ -5019,7 +2248,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthPicometer => Unit(
+  Unit get lengthPicometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'pikometra',
@@ -5041,7 +2270,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthMile => Unit(
+  Unit get lengthMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje',
@@ -5063,7 +2292,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthYard => Unit(
+  Unit get lengthYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'jardë',
@@ -5085,7 +2314,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthFoot => Unit(
+  Unit get lengthFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'këmbë',
@@ -5107,7 +2336,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthInch => Unit(
+  Unit get lengthInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'inç',
@@ -5129,7 +2358,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthParsec => Unit(
+  Unit get lengthParsec => const Unit(
         long: UnitCountPattern(
           _locale,
           'parsekë',
@@ -5151,7 +2380,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthLightYear => Unit(
+  Unit get lengthLightYear => const Unit(
         long: UnitCountPattern(
           _locale,
           'vite dritë',
@@ -5173,7 +2402,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthAstronomicalUnit => Unit(
+  Unit get lengthAstronomicalUnit => const Unit(
         long: UnitCountPattern(
           _locale,
           'njësi astronomike',
@@ -5195,7 +2424,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthFurlong => Unit(
+  Unit get lengthFurlong => const Unit(
         long: UnitCountPattern(
           _locale,
           'furlongë',
@@ -5217,7 +2446,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthFathom => Unit(
+  Unit get lengthFathom => const Unit(
         long: UnitCountPattern(
           _locale,
           'pashë detare',
@@ -5239,7 +2468,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthNauticalMile => Unit(
+  Unit get lengthNauticalMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje nautike',
@@ -5261,7 +2490,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthMileScandinavian => Unit(
+  Unit get lengthMileScandinavian => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje skandinave',
@@ -5283,7 +2512,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthPoint => Unit(
+  Unit get lengthPoint => const Unit(
         long: UnitCountPattern(
           _locale,
           'shkallë',
@@ -5305,7 +2534,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lengthSolarRadius => Unit(
+  Unit get lengthSolarRadius => const Unit(
         long: UnitCountPattern(
           _locale,
           'rreze diellore',
@@ -5327,7 +2556,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lightLux => Unit(
+  Unit get lightLux => const Unit(
         long: UnitCountPattern(
           _locale,
           'luks',
@@ -5349,7 +2578,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lightCandela => Unit(
+  Unit get lightCandela => const Unit(
         long: UnitCountPattern(
           _locale,
           'kandela',
@@ -5371,7 +2600,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lightLumen => Unit(
+  Unit get lightLumen => const Unit(
         long: UnitCountPattern(
           _locale,
           'lumen',
@@ -5393,7 +2622,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get lightSolarLuminosity => Unit(
+  Unit get lightSolarLuminosity => const Unit(
         long: UnitCountPattern(
           _locale,
           'lumenë diellorë',
@@ -5415,7 +2644,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massTonne => Unit(
+  Unit get massTonne => const Unit(
         long: UnitCountPattern(
           _locale,
           'tonë metrikë',
@@ -5437,7 +2666,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massKilogram => Unit(
+  Unit get massKilogram => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilogramë',
@@ -5459,7 +2688,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massGram => Unit(
+  Unit get massGram => const Unit(
         long: UnitCountPattern(
           _locale,
           'gramë',
@@ -5481,7 +2710,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massMilligram => Unit(
+  Unit get massMilligram => const Unit(
         long: UnitCountPattern(
           _locale,
           'miligramë',
@@ -5503,7 +2732,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massMicrogram => Unit(
+  Unit get massMicrogram => const Unit(
         long: UnitCountPattern(
           _locale,
           'mikrogramë',
@@ -5525,7 +2754,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massTon => Unit(
+  Unit get massTon => const Unit(
         long: UnitCountPattern(
           _locale,
           'tonë',
@@ -5547,7 +2776,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massStone => Unit(
+  Unit get massStone => const Unit(
         long: UnitCountPattern(
           _locale,
           'st',
@@ -5569,7 +2798,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massPound => Unit(
+  Unit get massPound => const Unit(
         long: UnitCountPattern(
           _locale,
           'paund',
@@ -5591,7 +2820,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massOunce => Unit(
+  Unit get massOunce => const Unit(
         long: UnitCountPattern(
           _locale,
           'onsë',
@@ -5613,7 +2842,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massOunceTroy => Unit(
+  Unit get massOunceTroy => const Unit(
         long: UnitCountPattern(
           _locale,
           'onsë troi',
@@ -5635,7 +2864,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massCarat => Unit(
+  Unit get massCarat => const Unit(
         long: UnitCountPattern(
           _locale,
           'karatë',
@@ -5657,7 +2886,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massDalton => Unit(
+  Unit get massDalton => const Unit(
         long: UnitCountPattern(
           _locale,
           'dalton',
@@ -5679,7 +2908,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massEarthMass => Unit(
+  Unit get massEarthMass => const Unit(
         long: UnitCountPattern(
           _locale,
           'masa Toke',
@@ -5701,7 +2930,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massSolarMass => Unit(
+  Unit get massSolarMass => const Unit(
         long: UnitCountPattern(
           _locale,
           'masa diellore',
@@ -5723,7 +2952,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get massGrain => Unit(
+  Unit get massGrain => const Unit(
         long: UnitCountPattern(
           _locale,
           'gran',
@@ -5745,7 +2974,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get powerGigawatt => Unit(
+  Unit get powerGigawatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'gigavat',
@@ -5767,7 +2996,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get powerMegawatt => Unit(
+  Unit get powerMegawatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'megavat',
@@ -5789,7 +3018,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get powerKilowatt => Unit(
+  Unit get powerKilowatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilovat',
@@ -5811,7 +3040,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get powerWatt => Unit(
+  Unit get powerWatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'vat',
@@ -5833,7 +3062,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get powerMilliwatt => Unit(
+  Unit get powerMilliwatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'milivat',
@@ -5855,7 +3084,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get powerHorsepower => Unit(
+  Unit get powerHorsepower => const Unit(
         long: UnitCountPattern(
           _locale,
           'kuaj-fuqi',
@@ -5877,7 +3106,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureMillimeterOfhg => Unit(
+  Unit get pressureMillimeterOfhg => const Unit(
         long: UnitCountPattern(
           _locale,
           'milimetra mërkuri',
@@ -5899,7 +3128,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressurePoundForcePerSquareInch => Unit(
+  Unit get pressurePoundForcePerSquareInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'paund për inç në katror',
@@ -5921,7 +3150,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureInchOfhg => Unit(
+  Unit get pressureInchOfhg => const Unit(
         long: UnitCountPattern(
           _locale,
           'inç merkuri',
@@ -5943,7 +3172,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureBar => Unit(
+  Unit get pressureBar => const Unit(
         long: UnitCountPattern(
           _locale,
           'bare',
@@ -5965,7 +3194,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureMillibar => Unit(
+  Unit get pressureMillibar => const Unit(
         long: UnitCountPattern(
           _locale,
           'milibare',
@@ -5987,7 +3216,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureAtmosphere => Unit(
+  Unit get pressureAtmosphere => const Unit(
         long: UnitCountPattern(
           _locale,
           'atmosferë',
@@ -6009,7 +3238,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressurePascal => Unit(
+  Unit get pressurePascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'paskal',
@@ -6031,7 +3260,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureHectopascal => Unit(
+  Unit get pressureHectopascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'hektopaskal',
@@ -6053,7 +3282,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureKilopascal => Unit(
+  Unit get pressureKilopascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilopaskal',
@@ -6075,7 +3304,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureMegapascal => Unit(
+  Unit get pressureMegapascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'megapaskal',
@@ -6097,7 +3326,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get speedKilometerPerHour => Unit(
+  Unit get speedKilometerPerHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilometra në orë',
@@ -6119,7 +3348,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get speedMeterPerSecond => Unit(
+  Unit get speedMeterPerSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'metra në sekondë',
@@ -6141,7 +3370,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get speedMilePerHour => Unit(
+  Unit get speedMilePerHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje në orë',
@@ -6163,7 +3392,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get speedKnot => Unit(
+  Unit get speedKnot => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje nautike në orë',
@@ -6185,7 +3414,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get speedBeaufort => Unit(
+  Unit get speedBeaufort => const Unit(
         long: UnitCountPattern(
           _locale,
           'Beaufort',
@@ -6207,7 +3436,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get temperatureGeneric => Unit(
+  Unit get temperatureGeneric => const Unit(
         long: UnitCountPattern(
           _locale,
           '°',
@@ -6229,7 +3458,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get temperatureCelsius => Unit(
+  Unit get temperatureCelsius => const Unit(
         long: UnitCountPattern(
           _locale,
           'gradë Celsius',
@@ -6251,7 +3480,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get temperatureFahrenheit => Unit(
+  Unit get temperatureFahrenheit => const Unit(
         long: UnitCountPattern(
           _locale,
           'gradë Farenhait',
@@ -6273,7 +3502,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get temperatureKelvin => Unit(
+  Unit get temperatureKelvin => const Unit(
         long: UnitCountPattern(
           _locale,
           'Kelvin',
@@ -6295,7 +3524,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get torquePoundForceFoot => Unit(
+  Unit get torquePoundForceFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'paund-këmbë',
@@ -6317,7 +3546,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get torqueNewtonMeter => Unit(
+  Unit get torqueNewtonMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'njuton-metra',
@@ -6339,7 +3568,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCubicKilometer => Unit(
+  Unit get volumeCubicKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'kilometra kub',
@@ -6361,7 +3590,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCubicMeter => Unit(
+  Unit get volumeCubicMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'metra kub',
@@ -6383,7 +3612,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCubicCentimeter => Unit(
+  Unit get volumeCubicCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'centimetra kub',
@@ -6405,7 +3634,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCubicMile => Unit(
+  Unit get volumeCubicMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'milje në kub',
@@ -6427,7 +3656,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCubicYard => Unit(
+  Unit get volumeCubicYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'jardë në kub',
@@ -6449,7 +3678,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCubicFoot => Unit(
+  Unit get volumeCubicFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'këmbë kub',
@@ -6471,7 +3700,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCubicInch => Unit(
+  Unit get volumeCubicInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'inç në kub',
@@ -6493,7 +3722,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeMegaliter => Unit(
+  Unit get volumeMegaliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'megalitra',
@@ -6515,7 +3744,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeHectoliter => Unit(
+  Unit get volumeHectoliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'hektolitra',
@@ -6537,7 +3766,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeLiter => Unit(
+  Unit get volumeLiter => const Unit(
         long: UnitCountPattern(
           _locale,
           'litra',
@@ -6559,7 +3788,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeDeciliter => Unit(
+  Unit get volumeDeciliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'decilitra',
@@ -6581,7 +3810,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCentiliter => Unit(
+  Unit get volumeCentiliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'centilitra',
@@ -6603,7 +3832,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeMilliliter => Unit(
+  Unit get volumeMilliliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'mililitra',
@@ -6625,7 +3854,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumePintMetric => Unit(
+  Unit get volumePintMetric => const Unit(
         long: UnitCountPattern(
           _locale,
           'pinta metrike',
@@ -6647,7 +3876,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCupMetric => Unit(
+  Unit get volumeCupMetric => const Unit(
         long: UnitCountPattern(
           _locale,
           'kupa metrike',
@@ -6669,7 +3898,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeAcreFoot => Unit(
+  Unit get volumeAcreFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'këmbë-akër',
@@ -6691,7 +3920,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeBushel => Unit(
+  Unit get volumeBushel => const Unit(
         long: UnitCountPattern(
           _locale,
           'shinikë',
@@ -6713,7 +3942,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeGallon => Unit(
+  Unit get volumeGallon => const Unit(
         long: UnitCountPattern(
           _locale,
           'gallonë',
@@ -6735,7 +3964,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeGallonImperial => Unit(
+  Unit get volumeGallonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'gallonë imperial',
@@ -6757,7 +3986,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeQuart => Unit(
+  Unit get volumeQuart => const Unit(
         long: UnitCountPattern(
           _locale,
           'çerekë',
@@ -6779,7 +4008,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumePint => Unit(
+  Unit get volumePint => const Unit(
         long: UnitCountPattern(
           _locale,
           'pinta',
@@ -6801,7 +4030,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeCup => Unit(
+  Unit get volumeCup => const Unit(
         long: UnitCountPattern(
           _locale,
           'kupa',
@@ -6823,7 +4052,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeFluidOunce => Unit(
+  Unit get volumeFluidOunce => const Unit(
         long: UnitCountPattern(
           _locale,
           'onsë të lëngshëm',
@@ -6845,7 +4074,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeFluidOunceImperial => Unit(
+  Unit get volumeFluidOunceImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'onsë të lëngshëm imperial',
@@ -6867,7 +4096,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeTablespoon => Unit(
+  Unit get volumeTablespoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'lugë gjelle',
@@ -6889,7 +4118,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeTeaspoon => Unit(
+  Unit get volumeTeaspoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'lugë kafeje',
@@ -6911,7 +4140,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeBarrel => Unit(
+  Unit get volumeBarrel => const Unit(
         long: UnitCountPattern(
           _locale,
           'fuçi',
@@ -6933,7 +4162,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeDessertSpoon => Unit(
+  Unit get volumeDessertSpoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'lugë ëmbëlsire',
@@ -6955,7 +4184,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeDessertSpoonImperial => Unit(
+  Unit get volumeDessertSpoonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'lugë ëmbëlsire imperiale',
@@ -6977,7 +4206,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeDrop => Unit(
+  Unit get volumeDrop => const Unit(
         long: UnitCountPattern(
           _locale,
           'çika',
@@ -6999,7 +4228,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeDram => Unit(
+  Unit get volumeDram => const Unit(
         long: UnitCountPattern(
           _locale,
           'drahma të lëngshme',
@@ -7021,7 +4250,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeJigger => Unit(
+  Unit get volumeJigger => const Unit(
         long: UnitCountPattern(
           _locale,
           'teke',
@@ -7043,7 +4272,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumePinch => Unit(
+  Unit get volumePinch => const Unit(
         long: UnitCountPattern(
           _locale,
           'piska',
@@ -7065,7 +4294,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get volumeQuartImperial => Unit(
+  Unit get volumeQuartImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'çerekë imperialë',
@@ -7087,7 +4316,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get pressureGasolineEnergyDensity => Unit(
+  Unit get pressureGasolineEnergyDensity => const Unit(
         long: UnitCountPattern(
           _locale,
           'of gasoline equivalent',
@@ -7109,7 +4338,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get speedLightSpeed => Unit(
+  Unit get speedLightSpeed => const Unit(
         long: UnitCountPattern(
           _locale,
           'light',
@@ -7131,7 +4360,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get concentrPortionPer1e9 => Unit(
+  Unit get concentrPortionPer1e9 => const Unit(
         long: UnitCountPattern(
           _locale,
           'pjesë për miliard',
@@ -7153,7 +4382,7 @@ class UnitsSqMK implements Units {
       );
 
   @override
-  Unit get durationNight => Unit(
+  Unit get durationNight => const Unit(
         long: UnitCountPattern(
           _locale,
           'net',
@@ -7175,11 +4404,11 @@ class UnitsSqMK implements Units {
       );
 }
 
-class DateFieldsSqMK implements DateFields {
-  DateFieldsSqMK._();
+class DateFieldsSqMK extends DateFields {
+  DateFieldsSqMK._(super.cld);
 
   @override
-  MultiLength get era => MultiLength(
+  MultiLength get era => const MultiLength(
         long: 'erë',
         short: 'erë',
         narrow: 'erë',
@@ -7187,27 +4416,27 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldFullData get year => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'vit',
           short: 'vit',
           narrow: 'vit',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'vjet',
           short: 'vitin e kaluar',
           narrow: 'vitin e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'sivjet',
           short: 'këtë vit',
           narrow: 'këtë vit',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'mot',
           short: 'vitin e ardhshëm',
           narrow: 'vitin e ardhshëm',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} vit më parë',
@@ -7224,7 +4453,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} vjet më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} viti',
@@ -7245,27 +4474,27 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldFullData get quarter => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'tremujor',
           short: 'tremujor',
           narrow: 'tremujor',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'tremujorin e kaluar',
           short: 'tremujorin e kaluar',
           narrow: 'tremujorin e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë tremujor',
           short: 'këtë tremujor',
           narrow: 'këtë tremujor',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'tremujorin e ardhshëm',
           short: 'tremujorin e ardhshëm',
           narrow: 'tremujorin e ardhshëm',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} tremujor më parë',
@@ -7282,7 +4511,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} tremujorë më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} tremujori',
@@ -7303,27 +4532,27 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldFullData get month => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'muaj',
           short: 'muaj',
           narrow: 'muaj',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'muajin e kaluar',
           short: 'muajin e kaluar',
           narrow: 'muajin e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë muaj',
           short: 'këtë muaj',
           narrow: 'këtë muaj',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'muajin e ardhshëm',
           short: 'muajin e ardhshëm',
           narrow: 'muajin e ardhshëm',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} muaj më parë',
@@ -7340,7 +4569,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} muaj më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} muaji',
@@ -7361,27 +4590,27 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldFullData get week => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'javë',
           short: 'javë',
           narrow: 'javë',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'javën e kaluar',
           short: 'javën e kaluar',
           narrow: 'javën e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë javë',
           short: 'këtë javë',
           narrow: 'këtë javë',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'javën e ardhshme',
           short: 'javën e ardhshme',
           narrow: 'javën e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} javë më parë',
@@ -7398,7 +4627,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} javë më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} jave',
@@ -7418,7 +4647,7 @@ class DateFieldsSqMK implements DateFields {
       );
 
   @override
-  MultiLength get weekOfMonth => MultiLength(
+  MultiLength get weekOfMonth => const MultiLength(
         long: 'javë e muajit',
         short: 'javë e muajit',
         narrow: 'javë e muajit',
@@ -7426,27 +4655,27 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldFullData get day => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'ditë',
           short: 'ditë',
           narrow: 'ditë',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'dje',
           short: 'dje',
           narrow: 'dje',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'sot',
           short: 'sot',
           narrow: 'sot',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'nesër',
           short: 'nesër',
           narrow: 'nesër',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ditë më parë',
@@ -7463,7 +4692,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} ditë më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} dite',
@@ -7483,21 +4712,21 @@ class DateFieldsSqMK implements DateFields {
       );
 
   @override
-  MultiLength get dayOfYear => MultiLength(
+  MultiLength get dayOfYear => const MultiLength(
         long: 'ditë e vitit',
         short: 'ditë e vitit',
         narrow: 'ditë e vitit',
       );
 
   @override
-  MultiLength get weekday => MultiLength(
+  MultiLength get weekday => const MultiLength(
         long: 'ditë e javës',
         short: 'ditë e javës',
         narrow: 'ditë e javës',
       );
 
   @override
-  MultiLength get weekdayOfMonth => MultiLength(
+  MultiLength get weekdayOfMonth => const MultiLength(
         long: 'ditë pune e muajit',
         short: 'ditë pune e muajit',
         narrow: 'ditë pune e muajit',
@@ -7505,22 +4734,22 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'të dielën e kaluar',
           short: 'të dielën e kaluar',
           narrow: 'të dielën e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë të diel',
           short: 'këtë të diel',
           narrow: 'këtë të diel',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'të dielën e ardhshme',
           short: 'të dielën e ardhshme',
           narrow: 'të dielën e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} të dielë më parë',
@@ -7537,7 +4766,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} të diela më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} të diele',
@@ -7558,22 +4787,22 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'të hënën e kaluar',
           short: 'të hënën e kaluar',
           narrow: 'të hënën e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë të hënë',
           short: 'këtë të hënë',
           narrow: 'këtë të hënë',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'të hënën e ardhshme',
           short: 'të hënën e ardhshme',
           narrow: 'të hënën e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} të hënë më parë',
@@ -7590,7 +4819,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} të hëna më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} të hëne',
@@ -7611,22 +4840,22 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'të martën e kaluar',
           short: 'të martën e kaluar',
           narrow: 'të martën e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë të martë',
           short: 'këtë të martë',
           narrow: 'këtë të martë',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'të martën e ardhshme',
           short: 'të martën e ardhshme',
           narrow: 'të martën e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} të martë më parë',
@@ -7643,7 +4872,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} të marta më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} të marte',
@@ -7664,22 +4893,22 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'të mërkurën e kaluar',
           short: 'të mërkurën e kaluar',
           narrow: 'të mërkurën e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë të mërkurë',
           short: 'këtë të mërkurë',
           narrow: 'këtë të mërkurë',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'të mërkurën e ardhshme',
           short: 'të mërkurën e ardhshme',
           narrow: 'të mërkurën e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} të mërkurë më parë',
@@ -7696,7 +4925,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} të mërkura më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} të mërkure',
@@ -7717,22 +4946,22 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'të enjten e kaluar',
           short: 'të enjten e kaluar',
           narrow: 'të enjten e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë të enjte',
           short: 'këtë të enjte',
           narrow: 'këtë të enjte',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'të enjten e ardhshme',
           short: 'të enjten e ardhshme',
           narrow: 'të enjten e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} të enjte më parë',
@@ -7749,7 +4978,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} të enjte më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} të enjteje',
@@ -7770,22 +4999,22 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'të premten e kaluar',
           short: 'të premten e kaluar',
           narrow: 'të premten e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë të premte',
           short: 'këtë të premte',
           narrow: 'këtë të premte',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'të premten e ardhshme',
           short: 'të premten e ardhshme',
           narrow: 'të premten e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} të premte më parë',
@@ -7802,7 +5031,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} të premte më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} të premteje',
@@ -7823,22 +5052,22 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'të shtunën e kaluar',
           short: 'të shtunën e kaluar',
           narrow: 'të shtunën e kaluar',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë të shtunë',
           short: 'këtë të shtunë',
           narrow: 'këtë të shtunë',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'të shtunën e ardhshme',
           short: 'të shtunën e ardhshme',
           narrow: 'të shtunën e ardhshme',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} të shtunë më parë',
@@ -7855,7 +5084,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} të shtuna më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} të shtune',
@@ -7875,7 +5104,7 @@ class DateFieldsSqMK implements DateFields {
       );
 
   @override
-  MultiLength get dayperiod => MultiLength(
+  MultiLength get dayperiod => const MultiLength(
         long: 'paradite/pasdite',
         short: 'paradite/pasdite',
         narrow: 'paradite/pasdite',
@@ -7883,17 +5112,17 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'orë',
           short: 'orë',
           narrow: 'orë',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë orë',
           short: 'këtë orë',
           narrow: 'këtë orë',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} orë më parë',
@@ -7910,7 +5139,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} orë më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} ore',
@@ -7931,17 +5160,17 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'minutë',
           short: 'min',
           narrow: 'min',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'këtë minutë',
           short: 'këtë minutë',
           narrow: 'këtë minutë',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} minutë më parë',
@@ -7958,7 +5187,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} min më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} minute',
@@ -7979,17 +5208,17 @@ class DateFieldsSqMK implements DateFields {
 
   @override
   DateFieldDataTime get second => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'sekondë',
           short: 'sek',
           narrow: 'sek',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'tani',
           short: 'tani',
           narrow: 'tani',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} sekondë më parë',
@@ -8006,7 +5235,7 @@ class DateFieldsSqMK implements DateFields {
             other: '{0} sek më parë',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'pas {0} sekonde',
@@ -8026,3299 +5255,7780 @@ class DateFieldsSqMK implements DateFields {
       );
 
   @override
-  MultiLength get zone => MultiLength(
+  MultiLength get zone => const MultiLength(
         long: 'brezi orar',
         short: 'brezi orar',
         narrow: 'brezi orar',
       );
 }
 
-class TerritoriesSqMK implements Territories {
-  TerritoriesSqMK._();
+class LanguagesSqMK extends Languages {
+  const LanguagesSqMK._(super.cld);
+
+  static const _aa = Language('aa', 'afarisht');
+  static const _ab = Language('ab', 'abkazisht');
+  static const _ace = Language('ace', 'akinezisht');
+  static const _ada = Language('ada', 'andangmeisht');
+  static const _ady = Language('ady', 'adigisht');
+  static const _af = Language('af', 'afrikanisht');
+  static const _agq = Language('agq', 'agemisht');
+  static const _ain = Language('ain', 'ajnuisht');
+  static const _ak = Language('ak', 'akanisht');
+  static const _ale = Language('ale', 'aleutisht');
+  static const _alt = Language('alt', 'altaishte jugore');
+  static const _am = Language('am', 'amarisht');
+  static const _an = Language('an', 'aragonezisht');
+  static const _ann = Language('ann', 'oboloisht');
+  static const _anp = Language('anp', 'angikisht');
+  static const _ar = Language('ar', 'arabisht');
+  static const _ar001 = Language('ar-001', 'arabishte standarde moderne');
+  static const _arn = Language('arn', 'mapuçisht');
+  static const _arp = Language('arp', 'arapahoisht');
+  static const _ars = Language('ars', 'arabishte naxhdi');
+  static const _$as = Language('as', 'asamezisht');
+  static const _asa = Language('asa', 'asuisht');
+  static const _ast = Language('ast', 'asturisht');
+  static const _atj = Language('atj', 'atikamekisht');
+  static const _av = Language('av', 'avarikisht');
+  static const _awa = Language('awa', 'auadhisht');
+  static const _ay = Language('ay', 'ajmarisht');
+  static const _az = Language('az', 'azerbajxhanisht', short: 'azerisht');
+  static const _ba = Language('ba', 'bashkirisht');
+  static const _ban = Language('ban', 'balinezisht');
+  static const _bas = Language('bas', 'basaisht');
+  static const _be = Language('be', 'bjellorusisht');
+  static const _bem = Language('bem', 'bembaisht');
+  static const _bez = Language('bez', 'benaisht');
+  static const _bg = Language('bg', 'bullgarisht');
+  static const _bgc = Language('bgc', 'harjanvisht');
+  static const _bgn = Language('bgn', 'balokishte perëndimore');
+  static const _bho = Language('bho', 'boxhpurisht');
+  static const _bi = Language('bi', 'bislamisht');
+  static const _bin = Language('bin', 'binisht');
+  static const _bla = Language('bla', 'siksikaisht');
+  static const _blo = Language('blo', 'anisht');
+  static const _bm = Language('bm', 'bambarisht');
+  static const _bn = Language('bn', 'bengalisht');
+  static const _bo = Language('bo', 'tibetisht');
+  static const _br = Language('br', 'bretonisht');
+  static const _brx = Language('brx', 'bodoisht');
+  static const _bs = Language('bs', 'boshnjakisht');
+  static const _bug = Language('bug', 'buginezisht');
+  static const _byn = Language('byn', 'blinisht');
+  static const _ca = Language('ca', 'katalonisht');
+  static const _cay = Language('cay', 'kajugaisht');
+  static const _ccp = Language('ccp', 'çakmaisht');
+  static const _ce = Language('ce', 'çeçenisht');
+  static const _ceb = Language('ceb', 'sebuanisht');
+  static const _cgg = Language('cgg', 'çigisht');
+  static const _ch = Language('ch', 'kamoroisht');
+  static const _chk = Language('chk', 'çukezisht');
+  static const _chm = Language('chm', 'marisht');
+  static const _cho = Language('cho', 'çoktauisht');
+  static const _chp = Language('chp', 'çipeuajanisht');
+  static const _chr = Language('chr', 'çerokisht');
+  static const _chy = Language('chy', 'çejenisht');
+  static const _ckb = Language('ckb', 'kurdishte qendrore',
+      variant: 'kurdishte qendrore', menu: 'kurdishte qendrore');
+  static const _clc = Language('clc', 'çilkotinisht');
+  static const _co = Language('co', 'korsikisht');
+  static const _crg = Language('crg', 'miçifisht');
+  static const _crj = Language('crj', 'krijishte juglindore');
+  static const _crk = Language('crk', 'krijishte fusharake');
+  static const _crl = Language('crl', 'krijishte verilindore');
+  static const _crm = Language('crm', 'krijishte e Muzit');
+  static const _crr = Language('crr', 'algonkuianishte e Karolinës');
+  static const _crs = Language('crs', 'frëngjishte kreole seselve');
+  static const _cs = Language('cs', 'çekisht');
+  static const _csw = Language('csw', 'krijishte e moçaleve (Ontario)');
+  static const _cu = Language('cu', 'sllavishte kishtare');
+  static const _cv = Language('cv', 'çuvashisht');
+  static const _cy = Language('cy', 'uellsisht');
+  static const _da = Language('da', 'danisht');
+  static const _dak = Language('dak', 'dakotisht');
+  static const _dar = Language('dar', 'darguaisht');
+  static const _dav = Language('dav', 'tajtaisht');
+  static const _de = Language('de', 'gjermanisht');
+  static const _deAT = Language('de-AT', 'gjermanishte austriake');
+  static const _deCH =
+      Language('de-CH', 'gjermanishte zvicerane (dialekti i Alpeve)');
+  static const _dgr = Language('dgr', 'dogribisht');
+  static const _dje = Language('dje', 'zarmaisht');
+  static const _doi = Language('doi', 'dogrisht');
+  static const _dsb = Language('dsb', 'sorbishte e poshtme');
+  static const _dua = Language('dua', 'dualaisht');
+  static const _dv = Language('dv', 'divehisht');
+  static const _dyo = Language('dyo', 'xhulafonjisht');
+  static const _dz = Language('dz', 'xhongaisht');
+  static const _dzg = Language('dzg', 'dazagauisht');
+  static const _ebu = Language('ebu', 'embuisht');
+  static const _ee = Language('ee', 'eveisht');
+  static const _efi = Language('efi', 'efikisht');
+  static const _eka = Language('eka', 'ekajukisht');
+  static const _el = Language('el', 'greqisht');
+  static const _en = Language('en', 'anglisht');
+  static const _enAU = Language('en-AU', 'anglishte australiane');
+  static const _enCA = Language('en-CA', 'anglishte kanadeze');
+  static const _enGB = Language('en-GB', 'anglishte britanike',
+      short: 'anglishte e Mbretërisë së Bashkuar');
+  static const _enUS =
+      Language('en-US', 'anglishte amerikane', short: 'anglishte e SHBA-së');
+  static const _eo = Language('eo', 'esperanto');
+  static const _es = Language('es', 'spanjisht');
+  static const _es419 = Language('es-419', 'spanjishte amerikano-latine');
+  static const _esES = Language('es-ES', 'spanjishte evropiane');
+  static const _esMX = Language('es-MX', 'spanjishte meksikane');
+  static const _et = Language('et', 'estonisht');
+  static const _eu = Language('eu', 'baskisht');
+  static const _ewo = Language('ewo', 'euondoisht');
+  static const _fa = Language('fa', 'persisht');
+  static const _faAF = Language('fa-AF', 'darisht');
+  static const _ff = Language('ff', 'fulaisht');
+  static const _fi = Language('fi', 'finlandisht');
+  static const _fil = Language('fil', 'filipinisht');
+  static const _fj = Language('fj', 'fixhianisht');
+  static const _fo = Language('fo', 'faroisht');
+  static const _fon = Language('fon', 'fonisht');
+  static const _fr = Language('fr', 'frëngjisht');
+  static const _frCA = Language('fr-CA', 'frëngjishte kanadeze');
+  static const _frCH = Language('fr-CH', 'frëngjishte zvicerane');
+  static const _frc = Language('frc', 'frëngjishte kajune');
+  static const _frr = Language('frr', 'frisianishte veriore');
+  static const _fur = Language('fur', 'friulianisht');
+  static const _fy = Language('fy', 'frizianishte perëndimore');
+  static const _ga = Language('ga', 'irlandisht');
+  static const _gaa = Language('gaa', 'gaisht');
+  static const _gag = Language('gag', 'gagauzisht');
+  static const _gd = Language('gd', 'galishte skoceze');
+  static const _gez = Language('gez', 'gizisht');
+  static const _gil = Language('gil', 'gilbertazisht');
+  static const _gl = Language('gl', 'galicisht');
+  static const _gn = Language('gn', 'guaranisht');
+  static const _gor = Language('gor', 'gorontaloisht');
+  static const _gsw = Language('gsw', 'gjermanishte zvicerane');
+  static const _gu = Language('gu', 'guxharatisht');
+  static const _guz = Language('guz', 'gusisht');
+  static const _gv = Language('gv', 'manksisht');
+  static const _gwi = Language('gwi', 'guiçinisht');
+  static const _ha = Language('ha', 'hausisht');
+  static const _hai = Language('hai', 'haidaisht');
+  static const _haw = Language('haw', 'havaisht');
+  static const _hax = Language('hax', 'haidaishte jugore');
+  static const _he = Language('he', 'hebraisht');
+  static const _hi = Language('hi', 'indisht');
+  static const _hiLatn =
+      Language('hi-Latn', 'hindisht (latine)', variant: 'hinglisht');
+  static const _hil = Language('hil', 'hiligajnonisht');
+  static const _hmn = Language('hmn', 'hmongisht');
+  static const _hr = Language('hr', 'kroatisht');
+  static const _hsb = Language('hsb', 'sorbishte e sipërme');
+  static const _ht = Language('ht', 'kreolishte e Haitit');
+  static const _hu = Language('hu', 'hungarisht');
+  static const _hup = Language('hup', 'hupaisht');
+  static const _hur = Language('hur', 'halkemejlemisht');
+  static const _hy = Language('hy', 'armenisht');
+  static const _hz = Language('hz', 'hereroisht');
+  static const _ia = Language('ia', 'interlingua');
+  static const _iba = Language('iba', 'ibanisht');
+  static const _ibb = Language('ibb', 'ibibioisht');
+  static const _id = Language('id', 'indonezisht');
+  static const _ie = Language('ie', 'gjuha oksidentale');
+  static const _ig = Language('ig', 'igboisht');
+  static const _ii = Language('ii', 'sishuanisht');
+  static const _ikt = Language('ikt', 'inuktitutishte kanadeze perëndimore');
+  static const _ilo = Language('ilo', 'ilokoisht');
+  static const _inh = Language('inh', 'ingushisht');
+  static const _io = Language('io', 'idoisht');
+  static const _$is = Language('is', 'islandisht');
+  static const _it = Language('it', 'italisht');
+  static const _iu = Language('iu', 'inuktitutisht');
+  static const _ja = Language('ja', 'japonisht');
+  static const _jbo = Language('jbo', 'lojbanisht');
+  static const _jgo = Language('jgo', 'ngombisht');
+  static const _jmc = Language('jmc', 'maçamisht');
+  static const _jv = Language('jv', 'javanisht');
+  static const _ka = Language('ka', 'gjeorgjisht');
+  static const _kab = Language('kab', 'kabilisht');
+  static const _kac = Language('kac', 'kaçinisht');
+  static const _kaj = Language('kaj', 'kajeisht');
+  static const _kam = Language('kam', 'kambaisht');
+  static const _kbd = Language('kbd', 'kabardianisht');
+  static const _kcg = Language('kcg', 'tjapisht');
+  static const _kde = Language('kde', 'makondisht');
+  static const _kea = Language('kea', 'kreolishte e Kepit të Gjelbër');
+  static const _kfo = Language('kfo', 'koroisht');
+  static const _kgp = Language('kgp', 'kaingangisht');
+  static const _kha = Language('kha', 'kasisht');
+  static const _khq = Language('khq', 'kojraçinisht');
+  static const _ki = Language('ki', 'kikujuisht');
+  static const _kj = Language('kj', 'kuanjamaisht');
+  static const _kk = Language('kk', 'kazakisht');
+  static const _kkj = Language('kkj', 'kakoisht');
+  static const _kl = Language('kl', 'kalalisutisht');
+  static const _kln = Language('kln', 'kalenxhinisht');
+  static const _km = Language('km', 'kmerisht');
+  static const _kmb = Language('kmb', 'kimbunduisht');
+  static const _kn = Language('kn', 'kanadisht');
+  static const _ko = Language('ko', 'koreanisht');
+  static const _koi = Language('koi', 'komi-parmjakisht');
+  static const _kok = Language('kok', 'konkanisht');
+  static const _kpe = Language('kpe', 'kpeleisht');
+  static const _kr = Language('kr', 'kanurisht');
+  static const _krc = Language('krc', 'karaçaj-balkarisht');
+  static const _krl = Language('krl', 'karelianisht');
+  static const _kru = Language('kru', 'kurukisht');
+  static const _ks = Language('ks', 'kashmirisht');
+  static const _ksb = Language('ksb', 'shambalisht');
+  static const _ksf = Language('ksf', 'bafianisht');
+  static const _ksh = Language('ksh', 'këlnisht');
+  static const _ku = Language('ku', 'kurdisht');
+  static const _kum = Language('kum', 'kumikisht');
+  static const _kv = Language('kv', 'komisht');
+  static const _kw = Language('kw', 'kornisht');
+  static const _kwk = Language('kwk', 'kuakualaisht');
+  static const _kxv = Language('kxv', 'kuvisht');
+  static const _ky = Language('ky', 'kirgizisht');
+  static const _la = Language('la', 'latinisht');
+  static const _lad = Language('lad', 'ladinoisht');
+  static const _lag = Language('lag', 'langisht');
+  static const _lb = Language('lb', 'luksemburgisht');
+  static const _lez = Language('lez', 'lezgianisht');
+  static const _lg = Language('lg', 'gandaisht');
+  static const _li = Language('li', 'limburgisht');
+  static const _lij = Language('lij', 'ligurianisht');
+  static const _lil = Language('lil', 'lilluetisht');
+  static const _lkt = Language('lkt', 'lakotisht');
+  static const _lmo = Language('lmo', 'lombardisht');
+  static const _ln = Language('ln', 'lingalisht');
+  static const _lo = Language('lo', 'laosisht');
+  static const _lou = Language('lou', 'kreolishte e Luizianës');
+  static const _loz = Language('loz', 'lozisht');
+  static const _lrc = Language('lrc', 'lurishte veriore');
+  static const _lsm = Language('lsm', 'samisht');
+  static const _lt = Language('lt', 'lituanisht');
+  static const _lu = Language('lu', 'luba-katangaisht');
+  static const _lua = Language('lua', 'luba-luluaisht');
+  static const _lun = Language('lun', 'lundaisht');
+  static const _luo = Language('luo', 'luoisht');
+  static const _lus = Language('lus', 'mizoisht');
+  static const _luy = Language('luy', 'lujaisht');
+  static const _lv = Language('lv', 'letonisht');
+  static const _mad = Language('mad', 'madurezisht');
+  static const _mag = Language('mag', 'magaisht');
+  static const _mai = Language('mai', 'maitilisht');
+  static const _mak = Language('mak', 'makasarisht');
+  static const _mas = Language('mas', 'masaisht');
+  static const _mdf = Language('mdf', 'mokshaisht');
+  static const _men = Language('men', 'mendisht');
+  static const _mer = Language('mer', 'meruisht');
+  static const _mfe = Language('mfe', 'morisjenisht');
+  static const _mg = Language('mg', 'madagaskarisht');
+  static const _mgh = Language('mgh', 'makua-mitoisht');
+  static const _mgo = Language('mgo', 'metaisht');
+  static const _mh = Language('mh', 'marshallisht');
+  static const _mi = Language('mi', 'maorisht');
+  static const _mic = Language('mic', 'mikmakisht');
+  static const _min = Language('min', 'minangkabauisht');
+  static const _mk = Language('mk', 'maqedonisht');
+  static const _ml = Language('ml', 'malajalamisht');
+  static const _mn = Language('mn', 'mongolisht');
+  static const _mni = Language('mni', 'manipurisht');
+  static const _moe = Language('moe', 'inuaimunisht');
+  static const _moh = Language('moh', 'mohokisht');
+  static const _mos = Language('mos', 'mosisht');
+  static const _mr = Language('mr', 'maratisht');
+  static const _ms = Language('ms', 'malajisht');
+  static const _mt = Language('mt', 'maltisht');
+  static const _mua = Language('mua', 'mundangisht');
+  static const _mul = Language('mul', 'gjuhë të shumëfishta');
+  static const _mus = Language('mus', 'krikisht');
+  static const _mwl = Language('mwl', 'mirandisht');
+  static const _my = Language('my', 'birmanisht');
+  static const _myv = Language('myv', 'erzjaisht');
+  static const _mzn = Language('mzn', 'mazanderanisht');
+  static const _na = Language('na', 'nauruisht');
+  static const _nap = Language('nap', 'napoletanisht');
+  static const _naq = Language('naq', 'namaisht');
+  static const _nb = Language('nb', 'norvegjishte letrare');
+  static const _nd = Language('nd', 'ndebelishte veriore');
+  static const _nds = Language('nds', 'gjermanishte e vendeve të ulëta');
+  static const _ndsNL =
+      Language('nds-NL', 'gjermanishte saksone e vendeve të ulëta');
+  static const _ne = Language('ne', 'nepalisht');
+  static const _$new = Language('new', 'neuarisht');
+  static const _ng = Language('ng', 'ndongaisht');
+  static const _nia = Language('nia', 'niasisht');
+  static const _niu = Language('niu', 'niueanisht');
+  static const _nl = Language('nl', 'holandisht');
+  static const _nlBE = Language('nl-BE', 'flamandisht');
+  static const _nmg = Language('nmg', 'kuasisht');
+  static const _nn = Language('nn', 'norvegjishte nynorsk');
+  static const _nnh = Language('nnh', 'ngiembunisht');
+  static const _no = Language('no', 'norvegjisht');
+  static const _nog = Language('nog', 'nogajisht');
+  static const _nqo = Language('nqo', 'nkoisht');
+  static const _nr = Language('nr', 'ndebelishte jugore');
+  static const _nso = Language('nso', 'sotoishte veriore');
+  static const _nus = Language('nus', 'nuerisht');
+  static const _nv = Language('nv', 'navahoisht');
+  static const _ny = Language('ny', 'nianjisht');
+  static const _nyn = Language('nyn', 'niankolisht');
+  static const _oc = Language('oc', 'oksitanisht');
+  static const _ojb = Language('ojb', 'oxhibuaishte verilindore');
+  static const _ojc = Language('ojc', 'oxhibuaishte qendrore');
+  static const _ojs = Language('ojs', 'oxhikrijisht');
+  static const _ojw = Language('ojw', 'oxhibuaishte perëndimore');
+  static const _oka = Language('oka', 'okanaganisht');
+  static const _om = Language('om', 'oromoisht');
+  static const _or = Language('or', 'odisht');
+  static const _os = Language('os', 'osetisht');
+  static const _pa = Language('pa', 'punxhabisht');
+  static const _pag = Language('pag', 'pangasinanisht');
+  static const _pam = Language('pam', 'pampangaisht');
+  static const _pap = Language('pap', 'papiamentisht');
+  static const _pau = Language('pau', 'paluanisht');
+  static const _pcm = Language('pcm', 'pixhinishte nigeriane');
+  static const _pis = Language('pis', 'pixhinisht');
+  static const _pl = Language('pl', 'polonisht');
+  static const _pqm = Language('pqm', 'malisit-pasamakuadisht');
+  static const _prg = Language('prg', 'prusisht');
+  static const _ps = Language('ps', 'pashtoisht');
+  static const _pt = Language('pt', 'portugalisht');
+  static const _ptBR = Language('pt-BR', 'portugalishte braziliane');
+  static const _ptPT = Language('pt-PT', 'portugalishte evropiane');
+  static const _qu = Language('qu', 'keçuaisht');
+  static const _quc = Language('quc', 'kiçeisht');
+  static const _raj = Language('raj', 'raxhastanisht');
+  static const _rap = Language('rap', 'rapanuisht');
+  static const _rar = Language('rar', 'rarontonganisht');
+  static const _rhg = Language('rhg', 'rohingiaisht');
+  static const _rm = Language('rm', 'retoromanisht');
+  static const _rn = Language('rn', 'rundisht');
+  static const _ro = Language('ro', 'rumanisht');
+  static const _roMD = Language('ro-MD', 'moldavisht');
+  static const _rof = Language('rof', 'romboisht');
+  static const _ru = Language('ru', 'rusisht');
+  static const _rup = Language('rup', 'vllahisht');
+  static const _rw = Language('rw', 'kiniaruandisht');
+  static const _rwk = Language('rwk', 'ruaisht');
+  static const _sa = Language('sa', 'sanskritisht');
+  static const _sad = Language('sad', 'sandauisht');
+  static const _sah = Language('sah', 'sakaisht');
+  static const _saq = Language('saq', 'samburisht');
+  static const _sat = Language('sat', 'santalisht');
+  static const _sba = Language('sba', 'ngambajisht');
+  static const _sbp = Language('sbp', 'sanguisht');
+  static const _sc = Language('sc', 'sardenjisht');
+  static const _scn = Language('scn', 'siçilianisht');
+  static const _sco = Language('sco', 'skotisht');
+  static const _sd = Language('sd', 'sindisht');
+  static const _sdh = Language('sdh', 'kurdishte jugore');
+  static const _se = Language('se', 'samishte veriore');
+  static const _seh = Language('seh', 'senaisht');
+  static const _ses = Language('ses', 'senishte kojrabore');
+  static const _sg = Language('sg', 'sangoisht');
+  static const _sh = Language('sh', 'serbo-kroatisht');
+  static const _shi = Language('shi', 'taçelitisht');
+  static const _shn = Language('shn', 'shanisht');
+  static const _si = Language('si', 'sinhalisht');
+  static const _sk = Language('sk', 'sllovakisht');
+  static const _sl = Language('sl', 'sllovenisht');
+  static const _slh = Language('slh', 'lashutsidishte jugore');
+  static const _sm = Language('sm', 'samoanisht');
+  static const _sma = Language('sma', 'samishte jugore');
+  static const _smj = Language('smj', 'samishte lule');
+  static const _smn = Language('smn', 'samishte inari');
+  static const _sms = Language('sms', 'samishte skolti');
+  static const _sn = Language('sn', 'shonisht');
+  static const _snk = Language('snk', 'soninkisht');
+  static const _so = Language('so', 'somalisht');
+  static const _sq = Language('sq', 'shqip');
+  static const _sr = Language('sr', 'serbisht');
+  static const _srn = Language('srn', 'srananisht (sranantongoisht)');
+  static const _ss = Language('ss', 'suatisht');
+  static const _ssy = Language('ssy', 'sahoisht');
+  static const _st = Language('st', 'sotoishte jugore');
+  static const _str = Language('str', 'sejlishte e Ngushticave të Rozarios');
+  static const _su = Language('su', 'sundanisht');
+  static const _suk = Language('suk', 'sukumaisht');
+  static const _sv = Language('sv', 'suedisht');
+  static const _sw = Language('sw', 'suahilisht');
+  static const _swCD = Language('sw-CD', 'suahilishte kongoleze');
+  static const _swb = Language('swb', 'kamorianisht');
+  static const _syr = Language('syr', 'siriakisht');
+  static const _szl = Language('szl', 'silesisht');
+  static const _ta = Language('ta', 'tamilisht');
+  static const _tce = Language('tce', 'tatshonishte jugore');
+  static const _te = Language('te', 'teluguisht');
+  static const _tem = Language('tem', 'timneisht');
+  static const _teo = Language('teo', 'tesoisht');
+  static const _tet = Language('tet', 'tetumisht');
+  static const _tg = Language('tg', 'taxhikisht');
+  static const _tgx = Language('tgx', 'tagishisht');
+  static const _th = Language('th', 'tajlandisht');
+  static const _tht = Language('tht', 'taltanisht');
+  static const _ti = Language('ti', 'tigrinjaisht');
+  static const _tig = Language('tig', 'tigreisht');
+  static const _tk = Language('tk', 'turkmenisht');
+  static const _tlh = Language('tlh', 'klingonisht');
+  static const _tli = Language('tli', 'tlingitisht');
+  static const _tn = Language('tn', 'cuanaisht');
+  static const _to = Language('to', 'tonganisht');
+  static const _tok = Language('tok', 'tokiponaisht');
+  static const _tpi = Language('tpi', 'pisinishte toku');
+  static const _tr = Language('tr', 'turqisht');
+  static const _trv = Language('trv', 'torokoisht');
+  static const _ts = Language('ts', 'congaisht');
+  static const _tt = Language('tt', 'tatarisht');
+  static const _ttm = Language('ttm', 'taçoneishte veriore');
+  static const _tum = Language('tum', 'tumbukaisht');
+  static const _tvl = Language('tvl', 'tuvaluisht');
+  static const _tw = Language('tw', 'tuisht');
+  static const _twq = Language('twq', 'tasavakisht');
+  static const _ty = Language('ty', 'tahitisht');
+  static const _tyv = Language('tyv', 'tuvinianisht');
+  static const _tzm = Language('tzm', 'tamazajtisht e Atlasit Qendror');
+  static const _udm = Language('udm', 'udmurtisht');
+  static const _ug = Language('ug', 'ujgurisht');
+  static const _uk = Language('uk', 'ukrainisht');
+  static const _umb = Language('umb', 'umbunduisht');
+  static const _und = Language('und', 'E panjohur');
+  static const _ur = Language('ur', 'urduisht');
+  static const _uz = Language('uz', 'uzbekisht');
+  static const _vai = Language('vai', 'vaisht');
+  static const _ve = Language('ve', 'vendaisht');
+  static const _vec = Language('vec', 'venetisht');
+  static const _vi = Language('vi', 'vietnamisht');
+  static const _vmw = Language('vmw', 'makuvaisht');
+  static const _vo = Language('vo', 'volapykisht');
+  static const _vun = Language('vun', 'vunxhoisht');
+  static const _wa = Language('wa', 'ualunisht');
+  static const _wae = Language('wae', 'ualserisht');
+  static const _wal = Language('wal', 'ulajtaisht');
+  static const _war = Language('war', 'uarajisht');
+  static const _wbp = Language('wbp', 'uarlpirisht');
+  static const _wo = Language('wo', 'uolofisht');
+  static const _wuu = Language('wuu', 'kinezishte vu');
+  static const _xal = Language('xal', 'kalmikisht');
+  static const _xh = Language('xh', 'xhosaisht');
+  static const _xnr = Language('xnr', 'kangrisht');
+  static const _xog = Language('xog', 'sogisht');
+  static const _yav = Language('yav', 'jangbenisht');
+  static const _ybb = Language('ybb', 'jembaisht');
+  static const _yi = Language('yi', 'jidisht');
+  static const _yo = Language('yo', 'jorubaisht');
+  static const _yrl = Language('yrl', 'nejengatuisht');
+  static const _yue =
+      Language('yue', 'kantonezisht', menu: 'kinezishte kantoneze');
+  static const _za = Language('za', 'zhuangisht');
+  static const _zgh = Language('zgh', 'tamaziatishte standarde marokene');
+  static const _zh = Language('zh', 'kinezisht', menu: 'kinezishte mandarine');
+  static const _zhHans = Language('zh-Hans', 'kinezishte e thjeshtuar');
+  static const _zhHant = Language('zh-Hant', 'kinezishte tradicionale');
+  static const _zu = Language('zu', 'zuluisht');
+  static const _zun = Language('zun', 'zunisht');
+  static const _zxx = Language('zxx', 'nuk ka përmbajtje gjuhësore');
+  static const _zza = Language('zza', 'zazaisht');
 
   @override
-  Territory get world => Territory(
-        '001',
-        'Bota',
-      );
+  final unknownLanguage = _und;
+  @override
+  final aa = _aa;
+  @override
+  final ab = _ab;
+  @override
+  final ace = _ace;
+  @override
+  final ach = _und;
+  @override
+  final ada = _ada;
+  @override
+  final ady = _ady;
+  @override
+  final ae = _und;
+  @override
+  final aeb = _und;
+  @override
+  final af = _af;
+  @override
+  final afh = _und;
+  @override
+  final agq = _agq;
+  @override
+  final ain = _ain;
+  @override
+  final ak = _ak;
+  @override
+  final akk = _und;
+  @override
+  final akz = _und;
+  @override
+  final ale = _ale;
+  @override
+  final aln = _und;
+  @override
+  final alt = _alt;
+  @override
+  final am = _am;
+  @override
+  final an = _an;
+  @override
+  final ang = _und;
+  @override
+  final ann = _ann;
+  @override
+  final anp = _anp;
+  @override
+  final ar = _ar;
+  @override
+  final ar001 = _ar001;
+  @override
+  final arc = _und;
+  @override
+  final arn = _arn;
+  @override
+  final aro = _und;
+  @override
+  final arp = _arp;
+  @override
+  final arq = _und;
+  @override
+  final ars = _ars;
+  @override
+  final arw = _und;
+  @override
+  final ary = _und;
+  @override
+  final arz = _und;
+  @override
+  final $as = _$as;
+  @override
+  final asa = _asa;
+  @override
+  final ase = _und;
+  @override
+  final ast = _ast;
+  @override
+  final atj = _atj;
+  @override
+  final av = _av;
+  @override
+  final avk = _und;
+  @override
+  final awa = _awa;
+  @override
+  final ay = _ay;
+  @override
+  final az = _az;
+  @override
+  final ba = _ba;
+  @override
+  final bal = _und;
+  @override
+  final ban = _ban;
+  @override
+  final bar = _und;
+  @override
+  final bas = _bas;
+  @override
+  final bax = _und;
+  @override
+  final bbc = _und;
+  @override
+  final bbj = _und;
+  @override
+  final be = _be;
+  @override
+  final bej = _und;
+  @override
+  final bem = _bem;
+  @override
+  final bew = _und;
+  @override
+  final bez = _bez;
+  @override
+  final bfd = _und;
+  @override
+  final bfq = _und;
+  @override
+  final bg = _bg;
+  @override
+  final bgc = _bgc;
+  @override
+  final bgn = _bgn;
+  @override
+  final bho = _bho;
+  @override
+  final bi = _bi;
+  @override
+  final bik = _und;
+  @override
+  final bin = _bin;
+  @override
+  final bjn = _und;
+  @override
+  final bkm = _und;
+  @override
+  final bla = _bla;
+  @override
+  final blo = _blo;
+  @override
+  final blt = _und;
+  @override
+  final bm = _bm;
+  @override
+  final bn = _bn;
+  @override
+  final bo = _bo;
+  @override
+  final bpy = _und;
+  @override
+  final bqi = _und;
+  @override
+  final br = _br;
+  @override
+  final bra = _und;
+  @override
+  final brh = _und;
+  @override
+  final brx = _brx;
+  @override
+  final bs = _bs;
+  @override
+  final bss = _und;
+  @override
+  final bua = _und;
+  @override
+  final bug = _bug;
+  @override
+  final bum = _und;
+  @override
+  final byn = _byn;
+  @override
+  final byv = _und;
+  @override
+  final ca = _ca;
+  @override
+  final cad = _und;
+  @override
+  final car = _und;
+  @override
+  final cay = _cay;
+  @override
+  final cch = _und;
+  @override
+  final ccp = _ccp;
+  @override
+  final ce = _ce;
+  @override
+  final ceb = _ceb;
+  @override
+  final cgg = _cgg;
+  @override
+  final ch = _ch;
+  @override
+  final chb = _und;
+  @override
+  final chg = _und;
+  @override
+  final chk = _chk;
+  @override
+  final chm = _chm;
+  @override
+  final chn = _und;
+  @override
+  final cho = _cho;
+  @override
+  final chp = _chp;
+  @override
+  final chr = _chr;
+  @override
+  final chy = _chy;
+  @override
+  final cic = _und;
+  @override
+  final ckb = _ckb;
+  @override
+  final clc = _clc;
+  @override
+  final co = _co;
+  @override
+  final cop = _und;
+  @override
+  final cps = _und;
+  @override
+  final cr = _und;
+  @override
+  final crg = _crg;
+  @override
+  final crh = _und;
+  @override
+  final crj = _crj;
+  @override
+  final crk = _crk;
+  @override
+  final crl = _crl;
+  @override
+  final crm = _crm;
+  @override
+  final crr = _crr;
+  @override
+  final crs = _crs;
+  @override
+  final cs = _cs;
+  @override
+  final csb = _und;
+  @override
+  final csw = _csw;
+  @override
+  final cu = _cu;
+  @override
+  final cv = _cv;
+  @override
+  final cwd = _und;
+  @override
+  final cy = _cy;
+  @override
+  final da = _da;
+  @override
+  final dak = _dak;
+  @override
+  final dar = _dar;
+  @override
+  final dav = _dav;
+  @override
+  final de = _de;
+  @override
+  final deAT = _deAT;
+  @override
+  final deCH = _deCH;
+  @override
+  final del = _und;
+  @override
+  final den = _und;
+  @override
+  final dgr = _dgr;
+  @override
+  final din = _und;
+  @override
+  final dje = _dje;
+  @override
+  final doi = _doi;
+  @override
+  final dsb = _dsb;
+  @override
+  final dtp = _und;
+  @override
+  final dua = _dua;
+  @override
+  final dum = _und;
+  @override
+  final dv = _dv;
+  @override
+  final dyo = _dyo;
+  @override
+  final dyu = _und;
+  @override
+  final dz = _dz;
+  @override
+  final dzg = _dzg;
+  @override
+  final ebu = _ebu;
+  @override
+  final ee = _ee;
+  @override
+  final efi = _efi;
+  @override
+  final egl = _und;
+  @override
+  final egy = _und;
+  @override
+  final eka = _eka;
+  @override
+  final el = _el;
+  @override
+  final elx = _und;
+  @override
+  final en = _en;
+  @override
+  final enAU = _enAU;
+  @override
+  final enCA = _enCA;
+  @override
+  final enGB = _enGB;
+  @override
+  final enUS = _enUS;
+  @override
+  final enm = _und;
+  @override
+  final eo = _eo;
+  @override
+  final es = _es;
+  @override
+  final es419 = _es419;
+  @override
+  final esES = _esES;
+  @override
+  final esMX = _esMX;
+  @override
+  final esu = _und;
+  @override
+  final et = _et;
+  @override
+  final eu = _eu;
+  @override
+  final ewo = _ewo;
+  @override
+  final ext = _und;
+  @override
+  final fa = _fa;
+  @override
+  final faAF = _faAF;
+  @override
+  final fan = _und;
+  @override
+  final fat = _und;
+  @override
+  final ff = _ff;
+  @override
+  final fi = _fi;
+  @override
+  final fil = _fil;
+  @override
+  final fit = _und;
+  @override
+  final fj = _fj;
+  @override
+  final fo = _fo;
+  @override
+  final fon = _fon;
+  @override
+  final fr = _fr;
+  @override
+  final frCA = _frCA;
+  @override
+  final frCH = _frCH;
+  @override
+  final frc = _frc;
+  @override
+  final frm = _und;
+  @override
+  final fro = _und;
+  @override
+  final frp = _und;
+  @override
+  final frr = _frr;
+  @override
+  final frs = _und;
+  @override
+  final fur = _fur;
+  @override
+  final fy = _fy;
+  @override
+  final ga = _ga;
+  @override
+  final gaa = _gaa;
+  @override
+  final gag = _gag;
+  @override
+  final gan = _und;
+  @override
+  final gay = _und;
+  @override
+  final gba = _und;
+  @override
+  final gbz = _und;
+  @override
+  final gd = _gd;
+  @override
+  final gez = _gez;
+  @override
+  final gil = _gil;
+  @override
+  final gl = _gl;
+  @override
+  final glk = _und;
+  @override
+  final gmh = _und;
+  @override
+  final gn = _gn;
+  @override
+  final goh = _und;
+  @override
+  final gon = _und;
+  @override
+  final gor = _gor;
+  @override
+  final got = _und;
+  @override
+  final grb = _und;
+  @override
+  final grc = _und;
+  @override
+  final gsw = _gsw;
+  @override
+  final gu = _gu;
+  @override
+  final guc = _und;
+  @override
+  final gur = _und;
+  @override
+  final guz = _guz;
+  @override
+  final gv = _gv;
+  @override
+  final gwi = _gwi;
+  @override
+  final ha = _ha;
+  @override
+  final hai = _hai;
+  @override
+  final hak = _und;
+  @override
+  final haw = _haw;
+  @override
+  final hax = _hax;
+  @override
+  final hdn = _und;
+  @override
+  final he = _he;
+  @override
+  final hi = _hi;
+  @override
+  final hiLatn = _hiLatn;
+  @override
+  final hif = _und;
+  @override
+  final hil = _hil;
+  @override
+  final hit = _und;
+  @override
+  final hmn = _hmn;
+  @override
+  final hnj = _und;
+  @override
+  final ho = _und;
+  @override
+  final hr = _hr;
+  @override
+  final hsb = _hsb;
+  @override
+  final hsn = _und;
+  @override
+  final ht = _ht;
+  @override
+  final hu = _hu;
+  @override
+  final hup = _hup;
+  @override
+  final hur = _hur;
+  @override
+  final hy = _hy;
+  @override
+  final hz = _hz;
+  @override
+  final ia = _ia;
+  @override
+  final iba = _iba;
+  @override
+  final ibb = _ibb;
+  @override
+  final id = _id;
+  @override
+  final ie = _ie;
+  @override
+  final ig = _ig;
+  @override
+  final ii = _ii;
+  @override
+  final ik = _und;
+  @override
+  final ike = _und;
+  @override
+  final ikt = _ikt;
+  @override
+  final ilo = _ilo;
+  @override
+  final inh = _inh;
+  @override
+  final io = _io;
+  @override
+  final $is = _$is;
+  @override
+  final it = _it;
+  @override
+  final iu = _iu;
+  @override
+  final izh = _und;
+  @override
+  final ja = _ja;
+  @override
+  final jam = _und;
+  @override
+  final jbo = _jbo;
+  @override
+  final jgo = _jgo;
+  @override
+  final jmc = _jmc;
+  @override
+  final jpr = _und;
+  @override
+  final jrb = _und;
+  @override
+  final jut = _und;
+  @override
+  final jv = _jv;
+  @override
+  final ka = _ka;
+  @override
+  final kaa = _und;
+  @override
+  final kab = _kab;
+  @override
+  final kac = _kac;
+  @override
+  final kaj = _kaj;
+  @override
+  final kam = _kam;
+  @override
+  final kaw = _und;
+  @override
+  final kbd = _kbd;
+  @override
+  final kbl = _und;
+  @override
+  final kcg = _kcg;
+  @override
+  final kde = _kde;
+  @override
+  final kea = _kea;
+  @override
+  final ken = _und;
+  @override
+  final kfo = _kfo;
+  @override
+  final kg = _und;
+  @override
+  final kgp = _kgp;
+  @override
+  final kha = _kha;
+  @override
+  final kho = _und;
+  @override
+  final khq = _khq;
+  @override
+  final khw = _und;
+  @override
+  final ki = _ki;
+  @override
+  final kiu = _und;
+  @override
+  final kj = _kj;
+  @override
+  final kk = _kk;
+  @override
+  final kkj = _kkj;
+  @override
+  final kl = _kl;
+  @override
+  final kln = _kln;
+  @override
+  final km = _km;
+  @override
+  final kmb = _kmb;
+  @override
+  final kn = _kn;
+  @override
+  final ko = _ko;
+  @override
+  final koi = _koi;
+  @override
+  final kok = _kok;
+  @override
+  final kos = _und;
+  @override
+  final kpe = _kpe;
+  @override
+  final kr = _kr;
+  @override
+  final krc = _krc;
+  @override
+  final kri = _und;
+  @override
+  final krj = _und;
+  @override
+  final krl = _krl;
+  @override
+  final kru = _kru;
+  @override
+  final ks = _ks;
+  @override
+  final ksb = _ksb;
+  @override
+  final ksf = _ksf;
+  @override
+  final ksh = _ksh;
+  @override
+  final ku = _ku;
+  @override
+  final kum = _kum;
+  @override
+  final kut = _und;
+  @override
+  final kv = _kv;
+  @override
+  final kw = _kw;
+  @override
+  final kwk = _kwk;
+  @override
+  final kxv = _kxv;
+  @override
+  final ky = _ky;
+  @override
+  final la = _la;
+  @override
+  final lad = _lad;
+  @override
+  final lag = _lag;
+  @override
+  final lah = _und;
+  @override
+  final lam = _und;
+  @override
+  final lb = _lb;
+  @override
+  final lez = _lez;
+  @override
+  final lfn = _und;
+  @override
+  final lg = _lg;
+  @override
+  final li = _li;
+  @override
+  final lij = _lij;
+  @override
+  final lil = _lil;
+  @override
+  final liv = _und;
+  @override
+  final lkt = _lkt;
+  @override
+  final lmo = _lmo;
+  @override
+  final ln = _ln;
+  @override
+  final lo = _lo;
+  @override
+  final lol = _und;
+  @override
+  final lou = _lou;
+  @override
+  final loz = _loz;
+  @override
+  final lrc = _lrc;
+  @override
+  final lsm = _lsm;
+  @override
+  final lt = _lt;
+  @override
+  final ltg = _und;
+  @override
+  final lu = _lu;
+  @override
+  final lua = _lua;
+  @override
+  final lui = _und;
+  @override
+  final lun = _lun;
+  @override
+  final luo = _luo;
+  @override
+  final lus = _lus;
+  @override
+  final luy = _luy;
+  @override
+  final lv = _lv;
+  @override
+  final lzh = _und;
+  @override
+  final lzz = _und;
+  @override
+  final mad = _mad;
+  @override
+  final maf = _und;
+  @override
+  final mag = _mag;
+  @override
+  final mai = _mai;
+  @override
+  final mak = _mak;
+  @override
+  final man = _und;
+  @override
+  final mas = _mas;
+  @override
+  final mde = _und;
+  @override
+  final mdf = _mdf;
+  @override
+  final mdr = _und;
+  @override
+  final men = _men;
+  @override
+  final mer = _mer;
+  @override
+  final mfe = _mfe;
+  @override
+  final mg = _mg;
+  @override
+  final mga = _und;
+  @override
+  final mgh = _mgh;
+  @override
+  final mgo = _mgo;
+  @override
+  final mh = _mh;
+  @override
+  final mi = _mi;
+  @override
+  final mic = _mic;
+  @override
+  final min = _min;
+  @override
+  final mk = _mk;
+  @override
+  final ml = _ml;
+  @override
+  final mn = _mn;
+  @override
+  final mnc = _und;
+  @override
+  final mni = _mni;
+  @override
+  final moe = _moe;
+  @override
+  final moh = _moh;
+  @override
+  final mos = _mos;
+  @override
+  final mr = _mr;
+  @override
+  final mrj = _und;
+  @override
+  final ms = _ms;
+  @override
+  final mt = _mt;
+  @override
+  final mua = _mua;
+  @override
+  final mul = _mul;
+  @override
+  final mus = _mus;
+  @override
+  final mwl = _mwl;
+  @override
+  final mwr = _und;
+  @override
+  final mwv = _und;
+  @override
+  final my = _my;
+  @override
+  final mye = _und;
+  @override
+  final myv = _myv;
+  @override
+  final mzn = _mzn;
+  @override
+  final na = _na;
+  @override
+  final nan = _und;
+  @override
+  final nap = _nap;
+  @override
+  final naq = _naq;
+  @override
+  final nb = _nb;
+  @override
+  final nd = _nd;
+  @override
+  final nds = _nds;
+  @override
+  final ndsNL = _ndsNL;
+  @override
+  final ne = _ne;
+  @override
+  final $new = _$new;
+  @override
+  final ng = _ng;
+  @override
+  final nia = _nia;
+  @override
+  final niu = _niu;
+  @override
+  final njo = _und;
+  @override
+  final nl = _nl;
+  @override
+  final nlBE = _nlBE;
+  @override
+  final nmg = _nmg;
+  @override
+  final nn = _nn;
+  @override
+  final nnh = _nnh;
+  @override
+  final no = _no;
+  @override
+  final nog = _nog;
+  @override
+  final non = _und;
+  @override
+  final nov = _und;
+  @override
+  final nqo = _nqo;
+  @override
+  final nr = _nr;
+  @override
+  final nso = _nso;
+  @override
+  final nus = _nus;
+  @override
+  final nv = _nv;
+  @override
+  final nwc = _und;
+  @override
+  final ny = _ny;
+  @override
+  final nym = _und;
+  @override
+  final nyn = _nyn;
+  @override
+  final nyo = _und;
+  @override
+  final nzi = _und;
+  @override
+  final oc = _oc;
+  @override
+  final oj = _und;
+  @override
+  final ojb = _ojb;
+  @override
+  final ojc = _ojc;
+  @override
+  final ojg = _und;
+  @override
+  final ojs = _ojs;
+  @override
+  final ojw = _ojw;
+  @override
+  final oka = _oka;
+  @override
+  final om = _om;
+  @override
+  final or = _or;
+  @override
+  final os = _os;
+  @override
+  final osa = _und;
+  @override
+  final ota = _und;
+  @override
+  final pa = _pa;
+  @override
+  final pag = _pag;
+  @override
+  final pal = _und;
+  @override
+  final pam = _pam;
+  @override
+  final pap = _pap;
+  @override
+  final pau = _pau;
+  @override
+  final pcd = _und;
+  @override
+  final pcm = _pcm;
+  @override
+  final pdc = _und;
+  @override
+  final pdt = _und;
+  @override
+  final peo = _und;
+  @override
+  final pfl = _und;
+  @override
+  final phn = _und;
+  @override
+  final pi = _und;
+  @override
+  final pis = _pis;
+  @override
+  final pl = _pl;
+  @override
+  final pms = _und;
+  @override
+  final pnt = _und;
+  @override
+  final pon = _und;
+  @override
+  final pqm = _pqm;
+  @override
+  final prg = _prg;
+  @override
+  final pro = _und;
+  @override
+  final ps = _ps;
+  @override
+  final pt = _pt;
+  @override
+  final ptBR = _ptBR;
+  @override
+  final ptPT = _ptPT;
+  @override
+  final qu = _qu;
+  @override
+  final quc = _quc;
+  @override
+  final qug = _und;
+  @override
+  final raj = _raj;
+  @override
+  final rap = _rap;
+  @override
+  final rar = _rar;
+  @override
+  final rgn = _und;
+  @override
+  final rhg = _rhg;
+  @override
+  final rif = _und;
+  @override
+  final rm = _rm;
+  @override
+  final rn = _rn;
+  @override
+  final ro = _ro;
+  @override
+  final roMD = _roMD;
+  @override
+  final rof = _rof;
+  @override
+  final rom = _und;
+  @override
+  final rtm = _und;
+  @override
+  final ru = _ru;
+  @override
+  final rue = _und;
+  @override
+  final rug = _und;
+  @override
+  final rup = _rup;
+  @override
+  final rw = _rw;
+  @override
+  final rwk = _rwk;
+  @override
+  final sa = _sa;
+  @override
+  final sad = _sad;
+  @override
+  final sah = _sah;
+  @override
+  final sam = _und;
+  @override
+  final saq = _saq;
+  @override
+  final sas = _und;
+  @override
+  final sat = _sat;
+  @override
+  final saz = _und;
+  @override
+  final sba = _sba;
+  @override
+  final sbp = _sbp;
+  @override
+  final sc = _sc;
+  @override
+  final scn = _scn;
+  @override
+  final sco = _sco;
+  @override
+  final sd = _sd;
+  @override
+  final sdc = _und;
+  @override
+  final sdh = _sdh;
+  @override
+  final se = _se;
+  @override
+  final see = _und;
+  @override
+  final seh = _seh;
+  @override
+  final sei = _und;
+  @override
+  final sel = _und;
+  @override
+  final ses = _ses;
+  @override
+  final sg = _sg;
+  @override
+  final sga = _und;
+  @override
+  final sgs = _und;
+  @override
+  final sh = _sh;
+  @override
+  final shi = _shi;
+  @override
+  final shn = _shn;
+  @override
+  final shu = _und;
+  @override
+  final si = _si;
+  @override
+  final sid = _und;
+  @override
+  final sk = _sk;
+  @override
+  final sl = _sl;
+  @override
+  final slh = _slh;
+  @override
+  final sli = _und;
+  @override
+  final sly = _und;
+  @override
+  final sm = _sm;
+  @override
+  final sma = _sma;
+  @override
+  final smj = _smj;
+  @override
+  final smn = _smn;
+  @override
+  final sms = _sms;
+  @override
+  final sn = _sn;
+  @override
+  final snk = _snk;
+  @override
+  final so = _so;
+  @override
+  final sog = _und;
+  @override
+  final sq = _sq;
+  @override
+  final sr = _sr;
+  @override
+  final srME = _und;
+  @override
+  final srn = _srn;
+  @override
+  final srr = _und;
+  @override
+  final ss = _ss;
+  @override
+  final ssy = _ssy;
+  @override
+  final st = _st;
+  @override
+  final stq = _und;
+  @override
+  final str = _str;
+  @override
+  final su = _su;
+  @override
+  final suk = _suk;
+  @override
+  final sus = _und;
+  @override
+  final sux = _und;
+  @override
+  final sv = _sv;
+  @override
+  final sw = _sw;
+  @override
+  final swCD = _swCD;
+  @override
+  final swb = _swb;
+  @override
+  final syc = _und;
+  @override
+  final syr = _syr;
+  @override
+  final szl = _szl;
+  @override
+  final ta = _ta;
+  @override
+  final tce = _tce;
+  @override
+  final tcy = _und;
+  @override
+  final te = _te;
+  @override
+  final tem = _tem;
+  @override
+  final teo = _teo;
+  @override
+  final ter = _und;
+  @override
+  final tet = _tet;
+  @override
+  final tg = _tg;
+  @override
+  final tgx = _tgx;
+  @override
+  final th = _th;
+  @override
+  final tht = _tht;
+  @override
+  final ti = _ti;
+  @override
+  final tig = _tig;
+  @override
+  final tiv = _und;
+  @override
+  final tk = _tk;
+  @override
+  final tkl = _und;
+  @override
+  final tkr = _und;
+  @override
+  final tl = _und;
+  @override
+  final tlh = _tlh;
+  @override
+  final tli = _tli;
+  @override
+  final tly = _und;
+  @override
+  final tmh = _und;
+  @override
+  final tn = _tn;
+  @override
+  final to = _to;
+  @override
+  final tog = _und;
+  @override
+  final tok = _tok;
+  @override
+  final tpi = _tpi;
+  @override
+  final tr = _tr;
+  @override
+  final tru = _und;
+  @override
+  final trv = _trv;
+  @override
+  final trw = _und;
+  @override
+  final ts = _ts;
+  @override
+  final tsd = _und;
+  @override
+  final tsi = _und;
+  @override
+  final tt = _tt;
+  @override
+  final ttm = _ttm;
+  @override
+  final ttt = _und;
+  @override
+  final tum = _tum;
+  @override
+  final tvl = _tvl;
+  @override
+  final tw = _tw;
+  @override
+  final twq = _twq;
+  @override
+  final ty = _ty;
+  @override
+  final tyv = _tyv;
+  @override
+  final tzm = _tzm;
+  @override
+  final udm = _udm;
+  @override
+  final ug = _ug;
+  @override
+  final uga = _und;
+  @override
+  final uk = _uk;
+  @override
+  final umb = _umb;
+  @override
+  final und = _und;
+  @override
+  final ur = _ur;
+  @override
+  final uz = _uz;
+  @override
+  final vai = _vai;
+  @override
+  final ve = _ve;
+  @override
+  final vec = _vec;
+  @override
+  final vep = _und;
+  @override
+  final vi = _vi;
+  @override
+  final vls = _und;
+  @override
+  final vmf = _und;
+  @override
+  final vmw = _vmw;
+  @override
+  final vo = _vo;
+  @override
+  final vot = _und;
+  @override
+  final vro = _und;
+  @override
+  final vun = _vun;
+  @override
+  final wa = _wa;
+  @override
+  final wae = _wae;
+  @override
+  final wal = _wal;
+  @override
+  final war = _war;
+  @override
+  final was = _und;
+  @override
+  final wbp = _wbp;
+  @override
+  final wo = _wo;
+  @override
+  final wuu = _wuu;
+  @override
+  final xal = _xal;
+  @override
+  final xh = _xh;
+  @override
+  final xmf = _und;
+  @override
+  final xnr = _xnr;
+  @override
+  final xog = _xog;
+  @override
+  final yao = _und;
+  @override
+  final yap = _und;
+  @override
+  final yav = _yav;
+  @override
+  final ybb = _ybb;
+  @override
+  final yi = _yi;
+  @override
+  final yo = _yo;
+  @override
+  final yrl = _yrl;
+  @override
+  final yue = _yue;
+  @override
+  final za = _za;
+  @override
+  final zap = _und;
+  @override
+  final zbl = _und;
+  @override
+  final zea = _und;
+  @override
+  final zen = _und;
+  @override
+  final zgh = _zgh;
+  @override
+  final zh = _zh;
+  @override
+  final zhHans = _zhHans;
+  @override
+  final zhHant = _zhHant;
+  @override
+  final zu = _zu;
+  @override
+  final zun = _zun;
+  @override
+  final zxx = _zxx;
+  @override
+  final zza = _zza;
 
   @override
-  Territory get africa => Territory(
-        '002',
-        'Afrikë',
-      );
+  final languages = const {
+    'aa': _aa,
+    'ab': _ab,
+    'ace': _ace,
+    'ada': _ada,
+    'ady': _ady,
+    'af': _af,
+    'agq': _agq,
+    'ain': _ain,
+    'ak': _ak,
+    'ale': _ale,
+    'alt': _alt,
+    'am': _am,
+    'an': _an,
+    'ann': _ann,
+    'anp': _anp,
+    'ar': _ar,
+    'ar-001': _ar001,
+    'arn': _arn,
+    'arp': _arp,
+    'ars': _ars,
+    'as': _$as,
+    'asa': _asa,
+    'ast': _ast,
+    'atj': _atj,
+    'av': _av,
+    'awa': _awa,
+    'ay': _ay,
+    'az': _az,
+    'ba': _ba,
+    'ban': _ban,
+    'bas': _bas,
+    'be': _be,
+    'bem': _bem,
+    'bez': _bez,
+    'bg': _bg,
+    'bgc': _bgc,
+    'bgn': _bgn,
+    'bho': _bho,
+    'bi': _bi,
+    'bin': _bin,
+    'bla': _bla,
+    'blo': _blo,
+    'bm': _bm,
+    'bn': _bn,
+    'bo': _bo,
+    'br': _br,
+    'brx': _brx,
+    'bs': _bs,
+    'bug': _bug,
+    'byn': _byn,
+    'ca': _ca,
+    'cay': _cay,
+    'ccp': _ccp,
+    'ce': _ce,
+    'ceb': _ceb,
+    'cgg': _cgg,
+    'ch': _ch,
+    'chk': _chk,
+    'chm': _chm,
+    'cho': _cho,
+    'chp': _chp,
+    'chr': _chr,
+    'chy': _chy,
+    'ckb': _ckb,
+    'clc': _clc,
+    'co': _co,
+    'crg': _crg,
+    'crj': _crj,
+    'crk': _crk,
+    'crl': _crl,
+    'crm': _crm,
+    'crr': _crr,
+    'crs': _crs,
+    'cs': _cs,
+    'csw': _csw,
+    'cu': _cu,
+    'cv': _cv,
+    'cy': _cy,
+    'da': _da,
+    'dak': _dak,
+    'dar': _dar,
+    'dav': _dav,
+    'de': _de,
+    'de-AT': _deAT,
+    'de-CH': _deCH,
+    'dgr': _dgr,
+    'dje': _dje,
+    'doi': _doi,
+    'dsb': _dsb,
+    'dua': _dua,
+    'dv': _dv,
+    'dyo': _dyo,
+    'dz': _dz,
+    'dzg': _dzg,
+    'ebu': _ebu,
+    'ee': _ee,
+    'efi': _efi,
+    'eka': _eka,
+    'el': _el,
+    'en': _en,
+    'en-AU': _enAU,
+    'en-CA': _enCA,
+    'en-GB': _enGB,
+    'en-US': _enUS,
+    'eo': _eo,
+    'es': _es,
+    'es-419': _es419,
+    'es-ES': _esES,
+    'es-MX': _esMX,
+    'et': _et,
+    'eu': _eu,
+    'ewo': _ewo,
+    'fa': _fa,
+    'fa-AF': _faAF,
+    'ff': _ff,
+    'fi': _fi,
+    'fil': _fil,
+    'fj': _fj,
+    'fo': _fo,
+    'fon': _fon,
+    'fr': _fr,
+    'fr-CA': _frCA,
+    'fr-CH': _frCH,
+    'frc': _frc,
+    'frr': _frr,
+    'fur': _fur,
+    'fy': _fy,
+    'ga': _ga,
+    'gaa': _gaa,
+    'gag': _gag,
+    'gd': _gd,
+    'gez': _gez,
+    'gil': _gil,
+    'gl': _gl,
+    'gn': _gn,
+    'gor': _gor,
+    'gsw': _gsw,
+    'gu': _gu,
+    'guz': _guz,
+    'gv': _gv,
+    'gwi': _gwi,
+    'ha': _ha,
+    'hai': _hai,
+    'haw': _haw,
+    'hax': _hax,
+    'he': _he,
+    'hi': _hi,
+    'hi-Latn': _hiLatn,
+    'hil': _hil,
+    'hmn': _hmn,
+    'hr': _hr,
+    'hsb': _hsb,
+    'ht': _ht,
+    'hu': _hu,
+    'hup': _hup,
+    'hur': _hur,
+    'hy': _hy,
+    'hz': _hz,
+    'ia': _ia,
+    'iba': _iba,
+    'ibb': _ibb,
+    'id': _id,
+    'ie': _ie,
+    'ig': _ig,
+    'ii': _ii,
+    'ikt': _ikt,
+    'ilo': _ilo,
+    'inh': _inh,
+    'io': _io,
+    'is': _$is,
+    'it': _it,
+    'iu': _iu,
+    'ja': _ja,
+    'jbo': _jbo,
+    'jgo': _jgo,
+    'jmc': _jmc,
+    'jv': _jv,
+    'ka': _ka,
+    'kab': _kab,
+    'kac': _kac,
+    'kaj': _kaj,
+    'kam': _kam,
+    'kbd': _kbd,
+    'kcg': _kcg,
+    'kde': _kde,
+    'kea': _kea,
+    'kfo': _kfo,
+    'kgp': _kgp,
+    'kha': _kha,
+    'khq': _khq,
+    'ki': _ki,
+    'kj': _kj,
+    'kk': _kk,
+    'kkj': _kkj,
+    'kl': _kl,
+    'kln': _kln,
+    'km': _km,
+    'kmb': _kmb,
+    'kn': _kn,
+    'ko': _ko,
+    'koi': _koi,
+    'kok': _kok,
+    'kpe': _kpe,
+    'kr': _kr,
+    'krc': _krc,
+    'krl': _krl,
+    'kru': _kru,
+    'ks': _ks,
+    'ksb': _ksb,
+    'ksf': _ksf,
+    'ksh': _ksh,
+    'ku': _ku,
+    'kum': _kum,
+    'kv': _kv,
+    'kw': _kw,
+    'kwk': _kwk,
+    'kxv': _kxv,
+    'ky': _ky,
+    'la': _la,
+    'lad': _lad,
+    'lag': _lag,
+    'lb': _lb,
+    'lez': _lez,
+    'lg': _lg,
+    'li': _li,
+    'lij': _lij,
+    'lil': _lil,
+    'lkt': _lkt,
+    'lmo': _lmo,
+    'ln': _ln,
+    'lo': _lo,
+    'lou': _lou,
+    'loz': _loz,
+    'lrc': _lrc,
+    'lsm': _lsm,
+    'lt': _lt,
+    'lu': _lu,
+    'lua': _lua,
+    'lun': _lun,
+    'luo': _luo,
+    'lus': _lus,
+    'luy': _luy,
+    'lv': _lv,
+    'mad': _mad,
+    'mag': _mag,
+    'mai': _mai,
+    'mak': _mak,
+    'mas': _mas,
+    'mdf': _mdf,
+    'men': _men,
+    'mer': _mer,
+    'mfe': _mfe,
+    'mg': _mg,
+    'mgh': _mgh,
+    'mgo': _mgo,
+    'mh': _mh,
+    'mi': _mi,
+    'mic': _mic,
+    'min': _min,
+    'mk': _mk,
+    'ml': _ml,
+    'mn': _mn,
+    'mni': _mni,
+    'moe': _moe,
+    'moh': _moh,
+    'mos': _mos,
+    'mr': _mr,
+    'ms': _ms,
+    'mt': _mt,
+    'mua': _mua,
+    'mul': _mul,
+    'mus': _mus,
+    'mwl': _mwl,
+    'my': _my,
+    'myv': _myv,
+    'mzn': _mzn,
+    'na': _na,
+    'nap': _nap,
+    'naq': _naq,
+    'nb': _nb,
+    'nd': _nd,
+    'nds': _nds,
+    'nds-NL': _ndsNL,
+    'ne': _ne,
+    'new': _$new,
+    'ng': _ng,
+    'nia': _nia,
+    'niu': _niu,
+    'nl': _nl,
+    'nl-BE': _nlBE,
+    'nmg': _nmg,
+    'nn': _nn,
+    'nnh': _nnh,
+    'no': _no,
+    'nog': _nog,
+    'nqo': _nqo,
+    'nr': _nr,
+    'nso': _nso,
+    'nus': _nus,
+    'nv': _nv,
+    'ny': _ny,
+    'nyn': _nyn,
+    'oc': _oc,
+    'ojb': _ojb,
+    'ojc': _ojc,
+    'ojs': _ojs,
+    'ojw': _ojw,
+    'oka': _oka,
+    'om': _om,
+    'or': _or,
+    'os': _os,
+    'pa': _pa,
+    'pag': _pag,
+    'pam': _pam,
+    'pap': _pap,
+    'pau': _pau,
+    'pcm': _pcm,
+    'pis': _pis,
+    'pl': _pl,
+    'pqm': _pqm,
+    'prg': _prg,
+    'ps': _ps,
+    'pt': _pt,
+    'pt-BR': _ptBR,
+    'pt-PT': _ptPT,
+    'qu': _qu,
+    'quc': _quc,
+    'raj': _raj,
+    'rap': _rap,
+    'rar': _rar,
+    'rhg': _rhg,
+    'rm': _rm,
+    'rn': _rn,
+    'ro': _ro,
+    'ro-MD': _roMD,
+    'rof': _rof,
+    'ru': _ru,
+    'rup': _rup,
+    'rw': _rw,
+    'rwk': _rwk,
+    'sa': _sa,
+    'sad': _sad,
+    'sah': _sah,
+    'saq': _saq,
+    'sat': _sat,
+    'sba': _sba,
+    'sbp': _sbp,
+    'sc': _sc,
+    'scn': _scn,
+    'sco': _sco,
+    'sd': _sd,
+    'sdh': _sdh,
+    'se': _se,
+    'seh': _seh,
+    'ses': _ses,
+    'sg': _sg,
+    'sh': _sh,
+    'shi': _shi,
+    'shn': _shn,
+    'si': _si,
+    'sk': _sk,
+    'sl': _sl,
+    'slh': _slh,
+    'sm': _sm,
+    'sma': _sma,
+    'smj': _smj,
+    'smn': _smn,
+    'sms': _sms,
+    'sn': _sn,
+    'snk': _snk,
+    'so': _so,
+    'sq': _sq,
+    'sr': _sr,
+    'srn': _srn,
+    'ss': _ss,
+    'ssy': _ssy,
+    'st': _st,
+    'str': _str,
+    'su': _su,
+    'suk': _suk,
+    'sv': _sv,
+    'sw': _sw,
+    'sw-CD': _swCD,
+    'swb': _swb,
+    'syr': _syr,
+    'szl': _szl,
+    'ta': _ta,
+    'tce': _tce,
+    'te': _te,
+    'tem': _tem,
+    'teo': _teo,
+    'tet': _tet,
+    'tg': _tg,
+    'tgx': _tgx,
+    'th': _th,
+    'tht': _tht,
+    'ti': _ti,
+    'tig': _tig,
+    'tk': _tk,
+    'tlh': _tlh,
+    'tli': _tli,
+    'tn': _tn,
+    'to': _to,
+    'tok': _tok,
+    'tpi': _tpi,
+    'tr': _tr,
+    'trv': _trv,
+    'ts': _ts,
+    'tt': _tt,
+    'ttm': _ttm,
+    'tum': _tum,
+    'tvl': _tvl,
+    'tw': _tw,
+    'twq': _twq,
+    'ty': _ty,
+    'tyv': _tyv,
+    'tzm': _tzm,
+    'udm': _udm,
+    'ug': _ug,
+    'uk': _uk,
+    'umb': _umb,
+    'und': _und,
+    'ur': _ur,
+    'uz': _uz,
+    'vai': _vai,
+    've': _ve,
+    'vec': _vec,
+    'vi': _vi,
+    'vmw': _vmw,
+    'vo': _vo,
+    'vun': _vun,
+    'wa': _wa,
+    'wae': _wae,
+    'wal': _wal,
+    'war': _war,
+    'wbp': _wbp,
+    'wo': _wo,
+    'wuu': _wuu,
+    'xal': _xal,
+    'xh': _xh,
+    'xnr': _xnr,
+    'xog': _xog,
+    'yav': _yav,
+    'ybb': _ybb,
+    'yi': _yi,
+    'yo': _yo,
+    'yrl': _yrl,
+    'yue': _yue,
+    'za': _za,
+    'zgh': _zgh,
+    'zh': _zh,
+    'zh-Hans': _zhHans,
+    'zh-Hant': _zhHant,
+    'zu': _zu,
+    'zun': _zun,
+    'zxx': _zxx,
+    'zza': _zza,
+  };
+}
+
+class ScriptsSqMK extends Scripts {
+  const ScriptsSqMK._(super.cld);
+
+  static const _adlm = Script('Adlm', 'adlam');
+  static const _aghb = Script('Aghb', 'albanishte e Kaukazit');
+  static const _ahom = Script('Ahom', 'ahomisht');
+  static const _arab = Script('Arab', 'arabik');
+  static const _aran = Script('Aran', 'nastalik');
+  static const _armi = Script('Armi', 'aramaishte perandorake');
+  static const _armn = Script('Armn', 'armen');
+  static const _avst = Script('Avst', 'avestanisht');
+  static const _bali = Script('Bali', 'bali');
+  static const _bamu = Script('Bamu', 'bamu');
+  static const _bass = Script('Bass', 'basavahisht');
+  static const _batk = Script('Batk', 'batak');
+  static const _beng = Script('Beng', 'bengal');
+  static const _bhks = Script('Bhks', 'baiksukisht');
+  static const _bopo = Script('Bopo', 'bopomof');
+  static const _brah = Script('Brah', 'brahmisht');
+  static const _brai = Script('Brai', 'brailisht');
+  static const _bugi = Script('Bugi', 'buginisht');
+  static const _buhd = Script('Buhd', 'buhidisht');
+  static const _cakm = Script('Cakm', 'çakma');
+  static const _cans =
+      Script('Cans', 'rrokje të unifikuara aborigjene kanadeze');
+  static const _cari = Script('Cari', 'karianisht');
+  static const _cham = Script('Cham', 'çam');
+  static const _cher = Script('Cher', 'çeroki');
+  static const _chrs = Script('Chrs', 'korasmianisht');
+  static const _copt = Script('Copt', 'koptisht');
+  static const _cpmn = Script('Cpmn', 'minoishte e Qipros');
+  static const _cprt = Script('Cprt', 'qipriotisht');
+  static const _cyrl = Script('Cyrl', 'cirilik');
+  static const _deva = Script('Deva', 'devanagar');
+  static const _diak = Script('Diak', 'divesakuruisht');
+  static const _dogr = Script('Dogr', 'dograisht');
+  static const _dsrt = Script('Dsrt', 'deseretisht');
+  static const _dupl = Script('Dupl', 'duplojanisht - formë e shkurtër');
+  static const _egyp = Script('Egyp', 'hieroglife egjiptiane');
+  static const _elba = Script('Elba', 'shkrim i Elbasanit');
+  static const _elym = Script('Elym', 'elimaisht');
+  static const _ethi = Script('Ethi', 'etiopik');
+  static const _geor = Script('Geor', 'gjeorgjian');
+  static const _glag = Script('Glag', 'glagolitikisht');
+  static const _gong = Script('Gong', 'gong');
+  static const _gonm = Script('Gonm', 'masaramgondisht');
+  static const _goth = Script('Goth', 'gotik');
+  static const _gran = Script('Gran', 'grantaisht');
+  static const _grek = Script('Grek', 'grek');
+  static const _gujr = Script('Gujr', 'guxharat');
+  static const _guru = Script('Guru', 'gurmuk');
+  static const _hanb = Script('Hanb', 'hanbik');
+  static const _hang = Script('Hang', 'hangul');
+  static const _hani = Script('Hani', 'han');
+  static const _hano = Script('Hano', 'hanunoisht');
+  static const _hans =
+      Script('Hans', 'i thjeshtuar', standAlone: 'han i thjeshtuar');
+  static const _hant =
+      Script('Hant', 'tradicional', standAlone: 'han tradicional');
+  static const _hatr = Script('Hatr', 'hatranisht');
+  static const _hebr = Script('Hebr', 'hebraik');
+  static const _hira = Script('Hira', 'hiragan');
+  static const _hluw = Script('Hluw', 'hieroglife anatoliane');
+  static const _hmng = Script('Hmng', 'pahauhmonisht');
+  static const _hmnp = Script('Hmnp', 'niakeng puaçue hmong');
+  static const _hrkt = Script('Hrkt', 'alfabet rrokjesor japonez');
+  static const _hung = Script('Hung', 'hungarishte e vjetër');
+  static const _ital = Script('Ital', 'italishte e vjetër');
+  static const _jamo = Script('Jamo', 'jamosisht');
+  static const _java = Script('Java', 'java');
+  static const _jpan = Script('Jpan', 'japonez');
+  static const _kali = Script('Kali', 'kajali');
+  static const _kana = Script('Kana', 'katakan');
+  static const _kawi = Script('Kawi', 'kavi');
+  static const _khar = Script('Khar', 'karoshtisht');
+  static const _khmr = Script('Khmr', 'kmer');
+  static const _khoj = Script('Khoj', 'koxhkisht');
+  static const _kits = Script('Kits', 'shkrim i vogël kitan');
+  static const _knda = Script('Knda', 'kanad');
+  static const _kore = Script('Kore', 'korean');
+  static const _kthi = Script('Kthi', 'kaitisht');
+  static const _lana = Script('Lana', 'lana');
+  static const _laoo = Script('Laoo', 'laosisht');
+  static const _latn = Script('Latn', 'latin');
+  static const _lepc = Script('Lepc', 'lepça');
+  static const _limb = Script('Limb', 'limbu');
+  static const _lina = Script('Lina', 'Linear A');
+  static const _linb = Script('Linb', 'Linear B');
+  static const _lisu = Script('Lisu', 'fraser');
+  static const _lyci = Script('Lyci', 'licianisht');
+  static const _lydi = Script('Lydi', 'lidianisht');
+  static const _mahj = Script('Mahj', 'mahaxhanisht');
+  static const _maka = Script('Maka', 'makasarisht');
+  static const _mand = Script('Mand', 'mande');
+  static const _mani = Script('Mani', 'manikeanisht');
+  static const _marc = Script('Marc', 'markenisht');
+  static const _medf = Script('Medf', 'medefaidrinisht');
+  static const _mend = Script('Mend', 'mendeisht');
+  static const _merc = Script('Merc', 'meroitik kursiv');
+  static const _mero = Script('Mero', 'meroitik');
+  static const _mlym = Script('Mlym', 'malajalam');
+  static const _modi = Script('Modi', 'modisht');
+  static const _mong = Script('Mong', 'mongolisht');
+  static const _mroo = Script('Mroo', 'mroisht');
+  static const _mtei = Script('Mtei', 'mitei-majek');
+  static const _mult = Script('Mult', 'multanisht');
+  static const _mymr = Script('Mymr', 'birman');
+  static const _nagm = Script('Nagm', 'nag mundari');
+  static const _nand = Script('Nand', 'nandigarisht');
+  static const _narb = Script('Narb', 'arabishte veriore e vjetër');
+  static const _nbat = Script('Nbat', 'nabateanisht');
+  static const _newa = Script('Newa', 'neva');
+  static const _nkoo = Script('Nkoo', 'nko');
+  static const _nshu = Script('Nshu', 'nyshuisht');
+  static const _ogam = Script('Ogam', 'ogamisht');
+  static const _olck = Script('Olck', 'ol çiki');
+  static const _orkh = Script('Orkh', 'orkonisht');
+  static const _orya = Script('Orya', 'orija');
+  static const _osge = Script('Osge', 'osage');
+  static const _osma = Script('Osma', 'osmaniaisht');
+  static const _ougr = Script('Ougr', 'ujgurishte e vjetër');
+  static const _palm = Script('Palm', 'palmirenisht');
+  static const _pauc = Script('Pauc', 'pausinhauisht');
+  static const _perm = Script('Perm', 'permike e vjetër');
+  static const _phag = Script('Phag', 'fagspaisht');
+  static const _phli = Script('Phli', 'palavishte mbishkrimesh');
+  static const _phlp = Script('Phlp', 'palavishte psalteri');
+  static const _phnx = Script('Phnx', 'fenikisht');
+  static const _plrd = Script('Plrd', 'polard fonetik');
+  static const _prti = Script('Prti', 'persishte mbishkrimesh');
+  static const _qaag = Script('Qaag', 'zaugi');
+  static const _rjng = Script('Rjng', 'rexhangisht');
+  static const _rohg = Script('Rohg', 'hanifi');
+  static const _runr = Script('Runr', 'runike');
+  static const _samr = Script('Samr', 'samaritanisht');
+  static const _sarb = Script('Sarb', 'arabishte jugore e vjetër');
+  static const _saur = Script('Saur', 'saurashtra');
+  static const _sgnw = Script('Sgnw', 'shkrim sing');
+  static const _shaw = Script('Shaw', 'shavianisht');
+  static const _shrd = Script('Shrd', 'sharadisht');
+  static const _sidd = Script('Sidd', 'sidamisht');
+  static const _sind = Script('Sind', 'kudavadisht');
+  static const _sinh = Script('Sinh', 'sinhal');
+  static const _sogd = Script('Sogd', 'sogdianisht');
+  static const _sogo = Script('Sogo', 'sogdianishte e vjetër');
+  static const _sora = Script('Sora', 'sorasompengisht');
+  static const _soyo = Script('Soyo', 'sojomboisht');
+  static const _sund = Script('Sund', 'sundan');
+  static const _sylo = Script('Sylo', 'siloti nagri');
+  static const _syrc = Script('Syrc', 'siriak');
+  static const _tagb = Script('Tagb', 'tagbanvaisht');
+  static const _takr = Script('Takr', 'takri');
+  static const _tale = Script('Tale', 'tai le');
+  static const _talu = Script('Talu', 'tai lue i ri');
+  static const _taml = Script('Taml', 'tamil');
+  static const _tang = Script('Tang', 'tangut');
+  static const _tavt = Script('Tavt', 'tai viet');
+  static const _telu = Script('Telu', 'telug');
+  static const _tfng = Script('Tfng', 'tifinag');
+  static const _tglg = Script('Tglg', 'tagalog');
+  static const _thaa = Script('Thaa', 'tanisht');
+  static const _thai = Script('Thai', 'tajlandez');
+  static const _tibt = Script('Tibt', 'tibetisht');
+  static const _tirh = Script('Tirh', 'tirhuta');
+  static const _tnsa = Script('Tnsa', 'tangsa');
+  static const _toto = Script('Toto', 'toto');
+  static const _ugar = Script('Ugar', 'ugaritik');
+  static const _vaii = Script('Vaii', 'vai');
+  static const _vith = Script('Vith', 'vithkuqi');
+  static const _wara = Script('Wara', 'varang kshiti');
+  static const _wcho = Script('Wcho', 'vanço');
+  static const _xpeo = Script('Xpeo', 'persian i vjetër');
+  static const _xsux = Script('Xsux', 'kuneiform sumero-akadian');
+  static const _yezi = Script('Yezi', 'jezidi');
+  static const _yiii = Script('Yiii', 'ji');
+  static const _zanb = Script('Zanb', 'katror zanabazar');
+  static const _zinh = Script('Zinh', 'zin');
+  static const _zmth = Script('Zmth', 'simbole matematikore');
+  static const _zsye = Script('Zsye', 'emoji');
+  static const _zsym = Script('Zsym', 'me simbole');
+  static const _zxxx = Script('Zxxx', 'i pashkruar');
+  static const _zyyy = Script('Zyyy', 'i zakonshëm');
+  static const _zzzz = Script('Zzzz', 'i panjohur');
 
   @override
-  Territory get northAmerica => Territory(
-        '003',
-        'Amerika e Veriut',
-      );
+  final unknownScript = _zzzz;
+  @override
+  final adlm = _adlm;
+  @override
+  final afak = _zzzz;
+  @override
+  final aghb = _aghb;
+  @override
+  final ahom = _ahom;
+  @override
+  final arab = _arab;
+  @override
+  final aran = _aran;
+  @override
+  final armi = _armi;
+  @override
+  final armn = _armn;
+  @override
+  final avst = _avst;
+  @override
+  final bali = _bali;
+  @override
+  final bamu = _bamu;
+  @override
+  final bass = _bass;
+  @override
+  final batk = _batk;
+  @override
+  final beng = _beng;
+  @override
+  final bhks = _bhks;
+  @override
+  final blis = _zzzz;
+  @override
+  final bopo = _bopo;
+  @override
+  final brah = _brah;
+  @override
+  final brai = _brai;
+  @override
+  final bugi = _bugi;
+  @override
+  final buhd = _buhd;
+  @override
+  final cakm = _cakm;
+  @override
+  final cans = _cans;
+  @override
+  final cari = _cari;
+  @override
+  final cham = _cham;
+  @override
+  final cher = _cher;
+  @override
+  final chrs = _chrs;
+  @override
+  final cirt = _zzzz;
+  @override
+  final copt = _copt;
+  @override
+  final cpmn = _cpmn;
+  @override
+  final cprt = _cprt;
+  @override
+  final cyrl = _cyrl;
+  @override
+  final cyrs = _zzzz;
+  @override
+  final deva = _deva;
+  @override
+  final diak = _diak;
+  @override
+  final dogr = _dogr;
+  @override
+  final dsrt = _dsrt;
+  @override
+  final dupl = _dupl;
+  @override
+  final egyd = _zzzz;
+  @override
+  final egyh = _zzzz;
+  @override
+  final egyp = _egyp;
+  @override
+  final elba = _elba;
+  @override
+  final elym = _elym;
+  @override
+  final ethi = _ethi;
+  @override
+  final gara = _zzzz;
+  @override
+  final geok = _zzzz;
+  @override
+  final geor = _geor;
+  @override
+  final glag = _glag;
+  @override
+  final gong = _gong;
+  @override
+  final gonm = _gonm;
+  @override
+  final goth = _goth;
+  @override
+  final gran = _gran;
+  @override
+  final grek = _grek;
+  @override
+  final gujr = _gujr;
+  @override
+  final gukh = _zzzz;
+  @override
+  final guru = _guru;
+  @override
+  final hanb = _hanb;
+  @override
+  final hang = _hang;
+  @override
+  final hani = _hani;
+  @override
+  final hano = _hano;
+  @override
+  final hans = _hans;
+  @override
+  final hant = _hant;
+  @override
+  final hatr = _hatr;
+  @override
+  final hebr = _hebr;
+  @override
+  final hira = _hira;
+  @override
+  final hluw = _hluw;
+  @override
+  final hmng = _hmng;
+  @override
+  final hmnp = _hmnp;
+  @override
+  final hrkt = _hrkt;
+  @override
+  final hung = _hung;
+  @override
+  final inds = _zzzz;
+  @override
+  final ital = _ital;
+  @override
+  final jamo = _jamo;
+  @override
+  final java = _java;
+  @override
+  final jpan = _jpan;
+  @override
+  final jurc = _zzzz;
+  @override
+  final kali = _kali;
+  @override
+  final kana = _kana;
+  @override
+  final kawi = _kawi;
+  @override
+  final khar = _khar;
+  @override
+  final khmr = _khmr;
+  @override
+  final khoj = _khoj;
+  @override
+  final kits = _kits;
+  @override
+  final knda = _knda;
+  @override
+  final kore = _kore;
+  @override
+  final kpel = _zzzz;
+  @override
+  final krai = _zzzz;
+  @override
+  final kthi = _kthi;
+  @override
+  final lana = _lana;
+  @override
+  final laoo = _laoo;
+  @override
+  final latf = _zzzz;
+  @override
+  final latg = _zzzz;
+  @override
+  final latn = _latn;
+  @override
+  final lepc = _lepc;
+  @override
+  final limb = _limb;
+  @override
+  final lina = _lina;
+  @override
+  final linb = _linb;
+  @override
+  final lisu = _lisu;
+  @override
+  final loma = _zzzz;
+  @override
+  final lyci = _lyci;
+  @override
+  final lydi = _lydi;
+  @override
+  final mahj = _mahj;
+  @override
+  final maka = _maka;
+  @override
+  final mand = _mand;
+  @override
+  final mani = _mani;
+  @override
+  final marc = _marc;
+  @override
+  final maya = _zzzz;
+  @override
+  final medf = _medf;
+  @override
+  final mend = _mend;
+  @override
+  final merc = _merc;
+  @override
+  final mero = _mero;
+  @override
+  final mlym = _mlym;
+  @override
+  final modi = _modi;
+  @override
+  final mong = _mong;
+  @override
+  final moon = _zzzz;
+  @override
+  final mroo = _mroo;
+  @override
+  final mtei = _mtei;
+  @override
+  final mult = _mult;
+  @override
+  final mymr = _mymr;
+  @override
+  final nagm = _nagm;
+  @override
+  final nand = _nand;
+  @override
+  final narb = _narb;
+  @override
+  final nbat = _nbat;
+  @override
+  final newa = _newa;
+  @override
+  final nkgb = _zzzz;
+  @override
+  final nkoo = _nkoo;
+  @override
+  final nshu = _nshu;
+  @override
+  final ogam = _ogam;
+  @override
+  final olck = _olck;
+  @override
+  final onao = _zzzz;
+  @override
+  final orkh = _orkh;
+  @override
+  final orya = _orya;
+  @override
+  final osge = _osge;
+  @override
+  final osma = _osma;
+  @override
+  final ougr = _ougr;
+  @override
+  final palm = _palm;
+  @override
+  final pauc = _pauc;
+  @override
+  final perm = _perm;
+  @override
+  final phag = _phag;
+  @override
+  final phli = _phli;
+  @override
+  final phlp = _phlp;
+  @override
+  final phlv = _zzzz;
+  @override
+  final phnx = _phnx;
+  @override
+  final plrd = _plrd;
+  @override
+  final prti = _prti;
+  @override
+  final qaag = _qaag;
+  @override
+  final rjng = _rjng;
+  @override
+  final rohg = _rohg;
+  @override
+  final roro = _zzzz;
+  @override
+  final runr = _runr;
+  @override
+  final samr = _samr;
+  @override
+  final sara = _zzzz;
+  @override
+  final sarb = _sarb;
+  @override
+  final saur = _saur;
+  @override
+  final sgnw = _sgnw;
+  @override
+  final shaw = _shaw;
+  @override
+  final shrd = _shrd;
+  @override
+  final sidd = _sidd;
+  @override
+  final sind = _sind;
+  @override
+  final sinh = _sinh;
+  @override
+  final sogd = _sogd;
+  @override
+  final sogo = _sogo;
+  @override
+  final sora = _sora;
+  @override
+  final soyo = _soyo;
+  @override
+  final sund = _sund;
+  @override
+  final sunu = _zzzz;
+  @override
+  final sylo = _sylo;
+  @override
+  final syrc = _syrc;
+  @override
+  final syre = _zzzz;
+  @override
+  final syrj = _zzzz;
+  @override
+  final syrn = _zzzz;
+  @override
+  final tagb = _tagb;
+  @override
+  final takr = _takr;
+  @override
+  final tale = _tale;
+  @override
+  final talu = _talu;
+  @override
+  final taml = _taml;
+  @override
+  final tang = _tang;
+  @override
+  final tavt = _tavt;
+  @override
+  final telu = _telu;
+  @override
+  final teng = _zzzz;
+  @override
+  final tfng = _tfng;
+  @override
+  final tglg = _tglg;
+  @override
+  final thaa = _thaa;
+  @override
+  final thai = _thai;
+  @override
+  final tibt = _tibt;
+  @override
+  final tirh = _tirh;
+  @override
+  final tnsa = _tnsa;
+  @override
+  final todr = _zzzz;
+  @override
+  final toto = _toto;
+  @override
+  final tutg = _zzzz;
+  @override
+  final ugar = _ugar;
+  @override
+  final vaii = _vaii;
+  @override
+  final visp = _zzzz;
+  @override
+  final vith = _vith;
+  @override
+  final wara = _wara;
+  @override
+  final wcho = _wcho;
+  @override
+  final wole = _zzzz;
+  @override
+  final xpeo = _xpeo;
+  @override
+  final xsux = _xsux;
+  @override
+  final yezi = _yezi;
+  @override
+  final yiii = _yiii;
+  @override
+  final zanb = _zanb;
+  @override
+  final zinh = _zinh;
+  @override
+  final zmth = _zmth;
+  @override
+  final zsye = _zsye;
+  @override
+  final zsym = _zsym;
+  @override
+  final zxxx = _zxxx;
+  @override
+  final zyyy = _zyyy;
+  @override
+  final zzzz = _zzzz;
 
   @override
-  Territory get southAmerica => Territory(
-        '005',
-        'Amerika e Jugut',
-      );
+  final scripts = const {
+    'Adlm': _adlm,
+    'Aghb': _aghb,
+    'Ahom': _ahom,
+    'Arab': _arab,
+    'Aran': _aran,
+    'Armi': _armi,
+    'Armn': _armn,
+    'Avst': _avst,
+    'Bali': _bali,
+    'Bamu': _bamu,
+    'Bass': _bass,
+    'Batk': _batk,
+    'Beng': _beng,
+    'Bhks': _bhks,
+    'Bopo': _bopo,
+    'Brah': _brah,
+    'Brai': _brai,
+    'Bugi': _bugi,
+    'Buhd': _buhd,
+    'Cakm': _cakm,
+    'Cans': _cans,
+    'Cari': _cari,
+    'Cham': _cham,
+    'Cher': _cher,
+    'Chrs': _chrs,
+    'Copt': _copt,
+    'Cpmn': _cpmn,
+    'Cprt': _cprt,
+    'Cyrl': _cyrl,
+    'Deva': _deva,
+    'Diak': _diak,
+    'Dogr': _dogr,
+    'Dsrt': _dsrt,
+    'Dupl': _dupl,
+    'Egyp': _egyp,
+    'Elba': _elba,
+    'Elym': _elym,
+    'Ethi': _ethi,
+    'Geor': _geor,
+    'Glag': _glag,
+    'Gong': _gong,
+    'Gonm': _gonm,
+    'Goth': _goth,
+    'Gran': _gran,
+    'Grek': _grek,
+    'Gujr': _gujr,
+    'Guru': _guru,
+    'Hanb': _hanb,
+    'Hang': _hang,
+    'Hani': _hani,
+    'Hano': _hano,
+    'Hans': _hans,
+    'Hant': _hant,
+    'Hatr': _hatr,
+    'Hebr': _hebr,
+    'Hira': _hira,
+    'Hluw': _hluw,
+    'Hmng': _hmng,
+    'Hmnp': _hmnp,
+    'Hrkt': _hrkt,
+    'Hung': _hung,
+    'Ital': _ital,
+    'Jamo': _jamo,
+    'Java': _java,
+    'Jpan': _jpan,
+    'Kali': _kali,
+    'Kana': _kana,
+    'Kawi': _kawi,
+    'Khar': _khar,
+    'Khmr': _khmr,
+    'Khoj': _khoj,
+    'Kits': _kits,
+    'Knda': _knda,
+    'Kore': _kore,
+    'Kthi': _kthi,
+    'Lana': _lana,
+    'Laoo': _laoo,
+    'Latn': _latn,
+    'Lepc': _lepc,
+    'Limb': _limb,
+    'Lina': _lina,
+    'Linb': _linb,
+    'Lisu': _lisu,
+    'Lyci': _lyci,
+    'Lydi': _lydi,
+    'Mahj': _mahj,
+    'Maka': _maka,
+    'Mand': _mand,
+    'Mani': _mani,
+    'Marc': _marc,
+    'Medf': _medf,
+    'Mend': _mend,
+    'Merc': _merc,
+    'Mero': _mero,
+    'Mlym': _mlym,
+    'Modi': _modi,
+    'Mong': _mong,
+    'Mroo': _mroo,
+    'Mtei': _mtei,
+    'Mult': _mult,
+    'Mymr': _mymr,
+    'Nagm': _nagm,
+    'Nand': _nand,
+    'Narb': _narb,
+    'Nbat': _nbat,
+    'Newa': _newa,
+    'Nkoo': _nkoo,
+    'Nshu': _nshu,
+    'Ogam': _ogam,
+    'Olck': _olck,
+    'Orkh': _orkh,
+    'Orya': _orya,
+    'Osge': _osge,
+    'Osma': _osma,
+    'Ougr': _ougr,
+    'Palm': _palm,
+    'Pauc': _pauc,
+    'Perm': _perm,
+    'Phag': _phag,
+    'Phli': _phli,
+    'Phlp': _phlp,
+    'Phnx': _phnx,
+    'Plrd': _plrd,
+    'Prti': _prti,
+    'Qaag': _qaag,
+    'Rjng': _rjng,
+    'Rohg': _rohg,
+    'Runr': _runr,
+    'Samr': _samr,
+    'Sarb': _sarb,
+    'Saur': _saur,
+    'Sgnw': _sgnw,
+    'Shaw': _shaw,
+    'Shrd': _shrd,
+    'Sidd': _sidd,
+    'Sind': _sind,
+    'Sinh': _sinh,
+    'Sogd': _sogd,
+    'Sogo': _sogo,
+    'Sora': _sora,
+    'Soyo': _soyo,
+    'Sund': _sund,
+    'Sylo': _sylo,
+    'Syrc': _syrc,
+    'Tagb': _tagb,
+    'Takr': _takr,
+    'Tale': _tale,
+    'Talu': _talu,
+    'Taml': _taml,
+    'Tang': _tang,
+    'Tavt': _tavt,
+    'Telu': _telu,
+    'Tfng': _tfng,
+    'Tglg': _tglg,
+    'Thaa': _thaa,
+    'Thai': _thai,
+    'Tibt': _tibt,
+    'Tirh': _tirh,
+    'Tnsa': _tnsa,
+    'Toto': _toto,
+    'Ugar': _ugar,
+    'Vaii': _vaii,
+    'Vith': _vith,
+    'Wara': _wara,
+    'Wcho': _wcho,
+    'Xpeo': _xpeo,
+    'Xsux': _xsux,
+    'Yezi': _yezi,
+    'Yiii': _yiii,
+    'Zanb': _zanb,
+    'Zinh': _zinh,
+    'Zmth': _zmth,
+    'Zsye': _zsye,
+    'Zsym': _zsym,
+    'Zxxx': _zxxx,
+    'Zyyy': _zyyy,
+    'Zzzz': _zzzz,
+  };
+}
+
+class TerritoriesSqMK extends Territories {
+  const TerritoriesSqMK._(super.cld);
+
+  static const _$001 = Territory('001', 'Bota');
+  static const _$002 = Territory('002', 'Afrikë');
+  static const _$003 = Territory('003', 'Amerika e Veriut');
+  static const _$005 = Territory('005', 'Amerika e Jugut');
+  static const _$009 = Territory('009', 'Oqeani');
+  static const _$011 = Territory('011', 'Afrika Perëndimore');
+  static const _$013 = Territory('013', 'Amerika Qendrore');
+  static const _$014 = Territory('014', 'Afrika Lindore');
+  static const _$015 = Territory('015', 'Afrika Veriore');
+  static const _$017 = Territory('017', 'Afrika e Mesme');
+  static const _$018 = Territory('018', 'Afrika Jugore');
+  static const _$019 = Territory('019', 'Amerikë');
+  static const _$021 = Territory('021', 'Amerika Veriore');
+  static const _$029 = Territory('029', 'Karaibe');
+  static const _$030 = Territory('030', 'Azia Lindore');
+  static const _$034 = Territory('034', 'Azia Jugore');
+  static const _$035 = Territory('035', 'Azia Juglindore');
+  static const _$039 = Territory('039', 'Evropa Jugore');
+  static const _$053 = Territory('053', 'Australazia');
+  static const _$054 = Territory('054', 'Melanezia');
+  static const _$057 = Territory('057', 'Rajoni Mikronezian');
+  static const _$061 = Territory('061', 'Polinezia');
+  static const _$142 = Territory('142', 'Azi');
+  static const _$143 = Territory('143', 'Azia Qendrore');
+  static const _$145 = Territory('145', 'Azia Perëndimore');
+  static const _$150 = Territory('150', 'Evropë');
+  static const _$151 = Territory('151', 'Evropa Lindore');
+  static const _$154 = Territory('154', 'Evropa Veriore');
+  static const _$155 = Territory('155', 'Evropa Perëndimore');
+  static const _$202 = Territory('202', 'Afrika Subsahariane');
+  static const _$419 = Territory('419', 'Amerika Latine');
+  static const _ac = Territory('AC', 'Ishulli Asenshion');
+  static const _ad = Territory('AD', 'Andorrë');
+  static const _ae = Territory('AE', 'Emiratet e Bashkuara Arabe');
+  static const _af = Territory('AF', 'Afganistan');
+  static const _ag = Territory('AG', 'Antigua e Barbuda');
+  static const _ai = Territory('AI', 'Anguilë');
+  static const _al = Territory('AL', 'Shqipëri');
+  static const _am = Territory('AM', 'Armeni');
+  static const _ao = Territory('AO', 'Angolë');
+  static const _aq = Territory('AQ', 'Antarktikë');
+  static const _ar = Territory('AR', 'Argjentinë');
+  static const _$as = Territory('AS', 'Samoa Amerikane');
+  static const _at = Territory('AT', 'Austri');
+  static const _au = Territory('AU', 'Australi');
+  static const _aw = Territory('AW', 'Arubë');
+  static const _ax = Territory('AX', 'Ishujt Alandë');
+  static const _az = Territory('AZ', 'Azerbajxhan');
+  static const _ba = Territory('BA', 'Bosnjë-Hercegovinë');
+  static const _bb = Territory('BB', 'Barbados');
+  static const _bd = Territory('BD', 'Bangladesh');
+  static const _be = Territory('BE', 'Belgjikë');
+  static const _bf = Territory('BF', 'Burkina-Faso');
+  static const _bg = Territory('BG', 'Bullgari');
+  static const _bh = Territory('BH', 'Bahrejn');
+  static const _bi = Territory('BI', 'Burundi');
+  static const _bj = Territory('BJ', 'Benin');
+  static const _bl = Territory('BL', 'Sen-Bartelemi');
+  static const _bm = Territory('BM', 'Bermude');
+  static const _bn = Territory('BN', 'Brunei');
+  static const _bo = Territory('BO', 'Bolivi');
+  static const _bq = Territory('BQ', 'Karaibet holandeze');
+  static const _br = Territory('BR', 'Brazil');
+  static const _bs = Territory('BS', 'Bahama');
+  static const _bt = Territory('BT', 'Butan');
+  static const _bv = Territory('BV', 'Ishulli Bove');
+  static const _bw = Territory('BW', 'Botsvanë');
+  static const _by = Territory('BY', 'Bjellorusi');
+  static const _bz = Territory('BZ', 'Belizë');
+  static const _ca = Territory('CA', 'Kanada');
+  static const _cc = Territory('CC', 'Ishujt Kokos');
+  static const _cd = Territory('CD', 'Kongo-Kinshasa', variant: 'Kongo (RDK)');
+  static const _cf = Territory('CF', 'Republika e Afrikës Qendrore');
+  static const _cg =
+      Territory('CG', 'Kongo-Brazavilë', variant: 'Kongo (Republika)');
+  static const _ch = Territory('CH', 'Zvicër');
+  static const _ci =
+      Territory('CI', 'Côte d’Ivoire', variant: 'Bregu i Fildishtë');
+  static const _ck = Territory('CK', 'Ishujt Kuk');
+  static const _cl = Territory('CL', 'Kili');
+  static const _cm = Territory('CM', 'Kamerun');
+  static const _cn = Territory('CN', 'Kinë');
+  static const _co = Territory('CO', 'Kolumbi');
+  static const _cp = Territory('CP', 'Ishulli Klipërton');
+  static const _cr = Territory('CR', 'Kosta-Rikë');
+  static const _cu = Territory('CU', 'Kubë');
+  static const _cv = Territory('CV', 'Kepi i Gjelbër');
+  static const _cw = Territory('CW', 'Kurasao');
+  static const _cx = Territory('CX', 'Ishulli i Krishtlindjes');
+  static const _cy = Territory('CY', 'Qipro');
+  static const _cz = Territory('CZ', 'Çeki', variant: 'Republika Çeke');
+  static const _de = Territory('DE', 'Gjermani');
+  static const _dg = Territory('DG', 'Diego-Garsia');
+  static const _dj = Territory('DJ', 'Xhibuti');
+  static const _dk = Territory('DK', 'Danimarkë');
+  static const _dm = Territory('DM', 'Dominikë');
+  static const _$do = Territory('DO', 'Republika Dominikane');
+  static const _dz = Territory('DZ', 'Algjeri');
+  static const _ea = Territory('EA', 'Theuta e Melila');
+  static const _ec = Territory('EC', 'Ekuador');
+  static const _ee = Territory('EE', 'Estoni');
+  static const _eg = Territory('EG', 'Egjipt');
+  static const _eh = Territory('EH', 'Saharaja Perëndimore');
+  static const _er = Territory('ER', 'Eritre');
+  static const _es = Territory('ES', 'Spanjë');
+  static const _et = Territory('ET', 'Etiopi');
+  static const _eu = Territory('EU', 'Bashkimi Evropian');
+  static const _ez = Territory('EZ', 'Zona euro');
+  static const _fi = Territory('FI', 'Finlandë');
+  static const _fj = Territory('FJ', 'Fixhi');
+  static const _fk =
+      Territory('FK', 'Ishujt Falkland', variant: 'Ishujt Falkland (Malvine)');
+  static const _fm = Territory('FM', 'Mikronezi');
+  static const _fo = Territory('FO', 'Ishujt Faroe');
+  static const _fr = Territory('FR', 'Francë');
+  static const _ga = Territory('GA', 'Gabon');
+  static const _gb = Territory('GB', 'Mbretëria e Bashkuar', short: 'MB');
+  static const _gd = Territory('GD', 'Granadë');
+  static const _ge = Territory('GE', 'Gjeorgji');
+  static const _gf = Territory('GF', 'Guajana Franceze');
+  static const _gg = Territory('GG', 'Gernsej');
+  static const _gh = Territory('GH', 'Ganë');
+  static const _gi = Territory('GI', 'Gjibraltar');
+  static const _gl = Territory('GL', 'Grënlandë');
+  static const _gm = Territory('GM', 'Gambi');
+  static const _gn = Territory('GN', 'Guine');
+  static const _gp = Territory('GP', 'Guadelupë');
+  static const _gq = Territory('GQ', 'Guineja Ekuatoriale');
+  static const _gr = Territory('GR', 'Greqi');
+  static const _gs =
+      Territory('GS', 'Xhorxha Jugore dhe Ishujt Senduiçë të Jugut');
+  static const _gt = Territory('GT', 'Guatemalë');
+  static const _gu = Territory('GU', 'Guam');
+  static const _gw = Territory('GW', 'Guine-Bisau');
+  static const _gy = Territory('GY', 'Guajanë');
+  static const _hk = Territory('HK', 'RPA i Hong-Kongut', short: 'Hong-Kong');
+  static const _hm = Territory('HM', 'Ishujt Hërd e Mekdonald');
+  static const _hn = Territory('HN', 'Honduras');
+  static const _hr = Territory('HR', 'Kroaci');
+  static const _ht = Territory('HT', 'Haiti');
+  static const _hu = Territory('HU', 'Hungari');
+  static const _ic = Territory('IC', 'Ishujt Kanarie');
+  static const _id = Territory('ID', 'Indonezi');
+  static const _ie = Territory('IE', 'Irlandë');
+  static const _il = Territory('IL', 'Izrael');
+  static const _im = Territory('IM', 'Ishulli i Manit');
+  static const _$in = Territory('IN', 'Indi');
+  static const _io = Territory('IO', 'Territori Britanik i Oqeanit Indian');
+  static const _iq = Territory('IQ', 'Irak');
+  static const _ir = Territory('IR', 'Iran');
+  static const _$is = Territory('IS', 'Islandë');
+  static const _it = Territory('IT', 'Itali');
+  static const _je = Territory('JE', 'Xhersej');
+  static const _jm = Territory('JM', 'Xhamajkë');
+  static const _jo = Territory('JO', 'Jordani');
+  static const _jp = Territory('JP', 'Japoni');
+  static const _ke = Territory('KE', 'Kenia');
+  static const _kg = Territory('KG', 'Kirgizi');
+  static const _kh = Territory('KH', 'Kamboxhia');
+  static const _ki = Territory('KI', 'Kiribati');
+  static const _km = Territory('KM', 'Komore');
+  static const _kn = Territory('KN', 'Shën-Kits dhe Nevis');
+  static const _kp = Territory('KP', 'Kore e Veriut');
+  static const _kr = Territory('KR', 'Kore e Jugut');
+  static const _kw = Territory('KW', 'Kuvajt');
+  static const _ky = Territory('KY', 'Ishujt Kajman');
+  static const _kz = Territory('KZ', 'Kazakistan');
+  static const _la = Territory('LA', 'Laos');
+  static const _lb = Territory('LB', 'Liban');
+  static const _lc = Territory('LC', 'Shën-Luçia');
+  static const _li = Territory('LI', 'Lihtenshtajn');
+  static const _lk = Territory('LK', 'Sri-Lankë');
+  static const _lr = Territory('LR', 'Liberi');
+  static const _ls = Territory('LS', 'Lesoto');
+  static const _lt = Territory('LT', 'Lituani');
+  static const _lu = Territory('LU', 'Luksemburg');
+  static const _lv = Territory('LV', 'Letoni');
+  static const _ly = Territory('LY', 'Libi');
+  static const _ma = Territory('MA', 'Marok');
+  static const _mc = Territory('MC', 'Monako');
+  static const _md = Territory('MD', 'Moldavi');
+  static const _me = Territory('ME', 'Mal i Zi');
+  static const _mf = Territory('MF', 'Sen-Marten');
+  static const _mg = Territory('MG', 'Madagaskar');
+  static const _mh = Territory('MH', 'Ishujt Marshall');
+  static const _mk = Territory('MK', 'Maqedonia e Veriut');
+  static const _ml = Territory('ML', 'Mali');
+  static const _mm = Territory('MM', 'Mianmar (Burmë)');
+  static const _mn = Territory('MN', 'Mongoli');
+  static const _mo = Territory('MO', 'RPA i Makaos', short: 'Makao');
+  static const _mp = Territory('MP', 'Ishujt e Marianës Veriore');
+  static const _mq = Territory('MQ', 'Martinikë');
+  static const _mr = Territory('MR', 'Mauritani');
+  static const _ms = Territory('MS', 'Montserat');
+  static const _mt = Territory('MT', 'Maltë');
+  static const _mu = Territory('MU', 'Mauritius');
+  static const _mv = Territory('MV', 'Maldive');
+  static const _mw = Territory('MW', 'Malavi');
+  static const _mx = Territory('MX', 'Meksikë');
+  static const _my = Territory('MY', 'Malajzi');
+  static const _mz = Territory('MZ', 'Mozambik');
+  static const _na = Territory('NA', 'Namibi');
+  static const _nc = Territory('NC', 'Kaledoni e Re');
+  static const _ne = Territory('NE', 'Niger');
+  static const _nf = Territory('NF', 'Ishulli Norfolk');
+  static const _ng = Territory('NG', 'Nigeri');
+  static const _ni = Territory('NI', 'Nikaragua');
+  static const _nl = Territory('NL', 'Holandë');
+  static const _no = Territory('NO', 'Norvegji');
+  static const _np = Territory('NP', 'Nepal');
+  static const _nr = Territory('NR', 'Nauru');
+  static const _nu = Territory('NU', 'Niue');
+  static const _nz =
+      Territory('NZ', 'Zelandë e Re', variant: 'Zelanda e Re-Aotearoa');
+  static const _om = Territory('OM', 'Oman');
+  static const _pa = Territory('PA', 'Panama');
+  static const _pe = Territory('PE', 'Peru');
+  static const _pf = Territory('PF', 'Polinezia Franceze');
+  static const _pg = Territory('PG', 'Guineja e Re-Papua');
+  static const _ph = Territory('PH', 'Filipine');
+  static const _pk = Territory('PK', 'Pakistan');
+  static const _pl = Territory('PL', 'Poloni');
+  static const _pm = Territory('PM', 'Shën-Pier dhe Mikelon');
+  static const _pn = Territory('PN', 'Ishujt Pitkern');
+  static const _pr = Territory('PR', 'Porto-Riko');
+  static const _ps =
+      Territory('PS', 'Territoret Palestineze', short: 'Palestinë');
+  static const _pt = Territory('PT', 'Portugali');
+  static const _pw = Territory('PW', 'Palau');
+  static const _py = Territory('PY', 'Paraguai');
+  static const _qa = Territory('QA', 'Katar');
+  static const _qo = Territory('QO', 'Oqeania e Largët (Lindja e Largët)');
+  static const _re = Territory('RE', 'Reunion');
+  static const _ro = Territory('RO', 'Rumani');
+  static const _rs = Territory('RS', 'Serbi');
+  static const _ru = Territory('RU', 'Rusi');
+  static const _rw = Territory('RW', 'Ruandë');
+  static const _sa = Territory('SA', 'Arabi Saudite');
+  static const _sb = Territory('SB', 'Ishujt Solomon');
+  static const _sc = Territory('SC', 'Sejshelle');
+  static const _sd = Territory('SD', 'Sudan');
+  static const _se = Territory('SE', 'Suedi');
+  static const _sg = Territory('SG', 'Singapor');
+  static const _sh = Territory('SH', 'Shën-Elenë');
+  static const _si = Territory('SI', 'Slloveni');
+  static const _sj = Territory('SJ', 'Svalbard e Jan-Majen');
+  static const _sk = Territory('SK', 'Sllovaki');
+  static const _sl = Territory('SL', 'Sierra-Leone');
+  static const _sm = Territory('SM', 'San-Marino');
+  static const _sn = Territory('SN', 'Senegal');
+  static const _so = Territory('SO', 'Somali');
+  static const _sr = Territory('SR', 'Surinami');
+  static const _ss = Territory('SS', 'Sudani i Jugut');
+  static const _st = Territory('ST', 'Sao-Tome e Principe');
+  static const _sv = Territory('SV', 'Salvador');
+  static const _sx = Territory('SX', 'Sint-Marten');
+  static const _sy = Territory('SY', 'Siri');
+  static const _sz = Territory('SZ', 'Esvatini', variant: 'Suazilend');
+  static const _ta = Territory('TA', 'Tristan-da-Kuna');
+  static const _tc = Territory('TC', 'Ishujt Turks dhe Kaikos');
+  static const _td = Territory('TD', 'Çad');
+  static const _tf = Territory('TF', 'Territoret Jugore Franceze');
+  static const _tg = Territory('TG', 'Togo');
+  static const _th = Territory('TH', 'Tajlandë');
+  static const _tj = Territory('TJ', 'Taxhikistan');
+  static const _tk = Territory('TK', 'Tokelau');
+  static const _tl = Territory('TL', 'Timor-Leste', variant: 'Timori Lindor');
+  static const _tm = Territory('TM', 'Turkmenistan');
+  static const _tn = Territory('TN', 'Tunizi');
+  static const _to = Territory('TO', 'Tonga');
+  static const _tr = Territory('TR', 'Turqi', variant: 'Turqi');
+  static const _tt = Territory('TT', 'Trinidad e Tobago');
+  static const _tv = Territory('TV', 'Tuvalu');
+  static const _tw = Territory('TW', 'Tajvan');
+  static const _tz = Territory('TZ', 'Tanzani');
+  static const _ua = Territory('UA', 'Ukrainë');
+  static const _ug = Territory('UG', 'Ugandë');
+  static const _um = Territory('UM', 'Ishujt Periferikë të SHBA-së');
+  static const _un =
+      Territory('UN', 'Organizata e Kombeve të Bashkuara', short: 'OKB');
+  static const _us = Territory('US', 'SHBA', short: 'SHBA');
+  static const _uy = Territory('UY', 'Uruguai');
+  static const _uz = Territory('UZ', 'Uzbekistan');
+  static const _va = Territory('VA', 'Vatikan');
+  static const _vc = Territory('VC', 'Shën-Vincent dhe Grenadine');
+  static const _ve = Territory('VE', 'Venezuelë');
+  static const _vg = Territory('VG', 'Ishujt e Virgjër Britanikë');
+  static const _vi = Territory('VI', 'Ishujt e Virgjër të SHBA-së');
+  static const _vn = Territory('VN', 'Vietnam');
+  static const _vu = Territory('VU', 'Vanuatu');
+  static const _wf = Territory('WF', 'Uollis e Futuna');
+  static const _ws = Territory('WS', 'Samoa');
+  static const _xa = Territory('XA', 'Pseudo-thekse');
+  static const _xb = Territory('XB', 'Pseudo-bidi');
+  static const _xk = Territory('XK', 'Kosovë');
+  static const _ye = Territory('YE', 'Jemen');
+  static const _yt = Territory('YT', 'Majotë');
+  static const _za = Territory('ZA', 'Afrika e Jugut');
+  static const _zm = Territory('ZM', 'Zambi');
+  static const _zw = Territory('ZW', 'Zimbabve');
+  static const _zz = Territory('ZZ', 'I panjohur');
 
   @override
-  Territory get oceania => Territory(
-        '009',
-        'Oqeani',
-      );
+  final world = _$001;
+  @override
+  final africa = _$002;
+  @override
+  final northAmerica = _$003;
+  @override
+  final southAmerica = _$005;
+  @override
+  final oceania = _$009;
+  @override
+  final westernAfrica = _$011;
+  @override
+  final centralAmerica = _$013;
+  @override
+  final easternAfrica = _$014;
+  @override
+  final northernAfrica = _$015;
+  @override
+  final middleAfrica = _$017;
+  @override
+  final southernAfrica = _$018;
+  @override
+  final americas = _$019;
+  @override
+  final northernAmerica = _$021;
+  @override
+  final caribbean = _$029;
+  @override
+  final easternAsia = _$030;
+  @override
+  final southernAsia = _$034;
+  @override
+  final southeastAsia = _$035;
+  @override
+  final southernEurope = _$039;
+  @override
+  final australasia = _$053;
+  @override
+  final melanesia = _$054;
+  @override
+  final micronesianRegion = _$057;
+  @override
+  final polynesia = _$061;
+  @override
+  final asia = _$142;
+  @override
+  final centralAsia = _$143;
+  @override
+  final westernAsia = _$145;
+  @override
+  final europe = _$150;
+  @override
+  final easternEurope = _$151;
+  @override
+  final northernEurope = _$154;
+  @override
+  final westernEurope = _$155;
+  @override
+  final subSaharanAfrica = _$202;
+  @override
+  final latinAmerica = _$419;
+  @override
+  final europeanUnion = _eu;
+  @override
+  final eurozone = _ez;
+  @override
+  final outlyingOceania = _qo;
+  @override
+  final unitedNations = _un;
+  @override
+  final pseudoAccents = _xa;
+  @override
+  final pseudoBidi = _xb;
+  @override
+  final unknownRegion = _zz;
+  @override
+  final $001 = _$001;
+  @override
+  final $002 = _$002;
+  @override
+  final $003 = _$003;
+  @override
+  final $005 = _$005;
+  @override
+  final $009 = _$009;
+  @override
+  final $011 = _$011;
+  @override
+  final $013 = _$013;
+  @override
+  final $014 = _$014;
+  @override
+  final $015 = _$015;
+  @override
+  final $017 = _$017;
+  @override
+  final $018 = _$018;
+  @override
+  final $019 = _$019;
+  @override
+  final $021 = _$021;
+  @override
+  final $029 = _$029;
+  @override
+  final $030 = _$030;
+  @override
+  final $034 = _$034;
+  @override
+  final $035 = _$035;
+  @override
+  final $039 = _$039;
+  @override
+  final $053 = _$053;
+  @override
+  final $054 = _$054;
+  @override
+  final $057 = _$057;
+  @override
+  final $061 = _$061;
+  @override
+  final $142 = _$142;
+  @override
+  final $143 = _$143;
+  @override
+  final $145 = _$145;
+  @override
+  final $150 = _$150;
+  @override
+  final $151 = _$151;
+  @override
+  final $154 = _$154;
+  @override
+  final $155 = _$155;
+  @override
+  final $202 = _$202;
+  @override
+  final $419 = _$419;
+  @override
+  final ac = _ac;
+  @override
+  final ad = _ad;
+  @override
+  final ae = _ae;
+  @override
+  final af = _af;
+  @override
+  final ag = _ag;
+  @override
+  final ai = _ai;
+  @override
+  final al = _al;
+  @override
+  final am = _am;
+  @override
+  final ao = _ao;
+  @override
+  final aq = _aq;
+  @override
+  final ar = _ar;
+  @override
+  final $as = _$as;
+  @override
+  final at = _at;
+  @override
+  final au = _au;
+  @override
+  final aw = _aw;
+  @override
+  final ax = _ax;
+  @override
+  final az = _az;
+  @override
+  final ba = _ba;
+  @override
+  final bb = _bb;
+  @override
+  final bd = _bd;
+  @override
+  final be = _be;
+  @override
+  final bf = _bf;
+  @override
+  final bg = _bg;
+  @override
+  final bh = _bh;
+  @override
+  final bi = _bi;
+  @override
+  final bj = _bj;
+  @override
+  final bl = _bl;
+  @override
+  final bm = _bm;
+  @override
+  final bn = _bn;
+  @override
+  final bo = _bo;
+  @override
+  final bq = _bq;
+  @override
+  final br = _br;
+  @override
+  final bs = _bs;
+  @override
+  final bt = _bt;
+  @override
+  final bv = _bv;
+  @override
+  final bw = _bw;
+  @override
+  final by = _by;
+  @override
+  final bz = _bz;
+  @override
+  final ca = _ca;
+  @override
+  final cc = _cc;
+  @override
+  final cd = _cd;
+  @override
+  final cf = _cf;
+  @override
+  final cg = _cg;
+  @override
+  final ch = _ch;
+  @override
+  final ci = _ci;
+  @override
+  final ck = _ck;
+  @override
+  final cl = _cl;
+  @override
+  final cm = _cm;
+  @override
+  final cn = _cn;
+  @override
+  final co = _co;
+  @override
+  final cp = _cp;
+  @override
+  final cq = _zz;
+  @override
+  final cr = _cr;
+  @override
+  final cu = _cu;
+  @override
+  final cv = _cv;
+  @override
+  final cw = _cw;
+  @override
+  final cx = _cx;
+  @override
+  final cy = _cy;
+  @override
+  final cz = _cz;
+  @override
+  final de = _de;
+  @override
+  final dg = _dg;
+  @override
+  final dj = _dj;
+  @override
+  final dk = _dk;
+  @override
+  final dm = _dm;
+  @override
+  final $do = _$do;
+  @override
+  final dz = _dz;
+  @override
+  final ea = _ea;
+  @override
+  final ec = _ec;
+  @override
+  final ee = _ee;
+  @override
+  final eg = _eg;
+  @override
+  final eh = _eh;
+  @override
+  final er = _er;
+  @override
+  final es = _es;
+  @override
+  final et = _et;
+  @override
+  final eu = _eu;
+  @override
+  final ez = _ez;
+  @override
+  final fi = _fi;
+  @override
+  final fj = _fj;
+  @override
+  final fk = _fk;
+  @override
+  final fm = _fm;
+  @override
+  final fo = _fo;
+  @override
+  final fr = _fr;
+  @override
+  final ga = _ga;
+  @override
+  final gb = _gb;
+  @override
+  final gd = _gd;
+  @override
+  final ge = _ge;
+  @override
+  final gf = _gf;
+  @override
+  final gg = _gg;
+  @override
+  final gh = _gh;
+  @override
+  final gi = _gi;
+  @override
+  final gl = _gl;
+  @override
+  final gm = _gm;
+  @override
+  final gn = _gn;
+  @override
+  final gp = _gp;
+  @override
+  final gq = _gq;
+  @override
+  final gr = _gr;
+  @override
+  final gs = _gs;
+  @override
+  final gt = _gt;
+  @override
+  final gu = _gu;
+  @override
+  final gw = _gw;
+  @override
+  final gy = _gy;
+  @override
+  final hk = _hk;
+  @override
+  final hm = _hm;
+  @override
+  final hn = _hn;
+  @override
+  final hr = _hr;
+  @override
+  final ht = _ht;
+  @override
+  final hu = _hu;
+  @override
+  final ic = _ic;
+  @override
+  final id = _id;
+  @override
+  final ie = _ie;
+  @override
+  final il = _il;
+  @override
+  final im = _im;
+  @override
+  final $in = _$in;
+  @override
+  final io = _io;
+  @override
+  final iq = _iq;
+  @override
+  final ir = _ir;
+  @override
+  final $is = _$is;
+  @override
+  final it = _it;
+  @override
+  final je = _je;
+  @override
+  final jm = _jm;
+  @override
+  final jo = _jo;
+  @override
+  final jp = _jp;
+  @override
+  final ke = _ke;
+  @override
+  final kg = _kg;
+  @override
+  final kh = _kh;
+  @override
+  final ki = _ki;
+  @override
+  final km = _km;
+  @override
+  final kn = _kn;
+  @override
+  final kp = _kp;
+  @override
+  final kr = _kr;
+  @override
+  final kw = _kw;
+  @override
+  final ky = _ky;
+  @override
+  final kz = _kz;
+  @override
+  final la = _la;
+  @override
+  final lb = _lb;
+  @override
+  final lc = _lc;
+  @override
+  final li = _li;
+  @override
+  final lk = _lk;
+  @override
+  final lr = _lr;
+  @override
+  final ls = _ls;
+  @override
+  final lt = _lt;
+  @override
+  final lu = _lu;
+  @override
+  final lv = _lv;
+  @override
+  final ly = _ly;
+  @override
+  final ma = _ma;
+  @override
+  final mc = _mc;
+  @override
+  final md = _md;
+  @override
+  final me = _me;
+  @override
+  final mf = _mf;
+  @override
+  final mg = _mg;
+  @override
+  final mh = _mh;
+  @override
+  final mk = _mk;
+  @override
+  final ml = _ml;
+  @override
+  final mm = _mm;
+  @override
+  final mn = _mn;
+  @override
+  final mo = _mo;
+  @override
+  final mp = _mp;
+  @override
+  final mq = _mq;
+  @override
+  final mr = _mr;
+  @override
+  final ms = _ms;
+  @override
+  final mt = _mt;
+  @override
+  final mu = _mu;
+  @override
+  final mv = _mv;
+  @override
+  final mw = _mw;
+  @override
+  final mx = _mx;
+  @override
+  final my = _my;
+  @override
+  final mz = _mz;
+  @override
+  final na = _na;
+  @override
+  final nc = _nc;
+  @override
+  final ne = _ne;
+  @override
+  final nf = _nf;
+  @override
+  final ng = _ng;
+  @override
+  final ni = _ni;
+  @override
+  final nl = _nl;
+  @override
+  final no = _no;
+  @override
+  final np = _np;
+  @override
+  final nr = _nr;
+  @override
+  final nu = _nu;
+  @override
+  final nz = _nz;
+  @override
+  final om = _om;
+  @override
+  final pa = _pa;
+  @override
+  final pe = _pe;
+  @override
+  final pf = _pf;
+  @override
+  final pg = _pg;
+  @override
+  final ph = _ph;
+  @override
+  final pk = _pk;
+  @override
+  final pl = _pl;
+  @override
+  final pm = _pm;
+  @override
+  final pn = _pn;
+  @override
+  final pr = _pr;
+  @override
+  final ps = _ps;
+  @override
+  final pt = _pt;
+  @override
+  final pw = _pw;
+  @override
+  final py = _py;
+  @override
+  final qa = _qa;
+  @override
+  final qo = _qo;
+  @override
+  final re = _re;
+  @override
+  final ro = _ro;
+  @override
+  final rs = _rs;
+  @override
+  final ru = _ru;
+  @override
+  final rw = _rw;
+  @override
+  final sa = _sa;
+  @override
+  final sb = _sb;
+  @override
+  final sc = _sc;
+  @override
+  final sd = _sd;
+  @override
+  final se = _se;
+  @override
+  final sg = _sg;
+  @override
+  final sh = _sh;
+  @override
+  final si = _si;
+  @override
+  final sj = _sj;
+  @override
+  final sk = _sk;
+  @override
+  final sl = _sl;
+  @override
+  final sm = _sm;
+  @override
+  final sn = _sn;
+  @override
+  final so = _so;
+  @override
+  final sr = _sr;
+  @override
+  final ss = _ss;
+  @override
+  final st = _st;
+  @override
+  final sv = _sv;
+  @override
+  final sx = _sx;
+  @override
+  final sy = _sy;
+  @override
+  final sz = _sz;
+  @override
+  final ta = _ta;
+  @override
+  final tc = _tc;
+  @override
+  final td = _td;
+  @override
+  final tf = _tf;
+  @override
+  final tg = _tg;
+  @override
+  final th = _th;
+  @override
+  final tj = _tj;
+  @override
+  final tk = _tk;
+  @override
+  final tl = _tl;
+  @override
+  final tm = _tm;
+  @override
+  final tn = _tn;
+  @override
+  final to = _to;
+  @override
+  final tr = _tr;
+  @override
+  final tt = _tt;
+  @override
+  final tv = _tv;
+  @override
+  final tw = _tw;
+  @override
+  final tz = _tz;
+  @override
+  final ua = _ua;
+  @override
+  final ug = _ug;
+  @override
+  final um = _um;
+  @override
+  final un = _un;
+  @override
+  final us = _us;
+  @override
+  final uy = _uy;
+  @override
+  final uz = _uz;
+  @override
+  final va = _va;
+  @override
+  final vc = _vc;
+  @override
+  final ve = _ve;
+  @override
+  final vg = _vg;
+  @override
+  final vi = _vi;
+  @override
+  final vn = _vn;
+  @override
+  final vu = _vu;
+  @override
+  final wf = _wf;
+  @override
+  final ws = _ws;
+  @override
+  final xa = _xa;
+  @override
+  final xb = _xb;
+  @override
+  final xk = _xk;
+  @override
+  final ye = _ye;
+  @override
+  final yt = _yt;
+  @override
+  final za = _za;
+  @override
+  final zm = _zm;
+  @override
+  final zw = _zw;
+  @override
+  final zz = _zz;
 
   @override
-  Territory get westernAfrica => Territory(
-        '011',
-        'Afrika Perëndimore',
-      );
+  final territories = const {
+    '001': _$001,
+    '002': _$002,
+    '003': _$003,
+    '005': _$005,
+    '009': _$009,
+    '011': _$011,
+    '013': _$013,
+    '014': _$014,
+    '015': _$015,
+    '017': _$017,
+    '018': _$018,
+    '019': _$019,
+    '021': _$021,
+    '029': _$029,
+    '030': _$030,
+    '034': _$034,
+    '035': _$035,
+    '039': _$039,
+    '053': _$053,
+    '054': _$054,
+    '057': _$057,
+    '061': _$061,
+    '142': _$142,
+    '143': _$143,
+    '145': _$145,
+    '150': _$150,
+    '151': _$151,
+    '154': _$154,
+    '155': _$155,
+    '202': _$202,
+    '419': _$419,
+    'AC': _ac,
+    'AD': _ad,
+    'AE': _ae,
+    'AF': _af,
+    'AG': _ag,
+    'AI': _ai,
+    'AL': _al,
+    'AM': _am,
+    'AO': _ao,
+    'AQ': _aq,
+    'AR': _ar,
+    'AS': _$as,
+    'AT': _at,
+    'AU': _au,
+    'AW': _aw,
+    'AX': _ax,
+    'AZ': _az,
+    'BA': _ba,
+    'BB': _bb,
+    'BD': _bd,
+    'BE': _be,
+    'BF': _bf,
+    'BG': _bg,
+    'BH': _bh,
+    'BI': _bi,
+    'BJ': _bj,
+    'BL': _bl,
+    'BM': _bm,
+    'BN': _bn,
+    'BO': _bo,
+    'BQ': _bq,
+    'BR': _br,
+    'BS': _bs,
+    'BT': _bt,
+    'BV': _bv,
+    'BW': _bw,
+    'BY': _by,
+    'BZ': _bz,
+    'CA': _ca,
+    'CC': _cc,
+    'CD': _cd,
+    'CF': _cf,
+    'CG': _cg,
+    'CH': _ch,
+    'CI': _ci,
+    'CK': _ck,
+    'CL': _cl,
+    'CM': _cm,
+    'CN': _cn,
+    'CO': _co,
+    'CP': _cp,
+    'CR': _cr,
+    'CU': _cu,
+    'CV': _cv,
+    'CW': _cw,
+    'CX': _cx,
+    'CY': _cy,
+    'CZ': _cz,
+    'DE': _de,
+    'DG': _dg,
+    'DJ': _dj,
+    'DK': _dk,
+    'DM': _dm,
+    'DO': _$do,
+    'DZ': _dz,
+    'EA': _ea,
+    'EC': _ec,
+    'EE': _ee,
+    'EG': _eg,
+    'EH': _eh,
+    'ER': _er,
+    'ES': _es,
+    'ET': _et,
+    'EU': _eu,
+    'EZ': _ez,
+    'FI': _fi,
+    'FJ': _fj,
+    'FK': _fk,
+    'FM': _fm,
+    'FO': _fo,
+    'FR': _fr,
+    'GA': _ga,
+    'GB': _gb,
+    'GD': _gd,
+    'GE': _ge,
+    'GF': _gf,
+    'GG': _gg,
+    'GH': _gh,
+    'GI': _gi,
+    'GL': _gl,
+    'GM': _gm,
+    'GN': _gn,
+    'GP': _gp,
+    'GQ': _gq,
+    'GR': _gr,
+    'GS': _gs,
+    'GT': _gt,
+    'GU': _gu,
+    'GW': _gw,
+    'GY': _gy,
+    'HK': _hk,
+    'HM': _hm,
+    'HN': _hn,
+    'HR': _hr,
+    'HT': _ht,
+    'HU': _hu,
+    'IC': _ic,
+    'ID': _id,
+    'IE': _ie,
+    'IL': _il,
+    'IM': _im,
+    'IN': _$in,
+    'IO': _io,
+    'IQ': _iq,
+    'IR': _ir,
+    'IS': _$is,
+    'IT': _it,
+    'JE': _je,
+    'JM': _jm,
+    'JO': _jo,
+    'JP': _jp,
+    'KE': _ke,
+    'KG': _kg,
+    'KH': _kh,
+    'KI': _ki,
+    'KM': _km,
+    'KN': _kn,
+    'KP': _kp,
+    'KR': _kr,
+    'KW': _kw,
+    'KY': _ky,
+    'KZ': _kz,
+    'LA': _la,
+    'LB': _lb,
+    'LC': _lc,
+    'LI': _li,
+    'LK': _lk,
+    'LR': _lr,
+    'LS': _ls,
+    'LT': _lt,
+    'LU': _lu,
+    'LV': _lv,
+    'LY': _ly,
+    'MA': _ma,
+    'MC': _mc,
+    'MD': _md,
+    'ME': _me,
+    'MF': _mf,
+    'MG': _mg,
+    'MH': _mh,
+    'MK': _mk,
+    'ML': _ml,
+    'MM': _mm,
+    'MN': _mn,
+    'MO': _mo,
+    'MP': _mp,
+    'MQ': _mq,
+    'MR': _mr,
+    'MS': _ms,
+    'MT': _mt,
+    'MU': _mu,
+    'MV': _mv,
+    'MW': _mw,
+    'MX': _mx,
+    'MY': _my,
+    'MZ': _mz,
+    'NA': _na,
+    'NC': _nc,
+    'NE': _ne,
+    'NF': _nf,
+    'NG': _ng,
+    'NI': _ni,
+    'NL': _nl,
+    'NO': _no,
+    'NP': _np,
+    'NR': _nr,
+    'NU': _nu,
+    'NZ': _nz,
+    'OM': _om,
+    'PA': _pa,
+    'PE': _pe,
+    'PF': _pf,
+    'PG': _pg,
+    'PH': _ph,
+    'PK': _pk,
+    'PL': _pl,
+    'PM': _pm,
+    'PN': _pn,
+    'PR': _pr,
+    'PS': _ps,
+    'PT': _pt,
+    'PW': _pw,
+    'PY': _py,
+    'QA': _qa,
+    'QO': _qo,
+    'RE': _re,
+    'RO': _ro,
+    'RS': _rs,
+    'RU': _ru,
+    'RW': _rw,
+    'SA': _sa,
+    'SB': _sb,
+    'SC': _sc,
+    'SD': _sd,
+    'SE': _se,
+    'SG': _sg,
+    'SH': _sh,
+    'SI': _si,
+    'SJ': _sj,
+    'SK': _sk,
+    'SL': _sl,
+    'SM': _sm,
+    'SN': _sn,
+    'SO': _so,
+    'SR': _sr,
+    'SS': _ss,
+    'ST': _st,
+    'SV': _sv,
+    'SX': _sx,
+    'SY': _sy,
+    'SZ': _sz,
+    'TA': _ta,
+    'TC': _tc,
+    'TD': _td,
+    'TF': _tf,
+    'TG': _tg,
+    'TH': _th,
+    'TJ': _tj,
+    'TK': _tk,
+    'TL': _tl,
+    'TM': _tm,
+    'TN': _tn,
+    'TO': _to,
+    'TR': _tr,
+    'TT': _tt,
+    'TV': _tv,
+    'TW': _tw,
+    'TZ': _tz,
+    'UA': _ua,
+    'UG': _ug,
+    'UM': _um,
+    'UN': _un,
+    'US': _us,
+    'UY': _uy,
+    'UZ': _uz,
+    'VA': _va,
+    'VC': _vc,
+    'VE': _ve,
+    'VG': _vg,
+    'VI': _vi,
+    'VN': _vn,
+    'VU': _vu,
+    'WF': _wf,
+    'WS': _ws,
+    'XA': _xa,
+    'XB': _xb,
+    'XK': _xk,
+    'YE': _ye,
+    'YT': _yt,
+    'ZA': _za,
+    'ZM': _zm,
+    'ZW': _zw,
+    'ZZ': _zz,
+  };
+}
+
+class VariantsSqMK extends Variants {
+  const VariantsSqMK._(super.cld);
 
   @override
-  Territory get centralAmerica => Territory(
-        '013',
-        'Amerika Qendrore',
-      );
+  final variants = const {};
+}
+
+class SubdivisionsSqMK extends Subdivisions {
+  const SubdivisionsSqMK._(super.cld);
 
   @override
-  Territory get easternAfrica => Territory(
-        '014',
-        'Afrika Lindore',
-      );
+  final subdivisions = const {
+    'ad02': 'Canillo',
+    'ad03': 'Encamp',
+    'ad04': 'La Massana',
+    'ad05': 'Ordino',
+    'ad06': 'Sant Julià de Lòria',
+    'ad07': 'Andorra la Vella',
+    'ad08': 'Escaldes-Engordany',
+    'aedu': 'Emirati i Dubait',
+    'aefu': 'Fuxhaira',
+    'aerk': 'Ras el-Haime',
+    'afnur': 'Nuristani',
+    'al01': 'Qarku i Beratit',
+    'al02': 'Qarku i Durrësit',
+    'al03': 'Qarku i Elbasanit',
+    'al04': 'Qarku i Fierit',
+    'al05': 'Qarku i Gjirokastrës',
+    'al06': 'Qarku i Korçës',
+    'al07': 'Qarku i Kukësit',
+    'al08': 'Qarku i Lezhës',
+    'al09': 'Qarku i Dibrës',
+    'al10': 'Qarku i Shkodrës',
+    'al11': 'Qarku i Tiranës',
+    'al12': 'Qarku i Vlorës',
+    'amer': 'Jerevani',
+    'arc': 'Buenos Aires',
+    'arz': 'Parku Kombëtar Los Glaciares',
+    'at1': 'Burgenland',
+    'at2': 'Kärnten',
+    'at3': 'Austria e Poshtme',
+    'at4': 'Austria e Epërme',
+    'at5': 'Salzburgu (shteti federal)',
+    'at6': 'Stiria',
+    'at7': 'Tiroli',
+    'at8': 'Vorarlberg',
+    'at9': 'Vjena',
+    'auact': 'Territori i Kryeqytetit Australian',
+    'aunsw': 'Uellsi i Ri Jugor',
+    'aunt': 'Northern Territory',
+    'auqld': 'Queensland',
+    'ausa': 'Australina Jugore',
+    'autas': 'Tasmania',
+    'auvic': 'Viktoria',
+    'auwa': 'Australia Perëndimore',
+    'azabs': 'Absheron',
+    'azaga': 'Agstafa',
+    'azagc': 'Aghjabadi',
+    'azagm': 'Agdam',
+    'azags': 'Agdash',
+    'azagu': 'Agsu',
+    'azast': 'Astara',
+    'azba': 'Baku',
+    'azbal': 'Balakan',
+    'azbar': 'Barda',
+    'azbey': 'Beylagan',
+    'azbil': 'Bilasuvar',
+    'azcab': 'Jabrayil',
+    'azcal': 'Jalilabad',
+    'azdas': 'Dashkasan',
+    'azfuz': 'Fizuli',
+    'azga': 'Ganja',
+    'azgad': 'Gadabay',
+    'azgor': 'Goranboy',
+    'azgoy': 'Goychay',
+    'azgyg': 'Goygol',
+    'azhac': 'Hajigabul',
+    'azimi': 'Imishli (rajon)',
+    'azism': 'Ismailli (rajon)',
+    'azkal': 'Kalbajar',
+    'azkur': 'Kurdamir',
+    'azla': 'Lankaran',
+    'azlac': 'Lachin',
+    'azlan': 'Lankaran²',
+    'azler': 'Lerik',
+    'azmas': 'Masally',
+    'azmi': 'Mingachevir',
+    'aznef': 'Neftchala',
+    'aznv': 'Nahçivani',
+    'aznx': 'Republika Autonome e Nahçivanit',
+    'azogu': 'Oghuz',
+    'azqab': 'Qabala',
+    'azqax': 'Qakh',
+    'azqaz': 'Qazakh',
+    'azqba': 'Quba',
+    'azqbi': 'Qubadli',
+    'azqob': 'Gobustan',
+    'azqus': 'Qusar',
+    'azsa': 'Shaki (qytet)',
+    'azsab': 'Sabirabad',
+    'azsak': 'Shaki',
+    'azsal': 'Salyan',
+    'azsat': 'Saatly',
+    'azsiy': 'Siazan',
+    'azskr': 'Shamkir',
+    'azsm': 'Sumqayit',
+    'azsmi': 'Shamakhi',
+    'azsmx': 'Samukh',
+    'azsr': 'Shirvan',
+    'azsus': 'Shusha',
+    'aztar': 'Tartar',
+    'aztov': 'Tovuz',
+    'azuca': 'Ujar',
+    'azxa': 'Khankendi',
+    'azxac': 'Khachmaz',
+    'azxci': 'Khojali',
+    'azxiz': 'Khizi',
+    'azxvd': 'Khojavend',
+    'azyar': 'Yardymli',
+    'azye': 'Jevlah',
+    'azyev': 'Yevlakh',
+    'azzan': 'Zangilan (rajon)',
+    'azzaq': 'Zaqatala (rajon)',
+    'azzar': 'Zardab (rajon)',
+    'babih': 'Federata e Bosnjës dhe Hercegovinës',
+    'babrc': 'Distrikti i Brçkos',
+    'basrp': 'Republika Serbe',
+    'bb08': 'Saint Michael',
+    'bebru': 'Brukseli',
+    'bevan': 'Provinca Antwerp',
+    'bevbr': 'Brabanti Flamand',
+    'bevlg': 'Flandria',
+    'bevli': 'Limburg (Belgjikë)',
+    'bevov': 'Flandria Lindore',
+    'bevwv': 'Flandria Perëndimore',
+    'bewal': 'Valonia',
+    'bewbr': 'Brabanti Valonas',
+    'bewht': 'Provinca Hainaut',
+    'bewlg': 'Provinca Liège',
+    'bewlx': 'Luksemburg (Belgjikë)',
+    'bewna': 'Provinca Namur',
+    'bg01': 'Provinca Blagojevgrad',
+    'bg02': 'Provinca Burgas',
+    'bg03': 'Provinca Varna',
+    'bg04': 'Provinca Veliko Tërnovo',
+    'bg05': 'Provinca Vidin',
+    'bg06': 'Provinca Vraca',
+    'bg07': 'Provinca Gabrovo',
+    'bg08': 'Provinca Dobriç',
+    'bg09': 'Provinca Kërxhali',
+    'bg10': 'Provinca Kjustendill',
+    'bg11': 'Provinca Loveç',
+    'bg12': 'Provinca Montana',
+    'bg13': 'Provinca Pazarxhik',
+    'bg14': 'Provinca Pernik',
+    'bg15': 'Provinca Pleven',
+    'bg16': 'Provinca Plovdiv',
+    'bg17': 'Provinca Razgrad',
+    'bg18': 'Provinca Rusje',
+    'bg19': 'Provinca Silistra',
+    'bg20': 'Provinca Sliven',
+    'bg21': 'Provinca Smoljan',
+    'bg22': 'Sofia kryeqytet',
+    'bg23': 'Provinca Sofia',
+    'bg24': 'Provinca Stara Zagora',
+    'bg25': 'Provinca Tërgovishçe',
+    'bg26': 'Provinca Haskovo',
+    'bg27': 'Provinca Shumen',
+    'bg28': 'Provinca Jambol',
+    'brac': 'Acre',
+    'bral': 'Alagoas',
+    'bram': 'Amazonas',
+    'brap': 'Amapá',
+    'brba': 'Bahia',
+    'brdf': 'Distrikti Federal i Brazilit',
+    'brmg': 'Minas Gerais',
+    'brms': 'Mato Grosso do Sul',
+    'brpa': 'Pará',
+    'brpe': 'Pernambuco',
+    'brrn': 'Rio Grande do Norte',
+    'brrr': 'Roraima',
+    'brrs': 'BR-RS',
+    'brsp': 'Sao Paulo',
+    'bwga': 'Gaborone',
+    'byhm': 'Minsk',
+    'caab': 'Alberta',
+    'cabc': 'Kolumbia Britanike',
+    'camb': 'Manitoba',
+    'canb': 'New Brunswick',
+    'canl': 'Toka e Re dhe Labradori',
+    'cans': 'Skocia e Re',
+    'cant': 'Territoret Veri-Perëndimore',
+    'canu': 'Nunavut',
+    'caon': 'Ontario',
+    'cape': 'Ishulli i Princit Eduard',
+    'caqc': 'Quebec',
+    'cask': 'Saskatchewan',
+    'cayt': 'Yukon',
+    'cdkn': 'Kinsasha',
+    'cfac': 'Ouham',
+    'cfbb': 'Bamingui-Bangoran',
+    'cfbgf': 'Bangui',
+    'cfbk': 'Basse-Kotto',
+    'cfhk': 'Haute-Kotto',
+    'cfhm': 'Haut-Mbomou',
+    'cfhs': 'Mambéré-Kadéï',
+    'cfkb': 'Nana-Grébizi',
+    'cfkg': 'Kémo',
+    'cflb': 'Lobaye',
+    'cfmb': 'Mbomou',
+    'cfmp': 'Ombella-M’Poko',
+    'cfnm': 'Nana-Mambéré',
+    'cfop': 'Ouham-Pendé',
+    'cfse': 'Sangha-Mbaéré',
+    'cfuk': 'Ouaka',
+    'cfvk': 'Vakaga',
+    'cgbzv': 'Brazzaville',
+    'chag': 'Kantoni Aargau',
+    'chai': 'Kantoni Appenzell Innerrhoden',
+    'char': 'Kantoni Appenzell Ausserrhoden',
+    'chbe': 'Kantoni Bern',
+    'chbs': 'Kantoni Basel-Stadt',
+    'chfr': 'Kantoni Fribourg',
+    'chge': 'Kantoni Gjenevë',
+    'chgl': 'Kantoni Glarus',
+    'chgr': 'Kantoni Graubünden',
+    'chlu': 'Kantoni Luzern',
+    'chne': 'Kantoni Neuchâtel',
+    'chow': 'Kantoni Obwalden',
+    'chsg': 'Kantoni St. Gallen',
+    'chso': 'Kantoni Solothurn',
+    'chsz': 'Schwyz',
+    'chtg': 'Thurgau',
+    'chti': 'Kantoni Ticino',
+    'chur': 'Kantoni Uri',
+    'chvd': 'Kantoni Vaud',
+    'chvs': 'Kantoni Valais',
+    'chzg': 'Kantoni Zug',
+    'chzh': 'Kantoni Cyrih',
+    'ciab': 'Abidjan',
+    'ciym': 'Jamusukro',
+    'cnbj': 'Pekini',
+    'cncq': 'Çongqing',
+    'cnhk': 'Hong Kong',
+    'cnmo': 'Makao',
+    'cnsd': 'Shandong',
+    'cnsh': 'Shangai',
+    'cntj': 'Tianxhin',
+    'cnxj': 'Sinkiang',
+    'cnxz': 'Tibet',
+    'codc': 'Bogotá',
+    'cz10': 'Praga',
+    'debb': 'Brandenburg',
+    'debe': 'Berlin',
+    'debw': 'Baden-Vyrtemberg',
+    'deby': 'Bavaria',
+    'dehb': 'Bremen',
+    'dehe': 'Hesia',
+    'dehh': 'Hamburgu',
+    'demv': 'Mecklenburg-Vorpommern',
+    'deni': 'Saksonia e Ulët',
+    'denw': 'Nordrhein-Westfalen',
+    'derp': 'Rheinland-Pfalz',
+    'desh': 'Schleswig-Holstein',
+    'desl': 'Saarland',
+    'desn': 'Saksonia',
+    'dest': 'Saksonia Anhalt',
+    'deth': 'Turingia',
+    'djdj': 'Xhibuti',
+    'dk81': 'Rajoni i Danimarkës Veriore',
+    'dk82': 'Rajoni i Danimarkës Qendrore',
+    'dk83': 'Rajoni i Danimarkës Jugore',
+    'dk84': 'Rajoni i Madh i Danimarkës',
+    'dk85': 'Rajoni Zelanda',
+    'dz01': 'Vilajeti Adrar',
+    'dz05': 'Batna',
+    'dz08': 'Bechar',
+    'dz44': 'Ain Defla',
+    'ee45': 'Qarku Ida-Viru',
+    'ee735': 'Sillamäe',
+    'esa': 'Provinca Alicante',
+    'esab': 'Provinca Albacete',
+    'esal': 'Provinca Almería',
+    'esan': 'Andalusia',
+    'esar': 'Aragon',
+    'esas': 'Asturias',
+    'esav': 'Provinca Ávila',
+    'esb': 'Provinca Barcelona',
+    'esba': 'Provinca Badajoz',
+    'esbi': 'Provinca Biscay',
+    'esbu': 'Provinca Burgos',
+    'esc': 'Provinca A Coruña',
+    'esca': 'Provinca Cadiz',
+    'escb': 'Cantabria',
+    'escc': 'Provinca Cáceres',
+    'esce': 'Ceuta',
+    'escl': 'Castile dhe León',
+    'escm': 'Castilla-La Mancha',
+    'escn': 'Ishujt Kanare',
+    'esco': 'Provinca Cordoba',
+    'escr': 'Provinca Ciudad Real',
+    'escs': 'Provinca Castellón',
+    'esct': 'Katalonia',
+    'escu': 'Provinca Cuenca',
+    'esex': 'Extremadura',
+    'esga': 'Galicia',
+    'esgc': 'Provinca Las Palmas',
+    'esgi': 'Provinca Girona',
+    'esgr': 'Provinca Granada',
+    'esgu': 'Provinca Guadalajara',
+    'esh': 'Provinca Huelva',
+    'eshu': 'Provinca Huesca',
+    'esib': 'Ishujt Balearik',
+    'esj': 'Provinca Jaén',
+    'esl': 'Provinca Lleida',
+    'esle': 'Provinca León',
+    'eslo': 'La Rioja',
+    'eslu': 'Provinca Lugo',
+    'esma': 'Provinca Málaga',
+    'esmc': 'Rajoni Murcia',
+    'esmd': 'Komuniteti i Madridit',
+    'esml': 'Melilla',
+    'esna': 'Navarre',
+    'esnc': 'Navarre²',
+    'esor': 'Provinca Ourense',
+    'esp': 'Provinca Palencia',
+    'espm': 'Ishujt Balearik²',
+    'espo': 'Provinca Pontevedra',
+    'espv': 'Baskia',
+    'esri': 'La Rioja²',
+    'ess': 'Cantabria²',
+    'essa': 'Provinca Salamanca',
+    'esse': 'Provinca Sevilla',
+    'essg': 'Provinca Segovia',
+    'esso': 'Provinca Soria',
+    'esss': 'Provinca Gipuzkoa',
+    'est': 'Provinca Tarragona',
+    'este': 'Provinca Teruel',
+    'estf': 'Provinca Santa Cruz de Tenerife',
+    'esto': 'Provinca Toledo',
+    'esv': 'Provinca Valencia',
+    'esva': 'Provinca Valladolid',
+    'esvc': 'Komuniteti i Valencias',
+    'esvi': 'Provinca Álava',
+    'esz': 'Provinca Zaragoza',
+    'esza': 'Provinca Zamora',
+    'etaa': 'Addis Abeba',
+    'fi02': 'Karelia Jugore',
+    'fi03': 'Ostrobothnia Jugore',
+    'fi04': 'Savonia Jugore',
+    'fi05': 'Kainuu',
+    'fi06': 'Tavastia Proper',
+    'fi07': 'Ostrobothnia Qendrore',
+    'fi08': 'Finlanda Qendrore',
+    'fi09': 'Kymenlaakso',
+    'fi10': 'Lapland',
+    'fi11': 'Pirkanmaa',
+    'fi12': 'Ostrobothnia',
+    'fi13': 'Karelia Veriore',
+    'fi14': 'Ostrobothnia Veriore',
+    'fi15': 'Savonia Veriore',
+    'fi16': 'Päijänne Tavastia',
+    'fi17': 'Satakunta',
+    'fi18': 'Uusimaa',
+    'fi19': 'Finlanda Jugperëndimore',
+    'fr01': 'Ain',
+    'fr02': 'Aisne',
+    'fr2a': 'Corse-du-Sud',
+    'fr2b': 'Haute-Corse',
+    'fr03': 'Allier',
+    'fr04': 'Alpes-de-Haute-Provence',
+    'fr05': 'Hautes-Alpes',
+    'fr06': 'Alpes-Maritimes',
+    'fr6ae': 'Alsasa',
+    'fr07': 'Ardèche',
+    'fr08': 'Ardennes',
+    'fr09': 'Ariège',
+    'fr10': 'Aube',
+    'fr11': 'Aude',
+    'fr12': 'Aveyron',
+    'fr13': 'Bouches-du-Rhône',
+    'fr14': 'Calvados',
+    'fr15': 'Cantal',
+    'fr16': 'Charente',
+    'fr17': 'Charente-Maritime',
+    'fr18': 'Cher',
+    'fr19': 'Corrèze',
+    'fr20r': 'Korsika',
+    'fr21': 'Côte-d’Or',
+    'fr22': 'Côtes-d’Armor',
+    'fr23': 'Creuse',
+    'fr24': 'Dordogne',
+    'fr25': 'Doubs',
+    'fr26': 'Drôme',
+    'fr27': 'Ërë',
+    'fr28': 'Eure-et-Loir',
+    'fr29': 'Finistère',
+    'fr30': 'Gard',
+    'fr31': 'Haute-Garonne',
+    'fr32': 'Gers',
+    'fr33': 'Gironda',
+    'fr34': 'Hérault',
+    'fr35': 'Ille-et-Vilaine',
+    'fr36': 'Indre',
+    'fr37': 'Indre-et-Loire',
+    'fr38': 'Isère',
+    'fr39': 'Jura',
+    'fr40': 'Landes',
+    'fr42': 'Loire',
+    'fr43': 'Haute-Loire',
+    'fr44': 'Loire-Atlantique',
+    'fr45': 'Loiret',
+    'fr46': 'Olt',
+    'fr47': 'Lot-et-Garonne',
+    'fr48': 'Lozère',
+    'fr49': 'Maine-et-Loire',
+    'fr50': 'Manche',
+    'fr51': 'Marne',
+    'fr52': 'Haute-Marne',
+    'fr53': 'Mayenne',
+    'fr54': 'Meurthe-et-Moselle',
+    'fr55': 'Meuse',
+    'fr56': 'Morbihan',
+    'fr57': 'Moselle',
+    'fr58': 'Nièvre',
+    'fr60': 'Oise',
+    'fr61': 'Orne',
+    'fr62': 'Pas-de-Calais',
+    'fr63': 'Puy-de-Dôme',
+    'fr64': 'Pyrénées-Atlantiques',
+    'fr65': 'Hautes-Pyrénées',
+    'fr66': 'Pyrénées-Orientales',
+    'fr67': 'Bas-Rhin',
+    'fr68': 'Alto Rin',
+    'fr69': 'Rhône',
+    'fr70': 'Haute-Saône',
+    'fr71': 'Saône-et-Loire',
+    'fr72': 'Sarthe',
+    'fr73': 'Savoia',
+    'fr74': 'Haute-Savoie',
+    'fr75': 'Parisi',
+    'fr75c': 'Paris',
+    'fr76': 'Seine-Maritime',
+    'fr77': 'Seine-et-Marne',
+    'fr78': 'Yvelines',
+    'fr79': 'Deux-Sèvres',
+    'fr80': 'Somme',
+    'fr81': 'Tarn',
+    'fr82': 'Tarn-et-Garonne',
+    'fr83': 'Var',
+    'fr84': 'Vaucluse',
+    'fr85': 'Vendée',
+    'fr86': 'Vienne',
+    'fr87': 'Haute-Vienne',
+    'fr88': 'Vosgos',
+    'fr89': 'Yonne',
+    'fr90': 'Territoire de Belfort',
+    'fr91': 'Essonne',
+    'fr92': 'Hauts-de-Seine',
+    'fr93': 'Seine-Saint-Denis',
+    'fr94': 'Val-de-Marne',
+    'fr95': 'Val-d’Oise',
+    'fr971': 'Guadalupa',
+    'fr972': 'Martinika',
+    'fr973': 'Guajana Franceze',
+    'fr974': 'Reunioni',
+    'fr976': 'Mayotte',
+    'frara': 'Auvernia-Rhône-Alpes',
+    'frbfc': 'Burgonja-Franche-Comté',
+    'frbre': 'Bretagne',
+    'frcvl': 'Centre',
+    'frges': 'Lindja e madhe',
+    'frhdf': 'Epërmet e Francës',
+    'fridf': 'Île-de-France',
+    'frnaq': 'Akuitania e Re',
+    'frnor': 'Normandia',
+    'frocc': 'Oksitania',
+    'frpac': 'Provence-Alpes-Côte d’Azur',
+    'frpdl': 'Pays de la Loire',
+    'gbabe': 'Aberdeen',
+    'gbbry': 'Bromley',
+    'gbbst': 'Bristol',
+    'gbcrf': 'Kardif',
+    'gbder': 'Derby',
+    'gbdev': 'Devon (Angli)',
+    'gbedh': 'Edinburg',
+    'gbeng': 'Anglia',
+    'gbgbn': 'Britania e madhe',
+    'gbglg': 'Glasgow',
+    'gbivc': 'Inverclyde',
+    'gblec': 'Leicestershire',
+    'gblin': 'Lincolnshire',
+    'gblnd': 'Londra',
+    'gbmon': 'Monmouthshire',
+    'gbnir': 'Irlanda Veriore',
+    'gboxf': 'Oksford',
+    'gbsct': 'Skocia',
+    'gbukm': 'Britania e Madhe',
+    'gbwls': 'Uellsi',
+    'gbwsm': 'Westminster',
+    'geaj': 'Axhara',
+    'getb': 'Tbilisi',
+    'gmb': 'Banjul',
+    'gnc': 'Konakri',
+    'gr69': 'Mali i Shenjtë',
+    'gra': 'Maqedonia Lindore dhe Thrakia',
+    'grb': 'Maqedonia Qendrore',
+    'grc': 'Maqedonia Perëndimore',
+    'grd': 'Epiri (periferia)',
+    'gre': 'Thesalia',
+    'grf': 'Ishujt e Jonit',
+    'grh': 'Greqia Qendrore',
+    'gri': 'Atika',
+    'grk': 'Egjeu Verior',
+    'grl': 'Egjeu Jugor',
+    'gwbs': 'Bissau',
+    'gyba': 'Barima-Waini',
+    'gycu': 'Cuyuni-Mazaruni',
+    'gyde': 'Demerara-Mahaica',
+    'gyeb': 'East Berbice-Corentyne',
+    'gyes': 'Essequibo Islands-West Demerara',
+    'gyma': 'Mahaica-Berbice',
+    'gypm': 'Pomeroon-Supenaam',
+    'gypt': 'Potaro-Siparuni',
+    'gyud': 'Upper Demerara-Berbice',
+    'gyut': 'Upper Takutu-Upper Essequibo',
+    'hr01': 'Zhupania e Zagrebit',
+    'hr02': 'Zhupania e Zagorës dhe Krapinës',
+    'hr03': 'Zhupania e Sisakut dhe Mosllovaçës',
+    'hr04': 'Zhupania e Karllovcit',
+    'hr05': 'Zhupania e Varazhdinit',
+    'hr06': 'Zhupania e Koprivnicës dhe Krizhevcit',
+    'hr07': 'Zhupania e Bjellovarit dhe Billogorit',
+    'hr08': 'Zhupania bregdetaro-malore',
+    'hr09': 'Zhupania e Likës dhe Senjit',
+    'hr10': 'Zhupania e Viroviticës dhe Podravkës',
+    'hr11': 'Zhupania Pozhega-Sllavonia',
+    'hr12': 'Zhupania e Brodit dhe Posavinës',
+    'hr13': 'Zhupania e Zarës',
+    'hr14': 'Zhupania e Osijekut dhe Baranjës',
+    'hr15': 'Zhupania e Kninit dhe Shibenikut',
+    'hr16': 'Zhupania e Vukovarit dhe Sremit',
+    'hr17': 'Zhupania e Splitit dhe e Dalmacisë',
+    'hr18': 'Zhupania e Istrës',
+    'hr19': 'Zhupania e Dubrovnikut dhe Neretvës',
+    'hr20': 'Zhupania e Megjimurës',
+    'hr21': 'Zagrebi',
+    'hubu': 'Budapesti',
+    'hugy': 'Győr',
+    'humi': 'Miskolc',
+    'hups': 'Pécs',
+    'husd': 'Szeged',
+    'hush': 'Szombathely',
+    'idac': 'Aqeh',
+    'idbt': 'Banten',
+    'idjk': 'Xhakarta',
+    'idjw': 'Ishulli Java',
+    'idla': 'Lampung',
+    'idnb': 'Nusa Tengara Perëndimore',
+    'idsm': 'Sumatra',
+    'ieco': 'Qarku Cork',
+    'iecw': 'Carlow',
+    'iedl': 'Qarku i Donegal',
+    'iel': 'Leinsteri',
+    'iem': 'Munsteri',
+    'inap': 'Andra Pradesh',
+    'inar': 'Arunaçal Pradesh',
+    'inas': 'Assam',
+    'inbr': 'Bihar',
+    'incg': 'Çatisgar',
+    'indl': 'Delhi',
+    'inga': 'Goa',
+    'ingj': 'Guxharat',
+    'injh': 'Xharkand',
+    'injk': 'Xhamu dhe Kashmiri (territori i bashkimit)',
+    'inka': 'Karnataka',
+    'inkl': 'Kerala',
+    'inmh': 'Maharashtra',
+    'inmn': 'Manipur',
+    'inmz': 'Mizoram',
+    'innl': 'Nagaland',
+    'inod': 'Orissa',
+    'inor': 'Odisha',
+    'inpy': 'Puducherry (territori i bashkimit)',
+    'insk': 'Sikkim',
+    'intn': 'Tamil Nadu',
+    'intr': 'Tripura',
+    'ints': 'Telangana',
+    'inuk': 'Uttarakand',
+    'inup': 'Uttar Pradesh',
+    'inwb': 'Bengali Perëndimor',
+    'ir02': 'Provinca e Mazandaranit',
+    'ir09': 'Razavi Horasan²',
+    'ir17': 'Kohgiluje dhe Bojer-Ahmad²',
+    'ir18': 'Kohgiluje dhe Bojer-Ahmad',
+    'ir29': 'Horasani Jugor',
+    'ir30': 'Razavi Horasan',
+    'is1': 'Rajoni i Kryeqytetit',
+    'is2': 'Gadishulli Jugor',
+    'is3': 'Rajoni Perëndimor',
+    'is4': 'Fjordet Perëndimore',
+    'is5': 'Rajoni Veriperëndimor',
+    'is6': 'Rajoni Verilindor',
+    'is7': 'Rajoni Lindor',
+    'is8': 'Rajoni Jugor',
+    'isakh': 'Akrahreppur',
+    'isakn': 'Akranes',
+    'isaku': 'Akureyri',
+    'isarn': 'Árneshreppur',
+    'isasa': 'Ásahreppur',
+    'isbla': 'Bláskógabyggð',
+    'isblo': 'Blönduós',
+    'isbog': 'Borgarbyggd',
+    'isbol': 'Bolungarvík',
+    'isdab': 'Dalabyggd',
+    'isdav': 'Dalvíkurbyggd',
+    'iseom': 'Eyja- og Miklaholtshreppur',
+    'iseyf': 'Eyjafjardarsveit',
+    'isfjd': 'Fjarðabyggð',
+    'isfjl': 'Fjallabyggd',
+    'isfla': 'Flóahreppur',
+    'isflr': 'Fljótsdalshreppur',
+    'isgar': 'Garðabær',
+    'isgru': 'Grundarfjörður',
+    'ishaf': 'Hafnarfjörður',
+    'ishuv': 'Húnaþing vestra',
+    'ishve': 'Hveragerdi',
+    'iskop': 'Kópavogur',
+    'isrge': 'Rangárþing eystra',
+    'isrgy': 'Rangárþing ytra',
+    'isrkv': 'Rejkjavik',
+    'issel': 'Seltjarnarnes',
+    'issfa': 'Árborg',
+    'isskr': 'Skagafjörður',
+    'issol': 'Ölfus',
+    'issss': 'Sveitarfélagið Skagaströnd',
+    'isstr': 'Strandabyggð',
+    'issvg': 'Vogar',
+    'istjo': 'Tjörneshreppur',
+    'isvem': 'Vestmannaeyjar',
+    'it21': 'Piemonti',
+    'it23': 'Lugina e Aostës',
+    'it25': 'Lombardia',
+    'it32': 'Trentino-Tiroli Jugor',
+    'it34': 'Veneto',
+    'it36': 'Friuli-Venecia Xhulia',
+    'it42': 'Liguria',
+    'it45': 'Emilia-Romanja',
+    'it52': 'toskana',
+    'it55': 'Umbria',
+    'it57': 'Marke',
+    'it62': 'Lacio',
+    'it65': 'Abruco',
+    'it67': 'Molize',
+    'it72': 'Kampania',
+    'it75': 'Pulia',
+    'it77': 'Bazilikata',
+    'it78': 'Kalabria',
+    'it82': 'Sicilia',
+    'it88': 'Sardenja',
+    'itag': 'Provinca e Agrixhentos',
+    'ital': 'Provinca e Aleksandrisë',
+    'itan': 'Provinca e Ankonës',
+    'itap': 'Provinca Ascoli Piceno',
+    'itaq': 'Provinca e Akuilës',
+    'itar': 'Provinca e Arexos',
+    'itat': 'Provinca e Astit',
+    'itav': 'Provinca e Avelinos',
+    'itba': 'Provinca e Barit',
+    'itbg': 'Provinca e Bergamos',
+    'itbi': 'Provinca e Bielës',
+    'itbl': 'Provinca e Belunos',
+    'itbn': 'Provinca e Beneventos',
+    'itbo': 'Qyteti Metropolitan i Bolonjës',
+    'itbr': 'Provinca e Brindizit',
+    'itbs': 'Provinca e Breshias',
+    'itbt': 'Provinca e Barletta-Andria-Tranit',
+    'itbz': 'Provinca Autonome e Bolzanos',
+    'itca': 'Qyteti metropolitan i Kaljarit',
+    'itcb': 'Provinca e Kampobasos',
+    'itce': 'Provinca e Kazertës',
+    'itch': 'Provinca e Kietit',
+    'itcl': 'Provinca e Kaltanisetës',
+    'itcn': 'Provinca e Kuneos',
+    'itco': 'Provinca e Komos',
+    'itcr': 'Provinca e Kremonës',
+    'itcs': 'Provinca e Kozencës',
+    'itct': 'Provinca Catania',
+    'itcz': 'Provinca e Katanxaros',
+    'itfg': 'Provinca e Foxhias',
+    'itfi': 'Provinca Firenca',
+    'itfm': 'Provinca Fermo',
+    'itgo': 'Provinca e Goricias',
+    'itim': 'Provinca e Imperias',
+    'itis': 'Provinca e Izernias',
+    'itkr': 'Provinca e Krotones',
+    'itlc': 'Provinca e Lekos',
+    'itle': 'Provinca e Leçes',
+    'itlo': 'Provinca e Lodit',
+    'itmb': 'Provinca e Monxës e Brianxës',
+    'itmc': 'Provinca e Maçeratës',
+    'itme': 'Mesina',
+    'itmi': 'Provinca e Milanos',
+    'itmn': 'Provinca e Mantovës',
+    'itmt': 'Provinca e Materës',
+    'itna': 'Provinca e Napolit',
+    'itno': 'Provinca e Novarës',
+    'itnu': 'Provinca e Nuoros',
+    'itor': 'Provinca e Oristanos',
+    'itpa': 'Provinca e Palermos',
+    'itpd': 'Provinca e Padovës',
+    'itpe': 'Provinca e Peskarës',
+    'itpg': 'Provinca e Peruxhias',
+    'itpi': 'Provinca e Pizës',
+    'itpn': 'Provinca e Pordenones',
+    'itpv': 'Provinca e Pavias',
+    'itpz': 'Provinca e Potencës',
+    'itrc': 'Provinca e Rexhio Kalabrisë',
+    'itrm': 'Provinca e Romës',
+    'itrn': 'Provinca e Riminit',
+    'itro': 'Provinca e Rovigos',
+    'itsa': 'Provinca e Salernos',
+    'itso': 'Provinca e Sondrios',
+    'itss': 'Provinca e Sasarit',
+    'itsu': 'Provinca e Sud Sardenjas',
+    'itsv': 'Provinca e Savonës',
+    'itta': 'Provinca e Tarantos',
+    'itte': 'Provinca e Teramos',
+    'ittn': 'Provinca Autonome e Trentos',
+    'itto': 'Provinca e Torinos',
+    'ittr': 'Provinca e Ternit',
+    'itts': 'Provinca e Triestes',
+    'ittv': 'Provinca e Trevizos',
+    'itud': 'Provinca e Udines',
+    'itva': 'Provinca e Varezes',
+    'itvb': 'Provinca e Verbano-Kuzio-Osolës',
+    'itvc': 'Provinca e Verçelit',
+    'itve': 'Provinca e Veneciës',
+    'itvi': 'Provinca e Viçencës',
+    'itvr': 'Provinca e Veronës',
+    'itvs': 'Provinca e Medio Campidano',
+    'itvv': 'Provinca e Vibo Valentias',
+    'joaj': 'Governorati Ajloun',
+    'joba': 'Governorati Balqa',
+    'joir': 'Governorati i Irbidit',
+    'joja': 'Governorati Jerash',
+    'joma': 'Governorati Mafrak',
+    'jp13': 'Tokjo',
+    'jp14': 'Kanagawa',
+    'jp36': 'Prefektura Tokushima',
+    'kggb': 'Bishkek',
+    'kggo': 'Osh',
+    'kh12': 'Phnom Penh',
+    'kp01': 'Pjongian',
+    'kr11': 'Seoul',
+    'kr26': 'Busan',
+    'kz71': 'Astana',
+    'kz75': 'Almati',
+    'kz79': 'Shymkent',
+    'li11': 'Vaduz',
+    'ltal': 'Qarku Alytus',
+    'ltkl': 'Qarku Klaipėda',
+    'ltku': 'Qarku Kaunas',
+    'ltmr': 'Qarku Marijampolė',
+    'ltpn': 'Qarku Panevėžys',
+    'ltsa': 'Qarku Šiauliai',
+    'ltta': 'Qarku Tauragė',
+    'ltte': 'Qarku Telšiai',
+    'ltut': 'Qarku Utena',
+    'ltvl': 'Qarku Vilnius',
+    'lvdgv': 'Daugavpils',
+    'lvjkb': 'Jēkabpils',
+    'lvrez': 'Rēzekne',
+    'lvrix': 'Riga',
+    'lvvmr': 'Valmiera',
+    'lyba': 'Bengazi',
+    'maagd': 'Agadir',
+    'macas': 'Kasablanka',
+    'mafes': 'Fes (Marok)',
+    'mamar': 'Marrakesh',
+    'mamoh': 'Mohammedia',
+    'maouj': 'Oujda',
+    'marab': 'Rabati',
+    'mcmc': 'Monte Karlo',
+    'mdan': 'Raionul Anenii Noi',
+    'mdbr': 'Raionul Briceni',
+    'mdbs': 'Raionul Basarabeasca',
+    'mdca': 'Raionul Cahul',
+    'mdcl': 'Raionul Călărași',
+    'mdcm': 'Raionul Cimișlia',
+    'mdcr': 'Raionul Criuleni',
+    'mdcs': 'Raionul Căușeni',
+    'mdct': 'Raionul Cantemir',
+    'mdcu': 'Municipiul Chișinău',
+    'mddo': 'Raionul Dondușeni',
+    'mddr': 'Raionul Drochia',
+    'mddu': 'Raionul Dubăsari',
+    'mded': 'Raionul Edineț',
+    'mdfa': 'Raionul Falești',
+    'mdfl': 'Raionul Florești',
+    'mdga': 'Gagauzia',
+    'mdgl': 'Raionul Glodeni',
+    'mdhi': 'Raionul Hîncești',
+    'mdia': 'Raionul Ialoveni',
+    'mdle': 'Raionul Leova',
+    'mdni': 'Raionul Nisporeni',
+    'mdoc': 'Raionul Ocnița',
+    'mdor': 'Raionul Orhei',
+    'mdre': 'Raionul Rezina',
+    'mdri': 'Raionul Rîșcani',
+    'mdsd': 'Raionul Șoldănești',
+    'mdsi': 'Raionul Sîngerei',
+    'mdso': 'Raionul Soroca',
+    'mdst': 'Raionul Strășeni',
+    'mdsv': 'Raionul Ștefan Vodă',
+    'mdta': 'Raionul Taraclia',
+    'mdte': 'Raionul Telenești',
+    'mdun': 'Raionul Ungheni',
+    'me01': 'Komuna e Andrijevicës',
+    'me02': 'Komuna e Tivarit',
+    'me03': 'Komuna e Beranes',
+    'me04': 'Komuna e Bellopojës',
+    'me06': 'Komuna e Cetinës',
+    'me08': 'Komuna e Herceg Novit',
+    'me09': 'Komuna e Koloshinit',
+    'me10': 'Komuna e Kotorrit',
+    'me11': 'Komuna e Mojkovacit',
+    'me13': 'Komuna e Plavës',
+    'me14': 'Komuna e Plevlës',
+    'me16': 'Komuna e Podgoricës',
+    'me17': 'Komuna e Rozhajës',
+    'me18': 'Komuna e Shavnikut',
+    'me19': 'Komuna e Tivatit',
+    'me20': 'Komuna e Ulqinit',
+    'me21': 'Komuna e Zhabjakut',
+    'me22': 'Komuna e Gucisë',
+    'me23': 'Komuna e Petnjicës',
+    'me24': 'Komuna e Tuzit',
+    'me25': 'Komuna e Zetës',
+    'mhmaj': 'Majuro',
+    'mk85': 'Qyteti i Shkupit',
+    'mk101': 'Komuna e Velesit',
+    'mk102': 'Komuna e Grackës',
+    'mk103': 'Komuna e Demir Kapisë',
+    'mk104': 'Komuna e Kavadarit',
+    'mk105': 'Komuna e Llozovës',
+    'mk106': 'Komuna e Negotinës',
+    'mk107': 'Komuna e Rosomanit',
+    'mk108': 'Komuna e Sveti Nikollës',
+    'mk109': 'Komuna e Çashkës',
+    'mk201': 'Komuna e Berovës',
+    'mk202': 'Komuna e Vinicës',
+    'mk203': 'Komuna e Dellçevës',
+    'mk204': 'Komuna e Zërnocit',
+    'mk205': 'Komuna e Karbincës',
+    'mk206': 'Komuna e Koçanit',
+    'mk207': 'Komuna e Kamenicës',
+    'mk208': 'Komuna e Peçevës',
+    'mk209': 'Komuna e Probishtipit',
+    'mk210': 'Komuna e Çeshinovo-Obleshevës',
+    'mk211': 'Komuna e Shtipit',
+    'mk301': 'Komuna e Veçanit',
+    'mk303': 'Komuna e Dibrës',
+    'mk304': 'Komuna e Debarcës',
+    'mk307': 'Komuna e Kërçovës',
+    'mk308': 'Komuna e Brodit',
+    'mk310': 'Komuna e Ohrit',
+    'mk311': 'Komuna e Plasnicës',
+    'mk312': 'Komuna e Strugës',
+    'mk313': 'Komuna e Qendrës Zhupa',
+    'mk401': 'Komuna e Bogdancës',
+    'mk402': 'Komuna e Bosilovës',
+    'mk403': 'Komuna e Vallandovës',
+    'mk404': 'Komuna e Vasilevës',
+    'mk405': 'Komuna e Gjevgjelisë',
+    'mk406': 'Komuna e Dojranit',
+    'mk407': 'Komuna e Konçës',
+    'mk408': 'Komuna e Novosellës',
+    'mk409': 'Komuna e Radovishtit',
+    'mk410': 'Komuna e Strumicës',
+    'mk501': 'Komuna e Manastirit',
+    'mk502': 'Komuna e Demir Hisarit',
+    'mk503': 'Komuna e Dollnenit',
+    'mk504': 'Komuna e Krivogashtanit',
+    'mk505': 'Komuna e Krushevës',
+    'mk506': 'Komuna e Mogillës',
+    'mk507': 'Komuna e Novacit',
+    'mk508': 'Komuna e Prilepit',
+    'mk509': 'Komuna e Resnjës',
+    'mk601': 'Komuna e Bogovinës',
+    'mk602': 'Komuna e Bërvenicës',
+    'mk603': 'Komuna e Vrapçishtit',
+    'mk604': 'Komuna e Gostivarit',
+    'mk605': 'Komuna e Zhelinës',
+    'mk606': 'Komuna e Jegunocit',
+    'mk607': 'Komuna e Mavrovës dhe Radostushës',
+    'mk608': 'Komuna e Tearcës',
+    'mk609': 'Komuna e Tetovës',
+    'mk701': 'Komuna e Kratovës',
+    'mk702': 'Komuna e Kriva Pallankës',
+    'mk703': 'Komuna e Kumanovës',
+    'mk704': 'Komuna e Likovës',
+    'mk705': 'Komuna e Rankocit',
+    'mk706': 'Komuna e Nagoriçit të Vjetër',
+    'mk801': 'Komuna e Aeorodromit',
+    'mk802': 'Komuna e Haraçinës',
+    'mk803': 'Komuna e Butelit',
+    'mk804': 'Komuna e Gazi Babës',
+    'mk805': 'Komuna e Gjorçe Petrovit',
+    'mk806': 'Komuna e Zelenikovës',
+    'mk807': 'Komuna e Belimbegut',
+    'mk808': 'Komuna e Karposhit',
+    'mk809': 'Komuna e Kisella Vodës',
+    'mk810': 'Komuna e Petrovecit',
+    'mk811': 'Komuna e Sarajit',
+    'mk812': 'Komuna e Sopishtit',
+    'mk813': 'Komuna e Studeniçanit',
+    'mk814': 'Komuna e Qendrës',
+    'mk815': 'Komuna e Çairit',
+    'mk816': 'Komuna e Çuçer-Sandevës',
+    'mk817': 'Komuna e Shutkës',
+    'mlbko': 'Bamako',
+    'mn1': 'Ulan Bator',
+    'mt04': 'Birkirkara',
+    'mt08': 'Fgura',
+    'mt60': 'Valeta',
+    'mupu': 'Port Louis',
+    'mvmle': 'Malé',
+    'mxbcn': 'Baja California',
+    'mxcmx': 'Meksiko',
+    'mxoax': 'Oaxaca',
+    'my14': 'Kuala Lumpur',
+    'mzmpm': 'Maputo',
+    'ne8': 'Niamey',
+    'nldr': 'Drenthe',
+    'nlfl': 'Flevoland',
+    'nlfr': 'Friesland',
+    'nlge': 'Gelderland',
+    'nlgr': 'Groningen',
+    'nlli': 'Limburgu',
+    'nlnb': 'Brabanta Veriore',
+    'nlnh': 'Hollanda e Veriut',
+    'nlov': 'Overijssel',
+    'nlut': 'Utrecht',
+    'nlze': 'Zeeland',
+    'nlzh': 'Hollanda e Jugut',
+    'no01': 'Østfold',
+    'no02': 'Akershus',
+    'no03': 'Oslo',
+    'no04': 'Hedmark',
+    'no05': 'Oppland',
+    'no06': 'Buskerud',
+    'no07': 'Vestfold',
+    'no08': 'Telemark',
+    'no09': 'Aust-Agder',
+    'no10': 'Vest-Agder',
+    'no11': 'Rogaland',
+    'no12': 'Hordaland',
+    'no14': 'Sogn og Fjordane',
+    'no15': 'Møre og Romsdal',
+    'no18': 'Nordland',
+    'no19': 'Troms',
+    'no20': 'Finnmark',
+    'no21': 'Svalbard',
+    'no22': 'Jan Mayen',
+    'no34': 'Innlandet',
+    'no50': 'Trøndelag',
+    'pgncd': 'Port Moresbi',
+    'pkba': 'Baloçistan, Pakistan',
+    'pkpb': 'Panxhab, Pakistan',
+    'pksd': 'Sind',
+    'pt20': 'Ishujt Azore',
+    'pt30': 'Ishujt Medeira',
+    'pyasu': 'Asunción',
+    'qada': 'Doha',
+    'roab': 'Qarku Alba',
+    'roag': 'Qarku Argeș',
+    'roar': 'Qarku Arad',
+    'rob': 'Bukureshti',
+    'robc': 'Qarku Bacău',
+    'robh': 'Qarku Bihor',
+    'robn': 'Qarku Bistrița-Năsăud',
+    'robr': 'Qarku Brăila',
+    'robt': 'Qarku Botoșani',
+    'robv': 'Qarku Brașov',
+    'rohd': 'Qarku Hunedoara',
+    'rotm': 'Qarku Timiș',
+    'rs00': 'Beogradi',
+    'rs20': 'Qarku i Nishit',
+    'rs21': 'Rrethi Toplica',
+    'rs23': 'Rrethi Jablanica',
+    'rs24': 'Qarku i Pçinjës',
+    'rs25': 'Rrethi i Kosovës',
+    'rs26': 'Distrikti i Pejës',
+    'rs27': 'Distrikti i Prizrenit',
+    'rs28': 'Distrikti i Mitrovicës së Kosovës',
+    'rs29': 'Anamorava',
+    'rskm': 'Krahina Autonome e Kosovës dhe Metohisë',
+    'rsvo': 'Vojvodina',
+    'ruad': 'Adigjeja',
+    'rual': 'Republika e Altait',
+    'ruba': 'Bashkortostani',
+    'rubu': 'Burjatia',
+    'ruce': 'Çeçenia',
+    'rucu': 'Çuvashia',
+    'ruda': 'Dagestani',
+    'ruin': 'Ingushetia',
+    'rukam': 'Kamçatka Krai',
+    'rukb': 'Kabardino-Balkaria',
+    'rukc': 'Karaçaj-Çerkesia',
+    'rukk': 'Hakasia',
+    'rukl': 'Kalmikia',
+    'ruko': 'Komiu',
+    'rukr': 'Karelia',
+    'rume': 'Mari El',
+    'rumow': 'Moska',
+    'rusa': 'Sahaja',
+    'ruse': 'Osetia e Veriut-Alania',
+    'ruspe': 'Shën Petersburgu',
+    'ruta': 'Tataristani',
+    'ruty': 'Tëvaja',
+    'ruud': 'Udmurtia',
+    'rw01': 'Kigali',
+    'sa02': 'Provinca Meka',
+    'sem': 'Qarku Skåne',
+    'shhl': 'Ishulli Shën Elena',
+    'si040': 'Izola',
+    'si052': 'Kranj',
+    'si090': 'Piran',
+    'si113': 'Slovenska Bistrica',
+    'si148': 'Benedikt',
+    'sm07': 'San Marino',
+    'snse': 'Rajoni Sédhiou',
+    'tdnd': 'Nxhamena',
+    'tgk': 'Kara',
+    'th10': 'Bangkok',
+    'th83': 'Provinca Phuket',
+    'tjdu': 'Dushanbe',
+    'tms': 'Aschgabat',
+    'tn52': 'Monastir',
+    'tr02': 'Adëjamani',
+    'tr07': 'Antalya',
+    'tr08': 'Artvin',
+    'tr09': 'Ajdëni',
+    'tr10': 'Ballëkesiri',
+    'tr11': 'Bilecik',
+    'tr14': 'Bolu',
+    'tr15': 'Burdur',
+    'tr16': 'Brusa',
+    'tr21': 'Dijarbakëri',
+    'tr22': 'Edirne',
+    'tr23': 'Provinca Ellazë',
+    'tr25': 'Erzurum',
+    'tr28': 'Giresun',
+    'tr35': 'Smirnë',
+    'tr39': 'Kërklareli',
+    'tr41': 'Koxhaeli',
+    'tr42': 'Konya',
+    'tr43': 'Qytahia',
+    'tr48': 'Mugla',
+    'tr59': 'Tekirdagu',
+    'tr61': 'Trabzon',
+    'tr63': 'Shanllëurfa',
+    'tr68': 'Aksaray',
+    'tr72': 'Batman',
+    'tr73': 'Shërnak',
+    'tr75': 'Ardahan',
+    'tr77': 'Jallova',
+    'tr81': 'Dyzxhe',
+    'ttpos': 'Port-of-Spain',
+    'tvfun': 'Funafuti',
+    'twtpe': 'Taipei',
+    'ua09': 'Rajoni i Luhanskut',
+    'ua14': 'Rajoni i Donetskut',
+    'ua23': 'Rajoni i Zaporizhias',
+    'ua30': 'Kievi',
+    'ua32': 'Rajoni i Kievit',
+    'ua40': 'Sevastopoli',
+    'ua43': 'Republika Autonome e Krimesë',
+    'ua51': 'Odesa Oblast',
+    'ua65': 'Rajoni i Hersonit',
+    'um71': 'Miduej',
+    'usak': 'Alaska',
+    'usal': 'Alabama',
+    'usar': 'Arkansas',
+    'usaz': 'Arizona',
+    'usca': 'Kaliforni',
+    'usco': 'Colorado',
+    'usct': 'Connecticut',
+    'usde': 'Delaware',
+    'usfl': 'Florida',
+    'usga': 'Georgia',
+    'ushi': 'Hawaii',
+    'usia': 'Iowa',
+    'usid': 'Idaho',
+    'usil': 'Illinois',
+    'usin': 'Indiana',
+    'usks': 'Kansas',
+    'usky': 'Kentucky',
+    'usla': 'Louisiana',
+    'usma': 'Massachusetts',
+    'usmd': 'Maryland',
+    'usme': 'Maine',
+    'usmi': 'Michigan',
+    'usmn': 'Minnesota',
+    'usmo': 'Missouri',
+    'usms': 'Mississippi',
+    'usmt': 'Montana',
+    'usnc': 'North Carolina',
+    'usnd': 'North Dakota',
+    'usne': 'Nebraska',
+    'usnh': 'New Hampshire',
+    'usnj': 'New Jersey',
+    'usnm': 'New Mexico',
+    'usnv': 'Nevada',
+    'usny': 'New York',
+    'usoh': 'Ohio',
+    'usok': 'Oklahoma',
+    'usor': 'Oregon',
+    'uspa': 'Pennsylvania',
+    'usri': 'Rhode Island',
+    'ussc': 'South Carolina',
+    'ussd': 'South Dakota',
+    'ustn': 'Tennessee',
+    'ustx': 'Texas',
+    'usut': 'Utah',
+    'usva': 'Virginia',
+    'usvt': 'Vermont',
+    'uswa': 'Washington',
+    'uswi': 'Wisconsin',
+    'uswv': 'West Virginia',
+    'uswy': 'Wyoming',
+    'uymo': 'Montevideo',
+    'uztk': 'Tashkenti',
+    'vea': 'Distrikti i Kryeqytetit',
+    'vn24': 'Provinca Quang Binh',
+    'vndn': 'Da Nang',
+    'vnhn': 'Hanoi',
+    'vnsg': 'Ho-Chi-Minh-Qytet',
+    'yesa': 'Sana',
+  };
+}
+
+class CurrenciesSqMK extends Currencies {
+  const CurrenciesSqMK._(super.cld);
+
+  static const _aed = Currency(
+      _cld, 'AED', 'Dirhami i Emirateve të Bashkuara Arabe',
+      one: 'dirham i Emirateve të Bashkuara Arabe',
+      other: 'dirhamë të Emirateve të Bashkuara Arabe');
+  static const _afn = Currency(_cld, 'AFN', 'Afgani afgan',
+      one: 'afgan afgan', other: 'afganë afganë', symbolNarrow: 'AFN');
+  static const _all = Currency(_cld, 'ALL', 'Leku shqiptar',
+      one: 'lek shqiptar', other: 'lekë shqiptar', symbol: 'Lekë');
+  static const _amd = Currency(_cld, 'AMD', 'Dramia armene',
+      one: 'drami armene', other: 'drami armene', symbolNarrow: 'AMD');
+  static const _ang = Currency(_cld, 'ANG', 'Gilderi antilian holandez',
+      one: 'gilder antilian holandez', other: 'gilderë antilianë holandezë');
+  static const _aoa = Currency(_cld, 'AOA', 'Kuanza e Angolës',
+      one: 'kuanzë angole', other: 'kuanza angole', symbolNarrow: 'AOA');
+  static const _ars = Currency(_cld, 'ARS', 'Pesoja argjentinase',
+      one: 'peso argjentinase',
+      other: 'peso argjentinase',
+      symbolNarrow: 'ARS');
+  static const _aud = Currency(_cld, 'AUD', 'Dollari australian',
+      one: 'dollar australian',
+      other: 'dollarë australianë',
+      symbol: r'A$',
+      symbolNarrow: 'AUD');
+  static const _awg = Currency(_cld, 'AWG', 'Florini aruban',
+      one: 'florin aruban', other: 'florinë arubanë');
+  static const _azn = Currency(_cld, 'AZN', 'Manata azerbajxhanase',
+      one: 'manatë azerbajxhanase',
+      other: 'manata azerbajxhanase',
+      symbolNarrow: 'AZN');
+  static const _bam = Currency(
+      _cld, 'BAM', 'Marka e Bosnjë-Hercegovinës [e shkëmbyeshme]',
+      one: 'markë e Bosnjë-Hercegovinës [e shkëmbyeshme]',
+      other: 'marka të Bosnjë-Hercegovinës [të shkëmbyeshme]',
+      symbolNarrow: 'BAM');
+  static const _bbd = Currency(_cld, 'BBD', 'Dollari barbadian',
+      one: 'dollar barbadian',
+      other: 'dollarë barbadianë',
+      symbolNarrow: 'BBD');
+  static const _bdt = Currency(_cld, 'BDT', 'Taka e Bangladeshit',
+      one: 'takë bangladeshi', other: 'taka bangladeshi', symbolNarrow: 'BDT');
+  static const _bgn = Currency(_cld, 'BGN', 'Leva bullgare',
+      one: 'levë bullgare', other: 'leva bullgare');
+  static const _bhd = Currency(_cld, 'BHD', 'Dinari i Bahreinit',
+      one: 'dinar bahreini', other: 'dinarë bahreini');
+  static const _bif = Currency(_cld, 'BIF', 'Franga burundiane',
+      one: 'frangë burundiane', other: 'franga burundiane');
+  static const _bmd = Currency(_cld, 'BMD', 'Dollari i Bermudeve',
+      one: 'dollar bermude', other: 'dollarë bermude', symbolNarrow: 'BMD');
+  static const _bnd = Currency(_cld, 'BND', 'Dollari i Bruneit',
+      one: 'dollar brunei', other: 'dollarë brunei', symbolNarrow: 'BND');
+  static const _bob = Currency(_cld, 'BOB', 'Boliviani i Bolivisë',
+      one: 'bolivian i Bolivisë',
+      other: 'bolivianë të Bolivisë',
+      symbolNarrow: 'BOB');
+  static const _brl = Currency(_cld, 'BRL', 'Reali brazilian',
+      one: 'real brazilian',
+      other: 'realë brazilianë',
+      symbol: 'BRL',
+      symbolNarrow: 'BRL');
+  static const _bsd = Currency(_cld, 'BSD', 'Dollari i Bahamasit',
+      one: 'dollar bahamez', other: 'dollarë bahamezë', symbolNarrow: 'BSD');
+  static const _btn = Currency(_cld, 'BTN', 'Ngultrumi butanez',
+      one: 'ngultrum butanez', other: 'ngultrumë butanezë');
+  static const _bwp = Currency(_cld, 'BWP', 'Pula botsuane',
+      one: 'pulë botsuane', other: 'pula botsuane', symbolNarrow: 'BWP');
+  static const _byn = Currency(_cld, 'BYN', 'Rubla bjelloruse',
+      one: 'rubël bjelloruse', other: 'rubla bjelloruse');
+  static const _byr = Currency(_cld, 'BYR', 'Rubla bjelloruse (2000–2016)',
+      one: 'rubël bjelloruse (2000–2016)',
+      other: 'rubla bjelloruse (2000–2016)');
+  static const _bzd = Currency(_cld, 'BZD', 'Dollari i Ishujve Belize',
+      one: 'dollar belize', other: 'dollarë belize', symbolNarrow: 'BZD');
+  static const _cad = Currency(_cld, 'CAD', 'Dollari kanadez',
+      one: 'dollar kanadez',
+      other: 'dollarë kanadezë',
+      symbol: r'CA$',
+      symbolNarrow: 'CAD');
+  static const _cdf = Currency(_cld, 'CDF', 'Franga kongole',
+      one: 'frangë kongole', other: 'franga kongole');
+  static const _chf = Currency(_cld, 'CHF', 'Franga zvicerane',
+      one: 'frangë zvicerane', other: 'franga zvicerane');
+  static const _clp = Currency(_cld, 'CLP', 'Pesoja kiliane',
+      one: 'peso kiliane', other: 'peso kiliane', symbolNarrow: 'CLP');
+  static const _cnh = Currency(_cld, 'CNH', 'Juani kinez (për treg të jashtëm)',
+      one: 'juan kinez (për treg të jashtëm)',
+      other: 'juanë kinezë (për treg të jashtëm)');
+  static const _cny = Currency(_cld, 'CNY', 'Juani kinez',
+      one: 'juan kinez',
+      other: 'juanë kinezë',
+      symbol: 'CN¥',
+      symbolNarrow: 'CNY');
+  static const _cop = Currency(_cld, 'COP', 'Pesoja kolumbiane',
+      one: 'peso kolumbiane', other: 'peso kolumbiane', symbolNarrow: 'COP');
+  static const _crc = Currency(_cld, 'CRC', 'Koloni kostarikan',
+      one: 'kolon kostarikan',
+      other: 'kolonë kostarikanë',
+      symbolNarrow: 'CRC');
+  static const _cuc = Currency(_cld, 'CUC', 'Pesoja kubaneze e shkëmbyeshme',
+      one: 'peso kubaneze e shkëmbyeshme',
+      other: 'peso kubaneze e shkëmbyeshme',
+      symbolNarrow: 'CUC');
+  static const _cup = Currency(_cld, 'CUP', 'Pesoja kubaneze',
+      one: 'peso kubaneze', other: 'peso kubaneze', symbolNarrow: 'CUP');
+  static const _cve = Currency(_cld, 'CVE', 'Eskudoja e Kepit të Gjelbër',
+      one: 'eskudo e Kepit të Gjelbër', other: 'eskudo të Kepit të Gjelbër');
+  static const _czk = Currency(_cld, 'CZK', 'Koruna e Çekisë',
+      one: 'korunë çeke', other: 'koruna çeke', symbolNarrow: 'CZK');
+  static const _djf = Currency(_cld, 'DJF', 'Franga xhibutiane',
+      one: 'frangë xhibutiane', other: 'franga xhibutiane');
+  static const _dkk = Currency(_cld, 'DKK', 'Korona daneze',
+      one: 'koronë daneze', other: 'korona daneze', symbolNarrow: 'DKK');
+  static const _dop = Currency(_cld, 'DOP', 'Pesoja dominikane',
+      one: 'peso dominikane', other: 'peso dominikane', symbolNarrow: 'DOP');
+  static const _dzd = Currency(_cld, 'DZD', 'Dinari algjerian',
+      one: 'dinar algjerian', other: 'dinarë algjerianë');
+  static const _egp = Currency(_cld, 'EGP', 'Sterlina egjiptiane',
+      one: 'sterlinë egjiptiane',
+      other: 'sterlina egjiptiane',
+      symbolNarrow: 'EGP');
+  static const _ern = Currency(_cld, 'ERN', 'Nakfa e Eritresë',
+      one: 'nakfë eritreje', other: 'nakfa eritreje');
+  static const _esp = Currency(_cld, 'ESP', 'ESP', symbolNarrow: '₧');
+  static const _etb = Currency(_cld, 'ETB', 'Bira etiopiane',
+      one: 'birë etiopiane', other: 'bira etiopiane');
+  static const _eur = Currency(_cld, 'EUR', 'Euroja',
+      one: 'euro', other: 'euro', symbol: '€', symbolNarrow: '€');
+  static const _fjd = Currency(_cld, 'FJD', 'Dollari i Fixhit',
+      one: 'dollar fixhi', other: 'dollarë fixhi', symbolNarrow: 'FJD');
+  static const _fkp = Currency(_cld, 'FKP', 'Stërlina e Ishujve Falkland',
+      one: 'stërlinë e Ishujve Falkland',
+      other: 'stërlina të Ishujve Falkland',
+      symbolNarrow: 'FKP');
+  static const _gbp = Currency(_cld, 'GBP', 'Sterlina britanike',
+      one: 'sterlinë britanike',
+      other: 'sterlina britanike',
+      symbol: '£',
+      symbolNarrow: 'GBP');
+  static const _gel = Currency(_cld, 'GEL', 'Laria gjeorgjiane',
+      one: 'lari gjeorgjian', other: 'lari gjeorgjiane', symbolNarrow: 'GEL');
+  static const _ghs = Currency(_cld, 'GHS', 'Sejda ganeze',
+      one: 'sejdë ganeze', other: 'sejda ganeze', symbolNarrow: 'GH₵');
+  static const _gip = Currency(_cld, 'GIP', 'Sterlina e Gjibraltarit',
+      one: 'sterlinë gjibraltari',
+      other: 'sterlina gjibraltari',
+      symbolNarrow: 'GIP');
+  static const _gmd = Currency(_cld, 'GMD', 'Dalasi gambian',
+      one: 'dalas gambian', other: 'dalasë gambianë');
+  static const _gnf = Currency(_cld, 'GNF', 'Franga guinease',
+      one: 'frangë guineje', other: 'franga guineje', symbolNarrow: 'GNF');
+  static const _gtq = Currency(_cld, 'GTQ', 'Kuecali i Guatemalës',
+      one: 'kuecal guatemalas',
+      other: 'kuecalë guatemalas',
+      symbolNarrow: 'GTQ');
+  static const _gyd = Currency(_cld, 'GYD', 'Dollari guajanez',
+      one: 'dollar guajanez', other: 'dollarë guajanezë', symbolNarrow: 'GYD');
+  static const _hkd = Currency(_cld, 'HKD', 'Dollari i Hong-Kongut',
+      one: 'dollar hong-kongu',
+      other: 'dollarë hong-kongu',
+      symbol: r'HK$',
+      symbolNarrow: 'HKS');
+  static const _hnl = Currency(_cld, 'HNL', 'Lempira hondurase',
+      one: 'lempirë hondurase',
+      other: 'lempira hondurase',
+      symbolNarrow: 'HNL');
+  static const _hrk = Currency(_cld, 'HRK', 'Kuna kroate',
+      one: 'kunë kroate', other: 'kuna kroate', symbolNarrow: 'HRK');
+  static const _htg = Currency(_cld, 'HTG', 'Gurdi haitian',
+      one: 'gurd haitian', other: 'gurdë haitianë');
+  static const _huf = Currency(_cld, 'HUF', 'Forinta hungareze',
+      one: 'forintë hungareze',
+      other: 'forinta hungareze',
+      symbolNarrow: 'HUF');
+  static const _idr = Currency(_cld, 'IDR', 'Rupia indoneziane',
+      one: 'rupi indoneziane', other: 'rupi indoneziane', symbolNarrow: 'IDR');
+  static const _ils = Currency(_cld, 'ILS', 'Shekeli izrealit',
+      one: 'shekel izrealit',
+      other: 'shekelë izrealit',
+      symbol: '₪',
+      symbolNarrow: 'ILS');
+  static const _inr = Currency(_cld, 'INR', 'Rupia indiane',
+      one: 'rupi indiane',
+      other: 'rupi indiane',
+      symbol: '₹',
+      symbolNarrow: 'INR');
+  static const _iqd = Currency(_cld, 'IQD', 'Dinari irakian',
+      one: 'dinar irakian', other: 'dinarë irakianë');
+  static const _irr = Currency(_cld, 'IRR', 'Riali iranian',
+      one: 'rial iranian', other: 'rialë iranianë');
+  static const _isk = Currency(_cld, 'ISK', 'Korona islandeze',
+      one: 'koronë islandeze', other: 'korona islandeze', symbolNarrow: 'ISK');
+  static const _jmd = Currency(_cld, 'JMD', 'Dollari xhamajkan',
+      one: 'dollar xhamajkan',
+      other: 'dollarë xhamajkanë',
+      symbolNarrow: 'JMD');
+  static const _jod = Currency(_cld, 'JOD', 'Dinari jordanez',
+      one: 'dinar jordanez', other: 'dinarë jordanezë');
+  static const _jpy = Currency(_cld, 'JPY', 'Jeni japonez',
+      one: 'jen japonez',
+      other: 'jenë japonezë',
+      symbol: 'JP¥',
+      symbolNarrow: 'JPY');
+  static const _kes = Currency(_cld, 'KES', 'Shilinga keniane',
+      one: 'shilingë keniane', other: 'shilinga keniane');
+  static const _kgs = Currency(_cld, 'KGS', 'Soma kirgize',
+      one: 'somë kirgize', other: 'soma kirgize', symbolNarrow: '⃀');
+  static const _khr = Currency(_cld, 'KHR', 'Riali kamboxhian',
+      one: 'rial kamboxhian', other: 'rialë kamboxhianë', symbolNarrow: 'KHR');
+  static const _kmf = Currency(_cld, 'KMF', 'Franga komore',
+      one: 'frangë komore', other: 'franga komore', symbolNarrow: 'KMF');
+  static const _kpw = Currency(_cld, 'KPW', 'Uoni koreano-verior',
+      one: 'uon koreano-verior',
+      other: 'uonë koreano-veriorë',
+      symbolNarrow: 'KPW');
+  static const _krw = Currency(_cld, 'KRW', 'Uoni koreano-jugor',
+      one: 'uon koreano-jugor',
+      other: 'uonë koreano-jugorë',
+      symbol: '₩',
+      symbolNarrow: 'KRW');
+  static const _kwd = Currency(_cld, 'KWD', 'Dinari kuvajtian',
+      one: 'dinar kuvajtian', other: 'dinarë kuvajtianë');
+  static const _kyd = Currency(_cld, 'KYD', 'Dollari i Ishujve Kajman',
+      one: 'dollar i Ishujve Kajman',
+      other: 'dollarë të Ishujve Kajman',
+      symbolNarrow: 'KYD');
+  static const _kzt = Currency(_cld, 'KZT', 'Tenga kazake',
+      one: 'tengë kazake', other: 'tenga kazake', symbolNarrow: 'KZT');
+  static const _lak = Currency(_cld, 'LAK', 'Kipa e Laosit',
+      one: 'kipë laosi', other: 'kipa laosi', symbolNarrow: 'LAK');
+  static const _lbp = Currency(_cld, 'LBP', 'Sterlina libaneze',
+      one: 'sterlinë libaneze',
+      other: 'sterlina libaneze',
+      symbolNarrow: 'LBP');
+  static const _lkr = Currency(_cld, 'LKR', 'Rupia e Sri-Lankës',
+      one: 'rupi sri-lanke', other: 'rupi sri-lanke', symbolNarrow: 'LKR');
+  static const _lrd = Currency(_cld, 'LRD', 'Dollari liberian',
+      one: 'dollar liberian', other: 'dollarë liberianë', symbolNarrow: 'LRD');
+  static const _lsl = Currency(_cld, 'LSL', 'Lota lesotiane',
+      one: 'lotë lesotiane', other: 'lota lesotiane');
+  static const _ltl = Currency(_cld, 'LTL', 'Lita lituaneze',
+      one: 'litë lituaneze', other: 'lita lituaneze', symbolNarrow: 'Lt');
+  static const _lvl = Currency(_cld, 'LVL', 'Lata letoneze',
+      one: 'latë letoneze', other: 'lata letoneze', symbolNarrow: 'Ls');
+  static const _lyd = Currency(_cld, 'LYD', 'Dinari libian',
+      one: 'dinar libian', other: 'dinarë libianë');
+  static const _mad = Currency(_cld, 'MAD', 'Dirhami maroken',
+      one: 'dirham maroken', other: 'dirhamë marokenë');
+  static const _mdl = Currency(_cld, 'MDL', 'Leuja moldave',
+      one: 'leu moldave', other: 'leu moldave');
+  static const _mga = Currency(_cld, 'MGA', 'Arieri malagez',
+      one: 'arier malagez', other: 'arierë malagezë', symbolNarrow: 'MGA');
+  static const _mkd = Currency(_cld, 'MKD', 'Denari maqedonas',
+      one: 'denar maqedonas', other: 'denarë maqedonas', symbol: 'den');
+  static const _mmk = Currency(_cld, 'MMK', 'Kiata e Mianmarit',
+      one: 'kiatë mianmari', other: 'kiata mianmari', symbolNarrow: 'MMK');
+  static const _mnt = Currency(_cld, 'MNT', 'Tugrika mongole',
+      one: 'tugrikë mongole', other: 'tugrika mongole', symbolNarrow: 'MNT');
+  static const _mop = Currency(_cld, 'MOP', 'Pataka e Makaos',
+      one: 'patakë e Makaos', other: 'pataka të Makaos');
+  static const _mro = Currency(_cld, 'MRO', 'Ugija mauritane (1973–2017)',
+      one: 'ugijë mauritane (1973–2017)', other: 'ugija mauritane (1973–2017)');
+  static const _mru = Currency(_cld, 'MRU', 'Ugija mauritane',
+      one: 'ugijë mauritane', other: 'ugija mauritane');
+  static const _mur = Currency(_cld, 'MUR', 'Rupia mauritiane',
+      one: 'rupi mauritiane', other: 'rupi mauritiane', symbolNarrow: 'MUR');
+  static const _mvr = Currency(_cld, 'MVR', 'Rufiu i Maldivit',
+      one: 'rufi maldivi', other: 'rufi maldivi');
+  static const _mwk = Currency(_cld, 'MWK', 'Kuaça malaviane',
+      one: 'kuaçë malaviane', other: 'kuaça malaviane');
+  static const _mxn = Currency(_cld, 'MXN', 'Pesoja meksikane',
+      one: 'peso meksikane',
+      other: 'peso meksikane',
+      symbol: r'MX$',
+      symbolNarrow: 'MXN');
+  static const _myr = Currency(_cld, 'MYR', 'Ringiti malajzian',
+      one: 'ringit malajzian',
+      other: 'ringitë malajzianë',
+      symbolNarrow: 'MYR');
+  static const _mzn = Currency(_cld, 'MZN', 'Metikali i Mozambikut',
+      one: 'metikal mozambiku', other: 'metikalë mozambiku');
+  static const _nad = Currency(_cld, 'NAD', 'Dollari i Namibisë',
+      one: 'dollar namibie', other: 'dollarë namibie', symbolNarrow: 'NAD');
+  static const _ngn = Currency(_cld, 'NGN', 'Naira nigeriane',
+      one: 'nairë nigeriane', other: 'naira nigeriane', symbolNarrow: 'NGN');
+  static const _nio = Currency(_cld, 'NIO', 'Kordoba nikaraguane',
+      one: 'kordobë nikaraguane',
+      other: 'kordoba nikaraguane',
+      symbolNarrow: 'NIO');
+  static const _nok = Currency(_cld, 'NOK', 'Korona norvegjeze',
+      one: 'koronë norvegjeze',
+      other: 'korona norvegjeze',
+      symbolNarrow: 'NOK');
+  static const _npr = Currency(_cld, 'NPR', 'Rupia nepaleze',
+      one: 'rupi nepaleze', other: 'rupi nepaleze', symbolNarrow: 'NPR');
+  static const _nzd = Currency(_cld, 'NZD', 'Dollari i Zelandës së Re',
+      one: 'dollar i Zelandës së Re',
+      other: 'dollarë të Zelandës së Re',
+      symbol: r'NZ$',
+      symbolNarrow: 'NZD');
+  static const _omr = Currency(_cld, 'OMR', 'Riali i Omanit',
+      one: 'rial omani', other: 'rialë omani');
+  static const _pab = Currency(_cld, 'PAB', 'Balboa panameze',
+      one: 'balboa panameze', other: 'balboa panameze');
+  static const _pen = Currency(_cld, 'PEN', 'Sola peruane',
+      one: 'solë peruane', other: 'sola peruane');
+  static const _pgk = Currency(_cld, 'PGK', 'Kina e Guinesë së Re-Papua',
+      one: 'kinë e Guinesë së Re-Papua', other: 'kina të Guinesë së Re-Papua');
+  static const _php = Currency(_cld, 'PHP', 'Pesoja filipinase',
+      one: 'peso filipinase',
+      other: 'peso filipinase',
+      symbol: 'PHP',
+      symbolNarrow: 'PHP');
+  static const _pkr = Currency(_cld, 'PKR', 'Rupia pakistaneze',
+      one: 'rupi pakistaneze', other: 'rupi pakistaneze', symbolNarrow: 'PKR');
+  static const _pln = Currency(_cld, 'PLN', 'Zllota polake',
+      one: 'zllotë polake', other: 'zllota polake', symbolNarrow: 'PLN');
+  static const _pyg = Currency(_cld, 'PYG', 'Guarani paraguaian',
+      one: 'guaran paraguaian',
+      other: 'guaranë paraguaianë',
+      symbolNarrow: 'PYG');
+  static const _qar = Currency(_cld, 'QAR', 'Riali i Katarit',
+      one: 'rial katari', other: 'rialë katari');
+  static const _ron = Currency(_cld, 'RON', 'Leuja rumune',
+      one: 'leu rumune', other: 'leu rumune', symbolNarrow: 'RON');
+  static const _rsd = Currency(_cld, 'RSD', 'Dinari serb',
+      one: 'dinar serb', other: 'dinarë serbë');
+  static const _rub = Currency(_cld, 'RUB', 'Rubla ruse',
+      one: 'rubël ruse', other: 'rubla ruse', symbolNarrow: 'RUB');
+  static const _rwf = Currency(_cld, 'RWF', 'Franga ruandeze',
+      one: 'frangë ruandeze', other: 'franga ruandeze', symbolNarrow: 'RWF');
+  static const _sar = Currency(_cld, 'SAR', 'Riali saudit',
+      one: 'rial saudit', other: 'rialë sauditë');
+  static const _sbd = Currency(_cld, 'SBD', 'Dollari i Ishujve Solomonë',
+      one: 'dollar i Ishujve Solomonë',
+      other: 'dollarë të Ishujve Solomonë',
+      symbolNarrow: 'SBD');
+  static const _scr = Currency(_cld, 'SCR', 'Rupia e Ishujve Sishelë',
+      one: 'rupi e Ishujve Sishelë', other: 'rupi të Ishujve Sishelë');
+  static const _sdg = Currency(_cld, 'SDG', 'Sterlina sudaneze',
+      one: 'sterlinë sudaneze', other: 'sterlina sudaneze');
+  static const _sek = Currency(_cld, 'SEK', 'Korona suedeze',
+      one: 'koronë suedeze', other: 'korona suedeze', symbolNarrow: 'SEK');
+  static const _sgd = Currency(_cld, 'SGD', 'Dollari i Singaporit',
+      one: 'dollar singapori', other: 'dollarë singapori', symbolNarrow: 'SGD');
+  static const _shp = Currency(
+      _cld, 'SHP', 'Sterlina e Ishullit të Shën-Helenës',
+      one: 'sterlinë e Ishullit të Shën-Helenës',
+      other: 'sterlina e Ishullit të Shën-Helenës',
+      symbolNarrow: 'SHP');
+  static const _sle = Currency(_cld, 'SLE', 'Leoni i Siera-Leones',
+      one: 'leon i Siera-Leones', other: 'leonë të Siera-Leones');
+  static const _sll = Currency(_cld, 'SLL', 'Leoni i Siera-Leones (1964–2022)',
+      one: 'leon i Siera-Leones (1964–2022)',
+      other: 'leonë të Siera-Leones (1964–2022)');
+  static const _sos = Currency(_cld, 'SOS', 'Shilinga somaleze',
+      one: 'shilingë somaleze', other: 'shilinga somaleze');
+  static const _srd = Currency(_cld, 'SRD', 'Dollari surinamez',
+      one: 'dollar surinamez',
+      other: 'dollarë surinamezë',
+      symbolNarrow: 'SRD');
+  static const _ssp = Currency(_cld, 'SSP', 'Sterlina sudanezo-jugore',
+      one: 'sterlinë sudanezo-jugore',
+      other: 'sterlina sudanezo-jugore',
+      symbolNarrow: 'SSP');
+  static const _std = Currency(
+      _cld, 'STD', 'Dobra e Sao-Tomes dhe Prinsipes (1977–2017)',
+      one: 'dobër e Sao-Tomes dhe Prinsipes (1977–2017)',
+      other: 'dobra të Sao-Tomes dhe Prinsipes (1977–2017)');
+  static const _stn = Currency(_cld, 'STN', 'Dobra e Sao-Tomes dhe Prinsipes',
+      one: 'dobër e Sao-Tomes dhe Prinsipes',
+      other: 'dobra të Sao-Tomes dhe Prinsipes',
+      symbolNarrow: 'STN');
+  static const _syp = Currency(_cld, 'SYP', 'Sterlina siriane',
+      one: 'sterlinë siriane', other: 'sterlina siriane', symbolNarrow: 'SYP');
+  static const _szl = Currency(_cld, 'SZL', 'Lilangeni i Suazilandës',
+      one: 'lilangen suazilande', other: 'lilangenë suazilande');
+  static const _thb = Currency(_cld, 'THB', 'Bata tajlandeze',
+      one: 'batë tajlandeze',
+      other: 'bata tajlandeze',
+      symbol: '฿',
+      symbolNarrow: 'THB');
+  static const _tjs = Currency(_cld, 'TJS', 'Somona taxhike',
+      one: 'somonë taxhike', other: 'somona taxhike');
+  static const _tmt = Currency(_cld, 'TMT', 'Manata turkmene',
+      one: 'manatë turkmene', other: 'manata turkmene');
+  static const _tnd = Currency(_cld, 'TND', 'Dinari tunizian',
+      one: 'dinar tunizian', other: 'dinarë tunizianë');
+  static const _top = Currency(_cld, 'TOP', 'Panga tongane',
+      one: 'pangë tongane', other: 'panga tongane', symbolNarrow: 'TOP');
+  static const _$try = Currency(_cld, 'TRY', 'Lira turke',
+      one: 'lirë turke',
+      other: 'lira turke',
+      symbolNarrow: 'TRY',
+      symbolVariant: 'TRY');
+  static const _ttd = Currency(_cld, 'TTD', 'Dollari i Trinidadit dhe Tobagos',
+      one: 'dollar i Trinidadit dhe Tobagos',
+      other: 'dollarë të Trinidadit dhe Tobagos',
+      symbolNarrow: 'TTD');
+  static const _twd = Currency(_cld, 'TWD', 'Dollari tajvanez',
+      one: 'dollar tajvanez',
+      other: 'dollarë tajvanezë',
+      symbol: r'NT$',
+      symbolNarrow: 'TWD');
+  static const _tzs = Currency(_cld, 'TZS', 'Shilinga e Tanzanisë',
+      one: 'shilingë tanzanie', other: 'shilinga tanzanie');
+  static const _uah = Currency(_cld, 'UAH', 'Rivnia ukrainase',
+      one: 'rivni ukrainase', other: 'rivni ukrainase', symbolNarrow: 'UAH');
+  static const _ugx = Currency(_cld, 'UGX', 'Shilinga ugandeze',
+      one: 'shilingë ugandeze', other: 'shilinga ugandeze');
+  static const _usd = Currency(_cld, 'USD', 'Dollari amerikan',
+      one: 'dollar amerikan',
+      other: 'dollarë amerikanë',
+      symbol: r'US$',
+      symbolNarrow: 'USD');
+  static const _uyu = Currency(_cld, 'UYU', 'Pesoja uruguaiane',
+      one: 'peso uruguaiane', other: 'peso uruguaiane', symbolNarrow: 'UYU');
+  static const _uzs = Currency(_cld, 'UZS', 'Soma uzbeke',
+      one: 'somë uzbeke', other: 'soma uzbeke');
+  static const _vef = Currency(_cld, 'VEF', 'Bolivari venezuelian (2008–2018)',
+      one: 'bolivar venezuelian (2008–2018)',
+      other: 'bolivarë venezuelian (2008–2018)',
+      symbolNarrow: 'Bs');
+  static const _ves = Currency(_cld, 'VES', 'Bolivari venezuelas',
+      one: 'bolivar venezuelas', other: 'bolivarë venezuelas');
+  static const _vnd = Currency(_cld, 'VND', 'Donga vietnameze',
+      one: 'dongë vietnameze',
+      other: 'donga vietnameze',
+      symbol: '₫',
+      symbolNarrow: 'VND');
+  static const _vuv = Currency(_cld, 'VUV', 'Vatuja e Vanuatusë',
+      one: 'vatu vanuatuje', other: 'vatu vanuatuje');
+  static const _wst = Currency(_cld, 'WST', 'Tala samoane',
+      one: 'talë samoane', other: 'tala samoane');
+  static const _xaf = Currency(_cld, 'XAF', 'Franga kamerunase',
+      one: 'frangë kamerunase', other: 'franga kamerunase', symbol: 'FCFA');
+  static const _xcd = Currency(_cld, 'XCD', 'Dollari i Karaibeve Lindore',
+      one: 'dollar i Karaibeve Lindore',
+      other: 'dollarë të Karaibeve Lindore',
+      symbol: r'EC$',
+      symbolNarrow: 'XCD');
+  static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
+  static const _xof = Currency(_cld, 'XOF', 'Franga e Bregut të Fildishtë',
+      one: 'frangë e Bregut të Fildishtë',
+      other: 'franga të Bregut të Fildishtë',
+      symbol: 'F CFA');
+  static const _xpf = Currency(_cld, 'XPF', 'Franga franceze e Polinezisë',
+      one: 'frangë franceze e Polinezisë',
+      other: 'franga franceze të Polinezisë',
+      symbol: 'CFPF');
+  static const _xxx = Currency(_cld, 'XXX', 'Valutë e panjohur',
+      one: '(njësi e panjohur valutore)',
+      other: '(njësi të panjohura valutore)',
+      symbol: '¤');
+  static const _yer = Currency(_cld, 'YER', 'Riali i Jemenit',
+      one: 'rial jemeni', other: 'rialë jemeni');
+  static const _zar = Currency(_cld, 'ZAR', 'Randi afrikano-jugor',
+      one: 'rand afrikano-jugor',
+      other: 'randë afrikano-jugorë',
+      symbolNarrow: 'ZAR');
+  static const _zmw = Currency(_cld, 'ZMW', 'Kuaça e Zambikut',
+      one: 'kuaçë zambiku', other: 'kuaça zambiku', symbolNarrow: 'ZMW');
 
   @override
-  Territory get northernAfrica => Territory(
-        '015',
-        'Afrika Veriore',
-      );
+  final unknownCurrency = _xxx;
+  @override
+  final adp = _xxx;
+  @override
+  final aed = _aed;
+  @override
+  final afa = _xxx;
+  @override
+  final afn = _afn;
+  @override
+  final alk = _xxx;
+  @override
+  final all = _all;
+  @override
+  final amd = _amd;
+  @override
+  final ang = _ang;
+  @override
+  final aoa = _aoa;
+  @override
+  final aok = _xxx;
+  @override
+  final aon = _xxx;
+  @override
+  final aor = _xxx;
+  @override
+  final ara = _xxx;
+  @override
+  final arl = _xxx;
+  @override
+  final arm = _xxx;
+  @override
+  final arp = _xxx;
+  @override
+  final ars = _ars;
+  @override
+  final ats = _xxx;
+  @override
+  final aud = _aud;
+  @override
+  final awg = _awg;
+  @override
+  final azm = _xxx;
+  @override
+  final azn = _azn;
+  @override
+  final bad = _xxx;
+  @override
+  final bam = _bam;
+  @override
+  final ban = _xxx;
+  @override
+  final bbd = _bbd;
+  @override
+  final bdt = _bdt;
+  @override
+  final bec = _xxx;
+  @override
+  final bef = _xxx;
+  @override
+  final bel = _xxx;
+  @override
+  final bgl = _xxx;
+  @override
+  final bgm = _xxx;
+  @override
+  final bgn = _bgn;
+  @override
+  final bgo = _xxx;
+  @override
+  final bhd = _bhd;
+  @override
+  final bif = _bif;
+  @override
+  final bmd = _bmd;
+  @override
+  final bnd = _bnd;
+  @override
+  final bob = _bob;
+  @override
+  final bol = _xxx;
+  @override
+  final bop = _xxx;
+  @override
+  final bov = _xxx;
+  @override
+  final brb = _xxx;
+  @override
+  final brc = _xxx;
+  @override
+  final bre = _xxx;
+  @override
+  final brl = _brl;
+  @override
+  final brn = _xxx;
+  @override
+  final brr = _xxx;
+  @override
+  final brz = _xxx;
+  @override
+  final bsd = _bsd;
+  @override
+  final btn = _btn;
+  @override
+  final buk = _xxx;
+  @override
+  final bwp = _bwp;
+  @override
+  final byb = _xxx;
+  @override
+  final byn = _byn;
+  @override
+  final byr = _byr;
+  @override
+  final bzd = _bzd;
+  @override
+  final cad = _cad;
+  @override
+  final cdf = _cdf;
+  @override
+  final che = _xxx;
+  @override
+  final chf = _chf;
+  @override
+  final chw = _xxx;
+  @override
+  final cle = _xxx;
+  @override
+  final clf = _xxx;
+  @override
+  final clp = _clp;
+  @override
+  final cnh = _cnh;
+  @override
+  final cnx = _xxx;
+  @override
+  final cny = _cny;
+  @override
+  final cop = _cop;
+  @override
+  final cou = _xxx;
+  @override
+  final crc = _crc;
+  @override
+  final csd = _xxx;
+  @override
+  final csk = _xxx;
+  @override
+  final cuc = _cuc;
+  @override
+  final cup = _cup;
+  @override
+  final cve = _cve;
+  @override
+  final cyp = _xxx;
+  @override
+  final czk = _czk;
+  @override
+  final ddm = _xxx;
+  @override
+  final dem = _xxx;
+  @override
+  final djf = _djf;
+  @override
+  final dkk = _dkk;
+  @override
+  final dop = _dop;
+  @override
+  final dzd = _dzd;
+  @override
+  final ecs = _xxx;
+  @override
+  final ecv = _xxx;
+  @override
+  final eek = _xxx;
+  @override
+  final egp = _egp;
+  @override
+  final ern = _ern;
+  @override
+  final esa = _xxx;
+  @override
+  final esb = _xxx;
+  @override
+  final esp = _esp;
+  @override
+  final etb = _etb;
+  @override
+  final eur = _eur;
+  @override
+  final fim = _xxx;
+  @override
+  final fjd = _fjd;
+  @override
+  final fkp = _fkp;
+  @override
+  final frf = _xxx;
+  @override
+  final gbp = _gbp;
+  @override
+  final gek = _xxx;
+  @override
+  final gel = _gel;
+  @override
+  final ghc = _xxx;
+  @override
+  final ghs = _ghs;
+  @override
+  final gip = _gip;
+  @override
+  final gmd = _gmd;
+  @override
+  final gnf = _gnf;
+  @override
+  final gns = _xxx;
+  @override
+  final gqe = _xxx;
+  @override
+  final grd = _xxx;
+  @override
+  final gtq = _gtq;
+  @override
+  final gwe = _xxx;
+  @override
+  final gwp = _xxx;
+  @override
+  final gyd = _gyd;
+  @override
+  final hkd = _hkd;
+  @override
+  final hnl = _hnl;
+  @override
+  final hrd = _xxx;
+  @override
+  final hrk = _hrk;
+  @override
+  final htg = _htg;
+  @override
+  final huf = _huf;
+  @override
+  final idr = _idr;
+  @override
+  final iep = _xxx;
+  @override
+  final ilp = _xxx;
+  @override
+  final ilr = _xxx;
+  @override
+  final ils = _ils;
+  @override
+  final inr = _inr;
+  @override
+  final iqd = _iqd;
+  @override
+  final irr = _irr;
+  @override
+  final isj = _xxx;
+  @override
+  final isk = _isk;
+  @override
+  final itl = _xxx;
+  @override
+  final jmd = _jmd;
+  @override
+  final jod = _jod;
+  @override
+  final jpy = _jpy;
+  @override
+  final kes = _kes;
+  @override
+  final kgs = _kgs;
+  @override
+  final khr = _khr;
+  @override
+  final kmf = _kmf;
+  @override
+  final kpw = _kpw;
+  @override
+  final krh = _xxx;
+  @override
+  final kro = _xxx;
+  @override
+  final krw = _krw;
+  @override
+  final kwd = _kwd;
+  @override
+  final kyd = _kyd;
+  @override
+  final kzt = _kzt;
+  @override
+  final lak = _lak;
+  @override
+  final lbp = _lbp;
+  @override
+  final lkr = _lkr;
+  @override
+  final lrd = _lrd;
+  @override
+  final lsl = _lsl;
+  @override
+  final ltl = _ltl;
+  @override
+  final ltt = _xxx;
+  @override
+  final luc = _xxx;
+  @override
+  final luf = _xxx;
+  @override
+  final lul = _xxx;
+  @override
+  final lvl = _lvl;
+  @override
+  final lvr = _xxx;
+  @override
+  final lyd = _lyd;
+  @override
+  final mad = _mad;
+  @override
+  final maf = _xxx;
+  @override
+  final mcf = _xxx;
+  @override
+  final mdc = _xxx;
+  @override
+  final mdl = _mdl;
+  @override
+  final mga = _mga;
+  @override
+  final mgf = _xxx;
+  @override
+  final mkd = _mkd;
+  @override
+  final mkn = _xxx;
+  @override
+  final mlf = _xxx;
+  @override
+  final mmk = _mmk;
+  @override
+  final mnt = _mnt;
+  @override
+  final mop = _mop;
+  @override
+  final mro = _mro;
+  @override
+  final mru = _mru;
+  @override
+  final mtl = _xxx;
+  @override
+  final mtp = _xxx;
+  @override
+  final mur = _mur;
+  @override
+  final mvp = _xxx;
+  @override
+  final mvr = _mvr;
+  @override
+  final mwk = _mwk;
+  @override
+  final mxn = _mxn;
+  @override
+  final mxp = _xxx;
+  @override
+  final mxv = _xxx;
+  @override
+  final myr = _myr;
+  @override
+  final mze = _xxx;
+  @override
+  final mzm = _xxx;
+  @override
+  final mzn = _mzn;
+  @override
+  final nad = _nad;
+  @override
+  final ngn = _ngn;
+  @override
+  final nic = _xxx;
+  @override
+  final nio = _nio;
+  @override
+  final nlg = _xxx;
+  @override
+  final nok = _nok;
+  @override
+  final npr = _npr;
+  @override
+  final nzd = _nzd;
+  @override
+  final omr = _omr;
+  @override
+  final pab = _pab;
+  @override
+  final pei = _xxx;
+  @override
+  final pen = _pen;
+  @override
+  final pes = _xxx;
+  @override
+  final pgk = _pgk;
+  @override
+  final php = _php;
+  @override
+  final pkr = _pkr;
+  @override
+  final pln = _pln;
+  @override
+  final plz = _xxx;
+  @override
+  final pte = _xxx;
+  @override
+  final pyg = _pyg;
+  @override
+  final qar = _qar;
+  @override
+  final rhd = _xxx;
+  @override
+  final rol = _xxx;
+  @override
+  final ron = _ron;
+  @override
+  final rsd = _rsd;
+  @override
+  final rub = _rub;
+  @override
+  final rur = _xxx;
+  @override
+  final rwf = _rwf;
+  @override
+  final sar = _sar;
+  @override
+  final sbd = _sbd;
+  @override
+  final scr = _scr;
+  @override
+  final sdd = _xxx;
+  @override
+  final sdg = _sdg;
+  @override
+  final sdp = _xxx;
+  @override
+  final sek = _sek;
+  @override
+  final sgd = _sgd;
+  @override
+  final shp = _shp;
+  @override
+  final sit = _xxx;
+  @override
+  final skk = _xxx;
+  @override
+  final sle = _sle;
+  @override
+  final sll = _sll;
+  @override
+  final sos = _sos;
+  @override
+  final srd = _srd;
+  @override
+  final srg = _xxx;
+  @override
+  final ssp = _ssp;
+  @override
+  final std = _std;
+  @override
+  final stn = _stn;
+  @override
+  final sur = _xxx;
+  @override
+  final svc = _xxx;
+  @override
+  final syp = _syp;
+  @override
+  final szl = _szl;
+  @override
+  final thb = _thb;
+  @override
+  final tjr = _xxx;
+  @override
+  final tjs = _tjs;
+  @override
+  final tmm = _xxx;
+  @override
+  final tmt = _tmt;
+  @override
+  final tnd = _tnd;
+  @override
+  final top = _top;
+  @override
+  final tpe = _xxx;
+  @override
+  final trl = _xxx;
+  @override
+  final $try = _$try;
+  @override
+  final ttd = _ttd;
+  @override
+  final twd = _twd;
+  @override
+  final tzs = _tzs;
+  @override
+  final uah = _uah;
+  @override
+  final uak = _xxx;
+  @override
+  final ugs = _xxx;
+  @override
+  final ugx = _ugx;
+  @override
+  final usd = _usd;
+  @override
+  final usn = _xxx;
+  @override
+  final uss = _xxx;
+  @override
+  final uyi = _xxx;
+  @override
+  final uyp = _xxx;
+  @override
+  final uyu = _uyu;
+  @override
+  final uyw = _xxx;
+  @override
+  final uzs = _uzs;
+  @override
+  final veb = _xxx;
+  @override
+  final ved = _xxx;
+  @override
+  final vef = _vef;
+  @override
+  final ves = _ves;
+  @override
+  final vnd = _vnd;
+  @override
+  final vnn = _xxx;
+  @override
+  final vuv = _vuv;
+  @override
+  final wst = _wst;
+  @override
+  final xaf = _xaf;
+  @override
+  final xag = _xxx;
+  @override
+  final xau = _xxx;
+  @override
+  final xba = _xxx;
+  @override
+  final xbb = _xxx;
+  @override
+  final xbc = _xxx;
+  @override
+  final xbd = _xxx;
+  @override
+  final xcd = _xcd;
+  @override
+  final xcg = _xcg;
+  @override
+  final xdr = _xxx;
+  @override
+  final xeu = _xxx;
+  @override
+  final xfo = _xxx;
+  @override
+  final xfu = _xxx;
+  @override
+  final xof = _xof;
+  @override
+  final xpd = _xxx;
+  @override
+  final xpf = _xpf;
+  @override
+  final xpt = _xxx;
+  @override
+  final xre = _xxx;
+  @override
+  final xsu = _xxx;
+  @override
+  final xts = _xxx;
+  @override
+  final xua = _xxx;
+  @override
+  final xxx = _xxx;
+  @override
+  final ydd = _xxx;
+  @override
+  final yer = _yer;
+  @override
+  final yud = _xxx;
+  @override
+  final yum = _xxx;
+  @override
+  final yun = _xxx;
+  @override
+  final yur = _xxx;
+  @override
+  final zal = _xxx;
+  @override
+  final zar = _zar;
+  @override
+  final zmk = _xxx;
+  @override
+  final zmw = _zmw;
+  @override
+  final zrn = _xxx;
+  @override
+  final zrz = _xxx;
+  @override
+  final zwd = _xxx;
+  @override
+  final zwg = _xxx;
+  @override
+  final zwl = _xxx;
+  @override
+  final zwr = _xxx;
 
   @override
-  Territory get middleAfrica => Territory(
-        '017',
-        'Afrika e Mesme',
-      );
-
-  @override
-  Territory get southernAfrica => Territory(
-        '018',
-        'Afrika Jugore',
-      );
-
-  @override
-  Territory get americas => Territory(
-        '019',
-        'Amerikë',
-      );
-
-  @override
-  Territory get northernAmerica => Territory(
-        '021',
-        'Amerika Veriore',
-      );
-
-  @override
-  Territory get caribbean => Territory(
-        '029',
-        'Karaibe',
-      );
-
-  @override
-  Territory get easternAsia => Territory(
-        '030',
-        'Azia Lindore',
-      );
-
-  @override
-  Territory get southernAsia => Territory(
-        '034',
-        'Azia Jugore',
-      );
-
-  @override
-  Territory get southeastAsia => Territory(
-        '035',
-        'Azia Juglindore',
-      );
-
-  @override
-  Territory get southernEurope => Territory(
-        '039',
-        'Evropa Jugore',
-      );
-
-  @override
-  Territory get australasia => Territory(
-        '053',
-        'Australazia',
-      );
-
-  @override
-  Territory get melanesia => Territory(
-        '054',
-        'Melanezia',
-      );
-
-  @override
-  Territory get micronesianRegion => Territory(
-        '057',
-        'Rajoni Mikronezian',
-      );
-
-  @override
-  Territory get polynesia => Territory(
-        '061',
-        'Polinezia',
-      );
-
-  @override
-  Territory get asia => Territory(
-        '142',
-        'Azi',
-      );
-
-  @override
-  Territory get centralAsia => Territory(
-        '143',
-        'Azia Qendrore',
-      );
-
-  @override
-  Territory get westernAsia => Territory(
-        '145',
-        'Azia Perëndimore',
-      );
-
-  @override
-  Territory get europe => Territory(
-        '150',
-        'Evropë',
-      );
-
-  @override
-  Territory get easternEurope => Territory(
-        '151',
-        'Evropa Lindore',
-      );
-
-  @override
-  Territory get northernEurope => Territory(
-        '154',
-        'Evropa Veriore',
-      );
-
-  @override
-  Territory get westernEurope => Territory(
-        '155',
-        'Evropa Perëndimore',
-      );
-
-  @override
-  Territory get subSaharanAfrica => Territory(
-        '202',
-        'Afrika Subsahariane',
-      );
-
-  @override
-  Territory get latinAmerica => Territory(
-        '419',
-        'Amerika Latine',
-      );
-
-  @override
-  Territory get unknownRegion => Territory(
-        'ZZ',
-        'I panjohur',
-      );
-
-  @override
-  final countries = CanonicalizedMap<String, String, Territory>.from({
-    'AC': Territory(
-      'AC',
-      'Ishulli Asenshion',
-    ),
-    'AD': Territory(
-      'AD',
-      'Andorrë',
-    ),
-    'AE': Territory(
-      'AE',
-      'Emiratet e Bashkuara Arabe',
-    ),
-    'AF': Territory(
-      'AF',
-      'Afganistan',
-    ),
-    'AG': Territory(
-      'AG',
-      'Antigua e Barbuda',
-    ),
-    'AI': Territory(
-      'AI',
-      'Anguilë',
-    ),
-    'AL': Territory(
-      'AL',
-      'Shqipëri',
-    ),
-    'AM': Territory(
-      'AM',
-      'Armeni',
-    ),
-    'AO': Territory(
-      'AO',
-      'Angolë',
-    ),
-    'AQ': Territory(
-      'AQ',
-      'Antarktikë',
-    ),
-    'AR': Territory(
-      'AR',
-      'Argjentinë',
-    ),
-    'AS': Territory(
-      'AS',
-      'Samoa Amerikane',
-    ),
-    'AT': Territory(
-      'AT',
-      'Austri',
-    ),
-    'AU': Territory(
-      'AU',
-      'Australi',
-    ),
-    'AW': Territory(
-      'AW',
-      'Arubë',
-    ),
-    'AX': Territory(
-      'AX',
-      'Ishujt Alandë',
-    ),
-    'AZ': Territory(
-      'AZ',
-      'Azerbajxhan',
-    ),
-    'BA': Territory(
-      'BA',
-      'Bosnjë-Hercegovinë',
-    ),
-    'BB': Territory(
-      'BB',
-      'Barbados',
-    ),
-    'BD': Territory(
-      'BD',
-      'Bangladesh',
-    ),
-    'BE': Territory(
-      'BE',
-      'Belgjikë',
-    ),
-    'BF': Territory(
-      'BF',
-      'Burkina-Faso',
-    ),
-    'BG': Territory(
-      'BG',
-      'Bullgari',
-    ),
-    'BH': Territory(
-      'BH',
-      'Bahrejn',
-    ),
-    'BI': Territory(
-      'BI',
-      'Burundi',
-    ),
-    'BJ': Territory(
-      'BJ',
-      'Benin',
-    ),
-    'BL': Territory(
-      'BL',
-      'Sen-Bartelemi',
-    ),
-    'BM': Territory(
-      'BM',
-      'Bermude',
-    ),
-    'BN': Territory(
-      'BN',
-      'Brunei',
-    ),
-    'BO': Territory(
-      'BO',
-      'Bolivi',
-    ),
-    'BQ': Territory(
-      'BQ',
-      'Karaibet holandeze',
-    ),
-    'BR': Territory(
-      'BR',
-      'Brazil',
-    ),
-    'BS': Territory(
-      'BS',
-      'Bahama',
-    ),
-    'BT': Territory(
-      'BT',
-      'Butan',
-    ),
-    'BV': Territory(
-      'BV',
-      'Ishulli Bove',
-    ),
-    'BW': Territory(
-      'BW',
-      'Botsvanë',
-    ),
-    'BY': Territory(
-      'BY',
-      'Bjellorusi',
-    ),
-    'BZ': Territory(
-      'BZ',
-      'Belizë',
-    ),
-    'CA': Territory(
-      'CA',
-      'Kanada',
-    ),
-    'CC': Territory(
-      'CC',
-      'Ishujt Kokos',
-    ),
-    'CD': Territory(
-      'CD',
-      'Kongo-Kinshasa',
-      variant: 'Kongo (RDK)',
-    ),
-    'CF': Territory(
-      'CF',
-      'Republika e Afrikës Qendrore',
-    ),
-    'CG': Territory(
-      'CG',
-      'Kongo-Brazavilë',
-      variant: 'Kongo (Republika)',
-    ),
-    'CH': Territory(
-      'CH',
-      'Zvicër',
-    ),
-    'CI': Territory(
-      'CI',
-      'Côte d’Ivoire',
-      variant: 'Bregu i Fildishtë',
-    ),
-    'CK': Territory(
-      'CK',
-      'Ishujt Kuk',
-    ),
-    'CL': Territory(
-      'CL',
-      'Kili',
-    ),
-    'CM': Territory(
-      'CM',
-      'Kamerun',
-    ),
-    'CN': Territory(
-      'CN',
-      'Kinë',
-    ),
-    'CO': Territory(
-      'CO',
-      'Kolumbi',
-    ),
-    'CP': Territory(
-      'CP',
-      'Ishulli Klipërton',
-    ),
-    'CQ': Territory(
-      'CQ',
-      'I panjohur (CQ)',
-    ),
-    'CR': Territory(
-      'CR',
-      'Kosta-Rikë',
-    ),
-    'CU': Territory(
-      'CU',
-      'Kubë',
-    ),
-    'CV': Territory(
-      'CV',
-      'Kepi i Gjelbër',
-    ),
-    'CW': Territory(
-      'CW',
-      'Kurasao',
-    ),
-    'CX': Territory(
-      'CX',
-      'Ishulli i Krishtlindjes',
-    ),
-    'CY': Territory(
-      'CY',
-      'Qipro',
-    ),
-    'CZ': Territory(
-      'CZ',
-      'Çeki',
-      variant: 'Republika Çeke',
-    ),
-    'DE': Territory(
-      'DE',
-      'Gjermani',
-    ),
-    'DG': Territory(
-      'DG',
-      'Diego-Garsia',
-    ),
-    'DJ': Territory(
-      'DJ',
-      'Xhibuti',
-    ),
-    'DK': Territory(
-      'DK',
-      'Danimarkë',
-    ),
-    'DM': Territory(
-      'DM',
-      'Dominikë',
-    ),
-    'DO': Territory(
-      'DO',
-      'Republika Dominikane',
-    ),
-    'DZ': Territory(
-      'DZ',
-      'Algjeri',
-    ),
-    'EA': Territory(
-      'EA',
-      'Theuta e Melila',
-    ),
-    'EC': Territory(
-      'EC',
-      'Ekuador',
-    ),
-    'EE': Territory(
-      'EE',
-      'Estoni',
-    ),
-    'EG': Territory(
-      'EG',
-      'Egjipt',
-    ),
-    'EH': Territory(
-      'EH',
-      'Saharaja Perëndimore',
-    ),
-    'ER': Territory(
-      'ER',
-      'Eritre',
-    ),
-    'ES': Territory(
-      'ES',
-      'Spanjë',
-    ),
-    'ET': Territory(
-      'ET',
-      'Etiopi',
-    ),
-    'EU': Territory(
-      'EU',
-      'Bashkimi Evropian',
-    ),
-    'EZ': Territory(
-      'EZ',
-      'Zona euro',
-    ),
-    'FI': Territory(
-      'FI',
-      'Finlandë',
-    ),
-    'FJ': Territory(
-      'FJ',
-      'Fixhi',
-    ),
-    'FK': Territory(
-      'FK',
-      'Ishujt Falkland',
-      variant: 'Ishujt Falkland (Malvine)',
-    ),
-    'FM': Territory(
-      'FM',
-      'Mikronezi',
-    ),
-    'FO': Territory(
-      'FO',
-      'Ishujt Faroe',
-    ),
-    'FR': Territory(
-      'FR',
-      'Francë',
-    ),
-    'GA': Territory(
-      'GA',
-      'Gabon',
-    ),
-    'GB': Territory(
-      'GB',
-      'Mbretëria e Bashkuar',
-      short: 'MB',
-    ),
-    'GD': Territory(
-      'GD',
-      'Granadë',
-    ),
-    'GE': Territory(
-      'GE',
-      'Gjeorgji',
-    ),
-    'GF': Territory(
-      'GF',
-      'Guajana Franceze',
-    ),
-    'GG': Territory(
-      'GG',
-      'Gernsej',
-    ),
-    'GH': Territory(
-      'GH',
-      'Ganë',
-    ),
-    'GI': Territory(
-      'GI',
-      'Gjibraltar',
-    ),
-    'GL': Territory(
-      'GL',
-      'Grënlandë',
-    ),
-    'GM': Territory(
-      'GM',
-      'Gambi',
-    ),
-    'GN': Territory(
-      'GN',
-      'Guine',
-    ),
-    'GP': Territory(
-      'GP',
-      'Guadelupë',
-    ),
-    'GQ': Territory(
-      'GQ',
-      'Guineja Ekuatoriale',
-    ),
-    'GR': Territory(
-      'GR',
-      'Greqi',
-    ),
-    'GS': Territory(
-      'GS',
-      'Xhorxha Jugore dhe Ishujt Senduiçë të Jugut',
-    ),
-    'GT': Territory(
-      'GT',
-      'Guatemalë',
-    ),
-    'GU': Territory(
-      'GU',
-      'Guam',
-    ),
-    'GW': Territory(
-      'GW',
-      'Guine-Bisau',
-    ),
-    'GY': Territory(
-      'GY',
-      'Guajanë',
-    ),
-    'HK': Territory(
-      'HK',
-      'RPA i Hong-Kongut',
-      short: 'Hong-Kong',
-    ),
-    'HM': Territory(
-      'HM',
-      'Ishujt Hërd e Mekdonald',
-    ),
-    'HN': Territory(
-      'HN',
-      'Honduras',
-    ),
-    'HR': Territory(
-      'HR',
-      'Kroaci',
-    ),
-    'HT': Territory(
-      'HT',
-      'Haiti',
-    ),
-    'HU': Territory(
-      'HU',
-      'Hungari',
-    ),
-    'IC': Territory(
-      'IC',
-      'Ishujt Kanarie',
-    ),
-    'ID': Territory(
-      'ID',
-      'Indonezi',
-    ),
-    'IE': Territory(
-      'IE',
-      'Irlandë',
-    ),
-    'IL': Territory(
-      'IL',
-      'Izrael',
-    ),
-    'IM': Territory(
-      'IM',
-      'Ishulli i Manit',
-    ),
-    'IN': Territory(
-      'IN',
-      'Indi',
-    ),
-    'IO': Territory(
-      'IO',
-      'Territori Britanik i Oqeanit Indian',
-    ),
-    'IQ': Territory(
-      'IQ',
-      'Irak',
-    ),
-    'IR': Territory(
-      'IR',
-      'Iran',
-    ),
-    'IS': Territory(
-      'IS',
-      'Islandë',
-    ),
-    'IT': Territory(
-      'IT',
-      'Itali',
-    ),
-    'JE': Territory(
-      'JE',
-      'Xhersej',
-    ),
-    'JM': Territory(
-      'JM',
-      'Xhamajkë',
-    ),
-    'JO': Territory(
-      'JO',
-      'Jordani',
-    ),
-    'JP': Territory(
-      'JP',
-      'Japoni',
-    ),
-    'KE': Territory(
-      'KE',
-      'Kenia',
-    ),
-    'KG': Territory(
-      'KG',
-      'Kirgizi',
-    ),
-    'KH': Territory(
-      'KH',
-      'Kamboxhia',
-    ),
-    'KI': Territory(
-      'KI',
-      'Kiribati',
-    ),
-    'KM': Territory(
-      'KM',
-      'Komore',
-    ),
-    'KN': Territory(
-      'KN',
-      'Shën-Kits dhe Nevis',
-    ),
-    'KP': Territory(
-      'KP',
-      'Kore e Veriut',
-    ),
-    'KR': Territory(
-      'KR',
-      'Kore e Jugut',
-    ),
-    'KW': Territory(
-      'KW',
-      'Kuvajt',
-    ),
-    'KY': Territory(
-      'KY',
-      'Ishujt Kajman',
-    ),
-    'KZ': Territory(
-      'KZ',
-      'Kazakistan',
-    ),
-    'LA': Territory(
-      'LA',
-      'Laos',
-    ),
-    'LB': Territory(
-      'LB',
-      'Liban',
-    ),
-    'LC': Territory(
-      'LC',
-      'Shën-Luçia',
-    ),
-    'LI': Territory(
-      'LI',
-      'Lihtenshtajn',
-    ),
-    'LK': Territory(
-      'LK',
-      'Sri-Lankë',
-    ),
-    'LR': Territory(
-      'LR',
-      'Liberi',
-    ),
-    'LS': Territory(
-      'LS',
-      'Lesoto',
-    ),
-    'LT': Territory(
-      'LT',
-      'Lituani',
-    ),
-    'LU': Territory(
-      'LU',
-      'Luksemburg',
-    ),
-    'LV': Territory(
-      'LV',
-      'Letoni',
-    ),
-    'LY': Territory(
-      'LY',
-      'Libi',
-    ),
-    'MA': Territory(
-      'MA',
-      'Marok',
-    ),
-    'MC': Territory(
-      'MC',
-      'Monako',
-    ),
-    'MD': Territory(
-      'MD',
-      'Moldavi',
-    ),
-    'ME': Territory(
-      'ME',
-      'Mal i Zi',
-    ),
-    'MF': Territory(
-      'MF',
-      'Sen-Marten',
-    ),
-    'MG': Territory(
-      'MG',
-      'Madagaskar',
-    ),
-    'MH': Territory(
-      'MH',
-      'Ishujt Marshall',
-    ),
-    'MK': Territory(
-      'MK',
-      'Maqedonia e Veriut',
-    ),
-    'ML': Territory(
-      'ML',
-      'Mali',
-    ),
-    'MM': Territory(
-      'MM',
-      'Mianmar (Burmë)',
-    ),
-    'MN': Territory(
-      'MN',
-      'Mongoli',
-    ),
-    'MO': Territory(
-      'MO',
-      'RPA i Makaos',
-      short: 'Makao',
-    ),
-    'MP': Territory(
-      'MP',
-      'Ishujt e Marianës Veriore',
-    ),
-    'MQ': Territory(
-      'MQ',
-      'Martinikë',
-    ),
-    'MR': Territory(
-      'MR',
-      'Mauritani',
-    ),
-    'MS': Territory(
-      'MS',
-      'Montserat',
-    ),
-    'MT': Territory(
-      'MT',
-      'Maltë',
-    ),
-    'MU': Territory(
-      'MU',
-      'Mauritius',
-    ),
-    'MV': Territory(
-      'MV',
-      'Maldive',
-    ),
-    'MW': Territory(
-      'MW',
-      'Malavi',
-    ),
-    'MX': Territory(
-      'MX',
-      'Meksikë',
-    ),
-    'MY': Territory(
-      'MY',
-      'Malajzi',
-    ),
-    'MZ': Territory(
-      'MZ',
-      'Mozambik',
-    ),
-    'NA': Territory(
-      'NA',
-      'Namibi',
-    ),
-    'NC': Territory(
-      'NC',
-      'Kaledoni e Re',
-    ),
-    'NE': Territory(
-      'NE',
-      'Niger',
-    ),
-    'NF': Territory(
-      'NF',
-      'Ishulli Norfolk',
-    ),
-    'NG': Territory(
-      'NG',
-      'Nigeri',
-    ),
-    'NI': Territory(
-      'NI',
-      'Nikaragua',
-    ),
-    'NL': Territory(
-      'NL',
-      'Holandë',
-    ),
-    'NO': Territory(
-      'NO',
-      'Norvegji',
-    ),
-    'NP': Territory(
-      'NP',
-      'Nepal',
-    ),
-    'NR': Territory(
-      'NR',
-      'Nauru',
-    ),
-    'NU': Territory(
-      'NU',
-      'Niue',
-    ),
-    'NZ': Territory(
-      'NZ',
-      'Zelandë e Re',
-      variant: 'Zelanda e Re-Aotearoa',
-    ),
-    'OM': Territory(
-      'OM',
-      'Oman',
-    ),
-    'PA': Territory(
-      'PA',
-      'Panama',
-    ),
-    'PE': Territory(
-      'PE',
-      'Peru',
-    ),
-    'PF': Territory(
-      'PF',
-      'Polinezia Franceze',
-    ),
-    'PG': Territory(
-      'PG',
-      'Guineja e Re-Papua',
-    ),
-    'PH': Territory(
-      'PH',
-      'Filipine',
-    ),
-    'PK': Territory(
-      'PK',
-      'Pakistan',
-    ),
-    'PL': Territory(
-      'PL',
-      'Poloni',
-    ),
-    'PM': Territory(
-      'PM',
-      'Shën-Pier dhe Mikelon',
-    ),
-    'PN': Territory(
-      'PN',
-      'Ishujt Pitkern',
-    ),
-    'PR': Territory(
-      'PR',
-      'Porto-Riko',
-    ),
-    'PS': Territory(
-      'PS',
-      'Territoret Palestineze',
-      short: 'Palestinë',
-    ),
-    'PT': Territory(
-      'PT',
-      'Portugali',
-    ),
-    'PW': Territory(
-      'PW',
-      'Palau',
-    ),
-    'PY': Territory(
-      'PY',
-      'Paraguai',
-    ),
-    'QA': Territory(
-      'QA',
-      'Katar',
-    ),
-    'QO': Territory(
-      'QO',
-      'Oqeania e Largët (Lindja e Largët)',
-    ),
-    'RE': Territory(
-      'RE',
-      'Reunion',
-    ),
-    'RO': Territory(
-      'RO',
-      'Rumani',
-    ),
-    'RS': Territory(
-      'RS',
-      'Serbi',
-    ),
-    'RU': Territory(
-      'RU',
-      'Rusi',
-    ),
-    'RW': Territory(
-      'RW',
-      'Ruandë',
-    ),
-    'SA': Territory(
-      'SA',
-      'Arabi Saudite',
-    ),
-    'SB': Territory(
-      'SB',
-      'Ishujt Solomon',
-    ),
-    'SC': Territory(
-      'SC',
-      'Sejshelle',
-    ),
-    'SD': Territory(
-      'SD',
-      'Sudan',
-    ),
-    'SE': Territory(
-      'SE',
-      'Suedi',
-    ),
-    'SG': Territory(
-      'SG',
-      'Singapor',
-    ),
-    'SH': Territory(
-      'SH',
-      'Shën-Elenë',
-    ),
-    'SI': Territory(
-      'SI',
-      'Slloveni',
-    ),
-    'SJ': Territory(
-      'SJ',
-      'Svalbard e Jan-Majen',
-    ),
-    'SK': Territory(
-      'SK',
-      'Sllovaki',
-    ),
-    'SL': Territory(
-      'SL',
-      'Sierra-Leone',
-    ),
-    'SM': Territory(
-      'SM',
-      'San-Marino',
-    ),
-    'SN': Territory(
-      'SN',
-      'Senegal',
-    ),
-    'SO': Territory(
-      'SO',
-      'Somali',
-    ),
-    'SR': Territory(
-      'SR',
-      'Surinami',
-    ),
-    'SS': Territory(
-      'SS',
-      'Sudani i Jugut',
-    ),
-    'ST': Territory(
-      'ST',
-      'Sao-Tome e Principe',
-    ),
-    'SV': Territory(
-      'SV',
-      'Salvador',
-    ),
-    'SX': Territory(
-      'SX',
-      'Sint-Marten',
-    ),
-    'SY': Territory(
-      'SY',
-      'Siri',
-    ),
-    'SZ': Territory(
-      'SZ',
-      'Esvatini',
-      variant: 'Suazilend',
-    ),
-    'TA': Territory(
-      'TA',
-      'Tristan-da-Kuna',
-    ),
-    'TC': Territory(
-      'TC',
-      'Ishujt Turks dhe Kaikos',
-    ),
-    'TD': Territory(
-      'TD',
-      'Çad',
-    ),
-    'TF': Territory(
-      'TF',
-      'Territoret Jugore Franceze',
-    ),
-    'TG': Territory(
-      'TG',
-      'Togo',
-    ),
-    'TH': Territory(
-      'TH',
-      'Tajlandë',
-    ),
-    'TJ': Territory(
-      'TJ',
-      'Taxhikistan',
-    ),
-    'TK': Territory(
-      'TK',
-      'Tokelau',
-    ),
-    'TL': Territory(
-      'TL',
-      'Timor-Leste',
-      variant: 'Timori Lindor',
-    ),
-    'TM': Territory(
-      'TM',
-      'Turkmenistan',
-    ),
-    'TN': Territory(
-      'TN',
-      'Tunizi',
-    ),
-    'TO': Territory(
-      'TO',
-      'Tonga',
-    ),
-    'TR': Territory(
-      'TR',
-      'Turqi',
-      variant: 'Turqi',
-    ),
-    'TT': Territory(
-      'TT',
-      'Trinidad e Tobago',
-    ),
-    'TV': Territory(
-      'TV',
-      'Tuvalu',
-    ),
-    'TW': Territory(
-      'TW',
-      'Tajvan',
-    ),
-    'TZ': Territory(
-      'TZ',
-      'Tanzani',
-    ),
-    'UA': Territory(
-      'UA',
-      'Ukrainë',
-    ),
-    'UG': Territory(
-      'UG',
-      'Ugandë',
-    ),
-    'UM': Territory(
-      'UM',
-      'Ishujt Periferikë të SHBA-së',
-    ),
-    'UN': Territory(
-      'UN',
-      'Organizata e Kombeve të Bashkuara',
-      short: 'OKB',
-    ),
-    'US': Territory(
-      'US',
-      'SHBA',
-      short: 'SHBA',
-    ),
-    'UY': Territory(
-      'UY',
-      'Uruguai',
-    ),
-    'UZ': Territory(
-      'UZ',
-      'Uzbekistan',
-    ),
-    'VA': Territory(
-      'VA',
-      'Vatikan',
-    ),
-    'VC': Territory(
-      'VC',
-      'Shën-Vincent dhe Grenadine',
-    ),
-    'VE': Territory(
-      'VE',
-      'Venezuelë',
-    ),
-    'VG': Territory(
-      'VG',
-      'Ishujt e Virgjër Britanikë',
-    ),
-    'VI': Territory(
-      'VI',
-      'Ishujt e Virgjër të SHBA-së',
-    ),
-    'VN': Territory(
-      'VN',
-      'Vietnam',
-    ),
-    'VU': Territory(
-      'VU',
-      'Vanuatu',
-    ),
-    'WF': Territory(
-      'WF',
-      'Uollis e Futuna',
-    ),
-    'WS': Territory(
-      'WS',
-      'Samoa',
-    ),
-    'XA': Territory(
-      'XA',
-      'Pseudo-thekse',
-    ),
-    'XB': Territory(
-      'XB',
-      'Pseudo-bidi',
-    ),
-    'XK': Territory(
-      'XK',
-      'Kosovë',
-    ),
-    'YE': Territory(
-      'YE',
-      'Jemen',
-    ),
-    'YT': Territory(
-      'YT',
-      'Majotë',
-    ),
-    'ZA': Territory(
-      'ZA',
-      'Afrika e Jugut',
-    ),
-    'ZM': Territory(
-      'ZM',
-      'Zambi',
-    ),
-    'ZW': Territory(
-      'ZW',
-      'Zimbabve',
-    ),
-  }, (key) => key.toLowerCase());
+  final currencies = const {
+    'AED': _aed,
+    'AFN': _afn,
+    'ALL': _all,
+    'AMD': _amd,
+    'ANG': _ang,
+    'AOA': _aoa,
+    'ARS': _ars,
+    'AUD': _aud,
+    'AWG': _awg,
+    'AZN': _azn,
+    'BAM': _bam,
+    'BBD': _bbd,
+    'BDT': _bdt,
+    'BGN': _bgn,
+    'BHD': _bhd,
+    'BIF': _bif,
+    'BMD': _bmd,
+    'BND': _bnd,
+    'BOB': _bob,
+    'BRL': _brl,
+    'BSD': _bsd,
+    'BTN': _btn,
+    'BWP': _bwp,
+    'BYN': _byn,
+    'BYR': _byr,
+    'BZD': _bzd,
+    'CAD': _cad,
+    'CDF': _cdf,
+    'CHF': _chf,
+    'CLP': _clp,
+    'CNH': _cnh,
+    'CNY': _cny,
+    'COP': _cop,
+    'CRC': _crc,
+    'CUC': _cuc,
+    'CUP': _cup,
+    'CVE': _cve,
+    'CZK': _czk,
+    'DJF': _djf,
+    'DKK': _dkk,
+    'DOP': _dop,
+    'DZD': _dzd,
+    'EGP': _egp,
+    'ERN': _ern,
+    'ESP': _esp,
+    'ETB': _etb,
+    'EUR': _eur,
+    'FJD': _fjd,
+    'FKP': _fkp,
+    'GBP': _gbp,
+    'GEL': _gel,
+    'GHS': _ghs,
+    'GIP': _gip,
+    'GMD': _gmd,
+    'GNF': _gnf,
+    'GTQ': _gtq,
+    'GYD': _gyd,
+    'HKD': _hkd,
+    'HNL': _hnl,
+    'HRK': _hrk,
+    'HTG': _htg,
+    'HUF': _huf,
+    'IDR': _idr,
+    'ILS': _ils,
+    'INR': _inr,
+    'IQD': _iqd,
+    'IRR': _irr,
+    'ISK': _isk,
+    'JMD': _jmd,
+    'JOD': _jod,
+    'JPY': _jpy,
+    'KES': _kes,
+    'KGS': _kgs,
+    'KHR': _khr,
+    'KMF': _kmf,
+    'KPW': _kpw,
+    'KRW': _krw,
+    'KWD': _kwd,
+    'KYD': _kyd,
+    'KZT': _kzt,
+    'LAK': _lak,
+    'LBP': _lbp,
+    'LKR': _lkr,
+    'LRD': _lrd,
+    'LSL': _lsl,
+    'LTL': _ltl,
+    'LVL': _lvl,
+    'LYD': _lyd,
+    'MAD': _mad,
+    'MDL': _mdl,
+    'MGA': _mga,
+    'MKD': _mkd,
+    'MMK': _mmk,
+    'MNT': _mnt,
+    'MOP': _mop,
+    'MRO': _mro,
+    'MRU': _mru,
+    'MUR': _mur,
+    'MVR': _mvr,
+    'MWK': _mwk,
+    'MXN': _mxn,
+    'MYR': _myr,
+    'MZN': _mzn,
+    'NAD': _nad,
+    'NGN': _ngn,
+    'NIO': _nio,
+    'NOK': _nok,
+    'NPR': _npr,
+    'NZD': _nzd,
+    'OMR': _omr,
+    'PAB': _pab,
+    'PEN': _pen,
+    'PGK': _pgk,
+    'PHP': _php,
+    'PKR': _pkr,
+    'PLN': _pln,
+    'PYG': _pyg,
+    'QAR': _qar,
+    'RON': _ron,
+    'RSD': _rsd,
+    'RUB': _rub,
+    'RWF': _rwf,
+    'SAR': _sar,
+    'SBD': _sbd,
+    'SCR': _scr,
+    'SDG': _sdg,
+    'SEK': _sek,
+    'SGD': _sgd,
+    'SHP': _shp,
+    'SLE': _sle,
+    'SLL': _sll,
+    'SOS': _sos,
+    'SRD': _srd,
+    'SSP': _ssp,
+    'STD': _std,
+    'STN': _stn,
+    'SYP': _syp,
+    'SZL': _szl,
+    'THB': _thb,
+    'TJS': _tjs,
+    'TMT': _tmt,
+    'TND': _tnd,
+    'TOP': _top,
+    'TRY': _$try,
+    'TTD': _ttd,
+    'TWD': _twd,
+    'TZS': _tzs,
+    'UAH': _uah,
+    'UGX': _ugx,
+    'USD': _usd,
+    'UYU': _uyu,
+    'UZS': _uzs,
+    'VEF': _vef,
+    'VES': _ves,
+    'VND': _vnd,
+    'VUV': _vuv,
+    'WST': _wst,
+    'XAF': _xaf,
+    'XCD': _xcd,
+    'XCG': _xcg,
+    'XOF': _xof,
+    'XPF': _xpf,
+    'XXX': _xxx,
+    'YER': _yer,
+    'ZAR': _zar,
+    'ZMW': _zmw,
+  };
 }
 
 class TimeZonesSqMK extends TimeZones {
-  TimeZonesSqMK._(Territories territories)
-      : super(_locale, territories,
-            hourFormat: '+HH:mm;-HH:mm',
+  const TimeZonesSqMK._(super.cld)
+      : super(
             gmtFormat: 'GMT{0}',
             gmtZeroFormat: 'GMT',
             regionFormat: 'Ora: {0}',
             regionFormatDaylight: 'Ora verore: {0}',
             regionFormatStandard: 'Ora standarde: {0}',
-            fallbackFormat: '{1} ({0})');
+            fallbackFormat: '{1} ({0})',
+            positiveH: '+HH',
+            positiveHM: '+HH:mm',
+            positiveHMS: '+HH:mm:ss',
+            negativeH: '-HH',
+            negativeHM: '-HH:mm',
+            negativeHMS: '-HH:mm:ss');
 
   @override
-  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
-    'America/Anchorage': TimeZoneNames(
-      exemplarCity: 'Ankorejxh',
-    ),
-    'America/Anguilla': TimeZoneNames(
-      exemplarCity: 'Anguilë',
-    ),
-    'America/Araguaina': TimeZoneNames(
-      exemplarCity: 'Araguajana',
-    ),
-    'America/Argentina/Rio_Gallegos': TimeZoneNames(
-      exemplarCity: 'Rio-Galegos',
-    ),
-    'America/Argentina/San_Juan': TimeZoneNames(
-      exemplarCity: 'San-Huan',
-    ),
-    'America/Argentina/Ushuaia': TimeZoneNames(
-      exemplarCity: 'Ushuaja',
-    ),
-    'America/Argentina/La_Rioja': TimeZoneNames(
-      exemplarCity: 'La Rioha',
-    ),
-    'America/Argentina/San_Luis': TimeZoneNames(
-      exemplarCity: 'Shën-Luis',
-    ),
-    'America/Argentina/Salta': TimeZoneNames(
-      exemplarCity: 'Saltë',
-    ),
-    'America/Argentina/Tucuman': TimeZoneNames(
-      exemplarCity: 'Tukuman',
-    ),
-    'America/Aruba': TimeZoneNames(
-      exemplarCity: 'Arubë',
-    ),
-    'America/Asuncion': TimeZoneNames(
-      exemplarCity: 'Asunsion',
-    ),
-    'America/Bahia_Banderas': TimeZoneNames(
-      exemplarCity: 'Bahia-Banderas',
-    ),
-    'America/Belize': TimeZoneNames(
-      exemplarCity: 'Belizë',
-    ),
-    'America/Blanc-Sablon': TimeZoneNames(
-      exemplarCity: 'Blank-Sablon',
-    ),
-    'America/Boa_Vista': TimeZoneNames(
-      exemplarCity: 'Boa-Vista',
-    ),
-    'America/Bogota': TimeZoneNames(
-      exemplarCity: 'Bogotë',
-    ),
-    'America/Boise': TimeZoneNames(
-      exemplarCity: 'Boizë',
-    ),
-    'America/Buenos_Aires': TimeZoneNames(
-      exemplarCity: 'Buenos-Ajres',
-    ),
-    'America/Cambridge_Bay': TimeZoneNames(
-      exemplarCity: 'Gjiri i Kembrixhit',
-    ),
-    'America/Campo_Grande': TimeZoneNames(
-      exemplarCity: 'Kampo-Grande',
-    ),
-    'America/Cancun': TimeZoneNames(
-      exemplarCity: 'Kankun',
-    ),
-    'America/Caracas': TimeZoneNames(
-      exemplarCity: 'Karakas',
-    ),
-    'America/Catamarca': TimeZoneNames(
-      exemplarCity: 'Katamarka',
-    ),
-    'America/Cayenne': TimeZoneNames(
-      exemplarCity: 'Kajenë',
-    ),
-    'America/Cayman': TimeZoneNames(
-      exemplarCity: 'Kajman',
-    ),
-    'America/Chicago': TimeZoneNames(
-      exemplarCity: 'Çikago',
-    ),
-    'America/Chihuahua': TimeZoneNames(
-      exemplarCity: 'Çihahua',
-    ),
-    'America/Ciudad_Juarez': TimeZoneNames(
-      exemplarCity: 'Siudad-Huarez',
-    ),
-    'America/Coral_Harbour': TimeZoneNames(
-      exemplarCity: 'Atikokan',
-    ),
-    'America/Cordoba': TimeZoneNames(
-      exemplarCity: 'Kordoba',
-    ),
-    'America/Costa_Rica': TimeZoneNames(
-      exemplarCity: 'Kosta-Rikë',
-    ),
-    'America/Creston': TimeZoneNames(
-      exemplarCity: 'Kreston',
-    ),
-    'America/Cuiaba': TimeZoneNames(
-      exemplarCity: 'Kujaba',
-    ),
-    'America/Curacao': TimeZoneNames(
-      exemplarCity: 'Kurasao',
-    ),
-    'America/Danmarkshavn': TimeZoneNames(
-      exemplarCity: 'Denmarkshavën',
-    ),
-    'America/Dawson': TimeZoneNames(
-      exemplarCity: 'Douson',
-    ),
-    'America/Dawson_Creek': TimeZoneNames(
-      exemplarCity: 'Gjiri i Dousonit',
-    ),
-    'America/Dominica': TimeZoneNames(
-      exemplarCity: 'Dominikë',
-    ),
-    'America/Eirunepe': TimeZoneNames(
-      exemplarCity: 'Ejrunep',
-    ),
-    'America/El_Salvador': TimeZoneNames(
-      exemplarCity: 'Salvador',
-    ),
-    'America/Fort_Nelson': TimeZoneNames(
-      exemplarCity: 'Fort-Nelson',
-    ),
-    'America/Glace_Bay': TimeZoneNames(
-      exemplarCity: 'Gjiri i Ngrirë',
-    ),
-    'America/Godthab': TimeZoneNames(
-      exemplarCity: 'Njuk',
-    ),
-    'America/Goose_Bay': TimeZoneNames(
-      exemplarCity: 'Gjiri i Patës',
-    ),
-    'America/Grand_Turk': TimeZoneNames(
-      exemplarCity: 'Turku i Madh',
-    ),
-    'America/Grenada': TimeZoneNames(
-      exemplarCity: 'Granadë',
-    ),
-    'America/Guadeloupe': TimeZoneNames(
-      exemplarCity: 'Guadelupë',
-    ),
-    'America/Guatemala': TimeZoneNames(
-      exemplarCity: 'Guatemalë',
-    ),
-    'America/Guayaquil': TimeZoneNames(
-      exemplarCity: 'Guajakuil',
-    ),
-    'America/Guyana': TimeZoneNames(
-      exemplarCity: 'Guajanë',
-    ),
-    'America/Halifax': TimeZoneNames(
-      exemplarCity: 'Halifaks',
-    ),
-    'America/Havana': TimeZoneNames(
-      exemplarCity: 'Havanë',
-    ),
-    'America/Hermosillo': TimeZoneNames(
-      exemplarCity: 'Hermosijo',
-    ),
-    'America/Indiana/Vincennes': TimeZoneNames(
-      exemplarCity: 'Vincenes, Indiana',
-    ),
-    'America/Indiana/Petersburg': TimeZoneNames(
-      exemplarCity: 'Petërsburg, Indiana',
-    ),
-    'America/Indiana/Tell_City': TimeZoneNames(
-      exemplarCity: 'Tell-Siti, Indiana',
-    ),
-    'America/Indiana/Knox': TimeZoneNames(
-      exemplarCity: 'Knoks, Indiana',
-    ),
-    'America/Indiana/Winamac': TimeZoneNames(
-      exemplarCity: 'Uinamak, Indiana',
-    ),
-    'America/Indiana/Marengo': TimeZoneNames(
-      exemplarCity: 'Marengo, Indiana',
-    ),
-    'America/Indiana/Vevay': TimeZoneNames(
-      exemplarCity: 'Vevëj, Indiana',
-    ),
-    'America/Iqaluit': TimeZoneNames(
-      exemplarCity: 'Ikaluit',
-    ),
-    'America/Jamaica': TimeZoneNames(
-      exemplarCity: 'Xhamajkë',
-    ),
-    'America/Jujuy': TimeZoneNames(
-      exemplarCity: 'Huhui',
-    ),
-    'America/Juneau': TimeZoneNames(
-      exemplarCity: 'Xhunou',
-    ),
-    'America/Kentucky/Monticello': TimeZoneNames(
-      exemplarCity: 'Montiçelo, Kentaki',
-    ),
-    'America/Lima': TimeZoneNames(
-      exemplarCity: 'Limë',
-    ),
-    'America/Los_Angeles': TimeZoneNames(
-      exemplarCity: 'Los Anxhelos',
-    ),
-    'America/Louisville': TimeZoneNames(
-      exemplarCity: 'Luizvilë',
-    ),
-    'America/Lower_Princes': TimeZoneNames(
-      exemplarCity: 'Louer-Prinsis-Kuortër',
-    ),
-    'America/Maceio': TimeZoneNames(
-      exemplarCity: 'Makejo',
-    ),
-    'America/Martinique': TimeZoneNames(
-      exemplarCity: 'Martinikë',
-    ),
-    'America/Menominee': TimeZoneNames(
-      exemplarCity: 'Menomini',
-    ),
-    'America/Merida': TimeZoneNames(
-      exemplarCity: 'Merida',
-    ),
-    'America/Mexico_City': TimeZoneNames(
-      exemplarCity: 'Qyteti i Meksikës',
-    ),
-    'America/Miquelon': TimeZoneNames(
-      exemplarCity: 'Mikelon',
-    ),
-    'America/Moncton': TimeZoneNames(
-      exemplarCity: 'Monkton',
-    ),
-    'America/Monterrey': TimeZoneNames(
-      exemplarCity: 'Monterrej',
-    ),
-    'America/Montserrat': TimeZoneNames(
-      exemplarCity: 'Montserat',
-    ),
-    'America/Nassau': TimeZoneNames(
-      exemplarCity: 'Nasao',
-    ),
-    'America/New_York': TimeZoneNames(
-      exemplarCity: 'Nju-Jork',
-    ),
-    'America/Noronha': TimeZoneNames(
-      exemplarCity: 'Noronja',
-    ),
-    'America/North_Dakota/Beulah': TimeZoneNames(
-      exemplarCity: 'Beula, Dakota e Veriut',
-    ),
-    'America/North_Dakota/New_Salem': TimeZoneNames(
-      exemplarCity: 'Nju-Salem, Dakota e Veriut',
-    ),
-    'America/North_Dakota/Center': TimeZoneNames(
-      exemplarCity: 'Qendër, Dakota e Veriut',
-    ),
-    'America/Ojinaga': TimeZoneNames(
-      exemplarCity: 'Ohinaga',
-    ),
-    'America/Phoenix': TimeZoneNames(
-      exemplarCity: 'Feniks',
-    ),
-    'America/Port-au-Prince': TimeZoneNames(
-      exemplarCity: 'Port-o-Prins',
-    ),
-    'America/Porto_Velho': TimeZoneNames(
-      exemplarCity: 'Porto-Velho',
-    ),
-    'America/Puerto_Rico': TimeZoneNames(
-      exemplarCity: 'Porto-Riko',
-    ),
-    'America/Punta_Arenas': TimeZoneNames(
-      exemplarCity: 'Punta-Arenas',
-    ),
-    'America/Rankin_Inlet': TimeZoneNames(
-      exemplarCity: 'Gryka Inlet',
-    ),
-    'America/Regina': TimeZoneNames(
-      exemplarCity: 'Rexhina',
-    ),
-    'America/Rio_Branco': TimeZoneNames(
-      exemplarCity: 'Rio-Branko',
-    ),
-    'America/Santo_Domingo': TimeZoneNames(
-      exemplarCity: 'Santo-Domingo',
-    ),
-    'America/Sao_Paulo': TimeZoneNames(
-      exemplarCity: 'Sao-Paulo',
-    ),
-    'America/Scoresbysund': TimeZoneNames(
-      exemplarCity: 'Itokorturmit',
-    ),
-    'America/St_Barthelemy': TimeZoneNames(
-      exemplarCity: 'Sen-Bartelemi',
-    ),
-    'America/St_Johns': TimeZoneNames(
-      exemplarCity: 'Shën-Gjon',
-    ),
-    'America/St_Kitts': TimeZoneNames(
-      exemplarCity: 'Shën-Kits',
-    ),
-    'America/St_Lucia': TimeZoneNames(
-      exemplarCity: 'Shën-Luçia',
-    ),
-    'America/St_Thomas': TimeZoneNames(
-      exemplarCity: 'Shën-Tomas',
-    ),
-    'America/St_Vincent': TimeZoneNames(
-      exemplarCity: 'Shën-Vincent',
-    ),
-    'America/Swift_Current': TimeZoneNames(
-      exemplarCity: 'Rryma e Shpejtë',
-    ),
-    'America/Tegucigalpa': TimeZoneNames(
-      exemplarCity: 'Tegusigalpa',
-    ),
-    'America/Thule': TimeZoneNames(
-      exemplarCity: 'Dhule',
-    ),
-    'America/Tijuana': TimeZoneNames(
-      exemplarCity: 'Tihuana',
-    ),
-    'America/Tortola': TimeZoneNames(
-      exemplarCity: 'Tortolë',
-    ),
-    'America/Vancouver': TimeZoneNames(
-      exemplarCity: 'Vankuver',
-    ),
-    'America/Whitehorse': TimeZoneNames(
-      exemplarCity: 'Uajt’hors',
-    ),
-    'America/Winnipeg': TimeZoneNames(
-      exemplarCity: 'Uinipeg',
-    ),
-    'America/Yakutat': TimeZoneNames(
-      exemplarCity: 'Jakutat',
-    ),
-    'Atlantic/Azores': TimeZoneNames(
-      exemplarCity: 'Azore',
-    ),
-    'Atlantic/Bermuda': TimeZoneNames(
-      exemplarCity: 'Bermude',
-    ),
-    'Atlantic/Canary': TimeZoneNames(
-      exemplarCity: 'Kanari',
-    ),
-    'Atlantic/Cape_Verde': TimeZoneNames(
-      exemplarCity: 'Kepi i Gjelbër',
-    ),
-    'Atlantic/Faeroe': TimeZoneNames(
-      exemplarCity: 'Faroe',
-    ),
-    'Atlantic/Reykjavik': TimeZoneNames(
-      exemplarCity: 'Reikjavik',
-    ),
-    'Atlantic/South_Georgia': TimeZoneNames(
-      exemplarCity: 'Xhorxha e Jugut',
-    ),
-    'Atlantic/St_Helena': TimeZoneNames(
-      exemplarCity: 'Shën-Elenë',
-    ),
-    'Atlantic/Stanley': TimeZoneNames(
-      exemplarCity: 'Stenli',
-    ),
-    'Europe/Andorra': TimeZoneNames(
-      exemplarCity: 'Andorrë',
-    ),
-    'Europe/Astrakhan': TimeZoneNames(
-      exemplarCity: 'Astrakan',
-    ),
-    'Europe/Athens': TimeZoneNames(
-      exemplarCity: 'Athinë',
-    ),
-    'Europe/Belgrade': TimeZoneNames(
-      exemplarCity: 'Beograd',
-    ),
-    'Europe/Bratislava': TimeZoneNames(
-      exemplarCity: 'Bratislavë',
-    ),
-    'Europe/Brussels': TimeZoneNames(
-      exemplarCity: 'Bruksel',
-    ),
-    'Europe/Bucharest': TimeZoneNames(
-      exemplarCity: 'Bukuresht',
-    ),
-    'Europe/Chisinau': TimeZoneNames(
-      exemplarCity: 'Kishineu',
-    ),
-    'Europe/Copenhagen': TimeZoneNames(
-      exemplarCity: 'Kopenhagen',
-    ),
+  final timeZoneNames = const {
+    'America/Anchorage': TimeZoneNames(exemplarCity: 'Ankorejxh'),
+    'America/Anguilla': TimeZoneNames(exemplarCity: 'Anguilë'),
+    'America/Araguaina': TimeZoneNames(exemplarCity: 'Araguajana'),
+    'America/Argentina/Rio_Gallegos':
+        TimeZoneNames(exemplarCity: 'Rio-Galegos'),
+    'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'San-Huan'),
+    'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'Ushuaja'),
+    'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'La Rioha'),
+    'America/Argentina/San_Luis': TimeZoneNames(exemplarCity: 'Shën-Luis'),
+    'America/Argentina/Salta': TimeZoneNames(exemplarCity: 'Saltë'),
+    'America/Argentina/Tucuman': TimeZoneNames(exemplarCity: 'Tukuman'),
+    'America/Aruba': TimeZoneNames(exemplarCity: 'Arubë'),
+    'America/Asuncion': TimeZoneNames(exemplarCity: 'Asunsion'),
+    'America/Bahia_Banderas': TimeZoneNames(exemplarCity: 'Bahia-Banderas'),
+    'America/Belize': TimeZoneNames(exemplarCity: 'Belizë'),
+    'America/Blanc-Sablon': TimeZoneNames(exemplarCity: 'Blank-Sablon'),
+    'America/Boa_Vista': TimeZoneNames(exemplarCity: 'Boa-Vista'),
+    'America/Bogota': TimeZoneNames(exemplarCity: 'Bogotë'),
+    'America/Boise': TimeZoneNames(exemplarCity: 'Boizë'),
+    'America/Buenos_Aires': TimeZoneNames(exemplarCity: 'Buenos-Ajres'),
+    'America/Cambridge_Bay': TimeZoneNames(exemplarCity: 'Gjiri i Kembrixhit'),
+    'America/Campo_Grande': TimeZoneNames(exemplarCity: 'Kampo-Grande'),
+    'America/Cancun': TimeZoneNames(exemplarCity: 'Kankun'),
+    'America/Caracas': TimeZoneNames(exemplarCity: 'Karakas'),
+    'America/Catamarca': TimeZoneNames(exemplarCity: 'Katamarka'),
+    'America/Cayenne': TimeZoneNames(exemplarCity: 'Kajenë'),
+    'America/Cayman': TimeZoneNames(exemplarCity: 'Kajman'),
+    'America/Chicago': TimeZoneNames(exemplarCity: 'Çikago'),
+    'America/Chihuahua': TimeZoneNames(exemplarCity: 'Çihahua'),
+    'America/Ciudad_Juarez': TimeZoneNames(exemplarCity: 'Siudad-Huarez'),
+    'America/Coral_Harbour': TimeZoneNames(exemplarCity: 'Atikokan'),
+    'America/Cordoba': TimeZoneNames(exemplarCity: 'Kordoba'),
+    'America/Costa_Rica': TimeZoneNames(exemplarCity: 'Kosta-Rikë'),
+    'America/Creston': TimeZoneNames(exemplarCity: 'Kreston'),
+    'America/Cuiaba': TimeZoneNames(exemplarCity: 'Kujaba'),
+    'America/Curacao': TimeZoneNames(exemplarCity: 'Kurasao'),
+    'America/Danmarkshavn': TimeZoneNames(exemplarCity: 'Denmarkshavën'),
+    'America/Dawson': TimeZoneNames(exemplarCity: 'Douson'),
+    'America/Dawson_Creek': TimeZoneNames(exemplarCity: 'Gjiri i Dousonit'),
+    'America/Dominica': TimeZoneNames(exemplarCity: 'Dominikë'),
+    'America/Eirunepe': TimeZoneNames(exemplarCity: 'Ejrunep'),
+    'America/El_Salvador': TimeZoneNames(exemplarCity: 'Salvador'),
+    'America/Fort_Nelson': TimeZoneNames(exemplarCity: 'Fort-Nelson'),
+    'America/Glace_Bay': TimeZoneNames(exemplarCity: 'Gjiri i Ngrirë'),
+    'America/Godthab': TimeZoneNames(exemplarCity: 'Njuk'),
+    'America/Goose_Bay': TimeZoneNames(exemplarCity: 'Gjiri i Patës'),
+    'America/Grand_Turk': TimeZoneNames(exemplarCity: 'Turku i Madh'),
+    'America/Grenada': TimeZoneNames(exemplarCity: 'Granadë'),
+    'America/Guadeloupe': TimeZoneNames(exemplarCity: 'Guadelupë'),
+    'America/Guatemala': TimeZoneNames(exemplarCity: 'Guatemalë'),
+    'America/Guayaquil': TimeZoneNames(exemplarCity: 'Guajakuil'),
+    'America/Guyana': TimeZoneNames(exemplarCity: 'Guajanë'),
+    'America/Halifax': TimeZoneNames(exemplarCity: 'Halifaks'),
+    'America/Havana': TimeZoneNames(exemplarCity: 'Havanë'),
+    'America/Hermosillo': TimeZoneNames(exemplarCity: 'Hermosijo'),
+    'America/Indiana/Vincennes':
+        TimeZoneNames(exemplarCity: 'Vincenes, Indiana'),
+    'America/Indiana/Petersburg':
+        TimeZoneNames(exemplarCity: 'Petërsburg, Indiana'),
+    'America/Indiana/Tell_City':
+        TimeZoneNames(exemplarCity: 'Tell-Siti, Indiana'),
+    'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'Knoks, Indiana'),
+    'America/Indiana/Winamac': TimeZoneNames(exemplarCity: 'Uinamak, Indiana'),
+    'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'Marengo, Indiana'),
+    'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'Vevëj, Indiana'),
+    'America/Iqaluit': TimeZoneNames(exemplarCity: 'Ikaluit'),
+    'America/Jamaica': TimeZoneNames(exemplarCity: 'Xhamajkë'),
+    'America/Jujuy': TimeZoneNames(exemplarCity: 'Huhui'),
+    'America/Juneau': TimeZoneNames(exemplarCity: 'Xhunou'),
+    'America/Kentucky/Monticello':
+        TimeZoneNames(exemplarCity: 'Montiçelo, Kentaki'),
+    'America/Lima': TimeZoneNames(exemplarCity: 'Limë'),
+    'America/Los_Angeles': TimeZoneNames(exemplarCity: 'Los Anxhelos'),
+    'America/Louisville': TimeZoneNames(exemplarCity: 'Luizvilë'),
+    'America/Lower_Princes':
+        TimeZoneNames(exemplarCity: 'Louer-Prinsis-Kuortër'),
+    'America/Maceio': TimeZoneNames(exemplarCity: 'Makejo'),
+    'America/Martinique': TimeZoneNames(exemplarCity: 'Martinikë'),
+    'America/Menominee': TimeZoneNames(exemplarCity: 'Menomini'),
+    'America/Merida': TimeZoneNames(exemplarCity: 'Merida'),
+    'America/Mexico_City': TimeZoneNames(exemplarCity: 'Qyteti i Meksikës'),
+    'America/Miquelon': TimeZoneNames(exemplarCity: 'Mikelon'),
+    'America/Moncton': TimeZoneNames(exemplarCity: 'Monkton'),
+    'America/Monterrey': TimeZoneNames(exemplarCity: 'Monterrej'),
+    'America/Montserrat': TimeZoneNames(exemplarCity: 'Montserat'),
+    'America/Nassau': TimeZoneNames(exemplarCity: 'Nasao'),
+    'America/New_York': TimeZoneNames(exemplarCity: 'Nju-Jork'),
+    'America/Noronha': TimeZoneNames(exemplarCity: 'Noronja'),
+    'America/North_Dakota/Beulah':
+        TimeZoneNames(exemplarCity: 'Beula, Dakota e Veriut'),
+    'America/North_Dakota/New_Salem':
+        TimeZoneNames(exemplarCity: 'Nju-Salem, Dakota e Veriut'),
+    'America/North_Dakota/Center':
+        TimeZoneNames(exemplarCity: 'Qendër, Dakota e Veriut'),
+    'America/Ojinaga': TimeZoneNames(exemplarCity: 'Ohinaga'),
+    'America/Phoenix': TimeZoneNames(exemplarCity: 'Feniks'),
+    'America/Port-au-Prince': TimeZoneNames(exemplarCity: 'Port-o-Prins'),
+    'America/Porto_Velho': TimeZoneNames(exemplarCity: 'Porto-Velho'),
+    'America/Puerto_Rico': TimeZoneNames(exemplarCity: 'Porto-Riko'),
+    'America/Punta_Arenas': TimeZoneNames(exemplarCity: 'Punta-Arenas'),
+    'America/Rankin_Inlet': TimeZoneNames(exemplarCity: 'Gryka Inlet'),
+    'America/Regina': TimeZoneNames(exemplarCity: 'Rexhina'),
+    'America/Rio_Branco': TimeZoneNames(exemplarCity: 'Rio-Branko'),
+    'America/Santo_Domingo': TimeZoneNames(exemplarCity: 'Santo-Domingo'),
+    'America/Sao_Paulo': TimeZoneNames(exemplarCity: 'Sao-Paulo'),
+    'America/Scoresbysund': TimeZoneNames(exemplarCity: 'Itokorturmit'),
+    'America/St_Barthelemy': TimeZoneNames(exemplarCity: 'Sen-Bartelemi'),
+    'America/St_Johns': TimeZoneNames(exemplarCity: 'Shën-Gjon'),
+    'America/St_Kitts': TimeZoneNames(exemplarCity: 'Shën-Kits'),
+    'America/St_Lucia': TimeZoneNames(exemplarCity: 'Shën-Luçia'),
+    'America/St_Thomas': TimeZoneNames(exemplarCity: 'Shën-Tomas'),
+    'America/St_Vincent': TimeZoneNames(exemplarCity: 'Shën-Vincent'),
+    'America/Swift_Current': TimeZoneNames(exemplarCity: 'Rryma e Shpejtë'),
+    'America/Tegucigalpa': TimeZoneNames(exemplarCity: 'Tegusigalpa'),
+    'America/Thule': TimeZoneNames(exemplarCity: 'Dhule'),
+    'America/Tijuana': TimeZoneNames(exemplarCity: 'Tihuana'),
+    'America/Tortola': TimeZoneNames(exemplarCity: 'Tortolë'),
+    'America/Vancouver': TimeZoneNames(exemplarCity: 'Vankuver'),
+    'America/Whitehorse': TimeZoneNames(exemplarCity: 'Uajt’hors'),
+    'America/Winnipeg': TimeZoneNames(exemplarCity: 'Uinipeg'),
+    'America/Yakutat': TimeZoneNames(exemplarCity: 'Jakutat'),
+    'Atlantic/Azores': TimeZoneNames(exemplarCity: 'Azore'),
+    'Atlantic/Bermuda': TimeZoneNames(exemplarCity: 'Bermude'),
+    'Atlantic/Canary': TimeZoneNames(exemplarCity: 'Kanari'),
+    'Atlantic/Cape_Verde': TimeZoneNames(exemplarCity: 'Kepi i Gjelbër'),
+    'Atlantic/Faeroe': TimeZoneNames(exemplarCity: 'Faroe'),
+    'Atlantic/Reykjavik': TimeZoneNames(exemplarCity: 'Reikjavik'),
+    'Atlantic/South_Georgia': TimeZoneNames(exemplarCity: 'Xhorxha e Jugut'),
+    'Atlantic/St_Helena': TimeZoneNames(exemplarCity: 'Shën-Elenë'),
+    'Atlantic/Stanley': TimeZoneNames(exemplarCity: 'Stenli'),
+    'Europe/Andorra': TimeZoneNames(exemplarCity: 'Andorrë'),
+    'Europe/Astrakhan': TimeZoneNames(exemplarCity: 'Astrakan'),
+    'Europe/Athens': TimeZoneNames(exemplarCity: 'Athinë'),
+    'Europe/Belgrade': TimeZoneNames(exemplarCity: 'Beograd'),
+    'Europe/Bratislava': TimeZoneNames(exemplarCity: 'Bratislavë'),
+    'Europe/Brussels': TimeZoneNames(exemplarCity: 'Bruksel'),
+    'Europe/Bucharest': TimeZoneNames(exemplarCity: 'Bukuresht'),
+    'Europe/Chisinau': TimeZoneNames(exemplarCity: 'Kishineu'),
+    'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'Kopenhagen'),
     'Europe/Dublin': TimeZoneNames(
-      long: TimeZoneName(
-        daylight: 'Ora strandarde e Irlandës',
-      ),
-    ),
-    'Europe/Gibraltar': TimeZoneNames(
-      exemplarCity: 'Gjibraltar',
-    ),
-    'Europe/Guernsey': TimeZoneNames(
-      exemplarCity: 'Gernsej',
-    ),
-    'Europe/Isle_of_Man': TimeZoneNames(
-      exemplarCity: 'Ishulli i Manit',
-    ),
-    'Europe/Istanbul': TimeZoneNames(
-      exemplarCity: 'Stamboll',
-    ),
-    'Europe/Jersey': TimeZoneNames(
-      exemplarCity: 'Xhersej',
-    ),
-    'Europe/Kiev': TimeZoneNames(
-      exemplarCity: 'Kiev',
-    ),
-    'Europe/Lisbon': TimeZoneNames(
-      exemplarCity: 'Lisbonë',
-    ),
-    'Europe/Ljubljana': TimeZoneNames(
-      exemplarCity: 'Lubjanë',
-    ),
+        long: TimeZoneName(daylight: 'Ora strandarde e Irlandës')),
+    'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'Gjibraltar'),
+    'Europe/Guernsey': TimeZoneNames(exemplarCity: 'Gernsej'),
+    'Europe/Isle_of_Man': TimeZoneNames(exemplarCity: 'Ishulli i Manit'),
+    'Europe/Istanbul': TimeZoneNames(exemplarCity: 'Stamboll'),
+    'Europe/Jersey': TimeZoneNames(exemplarCity: 'Xhersej'),
+    'Europe/Kiev': TimeZoneNames(exemplarCity: 'Kiev'),
+    'Europe/Lisbon': TimeZoneNames(exemplarCity: 'Lisbonë'),
+    'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'Lubjanë'),
     'Europe/London': TimeZoneNames(
-      long: TimeZoneName(
-        daylight: 'Ora verore britanike',
-      ),
-      exemplarCity: 'Londër',
-    ),
-    'Europe/Luxembourg': TimeZoneNames(
-      exemplarCity: 'Luksemburg',
-    ),
-    'Europe/Malta': TimeZoneNames(
-      exemplarCity: 'Maltë',
-    ),
-    'Europe/Monaco': TimeZoneNames(
-      exemplarCity: 'Monako',
-    ),
-    'Europe/Moscow': TimeZoneNames(
-      exemplarCity: 'Moskë',
-    ),
-    'Europe/Podgorica': TimeZoneNames(
-      exemplarCity: 'Podgoricë',
-    ),
-    'Europe/Prague': TimeZoneNames(
-      exemplarCity: 'Pragë',
-    ),
-    'Europe/Riga': TimeZoneNames(
-      exemplarCity: 'Rigë',
-    ),
-    'Europe/Rome': TimeZoneNames(
-      exemplarCity: 'Romë',
-    ),
-    'Europe/San_Marino': TimeZoneNames(
-      exemplarCity: 'San-Marino',
-    ),
-    'Europe/Sarajevo': TimeZoneNames(
-      exemplarCity: 'Sarajevë',
-    ),
-    'Europe/Skopje': TimeZoneNames(
-      exemplarCity: 'Shkup',
-    ),
-    'Europe/Sofia': TimeZoneNames(
-      exemplarCity: 'Sofje',
-    ),
-    'Europe/Stockholm': TimeZoneNames(
-      exemplarCity: 'Stokholm',
-    ),
-    'Europe/Tallinn': TimeZoneNames(
-      exemplarCity: 'Talin',
-    ),
-    'Europe/Tirane': TimeZoneNames(
-      exemplarCity: 'Tiranë',
-    ),
-    'Europe/Ulyanovsk': TimeZoneNames(
-      exemplarCity: 'Uljanovsk',
-    ),
-    'Europe/Vatican': TimeZoneNames(
-      exemplarCity: 'Vatikan',
-    ),
-    'Europe/Vienna': TimeZoneNames(
-      exemplarCity: 'Vjenë',
-    ),
-    'Europe/Warsaw': TimeZoneNames(
-      exemplarCity: 'Varshavë',
-    ),
-    'Europe/Zurich': TimeZoneNames(
-      exemplarCity: 'Zyrih',
-    ),
-    'Africa/Abidjan': TimeZoneNames(
-      exemplarCity: 'Abixhan',
-    ),
-    'Africa/Accra': TimeZoneNames(
-      exemplarCity: 'Akra',
-    ),
-    'Africa/Addis_Ababa': TimeZoneNames(
-      exemplarCity: 'Adis-Ababë',
-    ),
-    'Africa/Algiers': TimeZoneNames(
-      exemplarCity: 'Algjer',
-    ),
-    'Africa/Asmera': TimeZoneNames(
-      exemplarCity: 'Asmarë',
-    ),
-    'Africa/Banjul': TimeZoneNames(
-      exemplarCity: 'Banxhul',
-    ),
-    'Africa/Bissau': TimeZoneNames(
-      exemplarCity: 'Bisau',
-    ),
-    'Africa/Blantyre': TimeZoneNames(
-      exemplarCity: 'Blantirë',
-    ),
-    'Africa/Brazzaville': TimeZoneNames(
-      exemplarCity: 'Brazavillë',
-    ),
-    'Africa/Bujumbura': TimeZoneNames(
-      exemplarCity: 'Buxhumburë',
-    ),
-    'Africa/Cairo': TimeZoneNames(
-      exemplarCity: 'Kajro',
-    ),
-    'Africa/Casablanca': TimeZoneNames(
-      exemplarCity: 'Kazablankë',
-    ),
-    'Africa/Ceuta': TimeZoneNames(
-      exemplarCity: 'Theuta',
-    ),
-    'Africa/Conakry': TimeZoneNames(
-      exemplarCity: 'Konakri',
-    ),
-    'Africa/Dar_es_Salaam': TimeZoneNames(
-      exemplarCity: 'Dar-es-Salam',
-    ),
-    'Africa/Djibouti': TimeZoneNames(
-      exemplarCity: 'Xhibuti',
-    ),
-    'Africa/El_Aaiun': TimeZoneNames(
-      exemplarCity: 'El Ajun',
-    ),
-    'Africa/Freetown': TimeZoneNames(
-      exemplarCity: 'Fritaun',
-    ),
-    'Africa/Johannesburg': TimeZoneNames(
-      exemplarCity: 'Johanesburg',
-    ),
-    'Africa/Juba': TimeZoneNames(
-      exemplarCity: 'Xhuba',
-    ),
-    'Africa/Khartoum': TimeZoneNames(
-      exemplarCity: 'Kartum',
-    ),
-    'Africa/Libreville': TimeZoneNames(
-      exemplarCity: 'Librevilë',
-    ),
-    'Africa/Niamey': TimeZoneNames(
-      exemplarCity: 'Niamej',
-    ),
-    'Africa/Nouakchott': TimeZoneNames(
-      exemplarCity: 'Nouakot',
-    ),
-    'Africa/Ouagadougou': TimeZoneNames(
-      exemplarCity: 'Uagëdugu',
-    ),
-    'Africa/Sao_Tome': TimeZoneNames(
-      exemplarCity: 'Sao-Tome',
-    ),
-    'Africa/Tunis': TimeZoneNames(
-      exemplarCity: 'Tuniz',
-    ),
-    'Africa/Windhoek': TimeZoneNames(
-      exemplarCity: 'Vint’huk',
-    ),
-    'Asia/Almaty': TimeZoneNames(
-      exemplarCity: 'Almati',
-    ),
-    'Asia/Amman': TimeZoneNames(
-      exemplarCity: 'Aman',
-    ),
-    'Asia/Anadyr': TimeZoneNames(
-      exemplarCity: 'Anadir',
-    ),
-    'Asia/Aqtau': TimeZoneNames(
-      exemplarCity: 'Aktau',
-    ),
-    'Asia/Aqtobe': TimeZoneNames(
-      exemplarCity: 'Aktobe',
-    ),
-    'Asia/Atyrau': TimeZoneNames(
-      exemplarCity: 'Atirau',
-    ),
-    'Asia/Baghdad': TimeZoneNames(
-      exemplarCity: 'Bagdad',
-    ),
-    'Asia/Bahrain': TimeZoneNames(
-      exemplarCity: 'Bahrejn',
-    ),
-    'Asia/Beirut': TimeZoneNames(
-      exemplarCity: 'Bejrut',
-    ),
-    'Asia/Calcutta': TimeZoneNames(
-      exemplarCity: 'Kalkutë',
-    ),
-    'Asia/Chita': TimeZoneNames(
-      exemplarCity: 'Çita',
-    ),
-    'Asia/Colombo': TimeZoneNames(
-      exemplarCity: 'Kolombo',
-    ),
-    'Asia/Damascus': TimeZoneNames(
-      exemplarCity: 'Damask',
-    ),
-    'Asia/Dhaka': TimeZoneNames(
-      exemplarCity: 'Daka',
-    ),
-    'Asia/Famagusta': TimeZoneNames(
-      exemplarCity: 'Famagustë',
-    ),
-    'Asia/Hong_Kong': TimeZoneNames(
-      exemplarCity: 'Hong-Kong',
-    ),
-    'Asia/Jakarta': TimeZoneNames(
-      exemplarCity: 'Xhakartë',
-    ),
-    'Asia/Jayapura': TimeZoneNames(
-      exemplarCity: 'Xhajapurë',
-    ),
-    'Asia/Kamchatka': TimeZoneNames(
-      exemplarCity: 'Kamçatkë',
-    ),
-    'Asia/Karachi': TimeZoneNames(
-      exemplarCity: 'Karaçi',
-    ),
-    'Asia/Katmandu': TimeZoneNames(
-      exemplarCity: 'Katmandu',
-    ),
-    'Asia/Khandyga': TimeZoneNames(
-      exemplarCity: 'Kandigë',
-    ),
-    'Asia/Krasnoyarsk': TimeZoneNames(
-      exemplarCity: 'Krasnojarsk',
-    ),
-    'Asia/Kuala_Lumpur': TimeZoneNames(
-      exemplarCity: 'Kuala-Lumpur',
-    ),
-    'Asia/Kuching': TimeZoneNames(
-      exemplarCity: 'Kuçing',
-    ),
-    'Asia/Kuwait': TimeZoneNames(
-      exemplarCity: 'Kuvajt',
-    ),
-    'Asia/Macau': TimeZoneNames(
-      exemplarCity: 'Makao',
-    ),
-    'Asia/Makassar': TimeZoneNames(
-      exemplarCity: 'Makasar',
-    ),
-    'Asia/Manila': TimeZoneNames(
-      exemplarCity: 'Manilë',
-    ),
-    'Asia/Muscat': TimeZoneNames(
-      exemplarCity: 'Muskat',
-    ),
-    'Asia/Nicosia': TimeZoneNames(
-      exemplarCity: 'Nikozia',
-    ),
-    'Asia/Phnom_Penh': TimeZoneNames(
-      exemplarCity: 'Pnom-Pen',
-    ),
-    'Asia/Pyongyang': TimeZoneNames(
-      exemplarCity: 'Penian',
-    ),
-    'Asia/Qatar': TimeZoneNames(
-      exemplarCity: 'Katar',
-    ),
-    'Asia/Qostanay': TimeZoneNames(
-      exemplarCity: 'Kostanaj',
-    ),
-    'Asia/Qyzylorda': TimeZoneNames(
-      exemplarCity: 'Kizilorda',
-    ),
-    'Asia/Rangoon': TimeZoneNames(
-      exemplarCity: 'Rangun',
-    ),
-    'Asia/Riyadh': TimeZoneNames(
-      exemplarCity: 'Riad',
-    ),
-    'Asia/Saigon': TimeZoneNames(
-      exemplarCity: 'Ho-Çi-Min',
-    ),
-    'Asia/Sakhalin': TimeZoneNames(
-      exemplarCity: 'Sakalin',
-    ),
-    'Asia/Seoul': TimeZoneNames(
-      exemplarCity: 'Seul',
-    ),
-    'Asia/Shanghai': TimeZoneNames(
-      exemplarCity: 'Shangai',
-    ),
-    'Asia/Singapore': TimeZoneNames(
-      exemplarCity: 'Singapor',
-    ),
-    'Asia/Srednekolymsk': TimeZoneNames(
-      exemplarCity: 'Srednekolimsk',
-    ),
-    'Asia/Taipei': TimeZoneNames(
-      exemplarCity: 'Tajpej',
-    ),
-    'Asia/Tbilisi': TimeZoneNames(
-      exemplarCity: 'Tbilis',
-    ),
-    'Asia/Tehran': TimeZoneNames(
-      exemplarCity: 'Teheran',
-    ),
-    'Asia/Thimphu': TimeZoneNames(
-      exemplarCity: 'Thimpu',
-    ),
-    'Asia/Tokyo': TimeZoneNames(
-      exemplarCity: 'Tokio',
-    ),
-    'Asia/Ulaanbaatar': TimeZoneNames(
-      exemplarCity: 'Ulanbatar',
-    ),
-    'Asia/Vientiane': TimeZoneNames(
-      exemplarCity: 'Vjentianë',
-    ),
-    'Asia/Yakutsk': TimeZoneNames(
-      exemplarCity: 'Jakutsk',
-    ),
-    'Asia/Yekaterinburg': TimeZoneNames(
-      exemplarCity: 'Ekaterinburg',
-    ),
-    'Asia/Yerevan': TimeZoneNames(
-      exemplarCity: 'Jerevan',
-    ),
-    'Indian/Chagos': TimeZoneNames(
-      exemplarCity: 'Çagos',
-    ),
-    'Indian/Christmas': TimeZoneNames(
-      exemplarCity: 'Krishtlindje',
-    ),
-    'Indian/Cocos': TimeZoneNames(
-      exemplarCity: 'Kokos',
-    ),
-    'Indian/Comoro': TimeZoneNames(
-      exemplarCity: 'Komore',
-    ),
-    'Indian/Maldives': TimeZoneNames(
-      exemplarCity: 'Maldive',
-    ),
-    'Indian/Mayotte': TimeZoneNames(
-      exemplarCity: 'Majotë',
-    ),
-    'Indian/Reunion': TimeZoneNames(
-      exemplarCity: 'Réunion',
-    ),
-    'Australia/Adelaide': TimeZoneNames(
-      exemplarCity: 'Adelajde',
-    ),
-    'Australia/Brisbane': TimeZoneNames(
-      exemplarCity: 'Brisbejn',
-    ),
-    'Australia/Broken_Hill': TimeZoneNames(
-      exemplarCity: 'Brokën-Hill',
-    ),
-    'Australia/Darwin': TimeZoneNames(
-      exemplarCity: 'Darvin',
-    ),
-    'Australia/Eucla': TimeZoneNames(
-      exemplarCity: 'Eukla',
-    ),
-    'Australia/Lindeman': TimeZoneNames(
-      exemplarCity: 'Lindëmen',
-    ),
-    'Australia/Lord_Howe': TimeZoneNames(
-      exemplarCity: 'Lord-Houi',
-    ),
-    'Australia/Melbourne': TimeZoneNames(
-      exemplarCity: 'Melburn',
-    ),
-    'Australia/Perth': TimeZoneNames(
-      exemplarCity: 'Përth',
-    ),
-    'Australia/Sydney': TimeZoneNames(
-      exemplarCity: 'Sidnej',
-    ),
-    'Pacific/Auckland': TimeZoneNames(
-      exemplarCity: 'Okland',
-    ),
-    'Pacific/Bougainville': TimeZoneNames(
-      exemplarCity: 'Bunganvilë',
-    ),
-    'Pacific/Chatham': TimeZoneNames(
-      exemplarCity: 'Çatman',
-    ),
-    'Pacific/Easter': TimeZoneNames(
-      exemplarCity: 'Pashkë',
-    ),
-    'Pacific/Enderbury': TimeZoneNames(
-      exemplarCity: 'Enderbur',
-    ),
-    'Pacific/Fiji': TimeZoneNames(
-      exemplarCity: 'Fixhi',
-    ),
-    'Pacific/Guadalcanal': TimeZoneNames(
-      exemplarCity: 'Guadalkanal',
-    ),
-    'Pacific/Honolulu': TimeZoneNames(
-      exemplarCity: 'Honolulu',
-    ),
-    'Pacific/Kiritimati': TimeZoneNames(
-      exemplarCity: 'Kiritimat',
-    ),
-    'Pacific/Kosrae': TimeZoneNames(
-      exemplarCity: 'Kosre',
-    ),
-    'Pacific/Kwajalein': TimeZoneNames(
-      exemplarCity: 'Kuaxhalein',
-    ),
-    'Pacific/Majuro': TimeZoneNames(
-      exemplarCity: 'Mahuro',
-    ),
-    'Pacific/Marquesas': TimeZoneNames(
-      exemplarCity: 'Markez',
-    ),
-    'Pacific/Midway': TimeZoneNames(
-      exemplarCity: 'Miduej',
-    ),
-    'Pacific/Pago_Pago': TimeZoneNames(
-      exemplarCity: 'Pago-Pago',
-    ),
-    'Pacific/Pitcairn': TimeZoneNames(
-      exemplarCity: 'Pitkern',
-    ),
-    'Pacific/Ponape': TimeZoneNames(
-      exemplarCity: 'Ponapei',
-    ),
-    'Pacific/Port_Moresby': TimeZoneNames(
-      exemplarCity: 'Port-Moresbi',
-    ),
-    'Pacific/Rarotonga': TimeZoneNames(
-      exemplarCity: 'Rarotongë',
-    ),
-    'Pacific/Tarawa': TimeZoneNames(
-      exemplarCity: 'Taravë',
-    ),
-    'Pacific/Truk': TimeZoneNames(
-      exemplarCity: 'Çuk',
-    ),
-    'Pacific/Wake': TimeZoneNames(
-      exemplarCity: 'Uejk',
-    ),
-    'Pacific/Wallis': TimeZoneNames(
-      exemplarCity: 'Uollis',
-    ),
-    'Arctic/Longyearbyen': TimeZoneNames(
-      exemplarCity: 'Long’jëbjen',
-    ),
-    'Antarctica/Casey': TimeZoneNames(
-      exemplarCity: 'Kejsi',
-    ),
-    'Antarctica/Davis': TimeZoneNames(
-      exemplarCity: 'Dejvis',
-    ),
-    'Antarctica/DumontDUrville': TimeZoneNames(
-      exemplarCity: 'Dumont-d’Urvilë',
-    ),
-    'Antarctica/Macquarie': TimeZoneNames(
-      exemplarCity: 'Mekuari',
-    ),
-    'Antarctica/Mawson': TimeZoneNames(
-      exemplarCity: 'Mauson',
-    ),
-    'Antarctica/McMurdo': TimeZoneNames(
-      exemplarCity: 'Mekmurdo',
-    ),
-    'Antarctica/Rothera': TimeZoneNames(
-      exemplarCity: 'Rodherë',
-    ),
-    'Antarctica/Syowa': TimeZoneNames(
-      exemplarCity: 'Sjoua',
-    ),
+        exemplarCity: 'Londër',
+        long: TimeZoneName(daylight: 'Ora verore britanike')),
+    'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'Luksemburg'),
+    'Europe/Malta': TimeZoneNames(exemplarCity: 'Maltë'),
+    'Europe/Monaco': TimeZoneNames(exemplarCity: 'Monako'),
+    'Europe/Moscow': TimeZoneNames(exemplarCity: 'Moskë'),
+    'Europe/Podgorica': TimeZoneNames(exemplarCity: 'Podgoricë'),
+    'Europe/Prague': TimeZoneNames(exemplarCity: 'Pragë'),
+    'Europe/Riga': TimeZoneNames(exemplarCity: 'Rigë'),
+    'Europe/Rome': TimeZoneNames(exemplarCity: 'Romë'),
+    'Europe/San_Marino': TimeZoneNames(exemplarCity: 'San-Marino'),
+    'Europe/Sarajevo': TimeZoneNames(exemplarCity: 'Sarajevë'),
+    'Europe/Skopje': TimeZoneNames(exemplarCity: 'Shkup'),
+    'Europe/Sofia': TimeZoneNames(exemplarCity: 'Sofje'),
+    'Europe/Stockholm': TimeZoneNames(exemplarCity: 'Stokholm'),
+    'Europe/Tallinn': TimeZoneNames(exemplarCity: 'Talin'),
+    'Europe/Tirane': TimeZoneNames(exemplarCity: 'Tiranë'),
+    'Europe/Ulyanovsk': TimeZoneNames(exemplarCity: 'Uljanovsk'),
+    'Europe/Vatican': TimeZoneNames(exemplarCity: 'Vatikan'),
+    'Europe/Vienna': TimeZoneNames(exemplarCity: 'Vjenë'),
+    'Europe/Warsaw': TimeZoneNames(exemplarCity: 'Varshavë'),
+    'Europe/Zurich': TimeZoneNames(exemplarCity: 'Zyrih'),
+    'Africa/Abidjan': TimeZoneNames(exemplarCity: 'Abixhan'),
+    'Africa/Accra': TimeZoneNames(exemplarCity: 'Akra'),
+    'Africa/Addis_Ababa': TimeZoneNames(exemplarCity: 'Adis-Ababë'),
+    'Africa/Algiers': TimeZoneNames(exemplarCity: 'Algjer'),
+    'Africa/Asmera': TimeZoneNames(exemplarCity: 'Asmarë'),
+    'Africa/Banjul': TimeZoneNames(exemplarCity: 'Banxhul'),
+    'Africa/Bissau': TimeZoneNames(exemplarCity: 'Bisau'),
+    'Africa/Blantyre': TimeZoneNames(exemplarCity: 'Blantirë'),
+    'Africa/Brazzaville': TimeZoneNames(exemplarCity: 'Brazavillë'),
+    'Africa/Bujumbura': TimeZoneNames(exemplarCity: 'Buxhumburë'),
+    'Africa/Cairo': TimeZoneNames(exemplarCity: 'Kajro'),
+    'Africa/Casablanca': TimeZoneNames(exemplarCity: 'Kazablankë'),
+    'Africa/Ceuta': TimeZoneNames(exemplarCity: 'Theuta'),
+    'Africa/Conakry': TimeZoneNames(exemplarCity: 'Konakri'),
+    'Africa/Dar_es_Salaam': TimeZoneNames(exemplarCity: 'Dar-es-Salam'),
+    'Africa/Djibouti': TimeZoneNames(exemplarCity: 'Xhibuti'),
+    'Africa/El_Aaiun': TimeZoneNames(exemplarCity: 'El Ajun'),
+    'Africa/Freetown': TimeZoneNames(exemplarCity: 'Fritaun'),
+    'Africa/Johannesburg': TimeZoneNames(exemplarCity: 'Johanesburg'),
+    'Africa/Juba': TimeZoneNames(exemplarCity: 'Xhuba'),
+    'Africa/Khartoum': TimeZoneNames(exemplarCity: 'Kartum'),
+    'Africa/Libreville': TimeZoneNames(exemplarCity: 'Librevilë'),
+    'Africa/Niamey': TimeZoneNames(exemplarCity: 'Niamej'),
+    'Africa/Nouakchott': TimeZoneNames(exemplarCity: 'Nouakot'),
+    'Africa/Ouagadougou': TimeZoneNames(exemplarCity: 'Uagëdugu'),
+    'Africa/Sao_Tome': TimeZoneNames(exemplarCity: 'Sao-Tome'),
+    'Africa/Tunis': TimeZoneNames(exemplarCity: 'Tuniz'),
+    'Africa/Windhoek': TimeZoneNames(exemplarCity: 'Vint’huk'),
+    'Asia/Almaty': TimeZoneNames(exemplarCity: 'Almati'),
+    'Asia/Amman': TimeZoneNames(exemplarCity: 'Aman'),
+    'Asia/Anadyr': TimeZoneNames(exemplarCity: 'Anadir'),
+    'Asia/Aqtau': TimeZoneNames(exemplarCity: 'Aktau'),
+    'Asia/Aqtobe': TimeZoneNames(exemplarCity: 'Aktobe'),
+    'Asia/Atyrau': TimeZoneNames(exemplarCity: 'Atirau'),
+    'Asia/Baghdad': TimeZoneNames(exemplarCity: 'Bagdad'),
+    'Asia/Bahrain': TimeZoneNames(exemplarCity: 'Bahrejn'),
+    'Asia/Beirut': TimeZoneNames(exemplarCity: 'Bejrut'),
+    'Asia/Calcutta': TimeZoneNames(exemplarCity: 'Kalkutë'),
+    'Asia/Chita': TimeZoneNames(exemplarCity: 'Çita'),
+    'Asia/Colombo': TimeZoneNames(exemplarCity: 'Kolombo'),
+    'Asia/Damascus': TimeZoneNames(exemplarCity: 'Damask'),
+    'Asia/Dhaka': TimeZoneNames(exemplarCity: 'Daka'),
+    'Asia/Famagusta': TimeZoneNames(exemplarCity: 'Famagustë'),
+    'Asia/Hong_Kong': TimeZoneNames(exemplarCity: 'Hong-Kong'),
+    'Asia/Jakarta': TimeZoneNames(exemplarCity: 'Xhakartë'),
+    'Asia/Jayapura': TimeZoneNames(exemplarCity: 'Xhajapurë'),
+    'Asia/Kamchatka': TimeZoneNames(exemplarCity: 'Kamçatkë'),
+    'Asia/Karachi': TimeZoneNames(exemplarCity: 'Karaçi'),
+    'Asia/Katmandu': TimeZoneNames(exemplarCity: 'Katmandu'),
+    'Asia/Khandyga': TimeZoneNames(exemplarCity: 'Kandigë'),
+    'Asia/Krasnoyarsk': TimeZoneNames(exemplarCity: 'Krasnojarsk'),
+    'Asia/Kuala_Lumpur': TimeZoneNames(exemplarCity: 'Kuala-Lumpur'),
+    'Asia/Kuching': TimeZoneNames(exemplarCity: 'Kuçing'),
+    'Asia/Kuwait': TimeZoneNames(exemplarCity: 'Kuvajt'),
+    'Asia/Macau': TimeZoneNames(exemplarCity: 'Makao'),
+    'Asia/Makassar': TimeZoneNames(exemplarCity: 'Makasar'),
+    'Asia/Manila': TimeZoneNames(exemplarCity: 'Manilë'),
+    'Asia/Muscat': TimeZoneNames(exemplarCity: 'Muskat'),
+    'Asia/Nicosia': TimeZoneNames(exemplarCity: 'Nikozia'),
+    'Asia/Phnom_Penh': TimeZoneNames(exemplarCity: 'Pnom-Pen'),
+    'Asia/Pyongyang': TimeZoneNames(exemplarCity: 'Penian'),
+    'Asia/Qatar': TimeZoneNames(exemplarCity: 'Katar'),
+    'Asia/Qostanay': TimeZoneNames(exemplarCity: 'Kostanaj'),
+    'Asia/Qyzylorda': TimeZoneNames(exemplarCity: 'Kizilorda'),
+    'Asia/Rangoon': TimeZoneNames(exemplarCity: 'Rangun'),
+    'Asia/Riyadh': TimeZoneNames(exemplarCity: 'Riad'),
+    'Asia/Saigon': TimeZoneNames(exemplarCity: 'Ho-Çi-Min'),
+    'Asia/Sakhalin': TimeZoneNames(exemplarCity: 'Sakalin'),
+    'Asia/Seoul': TimeZoneNames(exemplarCity: 'Seul'),
+    'Asia/Shanghai': TimeZoneNames(exemplarCity: 'Shangai'),
+    'Asia/Singapore': TimeZoneNames(exemplarCity: 'Singapor'),
+    'Asia/Srednekolymsk': TimeZoneNames(exemplarCity: 'Srednekolimsk'),
+    'Asia/Taipei': TimeZoneNames(exemplarCity: 'Tajpej'),
+    'Asia/Tbilisi': TimeZoneNames(exemplarCity: 'Tbilis'),
+    'Asia/Tehran': TimeZoneNames(exemplarCity: 'Teheran'),
+    'Asia/Thimphu': TimeZoneNames(exemplarCity: 'Thimpu'),
+    'Asia/Tokyo': TimeZoneNames(exemplarCity: 'Tokio'),
+    'Asia/Ulaanbaatar': TimeZoneNames(exemplarCity: 'Ulanbatar'),
+    'Asia/Vientiane': TimeZoneNames(exemplarCity: 'Vjentianë'),
+    'Asia/Yakutsk': TimeZoneNames(exemplarCity: 'Jakutsk'),
+    'Asia/Yekaterinburg': TimeZoneNames(exemplarCity: 'Ekaterinburg'),
+    'Asia/Yerevan': TimeZoneNames(exemplarCity: 'Jerevan'),
+    'Indian/Chagos': TimeZoneNames(exemplarCity: 'Çagos'),
+    'Indian/Christmas': TimeZoneNames(exemplarCity: 'Krishtlindje'),
+    'Indian/Cocos': TimeZoneNames(exemplarCity: 'Kokos'),
+    'Indian/Comoro': TimeZoneNames(exemplarCity: 'Komore'),
+    'Indian/Maldives': TimeZoneNames(exemplarCity: 'Maldive'),
+    'Indian/Mayotte': TimeZoneNames(exemplarCity: 'Majotë'),
+    'Indian/Reunion': TimeZoneNames(exemplarCity: 'Réunion'),
+    'Australia/Adelaide': TimeZoneNames(exemplarCity: 'Adelajde'),
+    'Australia/Brisbane': TimeZoneNames(exemplarCity: 'Brisbejn'),
+    'Australia/Broken_Hill': TimeZoneNames(exemplarCity: 'Brokën-Hill'),
+    'Australia/Darwin': TimeZoneNames(exemplarCity: 'Darvin'),
+    'Australia/Eucla': TimeZoneNames(exemplarCity: 'Eukla'),
+    'Australia/Lindeman': TimeZoneNames(exemplarCity: 'Lindëmen'),
+    'Australia/Lord_Howe': TimeZoneNames(exemplarCity: 'Lord-Houi'),
+    'Australia/Melbourne': TimeZoneNames(exemplarCity: 'Melburn'),
+    'Australia/Perth': TimeZoneNames(exemplarCity: 'Përth'),
+    'Australia/Sydney': TimeZoneNames(exemplarCity: 'Sidnej'),
+    'Pacific/Auckland': TimeZoneNames(exemplarCity: 'Okland'),
+    'Pacific/Bougainville': TimeZoneNames(exemplarCity: 'Bunganvilë'),
+    'Pacific/Chatham': TimeZoneNames(exemplarCity: 'Çatman'),
+    'Pacific/Easter': TimeZoneNames(exemplarCity: 'Pashkë'),
+    'Pacific/Enderbury': TimeZoneNames(exemplarCity: 'Enderbur'),
+    'Pacific/Fiji': TimeZoneNames(exemplarCity: 'Fixhi'),
+    'Pacific/Guadalcanal': TimeZoneNames(exemplarCity: 'Guadalkanal'),
+    'Pacific/Honolulu': TimeZoneNames(exemplarCity: 'Honolulu'),
+    'Pacific/Kiritimati': TimeZoneNames(exemplarCity: 'Kiritimat'),
+    'Pacific/Kosrae': TimeZoneNames(exemplarCity: 'Kosre'),
+    'Pacific/Kwajalein': TimeZoneNames(exemplarCity: 'Kuaxhalein'),
+    'Pacific/Majuro': TimeZoneNames(exemplarCity: 'Mahuro'),
+    'Pacific/Marquesas': TimeZoneNames(exemplarCity: 'Markez'),
+    'Pacific/Midway': TimeZoneNames(exemplarCity: 'Miduej'),
+    'Pacific/Pago_Pago': TimeZoneNames(exemplarCity: 'Pago-Pago'),
+    'Pacific/Pitcairn': TimeZoneNames(exemplarCity: 'Pitkern'),
+    'Pacific/Ponape': TimeZoneNames(exemplarCity: 'Ponapei'),
+    'Pacific/Port_Moresby': TimeZoneNames(exemplarCity: 'Port-Moresbi'),
+    'Pacific/Rarotonga': TimeZoneNames(exemplarCity: 'Rarotongë'),
+    'Pacific/Tarawa': TimeZoneNames(exemplarCity: 'Taravë'),
+    'Pacific/Truk': TimeZoneNames(exemplarCity: 'Çuk'),
+    'Pacific/Wake': TimeZoneNames(exemplarCity: 'Uejk'),
+    'Pacific/Wallis': TimeZoneNames(exemplarCity: 'Uollis'),
+    'Arctic/Longyearbyen': TimeZoneNames(exemplarCity: 'Long’jëbjen'),
+    'Antarctica/Casey': TimeZoneNames(exemplarCity: 'Kejsi'),
+    'Antarctica/Davis': TimeZoneNames(exemplarCity: 'Dejvis'),
+    'Antarctica/DumontDUrville': TimeZoneNames(exemplarCity: 'Dumont-d’Urvilë'),
+    'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'Mekuari'),
+    'Antarctica/Mawson': TimeZoneNames(exemplarCity: 'Mauson'),
+    'Antarctica/McMurdo': TimeZoneNames(exemplarCity: 'Mekmurdo'),
+    'Antarctica/Rothera': TimeZoneNames(exemplarCity: 'Rodherë'),
+    'Antarctica/Syowa': TimeZoneNames(exemplarCity: 'Sjoua'),
     'Etc/UTC': TimeZoneNames(
-      long: TimeZoneName(
-        standard: 'Ora universale e koordinuar',
-      ),
-      short: TimeZoneName(
-        standard: 'UTC',
-      ),
-    ),
-    'Etc/Unknown': TimeZoneNames(
-      exemplarCity: 'Qytet i panjohur',
-    ),
-  }, (key) => key.toLowerCase());
+        long: TimeZoneName(standard: 'Ora universale e koordinuar'),
+        short: TimeZoneName(standard: 'UTC')),
+    'Etc/Unknown': TimeZoneNames(exemplarCity: 'Qytet i panjohur'),
+  };
 
   @override
-  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
-    'Acre': MetaZone(
-      code: 'Acre',
-      long: TimeZoneName(
-        generic: 'Ora e Ejkrit [Ako]',
-        standard: 'Ora standarde e Ejkrit [Ako]',
-        daylight: 'Ora verore e Ejkrit [Ako]',
-      ),
-    ),
-    'Afghanistan': MetaZone(
-      code: 'Afghanistan',
-      long: TimeZoneName(
-        standard: 'Ora e Afganistanit',
-      ),
-    ),
-    'Africa_Central': MetaZone(
-      code: 'Africa_Central',
-      long: TimeZoneName(
-        standard: 'Ora e Afrikës Qendrore',
-      ),
-    ),
-    'Africa_Eastern': MetaZone(
-      code: 'Africa_Eastern',
-      long: TimeZoneName(
-        standard: 'Ora e Afrikës Lindore',
-      ),
-    ),
-    'Africa_Southern': MetaZone(
-      code: 'Africa_Southern',
-      long: TimeZoneName(
-        standard: 'Ora standarde e Afrikës Jugore',
-      ),
-    ),
-    'Africa_Western': MetaZone(
-      code: 'Africa_Western',
-      long: TimeZoneName(
-        generic: 'Ora e Afrikës Perëndimore',
-        standard: 'Ora standarde e Afrikës Perëndimore',
-        daylight: 'Ora verore e Afrikës Perëndimore',
-      ),
-    ),
-    'Alaska': MetaZone(
-      code: 'Alaska',
-      long: TimeZoneName(
-        generic: 'Ora e Alaskës',
-        standard: 'Ora standarde e Alaskës',
-        daylight: 'Ora verore e Alaskës',
-      ),
-    ),
-    'Almaty': MetaZone(
-      code: 'Almaty',
-      long: TimeZoneName(
-        generic: 'Ora e Almatit',
-        standard: 'Ora standarde e Almatit',
-        daylight: 'Ora verore e Almatit',
-      ),
-    ),
-    'Amazon': MetaZone(
-      code: 'Amazon',
-      long: TimeZoneName(
-        generic: 'Ora e Amazonës',
-        standard: 'Ora standarde e Amazonës',
-        daylight: 'Ora verore e Amazonës',
-      ),
-    ),
-    'America_Central': MetaZone(
-      code: 'America_Central',
-      long: TimeZoneName(
-        generic: 'Ora e SHBA-së Qendrore',
-        standard: 'Ora standarde e SHBA-së Qendrore',
-        daylight: 'Ora verore e SHBA-së Qendrore',
-      ),
-    ),
-    'America_Eastern': MetaZone(
-      code: 'America_Eastern',
-      long: TimeZoneName(
-        generic: 'Ora e SHBA-së Lindore',
-        standard: 'Ora standarde e SHBA-së Lindore',
-        daylight: 'Ora verore e SHBA-së Lindore',
-      ),
-    ),
-    'America_Mountain': MetaZone(
-      code: 'America_Mountain',
-      long: TimeZoneName(
-        generic: 'Ora e Territoreve Amerikane të Brezit Malor',
-        standard: 'Ora standarde e Territoreve Amerikane të Brezit Malor',
-        daylight: 'Ora verore e Territoreve Amerikane të Brezit Malor',
-      ),
-    ),
-    'America_Pacific': MetaZone(
-      code: 'America_Pacific',
-      long: TimeZoneName(
-        generic: 'Ora e Territoreve Amerikane të Bregut të Paqësorit',
-        standard:
-            'Ora standarde e Territoreve Amerikane të Bregut të Paqësorit',
-        daylight: 'Ora verore e Territoreve Amerikane të Bregut të Paqësorit',
-      ),
-    ),
-    'Anadyr': MetaZone(
-      code: 'Anadyr',
-      long: TimeZoneName(
-        generic: 'Ora e Anadirit',
-        standard: 'Ora standarde e Anadirit',
-        daylight: 'Ora verore e Anadirit',
-      ),
-    ),
-    'Apia': MetaZone(
-      code: 'Apia',
-      long: TimeZoneName(
-        generic: 'Ora e Apias',
-        standard: 'Ora standarde e Apias',
-        daylight: 'Ora verore e Apias',
-      ),
-    ),
-    'Aqtau': MetaZone(
-      code: 'Aqtau',
-      long: TimeZoneName(
-        generic: 'Ora e Aktaut',
-        standard: 'Ora standarde e Aktaut',
-        daylight: 'Ora verore e Aktaut',
-      ),
-    ),
-    'Aqtobe': MetaZone(
-      code: 'Aqtobe',
-      long: TimeZoneName(
-        generic: 'Ora e Aktobit',
-        standard: 'Ora standarde e Aktobit',
-        daylight: 'Ora verore e Aktobit',
-      ),
-    ),
-    'Arabian': MetaZone(
-      code: 'Arabian',
-      long: TimeZoneName(
-        generic: 'Ora arabe',
-        standard: 'Ora standarde arabe',
-        daylight: 'Ora verore arabe',
-      ),
-    ),
-    'Argentina': MetaZone(
-      code: 'Argentina',
-      long: TimeZoneName(
-        generic: 'Ora e Argjentinës',
-        standard: 'Ora standarde e Argjentinës',
-        daylight: 'Ora verore e Argjentinës',
-      ),
-    ),
-    'Argentina_Western': MetaZone(
-      code: 'Argentina_Western',
-      long: TimeZoneName(
-        generic: 'Ora e Argjentinës Perëndimore',
-        standard: 'Ora standarde e Argjentinës Perëndimore',
-        daylight: 'Ora verore e Argjentinës Perëndimore',
-      ),
-    ),
-    'Armenia': MetaZone(
-      code: 'Armenia',
-      long: TimeZoneName(
-        generic: 'Ora e Armenisë',
-        standard: 'Ora standarde e Armenisë',
-        daylight: 'Ora verore e Armenisë',
-      ),
-    ),
-    'Atlantic': MetaZone(
-      code: 'Atlantic',
-      long: TimeZoneName(
-        generic: 'Ora e Atlantikut',
-        standard: 'Ora standarde e Atlantikut',
-        daylight: 'Ora verore e Atlantikut',
-      ),
-    ),
-    'Australia_Central': MetaZone(
-      code: 'Australia_Central',
-      long: TimeZoneName(
-        generic: 'Ora e Australisë Qendrore',
-        standard: 'Ora standarde e Australisë Qendrore',
-        daylight: 'Ora verore e Australisë Qendrore',
-      ),
-    ),
-    'Australia_CentralWestern': MetaZone(
-      code: 'Australia_CentralWestern',
-      long: TimeZoneName(
-        generic: 'Ora e Australisë Qendroro-Perëndimore',
-        standard: 'Ora standarde e Australisë Qendroro-Perëndimore',
-        daylight: 'Ora verore e Australisë Qendroro-Perëndimore',
-      ),
-    ),
-    'Australia_Eastern': MetaZone(
-      code: 'Australia_Eastern',
-      long: TimeZoneName(
-        generic: 'Ora e Australisë Lindore',
-        standard: 'Ora standarde e Australisë Lindore',
-        daylight: 'Ora verore e Australisë Lindore',
-      ),
-    ),
-    'Australia_Western': MetaZone(
-      code: 'Australia_Western',
-      long: TimeZoneName(
-        generic: 'Ora e Australisë Perëndimore',
-        standard: 'Ora standarde e Australisë Perëndimore',
-        daylight: 'Ora verore e Australisë Perëndimore',
-      ),
-    ),
-    'Azerbaijan': MetaZone(
-      code: 'Azerbaijan',
-      long: TimeZoneName(
-        generic: 'Ora e Azerbajxhanit',
-        standard: 'Ora standarde e Azerbajxhanit',
-        daylight: 'Ora verore e Azerbajxhanit',
-      ),
-    ),
-    'Azores': MetaZone(
-      code: 'Azores',
-      long: TimeZoneName(
-        generic: 'Ora e Azoreve',
-        standard: 'Ora standarde e Azoreve',
-        daylight: 'Ora verore e Azoreve',
-      ),
-    ),
-    'Bangladesh': MetaZone(
-      code: 'Bangladesh',
-      long: TimeZoneName(
-        generic: 'Ora e Bangladeshit',
-        standard: 'Ora standarde e Bangladeshit',
-        daylight: 'Ora verore e Bangladeshit',
-      ),
-    ),
-    'Bhutan': MetaZone(
-      code: 'Bhutan',
-      long: TimeZoneName(
-        standard: 'Ora e Butanit',
-      ),
-    ),
-    'Bolivia': MetaZone(
-      code: 'Bolivia',
-      long: TimeZoneName(
-        standard: 'Ora e Bolivisë',
-      ),
-    ),
-    'Brasilia': MetaZone(
-      code: 'Brasilia',
-      long: TimeZoneName(
-        generic: 'Ora e Brazilisë',
-        standard: 'Ora standarde e Brazilisë',
-        daylight: 'Ora verore e Brazilisë',
-      ),
-    ),
-    'Brunei': MetaZone(
-      code: 'Brunei',
-      long: TimeZoneName(
-        standard: 'Ora e Brunei-Durasalamit',
-      ),
-    ),
-    'Cape_Verde': MetaZone(
-      code: 'Cape_Verde',
-      long: TimeZoneName(
-        generic: 'Ora e Kepit të Gjelbër',
-        standard: 'Ora standarde e Kepit të Gjelbër',
-        daylight: 'Ora verore e Kepit të Gjelbër',
-      ),
-    ),
-    'Casey': MetaZone(
-      code: 'Casey',
-      long: TimeZoneName(
-        standard: 'Ora e Kejsit',
-      ),
-    ),
-    'Chamorro': MetaZone(
-      code: 'Chamorro',
-      long: TimeZoneName(
-        standard: 'Ora e Kamorros',
-      ),
-    ),
-    'Chatham': MetaZone(
-      code: 'Chatham',
-      long: TimeZoneName(
-        generic: 'Ora e Katamit',
-        standard: 'Ora standarde e Katamit',
-        daylight: 'Ora verore e Katamit',
-      ),
-    ),
-    'Chile': MetaZone(
-      code: 'Chile',
-      long: TimeZoneName(
-        generic: 'Ora e Kilit',
-        standard: 'Ora standarde e Kilit',
-        daylight: 'Ora verore e Kilit',
-      ),
-    ),
-    'China': MetaZone(
-      code: 'China',
-      long: TimeZoneName(
-        generic: 'Ora e Kinës',
-        standard: 'Ora standarde e Kinës',
-        daylight: 'Ora verore e Kinës',
-      ),
-    ),
-    'Christmas': MetaZone(
-      code: 'Christmas',
-      long: TimeZoneName(
-        standard: 'Ora e Ishullit të Krishtlindjeve',
-      ),
-    ),
-    'Cocos': MetaZone(
-      code: 'Cocos',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve Kokos',
-      ),
-    ),
-    'Colombia': MetaZone(
-      code: 'Colombia',
-      long: TimeZoneName(
-        generic: 'Ora e Kolumbisë',
-        standard: 'Ora standarde e Kolumbisë',
-        daylight: 'Ora verore e Kolumbisë',
-      ),
-    ),
-    'Cook': MetaZone(
-      code: 'Cook',
-      long: TimeZoneName(
-        generic: 'Ora e Ishujve Kuk',
-        standard: 'Ora standarde e Ishujve Kuk',
-        daylight: 'Ora verore e Ishujve Kuk',
-      ),
-    ),
-    'Cuba': MetaZone(
-      code: 'Cuba',
-      long: TimeZoneName(
-        generic: 'Ora e Kubës',
-        standard: 'Ora standarde e Kubës',
-        daylight: 'Ora verore e Kubës',
-      ),
-    ),
-    'Davis': MetaZone(
-      code: 'Davis',
-      long: TimeZoneName(
-        standard: 'Ora e Dejvisit',
-      ),
-    ),
-    'DumontDUrville': MetaZone(
-      code: 'DumontDUrville',
-      long: TimeZoneName(
-        standard: 'Ora e Dumont-d’Urvilës',
-      ),
-    ),
-    'East_Timor': MetaZone(
-      code: 'East_Timor',
-      long: TimeZoneName(
-        standard: 'Ora e Timorit Lindor',
-      ),
-    ),
-    'Easter': MetaZone(
-      code: 'Easter',
-      long: TimeZoneName(
-        generic: 'Ora e Ishullit të Pashkës',
-        standard: 'Ora standarde e Ishullit të Pashkës',
-        daylight: 'Ora verore e Ishullit të Pashkës',
-      ),
-    ),
-    'Ecuador': MetaZone(
-      code: 'Ecuador',
-      long: TimeZoneName(
-        standard: 'Ora e Ekuadorit',
-      ),
-    ),
-    'Europe_Central': MetaZone(
-      code: 'Europe_Central',
-      long: TimeZoneName(
-        generic: 'Ora e Evropës Qendrore',
-        standard: 'Ora standarde e Evropës Qendrore',
-        daylight: 'Ora verore e Evropës Qendrore',
-      ),
-    ),
-    'Europe_Eastern': MetaZone(
-      code: 'Europe_Eastern',
-      long: TimeZoneName(
-        generic: 'Ora e Evropës Lindore',
-        standard: 'Ora standarde e Evropës Lindore',
-        daylight: 'Ora verore e Evropës Lindore',
-      ),
-    ),
-    'Europe_Further_Eastern': MetaZone(
-      code: 'Europe_Further_Eastern',
-      long: TimeZoneName(
-        standard: 'Ora e Evropës së Largët Lindore',
-      ),
-    ),
-    'Europe_Western': MetaZone(
-      code: 'Europe_Western',
-      long: TimeZoneName(
-        generic: 'Ora e Evropës Perëndimore',
-        standard: 'Ora standarde e Evropës Perëndimore',
-        daylight: 'Ora verore e Evropës Perëndimore',
-      ),
-    ),
-    'Falkland': MetaZone(
-      code: 'Falkland',
-      long: TimeZoneName(
-        generic: 'Ora e Ishujve Falkland',
-        standard: 'Ora standarde e Ishujve Falkland',
-        daylight: 'Ora verore e Ishujve Falkland',
-      ),
-    ),
-    'Fiji': MetaZone(
-      code: 'Fiji',
-      long: TimeZoneName(
-        generic: 'Ora e Fixhit',
-        standard: 'Ora standarde e Fixhit',
-        daylight: 'Ora verore e Fixhit',
-      ),
-    ),
-    'French_Guiana': MetaZone(
-      code: 'French_Guiana',
-      long: TimeZoneName(
-        standard: 'Ora e Guajanës Franceze',
-      ),
-    ),
-    'French_Southern': MetaZone(
-      code: 'French_Southern',
-      long: TimeZoneName(
-        standard: 'Ora e Territoreve Jugore dhe Antarktike Franceze',
-      ),
-    ),
-    'Galapagos': MetaZone(
-      code: 'Galapagos',
-      long: TimeZoneName(
-        standard: 'Ora e Galapagosit',
-      ),
-    ),
-    'Gambier': MetaZone(
-      code: 'Gambier',
-      long: TimeZoneName(
-        standard: 'Ora e Gambierit',
-      ),
-    ),
-    'Georgia': MetaZone(
-      code: 'Georgia',
-      long: TimeZoneName(
-        generic: 'Ora e Gjeorgjisë',
-        standard: 'Ora standarde e Gjeorgjisë',
-        daylight: 'Ora verore e Gjeorgjisë',
-      ),
-    ),
-    'Gilbert_Islands': MetaZone(
-      code: 'Gilbert_Islands',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve Gilbert',
-      ),
-    ),
-    'GMT': MetaZone(
-      code: 'GMT',
-      long: TimeZoneName(
-        standard: 'Ora e Grinuiçit',
-      ),
-    ),
-    'Greenland_Eastern': MetaZone(
-      code: 'Greenland_Eastern',
-      long: TimeZoneName(
-        generic: 'Ora e Grenlandës Lindore',
-        standard: 'Ora standarde e Grenlandës Lindore',
-        daylight: 'Ora verore e Grenlandës Lindore',
-      ),
-    ),
-    'Greenland_Western': MetaZone(
-      code: 'Greenland_Western',
-      long: TimeZoneName(
-        generic: 'Ora e Grënlandës Perëndimore',
-        standard: 'Ora standarde e Grënlandës Perëndimore',
-        daylight: 'Ora verore e Grënlandës Perëndimore',
-      ),
-    ),
-    'Guam': MetaZone(
-      code: 'Guam',
-      long: TimeZoneName(
-        standard: 'Ora e Guamit',
-      ),
-    ),
-    'Gulf': MetaZone(
-      code: 'Gulf',
-      long: TimeZoneName(
-        standard: 'Ora e Gjirit',
-      ),
-    ),
-    'Guyana': MetaZone(
-      code: 'Guyana',
-      long: TimeZoneName(
-        standard: 'Ora e Guajanës',
-      ),
-    ),
-    'Hawaii_Aleutian': MetaZone(
-      code: 'Hawaii_Aleutian',
-      long: TimeZoneName(
-        generic: 'Ora e Ishujve Hauai-Aleutian',
-        standard: 'Ora standarde e Ishujve Hauai-Aleutian',
-        daylight: 'Ora verore e Ishujve Hauai-Aleutian',
-      ),
-    ),
-    'Hong_Kong': MetaZone(
-      code: 'Hong_Kong',
-      long: TimeZoneName(
-        generic: 'Ora e Hong-Kongut',
-        standard: 'Ora standarde e Hong-Kongut',
-        daylight: 'Ora verore e Hong-Kongut',
-      ),
-    ),
-    'Hovd': MetaZone(
-      code: 'Hovd',
-      long: TimeZoneName(
-        generic: 'Ora e Hovdit',
-        standard: 'Ora standarde e Hovdit',
-        daylight: 'Ora verore e Hovdit',
-      ),
-    ),
-    'India': MetaZone(
-      code: 'India',
-      long: TimeZoneName(
-        standard: 'Ora standarde e Indisë',
-      ),
-    ),
-    'Indian_Ocean': MetaZone(
-      code: 'Indian_Ocean',
-      long: TimeZoneName(
-        standard: 'Ora e Oqeanit Indian',
-      ),
-    ),
-    'Indochina': MetaZone(
-      code: 'Indochina',
-      long: TimeZoneName(
-        standard: 'Ora e Indokinës',
-      ),
-    ),
-    'Indonesia_Central': MetaZone(
-      code: 'Indonesia_Central',
-      long: TimeZoneName(
-        standard: 'Ora e Indonezisë Qendrore',
-      ),
-    ),
-    'Indonesia_Eastern': MetaZone(
-      code: 'Indonesia_Eastern',
-      long: TimeZoneName(
-        standard: 'Ora e Indonezisë Lindore',
-      ),
-    ),
-    'Indonesia_Western': MetaZone(
-      code: 'Indonesia_Western',
-      long: TimeZoneName(
-        standard: 'Ora e Indonezisë Perëndimore',
-      ),
-    ),
-    'Iran': MetaZone(
-      code: 'Iran',
-      long: TimeZoneName(
-        generic: 'Ora e Iranit',
-        standard: 'Ora standarde e Iranit',
-        daylight: 'Ora verore e Iranit',
-      ),
-    ),
-    'Irkutsk': MetaZone(
-      code: 'Irkutsk',
-      long: TimeZoneName(
-        generic: 'Ora e Irkutskut',
-        standard: 'Ora standarde e Irkutskut',
-        daylight: 'Ora verore e Irkutskut',
-      ),
-    ),
-    'Israel': MetaZone(
-      code: 'Israel',
-      long: TimeZoneName(
-        generic: 'Ora e Izraelit',
-        standard: 'Ora standarde e Izraelit',
-        daylight: 'Ora verore e Izraelit',
-      ),
-    ),
-    'Japan': MetaZone(
-      code: 'Japan',
-      long: TimeZoneName(
-        generic: 'Ora e Japonisë',
-        standard: 'Ora standarde e Japonisë',
-        daylight: 'Ora verore e Japonisë',
-      ),
-    ),
-    'Kamchatka': MetaZone(
-      code: 'Kamchatka',
-      long: TimeZoneName(
-        generic: 'Ora e Petropavllovsk-Kamçatkës',
-        standard: 'Ora standarde e Petropavllovsk-Kamçatkës',
-        daylight: 'Ora verore e Petropavllovsk-Kamçatkës',
-      ),
-    ),
-    'Kazakhstan': MetaZone(
-      code: 'Kazakhstan',
-      long: TimeZoneName(
-        standard: 'Ora e Kazakistanit',
-      ),
-    ),
-    'Kazakhstan_Eastern': MetaZone(
-      code: 'Kazakhstan_Eastern',
-      long: TimeZoneName(
-        standard: 'Ora e Kazakistanit Lindor',
-      ),
-    ),
-    'Kazakhstan_Western': MetaZone(
-      code: 'Kazakhstan_Western',
-      long: TimeZoneName(
-        standard: 'Ora e Kazakistanit Perëndimor',
-      ),
-    ),
-    'Korea': MetaZone(
-      code: 'Korea',
-      long: TimeZoneName(
-        generic: 'Ora koreane',
-        standard: 'Ora standarde koreane',
-        daylight: 'Ora verore koreane',
-      ),
-    ),
-    'Kosrae': MetaZone(
-      code: 'Kosrae',
-      long: TimeZoneName(
-        standard: 'Ora e Kosrës',
-      ),
-    ),
-    'Krasnoyarsk': MetaZone(
-      code: 'Krasnoyarsk',
-      long: TimeZoneName(
-        generic: 'Ora e Krasnojarskut',
-        standard: 'Ora standarde e Krasnojarskut',
-        daylight: 'Ora verore e Krasnojarskut',
-      ),
-    ),
-    'Kyrgystan': MetaZone(
-      code: 'Kyrgystan',
-      long: TimeZoneName(
-        standard: 'Ora e Kirgizisë',
-      ),
-    ),
-    'Lanka': MetaZone(
-      code: 'Lanka',
-      long: TimeZoneName(
-        standard: 'Ora e Lankasë',
-      ),
-    ),
-    'Line_Islands': MetaZone(
-      code: 'Line_Islands',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve Sporadikë Ekuatorialë',
-      ),
-    ),
-    'Lord_Howe': MetaZone(
-      code: 'Lord_Howe',
-      long: TimeZoneName(
-        generic: 'Ora e Lord-Houit',
-        standard: 'Ora standarde e Lord-Houit',
-        daylight: 'Ora verore e Lord-Houit',
-      ),
-    ),
-    'Macau': MetaZone(
-      code: 'Macau',
-      long: TimeZoneName(
-        generic: 'Ora e Makaos',
-        standard: 'Ora standarde e Makaos',
-        daylight: 'Ora verore e Makaos',
-      ),
-    ),
-    'Magadan': MetaZone(
-      code: 'Magadan',
-      long: TimeZoneName(
-        generic: 'Ora e Magadanit',
-        standard: 'Ora standarde e Magadanit',
-        daylight: 'Ora verore e Magadanit',
-      ),
-    ),
-    'Malaysia': MetaZone(
-      code: 'Malaysia',
-      long: TimeZoneName(
-        standard: 'Ora e Malajzisë',
-      ),
-    ),
-    'Maldives': MetaZone(
-      code: 'Maldives',
-      long: TimeZoneName(
-        standard: 'Ora e Maldiveve',
-      ),
-    ),
-    'Marquesas': MetaZone(
-      code: 'Marquesas',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve Markezë',
-      ),
-    ),
-    'Marshall_Islands': MetaZone(
-      code: 'Marshall_Islands',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve Marshall',
-      ),
-    ),
-    'Mauritius': MetaZone(
-      code: 'Mauritius',
-      long: TimeZoneName(
-        generic: 'Ora e Mauritiusit',
-        standard: 'Ora standarde e Mauritiusit',
-        daylight: 'Ora verore e Mauritiusit',
-      ),
-    ),
-    'Mawson': MetaZone(
-      code: 'Mawson',
-      long: TimeZoneName(
-        standard: 'Ora e Mausonit',
-      ),
-    ),
-    'Mexico_Pacific': MetaZone(
-      code: 'Mexico_Pacific',
-      long: TimeZoneName(
-        generic: 'Ora e Territoreve Meksikane të Bregut të Paqësorit',
-        standard:
-            'Ora standarde e Territoreve Meksikane të Bregut të Paqësorit',
-        daylight: 'Ora verore e Territoreve Meksikane të Bregut të Paqësorit',
-      ),
-    ),
-    'Mongolia': MetaZone(
-      code: 'Mongolia',
-      long: TimeZoneName(
-        generic: 'Ora e Ulan-Batorit',
-        standard: 'Ora standarde e Ulan-Batorit',
-        daylight: 'Ora verore e Ulan-Batorit',
-      ),
-    ),
-    'Moscow': MetaZone(
-      code: 'Moscow',
-      long: TimeZoneName(
-        generic: 'Ora e Moskës',
-        standard: 'Ora standarde e Moskës',
-        daylight: 'Ora verore e Moskës',
-      ),
-    ),
-    'Myanmar': MetaZone(
-      code: 'Myanmar',
-      long: TimeZoneName(
-        standard: 'Ora e Mianmarit',
-      ),
-    ),
-    'Nauru': MetaZone(
-      code: 'Nauru',
-      long: TimeZoneName(
-        standard: 'Ora e Naurusë',
-      ),
-    ),
-    'Nepal': MetaZone(
-      code: 'Nepal',
-      long: TimeZoneName(
-        standard: 'Ora e Nepalit',
-      ),
-    ),
-    'New_Caledonia': MetaZone(
-      code: 'New_Caledonia',
-      long: TimeZoneName(
-        generic: 'Ora e Kaledonisë së Re',
-        standard: 'Ora standarde e Kaledonisë së Re',
-        daylight: 'Ora verore e Kaledonisë së Re',
-      ),
-    ),
-    'New_Zealand': MetaZone(
-      code: 'New_Zealand',
-      long: TimeZoneName(
-        generic: 'Ora e Zelandës së Re',
-        standard: 'Ora standarde e Zelandës së Re',
-        daylight: 'Ora verore e Zelandës së Re',
-      ),
-    ),
-    'Newfoundland': MetaZone(
-      code: 'Newfoundland',
-      long: TimeZoneName(
-        generic: 'Ora e Njufaundlendit [Tokës së Re]',
-        standard: 'Ora standarde e Njufaundlendit [Tokës së Re]',
-        daylight: 'Ora verore e Njufaundlendit [Tokës së Re]',
-      ),
-    ),
-    'Niue': MetaZone(
-      code: 'Niue',
-      long: TimeZoneName(
-        standard: 'Ora e Niuesë',
-      ),
-    ),
-    'Norfolk': MetaZone(
-      code: 'Norfolk',
-      long: TimeZoneName(
-        generic: 'Ora e Ishullit Norfolk',
-        standard: 'Ora standarde e Ishullit Norfolk',
-        daylight: 'Ora verore e Ishullit Norfolk',
-      ),
-    ),
-    'Noronha': MetaZone(
-      code: 'Noronha',
-      long: TimeZoneName(
-        generic: 'Ora e Fernando-de-Noronjës',
-        standard: 'Ora standarde e Fernando-de-Noronjës',
-        daylight: 'Ora verore e Fernando-de-Noronjës',
-      ),
-    ),
-    'North_Mariana': MetaZone(
-      code: 'North_Mariana',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve të Marianës së Veriut',
-      ),
-    ),
-    'Novosibirsk': MetaZone(
-      code: 'Novosibirsk',
-      long: TimeZoneName(
-        generic: 'Ora e Novosibirskut',
-        standard: 'Ora standarde e Novosibirskut',
-        daylight: 'Ora verore e Novosibirskut',
-      ),
-    ),
-    'Omsk': MetaZone(
-      code: 'Omsk',
-      long: TimeZoneName(
-        generic: 'Ora e Omskut',
-        standard: 'Ora standarde e Omskut',
-        daylight: 'Ora verore e Omskut',
-      ),
-    ),
-    'Pakistan': MetaZone(
-      code: 'Pakistan',
-      long: TimeZoneName(
-        generic: 'Ora e Pakistanit',
-        standard: 'Ora standarde e Pakistanit',
-        daylight: 'Ora verore e Pakistanit',
-      ),
-    ),
-    'Palau': MetaZone(
-      code: 'Palau',
-      long: TimeZoneName(
-        standard: 'Ora e Palaut',
-      ),
-    ),
-    'Papua_New_Guinea': MetaZone(
-      code: 'Papua_New_Guinea',
-      long: TimeZoneName(
-        standard: 'Ora e Guinesë së Re-Papua',
-      ),
-    ),
-    'Paraguay': MetaZone(
-      code: 'Paraguay',
-      long: TimeZoneName(
-        generic: 'Ora e Paraguait',
-        standard: 'Ora standarde e Paraguait',
-        daylight: 'Ora Verore e Paraguait',
-      ),
-    ),
-    'Peru': MetaZone(
-      code: 'Peru',
-      long: TimeZoneName(
-        generic: 'Ora e Perusë',
-        standard: 'Ora standarde e Perusë',
-        daylight: 'Ora verore e Perusë',
-      ),
-    ),
-    'Philippines': MetaZone(
-      code: 'Philippines',
-      long: TimeZoneName(
-        generic: 'Ora e Filipineve',
-        standard: 'Ora standarde e Filipineve',
-        daylight: 'Ora verore e Filipineve',
-      ),
-    ),
-    'Phoenix_Islands': MetaZone(
-      code: 'Phoenix_Islands',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve Feniks',
-      ),
-    ),
-    'Pierre_Miquelon': MetaZone(
-      code: 'Pierre_Miquelon',
-      long: TimeZoneName(
-        generic: 'Ora e Shën-Pier dhe Mikelon',
-        standard: 'Ora standarde e Shën-Pier dhe Mikelon',
-        daylight: 'Ora verore e Shën-Pier dhe Mikelon',
-      ),
-    ),
-    'Pitcairn': MetaZone(
-      code: 'Pitcairn',
-      long: TimeZoneName(
-        standard: 'Ora e Pitkernit',
-      ),
-    ),
-    'Ponape': MetaZone(
-      code: 'Ponape',
-      long: TimeZoneName(
-        standard: 'Ora e Ponapeit',
-      ),
-    ),
-    'Pyongyang': MetaZone(
-      code: 'Pyongyang',
-      long: TimeZoneName(
-        standard: 'Ora e Penianit',
-      ),
-    ),
-    'Qyzylorda': MetaZone(
-      code: 'Qyzylorda',
-      long: TimeZoneName(
-        generic: 'Ora e Kizilordit',
-        standard: 'Ora standarde e Kizilordit',
-        daylight: 'Ora verore e Kizilordit',
-      ),
-    ),
-    'Reunion': MetaZone(
-      code: 'Reunion',
-      long: TimeZoneName(
-        standard: 'Ora e Reunionit',
-      ),
-    ),
-    'Rothera': MetaZone(
-      code: 'Rothera',
-      long: TimeZoneName(
-        standard: 'Ora e Rodherës',
-      ),
-    ),
-    'Sakhalin': MetaZone(
-      code: 'Sakhalin',
-      long: TimeZoneName(
-        generic: 'Ora e Sakalinit',
-        standard: 'Ora standarde e Sakalinit',
-        daylight: 'Ora verore e Sakalinit',
-      ),
-    ),
-    'Samara': MetaZone(
-      code: 'Samara',
-      long: TimeZoneName(
-        generic: 'Ora e Samarës',
-        standard: 'Ora standarde e Samarës',
-        daylight: 'Ora verore e Samarës',
-      ),
-    ),
-    'Samoa': MetaZone(
-      code: 'Samoa',
-      long: TimeZoneName(
-        generic: 'Ora e Samoas',
-        standard: 'Ora standarde e Samoas',
-        daylight: 'Ora verore e Samoas',
-      ),
-    ),
-    'Seychelles': MetaZone(
-      code: 'Seychelles',
-      long: TimeZoneName(
-        standard: 'Ora e Sejshelleve',
-      ),
-    ),
-    'Singapore': MetaZone(
-      code: 'Singapore',
-      long: TimeZoneName(
-        standard: 'Ora e Singaporit',
-      ),
-    ),
-    'Solomon': MetaZone(
-      code: 'Solomon',
-      long: TimeZoneName(
-        standard: 'Ora e Ishujve Solomon',
-      ),
-    ),
-    'South_Georgia': MetaZone(
-      code: 'South_Georgia',
-      long: TimeZoneName(
-        standard: 'Ora e Xhorxhas të Jugut',
-      ),
-    ),
-    'Suriname': MetaZone(
-      code: 'Suriname',
-      long: TimeZoneName(
-        standard: 'Ora e Surinamit',
-      ),
-    ),
-    'Syowa': MetaZone(
-      code: 'Syowa',
-      long: TimeZoneName(
-        standard: 'Ora e Sjouit',
-      ),
-    ),
-    'Tahiti': MetaZone(
-      code: 'Tahiti',
-      long: TimeZoneName(
-        standard: 'Ora e Tahitit',
-      ),
-    ),
-    'Taipei': MetaZone(
-      code: 'Taipei',
-      long: TimeZoneName(
-        generic: 'Ora e Tajpeit',
-        standard: 'Ora standarde e Tajpeit',
-        daylight: 'Ora verore e Tajpeit',
-      ),
-    ),
-    'Tajikistan': MetaZone(
-      code: 'Tajikistan',
-      long: TimeZoneName(
-        standard: 'Ora e Taxhikistanit',
-      ),
-    ),
-    'Tokelau': MetaZone(
-      code: 'Tokelau',
-      long: TimeZoneName(
-        standard: 'Ora e Tokelaut',
-      ),
-    ),
-    'Tonga': MetaZone(
-      code: 'Tonga',
-      long: TimeZoneName(
-        generic: 'Ora e Tongës',
-        standard: 'Ora standarde e Tongës',
-        daylight: 'Ora verore e Tongës',
-      ),
-    ),
-    'Truk': MetaZone(
-      code: 'Truk',
-      long: TimeZoneName(
-        standard: 'Ora e Çukut',
-      ),
-    ),
-    'Turkmenistan': MetaZone(
-      code: 'Turkmenistan',
-      long: TimeZoneName(
-        generic: 'Ora e Turkmenistanit',
-        standard: 'Ora standarde e Turkmenistanit',
-        daylight: 'Ora verore e Turkmenistanit',
-      ),
-    ),
-    'Tuvalu': MetaZone(
-      code: 'Tuvalu',
-      long: TimeZoneName(
-        standard: 'Ora e Tuvalusë',
-      ),
-    ),
-    'Uruguay': MetaZone(
-      code: 'Uruguay',
-      long: TimeZoneName(
-        generic: 'Ora e Uruguait',
-        standard: 'Ora standarde e Uruguait',
-        daylight: 'Ora verore e Uruguait',
-      ),
-    ),
-    'Uzbekistan': MetaZone(
-      code: 'Uzbekistan',
-      long: TimeZoneName(
-        generic: 'Ora e Uzbekistanit',
-        standard: 'Ora standarde e Uzbekistanit',
-        daylight: 'Ora verore e Uzbekistanit',
-      ),
-    ),
-    'Vanuatu': MetaZone(
-      code: 'Vanuatu',
-      long: TimeZoneName(
-        generic: 'Ora e Vanuatusë',
-        standard: 'Ora standarde e Vanuatusë',
-        daylight: 'Ora verore e Vanuatusë',
-      ),
-    ),
-    'Venezuela': MetaZone(
-      code: 'Venezuela',
-      long: TimeZoneName(
-        standard: 'Ora e Venezuelës',
-      ),
-    ),
-    'Vladivostok': MetaZone(
-      code: 'Vladivostok',
-      long: TimeZoneName(
-        generic: 'Ora e Vladivostokut',
-        standard: 'Ora standarde e Vladivostokut',
-        daylight: 'Ora verore e Vladivostokut',
-      ),
-    ),
-    'Volgograd': MetaZone(
-      code: 'Volgograd',
-      long: TimeZoneName(
-        generic: 'Ora e Volgogradit',
-        standard: 'Ora standarde e Volgogradit',
-        daylight: 'Ora verore e Volgogradit',
-      ),
-    ),
-    'Vostok': MetaZone(
-      code: 'Vostok',
-      long: TimeZoneName(
-        standard: 'Ora e Vostokut',
-      ),
-    ),
-    'Wake': MetaZone(
-      code: 'Wake',
-      long: TimeZoneName(
-        standard: 'Ora e Ishullit Uejk',
-      ),
-    ),
-    'Wallis': MetaZone(
-      code: 'Wallis',
-      long: TimeZoneName(
-        standard: 'Ora e Uollisit dhe Futunës',
-      ),
-    ),
-    'Yakutsk': MetaZone(
-      code: 'Yakutsk',
-      long: TimeZoneName(
-        generic: 'Ora e Jakutskut',
-        standard: 'Ora standarde e Jakutskut',
-        daylight: 'Ora verore e Jakutskut',
-      ),
-    ),
-    'Yekaterinburg': MetaZone(
-      code: 'Yekaterinburg',
-      long: TimeZoneName(
-        generic: 'Ora e Ekaterinburgut',
-        standard: 'Ora standarde e Ekaterinburgut',
-        daylight: 'Ora verore e Ekaterinburgut',
-      ),
-    ),
-    'Yukon': MetaZone(
-      code: 'Yukon',
-      long: TimeZoneName(
-        standard: 'Ora e Jukonit',
-      ),
-    ),
-  }, (key) => key.toLowerCase());
+  final metaZoneNames = const {
+    'Acre': MetaZone('Acre',
+        long: TimeZoneName(
+            generic: 'Ora e Ejkrit [Ako]',
+            standard: 'Ora standarde e Ejkrit [Ako]',
+            daylight: 'Ora verore e Ejkrit [Ako]')),
+    'Afghanistan': MetaZone('Afghanistan',
+        long: TimeZoneName(standard: 'Ora e Afganistanit')),
+    'Africa_Central': MetaZone('Africa_Central',
+        long: TimeZoneName(standard: 'Ora e Afrikës Qendrore')),
+    'Africa_Eastern': MetaZone('Africa_Eastern',
+        long: TimeZoneName(standard: 'Ora e Afrikës Lindore')),
+    'Africa_Southern': MetaZone('Africa_Southern',
+        long: TimeZoneName(standard: 'Ora standarde e Afrikës Jugore')),
+    'Africa_Western': MetaZone('Africa_Western',
+        long: TimeZoneName(
+            generic: 'Ora e Afrikës Perëndimore',
+            standard: 'Ora standarde e Afrikës Perëndimore',
+            daylight: 'Ora verore e Afrikës Perëndimore')),
+    'Alaska': MetaZone('Alaska',
+        long: TimeZoneName(
+            generic: 'Ora e Alaskës',
+            standard: 'Ora standarde e Alaskës',
+            daylight: 'Ora verore e Alaskës')),
+    'Almaty': MetaZone('Almaty',
+        long: TimeZoneName(
+            generic: 'Ora e Almatit',
+            standard: 'Ora standarde e Almatit',
+            daylight: 'Ora verore e Almatit')),
+    'Amazon': MetaZone('Amazon',
+        long: TimeZoneName(
+            generic: 'Ora e Amazonës',
+            standard: 'Ora standarde e Amazonës',
+            daylight: 'Ora verore e Amazonës')),
+    'America_Central': MetaZone('America_Central',
+        long: TimeZoneName(
+            generic: 'Ora e SHBA-së Qendrore',
+            standard: 'Ora standarde e SHBA-së Qendrore',
+            daylight: 'Ora verore e SHBA-së Qendrore')),
+    'America_Eastern': MetaZone('America_Eastern',
+        long: TimeZoneName(
+            generic: 'Ora e SHBA-së Lindore',
+            standard: 'Ora standarde e SHBA-së Lindore',
+            daylight: 'Ora verore e SHBA-së Lindore')),
+    'America_Mountain': MetaZone('America_Mountain',
+        long: TimeZoneName(
+            generic: 'Ora e Territoreve Amerikane të Brezit Malor',
+            standard: 'Ora standarde e Territoreve Amerikane të Brezit Malor',
+            daylight: 'Ora verore e Territoreve Amerikane të Brezit Malor')),
+    'America_Pacific': MetaZone('America_Pacific',
+        long: TimeZoneName(
+            generic: 'Ora e Territoreve Amerikane të Bregut të Paqësorit',
+            standard:
+                'Ora standarde e Territoreve Amerikane të Bregut të Paqësorit',
+            daylight:
+                'Ora verore e Territoreve Amerikane të Bregut të Paqësorit')),
+    'Anadyr': MetaZone('Anadyr',
+        long: TimeZoneName(
+            generic: 'Ora e Anadirit',
+            standard: 'Ora standarde e Anadirit',
+            daylight: 'Ora verore e Anadirit')),
+    'Apia': MetaZone('Apia',
+        long: TimeZoneName(
+            generic: 'Ora e Apias',
+            standard: 'Ora standarde e Apias',
+            daylight: 'Ora verore e Apias')),
+    'Aqtau': MetaZone('Aqtau',
+        long: TimeZoneName(
+            generic: 'Ora e Aktaut',
+            standard: 'Ora standarde e Aktaut',
+            daylight: 'Ora verore e Aktaut')),
+    'Aqtobe': MetaZone('Aqtobe',
+        long: TimeZoneName(
+            generic: 'Ora e Aktobit',
+            standard: 'Ora standarde e Aktobit',
+            daylight: 'Ora verore e Aktobit')),
+    'Arabian': MetaZone('Arabian',
+        long: TimeZoneName(
+            generic: 'Ora arabe',
+            standard: 'Ora standarde arabe',
+            daylight: 'Ora verore arabe')),
+    'Argentina': MetaZone('Argentina',
+        long: TimeZoneName(
+            generic: 'Ora e Argjentinës',
+            standard: 'Ora standarde e Argjentinës',
+            daylight: 'Ora verore e Argjentinës')),
+    'Argentina_Western': MetaZone('Argentina_Western',
+        long: TimeZoneName(
+            generic: 'Ora e Argjentinës Perëndimore',
+            standard: 'Ora standarde e Argjentinës Perëndimore',
+            daylight: 'Ora verore e Argjentinës Perëndimore')),
+    'Armenia': MetaZone('Armenia',
+        long: TimeZoneName(
+            generic: 'Ora e Armenisë',
+            standard: 'Ora standarde e Armenisë',
+            daylight: 'Ora verore e Armenisë')),
+    'Atlantic': MetaZone('Atlantic',
+        long: TimeZoneName(
+            generic: 'Ora e Atlantikut',
+            standard: 'Ora standarde e Atlantikut',
+            daylight: 'Ora verore e Atlantikut')),
+    'Australia_Central': MetaZone('Australia_Central',
+        long: TimeZoneName(
+            generic: 'Ora e Australisë Qendrore',
+            standard: 'Ora standarde e Australisë Qendrore',
+            daylight: 'Ora verore e Australisë Qendrore')),
+    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
+        long: TimeZoneName(
+            generic: 'Ora e Australisë Qendroro-Perëndimore',
+            standard: 'Ora standarde e Australisë Qendroro-Perëndimore',
+            daylight: 'Ora verore e Australisë Qendroro-Perëndimore')),
+    'Australia_Eastern': MetaZone('Australia_Eastern',
+        long: TimeZoneName(
+            generic: 'Ora e Australisë Lindore',
+            standard: 'Ora standarde e Australisë Lindore',
+            daylight: 'Ora verore e Australisë Lindore')),
+    'Australia_Western': MetaZone('Australia_Western',
+        long: TimeZoneName(
+            generic: 'Ora e Australisë Perëndimore',
+            standard: 'Ora standarde e Australisë Perëndimore',
+            daylight: 'Ora verore e Australisë Perëndimore')),
+    'Azerbaijan': MetaZone('Azerbaijan',
+        long: TimeZoneName(
+            generic: 'Ora e Azerbajxhanit',
+            standard: 'Ora standarde e Azerbajxhanit',
+            daylight: 'Ora verore e Azerbajxhanit')),
+    'Azores': MetaZone('Azores',
+        long: TimeZoneName(
+            generic: 'Ora e Azoreve',
+            standard: 'Ora standarde e Azoreve',
+            daylight: 'Ora verore e Azoreve')),
+    'Bangladesh': MetaZone('Bangladesh',
+        long: TimeZoneName(
+            generic: 'Ora e Bangladeshit',
+            standard: 'Ora standarde e Bangladeshit',
+            daylight: 'Ora verore e Bangladeshit')),
+    'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'Ora e Butanit')),
+    'Bolivia':
+        MetaZone('Bolivia', long: TimeZoneName(standard: 'Ora e Bolivisë')),
+    'Brasilia': MetaZone('Brasilia',
+        long: TimeZoneName(
+            generic: 'Ora e Brazilisë',
+            standard: 'Ora standarde e Brazilisë',
+            daylight: 'Ora verore e Brazilisë')),
+    'Brunei': MetaZone('Brunei',
+        long: TimeZoneName(standard: 'Ora e Brunei-Durasalamit')),
+    'Cape_Verde': MetaZone('Cape_Verde',
+        long: TimeZoneName(
+            generic: 'Ora e Kepit të Gjelbër',
+            standard: 'Ora standarde e Kepit të Gjelbër',
+            daylight: 'Ora verore e Kepit të Gjelbër')),
+    'Casey': MetaZone('Casey', long: TimeZoneName(standard: 'Ora e Kejsit')),
+    'Chamorro':
+        MetaZone('Chamorro', long: TimeZoneName(standard: 'Ora e Kamorros')),
+    'Chatham': MetaZone('Chatham',
+        long: TimeZoneName(
+            generic: 'Ora e Katamit',
+            standard: 'Ora standarde e Katamit',
+            daylight: 'Ora verore e Katamit')),
+    'Chile': MetaZone('Chile',
+        long: TimeZoneName(
+            generic: 'Ora e Kilit',
+            standard: 'Ora standarde e Kilit',
+            daylight: 'Ora verore e Kilit')),
+    'China': MetaZone('China',
+        long: TimeZoneName(
+            generic: 'Ora e Kinës',
+            standard: 'Ora standarde e Kinës',
+            daylight: 'Ora verore e Kinës')),
+    'Christmas': MetaZone('Christmas',
+        long: TimeZoneName(standard: 'Ora e Ishullit të Krishtlindjeve')),
+    'Cocos':
+        MetaZone('Cocos', long: TimeZoneName(standard: 'Ora e Ishujve Kokos')),
+    'Colombia': MetaZone('Colombia',
+        long: TimeZoneName(
+            generic: 'Ora e Kolumbisë',
+            standard: 'Ora standarde e Kolumbisë',
+            daylight: 'Ora verore e Kolumbisë')),
+    'Cook': MetaZone('Cook',
+        long: TimeZoneName(
+            generic: 'Ora e Ishujve Kuk',
+            standard: 'Ora standarde e Ishujve Kuk',
+            daylight: 'Ora verore e Ishujve Kuk')),
+    'Cuba': MetaZone('Cuba',
+        long: TimeZoneName(
+            generic: 'Ora e Kubës',
+            standard: 'Ora standarde e Kubës',
+            daylight: 'Ora verore e Kubës')),
+    'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'Ora e Dejvisit')),
+    'DumontDUrville': MetaZone('DumontDUrville',
+        long: TimeZoneName(standard: 'Ora e Dumont-d’Urvilës')),
+    'East_Timor': MetaZone('East_Timor',
+        long: TimeZoneName(standard: 'Ora e Timorit Lindor')),
+    'Easter': MetaZone('Easter',
+        long: TimeZoneName(
+            generic: 'Ora e Ishullit të Pashkës',
+            standard: 'Ora standarde e Ishullit të Pashkës',
+            daylight: 'Ora verore e Ishullit të Pashkës')),
+    'Ecuador':
+        MetaZone('Ecuador', long: TimeZoneName(standard: 'Ora e Ekuadorit')),
+    'Europe_Central': MetaZone('Europe_Central',
+        long: TimeZoneName(
+            generic: 'Ora e Evropës Qendrore',
+            standard: 'Ora standarde e Evropës Qendrore',
+            daylight: 'Ora verore e Evropës Qendrore')),
+    'Europe_Eastern': MetaZone('Europe_Eastern',
+        long: TimeZoneName(
+            generic: 'Ora e Evropës Lindore',
+            standard: 'Ora standarde e Evropës Lindore',
+            daylight: 'Ora verore e Evropës Lindore')),
+    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
+        long: TimeZoneName(standard: 'Ora e Evropës së Largët Lindore')),
+    'Europe_Western': MetaZone('Europe_Western',
+        long: TimeZoneName(
+            generic: 'Ora e Evropës Perëndimore',
+            standard: 'Ora standarde e Evropës Perëndimore',
+            daylight: 'Ora verore e Evropës Perëndimore')),
+    'Falkland': MetaZone('Falkland',
+        long: TimeZoneName(
+            generic: 'Ora e Ishujve Falkland',
+            standard: 'Ora standarde e Ishujve Falkland',
+            daylight: 'Ora verore e Ishujve Falkland')),
+    'Fiji': MetaZone('Fiji',
+        long: TimeZoneName(
+            generic: 'Ora e Fixhit',
+            standard: 'Ora standarde e Fixhit',
+            daylight: 'Ora verore e Fixhit')),
+    'French_Guiana': MetaZone('French_Guiana',
+        long: TimeZoneName(standard: 'Ora e Guajanës Franceze')),
+    'French_Southern': MetaZone('French_Southern',
+        long: TimeZoneName(
+            standard: 'Ora e Territoreve Jugore dhe Antarktike Franceze')),
+    'Galapagos': MetaZone('Galapagos',
+        long: TimeZoneName(standard: 'Ora e Galapagosit')),
+    'Gambier':
+        MetaZone('Gambier', long: TimeZoneName(standard: 'Ora e Gambierit')),
+    'Georgia': MetaZone('Georgia',
+        long: TimeZoneName(
+            generic: 'Ora e Gjeorgjisë',
+            standard: 'Ora standarde e Gjeorgjisë',
+            daylight: 'Ora verore e Gjeorgjisë')),
+    'Gilbert_Islands': MetaZone('Gilbert_Islands',
+        long: TimeZoneName(standard: 'Ora e Ishujve Gilbert')),
+    'GMT': MetaZone('GMT', long: TimeZoneName(standard: 'Ora e Grinuiçit')),
+    'Greenland_Eastern': MetaZone('Greenland_Eastern',
+        long: TimeZoneName(
+            generic: 'Ora e Grenlandës Lindore',
+            standard: 'Ora standarde e Grenlandës Lindore',
+            daylight: 'Ora verore e Grenlandës Lindore')),
+    'Greenland_Western': MetaZone('Greenland_Western',
+        long: TimeZoneName(
+            generic: 'Ora e Grënlandës Perëndimore',
+            standard: 'Ora standarde e Grënlandës Perëndimore',
+            daylight: 'Ora verore e Grënlandës Perëndimore')),
+    'Guam': MetaZone('Guam', long: TimeZoneName(standard: 'Ora e Guamit')),
+    'Gulf': MetaZone('Gulf', long: TimeZoneName(standard: 'Ora e Gjirit')),
+    'Guyana':
+        MetaZone('Guyana', long: TimeZoneName(standard: 'Ora e Guajanës')),
+    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
+        long: TimeZoneName(
+            generic: 'Ora e Ishujve Hauai-Aleutian',
+            standard: 'Ora standarde e Ishujve Hauai-Aleutian',
+            daylight: 'Ora verore e Ishujve Hauai-Aleutian')),
+    'Hong_Kong': MetaZone('Hong_Kong',
+        long: TimeZoneName(
+            generic: 'Ora e Hong-Kongut',
+            standard: 'Ora standarde e Hong-Kongut',
+            daylight: 'Ora verore e Hong-Kongut')),
+    'Hovd': MetaZone('Hovd',
+        long: TimeZoneName(
+            generic: 'Ora e Hovdit',
+            standard: 'Ora standarde e Hovdit',
+            daylight: 'Ora verore e Hovdit')),
+    'India': MetaZone('India',
+        long: TimeZoneName(standard: 'Ora standarde e Indisë')),
+    'Indian_Ocean': MetaZone('Indian_Ocean',
+        long: TimeZoneName(standard: 'Ora e Oqeanit Indian')),
+    'Indochina':
+        MetaZone('Indochina', long: TimeZoneName(standard: 'Ora e Indokinës')),
+    'Indonesia_Central': MetaZone('Indonesia_Central',
+        long: TimeZoneName(standard: 'Ora e Indonezisë Qendrore')),
+    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
+        long: TimeZoneName(standard: 'Ora e Indonezisë Lindore')),
+    'Indonesia_Western': MetaZone('Indonesia_Western',
+        long: TimeZoneName(standard: 'Ora e Indonezisë Perëndimore')),
+    'Iran': MetaZone('Iran',
+        long: TimeZoneName(
+            generic: 'Ora e Iranit',
+            standard: 'Ora standarde e Iranit',
+            daylight: 'Ora verore e Iranit')),
+    'Irkutsk': MetaZone('Irkutsk',
+        long: TimeZoneName(
+            generic: 'Ora e Irkutskut',
+            standard: 'Ora standarde e Irkutskut',
+            daylight: 'Ora verore e Irkutskut')),
+    'Israel': MetaZone('Israel',
+        long: TimeZoneName(
+            generic: 'Ora e Izraelit',
+            standard: 'Ora standarde e Izraelit',
+            daylight: 'Ora verore e Izraelit')),
+    'Japan': MetaZone('Japan',
+        long: TimeZoneName(
+            generic: 'Ora e Japonisë',
+            standard: 'Ora standarde e Japonisë',
+            daylight: 'Ora verore e Japonisë')),
+    'Kamchatka': MetaZone('Kamchatka',
+        long: TimeZoneName(
+            generic: 'Ora e Petropavllovsk-Kamçatkës',
+            standard: 'Ora standarde e Petropavllovsk-Kamçatkës',
+            daylight: 'Ora verore e Petropavllovsk-Kamçatkës')),
+    'Kazakhstan': MetaZone('Kazakhstan',
+        long: TimeZoneName(standard: 'Ora e Kazakistanit')),
+    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
+        long: TimeZoneName(standard: 'Ora e Kazakistanit Lindor')),
+    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
+        long: TimeZoneName(standard: 'Ora e Kazakistanit Perëndimor')),
+    'Korea': MetaZone('Korea',
+        long: TimeZoneName(
+            generic: 'Ora koreane',
+            standard: 'Ora standarde koreane',
+            daylight: 'Ora verore koreane')),
+    'Kosrae': MetaZone('Kosrae', long: TimeZoneName(standard: 'Ora e Kosrës')),
+    'Krasnoyarsk': MetaZone('Krasnoyarsk',
+        long: TimeZoneName(
+            generic: 'Ora e Krasnojarskut',
+            standard: 'Ora standarde e Krasnojarskut',
+            daylight: 'Ora verore e Krasnojarskut')),
+    'Kyrgystan':
+        MetaZone('Kyrgystan', long: TimeZoneName(standard: 'Ora e Kirgizisë')),
+    'Lanka': MetaZone('Lanka', long: TimeZoneName(standard: 'Ora e Lankasë')),
+    'Line_Islands': MetaZone('Line_Islands',
+        long: TimeZoneName(standard: 'Ora e Ishujve Sporadikë Ekuatorialë')),
+    'Lord_Howe': MetaZone('Lord_Howe',
+        long: TimeZoneName(
+            generic: 'Ora e Lord-Houit',
+            standard: 'Ora standarde e Lord-Houit',
+            daylight: 'Ora verore e Lord-Houit')),
+    'Macau': MetaZone('Macau',
+        long: TimeZoneName(
+            generic: 'Ora e Makaos',
+            standard: 'Ora standarde e Makaos',
+            daylight: 'Ora verore e Makaos')),
+    'Magadan': MetaZone('Magadan',
+        long: TimeZoneName(
+            generic: 'Ora e Magadanit',
+            standard: 'Ora standarde e Magadanit',
+            daylight: 'Ora verore e Magadanit')),
+    'Malaysia':
+        MetaZone('Malaysia', long: TimeZoneName(standard: 'Ora e Malajzisë')),
+    'Maldives':
+        MetaZone('Maldives', long: TimeZoneName(standard: 'Ora e Maldiveve')),
+    'Marquesas': MetaZone('Marquesas',
+        long: TimeZoneName(standard: 'Ora e Ishujve Markezë')),
+    'Marshall_Islands': MetaZone('Marshall_Islands',
+        long: TimeZoneName(standard: 'Ora e Ishujve Marshall')),
+    'Mauritius': MetaZone('Mauritius',
+        long: TimeZoneName(
+            generic: 'Ora e Mauritiusit',
+            standard: 'Ora standarde e Mauritiusit',
+            daylight: 'Ora verore e Mauritiusit')),
+    'Mawson':
+        MetaZone('Mawson', long: TimeZoneName(standard: 'Ora e Mausonit')),
+    'Mexico_Pacific': MetaZone('Mexico_Pacific',
+        long: TimeZoneName(
+            generic: 'Ora e Territoreve Meksikane të Bregut të Paqësorit',
+            standard:
+                'Ora standarde e Territoreve Meksikane të Bregut të Paqësorit',
+            daylight:
+                'Ora verore e Territoreve Meksikane të Bregut të Paqësorit')),
+    'Mongolia': MetaZone('Mongolia',
+        long: TimeZoneName(
+            generic: 'Ora e Ulan-Batorit',
+            standard: 'Ora standarde e Ulan-Batorit',
+            daylight: 'Ora verore e Ulan-Batorit')),
+    'Moscow': MetaZone('Moscow',
+        long: TimeZoneName(
+            generic: 'Ora e Moskës',
+            standard: 'Ora standarde e Moskës',
+            daylight: 'Ora verore e Moskës')),
+    'Myanmar':
+        MetaZone('Myanmar', long: TimeZoneName(standard: 'Ora e Mianmarit')),
+    'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'Ora e Naurusë')),
+    'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'Ora e Nepalit')),
+    'New_Caledonia': MetaZone('New_Caledonia',
+        long: TimeZoneName(
+            generic: 'Ora e Kaledonisë së Re',
+            standard: 'Ora standarde e Kaledonisë së Re',
+            daylight: 'Ora verore e Kaledonisë së Re')),
+    'New_Zealand': MetaZone('New_Zealand',
+        long: TimeZoneName(
+            generic: 'Ora e Zelandës së Re',
+            standard: 'Ora standarde e Zelandës së Re',
+            daylight: 'Ora verore e Zelandës së Re')),
+    'Newfoundland': MetaZone('Newfoundland',
+        long: TimeZoneName(
+            generic: 'Ora e Njufaundlendit [Tokës së Re]',
+            standard: 'Ora standarde e Njufaundlendit [Tokës së Re]',
+            daylight: 'Ora verore e Njufaundlendit [Tokës së Re]')),
+    'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'Ora e Niuesë')),
+    'Norfolk': MetaZone('Norfolk',
+        long: TimeZoneName(
+            generic: 'Ora e Ishullit Norfolk',
+            standard: 'Ora standarde e Ishullit Norfolk',
+            daylight: 'Ora verore e Ishullit Norfolk')),
+    'Noronha': MetaZone('Noronha',
+        long: TimeZoneName(
+            generic: 'Ora e Fernando-de-Noronjës',
+            standard: 'Ora standarde e Fernando-de-Noronjës',
+            daylight: 'Ora verore e Fernando-de-Noronjës')),
+    'North_Mariana': MetaZone('North_Mariana',
+        long: TimeZoneName(standard: 'Ora e Ishujve të Marianës së Veriut')),
+    'Novosibirsk': MetaZone('Novosibirsk',
+        long: TimeZoneName(
+            generic: 'Ora e Novosibirskut',
+            standard: 'Ora standarde e Novosibirskut',
+            daylight: 'Ora verore e Novosibirskut')),
+    'Omsk': MetaZone('Omsk',
+        long: TimeZoneName(
+            generic: 'Ora e Omskut',
+            standard: 'Ora standarde e Omskut',
+            daylight: 'Ora verore e Omskut')),
+    'Pakistan': MetaZone('Pakistan',
+        long: TimeZoneName(
+            generic: 'Ora e Pakistanit',
+            standard: 'Ora standarde e Pakistanit',
+            daylight: 'Ora verore e Pakistanit')),
+    'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'Ora e Palaut')),
+    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
+        long: TimeZoneName(standard: 'Ora e Guinesë së Re-Papua')),
+    'Paraguay': MetaZone('Paraguay',
+        long: TimeZoneName(
+            generic: 'Ora e Paraguait',
+            standard: 'Ora standarde e Paraguait',
+            daylight: 'Ora Verore e Paraguait')),
+    'Peru': MetaZone('Peru',
+        long: TimeZoneName(
+            generic: 'Ora e Perusë',
+            standard: 'Ora standarde e Perusë',
+            daylight: 'Ora verore e Perusë')),
+    'Philippines': MetaZone('Philippines',
+        long: TimeZoneName(
+            generic: 'Ora e Filipineve',
+            standard: 'Ora standarde e Filipineve',
+            daylight: 'Ora verore e Filipineve')),
+    'Phoenix_Islands': MetaZone('Phoenix_Islands',
+        long: TimeZoneName(standard: 'Ora e Ishujve Feniks')),
+    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
+        long: TimeZoneName(
+            generic: 'Ora e Shën-Pier dhe Mikelon',
+            standard: 'Ora standarde e Shën-Pier dhe Mikelon',
+            daylight: 'Ora verore e Shën-Pier dhe Mikelon')),
+    'Pitcairn':
+        MetaZone('Pitcairn', long: TimeZoneName(standard: 'Ora e Pitkernit')),
+    'Ponape':
+        MetaZone('Ponape', long: TimeZoneName(standard: 'Ora e Ponapeit')),
+    'Pyongyang':
+        MetaZone('Pyongyang', long: TimeZoneName(standard: 'Ora e Penianit')),
+    'Qyzylorda': MetaZone('Qyzylorda',
+        long: TimeZoneName(
+            generic: 'Ora e Kizilordit',
+            standard: 'Ora standarde e Kizilordit',
+            daylight: 'Ora verore e Kizilordit')),
+    'Reunion':
+        MetaZone('Reunion', long: TimeZoneName(standard: 'Ora e Reunionit')),
+    'Rothera':
+        MetaZone('Rothera', long: TimeZoneName(standard: 'Ora e Rodherës')),
+    'Sakhalin': MetaZone('Sakhalin',
+        long: TimeZoneName(
+            generic: 'Ora e Sakalinit',
+            standard: 'Ora standarde e Sakalinit',
+            daylight: 'Ora verore e Sakalinit')),
+    'Samara': MetaZone('Samara',
+        long: TimeZoneName(
+            generic: 'Ora e Samarës',
+            standard: 'Ora standarde e Samarës',
+            daylight: 'Ora verore e Samarës')),
+    'Samoa': MetaZone('Samoa',
+        long: TimeZoneName(
+            generic: 'Ora e Samoas',
+            standard: 'Ora standarde e Samoas',
+            daylight: 'Ora verore e Samoas')),
+    'Seychelles': MetaZone('Seychelles',
+        long: TimeZoneName(standard: 'Ora e Sejshelleve')),
+    'Singapore':
+        MetaZone('Singapore', long: TimeZoneName(standard: 'Ora e Singaporit')),
+    'Solomon': MetaZone('Solomon',
+        long: TimeZoneName(standard: 'Ora e Ishujve Solomon')),
+    'South_Georgia': MetaZone('South_Georgia',
+        long: TimeZoneName(standard: 'Ora e Xhorxhas të Jugut')),
+    'Suriname':
+        MetaZone('Suriname', long: TimeZoneName(standard: 'Ora e Surinamit')),
+    'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'Ora e Sjouit')),
+    'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'Ora e Tahitit')),
+    'Taipei': MetaZone('Taipei',
+        long: TimeZoneName(
+            generic: 'Ora e Tajpeit',
+            standard: 'Ora standarde e Tajpeit',
+            daylight: 'Ora verore e Tajpeit')),
+    'Tajikistan': MetaZone('Tajikistan',
+        long: TimeZoneName(standard: 'Ora e Taxhikistanit')),
+    'Tokelau':
+        MetaZone('Tokelau', long: TimeZoneName(standard: 'Ora e Tokelaut')),
+    'Tonga': MetaZone('Tonga',
+        long: TimeZoneName(
+            generic: 'Ora e Tongës',
+            standard: 'Ora standarde e Tongës',
+            daylight: 'Ora verore e Tongës')),
+    'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'Ora e Çukut')),
+    'Turkmenistan': MetaZone('Turkmenistan',
+        long: TimeZoneName(
+            generic: 'Ora e Turkmenistanit',
+            standard: 'Ora standarde e Turkmenistanit',
+            daylight: 'Ora verore e Turkmenistanit')),
+    'Tuvalu':
+        MetaZone('Tuvalu', long: TimeZoneName(standard: 'Ora e Tuvalusë')),
+    'Uruguay': MetaZone('Uruguay',
+        long: TimeZoneName(
+            generic: 'Ora e Uruguait',
+            standard: 'Ora standarde e Uruguait',
+            daylight: 'Ora verore e Uruguait')),
+    'Uzbekistan': MetaZone('Uzbekistan',
+        long: TimeZoneName(
+            generic: 'Ora e Uzbekistanit',
+            standard: 'Ora standarde e Uzbekistanit',
+            daylight: 'Ora verore e Uzbekistanit')),
+    'Vanuatu': MetaZone('Vanuatu',
+        long: TimeZoneName(
+            generic: 'Ora e Vanuatusë',
+            standard: 'Ora standarde e Vanuatusë',
+            daylight: 'Ora verore e Vanuatusë')),
+    'Venezuela':
+        MetaZone('Venezuela', long: TimeZoneName(standard: 'Ora e Venezuelës')),
+    'Vladivostok': MetaZone('Vladivostok',
+        long: TimeZoneName(
+            generic: 'Ora e Vladivostokut',
+            standard: 'Ora standarde e Vladivostokut',
+            daylight: 'Ora verore e Vladivostokut')),
+    'Volgograd': MetaZone('Volgograd',
+        long: TimeZoneName(
+            generic: 'Ora e Volgogradit',
+            standard: 'Ora standarde e Volgogradit',
+            daylight: 'Ora verore e Volgogradit')),
+    'Vostok':
+        MetaZone('Vostok', long: TimeZoneName(standard: 'Ora e Vostokut')),
+    'Wake':
+        MetaZone('Wake', long: TimeZoneName(standard: 'Ora e Ishullit Uejk')),
+    'Wallis': MetaZone('Wallis',
+        long: TimeZoneName(standard: 'Ora e Uollisit dhe Futunës')),
+    'Yakutsk': MetaZone('Yakutsk',
+        long: TimeZoneName(
+            generic: 'Ora e Jakutskut',
+            standard: 'Ora standarde e Jakutskut',
+            daylight: 'Ora verore e Jakutskut')),
+    'Yekaterinburg': MetaZone('Yekaterinburg',
+        long: TimeZoneName(
+            generic: 'Ora e Ekaterinburgut',
+            standard: 'Ora standarde e Ekaterinburgut',
+            daylight: 'Ora verore e Ekaterinburgut')),
+    'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'Ora e Jukonit')),
+  };
+}
+
+class LocaleDisplayNameSqMK extends LocaleDisplayName {
+  const LocaleDisplayNameSqMK._(super.cld)
+      : super(
+            localePattern: '{0} ({1})',
+            localeSeparator: '{0}, {1}',
+            localeKeyTypePattern: '{0}: {1}',
+            codePatternLanguage: 'Gjuha: {0}',
+            codePatternScript: 'Skripti: {0}',
+            codePatternTerritory: 'Rajoni: {0}');
+
+  @override
+  final keyNames = const {
+    'ca': 'Kalendari',
+    'cf': 'Formati valutor',
+    'co': 'Radhitja',
+    'cu': 'Valuta',
+    'hc': 'Cikli orar (12 - 24)',
+    'lb': 'Stili i gjerësisë së rreshtave',
+    'ms': 'Sistemi i njësive matëse',
+    'nu': 'Numrat/shifrat',
+  };
+
+  @override
+  final valueNames = const {
+    'ca': {
+      'buddhist': 'kalendar budist',
+      'chinese': 'kalendar kinez',
+      'coptic': 'kalendar koptik',
+      'dangi': 'kalendar dangi',
+      'ethiopic': 'kalendari etiopik',
+      'ethioaa': 'kalendar etiopik amete-alem',
+      'gregory': 'kalendar gregorian',
+      'hebrew': 'kalendar hebraik',
+      'indian': 'Kalendari Kombëtar Indian',
+      'islamic': 'kalendar islam',
+      'islamic-civil': 'kalendar islam (tabelor, epoka civile)',
+      'islamic-rgsa': 'kalendar islamik (Arabi Saudite, shikim)',
+      'islamic-tbla': 'kalendar islam (tabelor, epoka astronomike)',
+      'islamic-umalqura': 'kalendar islam (um al-qura)',
+      'iso8601': 'kalendar ISO-8601',
+      'japanese': 'kalendar japonez',
+      'persian': 'kalendar persian',
+      'roc': 'kalendar minguo',
+    },
+    'cf': {
+      'account': 'format valutor llogaritës',
+      'standard': 'format valutor standard',
+    },
+    'co': {
+      'big5han': 'Radhitje e kinezishtes tradicionale - Big5',
+      'compat': 'Radhitja e mëparshme, për pajtueshmëri',
+      'dict': 'Radhitje fjalori',
+      'ducet': 'radhitje unikode e parazgjedhur',
+      'emoji': 'Radhitje Emoji',
+      'eor': 'Rregulla evropiane radhitjeje',
+      'gb2312': 'Radhitje e kinezishtes së thjeshtësuar - GB2312',
+      'phonebk': 'Radhitje libri telefonik',
+      'pinyin': 'Radhitje pinini',
+      'search': 'kërkim i përgjithshëm',
+      'searchjl': 'kërkim sipas bashkëtingëllores fillestare hangul',
+      'standard': 'radhitje standarde',
+      'stroke': 'radhitje me vijëzim',
+      'trad': 'radhitje tradicionale',
+      'unihan': 'radhitje me vijëzim radikal',
+      'zhuyin': 'radhitje zhujin',
+    },
+    'hc': {
+      'h11': 'sistem 12-orësh (0 - 11)',
+      'h12': 'sistem 12-orësh (1 - 12)',
+      'h23': 'sistem 24-orësh (0 - 23)',
+      'h24': 'sistem 24-orësh (1 - 24)',
+    },
+    'lb': {
+      'loose': 'stil i gjerësisë së rreshtave - i larguar',
+      'normal': 'stil i gjerësisë së rreshtave - normal',
+      'strict': 'stil i gjerësisë së rreshtave - i ngushtuar',
+    },
+    'ms': {
+      'metric': 'sistem metrik',
+      'uksystem': 'sistem imperial (britanik) i njësive matëse',
+      'ussystem': 'sistem amerikan i njësive matëse',
+    },
+    'nu': {
+      'ahom': 'shifra ahom',
+      'arab': 'shifra indo-arabe',
+      'arabext': 'shifra indo-arabe të zgjatura',
+      'armn': 'numra armenë',
+      'armnlow': 'numra armenë të vegjël',
+      'bali': 'shifra bali',
+      'beng': 'shifra bengali',
+      'brah': 'shifra brahmi',
+      'cakm': 'shifra çakma',
+      'cham': 'shifra çam',
+      'cyrl': 'numra cirilikë',
+      'deva': 'shifra devanagari',
+      'diak': 'shifra dives akuru',
+      'ethi': 'numra etiopianë',
+      'fullwide': 'shifra me largësi të brendshme',
+      'geor': 'numra gjeorgjianë',
+      'gong': 'shifra gunxhala gondi',
+      'gonm': 'shifra masaram gondi',
+      'grek': 'numra grekë',
+      'greklow': 'numra grekë të vegjël',
+      'gujr': 'shifra guxharati',
+      'guru': 'shifra gurmuki',
+      'hanidec': 'numra dhjetorë kinezë',
+      'hans': 'numra të kinezishtes së thjeshtuar',
+      'hansfin': 'numra financiarë të kinezishtes së thjeshtuar',
+      'hant': 'numra të kinezishtes tradicionale',
+      'hantfin': 'numra financiarë të kinezishtes tradicionale',
+      'hebr': 'numra hebraikë',
+      'hmng': 'shifra pahau hmong',
+      'hmnp': 'shifra niakeng puaçue hmong',
+      'java': 'shifra java',
+      'jpan': 'numra japonezë',
+      'jpanfin': 'numra financiarë japonezë',
+      'kali': 'shifra kaja li',
+      'kawi': 'shifra kavi',
+      'khmr': 'shifra kmere',
+      'knda': 'shifra kanade',
+      'lana': 'shifra tai tam hora',
+      'lanatham': 'shifra tai tam tam',
+      'laoo': 'shifra lao',
+      'latn': 'shifra latino-perëndimore',
+      'lepc': 'shifra lepça',
+      'limb': 'shifra limbu',
+      'mathbold': 'shifra të trasha matematike',
+      'mathdbl': 'shifra matematike me dy kalime',
+      'mathmono': 'shifra matematike monohapësire',
+      'mathsanb': 'shifra të trasha matematike sans-serif',
+      'mathsans': 'shifra matematike sans-serif',
+      'mlym': 'shifra malajalame',
+      'modi': 'shifra modi',
+      'mong': 'shifra mongole',
+      'mroo': 'shifra mro',
+      'mtei': 'shifra mitei-majeke',
+      'mymr': 'shifra mianmari',
+      'mymrshan': 'shifra mianmar-shan',
+      'mymrtlng': 'shifra mianmar tai lang',
+      'nagm': 'shifra nag mundan',
+      'nkoo': 'shifra nko',
+      'olck': 'shifra ol-çikike',
+      'orya': 'shifra orije',
+      'osma': 'shifra osmania',
+      'rohg': 'shifra hanifi rohingia',
+      'roman': 'numra romakë',
+      'romanlow': 'numra romakë të vegjël',
+      'saur': 'shifra saurashtra',
+      'shrd': 'shifra sharada',
+      'sind': 'shifra kudavadi',
+      'sinh': 'shifra sinala lit',
+      'sora': 'shifra sora sompeng',
+      'sund': 'shifra sundan',
+      'takr': 'shifra takri',
+      'talu': 'shifra të reja tai lue',
+      'taml': 'numra tamilë tradicionalë',
+      'tamldec': 'shifra tamile',
+      'telu': 'shifra teluguje',
+      'thai': 'shifra tajlandeze',
+      'tibt': 'shifra tibetiane',
+      'tirh': 'shifra tirhuta',
+      'tnsa': 'shifra tangsa',
+      'vaii': 'shifra vai',
+      'wara': 'shifra varang citi',
+      'wcho': 'shifra vanço',
+    },
+  };
 }

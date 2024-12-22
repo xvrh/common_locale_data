@@ -1,25 +1,21 @@
-import 'dart:convert';
-import 'dart:io';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:path/path.dart' as p;
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
+import '../utils/read_json_data.dart';
 
 part 'date_fields.g.dart';
 
 void generateDateFields(String locale, StringBuffer buffer) {
-  var file = File(p.join('tool/data/dates/dateFields/$locale.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  var fields =
-      // ignore: avoid_dynamic_calls
-      json['main'][locale]['dates']['fields'] as Map<String, dynamic>;
-  buffer.writeln(
-      '''class DateFields${locale.toUpperCamelCase()} implements DateFields {
-      DateFields${locale.toUpperCamelCase()}._();
-      ''');
-  for (var key in fields.keys.where((k) => !k.contains('-'))) {
-    var field = DateField.fromJson(fields[key] as Map<String, dynamic>);
+  var dateFields = readJsonData(
+      'tool/data/dates/dateFields/$locale.json', 'main/$locale/dates/fields');
+
+  buffer.writeln('''
+class DateFields${locale.toUpperCamelCase()} extends DateFields {
+  DateFields${locale.toUpperCamelCase()}._(super.cld);
+''');
+
+  for (var key in dateFields.keys.where((k) => !k.contains('-'))) {
+    var field = DateField.fromJson(dateFields[key] as Map<String, dynamic>);
     var fieldName = const {
           'sun': 'sunday',
           'mon': 'monday',
@@ -30,12 +26,12 @@ void generateDateFields(String locale, StringBuffer buffer) {
           'sat': 'saturday',
         }[key] ??
         key;
-    final lengths = {'long': '', 'short': '-short', 'narrow': '-narrow'};
-    final plurals = ['zero', 'one', 'two', 'few', 'many', 'other'];
+    final lengths = const {'long': '', 'short': '-short', 'narrow': '-narrow'};
+    final plurals = const ['zero', 'one', 'two', 'few', 'many', 'other'];
 
     String eachLength(String Function(DateField) callback) {
       return lengths.entries.map((l) {
-        var fieldJson = fields['$key${l.value}'] as Map<String, dynamic>?;
+        var fieldJson = dateFields['$key${l.value}'] as Map<String, dynamic>?;
         if (fieldJson == null) throw Exception('$key ${l.key} is null');
         var field = DateField.fromJson(fieldJson);
         var result = callback(field);
@@ -44,12 +40,12 @@ void generateDateFields(String locale, StringBuffer buffer) {
     }
 
     String multi(String? Function(DateField) callback) {
-      return 'MultiLength(${eachLength((f) => escapeDartString(callback(f)!))})';
+      return 'const MultiLength(${eachLength((f) => escapeDartString(callback(f)!))})';
     }
 
     String relative(RelativeTimePattern Function(DateField) callbackRelative) {
-      return 'MultiLengthRelativeTime(${eachLength((f) {
-        var code = "RelativeTime(_locale,";
+      return 'const MultiLengthRelativeTime(${eachLength((f) {
+        var code = "const RelativeTime(_locale,";
         var relative = callbackRelative(f);
         for (var plural in plurals) {
           var pluralValue = relative.getForName(plural);

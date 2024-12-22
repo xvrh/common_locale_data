@@ -1,15 +1,23 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+import 'currencies.dart';
 import 'date_fields.dart';
 import 'languages.dart';
+import 'locale_display_name.dart';
 import 'scripts.dart';
-import 'variants.dart';
+import 'subdivisions.dart';
 import 'territories.dart';
-import 'units.dart';
 import 'timezones.dart';
+import 'units.dart';
+import 'variants.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
   /// Locale code.
   String get locale;
+
+  /// Locale instance.
+  CommonLocaleData get instance;
 
   /// Version of the CLDR data.
   static const String cldrVersion = '46.0.0';
@@ -38,14 +46,23 @@ abstract class CommonLocaleData {
   /// Localized variant names.
   Variants get variants;
 
+  /// Localized currency names.
+  Currencies get currencies;
+
   /// Localized measurement units.
   Units get units;
 
   /// Localized territory names.
   Territories get territories;
 
+  /// Localized subdivision names.
+  Subdivisions get subdivisions;
+
   /// Localized timezone names.
   TimeZones get timeZones;
+
+  /// Localized locale display name fields.
+  LocaleDisplayName get localeDisplayName;
 
   /// Map with all supported locale names.
   static final Set<String> localeNames = {

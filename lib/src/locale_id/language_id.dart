@@ -1,6 +1,5 @@
 import 'package:collection/collection.dart';
-
-import '../locale_data.dart';
+import '../locale.data.dart';
 import 'base_language_id.dart';
 
 final _regExpSeparator = RegExp(r'[-_]');
@@ -36,7 +35,7 @@ class LanguageId extends BaseLanguageId {
       script == null &&
       region == null &&
       variants.isEmpty &&
-      LocaleMapping.legacyToCanonical.containsKey(remainder);
+      LocaleData.legacyToCanonical.containsKey(remainder);
 
   /// Return a [LanguageId] in canonical form.
   ///  - It will change a extlang tag to a lang tag
@@ -54,7 +53,12 @@ class LanguageId extends BaseLanguageId {
       casedLang = langParts[1];
     }
 
-    var casedScript = script?.toTitleCase();
+    String? casedScript;
+    var script = this.script;
+    if (script != null) {
+      casedScript = script[0].toUpperCase() + script.substring(1).toLowerCase();
+    }
+
     var casedRegion = region?.toUpperCase();
     var casedVariants = variants.map((e) => e.toLowerCase()).toSet().sorted();
 
@@ -64,7 +68,7 @@ class LanguageId extends BaseLanguageId {
         region: casedRegion,
         variants: casedVariants);
 
-    var canonical = _applyRules(source, LocaleMapping.canonicalizationRules);
+    var canonical = _applyRules(source, LocaleData.canonicalizationRules);
 
     // ordering of variants is taken from tr35 and not from bcp47:
     // https://www.unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers
@@ -139,10 +143,7 @@ class LanguageId extends BaseLanguageId {
   LanguageId addLikelySubTags() {
     var from = canonicalize();
 
-    var lang =
-        from.lang?.toLowerCase() == 'root' || from.lang?.toLowerCase() == 'und'
-            ? null
-            : from.lang;
+    var lang = from.langOrNullIfUndefined;
     var script = from.script?.toLowerCase() == 'zzzz' ? null : from.script;
     var region = from.region?.toLowerCase() == 'zz' ? null : from.region;
 
@@ -151,12 +152,11 @@ class LanguageId extends BaseLanguageId {
     }
 
     var replacement =
-        LocaleMapping.likelySubtags['${lang ?? "und"}_${script}_$region'] ??
-            LocaleMapping.likelySubtags['${lang ?? "und"}_$script'] ??
-            LocaleMapping.likelySubtags['${lang ?? "und"}_$region'] ??
-            LocaleMapping.likelySubtags[lang ?? 'und'] ??
+        LocaleData.likelySubtags['${lang ?? "und"}_${script}_$region'] ??
+            LocaleData.likelySubtags['${lang ?? "und"}_$script'] ??
+            LocaleData.likelySubtags['${lang ?? "und"}_$region'] ??
+            LocaleData.likelySubtags[lang ?? 'und'] ??
             LanguageId();
-    //LocaleMapping.likelySubtags['und']!;
 
     return LanguageId(
         lang: lang ?? replacement.lang,
@@ -221,12 +221,6 @@ class LanguageId extends BaseLanguageId {
   }
 }
 
-extension _StringExtension on String {
-  String toTitleCase() {
-    return '${this[0].toUpperCase()}${substring(1).toLowerCase()}';
-  }
-}
-
 /// @nodoc
 extension LanguageMatchRuleMatches on LanguageMatchRule {
   bool _matchSubTag(String? rule, String? input) {
@@ -242,7 +236,7 @@ extension LanguageMatchRuleMatches on LanguageMatchRule {
     rule = rule.substring(1);
     var negate = rule.startsWith(r'!');
     if (negate) rule = rule.substring(1);
-    var regions = LocaleMapping.matchVariables[rule];
+    var regions = LocaleData.matchVariables[rule];
     return negate != (regions?.contains(input) ?? false);
   }
 

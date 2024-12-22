@@ -1,7 +1,5 @@
 import 'dart:io';
-
 import 'package:common_locale_data/src/locale_id/locale_id.dart';
-import 'package:common_locale_data/src/locale_id/locale_matcher.dart';
 import 'package:test/test.dart';
 
 typedef Entry = ({
@@ -13,13 +11,12 @@ typedef Entry = ({
   String? skipReason,
 });
 
-/// This file implements tests for [LocaleMatcher] from the file 'localeMatcherTest.txt'.
-/// the file is originally downloaded from: https://raw.githubusercontent.com/unicode-org/icu/refs/tags/release-76-1/icu4j/main/core/src/test/resources/com/ibm/icu/dev/test/util/data/localeMatcherTest.txt
+/// This file implements tests for [LocaleId] from the file 'likelySubtags.txt'.
 ///
 /// One feature to the parsing is added: Lines like "@skip=<comment>" indicate
 /// the next test case should be ignored, with <comment> as reason.
 ///
-/// # (Only the next test case is skipped, not the remainder of the group)
+/// (Only the next test case is skipped, not the remainder of the group.)
 void main() async {
   var root = await readDataFile();
   for (var g in root) {

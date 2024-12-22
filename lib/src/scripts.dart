@@ -1,13 +1,4 @@
-/// Container for localized script names.
-///
-/// {@category Languages}
-abstract class Scripts {
-  Map<String, Script> get scripts;
-
-  Script? operator [](String code) {
-    return scripts[code];
-  }
-}
+export 'scripts.model.dart';
 
 /// Localized script names.
 ///
@@ -28,7 +19,8 @@ class Script {
   /// Localized script name for use in stand alone contexts.
   final String? standAlone;
 
-  Script(this.code, this.name, {this.short, this.variant, this.standAlone});
+  const Script(this.code, this.name,
+      {this.short, this.variant, this.standAlone});
 
   @override
   String toString() => name;

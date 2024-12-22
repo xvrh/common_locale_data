@@ -1,26 +1,52 @@
 # common_locale_data
 
 This packages provides a type-safe and tree-shakable way to access translated common data.  
-The translations are extracted from the Common Locale Data
-Repository ([CLDR](https://cldr.unicode.org/)).
+The translations are extracted from the Common Locale Data Repository ([CLDR](https://cldr.unicode.org/)).
+
+It also includes helper function to use this data to format units, timezone names and locale names.
 
 ## Available data
 
-- Translations for measurement units in full and abbreviated forms including singular/plural
-  modifications.
-- Translations for language names.
-- Translations for territory and country names.
-- Translations for currency names, including singular/plural modifications.
-- Translations for weekday, month, era, period of day, in full and abbreviated forms.
-- Translations for time zones and example cities (or similar) for time zones.
-- Translations for calendar fields.
-- Translations for relative time fields.
+Translations for:
+  - measurement units in full and abbreviated forms including singular/plural
+    modifications
+  - language names
+  - script, variant and unicode extension names
+  - territory and country names
+  - country subdivision names
+  - currency names, including singular/plural modifications
+  - weekday, month, era, period of day, in full and abbreviated forms
+  - calendar fields
+  - relative time fields
+  - time zones and example cities (or similar) for time zones
+
+## Functionality
+
+Translations can be accessed via static member functions or dynamic maps.
+
+Formatting functions are available for: units, currencies, relative time fields, timezones and 
+locale identifiers.
+
+Locale identifiers support parsing, canonicalization, adding and removing of likely subtags and
+formatting in various forms.
 
 ## Tree-shaking
 
 All the data and translations are stored as literal strings in the code. The APIs are designed to be
-tree-shakeable. The final application's binaries won't include the translations for languages you
-don't use.
+tree-shakeable (mechanism to remove unused data from final program file). The final application's
+binaries won't include the translations for languages you don't use also it won't include types of
+data not used.
+
+If you use locales individually (e.g. not stored in a collection), the tree-shaking will be
+optimal: only those data types of each locale are included that are actually used.
+
+If members are accessed via static access the compiler can also reduce to only those fields (e.g. 
+countries, currencies, languages) used. If dynamic access is used (via [] operator), then all fields
+are included.
+
+If you store locales in a collection and then dynamically choose a collection member (or iterate
+over the collection), the compiler cannot determine which locales are actually used, so it will
+include the data for all the locales in the collection and for all teh data types used.
 
 ## Compilation
 
@@ -30,10 +56,12 @@ For example for English: ```import 'package:common_locale_data/en.dart';``` or f
 French: ```import 'package:common_locale_data/fr.dart';```
 
 You can import all locales via [CommonLocaleDataAll]. However this will increase compilation time
-significantly (10x over including just a couple of locales). As long as you don't use
-the [CommonLocaleDataAll.locales] member to dynamically get locales the compiled file size is not
-affected. If you do use the [CommonLocaleDataAll.locales] member, all locales will be compiled in and the files size
-will become several 10's of MBs.
+significantly (10x over including just a couple of locales).
+
+As long as you don't use the [CommonLocaleDataAll.locales] member to dynamically get locales the
+compiled file size is not affected. If you do use the [CommonLocaleDataAll.locales] member, all
+locales will be compiled in and the files size will become several 10's of MBs (depending on which
+types of data you use).
 
 ## Source
 

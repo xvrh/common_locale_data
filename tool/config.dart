@@ -14,5 +14,4 @@ const String cldrJsonVersion = 'refs/tags/46.0.0';
 const String cldrVersion = 'refs/tags/release-46';
 
 /// ICU version to download: 'refs/tags/release-76-1' for specific version, 'main' for the development branch
-
 const String icuVersion = 'refs/tags/release-76-1';

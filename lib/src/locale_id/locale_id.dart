@@ -1,8 +1,6 @@
 import 'dart:core';
-
 import 'package:collection/collection.dart';
-
-import '../locale_data.dart';
+import '../locale.data.dart';
 import 'base_language_id.dart';
 import 'language_id.dart';
 import 'unicode_extensions.dart';
@@ -76,7 +74,7 @@ class LocaleId extends LanguageId {
   static LocaleId _parseLocale(String input) {
     var org = input;
 
-    if (LocaleMapping.legacyToCanonical.containsKey(input)) {
+    if (LocaleData.legacyToCanonical.containsKey(input)) {
       return LocaleId(remainder: input);
     }
 
@@ -216,41 +214,41 @@ class LocaleId extends LanguageId {
     return [super.toBCP47(), ...extensions, privateUse].nonNulls.join('-');
   }
 
-  String toLegacy() {
-    var res = toBCP47();
+  @override
+  String toUnicode() {
+    var res = [super.toUnicode(), ...extensions, privateUse].nonNulls.join('-');
     if (characterEncoding != null) res += '.$characterEncoding';
     if (legacyExtensions != null) res += '@$legacyExtensions';
-    if (remainder != null) res += '$remainder';
     return res;
   }
 
   @override
-  String toUnicode() {
-    return [super.toUnicode(), ...extensions, privateUse].nonNulls.join('-');
-  }
-
-  @override
   String toUnicodeBCP47() {
-    return [super.toUnicodeBCP47(), ...extensions, privateUse]
-        .nonNulls
-        .join('-');
+    var res =
+        [super.toUnicodeBCP47(), ...extensions, privateUse].nonNulls.join('-');
+    if (characterEncoding != null) res += '.$characterEncoding';
+    if (legacyExtensions != null) res += '@$legacyExtensions';
+    return res;
   }
 
   @override
   String toUnicodeCLDR() {
-    return [super.toUnicodeCLDR(), ...extensions, privateUse]
+    var res = [super.toUnicodeCLDR(), ...extensions, privateUse]
         .nonNulls
         .join('_')
         .replaceAll('-', '_');
+    if (characterEncoding != null) res += '.$characterEncoding';
+    if (legacyExtensions != null) res += '@$legacyExtensions';
+    return res;
   }
 
   @override
   String toString() {
-    return toLegacy();
+    return toUnicodeBCP47() + (remainder != null ? remainder! : '');
   }
 
   LocaleId _replaceGrandFathered() => isGrandfatheredIrregular
-      ? LocaleId.parse(LocaleMapping.legacyToCanonical[remainder!]!)
+      ? LocaleId.parse(LocaleData.legacyToCanonical[remainder!]!)
       : this;
 
   LocaleId _callLanguageIdCanonicalize() =>

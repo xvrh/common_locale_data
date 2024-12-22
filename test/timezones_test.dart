@@ -54,45 +54,44 @@ void main() {
   });
 
   test('missing timezone data', () {
-    var zones = TimeZoneMapping.zoneToMetaZone.keys.toSet();
+    var zones = TimeZoneData.zoneToMetaZone.keys.toSet();
 
     expect(
-        TimeZoneMapping.metaZoneToZoneForTerritory.values
+        TimeZoneData.metaZoneToZoneForTerritory.values
             .toSet()
             .difference(zones),
         []);
-    expect(TimeZoneMapping.aliasToZone.values.toSet().difference(zones),
+    expect(TimeZoneData.aliasToZone.values.toSet().difference(zones),
         ['Etc/Unknown', 'Etc/UTC']);
 
-    expect(TimeZoneMapping.zoneToIana.keys.toSet().difference(zones), []);
+    expect(TimeZoneData.zoneToIana.keys.toSet().difference(zones), []);
 
-    expect(
-        TimeZoneMapping.territoryToPrimaryZone.values.toSet().difference(zones),
+    expect(TimeZoneData.territoryToPrimaryZone.values.toSet().difference(zones),
         []);
 
-    expect(TimeZoneMapping.zoneToTerritory.keys.toSet().difference(zones),
+    expect(TimeZoneData.zoneToTerritory.keys.toSet().difference(zones),
         ['Europe/Kirov', 'Asia/Barnaul', 'Asia/Tomsk']);
 
-    expect(zones.difference(TimeZoneMapping.zoneToTerritory.keys.toSet()),
+    expect(zones.difference(TimeZoneData.zoneToTerritory.keys.toSet()),
         ['Etc/GMT']);
 
-    expect(zones.difference(TimeZoneMapping.zoneToShort.keys.toSet()), []);
+    expect(zones.difference(TimeZoneData.zoneToShort.keys.toSet()), []);
 
     expect(
-        TimeZoneMapping.zoneToShort.keys
+        TimeZoneData.zoneToShort.keys
             .toSet()
-            .difference(TimeZoneMapping.shortToZone.values.toSet()),
+            .difference(TimeZoneData.shortToZone.values.toSet()),
         []);
 
     expect(
-        TimeZoneMapping.shortToZone.values
+        TimeZoneData.shortToZone.values
             .toSet()
-            .difference(TimeZoneMapping.zoneToShort.keys.toSet()),
+            .difference(TimeZoneData.zoneToShort.keys.toSet()),
         []);
 
     expect(
-        TimeZoneMapping.zoneToTerritory.values.toSet().difference(
-            CommonLocaleDataEn().territories.countries.keys.toSet()),
+        TimeZoneData.zoneToTerritory.values.toSet().difference(
+            CommonLocaleDataEn().territories.territories.keys.toSet()),
         []);
   });
 }

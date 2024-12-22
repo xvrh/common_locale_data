@@ -1,13 +1,13 @@
 import 'package:collection/collection.dart';
-
-import '../../af.dart';
-import '../locale_data.dart';
+import '../common_locale_data.dart';
+import '../locale.data.dart';
 import 'base_language_id.dart';
+import 'locale_id.dart';
 
-/// Enables match of supported locales to the desired locales.
+/// Matches supported locales to the desired locales.
 ///
 /// The class caches information for supported locales so it only needs to be
-/// calculated once for multiple [getBestMatch] operations.
+/// calculated once for multiple [getBestMatch] or [isMatch] operations.
 ///
 /// The matcher uses the CLDR information (see: https://unicode.org/reports/tr35/#LanguageMatching)
 /// to determine which [LanguageId]s are "close" to each other.
@@ -17,6 +17,31 @@ import 'base_language_id.dart';
 ///
 /// If this is till the same it will favor supported locales which are closer to
 /// the "default" locale for a language.
+///
+/// Both [LanguageId]s and [LocaleId]s or a mix can be used.
+///
+/// # Flutter usage
+///
+/// This class can be used to provide an improved ```localeListResolutionCallback```
+/// which can be set during construction of ```MaterialApp```:
+///
+/// ```
+///  ...
+///   localeListResolutionCallback: (desiredLocales, supportedLocales) {
+///     if (desiredLocales == null || desiredLocales.isEmpty) return null;
+///     var languageId = LocaleMatcher(supportedLocales
+///         .map((l) => LanguageId.parse(l.toLanguageTag())))
+///         .getBestMatch(
+///         desiredLocales.map((l) => LanguageId.parse(l.toLanguageTag())))
+///         .supportedLocale;
+///     if (languageId == null || languageId.lang == null) return null;
+///     return supportedLocales.firstWhere((e) =>
+///     e.languageCode == languageId.lang &&
+///         e.scriptCode == languageId.script &&
+///         e.countryCode == languageId.region);
+///   },
+///  ...
+/// ```
 ///
 /// {@category Locales}
 class LocaleMatcher {
@@ -183,15 +208,18 @@ class LocaleMatcher {
         ignoreFallback: ignoreFallback,
       );
 
-  /// Helper method to select the [desiredLocales] from a list of [CommonLocaleData]s.
+  /// Helper method to select the [desiredLocales] from a list of [supportedLocales]s,
+  /// where the [supportedLocales] are [CommonLocaleData].
   ///
-  /// Creates a [LocaleMatcher] with the locales from the supported [CommonLocaleData]s
+  /// Creates a [LocaleMatcher] with the locales from the supported [supportedLocales]s
   /// and select the best matching [desiredLocales] from them.
   static CommonLocaleData? getBestCommonLocaleData(
       Iterable<String> desiredLocales,
-      Iterable<CommonLocaleData> supportedLocales) {
+      Iterable<CommonLocaleData> supportedLocales,
+      {bool noDefaultLocale = false}) {
     var selectedLocale = LocaleMatcher(
       supportedLocales.map((e) => LanguageId.parse(e.locale)),
+      noDefaultLocale: noDefaultLocale,
     )
         ._getBestMatch(desiredLocales.map((e) => LanguageId.parse(e)))
         .supportedLocale;
@@ -265,9 +293,7 @@ class LocaleMatcher {
       if (bestDistance <= demotion) break;
     }
 
-    return MatchResult(
-        bestDesired,
-        bestSupported ?? defaultLocale ?? orderedSupportedLocales.firstOrNull,
+    return MatchResult(bestDesired, bestSupported ?? defaultLocale,
         bestDistance.clamp(0, _clampValue));
   }
 
@@ -337,7 +363,7 @@ class LocaleMatcher {
       if (len == 1 && desiredLocale.lang == supportedLocale.lang) len--;
       if (len == 0) break;
 
-      for (var rule in LocaleMapping.matchRules[len - 1]) {
+      for (var rule in LocaleData.matchRules[len - 1]) {
         if (rule.matches(desiredLocale, supportedLocale,
             ignoreFallback: ignoreFallback)) {
           dist +=
@@ -536,7 +562,7 @@ class _LocaleMatcherStaticInfo {
       BaseLanguageId(lang: 'en', script: 'Latn', region: 'GB'),
       BaseLanguageId(lang: 'en', script: 'Latn', region: 'US'));
 
-  final List<LanguageId> paradigmLocales = LocaleMapping.paradigmLocales
+  final List<LanguageId> paradigmLocales = LocaleData.paradigmLocales
       .map((e) => LanguageId.parse(e).addLikelySubTags())
       .toList();
 

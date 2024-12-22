@@ -1,31 +1,32 @@
-import 'dart:convert';
-import 'dart:io';
-import 'package:path/path.dart' as p;
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
+import '../utils/generate_class.dart';
+import '../utils/read_json_data.dart';
+
+var _reference = readJsonData('tool/data/localenames/scripts/en.json',
+        'main/en/localeDisplayNames/scripts')
+    .cast<String, String>();
+
+String updateScriptsModel(String file) {
+  return updateModel(file, 'Script', 'Zzzz', _reference);
+}
 
 void generateScripts(String locale, StringBuffer output) {
-  var reference = readScripts('en');
-  var translatedScripts = readScripts(locale);
-
-  output.writeln('''
-class Scripts${locale.toUpperCamelCase()} extends Scripts {
-  Scripts${locale.toUpperCamelCase()}._();
-''');
+  var translatedScripts = readJsonData(
+          'tool/data/localenames/scripts/$locale.json',
+          'main/$locale/localeDisplayNames/scripts')
+      .cast<String, String>();
 
   String? translatedScript(String scriptCode) {
-    var output = StringBuffer('Script(');
-    output.writeln("'$scriptCode',");
-    var translatedName = translatedScripts[scriptCode];
-    if (translatedName == null) {
-      return null;
-    }
-    output.writeln('${escapeDartString(translatedName)},');
+    var output = StringBuffer('Script(${escapeDartString(scriptCode)}, ');
+
+    output.writeln(escapeDartString(translatedScripts[scriptCode]!));
+
     for (var alt in ['variant', 'short', 'stand-alone']) {
       var altName = translatedScripts['$scriptCode-alt-$alt'];
       if (altName != null) {
         output.writeln(
-            '${alt.toLowerCamelCase()}: ${escapeDartString(altName)},');
+            ', ${alt.toLowerCamelCase()}: ${escapeDartString(altName)}');
       }
     }
 
@@ -33,31 +34,6 @@ class Scripts${locale.toUpperCamelCase()} extends Scripts {
     return '$output';
   }
 
-  var scriptCode = StringBuffer()..writeln('''
-@override
-final scripts = CanonicalizedMap<String, String, Script>.from({
-''');
-  for (var entry in reference.entries) {
-    if (!entry.key.contains('-alt-')) {
-      var translatedCode = translatedScript(entry.key);
-      if (translatedCode != null) {
-        scriptCode.writeln("'${entry.key}': $translatedCode,");
-      }
-    }
-  }
-  scriptCode.writeln('}, (key) => key.toLowerCase());');
-
-  output.writeln(scriptCode);
-  output.writeln('}');
-}
-
-Map<String, String> readScripts(String locale) {
-  var file = File(p.join('tool/data/localenames/scripts/$locale.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  return
-      // ignore: avoid_dynamic_calls
-      (json['main'][locale]['localeDisplayNames']['scripts']
-              as Map<String, dynamic>)
-          .cast<String, String>();
+  generateClass(output, 'Scripts', locale, _reference, translatedScripts,
+      translatedScript, 'Zzzz');
 }

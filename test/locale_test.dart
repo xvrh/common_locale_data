@@ -5,7 +5,7 @@ import 'package:test/test.dart';
 
 void main() {
   test('LocaleId - operator==', () {
-    assert(
+    expect(
         LocaleId(lang: 'zh', region: 'TW') ==
             LocaleId(lang: 'zh', region: 'TW'),
         isTrue);
