@@ -85,3 +85,10 @@ import 'example/main.dart';
 
 To change the included locales modify the ```tool\config.dart``` file and rerun
 the ```generate_code.dart``` and ```generate_readme.dart``` files.
+
+## License
+
+This work is licensed under the MIT license.
+The data used from the CLDR is licensed under Unicode-3 license.
+
+SPDX-License-Identifier: MIT AND Unicode-3.0
