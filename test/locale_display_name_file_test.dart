@@ -28,10 +28,12 @@ void main() async {
             '${t.locale}: ${t.original} => ${t.displayName} ${t.preferComposition ? 'Composed' : ''} (line: ${t.lineNr})',
             skip: t.skipReason, () {
           if (currentLocale != t.locale) {
-            // ignore: deprecated_member_use
+            // ignore: deprecated_member_use_from_same_package
             cld = CommonLocaleDataAll.locales[t.locale] ??
                 LocaleMatcher.getBestCommonLocaleData(
-                    [t.locale], CommonLocaleDataAll.locales.values,
+                    [t.locale],
+                    // ignore: deprecated_member_use_from_same_package
+                    CommonLocaleDataAll.locales.values,
                     noDefaultLocale: true);
             currentLocale = t.locale;
           }
