@@ -37,7 +37,7 @@ Future<void> main() async {
   // don't check expected data, only size, to save compilation time of this test file
   testFile(
     'test/tree_shaking_data/all_locales_static_data.dart',
-    maxLength: 5000000,
+    maxLength: 500000,
   );
 
   // don't check expected data, only size, to save compilation time of this test file
