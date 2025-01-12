@@ -13,8 +13,8 @@ typedef Entry = ({
 
 /// This file implements tests for [LocaleId] from the file 'likelySubtags.txt'.
 ///
-/// One feature to the parsing is added: Lines like "@skip=<comment>" indicate
-/// the next test case should be ignored, with <comment> as reason.
+/// One feature to the parsing is added: Lines like `@skip=comment` indicate
+/// the next test case should be ignored, with `<comment>` as reason.
 ///
 /// (Only the next test case is skipped, not the remainder of the group.)
 void main() async {
