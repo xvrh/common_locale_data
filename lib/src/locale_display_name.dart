@@ -175,7 +175,13 @@ abstract class LocaleDisplayName {
               ?[field.value ?? 'true'],
           KeyType.subdivisionCode ||
           KeyType.rgKeyValue =>
-            cld.subdivisions[field.value] ?? field.value,
+            (field.value?.endsWith('zzzz') == true
+                ? cld
+                        .territories[
+                            field.value!.substring(0, field.value!.length - 4)]
+                        ?.name ??
+                    field.value
+                : cld.subdivisions[field.value] ?? field.value),
           KeyType.reorderCode => field.value == null
               ? null
               : _lqnToString(field.value?.split('-').map((e) =>
