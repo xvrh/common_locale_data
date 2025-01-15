@@ -69,6 +69,21 @@ void main() {
   print(cld.units.areaSquareMeter
       .short(3541.53, numberFormat: NumberFormat.compactLong()));
 
+  // Compound unit
+  print('');
+  print(cld.units.per.long(cld.units.electricAmpere.long.displayName,
+      cld.units.durationSecond.long.displayName));
+  print(cld.units.per.short(cld.units.electricAmpere.short.displayName,
+      cld.units.durationSecond.short.displayName));
+  print(cld.units.per.narrow(cld.units.electricAmpere.narrow.displayName,
+      cld.units.durationSecond.narrow.displayName));
+  print(cld.units.times.long(cld.units.electricOhm.long.displayName,
+      cld.units.lengthMeter.long.displayName));
+  print(cld.units.times.short(cld.units.electricOhm.short.displayName,
+      cld.units.lengthMeter.short.displayName));
+  print(cld.units.times.narrow(cld.units.electricOhm.narrow.displayName,
+      cld.units.lengthMeter.narrow.displayName));
+
   // Date fields
   print('');
   print(cld.date.year.future.long(2)); // in 2 years
