@@ -7,8 +7,15 @@ abstract class Subdivisions {
   /// Parent [CommonLocaleData]
   final CommonLocaleData cld;
 
+  /// @nodoc
   const Subdivisions(this.cld);
 
+  /// Map with all the subdivisions.
+  ///
+  /// *NOTE 1:* Accesses via this map are case sensitive.
+  ///
+  /// *NOTE 2:* Accesses via this map will cause the data for all subdivisions
+  /// of this locale to be included in the binary.
   Map<String, String> get subdivisions;
 
   /// Access subdivisions (without the extra [subdivisions] indirection)

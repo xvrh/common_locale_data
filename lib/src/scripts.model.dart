@@ -8,8 +8,15 @@ abstract class Scripts {
   /// Parent [CommonLocaleData]
   final CommonLocaleData cld;
 
+  /// @nodoc
   const Scripts(this.cld);
 
+  /// Map with all the scripts.
+  ///
+  /// *NOTE 1:* Accesses via this map are case sensitive.
+  ///
+  /// *NOTE 2:* Accesses via this map will cause the data for all scripts
+  /// of this locale to be included in the binary.
   Map<String, Script> get scripts;
 
   /// Access scripts (without the extra [scripts] indirection)

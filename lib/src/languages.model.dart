@@ -9,8 +9,15 @@ abstract class Languages {
   /// Parent [CommonLocaleData]
   final CommonLocaleData cld;
 
+  /// @nodoc
   const Languages(this.cld);
 
+  /// Map with all the languages.
+  ///
+  /// *NOTE 1:* Accesses via this map are case sensitive.
+  ///
+  /// *NOTE 2:* Accesses via this map will cause the data for all languages
+  /// of this locale to be included in the binary.
   Map<String, Language> get languages;
 
   /// Access languages (without the extra [languages] indirection).

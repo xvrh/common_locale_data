@@ -8,8 +8,15 @@ abstract class Variants {
   /// Parent [CommonLocaleData]
   final CommonLocaleData cld;
 
+  /// @nodoc
   const Variants(this.cld);
 
+  /// Map with all the variants.
+  ///
+  /// *NOTE 1:* Accesses via this map are case sensitive.
+  ///
+  /// *NOTE 2:* Accesses via this map will cause the data for all variants
+  /// of this locale to be included in the binary.
   Map<String, Variant> get variants;
 
   /// Access variants (without the extra [variants] indirection)

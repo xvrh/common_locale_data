@@ -7,10 +7,23 @@ import 'territories.dart';
 abstract class Territories {
   final CommonLocaleData cld;
 
+  /// @nodoc
   const Territories(this.cld);
 
+  /// Map with all the territories.
+  ///
+  /// *NOTE 1:* Accesses via this map are case sensitive.
+  ///
+  /// *NOTE 2:* Accesses via this map will cause the data for all territories
+  /// of this locale to be included in the binary.
   Map<String, Territory> get territories;
 
+  /// Returns map of all countries dynamically filtered from the [territories].
+  ///
+  /// *NOTE 1:* Accesses via this map are case sensitive.
+  ///
+  /// *NOTE 2:* Accesses via this map will cause the data for all currencies
+  /// of this locale to be included in the binary.
   @Deprecated(
       'countries is now a dynamically generated view on the territories member')
   Map<String, Territory> get countries => Map.fromEntries(territories.entries

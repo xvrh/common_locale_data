@@ -8,8 +8,15 @@ abstract class Currencies {
   /// Parent [CommonLocaleData]
   final CommonLocaleData cld;
 
+  /// @nodoc
   const Currencies(this.cld);
 
+  /// Map with all the currencies.
+  ///
+  /// *NOTE 1:* Accesses via this map are case sensitive.
+  ///
+  /// *NOTE 2:* Accesses via this map will cause the data for all currencies
+  /// of this locale to be included in the binary.
   Map<String, Currency> get currencies;
 
   /// Access currencies (without the extra [currencies] indirection)

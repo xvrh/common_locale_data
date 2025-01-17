@@ -10,6 +10,7 @@ abstract class Units {
   /// Parent [CommonLocaleData]
   final CommonLocaleData cld;
 
+  /// @nodoc
   const Units(this.cld);
 
   /// deci{0}
