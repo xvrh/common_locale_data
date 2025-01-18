@@ -1,9 +1,7 @@
 import 'dart:io';
-
 import 'package:path/path.dart' as path;
 import 'package:process_runner/process_runner.dart';
 import 'package:test/test.dart';
-
 import 'tree_shaking_data/date_field_direct_access_field.dart' as date_field;
 import 'tree_shaking_data/date_fields_dynamic.dart' as date_fields_dynamic;
 import 'tree_shaking_data/timezone.dart' as timezone;
