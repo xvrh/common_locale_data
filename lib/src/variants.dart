@@ -1,13 +1,4 @@
-/// Container for localized locale variant names.
-///
-/// {@category Languages}
-abstract class Variants {
-  Map<String, Variant> get variants;
-
-  Variant? operator [](String code) {
-    return variants[code];
-  }
-}
+export 'variants.model.dart';
 
 /// Localized locale variant names.
 ///
@@ -19,7 +10,7 @@ class Variant {
   /// Localized locale variant name.
   final String name;
 
-  Variant(this.code, this.name);
+  const Variant(this.code, this.name);
 
   @override
   String toString() => name;

@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:intl/intl.dart';
-import 'territories_model.dart';
-import 'timezone_data.dart';
+import 'common_locale_data.dart';
+import 'timezone.data.dart';
 
 /// Timezone formatting options.
 ///
@@ -71,50 +71,78 @@ enum TimeZoneStyle {
 ///
 /// {@category Timezones}
 abstract class TimeZones {
-  final String _locale;
-  final Territories _territories;
+  /// Parent [CommonLocaleData]
+  final CommonLocaleData cld;
 
-  final String _gmtFormat;
-  final String _gmtZeroFormat;
-  final String _regionFormat;
-  final String _regionFormatDaylight;
-  final String _regionFormatStandard;
-  final String _fallbackFormat;
+  /// Localized message string for GMT formats.
+  final String gmtFormat;
 
-  final _HourFormats _hourFormats;
+  /// Localized message string for GMT=0 formats.
+  final String gmtZeroFormat;
 
-  TimeZones(
-    this._locale,
-    this._territories, {
-    required String hourFormat,
-    required String gmtFormat,
-    required String gmtZeroFormat,
-    required String regionFormat,
-    required String regionFormatDaylight,
-    required String regionFormatStandard,
-    required String fallbackFormat,
-  })  : _fallbackFormat = fallbackFormat,
-        _regionFormatStandard = regionFormatStandard,
-        _regionFormatDaylight = regionFormatDaylight,
-        _regionFormat = regionFormat,
-        _gmtZeroFormat = gmtZeroFormat,
-        _gmtFormat = gmtFormat,
-        _hourFormats = _HourFormats(hourFormat);
+  /// Localized message string for locale based format.
+  final String regionFormat;
 
+  /// Localized message string for locale based daylight savings format.
+  final String regionFormatDaylight;
+
+  /// Localized message string for locale based standard format.
+  final String regionFormatStandard;
+
+  /// Localized message string for fallback format.
+  final String fallbackFormat;
+
+  /// Localized message string for positive offset timezone with whole hours only.
+  final String positiveH;
+
+  /// Localized message string for positive offset timezone with hours and minutes.
+  final String positiveHM;
+
+  /// Localized message string for positive offset timezone with hours minutes and seconds.
+  final String positiveHMS;
+
+  /// Localized message string for negative offset timezone with whole hours only.
+  final String negativeH;
+
+  /// Localized message string for negative offset timezone with hours and minutes.
+  final String negativeHM;
+
+  /// Localized message string for negative offset timezone with hours minutes and seconds.
+  final String negativeHMS;
+
+  const TimeZones(
+    this.cld, {
+    required this.gmtFormat,
+    required this.gmtZeroFormat,
+    required this.regionFormat,
+    required this.regionFormatDaylight,
+    required this.regionFormatStandard,
+    required this.fallbackFormat,
+    required this.positiveH,
+    required this.positiveHM,
+    required this.positiveHMS,
+    required this.negativeH,
+    required this.negativeHM,
+    required this.negativeHMS,
+  });
+
+  /// Localized time zone names.
   Map<String, TimeZoneNames> get timeZoneNames;
 
+  /// Localized meta zone names.
   Map<String, MetaZone> get metaZoneNames;
 
   /// Get a timezone by the IANA/Olson [code] and optionally specify a [dateTime].
   /// The [dateTime] is necessary as locations can be part of a different timezone
   /// during parts of their history.
   /// If no [dateTime] is specified the current date and time are assumed.
-  TimeZone? get(String code, {DateTime? dateTime}) {
+  TimeZone? get(String? code, {DateTime? dateTime}) {
+    if (code == null) return null;
     return TimeZone(this, code, dateTime);
   }
 
   /// Get a timezone by the IANA/Olson [code] for the current date and time.
-  TimeZone? operator [](String code) {
+  TimeZone? operator [](String? code) {
     return get(code);
   }
 
@@ -162,28 +190,24 @@ abstract class TimeZones {
   }
 
   String _formatLocalizedGMT(Duration offset, bool long) {
-    if (offset.inSeconds == 0) return _gmtZeroFormat;
+    if (offset.inSeconds == 0) return gmtZeroFormat;
 
     var absOffset = offset.abs();
 
     var hours =
-        NumberFormat(long ? '00' : '#0', _locale).format(absOffset.inHours);
-    var minutes =
-        NumberFormat('00', _locale).format(absOffset.inMinutes.remainder(60));
-    var seconds =
-        NumberFormat('00', _locale).format(absOffset.inSeconds.remainder(60));
+        NumberFormat(long ? '00' : '#0', cld.locale).format(absOffset.inHours);
+    var minutes = NumberFormat('00', cld.locale)
+        .format(absOffset.inMinutes.remainder(60));
+    var seconds = NumberFormat('00', cld.locale)
+        .format(absOffset.inSeconds.remainder(60));
 
     var hourFormat = offset.inSeconds < 0
         ? (seconds != '00'
-            ? _hourFormats.negativeHMS
-            : ((minutes != '00' || long)
-                ? _hourFormats.negativeHM
-                : _hourFormats.negativeH))
+            ? negativeHMS
+            : ((minutes != '00' || long) ? negativeHM : negativeH))
         : (seconds != '00'
-            ? _hourFormats.positiveHMS
-            : ((minutes != '00' || long)
-                ? _hourFormats.positiveHM
-                : _hourFormats.positiveH));
+            ? positiveHMS
+            : ((minutes != '00' || long) ? positiveHM : positiveH));
 
     var number = hourFormat
         .replaceAll('HH', hours)
@@ -191,7 +215,7 @@ abstract class TimeZones {
         .replaceAll('mm', minutes)
         .replaceAll('ss', seconds);
 
-    return _gmtFormat.replaceAll('{0}', number);
+    return gmtFormat.replaceAll('{0}', number);
   }
 
   static String _formatISO8601(Duration offset, bool basic,
@@ -286,21 +310,24 @@ class TimeZone {
   factory TimeZone(TimeZones timeZones, String code, DateTime? dateTime) {
     dateTime ??= DateTime.timestamp();
 
-    var canonicalCode = TimeZoneMapping.aliasToZone[code] ?? code;
-    var iana = TimeZoneMapping.zoneToIana[canonicalCode] ?? canonicalCode;
-    var short = TimeZoneMapping.zoneToShort[canonicalCode] ?? 'unk';
+    var canonicalCode = TimeZoneData.aliasToZone[code] ?? code;
+    var short = TimeZoneData.zoneToShort[canonicalCode] ?? 'unk';
+    // map back to canonical to correct the case
+    canonicalCode = TimeZoneData.shortToZone[short] ?? 'Etc/Unknown';
+
+    var iana = TimeZoneData.zoneToIana[canonicalCode] ?? canonicalCode;
 
     var timeZoneName =
         timeZones.timeZoneNames[canonicalCode] ?? TimeZoneNames();
 
     var metaZoneInfo =
-        TimeZoneMapping.zoneToMetaZone[canonicalCode]?.get(dateTime: dateTime);
+        TimeZoneData.zoneToMetaZone[canonicalCode]?.get(dateTime: dateTime);
     var metaZoneCode = metaZoneInfo?.value;
     var metaZone = timeZones.metaZoneNames[metaZoneCode];
 
-    var territoryCode = TimeZoneMapping.zoneToTerritory[canonicalCode];
+    var territoryCode = TimeZoneData.zoneToTerritory[canonicalCode];
     var country =
-        timeZones._territories.countries[territoryCode]?.name ?? territoryCode;
+        timeZones.cld.territories[territoryCode]?.name ?? territoryCode;
 
     var (isPrimaryOrSingle, dateRange) = _checkPrimaryOrSingle(canonicalCode,
         metaZoneInfo?.key ?? DateRange(), territoryCode, dateTime);
@@ -330,7 +357,7 @@ class TimeZone {
       Set<String> zonesForTerritory, DateTime date) {
     return zonesForTerritory
         .map((zone) =>
-            TimeZoneMapping.zoneToMetaZone[zone]?.get(dateTime: date)?.value ??
+            TimeZoneData.zoneToMetaZone[zone]?.get(dateTime: date)?.value ??
             zone)
         .nonNulls
         .toSet();
@@ -382,13 +409,13 @@ class TimeZone {
         case TimeZoneStyle.genericShort:
         case TimeZoneStyle.genericLocation:
         case TimeZoneStyle.genericLong:
-          return _timeZones._regionFormat.replaceAll('{0}', region);
+          return _timeZones.regionFormat.replaceAll('{0}', region);
 
         case TimeZoneStyle.daylightLong:
-          return _timeZones._regionFormatDaylight.replaceAll('{0}', region);
+          return _timeZones.regionFormatDaylight.replaceAll('{0}', region);
 
         case TimeZoneStyle.standardLong:
-          return _timeZones._regionFormatStandard.replaceAll('{0}', region);
+          return _timeZones.regionFormatStandard.replaceAll('{0}', region);
 
         case TimeZoneStyle.daylightShort:
         case TimeZoneStyle.standardShort:
@@ -466,9 +493,9 @@ class TimeZone {
       return metaZoneName;
     }
 
-    var preferredZoneForCurrent = TimeZoneMapping
-            .metaZoneToZoneForTerritory[(metaZone.code, countryCode)] ??
-        TimeZoneMapping.metaZoneToZoneForTerritory[(metaZone.code, '001')];
+    var preferredZoneForCurrent =
+        TimeZoneData.metaZoneToZoneForTerritory[(metaZone.code, countryCode)] ??
+            TimeZoneData.metaZoneToZoneForTerritory[(metaZone.code, '001')];
 
     if (preferredZoneForCurrent == canonicalCode) {
       // Step 2: check if zone==preferred zone and use meta zone name if true
@@ -477,11 +504,11 @@ class TimeZone {
       // Step 3: check if preferred zone==the requested zone, if so use country, otherwise city
 
       var territoryForZone =
-          TimeZoneMapping.zoneToTerritory[canonicalCode] ??= '001';
+          TimeZoneData.zoneToTerritory[canonicalCode] ??= '001';
 
-      var preferredZone = TimeZoneMapping
+      var preferredZone = TimeZoneData
               .metaZoneToZoneForTerritory[(metaZone.code, territoryForZone)] ??
-          TimeZoneMapping.metaZoneToZoneForTerritory[(metaZone.code, '001')];
+          TimeZoneData.metaZoneToZoneForTerritory[(metaZone.code, '001')];
 
       var region = (preferredZone == canonicalCode)
           ? (country ?? exemplarCity)
@@ -490,7 +517,7 @@ class TimeZone {
       if (region == null) {
         return canonicalCode;
       } else {
-        return _timeZones._fallbackFormat
+        return _timeZones.fallbackFormat
             .replaceAll('{0}', region)
             .replaceAll('{1}', metaZoneName);
       }
@@ -499,18 +526,18 @@ class TimeZone {
 
   static (bool, DateRange) _checkPrimaryOrSingle(String canonicalCode,
       DateRange dateRange, String? territoryCode, DateTime dateTime) {
-    var primaryZone = TimeZoneMapping.territoryToPrimaryZone[territoryCode];
+    var primaryZone = TimeZoneData.territoryToPrimaryZone[territoryCode];
     var isPrimaryOrSingle = primaryZone == canonicalCode;
 
     if (!isPrimaryOrSingle) {
-      var zonesForTerritory = TimeZoneMapping.territoryToZones[territoryCode];
+      var zonesForTerritory = TimeZoneData.territoryToZones[territoryCode];
 
       isPrimaryOrSingle =
           zonesForTerritory == null || zonesForTerritory.length == 1;
 
       if (!isPrimaryOrSingle) {
         var dateRangeMaps = zonesForTerritory
-            .map((zone) => TimeZoneMapping.zoneToMetaZone[zone])
+            .map((zone) => TimeZoneData.zoneToMetaZone[zone])
             .nonNulls
             .toSet();
 
@@ -591,7 +618,7 @@ class TimeZoneNames {
   /// name of exemplar city.
   final String? exemplarCity;
 
-  TimeZoneNames({this.long, this.short, this.exemplarCity});
+  const TimeZoneNames({this.long, this.short, this.exemplarCity});
 }
 
 /// Combination of generic, standard and daylight savings time names.
@@ -607,7 +634,7 @@ class TimeZoneName {
   /// Name of daylight savings time.
   final String? daylight;
 
-  TimeZoneName({this.generic, this.standard, this.daylight});
+  const TimeZoneName({this.generic, this.standard, this.daylight});
 }
 
 /// Meta zone is used as a generic zone for a group of locations
@@ -624,7 +651,7 @@ class MetaZone {
   /// Abbreviated localized names for the meta zone.
   final TimeZoneName? short;
 
-  MetaZone({required this.code, this.long, this.short});
+  const MetaZone(this.code, {this.long, this.short});
 
   @override
   String toString() => long?.generic ?? long?.standard ?? '???';
@@ -640,7 +667,7 @@ class DateRange {
   /// Ending date/time of time period (the end date/time itself is not included in the period).
   final DateTime? to;
 
-  DateRange._(this.from, this.to);
+  const DateRange._(this.from, this.to);
 
   factory DateRange([String? fromString, String? toString]) {
     var from = fromString == null ? null : DateTime.parse(fromString);
@@ -686,7 +713,7 @@ class DateRange {
 class DateRangeMap<T> {
   final Map<DateRange, T> _map;
 
-  DateRangeMap(Map<DateRange, T> map) : _map = map;
+  const DateRangeMap(Map<DateRange, T> map) : _map = map;
 
   /// Get the first object with [dateTime] inside the [DateRange].<
 
@@ -711,43 +738,5 @@ class DateRangeMap<T> {
   @override
   String toString() {
     return _map.toString();
-  }
-}
-
-class _HourFormats {
-  final String positiveH;
-  final String positiveHM;
-  final String positiveHMS;
-  final String negativeH;
-  final String negativeHM;
-  final String negativeHMS;
-
-  static final RegExp _hmsRegExp = RegExp('(.*H{1,2})([^H]*)(mm)(.*)\$');
-
-  _HourFormats._(this.positiveH, this.positiveHM, this.positiveHMS,
-      this.negativeH, this.negativeHM, this.negativeHMS);
-
-  factory _HourFormats(String hourFormat) {
-    var hourFormats = hourFormat.split(';');
-
-    var positiveHM = hourFormats[0];
-    var negativeHM = hourFormats[1];
-
-    var positiveH =
-        positiveHM.replaceFirstMapped(_hmsRegExp, (m) => '${m.group(1)}');
-    var negativeH =
-        negativeHM.replaceFirstMapped(_hmsRegExp, (m) => '${m.group(1)}');
-
-    var positiveHMS = positiveHM.replaceFirstMapped(
-        _hmsRegExp,
-        (m) =>
-            '${m.group(1)}${m.group(2)}${m.group(3)}${m.group(2)}ss${m.group(4)}');
-    var negativeHMS = negativeHM.replaceFirstMapped(
-        _hmsRegExp,
-        (m) =>
-            '${m.group(1)}${m.group(2)}${m.group(3)}${m.group(2)}ss${m.group(4)}');
-
-    return _HourFormats._(
-        positiveH, positiveHM, positiveHMS, negativeH, negativeHM, negativeHMS);
   }
 }

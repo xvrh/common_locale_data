@@ -1,21 +1,9 @@
-import 'dart:convert';
 import 'dart:io';
 import 'package:collection/collection.dart';
 import 'package:path/path.dart' as p;
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
-
-Map<String, dynamic> readJsonData(String fileName, String path) {
-  var file = File(p.join(fileName));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-
-  var current = json;
-  for (var part in path.split('/')) {
-    current = current[part] as Map<String, dynamic>;
-  }
-  return current;
-}
+import '../utils/read_json_data.dart';
 
 List<List<String>> readTable(String fileName) {
   var file = File(p.join(fileName));
@@ -26,16 +14,18 @@ List<List<String>> readTable(String fileName) {
   return content.map((str) => str.split(RegExp(r'\s+'))).toList();
 }
 
+// use [CanonicalizedMap] for the supplemental information as the Iana/Olsen identifiers don't have a regular capitalization
 String generateTimeZoneData() {
   var code = StringBuffer();
   code.writeln('''
+// GENERATED CODE - DO NOT MODIFY BY HAND
 import 'package:collection/collection.dart';
 import 'timezones.dart';
 
 /// Locale independent data about timezones.
 /// 
 /// {@category Timezones}
-class TimeZoneMapping {
+class TimeZoneData {
 ''');
 
   void generateMetaZones(MapEntry<String, dynamic> entry, StringBuffer code) {
@@ -223,6 +213,8 @@ void writeCanonicalizedMapCode(
   code.writeln('}, (key) => key.toLowerCase());');
 }
 
+final RegExp _hmsRegExp = RegExp('(.*H{1,2})([^H]*)(mm)(.*)\$');
+
 void generateTimeZones(String locale, StringBuffer code) {
   var timeZoneNames = readJsonData(
     'tool/data/dates/timeZoneNames/$locale.json',
@@ -237,7 +229,6 @@ void generateTimeZones(String locale, StringBuffer code) {
           (e as Map<String, dynamic>).cast<String, Map<String, dynamic>>()));
 
   var timeZoneFields = {
-    'hourFormat': 'hourFormat',
     'gmtFormat': 'gmtFormat',
     'gmtZeroFormat': 'gmtZeroFormat',
     'regionFormat': 'regionFormat',
@@ -246,9 +237,35 @@ void generateTimeZones(String locale, StringBuffer code) {
     'fallbackFormat': 'fallbackFormat'
   }.map((k, e) => MapEntry(k, "$k: '${timeZoneNames[e]}'")).values.join(',');
 
+  var hourFormats = (timeZoneNames['hourFormat'] as String).split(';');
+
+  var positiveHM = hourFormats[0];
+  var negativeHM = hourFormats[1];
+
+  var positiveH =
+      positiveHM.replaceFirstMapped(_hmsRegExp, (m) => '${m.group(1)}');
+  var negativeH =
+      negativeHM.replaceFirstMapped(_hmsRegExp, (m) => '${m.group(1)}');
+
+  var positiveHMS = positiveHM.replaceFirstMapped(
+      _hmsRegExp,
+      (m) =>
+          '${m.group(1)}${m.group(2)}${m.group(3)}${m.group(2)}ss${m.group(4)}');
+  var negativeHMS = negativeHM.replaceFirstMapped(
+      _hmsRegExp,
+      (m) =>
+          '${m.group(1)}${m.group(2)}${m.group(3)}${m.group(2)}ss${m.group(4)}');
+
+  timeZoneFields += ", positiveH: '$positiveH'";
+  timeZoneFields += ", positiveHM: '$positiveHM'";
+  timeZoneFields += ", positiveHMS: '$positiveHMS'";
+  timeZoneFields += ", negativeH: '$negativeH'";
+  timeZoneFields += ", negativeHM: '$negativeHM'";
+  timeZoneFields += ", negativeHMS: '$negativeHMS'";
+
   code.writeln('''
 class TimeZones${locale.toUpperCamelCase()} extends TimeZones {
-  TimeZones${locale.toUpperCamelCase()}._(Territories territories): super(_locale, territories, $timeZoneFields);
+  const TimeZones${locale.toUpperCamelCase()}._(super.cld): super($timeZoneFields);
 ''');
 
   void generateTimeZones(MapEntry<String, dynamic> entry, StringBuffer code) {
@@ -264,25 +281,30 @@ class TimeZones${locale.toUpperCamelCase()} extends TimeZones {
     } else {
       code.writeln('${escapeDartString(entry.key)}: TimeZoneNames(');
 
+      var prev = false;
+      var exemplarCity = timeZone['exemplarCity'] as String?;
+      if (exemplarCity != null) {
+        code.writeln('exemplarCity: ${escapeDartString(exemplarCity)}');
+        prev = true;
+      }
+
       if (timeZone.containsKey('long') || timeZone.containsKey('short')) {
         for (var len in ['long', 'short']) {
           var names = timeZone[len] as Map<String, dynamic>?;
           if (names != null && names.isNotEmpty) {
+            if (prev) code.writeln(', ');
+            prev = true;
             code.writeln('$len: TimeZoneName(');
-            for (var type in ['generic', 'standard', 'daylight']) {
-              var name = names[type] as String?;
-              if (name != null) {
-                code.writeln('$type: ${escapeDartString(name)},');
-              }
+            code.writeln({
+              for (var type in ['generic', 'standard', 'daylight'])
+                if (names[type] is String) type: names[type] as String
             }
-            code.writeln('),');
+                .entries
+                .map((e) => '${e.key}: ${escapeDartString(e.value)}')
+                .join(', '));
+            code.writeln(')');
           }
         }
-      }
-
-      var exemplarCity = timeZone['exemplarCity'] as String?;
-      if (exemplarCity != null) {
-        code.writeln('exemplarCity: ${escapeDartString(exemplarCity)},');
       }
 
       code.writeln('),');
@@ -291,32 +313,35 @@ class TimeZones${locale.toUpperCamelCase()} extends TimeZones {
 
   code.writeln('''
 @override
-final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
+final timeZoneNames = const {
 ''');
 
   for (var entry in translatedTimeZones.entries) {
     generateTimeZones(entry, code);
   }
   code.writeln('''
-}, (key) => key.toLowerCase());
+};
 
 ''');
 
-  String? translatedMetaZone(String metaZoneCode) {
-    var output = StringBuffer('MetaZone(');
-    output.writeln("code: '$metaZoneCode',");
-
+  String translatedMetaZone(String metaZoneCode) {
+    var output = StringBuffer('MetaZone(${escapeDartString(metaZoneCode)}, ');
+    var prev = false;
     for (var len in ['long', 'short']) {
       var names = translatedMetaZones[metaZoneCode]![len];
       if (names != null && names.isNotEmpty) {
+        if (prev) output.writeln(', ');
+        prev = true;
+
         output.writeln('$len: TimeZoneName(');
-        for (var type in ['generic', 'standard', 'daylight']) {
-          var name = names[type];
-          if (name != null) {
-            output.writeln('$type: ${escapeDartString(name.toString())},');
-          }
+        output.writeln({
+          for (var type in ['generic', 'standard', 'daylight'])
+            if (names[type] is String) type: names[type] as String
         }
-        output.writeln('),');
+            .entries
+            .map((e) => '${e.key}: ${escapeDartString(e.value)}')
+            .join(', '));
+        output.writeln(')');
       }
     }
 
@@ -326,16 +351,13 @@ final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
 
   code.writeln('''
 @override
-final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
+final metaZoneNames = const {
 ''');
 
   for (var entry in translatedMetaZones.entries) {
-    var translatedCode = translatedMetaZone(entry.key);
-    if (translatedCode != null) {
-      code.writeln("'${entry.key}': $translatedCode,");
-    }
+    code.writeln("'${entry.key}': ${translatedMetaZone(entry.key)},");
   }
-  code.writeln('}, (key) => key.toLowerCase());');
+  code.writeln('};');
 
   code.writeln('}');
 }

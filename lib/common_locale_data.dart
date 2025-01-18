@@ -4,12 +4,17 @@
 library;
 
 export 'src/common_locale_data.dart';
+export 'src/currencies.dart';
 export 'src/date_fields.dart';
 export 'src/languages.dart';
+export 'src/locale_display_name.dart';
+export 'src/locale_id/locale_id.dart';
+export 'src/locale_id/locale_matcher.dart';
 export 'src/scripts.dart';
 export 'src/shared.dart';
+export 'src/subdivisions.dart';
 export 'src/territories.dart';
-export 'src/timezone_data.dart';
+export 'src/timezone.data.dart';
 export 'src/timezones.dart';
 export 'src/units.dart';
 export 'src/variants.dart';

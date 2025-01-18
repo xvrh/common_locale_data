@@ -1,7 +1,7 @@
-import 'package:collection/collection.dart';
 import '../../common_locale_data.dart';
 
 const _locale = 'sd';
+const _cld = CommonLocaleDataSd._();
 
 /// Translations of [CommonLocaleData]
 ///
@@ -10,2323 +10,265 @@ class CommonLocaleDataSd implements CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataSd();
+  const CommonLocaleDataSd._();
 
-  static final _dateFields = DateFieldsSd._();
+  factory CommonLocaleDataSd() => _cld;
+
   @override
-  DateFields get date => _dateFields;
+  CommonLocaleData get instance => _cld;
 
-  static final _languages = LanguagesSd._();
-  @override
-  Languages get languages => _languages;
+  static const CommonLocaleData staticInstance = _cld;
 
-  static final _scripts = ScriptsSd._();
-  @override
-  Scripts get scripts => _scripts;
-
-  static final _variants = VariantsSd._();
-  @override
-  Variants get variants => _variants;
-
-  static final _units = UnitsSd._();
+  static final _units = UnitsSd._(_cld);
   @override
   Units get units => _units;
 
-  static final _territories = TerritoriesSd._();
+  static final _dateFields = DateFieldsSd._(_cld);
+  @override
+  DateFields get date => _dateFields;
+
+  static final _languages = LanguagesSd._(_cld);
+  @override
+  Languages get languages => _languages;
+
+  static final _scripts = ScriptsSd._(_cld);
+  @override
+  Scripts get scripts => _scripts;
+
+  static final _territories = TerritoriesSd._(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _timeZones = TimeZonesSd._(_territories);
+  static final _variants = VariantsSd._(_cld);
+  @override
+  Variants get variants => _variants;
+
+  static final _subdivisions = SubdivisionsSd._(_cld);
+  @override
+  Subdivisions get subdivisions => _subdivisions;
+
+  static final _currencies = CurrenciesSd._(_cld);
+  @override
+  Currencies get currencies => _currencies;
+
+  static final _timeZones = TimeZonesSd._(_cld);
   @override
   TimeZones get timeZones => _timeZones;
+
+  static final _localeDisplayName = LocaleDisplayNameSd._(_cld);
+  @override
+  LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
-class LanguagesSd extends Languages {
-  LanguagesSd._();
+class UnitsSd extends Units {
+  UnitsSd._(super.cld);
 
   @override
-  final languages = CanonicalizedMap<String, String, Language>.from({
-    'aa': Language(
-      'aa',
-      'افار',
-    ),
-    'ab': Language(
-      'ab',
-      'ابقازیان',
-    ),
-    'ace': Language(
-      'ace',
-      'اچائينيز',
-    ),
-    'ada': Language(
-      'ada',
-      'ادنگمي',
-    ),
-    'ady': Language(
-      'ady',
-      'اديگهي',
-    ),
-    'af': Language(
-      'af',
-      'آفريڪي',
-    ),
-    'agq': Language(
-      'agq',
-      'اگهيم',
-    ),
-    'ain': Language(
-      'ain',
-      'آئينو',
-    ),
-    'ak': Language(
-      'ak',
-      'اڪان',
-    ),
-    'ale': Language(
-      'ale',
-      'اليوٽ',
-    ),
-    'alt': Language(
-      'alt',
-      'ڏکڻ التائي',
-    ),
-    'am': Language(
-      'am',
-      'امهاري',
-    ),
-    'an': Language(
-      'an',
-      'ارگني',
-    ),
-    'ann': Language(
-      'ann',
-      'اوبولو',
-    ),
-    'anp': Language(
-      'anp',
-      'انجيڪا',
-    ),
-    'ar': Language(
-      'ar',
-      'عربي',
-    ),
-    'ar-001': Language(
-      'ar-001',
-      'جديد معياري عربي',
-    ),
-    'arn': Language(
-      'arn',
-      'ماپوچي',
-    ),
-    'arp': Language(
-      'arp',
-      'اراپائو',
-    ),
-    'ars': Language(
-      'ars',
-      'نجدي عربي',
-    ),
-    'as': Language(
-      'as',
-      'آسامي',
-    ),
-    'asa': Language(
-      'asa',
-      'اسو',
-    ),
-    'ast': Language(
-      'ast',
-      'اسٽورين',
-    ),
-    'atj': Language(
-      'atj',
-      'اٽيڪاميڪو',
-    ),
-    'av': Language(
-      'av',
-      'اويرس',
-    ),
-    'awa': Language(
-      'awa',
-      'اواڌي',
-    ),
-    'ay': Language(
-      'ay',
-      'ایمارا',
-    ),
-    'az': Language(
-      'az',
-      'آزربائيجاني',
-      short: 'ازري',
-    ),
-    'ba': Language(
-      'ba',
-      'ڪينيڊا',
-    ),
-    'ban': Language(
-      'ban',
-      'بالينيس',
-    ),
-    'bas': Language(
-      'bas',
-      'باسا',
-    ),
-    'be': Language(
-      'be',
-      'بيلاروسي',
-    ),
-    'bem': Language(
-      'bem',
-      'بيمبا',
-    ),
-    'bez': Language(
-      'bez',
-      'بينا',
-    ),
-    'bg': Language(
-      'bg',
-      'بلغاريائي',
-    ),
-    'bgc': Language(
-      'bgc',
-      'ھريانوي',
-    ),
-    'bho': Language(
-      'bho',
-      'ڀوجپوري',
-    ),
-    'bi': Language(
-      'bi',
-      'بسلاما',
-    ),
-    'bin': Language(
-      'bin',
-      'بني',
-    ),
-    'bla': Language(
-      'bla',
-      'سڪسڪا',
-    ),
-    'blo': Language(
-      'blo',
-      'آنيائي',
-    ),
-    'bm': Language(
-      'bm',
-      'بمبارا',
-    ),
-    'bn': Language(
-      'bn',
-      'بنگلا',
-    ),
-    'bo': Language(
-      'bo',
-      'تبيتائي',
-    ),
-    'br': Language(
-      'br',
-      'بريٽن',
-    ),
-    'brx': Language(
-      'brx',
-      'بودو',
-    ),
-    'bs': Language(
-      'bs',
-      'بوسنيائي',
-    ),
-    'bug': Language(
-      'bug',
-      'بگنيز',
-    ),
-    'byn': Language(
-      'byn',
-      'بلن',
-    ),
-    'ca': Language(
-      'ca',
-      'ڪيٽالان',
-    ),
-    'cay': Language(
-      'cay',
-      'ڪايوگا',
-    ),
-    'ccp': Language(
-      'ccp',
-      'چمڪا',
-    ),
-    'ce': Language(
-      'ce',
-      'چیچن',
-    ),
-    'ceb': Language(
-      'ceb',
-      'سبوانو',
-    ),
-    'cgg': Language(
-      'cgg',
-      'چگا',
-    ),
-    'ch': Language(
-      'ch',
-      'چمورو',
-    ),
-    'chk': Language(
-      'chk',
-      'چڪيز',
-    ),
-    'chm': Language(
-      'chm',
-      'ماري',
-    ),
-    'cho': Language(
-      'cho',
-      'چوڪ تو',
-    ),
-    'chp': Language(
-      'chp',
-      'چائپائن',
-    ),
-    'chr': Language(
-      'chr',
-      'چروڪي',
-    ),
-    'chy': Language(
-      'chy',
-      'چايان',
-    ),
-    'ckb': Language(
-      'ckb',
-      'مرڪزي ڪردش',
-      variant: 'مرڪزي ڪردش',
-      menu: 'مرڪزي ڪردش',
-    ),
-    'clc': Language(
-      'clc',
-      'چلڪوٽن',
-    ),
-    'co': Language(
-      'co',
-      'ڪارسيڪائي',
-    ),
-    'crg': Language(
-      'crg',
-      'ميچيف',
-    ),
-    'crj': Language(
-      'crj',
-      'ڏکڻ اڀرندو ڪري',
-    ),
-    'crk': Language(
-      'crk',
-      'پلينز ڪري',
-    ),
-    'crl': Language(
-      'crl',
-      'اترين اوڀر ڪري',
-    ),
-    'crm': Language(
-      'crm',
-      'موس ڪري',
-    ),
-    'crr': Language(
-      'crr',
-      'ڪيرولينا الگانڪويئن',
-    ),
-    'crs': Language(
-      'crs',
-      'سيسلوا ڪريئول فرانسي',
-    ),
-    'cs': Language(
-      'cs',
-      'چيڪ',
-    ),
-    'csw': Language(
-      'csw',
-      'سوامپي ڪري',
-    ),
-    'cu': Language(
-      'cu',
-      'چرچ سلاوی',
-    ),
-    'cv': Language(
-      'cv',
-      'چو واش',
-    ),
-    'cy': Language(
-      'cy',
-      'ويلش',
-    ),
-    'da': Language(
-      'da',
-      'ڊينش',
-    ),
-    'dak': Language(
-      'dak',
-      'ڊڪوٽا',
-    ),
-    'dar': Language(
-      'dar',
-      'ڊارگوا',
-    ),
-    'dav': Language(
-      'dav',
-      'تائيتا',
-    ),
-    'de': Language(
-      'de',
-      'جرمن',
-    ),
-    'de-AT': Language(
-      'de-AT',
-      'آسٽريائي جرمن',
-    ),
-    'de-CH': Language(
-      'de-CH',
-      'سوئس هائي جرمن',
-    ),
-    'dgr': Language(
-      'dgr',
-      'داگرب',
-    ),
-    'dje': Language(
-      'dje',
-      'زارما',
-    ),
-    'doi': Language(
-      'doi',
-      'ڊوگري',
-    ),
-    'dsb': Language(
-      'dsb',
-      'لوئر سوربين',
-    ),
-    'dua': Language(
-      'dua',
-      'ڊيولا',
-    ),
-    'dv': Language(
-      'dv',
-      'دويهي',
-    ),
-    'dyo': Language(
-      'dyo',
-      'جولا فوني',
-    ),
-    'dz': Language(
-      'dz',
-      'زونخا',
-    ),
-    'dzg': Language(
-      'dzg',
-      'دزاگا',
-    ),
-    'ebu': Language(
-      'ebu',
-      'ايمبيو',
-    ),
-    'ee': Language(
-      'ee',
-      'ايو',
-    ),
-    'efi': Language(
-      'efi',
-      'ايفڪ',
-    ),
-    'eka': Language(
-      'eka',
-      'ايڪاجڪ',
-    ),
-    'el': Language(
-      'el',
-      'يوناني',
-    ),
-    'en': Language(
-      'en',
-      'انگريزي',
-    ),
-    'en-AU': Language(
-      'en-AU',
-      'آسٽريليائي انگريزي',
-    ),
-    'en-CA': Language(
-      'en-CA',
-      'ڪينيڊيائي انگريزي',
-    ),
-    'en-GB': Language(
-      'en-GB',
-      'برطانوي انگريزي',
-      short: 'برطانوي انگريزي',
-    ),
-    'en-US': Language(
-      'en-US',
-      'آمريڪي انگريزي',
-      short: 'انگريزي (آمريڪا)',
-    ),
-    'eo': Language(
-      'eo',
-      'ايسپرانٽو',
-    ),
-    'es': Language(
-      'es',
-      'هسپانوي',
-    ),
-    'es-419': Language(
-      'es-419',
-      'لاطيني آمريڪي اسپينش',
-    ),
-    'es-ES': Language(
-      'es-ES',
-      'يورپي اسپيني',
-    ),
-    'es-MX': Language(
-      'es-MX',
-      'ميڪسيڪين اسپيني',
-    ),
-    'et': Language(
-      'et',
-      'ايستونائي',
-    ),
-    'eu': Language(
-      'eu',
-      'باسق',
-    ),
-    'ewo': Language(
-      'ewo',
-      'اوانڊو',
-    ),
-    'fa': Language(
-      'fa',
-      'فارسي',
-    ),
-    'fa-AF': Language(
-      'fa-AF',
-      'دري',
-    ),
-    'ff': Language(
-      'ff',
-      'فلاهه',
-    ),
-    'fi': Language(
-      'fi',
-      'فنش',
-    ),
-    'fil': Language(
-      'fil',
-      'فلپائني',
-    ),
-    'fj': Language(
-      'fj',
-      'فجي',
-    ),
-    'fo': Language(
-      'fo',
-      'فيروايس',
-    ),
-    'fon': Language(
-      'fon',
-      'فون',
-    ),
-    'fr': Language(
-      'fr',
-      'فرانسيسي',
-    ),
-    'fr-CA': Language(
-      'fr-CA',
-      'ڪينيڊيائي فرانسيسي',
-    ),
-    'fr-CH': Language(
-      'fr-CH',
-      'سوئس فرانسيسي',
-    ),
-    'frc': Language(
-      'frc',
-      'ڪيجن فرانسيسي',
-    ),
-    'frr': Language(
-      'frr',
-      'اترين فريسين',
-    ),
-    'fur': Language(
-      'fur',
-      'فرائي لئين',
-    ),
-    'fy': Language(
-      'fy',
-      'مغربي فريشن',
-    ),
-    'ga': Language(
-      'ga',
-      'آئرش',
-    ),
-    'gaa': Language(
-      'gaa',
-      'گا',
-    ),
-    'gd': Language(
-      'gd',
-      'اسڪاٽش گيلڪ',
-    ),
-    'gez': Language(
-      'gez',
-      'جيز',
-    ),
-    'gil': Language(
-      'gil',
-      'گلبرٽيز',
-    ),
-    'gl': Language(
-      'gl',
-      'گليشئين',
-    ),
-    'gn': Language(
-      'gn',
-      'گواراني',
-    ),
-    'gor': Language(
-      'gor',
-      'گورنٽلو',
-    ),
-    'gsw': Language(
-      'gsw',
-      'سوئس جرمن',
-    ),
-    'gu': Language(
-      'gu',
-      'گجراتي',
-    ),
-    'guz': Language(
-      'guz',
-      'گشي',
-    ),
-    'gv': Language(
-      'gv',
-      'مينڪس',
-    ),
-    'gwi': Language(
-      'gwi',
-      'گوچن',
-    ),
-    'ha': Language(
-      'ha',
-      'هوسا',
-    ),
-    'hai': Language(
-      'hai',
-      'ھائيڊا',
-    ),
-    'haw': Language(
-      'haw',
-      'هوائي',
-    ),
-    'hax': Language(
-      'hax',
-      'ڏاکڻي ھائڊا',
-    ),
-    'he': Language(
-      'he',
-      'عبراني',
-    ),
-    'hi': Language(
-      'hi',
-      'هندي',
-    ),
-    'hil': Language(
-      'hil',
-      'هلي گيانان',
-    ),
-    'hmn': Language(
-      'hmn',
-      'مونگ',
-    ),
-    'hr': Language(
-      'hr',
-      'ڪروشيائي',
-    ),
-    'hsb': Language(
-      'hsb',
-      'اپر سربيائي',
-    ),
-    'ht': Language(
-      'ht',
-      'هيٽي ڪرولي',
-    ),
-    'hu': Language(
-      'hu',
-      'هنگري',
-    ),
-    'hup': Language(
-      'hup',
-      'هوپا',
-    ),
-    'hur': Language(
-      'hur',
-      'ھاڪملم',
-    ),
-    'hy': Language(
-      'hy',
-      'ارماني',
-    ),
-    'hz': Language(
-      'hz',
-      'هريرو',
-    ),
-    'ia': Language(
-      'ia',
-      'انٽرلنگئا',
-    ),
-    'iba': Language(
-      'iba',
-      'ايبن',
-    ),
-    'ibb': Language(
-      'ibb',
-      'ابيبيو',
-    ),
-    'id': Language(
-      'id',
-      'انڊونيشي',
-    ),
-    'ie': Language(
-      'ie',
-      'انٽرلنگئي',
-    ),
-    'ig': Language(
-      'ig',
-      'اگبو',
-    ),
-    'ii': Language(
-      'ii',
-      'سچوان يي',
-    ),
-    'ikt': Language(
-      'ikt',
-      'مغربي ڪينيڊين انوڪٽيٽ',
-    ),
-    'ilo': Language(
-      'ilo',
-      'الوڪو',
-    ),
-    'inh': Language(
-      'inh',
-      'انگش',
-    ),
-    'io': Language(
-      'io',
-      'ادو',
-    ),
-    'is': Language(
-      'is',
-      'آئيس لينڊڪ',
-    ),
-    'it': Language(
-      'it',
-      'اطالوي',
-    ),
-    'iu': Language(
-      'iu',
-      'انو ڪتوت',
-    ),
-    'ja': Language(
-      'ja',
-      'جاپاني',
-    ),
-    'jbo': Language(
-      'jbo',
-      'لوجبين',
-    ),
-    'jgo': Language(
-      'jgo',
-      'نغومبا',
-    ),
-    'jmc': Language(
-      'jmc',
-      'ميڪم',
-    ),
-    'jv': Language(
-      'jv',
-      'جاونيز',
-    ),
-    'ka': Language(
-      'ka',
-      'جارجيائي',
-    ),
-    'kab': Language(
-      'kab',
-      'ڪبائل',
-    ),
-    'kac': Language(
-      'kac',
-      'ڪچن',
-    ),
-    'kaj': Language(
-      'kaj',
-      'پوڪيپسي',
-    ),
-    'kam': Language(
-      'kam',
-      'ڪئمبا',
-    ),
-    'kbd': Language(
-      'kbd',
-      'ڪبارڊيئن',
-    ),
-    'kcg': Language(
-      'kcg',
-      'تياپ',
-    ),
-    'kde': Language(
-      'kde',
-      'مڪوندي',
-    ),
-    'kea': Language(
-      'kea',
-      'ڪيبيو ويرڊيانو',
-    ),
-    'kfo': Language(
-      'kfo',
-      'ڪورو',
-    ),
-    'kgp': Language(
-      'kgp',
-      'ڪئينگينگ',
-    ),
-    'kha': Language(
-      'kha',
-      'خاسي',
-    ),
-    'khq': Language(
-      'khq',
-      'ڪيورا چني',
-    ),
-    'ki': Language(
-      'ki',
-      'اڪويو',
-    ),
-    'kj': Language(
-      'kj',
-      'ڪنياما',
-    ),
-    'kk': Language(
-      'kk',
-      'قازق',
-    ),
-    'kkj': Language(
-      'kkj',
-      'ڪڪو',
-    ),
-    'kl': Language(
-      'kl',
-      'ڪالا ليسٽ',
-    ),
-    'kln': Language(
-      'kln',
-      'ڪيلين جن',
-    ),
-    'km': Language(
-      'km',
-      'خمر',
-    ),
-    'kmb': Language(
-      'kmb',
-      'ڪنمبونڊو',
-    ),
-    'kn': Language(
-      'kn',
-      'ڪناڊا',
-    ),
-    'ko': Language(
-      'ko',
-      'ڪوريائي',
-    ),
-    'kok': Language(
-      'kok',
-      'ڪونڪي',
-    ),
-    'kpe': Language(
-      'kpe',
-      'ڪپيل',
-    ),
-    'kr': Language(
-      'kr',
-      'ڪنوري',
-    ),
-    'krc': Language(
-      'krc',
-      'ڪراچي بالڪر',
-    ),
-    'krl': Language(
-      'krl',
-      'ڪريلئين',
-    ),
-    'kru': Language(
-      'kru',
-      'ڪورخ',
-    ),
-    'ks': Language(
-      'ks',
-      'ڪشميري',
-    ),
-    'ksb': Language(
-      'ksb',
-      'شمبالا',
-    ),
-    'ksf': Language(
-      'ksf',
-      'بافيا',
-    ),
-    'ksh': Language(
-      'ksh',
-      'ڪلونئين',
-    ),
-    'ku': Language(
-      'ku',
-      'ڪردي',
-    ),
-    'kum': Language(
-      'kum',
-      'ڪومڪ',
-    ),
-    'kv': Language(
-      'kv',
-      'ڪومي',
-    ),
-    'kw': Language(
-      'kw',
-      'ڪورنش',
-    ),
-    'kwk': Language(
-      'kwk',
-      'ڪئاڪ ولا',
-    ),
-    'kxv': Language(
-      'kxv',
-      'ڪووي',
-    ),
-    'ky': Language(
-      'ky',
-      'ڪرغيز',
-    ),
-    'la': Language(
-      'la',
-      'لاطيني',
-    ),
-    'lad': Language(
-      'lad',
-      'لڊينو',
-    ),
-    'lag': Language(
-      'lag',
-      'لانگي',
-    ),
-    'lb': Language(
-      'lb',
-      'لگزمبرگ',
-    ),
-    'lez': Language(
-      'lez',
-      'ليزگهين',
-    ),
-    'lg': Language(
-      'lg',
-      'گاندا',
-    ),
-    'li': Language(
-      'li',
-      'لمبرگش',
-    ),
-    'lij': Language(
-      'lij',
-      'لگيوريئن',
-    ),
-    'lil': Language(
-      'lil',
-      'ليلوئيٽ',
-    ),
-    'lkt': Language(
-      'lkt',
-      'لڪوٽا',
-    ),
-    'lmo': Language(
-      'lmo',
-      'لامبارڊ',
-    ),
-    'ln': Language(
-      'ln',
-      'لنگالا',
-    ),
-    'lo': Language(
-      'lo',
-      'لائو',
-    ),
-    'lou': Language(
-      'lou',
-      'لوئيزيانا ڪريئول',
-    ),
-    'loz': Language(
-      'loz',
-      'لوزي',
-    ),
-    'lrc': Language(
-      'lrc',
-      'اتر لوري',
-    ),
-    'lsm': Language(
-      'lsm',
-      'ساميا',
-    ),
-    'lt': Language(
-      'lt',
-      'ليٿونيائي',
-    ),
-    'lu': Language(
-      'lu',
-      'لوبا-ڪتانگا',
-    ),
-    'lua': Language(
-      'lua',
-      'لوبا-لولوا',
-    ),
-    'lun': Language(
-      'lun',
-      'لنڊا',
-    ),
-    'luo': Language(
-      'luo',
-      'لو',
-    ),
-    'lus': Language(
-      'lus',
-      'ميزو',
-    ),
-    'luy': Language(
-      'luy',
-      'لوهيا',
-    ),
-    'lv': Language(
-      'lv',
-      'لاتوين',
-    ),
-    'mad': Language(
-      'mad',
-      'مدورائي',
-    ),
-    'mag': Language(
-      'mag',
-      'مگاهي',
-    ),
-    'mai': Language(
-      'mai',
-      'ميٿلي',
-    ),
-    'mak': Language(
-      'mak',
-      'مڪاسر',
-    ),
-    'mas': Language(
-      'mas',
-      'مسائي',
-    ),
-    'mdf': Language(
-      'mdf',
-      'موڪشا',
-    ),
-    'men': Language(
-      'men',
-      'مينڊي',
-    ),
-    'mer': Language(
-      'mer',
-      'ميرو',
-    ),
-    'mfe': Language(
-      'mfe',
-      'موریسیین',
-    ),
-    'mg': Language(
-      'mg',
-      'ملاگاسي',
-    ),
-    'mgh': Language(
-      'mgh',
-      'مخووا ميتو',
-    ),
-    'mgo': Language(
-      'mgo',
-      'ميتا',
-    ),
-    'mh': Language(
-      'mh',
-      'مارشليز',
-    ),
-    'mi': Language(
-      'mi',
-      'مائوري',
-    ),
-    'mic': Language(
-      'mic',
-      'ميڪ مڪ',
-    ),
-    'min': Language(
-      'min',
-      'مناڪابوا',
-    ),
-    'mk': Language(
-      'mk',
-      'ميسي ڊونيائي',
-    ),
-    'ml': Language(
-      'ml',
-      'مليالم',
-    ),
-    'mn': Language(
-      'mn',
-      'منگولي',
-    ),
-    'mni': Language(
-      'mni',
-      'ماني پوري',
-    ),
-    'moe': Language(
-      'moe',
-      'انو آئيمن',
-    ),
-    'moh': Language(
-      'moh',
-      'موهاڪ',
-    ),
-    'mos': Language(
-      'mos',
-      'موسي',
-    ),
-    'mr': Language(
-      'mr',
-      'مراٺي',
-    ),
-    'ms': Language(
-      'ms',
-      'ملي',
-    ),
-    'mt': Language(
-      'mt',
-      'مالٽي',
-    ),
-    'mua': Language(
-      'mua',
-      'من دانگ',
-    ),
-    'mul': Language(
-      'mul',
-      'هڪ کان وڌيڪ ٻوليون',
-    ),
-    'mus': Language(
-      'mus',
-      'ڪريڪ',
-    ),
-    'mwl': Language(
-      'mwl',
-      'مرانڊيز',
-    ),
-    'my': Language(
-      'my',
-      'برمي',
-    ),
-    'myv': Language(
-      'myv',
-      'ايريزيا',
-    ),
-    'mzn': Language(
-      'mzn',
-      'مزيندراني',
-    ),
-    'na': Language(
-      'na',
-      'نائو',
-    ),
-    'nap': Language(
-      'nap',
-      'نيپولٽن',
-    ),
-    'naq': Language(
-      'naq',
-      'ناما',
-    ),
-    'nb': Language(
-      'nb',
-      'نارويائي بوڪمال',
-    ),
-    'nd': Language(
-      'nd',
-      'اتر دبيلي',
-    ),
-    'nds': Language(
-      'nds',
-      'لو جرمن',
-    ),
-    'ne': Language(
-      'ne',
-      'نيپالي',
-    ),
-    'new': Language(
-      'new',
-      'نيواري',
-    ),
-    'ng': Language(
-      'ng',
-      'ڊونگا',
-    ),
-    'nia': Language(
-      'nia',
-      'نياس',
-    ),
-    'niu': Language(
-      'niu',
-      'نووي',
-    ),
-    'nl': Language(
-      'nl',
-      'ڊچ',
-    ),
-    'nl-BE': Language(
-      'nl-BE',
-      'فليمش',
-    ),
-    'nmg': Language(
-      'nmg',
-      'ڪويسيو',
-    ),
-    'nn': Language(
-      'nn',
-      'نارويائي نيوناسڪ',
-    ),
-    'nnh': Language(
-      'nnh',
-      'نغيمبون',
-    ),
-    'no': Language(
-      'no',
-      'نارويجيائي',
-    ),
-    'nog': Language(
-      'nog',
-      'نوگائي',
-    ),
-    'nqo': Language(
-      'nqo',
-      'نڪو',
-    ),
-    'nr': Language(
-      'nr',
-      'ڏکڻ دبيلي',
-    ),
-    'nso': Language(
-      'nso',
-      'اتر سوٿو',
-    ),
-    'nus': Language(
-      'nus',
-      'نيور',
-    ),
-    'nv': Language(
-      'nv',
-      'نواجو',
-    ),
-    'ny': Language(
-      'ny',
-      'نيانجا',
-    ),
-    'nyn': Language(
-      'nyn',
-      'نايانڪول',
-    ),
-    'oc': Language(
-      'oc',
-      'آڪسيٽن',
-    ),
-    'ojb': Language(
-      'ojb',
-      'اتر الھندي اوجيبوا',
-    ),
-    'ojc': Language(
-      'ojc',
-      'وچولي اوجيبوي',
-    ),
-    'ojs': Language(
-      'ojs',
-      'اوجي ڪري',
-    ),
-    'ojw': Language(
-      'ojw',
-      'مغربي اوجيبو',
-    ),
-    'oka': Language(
-      'oka',
-      'اوڪاناگن',
-    ),
-    'om': Language(
-      'om',
-      'اورومو',
-    ),
-    'or': Language(
-      'or',
-      'اوڊيا',
-    ),
-    'os': Language(
-      'os',
-      'اوسيٽڪ',
-    ),
-    'pa': Language(
-      'pa',
-      'پنجابي',
-    ),
-    'pag': Language(
-      'pag',
-      'پانگا سينان',
-    ),
-    'pam': Language(
-      'pam',
-      'پيم پينگا',
-    ),
-    'pap': Language(
-      'pap',
-      'پاپي امينٽو',
-    ),
-    'pau': Language(
-      'pau',
-      'پلون',
-    ),
-    'pcm': Language(
-      'pcm',
-      'نائيجرين پجن',
-    ),
-    'pis': Language(
-      'pis',
-      'پائجن',
-    ),
-    'pl': Language(
-      'pl',
-      'پولش',
-    ),
-    'pqm': Language(
-      'pqm',
-      'ماليسيٽ پاسماڪئوڊي',
-    ),
-    'prg': Language(
-      'prg',
-      'پرشن',
-    ),
-    'ps': Language(
-      'ps',
-      'پشتو',
-    ),
-    'pt': Language(
-      'pt',
-      'پورٽگليز',
-    ),
-    'pt-BR': Language(
-      'pt-BR',
-      'برازيلي پرتگالي',
-    ),
-    'pt-PT': Language(
-      'pt-PT',
-      'يورپي پرتگالي',
-    ),
-    'qu': Language(
-      'qu',
-      'ڪيچوا',
-    ),
-    'quc': Language(
-      'quc',
-      'ڪچي',
-    ),
-    'raj': Language(
-      'raj',
-      'راجستاني',
-    ),
-    'rap': Language(
-      'rap',
-      'ريپنوئي',
-    ),
-    'rar': Language(
-      'rar',
-      'ريرو ٽينگو',
-    ),
-    'rhg': Language(
-      'rhg',
-      'روھنگيا',
-    ),
-    'rm': Language(
-      'rm',
-      'رومانش',
-    ),
-    'rn': Language(
-      'rn',
-      'رونڊي',
-    ),
-    'ro': Language(
-      'ro',
-      'روماني',
-    ),
-    'ro-MD': Language(
-      'ro-MD',
-      'مالديوي',
-    ),
-    'rof': Language(
-      'rof',
-      'رومبو',
-    ),
-    'ru': Language(
-      'ru',
-      'روسي',
-    ),
-    'rup': Language(
-      'rup',
-      'ارومينين',
-    ),
-    'rw': Language(
-      'rw',
-      'ڪنيار وانڊا',
-    ),
-    'rwk': Language(
-      'rwk',
-      'روا',
-    ),
-    'sa': Language(
-      'sa',
-      'سنسڪرت',
-    ),
-    'sad': Language(
-      'sad',
-      'سنداوي',
-    ),
-    'sah': Language(
-      'sah',
-      'ساخا',
-    ),
-    'saq': Language(
-      'saq',
-      'سيمبورو',
-    ),
-    'sat': Language(
-      'sat',
-      'سنتالي',
-    ),
-    'sba': Language(
-      'sba',
-      'نغمبي',
-    ),
-    'sbp': Language(
-      'sbp',
-      'سانگوو',
-    ),
-    'sc': Language(
-      'sc',
-      'سارڊيني',
-    ),
-    'scn': Language(
-      'scn',
-      'سسلي',
-    ),
-    'sco': Language(
-      'sco',
-      'اسڪاٽس',
-    ),
-    'sd': Language(
-      'sd',
-      'سنڌي',
-    ),
-    'se': Language(
-      'se',
-      'اتر سامي',
-    ),
-    'seh': Language(
-      'seh',
-      'سينا',
-    ),
-    'ses': Language(
-      'ses',
-      'ڪيورابورو سيني',
-    ),
-    'sg': Language(
-      'sg',
-      'سانگو',
-    ),
-    'shi': Language(
-      'shi',
-      'تيچل هاتي',
-    ),
-    'shn': Language(
-      'shn',
-      'شان',
-    ),
-    'si': Language(
-      'si',
-      'سنهالا',
-    ),
-    'sk': Language(
-      'sk',
-      'سلواڪي',
-    ),
-    'sl': Language(
-      'sl',
-      'سلوويني',
-    ),
-    'slh': Language(
-      'slh',
-      'ڏاکڻي لشوٽسيڊ',
-    ),
-    'sm': Language(
-      'sm',
-      'سموئا',
-    ),
-    'sma': Language(
-      'sma',
-      'ڏکڻ سامي',
-    ),
-    'smj': Language(
-      'smj',
-      'لولي سامي',
-    ),
-    'smn': Language(
-      'smn',
-      'اناري سامي',
-    ),
-    'sms': Language(
-      'sms',
-      'اسڪاٽ سامي',
-    ),
-    'sn': Language(
-      'sn',
-      'شونا',
-    ),
-    'snk': Language(
-      'snk',
-      'سونينڪي',
-    ),
-    'so': Language(
-      'so',
-      'سومالي',
-    ),
-    'sq': Language(
-      'sq',
-      'الباني',
-    ),
-    'sr': Language(
-      'sr',
-      'سربيائي',
-    ),
-    'srn': Language(
-      'srn',
-      'سرانن تانگو',
-    ),
-    'ss': Language(
-      'ss',
-      'سواتي',
-    ),
-    'ssy': Language(
-      'ssy',
-      'سهو',
-    ),
-    'st': Language(
-      'st',
-      'ڏکڻ سوٿي',
-    ),
-    'str': Language(
-      'str',
-      'اسٽريٽ سليش',
-    ),
-    'su': Language(
-      'su',
-      'سوڊاني',
-    ),
-    'suk': Language(
-      'suk',
-      'سڪوما',
-    ),
-    'sv': Language(
-      'sv',
-      'سويڊش',
-    ),
-    'sw': Language(
-      'sw',
-      'سواحيلي',
-    ),
-    'sw-CD': Language(
-      'sw-CD',
-      'ڪونگو سواحيلي',
-    ),
-    'swb': Language(
-      'swb',
-      'ڪمورين',
-    ),
-    'syr': Language(
-      'syr',
-      'شامي',
-    ),
-    'szl': Language(
-      'szl',
-      'سليسيئن',
-    ),
-    'ta': Language(
-      'ta',
-      'تامل',
-    ),
-    'tce': Language(
-      'tce',
-      'ڏاکڻي ٽچون',
-    ),
-    'te': Language(
-      'te',
-      'تلگو',
-    ),
-    'tem': Language(
-      'tem',
-      'تمني',
-    ),
-    'teo': Language(
-      'teo',
-      'تيسو',
-    ),
-    'tet': Language(
-      'tet',
-      'تيتم',
-    ),
-    'tg': Language(
-      'tg',
-      'تاجڪ',
-    ),
-    'tgx': Language(
-      'tgx',
-      'ٽئگِش',
-    ),
-    'th': Language(
-      'th',
-      'ٿائي',
-    ),
-    'tht': Language(
-      'tht',
-      'ٽهلٽن',
-    ),
-    'ti': Language(
-      'ti',
-      'تگرينيائي',
-    ),
-    'tig': Language(
-      'tig',
-      'تگري',
-    ),
-    'tk': Language(
-      'tk',
-      'ترڪمين',
-    ),
-    'tlh': Language(
-      'tlh',
-      'ڪلون',
-    ),
-    'tli': Language(
-      'tli',
-      'ٽِلنگٽ',
-    ),
-    'tn': Language(
-      'tn',
-      'تسوانا',
-    ),
-    'to': Language(
-      'to',
-      'تونگن',
-    ),
-    'tok': Language(
-      'tok',
-      'توڪي پونا',
-    ),
-    'tpi': Language(
-      'tpi',
-      'تاڪ پسن',
-    ),
-    'tr': Language(
-      'tr',
-      'ترڪي',
-    ),
-    'trv': Language(
-      'trv',
-      'تاروڪو',
-    ),
-    'ts': Language(
-      'ts',
-      'سونگا',
-    ),
-    'tt': Language(
-      'tt',
-      'تاتار',
-    ),
-    'ttm': Language(
-      'ttm',
-      'اترين ٽچون',
-    ),
-    'tum': Language(
-      'tum',
-      'تمبوڪا',
-    ),
-    'tvl': Language(
-      'tvl',
-      'توالو',
-    ),
-    'twq': Language(
-      'twq',
-      'تساوڪي',
-    ),
-    'ty': Language(
-      'ty',
-      'تاهيتي',
-    ),
-    'tyv': Language(
-      'tyv',
-      'تووينيائي',
-    ),
-    'tzm': Language(
-      'tzm',
-      'وچ اٽلس تمازائيٽ',
-    ),
-    'udm': Language(
-      'udm',
-      'ادمرت',
-    ),
-    'ug': Language(
-      'ug',
-      'يوغور',
-    ),
-    'uk': Language(
-      'uk',
-      'يوڪراني',
-    ),
-    'umb': Language(
-      'umb',
-      'اومبنڊو',
-    ),
-    'und': Language(
-      'und',
-      'اڻڄاتل ٻولي',
-    ),
-    'ur': Language(
-      'ur',
-      'اردو',
-    ),
-    'uz': Language(
-      'uz',
-      'ازبڪ',
-    ),
-    'vai': Language(
-      'vai',
-      'يا',
-    ),
-    've': Language(
-      've',
-      'وينڊا',
-    ),
-    'vec': Language(
-      'vec',
-      'ونيشن',
-    ),
-    'vi': Language(
-      'vi',
-      'ويتنامي',
-    ),
-    'vmw': Language(
-      'vmw',
-      'مکووا',
-    ),
-    'vo': Language(
-      'vo',
-      'والپڪ',
-    ),
-    'vun': Language(
-      'vun',
-      'ونجو',
-    ),
-    'wa': Language(
-      'wa',
-      'ولون',
-    ),
-    'wae': Language(
-      'wae',
-      'والسر',
-    ),
-    'wal': Language(
-      'wal',
-      'وولايٽا',
-    ),
-    'war': Language(
-      'war',
-      'واري',
-    ),
-    'wo': Language(
-      'wo',
-      'وولوف',
-    ),
-    'wuu': Language(
-      'wuu',
-      'وو چيني',
-    ),
-    'xal': Language(
-      'xal',
-      'ڪيلمڪ',
-    ),
-    'xh': Language(
-      'xh',
-      'زھوسا',
-    ),
-    'xnr': Language(
-      'xnr',
-      'ڪينگري',
-    ),
-    'xog': Language(
-      'xog',
-      'سوگا',
-    ),
-    'yav': Language(
-      'yav',
-      'يانگ بين',
-    ),
-    'ybb': Language(
-      'ybb',
-      'ييمبا',
-    ),
-    'yi': Language(
-      'yi',
-      'يدش',
-    ),
-    'yo': Language(
-      'yo',
-      'يوروبا',
-    ),
-    'yrl': Language(
-      'yrl',
-      'نھين گاٽو',
-    ),
-    'yue': Language(
-      'yue',
-      'ڪينٽونيز',
-      menu: 'چيني، ڪينٽونيز',
-    ),
-    'za': Language(
-      'za',
-      'جوئنگ',
-    ),
-    'zgh': Language(
-      'zgh',
-      'معياري مراڪشي تامازائيٽ',
-    ),
-    'zh': Language(
-      'zh',
-      'چيني',
-      menu: 'چيني، مندارن',
-    ),
-    'zh-Hant': Language(
-      'zh-Hant',
-      'روايتي چيني',
-    ),
-    'zu': Language(
-      'zu',
-      'زولو',
-    ),
-    'zun': Language(
-      'zun',
-      'زوني',
-    ),
-    'zxx': Language(
-      'zxx',
-      'ڪوئي ٻولي جو مواد ڪونهي',
-    ),
-    'zza': Language(
-      'zza',
-      'زازا',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class ScriptsSd extends Scripts {
-  ScriptsSd._();
-
-  @override
-  final scripts = CanonicalizedMap<String, String, Script>.from({
-    'Adlm': Script(
-      'Adlm',
-      'ايڊلام',
-    ),
-    'Arab': Script(
-      'Arab',
-      'عربي',
-    ),
-    'Aran': Script(
-      'Aran',
-      'نستعلیق',
-    ),
-    'Armn': Script(
-      'Armn',
-      'عرماني',
-    ),
-    'Beng': Script(
-      'Beng',
-      'بنگلا',
-    ),
-    'Bopo': Script(
-      'Bopo',
-      'بوپوموفو',
-    ),
-    'Brai': Script(
-      'Brai',
-      'بريل',
-    ),
-    'Cakm': Script(
-      'Cakm',
-      'چڪما',
-    ),
-    'Cans': Script(
-      'Cans',
-      'يونيفائيڊ ڪينيڊيئن ابارجيني سليبڪس',
-    ),
-    'Cher': Script(
-      'Cher',
-      'چيروڪي',
-    ),
-    'Cyrl': Script(
-      'Cyrl',
-      'سيريلي',
-    ),
-    'Deva': Script(
-      'Deva',
-      'ديوناگري',
-    ),
-    'Ethi': Script(
-      'Ethi',
-      'ايٿوپيائي',
-    ),
-    'Geor': Script(
-      'Geor',
-      'جيورجيائي',
-    ),
-    'Grek': Script(
-      'Grek',
-      'يوناني',
-    ),
-    'Gujr': Script(
-      'Gujr',
-      'گجراتي',
-    ),
-    'Guru': Script(
-      'Guru',
-      'گرمکي',
-    ),
-    'Hanb': Script(
-      'Hanb',
-      'بوپوموفو سان هين',
-    ),
-    'Hang': Script(
-      'Hang',
-      'هنگول',
-    ),
-    'Hani': Script(
-      'Hani',
-      'هين',
-    ),
-    'Hans': Script(
-      'Hans',
-      'سادي',
-      standAlone: 'سادي هين',
-    ),
-    'Hant': Script(
-      'Hant',
-      'روايتي',
-      standAlone: 'روايتي هين',
-    ),
-    'Hebr': Script(
-      'Hebr',
-      'عبراني',
-    ),
-    'Hira': Script(
-      'Hira',
-      'هراگنا',
-    ),
-    'Hrkt': Script(
-      'Hrkt',
-      'جاپاني لکت',
-    ),
-    'Ital': Script(
-      'Ital',
-      'قديم اطالوي',
-    ),
-    'Jamo': Script(
-      'Jamo',
-      'جامو',
-    ),
-    'Java': Script(
-      'Java',
-      'جاوانيز',
-    ),
-    'Jpan': Script(
-      'Jpan',
-      'جاپاني',
-    ),
-    'Kana': Script(
-      'Kana',
-      'ڪٽاڪانا',
-    ),
-    'Khmr': Script(
-      'Khmr',
-      'خمر',
-    ),
-    'Knda': Script(
-      'Knda',
-      'ڪناڊا',
-    ),
-    'Kore': Script(
-      'Kore',
-      'ڪوريائي',
-    ),
-    'Laoo': Script(
-      'Laoo',
-      'لائو',
-    ),
-    'Latn': Script(
-      'Latn',
-      'لاطيني',
-    ),
-    'Mlym': Script(
-      'Mlym',
-      'ملايالم',
-    ),
-    'Mong': Script(
-      'Mong',
-      'منگولي',
-    ),
-    'Mtei': Script(
-      'Mtei',
-      'ميئيٽي مائيڪ',
-    ),
-    'Mult': Script(
-      'Mult',
-      'ملتاني',
-    ),
-    'Mymr': Script(
-      'Mymr',
-      'ميانمر',
-    ),
-    'Nkoo': Script(
-      'Nkoo',
-      'نڪو',
-    ),
-    'Olck': Script(
-      'Olck',
-      'اول چڪي',
-    ),
-    'Orya': Script(
-      'Orya',
-      'اوڊيا',
-    ),
-    'Rohg': Script(
-      'Rohg',
-      'ھنيفي',
-    ),
-    'Sarb': Script(
-      'Sarb',
-      'قديم ڏاکڻي عربي',
-    ),
-    'Sinh': Script(
-      'Sinh',
-      'سنهالا',
-    ),
-    'Sund': Script(
-      'Sund',
-      'سوڊاني',
-    ),
-    'Syrc': Script(
-      'Syrc',
-      'شامي',
-    ),
-    'Taml': Script(
-      'Taml',
-      'تامل',
-    ),
-    'Telu': Script(
-      'Telu',
-      'تلگو',
-    ),
-    'Tfng': Script(
-      'Tfng',
-      'ٽفيناگ',
-    ),
-    'Thaa': Script(
-      'Thaa',
-      'ٿانا',
-    ),
-    'Thai': Script(
-      'Thai',
-      'ٿائي',
-    ),
-    'Tibt': Script(
-      'Tibt',
-      'تبيتن',
-    ),
-    'Vaii': Script(
-      'Vaii',
-      'وائي',
-    ),
-    'Xpeo': Script(
-      'Xpeo',
-      'قديم فارسي',
-    ),
-    'Yiii': Script(
-      'Yiii',
-      'يي',
-    ),
-    'Zmth': Script(
-      'Zmth',
-      'رياضي جون نشانيون',
-    ),
-    'Zsye': Script(
-      'Zsye',
-      'ايموجي',
-    ),
-    'Zsym': Script(
-      'Zsym',
-      'نشانيون',
-    ),
-    'Zxxx': Script(
-      'Zxxx',
-      'اڻ لکيل',
-    ),
-    'Zyyy': Script(
-      'Zyyy',
-      'ڪامن',
-    ),
-    'Zzzz': Script(
-      'Zzzz',
-      'اڻڄاتل لکت',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class VariantsSd extends Variants {
-  VariantsSd._();
-
-  @override
-  final variants = CanonicalizedMap<String, String, Variant>.from({
-    'POSIX': Variant(
-      'POSIX',
-      'ڪمپيوٽر',
-    ),
-  }, (key) => key.toLowerCase());
-}
-
-class UnitsSd implements Units {
-  UnitsSd._();
-
-  @override
-  UnitPrefix get pattern10pMinus1 => UnitPrefix(
+  UnitPrefix get pattern10pMinus1 => const UnitPrefix(
         long: UnitPrefixPattern('deci{0}'),
         short: UnitPrefixPattern('d{0}'),
         narrow: UnitPrefixPattern('d{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus2 => UnitPrefix(
+  UnitPrefix get pattern10pMinus2 => const UnitPrefix(
         long: UnitPrefixPattern('سينٽي{0}'),
         short: UnitPrefixPattern('c{0}'),
         narrow: UnitPrefixPattern('c{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus3 => UnitPrefix(
+  UnitPrefix get pattern10pMinus3 => const UnitPrefix(
         long: UnitPrefixPattern('m{0}'),
         short: UnitPrefixPattern('m{0}'),
         narrow: UnitPrefixPattern('m{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus6 => UnitPrefix(
+  UnitPrefix get pattern10pMinus6 => const UnitPrefix(
         long: UnitPrefixPattern('micro{0}'),
         short: UnitPrefixPattern('μ{0}'),
         narrow: UnitPrefixPattern('μ{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus9 => UnitPrefix(
+  UnitPrefix get pattern10pMinus9 => const UnitPrefix(
         long: UnitPrefixPattern('nano{0}'),
         short: UnitPrefixPattern('n{0}'),
         narrow: UnitPrefixPattern('n{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus12 => UnitPrefix(
+  UnitPrefix get pattern10pMinus12 => const UnitPrefix(
         long: UnitPrefixPattern('pico{0}'),
         short: UnitPrefixPattern('p{0}'),
         narrow: UnitPrefixPattern('p{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus15 => UnitPrefix(
+  UnitPrefix get pattern10pMinus15 => const UnitPrefix(
         long: UnitPrefixPattern('femto{0}'),
         short: UnitPrefixPattern('f{0}'),
         narrow: UnitPrefixPattern('f{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus18 => UnitPrefix(
+  UnitPrefix get pattern10pMinus18 => const UnitPrefix(
         long: UnitPrefixPattern('atto{0}'),
         short: UnitPrefixPattern('a{0}'),
         narrow: UnitPrefixPattern('a{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus21 => UnitPrefix(
+  UnitPrefix get pattern10pMinus21 => const UnitPrefix(
         long: UnitPrefixPattern('zepto{0}'),
         short: UnitPrefixPattern('z{0}'),
         narrow: UnitPrefixPattern('z{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus24 => UnitPrefix(
+  UnitPrefix get pattern10pMinus24 => const UnitPrefix(
         long: UnitPrefixPattern('yocto{0}'),
         short: UnitPrefixPattern('y{0}'),
         narrow: UnitPrefixPattern('y{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus27 => UnitPrefix(
+  UnitPrefix get pattern10pMinus27 => const UnitPrefix(
         long: UnitPrefixPattern('رونٽو{0}'),
         short: UnitPrefixPattern('r{0}'),
         narrow: UnitPrefixPattern('r{0}'),
       );
   @override
-  UnitPrefix get pattern10pMinus30 => UnitPrefix(
+  UnitPrefix get pattern10pMinus30 => const UnitPrefix(
         long: UnitPrefixPattern('ڪوئيڪٽو{0}'),
         short: UnitPrefixPattern('q{0}'),
         narrow: UnitPrefixPattern('q{0}'),
       );
   @override
-  UnitPrefix get pattern10p1 => UnitPrefix(
+  UnitPrefix get pattern10p1 => const UnitPrefix(
         long: UnitPrefixPattern('deka{0}'),
         short: UnitPrefixPattern('da{0}'),
         narrow: UnitPrefixPattern('da{0}'),
       );
   @override
-  UnitPrefix get pattern10p2 => UnitPrefix(
+  UnitPrefix get pattern10p2 => const UnitPrefix(
         long: UnitPrefixPattern('hecto{0}'),
         short: UnitPrefixPattern('h{0}'),
         narrow: UnitPrefixPattern('h{0}'),
       );
   @override
-  UnitPrefix get pattern10p3 => UnitPrefix(
+  UnitPrefix get pattern10p3 => const UnitPrefix(
         long: UnitPrefixPattern('kilo{0}'),
         short: UnitPrefixPattern('k{0}'),
         narrow: UnitPrefixPattern('k{0}'),
       );
   @override
-  UnitPrefix get pattern10p6 => UnitPrefix(
+  UnitPrefix get pattern10p6 => const UnitPrefix(
         long: UnitPrefixPattern('mega{0}'),
         short: UnitPrefixPattern('M{0}'),
         narrow: UnitPrefixPattern('M{0}'),
       );
   @override
-  UnitPrefix get pattern10p9 => UnitPrefix(
+  UnitPrefix get pattern10p9 => const UnitPrefix(
         long: UnitPrefixPattern('giga{0}'),
         short: UnitPrefixPattern('G{0}'),
         narrow: UnitPrefixPattern('G{0}'),
       );
   @override
-  UnitPrefix get pattern10p12 => UnitPrefix(
+  UnitPrefix get pattern10p12 => const UnitPrefix(
         long: UnitPrefixPattern('tera{0}'),
         short: UnitPrefixPattern('T{0}'),
         narrow: UnitPrefixPattern('T{0}'),
       );
   @override
-  UnitPrefix get pattern10p15 => UnitPrefix(
+  UnitPrefix get pattern10p15 => const UnitPrefix(
         long: UnitPrefixPattern('peta{0}'),
         short: UnitPrefixPattern('P{0}'),
         narrow: UnitPrefixPattern('P{0}'),
       );
   @override
-  UnitPrefix get pattern10p18 => UnitPrefix(
+  UnitPrefix get pattern10p18 => const UnitPrefix(
         long: UnitPrefixPattern('exa{0}'),
         short: UnitPrefixPattern('E{0}'),
         narrow: UnitPrefixPattern('E{0}'),
       );
   @override
-  UnitPrefix get pattern10p21 => UnitPrefix(
+  UnitPrefix get pattern10p21 => const UnitPrefix(
         long: UnitPrefixPattern('zetta{0}'),
         short: UnitPrefixPattern('Z{0}'),
         narrow: UnitPrefixPattern('Z{0}'),
       );
   @override
-  UnitPrefix get pattern10p24 => UnitPrefix(
+  UnitPrefix get pattern10p24 => const UnitPrefix(
         long: UnitPrefixPattern('yotta{0}'),
         short: UnitPrefixPattern('Y{0}'),
         narrow: UnitPrefixPattern('Y{0}'),
       );
   @override
-  UnitPrefix get pattern10p27 => UnitPrefix(
+  UnitPrefix get pattern10p27 => const UnitPrefix(
         long: UnitPrefixPattern('رونا{0}'),
         short: UnitPrefixPattern('R{0}'),
         narrow: UnitPrefixPattern('R{0}'),
       );
   @override
-  UnitPrefix get pattern10p30 => UnitPrefix(
+  UnitPrefix get pattern10p30 => const UnitPrefix(
         long: UnitPrefixPattern('ڪوئيٽا{0}'),
         short: UnitPrefixPattern('Q{0}'),
         narrow: UnitPrefixPattern('Q{0}'),
       );
   @override
-  UnitPrefix get pattern1024p1 => UnitPrefix(
+  UnitPrefix get pattern1024p1 => const UnitPrefix(
         long: UnitPrefixPattern('ڪبي{0}'),
         short: UnitPrefixPattern('Ki{0}'),
         narrow: UnitPrefixPattern('Ki{0}'),
       );
   @override
-  UnitPrefix get pattern1024p2 => UnitPrefix(
+  UnitPrefix get pattern1024p2 => const UnitPrefix(
         long: UnitPrefixPattern('ميبي{0}'),
         short: UnitPrefixPattern('Mi{0}'),
         narrow: UnitPrefixPattern('Mi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p3 => UnitPrefix(
+  UnitPrefix get pattern1024p3 => const UnitPrefix(
         long: UnitPrefixPattern('جيبي{0}'),
         short: UnitPrefixPattern('Gi{0}'),
         narrow: UnitPrefixPattern('Gi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p4 => UnitPrefix(
+  UnitPrefix get pattern1024p4 => const UnitPrefix(
         long: UnitPrefixPattern('ٽيبي{0}'),
         short: UnitPrefixPattern('Ti{0}'),
         narrow: UnitPrefixPattern('Ti{0}'),
       );
   @override
-  UnitPrefix get pattern1024p5 => UnitPrefix(
+  UnitPrefix get pattern1024p5 => const UnitPrefix(
         long: UnitPrefixPattern('پيبي{0}'),
         short: UnitPrefixPattern('Pi{0}'),
         narrow: UnitPrefixPattern('Pi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p6 => UnitPrefix(
+  UnitPrefix get pattern1024p6 => const UnitPrefix(
         long: UnitPrefixPattern('اڪسبي{0}'),
         short: UnitPrefixPattern('Ei{0}'),
         narrow: UnitPrefixPattern('Ei{0}'),
       );
   @override
-  UnitPrefix get pattern1024p7 => UnitPrefix(
+  UnitPrefix get pattern1024p7 => const UnitPrefix(
         long: UnitPrefixPattern('زيبي{0}'),
         short: UnitPrefixPattern('Zi{0}'),
         narrow: UnitPrefixPattern('Zi{0}'),
       );
   @override
-  UnitPrefix get pattern1024p8 => UnitPrefix(
+  UnitPrefix get pattern1024p8 => const UnitPrefix(
         long: UnitPrefixPattern('يوب{0}'),
         short: UnitPrefixPattern('Yi{0}'),
         narrow: UnitPrefixPattern('Yi{0}'),
       );
   @override
-  CompoundUnit get per => CompoundUnit(
+  CompoundUnit get per => const CompoundUnit(
         long: CompoundUnitPattern('{0} في {1}'),
         short: CompoundUnitPattern('{0}/{1}'),
         narrow: CompoundUnitPattern('{0}/{1}'),
       );
   @override
-  CompoundUnit get times => CompoundUnit(
+  CompoundUnit get times => const CompoundUnit(
         long: CompoundUnitPattern('{0}⋅{1}'),
         short: CompoundUnitPattern('{0}⋅{1}'),
         narrow: CompoundUnitPattern('{0}⋅{1}'),
       );
   @override
-  Unit get accelerationGForce => Unit(
+  Unit get accelerationGForce => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪشش ثقل',
@@ -2348,7 +290,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get accelerationMeterPerSquareSecond => Unit(
+  Unit get accelerationMeterPerSquareSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميٽر في سيڪنڊ اسڪوائر',
@@ -2370,7 +312,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get angleRevolution => Unit(
+  Unit get angleRevolution => const Unit(
         long: UnitCountPattern(
           _locale,
           'گردش',
@@ -2392,7 +334,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get angleRadian => Unit(
+  Unit get angleRadian => const Unit(
         long: UnitCountPattern(
           _locale,
           'ريڊيئنز',
@@ -2414,7 +356,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get angleDegree => Unit(
+  Unit get angleDegree => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊگريز',
@@ -2436,7 +378,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get angleArcMinute => Unit(
+  Unit get angleArcMinute => const Unit(
         long: UnitCountPattern(
           _locale,
           'آرڪ منٽس',
@@ -2458,7 +400,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get angleArcSecond => Unit(
+  Unit get angleArcSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'آرڪ سيڪنڊز',
@@ -2480,7 +422,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaSquareKilometer => Unit(
+  Unit get areaSquareKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪوائر ڪلوميٽر',
@@ -2502,7 +444,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaHectare => Unit(
+  Unit get areaHectare => const Unit(
         long: UnitCountPattern(
           _locale,
           'هيڪٽر',
@@ -2524,7 +466,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaSquareMeter => Unit(
+  Unit get areaSquareMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪوائر ميٽر',
@@ -2546,7 +488,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaSquareCentimeter => Unit(
+  Unit get areaSquareCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪوائر سينٽي ميٽر',
@@ -2568,7 +510,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaSquareMile => Unit(
+  Unit get areaSquareMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪوائر ميل',
@@ -2590,7 +532,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaAcre => Unit(
+  Unit get areaAcre => const Unit(
         long: UnitCountPattern(
           _locale,
           'ايڪڙ',
@@ -2612,7 +554,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaSquareYard => Unit(
+  Unit get areaSquareYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪوائر يارڊ',
@@ -2634,7 +576,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaSquareFoot => Unit(
+  Unit get areaSquareFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪوائر فٽ',
@@ -2656,7 +598,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaSquareInch => Unit(
+  Unit get areaSquareInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪوائر انچ',
@@ -2678,7 +620,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get areaDunam => Unit(
+  Unit get areaDunam => const Unit(
         long: UnitCountPattern(
           _locale,
           'دنام',
@@ -2700,7 +642,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrKarat => Unit(
+  Unit get concentrKarat => const Unit(
         long: UnitCountPattern(
           _locale,
           'قيراط',
@@ -2722,7 +664,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrMilligramOfglucosePerDeciliter => Unit(
+  Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي گرامز في ڊيسي ليٽر',
@@ -2744,7 +686,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrMillimolePerLiter => Unit(
+  Unit get concentrMillimolePerLiter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي مولز في ليٽر',
@@ -2766,7 +708,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrItem => Unit(
+  Unit get concentrItem => const Unit(
         long: UnitCountPattern(
           _locale,
           'آئٽم',
@@ -2788,7 +730,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrPermillion => Unit(
+  Unit get concentrPermillion => const Unit(
         long: UnitCountPattern(
           _locale,
           'حصا في ملين',
@@ -2810,7 +752,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrPercent => Unit(
+  Unit get concentrPercent => const Unit(
         long: UnitCountPattern(
           _locale,
           '%',
@@ -2832,7 +774,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrPermille => Unit(
+  Unit get concentrPermille => const Unit(
         long: UnitCountPattern(
           _locale,
           '‰',
@@ -2854,7 +796,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrPermyriad => Unit(
+  Unit get concentrPermyriad => const Unit(
         long: UnitCountPattern(
           _locale,
           'پيرمائيرڊ',
@@ -2876,7 +818,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrMole => Unit(
+  Unit get concentrMole => const Unit(
         long: UnitCountPattern(
           _locale,
           'مولز',
@@ -2898,7 +840,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get consumptionLiterPerKilometer => Unit(
+  Unit get consumptionLiterPerKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ليٽرز في ڪلو ميٽر',
@@ -2920,7 +862,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get consumptionLiterPer100Kilometer => Unit(
+  Unit get consumptionLiterPer100Kilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ليٽرز في 100 ڪلو ميٽر',
@@ -2942,7 +884,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get consumptionMilePerGallon => Unit(
+  Unit get consumptionMilePerGallon => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميل في گيلن',
@@ -2964,7 +906,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get consumptionMilePerGallonImperial => Unit(
+  Unit get consumptionMilePerGallonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميل في امپيريل گيلن',
@@ -2986,7 +928,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalPetabyte => Unit(
+  Unit get digitalPetabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'پيرا بائيٽس',
@@ -3008,7 +950,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalTerabyte => Unit(
+  Unit get digitalTerabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'ٽيرا بائيٽز',
@@ -3030,7 +972,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalTerabit => Unit(
+  Unit get digitalTerabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ٽيرا بٽز',
@@ -3052,7 +994,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalGigabyte => Unit(
+  Unit get digitalGigabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'گيگا بائيٽز',
@@ -3074,7 +1016,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalGigabit => Unit(
+  Unit get digitalGigabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'گيگا بٽز',
@@ -3096,7 +1038,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalMegabyte => Unit(
+  Unit get digitalMegabyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميگا بائيٽز',
@@ -3118,7 +1060,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalMegabit => Unit(
+  Unit get digitalMegabit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميگا بٽز',
@@ -3140,7 +1082,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalKilobyte => Unit(
+  Unit get digitalKilobyte => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو بائيٽز',
@@ -3162,7 +1104,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalKilobit => Unit(
+  Unit get digitalKilobit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو بٽس',
@@ -3184,7 +1126,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalByte => Unit(
+  Unit get digitalByte => const Unit(
         long: UnitCountPattern(
           _locale,
           'بائيٽز',
@@ -3206,7 +1148,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get digitalBit => Unit(
+  Unit get digitalBit => const Unit(
         long: UnitCountPattern(
           _locale,
           'بٽز',
@@ -3228,7 +1170,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationCentury => Unit(
+  Unit get durationCentury => const Unit(
         long: UnitCountPattern(
           _locale,
           'صديون',
@@ -3250,7 +1192,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationDecade => Unit(
+  Unit get durationDecade => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڏهاڪا',
@@ -3272,7 +1214,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationYear => Unit(
+  Unit get durationYear => const Unit(
         long: UnitCountPattern(
           _locale,
           'سال',
@@ -3294,7 +1236,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationQuarter => Unit(
+  Unit get durationQuarter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ٽه ماهيون',
@@ -3316,7 +1258,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationMonth => Unit(
+  Unit get durationMonth => const Unit(
         long: UnitCountPattern(
           _locale,
           'مهينا',
@@ -3338,7 +1280,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationWeek => Unit(
+  Unit get durationWeek => const Unit(
         long: UnitCountPattern(
           _locale,
           'هفتا',
@@ -3360,7 +1302,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationDay => Unit(
+  Unit get durationDay => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڏينهن',
@@ -3382,7 +1324,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationHour => Unit(
+  Unit get durationHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلاڪ',
@@ -3404,7 +1346,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationMinute => Unit(
+  Unit get durationMinute => const Unit(
         long: UnitCountPattern(
           _locale,
           'منٽ',
@@ -3426,7 +1368,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationSecond => Unit(
+  Unit get durationSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'سيڪنڊ',
@@ -3448,7 +1390,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationMillisecond => Unit(
+  Unit get durationMillisecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي سيڪنڊ',
@@ -3470,7 +1412,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationMicrosecond => Unit(
+  Unit get durationMicrosecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'مائڪرو سيڪنڊ',
@@ -3492,7 +1434,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationNanosecond => Unit(
+  Unit get durationNanosecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'نينو سيڪنڊ',
@@ -3514,7 +1456,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get electricAmpere => Unit(
+  Unit get electricAmpere => const Unit(
         long: UnitCountPattern(
           _locale,
           'ایمپئیر',
@@ -3536,7 +1478,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get electricMilliampere => Unit(
+  Unit get electricMilliampere => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي ايمپئير',
@@ -3558,7 +1500,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get electricOhm => Unit(
+  Unit get electricOhm => const Unit(
         long: UnitCountPattern(
           _locale,
           'اوهمس',
@@ -3580,7 +1522,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get electricVolt => Unit(
+  Unit get electricVolt => const Unit(
         long: UnitCountPattern(
           _locale,
           'وولٽز',
@@ -3602,7 +1544,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyKilocalorie => Unit(
+  Unit get energyKilocalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو ڪيلوريز',
@@ -3624,7 +1566,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyCalorie => Unit(
+  Unit get energyCalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيلوري',
@@ -3646,7 +1588,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyFoodcalorie => Unit(
+  Unit get energyFoodcalorie => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيلوريز',
@@ -3668,7 +1610,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyKilojoule => Unit(
+  Unit get energyKilojoule => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو جولز',
@@ -3690,7 +1632,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyJoule => Unit(
+  Unit get energyJoule => const Unit(
         long: UnitCountPattern(
           _locale,
           'جول',
@@ -3712,7 +1654,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyKilowattHour => Unit(
+  Unit get energyKilowattHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو واٽ في ڪلاڪ',
@@ -3734,7 +1676,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyElectronvolt => Unit(
+  Unit get energyElectronvolt => const Unit(
         long: UnitCountPattern(
           _locale,
           'اليڪٽرون وولٽس',
@@ -3756,7 +1698,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyBritishThermalUnit => Unit(
+  Unit get energyBritishThermalUnit => const Unit(
         long: UnitCountPattern(
           _locale,
           'برٽش ٿرمل يونٽس',
@@ -3778,7 +1720,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get energyThermUs => Unit(
+  Unit get energyThermUs => const Unit(
         long: UnitCountPattern(
           _locale,
           'US ٿرمس',
@@ -3800,7 +1742,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get forcePoundForce => Unit(
+  Unit get forcePoundForce => const Unit(
         long: UnitCountPattern(
           _locale,
           'پائونڊز آف فورس',
@@ -3822,7 +1764,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get forceNewton => Unit(
+  Unit get forceNewton => const Unit(
         long: UnitCountPattern(
           _locale,
           'نيوٽنز',
@@ -3844,7 +1786,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get forceKilowattHourPer100Kilometer => Unit(
+  Unit get forceKilowattHourPer100Kilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو واٽ آورز في 100 ڪلوميٽر',
@@ -3866,7 +1808,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get frequencyGigahertz => Unit(
+  Unit get frequencyGigahertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'گيگا هرٽز',
@@ -3888,7 +1830,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get frequencyMegahertz => Unit(
+  Unit get frequencyMegahertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميگا هرٽز',
@@ -3910,7 +1852,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get frequencyKilohertz => Unit(
+  Unit get frequencyKilohertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو هرٽز',
@@ -3932,7 +1874,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get frequencyHertz => Unit(
+  Unit get frequencyHertz => const Unit(
         long: UnitCountPattern(
           _locale,
           'هرٽز',
@@ -3954,7 +1896,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsEm => Unit(
+  Unit get graphicsEm => const Unit(
         long: UnitCountPattern(
           _locale,
           'ٽائپوگرافڪ em',
@@ -3976,7 +1918,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsPixel => Unit(
+  Unit get graphicsPixel => const Unit(
         long: UnitCountPattern(
           _locale,
           'پڪسلز',
@@ -3998,7 +1940,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsMegapixel => Unit(
+  Unit get graphicsMegapixel => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميگا پڪسلز',
@@ -4020,7 +1962,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsPixelPerCentimeter => Unit(
+  Unit get graphicsPixelPerCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'پڪسلز في سينٽي ميٽر',
@@ -4042,7 +1984,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsPixelPerInch => Unit(
+  Unit get graphicsPixelPerInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'پڪسلز في انچ',
@@ -4064,7 +2006,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsDotPerCentimeter => Unit(
+  Unit get graphicsDotPerCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'في سينٽي ميٽر ڊاٽس',
@@ -4086,7 +2028,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsDotPerInch => Unit(
+  Unit get graphicsDotPerInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊاٽس في انچ',
@@ -4108,7 +2050,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get graphicsDot => Unit(
+  Unit get graphicsDot => const Unit(
         long: UnitCountPattern(
           _locale,
           'dots',
@@ -4130,7 +2072,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthEarthRadius => Unit(
+  Unit get lengthEarthRadius => const Unit(
         long: UnitCountPattern(
           _locale,
           'R⊕',
@@ -4152,7 +2094,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthKilometer => Unit(
+  Unit get lengthKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلوميٽر',
@@ -4174,7 +2116,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthMeter => Unit(
+  Unit get lengthMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميٽر',
@@ -4196,7 +2138,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthDecimeter => Unit(
+  Unit get lengthDecimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊيسي ميٽر',
@@ -4218,7 +2160,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthCentimeter => Unit(
+  Unit get lengthCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'سينٽي ميٽر',
@@ -4240,7 +2182,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthMillimeter => Unit(
+  Unit get lengthMillimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي ميٽر',
@@ -4262,7 +2204,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthMicrometer => Unit(
+  Unit get lengthMicrometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'مائڪرو ميٽر',
@@ -4284,7 +2226,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthNanometer => Unit(
+  Unit get lengthNanometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'نينو ميٽر',
@@ -4306,7 +2248,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthPicometer => Unit(
+  Unit get lengthPicometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'پيڪو ميٽر',
@@ -4328,7 +2270,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthMile => Unit(
+  Unit get lengthMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميل',
@@ -4350,7 +2292,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthYard => Unit(
+  Unit get lengthYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'گز',
@@ -4372,7 +2314,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthFoot => Unit(
+  Unit get lengthFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'فوٽ',
@@ -4394,7 +2336,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthInch => Unit(
+  Unit get lengthInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'انچ',
@@ -4416,7 +2358,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthParsec => Unit(
+  Unit get lengthParsec => const Unit(
         long: UnitCountPattern(
           _locale,
           'پارسيڪ',
@@ -4438,7 +2380,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthLightYear => Unit(
+  Unit get lengthLightYear => const Unit(
         long: UnitCountPattern(
           _locale,
           'لائيٽ ايئرس',
@@ -4460,7 +2402,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthAstronomicalUnit => Unit(
+  Unit get lengthAstronomicalUnit => const Unit(
         long: UnitCountPattern(
           _locale,
           'فلڪيات جا يونٽ',
@@ -4482,7 +2424,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthFurlong => Unit(
+  Unit get lengthFurlong => const Unit(
         long: UnitCountPattern(
           _locale,
           'fur',
@@ -4504,7 +2446,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthFathom => Unit(
+  Unit get lengthFathom => const Unit(
         long: UnitCountPattern(
           _locale,
           'fm',
@@ -4526,7 +2468,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthNauticalMile => Unit(
+  Unit get lengthNauticalMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'سمندري ميل',
@@ -4548,7 +2490,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthMileScandinavian => Unit(
+  Unit get lengthMileScandinavian => const Unit(
         long: UnitCountPattern(
           _locale,
           'اسڪینڊي نیویائي ميل',
@@ -4570,7 +2512,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthPoint => Unit(
+  Unit get lengthPoint => const Unit(
         long: UnitCountPattern(
           _locale,
           'پوائينٽون',
@@ -4592,7 +2534,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lengthSolarRadius => Unit(
+  Unit get lengthSolarRadius => const Unit(
         long: UnitCountPattern(
           _locale,
           'سولر راڊي',
@@ -4614,7 +2556,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lightLux => Unit(
+  Unit get lightLux => const Unit(
         long: UnitCountPattern(
           _locale,
           'لڪس',
@@ -4636,7 +2578,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lightCandela => Unit(
+  Unit get lightCandela => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪنڊيلا',
@@ -4658,7 +2600,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lightLumen => Unit(
+  Unit get lightLumen => const Unit(
         long: UnitCountPattern(
           _locale,
           'ليومن',
@@ -4680,7 +2622,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get lightSolarLuminosity => Unit(
+  Unit get lightSolarLuminosity => const Unit(
         long: UnitCountPattern(
           _locale,
           'سولر ليومينوسائيٽيز',
@@ -4702,7 +2644,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massTonne => Unit(
+  Unit get massTonne => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميٽرڪ ٽَنَ',
@@ -4724,7 +2666,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massKilogram => Unit(
+  Unit get massKilogram => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلوگرامَ',
@@ -4746,7 +2688,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massGram => Unit(
+  Unit get massGram => const Unit(
         long: UnitCountPattern(
           _locale,
           'گرامَ',
@@ -4768,7 +2710,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massMilligram => Unit(
+  Unit get massMilligram => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي گرامَ',
@@ -4790,7 +2732,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massMicrogram => Unit(
+  Unit get massMicrogram => const Unit(
         long: UnitCountPattern(
           _locale,
           'مائڪروگرامَ',
@@ -4812,7 +2754,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massTon => Unit(
+  Unit get massTon => const Unit(
         long: UnitCountPattern(
           _locale,
           'ٽن',
@@ -4834,7 +2776,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massStone => Unit(
+  Unit get massStone => const Unit(
         long: UnitCountPattern(
           _locale,
           'st',
@@ -4856,7 +2798,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massPound => Unit(
+  Unit get massPound => const Unit(
         long: UnitCountPattern(
           _locale,
           'پائونڊ',
@@ -4878,7 +2820,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massOunce => Unit(
+  Unit get massOunce => const Unit(
         long: UnitCountPattern(
           _locale,
           'اونس',
@@ -4900,7 +2842,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massOunceTroy => Unit(
+  Unit get massOunceTroy => const Unit(
         long: UnitCountPattern(
           _locale,
           'ٽرائي اونس',
@@ -4922,7 +2864,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massCarat => Unit(
+  Unit get massCarat => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيرٽ',
@@ -4944,7 +2886,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massDalton => Unit(
+  Unit get massDalton => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊالٽنز',
@@ -4966,7 +2908,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massEarthMass => Unit(
+  Unit get massEarthMass => const Unit(
         long: UnitCountPattern(
           _locale,
           'ارٿ ماسز',
@@ -4988,7 +2930,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massSolarMass => Unit(
+  Unit get massSolarMass => const Unit(
         long: UnitCountPattern(
           _locale,
           'سولر ماسز',
@@ -5010,7 +2952,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get massGrain => Unit(
+  Unit get massGrain => const Unit(
         long: UnitCountPattern(
           _locale,
           'گرين',
@@ -5032,7 +2974,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get powerGigawatt => Unit(
+  Unit get powerGigawatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'گيگا واٽ',
@@ -5054,7 +2996,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get powerMegawatt => Unit(
+  Unit get powerMegawatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميگا واٽز',
@@ -5076,7 +3018,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get powerKilowatt => Unit(
+  Unit get powerKilowatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو واٽس',
@@ -5098,7 +3040,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get powerWatt => Unit(
+  Unit get powerWatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'واٽز',
@@ -5120,7 +3062,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get powerMilliwatt => Unit(
+  Unit get powerMilliwatt => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي واٽز',
@@ -5142,7 +3084,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get powerHorsepower => Unit(
+  Unit get powerHorsepower => const Unit(
         long: UnitCountPattern(
           _locale,
           'هارس پاور',
@@ -5164,7 +3106,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureMillimeterOfhg => Unit(
+  Unit get pressureMillimeterOfhg => const Unit(
         long: UnitCountPattern(
           _locale,
           'مرڪري جو ملي ميٽر',
@@ -5186,7 +3128,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressurePoundForcePerSquareInch => Unit(
+  Unit get pressurePoundForcePerSquareInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'پائونڊز في اسڪوائر انچ',
@@ -5208,7 +3150,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureInchOfhg => Unit(
+  Unit get pressureInchOfhg => const Unit(
         long: UnitCountPattern(
           _locale,
           'مرڪري جا انچز',
@@ -5230,7 +3172,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureBar => Unit(
+  Unit get pressureBar => const Unit(
         long: UnitCountPattern(
           _locale,
           'بارس',
@@ -5252,7 +3194,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureMillibar => Unit(
+  Unit get pressureMillibar => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي بارز',
@@ -5274,7 +3216,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureAtmosphere => Unit(
+  Unit get pressureAtmosphere => const Unit(
         long: UnitCountPattern(
           _locale,
           'ايٽماس فيئر',
@@ -5296,7 +3238,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressurePascal => Unit(
+  Unit get pressurePascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'پاسڪلز',
@@ -5318,7 +3260,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureHectopascal => Unit(
+  Unit get pressureHectopascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'هيڪٽوپاسڪلز',
@@ -5340,7 +3282,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureKilopascal => Unit(
+  Unit get pressureKilopascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلو پاسڪلز',
@@ -5362,7 +3304,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureMegapascal => Unit(
+  Unit get pressureMegapascal => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميگا پاسڪلز',
@@ -5384,7 +3326,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get speedKilometerPerHour => Unit(
+  Unit get speedKilometerPerHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪلوميٽر في ڪلاڪ',
@@ -5406,7 +3348,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get speedMeterPerSecond => Unit(
+  Unit get speedMeterPerSecond => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميٽر في سيڪنڊ',
@@ -5428,7 +3370,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get speedMilePerHour => Unit(
+  Unit get speedMilePerHour => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميل في ڪلاڪ',
@@ -5450,7 +3392,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get speedKnot => Unit(
+  Unit get speedKnot => const Unit(
         long: UnitCountPattern(
           _locale,
           'ناٽ',
@@ -5472,7 +3414,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get speedBeaufort => Unit(
+  Unit get speedBeaufort => const Unit(
         long: UnitCountPattern(
           _locale,
           'بوفورٽ',
@@ -5494,7 +3436,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get temperatureGeneric => Unit(
+  Unit get temperatureGeneric => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊگري',
@@ -5516,7 +3458,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get temperatureCelsius => Unit(
+  Unit get temperatureCelsius => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊگري سيلسيس',
@@ -5538,7 +3480,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get temperatureFahrenheit => Unit(
+  Unit get temperatureFahrenheit => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊگريز فارن هائيٽ',
@@ -5560,7 +3502,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get temperatureKelvin => Unit(
+  Unit get temperatureKelvin => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيلونز',
@@ -5582,7 +3524,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get torquePoundForceFoot => Unit(
+  Unit get torquePoundForceFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'پائونڊ-فيٽ',
@@ -5604,7 +3546,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get torqueNewtonMeter => Unit(
+  Unit get torqueNewtonMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'نيوٽن-ميٽرز',
@@ -5626,7 +3568,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCubicKilometer => Unit(
+  Unit get volumeCubicKilometer => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيوبڪ ڪلوميٽر',
@@ -5648,7 +3590,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCubicMeter => Unit(
+  Unit get volumeCubicMeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيوبڪ ميٽر',
@@ -5670,7 +3612,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCubicCentimeter => Unit(
+  Unit get volumeCubicCentimeter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيوبڪ سينٽي ميٽر',
@@ -5692,7 +3634,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCubicMile => Unit(
+  Unit get volumeCubicMile => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيوبڪ ميل',
@@ -5714,7 +3656,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCubicYard => Unit(
+  Unit get volumeCubicYard => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيوبڪ يارڊ',
@@ -5736,7 +3678,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCubicFoot => Unit(
+  Unit get volumeCubicFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيوبڪ فٽ',
@@ -5758,7 +3700,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCubicInch => Unit(
+  Unit get volumeCubicInch => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪيوبڪ انچ',
@@ -5780,7 +3722,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeMegaliter => Unit(
+  Unit get volumeMegaliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميگا ليٽر',
@@ -5802,7 +3744,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeHectoliter => Unit(
+  Unit get volumeHectoliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'هيڪٽو ليٽر',
@@ -5824,7 +3766,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeLiter => Unit(
+  Unit get volumeLiter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ليٽر',
@@ -5846,7 +3788,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeDeciliter => Unit(
+  Unit get volumeDeciliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڊيسي ليٽر',
@@ -5868,7 +3810,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCentiliter => Unit(
+  Unit get volumeCentiliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'سينٽي ليٽر',
@@ -5890,7 +3832,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeMilliliter => Unit(
+  Unit get volumeMilliliter => const Unit(
         long: UnitCountPattern(
           _locale,
           'ملي ليٽر',
@@ -5912,7 +3854,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumePintMetric => Unit(
+  Unit get volumePintMetric => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميٽرڪ پنٽ',
@@ -5934,7 +3876,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCupMetric => Unit(
+  Unit get volumeCupMetric => const Unit(
         long: UnitCountPattern(
           _locale,
           'ميٽرڪ ڪپ',
@@ -5956,7 +3898,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeAcreFoot => Unit(
+  Unit get volumeAcreFoot => const Unit(
         long: UnitCountPattern(
           _locale,
           'ايڪڙ فٽ',
@@ -5978,7 +3920,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeBushel => Unit(
+  Unit get volumeBushel => const Unit(
         long: UnitCountPattern(
           _locale,
           'bu',
@@ -6000,7 +3942,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeGallon => Unit(
+  Unit get volumeGallon => const Unit(
         long: UnitCountPattern(
           _locale,
           'گيلن',
@@ -6022,7 +3964,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeGallonImperial => Unit(
+  Unit get volumeGallonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'امپيريل گيلن',
@@ -6044,7 +3986,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeQuart => Unit(
+  Unit get volumeQuart => const Unit(
         long: UnitCountPattern(
           _locale,
           'چوٿائي گيلن',
@@ -6066,7 +4008,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumePint => Unit(
+  Unit get volumePint => const Unit(
         long: UnitCountPattern(
           _locale,
           'پنٽ',
@@ -6088,7 +4030,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeCup => Unit(
+  Unit get volumeCup => const Unit(
         long: UnitCountPattern(
           _locale,
           'ڪپ ماپو',
@@ -6110,7 +4052,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeFluidOunce => Unit(
+  Unit get volumeFluidOunce => const Unit(
         long: UnitCountPattern(
           _locale,
           'پاڻياٺ اونس',
@@ -6132,7 +4074,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeFluidOunceImperial => Unit(
+  Unit get volumeFluidOunceImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'Imp. پاڻياٺ آئونسز',
@@ -6154,7 +4096,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeTablespoon => Unit(
+  Unit get volumeTablespoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'کاڌي جا چمچا',
@@ -6176,7 +4118,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeTeaspoon => Unit(
+  Unit get volumeTeaspoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'چانهن جا چمچا',
@@ -6198,7 +4140,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeBarrel => Unit(
+  Unit get volumeBarrel => const Unit(
         long: UnitCountPattern(
           _locale,
           'بيريلز',
@@ -6220,7 +4162,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeDessertSpoon => Unit(
+  Unit get volumeDessertSpoon => const Unit(
         long: UnitCountPattern(
           _locale,
           'dstspn',
@@ -6242,7 +4184,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeDessertSpoonImperial => Unit(
+  Unit get volumeDessertSpoonImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'dstspn Imp',
@@ -6264,7 +4206,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeDrop => Unit(
+  Unit get volumeDrop => const Unit(
         long: UnitCountPattern(
           _locale,
           'drop',
@@ -6286,7 +4228,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeDram => Unit(
+  Unit get volumeDram => const Unit(
         long: UnitCountPattern(
           _locale,
           'dram fluid',
@@ -6308,7 +4250,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeJigger => Unit(
+  Unit get volumeJigger => const Unit(
         long: UnitCountPattern(
           _locale,
           'jigger',
@@ -6330,7 +4272,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumePinch => Unit(
+  Unit get volumePinch => const Unit(
         long: UnitCountPattern(
           _locale,
           'pinch',
@@ -6352,7 +4294,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get volumeQuartImperial => Unit(
+  Unit get volumeQuartImperial => const Unit(
         long: UnitCountPattern(
           _locale,
           'qt Imp',
@@ -6374,7 +4316,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get pressureGasolineEnergyDensity => Unit(
+  Unit get pressureGasolineEnergyDensity => const Unit(
         long: UnitCountPattern(
           _locale,
           'of gasoline equivalent',
@@ -6396,7 +4338,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get speedLightSpeed => Unit(
+  Unit get speedLightSpeed => const Unit(
         long: UnitCountPattern(
           _locale,
           'نوري',
@@ -6418,7 +4360,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get concentrPortionPer1e9 => Unit(
+  Unit get concentrPortionPer1e9 => const Unit(
         long: UnitCountPattern(
           _locale,
           'حصا في ارب',
@@ -6440,7 +4382,7 @@ class UnitsSd implements Units {
       );
 
   @override
-  Unit get durationNight => Unit(
+  Unit get durationNight => const Unit(
         long: UnitCountPattern(
           _locale,
           'راتيون',
@@ -6462,11 +4404,11 @@ class UnitsSd implements Units {
       );
 }
 
-class DateFieldsSd implements DateFields {
-  DateFieldsSd._();
+class DateFieldsSd extends DateFields {
+  DateFieldsSd._(super.cld);
 
   @override
-  MultiLength get era => MultiLength(
+  MultiLength get era => const MultiLength(
         long: 'دور',
         short: 'دور',
         narrow: 'دور',
@@ -6474,27 +4416,27 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldFullData get year => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'سال',
           short: 'سال',
           narrow: 'سال',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پويون سال',
           short: 'پوئين سال',
           narrow: 'پوئين سال',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'پويون سال',
           short: 'هن سال',
           narrow: 'هن سال',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'پويون سال',
           short: 'اڳين سال',
           narrow: 'اڳيئن سال',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} سال پهرين',
@@ -6511,7 +4453,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} سال پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} سالن ۾',
@@ -6532,27 +4474,27 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldFullData get quarter => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'ٽي ماهي',
           short: 'ٽي ماهي',
           narrow: 'ٽي ماهي',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين ٽي ماهي',
           short: 'پوئين ٽي ماهي',
           narrow: 'پوئين ٽي ماهي',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن ٽي ماهي',
           short: 'هن ٽي ماهي',
           narrow: 'هن ٽي ماهي',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين ٽي ماهي',
           short: 'اڳين ٽي ماهي',
           narrow: 'اڳين ٽي ماهي',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ٽي ماهي پهرين',
@@ -6569,7 +4511,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} ٽي ماهي پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ٽي ماهي ۾',
@@ -6590,27 +4532,27 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldFullData get month => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'مهينو',
           short: 'مهينو',
           narrow: 'مهينو',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين مهيني',
           short: 'پوئين مهيني',
           narrow: 'پوئين مهيني',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن مهيني',
           short: 'هن مهيني',
           narrow: 'هن مهيني',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين مهيني',
           short: 'اڳين مهيني',
           narrow: 'اڳين مهيني',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} مهينا پهرين',
@@ -6627,7 +4569,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} مهينا پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} مهينن ۾',
@@ -6648,27 +4590,27 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldFullData get week => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'هفتو',
           short: 'هفتو',
           narrow: 'هفتو',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين هفتي',
           short: 'پوئين هفتي',
           narrow: 'پوئين هفتي',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن هفتي',
           short: 'هن هفتي',
           narrow: 'هن هفتي',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين هفتي',
           short: 'اڳين هفتي',
           narrow: 'اڳين هفتي',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} هفتا پهرين',
@@ -6685,7 +4627,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} هفتا پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} هفتن ۾',
@@ -6705,7 +4647,7 @@ class DateFieldsSd implements DateFields {
       );
 
   @override
-  MultiLength get weekOfMonth => MultiLength(
+  MultiLength get weekOfMonth => const MultiLength(
         long: 'مهيني جي هفتي',
         short: 'مهيني جي هفتي',
         narrow: 'مهيني جي هفتي',
@@ -6713,27 +4655,27 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldFullData get day => DateFieldFullData(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'ڏينهن',
           short: 'ڏينهن',
           narrow: 'ڏينهن',
         ),
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'ڪل',
           short: 'ڪل',
           narrow: 'ڪل',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'اڄ',
           short: 'اڄ',
           narrow: 'اڄ',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'سڀاڻي',
           short: 'سڀاڻي',
           narrow: 'سڀاڻي',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ڏينهن پهرين',
@@ -6750,7 +4692,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} ڏينهن پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ڏينهن ۾',
@@ -6770,21 +4712,21 @@ class DateFieldsSd implements DateFields {
       );
 
   @override
-  MultiLength get dayOfYear => MultiLength(
+  MultiLength get dayOfYear => const MultiLength(
         long: 'سال جو ڏينهن',
         short: 'سال جو ڏينهن',
         narrow: 'سال جو ڏينهن',
       );
 
   @override
-  MultiLength get weekday => MultiLength(
+  MultiLength get weekday => const MultiLength(
         long: 'هفتي جو ڏينهن',
         short: 'هفتي جو ڏينهن',
         narrow: 'هفتي جو ڏينهن',
       );
 
   @override
-  MultiLength get weekdayOfMonth => MultiLength(
+  MultiLength get weekdayOfMonth => const MultiLength(
         long: 'مهيني جي موڪل جو ڏينهن',
         short: 'مهيني جي موڪل جو ڏينهن',
         narrow: 'مهيني جي موڪل جو ڏينهن',
@@ -6792,22 +4734,22 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين آچر',
           short: 'پوئين آچر',
           narrow: 'پوئين آچر',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن آچر',
           short: 'هن آچر',
           narrow: 'هن آچر',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين آچر',
           short: 'اڳين آچر',
           narrow: 'اڳين آچر',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} آچر پهرين',
@@ -6824,7 +4766,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} آچر پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} آچرن ۾',
@@ -6845,22 +4787,22 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين سومر',
           short: 'پوئين سومر',
           narrow: 'پوئين سومر',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن سومر',
           short: 'هن سومر',
           narrow: 'هن سومر',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين سومر',
           short: 'اڳين سومر',
           narrow: 'اڳين سومر',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} سومر پهرين',
@@ -6877,7 +4819,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} سومر پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} سومرن ۾',
@@ -6898,22 +4840,22 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين اڱاري',
           short: 'پوئين اڱاري',
           narrow: 'پوئين اڱاري',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن اڱاري',
           short: 'هن اڱاري',
           narrow: 'هن اڱاري',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين اڱاري',
           short: 'اڳين اڱاري',
           narrow: 'اڳين اڱاري',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} اڱارا پهرين',
@@ -6930,7 +4872,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} اڱارا پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} اڱارن ۾',
@@ -6951,22 +4893,22 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين اربع',
           short: 'پوئين اربع',
           narrow: 'پوئين اربع',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن اربع',
           short: 'هن اربع',
           narrow: 'هن اربع',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين اربع',
           short: 'اڳين اربع',
           narrow: 'اڳين اربع',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} اربعا پهرين',
@@ -6983,7 +4925,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} اربعا پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} اربعن ۾',
@@ -7004,22 +4946,22 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين خميس',
           short: 'پوئين خميس',
           narrow: 'پوئين خميس',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن خميس',
           short: 'هن خميس',
           narrow: 'هن خميس',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين خميس',
           short: 'اڳين خميس',
           narrow: 'اڳين خميس',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} خميس پهرين',
@@ -7036,7 +4978,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} خميس پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} خميسن ۾',
@@ -7057,22 +4999,22 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين جمعي',
           short: 'پوئين جمعي',
           narrow: 'پوئين جمعي',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن جمعي',
           short: 'هن جمعي',
           narrow: 'هن جمعي',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين جمعي',
           short: 'اڳين جمعي',
           narrow: 'اڳين جمعي',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} جمعا پهرين',
@@ -7089,7 +5031,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} جمعا پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} جمعن ۾',
@@ -7110,22 +5052,22 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: MultiLength(
+        previous: const MultiLength(
           long: 'پوئين ڇنڇر',
           short: 'پوئين ڇنڇر',
           narrow: 'پوئين ڇنڇر',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن ڇنڇر',
           short: 'هن ڇنڇر',
           narrow: 'هن ڇنڇر',
         ),
-        next: MultiLength(
+        next: const MultiLength(
           long: 'اڳين ڇنڇر',
           short: 'اڳين ڇنڇر',
           narrow: 'اڳين ڇنڇر',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ڇنڇر پهرين',
@@ -7142,7 +5084,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} ڇنڇر پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ڇنڇرن ۾',
@@ -7162,7 +5104,7 @@ class DateFieldsSd implements DateFields {
       );
 
   @override
-  MultiLength get dayperiod => MultiLength(
+  MultiLength get dayperiod => const MultiLength(
         long: 'صبح/شام',
         short: 'صبح، منجهند/منجهند، شام',
         narrow: 'صبح، منجهند/منجهند، شام',
@@ -7170,17 +5112,17 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'ڪلاڪ',
           short: 'ڪلاڪ',
           narrow: 'ڪلاڪ',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن ڪلڪ',
           short: 'هن ڪلڪ',
           narrow: 'هن ڪلڪ',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ڪلاڪ پهرين',
@@ -7197,7 +5139,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} ڪلاڪ پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ڪلاڪ ۾',
@@ -7218,17 +5160,17 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'منٽ',
           short: 'منٽ',
           narrow: 'منٽ',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هن منٽ',
           short: 'هن منٽ',
           narrow: 'هن منٽ',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} منٽ پهرين',
@@ -7245,7 +5187,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} منٽ پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} منٽن ۾',
@@ -7266,17 +5208,17 @@ class DateFieldsSd implements DateFields {
 
   @override
   DateFieldDataTime get second => DateFieldDataTime(
-        displayName: MultiLength(
+        displayName: const MultiLength(
           long: 'سيڪنڊ',
           short: 'سيڪنڊ',
           narrow: 'سيڪنڊ',
         ),
-        now: MultiLength(
+        now: const MultiLength(
           long: 'هاڻي',
           short: 'هاڻي',
           narrow: 'هاڻي',
         ),
-        past: MultiLengthRelativeTime(
+        past: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} سيڪنڊ پهرين',
@@ -7293,7 +5235,7 @@ class DateFieldsSd implements DateFields {
             other: '{0} سيڪنڊ پهرين',
           ),
         ),
-        future: MultiLengthRelativeTime(
+        future: const MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} سيڪنڊن ۾',
@@ -7313,3582 +5255,6492 @@ class DateFieldsSd implements DateFields {
       );
 
   @override
-  MultiLength get zone => MultiLength(
+  MultiLength get zone => const MultiLength(
         long: 'ٽائيم زون',
         short: 'ٽائيم زون',
         narrow: 'ٽائيم زون',
       );
 }
 
-class TerritoriesSd implements Territories {
-  TerritoriesSd._();
+class LanguagesSd extends Languages {
+  const LanguagesSd._(super.cld);
+
+  static const _aa = Language('aa', 'افار');
+  static const _ab = Language('ab', 'ابقازیان');
+  static const _ace = Language('ace', 'اچائينيز');
+  static const _ada = Language('ada', 'ادنگمي');
+  static const _ady = Language('ady', 'اديگهي');
+  static const _af = Language('af', 'آفريڪي');
+  static const _agq = Language('agq', 'اگهيم');
+  static const _ain = Language('ain', 'آئينو');
+  static const _ak = Language('ak', 'اڪان');
+  static const _ale = Language('ale', 'اليوٽ');
+  static const _alt = Language('alt', 'ڏکڻ التائي');
+  static const _am = Language('am', 'امهاري');
+  static const _an = Language('an', 'ارگني');
+  static const _ann = Language('ann', 'اوبولو');
+  static const _anp = Language('anp', 'انجيڪا');
+  static const _ar = Language('ar', 'عربي');
+  static const _ar001 = Language('ar-001', 'جديد معياري عربي');
+  static const _arn = Language('arn', 'ماپوچي');
+  static const _arp = Language('arp', 'اراپائو');
+  static const _ars = Language('ars', 'نجدي عربي');
+  static const _$as = Language('as', 'آسامي');
+  static const _asa = Language('asa', 'اسو');
+  static const _ast = Language('ast', 'اسٽورين');
+  static const _atj = Language('atj', 'اٽيڪاميڪو');
+  static const _av = Language('av', 'اويرس');
+  static const _awa = Language('awa', 'اواڌي');
+  static const _ay = Language('ay', 'ایمارا');
+  static const _az = Language('az', 'آزربائيجاني', short: 'ازري');
+  static const _ba = Language('ba', 'ڪينيڊا');
+  static const _ban = Language('ban', 'بالينيس');
+  static const _bas = Language('bas', 'باسا');
+  static const _be = Language('be', 'بيلاروسي');
+  static const _bem = Language('bem', 'بيمبا');
+  static const _bez = Language('bez', 'بينا');
+  static const _bg = Language('bg', 'بلغاريائي');
+  static const _bgc = Language('bgc', 'ھريانوي');
+  static const _bho = Language('bho', 'ڀوجپوري');
+  static const _bi = Language('bi', 'بسلاما');
+  static const _bin = Language('bin', 'بني');
+  static const _bla = Language('bla', 'سڪسڪا');
+  static const _blo = Language('blo', 'آنيائي');
+  static const _bm = Language('bm', 'بمبارا');
+  static const _bn = Language('bn', 'بنگلا');
+  static const _bo = Language('bo', 'تبيتائي');
+  static const _br = Language('br', 'بريٽن');
+  static const _brx = Language('brx', 'بودو');
+  static const _bs = Language('bs', 'بوسنيائي');
+  static const _bug = Language('bug', 'بگنيز');
+  static const _byn = Language('byn', 'بلن');
+  static const _ca = Language('ca', 'ڪيٽالان');
+  static const _cay = Language('cay', 'ڪايوگا');
+  static const _ccp = Language('ccp', 'چمڪا');
+  static const _ce = Language('ce', 'چیچن');
+  static const _ceb = Language('ceb', 'سبوانو');
+  static const _cgg = Language('cgg', 'چگا');
+  static const _ch = Language('ch', 'چمورو');
+  static const _chk = Language('chk', 'چڪيز');
+  static const _chm = Language('chm', 'ماري');
+  static const _cho = Language('cho', 'چوڪ تو');
+  static const _chp = Language('chp', 'چائپائن');
+  static const _chr = Language('chr', 'چروڪي');
+  static const _chy = Language('chy', 'چايان');
+  static const _ckb =
+      Language('ckb', 'مرڪزي ڪردش', variant: 'مرڪزي ڪردش', menu: 'مرڪزي ڪردش');
+  static const _clc = Language('clc', 'چلڪوٽن');
+  static const _co = Language('co', 'ڪارسيڪائي');
+  static const _crg = Language('crg', 'ميچيف');
+  static const _crj = Language('crj', 'ڏکڻ اڀرندو ڪري');
+  static const _crk = Language('crk', 'پلينز ڪري');
+  static const _crl = Language('crl', 'اترين اوڀر ڪري');
+  static const _crm = Language('crm', 'موس ڪري');
+  static const _crr = Language('crr', 'ڪيرولينا الگانڪويئن');
+  static const _crs = Language('crs', 'سيسلوا ڪريئول فرانسي');
+  static const _cs = Language('cs', 'چيڪ');
+  static const _csw = Language('csw', 'سوامپي ڪري');
+  static const _cu = Language('cu', 'چرچ سلاوی');
+  static const _cv = Language('cv', 'چو واش');
+  static const _cy = Language('cy', 'ويلش');
+  static const _da = Language('da', 'ڊينش');
+  static const _dak = Language('dak', 'ڊڪوٽا');
+  static const _dar = Language('dar', 'ڊارگوا');
+  static const _dav = Language('dav', 'تائيتا');
+  static const _de = Language('de', 'جرمن');
+  static const _deAT = Language('de-AT', 'آسٽريائي جرمن');
+  static const _deCH = Language('de-CH', 'سوئس هائي جرمن');
+  static const _dgr = Language('dgr', 'داگرب');
+  static const _dje = Language('dje', 'زارما');
+  static const _doi = Language('doi', 'ڊوگري');
+  static const _dsb = Language('dsb', 'لوئر سوربين');
+  static const _dua = Language('dua', 'ڊيولا');
+  static const _dv = Language('dv', 'دويهي');
+  static const _dyo = Language('dyo', 'جولا فوني');
+  static const _dz = Language('dz', 'زونخا');
+  static const _dzg = Language('dzg', 'دزاگا');
+  static const _ebu = Language('ebu', 'ايمبيو');
+  static const _ee = Language('ee', 'ايو');
+  static const _efi = Language('efi', 'ايفڪ');
+  static const _eka = Language('eka', 'ايڪاجڪ');
+  static const _el = Language('el', 'يوناني');
+  static const _en = Language('en', 'انگريزي');
+  static const _enAU = Language('en-AU', 'آسٽريليائي انگريزي');
+  static const _enCA = Language('en-CA', 'ڪينيڊيائي انگريزي');
+  static const _enGB =
+      Language('en-GB', 'برطانوي انگريزي', short: 'برطانوي انگريزي');
+  static const _enUS =
+      Language('en-US', 'آمريڪي انگريزي', short: 'انگريزي (آمريڪا)');
+  static const _eo = Language('eo', 'ايسپرانٽو');
+  static const _es = Language('es', 'هسپانوي');
+  static const _es419 = Language('es-419', 'لاطيني آمريڪي اسپينش');
+  static const _esES = Language('es-ES', 'يورپي اسپيني');
+  static const _esMX = Language('es-MX', 'ميڪسيڪين اسپيني');
+  static const _et = Language('et', 'ايستونائي');
+  static const _eu = Language('eu', 'باسق');
+  static const _ewo = Language('ewo', 'اوانڊو');
+  static const _fa = Language('fa', 'فارسي');
+  static const _faAF = Language('fa-AF', 'دري');
+  static const _ff = Language('ff', 'فلاهه');
+  static const _fi = Language('fi', 'فنش');
+  static const _fil = Language('fil', 'فلپائني');
+  static const _fj = Language('fj', 'فجي');
+  static const _fo = Language('fo', 'فيروايس');
+  static const _fon = Language('fon', 'فون');
+  static const _fr = Language('fr', 'فرانسيسي');
+  static const _frCA = Language('fr-CA', 'ڪينيڊيائي فرانسيسي');
+  static const _frCH = Language('fr-CH', 'سوئس فرانسيسي');
+  static const _frc = Language('frc', 'ڪيجن فرانسيسي');
+  static const _frr = Language('frr', 'اترين فريسين');
+  static const _fur = Language('fur', 'فرائي لئين');
+  static const _fy = Language('fy', 'مغربي فريشن');
+  static const _ga = Language('ga', 'آئرش');
+  static const _gaa = Language('gaa', 'گا');
+  static const _gd = Language('gd', 'اسڪاٽش گيلڪ');
+  static const _gez = Language('gez', 'جيز');
+  static const _gil = Language('gil', 'گلبرٽيز');
+  static const _gl = Language('gl', 'گليشئين');
+  static const _gn = Language('gn', 'گواراني');
+  static const _gor = Language('gor', 'گورنٽلو');
+  static const _gsw = Language('gsw', 'سوئس جرمن');
+  static const _gu = Language('gu', 'گجراتي');
+  static const _guz = Language('guz', 'گشي');
+  static const _gv = Language('gv', 'مينڪس');
+  static const _gwi = Language('gwi', 'گوچن');
+  static const _ha = Language('ha', 'هوسا');
+  static const _hai = Language('hai', 'ھائيڊا');
+  static const _haw = Language('haw', 'هوائي');
+  static const _hax = Language('hax', 'ڏاکڻي ھائڊا');
+  static const _he = Language('he', 'عبراني');
+  static const _hi = Language('hi', 'هندي');
+  static const _hil = Language('hil', 'هلي گيانان');
+  static const _hmn = Language('hmn', 'مونگ');
+  static const _hr = Language('hr', 'ڪروشيائي');
+  static const _hsb = Language('hsb', 'اپر سربيائي');
+  static const _ht = Language('ht', 'هيٽي ڪرولي');
+  static const _hu = Language('hu', 'هنگري');
+  static const _hup = Language('hup', 'هوپا');
+  static const _hur = Language('hur', 'ھاڪملم');
+  static const _hy = Language('hy', 'ارماني');
+  static const _hz = Language('hz', 'هريرو');
+  static const _ia = Language('ia', 'انٽرلنگئا');
+  static const _iba = Language('iba', 'ايبن');
+  static const _ibb = Language('ibb', 'ابيبيو');
+  static const _id = Language('id', 'انڊونيشي');
+  static const _ie = Language('ie', 'انٽرلنگئي');
+  static const _ig = Language('ig', 'اگبو');
+  static const _ii = Language('ii', 'سچوان يي');
+  static const _ikt = Language('ikt', 'مغربي ڪينيڊين انوڪٽيٽ');
+  static const _ilo = Language('ilo', 'الوڪو');
+  static const _inh = Language('inh', 'انگش');
+  static const _io = Language('io', 'ادو');
+  static const _$is = Language('is', 'آئيس لينڊڪ');
+  static const _it = Language('it', 'اطالوي');
+  static const _iu = Language('iu', 'انو ڪتوت');
+  static const _ja = Language('ja', 'جاپاني');
+  static const _jbo = Language('jbo', 'لوجبين');
+  static const _jgo = Language('jgo', 'نغومبا');
+  static const _jmc = Language('jmc', 'ميڪم');
+  static const _jv = Language('jv', 'جاونيز');
+  static const _ka = Language('ka', 'جارجيائي');
+  static const _kab = Language('kab', 'ڪبائل');
+  static const _kac = Language('kac', 'ڪچن');
+  static const _kaj = Language('kaj', 'پوڪيپسي');
+  static const _kam = Language('kam', 'ڪئمبا');
+  static const _kbd = Language('kbd', 'ڪبارڊيئن');
+  static const _kcg = Language('kcg', 'تياپ');
+  static const _kde = Language('kde', 'مڪوندي');
+  static const _kea = Language('kea', 'ڪيبيو ويرڊيانو');
+  static const _kfo = Language('kfo', 'ڪورو');
+  static const _kgp = Language('kgp', 'ڪئينگينگ');
+  static const _kha = Language('kha', 'خاسي');
+  static const _khq = Language('khq', 'ڪيورا چني');
+  static const _ki = Language('ki', 'اڪويو');
+  static const _kj = Language('kj', 'ڪنياما');
+  static const _kk = Language('kk', 'قازق');
+  static const _kkj = Language('kkj', 'ڪڪو');
+  static const _kl = Language('kl', 'ڪالا ليسٽ');
+  static const _kln = Language('kln', 'ڪيلين جن');
+  static const _km = Language('km', 'خمر');
+  static const _kmb = Language('kmb', 'ڪنمبونڊو');
+  static const _kn = Language('kn', 'ڪناڊا');
+  static const _ko = Language('ko', 'ڪوريائي');
+  static const _kok = Language('kok', 'ڪونڪي');
+  static const _kpe = Language('kpe', 'ڪپيل');
+  static const _kr = Language('kr', 'ڪنوري');
+  static const _krc = Language('krc', 'ڪراچي بالڪر');
+  static const _krl = Language('krl', 'ڪريلئين');
+  static const _kru = Language('kru', 'ڪورخ');
+  static const _ks = Language('ks', 'ڪشميري');
+  static const _ksb = Language('ksb', 'شمبالا');
+  static const _ksf = Language('ksf', 'بافيا');
+  static const _ksh = Language('ksh', 'ڪلونئين');
+  static const _ku = Language('ku', 'ڪردي');
+  static const _kum = Language('kum', 'ڪومڪ');
+  static const _kv = Language('kv', 'ڪومي');
+  static const _kw = Language('kw', 'ڪورنش');
+  static const _kwk = Language('kwk', 'ڪئاڪ ولا');
+  static const _kxv = Language('kxv', 'ڪووي');
+  static const _ky = Language('ky', 'ڪرغيز');
+  static const _la = Language('la', 'لاطيني');
+  static const _lad = Language('lad', 'لڊينو');
+  static const _lag = Language('lag', 'لانگي');
+  static const _lb = Language('lb', 'لگزمبرگ');
+  static const _lez = Language('lez', 'ليزگهين');
+  static const _lg = Language('lg', 'گاندا');
+  static const _li = Language('li', 'لمبرگش');
+  static const _lij = Language('lij', 'لگيوريئن');
+  static const _lil = Language('lil', 'ليلوئيٽ');
+  static const _lkt = Language('lkt', 'لڪوٽا');
+  static const _lmo = Language('lmo', 'لامبارڊ');
+  static const _ln = Language('ln', 'لنگالا');
+  static const _lo = Language('lo', 'لائو');
+  static const _lou = Language('lou', 'لوئيزيانا ڪريئول');
+  static const _loz = Language('loz', 'لوزي');
+  static const _lrc = Language('lrc', 'اتر لوري');
+  static const _lsm = Language('lsm', 'ساميا');
+  static const _lt = Language('lt', 'ليٿونيائي');
+  static const _lu = Language('lu', 'لوبا-ڪتانگا');
+  static const _lua = Language('lua', 'لوبا-لولوا');
+  static const _lun = Language('lun', 'لنڊا');
+  static const _luo = Language('luo', 'لو');
+  static const _lus = Language('lus', 'ميزو');
+  static const _luy = Language('luy', 'لوهيا');
+  static const _lv = Language('lv', 'لاتوين');
+  static const _mad = Language('mad', 'مدورائي');
+  static const _mag = Language('mag', 'مگاهي');
+  static const _mai = Language('mai', 'ميٿلي');
+  static const _mak = Language('mak', 'مڪاسر');
+  static const _mas = Language('mas', 'مسائي');
+  static const _mdf = Language('mdf', 'موڪشا');
+  static const _men = Language('men', 'مينڊي');
+  static const _mer = Language('mer', 'ميرو');
+  static const _mfe = Language('mfe', 'موریسیین');
+  static const _mg = Language('mg', 'ملاگاسي');
+  static const _mgh = Language('mgh', 'مخووا ميتو');
+  static const _mgo = Language('mgo', 'ميتا');
+  static const _mh = Language('mh', 'مارشليز');
+  static const _mi = Language('mi', 'مائوري');
+  static const _mic = Language('mic', 'ميڪ مڪ');
+  static const _min = Language('min', 'مناڪابوا');
+  static const _mk = Language('mk', 'ميسي ڊونيائي');
+  static const _ml = Language('ml', 'مليالم');
+  static const _mn = Language('mn', 'منگولي');
+  static const _mni = Language('mni', 'ماني پوري');
+  static const _moe = Language('moe', 'انو آئيمن');
+  static const _moh = Language('moh', 'موهاڪ');
+  static const _mos = Language('mos', 'موسي');
+  static const _mr = Language('mr', 'مراٺي');
+  static const _ms = Language('ms', 'ملي');
+  static const _mt = Language('mt', 'مالٽي');
+  static const _mua = Language('mua', 'من دانگ');
+  static const _mul = Language('mul', 'هڪ کان وڌيڪ ٻوليون');
+  static const _mus = Language('mus', 'ڪريڪ');
+  static const _mwl = Language('mwl', 'مرانڊيز');
+  static const _my = Language('my', 'برمي');
+  static const _myv = Language('myv', 'ايريزيا');
+  static const _mzn = Language('mzn', 'مزيندراني');
+  static const _na = Language('na', 'نائو');
+  static const _nap = Language('nap', 'نيپولٽن');
+  static const _naq = Language('naq', 'ناما');
+  static const _nb = Language('nb', 'نارويائي بوڪمال');
+  static const _nd = Language('nd', 'اتر دبيلي');
+  static const _nds = Language('nds', 'لو جرمن');
+  static const _ne = Language('ne', 'نيپالي');
+  static const _$new = Language('new', 'نيواري');
+  static const _ng = Language('ng', 'ڊونگا');
+  static const _nia = Language('nia', 'نياس');
+  static const _niu = Language('niu', 'نووي');
+  static const _nl = Language('nl', 'ڊچ');
+  static const _nlBE = Language('nl-BE', 'فليمش');
+  static const _nmg = Language('nmg', 'ڪويسيو');
+  static const _nn = Language('nn', 'نارويائي نيوناسڪ');
+  static const _nnh = Language('nnh', 'نغيمبون');
+  static const _no = Language('no', 'نارويجيائي');
+  static const _nog = Language('nog', 'نوگائي');
+  static const _nqo = Language('nqo', 'نڪو');
+  static const _nr = Language('nr', 'ڏکڻ دبيلي');
+  static const _nso = Language('nso', 'اتر سوٿو');
+  static const _nus = Language('nus', 'نيور');
+  static const _nv = Language('nv', 'نواجو');
+  static const _ny = Language('ny', 'نيانجا');
+  static const _nyn = Language('nyn', 'نايانڪول');
+  static const _oc = Language('oc', 'آڪسيٽن');
+  static const _ojb = Language('ojb', 'اتر الھندي اوجيبوا');
+  static const _ojc = Language('ojc', 'وچولي اوجيبوي');
+  static const _ojs = Language('ojs', 'اوجي ڪري');
+  static const _ojw = Language('ojw', 'مغربي اوجيبو');
+  static const _oka = Language('oka', 'اوڪاناگن');
+  static const _om = Language('om', 'اورومو');
+  static const _or = Language('or', 'اوڊيا');
+  static const _os = Language('os', 'اوسيٽڪ');
+  static const _pa = Language('pa', 'پنجابي');
+  static const _pag = Language('pag', 'پانگا سينان');
+  static const _pam = Language('pam', 'پيم پينگا');
+  static const _pap = Language('pap', 'پاپي امينٽو');
+  static const _pau = Language('pau', 'پلون');
+  static const _pcm = Language('pcm', 'نائيجرين پجن');
+  static const _pis = Language('pis', 'پائجن');
+  static const _pl = Language('pl', 'پولش');
+  static const _pqm = Language('pqm', 'ماليسيٽ پاسماڪئوڊي');
+  static const _prg = Language('prg', 'پرشن');
+  static const _ps = Language('ps', 'پشتو');
+  static const _pt = Language('pt', 'پورٽگليز');
+  static const _ptBR = Language('pt-BR', 'برازيلي پرتگالي');
+  static const _ptPT = Language('pt-PT', 'يورپي پرتگالي');
+  static const _qu = Language('qu', 'ڪيچوا');
+  static const _quc = Language('quc', 'ڪچي');
+  static const _raj = Language('raj', 'راجستاني');
+  static const _rap = Language('rap', 'ريپنوئي');
+  static const _rar = Language('rar', 'ريرو ٽينگو');
+  static const _rhg = Language('rhg', 'روھنگيا');
+  static const _rm = Language('rm', 'رومانش');
+  static const _rn = Language('rn', 'رونڊي');
+  static const _ro = Language('ro', 'روماني');
+  static const _roMD = Language('ro-MD', 'مالديوي');
+  static const _rof = Language('rof', 'رومبو');
+  static const _ru = Language('ru', 'روسي');
+  static const _rup = Language('rup', 'ارومينين');
+  static const _rw = Language('rw', 'ڪنيار وانڊا');
+  static const _rwk = Language('rwk', 'روا');
+  static const _sa = Language('sa', 'سنسڪرت');
+  static const _sad = Language('sad', 'سنداوي');
+  static const _sah = Language('sah', 'ساخا');
+  static const _saq = Language('saq', 'سيمبورو');
+  static const _sat = Language('sat', 'سنتالي');
+  static const _sba = Language('sba', 'نغمبي');
+  static const _sbp = Language('sbp', 'سانگوو');
+  static const _sc = Language('sc', 'سارڊيني');
+  static const _scn = Language('scn', 'سسلي');
+  static const _sco = Language('sco', 'اسڪاٽس');
+  static const _sd = Language('sd', 'سنڌي');
+  static const _se = Language('se', 'اتر سامي');
+  static const _seh = Language('seh', 'سينا');
+  static const _ses = Language('ses', 'ڪيورابورو سيني');
+  static const _sg = Language('sg', 'سانگو');
+  static const _shi = Language('shi', 'تيچل هاتي');
+  static const _shn = Language('shn', 'شان');
+  static const _si = Language('si', 'سنهالا');
+  static const _sk = Language('sk', 'سلواڪي');
+  static const _sl = Language('sl', 'سلوويني');
+  static const _slh = Language('slh', 'ڏاکڻي لشوٽسيڊ');
+  static const _sm = Language('sm', 'سموئا');
+  static const _sma = Language('sma', 'ڏکڻ سامي');
+  static const _smj = Language('smj', 'لولي سامي');
+  static const _smn = Language('smn', 'اناري سامي');
+  static const _sms = Language('sms', 'اسڪاٽ سامي');
+  static const _sn = Language('sn', 'شونا');
+  static const _snk = Language('snk', 'سونينڪي');
+  static const _so = Language('so', 'سومالي');
+  static const _sq = Language('sq', 'الباني');
+  static const _sr = Language('sr', 'سربيائي');
+  static const _srn = Language('srn', 'سرانن تانگو');
+  static const _ss = Language('ss', 'سواتي');
+  static const _ssy = Language('ssy', 'سهو');
+  static const _st = Language('st', 'ڏکڻ سوٿي');
+  static const _str = Language('str', 'اسٽريٽ سليش');
+  static const _su = Language('su', 'سوڊاني');
+  static const _suk = Language('suk', 'سڪوما');
+  static const _sv = Language('sv', 'سويڊش');
+  static const _sw = Language('sw', 'سواحيلي');
+  static const _swCD = Language('sw-CD', 'ڪونگو سواحيلي');
+  static const _swb = Language('swb', 'ڪمورين');
+  static const _syr = Language('syr', 'شامي');
+  static const _szl = Language('szl', 'سليسيئن');
+  static const _ta = Language('ta', 'تامل');
+  static const _tce = Language('tce', 'ڏاکڻي ٽچون');
+  static const _te = Language('te', 'تلگو');
+  static const _tem = Language('tem', 'تمني');
+  static const _teo = Language('teo', 'تيسو');
+  static const _tet = Language('tet', 'تيتم');
+  static const _tg = Language('tg', 'تاجڪ');
+  static const _tgx = Language('tgx', 'ٽئگِش');
+  static const _th = Language('th', 'ٿائي');
+  static const _tht = Language('tht', 'ٽهلٽن');
+  static const _ti = Language('ti', 'تگرينيائي');
+  static const _tig = Language('tig', 'تگري');
+  static const _tk = Language('tk', 'ترڪمين');
+  static const _tlh = Language('tlh', 'ڪلون');
+  static const _tli = Language('tli', 'ٽِلنگٽ');
+  static const _tn = Language('tn', 'تسوانا');
+  static const _to = Language('to', 'تونگن');
+  static const _tok = Language('tok', 'توڪي پونا');
+  static const _tpi = Language('tpi', 'تاڪ پسن');
+  static const _tr = Language('tr', 'ترڪي');
+  static const _trv = Language('trv', 'تاروڪو');
+  static const _ts = Language('ts', 'سونگا');
+  static const _tt = Language('tt', 'تاتار');
+  static const _ttm = Language('ttm', 'اترين ٽچون');
+  static const _tum = Language('tum', 'تمبوڪا');
+  static const _tvl = Language('tvl', 'توالو');
+  static const _twq = Language('twq', 'تساوڪي');
+  static const _ty = Language('ty', 'تاهيتي');
+  static const _tyv = Language('tyv', 'تووينيائي');
+  static const _tzm = Language('tzm', 'وچ اٽلس تمازائيٽ');
+  static const _udm = Language('udm', 'ادمرت');
+  static const _ug = Language('ug', 'يوغور');
+  static const _uk = Language('uk', 'يوڪراني');
+  static const _umb = Language('umb', 'اومبنڊو');
+  static const _und = Language('und', 'اڻڄاتل ٻولي');
+  static const _ur = Language('ur', 'اردو');
+  static const _uz = Language('uz', 'ازبڪ');
+  static const _vai = Language('vai', 'يا');
+  static const _ve = Language('ve', 'وينڊا');
+  static const _vec = Language('vec', 'ونيشن');
+  static const _vi = Language('vi', 'ويتنامي');
+  static const _vmw = Language('vmw', 'مکووا');
+  static const _vo = Language('vo', 'والپڪ');
+  static const _vun = Language('vun', 'ونجو');
+  static const _wa = Language('wa', 'ولون');
+  static const _wae = Language('wae', 'والسر');
+  static const _wal = Language('wal', 'وولايٽا');
+  static const _war = Language('war', 'واري');
+  static const _wo = Language('wo', 'وولوف');
+  static const _wuu = Language('wuu', 'وو چيني');
+  static const _xal = Language('xal', 'ڪيلمڪ');
+  static const _xh = Language('xh', 'زھوسا');
+  static const _xnr = Language('xnr', 'ڪينگري');
+  static const _xog = Language('xog', 'سوگا');
+  static const _yav = Language('yav', 'يانگ بين');
+  static const _ybb = Language('ybb', 'ييمبا');
+  static const _yi = Language('yi', 'يدش');
+  static const _yo = Language('yo', 'يوروبا');
+  static const _yrl = Language('yrl', 'نھين گاٽو');
+  static const _yue = Language('yue', 'ڪينٽونيز', menu: 'چيني، ڪينٽونيز');
+  static const _za = Language('za', 'جوئنگ');
+  static const _zgh = Language('zgh', 'معياري مراڪشي تامازائيٽ');
+  static const _zh = Language('zh', 'چيني', menu: 'چيني، مندارن');
+  static const _zhHant = Language('zh-Hant', 'روايتي چيني');
+  static const _zu = Language('zu', 'زولو');
+  static const _zun = Language('zun', 'زوني');
+  static const _zxx = Language('zxx', 'ڪوئي ٻولي جو مواد ڪونهي');
+  static const _zza = Language('zza', 'زازا');
 
   @override
-  Territory get world => Territory(
-        '001',
-        'دنيا',
-      );
+  final unknownLanguage = _und;
+  @override
+  final aa = _aa;
+  @override
+  final ab = _ab;
+  @override
+  final ace = _ace;
+  @override
+  final ach = _und;
+  @override
+  final ada = _ada;
+  @override
+  final ady = _ady;
+  @override
+  final ae = _und;
+  @override
+  final aeb = _und;
+  @override
+  final af = _af;
+  @override
+  final afh = _und;
+  @override
+  final agq = _agq;
+  @override
+  final ain = _ain;
+  @override
+  final ak = _ak;
+  @override
+  final akk = _und;
+  @override
+  final akz = _und;
+  @override
+  final ale = _ale;
+  @override
+  final aln = _und;
+  @override
+  final alt = _alt;
+  @override
+  final am = _am;
+  @override
+  final an = _an;
+  @override
+  final ang = _und;
+  @override
+  final ann = _ann;
+  @override
+  final anp = _anp;
+  @override
+  final ar = _ar;
+  @override
+  final ar001 = _ar001;
+  @override
+  final arc = _und;
+  @override
+  final arn = _arn;
+  @override
+  final aro = _und;
+  @override
+  final arp = _arp;
+  @override
+  final arq = _und;
+  @override
+  final ars = _ars;
+  @override
+  final arw = _und;
+  @override
+  final ary = _und;
+  @override
+  final arz = _und;
+  @override
+  final $as = _$as;
+  @override
+  final asa = _asa;
+  @override
+  final ase = _und;
+  @override
+  final ast = _ast;
+  @override
+  final atj = _atj;
+  @override
+  final av = _av;
+  @override
+  final avk = _und;
+  @override
+  final awa = _awa;
+  @override
+  final ay = _ay;
+  @override
+  final az = _az;
+  @override
+  final ba = _ba;
+  @override
+  final bal = _und;
+  @override
+  final ban = _ban;
+  @override
+  final bar = _und;
+  @override
+  final bas = _bas;
+  @override
+  final bax = _und;
+  @override
+  final bbc = _und;
+  @override
+  final bbj = _und;
+  @override
+  final be = _be;
+  @override
+  final bej = _und;
+  @override
+  final bem = _bem;
+  @override
+  final bew = _und;
+  @override
+  final bez = _bez;
+  @override
+  final bfd = _und;
+  @override
+  final bfq = _und;
+  @override
+  final bg = _bg;
+  @override
+  final bgc = _bgc;
+  @override
+  final bgn = _und;
+  @override
+  final bho = _bho;
+  @override
+  final bi = _bi;
+  @override
+  final bik = _und;
+  @override
+  final bin = _bin;
+  @override
+  final bjn = _und;
+  @override
+  final bkm = _und;
+  @override
+  final bla = _bla;
+  @override
+  final blo = _blo;
+  @override
+  final blt = _und;
+  @override
+  final bm = _bm;
+  @override
+  final bn = _bn;
+  @override
+  final bo = _bo;
+  @override
+  final bpy = _und;
+  @override
+  final bqi = _und;
+  @override
+  final br = _br;
+  @override
+  final bra = _und;
+  @override
+  final brh = _und;
+  @override
+  final brx = _brx;
+  @override
+  final bs = _bs;
+  @override
+  final bss = _und;
+  @override
+  final bua = _und;
+  @override
+  final bug = _bug;
+  @override
+  final bum = _und;
+  @override
+  final byn = _byn;
+  @override
+  final byv = _und;
+  @override
+  final ca = _ca;
+  @override
+  final cad = _und;
+  @override
+  final car = _und;
+  @override
+  final cay = _cay;
+  @override
+  final cch = _und;
+  @override
+  final ccp = _ccp;
+  @override
+  final ce = _ce;
+  @override
+  final ceb = _ceb;
+  @override
+  final cgg = _cgg;
+  @override
+  final ch = _ch;
+  @override
+  final chb = _und;
+  @override
+  final chg = _und;
+  @override
+  final chk = _chk;
+  @override
+  final chm = _chm;
+  @override
+  final chn = _und;
+  @override
+  final cho = _cho;
+  @override
+  final chp = _chp;
+  @override
+  final chr = _chr;
+  @override
+  final chy = _chy;
+  @override
+  final cic = _und;
+  @override
+  final ckb = _ckb;
+  @override
+  final clc = _clc;
+  @override
+  final co = _co;
+  @override
+  final cop = _und;
+  @override
+  final cps = _und;
+  @override
+  final cr = _und;
+  @override
+  final crg = _crg;
+  @override
+  final crh = _und;
+  @override
+  final crj = _crj;
+  @override
+  final crk = _crk;
+  @override
+  final crl = _crl;
+  @override
+  final crm = _crm;
+  @override
+  final crr = _crr;
+  @override
+  final crs = _crs;
+  @override
+  final cs = _cs;
+  @override
+  final csb = _und;
+  @override
+  final csw = _csw;
+  @override
+  final cu = _cu;
+  @override
+  final cv = _cv;
+  @override
+  final cwd = _und;
+  @override
+  final cy = _cy;
+  @override
+  final da = _da;
+  @override
+  final dak = _dak;
+  @override
+  final dar = _dar;
+  @override
+  final dav = _dav;
+  @override
+  final de = _de;
+  @override
+  final deAT = _deAT;
+  @override
+  final deCH = _deCH;
+  @override
+  final del = _und;
+  @override
+  final den = _und;
+  @override
+  final dgr = _dgr;
+  @override
+  final din = _und;
+  @override
+  final dje = _dje;
+  @override
+  final doi = _doi;
+  @override
+  final dsb = _dsb;
+  @override
+  final dtp = _und;
+  @override
+  final dua = _dua;
+  @override
+  final dum = _und;
+  @override
+  final dv = _dv;
+  @override
+  final dyo = _dyo;
+  @override
+  final dyu = _und;
+  @override
+  final dz = _dz;
+  @override
+  final dzg = _dzg;
+  @override
+  final ebu = _ebu;
+  @override
+  final ee = _ee;
+  @override
+  final efi = _efi;
+  @override
+  final egl = _und;
+  @override
+  final egy = _und;
+  @override
+  final eka = _eka;
+  @override
+  final el = _el;
+  @override
+  final elx = _und;
+  @override
+  final en = _en;
+  @override
+  final enAU = _enAU;
+  @override
+  final enCA = _enCA;
+  @override
+  final enGB = _enGB;
+  @override
+  final enUS = _enUS;
+  @override
+  final enm = _und;
+  @override
+  final eo = _eo;
+  @override
+  final es = _es;
+  @override
+  final es419 = _es419;
+  @override
+  final esES = _esES;
+  @override
+  final esMX = _esMX;
+  @override
+  final esu = _und;
+  @override
+  final et = _et;
+  @override
+  final eu = _eu;
+  @override
+  final ewo = _ewo;
+  @override
+  final ext = _und;
+  @override
+  final fa = _fa;
+  @override
+  final faAF = _faAF;
+  @override
+  final fan = _und;
+  @override
+  final fat = _und;
+  @override
+  final ff = _ff;
+  @override
+  final fi = _fi;
+  @override
+  final fil = _fil;
+  @override
+  final fit = _und;
+  @override
+  final fj = _fj;
+  @override
+  final fo = _fo;
+  @override
+  final fon = _fon;
+  @override
+  final fr = _fr;
+  @override
+  final frCA = _frCA;
+  @override
+  final frCH = _frCH;
+  @override
+  final frc = _frc;
+  @override
+  final frm = _und;
+  @override
+  final fro = _und;
+  @override
+  final frp = _und;
+  @override
+  final frr = _frr;
+  @override
+  final frs = _und;
+  @override
+  final fur = _fur;
+  @override
+  final fy = _fy;
+  @override
+  final ga = _ga;
+  @override
+  final gaa = _gaa;
+  @override
+  final gag = _und;
+  @override
+  final gan = _und;
+  @override
+  final gay = _und;
+  @override
+  final gba = _und;
+  @override
+  final gbz = _und;
+  @override
+  final gd = _gd;
+  @override
+  final gez = _gez;
+  @override
+  final gil = _gil;
+  @override
+  final gl = _gl;
+  @override
+  final glk = _und;
+  @override
+  final gmh = _und;
+  @override
+  final gn = _gn;
+  @override
+  final goh = _und;
+  @override
+  final gon = _und;
+  @override
+  final gor = _gor;
+  @override
+  final got = _und;
+  @override
+  final grb = _und;
+  @override
+  final grc = _und;
+  @override
+  final gsw = _gsw;
+  @override
+  final gu = _gu;
+  @override
+  final guc = _und;
+  @override
+  final gur = _und;
+  @override
+  final guz = _guz;
+  @override
+  final gv = _gv;
+  @override
+  final gwi = _gwi;
+  @override
+  final ha = _ha;
+  @override
+  final hai = _hai;
+  @override
+  final hak = _und;
+  @override
+  final haw = _haw;
+  @override
+  final hax = _hax;
+  @override
+  final hdn = _und;
+  @override
+  final he = _he;
+  @override
+  final hi = _hi;
+  @override
+  final hiLatn = _und;
+  @override
+  final hif = _und;
+  @override
+  final hil = _hil;
+  @override
+  final hit = _und;
+  @override
+  final hmn = _hmn;
+  @override
+  final hnj = _und;
+  @override
+  final ho = _und;
+  @override
+  final hr = _hr;
+  @override
+  final hsb = _hsb;
+  @override
+  final hsn = _und;
+  @override
+  final ht = _ht;
+  @override
+  final hu = _hu;
+  @override
+  final hup = _hup;
+  @override
+  final hur = _hur;
+  @override
+  final hy = _hy;
+  @override
+  final hz = _hz;
+  @override
+  final ia = _ia;
+  @override
+  final iba = _iba;
+  @override
+  final ibb = _ibb;
+  @override
+  final id = _id;
+  @override
+  final ie = _ie;
+  @override
+  final ig = _ig;
+  @override
+  final ii = _ii;
+  @override
+  final ik = _und;
+  @override
+  final ike = _und;
+  @override
+  final ikt = _ikt;
+  @override
+  final ilo = _ilo;
+  @override
+  final inh = _inh;
+  @override
+  final io = _io;
+  @override
+  final $is = _$is;
+  @override
+  final it = _it;
+  @override
+  final iu = _iu;
+  @override
+  final izh = _und;
+  @override
+  final ja = _ja;
+  @override
+  final jam = _und;
+  @override
+  final jbo = _jbo;
+  @override
+  final jgo = _jgo;
+  @override
+  final jmc = _jmc;
+  @override
+  final jpr = _und;
+  @override
+  final jrb = _und;
+  @override
+  final jut = _und;
+  @override
+  final jv = _jv;
+  @override
+  final ka = _ka;
+  @override
+  final kaa = _und;
+  @override
+  final kab = _kab;
+  @override
+  final kac = _kac;
+  @override
+  final kaj = _kaj;
+  @override
+  final kam = _kam;
+  @override
+  final kaw = _und;
+  @override
+  final kbd = _kbd;
+  @override
+  final kbl = _und;
+  @override
+  final kcg = _kcg;
+  @override
+  final kde = _kde;
+  @override
+  final kea = _kea;
+  @override
+  final ken = _und;
+  @override
+  final kfo = _kfo;
+  @override
+  final kg = _und;
+  @override
+  final kgp = _kgp;
+  @override
+  final kha = _kha;
+  @override
+  final kho = _und;
+  @override
+  final khq = _khq;
+  @override
+  final khw = _und;
+  @override
+  final ki = _ki;
+  @override
+  final kiu = _und;
+  @override
+  final kj = _kj;
+  @override
+  final kk = _kk;
+  @override
+  final kkj = _kkj;
+  @override
+  final kl = _kl;
+  @override
+  final kln = _kln;
+  @override
+  final km = _km;
+  @override
+  final kmb = _kmb;
+  @override
+  final kn = _kn;
+  @override
+  final ko = _ko;
+  @override
+  final koi = _und;
+  @override
+  final kok = _kok;
+  @override
+  final kos = _und;
+  @override
+  final kpe = _kpe;
+  @override
+  final kr = _kr;
+  @override
+  final krc = _krc;
+  @override
+  final kri = _und;
+  @override
+  final krj = _und;
+  @override
+  final krl = _krl;
+  @override
+  final kru = _kru;
+  @override
+  final ks = _ks;
+  @override
+  final ksb = _ksb;
+  @override
+  final ksf = _ksf;
+  @override
+  final ksh = _ksh;
+  @override
+  final ku = _ku;
+  @override
+  final kum = _kum;
+  @override
+  final kut = _und;
+  @override
+  final kv = _kv;
+  @override
+  final kw = _kw;
+  @override
+  final kwk = _kwk;
+  @override
+  final kxv = _kxv;
+  @override
+  final ky = _ky;
+  @override
+  final la = _la;
+  @override
+  final lad = _lad;
+  @override
+  final lag = _lag;
+  @override
+  final lah = _und;
+  @override
+  final lam = _und;
+  @override
+  final lb = _lb;
+  @override
+  final lez = _lez;
+  @override
+  final lfn = _und;
+  @override
+  final lg = _lg;
+  @override
+  final li = _li;
+  @override
+  final lij = _lij;
+  @override
+  final lil = _lil;
+  @override
+  final liv = _und;
+  @override
+  final lkt = _lkt;
+  @override
+  final lmo = _lmo;
+  @override
+  final ln = _ln;
+  @override
+  final lo = _lo;
+  @override
+  final lol = _und;
+  @override
+  final lou = _lou;
+  @override
+  final loz = _loz;
+  @override
+  final lrc = _lrc;
+  @override
+  final lsm = _lsm;
+  @override
+  final lt = _lt;
+  @override
+  final ltg = _und;
+  @override
+  final lu = _lu;
+  @override
+  final lua = _lua;
+  @override
+  final lui = _und;
+  @override
+  final lun = _lun;
+  @override
+  final luo = _luo;
+  @override
+  final lus = _lus;
+  @override
+  final luy = _luy;
+  @override
+  final lv = _lv;
+  @override
+  final lzh = _und;
+  @override
+  final lzz = _und;
+  @override
+  final mad = _mad;
+  @override
+  final maf = _und;
+  @override
+  final mag = _mag;
+  @override
+  final mai = _mai;
+  @override
+  final mak = _mak;
+  @override
+  final man = _und;
+  @override
+  final mas = _mas;
+  @override
+  final mde = _und;
+  @override
+  final mdf = _mdf;
+  @override
+  final mdr = _und;
+  @override
+  final men = _men;
+  @override
+  final mer = _mer;
+  @override
+  final mfe = _mfe;
+  @override
+  final mg = _mg;
+  @override
+  final mga = _und;
+  @override
+  final mgh = _mgh;
+  @override
+  final mgo = _mgo;
+  @override
+  final mh = _mh;
+  @override
+  final mi = _mi;
+  @override
+  final mic = _mic;
+  @override
+  final min = _min;
+  @override
+  final mk = _mk;
+  @override
+  final ml = _ml;
+  @override
+  final mn = _mn;
+  @override
+  final mnc = _und;
+  @override
+  final mni = _mni;
+  @override
+  final moe = _moe;
+  @override
+  final moh = _moh;
+  @override
+  final mos = _mos;
+  @override
+  final mr = _mr;
+  @override
+  final mrj = _und;
+  @override
+  final ms = _ms;
+  @override
+  final mt = _mt;
+  @override
+  final mua = _mua;
+  @override
+  final mul = _mul;
+  @override
+  final mus = _mus;
+  @override
+  final mwl = _mwl;
+  @override
+  final mwr = _und;
+  @override
+  final mwv = _und;
+  @override
+  final my = _my;
+  @override
+  final mye = _und;
+  @override
+  final myv = _myv;
+  @override
+  final mzn = _mzn;
+  @override
+  final na = _na;
+  @override
+  final nan = _und;
+  @override
+  final nap = _nap;
+  @override
+  final naq = _naq;
+  @override
+  final nb = _nb;
+  @override
+  final nd = _nd;
+  @override
+  final nds = _nds;
+  @override
+  final ndsNL = _und;
+  @override
+  final ne = _ne;
+  @override
+  final $new = _$new;
+  @override
+  final ng = _ng;
+  @override
+  final nia = _nia;
+  @override
+  final niu = _niu;
+  @override
+  final njo = _und;
+  @override
+  final nl = _nl;
+  @override
+  final nlBE = _nlBE;
+  @override
+  final nmg = _nmg;
+  @override
+  final nn = _nn;
+  @override
+  final nnh = _nnh;
+  @override
+  final no = _no;
+  @override
+  final nog = _nog;
+  @override
+  final non = _und;
+  @override
+  final nov = _und;
+  @override
+  final nqo = _nqo;
+  @override
+  final nr = _nr;
+  @override
+  final nso = _nso;
+  @override
+  final nus = _nus;
+  @override
+  final nv = _nv;
+  @override
+  final nwc = _und;
+  @override
+  final ny = _ny;
+  @override
+  final nym = _und;
+  @override
+  final nyn = _nyn;
+  @override
+  final nyo = _und;
+  @override
+  final nzi = _und;
+  @override
+  final oc = _oc;
+  @override
+  final oj = _und;
+  @override
+  final ojb = _ojb;
+  @override
+  final ojc = _ojc;
+  @override
+  final ojg = _und;
+  @override
+  final ojs = _ojs;
+  @override
+  final ojw = _ojw;
+  @override
+  final oka = _oka;
+  @override
+  final om = _om;
+  @override
+  final or = _or;
+  @override
+  final os = _os;
+  @override
+  final osa = _und;
+  @override
+  final ota = _und;
+  @override
+  final pa = _pa;
+  @override
+  final pag = _pag;
+  @override
+  final pal = _und;
+  @override
+  final pam = _pam;
+  @override
+  final pap = _pap;
+  @override
+  final pau = _pau;
+  @override
+  final pcd = _und;
+  @override
+  final pcm = _pcm;
+  @override
+  final pdc = _und;
+  @override
+  final pdt = _und;
+  @override
+  final peo = _und;
+  @override
+  final pfl = _und;
+  @override
+  final phn = _und;
+  @override
+  final pi = _und;
+  @override
+  final pis = _pis;
+  @override
+  final pl = _pl;
+  @override
+  final pms = _und;
+  @override
+  final pnt = _und;
+  @override
+  final pon = _und;
+  @override
+  final pqm = _pqm;
+  @override
+  final prg = _prg;
+  @override
+  final pro = _und;
+  @override
+  final ps = _ps;
+  @override
+  final pt = _pt;
+  @override
+  final ptBR = _ptBR;
+  @override
+  final ptPT = _ptPT;
+  @override
+  final qu = _qu;
+  @override
+  final quc = _quc;
+  @override
+  final qug = _und;
+  @override
+  final raj = _raj;
+  @override
+  final rap = _rap;
+  @override
+  final rar = _rar;
+  @override
+  final rgn = _und;
+  @override
+  final rhg = _rhg;
+  @override
+  final rif = _und;
+  @override
+  final rm = _rm;
+  @override
+  final rn = _rn;
+  @override
+  final ro = _ro;
+  @override
+  final roMD = _roMD;
+  @override
+  final rof = _rof;
+  @override
+  final rom = _und;
+  @override
+  final rtm = _und;
+  @override
+  final ru = _ru;
+  @override
+  final rue = _und;
+  @override
+  final rug = _und;
+  @override
+  final rup = _rup;
+  @override
+  final rw = _rw;
+  @override
+  final rwk = _rwk;
+  @override
+  final sa = _sa;
+  @override
+  final sad = _sad;
+  @override
+  final sah = _sah;
+  @override
+  final sam = _und;
+  @override
+  final saq = _saq;
+  @override
+  final sas = _und;
+  @override
+  final sat = _sat;
+  @override
+  final saz = _und;
+  @override
+  final sba = _sba;
+  @override
+  final sbp = _sbp;
+  @override
+  final sc = _sc;
+  @override
+  final scn = _scn;
+  @override
+  final sco = _sco;
+  @override
+  final sd = _sd;
+  @override
+  final sdc = _und;
+  @override
+  final sdh = _und;
+  @override
+  final se = _se;
+  @override
+  final see = _und;
+  @override
+  final seh = _seh;
+  @override
+  final sei = _und;
+  @override
+  final sel = _und;
+  @override
+  final ses = _ses;
+  @override
+  final sg = _sg;
+  @override
+  final sga = _und;
+  @override
+  final sgs = _und;
+  @override
+  final sh = _und;
+  @override
+  final shi = _shi;
+  @override
+  final shn = _shn;
+  @override
+  final shu = _und;
+  @override
+  final si = _si;
+  @override
+  final sid = _und;
+  @override
+  final sk = _sk;
+  @override
+  final sl = _sl;
+  @override
+  final slh = _slh;
+  @override
+  final sli = _und;
+  @override
+  final sly = _und;
+  @override
+  final sm = _sm;
+  @override
+  final sma = _sma;
+  @override
+  final smj = _smj;
+  @override
+  final smn = _smn;
+  @override
+  final sms = _sms;
+  @override
+  final sn = _sn;
+  @override
+  final snk = _snk;
+  @override
+  final so = _so;
+  @override
+  final sog = _und;
+  @override
+  final sq = _sq;
+  @override
+  final sr = _sr;
+  @override
+  final srME = _und;
+  @override
+  final srn = _srn;
+  @override
+  final srr = _und;
+  @override
+  final ss = _ss;
+  @override
+  final ssy = _ssy;
+  @override
+  final st = _st;
+  @override
+  final stq = _und;
+  @override
+  final str = _str;
+  @override
+  final su = _su;
+  @override
+  final suk = _suk;
+  @override
+  final sus = _und;
+  @override
+  final sux = _und;
+  @override
+  final sv = _sv;
+  @override
+  final sw = _sw;
+  @override
+  final swCD = _swCD;
+  @override
+  final swb = _swb;
+  @override
+  final syc = _und;
+  @override
+  final syr = _syr;
+  @override
+  final szl = _szl;
+  @override
+  final ta = _ta;
+  @override
+  final tce = _tce;
+  @override
+  final tcy = _und;
+  @override
+  final te = _te;
+  @override
+  final tem = _tem;
+  @override
+  final teo = _teo;
+  @override
+  final ter = _und;
+  @override
+  final tet = _tet;
+  @override
+  final tg = _tg;
+  @override
+  final tgx = _tgx;
+  @override
+  final th = _th;
+  @override
+  final tht = _tht;
+  @override
+  final ti = _ti;
+  @override
+  final tig = _tig;
+  @override
+  final tiv = _und;
+  @override
+  final tk = _tk;
+  @override
+  final tkl = _und;
+  @override
+  final tkr = _und;
+  @override
+  final tl = _und;
+  @override
+  final tlh = _tlh;
+  @override
+  final tli = _tli;
+  @override
+  final tly = _und;
+  @override
+  final tmh = _und;
+  @override
+  final tn = _tn;
+  @override
+  final to = _to;
+  @override
+  final tog = _und;
+  @override
+  final tok = _tok;
+  @override
+  final tpi = _tpi;
+  @override
+  final tr = _tr;
+  @override
+  final tru = _und;
+  @override
+  final trv = _trv;
+  @override
+  final trw = _und;
+  @override
+  final ts = _ts;
+  @override
+  final tsd = _und;
+  @override
+  final tsi = _und;
+  @override
+  final tt = _tt;
+  @override
+  final ttm = _ttm;
+  @override
+  final ttt = _und;
+  @override
+  final tum = _tum;
+  @override
+  final tvl = _tvl;
+  @override
+  final tw = _und;
+  @override
+  final twq = _twq;
+  @override
+  final ty = _ty;
+  @override
+  final tyv = _tyv;
+  @override
+  final tzm = _tzm;
+  @override
+  final udm = _udm;
+  @override
+  final ug = _ug;
+  @override
+  final uga = _und;
+  @override
+  final uk = _uk;
+  @override
+  final umb = _umb;
+  @override
+  final und = _und;
+  @override
+  final ur = _ur;
+  @override
+  final uz = _uz;
+  @override
+  final vai = _vai;
+  @override
+  final ve = _ve;
+  @override
+  final vec = _vec;
+  @override
+  final vep = _und;
+  @override
+  final vi = _vi;
+  @override
+  final vls = _und;
+  @override
+  final vmf = _und;
+  @override
+  final vmw = _vmw;
+  @override
+  final vo = _vo;
+  @override
+  final vot = _und;
+  @override
+  final vro = _und;
+  @override
+  final vun = _vun;
+  @override
+  final wa = _wa;
+  @override
+  final wae = _wae;
+  @override
+  final wal = _wal;
+  @override
+  final war = _war;
+  @override
+  final was = _und;
+  @override
+  final wbp = _und;
+  @override
+  final wo = _wo;
+  @override
+  final wuu = _wuu;
+  @override
+  final xal = _xal;
+  @override
+  final xh = _xh;
+  @override
+  final xmf = _und;
+  @override
+  final xnr = _xnr;
+  @override
+  final xog = _xog;
+  @override
+  final yao = _und;
+  @override
+  final yap = _und;
+  @override
+  final yav = _yav;
+  @override
+  final ybb = _ybb;
+  @override
+  final yi = _yi;
+  @override
+  final yo = _yo;
+  @override
+  final yrl = _yrl;
+  @override
+  final yue = _yue;
+  @override
+  final za = _za;
+  @override
+  final zap = _und;
+  @override
+  final zbl = _und;
+  @override
+  final zea = _und;
+  @override
+  final zen = _und;
+  @override
+  final zgh = _zgh;
+  @override
+  final zh = _zh;
+  @override
+  final zhHans = _und;
+  @override
+  final zhHant = _zhHant;
+  @override
+  final zu = _zu;
+  @override
+  final zun = _zun;
+  @override
+  final zxx = _zxx;
+  @override
+  final zza = _zza;
 
   @override
-  Territory get africa => Territory(
-        '002',
-        'آفريڪا',
-      );
+  final languages = const {
+    'aa': _aa,
+    'ab': _ab,
+    'ace': _ace,
+    'ada': _ada,
+    'ady': _ady,
+    'af': _af,
+    'agq': _agq,
+    'ain': _ain,
+    'ak': _ak,
+    'ale': _ale,
+    'alt': _alt,
+    'am': _am,
+    'an': _an,
+    'ann': _ann,
+    'anp': _anp,
+    'ar': _ar,
+    'ar-001': _ar001,
+    'arn': _arn,
+    'arp': _arp,
+    'ars': _ars,
+    'as': _$as,
+    'asa': _asa,
+    'ast': _ast,
+    'atj': _atj,
+    'av': _av,
+    'awa': _awa,
+    'ay': _ay,
+    'az': _az,
+    'ba': _ba,
+    'ban': _ban,
+    'bas': _bas,
+    'be': _be,
+    'bem': _bem,
+    'bez': _bez,
+    'bg': _bg,
+    'bgc': _bgc,
+    'bho': _bho,
+    'bi': _bi,
+    'bin': _bin,
+    'bla': _bla,
+    'blo': _blo,
+    'bm': _bm,
+    'bn': _bn,
+    'bo': _bo,
+    'br': _br,
+    'brx': _brx,
+    'bs': _bs,
+    'bug': _bug,
+    'byn': _byn,
+    'ca': _ca,
+    'cay': _cay,
+    'ccp': _ccp,
+    'ce': _ce,
+    'ceb': _ceb,
+    'cgg': _cgg,
+    'ch': _ch,
+    'chk': _chk,
+    'chm': _chm,
+    'cho': _cho,
+    'chp': _chp,
+    'chr': _chr,
+    'chy': _chy,
+    'ckb': _ckb,
+    'clc': _clc,
+    'co': _co,
+    'crg': _crg,
+    'crj': _crj,
+    'crk': _crk,
+    'crl': _crl,
+    'crm': _crm,
+    'crr': _crr,
+    'crs': _crs,
+    'cs': _cs,
+    'csw': _csw,
+    'cu': _cu,
+    'cv': _cv,
+    'cy': _cy,
+    'da': _da,
+    'dak': _dak,
+    'dar': _dar,
+    'dav': _dav,
+    'de': _de,
+    'de-AT': _deAT,
+    'de-CH': _deCH,
+    'dgr': _dgr,
+    'dje': _dje,
+    'doi': _doi,
+    'dsb': _dsb,
+    'dua': _dua,
+    'dv': _dv,
+    'dyo': _dyo,
+    'dz': _dz,
+    'dzg': _dzg,
+    'ebu': _ebu,
+    'ee': _ee,
+    'efi': _efi,
+    'eka': _eka,
+    'el': _el,
+    'en': _en,
+    'en-AU': _enAU,
+    'en-CA': _enCA,
+    'en-GB': _enGB,
+    'en-US': _enUS,
+    'eo': _eo,
+    'es': _es,
+    'es-419': _es419,
+    'es-ES': _esES,
+    'es-MX': _esMX,
+    'et': _et,
+    'eu': _eu,
+    'ewo': _ewo,
+    'fa': _fa,
+    'fa-AF': _faAF,
+    'ff': _ff,
+    'fi': _fi,
+    'fil': _fil,
+    'fj': _fj,
+    'fo': _fo,
+    'fon': _fon,
+    'fr': _fr,
+    'fr-CA': _frCA,
+    'fr-CH': _frCH,
+    'frc': _frc,
+    'frr': _frr,
+    'fur': _fur,
+    'fy': _fy,
+    'ga': _ga,
+    'gaa': _gaa,
+    'gd': _gd,
+    'gez': _gez,
+    'gil': _gil,
+    'gl': _gl,
+    'gn': _gn,
+    'gor': _gor,
+    'gsw': _gsw,
+    'gu': _gu,
+    'guz': _guz,
+    'gv': _gv,
+    'gwi': _gwi,
+    'ha': _ha,
+    'hai': _hai,
+    'haw': _haw,
+    'hax': _hax,
+    'he': _he,
+    'hi': _hi,
+    'hil': _hil,
+    'hmn': _hmn,
+    'hr': _hr,
+    'hsb': _hsb,
+    'ht': _ht,
+    'hu': _hu,
+    'hup': _hup,
+    'hur': _hur,
+    'hy': _hy,
+    'hz': _hz,
+    'ia': _ia,
+    'iba': _iba,
+    'ibb': _ibb,
+    'id': _id,
+    'ie': _ie,
+    'ig': _ig,
+    'ii': _ii,
+    'ikt': _ikt,
+    'ilo': _ilo,
+    'inh': _inh,
+    'io': _io,
+    'is': _$is,
+    'it': _it,
+    'iu': _iu,
+    'ja': _ja,
+    'jbo': _jbo,
+    'jgo': _jgo,
+    'jmc': _jmc,
+    'jv': _jv,
+    'ka': _ka,
+    'kab': _kab,
+    'kac': _kac,
+    'kaj': _kaj,
+    'kam': _kam,
+    'kbd': _kbd,
+    'kcg': _kcg,
+    'kde': _kde,
+    'kea': _kea,
+    'kfo': _kfo,
+    'kgp': _kgp,
+    'kha': _kha,
+    'khq': _khq,
+    'ki': _ki,
+    'kj': _kj,
+    'kk': _kk,
+    'kkj': _kkj,
+    'kl': _kl,
+    'kln': _kln,
+    'km': _km,
+    'kmb': _kmb,
+    'kn': _kn,
+    'ko': _ko,
+    'kok': _kok,
+    'kpe': _kpe,
+    'kr': _kr,
+    'krc': _krc,
+    'krl': _krl,
+    'kru': _kru,
+    'ks': _ks,
+    'ksb': _ksb,
+    'ksf': _ksf,
+    'ksh': _ksh,
+    'ku': _ku,
+    'kum': _kum,
+    'kv': _kv,
+    'kw': _kw,
+    'kwk': _kwk,
+    'kxv': _kxv,
+    'ky': _ky,
+    'la': _la,
+    'lad': _lad,
+    'lag': _lag,
+    'lb': _lb,
+    'lez': _lez,
+    'lg': _lg,
+    'li': _li,
+    'lij': _lij,
+    'lil': _lil,
+    'lkt': _lkt,
+    'lmo': _lmo,
+    'ln': _ln,
+    'lo': _lo,
+    'lou': _lou,
+    'loz': _loz,
+    'lrc': _lrc,
+    'lsm': _lsm,
+    'lt': _lt,
+    'lu': _lu,
+    'lua': _lua,
+    'lun': _lun,
+    'luo': _luo,
+    'lus': _lus,
+    'luy': _luy,
+    'lv': _lv,
+    'mad': _mad,
+    'mag': _mag,
+    'mai': _mai,
+    'mak': _mak,
+    'mas': _mas,
+    'mdf': _mdf,
+    'men': _men,
+    'mer': _mer,
+    'mfe': _mfe,
+    'mg': _mg,
+    'mgh': _mgh,
+    'mgo': _mgo,
+    'mh': _mh,
+    'mi': _mi,
+    'mic': _mic,
+    'min': _min,
+    'mk': _mk,
+    'ml': _ml,
+    'mn': _mn,
+    'mni': _mni,
+    'moe': _moe,
+    'moh': _moh,
+    'mos': _mos,
+    'mr': _mr,
+    'ms': _ms,
+    'mt': _mt,
+    'mua': _mua,
+    'mul': _mul,
+    'mus': _mus,
+    'mwl': _mwl,
+    'my': _my,
+    'myv': _myv,
+    'mzn': _mzn,
+    'na': _na,
+    'nap': _nap,
+    'naq': _naq,
+    'nb': _nb,
+    'nd': _nd,
+    'nds': _nds,
+    'ne': _ne,
+    'new': _$new,
+    'ng': _ng,
+    'nia': _nia,
+    'niu': _niu,
+    'nl': _nl,
+    'nl-BE': _nlBE,
+    'nmg': _nmg,
+    'nn': _nn,
+    'nnh': _nnh,
+    'no': _no,
+    'nog': _nog,
+    'nqo': _nqo,
+    'nr': _nr,
+    'nso': _nso,
+    'nus': _nus,
+    'nv': _nv,
+    'ny': _ny,
+    'nyn': _nyn,
+    'oc': _oc,
+    'ojb': _ojb,
+    'ojc': _ojc,
+    'ojs': _ojs,
+    'ojw': _ojw,
+    'oka': _oka,
+    'om': _om,
+    'or': _or,
+    'os': _os,
+    'pa': _pa,
+    'pag': _pag,
+    'pam': _pam,
+    'pap': _pap,
+    'pau': _pau,
+    'pcm': _pcm,
+    'pis': _pis,
+    'pl': _pl,
+    'pqm': _pqm,
+    'prg': _prg,
+    'ps': _ps,
+    'pt': _pt,
+    'pt-BR': _ptBR,
+    'pt-PT': _ptPT,
+    'qu': _qu,
+    'quc': _quc,
+    'raj': _raj,
+    'rap': _rap,
+    'rar': _rar,
+    'rhg': _rhg,
+    'rm': _rm,
+    'rn': _rn,
+    'ro': _ro,
+    'ro-MD': _roMD,
+    'rof': _rof,
+    'ru': _ru,
+    'rup': _rup,
+    'rw': _rw,
+    'rwk': _rwk,
+    'sa': _sa,
+    'sad': _sad,
+    'sah': _sah,
+    'saq': _saq,
+    'sat': _sat,
+    'sba': _sba,
+    'sbp': _sbp,
+    'sc': _sc,
+    'scn': _scn,
+    'sco': _sco,
+    'sd': _sd,
+    'se': _se,
+    'seh': _seh,
+    'ses': _ses,
+    'sg': _sg,
+    'shi': _shi,
+    'shn': _shn,
+    'si': _si,
+    'sk': _sk,
+    'sl': _sl,
+    'slh': _slh,
+    'sm': _sm,
+    'sma': _sma,
+    'smj': _smj,
+    'smn': _smn,
+    'sms': _sms,
+    'sn': _sn,
+    'snk': _snk,
+    'so': _so,
+    'sq': _sq,
+    'sr': _sr,
+    'srn': _srn,
+    'ss': _ss,
+    'ssy': _ssy,
+    'st': _st,
+    'str': _str,
+    'su': _su,
+    'suk': _suk,
+    'sv': _sv,
+    'sw': _sw,
+    'sw-CD': _swCD,
+    'swb': _swb,
+    'syr': _syr,
+    'szl': _szl,
+    'ta': _ta,
+    'tce': _tce,
+    'te': _te,
+    'tem': _tem,
+    'teo': _teo,
+    'tet': _tet,
+    'tg': _tg,
+    'tgx': _tgx,
+    'th': _th,
+    'tht': _tht,
+    'ti': _ti,
+    'tig': _tig,
+    'tk': _tk,
+    'tlh': _tlh,
+    'tli': _tli,
+    'tn': _tn,
+    'to': _to,
+    'tok': _tok,
+    'tpi': _tpi,
+    'tr': _tr,
+    'trv': _trv,
+    'ts': _ts,
+    'tt': _tt,
+    'ttm': _ttm,
+    'tum': _tum,
+    'tvl': _tvl,
+    'twq': _twq,
+    'ty': _ty,
+    'tyv': _tyv,
+    'tzm': _tzm,
+    'udm': _udm,
+    'ug': _ug,
+    'uk': _uk,
+    'umb': _umb,
+    'und': _und,
+    'ur': _ur,
+    'uz': _uz,
+    'vai': _vai,
+    've': _ve,
+    'vec': _vec,
+    'vi': _vi,
+    'vmw': _vmw,
+    'vo': _vo,
+    'vun': _vun,
+    'wa': _wa,
+    'wae': _wae,
+    'wal': _wal,
+    'war': _war,
+    'wo': _wo,
+    'wuu': _wuu,
+    'xal': _xal,
+    'xh': _xh,
+    'xnr': _xnr,
+    'xog': _xog,
+    'yav': _yav,
+    'ybb': _ybb,
+    'yi': _yi,
+    'yo': _yo,
+    'yrl': _yrl,
+    'yue': _yue,
+    'za': _za,
+    'zgh': _zgh,
+    'zh': _zh,
+    'zh-Hant': _zhHant,
+    'zu': _zu,
+    'zun': _zun,
+    'zxx': _zxx,
+    'zza': _zza,
+  };
+}
+
+class ScriptsSd extends Scripts {
+  const ScriptsSd._(super.cld);
+
+  static const _adlm = Script('Adlm', 'ايڊلام');
+  static const _arab = Script('Arab', 'عربي');
+  static const _aran = Script('Aran', 'نستعلیق');
+  static const _armn = Script('Armn', 'عرماني');
+  static const _beng = Script('Beng', 'بنگلا');
+  static const _bopo = Script('Bopo', 'بوپوموفو');
+  static const _brai = Script('Brai', 'بريل');
+  static const _cakm = Script('Cakm', 'چڪما');
+  static const _cans = Script('Cans', 'يونيفائيڊ ڪينيڊيئن ابارجيني سليبڪس');
+  static const _cher = Script('Cher', 'چيروڪي');
+  static const _cyrl = Script('Cyrl', 'سيريلي');
+  static const _deva = Script('Deva', 'ديوناگري');
+  static const _ethi = Script('Ethi', 'ايٿوپيائي');
+  static const _geor = Script('Geor', 'جيورجيائي');
+  static const _grek = Script('Grek', 'يوناني');
+  static const _gujr = Script('Gujr', 'گجراتي');
+  static const _guru = Script('Guru', 'گرمکي');
+  static const _hanb = Script('Hanb', 'بوپوموفو سان هين');
+  static const _hang = Script('Hang', 'هنگول');
+  static const _hani = Script('Hani', 'هين');
+  static const _hans = Script('Hans', 'سادي', standAlone: 'سادي هين');
+  static const _hant = Script('Hant', 'روايتي', standAlone: 'روايتي هين');
+  static const _hebr = Script('Hebr', 'عبراني');
+  static const _hira = Script('Hira', 'هراگنا');
+  static const _hrkt = Script('Hrkt', 'جاپاني لکت');
+  static const _ital = Script('Ital', 'قديم اطالوي');
+  static const _jamo = Script('Jamo', 'جامو');
+  static const _java = Script('Java', 'جاوانيز');
+  static const _jpan = Script('Jpan', 'جاپاني');
+  static const _kana = Script('Kana', 'ڪٽاڪانا');
+  static const _khmr = Script('Khmr', 'خمر');
+  static const _knda = Script('Knda', 'ڪناڊا');
+  static const _kore = Script('Kore', 'ڪوريائي');
+  static const _laoo = Script('Laoo', 'لائو');
+  static const _latn = Script('Latn', 'لاطيني');
+  static const _mlym = Script('Mlym', 'ملايالم');
+  static const _mong = Script('Mong', 'منگولي');
+  static const _mtei = Script('Mtei', 'ميئيٽي مائيڪ');
+  static const _mult = Script('Mult', 'ملتاني');
+  static const _mymr = Script('Mymr', 'ميانمر');
+  static const _nkoo = Script('Nkoo', 'نڪو');
+  static const _olck = Script('Olck', 'اول چڪي');
+  static const _orya = Script('Orya', 'اوڊيا');
+  static const _rohg = Script('Rohg', 'ھنيفي');
+  static const _sarb = Script('Sarb', 'قديم ڏاکڻي عربي');
+  static const _sinh = Script('Sinh', 'سنهالا');
+  static const _sund = Script('Sund', 'سوڊاني');
+  static const _syrc = Script('Syrc', 'شامي');
+  static const _taml = Script('Taml', 'تامل');
+  static const _telu = Script('Telu', 'تلگو');
+  static const _tfng = Script('Tfng', 'ٽفيناگ');
+  static const _thaa = Script('Thaa', 'ٿانا');
+  static const _thai = Script('Thai', 'ٿائي');
+  static const _tibt = Script('Tibt', 'تبيتن');
+  static const _vaii = Script('Vaii', 'وائي');
+  static const _xpeo = Script('Xpeo', 'قديم فارسي');
+  static const _yiii = Script('Yiii', 'يي');
+  static const _zmth = Script('Zmth', 'رياضي جون نشانيون');
+  static const _zsye = Script('Zsye', 'ايموجي');
+  static const _zsym = Script('Zsym', 'نشانيون');
+  static const _zxxx = Script('Zxxx', 'اڻ لکيل');
+  static const _zyyy = Script('Zyyy', 'ڪامن');
+  static const _zzzz = Script('Zzzz', 'اڻڄاتل لکت');
 
   @override
-  Territory get northAmerica => Territory(
-        '003',
-        'اتر آمريڪا',
-      );
+  final unknownScript = _zzzz;
+  @override
+  final adlm = _adlm;
+  @override
+  final afak = _zzzz;
+  @override
+  final aghb = _zzzz;
+  @override
+  final ahom = _zzzz;
+  @override
+  final arab = _arab;
+  @override
+  final aran = _aran;
+  @override
+  final armi = _zzzz;
+  @override
+  final armn = _armn;
+  @override
+  final avst = _zzzz;
+  @override
+  final bali = _zzzz;
+  @override
+  final bamu = _zzzz;
+  @override
+  final bass = _zzzz;
+  @override
+  final batk = _zzzz;
+  @override
+  final beng = _beng;
+  @override
+  final bhks = _zzzz;
+  @override
+  final blis = _zzzz;
+  @override
+  final bopo = _bopo;
+  @override
+  final brah = _zzzz;
+  @override
+  final brai = _brai;
+  @override
+  final bugi = _zzzz;
+  @override
+  final buhd = _zzzz;
+  @override
+  final cakm = _cakm;
+  @override
+  final cans = _cans;
+  @override
+  final cari = _zzzz;
+  @override
+  final cham = _zzzz;
+  @override
+  final cher = _cher;
+  @override
+  final chrs = _zzzz;
+  @override
+  final cirt = _zzzz;
+  @override
+  final copt = _zzzz;
+  @override
+  final cpmn = _zzzz;
+  @override
+  final cprt = _zzzz;
+  @override
+  final cyrl = _cyrl;
+  @override
+  final cyrs = _zzzz;
+  @override
+  final deva = _deva;
+  @override
+  final diak = _zzzz;
+  @override
+  final dogr = _zzzz;
+  @override
+  final dsrt = _zzzz;
+  @override
+  final dupl = _zzzz;
+  @override
+  final egyd = _zzzz;
+  @override
+  final egyh = _zzzz;
+  @override
+  final egyp = _zzzz;
+  @override
+  final elba = _zzzz;
+  @override
+  final elym = _zzzz;
+  @override
+  final ethi = _ethi;
+  @override
+  final gara = _zzzz;
+  @override
+  final geok = _zzzz;
+  @override
+  final geor = _geor;
+  @override
+  final glag = _zzzz;
+  @override
+  final gong = _zzzz;
+  @override
+  final gonm = _zzzz;
+  @override
+  final goth = _zzzz;
+  @override
+  final gran = _zzzz;
+  @override
+  final grek = _grek;
+  @override
+  final gujr = _gujr;
+  @override
+  final gukh = _zzzz;
+  @override
+  final guru = _guru;
+  @override
+  final hanb = _hanb;
+  @override
+  final hang = _hang;
+  @override
+  final hani = _hani;
+  @override
+  final hano = _zzzz;
+  @override
+  final hans = _hans;
+  @override
+  final hant = _hant;
+  @override
+  final hatr = _zzzz;
+  @override
+  final hebr = _hebr;
+  @override
+  final hira = _hira;
+  @override
+  final hluw = _zzzz;
+  @override
+  final hmng = _zzzz;
+  @override
+  final hmnp = _zzzz;
+  @override
+  final hrkt = _hrkt;
+  @override
+  final hung = _zzzz;
+  @override
+  final inds = _zzzz;
+  @override
+  final ital = _ital;
+  @override
+  final jamo = _jamo;
+  @override
+  final java = _java;
+  @override
+  final jpan = _jpan;
+  @override
+  final jurc = _zzzz;
+  @override
+  final kali = _zzzz;
+  @override
+  final kana = _kana;
+  @override
+  final kawi = _zzzz;
+  @override
+  final khar = _zzzz;
+  @override
+  final khmr = _khmr;
+  @override
+  final khoj = _zzzz;
+  @override
+  final kits = _zzzz;
+  @override
+  final knda = _knda;
+  @override
+  final kore = _kore;
+  @override
+  final kpel = _zzzz;
+  @override
+  final krai = _zzzz;
+  @override
+  final kthi = _zzzz;
+  @override
+  final lana = _zzzz;
+  @override
+  final laoo = _laoo;
+  @override
+  final latf = _zzzz;
+  @override
+  final latg = _zzzz;
+  @override
+  final latn = _latn;
+  @override
+  final lepc = _zzzz;
+  @override
+  final limb = _zzzz;
+  @override
+  final lina = _zzzz;
+  @override
+  final linb = _zzzz;
+  @override
+  final lisu = _zzzz;
+  @override
+  final loma = _zzzz;
+  @override
+  final lyci = _zzzz;
+  @override
+  final lydi = _zzzz;
+  @override
+  final mahj = _zzzz;
+  @override
+  final maka = _zzzz;
+  @override
+  final mand = _zzzz;
+  @override
+  final mani = _zzzz;
+  @override
+  final marc = _zzzz;
+  @override
+  final maya = _zzzz;
+  @override
+  final medf = _zzzz;
+  @override
+  final mend = _zzzz;
+  @override
+  final merc = _zzzz;
+  @override
+  final mero = _zzzz;
+  @override
+  final mlym = _mlym;
+  @override
+  final modi = _zzzz;
+  @override
+  final mong = _mong;
+  @override
+  final moon = _zzzz;
+  @override
+  final mroo = _zzzz;
+  @override
+  final mtei = _mtei;
+  @override
+  final mult = _mult;
+  @override
+  final mymr = _mymr;
+  @override
+  final nagm = _zzzz;
+  @override
+  final nand = _zzzz;
+  @override
+  final narb = _zzzz;
+  @override
+  final nbat = _zzzz;
+  @override
+  final newa = _zzzz;
+  @override
+  final nkgb = _zzzz;
+  @override
+  final nkoo = _nkoo;
+  @override
+  final nshu = _zzzz;
+  @override
+  final ogam = _zzzz;
+  @override
+  final olck = _olck;
+  @override
+  final onao = _zzzz;
+  @override
+  final orkh = _zzzz;
+  @override
+  final orya = _orya;
+  @override
+  final osge = _zzzz;
+  @override
+  final osma = _zzzz;
+  @override
+  final ougr = _zzzz;
+  @override
+  final palm = _zzzz;
+  @override
+  final pauc = _zzzz;
+  @override
+  final perm = _zzzz;
+  @override
+  final phag = _zzzz;
+  @override
+  final phli = _zzzz;
+  @override
+  final phlp = _zzzz;
+  @override
+  final phlv = _zzzz;
+  @override
+  final phnx = _zzzz;
+  @override
+  final plrd = _zzzz;
+  @override
+  final prti = _zzzz;
+  @override
+  final qaag = _zzzz;
+  @override
+  final rjng = _zzzz;
+  @override
+  final rohg = _rohg;
+  @override
+  final roro = _zzzz;
+  @override
+  final runr = _zzzz;
+  @override
+  final samr = _zzzz;
+  @override
+  final sara = _zzzz;
+  @override
+  final sarb = _sarb;
+  @override
+  final saur = _zzzz;
+  @override
+  final sgnw = _zzzz;
+  @override
+  final shaw = _zzzz;
+  @override
+  final shrd = _zzzz;
+  @override
+  final sidd = _zzzz;
+  @override
+  final sind = _zzzz;
+  @override
+  final sinh = _sinh;
+  @override
+  final sogd = _zzzz;
+  @override
+  final sogo = _zzzz;
+  @override
+  final sora = _zzzz;
+  @override
+  final soyo = _zzzz;
+  @override
+  final sund = _sund;
+  @override
+  final sunu = _zzzz;
+  @override
+  final sylo = _zzzz;
+  @override
+  final syrc = _syrc;
+  @override
+  final syre = _zzzz;
+  @override
+  final syrj = _zzzz;
+  @override
+  final syrn = _zzzz;
+  @override
+  final tagb = _zzzz;
+  @override
+  final takr = _zzzz;
+  @override
+  final tale = _zzzz;
+  @override
+  final talu = _zzzz;
+  @override
+  final taml = _taml;
+  @override
+  final tang = _zzzz;
+  @override
+  final tavt = _zzzz;
+  @override
+  final telu = _telu;
+  @override
+  final teng = _zzzz;
+  @override
+  final tfng = _tfng;
+  @override
+  final tglg = _zzzz;
+  @override
+  final thaa = _thaa;
+  @override
+  final thai = _thai;
+  @override
+  final tibt = _tibt;
+  @override
+  final tirh = _zzzz;
+  @override
+  final tnsa = _zzzz;
+  @override
+  final todr = _zzzz;
+  @override
+  final toto = _zzzz;
+  @override
+  final tutg = _zzzz;
+  @override
+  final ugar = _zzzz;
+  @override
+  final vaii = _vaii;
+  @override
+  final visp = _zzzz;
+  @override
+  final vith = _zzzz;
+  @override
+  final wara = _zzzz;
+  @override
+  final wcho = _zzzz;
+  @override
+  final wole = _zzzz;
+  @override
+  final xpeo = _xpeo;
+  @override
+  final xsux = _zzzz;
+  @override
+  final yezi = _zzzz;
+  @override
+  final yiii = _yiii;
+  @override
+  final zanb = _zzzz;
+  @override
+  final zinh = _zzzz;
+  @override
+  final zmth = _zmth;
+  @override
+  final zsye = _zsye;
+  @override
+  final zsym = _zsym;
+  @override
+  final zxxx = _zxxx;
+  @override
+  final zyyy = _zyyy;
+  @override
+  final zzzz = _zzzz;
 
   @override
-  Territory get southAmerica => Territory(
-        '005',
-        'ڏکڻ آمريڪا',
-      );
+  final scripts = const {
+    'Adlm': _adlm,
+    'Arab': _arab,
+    'Aran': _aran,
+    'Armn': _armn,
+    'Beng': _beng,
+    'Bopo': _bopo,
+    'Brai': _brai,
+    'Cakm': _cakm,
+    'Cans': _cans,
+    'Cher': _cher,
+    'Cyrl': _cyrl,
+    'Deva': _deva,
+    'Ethi': _ethi,
+    'Geor': _geor,
+    'Grek': _grek,
+    'Gujr': _gujr,
+    'Guru': _guru,
+    'Hanb': _hanb,
+    'Hang': _hang,
+    'Hani': _hani,
+    'Hans': _hans,
+    'Hant': _hant,
+    'Hebr': _hebr,
+    'Hira': _hira,
+    'Hrkt': _hrkt,
+    'Ital': _ital,
+    'Jamo': _jamo,
+    'Java': _java,
+    'Jpan': _jpan,
+    'Kana': _kana,
+    'Khmr': _khmr,
+    'Knda': _knda,
+    'Kore': _kore,
+    'Laoo': _laoo,
+    'Latn': _latn,
+    'Mlym': _mlym,
+    'Mong': _mong,
+    'Mtei': _mtei,
+    'Mult': _mult,
+    'Mymr': _mymr,
+    'Nkoo': _nkoo,
+    'Olck': _olck,
+    'Orya': _orya,
+    'Rohg': _rohg,
+    'Sarb': _sarb,
+    'Sinh': _sinh,
+    'Sund': _sund,
+    'Syrc': _syrc,
+    'Taml': _taml,
+    'Telu': _telu,
+    'Tfng': _tfng,
+    'Thaa': _thaa,
+    'Thai': _thai,
+    'Tibt': _tibt,
+    'Vaii': _vaii,
+    'Xpeo': _xpeo,
+    'Yiii': _yiii,
+    'Zmth': _zmth,
+    'Zsye': _zsye,
+    'Zsym': _zsym,
+    'Zxxx': _zxxx,
+    'Zyyy': _zyyy,
+    'Zzzz': _zzzz,
+  };
+}
+
+class TerritoriesSd extends Territories {
+  const TerritoriesSd._(super.cld);
+
+  static const _$001 = Territory('001', 'دنيا');
+  static const _$002 = Territory('002', 'آفريڪا');
+  static const _$003 = Territory('003', 'اتر آمريڪا');
+  static const _$005 = Territory('005', 'ڏکڻ آمريڪا');
+  static const _$009 = Territory('009', 'اوشنيا');
+  static const _$011 = Territory('011', 'اولهه آفريقا');
+  static const _$013 = Territory('013', 'وچ آمريڪا');
+  static const _$014 = Territory('014', 'اوڀر آفريڪا');
+  static const _$015 = Territory('015', 'اتر آفريڪا');
+  static const _$017 = Territory('017', 'وچ آفريڪا');
+  static const _$018 = Territory('018', 'ڏاکڻي آمريڪا');
+  static const _$019 = Territory('019', 'آمريڪا');
+  static const _$021 = Territory('021', 'اترين آمريڪا');
+  static const _$029 = Territory('029', 'ڪيريبين');
+  static const _$030 = Territory('030', 'اوڀر ايشيا');
+  static const _$034 = Territory('034', 'ڏکڻ ايشيا');
+  static const _$035 = Territory('035', 'ڏکڻ اوڀر ايشيا');
+  static const _$039 = Territory('039', 'ڏکڻ يورپ');
+  static const _$053 = Territory('053', 'آسٽریلیشیا');
+  static const _$054 = Territory('054', 'میلانیشیا');
+  static const _$057 = Territory('057', 'مائڪرونيشائي خطو');
+  static const _$061 = Territory('061', 'پولینیشیا');
+  static const _$142 = Territory('142', 'ايشيا');
+  static const _$143 = Territory('143', 'وچ ايشيا');
+  static const _$145 = Territory('145', 'اولهه ايشيا');
+  static const _$150 = Territory('150', 'يورپ');
+  static const _$151 = Territory('151', 'اوڀر يورپ');
+  static const _$154 = Territory('154', 'اترين يورپ');
+  static const _$155 = Territory('155', 'اولهه يورپ');
+  static const _$202 = Territory('202', 'سب-سهارا آفريڪا');
+  static const _$419 = Territory('419', 'لاطيني آمريڪا');
+  static const _ac = Territory('AC', 'طلوع ٻيٽ');
+  static const _ad = Territory('AD', 'اندورا');
+  static const _ae = Territory('AE', 'متحده عرب امارات');
+  static const _af = Territory('AF', 'افغانستان');
+  static const _ag = Territory('AG', 'انٽيگا ۽ باربد');
+  static const _ai = Territory('AI', 'انگويلا');
+  static const _al = Territory('AL', 'البانيا');
+  static const _am = Territory('AM', 'ارمینیا');
+  static const _ao = Territory('AO', 'انگولا');
+  static const _aq = Territory('AQ', 'انٽارڪٽيڪا');
+  static const _ar = Territory('AR', 'ارجنٽينا');
+  static const _$as = Territory('AS', 'آمريڪي ساموا');
+  static const _at = Territory('AT', 'آسٽريا');
+  static const _au = Territory('AU', 'آسٽريليا');
+  static const _aw = Territory('AW', 'عروبا');
+  static const _ax = Territory('AX', 'الند ٻيٽ');
+  static const _az = Territory('AZ', 'آذربائيجان');
+  static const _ba = Territory('BA', 'بوسنيا ۽ هرزوگووينا');
+  static const _bb = Territory('BB', 'باربڊوس');
+  static const _bd = Territory('BD', 'بنگلاديش');
+  static const _be = Territory('BE', 'بيلجيم');
+  static const _bf = Territory('BF', 'برڪينا فاسو');
+  static const _bg = Territory('BG', 'بلغاريا');
+  static const _bh = Territory('BH', 'بحرين');
+  static const _bi = Territory('BI', 'برونڊي');
+  static const _bj = Territory('BJ', 'بينن');
+  static const _bl = Territory('BL', 'سینٽ برٿلیمی');
+  static const _bm = Territory('BM', 'برمودا');
+  static const _bn = Territory('BN', 'برونائي');
+  static const _bo = Territory('BO', 'بوليويا');
+  static const _bq = Territory('BQ', 'ڪيريبين نيدرلينڊ');
+  static const _br = Territory('BR', 'برازيل');
+  static const _bs = Territory('BS', 'باهاماس');
+  static const _bt = Territory('BT', 'ڀوٽان');
+  static const _bv = Territory('BV', 'بووٽ ٻيٽ');
+  static const _bw = Territory('BW', 'بوٽسوانا');
+  static const _by = Territory('BY', 'بیلارس');
+  static const _bz = Territory('BZ', 'بيليز');
+  static const _ca = Territory('CA', 'ڪينيڊا');
+  static const _cc = Territory('CC', 'ڪوڪوس ٻيٽ');
+  static const _cd = Territory('CD', 'ڪانگو -ڪنشاسا', variant: 'ڪانگو');
+  static const _cf = Territory('CF', 'وچ آفريقي جمهوريه');
+  static const _cg =
+      Territory('CG', 'ڪانگو - برازاویل', variant: 'ڪانگو (جمهوري)');
+  static const _ch = Territory('CH', 'سوئزرلينڊ');
+  static const _ci = Territory('CI', 'ڪوٽي ويرا', variant: 'آئيوري ڪوسٽ');
+  static const _ck = Territory('CK', 'ڪوڪ ٻيٽ');
+  static const _cl = Territory('CL', 'چلي');
+  static const _cm = Territory('CM', 'ڪيمرون');
+  static const _cn = Territory('CN', 'چين');
+  static const _co = Territory('CO', 'ڪولمبيا');
+  static const _cp = Territory('CP', 'ڪلپرٽن ٻيٽ');
+  static const _cr = Territory('CR', 'ڪوسٽا ريڪا');
+  static const _cu = Territory('CU', 'ڪيوبا');
+  static const _cv = Territory('CV', 'ڪيپ وردي');
+  static const _cw = Territory('CW', 'ڪيوراسائو');
+  static const _cx = Territory('CX', 'ڪرسمس ٻيٽ');
+  static const _cy = Territory('CY', 'سائپرس');
+  static const _cz = Territory('CZ', 'چيڪيا', variant: 'چيڪ جهموريہ');
+  static const _de = Territory('DE', 'جرمني');
+  static const _dg = Territory('DG', 'ڊئيگو گارسيا');
+  static const _dj = Territory('DJ', 'ڊجبيوتي');
+  static const _dk = Territory('DK', 'ڊينمارڪ');
+  static const _dm = Territory('DM', 'ڊومينيڪا');
+  static const _$do = Territory('DO', 'ڊومينيڪن جمهوريه');
+  static const _dz = Territory('DZ', 'الجيريا');
+  static const _ea = Territory('EA', 'سیوٽا ۽ میلیلا');
+  static const _ec = Territory('EC', 'ايڪواڊور');
+  static const _ee = Territory('EE', 'ايسٽونيا');
+  static const _eg = Territory('EG', 'مصر');
+  static const _eh = Territory('EH', 'اولهه صحارا');
+  static const _er = Territory('ER', 'ايريٽيريا');
+  static const _es = Territory('ES', 'اسپين');
+  static const _et = Territory('ET', 'ايٿوپيا');
+  static const _eu = Territory('EU', 'يورپين يونين');
+  static const _ez = Territory('EZ', 'يورو زون');
+  static const _fi = Territory('FI', 'فن لينڊ');
+  static const _fj = Territory('FJ', 'فجي');
+  static const _fk =
+      Territory('FK', 'فاڪ لينڊ ٻيٽ', variant: 'فاڪ لينڊ ٻيٽ (اسلس مالويناس)');
+  static const _fm = Territory('FM', 'مائڪرونيشيا');
+  static const _fo = Territory('FO', 'فارو ٻيٽ');
+  static const _fr = Territory('FR', 'فرانس');
+  static const _ga = Territory('GA', 'گبون');
+  static const _gb = Territory('GB', 'برطانيہ', short: 'برطانيه');
+  static const _gd = Territory('GD', 'گريناڊا');
+  static const _ge = Territory('GE', 'جارجيا');
+  static const _gf = Territory('GF', 'فرانسيسي گيانا');
+  static const _gg = Territory('GG', 'گورنسي');
+  static const _gh = Territory('GH', 'گهانا');
+  static const _gi = Territory('GI', 'جبرالٽر');
+  static const _gl = Territory('GL', 'گرين لينڊ');
+  static const _gm = Territory('GM', 'گيمبيا');
+  static const _gn = Territory('GN', 'گني');
+  static const _gp = Territory('GP', 'گواڊیلوپ');
+  static const _gq = Territory('GQ', 'ايڪوٽوريل گائينا');
+  static const _gr = Territory('GR', 'يونان');
+  static const _gs = Territory('GS', 'ڏکڻ جارجيا ۽ ڏکڻ سينڊوچ ٻيٽ');
+  static const _gt = Territory('GT', 'گوئٽي مالا');
+  static const _gu = Territory('GU', 'گوام');
+  static const _gw = Territory('GW', 'گني بسائو');
+  static const _gy = Territory('GY', 'گيانا');
+  static const _hk = Territory('HK', 'هانگ ڪانگ SAR', short: 'هانگ ڪانگ');
+  static const _hm = Territory('HM', 'هرڊ ۽ مڪڊونلڊ ٻيٽ');
+  static const _hn = Territory('HN', 'هنڊورس');
+  static const _hr = Territory('HR', 'ڪروئيشيا');
+  static const _ht = Territory('HT', 'هيٽي');
+  static const _hu = Territory('HU', 'هنگري');
+  static const _ic = Territory('IC', 'ڪينري ٻيٽ');
+  static const _id = Territory('ID', 'انڊونيشيا');
+  static const _ie = Territory('IE', 'آئرلينڊ');
+  static const _il = Territory('IL', 'اسرائيل');
+  static const _im = Territory('IM', 'انسانن جو ٻيٽ');
+  static const _$in = Territory('IN', 'ڀارت');
+  static const _io = Territory('IO', 'برطانوي هندي سمنڊ خطو');
+  static const _iq = Territory('IQ', 'عراق');
+  static const _ir = Territory('IR', 'ايران');
+  static const _$is = Territory('IS', 'آئس لينڊ');
+  static const _it = Territory('IT', 'اٽلي');
+  static const _je = Territory('JE', 'جرسي');
+  static const _jm = Territory('JM', 'جميڪا');
+  static const _jo = Territory('JO', 'اردن');
+  static const _jp = Territory('JP', 'جاپان');
+  static const _ke = Territory('KE', 'ڪينيا');
+  static const _kg = Territory('KG', 'ڪرغستان');
+  static const _kh = Territory('KH', 'ڪمبوڊيا');
+  static const _ki = Territory('KI', 'ڪرباتي');
+  static const _km = Territory('KM', 'ڪوموروس');
+  static const _kn = Territory('KN', 'سينٽ ڪٽس و نيوس');
+  static const _kp = Territory('KP', 'اتر ڪوريا');
+  static const _kr = Territory('KR', 'ڏکڻ ڪوريا');
+  static const _kw = Territory('KW', 'ڪويت');
+  static const _ky = Territory('KY', 'ڪي مين ٻيٽ');
+  static const _kz = Territory('KZ', 'قازقستان');
+  static const _la = Territory('LA', 'لائوس');
+  static const _lb = Territory('LB', 'لبنان');
+  static const _lc = Territory('LC', 'سينٽ لوسيا');
+  static const _li = Territory('LI', 'لچي ٽينسٽين');
+  static const _lk = Territory('LK', 'سري لنڪا');
+  static const _lr = Territory('LR', 'لائبیریا');
+  static const _ls = Territory('LS', 'ليسوٿو');
+  static const _lt = Territory('LT', 'لٿونيا');
+  static const _lu = Territory('LU', 'لگزمبرگ');
+  static const _lv = Territory('LV', 'لاتويا');
+  static const _ly = Territory('LY', 'لبيا');
+  static const _ma = Territory('MA', 'مراڪش');
+  static const _mc = Territory('MC', 'موناڪو');
+  static const _md = Territory('MD', 'مالدووا');
+  static const _me = Territory('ME', 'مونٽي نيگرو');
+  static const _mf = Territory('MF', 'سينٽ مارٽن');
+  static const _mg = Territory('MG', 'مدگاسڪر');
+  static const _mh = Territory('MH', 'مارشل ٻيٽ');
+  static const _mk = Territory('MK', 'اتر مقدونيا');
+  static const _ml = Territory('ML', 'مالي');
+  static const _mm = Territory('MM', 'ميانمار (برما)');
+  static const _mn = Territory('MN', 'منگوليا');
+  static const _mo = Territory('MO', 'مڪائو SAR چين', short: 'مڪائو');
+  static const _mp = Territory('MP', 'اتريان ماريانا ٻيٽ');
+  static const _mq = Territory('MQ', 'مارتينڪ');
+  static const _mr = Territory('MR', 'موريتانيا');
+  static const _ms = Territory('MS', 'مونٽسراٽ');
+  static const _mt = Territory('MT', 'مالٽا');
+  static const _mu = Territory('MU', 'موريشس');
+  static const _mv = Territory('MV', 'مالديپ');
+  static const _mw = Territory('MW', 'مالاوي');
+  static const _mx = Territory('MX', 'ميڪسيڪو');
+  static const _my = Territory('MY', 'ملائيشيا');
+  static const _mz = Territory('MZ', 'موزمبیق');
+  static const _na = Territory('NA', 'نيميبيا');
+  static const _nc = Territory('NC', 'نیو ڪالیڊونیا');
+  static const _ne = Territory('NE', 'نائيجر');
+  static const _nf = Territory('NF', 'نورفوڪ ٻيٽ');
+  static const _ng = Territory('NG', 'نائيجيريا');
+  static const _ni = Territory('NI', 'نڪراگوا');
+  static const _nl = Territory('NL', 'نيدرلينڊ');
+  static const _no = Territory('NO', 'ناروي');
+  static const _np = Territory('NP', 'نيپال');
+  static const _nr = Territory('NR', 'نائورو');
+  static const _nu = Territory('NU', 'نووي');
+  static const _nz = Territory('NZ', 'نيو زيلينڊ', variant: 'نيو زيلينڊ');
+  static const _om = Territory('OM', 'عمان');
+  static const _pa = Territory('PA', 'پناما');
+  static const _pe = Territory('PE', 'پيرو');
+  static const _pf = Territory('PF', 'فرانسيسي پولينيشيا');
+  static const _pg = Territory('PG', 'پاپوا نیو گني');
+  static const _ph = Territory('PH', 'فلپائن');
+  static const _pk = Territory('PK', 'پاڪستان');
+  static const _pl = Territory('PL', 'پولينڊ');
+  static const _pm = Territory('PM', 'سینٽ پیئر و میڪوئیلون');
+  static const _pn = Territory('PN', 'پٽڪئرن ٻيٽ');
+  static const _pr = Territory('PR', 'پيوئرٽو ريڪو');
+  static const _ps = Territory('PS', 'فلسطيني علائقا', short: 'فلسطين');
+  static const _pt = Territory('PT', 'پرتگال');
+  static const _pw = Territory('PW', 'پلائو');
+  static const _py = Territory('PY', 'پيراگوءِ');
+  static const _qa = Territory('QA', 'قطر');
+  static const _qo = Territory('QO', 'بيروني سامونڊي');
+  static const _re = Territory('RE', 'ري يونين');
+  static const _ro = Territory('RO', 'رومانيا');
+  static const _rs = Territory('RS', 'سربيا');
+  static const _ru = Territory('RU', 'روس');
+  static const _rw = Territory('RW', 'روانڊا');
+  static const _sa = Territory('SA', 'سعودي عرب');
+  static const _sb = Territory('SB', 'سولومون ٻيٽَ');
+  static const _sc = Territory('SC', 'شي شلز');
+  static const _sd = Territory('SD', 'سوڊان');
+  static const _se = Territory('SE', 'سوئيڊن');
+  static const _sg = Territory('SG', 'سنگاپور');
+  static const _sh = Territory('SH', 'سينٽ ھيلينا');
+  static const _si = Territory('SI', 'سلوینیا');
+  static const _sj = Territory('SJ', 'سوالبارڊ ۽ جان ماین');
+  static const _sk = Territory('SK', 'سلوواڪيا');
+  static const _sl = Territory('SL', 'سيرا ليون');
+  static const _sm = Territory('SM', 'سین مرینو');
+  static const _sn = Territory('SN', 'سينيگال');
+  static const _so = Territory('SO', 'سوماليا');
+  static const _sr = Territory('SR', 'سورينام');
+  static const _ss = Territory('SS', 'ڏکڻ سوڊان');
+  static const _st = Territory('ST', 'سائو ٽوم ۽ پرنسپیي');
+  static const _sv = Territory('SV', 'ال سلواڊور');
+  static const _sx = Territory('SX', 'سنٽ مارٽن');
+  static const _sy = Territory('SY', 'شام');
+  static const _sz = Territory('SZ', 'ايسواٽني', variant: 'سوازيلينڊ');
+  static const _ta = Territory('TA', 'ٽرسٽن دا ڪوها');
+  static const _tc = Territory('TC', 'ترڪ ۽ ڪيڪوس ٻيٽ');
+  static const _td = Territory('TD', 'چاڊ');
+  static const _tf = Territory('TF', 'فرانسيسي ڏاکڻي علائقا');
+  static const _tg = Territory('TG', 'ٽوگو');
+  static const _th = Territory('TH', 'ٿائيليند');
+  static const _tj = Territory('TJ', 'تاجڪستان');
+  static const _tk = Territory('TK', 'ٽوڪلائو');
+  static const _tl = Territory('TL', 'تيمور ليستي', variant: 'اوڀر تيمور');
+  static const _tm = Territory('TM', 'ترڪمانستان');
+  static const _tn = Territory('TN', 'تيونيسيا');
+  static const _to = Territory('TO', 'ٽونگا');
+  static const _tr = Territory('TR', 'ترڪييي', variant: 'ترڪييي');
+  static const _tt = Territory('TT', 'ٽريني ڊيڊ ۽ ٽوباگو ٻيٽ');
+  static const _tv = Territory('TV', 'توالو');
+  static const _tw = Territory('TW', 'تائیوان');
+  static const _tz = Territory('TZ', 'تنزانيا');
+  static const _ua = Territory('UA', 'يوڪرين');
+  static const _ug = Territory('UG', 'يوگنڊا');
+  static const _um = Territory('UM', 'آمريڪي خارجي ٻيٽ');
+  static const _un = Territory('UN', 'گڏيل قومون');
+  static const _us = Territory('US', 'آمريڪا جون گڏيل رياستون', short: 'يوايس');
+  static const _uy = Territory('UY', 'يوروگوءِ');
+  static const _uz = Territory('UZ', 'ازبڪستان');
+  static const _va = Territory('VA', 'ويٽڪين سٽي');
+  static const _vc = Territory('VC', 'سینٽ ونسنت ۽ گریناڊینز');
+  static const _ve = Territory('VE', 'وينزويلا');
+  static const _vg = Territory('VG', 'برطانوي ورجن ٻيٽ');
+  static const _vi = Territory('VI', 'آمريڪي ورجن ٻيٽ');
+  static const _vn = Territory('VN', 'ويتنام');
+  static const _vu = Territory('VU', 'وينيٽيو');
+  static const _wf = Territory('WF', 'والس ۽ فتونا');
+  static const _ws = Territory('WS', 'ساموا');
+  static const _xa = Territory('XA', 'سوڊو-لهجا');
+  static const _xb = Territory('XB', 'سوڊو-بي ڊي');
+  static const _xk = Territory('XK', 'ڪوسووو');
+  static const _ye = Territory('YE', 'يمن');
+  static const _yt = Territory('YT', 'مياتي');
+  static const _za = Territory('ZA', 'ڏکڻ آفريقا');
+  static const _zm = Territory('ZM', 'زيمبيا');
+  static const _zw = Territory('ZW', 'زمبابوي');
+  static const _zz = Territory('ZZ', 'اڻڄاتل خطو');
 
   @override
-  Territory get oceania => Territory(
-        '009',
-        'اوشنيا',
-      );
+  final world = _$001;
+  @override
+  final africa = _$002;
+  @override
+  final northAmerica = _$003;
+  @override
+  final southAmerica = _$005;
+  @override
+  final oceania = _$009;
+  @override
+  final westernAfrica = _$011;
+  @override
+  final centralAmerica = _$013;
+  @override
+  final easternAfrica = _$014;
+  @override
+  final northernAfrica = _$015;
+  @override
+  final middleAfrica = _$017;
+  @override
+  final southernAfrica = _$018;
+  @override
+  final americas = _$019;
+  @override
+  final northernAmerica = _$021;
+  @override
+  final caribbean = _$029;
+  @override
+  final easternAsia = _$030;
+  @override
+  final southernAsia = _$034;
+  @override
+  final southeastAsia = _$035;
+  @override
+  final southernEurope = _$039;
+  @override
+  final australasia = _$053;
+  @override
+  final melanesia = _$054;
+  @override
+  final micronesianRegion = _$057;
+  @override
+  final polynesia = _$061;
+  @override
+  final asia = _$142;
+  @override
+  final centralAsia = _$143;
+  @override
+  final westernAsia = _$145;
+  @override
+  final europe = _$150;
+  @override
+  final easternEurope = _$151;
+  @override
+  final northernEurope = _$154;
+  @override
+  final westernEurope = _$155;
+  @override
+  final subSaharanAfrica = _$202;
+  @override
+  final latinAmerica = _$419;
+  @override
+  final europeanUnion = _eu;
+  @override
+  final eurozone = _ez;
+  @override
+  final outlyingOceania = _qo;
+  @override
+  final unitedNations = _un;
+  @override
+  final pseudoAccents = _xa;
+  @override
+  final pseudoBidi = _xb;
+  @override
+  final unknownRegion = _zz;
+  @override
+  final $001 = _$001;
+  @override
+  final $002 = _$002;
+  @override
+  final $003 = _$003;
+  @override
+  final $005 = _$005;
+  @override
+  final $009 = _$009;
+  @override
+  final $011 = _$011;
+  @override
+  final $013 = _$013;
+  @override
+  final $014 = _$014;
+  @override
+  final $015 = _$015;
+  @override
+  final $017 = _$017;
+  @override
+  final $018 = _$018;
+  @override
+  final $019 = _$019;
+  @override
+  final $021 = _$021;
+  @override
+  final $029 = _$029;
+  @override
+  final $030 = _$030;
+  @override
+  final $034 = _$034;
+  @override
+  final $035 = _$035;
+  @override
+  final $039 = _$039;
+  @override
+  final $053 = _$053;
+  @override
+  final $054 = _$054;
+  @override
+  final $057 = _$057;
+  @override
+  final $061 = _$061;
+  @override
+  final $142 = _$142;
+  @override
+  final $143 = _$143;
+  @override
+  final $145 = _$145;
+  @override
+  final $150 = _$150;
+  @override
+  final $151 = _$151;
+  @override
+  final $154 = _$154;
+  @override
+  final $155 = _$155;
+  @override
+  final $202 = _$202;
+  @override
+  final $419 = _$419;
+  @override
+  final ac = _ac;
+  @override
+  final ad = _ad;
+  @override
+  final ae = _ae;
+  @override
+  final af = _af;
+  @override
+  final ag = _ag;
+  @override
+  final ai = _ai;
+  @override
+  final al = _al;
+  @override
+  final am = _am;
+  @override
+  final ao = _ao;
+  @override
+  final aq = _aq;
+  @override
+  final ar = _ar;
+  @override
+  final $as = _$as;
+  @override
+  final at = _at;
+  @override
+  final au = _au;
+  @override
+  final aw = _aw;
+  @override
+  final ax = _ax;
+  @override
+  final az = _az;
+  @override
+  final ba = _ba;
+  @override
+  final bb = _bb;
+  @override
+  final bd = _bd;
+  @override
+  final be = _be;
+  @override
+  final bf = _bf;
+  @override
+  final bg = _bg;
+  @override
+  final bh = _bh;
+  @override
+  final bi = _bi;
+  @override
+  final bj = _bj;
+  @override
+  final bl = _bl;
+  @override
+  final bm = _bm;
+  @override
+  final bn = _bn;
+  @override
+  final bo = _bo;
+  @override
+  final bq = _bq;
+  @override
+  final br = _br;
+  @override
+  final bs = _bs;
+  @override
+  final bt = _bt;
+  @override
+  final bv = _bv;
+  @override
+  final bw = _bw;
+  @override
+  final by = _by;
+  @override
+  final bz = _bz;
+  @override
+  final ca = _ca;
+  @override
+  final cc = _cc;
+  @override
+  final cd = _cd;
+  @override
+  final cf = _cf;
+  @override
+  final cg = _cg;
+  @override
+  final ch = _ch;
+  @override
+  final ci = _ci;
+  @override
+  final ck = _ck;
+  @override
+  final cl = _cl;
+  @override
+  final cm = _cm;
+  @override
+  final cn = _cn;
+  @override
+  final co = _co;
+  @override
+  final cp = _cp;
+  @override
+  final cq = _zz;
+  @override
+  final cr = _cr;
+  @override
+  final cu = _cu;
+  @override
+  final cv = _cv;
+  @override
+  final cw = _cw;
+  @override
+  final cx = _cx;
+  @override
+  final cy = _cy;
+  @override
+  final cz = _cz;
+  @override
+  final de = _de;
+  @override
+  final dg = _dg;
+  @override
+  final dj = _dj;
+  @override
+  final dk = _dk;
+  @override
+  final dm = _dm;
+  @override
+  final $do = _$do;
+  @override
+  final dz = _dz;
+  @override
+  final ea = _ea;
+  @override
+  final ec = _ec;
+  @override
+  final ee = _ee;
+  @override
+  final eg = _eg;
+  @override
+  final eh = _eh;
+  @override
+  final er = _er;
+  @override
+  final es = _es;
+  @override
+  final et = _et;
+  @override
+  final eu = _eu;
+  @override
+  final ez = _ez;
+  @override
+  final fi = _fi;
+  @override
+  final fj = _fj;
+  @override
+  final fk = _fk;
+  @override
+  final fm = _fm;
+  @override
+  final fo = _fo;
+  @override
+  final fr = _fr;
+  @override
+  final ga = _ga;
+  @override
+  final gb = _gb;
+  @override
+  final gd = _gd;
+  @override
+  final ge = _ge;
+  @override
+  final gf = _gf;
+  @override
+  final gg = _gg;
+  @override
+  final gh = _gh;
+  @override
+  final gi = _gi;
+  @override
+  final gl = _gl;
+  @override
+  final gm = _gm;
+  @override
+  final gn = _gn;
+  @override
+  final gp = _gp;
+  @override
+  final gq = _gq;
+  @override
+  final gr = _gr;
+  @override
+  final gs = _gs;
+  @override
+  final gt = _gt;
+  @override
+  final gu = _gu;
+  @override
+  final gw = _gw;
+  @override
+  final gy = _gy;
+  @override
+  final hk = _hk;
+  @override
+  final hm = _hm;
+  @override
+  final hn = _hn;
+  @override
+  final hr = _hr;
+  @override
+  final ht = _ht;
+  @override
+  final hu = _hu;
+  @override
+  final ic = _ic;
+  @override
+  final id = _id;
+  @override
+  final ie = _ie;
+  @override
+  final il = _il;
+  @override
+  final im = _im;
+  @override
+  final $in = _$in;
+  @override
+  final io = _io;
+  @override
+  final iq = _iq;
+  @override
+  final ir = _ir;
+  @override
+  final $is = _$is;
+  @override
+  final it = _it;
+  @override
+  final je = _je;
+  @override
+  final jm = _jm;
+  @override
+  final jo = _jo;
+  @override
+  final jp = _jp;
+  @override
+  final ke = _ke;
+  @override
+  final kg = _kg;
+  @override
+  final kh = _kh;
+  @override
+  final ki = _ki;
+  @override
+  final km = _km;
+  @override
+  final kn = _kn;
+  @override
+  final kp = _kp;
+  @override
+  final kr = _kr;
+  @override
+  final kw = _kw;
+  @override
+  final ky = _ky;
+  @override
+  final kz = _kz;
+  @override
+  final la = _la;
+  @override
+  final lb = _lb;
+  @override
+  final lc = _lc;
+  @override
+  final li = _li;
+  @override
+  final lk = _lk;
+  @override
+  final lr = _lr;
+  @override
+  final ls = _ls;
+  @override
+  final lt = _lt;
+  @override
+  final lu = _lu;
+  @override
+  final lv = _lv;
+  @override
+  final ly = _ly;
+  @override
+  final ma = _ma;
+  @override
+  final mc = _mc;
+  @override
+  final md = _md;
+  @override
+  final me = _me;
+  @override
+  final mf = _mf;
+  @override
+  final mg = _mg;
+  @override
+  final mh = _mh;
+  @override
+  final mk = _mk;
+  @override
+  final ml = _ml;
+  @override
+  final mm = _mm;
+  @override
+  final mn = _mn;
+  @override
+  final mo = _mo;
+  @override
+  final mp = _mp;
+  @override
+  final mq = _mq;
+  @override
+  final mr = _mr;
+  @override
+  final ms = _ms;
+  @override
+  final mt = _mt;
+  @override
+  final mu = _mu;
+  @override
+  final mv = _mv;
+  @override
+  final mw = _mw;
+  @override
+  final mx = _mx;
+  @override
+  final my = _my;
+  @override
+  final mz = _mz;
+  @override
+  final na = _na;
+  @override
+  final nc = _nc;
+  @override
+  final ne = _ne;
+  @override
+  final nf = _nf;
+  @override
+  final ng = _ng;
+  @override
+  final ni = _ni;
+  @override
+  final nl = _nl;
+  @override
+  final no = _no;
+  @override
+  final np = _np;
+  @override
+  final nr = _nr;
+  @override
+  final nu = _nu;
+  @override
+  final nz = _nz;
+  @override
+  final om = _om;
+  @override
+  final pa = _pa;
+  @override
+  final pe = _pe;
+  @override
+  final pf = _pf;
+  @override
+  final pg = _pg;
+  @override
+  final ph = _ph;
+  @override
+  final pk = _pk;
+  @override
+  final pl = _pl;
+  @override
+  final pm = _pm;
+  @override
+  final pn = _pn;
+  @override
+  final pr = _pr;
+  @override
+  final ps = _ps;
+  @override
+  final pt = _pt;
+  @override
+  final pw = _pw;
+  @override
+  final py = _py;
+  @override
+  final qa = _qa;
+  @override
+  final qo = _qo;
+  @override
+  final re = _re;
+  @override
+  final ro = _ro;
+  @override
+  final rs = _rs;
+  @override
+  final ru = _ru;
+  @override
+  final rw = _rw;
+  @override
+  final sa = _sa;
+  @override
+  final sb = _sb;
+  @override
+  final sc = _sc;
+  @override
+  final sd = _sd;
+  @override
+  final se = _se;
+  @override
+  final sg = _sg;
+  @override
+  final sh = _sh;
+  @override
+  final si = _si;
+  @override
+  final sj = _sj;
+  @override
+  final sk = _sk;
+  @override
+  final sl = _sl;
+  @override
+  final sm = _sm;
+  @override
+  final sn = _sn;
+  @override
+  final so = _so;
+  @override
+  final sr = _sr;
+  @override
+  final ss = _ss;
+  @override
+  final st = _st;
+  @override
+  final sv = _sv;
+  @override
+  final sx = _sx;
+  @override
+  final sy = _sy;
+  @override
+  final sz = _sz;
+  @override
+  final ta = _ta;
+  @override
+  final tc = _tc;
+  @override
+  final td = _td;
+  @override
+  final tf = _tf;
+  @override
+  final tg = _tg;
+  @override
+  final th = _th;
+  @override
+  final tj = _tj;
+  @override
+  final tk = _tk;
+  @override
+  final tl = _tl;
+  @override
+  final tm = _tm;
+  @override
+  final tn = _tn;
+  @override
+  final to = _to;
+  @override
+  final tr = _tr;
+  @override
+  final tt = _tt;
+  @override
+  final tv = _tv;
+  @override
+  final tw = _tw;
+  @override
+  final tz = _tz;
+  @override
+  final ua = _ua;
+  @override
+  final ug = _ug;
+  @override
+  final um = _um;
+  @override
+  final un = _un;
+  @override
+  final us = _us;
+  @override
+  final uy = _uy;
+  @override
+  final uz = _uz;
+  @override
+  final va = _va;
+  @override
+  final vc = _vc;
+  @override
+  final ve = _ve;
+  @override
+  final vg = _vg;
+  @override
+  final vi = _vi;
+  @override
+  final vn = _vn;
+  @override
+  final vu = _vu;
+  @override
+  final wf = _wf;
+  @override
+  final ws = _ws;
+  @override
+  final xa = _xa;
+  @override
+  final xb = _xb;
+  @override
+  final xk = _xk;
+  @override
+  final ye = _ye;
+  @override
+  final yt = _yt;
+  @override
+  final za = _za;
+  @override
+  final zm = _zm;
+  @override
+  final zw = _zw;
+  @override
+  final zz = _zz;
 
   @override
-  Territory get westernAfrica => Territory(
-        '011',
-        'اولهه آفريقا',
-      );
+  final territories = const {
+    '001': _$001,
+    '002': _$002,
+    '003': _$003,
+    '005': _$005,
+    '009': _$009,
+    '011': _$011,
+    '013': _$013,
+    '014': _$014,
+    '015': _$015,
+    '017': _$017,
+    '018': _$018,
+    '019': _$019,
+    '021': _$021,
+    '029': _$029,
+    '030': _$030,
+    '034': _$034,
+    '035': _$035,
+    '039': _$039,
+    '053': _$053,
+    '054': _$054,
+    '057': _$057,
+    '061': _$061,
+    '142': _$142,
+    '143': _$143,
+    '145': _$145,
+    '150': _$150,
+    '151': _$151,
+    '154': _$154,
+    '155': _$155,
+    '202': _$202,
+    '419': _$419,
+    'AC': _ac,
+    'AD': _ad,
+    'AE': _ae,
+    'AF': _af,
+    'AG': _ag,
+    'AI': _ai,
+    'AL': _al,
+    'AM': _am,
+    'AO': _ao,
+    'AQ': _aq,
+    'AR': _ar,
+    'AS': _$as,
+    'AT': _at,
+    'AU': _au,
+    'AW': _aw,
+    'AX': _ax,
+    'AZ': _az,
+    'BA': _ba,
+    'BB': _bb,
+    'BD': _bd,
+    'BE': _be,
+    'BF': _bf,
+    'BG': _bg,
+    'BH': _bh,
+    'BI': _bi,
+    'BJ': _bj,
+    'BL': _bl,
+    'BM': _bm,
+    'BN': _bn,
+    'BO': _bo,
+    'BQ': _bq,
+    'BR': _br,
+    'BS': _bs,
+    'BT': _bt,
+    'BV': _bv,
+    'BW': _bw,
+    'BY': _by,
+    'BZ': _bz,
+    'CA': _ca,
+    'CC': _cc,
+    'CD': _cd,
+    'CF': _cf,
+    'CG': _cg,
+    'CH': _ch,
+    'CI': _ci,
+    'CK': _ck,
+    'CL': _cl,
+    'CM': _cm,
+    'CN': _cn,
+    'CO': _co,
+    'CP': _cp,
+    'CR': _cr,
+    'CU': _cu,
+    'CV': _cv,
+    'CW': _cw,
+    'CX': _cx,
+    'CY': _cy,
+    'CZ': _cz,
+    'DE': _de,
+    'DG': _dg,
+    'DJ': _dj,
+    'DK': _dk,
+    'DM': _dm,
+    'DO': _$do,
+    'DZ': _dz,
+    'EA': _ea,
+    'EC': _ec,
+    'EE': _ee,
+    'EG': _eg,
+    'EH': _eh,
+    'ER': _er,
+    'ES': _es,
+    'ET': _et,
+    'EU': _eu,
+    'EZ': _ez,
+    'FI': _fi,
+    'FJ': _fj,
+    'FK': _fk,
+    'FM': _fm,
+    'FO': _fo,
+    'FR': _fr,
+    'GA': _ga,
+    'GB': _gb,
+    'GD': _gd,
+    'GE': _ge,
+    'GF': _gf,
+    'GG': _gg,
+    'GH': _gh,
+    'GI': _gi,
+    'GL': _gl,
+    'GM': _gm,
+    'GN': _gn,
+    'GP': _gp,
+    'GQ': _gq,
+    'GR': _gr,
+    'GS': _gs,
+    'GT': _gt,
+    'GU': _gu,
+    'GW': _gw,
+    'GY': _gy,
+    'HK': _hk,
+    'HM': _hm,
+    'HN': _hn,
+    'HR': _hr,
+    'HT': _ht,
+    'HU': _hu,
+    'IC': _ic,
+    'ID': _id,
+    'IE': _ie,
+    'IL': _il,
+    'IM': _im,
+    'IN': _$in,
+    'IO': _io,
+    'IQ': _iq,
+    'IR': _ir,
+    'IS': _$is,
+    'IT': _it,
+    'JE': _je,
+    'JM': _jm,
+    'JO': _jo,
+    'JP': _jp,
+    'KE': _ke,
+    'KG': _kg,
+    'KH': _kh,
+    'KI': _ki,
+    'KM': _km,
+    'KN': _kn,
+    'KP': _kp,
+    'KR': _kr,
+    'KW': _kw,
+    'KY': _ky,
+    'KZ': _kz,
+    'LA': _la,
+    'LB': _lb,
+    'LC': _lc,
+    'LI': _li,
+    'LK': _lk,
+    'LR': _lr,
+    'LS': _ls,
+    'LT': _lt,
+    'LU': _lu,
+    'LV': _lv,
+    'LY': _ly,
+    'MA': _ma,
+    'MC': _mc,
+    'MD': _md,
+    'ME': _me,
+    'MF': _mf,
+    'MG': _mg,
+    'MH': _mh,
+    'MK': _mk,
+    'ML': _ml,
+    'MM': _mm,
+    'MN': _mn,
+    'MO': _mo,
+    'MP': _mp,
+    'MQ': _mq,
+    'MR': _mr,
+    'MS': _ms,
+    'MT': _mt,
+    'MU': _mu,
+    'MV': _mv,
+    'MW': _mw,
+    'MX': _mx,
+    'MY': _my,
+    'MZ': _mz,
+    'NA': _na,
+    'NC': _nc,
+    'NE': _ne,
+    'NF': _nf,
+    'NG': _ng,
+    'NI': _ni,
+    'NL': _nl,
+    'NO': _no,
+    'NP': _np,
+    'NR': _nr,
+    'NU': _nu,
+    'NZ': _nz,
+    'OM': _om,
+    'PA': _pa,
+    'PE': _pe,
+    'PF': _pf,
+    'PG': _pg,
+    'PH': _ph,
+    'PK': _pk,
+    'PL': _pl,
+    'PM': _pm,
+    'PN': _pn,
+    'PR': _pr,
+    'PS': _ps,
+    'PT': _pt,
+    'PW': _pw,
+    'PY': _py,
+    'QA': _qa,
+    'QO': _qo,
+    'RE': _re,
+    'RO': _ro,
+    'RS': _rs,
+    'RU': _ru,
+    'RW': _rw,
+    'SA': _sa,
+    'SB': _sb,
+    'SC': _sc,
+    'SD': _sd,
+    'SE': _se,
+    'SG': _sg,
+    'SH': _sh,
+    'SI': _si,
+    'SJ': _sj,
+    'SK': _sk,
+    'SL': _sl,
+    'SM': _sm,
+    'SN': _sn,
+    'SO': _so,
+    'SR': _sr,
+    'SS': _ss,
+    'ST': _st,
+    'SV': _sv,
+    'SX': _sx,
+    'SY': _sy,
+    'SZ': _sz,
+    'TA': _ta,
+    'TC': _tc,
+    'TD': _td,
+    'TF': _tf,
+    'TG': _tg,
+    'TH': _th,
+    'TJ': _tj,
+    'TK': _tk,
+    'TL': _tl,
+    'TM': _tm,
+    'TN': _tn,
+    'TO': _to,
+    'TR': _tr,
+    'TT': _tt,
+    'TV': _tv,
+    'TW': _tw,
+    'TZ': _tz,
+    'UA': _ua,
+    'UG': _ug,
+    'UM': _um,
+    'UN': _un,
+    'US': _us,
+    'UY': _uy,
+    'UZ': _uz,
+    'VA': _va,
+    'VC': _vc,
+    'VE': _ve,
+    'VG': _vg,
+    'VI': _vi,
+    'VN': _vn,
+    'VU': _vu,
+    'WF': _wf,
+    'WS': _ws,
+    'XA': _xa,
+    'XB': _xb,
+    'XK': _xk,
+    'YE': _ye,
+    'YT': _yt,
+    'ZA': _za,
+    'ZM': _zm,
+    'ZW': _zw,
+    'ZZ': _zz,
+  };
+}
+
+class VariantsSd extends Variants {
+  const VariantsSd._(super.cld);
+
+  static const _posix = Variant('POSIX', 'ڪمپيوٽر');
 
   @override
-  Territory get centralAmerica => Territory(
-        '013',
-        'وچ آمريڪا',
-      );
+  final posix = _posix;
 
   @override
-  Territory get easternAfrica => Territory(
-        '014',
-        'اوڀر آفريڪا',
-      );
+  final variants = const {
+    'POSIX': _posix,
+  };
+}
+
+class SubdivisionsSd extends Subdivisions {
+  const SubdivisionsSd._(super.cld);
 
   @override
-  Territory get northernAfrica => Territory(
-        '015',
-        'اتر آفريڪا',
-      );
+  final subdivisions = const {
+    'afbal': 'بلخ صوبو',
+    'afbam': 'باميان',
+    'afbdg': 'بادغيس صوبو',
+    'afbds': 'بدخشان صوبو',
+    'afday': 'دايڪندي صوبو',
+    'affra': 'فرا صوبو',
+    'afgha': 'غزني صوبو',
+    'afgho': 'غور صوبو',
+    'afhel': 'ھيلمند صوبو',
+    'afher': 'ھرات صوبو',
+    'afjow': 'جوزجان صوبو',
+    'afkab': 'ڪابل صوبو',
+    'afkan': 'قنڌار صوبو',
+    'afkap': 'ڪاپيسا صوبو',
+    'afkdz': 'قندوز صوبو',
+    'afkho': 'خوست صوبو',
+    'afknr': 'ڪونر صوبو',
+    'aflag': 'لغمان صوبو',
+    'aflog': 'لوگر صوبو',
+    'afnan': 'ننگرھار صوبو',
+    'afnim': 'نيمروز صوبو',
+    'afnur': 'نورستان صوبو',
+    'afpan': 'پنجشير صوبو',
+    'afpar': 'پروان صوبو',
+    'afpia': 'پڪتیا صوبو',
+    'afpka': 'پڪتيڪا صوبو',
+    'afsam': 'سمنگان صوبو',
+    'afsar': 'سرپل صوبو',
+    'aftak': 'تخار صوبو',
+    'afuru': 'اروزگان صوبو',
+    'afwar': 'وردگ صوبو',
+    'afzab': 'زابل صوبو',
+    'amer': 'يريوان',
+    'arc': 'بيونس آئرس',
+    'at1': 'برجنلينڊ',
+    'at2': 'ڪرينٿيا',
+    'at3': 'لوئر آسٽريا',
+    'at4': 'اپر آسٽريا',
+    'at5': 'سلزبرگ (رياست)',
+    'at6': 'اسٽيريا',
+    'at7': 'ٽرول (رياست)',
+    'at8': 'وورارلبرگ',
+    'at9': 'ويانا',
+    'auact': 'آسٽريليا راڄڌاني علائقو',
+    'aunsw': 'نيو سائوٿ ويلز',
+    'aunt': 'نادرن خطو',
+    'auqld': 'ڪوئينزلينڊ',
+    'ausa': 'ڏکڻ آسٽريليا',
+    'autas': 'تسمانيا',
+    'auvic': 'وڪٽوريا',
+    'auwa': 'اولهائون آسٽريليا',
+    'azabs': 'ابشرون ضلعو',
+    'azagc': 'آغجابادي ريئن',
+    'azba': 'باڪو',
+    'azsm': 'سومقاييت',
+    'azxiz': 'خيزي ريئن',
+    'byhm': 'منسڪ',
+    'caab': 'البرٽا',
+    'cabc': 'برٽش ڪولمبيا',
+    'camb': 'منيٽوبا',
+    'canb': 'نيو برنزوڪ',
+    'canl': 'نيوفائونڊلينڊ ۽ ليبراڊور',
+    'cans': 'نووا اسڪوٽيا',
+    'caon': 'اونٽاريو',
+    'cape': 'پرنس ايڊورڊ ٻيٽ',
+    'caqc': 'ڪيوبيڪ',
+    'cask': 'ساسڪاچيوان',
+    'cayt': 'يوڪون',
+    'cdkn': 'ڪنشاسا',
+    'ciab': 'عابدجان',
+    'cibs': 'باس ساسندرہ ضلعو',
+    'cicm': 'ڪوموئي ضلعو',
+    'ciym': 'يامسوڪرو',
+    'cnah': 'اينھئي صوبو',
+    'cnbj': 'بيجنگ',
+    'cncq': 'چانگچنگ',
+    'cngd': 'گوئينگڊانگ صوبو',
+    'cngs': 'گينسو صوبو',
+    'cngx': 'گئانگشي',
+    'cngz': 'گزھو صوبو',
+    'cnha': 'ھينان صوبو',
+    'cnhb': 'ھوبئي صوبو',
+    'cnhe': 'ھيبئي صوبو',
+    'cnhi': 'ھائنان صوبو',
+    'cnhk': 'هانگ ڪانگ',
+    'cnhl': 'ھيلانگجيئينگ صوبو',
+    'cnhn': 'ھونان صوبو',
+    'cnjl': 'جيلن صوبو',
+    'cnjs': 'جئانگسو صوبو',
+    'cnjx': 'جئانگشي صوبو',
+    'cnln': 'لئائوننگ صوبو',
+    'cnmo': 'ميڪائو',
+    'cnnm': 'انر منگوليا',
+    'cnnx': 'ننگشيا',
+    'cnqh': 'چنگھائي صوبو',
+    'cnsc': 'سيچوان صوبو',
+    'cnsd': 'شئنڊانگ صوبو',
+    'cnsh': 'شنگھائي',
+    'cnsn': 'شانڪسي صوبو',
+    'cntj': 'چيانجين',
+    'cntw': 'تائيوان صوبو',
+    'cnxj': 'سنڪيانگ',
+    'cnxz': 'تبت خودمختيار علائقو',
+    'cnyn': 'يونان صوبو',
+    'cnzj': 'ججيئانگ صوبو',
+    'codc': 'بگوٽا',
+    'cra': 'الاخويلا',
+    'cz10': 'پراگ',
+    'debb': 'برانڊن برگ',
+    'debw': 'بيڊن ورٽمبرگ',
+    'deby': 'بويريا',
+    'dehe': 'ھيسن',
+    'dehh': 'ھئمبرگ(شھر)',
+    'demv': 'ميڪلن برگ فرو پامرن',
+    'deni': 'لوئر سئڪسني',
+    'denw': 'نارٿ رائن وستڦيليا',
+    'derp': 'رائن لينڊ پئليٽينيٽ',
+    'desh': 'شليس وگ ھوليسٽن',
+    'desl': 'سارلنڊ',
+    'desn': 'سئڪسني',
+    'dest': 'سئڪسني اينھالٽ',
+    'deth': 'ٿرينجيا',
+    'eci': 'امبابورا صوبو',
+    'esan': 'اندلس',
+    'etaa': 'اديس ابابا',
+    'fr75c': 'پيرس',
+    'gbabe': 'ايبرڊين',
+    'gbedh': 'ايڊنبرگ',
+    'gbeng': 'انگلينڊ',
+    'gbgbn': 'برطانيه',
+    'gbglg': 'گلاسگو',
+    'gblnd': 'لنڊن',
+    'gbnbl': 'نارٿمبر لينڊ',
+    'gbnir': 'اتر آئرلينڊ',
+    'gbnyk': 'نارٿ يارڪ شائر',
+    'gboxf': 'آڪسفورڊ',
+    'gbsct': 'اسڪاٽلينڊ',
+    'gbukm': 'گڏيل بادشاھت',
+    'gbwls': 'ويلز',
+    'geab': 'ابخازيہ',
+    'getb': 'تبليسي',
+    'gmb': 'بنجول',
+    'gnc': 'ڪوناڪري',
+    'hr21': 'زغرب',
+    'hubu': 'بوڊاپيسٽ',
+    'idjk': 'جڪارتا',
+    'ieu': 'اولسٽر',
+    'inap': 'آنڌرا پرديش',
+    'inar': 'اروناچل پرديش',
+    'inas': 'آسام',
+    'inbr': 'بھار (رياست)',
+    'incg': 'ڇتيس ڳڙھ',
+    'inch': 'چندي ڳڙھ',
+    'indl': 'دهلي',
+    'inga': 'گووا',
+    'ingj': 'گوجارات',
+    'inhp': 'هماچل پرديش',
+    'inhr': 'هريانا',
+    'injh': 'جھرکنڊ',
+    'inka': 'ڪرناٽڪا',
+    'inkl': 'ڪيرالا',
+    'inmh': 'مھاراشٽر',
+    'inmp': 'مڌيا پرديش',
+    'inod': 'اوڙيسيا',
+    'inrj': 'راجستان',
+    'intn': 'تامل ناڊو',
+    'ints': 'تلنگانا',
+    'inuk': 'اتراکنڊ',
+    'inup': 'اتر پرديش',
+    'inwb': 'اولھ بنگال',
+    'ir07': 'فارس صوبو',
+    'ir10': 'اصفھان صوبو',
+    'ir11': 'سيستان ۽ بلوچستان صوبو',
+    'ir22': 'هرمزگان صوبو',
+    'isrkv': 'ريڪجاويڪ',
+    'joam': 'امان گورنري',
+    'jp13': 'ٽوڪيو',
+    'kggb': 'بشڪيڪ',
+    'kp01': 'پيانگ يانگ',
+    'kr11': 'سيئول',
+    'kz71': 'نور سلطان',
+    'lvrix': 'ريگا',
+    'mhmaj': 'ماجورو',
+    'mlbko': 'بماڪو',
+    'mn1': 'الان باتر',
+    'mxcmx': 'ميڪسيڪو شهر',
+    'mxzac': 'زاڪاٽيڪاس',
+    'my14': 'ڪوالالمپور',
+    'mzmpm': 'مپوتو',
+    'ngbo': 'بورنو رياست',
+    'no03': 'اوسلو',
+    'pgncd': 'پورٽ مورسبي',
+    'pkba': 'بلوچستان',
+    'pkgb': 'گلگت بلتستان',
+    'pkis': 'اسلام آبادجو وفاقي گاديءَ وارو علائقو',
+    'pkjk': 'آزاد ڪشمير',
+    'pkkp': 'خيبر پختونخوا',
+    'pksd': 'سنڌ',
+    'pkta': 'وفاقي منتظم شده قبائلي علائقا',
+    'pyasu': 'اسانشيون',
+    'qada': 'دوحہ',
+    'rob': 'بخاريسٽ',
+    'ruad': 'اديگيا',
+    'rual': 'التائي جمهوريا',
+    'ruamu': 'آمور اوبلاسٽ',
+    'ruark': 'آرکينگيلسڪ آبلاسٽ',
+    'ruast': 'آستراخان اوبلاسٽ',
+    'ruba': 'باشڪورتستان',
+    'rubel': 'بلگورود اوبلاست',
+    'rubry': 'برائنسڪ آبلاسٽ',
+    'rubu': 'بورياتيا',
+    'ruce': 'چيچنيا',
+    'ruche': 'چيليابنسڪ آبلاسٽ',
+    'ruda': 'داغستان',
+    'ruin': 'انگوشتيا',
+    'ruirk': 'ارکوتسڪ اوبلاسٽ',
+    'ruiva': 'آئيوانووو اوبلاسٽ',
+    'rukgd': 'ڪاليننگراڊ اوبلاسٽ',
+    'rumow': 'ماسڪو',
+    'rusa': 'ساکا جمهوريا',
+    'ruspe': 'سينٽ پيٽرسبرگ',
+    'ruta': 'تاتارستان',
+    'ruud': 'اڊمورتيا',
+    'ruvgg': 'وولگوگراڊ اوبلاست',
+    'rw01': 'ڪيگالي',
+    'sa01': 'رياض صوبو',
+    'sa02': 'مڪہ صوبو',
+    'sa03': 'مدينہ صوبو',
+    'sa04': 'الشرقي صوبو',
+    'sa05': 'القصيم صوبو',
+    'sa06': 'حائل صوبو',
+    'sa07': 'تبوڪ صوبو',
+    'sa08': 'حدود الشمالي صوبو',
+    'sa09': 'جيزان صوبو',
+    'sa10': 'نجران صوبو',
+    'sa11': 'الباحہ صوبو',
+    'sa12': 'الجوف صوبو',
+    'sa14': 'عسير صوبو',
+    'th10': 'بينڪاڪ',
+    'tjdu': 'دوشنبي',
+    'tloe': 'اوئيڪس پرڳڻو',
+    'tms': 'اشڪ آباد',
+    'tr06': 'انقره صوبو',
+    'tr11': 'بليسڪ صوبو',
+    'ua07': 'وولن اوبلاسٽ',
+    'ua30': 'ڪيف',
+    'ua40': 'سيواستوپول',
+    'ua68': 'کميل نٽسڪاء اوبلاسٽ',
+    'usak': 'الاسڪا',
+    'usal': 'الاباما',
+    'usar': 'ارڪنساس',
+    'usaz': 'ايرزونا',
+    'usca': 'ڪيليفورنيا',
+    'usco': 'ڪولراڊو',
+    'usct': 'ڪونيڪٽيڪٽ',
+    'usde': 'ڊيلاويئر',
+    'usfl': 'فلوريڊا',
+    'usga': 'جارجيا (آمريڪي رياست)',
+    'ushi': 'هوائي',
+    'usia': 'آئيووا',
+    'usid': 'آئيڊاهو',
+    'usil': 'الينوائي',
+    'usin': 'انڊيانا',
+    'usks': 'ڪنساس',
+    'usky': 'ڪينٽڪي',
+    'usla': 'لوئزيانا',
+    'usma': 'مئسچوسٽس',
+    'usmd': 'ميري لينڊ',
+    'usme': 'مئن',
+    'usmi': 'مشي گن',
+    'usmn': 'منيسوٽا',
+    'usmo': 'مسوري',
+    'usms': 'مسيسيپي',
+    'usmt': 'مونٽانا',
+    'usnc': 'اتر ڪيرولينا',
+    'usnd': 'اتر ڊڪوٽا',
+    'usne': 'نبراسڪا',
+    'usnh': 'نيو هيمپشائر',
+    'usnj': 'نيو جرسي',
+    'usnm': 'نيو ميڪسيڪو',
+    'usnv': 'نيواڊا',
+    'usny': 'نيو يارڪ',
+    'usoh': 'اوهايو',
+    'usok': 'اوڪلاهوما',
+    'usor': 'اوريگون',
+    'uspa': 'پينسلوانيا',
+    'usri': 'رھوڊز آئیلینڊز',
+    'ussc': 'ڏکڻ ڪيرولينا',
+    'ussd': 'ڏکڻ ڊڪوٽا',
+    'ustn': 'ٽينيسي',
+    'ustx': 'ٽيڪساس',
+    'usut': 'يوٽاہ',
+    'usva': 'ورجينيا',
+    'usvt': 'ورمونٽ',
+    'uswa': 'واشنگٽن رياست',
+    'uswi': 'وسڪونسن',
+    'uswv': 'ويسٽ ورجينيا',
+    'uswy': 'وايومنگ',
+    'uymo': 'مونٽي ويڊيو',
+    'uztk': 'تاشڪند',
+    'vnhn': 'هنوئي',
+  };
+}
+
+class CurrenciesSd extends Currencies {
+  const CurrenciesSd._(super.cld);
+
+  static const _aed = Currency(_cld, 'AED', 'گڏيل عرب امارات درهم');
+  static const _afn = Currency(_cld, 'AFN', 'افغاني افغاني', symbolNarrow: '؋');
+  static const _all = Currency(_cld, 'ALL', 'الباني ليڪ');
+  static const _amd = Currency(_cld, 'AMD', 'ارماني ڊرم', symbolNarrow: '֏');
+  static const _ang = Currency(_cld, 'ANG', 'نيڌرلينڊ انٽليئن گلڊر');
+  static const _aoa =
+      Currency(_cld, 'AOA', 'انگوليائي ڪوانزا', symbolNarrow: 'Kz');
+  static const _ars =
+      Currency(_cld, 'ARS', 'ارجنٽائن پيسو', symbolNarrow: r'$');
+  static const _aud =
+      Currency(_cld, 'AUD', 'آسٽريلوي ڊالر', symbol: r'A$', symbolNarrow: r'$');
+  static const _awg = Currency(_cld, 'AWG', 'اروبن فلورن');
+  static const _azn =
+      Currency(_cld, 'AZN', 'آذربائيجاني منت', symbolNarrow: '₼');
+  static const _bam =
+      Currency(_cld, 'BAM', 'بوسنيا هرزگوينا ڪنورٽبل مارڪ', symbolNarrow: 'KM');
+  static const _bbd =
+      Currency(_cld, 'BBD', 'باربيڊين ڊالر', symbolNarrow: r'$');
+  static const _bdt = Currency(_cld, 'BDT', 'بنگلاديشي ٽڪا', symbolNarrow: '৳');
+  static const _bgn = Currency(_cld, 'BGN', 'بلغارین لیو');
+  static const _bhd = Currency(_cld, 'BHD', 'بحريني دينار');
+  static const _bif = Currency(_cld, 'BIF', 'برونڊي فرينڪ');
+  static const _bmd = Currency(_cld, 'BMD', 'برمودي ڊالر', symbolNarrow: r'$');
+  static const _bnd = Currency(_cld, 'BND', 'برونائي ڊالر', symbolNarrow: r'$');
+  static const _bob =
+      Currency(_cld, 'BOB', 'بولیوین بولیویانو', symbolNarrow: 'Bs');
+  static const _brl =
+      Currency(_cld, 'BRL', 'برازيلي ريل', symbol: r'R$', symbolNarrow: r'R$');
+  static const _bsd =
+      Currency(_cld, 'BSD', 'بهاماني ڊادلر', symbolNarrow: r'$');
+  static const _btn = Currency(_cld, 'BTN', 'ڀوٽاني گلٽرم');
+  static const _bwp = Currency(_cld, 'BWP', 'بوستواني پولا',
+      one: 'بوٽسواني پولا', other: 'بوستواني پولا', symbolNarrow: 'P');
+  static const _byn = Currency(_cld, 'BYN', 'بیلاروسی ربل', symbolNarrow: 'р.');
+  static const _bzd = Currency(_cld, 'BZD', 'بيليز ڊالر', symbolNarrow: r'$');
+  static const _cad = Currency(_cld, 'CAD', 'ڪئينڊيائي ڊالر',
+      symbol: r'CA$', symbolNarrow: r'$');
+  static const _cdf = Currency(_cld, 'CDF', 'ڪانگو فرينڪ');
+  static const _chf = Currency(_cld, 'CHF', 'سوئس فرينڪ');
+  static const _clp = Currency(_cld, 'CLP', 'چلي پيسو', symbolNarrow: r'$');
+  static const _cnh = Currency(_cld, 'CNH', 'چيني يوآن (غير ملڪي)');
+  static const _cny =
+      Currency(_cld, 'CNY', 'چيني يوآن', symbol: 'CN¥', symbolNarrow: '¥');
+  static const _cop =
+      Currency(_cld, 'COP', 'ڪولمبيائي پيسو', symbolNarrow: r'$');
+  static const _crc =
+      Currency(_cld, 'CRC', 'ڪوسٽا ريڪا ڪولن', symbolNarrow: '₡');
+  static const _cuc =
+      Currency(_cld, 'CUC', 'ڪيوبن ڪنورٽيبل پيسو', symbolNarrow: r'$');
+  static const _cup = Currency(_cld, 'CUP', 'ڪيوبن پيسو', symbolNarrow: r'$');
+  static const _cve = Currency(_cld, 'CVE', 'ڪيپ وردي ايسڪوڊو');
+  static const _czk = Currency(_cld, 'CZK', 'چيڪ ڪرونا', symbolNarrow: 'Kč');
+  static const _djf = Currency(_cld, 'DJF', 'جبوتي فرينڪ');
+  static const _dkk = Currency(_cld, 'DKK', 'دانش ڪرون',
+      one: 'ڊينش ڪرون', other: 'دانش ڪرون', symbolNarrow: 'kr');
+  static const _dop =
+      Currency(_cld, 'DOP', 'ڊومينيڪن پيسو', symbolNarrow: r'$');
+  static const _dzd = Currency(_cld, 'DZD', 'الجيريائي دينار');
+  static const _egp = Currency(_cld, 'EGP', 'مصري پائونڊ', symbolNarrow: 'E£');
+  static const _ern = Currency(_cld, 'ERN', 'ايريٽيريائي ناڪفا');
+  static const _esp = Currency(_cld, 'ESP', 'ESP', symbolNarrow: '₧');
+  static const _etb = Currency(_cld, 'ETB', 'ايٿوپيائي بر');
+  static const _eur =
+      Currency(_cld, 'EUR', 'يورو', symbol: '€', symbolNarrow: '€');
+  static const _fjd = Currency(_cld, 'FJD', 'فجي ڊالر', symbolNarrow: r'$');
+  static const _fkp =
+      Currency(_cld, 'FKP', 'فاڪلينڊ ٻيٽ پائونڊ', symbolNarrow: '£');
+  static const _gbp =
+      Currency(_cld, 'GBP', 'برطانوي پائونڊ', symbol: '£', symbolNarrow: '£');
+  static const _gel = Currency(_cld, 'GEL', 'جارجيائي لاري', symbolNarrow: '₾');
+  static const _ghs = Currency(_cld, 'GHS', 'گهانين سيدي', symbolNarrow: 'GH₵');
+  static const _gip =
+      Currency(_cld, 'GIP', 'جبرالٽر پائونڊ', symbolNarrow: '£');
+  static const _gmd = Currency(_cld, 'GMD', 'گيمبيا دلاسائي');
+  static const _gnf = Currency(_cld, 'GNF', 'گني فرينڪ', symbolNarrow: 'FG');
+  static const _gtq =
+      Currency(_cld, 'GTQ', 'گوئٽي مالا ڪٽزل', symbolNarrow: 'Q');
+  static const _gyd = Currency(_cld, 'GYD', 'گيانا ڊالر', symbolNarrow: r'$');
+  static const _hkd = Currency(_cld, 'HKD', 'هانگ ڪانگ ڊالر',
+      symbol: r'HK$', symbolNarrow: r'$');
+  static const _hnl =
+      Currency(_cld, 'HNL', 'هونڊوراس ليمپرا', symbolNarrow: 'L');
+  static const _hrk =
+      Currency(_cld, 'HRK', 'ڪروشيائي ڪونا', symbolNarrow: 'kn');
+  static const _htg = Currency(_cld, 'HTG', 'هيٽي گورڊي');
+  static const _huf =
+      Currency(_cld, 'HUF', 'هنگيرين فورنٽ', symbolNarrow: 'Ft');
+  static const _idr = Currency(_cld, 'IDR', 'انڊونيشيائي رپيه',
+      one: 'انڊونيشيائي رپيه', other: 'انڊونيشيائي رپيو', symbolNarrow: 'Rp');
+  static const _ils = Currency(_cld, 'ILS', 'اسرائيلي نيو شيڪل',
+      symbol: '₪', symbolNarrow: '₪');
+  static const _inr =
+      Currency(_cld, 'INR', 'انڊين رپي', symbol: '₹', symbolNarrow: '₹');
+  static const _iqd = Currency(_cld, 'IQD', 'عراقي دينار');
+  static const _irr = Currency(_cld, 'IRR', 'ايراني ريال');
+  static const _isk =
+      Currency(_cld, 'ISK', 'آئيس لينڊي ڪرونا', symbolNarrow: 'kr');
+  static const _jmd = Currency(_cld, 'JMD', 'جميڪائي ڊالر', symbolNarrow: r'$');
+  static const _jod = Currency(_cld, 'JOD', 'اردني دينار');
+  static const _jpy =
+      Currency(_cld, 'JPY', 'جاپاني يين', symbol: 'JP¥', symbolNarrow: '¥');
+  static const _kes = Currency(_cld, 'KES', 'ڪينيائي سلنگ',
+      one: 'ڪينيائي شلنگ', other: 'ڪينيائي سلنگ');
+  static const _kgs = Currency(_cld, 'KGS', 'ڪرغزستاني سوم', symbolNarrow: '⃀');
+  static const _khr =
+      Currency(_cld, 'KHR', 'ڪمبوڊيائي ريال', symbolNarrow: '៛');
+  static const _kmf =
+      Currency(_cld, 'KMF', 'ڪوموريائي فرينڪ', symbolNarrow: 'CF');
+  static const _kpw =
+      Currency(_cld, 'KPW', 'اتر ڪوريائي ون', symbolNarrow: '₩');
+  static const _krw =
+      Currency(_cld, 'KRW', 'ڏکڻ ڪوريائي ون', symbol: '₩', symbolNarrow: '₩');
+  static const _kwd = Currency(_cld, 'KWD', 'ڪويتي دينار');
+  static const _kyd =
+      Currency(_cld, 'KYD', 'ڪيمين ٻيٽ ڊالر', symbolNarrow: r'$');
+  static const _kzt =
+      Currency(_cld, 'KZT', 'قازقستان ٽينگا', symbolNarrow: '₸');
+  static const _lak = Currency(_cld, 'LAK', 'لائوشيائي ڪپ', symbolNarrow: '₭');
+  static const _lbp =
+      Currency(_cld, 'LBP', 'لبناني پائونڊ', symbolNarrow: 'L£');
+  static const _lkr = Currency(_cld, 'LKR', 'سري لنڪن رپي', symbolNarrow: 'Rs');
+  static const _lrd =
+      Currency(_cld, 'LRD', 'لائبیریائی ڊالر', symbolNarrow: r'$');
+  static const _lsl = Currency(_cld, 'LSL', 'ليسوٿو لوٽي');
+  static const _ltl = Currency(_cld, 'LTL', 'LTL', symbolNarrow: 'Lt');
+  static const _lvl = Currency(_cld, 'LVL', 'LVL', symbolNarrow: 'Ls');
+  static const _lyd = Currency(_cld, 'LYD', 'لبيائي دينار');
+  static const _mad = Currency(_cld, 'MAD', 'موروڪيائي درهم');
+  static const _mdl = Currency(_cld, 'MDL', 'مالديپ ليو');
+  static const _mga =
+      Currency(_cld, 'MGA', 'ملاگاسي اریاری', symbolNarrow: 'Ar');
+  static const _mkd = Currency(_cld, 'MKD', 'ميسي ڊوني دينار');
+  static const _mmk = Currency(_cld, 'MMK', 'ميانمار ڪياٽ', symbolNarrow: 'K');
+  static const _mnt = Currency(_cld, 'MNT', 'منگولي تجرڪ', symbolNarrow: '₮');
+  static const _mop = Currency(_cld, 'MOP', 'ميڪانيز پٽاڪا');
+  static const _mro = Currency(_cld, 'MRO', 'موريشيائي اوگوئیا (1973–2017)');
+  static const _mru = Currency(_cld, 'MRU', 'موريشيائي اوگوئیا');
+  static const _mur = Currency(_cld, 'MUR', 'ماريشيائي رپي',
+      one: 'ماريشين روپي', other: 'ماريشيائي رپي', symbolNarrow: 'Rs');
+  static const _mvr = Currency(_cld, 'MVR', 'مالديپ روفيا');
+  static const _mwk = Currency(_cld, 'MWK', 'ملاوي ڪواچا');
+  static const _mxn =
+      Currency(_cld, 'MXN', 'ميڪسيڪو پيسو', symbol: r'MX$', symbolNarrow: r'$');
+  static const _myr =
+      Currency(_cld, 'MYR', 'ملائيشيائي رنگٽ', symbolNarrow: 'RM');
+  static const _mzn = Currency(_cld, 'MZN', 'موزمبيق ميٽيڪل');
+  static const _nad = Currency(_cld, 'NAD', 'نميبائي ڊالر',
+      one: 'نميبيائي ڊالر', other: 'نميبائي ڊالر', symbolNarrow: r'$');
+  static const _ngn = Currency(_cld, 'NGN', 'نائجريائي نائرا',
+      one: 'نائجيريائي نائرا', other: 'نائجريائي نائرا', symbolNarrow: '₦');
+  static const _nio =
+      Currency(_cld, 'NIO', 'نڪارا گوا ڪارڊوبا', symbolNarrow: r'C$');
+  static const _nok =
+      Currency(_cld, 'NOK', 'نارويائي ڪرون', symbolNarrow: 'kr');
+  static const _npr = Currency(_cld, 'NPR', 'نيپالي رپي', symbolNarrow: 'Rs');
+  static const _nzd = Currency(_cld, 'NZD', 'نيوزي لينڊي ڊالر',
+      symbol: r'NZ$', symbolNarrow: r'$');
+  static const _omr = Currency(_cld, 'OMR', 'عماني ريال');
+  static const _pab = Currency(_cld, 'PAB', 'پاناما پالبوا');
+  static const _pen = Currency(_cld, 'PEN', 'پيرو سول');
+  static const _pgk = Currency(_cld, 'PGK', 'پاپوا نيو گني ڪنا');
+  static const _php =
+      Currency(_cld, 'PHP', 'فلپائني پيسو', symbol: 'PHP', symbolNarrow: '₱');
+  static const _pkr =
+      Currency(_cld, 'PKR', 'پاڪستاني رپي', symbol: 'Rs', symbolNarrow: 'Rs');
+  static const _pln = Currency(_cld, 'PLN', 'پولش زلاٽي', symbolNarrow: 'zł');
+  static const _pyg =
+      Currency(_cld, 'PYG', 'پيراگوئي گاراني', symbolNarrow: '₲');
+  static const _qar = Currency(_cld, 'QAR', 'قطري ريال');
+  static const _ron =
+      Currency(_cld, 'RON', 'رومانیائي لیو', symbolNarrow: 'lei');
+  static const _rsd = Currency(_cld, 'RSD', 'سربيا دينار');
+  static const _rub = Currency(_cld, 'RUB', 'روسي ربل', symbolNarrow: '₽');
+  static const _rwf = Currency(_cld, 'RWF', 'روانڊا فرينڪ', symbolNarrow: 'RF');
+  static const _sar = Currency(_cld, 'SAR', 'سعودي ريال');
+  static const _sbd =
+      Currency(_cld, 'SBD', 'سولومان ٻيٽ ڊالر', symbolNarrow: r'$');
+  static const _scr = Currency(_cld, 'SCR', 'سشلي رپي');
+  static const _sdg = Currency(_cld, 'SDG', 'سوڊاني پائونڊ');
+  static const _sek = Currency(_cld, 'SEK', 'سويڊني ڪرونا', symbolNarrow: 'kr');
+  static const _sgd =
+      Currency(_cld, 'SGD', 'سنگاپوري ڊالر', symbolNarrow: r'$');
+  static const _shp =
+      Currency(_cld, 'SHP', 'سينٽ هيلنا پائونڊ', symbolNarrow: '£');
+  static const _sle = Currency(_cld, 'SLE', 'سیرا لیونيائي لیون');
+  static const _sll = Currency(_cld, 'SLL', 'سیرا لیونيائي لیون (1964—2022)',
+      one: 'سیرا لیونيائي لیون (1964—2022)',
+      other: 'سیرا لیونيائي لیون (1964—2022)');
+  static const _sos = Currency(_cld, 'SOS', 'سومالي شلنگ');
+  static const _srd = Currency(_cld, 'SRD', 'سرينامي ڊالر', symbolNarrow: r'$');
+  static const _ssp =
+      Currency(_cld, 'SSP', 'ڏکڻ سوڊاني پائونڊ', symbolNarrow: '£');
+  static const _std =
+      Currency(_cld, 'STD', 'سائو ٽوم ۽ پرنسپي دوبرا (1977–2017)');
+  static const _stn =
+      Currency(_cld, 'STN', 'سائو ٽوم ۽ پرنسپي دوبرا', symbolNarrow: 'Db');
+  static const _syp = Currency(_cld, 'SYP', 'سيريائي پائونڊ',
+      one: 'شامي پائونڊ', other: 'سيريائي پائونڊ', symbolNarrow: '£');
+  static const _szl = Currency(_cld, 'SZL', 'سوازي للانگيني');
+  static const _thb = Currency(_cld, 'THB', 'ٿائي باهت', symbolNarrow: '฿');
+  static const _tjs = Currency(_cld, 'TJS', 'تاجڪستاني سوموني');
+  static const _tmt = Currency(_cld, 'TMT', 'ترڪمانستان منت',
+      one: 'ترڪمانستاني منت', other: 'ترڪمانستان منت');
+  static const _tnd = Currency(_cld, 'TND', 'تیونس دینار');
+  static const _top = Currency(_cld, 'TOP', 'تونگن پانگا', symbolNarrow: r'T$');
+  static const _$try =
+      Currency(_cld, 'TRY', 'ترڪي لرا', symbolNarrow: '₺', symbolVariant: 'TL');
+  static const _ttd =
+      Currency(_cld, 'TTD', 'ٽرينڊيڊ ۽ ٽوباگو ڊالر', symbolNarrow: r'$');
+  static const _twd = Currency(_cld, 'TWD', 'نيو تائيوان ڊالر',
+      symbol: r'NT$', symbolNarrow: r'$');
+  static const _tzs = Currency(_cld, 'TZS', 'تنزانيائي شلنگ');
+  static const _uah =
+      Currency(_cld, 'UAH', 'یوڪرائن هریونیا', symbolNarrow: '₴');
+  static const _ugx = Currency(_cld, 'UGX', 'يگانڊا شلنگ');
+  static const _usd =
+      Currency(_cld, 'USD', 'آمريڪي ڊالر', symbol: r'US$', symbolNarrow: r'$');
+  static const _uyu =
+      Currency(_cld, 'UYU', 'يوروگوئي پيسو', symbolNarrow: r'$');
+  static const _uzs = Currency(_cld, 'UZS', 'ازبڪستاني سوم');
+  static const _vef = Currency(_cld, 'VEF', 'Venezuelan Bolívar (2008–2018)',
+      one: 'وینزویلا بولیور (2008–2018)',
+      other: 'وینزویلا بولیور (2008–2018)',
+      symbolNarrow: 'Bs');
+  static const _ves = Currency(_cld, 'VES', 'وینزویلا بولیور');
+  static const _vnd =
+      Currency(_cld, 'VND', 'ويٽنامي ڊونگ', symbol: '₫', symbolNarrow: '₫');
+  static const _vuv = Currency(_cld, 'VUV', 'وانواتو واتو');
+  static const _wst = Currency(_cld, 'WST', 'ساموآن ٽالا');
+  static const _xaf = Currency(_cld, 'XAF', 'وچ آفريڪا فرينڪ', symbol: 'FCFA');
+  static const _xcd = Currency(_cld, 'XCD', 'اوڀر ڪيريبين ڊالر',
+      symbol: r'EC$', symbolNarrow: r'$');
+  static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
+  static const _xof =
+      Currency(_cld, 'XOF', 'اولهه آفريڪا فرينڪ', symbol: 'F CFA');
+  static const _xpf = Currency(_cld, 'XPF', 'CFP فرينڪ', symbol: 'CFPF');
+  static const _xxx = Currency(_cld, 'XXX', 'اڻڄاتل سڪو', symbol: '¤');
+  static const _yer = Currency(_cld, 'YER', 'يمني ريال');
+  static const _zar =
+      Currency(_cld, 'ZAR', 'ڏکڻ آفريقي رانڊ', symbolNarrow: 'R');
+  static const _zmw = Currency(_cld, 'ZMW', 'زمبائي ڪواچا', symbolNarrow: 'ZK');
 
   @override
-  Territory get middleAfrica => Territory(
-        '017',
-        'وچ آفريڪا',
-      );
+  final unknownCurrency = _xxx;
+  @override
+  final adp = _xxx;
+  @override
+  final aed = _aed;
+  @override
+  final afa = _xxx;
+  @override
+  final afn = _afn;
+  @override
+  final alk = _xxx;
+  @override
+  final all = _all;
+  @override
+  final amd = _amd;
+  @override
+  final ang = _ang;
+  @override
+  final aoa = _aoa;
+  @override
+  final aok = _xxx;
+  @override
+  final aon = _xxx;
+  @override
+  final aor = _xxx;
+  @override
+  final ara = _xxx;
+  @override
+  final arl = _xxx;
+  @override
+  final arm = _xxx;
+  @override
+  final arp = _xxx;
+  @override
+  final ars = _ars;
+  @override
+  final ats = _xxx;
+  @override
+  final aud = _aud;
+  @override
+  final awg = _awg;
+  @override
+  final azm = _xxx;
+  @override
+  final azn = _azn;
+  @override
+  final bad = _xxx;
+  @override
+  final bam = _bam;
+  @override
+  final ban = _xxx;
+  @override
+  final bbd = _bbd;
+  @override
+  final bdt = _bdt;
+  @override
+  final bec = _xxx;
+  @override
+  final bef = _xxx;
+  @override
+  final bel = _xxx;
+  @override
+  final bgl = _xxx;
+  @override
+  final bgm = _xxx;
+  @override
+  final bgn = _bgn;
+  @override
+  final bgo = _xxx;
+  @override
+  final bhd = _bhd;
+  @override
+  final bif = _bif;
+  @override
+  final bmd = _bmd;
+  @override
+  final bnd = _bnd;
+  @override
+  final bob = _bob;
+  @override
+  final bol = _xxx;
+  @override
+  final bop = _xxx;
+  @override
+  final bov = _xxx;
+  @override
+  final brb = _xxx;
+  @override
+  final brc = _xxx;
+  @override
+  final bre = _xxx;
+  @override
+  final brl = _brl;
+  @override
+  final brn = _xxx;
+  @override
+  final brr = _xxx;
+  @override
+  final brz = _xxx;
+  @override
+  final bsd = _bsd;
+  @override
+  final btn = _btn;
+  @override
+  final buk = _xxx;
+  @override
+  final bwp = _bwp;
+  @override
+  final byb = _xxx;
+  @override
+  final byn = _byn;
+  @override
+  final byr = _xxx;
+  @override
+  final bzd = _bzd;
+  @override
+  final cad = _cad;
+  @override
+  final cdf = _cdf;
+  @override
+  final che = _xxx;
+  @override
+  final chf = _chf;
+  @override
+  final chw = _xxx;
+  @override
+  final cle = _xxx;
+  @override
+  final clf = _xxx;
+  @override
+  final clp = _clp;
+  @override
+  final cnh = _cnh;
+  @override
+  final cnx = _xxx;
+  @override
+  final cny = _cny;
+  @override
+  final cop = _cop;
+  @override
+  final cou = _xxx;
+  @override
+  final crc = _crc;
+  @override
+  final csd = _xxx;
+  @override
+  final csk = _xxx;
+  @override
+  final cuc = _cuc;
+  @override
+  final cup = _cup;
+  @override
+  final cve = _cve;
+  @override
+  final cyp = _xxx;
+  @override
+  final czk = _czk;
+  @override
+  final ddm = _xxx;
+  @override
+  final dem = _xxx;
+  @override
+  final djf = _djf;
+  @override
+  final dkk = _dkk;
+  @override
+  final dop = _dop;
+  @override
+  final dzd = _dzd;
+  @override
+  final ecs = _xxx;
+  @override
+  final ecv = _xxx;
+  @override
+  final eek = _xxx;
+  @override
+  final egp = _egp;
+  @override
+  final ern = _ern;
+  @override
+  final esa = _xxx;
+  @override
+  final esb = _xxx;
+  @override
+  final esp = _esp;
+  @override
+  final etb = _etb;
+  @override
+  final eur = _eur;
+  @override
+  final fim = _xxx;
+  @override
+  final fjd = _fjd;
+  @override
+  final fkp = _fkp;
+  @override
+  final frf = _xxx;
+  @override
+  final gbp = _gbp;
+  @override
+  final gek = _xxx;
+  @override
+  final gel = _gel;
+  @override
+  final ghc = _xxx;
+  @override
+  final ghs = _ghs;
+  @override
+  final gip = _gip;
+  @override
+  final gmd = _gmd;
+  @override
+  final gnf = _gnf;
+  @override
+  final gns = _xxx;
+  @override
+  final gqe = _xxx;
+  @override
+  final grd = _xxx;
+  @override
+  final gtq = _gtq;
+  @override
+  final gwe = _xxx;
+  @override
+  final gwp = _xxx;
+  @override
+  final gyd = _gyd;
+  @override
+  final hkd = _hkd;
+  @override
+  final hnl = _hnl;
+  @override
+  final hrd = _xxx;
+  @override
+  final hrk = _hrk;
+  @override
+  final htg = _htg;
+  @override
+  final huf = _huf;
+  @override
+  final idr = _idr;
+  @override
+  final iep = _xxx;
+  @override
+  final ilp = _xxx;
+  @override
+  final ilr = _xxx;
+  @override
+  final ils = _ils;
+  @override
+  final inr = _inr;
+  @override
+  final iqd = _iqd;
+  @override
+  final irr = _irr;
+  @override
+  final isj = _xxx;
+  @override
+  final isk = _isk;
+  @override
+  final itl = _xxx;
+  @override
+  final jmd = _jmd;
+  @override
+  final jod = _jod;
+  @override
+  final jpy = _jpy;
+  @override
+  final kes = _kes;
+  @override
+  final kgs = _kgs;
+  @override
+  final khr = _khr;
+  @override
+  final kmf = _kmf;
+  @override
+  final kpw = _kpw;
+  @override
+  final krh = _xxx;
+  @override
+  final kro = _xxx;
+  @override
+  final krw = _krw;
+  @override
+  final kwd = _kwd;
+  @override
+  final kyd = _kyd;
+  @override
+  final kzt = _kzt;
+  @override
+  final lak = _lak;
+  @override
+  final lbp = _lbp;
+  @override
+  final lkr = _lkr;
+  @override
+  final lrd = _lrd;
+  @override
+  final lsl = _lsl;
+  @override
+  final ltl = _ltl;
+  @override
+  final ltt = _xxx;
+  @override
+  final luc = _xxx;
+  @override
+  final luf = _xxx;
+  @override
+  final lul = _xxx;
+  @override
+  final lvl = _lvl;
+  @override
+  final lvr = _xxx;
+  @override
+  final lyd = _lyd;
+  @override
+  final mad = _mad;
+  @override
+  final maf = _xxx;
+  @override
+  final mcf = _xxx;
+  @override
+  final mdc = _xxx;
+  @override
+  final mdl = _mdl;
+  @override
+  final mga = _mga;
+  @override
+  final mgf = _xxx;
+  @override
+  final mkd = _mkd;
+  @override
+  final mkn = _xxx;
+  @override
+  final mlf = _xxx;
+  @override
+  final mmk = _mmk;
+  @override
+  final mnt = _mnt;
+  @override
+  final mop = _mop;
+  @override
+  final mro = _mro;
+  @override
+  final mru = _mru;
+  @override
+  final mtl = _xxx;
+  @override
+  final mtp = _xxx;
+  @override
+  final mur = _mur;
+  @override
+  final mvp = _xxx;
+  @override
+  final mvr = _mvr;
+  @override
+  final mwk = _mwk;
+  @override
+  final mxn = _mxn;
+  @override
+  final mxp = _xxx;
+  @override
+  final mxv = _xxx;
+  @override
+  final myr = _myr;
+  @override
+  final mze = _xxx;
+  @override
+  final mzm = _xxx;
+  @override
+  final mzn = _mzn;
+  @override
+  final nad = _nad;
+  @override
+  final ngn = _ngn;
+  @override
+  final nic = _xxx;
+  @override
+  final nio = _nio;
+  @override
+  final nlg = _xxx;
+  @override
+  final nok = _nok;
+  @override
+  final npr = _npr;
+  @override
+  final nzd = _nzd;
+  @override
+  final omr = _omr;
+  @override
+  final pab = _pab;
+  @override
+  final pei = _xxx;
+  @override
+  final pen = _pen;
+  @override
+  final pes = _xxx;
+  @override
+  final pgk = _pgk;
+  @override
+  final php = _php;
+  @override
+  final pkr = _pkr;
+  @override
+  final pln = _pln;
+  @override
+  final plz = _xxx;
+  @override
+  final pte = _xxx;
+  @override
+  final pyg = _pyg;
+  @override
+  final qar = _qar;
+  @override
+  final rhd = _xxx;
+  @override
+  final rol = _xxx;
+  @override
+  final ron = _ron;
+  @override
+  final rsd = _rsd;
+  @override
+  final rub = _rub;
+  @override
+  final rur = _xxx;
+  @override
+  final rwf = _rwf;
+  @override
+  final sar = _sar;
+  @override
+  final sbd = _sbd;
+  @override
+  final scr = _scr;
+  @override
+  final sdd = _xxx;
+  @override
+  final sdg = _sdg;
+  @override
+  final sdp = _xxx;
+  @override
+  final sek = _sek;
+  @override
+  final sgd = _sgd;
+  @override
+  final shp = _shp;
+  @override
+  final sit = _xxx;
+  @override
+  final skk = _xxx;
+  @override
+  final sle = _sle;
+  @override
+  final sll = _sll;
+  @override
+  final sos = _sos;
+  @override
+  final srd = _srd;
+  @override
+  final srg = _xxx;
+  @override
+  final ssp = _ssp;
+  @override
+  final std = _std;
+  @override
+  final stn = _stn;
+  @override
+  final sur = _xxx;
+  @override
+  final svc = _xxx;
+  @override
+  final syp = _syp;
+  @override
+  final szl = _szl;
+  @override
+  final thb = _thb;
+  @override
+  final tjr = _xxx;
+  @override
+  final tjs = _tjs;
+  @override
+  final tmm = _xxx;
+  @override
+  final tmt = _tmt;
+  @override
+  final tnd = _tnd;
+  @override
+  final top = _top;
+  @override
+  final tpe = _xxx;
+  @override
+  final trl = _xxx;
+  @override
+  final $try = _$try;
+  @override
+  final ttd = _ttd;
+  @override
+  final twd = _twd;
+  @override
+  final tzs = _tzs;
+  @override
+  final uah = _uah;
+  @override
+  final uak = _xxx;
+  @override
+  final ugs = _xxx;
+  @override
+  final ugx = _ugx;
+  @override
+  final usd = _usd;
+  @override
+  final usn = _xxx;
+  @override
+  final uss = _xxx;
+  @override
+  final uyi = _xxx;
+  @override
+  final uyp = _xxx;
+  @override
+  final uyu = _uyu;
+  @override
+  final uyw = _xxx;
+  @override
+  final uzs = _uzs;
+  @override
+  final veb = _xxx;
+  @override
+  final ved = _xxx;
+  @override
+  final vef = _vef;
+  @override
+  final ves = _ves;
+  @override
+  final vnd = _vnd;
+  @override
+  final vnn = _xxx;
+  @override
+  final vuv = _vuv;
+  @override
+  final wst = _wst;
+  @override
+  final xaf = _xaf;
+  @override
+  final xag = _xxx;
+  @override
+  final xau = _xxx;
+  @override
+  final xba = _xxx;
+  @override
+  final xbb = _xxx;
+  @override
+  final xbc = _xxx;
+  @override
+  final xbd = _xxx;
+  @override
+  final xcd = _xcd;
+  @override
+  final xcg = _xcg;
+  @override
+  final xdr = _xxx;
+  @override
+  final xeu = _xxx;
+  @override
+  final xfo = _xxx;
+  @override
+  final xfu = _xxx;
+  @override
+  final xof = _xof;
+  @override
+  final xpd = _xxx;
+  @override
+  final xpf = _xpf;
+  @override
+  final xpt = _xxx;
+  @override
+  final xre = _xxx;
+  @override
+  final xsu = _xxx;
+  @override
+  final xts = _xxx;
+  @override
+  final xua = _xxx;
+  @override
+  final xxx = _xxx;
+  @override
+  final ydd = _xxx;
+  @override
+  final yer = _yer;
+  @override
+  final yud = _xxx;
+  @override
+  final yum = _xxx;
+  @override
+  final yun = _xxx;
+  @override
+  final yur = _xxx;
+  @override
+  final zal = _xxx;
+  @override
+  final zar = _zar;
+  @override
+  final zmk = _xxx;
+  @override
+  final zmw = _zmw;
+  @override
+  final zrn = _xxx;
+  @override
+  final zrz = _xxx;
+  @override
+  final zwd = _xxx;
+  @override
+  final zwg = _xxx;
+  @override
+  final zwl = _xxx;
+  @override
+  final zwr = _xxx;
 
   @override
-  Territory get southernAfrica => Territory(
-        '018',
-        'ڏاکڻي آمريڪا',
-      );
-
-  @override
-  Territory get americas => Territory(
-        '019',
-        'آمريڪا',
-      );
-
-  @override
-  Territory get northernAmerica => Territory(
-        '021',
-        'اترين آمريڪا',
-      );
-
-  @override
-  Territory get caribbean => Territory(
-        '029',
-        'ڪيريبين',
-      );
-
-  @override
-  Territory get easternAsia => Territory(
-        '030',
-        'اوڀر ايشيا',
-      );
-
-  @override
-  Territory get southernAsia => Territory(
-        '034',
-        'ڏکڻ ايشيا',
-      );
-
-  @override
-  Territory get southeastAsia => Territory(
-        '035',
-        'ڏکڻ اوڀر ايشيا',
-      );
-
-  @override
-  Territory get southernEurope => Territory(
-        '039',
-        'ڏکڻ يورپ',
-      );
-
-  @override
-  Territory get australasia => Territory(
-        '053',
-        'آسٽریلیشیا',
-      );
-
-  @override
-  Territory get melanesia => Territory(
-        '054',
-        'میلانیشیا',
-      );
-
-  @override
-  Territory get micronesianRegion => Territory(
-        '057',
-        'مائڪرونيشائي خطو',
-      );
-
-  @override
-  Territory get polynesia => Territory(
-        '061',
-        'پولینیشیا',
-      );
-
-  @override
-  Territory get asia => Territory(
-        '142',
-        'ايشيا',
-      );
-
-  @override
-  Territory get centralAsia => Territory(
-        '143',
-        'وچ ايشيا',
-      );
-
-  @override
-  Territory get westernAsia => Territory(
-        '145',
-        'اولهه ايشيا',
-      );
-
-  @override
-  Territory get europe => Territory(
-        '150',
-        'يورپ',
-      );
-
-  @override
-  Territory get easternEurope => Territory(
-        '151',
-        'اوڀر يورپ',
-      );
-
-  @override
-  Territory get northernEurope => Territory(
-        '154',
-        'اترين يورپ',
-      );
-
-  @override
-  Territory get westernEurope => Territory(
-        '155',
-        'اولهه يورپ',
-      );
-
-  @override
-  Territory get subSaharanAfrica => Territory(
-        '202',
-        'سب-سهارا آفريڪا',
-      );
-
-  @override
-  Territory get latinAmerica => Territory(
-        '419',
-        'لاطيني آمريڪا',
-      );
-
-  @override
-  Territory get unknownRegion => Territory(
-        'ZZ',
-        'اڻڄاتل خطو',
-      );
-
-  @override
-  final countries = CanonicalizedMap<String, String, Territory>.from({
-    'AC': Territory(
-      'AC',
-      'طلوع ٻيٽ',
-    ),
-    'AD': Territory(
-      'AD',
-      'اندورا',
-    ),
-    'AE': Territory(
-      'AE',
-      'متحده عرب امارات',
-    ),
-    'AF': Territory(
-      'AF',
-      'افغانستان',
-    ),
-    'AG': Territory(
-      'AG',
-      'انٽيگا ۽ باربد',
-    ),
-    'AI': Territory(
-      'AI',
-      'انگويلا',
-    ),
-    'AL': Territory(
-      'AL',
-      'البانيا',
-    ),
-    'AM': Territory(
-      'AM',
-      'ارمینیا',
-    ),
-    'AO': Territory(
-      'AO',
-      'انگولا',
-    ),
-    'AQ': Territory(
-      'AQ',
-      'انٽارڪٽيڪا',
-    ),
-    'AR': Territory(
-      'AR',
-      'ارجنٽينا',
-    ),
-    'AS': Territory(
-      'AS',
-      'آمريڪي ساموا',
-    ),
-    'AT': Territory(
-      'AT',
-      'آسٽريا',
-    ),
-    'AU': Territory(
-      'AU',
-      'آسٽريليا',
-    ),
-    'AW': Territory(
-      'AW',
-      'عروبا',
-    ),
-    'AX': Territory(
-      'AX',
-      'الند ٻيٽ',
-    ),
-    'AZ': Territory(
-      'AZ',
-      'آذربائيجان',
-    ),
-    'BA': Territory(
-      'BA',
-      'بوسنيا ۽ هرزوگووينا',
-    ),
-    'BB': Territory(
-      'BB',
-      'باربڊوس',
-    ),
-    'BD': Territory(
-      'BD',
-      'بنگلاديش',
-    ),
-    'BE': Territory(
-      'BE',
-      'بيلجيم',
-    ),
-    'BF': Territory(
-      'BF',
-      'برڪينا فاسو',
-    ),
-    'BG': Territory(
-      'BG',
-      'بلغاريا',
-    ),
-    'BH': Territory(
-      'BH',
-      'بحرين',
-    ),
-    'BI': Territory(
-      'BI',
-      'برونڊي',
-    ),
-    'BJ': Territory(
-      'BJ',
-      'بينن',
-    ),
-    'BL': Territory(
-      'BL',
-      'سینٽ برٿلیمی',
-    ),
-    'BM': Territory(
-      'BM',
-      'برمودا',
-    ),
-    'BN': Territory(
-      'BN',
-      'برونائي',
-    ),
-    'BO': Territory(
-      'BO',
-      'بوليويا',
-    ),
-    'BQ': Territory(
-      'BQ',
-      'ڪيريبين نيدرلينڊ',
-    ),
-    'BR': Territory(
-      'BR',
-      'برازيل',
-    ),
-    'BS': Territory(
-      'BS',
-      'باهاماس',
-    ),
-    'BT': Territory(
-      'BT',
-      'ڀوٽان',
-    ),
-    'BV': Territory(
-      'BV',
-      'بووٽ ٻيٽ',
-    ),
-    'BW': Territory(
-      'BW',
-      'بوٽسوانا',
-    ),
-    'BY': Territory(
-      'BY',
-      'بیلارس',
-    ),
-    'BZ': Territory(
-      'BZ',
-      'بيليز',
-    ),
-    'CA': Territory(
-      'CA',
-      'ڪينيڊا',
-    ),
-    'CC': Territory(
-      'CC',
-      'ڪوڪوس ٻيٽ',
-    ),
-    'CD': Territory(
-      'CD',
-      'ڪانگو -ڪنشاسا',
-      variant: 'ڪانگو',
-    ),
-    'CF': Territory(
-      'CF',
-      'وچ آفريقي جمهوريه',
-    ),
-    'CG': Territory(
-      'CG',
-      'ڪانگو - برازاویل',
-      variant: 'ڪانگو (جمهوري)',
-    ),
-    'CH': Territory(
-      'CH',
-      'سوئزرلينڊ',
-    ),
-    'CI': Territory(
-      'CI',
-      'ڪوٽي ويرا',
-      variant: 'آئيوري ڪوسٽ',
-    ),
-    'CK': Territory(
-      'CK',
-      'ڪوڪ ٻيٽ',
-    ),
-    'CL': Territory(
-      'CL',
-      'چلي',
-    ),
-    'CM': Territory(
-      'CM',
-      'ڪيمرون',
-    ),
-    'CN': Territory(
-      'CN',
-      'چين',
-    ),
-    'CO': Territory(
-      'CO',
-      'ڪولمبيا',
-    ),
-    'CP': Territory(
-      'CP',
-      'ڪلپرٽن ٻيٽ',
-    ),
-    'CQ': Territory(
-      'CQ',
-      'اڻڄاتل خطو (CQ)',
-    ),
-    'CR': Territory(
-      'CR',
-      'ڪوسٽا ريڪا',
-    ),
-    'CU': Territory(
-      'CU',
-      'ڪيوبا',
-    ),
-    'CV': Territory(
-      'CV',
-      'ڪيپ وردي',
-    ),
-    'CW': Territory(
-      'CW',
-      'ڪيوراسائو',
-    ),
-    'CX': Territory(
-      'CX',
-      'ڪرسمس ٻيٽ',
-    ),
-    'CY': Territory(
-      'CY',
-      'سائپرس',
-    ),
-    'CZ': Territory(
-      'CZ',
-      'چيڪيا',
-      variant: 'چيڪ جهموريہ',
-    ),
-    'DE': Territory(
-      'DE',
-      'جرمني',
-    ),
-    'DG': Territory(
-      'DG',
-      'ڊئيگو گارسيا',
-    ),
-    'DJ': Territory(
-      'DJ',
-      'ڊجبيوتي',
-    ),
-    'DK': Territory(
-      'DK',
-      'ڊينمارڪ',
-    ),
-    'DM': Territory(
-      'DM',
-      'ڊومينيڪا',
-    ),
-    'DO': Territory(
-      'DO',
-      'ڊومينيڪن جمهوريه',
-    ),
-    'DZ': Territory(
-      'DZ',
-      'الجيريا',
-    ),
-    'EA': Territory(
-      'EA',
-      'سیوٽا ۽ میلیلا',
-    ),
-    'EC': Territory(
-      'EC',
-      'ايڪواڊور',
-    ),
-    'EE': Territory(
-      'EE',
-      'ايسٽونيا',
-    ),
-    'EG': Territory(
-      'EG',
-      'مصر',
-    ),
-    'EH': Territory(
-      'EH',
-      'اولهه صحارا',
-    ),
-    'ER': Territory(
-      'ER',
-      'ايريٽيريا',
-    ),
-    'ES': Territory(
-      'ES',
-      'اسپين',
-    ),
-    'ET': Territory(
-      'ET',
-      'ايٿوپيا',
-    ),
-    'EU': Territory(
-      'EU',
-      'يورپين يونين',
-    ),
-    'EZ': Territory(
-      'EZ',
-      'يورو زون',
-    ),
-    'FI': Territory(
-      'FI',
-      'فن لينڊ',
-    ),
-    'FJ': Territory(
-      'FJ',
-      'فجي',
-    ),
-    'FK': Territory(
-      'FK',
-      'فاڪ لينڊ ٻيٽ',
-      variant: 'فاڪ لينڊ ٻيٽ (اسلس مالويناس)',
-    ),
-    'FM': Territory(
-      'FM',
-      'مائڪرونيشيا',
-    ),
-    'FO': Territory(
-      'FO',
-      'فارو ٻيٽ',
-    ),
-    'FR': Territory(
-      'FR',
-      'فرانس',
-    ),
-    'GA': Territory(
-      'GA',
-      'گبون',
-    ),
-    'GB': Territory(
-      'GB',
-      'برطانيہ',
-      short: 'برطانيه',
-    ),
-    'GD': Territory(
-      'GD',
-      'گريناڊا',
-    ),
-    'GE': Territory(
-      'GE',
-      'جارجيا',
-    ),
-    'GF': Territory(
-      'GF',
-      'فرانسيسي گيانا',
-    ),
-    'GG': Territory(
-      'GG',
-      'گورنسي',
-    ),
-    'GH': Territory(
-      'GH',
-      'گهانا',
-    ),
-    'GI': Territory(
-      'GI',
-      'جبرالٽر',
-    ),
-    'GL': Territory(
-      'GL',
-      'گرين لينڊ',
-    ),
-    'GM': Territory(
-      'GM',
-      'گيمبيا',
-    ),
-    'GN': Territory(
-      'GN',
-      'گني',
-    ),
-    'GP': Territory(
-      'GP',
-      'گواڊیلوپ',
-    ),
-    'GQ': Territory(
-      'GQ',
-      'ايڪوٽوريل گائينا',
-    ),
-    'GR': Territory(
-      'GR',
-      'يونان',
-    ),
-    'GS': Territory(
-      'GS',
-      'ڏکڻ جارجيا ۽ ڏکڻ سينڊوچ ٻيٽ',
-    ),
-    'GT': Territory(
-      'GT',
-      'گوئٽي مالا',
-    ),
-    'GU': Territory(
-      'GU',
-      'گوام',
-    ),
-    'GW': Territory(
-      'GW',
-      'گني بسائو',
-    ),
-    'GY': Territory(
-      'GY',
-      'گيانا',
-    ),
-    'HK': Territory(
-      'HK',
-      'هانگ ڪانگ SAR',
-      short: 'هانگ ڪانگ',
-    ),
-    'HM': Territory(
-      'HM',
-      'هرڊ ۽ مڪڊونلڊ ٻيٽ',
-    ),
-    'HN': Territory(
-      'HN',
-      'هنڊورس',
-    ),
-    'HR': Territory(
-      'HR',
-      'ڪروئيشيا',
-    ),
-    'HT': Territory(
-      'HT',
-      'هيٽي',
-    ),
-    'HU': Territory(
-      'HU',
-      'هنگري',
-    ),
-    'IC': Territory(
-      'IC',
-      'ڪينري ٻيٽ',
-    ),
-    'ID': Territory(
-      'ID',
-      'انڊونيشيا',
-    ),
-    'IE': Territory(
-      'IE',
-      'آئرلينڊ',
-    ),
-    'IL': Territory(
-      'IL',
-      'اسرائيل',
-    ),
-    'IM': Territory(
-      'IM',
-      'انسانن جو ٻيٽ',
-    ),
-    'IN': Territory(
-      'IN',
-      'ڀارت',
-    ),
-    'IO': Territory(
-      'IO',
-      'برطانوي هندي سمنڊ خطو',
-    ),
-    'IQ': Territory(
-      'IQ',
-      'عراق',
-    ),
-    'IR': Territory(
-      'IR',
-      'ايران',
-    ),
-    'IS': Territory(
-      'IS',
-      'آئس لينڊ',
-    ),
-    'IT': Territory(
-      'IT',
-      'اٽلي',
-    ),
-    'JE': Territory(
-      'JE',
-      'جرسي',
-    ),
-    'JM': Territory(
-      'JM',
-      'جميڪا',
-    ),
-    'JO': Territory(
-      'JO',
-      'اردن',
-    ),
-    'JP': Territory(
-      'JP',
-      'جاپان',
-    ),
-    'KE': Territory(
-      'KE',
-      'ڪينيا',
-    ),
-    'KG': Territory(
-      'KG',
-      'ڪرغستان',
-    ),
-    'KH': Territory(
-      'KH',
-      'ڪمبوڊيا',
-    ),
-    'KI': Territory(
-      'KI',
-      'ڪرباتي',
-    ),
-    'KM': Territory(
-      'KM',
-      'ڪوموروس',
-    ),
-    'KN': Territory(
-      'KN',
-      'سينٽ ڪٽس و نيوس',
-    ),
-    'KP': Territory(
-      'KP',
-      'اتر ڪوريا',
-    ),
-    'KR': Territory(
-      'KR',
-      'ڏکڻ ڪوريا',
-    ),
-    'KW': Territory(
-      'KW',
-      'ڪويت',
-    ),
-    'KY': Territory(
-      'KY',
-      'ڪي مين ٻيٽ',
-    ),
-    'KZ': Territory(
-      'KZ',
-      'قازقستان',
-    ),
-    'LA': Territory(
-      'LA',
-      'لائوس',
-    ),
-    'LB': Territory(
-      'LB',
-      'لبنان',
-    ),
-    'LC': Territory(
-      'LC',
-      'سينٽ لوسيا',
-    ),
-    'LI': Territory(
-      'LI',
-      'لچي ٽينسٽين',
-    ),
-    'LK': Territory(
-      'LK',
-      'سري لنڪا',
-    ),
-    'LR': Territory(
-      'LR',
-      'لائبیریا',
-    ),
-    'LS': Territory(
-      'LS',
-      'ليسوٿو',
-    ),
-    'LT': Territory(
-      'LT',
-      'لٿونيا',
-    ),
-    'LU': Territory(
-      'LU',
-      'لگزمبرگ',
-    ),
-    'LV': Territory(
-      'LV',
-      'لاتويا',
-    ),
-    'LY': Territory(
-      'LY',
-      'لبيا',
-    ),
-    'MA': Territory(
-      'MA',
-      'مراڪش',
-    ),
-    'MC': Territory(
-      'MC',
-      'موناڪو',
-    ),
-    'MD': Territory(
-      'MD',
-      'مالدووا',
-    ),
-    'ME': Territory(
-      'ME',
-      'مونٽي نيگرو',
-    ),
-    'MF': Territory(
-      'MF',
-      'سينٽ مارٽن',
-    ),
-    'MG': Territory(
-      'MG',
-      'مدگاسڪر',
-    ),
-    'MH': Territory(
-      'MH',
-      'مارشل ٻيٽ',
-    ),
-    'MK': Territory(
-      'MK',
-      'اتر مقدونيا',
-    ),
-    'ML': Territory(
-      'ML',
-      'مالي',
-    ),
-    'MM': Territory(
-      'MM',
-      'ميانمار (برما)',
-    ),
-    'MN': Territory(
-      'MN',
-      'منگوليا',
-    ),
-    'MO': Territory(
-      'MO',
-      'مڪائو SAR چين',
-      short: 'مڪائو',
-    ),
-    'MP': Territory(
-      'MP',
-      'اتريان ماريانا ٻيٽ',
-    ),
-    'MQ': Territory(
-      'MQ',
-      'مارتينڪ',
-    ),
-    'MR': Territory(
-      'MR',
-      'موريتانيا',
-    ),
-    'MS': Territory(
-      'MS',
-      'مونٽسراٽ',
-    ),
-    'MT': Territory(
-      'MT',
-      'مالٽا',
-    ),
-    'MU': Territory(
-      'MU',
-      'موريشس',
-    ),
-    'MV': Territory(
-      'MV',
-      'مالديپ',
-    ),
-    'MW': Territory(
-      'MW',
-      'مالاوي',
-    ),
-    'MX': Territory(
-      'MX',
-      'ميڪسيڪو',
-    ),
-    'MY': Territory(
-      'MY',
-      'ملائيشيا',
-    ),
-    'MZ': Territory(
-      'MZ',
-      'موزمبیق',
-    ),
-    'NA': Territory(
-      'NA',
-      'نيميبيا',
-    ),
-    'NC': Territory(
-      'NC',
-      'نیو ڪالیڊونیا',
-    ),
-    'NE': Territory(
-      'NE',
-      'نائيجر',
-    ),
-    'NF': Territory(
-      'NF',
-      'نورفوڪ ٻيٽ',
-    ),
-    'NG': Territory(
-      'NG',
-      'نائيجيريا',
-    ),
-    'NI': Territory(
-      'NI',
-      'نڪراگوا',
-    ),
-    'NL': Territory(
-      'NL',
-      'نيدرلينڊ',
-    ),
-    'NO': Territory(
-      'NO',
-      'ناروي',
-    ),
-    'NP': Territory(
-      'NP',
-      'نيپال',
-    ),
-    'NR': Territory(
-      'NR',
-      'نائورو',
-    ),
-    'NU': Territory(
-      'NU',
-      'نووي',
-    ),
-    'NZ': Territory(
-      'NZ',
-      'نيو زيلينڊ',
-      variant: 'نيو زيلينڊ',
-    ),
-    'OM': Territory(
-      'OM',
-      'عمان',
-    ),
-    'PA': Territory(
-      'PA',
-      'پناما',
-    ),
-    'PE': Territory(
-      'PE',
-      'پيرو',
-    ),
-    'PF': Territory(
-      'PF',
-      'فرانسيسي پولينيشيا',
-    ),
-    'PG': Territory(
-      'PG',
-      'پاپوا نیو گني',
-    ),
-    'PH': Territory(
-      'PH',
-      'فلپائن',
-    ),
-    'PK': Territory(
-      'PK',
-      'پاڪستان',
-    ),
-    'PL': Territory(
-      'PL',
-      'پولينڊ',
-    ),
-    'PM': Territory(
-      'PM',
-      'سینٽ پیئر و میڪوئیلون',
-    ),
-    'PN': Territory(
-      'PN',
-      'پٽڪئرن ٻيٽ',
-    ),
-    'PR': Territory(
-      'PR',
-      'پيوئرٽو ريڪو',
-    ),
-    'PS': Territory(
-      'PS',
-      'فلسطيني علائقا',
-      short: 'فلسطين',
-    ),
-    'PT': Territory(
-      'PT',
-      'پرتگال',
-    ),
-    'PW': Territory(
-      'PW',
-      'پلائو',
-    ),
-    'PY': Territory(
-      'PY',
-      'پيراگوءِ',
-    ),
-    'QA': Territory(
-      'QA',
-      'قطر',
-    ),
-    'QO': Territory(
-      'QO',
-      'بيروني سامونڊي',
-    ),
-    'RE': Territory(
-      'RE',
-      'ري يونين',
-    ),
-    'RO': Territory(
-      'RO',
-      'رومانيا',
-    ),
-    'RS': Territory(
-      'RS',
-      'سربيا',
-    ),
-    'RU': Territory(
-      'RU',
-      'روس',
-    ),
-    'RW': Territory(
-      'RW',
-      'روانڊا',
-    ),
-    'SA': Territory(
-      'SA',
-      'سعودي عرب',
-    ),
-    'SB': Territory(
-      'SB',
-      'سولومون ٻيٽَ',
-    ),
-    'SC': Territory(
-      'SC',
-      'شي شلز',
-    ),
-    'SD': Territory(
-      'SD',
-      'سوڊان',
-    ),
-    'SE': Territory(
-      'SE',
-      'سوئيڊن',
-    ),
-    'SG': Territory(
-      'SG',
-      'سنگاپور',
-    ),
-    'SH': Territory(
-      'SH',
-      'سينٽ ھيلينا',
-    ),
-    'SI': Territory(
-      'SI',
-      'سلوینیا',
-    ),
-    'SJ': Territory(
-      'SJ',
-      'سوالبارڊ ۽ جان ماین',
-    ),
-    'SK': Territory(
-      'SK',
-      'سلوواڪيا',
-    ),
-    'SL': Territory(
-      'SL',
-      'سيرا ليون',
-    ),
-    'SM': Territory(
-      'SM',
-      'سین مرینو',
-    ),
-    'SN': Territory(
-      'SN',
-      'سينيگال',
-    ),
-    'SO': Territory(
-      'SO',
-      'سوماليا',
-    ),
-    'SR': Territory(
-      'SR',
-      'سورينام',
-    ),
-    'SS': Territory(
-      'SS',
-      'ڏکڻ سوڊان',
-    ),
-    'ST': Territory(
-      'ST',
-      'سائو ٽوم ۽ پرنسپیي',
-    ),
-    'SV': Territory(
-      'SV',
-      'ال سلواڊور',
-    ),
-    'SX': Territory(
-      'SX',
-      'سنٽ مارٽن',
-    ),
-    'SY': Territory(
-      'SY',
-      'شام',
-    ),
-    'SZ': Territory(
-      'SZ',
-      'ايسواٽني',
-      variant: 'سوازيلينڊ',
-    ),
-    'TA': Territory(
-      'TA',
-      'ٽرسٽن دا ڪوها',
-    ),
-    'TC': Territory(
-      'TC',
-      'ترڪ ۽ ڪيڪوس ٻيٽ',
-    ),
-    'TD': Territory(
-      'TD',
-      'چاڊ',
-    ),
-    'TF': Territory(
-      'TF',
-      'فرانسيسي ڏاکڻي علائقا',
-    ),
-    'TG': Territory(
-      'TG',
-      'ٽوگو',
-    ),
-    'TH': Territory(
-      'TH',
-      'ٿائيليند',
-    ),
-    'TJ': Territory(
-      'TJ',
-      'تاجڪستان',
-    ),
-    'TK': Territory(
-      'TK',
-      'ٽوڪلائو',
-    ),
-    'TL': Territory(
-      'TL',
-      'تيمور ليستي',
-      variant: 'اوڀر تيمور',
-    ),
-    'TM': Territory(
-      'TM',
-      'ترڪمانستان',
-    ),
-    'TN': Territory(
-      'TN',
-      'تيونيسيا',
-    ),
-    'TO': Territory(
-      'TO',
-      'ٽونگا',
-    ),
-    'TR': Territory(
-      'TR',
-      'ترڪييي',
-      variant: 'ترڪييي',
-    ),
-    'TT': Territory(
-      'TT',
-      'ٽريني ڊيڊ ۽ ٽوباگو ٻيٽ',
-    ),
-    'TV': Territory(
-      'TV',
-      'توالو',
-    ),
-    'TW': Territory(
-      'TW',
-      'تائیوان',
-    ),
-    'TZ': Territory(
-      'TZ',
-      'تنزانيا',
-    ),
-    'UA': Territory(
-      'UA',
-      'يوڪرين',
-    ),
-    'UG': Territory(
-      'UG',
-      'يوگنڊا',
-    ),
-    'UM': Territory(
-      'UM',
-      'آمريڪي خارجي ٻيٽ',
-    ),
-    'UN': Territory(
-      'UN',
-      'گڏيل قومون',
-    ),
-    'US': Territory(
-      'US',
-      'آمريڪا جون گڏيل رياستون',
-      short: 'يوايس',
-    ),
-    'UY': Territory(
-      'UY',
-      'يوروگوءِ',
-    ),
-    'UZ': Territory(
-      'UZ',
-      'ازبڪستان',
-    ),
-    'VA': Territory(
-      'VA',
-      'ويٽڪين سٽي',
-    ),
-    'VC': Territory(
-      'VC',
-      'سینٽ ونسنت ۽ گریناڊینز',
-    ),
-    'VE': Territory(
-      'VE',
-      'وينزويلا',
-    ),
-    'VG': Territory(
-      'VG',
-      'برطانوي ورجن ٻيٽ',
-    ),
-    'VI': Territory(
-      'VI',
-      'آمريڪي ورجن ٻيٽ',
-    ),
-    'VN': Territory(
-      'VN',
-      'ويتنام',
-    ),
-    'VU': Territory(
-      'VU',
-      'وينيٽيو',
-    ),
-    'WF': Territory(
-      'WF',
-      'والس ۽ فتونا',
-    ),
-    'WS': Territory(
-      'WS',
-      'ساموا',
-    ),
-    'XA': Territory(
-      'XA',
-      'سوڊو-لهجا',
-    ),
-    'XB': Territory(
-      'XB',
-      'سوڊو-بي ڊي',
-    ),
-    'XK': Territory(
-      'XK',
-      'ڪوسووو',
-    ),
-    'YE': Territory(
-      'YE',
-      'يمن',
-    ),
-    'YT': Territory(
-      'YT',
-      'مياتي',
-    ),
-    'ZA': Territory(
-      'ZA',
-      'ڏکڻ آفريقا',
-    ),
-    'ZM': Territory(
-      'ZM',
-      'زيمبيا',
-    ),
-    'ZW': Territory(
-      'ZW',
-      'زمبابوي',
-    ),
-  }, (key) => key.toLowerCase());
+  final currencies = const {
+    'AED': _aed,
+    'AFN': _afn,
+    'ALL': _all,
+    'AMD': _amd,
+    'ANG': _ang,
+    'AOA': _aoa,
+    'ARS': _ars,
+    'AUD': _aud,
+    'AWG': _awg,
+    'AZN': _azn,
+    'BAM': _bam,
+    'BBD': _bbd,
+    'BDT': _bdt,
+    'BGN': _bgn,
+    'BHD': _bhd,
+    'BIF': _bif,
+    'BMD': _bmd,
+    'BND': _bnd,
+    'BOB': _bob,
+    'BRL': _brl,
+    'BSD': _bsd,
+    'BTN': _btn,
+    'BWP': _bwp,
+    'BYN': _byn,
+    'BZD': _bzd,
+    'CAD': _cad,
+    'CDF': _cdf,
+    'CHF': _chf,
+    'CLP': _clp,
+    'CNH': _cnh,
+    'CNY': _cny,
+    'COP': _cop,
+    'CRC': _crc,
+    'CUC': _cuc,
+    'CUP': _cup,
+    'CVE': _cve,
+    'CZK': _czk,
+    'DJF': _djf,
+    'DKK': _dkk,
+    'DOP': _dop,
+    'DZD': _dzd,
+    'EGP': _egp,
+    'ERN': _ern,
+    'ESP': _esp,
+    'ETB': _etb,
+    'EUR': _eur,
+    'FJD': _fjd,
+    'FKP': _fkp,
+    'GBP': _gbp,
+    'GEL': _gel,
+    'GHS': _ghs,
+    'GIP': _gip,
+    'GMD': _gmd,
+    'GNF': _gnf,
+    'GTQ': _gtq,
+    'GYD': _gyd,
+    'HKD': _hkd,
+    'HNL': _hnl,
+    'HRK': _hrk,
+    'HTG': _htg,
+    'HUF': _huf,
+    'IDR': _idr,
+    'ILS': _ils,
+    'INR': _inr,
+    'IQD': _iqd,
+    'IRR': _irr,
+    'ISK': _isk,
+    'JMD': _jmd,
+    'JOD': _jod,
+    'JPY': _jpy,
+    'KES': _kes,
+    'KGS': _kgs,
+    'KHR': _khr,
+    'KMF': _kmf,
+    'KPW': _kpw,
+    'KRW': _krw,
+    'KWD': _kwd,
+    'KYD': _kyd,
+    'KZT': _kzt,
+    'LAK': _lak,
+    'LBP': _lbp,
+    'LKR': _lkr,
+    'LRD': _lrd,
+    'LSL': _lsl,
+    'LTL': _ltl,
+    'LVL': _lvl,
+    'LYD': _lyd,
+    'MAD': _mad,
+    'MDL': _mdl,
+    'MGA': _mga,
+    'MKD': _mkd,
+    'MMK': _mmk,
+    'MNT': _mnt,
+    'MOP': _mop,
+    'MRO': _mro,
+    'MRU': _mru,
+    'MUR': _mur,
+    'MVR': _mvr,
+    'MWK': _mwk,
+    'MXN': _mxn,
+    'MYR': _myr,
+    'MZN': _mzn,
+    'NAD': _nad,
+    'NGN': _ngn,
+    'NIO': _nio,
+    'NOK': _nok,
+    'NPR': _npr,
+    'NZD': _nzd,
+    'OMR': _omr,
+    'PAB': _pab,
+    'PEN': _pen,
+    'PGK': _pgk,
+    'PHP': _php,
+    'PKR': _pkr,
+    'PLN': _pln,
+    'PYG': _pyg,
+    'QAR': _qar,
+    'RON': _ron,
+    'RSD': _rsd,
+    'RUB': _rub,
+    'RWF': _rwf,
+    'SAR': _sar,
+    'SBD': _sbd,
+    'SCR': _scr,
+    'SDG': _sdg,
+    'SEK': _sek,
+    'SGD': _sgd,
+    'SHP': _shp,
+    'SLE': _sle,
+    'SLL': _sll,
+    'SOS': _sos,
+    'SRD': _srd,
+    'SSP': _ssp,
+    'STD': _std,
+    'STN': _stn,
+    'SYP': _syp,
+    'SZL': _szl,
+    'THB': _thb,
+    'TJS': _tjs,
+    'TMT': _tmt,
+    'TND': _tnd,
+    'TOP': _top,
+    'TRY': _$try,
+    'TTD': _ttd,
+    'TWD': _twd,
+    'TZS': _tzs,
+    'UAH': _uah,
+    'UGX': _ugx,
+    'USD': _usd,
+    'UYU': _uyu,
+    'UZS': _uzs,
+    'VEF': _vef,
+    'VES': _ves,
+    'VND': _vnd,
+    'VUV': _vuv,
+    'WST': _wst,
+    'XAF': _xaf,
+    'XCD': _xcd,
+    'XCG': _xcg,
+    'XOF': _xof,
+    'XPF': _xpf,
+    'XXX': _xxx,
+    'YER': _yer,
+    'ZAR': _zar,
+    'ZMW': _zmw,
+  };
 }
 
 class TimeZonesSd extends TimeZones {
-  TimeZonesSd._(Territories territories)
-      : super(_locale, territories,
-            hourFormat: '+HH:mm;-HH:mm',
+  const TimeZonesSd._(super.cld)
+      : super(
             gmtFormat: 'GMT{0}',
             gmtZeroFormat: 'GMT',
             regionFormat: '{0} وقت',
             regionFormatDaylight: '{0} ڏينهن جو وقت',
             regionFormatStandard: '{0} معياري وقت',
-            fallbackFormat: '{1} ({0})');
+            fallbackFormat: '{1} ({0})',
+            positiveH: '+HH',
+            positiveHM: '+HH:mm',
+            positiveHMS: '+HH:mm:ss',
+            negativeH: '-HH',
+            negativeHM: '-HH:mm',
+            negativeHMS: '-HH:mm:ss');
 
   @override
-  final timeZoneNames = CanonicalizedMap<String, String, TimeZoneNames>.from({
-    'America/Adak': TimeZoneNames(
-      exemplarCity: 'ادڪ',
-    ),
-    'America/Anchorage': TimeZoneNames(
-      exemplarCity: 'اينڪريج',
-    ),
-    'America/Anguilla': TimeZoneNames(
-      exemplarCity: 'انگويلا',
-    ),
-    'America/Antigua': TimeZoneNames(
-      exemplarCity: 'اينٽيگوا',
-    ),
-    'America/Araguaina': TimeZoneNames(
-      exemplarCity: 'اراگویانا',
-    ),
-    'America/Argentina/Rio_Gallegos': TimeZoneNames(
-      exemplarCity: 'ریو گالیگوس',
-    ),
-    'America/Argentina/San_Juan': TimeZoneNames(
-      exemplarCity: 'سان جوآن',
-    ),
-    'America/Argentina/Ushuaia': TimeZoneNames(
-      exemplarCity: 'اوشوآئیا',
-    ),
-    'America/Argentina/La_Rioja': TimeZoneNames(
-      exemplarCity: 'لا ریئوجا',
-    ),
-    'America/Argentina/San_Luis': TimeZoneNames(
-      exemplarCity: 'سان لوئیس',
-    ),
-    'America/Argentina/Salta': TimeZoneNames(
-      exemplarCity: 'سالٽا',
-    ),
-    'America/Argentina/Tucuman': TimeZoneNames(
-      exemplarCity: 'ٽوڪومين',
-    ),
-    'America/Aruba': TimeZoneNames(
-      exemplarCity: 'اروبا',
-    ),
-    'America/Asuncion': TimeZoneNames(
-      exemplarCity: 'اسانسیون',
-    ),
-    'America/Bahia': TimeZoneNames(
-      exemplarCity: 'باحيه',
-    ),
-    'America/Bahia_Banderas': TimeZoneNames(
-      exemplarCity: 'باهیا بیندراس',
-    ),
-    'America/Barbados': TimeZoneNames(
-      exemplarCity: 'بارباڊوس',
-    ),
-    'America/Belem': TimeZoneNames(
-      exemplarCity: 'بیلم',
-    ),
-    'America/Belize': TimeZoneNames(
-      exemplarCity: 'بیلیز',
-    ),
-    'America/Blanc-Sablon': TimeZoneNames(
-      exemplarCity: 'بلانڪ سبلون',
-    ),
-    'America/Boa_Vista': TimeZoneNames(
-      exemplarCity: 'بائو وستا',
-    ),
-    'America/Bogota': TimeZoneNames(
-      exemplarCity: 'بگوٽا',
-    ),
-    'America/Boise': TimeZoneNames(
-      exemplarCity: 'بوئس',
-    ),
-    'America/Buenos_Aires': TimeZoneNames(
-      exemplarCity: 'بيونوس ايئرس',
-    ),
-    'America/Cambridge_Bay': TimeZoneNames(
-      exemplarCity: 'ڪيمبرج بي',
-    ),
-    'America/Campo_Grande': TimeZoneNames(
-      exemplarCity: 'ڪيمپو گرانڊي',
-    ),
-    'America/Cancun': TimeZoneNames(
-      exemplarCity: 'ڪانڪون',
-    ),
-    'America/Caracas': TimeZoneNames(
-      exemplarCity: 'ڪراڪس',
-    ),
-    'America/Catamarca': TimeZoneNames(
-      exemplarCity: 'ڪيٽا مارڪا',
-    ),
-    'America/Cayenne': TimeZoneNames(
-      exemplarCity: 'ڪائين',
-    ),
-    'America/Cayman': TimeZoneNames(
-      exemplarCity: 'سيامن',
-    ),
-    'America/Chicago': TimeZoneNames(
-      exemplarCity: 'شڪاگو',
-    ),
-    'America/Chihuahua': TimeZoneNames(
-      exemplarCity: 'چي هوا هوا',
-    ),
-    'America/Ciudad_Juarez': TimeZoneNames(
-      exemplarCity: 'سوڊيڊ جوريز',
-    ),
-    'America/Coral_Harbour': TimeZoneNames(
-      exemplarCity: 'اٽيڪوڪن',
-    ),
-    'America/Cordoba': TimeZoneNames(
-      exemplarCity: 'ڪارڊوبا',
-    ),
-    'America/Costa_Rica': TimeZoneNames(
-      exemplarCity: 'ڪوسٽا ريڪا',
-    ),
-    'America/Creston': TimeZoneNames(
-      exemplarCity: 'ڪريسٽن',
-    ),
-    'America/Cuiaba': TimeZoneNames(
-      exemplarCity: 'ڪوئيابا',
-    ),
-    'America/Curacao': TimeZoneNames(
-      exemplarCity: 'ڪيوراسائو',
-    ),
-    'America/Danmarkshavn': TimeZoneNames(
-      exemplarCity: 'ڊينمارڪ شون',
-    ),
-    'America/Dawson': TimeZoneNames(
-      exemplarCity: 'ڊاوسن',
-    ),
-    'America/Dawson_Creek': TimeZoneNames(
-      exemplarCity: 'ڊاوسن ڪريڪ',
-    ),
-    'America/Denver': TimeZoneNames(
-      exemplarCity: 'ڊينور',
-    ),
-    'America/Detroit': TimeZoneNames(
-      exemplarCity: 'ڊيٽرائيٽ',
-    ),
-    'America/Dominica': TimeZoneNames(
-      exemplarCity: 'ڊومينيڪا',
-    ),
-    'America/Edmonton': TimeZoneNames(
-      exemplarCity: 'ايڊمونٽن',
-    ),
-    'America/Eirunepe': TimeZoneNames(
-      exemplarCity: 'ايرونيپ',
-    ),
-    'America/El_Salvador': TimeZoneNames(
-      exemplarCity: 'ايل سلواڊور',
-    ),
-    'America/Fort_Nelson': TimeZoneNames(
-      exemplarCity: 'فورٽ نيلسن',
-    ),
-    'America/Fortaleza': TimeZoneNames(
-      exemplarCity: 'فورٽاليزا',
-    ),
-    'America/Glace_Bay': TimeZoneNames(
-      exemplarCity: 'گليس بي',
-    ),
-    'America/Godthab': TimeZoneNames(
-      exemplarCity: 'نيوڪ',
-    ),
-    'America/Goose_Bay': TimeZoneNames(
-      exemplarCity: 'گوز بي',
-    ),
-    'America/Grand_Turk': TimeZoneNames(
-      exemplarCity: 'گرانڊ ترڪ',
-    ),
-    'America/Grenada': TimeZoneNames(
-      exemplarCity: 'گريناڊا',
-    ),
-    'America/Guadeloupe': TimeZoneNames(
-      exemplarCity: 'گواڊيلوپ',
-    ),
-    'America/Guatemala': TimeZoneNames(
-      exemplarCity: 'گوئٽي مالا',
-    ),
-    'America/Guayaquil': TimeZoneNames(
-      exemplarCity: 'گواياڪيل',
-    ),
-    'America/Guyana': TimeZoneNames(
-      exemplarCity: 'گيانا',
-    ),
-    'America/Halifax': TimeZoneNames(
-      exemplarCity: 'هيلي فيڪس',
-    ),
-    'America/Havana': TimeZoneNames(
-      exemplarCity: 'هوانا',
-    ),
-    'America/Hermosillo': TimeZoneNames(
-      exemplarCity: 'هرموسلو',
-    ),
-    'America/Indiana/Vincennes': TimeZoneNames(
-      exemplarCity: 'ونسینیز، انڊیانا',
-    ),
-    'America/Indiana/Petersburg': TimeZoneNames(
-      exemplarCity: 'پيٽرسبرگ، انڊيانا',
-    ),
-    'America/Indiana/Tell_City': TimeZoneNames(
-      exemplarCity: 'ٽيل سٽي، انڊيانا',
-    ),
-    'America/Indiana/Knox': TimeZoneNames(
-      exemplarCity: 'ناڪس، انڊيانا',
-    ),
-    'America/Indiana/Winamac': TimeZoneNames(
-      exemplarCity: 'ويناميڪ، انڊيانا',
-    ),
-    'America/Indiana/Marengo': TimeZoneNames(
-      exemplarCity: 'مرينگو، انڊيانا',
-    ),
-    'America/Indiana/Vevay': TimeZoneNames(
-      exemplarCity: 'ويوي، انڊيانا',
-    ),
-    'America/Indianapolis': TimeZoneNames(
-      exemplarCity: 'انڊيانا پولس',
-    ),
-    'America/Inuvik': TimeZoneNames(
-      exemplarCity: 'انووڪ',
-    ),
-    'America/Iqaluit': TimeZoneNames(
-      exemplarCity: 'اڪالوئٽ',
-    ),
-    'America/Jamaica': TimeZoneNames(
-      exemplarCity: 'جمائڪا',
-    ),
-    'America/Jujuy': TimeZoneNames(
-      exemplarCity: 'ڪوڪوئي',
-    ),
-    'America/Juneau': TimeZoneNames(
-      exemplarCity: 'جونئو',
-    ),
-    'America/Kentucky/Monticello': TimeZoneNames(
-      exemplarCity: 'مونٽيسيلو، ڪينٽڪي',
-    ),
-    'America/Kralendijk': TimeZoneNames(
-      exemplarCity: 'ڪرالينڊڪ',
-    ),
-    'America/La_Paz': TimeZoneNames(
-      exemplarCity: 'لا پز',
-    ),
-    'America/Lima': TimeZoneNames(
-      exemplarCity: 'ليما',
-    ),
-    'America/Los_Angeles': TimeZoneNames(
-      exemplarCity: 'لاس اينجلس',
-    ),
-    'America/Louisville': TimeZoneNames(
-      exemplarCity: 'لوئي ويل',
-    ),
-    'America/Lower_Princes': TimeZoneNames(
-      exemplarCity: 'لوئر پرنسز ڪوارٽر',
-    ),
-    'America/Maceio': TimeZoneNames(
-      exemplarCity: 'میسیئو',
-    ),
-    'America/Managua': TimeZoneNames(
-      exemplarCity: 'ماناگوا',
-    ),
-    'America/Manaus': TimeZoneNames(
-      exemplarCity: 'منائوس',
-    ),
-    'America/Marigot': TimeZoneNames(
-      exemplarCity: 'ميريگوٽ',
-    ),
-    'America/Martinique': TimeZoneNames(
-      exemplarCity: 'مارٽينڪ',
-    ),
-    'America/Matamoros': TimeZoneNames(
-      exemplarCity: 'متاموروس',
-    ),
-    'America/Mazatlan': TimeZoneNames(
-      exemplarCity: 'مزاٽلان',
-    ),
-    'America/Mendoza': TimeZoneNames(
-      exemplarCity: 'مينڊوزا',
-    ),
-    'America/Menominee': TimeZoneNames(
-      exemplarCity: 'مینومیني',
-    ),
-    'America/Merida': TimeZoneNames(
-      exemplarCity: 'ميريڊا',
-    ),
-    'America/Metlakatla': TimeZoneNames(
-      exemplarCity: 'ميٽلاڪاٽالا',
-    ),
-    'America/Mexico_City': TimeZoneNames(
-      exemplarCity: 'ميڪسيڪو شهر',
-    ),
-    'America/Miquelon': TimeZoneNames(
-      exemplarCity: 'میڪوئیلون',
-    ),
-    'America/Moncton': TimeZoneNames(
-      exemplarCity: 'مانڪٽن',
-    ),
-    'America/Monterrey': TimeZoneNames(
-      exemplarCity: 'مانٽيري',
-    ),
-    'America/Montevideo': TimeZoneNames(
-      exemplarCity: 'مونٽي ويڊيو',
-    ),
-    'America/Montserrat': TimeZoneNames(
-      exemplarCity: 'مانٽسريٽ',
-    ),
-    'America/Nassau': TimeZoneNames(
-      exemplarCity: 'ناسائو',
-    ),
-    'America/New_York': TimeZoneNames(
-      exemplarCity: 'نيويارڪ',
-    ),
-    'America/Nome': TimeZoneNames(
-      exemplarCity: 'نوم',
-    ),
-    'America/Noronha': TimeZoneNames(
-      exemplarCity: 'نورانهيا',
-    ),
-    'America/North_Dakota/Beulah': TimeZoneNames(
-      exemplarCity: 'بيولاه، اتر ڊڪوٽا',
-    ),
-    'America/North_Dakota/New_Salem': TimeZoneNames(
-      exemplarCity: 'نيو سيلم، اتر ڊڪوٽا',
-    ),
-    'America/North_Dakota/Center': TimeZoneNames(
-      exemplarCity: 'سينٽر، اتر ڊڪوٽا',
-    ),
-    'America/Ojinaga': TimeZoneNames(
-      exemplarCity: 'اوڪيناگا',
-    ),
-    'America/Panama': TimeZoneNames(
-      exemplarCity: 'پناما',
-    ),
-    'America/Paramaribo': TimeZoneNames(
-      exemplarCity: 'پيراميريبو',
-    ),
-    'America/Phoenix': TimeZoneNames(
-      exemplarCity: 'فونيڪس',
-    ),
-    'America/Port-au-Prince': TimeZoneNames(
-      exemplarCity: 'پورٽ او پرنس',
-    ),
-    'America/Port_of_Spain': TimeZoneNames(
-      exemplarCity: 'اسپين جو ٻيٽ',
-    ),
-    'America/Porto_Velho': TimeZoneNames(
-      exemplarCity: 'پورٽو ويلهو',
-    ),
-    'America/Puerto_Rico': TimeZoneNames(
-      exemplarCity: 'پورٽو ريڪو',
-    ),
-    'America/Punta_Arenas': TimeZoneNames(
-      exemplarCity: 'پنٽا اريناس',
-    ),
-    'America/Rankin_Inlet': TimeZoneNames(
-      exemplarCity: 'رينڪن انليٽ',
-    ),
-    'America/Recife': TimeZoneNames(
-      exemplarCity: 'هيسيفي',
-    ),
-    'America/Regina': TimeZoneNames(
-      exemplarCity: 'ریجینا',
-    ),
-    'America/Resolute': TimeZoneNames(
-      exemplarCity: 'ريزوليوٽ',
-    ),
-    'America/Rio_Branco': TimeZoneNames(
-      exemplarCity: 'ريو برانڪو',
-    ),
-    'America/Santarem': TimeZoneNames(
-      exemplarCity: 'سنٽاريم',
-    ),
-    'America/Santiago': TimeZoneNames(
-      exemplarCity: 'سينٽياگو',
-    ),
-    'America/Santo_Domingo': TimeZoneNames(
-      exemplarCity: 'سينٽو ڊومينگو',
-    ),
-    'America/Sao_Paulo': TimeZoneNames(
-      exemplarCity: 'سائو پولو',
-    ),
-    'America/Scoresbysund': TimeZoneNames(
-      exemplarCity: 'اٽوڪورٽومائٽ',
-    ),
-    'America/Sitka': TimeZoneNames(
-      exemplarCity: 'سٽڪا',
-    ),
-    'America/St_Barthelemy': TimeZoneNames(
-      exemplarCity: 'سينٽ برٿليمي',
-    ),
-    'America/St_Johns': TimeZoneNames(
-      exemplarCity: 'سينٽ جانز',
-    ),
-    'America/St_Kitts': TimeZoneNames(
-      exemplarCity: 'سينٽ ڪٽس',
-    ),
-    'America/St_Lucia': TimeZoneNames(
-      exemplarCity: 'سينٽ لوسيا',
-    ),
-    'America/St_Thomas': TimeZoneNames(
-      exemplarCity: 'سينٽ ٿامس',
-    ),
-    'America/St_Vincent': TimeZoneNames(
-      exemplarCity: 'سينٽ ونسينٽ',
-    ),
-    'America/Swift_Current': TimeZoneNames(
-      exemplarCity: 'سوئفٽ ڪرنٽ',
-    ),
-    'America/Tegucigalpa': TimeZoneNames(
-      exemplarCity: 'ٽيگوسيگلپا',
-    ),
-    'America/Thule': TimeZoneNames(
-      exemplarCity: 'ٿولي',
-    ),
-    'America/Tijuana': TimeZoneNames(
-      exemplarCity: 'تيجوانا',
-    ),
-    'America/Toronto': TimeZoneNames(
-      exemplarCity: 'ٽورنٽو',
-    ),
-    'America/Tortola': TimeZoneNames(
-      exemplarCity: 'ٽورٽولا',
-    ),
-    'America/Vancouver': TimeZoneNames(
-      exemplarCity: 'وينڪوور',
-    ),
-    'America/Whitehorse': TimeZoneNames(
-      exemplarCity: 'وائيٽ هائوس',
-    ),
-    'America/Winnipeg': TimeZoneNames(
-      exemplarCity: 'وني پيگ',
-    ),
-    'America/Yakutat': TimeZoneNames(
-      exemplarCity: 'ياڪوتات',
-    ),
-    'Atlantic/Azores': TimeZoneNames(
-      exemplarCity: 'ازورز',
-    ),
-    'Atlantic/Bermuda': TimeZoneNames(
-      exemplarCity: 'برمودا',
-    ),
-    'Atlantic/Canary': TimeZoneNames(
-      exemplarCity: 'ڪينري',
-    ),
-    'Atlantic/Cape_Verde': TimeZoneNames(
-      exemplarCity: 'ڪيپ ورڊي',
-    ),
-    'Atlantic/Faeroe': TimeZoneNames(
-      exemplarCity: 'فيرو',
-    ),
-    'Atlantic/Madeira': TimeZoneNames(
-      exemplarCity: 'ماڊيرا',
-    ),
-    'Atlantic/Reykjavik': TimeZoneNames(
-      exemplarCity: 'ريڪيوڪ',
-    ),
-    'Atlantic/South_Georgia': TimeZoneNames(
-      exemplarCity: 'ڏکڻ جورجيا',
-    ),
-    'Atlantic/St_Helena': TimeZoneNames(
-      exemplarCity: 'سينٽ هيلينا',
-    ),
-    'Atlantic/Stanley': TimeZoneNames(
-      exemplarCity: 'اسٽينلي',
-    ),
-    'Europe/Amsterdam': TimeZoneNames(
-      exemplarCity: 'ايمسٽرڊيم',
-    ),
-    'Europe/Andorra': TimeZoneNames(
-      exemplarCity: 'اندورا',
-    ),
-    'Europe/Astrakhan': TimeZoneNames(
-      exemplarCity: 'آستراخان',
-    ),
-    'Europe/Athens': TimeZoneNames(
-      exemplarCity: 'ايٿنز',
-    ),
-    'Europe/Belgrade': TimeZoneNames(
-      exemplarCity: 'بلغراد',
-    ),
-    'Europe/Berlin': TimeZoneNames(
-      exemplarCity: 'برلن',
-    ),
-    'Europe/Bratislava': TimeZoneNames(
-      exemplarCity: 'براتيسلوا',
-    ),
-    'Europe/Brussels': TimeZoneNames(
-      exemplarCity: 'برسلز',
-    ),
-    'Europe/Bucharest': TimeZoneNames(
-      exemplarCity: 'بخاريسٽ',
-    ),
-    'Europe/Budapest': TimeZoneNames(
-      exemplarCity: 'بداپيسٽ',
-    ),
-    'Europe/Busingen': TimeZoneNames(
-      exemplarCity: 'بزيجين',
-    ),
-    'Europe/Chisinau': TimeZoneNames(
-      exemplarCity: 'چسينائو',
-    ),
-    'Europe/Copenhagen': TimeZoneNames(
-      exemplarCity: 'ڪوپن هيگن',
-    ),
+  final timeZoneNames = const {
+    'America/Adak': TimeZoneNames(exemplarCity: 'ادڪ'),
+    'America/Anchorage': TimeZoneNames(exemplarCity: 'اينڪريج'),
+    'America/Anguilla': TimeZoneNames(exemplarCity: 'انگويلا'),
+    'America/Antigua': TimeZoneNames(exemplarCity: 'اينٽيگوا'),
+    'America/Araguaina': TimeZoneNames(exemplarCity: 'اراگویانا'),
+    'America/Argentina/Rio_Gallegos':
+        TimeZoneNames(exemplarCity: 'ریو گالیگوس'),
+    'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'سان جوآن'),
+    'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'اوشوآئیا'),
+    'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'لا ریئوجا'),
+    'America/Argentina/San_Luis': TimeZoneNames(exemplarCity: 'سان لوئیس'),
+    'America/Argentina/Salta': TimeZoneNames(exemplarCity: 'سالٽا'),
+    'America/Argentina/Tucuman': TimeZoneNames(exemplarCity: 'ٽوڪومين'),
+    'America/Aruba': TimeZoneNames(exemplarCity: 'اروبا'),
+    'America/Asuncion': TimeZoneNames(exemplarCity: 'اسانسیون'),
+    'America/Bahia': TimeZoneNames(exemplarCity: 'باحيه'),
+    'America/Bahia_Banderas': TimeZoneNames(exemplarCity: 'باهیا بیندراس'),
+    'America/Barbados': TimeZoneNames(exemplarCity: 'بارباڊوس'),
+    'America/Belem': TimeZoneNames(exemplarCity: 'بیلم'),
+    'America/Belize': TimeZoneNames(exemplarCity: 'بیلیز'),
+    'America/Blanc-Sablon': TimeZoneNames(exemplarCity: 'بلانڪ سبلون'),
+    'America/Boa_Vista': TimeZoneNames(exemplarCity: 'بائو وستا'),
+    'America/Bogota': TimeZoneNames(exemplarCity: 'بگوٽا'),
+    'America/Boise': TimeZoneNames(exemplarCity: 'بوئس'),
+    'America/Buenos_Aires': TimeZoneNames(exemplarCity: 'بيونوس ايئرس'),
+    'America/Cambridge_Bay': TimeZoneNames(exemplarCity: 'ڪيمبرج بي'),
+    'America/Campo_Grande': TimeZoneNames(exemplarCity: 'ڪيمپو گرانڊي'),
+    'America/Cancun': TimeZoneNames(exemplarCity: 'ڪانڪون'),
+    'America/Caracas': TimeZoneNames(exemplarCity: 'ڪراڪس'),
+    'America/Catamarca': TimeZoneNames(exemplarCity: 'ڪيٽا مارڪا'),
+    'America/Cayenne': TimeZoneNames(exemplarCity: 'ڪائين'),
+    'America/Cayman': TimeZoneNames(exemplarCity: 'سيامن'),
+    'America/Chicago': TimeZoneNames(exemplarCity: 'شڪاگو'),
+    'America/Chihuahua': TimeZoneNames(exemplarCity: 'چي هوا هوا'),
+    'America/Ciudad_Juarez': TimeZoneNames(exemplarCity: 'سوڊيڊ جوريز'),
+    'America/Coral_Harbour': TimeZoneNames(exemplarCity: 'اٽيڪوڪن'),
+    'America/Cordoba': TimeZoneNames(exemplarCity: 'ڪارڊوبا'),
+    'America/Costa_Rica': TimeZoneNames(exemplarCity: 'ڪوسٽا ريڪا'),
+    'America/Creston': TimeZoneNames(exemplarCity: 'ڪريسٽن'),
+    'America/Cuiaba': TimeZoneNames(exemplarCity: 'ڪوئيابا'),
+    'America/Curacao': TimeZoneNames(exemplarCity: 'ڪيوراسائو'),
+    'America/Danmarkshavn': TimeZoneNames(exemplarCity: 'ڊينمارڪ شون'),
+    'America/Dawson': TimeZoneNames(exemplarCity: 'ڊاوسن'),
+    'America/Dawson_Creek': TimeZoneNames(exemplarCity: 'ڊاوسن ڪريڪ'),
+    'America/Denver': TimeZoneNames(exemplarCity: 'ڊينور'),
+    'America/Detroit': TimeZoneNames(exemplarCity: 'ڊيٽرائيٽ'),
+    'America/Dominica': TimeZoneNames(exemplarCity: 'ڊومينيڪا'),
+    'America/Edmonton': TimeZoneNames(exemplarCity: 'ايڊمونٽن'),
+    'America/Eirunepe': TimeZoneNames(exemplarCity: 'ايرونيپ'),
+    'America/El_Salvador': TimeZoneNames(exemplarCity: 'ايل سلواڊور'),
+    'America/Fort_Nelson': TimeZoneNames(exemplarCity: 'فورٽ نيلسن'),
+    'America/Fortaleza': TimeZoneNames(exemplarCity: 'فورٽاليزا'),
+    'America/Glace_Bay': TimeZoneNames(exemplarCity: 'گليس بي'),
+    'America/Godthab': TimeZoneNames(exemplarCity: 'نيوڪ'),
+    'America/Goose_Bay': TimeZoneNames(exemplarCity: 'گوز بي'),
+    'America/Grand_Turk': TimeZoneNames(exemplarCity: 'گرانڊ ترڪ'),
+    'America/Grenada': TimeZoneNames(exemplarCity: 'گريناڊا'),
+    'America/Guadeloupe': TimeZoneNames(exemplarCity: 'گواڊيلوپ'),
+    'America/Guatemala': TimeZoneNames(exemplarCity: 'گوئٽي مالا'),
+    'America/Guayaquil': TimeZoneNames(exemplarCity: 'گواياڪيل'),
+    'America/Guyana': TimeZoneNames(exemplarCity: 'گيانا'),
+    'America/Halifax': TimeZoneNames(exemplarCity: 'هيلي فيڪس'),
+    'America/Havana': TimeZoneNames(exemplarCity: 'هوانا'),
+    'America/Hermosillo': TimeZoneNames(exemplarCity: 'هرموسلو'),
+    'America/Indiana/Vincennes':
+        TimeZoneNames(exemplarCity: 'ونسینیز، انڊیانا'),
+    'America/Indiana/Petersburg':
+        TimeZoneNames(exemplarCity: 'پيٽرسبرگ، انڊيانا'),
+    'America/Indiana/Tell_City':
+        TimeZoneNames(exemplarCity: 'ٽيل سٽي، انڊيانا'),
+    'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'ناڪس، انڊيانا'),
+    'America/Indiana/Winamac': TimeZoneNames(exemplarCity: 'ويناميڪ، انڊيانا'),
+    'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'مرينگو، انڊيانا'),
+    'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'ويوي، انڊيانا'),
+    'America/Indianapolis': TimeZoneNames(exemplarCity: 'انڊيانا پولس'),
+    'America/Inuvik': TimeZoneNames(exemplarCity: 'انووڪ'),
+    'America/Iqaluit': TimeZoneNames(exemplarCity: 'اڪالوئٽ'),
+    'America/Jamaica': TimeZoneNames(exemplarCity: 'جمائڪا'),
+    'America/Jujuy': TimeZoneNames(exemplarCity: 'ڪوڪوئي'),
+    'America/Juneau': TimeZoneNames(exemplarCity: 'جونئو'),
+    'America/Kentucky/Monticello':
+        TimeZoneNames(exemplarCity: 'مونٽيسيلو، ڪينٽڪي'),
+    'America/Kralendijk': TimeZoneNames(exemplarCity: 'ڪرالينڊڪ'),
+    'America/La_Paz': TimeZoneNames(exemplarCity: 'لا پز'),
+    'America/Lima': TimeZoneNames(exemplarCity: 'ليما'),
+    'America/Los_Angeles': TimeZoneNames(exemplarCity: 'لاس اينجلس'),
+    'America/Louisville': TimeZoneNames(exemplarCity: 'لوئي ويل'),
+    'America/Lower_Princes': TimeZoneNames(exemplarCity: 'لوئر پرنسز ڪوارٽر'),
+    'America/Maceio': TimeZoneNames(exemplarCity: 'میسیئو'),
+    'America/Managua': TimeZoneNames(exemplarCity: 'ماناگوا'),
+    'America/Manaus': TimeZoneNames(exemplarCity: 'منائوس'),
+    'America/Marigot': TimeZoneNames(exemplarCity: 'ميريگوٽ'),
+    'America/Martinique': TimeZoneNames(exemplarCity: 'مارٽينڪ'),
+    'America/Matamoros': TimeZoneNames(exemplarCity: 'متاموروس'),
+    'America/Mazatlan': TimeZoneNames(exemplarCity: 'مزاٽلان'),
+    'America/Mendoza': TimeZoneNames(exemplarCity: 'مينڊوزا'),
+    'America/Menominee': TimeZoneNames(exemplarCity: 'مینومیني'),
+    'America/Merida': TimeZoneNames(exemplarCity: 'ميريڊا'),
+    'America/Metlakatla': TimeZoneNames(exemplarCity: 'ميٽلاڪاٽالا'),
+    'America/Mexico_City': TimeZoneNames(exemplarCity: 'ميڪسيڪو شهر'),
+    'America/Miquelon': TimeZoneNames(exemplarCity: 'میڪوئیلون'),
+    'America/Moncton': TimeZoneNames(exemplarCity: 'مانڪٽن'),
+    'America/Monterrey': TimeZoneNames(exemplarCity: 'مانٽيري'),
+    'America/Montevideo': TimeZoneNames(exemplarCity: 'مونٽي ويڊيو'),
+    'America/Montserrat': TimeZoneNames(exemplarCity: 'مانٽسريٽ'),
+    'America/Nassau': TimeZoneNames(exemplarCity: 'ناسائو'),
+    'America/New_York': TimeZoneNames(exemplarCity: 'نيويارڪ'),
+    'America/Nome': TimeZoneNames(exemplarCity: 'نوم'),
+    'America/Noronha': TimeZoneNames(exemplarCity: 'نورانهيا'),
+    'America/North_Dakota/Beulah':
+        TimeZoneNames(exemplarCity: 'بيولاه، اتر ڊڪوٽا'),
+    'America/North_Dakota/New_Salem':
+        TimeZoneNames(exemplarCity: 'نيو سيلم، اتر ڊڪوٽا'),
+    'America/North_Dakota/Center':
+        TimeZoneNames(exemplarCity: 'سينٽر، اتر ڊڪوٽا'),
+    'America/Ojinaga': TimeZoneNames(exemplarCity: 'اوڪيناگا'),
+    'America/Panama': TimeZoneNames(exemplarCity: 'پناما'),
+    'America/Paramaribo': TimeZoneNames(exemplarCity: 'پيراميريبو'),
+    'America/Phoenix': TimeZoneNames(exemplarCity: 'فونيڪس'),
+    'America/Port-au-Prince': TimeZoneNames(exemplarCity: 'پورٽ او پرنس'),
+    'America/Port_of_Spain': TimeZoneNames(exemplarCity: 'اسپين جو ٻيٽ'),
+    'America/Porto_Velho': TimeZoneNames(exemplarCity: 'پورٽو ويلهو'),
+    'America/Puerto_Rico': TimeZoneNames(exemplarCity: 'پورٽو ريڪو'),
+    'America/Punta_Arenas': TimeZoneNames(exemplarCity: 'پنٽا اريناس'),
+    'America/Rankin_Inlet': TimeZoneNames(exemplarCity: 'رينڪن انليٽ'),
+    'America/Recife': TimeZoneNames(exemplarCity: 'هيسيفي'),
+    'America/Regina': TimeZoneNames(exemplarCity: 'ریجینا'),
+    'America/Resolute': TimeZoneNames(exemplarCity: 'ريزوليوٽ'),
+    'America/Rio_Branco': TimeZoneNames(exemplarCity: 'ريو برانڪو'),
+    'America/Santarem': TimeZoneNames(exemplarCity: 'سنٽاريم'),
+    'America/Santiago': TimeZoneNames(exemplarCity: 'سينٽياگو'),
+    'America/Santo_Domingo': TimeZoneNames(exemplarCity: 'سينٽو ڊومينگو'),
+    'America/Sao_Paulo': TimeZoneNames(exemplarCity: 'سائو پولو'),
+    'America/Scoresbysund': TimeZoneNames(exemplarCity: 'اٽوڪورٽومائٽ'),
+    'America/Sitka': TimeZoneNames(exemplarCity: 'سٽڪا'),
+    'America/St_Barthelemy': TimeZoneNames(exemplarCity: 'سينٽ برٿليمي'),
+    'America/St_Johns': TimeZoneNames(exemplarCity: 'سينٽ جانز'),
+    'America/St_Kitts': TimeZoneNames(exemplarCity: 'سينٽ ڪٽس'),
+    'America/St_Lucia': TimeZoneNames(exemplarCity: 'سينٽ لوسيا'),
+    'America/St_Thomas': TimeZoneNames(exemplarCity: 'سينٽ ٿامس'),
+    'America/St_Vincent': TimeZoneNames(exemplarCity: 'سينٽ ونسينٽ'),
+    'America/Swift_Current': TimeZoneNames(exemplarCity: 'سوئفٽ ڪرنٽ'),
+    'America/Tegucigalpa': TimeZoneNames(exemplarCity: 'ٽيگوسيگلپا'),
+    'America/Thule': TimeZoneNames(exemplarCity: 'ٿولي'),
+    'America/Tijuana': TimeZoneNames(exemplarCity: 'تيجوانا'),
+    'America/Toronto': TimeZoneNames(exemplarCity: 'ٽورنٽو'),
+    'America/Tortola': TimeZoneNames(exemplarCity: 'ٽورٽولا'),
+    'America/Vancouver': TimeZoneNames(exemplarCity: 'وينڪوور'),
+    'America/Whitehorse': TimeZoneNames(exemplarCity: 'وائيٽ هائوس'),
+    'America/Winnipeg': TimeZoneNames(exemplarCity: 'وني پيگ'),
+    'America/Yakutat': TimeZoneNames(exemplarCity: 'ياڪوتات'),
+    'Atlantic/Azores': TimeZoneNames(exemplarCity: 'ازورز'),
+    'Atlantic/Bermuda': TimeZoneNames(exemplarCity: 'برمودا'),
+    'Atlantic/Canary': TimeZoneNames(exemplarCity: 'ڪينري'),
+    'Atlantic/Cape_Verde': TimeZoneNames(exemplarCity: 'ڪيپ ورڊي'),
+    'Atlantic/Faeroe': TimeZoneNames(exemplarCity: 'فيرو'),
+    'Atlantic/Madeira': TimeZoneNames(exemplarCity: 'ماڊيرا'),
+    'Atlantic/Reykjavik': TimeZoneNames(exemplarCity: 'ريڪيوڪ'),
+    'Atlantic/South_Georgia': TimeZoneNames(exemplarCity: 'ڏکڻ جورجيا'),
+    'Atlantic/St_Helena': TimeZoneNames(exemplarCity: 'سينٽ هيلينا'),
+    'Atlantic/Stanley': TimeZoneNames(exemplarCity: 'اسٽينلي'),
+    'Europe/Amsterdam': TimeZoneNames(exemplarCity: 'ايمسٽرڊيم'),
+    'Europe/Andorra': TimeZoneNames(exemplarCity: 'اندورا'),
+    'Europe/Astrakhan': TimeZoneNames(exemplarCity: 'آستراخان'),
+    'Europe/Athens': TimeZoneNames(exemplarCity: 'ايٿنز'),
+    'Europe/Belgrade': TimeZoneNames(exemplarCity: 'بلغراد'),
+    'Europe/Berlin': TimeZoneNames(exemplarCity: 'برلن'),
+    'Europe/Bratislava': TimeZoneNames(exemplarCity: 'براتيسلوا'),
+    'Europe/Brussels': TimeZoneNames(exemplarCity: 'برسلز'),
+    'Europe/Bucharest': TimeZoneNames(exemplarCity: 'بخاريسٽ'),
+    'Europe/Budapest': TimeZoneNames(exemplarCity: 'بداپيسٽ'),
+    'Europe/Busingen': TimeZoneNames(exemplarCity: 'بزيجين'),
+    'Europe/Chisinau': TimeZoneNames(exemplarCity: 'چسينائو'),
+    'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'ڪوپن هيگن'),
     'Europe/Dublin': TimeZoneNames(
-      long: TimeZoneName(
-        daylight: 'آئرش جو معياري وقت',
-      ),
-      exemplarCity: 'ڊبلن',
-    ),
-    'Europe/Gibraltar': TimeZoneNames(
-      exemplarCity: 'جبرالٽر',
-    ),
-    'Europe/Guernsey': TimeZoneNames(
-      exemplarCity: 'گرنزي',
-    ),
-    'Europe/Helsinki': TimeZoneNames(
-      exemplarCity: 'هيلسنڪي',
-    ),
-    'Europe/Isle_of_Man': TimeZoneNames(
-      exemplarCity: 'آئيزل آف مين',
-    ),
-    'Europe/Istanbul': TimeZoneNames(
-      exemplarCity: 'استنبول',
-    ),
-    'Europe/Jersey': TimeZoneNames(
-      exemplarCity: 'جرسي',
-    ),
-    'Europe/Kaliningrad': TimeZoneNames(
-      exemplarCity: 'ڪلينن گراڊ',
-    ),
-    'Europe/Kiev': TimeZoneNames(
-      exemplarCity: 'ڪِيو',
-    ),
-    'Europe/Kirov': TimeZoneNames(
-      exemplarCity: 'ڪيروف',
-    ),
-    'Europe/Lisbon': TimeZoneNames(
-      exemplarCity: 'لسبن',
-    ),
-    'Europe/Ljubljana': TimeZoneNames(
-      exemplarCity: 'لبليانا',
-    ),
+        exemplarCity: 'ڊبلن',
+        long: TimeZoneName(daylight: 'آئرش جو معياري وقت')),
+    'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'جبرالٽر'),
+    'Europe/Guernsey': TimeZoneNames(exemplarCity: 'گرنزي'),
+    'Europe/Helsinki': TimeZoneNames(exemplarCity: 'هيلسنڪي'),
+    'Europe/Isle_of_Man': TimeZoneNames(exemplarCity: 'آئيزل آف مين'),
+    'Europe/Istanbul': TimeZoneNames(exemplarCity: 'استنبول'),
+    'Europe/Jersey': TimeZoneNames(exemplarCity: 'جرسي'),
+    'Europe/Kaliningrad': TimeZoneNames(exemplarCity: 'ڪلينن گراڊ'),
+    'Europe/Kiev': TimeZoneNames(exemplarCity: 'ڪِيو'),
+    'Europe/Kirov': TimeZoneNames(exemplarCity: 'ڪيروف'),
+    'Europe/Lisbon': TimeZoneNames(exemplarCity: 'لسبن'),
+    'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'لبليانا'),
     'Europe/London': TimeZoneNames(
-      long: TimeZoneName(
-        daylight: 'برطانيا جي اونهاري جو وقت',
-      ),
-      exemplarCity: 'لنڊن',
-    ),
-    'Europe/Luxembourg': TimeZoneNames(
-      exemplarCity: 'لگزمبرگ',
-    ),
-    'Europe/Madrid': TimeZoneNames(
-      exemplarCity: 'ميڊرڊ',
-    ),
-    'Europe/Malta': TimeZoneNames(
-      exemplarCity: 'مالٽا',
-    ),
-    'Europe/Mariehamn': TimeZoneNames(
-      exemplarCity: 'ميريهام',
-    ),
-    'Europe/Minsk': TimeZoneNames(
-      exemplarCity: 'منسڪ',
-    ),
-    'Europe/Monaco': TimeZoneNames(
-      exemplarCity: 'موناڪو',
-    ),
-    'Europe/Moscow': TimeZoneNames(
-      exemplarCity: 'ماسڪو',
-    ),
-    'Europe/Oslo': TimeZoneNames(
-      exemplarCity: 'اوسلو',
-    ),
-    'Europe/Paris': TimeZoneNames(
-      exemplarCity: 'پئرس',
-    ),
-    'Europe/Podgorica': TimeZoneNames(
-      exemplarCity: 'پوڊگورسيا',
-    ),
-    'Europe/Prague': TimeZoneNames(
-      exemplarCity: 'پراگ',
-    ),
-    'Europe/Riga': TimeZoneNames(
-      exemplarCity: 'رگا',
-    ),
-    'Europe/Rome': TimeZoneNames(
-      exemplarCity: 'روم',
-    ),
-    'Europe/Samara': TimeZoneNames(
-      exemplarCity: 'سمارا',
-    ),
-    'Europe/San_Marino': TimeZoneNames(
-      exemplarCity: 'سين مرينو',
-    ),
-    'Europe/Sarajevo': TimeZoneNames(
-      exemplarCity: 'سراجیوو',
-    ),
-    'Europe/Saratov': TimeZoneNames(
-      exemplarCity: 'سراتو',
-    ),
-    'Europe/Simferopol': TimeZoneNames(
-      exemplarCity: 'سمفروپول',
-    ),
-    'Europe/Skopje': TimeZoneNames(
-      exemplarCity: 'اسڪوپي',
-    ),
-    'Europe/Sofia': TimeZoneNames(
-      exemplarCity: 'سوفيا',
-    ),
-    'Europe/Stockholm': TimeZoneNames(
-      exemplarCity: 'اسٽاڪ هوم',
-    ),
-    'Europe/Tallinn': TimeZoneNames(
-      exemplarCity: 'ٽالن',
-    ),
-    'Europe/Tirane': TimeZoneNames(
-      exemplarCity: 'تراني',
-    ),
-    'Europe/Ulyanovsk': TimeZoneNames(
-      exemplarCity: 'اليانوسڪ',
-    ),
-    'Europe/Vaduz': TimeZoneNames(
-      exemplarCity: 'وڊوز',
-    ),
-    'Europe/Vatican': TimeZoneNames(
-      exemplarCity: 'وئٽيڪن',
-    ),
-    'Europe/Vienna': TimeZoneNames(
-      exemplarCity: 'وينا',
-    ),
-    'Europe/Vilnius': TimeZoneNames(
-      exemplarCity: 'ويلنيس',
-    ),
-    'Europe/Volgograd': TimeZoneNames(
-      exemplarCity: 'وولگوگراد',
-    ),
-    'Europe/Warsaw': TimeZoneNames(
-      exemplarCity: 'وارسا',
-    ),
-    'Europe/Zagreb': TimeZoneNames(
-      exemplarCity: 'زغرب',
-    ),
-    'Europe/Zurich': TimeZoneNames(
-      exemplarCity: 'زيورخ',
-    ),
-    'Africa/Abidjan': TimeZoneNames(
-      exemplarCity: 'ابي جان',
-    ),
-    'Africa/Accra': TimeZoneNames(
-      exemplarCity: 'ايڪرا',
-    ),
-    'Africa/Addis_Ababa': TimeZoneNames(
-      exemplarCity: 'ايڊيس اببا',
-    ),
-    'Africa/Algiers': TimeZoneNames(
-      exemplarCity: 'الجيرز',
-    ),
-    'Africa/Asmera': TimeZoneNames(
-      exemplarCity: 'ازمارا',
-    ),
-    'Africa/Bamako': TimeZoneNames(
-      exemplarCity: 'باماڪو',
-    ),
-    'Africa/Bangui': TimeZoneNames(
-      exemplarCity: 'بنگي',
-    ),
-    'Africa/Banjul': TimeZoneNames(
-      exemplarCity: 'بينجال',
-    ),
-    'Africa/Bissau': TimeZoneNames(
-      exemplarCity: 'بسائو',
-    ),
-    'Africa/Blantyre': TimeZoneNames(
-      exemplarCity: 'بلنٽائر',
-    ),
-    'Africa/Brazzaville': TimeZoneNames(
-      exemplarCity: 'برازاويل',
-    ),
-    'Africa/Bujumbura': TimeZoneNames(
-      exemplarCity: 'بوجمبورا',
-    ),
-    'Africa/Cairo': TimeZoneNames(
-      exemplarCity: 'قائرا',
-    ),
-    'Africa/Casablanca': TimeZoneNames(
-      exemplarCity: 'ڪاسابلانڪا',
-    ),
-    'Africa/Ceuta': TimeZoneNames(
-      exemplarCity: 'سيوٽا',
-    ),
-    'Africa/Conakry': TimeZoneNames(
-      exemplarCity: 'ڪوناڪري',
-    ),
-    'Africa/Dakar': TimeZoneNames(
-      exemplarCity: 'ڊاڪار',
-    ),
-    'Africa/Dar_es_Salaam': TimeZoneNames(
-      exemplarCity: 'دارالسلام',
-    ),
-    'Africa/Djibouti': TimeZoneNames(
-      exemplarCity: 'جبوتي',
-    ),
-    'Africa/Douala': TimeZoneNames(
-      exemplarCity: 'دوالا',
-    ),
-    'Africa/El_Aaiun': TimeZoneNames(
-      exemplarCity: 'ال ايون',
-    ),
-    'Africa/Freetown': TimeZoneNames(
-      exemplarCity: 'فري ٽائون',
-    ),
-    'Africa/Gaborone': TimeZoneNames(
-      exemplarCity: 'گيبورون',
-    ),
-    'Africa/Harare': TimeZoneNames(
-      exemplarCity: 'هراري',
-    ),
-    'Africa/Johannesburg': TimeZoneNames(
-      exemplarCity: 'جوهانسبرگ',
-    ),
-    'Africa/Juba': TimeZoneNames(
-      exemplarCity: 'جوبا',
-    ),
-    'Africa/Kampala': TimeZoneNames(
-      exemplarCity: 'ڪمپالا',
-    ),
-    'Africa/Khartoum': TimeZoneNames(
-      exemplarCity: 'خرطوم',
-    ),
-    'Africa/Kigali': TimeZoneNames(
-      exemplarCity: 'ڪيگالي',
-    ),
-    'Africa/Kinshasa': TimeZoneNames(
-      exemplarCity: 'ڪنشاسا',
-    ),
-    'Africa/Lagos': TimeZoneNames(
-      exemplarCity: 'لاگوس',
-    ),
-    'Africa/Libreville': TimeZoneNames(
-      exemplarCity: 'لیبرویلی',
-    ),
-    'Africa/Lome': TimeZoneNames(
-      exemplarCity: 'لوم',
-    ),
-    'Africa/Luanda': TimeZoneNames(
-      exemplarCity: 'لوانڊا',
-    ),
-    'Africa/Lubumbashi': TimeZoneNames(
-      exemplarCity: 'لوبمباشی',
-    ),
-    'Africa/Lusaka': TimeZoneNames(
-      exemplarCity: 'لوساڪا',
-    ),
-    'Africa/Malabo': TimeZoneNames(
-      exemplarCity: 'ملابو',
-    ),
-    'Africa/Maputo': TimeZoneNames(
-      exemplarCity: 'ماپوتو',
-    ),
-    'Africa/Maseru': TimeZoneNames(
-      exemplarCity: 'ماسيرو',
-    ),
-    'Africa/Mbabane': TimeZoneNames(
-      exemplarCity: 'مبابين',
-    ),
-    'Africa/Mogadishu': TimeZoneNames(
-      exemplarCity: 'موغادیشو',
-    ),
-    'Africa/Monrovia': TimeZoneNames(
-      exemplarCity: 'مونروویا',
-    ),
-    'Africa/Nairobi': TimeZoneNames(
-      exemplarCity: 'نيروبي',
-    ),
-    'Africa/Ndjamena': TimeZoneNames(
-      exemplarCity: 'نجامينا',
-    ),
-    'Africa/Niamey': TimeZoneNames(
-      exemplarCity: 'نيامي',
-    ),
-    'Africa/Nouakchott': TimeZoneNames(
-      exemplarCity: 'نواڪشوط',
-    ),
-    'Africa/Ouagadougou': TimeZoneNames(
-      exemplarCity: 'آئوگو ڊائوگو',
-    ),
-    'Africa/Porto-Novo': TimeZoneNames(
-      exemplarCity: 'پورٽو نوو',
-    ),
-    'Africa/Sao_Tome': TimeZoneNames(
-      exemplarCity: 'سائو ٽوم',
-    ),
-    'Africa/Tripoli': TimeZoneNames(
-      exemplarCity: 'ٽرپولي',
-    ),
-    'Africa/Tunis': TimeZoneNames(
-      exemplarCity: 'تيونس',
-    ),
-    'Africa/Windhoek': TimeZoneNames(
-      exemplarCity: 'ونڊهوڪ',
-    ),
-    'Asia/Aden': TimeZoneNames(
-      exemplarCity: 'عدن',
-    ),
-    'Asia/Almaty': TimeZoneNames(
-      exemplarCity: 'الماتي',
-    ),
-    'Asia/Amman': TimeZoneNames(
-      exemplarCity: 'امان',
-    ),
-    'Asia/Anadyr': TimeZoneNames(
-      exemplarCity: 'انيدر',
-    ),
-    'Asia/Aqtau': TimeZoneNames(
-      exemplarCity: 'اڪٽائو',
-    ),
-    'Asia/Aqtobe': TimeZoneNames(
-      exemplarCity: 'ايڪٽوب',
-    ),
-    'Asia/Ashgabat': TimeZoneNames(
-      exemplarCity: 'آشگاباد',
-    ),
-    'Asia/Atyrau': TimeZoneNames(
-      exemplarCity: 'آتيرائو',
-    ),
-    'Asia/Baghdad': TimeZoneNames(
-      exemplarCity: 'بغداد',
-    ),
-    'Asia/Bahrain': TimeZoneNames(
-      exemplarCity: 'بحرين',
-    ),
-    'Asia/Baku': TimeZoneNames(
-      exemplarCity: 'باڪو',
-    ),
-    'Asia/Bangkok': TimeZoneNames(
-      exemplarCity: 'بئنڪاڪ',
-    ),
-    'Asia/Barnaul': TimeZoneNames(
-      exemplarCity: 'برنل',
-    ),
-    'Asia/Beirut': TimeZoneNames(
-      exemplarCity: 'بيروت',
-    ),
-    'Asia/Bishkek': TimeZoneNames(
-      exemplarCity: 'بشڪيڪ',
-    ),
-    'Asia/Brunei': TimeZoneNames(
-      exemplarCity: 'برونائي',
-    ),
-    'Asia/Calcutta': TimeZoneNames(
-      exemplarCity: 'ڪلڪتا',
-    ),
-    'Asia/Chita': TimeZoneNames(
-      exemplarCity: 'چيتا',
-    ),
-    'Asia/Colombo': TimeZoneNames(
-      exemplarCity: 'ڪولمبو',
-    ),
-    'Asia/Damascus': TimeZoneNames(
-      exemplarCity: 'دمشق',
-    ),
-    'Asia/Dhaka': TimeZoneNames(
-      exemplarCity: 'ڍاڪا',
-    ),
-    'Asia/Dili': TimeZoneNames(
-      exemplarCity: 'دلي',
-    ),
-    'Asia/Dubai': TimeZoneNames(
-      exemplarCity: 'دبئي',
-    ),
-    'Asia/Dushanbe': TimeZoneNames(
-      exemplarCity: 'دوشانبي',
-    ),
-    'Asia/Famagusta': TimeZoneNames(
-      exemplarCity: 'فاماگوستا',
-    ),
-    'Asia/Gaza': TimeZoneNames(
-      exemplarCity: 'غزه',
-    ),
-    'Asia/Hebron': TimeZoneNames(
-      exemplarCity: 'هيبرون',
-    ),
-    'Asia/Hong_Kong': TimeZoneNames(
-      exemplarCity: 'هانگ ڪانگ',
-    ),
-    'Asia/Hovd': TimeZoneNames(
-      exemplarCity: 'هووڊ',
-    ),
-    'Asia/Irkutsk': TimeZoneNames(
-      exemplarCity: 'ارڪتسڪ',
-    ),
-    'Asia/Jakarta': TimeZoneNames(
-      exemplarCity: 'جڪارتا',
-    ),
-    'Asia/Jayapura': TimeZoneNames(
-      exemplarCity: 'جياپورا',
-    ),
-    'Asia/Jerusalem': TimeZoneNames(
-      exemplarCity: 'يوروشلم',
-    ),
-    'Asia/Kabul': TimeZoneNames(
-      exemplarCity: 'ڪابل',
-    ),
-    'Asia/Kamchatka': TimeZoneNames(
-      exemplarCity: 'ڪمچاسڪي',
-    ),
-    'Asia/Karachi': TimeZoneNames(
-      exemplarCity: 'ڪراچي',
-    ),
-    'Asia/Katmandu': TimeZoneNames(
-      exemplarCity: 'کٽمنڊو',
-    ),
-    'Asia/Khandyga': TimeZoneNames(
-      exemplarCity: 'کندياگا',
-    ),
-    'Asia/Krasnoyarsk': TimeZoneNames(
-      exemplarCity: 'ڪريسنويارسڪ',
-    ),
-    'Asia/Kuala_Lumpur': TimeZoneNames(
-      exemplarCity: 'ڪوالالمپور',
-    ),
-    'Asia/Kuching': TimeZoneNames(
-      exemplarCity: 'کوچنگ',
-    ),
-    'Asia/Kuwait': TimeZoneNames(
-      exemplarCity: 'ڪويت',
-    ),
-    'Asia/Macau': TimeZoneNames(
-      exemplarCity: 'مڪائو',
-    ),
-    'Asia/Magadan': TimeZoneNames(
-      exemplarCity: 'مگادان',
-    ),
-    'Asia/Makassar': TimeZoneNames(
-      exemplarCity: 'ميڪاسر',
-    ),
-    'Asia/Manila': TimeZoneNames(
-      exemplarCity: 'منيلا',
-    ),
-    'Asia/Muscat': TimeZoneNames(
-      exemplarCity: 'مسقط',
-    ),
-    'Asia/Nicosia': TimeZoneNames(
-      exemplarCity: 'نيڪوسيا',
-    ),
-    'Asia/Novokuznetsk': TimeZoneNames(
-      exemplarCity: 'نووڪزنيتسڪ',
-    ),
-    'Asia/Novosibirsk': TimeZoneNames(
-      exemplarCity: 'نوواسبئيرسڪ',
-    ),
-    'Asia/Omsk': TimeZoneNames(
-      exemplarCity: 'اومسڪ',
-    ),
-    'Asia/Oral': TimeZoneNames(
-      exemplarCity: 'زباني',
-    ),
-    'Asia/Phnom_Penh': TimeZoneNames(
-      exemplarCity: 'فنام پينه',
-    ),
-    'Asia/Pontianak': TimeZoneNames(
-      exemplarCity: 'پونٽيانڪ',
-    ),
-    'Asia/Pyongyang': TimeZoneNames(
-      exemplarCity: 'شيانگ يانگ',
-    ),
-    'Asia/Qatar': TimeZoneNames(
-      exemplarCity: 'قطر',
-    ),
-    'Asia/Qostanay': TimeZoneNames(
-      exemplarCity: 'ڪوٽانسي',
-    ),
-    'Asia/Qyzylorda': TimeZoneNames(
-      exemplarCity: 'ڪيزلورڊا',
-    ),
-    'Asia/Rangoon': TimeZoneNames(
-      exemplarCity: 'رنگون',
-    ),
-    'Asia/Riyadh': TimeZoneNames(
-      exemplarCity: 'رياض',
-    ),
-    'Asia/Saigon': TimeZoneNames(
-      exemplarCity: 'هوچي من',
-    ),
-    'Asia/Sakhalin': TimeZoneNames(
-      exemplarCity: 'شخالين',
-    ),
-    'Asia/Samarkand': TimeZoneNames(
-      exemplarCity: 'سمرقند',
-    ),
-    'Asia/Seoul': TimeZoneNames(
-      exemplarCity: 'سيول',
-    ),
-    'Asia/Shanghai': TimeZoneNames(
-      exemplarCity: 'شنگهائي',
-    ),
-    'Asia/Singapore': TimeZoneNames(
-      exemplarCity: 'سنگاپور',
-    ),
-    'Asia/Srednekolymsk': TimeZoneNames(
-      exemplarCity: 'سريديڪوليمسڪ',
-    ),
-    'Asia/Taipei': TimeZoneNames(
-      exemplarCity: 'تائپي',
-    ),
-    'Asia/Tashkent': TimeZoneNames(
-      exemplarCity: 'تاشقنت',
-    ),
-    'Asia/Tbilisi': TimeZoneNames(
-      exemplarCity: 'تبليسي',
-    ),
-    'Asia/Tehran': TimeZoneNames(
-      exemplarCity: 'تهران',
-    ),
-    'Asia/Thimphu': TimeZoneNames(
-      exemplarCity: 'ٿمفو',
-    ),
-    'Asia/Tokyo': TimeZoneNames(
-      exemplarCity: 'ٽوڪيو',
-    ),
-    'Asia/Tomsk': TimeZoneNames(
-      exemplarCity: 'تمسڪ',
-    ),
-    'Asia/Ulaanbaatar': TimeZoneNames(
-      exemplarCity: 'اولان باتر',
-    ),
-    'Asia/Urumqi': TimeZoneNames(
-      exemplarCity: 'يورمڪي',
-    ),
-    'Asia/Ust-Nera': TimeZoneNames(
-      exemplarCity: 'اسٽ نيرا',
-    ),
-    'Asia/Vientiane': TimeZoneNames(
-      exemplarCity: 'وينٽيان',
-    ),
-    'Asia/Vladivostok': TimeZoneNames(
-      exemplarCity: 'ولادووستوڪ',
-    ),
-    'Asia/Yakutsk': TimeZoneNames(
-      exemplarCity: 'ياڪتسڪ',
-    ),
-    'Asia/Yekaterinburg': TimeZoneNames(
-      exemplarCity: 'یڪاٽرنبرگ',
-    ),
-    'Asia/Yerevan': TimeZoneNames(
-      exemplarCity: 'يريوان',
-    ),
-    'Indian/Antananarivo': TimeZoneNames(
-      exemplarCity: 'انتاناناريوو',
-    ),
-    'Indian/Chagos': TimeZoneNames(
-      exemplarCity: 'چاگوس',
-    ),
-    'Indian/Christmas': TimeZoneNames(
-      exemplarCity: 'ڪرسمس',
-    ),
-    'Indian/Cocos': TimeZoneNames(
-      exemplarCity: 'ڪوڪوس',
-    ),
-    'Indian/Comoro': TimeZoneNames(
-      exemplarCity: 'ڪومورو',
-    ),
-    'Indian/Kerguelen': TimeZoneNames(
-      exemplarCity: 'ڪرگيولين',
-    ),
-    'Indian/Mahe': TimeZoneNames(
-      exemplarCity: 'ماهي',
-    ),
-    'Indian/Maldives': TimeZoneNames(
-      exemplarCity: 'مالديپ',
-    ),
-    'Indian/Mauritius': TimeZoneNames(
-      exemplarCity: 'موريشس',
-    ),
-    'Indian/Mayotte': TimeZoneNames(
-      exemplarCity: 'مياٽي',
-    ),
-    'Indian/Reunion': TimeZoneNames(
-      exemplarCity: 'ري يونين',
-    ),
-    'Australia/Adelaide': TimeZoneNames(
-      exemplarCity: 'ايڊيليڊ',
-    ),
-    'Australia/Brisbane': TimeZoneNames(
-      exemplarCity: 'برسبين',
-    ),
-    'Australia/Broken_Hill': TimeZoneNames(
-      exemplarCity: 'بروڪن هل',
-    ),
-    'Australia/Darwin': TimeZoneNames(
-      exemplarCity: 'ڊارون',
-    ),
-    'Australia/Eucla': TimeZoneNames(
-      exemplarCity: 'يوڪلا',
-    ),
-    'Australia/Hobart': TimeZoneNames(
-      exemplarCity: 'هوبارٽ',
-    ),
-    'Australia/Lindeman': TimeZoneNames(
-      exemplarCity: 'لنڊمين',
-    ),
-    'Australia/Lord_Howe': TimeZoneNames(
-      exemplarCity: 'لارڊ هائو',
-    ),
-    'Australia/Melbourne': TimeZoneNames(
-      exemplarCity: 'ميلبورن',
-    ),
-    'Australia/Perth': TimeZoneNames(
-      exemplarCity: 'پرٿ',
-    ),
-    'Australia/Sydney': TimeZoneNames(
-      exemplarCity: 'سڊني',
-    ),
-    'Pacific/Apia': TimeZoneNames(
-      exemplarCity: 'اپيا',
-    ),
-    'Pacific/Auckland': TimeZoneNames(
-      exemplarCity: 'آڪلينڊ',
-    ),
-    'Pacific/Bougainville': TimeZoneNames(
-      exemplarCity: 'بوگين ويليا',
-    ),
-    'Pacific/Chatham': TimeZoneNames(
-      exemplarCity: 'چئٿم',
-    ),
-    'Pacific/Easter': TimeZoneNames(
-      exemplarCity: 'ايسٽر',
-    ),
-    'Pacific/Efate': TimeZoneNames(
-      exemplarCity: 'افاتي',
-    ),
-    'Pacific/Enderbury': TimeZoneNames(
-      exemplarCity: 'اينڊربري',
-    ),
-    'Pacific/Fakaofo': TimeZoneNames(
-      exemplarCity: 'فڪائوفو',
-    ),
-    'Pacific/Fiji': TimeZoneNames(
-      exemplarCity: 'فجي',
-    ),
-    'Pacific/Funafuti': TimeZoneNames(
-      exemplarCity: 'فنافوٽي',
-    ),
-    'Pacific/Galapagos': TimeZoneNames(
-      exemplarCity: 'گالاپاگوز',
-    ),
-    'Pacific/Gambier': TimeZoneNames(
-      exemplarCity: 'گيمبيئر',
-    ),
-    'Pacific/Guadalcanal': TimeZoneNames(
-      exemplarCity: 'گواڊل ڪينال',
-    ),
-    'Pacific/Guam': TimeZoneNames(
-      exemplarCity: 'گوام',
-    ),
-    'Pacific/Honolulu': TimeZoneNames(
-      exemplarCity: 'هونو لولو',
-    ),
-    'Pacific/Kanton': TimeZoneNames(
-      exemplarCity: 'ڪانٽن',
-    ),
-    'Pacific/Kiritimati': TimeZoneNames(
-      exemplarCity: 'ڪريٽمٽي',
-    ),
-    'Pacific/Kosrae': TimeZoneNames(
-      exemplarCity: 'ڪوسرائي',
-    ),
-    'Pacific/Kwajalein': TimeZoneNames(
-      exemplarCity: 'ڪواجلين',
-    ),
-    'Pacific/Majuro': TimeZoneNames(
-      exemplarCity: 'مجورو',
-    ),
-    'Pacific/Marquesas': TimeZoneNames(
-      exemplarCity: 'مرڪيوسس',
-    ),
-    'Pacific/Midway': TimeZoneNames(
-      exemplarCity: 'مڊوي',
-    ),
-    'Pacific/Nauru': TimeZoneNames(
-      exemplarCity: 'نائرو',
-    ),
-    'Pacific/Niue': TimeZoneNames(
-      exemplarCity: 'نيووي',
-    ),
-    'Pacific/Norfolk': TimeZoneNames(
-      exemplarCity: 'نار فوڪ',
-    ),
-    'Pacific/Noumea': TimeZoneNames(
-      exemplarCity: 'نائوميا',
-    ),
-    'Pacific/Pago_Pago': TimeZoneNames(
-      exemplarCity: 'پاگو پاگو',
-    ),
-    'Pacific/Palau': TimeZoneNames(
-      exemplarCity: 'پلائو',
-    ),
-    'Pacific/Pitcairn': TimeZoneNames(
-      exemplarCity: 'پٽڪيرن',
-    ),
-    'Pacific/Ponape': TimeZoneNames(
-      exemplarCity: 'پونپیئي',
-    ),
-    'Pacific/Port_Moresby': TimeZoneNames(
-      exemplarCity: 'پورٽ مورسبي',
-    ),
-    'Pacific/Rarotonga': TimeZoneNames(
-      exemplarCity: 'راروٽونگا',
-    ),
-    'Pacific/Saipan': TimeZoneNames(
-      exemplarCity: 'سيپن',
-    ),
-    'Pacific/Tahiti': TimeZoneNames(
-      exemplarCity: 'تاهٽي',
-    ),
-    'Pacific/Tarawa': TimeZoneNames(
-      exemplarCity: 'تراوا',
-    ),
-    'Pacific/Tongatapu': TimeZoneNames(
-      exemplarCity: 'ٽونگاٽاپو',
-    ),
-    'Pacific/Truk': TimeZoneNames(
-      exemplarCity: 'چيوڪ',
-    ),
-    'Pacific/Wake': TimeZoneNames(
-      exemplarCity: 'ويڪ',
-    ),
-    'Pacific/Wallis': TimeZoneNames(
-      exemplarCity: 'ويلس',
-    ),
-    'Arctic/Longyearbyen': TimeZoneNames(
-      exemplarCity: 'لانگ ائيربن',
-    ),
-    'Antarctica/Casey': TimeZoneNames(
-      exemplarCity: 'ڪيسي',
-    ),
-    'Antarctica/Davis': TimeZoneNames(
-      exemplarCity: 'ڊيوس',
-    ),
-    'Antarctica/DumontDUrville': TimeZoneNames(
-      exemplarCity: 'ڊومانٽ درويئل',
-    ),
-    'Antarctica/Macquarie': TimeZoneNames(
-      exemplarCity: 'مڪوائري',
-    ),
-    'Antarctica/Mawson': TimeZoneNames(
-      exemplarCity: 'موسن',
-    ),
-    'Antarctica/McMurdo': TimeZoneNames(
-      exemplarCity: 'ميڪ مرڊو',
-    ),
-    'Antarctica/Palmer': TimeZoneNames(
-      exemplarCity: 'پامر',
-    ),
-    'Antarctica/Rothera': TimeZoneNames(
-      exemplarCity: 'روڌرا',
-    ),
-    'Antarctica/Syowa': TimeZoneNames(
-      exemplarCity: 'سيووا',
-    ),
-    'Antarctica/Troll': TimeZoneNames(
-      exemplarCity: 'ٽرول',
-    ),
-    'Antarctica/Vostok': TimeZoneNames(
-      exemplarCity: 'ووستوڪ',
-    ),
+        exemplarCity: 'لنڊن',
+        long: TimeZoneName(daylight: 'برطانيا جي اونهاري جو وقت')),
+    'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'لگزمبرگ'),
+    'Europe/Madrid': TimeZoneNames(exemplarCity: 'ميڊرڊ'),
+    'Europe/Malta': TimeZoneNames(exemplarCity: 'مالٽا'),
+    'Europe/Mariehamn': TimeZoneNames(exemplarCity: 'ميريهام'),
+    'Europe/Minsk': TimeZoneNames(exemplarCity: 'منسڪ'),
+    'Europe/Monaco': TimeZoneNames(exemplarCity: 'موناڪو'),
+    'Europe/Moscow': TimeZoneNames(exemplarCity: 'ماسڪو'),
+    'Europe/Oslo': TimeZoneNames(exemplarCity: 'اوسلو'),
+    'Europe/Paris': TimeZoneNames(exemplarCity: 'پئرس'),
+    'Europe/Podgorica': TimeZoneNames(exemplarCity: 'پوڊگورسيا'),
+    'Europe/Prague': TimeZoneNames(exemplarCity: 'پراگ'),
+    'Europe/Riga': TimeZoneNames(exemplarCity: 'رگا'),
+    'Europe/Rome': TimeZoneNames(exemplarCity: 'روم'),
+    'Europe/Samara': TimeZoneNames(exemplarCity: 'سمارا'),
+    'Europe/San_Marino': TimeZoneNames(exemplarCity: 'سين مرينو'),
+    'Europe/Sarajevo': TimeZoneNames(exemplarCity: 'سراجیوو'),
+    'Europe/Saratov': TimeZoneNames(exemplarCity: 'سراتو'),
+    'Europe/Simferopol': TimeZoneNames(exemplarCity: 'سمفروپول'),
+    'Europe/Skopje': TimeZoneNames(exemplarCity: 'اسڪوپي'),
+    'Europe/Sofia': TimeZoneNames(exemplarCity: 'سوفيا'),
+    'Europe/Stockholm': TimeZoneNames(exemplarCity: 'اسٽاڪ هوم'),
+    'Europe/Tallinn': TimeZoneNames(exemplarCity: 'ٽالن'),
+    'Europe/Tirane': TimeZoneNames(exemplarCity: 'تراني'),
+    'Europe/Ulyanovsk': TimeZoneNames(exemplarCity: 'اليانوسڪ'),
+    'Europe/Vaduz': TimeZoneNames(exemplarCity: 'وڊوز'),
+    'Europe/Vatican': TimeZoneNames(exemplarCity: 'وئٽيڪن'),
+    'Europe/Vienna': TimeZoneNames(exemplarCity: 'وينا'),
+    'Europe/Vilnius': TimeZoneNames(exemplarCity: 'ويلنيس'),
+    'Europe/Volgograd': TimeZoneNames(exemplarCity: 'وولگوگراد'),
+    'Europe/Warsaw': TimeZoneNames(exemplarCity: 'وارسا'),
+    'Europe/Zagreb': TimeZoneNames(exemplarCity: 'زغرب'),
+    'Europe/Zurich': TimeZoneNames(exemplarCity: 'زيورخ'),
+    'Africa/Abidjan': TimeZoneNames(exemplarCity: 'ابي جان'),
+    'Africa/Accra': TimeZoneNames(exemplarCity: 'ايڪرا'),
+    'Africa/Addis_Ababa': TimeZoneNames(exemplarCity: 'ايڊيس اببا'),
+    'Africa/Algiers': TimeZoneNames(exemplarCity: 'الجيرز'),
+    'Africa/Asmera': TimeZoneNames(exemplarCity: 'ازمارا'),
+    'Africa/Bamako': TimeZoneNames(exemplarCity: 'باماڪو'),
+    'Africa/Bangui': TimeZoneNames(exemplarCity: 'بنگي'),
+    'Africa/Banjul': TimeZoneNames(exemplarCity: 'بينجال'),
+    'Africa/Bissau': TimeZoneNames(exemplarCity: 'بسائو'),
+    'Africa/Blantyre': TimeZoneNames(exemplarCity: 'بلنٽائر'),
+    'Africa/Brazzaville': TimeZoneNames(exemplarCity: 'برازاويل'),
+    'Africa/Bujumbura': TimeZoneNames(exemplarCity: 'بوجمبورا'),
+    'Africa/Cairo': TimeZoneNames(exemplarCity: 'قائرا'),
+    'Africa/Casablanca': TimeZoneNames(exemplarCity: 'ڪاسابلانڪا'),
+    'Africa/Ceuta': TimeZoneNames(exemplarCity: 'سيوٽا'),
+    'Africa/Conakry': TimeZoneNames(exemplarCity: 'ڪوناڪري'),
+    'Africa/Dakar': TimeZoneNames(exemplarCity: 'ڊاڪار'),
+    'Africa/Dar_es_Salaam': TimeZoneNames(exemplarCity: 'دارالسلام'),
+    'Africa/Djibouti': TimeZoneNames(exemplarCity: 'جبوتي'),
+    'Africa/Douala': TimeZoneNames(exemplarCity: 'دوالا'),
+    'Africa/El_Aaiun': TimeZoneNames(exemplarCity: 'ال ايون'),
+    'Africa/Freetown': TimeZoneNames(exemplarCity: 'فري ٽائون'),
+    'Africa/Gaborone': TimeZoneNames(exemplarCity: 'گيبورون'),
+    'Africa/Harare': TimeZoneNames(exemplarCity: 'هراري'),
+    'Africa/Johannesburg': TimeZoneNames(exemplarCity: 'جوهانسبرگ'),
+    'Africa/Juba': TimeZoneNames(exemplarCity: 'جوبا'),
+    'Africa/Kampala': TimeZoneNames(exemplarCity: 'ڪمپالا'),
+    'Africa/Khartoum': TimeZoneNames(exemplarCity: 'خرطوم'),
+    'Africa/Kigali': TimeZoneNames(exemplarCity: 'ڪيگالي'),
+    'Africa/Kinshasa': TimeZoneNames(exemplarCity: 'ڪنشاسا'),
+    'Africa/Lagos': TimeZoneNames(exemplarCity: 'لاگوس'),
+    'Africa/Libreville': TimeZoneNames(exemplarCity: 'لیبرویلی'),
+    'Africa/Lome': TimeZoneNames(exemplarCity: 'لوم'),
+    'Africa/Luanda': TimeZoneNames(exemplarCity: 'لوانڊا'),
+    'Africa/Lubumbashi': TimeZoneNames(exemplarCity: 'لوبمباشی'),
+    'Africa/Lusaka': TimeZoneNames(exemplarCity: 'لوساڪا'),
+    'Africa/Malabo': TimeZoneNames(exemplarCity: 'ملابو'),
+    'Africa/Maputo': TimeZoneNames(exemplarCity: 'ماپوتو'),
+    'Africa/Maseru': TimeZoneNames(exemplarCity: 'ماسيرو'),
+    'Africa/Mbabane': TimeZoneNames(exemplarCity: 'مبابين'),
+    'Africa/Mogadishu': TimeZoneNames(exemplarCity: 'موغادیشو'),
+    'Africa/Monrovia': TimeZoneNames(exemplarCity: 'مونروویا'),
+    'Africa/Nairobi': TimeZoneNames(exemplarCity: 'نيروبي'),
+    'Africa/Ndjamena': TimeZoneNames(exemplarCity: 'نجامينا'),
+    'Africa/Niamey': TimeZoneNames(exemplarCity: 'نيامي'),
+    'Africa/Nouakchott': TimeZoneNames(exemplarCity: 'نواڪشوط'),
+    'Africa/Ouagadougou': TimeZoneNames(exemplarCity: 'آئوگو ڊائوگو'),
+    'Africa/Porto-Novo': TimeZoneNames(exemplarCity: 'پورٽو نوو'),
+    'Africa/Sao_Tome': TimeZoneNames(exemplarCity: 'سائو ٽوم'),
+    'Africa/Tripoli': TimeZoneNames(exemplarCity: 'ٽرپولي'),
+    'Africa/Tunis': TimeZoneNames(exemplarCity: 'تيونس'),
+    'Africa/Windhoek': TimeZoneNames(exemplarCity: 'ونڊهوڪ'),
+    'Asia/Aden': TimeZoneNames(exemplarCity: 'عدن'),
+    'Asia/Almaty': TimeZoneNames(exemplarCity: 'الماتي'),
+    'Asia/Amman': TimeZoneNames(exemplarCity: 'امان'),
+    'Asia/Anadyr': TimeZoneNames(exemplarCity: 'انيدر'),
+    'Asia/Aqtau': TimeZoneNames(exemplarCity: 'اڪٽائو'),
+    'Asia/Aqtobe': TimeZoneNames(exemplarCity: 'ايڪٽوب'),
+    'Asia/Ashgabat': TimeZoneNames(exemplarCity: 'آشگاباد'),
+    'Asia/Atyrau': TimeZoneNames(exemplarCity: 'آتيرائو'),
+    'Asia/Baghdad': TimeZoneNames(exemplarCity: 'بغداد'),
+    'Asia/Bahrain': TimeZoneNames(exemplarCity: 'بحرين'),
+    'Asia/Baku': TimeZoneNames(exemplarCity: 'باڪو'),
+    'Asia/Bangkok': TimeZoneNames(exemplarCity: 'بئنڪاڪ'),
+    'Asia/Barnaul': TimeZoneNames(exemplarCity: 'برنل'),
+    'Asia/Beirut': TimeZoneNames(exemplarCity: 'بيروت'),
+    'Asia/Bishkek': TimeZoneNames(exemplarCity: 'بشڪيڪ'),
+    'Asia/Brunei': TimeZoneNames(exemplarCity: 'برونائي'),
+    'Asia/Calcutta': TimeZoneNames(exemplarCity: 'ڪلڪتا'),
+    'Asia/Chita': TimeZoneNames(exemplarCity: 'چيتا'),
+    'Asia/Colombo': TimeZoneNames(exemplarCity: 'ڪولمبو'),
+    'Asia/Damascus': TimeZoneNames(exemplarCity: 'دمشق'),
+    'Asia/Dhaka': TimeZoneNames(exemplarCity: 'ڍاڪا'),
+    'Asia/Dili': TimeZoneNames(exemplarCity: 'دلي'),
+    'Asia/Dubai': TimeZoneNames(exemplarCity: 'دبئي'),
+    'Asia/Dushanbe': TimeZoneNames(exemplarCity: 'دوشانبي'),
+    'Asia/Famagusta': TimeZoneNames(exemplarCity: 'فاماگوستا'),
+    'Asia/Gaza': TimeZoneNames(exemplarCity: 'غزه'),
+    'Asia/Hebron': TimeZoneNames(exemplarCity: 'هيبرون'),
+    'Asia/Hong_Kong': TimeZoneNames(exemplarCity: 'هانگ ڪانگ'),
+    'Asia/Hovd': TimeZoneNames(exemplarCity: 'هووڊ'),
+    'Asia/Irkutsk': TimeZoneNames(exemplarCity: 'ارڪتسڪ'),
+    'Asia/Jakarta': TimeZoneNames(exemplarCity: 'جڪارتا'),
+    'Asia/Jayapura': TimeZoneNames(exemplarCity: 'جياپورا'),
+    'Asia/Jerusalem': TimeZoneNames(exemplarCity: 'يوروشلم'),
+    'Asia/Kabul': TimeZoneNames(exemplarCity: 'ڪابل'),
+    'Asia/Kamchatka': TimeZoneNames(exemplarCity: 'ڪمچاسڪي'),
+    'Asia/Karachi': TimeZoneNames(exemplarCity: 'ڪراچي'),
+    'Asia/Katmandu': TimeZoneNames(exemplarCity: 'کٽمنڊو'),
+    'Asia/Khandyga': TimeZoneNames(exemplarCity: 'کندياگا'),
+    'Asia/Krasnoyarsk': TimeZoneNames(exemplarCity: 'ڪريسنويارسڪ'),
+    'Asia/Kuala_Lumpur': TimeZoneNames(exemplarCity: 'ڪوالالمپور'),
+    'Asia/Kuching': TimeZoneNames(exemplarCity: 'کوچنگ'),
+    'Asia/Kuwait': TimeZoneNames(exemplarCity: 'ڪويت'),
+    'Asia/Macau': TimeZoneNames(exemplarCity: 'مڪائو'),
+    'Asia/Magadan': TimeZoneNames(exemplarCity: 'مگادان'),
+    'Asia/Makassar': TimeZoneNames(exemplarCity: 'ميڪاسر'),
+    'Asia/Manila': TimeZoneNames(exemplarCity: 'منيلا'),
+    'Asia/Muscat': TimeZoneNames(exemplarCity: 'مسقط'),
+    'Asia/Nicosia': TimeZoneNames(exemplarCity: 'نيڪوسيا'),
+    'Asia/Novokuznetsk': TimeZoneNames(exemplarCity: 'نووڪزنيتسڪ'),
+    'Asia/Novosibirsk': TimeZoneNames(exemplarCity: 'نوواسبئيرسڪ'),
+    'Asia/Omsk': TimeZoneNames(exemplarCity: 'اومسڪ'),
+    'Asia/Oral': TimeZoneNames(exemplarCity: 'زباني'),
+    'Asia/Phnom_Penh': TimeZoneNames(exemplarCity: 'فنام پينه'),
+    'Asia/Pontianak': TimeZoneNames(exemplarCity: 'پونٽيانڪ'),
+    'Asia/Pyongyang': TimeZoneNames(exemplarCity: 'شيانگ يانگ'),
+    'Asia/Qatar': TimeZoneNames(exemplarCity: 'قطر'),
+    'Asia/Qostanay': TimeZoneNames(exemplarCity: 'ڪوٽانسي'),
+    'Asia/Qyzylorda': TimeZoneNames(exemplarCity: 'ڪيزلورڊا'),
+    'Asia/Rangoon': TimeZoneNames(exemplarCity: 'رنگون'),
+    'Asia/Riyadh': TimeZoneNames(exemplarCity: 'رياض'),
+    'Asia/Saigon': TimeZoneNames(exemplarCity: 'هوچي من'),
+    'Asia/Sakhalin': TimeZoneNames(exemplarCity: 'شخالين'),
+    'Asia/Samarkand': TimeZoneNames(exemplarCity: 'سمرقند'),
+    'Asia/Seoul': TimeZoneNames(exemplarCity: 'سيول'),
+    'Asia/Shanghai': TimeZoneNames(exemplarCity: 'شنگهائي'),
+    'Asia/Singapore': TimeZoneNames(exemplarCity: 'سنگاپور'),
+    'Asia/Srednekolymsk': TimeZoneNames(exemplarCity: 'سريديڪوليمسڪ'),
+    'Asia/Taipei': TimeZoneNames(exemplarCity: 'تائپي'),
+    'Asia/Tashkent': TimeZoneNames(exemplarCity: 'تاشقنت'),
+    'Asia/Tbilisi': TimeZoneNames(exemplarCity: 'تبليسي'),
+    'Asia/Tehran': TimeZoneNames(exemplarCity: 'تهران'),
+    'Asia/Thimphu': TimeZoneNames(exemplarCity: 'ٿمفو'),
+    'Asia/Tokyo': TimeZoneNames(exemplarCity: 'ٽوڪيو'),
+    'Asia/Tomsk': TimeZoneNames(exemplarCity: 'تمسڪ'),
+    'Asia/Ulaanbaatar': TimeZoneNames(exemplarCity: 'اولان باتر'),
+    'Asia/Urumqi': TimeZoneNames(exemplarCity: 'يورمڪي'),
+    'Asia/Ust-Nera': TimeZoneNames(exemplarCity: 'اسٽ نيرا'),
+    'Asia/Vientiane': TimeZoneNames(exemplarCity: 'وينٽيان'),
+    'Asia/Vladivostok': TimeZoneNames(exemplarCity: 'ولادووستوڪ'),
+    'Asia/Yakutsk': TimeZoneNames(exemplarCity: 'ياڪتسڪ'),
+    'Asia/Yekaterinburg': TimeZoneNames(exemplarCity: 'یڪاٽرنبرگ'),
+    'Asia/Yerevan': TimeZoneNames(exemplarCity: 'يريوان'),
+    'Indian/Antananarivo': TimeZoneNames(exemplarCity: 'انتاناناريوو'),
+    'Indian/Chagos': TimeZoneNames(exemplarCity: 'چاگوس'),
+    'Indian/Christmas': TimeZoneNames(exemplarCity: 'ڪرسمس'),
+    'Indian/Cocos': TimeZoneNames(exemplarCity: 'ڪوڪوس'),
+    'Indian/Comoro': TimeZoneNames(exemplarCity: 'ڪومورو'),
+    'Indian/Kerguelen': TimeZoneNames(exemplarCity: 'ڪرگيولين'),
+    'Indian/Mahe': TimeZoneNames(exemplarCity: 'ماهي'),
+    'Indian/Maldives': TimeZoneNames(exemplarCity: 'مالديپ'),
+    'Indian/Mauritius': TimeZoneNames(exemplarCity: 'موريشس'),
+    'Indian/Mayotte': TimeZoneNames(exemplarCity: 'مياٽي'),
+    'Indian/Reunion': TimeZoneNames(exemplarCity: 'ري يونين'),
+    'Australia/Adelaide': TimeZoneNames(exemplarCity: 'ايڊيليڊ'),
+    'Australia/Brisbane': TimeZoneNames(exemplarCity: 'برسبين'),
+    'Australia/Broken_Hill': TimeZoneNames(exemplarCity: 'بروڪن هل'),
+    'Australia/Darwin': TimeZoneNames(exemplarCity: 'ڊارون'),
+    'Australia/Eucla': TimeZoneNames(exemplarCity: 'يوڪلا'),
+    'Australia/Hobart': TimeZoneNames(exemplarCity: 'هوبارٽ'),
+    'Australia/Lindeman': TimeZoneNames(exemplarCity: 'لنڊمين'),
+    'Australia/Lord_Howe': TimeZoneNames(exemplarCity: 'لارڊ هائو'),
+    'Australia/Melbourne': TimeZoneNames(exemplarCity: 'ميلبورن'),
+    'Australia/Perth': TimeZoneNames(exemplarCity: 'پرٿ'),
+    'Australia/Sydney': TimeZoneNames(exemplarCity: 'سڊني'),
+    'Pacific/Apia': TimeZoneNames(exemplarCity: 'اپيا'),
+    'Pacific/Auckland': TimeZoneNames(exemplarCity: 'آڪلينڊ'),
+    'Pacific/Bougainville': TimeZoneNames(exemplarCity: 'بوگين ويليا'),
+    'Pacific/Chatham': TimeZoneNames(exemplarCity: 'چئٿم'),
+    'Pacific/Easter': TimeZoneNames(exemplarCity: 'ايسٽر'),
+    'Pacific/Efate': TimeZoneNames(exemplarCity: 'افاتي'),
+    'Pacific/Enderbury': TimeZoneNames(exemplarCity: 'اينڊربري'),
+    'Pacific/Fakaofo': TimeZoneNames(exemplarCity: 'فڪائوفو'),
+    'Pacific/Fiji': TimeZoneNames(exemplarCity: 'فجي'),
+    'Pacific/Funafuti': TimeZoneNames(exemplarCity: 'فنافوٽي'),
+    'Pacific/Galapagos': TimeZoneNames(exemplarCity: 'گالاپاگوز'),
+    'Pacific/Gambier': TimeZoneNames(exemplarCity: 'گيمبيئر'),
+    'Pacific/Guadalcanal': TimeZoneNames(exemplarCity: 'گواڊل ڪينال'),
+    'Pacific/Guam': TimeZoneNames(exemplarCity: 'گوام'),
+    'Pacific/Honolulu': TimeZoneNames(exemplarCity: 'هونو لولو'),
+    'Pacific/Kanton': TimeZoneNames(exemplarCity: 'ڪانٽن'),
+    'Pacific/Kiritimati': TimeZoneNames(exemplarCity: 'ڪريٽمٽي'),
+    'Pacific/Kosrae': TimeZoneNames(exemplarCity: 'ڪوسرائي'),
+    'Pacific/Kwajalein': TimeZoneNames(exemplarCity: 'ڪواجلين'),
+    'Pacific/Majuro': TimeZoneNames(exemplarCity: 'مجورو'),
+    'Pacific/Marquesas': TimeZoneNames(exemplarCity: 'مرڪيوسس'),
+    'Pacific/Midway': TimeZoneNames(exemplarCity: 'مڊوي'),
+    'Pacific/Nauru': TimeZoneNames(exemplarCity: 'نائرو'),
+    'Pacific/Niue': TimeZoneNames(exemplarCity: 'نيووي'),
+    'Pacific/Norfolk': TimeZoneNames(exemplarCity: 'نار فوڪ'),
+    'Pacific/Noumea': TimeZoneNames(exemplarCity: 'نائوميا'),
+    'Pacific/Pago_Pago': TimeZoneNames(exemplarCity: 'پاگو پاگو'),
+    'Pacific/Palau': TimeZoneNames(exemplarCity: 'پلائو'),
+    'Pacific/Pitcairn': TimeZoneNames(exemplarCity: 'پٽڪيرن'),
+    'Pacific/Ponape': TimeZoneNames(exemplarCity: 'پونپیئي'),
+    'Pacific/Port_Moresby': TimeZoneNames(exemplarCity: 'پورٽ مورسبي'),
+    'Pacific/Rarotonga': TimeZoneNames(exemplarCity: 'راروٽونگا'),
+    'Pacific/Saipan': TimeZoneNames(exemplarCity: 'سيپن'),
+    'Pacific/Tahiti': TimeZoneNames(exemplarCity: 'تاهٽي'),
+    'Pacific/Tarawa': TimeZoneNames(exemplarCity: 'تراوا'),
+    'Pacific/Tongatapu': TimeZoneNames(exemplarCity: 'ٽونگاٽاپو'),
+    'Pacific/Truk': TimeZoneNames(exemplarCity: 'چيوڪ'),
+    'Pacific/Wake': TimeZoneNames(exemplarCity: 'ويڪ'),
+    'Pacific/Wallis': TimeZoneNames(exemplarCity: 'ويلس'),
+    'Arctic/Longyearbyen': TimeZoneNames(exemplarCity: 'لانگ ائيربن'),
+    'Antarctica/Casey': TimeZoneNames(exemplarCity: 'ڪيسي'),
+    'Antarctica/Davis': TimeZoneNames(exemplarCity: 'ڊيوس'),
+    'Antarctica/DumontDUrville': TimeZoneNames(exemplarCity: 'ڊومانٽ درويئل'),
+    'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'مڪوائري'),
+    'Antarctica/Mawson': TimeZoneNames(exemplarCity: 'موسن'),
+    'Antarctica/McMurdo': TimeZoneNames(exemplarCity: 'ميڪ مرڊو'),
+    'Antarctica/Palmer': TimeZoneNames(exemplarCity: 'پامر'),
+    'Antarctica/Rothera': TimeZoneNames(exemplarCity: 'روڌرا'),
+    'Antarctica/Syowa': TimeZoneNames(exemplarCity: 'سيووا'),
+    'Antarctica/Troll': TimeZoneNames(exemplarCity: 'ٽرول'),
+    'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'ووستوڪ'),
     'Etc/UTC': TimeZoneNames(
-      long: TimeZoneName(
-        standard: 'گڏيل دنياوي وقت',
-      ),
-      short: TimeZoneName(
-        standard: 'م ع و',
-      ),
-    ),
-    'Etc/Unknown': TimeZoneNames(
-      exemplarCity: 'اڻڄاتل شهر',
-    ),
-  }, (key) => key.toLowerCase());
+        long: TimeZoneName(standard: 'گڏيل دنياوي وقت'),
+        short: TimeZoneName(standard: 'م ع و')),
+    'Etc/Unknown': TimeZoneNames(exemplarCity: 'اڻڄاتل شهر'),
+  };
 
   @override
-  final metaZoneNames = CanonicalizedMap<String, String, MetaZone>.from({
-    'Afghanistan': MetaZone(
-      code: 'Afghanistan',
-      long: TimeZoneName(
-        standard: 'افغانستان جو وقت',
-      ),
-    ),
-    'Africa_Central': MetaZone(
-      code: 'Africa_Central',
-      long: TimeZoneName(
-        standard: 'مرڪزي آفريقا جو وقت',
-      ),
-    ),
-    'Africa_Eastern': MetaZone(
-      code: 'Africa_Eastern',
-      long: TimeZoneName(
-        standard: 'اوڀر آفريڪا جو وقت',
-      ),
-    ),
-    'Africa_Southern': MetaZone(
-      code: 'Africa_Southern',
-      long: TimeZoneName(
-        standard: 'ڏکڻ آفريڪا جو معياري وقت',
-      ),
-    ),
-    'Africa_Western': MetaZone(
-      code: 'Africa_Western',
-      long: TimeZoneName(
-        generic: 'اولهه آفريقا جو وقت',
-        standard: 'اولهه آفريقا جو معياري وقت',
-        daylight: 'اولهه آفريقا جي اونهاري جو وقت',
-      ),
-    ),
-    'Alaska': MetaZone(
-      code: 'Alaska',
-      long: TimeZoneName(
-        generic: 'الاسڪا جو وقت',
-        standard: 'الاسڪا جو معياري وقت',
-        daylight: 'الاسڪا جي ڏينهن جو وقت',
-      ),
-    ),
-    'Amazon': MetaZone(
-      code: 'Amazon',
-      long: TimeZoneName(
-        generic: 'ايميزون جو وقت',
-        standard: 'ايميزون جو معياري وقت',
-        daylight: 'ايميزون جي اونهاري جو وقت',
-      ),
-    ),
-    'America_Central': MetaZone(
-      code: 'America_Central',
-      long: TimeZoneName(
-        generic: 'مرڪزي وقت',
-        standard: 'مرڪزي معياري وقت',
-        daylight: 'مرڪزي ڏينهن جو وقت',
-      ),
-    ),
-    'America_Eastern': MetaZone(
-      code: 'America_Eastern',
-      long: TimeZoneName(
-        generic: 'مشرقي وقت',
-        standard: 'مشرقي معياري وقت',
-        daylight: 'مشرقي ڏينهن جو وقت',
-      ),
-    ),
-    'America_Mountain': MetaZone(
-      code: 'America_Mountain',
-      long: TimeZoneName(
-        generic: 'پهاڙي وقت',
-        standard: 'پهاڙي معياري وقت',
-        daylight: 'پهاڙي ڏينهن جو وقت',
-      ),
-    ),
-    'America_Pacific': MetaZone(
-      code: 'America_Pacific',
-      long: TimeZoneName(
-        generic: 'پيسيفڪ وقت',
-        standard: 'پيسيفڪ معياري وقت',
-        daylight: 'پيسيفڪ ڏينهن جو وقت',
-      ),
-    ),
-    'Apia': MetaZone(
-      code: 'Apia',
-      long: TimeZoneName(
-        generic: 'اپيا جو وقت',
-        standard: 'اپيا جو معياري وقت',
-        daylight: 'اپيا جي ڏينهن جو وقت',
-      ),
-    ),
-    'Arabian': MetaZone(
-      code: 'Arabian',
-      long: TimeZoneName(
-        generic: 'عربين جو وقت',
-        standard: 'عربين جو معياري وقت',
-        daylight: 'عربين جي ڏينهن جو وقت',
-      ),
-    ),
-    'Argentina': MetaZone(
-      code: 'Argentina',
-      long: TimeZoneName(
-        generic: 'ارجنٽينا جو وقت',
-        standard: 'ارجنٽائن معياري وقت',
-        daylight: 'ارجنٽائن جي اونهاري جو وقت',
-      ),
-    ),
-    'Argentina_Western': MetaZone(
-      code: 'Argentina_Western',
-      long: TimeZoneName(
-        generic: 'اولهه ارجنٽينا جو وقت',
-        standard: 'اولهه ارجنٽينا جو معياري وقت',
-        daylight: 'اولهه ارجنٽينا جي اونهاري جو وقت',
-      ),
-    ),
-    'Armenia': MetaZone(
-      code: 'Armenia',
-      long: TimeZoneName(
-        generic: 'آرمينيا جو وقت',
-        standard: 'آرمينيا جو معياري وقت',
-        daylight: 'آرمينيا جي اونهاري جو وقت',
-      ),
-    ),
-    'Atlantic': MetaZone(
-      code: 'Atlantic',
-      long: TimeZoneName(
-        generic: 'ايٽلانٽڪ جو وقت',
-        standard: 'ايٽلانٽڪ جو معياري وقت',
-        daylight: 'ايٽلانٽڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Australia_Central': MetaZone(
-      code: 'Australia_Central',
-      long: TimeZoneName(
-        generic: 'مرڪزي آسٽريليا جو وقت',
-        standard: 'آسٽريليا جو مرڪزي معياري وقت',
-        daylight: 'آسٽريليا جو مرڪزي ڏينهن جو وقت',
-      ),
-    ),
-    'Australia_CentralWestern': MetaZone(
-      code: 'Australia_CentralWestern',
-      long: TimeZoneName(
-        generic: 'آسٽريليا جو مرڪزي مغربي وقت',
-        standard: 'آسٽريليا جو مرڪزي مغربي معياري وقت',
-        daylight: 'آسٽريليا جو مرڪزي مغربي ڏينهن جو وقت',
-      ),
-    ),
-    'Australia_Eastern': MetaZone(
-      code: 'Australia_Eastern',
-      long: TimeZoneName(
-        generic: 'اوڀر آسٽريليا جو وقت',
-        standard: 'آسٽريليا جو مشرقي معياري وقت',
-        daylight: 'آسٽريليا جو مشرقي ڏينهن جو وقت',
-      ),
-    ),
-    'Australia_Western': MetaZone(
-      code: 'Australia_Western',
-      long: TimeZoneName(
-        generic: 'مغربي آسٽريليا جو وقت',
-        standard: 'آسٽريليا جو مغربي معياري وقت',
-        daylight: 'آسٽريليا جو مغربي ڏينهن جو وقت',
-      ),
-    ),
-    'Azerbaijan': MetaZone(
-      code: 'Azerbaijan',
-      long: TimeZoneName(
-        generic: 'آذربائيجان جو وقت',
-        standard: 'آذربائيجان جو معياري وقت',
-        daylight: 'آذربائيجان جي اونهاري جو وقت',
-      ),
-    ),
-    'Azores': MetaZone(
-      code: 'Azores',
-      long: TimeZoneName(
-        generic: 'ازورز جو وقت',
-        standard: 'ازورز جو معياري وقت',
-        daylight: 'ازورز جي اونهاري جو وقت',
-      ),
-    ),
-    'Bangladesh': MetaZone(
-      code: 'Bangladesh',
-      long: TimeZoneName(
-        generic: 'بنگلاديش جو وقت',
-        standard: 'بنگلاديش جو معياري وقت',
-        daylight: 'بنگلاديش جي اونهاري جو وقت',
-      ),
-    ),
-    'Bhutan': MetaZone(
-      code: 'Bhutan',
-      long: TimeZoneName(
-        standard: 'ڀوٽان جو وقت',
-      ),
-    ),
-    'Bolivia': MetaZone(
-      code: 'Bolivia',
-      long: TimeZoneName(
-        standard: 'بولويائي وقت',
-      ),
-    ),
-    'Brasilia': MetaZone(
-      code: 'Brasilia',
-      long: TimeZoneName(
-        generic: 'بريسيليائي وقت',
-        standard: 'براسيليا جو معياري وقت',
-        daylight: 'براسيليا جي اونهاري جو وقت',
-      ),
-    ),
-    'Brunei': MetaZone(
-      code: 'Brunei',
-      long: TimeZoneName(
-        standard: 'برونائي دارالسلام جو وقت',
-      ),
-    ),
-    'Cape_Verde': MetaZone(
-      code: 'Cape_Verde',
-      long: TimeZoneName(
-        generic: 'ڪيپ ورڊ جو وقت',
-        standard: 'ڪيپ ورڊ جو معياري وقت',
-        daylight: 'ڪيپ ورڊ جي اونهاري جو وقت',
-      ),
-    ),
-    'Chamorro': MetaZone(
-      code: 'Chamorro',
-      long: TimeZoneName(
-        standard: 'چمورو جو معياري وقت',
-      ),
-    ),
-    'Chatham': MetaZone(
-      code: 'Chatham',
-      long: TimeZoneName(
-        generic: 'چئٿم جو وقت',
-        standard: 'چئٿم جو معياري وقت',
-        daylight: 'چئٿم جي ڏينهن جو وقت',
-      ),
-    ),
-    'Chile': MetaZone(
-      code: 'Chile',
-      long: TimeZoneName(
-        generic: 'چلي جو وقت',
-        standard: 'چلي جو معياري وقت',
-        daylight: 'چلي جي اونهاري جو وقت',
-      ),
-    ),
-    'China': MetaZone(
-      code: 'China',
-      long: TimeZoneName(
-        generic: 'چين جو وقت',
-        standard: 'چائنا جو معياري وقت',
-        daylight: 'چائنا جي ڏينهن جو وقت',
-      ),
-    ),
-    'Christmas': MetaZone(
-      code: 'Christmas',
-      long: TimeZoneName(
-        standard: 'ڪرسمس آئي لينڊ جو وقت',
-      ),
-    ),
-    'Cocos': MetaZone(
-      code: 'Cocos',
-      long: TimeZoneName(
-        standard: 'ڪوڪوس آئي لينڊ جو وقت',
-      ),
-    ),
-    'Colombia': MetaZone(
-      code: 'Colombia',
-      long: TimeZoneName(
-        generic: 'ڪولمبيا جو وقت',
-        standard: 'ڪولمبيا جو معياري وقت',
-        daylight: 'ڪولمبيا جي اونهاري جو وقت',
-      ),
-    ),
-    'Cook': MetaZone(
-      code: 'Cook',
-      long: TimeZoneName(
-        generic: 'ڪوڪ آئي لينڊ جو وقت',
-        standard: 'ڪوڪ آئي لينڊ جو معياري وقت',
-        daylight: 'ڪوڪ آئي لينڊ جي اڌ اونهاري جو وقت',
-      ),
-    ),
-    'Cuba': MetaZone(
-      code: 'Cuba',
-      long: TimeZoneName(
-        generic: 'ڪيوبا جو وقت',
-        standard: 'ڪيوبا جو معياري وقت',
-        daylight: 'ڪيوبا جي ڏينهن جو وقت',
-      ),
-    ),
-    'Davis': MetaZone(
-      code: 'Davis',
-      long: TimeZoneName(
-        standard: 'ڊيوس جو وقت',
-      ),
-    ),
-    'DumontDUrville': MetaZone(
-      code: 'DumontDUrville',
-      long: TimeZoneName(
-        standard: 'ڊومانٽ درويئل جو وقت',
-      ),
-    ),
-    'East_Timor': MetaZone(
-      code: 'East_Timor',
-      long: TimeZoneName(
-        standard: 'اوڀر تيمور جو وقت',
-      ),
-    ),
-    'Easter': MetaZone(
-      code: 'Easter',
-      long: TimeZoneName(
-        generic: 'ايسٽر آئي لينڊ جو وقت',
-        standard: 'ايسٽر آئي لينڊ جو معياري وقت',
-        daylight: 'ايسٽر آئي لينڊ جي اونهاري جو وقت',
-      ),
-    ),
-    'Ecuador': MetaZone(
-      code: 'Ecuador',
-      long: TimeZoneName(
-        standard: 'ايڪواڊور جو وقت',
-      ),
-    ),
-    'Europe_Central': MetaZone(
-      code: 'Europe_Central',
-      long: TimeZoneName(
-        generic: 'مرڪزي يورپي وقت',
-        standard: 'مرڪزي يورپي معياري وقت',
-        daylight: 'مرڪزي يورپي اونهاري جو وقت',
-      ),
-    ),
-    'Europe_Eastern': MetaZone(
-      code: 'Europe_Eastern',
-      long: TimeZoneName(
-        generic: 'مشرقي يورپي وقت',
-        standard: 'مشرقي يورپي معياري وقت',
-        daylight: 'مشرقي يورپي اونهاري جو وقت',
-      ),
-    ),
-    'Europe_Further_Eastern': MetaZone(
-      code: 'Europe_Further_Eastern',
-      long: TimeZoneName(
-        standard: 'وڌيڪ مشرقي يورپي وقت',
-      ),
-    ),
-    'Europe_Western': MetaZone(
-      code: 'Europe_Western',
-      long: TimeZoneName(
-        generic: 'اولهه يورپي وقت',
-        standard: 'اولهه يورپي معياري وقت',
-        daylight: 'اولهه يورپي ڏينهن جو وقت',
-      ),
-    ),
-    'Falkland': MetaZone(
-      code: 'Falkland',
-      long: TimeZoneName(
-        generic: 'فاڪ لينڊ آئي لينڊ جو وقت',
-        standard: 'فاڪ لينڊ آئي لينڊ جو معياري وقت',
-        daylight: 'فاڪ لينڊ آئي لينڊ جي اونهاري جو وقت',
-      ),
-    ),
-    'Fiji': MetaZone(
-      code: 'Fiji',
-      long: TimeZoneName(
-        generic: 'فجي جو وقت',
-        standard: 'فجي جو معياري وقت',
-        daylight: 'فجي جي اونهاري جو وقت',
-      ),
-    ),
-    'French_Guiana': MetaZone(
-      code: 'French_Guiana',
-      long: TimeZoneName(
-        standard: 'فرانسيسي گيانا جو وقت',
-      ),
-    ),
-    'French_Southern': MetaZone(
-      code: 'French_Southern',
-      long: TimeZoneName(
-        standard: 'فرانسيسي ڏاکڻيو ۽ انٽارڪٽڪ وقت',
-      ),
-    ),
-    'Galapagos': MetaZone(
-      code: 'Galapagos',
-      long: TimeZoneName(
-        standard: 'گالاپاگوز جو وقت',
-      ),
-    ),
-    'Gambier': MetaZone(
-      code: 'Gambier',
-      long: TimeZoneName(
-        standard: 'گيمبيئر جو وقت',
-      ),
-    ),
-    'Georgia': MetaZone(
-      code: 'Georgia',
-      long: TimeZoneName(
-        generic: 'جارجيا جو وقت',
-        standard: 'جارجيا جو معياري وقت',
-        daylight: 'جارجيا جي اونهاري جو وقت',
-      ),
-    ),
-    'Gilbert_Islands': MetaZone(
-      code: 'Gilbert_Islands',
-      long: TimeZoneName(
-        standard: 'گلبرٽ آئي لينڊ جو وقت',
-      ),
-    ),
-    'GMT': MetaZone(
-      code: 'GMT',
-      long: TimeZoneName(
-        standard: 'گرين وچ مين ٽائيم',
-      ),
-    ),
-    'Greenland_Eastern': MetaZone(
-      code: 'Greenland_Eastern',
-      long: TimeZoneName(
-        generic: 'مشرقي گرين لينڊ جو وقت',
-        standard: 'مشرقي گرين لينڊ جو معياري وقت',
-        daylight: 'مشرقي گرين لينڊ جي اونهاري جو وقت',
-      ),
-    ),
-    'Greenland_Western': MetaZone(
-      code: 'Greenland_Western',
-      long: TimeZoneName(
-        generic: 'مغربي گرين لينڊ جو وقت',
-        standard: 'مغربي گرين لينڊ جو معياري وقت',
-        daylight: 'مغربي گرين لينڊ جي اونهاري جو وقت',
-      ),
-    ),
-    'Gulf': MetaZone(
-      code: 'Gulf',
-      long: TimeZoneName(
-        standard: 'خليجي معياري وقت',
-      ),
-    ),
-    'Guyana': MetaZone(
-      code: 'Guyana',
-      long: TimeZoneName(
-        standard: 'گيانائي وقت',
-      ),
-    ),
-    'Hawaii_Aleutian': MetaZone(
-      code: 'Hawaii_Aleutian',
-      long: TimeZoneName(
-        generic: 'هوائي اليوٽين جو وقت',
-        standard: 'هوائي اليوٽين جو معياري وقت',
-        daylight: 'هوائي اليوٽين جي ڏينهن جو وقت',
-      ),
-    ),
-    'Hong_Kong': MetaZone(
-      code: 'Hong_Kong',
-      long: TimeZoneName(
-        generic: 'هانگ ڪانگ جو وقت',
-        standard: 'هانگ ڪانگ جو معياري وقت',
-        daylight: 'هانگ ڪانگ جي اونهاري جو وقت',
-      ),
-    ),
-    'Hovd': MetaZone(
-      code: 'Hovd',
-      long: TimeZoneName(
-        generic: 'هووڊ جو وقت',
-        standard: 'هووڊ جو معياري وقت',
-        daylight: 'هووڊ جي اونهاري جو وقت',
-      ),
-    ),
-    'India': MetaZone(
-      code: 'India',
-      long: TimeZoneName(
-        standard: 'ڀارت جو معياري وقت',
-      ),
-    ),
-    'Indian_Ocean': MetaZone(
-      code: 'Indian_Ocean',
-      long: TimeZoneName(
-        standard: 'هند سمنڊ جو وقت',
-      ),
-    ),
-    'Indochina': MetaZone(
-      code: 'Indochina',
-      long: TimeZoneName(
-        standard: 'انڊو چائنا جو وقت',
-      ),
-    ),
-    'Indonesia_Central': MetaZone(
-      code: 'Indonesia_Central',
-      long: TimeZoneName(
-        standard: 'مرڪزي انڊونيشيا جو وقت',
-      ),
-    ),
-    'Indonesia_Eastern': MetaZone(
-      code: 'Indonesia_Eastern',
-      long: TimeZoneName(
-        standard: 'اوڀر انڊونيشيا جو وقت',
-      ),
-    ),
-    'Indonesia_Western': MetaZone(
-      code: 'Indonesia_Western',
-      long: TimeZoneName(
-        standard: 'اولهه انڊونيشيا جو وقت',
-      ),
-    ),
-    'Iran': MetaZone(
-      code: 'Iran',
-      long: TimeZoneName(
-        generic: 'ايران جو وقت',
-        standard: 'ايران جو معياري وقت',
-        daylight: 'ايران جي ڏينهن جو وقت',
-      ),
-    ),
-    'Irkutsk': MetaZone(
-      code: 'Irkutsk',
-      long: TimeZoneName(
-        generic: 'ارڪتسڪ جو وقت',
-        standard: 'ارڪتسڪ جو معياري وقت',
-        daylight: 'ارڪتسڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Israel': MetaZone(
-      code: 'Israel',
-      long: TimeZoneName(
-        generic: 'اسرائيل جو وقت',
-        standard: 'اسرائيل جو معياري وقت',
-        daylight: 'اسرائيل جي ڏينهن جو وقت',
-      ),
-    ),
-    'Japan': MetaZone(
-      code: 'Japan',
-      long: TimeZoneName(
-        generic: 'جاپان جو وقت',
-        standard: 'جاپان جو معياري وقت',
-        daylight: 'جاپان جي ڏينهن جو وقت',
-      ),
-    ),
-    'Kazakhstan': MetaZone(
-      code: 'Kazakhstan',
-      long: TimeZoneName(
-        standard: 'قزاقستان وقت',
-      ),
-    ),
-    'Kazakhstan_Eastern': MetaZone(
-      code: 'Kazakhstan_Eastern',
-      long: TimeZoneName(
-        standard: 'اوڀر قزاقستان جو وقت',
-      ),
-    ),
-    'Kazakhstan_Western': MetaZone(
-      code: 'Kazakhstan_Western',
-      long: TimeZoneName(
-        standard: 'اولهه قازقستان جو وقت',
-      ),
-    ),
-    'Korea': MetaZone(
-      code: 'Korea',
-      long: TimeZoneName(
-        generic: 'ڪوريا جو وقت',
-        standard: 'ڪوريا جو معياري وقت',
-        daylight: 'ڪوريا جي ڏينهن جو وقت',
-      ),
-    ),
-    'Kosrae': MetaZone(
-      code: 'Kosrae',
-      long: TimeZoneName(
-        standard: 'ڪوسرائي جو وقت',
-      ),
-    ),
-    'Krasnoyarsk': MetaZone(
-      code: 'Krasnoyarsk',
-      long: TimeZoneName(
-        generic: 'ڪریسنویارسڪ جو وقت',
-        standard: 'ڪریسنویارسڪ جو معياري وقت',
-        daylight: 'ڪریسنویارسڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Kyrgystan': MetaZone(
-      code: 'Kyrgystan',
-      long: TimeZoneName(
-        standard: 'ڪرغزستان جو وقت',
-      ),
-    ),
-    'Line_Islands': MetaZone(
-      code: 'Line_Islands',
-      long: TimeZoneName(
-        standard: 'لائن آئي لينڊ جو وقت',
-      ),
-    ),
-    'Lord_Howe': MetaZone(
-      code: 'Lord_Howe',
-      long: TimeZoneName(
-        generic: 'لورڊ هووي جو وقت',
-        standard: 'لورڊ هووي جو معياري وقت',
-        daylight: 'لورڊ هووي جي ڏينهن جو وقت',
-      ),
-    ),
-    'Magadan': MetaZone(
-      code: 'Magadan',
-      long: TimeZoneName(
-        generic: 'مگادان جو وقت',
-        standard: 'مگادان جو معياري وقت',
-        daylight: 'مگادان جي ڏينهن جي وقت',
-      ),
-    ),
-    'Malaysia': MetaZone(
-      code: 'Malaysia',
-      long: TimeZoneName(
-        standard: 'ملائيشيا جو وقت',
-      ),
-    ),
-    'Maldives': MetaZone(
-      code: 'Maldives',
-      long: TimeZoneName(
-        standard: 'مالديپ جو وقت',
-      ),
-    ),
-    'Marquesas': MetaZone(
-      code: 'Marquesas',
-      long: TimeZoneName(
-        standard: 'مرڪيوسس جو وقت',
-      ),
-    ),
-    'Marshall_Islands': MetaZone(
-      code: 'Marshall_Islands',
-      long: TimeZoneName(
-        standard: 'مارشل آئي لينڊ جو وقت',
-      ),
-    ),
-    'Mauritius': MetaZone(
-      code: 'Mauritius',
-      long: TimeZoneName(
-        generic: 'موريشيس جو وقت',
-        standard: 'موريشيس جو معياري وقت',
-        daylight: 'موريشيس جي اونهاري جو وقت',
-      ),
-    ),
-    'Mawson': MetaZone(
-      code: 'Mawson',
-      long: TimeZoneName(
-        standard: 'مائوسن جو وقت',
-      ),
-    ),
-    'Mexico_Pacific': MetaZone(
-      code: 'Mexico_Pacific',
-      long: TimeZoneName(
-        generic: 'ميڪسيڪن پيسيفڪ وقت',
-        standard: 'ميڪسيڪن پيسيفڪ جو معياري وقت',
-        daylight: 'ميڪسيڪن پيسيفڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Mongolia': MetaZone(
-      code: 'Mongolia',
-      long: TimeZoneName(
-        generic: 'اولان باتر جو وقت',
-        standard: 'اولان باتر جو معياري وقت',
-        daylight: 'اولان باتر جي اونهاري جو وقت',
-      ),
-    ),
-    'Moscow': MetaZone(
-      code: 'Moscow',
-      long: TimeZoneName(
-        generic: 'ماسڪو جو وقت',
-        standard: 'ماسڪو جو معياري وقت',
-        daylight: 'ماسڪو جي ڏينهن جي وقت',
-      ),
-    ),
-    'Myanmar': MetaZone(
-      code: 'Myanmar',
-      long: TimeZoneName(
-        standard: 'ميانمار جو وقت',
-      ),
-    ),
-    'Nauru': MetaZone(
-      code: 'Nauru',
-      long: TimeZoneName(
-        standard: 'نائورو جو وقت',
-      ),
-    ),
-    'Nepal': MetaZone(
-      code: 'Nepal',
-      long: TimeZoneName(
-        standard: 'نيپال جو وقت',
-      ),
-    ),
-    'New_Caledonia': MetaZone(
-      code: 'New_Caledonia',
-      long: TimeZoneName(
-        generic: 'نيو ڪيليڊونيا جو وقت',
-        standard: 'نيو ڪيليڊونيا جو معياري وقت',
-        daylight: 'نيو ڪيليڊونيا جي اونهاري جو وقت',
-      ),
-    ),
-    'New_Zealand': MetaZone(
-      code: 'New_Zealand',
-      long: TimeZoneName(
-        generic: 'نيوزيلينڊ جو وقت',
-        standard: 'نيوزيلينڊ جو معياري وقت',
-        daylight: 'نيوزيلينڊ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Newfoundland': MetaZone(
-      code: 'Newfoundland',
-      long: TimeZoneName(
-        generic: 'نيو فائونڊ لينڊ جو وقت',
-        standard: 'نيو فائونڊ لينڊ جو معياري وقت',
-        daylight: 'نيو فائونڊ لينڊ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Niue': MetaZone(
-      code: 'Niue',
-      long: TimeZoneName(
-        standard: 'نيووي جو وقت',
-      ),
-    ),
-    'Norfolk': MetaZone(
-      code: 'Norfolk',
-      long: TimeZoneName(
-        generic: 'نار فوڪ آئي لينڊ جو وقت',
-        standard: 'نار فوڪ آئي لينڊ جو معياري وقت',
-        daylight: 'نار فوڪ آئي لينڊ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Noronha': MetaZone(
-      code: 'Noronha',
-      long: TimeZoneName(
-        generic: 'فرنانڊو دي نورونها جو وقت',
-        standard: 'فرنانڊو دي نورونها جو معياري وقت',
-        daylight: 'فرنانڊو دي نورونها جي اونهاري وقت',
-      ),
-    ),
-    'Novosibirsk': MetaZone(
-      code: 'Novosibirsk',
-      long: TimeZoneName(
-        generic: 'نوواسبئيرسڪ جو وقت',
-        standard: 'نوواسبئيرسڪ جو معياري وقت',
-        daylight: 'نوواسبئيرسڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Omsk': MetaZone(
-      code: 'Omsk',
-      long: TimeZoneName(
-        generic: 'اومسڪ جو وقت',
-        standard: 'اومسڪ جو معياري وقت',
-        daylight: 'اومسڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Pakistan': MetaZone(
-      code: 'Pakistan',
-      long: TimeZoneName(
-        generic: 'پاڪستان جو وقت',
-        standard: 'پاڪستان جو معياري وقت',
-        daylight: 'پاڪستان جي اونهاري جو وقت',
-      ),
-    ),
-    'Palau': MetaZone(
-      code: 'Palau',
-      long: TimeZoneName(
-        standard: 'پلائو جو وقت',
-      ),
-    ),
-    'Papua_New_Guinea': MetaZone(
-      code: 'Papua_New_Guinea',
-      long: TimeZoneName(
-        standard: 'پاپوا نيو گني جو وقت',
-      ),
-    ),
-    'Paraguay': MetaZone(
-      code: 'Paraguay',
-      long: TimeZoneName(
-        generic: 'پيراگوئي جو وقت',
-        standard: 'پيراگوئي جو معياري وقت',
-        daylight: 'پيراگوئي جي اونهاري جو وقت',
-      ),
-    ),
-    'Peru': MetaZone(
-      code: 'Peru',
-      long: TimeZoneName(
-        generic: 'پيرو جو وقت',
-        standard: 'پيرو جو معياري وقت',
-        daylight: 'پيرو جي اونهاري جو وقت',
-      ),
-    ),
-    'Philippines': MetaZone(
-      code: 'Philippines',
-      long: TimeZoneName(
-        generic: 'فلپائن جو وقت',
-        standard: 'فلپائن جو معياري وقت',
-        daylight: 'فلپائن جي اونهاري جو وقت',
-      ),
-    ),
-    'Phoenix_Islands': MetaZone(
-      code: 'Phoenix_Islands',
-      long: TimeZoneName(
-        standard: 'فونيڪس آئي لينڊ جو وقت',
-      ),
-    ),
-    'Pierre_Miquelon': MetaZone(
-      code: 'Pierre_Miquelon',
-      long: TimeZoneName(
-        generic: 'سينٽ پيئر ۽ ميڪلون جو وقت',
-        standard: 'سينٽ پيئر ۽ ميڪلون جو معياري وقت',
-        daylight: 'سينٽ پيئر ۽ ميڪلون جي ڏينهن جو وقت',
-      ),
-    ),
-    'Pitcairn': MetaZone(
-      code: 'Pitcairn',
-      long: TimeZoneName(
-        standard: 'پٽڪيرن جو وقت',
-      ),
-    ),
-    'Ponape': MetaZone(
-      code: 'Ponape',
-      long: TimeZoneName(
-        standard: 'پوناپي جو وقت',
-      ),
-    ),
-    'Pyongyang': MetaZone(
-      code: 'Pyongyang',
-      long: TimeZoneName(
-        standard: 'پيانگ يانگ جو وقت',
-      ),
-    ),
-    'Reunion': MetaZone(
-      code: 'Reunion',
-      long: TimeZoneName(
-        standard: 'ري يونين جو وقت',
-      ),
-    ),
-    'Rothera': MetaZone(
-      code: 'Rothera',
-      long: TimeZoneName(
-        standard: 'روٿيرا جو وقت',
-      ),
-    ),
-    'Sakhalin': MetaZone(
-      code: 'Sakhalin',
-      long: TimeZoneName(
-        generic: 'سخالين جو وقت',
-        standard: 'سخالين جو معياري وقت',
-        daylight: 'سخالين جي ڏينهن جو وقت',
-      ),
-    ),
-    'Samoa': MetaZone(
-      code: 'Samoa',
-      long: TimeZoneName(
-        generic: 'ساموا جو وقت',
-        standard: 'ساموا جو معياري وقت',
-        daylight: 'ساموا جي ڏينهن جو وقت',
-      ),
-    ),
-    'Seychelles': MetaZone(
-      code: 'Seychelles',
-      long: TimeZoneName(
-        standard: 'شي شلز جو وقت',
-      ),
-    ),
-    'Singapore': MetaZone(
-      code: 'Singapore',
-      long: TimeZoneName(
-        standard: 'سنگاپور جو معياري وقت',
-      ),
-    ),
-    'Solomon': MetaZone(
-      code: 'Solomon',
-      long: TimeZoneName(
-        standard: 'سولومن آئي لينڊ جو وقت',
-      ),
-    ),
-    'South_Georgia': MetaZone(
-      code: 'South_Georgia',
-      long: TimeZoneName(
-        standard: 'ڏکڻ جارجيا جو وقت',
-      ),
-    ),
-    'Suriname': MetaZone(
-      code: 'Suriname',
-      long: TimeZoneName(
-        standard: 'سوري نام جو وقت',
-      ),
-    ),
-    'Syowa': MetaZone(
-      code: 'Syowa',
-      long: TimeZoneName(
-        standard: 'سائيوا جو وقت',
-      ),
-    ),
-    'Tahiti': MetaZone(
-      code: 'Tahiti',
-      long: TimeZoneName(
-        standard: 'تاهيٽي جو وقت',
-      ),
-    ),
-    'Taipei': MetaZone(
-      code: 'Taipei',
-      long: TimeZoneName(
-        generic: 'تائپي جو وقت',
-        standard: 'تائپي جو معياري وقت',
-        daylight: 'تائپي جي ڏينهن جو وقت',
-      ),
-    ),
-    'Tajikistan': MetaZone(
-      code: 'Tajikistan',
-      long: TimeZoneName(
-        standard: 'تاجڪستان جو وقت',
-      ),
-    ),
-    'Tokelau': MetaZone(
-      code: 'Tokelau',
-      long: TimeZoneName(
-        standard: 'ٽوڪيلائو جو وقت',
-      ),
-    ),
-    'Tonga': MetaZone(
-      code: 'Tonga',
-      long: TimeZoneName(
-        generic: 'ٽونگا جو وقت',
-        standard: 'ٽونگا جو معياري وقت',
-        daylight: 'ٽونگا جي اونهاري جو وقت',
-      ),
-    ),
-    'Truk': MetaZone(
-      code: 'Truk',
-      long: TimeZoneName(
-        standard: 'چيوڪ جو وقت',
-      ),
-    ),
-    'Turkmenistan': MetaZone(
-      code: 'Turkmenistan',
-      long: TimeZoneName(
-        generic: 'ترڪمانستان جو وقت',
-        standard: 'ترڪمانستان جو معياري وقت',
-        daylight: 'ترڪمانستان جي اونهاري جو وقت',
-      ),
-    ),
-    'Tuvalu': MetaZone(
-      code: 'Tuvalu',
-      long: TimeZoneName(
-        standard: 'تووالو جو وقت',
-      ),
-    ),
-    'Uruguay': MetaZone(
-      code: 'Uruguay',
-      long: TimeZoneName(
-        generic: 'يوروگائي جو وقت',
-        standard: 'يوروگائي جو معياري وقت',
-        daylight: 'يوروگائي جي اونهاري جو وقت',
-      ),
-    ),
-    'Uzbekistan': MetaZone(
-      code: 'Uzbekistan',
-      long: TimeZoneName(
-        generic: 'ازبڪستان جو وقت',
-        standard: 'ازبڪستان جو معياري وقت',
-        daylight: 'ازبڪستان جي اونهاري جو وقت',
-      ),
-    ),
-    'Vanuatu': MetaZone(
-      code: 'Vanuatu',
-      long: TimeZoneName(
-        generic: 'وانواتو جو وقت',
-        standard: 'وانواتو جو معياري وقت',
-        daylight: 'وانواتو جي ڏينهن جو وقت',
-      ),
-    ),
-    'Venezuela': MetaZone(
-      code: 'Venezuela',
-      long: TimeZoneName(
-        standard: 'وينزويلا جو وقت',
-      ),
-    ),
-    'Vladivostok': MetaZone(
-      code: 'Vladivostok',
-      long: TimeZoneName(
-        generic: 'ولادووستوڪ جو وقت',
-        standard: 'ولادووستوڪ جو معياري وقت',
-        daylight: 'اولادووستوڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Volgograd': MetaZone(
-      code: 'Volgograd',
-      long: TimeZoneName(
-        generic: 'وولگوگراد جو وقت',
-        standard: 'وولگوگراد جو معياري وقت',
-        daylight: 'وولگوگراد جي ڏينهن جو وقت',
-      ),
-    ),
-    'Vostok': MetaZone(
-      code: 'Vostok',
-      long: TimeZoneName(
-        standard: 'ووسٽوڪ جو وقت',
-      ),
-    ),
-    'Wake': MetaZone(
-      code: 'Wake',
-      long: TimeZoneName(
-        standard: 'ويڪ آئي لينڊ جو وقت',
-      ),
-    ),
-    'Wallis': MetaZone(
-      code: 'Wallis',
-      long: TimeZoneName(
-        standard: 'ويلس ۽ فتونا جو وقت',
-      ),
-    ),
-    'Yakutsk': MetaZone(
-      code: 'Yakutsk',
-      long: TimeZoneName(
-        generic: 'ياڪتسڪ جو وقت',
-        standard: 'ياڪتسڪ جو معياري وقت',
-        daylight: 'ياڪتسڪ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Yekaterinburg': MetaZone(
-      code: 'Yekaterinburg',
-      long: TimeZoneName(
-        generic: 'يڪاٽيرنبرگ جو وقت',
-        standard: 'يڪاٽيرنبرگ جو معياري وقت',
-        daylight: 'يڪاٽيرنبرگ جي ڏينهن جو وقت',
-      ),
-    ),
-    'Yukon': MetaZone(
-      code: 'Yukon',
-      long: TimeZoneName(
-        standard: 'يڪون جو وقت',
-      ),
-    ),
-  }, (key) => key.toLowerCase());
+  final metaZoneNames = const {
+    'Afghanistan': MetaZone('Afghanistan',
+        long: TimeZoneName(standard: 'افغانستان جو وقت')),
+    'Africa_Central': MetaZone('Africa_Central',
+        long: TimeZoneName(standard: 'مرڪزي آفريقا جو وقت')),
+    'Africa_Eastern': MetaZone('Africa_Eastern',
+        long: TimeZoneName(standard: 'اوڀر آفريڪا جو وقت')),
+    'Africa_Southern': MetaZone('Africa_Southern',
+        long: TimeZoneName(standard: 'ڏکڻ آفريڪا جو معياري وقت')),
+    'Africa_Western': MetaZone('Africa_Western',
+        long: TimeZoneName(
+            generic: 'اولهه آفريقا جو وقت',
+            standard: 'اولهه آفريقا جو معياري وقت',
+            daylight: 'اولهه آفريقا جي اونهاري جو وقت')),
+    'Alaska': MetaZone('Alaska',
+        long: TimeZoneName(
+            generic: 'الاسڪا جو وقت',
+            standard: 'الاسڪا جو معياري وقت',
+            daylight: 'الاسڪا جي ڏينهن جو وقت')),
+    'Amazon': MetaZone('Amazon',
+        long: TimeZoneName(
+            generic: 'ايميزون جو وقت',
+            standard: 'ايميزون جو معياري وقت',
+            daylight: 'ايميزون جي اونهاري جو وقت')),
+    'America_Central': MetaZone('America_Central',
+        long: TimeZoneName(
+            generic: 'مرڪزي وقت',
+            standard: 'مرڪزي معياري وقت',
+            daylight: 'مرڪزي ڏينهن جو وقت')),
+    'America_Eastern': MetaZone('America_Eastern',
+        long: TimeZoneName(
+            generic: 'مشرقي وقت',
+            standard: 'مشرقي معياري وقت',
+            daylight: 'مشرقي ڏينهن جو وقت')),
+    'America_Mountain': MetaZone('America_Mountain',
+        long: TimeZoneName(
+            generic: 'پهاڙي وقت',
+            standard: 'پهاڙي معياري وقت',
+            daylight: 'پهاڙي ڏينهن جو وقت')),
+    'America_Pacific': MetaZone('America_Pacific',
+        long: TimeZoneName(
+            generic: 'پيسيفڪ وقت',
+            standard: 'پيسيفڪ معياري وقت',
+            daylight: 'پيسيفڪ ڏينهن جو وقت')),
+    'Apia': MetaZone('Apia',
+        long: TimeZoneName(
+            generic: 'اپيا جو وقت',
+            standard: 'اپيا جو معياري وقت',
+            daylight: 'اپيا جي ڏينهن جو وقت')),
+    'Arabian': MetaZone('Arabian',
+        long: TimeZoneName(
+            generic: 'عربين جو وقت',
+            standard: 'عربين جو معياري وقت',
+            daylight: 'عربين جي ڏينهن جو وقت')),
+    'Argentina': MetaZone('Argentina',
+        long: TimeZoneName(
+            generic: 'ارجنٽينا جو وقت',
+            standard: 'ارجنٽائن معياري وقت',
+            daylight: 'ارجنٽائن جي اونهاري جو وقت')),
+    'Argentina_Western': MetaZone('Argentina_Western',
+        long: TimeZoneName(
+            generic: 'اولهه ارجنٽينا جو وقت',
+            standard: 'اولهه ارجنٽينا جو معياري وقت',
+            daylight: 'اولهه ارجنٽينا جي اونهاري جو وقت')),
+    'Armenia': MetaZone('Armenia',
+        long: TimeZoneName(
+            generic: 'آرمينيا جو وقت',
+            standard: 'آرمينيا جو معياري وقت',
+            daylight: 'آرمينيا جي اونهاري جو وقت')),
+    'Atlantic': MetaZone('Atlantic',
+        long: TimeZoneName(
+            generic: 'ايٽلانٽڪ جو وقت',
+            standard: 'ايٽلانٽڪ جو معياري وقت',
+            daylight: 'ايٽلانٽڪ جي ڏينهن جو وقت')),
+    'Australia_Central': MetaZone('Australia_Central',
+        long: TimeZoneName(
+            generic: 'مرڪزي آسٽريليا جو وقت',
+            standard: 'آسٽريليا جو مرڪزي معياري وقت',
+            daylight: 'آسٽريليا جو مرڪزي ڏينهن جو وقت')),
+    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
+        long: TimeZoneName(
+            generic: 'آسٽريليا جو مرڪزي مغربي وقت',
+            standard: 'آسٽريليا جو مرڪزي مغربي معياري وقت',
+            daylight: 'آسٽريليا جو مرڪزي مغربي ڏينهن جو وقت')),
+    'Australia_Eastern': MetaZone('Australia_Eastern',
+        long: TimeZoneName(
+            generic: 'اوڀر آسٽريليا جو وقت',
+            standard: 'آسٽريليا جو مشرقي معياري وقت',
+            daylight: 'آسٽريليا جو مشرقي ڏينهن جو وقت')),
+    'Australia_Western': MetaZone('Australia_Western',
+        long: TimeZoneName(
+            generic: 'مغربي آسٽريليا جو وقت',
+            standard: 'آسٽريليا جو مغربي معياري وقت',
+            daylight: 'آسٽريليا جو مغربي ڏينهن جو وقت')),
+    'Azerbaijan': MetaZone('Azerbaijan',
+        long: TimeZoneName(
+            generic: 'آذربائيجان جو وقت',
+            standard: 'آذربائيجان جو معياري وقت',
+            daylight: 'آذربائيجان جي اونهاري جو وقت')),
+    'Azores': MetaZone('Azores',
+        long: TimeZoneName(
+            generic: 'ازورز جو وقت',
+            standard: 'ازورز جو معياري وقت',
+            daylight: 'ازورز جي اونهاري جو وقت')),
+    'Bangladesh': MetaZone('Bangladesh',
+        long: TimeZoneName(
+            generic: 'بنگلاديش جو وقت',
+            standard: 'بنگلاديش جو معياري وقت',
+            daylight: 'بنگلاديش جي اونهاري جو وقت')),
+    'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'ڀوٽان جو وقت')),
+    'Bolivia':
+        MetaZone('Bolivia', long: TimeZoneName(standard: 'بولويائي وقت')),
+    'Brasilia': MetaZone('Brasilia',
+        long: TimeZoneName(
+            generic: 'بريسيليائي وقت',
+            standard: 'براسيليا جو معياري وقت',
+            daylight: 'براسيليا جي اونهاري جو وقت')),
+    'Brunei': MetaZone('Brunei',
+        long: TimeZoneName(standard: 'برونائي دارالسلام جو وقت')),
+    'Cape_Verde': MetaZone('Cape_Verde',
+        long: TimeZoneName(
+            generic: 'ڪيپ ورڊ جو وقت',
+            standard: 'ڪيپ ورڊ جو معياري وقت',
+            daylight: 'ڪيپ ورڊ جي اونهاري جو وقت')),
+    'Chamorro': MetaZone('Chamorro',
+        long: TimeZoneName(standard: 'چمورو جو معياري وقت')),
+    'Chatham': MetaZone('Chatham',
+        long: TimeZoneName(
+            generic: 'چئٿم جو وقت',
+            standard: 'چئٿم جو معياري وقت',
+            daylight: 'چئٿم جي ڏينهن جو وقت')),
+    'Chile': MetaZone('Chile',
+        long: TimeZoneName(
+            generic: 'چلي جو وقت',
+            standard: 'چلي جو معياري وقت',
+            daylight: 'چلي جي اونهاري جو وقت')),
+    'China': MetaZone('China',
+        long: TimeZoneName(
+            generic: 'چين جو وقت',
+            standard: 'چائنا جو معياري وقت',
+            daylight: 'چائنا جي ڏينهن جو وقت')),
+    'Christmas': MetaZone('Christmas',
+        long: TimeZoneName(standard: 'ڪرسمس آئي لينڊ جو وقت')),
+    'Cocos': MetaZone('Cocos',
+        long: TimeZoneName(standard: 'ڪوڪوس آئي لينڊ جو وقت')),
+    'Colombia': MetaZone('Colombia',
+        long: TimeZoneName(
+            generic: 'ڪولمبيا جو وقت',
+            standard: 'ڪولمبيا جو معياري وقت',
+            daylight: 'ڪولمبيا جي اونهاري جو وقت')),
+    'Cook': MetaZone('Cook',
+        long: TimeZoneName(
+            generic: 'ڪوڪ آئي لينڊ جو وقت',
+            standard: 'ڪوڪ آئي لينڊ جو معياري وقت',
+            daylight: 'ڪوڪ آئي لينڊ جي اڌ اونهاري جو وقت')),
+    'Cuba': MetaZone('Cuba',
+        long: TimeZoneName(
+            generic: 'ڪيوبا جو وقت',
+            standard: 'ڪيوبا جو معياري وقت',
+            daylight: 'ڪيوبا جي ڏينهن جو وقت')),
+    'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'ڊيوس جو وقت')),
+    'DumontDUrville': MetaZone('DumontDUrville',
+        long: TimeZoneName(standard: 'ڊومانٽ درويئل جو وقت')),
+    'East_Timor': MetaZone('East_Timor',
+        long: TimeZoneName(standard: 'اوڀر تيمور جو وقت')),
+    'Easter': MetaZone('Easter',
+        long: TimeZoneName(
+            generic: 'ايسٽر آئي لينڊ جو وقت',
+            standard: 'ايسٽر آئي لينڊ جو معياري وقت',
+            daylight: 'ايسٽر آئي لينڊ جي اونهاري جو وقت')),
+    'Ecuador':
+        MetaZone('Ecuador', long: TimeZoneName(standard: 'ايڪواڊور جو وقت')),
+    'Europe_Central': MetaZone('Europe_Central',
+        long: TimeZoneName(
+            generic: 'مرڪزي يورپي وقت',
+            standard: 'مرڪزي يورپي معياري وقت',
+            daylight: 'مرڪزي يورپي اونهاري جو وقت')),
+    'Europe_Eastern': MetaZone('Europe_Eastern',
+        long: TimeZoneName(
+            generic: 'مشرقي يورپي وقت',
+            standard: 'مشرقي يورپي معياري وقت',
+            daylight: 'مشرقي يورپي اونهاري جو وقت')),
+    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
+        long: TimeZoneName(standard: 'وڌيڪ مشرقي يورپي وقت')),
+    'Europe_Western': MetaZone('Europe_Western',
+        long: TimeZoneName(
+            generic: 'اولهه يورپي وقت',
+            standard: 'اولهه يورپي معياري وقت',
+            daylight: 'اولهه يورپي ڏينهن جو وقت')),
+    'Falkland': MetaZone('Falkland',
+        long: TimeZoneName(
+            generic: 'فاڪ لينڊ آئي لينڊ جو وقت',
+            standard: 'فاڪ لينڊ آئي لينڊ جو معياري وقت',
+            daylight: 'فاڪ لينڊ آئي لينڊ جي اونهاري جو وقت')),
+    'Fiji': MetaZone('Fiji',
+        long: TimeZoneName(
+            generic: 'فجي جو وقت',
+            standard: 'فجي جو معياري وقت',
+            daylight: 'فجي جي اونهاري جو وقت')),
+    'French_Guiana': MetaZone('French_Guiana',
+        long: TimeZoneName(standard: 'فرانسيسي گيانا جو وقت')),
+    'French_Southern': MetaZone('French_Southern',
+        long: TimeZoneName(standard: 'فرانسيسي ڏاکڻيو ۽ انٽارڪٽڪ وقت')),
+    'Galapagos':
+        MetaZone('Galapagos', long: TimeZoneName(standard: 'گالاپاگوز جو وقت')),
+    'Gambier':
+        MetaZone('Gambier', long: TimeZoneName(standard: 'گيمبيئر جو وقت')),
+    'Georgia': MetaZone('Georgia',
+        long: TimeZoneName(
+            generic: 'جارجيا جو وقت',
+            standard: 'جارجيا جو معياري وقت',
+            daylight: 'جارجيا جي اونهاري جو وقت')),
+    'Gilbert_Islands': MetaZone('Gilbert_Islands',
+        long: TimeZoneName(standard: 'گلبرٽ آئي لينڊ جو وقت')),
+    'GMT': MetaZone('GMT', long: TimeZoneName(standard: 'گرين وچ مين ٽائيم')),
+    'Greenland_Eastern': MetaZone('Greenland_Eastern',
+        long: TimeZoneName(
+            generic: 'مشرقي گرين لينڊ جو وقت',
+            standard: 'مشرقي گرين لينڊ جو معياري وقت',
+            daylight: 'مشرقي گرين لينڊ جي اونهاري جو وقت')),
+    'Greenland_Western': MetaZone('Greenland_Western',
+        long: TimeZoneName(
+            generic: 'مغربي گرين لينڊ جو وقت',
+            standard: 'مغربي گرين لينڊ جو معياري وقت',
+            daylight: 'مغربي گرين لينڊ جي اونهاري جو وقت')),
+    'Gulf': MetaZone('Gulf', long: TimeZoneName(standard: 'خليجي معياري وقت')),
+    'Guyana': MetaZone('Guyana', long: TimeZoneName(standard: 'گيانائي وقت')),
+    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
+        long: TimeZoneName(
+            generic: 'هوائي اليوٽين جو وقت',
+            standard: 'هوائي اليوٽين جو معياري وقت',
+            daylight: 'هوائي اليوٽين جي ڏينهن جو وقت')),
+    'Hong_Kong': MetaZone('Hong_Kong',
+        long: TimeZoneName(
+            generic: 'هانگ ڪانگ جو وقت',
+            standard: 'هانگ ڪانگ جو معياري وقت',
+            daylight: 'هانگ ڪانگ جي اونهاري جو وقت')),
+    'Hovd': MetaZone('Hovd',
+        long: TimeZoneName(
+            generic: 'هووڊ جو وقت',
+            standard: 'هووڊ جو معياري وقت',
+            daylight: 'هووڊ جي اونهاري جو وقت')),
+    'India':
+        MetaZone('India', long: TimeZoneName(standard: 'ڀارت جو معياري وقت')),
+    'Indian_Ocean': MetaZone('Indian_Ocean',
+        long: TimeZoneName(standard: 'هند سمنڊ جو وقت')),
+    'Indochina': MetaZone('Indochina',
+        long: TimeZoneName(standard: 'انڊو چائنا جو وقت')),
+    'Indonesia_Central': MetaZone('Indonesia_Central',
+        long: TimeZoneName(standard: 'مرڪزي انڊونيشيا جو وقت')),
+    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
+        long: TimeZoneName(standard: 'اوڀر انڊونيشيا جو وقت')),
+    'Indonesia_Western': MetaZone('Indonesia_Western',
+        long: TimeZoneName(standard: 'اولهه انڊونيشيا جو وقت')),
+    'Iran': MetaZone('Iran',
+        long: TimeZoneName(
+            generic: 'ايران جو وقت',
+            standard: 'ايران جو معياري وقت',
+            daylight: 'ايران جي ڏينهن جو وقت')),
+    'Irkutsk': MetaZone('Irkutsk',
+        long: TimeZoneName(
+            generic: 'ارڪتسڪ جو وقت',
+            standard: 'ارڪتسڪ جو معياري وقت',
+            daylight: 'ارڪتسڪ جي ڏينهن جو وقت')),
+    'Israel': MetaZone('Israel',
+        long: TimeZoneName(
+            generic: 'اسرائيل جو وقت',
+            standard: 'اسرائيل جو معياري وقت',
+            daylight: 'اسرائيل جي ڏينهن جو وقت')),
+    'Japan': MetaZone('Japan',
+        long: TimeZoneName(
+            generic: 'جاپان جو وقت',
+            standard: 'جاپان جو معياري وقت',
+            daylight: 'جاپان جي ڏينهن جو وقت')),
+    'Kazakhstan':
+        MetaZone('Kazakhstan', long: TimeZoneName(standard: 'قزاقستان وقت')),
+    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
+        long: TimeZoneName(standard: 'اوڀر قزاقستان جو وقت')),
+    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
+        long: TimeZoneName(standard: 'اولهه قازقستان جو وقت')),
+    'Korea': MetaZone('Korea',
+        long: TimeZoneName(
+            generic: 'ڪوريا جو وقت',
+            standard: 'ڪوريا جو معياري وقت',
+            daylight: 'ڪوريا جي ڏينهن جو وقت')),
+    'Kosrae':
+        MetaZone('Kosrae', long: TimeZoneName(standard: 'ڪوسرائي جو وقت')),
+    'Krasnoyarsk': MetaZone('Krasnoyarsk',
+        long: TimeZoneName(
+            generic: 'ڪریسنویارسڪ جو وقت',
+            standard: 'ڪریسنویارسڪ جو معياري وقت',
+            daylight: 'ڪریسنویارسڪ جي ڏينهن جو وقت')),
+    'Kyrgystan':
+        MetaZone('Kyrgystan', long: TimeZoneName(standard: 'ڪرغزستان جو وقت')),
+    'Line_Islands': MetaZone('Line_Islands',
+        long: TimeZoneName(standard: 'لائن آئي لينڊ جو وقت')),
+    'Lord_Howe': MetaZone('Lord_Howe',
+        long: TimeZoneName(
+            generic: 'لورڊ هووي جو وقت',
+            standard: 'لورڊ هووي جو معياري وقت',
+            daylight: 'لورڊ هووي جي ڏينهن جو وقت')),
+    'Magadan': MetaZone('Magadan',
+        long: TimeZoneName(
+            generic: 'مگادان جو وقت',
+            standard: 'مگادان جو معياري وقت',
+            daylight: 'مگادان جي ڏينهن جي وقت')),
+    'Malaysia':
+        MetaZone('Malaysia', long: TimeZoneName(standard: 'ملائيشيا جو وقت')),
+    'Maldives':
+        MetaZone('Maldives', long: TimeZoneName(standard: 'مالديپ جو وقت')),
+    'Marquesas':
+        MetaZone('Marquesas', long: TimeZoneName(standard: 'مرڪيوسس جو وقت')),
+    'Marshall_Islands': MetaZone('Marshall_Islands',
+        long: TimeZoneName(standard: 'مارشل آئي لينڊ جو وقت')),
+    'Mauritius': MetaZone('Mauritius',
+        long: TimeZoneName(
+            generic: 'موريشيس جو وقت',
+            standard: 'موريشيس جو معياري وقت',
+            daylight: 'موريشيس جي اونهاري جو وقت')),
+    'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: 'مائوسن جو وقت')),
+    'Mexico_Pacific': MetaZone('Mexico_Pacific',
+        long: TimeZoneName(
+            generic: 'ميڪسيڪن پيسيفڪ وقت',
+            standard: 'ميڪسيڪن پيسيفڪ جو معياري وقت',
+            daylight: 'ميڪسيڪن پيسيفڪ جي ڏينهن جو وقت')),
+    'Mongolia': MetaZone('Mongolia',
+        long: TimeZoneName(
+            generic: 'اولان باتر جو وقت',
+            standard: 'اولان باتر جو معياري وقت',
+            daylight: 'اولان باتر جي اونهاري جو وقت')),
+    'Moscow': MetaZone('Moscow',
+        long: TimeZoneName(
+            generic: 'ماسڪو جو وقت',
+            standard: 'ماسڪو جو معياري وقت',
+            daylight: 'ماسڪو جي ڏينهن جي وقت')),
+    'Myanmar':
+        MetaZone('Myanmar', long: TimeZoneName(standard: 'ميانمار جو وقت')),
+    'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'نائورو جو وقت')),
+    'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'نيپال جو وقت')),
+    'New_Caledonia': MetaZone('New_Caledonia',
+        long: TimeZoneName(
+            generic: 'نيو ڪيليڊونيا جو وقت',
+            standard: 'نيو ڪيليڊونيا جو معياري وقت',
+            daylight: 'نيو ڪيليڊونيا جي اونهاري جو وقت')),
+    'New_Zealand': MetaZone('New_Zealand',
+        long: TimeZoneName(
+            generic: 'نيوزيلينڊ جو وقت',
+            standard: 'نيوزيلينڊ جو معياري وقت',
+            daylight: 'نيوزيلينڊ جي ڏينهن جو وقت')),
+    'Newfoundland': MetaZone('Newfoundland',
+        long: TimeZoneName(
+            generic: 'نيو فائونڊ لينڊ جو وقت',
+            standard: 'نيو فائونڊ لينڊ جو معياري وقت',
+            daylight: 'نيو فائونڊ لينڊ جي ڏينهن جو وقت')),
+    'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'نيووي جو وقت')),
+    'Norfolk': MetaZone('Norfolk',
+        long: TimeZoneName(
+            generic: 'نار فوڪ آئي لينڊ جو وقت',
+            standard: 'نار فوڪ آئي لينڊ جو معياري وقت',
+            daylight: 'نار فوڪ آئي لينڊ جي ڏينهن جو وقت')),
+    'Noronha': MetaZone('Noronha',
+        long: TimeZoneName(
+            generic: 'فرنانڊو دي نورونها جو وقت',
+            standard: 'فرنانڊو دي نورونها جو معياري وقت',
+            daylight: 'فرنانڊو دي نورونها جي اونهاري وقت')),
+    'Novosibirsk': MetaZone('Novosibirsk',
+        long: TimeZoneName(
+            generic: 'نوواسبئيرسڪ جو وقت',
+            standard: 'نوواسبئيرسڪ جو معياري وقت',
+            daylight: 'نوواسبئيرسڪ جي ڏينهن جو وقت')),
+    'Omsk': MetaZone('Omsk',
+        long: TimeZoneName(
+            generic: 'اومسڪ جو وقت',
+            standard: 'اومسڪ جو معياري وقت',
+            daylight: 'اومسڪ جي ڏينهن جو وقت')),
+    'Pakistan': MetaZone('Pakistan',
+        long: TimeZoneName(
+            generic: 'پاڪستان جو وقت',
+            standard: 'پاڪستان جو معياري وقت',
+            daylight: 'پاڪستان جي اونهاري جو وقت')),
+    'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'پلائو جو وقت')),
+    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
+        long: TimeZoneName(standard: 'پاپوا نيو گني جو وقت')),
+    'Paraguay': MetaZone('Paraguay',
+        long: TimeZoneName(
+            generic: 'پيراگوئي جو وقت',
+            standard: 'پيراگوئي جو معياري وقت',
+            daylight: 'پيراگوئي جي اونهاري جو وقت')),
+    'Peru': MetaZone('Peru',
+        long: TimeZoneName(
+            generic: 'پيرو جو وقت',
+            standard: 'پيرو جو معياري وقت',
+            daylight: 'پيرو جي اونهاري جو وقت')),
+    'Philippines': MetaZone('Philippines',
+        long: TimeZoneName(
+            generic: 'فلپائن جو وقت',
+            standard: 'فلپائن جو معياري وقت',
+            daylight: 'فلپائن جي اونهاري جو وقت')),
+    'Phoenix_Islands': MetaZone('Phoenix_Islands',
+        long: TimeZoneName(standard: 'فونيڪس آئي لينڊ جو وقت')),
+    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
+        long: TimeZoneName(
+            generic: 'سينٽ پيئر ۽ ميڪلون جو وقت',
+            standard: 'سينٽ پيئر ۽ ميڪلون جو معياري وقت',
+            daylight: 'سينٽ پيئر ۽ ميڪلون جي ڏينهن جو وقت')),
+    'Pitcairn':
+        MetaZone('Pitcairn', long: TimeZoneName(standard: 'پٽڪيرن جو وقت')),
+    'Ponape': MetaZone('Ponape', long: TimeZoneName(standard: 'پوناپي جو وقت')),
+    'Pyongyang': MetaZone('Pyongyang',
+        long: TimeZoneName(standard: 'پيانگ يانگ جو وقت')),
+    'Reunion':
+        MetaZone('Reunion', long: TimeZoneName(standard: 'ري يونين جو وقت')),
+    'Rothera':
+        MetaZone('Rothera', long: TimeZoneName(standard: 'روٿيرا جو وقت')),
+    'Sakhalin': MetaZone('Sakhalin',
+        long: TimeZoneName(
+            generic: 'سخالين جو وقت',
+            standard: 'سخالين جو معياري وقت',
+            daylight: 'سخالين جي ڏينهن جو وقت')),
+    'Samoa': MetaZone('Samoa',
+        long: TimeZoneName(
+            generic: 'ساموا جو وقت',
+            standard: 'ساموا جو معياري وقت',
+            daylight: 'ساموا جي ڏينهن جو وقت')),
+    'Seychelles':
+        MetaZone('Seychelles', long: TimeZoneName(standard: 'شي شلز جو وقت')),
+    'Singapore': MetaZone('Singapore',
+        long: TimeZoneName(standard: 'سنگاپور جو معياري وقت')),
+    'Solomon': MetaZone('Solomon',
+        long: TimeZoneName(standard: 'سولومن آئي لينڊ جو وقت')),
+    'South_Georgia': MetaZone('South_Georgia',
+        long: TimeZoneName(standard: 'ڏکڻ جارجيا جو وقت')),
+    'Suriname':
+        MetaZone('Suriname', long: TimeZoneName(standard: 'سوري نام جو وقت')),
+    'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'سائيوا جو وقت')),
+    'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'تاهيٽي جو وقت')),
+    'Taipei': MetaZone('Taipei',
+        long: TimeZoneName(
+            generic: 'تائپي جو وقت',
+            standard: 'تائپي جو معياري وقت',
+            daylight: 'تائپي جي ڏينهن جو وقت')),
+    'Tajikistan':
+        MetaZone('Tajikistan', long: TimeZoneName(standard: 'تاجڪستان جو وقت')),
+    'Tokelau':
+        MetaZone('Tokelau', long: TimeZoneName(standard: 'ٽوڪيلائو جو وقت')),
+    'Tonga': MetaZone('Tonga',
+        long: TimeZoneName(
+            generic: 'ٽونگا جو وقت',
+            standard: 'ٽونگا جو معياري وقت',
+            daylight: 'ٽونگا جي اونهاري جو وقت')),
+    'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'چيوڪ جو وقت')),
+    'Turkmenistan': MetaZone('Turkmenistan',
+        long: TimeZoneName(
+            generic: 'ترڪمانستان جو وقت',
+            standard: 'ترڪمانستان جو معياري وقت',
+            daylight: 'ترڪمانستان جي اونهاري جو وقت')),
+    'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: 'تووالو جو وقت')),
+    'Uruguay': MetaZone('Uruguay',
+        long: TimeZoneName(
+            generic: 'يوروگائي جو وقت',
+            standard: 'يوروگائي جو معياري وقت',
+            daylight: 'يوروگائي جي اونهاري جو وقت')),
+    'Uzbekistan': MetaZone('Uzbekistan',
+        long: TimeZoneName(
+            generic: 'ازبڪستان جو وقت',
+            standard: 'ازبڪستان جو معياري وقت',
+            daylight: 'ازبڪستان جي اونهاري جو وقت')),
+    'Vanuatu': MetaZone('Vanuatu',
+        long: TimeZoneName(
+            generic: 'وانواتو جو وقت',
+            standard: 'وانواتو جو معياري وقت',
+            daylight: 'وانواتو جي ڏينهن جو وقت')),
+    'Venezuela':
+        MetaZone('Venezuela', long: TimeZoneName(standard: 'وينزويلا جو وقت')),
+    'Vladivostok': MetaZone('Vladivostok',
+        long: TimeZoneName(
+            generic: 'ولادووستوڪ جو وقت',
+            standard: 'ولادووستوڪ جو معياري وقت',
+            daylight: 'اولادووستوڪ جي ڏينهن جو وقت')),
+    'Volgograd': MetaZone('Volgograd',
+        long: TimeZoneName(
+            generic: 'وولگوگراد جو وقت',
+            standard: 'وولگوگراد جو معياري وقت',
+            daylight: 'وولگوگراد جي ڏينهن جو وقت')),
+    'Vostok': MetaZone('Vostok', long: TimeZoneName(standard: 'ووسٽوڪ جو وقت')),
+    'Wake':
+        MetaZone('Wake', long: TimeZoneName(standard: 'ويڪ آئي لينڊ جو وقت')),
+    'Wallis':
+        MetaZone('Wallis', long: TimeZoneName(standard: 'ويلس ۽ فتونا جو وقت')),
+    'Yakutsk': MetaZone('Yakutsk',
+        long: TimeZoneName(
+            generic: 'ياڪتسڪ جو وقت',
+            standard: 'ياڪتسڪ جو معياري وقت',
+            daylight: 'ياڪتسڪ جي ڏينهن جو وقت')),
+    'Yekaterinburg': MetaZone('Yekaterinburg',
+        long: TimeZoneName(
+            generic: 'يڪاٽيرنبرگ جو وقت',
+            standard: 'يڪاٽيرنبرگ جو معياري وقت',
+            daylight: 'يڪاٽيرنبرگ جي ڏينهن جو وقت')),
+    'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'يڪون جو وقت')),
+  };
+}
+
+class LocaleDisplayNameSd extends LocaleDisplayName {
+  const LocaleDisplayNameSd._(super.cld)
+      : super(
+            localePattern: '{0} ({1})',
+            localeSeparator: '{0}, {1}',
+            localeKeyTypePattern: '{0}: {1}',
+            codePatternLanguage: 'زبان: {0}',
+            codePatternScript: 'اسڪرپٽ: {0}',
+            codePatternTerritory: 'خطو: {0}');
+
+  @override
+  final keyNames = const {
+    'ca': 'ڪئلينڊر',
+    'cf': 'سڪي جو فارميٽ',
+    'co': 'ترتيب ڇانٽي',
+    'cu': 'سڪو',
+    'hc': 'ڪلاڪ سائيڪل',
+    'lb': 'لائن ٽوڙڻ انداز',
+    'ms': 'ماپڻ جو نظام',
+    'nu': 'انگ',
+  };
+
+  @override
+  final valueNames = const {
+    'ca': {
+      'buddhist': 'ٻڌ ڌرم جو ڪئلينڊر',
+      'chinese': 'چيني ڪئلينڊر',
+      'coptic': 'ڪاپٽڪ ڪئلينڊر',
+      'dangi': 'دانگي ڪئلينڊر',
+      'ethiopic': 'ايٿوپيائي ڪئلينڊر',
+      'ethioaa': 'ايٿوپڪ اميٽي عليم ڪئلينڊر',
+      'gregory': 'جارجيائي ڪئلينڊر',
+      'hebrew': 'عبراني ڪئلينڊر',
+      'indian': 'هندوستاني قومي ڪئلينڊر',
+      'islamic': 'هجري ڪئلينڊر',
+      'islamic-civil': 'هجري ڪئلينڊر (ٽيبل وارو، شهري دور)',
+      'islamic-tbla': 'هجري ڪئلينڊر (ٽيبلر، فلڪياتي دور)',
+      'islamic-umalqura': 'هجري ڪئلينڊر (اُم القرا)',
+      'iso8601': 'ISO-8601 ڪئلينڊر',
+      'japanese': 'جاپاني ڪئلينڊر',
+      'persian': 'فارسي ڪئلينڊر',
+      'roc': 'منگوو ڪئلينڊر',
+    },
+    'cf': {
+      'account': 'اڪائونٽنگ سڪو فارميٽ',
+      'standard': 'معياري سڪو فارميٽ',
+    },
+    'co': {
+      'ducet': 'ڊفالٽ يوني ڪوڊ ترتيب ڇانٽي',
+      'search': 'عام مقصد جي ڳولا',
+      'standard': 'معياري ترتيب ڇانٽي',
+    },
+    'hc': {
+      'h11': '12 ڪلاڪ جو سسٽم (0–11)',
+      'h12': '12 ڪلاڪ جو سسٽم (1–12)',
+      'h23': '24 ڪلاڪ جو سسٽم (0–23)',
+      'h24': '24 ڪلاڪ جو سسٽم (1–24)',
+    },
+    'lb': {
+      'loose': 'لوز لائن ٽوڙ انداز',
+      'normal': 'عام لائن ٽوڙ انداز',
+      'strict': 'سخت لائن ٽوڙ انداز',
+    },
+    'ms': {
+      'metric': 'ميٽرڪ نظام',
+      'uksystem': 'امپيريل ماپڻ جو نظام',
+      'ussystem': 'آمريڪا جو ماپڻ جو نظام',
+    },
+    'nu': {
+      'arab': 'عربي-هندي عدد',
+      'arabext': 'وڌايل عربي-هندي عدد',
+      'armn': 'ارمينيائي انگ',
+      'armnlow': 'ارمينيائي ننڍا انگ',
+      'beng': 'بنگلا عدد',
+      'cakm': 'چڪما انگ اکر',
+      'deva': 'ديوناگري عدد',
+      'ethi': 'ايٿوپيائي انگ',
+      'fullwide': 'پوري-ويڪر انگن',
+      'geor': 'جيارجيائي انگ',
+      'grek': 'يوناني انگ',
+      'greklow': 'يوناني ننڍا انگ',
+      'gujr': 'گجراتي عدد',
+      'guru': 'گرمکي عدد',
+      'hanidec': 'چيني اعشاري انگ',
+      'hans': 'آسان چيني انگ',
+      'hansfin': 'آسان چيني مالي انگ',
+      'hant': 'روايتي چيني انگ',
+      'hantfin': 'روايتي چيني مالي انگ',
+      'hebr': 'عبراني انگ',
+      'java': 'جاواني انگ اکر',
+      'jpan': 'جاپاني انگ',
+      'jpanfin': 'جاپاني مالي انگ',
+      'khmr': 'خمر عدد',
+      'knda': 'ڪناڊا عدد',
+      'laoo': 'لائو عدد',
+      'latn': 'مغربي عدد',
+      'mlym': 'مليالم عدد',
+      'mtei': 'ميٽي مئيڪ انگ اکر',
+      'mymr': 'ميانمار عدد',
+      'olck': 'اول چڪي انگ اکر',
+      'orya': 'اوڊيا عدد',
+      'roman': 'رومي انگ',
+      'romanlow': 'رومي ننڍا انگ',
+      'taml': 'روايتي تامل انگ',
+      'tamldec': 'تامل عدد',
+      'telu': 'تيلگو عدد',
+      'thai': 'ٿائي عدد',
+      'tibt': 'تبتي عدد',
+      'vaii': 'وائي انگ اکر',
+    },
+  };
 }

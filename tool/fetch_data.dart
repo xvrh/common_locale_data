@@ -8,19 +8,42 @@ import 'utils/supported_locales.dart';
 
 void main() async {
   final miscSets = {
-    'bcp47/bcp47': {'timezone'},
-    'core': {'coverageLevels', 'package'},
+    'bcp47/bcp47': {
+      'calendar',
+      'collation',
+      'currency',
+      'measure',
+      'number',
+      'segmentation',
+      'timezone',
+      'transform-destination',
+      'transform',
+      'transform_hybrid',
+      'transform_ime',
+      'transform_keyboard',
+      'transform_mt',
+      'transform_private_use',
+      'variant',
+    },
+    'core': {
+      'coverageLevels',
+      'package',
+    },
     'core/supplemental': {
       'aliases',
       'metaZones',
       'primaryZones',
-      'windowsZones'
+      'windowsZones',
+      'likelySubtags',
+      'languageMatching',
+      'territoryContainment'
     }
   };
 
   final sets = <String, Set<String>>{
     'units': {'units', 'measurementSystemNames'},
     'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
+    'numbers': {'currencies'},
     'localenames': {
       'languages',
       'territories',
@@ -36,6 +59,8 @@ void main() async {
     dataDirectory.deleteSync(recursive: true);
   }
   var client = http.Client();
+
+  // Most of the fetching is downloading, 100 is an empirical optimum
   var pool = Pool(100);
 
   print('Downloading locale independent data');
@@ -94,7 +119,7 @@ void main() async {
           try {
             await download(directory, url, client, fileName);
           } on Exception catch (e) {
-            print('*** $e');
+            stderr.write('*** $e for $locale\n');
           }
         });
         localeFutures.add(future);

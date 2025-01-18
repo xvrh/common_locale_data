@@ -1,3 +1,4 @@
+import 'package:analyzer/dart/ast/token.dart';
 import 'case.dart';
 import 'split_words.dart';
 
@@ -17,6 +18,13 @@ String lowerHyphen(Iterable<String> input) {
 
 String snakeCase(Iterable<String> input) {
   return input.map((s) => s.toLowerCase()).join('_');
+}
+
+String toKeyword(String str) {
+  str = str.toLowerCamelCase();
+  return Keyword.keywords.containsKey(str) || str.startsWith(RegExp('[0-9]'))
+      ? '\$$str'
+      : str;
 }
 
 Iterable<T> _mapWithIndex<E, T>(

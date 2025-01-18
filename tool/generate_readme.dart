@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:analyzer/dart/ast/token.dart';
-import 'package:common_locale_data/src/data/en.dart';
+import 'package:common_locale_data/en.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
 import 'utils/case_format.dart';
@@ -46,31 +46,12 @@ String generateReadme(File source) {
       '##LOCALE_LIST##',
       ([
                 '| Locale | Description | Constant | Class | Import |',
-                '| ------ | ----------- | ------ | ----- | ------ |'
+                '| ------ | ----------- | -------- | ----- | ------ |'
               ] +
               getSupportedLocales().map((locale) {
-                var localeParts = locale.split('-');
-                var description =
-                    CommonLocaleDataEn().languages[localeParts.first]?.name ??
-                        '?';
-
-                var script = localeParts.length > 1
-                    ? CommonLocaleDataEn().scripts[localeParts[1]]?.name
-                    : null;
-
-                var country = localeParts.length > 1
-                    ? CommonLocaleDataEn()
-                        .territories
-                        .countries[localeParts.last]
-                        ?.name
-                    : null;
-
-                if (country != null || script != null) {
-                  description = '$description (${[
-                    script,
-                    country
-                  ].whereType<String>().join(', ')})';
-                }
+                var description = CommonLocaleDataEn()
+                    .localeDisplayName
+                    .formatWithExtensions(LocaleId.parse(locale));
 
                 var localeConstantName = locale.toLowerCamelCase();
                 if (Keyword.keywords.containsKey(localeConstantName)) {

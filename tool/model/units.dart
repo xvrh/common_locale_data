@@ -1,33 +1,31 @@
-import 'dart:convert';
-import 'dart:io';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:path/path.dart' as p;
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
+import '../utils/read_json_data.dart';
 import '../utils/split_words.dart';
 
 part 'units.g.dart';
 
-Map<String, dynamic> readJson(String locale) {
-  var file = File(p.join('tool/data/units/units/$locale.json'));
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  return
-      // ignore: avoid_dynamic_calls
-      json['main'][locale]['units'] as Map<String, dynamic>;
-}
-
 String generateUnitsModel() {
   var code = StringBuffer();
-  code.writeln("import 'units.dart';");
   code.writeln('''
+// GENERATED CODE - DO NOT MODIFY BY HAND
+import 'common_locale_data.dart';
+import 'units.dart';
+
 /// Container for localized unit names.
 /// 
 /// {@category Units}
 abstract class Units {
+  /// Parent [CommonLocaleData]
+  final CommonLocaleData cld;
+
+  const Units(this.cld);
+
 ''');
 
-  var fields = readJson('en')['long'] as Map<String, dynamic>;
+  var fields = readJsonData(
+      'tool/data/units/units/${'en'}.json', 'main/${'en'}/units/long');
   for (var key in fields.keys) {
     var field = UnitField.fromJson(fields[key] as Map<String, dynamic>);
     if (field.unitPrefixPattern != null) {
@@ -59,12 +57,17 @@ const _lengths = ['long', 'short', 'narrow'];
 const _plurals = ['zero', 'one', 'two', 'few', 'many', 'other'];
 
 void generateUnits(String locale, StringBuffer buffer) {
-  var referenceUnits = readJson('en').cast<String, Map<String, dynamic>>();
-  var units = readJson(locale).cast<String, Map<String, dynamic>>();
+  var referenceUnits =
+      readJsonData('tool/data/units/units/en.json', 'main/en/units')
+          .cast<String, Map<String, dynamic>>();
+  var units =
+      readJsonData('tool/data/units/units/$locale.json', 'main/$locale/units')
+          .cast<String, Map<String, dynamic>>();
 
-  buffer.writeln('''class Units${locale.toUpperCamelCase()} implements Units {
-      Units${locale.toUpperCamelCase()}._();
-      ''');
+  buffer.writeln('''
+class Units${locale.toUpperCamelCase()} extends Units {
+  Units${locale.toUpperCamelCase()}._(super.cld);
+''');
 
   for (var key in referenceUnits[_lengths.first]!.keys) {
     var firstField = UnitField.fromJson(
@@ -73,7 +76,7 @@ void generateUnits(String locale, StringBuffer buffer) {
       if (firstField.unitPatternCountOther == null) continue;
 
       buffer.writeln('@override');
-      buffer.writeln('Unit get ${lowerCamel(splitWords(key))} => Unit(');
+      buffer.writeln('Unit get ${lowerCamel(splitWords(key))} => const Unit(');
       for (var length in _lengths) {
         var unit = getUnitForLength(units, referenceUnits, length, key);
         var displayName = unit.displayName;
@@ -82,7 +85,7 @@ void generateUnits(String locale, StringBuffer buffer) {
               '$key ${unit.displayName} is null for length $length');
         }
         buffer.writeln(
-            '$length: UnitCountPattern(_locale, ${escapeDartString(displayName)},');
+            '$length: const UnitCountPattern(_locale, ${escapeDartString(displayName)},');
         for (var plural in _plurals) {
           var pattern = unit.getUnitPattern(plural);
           if (pattern != null) {
@@ -97,7 +100,7 @@ void generateUnits(String locale, StringBuffer buffer) {
     } else if (firstField.unitPrefixPattern != null) {
       var getter = _prefixPatternField(key);
       buffer.writeln('@override');
-      buffer.writeln('UnitPrefix get $getter => UnitPrefix(');
+      buffer.writeln('UnitPrefix get $getter => const UnitPrefix(');
       for (var length in _lengths) {
         var unit = getUnitForLength(units, referenceUnits, length, key);
         var pattern = unit.unitPrefixPattern;
@@ -106,13 +109,13 @@ void generateUnits(String locale, StringBuffer buffer) {
               '$key ${unit.unitPrefixPattern} is null for length $length');
         }
         buffer.writeln(
-            '$length: UnitPrefixPattern(${escapeDartString(pattern)}),');
+            '$length: const UnitPrefixPattern(${escapeDartString(pattern)}),');
       }
       buffer.writeln(');');
     } else if (firstField.compoundUnitPattern != null) {
       buffer.writeln('@override');
       buffer.writeln(
-          'CompoundUnit get ${lowerCamel(splitWords(key))} => CompoundUnit(');
+          'CompoundUnit get ${lowerCamel(splitWords(key))} => const CompoundUnit(');
       for (var length in _lengths) {
         var unit = getUnitForLength(units, referenceUnits, length, key);
         var pattern = unit.compoundUnitPattern;
@@ -121,7 +124,7 @@ void generateUnits(String locale, StringBuffer buffer) {
               '$key ${unit.compoundUnitPattern} is null for length $length');
         }
         buffer.writeln(
-            '$length: CompoundUnitPattern(${escapeDartString(pattern)}),');
+            '$length: const CompoundUnitPattern(${escapeDartString(pattern)}),');
       }
       buffer.writeln(');');
     }

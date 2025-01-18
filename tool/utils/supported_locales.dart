@@ -1,7 +1,6 @@
-import 'dart:convert';
-import 'dart:io';
 import 'package:collection/collection.dart';
 import '../config.dart';
+import 'read_json_data.dart';
 
 enum CoverageLevel {
   basic(1),
@@ -21,7 +20,7 @@ class Locales {
   static const Set<String> main = {'main'};
 
   /// support small set for testing purposes
-  static const Set<String> test = {'main'};
+  static const Set<String> test = {'en', 'de', 'fr', 'en-GB', 'es', 'zh-Hans'};
 
   /// for compatibility with original languages of this package
   static const Set<String> compatibility = {
@@ -66,10 +65,8 @@ Set<String> getSupportedLocales() {
 }
 
 Set<String> getLocales() {
-  var file = File('tool/data/core/coverageLevels.json');
-  var content = file.readAsStringSync();
-  var json = jsonDecode(content) as Map<String, dynamic>;
-  var coverageLevels = (json['effectiveCoverageLevels'] as Map<String, dynamic>)
+  var coverageLevels = readJsonData(
+          'tool/data/core/coverageLevels.json', 'effectiveCoverageLevels')
       .cast<String, String>();
 
   coverageLevels.removeWhere((key, value) =>

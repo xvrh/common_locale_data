@@ -1,4 +1,6 @@
 /// Name in multiple different lengths.
+///
+/// {@category Dates}
 class MultiLength {
   /// Long name.
   final String long;
@@ -9,7 +11,7 @@ class MultiLength {
   /// Narrowest name.
   final String narrow;
 
-  MultiLength({
+  const MultiLength({
     required this.long,
     required this.short,
     required this.narrow,
