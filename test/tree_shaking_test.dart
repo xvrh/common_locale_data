@@ -1,7 +1,9 @@
 import 'dart:io';
+
 import 'package:path/path.dart' as path;
 import 'package:process_runner/process_runner.dart';
 import 'package:test/test.dart';
+
 import 'tree_shaking_data/date_field_direct_access_field.dart' as date_field;
 import 'tree_shaking_data/date_fields_dynamic.dart' as date_fields_dynamic;
 import 'tree_shaking_data/timezone.dart' as timezone;
@@ -32,18 +34,21 @@ Future<void> main() async {
   testFile(
     'test/tree_shaking_data/all_locales_no_data.dart',
     maxLength: 75000,
+    long: true,
   );
 
   // don't check expected data, only size, to save compilation time of this test file
   testFile(
     'test/tree_shaking_data/all_locales_static_data.dart',
     maxLength: 500000,
+    long: true,
   );
 
   // don't check expected data, only size, to save compilation time of this test file
   testFile(
     'test/tree_shaking_data/all_locales_all_data.dart',
     maxLength: 43000000,
+    long: true,
   );
 }
 
@@ -84,6 +89,7 @@ void testFile(
   List<String> notExpected = const [],
   List<String> options = const [],
   int? maxLength,
+  bool long = false,
 }) {
   test(
     path.basename(file),
@@ -93,6 +99,7 @@ void testFile(
         options: [...options, '-O2'],
         maxLength: maxLength),
     timeout: Timeout(Duration(seconds: 600)),
+    tags: long ? ['longTests'] : null,
   );
 }
 

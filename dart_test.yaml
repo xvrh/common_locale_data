@@ -1,0 +1,6 @@
+tags:
+  longTests:
+    on_platform:
+      vm:
+        skip: "Long tests. Use -P force to force tests."
+        presets: { force: { skip: false } }
