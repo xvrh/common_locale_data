@@ -30,7 +30,7 @@ String _readICUVersions() {
 
   return (
     cldr: cldrVersion.cldr,
-    cldrVariant: coverageLevel.name,
+    cldrVariant: Config.coverageLevel.name,
     unicode: cldrVersion.unicode,
     tzdb: tzdbVersion,
     icu: icuVersion

@@ -5,6 +5,7 @@ import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:pool/pool.dart';
 import 'code_style/fix_import_order.dart';
+import 'config.dart';
 import 'model/currency.dart';
 import 'model/date_fields.dart';
 import 'model/language.dart';
@@ -21,8 +22,6 @@ import 'utils/escape_dart_string.dart';
 import 'utils/split_words.dart';
 import 'utils/supported_locales.dart';
 import 'utils/versions.dart';
-
-var supportedLocales = getSupportedLocales();
 
 final _formatter = DartFormatter();
 
@@ -73,7 +72,7 @@ Future<void> main() async {
 
   if (true) {
     await Future.wait([
-      for (var locale in supportedLocales)
+      for (var locale in Config.supportedLocales)
         pool.withResource(() => Isolate.run(() => generateLocale(locale)))
     ]);
     // ignore: dead_code
@@ -81,7 +80,7 @@ Future<void> main() async {
     print('');
     print('Running in debug mode!');
     print('');
-    for (var locale in supportedLocales) {
+    for (var locale in Config.supportedLocales) {
       await generateLocale(locale);
     }
   }
@@ -267,7 +266,7 @@ abstract class CommonLocaleData {
   /// Map with all supported locale names. 
   static final Set<String> localeNames = {
 ''');
-  for (var locale in supportedLocales) {
+  for (var locale in Config.supportedLocales) {
     code.writeln('${escapeDartString(locale)},');
   }
   code.writeln('''
@@ -300,10 +299,10 @@ export 'common_locale_data.dart';
 
   ''');
 
-  for (var locale in supportedLocales) {
+  for (var locale in Config.supportedLocales) {
     code.writeln("import '${locale.toSnakeCase()}.dart';");
   }
-  for (var locale in supportedLocales) {
+  for (var locale in Config.supportedLocales) {
     code.writeln("export '${locale.toSnakeCase()}.dart';");
   }
 
@@ -312,7 +311,7 @@ export 'common_locale_data.dart';
 extension CommonLocaleDataAll on CommonLocaleData {
 ''');
 
-  for (var locale in supportedLocales) {
+  for (var locale in Config.supportedLocales) {
     var localeConstantName = lowerCamel(splitWords(locale));
     if (Keyword.keywords.containsKey(localeConstantName)) {
       localeConstantName = '\$$localeConstantName';
@@ -333,7 +332,7 @@ extension CommonLocaleDataAll on CommonLocaleData {
   static final locales =
   CanonicalizedMap<String, String, CommonLocaleData>.from({
 ''');
-  for (var locale in supportedLocales) {
+  for (var locale in Config.supportedLocales) {
     var localeConstantName = lowerCamel(splitWords(locale));
     if (Keyword.keywords.containsKey(localeConstantName)) {
       localeConstantName = '\$$localeConstantName';

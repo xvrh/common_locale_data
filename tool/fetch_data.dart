@@ -1,10 +1,11 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:pool/pool.dart';
+
 import 'config.dart';
-import 'utils/supported_locales.dart';
 
 void main() async {
   final miscSets = {
@@ -70,25 +71,25 @@ void main() async {
   // get zone.tab for zone to territory mapping; get it from the cldr repository to have teh version align to the cldr
   await download(
       tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/cldr/$cldrVersion/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/zone.tab',
+      'https://raw.githubusercontent.com/unicode-org/cldr/${Config.cldrVersion}/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/zone.tab',
       client,
       'zone.tab.txt');
 
   await download(
       tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/cldr/$cldrVersion/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/tzdb-version.txt',
+      'https://raw.githubusercontent.com/unicode-org/cldr/${Config.cldrVersion}/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/tzdb-version.txt',
       client,
       'tzdb-version.txt');
 
   await download(
       tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/icu/$icuVersion/icu4c/source/tools/tzcode/icuregions',
+      'https://raw.githubusercontent.com/unicode-org/icu/${Config.icuVersion}/icu4c/source/tools/tzcode/icuregions',
       client,
       'icuregions.txt');
 
   await download(
       tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/icu/$icuVersion/icu4c/source/data/misc/icuver.txt',
+      'https://raw.githubusercontent.com/unicode-org/icu/${Config.icuVersion}/icu4c/source/data/misc/icuver.txt',
       client,
       'icuver.txt');
 
@@ -97,7 +98,7 @@ void main() async {
       for (var file in miscSets[set]!)
         pool.withResource(() async {
           var url =
-              'https://raw.githubusercontent.com/unicode-org/cldr-json/$cldrJsonVersion/cldr-json/cldr-$set/$file.json';
+              'https://raw.githubusercontent.com/unicode-org/cldr-json/${Config.cldrJsonVersion}/cldr-json/cldr-$set/$file.json';
           var directory = Directory(p.join(dataDirectory.path, set));
           var fileName = '$file.json';
 
@@ -107,13 +108,13 @@ void main() async {
   }
 
   var futures = <Future>[];
-  for (var locale in getSupportedLocales()) {
+  for (var locale in Config.supportedLocales) {
     var localeFutures = <Future>[];
     for (var set in sets.keys) {
       for (var file in sets[set]!) {
         var future = pool.withResource(() async {
           var url =
-              'https://raw.githubusercontent.com/unicode-org/cldr-json/$cldrJsonVersion/cldr-json/cldr-$set-full/main/$locale/$file.json';
+              'https://raw.githubusercontent.com/unicode-org/cldr-json/${Config.cldrJsonVersion}/cldr-json/cldr-$set-full/main/$locale/$file.json';
           var directory = Directory(p.join(dataDirectory.path, '$set/$file'));
           var fileName = '$locale.json';
           try {
