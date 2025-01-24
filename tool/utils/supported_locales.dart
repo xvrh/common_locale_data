@@ -1,4 +1,4 @@
-import 'package:collection/collection.dart';
+import 'package:common_locale_data/src/locale_id/base_language_id.dart';
 import '../config.dart';
 import 'read_json_data.dart';
 
@@ -14,13 +14,22 @@ enum CoverageLevel {
 
 class Locales {
   /// support all possible locales
-  static const Set<String> all = {};
+  static Set<String> all = _getLocales();
 
   /// support the main locales (locales without a - in the name)
-  static const Set<String> main = {'main'};
+  static Set<String> main =
+      all.where((str) => BaseLanguageId.parse(str).region == null).toSet();
 
   /// support small set for testing purposes
-  static const Set<String> test = {'en', 'de', 'fr', 'en-GB', 'es', 'zh-Hans'};
+  static const Set<String> test = {
+    'en',
+    'de',
+    'de-CH',
+    'fr',
+    'en-GB',
+    'es',
+    'zh-Hans'
+  };
 
   /// for compatibility with original languages of this package
   static const Set<String> compatibility = {
@@ -54,23 +63,13 @@ class Locales {
   };
 }
 
-Set<String> getSupportedLocales() {
-  var locales = getLocales();
-  var mainLocales = locales.whereNot((str) => str.contains('-')).toSet();
-
-  if (supportedLocales.isEmpty) return locales;
-  if (supportedLocales.contains('main')) return mainLocales;
-
-  return supportedLocales;
-}
-
-Set<String> getLocales() {
+Set<String> _getLocales() {
   var coverageLevels = readJsonData(
           'tool/data/core/coverageLevels.json', 'effectiveCoverageLevels')
       .cast<String, String>();
 
   coverageLevels.removeWhere((key, value) =>
-      CoverageLevel.values.byName(value).value < coverageLevel.value ||
+      CoverageLevel.values.byName(value).value < Config.coverageLevel.value ||
       key == 'und');
 
   return coverageLevels.keys.toSet();

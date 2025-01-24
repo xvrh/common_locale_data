@@ -1,4 +1,12 @@
 /// Library to access translated common data.
+///
+/// You should access individual locales by importing `<locale>.dart`,
+/// e.g.
+///
+/// `import 'package:common_locale_data/en.dart';` or
+///
+/// `import 'package:common_locale_data/zh_Hant.dart';`
+///
 /// The translations are extracted from the Common Locale Data
 /// Repository ([CLDR](https://cldr.unicode.org/)).
 library;

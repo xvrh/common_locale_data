@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
 import '../utils/generate_class.dart';
@@ -21,7 +20,7 @@ Set<String> _countries = _territoryContainment.entries
     .toSet();
 
 String generateTerritoryData() {
-  var code = StringBuffer();
+  var output = StringBuffer();
 
   Map<String, Map<String, dynamic>> subdivisionContainment;
   try {
@@ -36,7 +35,7 @@ String generateTerritoryData() {
     ).cast<String, Map<String, dynamic>>();
   }
 
-  code.writeln('''
+  output.writeln('''
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 import 'package:collection/collection.dart';
@@ -120,7 +119,7 @@ class TerritoryData {
 
   ''');
 
-  code.writeln('''
+  output.writeln('''
   /// Territory containment.
   static final containment = CanonicalizedMap<String, String, Set<String>>.from({
       ''');
@@ -129,13 +128,13 @@ class TerritoryData {
         e.value.containsKey('_contains') &&
         e.value['_grouping'] != 'true') {
       var regions = (e.value['_contains'] as List).cast<String>();
-      code.writeln(
+      output.writeln(
           '${escapeDartString(e.key)}: const {${regions.map((e) => escapeDartString(e)).join(', ')}},');
     }
   }
-  code.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
+  output.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
 
-  code.writeln('''
+  output.writeln('''
   /// Territory grouping.
   static final grouping = CanonicalizedMap<String, String, Set<String>>.from({
       ''');
@@ -145,13 +144,13 @@ class TerritoryData {
         e.value.containsKey('_contains')) {
       var key = e.key.split('-')[0];
       var regions = (e.value['_contains'] as List).cast<String>();
-      code.writeln(
+      output.writeln(
           '${escapeDartString(key)}: const {${regions.map((e) => escapeDartString(e)).join(', ')}},');
     }
   }
-  code.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
+  output.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
 
-  code.writeln('''
+  output.writeln('''
   /// Territory grouping.
   static final subdivisions = CanonicalizedMap<String, String, Set<String>>.from({
       ''');
@@ -161,14 +160,14 @@ class TerritoryData {
         e.value['_grouping'] != 'true') {
       var key = e.key.split('-')[0];
       var regions = (e.value['_contains'] as List).cast<String>();
-      code.writeln(
+      output.writeln(
           '${escapeDartString(key)}: const {${regions.map((e) => escapeDartString(e)).join(', ')}},');
     }
   }
-  code.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
+  output.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
 
-  code.writeln('}');
-  return code.toString();
+  output.writeln('}');
+  return output.toString();
 }
 
 String updateTerritoriesModel(String file) {
@@ -183,50 +182,47 @@ String updateTerritoriesModel(String file) {
   return updateModelFlexible(file, 'Territory', entries);
 }
 
-void generateTerritories(String locale, StringBuffer output) {
-  var translatedTerritories = readJsonData(
-          'tool/data/localenames/territories/$locale.json',
-          'main/$locale/localeDisplayNames/territories')
-      .cast<String, String>();
+String? generateTerritories(String locale) {
+  var reference = Map.fromEntries(_reference.entries
+      .where((e) => !e.key.contains('-alt-') && !_countries.contains(e.key))
+      .map(
+        (ref) => MapEntry(
+          ref.value.toLowerCamelCase(),
+          ref.key,
+        ),
+      ));
 
-  String translatedTerritory(String territoryCode) {
-    final output =
-        StringBuffer('Territory(${escapeDartString(territoryCode)},');
+  reference.addAll(Map.fromEntries(_reference.entries
+      .where((e) => !e.key.contains('-alt-'))
+      .map((e) => MapEntry(e.key, e.key))));
 
-    output.writeln(escapeDartString(translatedTerritories[territoryCode]!));
+  return generateInheritedClass(
+    locale,
+    reference,
+    r'tool/data/localenames/territories/$locale.json',
+    r'main/$locale/localeDisplayNames/territories',
+    'Territory',
+    'Territories',
+    'ZZ',
+    generateTerritoryCode,
+    skipAddUnknown: true,
+  );
+}
 
-    for (final alt in ['variant', 'short']) {
-      final altName = translatedTerritories['$territoryCode-alt-$alt'];
-      if (altName != null) {
-        output.writeln(
-            ', ${alt.toLowerCamelCase()}: ${escapeDartString(altName)}');
-      }
+String generateTerritoryCode(
+    String territoryCode, Map<String, String> translatedTerritories) {
+  final output = StringBuffer('Territory(${escapeDartString(territoryCode)},');
+
+  output.writeln(escapeDartString(translatedTerritories[territoryCode]!));
+
+  for (final alt in ['variant', 'short']) {
+    final altName = translatedTerritories['$territoryCode-alt-$alt'];
+    if (altName != null) {
+      output
+          .writeln(', ${alt.toLowerCamelCase()}: ${escapeDartString(altName)}');
     }
-
-    output.writeln(')');
-    return '$output';
   }
 
-  generateClassFlexible(
-      output,
-      'Territories',
-      locale,
-      CombinedIterableView([
-        _reference.entries
-            .where(
-                (e) => !e.key.contains('-alt-') && !_countries.contains(e.key))
-            .map(
-              (ref) => MapEntry(
-                ref.value.toLowerCamelCase(),
-                ref.key,
-              ),
-            ),
-        _reference.keys.where((e) => !e.contains('-alt-')).map(
-              (ref) => MapEntry(
-                  ref, translatedTerritories.containsKey(ref) ? ref : 'ZZ'),
-            )
-      ]),
-      translatedTerritories.keys,
-      translatedTerritory,
-      'ZZ');
+  output.writeln(')');
+  return '$output';
 }

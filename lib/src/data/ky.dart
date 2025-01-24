@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'ky';
-const _cld = CommonLocaleDataKy._();
+const _cld = CommonLocaleDataKy.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataKy implements CommonLocaleData {
+class CommonLocaleDataKy extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataKy._();
+  const CommonLocaleDataKy.constant() : super.constant();
 
   factory CommonLocaleDataKy() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataKy implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsKy._(_cld);
+  static final _units = UnitsKy(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsKy._(_cld);
+  static final _dateFields = DateFieldsKy(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesKy._(_cld);
+  static final _languages = LanguagesKy(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsKy._(_cld);
+  static final _scripts = ScriptsKy(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesKy._(_cld);
+  static final _territories = TerritoriesKy(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsKy._(_cld);
+  static final _variants = VariantsKy(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsKy._(_cld);
+  static final _subdivisions = SubdivisionsKy(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesKy._(_cld);
+  static final _currencies = CurrenciesKy(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesKy._(_cld);
+  static final _timeZones = TimeZonesKy(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameKy._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameKy(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsKy extends Units {
-  UnitsKy._(super.cld);
+  const UnitsKy(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsKy extends Units {
 }
 
 class DateFieldsKy extends DateFields {
-  DateFieldsKy._(super.cld);
+  const DateFieldsKy(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'жыл',
           short: 'ж.',
           narrow: 'ж.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'былтыр',
           short: 'былтыр',
           narrow: 'былтыр',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'быйыл',
           short: 'быйыл',
           narrow: 'быйыл',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'эмдиги жылы',
           short: 'эмдиги жылы',
           narrow: 'эмдиги жылы',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} жыл мурун',
@@ -4453,7 +4453,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} жыл мурун',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} жылдан кийин',
@@ -4473,28 +4473,28 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'чейрек',
           short: 'чейр.',
           narrow: 'чейр.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'акыркы чейрек',
           short: 'акыркы чейр.',
           narrow: 'акыркы чейр.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'бул чейрек',
           short: 'бул чейр.',
           narrow: 'бул чейр.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'кийинки чейрек',
           short: 'кийинки чейр.',
           narrow: 'кийинки чейр.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} чейрек мурун',
@@ -4511,7 +4511,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} чейр. мурун',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} чейректен кийин',
@@ -4531,28 +4531,28 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'ай',
           short: 'ай',
           narrow: 'ай',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'өткөн айда',
           short: 'өткөн айда',
           narrow: 'өткөн айда',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'бул айда',
           short: 'бул айда',
           narrow: 'бул айда',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'эмдиги айда',
           short: 'эмдиги айда',
           narrow: 'эмдиги айда',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ай мурун',
@@ -4569,7 +4569,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} ай мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} айдан кийин',
@@ -4589,28 +4589,28 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'апта',
           short: 'апт',
           narrow: 'апт',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'өткөн аптада',
           short: 'өткөн апт.',
           narrow: 'өткөн апт.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул аптада',
           short: 'ушул апт.',
           narrow: 'ушул апт.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки аптада',
           short: 'келерки апт.',
           narrow: 'келерки апт.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} апта мурун',
@@ -4627,7 +4627,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} апт. мурун',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} аптадан кийин',
@@ -4654,28 +4654,28 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'күн',
           short: 'күн',
           narrow: 'күн',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'кечээ',
           short: 'кечээ',
           narrow: 'кечээ',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'бүгүн',
           short: 'бүгүн',
           narrow: 'бүгүн',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'эртең',
           short: 'эртең',
           narrow: 'эртең',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} күн мурун',
@@ -4692,7 +4692,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} күн мурун',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} күндөн кийин',
@@ -4733,23 +4733,23 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'өткөн жекшембиде',
           short: 'өткөн жекш.',
           narrow: 'өткөн жекш.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул жекшембиде',
           short: 'ушул жекш.',
           narrow: 'ушул жекш.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки жекшембиде',
           short: 'келерки жекш.',
           narrow: 'келерки жекш.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} жекшемби мурун',
@@ -4766,7 +4766,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} жекшемб. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} жекшембиден кийин',
@@ -4786,23 +4786,23 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'өткөн дүйшөмбүдө',
           short: 'өткөн дүйш.',
           narrow: 'өткөн дш.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул дүйшөмбүдө',
           short: 'ушул дүйш.',
           narrow: 'ушул дш.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки дүйшөмбүдө',
           short: 'келерки дүйш.',
           narrow: 'келерки дш.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} дүйшөмбү мурун',
@@ -4819,7 +4819,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} дш. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} дүйшөмбүдөн кийин',
@@ -4839,23 +4839,23 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'өткөн шейшембиде',
           short: 'өткөн шейш.',
           narrow: 'өткөн шейш.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул шейшембиде',
           short: 'ушул шейш.',
           narrow: 'ушул шейш.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки шейшембиде',
           short: 'келерки шейш.',
           narrow: 'келерки шейш.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} шейшемби мурун',
@@ -4872,7 +4872,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} шейш. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} шейшембиден кийин',
@@ -4892,23 +4892,23 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'өткөн шаршембиде',
           short: 'өткөн шарш.',
           narrow: 'өткөн шр.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул шаршембиде',
           short: 'ушул шарш.',
           narrow: 'ушул шр.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки шаршембиде',
           short: 'келерки шарш.',
           narrow: 'келерки шр.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} шаршемби мурун',
@@ -4925,7 +4925,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} шр. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} шаршембиден кийин',
@@ -4945,23 +4945,23 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'өткөн бейшембиде',
           short: 'өткөн бейш.',
           narrow: 'өткөн бш.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул бейшембиде',
           short: 'ушул бейш.',
           narrow: 'ушул бш.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки бейшембиде',
           short: 'келерки бейш.',
           narrow: 'келерки бш.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} бейшемби мурун',
@@ -4978,7 +4978,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} бш. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} бейшембиден кийин',
@@ -4998,23 +4998,23 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'өткөн жума күнү',
           short: 'өткөн жм.',
           narrow: 'өткөн жм',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул жума күнү',
           short: 'өткөн жм.',
           narrow: 'ушул жм',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки жума күнү',
           short: 'келерки жм.',
           narrow: 'келерки жм',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} жума мурун',
@@ -5031,7 +5031,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} жм мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} жумадан кийин',
@@ -5051,23 +5051,23 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'өткөн ишембиде',
           short: 'өткөн ишм.',
           narrow: 'өткөн ишм.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул ишембиде',
           short: 'ушул ишм.',
           narrow: 'ушул ишм.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'келерки ишембиде',
           short: 'келерки ишм.',
           narrow: 'келерки ишм.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ишемби мурун',
@@ -5084,7 +5084,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} ишм. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ишембиден кийин',
@@ -5111,18 +5111,18 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'саат',
           short: 'ст',
           narrow: 'ст',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул саатта',
           short: 'ушул саатта',
           narrow: 'ушул саатта',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} саат мурун',
@@ -5139,7 +5139,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} с. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} сааттан кийин',
@@ -5159,18 +5159,18 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'мүнөт',
           short: 'мүн.',
           narrow: 'м.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ушул мүнөттө',
           short: 'ушул мүнөттө',
           narrow: 'ушул мүнөттө',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} мүнөт мурун',
@@ -5187,7 +5187,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} мүн. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} мүнөттөн кийин',
@@ -5207,18 +5207,18 @@ class DateFieldsKy extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'секунд',
           short: 'сек.',
           narrow: 'сек.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'азыр',
           short: 'азыр',
           narrow: 'азыр',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} секунд мурун',
@@ -5235,7 +5235,7 @@ class DateFieldsKy extends DateFields {
             other: '{0} сек. мурн',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} секунддан кийин',
@@ -5263,7 +5263,7 @@ class DateFieldsKy extends DateFields {
 }
 
 class LanguagesKy extends Languages {
-  const LanguagesKy._(super.cld);
+  const LanguagesKy(super.cld);
 
   static const _aa = Language('aa', 'афарча');
   static const _ab = Language('ab', 'абхазча');
@@ -7049,7 +7049,9 @@ class LanguagesKy extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -7504,7 +7506,7 @@ class LanguagesKy extends Languages {
 }
 
 class ScriptsKy extends Scripts {
-  const ScriptsKy._(super.cld);
+  const ScriptsKy(super.cld);
 
   static const _adlm = Script('Adlm', 'Адлам (жазуу)');
   static const _arab = Script('Arab', 'Араб');
@@ -7988,7 +7990,9 @@ class ScriptsKy extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Arab': _arab,
     'Aran': _aran,
@@ -8051,7 +8055,7 @@ class ScriptsKy extends Scripts {
 }
 
 class TerritoriesKy extends Territories {
-  const TerritoriesKy._(super.cld);
+  const TerritoriesKy(super.cld);
 
   static const _$001 = Territory('001', 'Дүйнө');
   static const _$002 = Territory('002', 'Африка');
@@ -9020,7 +9024,9 @@ class TerritoriesKy extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9319,17 +9325,21 @@ class TerritoriesKy extends Territories {
 }
 
 class VariantsKy extends Variants {
-  const VariantsKy._(super.cld);
+  const VariantsKy(super.cld);
 
   @override
-  final variants = const {};
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{};
 }
 
 class SubdivisionsKy extends Subdivisions {
-  const SubdivisionsKy._(super.cld);
+  const SubdivisionsKy(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'ad07': 'Андорра-Ла-Вилья',
     'aeaj': 'Ажман (эмирлик)',
     'aeaz': 'Абу-Даби',
@@ -9763,7 +9773,7 @@ class SubdivisionsKy extends Subdivisions {
 }
 
 class CurrenciesKy extends Currencies {
-  const CurrenciesKy._(super.cld);
+  const CurrenciesKy(super.cld);
 
   static const _aed = Currency(
       _cld, 'AED', 'Бириккен Араб Эмираттарынын дирхамы',
@@ -10637,7 +10647,9 @@ class CurrenciesKy extends Currencies {
   final zwr = _xxx;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'AED': _aed,
     'AFN': _afn,
     'ALL': _all,
@@ -10808,23 +10820,37 @@ class CurrenciesKy extends Currencies {
 }
 
 class TimeZonesKy extends TimeZones {
-  const TimeZonesKy._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: '{0} убактысы',
-            regionFormatDaylight: '{0} (+1)',
-            regionFormatStandard: '{0} (+0)',
-            fallbackFormat: '{1} ({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesKy(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => '{0} убактысы';
+  @override
+  String get regionFormatDaylight => '{0} (+1)';
+  @override
+  String get regionFormatStandard => '{0} (+0)';
+  @override
+  String get fallbackFormat => '{1} ({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Adak': TimeZoneNames(exemplarCity: 'Адак'),
     'America/Anchorage': TimeZoneNames(exemplarCity: 'Анкориж'),
     'America/Anguilla': TimeZoneNames(exemplarCity: 'Ангуила'),
@@ -11261,7 +11287,9 @@ class TimeZonesKy extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Afghanistan': MetaZone('Afghanistan',
         long: TimeZoneName(standard: 'Афганистан убактысы')),
     'Africa_Central': MetaZone('Africa_Central',
@@ -11774,17 +11802,25 @@ class TimeZonesKy extends TimeZones {
 }
 
 class LocaleDisplayNameKy extends LocaleDisplayName {
-  const LocaleDisplayNameKy._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'Тили: {0}',
-            codePatternScript: 'Жазуусу: {0}',
-            codePatternTerritory: 'Аймагы: {0}');
+  const LocaleDisplayNameKy(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'Тили: {0}';
+  @override
+  String get codePatternScript => 'Жазуусу: {0}';
+  @override
+  String get codePatternTerritory => 'Аймагы: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'Жылнаама',
     'cf': 'Валюта форматы',
     'co': 'Иргөө тартиби',
@@ -11794,9 +11830,10 @@ class LocaleDisplayNameKy extends LocaleDisplayName {
     'ms': 'Өлчөө тутуму',
     'nu': 'Сандар',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'Будда жылнаамасы',
       'chinese': 'Кытай жылнаамасы',

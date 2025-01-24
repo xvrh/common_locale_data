@@ -38,14 +38,14 @@ Future<void> main() async {
   // don't check expected data, only size, to save compilation time of this test file
   testFile(
     'test/tree_shaking_data/all_locales_static_data.dart',
-    maxLength: 500000,
+    maxLength: 360000,
     long: true,
   );
 
   // don't check expected data, only size, to save compilation time of this test file
   testFile(
     'test/tree_shaking_data/all_locales_all_data.dart',
-    maxLength: 43000000,
+    maxLength: 33000000,
     long: true,
   );
 }

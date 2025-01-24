@@ -4,8 +4,8 @@ import 'package:analyzer/dart/ast/token.dart';
 import 'package:common_locale_data/en.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:path/path.dart' as p;
+import 'config.dart';
 import 'utils/case_format.dart';
-import 'utils/supported_locales.dart';
 import 'utils/versions.dart';
 
 final RegExp _importRegex = RegExp(r"import '([^']+)';\r?\n");
@@ -45,10 +45,10 @@ String generateReadme(File source) {
   readme = readme.replaceAll(
       '##LOCALE_LIST##',
       ([
-                '| Locale | Description | Constant | Class | Import |',
-                '| ------ | ----------- | -------- | ----- | ------ |'
+                '| Locale | Description | Class | Import | Constant |',
+                '| ------ | ----------- | ----- | ------ | -------- |'
               ] +
-              getSupportedLocales().map((locale) {
+              Config.supportedLocales.map((locale) {
                 var description = CommonLocaleDataEn()
                     .localeDisplayName
                     .formatWithExtensions(LocaleId.parse(locale));
@@ -58,7 +58,7 @@ String generateReadme(File source) {
                   localeConstantName = '\$$localeConstantName';
                 }
 
-                return "| <nobr>$locale</nobr> | <nobr>$description</nobr> | <nobr>$localeConstantName</nobr> | <nobr>CommonLocaleData${locale.toUpperCamelCase()}</nobr> | <nobr>import 'package:common_locale_data/${locale.toSnakeCase()}';</nobr> |";
+                return '| <span style="white-space: nowrap;">$locale</span> | <span style="white-space: nowrap;">${description.replaceAll('[', '\\[')}</span> | <span style="white-space: nowrap;">CommonLocaleData${locale.toUpperCamelCase()}</span> | <span style="white-space: nowrap;">import \'package:common_locale_data/${locale.toSnakeCase()}\';</span> | <span style="white-space: nowrap;">$localeConstantName</span> |';
               }).toList())
           .join(Platform.isWindows ? '  \r\n' : '  \n'));
 

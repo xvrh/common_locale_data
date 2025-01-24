@@ -13,6 +13,9 @@ import 'variants.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
+  /// @nodoc
+  const CommonLocaleData.constant();
+
   /// Locale code.
   String get locale;
 

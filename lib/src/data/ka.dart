@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'ka';
-const _cld = CommonLocaleDataKa._();
+const _cld = CommonLocaleDataKa.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataKa implements CommonLocaleData {
+class CommonLocaleDataKa extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataKa._();
+  const CommonLocaleDataKa.constant() : super.constant();
 
   factory CommonLocaleDataKa() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataKa implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsKa._(_cld);
+  static final _units = UnitsKa(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsKa._(_cld);
+  static final _dateFields = DateFieldsKa(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesKa._(_cld);
+  static final _languages = LanguagesKa(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsKa._(_cld);
+  static final _scripts = ScriptsKa(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesKa._(_cld);
+  static final _territories = TerritoriesKa(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsKa._(_cld);
+  static final _variants = VariantsKa(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsKa._(_cld);
+  static final _subdivisions = SubdivisionsKa(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesKa._(_cld);
+  static final _currencies = CurrenciesKa(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesKa._(_cld);
+  static final _timeZones = TimeZonesKa(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameKa._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameKa(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsKa extends Units {
-  UnitsKa._(super.cld);
+  const UnitsKa(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsKa extends Units {
 }
 
 class DateFieldsKa extends DateFields {
-  DateFieldsKa._(super.cld);
+  const DateFieldsKa(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'წელი',
           short: 'წ.',
           narrow: 'წ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'გასულ წელს',
           short: 'გასულ წელს',
           narrow: 'გასულ წელს',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ წელს',
           short: 'ამ წელს',
           narrow: 'ამ წელს',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ წელს',
           short: 'მომავალ წელს',
           narrow: 'მომავალ წელს',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} წლის წინ',
@@ -4453,7 +4453,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} წლის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} წელიწადში',
@@ -4473,28 +4473,28 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'კვარტალი',
           short: 'კვარტ.',
           narrow: 'კვარტ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'გასულ კვარტალში',
           short: 'გასულ კვარტალში',
           narrow: 'გასულ კვარტალში',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ კვარტალში',
           short: 'ამ კვარტალში',
           narrow: 'ამ კვარტალში',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'შემდეგ კვარტალში',
           short: 'შემდეგ კვარტალში',
           narrow: 'შემდეგ კვარტალში',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} კვარტალის წინ',
@@ -4511,7 +4511,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} კვარტ. წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} კვარტალში',
@@ -4531,28 +4531,28 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'თვე',
           short: 'თვე',
           narrow: 'თვე',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'გასულ თვეს',
           short: 'გასულ თვეს',
           narrow: 'გასულ თვეს',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ თვეში',
           short: 'ამ თვეში',
           narrow: 'ამ თვეში',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ თვეს',
           short: 'მომავალ თვეს',
           narrow: 'მომავალ თვეს',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} თვის წინ',
@@ -4569,7 +4569,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} თვის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} თვეში',
@@ -4589,28 +4589,28 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'კვირა',
           short: 'კვ.',
           narrow: 'კვ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'გასულ კვირაში',
           short: 'გასულ კვირაში',
           narrow: 'გასულ კვირაში',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ კვირაში',
           short: 'ამ კვირაში',
           narrow: 'ამ კვირაში',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ კვირაში',
           short: 'მომავალ კვირაში',
           narrow: 'მომავალ კვირაში',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} კვირის წინ',
@@ -4627,7 +4627,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} კვირის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} კვირაში',
@@ -4654,28 +4654,28 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'დღე',
           short: 'დღე',
           narrow: 'დღე',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'გუშინ',
           short: 'გუშინ',
           narrow: 'გუშინ',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'დღეს',
           short: 'დღეს',
           narrow: 'დღეს',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'ხვალ',
           short: 'ხვალ',
           narrow: 'ხვალ',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} დღის წინ',
@@ -4692,7 +4692,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} დღის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} დღეში',
@@ -4733,23 +4733,23 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'გასულ კვირას',
           short: 'გასულ კვირას',
           narrow: 'გასულ კვირას',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ კვირას',
           short: 'ამ კვირას',
           narrow: 'ამ კვირას',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ კვირას',
           short: 'მომავალ კვირას',
           narrow: 'მომავალ კვირას',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} კვირის წინ',
@@ -4766,7 +4766,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} კვირი წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} კვირაში',
@@ -4786,23 +4786,23 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'გასულ ორშაბათს',
           short: 'წინა ორშ.',
           narrow: 'გას. ორ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ ორშაბათს',
           short: 'ამ ორშ.',
           narrow: 'ამ ორ.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ ორშაბათს',
           short: 'მომ. ორშ.',
           narrow: 'მომ. ორ.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ორშაბათის წინ',
@@ -4819,7 +4819,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} ორშაბათის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ორშაბათში',
@@ -4839,23 +4839,23 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'გასულ სამშაბათს',
           short: 'წინა სამ.',
           narrow: 'წინ სა.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ სამშაბათს',
           short: 'ამ სამ.',
           narrow: 'ამ სა.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ სამშაბათს',
           short: 'მომ. სამ.',
           narrow: 'მომმ სა.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} სამშაბათის წინ',
@@ -4872,7 +4872,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} სამშაბათის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} სამშაბათში',
@@ -4892,23 +4892,23 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'გასულ ოთხშაბათს',
           short: 'წინა ოთხ.',
           narrow: 'წინა ოთ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ ოთხშაბათს',
           short: 'ამ ოთხ.',
           narrow: 'ამ ოთ.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ ოთხშაბათს',
           short: 'მომ. ოთხ.',
           narrow: 'მომ. ოთ.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ოთხშაბათის წინ',
@@ -4925,7 +4925,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} ოთხშაბათის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ოთხშაბათში',
@@ -4945,23 +4945,23 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'გასულ ხუთშაბათს',
           short: 'წინა ხუთ.',
           narrow: 'წინა ხთ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ ხუთშაბათს',
           short: 'ამ ხუთ.',
           narrow: 'ამ ხთ.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ ხუთშაბათს',
           short: 'მომ. ხუთ.',
           narrow: 'მომ. ხთ.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ხუთშაბათის წინ',
@@ -4978,7 +4978,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} ხუთშაბათის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ხუთშაბათში',
@@ -4998,23 +4998,23 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'გასულ პარასკევს',
           short: 'წინა პარ.',
           narrow: 'წინა პა.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ პარასკევს',
           short: 'ამ პარ.',
           narrow: 'ამ პა.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ პარასკევს',
           short: 'მომ. პარ.',
           narrow: 'მომ. პა.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} პარასკევის წინ',
@@ -5031,7 +5031,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} პარასკევის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} პარასკევში',
@@ -5051,23 +5051,23 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'გასულ შაბათს',
           short: 'წინა შაბ.',
           narrow: 'წინა შბ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ შაბათს',
           short: 'ამ შაბ.',
           narrow: 'ამ შა.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'მომავალ შაბათს',
           short: 'მომ. შაბ.',
           narrow: 'მომ. შბ.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} შაბათის წინ',
@@ -5084,7 +5084,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} შაბათის წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} შაბათში',
@@ -5111,18 +5111,18 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'საათი',
           short: 'სთ.',
           narrow: 'სთ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ საათში',
           short: 'ამ საათში',
           narrow: 'ამ საათში',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} საათის წინ',
@@ -5139,7 +5139,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} სთ წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} საათში',
@@ -5159,18 +5159,18 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'წუთი',
           short: 'წთ.',
           narrow: 'წთ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ამ წუთში',
           short: 'ამ წუთში',
           narrow: 'ამ წუთში',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} წუთის წინ',
@@ -5187,7 +5187,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} წთ წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} წუთში',
@@ -5207,18 +5207,18 @@ class DateFieldsKa extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'წამი',
           short: 'წმ.',
           narrow: 'წმ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ახლა',
           short: 'ახლა',
           narrow: 'ახლა',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} წამის წინ',
@@ -5235,7 +5235,7 @@ class DateFieldsKa extends DateFields {
             other: '{0} წმ წინ',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} წამში',
@@ -5263,7 +5263,7 @@ class DateFieldsKa extends DateFields {
 }
 
 class LanguagesKa extends Languages {
-  const LanguagesKa._(super.cld);
+  const LanguagesKa(super.cld);
 
   static const _aa = Language('aa', 'აფარი');
   static const _ab = Language('ab', 'აფხაზური');
@@ -7127,7 +7127,9 @@ class LanguagesKa extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -7660,7 +7662,7 @@ class LanguagesKa extends Languages {
 }
 
 class ScriptsKa extends Scripts {
-  const ScriptsKa._(super.cld);
+  const ScriptsKa(super.cld);
 
   static const _adlm = Script('Adlm', 'ადლამი');
   static const _afak = Script('Afak', 'აფაკა');
@@ -8239,7 +8241,9 @@ class ScriptsKa extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Afak': _afak,
     'Arab': _arab,
@@ -8396,7 +8400,7 @@ class ScriptsKa extends Scripts {
 }
 
 class TerritoriesKa extends Territories {
-  const TerritoriesKa._(super.cld);
+  const TerritoriesKa(super.cld);
 
   static const _$001 = Territory('001', 'მსოფლიო');
   static const _$002 = Territory('002', 'აფრიკა');
@@ -9375,7 +9379,9 @@ class TerritoriesKa extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9674,17 +9680,21 @@ class TerritoriesKa extends Territories {
 }
 
 class VariantsKa extends Variants {
-  const VariantsKa._(super.cld);
+  const VariantsKa(super.cld);
 
   @override
-  final variants = const {};
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{};
 }
 
 class SubdivisionsKa extends Subdivisions {
-  const SubdivisionsKa._(super.cld);
+  const SubdivisionsKa(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'ad02': 'კანილო',
     'ad03': 'ენკამპი',
     'ad04': 'ლა-მასანა',
@@ -12989,7 +12999,7 @@ class SubdivisionsKa extends Subdivisions {
 }
 
 class CurrenciesKa extends Currencies {
-  const CurrenciesKa._(super.cld);
+  const CurrenciesKa(super.cld);
 
   static const _adp = Currency(_cld, 'ADP', 'ანდორული პესეტა');
   static const _aed =
@@ -13974,7 +13984,9 @@ class CurrenciesKa extends Currencies {
   final zwr = _xxx;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'ADP': _adp,
     'AED': _aed,
     'AFA': _afa,
@@ -14228,23 +14240,37 @@ class CurrenciesKa extends Currencies {
 }
 
 class TimeZonesKa extends TimeZones {
-  const TimeZonesKa._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: 'დრო: {0}',
-            regionFormatDaylight: '{0} ზაფხულის დრო',
-            regionFormatStandard: '{0} სტანდარტული დრო',
-            fallbackFormat: '{1} ({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesKa(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => 'დრო: {0}';
+  @override
+  String get regionFormatDaylight => '{0} ზაფხულის დრო';
+  @override
+  String get regionFormatStandard => '{0} სტანდარტული დრო';
+  @override
+  String get fallbackFormat => '{1} ({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Adak': TimeZoneNames(exemplarCity: 'ადაკი'),
     'America/Anchorage': TimeZoneNames(exemplarCity: 'ენქორაჯი'),
     'America/Anguilla': TimeZoneNames(exemplarCity: 'ანგილია'),
@@ -14682,7 +14708,9 @@ class TimeZonesKa extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Afghanistan':
         MetaZone('Afghanistan', long: TimeZoneName(standard: 'ავღანეთის დრო')),
     'Africa_Central': MetaZone('Africa_Central',
@@ -15185,17 +15213,25 @@ class TimeZonesKa extends TimeZones {
 }
 
 class LocaleDisplayNameKa extends LocaleDisplayName {
-  const LocaleDisplayNameKa._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'ენა: {0}',
-            codePatternScript: 'დამწერლობა: {0}',
-            codePatternTerritory: 'რეგიონი: {0}');
+  const LocaleDisplayNameKa(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'ენა: {0}';
+  @override
+  String get codePatternScript => 'დამწერლობა: {0}';
+  @override
+  String get codePatternTerritory => 'რეგიონი: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'კალენდარი',
     'cf': 'ვალუტის ფორმატი',
     'co': 'დახარისხების თანმიმდევრობა',
@@ -15205,9 +15241,10 @@ class LocaleDisplayNameKa extends LocaleDisplayName {
     'ms': 'საზომი სისტემა',
     'nu': 'რიცხვები',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'ბუდისტური კალენდარი',
       'chinese': 'ჩინური კალენდარი',

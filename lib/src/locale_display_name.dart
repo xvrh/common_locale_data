@@ -3,6 +3,8 @@ import 'locale.data.dart';
 import 'locale_id/base_language_id.dart';
 
 /// Display Name Style
+///
+/// {@category Locales}
 enum LocaleDisplayNameStyle {
   /// Normal display name.
   regular,
@@ -25,22 +27,26 @@ enum LocaleDisplayNameStyle {
 /// {@category Locales}
 abstract class LocaleDisplayName {
   final CommonLocaleData cld;
-  final String localePattern;
-  final String localeSeparator;
-  final String localeKeyTypePattern;
-  final String codePatternLanguage;
-  final String codePatternScript;
-  final String codePatternTerritory;
 
-  const LocaleDisplayName(
-    this.cld, {
-    required this.localePattern,
-    required this.localeSeparator,
-    required this.localeKeyTypePattern,
-    required this.codePatternLanguage,
-    required this.codePatternScript,
-    required this.codePatternTerritory,
-  });
+  /// Pattern to display locale
+  String get localePattern;
+
+  /// Pattern to concatenate parts of the locale
+  String get localeSeparator;
+
+  /// Pattern to display key value pairs
+  String get localeKeyTypePattern;
+
+  /// Pattern to display the language code
+  String get codePatternLanguage;
+
+  /// Pattern to display the script code
+  String get codePatternScript;
+
+  /// Pattern to display the territory code
+  String get codePatternTerritory;
+
+  const LocaleDisplayName(this.cld);
 
   Map<String, String> get keyNames;
 

@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'hsb';
-const _cld = CommonLocaleDataHsb._();
+const _cld = CommonLocaleDataHsb.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataHsb implements CommonLocaleData {
+class CommonLocaleDataHsb extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataHsb._();
+  const CommonLocaleDataHsb.constant() : super.constant();
 
   factory CommonLocaleDataHsb() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataHsb implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsHsb._(_cld);
+  static final _units = UnitsHsb(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsHsb._(_cld);
+  static final _dateFields = DateFieldsHsb(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesHsb._(_cld);
+  static final _languages = LanguagesHsb(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsHsb._(_cld);
+  static final _scripts = ScriptsHsb(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesHsb._(_cld);
+  static final _territories = TerritoriesHsb(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsHsb._(_cld);
+  static final _variants = VariantsHsb(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsHsb._(_cld);
+  static final _subdivisions = SubdivisionsHsb(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesHsb._(_cld);
+  static final _currencies = CurrenciesHsb(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesHsb._(_cld);
+  static final _timeZones = TimeZonesHsb(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameHsb._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameHsb(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsHsb extends Units {
-  UnitsHsb._(super.cld);
+  const UnitsHsb(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -5509,7 +5509,7 @@ class UnitsHsb extends Units {
 }
 
 class DateFieldsHsb extends DateFields {
-  DateFieldsHsb._(super.cld);
+  const DateFieldsHsb(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -5519,28 +5519,28 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'lěto',
           short: 'l.',
           narrow: 'l.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'loni',
           short: 'lon.',
           narrow: 'lo.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'lětsa',
           short: 'lěts.',
           narrow: 'lět.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'klětu',
           short: 'klět.',
           narrow: 'klě.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} lětom',
@@ -5563,7 +5563,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} l.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} lěto',
@@ -5589,28 +5589,28 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'kwartal',
           short: 'kwart.',
           narrow: 'kw.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'zašły kwartal',
           short: 'zašły kwartal',
           narrow: 'zašły kwartal',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutón kwartal',
           short: 'tutón kwartal',
           narrow: 'tutón kwartal',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodny kwartal',
           short: 'přichodny kwartal',
           narrow: 'přichodny kwartal',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} kwartalom',
@@ -5633,7 +5633,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} kw.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} kwartal',
@@ -5659,28 +5659,28 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'měsac',
           short: 'měs.',
           narrow: 'měs.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'zašły měsac',
           short: 'zašł. měsac',
           narrow: 'zaš. měsac',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutón měsac',
           short: 'tut. měsac',
           narrow: 'tu. měsac',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodny měsac',
           short: 'přichodn. měsac',
           narrow: 'přich. měsac',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} měsacom',
@@ -5703,7 +5703,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} měs.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} měsac',
@@ -5729,28 +5729,28 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'tydźeń',
           short: 'tydź.',
           narrow: 'tydź.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'zašły tydźeń',
           short: 'zašł. tydźeń',
           narrow: 'zaš. tydźeń',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutón tydźeń',
           short: 'tut. tydźeń',
           narrow: 'tu. tydźeń',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodny tydźeń',
           short: 'přichodn. tydźeń',
           narrow: 'přich. tydźeń',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} tydźenjom',
@@ -5773,7 +5773,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} tydź.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} tydźeń',
@@ -5806,28 +5806,28 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'dźeń',
           short: 'dźeń',
           narrow: 'd',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'wčera',
           short: 'wčer.',
           narrow: 'wč.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'dźensa',
           short: 'dźens.',
           narrow: 'dźe.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'jutře',
           short: 'jutř.',
           narrow: 'jut.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} dnjom',
@@ -5850,7 +5850,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} d',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} dźeń',
@@ -5897,23 +5897,23 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'zašłu njedźelu',
           short: 'zašłu nje.',
           narrow: 'zašłu nj.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutu njedźelu',
           short: 'tutu nje.',
           narrow: 'tutu nj.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodnu njedźelu',
           short: 'přichodnu nje.',
           narrow: 'přichodnu nj.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} njedźelu',
@@ -5936,7 +5936,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} nj.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} njedźelu',
@@ -5962,23 +5962,23 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'zašłu póndźelu',
           short: 'zašłu pón.',
           narrow: 'zašłu pó.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutu póndźelu',
           short: 'tutu pón.',
           narrow: 'tutu pó.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodnu póndźelu',
           short: 'přichodnu pón.',
           narrow: 'přichodnu pó.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} póndźelu',
@@ -6001,7 +6001,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} pó.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} póndźelu',
@@ -6027,23 +6027,23 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'zašłu wutoru',
           short: 'zašłu wut.',
           narrow: 'zašłu wu.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutu wutoru',
           short: 'tutu wut.',
           narrow: 'tutu wu.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodnu wutoru',
           short: 'přichodnu wut.',
           narrow: 'přichodnu wu.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} wutoru',
@@ -6066,7 +6066,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} wu.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} wutoru',
@@ -6092,23 +6092,23 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'zašłu srjedu',
           short: 'zašłu srj.',
           narrow: 'zašłu sr.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutu srjedu',
           short: 'tutu srj.',
           narrow: 'tutu sr.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodnu srjedu',
           short: 'přichodnu srj.',
           narrow: 'přichodnu sr.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} srjedu',
@@ -6131,7 +6131,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} sr.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} srjedu',
@@ -6157,23 +6157,23 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'zašły štwórtk',
           short: 'zašły štw.',
           narrow: 'zašły št.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutón štwórtk',
           short: 'tutón štw.',
           narrow: 'tutón št.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodny štwórtk',
           short: 'přichodny štw.',
           narrow: 'přichodny št.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} štwórtkom',
@@ -6196,7 +6196,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} št.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} štwórtk',
@@ -6222,23 +6222,23 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'zašły pjatk',
           short: 'zašły pja.',
           narrow: 'zašły pj.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutón pjatk',
           short: 'tutón pja.',
           narrow: 'tutón pj.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodny pjatk',
           short: 'přichodny pja.',
           narrow: 'přichodny pj.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} pjatkom',
@@ -6261,7 +6261,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} pj.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} pjatk',
@@ -6287,23 +6287,23 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'zašłu sobotu',
           short: 'zašłu sob.',
           narrow: 'zašłu so.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'tutu sobotu',
           short: 'tutu sob.',
           narrow: 'tutu so.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'přichodnu sobotu',
           short: 'přichodnu sob.',
           narrow: 'přichodnu so.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} sobotu',
@@ -6326,7 +6326,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} so.',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} sobotu',
@@ -6359,18 +6359,18 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'hodźina',
           short: 'hodź.',
           narrow: 'h',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'w tutej hodźinje',
           short: 'w tutej hodźinje',
           narrow: 'w tutej hodźinje',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} hodźinu',
@@ -6393,7 +6393,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} h',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} hodźinu',
@@ -6419,18 +6419,18 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'minuta',
           short: 'min.',
           narrow: 'm',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'w tutej mjeńšinje',
           short: 'w tutej mjeńšinje',
           narrow: 'w tutej mjeńšinje',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} minutu',
@@ -6453,7 +6453,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} m',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} minutu',
@@ -6479,18 +6479,18 @@ class DateFieldsHsb extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'sekunda',
           short: 'sek.',
           narrow: 's',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'nětko',
           short: 'nětko',
           narrow: 'nětko',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'před {0} sekundu',
@@ -6513,7 +6513,7 @@ class DateFieldsHsb extends DateFields {
             other: 'před {0} s',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'za {0} sekundu',
@@ -6547,7 +6547,7 @@ class DateFieldsHsb extends DateFields {
 }
 
 class LanguagesHsb extends Languages {
-  const LanguagesHsb._(super.cld);
+  const LanguagesHsb(super.cld);
 
   static const _aa = Language('aa', 'afaršćina');
   static const _ab = Language('ab', 'abchazišćina');
@@ -8339,7 +8339,9 @@ class LanguagesHsb extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -8798,7 +8800,7 @@ class LanguagesHsb extends Languages {
 }
 
 class ScriptsHsb extends Scripts {
-  const ScriptsHsb._(super.cld);
+  const ScriptsHsb(super.cld);
 
   static const _adlm = Script('Adlm', 'adlamske pismo');
   static const _arab = Script('Arab', 'arabsce');
@@ -9284,7 +9286,9 @@ class ScriptsHsb extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Arab': _arab,
     'Aran': _aran,
@@ -9347,7 +9351,7 @@ class ScriptsHsb extends Scripts {
 }
 
 class TerritoriesHsb extends Territories {
-  const TerritoriesHsb._(super.cld);
+  const TerritoriesHsb(super.cld);
 
   static const _$001 = Territory('001', 'swět');
   static const _$002 = Territory('002', 'Afrika');
@@ -10322,7 +10326,9 @@ class TerritoriesHsb extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -10621,21 +10627,25 @@ class TerritoriesHsb extends Territories {
 }
 
 class VariantsHsb extends Variants {
-  const VariantsHsb._(super.cld);
+  const VariantsHsb(super.cld);
 
   @override
-  final variants = const {};
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{};
 }
 
 class SubdivisionsHsb extends Subdivisions {
-  const SubdivisionsHsb._(super.cld);
+  const SubdivisionsHsb(super.cld);
 
   @override
-  final subdivisions = const {};
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{};
 }
 
 class CurrenciesHsb extends Currencies {
-  const CurrenciesHsb._(super.cld);
+  const CurrenciesHsb(super.cld);
 
   static const _adp = Currency(_cld, 'ADP', 'andorraska peseta',
       one: 'andorraska peseta',
@@ -12336,7 +12346,9 @@ class CurrenciesHsb extends Currencies {
   final zwr = _xxx;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'ADP': _adp,
     'AED': _aed,
     'AFN': _afn,
@@ -12533,23 +12545,37 @@ class CurrenciesHsb extends Currencies {
 }
 
 class TimeZonesHsb extends TimeZones {
-  const TimeZonesHsb._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: 'časowe pasmo {0}',
-            regionFormatDaylight: '{0} lětni čas',
-            regionFormatStandard: '{0} zymski čas',
-            fallbackFormat: '{1} ({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesHsb(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => 'časowe pasmo {0}';
+  @override
+  String get regionFormatDaylight => '{0} lětni čas';
+  @override
+  String get regionFormatStandard => '{0} zymski čas';
+  @override
+  String get fallbackFormat => '{1} ({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Asuncion': TimeZoneNames(exemplarCity: 'Asunción'),
     'America/Bahia_Banderas': TimeZoneNames(exemplarCity: 'Bahía de Banderas'),
     'America/Bogota': TimeZoneNames(exemplarCity: 'Bogotá'),
@@ -12689,7 +12715,9 @@ class TimeZonesHsb extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Afghanistan':
         MetaZone('Afghanistan', long: TimeZoneName(standard: 'afghanski čas')),
     'Africa_Central': MetaZone('Africa_Central',
@@ -13194,17 +13222,25 @@ class TimeZonesHsb extends TimeZones {
 }
 
 class LocaleDisplayNameHsb extends LocaleDisplayName {
-  const LocaleDisplayNameHsb._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'rěč: {0}',
-            codePatternScript: 'pismo: {0}',
-            codePatternTerritory: 'region: {0}');
+  const LocaleDisplayNameHsb(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'rěč: {0}';
+  @override
+  String get codePatternScript => 'pismo: {0}';
+  @override
+  String get codePatternTerritory => 'region: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'protyka',
     'cf': 'format měny',
     'co': 'rjadowanski slěd',
@@ -13214,9 +13250,10 @@ class LocaleDisplayNameHsb extends LocaleDisplayName {
     'ms': 'system měrow',
     'nu': 'ličby',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'buddhistiska protyka',
       'chinese': 'chinska protyka',

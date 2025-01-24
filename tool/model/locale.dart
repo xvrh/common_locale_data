@@ -4,7 +4,7 @@ import '../utils/escape_dart_string.dart';
 import '../utils/read_json_data.dart';
 
 String generateLocaleData() {
-  var code = StringBuffer();
+  var output = StringBuffer();
   var aliasGroups = readJsonData(
     'tool/data/core/supplemental/aliases.json',
     'supplemental/metadata/alias',
@@ -64,7 +64,7 @@ String generateLocaleData() {
         .cast<Map<String, dynamic>>();
   }
 
-  code.writeln('''
+  output.writeln('''
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 import 'package:collection/collection.dart';
@@ -140,17 +140,17 @@ class LocaleData {
     }
   }
 
-  code.writeln('''
+  output.writeln('''
   
   /// Legacy BCP47 to canonical mapping
   static final legacyToCanonical = CanonicalizedMap<String, String, String>.from({
 ''');
   for (var e in legacyToCanonical.entries) {
-    code.writeln('${escapeDartString(e.key)}: ${escapeDartString(e.value)},');
+    output.writeln('${escapeDartString(e.key)}: ${escapeDartString(e.value)},');
   }
-  code.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
+  output.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
 
-  code.writeln('''
+  output.writeln('''
   
   /// Canonicalization rules
   /// These rules must be properly sorted: https://www.unicode.org/reports/tr35/#preprocessing
@@ -161,21 +161,21 @@ class LocaleData {
     args.add(
         'replacements: [${r.replacements.map((e) => languageIdToString(e)).join(', ')}]');
 
-    code.writeln('  LanguageCanonicalizationRule(${args.join(', ')}),');
+    output.writeln('  LanguageCanonicalizationRule(${args.join(', ')}),');
   }
-  code.writeln('];');
+  output.writeln('];');
 
-  code.writeln('''
+  output.writeln('''
   
   /// Subdivision alias mapping
   static final subDivisionAlias = CanonicalizedMap<String, String, String>.from({
 ''');
   for (var e in subDivisionAlias.entries) {
-    code.writeln('${escapeDartString(e.key)}: ${escapeDartString(e.value)},');
+    output.writeln('${escapeDartString(e.key)}: ${escapeDartString(e.value)},');
   }
-  code.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
+  output.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
 
-  code.writeln('''
+  output.writeln('''
   
   /// Likely subtags mapping
   static final likelySubtags = CanonicalizedMap<String, String, BaseLanguageId>.from({
@@ -184,9 +184,9 @@ class LocaleData {
   for (var entry in likelySubtags.entries) {
     var from = entry.key;
     var to = languageIdToString(BaseLanguageId.parse(entry.value as String));
-    code.writeln('${escapeDartString(from)}: $to,');
+    output.writeln('${escapeDartString(from)}: $to,');
   }
-  code.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
+  output.writeln("}, (key) => key.toLowerCase().replaceAll('_','-'));");
 
   var paradigmLocales = <String>[];
   var matchVariables = <String, String>{};
@@ -290,7 +290,7 @@ class LocaleData {
       .flattened
       .toList();
 
-  code.writeln('''
+  output.writeln('''
   
   /// Preferred locales for a cluster
   static final paradigmLocales = [${paradigmLocales.map((e) => escapeDartString(e)).join(', ')}];
@@ -303,23 +303,23 @@ class LocaleData {
     var from = entry.key;
     var regions = expandRegionExpression(entry.value);
 
-    code.writeln(
+    output.writeln(
         '${escapeDartString(from)}: {${regions.map((e) => escapeDartString(e)).join(',')}},');
   }
 
-  code.writeln('}, (key) => key.toLowerCase());');
+  output.writeln('}, (key) => key.toLowerCase());');
 
-  code.writeln('''
+  output.writeln('''
   /// locale matching rules
   static final matchRules = <List<LanguageMatchRule>>[
   ''');
 
-  code.writeln(matchRules
+  output.writeln(matchRules
       .map((m) =>
           '[${m.map((r) => 'LanguageMatchRule(${languageIdToString(r.desired)},${languageIdToString(r.supported)}, ${r.distance}${r.oneWay ? ", true" : ""})').join(',')}]')
       .join(','));
 
-  code.writeln('];');
+  output.writeln('];');
 
   var keys = <String, ExtensionKeys>{};
 
@@ -407,52 +407,52 @@ class LocaleData {
     }
   }
 
-  code.writeln('''
+  output.writeln('''
   
   /// Locale matching variables
   static final extensionKeys = CanonicalizedMap<String, String, ExtensionKeys>.from({
   ''');
 
   for (var extension in keys.entries) {
-    code.writeln('${escapeDartString(extension.key)}: ExtensionKeys(');
+    output.writeln('${escapeDartString(extension.key)}: ExtensionKeys(');
 
-    code.writeln('CanonicalizedMap<String, String, ExtensionKey>.from({');
+    output.writeln('CanonicalizedMap<String, String, ExtensionKey>.from({');
 
     for (var key in extension.value.keys.entries) {
-      code.writeln('${escapeDartString(key.key)}: ExtensionKey(');
+      output.writeln('${escapeDartString(key.key)}: ExtensionKey(');
       if (key.value.keyType != KeyType.regular) {
-        code.writeln('keyType: ${key.value.keyType},');
+        output.writeln('keyType: ${key.value.keyType},');
       }
       if (key.value.valueType != ValueType.single) {
-        code.writeln('valueType: ${key.value.valueType},');
+        output.writeln('valueType: ${key.value.valueType},');
       }
       if (key.value.valueAliases.isNotEmpty) {
-        code.writeln(
+        output.writeln(
             ' valueAliases: CanonicalizedMap<String, String, String>.from({');
         for (var alias in key.value.valueAliases.entries) {
-          code.writeln(
+          output.writeln(
               '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},');
         }
-        code.writeln('}, (key) => key.toLowerCase()),');
+        output.writeln('}, (key) => key.toLowerCase()),');
       }
-      code.writeln(' ),');
+      output.writeln(' ),');
     }
 
-    code.writeln('}, (key) => key.toLowerCase()),');
-    code.writeln('CanonicalizedMap<String, String, String>.from({');
+    output.writeln('}, (key) => key.toLowerCase()),');
+    output.writeln('CanonicalizedMap<String, String, String>.from({');
 
     for (var alias in extension.value.keyAliases.entries) {
-      code.writeln(
+      output.writeln(
           '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},');
     }
-    code.writeln('}, (key) => key.toLowerCase())');
-    code.writeln('),');
+    output.writeln('}, (key) => key.toLowerCase())');
+    output.writeln('),');
   }
 
-  code.writeln('}, (key) => key.toLowerCase());');
+  output.writeln('}, (key) => key.toLowerCase());');
 
-  code.writeln('}');
-  return code.toString();
+  output.writeln('}');
+  return output.toString();
 }
 
 List<String> languageIdToArgs(BaseLanguageId m) {

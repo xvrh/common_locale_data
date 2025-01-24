@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'el';
-const _cld = CommonLocaleDataEl._();
+const _cld = CommonLocaleDataEl.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataEl implements CommonLocaleData {
+class CommonLocaleDataEl extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataEl._();
+  const CommonLocaleDataEl.constant() : super.constant();
 
   factory CommonLocaleDataEl() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataEl implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsEl._(_cld);
+  static final _units = UnitsEl(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsEl._(_cld);
+  static final _dateFields = DateFieldsEl(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesEl._(_cld);
+  static final _languages = LanguagesEl(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsEl._(_cld);
+  static final _scripts = ScriptsEl(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesEl._(_cld);
+  static final _territories = TerritoriesEl(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsEl._(_cld);
+  static final _variants = VariantsEl(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsEl._(_cld);
+  static final _subdivisions = SubdivisionsEl(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesEl._(_cld);
+  static final _currencies = CurrenciesEl(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesEl._(_cld);
+  static final _timeZones = TimeZonesEl(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameEl._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameEl(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsEl extends Units {
-  UnitsEl._(super.cld);
+  const UnitsEl(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsEl extends Units {
 }
 
 class DateFieldsEl extends DateFields {
-  DateFieldsEl._(super.cld);
+  const DateFieldsEl(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'έτος',
           short: 'έτ.',
           narrow: 'έτ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'πέρσι',
           short: 'πέρσι',
           narrow: 'πέρσι',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'φέτος',
           short: 'φέτος',
           narrow: 'φέτος',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενο έτος',
           short: 'επόμενο έτος',
           narrow: 'επόμενο έτος',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} έτος',
@@ -4453,7 +4453,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} έτη πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} έτος',
@@ -4473,28 +4473,28 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'τρίμηνο',
           short: 'τρίμ.',
           narrow: 'τρίμ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'προηγούμενο τρίμηνο',
           short: 'προηγ. τρίμ.',
           narrow: 'προηγ. τρίμ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'τρέχον τρίμηνο',
           short: 'τρέχον τρίμ.',
           narrow: 'τρέχον τρίμ.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενο τρίμηνο',
           short: 'επόμ. τρίμ.',
           narrow: 'επόμ. τρίμ.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} τρίμηνο',
@@ -4511,7 +4511,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} τρίμ. πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} τρίμηνο',
@@ -4531,28 +4531,28 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'μήνας',
           short: 'μήν.',
           narrow: 'μήν.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'προηγούμενος μήνας',
           short: 'προηγ. μήνας',
           narrow: 'προηγ. μήνας',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'τρέχων μήνας',
           short: 'τρέχων μήνας',
           narrow: 'τρέχ. μήνας',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενος μήνας',
           short: 'επόμ. μήνας',
           narrow: 'επόμ. μήνας',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} μήνα',
@@ -4569,7 +4569,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} μ. πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} μήνα',
@@ -4589,28 +4589,28 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'εβδομάδα',
           short: 'εβδ.',
           narrow: 'εβδ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'προηγούμενη εβδομάδα',
           short: 'προηγ. εβδομάδα',
           narrow: 'προηγ. εβδ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'τρέχουσα εβδομάδα',
           short: 'τρέχ. εβδομάδα',
           narrow: 'τρέχ. εβδ.',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενη εβδομάδα',
           short: 'επόμ. εβδομάδα',
           narrow: 'επόμ. εβδ.',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} εβδομάδα',
@@ -4627,7 +4627,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} εβδ. πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} εβδομάδα',
@@ -4654,28 +4654,28 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'ημέρα',
           short: 'ημ.',
           narrow: 'ημ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'χθες',
           short: 'χθες',
           narrow: 'χθες',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'σήμερα',
           short: 'σήμερα',
           narrow: 'σήμερα',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'αύριο',
           short: 'αύριο',
           narrow: 'αύριο',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} ημέρα',
@@ -4692,7 +4692,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} ημ. πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} ημέρα',
@@ -4733,23 +4733,23 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'προηγούμενη Κυριακή',
           short: 'προηγ. Κυρ.',
           narrow: 'προηγ. Κυ',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'αυτήν την Κυριακή',
           short: 'αυτήν την Κυρ.',
           narrow: 'αυτήν την Κυ',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενη Κυριακή',
           short: 'επόμ. Κυρ.',
           narrow: 'επόμ. Κυ',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} Κυριακή',
@@ -4766,7 +4766,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} Κυ πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} Κυριακή',
@@ -4786,23 +4786,23 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'προηγούμενη Δευτέρα',
           short: 'προηγ. Δευτ.',
           narrow: 'προηγ. Δε',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'αυτήν τη Δευτέρα',
           short: 'αυτήν τη Δευτ.',
           narrow: 'αυτήν τη Δε',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενη Δευτέρα',
           short: 'επόμ. Δευτ.',
           narrow: 'επόμ. Δε',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} Δευτέρα',
@@ -4819,7 +4819,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} Δε πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} Δευτέρα',
@@ -4839,23 +4839,23 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'προηγούμενη Τρίτη',
           short: 'προηγ. Τρ.',
           narrow: 'προηγ. Τρ',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'αυτήν την Τρίτη',
           short: 'αυτήν την Τρ.',
           narrow: 'αυτήν την Τρ',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενη Τρίτη',
           short: 'επόμ. Τρ.',
           narrow: 'επόμ. Τρ',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} Τρίτη',
@@ -4872,7 +4872,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} Τρ πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} Τρίτη',
@@ -4892,23 +4892,23 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'προηγούμενη Τετάρτη',
           short: 'προηγ. Τετ.',
           narrow: 'προηγ. Τε',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'αυτήν την Τετάρτη',
           short: 'αυτήν την Τετ.',
           narrow: 'αυτήν την Τε',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενη Τετάρτη',
           short: 'επόμ. Τετ.',
           narrow: 'επόμ. Τε',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} Τετάρτη',
@@ -4925,7 +4925,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} Τε πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} Τετάρτη',
@@ -4945,23 +4945,23 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'προηγούμενη Πέμπτη',
           short: 'προηγ. Πέμ.',
           narrow: 'προηγ. Πέ',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'αυτήν την Πέμπτη',
           short: 'αυτήν την Πέμ.',
           narrow: 'αυτήν την Πέ',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενη Πέμπτη',
           short: 'επόμ. Πέμ.',
           narrow: 'επόμ. Πέ',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} Πέμπτη',
@@ -4978,7 +4978,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} Πέ πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} Πέμπτη',
@@ -4998,23 +4998,23 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'προηγούμενη Παρασκευή',
           short: 'προηγ. Παρ.',
           narrow: 'προηγ. Πα',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'αυτήν την Παρασκευή',
           short: 'αυτήν την Παρ.',
           narrow: 'αυτήν την Πα',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενη Παρασκευή',
           short: 'επόμ. Παρ.',
           narrow: 'επόμ. Πα',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} Παρασκευή',
@@ -5031,7 +5031,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} Πα πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} Παρασκευή',
@@ -5051,23 +5051,23 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'προηγούμενο Σάββατο',
           short: 'προηγ. Σάβ.',
           narrow: 'προηγ. Σά',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'αυτό το Σάββατο',
           short: 'αυτό το Σάβ.',
           narrow: 'αυτό το Σά',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'επόμενο Σάββατο',
           short: 'επόμ. Σάβ.',
           narrow: 'επόμ. Σά',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} Σάββατο',
@@ -5084,7 +5084,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} Σά πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} Σάββατο',
@@ -5111,18 +5111,18 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'ώρα',
           short: 'ώ.',
           narrow: 'ώ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'τρέχουσα ώρα',
           short: 'τρέχουσα ώρα',
           narrow: 'τρέχουσα ώρα',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} ώρα',
@@ -5139,7 +5139,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} ώ. πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} ώρα',
@@ -5159,18 +5159,18 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'λεπτό',
           short: 'λεπ.',
           narrow: 'λ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'τρέχον λεπτό',
           short: 'τρέχον λεπτό',
           narrow: 'τρέχον λεπτό',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} λεπτό',
@@ -5187,7 +5187,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} λ. πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} λεπτό',
@@ -5207,18 +5207,18 @@ class DateFieldsEl extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'δευτερόλεπτο',
           short: 'δευτ.',
           narrow: 'δ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'τώρα',
           short: 'τώρα',
           narrow: 'τώρα',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'πριν από {0} δευτερόλεπτο',
@@ -5235,7 +5235,7 @@ class DateFieldsEl extends DateFields {
             other: '{0} δ. πριν',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'σε {0} δευτερόλεπτο',
@@ -5263,7 +5263,7 @@ class DateFieldsEl extends DateFields {
 }
 
 class LanguagesEl extends Languages {
-  const LanguagesEl._(super.cld);
+  const LanguagesEl(super.cld);
 
   static const _aa = Language('aa', 'Αφάρ');
   static const _ab = Language('ab', 'Αμπχαζικά');
@@ -7172,7 +7172,9 @@ class LanguagesEl extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -7749,7 +7751,7 @@ class LanguagesEl extends Languages {
 }
 
 class ScriptsEl extends Scripts {
-  const ScriptsEl._(super.cld);
+  const ScriptsEl(super.cld);
 
   static const _adlm = Script('Adlm', 'Άντλαμ');
   static const _arab = Script('Arab', 'Αραβικό', variant: 'Περσικό-Αραβικό');
@@ -8313,7 +8315,9 @@ class ScriptsEl extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Arab': _arab,
     'Aran': _aran,
@@ -8454,7 +8458,7 @@ class ScriptsEl extends Scripts {
 }
 
 class TerritoriesEl extends Territories {
-  const TerritoriesEl._(super.cld);
+  const TerritoriesEl(super.cld);
 
   static const _$001 = Territory('001', 'Κόσμος');
   static const _$002 = Territory('002', 'Αφρική');
@@ -9427,7 +9431,9 @@ class TerritoriesEl extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9726,7 +9732,7 @@ class TerritoriesEl extends Territories {
 }
 
 class VariantsEl extends Variants {
-  const VariantsEl._(super.cld);
+  const VariantsEl(super.cld);
 
   static const _$1901 = Variant('1901', 'Παραδοσιακή γερμανική ορθογραφία');
   static const _$1994 = Variant('1994', 'Τυποποιημένη ορθογραφία Ρεσιάν');
@@ -9834,7 +9840,9 @@ class VariantsEl extends Variants {
   final wadegile = _wadegile;
 
   @override
-  final variants = const {
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{
     '1901': _$1901,
     '1994': _$1994,
     '1996': _$1996,
@@ -9872,10 +9880,12 @@ class VariantsEl extends Variants {
 }
 
 class SubdivisionsEl extends Subdivisions {
-  const SubdivisionsEl._(super.cld);
+  const SubdivisionsEl(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'ad02': 'Κανίλλο',
     'ad03': 'Ενκάμ',
     'ad04': 'Λα Μασάνα',
@@ -14222,7 +14232,7 @@ class SubdivisionsEl extends Subdivisions {
 }
 
 class CurrenciesEl extends Currencies {
-  const CurrenciesEl._(super.cld);
+  const CurrenciesEl(super.cld);
 
   static const _adp = Currency(_cld, 'ADP', 'Πεσέτα Ανδόρας',
       one: 'πεσέτα Ανδόρας', other: 'πεσέτες Ανδόρας');
@@ -15522,7 +15532,9 @@ class CurrenciesEl extends Currencies {
   final zwr = _xxx;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'ADP': _adp,
     'AED': _aed,
     'AFA': _afa,
@@ -15799,23 +15811,37 @@ class CurrenciesEl extends Currencies {
 }
 
 class TimeZonesEl extends TimeZones {
-  const TimeZonesEl._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: 'Ώρα ({0})',
-            regionFormatDaylight: 'Θερινή ώρα ({0})',
-            regionFormatStandard: 'Χειμερινή ώρα ({0})',
-            fallbackFormat: '[{1} ({0})]',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesEl(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => 'Ώρα ({0})';
+  @override
+  String get regionFormatDaylight => 'Θερινή ώρα ({0})';
+  @override
+  String get regionFormatStandard => 'Χειμερινή ώρα ({0})';
+  @override
+  String get fallbackFormat => '[{1} ({0})]';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Adak': TimeZoneNames(exemplarCity: 'Άντακ'),
     'America/Anchorage': TimeZoneNames(exemplarCity: 'Άνκορατζ'),
     'America/Anguilla': TimeZoneNames(exemplarCity: 'Ανγκουίλα'),
@@ -16256,7 +16282,9 @@ class TimeZonesEl extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Afghanistan':
         MetaZone('Afghanistan', long: TimeZoneName(standard: 'Ώρα Αφγανιστάν')),
     'Africa_Central': MetaZone('Africa_Central',
@@ -16779,17 +16807,25 @@ class TimeZonesEl extends TimeZones {
 }
 
 class LocaleDisplayNameEl extends LocaleDisplayName {
-  const LocaleDisplayNameEl._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'Γλώσσα: {0}',
-            codePatternScript: 'Γραφή: {0}',
-            codePatternTerritory: 'Περιοχή: {0}');
+  const LocaleDisplayNameEl(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'Γλώσσα: {0}';
+  @override
+  String get codePatternScript => 'Γραφή: {0}';
+  @override
+  String get codePatternTerritory => 'Περιοχή: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'Ημερολόγιο',
     'cf': 'Μορφή νομίσματος',
     'ka': 'Ταξινόμηση με αγνόηση συμβόλων',
@@ -16809,9 +16845,10 @@ class LocaleDisplayNameEl extends LocaleDisplayName {
     'va': 'Παραλλαγή τοπικών ρυθμίσεων',
     'x': 'Ιδιωτική χρήση',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'Βουδιστικό ημερολόγιο',
       'chinese': 'Κινεζικό ημερολόγιο',
