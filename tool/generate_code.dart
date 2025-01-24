@@ -382,7 +382,7 @@ export 'common_locale_data.dart';
   }
 
   output.writeln('''
-/// Extension to provide static or dynamic access ([locales]) to all locales.
+/// Extension to provide static or dynamic access to all locales.
 extension CommonLocaleDataAll on CommonLocaleData {
 ''');
 

@@ -815,7 +815,7 @@ export 'zh_hant_mo.dart';
 export 'zh_hant_my.dart';
 export 'zu.dart';
 
-/// Extension to provide static or dynamic access ([locales]) to all locales.
+/// Extension to provide static or dynamic access to all locales.
 extension CommonLocaleDataAll on CommonLocaleData {
   /// Access the [CommonLocaleData] for af
   static const af = CommonLocaleDataAf.staticInstance;
