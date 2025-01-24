@@ -1,4 +1,4 @@
-import '../../lib/src/locale_id/base_language_id.dart';
+import 'package:common_locale_data/src/locale_id/base_language_id.dart';
 import '../config.dart';
 import 'read_json_data.dart';
 
@@ -21,7 +21,15 @@ class Locales {
       all.where((str) => BaseLanguageId.parse(str).region == null).toSet();
 
   /// support small set for testing purposes
-  static const Set<String> test = {'en', 'de', 'fr', 'en-GB', 'es', 'zh-Hans'};
+  static const Set<String> test = {
+    'en',
+    'de',
+    'de-CH',
+    'fr',
+    'en-GB',
+    'es',
+    'zh-Hans'
+  };
 
   /// for compatibility with original languages of this package
   static const Set<String> compatibility = {

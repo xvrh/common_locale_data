@@ -75,56 +75,42 @@ abstract class TimeZones {
   final CommonLocaleData cld;
 
   /// Localized message string for GMT formats.
-  final String gmtFormat;
+  String get gmtFormat;
 
   /// Localized message string for GMT=0 formats.
-  final String gmtZeroFormat;
+  String get gmtZeroFormat;
 
   /// Localized message string for locale based format.
-  final String regionFormat;
+  String get regionFormat;
 
   /// Localized message string for locale based daylight savings format.
-  final String regionFormatDaylight;
+  String get regionFormatDaylight;
 
   /// Localized message string for locale based standard format.
-  final String regionFormatStandard;
+  String get regionFormatStandard;
 
   /// Localized message string for fallback format.
-  final String fallbackFormat;
+  String get fallbackFormat;
 
   /// Localized message string for positive offset timezone with whole hours only.
-  final String positiveH;
+  String get positiveH;
 
   /// Localized message string for positive offset timezone with hours and minutes.
-  final String positiveHM;
+  String get positiveHM;
 
   /// Localized message string for positive offset timezone with hours minutes and seconds.
-  final String positiveHMS;
+  String get positiveHMS;
 
   /// Localized message string for negative offset timezone with whole hours only.
-  final String negativeH;
+  String get negativeH;
 
   /// Localized message string for negative offset timezone with hours and minutes.
-  final String negativeHM;
+  String get negativeHM;
 
   /// Localized message string for negative offset timezone with hours minutes and seconds.
-  final String negativeHMS;
+  String get negativeHMS;
 
-  const TimeZones(
-    this.cld, {
-    required this.gmtFormat,
-    required this.gmtZeroFormat,
-    required this.regionFormat,
-    required this.regionFormatDaylight,
-    required this.regionFormatStandard,
-    required this.fallbackFormat,
-    required this.positiveH,
-    required this.positiveHM,
-    required this.positiveHMS,
-    required this.negativeH,
-    required this.negativeHM,
-    required this.negativeHMS,
-  });
+  const TimeZones(this.cld);
 
   /// Localized time zone names.
   Map<String, TimeZoneNames> get timeZoneNames;
@@ -279,7 +265,7 @@ class TimeZone {
   /// The localized abbreviated names for this timezone.
   final TimeZoneName shortNames;
 
-  /// The code of .
+  /// The code for the country of this timezone.
   final String? territoryCode;
 
   /// The localized country for this timezone.
@@ -670,9 +656,8 @@ class DateRange {
   const DateRange._(this.from, this.to);
 
   factory DateRange([String? fromString, String? toString]) {
-    var from = fromString == null ? null : DateTime.parse(fromString);
-    var to = toString == null ? null : DateTime.parse(toString);
-    return DateRange._(from, to);
+    return DateRange._(fromString == null ? null : DateTime.parse(fromString),
+        toString == null ? null : DateTime.parse(toString));
   }
 
   /// Check if [dateTime] is inside the interval [[from],[to])

@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'gu';
-const _cld = CommonLocaleDataGu._();
+const _cld = CommonLocaleDataGu.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataGu implements CommonLocaleData {
+class CommonLocaleDataGu extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataGu._();
+  const CommonLocaleDataGu.constant() : super.constant();
 
   factory CommonLocaleDataGu() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataGu implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsGu._(_cld);
+  static final _units = UnitsGu(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsGu._(_cld);
+  static final _dateFields = DateFieldsGu(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesGu._(_cld);
+  static final _languages = LanguagesGu(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsGu._(_cld);
+  static final _scripts = ScriptsGu(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesGu._(_cld);
+  static final _territories = TerritoriesGu(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsGu._(_cld);
+  static final _variants = VariantsGu(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsGu._(_cld);
+  static final _subdivisions = SubdivisionsGu(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesGu._(_cld);
+  static final _currencies = CurrenciesGu(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesGu._(_cld);
+  static final _timeZones = TimeZonesGu(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameGu._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameGu(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsGu extends Units {
-  UnitsGu._(super.cld);
+  const UnitsGu(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsGu extends Units {
 }
 
 class DateFieldsGu extends DateFields {
-  DateFieldsGu._(super.cld);
+  const DateFieldsGu(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'વર્ષ',
           short: 'વ.',
           narrow: 'વ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'ગયા વર્ષે',
           short: 'ગયા વર્ષે',
           narrow: 'ગયા વર્ષે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ વર્ષે',
           short: 'આ વર્ષે',
           narrow: 'આ વર્ષે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા વર્ષે',
           short: 'આવતા વર્ષે',
           narrow: 'આવતા વર્ષે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} વર્ષ પહેલાં',
@@ -4453,7 +4453,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} વર્ષ પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} વર્ષમાં',
@@ -4473,28 +4473,28 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'ત્રિમાસિક',
           short: 'ત્રિમાસ.',
           narrow: 'ત્રિમાસ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'છેલ્લું ત્રિમાસિક',
           short: 'છેલ્લું ત્રિમાસિક',
           narrow: 'છેલ્લું ત્રિમાસિક',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ ત્રિમાસિક',
           short: 'આ ત્રિમાસિક',
           narrow: 'આ ત્રિમાસિક',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'પછીનું ત્રિમાસિક',
           short: 'પછીનું ત્રિમાસિક',
           narrow: 'પછીનું ત્રિમાસિક',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ત્રિમાસિક પહેલાં',
@@ -4511,7 +4511,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} ત્રિમાસિક પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ત્રિમાસિકમાં',
@@ -4531,28 +4531,28 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'મહિનો',
           short: 'મ.',
           narrow: 'મ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'ગયા મહિને',
           short: 'ગયા મહિને',
           narrow: 'ગયા મહિને',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ મહિને',
           short: 'આ મહિને',
           narrow: 'આ મહિને',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા મહિને',
           short: 'આવતા મહિને',
           narrow: 'આવતા મહિને',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} મહિના પહેલાં',
@@ -4569,7 +4569,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} મહિના પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} મહિનામાં',
@@ -4589,28 +4589,28 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'અઠવાડિયું',
           short: 'અઠ.',
           narrow: 'અઠ.',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'ગયા અઠવાડિયે',
           short: 'ગયા અઠવાડિયે',
           narrow: 'ગયા અઠવાડિયે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ અઠવાડિયે',
           short: 'આ અઠવાડિયે',
           narrow: 'આ અઠવાડિયે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા અઠવાડિયે',
           short: 'આવતા અઠવાડિયે',
           narrow: 'આવતા અઠવાડિયે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} અઠવાડિયા પહેલાં',
@@ -4627,7 +4627,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} અઠ. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} અઠવાડિયામાં',
@@ -4654,28 +4654,28 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'દિવસ',
           short: 'દિવસ',
           narrow: 'દિવસ',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'ગઈકાલે',
           short: 'ગઈકાલે',
           narrow: 'ગઈકાલે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આજે',
           short: 'આજે',
           narrow: 'આજે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતીકાલે',
           short: 'આવતીકાલે',
           narrow: 'આવતીકાલે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} દિવસ પહેલાં',
@@ -4692,7 +4692,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} દિવસ પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} દિવસમાં',
@@ -4733,23 +4733,23 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'ગયા રવિવારે',
           short: 'ગયા રવિવારે',
           narrow: 'ગયા રવિ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ રવિવારે',
           short: 'આ રવિવારે',
           narrow: 'આ રવિ',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા રવિવારે',
           short: 'આવતા રવિવારે',
           narrow: 'આવતા રવિ',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} રવિવાર પહેલાં',
@@ -4766,7 +4766,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} રવિ. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} રવિવારમાં',
@@ -4786,23 +4786,23 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'ગયા સોમવારે',
           short: 'ગયા સોમવારે',
           narrow: 'ગયા સોમવારે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ સોમવારે',
           short: 'આ સોમવારે',
           narrow: 'આ સોમવારે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા સોમવારે',
           short: 'આવતા સોમવારે',
           narrow: 'આવતા સોમવારે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} સોમવાર પહેલાં',
@@ -4819,7 +4819,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} સોમ. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} સોમવારમાં',
@@ -4839,23 +4839,23 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'ગયા મંગળવારે',
           short: 'ગયા મંગળવારે',
           narrow: 'ગયા મંગળવારે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ મંગળવારે',
           short: 'આ મંગળવારે',
           narrow: 'આ મંગળવારે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા મંગળવારે',
           short: 'આવતા મંગળવારે',
           narrow: 'આવતા મંગળવારે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} મંગળવાર પહેલાં',
@@ -4872,7 +4872,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} મંગળ. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} મંગળવારમાં',
@@ -4892,23 +4892,23 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'ગયા બુધવારે',
           short: 'ગયા બુધવારે',
           narrow: 'ગયા બુધવારે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ બુધવારે',
           short: 'આ બુધવારે',
           narrow: 'આ બુધવારે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા બુધવારે',
           short: 'આવતા બુધવારે',
           narrow: 'આવતા બુધવારે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} બુધવાર પહેલાં',
@@ -4925,7 +4925,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} બુધ. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} બુધવારમાં',
@@ -4945,23 +4945,23 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'ગયા ગુરુવારે',
           short: 'ગયા ગુરુવારે',
           narrow: 'ગયા ગુરુવારે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ ગુરુવારે',
           short: 'આ ગુરુવારે',
           narrow: 'આ ગુરુવારે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા ગુરુવારે',
           short: 'આવતા ગુરુવારે',
           narrow: 'આવતા ગુરુવારે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ગુરુવાર પહેલાં',
@@ -4978,7 +4978,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} ગુરુ. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ગુરુવારમાં',
@@ -4998,23 +4998,23 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'ગયા શુક્રવારે',
           short: 'ગયા શુક્રવારે',
           narrow: 'ગયા શુક્રવારે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ શુક્રવારે',
           short: 'આ શુક્રવારે',
           narrow: 'આ શુક્રવારે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા શુક્રવારે',
           short: 'આવતા શુક્રવારે',
           narrow: 'આવતા શુક્રવારે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} શુક્રવાર પહેલાં',
@@ -5031,7 +5031,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} શુક્ર. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} શુક્રવારમાં',
@@ -5051,23 +5051,23 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'ગયા શનિવારે',
           short: 'ગયા શનિવારે',
           narrow: 'ગયા શનિવારે',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ શનિવારે',
           short: 'આ શનિવારે',
           narrow: 'આ શનિવારે',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'આવતા શનિવારે',
           short: 'આવતા શનિવારે',
           narrow: 'આવતા શનિવારે',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} શનિવાર પહેલાં',
@@ -5084,7 +5084,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} શનિ. પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} શનિવારમાં',
@@ -5111,18 +5111,18 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'કલાક',
           short: 'ક.',
           narrow: 'ક.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ કલાક',
           short: 'આ કલાક',
           narrow: 'આ કલાક',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} કલાક પહેલાં',
@@ -5139,7 +5139,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} કલાક પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} કલાકમાં',
@@ -5159,18 +5159,18 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'મિનિટ',
           short: 'મિ.',
           narrow: 'મિ.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'આ મિનિટ',
           short: 'આ મિનિટ',
           narrow: 'આ મિનિટ',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} મિનિટ પહેલાં',
@@ -5187,7 +5187,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} મિનિટ પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} મિનિટમાં',
@@ -5207,18 +5207,18 @@ class DateFieldsGu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'સેકન્ડ',
           short: 'સે.',
           narrow: 'સે.',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'હમણાં',
           short: 'હમણાં',
           narrow: 'હમણાં',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} સેકંડ પહેલાં',
@@ -5235,7 +5235,7 @@ class DateFieldsGu extends DateFields {
             other: '{0} સેકંડ પહેલાં',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} સેકંડમાં',
@@ -5263,7 +5263,7 @@ class DateFieldsGu extends DateFields {
 }
 
 class LanguagesGu extends Languages {
-  const LanguagesGu._(super.cld);
+  const LanguagesGu(super.cld);
 
   static const _aa = Language('aa', 'અફાર');
   static const _ab = Language('ab', 'અબખાજિયન');
@@ -7170,7 +7170,9 @@ class LanguagesGu extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -7746,7 +7748,7 @@ class LanguagesGu extends Languages {
 }
 
 class ScriptsGu extends Scripts {
-  const ScriptsGu._(super.cld);
+  const ScriptsGu(super.cld);
 
   static const _adlm = Script('Adlm', 'એડલમ');
   static const _arab = Script('Arab', 'અરબી', variant: 'પર્સો-અરબી');
@@ -8306,7 +8308,9 @@ class ScriptsGu extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Arab': _arab,
     'Aran': _aran,
@@ -8446,7 +8450,7 @@ class ScriptsGu extends Scripts {
 }
 
 class TerritoriesGu extends Territories {
-  const TerritoriesGu._(super.cld);
+  const TerritoriesGu(super.cld);
 
   static const _$001 = Territory('001', 'વિશ્વ');
   static const _$002 = Territory('002', 'આફ્રિકા');
@@ -9417,7 +9421,9 @@ class TerritoriesGu extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9716,7 +9722,7 @@ class TerritoriesGu extends Territories {
 }
 
 class VariantsGu extends Variants {
-  const VariantsGu._(super.cld);
+  const VariantsGu(super.cld);
 
   static const _pinyin = Variant('PINYIN', 'પિનયિન રોમનાઇઝેશન');
   static const _wadegile = Variant('WADEGILE', 'વેડ-ગિલ્સ રોમનાઇઝેશન');
@@ -9727,17 +9733,21 @@ class VariantsGu extends Variants {
   final wadegile = _wadegile;
 
   @override
-  final variants = const {
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{
     'PINYIN': _pinyin,
     'WADEGILE': _wadegile,
   };
 }
 
 class SubdivisionsGu extends Subdivisions {
-  const SubdivisionsGu._(super.cld);
+  const SubdivisionsGu(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'ad02': 'કેનિલો',
     'ad03': 'એન્કેમ્પ',
     'ad04': 'લા માસાના',
@@ -13713,7 +13723,7 @@ class SubdivisionsGu extends Subdivisions {
 }
 
 class CurrenciesGu extends Currencies {
-  const CurrenciesGu._(super.cld);
+  const CurrenciesGu(super.cld);
 
   static const _aed = Currency(_cld, 'AED', 'યુનાઈટેડ આરબ અમિરાત દિરહામ',
       one: '[UAE] દિરહામ', other: '[UAE] દિરહામ');
@@ -14601,7 +14611,9 @@ class CurrenciesGu extends Currencies {
   final zwr = _xxx;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'AED': _aed,
     'AFN': _afn,
     'ALL': _all,
@@ -14773,23 +14785,37 @@ class CurrenciesGu extends Currencies {
 }
 
 class TimeZonesGu extends TimeZones {
-  const TimeZonesGu._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: '{0} સમય',
-            regionFormatDaylight: '{0} દિવસ સમય',
-            regionFormatStandard: '{0} માનક સમય',
-            fallbackFormat: '{1} ({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesGu(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => '{0} સમય';
+  @override
+  String get regionFormatDaylight => '{0} દિવસ સમય';
+  @override
+  String get regionFormatStandard => '{0} માનક સમય';
+  @override
+  String get fallbackFormat => '{1} ({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Adak': TimeZoneNames(exemplarCity: 'અદક'),
     'America/Anchorage': TimeZoneNames(exemplarCity: 'એન્કોરેજ'),
     'America/Anguilla': TimeZoneNames(exemplarCity: 'ઍંગ્વિલા'),
@@ -15230,7 +15256,9 @@ class TimeZonesGu extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Acre': MetaZone('Acre',
         long: TimeZoneName(
             generic: 'એકર સમય',
@@ -15781,17 +15809,25 @@ class TimeZonesGu extends TimeZones {
 }
 
 class LocaleDisplayNameGu extends LocaleDisplayName {
-  const LocaleDisplayNameGu._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'ભાષા: {0}',
-            codePatternScript: 'સ્ક્રિપ્ટ: {0}',
-            codePatternTerritory: 'પ્રદેશ: {0}');
+  const LocaleDisplayNameGu(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'ભાષા: {0}';
+  @override
+  String get codePatternScript => 'સ્ક્રિપ્ટ: {0}';
+  @override
+  String get codePatternTerritory => 'પ્રદેશ: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'કેલેન્ડર',
     'cf': 'ચલણી બંધારણ',
     'ka': 'પ્રતીકોની સૉર્ટિંગને અવગણો',
@@ -15811,9 +15847,10 @@ class LocaleDisplayNameGu extends LocaleDisplayName {
     'va': 'લોકેલ વેરિએન્ટ',
     'x': 'ખાનગી-ઉપયોગ',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'બુદ્ધિસ્ટ કેલેન્ડર',
       'chinese': 'ચાઇનીઝ કેલેન્ડર',

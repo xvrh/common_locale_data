@@ -6,7 +6,7 @@ class Config {
 
   /// Set of the supported locales
   /// Choose from [Locales] or set a custom set, e.g. "{'en', 'fr'}"
-  static Set<String> supportedLocales = Locales.main;
+  static Set<String> supportedLocales = Locales.all;
 
   /// CLDR version to download: 'refs/tags/46.0.0' for specific version, 'main' for the development branch
   static const String cldrJsonVersion = 'refs/tags/46.0.0';

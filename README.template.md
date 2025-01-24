@@ -81,10 +81,10 @@ import 'example/main.dart';
 
 ## Supported languages/locales
 
-##LOCALE_LIST##
-
-To change the included locales modify the ```tool\config.dart``` file and rerun
+By default all locales are included in this package. To change the included locales modify the ```tool\config.dart``` file and rerun
 the ```generate_code.dart``` and ```generate_readme.dart``` files.
+
+##LOCALE_LIST##
 
 ## License
 

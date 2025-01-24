@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'hu';
-const _cld = CommonLocaleDataHu._();
+const _cld = CommonLocaleDataHu.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataHu implements CommonLocaleData {
+class CommonLocaleDataHu extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataHu._();
+  const CommonLocaleDataHu.constant() : super.constant();
 
   factory CommonLocaleDataHu() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataHu implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsHu._(_cld);
+  static final _units = UnitsHu(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsHu._(_cld);
+  static final _dateFields = DateFieldsHu(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesHu._(_cld);
+  static final _languages = LanguagesHu(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsHu._(_cld);
+  static final _scripts = ScriptsHu(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesHu._(_cld);
+  static final _territories = TerritoriesHu(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsHu._(_cld);
+  static final _variants = VariantsHu(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsHu._(_cld);
+  static final _subdivisions = SubdivisionsHu(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesHu._(_cld);
+  static final _currencies = CurrenciesHu(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesHu._(_cld);
+  static final _timeZones = TimeZonesHu(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameHu._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameHu(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsHu extends Units {
-  UnitsHu._(super.cld);
+  const UnitsHu(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsHu extends Units {
 }
 
 class DateFieldsHu extends DateFields {
-  DateFieldsHu._(super.cld);
+  const DateFieldsHu(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'év',
           short: 'év',
           narrow: 'év',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'előző év',
           short: 'előző év',
           narrow: 'előző év',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez az év',
           short: 'ez az év',
           narrow: 'ez az év',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő év',
           short: 'következő év',
           narrow: 'következő év',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} évvel ezelőtt',
@@ -4453,7 +4453,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} éve',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} év múlva',
@@ -4473,28 +4473,28 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'negyedév',
           short: 'n.év',
           narrow: 'n.év',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'előző negyedév',
           short: 'előző negyedév',
           narrow: 'előző negyedév',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a negyedév',
           short: 'ez a negyedév',
           narrow: 'ez a negyedév',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő negyedév',
           short: 'következő negyedév',
           narrow: 'következő negyedév',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} negyedévvel ezelőtt',
@@ -4511,7 +4511,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} negyedévvel ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} negyedév múlva',
@@ -4531,28 +4531,28 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'hónap',
           short: 'hónap',
           narrow: 'hónap',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'előző hónap',
           short: 'előző hónap',
           narrow: 'előző hónap',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a hónap',
           short: 'ez a hónap',
           narrow: 'ez a hónap',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő hónap',
           short: 'következő hónap',
           narrow: 'következő hónap',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} hónappal ezelőtt',
@@ -4569,7 +4569,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} hónapja',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} hónap múlva',
@@ -4589,28 +4589,28 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'hét',
           short: 'hét',
           narrow: 'hét',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'előző hét',
           short: 'előző hét',
           narrow: 'előző hét',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a hét',
           short: 'ez a hét',
           narrow: 'ez a hét',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő hét',
           short: 'következő hét',
           narrow: 'következő hét',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} héttel ezelőtt',
@@ -4627,7 +4627,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} hete',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} hét múlva',
@@ -4654,28 +4654,28 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'nap',
           short: 'nap',
           narrow: 'nap',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'tegnap',
           short: 'tegnap',
           narrow: 'tegnap',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ma',
           short: 'ma',
           narrow: 'ma',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'holnap',
           short: 'holnap',
           narrow: 'holnap',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} nappal ezelőtt',
@@ -4692,7 +4692,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} napja',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} nap múlva',
@@ -4733,23 +4733,23 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'előző vasárnap',
           short: 'előző vasárnap',
           narrow: 'előző vasárnap',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a vasárnap',
           short: 'ez a vasárnap',
           narrow: 'ez a vasárnap',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő vasárnap',
           short: 'következő vasárnap',
           narrow: 'következő vasárnap',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} vasárnappal ezelőtt',
@@ -4766,7 +4766,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} vasárnappal ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} vasárnap múlva',
@@ -4786,23 +4786,23 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'előző hétfő',
           short: 'előző hétfő',
           narrow: 'előző hétfő',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a hétfő',
           short: 'ez a hétfő',
           narrow: 'ez a hétfő',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő hétfő',
           short: 'következő hétfő',
           narrow: 'következő hétfő',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} hétfővel ezelőtt',
@@ -4819,7 +4819,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} hétfővel ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} hétfő múlva',
@@ -4839,23 +4839,23 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'előző kedd',
           short: 'előző kedd',
           narrow: 'előző kedd',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a kedd',
           short: 'ez a kedd',
           narrow: 'ez a kedd',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő kedd',
           short: 'következő kedd',
           narrow: 'következő kedd',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} keddel ezelőtt',
@@ -4872,7 +4872,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} keddel ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} kedd múlva',
@@ -4892,23 +4892,23 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'előző szerda',
           short: 'előző szerda',
           narrow: 'előző szerda',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a szerda',
           short: 'ez a szerda',
           narrow: 'ez a szerda',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő szerda',
           short: 'következő szerda',
           narrow: 'következő szerda',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} szerdával ezelőtt',
@@ -4925,7 +4925,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} szerdával ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} szerda múlva',
@@ -4945,23 +4945,23 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'előző csütörtök',
           short: 'előző csütörtök',
           narrow: 'előző csütörtök',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a csütörtök',
           short: 'ez a csütörtök',
           narrow: 'ez a csütörtök',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő csütörtök',
           short: 'következő csütörtök',
           narrow: 'következő csütörtök',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} csütörtökkel ezelőtt',
@@ -4978,7 +4978,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} csütörtökkel ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} csütörtök múlva',
@@ -4998,23 +4998,23 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'előző péntek',
           short: 'előző péntek',
           narrow: 'előző péntek',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a péntek',
           short: 'ez a péntek',
           narrow: 'ez a péntek',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő péntek',
           short: 'következő péntek',
           narrow: 'következő péntek',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} péntekkel ezelőtt',
@@ -5031,7 +5031,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} péntekkel ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} péntek múlva',
@@ -5051,23 +5051,23 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'előző szombat',
           short: 'előző szombat',
           narrow: 'előző szombat',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ez a szombat',
           short: 'ez a szombat',
           narrow: 'ez a szombat',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'következő szombat',
           short: 'következő szombat',
           narrow: 'következő szombat',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} szombattal ezelőtt',
@@ -5084,7 +5084,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} szombattal ezelőtt',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} szombat múlva',
@@ -5111,18 +5111,18 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'óra',
           short: 'óra',
           narrow: 'ó',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ebben az órában',
           short: 'ebben az órában',
           narrow: 'ebben az órában',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} órával ezelőtt',
@@ -5139,7 +5139,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} órája',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} óra múlva',
@@ -5159,18 +5159,18 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'perc',
           short: 'perc',
           narrow: 'p',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'ebben a percben',
           short: 'ebben a percben',
           narrow: 'ebben a percben',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} perccel ezelőtt',
@@ -5187,7 +5187,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} perce',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} perc múlva',
@@ -5207,18 +5207,18 @@ class DateFieldsHu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'másodperc',
           short: 'másodperc',
           narrow: 'mp',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'most',
           short: 'most',
           narrow: 'most',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} másodperccel ezelőtt',
@@ -5235,7 +5235,7 @@ class DateFieldsHu extends DateFields {
             other: '{0} m.perce',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} másodperc múlva',
@@ -5263,7 +5263,7 @@ class DateFieldsHu extends DateFields {
 }
 
 class LanguagesHu extends Languages {
-  const LanguagesHu._(super.cld);
+  const LanguagesHu(super.cld);
 
   static const _aa = Language('aa', 'afar');
   static const _ab = Language('ab', 'abház');
@@ -7175,7 +7175,9 @@ class LanguagesHu extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -7756,7 +7758,7 @@ class LanguagesHu extends Languages {
 }
 
 class ScriptsHu extends Scripts {
-  const ScriptsHu._(super.cld);
+  const ScriptsHu(super.cld);
 
   static const _adlm = Script('Adlm', 'Adlam');
   static const _aghb = Script('Aghb', 'Kaukázusi albaniai');
@@ -8323,7 +8325,9 @@ class ScriptsHu extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Aghb': _aghb,
     'Aran': _aran,
@@ -8468,7 +8472,7 @@ class ScriptsHu extends Scripts {
 }
 
 class TerritoriesHu extends Territories {
-  const TerritoriesHu._(super.cld);
+  const TerritoriesHu(super.cld);
 
   static const _$001 = Territory('001', 'Világ');
   static const _$002 = Territory('002', 'Afrika');
@@ -9441,7 +9445,9 @@ class TerritoriesHu extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9741,7 +9747,7 @@ class TerritoriesHu extends Territories {
 }
 
 class VariantsHu extends Variants {
-  const VariantsHu._(super.cld);
+  const VariantsHu(super.cld);
 
   static const _$1901 = Variant('1901', 'Hagyományos német helyesírás');
   static const _$1994 = Variant('1994', 'Szabványosított reziján helyesírás');
@@ -9879,7 +9885,9 @@ class VariantsHu extends Variants {
   final wadegile = _wadegile;
 
   @override
-  final variants = const {
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{
     '1901': _$1901,
     '1994': _$1994,
     '1996': _$1996,
@@ -9940,10 +9948,12 @@ class VariantsHu extends Variants {
 }
 
 class SubdivisionsHu extends Subdivisions {
-  const SubdivisionsHu._(super.cld);
+  const SubdivisionsHu(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'ad02': 'Canillo közösség',
     'ad03': 'Encamp közösség',
     'ad04': 'La Massana közösség',
@@ -12538,7 +12548,7 @@ class SubdivisionsHu extends Subdivisions {
 }
 
 class CurrenciesHu extends Currencies {
-  const CurrenciesHu._(super.cld);
+  const CurrenciesHu(super.cld);
 
   static const _adp = Currency(_cld, 'ADP', 'Andorrai peseta');
   static const _aed = Currency(_cld, 'AED', 'EAE-dirham');
@@ -13595,7 +13605,9 @@ class CurrenciesHu extends Currencies {
   final zwr = _zwr;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'ADP': _adp,
     'AED': _aed,
     'AFA': _afa,
@@ -13890,23 +13902,37 @@ class CurrenciesHu extends Currencies {
 }
 
 class TimeZonesHu extends TimeZones {
-  const TimeZonesHu._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: '{0} idő',
-            regionFormatDaylight: '{0} nyári idő',
-            regionFormatStandard: '{0} zónaidő',
-            fallbackFormat: '{1} ({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesHu(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => '{0} idő';
+  @override
+  String get regionFormatDaylight => '{0} nyári idő';
+  @override
+  String get regionFormatStandard => '{0} zónaidő';
+  @override
+  String get fallbackFormat => '{1} ({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Araguaina': TimeZoneNames(exemplarCity: 'Araguaína'),
     'America/Argentina/Rio_Gallegos':
         TimeZoneNames(exemplarCity: 'Río Gallegos'),
@@ -14115,7 +14141,9 @@ class TimeZonesHu extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Acre': MetaZone('Acre',
         long: TimeZoneName(
             generic: 'Acre idő',
@@ -14673,17 +14701,25 @@ class TimeZonesHu extends TimeZones {
 }
 
 class LocaleDisplayNameHu extends LocaleDisplayName {
-  const LocaleDisplayNameHu._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'Nyelv: {0}',
-            codePatternScript: 'Írásrendszer: {0}',
-            codePatternTerritory: 'Régió: {0}');
+  const LocaleDisplayNameHu(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'Nyelv: {0}';
+  @override
+  String get codePatternScript => 'Írásrendszer: {0}';
+  @override
+  String get codePatternTerritory => 'Régió: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'Naptár',
     'cf': 'Pénznemformátum',
     'ka': 'Szimbólumokat figyelmen kívül hagyó rendezés',
@@ -14703,9 +14739,10 @@ class LocaleDisplayNameHu extends LocaleDisplayName {
     'va': 'Földrajzi helyvariáns',
     'x': 'Privát használatra',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'Buddhista naptár',
       'chinese': 'Kínai naptár',

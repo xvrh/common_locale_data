@@ -1,3 +1,6 @@
+## 2.2.0
+- Implemented inheritance for language specific locales to reduce source code and binary file sizes
+
 ## 2.1.0
 - Include support for LocaleId's and printing of all fields (currency, script, variants, subdivisions)
 - Add support for currency and subdivisions CLDR data

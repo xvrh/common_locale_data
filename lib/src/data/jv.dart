@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'jv';
-const _cld = CommonLocaleDataJv._();
+const _cld = CommonLocaleDataJv.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataJv implements CommonLocaleData {
+class CommonLocaleDataJv extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataJv._();
+  const CommonLocaleDataJv.constant() : super.constant();
 
   factory CommonLocaleDataJv() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataJv implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsJv._(_cld);
+  static final _units = UnitsJv(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsJv._(_cld);
+  static final _dateFields = DateFieldsJv(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesJv._(_cld);
+  static final _languages = LanguagesJv(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsJv._(_cld);
+  static final _scripts = ScriptsJv(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesJv._(_cld);
+  static final _territories = TerritoriesJv(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsJv._(_cld);
+  static final _variants = VariantsJv(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsJv._(_cld);
+  static final _subdivisions = SubdivisionsJv(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesJv._(_cld);
+  static final _currencies = CurrenciesJv(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesJv._(_cld);
+  static final _timeZones = TimeZonesJv(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameJv._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameJv(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsJv extends Units {
-  UnitsJv._(super.cld);
+  const UnitsJv(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsJv extends Units {
 }
 
 class DateFieldsJv extends DateFields {
-  DateFieldsJv._(super.cld);
+  const DateFieldsJv(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'taun',
           short: 'taun',
           narrow: 'taun',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'taun wingi',
           short: 'taun wingi',
           narrow: 'taun wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'taun iki',
           short: 'taun iki',
           narrow: 'taun iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'taun ngarep',
           short: 'taun ngarep',
           narrow: 'taun ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} taun kepungkur',
@@ -4450,7 +4450,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} taun kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} taun',
@@ -4467,28 +4467,28 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'triwulan',
           short: 'triwulan',
           narrow: 'triwulan',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'triwulan wingi',
           short: 'triwulan wingi',
           narrow: 'triwulan wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'triwulan iki',
           short: 'triwulan iki',
           narrow: 'triwulan iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'triwulan ngarep',
           short: 'triwulan ngarep',
           narrow: 'triwulan ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} triwulan kepungkur',
@@ -4502,7 +4502,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} triwulan kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} triwulan',
@@ -4519,28 +4519,28 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'sasi',
           short: 'sasi',
           narrow: 'sasi',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'sasi wingi',
           short: 'sasi wingi',
           narrow: 'sasi wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'sasi iki',
           short: 'sasi iki',
           narrow: 'sasi iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'sasi ngarep',
           short: 'sasi ngarep',
           narrow: 'sasi ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} sasi kepungkur',
@@ -4554,7 +4554,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} sasi kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} sasi',
@@ -4571,28 +4571,28 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'pekan',
           short: 'pekan',
           narrow: 'pekan',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'pekan wingi',
           short: 'pkn wingi',
           narrow: 'pkn wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'pekan iki',
           short: 'pkn iki',
           narrow: 'pkn iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'pekan ngarep',
           short: 'pkn ngarep',
           narrow: 'pkn ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} pekan kepungkur',
@@ -4606,7 +4606,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} pekan kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} pekan',
@@ -4630,28 +4630,28 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'dino',
           short: 'dino',
           narrow: 'dino',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'wingi',
           short: 'wingi',
           narrow: 'wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'dino iki',
           short: 'dino iki',
           narrow: 'dino iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'sesuk',
           short: 'sesuk',
           narrow: 'sesuk',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} dina kepungkur',
@@ -4665,7 +4665,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} dino kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} dina',
@@ -4703,23 +4703,23 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'Ahad wingi',
           short: 'Ahad wingi',
           narrow: 'Ahad wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'Ahad iki',
           short: 'Ahad iki',
           narrow: 'Ahad iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'Ahad ngarep',
           short: 'Ahad ngarep',
           narrow: 'Ahad ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} Ahad kepungkur',
@@ -4733,7 +4733,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} Ahad kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} Ahad',
@@ -4750,23 +4750,23 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'Senèn wingi',
           short: 'Sen. wingi',
           narrow: 'Sn wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'Senèn iki',
           short: 'Sen. iki',
           narrow: 'Sn iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'Senèn ngarep',
           short: 'Sen. ngarep',
           narrow: 'Sn ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} Senèn kepungkur',
@@ -4780,7 +4780,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} Sn kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} Senèn',
@@ -4797,23 +4797,23 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'Selasa wingi',
           short: 'Sel. wingi',
           narrow: 'Sel. wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'Selasa iki',
           short: 'Sel. iki',
           narrow: 'Sel. iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'Selasa ngarep',
           short: 'Sel. ngarep',
           narrow: 'Sel. ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} Selasa kepungkur',
@@ -4827,7 +4827,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} Sel. kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} Selasa',
@@ -4844,23 +4844,23 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'Rebo wingi',
           short: 'Reb. wingi',
           narrow: 'Reb. wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'Rebo iki',
           short: 'Reb. iki',
           narrow: 'Reb. iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'Rebo ngarep',
           short: 'Reb. ngarep',
           narrow: 'Reb. ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} Rebo kepungkur',
@@ -4874,7 +4874,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} Reb. kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} Rebo',
@@ -4891,23 +4891,23 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'Kemis wingi',
           short: 'Kms. wingi',
           narrow: 'Kms. wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'Kemis iki',
           short: 'Kms. iki',
           narrow: 'Kms. iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'Kemis ngarep',
           short: 'Kms. ngarep',
           narrow: 'Kms. ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} Kemis kepungkur',
@@ -4921,7 +4921,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} Kms. kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} Kemis',
@@ -4938,23 +4938,23 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'Jemuwah wingi',
           short: 'Jem. wingi',
           narrow: 'Jem. wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'Jemuwah iki',
           short: 'Jem. iki',
           narrow: 'Jem. iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'Jemuwah ngarep',
           short: 'Jem. ngarep',
           narrow: 'Jem. ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} Jemuwah kepungkur',
@@ -4968,7 +4968,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} Jem. kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} Jemuwah',
@@ -4985,23 +4985,23 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'Setu wingi',
           short: 'Set. wingi',
           narrow: 'St wingi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'Setu iki',
           short: 'Set. iki',
           narrow: 'St iki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'Setu ngarep',
           short: 'Set. ngarep',
           narrow: 'St ngarep',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} Setu kepungkur',
@@ -5015,7 +5015,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} Set. kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} Setu',
@@ -5039,18 +5039,18 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'jam',
           short: 'jam',
           narrow: 'jam',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'jam iki',
           short: 'jam iki',
           narrow: 'jam iki',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} jam kepungkur',
@@ -5064,7 +5064,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} jam kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} jam',
@@ -5081,18 +5081,18 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'menit',
           short: 'menit',
           narrow: 'menit',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'menit iki',
           short: 'menit iki',
           narrow: 'menit iki',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} menit kepungkur',
@@ -5106,7 +5106,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} menit kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} menit',
@@ -5123,18 +5123,18 @@ class DateFieldsJv extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'detik',
           short: 'detik',
           narrow: 'detik',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'saiki',
           short: 'saiki',
           narrow: 'saiki',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0} detik kepungkur',
@@ -5148,7 +5148,7 @@ class DateFieldsJv extends DateFields {
             other: '{0} detik kepungkur',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: 'ing {0} detik',
@@ -5173,7 +5173,7 @@ class DateFieldsJv extends DateFields {
 }
 
 class LanguagesJv extends Languages {
-  const LanguagesJv._(super.cld);
+  const LanguagesJv(super.cld);
 
   static const _ab = Language('ab', 'Abkhazian');
   static const _ace = Language('ace', 'Achinese');
@@ -6948,7 +6948,9 @@ class LanguagesJv extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'ab': _ab,
     'ace': _ace,
     'ada': _ada,
@@ -7392,7 +7394,7 @@ class LanguagesJv extends Languages {
 }
 
 class ScriptsJv extends Scripts {
-  const ScriptsJv._(super.cld);
+  const ScriptsJv(super.cld);
 
   static const _adlm = Script('Adlm', 'Adlam');
   static const _arab = Script('Arab', 'hija’iyah');
@@ -7875,7 +7877,9 @@ class ScriptsJv extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Arab': _arab,
     'Aran': _aran,
@@ -7937,7 +7941,7 @@ class ScriptsJv extends Scripts {
 }
 
 class TerritoriesJv extends Territories {
-  const TerritoriesJv._(super.cld);
+  const TerritoriesJv(super.cld);
 
   static const _$001 = Territory('001', 'Donya');
   static const _$002 = Territory('002', 'Afrika');
@@ -8910,7 +8914,9 @@ class TerritoriesJv extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9209,17 +9215,21 @@ class TerritoriesJv extends Territories {
 }
 
 class VariantsJv extends Variants {
-  const VariantsJv._(super.cld);
+  const VariantsJv(super.cld);
 
   @override
-  final variants = const {};
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{};
 }
 
 class SubdivisionsJv extends Subdivisions {
-  const SubdivisionsJv._(super.cld);
+  const SubdivisionsJv(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'ad07': 'Andorra la Vella',
     'aeaz': 'Abu Dhabi',
     'afnur': 'Nuristan',
@@ -9905,7 +9915,7 @@ class SubdivisionsJv extends Subdivisions {
 }
 
 class CurrenciesJv extends Currencies {
-  const CurrenciesJv._(super.cld);
+  const CurrenciesJv(super.cld);
 
   static const _aed = Currency(_cld, 'AED', 'Dirham Uni Emirat Arab');
   static const _afn =
@@ -10763,7 +10773,9 @@ class CurrenciesJv extends Currencies {
   final zwr = _xxx;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'AED': _aed,
     'AFN': _afn,
     'ALL': _all,
@@ -10932,23 +10944,37 @@ class CurrenciesJv extends Currencies {
 }
 
 class TimeZonesJv extends TimeZones {
-  const TimeZonesJv._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: 'Wektu {0}',
-            regionFormatDaylight: 'Wektu Ketigo {0}',
-            regionFormatStandard: 'Wektu Standar {0}',
-            fallbackFormat: '{1} ({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesJv(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => 'Wektu {0}';
+  @override
+  String get regionFormatDaylight => 'Wektu Ketigo {0}';
+  @override
+  String get regionFormatStandard => 'Wektu Standar {0}';
+  @override
+  String get fallbackFormat => '{1} ({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Asuncion': TimeZoneNames(exemplarCity: 'Asunción'),
     'America/Bahia_Banderas': TimeZoneNames(exemplarCity: 'Bahia Banderas'),
     'America/Belize': TimeZoneNames(exemplarCity: 'Belise'),
@@ -11058,7 +11084,9 @@ class TimeZonesJv extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Afghanistan': MetaZone('Afghanistan',
         long: TimeZoneName(standard: 'Wektu Afghanistan')),
     'Africa_Central': MetaZone('Africa_Central',
@@ -11564,17 +11592,25 @@ class TimeZonesJv extends TimeZones {
 }
 
 class LocaleDisplayNameJv extends LocaleDisplayName {
-  const LocaleDisplayNameJv._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'Basa: {0}',
-            codePatternScript: 'Skrip: {0}',
-            codePatternTerritory: 'Daerah: {0}');
+  const LocaleDisplayNameJv(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'Basa: {0}';
+  @override
+  String get codePatternScript => 'Skrip: {0}';
+  @override
+  String get codePatternTerritory => 'Daerah: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'Tanggalan',
     'cf': 'Format Mata Uang',
     'co': 'Urutan Pamilahan',
@@ -11584,9 +11620,10 @@ class LocaleDisplayNameJv extends LocaleDisplayName {
     'ms': 'Sistem Pangukuran',
     'nu': 'Angka',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'Tanggalan Buddha',
       'chinese': 'Tanggalan Cina',

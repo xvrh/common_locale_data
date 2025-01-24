@@ -6,25 +6,28 @@ var _reference = readJsonData('tool/data/localenames/variants/en.json',
         'main/en/localeDisplayNames/variants')
     .cast<String, String>();
 
-String updateVariantsModel(String file) => updateModelFlexible(
-      file,
-      'Variant',
-      _reference.entries,
-      (code) => 'Variant(${escapeDartString(code)}, ${escapeDartString(code)})',
-    );
-
-void generateVariants(String locale, StringBuffer output) {
-  var translatedVariants = <String, String>{};
-  try {
-    translatedVariants = readJsonData(
-            'tool/data/localenames/variants/$locale.json',
-            'main/$locale/localeDisplayNames/variants')
-        .cast();
-  } catch (_) {}
-
-  String translatedVariant(String variantCode) =>
-      'Variant(${escapeDartString(variantCode)}, ${escapeDartString(translatedVariants[variantCode] ?? variantCode)})';
-
-  generateClass(output, 'Variants', locale, _reference, translatedVariants,
-      translatedVariant);
+String updateVariantsModel(String file) {
+  return updateModelFlexible(
+    file,
+    'Variant',
+    _reference.entries,
+    (code) =>
+        'Variant(${escapeDartString(code)}, ${escapeDartString(code.toLowerCase())})',
+  );
 }
+
+String? generateVariants(String locale) {
+  return generateInheritedClass(
+      locale,
+      _reference,
+      r'tool/data/localenames/variants/$locale.json',
+      r'main/$locale/localeDisplayNames/variants',
+      'Variant',
+      'Variants',
+      null,
+      generateVariantCode);
+}
+
+String generateVariantCode(
+        String variantCode, Map<String, String> translatedVariants) =>
+    'Variant(${escapeDartString(variantCode)}, ${escapeDartString(translatedVariants[variantCode] ?? variantCode)})';

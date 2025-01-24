@@ -11,29 +11,35 @@ String updateLanguagesModel(String file) {
   return updateModel(file, 'Language', 'und', _reference);
 }
 
-void generateLanguages(String locale, StringBuffer output) {
-  var translatedLanguages = readJsonData(
-          'tool/data/localenames/languages/$locale.json',
-          'main/$locale/localeDisplayNames/languages')
-      .cast<String, String>();
+String? generateLanguages(String locale) {
+  return generateInheritedClass(
+      locale,
+      _reference,
+      r'tool/data/localenames/languages/$locale.json',
+      r'main/$locale/localeDisplayNames/languages',
+      'Language',
+      'Languages',
+      'und',
+      generateLanguageCode);
+}
 
-  String? languageToCode(String languageCode) {
-    final output = StringBuffer('Language(${escapeDartString(languageCode)},');
+String? generateLanguageCode(
+    String languageCode, Map<String, String> translatedLanguages) {
+  final output = StringBuffer('Language(${escapeDartString(languageCode)},');
 
-    output.writeln(escapeDartString(translatedLanguages[languageCode]!));
+  var translatedLanguage = translatedLanguages[languageCode];
+  if (translatedLanguage == null) return null;
 
-    for (final alt in ['variant', 'short', 'menu']) {
-      final altName = translatedLanguages['$languageCode-alt-$alt'];
-      if (altName != null) {
-        output.writeln(
-            ', ${alt.toLowerCamelCase()}: ${escapeDartString(altName)}');
-      }
+  output.writeln(escapeDartString(translatedLanguage));
+
+  for (final alt in ['variant', 'short', 'menu']) {
+    final altName = translatedLanguages['$languageCode-alt-$alt'];
+    if (altName != null) {
+      output
+          .writeln(', ${alt.toLowerCamelCase()}: ${escapeDartString(altName)}');
     }
-
-    output.writeln(')');
-    return '$output';
   }
 
-  generateClass(output, 'Languages', locale, _reference, translatedLanguages,
-      languageToCode, 'und');
+  output.writeln(')');
+  return output.toString();
 }

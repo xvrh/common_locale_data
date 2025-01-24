@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'zu';
-const _cld = CommonLocaleDataZu._();
+const _cld = CommonLocaleDataZu.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataZu implements CommonLocaleData {
+class CommonLocaleDataZu extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataZu._();
+  const CommonLocaleDataZu.constant() : super.constant();
 
   factory CommonLocaleDataZu() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataZu implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsZu._(_cld);
+  static final _units = UnitsZu(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsZu._(_cld);
+  static final _dateFields = DateFieldsZu(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesZu._(_cld);
+  static final _languages = LanguagesZu(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsZu._(_cld);
+  static final _scripts = ScriptsZu(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesZu._(_cld);
+  static final _territories = TerritoriesZu(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsZu._(_cld);
+  static final _variants = VariantsZu(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsZu._(_cld);
+  static final _subdivisions = SubdivisionsZu(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesZu._(_cld);
+  static final _currencies = CurrenciesZu(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesZu._(_cld);
+  static final _timeZones = TimeZonesZu(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameZu._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameZu(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsZu extends Units {
-  UnitsZu._(super.cld);
+  const UnitsZu(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsZu extends Units {
 }
 
 class DateFieldsZu extends DateFields {
-  DateFieldsZu._(super.cld);
+  const DateFieldsZu(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'Unyaka',
           short: 'Unyaka',
           narrow: 'Unyaka',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'onyakeni odlule',
           short: 'onyakeni odlule',
           narrow: 'onyakeni odlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kulo nyaka',
           short: 'kulo nyaka',
           narrow: 'kulo nyaka',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'unyaka ozayo',
           short: 'unyaka ozayo',
           narrow: 'unyaka ozayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} unyaka odlule',
@@ -4453,7 +4453,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} unyaka odlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'onyakeni ongu-{0} ozayo',
@@ -4473,28 +4473,28 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'Ikota',
           short: 'Ikota',
           narrow: 'Ikota',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'ikota edlule',
           short: 'ikota edlule',
           narrow: 'ikota edlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'le kota',
           short: 'le kota',
           narrow: 'le kota',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'ikota ezayo',
           short: 'ikota ezayo',
           narrow: 'ikota ezayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ikota edlule',
@@ -4511,7 +4511,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} amakota edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'kwikota engu-{0} ezayo',
@@ -4531,28 +4531,28 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'Inyanga',
           short: 'Inyanga',
           narrow: 'Inyanga',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'inyanga edlule',
           short: 'inyanga edlule',
           narrow: 'inyanga edlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'le nyanga',
           short: 'le nyanga',
           narrow: 'le nyanga',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'inyanga ezayo',
           short: 'inyanga ezayo',
           narrow: 'inyanga ezayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} inyanga edlule',
@@ -4569,7 +4569,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} izinyanga ezedlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'enyangeni engu-{0}',
@@ -4589,28 +4589,28 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'Iviki',
           short: 'Iviki',
           narrow: 'Iviki',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'iviki eledlule',
           short: 'iviki eledlule',
           narrow: 'iviki eledlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'leli viki',
           short: 'leli viki',
           narrow: 'leli viki',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'iviki elizayo',
           short: 'iviki elizayo',
           narrow: 'iviki elizayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'evikini elingu-{0} eledlule',
@@ -4627,7 +4627,7 @@ class DateFieldsZu extends DateFields {
             other: 'amaviki angu-{0} edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'evikini elingu-{0}',
@@ -4654,28 +4654,28 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: 'Usuku',
           short: 'Usuku',
           narrow: 'Usuku',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: 'izolo',
           short: 'izolo',
           narrow: 'izolo',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'namhlanje',
           short: 'namhlanje',
           narrow: 'namhlanje',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'kusasa',
           short: 'kusasa',
           narrow: 'kusasa',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'osukwini olungu-{0} olwedlule',
@@ -4692,7 +4692,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} izinsuku ezedlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'osukwini olungu-{0} oluzayo',
@@ -4733,23 +4733,23 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'iSonto eledlule',
           short: 'iSonto eledlule',
           narrow: 'iSonto eledlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kuleli Sonto',
           short: 'kuleli Sonto',
           narrow: 'kuleli Sonto',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'iSonto elizayo',
           short: 'iSonto elizayo',
           narrow: 'iSonto elizayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} iSonto eledlule',
@@ -4766,7 +4766,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} amaSonto edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'kwiSonto elingu-{0}',
@@ -4786,23 +4786,23 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'uMsombuluko odlule',
           short: 'uMsombuluko odlule',
           narrow: 'uMsombuluko odlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kulo Msombuluko',
           short: 'kulo Msombuluko',
           narrow: 'kulo Msombuluko',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'uMsombuluko ozayo',
           short: 'uMsombuluko ozayo',
           narrow: 'uMsombuluko ozayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoMsombuluko o-{0} odlule',
@@ -4819,7 +4819,7 @@ class DateFieldsZu extends DateFields {
             other: 'ngeMsombuluko e-{0} edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoMsombuluko o-{0}',
@@ -4839,23 +4839,23 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'uLwesibili oludlule',
           short: 'uLwesibili oludlule',
           narrow: 'uLwesibili oludlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kulo Lwesibili',
           short: 'kulo Lwesibili',
           narrow: 'kulo Lwesibili',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'uLwesibili oluzayo',
           short: 'uLwesibili oluzayo',
           narrow: 'uLwesibili oluzayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoLwesibili ongu-{0} owedlule',
@@ -4872,7 +4872,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} ngoLwezibili olwedlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoLwesibili olu-{0}',
@@ -4892,23 +4892,23 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'uLwesithathu oludlule',
           short: 'uLwesithathu oludlule',
           narrow: 'uLwesithathu oludlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kulo Lwesithathu',
           short: 'kulo Lwesithathu',
           narrow: 'kulo Lwesithathu',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'uLwesithathu oluzayo',
           short: 'uLwesithathu oluzayo',
           narrow: 'uLwesithathu oluzayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoLwesithathu olungu-{0} olwedlule',
@@ -4925,7 +4925,7 @@ class DateFieldsZu extends DateFields {
             other: 'ngoLwezithathu abangu-{0} abedlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoLwesithathu o-{0}',
@@ -4945,23 +4945,23 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'uLwesine oludlule',
           short: 'uLwesine olwedlule',
           narrow: 'uLwesine olwedlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kulo Lwesine',
           short: 'kulo Lwesine',
           narrow: 'kulo Lwesine',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'uLwesine oluzayo',
           short: 'uLwesine oluzayo',
           narrow: 'uLwesine oluzayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoLwesine olu-{0} olwedlule',
@@ -4978,7 +4978,7 @@ class DateFieldsZu extends DateFields {
             other: 'ngoLwezine abangu-{0} abedlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoLwesine olu-{0}',
@@ -4998,23 +4998,23 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'uLwesihlanu oludlule',
           short: 'uLwesihlanu oludlule',
           narrow: 'uLwesihlanu oludlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kulo Lwesihlanu',
           short: 'kulo Lwesihlanu',
           narrow: 'kulo Lwesihlanu',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'uLwesihlanu oluzayo',
           short: 'uLwesihlanu oluzayo',
           narrow: 'uLwesihlanu oluzayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} Lwesihlanu oludlule',
@@ -5031,7 +5031,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} Lwezihlanu oludlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngo {0} Lwesihlanu',
@@ -5051,23 +5051,23 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: 'uMgqibelo odlule',
           short: 'uMgqibelo odlule',
           narrow: 'uMgqibelo odlule',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'kulo Mgqibelo',
           short: 'kulo Mgqibelo',
           narrow: 'kulo Mgqibelo',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: 'uMgqibelo ozayo',
           short: 'uMgqibelo ozayo',
           narrow: 'uMgqibelo ozayo',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoMgqibelo o-{0} odlule',
@@ -5084,7 +5084,7 @@ class DateFieldsZu extends DateFields {
             other: 'ngeMgqibelo engu-{0} edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ngoMgqibelo o-{0}',
@@ -5111,18 +5111,18 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'Ihora',
           short: 'Ihora',
           narrow: 'Ihora',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'leli hora',
           short: 'leli hora',
           narrow: 'leli hora',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} ihora eledlule',
@@ -5139,7 +5139,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} amahora edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'ehoreni elingu-{0} elizayo',
@@ -5159,18 +5159,18 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'Iminithi',
           short: 'Iminithi',
           narrow: 'Iminithi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'leli minithi',
           short: 'leli minithi',
           narrow: 'leli minithi',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} iminithi eledlule',
@@ -5187,7 +5187,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} amaminithi edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'kuminithi elingu-{0} elizayo',
@@ -5207,18 +5207,18 @@ class DateFieldsZu extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: 'Isekhondi',
           short: 'Isekhondi',
           narrow: 'Isekhondi',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: 'manje',
           short: 'manje',
           narrow: 'manje',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: '{0} isekhondi eledlule',
@@ -5235,7 +5235,7 @@ class DateFieldsZu extends DateFields {
             other: '{0} amasekhondi edlule',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             one: 'kusekhondi elingu-{0} elizayo',
@@ -5263,7 +5263,7 @@ class DateFieldsZu extends DateFields {
 }
 
 class LanguagesZu extends Languages {
-  const LanguagesZu._(super.cld);
+  const LanguagesZu(super.cld);
 
   static const _aa = Language('aa', 'isi-Afar');
   static const _ab = Language('ab', 'isi-Abkhazian');
@@ -7063,7 +7063,9 @@ class LanguagesZu extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -7530,7 +7532,7 @@ class LanguagesZu extends Languages {
 }
 
 class ScriptsZu extends Scripts {
-  const ScriptsZu._(super.cld);
+  const ScriptsZu(super.cld);
 
   static const _adlm = Script('Adlm', 'isi-Adlam');
   static const _aghb = Script('Aghb', 'isi-Caucasian Albanian');
@@ -8127,7 +8129,9 @@ class ScriptsZu extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Aghb': _aghb,
     'Ahom': _ahom,
@@ -8301,7 +8305,7 @@ class ScriptsZu extends Scripts {
 }
 
 class TerritoriesZu extends Territories {
-  const TerritoriesZu._(super.cld);
+  const TerritoriesZu(super.cld);
 
   static const _$001 = Territory('001', 'umhlaba');
   static const _$002 = Territory('002', 'i-Africa');
@@ -9274,7 +9278,9 @@ class TerritoriesZu extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9573,7 +9579,7 @@ class TerritoriesZu extends Territories {
 }
 
 class VariantsZu extends Variants {
-  const VariantsZu._(super.cld);
+  const VariantsZu(super.cld);
 
   static const _$1901 = Variant('1901', 'Ubhalomagama lwase-German losiko');
   static const _$1994 =
@@ -9800,7 +9806,9 @@ class VariantsZu extends Variants {
   final wadegile = _wadegile;
 
   @override
-  final variants = const {
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{
     '1901': _$1901,
     '1994': _$1994,
     '1996': _$1996,
@@ -9906,10 +9914,12 @@ class VariantsZu extends Variants {
 }
 
 class SubdivisionsZu extends Subdivisions {
-  const SubdivisionsZu._(super.cld);
+  const SubdivisionsZu(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'aobgo': 'Bengo Province',
     'aobgu': 'Benguela Province',
     'aobie': 'Bié Province',
@@ -10601,7 +10611,7 @@ class SubdivisionsZu extends Subdivisions {
 }
 
 class CurrenciesZu extends Currencies {
-  const CurrenciesZu._(super.cld);
+  const CurrenciesZu(super.cld);
 
   static const _aed =
       Currency(_cld, 'AED', 'i-Dirham yase-United Arab Emirates');
@@ -11505,7 +11515,9 @@ class CurrenciesZu extends Currencies {
   final zwr = _xxx;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'AED': _aed,
     'AFN': _afn,
     'ALL': _all,
@@ -11677,23 +11689,37 @@ class CurrenciesZu extends Currencies {
 }
 
 class TimeZonesZu extends TimeZones {
-  const TimeZonesZu._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: 'Isikhathi sase-{0}',
-            regionFormatDaylight: '{0} Isikhathi sasemini',
-            regionFormatStandard: '{0} isikhathi esivamile',
-            fallbackFormat: '{1} ({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesZu(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => 'Isikhathi sase-{0}';
+  @override
+  String get regionFormatDaylight => '{0} Isikhathi sasemini';
+  @override
+  String get regionFormatStandard => '{0} isikhathi esivamile';
+  @override
+  String get fallbackFormat => '{1} ({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Adak': TimeZoneNames(exemplarCity: 'i-Adak'),
     'America/Anchorage': TimeZoneNames(exemplarCity: 'i-Anchorage'),
     'America/Anguilla': TimeZoneNames(exemplarCity: 'i-Anguilla'),
@@ -12132,7 +12158,9 @@ class TimeZonesZu extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Afghanistan': MetaZone('Afghanistan',
         long: TimeZoneName(standard: 'Isikhathi sase-Afghanistan')),
     'Africa_Central': MetaZone('Africa_Central',
@@ -12671,17 +12699,25 @@ class TimeZonesZu extends TimeZones {
 }
 
 class LocaleDisplayNameZu extends LocaleDisplayName {
-  const LocaleDisplayNameZu._(super.cld)
-      : super(
-            localePattern: '{0} ({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: 'Ulimi: {0}',
-            codePatternScript: 'Umbhalo: {0}',
-            codePatternTerritory: 'Isiyingi: {0}');
+  const LocaleDisplayNameZu(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0} ({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => 'Ulimi: {0}';
+  @override
+  String get codePatternScript => 'Umbhalo: {0}';
+  @override
+  String get codePatternTerritory => 'Isiyingi: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': 'Ikhalenda',
     'cf': 'Ifomethi yemali',
     'ka': 'Ziba Ukuhlelwa Kwezimpawu',
@@ -12701,9 +12737,10 @@ class LocaleDisplayNameZu extends LocaleDisplayName {
     'va': 'Okokwehlukanisa Kwasendaweni',
     'x': 'Yokusetshenziswa Ngasese',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': 'ikhalenda lesi-Buddhist',
       'chinese': 'Ikhalenda lesi-Chinese',

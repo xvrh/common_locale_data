@@ -11,29 +11,32 @@ String updateScriptsModel(String file) {
   return updateModel(file, 'Script', 'Zzzz', _reference);
 }
 
-void generateScripts(String locale, StringBuffer output) {
-  var translatedScripts = readJsonData(
-          'tool/data/localenames/scripts/$locale.json',
-          'main/$locale/localeDisplayNames/scripts')
-      .cast<String, String>();
+String? generateScripts(String locale) {
+  return generateInheritedClass(
+      locale,
+      _reference,
+      r'tool/data/localenames/scripts/$locale.json',
+      r'main/$locale/localeDisplayNames/scripts',
+      'Script',
+      'Scripts',
+      'Zzzz',
+      generateScriptCode);
+}
 
-  String? translatedScript(String scriptCode) {
-    var output = StringBuffer('Script(${escapeDartString(scriptCode)}, ');
+String? generateScriptCode(
+    String scriptCode, Map<String, String> translatedScripts) {
+  var output = StringBuffer('Script(${escapeDartString(scriptCode)}, ');
 
-    output.writeln(escapeDartString(translatedScripts[scriptCode]!));
+  output.writeln(escapeDartString(translatedScripts[scriptCode]!));
 
-    for (var alt in ['variant', 'short', 'stand-alone']) {
-      var altName = translatedScripts['$scriptCode-alt-$alt'];
-      if (altName != null) {
-        output.writeln(
-            ', ${alt.toLowerCamelCase()}: ${escapeDartString(altName)}');
-      }
+  for (var alt in ['variant', 'short', 'stand-alone']) {
+    var altName = translatedScripts['$scriptCode-alt-$alt'];
+    if (altName != null) {
+      output
+          .writeln(', ${alt.toLowerCamelCase()}: ${escapeDartString(altName)}');
     }
-
-    output.writeln(')');
-    return '$output';
   }
 
-  generateClass(output, 'Scripts', locale, _reference, translatedScripts,
-      translatedScript, 'Zzzz');
+  output.writeln(')');
+  return '$output';
 }

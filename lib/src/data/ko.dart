@@ -1,16 +1,16 @@
 import '../../common_locale_data.dart';
 
 const _locale = 'ko';
-const _cld = CommonLocaleDataKo._();
+const _cld = CommonLocaleDataKo.constant();
 
 /// Translations of [CommonLocaleData]
 ///
 /// @nodoc
-class CommonLocaleDataKo implements CommonLocaleData {
+class CommonLocaleDataKo extends CommonLocaleData {
   @override
   String get locale => _locale;
 
-  const CommonLocaleDataKo._();
+  const CommonLocaleDataKo.constant() : super.constant();
 
   factory CommonLocaleDataKo() => _cld;
 
@@ -19,49 +19,49 @@ class CommonLocaleDataKo implements CommonLocaleData {
 
   static const CommonLocaleData staticInstance = _cld;
 
-  static final _units = UnitsKo._(_cld);
+  static final _units = UnitsKo(_cld);
   @override
   Units get units => _units;
 
-  static final _dateFields = DateFieldsKo._(_cld);
+  static final _dateFields = DateFieldsKo(_cld);
   @override
   DateFields get date => _dateFields;
 
-  static final _languages = LanguagesKo._(_cld);
+  static final _languages = LanguagesKo(_cld);
   @override
   Languages get languages => _languages;
 
-  static final _scripts = ScriptsKo._(_cld);
+  static final _scripts = ScriptsKo(_cld);
   @override
   Scripts get scripts => _scripts;
 
-  static final _territories = TerritoriesKo._(_cld);
+  static final _territories = TerritoriesKo(_cld);
   @override
   Territories get territories => _territories;
 
-  static final _variants = VariantsKo._(_cld);
+  static final _variants = VariantsKo(_cld);
   @override
   Variants get variants => _variants;
 
-  static final _subdivisions = SubdivisionsKo._(_cld);
+  static final _subdivisions = SubdivisionsKo(_cld);
   @override
   Subdivisions get subdivisions => _subdivisions;
 
-  static final _currencies = CurrenciesKo._(_cld);
+  static final _currencies = CurrenciesKo(_cld);
   @override
   Currencies get currencies => _currencies;
 
-  static final _timeZones = TimeZonesKo._(_cld);
+  static final _timeZones = TimeZonesKo(_cld);
   @override
   TimeZones get timeZones => _timeZones;
 
-  static final _localeDisplayName = LocaleDisplayNameKo._(_cld);
+  static final _localeDisplayName = LocaleDisplayNameKo(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
 }
 
 class UnitsKo extends Units {
-  UnitsKo._(super.cld);
+  const UnitsKo(super.cld);
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
@@ -4405,7 +4405,7 @@ class UnitsKo extends Units {
 }
 
 class DateFieldsKo extends DateFields {
-  DateFieldsKo._(super.cld);
+  const DateFieldsKo(super.cld);
 
   @override
   MultiLength get era => const MultiLength(
@@ -4415,28 +4415,28 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldFullData get year => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get year => const DateFieldFullData(
+        displayName: MultiLength(
           long: '년',
           short: '년',
           narrow: '년',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: '작년',
           short: '작년',
           narrow: '작년',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '올해',
           short: '올해',
           narrow: '올해',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '내년',
           short: '내년',
           narrow: '내년',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}년 전',
@@ -4450,7 +4450,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}년 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}년 후',
@@ -4467,28 +4467,28 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldFullData get quarter => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get quarter => const DateFieldFullData(
+        displayName: MultiLength(
           long: '분기',
           short: '분기',
           narrow: '분기',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: '지난 분기',
           short: '지난 분기',
           narrow: '지난 분기',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 분기',
           short: '이번 분기',
           narrow: '이번 분기',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 분기',
           short: '다음 분기',
           narrow: '다음 분기',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}분기 전',
@@ -4502,7 +4502,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}분기 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}분기 후',
@@ -4519,28 +4519,28 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldFullData get month => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get month => const DateFieldFullData(
+        displayName: MultiLength(
           long: '월',
           short: '월',
           narrow: '월',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: '지난달',
           short: '지난달',
           narrow: '지난달',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 달',
           short: '이번 달',
           narrow: '이번 달',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 달',
           short: '다음 달',
           narrow: '다음 달',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}개월 전',
@@ -4554,7 +4554,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}개월 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}개월 후',
@@ -4571,28 +4571,28 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldFullData get week => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get week => const DateFieldFullData(
+        displayName: MultiLength(
           long: '주',
           short: '주',
           narrow: '주',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: '지난주',
           short: '지난주',
           narrow: '지난주',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 주',
           short: '이번 주',
           narrow: '이번 주',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 주',
           short: '다음 주',
           narrow: '다음 주',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전',
@@ -4606,7 +4606,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후',
@@ -4630,28 +4630,28 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldFullData get day => DateFieldFullData(
-        displayName: const MultiLength(
+  DateFieldFullData get day => const DateFieldFullData(
+        displayName: MultiLength(
           long: '일',
           short: '일',
           narrow: '일',
         ),
-        previous: const MultiLength(
+        previous: MultiLength(
           long: '어제',
           short: '어제',
           narrow: '어제',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '오늘',
           short: '오늘',
           narrow: '오늘',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '내일',
           short: '내일',
           narrow: '내일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}일 전',
@@ -4665,7 +4665,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}일 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}일 후',
@@ -4703,23 +4703,23 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get sunday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: '지난 일요일',
           short: '지난 일요일',
           narrow: '지난 일요일',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 일요일',
           short: '이번 일요일',
           narrow: '이번 일요일',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 일요일',
           short: '다음 일요일',
           narrow: '다음 일요일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전 일요일',
@@ -4733,7 +4733,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전 일요일',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후 일요일',
@@ -4750,23 +4750,23 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get monday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: '지난 월요일',
           short: '지난 월요일',
           narrow: '지난 월요일',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 월요일',
           short: '이번 월요일',
           narrow: '이번 월요일',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 월요일',
           short: '다음 월요일',
           narrow: '다음 월요일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전 월요일',
@@ -4780,7 +4780,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전 월요일',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후 월요일',
@@ -4797,23 +4797,23 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get tuesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: '지난 화요일',
           short: '지난 화요일',
           narrow: '지난 화요일',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 화요일',
           short: '이번 화요일',
           narrow: '이번 화요일',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 화요일',
           short: '다음 화요일',
           narrow: '다음 화요일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전 화요일',
@@ -4827,7 +4827,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전 화요일',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후 화요일',
@@ -4844,23 +4844,23 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get wednesday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: '지난 수요일',
           short: '지난 수요일',
           narrow: '지난 수요일',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 수요일',
           short: '이번 수요일',
           narrow: '이번 수요일',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 수요일',
           short: '다음 수요일',
           narrow: '다음 수요일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전 수요일',
@@ -4874,7 +4874,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전 수요일',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후 수요일',
@@ -4891,23 +4891,23 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get thursday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: '지난 목요일',
           short: '지난 목요일',
           narrow: '지난 목요일',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 목요일',
           short: '이번 목요일',
           narrow: '이번 목요일',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 목요일',
           short: '다음 목요일',
           narrow: '다음 목요일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전 목요일',
@@ -4921,7 +4921,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전 목요일',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후 목요일',
@@ -4938,23 +4938,23 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get friday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: '지난 금요일',
           short: '지난 금요일',
           narrow: '지난 금요일',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 금요일',
           short: '이번 금요일',
           narrow: '이번 금요일',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 금요일',
           short: '다음 금요일',
           narrow: '다음 금요일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전 금요일',
@@ -4968,7 +4968,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전 금요일',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후 금요일',
@@ -4985,23 +4985,23 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataWithRelative get saturday => DateFieldDataWithRelative(
-        previous: const MultiLength(
+  DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
+        previous: MultiLength(
           long: '지난 토요일',
           short: '지난 토요일',
           narrow: '지난 토요일',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '이번 토요일',
           short: '이번 토요일',
           narrow: '이번 토요일',
         ),
-        next: const MultiLength(
+        next: MultiLength(
           long: '다음 토요일',
           short: '다음 토요일',
           narrow: '다음 토요일',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 전 토요일',
@@ -5015,7 +5015,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}주 전 토요일',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}주 후 토요일',
@@ -5039,18 +5039,18 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataTime get hour => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get hour => const DateFieldDataTime(
+        displayName: MultiLength(
           long: '시',
           short: '시',
           narrow: '시',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '현재 시간',
           short: '현재 시간',
           narrow: '현재 시간',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}시간 전',
@@ -5064,7 +5064,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}시간 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}시간 후',
@@ -5081,18 +5081,18 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataTime get minute => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get minute => const DateFieldDataTime(
+        displayName: MultiLength(
           long: '분',
           short: '분',
           narrow: '분',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '현재 분',
           short: '현재 분',
           narrow: '현재 분',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}분 전',
@@ -5106,7 +5106,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}분 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}분 후',
@@ -5123,18 +5123,18 @@ class DateFieldsKo extends DateFields {
       );
 
   @override
-  DateFieldDataTime get second => DateFieldDataTime(
-        displayName: const MultiLength(
+  DateFieldDataTime get second => const DateFieldDataTime(
+        displayName: MultiLength(
           long: '초',
           short: '초',
           narrow: '초',
         ),
-        now: const MultiLength(
+        now: MultiLength(
           long: '지금',
           short: '지금',
           narrow: '지금',
         ),
-        past: const MultiLengthRelativeTime(
+        past: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}초 전',
@@ -5148,7 +5148,7 @@ class DateFieldsKo extends DateFields {
             other: '{0}초 전',
           ),
         ),
-        future: const MultiLengthRelativeTime(
+        future: MultiLengthRelativeTime(
           long: RelativeTime(
             _locale,
             other: '{0}초 후',
@@ -5173,7 +5173,7 @@ class DateFieldsKo extends DateFields {
 }
 
 class LanguagesKo extends Languages {
-  const LanguagesKo._(super.cld);
+  const LanguagesKo(super.cld);
 
   static const _aa = Language('aa', '아파르어');
   static const _ab = Language('ab', '압카즈어');
@@ -7086,7 +7086,9 @@ class LanguagesKo extends Languages {
   final zza = _zza;
 
   @override
-  final languages = const {
+  Map<String, Language> get languages => staticLanguages;
+
+  static const staticLanguages = <String, Language>{
     'aa': _aa,
     'ab': _ab,
     'ace': _ace,
@@ -7670,7 +7672,7 @@ class LanguagesKo extends Languages {
 }
 
 class ScriptsKo extends Scripts {
-  const ScriptsKo._(super.cld);
+  const ScriptsKo(super.cld);
 
   static const _adlm = Script('Adlm', '아들람 문자');
   static const _afak = Script('Afak', '아파카 문자');
@@ -8264,7 +8266,9 @@ class ScriptsKo extends Scripts {
   final zzzz = _zzzz;
 
   @override
-  final scripts = const {
+  Map<String, Script> get scripts => staticScripts;
+
+  static const staticScripts = <String, Script>{
     'Adlm': _adlm,
     'Afak': _afak,
     'Aghb': _aghb,
@@ -8438,7 +8442,7 @@ class ScriptsKo extends Scripts {
 }
 
 class TerritoriesKo extends Territories {
-  const TerritoriesKo._(super.cld);
+  const TerritoriesKo(super.cld);
 
   static const _$001 = Territory('001', '세계');
   static const _$002 = Territory('002', '아프리카');
@@ -9403,7 +9407,9 @@ class TerritoriesKo extends Territories {
   final zz = _zz;
 
   @override
-  final territories = const {
+  Map<String, Territory> get territories => staticTerritories;
+
+  static const staticTerritories = <String, Territory>{
     '001': _$001,
     '002': _$002,
     '003': _$003,
@@ -9702,7 +9708,7 @@ class TerritoriesKo extends Territories {
 }
 
 class VariantsKo extends Variants {
-  const VariantsKo._(super.cld);
+  const VariantsKo(super.cld);
 
   static const _$1901 = Variant('1901', '전통 독일어 표기법');
   static const _$1606NICT = Variant('1606NICT', '중세 후기 프랑스어(1606년까지)');
@@ -9752,7 +9758,9 @@ class VariantsKo extends Variants {
   final ucrcor = _ucrcor;
 
   @override
-  final variants = const {
+  Map<String, Variant> get variants => staticVariants;
+
+  static const staticVariants = <String, Variant>{
     '1901': _$1901,
     '1606NICT': _$1606NICT,
     'ALALC97': _alalc97,
@@ -9780,10 +9788,12 @@ class VariantsKo extends Variants {
 }
 
 class SubdivisionsKo extends Subdivisions {
-  const SubdivisionsKo._(super.cld);
+  const SubdivisionsKo(super.cld);
 
   @override
-  final subdivisions = const {
+  Map<String, String> get subdivisions => staticSubdivisions;
+
+  static const staticSubdivisions = <String, String>{
     'ad02': '카닐료',
     'ad03': '엥캄',
     'ad04': '라마사나',
@@ -14737,7 +14747,7 @@ class SubdivisionsKo extends Subdivisions {
 }
 
 class CurrenciesKo extends Currencies {
-  const CurrenciesKo._(super.cld);
+  const CurrenciesKo(super.cld);
 
   static const _adp = Currency(_cld, 'ADP', '안도라 페세타');
   static const _aed = Currency(_cld, 'AED', '아랍에미리트 디르함');
@@ -15676,7 +15686,9 @@ class CurrenciesKo extends Currencies {
   final zwr = _zwr;
 
   @override
-  final currencies = const {
+  Map<String, Currency> get currencies => staticCurrencies;
+
+  static const staticCurrencies = <String, Currency>{
     'ADP': _adp,
     'AED': _aed,
     'AFA': _afa,
@@ -15975,23 +15987,37 @@ class CurrenciesKo extends Currencies {
 }
 
 class TimeZonesKo extends TimeZones {
-  const TimeZonesKo._(super.cld)
-      : super(
-            gmtFormat: 'GMT{0}',
-            gmtZeroFormat: 'GMT',
-            regionFormat: '{0} 시간',
-            regionFormatDaylight: '{0} 하계 표준시',
-            regionFormatStandard: '{0} 표준시',
-            fallbackFormat: '{1}({0})',
-            positiveH: '+HH',
-            positiveHM: '+HH:mm',
-            positiveHMS: '+HH:mm:ss',
-            negativeH: '-HH',
-            negativeHM: '-HH:mm',
-            negativeHMS: '-HH:mm:ss');
+  const TimeZonesKo(super.cld);
 
   @override
-  final timeZoneNames = const {
+  String get gmtFormat => 'GMT{0}';
+  @override
+  String get gmtZeroFormat => 'GMT';
+  @override
+  String get regionFormat => '{0} 시간';
+  @override
+  String get regionFormatDaylight => '{0} 하계 표준시';
+  @override
+  String get regionFormatStandard => '{0} 표준시';
+  @override
+  String get fallbackFormat => '{1}({0})';
+  @override
+  String get positiveH => '-HH:mm:ss';
+  @override
+  String get positiveHM => '+HH:mm';
+  @override
+  String get positiveHMS => '+HH:mm:ss';
+  @override
+  String get negativeH => '-HH';
+  @override
+  String get negativeHM => '-HH:mm';
+  @override
+  String get negativeHMS => '+HH';
+
+  @override
+  Map<String, TimeZoneNames> get timeZoneNames => staticTimeZoneNames;
+
+  static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Adak': TimeZoneNames(exemplarCity: '에이닥'),
     'America/Anchorage': TimeZoneNames(exemplarCity: '앵커리지'),
     'America/Anguilla': TimeZoneNames(exemplarCity: '앙귈라'),
@@ -16420,7 +16446,9 @@ class TimeZonesKo extends TimeZones {
   };
 
   @override
-  final metaZoneNames = const {
+  Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
+
+  static const staticMetaZoneNames = <String, MetaZone>{
     'Acre': MetaZone('Acre',
         long: TimeZoneName(
             generic: '아크레 시간', standard: '아크레 표준시', daylight: '아크레 하계 표준시')),
@@ -16856,17 +16884,25 @@ class TimeZonesKo extends TimeZones {
 }
 
 class LocaleDisplayNameKo extends LocaleDisplayName {
-  const LocaleDisplayNameKo._(super.cld)
-      : super(
-            localePattern: '{0}({1})',
-            localeSeparator: '{0}, {1}',
-            localeKeyTypePattern: '{0}: {1}',
-            codePatternLanguage: '언어: {0}',
-            codePatternScript: '문자: {0}',
-            codePatternTerritory: '지역: {0}');
+  const LocaleDisplayNameKo(super.cld);
 
   @override
-  final keyNames = const {
+  String get localePattern => '{0}({1})';
+  @override
+  String get localeSeparator => '{0}, {1}';
+  @override
+  String get localeKeyTypePattern => '{0}: {1}';
+  @override
+  String get codePatternLanguage => '언어: {0}';
+  @override
+  String get codePatternScript => '문자: {0}';
+  @override
+  String get codePatternTerritory => '지역: {0}';
+
+  @override
+  Map<String, String> get keyNames => staticKeyNames;
+
+  static const staticKeyNames = <String, String>{
     'ca': '달력',
     'cf': '통화 형식',
     'ka': '기호 정렬 무시',
@@ -16886,9 +16922,10 @@ class LocaleDisplayNameKo extends LocaleDisplayName {
     'va': '방언',
     'x': '공개 여부',
   };
-
   @override
-  final valueNames = const {
+  Map<String, Map<String, String>> get valueNames => staticValueNames;
+
+  static const staticValueNames = <String, Map<String, String>>{
     'ca': {
       'buddhist': '불교력',
       'chinese': '음력',

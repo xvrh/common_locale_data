@@ -3,6 +3,7 @@ import 'package:collection/collection.dart';
 import 'package:path/path.dart' as p;
 import '../utils/case_format.dart';
 import '../utils/escape_dart_string.dart';
+import '../utils/generate_class.dart';
 import '../utils/read_json_data.dart';
 
 List<List<String>> readTable(String fileName) {
@@ -16,8 +17,8 @@ List<List<String>> readTable(String fileName) {
 
 // use [CanonicalizedMap] for the supplemental information as the Iana/Olsen identifiers don't have a regular capitalization
 String generateTimeZoneData() {
-  var code = StringBuffer();
-  code.writeln('''
+  var output = StringBuffer();
+  output.writeln('''
 // GENERATED CODE - DO NOT MODIFY BY HAND
 import 'package:collection/collection.dart';
 import 'timezones.dart';
@@ -28,19 +29,18 @@ import 'timezones.dart';
 class TimeZoneData {
 ''');
 
-  void generateMetaZones(MapEntry<String, dynamic> entry, StringBuffer code) {
+  void generateMetaZones(MapEntry<String, dynamic> entry) {
     var value = entry.value;
     if (value is Map<String, dynamic>) {
       for (var child in value.entries) {
-        generateMetaZones(
-            MapEntry('${entry.key}/${child.key}', child.value), code);
+        generateMetaZones(MapEntry('${entry.key}/${child.key}', child.value));
       }
     } else {
       var metaZones = (entry.value as List<dynamic>).map((e) =>
           ((e as Map<String, dynamic>).values.first as Map<String, dynamic>)
               .cast<String, String>());
 
-      code.writeln('${escapeDartString(entry.key)}: DateRangeMap({');
+      output.writeln('${escapeDartString(entry.key)}: DateRangeMap({');
 
       for (var metaZoneMapping in metaZones) {
         var metaZone = metaZoneMapping['_mzone']!;
@@ -49,14 +49,14 @@ class TimeZoneData {
         var fromString = from == null ? 'null' : escapeDartString('${from}Z');
         var toString = to == null ? 'null' : escapeDartString('${to}Z');
 
-        code.writeln(
+        output.writeln(
             'DateRange($fromString,$toString): ${escapeDartString(metaZone)},');
       }
-      code.writeln('}),');
+      output.writeln('}),');
     }
   }
 
-  code.writeln('''
+  output.writeln('''
   /// Maps canonical timezones to meta zones.
   static final zoneToMetaZone = CanonicalizedMap<String, String, DateRangeMap<String>>.from({
 ''');
@@ -69,16 +69,16 @@ class TimeZoneData {
       as Map<String, dynamic>)['timezone'] as Map<String, dynamic>;
 
   for (var entry in timeZones.entries) {
-    generateMetaZones(entry, code);
+    generateMetaZones(entry);
   }
 
-  code.writeln('}, (key) => key.toLowerCase());');
+  output.writeln('}, (key) => key.toLowerCase());');
 
   var mapZones = (metaZones['metazones'] as List<dynamic>)
       .cast<Map<String, dynamic>>()
       .map((e) => e['mapZone'] as Map<String, dynamic>);
 
-  code.writeln('''
+  output.writeln('''
   
   /// Maps meta zone+territory combinations to canonical zones
   static final metaZoneToZoneForTerritory=CanonicalizedMap<(String, String), (String, String), String>.from({
@@ -88,11 +88,11 @@ class TimeZoneData {
     var metaZone = mapZone['_other'] as String;
     var zone = mapZone['_type'] as String;
     var territory = mapZone['_territory'] as String;
-    code.writeln(
+    output.writeln(
         '(${escapeDartString(metaZone)},${escapeDartString(territory)}): ${escapeDartString(zone)},');
   }
 
-  code.writeln('}, (key) => (key.\$1.toLowerCase(),key.\$2.toLowerCase()));');
+  output.writeln('}, (key) => (key.\$1.toLowerCase(),key.\$2.toLowerCase()));');
 
   var aliases = readJsonData(
     'tool/data/bcp47/bcp47/timezone.json',
@@ -130,17 +130,17 @@ class TimeZoneData {
     }
   }
 
-  writeCanonicalizedMapCode(code, 'aliasToZone', aliasToCanonical,
+  writeCanonicalizedMapCode(output, 'aliasToZone', aliasToCanonical,
       'Maps timezone code to canonical code.');
 
-  writeCanonicalizedMapCode(code, 'zoneToIana', canonicalToIana,
+  writeCanonicalizedMapCode(output, 'zoneToIana', canonicalToIana,
       'Maps canonical timezone to IANA/Olson.');
 
-  writeCanonicalizedMapCode(code, 'zoneToShort', canonicalToShort,
+  writeCanonicalizedMapCode(output, 'zoneToShort', canonicalToShort,
       'Maps canonical timezone to short id.');
 
   writeCanonicalizedMapCode(
-      code,
+      output,
       'shortToZone',
       Map.fromEntries(
           canonicalToShort.entries.map((e) => MapEntry(e.value, e.key))),
@@ -151,7 +151,7 @@ class TimeZoneData {
     'supplemental/primaryZones',
   ).cast<String, String>();
 
-  writeCanonicalizedMapCode(code, 'territoryToPrimaryZone', primaryZones,
+  writeCanonicalizedMapCode(output, 'territoryToPrimaryZone', primaryZones,
       'Maps territory to primary timezone.');
 
   var territoryMappings = readTable('tool/data/tzdb/zone.tab.txt');
@@ -171,7 +171,7 @@ class TimeZoneData {
     zoneToTerritory[zone] = territoryOverride[1];
   }
 
-  writeCanonicalizedMapCode(code, 'zoneToTerritory', zoneToTerritory,
+  writeCanonicalizedMapCode(output, 'zoneToTerritory', zoneToTerritory,
       'Maps canonical timezone to territory.');
 
   var territories = zoneToTerritory.values.toSet().toList();
@@ -183,21 +183,21 @@ class TimeZoneData {
           .toSet()
   };
 
-  code.writeln();
-  code.writeln('''
+  output.writeln();
+  output.writeln('''
   /// Maps territory to canonicalized timezone.
   static final territoryToZones = CanonicalizedMap<String, String, Set<String>>.from({
 ''');
 
   for (var e in territoryToZones.entries) {
     var value = '{${e.value.map((e) => escapeDartString(e)).join(',')}}';
-    code.writeln('${escapeDartString(e.key)}: $value,');
+    output.writeln('${escapeDartString(e.key)}: $value,');
   }
-  code.writeln('}, (key) => key.toLowerCase());');
+  output.writeln('}, (key) => key.toLowerCase());');
 
-  code.writeln('}');
+  output.writeln('}');
 
-  return '$code';
+  return '$output';
 }
 
 void writeCanonicalizedMapCode(
@@ -215,19 +215,100 @@ void writeCanonicalizedMapCode(
 
 final RegExp _hmsRegExp = RegExp('(.*H{1,2})([^H]*)(mm)(.*)\$');
 
-void generateTimeZones(String locale, StringBuffer code) {
-  var timeZoneNames = readJsonData(
+String? generateTimeZones(String locale) {
+  var buffer = StringBuffer();
+  var data = readJsonData(
     'tool/data/dates/timeZoneNames/$locale.json',
     'main/$locale/dates/timeZoneNames',
   );
 
-  var translatedTimeZones = (timeZoneNames['zone'] as Map<String, dynamic>).map(
+  var baseLocale = getBaseLocale(locale);
+
+  Map<String, dynamic>? baseData;
+  if (baseLocale != null) {
+    baseData = readJsonData('tool/data/dates/timeZoneNames/$baseLocale.json',
+        'main/$baseLocale/dates/timeZoneNames');
+  }
+
+  var translatedTimeZones = (data['zone'] as Map<String, dynamic>).map(
       (str, e) => MapEntry(str,
           (e as Map<String, dynamic>).cast<String, Map<String, dynamic>>()));
-  var translatedMetaZones = (timeZoneNames['metazone'] as Map<String, dynamic>)
-      .map((str, e) => MapEntry(str,
+  var translatedMetaZones = (data['metazone'] as Map<String, dynamic>).map(
+      (str, e) => MapEntry(str,
           (e as Map<String, dynamic>).cast<String, Map<String, dynamic>>()));
 
+  var baseTranslatedTimeZones = (baseData?['zone'] as Map<String, dynamic>?)
+      ?.map((str, e) => MapEntry(str,
+          (e as Map<String, dynamic>).cast<String, Map<String, dynamic>>()));
+  var baseTranslatedMetaZones = (baseData?['metazone'] as Map<String, dynamic>?)
+      ?.map((str, e) => MapEntry(str,
+          (e as Map<String, dynamic>).cast<String, Map<String, dynamic>>()));
+
+  buffer.writeln('''
+class TimeZones${locale.toUpperCamelCase()} extends TimeZones${baseLocale?.toUpperCamelCase() ?? ''} {
+  const TimeZones${locale.toUpperCamelCase()}(super.cld);
+
+''');
+
+  var timeZoneFields = generateTimeZoneFieldCode(data);
+  if (baseData != null) {
+    var baseTimeZoneFields = generateTimeZoneFieldCode(baseData);
+    for (var entry in baseTimeZoneFields.entries) {
+      if (timeZoneFields[entry.key] == entry.value) {
+        timeZoneFields.remove(entry.key);
+      }
+    }
+  }
+
+  var nonEmpty = false;
+  for (var entry in timeZoneFields.entries) {
+    nonEmpty = true;
+    buffer.writeln('@override');
+    buffer.writeln(
+        'String get ${entry.key} => ${escapeDartString(entry.value)};');
+  }
+
+  buffer.writeln('');
+
+  var set = translatedTimeZones.entries
+      .map((e) => generateTimeZoneCode(e))
+      .flattened
+      .toSet();
+  var baseSet = baseTranslatedTimeZones?.entries
+      .map((e) => generateTimeZoneCode(e))
+      .flattened
+      .toSet();
+
+  var constMapTimeZones = generateConstMap(
+      set, baseSet, 'TimeZoneNames', 'TimeZoneNames', 'TimeZones', baseLocale);
+  if (constMapTimeZones != null) {
+    nonEmpty = true;
+    buffer.write(constMapTimeZones);
+  }
+
+  buffer.writeln('');
+
+  var metaZoneSet = translatedMetaZones.keys
+      .map((e) => generateMetaZoneCode(e, translatedMetaZones))
+      .toSet();
+  var baseMetaZoneSet = baseTranslatedMetaZones?.keys
+      .map((e) => generateMetaZoneCode(e, baseTranslatedMetaZones))
+      .toSet();
+
+  var constMap = generateConstMap(metaZoneSet, baseMetaZoneSet, 'MetaZone',
+      'MetaZoneNames', 'TimeZones', baseLocale);
+
+  if (constMap != null) {
+    nonEmpty = true;
+    buffer.write(constMap);
+  }
+
+  buffer.writeln('}');
+
+  return nonEmpty ? buffer.toString() : null;
+}
+
+Map<String, String> generateTimeZoneFieldCode(Map<String, dynamic> data) {
   var timeZoneFields = {
     'gmtFormat': 'gmtFormat',
     'gmtZeroFormat': 'gmtZeroFormat',
@@ -235,9 +316,9 @@ void generateTimeZones(String locale, StringBuffer code) {
     'regionFormatDaylight': 'regionFormat-type-daylight',
     'regionFormatStandard': 'regionFormat-type-standard',
     'fallbackFormat': 'fallbackFormat'
-  }.map((k, e) => MapEntry(k, "$k: '${timeZoneNames[e]}'")).values.join(',');
+  }.map((k, e) => MapEntry(k, data[e] as String));
 
-  var hourFormats = (timeZoneNames['hourFormat'] as String).split(';');
+  var hourFormats = (data['hourFormat'] as String).split(';');
 
   var positiveHM = hourFormats[0];
   var negativeHM = hourFormats[1];
@@ -256,108 +337,89 @@ void generateTimeZones(String locale, StringBuffer code) {
       (m) =>
           '${m.group(1)}${m.group(2)}${m.group(3)}${m.group(2)}ss${m.group(4)}');
 
-  timeZoneFields += ", positiveH: '$positiveH'";
-  timeZoneFields += ", positiveHM: '$positiveHM'";
-  timeZoneFields += ", positiveHMS: '$positiveHMS'";
-  timeZoneFields += ", negativeH: '$negativeH'";
-  timeZoneFields += ", negativeHM: '$negativeHM'";
-  timeZoneFields += ", negativeHMS: '$negativeHMS'";
+  timeZoneFields['positiveH'] = positiveH;
+  timeZoneFields['positiveHM'] = positiveHM;
+  timeZoneFields['positiveHMS'] = positiveHMS;
+  timeZoneFields['negativeH'] = negativeH;
+  timeZoneFields['negativeHM'] = negativeHM;
+  timeZoneFields['negativeHMS'] = positiveH;
+  timeZoneFields['positiveH'] = negativeHMS;
+  return timeZoneFields;
+}
 
-  code.writeln('''
-class TimeZones${locale.toUpperCamelCase()} extends TimeZones {
-  const TimeZones${locale.toUpperCamelCase()}._(super.cld): super($timeZoneFields);
-''');
+List<String> generateTimeZoneCode(MapEntry<String, dynamic> entry) {
+  final res = <String>[];
+  var buffer = StringBuffer();
 
-  void generateTimeZones(MapEntry<String, dynamic> entry, StringBuffer code) {
-    var timeZone = entry.value as Map<String, dynamic>;
-    if (!timeZone.containsKey('long') &&
-        !timeZone.containsKey('short') &&
-        !timeZone.containsKey('exemplarCity') &&
-        !timeZone.containsKey('exemplarCity-alt-secondary')) {
-      for (var child in timeZone.entries) {
-        generateTimeZones(
-            MapEntry('${entry.key}/${child.key}', child.value), code);
-      }
-    } else {
-      code.writeln('${escapeDartString(entry.key)}: TimeZoneNames(');
-
-      var prev = false;
-      var exemplarCity = timeZone['exemplarCity'] as String?;
-      if (exemplarCity != null) {
-        code.writeln('exemplarCity: ${escapeDartString(exemplarCity)}');
-        prev = true;
-      }
-
-      if (timeZone.containsKey('long') || timeZone.containsKey('short')) {
-        for (var len in ['long', 'short']) {
-          var names = timeZone[len] as Map<String, dynamic>?;
-          if (names != null && names.isNotEmpty) {
-            if (prev) code.writeln(', ');
-            prev = true;
-            code.writeln('$len: TimeZoneName(');
-            code.writeln({
-              for (var type in ['generic', 'standard', 'daylight'])
-                if (names[type] is String) type: names[type] as String
-            }
-                .entries
-                .map((e) => '${e.key}: ${escapeDartString(e.value)}')
-                .join(', '));
-            code.writeln(')');
-          }
-        }
-      }
-
-      code.writeln('),');
+  var timeZone = entry.value as Map<String, dynamic>;
+  if (!timeZone.containsKey('long') &&
+      !timeZone.containsKey('short') &&
+      !timeZone.containsKey('exemplarCity') &&
+      !timeZone.containsKey('exemplarCity-alt-secondary')) {
+    for (var child in timeZone.entries) {
+      res.addAll(generateTimeZoneCode(
+          MapEntry('${entry.key}/${child.key}', child.value)));
     }
-  }
+  } else {
+    buffer.writeln('${escapeDartString(entry.key)}: TimeZoneNames(');
 
-  code.writeln('''
-@override
-final timeZoneNames = const {
-''');
-
-  for (var entry in translatedTimeZones.entries) {
-    generateTimeZones(entry, code);
-  }
-  code.writeln('''
-};
-
-''');
-
-  String translatedMetaZone(String metaZoneCode) {
-    var output = StringBuffer('MetaZone(${escapeDartString(metaZoneCode)}, ');
     var prev = false;
-    for (var len in ['long', 'short']) {
-      var names = translatedMetaZones[metaZoneCode]![len];
-      if (names != null && names.isNotEmpty) {
-        if (prev) output.writeln(', ');
-        prev = true;
-
-        output.writeln('$len: TimeZoneName(');
-        output.writeln({
-          for (var type in ['generic', 'standard', 'daylight'])
-            if (names[type] is String) type: names[type] as String
-        }
-            .entries
-            .map((e) => '${e.key}: ${escapeDartString(e.value)}')
-            .join(', '));
-        output.writeln(')');
-      }
+    var exemplarCity = timeZone['exemplarCity'] as String?;
+    if (exemplarCity != null) {
+      buffer.writeln('exemplarCity: ${escapeDartString(exemplarCity)}');
+      prev = true;
     }
 
-    output.writeln(')');
-    return '$output';
+    if (timeZone.containsKey('long') || timeZone.containsKey('short')) {
+      for (var len in ['long', 'short']) {
+        var names = timeZone[len] as Map<String, dynamic>?;
+        if (names != null && names.isNotEmpty) {
+          if (prev) buffer.writeln(', ');
+          prev = true;
+          buffer.writeln('$len: TimeZoneName(');
+          buffer.writeln({
+            for (var type in ['generic', 'standard', 'daylight'])
+              if (names[type] is String) type: names[type] as String
+          }
+              .entries
+              .map((e) => '${e.key}: ${escapeDartString(e.value)}')
+              .join(', '));
+          buffer.writeln(')');
+        }
+      }
+    }
+    buffer.writeln(')');
+  }
+  var str = buffer.toString();
+  if (str.isNotEmpty) {
+    res.add(str);
+  }
+  return res;
+}
+
+String generateMetaZoneCode(String metaZoneCode,
+    Map<String, Map<String, Map<String, dynamic>>> translatedMetaZones) {
+  var output = StringBuffer(
+      '${escapeDartString(metaZoneCode)}: MetaZone(${escapeDartString(metaZoneCode)}, ');
+  var prev = false;
+  for (var len in ['long', 'short']) {
+    var names = translatedMetaZones[metaZoneCode]![len];
+    if (names != null && names.isNotEmpty) {
+      if (prev) output.writeln(', ');
+      prev = true;
+
+      output.writeln('$len: TimeZoneName(');
+      output.writeln({
+        for (var type in ['generic', 'standard', 'daylight'])
+          if (names[type] is String) type: names[type] as String
+      }
+          .entries
+          .map((e) => '${e.key}: ${escapeDartString(e.value)}')
+          .join(', '));
+      output.writeln(')');
+    }
   }
 
-  code.writeln('''
-@override
-final metaZoneNames = const {
-''');
-
-  for (var entry in translatedMetaZones.entries) {
-    code.writeln("'${entry.key}': ${translatedMetaZone(entry.key)},");
-  }
-  code.writeln('};');
-
-  code.writeln('}');
+  output.writeln(')');
+  return output.toString();
 }

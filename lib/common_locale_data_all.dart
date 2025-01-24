@@ -2,7 +2,7 @@
 
 /// Library to access ALL translated common data.
 ///
-/// Individual locales can be used via the [CommonLocaleDataAll] extension.
+/// Locales can be used via the [CommonLocaleDataAll] extension.
 ///
 /// Because this library pulls in all locale sources, compilation times
 /// will be long (>10x compared to selecting individual locales).
@@ -815,7 +815,7 @@ export 'zh_hant_mo.dart';
 export 'zh_hant_my.dart';
 export 'zu.dart';
 
-/// The root class providing access to all Common Data (date fields, units, territories etc...).
+/// Extension to provide static or dynamic access ([locales]) to all locales.
 extension CommonLocaleDataAll on CommonLocaleData {
   /// Access the [CommonLocaleData] for af
   static const af = CommonLocaleDataAf.staticInstance;
