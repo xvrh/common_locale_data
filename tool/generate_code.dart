@@ -128,16 +128,16 @@ Future<void> generateLocale(String locale) async {
   library;
   
   export 'common_locale_data.dart';
-  export 'src/data/${localeSnakeCase.toLowerCase()}.dart' show CommonLocaleData${locale.toUpperCamelCase()};
+  export 'src/data/$localeSnakeCase.dart' show CommonLocaleData${locale.toUpperCamelCase()};
   ''');
 
-  unawaited(File('lib/${localeSnakeCase.toLowerCase()}.dart')
+  unawaited(File('lib/$localeSnakeCase.dart')
       .writeAsString(_format(buffer.toString())));
 
   buffer = StringBuffer();
 
   if (baseLocale != null) {
-    buffer.writeln("import '${baseLocale.replaceAll('-', '_')}.dart';");
+    buffer.writeln("import '${baseLocale.toSnakeCase()}.dart';");
   }
 
   buffer.writeln('''
@@ -257,7 +257,7 @@ Future<void> generateLocale(String locale) async {
   if (timezonesCode != null) buffer.writeln(timezonesCode);
   if (localeDisplayNameCode != null) buffer.writeln(localeDisplayNameCode);
 
-  await File('lib/src/data/${localeSnakeCase.toLowerCase()}.dart')
+  await File('lib/src/data/$localeSnakeCase.dart')
       .writeAsString(_format(buffer.toString()));
   return;
 }

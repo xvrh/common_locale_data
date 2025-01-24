@@ -1,5 +1,5 @@
 import '../../common_locale_data.dart';
-import 'yue_Hant.dart';
+import 'yue_hant.dart';
 
 const _locale = 'yue-Hant-CN';
 const _cld = CommonLocaleDataYueHantCN.constant();

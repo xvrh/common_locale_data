@@ -1,5 +1,5 @@
 import '../../common_locale_data.dart';
-import 'sr_Cyrl.dart';
+import 'sr_cyrl.dart';
 
 const _locale = 'sr-Cyrl-XK';
 const _cld = CommonLocaleDataSrCyrlXK.constant();

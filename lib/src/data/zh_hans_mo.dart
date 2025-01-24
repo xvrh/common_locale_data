@@ -1,5 +1,5 @@
 import '../../common_locale_data.dart';
-import 'zh_Hans.dart';
+import 'zh_hans.dart';
 
 const _locale = 'zh-Hans-MO';
 const _cld = CommonLocaleDataZhHansMO.constant();
