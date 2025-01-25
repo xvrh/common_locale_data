@@ -1,6 +1,6 @@
 name: common_locale_data
 description: A type-safe and tree-shakable API to access translated common data (measurement units, date fields, country names etc...)
-version: 2.2.0
+version: 2.2.1
 homepage: https://github.com/xvrh/common_locale_data
 repository: https://github.com/xvrh/common_locale_data
 issue_tracker: https://github.com/xvrh/common_locale_data/issues

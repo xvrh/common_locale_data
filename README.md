@@ -718,6 +718,6 @@ the ```generate_code.dart``` and ```generate_readme.dart``` files.
 ## License
 
 This work is licensed under the MIT license.
-The data used from the CLDR is licensed under Unicode-3 license.
+The data used from the Unicode CLDR is licensed under the Unicode v3 license.
 
 SPDX-License-Identifier: MIT AND Unicode-3.0
