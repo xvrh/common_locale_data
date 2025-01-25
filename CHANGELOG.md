@@ -1,3 +1,6 @@
+## 2.2.1
+- Minor fix to LICENSE and README.md files
+
 ## 2.2.0
 - Implemented inheritance for language specific locales to reduce source code and binary file sizes
 
