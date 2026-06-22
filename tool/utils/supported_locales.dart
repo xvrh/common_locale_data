@@ -17,8 +17,9 @@ class Locales {
   static Set<String> all = _getLocales();
 
   /// support the main locales (locales without a - in the name)
-  static Set<String> main =
-      all.where((str) => BaseLanguageId.parse(str).region == null).toSet();
+  static Set<String> main = all
+      .where((str) => BaseLanguageId.parse(str).region == null)
+      .toSet();
 
   /// support small set for testing purposes
   static const Set<String> test = {
@@ -28,7 +29,7 @@ class Locales {
     'fr',
     'en-GB',
     'es',
-    'zh-Hans'
+    'zh-Hans',
   };
 
   /// for compatibility with original languages of this package
@@ -59,18 +60,21 @@ class Locales {
     'sr',
     'sv',
     'uk',
-    'zh'
+    'zh',
   };
 }
 
 Set<String> _getLocales() {
   var coverageLevels = readJsonData(
-          'tool/data/core/coverageLevels.json', 'effectiveCoverageLevels')
-      .cast<String, String>();
+    'tool/data/core/coverageLevels.json',
+    'effectiveCoverageLevels',
+  ).cast<String, String>();
 
-  coverageLevels.removeWhere((key, value) =>
-      CoverageLevel.values.byName(value).value < Config.coverageLevel.value ||
-      key == 'und');
+  coverageLevels.removeWhere(
+    (key, value) =>
+        CoverageLevel.values.byName(value).value < Config.coverageLevel.value ||
+        key == 'und',
+  );
 
   return coverageLevels.keys.toSet();
 }

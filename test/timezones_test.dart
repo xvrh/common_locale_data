@@ -19,79 +19,114 @@ void main() {
     expect(fr.timeZones['europe/paris'].toString(), 'heure : France');
 
     expect(
-        en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericLong, Duration()),
-        'Central European Time');
+      en.timeZones['europe/paris']?.format(
+        TimeZoneStyle.genericLong,
+        Duration(),
+      ),
+      'Central European Time',
+    );
     expect(
-        fr.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericLong, Duration()),
-        'heure d’Europe centrale');
+      fr.timeZones['europe/paris']?.format(
+        TimeZoneStyle.genericLong,
+        Duration(),
+      ),
+      'heure d’Europe centrale',
+    );
 
     expect(
-        en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.genericShort, Duration()),
-        'CET');
+      en.timeZones['europe/paris']?.format(
+        TimeZoneStyle.genericShort,
+        Duration(),
+      ),
+      'CET',
+    );
     expect(
-        en.timeZones['europe/paris']
-            ?.format(TimeZoneStyle.daylightShort, Duration()),
-        'CEST');
+      en.timeZones['europe/paris']?.format(
+        TimeZoneStyle.daylightShort,
+        Duration(),
+      ),
+      'CEST',
+    );
     expect(
-        en.timeZones['europe/dublin']
-            ?.format(TimeZoneStyle.daylightLong, Duration()),
-        'Irish Standard Time');
+      en.timeZones['europe/dublin']?.format(
+        TimeZoneStyle.daylightLong,
+        Duration(),
+      ),
+      'Irish Standard Time',
+    );
     expect(
-        en.timeZones['europe/dublin']
-            ?.format(TimeZoneStyle.daylightShort, Duration()),
-        'GMT');
+      en.timeZones['europe/dublin']?.format(
+        TimeZoneStyle.daylightShort,
+        Duration(),
+      ),
+      'GMT',
+    );
     expect(
-        en.timeZones['europe/dublin']
-            ?.format(TimeZoneStyle.standardLong, Duration()),
-        'Greenwich Mean Time');
+      en.timeZones['europe/dublin']?.format(
+        TimeZoneStyle.standardLong,
+        Duration(),
+      ),
+      'Greenwich Mean Time',
+    );
     expect(
-        en.timeZones['europe/dublin']
-            ?.format(TimeZoneStyle.standardShort, Duration()),
-        'GMT');
+      en.timeZones['europe/dublin']?.format(
+        TimeZoneStyle.standardShort,
+        Duration(),
+      ),
+      'GMT',
+    );
   });
 
   test('missing timezone data', () {
     var zones = TimeZoneData.zoneToMetaZone.keys.toSet();
 
     expect(
-        TimeZoneData.metaZoneToZoneForTerritory.values
-            .toSet()
-            .difference(zones),
-        []);
-    expect(TimeZoneData.aliasToZone.values.toSet().difference(zones),
-        ['Etc/Unknown', 'Etc/UTC']);
+      TimeZoneData.metaZoneToZoneForTerritory.values.toSet().difference(zones),
+      [],
+    );
+    expect(TimeZoneData.aliasToZone.values.toSet().difference(zones), [
+      'Etc/Unknown',
+      'Etc/UTC',
+    ]);
 
     expect(TimeZoneData.zoneToIana.keys.toSet().difference(zones), []);
 
-    expect(TimeZoneData.territoryToPrimaryZone.values.toSet().difference(zones),
-        []);
+    expect(
+      TimeZoneData.territoryToPrimaryZone.values.toSet().difference(zones),
+      [],
+    );
 
-    expect(TimeZoneData.zoneToTerritory.keys.toSet().difference(zones),
-        ['Europe/Kirov', 'Asia/Barnaul', 'Asia/Tomsk']);
+    expect(TimeZoneData.zoneToTerritory.keys.toSet().difference(zones), [
+      'Europe/Kirov',
+      'Asia/Barnaul',
+      'Asia/Tomsk',
+    ]);
 
-    expect(zones.difference(TimeZoneData.zoneToTerritory.keys.toSet()),
-        ['Etc/GMT']);
+    expect(zones.difference(TimeZoneData.zoneToTerritory.keys.toSet()), [
+      'Etc/GMT',
+    ]);
 
     expect(zones.difference(TimeZoneData.zoneToShort.keys.toSet()), []);
 
     expect(
-        TimeZoneData.zoneToShort.keys
-            .toSet()
-            .difference(TimeZoneData.shortToZone.values.toSet()),
-        []);
+      TimeZoneData.zoneToShort.keys.toSet().difference(
+        TimeZoneData.shortToZone.values.toSet(),
+      ),
+      [],
+    );
 
     expect(
-        TimeZoneData.shortToZone.values
-            .toSet()
-            .difference(TimeZoneData.zoneToShort.keys.toSet()),
-        []);
+      TimeZoneData.shortToZone.values.toSet().difference(
+        TimeZoneData.zoneToShort.keys.toSet(),
+      ),
+      [],
+    );
 
     expect(
-        TimeZoneData.zoneToTerritory.values.toSet().difference(
-            CommonLocaleDataEn().territories.territories.keys.toSet()),
-        []);
+      TimeZoneData.zoneToTerritory.values.toSet().difference(
+        CommonLocaleDataEn().territories.territories.keys.toSet(),
+      ),
+      [],
+    );
   });
 }

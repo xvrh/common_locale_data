@@ -28,17 +28,20 @@ class CommonLocaleDataAfNA extends CommonLocaleDataAf {
 class CurrenciesAfNA extends CurrenciesAf {
   const CurrenciesAfNA(super.cld);
 
-  static const _nad = Currency(_cld, 'NAD', 'Namibiese dollar',
-      symbol: r'$', symbolNarrow: r'$');
+  static const _nad = Currency(
+    _cld,
+    'NAD',
+    'Namibiese dollar',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
 
   @override
   Currency get nad => _nad;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesAf.staticCurrencies,
-        ...const {
-          'NAD': _nad,
-        }
-      });
+    ...CurrenciesAf.staticCurrencies,
+    ...const {'NAD': _nad},
+  });
 }

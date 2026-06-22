@@ -32,21 +32,33 @@ class CommonLocaleDataTaSG extends CommonLocaleDataTa {
 class CurrenciesTaSG extends CurrenciesTa {
   const CurrenciesTaSG(super.cld);
 
-  static const _myr = Currency(_cld, 'MYR', 'மலேஷியன் ரிங்கிட்',
-      one: 'மலேஷியன் ரிங்கிட்',
-      other: 'மலேஷியன் ரிங்கிட்கள்',
-      symbol: 'RM',
-      symbolNarrow: 'RM');
-  static const _sgd = Currency(_cld, 'SGD', 'சிங்கப்பூர் டாலர்',
-      one: 'சிங்கப்பூர் டாலர்',
-      other: 'சிங்கப்பூர் டாலர்கள்',
-      symbol: r'$',
-      symbolNarrow: r'$');
-  static const _usd = Currency(_cld, 'USD', 'அமெரிக்க டாலர்',
-      one: 'அமெரிக்க டாலர்',
-      other: 'அமெரிக்க டாலர்கள்',
-      symbol: r'US$',
-      symbolNarrow: r'$');
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'மலேஷியன் ரிங்கிட்',
+    one: 'மலேஷியன் ரிங்கிட்',
+    other: 'மலேஷியன் ரிங்கிட்கள்',
+    symbol: 'RM',
+    symbolNarrow: 'RM',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'சிங்கப்பூர் டாலர்',
+    one: 'சிங்கப்பூர் டாலர்',
+    other: 'சிங்கப்பூர் டாலர்கள்',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'அமெரிக்க டாலர்',
+    one: 'அமெரிக்க டாலர்',
+    other: 'அமெரிக்க டாலர்கள்',
+    symbol: r'US$',
+    symbolNarrow: r'$',
+  );
 
   @override
   Currency get myr => _myr;
@@ -57,13 +69,9 @@ class CurrenciesTaSG extends CurrenciesTa {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesTa.staticCurrencies,
-        ...const {
-          'MYR': _myr,
-          'SGD': _sgd,
-          'USD': _usd,
-        }
-      });
+    ...CurrenciesTa.staticCurrencies,
+    ...const {'MYR': _myr, 'SGD': _sgd, 'USD': _usd},
+  });
 }
 
 class TimeZonesTaSG extends TimeZonesTa {
@@ -71,16 +79,22 @@ class TimeZonesTaSG extends TimeZonesTa {
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesTa.staticMetaZoneNames,
-        ...const {
-          'India': MetaZone('India',
-              long: TimeZoneName(standard: 'இந்திய நிலையான நேரம்')),
-          'Malaysia': MetaZone('Malaysia',
-              long: TimeZoneName(standard: 'மலேஷிய நேரம்'),
-              short: TimeZoneName(standard: 'MYT')),
-          'Singapore': MetaZone('Singapore',
-              long: TimeZoneName(standard: 'சிங்கப்பூர் நிலையான நேரம்'),
-              short: TimeZoneName(standard: 'SGT')),
-        }
-      });
+    ...TimeZonesTa.staticMetaZoneNames,
+    ...const {
+      'India': MetaZone(
+        'India',
+        long: TimeZoneName(standard: 'இந்திய நிலையான நேரம்'),
+      ),
+      'Malaysia': MetaZone(
+        'Malaysia',
+        long: TimeZoneName(standard: 'மலேஷிய நேரம்'),
+        short: TimeZoneName(standard: 'MYT'),
+      ),
+      'Singapore': MetaZone(
+        'Singapore',
+        long: TimeZoneName(standard: 'சிங்கப்பூர் நிலையான நேரம்'),
+        short: TimeZoneName(standard: 'SGT'),
+      ),
+    },
+  });
 }

@@ -37,8 +37,10 @@ class TerritoriesRuUA extends TerritoriesRu {
   static const _hm = Territory('HM', 'О-ва Херд и Макдональд');
   static const _nf = Territory('NF', 'О-в Норфолк');
   static const _tl = Territory('TL', 'Тимор-Лесте', variant: 'Тимор-Лесте');
-  static const _um =
-      Territory('UM', 'Малые Тихоокеанские Отдаленные Острова США');
+  static const _um = Territory(
+    'UM',
+    'Малые Тихоокеанские Отдаленные Острова США',
+  );
 
   @override
   Territory get ac => _ac;
@@ -63,18 +65,18 @@ class TerritoriesRuUA extends TerritoriesRu {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesRu.staticTerritories,
-        ...const {
-          'AC': _ac,
-          'AE': _ae,
-          'BV': _bv,
-          'CK': _ck,
-          'CP': _cp,
-          'CX': _cx,
-          'HM': _hm,
-          'NF': _nf,
-          'TL': _tl,
-          'UM': _um,
-        }
-      });
+    ...TerritoriesRu.staticTerritories,
+    ...const {
+      'AC': _ac,
+      'AE': _ae,
+      'BV': _bv,
+      'CK': _ck,
+      'CP': _cp,
+      'CX': _cx,
+      'HM': _hm,
+      'NF': _nf,
+      'TL': _tl,
+      'UM': _um,
+    },
+  });
 }

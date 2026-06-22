@@ -39,27 +39,29 @@ class LanguagesTiER extends LanguagesTi {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesTi.staticLanguages,
-        ...const {
-          'sr': _sr,
-        }
-      });
+    ...LanguagesTi.staticLanguages,
+    ...const {'sr': _sr},
+  });
 }
 
 class CurrenciesTiER extends CurrenciesTi {
   const CurrenciesTiER(super.cld);
 
-  static const _ern = Currency(_cld, 'ERN', 'ኤርትራዊ ናቕፋ',
-      one: 'ኤርትራዊ ናቕፋ', other: 'ኤርትራዊ ናቕፋ', symbol: 'Nfk');
+  static const _ern = Currency(
+    _cld,
+    'ERN',
+    'ኤርትራዊ ናቕፋ',
+    one: 'ኤርትራዊ ናቕፋ',
+    other: 'ኤርትራዊ ናቕፋ',
+    symbol: 'Nfk',
+  );
 
   @override
   Currency get ern => _ern;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesTi.staticCurrencies,
-        ...const {
-          'ERN': _ern,
-        }
-      });
+    ...CurrenciesTi.staticCurrencies,
+    ...const {'ERN': _ern},
+  });
 }

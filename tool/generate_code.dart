@@ -17,53 +17,72 @@ import 'model/territory.dart';
 import 'model/timezone.dart';
 import 'model/units.dart';
 import 'model/variant.dart';
+import 'model/week_data.dart';
 import 'utils/case_format.dart';
 import 'utils/escape_dart_string.dart';
 import 'utils/generate_class.dart';
 import 'utils/split_words.dart';
 import 'utils/versions.dart';
 
-final _formatter = DartFormatter();
+final _formatter = DartFormatter(
+  languageVersion: DartFormatter.latestLanguageVersion,
+);
 
 Future<void> main() async {
   print('Generating common files');
 
   var dataDirectory = Directory('lib/src/data');
 
-  File('lib/common_locale_data_all.dart')
-      .writeAsStringSync(_format(generateCommonAll()));
+  File(
+    'lib/common_locale_data_all.dart',
+  ).writeAsStringSync(_format(generateCommonAll()));
 
-  File('lib/src/common_locale_data.dart')
-      .writeAsStringSync(_format(generateCommon()));
+  File(
+    'lib/src/common_locale_data.dart',
+  ).writeAsStringSync(_format(generateCommon()));
 
-  File('lib/src/locale.data.dart')
-      .writeAsStringSync(_format(generateLocaleData()));
-  File('lib/src/territory.data.dart')
-      .writeAsStringSync(_format(generateTerritoryData()));
-  File('lib/src/timezone.data.dart')
-      .writeAsStringSync(_format(generateTimeZoneData()));
+  File(
+    'lib/src/locale.data.dart',
+  ).writeAsStringSync(_format(generateLocaleData()));
+  File(
+    'lib/src/territory.data.dart',
+  ).writeAsStringSync(_format(generateTerritoryData()));
+  File(
+    'lib/src/timezone.data.dart',
+  ).writeAsStringSync(_format(generateTimeZoneData()));
 
-  File('lib/src/units.model.dart')
-      .writeAsStringSync(_format(generateUnitsModel()));
+  File(
+    'lib/src/units.model.dart',
+  ).writeAsStringSync(_format(generateUnitsModel()));
+
+  File(
+    'lib/src/week_data.g.dart',
+  ).writeAsStringSync(_format(generateWeekData()));
 
   File('lib/src/territories.model.dart').writeAsStringSync(
-      _format(updateTerritoriesModel('lib/src/territories.model.dart')));
+    _format(updateTerritoriesModel('lib/src/territories.model.dart')),
+  );
   File('lib/src/languages.model.dart').writeAsStringSync(
-      _format(updateLanguagesModel('lib/src/languages.model.dart')));
+    _format(updateLanguagesModel('lib/src/languages.model.dart')),
+  );
   File('lib/src/scripts.model.dart').writeAsStringSync(
-      _format(updateScriptsModel('lib/src/scripts.model.dart')));
+    _format(updateScriptsModel('lib/src/scripts.model.dart')),
+  );
   File('lib/src/variants.model.dart').writeAsStringSync(
-      _format(updateVariantsModel('lib/src/variants.model.dart')));
+    _format(updateVariantsModel('lib/src/variants.model.dart')),
+  );
   File('lib/src/currencies.model.dart').writeAsStringSync(
-      _format(updateCurrenciesModel('lib/src/currencies.model.dart')));
+    _format(updateCurrenciesModel('lib/src/currencies.model.dart')),
+  );
 
   if (dataDirectory.existsSync()) {
     dataDirectory.deleteSync(recursive: true);
   }
   dataDirectory.createSync(recursive: true);
 
-  for (var file in Directory('lib').listSync().whereType<File>().where((file) =>
-      RegExp(r'[/\\][a-z]{2,3}(_[a-z0-9]+)*.dart$').hasMatch(file.path))) {
+  for (var file in Directory('lib').listSync().whereType<File>().where(
+    (file) => RegExp(r'[/\\][a-z]{2,3}(_[a-z0-9]+)*.dart$').hasMatch(file.path),
+  )) {
     file.deleteSync();
   }
 
@@ -73,7 +92,7 @@ Future<void> main() async {
   if (true) {
     await Future.wait([
       for (var locale in Config.supportedLocales)
-        pool.withResource(() => Isolate.run(() => generateLocale(locale)))
+        pool.withResource(() => Isolate.run(() => generateLocale(locale))),
     ]);
     // ignore: dead_code
   } else {
@@ -118,7 +137,8 @@ Future<void> generateLocale(String locale) async {
       timezonesCode == null &&
       localeDisplayNameCode == null) {
     stderr.writeln(
-        '*** No difference found between locale: $locale and base locale: $baseLocale');
+      '*** No difference found between locale: $locale and base locale: $baseLocale',
+    );
   }
 
   var buffer = StringBuffer();
@@ -131,8 +151,9 @@ Future<void> generateLocale(String locale) async {
   export 'src/data/$localeSnakeCase.dart' show CommonLocaleData${locale.toUpperCamelCase()};
   ''');
 
-  unawaited(File('lib/$localeSnakeCase.dart')
-      .writeAsString(_format(buffer.toString())));
+  unawaited(
+    File('lib/$localeSnakeCase.dart').writeAsString(_format(buffer.toString())),
+  );
 
   buffer = StringBuffer();
 
@@ -257,8 +278,9 @@ Future<void> generateLocale(String locale) async {
   if (timezonesCode != null) buffer.writeln(timezonesCode);
   if (localeDisplayNameCode != null) buffer.writeln(localeDisplayNameCode);
 
-  await File('lib/src/data/$localeSnakeCase.dart')
-      .writeAsString(_format(buffer.toString()));
+  await File(
+    'lib/src/data/$localeSnakeCase.dart',
+  ).writeAsString(_format(buffer.toString()));
   return;
 }
 
@@ -279,6 +301,7 @@ import 'subdivisions.dart';
 import 'locale_display_name.dart';
 import 'units.dart';
 import 'timezones.dart';
+import 'week_data.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
@@ -335,6 +358,9 @@ abstract class CommonLocaleData {
 
   /// Localized locale display name fields.
   LocaleDisplayName get localeDisplayName;
+
+  /// Week conventions (first day of the week, weekend) for this locale.
+  WeekInfo get weekInfo => resolveWeekInfo(locale);
 ''');
 
   code.writeln('''
@@ -424,9 +450,9 @@ extension CommonLocaleDataAll on CommonLocaleData {
 
 String _format(String code) {
   try {
-    return reorderImports(_formatter.format(code))
-        .replaceAll('\r\n', '\n')
-        .replaceAll('\n', Platform.lineTerminator);
+    return reorderImports(
+      _formatter.format(code),
+    ).replaceAll('\r\n', '\n').replaceAll('\n', Platform.lineTerminator);
   } catch (e) {
     print('Fail to format code.\n$e');
     return code;

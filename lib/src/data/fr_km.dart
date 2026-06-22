@@ -28,20 +28,22 @@ class CommonLocaleDataFrKM extends CommonLocaleDataFr {
 class CurrenciesFrKM extends CurrenciesFr {
   const CurrenciesFrKM(super.cld);
 
-  static const _kmf = Currency(_cld, 'KMF', 'franc comorien',
-      one: 'franc comorien',
-      other: 'francs comoriens',
-      symbol: 'CF',
-      symbolNarrow: 'FC');
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'franc comorien',
+    one: 'franc comorien',
+    other: 'francs comoriens',
+    symbol: 'CF',
+    symbolNarrow: 'FC',
+  );
 
   @override
   Currency get kmf => _kmf;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesFr.staticCurrencies,
-        ...const {
-          'KMF': _kmf,
-        }
-      });
+    ...CurrenciesFr.staticCurrencies,
+    ...const {'KMF': _kmf},
+  });
 }

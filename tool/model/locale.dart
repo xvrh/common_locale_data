@@ -43,10 +43,7 @@ String generateLocaleData() {
     'transform_private_use',
     'variant',
   ]) {
-    bcp47.add(readJsonData(
-      'tool/data/bcp47/bcp47/$name.json',
-      'keyword',
-    ));
+    bcp47.add(readJsonData('tool/data/bcp47/bcp47/$name.json', 'keyword'));
   }
 
   // languageMatching.json as of Unicode 46 contains incomplete information
@@ -91,8 +88,8 @@ class LocaleData {
 
       for (var alias in aliases.entries) {
         var type = alias.key;
-        var value =
-            (alias.value as Map<String, dynamic>).cast<String, String>();
+        var value = (alias.value as Map<String, dynamic>)
+            .cast<String, String>();
         // var reason = value['_reason'];
         var replacement = value['_replacement'];
 
@@ -116,23 +113,32 @@ class LocaleData {
             } else {
               var uLocaleReplacements = replacement
                   .split(' ')
-                  .map((r) => switch (aliasType) {
-                        'languageAlias' => BaseLanguageId.parse(r),
-                        'scriptAlias' => BaseLanguageId(lang: 'und', script: r),
-                        'territoryAlias' =>
-                          BaseLanguageId(lang: 'und', region: r),
-                        'variantAlias' =>
-                          BaseLanguageId(lang: 'und', variants: [r]),
-                        _ => throw Exception('Unknown Alias Type $r'),
-                      })
+                  .map(
+                    (r) => switch (aliasType) {
+                      'languageAlias' => BaseLanguageId.parse(r),
+                      'scriptAlias' => BaseLanguageId(lang: 'und', script: r),
+                      'territoryAlias' => BaseLanguageId(
+                        lang: 'und',
+                        region: r,
+                      ),
+                      'variantAlias' => BaseLanguageId(
+                        lang: 'und',
+                        variants: [r],
+                      ),
+                      _ => throw Exception('Unknown Alias Type $r'),
+                    },
+                  )
                   .toList();
 
-              canonicalizationRules.add(LanguageCanonicalizationRule(
+              canonicalizationRules.add(
+                LanguageCanonicalizationRule(
                   lang: languageId.lang,
                   script: languageId.script,
                   region: languageId.region,
                   variants: languageId.variants,
-                  replacements: uLocaleReplacements));
+                  replacements: uLocaleReplacements,
+                ),
+              );
             }
           }
         }
@@ -159,7 +165,8 @@ class LocaleData {
   for (var r in canonicalizationRules.sorted()) {
     var args = languageIdToArgs(r.type);
     args.add(
-        'replacements: [${r.replacements.map((e) => languageIdToString(e)).join(', ')}]');
+      'replacements: [${r.replacements.map((e) => languageIdToString(e)).join(', ')}]',
+    );
 
     output.writeln('  LanguageCanonicalizationRule(${args.join(', ')}),');
   }
@@ -202,8 +209,10 @@ class LocaleData {
     } else if (i.keys.first.startsWith('\$')) {
       matchVariables[i.keys.first.substring(1)] = valueMap['_value'] as String;
     } else {
-      var desired =
-          (valueMap['_desired'] as String).split('-').cast<String?>().toList();
+      var desired = (valueMap['_desired'] as String)
+          .split('-')
+          .cast<String?>()
+          .toList();
       var len = desired.length;
       desired.length = 3;
       var supported = (valueMap['_supported'] as String)
@@ -212,22 +221,36 @@ class LocaleData {
           .toList();
       if (len != supported.length) {
         throw Exception(
-            'Cannot handle match rule with unequal components for desired and supported');
+          'Cannot handle match rule with unequal components for desired and supported',
+        );
       }
       supported.length = 3;
 
-      matchRules[len - 1].add(LanguageMatchRule(
+      matchRules[len - 1].add(
+        LanguageMatchRule(
           BaseLanguageId(
-              lang: desired[0], script: desired[1], region: desired[2]),
+            lang: desired[0],
+            script: desired[1],
+            region: desired[2],
+          ),
           BaseLanguageId(
-              lang: supported[0], script: supported[1], region: supported[2]),
+            lang: supported[0],
+            script: supported[1],
+            region: supported[2],
+          ),
           int.parse(valueMap['_distance'] as String),
-          (valueMap['_oneway'] as String?) == 'true'));
+          (valueMap['_oneway'] as String?) == 'true',
+        ),
+      );
     }
   }
 
-  var territoryMap = territoryContainment.map((key, value) => MapEntry(key,
-      ((value as Map<String, dynamic>)['_contains'] as List).cast<String>()));
+  var territoryMap = territoryContainment.map(
+    (key, value) => MapEntry(
+      key,
+      ((value as Map<String, dynamic>)['_contains'] as List).cast<String>(),
+    ),
+  );
 
   List<String> expandRegion(List<String> regions) {
     return regions
@@ -276,13 +299,15 @@ class LocaleData {
         var region = languageId.region;
         if (region != null) {
           var regions = expandRegion([region]);
-          return regions.map((e) => BaseLanguageId(
-                  lang: languageId.lang,
-                  script: languageId.script,
-                  region: e,
-                  variants: languageId.variants,
-                  remainder: languageId.remainder)
-              .toUnicode());
+          return regions.map(
+            (e) => BaseLanguageId(
+              lang: languageId.lang,
+              script: languageId.script,
+              region: e,
+              variants: languageId.variants,
+              remainder: languageId.remainder,
+            ).toUnicode(),
+          );
         } else {
           return [e];
         }
@@ -304,7 +329,8 @@ class LocaleData {
     var regions = expandRegionExpression(entry.value);
 
     output.writeln(
-        '${escapeDartString(from)}: {${regions.map((e) => escapeDartString(e)).join(',')}},');
+      '${escapeDartString(from)}: {${regions.map((e) => escapeDartString(e)).join(',')}},',
+    );
   }
 
   output.writeln('}, (key) => key.toLowerCase());');
@@ -314,10 +340,14 @@ class LocaleData {
   static final matchRules = <List<LanguageMatchRule>>[
   ''');
 
-  output.writeln(matchRules
-      .map((m) =>
-          '[${m.map((r) => 'LanguageMatchRule(${languageIdToString(r.desired)},${languageIdToString(r.supported)}, ${r.distance}${r.oneWay ? ", true" : ""})').join(',')}]')
-      .join(','));
+  output.writeln(
+    matchRules
+        .map(
+          (m) =>
+              '[${m.map((r) => 'LanguageMatchRule(${languageIdToString(r.desired)},${languageIdToString(r.supported)}, ${r.distance}${r.oneWay ? ", true" : ""})').join(',')}]',
+        )
+        .join(','),
+  );
 
   output.writeln('];');
 
@@ -328,18 +358,19 @@ class LocaleData {
       for (var key in (extension.value as Map<String, dynamic>).entries) {
         var keyValues = key.value as Map<String, dynamic>;
         var keyAliasesString = keyValues['_alias'] as String? ?? '';
-        var valueType = switch (
-            (keyValues['_valueType'] as String? ?? 'single').toLowerCase()) {
+        var valueType = switch ((keyValues['_valueType'] as String? ?? 'single')
+            .toLowerCase()) {
           'single' => ValueType.single,
           'multiple' => ValueType.multiple,
           'any' => ValueType.any,
           'incremental' => ValueType.incremental,
-          _ => throw Exception('Unknown valueType')
+          _ => throw Exception('Unknown valueType'),
         };
         var keyType = KeyType.regular;
 
-        var valueAliases =
-            CanonicalizedMap<String, String, String>((e) => e.toLowerCase());
+        var valueAliases = CanonicalizedMap<String, String, String>(
+          (e) => e.toLowerCase(),
+        );
 
         // possible values: not currently used
         var values = <String>[];
@@ -353,19 +384,21 @@ class LocaleData {
               'SCRIPT_CODE' => KeyType.scriptCode,
               'SUBDIVISION_CODE' => KeyType.subdivisionCode,
               'PRIVATE_USE' => KeyType.privateUse,
-              _ => throw Exception('Unknown keyType')
+              _ => throw Exception('Unknown keyType'),
             };
           } else if (key.key == 'tz') {
             keyType = KeyType.timeZone;
           } else if (key.key == 'cu') {
             keyType = KeyType.currency;
           } else if (!value.key.startsWith('_')) {
-            var deprecated = ((value.value
-                    as Map<String, dynamic>)['_deprecated'] as bool?) ==
+            var deprecated =
+                ((value.value as Map<String, dynamic>)['_deprecated']
+                    as bool?) ==
                 true;
 
-            var preferredString = (value.value
-                    as Map<String, dynamic>)['_preferred'] as String? ??
+            var preferredString =
+                (value.value as Map<String, dynamic>)['_preferred']
+                    as String? ??
                 '';
 
             if (deprecated && preferredString.isNotEmpty) {
@@ -375,7 +408,7 @@ class LocaleData {
 
               var valueAliasesString =
                   (value.value as Map<String, dynamic>)['_alias'] as String? ??
-                      '';
+                  '';
 
               for (var valueAlias in valueAliasesString.split(' ')) {
                 if (valueAlias.isNotEmpty &&
@@ -388,12 +421,16 @@ class LocaleData {
         }
 
         var extensionKey = ExtensionKey(
-            keyType: keyType, valueType: valueType, valueAliases: valueAliases);
+          keyType: keyType,
+          valueType: valueType,
+          valueAliases: valueAliases,
+        );
 
         if (keys[extension.key] == null) {
           keys[extension.key] = ExtensionKeys(
-              CanonicalizedMap((e) => e.toLowerCase()),
-              CanonicalizedMap((e) => e.toLowerCase()));
+            CanonicalizedMap((e) => e.toLowerCase()),
+            CanonicalizedMap((e) => e.toLowerCase()),
+          );
         }
         keys[extension.key]!.keys[key.key] = extensionKey;
         var extensionKeys = keys[extension.key]!;
@@ -428,10 +465,12 @@ class LocaleData {
       }
       if (key.value.valueAliases.isNotEmpty) {
         output.writeln(
-            ' valueAliases: CanonicalizedMap<String, String, String>.from({');
+          ' valueAliases: CanonicalizedMap<String, String, String>.from({',
+        );
         for (var alias in key.value.valueAliases.entries) {
           output.writeln(
-              '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},');
+            '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},',
+          );
         }
         output.writeln('}, (key) => key.toLowerCase()),');
       }
@@ -443,7 +482,8 @@ class LocaleData {
 
     for (var alias in extension.value.keyAliases.entries) {
       output.writeln(
-          '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},');
+        '${escapeDartString(alias.key)}: ${escapeDartString(alias.value)},',
+      );
     }
     output.writeln('}, (key) => key.toLowerCase())');
     output.writeln('),');
@@ -464,7 +504,8 @@ List<String> languageIdToArgs(BaseLanguageId m) {
   if (m.region != null) args.add('region: ${escapeDartString(m.region!)}');
   if (m.variants.isNotEmpty) {
     args.add(
-        'variants: [${m.variants.map((e) => escapeDartString(e)).join(', ')}]');
+      'variants: [${m.variants.map((e) => escapeDartString(e)).join(', ')}]',
+    );
   }
   return args;
 }

@@ -75,23 +75,23 @@ class LanguagesSrCyrlXK extends LanguagesSrCyrl {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesSrCyrl.staticLanguages,
-        ...const {
-          'bm': _bm,
-          'bn': _bn,
-          'ff': _ff,
-          'gsw': _gsw,
-          'ht': _ht,
-          'lo': _lo,
-          'moh': _moh,
-          'nqo': _nqo,
-          'shi': _shi,
-          'si': _si,
-          'xh': _xh,
-          'zgh': _zgh,
-          'zu': _zu,
-        }
-      });
+    ...LanguagesSrCyrl.staticLanguages,
+    ...const {
+      'bm': _bm,
+      'bn': _bn,
+      'ff': _ff,
+      'gsw': _gsw,
+      'ht': _ht,
+      'lo': _lo,
+      'moh': _moh,
+      'nqo': _nqo,
+      'shi': _shi,
+      'si': _si,
+      'xh': _xh,
+      'zgh': _zgh,
+      'zu': _zu,
+    },
+  });
 }
 
 class TerritoriesSrCyrlXK extends TerritoriesSrCyrl {
@@ -99,8 +99,11 @@ class TerritoriesSrCyrlXK extends TerritoriesSrCyrl {
 
   static const _cg = Territory('CG', 'Конго', variant: 'Конго (Република)');
   static const _cv = Territory('CV', 'Кабо Верде');
-  static const _cz =
-      Territory('CZ', 'Чешка Република', variant: 'Чешка Република');
+  static const _cz = Territory(
+    'CZ',
+    'Чешка Република',
+    variant: 'Чешка Република',
+  );
   static const _hk = Territory('HK', 'САР Хонгконг', short: 'Хонгконг');
   static const _kn = Territory('KN', 'Свети Китс и Невис');
   static const _mo = Territory('MO', 'САР Макао', short: 'Макао');
@@ -132,18 +135,18 @@ class TerritoriesSrCyrlXK extends TerritoriesSrCyrl {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesSrCyrl.staticTerritories,
-        ...const {
-          'CG': _cg,
-          'CV': _cv,
-          'CZ': _cz,
-          'HK': _hk,
-          'KN': _kn,
-          'MO': _mo,
-          'PM': _pm,
-          'RE': _re,
-          'UM': _um,
-          'VC': _vc,
-        }
-      });
+    ...TerritoriesSrCyrl.staticTerritories,
+    ...const {
+      'CG': _cg,
+      'CV': _cv,
+      'CZ': _cz,
+      'HK': _hk,
+      'KN': _kn,
+      'MO': _mo,
+      'PM': _pm,
+      'RE': _re,
+      'UM': _um,
+      'VC': _vc,
+    },
+  });
 }

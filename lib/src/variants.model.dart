@@ -26,7 +26,7 @@ abstract class Variants {
     return variants[code?.toUpperCase()];
   }
 
-// FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
+  // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 
   /// Localized name for Traditional German orthography.
   Variant get $1901 => const Variant('1901', '1901');

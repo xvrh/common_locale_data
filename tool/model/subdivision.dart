@@ -24,7 +24,13 @@ String? generateSubdivisions(String locale) {
       .toSet();
 
   var constMap = generateConstMap(
-      set, baseSet, 'String', 'Subdivisions', 'Subdivisions', baseLocale);
+    set,
+    baseSet,
+    'String',
+    'Subdivisions',
+    'Subdivisions',
+    baseLocale,
+  );
 
   if (constMap != null) {
     buffer.writeln('''
@@ -47,14 +53,22 @@ Map<String, String> readSubdivisions(String locale) {
   var fileNames = {
     languageId.toUnicodeCLDR(),
     languageId.toUnicodeBCP47(),
-    BaseLanguageId(lang: languageId.lang, region: languageId.region)
-        .toUnicodeCLDR(),
-    BaseLanguageId(lang: languageId.lang, region: languageId.region)
-        .toUnicodeBCP47(),
-    BaseLanguageId(lang: languageId.lang, script: languageId.script)
-        .toUnicodeCLDR(),
-    BaseLanguageId(lang: languageId.lang, script: languageId.script)
-        .toUnicodeBCP47(),
+    BaseLanguageId(
+      lang: languageId.lang,
+      region: languageId.region,
+    ).toUnicodeCLDR(),
+    BaseLanguageId(
+      lang: languageId.lang,
+      region: languageId.region,
+    ).toUnicodeBCP47(),
+    BaseLanguageId(
+      lang: languageId.lang,
+      script: languageId.script,
+    ).toUnicodeCLDR(),
+    BaseLanguageId(
+      lang: languageId.lang,
+      script: languageId.script,
+    ).toUnicodeBCP47(),
     BaseLanguageId(lang: languageId.lang).toUnicodeBCP47(),
   };
 
@@ -63,8 +77,9 @@ Map<String, String> readSubdivisions(String locale) {
     file = File(p.join('tool/data/subdivisions/$fileName.json'));
     if (file.existsSync()) {
       return readJsonData(
-              file.path, 'subdivisions/localeDisplayNames/subdivisions')
-          .cast();
+        file.path,
+        'subdivisions/localeDisplayNames/subdivisions',
+      ).cast();
     }
   }
 
@@ -75,8 +90,9 @@ Map<String, String> readSubdivisions(String locale) {
       file = File(p.join('tool/data_manual/subdivisions/$fileName.json'));
       if (file.existsSync()) {
         return readJsonData(
-                file.path, 'subdivisions/localeDisplayNames/subdivisions')
-            .cast();
+          file.path,
+          'subdivisions/localeDisplayNames/subdivisions',
+        ).cast();
       }
     }
   }

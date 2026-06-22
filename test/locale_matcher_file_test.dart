@@ -61,43 +61,49 @@ void expectString(
   required int lineNr,
 }) {
   test(
-      '$desired, $supported => $expectedSupported, $expectedDesired, $expectedCombined, '
-      '${defaultLocale != null ? "defaultLocale: $defaultLocale, " : ""}'
-      '${favorScript ? "favorScript" : ""}'
-      '${ignoreFallback ? "ignoreFallback" : ""}'
-      '${threshold != null ? "threshold: $threshold, " : ""}'
-      ' (line: $lineNr)',
-      skip: skipReason, () {
-    var res = LocaleMatcher(
-      toLocales(supported),
-      defaultLocale:
-          defaultLocale != null ? LocaleId.parse(defaultLocale) : null,
-      threshold: threshold,
-    ).getBestMatch(
-      toLocales(desired),
-      ignoreFallback: ignoreFallback,
-      favorScript: favorScript,
-    );
+    '$desired, $supported => $expectedSupported, $expectedDesired, $expectedCombined, '
+    '${defaultLocale != null ? "defaultLocale: $defaultLocale, " : ""}'
+    '${favorScript ? "favorScript" : ""}'
+    '${ignoreFallback ? "ignoreFallback" : ""}'
+    '${threshold != null ? "threshold: $threshold, " : ""}'
+    ' (line: $lineNr)',
+    skip: skipReason,
+    () {
+      var res =
+          LocaleMatcher(
+            toLocales(supported),
+            defaultLocale: defaultLocale != null
+                ? LocaleId.parse(defaultLocale)
+                : null,
+            threshold: threshold,
+          ).getBestMatch(
+            toLocales(desired),
+            ignoreFallback: ignoreFallback,
+            favorScript: favorScript,
+          );
 
-    var supportedLocale = res.supportedLocale as LocaleId?;
-    if (supportedLocale?.isGrandfatheredIrregular == true) {
-      supportedLocale = supportedLocale?.canonicalize();
-    }
+      var supportedLocale = res.supportedLocale as LocaleId?;
+      if (supportedLocale?.isGrandfatheredIrregular == true) {
+        supportedLocale = supportedLocale?.canonicalize();
+      }
 
-    var desiredLocale = res.desiredLocale as LocaleId?;
-    if (desiredLocale?.isGrandfatheredIrregular == true) {
-      desiredLocale = desiredLocale?.canonicalize();
-    }
+      var desiredLocale = res.desiredLocale as LocaleId?;
+      if (desiredLocale?.isGrandfatheredIrregular == true) {
+        desiredLocale = desiredLocale?.canonicalize();
+      }
 
-    expect(supportedLocale,
-        expectedSupported == null ? null : LocaleId.parse(expectedSupported));
-    if (expectedDesired != null) {
-      expect(desiredLocale, LocaleId.parse(expectedDesired));
-    }
-    if (expectedCombined != null) {
-      expect(res.combinedLocale, LocaleId.parse(expectedCombined));
-    }
-  });
+      expect(
+        supportedLocale,
+        expectedSupported == null ? null : LocaleId.parse(expectedSupported),
+      );
+      if (expectedDesired != null) {
+        expect(desiredLocale, LocaleId.parse(expectedDesired));
+      }
+      if (expectedCombined != null) {
+        expect(res.combinedLocale, LocaleId.parse(expectedCombined));
+      }
+    },
+  );
 }
 
 Future<List<(String, List<Entry>)>> readDataFile() async {
@@ -130,8 +136,12 @@ Future<List<(String, List<Entry>)>> readDataFile() async {
       threshold = null;
       supported = [];
     } else if (line.startsWith('@supported=')) {
-      supported =
-          line.split('=')[1].trim().split(',').map((s) => s.trim()).toList();
+      supported = line
+          .split('=')[1]
+          .trim()
+          .split(',')
+          .map((s) => s.trim())
+          .toList();
     } else if (line.startsWith('@favor=')) {
       favorScript = line.split('=')[1].trim() == 'script';
     } else if (line.startsWith('@default=')) {
@@ -146,17 +156,17 @@ Future<List<(String, List<Entry>)>> readDataFile() async {
       var expectedParts = parts[1].split('|').map((e) => e.trim()).toList();
       var expectedSupported =
           expectedParts[0] == 'null' || expectedParts[0].isEmpty
-              ? null
-              : expectedParts[0];
+          ? null
+          : expectedParts[0];
       var expectedDesired = expectedParts.length >= 2
           ? expectedParts[1] == 'null' || expectedParts[1].isEmpty
-              ? null
-              : expectedParts[1]
+                ? null
+                : expectedParts[1]
           : null;
       var expectedCombined = expectedParts.length >= 3
           ? expectedParts[2] == 'null' || expectedParts[2].isEmpty
-              ? null
-              : expectedParts[2]
+                ? null
+                : expectedParts[2]
           : null;
       group.add((
         lineNr: lineNr + 1,

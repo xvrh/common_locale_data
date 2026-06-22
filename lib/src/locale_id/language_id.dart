@@ -11,22 +11,24 @@ final _regExpSeparator = RegExp(r'[-_]');
 /// {@category Locales}
 class LanguageId extends BaseLanguageId {
   /// Create a new [LanguageId] from the constituent fields.
-  LanguageId(
-      {super.lang,
-      super.script,
-      super.region,
-      super.variants = const [],
-      super.remainder});
+  LanguageId({
+    super.lang,
+    super.script,
+    super.region,
+    super.variants = const [],
+    super.remainder,
+  });
 
   /// Parse the input into a [LocaleId]
   factory LanguageId.parse(String input) {
     var res = BaseLanguageId.parse(input);
     return LanguageId(
-        lang: res.lang,
-        script: res.script,
-        region: res.region,
-        variants: res.variants,
-        remainder: res.remainder);
+      lang: res.lang,
+      script: res.script,
+      region: res.region,
+      variants: res.variants,
+      remainder: res.remainder,
+    );
   }
 
   /// Legacy BCP47 language tag
@@ -63,10 +65,11 @@ class LanguageId extends BaseLanguageId {
     var casedVariants = variants.map((e) => e.toLowerCase()).toSet().sorted();
 
     var source = LanguageId(
-        lang: casedLang,
-        script: casedScript,
-        region: casedRegion,
-        variants: casedVariants);
+      lang: casedLang,
+      script: casedScript,
+      region: casedRegion,
+      variants: casedVariants,
+    );
 
     var canonical = _applyRules(source, LocaleData.canonicalizationRules);
 
@@ -75,14 +78,17 @@ class LanguageId extends BaseLanguageId {
     var newVariants = canonical.variants.toSet().sorted();
 
     return LanguageId(
-        lang: canonical.lang,
-        script: canonical.script,
-        region: canonical.region,
-        variants: List.unmodifiable(newVariants));
+      lang: canonical.lang,
+      script: canonical.script,
+      region: canonical.region,
+      variants: List.unmodifiable(newVariants),
+    );
   }
 
   static BaseLanguageId _applyRules(
-      LanguageId source, Iterable<LanguageCanonicalizationRule> rules) {
+    LanguageId source,
+    Iterable<LanguageCanonicalizationRule> rules,
+  ) {
     var replaced = false;
     do {
       replaced = false;
@@ -93,17 +99,20 @@ class LanguageId extends BaseLanguageId {
         var replacement = rule.replacements[0];
         if (rule.type.region != null ||
             source.region == null && rule.replacements.length > 1) {
-          var region = LanguageId(lang: source.lang, script: source.script)
-              .addLikelySubTags()
-              .region;
-          replacement = rule.replacements.firstWhereOrNull(
-                  (e) => e.region?.toUpperCase() == region?.toUpperCase()) ??
+          var region = LanguageId(
+            lang: source.lang,
+            script: source.script,
+          ).addLikelySubTags().region;
+          replacement =
+              rule.replacements.firstWhereOrNull(
+                (e) => e.region?.toUpperCase() == region?.toUpperCase(),
+              ) ??
               replacement;
         }
         var resLang =
             (rule.type.lang != null || source.langOrNullIfUndefined == null)
-                ? replacement.lang
-                : source.lang;
+            ? replacement.lang
+            : source.lang;
 
         var resScript = (rule.type.script != null || source.script == null)
             ? replacement.script
@@ -123,10 +132,11 @@ class LanguageId extends BaseLanguageId {
           resVariants = replacement.variants;
         }
         source = LanguageId(
-            lang: resLang,
-            script: resScript,
-            region: resRegion,
-            variants: resVariants);
+          lang: resLang,
+          script: resScript,
+          region: resRegion,
+          variants: resVariants,
+        );
         replaced = true;
         break;
       }
@@ -153,16 +163,17 @@ class LanguageId extends BaseLanguageId {
 
     var replacement =
         LocaleData.likelySubtags['${lang ?? "und"}_${script}_$region'] ??
-            LocaleData.likelySubtags['${lang ?? "und"}_$script'] ??
-            LocaleData.likelySubtags['${lang ?? "und"}_$region'] ??
-            LocaleData.likelySubtags[lang ?? 'und'] ??
-            LanguageId();
+        LocaleData.likelySubtags['${lang ?? "und"}_$script'] ??
+        LocaleData.likelySubtags['${lang ?? "und"}_$region'] ??
+        LocaleData.likelySubtags[lang ?? 'und'] ??
+        LanguageId();
 
     return LanguageId(
-        lang: lang ?? replacement.lang,
-        script: script ?? replacement.script,
-        region: region ?? replacement.region,
-        variants: from.variants);
+      lang: lang ?? replacement.lang,
+      script: script ?? replacement.script,
+      region: region ?? replacement.region,
+      variants: from.variants,
+    );
   }
 
   /// Return a [LanguageId] with likely sub tags removes.
@@ -182,39 +193,48 @@ class LanguageId extends BaseLanguageId {
     }
 
     if (favorScript) {
-      var trialLangScript =
-          LanguageId(lang: max.lang, script: max.script).addLikelySubTags();
+      var trialLangScript = LanguageId(
+        lang: max.lang,
+        script: max.script,
+      ).addLikelySubTags();
       if (trialLangScript.lang == max.lang &&
           trialLangScript.script == max.script &&
           trialLangScript.region == max.region) {
         return LanguageId(
-            lang: trialLangScript.lang,
-            script: trialLangScript.script,
-            variants: variants);
+          lang: trialLangScript.lang,
+          script: trialLangScript.script,
+          variants: variants,
+        );
       }
     }
 
-    var trialLangRegion =
-        LanguageId(lang: max.lang, region: max.region).addLikelySubTags();
+    var trialLangRegion = LanguageId(
+      lang: max.lang,
+      region: max.region,
+    ).addLikelySubTags();
     if (trialLangRegion.lang == max.lang &&
         trialLangRegion.script == max.script &&
         trialLangRegion.region == max.region) {
       return LanguageId(
-          lang: trialLangRegion.lang,
-          region: trialLangRegion.region,
-          variants: variants);
+        lang: trialLangRegion.lang,
+        region: trialLangRegion.region,
+        variants: variants,
+      );
     }
 
     if (!favorScript) {
-      var trialLangScript =
-          LanguageId(lang: max.lang, script: max.script).addLikelySubTags();
+      var trialLangScript = LanguageId(
+        lang: max.lang,
+        script: max.script,
+      ).addLikelySubTags();
       if (trialLangScript.lang == max.lang &&
           trialLangScript.script == max.script &&
           trialLangScript.region == max.region) {
         return LanguageId(
-            lang: trialLangScript.lang,
-            script: trialLangScript.script,
-            variants: variants);
+          lang: trialLangScript.lang,
+          script: trialLangScript.script,
+          variants: variants,
+        );
       }
     }
     return max;
@@ -248,16 +268,21 @@ extension LanguageMatchRuleMatches on LanguageMatchRule {
     matched &= _matchSubTag(this.desired.script, desired.script);
     matched &= _matchSubTag(this.supported.script, supported.script);
 
-    matched &= _matchSubTag(this.desired.region, desired.region) ||
+    matched &=
+        _matchSubTag(this.desired.region, desired.region) ||
         _regionInMatchVariables(this.desired.region, desired.region);
-    matched &= _matchSubTag(this.supported.region, supported.region) ||
+    matched &=
+        _matchSubTag(this.supported.region, supported.region) ||
         _regionInMatchVariables(this.supported.region, supported.region);
 
     return matched;
   }
 
-  bool matches(BaseLanguageId desired, BaseLanguageId supported,
-      {bool ignoreFallback = false}) {
+  bool matches(
+    BaseLanguageId desired,
+    BaseLanguageId supported, {
+    bool ignoreFallback = false,
+  }) {
     if (oneWay && ignoreFallback) return false;
     if (_matchesOneWay(desired, supported)) return true;
     if (oneWay) return false;

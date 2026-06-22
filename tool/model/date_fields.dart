@@ -21,14 +21,17 @@ const _weekdayMap = {
 String? generateDateFields(String locale) {
   var buffer = StringBuffer();
   var data = readJsonData(
-      'tool/data/dates/dateFields/$locale.json', 'main/$locale/dates/fields');
+    'tool/data/dates/dateFields/$locale.json',
+    'main/$locale/dates/fields',
+  );
 
   var baseLocale = getBaseLocale(locale);
   Map<String, Map<String, dynamic>>? baseData;
   if (baseLocale != null) {
-    baseData = readJsonData('tool/data/dates/dateFields/$baseLocale.json',
-            'main/$baseLocale/dates/fields')
-        .cast<String, Map<String, dynamic>>();
+    baseData = readJsonData(
+      'tool/data/dates/dateFields/$baseLocale.json',
+      'main/$baseLocale/dates/fields',
+    ).cast<String, Map<String, dynamic>>();
   }
 
   buffer.writeln('''
@@ -61,22 +64,24 @@ String generateFieldCode(String key, Map<String, dynamic> dateFields) {
   var fieldName = _weekdayMap[key] ?? key;
 
   String eachLength(String Function(DateField) callback) {
-    return _lengths.entries.map((l) {
-      var fieldJson = dateFields['$key${l.value}'] as Map<String, dynamic>?;
-      if (fieldJson == null) throw Exception('$key ${l.key} is null');
-      var field = DateField.fromJson(fieldJson);
-      var result = callback(field);
-      return '${l.key}: $result,';
-    }).join('');
+    return _lengths.entries
+        .map((l) {
+          var fieldJson = dateFields['$key${l.value}'] as Map<String, dynamic>?;
+          if (fieldJson == null) throw Exception('$key ${l.key} is null');
+          var field = DateField.fromJson(fieldJson);
+          var result = callback(field);
+          return '${l.key}: $result,';
+        })
+        .join('');
   }
 
   String multi(String? Function(DateField) callback) {
-    return 'const MultiLength(${eachLength((f) => escapeDartString(callback(f)!))})';
+    return 'MultiLength(${eachLength((f) => escapeDartString(callback(f)!))})';
   }
 
   String relative(RelativeTimePattern Function(DateField) callbackRelative) {
-    return 'const MultiLengthRelativeTime(${eachLength((f) {
-      var code = "const RelativeTime(_locale,";
+    return 'MultiLengthRelativeTime(${eachLength((f) {
+      var code = "RelativeTime(_locale,";
       var relative = callbackRelative(f);
       for (var plural in _plurals) {
         var pluralValue = relative.getForName(plural);
@@ -92,7 +97,7 @@ String generateFieldCode(String key, Map<String, dynamic> dateFields) {
   String fieldCode;
   String returnType;
   if (field.relativeType0 == null) {
-    fieldCode = multi((f) => f.displayName);
+    fieldCode = 'const ${multi((f) => f.displayName)}';
     returnType = 'MultiLength';
   } else {
     var parameters = {
@@ -157,8 +162,14 @@ class DateField {
 
 @JsonSerializable(createToJson: false)
 class RelativeTimePattern {
-  RelativeTimePattern(this.countZero, this.countOne, this.countTwo,
-      this.countFew, this.countMany, this.countOther);
+  RelativeTimePattern(
+    this.countZero,
+    this.countOne,
+    this.countTwo,
+    this.countFew,
+    this.countMany,
+    this.countOther,
+  );
 
   static RelativeTimePattern fromJson(Map<String, dynamic> json) =>
       _$RelativeTimePatternFromJson(json);
@@ -182,11 +193,11 @@ class RelativeTimePattern {
   String countOther;
 
   String? getForName(String name) => {
-        'zero': countZero,
-        'one': countOne,
-        'two': countTwo,
-        'few': countFew,
-        'many': countMany,
-        'other': countOther,
-      }[name];
+    'zero': countZero,
+    'one': countOne,
+    'two': countTwo,
+    'few': countFew,
+    'many': countMany,
+    'other': countOther,
+  }[name];
 }

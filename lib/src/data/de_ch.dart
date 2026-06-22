@@ -58,218 +58,170 @@ class UnitsDeCH extends UnitsDe {
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Quadratfuss',
-          one: '{0} Quadratfuss',
-          other: '{0} Quadratfuss',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ft²',
-          one: '{0} Quadratfuss',
-          other: '{0} ft²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft²',
-          one: '{0} Quadratfuss',
-          other: '{0} ft²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Quadratfuss',
+      one: '{0} Quadratfuss',
+      other: '{0} Quadratfuss',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ft²',
+      one: '{0} Quadratfuss',
+      other: '{0} ft²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft²',
+      one: '{0} Quadratfuss',
+      other: '{0} ft²',
+    ),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Quartal',
-          one: '{0} Quartal',
-          other: '{0} Quartale',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Quartal',
-          one: '{0} Quart.',
-          other: '{0} Quart.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Q',
-          one: '{0} Q',
-          other: '{0} Q',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Quartal',
+      one: '{0} Quartal',
+      other: '{0} Quartale',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Quartal',
+      one: '{0} Quart.',
+      other: '{0} Quart.',
+    ),
+    narrow: UnitCountPattern(_locale, 'Q', one: '{0} Q', other: '{0} Q'),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Fuss',
-          one: '{0} Fuss',
-          other: '{0} Fuss',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Fuss',
-          one: '{0} Fuss',
-          other: '{0} ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft',
-          one: '{0} Fuss',
-          other: '{0} ft',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'Fuss', one: '{0} Fuss', other: '{0} Fuss'),
+    short: UnitCountPattern(_locale, 'Fuss', one: '{0} Fuss', other: '{0} ft'),
+    narrow: UnitCountPattern(_locale, 'ft', one: '{0} Fuss', other: '{0} ft'),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Beaufort',
-          one: '{0} Beaufort',
-          other: '{0} Beaufort',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: '{0} Bft',
-          other: '{0} Bft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: '{0} Bft',
-          other: '{0} Bft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Beaufort',
+      one: '{0} Beaufort',
+      other: '{0} Beaufort',
+    ),
+    short: UnitCountPattern(_locale, 'Bft', one: '{0} Bft', other: '{0} Bft'),
+    narrow: UnitCountPattern(_locale, 'Bft', one: '{0} Bft', other: '{0} Bft'),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Kubikfuss',
-          one: '{0} Kubikfuss',
-          other: '{0} Kubikfuss',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} Kubikfuss',
-          other: '{0} ft³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} Kubikfuss',
-          other: '{0} ft³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Kubikfuss',
+      one: '{0} Kubikfuss',
+      other: '{0} Kubikfuss',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} Kubikfuss',
+      other: '{0} ft³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} Kubikfuss',
+      other: '{0} ft³',
+    ),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Dram',
-          one: '{0} Dram',
-          other: '{0} Dram',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Dram',
-          one: '{0} dr.',
-          other: '{0} dr.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl.dr.',
-          one: '{0} fl.dr.',
-          other: '{0} fl.dr.',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'Dram', one: '{0} Dram', other: '{0} Dram'),
+    short: UnitCountPattern(_locale, 'Dram', one: '{0} dr.', other: '{0} dr.'),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl.dr.',
+      one: '{0} fl.dr.',
+      other: '{0} fl.dr.',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Schuss',
-          one: '{0} Jigger',
-          other: '{0} Jigger',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Schuss',
-          one: '{0} Schuss',
-          other: '{0} Schuss',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Schuss',
-          one: '{0} Schuss',
-          other: '{0} Schuss',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Schuss',
+      one: '{0} Jigger',
+      other: '{0} Jigger',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Schuss',
+      one: '{0} Schuss',
+      other: '{0} Schuss',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Schuss',
+      one: '{0} Schuss',
+      other: '{0} Schuss',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Prise',
-          one: '{0} Prise',
-          other: '{0} Prisen',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Prise',
-          one: '{0} Prise',
-          other: '{0} Prise',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Pr.',
-          one: '{0} Pr',
-          other: '{0} Pr',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Prise',
+      one: '{0} Prise',
+      other: '{0} Prisen',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Prise',
+      one: '{0} Prise',
+      other: '{0} Prise',
+    ),
+    narrow: UnitCountPattern(_locale, 'Pr.', one: '{0} Pr', other: '{0} Pr'),
+  );
 }
 
 class DateFieldsDeCH extends DateFieldsDe {
   const DateFieldsDeCH(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'Epoche',
-        short: 'Ep.',
-        narrow: 'Epoche',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'Epoche', short: 'Ep.', narrow: 'Epoche');
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'Woche im Monat',
-        short: 'Wo. i. M.',
-        narrow: 'W. i. Mon.',
-      );
+    long: 'Woche im Monat',
+    short: 'Wo. i. M.',
+    narrow: 'W. i. Mon.',
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'Tag des Jahres',
-        short: 'Tag d. J.',
-        narrow: 'T/J',
-      );
+    long: 'Tag des Jahres',
+    short: 'Tag d. J.',
+    narrow: 'T/J',
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'Wochentag',
-        short: 'Wochentag',
-        narrow: 'Wochentag',
-      );
+    long: 'Wochentag',
+    short: 'Wochentag',
+    narrow: 'Wochentag',
+  );
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'Wochentag im Monat',
-        short: 'Wochent. i. Mo.',
-        narrow: 'Wochent. i. Mon.',
-      );
+    long: 'Wochentag im Monat',
+    short: 'Wochent. i. Mo.',
+    narrow: 'Wochent. i. Mon.',
+  );
 }
 
 class LanguagesDeCH extends LanguagesDe {
@@ -306,19 +258,19 @@ class LanguagesDeCH extends LanguagesDe {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesDe.staticLanguages,
-        ...const {
-          'ach': _ach,
-          'bik': _bik,
-          'chb': _chb,
-          'din': _din,
-          'fan': _fan,
-          'gba': _gba,
-          'prg': _prg,
-          'rhg': _rhg,
-          'tgx': _tgx,
-        }
-      });
+    ...LanguagesDe.staticLanguages,
+    ...const {
+      'ach': _ach,
+      'bik': _bik,
+      'chb': _chb,
+      'din': _din,
+      'fan': _fan,
+      'gba': _gba,
+      'prg': _prg,
+      'rhg': _rhg,
+      'tgx': _tgx,
+    },
+  });
 }
 
 class TerritoriesDeCH extends TerritoriesDe {
@@ -354,18 +306,18 @@ class TerritoriesDeCH extends TerritoriesDe {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesDe.staticTerritories,
-        ...const {
-          'BN': _bn,
-          'BW': _bw,
-          'CV': _cv,
-          'QO': _qo,
-          'SB': _sb,
-          'TL': _tl,
-          'TR': _tr,
-          'ZW': _zw,
-        }
-      });
+    ...TerritoriesDe.staticTerritories,
+    ...const {
+      'BN': _bn,
+      'BW': _bw,
+      'CV': _cv,
+      'QO': _qo,
+      'SB': _sb,
+      'TL': _tl,
+      'TR': _tr,
+      'ZW': _zw,
+    },
+  });
 }
 
 class SubdivisionsDeCH extends SubdivisionsDe {
@@ -373,33 +325,50 @@ class SubdivisionsDeCH extends SubdivisionsDe {
 
   @override
   Map<String, String> get subdivisions => Map.unmodifiable({
-        ...SubdivisionsDe.staticSubdivisions,
-        ...const {
-          'char': 'Appenzell Ausserrhoden',
-          'gbels': 'Äussere Hebriden',
-          'gbgbn': 'Grossbritannien',
-          'me16': 'Grossgemeinde Podgorica',
-          'pl30': 'Woiwodschaft Grosspolen',
-        }
-      });
+    ...SubdivisionsDe.staticSubdivisions,
+    ...const {
+      'char': 'Appenzell Ausserrhoden',
+      'gbels': 'Äussere Hebriden',
+      'gbgbn': 'Grossbritannien',
+      'me16': 'Grossgemeinde Podgorica',
+      'pl30': 'Woiwodschaft Grosspolen',
+    },
+  });
 }
 
 class CurrenciesDeCH extends CurrenciesDe {
   const CurrenciesDeCH(super.cld);
 
-  static const _byn = Currency(_cld, 'BYN', 'Weissrussischer Rubel',
-      one: 'Weissrussischer Rubel',
-      other: 'Weissrussische Rubel',
-      symbolNarrow: 'р.');
-  static const _byr = Currency(_cld, 'BYR', 'Weissrussischer Rubel (2000–2016)',
-      one: 'Weissrussischer Rubel (2000–2016)',
-      other: 'Weissrussische Rubel (2000–2016)');
-  static const _eur =
-      Currency(_cld, 'EUR', 'Euro', symbol: 'EUR', symbolNarrow: 'EUR');
-  static const _stn = Currency(_cld, 'STN', 'São-toméischer Dobra (2018)',
-      one: 'São-toméischer Dobra (2018)',
-      other: 'São-toméischer Dobra (2018)',
-      symbolNarrow: 'Db');
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'Weissrussischer Rubel',
+    one: 'Weissrussischer Rubel',
+    other: 'Weissrussische Rubel',
+    symbolNarrow: 'р.',
+  );
+  static const _byr = Currency(
+    _cld,
+    'BYR',
+    'Weissrussischer Rubel (2000–2016)',
+    one: 'Weissrussischer Rubel (2000–2016)',
+    other: 'Weissrussische Rubel (2000–2016)',
+  );
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'Euro',
+    symbol: 'EUR',
+    symbolNarrow: 'EUR',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'São-toméischer Dobra (2018)',
+    one: 'São-toméischer Dobra (2018)',
+    other: 'São-toméischer Dobra (2018)',
+    symbolNarrow: 'Db',
+  );
 
   @override
   Currency get byn => _byn;
@@ -412,14 +381,9 @@ class CurrenciesDeCH extends CurrenciesDe {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesDe.staticCurrencies,
-        ...const {
-          'BYN': _byn,
-          'BYR': _byr,
-          'EUR': _eur,
-          'STN': _stn,
-        }
-      });
+    ...CurrenciesDe.staticCurrencies,
+    ...const {'BYN': _byn, 'BYR': _byr, 'EUR': _eur, 'STN': _stn},
+  });
 }
 
 class TimeZonesDeCH extends TimeZonesDe {
@@ -427,24 +391,25 @@ class TimeZonesDeCH extends TimeZonesDe {
 
   @override
   Map<String, TimeZoneNames> get timeZoneNames => Map.unmodifiable({
-        ...TimeZonesDe.staticTimeZoneNames,
-        ...const {
-          'Europe/Saratov': TimeZoneNames(exemplarCity: 'Saratov'),
-          'Asia/Brunei': TimeZoneNames(exemplarCity: 'Brunei'),
-          'Asia/Macau': TimeZoneNames(exemplarCity: 'Macao'),
-        }
-      });
+    ...TimeZonesDe.staticTimeZoneNames,
+    ...const {
+      'Europe/Saratov': TimeZoneNames(exemplarCity: 'Saratov'),
+      'Asia/Brunei': TimeZoneNames(exemplarCity: 'Brunei'),
+      'Asia/Macau': TimeZoneNames(exemplarCity: 'Macao'),
+    },
+  });
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesDe.staticMetaZoneNames,
-        ...const {
-          'Brunei':
-              MetaZone('Brunei', long: TimeZoneName(standard: 'Brunei-Zeit')),
-          'Solomon': MetaZone('Solomon',
-              long: TimeZoneName(standard: 'Salomoninseln-Zeit')),
-        }
-      });
+    ...TimeZonesDe.staticMetaZoneNames,
+    ...const {
+      'Brunei': MetaZone('Brunei', long: TimeZoneName(standard: 'Brunei-Zeit')),
+      'Solomon': MetaZone(
+        'Solomon',
+        long: TimeZoneName(standard: 'Salomoninseln-Zeit'),
+      ),
+    },
+  });
 }
 
 class LocaleDisplayNameDeCH extends LocaleDisplayNameDe {
@@ -452,32 +417,32 @@ class LocaleDisplayNameDeCH extends LocaleDisplayNameDe {
 
   @override
   Map<String, String> get keyNames => Map.unmodifiable({
-        ...LocaleDisplayNameDe.staticKeyNames,
-        ...const {
-          'kf': 'Sortierung nach Gross- bzw. Kleinbuchstaben',
-          'kc': 'Sortierung nach Gross- oder Kleinschreibung',
-          'ms': 'Mass-System',
-        }
-      });
+    ...LocaleDisplayNameDe.staticKeyNames,
+    ...const {
+      'kf': 'Sortierung nach Gross- bzw. Kleinbuchstaben',
+      'kc': 'Sortierung nach Gross- oder Kleinschreibung',
+      'ms': 'Mass-System',
+    },
+  });
 
   @override
   Map<String, Map<String, String>> get valueNames => Map.unmodifiable({
-        ...LocaleDisplayNameDe.staticValueNames,
-        ...const {
-          'kf': {
-            'lower': 'Kleinbuchstaben zuerst aufführen',
-            'false': 'Normal sortieren',
-            'upper': 'Grossbuchstaben zuerst aufführen',
-          },
-          'kc': {
-            'false': 'Ohne Gross-/Kleinschreibung sortieren',
-            'true': 'Nach Gross-/Kleinschreibung sortieren',
-          },
-          'ms': {
-            'metric': 'Metrisches System',
-            'uksystem': 'britisches Mass-System',
-            'ussystem': 'US Mass-System',
-          },
-        }
-      });
+    ...LocaleDisplayNameDe.staticValueNames,
+    ...const {
+      'kf': {
+        'lower': 'Kleinbuchstaben zuerst aufführen',
+        'false': 'Normal sortieren',
+        'upper': 'Grossbuchstaben zuerst aufführen',
+      },
+      'kc': {
+        'false': 'Ohne Gross-/Kleinschreibung sortieren',
+        'true': 'Nach Gross-/Kleinschreibung sortieren',
+      },
+      'ms': {
+        'metric': 'Metrisches System',
+        'uksystem': 'britisches Mass-System',
+        'ussystem': 'US Mass-System',
+      },
+    },
+  });
 }

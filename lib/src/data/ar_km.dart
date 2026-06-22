@@ -28,17 +28,20 @@ class CommonLocaleDataArKM extends CommonLocaleDataAr {
 class CurrenciesArKM extends CurrenciesAr {
   const CurrenciesArKM(super.cld);
 
-  static const _kmf =
-      Currency(_cld, 'KMF', 'فرنك جزر القمر', symbol: 'CF', symbolNarrow: 'CF');
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'فرنك جزر القمر',
+    symbol: 'CF',
+    symbolNarrow: 'CF',
+  );
 
   @override
   Currency get kmf => _kmf;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesAr.staticCurrencies,
-        ...const {
-          'KMF': _kmf,
-        }
-      });
+    ...CurrenciesAr.staticCurrencies,
+    ...const {'KMF': _kmf},
+  });
 }

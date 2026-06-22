@@ -35,9 +35,7 @@ class LanguagesArEG extends LanguagesAr {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesAr.staticLanguages,
-        ...const {
-          'da': _da,
-        }
-      });
+    ...LanguagesAr.staticLanguages,
+    ...const {'da': _da},
+  });
 }

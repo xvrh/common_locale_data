@@ -63,19 +63,19 @@ class LanguagesArLY extends LanguagesAr {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesAr.staticLanguages,
-        ...const {
-          'arn': _arn,
-          'gn': _gn,
-          'hsb': _hsb,
-          'lo': _lo,
-          'sh': _sh,
-          'sma': _sma,
-          'sw': _sw,
-          'sw-CD': _swCD,
-          'ti': _ti,
-        }
-      });
+    ...LanguagesAr.staticLanguages,
+    ...const {
+      'arn': _arn,
+      'gn': _gn,
+      'hsb': _hsb,
+      'lo': _lo,
+      'sh': _sh,
+      'sma': _sma,
+      'sw': _sw,
+      'sw-CD': _swCD,
+      'ti': _ti,
+    },
+  });
 }
 
 class TerritoriesArLY extends TerritoriesAr {
@@ -94,11 +94,7 @@ class TerritoriesArLY extends TerritoriesAr {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesAr.staticTerritories,
-        ...const {
-          'EA': _ea,
-          'MS': _ms,
-          'UY': _uy,
-        }
-      });
+    ...TerritoriesAr.staticTerritories,
+    ...const {'EA': _ea, 'MS': _ms, 'UY': _uy},
+  });
 }

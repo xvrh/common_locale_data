@@ -28,17 +28,26 @@ class CommonLocaleDataArSS extends CommonLocaleDataAr {
 class CurrenciesArSS extends CurrenciesAr {
   const CurrenciesArSS(super.cld);
 
-  static const _gbp = Currency(_cld, 'GBP', 'جنيه إسترليني',
-      symbol: 'GB£', symbolNarrow: 'UK£');
-  static const _ssp = Currency(_cld, 'SSP', 'جنيه جنوب السودان',
-      zero: 'جنيه جنوب السودان',
-      one: 'جنيه جنوب السودان',
-      two: 'جنيهان جنوب السودان',
-      few: 'جنيهات جنوب السودان',
-      many: 'جنيهًا جنوب السودان',
-      other: 'جنيه جنوب السودان',
-      symbol: '£',
-      symbolNarrow: '£');
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'جنيه إسترليني',
+    symbol: 'GB£',
+    symbolNarrow: 'UK£',
+  );
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'جنيه جنوب السودان',
+    zero: 'جنيه جنوب السودان',
+    one: 'جنيه جنوب السودان',
+    two: 'جنيهان جنوب السودان',
+    few: 'جنيهات جنوب السودان',
+    many: 'جنيهًا جنوب السودان',
+    other: 'جنيه جنوب السودان',
+    symbol: '£',
+    symbolNarrow: '£',
+  );
 
   @override
   Currency get gbp => _gbp;
@@ -47,10 +56,7 @@ class CurrenciesArSS extends CurrenciesAr {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesAr.staticCurrencies,
-        ...const {
-          'GBP': _gbp,
-          'SSP': _ssp,
-        }
-      });
+    ...CurrenciesAr.staticCurrencies,
+    ...const {'GBP': _gbp, 'SSP': _ssp},
+  });
 }

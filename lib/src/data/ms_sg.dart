@@ -28,17 +28,20 @@ class CommonLocaleDataMsSG extends CommonLocaleDataMs {
 class CurrenciesMsSG extends CurrenciesMs {
   const CurrenciesMsSG(super.cld);
 
-  static const _sgd = Currency(_cld, 'SGD', 'Dolar Singapura',
-      symbol: r'$', symbolNarrow: r'$');
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'Dolar Singapura',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
 
   @override
   Currency get sgd => _sgd;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesMs.staticCurrencies,
-        ...const {
-          'SGD': _sgd,
-        }
-      });
+    ...CurrenciesMs.staticCurrencies,
+    ...const {'SGD': _sgd},
+  });
 }

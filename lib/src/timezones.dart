@@ -180,20 +180,26 @@ abstract class TimeZones {
 
     var absOffset = offset.abs();
 
-    var hours =
-        NumberFormat(long ? '00' : '#0', cld.locale).format(absOffset.inHours);
-    var minutes = NumberFormat('00', cld.locale)
-        .format(absOffset.inMinutes.remainder(60));
-    var seconds = NumberFormat('00', cld.locale)
-        .format(absOffset.inSeconds.remainder(60));
+    var hours = NumberFormat(
+      long ? '00' : '#0',
+      cld.locale,
+    ).format(absOffset.inHours);
+    var minutes = NumberFormat(
+      '00',
+      cld.locale,
+    ).format(absOffset.inMinutes.remainder(60));
+    var seconds = NumberFormat(
+      '00',
+      cld.locale,
+    ).format(absOffset.inSeconds.remainder(60));
 
     var hourFormat = offset.inSeconds < 0
         ? (seconds != '00'
-            ? negativeHMS
-            : ((minutes != '00' || long) ? negativeHM : negativeH))
+              ? negativeHMS
+              : ((minutes != '00' || long) ? negativeHM : negativeH))
         : (seconds != '00'
-            ? positiveHMS
-            : ((minutes != '00' || long) ? positiveHM : positiveH));
+              ? positiveHMS
+              : ((minutes != '00' || long) ? positiveHM : positiveH));
 
     var number = hourFormat
         .replaceAll('HH', hours)
@@ -204,8 +210,13 @@ abstract class TimeZones {
     return gmtFormat.replaceAll('{0}', number);
   }
 
-  static String _formatISO8601(Duration offset, bool basic,
-      bool useUtcIndicator, bool long, bool ignoreSeconds) {
+  static String _formatISO8601(
+    Duration offset,
+    bool basic,
+    bool useUtcIndicator,
+    bool long,
+    bool ignoreSeconds,
+  ) {
     offset = ignoreSeconds
         ? Duration(minutes: offset.inMinutes)
         : Duration(seconds: offset.inSeconds);
@@ -306,8 +317,9 @@ class TimeZone {
     var timeZoneName =
         timeZones.timeZoneNames[canonicalCode] ?? TimeZoneNames();
 
-    var metaZoneInfo =
-        TimeZoneData.zoneToMetaZone[canonicalCode]?.get(dateTime: dateTime);
+    var metaZoneInfo = TimeZoneData.zoneToMetaZone[canonicalCode]?.get(
+      dateTime: dateTime,
+    );
     var metaZoneCode = metaZoneInfo?.value;
     var metaZone = timeZones.metaZoneNames[metaZoneCode];
 
@@ -315,8 +327,12 @@ class TimeZone {
     var country =
         timeZones.cld.territories[territoryCode]?.name ?? territoryCode;
 
-    var (isPrimaryOrSingle, dateRange) = _checkPrimaryOrSingle(canonicalCode,
-        metaZoneInfo?.key ?? DateRange(), territoryCode, dateTime);
+    var (isPrimaryOrSingle, dateRange) = _checkPrimaryOrSingle(
+      canonicalCode,
+      metaZoneInfo?.key ?? DateRange(),
+      territoryCode,
+      dateTime,
+    );
 
     var parts = canonicalCode.split('/');
     var fallbackCity = parts.length < 2 || parts[0] == 'Etc'
@@ -324,27 +340,33 @@ class TimeZone {
         : parts.last.replaceAll('_', ' ');
     var exemplarCity = timeZoneName.exemplarCity ?? fallbackCity;
 
-    return TimeZone._(timeZones,
-        code: code,
-        canonicalCode: canonicalCode,
-        iana: iana,
-        short: short,
-        dateRange: dateRange,
-        metaZone: metaZone,
-        territoryCode: territoryCode,
-        longNames: timeZoneName.long ?? TimeZoneName(),
-        shortNames: timeZoneName.short ?? TimeZoneName(),
-        exemplarCity: exemplarCity,
-        country: country,
-        isPrimaryOrSingle: isPrimaryOrSingle);
+    return TimeZone._(
+      timeZones,
+      code: code,
+      canonicalCode: canonicalCode,
+      iana: iana,
+      short: short,
+      dateRange: dateRange,
+      metaZone: metaZone,
+      territoryCode: territoryCode,
+      longNames: timeZoneName.long ?? TimeZoneName(),
+      shortNames: timeZoneName.short ?? TimeZoneName(),
+      exemplarCity: exemplarCity,
+      country: country,
+      isPrimaryOrSingle: isPrimaryOrSingle,
+    );
   }
 
   static Set<String> _getMetaZonesForTerritory(
-      Set<String> zonesForTerritory, DateTime date) {
+    Set<String> zonesForTerritory,
+    DateTime date,
+  ) {
     return zonesForTerritory
-        .map((zone) =>
-            TimeZoneData.zoneToMetaZone[zone]?.get(dateTime: date)?.value ??
-            zone)
+        .map(
+          (zone) =>
+              TimeZoneData.zoneToMetaZone[zone]?.get(dateTime: date)?.value ??
+              zone,
+        )
         .nonNulls
         .toSet();
   }
@@ -433,8 +455,11 @@ class TimeZone {
   ///  - Instead of checking the timezone offset to see if the partial location
   ///    format should be used it compares the preferred zone to actual zone
   ///    (which is actually what tr35 specifies).
-  String _formatNonLocation(TimeZoneStyle style, Duration offset,
-      {String? countryCode}) {
+  String _formatNonLocation(
+    TimeZoneStyle style,
+    Duration offset, {
+    String? countryCode,
+  }) {
     // Step 1 explicit translation for timezone
     var name = switch (style) {
       TimeZoneStyle.genericShort => shortNames.generic ?? shortNames.standard,
@@ -481,7 +506,7 @@ class TimeZone {
 
     var preferredZoneForCurrent =
         TimeZoneData.metaZoneToZoneForTerritory[(metaZone.code, countryCode)] ??
-            TimeZoneData.metaZoneToZoneForTerritory[(metaZone.code, '001')];
+        TimeZoneData.metaZoneToZoneForTerritory[(metaZone.code, '001')];
 
     if (preferredZoneForCurrent == canonicalCode) {
       // Step 2: check if zone==preferred zone and use meta zone name if true
@@ -489,11 +514,14 @@ class TimeZone {
     } else {
       // Step 3: check if preferred zone==the requested zone, if so use country, otherwise city
 
-      var territoryForZone =
-          TimeZoneData.zoneToTerritory[canonicalCode] ??= '001';
+      var territoryForZone = TimeZoneData.zoneToTerritory[canonicalCode] ??=
+          '001';
 
-      var preferredZone = TimeZoneData
-              .metaZoneToZoneForTerritory[(metaZone.code, territoryForZone)] ??
+      var preferredZone =
+          TimeZoneData.metaZoneToZoneForTerritory[(
+            metaZone.code,
+            territoryForZone,
+          )] ??
           TimeZoneData.metaZoneToZoneForTerritory[(metaZone.code, '001')];
 
       var region = (preferredZone == canonicalCode)
@@ -510,8 +538,12 @@ class TimeZone {
     }
   }
 
-  static (bool, DateRange) _checkPrimaryOrSingle(String canonicalCode,
-      DateRange dateRange, String? territoryCode, DateTime dateTime) {
+  static (bool, DateRange) _checkPrimaryOrSingle(
+    String canonicalCode,
+    DateRange dateRange,
+    String? territoryCode,
+    DateTime dateTime,
+  ) {
     var primaryZone = TimeZoneData.territoryToPrimaryZone[territoryCode];
     var isPrimaryOrSingle = primaryZone == canonicalCode;
 
@@ -531,18 +563,22 @@ class TimeZone {
           isPrimaryOrSingle = true;
         }
         if (!isPrimaryOrSingle) {
-          var metaZonesAtCurrentDateTime =
-              _getMetaZonesForTerritory(zonesForTerritory, dateTime);
+          var metaZonesAtCurrentDateTime = _getMetaZonesForTerritory(
+            zonesForTerritory,
+            dateTime,
+          );
 
           isPrimaryOrSingle = metaZonesAtCurrentDateTime.length <= 1;
 
           // All dates of changes in timezone meta zones
           var dates = dateRangeMaps
-              .map((e) => e.entries.keys
-                  .map((d) => [d.from, d.to])
-                  .flattened
-                  .toSet()
-                  .nonNulls)
+              .map(
+                (e) => e.entries.keys
+                    .map((d) => [d.from, d.to])
+                    .flattened
+                    .toSet()
+                    .nonNulls,
+              )
               .flattened
               .where((date) => dateRange.contains(date))
               .toSet()
@@ -561,10 +597,14 @@ class TimeZone {
           int startIdx;
           for (startIdx = idx - 1; startIdx >= 0; startIdx--) {
             var date = dates[startIdx];
-            var metaZonesAtDate =
-                _getMetaZonesForTerritory(zonesForTerritory, date);
-            if (!SetEquality()
-                .equals(metaZonesAtDate, metaZonesAtCurrentDateTime)) {
+            var metaZonesAtDate = _getMetaZonesForTerritory(
+              zonesForTerritory,
+              date,
+            );
+            if (!SetEquality().equals(
+              metaZonesAtDate,
+              metaZonesAtCurrentDateTime,
+            )) {
               startIdx++;
               break;
             }
@@ -573,17 +613,22 @@ class TimeZone {
           int endIdx;
           for (endIdx = idx + 1; endIdx < dates.length; endIdx++) {
             var date = dates[endIdx];
-            var metaZonesAtDate =
-                _getMetaZonesForTerritory(zonesForTerritory, date);
-            if (!SetEquality()
-                .equals(metaZonesAtDate, metaZonesAtCurrentDateTime)) {
+            var metaZonesAtDate = _getMetaZonesForTerritory(
+              zonesForTerritory,
+              date,
+            );
+            if (!SetEquality().equals(
+              metaZonesAtDate,
+              metaZonesAtCurrentDateTime,
+            )) {
               break;
             }
           }
 
           dateRange = DateRange.fromDateTime(
-              startIdx < 0 ? null : dates[startIdx],
-              endIdx >= dates.length ? null : dates[endIdx]);
+            startIdx < 0 ? null : dates[startIdx],
+            endIdx >= dates.length ? null : dates[endIdx],
+          );
         }
       }
     }
@@ -656,8 +701,10 @@ class DateRange {
   const DateRange._(this.from, this.to);
 
   factory DateRange([String? fromString, String? toString]) {
-    return DateRange._(fromString == null ? null : DateTime.parse(fromString),
-        toString == null ? null : DateTime.parse(toString));
+    return DateRange._(
+      fromString == null ? null : DateTime.parse(fromString),
+      toString == null ? null : DateTime.parse(toString),
+    );
   }
 
   /// Check if [dateTime] is inside the interval [[from],[to])
@@ -704,8 +751,9 @@ class DateRangeMap<T> {
 
   MapEntry<DateRange, T>? get({DateTime? dateTime}) {
     dateTime ??= DateTime.timestamp();
-    return _map.entries
-        .firstWhereOrNull((entry) => entry.key.contains(dateTime!));
+    return _map.entries.firstWhereOrNull(
+      (entry) => entry.key.contains(dateTime!),
+    );
   }
 
   Map<DateRange, T> get entries {

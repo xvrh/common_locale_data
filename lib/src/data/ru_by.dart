@@ -28,15 +28,23 @@ class CommonLocaleDataRuBY extends CommonLocaleDataRu {
 class CurrenciesRuBY extends CurrenciesRu {
   const CurrenciesRuBY(super.cld);
 
-  static const _byn = Currency(_cld, 'BYN', 'белорусский рубль',
-      one: 'белорусский рубль',
-      few: 'белорусских рубля',
-      many: 'белорусских рублей',
-      other: 'белорусского рубля',
-      symbol: 'Br',
-      symbolNarrow: 'Br');
-  static const _rur =
-      Currency(_cld, 'RUR', 'Российский рубль (1991–1998)', symbol: 'RUR');
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'белорусский рубль',
+    one: 'белорусский рубль',
+    few: 'белорусских рубля',
+    many: 'белорусских рублей',
+    other: 'белорусского рубля',
+    symbol: 'Br',
+    symbolNarrow: 'Br',
+  );
+  static const _rur = Currency(
+    _cld,
+    'RUR',
+    'Российский рубль (1991–1998)',
+    symbol: 'RUR',
+  );
 
   @override
   Currency get byn => _byn;
@@ -45,10 +53,7 @@ class CurrenciesRuBY extends CurrenciesRu {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesRu.staticCurrencies,
-        ...const {
-          'BYN': _byn,
-          'RUR': _rur,
-        }
-      });
+    ...CurrenciesRu.staticCurrencies,
+    ...const {'BYN': _byn, 'RUR': _rur},
+  });
 }

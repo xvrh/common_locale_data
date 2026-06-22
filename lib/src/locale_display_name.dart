@@ -16,7 +16,7 @@ enum LocaleDisplayNameStyle {
   short,
 
   /// Display name for in menus.
-  menu;
+  menu,
 }
 
 /// Localized locale display name information.
@@ -65,12 +65,17 @@ abstract class LocaleDisplayName {
   /// **NOTE:** this function dynamically uses the language, script, variant
   /// and territory data. This can considerably increase the resulting
   /// executable file size.
-  String format(LanguageId languageId,
-      {LocaleDisplayNameStyle preferType = LocaleDisplayNameStyle.regular,
-      bool preferComposition = false}) {
+  String format(
+    LanguageId languageId, {
+    LocaleDisplayNameStyle preferType = LocaleDisplayNameStyle.regular,
+    bool preferComposition = false,
+  }) {
     languageId = languageId.canonicalize();
-    var (ldn, lqn) = _getLdnAndLqnForLanguageId(languageId,
-        preferType: preferType, preferComposition: preferComposition);
+    var (ldn, lqn) = _getLdnAndLqnForLanguageId(
+      languageId,
+      preferType: preferType,
+      preferComposition: preferComposition,
+    );
     return _ldnAndLqnToString(ldn, lqn);
   }
 
@@ -94,8 +99,11 @@ abstract class LocaleDisplayName {
   }) {
     localeId = localeId.canonicalize();
 
-    var (ldn, lqn) = _getLdnAndLqnForLanguageId(localeId,
-        preferType: preferType, preferComposition: preferComposition);
+    var (ldn, lqn) = _getLdnAndLqnForLanguageId(
+      localeId,
+      preferType: preferType,
+      preferComposition: preferComposition,
+    );
 
     if (localeId is LocaleId) {
       lqn.addAll(_getLqnForExtensions(localeId, preferType));
@@ -145,7 +153,9 @@ abstract class LocaleDisplayName {
   }
 
   List<String> _getLqnForExtensions(
-      LocaleId localeId, LocaleDisplayNameStyle preferType) {
+    LocaleId localeId,
+    LocaleDisplayNameStyle preferType,
+  ) {
     var lqn = <String>[];
     var unicodeExtensions = localeId.unicodeExtensions;
     if (unicodeExtensions != null) {
@@ -153,52 +163,71 @@ abstract class LocaleDisplayName {
       if (Map.fromEntries(unicodeExtensions.tFields)['h0'] == 'hybrid') {
         var tLang = unicodeExtensions.tLang;
         if (tLang != null) {
-          lqn.add(localeKeyTypePattern
-              .replaceAll('{0}', valueNames['h0']?['hybrid'] ?? 'h0')
-              .replaceAll('{1}', format(tLang)));
+          lqn.add(
+            localeKeyTypePattern
+                .replaceAll('{0}', valueNames['h0']?['hybrid'] ?? 'h0')
+                .replaceAll('{1}', format(tLang)),
+          );
           h0Handled = true;
         }
       } else {
         var tLang = unicodeExtensions.tLang;
         if (tLang != null) {
-          lqn.add(localeKeyTypePattern
-              .replaceAll('{0}', keyNames['t'] ?? 't')
-              .replaceAll('{1}', format(tLang)));
+          lqn.add(
+            localeKeyTypePattern
+                .replaceAll('{0}', keyNames['t'] ?? 't')
+                .replaceAll('{1}', format(tLang)),
+          );
         }
       }
 
       var fields = Map.fromEntries(
-          unicodeExtensions.tFields + unicodeExtensions.uFields);
+        unicodeExtensions.tFields + unicodeExtensions.uFields,
+      );
 
       for (var field in fields.entries) {
-        var extensionKey = LocaleData.extensionKeys['t']?.keys[field.key] ??
+        var extensionKey =
+            LocaleData.extensionKeys['t']?.keys[field.key] ??
             LocaleData.extensionKeys['u']?.keys[field.key];
         if (h0Handled && field.key == 'h0') continue;
         var keyName = keyNames[field.key] ?? field.key;
 
         var valueName = switch (extensionKey?.keyType) {
-          null || KeyType.regular || KeyType.privateUse => valueNames[field.key]
-              ?[field.value ?? 'true'],
-          KeyType.subdivisionCode ||
-          KeyType.rgKeyValue =>
+          null ||
+          KeyType.regular ||
+          KeyType.privateUse => valueNames[field.key]?[field.value ?? 'true'],
+          KeyType.subdivisionCode || KeyType.rgKeyValue =>
             (field.value?.endsWith('zzzz') == true
                 ? cld
-                        .territories[
-                            field.value!.substring(0, field.value!.length - 4)]
-                        ?.name ??
-                    field.value
+                          .territories[field.value!.substring(
+                            0,
+                            field.value!.length - 4,
+                          )]
+                          ?.name ??
+                      field.value
                 : cld.subdivisions[field.value] ?? field.value),
-          KeyType.reorderCode => field.value == null
-              ? null
-              : _lqnToString(field.value?.split('-').map((e) =>
-                      valueNames[field.key]?[e] ?? cld.scripts[e]?.name ?? e) ??
-                  []),
+          KeyType.reorderCode =>
+            field.value == null
+                ? null
+                : _lqnToString(
+                    field.value
+                            ?.split('-')
+                            .map(
+                              (e) =>
+                                  valueNames[field.key]?[e] ??
+                                  cld.scripts[e]?.name ??
+                                  e,
+                            ) ??
+                        [],
+                  ),
           KeyType.scriptCode => cld.scripts[field.value]?.name ?? field.value,
           KeyType.codePoints => field.value?.replaceAll('[-_]', ' '),
-          KeyType.timeZone => cld
-                  .timeZones[TimeZoneData.shortToZone[field.value]]
-                  ?.format(TimeZoneStyle.genericLocation, Duration()) ??
-              field.value,
+          KeyType.timeZone =>
+            cld.timeZones[TimeZoneData.shortToZone[field.value]]?.format(
+                  TimeZoneStyle.genericLocation,
+                  Duration(),
+                ) ??
+                field.value,
           KeyType.currency => _getCurrencyName(field.value, preferType),
         };
 
@@ -210,17 +239,21 @@ abstract class LocaleDisplayName {
                   valueName == valueNames[field.key]?[field.value])) {
             lqn.add(valueName);
           } else {
-            lqn.add(localeKeyTypePattern
-                .replaceAll('{0}', keyName)
-                .replaceAll('{1}', valueName));
+            lqn.add(
+              localeKeyTypePattern
+                  .replaceAll('{0}', keyName)
+                  .replaceAll('{1}', valueName),
+            );
           }
         } else {
           if (field.value == null) {
             lqn.add(keyName);
           } else {
-            lqn.add(localeKeyTypePattern
-                .replaceAll('{0}', keyName)
-                .replaceAll('{1}', field.value!));
+            lqn.add(
+              localeKeyTypePattern
+                  .replaceAll('{0}', keyName)
+                  .replaceAll('{1}', field.value!),
+            );
           }
         }
       }
@@ -234,9 +267,11 @@ abstract class LocaleDisplayName {
 
     for (var extension in extensions) {
       if (extension.startsWith('t') || extension.startsWith('u')) continue;
-      lqn.add(localeKeyTypePattern
-          .replaceAll('{0}', extension.substring(0, 1))
-          .replaceAll('{1}', extension.substring(2)));
+      lqn.add(
+        localeKeyTypePattern
+            .replaceAll('{0}', extension.substring(0, 1))
+            .replaceAll('{1}', extension.substring(2)),
+      );
     }
 
     return lqn;
@@ -271,7 +306,9 @@ abstract class LocaleDisplayName {
   }
 
   (Language?, Script?, Territory?) _getParts(
-      LanguageId localeId, bool preferComposition) {
+    LanguageId localeId,
+    bool preferComposition,
+  ) {
     Language? language;
     Script? script;
     Territory? region;
@@ -289,8 +326,8 @@ abstract class LocaleDisplayName {
     }
 
     if (localeId.script != null && localeId.region != null) {
-      language = cld.languages[
-          '${localeId.langOrUnd}-${localeId.script}-${localeId.region}'];
+      language = cld
+          .languages['${localeId.langOrUnd}-${localeId.script}-${localeId.region}'];
       if (language != null) {
         return (language, null, null);
       }
@@ -305,7 +342,7 @@ abstract class LocaleDisplayName {
           localeId.region == null
               ? null
               : cld.territories[localeId.region!] ??
-                  _getUnknownTerritory(localeId)
+                    _getUnknownTerritory(localeId),
         );
       }
     }
@@ -318,7 +355,7 @@ abstract class LocaleDisplayName {
           localeId.script == null
               ? null
               : cld.scripts[localeId.script!] ?? _getUnknownScript(localeId),
-          null
+          null,
         );
       }
     }
@@ -335,26 +372,29 @@ abstract class LocaleDisplayName {
 
   Territory _getUnknownTerritory(LanguageId localeId) {
     return Territory(
-        localeId.region!,
-        localePattern
-            .replaceAll('{0}', cld.territories.unknownRegion.name)
-            .replaceAll('{1}', localeId.region!));
+      localeId.region!,
+      localePattern
+          .replaceAll('{0}', cld.territories.unknownRegion.name)
+          .replaceAll('{1}', localeId.region!),
+    );
   }
 
   Script _getUnknownScript(LanguageId localeId) {
     return Script(
-        localeId.script!,
-        localePattern
-            .replaceAll('{0}', cld.scripts.unknownScript.name)
-            .replaceAll('{1}', localeId.script!));
+      localeId.script!,
+      localePattern
+          .replaceAll('{0}', cld.scripts.unknownScript.name)
+          .replaceAll('{1}', localeId.script!),
+    );
   }
 
   Language _getUnknownLanguage(LanguageId localeId) {
     return Language(
-        localeId.lang!,
-        localePattern
-            .replaceAll('{0}', cld.languages.unknownLanguage.name)
-            .replaceAll('{1}', localeId.langOrNullIfUndefined ?? 'und'));
+      localeId.lang!,
+      localePattern
+          .replaceAll('{0}', cld.languages.unknownLanguage.name)
+          .replaceAll('{1}', localeId.langOrNullIfUndefined ?? 'und'),
+    );
   }
 
   String? _getCurrencyName(String? value, LocaleDisplayNameStyle preferType) {
@@ -365,18 +405,21 @@ abstract class LocaleDisplayName {
     }
 
     return switch (preferType) {
-      LocaleDisplayNameStyle.regular => currency.symbol ??
-          currency.symbolVariant ??
-          currency.symbolNarrow ??
-          value.toUpperCase(),
-      LocaleDisplayNameStyle.variant => currency.symbolVariant ??
-          currency.symbol ??
-          currency.symbolNarrow ??
-          value.toUpperCase(),
-      LocaleDisplayNameStyle.short => currency.symbolNarrow ??
-          currency.symbol ??
-          currency.symbolVariant ??
-          value.toUpperCase(),
+      LocaleDisplayNameStyle.regular =>
+        currency.symbol ??
+            currency.symbolVariant ??
+            currency.symbolNarrow ??
+            value.toUpperCase(),
+      LocaleDisplayNameStyle.variant =>
+        currency.symbolVariant ??
+            currency.symbol ??
+            currency.symbolNarrow ??
+            value.toUpperCase(),
+      LocaleDisplayNameStyle.short =>
+        currency.symbolNarrow ??
+            currency.symbol ??
+            currency.symbolVariant ??
+            value.toUpperCase(),
       LocaleDisplayNameStyle.menu => currency.displayName,
     };
   }

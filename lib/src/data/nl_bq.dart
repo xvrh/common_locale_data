@@ -28,17 +28,20 @@ class CommonLocaleDataNlBQ extends CommonLocaleDataNl {
 class CurrenciesNlBQ extends CurrenciesNl {
   const CurrenciesNlBQ(super.cld);
 
-  static const _usd = Currency(_cld, 'USD', 'Amerikaanse dollar',
-      symbol: r'$', symbolNarrow: r'$');
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'Amerikaanse dollar',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
 
   @override
   Currency get usd => _usd;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesNl.staticCurrencies,
-        ...const {
-          'USD': _usd,
-        }
-      });
+    ...CurrenciesNl.staticCurrencies,
+    ...const {'USD': _usd},
+  });
 }

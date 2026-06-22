@@ -65,5111 +65,2587 @@ class UnitsZhHant extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 公寸'),
-        short: UnitPrefixPattern('{0} 公寸'),
-        narrow: UnitPrefixPattern('{0} 公寸'),
-      );
+    long: UnitPrefixPattern('{0} 公寸'),
+    short: UnitPrefixPattern('{0} 公寸'),
+    narrow: UnitPrefixPattern('{0} 公寸'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 公分'),
-        short: UnitPrefixPattern('{0} 公分'),
-        narrow: UnitPrefixPattern('{0} 公分'),
-      );
+    long: UnitPrefixPattern('{0} 公分'),
+    short: UnitPrefixPattern('{0} 公分'),
+    narrow: UnitPrefixPattern('{0} 公分'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 公釐'),
-        short: UnitPrefixPattern('{0} 公釐'),
-        narrow: UnitPrefixPattern('{0} 公釐'),
-      );
+    long: UnitPrefixPattern('{0} 公釐'),
+    short: UnitPrefixPattern('{0} 公釐'),
+    narrow: UnitPrefixPattern('{0} 公釐'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 微米'),
-        short: UnitPrefixPattern('{0} 微米'),
-        narrow: UnitPrefixPattern('{0} 微米'),
-      );
+    long: UnitPrefixPattern('{0} 微米'),
+    short: UnitPrefixPattern('{0} 微米'),
+    narrow: UnitPrefixPattern('{0} 微米'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 奈米'),
-        short: UnitPrefixPattern('{0} 奈米'),
-        narrow: UnitPrefixPattern('{0} 奈米'),
-      );
+    long: UnitPrefixPattern('{0} 奈米'),
+    short: UnitPrefixPattern('{0} 奈米'),
+    narrow: UnitPrefixPattern('{0} 奈米'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 皮米'),
-        short: UnitPrefixPattern('{0} 皮米'),
-        narrow: UnitPrefixPattern('{0} 皮米'),
-      );
+    long: UnitPrefixPattern('{0} 皮米'),
+    short: UnitPrefixPattern('{0} 皮米'),
+    narrow: UnitPrefixPattern('{0} 皮米'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 飛米'),
-        short: UnitPrefixPattern('{0} 飛米'),
-        narrow: UnitPrefixPattern('{0} 飛米'),
-      );
+    long: UnitPrefixPattern('{0} 飛米'),
+    short: UnitPrefixPattern('{0} 飛米'),
+    narrow: UnitPrefixPattern('{0} 飛米'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 阿米'),
-        short: UnitPrefixPattern('{0} 阿米'),
-        narrow: UnitPrefixPattern('{0} 阿米'),
-      );
+    long: UnitPrefixPattern('{0} 阿米'),
+    short: UnitPrefixPattern('{0} 阿米'),
+    narrow: UnitPrefixPattern('{0} 阿米'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 仄米'),
-        short: UnitPrefixPattern('{0} 仄米'),
-        narrow: UnitPrefixPattern('{0} 仄米'),
-      );
+    long: UnitPrefixPattern('{0} 仄米'),
+    short: UnitPrefixPattern('{0} 仄米'),
+    narrow: UnitPrefixPattern('{0} 仄米'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 麼米'),
-        short: UnitPrefixPattern('{0} 麼米'),
-        narrow: UnitPrefixPattern('{0} 麼米'),
-      );
+    long: UnitPrefixPattern('{0} 麼米'),
+    short: UnitPrefixPattern('{0} 麼米'),
+    narrow: UnitPrefixPattern('{0} 麼米'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 戎米'),
-        short: UnitPrefixPattern('{0} 戎米'),
-        narrow: UnitPrefixPattern('{0} 戎米'),
-      );
+    long: UnitPrefixPattern('{0} 戎米'),
+    short: UnitPrefixPattern('{0} 戎米'),
+    narrow: UnitPrefixPattern('{0} 戎米'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 奎米'),
-        short: UnitPrefixPattern('{0} 奎米'),
-        narrow: UnitPrefixPattern('{0} 奎米'),
-      );
+    long: UnitPrefixPattern('{0} 奎米'),
+    short: UnitPrefixPattern('{0} 奎米'),
+    narrow: UnitPrefixPattern('{0} 奎米'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 公丈'),
-        short: UnitPrefixPattern('{0} 公丈'),
-        narrow: UnitPrefixPattern('{0} 公丈'),
-      );
+    long: UnitPrefixPattern('{0} 公丈'),
+    short: UnitPrefixPattern('{0} 公丈'),
+    narrow: UnitPrefixPattern('{0} 公丈'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 公引'),
-        short: UnitPrefixPattern('{0} 公引'),
-        narrow: UnitPrefixPattern('{0} 公引'),
-      );
+    long: UnitPrefixPattern('{0} 公引'),
+    short: UnitPrefixPattern('{0} 公引'),
+    narrow: UnitPrefixPattern('{0} 公引'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 公里'),
-        short: UnitPrefixPattern('{0} 公里'),
-        narrow: UnitPrefixPattern('{0} 公里'),
-      );
+    long: UnitPrefixPattern('{0} 公里'),
+    short: UnitPrefixPattern('{0} 公里'),
+    narrow: UnitPrefixPattern('{0} 公里'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 兆米'),
-        short: UnitPrefixPattern('{0} 兆米'),
-        narrow: UnitPrefixPattern('{0} 兆米'),
-      );
+    long: UnitPrefixPattern('{0} 兆米'),
+    short: UnitPrefixPattern('{0} 兆米'),
+    narrow: UnitPrefixPattern('{0} 兆米'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 吉米'),
-        short: UnitPrefixPattern('{0} 吉米'),
-        narrow: UnitPrefixPattern('{0} 吉米'),
-      );
+    long: UnitPrefixPattern('{0} 吉米'),
+    short: UnitPrefixPattern('{0} 吉米'),
+    narrow: UnitPrefixPattern('{0} 吉米'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 太米'),
-        short: UnitPrefixPattern('{0} 太米'),
-        narrow: UnitPrefixPattern('{0} 太米'),
-      );
+    long: UnitPrefixPattern('{0} 太米'),
+    short: UnitPrefixPattern('{0} 太米'),
+    narrow: UnitPrefixPattern('{0} 太米'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 拍米'),
-        short: UnitPrefixPattern('{0} 拍米'),
-        narrow: UnitPrefixPattern('{0} 拍米'),
-      );
+    long: UnitPrefixPattern('{0} 拍米'),
+    short: UnitPrefixPattern('{0} 拍米'),
+    narrow: UnitPrefixPattern('{0} 拍米'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 艾米'),
-        short: UnitPrefixPattern('{0} 艾米'),
-        narrow: UnitPrefixPattern('{0} 艾米'),
-      );
+    long: UnitPrefixPattern('{0} 艾米'),
+    short: UnitPrefixPattern('{0} 艾米'),
+    narrow: UnitPrefixPattern('{0} 艾米'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 皆米'),
-        short: UnitPrefixPattern('{0} 皆米'),
-        narrow: UnitPrefixPattern('{0} 皆米'),
-      );
+    long: UnitPrefixPattern('{0} 皆米'),
+    short: UnitPrefixPattern('{0} 皆米'),
+    narrow: UnitPrefixPattern('{0} 皆米'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 佑米'),
-        short: UnitPrefixPattern('{0} 佑米'),
-        narrow: UnitPrefixPattern('{0} 佑米'),
-      );
+    long: UnitPrefixPattern('{0} 佑米'),
+    short: UnitPrefixPattern('{0} 佑米'),
+    narrow: UnitPrefixPattern('{0} 佑米'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 羅米'),
-        short: UnitPrefixPattern('{0} 羅米'),
-        narrow: UnitPrefixPattern('{0} 羅米'),
-      );
+    long: UnitPrefixPattern('{0} 羅米'),
+    short: UnitPrefixPattern('{0} 羅米'),
+    narrow: UnitPrefixPattern('{0} 羅米'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 巋米'),
-        short: UnitPrefixPattern('{0} 巋米'),
-        narrow: UnitPrefixPattern('{0} 巋米'),
-      );
+    long: UnitPrefixPattern('{0} 巋米'),
+    short: UnitPrefixPattern('{0} 巋米'),
+    narrow: UnitPrefixPattern('{0} 巋米'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 千位元組'),
-        short: UnitPrefixPattern('Ki{0}'),
-        narrow: UnitPrefixPattern('Ki{0}'),
-      );
+    long: UnitPrefixPattern('{0} 千位元組'),
+    short: UnitPrefixPattern('Ki{0}'),
+    narrow: UnitPrefixPattern('Ki{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 百萬位元組'),
-        short: UnitPrefixPattern('Mi{0}'),
-        narrow: UnitPrefixPattern('Mi{0}'),
-      );
+    long: UnitPrefixPattern('{0} 百萬位元組'),
+    short: UnitPrefixPattern('Mi{0}'),
+    narrow: UnitPrefixPattern('Mi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 吉位元組'),
-        short: UnitPrefixPattern('Gi{0}'),
-        narrow: UnitPrefixPattern('Gi{0}'),
-      );
+    long: UnitPrefixPattern('{0} 吉位元組'),
+    short: UnitPrefixPattern('Gi{0}'),
+    narrow: UnitPrefixPattern('Gi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 兆位元組'),
-        short: UnitPrefixPattern('Ti{0}'),
-        narrow: UnitPrefixPattern('Ti{0}'),
-      );
+    long: UnitPrefixPattern('{0} 兆位元組'),
+    short: UnitPrefixPattern('Ti{0}'),
+    narrow: UnitPrefixPattern('Ti{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 拍位元組'),
-        short: UnitPrefixPattern('Pi{0}'),
-        narrow: UnitPrefixPattern('Pi{0}'),
-      );
+    long: UnitPrefixPattern('{0} 拍位元組'),
+    short: UnitPrefixPattern('Pi{0}'),
+    narrow: UnitPrefixPattern('Pi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 艾位元組'),
-        short: UnitPrefixPattern('Ei{0}'),
-        narrow: UnitPrefixPattern('Ei{0}'),
-      );
+    long: UnitPrefixPattern('{0} 艾位元組'),
+    short: UnitPrefixPattern('Ei{0}'),
+    narrow: UnitPrefixPattern('Ei{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 皆位元組'),
-        short: UnitPrefixPattern('Zi{0}'),
-        narrow: UnitPrefixPattern('Zi{0}'),
-      );
+    long: UnitPrefixPattern('{0} 皆位元組'),
+    short: UnitPrefixPattern('Zi{0}'),
+    narrow: UnitPrefixPattern('Zi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} 佑位元組'),
-        short: UnitPrefixPattern('Yi{0}'),
-        narrow: UnitPrefixPattern('Yi{0}'),
-      );
+    long: UnitPrefixPattern('{0} 佑位元組'),
+    short: UnitPrefixPattern('Yi{0}'),
+    narrow: UnitPrefixPattern('Yi{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('每{1} {0}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('每{1} {0}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}-{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}-{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'G 力',
-          one: '{0} g-force',
-          other: '{0} G 力',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'G 力',
-          one: '{0} G',
-          other: '{0} G 力',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'G 力',
-          one: '{0}G',
-          other: '{0}G',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'G 力',
+      one: '{0} g-force',
+      other: '{0} G 力',
+    ),
+    short: UnitCountPattern(_locale, 'G 力', one: '{0} G', other: '{0} G 力'),
+    narrow: UnitCountPattern(_locale, 'G 力', one: '{0}G', other: '{0}G'),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每平方秒公尺',
-          one: '{0} meter per second squared',
-          other: '每平方秒 {0} 公尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公尺/平方秒',
-          one: '{0} m/s²',
-          other: '{0} 公尺/平方秒',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公尺/平方秒',
-          one: '{0}m/s²',
-          other: '{0}公尺/平方秒',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每平方秒公尺',
+      one: '{0} meter per second squared',
+      other: '每平方秒 {0} 公尺',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '公尺/平方秒',
+      one: '{0} m/s²',
+      other: '{0} 公尺/平方秒',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '公尺/平方秒',
+      one: '{0}m/s²',
+      other: '{0}公尺/平方秒',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '圈數',
-          one: '{0} revolution',
-          other: '{0} 圈',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '圈數',
-          one: '{0} rev',
-          other: '{0} 圈',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '圈數',
-          one: '{0}rev',
-          other: '{0}圈',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '圈數',
+      one: '{0} revolution',
+      other: '{0} 圈',
+    ),
+    short: UnitCountPattern(_locale, '圈數', one: '{0} rev', other: '{0} 圈'),
+    narrow: UnitCountPattern(_locale, '圈數', one: '{0}rev', other: '{0}圈'),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '弧度',
-          one: '{0} radian',
-          other: '{0} 弧度',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '弧度',
-          one: '{0} rad',
-          other: '{0} 弧度',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '弧度',
-          one: '{0}rad',
-          other: '{0}弧度',
-        ),
-      );
+    long: UnitCountPattern(_locale, '弧度', one: '{0} radian', other: '{0} 弧度'),
+    short: UnitCountPattern(_locale, '弧度', one: '{0} rad', other: '{0} 弧度'),
+    narrow: UnitCountPattern(_locale, '弧度', one: '{0}rad', other: '{0}弧度'),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '角度',
-          one: '{0} degree',
-          other: '{0} 度',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '角度',
-          one: '{0} deg',
-          other: '{0} 度',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '角度',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(_locale, '角度', one: '{0} degree', other: '{0} 度'),
+    short: UnitCountPattern(_locale, '角度', one: '{0} deg', other: '{0} 度'),
+    narrow: UnitCountPattern(_locale, '角度', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '角分',
-          one: '{0} arcminute',
-          other: '{0} 角分',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '角分',
-          one: '{0} arcmin',
-          other: '{0} 角分',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '角分',
-          one: '{0}′',
-          other: '{0}角分',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '角分',
+      one: '{0} arcminute',
+      other: '{0} 角分',
+    ),
+    short: UnitCountPattern(_locale, '角分', one: '{0} arcmin', other: '{0} 角分'),
+    narrow: UnitCountPattern(_locale, '角分', one: '{0}′', other: '{0}角分'),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '角秒',
-          one: '{0} arcsecond',
-          other: '{0} 角秒',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '角秒',
-          one: '{0} arcsec',
-          other: '{0} 角秒',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '角秒',
-          one: '{0}″',
-          other: '{0}角秒',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '角秒',
+      one: '{0} arcsecond',
+      other: '{0} 角秒',
+    ),
+    short: UnitCountPattern(_locale, '角秒', one: '{0} arcsec', other: '{0} 角秒'),
+    narrow: UnitCountPattern(_locale, '角秒', one: '{0}″', other: '{0}角秒'),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '平方公里',
-          one: '{0} square kilometer',
-          other: '{0} 平方公里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '平方公里',
-          one: '{0} km²',
-          other: '{0} 平方公里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '平方公里',
-          one: '{0}km²',
-          other: '{0}km²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '平方公里',
+      one: '{0} square kilometer',
+      other: '{0} 平方公里',
+    ),
+    short: UnitCountPattern(_locale, '平方公里', one: '{0} km²', other: '{0} 平方公里'),
+    narrow: UnitCountPattern(_locale, '平方公里', one: '{0}km²', other: '{0}km²'),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公頃',
-          one: '{0} hectare',
-          other: '{0} 公頃',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公頃',
-          one: '{0} ha',
-          other: '{0} 公頃',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公頃',
-          one: '{0}ha',
-          other: '{0}公頃',
-        ),
-      );
+    long: UnitCountPattern(_locale, '公頃', one: '{0} hectare', other: '{0} 公頃'),
+    short: UnitCountPattern(_locale, '公頃', one: '{0} ha', other: '{0} 公頃'),
+    narrow: UnitCountPattern(_locale, '公頃', one: '{0}ha', other: '{0}公頃'),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '平方公尺',
-          one: '{0} square meter',
-          other: '{0} 平方公尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '平方公尺',
-          one: '{0} m²',
-          other: '{0} 平方公尺',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '平方公尺',
-          one: '{0}m²',
-          other: '{0}m²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '平方公尺',
+      one: '{0} square meter',
+      other: '{0} 平方公尺',
+    ),
+    short: UnitCountPattern(_locale, '平方公尺', one: '{0} m²', other: '{0} 平方公尺'),
+    narrow: UnitCountPattern(_locale, '平方公尺', one: '{0}m²', other: '{0}m²'),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '平方公分',
-          one: '{0} square centimeter',
-          other: '{0} 平方公分',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '平方公分',
-          one: '{0} cm²',
-          other: '{0} 平方公分',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '平方公分',
-          one: '{0}cm²',
-          other: '{0}cm²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '平方公分',
+      one: '{0} square centimeter',
+      other: '{0} 平方公分',
+    ),
+    short: UnitCountPattern(_locale, '平方公分', one: '{0} cm²', other: '{0} 平方公分'),
+    narrow: UnitCountPattern(_locale, '平方公分', one: '{0}cm²', other: '{0}cm²'),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '平方英里',
-          one: '{0} square mile',
-          other: '{0} 平方英里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '平方英里',
-          one: '{0} sq mi',
-          other: '{0} 平方英里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '平方英里',
-          one: '{0}mi²',
-          other: '{0}平方英里',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '平方英里',
+      one: '{0} square mile',
+      other: '{0} 平方英里',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '平方英里',
+      one: '{0} sq mi',
+      other: '{0} 平方英里',
+    ),
+    narrow: UnitCountPattern(_locale, '平方英里', one: '{0}mi²', other: '{0}平方英里'),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英畝',
-          one: '{0} acre',
-          other: '{0} 英畝',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英畝',
-          one: '{0} ac',
-          other: '{0} 英畝',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英畝',
-          one: '{0}ac',
-          other: '{0}英畝',
-        ),
-      );
+    long: UnitCountPattern(_locale, '英畝', one: '{0} acre', other: '{0} 英畝'),
+    short: UnitCountPattern(_locale, '英畝', one: '{0} ac', other: '{0} 英畝'),
+    narrow: UnitCountPattern(_locale, '英畝', one: '{0}ac', other: '{0}英畝'),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '平方碼',
-          one: '{0} square yard',
-          other: '{0} 平方碼',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '平方碼',
-          one: '{0} yd²',
-          other: '{0} 平方碼',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '平方碼',
-          one: '{0}yd²',
-          other: '{0}yd²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '平方碼',
+      one: '{0} square yard',
+      other: '{0} 平方碼',
+    ),
+    short: UnitCountPattern(_locale, '平方碼', one: '{0} yd²', other: '{0} 平方碼'),
+    narrow: UnitCountPattern(_locale, '平方碼', one: '{0}yd²', other: '{0}yd²'),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '平方英尺',
-          one: '{0} square foot',
-          other: '{0} 平方英尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '平方英尺',
-          one: '{0} sq ft',
-          other: '{0} 平方英尺',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '平方英尺',
-          one: '{0}ft²',
-          other: '{0}平方英尺',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '平方英尺',
+      one: '{0} square foot',
+      other: '{0} 平方英尺',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '平方英尺',
+      one: '{0} sq ft',
+      other: '{0} 平方英尺',
+    ),
+    narrow: UnitCountPattern(_locale, '平方英尺', one: '{0}ft²', other: '{0}平方英尺'),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '平方英寸',
-          one: '{0} square inch',
-          other: '{0} 平方英寸',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '平方英寸',
-          one: '{0} in²',
-          other: '{0} 平方英寸',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '平方英寸',
-          one: '{0}in²',
-          other: '{0}平方英寸',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '平方英寸',
+      one: '{0} square inch',
+      other: '{0} 平方英寸',
+    ),
+    short: UnitCountPattern(_locale, '平方英寸', one: '{0} in²', other: '{0} 平方英寸'),
+    narrow: UnitCountPattern(_locale, '平方英寸', one: '{0}in²', other: '{0}平方英寸'),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '杜納畝',
-          one: '{0} dunam',
-          other: '{0} 杜納畝',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '杜納畝',
-          one: '{0} dunam',
-          other: '{0} 杜納畝',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '杜納畝',
-          one: '{0}dunam',
-          other: '{0}杜納畝',
-        ),
-      );
+    long: UnitCountPattern(_locale, '杜納畝', one: '{0} dunam', other: '{0} 杜納畝'),
+    short: UnitCountPattern(_locale, '杜納畝', one: '{0} dunam', other: '{0} 杜納畝'),
+    narrow: UnitCountPattern(_locale, '杜納畝', one: '{0}dunam', other: '{0}杜納畝'),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '克拉',
-          one: '{0} karat',
-          other: '{0} 克拉',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '克拉',
-          one: '{0} kt',
-          other: '{0} 克拉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '克拉',
-          one: '{0}kt',
-          other: '{0}克拉',
-        ),
-      );
+    long: UnitCountPattern(_locale, '克拉', one: '{0} karat', other: '{0} 克拉'),
+    short: UnitCountPattern(_locale, '克拉', one: '{0} kt', other: '{0} 克拉'),
+    narrow: UnitCountPattern(_locale, '克拉', one: '{0}kt', other: '{0}克拉'),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每分升毫克',
-          one: '{0} milligram per deciliter',
-          other: '每分升 {0} 毫克',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫克/分升',
-          one: '{0} mg/dL',
-          other: '{0} 毫克/分升',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫克/分升',
-          one: '{0}mg/dL',
-          other: '{0}毫克/分升',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每分升毫克',
+      one: '{0} milligram per deciliter',
+      other: '每分升 {0} 毫克',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '毫克/分升',
+      one: '{0} mg/dL',
+      other: '{0} 毫克/分升',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '毫克/分升',
+      one: '{0}mg/dL',
+      other: '{0}毫克/分升',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每公升毫莫耳',
-          one: '{0} millimole per liter',
-          other: '每公升 {0} 毫莫耳',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫莫耳/公升',
-          one: '{0} mmol/L',
-          other: '{0} 毫莫耳/公升',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫莫耳/公升',
-          one: '{0}mmol/L',
-          other: '{0}毫莫耳/公升',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每公升毫莫耳',
+      one: '{0} millimole per liter',
+      other: '每公升 {0} 毫莫耳',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '毫莫耳/公升',
+      one: '{0} mmol/L',
+      other: '{0} 毫莫耳/公升',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '毫莫耳/公升',
+      one: '{0}mmol/L',
+      other: '{0}毫莫耳/公升',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '個項目',
-          one: '{0} item',
-          other: '{0} 個項目',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '個項目',
-          one: '{0} item',
-          other: '{0} 個項目',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '個項目',
-          one: '{0}item',
-          other: '{0}個項目',
-        ),
-      );
+    long: UnitCountPattern(_locale, '個項目', one: '{0} item', other: '{0} 個項目'),
+    short: UnitCountPattern(_locale, '個項目', one: '{0} item', other: '{0} 個項目'),
+    narrow: UnitCountPattern(_locale, '個項目', one: '{0}item', other: '{0}個項目'),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '百萬分率',
-          one: '{0} part per million',
-          other: '{0} 百萬分率',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '百萬分率',
-          one: '{0} ppm',
-          other: '{0} 百萬分率',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '百萬分率',
-          one: '{0}ppm',
-          other: '{0}百萬分率',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '百萬分率',
+      one: '{0} part per million',
+      other: '{0} 百萬分率',
+    ),
+    short: UnitCountPattern(_locale, '百萬分率', one: '{0} ppm', other: '{0} 百萬分率'),
+    narrow: UnitCountPattern(_locale, '百萬分率', one: '{0}ppm', other: '{0}百萬分率'),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '百分比',
-          one: '{0} percent',
-          other: '{0}%',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '百分比',
-          one: '{0}%',
-          other: '{0}%',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '百分比',
-          one: '{0}%',
-          other: '{0}%',
-        ),
-      );
+    long: UnitCountPattern(_locale, '百分比', one: '{0} percent', other: '{0}%'),
+    short: UnitCountPattern(_locale, '百分比', one: '{0}%', other: '{0}%'),
+    narrow: UnitCountPattern(_locale, '百分比', one: '{0}%', other: '{0}%'),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '千分比',
-          one: '{0} permille',
-          other: '{0}‰',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '千分比',
-          one: '{0}‰',
-          other: '{0}‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '千分比',
-          one: '{0}‰',
-          other: '{0}‰',
-        ),
-      );
+    long: UnitCountPattern(_locale, '千分比', one: '{0} permille', other: '{0}‰'),
+    short: UnitCountPattern(_locale, '千分比', one: '{0}‰', other: '{0}‰'),
+    narrow: UnitCountPattern(_locale, '千分比', one: '{0}‰', other: '{0}‰'),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} permyriad',
-          other: '{0}‱',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0}‱',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0}‱',
-          other: '{0}‱',
-        ),
-      );
+    long: UnitCountPattern(_locale, '‱', one: '{0} permyriad', other: '{0}‱'),
+    short: UnitCountPattern(_locale, '‱', one: '{0}‱', other: '{0}‱'),
+    narrow: UnitCountPattern(_locale, '‱', one: '{0}‱', other: '{0}‱'),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '莫耳',
-          one: '{0} mole',
-          other: '{0} 莫耳',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '莫耳',
-          one: '{0} mol',
-          other: '{0} 莫耳',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '莫耳',
-          one: '{0}mol',
-          other: '{0}莫耳',
-        ),
-      );
+    long: UnitCountPattern(_locale, '莫耳', one: '{0} mole', other: '{0} 莫耳'),
+    short: UnitCountPattern(_locale, '莫耳', one: '{0} mol', other: '{0} 莫耳'),
+    narrow: UnitCountPattern(_locale, '莫耳', one: '{0}mol', other: '{0}莫耳'),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每公里公升',
-          one: '{0} liter per kilometer',
-          other: '每公里 {0} 公升',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公升/公里',
-          one: '{0} L/km',
-          other: '{0} 升/公里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公升/公里',
-          one: '{0}L/km',
-          other: '{0}升/公里',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每公里公升',
+      one: '{0} liter per kilometer',
+      other: '每公里 {0} 公升',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '公升/公里',
+      one: '{0} L/km',
+      other: '{0} 升/公里',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '公升/公里',
+      one: '{0}L/km',
+      other: '{0}升/公里',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每 100 公里公升',
-          one: '{0} liter per 100 kilometers',
-          other: '每 100 公里 {0} 公升',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '升/100 公里',
-          one: '{0} L/100 km',
-          other: '{0} 升/100 公里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '升/100公里',
-          one: '{0}L/100km',
-          other: '{0}升/100公里',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每 100 公里公升',
+      one: '{0} liter per 100 kilometers',
+      other: '每 100 公里 {0} 公升',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '升/100 公里',
+      one: '{0} L/100 km',
+      other: '{0} 升/100 公里',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '升/100公里',
+      one: '{0}L/100km',
+      other: '{0}升/100公里',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每加侖英里',
-          one: '{0} mile per gallon',
-          other: '每加侖 {0} 英里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英里/加侖',
-          one: '{0} mpg',
-          other: '{0} 英里/加侖',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英里/加侖',
-          one: '{0}mpg',
-          other: '{0}英里/加侖',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每加侖英里',
+      one: '{0} mile per gallon',
+      other: '每加侖 {0} 英里',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英里/加侖',
+      one: '{0} mpg',
+      other: '{0} 英里/加侖',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英里/加侖',
+      one: '{0}mpg',
+      other: '{0}英里/加侖',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每英制加侖英里',
-          one: '{0} mile per Imp. gallon',
-          other: '每英制加侖 {0} 英里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英里/英制加侖',
-          one: '{0} mpg Imp.',
-          other: '{0} 英里/英制加侖',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英里/英制加侖',
-          one: '{0}m/gUK',
-          other: '{0}英里/英制加侖',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每英制加侖英里',
+      one: '{0} mile per Imp. gallon',
+      other: '每英制加侖 {0} 英里',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英里/英制加侖',
+      one: '{0} mpg Imp.',
+      other: '{0} 英里/英制加侖',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英里/英制加侖',
+      one: '{0}m/gUK',
+      other: '{0}英里/英制加侖',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} petabyte',
-          other: '{0} PB',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} PB',
-          other: '{0} PB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0}PB',
-          other: '{0}PB',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'PB', one: '{0} petabyte', other: '{0} PB'),
+    short: UnitCountPattern(_locale, 'PB', one: '{0} PB', other: '{0} PB'),
+    narrow: UnitCountPattern(_locale, 'PB', one: '{0}PB', other: '{0}PB'),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} terabyte',
-          other: '{0} TB',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} TB',
-          other: '{0} TB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0}TB',
-          other: '{0}TB',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'TB', one: '{0} terabyte', other: '{0} TB'),
+    short: UnitCountPattern(_locale, 'TB', one: '{0} TB', other: '{0} TB'),
+    narrow: UnitCountPattern(_locale, 'TB', one: '{0}TB', other: '{0}TB'),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} terabit',
-          other: '{0} Tb',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} Tb',
-          other: '{0} Tb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0}Tb',
-          other: '{0}Tb',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'Tb', one: '{0} terabit', other: '{0} Tb'),
+    short: UnitCountPattern(_locale, 'Tb', one: '{0} Tb', other: '{0} Tb'),
+    narrow: UnitCountPattern(_locale, 'Tb', one: '{0}Tb', other: '{0}Tb'),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} gigabyte',
-          other: '{0} GB',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} GB',
-          other: '{0} GB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0}GB',
-          other: '{0}GB',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'GB', one: '{0} gigabyte', other: '{0} GB'),
+    short: UnitCountPattern(_locale, 'GB', one: '{0} GB', other: '{0} GB'),
+    narrow: UnitCountPattern(_locale, 'GB', one: '{0}GB', other: '{0}GB'),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} gigabit',
-          other: '{0} Gb',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} Gb',
-          other: '{0} Gb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0}Gb',
-          other: '{0}Gb',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'Gb', one: '{0} gigabit', other: '{0} Gb'),
+    short: UnitCountPattern(_locale, 'Gb', one: '{0} Gb', other: '{0} Gb'),
+    narrow: UnitCountPattern(_locale, 'Gb', one: '{0}Gb', other: '{0}Gb'),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} megabyte',
-          other: '{0} MB',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} MB',
-          other: '{0} MB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0}MB',
-          other: '{0}MB',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'MB', one: '{0} megabyte', other: '{0} MB'),
+    short: UnitCountPattern(_locale, 'MB', one: '{0} MB', other: '{0} MB'),
+    narrow: UnitCountPattern(_locale, 'MB', one: '{0}MB', other: '{0}MB'),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} megabit',
-          other: '{0} Mb',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} Mb',
-          other: '{0} Mb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0}Mb',
-          other: '{0}Mb',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'Mb', one: '{0} megabit', other: '{0} Mb'),
+    short: UnitCountPattern(_locale, 'Mb', one: '{0} Mb', other: '{0} Mb'),
+    narrow: UnitCountPattern(_locale, 'Mb', one: '{0}Mb', other: '{0}Mb'),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kilobyte',
-          other: '{0} kB',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kB',
-          other: '{0} kB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0}kB',
-          other: '{0}kB',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'kB', one: '{0} kilobyte', other: '{0} kB'),
+    short: UnitCountPattern(_locale, 'kB', one: '{0} kB', other: '{0} kB'),
+    narrow: UnitCountPattern(_locale, 'kB', one: '{0}kB', other: '{0}kB'),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kilobit',
-          other: '{0} kb',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kb',
-          other: '{0} kb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0}kb',
-          other: '{0}kb',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'kb', one: '{0} kilobit', other: '{0} kb'),
+    short: UnitCountPattern(_locale, 'kb', one: '{0} kb', other: '{0} kb'),
+    narrow: UnitCountPattern(_locale, 'kb', one: '{0}kb', other: '{0}kb'),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'byte',
-          one: '{0} byte',
-          other: '{0} byte',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'byte',
-          one: '{0} byte',
-          other: '{0} byte',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'byte',
-          one: '{0}B',
-          other: '{0}byte',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'byte', one: '{0} byte', other: '{0} byte'),
+    short: UnitCountPattern(
+      _locale,
+      'byte',
+      one: '{0} byte',
+      other: '{0} byte',
+    ),
+    narrow: UnitCountPattern(_locale, 'byte', one: '{0}B', other: '{0}byte'),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} bit',
-          other: '{0} bit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} bit',
-          other: '{0} bit',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0}bit',
-          other: '{0}bit',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'bit', one: '{0} bit', other: '{0} bit'),
+    short: UnitCountPattern(_locale, 'bit', one: '{0} bit', other: '{0} bit'),
+    narrow: UnitCountPattern(_locale, 'bit', one: '{0}bit', other: '{0}bit'),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '世紀',
-          one: '{0} century',
-          other: '{0} 個世紀',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '世紀',
-          one: '{0} c',
-          other: '{0} 世紀',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '世紀',
-          one: '{0}c',
-          other: '{0} 世紀',
-        ),
-      );
+    long: UnitCountPattern(_locale, '世紀', one: '{0} century', other: '{0} 個世紀'),
+    short: UnitCountPattern(_locale, '世紀', one: '{0} c', other: '{0} 世紀'),
+    narrow: UnitCountPattern(_locale, '世紀', one: '{0}c', other: '{0} 世紀'),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '10 年',
-          one: '{0} decade',
-          other: '{0}0 年',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '10 年',
-          one: '{0} dec',
-          other: '{0}0 年',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '10 年',
-          one: '{0}dec',
-          other: '{0}0 年',
-        ),
-      );
+    long: UnitCountPattern(_locale, '10 年', one: '{0} decade', other: '{0}0 年'),
+    short: UnitCountPattern(_locale, '10 年', one: '{0} dec', other: '{0}0 年'),
+    narrow: UnitCountPattern(_locale, '10 年', one: '{0}dec', other: '{0}0 年'),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '年',
-          one: '{0} year',
-          other: '{0} 年',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '年',
-          one: '{0} yr',
-          other: '{0} 年',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '年',
-          one: '{0}y',
-          other: '{0} 年',
-        ),
-      );
+    long: UnitCountPattern(_locale, '年', one: '{0} year', other: '{0} 年'),
+    short: UnitCountPattern(_locale, '年', one: '{0} yr', other: '{0} 年'),
+    narrow: UnitCountPattern(_locale, '年', one: '{0}y', other: '{0} 年'),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '刻',
-          one: '{0} quarter',
-          other: '{0} 刻',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '刻',
-          one: '{0} qtr',
-          other: '{0} 刻',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '刻',
-          one: '{0}q',
-          other: '{0} 刻',
-        ),
-      );
+    long: UnitCountPattern(_locale, '刻', one: '{0} quarter', other: '{0} 刻'),
+    short: UnitCountPattern(_locale, '刻', one: '{0} qtr', other: '{0} 刻'),
+    narrow: UnitCountPattern(_locale, '刻', one: '{0}q', other: '{0} 刻'),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '月',
-          one: '{0} month',
-          other: '{0} 個月',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '月',
-          one: '{0} mth',
-          other: '{0} 個月',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '月',
-          one: '{0}m',
-          other: '{0} 個月',
-        ),
-      );
+    long: UnitCountPattern(_locale, '月', one: '{0} month', other: '{0} 個月'),
+    short: UnitCountPattern(_locale, '月', one: '{0} mth', other: '{0} 個月'),
+    narrow: UnitCountPattern(_locale, '月', one: '{0}m', other: '{0} 個月'),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '週',
-          one: '{0} week',
-          other: '{0} 週',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '週',
-          one: '{0} wk',
-          other: '{0} 週',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '週',
-          one: '{0}w',
-          other: '{0} 週',
-        ),
-      );
+    long: UnitCountPattern(_locale, '週', one: '{0} week', other: '{0} 週'),
+    short: UnitCountPattern(_locale, '週', one: '{0} wk', other: '{0} 週'),
+    narrow: UnitCountPattern(_locale, '週', one: '{0}w', other: '{0} 週'),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '天',
-          one: '{0} day',
-          other: '{0} 天',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '天',
-          one: '{0} day',
-          other: '{0} 天',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '天',
-          one: '{0}d',
-          other: '{0} 天',
-        ),
-      );
+    long: UnitCountPattern(_locale, '天', one: '{0} day', other: '{0} 天'),
+    short: UnitCountPattern(_locale, '天', one: '{0} day', other: '{0} 天'),
+    narrow: UnitCountPattern(_locale, '天', one: '{0}d', other: '{0} 天'),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '小時',
-          one: '{0} hour',
-          other: '{0} 小時',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '小時',
-          one: '{0} hr',
-          other: '{0} 小時',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '小時',
-          one: '{0}h',
-          other: '{0} 小時',
-        ),
-      );
+    long: UnitCountPattern(_locale, '小時', one: '{0} hour', other: '{0} 小時'),
+    short: UnitCountPattern(_locale, '小時', one: '{0} hr', other: '{0} 小時'),
+    narrow: UnitCountPattern(_locale, '小時', one: '{0}h', other: '{0} 小時'),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '分鐘',
-          one: '{0} minute',
-          other: '{0} 分鐘',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '分鐘',
-          one: '{0} min',
-          other: '{0} 分鐘',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '分鐘',
-          one: '{0}m',
-          other: '{0} 分鐘',
-        ),
-      );
+    long: UnitCountPattern(_locale, '分鐘', one: '{0} minute', other: '{0} 分鐘'),
+    short: UnitCountPattern(_locale, '分鐘', one: '{0} min', other: '{0} 分鐘'),
+    narrow: UnitCountPattern(_locale, '分鐘', one: '{0}m', other: '{0} 分鐘'),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '秒',
-          one: '{0} second',
-          other: '{0} 秒',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '秒',
-          one: '{0} sec',
-          other: '{0} 秒',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '秒',
-          one: '{0}s',
-          other: '{0} 秒',
-        ),
-      );
+    long: UnitCountPattern(_locale, '秒', one: '{0} second', other: '{0} 秒'),
+    short: UnitCountPattern(_locale, '秒', one: '{0} sec', other: '{0} 秒'),
+    narrow: UnitCountPattern(_locale, '秒', one: '{0}s', other: '{0} 秒'),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '毫秒',
-          one: '{0} millisecond',
-          other: '{0} 毫秒',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫秒',
-          one: '{0} ms',
-          other: '{0} 毫秒',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫秒',
-          one: '{0}ms',
-          other: '{0} 毫秒',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '毫秒',
+      one: '{0} millisecond',
+      other: '{0} 毫秒',
+    ),
+    short: UnitCountPattern(_locale, '毫秒', one: '{0} ms', other: '{0} 毫秒'),
+    narrow: UnitCountPattern(_locale, '毫秒', one: '{0}ms', other: '{0} 毫秒'),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '微秒',
-          one: '{0} microsecond',
-          other: '{0} 微秒',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '微秒',
-          one: '{0} μs',
-          other: '{0} 微秒',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '微秒',
-          one: '{0}μs',
-          other: '{0}μs',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '微秒',
+      one: '{0} microsecond',
+      other: '{0} 微秒',
+    ),
+    short: UnitCountPattern(_locale, '微秒', one: '{0} μs', other: '{0} 微秒'),
+    narrow: UnitCountPattern(_locale, '微秒', one: '{0}μs', other: '{0}μs'),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '奈秒',
-          one: '{0} nanosecond',
-          other: '{0} 奈秒',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '奈秒',
-          one: '{0} ns',
-          other: '{0} 奈秒',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '奈秒',
-          one: '{0}ns',
-          other: '{0}ns',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '奈秒',
+      one: '{0} nanosecond',
+      other: '{0} 奈秒',
+    ),
+    short: UnitCountPattern(_locale, '奈秒', one: '{0} ns', other: '{0} 奈秒'),
+    narrow: UnitCountPattern(_locale, '奈秒', one: '{0}ns', other: '{0}ns'),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '安培',
-          one: '{0} ampere',
-          other: '{0} 安培',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '安培',
-          one: '{0} A',
-          other: '{0} 安培',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '安培',
-          one: '{0}A',
-          other: '{0}安培',
-        ),
-      );
+    long: UnitCountPattern(_locale, '安培', one: '{0} ampere', other: '{0} 安培'),
+    short: UnitCountPattern(_locale, '安培', one: '{0} A', other: '{0} 安培'),
+    narrow: UnitCountPattern(_locale, '安培', one: '{0}A', other: '{0}安培'),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '毫安培',
-          one: '{0} milliampere',
-          other: '{0} 毫安培',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫安培',
-          one: '{0} mA',
-          other: '{0} 毫安培',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫安培',
-          one: '{0}mA',
-          other: '{0}毫安培',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '毫安培',
+      one: '{0} milliampere',
+      other: '{0} 毫安培',
+    ),
+    short: UnitCountPattern(_locale, '毫安培', one: '{0} mA', other: '{0} 毫安培'),
+    narrow: UnitCountPattern(_locale, '毫安培', one: '{0}mA', other: '{0}毫安培'),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '歐姆',
-          one: '{0} ohm',
-          other: '{0} 歐姆',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '歐姆',
-          one: '{0} Ω',
-          other: '{0} 歐姆',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '歐姆',
-          one: '{0}Ω',
-          other: '{0}歐姆',
-        ),
-      );
+    long: UnitCountPattern(_locale, '歐姆', one: '{0} ohm', other: '{0} 歐姆'),
+    short: UnitCountPattern(_locale, '歐姆', one: '{0} Ω', other: '{0} 歐姆'),
+    narrow: UnitCountPattern(_locale, '歐姆', one: '{0}Ω', other: '{0}歐姆'),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '伏特',
-          one: '{0} volt',
-          other: '{0} 伏特',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '伏特',
-          one: '{0} V',
-          other: '{0} 伏特',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '伏特',
-          one: '{0}V',
-          other: '{0}伏特',
-        ),
-      );
+    long: UnitCountPattern(_locale, '伏特', one: '{0} volt', other: '{0} 伏特'),
+    short: UnitCountPattern(_locale, '伏特', one: '{0} V', other: '{0} 伏特'),
+    narrow: UnitCountPattern(_locale, '伏特', one: '{0}V', other: '{0}伏特'),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '千卡路里',
-          one: '{0} kilocalorie',
-          other: '{0} 千卡路里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '千卡',
-          one: '{0} kcal',
-          other: '{0} 千卡',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '千卡',
-          one: '{0}kcal',
-          other: '{0}千卡',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '千卡路里',
+      one: '{0} kilocalorie',
+      other: '{0} 千卡路里',
+    ),
+    short: UnitCountPattern(_locale, '千卡', one: '{0} kcal', other: '{0} 千卡'),
+    narrow: UnitCountPattern(_locale, '千卡', one: '{0}kcal', other: '{0}千卡'),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '卡路里',
-          one: '{0} calorie',
-          other: '{0} 卡路里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '卡路里',
-          one: '{0} cal',
-          other: '{0} 卡',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '卡路里',
-          one: '{0}cal',
-          other: '{0}卡',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '卡路里',
+      one: '{0} calorie',
+      other: '{0} 卡路里',
+    ),
+    short: UnitCountPattern(_locale, '卡路里', one: '{0} cal', other: '{0} 卡'),
+    narrow: UnitCountPattern(_locale, '卡路里', one: '{0}cal', other: '{0}卡'),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '卡路里',
-          one: '{0} Calorie',
-          other: '{0} 大卡',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '大卡',
-          one: '{0} Cal',
-          other: '{0} 大卡',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '大卡',
-          one: '{0}Cal',
-          other: '{0}大卡',
-        ),
-      );
+    long: UnitCountPattern(_locale, '卡路里', one: '{0} Calorie', other: '{0} 大卡'),
+    short: UnitCountPattern(_locale, '大卡', one: '{0} Cal', other: '{0} 大卡'),
+    narrow: UnitCountPattern(_locale, '大卡', one: '{0}Cal', other: '{0}大卡'),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '千焦耳',
-          one: '{0} kilojoule',
-          other: '{0} 千焦耳',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '千焦耳',
-          one: '{0} kJ',
-          other: '{0} 千焦',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '千焦耳',
-          one: '{0}kJ',
-          other: '{0}千焦耳',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '千焦耳',
+      one: '{0} kilojoule',
+      other: '{0} 千焦耳',
+    ),
+    short: UnitCountPattern(_locale, '千焦耳', one: '{0} kJ', other: '{0} 千焦'),
+    narrow: UnitCountPattern(_locale, '千焦耳', one: '{0}kJ', other: '{0}千焦耳'),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '焦耳',
-          one: '{0} joule',
-          other: '{0} 焦耳',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '焦耳',
-          one: '{0} J',
-          other: '{0} 焦',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '焦耳',
-          one: '{0}J',
-          other: '{0}焦',
-        ),
-      );
+    long: UnitCountPattern(_locale, '焦耳', one: '{0} joule', other: '{0} 焦耳'),
+    short: UnitCountPattern(_locale, '焦耳', one: '{0} J', other: '{0} 焦'),
+    narrow: UnitCountPattern(_locale, '焦耳', one: '{0}J', other: '{0}焦'),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '千瓦小時',
-          one: '{0} kilowatt hour',
-          other: '{0} 千瓦小時',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '千瓦小時',
-          one: '{0} kWh',
-          other: '{0} 千瓦小時',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '千瓦小時',
-          one: '{0}kWh',
-          other: '{0}千瓦小時',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '千瓦小時',
+      one: '{0} kilowatt hour',
+      other: '{0} 千瓦小時',
+    ),
+    short: UnitCountPattern(_locale, '千瓦小時', one: '{0} kWh', other: '{0} 千瓦小時'),
+    narrow: UnitCountPattern(_locale, '千瓦小時', one: '{0}kWh', other: '{0}千瓦小時'),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '電子伏特',
-          one: '{0} electronvolt',
-          other: '{0} 電子伏特',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '電子伏特',
-          one: '{0} eV',
-          other: '{0} 電子伏特',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '電子伏特',
-          one: '{0}eV',
-          other: '{0}電子伏特',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '電子伏特',
+      one: '{0} electronvolt',
+      other: '{0} 電子伏特',
+    ),
+    short: UnitCountPattern(_locale, '電子伏特', one: '{0} eV', other: '{0} 電子伏特'),
+    narrow: UnitCountPattern(_locale, '電子伏特', one: '{0}eV', other: '{0}電子伏特'),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英熱單位',
-          one: '{0} British thermal unit',
-          other: '{0} 英熱單位',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英熱單位',
-          one: '{0} Btu',
-          other: '{0} 英熱單位',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英熱單位',
-          one: '{0}Btu',
-          other: '{0}英熱單位',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '英熱單位',
+      one: '{0} British thermal unit',
+      other: '{0} 英熱單位',
+    ),
+    short: UnitCountPattern(_locale, '英熱單位', one: '{0} Btu', other: '{0} 英熱單位'),
+    narrow: UnitCountPattern(_locale, '英熱單位', one: '{0}Btu', other: '{0}英熱單位'),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '美制撒姆',
-          one: '{0} US therm',
-          other: '{0} 美制撒姆',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '美制撒姆',
-          one: '{0} US therm',
-          other: '{0} 美制撒姆',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '美制撒姆',
-          one: '{0}US therm',
-          other: '{0}美制撒姆',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '美制撒姆',
+      one: '{0} US therm',
+      other: '{0} 美制撒姆',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '美制撒姆',
+      one: '{0} US therm',
+      other: '{0} 美制撒姆',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '美制撒姆',
+      one: '{0}US therm',
+      other: '{0}美制撒姆',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '磅力',
-          one: '{0} pound of force',
-          other: '{0} 磅力',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} lbf',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0}lbf',
-          other: '{0}lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '磅力',
+      one: '{0} pound of force',
+      other: '{0} 磅力',
+    ),
+    short: UnitCountPattern(_locale, 'lbf', one: '{0} lbf', other: '{0} lbf'),
+    narrow: UnitCountPattern(_locale, 'lbf', one: '{0}lbf', other: '{0}lbf'),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '牛頓',
-          one: '{0} newton',
-          other: '{0} 牛頓',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} N',
-          other: '{0} N',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0}N',
-          other: '{0}N',
-        ),
-      );
+    long: UnitCountPattern(_locale, '牛頓', one: '{0} newton', other: '{0} 牛頓'),
+    short: UnitCountPattern(_locale, 'N', one: '{0} N', other: '{0} N'),
+    narrow: UnitCountPattern(_locale, 'N', one: '{0}N', other: '{0}N'),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每百公里千瓦小時',
-          one: '{0} kilowatt-hour per 100 kilometers',
-          other: '{0} kWh/100km',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} kWh/100km',
-          other: '{0} kWh/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0}kWh/100km',
-          other: '{0}kWh/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每百公里千瓦小時',
+      one: '{0} kilowatt-hour per 100 kilometers',
+      other: '{0} kWh/100km',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} kWh/100km',
+      other: '{0} kWh/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0}kWh/100km',
+      other: '{0}kWh/100km',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '吉赫',
-          one: '{0} gigahertz',
-          other: '{0} 吉赫',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '吉赫',
-          one: '{0} GHz',
-          other: '{0} 吉赫',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '吉赫',
-          one: '{0}GHz',
-          other: '{0}吉赫',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '吉赫',
+      one: '{0} gigahertz',
+      other: '{0} 吉赫',
+    ),
+    short: UnitCountPattern(_locale, '吉赫', one: '{0} GHz', other: '{0} 吉赫'),
+    narrow: UnitCountPattern(_locale, '吉赫', one: '{0}GHz', other: '{0}吉赫'),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '兆赫',
-          one: '{0} megahertz',
-          other: '{0} 兆赫',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '兆赫',
-          one: '{0} MHz',
-          other: '{0} 兆赫',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '兆赫',
-          one: '{0}MHz',
-          other: '{0}兆赫',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '兆赫',
+      one: '{0} megahertz',
+      other: '{0} 兆赫',
+    ),
+    short: UnitCountPattern(_locale, '兆赫', one: '{0} MHz', other: '{0} 兆赫'),
+    narrow: UnitCountPattern(_locale, '兆赫', one: '{0}MHz', other: '{0}兆赫'),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '千赫',
-          one: '{0} kilohertz',
-          other: '{0} 千赫',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '千赫',
-          one: '{0} kHz',
-          other: '{0} 千赫',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '千赫',
-          one: '{0}kHz',
-          other: '{0}千赫',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '千赫',
+      one: '{0} kilohertz',
+      other: '{0} 千赫',
+    ),
+    short: UnitCountPattern(_locale, '千赫', one: '{0} kHz', other: '{0} 千赫'),
+    narrow: UnitCountPattern(_locale, '千赫', one: '{0}kHz', other: '{0}千赫'),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '赫茲',
-          one: '{0} hertz',
-          other: '{0} 赫茲',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '赫茲',
-          one: '{0} Hz',
-          other: '{0} 赫茲',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '赫茲',
-          one: '{0}Hz',
-          other: '{0}赫茲',
-        ),
-      );
+    long: UnitCountPattern(_locale, '赫茲', one: '{0} hertz', other: '{0} 赫茲'),
+    short: UnitCountPattern(_locale, '赫茲', one: '{0} Hz', other: '{0} 赫茲'),
+    narrow: UnitCountPattern(_locale, '赫茲', one: '{0}Hz', other: '{0}赫茲'),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0}em',
-          other: '{0}em',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'em', one: '{0} em', other: '{0} em'),
+    short: UnitCountPattern(_locale, 'em', one: '{0} em', other: '{0} em'),
+    narrow: UnitCountPattern(_locale, 'em', one: '{0}em', other: '{0}em'),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '像素',
-          one: '{0} pixel',
-          other: '{0} 像素',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'px',
-          one: '{0} px',
-          other: '{0} px',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'px',
-          one: '{0}px',
-          other: '{0}px',
-        ),
-      );
+    long: UnitCountPattern(_locale, '像素', one: '{0} pixel', other: '{0} 像素'),
+    short: UnitCountPattern(_locale, 'px', one: '{0} px', other: '{0} px'),
+    narrow: UnitCountPattern(_locale, 'px', one: '{0}px', other: '{0}px'),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '百萬像素',
-          one: '{0} megapixel',
-          other: '{0} 百萬像素',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MP',
-          one: '{0} MP',
-          other: '{0} MP',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MP',
-          one: '{0}MP',
-          other: '{0}MP',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '百萬像素',
+      one: '{0} megapixel',
+      other: '{0} 百萬像素',
+    ),
+    short: UnitCountPattern(_locale, 'MP', one: '{0} MP', other: '{0} MP'),
+    narrow: UnitCountPattern(_locale, 'MP', one: '{0}MP', other: '{0}MP'),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} pixel per centimeter',
-          other: '{0} ppcm',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} ppcm',
-          other: '{0} ppcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0}ppcm',
-          other: '{0}ppcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} pixel per centimeter',
+      other: '{0} ppcm',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} ppcm',
+      other: '{0} ppcm',
+    ),
+    narrow: UnitCountPattern(_locale, 'ppcm', one: '{0}ppcm', other: '{0}ppcm'),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0} pixel per inch',
-          other: '{0} ppi',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0} ppi',
-          other: '{0} ppi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0}ppi',
-          other: '{0}ppi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ppi',
+      one: '{0} pixel per inch',
+      other: '{0} ppi',
+    ),
+    short: UnitCountPattern(_locale, 'ppi', one: '{0} ppi', other: '{0} ppi'),
+    narrow: UnitCountPattern(_locale, 'ppi', one: '{0}ppi', other: '{0}ppi'),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: '{0} dot per centimeter',
-          other: '{0} dpcm',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: '{0} dpcm',
-          other: '{0} dpcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: '{0}dpcm',
-          other: '{0}dpcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dpcm',
+      one: '{0} dot per centimeter',
+      other: '{0} dpcm',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dpcm',
+      one: '{0} dpcm',
+      other: '{0} dpcm',
+    ),
+    narrow: UnitCountPattern(_locale, 'dpcm', one: '{0}dpcm', other: '{0}dpcm'),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: '{0} dot per inch',
-          other: '{0} dpi',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: '{0} dpi',
-          other: '{0} dpi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: '{0}dpi',
-          other: '{0}dpi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dpi',
+      one: '{0} dot per inch',
+      other: '{0} dpi',
+    ),
+    short: UnitCountPattern(_locale, 'dpi', one: '{0} dpi', other: '{0} dpi'),
+    narrow: UnitCountPattern(_locale, 'dpi', one: '{0}dpi', other: '{0}dpi'),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dots',
-          one: '{0} dot',
-          other: '{0} dots',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dots',
-          one: '{0} dot',
-          other: '{0} dots',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dot',
-          one: '{0}dot',
-          other: '{0}px',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'dots', one: '{0} dot', other: '{0} dots'),
+    short: UnitCountPattern(_locale, 'dots', one: '{0} dot', other: '{0} dots'),
+    narrow: UnitCountPattern(_locale, 'dot', one: '{0}dot', other: '{0}px'),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '地球半徑',
-          one: '{0} earth radius',
-          other: '{0} 地球半徑',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} R⊕',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0}R⊕',
-          other: '{0}R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '地球半徑',
+      one: '{0} earth radius',
+      other: '{0} 地球半徑',
+    ),
+    short: UnitCountPattern(_locale, 'R⊕', one: '{0} R⊕', other: '{0} R⊕'),
+    narrow: UnitCountPattern(_locale, 'R⊕', one: '{0}R⊕', other: '{0}R⊕'),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公里',
-          one: '{0} kilometer',
-          other: '{0} 公里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公里',
-          one: '{0} km',
-          other: '{0} 公里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公里',
-          one: '{0}km',
-          other: '{0}公里',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公里',
+      one: '{0} kilometer',
+      other: '{0} 公里',
+    ),
+    short: UnitCountPattern(_locale, '公里', one: '{0} km', other: '{0} 公里'),
+    narrow: UnitCountPattern(_locale, '公里', one: '{0}km', other: '{0}公里'),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公尺',
-          one: '{0} meter',
-          other: '{0} 公尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公尺',
-          one: '{0} m',
-          other: '{0} 公尺',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公尺',
-          one: '{0}m',
-          other: '{0}公尺',
-        ),
-      );
+    long: UnitCountPattern(_locale, '公尺', one: '{0} meter', other: '{0} 公尺'),
+    short: UnitCountPattern(_locale, '公尺', one: '{0} m', other: '{0} 公尺'),
+    narrow: UnitCountPattern(_locale, '公尺', one: '{0}m', other: '{0}公尺'),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公寸',
-          one: '{0} decimeter',
-          other: '{0} 公寸',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公寸',
-          one: '{0} dm',
-          other: '{0} 公寸',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公寸',
-          one: '{0}dm',
-          other: '{0}公寸',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公寸',
+      one: '{0} decimeter',
+      other: '{0} 公寸',
+    ),
+    short: UnitCountPattern(_locale, '公寸', one: '{0} dm', other: '{0} 公寸'),
+    narrow: UnitCountPattern(_locale, '公寸', one: '{0}dm', other: '{0}公寸'),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公分',
-          one: '{0} centimeter',
-          other: '{0} 公分',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公分',
-          one: '{0} cm',
-          other: '{0} 公分',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公分',
-          one: '{0}cm',
-          other: '{0}公分',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公分',
+      one: '{0} centimeter',
+      other: '{0} 公分',
+    ),
+    short: UnitCountPattern(_locale, '公分', one: '{0} cm', other: '{0} 公分'),
+    narrow: UnitCountPattern(_locale, '公分', one: '{0}cm', other: '{0}公分'),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公釐',
-          one: '{0} millimeter',
-          other: '{0} 公釐',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公釐',
-          one: '{0} mm',
-          other: '{0} 公釐',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公釐',
-          one: '{0}mm',
-          other: '{0}公釐',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公釐',
+      one: '{0} millimeter',
+      other: '{0} 公釐',
+    ),
+    short: UnitCountPattern(_locale, '公釐', one: '{0} mm', other: '{0} 公釐'),
+    narrow: UnitCountPattern(_locale, '公釐', one: '{0}mm', other: '{0}公釐'),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '微米',
-          one: '{0} micrometer',
-          other: '{0} 微米',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '微米',
-          one: '{0} μm',
-          other: '{0} 微米',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '微米',
-          one: '{0}μm',
-          other: '{0}μm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '微米',
+      one: '{0} micrometer',
+      other: '{0} 微米',
+    ),
+    short: UnitCountPattern(_locale, '微米', one: '{0} μm', other: '{0} 微米'),
+    narrow: UnitCountPattern(_locale, '微米', one: '{0}μm', other: '{0}μm'),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '奈米',
-          one: '{0} nanometer',
-          other: '{0} 奈米',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '奈米',
-          one: '{0} nm',
-          other: '{0} 奈米',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '奈米',
-          one: '{0}nm',
-          other: '{0}奈米',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '奈米',
+      one: '{0} nanometer',
+      other: '{0} 奈米',
+    ),
+    short: UnitCountPattern(_locale, '奈米', one: '{0} nm', other: '{0} 奈米'),
+    narrow: UnitCountPattern(_locale, '奈米', one: '{0}nm', other: '{0}奈米'),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '皮米',
-          one: '{0} picometer',
-          other: '{0} 皮米',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '皮米',
-          one: '{0} pm',
-          other: '{0} 皮米',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '皮米',
-          one: '{0}pm',
-          other: '{0}皮米',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '皮米',
+      one: '{0} picometer',
+      other: '{0} 皮米',
+    ),
+    short: UnitCountPattern(_locale, '皮米', one: '{0} pm', other: '{0} 皮米'),
+    narrow: UnitCountPattern(_locale, '皮米', one: '{0}pm', other: '{0}皮米'),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英里',
-          one: '{0} mile',
-          other: '{0} 英里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英里',
-          one: '{0} mi',
-          other: '{0} 英里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英里',
-          one: '{0}mi',
-          other: '{0}英里',
-        ),
-      );
+    long: UnitCountPattern(_locale, '英里', one: '{0} mile', other: '{0} 英里'),
+    short: UnitCountPattern(_locale, '英里', one: '{0} mi', other: '{0} 英里'),
+    narrow: UnitCountPattern(_locale, '英里', one: '{0}mi', other: '{0}英里'),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '碼',
-          one: '{0} yard',
-          other: '{0} 碼',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '碼',
-          one: '{0} yd',
-          other: '{0} 碼',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '碼',
-          one: '{0}yd',
-          other: '{0}碼',
-        ),
-      );
+    long: UnitCountPattern(_locale, '碼', one: '{0} yard', other: '{0} 碼'),
+    short: UnitCountPattern(_locale, '碼', one: '{0} yd', other: '{0} 碼'),
+    narrow: UnitCountPattern(_locale, '碼', one: '{0}yd', other: '{0}碼'),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英尺',
-          one: '{0} foot',
-          other: '{0} 英尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英尺',
-          one: '{0} ft',
-          other: '{0} 呎',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英尺',
-          one: '{0}′',
-          other: '{0}呎',
-        ),
-      );
+    long: UnitCountPattern(_locale, '英尺', one: '{0} foot', other: '{0} 英尺'),
+    short: UnitCountPattern(_locale, '英尺', one: '{0} ft', other: '{0} 呎'),
+    narrow: UnitCountPattern(_locale, '英尺', one: '{0}′', other: '{0}呎'),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英寸',
-          one: '{0} inch',
-          other: '{0} 英寸',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英寸',
-          one: '{0} in',
-          other: '{0} 吋',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英寸',
-          one: '{0}″',
-          other: '{0}吋',
-        ),
-      );
+    long: UnitCountPattern(_locale, '英寸', one: '{0} inch', other: '{0} 英寸'),
+    short: UnitCountPattern(_locale, '英寸', one: '{0} in', other: '{0} 吋'),
+    narrow: UnitCountPattern(_locale, '英寸', one: '{0}″', other: '{0}吋'),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '秒差距',
-          one: '{0} parsec',
-          other: '{0} 秒差距',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '秒差距',
-          one: '{0} pc',
-          other: '{0} 秒差距',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '秒差距',
-          one: '{0}pc',
-          other: '{0}秒差距',
-        ),
-      );
+    long: UnitCountPattern(_locale, '秒差距', one: '{0} parsec', other: '{0} 秒差距'),
+    short: UnitCountPattern(_locale, '秒差距', one: '{0} pc', other: '{0} 秒差距'),
+    narrow: UnitCountPattern(_locale, '秒差距', one: '{0}pc', other: '{0}秒差距'),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '光年',
-          one: '{0} light year',
-          other: '{0} 光年',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '光年',
-          one: '{0} ly',
-          other: '{0} 光年',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '光年',
-          one: '{0}ly',
-          other: '{0}光年',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '光年',
+      one: '{0} light year',
+      other: '{0} 光年',
+    ),
+    short: UnitCountPattern(_locale, '光年', one: '{0} ly', other: '{0} 光年'),
+    narrow: UnitCountPattern(_locale, '光年', one: '{0}ly', other: '{0}光年'),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '天文單位',
-          one: '{0} astronomical unit',
-          other: '{0} 天文單位',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '天文單位',
-          one: '{0} au',
-          other: '{0} 天文單位',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '天文單位',
-          one: '{0}au',
-          other: '{0}天文單位',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '天文單位',
+      one: '{0} astronomical unit',
+      other: '{0} 天文單位',
+    ),
+    short: UnitCountPattern(_locale, '天文單位', one: '{0} au', other: '{0} 天文單位'),
+    narrow: UnitCountPattern(_locale, '天文單位', one: '{0}au', other: '{0}天文單位'),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '化朗',
-          one: '{0} furlong',
-          other: '{0} 化朗',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '化朗',
-          one: '{0} fur',
-          other: '{0} 化朗',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '化朗',
-          one: '{0}fur',
-          other: '{0}化朗',
-        ),
-      );
+    long: UnitCountPattern(_locale, '化朗', one: '{0} furlong', other: '{0} 化朗'),
+    short: UnitCountPattern(_locale, '化朗', one: '{0} fur', other: '{0} 化朗'),
+    narrow: UnitCountPattern(_locale, '化朗', one: '{0}fur', other: '{0}化朗'),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英尋',
-          one: '{0} fathom',
-          other: '{0} 英尋',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英尋',
-          one: '{0} fth',
-          other: '{0} 英尋',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英尋',
-          one: '{0}fth',
-          other: '{0}fth',
-        ),
-      );
+    long: UnitCountPattern(_locale, '英尋', one: '{0} fathom', other: '{0} 英尋'),
+    short: UnitCountPattern(_locale, '英尋', one: '{0} fth', other: '{0} 英尋'),
+    narrow: UnitCountPattern(_locale, '英尋', one: '{0}fth', other: '{0}fth'),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '海里',
-          one: '{0} nautical mile',
-          other: '{0} 海里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '海里',
-          one: '{0} nmi',
-          other: '{0} 海里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '海里',
-          one: '{0}nmi',
-          other: '{0}nmi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '海里',
+      one: '{0} nautical mile',
+      other: '{0} 海里',
+    ),
+    short: UnitCountPattern(_locale, '海里', one: '{0} nmi', other: '{0} 海里'),
+    narrow: UnitCountPattern(_locale, '海里', one: '{0}nmi', other: '{0}nmi'),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '斯堪地那維亞里',
-          one: '{0} mile-scandinavian',
-          other: '{0} 斯堪地那維亞里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '斯堪地那維亞里',
-          one: '{0} smi',
-          other: '{0} 斯堪地那維亞里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '斯堪地那維亞里',
-          one: '{0}smi',
-          other: '{0}smi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '斯堪地那維亞里',
+      one: '{0} mile-scandinavian',
+      other: '{0} 斯堪地那維亞里',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '斯堪地那維亞里',
+      one: '{0} smi',
+      other: '{0} 斯堪地那維亞里',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '斯堪地那維亞里',
+      one: '{0}smi',
+      other: '{0}smi',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '點',
-          one: '{0} point',
-          other: '{0} 點',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '點',
-          one: '{0} pt',
-          other: '{0} 點',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '點',
-          one: '{0}pt',
-          other: '{0}點',
-        ),
-      );
+    long: UnitCountPattern(_locale, '點', one: '{0} point', other: '{0} 點'),
+    short: UnitCountPattern(_locale, '點', one: '{0} pt', other: '{0} 點'),
+    narrow: UnitCountPattern(_locale, '點', one: '{0}pt', other: '{0}點'),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '太陽半徑',
-          one: '{0} solar radius',
-          other: '{0} 太陽半徑',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0} R☉',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0}R☉',
-          other: '{0}R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '太陽半徑',
+      one: '{0} solar radius',
+      other: '{0} 太陽半徑',
+    ),
+    short: UnitCountPattern(_locale, 'R☉', one: '{0} R☉', other: '{0} R☉'),
+    narrow: UnitCountPattern(_locale, 'R☉', one: '{0}R☉', other: '{0}R☉'),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '勒克斯',
-          one: '{0} lux',
-          other: '{0} 勒克斯',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '勒克斯',
-          one: '{0} lx',
-          other: '{0} 勒克斯',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '勒克斯',
-          one: '{0}lx',
-          other: '{0}勒克斯',
-        ),
-      );
+    long: UnitCountPattern(_locale, '勒克斯', one: '{0} lux', other: '{0} 勒克斯'),
+    short: UnitCountPattern(_locale, '勒克斯', one: '{0} lx', other: '{0} 勒克斯'),
+    narrow: UnitCountPattern(_locale, '勒克斯', one: '{0}lx', other: '{0}勒克斯'),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '燭光',
-          one: '{0} candela',
-          other: '{0} 燭光',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '燭光',
-          one: '{0} cd',
-          other: '{0} 燭光',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '燭光',
-          one: '{0}cd',
-          other: '{0}燭光',
-        ),
-      );
+    long: UnitCountPattern(_locale, '燭光', one: '{0} candela', other: '{0} 燭光'),
+    short: UnitCountPattern(_locale, '燭光', one: '{0} cd', other: '{0} 燭光'),
+    narrow: UnitCountPattern(_locale, '燭光', one: '{0}cd', other: '{0}燭光'),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '流明',
-          one: '{0} lumen',
-          other: '{0} 流明',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '流明',
-          one: '{0} lm',
-          other: '{0} 流明',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '流明',
-          one: '{0}lm',
-          other: '{0}流明',
-        ),
-      );
+    long: UnitCountPattern(_locale, '流明', one: '{0} lumen', other: '{0} 流明'),
+    short: UnitCountPattern(_locale, '流明', one: '{0} lm', other: '{0} 流明'),
+    narrow: UnitCountPattern(_locale, '流明', one: '{0}lm', other: '{0}流明'),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '太陽光度',
-          one: '{0} solar luminosity',
-          other: '{0} 太陽光度',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} L☉',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0}L☉',
-          other: '{0}L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '太陽光度',
+      one: '{0} solar luminosity',
+      other: '{0} 太陽光度',
+    ),
+    short: UnitCountPattern(_locale, 'L☉', one: '{0} L☉', other: '{0} L☉'),
+    narrow: UnitCountPattern(_locale, 'L☉', one: '{0}L☉', other: '{0}L☉'),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公噸',
-          one: '{0} metric ton',
-          other: '{0} 公噸',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公噸',
-          one: '{0} t',
-          other: '{0} 公噸',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公噸',
-          one: '{0}t',
-          other: '{0}公噸',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公噸',
+      one: '{0} metric ton',
+      other: '{0} 公噸',
+    ),
+    short: UnitCountPattern(_locale, '公噸', one: '{0} t', other: '{0} 公噸'),
+    narrow: UnitCountPattern(_locale, '公噸', one: '{0}t', other: '{0}公噸'),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公斤',
-          one: '{0} kilogram',
-          other: '{0} 公斤',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公斤',
-          one: '{0} kg',
-          other: '{0} 公斤',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公斤',
-          one: '{0}kg',
-          other: '{0}公斤',
-        ),
-      );
+    long: UnitCountPattern(_locale, '公斤', one: '{0} kilogram', other: '{0} 公斤'),
+    short: UnitCountPattern(_locale, '公斤', one: '{0} kg', other: '{0} 公斤'),
+    narrow: UnitCountPattern(_locale, '公斤', one: '{0}kg', other: '{0}公斤'),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '克',
-          one: '{0} gram',
-          other: '{0} 克',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '克',
-          one: '{0} g',
-          other: '{0} 克',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '克',
-          one: '{0}g',
-          other: '{0}克',
-        ),
-      );
+    long: UnitCountPattern(_locale, '克', one: '{0} gram', other: '{0} 克'),
+    short: UnitCountPattern(_locale, '克', one: '{0} g', other: '{0} 克'),
+    narrow: UnitCountPattern(_locale, '克', one: '{0}g', other: '{0}克'),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '毫克',
-          one: '{0} milligram',
-          other: '{0} 毫克',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫克',
-          one: '{0} mg',
-          other: '{0} 毫克',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫克',
-          one: '{0}mg',
-          other: '{0}毫克',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '毫克',
+      one: '{0} milligram',
+      other: '{0} 毫克',
+    ),
+    short: UnitCountPattern(_locale, '毫克', one: '{0} mg', other: '{0} 毫克'),
+    narrow: UnitCountPattern(_locale, '毫克', one: '{0}mg', other: '{0}毫克'),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '微克',
-          one: '{0} microgram',
-          other: '{0} 微克',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '微克',
-          one: '{0} μg',
-          other: '{0} 微克',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '微克',
-          one: '{0}μg',
-          other: '{0}微克',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '微克',
+      one: '{0} microgram',
+      other: '{0} 微克',
+    ),
+    short: UnitCountPattern(_locale, '微克', one: '{0} μg', other: '{0} 微克'),
+    narrow: UnitCountPattern(_locale, '微克', one: '{0}μg', other: '{0}微克'),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '美噸',
-          one: '{0} ton',
-          other: '{0} 美噸',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '美噸',
-          one: '{0} tn',
-          other: '{0} 美噸',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英噸',
-          one: '{0}tn',
-          other: '{0}美噸',
-        ),
-      );
+    long: UnitCountPattern(_locale, '美噸', one: '{0} ton', other: '{0} 美噸'),
+    short: UnitCountPattern(_locale, '美噸', one: '{0} tn', other: '{0} 美噸'),
+    narrow: UnitCountPattern(_locale, '英噸', one: '{0}tn', other: '{0}美噸'),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英石',
-          one: '{0} stone',
-          other: '{0} 英石',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英石',
-          one: '{0} st',
-          other: '{0} 英石',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英石',
-          one: '{0}st',
-          other: '{0}英石',
-        ),
-      );
+    long: UnitCountPattern(_locale, '英石', one: '{0} stone', other: '{0} 英石'),
+    short: UnitCountPattern(_locale, '英石', one: '{0} st', other: '{0} 英石'),
+    narrow: UnitCountPattern(_locale, '英石', one: '{0}st', other: '{0}英石'),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '磅',
-          one: '{0} pound',
-          other: '{0} 磅',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '磅',
-          one: '{0} lb',
-          other: '{0} 磅',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '磅',
-          one: '{0}#',
-          other: '{0}磅',
-        ),
-      );
+    long: UnitCountPattern(_locale, '磅', one: '{0} pound', other: '{0} 磅'),
+    short: UnitCountPattern(_locale, '磅', one: '{0} lb', other: '{0} 磅'),
+    narrow: UnitCountPattern(_locale, '磅', one: '{0}#', other: '{0}磅'),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '盎司',
-          one: '{0} ounce',
-          other: '{0} 盎司',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '盎司',
-          one: '{0} oz',
-          other: '{0} 盎司',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '盎司',
-          one: '{0}oz',
-          other: '{0}盎司',
-        ),
-      );
+    long: UnitCountPattern(_locale, '盎司', one: '{0} ounce', other: '{0} 盎司'),
+    short: UnitCountPattern(_locale, '盎司', one: '{0} oz', other: '{0} 盎司'),
+    narrow: UnitCountPattern(_locale, '盎司', one: '{0}oz', other: '{0}盎司'),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '金衡盎司',
-          one: '{0} troy ounce',
-          other: '{0} 金衡盎司',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '金衡盎司',
-          one: '{0} oz t',
-          other: '{0} 金衡盎司',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '金衡盎司',
-          one: '{0}oz t',
-          other: '{0}金衡盎司',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '金衡盎司',
+      one: '{0} troy ounce',
+      other: '{0} 金衡盎司',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '金衡盎司',
+      one: '{0} oz t',
+      other: '{0} 金衡盎司',
+    ),
+    narrow: UnitCountPattern(_locale, '金衡盎司', one: '{0}oz t', other: '{0}金衡盎司'),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '克拉',
-          one: '{0} carat',
-          other: '{0} 克拉',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '克拉',
-          one: '{0} CD',
-          other: '{0} 克拉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '克拉',
-          one: '{0}CD',
-          other: '{0}克拉',
-        ),
-      );
+    long: UnitCountPattern(_locale, '克拉', one: '{0} carat', other: '{0} 克拉'),
+    short: UnitCountPattern(_locale, '克拉', one: '{0} CD', other: '{0} 克拉'),
+    narrow: UnitCountPattern(_locale, '克拉', one: '{0}CD', other: '{0}克拉'),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '達爾頓',
-          one: '{0} dalton',
-          other: '{0} 達爾頓',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '達爾頓',
-          one: '{0} Da',
-          other: '{0} 達爾頓',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '達爾頓',
-          one: '{0}Da',
-          other: '{0}達爾頓',
-        ),
-      );
+    long: UnitCountPattern(_locale, '達爾頓', one: '{0} dalton', other: '{0} 達爾頓'),
+    short: UnitCountPattern(_locale, '達爾頓', one: '{0} Da', other: '{0} 達爾頓'),
+    narrow: UnitCountPattern(_locale, '達爾頓', one: '{0}Da', other: '{0}達爾頓'),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '地球質量',
-          one: '{0} Earth mass',
-          other: '{0} 地球質量',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '地球質量',
-          one: '{0} M⊕',
-          other: '{0} 地球質量',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '地球質量',
-          one: '{0}M⊕',
-          other: '{0}地球質量',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '地球質量',
+      one: '{0} Earth mass',
+      other: '{0} 地球質量',
+    ),
+    short: UnitCountPattern(_locale, '地球質量', one: '{0} M⊕', other: '{0} 地球質量'),
+    narrow: UnitCountPattern(_locale, '地球質量', one: '{0}M⊕', other: '{0}地球質量'),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '太陽質量',
-          one: '{0} solar mass',
-          other: '{0} 太陽質量',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '太陽質量',
-          one: '{0} M☉',
-          other: '{0} 太陽質量',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '太陽質量',
-          one: '{0}M☉',
-          other: '{0}太陽質量',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '太陽質量',
+      one: '{0} solar mass',
+      other: '{0} 太陽質量',
+    ),
+    short: UnitCountPattern(_locale, '太陽質量', one: '{0} M☉', other: '{0} 太陽質量'),
+    narrow: UnitCountPattern(_locale, '太陽質量', one: '{0}M☉', other: '{0}太陽質量'),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '格林',
-          one: '{0} grain',
-          other: '{0} 格林',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '格林',
-          one: '{0} gr',
-          other: '{0} 格林',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '格林',
-          one: '{0}gr',
-          other: '{0}格林',
-        ),
-      );
+    long: UnitCountPattern(_locale, '格林', one: '{0} grain', other: '{0} 格林'),
+    short: UnitCountPattern(_locale, '格林', one: '{0} gr', other: '{0} 格林'),
+    narrow: UnitCountPattern(_locale, '格林', one: '{0}gr', other: '{0}格林'),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '吉瓦',
-          one: '{0} gigawatt',
-          other: '{0} 吉瓦',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '吉瓦',
-          one: '{0} GW',
-          other: '{0} 吉瓦',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '吉瓦',
-          one: '{0}GW',
-          other: '{0}吉瓦',
-        ),
-      );
+    long: UnitCountPattern(_locale, '吉瓦', one: '{0} gigawatt', other: '{0} 吉瓦'),
+    short: UnitCountPattern(_locale, '吉瓦', one: '{0} GW', other: '{0} 吉瓦'),
+    narrow: UnitCountPattern(_locale, '吉瓦', one: '{0}GW', other: '{0}吉瓦'),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '百萬瓦特',
-          one: '{0} megawatt',
-          other: '{0} 百萬瓦特',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '百萬瓦',
-          one: '{0} MW',
-          other: '{0} 百萬瓦',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '百萬瓦',
-          one: '{0}MW',
-          other: '{0}百萬瓦',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '百萬瓦特',
+      one: '{0} megawatt',
+      other: '{0} 百萬瓦特',
+    ),
+    short: UnitCountPattern(_locale, '百萬瓦', one: '{0} MW', other: '{0} 百萬瓦'),
+    narrow: UnitCountPattern(_locale, '百萬瓦', one: '{0}MW', other: '{0}百萬瓦'),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '千瓦特',
-          one: '{0} kilowatt',
-          other: '{0} 千瓦特',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '千瓦',
-          one: '{0} kW',
-          other: '{0} 千瓦',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '千瓦',
-          one: '{0}kW',
-          other: '{0}千瓦',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '千瓦特',
+      one: '{0} kilowatt',
+      other: '{0} 千瓦特',
+    ),
+    short: UnitCountPattern(_locale, '千瓦', one: '{0} kW', other: '{0} 千瓦'),
+    narrow: UnitCountPattern(_locale, '千瓦', one: '{0}kW', other: '{0}千瓦'),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '瓦特',
-          one: '{0} watt',
-          other: '{0} 瓦特',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '瓦特',
-          one: '{0} W',
-          other: '{0} 瓦',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '瓦特',
-          one: '{0}W',
-          other: '{0}瓦特',
-        ),
-      );
+    long: UnitCountPattern(_locale, '瓦特', one: '{0} watt', other: '{0} 瓦特'),
+    short: UnitCountPattern(_locale, '瓦特', one: '{0} W', other: '{0} 瓦'),
+    narrow: UnitCountPattern(_locale, '瓦特', one: '{0}W', other: '{0}瓦特'),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '毫瓦特',
-          one: '{0} milliwatt',
-          other: '{0} 毫瓦特',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫瓦',
-          one: '{0} mW',
-          other: '{0} 毫瓦',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫瓦',
-          one: '{0}mW',
-          other: '{0}毫瓦',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '毫瓦特',
+      one: '{0} milliwatt',
+      other: '{0} 毫瓦特',
+    ),
+    short: UnitCountPattern(_locale, '毫瓦', one: '{0} mW', other: '{0} 毫瓦'),
+    narrow: UnitCountPattern(_locale, '毫瓦', one: '{0}mW', other: '{0}毫瓦'),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '馬力',
-          one: '{0} horsepower',
-          other: '{0} 匹馬力',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '匹',
-          one: '{0} hp',
-          other: '{0} 匹',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '匹',
-          one: '{0}hp',
-          other: '{0}匹',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '馬力',
+      one: '{0} horsepower',
+      other: '{0} 匹馬力',
+    ),
+    short: UnitCountPattern(_locale, '匹', one: '{0} hp', other: '{0} 匹'),
+    narrow: UnitCountPattern(_locale, '匹', one: '{0}hp', other: '{0}匹'),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '毫米汞柱',
-          one: '{0} millimeter of mercury',
-          other: '{0} 毫米汞柱',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫米汞柱',
-          one: '{0} mmHg',
-          other: '{0} 毫米汞柱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫米汞柱',
-          one: '{0}mmHg',
-          other: '{0}mmHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '毫米汞柱',
+      one: '{0} millimeter of mercury',
+      other: '{0} 毫米汞柱',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '毫米汞柱',
+      one: '{0} mmHg',
+      other: '{0} 毫米汞柱',
+    ),
+    narrow: UnitCountPattern(_locale, '毫米汞柱', one: '{0}mmHg', other: '{0}mmHg'),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每平方英寸磅力',
-          one: '{0} pound-force per square inch',
-          other: '每平方英寸 {0} 磅力',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '磅力/平方英寸',
-          one: '{0} psi',
-          other: '{0} 磅力/平方英寸',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '磅力/平方英寸',
-          one: '{0}psi',
-          other: '{0}psi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每平方英寸磅力',
+      one: '{0} pound-force per square inch',
+      other: '每平方英寸 {0} 磅力',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '磅力/平方英寸',
+      one: '{0} psi',
+      other: '{0} 磅力/平方英寸',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '磅力/平方英寸',
+      one: '{0}psi',
+      other: '{0}psi',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英寸汞柱',
-          one: '{0} inch of mercury',
-          other: '{0} 英寸汞柱',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英寸汞柱',
-          one: '{0} inHg',
-          other: '{0} 英寸汞柱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英寸汞柱',
-          one: '{0}″ Hg',
-          other: '{0}英吋汞柱',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '英寸汞柱',
+      one: '{0} inch of mercury',
+      other: '{0} 英寸汞柱',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英寸汞柱',
+      one: '{0} inHg',
+      other: '{0} 英寸汞柱',
+    ),
+    narrow: UnitCountPattern(_locale, '英寸汞柱', one: '{0}″ Hg', other: '{0}英吋汞柱'),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '巴',
-          one: '{0} bar',
-          other: '{0} 巴',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '巴',
-          one: '{0} bar',
-          other: '{0} 巴',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '巴',
-          one: '{0}bar',
-          other: '{0}巴',
-        ),
-      );
+    long: UnitCountPattern(_locale, '巴', one: '{0} bar', other: '{0} 巴'),
+    short: UnitCountPattern(_locale, '巴', one: '{0} bar', other: '{0} 巴'),
+    narrow: UnitCountPattern(_locale, '巴', one: '{0}bar', other: '{0}巴'),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '毫巴',
-          one: '{0} millibar',
-          other: '{0} 毫巴',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫巴',
-          one: '{0} mbar',
-          other: '{0} 毫巴',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫巴',
-          one: '{0}mb',
-          other: '{0}毫巴',
-        ),
-      );
+    long: UnitCountPattern(_locale, '毫巴', one: '{0} millibar', other: '{0} 毫巴'),
+    short: UnitCountPattern(_locale, '毫巴', one: '{0} mbar', other: '{0} 毫巴'),
+    narrow: UnitCountPattern(_locale, '毫巴', one: '{0}mb', other: '{0}毫巴'),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '氣壓',
-          one: '{0} atmosphere',
-          other: '{0} 大氣壓',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} atm',
-          other: '{0} atm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0}atm',
-          other: '{0}atm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '氣壓',
+      one: '{0} atmosphere',
+      other: '{0} 大氣壓',
+    ),
+    short: UnitCountPattern(_locale, 'atm', one: '{0} atm', other: '{0} atm'),
+    narrow: UnitCountPattern(_locale, 'atm', one: '{0}atm', other: '{0}atm'),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '帕斯卡',
-          one: '{0} pascal',
-          other: '{0} 帕斯卡',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '帕',
-          one: '{0} Pa',
-          other: '{0} 帕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '帕',
-          one: '{0}Pa',
-          other: '{0}帕',
-        ),
-      );
+    long: UnitCountPattern(_locale, '帕斯卡', one: '{0} pascal', other: '{0} 帕斯卡'),
+    short: UnitCountPattern(_locale, '帕', one: '{0} Pa', other: '{0} 帕'),
+    narrow: UnitCountPattern(_locale, '帕', one: '{0}Pa', other: '{0}帕'),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '百帕',
-          one: '{0} hectopascal',
-          other: '{0} 百帕',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '百帕',
-          one: '{0} hPa',
-          other: '{0} 百帕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '百帕',
-          one: '{0}hPa',
-          other: '{0}百帕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '百帕',
+      one: '{0} hectopascal',
+      other: '{0} 百帕',
+    ),
+    short: UnitCountPattern(_locale, '百帕', one: '{0} hPa', other: '{0} 百帕'),
+    narrow: UnitCountPattern(_locale, '百帕', one: '{0}hPa', other: '{0}百帕'),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '千帕',
-          one: '{0} kilopascal',
-          other: '{0} 千帕',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '千帕',
-          one: '{0} kPa',
-          other: '{0} 千帕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '千帕',
-          one: '{0}kPa',
-          other: '{0}千帕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '千帕',
+      one: '{0} kilopascal',
+      other: '{0} 千帕',
+    ),
+    short: UnitCountPattern(_locale, '千帕', one: '{0} kPa', other: '{0} 千帕'),
+    narrow: UnitCountPattern(_locale, '千帕', one: '{0}kPa', other: '{0}千帕'),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '兆帕',
-          one: '{0} megapascal',
-          other: '{0} 兆帕',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '兆帕',
-          one: '{0} MPa',
-          other: '{0} 兆帕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '兆帕',
-          one: '{0}MPa',
-          other: '{0}兆帕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '兆帕',
+      one: '{0} megapascal',
+      other: '{0} 兆帕',
+    ),
+    short: UnitCountPattern(_locale, '兆帕', one: '{0} MPa', other: '{0} 兆帕'),
+    narrow: UnitCountPattern(_locale, '兆帕', one: '{0}MPa', other: '{0}兆帕'),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每小時公里',
-          one: '{0} kilometer per hour',
-          other: '每小時 {0} 公里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公里/小時',
-          one: '{0} km/h',
-          other: '{0} 公里/小時',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公里/小時',
-          one: '{0}km/h',
-          other: '{0}公里/小時',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每小時公里',
+      one: '{0} kilometer per hour',
+      other: '每小時 {0} 公里',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '公里/小時',
+      one: '{0} km/h',
+      other: '{0} 公里/小時',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '公里/小時',
+      one: '{0}km/h',
+      other: '{0}公里/小時',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每秒公尺',
-          one: '{0} meter per second',
-          other: '每秒 {0} 公尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公尺/秒',
-          one: '{0} m/s',
-          other: '{0} 公尺/秒',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公尺/秒',
-          one: '{0}m/s',
-          other: '{0}公尺/秒',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每秒公尺',
+      one: '{0} meter per second',
+      other: '每秒 {0} 公尺',
+    ),
+    short: UnitCountPattern(_locale, '公尺/秒', one: '{0} m/s', other: '{0} 公尺/秒'),
+    narrow: UnitCountPattern(_locale, '公尺/秒', one: '{0}m/s', other: '{0}公尺/秒'),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '每小時英里',
-          one: '{0} mile per hour',
-          other: '每小時 {0} 英里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英里/小時',
-          one: '{0} mph',
-          other: '{0} 英里/小時',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英里/小時',
-          one: '{0}mph',
-          other: '{0}英里/小時',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '每小時英里',
+      one: '{0} mile per hour',
+      other: '每小時 {0} 英里',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英里/小時',
+      one: '{0} mph',
+      other: '{0} 英里/小時',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英里/小時',
+      one: '{0}mph',
+      other: '{0}英里/小時',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '節',
-          one: '{0} knot',
-          other: '{0} 節',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '節',
-          one: '{0} kn',
-          other: '{0} 節',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '節',
-          one: '{0}kn',
-          other: '{0} 節',
-        ),
-      );
+    long: UnitCountPattern(_locale, '節', one: '{0} knot', other: '{0} 節'),
+    short: UnitCountPattern(_locale, '節', one: '{0} kn', other: '{0} 節'),
+    narrow: UnitCountPattern(_locale, '節', one: '{0}kn', other: '{0} 節'),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '蒲福風級',
-          one: 'Beaufort {0}',
-          other: '蒲福風級 {0} 級',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '蒲福風級',
-          one: 'B {0}',
-          other: '蒲福風級 {0} 級',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '蒲福風級',
-          one: 'B{0}',
-          other: '蒲福風級{0}級',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '蒲福風級',
+      one: 'Beaufort {0}',
+      other: '蒲福風級 {0} 級',
+    ),
+    short: UnitCountPattern(_locale, '蒲福風級', one: 'B {0}', other: '蒲福風級 {0} 級'),
+    narrow: UnitCountPattern(_locale, '蒲福風級', one: 'B{0}', other: '蒲福風級{0}級'),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} degree temperature',
-          other: '{0}°',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '°',
+      one: '{0} degree temperature',
+      other: '{0}°',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '攝氏度數',
-          one: '{0} degree Celsius',
-          other: '攝氏 {0} 度',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '攝氏',
-          one: '{0}°C',
-          other: '{0}°C',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0}°C',
-          other: '{0}°C',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '攝氏度數',
+      one: '{0} degree Celsius',
+      other: '攝氏 {0} 度',
+    ),
+    short: UnitCountPattern(_locale, '攝氏', one: '{0}°C', other: '{0}°C'),
+    narrow: UnitCountPattern(_locale, '°C', one: '{0}°C', other: '{0}°C'),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '華氏度數',
-          one: '{0} degree Fahrenheit',
-          other: '華氏 {0} 度',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '華氏',
-          one: '{0}°F',
-          other: '{0}°F',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '華氏',
-          one: '{0}°',
-          other: '{0}°F',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '華氏度數',
+      one: '{0} degree Fahrenheit',
+      other: '華氏 {0} 度',
+    ),
+    short: UnitCountPattern(_locale, '華氏', one: '{0}°F', other: '{0}°F'),
+    narrow: UnitCountPattern(_locale, '華氏', one: '{0}°', other: '{0}°F'),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '克耳文',
-          one: '{0} kelvin',
-          other: '{0} 克耳文',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '克耳文',
-          one: '{0} K',
-          other: '{0} 克耳文',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0}K',
-          other: '{0}克耳文',
-        ),
-      );
+    long: UnitCountPattern(_locale, '克耳文', one: '{0} kelvin', other: '{0} 克耳文'),
+    short: UnitCountPattern(_locale, '克耳文', one: '{0} K', other: '{0} 克耳文'),
+    narrow: UnitCountPattern(_locale, 'K', one: '{0}K', other: '{0}克耳文'),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '磅英尺',
-          one: '{0} pound-force-foot',
-          other: '{0} 磅英尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '磅英尺',
-          one: '{0} lbf⋅ft',
-          other: '{0} 磅英尺',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '磅英尺',
-          one: '{0}lbf⋅ft',
-          other: '{0}磅英尺',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '磅英尺',
+      one: '{0} pound-force-foot',
+      other: '{0} 磅英尺',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '磅英尺',
+      one: '{0} lbf⋅ft',
+      other: '{0} 磅英尺',
+    ),
+    narrow: UnitCountPattern(_locale, '磅英尺', one: '{0}lbf⋅ft', other: '{0}磅英尺'),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '牛頓米',
-          one: '{0} newton-meter',
-          other: '{0} 牛頓米',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '牛頓米',
-          one: '{0} N⋅m',
-          other: '{0} 牛頓米',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '牛頓米',
-          one: '{0}N⋅m',
-          other: '{0}牛頓米',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '牛頓米',
+      one: '{0} newton-meter',
+      other: '{0} 牛頓米',
+    ),
+    short: UnitCountPattern(_locale, '牛頓米', one: '{0} N⋅m', other: '{0} 牛頓米'),
+    narrow: UnitCountPattern(_locale, '牛頓米', one: '{0}N⋅m', other: '{0}牛頓米'),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '立方公里',
-          one: '{0} cubic kilometer',
-          other: '{0} 立方公里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '立方公里',
-          one: '{0} km³',
-          other: '{0} 立方公里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '立方公里',
-          one: '{0}km³',
-          other: '{0}立方公里',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '立方公里',
+      one: '{0} cubic kilometer',
+      other: '{0} 立方公里',
+    ),
+    short: UnitCountPattern(_locale, '立方公里', one: '{0} km³', other: '{0} 立方公里'),
+    narrow: UnitCountPattern(_locale, '立方公里', one: '{0}km³', other: '{0}立方公里'),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '立方公尺',
-          one: '{0} cubic meter',
-          other: '{0} 立方公尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '立方公尺',
-          one: '{0} m³',
-          other: '{0} 立方公尺',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '立方公尺',
-          one: '{0}m³',
-          other: '{0}立方公尺',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '立方公尺',
+      one: '{0} cubic meter',
+      other: '{0} 立方公尺',
+    ),
+    short: UnitCountPattern(_locale, '立方公尺', one: '{0} m³', other: '{0} 立方公尺'),
+    narrow: UnitCountPattern(_locale, '立方公尺', one: '{0}m³', other: '{0}立方公尺'),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '立方公分',
-          one: '{0} cubic centimeter',
-          other: '{0} 立方公分',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '立方公分',
-          one: '{0} cm³',
-          other: '{0} 立方公分',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '立方公分',
-          one: '{0}cm³',
-          other: '{0}立方公分',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '立方公分',
+      one: '{0} cubic centimeter',
+      other: '{0} 立方公分',
+    ),
+    short: UnitCountPattern(_locale, '立方公分', one: '{0} cm³', other: '{0} 立方公分'),
+    narrow: UnitCountPattern(_locale, '立方公分', one: '{0}cm³', other: '{0}立方公分'),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '立方英里',
-          one: '{0} cubic mile',
-          other: '{0} 立方英里',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '立方英里',
-          one: '{0} mi³',
-          other: '{0} 立方英里',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '立方英里',
-          one: '{0}mi³',
-          other: '{0}立方英里',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '立方英里',
+      one: '{0} cubic mile',
+      other: '{0} 立方英里',
+    ),
+    short: UnitCountPattern(_locale, '立方英里', one: '{0} mi³', other: '{0} 立方英里'),
+    narrow: UnitCountPattern(_locale, '立方英里', one: '{0}mi³', other: '{0}立方英里'),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '立方碼',
-          one: '{0} cubic yard',
-          other: '{0} 立方碼',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '立方碼',
-          one: '{0} yd³',
-          other: '{0} 立方碼',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '立方碼',
-          one: '{0}yd³',
-          other: '{0}立方碼',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '立方碼',
+      one: '{0} cubic yard',
+      other: '{0} 立方碼',
+    ),
+    short: UnitCountPattern(_locale, '立方碼', one: '{0} yd³', other: '{0} 立方碼'),
+    narrow: UnitCountPattern(_locale, '立方碼', one: '{0}yd³', other: '{0}立方碼'),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '立方英尺',
-          one: '{0} cubic foot',
-          other: '{0} 立方英尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '立方英尺',
-          one: '{0} ft³',
-          other: '{0} 立方英尺',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '立方英尺',
-          one: '{0}ft³',
-          other: '{0}立方英尺',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '立方英尺',
+      one: '{0} cubic foot',
+      other: '{0} 立方英尺',
+    ),
+    short: UnitCountPattern(_locale, '立方英尺', one: '{0} ft³', other: '{0} 立方英尺'),
+    narrow: UnitCountPattern(_locale, '立方英尺', one: '{0}ft³', other: '{0}立方英尺'),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '立方英寸',
-          one: '{0} cubic inch',
-          other: '{0} 立方英寸',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '立方英寸',
-          one: '{0} in³',
-          other: '{0} 立方英寸',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '立方英寸',
-          one: '{0}in³',
-          other: '{0}立方英寸',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '立方英寸',
+      one: '{0} cubic inch',
+      other: '{0} 立方英寸',
+    ),
+    short: UnitCountPattern(_locale, '立方英寸', one: '{0} in³', other: '{0} 立方英寸'),
+    narrow: UnitCountPattern(_locale, '立方英寸', one: '{0}in³', other: '{0}立方英寸'),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '兆升',
-          one: '{0} megaliter',
-          other: '{0} 兆升',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '兆升',
-          one: '{0} ML',
-          other: '{0} 兆升',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '兆升',
-          one: '{0}ML',
-          other: '{0}兆升',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '兆升',
+      one: '{0} megaliter',
+      other: '{0} 兆升',
+    ),
+    short: UnitCountPattern(_locale, '兆升', one: '{0} ML', other: '{0} 兆升'),
+    narrow: UnitCountPattern(_locale, '兆升', one: '{0}ML', other: '{0}兆升'),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公石',
-          one: '{0} hectoliter',
-          other: '{0} 公石',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公石',
-          one: '{0} hL',
-          other: '{0} 公石',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公石',
-          one: '{0}hL',
-          other: '{0}公石',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公石',
+      one: '{0} hectoliter',
+      other: '{0} 公石',
+    ),
+    short: UnitCountPattern(_locale, '公石', one: '{0} hL', other: '{0} 公石'),
+    narrow: UnitCountPattern(_locale, '公石', one: '{0}hL', other: '{0}公石'),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公升',
-          one: '{0} liter',
-          other: '{0} 公升',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公升',
-          one: '{0} L',
-          other: '{0} 升',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公升',
-          one: '{0}L',
-          other: '{0}升',
-        ),
-      );
+    long: UnitCountPattern(_locale, '公升', one: '{0} liter', other: '{0} 公升'),
+    short: UnitCountPattern(_locale, '公升', one: '{0} L', other: '{0} 升'),
+    narrow: UnitCountPattern(_locale, '公升', one: '{0}L', other: '{0}升'),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公合',
-          one: '{0} deciliter',
-          other: '{0} 公合',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公合',
-          one: '{0} dL',
-          other: '{0} 公合',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公合',
-          one: '{0}dL',
-          other: '{0}公合',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公合',
+      one: '{0} deciliter',
+      other: '{0} 公合',
+    ),
+    short: UnitCountPattern(_locale, '公合', one: '{0} dL', other: '{0} 公合'),
+    narrow: UnitCountPattern(_locale, '公合', one: '{0}dL', other: '{0}公合'),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '釐升',
-          one: '{0} centiliter',
-          other: '{0} 釐升',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '釐升',
-          one: '{0} cL',
-          other: '{0} 釐升',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '釐升',
-          one: '{0}cL',
-          other: '{0}釐升',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '釐升',
+      one: '{0} centiliter',
+      other: '{0} 釐升',
+    ),
+    short: UnitCountPattern(_locale, '釐升', one: '{0} cL', other: '{0} 釐升'),
+    narrow: UnitCountPattern(_locale, '釐升', one: '{0}cL', other: '{0}釐升'),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '毫升',
-          one: '{0} milliliter',
-          other: '{0} 毫升',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '毫升',
-          one: '{0} mL',
-          other: '{0} 毫升',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '毫升',
-          one: '{0}mL',
-          other: '{0}毫升',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '毫升',
+      one: '{0} milliliter',
+      other: '{0} 毫升',
+    ),
+    short: UnitCountPattern(_locale, '毫升', one: '{0} mL', other: '{0} 毫升'),
+    narrow: UnitCountPattern(_locale, '毫升', one: '{0}mL', other: '{0}毫升'),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公制品脫',
-          one: '{0} metric pint',
-          other: '{0} 公制品脫',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公制品脫',
-          one: '{0} mpt',
-          other: '{0} 公制品脫',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公制品脫',
-          one: '{0}mpt',
-          other: '{0}公制品脫',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公制品脫',
+      one: '{0} metric pint',
+      other: '{0} 公制品脫',
+    ),
+    short: UnitCountPattern(_locale, '公制品脫', one: '{0} mpt', other: '{0} 公制品脫'),
+    narrow: UnitCountPattern(_locale, '公制品脫', one: '{0}mpt', other: '{0}公制品脫'),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '公制量杯',
-          one: '{0} metric cup',
-          other: '{0} 公制杯',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '公制量杯',
-          one: '{0} mc',
-          other: '{0} 公制杯',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '公制量杯',
-          one: '{0}mc',
-          other: '{0}公制杯',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '公制量杯',
+      one: '{0} metric cup',
+      other: '{0} 公制杯',
+    ),
+    short: UnitCountPattern(_locale, '公制量杯', one: '{0} mc', other: '{0} 公制杯'),
+    narrow: UnitCountPattern(_locale, '公制量杯', one: '{0}mc', other: '{0}公制杯'),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英畝英尺',
-          one: '{0} acre-foot',
-          other: '{0} 英畝英尺',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英畝英尺',
-          one: '{0} ac ft',
-          other: '{0} 英畝英尺',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英畝英尺',
-          one: '{0}ac ft',
-          other: '{0}英畝英尺',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '英畝英尺',
+      one: '{0} acre-foot',
+      other: '{0} 英畝英尺',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英畝英尺',
+      one: '{0} ac ft',
+      other: '{0} 英畝英尺',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英畝英尺',
+      one: '{0}ac ft',
+      other: '{0}英畝英尺',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '蒲式耳',
-          one: '{0} bushel',
-          other: '{0} 蒲式耳',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '蒲式耳',
-          one: '{0} bu',
-          other: '{0} 蒲式耳',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '蒲式耳',
-          one: '{0}bu',
-          other: '{0}蒲式耳',
-        ),
-      );
+    long: UnitCountPattern(_locale, '蒲式耳', one: '{0} bushel', other: '{0} 蒲式耳'),
+    short: UnitCountPattern(_locale, '蒲式耳', one: '{0} bu', other: '{0} 蒲式耳'),
+    narrow: UnitCountPattern(_locale, '蒲式耳', one: '{0}bu', other: '{0}蒲式耳'),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '加侖',
-          one: '{0} gallon',
-          other: '{0} 加侖',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '加侖',
-          one: '{0} gal',
-          other: '{0} 加侖',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '加侖',
-          one: '{0}gal',
-          other: '{0}加侖',
-        ),
-      );
+    long: UnitCountPattern(_locale, '加侖', one: '{0} gallon', other: '{0} 加侖'),
+    short: UnitCountPattern(_locale, '加侖', one: '{0} gal', other: '{0} 加侖'),
+    narrow: UnitCountPattern(_locale, '加侖', one: '{0}gal', other: '{0}加侖'),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英制加侖',
-          one: '{0} Imp. gallon',
-          other: '{0} 英制加侖',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英制加侖',
-          one: '{0} gal Imp.',
-          other: '{0} 英制加侖',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英制加侖',
-          one: '{0}galIm',
-          other: '{0}英制加侖',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '英制加侖',
+      one: '{0} Imp. gallon',
+      other: '{0} 英制加侖',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英制加侖',
+      one: '{0} gal Imp.',
+      other: '{0} 英制加侖',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英制加侖',
+      one: '{0}galIm',
+      other: '{0}英制加侖',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '夸脫',
-          one: '{0} quart',
-          other: '{0} 夸脫',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '夸脫',
-          one: '{0} qt',
-          other: '{0} 夸脫',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '夸脫',
-          one: '{0}qt',
-          other: '{0}夸脫',
-        ),
-      );
+    long: UnitCountPattern(_locale, '夸脫', one: '{0} quart', other: '{0} 夸脫'),
+    short: UnitCountPattern(_locale, '夸脫', one: '{0} qt', other: '{0} 夸脫'),
+    narrow: UnitCountPattern(_locale, '夸脫', one: '{0}qt', other: '{0}夸脫'),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '品脫',
-          one: '{0} pint',
-          other: '{0} 品脫',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '品脫',
-          one: '{0} pt',
-          other: '{0} 品脫',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '品脫',
-          one: '{0}pt',
-          other: '{0}品脫',
-        ),
-      );
+    long: UnitCountPattern(_locale, '品脫', one: '{0} pint', other: '{0} 品脫'),
+    short: UnitCountPattern(_locale, '品脫', one: '{0} pt', other: '{0} 品脫'),
+    narrow: UnitCountPattern(_locale, '品脫', one: '{0}pt', other: '{0}品脫'),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '量杯',
-          one: '{0} cup',
-          other: '{0} 杯',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '量杯',
-          one: '{0} c',
-          other: '{0} 杯',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '量杯',
-          one: '{0}c',
-          other: '{0}杯',
-        ),
-      );
+    long: UnitCountPattern(_locale, '量杯', one: '{0} cup', other: '{0} 杯'),
+    short: UnitCountPattern(_locale, '量杯', one: '{0} c', other: '{0} 杯'),
+    narrow: UnitCountPattern(_locale, '量杯', one: '{0}c', other: '{0}杯'),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '液盎司',
-          one: '{0} fluid ounce',
-          other: '{0} 液盎司',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '液盎司',
-          one: '{0} fl oz',
-          other: '{0} 液盎司',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '液盎司',
-          one: '{0}fl oz',
-          other: '{0}液盎司',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '液盎司',
+      one: '{0} fluid ounce',
+      other: '{0} 液盎司',
+    ),
+    short: UnitCountPattern(_locale, '液盎司', one: '{0} fl oz', other: '{0} 液盎司'),
+    narrow: UnitCountPattern(_locale, '液盎司', one: '{0}fl oz', other: '{0}液盎司'),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英液盎司',
-          one: '{0} Imp. fluid ounce',
-          other: '{0} 英液盎司',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英液盎司',
-          one: '{0} fl oz Imp.',
-          other: '{0} 英液盎司',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英液盎司',
-          one: '{0}fl oz Im',
-          other: '{0}英液盎司',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '英液盎司',
+      one: '{0} Imp. fluid ounce',
+      other: '{0} 英液盎司',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英液盎司',
+      one: '{0} fl oz Imp.',
+      other: '{0} 英液盎司',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英液盎司',
+      one: '{0}fl oz Im',
+      other: '{0}英液盎司',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '湯匙',
-          one: '{0} tablespoon',
-          other: '{0} 湯匙',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '湯匙',
-          one: '{0} tbsp',
-          other: '{0} 湯匙',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '湯匙',
-          one: '{0}tbsp',
-          other: '{0}匙',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '湯匙',
+      one: '{0} tablespoon',
+      other: '{0} 湯匙',
+    ),
+    short: UnitCountPattern(_locale, '湯匙', one: '{0} tbsp', other: '{0} 湯匙'),
+    narrow: UnitCountPattern(_locale, '湯匙', one: '{0}tbsp', other: '{0}匙'),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '茶匙',
-          one: '{0} teaspoon',
-          other: '{0} 茶匙',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '茶匙',
-          one: '{0} tsp',
-          other: '{0} 茶匙',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '茶匙',
-          one: '{0}tsp',
-          other: '{0}茶匙',
-        ),
-      );
+    long: UnitCountPattern(_locale, '茶匙', one: '{0} teaspoon', other: '{0} 茶匙'),
+    short: UnitCountPattern(_locale, '茶匙', one: '{0} tsp', other: '{0} 茶匙'),
+    narrow: UnitCountPattern(_locale, '茶匙', one: '{0}tsp', other: '{0}茶匙'),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '桶',
-          one: '{0} barrel',
-          other: '{0} 桶',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '桶',
-          one: '{0} bbl',
-          other: '{0} 桶',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '桶',
-          one: '{0}bbl',
-          other: '{0}桶',
-        ),
-      );
+    long: UnitCountPattern(_locale, '桶', one: '{0} barrel', other: '{0} 桶'),
+    short: UnitCountPattern(_locale, '桶', one: '{0} bbl', other: '{0} 桶'),
+    narrow: UnitCountPattern(_locale, '桶', one: '{0}bbl', other: '{0}桶'),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '甜品匙',
-          one: '{0} dessert spoon',
-          other: '{0} 甜品匙',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '甜品匙',
-          one: '{0} dsp',
-          other: '{0} 甜品匙',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '甜品匙',
-          one: '{0}dsp',
-          other: '{0}甜品匙',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '甜品匙',
+      one: '{0} dessert spoon',
+      other: '{0} 甜品匙',
+    ),
+    short: UnitCountPattern(_locale, '甜品匙', one: '{0} dsp', other: '{0} 甜品匙'),
+    narrow: UnitCountPattern(_locale, '甜品匙', one: '{0}dsp', other: '{0}甜品匙'),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英制甜品匙',
-          one: '{0} Imp. dessert spoon',
-          other: '{0} 英制甜品匙',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英制甜品匙',
-          one: '{0} dsp-Imp.',
-          other: '{0} 英制甜品匙',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英制甜品匙',
-          one: '{0}dsp-Imp',
-          other: '{0}甜品匙',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '英制甜品匙',
+      one: '{0} Imp. dessert spoon',
+      other: '{0} 英制甜品匙',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英制甜品匙',
+      one: '{0} dsp-Imp.',
+      other: '{0} 英制甜品匙',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英制甜品匙',
+      one: '{0}dsp-Imp',
+      other: '{0}甜品匙',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '滴',
-          one: '{0} drop',
-          other: '{0} 滴',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '滴',
-          one: '{0} dr',
-          other: '{0} 滴',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '滴',
-          one: '{0}dr',
-          other: '{0}滴',
-        ),
-      );
+    long: UnitCountPattern(_locale, '滴', one: '{0} drop', other: '{0} 滴'),
+    short: UnitCountPattern(_locale, '滴', one: '{0} dr', other: '{0} 滴'),
+    narrow: UnitCountPattern(_locale, '滴', one: '{0}dr', other: '{0}滴'),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '打蘭',
-          one: '{0} dram',
-          other: '{0} 打蘭',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '打蘭',
-          one: '{0} dram',
-          other: '{0} 打蘭',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '打蘭',
-          one: '{0}fl.dr.',
-          other: '{0}打蘭',
-        ),
-      );
+    long: UnitCountPattern(_locale, '打蘭', one: '{0} dram', other: '{0} 打蘭'),
+    short: UnitCountPattern(_locale, '打蘭', one: '{0} dram', other: '{0} 打蘭'),
+    narrow: UnitCountPattern(_locale, '打蘭', one: '{0}fl.dr.', other: '{0}打蘭'),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '量酒杯',
-          one: '{0} jigger',
-          other: '{0} 量酒杯',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '量酒杯',
-          one: '{0} jigger',
-          other: '{0} 量酒杯',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '量酒杯',
-          one: '{0}jigger',
-          other: '{0}量酒杯',
-        ),
-      );
+    long: UnitCountPattern(_locale, '量酒杯', one: '{0} jigger', other: '{0} 量酒杯'),
+    short: UnitCountPattern(
+      _locale,
+      '量酒杯',
+      one: '{0} jigger',
+      other: '{0} 量酒杯',
+    ),
+    narrow: UnitCountPattern(_locale, '量酒杯', one: '{0}jigger', other: '{0}量酒杯'),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '小撮',
-          one: '{0} pinch',
-          other: '{0} 小撮',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '小撮',
-          one: '{0} pn',
-          other: '{0} 小撮',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '小撮',
-          one: '{0}pn',
-          other: '{0}小撮',
-        ),
-      );
+    long: UnitCountPattern(_locale, '小撮', one: '{0} pinch', other: '{0} 小撮'),
+    short: UnitCountPattern(_locale, '小撮', one: '{0} pn', other: '{0} 小撮'),
+    narrow: UnitCountPattern(_locale, '小撮', one: '{0}pn', other: '{0}小撮'),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '英制夸脫',
-          one: '{0} Imp. quart',
-          other: '{0} 英制夸脫',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '英制夸脫',
-          one: '{0} qt-Imp.',
-          other: '{0} 英制夸脫',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '英制夸脫',
-          one: '{0}qt-Imp.',
-          other: '{0}英制夸脫',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '英制夸脫',
+      one: '{0} Imp. quart',
+      other: '{0} 英制夸脫',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '英制夸脫',
+      one: '{0} qt-Imp.',
+      other: '{0} 英制夸脫',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '英制夸脫',
+      one: '{0}qt-Imp.',
+      other: '{0}英制夸脫',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0} light',
-          other: '{0} light',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0} light',
-          other: '{0} light',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0}light',
-          other: '{0} light',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0} light',
+      other: '{0} light',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0} light',
+      other: '{0} light',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0}light',
+      other: '{0} light',
+    ),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '十億分點濃度',
-          one: '{0} part per billion',
-          other: '{0} 十億分點濃度',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '濃度/十億',
-          one: '{0} ppb',
-          other: '{0} ppb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '濃度/十億',
-          one: '{0}ppb',
-          other: '{0}ppb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '十億分點濃度',
+      one: '{0} part per billion',
+      other: '{0} 十億分點濃度',
+    ),
+    short: UnitCountPattern(_locale, '濃度/十億', one: '{0} ppb', other: '{0} ppb'),
+    narrow: UnitCountPattern(_locale, '濃度/十億', one: '{0}ppb', other: '{0}ppb'),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '夜',
-          one: '{0} night',
-          other: '{0} 夜',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '夜',
-          one: '{0} night',
-          other: '{0} 夜',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '夜',
-          one: '{0}night',
-          other: '{0}夜',
-        ),
-      );
+    long: UnitCountPattern(_locale, '夜', one: '{0} night', other: '{0} 夜'),
+    short: UnitCountPattern(_locale, '夜', one: '{0} night', other: '{0} 夜'),
+    narrow: UnitCountPattern(_locale, '夜', one: '{0}night', other: '{0}夜'),
+  );
 }
 
 class DateFieldsZhHant extends DateFields {
   const DateFieldsZhHant(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: '紀元',
-        short: '紀元',
-        narrow: '紀元',
-      );
+  MultiLength get era =>
+      const MultiLength(long: '紀元', short: '紀元', narrow: '紀元');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: '年',
-          short: '年',
-          narrow: '年',
-        ),
-        previous: MultiLength(
-          long: '去年',
-          short: '去年',
-          narrow: '去年',
-        ),
-        now: MultiLength(
-          long: '今年',
-          short: '今年',
-          narrow: '今年',
-        ),
-        next: MultiLength(
-          long: '明年',
-          short: '明年',
-          narrow: '明年',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 年前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 年前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 年前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 年後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 年後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 年後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '年', short: '年', narrow: '年'),
+    previous: MultiLength(long: '去年', short: '去年', narrow: '去年'),
+    now: MultiLength(long: '今年', short: '今年', narrow: '今年'),
+    next: MultiLength(long: '明年', short: '明年', narrow: '明年'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 年前'),
+      short: RelativeTime(_locale, other: '{0} 年前'),
+      narrow: RelativeTime(_locale, other: '{0} 年前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 年後'),
+      short: RelativeTime(_locale, other: '{0} 年後'),
+      narrow: RelativeTime(_locale, other: '{0} 年後'),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: '季度',
-          short: '季度',
-          narrow: '季度',
-        ),
-        previous: MultiLength(
-          long: '上一季',
-          short: '上一季',
-          narrow: '上一季',
-        ),
-        now: MultiLength(
-          long: '這一季',
-          short: '這一季',
-          narrow: '這一季',
-        ),
-        next: MultiLength(
-          long: '下一季',
-          short: '下一季',
-          narrow: '下一季',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 季前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 季前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 季前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 季後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 季後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 季後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '季度', short: '季度', narrow: '季度'),
+    previous: MultiLength(long: '上一季', short: '上一季', narrow: '上一季'),
+    now: MultiLength(long: '這一季', short: '這一季', narrow: '這一季'),
+    next: MultiLength(long: '下一季', short: '下一季', narrow: '下一季'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 季前'),
+      short: RelativeTime(_locale, other: '{0} 季前'),
+      narrow: RelativeTime(_locale, other: '{0} 季前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 季後'),
+      short: RelativeTime(_locale, other: '{0} 季後'),
+      narrow: RelativeTime(_locale, other: '{0} 季後'),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: '月',
-          short: '月',
-          narrow: '月',
-        ),
-        previous: MultiLength(
-          long: '上個月',
-          short: '上個月',
-          narrow: '上個月',
-        ),
-        now: MultiLength(
-          long: '本月',
-          short: '本月',
-          narrow: '本月',
-        ),
-        next: MultiLength(
-          long: '下個月',
-          short: '下個月',
-          narrow: '下個月',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個月前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個月前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個月前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個月後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個月後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個月後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '月', short: '月', narrow: '月'),
+    previous: MultiLength(long: '上個月', short: '上個月', narrow: '上個月'),
+    now: MultiLength(long: '本月', short: '本月', narrow: '本月'),
+    next: MultiLength(long: '下個月', short: '下個月', narrow: '下個月'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個月前'),
+      short: RelativeTime(_locale, other: '{0} 個月前'),
+      narrow: RelativeTime(_locale, other: '{0} 個月前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個月後'),
+      short: RelativeTime(_locale, other: '{0} 個月後'),
+      narrow: RelativeTime(_locale, other: '{0} 個月後'),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: '週',
-          short: '週',
-          narrow: '週',
-        ),
-        previous: MultiLength(
-          long: '上週',
-          short: '上週',
-          narrow: '上週',
-        ),
-        now: MultiLength(
-          long: '本週',
-          short: '本週',
-          narrow: '本週',
-        ),
-        next: MultiLength(
-          long: '下週',
-          short: '下週',
-          narrow: '下週',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 週前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 週前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 週前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 週後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 週後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 週後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '週', short: '週', narrow: '週'),
+    previous: MultiLength(long: '上週', short: '上週', narrow: '上週'),
+    now: MultiLength(long: '本週', short: '本週', narrow: '本週'),
+    next: MultiLength(long: '下週', short: '下週', narrow: '下週'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 週前'),
+      short: RelativeTime(_locale, other: '{0} 週前'),
+      narrow: RelativeTime(_locale, other: '{0} 週前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 週後'),
+      short: RelativeTime(_locale, other: '{0} 週後'),
+      narrow: RelativeTime(_locale, other: '{0} 週後'),
+    ),
+  );
 
   @override
-  MultiLength get weekOfMonth => const MultiLength(
-        long: '該月第幾週',
-        short: '月週次',
-        narrow: '月週次',
-      );
+  MultiLength get weekOfMonth =>
+      const MultiLength(long: '該月第幾週', short: '月週次', narrow: '月週次');
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: '日',
-          short: '日',
-          narrow: '日',
-        ),
-        previous: MultiLength(
-          long: '昨天',
-          short: '昨天',
-          narrow: '昨天',
-        ),
-        now: MultiLength(
-          long: '今天',
-          short: '今天',
-          narrow: '今天',
-        ),
-        next: MultiLength(
-          long: '明天',
-          short: '明天',
-          narrow: '明天',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 天前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 天前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 天前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 天後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 天後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 天後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '日', short: '日', narrow: '日'),
+    previous: MultiLength(long: '昨天', short: '昨天', narrow: '昨天'),
+    now: MultiLength(long: '今天', short: '今天', narrow: '今天'),
+    next: MultiLength(long: '明天', short: '明天', narrow: '明天'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 天前'),
+      short: RelativeTime(_locale, other: '{0} 天前'),
+      narrow: RelativeTime(_locale, other: '{0} 天前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 天後'),
+      short: RelativeTime(_locale, other: '{0} 天後'),
+      narrow: RelativeTime(_locale, other: '{0} 天後'),
+    ),
+  );
 
   @override
-  MultiLength get dayOfYear => const MultiLength(
-        long: '該年第幾天',
-        short: '該年第幾天',
-        narrow: '該年第幾天',
-      );
+  MultiLength get dayOfYear =>
+      const MultiLength(long: '該年第幾天', short: '該年第幾天', narrow: '該年第幾天');
 
   @override
-  MultiLength get weekday => const MultiLength(
-        long: '星期',
-        short: '星期',
-        narrow: '星期',
-      );
+  MultiLength get weekday =>
+      const MultiLength(long: '星期', short: '星期', narrow: '星期');
 
   @override
-  MultiLength get weekdayOfMonth => const MultiLength(
-        long: '該月第幾週',
-        short: '該月第幾週',
-        narrow: '該月第幾週',
-      );
+  MultiLength get weekdayOfMonth =>
+      const MultiLength(long: '該月第幾週', short: '該月第幾週', narrow: '該月第幾週');
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: '上週日',
-          short: '上週日',
-          narrow: '上週日',
-        ),
-        now: MultiLength(
-          long: '本週日',
-          short: '本週日',
-          narrow: '本週日',
-        ),
-        next: MultiLength(
-          long: '下週日',
-          short: '下週日',
-          narrow: '下週日',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週日前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週日前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週日前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週日後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週日後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週日後',
-          ),
-        ),
-      );
+    previous: MultiLength(long: '上週日', short: '上週日', narrow: '上週日'),
+    now: MultiLength(long: '本週日', short: '本週日', narrow: '本週日'),
+    next: MultiLength(long: '下週日', short: '下週日', narrow: '下週日'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週日前'),
+      short: RelativeTime(_locale, other: '{0} 個週日前'),
+      narrow: RelativeTime(_locale, other: '{0} 個週日前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週日後'),
+      short: RelativeTime(_locale, other: '{0} 個週日後'),
+      narrow: RelativeTime(_locale, other: '{0} 個週日後'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: '上週一',
-          short: '上週一',
-          narrow: '上週一',
-        ),
-        now: MultiLength(
-          long: '本週一',
-          short: '本週一',
-          narrow: '本週一',
-        ),
-        next: MultiLength(
-          long: '下週一',
-          short: '下週一',
-          narrow: '下週一',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週一前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週一前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週一前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週一後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週一後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週一後',
-          ),
-        ),
-      );
+    previous: MultiLength(long: '上週一', short: '上週一', narrow: '上週一'),
+    now: MultiLength(long: '本週一', short: '本週一', narrow: '本週一'),
+    next: MultiLength(long: '下週一', short: '下週一', narrow: '下週一'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週一前'),
+      short: RelativeTime(_locale, other: '{0} 個週一前'),
+      narrow: RelativeTime(_locale, other: '{0} 個週一前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週一後'),
+      short: RelativeTime(_locale, other: '{0} 個週一後'),
+      narrow: RelativeTime(_locale, other: '{0} 個週一後'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: '上週二',
-          short: '上週二',
-          narrow: '上週二',
-        ),
-        now: MultiLength(
-          long: '本週二',
-          short: '本週二',
-          narrow: '本週二',
-        ),
-        next: MultiLength(
-          long: '下週二',
-          short: '下週二',
-          narrow: '下週二',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週二前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週二前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週二前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週二後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週二後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週二後',
-          ),
-        ),
-      );
+    previous: MultiLength(long: '上週二', short: '上週二', narrow: '上週二'),
+    now: MultiLength(long: '本週二', short: '本週二', narrow: '本週二'),
+    next: MultiLength(long: '下週二', short: '下週二', narrow: '下週二'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週二前'),
+      short: RelativeTime(_locale, other: '{0} 個週二前'),
+      narrow: RelativeTime(_locale, other: '{0} 個週二前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週二後'),
+      short: RelativeTime(_locale, other: '{0} 個週二後'),
+      narrow: RelativeTime(_locale, other: '{0} 個週二後'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: '上週三',
-          short: '上週三',
-          narrow: '上週三',
-        ),
-        now: MultiLength(
-          long: '本週三',
-          short: '本週三',
-          narrow: '本週三',
-        ),
-        next: MultiLength(
-          long: '下週三',
-          short: '下週三',
-          narrow: '下週三',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週三前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週三前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週三前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週三後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週三後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週三後',
-          ),
-        ),
-      );
+    previous: MultiLength(long: '上週三', short: '上週三', narrow: '上週三'),
+    now: MultiLength(long: '本週三', short: '本週三', narrow: '本週三'),
+    next: MultiLength(long: '下週三', short: '下週三', narrow: '下週三'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週三前'),
+      short: RelativeTime(_locale, other: '{0} 個週三前'),
+      narrow: RelativeTime(_locale, other: '{0} 個週三前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週三後'),
+      short: RelativeTime(_locale, other: '{0} 個週三後'),
+      narrow: RelativeTime(_locale, other: '{0} 個週三後'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: '上週四',
-          short: '上週四',
-          narrow: '上週四',
-        ),
-        now: MultiLength(
-          long: '本週四',
-          short: '本週四',
-          narrow: '本週四',
-        ),
-        next: MultiLength(
-          long: '下週四',
-          short: '下週四',
-          narrow: '下週四',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週四前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週四前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週四前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週四後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週四後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週四後',
-          ),
-        ),
-      );
+    previous: MultiLength(long: '上週四', short: '上週四', narrow: '上週四'),
+    now: MultiLength(long: '本週四', short: '本週四', narrow: '本週四'),
+    next: MultiLength(long: '下週四', short: '下週四', narrow: '下週四'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週四前'),
+      short: RelativeTime(_locale, other: '{0} 個週四前'),
+      narrow: RelativeTime(_locale, other: '{0} 個週四前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週四後'),
+      short: RelativeTime(_locale, other: '{0} 個週四後'),
+      narrow: RelativeTime(_locale, other: '{0} 個週四後'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: '上週五',
-          short: '上週五',
-          narrow: '上週五',
-        ),
-        now: MultiLength(
-          long: '本週五',
-          short: '本週五',
-          narrow: '本週五',
-        ),
-        next: MultiLength(
-          long: '下週五',
-          short: '下週五',
-          narrow: '下週五',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週五前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週五前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週五前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週五後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週五後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週五後',
-          ),
-        ),
-      );
+    previous: MultiLength(long: '上週五', short: '上週五', narrow: '上週五'),
+    now: MultiLength(long: '本週五', short: '本週五', narrow: '本週五'),
+    next: MultiLength(long: '下週五', short: '下週五', narrow: '下週五'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週五前'),
+      short: RelativeTime(_locale, other: '{0} 個週五前'),
+      narrow: RelativeTime(_locale, other: '{0} 個週五前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週五後'),
+      short: RelativeTime(_locale, other: '{0} 個週五後'),
+      narrow: RelativeTime(_locale, other: '{0} 個週五後'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: '上週六',
-          short: '上週六',
-          narrow: '上週六',
-        ),
-        now: MultiLength(
-          long: '本週六',
-          short: '本週六',
-          narrow: '本週六',
-        ),
-        next: MultiLength(
-          long: '下週六',
-          short: '下週六',
-          narrow: '下週六',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週六前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週六前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週六前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 個週六後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 個週六後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 個週六後',
-          ),
-        ),
-      );
+    previous: MultiLength(long: '上週六', short: '上週六', narrow: '上週六'),
+    now: MultiLength(long: '本週六', short: '本週六', narrow: '本週六'),
+    next: MultiLength(long: '下週六', short: '下週六', narrow: '下週六'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週六前'),
+      short: RelativeTime(_locale, other: '{0} 個週六前'),
+      narrow: RelativeTime(_locale, other: '{0} 個週六前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 個週六後'),
+      short: RelativeTime(_locale, other: '{0} 個週六後'),
+      narrow: RelativeTime(_locale, other: '{0} 個週六後'),
+    ),
+  );
 
   @override
-  MultiLength get dayperiod => const MultiLength(
-        long: '時段',
-        short: '時段',
-        narrow: '時段',
-      );
+  MultiLength get dayperiod =>
+      const MultiLength(long: '時段', short: '時段', narrow: '時段');
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: '小時',
-          short: '時',
-          narrow: '時',
-        ),
-        now: MultiLength(
-          long: '這一小時',
-          short: '這一小時',
-          narrow: '這一小時',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 小時前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 小時前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 小時前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 小時後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 小時後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 小時後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '小時', short: '時', narrow: '時'),
+    now: MultiLength(long: '這一小時', short: '這一小時', narrow: '這一小時'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 小時前'),
+      short: RelativeTime(_locale, other: '{0} 小時前'),
+      narrow: RelativeTime(_locale, other: '{0} 小時前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 小時後'),
+      short: RelativeTime(_locale, other: '{0} 小時後'),
+      narrow: RelativeTime(_locale, other: '{0} 小時後'),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: '分鐘',
-          short: '分',
-          narrow: '分',
-        ),
-        now: MultiLength(
-          long: '這一分鐘',
-          short: '這一分鐘',
-          narrow: '這一分鐘',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 分鐘前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 分鐘前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 分鐘前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 分鐘後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 分鐘後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 分鐘後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '分鐘', short: '分', narrow: '分'),
+    now: MultiLength(long: '這一分鐘', short: '這一分鐘', narrow: '這一分鐘'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 分鐘前'),
+      short: RelativeTime(_locale, other: '{0} 分鐘前'),
+      narrow: RelativeTime(_locale, other: '{0} 分鐘前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 分鐘後'),
+      short: RelativeTime(_locale, other: '{0} 分鐘後'),
+      narrow: RelativeTime(_locale, other: '{0} 分鐘後'),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: '秒',
-          short: '秒',
-          narrow: '秒',
-        ),
-        now: MultiLength(
-          long: '現在',
-          short: '現在',
-          narrow: '現在',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 秒前',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 秒前',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 秒前',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            other: '{0} 秒後',
-          ),
-          short: RelativeTime(
-            _locale,
-            other: '{0} 秒後',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            other: '{0} 秒後',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: '秒', short: '秒', narrow: '秒'),
+    now: MultiLength(long: '現在', short: '現在', narrow: '現在'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 秒前'),
+      short: RelativeTime(_locale, other: '{0} 秒前'),
+      narrow: RelativeTime(_locale, other: '{0} 秒前'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, other: '{0} 秒後'),
+      short: RelativeTime(_locale, other: '{0} 秒後'),
+      narrow: RelativeTime(_locale, other: '{0} 秒後'),
+    ),
+  );
 
   @override
-  MultiLength get zone => const MultiLength(
-        long: '時區',
-        short: '時區',
-        narrow: '時區',
-      );
+  MultiLength get zone =>
+      const MultiLength(long: '時區', short: '時區', narrow: '時區');
 }
 
 class LanguagesZhHant extends Languages {
@@ -5281,8 +2757,12 @@ class LanguagesZhHant extends Languages {
   static const _chr = Language('chr', '柴羅基文');
   static const _chy = Language('chy', '沙伊安文');
   static const _cic = Language('cic', '契卡索文');
-  static const _ckb =
-      Language('ckb', '中庫德文', variant: '庫德文（索拉尼）', menu: '中庫德文');
+  static const _ckb = Language(
+    'ckb',
+    '中庫德文',
+    variant: '庫德文（索拉尼）',
+    menu: '中庫德文',
+  );
   static const _clc = Language('clc', '齊爾柯廷語');
   static const _co = Language('co', '科西嘉文');
   static const _cop = Language('cop', '科普特文');
@@ -15179,14 +12659,23 @@ class CurrenciesZhHant extends Currencies {
   static const _arp = Currency(_cld, 'ARP', '阿根廷披索 (1983–1985)');
   static const _ars = Currency(_cld, 'ARS', '阿根廷披索', symbolNarrow: r'$');
   static const _ats = Currency(_cld, 'ATS', '奧地利先令');
-  static const _aud =
-      Currency(_cld, 'AUD', '澳幣', symbol: r'AU$', symbolNarrow: r'$');
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    '澳幣',
+    symbol: r'AU$',
+    symbolNarrow: r'$',
+  );
   static const _awg = Currency(_cld, 'AWG', '阿路巴盾');
   static const _azm = Currency(_cld, 'AZM', '亞塞拜然馬納特 (1993–2006)');
   static const _azn = Currency(_cld, 'AZN', '亞塞拜然馬納特', symbolNarrow: '₼');
   static const _bad = Currency(_cld, 'BAD', '波士尼亞-赫塞哥維納第納爾');
-  static const _bam =
-      Currency(_cld, 'BAM', '波士尼亞-赫塞哥維納可轉換馬克', symbolNarrow: 'KM');
+  static const _bam = Currency(
+    _cld,
+    'BAM',
+    '波士尼亞-赫塞哥維納可轉換馬克',
+    symbolNarrow: 'KM',
+  );
   static const _ban = Currency(_cld, 'BAN', '波士尼亞-赫塞哥維納新第納爾');
   static const _bbd = Currency(_cld, 'BBD', '巴貝多元', symbolNarrow: r'$');
   static const _bdt = Currency(_cld, 'BDT', '孟加拉塔卡', symbolNarrow: '৳');
@@ -15208,8 +12697,13 @@ class CurrenciesZhHant extends Currencies {
   static const _brb = Currency(_cld, 'BRB', '巴西克魯薩多農瓦 (1967–1986)');
   static const _brc = Currency(_cld, 'BRC', '巴西克魯賽羅 (1986–1989)');
   static const _bre = Currency(_cld, 'BRE', '巴西克魯賽羅 (1990–1993)');
-  static const _brl =
-      Currency(_cld, 'BRL', '巴西雷亞爾', symbol: r'R$', symbolNarrow: r'R$');
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    '巴西雷亞爾',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
   static const _brn = Currency(_cld, 'BRN', '巴西克如爾達農瓦');
   static const _brr = Currency(_cld, 'BRR', '巴西克魯賽羅 (1993–1994)');
   static const _brz = Currency(_cld, 'BRZ', '巴西克魯賽羅 (1942 –1967)');
@@ -15221,8 +12715,13 @@ class CurrenciesZhHant extends Currencies {
   static const _byn = Currency(_cld, 'BYN', '白俄羅斯盧布', symbolNarrow: 'р.');
   static const _byr = Currency(_cld, 'BYR', '白俄羅斯盧布 (2000–2016)');
   static const _bzd = Currency(_cld, 'BZD', '貝里斯元', symbolNarrow: r'$');
-  static const _cad =
-      Currency(_cld, 'CAD', '加幣', symbol: r'CA$', symbolNarrow: r'$');
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    '加幣',
+    symbol: r'CA$',
+    symbolNarrow: r'$',
+  );
   static const _cdf = Currency(_cld, 'CDF', '剛果法郎');
   static const _che = Currency(_cld, 'CHE', '歐元 (WIR)');
   static const _chf = Currency(_cld, 'CHF', '瑞士法郎');
@@ -15231,8 +12730,13 @@ class CurrenciesZhHant extends Currencies {
   static const _clf = Currency(_cld, 'CLF', '卡林油達佛曼跎');
   static const _clp = Currency(_cld, 'CLP', '智利披索', symbolNarrow: r'$');
   static const _cnh = Currency(_cld, 'CNH', '人民幣（離岸）');
-  static const _cny =
-      Currency(_cld, 'CNY', '人民幣', symbol: 'CN¥', symbolNarrow: '¥');
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    '人民幣',
+    symbol: 'CN¥',
+    symbolNarrow: '¥',
+  );
   static const _cop = Currency(_cld, 'COP', '哥倫比亞披索', symbolNarrow: r'$');
   static const _cou = Currency(_cld, 'COU', '哥倫比亞幣 (COU)');
   static const _crc = Currency(_cld, 'CRC', '哥斯大黎加科朗', symbolNarrow: '₡');
@@ -15258,14 +12762,24 @@ class CurrenciesZhHant extends Currencies {
   static const _esb = Currency(_cld, 'ESB', '西班牙比塞塔（可轉換會計單位）');
   static const _esp = Currency(_cld, 'ESP', '西班牙陪士特', symbolNarrow: '₧');
   static const _etb = Currency(_cld, 'ETB', '衣索比亞比爾');
-  static const _eur =
-      Currency(_cld, 'EUR', '歐元', symbol: '€', symbolNarrow: '€');
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    '歐元',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
   static const _fim = Currency(_cld, 'FIM', '芬蘭馬克');
   static const _fjd = Currency(_cld, 'FJD', '斐濟元', symbolNarrow: r'$');
   static const _fkp = Currency(_cld, 'FKP', '福克蘭群島鎊', symbolNarrow: '£');
   static const _frf = Currency(_cld, 'FRF', '法國法郎');
-  static const _gbp =
-      Currency(_cld, 'GBP', '英鎊', symbol: '£', symbolNarrow: '£');
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    '英鎊',
+    symbol: '£',
+    symbolNarrow: '£',
+  );
   static const _gek = Currency(_cld, 'GEK', '喬治亞庫旁拉里');
   static const _gel = Currency(_cld, 'GEL', '喬治亞拉里', symbolNarrow: '₾');
   static const _ghc = Currency(_cld, 'GHC', '迦納賽地 (1979–2007)');
@@ -15280,8 +12794,13 @@ class CurrenciesZhHant extends Currencies {
   static const _gwe = Currency(_cld, 'GWE', '葡屬幾內亞埃斯庫多');
   static const _gwp = Currency(_cld, 'GWP', '幾內亞比索披索');
   static const _gyd = Currency(_cld, 'GYD', '圭亞那元', symbolNarrow: r'$');
-  static const _hkd =
-      Currency(_cld, 'HKD', '港幣', symbol: r'HK$', symbolNarrow: r'$');
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    '港幣',
+    symbol: r'HK$',
+    symbolNarrow: r'$',
+  );
   static const _hnl = Currency(_cld, 'HNL', '洪都拉斯倫皮拉', symbolNarrow: 'L');
   static const _hrd = Currency(_cld, 'HRD', '克羅埃西亞第納爾');
   static const _hrk = Currency(_cld, 'HRK', '克羅埃西亞庫納', symbolNarrow: 'kn');
@@ -15291,10 +12810,20 @@ class CurrenciesZhHant extends Currencies {
   static const _iep = Currency(_cld, 'IEP', '愛爾蘭鎊');
   static const _ilp = Currency(_cld, 'ILP', '以色列鎊');
   static const _ilr = Currency(_cld, 'ILR', '以色列謝克爾 (1980–1985)');
-  static const _ils =
-      Currency(_cld, 'ILS', '以色列新謝克爾', symbol: '₪', symbolNarrow: '₪');
-  static const _inr =
-      Currency(_cld, 'INR', '印度盧比', symbol: '₹', symbolNarrow: '₹');
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    '以色列新謝克爾',
+    symbol: '₪',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    '印度盧比',
+    symbol: '₹',
+    symbolNarrow: '₹',
+  );
   static const _iqd = Currency(_cld, 'IQD', '伊拉克第納爾');
   static const _irr = Currency(_cld, 'IRR', '伊朗里亞爾');
   static const _isj = Currency(_cld, 'ISJ', '冰島克朗 (1918–1981)');
@@ -15302,8 +12831,13 @@ class CurrenciesZhHant extends Currencies {
   static const _itl = Currency(_cld, 'ITL', '義大利里拉');
   static const _jmd = Currency(_cld, 'JMD', '牙買加元', symbolNarrow: r'$');
   static const _jod = Currency(_cld, 'JOD', '約旦第納爾');
-  static const _jpy =
-      Currency(_cld, 'JPY', '日圓', symbol: '¥', symbolNarrow: '¥');
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    '日圓',
+    symbol: '¥',
+    symbolNarrow: '¥',
+  );
   static const _kes = Currency(_cld, 'KES', '肯尼亞先令');
   static const _kgs = Currency(_cld, 'KGS', '吉爾吉斯索姆', symbolNarrow: '⃀');
   static const _khr = Currency(_cld, 'KHR', '柬埔寨瑞爾', symbolNarrow: '៛');
@@ -15311,8 +12845,13 @@ class CurrenciesZhHant extends Currencies {
   static const _kpw = Currency(_cld, 'KPW', '北韓元', symbolNarrow: '₩');
   static const _krh = Currency(_cld, 'KRH', '南韓圜');
   static const _kro = Currency(_cld, 'KRO', '南韓圓');
-  static const _krw =
-      Currency(_cld, 'KRW', '韓元', symbol: '￦', symbolNarrow: '₩');
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    '韓元',
+    symbol: '￦',
+    symbolNarrow: '₩',
+  );
   static const _kwd = Currency(_cld, 'KWD', '科威特第納爾');
   static const _kyd = Currency(_cld, 'KYD', '開曼群島元', symbolNarrow: r'$');
   static const _kzt = Currency(_cld, 'KZT', '哈薩克堅戈', symbolNarrow: '₸');
@@ -15350,8 +12889,13 @@ class CurrenciesZhHant extends Currencies {
   static const _mvp = Currency(_cld, 'MVP', '馬爾地夫盧比');
   static const _mvr = Currency(_cld, 'MVR', '馬爾地夫盧非亞');
   static const _mwk = Currency(_cld, 'MWK', '馬拉維克瓦查');
-  static const _mxn =
-      Currency(_cld, 'MXN', '墨西哥披索', symbol: r'MX$', symbolNarrow: r'$');
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    '墨西哥披索',
+    symbol: r'MX$',
+    symbolNarrow: r'$',
+  );
   static const _mxp = Currency(_cld, 'MXP', '墨西哥銀披索 (1861–1992)');
   static const _mxv = Currency(_cld, 'MXV', '墨西哥轉換單位 (UDI)');
   static const _myr = Currency(_cld, 'MYR', '馬來西亞令吉', symbolNarrow: 'RM');
@@ -15365,16 +12909,26 @@ class CurrenciesZhHant extends Currencies {
   static const _nlg = Currency(_cld, 'NLG', '荷蘭盾');
   static const _nok = Currency(_cld, 'NOK', '挪威克朗', symbolNarrow: 'kr');
   static const _npr = Currency(_cld, 'NPR', '尼泊爾盧比', symbolNarrow: 'Rs');
-  static const _nzd =
-      Currency(_cld, 'NZD', '紐西蘭幣', symbol: r'NZ$', symbolNarrow: r'$');
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    '紐西蘭幣',
+    symbol: r'NZ$',
+    symbolNarrow: r'$',
+  );
   static const _omr = Currency(_cld, 'OMR', '阿曼里亞爾');
   static const _pab = Currency(_cld, 'PAB', '巴拿馬巴波亞');
   static const _pei = Currency(_cld, 'PEI', '祕魯因蒂');
   static const _pen = Currency(_cld, 'PEN', '秘魯太陽幣');
   static const _pes = Currency(_cld, 'PES', '秘魯太陽幣 (1863–1965)');
   static const _pgk = Currency(_cld, 'PGK', '巴布亞紐幾內亞基那');
-  static const _php =
-      Currency(_cld, 'PHP', '菲律賓披索', symbol: 'PHP', symbolNarrow: '₱');
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    '菲律賓披索',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
   static const _pkr = Currency(_cld, 'PKR', '巴基斯坦盧比', symbolNarrow: 'Rs');
   static const _pln = Currency(_cld, 'PLN', '波蘭茲羅提', symbolNarrow: 'zł');
   static const _plz = Currency(_cld, 'PLZ', '波蘭茲羅提 (1950–1995)');
@@ -15386,8 +12940,12 @@ class CurrenciesZhHant extends Currencies {
   static const _ron = Currency(_cld, 'RON', '羅馬尼亞列伊', symbolNarrow: 'L');
   static const _rsd = Currency(_cld, 'RSD', '塞爾維亞戴納');
   static const _rub = Currency(_cld, 'RUB', '俄羅斯盧布', symbolNarrow: '₽');
-  static const _rur =
-      Currency(_cld, 'RUR', '俄羅斯盧布 (1991–1998)', symbolNarrow: 'р.');
+  static const _rur = Currency(
+    _cld,
+    'RUR',
+    '俄羅斯盧布 (1991–1998)',
+    symbolNarrow: 'р.',
+  );
   static const _rwf = Currency(_cld, 'RWF', '盧安達法郎', symbolNarrow: 'RF');
   static const _sar = Currency(_cld, 'SAR', '沙烏地里亞爾');
   static const _sbd = Currency(_cld, 'SBD', '索羅門群島元', symbolNarrow: r'$');
@@ -15407,8 +12965,12 @@ class CurrenciesZhHant extends Currencies {
   static const _srg = Currency(_cld, 'SRG', '蘇利南基爾');
   static const _ssp = Currency(_cld, 'SSP', '南蘇丹鎊', symbolNarrow: '£');
   static const _std = Currency(_cld, 'STD', '聖多美島和普林西比島多布拉 (1977–2017)');
-  static const _stn =
-      Currency(_cld, 'STN', '聖多美島和普林西比島多布拉', symbolNarrow: 'Db');
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    '聖多美島和普林西比島多布拉',
+    symbolNarrow: 'Db',
+  );
   static const _sur = Currency(_cld, 'SUR', '蘇聯盧布');
   static const _svc = Currency(_cld, 'SVC', '薩爾瓦多科郎');
   static const _syp = Currency(_cld, 'SYP', '敘利亞鎊', symbolNarrow: '£');
@@ -15422,18 +12984,34 @@ class CurrenciesZhHant extends Currencies {
   static const _top = Currency(_cld, 'TOP', '東加潘加', symbolNarrow: r'T$');
   static const _tpe = Currency(_cld, 'TPE', '帝汶埃斯庫多');
   static const _trl = Currency(_cld, 'TRL', '土耳其里拉 (1922–2005)');
-  static const _$try =
-      Currency(_cld, 'TRY', '土耳其里拉', symbolNarrow: '₺', symbolVariant: 'TL');
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    '土耳其里拉',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
   static const _ttd = Currency(_cld, 'TTD', '千里達及托巴哥元', symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', '新台幣',
-      symbol: r'$', symbolNarrow: r'$', symbolVariant: r'NT$');
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    '新台幣',
+    symbol: r'$',
+    symbolNarrow: r'$',
+    symbolVariant: r'NT$',
+  );
   static const _tzs = Currency(_cld, 'TZS', '坦尚尼亞先令');
   static const _uah = Currency(_cld, 'UAH', '烏克蘭格里夫納', symbolNarrow: '₴');
   static const _uak = Currency(_cld, 'UAK', '烏克蘭卡本瓦那茲');
   static const _ugs = Currency(_cld, 'UGS', '烏干達先令 (1966–1987)');
   static const _ugx = Currency(_cld, 'UGX', '烏干達先令');
-  static const _usd =
-      Currency(_cld, 'USD', '美元', symbol: r'US$', symbolNarrow: r'$');
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    '美元',
+    symbol: r'US$',
+    symbolNarrow: r'$',
+  );
   static const _usn = Currency(_cld, 'USN', '美元（次日）');
   static const _uss = Currency(_cld, 'USS', '美元（當日）');
   static const _uyi = Currency(_cld, 'UYI', '烏拉圭披索（指數單位）');
@@ -15441,11 +13019,20 @@ class CurrenciesZhHant extends Currencies {
   static const _uyu = Currency(_cld, 'UYU', '烏拉圭披索', symbolNarrow: r'$');
   static const _uzs = Currency(_cld, 'UZS', '烏茲別克索姆');
   static const _veb = Currency(_cld, 'VEB', '委內瑞拉玻利瓦 (1871–2008)');
-  static const _vef =
-      Currency(_cld, 'VEF', '委內瑞拉玻利瓦 (2008–2018)', symbolNarrow: 'Bs');
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    '委內瑞拉玻利瓦 (2008–2018)',
+    symbolNarrow: 'Bs',
+  );
   static const _ves = Currency(_cld, 'VES', '委內瑞拉玻利瓦');
-  static const _vnd =
-      Currency(_cld, 'VND', '越南盾', symbol: '₫', symbolNarrow: '₫');
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    '越南盾',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
   static const _vnn = Currency(_cld, 'VNN', '越南盾 (1978–1985)');
   static const _vuv = Currency(_cld, 'VUV', '萬那杜瓦圖');
   static const _wst = Currency(_cld, 'WST', '西薩摩亞塔拉');
@@ -15456,8 +13043,13 @@ class CurrenciesZhHant extends Currencies {
   static const _xbb = Currency(_cld, 'XBB', '歐洲貨幣單位 (XBB)');
   static const _xbc = Currency(_cld, 'XBC', '歐洲會計單位 (XBC)');
   static const _xbd = Currency(_cld, 'XBD', '歐洲會計單位 (XBD)');
-  static const _xcd =
-      Currency(_cld, 'XCD', '格瑞那達元', symbol: r'EC$', symbolNarrow: r'$');
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    '格瑞那達元',
+    symbol: r'EC$',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
   static const _xdr = Currency(_cld, 'XDR', '特殊提款權');
   static const _xeu = Currency(_cld, 'XEU', '歐洲貨幣單位 (XEU)');
@@ -15471,8 +13063,13 @@ class CurrenciesZhHant extends Currencies {
   static const _xsu = Currency(_cld, 'XSU', '蘇克雷貨幣');
   static const _xts = Currency(_cld, 'XTS', '測試用貨幣代碼');
   static const _xua = Currency(_cld, 'XUA', '亞洲開發銀行計價單位');
-  static const _xxx =
-      Currency(_cld, 'XXX', '未知貨幣', other: '（未知貨幣）', symbol: 'XXX');
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    '未知貨幣',
+    other: '（未知貨幣）',
+    symbol: 'XXX',
+  );
   static const _ydd = Currency(_cld, 'YDD', '葉門第納爾');
   static const _yer = Currency(_cld, 'YER', '葉門里亞爾');
   static const _yud = Currency(_cld, 'YUD', '南斯拉夫第納爾硬幣');
@@ -16615,7 +14212,9 @@ class TimeZonesZhHant extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: '基西紐'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: '哥本哈根'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: '都柏林', long: TimeZoneName(daylight: '愛爾蘭標準時間')),
+      exemplarCity: '都柏林',
+      long: TimeZoneName(daylight: '愛爾蘭標準時間'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: '直布羅陀'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: '根息島'),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: '赫爾辛基'),
@@ -16628,7 +14227,9 @@ class TimeZonesZhHant extends TimeZones {
     'Europe/Lisbon': TimeZoneNames(exemplarCity: '里斯本'),
     'Europe/Ljubljana': TimeZoneNames(exemplarCity: '盧比安納'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: '倫敦', long: TimeZoneName(daylight: '英國夏令時間')),
+      exemplarCity: '倫敦',
+      long: TimeZoneName(daylight: '英國夏令時間'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: '盧森堡'),
     'Europe/Madrid': TimeZoneNames(exemplarCity: '馬德里'),
     'Europe/Malta': TimeZoneNames(exemplarCity: '馬爾他'),
@@ -16869,8 +14470,9 @@ class TimeZonesZhHant extends TimeZones {
     'Antarctica/Troll': TimeZoneNames(exemplarCity: '綽爾'),
     'Antarctica/Vostok': TimeZoneNames(exemplarCity: '沃斯托克'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: '世界標準時間'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: '世界標準時間'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: '未知城市'),
   };
 
@@ -16878,381 +14480,834 @@ class TimeZonesZhHant extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Acre': MetaZone('Acre',
-        long: TimeZoneName(
-            generic: '艾克時間', standard: '艾克標準時間', daylight: '艾克夏令時間')),
-    'Afghanistan':
-        MetaZone('Afghanistan', long: TimeZoneName(standard: '阿富汗時間')),
-    'Africa_Central':
-        MetaZone('Africa_Central', long: TimeZoneName(standard: '中非時間')),
-    'Africa_Eastern':
-        MetaZone('Africa_Eastern', long: TimeZoneName(standard: '東非時間')),
-    'Africa_Southern':
-        MetaZone('Africa_Southern', long: TimeZoneName(standard: '南非標準時間')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: '西非時間', standard: '西非標準時間', daylight: '西非夏令時間')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: '阿拉斯加時間', standard: '阿拉斯加標準時間', daylight: '阿拉斯加夏令時間'),
-        short:
-            TimeZoneName(generic: 'AKT', standard: 'AKST', daylight: 'AKDT')),
-    'Almaty': MetaZone('Almaty',
-        long: TimeZoneName(
-            generic: '阿拉木圖時間', standard: '阿拉木圖標準時間', daylight: '阿拉木圖夏令時間')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: '亞馬遜時間', standard: '亞馬遜標準時間', daylight: '亞馬遜夏令時間')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: '中部時間', standard: '中部標準時間', daylight: '中部夏令時間'),
-        short: TimeZoneName(generic: 'CT', standard: 'CST', daylight: 'CDT')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: '東部時間', standard: '東部標準時間', daylight: '東部夏令時間'),
-        short: TimeZoneName(generic: 'ET', standard: 'EST', daylight: 'EDT')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: '山區時間', standard: '山區標準時間', daylight: '山區夏令時間'),
-        short: TimeZoneName(generic: 'MT', standard: 'MST', daylight: 'MDT')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: '太平洋時間', standard: '太平洋標準時間', daylight: '太平洋夏令時間'),
-        short: TimeZoneName(generic: 'PT', standard: 'PST', daylight: 'PDT')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: '阿納德爾時間', standard: '阿那底河標準時間', daylight: '阿那底河夏令時間')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: '阿皮亞時間', standard: '阿皮亞標準時間', daylight: '阿皮亞夏令時間')),
-    'Aqtau': MetaZone('Aqtau',
-        long: TimeZoneName(
-            generic: '阿克陶時間', standard: '阿克陶標準時間', daylight: '阿克陶夏令時間')),
-    'Aqtobe': MetaZone('Aqtobe',
-        long: TimeZoneName(
-            generic: '阿克托比時間', standard: '阿克托比標準時間', daylight: '阿克托比夏令時間')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: '阿拉伯時間', standard: '阿拉伯標準時間', daylight: '阿拉伯夏令時間')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: '阿根廷時間', standard: '阿根廷標準時間', daylight: '阿根廷夏令時間')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: '阿根廷西部時間', standard: '阿根廷西部標準時間', daylight: '阿根廷西部夏令時間')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: '亞美尼亞時間', standard: '亞美尼亞標準時間', daylight: '亞美尼亞夏令時間')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: '大西洋時間', standard: '大西洋標準時間', daylight: '大西洋夏令時間'),
-        short: TimeZoneName(generic: 'AT', standard: 'AST', daylight: 'ADT')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: '澳洲中部時間', standard: '澳洲中部標準時間', daylight: '澳洲中部夏令時間')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: '澳洲中西部時間', standard: '澳洲中西部標準時間', daylight: '澳洲中西部夏令時間')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: '澳洲東部時間', standard: '澳洲東部標準時間', daylight: '澳洲東部夏令時間')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: '澳洲西部時間', standard: '澳洲西部標準時間', daylight: '澳洲西部夏令時間')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: '亞塞拜然時間', standard: '亞塞拜然標準時間', daylight: '亞塞拜然夏令時間')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: '亞速爾群島時間', standard: '亞速爾群島標準時間', daylight: '亞速爾群島夏令時間')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: '孟加拉時間', standard: '孟加拉標準時間', daylight: '孟加拉夏令時間')),
+    'Acre': MetaZone(
+      'Acre',
+      long: TimeZoneName(
+        generic: '艾克時間',
+        standard: '艾克標準時間',
+        daylight: '艾克夏令時間',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: '阿富汗時間'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: '中非時間'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: '東非時間'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: '南非標準時間'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: '西非時間',
+        standard: '西非標準時間',
+        daylight: '西非夏令時間',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: '阿拉斯加時間',
+        standard: '阿拉斯加標準時間',
+        daylight: '阿拉斯加夏令時間',
+      ),
+      short: TimeZoneName(generic: 'AKT', standard: 'AKST', daylight: 'AKDT'),
+    ),
+    'Almaty': MetaZone(
+      'Almaty',
+      long: TimeZoneName(
+        generic: '阿拉木圖時間',
+        standard: '阿拉木圖標準時間',
+        daylight: '阿拉木圖夏令時間',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: '亞馬遜時間',
+        standard: '亞馬遜標準時間',
+        daylight: '亞馬遜夏令時間',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: '中部時間',
+        standard: '中部標準時間',
+        daylight: '中部夏令時間',
+      ),
+      short: TimeZoneName(generic: 'CT', standard: 'CST', daylight: 'CDT'),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: '東部時間',
+        standard: '東部標準時間',
+        daylight: '東部夏令時間',
+      ),
+      short: TimeZoneName(generic: 'ET', standard: 'EST', daylight: 'EDT'),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: '山區時間',
+        standard: '山區標準時間',
+        daylight: '山區夏令時間',
+      ),
+      short: TimeZoneName(generic: 'MT', standard: 'MST', daylight: 'MDT'),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: '太平洋時間',
+        standard: '太平洋標準時間',
+        daylight: '太平洋夏令時間',
+      ),
+      short: TimeZoneName(generic: 'PT', standard: 'PST', daylight: 'PDT'),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: '阿納德爾時間',
+        standard: '阿那底河標準時間',
+        daylight: '阿那底河夏令時間',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: '阿皮亞時間',
+        standard: '阿皮亞標準時間',
+        daylight: '阿皮亞夏令時間',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      'Aqtau',
+      long: TimeZoneName(
+        generic: '阿克陶時間',
+        standard: '阿克陶標準時間',
+        daylight: '阿克陶夏令時間',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      'Aqtobe',
+      long: TimeZoneName(
+        generic: '阿克托比時間',
+        standard: '阿克托比標準時間',
+        daylight: '阿克托比夏令時間',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: '阿拉伯時間',
+        standard: '阿拉伯標準時間',
+        daylight: '阿拉伯夏令時間',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: '阿根廷時間',
+        standard: '阿根廷標準時間',
+        daylight: '阿根廷夏令時間',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: '阿根廷西部時間',
+        standard: '阿根廷西部標準時間',
+        daylight: '阿根廷西部夏令時間',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: '亞美尼亞時間',
+        standard: '亞美尼亞標準時間',
+        daylight: '亞美尼亞夏令時間',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: '大西洋時間',
+        standard: '大西洋標準時間',
+        daylight: '大西洋夏令時間',
+      ),
+      short: TimeZoneName(generic: 'AT', standard: 'AST', daylight: 'ADT'),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: '澳洲中部時間',
+        standard: '澳洲中部標準時間',
+        daylight: '澳洲中部夏令時間',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: '澳洲中西部時間',
+        standard: '澳洲中西部標準時間',
+        daylight: '澳洲中西部夏令時間',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: '澳洲東部時間',
+        standard: '澳洲東部標準時間',
+        daylight: '澳洲東部夏令時間',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: '澳洲西部時間',
+        standard: '澳洲西部標準時間',
+        daylight: '澳洲西部夏令時間',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: '亞塞拜然時間',
+        standard: '亞塞拜然標準時間',
+        daylight: '亞塞拜然夏令時間',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: '亞速爾群島時間',
+        standard: '亞速爾群島標準時間',
+        daylight: '亞速爾群島夏令時間',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: '孟加拉時間',
+        standard: '孟加拉標準時間',
+        daylight: '孟加拉夏令時間',
+      ),
+    ),
     'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: '不丹時間')),
     'Bolivia': MetaZone('Bolivia', long: TimeZoneName(standard: '玻利維亞時間')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: '巴西利亞時間', standard: '巴西利亞標準時間', daylight: '巴西利亞夏令時間')),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: '巴西利亞時間',
+        standard: '巴西利亞標準時間',
+        daylight: '巴西利亞夏令時間',
+      ),
+    ),
     'Brunei': MetaZone('Brunei', long: TimeZoneName(standard: '汶萊時間')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: '維德角時間', standard: '維德角標準時間', daylight: '維德角夏令時間')),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: '維德角時間',
+        standard: '維德角標準時間',
+        daylight: '維德角夏令時間',
+      ),
+    ),
     'Casey': MetaZone('Casey', long: TimeZoneName(standard: '凱西站時間')),
     'Chamorro': MetaZone('Chamorro', long: TimeZoneName(standard: '查莫洛時間')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: '查坦群島時間', standard: '查坦群島標準時間', daylight: '查坦群島夏令時間')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: '智利時間', standard: '智利標準時間', daylight: '智利夏令時間')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: '中國時間', standard: '中國標準時間', daylight: '中國夏令時間')),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: '查坦群島時間',
+        standard: '查坦群島標準時間',
+        daylight: '查坦群島夏令時間',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: '智利時間',
+        standard: '智利標準時間',
+        daylight: '智利夏令時間',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: '中國時間',
+        standard: '中國標準時間',
+        daylight: '中國夏令時間',
+      ),
+    ),
     'Christmas': MetaZone('Christmas', long: TimeZoneName(standard: '聖誕島時間')),
     'Cocos': MetaZone('Cocos', long: TimeZoneName(standard: '科科斯群島時間')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: '哥倫比亞時間', standard: '哥倫比亞標準時間', daylight: '哥倫比亞夏令時間')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: '庫克群島時間', standard: '庫克群島標準時間', daylight: '庫克群島半夏令時間')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: '古巴時間', standard: '古巴標準時間', daylight: '古巴夏令時間')),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: '哥倫比亞時間',
+        standard: '哥倫比亞標準時間',
+        daylight: '哥倫比亞夏令時間',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: '庫克群島時間',
+        standard: '庫克群島標準時間',
+        daylight: '庫克群島半夏令時間',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: '古巴時間',
+        standard: '古巴標準時間',
+        daylight: '古巴夏令時間',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: '戴維斯時間')),
-    'DumontDUrville':
-        MetaZone('DumontDUrville', long: TimeZoneName(standard: '杜蒙杜比爾時間')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: '杜蒙杜比爾時間'),
+    ),
     'East_Timor': MetaZone('East_Timor', long: TimeZoneName(standard: '東帝汶時間')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: '復活節島時間', standard: '復活節島標準時間', daylight: '復活節島夏令時間')),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: '復活節島時間',
+        standard: '復活節島標準時間',
+        daylight: '復活節島夏令時間',
+      ),
+    ),
     'Ecuador': MetaZone('Ecuador', long: TimeZoneName(standard: '厄瓜多時間')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: '中歐時間', standard: '中歐標準時間', daylight: '中歐夏令時間')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: '東歐時間', standard: '東歐標準時間', daylight: '東歐夏令時間')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: '歐洲遠東時間')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: '西歐時間', standard: '西歐標準時間', daylight: '西歐夏令時間')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: '福克蘭群島時間', standard: '福克蘭群島標準時間', daylight: '福克蘭群島夏令時間')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: '斐濟時間', standard: '斐濟標準時間', daylight: '斐濟夏令時間')),
-    'French_Guiana':
-        MetaZone('French_Guiana', long: TimeZoneName(standard: '法屬圭亞那時間')),
-    'French_Southern':
-        MetaZone('French_Southern', long: TimeZoneName(standard: '法國南方及南極時間')),
-    'Galapagos':
-        MetaZone('Galapagos', long: TimeZoneName(standard: '加拉巴哥群島時間')),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: '中歐時間',
+        standard: '中歐標準時間',
+        daylight: '中歐夏令時間',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: '東歐時間',
+        standard: '東歐標準時間',
+        daylight: '東歐夏令時間',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: '歐洲遠東時間'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: '西歐時間',
+        standard: '西歐標準時間',
+        daylight: '西歐夏令時間',
+      ),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: '福克蘭群島時間',
+        standard: '福克蘭群島標準時間',
+        daylight: '福克蘭群島夏令時間',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: '斐濟時間',
+        standard: '斐濟標準時間',
+        daylight: '斐濟夏令時間',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: '法屬圭亞那時間'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(standard: '法國南方及南極時間'),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: '加拉巴哥群島時間'),
+    ),
     'Gambier': MetaZone('Gambier', long: TimeZoneName(standard: '甘比爾群島時間')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: '喬治亞時間', standard: '喬治亞標準時間', daylight: '喬治亞夏令時間')),
-    'Gilbert_Islands':
-        MetaZone('Gilbert_Islands', long: TimeZoneName(standard: '吉爾伯特群島時間')),
-    'GMT': MetaZone('GMT',
-        long: TimeZoneName(standard: '格林威治標準時間'),
-        short: TimeZoneName(standard: 'GMT')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: '格陵蘭東部時間', standard: '格陵蘭東部標準時間', daylight: '格陵蘭東部夏令時間')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: '格陵蘭西部時間', standard: '格陵蘭西部標準時間', daylight: '格陵蘭西部夏令時間')),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: '喬治亞時間',
+        standard: '喬治亞標準時間',
+        daylight: '喬治亞夏令時間',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: '吉爾伯特群島時間'),
+    ),
+    'GMT': MetaZone(
+      'GMT',
+      long: TimeZoneName(standard: '格林威治標準時間'),
+      short: TimeZoneName(standard: 'GMT'),
+    ),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: '格陵蘭東部時間',
+        standard: '格陵蘭東部標準時間',
+        daylight: '格陵蘭東部夏令時間',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: '格陵蘭西部時間',
+        standard: '格陵蘭西部標準時間',
+        daylight: '格陵蘭西部夏令時間',
+      ),
+    ),
     'Guam': MetaZone('Guam', long: TimeZoneName(standard: '關島標準時間')),
     'Gulf': MetaZone('Gulf', long: TimeZoneName(standard: '波斯灣海域標準時間')),
     'Guyana': MetaZone('Guyana', long: TimeZoneName(standard: '蓋亞那時間')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: '夏威夷-阿留申時間',
-            standard: '夏威夷-阿留申標準時間',
-            daylight: '夏威夷-阿留申夏令時間'),
-        short:
-            TimeZoneName(generic: 'HAT', standard: 'HAST', daylight: 'HADT')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: '香港時間', standard: '香港標準時間', daylight: '香港夏令時間')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: '科布多時間', standard: '科布多標準時間', daylight: '科布多夏令時間')),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: '夏威夷-阿留申時間',
+        standard: '夏威夷-阿留申標準時間',
+        daylight: '夏威夷-阿留申夏令時間',
+      ),
+      short: TimeZoneName(generic: 'HAT', standard: 'HAST', daylight: 'HADT'),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: '香港時間',
+        standard: '香港標準時間',
+        daylight: '香港夏令時間',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: '科布多時間',
+        standard: '科布多標準時間',
+        daylight: '科布多夏令時間',
+      ),
+    ),
     'India': MetaZone('India', long: TimeZoneName(standard: '印度標準時間')),
-    'Indian_Ocean':
-        MetaZone('Indian_Ocean', long: TimeZoneName(standard: '印度洋時間')),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: '印度洋時間'),
+    ),
     'Indochina': MetaZone('Indochina', long: TimeZoneName(standard: '中南半島時間')),
-    'Indonesia_Central':
-        MetaZone('Indonesia_Central', long: TimeZoneName(standard: '印尼中部時間')),
-    'Indonesia_Eastern':
-        MetaZone('Indonesia_Eastern', long: TimeZoneName(standard: '印尼東部時間')),
-    'Indonesia_Western':
-        MetaZone('Indonesia_Western', long: TimeZoneName(standard: '印尼西部時間')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: '伊朗時間', standard: '伊朗標準時間', daylight: '伊朗夏令時間')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: '伊爾庫次克時間', standard: '伊爾庫次克標準時間', daylight: '伊爾庫次克夏令時間')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: '以色列時間', standard: '以色列標準時間', daylight: '以色列夏令時間')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: '日本時間', standard: '日本標準時間', daylight: '日本夏令時間')),
-    'Kamchatka': MetaZone('Kamchatka',
-        long: TimeZoneName(
-            generic: '彼得羅巴甫洛夫斯克時間',
-            standard: '彼得羅巴甫洛夫斯克標準時間',
-            daylight: '彼得羅巴甫洛夫斯克日光節約時間')),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: '印尼中部時間'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: '印尼東部時間'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: '印尼西部時間'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: '伊朗時間',
+        standard: '伊朗標準時間',
+        daylight: '伊朗夏令時間',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: '伊爾庫次克時間',
+        standard: '伊爾庫次克標準時間',
+        daylight: '伊爾庫次克夏令時間',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: '以色列時間',
+        standard: '以色列標準時間',
+        daylight: '以色列夏令時間',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: '日本時間',
+        standard: '日本標準時間',
+        daylight: '日本夏令時間',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      'Kamchatka',
+      long: TimeZoneName(
+        generic: '彼得羅巴甫洛夫斯克時間',
+        standard: '彼得羅巴甫洛夫斯克標準時間',
+        daylight: '彼得羅巴甫洛夫斯克日光節約時間',
+      ),
+    ),
     'Kazakhstan': MetaZone('Kazakhstan', long: TimeZoneName(standard: '哈薩克時間')),
-    'Kazakhstan_Eastern':
-        MetaZone('Kazakhstan_Eastern', long: TimeZoneName(standard: '東哈薩克時間')),
-    'Kazakhstan_Western':
-        MetaZone('Kazakhstan_Western', long: TimeZoneName(standard: '西哈薩克時間')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: '韓國時間', standard: '韓國標準時間', daylight: '韓國夏令時間')),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: '東哈薩克時間'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: '西哈薩克時間'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: '韓國時間',
+        standard: '韓國標準時間',
+        daylight: '韓國夏令時間',
+      ),
+    ),
     'Kosrae': MetaZone('Kosrae', long: TimeZoneName(standard: '科斯瑞時間')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: '克拉斯諾亞爾斯克時間',
-            standard: '克拉斯諾亞爾斯克標準時間',
-            daylight: '克拉斯諾亞爾斯克夏令時間')),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: '克拉斯諾亞爾斯克時間',
+        standard: '克拉斯諾亞爾斯克標準時間',
+        daylight: '克拉斯諾亞爾斯克夏令時間',
+      ),
+    ),
     'Kyrgystan': MetaZone('Kyrgystan', long: TimeZoneName(standard: '吉爾吉斯時間')),
     'Lanka': MetaZone('Lanka', long: TimeZoneName(standard: '蘭卡時間')),
-    'Line_Islands':
-        MetaZone('Line_Islands', long: TimeZoneName(standard: '萊恩群島時間')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: '豪勳爵島時間', standard: '豪勳爵島標準時間', daylight: '豪勳爵島夏令時間')),
-    'Macau': MetaZone('Macau',
-        long: TimeZoneName(
-            generic: '澳門時間', standard: '澳門標準時間', daylight: '澳門夏令時間')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: '馬加丹時間', standard: '馬加丹標準時間', daylight: '馬加丹夏令時間')),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: '萊恩群島時間'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: '豪勳爵島時間',
+        standard: '豪勳爵島標準時間',
+        daylight: '豪勳爵島夏令時間',
+      ),
+    ),
+    'Macau': MetaZone(
+      'Macau',
+      long: TimeZoneName(
+        generic: '澳門時間',
+        standard: '澳門標準時間',
+        daylight: '澳門夏令時間',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: '馬加丹時間',
+        standard: '馬加丹標準時間',
+        daylight: '馬加丹夏令時間',
+      ),
+    ),
     'Malaysia': MetaZone('Malaysia', long: TimeZoneName(standard: '馬來西亞時間')),
     'Maldives': MetaZone('Maldives', long: TimeZoneName(standard: '馬爾地夫時間')),
     'Marquesas': MetaZone('Marquesas', long: TimeZoneName(standard: '馬可薩斯時間')),
-    'Marshall_Islands':
-        MetaZone('Marshall_Islands', long: TimeZoneName(standard: '馬紹爾群島時間')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: '模里西斯時間', standard: '模里西斯標準時間', daylight: '模里西斯夏令時間')),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: '馬紹爾群島時間'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: '模里西斯時間',
+        standard: '模里西斯標準時間',
+        daylight: '模里西斯夏令時間',
+      ),
+    ),
     'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: '莫森時間')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: '墨西哥太平洋時間',
-            standard: '墨西哥太平洋標準時間',
-            daylight: '墨西哥太平洋夏令時間')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: '烏蘭巴托時間', standard: '烏蘭巴托標準時間', daylight: '烏蘭巴托夏令時間')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: '莫斯科時間', standard: '莫斯科標準時間', daylight: '莫斯科夏令時間')),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: '墨西哥太平洋時間',
+        standard: '墨西哥太平洋標準時間',
+        daylight: '墨西哥太平洋夏令時間',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: '烏蘭巴托時間',
+        standard: '烏蘭巴托標準時間',
+        daylight: '烏蘭巴托夏令時間',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: '莫斯科時間',
+        standard: '莫斯科標準時間',
+        daylight: '莫斯科夏令時間',
+      ),
+    ),
     'Myanmar': MetaZone('Myanmar', long: TimeZoneName(standard: '緬甸時間')),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: '諾魯時間')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: '尼泊爾時間')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: '新喀里多尼亞時間',
-            standard: '新喀里多尼亞標準時間',
-            daylight: '新喀里多尼亞群島夏令時間')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: '紐西蘭時間', standard: '紐西蘭標準時間', daylight: '紐西蘭夏令時間')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: '紐芬蘭時間', standard: '紐芬蘭標準時間', daylight: '紐芬蘭夏令時間')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: '新喀里多尼亞時間',
+        standard: '新喀里多尼亞標準時間',
+        daylight: '新喀里多尼亞群島夏令時間',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: '紐西蘭時間',
+        standard: '紐西蘭標準時間',
+        daylight: '紐西蘭夏令時間',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: '紐芬蘭時間',
+        standard: '紐芬蘭標準時間',
+        daylight: '紐芬蘭夏令時間',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: '紐埃島時間')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: '諾福克島時間', standard: '諾福克島標準時間', daylight: '諾福克島夏令時間')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: '費爾南多 - 迪諾羅尼亞時間',
-            standard: '費爾南多 - 迪諾羅尼亞標準時間',
-            daylight: '費爾南多 - 迪諾羅尼亞夏令時間')),
-    'North_Mariana':
-        MetaZone('North_Mariana', long: TimeZoneName(standard: '北馬里亞納群島時間')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: '新西伯利亞時間', standard: '新西伯利亞標準時間', daylight: '新西伯利亞夏令時間')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: '鄂木斯克時間', standard: '鄂木斯克標準時間', daylight: '鄂木斯克夏令時間')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: '巴基斯坦時間', standard: '巴基斯坦標準時間', daylight: '巴基斯坦夏令時間')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: '諾福克島時間',
+        standard: '諾福克島標準時間',
+        daylight: '諾福克島夏令時間',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: '費爾南多 - 迪諾羅尼亞時間',
+        standard: '費爾南多 - 迪諾羅尼亞標準時間',
+        daylight: '費爾南多 - 迪諾羅尼亞夏令時間',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      'North_Mariana',
+      long: TimeZoneName(standard: '北馬里亞納群島時間'),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: '新西伯利亞時間',
+        standard: '新西伯利亞標準時間',
+        daylight: '新西伯利亞夏令時間',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: '鄂木斯克時間',
+        standard: '鄂木斯克標準時間',
+        daylight: '鄂木斯克夏令時間',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: '巴基斯坦時間',
+        standard: '巴基斯坦標準時間',
+        daylight: '巴基斯坦夏令時間',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: '帛琉時間')),
-    'Papua_New_Guinea':
-        MetaZone('Papua_New_Guinea', long: TimeZoneName(standard: '巴布亞紐幾內亞時間')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: '巴拉圭時間', standard: '巴拉圭標準時間', daylight: '巴拉圭夏令時間')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: '秘魯時間', standard: '秘魯標準時間', daylight: '秘魯夏令時間')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: '菲律賓時間', standard: '菲律賓標準時間', daylight: '菲律賓夏令時間')),
-    'Phoenix_Islands':
-        MetaZone('Phoenix_Islands', long: TimeZoneName(standard: '鳳凰群島時間')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: '聖皮埃與密克隆群島時間',
-            standard: '聖皮埃與密克隆群島標準時間',
-            daylight: '聖皮埃與密克隆群島夏令時間')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: '巴布亞紐幾內亞時間'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: '巴拉圭時間',
+        standard: '巴拉圭標準時間',
+        daylight: '巴拉圭夏令時間',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: '秘魯時間',
+        standard: '秘魯標準時間',
+        daylight: '秘魯夏令時間',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: '菲律賓時間',
+        standard: '菲律賓標準時間',
+        daylight: '菲律賓夏令時間',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: '鳳凰群島時間'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: '聖皮埃與密克隆群島時間',
+        standard: '聖皮埃與密克隆群島標準時間',
+        daylight: '聖皮埃與密克隆群島夏令時間',
+      ),
+    ),
     'Pitcairn': MetaZone('Pitcairn', long: TimeZoneName(standard: '皮特肯時間')),
     'Ponape': MetaZone('Ponape', long: TimeZoneName(standard: '波納佩時間')),
     'Pyongyang': MetaZone('Pyongyang', long: TimeZoneName(standard: '平壤時間')),
-    'Qyzylorda': MetaZone('Qyzylorda',
-        long: TimeZoneName(
-            generic: '克孜勒奧爾達時間',
-            standard: '克孜勒奧爾達標準時間',
-            daylight: '克孜勒奧爾達夏令時間')),
+    'Qyzylorda': MetaZone(
+      'Qyzylorda',
+      long: TimeZoneName(
+        generic: '克孜勒奧爾達時間',
+        standard: '克孜勒奧爾達標準時間',
+        daylight: '克孜勒奧爾達夏令時間',
+      ),
+    ),
     'Reunion': MetaZone('Reunion', long: TimeZoneName(standard: '留尼旺時間')),
     'Rothera': MetaZone('Rothera', long: TimeZoneName(standard: '羅瑟拉時間')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: '庫頁島時間', standard: '庫頁島標準時間', daylight: '庫頁島夏令時間')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: '薩馬拉時間', standard: '薩馬拉標準時間', daylight: '薩馬拉夏令時間')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: '薩摩亞時間', standard: '薩摩亞標準時間', daylight: '薩摩亞夏令時間')),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: '庫頁島時間',
+        standard: '庫頁島標準時間',
+        daylight: '庫頁島夏令時間',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: '薩馬拉時間',
+        standard: '薩馬拉標準時間',
+        daylight: '薩馬拉夏令時間',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: '薩摩亞時間',
+        standard: '薩摩亞標準時間',
+        daylight: '薩摩亞夏令時間',
+      ),
+    ),
     'Seychelles': MetaZone('Seychelles', long: TimeZoneName(standard: '塞席爾時間')),
     'Singapore': MetaZone('Singapore', long: TimeZoneName(standard: '新加坡標準時間')),
     'Solomon': MetaZone('Solomon', long: TimeZoneName(standard: '索羅門群島時間')),
-    'South_Georgia':
-        MetaZone('South_Georgia', long: TimeZoneName(standard: '南喬治亞時間')),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: '南喬治亞時間'),
+    ),
     'Suriname': MetaZone('Suriname', long: TimeZoneName(standard: '蘇利南時間')),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: '昭和基地時間')),
     'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: '大溪地時間')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: '台北時間', standard: '台北標準時間', daylight: '台北夏令時間')),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: '台北時間',
+        standard: '台北標準時間',
+        daylight: '台北夏令時間',
+      ),
+    ),
     'Tajikistan': MetaZone('Tajikistan', long: TimeZoneName(standard: '塔吉克時間')),
     'Tokelau': MetaZone('Tokelau', long: TimeZoneName(standard: '托克勞群島時間')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: '東加時間', standard: '東加標準時間', daylight: '東加夏令時間')),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: '東加時間',
+        standard: '東加標準時間',
+        daylight: '東加夏令時間',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: '楚克島時間')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: '土庫曼時間', standard: '土庫曼標準時間', daylight: '土庫曼夏令時間')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: '土庫曼時間',
+        standard: '土庫曼標準時間',
+        daylight: '土庫曼夏令時間',
+      ),
+    ),
     'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: '吐瓦魯時間')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: '烏拉圭時間', standard: '烏拉圭標準時間', daylight: '烏拉圭夏令時間')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: '烏茲別克時間', standard: '烏茲別克標準時間', daylight: '烏茲別克夏令時間')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: '萬那杜時間', standard: '萬那杜標準時間', daylight: '萬那杜夏令時間')),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: '烏拉圭時間',
+        standard: '烏拉圭標準時間',
+        daylight: '烏拉圭夏令時間',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: '烏茲別克時間',
+        standard: '烏茲別克標準時間',
+        daylight: '烏茲別克夏令時間',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: '萬那杜時間',
+        standard: '萬那杜標準時間',
+        daylight: '萬那杜夏令時間',
+      ),
+    ),
     'Venezuela': MetaZone('Venezuela', long: TimeZoneName(standard: '委內瑞拉時間')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: '海參崴時間', standard: '海參崴標準時間', daylight: '海參崴夏令時間')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: '伏爾加格勒時間', standard: '伏爾加格勒標準時間', daylight: '伏爾加格勒夏令時間')),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: '海參崴時間',
+        standard: '海參崴標準時間',
+        daylight: '海參崴夏令時間',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: '伏爾加格勒時間',
+        standard: '伏爾加格勒標準時間',
+        daylight: '伏爾加格勒夏令時間',
+      ),
+    ),
     'Vostok': MetaZone('Vostok', long: TimeZoneName(standard: '沃斯托克時間')),
     'Wake': MetaZone('Wake', long: TimeZoneName(standard: '威克島時間')),
     'Wallis': MetaZone('Wallis', long: TimeZoneName(standard: '瓦利斯和富圖納群島時間')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: '雅庫次克時間', standard: '雅庫次克標準時間', daylight: '雅庫次克夏令時間')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: '葉卡捷琳堡時間', standard: '葉卡捷琳堡標準時間', daylight: '葉卡捷琳堡夏令時間')),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: '雅庫次克時間',
+        standard: '雅庫次克標準時間',
+        daylight: '雅庫次克夏令時間',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: '葉卡捷琳堡時間',
+        standard: '葉卡捷琳堡標準時間',
+        daylight: '葉卡捷琳堡夏令時間',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: '育空地區時間')),
   };
 }
@@ -17320,27 +15375,11 @@ class LocaleDisplayNameZhHant extends LocaleDisplayName {
       'persian': '波斯曆',
       'roc': '國曆',
     },
-    'cf': {
-      'account': '會計貨幣格式',
-      'standard': '標準貨幣格式',
-    },
-    'ka': {
-      'noignore': '排序符號',
-      'shifted': '略過符號排序',
-    },
-    'kb': {
-      'false': '正常排序重音',
-      'true': '依反向重音排序',
-    },
-    'kf': {
-      'lower': '優先排序小寫',
-      'false': '正常大小寫順序排序',
-      'upper': '優先排序大寫',
-    },
-    'kc': {
-      'false': '不分大小寫排序',
-      'true': '依大小寫排序',
-    },
+    'cf': {'account': '會計貨幣格式', 'standard': '標準貨幣格式'},
+    'ka': {'noignore': '排序符號', 'shifted': '略過符號排序'},
+    'kb': {'false': '正常排序重音', 'true': '依反向重音排序'},
+    'kf': {'lower': '優先排序小寫', 'false': '正常大小寫順序排序', 'upper': '優先排序大寫'},
+    'kc': {'false': '不分大小寫排序', 'true': '依大小寫排序'},
     'co': {
       'big5han': '繁體中文排序 - Big5',
       'compat': '舊制排序',
@@ -17360,14 +15399,8 @@ class LocaleDisplayNameZhHant extends LocaleDisplayName {
       'unihan': '部首筆畫排序',
       'zhuyin': '注音排序',
     },
-    'kk': {
-      'false': '非正規化排序',
-      'true': '依正規化排序 Unicode',
-    },
-    'kn': {
-      'false': '個別排序數字',
-      'true': '依數字順序排序數字',
-    },
+    'kk': {'false': '非正規化排序', 'true': '依正規化排序 Unicode'},
+    'kn': {'false': '個別排序數字', 'true': '依數字順序排序數字'},
     'ks': {
       'identic': '全部排序',
       'level1': '僅排序基礎字母',
@@ -17375,31 +15408,16 @@ class LocaleDisplayNameZhHant extends LocaleDisplayName {
       'level2': '排序重音',
       'level3': '排序重音/大小寫/全半形',
     },
-    'd0': {
-      'fwidth': '全形',
-      'hwidth': '半形',
-      'npinyin': '數字',
-    },
+    'd0': {'fwidth': '全形', 'hwidth': '半形', 'npinyin': '數字'},
     'hc': {
       'h11': '12 小時制 (0–11)',
       'h12': '12 小時制 (1–12)',
       'h23': '24 小時制 (0–23)',
       'h24': '24 小時制 (1–24)',
     },
-    'lb': {
-      'loose': '寬鬆換行樣式',
-      'normal': '一般換行樣式',
-      'strict': '強制換行樣式',
-    },
-    'm0': {
-      'bgn': '美國地名委員會',
-      'ungegn': '聯合國地名專家組',
-    },
-    'ms': {
-      'metric': '公制',
-      'uksystem': '英制度量單位系統',
-      'ussystem': '美制度量單位系統',
-    },
+    'lb': {'loose': '寬鬆換行樣式', 'normal': '一般換行樣式', 'strict': '強制換行樣式'},
+    'm0': {'bgn': '美國地名委員會', 'ungegn': '聯合國地名專家組'},
+    'ms': {'metric': '公制', 'uksystem': '英制度量單位系統', 'ussystem': '美制度量單位系統'},
     'nu': {
       'ahom': '阿洪姆數字',
       'arab': '阿拉伯-印度數字',

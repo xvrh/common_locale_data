@@ -13,40 +13,54 @@ void main() {
     expect(CommonLocaleDataEn().units.lengthMeter.long(1), '1 meter');
     expect(CommonLocaleDataEnGB().units.lengthMeter.long(1), '1 metre');
     expect(
-        CommonLocaleDataEn()
-            .timeZones['Europe/Paris']
-            ?.format(TimeZoneStyle.genericShort, Duration(hours: 0)),
-        'France Time');
+      CommonLocaleDataEn().timeZones['Europe/Paris']?.format(
+        TimeZoneStyle.genericShort,
+        Duration(hours: 0),
+      ),
+      'France Time',
+    );
     expect(
-        CommonLocaleDataEnGB()
-            .timeZones['Europe/Paris']
-            ?.format(TimeZoneStyle.genericShort, Duration(hours: 0)),
-        'CET');
-
-    expect(CommonLocaleDataEn().languages.unknownLanguage.name,
-        'Unknown language');
-    expect(CommonLocaleDataEnGB().languages.unknownLanguage.name,
-        'Unknown language');
-
-    expect(
-        CommonLocaleDataEn().localeDisplayName.formatWithExtensions(
-            LocaleId.parse('bla-VI-u-kk-cu-jpy-hc-h11-ca-buddhist')),
-        'Siksiká (U.S. Virgin Islands, Buddhist Calendar, Currency: ¥, 12 Hour System [0–11], Sort Unicode Normalized)');
-    expect(
-        CommonLocaleDataEnGB().localeDisplayName.formatWithExtensions(
-            LocaleId.parse('bla-VI-u-kk-cu-jpy-hc-h11-ca-buddhist')),
-        'Siksika (US Virgin Islands, Buddhist Calendar, Currency: JP¥, 12-Hour System [0–11], Sort Unicode Normalised)');
+      CommonLocaleDataEnGB().timeZones['Europe/Paris']?.format(
+        TimeZoneStyle.genericShort,
+        Duration(hours: 0),
+      ),
+      'CET',
+    );
 
     expect(
-        CommonLocaleDataEn()
-            .localeDisplayName
-            .formatWithExtensions(LocaleId.parse('nl-Cyrl-BE-u-cu-nok')),
-        'Flemish (Cyrillic, Currency: kr)');
+      CommonLocaleDataEn().languages.unknownLanguage.name,
+      'Unknown language',
+    );
+    expect(
+      CommonLocaleDataEnGB().languages.unknownLanguage.name,
+      'Unknown language',
+    );
 
     expect(
-        CommonLocaleDataEnGB()
-            .localeDisplayName
-            .formatWithExtensions(LocaleId.parse('nl-Cyrl-BE-u-cu-nok')),
-        'Flemish (Cyrillic, Currency: kr)');
+      CommonLocaleDataEn().localeDisplayName.formatWithExtensions(
+        LocaleId.parse('bla-VI-u-kk-cu-jpy-hc-h11-ca-buddhist'),
+      ),
+      'Siksiká (U.S. Virgin Islands, Buddhist Calendar, Currency: ¥, 12 Hour System [0–11], Sort Unicode Normalized)',
+    );
+    expect(
+      CommonLocaleDataEnGB().localeDisplayName.formatWithExtensions(
+        LocaleId.parse('bla-VI-u-kk-cu-jpy-hc-h11-ca-buddhist'),
+      ),
+      'Siksika (US Virgin Islands, Buddhist Calendar, Currency: JP¥, 12-Hour System [0–11], Sort Unicode Normalised)',
+    );
+
+    expect(
+      CommonLocaleDataEn().localeDisplayName.formatWithExtensions(
+        LocaleId.parse('nl-Cyrl-BE-u-cu-nok'),
+      ),
+      'Flemish (Cyrillic, Currency: kr)',
+    );
+
+    expect(
+      CommonLocaleDataEnGB().localeDisplayName.formatWithExtensions(
+        LocaleId.parse('nl-Cyrl-BE-u-cu-nok'),
+      ),
+      'Flemish (Cyrillic, Currency: kr)',
+    );
   });
 }

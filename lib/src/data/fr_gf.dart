@@ -30,11 +30,13 @@ class TimeZonesFrGF extends TimeZonesFr {
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesFr.staticMetaZoneNames,
-        ...const {
-          'French_Guiana': MetaZone('French_Guiana',
-              long: TimeZoneName(standard: 'heure de la Guyane française'),
-              short: TimeZoneName(standard: 'GFT')),
-        }
-      });
+    ...TimeZonesFr.staticMetaZoneNames,
+    ...const {
+      'French_Guiana': MetaZone(
+        'French_Guiana',
+        long: TimeZoneName(standard: 'heure de la Guyane française'),
+        short: TimeZoneName(standard: 'GFT'),
+      ),
+    },
+  });
 }

@@ -65,6493 +65,6405 @@ class UnitsGd extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('deicheamh-{0}'),
-        short: UnitPrefixPattern('d{0}'),
-        narrow: UnitPrefixPattern('d{0}'),
-      );
+    long: UnitPrefixPattern('deicheamh-{0}'),
+    short: UnitPrefixPattern('d{0}'),
+    narrow: UnitPrefixPattern('d{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('ceuda{0}'),
-        short: UnitPrefixPattern('c{0}'),
-        narrow: UnitPrefixPattern('c{0}'),
-      );
+    long: UnitPrefixPattern('ceuda{0}'),
+    short: UnitPrefixPattern('c{0}'),
+    narrow: UnitPrefixPattern('c{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('mili{0}'),
-        short: UnitPrefixPattern('m{0}'),
-        narrow: UnitPrefixPattern('m{0}'),
-      );
+    long: UnitPrefixPattern('mili{0}'),
+    short: UnitPrefixPattern('m{0}'),
+    narrow: UnitPrefixPattern('m{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('micreo-{0}'),
-        short: UnitPrefixPattern('μ{0}'),
-        narrow: UnitPrefixPattern('μ{0}'),
-      );
+    long: UnitPrefixPattern('micreo-{0}'),
+    short: UnitPrefixPattern('μ{0}'),
+    narrow: UnitPrefixPattern('μ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('nano-{0}'),
-        short: UnitPrefixPattern('n{0}'),
-        narrow: UnitPrefixPattern('n{0}'),
-      );
+    long: UnitPrefixPattern('nano-{0}'),
+    short: UnitPrefixPattern('n{0}'),
+    narrow: UnitPrefixPattern('n{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('piceo-{0}'),
-        short: UnitPrefixPattern('p{0}'),
-        narrow: UnitPrefixPattern('p{0}'),
-      );
+    long: UnitPrefixPattern('piceo-{0}'),
+    short: UnitPrefixPattern('p{0}'),
+    narrow: UnitPrefixPattern('p{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('femto-{0}'),
-        short: UnitPrefixPattern('f{0}'),
-        narrow: UnitPrefixPattern('f{0}'),
-      );
+    long: UnitPrefixPattern('femto-{0}'),
+    short: UnitPrefixPattern('f{0}'),
+    narrow: UnitPrefixPattern('f{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('atto-{0}'),
-        short: UnitPrefixPattern('a{0}'),
-        narrow: UnitPrefixPattern('a{0}'),
-      );
+    long: UnitPrefixPattern('atto-{0}'),
+    short: UnitPrefixPattern('a{0}'),
+    narrow: UnitPrefixPattern('a{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('zepto-{0}'),
-        short: UnitPrefixPattern('z{0}'),
-        narrow: UnitPrefixPattern('z{0}'),
-      );
+    long: UnitPrefixPattern('zepto-{0}'),
+    short: UnitPrefixPattern('z{0}'),
+    narrow: UnitPrefixPattern('z{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('yocto-{0}'),
-        short: UnitPrefixPattern('y{0}'),
-        narrow: UnitPrefixPattern('y{0}'),
-      );
+    long: UnitPrefixPattern('yocto-{0}'),
+    short: UnitPrefixPattern('y{0}'),
+    narrow: UnitPrefixPattern('y{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('ronto{0}'),
-        short: UnitPrefixPattern('r{0}'),
-        narrow: UnitPrefixPattern('r{0}'),
-      );
+    long: UnitPrefixPattern('ronto{0}'),
+    short: UnitPrefixPattern('r{0}'),
+    narrow: UnitPrefixPattern('r{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('quecto{0}'),
-        short: UnitPrefixPattern('q{0}'),
-        narrow: UnitPrefixPattern('q{0}'),
-      );
+    long: UnitPrefixPattern('quecto{0}'),
+    short: UnitPrefixPattern('q{0}'),
+    narrow: UnitPrefixPattern('q{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('deaca-{0}'),
-        short: UnitPrefixPattern('da{0}'),
-        narrow: UnitPrefixPattern('da{0}'),
-      );
+    long: UnitPrefixPattern('deaca-{0}'),
+    short: UnitPrefixPattern('da{0}'),
+    narrow: UnitPrefixPattern('da{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('heacta-{0}'),
-        short: UnitPrefixPattern('h{0}'),
-        narrow: UnitPrefixPattern('h{0}'),
-      );
+    long: UnitPrefixPattern('heacta-{0}'),
+    short: UnitPrefixPattern('h{0}'),
+    narrow: UnitPrefixPattern('h{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('cile{0}'),
-        short: UnitPrefixPattern('k{0}'),
-        narrow: UnitPrefixPattern('k{0}'),
-      );
+    long: UnitPrefixPattern('cile{0}'),
+    short: UnitPrefixPattern('k{0}'),
+    narrow: UnitPrefixPattern('k{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('meaga-{0}'),
-        short: UnitPrefixPattern('M{0}'),
-        narrow: UnitPrefixPattern('M{0}'),
-      );
+    long: UnitPrefixPattern('meaga-{0}'),
+    short: UnitPrefixPattern('M{0}'),
+    narrow: UnitPrefixPattern('M{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('giga-{0}'),
-        short: UnitPrefixPattern('G{0}'),
-        narrow: UnitPrefixPattern('G{0}'),
-      );
+    long: UnitPrefixPattern('giga-{0}'),
+    short: UnitPrefixPattern('G{0}'),
+    narrow: UnitPrefixPattern('G{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('tera-{0}'),
-        short: UnitPrefixPattern('T{0}'),
-        narrow: UnitPrefixPattern('T{0}'),
-      );
+    long: UnitPrefixPattern('tera-{0}'),
+    short: UnitPrefixPattern('T{0}'),
+    narrow: UnitPrefixPattern('T{0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('peta-{0}'),
-        short: UnitPrefixPattern('P{0}'),
-        narrow: UnitPrefixPattern('P{0}'),
-      );
+    long: UnitPrefixPattern('peta-{0}'),
+    short: UnitPrefixPattern('P{0}'),
+    narrow: UnitPrefixPattern('P{0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('exa-{0}'),
-        short: UnitPrefixPattern('E{0}'),
-        narrow: UnitPrefixPattern('E{0}'),
-      );
+    long: UnitPrefixPattern('exa-{0}'),
+    short: UnitPrefixPattern('E{0}'),
+    narrow: UnitPrefixPattern('E{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('zetta-{0}'),
-        short: UnitPrefixPattern('Z{0}'),
-        narrow: UnitPrefixPattern('Z{0}'),
-      );
+    long: UnitPrefixPattern('zetta-{0}'),
+    short: UnitPrefixPattern('Z{0}'),
+    narrow: UnitPrefixPattern('Z{0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('yotta-{0}'),
-        short: UnitPrefixPattern('Y{0}'),
-        narrow: UnitPrefixPattern('Y{0}'),
-      );
+    long: UnitPrefixPattern('yotta-{0}'),
+    short: UnitPrefixPattern('Y{0}'),
+    narrow: UnitPrefixPattern('Y{0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('ronna{0}'),
-        short: UnitPrefixPattern('R{0}'),
-        narrow: UnitPrefixPattern('R{0}'),
-      );
+    long: UnitPrefixPattern('ronna{0}'),
+    short: UnitPrefixPattern('R{0}'),
+    narrow: UnitPrefixPattern('R{0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('quetta{0}'),
-        short: UnitPrefixPattern('Q{0}'),
-        narrow: UnitPrefixPattern('Q{0}'),
-      );
+    long: UnitPrefixPattern('quetta{0}'),
+    short: UnitPrefixPattern('Q{0}'),
+    narrow: UnitPrefixPattern('Q{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('kibi-{0}'),
-        short: UnitPrefixPattern('Ki{0}'),
-        narrow: UnitPrefixPattern('Ki{0}'),
-      );
+    long: UnitPrefixPattern('kibi-{0}'),
+    short: UnitPrefixPattern('Ki{0}'),
+    narrow: UnitPrefixPattern('Ki{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('mebi-{0}'),
-        short: UnitPrefixPattern('Mi{0}'),
-        narrow: UnitPrefixPattern('Mi{0}'),
-      );
+    long: UnitPrefixPattern('mebi-{0}'),
+    short: UnitPrefixPattern('Mi{0}'),
+    narrow: UnitPrefixPattern('Mi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('gibi-{0}'),
-        short: UnitPrefixPattern('Gi{0}'),
-        narrow: UnitPrefixPattern('Gi{0}'),
-      );
+    long: UnitPrefixPattern('gibi-{0}'),
+    short: UnitPrefixPattern('Gi{0}'),
+    narrow: UnitPrefixPattern('Gi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('tebi-{0}'),
-        short: UnitPrefixPattern('Ti{0}'),
-        narrow: UnitPrefixPattern('Ti{0}'),
-      );
+    long: UnitPrefixPattern('tebi-{0}'),
+    short: UnitPrefixPattern('Ti{0}'),
+    narrow: UnitPrefixPattern('Ti{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('pebi-{0}'),
-        short: UnitPrefixPattern('Pi{0}'),
-        narrow: UnitPrefixPattern('Pi{0}'),
-      );
+    long: UnitPrefixPattern('pebi-{0}'),
+    short: UnitPrefixPattern('Pi{0}'),
+    narrow: UnitPrefixPattern('Pi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('exbi-{0}'),
-        short: UnitPrefixPattern('Ei{0}'),
-        narrow: UnitPrefixPattern('Ei{0}'),
-      );
+    long: UnitPrefixPattern('exbi-{0}'),
+    short: UnitPrefixPattern('Ei{0}'),
+    narrow: UnitPrefixPattern('Ei{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('zebi-{0}'),
-        short: UnitPrefixPattern('Zi{0}'),
-        narrow: UnitPrefixPattern('Zi{0}'),
-      );
+    long: UnitPrefixPattern('zebi-{0}'),
+    short: UnitPrefixPattern('Zi{0}'),
+    narrow: UnitPrefixPattern('Zi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('yobe-{0}'),
-        short: UnitPrefixPattern('Yi{0}'),
-        narrow: UnitPrefixPattern('Yi{0}'),
-      );
+    long: UnitPrefixPattern('yobe-{0}'),
+    short: UnitPrefixPattern('Yi{0}'),
+    narrow: UnitPrefixPattern('Yi{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('{0} / {1}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('{0} / {1}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'forsa-g',
-          one: '{0} fhorsa-g',
-          two: '{0} fhorsa-g',
-          few: '{0} forsan-g',
-          other: '{0} forsa-g',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'forsa-g',
-          one: '{0} fhorsa-g',
-          two: '{0} fhorsa-g',
-          few: '{0} forsan-g',
-          other: '{0} G',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'forsa-g',
-          one: '{0}G',
-          two: '{0}G',
-          few: '{0}G',
-          other: '{0}G',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'forsa-g',
+      one: '{0} fhorsa-g',
+      two: '{0} fhorsa-g',
+      few: '{0} forsan-g',
+      other: '{0} forsa-g',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'forsa-g',
+      one: '{0} fhorsa-g',
+      two: '{0} fhorsa-g',
+      few: '{0} forsan-g',
+      other: '{0} G',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'forsa-g',
+      one: '{0}G',
+      two: '{0}G',
+      few: '{0}G',
+      other: '{0}G',
+    ),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meatair san diog cheàrnagach',
-          one: '{0} mheatair san diog cheàrnagach',
-          two: '{0} mheatair san diog cheàrnagach',
-          few: '{0} meatairean san diog cheàrnagach',
-          other: '{0} meatair san diog cheàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'meatair/diog²',
-          one: '{0} mheatair san diog cheàrnagach',
-          two: '{0} mheatair san diog cheàrnagach',
-          few: '{0} meatairean san diog cheàrnagach',
-          other: '{0} m/s²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s²',
-          one: '{0}m/s²',
-          two: '{0}m/s²',
-          few: '{0}m/s²',
-          other: '{0}m/s²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meatair san diog cheàrnagach',
+      one: '{0} mheatair san diog cheàrnagach',
+      two: '{0} mheatair san diog cheàrnagach',
+      few: '{0} meatairean san diog cheàrnagach',
+      other: '{0} meatair san diog cheàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'meatair/diog²',
+      one: '{0} mheatair san diog cheàrnagach',
+      two: '{0} mheatair san diog cheàrnagach',
+      few: '{0} meatairean san diog cheàrnagach',
+      other: '{0} m/s²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s²',
+      one: '{0}m/s²',
+      two: '{0}m/s²',
+      few: '{0}m/s²',
+      other: '{0}m/s²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cuairt',
-          one: '{0} chuairt',
-          two: '{0} chuairt',
-          few: '{0} cuairtean',
-          other: '{0} cuairt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cuairt',
-          one: '{0} chuairt',
-          two: '{0} chuairt',
-          few: '{0} cuairtean',
-          other: '{0} cuairt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cuairt',
-          one: '{0}cuairt',
-          two: '{0}cuairt',
-          few: '{0}cuairt',
-          other: '{0}cuairt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cuairt',
+      one: '{0} chuairt',
+      two: '{0} chuairt',
+      few: '{0} cuairtean',
+      other: '{0} cuairt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cuairt',
+      one: '{0} chuairt',
+      two: '{0} chuairt',
+      few: '{0} cuairtean',
+      other: '{0} cuairt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cuairt',
+      one: '{0}cuairt',
+      two: '{0}cuairt',
+      few: '{0}cuairt',
+      other: '{0}cuairt',
+    ),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'rèidean',
-          one: '{0} rèidean',
-          two: '{0} rèidean',
-          few: '{0} rèideanan',
-          other: '{0} rèidean',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'rèidean',
-          one: '{0} rèidean',
-          two: '{0} rèidean',
-          few: '{0} rèideanan',
-          other: '{0} rad',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'rad',
-          one: '{0}rad',
-          two: '{0}rad',
-          few: '{0}rad',
-          other: '{0}rad',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'rèidean',
+      one: '{0} rèidean',
+      two: '{0} rèidean',
+      few: '{0} rèideanan',
+      other: '{0} rèidean',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'rèidean',
+      one: '{0} rèidean',
+      two: '{0} rèidean',
+      few: '{0} rèideanan',
+      other: '{0} rad',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'rad',
+      one: '{0}rad',
+      two: '{0}rad',
+      few: '{0}rad',
+      other: '{0}rad',
+    ),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceum',
-          one: '{0} cheum',
-          two: '{0} cheum',
-          few: '{0} ceuman',
-          other: '{0} ceum',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ceum',
-          one: '{0} cheum',
-          two: '{0} cheum',
-          few: '{0} ceuman',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ceum',
-          one: '{0} cheum',
-          two: '{0} cheum',
-          few: '{0} ceuman',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceum',
+      one: '{0} cheum',
+      two: '{0} cheum',
+      few: '{0} ceuman',
+      other: '{0} ceum',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ceum',
+      one: '{0} cheum',
+      two: '{0} cheum',
+      few: '{0} ceuman',
+      other: '{0}°',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ceum',
+      one: '{0} cheum',
+      two: '{0} cheum',
+      few: '{0} ceuman',
+      other: '{0}°',
+    ),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'àrc-mhionaid',
-          one: '{0} àrc-mhionaid',
-          two: '{0} àrc-mhionaid',
-          few: '{0} àrc-mhionaidean',
-          other: '{0} àrc-mhionaid',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'àrc-mhion.',
-          one: '{0} àrc-mhionaid',
-          two: '{0} àrc-mhionaid',
-          few: '{0} àrc-mhionaidean',
-          other: '{0}′',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'àrc-m',
-          one: '{0} àrc-mhionaid',
-          two: '{0} àrc-mhionaid',
-          few: '{0} àrc-mhionaidean',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'àrc-mhionaid',
+      one: '{0} àrc-mhionaid',
+      two: '{0} àrc-mhionaid',
+      few: '{0} àrc-mhionaidean',
+      other: '{0} àrc-mhionaid',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'àrc-mhion.',
+      one: '{0} àrc-mhionaid',
+      two: '{0} àrc-mhionaid',
+      few: '{0} àrc-mhionaidean',
+      other: '{0}′',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'àrc-m',
+      one: '{0} àrc-mhionaid',
+      two: '{0} àrc-mhionaid',
+      few: '{0} àrc-mhionaidean',
+      other: '{0}′',
+    ),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'àrc-dhiog',
-          one: '{0} àrc-dhiog',
-          two: '{0} àrc-dhiog',
-          few: '{0} àrc-dhiogan',
-          other: '{0} àrc-dhiog',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'àrc-dhiog',
-          one: '{0} àrc-dhiog',
-          two: '{0} àrc-dhiog',
-          few: '{0} àrc-dhiogan',
-          other: '{0}″',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'àrc-d',
-          one: '{0} àrc-dhiog',
-          two: '{0} àrc-dhiog',
-          few: '{0} àrc-dhiogan',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'àrc-dhiog',
+      one: '{0} àrc-dhiog',
+      two: '{0} àrc-dhiog',
+      few: '{0} àrc-dhiogan',
+      other: '{0} àrc-dhiog',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'àrc-dhiog',
+      one: '{0} àrc-dhiog',
+      two: '{0} àrc-dhiog',
+      few: '{0} àrc-dhiogan',
+      other: '{0}″',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'àrc-d',
+      one: '{0} àrc-dhiog',
+      two: '{0} àrc-dhiog',
+      few: '{0} àrc-dhiogan',
+      other: '{0}″',
+    ),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilemeatair ceàrnagach',
-          one: '{0} chilemeatair ceàrnagach',
-          two: '{0} chilemeatair ceàrnagach',
-          few: '{0} cilemeatairean ceàrnagach',
-          other: '{0} cilemeatair ceàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km²',
-          one: '{0} chilemeatair ceàrnagach',
-          two: '{0} chilemeatair ceàrnagach',
-          few: '{0} cilemeatairean ceàrnagach',
-          other: '{0} km²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km²',
-          one: '{0}km²',
-          two: '{0}km²',
-          few: '{0}km²',
-          other: '{0}km²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilemeatair ceàrnagach',
+      one: '{0} chilemeatair ceàrnagach',
+      two: '{0} chilemeatair ceàrnagach',
+      few: '{0} cilemeatairean ceàrnagach',
+      other: '{0} cilemeatair ceàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km²',
+      one: '{0} chilemeatair ceàrnagach',
+      two: '{0} chilemeatair ceàrnagach',
+      few: '{0} cilemeatairean ceàrnagach',
+      other: '{0} km²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km²',
+      one: '{0}km²',
+      two: '{0}km²',
+      few: '{0}km²',
+      other: '{0}km²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'heactair',
-          one: '{0} heactair',
-          two: '{0} heactair',
-          few: '{0} heactairean',
-          other: '{0} heactair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'heactair',
-          one: '{0} heactair',
-          two: '{0} heactair',
-          few: '{0} heactairean',
-          other: '{0} ha',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'heactair',
-          one: '{0}ha',
-          two: '{0}ha',
-          few: '{0}ha',
-          other: '{0}ha',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'heactair',
+      one: '{0} heactair',
+      two: '{0} heactair',
+      few: '{0} heactairean',
+      other: '{0} heactair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'heactair',
+      one: '{0} heactair',
+      two: '{0} heactair',
+      few: '{0} heactairean',
+      other: '{0} ha',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'heactair',
+      one: '{0}ha',
+      two: '{0}ha',
+      few: '{0}ha',
+      other: '{0}ha',
+    ),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meatair ceàrnagach',
-          one: '{0} mheatair ceàrnagach',
-          two: '{0} mheatair ceàrnagach',
-          few: '{0} meatairean ceàrnagach',
-          other: '{0} meatair ceàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'meatair²',
-          one: '{0} mheatair ceàrnagach',
-          two: '{0} mheatair ceàrnagach',
-          few: '{0} meatairean ceàrnagach',
-          other: '{0} m²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'meatair²',
-          one: '{0}m²',
-          two: '{0}m²',
-          few: '{0}m²',
-          other: '{0}m²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meatair ceàrnagach',
+      one: '{0} mheatair ceàrnagach',
+      two: '{0} mheatair ceàrnagach',
+      few: '{0} meatairean ceàrnagach',
+      other: '{0} meatair ceàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'meatair²',
+      one: '{0} mheatair ceàrnagach',
+      two: '{0} mheatair ceàrnagach',
+      few: '{0} meatairean ceàrnagach',
+      other: '{0} m²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'meatair²',
+      one: '{0}m²',
+      two: '{0}m²',
+      few: '{0}m²',
+      other: '{0}m²',
+    ),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceudameatair ceàrnagach',
-          one: '{0} cheudameatair ceàrnagach',
-          two: '{0} cheudameatair ceàrnagach',
-          few: '{0} ceudameatairean ceàrnagach',
-          other: '{0} ceudameatair ceàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} cheudameatair ceàrnagach',
-          two: '{0} cheudameatair ceàrnagach',
-          few: '{0} ceudameatairean ceàrnagach',
-          other: '{0} cm²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0}cm²',
-          two: '{0}cm²',
-          few: '{0}cm²',
-          other: '{0}cm²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceudameatair ceàrnagach',
+      one: '{0} cheudameatair ceàrnagach',
+      two: '{0} cheudameatair ceàrnagach',
+      few: '{0} ceudameatairean ceàrnagach',
+      other: '{0} ceudameatair ceàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} cheudameatair ceàrnagach',
+      two: '{0} cheudameatair ceàrnagach',
+      few: '{0} ceudameatairean ceàrnagach',
+      other: '{0} cm²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0}cm²',
+      two: '{0}cm²',
+      few: '{0}cm²',
+      other: '{0}cm²',
+    ),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle cheàrnagach',
-          one: '{0} mhìle cheàrnagach',
-          two: '{0} mhìle cheàrnagach',
-          few: '{0} mìltean ceàrnagach',
-          other: '{0} mìle cheàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mìle²',
-          one: '{0} mì²',
-          two: '{0} mì²',
-          few: '{0} mì²',
-          other: '{0} mì²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mì²',
-          one: '{0}mì²',
-          two: '{0}mì²',
-          few: '{0}mì²',
-          other: '{0}mì²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle cheàrnagach',
+      one: '{0} mhìle cheàrnagach',
+      two: '{0} mhìle cheàrnagach',
+      few: '{0} mìltean ceàrnagach',
+      other: '{0} mìle cheàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mìle²',
+      one: '{0} mì²',
+      two: '{0} mì²',
+      few: '{0} mì²',
+      other: '{0} mì²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mì²',
+      one: '{0}mì²',
+      two: '{0}mì²',
+      few: '{0}mì²',
+      other: '{0}mì²',
+    ),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'acair',
-          one: '{0} acair',
-          two: '{0} acair',
-          few: '{0} acraichean',
-          other: '{0} acair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'acair',
-          one: '{0} acair',
-          two: '{0} acair',
-          few: '{0} acraichean',
-          other: '{0} ac',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'acair',
-          one: '{0}ac',
-          two: '{0}ac',
-          few: '{0}ac',
-          other: '{0}ac',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'acair',
+      one: '{0} acair',
+      two: '{0} acair',
+      few: '{0} acraichean',
+      other: '{0} acair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'acair',
+      one: '{0} acair',
+      two: '{0} acair',
+      few: '{0} acraichean',
+      other: '{0} ac',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'acair',
+      one: '{0}ac',
+      two: '{0}ac',
+      few: '{0}ac',
+      other: '{0}ac',
+    ),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'slat cheàrnagach',
-          one: '{0} shlat cheàrnagach',
-          two: '{0} shlat cheàrnagach',
-          few: '{0} slatan ceàrnagach',
-          other: '{0} slat cheàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'slat²',
-          one: '{0} shlat²',
-          two: '{0} shlat²',
-          few: '{0} slat²',
-          other: '{0} slat²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'slat²',
-          one: '{0}yd²',
-          two: '{0}yd²',
-          few: '{0}yd²',
-          other: '{0}yd²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'slat cheàrnagach',
+      one: '{0} shlat cheàrnagach',
+      two: '{0} shlat cheàrnagach',
+      few: '{0} slatan ceàrnagach',
+      other: '{0} slat cheàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'slat²',
+      one: '{0} shlat²',
+      two: '{0} shlat²',
+      few: '{0} slat²',
+      other: '{0} slat²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'slat²',
+      one: '{0}yd²',
+      two: '{0}yd²',
+      few: '{0}yd²',
+      other: '{0}yd²',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'troigh cheàrnagach',
-          one: '{0} troigh cheàrnagach',
-          two: '{0} throigh cheàrnagach',
-          few: '{0} troighean ceàrnagach',
-          other: '{0} troigh cheàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'troigh²',
-          one: '{0} troigh²',
-          two: '{0} throigh²',
-          few: '{0} troigh²',
-          other: '{0} troigh²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft²',
-          one: '{0}ft²',
-          two: '{0}ft²',
-          few: '{0}ft²',
-          other: '{0}ft²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'troigh cheàrnagach',
+      one: '{0} troigh cheàrnagach',
+      two: '{0} throigh cheàrnagach',
+      few: '{0} troighean ceàrnagach',
+      other: '{0} troigh cheàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'troigh²',
+      one: '{0} troigh²',
+      two: '{0} throigh²',
+      few: '{0} troigh²',
+      other: '{0} troigh²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft²',
+      one: '{0}ft²',
+      two: '{0}ft²',
+      few: '{0}ft²',
+      other: '{0}ft²',
+    ),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'òirleach cheàrnagach',
-          one: '{0} òirleach cheàrnagach',
-          two: '{0} òirleach cheàrnagach',
-          few: '{0} òirlich cheàrnagach',
-          other: '{0} òirleach cheàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'òirl²',
-          one: '{0} òirl²',
-          two: '{0} òirl²',
-          few: '{0} òirl²',
-          other: '{0} òirl²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in²',
-          one: '{0}in²',
-          two: '{0}in²',
-          few: '{0}in²',
-          other: '{0}in²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'òirleach cheàrnagach',
+      one: '{0} òirleach cheàrnagach',
+      two: '{0} òirleach cheàrnagach',
+      few: '{0} òirlich cheàrnagach',
+      other: '{0} òirleach cheàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'òirl²',
+      one: '{0} òirl²',
+      two: '{0} òirl²',
+      few: '{0} òirl²',
+      other: '{0} òirl²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in²',
+      one: '{0}in²',
+      two: '{0}in²',
+      few: '{0}in²',
+      other: '{0}in²',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dönüm',
-          one: '{0} dönüm',
-          two: '{0} dhönüm',
-          few: '{0} dönüm',
-          other: '{0} dönüm',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dönüm',
-          one: '{0} dönüm',
-          two: '{0} dhönüm',
-          few: '{0} dönüm',
-          other: '{0} dönüm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dönüm',
-          one: '{0}dönüm',
-          two: '{0}dhönüm',
-          few: '{0}dönüm',
-          other: '{0}dönüm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dönüm',
+      one: '{0} dönüm',
+      two: '{0} dhönüm',
+      few: '{0} dönüm',
+      other: '{0} dönüm',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dönüm',
+      one: '{0} dönüm',
+      two: '{0} dhönüm',
+      few: '{0} dönüm',
+      other: '{0} dönüm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dönüm',
+      one: '{0}dönüm',
+      two: '{0}dhönüm',
+      few: '{0}dönüm',
+      other: '{0}dönüm',
+    ),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'karat',
-          one: '{0} karat',
-          two: '{0} karat',
-          few: '{0} karat',
-          other: '{0} karat',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'karat',
-          one: '{0} karat',
-          two: '{0} karat',
-          few: '{0} karat',
-          other: '{0} kt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'karat',
-          one: '{0}kt',
-          two: '{0}kt',
-          few: '{0}kt',
-          other: '{0}kt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'karat',
+      one: '{0} karat',
+      two: '{0} karat',
+      few: '{0} karat',
+      other: '{0} karat',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'karat',
+      one: '{0} karat',
+      two: '{0} karat',
+      few: '{0} karat',
+      other: '{0} kt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'karat',
+      one: '{0}kt',
+      two: '{0}kt',
+      few: '{0}kt',
+      other: '{0}kt',
+    ),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'miligram san deicheamh-liotair',
-          one: '{0} mhiligram san deicheamh-liotair',
-          two: '{0} mhiligram san deicheamh-liotair',
-          few: '{0} miligramaichean san deicheamh-liotair',
-          other: '{0} miligram san deicheamh-liotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} mhiligram san deicheamh-liotair',
-          two: '{0} mhiligram san deicheamh-liotair',
-          few: '{0} miligramaichean san deicheamh-liotair',
-          other: '{0} mg/dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0}mg/dL',
-          two: '{0}mg/dL',
-          few: '{0}mg/dL',
-          other: '{0}mg/dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'miligram san deicheamh-liotair',
+      one: '{0} mhiligram san deicheamh-liotair',
+      two: '{0} mhiligram san deicheamh-liotair',
+      few: '{0} miligramaichean san deicheamh-liotair',
+      other: '{0} miligram san deicheamh-liotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} mhiligram san deicheamh-liotair',
+      two: '{0} mhiligram san deicheamh-liotair',
+      few: '{0} miligramaichean san deicheamh-liotair',
+      other: '{0} mg/dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0}mg/dL',
+      two: '{0}mg/dL',
+      few: '{0}mg/dL',
+      other: '{0}mg/dL',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milimòl san liotair',
-          one: '{0} mhilimòl san liotair',
-          two: '{0} mhilimòl san liotair',
-          few: '{0} milimòlaichean san liotair',
-          other: '{0} milimòl san liotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmòl/L',
-          one: '{0} mmòl/L',
-          two: '{0} mmòl/L',
-          few: '{0} mmòl/L',
-          other: '{0} mmòl/L',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmòl/L',
-          one: '{0}mmòl/L',
-          two: '{0}mmòl/L',
-          few: '{0}mmòl/L',
-          other: '{0}mmòl/L',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milimòl san liotair',
+      one: '{0} mhilimòl san liotair',
+      two: '{0} mhilimòl san liotair',
+      few: '{0} milimòlaichean san liotair',
+      other: '{0} milimòl san liotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmòl/L',
+      one: '{0} mmòl/L',
+      two: '{0} mmòl/L',
+      few: '{0} mmòl/L',
+      other: '{0} mmòl/L',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmòl/L',
+      one: '{0}mmòl/L',
+      two: '{0}mmòl/L',
+      few: '{0}mmòl/L',
+      other: '{0}mmòl/L',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nì',
-          one: '{0} nì',
-          two: '{0} nì',
-          few: '{0} nithean',
-          other: '{0} nì',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nì',
-          one: '{0} nì',
-          two: '{0} nì',
-          few: '{0} nith',
-          other: '{0} nì',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nì',
-          one: '{0}nì',
-          two: '{0}nì',
-          few: '{0}nith',
-          other: '{0}nì',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nì',
+      one: '{0} nì',
+      two: '{0} nì',
+      few: '{0} nithean',
+      other: '{0} nì',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nì',
+      one: '{0} nì',
+      two: '{0} nì',
+      few: '{0} nith',
+      other: '{0} nì',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nì',
+      one: '{0}nì',
+      two: '{0}nì',
+      few: '{0}nith',
+      other: '{0}nì',
+    ),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pàirt sa mhillean',
-          one: '{0} phàirt sa mhillean',
-          two: '{0} phàirt sa mhillean',
-          few: '{0} pàirtean sa mhillean',
-          other: '{0} pàirt sa mhillean',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} phàirt sa mhillean',
-          two: '{0} phàirt sa mhillean',
-          few: '{0} pàirtean sa mhillean',
-          other: '{0} ppm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0}ppm',
-          two: '{0}ppm',
-          few: '{0}ppm',
-          other: '{0}ppm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pàirt sa mhillean',
+      one: '{0} phàirt sa mhillean',
+      two: '{0} phàirt sa mhillean',
+      few: '{0} pàirtean sa mhillean',
+      other: '{0} pàirt sa mhillean',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0} phàirt sa mhillean',
+      two: '{0} phàirt sa mhillean',
+      few: '{0} pàirtean sa mhillean',
+      other: '{0} ppm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0}ppm',
+      two: '{0}ppm',
+      few: '{0}ppm',
+      other: '{0}ppm',
+    ),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'sa cheud',
-          one: '{0} sa cheud',
-          two: '{0} sa cheud',
-          few: '{0} sa cheud',
-          other: '{0} sa cheud',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'sa cheud',
-          one: '{0} sa cheud',
-          two: '{0} sa cheud',
-          few: '{0} sa cheud',
-          other: '{0}%',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} sa cheud',
-          two: '{0} sa cheud',
-          few: '{0} sa cheud',
-          other: '{0}%',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'sa cheud',
+      one: '{0} sa cheud',
+      two: '{0} sa cheud',
+      few: '{0} sa cheud',
+      other: '{0} sa cheud',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'sa cheud',
+      one: '{0} sa cheud',
+      two: '{0} sa cheud',
+      few: '{0} sa cheud',
+      other: '{0}%',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '%',
+      one: '{0} sa cheud',
+      two: '{0} sa cheud',
+      few: '{0} sa cheud',
+      other: '{0}%',
+    ),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'sa mhìle',
-          one: '{0} sa mhìle',
-          two: '{0} sa mhìle',
-          few: '{0} sa mhìle',
-          other: '{0} sa mhìle',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'sa mhìle',
-          one: '{0} sa mhìle',
-          two: '{0} sa mhìle',
-          few: '{0} sa mhìle',
-          other: '{0}‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‰',
-          one: '{0} sa mhìle',
-          two: '{0} sa mhìle',
-          few: '{0} sa mhìle',
-          other: '{0}‰',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'sa mhìle',
+      one: '{0} sa mhìle',
+      two: '{0} sa mhìle',
+      few: '{0} sa mhìle',
+      other: '{0} sa mhìle',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'sa mhìle',
+      one: '{0} sa mhìle',
+      two: '{0} sa mhìle',
+      few: '{0} sa mhìle',
+      other: '{0}‰',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '‰',
+      one: '{0} sa mhìle',
+      two: '{0} sa mhìle',
+      few: '{0} sa mhìle',
+      other: '{0}‰',
+    ),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'sna deich mìltean',
-          one: '{0} sna deich mìltean',
-          two: '{0} sna deich mìltean',
-          few: '{0} sna deich mìltean',
-          other: '{0} sna deich mìltean',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'sna deich mìltean',
-          one: '{0} sna deich mìltean',
-          two: '{0} sna deich mìltean',
-          few: '{0} sna deich mìltean',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} sna deich mìltean',
-          two: '{0} sna deich mìltean',
-          few: '{0} sna deich mìltean',
-          other: '{0}‱',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'sna deich mìltean',
+      one: '{0} sna deich mìltean',
+      two: '{0} sna deich mìltean',
+      few: '{0} sna deich mìltean',
+      other: '{0} sna deich mìltean',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'sna deich mìltean',
+      one: '{0} sna deich mìltean',
+      two: '{0} sna deich mìltean',
+      few: '{0} sna deich mìltean',
+      other: '{0}‱',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '‱',
+      one: '{0} sna deich mìltean',
+      two: '{0} sna deich mìltean',
+      few: '{0} sna deich mìltean',
+      other: '{0}‱',
+    ),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mòl',
-          one: '{0} mhòl',
-          two: '{0} mhòl',
-          few: '{0} mòlaichean',
-          other: '{0} mòl',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mòl',
-          one: '{0} mòl',
-          two: '{0} mòl',
-          few: '{0} mòl',
-          other: '{0} mòl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mòl',
-          one: '{0}mòl',
-          two: '{0}mòl',
-          few: '{0}mòl',
-          other: '{0}mòl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mòl',
+      one: '{0} mhòl',
+      two: '{0} mhòl',
+      few: '{0} mòlaichean',
+      other: '{0} mòl',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mòl',
+      one: '{0} mòl',
+      two: '{0} mòl',
+      few: '{0} mòl',
+      other: '{0} mòl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mòl',
+      one: '{0}mòl',
+      two: '{0}mòl',
+      few: '{0}mòl',
+      other: '{0}mòl',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'liotair sa chilemeatair',
-          one: '{0} liotair sa chilemeatair',
-          two: '{0} liotair sa chilemeatair',
-          few: '{0} liotairean sa chilemeatair',
-          other: '{0} liotair sa chilemeatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'liotair/km',
-          one: '{0} liotair sa chilemeatair',
-          two: '{0} liotair sa chilemeatair',
-          few: '{0} liotairean sa chilemeatair',
-          other: '{0} L/km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L/km',
-          one: '{0}L/km',
-          two: '{0}L/km',
-          few: '{0}L/km',
-          other: '{0}L/km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'liotair sa chilemeatair',
+      one: '{0} liotair sa chilemeatair',
+      two: '{0} liotair sa chilemeatair',
+      few: '{0} liotairean sa chilemeatair',
+      other: '{0} liotair sa chilemeatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'liotair/km',
+      one: '{0} liotair sa chilemeatair',
+      two: '{0} liotair sa chilemeatair',
+      few: '{0} liotairean sa chilemeatair',
+      other: '{0} L/km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L/km',
+      one: '{0}L/km',
+      two: '{0}L/km',
+      few: '{0}L/km',
+      other: '{0}L/km',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'liotair sa 100 chilemeatair',
-          one: '{0} liotair sa 100 chilemeatair',
-          two: '{0} liotair sa 100 chilemeatair',
-          few: '{0} liotairean sa 100 chilemeatair',
-          other: '{0} liotair sa 100 chilemeatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'L/100km',
-          one: '{0} liotair sa 100 chilemeatair',
-          two: '{0} liotair sa 100 chilemeatair',
-          few: '{0} liotairean sa 100 chilemeatair',
-          other: '{0} L/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L/100km',
-          one: '{0}L/100km',
-          two: '{0}L/100km',
-          few: '{0}L/100km',
-          other: '{0}L/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'liotair sa 100 chilemeatair',
+      one: '{0} liotair sa 100 chilemeatair',
+      two: '{0} liotair sa 100 chilemeatair',
+      few: '{0} liotairean sa 100 chilemeatair',
+      other: '{0} liotair sa 100 chilemeatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'L/100km',
+      one: '{0} liotair sa 100 chilemeatair',
+      two: '{0} liotair sa 100 chilemeatair',
+      few: '{0} liotairean sa 100 chilemeatair',
+      other: '{0} L/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L/100km',
+      one: '{0}L/100km',
+      two: '{0}L/100km',
+      few: '{0}L/100km',
+      other: '{0}L/100km',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle sa ghalan',
-          one: '{0} mhìle sa ghalan',
-          two: '{0} mhìle sa ghalan',
-          few: '{0} mìltean sa ghalan',
-          other: '{0} mìle sa ghalan',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mìle/gal',
-          one: '{0} mì/g',
-          two: '{0} mì/g',
-          few: '{0} mì/g',
-          other: '{0} mì/g',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mì/g',
-          one: '{0}mì/g',
-          two: '{0}mì/g',
-          few: '{0}mì/g',
-          other: '{0}mì/g',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle sa ghalan',
+      one: '{0} mhìle sa ghalan',
+      two: '{0} mhìle sa ghalan',
+      few: '{0} mìltean sa ghalan',
+      other: '{0} mìle sa ghalan',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mìle/gal',
+      one: '{0} mì/g',
+      two: '{0} mì/g',
+      few: '{0} mì/g',
+      other: '{0} mì/g',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mì/g',
+      one: '{0}mì/g',
+      two: '{0}mì/g',
+      few: '{0}mì/g',
+      other: '{0}mì/g',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle sa ghalan ìmpireil',
-          one: '{0} mhìle sa ghalan ìmpireil',
-          two: '{0} mhìle sa ghalan ìmpireil',
-          few: '{0} mìltean sa ghalan ìmpireil',
-          other: '{0} mìle sa ghalan ìmpireil',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mìle/gal ìmp.',
-          one: '{0} mhì/gal ìmp.',
-          two: '{0} mhì/gal ìmp.',
-          few: '{0} mì/gal ìmp.',
-          other: '{0} mì/gal ìmp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mìle/gal RA',
-          one: '{0}m/gRA',
-          two: '{0}m/gRA',
-          few: '{0}m/gRA',
-          other: '{0}m/gRA',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle sa ghalan ìmpireil',
+      one: '{0} mhìle sa ghalan ìmpireil',
+      two: '{0} mhìle sa ghalan ìmpireil',
+      few: '{0} mìltean sa ghalan ìmpireil',
+      other: '{0} mìle sa ghalan ìmpireil',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mìle/gal ìmp.',
+      one: '{0} mhì/gal ìmp.',
+      two: '{0} mhì/gal ìmp.',
+      few: '{0} mì/gal ìmp.',
+      other: '{0} mì/gal ìmp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mìle/gal RA',
+      one: '{0}m/gRA',
+      two: '{0}m/gRA',
+      few: '{0}m/gRA',
+      other: '{0}m/gRA',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'peta-baidht',
-          one: '{0} pheta-baidht',
-          two: '{0} pheta-baidht',
-          few: '{0} peta-baidhtean',
-          other: '{0} peta-baidht',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} pheta-baidht',
-          two: '{0} pheta-baidht',
-          few: '{0} peta-baidhtean',
-          other: '{0} PB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0}PB',
-          two: '{0}PB',
-          few: '{0}PB',
-          other: '{0}PB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'peta-baidht',
+      one: '{0} pheta-baidht',
+      two: '{0} pheta-baidht',
+      few: '{0} peta-baidhtean',
+      other: '{0} peta-baidht',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'PB',
+      one: '{0} pheta-baidht',
+      two: '{0} pheta-baidht',
+      few: '{0} peta-baidhtean',
+      other: '{0} PB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'PB',
+      one: '{0}PB',
+      two: '{0}PB',
+      few: '{0}PB',
+      other: '{0}PB',
+    ),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tera-baidht',
-          one: '{0} tera-baidht',
-          two: '{0} thera-baidht',
-          few: '{0} tera-baidhtean',
-          other: '{0} tera-baidht',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} tera-baidht',
-          two: '{0} thera-baidht',
-          few: '{0} tera-baidhtean',
-          other: '{0} TB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0}TB',
-          two: '{0}TB',
-          few: '{0}TB',
-          other: '{0}TB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tera-baidht',
+      one: '{0} tera-baidht',
+      two: '{0} thera-baidht',
+      few: '{0} tera-baidhtean',
+      other: '{0} tera-baidht',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} tera-baidht',
+      two: '{0} thera-baidht',
+      few: '{0} tera-baidhtean',
+      other: '{0} TB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0}TB',
+      two: '{0}TB',
+      few: '{0}TB',
+      other: '{0}TB',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tera-biod',
-          one: '{0} tera-biod',
-          two: '{0} thera-biod',
-          few: '{0} tera-biodan',
-          other: '{0} tera-biod',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} tera-biod',
-          two: '{0} thera-biod',
-          few: '{0} tera-biodan',
-          other: '{0} Tb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0}Tb',
-          two: '{0}Tb',
-          few: '{0}Tb',
-          other: '{0}Tb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tera-biod',
+      one: '{0} tera-biod',
+      two: '{0} thera-biod',
+      few: '{0} tera-biodan',
+      other: '{0} tera-biod',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Tb',
+      one: '{0} tera-biod',
+      two: '{0} thera-biod',
+      few: '{0} tera-biodan',
+      other: '{0} Tb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Tb',
+      one: '{0}Tb',
+      two: '{0}Tb',
+      few: '{0}Tb',
+      other: '{0}Tb',
+    ),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'giga-baidht',
-          one: '{0} ghiga-baidht',
-          two: '{0} ghiga-baidht',
-          few: '{0} giga-baidhtean',
-          other: '{0} giga-baidht',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} ghiga-baidht',
-          two: '{0} ghiga-baidht',
-          few: '{0} giga-baidhtean',
-          other: '{0} GB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0}GB',
-          two: '{0}GB',
-          few: '{0}GB',
-          other: '{0}GB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'giga-baidht',
+      one: '{0} ghiga-baidht',
+      two: '{0} ghiga-baidht',
+      few: '{0} giga-baidhtean',
+      other: '{0} giga-baidht',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} ghiga-baidht',
+      two: '{0} ghiga-baidht',
+      few: '{0} giga-baidhtean',
+      other: '{0} GB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0}GB',
+      two: '{0}GB',
+      few: '{0}GB',
+      other: '{0}GB',
+    ),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'giga-biod',
-          one: '{0} ghiga-biod',
-          two: '{0} ghiga-biod',
-          few: '{0} giga-biodan',
-          other: '{0} giga-biod',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} ghiga-biod',
-          two: '{0} ghiga-biod',
-          few: '{0} giga-biodan',
-          other: '{0} Gb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0}Gb',
-          two: '{0}Gb',
-          few: '{0}Gb',
-          other: '{0}Gb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'giga-biod',
+      one: '{0} ghiga-biod',
+      two: '{0} ghiga-biod',
+      few: '{0} giga-biodan',
+      other: '{0} giga-biod',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Gb',
+      one: '{0} ghiga-biod',
+      two: '{0} ghiga-biod',
+      few: '{0} giga-biodan',
+      other: '{0} Gb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Gb',
+      one: '{0}Gb',
+      two: '{0}Gb',
+      few: '{0}Gb',
+      other: '{0}Gb',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meaga-baidht',
-          one: '{0} mheaga-baidht',
-          two: '{0} mheaga-baidht',
-          few: '{0} meaga-baidhtean',
-          other: '{0} meaga-baidht',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} mheaga-baidht',
-          two: '{0} mheaga-baidht',
-          few: '{0} meaga-baidhtean',
-          other: '{0} MB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0}MB',
-          two: '{0}MB',
-          few: '{0}MB',
-          other: '{0}MB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meaga-baidht',
+      one: '{0} mheaga-baidht',
+      two: '{0} mheaga-baidht',
+      few: '{0} meaga-baidhtean',
+      other: '{0} meaga-baidht',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} mheaga-baidht',
+      two: '{0} mheaga-baidht',
+      few: '{0} meaga-baidhtean',
+      other: '{0} MB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0}MB',
+      two: '{0}MB',
+      few: '{0}MB',
+      other: '{0}MB',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meaga-biod',
-          one: '{0} mheaga-biod',
-          two: '{0} mheaga-biod',
-          few: '{0} meaga-biodan',
-          other: '{0} meaga-biod',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} mheaga-biod',
-          two: '{0} mheaga-biod',
-          few: '{0} meaga-biodan',
-          other: '{0} Mb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0}Mb',
-          two: '{0}Mb',
-          few: '{0}Mb',
-          other: '{0}Mb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meaga-biod',
+      one: '{0} mheaga-biod',
+      two: '{0} mheaga-biod',
+      few: '{0} meaga-biodan',
+      other: '{0} meaga-biod',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Mb',
+      one: '{0} mheaga-biod',
+      two: '{0} mheaga-biod',
+      few: '{0} meaga-biodan',
+      other: '{0} Mb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Mb',
+      one: '{0}Mb',
+      two: '{0}Mb',
+      few: '{0}Mb',
+      other: '{0}Mb',
+    ),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cileabaidht',
-          one: '{0} chileabaidht',
-          two: '{0} chileabaidht',
-          few: '{0} cileabaidhtean',
-          other: '{0} cileabaidht',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} chileabaidht',
-          two: '{0} chileabaidht',
-          few: '{0} cileabaidhtean',
-          other: '{0} kB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0}kB',
-          two: '{0}kB',
-          few: '{0}kB',
-          other: '{0}kB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cileabaidht',
+      one: '{0} chileabaidht',
+      two: '{0} chileabaidht',
+      few: '{0} cileabaidhtean',
+      other: '{0} cileabaidht',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} chileabaidht',
+      two: '{0} chileabaidht',
+      few: '{0} cileabaidhtean',
+      other: '{0} kB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0}kB',
+      two: '{0}kB',
+      few: '{0}kB',
+      other: '{0}kB',
+    ),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilebiod',
-          one: '{0} chilebiod',
-          two: '{0} chilebiod',
-          few: '{0} cilebiodan',
-          other: '{0} cilebiod',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} chilebiod',
-          two: '{0} chilebiod',
-          few: '{0} cilebiodan',
-          other: '{0} kb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0}kb',
-          two: '{0}kb',
-          few: '{0}kb',
-          other: '{0}kb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilebiod',
+      one: '{0} chilebiod',
+      two: '{0} chilebiod',
+      few: '{0} cilebiodan',
+      other: '{0} cilebiod',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kb',
+      one: '{0} chilebiod',
+      two: '{0} chilebiod',
+      few: '{0} cilebiodan',
+      other: '{0} kb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kb',
+      one: '{0}kb',
+      two: '{0}kb',
+      few: '{0}kb',
+      other: '{0}kb',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'baidht',
-          one: '{0} bhaidht',
-          two: '{0} bhaidht',
-          few: '{0} baidhtean',
-          other: '{0} baidht',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'baidht',
-          one: '{0} B',
-          two: '{0} B',
-          few: '{0} B',
-          other: '{0} B',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'baidht',
-          one: '{0}B',
-          two: '{0}B',
-          few: '{0}B',
-          other: '{0}B',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'baidht',
+      one: '{0} bhaidht',
+      two: '{0} bhaidht',
+      few: '{0} baidhtean',
+      other: '{0} baidht',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'baidht',
+      one: '{0} B',
+      two: '{0} B',
+      few: '{0} B',
+      other: '{0} B',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'baidht',
+      one: '{0}B',
+      two: '{0}B',
+      few: '{0}B',
+      other: '{0}B',
+    ),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'biod',
-          one: '{0} bhiod',
-          two: '{0} bhiod',
-          few: '{0} biodan',
-          other: '{0} biod',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'biod',
-          one: '{0} b',
-          two: '{0} b',
-          few: '{0} b',
-          other: '{0} b',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'biod',
-          one: '{0}b',
-          two: '{0}b',
-          few: '{0}b',
-          other: '{0}b',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'biod',
+      one: '{0} bhiod',
+      two: '{0} bhiod',
+      few: '{0} biodan',
+      other: '{0} biod',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'biod',
+      one: '{0} b',
+      two: '{0} b',
+      few: '{0} b',
+      other: '{0} b',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'biod',
+      one: '{0}b',
+      two: '{0}b',
+      few: '{0}b',
+      other: '{0}b',
+    ),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'linn',
-          one: '{0} linn',
-          two: '{0} linn',
-          few: '{0} linntean',
-          other: '{0} linn',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'li',
-          one: '{0} li',
-          two: '{0} li',
-          few: '{0} li',
-          other: '{0} li',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'li',
-          one: '{0}li',
-          two: '{0}li',
-          few: '{0}li',
-          other: '{0}li',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'linn',
+      one: '{0} linn',
+      two: '{0} linn',
+      few: '{0} linntean',
+      other: '{0} linn',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'li',
+      one: '{0} li',
+      two: '{0} li',
+      few: '{0} li',
+      other: '{0} li',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'li',
+      one: '{0}li',
+      two: '{0}li',
+      few: '{0}li',
+      other: '{0}li',
+    ),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'deichead',
-          one: '{0} deichead',
-          two: '{0} dheichead',
-          few: '{0} deicheadan',
-          other: '{0} deichead',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'deich',
-          one: '{0} deich',
-          two: '{0} dheich',
-          few: '{0} deich',
-          other: '{0} deich',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'deich',
-          one: '{0}deich',
-          two: '{0}dheich',
-          few: '{0}deich',
-          other: '{0}deich',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'deichead',
+      one: '{0} deichead',
+      two: '{0} dheichead',
+      few: '{0} deicheadan',
+      other: '{0} deichead',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'deich',
+      one: '{0} deich',
+      two: '{0} dheich',
+      few: '{0} deich',
+      other: '{0} deich',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'deich',
+      one: '{0}deich',
+      two: '{0}dheich',
+      few: '{0}deich',
+      other: '{0}deich',
+    ),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bliadhna',
-          one: '{0} bhliadhna',
-          two: '{0} bhliadhna',
-          few: '{0} bliadhnaichean',
-          other: '{0} bliadhna',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bliadhna',
-          one: '{0} bhlia',
-          two: '{0} bhlia',
-          few: '{0} blia',
-          other: '{0} blia',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'blia',
-          one: '{0}bl',
-          two: '{0}bl',
-          few: '{0}bl',
-          other: '{0}bl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bliadhna',
+      one: '{0} bhliadhna',
+      two: '{0} bhliadhna',
+      few: '{0} bliadhnaichean',
+      other: '{0} bliadhna',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'bliadhna',
+      one: '{0} bhlia',
+      two: '{0} bhlia',
+      few: '{0} blia',
+      other: '{0} blia',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'blia',
+      one: '{0}bl',
+      two: '{0}bl',
+      few: '{0}bl',
+      other: '{0}bl',
+    ),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cairteal',
-          one: '{0} chairteal',
-          two: '{0} chairteal',
-          few: '{0} cairtealan',
-          other: '{0} cairteal',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cairt.',
-          one: '{0} chairt.',
-          two: '{0} chairt.',
-          few: '{0} cairt.',
-          other: '{0} cairt.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'c',
-          one: '{0}c',
-          two: '{0}c',
-          few: '{0}c',
-          other: '{0}c',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cairteal',
+      one: '{0} chairteal',
+      two: '{0} chairteal',
+      few: '{0} cairtealan',
+      other: '{0} cairteal',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cairt.',
+      one: '{0} chairt.',
+      two: '{0} chairt.',
+      few: '{0} cairt.',
+      other: '{0} cairt.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'c',
+      one: '{0}c',
+      two: '{0}c',
+      few: '{0}c',
+      other: '{0}c',
+    ),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìos',
-          one: '{0} mhìos',
-          two: '{0} mhìos',
-          few: '{0} mìosan',
-          other: '{0} mìos',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mìos',
-          one: '{0} mhìos',
-          two: '{0} mhìos',
-          few: '{0} mìos',
-          other: '{0} mìos',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mìos',
-          one: '{0}m',
-          two: '{0}m',
-          few: '{0}m',
-          other: '{0}m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìos',
+      one: '{0} mhìos',
+      two: '{0} mhìos',
+      few: '{0} mìosan',
+      other: '{0} mìos',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mìos',
+      one: '{0} mhìos',
+      two: '{0} mhìos',
+      few: '{0} mìos',
+      other: '{0} mìos',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mìos',
+      one: '{0}m',
+      two: '{0}m',
+      few: '{0}m',
+      other: '{0}m',
+    ),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'seachdain',
-          one: '{0} seachdain',
-          two: '{0} sheachdain',
-          few: '{0} seachdainean',
-          other: '{0} seachdain',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'seachd',
-          one: '{0} shn',
-          two: '{0} shn',
-          few: '{0} sn',
-          other: '{0} sn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          's',
-          one: '{0}s',
-          two: '{0}s',
-          few: '{0}s',
-          other: '{0}s',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'seachdain',
+      one: '{0} seachdain',
+      two: '{0} sheachdain',
+      few: '{0} seachdainean',
+      other: '{0} seachdain',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'seachd',
+      one: '{0} shn',
+      two: '{0} shn',
+      few: '{0} sn',
+      other: '{0} sn',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      's',
+      one: '{0}s',
+      two: '{0}s',
+      few: '{0}s',
+      other: '{0}s',
+    ),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'latha',
-          one: '{0} latha',
-          two: '{0} latha',
-          few: '{0} làithean',
-          other: '{0} latha',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'latha',
-          one: '{0} là',
-          two: '{0} là',
-          few: '{0} là',
-          other: '{0} là',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'là',
-          one: '{0}là',
-          two: '{0}là',
-          few: '{0}là',
-          other: '{0}là',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'latha',
+      one: '{0} latha',
+      two: '{0} latha',
+      few: '{0} làithean',
+      other: '{0} latha',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'latha',
+      one: '{0} là',
+      two: '{0} là',
+      few: '{0} là',
+      other: '{0} là',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'là',
+      one: '{0}là',
+      two: '{0}là',
+      few: '{0}là',
+      other: '{0}là',
+    ),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'uair a thìde',
-          one: '{0} uair a thìde',
-          two: '{0} uair a thìde',
-          few: '{0} uairean a thìde',
-          other: '{0} uair a thìde',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'uair',
-          one: '{0} uair',
-          two: '{0} uair',
-          few: '{0} uair',
-          other: '{0} uair',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'uair',
-          one: '{0}u',
-          two: '{0}u',
-          few: '{0}u',
-          other: '{0}u',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'uair a thìde',
+      one: '{0} uair a thìde',
+      two: '{0} uair a thìde',
+      few: '{0} uairean a thìde',
+      other: '{0} uair a thìde',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'uair',
+      one: '{0} uair',
+      two: '{0} uair',
+      few: '{0} uair',
+      other: '{0} uair',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'uair',
+      one: '{0}u',
+      two: '{0}u',
+      few: '{0}u',
+      other: '{0}u',
+    ),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mionaid',
-          one: '{0} mhionaid',
-          two: '{0} mhionaid',
-          few: '{0} mionaidean',
-          other: '{0} mionaid',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mion',
-          one: '{0} mhion',
-          two: '{0} mhion',
-          few: '{0} mion',
-          other: '{0} mion',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mion',
-          one: '{0}m',
-          two: '{0}m',
-          few: '{0}m',
-          other: '{0}m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mionaid',
+      one: '{0} mhionaid',
+      two: '{0} mhionaid',
+      few: '{0} mionaidean',
+      other: '{0} mionaid',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mion',
+      one: '{0} mhion',
+      two: '{0} mhion',
+      few: '{0} mion',
+      other: '{0} mion',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mion',
+      one: '{0}m',
+      two: '{0}m',
+      few: '{0}m',
+      other: '{0}m',
+    ),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'diog',
-          one: '{0} diog',
-          two: '{0} dhiog',
-          few: '{0} diogan',
-          other: '{0} diog',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'diog',
-          one: '{0} diog',
-          two: '{0} dhiog',
-          few: '{0} diog',
-          other: '{0} diog',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'diog',
-          one: '{0}d',
-          two: '{0}d',
-          few: '{0}d',
-          other: '{0}d',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'diog',
+      one: '{0} diog',
+      two: '{0} dhiog',
+      few: '{0} diogan',
+      other: '{0} diog',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'diog',
+      one: '{0} diog',
+      two: '{0} dhiog',
+      few: '{0} diog',
+      other: '{0} diog',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'diog',
+      one: '{0}d',
+      two: '{0}d',
+      few: '{0}d',
+      other: '{0}d',
+    ),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mili-diog',
-          one: '{0} mhili-diog',
-          two: '{0} mhili-diog',
-          few: '{0} mili-diogan',
-          other: '{0} mili-diog',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mili-diog',
-          one: '{0} mhili-diog',
-          two: '{0} mhili-diog',
-          few: '{0} mili-diogan',
-          other: '{0} ms',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ms',
-          one: '{0}ms',
-          two: '{0}ms',
-          few: '{0}ms',
-          other: '{0}ms',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mili-diog',
+      one: '{0} mhili-diog',
+      two: '{0} mhili-diog',
+      few: '{0} mili-diogan',
+      other: '{0} mili-diog',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mili-diog',
+      one: '{0} mhili-diog',
+      two: '{0} mhili-diog',
+      few: '{0} mili-diogan',
+      other: '{0} ms',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ms',
+      one: '{0}ms',
+      two: '{0}ms',
+      few: '{0}ms',
+      other: '{0}ms',
+    ),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'micreo-diog',
-          one: '{0} mhicreo-diog',
-          two: '{0} mhicreo-diog',
-          few: '{0} micreo-diogan',
-          other: '{0} micreo-diog',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μ-diog',
-          one: '{0} mhicreo-diog',
-          two: '{0} mhicreo-diog',
-          few: '{0} micreo-diogan',
-          other: '{0} μs',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μs',
-          one: '{0}μs',
-          two: '{0}μs',
-          few: '{0}μs',
-          other: '{0}μs',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'micreo-diog',
+      one: '{0} mhicreo-diog',
+      two: '{0} mhicreo-diog',
+      few: '{0} micreo-diogan',
+      other: '{0} micreo-diog',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μ-diog',
+      one: '{0} mhicreo-diog',
+      two: '{0} mhicreo-diog',
+      few: '{0} micreo-diogan',
+      other: '{0} μs',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μs',
+      one: '{0}μs',
+      two: '{0}μs',
+      few: '{0}μs',
+      other: '{0}μs',
+    ),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nano-diog',
-          one: '{0} nano-diog',
-          two: '{0} nano-diog',
-          few: '{0} nano-diogan',
-          other: '{0} nano-diog',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nano-diog',
-          one: '{0} nano-diog',
-          two: '{0} nano-diog',
-          few: '{0} nano-diogan',
-          other: '{0} ns',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ns',
-          one: '{0}ns',
-          two: '{0}ns',
-          few: '{0}ns',
-          other: '{0}ns',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nano-diog',
+      one: '{0} nano-diog',
+      two: '{0} nano-diog',
+      few: '{0} nano-diogan',
+      other: '{0} nano-diog',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nano-diog',
+      one: '{0} nano-diog',
+      two: '{0} nano-diog',
+      few: '{0} nano-diogan',
+      other: '{0} ns',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ns',
+      one: '{0}ns',
+      two: '{0}ns',
+      few: '{0}ns',
+      other: '{0}ns',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ampère',
-          one: '{0} ampère',
-          two: '{0} ampère',
-          few: '{0} ampère',
-          other: '{0} ampère',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'amp',
-          one: '{0} ampère',
-          two: '{0} ampère',
-          few: '{0} ampère',
-          other: '{0} A',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'amp',
-          one: '{0}A',
-          two: '{0}A',
-          few: '{0}A',
-          other: '{0}A',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ampère',
+      one: '{0} ampère',
+      two: '{0} ampère',
+      few: '{0} ampère',
+      other: '{0} ampère',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'amp',
+      one: '{0} ampère',
+      two: '{0} ampère',
+      few: '{0} ampère',
+      other: '{0} A',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'amp',
+      one: '{0}A',
+      two: '{0}A',
+      few: '{0}A',
+      other: '{0}A',
+    ),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mille-ampère',
-          one: '{0} mhille-ampère',
-          two: '{0} mhille-ampère',
-          few: '{0} mille-ampère',
-          other: '{0} mille-ampère',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mille-amp',
-          one: '{0} mhille-ampère',
-          two: '{0} mhille-ampère',
-          few: '{0} mille-ampère',
-          other: '{0} mA',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0}mA',
-          two: '{0}mA',
-          few: '{0}mA',
-          other: '{0}mA',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mille-ampère',
+      one: '{0} mhille-ampère',
+      two: '{0} mhille-ampère',
+      few: '{0} mille-ampère',
+      other: '{0} mille-ampère',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mille-amp',
+      one: '{0} mhille-ampère',
+      two: '{0} mhille-ampère',
+      few: '{0} mille-ampère',
+      other: '{0} mA',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0}mA',
+      two: '{0}mA',
+      few: '{0}mA',
+      other: '{0}mA',
+    ),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ohm',
-          one: '{0} ohm',
-          two: '{0} ohm',
-          few: '{0} ohm',
-          other: '{0} ohm',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ohm',
-          one: '{0} ohm',
-          two: '{0} ohm',
-          few: '{0} ohm',
-          other: '{0} Ω',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ohm',
-          one: '{0}Ω',
-          two: '{0}Ω',
-          few: '{0}Ω',
-          other: '{0}Ω',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ohm',
+      one: '{0} ohm',
+      two: '{0} ohm',
+      few: '{0} ohm',
+      other: '{0} ohm',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ohm',
+      one: '{0} ohm',
+      two: '{0} ohm',
+      few: '{0} ohm',
+      other: '{0} Ω',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ohm',
+      one: '{0}Ω',
+      two: '{0}Ω',
+      few: '{0}Ω',
+      other: '{0}Ω',
+    ),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'volt',
-          one: '{0} volt',
-          two: '{0} volt',
-          few: '{0} volt',
-          other: '{0} volt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'volt',
-          one: '{0} volt',
-          two: '{0} volt',
-          few: '{0} volt',
-          other: '{0} V',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'volt',
-          one: '{0}V',
-          two: '{0}V',
-          few: '{0}V',
-          other: '{0}V',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'volt',
+      one: '{0} volt',
+      two: '{0} volt',
+      few: '{0} volt',
+      other: '{0} volt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'volt',
+      one: '{0} volt',
+      two: '{0} volt',
+      few: '{0} volt',
+      other: '{0} V',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'volt',
+      one: '{0}V',
+      two: '{0}V',
+      few: '{0}V',
+      other: '{0}V',
+    ),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cileacalaraidh',
-          one: '{0} chileacalaraidh',
-          two: '{0} chileacalaraidh',
-          few: '{0} cileacalaraidhean',
-          other: '{0} cileacalaraidh',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} chileacalaraidh',
-          two: '{0} chileacalaraidh',
-          few: '{0} cileacalaraidhean',
-          other: '{0} kcal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0}kcal',
-          two: '{0}kcal',
-          few: '{0}kcal',
-          other: '{0}kcal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cileacalaraidh',
+      one: '{0} chileacalaraidh',
+      two: '{0} chileacalaraidh',
+      few: '{0} cileacalaraidhean',
+      other: '{0} cileacalaraidh',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} chileacalaraidh',
+      two: '{0} chileacalaraidh',
+      few: '{0} cileacalaraidhean',
+      other: '{0} kcal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0}kcal',
+      two: '{0}kcal',
+      few: '{0}kcal',
+      other: '{0}kcal',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'calaraidh',
-          one: '{0} chalaraidh',
-          two: '{0} chalaraidh',
-          few: '{0} calaraidhean',
-          other: '{0} calaraidh',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} chalaraidh',
-          two: '{0} chalaraidh',
-          few: '{0} calaraidhean',
-          other: '{0} cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0}cal',
-          two: '{0}cal',
-          few: '{0}cal',
-          other: '{0}cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'calaraidh',
+      one: '{0} chalaraidh',
+      two: '{0} chalaraidh',
+      few: '{0} calaraidhean',
+      other: '{0} calaraidh',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} chalaraidh',
+      two: '{0} chalaraidh',
+      few: '{0} calaraidhean',
+      other: '{0} cal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0}cal',
+      two: '{0}cal',
+      few: '{0}cal',
+      other: '{0}cal',
+    ),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'calaraidh bidhe',
-          one: '{0} chalaraidh bidhe',
-          two: '{0} chalaraidh bidhe',
-          few: '{0} calaraidhean bidhe',
-          other: '{0} calaraidh bidhe',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Cal',
-          one: '{0} Cal',
-          two: '{0} Cal',
-          few: '{0} Cal',
-          other: '{0} Cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Cal',
-          one: '{0}Cal',
-          two: '{0}Cal',
-          few: '{0}Cal',
-          other: '{0}Cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'calaraidh bidhe',
+      one: '{0} chalaraidh bidhe',
+      two: '{0} chalaraidh bidhe',
+      few: '{0} calaraidhean bidhe',
+      other: '{0} calaraidh bidhe',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Cal',
+      one: '{0} Cal',
+      two: '{0} Cal',
+      few: '{0} Cal',
+      other: '{0} Cal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Cal',
+      one: '{0}Cal',
+      two: '{0}Cal',
+      few: '{0}Cal',
+      other: '{0}Cal',
+    ),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilea-joule',
-          one: '{0} chilea-joule',
-          two: '{0} chilea-joule',
-          few: '{0} cilea-joule',
-          other: '{0} cilea-joule',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cilea-joule',
-          one: '{0} chilea-joule',
-          two: '{0} chilea-joule',
-          few: '{0} cilea-joule',
-          other: '{0} kJ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0}kJ',
-          two: '{0}kJ',
-          few: '{0}kJ',
-          other: '{0}kJ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilea-joule',
+      one: '{0} chilea-joule',
+      two: '{0} chilea-joule',
+      few: '{0} cilea-joule',
+      other: '{0} cilea-joule',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cilea-joule',
+      one: '{0} chilea-joule',
+      two: '{0} chilea-joule',
+      few: '{0} cilea-joule',
+      other: '{0} kJ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kJ',
+      one: '{0}kJ',
+      two: '{0}kJ',
+      few: '{0}kJ',
+      other: '{0}kJ',
+    ),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'joule',
-          one: '{0} joule',
-          two: '{0} joule',
-          few: '{0} joule',
-          other: '{0} joule',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'joule',
-          one: '{0} joule',
-          two: '{0} joule',
-          few: '{0} joule',
-          other: '{0} J',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'joule',
-          one: '{0}J',
-          two: '{0}J',
-          few: '{0}J',
-          other: '{0}J',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'joule',
+      one: '{0} joule',
+      two: '{0} joule',
+      few: '{0} joule',
+      other: '{0} joule',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'joule',
+      one: '{0} joule',
+      two: '{0} joule',
+      few: '{0} joule',
+      other: '{0} J',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'joule',
+      one: '{0}J',
+      two: '{0}J',
+      few: '{0}J',
+      other: '{0}J',
+    ),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilea-watt-uair',
-          one: '{0} chilea-watt-uair',
-          two: '{0} chilea-watt-uair',
-          few: '{0} cilea-watt-uair',
-          other: '{0} cilea-watt-uair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kW-uair',
-          one: '{0} chilea-watt-uair',
-          two: '{0} chilea-watt-uair',
-          few: '{0} cilea-watt-uair',
-          other: '{0} kWh',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0}kWh',
-          two: '{0}kWh',
-          few: '{0}kWh',
-          other: '{0}kWh',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilea-watt-uair',
+      one: '{0} chilea-watt-uair',
+      two: '{0} chilea-watt-uair',
+      few: '{0} cilea-watt-uair',
+      other: '{0} cilea-watt-uair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kW-uair',
+      one: '{0} chilea-watt-uair',
+      two: '{0} chilea-watt-uair',
+      few: '{0} cilea-watt-uair',
+      other: '{0} kWh',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0}kWh',
+      two: '{0}kWh',
+      few: '{0}kWh',
+      other: '{0}kWh',
+    ),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'volt-eleactroin',
-          one: '{0} volt-eleactroin',
-          two: '{0} volt-eleactroin',
-          few: '{0} voltaichean-eleactroin',
-          other: '{0} volt-eleactroin',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'volt-eleactroin',
-          one: '{0} volt-eleactroin',
-          two: '{0} volt-eleactroin',
-          few: '{0} voltaichean-eleactroin',
-          other: '{0} eV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0}eV',
-          two: '{0}eV',
-          few: '{0}eV',
-          other: '{0}eV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'volt-eleactroin',
+      one: '{0} volt-eleactroin',
+      two: '{0} volt-eleactroin',
+      few: '{0} voltaichean-eleactroin',
+      other: '{0} volt-eleactroin',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'volt-eleactroin',
+      one: '{0} volt-eleactroin',
+      two: '{0} volt-eleactroin',
+      few: '{0} voltaichean-eleactroin',
+      other: '{0} eV',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0}eV',
+      two: '{0}eV',
+      few: '{0}eV',
+      other: '{0}eV',
+    ),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'aonad-teasa Breatannach',
-          one: '{0} aonad-teasa Breatannach',
-          two: '{0} aonad-teasa Breatannach',
-          few: '{0} aonadan-teasa Breatannach',
-          other: '{0} aonad-teasa Breatannach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'aonad-teasa Breatannach',
-          one: '{0} aonad-teasa Breatannach',
-          two: '{0} aonad-teasa Breatannach',
-          few: '{0} aonadan-teasa Breatannach',
-          other: '{0} Btu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0}Btu',
-          two: '{0}Btu',
-          few: '{0}Btu',
-          other: '{0}Btu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'aonad-teasa Breatannach',
+      one: '{0} aonad-teasa Breatannach',
+      two: '{0} aonad-teasa Breatannach',
+      few: '{0} aonadan-teasa Breatannach',
+      other: '{0} aonad-teasa Breatannach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'aonad-teasa Breatannach',
+      one: '{0} aonad-teasa Breatannach',
+      two: '{0} aonad-teasa Breatannach',
+      few: '{0} aonadan-teasa Breatannach',
+      other: '{0} Btu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Btu',
+      one: '{0}Btu',
+      two: '{0}Btu',
+      few: '{0}Btu',
+      other: '{0}Btu',
+    ),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'aonad-teasa nan SA',
-          one: '{0} aonad-teasa nan SA',
-          two: '{0} aonad-teasa nan SA',
-          few: '{0} aonadan-teasa nan SA',
-          other: '{0} aonad-teasa nan SA',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'aonad-teasa nan SA',
-          one: '{0} aonad-teasa nan SA',
-          two: '{0} aonad-teasa nan SA',
-          few: '{0} aonadan-teasa nan SA',
-          other: '{0} US therm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'US therm',
-          one: '{0}US therm',
-          two: '{0}US therm',
-          few: '{0}US therm',
-          other: '{0}US therm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'aonad-teasa nan SA',
+      one: '{0} aonad-teasa nan SA',
+      two: '{0} aonad-teasa nan SA',
+      few: '{0} aonadan-teasa nan SA',
+      other: '{0} aonad-teasa nan SA',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'aonad-teasa nan SA',
+      one: '{0} aonad-teasa nan SA',
+      two: '{0} aonad-teasa nan SA',
+      few: '{0} aonadan-teasa nan SA',
+      other: '{0} US therm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'US therm',
+      one: '{0}US therm',
+      two: '{0}US therm',
+      few: '{0}US therm',
+      other: '{0}US therm',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'punnd de dh’fhorsa',
-          one: '{0} phunnd de dh’fhorsa',
-          two: '{0} phunnd de dh’fhorsa',
-          few: '{0} puinnd de dh’fhorsa',
-          other: '{0} punnd de dh’fhorsa',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'punnd-fhorsa',
-          one: '{0} phunnd de dh’fhorsa',
-          two: '{0} phunnd de dh’fhorsa',
-          few: '{0} puinnd de dh’fhorsa',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0}lbf',
-          two: '{0}lbf',
-          few: '{0}lbf',
-          other: '{0}lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'punnd de dh’fhorsa',
+      one: '{0} phunnd de dh’fhorsa',
+      two: '{0} phunnd de dh’fhorsa',
+      few: '{0} puinnd de dh’fhorsa',
+      other: '{0} punnd de dh’fhorsa',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'punnd-fhorsa',
+      one: '{0} phunnd de dh’fhorsa',
+      two: '{0} phunnd de dh’fhorsa',
+      few: '{0} puinnd de dh’fhorsa',
+      other: '{0} lbf',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0}lbf',
+      two: '{0}lbf',
+      few: '{0}lbf',
+      other: '{0}lbf',
+    ),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'newton',
-          one: '{0} newton',
-          two: '{0} newton',
-          few: '{0} newtonaichean',
-          other: '{0} newton',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'newton',
-          one: '{0} newton',
-          two: '{0} newton',
-          few: '{0} newtonaichean',
-          other: '{0} N',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0}N',
-          two: '{0}N',
-          few: '{0}N',
-          other: '{0}N',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'newton',
+      one: '{0} newton',
+      two: '{0} newton',
+      few: '{0} newtonaichean',
+      other: '{0} newton',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'newton',
+      one: '{0} newton',
+      two: '{0} newton',
+      few: '{0} newtonaichean',
+      other: '{0} N',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'N',
+      one: '{0}N',
+      two: '{0}N',
+      few: '{0}N',
+      other: '{0}N',
+    ),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilea-watt-uair sa cheud chilemeatair',
-          one: '{0} chilea-watt-uair sa cheud chilemeatair',
-          two: '{0} chilea-watt-uair sa cheud chilemeatair',
-          few: '{0} cilea-watt-uairean sa cheud chilemeatair',
-          other: '{0} cilea-watt-uair sa cheud chilemeatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} chilea-watt-uair sa cheud chilemeatair',
-          two: '{0} chilea-watt-uair sa cheud chilemeatair',
-          few: '{0} cilea-watt-uairean sa cheud chilemeatair',
-          other: '{0} kWh/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0}kWh/100km',
-          two: '{0}kWh/100km',
-          few: '{0}kWh/100km',
-          other: '{0}kWh/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilea-watt-uair sa cheud chilemeatair',
+      one: '{0} chilea-watt-uair sa cheud chilemeatair',
+      two: '{0} chilea-watt-uair sa cheud chilemeatair',
+      few: '{0} cilea-watt-uairean sa cheud chilemeatair',
+      other: '{0} cilea-watt-uair sa cheud chilemeatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} chilea-watt-uair sa cheud chilemeatair',
+      two: '{0} chilea-watt-uair sa cheud chilemeatair',
+      few: '{0} cilea-watt-uairean sa cheud chilemeatair',
+      other: '{0} kWh/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0}kWh/100km',
+      two: '{0}kWh/100km',
+      few: '{0}kWh/100km',
+      other: '{0}kWh/100km',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'giga-hertz',
-          one: '{0} ghiga-hertz',
-          two: '{0} ghiga-hertz',
-          few: '{0} giga-hertz',
-          other: '{0} giga-hertz',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} ghiga-hertz',
-          two: '{0} ghiga-hertz',
-          few: '{0} giga-hertz',
-          other: '{0} GHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0}GHz',
-          two: '{0}GHz',
-          few: '{0}GHz',
-          other: '{0}GHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'giga-hertz',
+      one: '{0} ghiga-hertz',
+      two: '{0} ghiga-hertz',
+      few: '{0} giga-hertz',
+      other: '{0} giga-hertz',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} ghiga-hertz',
+      two: '{0} ghiga-hertz',
+      few: '{0} giga-hertz',
+      other: '{0} GHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0}GHz',
+      two: '{0}GHz',
+      few: '{0}GHz',
+      other: '{0}GHz',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meaga-hertz',
-          one: '{0} mheaga-hertz',
-          two: '{0} mheaga-hertz',
-          few: '{0} meaga-hertz',
-          other: '{0} meaga-hertz',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} mheaga-hertz',
-          two: '{0} mheaga-hertz',
-          few: '{0} meaga-hertz',
-          other: '{0} MHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0}MHz',
-          two: '{0}MHz',
-          few: '{0}MHz',
-          other: '{0}MHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meaga-hertz',
+      one: '{0} mheaga-hertz',
+      two: '{0} mheaga-hertz',
+      few: '{0} meaga-hertz',
+      other: '{0} meaga-hertz',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} mheaga-hertz',
+      two: '{0} mheaga-hertz',
+      few: '{0} meaga-hertz',
+      other: '{0} MHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0}MHz',
+      two: '{0}MHz',
+      few: '{0}MHz',
+      other: '{0}MHz',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cile-hertz',
-          one: '{0} chile-hertz',
-          two: '{0} chile-hertz',
-          few: '{0} cile-hertz',
-          other: '{0} cile-hertz',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} chile-hertz',
-          two: '{0} chile-hertz',
-          few: '{0} cile-hertz',
-          other: '{0} kHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0}kHz',
-          two: '{0}kHz',
-          few: '{0}kHz',
-          other: '{0}kHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cile-hertz',
+      one: '{0} chile-hertz',
+      two: '{0} chile-hertz',
+      few: '{0} cile-hertz',
+      other: '{0} cile-hertz',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} chile-hertz',
+      two: '{0} chile-hertz',
+      few: '{0} cile-hertz',
+      other: '{0} kHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0}kHz',
+      two: '{0}kHz',
+      few: '{0}kHz',
+      other: '{0}kHz',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hertz',
-          one: '{0} hertz',
-          two: '{0} hertz',
-          few: '{0} hertz',
-          other: '{0} hertz',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} hertz',
-          two: '{0} hertz',
-          few: '{0} hertz',
-          other: '{0} Hz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0}Hz',
-          two: '{0}Hz',
-          few: '{0}Hz',
-          other: '{0}Hz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hertz',
+      one: '{0} hertz',
+      two: '{0} hertz',
+      few: '{0} hertz',
+      other: '{0} hertz',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Hz',
+      one: '{0} hertz',
+      two: '{0} hertz',
+      few: '{0} hertz',
+      other: '{0} Hz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Hz',
+      one: '{0}Hz',
+      two: '{0}Hz',
+      few: '{0}Hz',
+      other: '{0}Hz',
+    ),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'em chlò-ghrafach',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0}em',
-          two: '{0}em',
-          few: '{0}em',
-          other: '{0}em',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'em chlò-ghrafach',
+      one: '{0} em',
+      other: '{0} em',
+    ),
+    short: UnitCountPattern(_locale, 'em', one: '{0} em', other: '{0} em'),
+    narrow: UnitCountPattern(
+      _locale,
+      'em',
+      one: '{0}em',
+      two: '{0}em',
+      few: '{0}em',
+      other: '{0}em',
+    ),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'piogsail',
-          one: '{0} phiogsail',
-          two: '{0} phiogsail',
-          few: '{0} piogsailean',
-          other: '{0} piogsail',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'piogsail',
-          one: '{0} phiogsail',
-          two: '{0} phiogsail',
-          few: '{0} piogsailean',
-          other: '{0} px',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'px',
-          one: '{0}px',
-          two: '{0}px',
-          few: '{0}px',
-          other: '{0}px',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'piogsail',
+      one: '{0} phiogsail',
+      two: '{0} phiogsail',
+      few: '{0} piogsailean',
+      other: '{0} piogsail',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'piogsail',
+      one: '{0} phiogsail',
+      two: '{0} phiogsail',
+      few: '{0} piogsailean',
+      other: '{0} px',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'px',
+      one: '{0}px',
+      two: '{0}px',
+      few: '{0}px',
+      other: '{0}px',
+    ),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meaga-piogsail',
-          one: '{0} mheaga-piogsail',
-          two: '{0} mheaga-piogsail',
-          few: '{0} meaga-piogsailean',
-          other: '{0} meaga-piogsail',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'meaga-piogsail',
-          one: '{0} mheaga-piogsail',
-          two: '{0} mheaga-piogsail',
-          few: '{0} meaga-piogsailean',
-          other: '{0} MP',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MP',
-          one: '{0}MP',
-          two: '{0}MP',
-          few: '{0}MP',
-          other: '{0}MP',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meaga-piogsail',
+      one: '{0} mheaga-piogsail',
+      two: '{0} mheaga-piogsail',
+      few: '{0} meaga-piogsailean',
+      other: '{0} meaga-piogsail',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'meaga-piogsail',
+      one: '{0} mheaga-piogsail',
+      two: '{0} mheaga-piogsail',
+      few: '{0} meaga-piogsailean',
+      other: '{0} MP',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MP',
+      one: '{0}MP',
+      two: '{0}MP',
+      few: '{0}MP',
+      other: '{0}MP',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'piogsail sa cheudameatair',
-          one: '{0} phiogsail sa cheudameatair',
-          two: '{0} phiogsail sa cheudameatair',
-          few: '{0} piogsailean sa cheudameatair',
-          other: '{0} piogsail sa cheudameatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} phiogsail sa cheudameatair',
-          two: '{0} phiogsail sa cheudameatair',
-          few: '{0} piogsailean sa cheudameatair',
-          other: '{0} ppcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0}ppcm',
-          two: '{0}ppcm',
-          few: '{0}ppcm',
-          other: '{0}ppcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'piogsail sa cheudameatair',
+      one: '{0} phiogsail sa cheudameatair',
+      two: '{0} phiogsail sa cheudameatair',
+      few: '{0} piogsailean sa cheudameatair',
+      other: '{0} piogsail sa cheudameatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} phiogsail sa cheudameatair',
+      two: '{0} phiogsail sa cheudameatair',
+      few: '{0} piogsailean sa cheudameatair',
+      other: '{0} ppcm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0}ppcm',
+      two: '{0}ppcm',
+      few: '{0}ppcm',
+      other: '{0}ppcm',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'piogsail san òirleach',
-          one: '{0} phiogsail san òirleach',
-          two: '{0} phiogsail san òirleach',
-          few: '{0} piogsailean san òirleach',
-          other: '{0} piogsail san òirleach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0} phiogsail san òirleach',
-          two: '{0} phiogsail san òirleach',
-          few: '{0} piogsailean san òirleach',
-          other: '{0} ppi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0}ppi',
-          two: '{0}ppi',
-          few: '{0}ppi',
-          other: '{0}ppi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'piogsail san òirleach',
+      one: '{0} phiogsail san òirleach',
+      two: '{0} phiogsail san òirleach',
+      few: '{0} piogsailean san òirleach',
+      other: '{0} piogsail san òirleach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppi',
+      one: '{0} phiogsail san òirleach',
+      two: '{0} phiogsail san òirleach',
+      few: '{0} piogsailean san òirleach',
+      other: '{0} ppi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppi',
+      one: '{0}ppi',
+      two: '{0}ppi',
+      few: '{0}ppi',
+      other: '{0}ppi',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dotag sa cheudameatair',
-          one: '{0} dotag sa cheudameatair',
-          two: '{0} dhotag sa cheudameatair',
-          few: '{0} dotagan sa cheudameatair',
-          other: '{0} dotag sa cheudameatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: '{0} dpcm',
-          two: '{0} dpcm',
-          few: '{0} dpcm',
-          other: '{0} dpcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: '{0}dpcm',
-          two: '{0}dpcm',
-          few: '{0}dpcm',
-          other: '{0}dpcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dotag sa cheudameatair',
+      one: '{0} dotag sa cheudameatair',
+      two: '{0} dhotag sa cheudameatair',
+      few: '{0} dotagan sa cheudameatair',
+      other: '{0} dotag sa cheudameatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dpcm',
+      one: '{0} dpcm',
+      two: '{0} dpcm',
+      few: '{0} dpcm',
+      other: '{0} dpcm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dpcm',
+      one: '{0}dpcm',
+      two: '{0}dpcm',
+      few: '{0}dpcm',
+      other: '{0}dpcm',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dotag san òirleach',
-          one: '{0} dotag san òirleach',
-          two: '{0} dhotag san òirleach',
-          few: '{0} dotagan san òirleach',
-          other: '{0} dotag san òirleach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: '{0} dpi',
-          two: '{0} dpi',
-          few: '{0} dpi',
-          other: '{0} dpi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: '{0}dpi',
-          two: '{0}dpi',
-          few: '{0}dpi',
-          other: '{0}dpi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dotag san òirleach',
+      one: '{0} dotag san òirleach',
+      two: '{0} dhotag san òirleach',
+      few: '{0} dotagan san òirleach',
+      other: '{0} dotag san òirleach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dpi',
+      one: '{0} dpi',
+      two: '{0} dpi',
+      few: '{0} dpi',
+      other: '{0} dpi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dpi',
+      one: '{0}dpi',
+      two: '{0}dpi',
+      few: '{0}dpi',
+      other: '{0}dpi',
+    ),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dotag',
-          one: '{0} dotag',
-          two: '{0} dhotag',
-          few: '{0} dotagan',
-          other: '{0} dotag',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dotag',
-          one: '{0} dot',
-          two: '{0} dhot',
-          few: '{0} dot',
-          other: '{0} dot',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dot',
-          one: '{0}dot',
-          two: '{0}dhot',
-          few: '{0}dot',
-          other: '{0}dot',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dotag',
+      one: '{0} dotag',
+      two: '{0} dhotag',
+      few: '{0} dotagan',
+      other: '{0} dotag',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dotag',
+      one: '{0} dot',
+      two: '{0} dhot',
+      few: '{0} dot',
+      other: '{0} dot',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dot',
+      one: '{0}dot',
+      two: '{0}dhot',
+      few: '{0}dot',
+      other: '{0}dot',
+    ),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'rèideas-talmhainn',
-          one: '{0} rèideas-talmhainn',
-          two: '{0} rèideas-talmhainn',
-          few: '{0} rèideasan-talmhainn',
-          other: '{0} rèideas-talmhainn',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} rèideas-talmhainn',
-          two: '{0} rèideas-talmhainn',
-          few: '{0} rèideasan-talmhainn',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0}R⊕',
-          two: '{0}R⊕',
-          few: '{0}R⊕',
-          other: '{0}R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'rèideas-talmhainn',
+      one: '{0} rèideas-talmhainn',
+      two: '{0} rèideas-talmhainn',
+      few: '{0} rèideasan-talmhainn',
+      other: '{0} rèideas-talmhainn',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} rèideas-talmhainn',
+      two: '{0} rèideas-talmhainn',
+      few: '{0} rèideasan-talmhainn',
+      other: '{0} R⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0}R⊕',
+      two: '{0}R⊕',
+      few: '{0}R⊕',
+      other: '{0}R⊕',
+    ),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilemeatair',
-          one: '{0} chilemeatair',
-          two: '{0} chilemeatair',
-          few: '{0} cilemeatairean',
-          other: '{0} cilemeatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0} chilemeatair',
-          two: '{0} chilemeatair',
-          few: '{0} cilemeatairean',
-          other: '{0} km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0}km',
-          two: '{0}km',
-          few: '{0}km',
-          other: '{0}km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilemeatair',
+      one: '{0} chilemeatair',
+      two: '{0} chilemeatair',
+      few: '{0} cilemeatairean',
+      other: '{0} cilemeatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0} chilemeatair',
+      two: '{0} chilemeatair',
+      few: '{0} cilemeatairean',
+      other: '{0} km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0}km',
+      two: '{0}km',
+      few: '{0}km',
+      other: '{0}km',
+    ),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meatair',
-          one: '{0} mheatair',
-          two: '{0} mheatair',
-          few: '{0} meatairean',
-          other: '{0} meatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'meatair',
-          one: '{0} mheatair',
-          two: '{0} mheatair',
-          few: '{0} meatairean',
-          other: '{0} m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'meatair',
-          one: '{0}m',
-          two: '{0}m',
-          few: '{0}m',
-          other: '{0}m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meatair',
+      one: '{0} mheatair',
+      two: '{0} mheatair',
+      few: '{0} meatairean',
+      other: '{0} meatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'meatair',
+      one: '{0} mheatair',
+      two: '{0} mheatair',
+      few: '{0} meatairean',
+      other: '{0} m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'meatair',
+      one: '{0}m',
+      two: '{0}m',
+      few: '{0}m',
+      other: '{0}m',
+    ),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'deicheamh-meatair',
-          one: '{0} deicheamh-meatair',
-          two: '{0} dheicheamh-meatair',
-          few: '{0} deicheamh-meatairean',
-          other: '{0} deicheamh-meatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0} deicheamh-meatair',
-          two: '{0} dheicheamh-meatair',
-          few: '{0} deicheamh-meatairean',
-          other: '{0} dm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0}dm',
-          two: '{0}dm',
-          few: '{0}dm',
-          other: '{0}dm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'deicheamh-meatair',
+      one: '{0} deicheamh-meatair',
+      two: '{0} dheicheamh-meatair',
+      few: '{0} deicheamh-meatairean',
+      other: '{0} deicheamh-meatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0} deicheamh-meatair',
+      two: '{0} dheicheamh-meatair',
+      few: '{0} deicheamh-meatairean',
+      other: '{0} dm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0}dm',
+      two: '{0}dm',
+      few: '{0}dm',
+      other: '{0}dm',
+    ),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceudameatair',
-          one: '{0} cheudameatair',
-          two: '{0} cheudameatair',
-          few: '{0} ceudameatairean',
-          other: '{0} ceudameatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0} cheudameatair',
-          two: '{0} cheudameatair',
-          few: '{0} ceudameatairean',
-          other: '{0} cm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0}cm',
-          two: '{0}cm',
-          few: '{0}cm',
-          other: '{0}cm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceudameatair',
+      one: '{0} cheudameatair',
+      two: '{0} cheudameatair',
+      few: '{0} ceudameatairean',
+      other: '{0} ceudameatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0} cheudameatair',
+      two: '{0} cheudameatair',
+      few: '{0} ceudameatairean',
+      other: '{0} cm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0}cm',
+      two: '{0}cm',
+      few: '{0}cm',
+      other: '{0}cm',
+    ),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mili-meatair',
-          one: '{0} mhili-meatair',
-          two: '{0} mhili-meatair',
-          few: '{0} mili-meatairean',
-          other: '{0} mili-meatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0} mhili-meatair',
-          two: '{0} mhili-meatair',
-          few: '{0} mili-meatairean',
-          other: '{0} mm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0}mm',
-          two: '{0}mm',
-          few: '{0}mm',
-          other: '{0}mm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mili-meatair',
+      one: '{0} mhili-meatair',
+      two: '{0} mhili-meatair',
+      few: '{0} mili-meatairean',
+      other: '{0} mili-meatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0} mhili-meatair',
+      two: '{0} mhili-meatair',
+      few: '{0} mili-meatairean',
+      other: '{0} mm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0}mm',
+      two: '{0}mm',
+      few: '{0}mm',
+      other: '{0}mm',
+    ),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'micreo-meatair',
-          one: '{0} mhicreo-meatair',
-          two: '{0} mhicreo-meatair',
-          few: '{0} micreo-meatairean',
-          other: '{0} micreo-meatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μ-meatair',
-          one: '{0} mhicreo-meatair',
-          two: '{0} mhicreo-meatair',
-          few: '{0} micreo-meatairean',
-          other: '{0} μm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0}μm',
-          two: '{0}μm',
-          few: '{0}μm',
-          other: '{0}μm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'micreo-meatair',
+      one: '{0} mhicreo-meatair',
+      two: '{0} mhicreo-meatair',
+      few: '{0} micreo-meatairean',
+      other: '{0} micreo-meatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μ-meatair',
+      one: '{0} mhicreo-meatair',
+      two: '{0} mhicreo-meatair',
+      few: '{0} micreo-meatairean',
+      other: '{0} μm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0}μm',
+      two: '{0}μm',
+      few: '{0}μm',
+      other: '{0}μm',
+    ),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nano-meatair',
-          one: '{0} nano-meatair',
-          two: '{0} nano-meatair',
-          few: '{0} nano-meatairean',
-          other: '{0} nano-meatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} nano-meatair',
-          two: '{0} nano-meatair',
-          few: '{0} nano-meatairean',
-          other: '{0} nm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0}nm',
-          two: '{0}nm',
-          few: '{0}nm',
-          other: '{0}nm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nano-meatair',
+      one: '{0} nano-meatair',
+      two: '{0} nano-meatair',
+      few: '{0} nano-meatairean',
+      other: '{0} nano-meatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} nano-meatair',
+      two: '{0} nano-meatair',
+      few: '{0} nano-meatairean',
+      other: '{0} nm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0}nm',
+      two: '{0}nm',
+      few: '{0}nm',
+      other: '{0}nm',
+    ),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'piceo-meatair',
-          one: '{0} phiceo-meatair',
-          two: '{0} phiceo-meatair',
-          few: '{0} piceo-meatairean',
-          other: '{0} piceo-meatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} phiceo-meatair',
-          two: '{0} phiceo-meatair',
-          few: '{0} piceo-meatairean',
-          other: '{0} pm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0}pm',
-          two: '{0}pm',
-          few: '{0}pm',
-          other: '{0}pm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'piceo-meatair',
+      one: '{0} phiceo-meatair',
+      two: '{0} phiceo-meatair',
+      few: '{0} piceo-meatairean',
+      other: '{0} piceo-meatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} phiceo-meatair',
+      two: '{0} phiceo-meatair',
+      few: '{0} piceo-meatairean',
+      other: '{0} pm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0}pm',
+      two: '{0}pm',
+      few: '{0}pm',
+      other: '{0}pm',
+    ),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle',
-          one: '{0} mhìle',
-          two: '{0} mhìle',
-          few: '{0} mìltean',
-          other: '{0} mìle',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mìle',
-          one: '{0} mì',
-          two: '{0} mì',
-          few: '{0} mì',
-          other: '{0} mì',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mì',
-          one: '{0}mì',
-          two: '{0}mì',
-          few: '{0}mì',
-          other: '{0}mì',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle',
+      one: '{0} mhìle',
+      two: '{0} mhìle',
+      few: '{0} mìltean',
+      other: '{0} mìle',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mìle',
+      one: '{0} mì',
+      two: '{0} mì',
+      few: '{0} mì',
+      other: '{0} mì',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mì',
+      one: '{0}mì',
+      two: '{0}mì',
+      few: '{0}mì',
+      other: '{0}mì',
+    ),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'slat',
-          one: '{0} slat',
-          two: '{0} shlat',
-          few: '{0} slatan',
-          other: '{0} slat',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'slat',
-          one: '{0} slat',
-          two: '{0} shlat',
-          few: '{0} slat',
-          other: '{0} slat',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'slat',
-          one: '{0}yd',
-          two: '{0}yd',
-          few: '{0}yd',
-          other: '{0}yd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'slat',
+      one: '{0} slat',
+      two: '{0} shlat',
+      few: '{0} slatan',
+      other: '{0} slat',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'slat',
+      one: '{0} slat',
+      two: '{0} shlat',
+      few: '{0} slat',
+      other: '{0} slat',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'slat',
+      one: '{0}yd',
+      two: '{0}yd',
+      few: '{0}yd',
+      other: '{0}yd',
+    ),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'troigh',
-          one: '{0} troigh',
-          two: '{0} throigh',
-          few: '{0} troighean',
-          other: '{0} troigh',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'troigh',
-          one: '{0} troigh',
-          two: '{0} throigh',
-          few: '{0} troigh',
-          other: '{0} troigh',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'troigh',
-          one: '{0}′',
-          two: '{0}′',
-          few: '{0}′',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'troigh',
+      one: '{0} troigh',
+      two: '{0} throigh',
+      few: '{0} troighean',
+      other: '{0} troigh',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'troigh',
+      one: '{0} troigh',
+      two: '{0} throigh',
+      few: '{0} troigh',
+      other: '{0} troigh',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'troigh',
+      one: '{0}′',
+      two: '{0}′',
+      few: '{0}′',
+      other: '{0}′',
+    ),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'òirleach',
-          one: '{0} òirleach',
-          two: '{0} òirleach',
-          few: '{0} òirlich',
-          other: '{0} òirleach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'òirleach',
-          one: '{0} òirl',
-          two: '{0} òirl',
-          few: '{0} òirl',
-          other: '{0} òirl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'òirl',
-          one: '{0}″',
-          two: '{0}″',
-          few: '{0}″',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'òirleach',
+      one: '{0} òirleach',
+      two: '{0} òirleach',
+      few: '{0} òirlich',
+      other: '{0} òirleach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'òirleach',
+      one: '{0} òirl',
+      two: '{0} òirl',
+      few: '{0} òirl',
+      other: '{0} òirl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'òirl',
+      one: '{0}″',
+      two: '{0}″',
+      few: '{0}″',
+      other: '{0}″',
+    ),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'parsec',
-          one: '{0} pharsec',
-          two: '{0} pharsec',
-          few: '{0} parsec',
-          other: '{0} parsec',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'parsec',
-          one: '{0} pharsec',
-          two: '{0} pharsec',
-          few: '{0} parsec',
-          other: '{0} pc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'parsec',
-          one: '{0}pc',
-          two: '{0}pc',
-          few: '{0}pc',
-          other: '{0}pc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'parsec',
+      one: '{0} pharsec',
+      two: '{0} pharsec',
+      few: '{0} parsec',
+      other: '{0} parsec',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'parsec',
+      one: '{0} pharsec',
+      two: '{0} pharsec',
+      few: '{0} parsec',
+      other: '{0} pc',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'parsec',
+      one: '{0}pc',
+      two: '{0}pc',
+      few: '{0}pc',
+      other: '{0}pc',
+    ),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bliadhna solais',
-          one: '{0} bhliadhna solais',
-          two: '{0} bhliadhna solais',
-          few: '{0} bliadhnaichean solais',
-          other: '{0} bliadhna solais',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ly',
-          one: '{0} bhliadhna solais',
-          two: '{0} bhliadhna solais',
-          few: '{0} bliadhnaichean solais',
-          other: '{0} ly',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ly',
-          one: '{0}ly',
-          two: '{0}ly',
-          few: '{0}ly',
-          other: '{0}ly',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bliadhna solais',
+      one: '{0} bhliadhna solais',
+      two: '{0} bhliadhna solais',
+      few: '{0} bliadhnaichean solais',
+      other: '{0} bliadhna solais',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ly',
+      one: '{0} bhliadhna solais',
+      two: '{0} bhliadhna solais',
+      few: '{0} bliadhnaichean solais',
+      other: '{0} ly',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ly',
+      one: '{0}ly',
+      two: '{0}ly',
+      few: '{0}ly',
+      other: '{0}ly',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'aonad reul-eòlach',
-          one: '{0} aonad reul-eòlach',
-          two: '{0} aonad reul-eòlach',
-          few: '{0} aonadan reul-eòlach',
-          other: '{0} aonad reul-eòlach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'au',
-          one: '{0} aonad reul-eòlach',
-          two: '{0} aonad reul-eòlach',
-          few: '{0} aonadan reul-eòlach',
-          other: '{0} au',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'au',
-          one: '{0}au',
-          two: '{0}au',
-          few: '{0}au',
-          other: '{0}au',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'aonad reul-eòlach',
+      one: '{0} aonad reul-eòlach',
+      two: '{0} aonad reul-eòlach',
+      few: '{0} aonadan reul-eòlach',
+      other: '{0} aonad reul-eòlach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'au',
+      one: '{0} aonad reul-eòlach',
+      two: '{0} aonad reul-eòlach',
+      few: '{0} aonadan reul-eòlach',
+      other: '{0} au',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'au',
+      one: '{0}au',
+      two: '{0}au',
+      few: '{0}au',
+      other: '{0}au',
+    ),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'stàid Shasannach',
-          one: '{0} stàid Shasannach',
-          two: '{0} stàid Shasannach',
-          few: '{0} stàidean Sasannach',
-          other: '{0} stàid Shasannach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'stàid',
-          one: '{0} stàid',
-          two: '{0} stàid',
-          few: '{0} stàid',
-          other: '{0} stàid',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'stàid',
-          one: '{0}stàid',
-          two: '{0}stàid',
-          few: '{0}stàid',
-          other: '{0}stàid',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'stàid Shasannach',
+      one: '{0} stàid Shasannach',
+      two: '{0} stàid Shasannach',
+      few: '{0} stàidean Sasannach',
+      other: '{0} stàid Shasannach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'stàid',
+      one: '{0} stàid',
+      two: '{0} stàid',
+      few: '{0} stàid',
+      other: '{0} stàid',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'stàid',
+      one: '{0}stàid',
+      two: '{0}stàid',
+      few: '{0}stàid',
+      other: '{0}stàid',
+    ),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'aitheamh',
-          one: '{0} aitheamh',
-          two: '{0} aitheamh',
-          few: '{0} aitheamhan',
-          other: '{0} aitheamh',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'aitheamh',
-          one: '{0} aith',
-          two: '{0} aith',
-          few: '{0} aith',
-          other: '{0} aith',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'aitheamh',
-          one: '{0}aith',
-          two: '{0}aith',
-          few: '{0}aith',
-          other: '{0}aith',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'aitheamh',
+      one: '{0} aitheamh',
+      two: '{0} aitheamh',
+      few: '{0} aitheamhan',
+      other: '{0} aitheamh',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'aitheamh',
+      one: '{0} aith',
+      two: '{0} aith',
+      few: '{0} aith',
+      other: '{0} aith',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'aitheamh',
+      one: '{0}aith',
+      two: '{0}aith',
+      few: '{0}aith',
+      other: '{0}aith',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle mara',
-          one: '{0} mhìle mara',
-          two: '{0} mhìle mara',
-          few: '{0} mìltean mara',
-          other: '{0} mìle mara',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nmi',
-          one: '{0} mhìle mara',
-          two: '{0} mhìle mara',
-          few: '{0} mìltean mara',
-          other: '{0} nmi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nmi',
-          one: '{0}nmi',
-          two: '{0}nmi',
-          few: '{0}nmi',
-          other: '{0}nmi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle mara',
+      one: '{0} mhìle mara',
+      two: '{0} mhìle mara',
+      few: '{0} mìltean mara',
+      other: '{0} mìle mara',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nmi',
+      one: '{0} mhìle mara',
+      two: '{0} mhìle mara',
+      few: '{0} mìltean mara',
+      other: '{0} nmi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nmi',
+      one: '{0}nmi',
+      two: '{0}nmi',
+      few: '{0}nmi',
+      other: '{0}nmi',
+    ),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle Lochlannach',
-          one: '{0} mhìle Lochlannach',
-          two: '{0} mhìle Lochlannach',
-          few: '{0} mìltean Lochlannach',
-          other: '{0} mìle Lochlannach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'smi',
-          one: '{0} mhìle Lochlannach',
-          two: '{0} mhìle Lochlannach',
-          few: '{0} mìltean Lochlannach',
-          other: '{0} smi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'smi',
-          one: '{0}smi',
-          two: '{0}smi',
-          few: '{0}smi',
-          other: '{0}smi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle Lochlannach',
+      one: '{0} mhìle Lochlannach',
+      two: '{0} mhìle Lochlannach',
+      few: '{0} mìltean Lochlannach',
+      other: '{0} mìle Lochlannach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'smi',
+      one: '{0} mhìle Lochlannach',
+      two: '{0} mhìle Lochlannach',
+      few: '{0} mìltean Lochlannach',
+      other: '{0} smi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'smi',
+      one: '{0}smi',
+      two: '{0}smi',
+      few: '{0}smi',
+      other: '{0}smi',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'puing',
-          one: '{0} phuing',
-          two: '{0} phuing',
-          few: '{0} puingean',
-          other: '{0} puing',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'puing',
-          one: '{0} phuing',
-          two: '{0} phuing',
-          few: '{0} puingean',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0}pt',
-          two: '{0}pt',
-          few: '{0}pt',
-          other: '{0}pt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'puing',
+      one: '{0} phuing',
+      two: '{0} phuing',
+      few: '{0} puingean',
+      other: '{0} puing',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'puing',
+      one: '{0} phuing',
+      two: '{0} phuing',
+      few: '{0} puingean',
+      other: '{0} pt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pt',
+      one: '{0}pt',
+      two: '{0}pt',
+      few: '{0}pt',
+      other: '{0}pt',
+    ),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'rèideas-grèine',
-          one: '{0} rèideas-grèine',
-          two: '{0} rèideas-grèine',
-          few: '{0} rèideasan-grèine',
-          other: '{0} rèideas-grèine',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'rèideas-grèine',
-          one: '{0} rèideas-grèine',
-          two: '{0} rèideas-grèine',
-          few: '{0} rèideasan-grèine',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0}R☉',
-          two: '{0}R☉',
-          few: '{0}R☉',
-          other: '{0}R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'rèideas-grèine',
+      one: '{0} rèideas-grèine',
+      two: '{0} rèideas-grèine',
+      few: '{0} rèideasan-grèine',
+      other: '{0} rèideas-grèine',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'rèideas-grèine',
+      one: '{0} rèideas-grèine',
+      two: '{0} rèideas-grèine',
+      few: '{0} rèideasan-grèine',
+      other: '{0} R☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R☉',
+      one: '{0}R☉',
+      two: '{0}R☉',
+      few: '{0}R☉',
+      other: '{0}R☉',
+    ),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lux',
-          one: '{0} lux',
-          two: '{0} lux',
-          few: '{0} lux',
-          other: '{0} lux',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lux',
-          one: '{0} lux',
-          two: '{0} lux',
-          few: '{0} lux',
-          other: '{0} lx',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lux',
-          one: '{0}lx',
-          two: '{0}lx',
-          few: '{0}lx',
-          other: '{0}lx',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lux',
+      one: '{0} lux',
+      two: '{0} lux',
+      few: '{0} lux',
+      other: '{0} lux',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lux',
+      one: '{0} lux',
+      two: '{0} lux',
+      few: '{0} lux',
+      other: '{0} lx',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lux',
+      one: '{0}lx',
+      two: '{0}lx',
+      few: '{0}lx',
+      other: '{0}lx',
+    ),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'candela',
-          one: '{0} chandela',
-          two: '{0} chandela',
-          few: '{0} candela',
-          other: '{0} candela',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'candela',
-          one: '{0} chandela',
-          two: '{0} chandela',
-          few: '{0} candela',
-          other: '{0} cd',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cd',
-          one: '{0}cd',
-          two: '{0}cd',
-          few: '{0}cd',
-          other: '{0}cd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'candela',
+      one: '{0} chandela',
+      two: '{0} chandela',
+      few: '{0} candela',
+      other: '{0} candela',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'candela',
+      one: '{0} chandela',
+      two: '{0} chandela',
+      few: '{0} candela',
+      other: '{0} cd',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cd',
+      one: '{0}cd',
+      two: '{0}cd',
+      few: '{0}cd',
+      other: '{0}cd',
+    ),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lumen',
-          one: '{0} lumen',
-          two: '{0} lumen',
-          few: '{0} lumen',
-          other: '{0} lumen',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lumen',
-          one: '{0} lumen',
-          two: '{0} lumen',
-          few: '{0} lumen',
-          other: '{0} lm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0}lm',
-          two: '{0}lm',
-          few: '{0}lm',
-          other: '{0}lm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lumen',
+      one: '{0} lumen',
+      two: '{0} lumen',
+      few: '{0} lumen',
+      other: '{0} lumen',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lumen',
+      one: '{0} lumen',
+      two: '{0} lumen',
+      few: '{0} lumen',
+      other: '{0} lm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lm',
+      one: '{0}lm',
+      two: '{0}lm',
+      few: '{0}lm',
+      other: '{0}lm',
+    ),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'boillsgeachd-ghrèine',
-          one: '{0} bhoillsgeachd-ghrèine',
-          two: '{0} bhoillsgeachd-ghrèine',
-          few: '{0} boillsgeachdan-grèine',
-          other: '{0} boillsgeachd-ghrèine',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'boillsgeachd-ghrèine',
-          one: '{0} bhoillsgeachd-ghrèine',
-          two: '{0} bhoillsgeachd-ghrèine',
-          few: '{0} boillsgeachdan-grèine',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0}L☉',
-          two: '{0}L☉',
-          few: '{0}L☉',
-          other: '{0}L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'boillsgeachd-ghrèine',
+      one: '{0} bhoillsgeachd-ghrèine',
+      two: '{0} bhoillsgeachd-ghrèine',
+      few: '{0} boillsgeachdan-grèine',
+      other: '{0} boillsgeachd-ghrèine',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'boillsgeachd-ghrèine',
+      one: '{0} bhoillsgeachd-ghrèine',
+      two: '{0} bhoillsgeachd-ghrèine',
+      few: '{0} boillsgeachdan-grèine',
+      other: '{0} L☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L☉',
+      one: '{0}L☉',
+      two: '{0}L☉',
+      few: '{0}L☉',
+      other: '{0}L☉',
+    ),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tunna meatrach',
-          one: '{0} tunna meatrach',
-          two: '{0} thunna meatrach',
-          few: '{0} tunnaichean meatrach',
-          other: '{0} tunna meatrach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} tunna meatrach',
-          two: '{0} thunna meatrach',
-          few: '{0} tunnaichean meatrach',
-          other: '{0} t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0}t',
-          two: '{0}t',
-          few: '{0}t',
-          other: '{0}t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tunna meatrach',
+      one: '{0} tunna meatrach',
+      two: '{0} thunna meatrach',
+      few: '{0} tunnaichean meatrach',
+      other: '{0} tunna meatrach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      't',
+      one: '{0} tunna meatrach',
+      two: '{0} thunna meatrach',
+      few: '{0} tunnaichean meatrach',
+      other: '{0} t',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      't',
+      one: '{0}t',
+      two: '{0}t',
+      few: '{0}t',
+      other: '{0}t',
+    ),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cileagram',
-          one: '{0} chileagram',
-          two: '{0} chileagram',
-          few: '{0} cileagramaichean',
-          other: '{0} cileagram',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} chileagram',
-          two: '{0} chileagram',
-          few: '{0} cileagramaichean',
-          other: '{0} kg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0}kg',
-          two: '{0}kg',
-          few: '{0}kg',
-          other: '{0}kg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cileagram',
+      one: '{0} chileagram',
+      two: '{0} chileagram',
+      few: '{0} cileagramaichean',
+      other: '{0} cileagram',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0} chileagram',
+      two: '{0} chileagram',
+      few: '{0} cileagramaichean',
+      other: '{0} kg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0}kg',
+      two: '{0}kg',
+      few: '{0}kg',
+      other: '{0}kg',
+    ),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gram',
-          one: '{0} ghram',
-          two: '{0} ghram',
-          few: '{0} gramaichean',
-          other: '{0} gram',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gram',
-          one: '{0} ghram',
-          two: '{0} ghram',
-          few: '{0} gramaichean',
-          other: '{0} g',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gram',
-          one: '{0}g',
-          two: '{0}g',
-          few: '{0}g',
-          other: '{0}g',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gram',
+      one: '{0} ghram',
+      two: '{0} ghram',
+      few: '{0} gramaichean',
+      other: '{0} gram',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gram',
+      one: '{0} ghram',
+      two: '{0} ghram',
+      few: '{0} gramaichean',
+      other: '{0} g',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gram',
+      one: '{0}g',
+      two: '{0}g',
+      few: '{0}g',
+      other: '{0}g',
+    ),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'miligram',
-          one: '{0} mhiligram',
-          two: '{0} mhiligram',
-          few: '{0} miligramaichean',
-          other: '{0} miligram',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} mhiligram',
-          two: '{0} mhiligram',
-          few: '{0} miligramaichean',
-          other: '{0} mg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0}mg',
-          two: '{0}mg',
-          few: '{0}mg',
-          other: '{0}mg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'miligram',
+      one: '{0} mhiligram',
+      two: '{0} mhiligram',
+      few: '{0} miligramaichean',
+      other: '{0} miligram',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} mhiligram',
+      two: '{0} mhiligram',
+      few: '{0} miligramaichean',
+      other: '{0} mg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0}mg',
+      two: '{0}mg',
+      few: '{0}mg',
+      other: '{0}mg',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'micreo-gram',
-          one: '{0} mhicreo-gram',
-          two: '{0} mhicreo-gram',
-          few: '{0} micreo-gramaichean',
-          other: '{0} micreo-gram',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} mhicreo-gram',
-          two: '{0} mhicreo-gram',
-          few: '{0} micreo-gramaichean',
-          other: '{0} μg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0}μg',
-          two: '{0}μg',
-          few: '{0}μg',
-          other: '{0}μg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'micreo-gram',
+      one: '{0} mhicreo-gram',
+      two: '{0} mhicreo-gram',
+      few: '{0} micreo-gramaichean',
+      other: '{0} micreo-gram',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} mhicreo-gram',
+      two: '{0} mhicreo-gram',
+      few: '{0} micreo-gramaichean',
+      other: '{0} μg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0}μg',
+      two: '{0}μg',
+      few: '{0}μg',
+      other: '{0}μg',
+    ),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tunna',
-          one: '{0} tunna',
-          two: '{0} thunna',
-          few: '{0} tunnaichean',
-          other: '{0} tunna',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tunna',
-          one: '{0} tunna',
-          two: '{0} thunna',
-          few: '{0} tunnaichean',
-          other: '{0} tn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'tn',
-          one: '{0}tn',
-          two: '{0}tn',
-          few: '{0}tn',
-          other: '{0}tn',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tunna',
+      one: '{0} tunna',
+      two: '{0} thunna',
+      few: '{0} tunnaichean',
+      other: '{0} tunna',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tunna',
+      one: '{0} tunna',
+      two: '{0} thunna',
+      few: '{0} tunnaichean',
+      other: '{0} tn',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'tn',
+      one: '{0}tn',
+      two: '{0}tn',
+      few: '{0}tn',
+      other: '{0}tn',
+    ),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'clach',
-          one: '{0} chlach',
-          two: '{0} chlach',
-          few: '{0} clachan',
-          other: '{0} clach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'clach',
-          one: '{0} chlach',
-          two: '{0} chlach',
-          few: '{0} clach',
-          other: '{0} clach',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'clach',
-          one: '{0}clach',
-          two: '{0}clach',
-          few: '{0}clach',
-          other: '{0}clach',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'clach',
+      one: '{0} chlach',
+      two: '{0} chlach',
+      few: '{0} clachan',
+      other: '{0} clach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'clach',
+      one: '{0} chlach',
+      two: '{0} chlach',
+      few: '{0} clach',
+      other: '{0} clach',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'clach',
+      one: '{0}clach',
+      two: '{0}clach',
+      few: '{0}clach',
+      other: '{0}clach',
+    ),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'punnd',
-          one: '{0} phunnd',
-          two: '{0} phunnd',
-          few: '{0} puinnd',
-          other: '{0} punnd',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'punnd',
-          one: '{0} phunnd',
-          two: '{0} phunnd',
-          few: '{0} puinnd',
-          other: '{0} lb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lb',
-          one: '{0}lb',
-          two: '{0}lb',
-          few: '{0}lb',
-          other: '{0}lb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'punnd',
+      one: '{0} phunnd',
+      two: '{0} phunnd',
+      few: '{0} puinnd',
+      other: '{0} punnd',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'punnd',
+      one: '{0} phunnd',
+      two: '{0} phunnd',
+      few: '{0} puinnd',
+      other: '{0} lb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lb',
+      one: '{0}lb',
+      two: '{0}lb',
+      few: '{0}lb',
+      other: '{0}lb',
+    ),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unnsa',
-          one: '{0} unnsa',
-          two: '{0} unnsa',
-          few: '{0} unnsachan',
-          other: '{0} unnsa',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'unnsa',
-          one: '{0} unnsa',
-          two: '{0} unnsa',
-          few: '{0} unnsa',
-          other: '{0} unnsa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0}oz',
-          two: '{0}oz',
-          few: '{0}oz',
-          other: '{0}oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unnsa',
+      one: '{0} unnsa',
+      two: '{0} unnsa',
+      few: '{0} unnsachan',
+      other: '{0} unnsa',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'unnsa',
+      one: '{0} unnsa',
+      two: '{0} unnsa',
+      few: '{0} unnsa',
+      other: '{0} unnsa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'oz',
+      one: '{0}oz',
+      two: '{0}oz',
+      few: '{0}oz',
+      other: '{0}oz',
+    ),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unnsa tròidh',
-          one: '{0} unnsa tròidh',
-          two: '{0} unnsa tròidh',
-          few: '{0} unnsachan tròidh',
-          other: '{0} unnsa tròidh',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'unnsa tròidh',
-          one: '{0} unnsa tròidh',
-          two: '{0} unnsa tròidh',
-          few: '{0} unnsachan tròidh',
-          other: '{0} oz t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz t',
-          one: '{0}oz t',
-          two: '{0}oz t',
-          few: '{0}oz t',
-          other: '{0}oz t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unnsa tròidh',
+      one: '{0} unnsa tròidh',
+      two: '{0} unnsa tròidh',
+      few: '{0} unnsachan tròidh',
+      other: '{0} unnsa tròidh',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'unnsa tròidh',
+      one: '{0} unnsa tròidh',
+      two: '{0} unnsa tròidh',
+      few: '{0} unnsachan tròidh',
+      other: '{0} oz t',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'oz t',
+      one: '{0}oz t',
+      two: '{0}oz t',
+      few: '{0}oz t',
+      other: '{0}oz t',
+    ),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'carat',
-          one: '{0} charat',
-          two: '{0} charat',
-          few: '{0} carataichean',
-          other: '{0} carat',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'carat',
-          one: '{0} charat',
-          two: '{0} charat',
-          few: '{0} carataichean',
-          other: '{0} CD',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'carat',
-          one: '{0}CD',
-          two: '{0}CD',
-          few: '{0}CD',
-          other: '{0}CD',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'carat',
+      one: '{0} charat',
+      two: '{0} charat',
+      few: '{0} carataichean',
+      other: '{0} carat',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'carat',
+      one: '{0} charat',
+      two: '{0} charat',
+      few: '{0} carataichean',
+      other: '{0} CD',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'carat',
+      one: '{0}CD',
+      two: '{0}CD',
+      few: '{0}CD',
+      other: '{0}CD',
+    ),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dalton',
-          one: '{0} dalton',
-          two: '{0} dhalton',
-          few: '{0} daltonaichean',
-          other: '{0} dalton',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dalton',
-          one: '{0} dalton',
-          two: '{0} dhalton',
-          few: '{0} daltonaichean',
-          other: '{0} Da',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0}Da',
-          two: '{0}Da',
-          few: '{0}Da',
-          other: '{0}Da',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dalton',
+      one: '{0} dalton',
+      two: '{0} dhalton',
+      few: '{0} daltonaichean',
+      other: '{0} dalton',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dalton',
+      one: '{0} dalton',
+      two: '{0} dhalton',
+      few: '{0} daltonaichean',
+      other: '{0} Da',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Da',
+      one: '{0}Da',
+      two: '{0}Da',
+      few: '{0}Da',
+      other: '{0}Da',
+    ),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tomad-talmhainn',
-          one: '{0} tomad-talmhainn',
-          two: '{0} thomad-talmhainn',
-          few: '{0} tomadan-talmhainn',
-          other: '{0} tomad-talmhainn',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tomad-talmhainn',
-          one: '{0} tomad-talmhainn',
-          two: '{0} thomad-talmhainn',
-          few: '{0} tomadan-talmhainn',
-          other: '{0} M⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0}M⊕',
-          two: '{0}M⊕',
-          few: '{0}M⊕',
-          other: '{0}M⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tomad-talmhainn',
+      one: '{0} tomad-talmhainn',
+      two: '{0} thomad-talmhainn',
+      few: '{0} tomadan-talmhainn',
+      other: '{0} tomad-talmhainn',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tomad-talmhainn',
+      one: '{0} tomad-talmhainn',
+      two: '{0} thomad-talmhainn',
+      few: '{0} tomadan-talmhainn',
+      other: '{0} M⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M⊕',
+      one: '{0}M⊕',
+      two: '{0}M⊕',
+      few: '{0}M⊕',
+      other: '{0}M⊕',
+    ),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tomad-grèine',
-          one: '{0} tomad-grèine',
-          two: '{0} thomad-grèine',
-          few: '{0} tomadan-grèine',
-          other: '{0} tomad-grèine',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tomad-grèine',
-          one: '{0} tomad-grèine',
-          two: '{0} thomad-grèine',
-          few: '{0} tomadan-grèine',
-          other: '{0} M☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0}M☉',
-          two: '{0}M☉',
-          few: '{0}M☉',
-          other: '{0}M☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tomad-grèine',
+      one: '{0} tomad-grèine',
+      two: '{0} thomad-grèine',
+      few: '{0} tomadan-grèine',
+      other: '{0} tomad-grèine',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tomad-grèine',
+      one: '{0} tomad-grèine',
+      two: '{0} thomad-grèine',
+      few: '{0} tomadan-grèine',
+      other: '{0} M☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M☉',
+      one: '{0}M☉',
+      two: '{0}M☉',
+      few: '{0}M☉',
+      other: '{0}M☉',
+    ),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gràinne',
-          one: '{0} ghràinne',
-          two: '{0} gràinne',
-          few: '{0} gràinnean',
-          other: '{0} gràinne',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gràinne',
-          one: '{0} ghràinne',
-          two: '{0} ghràinne',
-          few: '{0} gràinne',
-          other: '{0} gràinne',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gràinne',
-          one: '{0}ghr',
-          two: '{0}ghr',
-          few: '{0}gr',
-          other: '{0}gr',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gràinne',
+      one: '{0} ghràinne',
+      two: '{0} gràinne',
+      few: '{0} gràinnean',
+      other: '{0} gràinne',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gràinne',
+      one: '{0} ghràinne',
+      two: '{0} ghràinne',
+      few: '{0} gràinne',
+      other: '{0} gràinne',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gràinne',
+      one: '{0}ghr',
+      two: '{0}ghr',
+      few: '{0}gr',
+      other: '{0}gr',
+    ),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'giga-watt',
-          one: '{0} ghiga-watt',
-          two: '{0} ghiga-watt',
-          few: '{0} giga-watt',
-          other: '{0} giga-watt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} ghiga-watt',
-          two: '{0} ghiga-watt',
-          few: '{0} giga-watt',
-          other: '{0} GW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0}GW',
-          two: '{0}GW',
-          few: '{0}GW',
-          other: '{0}GW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'giga-watt',
+      one: '{0} ghiga-watt',
+      two: '{0} ghiga-watt',
+      few: '{0} giga-watt',
+      other: '{0} giga-watt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0} ghiga-watt',
+      two: '{0} ghiga-watt',
+      few: '{0} giga-watt',
+      other: '{0} GW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0}GW',
+      two: '{0}GW',
+      few: '{0}GW',
+      other: '{0}GW',
+    ),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meaga-watt',
-          one: '{0} mheaga-watt',
-          two: '{0} mheaga-watt',
-          few: '{0} meaga-watt',
-          other: '{0} meaga-watt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} mheaga-watt',
-          two: '{0} mheaga-watt',
-          few: '{0} meaga-watt',
-          other: '{0} MW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0}MW',
-          two: '{0}MW',
-          few: '{0}MW',
-          other: '{0}MW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meaga-watt',
+      one: '{0} mheaga-watt',
+      two: '{0} mheaga-watt',
+      few: '{0} meaga-watt',
+      other: '{0} meaga-watt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0} mheaga-watt',
+      two: '{0} mheaga-watt',
+      few: '{0} meaga-watt',
+      other: '{0} MW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0}MW',
+      two: '{0}MW',
+      few: '{0}MW',
+      other: '{0}MW',
+    ),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilea-watt',
-          one: '{0} chilea-watt',
-          two: '{0} chilea-watt',
-          few: '{0} cilea-watt',
-          other: '{0} cilea-watt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0} chilea-watt',
-          two: '{0} chilea-watt',
-          few: '{0} cilea-watt',
-          other: '{0} kW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0}kW',
-          two: '{0}kW',
-          few: '{0}kW',
-          other: '{0}kW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilea-watt',
+      one: '{0} chilea-watt',
+      two: '{0} chilea-watt',
+      few: '{0} cilea-watt',
+      other: '{0} cilea-watt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kW',
+      one: '{0} chilea-watt',
+      two: '{0} chilea-watt',
+      few: '{0} cilea-watt',
+      other: '{0} kW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kW',
+      one: '{0}kW',
+      two: '{0}kW',
+      few: '{0}kW',
+      other: '{0}kW',
+    ),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'watt',
-          one: '{0} watt',
-          two: '{0} watt',
-          few: '{0} watt',
-          other: '{0} watt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'watt',
-          one: '{0} watt',
-          two: '{0} watt',
-          few: '{0} watt',
-          other: '{0} W',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'watt',
-          one: '{0}W',
-          two: '{0}W',
-          few: '{0}W',
-          other: '{0}W',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'watt',
+      one: '{0} watt',
+      two: '{0} watt',
+      few: '{0} watt',
+      other: '{0} watt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'watt',
+      one: '{0} watt',
+      two: '{0} watt',
+      few: '{0} watt',
+      other: '{0} W',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'watt',
+      one: '{0}W',
+      two: '{0}W',
+      few: '{0}W',
+      other: '{0}W',
+    ),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mili-watt',
-          one: '{0} mhili-watt',
-          two: '{0} mhili-watt',
-          few: '{0} mili-watt',
-          other: '{0} mili-watt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} mhili-watt',
-          two: '{0} mhili-watt',
-          few: '{0} mili-watt',
-          other: '{0} mW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0}mW',
-          two: '{0}mW',
-          few: '{0}mW',
-          other: '{0}mW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mili-watt',
+      one: '{0} mhili-watt',
+      two: '{0} mhili-watt',
+      few: '{0} mili-watt',
+      other: '{0} mili-watt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0} mhili-watt',
+      two: '{0} mhili-watt',
+      few: '{0} mili-watt',
+      other: '{0} mW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0}mW',
+      two: '{0}mW',
+      few: '{0}mW',
+      other: '{0}mW',
+    ),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cumhachd-eich',
-          one: '{0} chumhachd-eich',
-          two: '{0} chumhachd-eich',
-          few: '{0} cumhachdan-eich',
-          other: '{0} cumhachd-eich',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hp',
-          one: '{0} chumhachd-eich',
-          two: '{0} chumhachd-eich',
-          few: '{0} cumhachdan-eich',
-          other: '{0} hp',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hp',
-          one: '{0}hp',
-          two: '{0}hp',
-          few: '{0}hp',
-          other: '{0}hp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cumhachd-eich',
+      one: '{0} chumhachd-eich',
+      two: '{0} chumhachd-eich',
+      few: '{0} cumhachdan-eich',
+      other: '{0} cumhachd-eich',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hp',
+      one: '{0} chumhachd-eich',
+      two: '{0} chumhachd-eich',
+      few: '{0} cumhachdan-eich',
+      other: '{0} hp',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hp',
+      one: '{0}hp',
+      two: '{0}hp',
+      few: '{0}hp',
+      other: '{0}hp',
+    ),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milimeatair de dh’airgead-beò',
-          one: '{0} mhilimeatair de dh’airgead-beò',
-          two: '{0} mhilimeatair de dh’airgead-beò',
-          few: '{0} milimeatairean de dh’airgead-beò',
-          other: '{0} milimeatair de dh’airgead-beò',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mm Hg',
-          one: '{0} mhilimeatair de dh’airgead-beò',
-          two: '{0} mhilimeatair de dh’airgead-beò',
-          few: '{0} milimeatairean de dh’airgead-beò',
-          other: '{0} mm Hg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mm Hg',
-          one: '{0}mm Hg',
-          two: '{0}mm Hg',
-          few: '{0}mm Hg',
-          other: '{0}mm Hg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milimeatair de dh’airgead-beò',
+      one: '{0} mhilimeatair de dh’airgead-beò',
+      two: '{0} mhilimeatair de dh’airgead-beò',
+      few: '{0} milimeatairean de dh’airgead-beò',
+      other: '{0} milimeatair de dh’airgead-beò',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mm Hg',
+      one: '{0} mhilimeatair de dh’airgead-beò',
+      two: '{0} mhilimeatair de dh’airgead-beò',
+      few: '{0} milimeatairean de dh’airgead-beò',
+      other: '{0} mm Hg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mm Hg',
+      one: '{0}mm Hg',
+      two: '{0}mm Hg',
+      few: '{0}mm Hg',
+      other: '{0}mm Hg',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'punnd san òirleach cheàrnagach',
-          one: '{0} phunnd san òirleach cheàrnagach',
-          two: '{0} phunnd san òirleach cheàrnagach',
-          few: '{0} puinnd san òirleach cheàrnagach',
-          other: '{0} punnd san òirleach cheàrnagach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} phunnd san òirleach cheàrnagach',
-          two: '{0} phunnd san òirleach cheàrnagach',
-          few: '{0} puinnd san òirleach cheàrnagach',
-          other: '{0} psi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0}psi',
-          two: '{0}psi',
-          few: '{0}psi',
-          other: '{0}psi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'punnd san òirleach cheàrnagach',
+      one: '{0} phunnd san òirleach cheàrnagach',
+      two: '{0} phunnd san òirleach cheàrnagach',
+      few: '{0} puinnd san òirleach cheàrnagach',
+      other: '{0} punnd san òirleach cheàrnagach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} phunnd san òirleach cheàrnagach',
+      two: '{0} phunnd san òirleach cheàrnagach',
+      few: '{0} puinnd san òirleach cheàrnagach',
+      other: '{0} psi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0}psi',
+      two: '{0}psi',
+      few: '{0}psi',
+      other: '{0}psi',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'òirleach de dh’airgead-beò',
-          one: '{0} òirleach de dh’airgead-beò',
-          two: '{0} òirleach de dh’airgead-beò',
-          few: '{0} òirlich de dh’airgead-beò',
-          other: '{0} òirleach de dh’airgead-beò',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'in Hg',
-          one: '{0} òirleach de dh’airgead-beò',
-          two: '{0} òirleach de dh’airgead-beò',
-          few: '{0} òirlich de dh’airgead-beò',
-          other: '{0} inHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '″ Hg',
-          one: '{0}″ Hg',
-          two: '{0}″ Hg',
-          few: '{0}″ Hg',
-          other: '{0}″ Hg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'òirleach de dh’airgead-beò',
+      one: '{0} òirleach de dh’airgead-beò',
+      two: '{0} òirleach de dh’airgead-beò',
+      few: '{0} òirlich de dh’airgead-beò',
+      other: '{0} òirleach de dh’airgead-beò',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'in Hg',
+      one: '{0} òirleach de dh’airgead-beò',
+      two: '{0} òirleach de dh’airgead-beò',
+      few: '{0} òirlich de dh’airgead-beò',
+      other: '{0} inHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '″ Hg',
+      one: '{0}″ Hg',
+      two: '{0}″ Hg',
+      few: '{0}″ Hg',
+      other: '{0}″ Hg',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bàr',
-          one: '{0} bhar',
-          two: '{0} bhàr',
-          few: '{0} bàraichean',
-          other: '{0} bàr',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bàr',
-          one: '{0} bhàr',
-          two: '{0} bhàr',
-          few: '{0} bàr',
-          other: '{0} bàr',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bàr',
-          one: '{0}bhàr',
-          two: '{0}bhàr',
-          few: '{0}bàr',
-          other: '{0}bàr',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bàr',
+      one: '{0} bhar',
+      two: '{0} bhàr',
+      few: '{0} bàraichean',
+      other: '{0} bàr',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'bàr',
+      one: '{0} bhàr',
+      two: '{0} bhàr',
+      few: '{0} bàr',
+      other: '{0} bàr',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'bàr',
+      one: '{0}bhàr',
+      two: '{0}bhàr',
+      few: '{0}bàr',
+      other: '{0}bàr',
+    ),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milibàr',
-          one: '{0} mhilibàr',
-          two: '{0} mhilibàr',
-          few: '{0} milibàraichean',
-          other: '{0} milibàr',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mbàr',
-          one: '{0} mbàr',
-          two: '{0} mbàr',
-          few: '{0} mbàr',
-          other: '{0} mbàr',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mbàr',
-          one: '{0}mb',
-          two: '{0}mb',
-          few: '{0}mb',
-          other: '{0}mb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milibàr',
+      one: '{0} mhilibàr',
+      two: '{0} mhilibàr',
+      few: '{0} milibàraichean',
+      other: '{0} milibàr',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mbàr',
+      one: '{0} mbàr',
+      two: '{0} mbàr',
+      few: '{0} mbàr',
+      other: '{0} mbàr',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mbàr',
+      one: '{0}mb',
+      two: '{0}mb',
+      few: '{0}mb',
+      other: '{0}mb',
+    ),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'brùthadh-àile',
-          one: '{0} bhrùthadh-àile',
-          two: '{0} bhrùthadh-àile',
-          few: '{0} brùthadh-àile',
-          other: '{0} brùthadh-àile',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'àile',
-          one: '{0} àile',
-          two: '{0} àile',
-          few: '{0} àile',
-          other: '{0} àile',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0}atm',
-          two: '{0}atm',
-          few: '{0}atm',
-          other: '{0}atm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'brùthadh-àile',
+      one: '{0} bhrùthadh-àile',
+      two: '{0} bhrùthadh-àile',
+      few: '{0} brùthadh-àile',
+      other: '{0} brùthadh-àile',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'àile',
+      one: '{0} àile',
+      two: '{0} àile',
+      few: '{0} àile',
+      other: '{0} àile',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0}atm',
+      two: '{0}atm',
+      few: '{0}atm',
+      other: '{0}atm',
+    ),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pascal',
-          one: '{0} phascal',
-          two: '{0} phascal',
-          few: '{0} pascal',
-          other: '{0} pascal',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} phascal',
-          two: '{0} phascal',
-          few: '{0} pascal',
-          other: '{0} Pa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0}Pa',
-          two: '{0}Pa',
-          few: '{0}Pa',
-          other: '{0}Pa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pascal',
+      one: '{0} phascal',
+      two: '{0} phascal',
+      few: '{0} pascal',
+      other: '{0} pascal',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Pa',
+      one: '{0} phascal',
+      two: '{0} phascal',
+      few: '{0} pascal',
+      other: '{0} Pa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Pa',
+      one: '{0}Pa',
+      two: '{0}Pa',
+      few: '{0}Pa',
+      other: '{0}Pa',
+    ),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'heacta-pascal',
-          one: '{0} heacta-pascal',
-          two: '{0} heacta-pascal',
-          few: '{0} heacta-pascal',
-          other: '{0} heacta-pascal',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} heacta-pascal',
-          two: '{0} heacta-pascal',
-          few: '{0} heacta-pascal',
-          other: '{0} hPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0}hPa',
-          two: '{0}hPa',
-          few: '{0}hPa',
-          other: '{0}hPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'heacta-pascal',
+      one: '{0} heacta-pascal',
+      two: '{0} heacta-pascal',
+      few: '{0} heacta-pascal',
+      other: '{0} heacta-pascal',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} heacta-pascal',
+      two: '{0} heacta-pascal',
+      few: '{0} heacta-pascal',
+      other: '{0} hPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0}hPa',
+      two: '{0}hPa',
+      few: '{0}hPa',
+      other: '{0}hPa',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cileapascal',
-          one: '{0} chileapascal',
-          two: '{0} chileapascal',
-          few: '{0} cileapascal',
-          other: '{0} cileapascal',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} chileapascal',
-          two: '{0} chileapascal',
-          few: '{0} cileapascal',
-          other: '{0} kPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0}kPa',
-          two: '{0}kPa',
-          few: '{0}kPa',
-          other: '{0}kPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cileapascal',
+      one: '{0} chileapascal',
+      two: '{0} chileapascal',
+      few: '{0} cileapascal',
+      other: '{0} cileapascal',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} chileapascal',
+      two: '{0} chileapascal',
+      few: '{0} cileapascal',
+      other: '{0} kPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0}kPa',
+      two: '{0}kPa',
+      few: '{0}kPa',
+      other: '{0}kPa',
+    ),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meaga-pascal',
-          one: '{0} mheaga-pascal',
-          two: '{0} mheaga-pascal',
-          few: '{0} meaga-pascal',
-          other: '{0} meaga-pascal',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} mheaga-pascal',
-          two: '{0} mheaga-pascal',
-          few: '{0} meaga-pascal',
-          other: '{0} MPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0}MPa',
-          two: '{0}MPa',
-          few: '{0}MPa',
-          other: '{0}MPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meaga-pascal',
+      one: '{0} mheaga-pascal',
+      two: '{0} mheaga-pascal',
+      few: '{0} meaga-pascal',
+      other: '{0} meaga-pascal',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} mheaga-pascal',
+      two: '{0} mheaga-pascal',
+      few: '{0} meaga-pascal',
+      other: '{0} MPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0}MPa',
+      two: '{0}MPa',
+      few: '{0}MPa',
+      other: '{0}MPa',
+    ),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilemeatair san uair',
-          one: '{0} chilemeatair san uair',
-          two: '{0} chilemeatair san uair',
-          few: '{0} cilemeatairean san uair',
-          other: '{0} cilemeatair san uair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km/uair',
-          one: '{0} chilemeatair san uair',
-          two: '{0} chilemeatair san uair',
-          few: '{0} cilemeatairean san uair',
-          other: '{0} km/h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km/h',
-          one: '{0}km/h',
-          two: '{0}km/h',
-          few: '{0}km/h',
-          other: '{0}km/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilemeatair san uair',
+      one: '{0} chilemeatair san uair',
+      two: '{0} chilemeatair san uair',
+      few: '{0} cilemeatairean san uair',
+      other: '{0} cilemeatair san uair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km/uair',
+      one: '{0} chilemeatair san uair',
+      two: '{0} chilemeatair san uair',
+      few: '{0} cilemeatairean san uair',
+      other: '{0} km/h',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km/h',
+      one: '{0}km/h',
+      two: '{0}km/h',
+      few: '{0}km/h',
+      other: '{0}km/h',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meatair san diog',
-          one: '{0} mheatair san diog',
-          two: '{0} mheatair san diog',
-          few: '{0} meatairean san diog',
-          other: '{0} meatair san diog',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'meatair/diog',
-          one: '{0} mheatair san diog',
-          two: '{0} mheatair san diog',
-          few: '{0} meatairean san diog',
-          other: '{0} m/s',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s',
-          one: '{0}m/s',
-          two: '{0}m/s',
-          few: '{0}m/s',
-          other: '{0}m/s',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meatair san diog',
+      one: '{0} mheatair san diog',
+      two: '{0} mheatair san diog',
+      few: '{0} meatairean san diog',
+      other: '{0} meatair san diog',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'meatair/diog',
+      one: '{0} mheatair san diog',
+      two: '{0} mheatair san diog',
+      few: '{0} meatairean san diog',
+      other: '{0} m/s',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s',
+      one: '{0}m/s',
+      two: '{0}m/s',
+      few: '{0}m/s',
+      other: '{0}m/s',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle san uair',
-          one: '{0} mhìle san uair',
-          two: '{0} mhìle san uair',
-          few: '{0} mìltean san uair',
-          other: '{0} mìle san uair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mìle/uair',
-          one: '{0} mì/h',
-          two: '{0} mì/h',
-          few: '{0} mì/h',
-          other: '{0} mì/h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mì/h',
-          one: '{0}mì/h',
-          two: '{0}mì/h',
-          few: '{0}mì/h',
-          other: '{0}mì/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle san uair',
+      one: '{0} mhìle san uair',
+      two: '{0} mhìle san uair',
+      few: '{0} mìltean san uair',
+      other: '{0} mìle san uair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mìle/uair',
+      one: '{0} mì/h',
+      two: '{0} mì/h',
+      few: '{0} mì/h',
+      other: '{0} mì/h',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mì/h',
+      one: '{0}mì/h',
+      two: '{0}mì/h',
+      few: '{0}mì/h',
+      other: '{0}mì/h',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle mara san uair',
-          one: '{0} mhìle mara san uair',
-          two: '{0} mhìle mara san uair',
-          few: '{0} mìltean mara san uair',
-          other: '{0} mìle mara san uair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0} mhìle mara san uair',
-          two: '{0} mhìle mara san uair',
-          few: '{0} mìltean mara san uair',
-          other: '{0} kn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0}kn',
-          two: '{0}kn',
-          few: '{0}kn',
-          other: '{0}kn',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle mara san uair',
+      one: '{0} mhìle mara san uair',
+      two: '{0} mhìle mara san uair',
+      few: '{0} mìltean mara san uair',
+      other: '{0} mìle mara san uair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kn',
+      one: '{0} mhìle mara san uair',
+      two: '{0} mhìle mara san uair',
+      few: '{0} mìltean mara san uair',
+      other: '{0} kn',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kn',
+      one: '{0}kn',
+      two: '{0}kn',
+      few: '{0}kn',
+      other: '{0}kn',
+    ),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Beaufort',
-          one: 'Beaufort {0}',
-          two: 'Beaufort {0}',
-          few: 'Beaufort {0}',
-          other: 'Beaufort {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: 'Beaufort {0}',
-          two: 'Beaufort {0}',
-          few: 'Beaufort {0}',
-          other: 'B {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: 'B{0}',
-          two: 'B{0}',
-          few: 'B{0}',
-          other: 'B{0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Beaufort',
+      one: 'Beaufort {0}',
+      two: 'Beaufort {0}',
+      few: 'Beaufort {0}',
+      other: 'Beaufort {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Bft',
+      one: 'Beaufort {0}',
+      two: 'Beaufort {0}',
+      few: 'Beaufort {0}',
+      other: 'B {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Bft',
+      one: 'B{0}',
+      two: 'B{0}',
+      few: 'B{0}',
+      other: 'B{0}',
+    ),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} degree temperature',
-          other: '{0}°',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '°',
+      one: '{0} degree temperature',
+      other: '{0}°',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceum Celsius',
-          one: '{0} cheum Celsius',
-          two: '{0} cheum Celsius',
-          few: '{0} ceuman Celsius',
-          other: '{0} ceum Celsius',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ceum C',
-          one: '{0} cheum Celsius',
-          two: '{0} cheum Celsius',
-          few: '{0} ceuman Celsius',
-          other: '{0}°C',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0} cheum Celsius',
-          two: '{0} cheum Celsius',
-          few: '{0} ceuman Celsius',
-          other: '{0}°C',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceum Celsius',
+      one: '{0} cheum Celsius',
+      two: '{0} cheum Celsius',
+      few: '{0} ceuman Celsius',
+      other: '{0} ceum Celsius',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ceum C',
+      one: '{0} cheum Celsius',
+      two: '{0} cheum Celsius',
+      few: '{0} ceuman Celsius',
+      other: '{0}°C',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°C',
+      one: '{0} cheum Celsius',
+      two: '{0} cheum Celsius',
+      few: '{0} ceuman Celsius',
+      other: '{0}°C',
+    ),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceum Fahrenheit',
-          one: '{0} cheum Fahrenheit',
-          two: '{0} cheum Fahrenheit',
-          few: '{0} ceuman Fahrenheit',
-          other: '{0} ceum Fahrenheit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ceum F',
-          one: '{0} cheum Fahrenheit',
-          two: '{0} cheum Fahrenheit',
-          few: '{0} ceuman Fahrenheit',
-          other: '{0}°F',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0} cheum Fahrenheit',
-          two: '{0} cheum Fahrenheit',
-          few: '{0} ceuman Fahrenheit',
-          other: '{0}°F',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceum Fahrenheit',
+      one: '{0} cheum Fahrenheit',
+      two: '{0} cheum Fahrenheit',
+      few: '{0} ceuman Fahrenheit',
+      other: '{0} ceum Fahrenheit',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ceum F',
+      one: '{0} cheum Fahrenheit',
+      two: '{0} cheum Fahrenheit',
+      few: '{0} ceuman Fahrenheit',
+      other: '{0}°F',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°F',
+      one: '{0} cheum Fahrenheit',
+      two: '{0} cheum Fahrenheit',
+      few: '{0} ceuman Fahrenheit',
+      other: '{0}°F',
+    ),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceum Kelvin',
-          one: '{0} cheum Kelvin',
-          two: '{0} cheum Kelvin',
-          few: '{0} ceuman Kelvin',
-          other: '{0} ceum Kelvin',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} cheum Kelvin',
-          two: '{0} cheum Kelvin',
-          few: '{0} ceuman Kelvin',
-          other: '{0} K',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0}K',
-          two: '{0}K',
-          few: '{0}K',
-          other: '{0}K',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceum Kelvin',
+      one: '{0} cheum Kelvin',
+      two: '{0} cheum Kelvin',
+      few: '{0} ceuman Kelvin',
+      other: '{0} ceum Kelvin',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'K',
+      one: '{0} cheum Kelvin',
+      two: '{0} cheum Kelvin',
+      few: '{0} ceuman Kelvin',
+      other: '{0} K',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'K',
+      one: '{0}K',
+      two: '{0}K',
+      few: '{0}K',
+      other: '{0}K',
+    ),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'troigh-phuinnd',
-          one: '{0} troigh-phuinnd',
-          two: '{0} throigh-phuinnd',
-          few: '{0} troighean-puinnd',
-          other: '{0} troigh-phuinnd',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} troigh-phuinnd',
-          two: '{0} throigh-phuinnd',
-          few: '{0} troighean-puinnd',
-          other: '{0} lbf⋅ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0}lbf⋅ft',
-          two: '{0}lbf⋅ft',
-          few: '{0}lbf⋅ft',
-          other: '{0}lbf⋅ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'troigh-phuinnd',
+      one: '{0} troigh-phuinnd',
+      two: '{0} throigh-phuinnd',
+      few: '{0} troighean-puinnd',
+      other: '{0} troigh-phuinnd',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} troigh-phuinnd',
+      two: '{0} throigh-phuinnd',
+      few: '{0} troighean-puinnd',
+      other: '{0} lbf⋅ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0}lbf⋅ft',
+      two: '{0}lbf⋅ft',
+      few: '{0}lbf⋅ft',
+      other: '{0}lbf⋅ft',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'newton-mheatair',
-          one: '{0} newton-mheatair',
-          two: '{0} newton-mheatair',
-          few: '{0} newton-mheatairean',
-          other: '{0} newton-mheatair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0} newton-mheatair',
-          two: '{0} newton-mheatair',
-          few: '{0} newton-mheatairean',
-          other: '{0} N⋅m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0}N⋅m',
-          two: '{0}N⋅m',
-          few: '{0}N⋅m',
-          other: '{0}N⋅m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'newton-mheatair',
+      one: '{0} newton-mheatair',
+      two: '{0} newton-mheatair',
+      few: '{0} newton-mheatairean',
+      other: '{0} newton-mheatair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0} newton-mheatair',
+      two: '{0} newton-mheatair',
+      few: '{0} newton-mheatairean',
+      other: '{0} N⋅m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0}N⋅m',
+      two: '{0}N⋅m',
+      few: '{0}N⋅m',
+      other: '{0}N⋅m',
+    ),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cilemeatair ciùbach',
-          one: '{0} chilemeatair ciùbach',
-          two: '{0} chilemeatair ciùbach',
-          few: '{0} cilemeatairean ciùbach',
-          other: '{0} cilemeatair ciùbach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} chilemeatair ciùbach',
-          two: '{0} chilemeatair ciùbach',
-          few: '{0} cilemeatairean ciùbach',
-          other: '{0} km³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0}km³',
-          two: '{0}km³',
-          few: '{0}km³',
-          other: '{0}km³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cilemeatair ciùbach',
+      one: '{0} chilemeatair ciùbach',
+      two: '{0} chilemeatair ciùbach',
+      few: '{0} cilemeatairean ciùbach',
+      other: '{0} cilemeatair ciùbach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} chilemeatair ciùbach',
+      two: '{0} chilemeatair ciùbach',
+      few: '{0} cilemeatairean ciùbach',
+      other: '{0} km³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0}km³',
+      two: '{0}km³',
+      few: '{0}km³',
+      other: '{0}km³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meatair ciùbach',
-          one: '{0} mheatair ciùbach',
-          two: '{0} mheatair ciùbach',
-          few: '{0} meatairean ciùbach',
-          other: '{0} meatair ciùbach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} mheatair ciùbach',
-          two: '{0} mheatair ciùbach',
-          few: '{0} meatairean ciùbach',
-          other: '{0} m³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0}m³',
-          two: '{0}m³',
-          few: '{0}m³',
-          other: '{0}m³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meatair ciùbach',
+      one: '{0} mheatair ciùbach',
+      two: '{0} mheatair ciùbach',
+      few: '{0} meatairean ciùbach',
+      other: '{0} meatair ciùbach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} mheatair ciùbach',
+      two: '{0} mheatair ciùbach',
+      few: '{0} meatairean ciùbach',
+      other: '{0} m³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0}m³',
+      two: '{0}m³',
+      few: '{0}m³',
+      other: '{0}m³',
+    ),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceudameatair ciùbach',
-          one: '{0} cheudameatair ciùbach',
-          two: '{0} cheudameatair ciùbach',
-          few: '{0} ceudameatairean ciùbach',
-          other: '{0} ceudameatair ciùbach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} cheudameatair ciùbach',
-          two: '{0} cheudameatair ciùbach',
-          few: '{0} ceudameatairean ciùbach',
-          other: '{0} cm³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0}cm³',
-          two: '{0}cm³',
-          few: '{0}cm³',
-          other: '{0}cm³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceudameatair ciùbach',
+      one: '{0} cheudameatair ciùbach',
+      two: '{0} cheudameatair ciùbach',
+      few: '{0} ceudameatairean ciùbach',
+      other: '{0} ceudameatair ciùbach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} cheudameatair ciùbach',
+      two: '{0} cheudameatair ciùbach',
+      few: '{0} ceudameatairean ciùbach',
+      other: '{0} cm³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0}cm³',
+      two: '{0}cm³',
+      few: '{0}cm³',
+      other: '{0}cm³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mìle chiùbach',
-          one: '{0} mhìle chiùbach',
-          two: '{0} mhìle chiùbach',
-          few: '{0} mìltean ciùbach',
-          other: '{0} mìle chiùbach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mì³',
-          one: '{0} mì³',
-          two: '{0} mì³',
-          few: '{0} mì³',
-          other: '{0} mì³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mì³',
-          one: '{0}mì³',
-          two: '{0}mì³',
-          few: '{0}mì³',
-          other: '{0}mì³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mìle chiùbach',
+      one: '{0} mhìle chiùbach',
+      two: '{0} mhìle chiùbach',
+      few: '{0} mìltean ciùbach',
+      other: '{0} mìle chiùbach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mì³',
+      one: '{0} mì³',
+      two: '{0} mì³',
+      few: '{0} mì³',
+      other: '{0} mì³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mì³',
+      one: '{0}mì³',
+      two: '{0}mì³',
+      few: '{0}mì³',
+      other: '{0}mì³',
+    ),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'slat chiùbach',
-          one: '{0} slat chiùbach',
-          two: '{0} shlat chiùbach',
-          few: '{0} slatan ciùbach',
-          other: '{0} slat chiùbach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'slat³',
-          one: '{0} slat³',
-          two: '{0} shlat³',
-          few: '{0} slat³',
-          other: '{0} slat³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd³',
-          one: '{0}yd³',
-          two: '{0}yd³',
-          few: '{0}yd³',
-          other: '{0}yd³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'slat chiùbach',
+      one: '{0} slat chiùbach',
+      two: '{0} shlat chiùbach',
+      few: '{0} slatan ciùbach',
+      other: '{0} slat chiùbach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'slat³',
+      one: '{0} slat³',
+      two: '{0} shlat³',
+      few: '{0} slat³',
+      other: '{0} slat³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd³',
+      one: '{0}yd³',
+      two: '{0}yd³',
+      few: '{0}yd³',
+      other: '{0}yd³',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'troigh chiùbach',
-          one: '{0} troigh chiùbach',
-          two: '{0} throigh chiùbach',
-          few: '{0} troighean ciùbach',
-          other: '{0} troigh chiùbach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'troigh³',
-          one: '{0} troigh³',
-          two: '{0} throigh³',
-          few: '{0} troigh³',
-          other: '{0} troigh³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0}ft³',
-          two: '{0}ft³',
-          few: '{0}ft³',
-          other: '{0}ft³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'troigh chiùbach',
+      one: '{0} troigh chiùbach',
+      two: '{0} throigh chiùbach',
+      few: '{0} troighean ciùbach',
+      other: '{0} troigh chiùbach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'troigh³',
+      one: '{0} troigh³',
+      two: '{0} throigh³',
+      few: '{0} troigh³',
+      other: '{0} troigh³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0}ft³',
+      two: '{0}ft³',
+      few: '{0}ft³',
+      other: '{0}ft³',
+    ),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'òirleach chiùbach',
-          one: '{0} òirleach chiùbach',
-          two: '{0} òirleach chiùbach',
-          few: '{0} òirlich chiùbach',
-          other: '{0} òirleach chiùbach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'òirl³',
-          one: '{0} òirl³',
-          two: '{0} òirl³',
-          few: '{0} òirl³',
-          other: '{0} òirl³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0}in³',
-          two: '{0}in³',
-          few: '{0}in³',
-          other: '{0}in³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'òirleach chiùbach',
+      one: '{0} òirleach chiùbach',
+      two: '{0} òirleach chiùbach',
+      few: '{0} òirlich chiùbach',
+      other: '{0} òirleach chiùbach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'òirl³',
+      one: '{0} òirl³',
+      two: '{0} òirl³',
+      few: '{0} òirl³',
+      other: '{0} òirl³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0}in³',
+      two: '{0}in³',
+      few: '{0}in³',
+      other: '{0}in³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'meaga-liotair',
-          one: '{0} mheaga-liotair',
-          two: '{0} mheaga-liotair',
-          few: '{0} meaga-liotairean',
-          other: '{0} meaga-liotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ML',
-          one: '{0} mheaga-liotair',
-          two: '{0} mheaga-liotair',
-          few: '{0} meaga-liotairean',
-          other: '{0} ML',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ML',
-          one: '{0}ML',
-          two: '{0}ML',
-          few: '{0}ML',
-          other: '{0}ML',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'meaga-liotair',
+      one: '{0} mheaga-liotair',
+      two: '{0} mheaga-liotair',
+      few: '{0} meaga-liotairean',
+      other: '{0} meaga-liotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ML',
+      one: '{0} mheaga-liotair',
+      two: '{0} mheaga-liotair',
+      few: '{0} meaga-liotairean',
+      other: '{0} ML',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ML',
+      one: '{0}ML',
+      two: '{0}ML',
+      few: '{0}ML',
+      other: '{0}ML',
+    ),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'heacta-liotair',
-          one: '{0} heacta-liotair',
-          two: '{0} heacta-liotair',
-          few: '{0} heacta-liotairean',
-          other: '{0} heacta-liotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hL',
-          one: '{0} heacta-liotair',
-          two: '{0} heacta-liotair',
-          few: '{0} heacta-liotairean',
-          other: '{0} hL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hL',
-          one: '{0}hL',
-          two: '{0}hL',
-          few: '{0}hL',
-          other: '{0}hL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'heacta-liotair',
+      one: '{0} heacta-liotair',
+      two: '{0} heacta-liotair',
+      few: '{0} heacta-liotairean',
+      other: '{0} heacta-liotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hL',
+      one: '{0} heacta-liotair',
+      two: '{0} heacta-liotair',
+      few: '{0} heacta-liotairean',
+      other: '{0} hL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hL',
+      one: '{0}hL',
+      two: '{0}hL',
+      few: '{0}hL',
+      other: '{0}hL',
+    ),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'liotair',
-          one: '{0} liotair',
-          two: '{0} liotair',
-          few: '{0} liotairean',
-          other: '{0} liotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'liotair',
-          one: '{0} L',
-          two: '{0} L',
-          few: '{0} L',
-          other: '{0} L',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'liotair',
-          one: '{0}L',
-          two: '{0}L',
-          few: '{0}L',
-          other: '{0}L',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'liotair',
+      one: '{0} liotair',
+      two: '{0} liotair',
+      few: '{0} liotairean',
+      other: '{0} liotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'liotair',
+      one: '{0} L',
+      two: '{0} L',
+      few: '{0} L',
+      other: '{0} L',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'liotair',
+      one: '{0}L',
+      two: '{0}L',
+      few: '{0}L',
+      other: '{0}L',
+    ),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'deicheamh-liotair',
-          one: '{0} deicheamh-liotair',
-          two: '{0} dheicheamh-liotair',
-          few: '{0} deicheamh-liotairean',
-          other: '{0} deicheamh-liotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dL',
-          one: '{0} deicheamh-liotair',
-          two: '{0} dheicheamh-liotair',
-          few: '{0} deicheamh-liotairean',
-          other: '{0} dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dL',
-          one: '{0}dL',
-          two: '{0}dL',
-          few: '{0}dL',
-          other: '{0}dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'deicheamh-liotair',
+      one: '{0} deicheamh-liotair',
+      two: '{0} dheicheamh-liotair',
+      few: '{0} deicheamh-liotairean',
+      other: '{0} deicheamh-liotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dL',
+      one: '{0} deicheamh-liotair',
+      two: '{0} dheicheamh-liotair',
+      few: '{0} deicheamh-liotairean',
+      other: '{0} dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dL',
+      one: '{0}dL',
+      two: '{0}dL',
+      few: '{0}dL',
+      other: '{0}dL',
+    ),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ceudailiotair',
-          one: '{0} cheudailiotair',
-          two: '{0} cheudailiotair',
-          few: '{0} ceudailiotairean',
-          other: '{0} ceudailiotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'c-liotair',
-          one: '{0} cheudailiotair',
-          two: '{0} cheudailiotair',
-          few: '{0} ceudailiotairean',
-          other: '{0} cL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cL',
-          one: '{0}cL',
-          two: '{0}cL',
-          few: '{0}cL',
-          other: '{0}cL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ceudailiotair',
+      one: '{0} cheudailiotair',
+      two: '{0} cheudailiotair',
+      few: '{0} ceudailiotairean',
+      other: '{0} ceudailiotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'c-liotair',
+      one: '{0} cheudailiotair',
+      two: '{0} cheudailiotair',
+      few: '{0} ceudailiotairean',
+      other: '{0} cL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cL',
+      one: '{0}cL',
+      two: '{0}cL',
+      few: '{0}cL',
+      other: '{0}cL',
+    ),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mililiotair',
-          one: '{0} mhililiotair',
-          two: '{0} mhililiotair',
-          few: '{0} mililiotairean',
-          other: '{0} mililiotair',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mL',
-          one: '{0} mhililiotair',
-          two: '{0} mhililiotair',
-          few: '{0} mililiotairean',
-          other: '{0} mL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mL',
-          one: '{0}mL',
-          two: '{0}mL',
-          few: '{0}mL',
-          other: '{0}mL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mililiotair',
+      one: '{0} mhililiotair',
+      two: '{0} mhililiotair',
+      few: '{0} mililiotairean',
+      other: '{0} mililiotair',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mL',
+      one: '{0} mhililiotair',
+      two: '{0} mhililiotair',
+      few: '{0} mililiotairean',
+      other: '{0} mL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mL',
+      one: '{0}mL',
+      two: '{0}mL',
+      few: '{0}mL',
+      other: '{0}mL',
+    ),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pinnt meatrach',
-          one: '{0} phinnt meatrach',
-          two: '{0} phinnt meatrach',
-          few: '{0} pinntean meatrach',
-          other: '{0} pinnt meatrach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpt',
-          one: '{0} phinnt meatrach',
-          two: '{0} phinnt meatrach',
-          few: '{0} pinntean meatrach',
-          other: '{0} mpt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0}mpt',
-          two: '{0}mpt',
-          few: '{0}mpt',
-          other: '{0}mpt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pinnt meatrach',
+      one: '{0} phinnt meatrach',
+      two: '{0} phinnt meatrach',
+      few: '{0} pinntean meatrach',
+      other: '{0} pinnt meatrach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mpt',
+      one: '{0} phinnt meatrach',
+      two: '{0} phinnt meatrach',
+      few: '{0} pinntean meatrach',
+      other: '{0} mpt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pt',
+      one: '{0}mpt',
+      two: '{0}mpt',
+      few: '{0}mpt',
+      other: '{0}mpt',
+    ),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cupa meatrach',
-          one: '{0} chupa meatrach',
-          two: '{0} chupa meatrach',
-          few: '{0} cupannan meatrach',
-          other: '{0} cupa meatrach',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0} chupa meatrach',
-          two: '{0} chupa meatrach',
-          few: '{0} cupannan meatrach',
-          other: '{0} mc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0}mc',
-          two: '{0}mc',
-          few: '{0}mc',
-          other: '{0}mc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cupa meatrach',
+      one: '{0} chupa meatrach',
+      two: '{0} chupa meatrach',
+      few: '{0} cupannan meatrach',
+      other: '{0} cupa meatrach',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mcup',
+      one: '{0} chupa meatrach',
+      two: '{0} chupa meatrach',
+      few: '{0} cupannan meatrach',
+      other: '{0} mc',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mcup',
+      one: '{0}mc',
+      two: '{0}mc',
+      few: '{0}mc',
+      other: '{0}mc',
+    ),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'acair-throigh',
-          one: '{0} acair-throigh',
-          two: '{0} acair-throigh',
-          few: '{0} acair-throighean',
-          other: '{0} acair-throigh',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'acair-throigh',
-          one: '{0} acair-throigh',
-          two: '{0} acair-throigh',
-          few: '{0} acair-throighean',
-          other: '{0} ac ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ac ft',
-          one: '{0}ac ft',
-          two: '{0}ac ft',
-          few: '{0}ac ft',
-          other: '{0}ac ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'acair-throigh',
+      one: '{0} acair-throigh',
+      two: '{0} acair-throigh',
+      few: '{0} acair-throighean',
+      other: '{0} acair-throigh',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'acair-throigh',
+      one: '{0} acair-throigh',
+      two: '{0} acair-throigh',
+      few: '{0} acair-throighean',
+      other: '{0} ac ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ac ft',
+      one: '{0}ac ft',
+      two: '{0}ac ft',
+      few: '{0}ac ft',
+      other: '{0}ac ft',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'buiseal',
-          one: '{0} bhuiseal',
-          two: '{0} bhuiseal',
-          few: '{0} buisealan',
-          other: '{0} buiseal',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'buiseal',
-          one: '{0} bhuiseal',
-          two: '{0} bhuiseal',
-          few: '{0} buisealan',
-          other: '{0} bu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'buiseal',
-          one: '{0}bu',
-          two: '{0}bu',
-          few: '{0}bu',
-          other: '{0}bu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'buiseal',
+      one: '{0} bhuiseal',
+      two: '{0} bhuiseal',
+      few: '{0} buisealan',
+      other: '{0} buiseal',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'buiseal',
+      one: '{0} bhuiseal',
+      two: '{0} bhuiseal',
+      few: '{0} buisealan',
+      other: '{0} bu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'buiseal',
+      one: '{0}bu',
+      two: '{0}bu',
+      few: '{0}bu',
+      other: '{0}bu',
+    ),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'galan',
-          one: '{0} ghalan',
-          two: '{0} ghalan',
-          few: '{0} galanan',
-          other: '{0} galan',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0} gal',
-          two: '{0} gal',
-          few: '{0} gal',
-          other: '{0} gal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0}gal',
-          two: '{0}gal',
-          few: '{0}gal',
-          other: '{0}gal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'galan',
+      one: '{0} ghalan',
+      two: '{0} ghalan',
+      few: '{0} galanan',
+      other: '{0} galan',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gal',
+      one: '{0} gal',
+      two: '{0} gal',
+      few: '{0} gal',
+      other: '{0} gal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gal',
+      one: '{0}gal',
+      two: '{0}gal',
+      few: '{0}gal',
+      other: '{0}gal',
+    ),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'galan ìmpireil',
-          one: '{0} ghalan ìmpireil',
-          two: '{0} ghalan ìmpireil',
-          few: '{0} galanan ìmpireil',
-          other: '{0} galan ìmpireil',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gal ìmp.',
-          one: '{0} ghal ìmp.',
-          two: '{0} ghal ìmp.',
-          few: '{0} gal ìmp.',
-          other: '{0} gal ìmp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gal ìmp.',
-          one: '{0} ghal ì.',
-          two: '{0} ghal ì.',
-          few: '{0} gal ì.',
-          other: '{0} gal ì.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'galan ìmpireil',
+      one: '{0} ghalan ìmpireil',
+      two: '{0} ghalan ìmpireil',
+      few: '{0} galanan ìmpireil',
+      other: '{0} galan ìmpireil',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gal ìmp.',
+      one: '{0} ghal ìmp.',
+      two: '{0} ghal ìmp.',
+      few: '{0} gal ìmp.',
+      other: '{0} gal ìmp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gal ìmp.',
+      one: '{0} ghal ì.',
+      two: '{0} ghal ì.',
+      few: '{0} gal ì.',
+      other: '{0} gal ì.',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'càrt',
-          one: '{0} chàrt',
-          two: '{0} chàrt',
-          few: '{0} càrtan',
-          other: '{0} càrt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'càrt',
-          one: '{0} chàrt',
-          two: '{0} chàrt',
-          few: '{0} càrt',
-          other: '{0} càrt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'càrt',
-          one: '{0}càrt',
-          two: '{0}càrt',
-          few: '{0}càrt',
-          other: '{0}càrt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'càrt',
+      one: '{0} chàrt',
+      two: '{0} chàrt',
+      few: '{0} càrtan',
+      other: '{0} càrt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'càrt',
+      one: '{0} chàrt',
+      two: '{0} chàrt',
+      few: '{0} càrt',
+      other: '{0} càrt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'càrt',
+      one: '{0}càrt',
+      two: '{0}càrt',
+      few: '{0}càrt',
+      other: '{0}càrt',
+    ),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pinnt',
-          one: '{0} phinnt',
-          two: '{0} phinnt',
-          few: '{0} pinntean',
-          other: '{0} pinnt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pinnt',
-          one: '{0} phinnt',
-          two: '{0} phinnt',
-          few: '{0} pinntean',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0}pt',
-          two: '{0}pt',
-          few: '{0}pt',
-          other: '{0}pt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pinnt',
+      one: '{0} phinnt',
+      two: '{0} phinnt',
+      few: '{0} pinntean',
+      other: '{0} pinnt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pinnt',
+      one: '{0} phinnt',
+      two: '{0} phinnt',
+      few: '{0} pinntean',
+      other: '{0} pt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pt',
+      one: '{0}pt',
+      two: '{0}pt',
+      few: '{0}pt',
+      other: '{0}pt',
+    ),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cupa',
-          one: '{0} chupa',
-          two: '{0} chupa',
-          few: '{0} cupannan',
-          other: '{0} cupa',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cupa',
-          one: '{0} chupa',
-          two: '{0} chupa',
-          few: '{0} cupannan',
-          other: '{0} c',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cupa',
-          one: '{0}c',
-          two: '{0}c',
-          few: '{0}c',
-          other: '{0}c',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cupa',
+      one: '{0} chupa',
+      two: '{0} chupa',
+      few: '{0} cupannan',
+      other: '{0} cupa',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cupa',
+      one: '{0} chupa',
+      two: '{0} chupa',
+      few: '{0} cupannan',
+      other: '{0} c',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cupa',
+      one: '{0}c',
+      two: '{0}c',
+      few: '{0}c',
+      other: '{0}c',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unnsa-dighe',
-          one: '{0} unnsa-dighe',
-          two: '{0} unnsa-dighe',
-          few: '{0} unnsachan-dighe',
-          other: '{0} unnsa-dighe',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          two: '{0} fl oz',
-          few: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0}fl oz',
-          two: '{0}fl oz',
-          few: '{0}fl oz',
-          other: '{0}fl oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unnsa-dighe',
+      one: '{0} unnsa-dighe',
+      two: '{0} unnsa-dighe',
+      few: '{0} unnsachan-dighe',
+      other: '{0} unnsa-dighe',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      two: '{0} fl oz',
+      few: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0}fl oz',
+      two: '{0}fl oz',
+      few: '{0}fl oz',
+      other: '{0}fl oz',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unnsa-dighe ìmpireil',
-          one: '{0} unnsa-dighe ìmpireil',
-          two: '{0} unnsa-dighe ìmpireil',
-          few: '{0} unnsachan-dighe ìmpireil',
-          other: '{0} unnsa-dighe ìmpireil',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fl oz ìmp.',
-          one: '{0} fl oz ìmp.',
-          two: '{0} fl oz ìmp.',
-          few: '{0} fl oz ìmp.',
-          other: '{0} fl oz ìmp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl oz ìmp.',
-          one: '{0}fl oz ì.',
-          two: '{0}fl oz ì.',
-          few: '{0}fl oz ì.',
-          other: '{0}fl oz ì.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unnsa-dighe ìmpireil',
+      one: '{0} unnsa-dighe ìmpireil',
+      two: '{0} unnsa-dighe ìmpireil',
+      few: '{0} unnsachan-dighe ìmpireil',
+      other: '{0} unnsa-dighe ìmpireil',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fl oz ìmp.',
+      one: '{0} fl oz ìmp.',
+      two: '{0} fl oz ìmp.',
+      few: '{0} fl oz ìmp.',
+      other: '{0} fl oz ìmp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl oz ìmp.',
+      one: '{0}fl oz ì.',
+      two: '{0}fl oz ì.',
+      few: '{0}fl oz ì.',
+      other: '{0}fl oz ì.',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'spàin-bhùird',
-          one: '{0} spàin-bhùird',
-          two: '{0} spàin-bhùird',
-          few: '{0} spàinean-bùird',
-          other: '{0} spàin-bhùird',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'spàin',
-          one: '{0} spàin',
-          two: '{0} spàin',
-          few: '{0} spàin',
-          other: '{0} spàin',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sp',
-          one: '{0}sp',
-          two: '{0}sp',
-          few: '{0}sp',
-          other: '{0}sp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'spàin-bhùird',
+      one: '{0} spàin-bhùird',
+      two: '{0} spàin-bhùird',
+      few: '{0} spàinean-bùird',
+      other: '{0} spàin-bhùird',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'spàin',
+      one: '{0} spàin',
+      two: '{0} spàin',
+      few: '{0} spàin',
+      other: '{0} spàin',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sp',
+      one: '{0}sp',
+      two: '{0}sp',
+      few: '{0}sp',
+      other: '{0}sp',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'spàin-teatha',
-          one: '{0} spàin-teatha',
-          two: '{0} spàin-teatha',
-          few: '{0} spàinean-teatha',
-          other: '{0} spàin-teatha',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'spàin-t',
-          one: '{0} sp-t',
-          two: '{0} sp-t',
-          few: '{0} sp-t',
-          other: '{0} sp-t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sp-t',
-          one: '{0}sp-t',
-          two: '{0}sp-t',
-          few: '{0}sp-t',
-          other: '{0}sp-t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'spàin-teatha',
+      one: '{0} spàin-teatha',
+      two: '{0} spàin-teatha',
+      few: '{0} spàinean-teatha',
+      other: '{0} spàin-teatha',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'spàin-t',
+      one: '{0} sp-t',
+      two: '{0} sp-t',
+      few: '{0} sp-t',
+      other: '{0} sp-t',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sp-t',
+      one: '{0}sp-t',
+      two: '{0}sp-t',
+      few: '{0}sp-t',
+      other: '{0}sp-t',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'baraill',
-          one: '{0} bharaill',
-          two: '{0} bharaill',
-          few: '{0} baraillean',
-          other: '{0} baraill',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'baraill',
-          one: '{0} bharaill',
-          two: '{0} bharaill',
-          few: '{0} baraillean',
-          other: '{0} bbl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bbl',
-          one: '{0}bbl',
-          two: '{0}bbl',
-          few: '{0}bbl',
-          other: '{0}bbl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'baraill',
+      one: '{0} bharaill',
+      two: '{0} bharaill',
+      few: '{0} baraillean',
+      other: '{0} baraill',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'baraill',
+      one: '{0} bharaill',
+      two: '{0} bharaill',
+      few: '{0} baraillean',
+      other: '{0} bbl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'bbl',
+      one: '{0}bbl',
+      two: '{0}bbl',
+      few: '{0}bbl',
+      other: '{0}bbl',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'spàin-mhìlsein',
-          one: '{0} spàin-mhìlsein',
-          two: '{0} spàin-mhìlsein',
-          few: '{0} spàinean-mìlsein',
-          other: '{0} spàin-mhìlsein',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'spàin-mhìl',
-          one: '{0} spàin-mhìl',
-          two: '{0} spàin-mhìl',
-          few: '{0} spàin-mìl',
-          other: '{0} spàin-mhìl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sp-mhìl',
-          one: '{0}sp-mhìl',
-          two: '{0}sp-mhìl',
-          few: '{0}sp-mìl',
-          other: '{0}sp-mhìl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'spàin-mhìlsein',
+      one: '{0} spàin-mhìlsein',
+      two: '{0} spàin-mhìlsein',
+      few: '{0} spàinean-mìlsein',
+      other: '{0} spàin-mhìlsein',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'spàin-mhìl',
+      one: '{0} spàin-mhìl',
+      two: '{0} spàin-mhìl',
+      few: '{0} spàin-mìl',
+      other: '{0} spàin-mhìl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sp-mhìl',
+      one: '{0}sp-mhìl',
+      two: '{0}sp-mhìl',
+      few: '{0}sp-mìl',
+      other: '{0}sp-mhìl',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'spàin-mhìlsein ìmpireil',
-          one: '{0} spàin-mhìlsein ìmpireil',
-          two: '{0} spàin-mhìlsein ìmpireil',
-          few: '{0} spàinean-mìlsein ìmpireil',
-          other: '{0} spàin-mhìlsein ìmpireil',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'spàin-mhìl ìmp.',
-          one: '{0} spàin-mhìl ìmp.',
-          two: '{0} spàin-mhìl ìmp.',
-          few: '{0} spàin-mìl ìmp.',
-          other: '{0} spàin-mhìl ìmp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sp-mhìl ìmp.',
-          one: '{0}sp-mìl ì.',
-          two: '{0}sp-mìl ì.',
-          few: '{0}sp-mìl ì.',
-          other: '{0}sp-mìl ì.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'spàin-mhìlsein ìmpireil',
+      one: '{0} spàin-mhìlsein ìmpireil',
+      two: '{0} spàin-mhìlsein ìmpireil',
+      few: '{0} spàinean-mìlsein ìmpireil',
+      other: '{0} spàin-mhìlsein ìmpireil',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'spàin-mhìl ìmp.',
+      one: '{0} spàin-mhìl ìmp.',
+      two: '{0} spàin-mhìl ìmp.',
+      few: '{0} spàin-mìl ìmp.',
+      other: '{0} spàin-mhìl ìmp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sp-mhìl ìmp.',
+      one: '{0}sp-mìl ì.',
+      two: '{0}sp-mìl ì.',
+      few: '{0}sp-mìl ì.',
+      other: '{0}sp-mìl ì.',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'boinne',
-          one: '{0} bhoinne',
-          two: '{0} bhoinne',
-          few: '{0} boinnean',
-          other: '{0} boinne',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'boinne',
-          one: '{0} bhoinne',
-          two: '{0} bhoinne',
-          few: '{0} boinne',
-          other: '{0} boinne',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'boinne',
-          one: '{0}bhoinne',
-          two: '{0}bhoinne',
-          few: '{0}boinne',
-          other: '{0}boinne',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'boinne',
+      one: '{0} bhoinne',
+      two: '{0} bhoinne',
+      few: '{0} boinnean',
+      other: '{0} boinne',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'boinne',
+      one: '{0} bhoinne',
+      two: '{0} bhoinne',
+      few: '{0} boinne',
+      other: '{0} boinne',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'boinne',
+      one: '{0}bhoinne',
+      two: '{0}bhoinne',
+      few: '{0}boinne',
+      other: '{0}boinne',
+    ),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'drama',
-          one: '{0} drama',
-          two: '{0} dhrama',
-          few: '{0} dramaichean',
-          other: '{0} drama',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'drama',
-          one: '{0} drama',
-          two: '{0} dhrama',
-          few: '{0} drama',
-          other: '{0} drama',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'drama',
-          one: '{0}drama',
-          two: '{0}dhrama',
-          few: '{0}drama',
-          other: '{0}drama',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'drama',
+      one: '{0} drama',
+      two: '{0} dhrama',
+      few: '{0} dramaichean',
+      other: '{0} drama',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'drama',
+      one: '{0} drama',
+      two: '{0} dhrama',
+      few: '{0} drama',
+      other: '{0} drama',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'drama',
+      one: '{0}drama',
+      two: '{0}dhrama',
+      few: '{0}drama',
+      other: '{0}drama',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'sigire',
-          one: '{0} sigire',
-          two: '{0} sigire',
-          few: '{0} sigirean',
-          other: '{0} sigire',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'sigire',
-          one: '{0} sigire',
-          two: '{0} sigire',
-          few: '{0} sigire',
-          other: '{0} sigire',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sigire',
-          one: '{0}sigire',
-          two: '{0}sigire',
-          few: '{0}sigire',
-          other: '{0}sigire',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'sigire',
+      one: '{0} sigire',
+      two: '{0} sigire',
+      few: '{0} sigirean',
+      other: '{0} sigire',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'sigire',
+      one: '{0} sigire',
+      two: '{0} sigire',
+      few: '{0} sigire',
+      other: '{0} sigire',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sigire',
+      one: '{0}sigire',
+      two: '{0}sigire',
+      few: '{0}sigire',
+      other: '{0}sigire',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'crudhagan',
-          one: '{0} chrudhagan',
-          two: '{0} chrudhagan',
-          few: '{0} crudhagain',
-          other: '{0} crudhagan',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'crudhagan',
-          one: '{0} chrudhag',
-          two: '{0} chrudhag',
-          few: '{0} crudhag',
-          other: '{0} crudhag',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'crudhag',
-          one: '{0}chrg.',
-          two: '{0}chrg.',
-          few: '{0}crg.',
-          other: '{0}crg.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'crudhagan',
+      one: '{0} chrudhagan',
+      two: '{0} chrudhagan',
+      few: '{0} crudhagain',
+      other: '{0} crudhagan',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'crudhagan',
+      one: '{0} chrudhag',
+      two: '{0} chrudhag',
+      few: '{0} crudhag',
+      other: '{0} crudhag',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'crudhag',
+      one: '{0}chrg.',
+      two: '{0}chrg.',
+      few: '{0}crg.',
+      other: '{0}crg.',
+    ),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'càrt ìmpireil',
-          one: '{0} chàrt ìmpireil',
-          two: '{0} chàrt ìmpireil',
-          few: '{0} càrtan ìmpireil',
-          other: '{0} càrt ìmpireil',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'càrt ìmp.',
-          one: '{0} chàrt ìmp.',
-          two: '{0} chàrt ìmp.',
-          few: '{0} càrt ìmp.',
-          other: '{0} càrt ìmp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'càrt ìmp.',
-          one: '{0}chàrt ì.',
-          two: '{0}chàrt ì.',
-          few: '{0}càrt ì.',
-          other: '{0}càrt ì.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'càrt ìmpireil',
+      one: '{0} chàrt ìmpireil',
+      two: '{0} chàrt ìmpireil',
+      few: '{0} càrtan ìmpireil',
+      other: '{0} càrt ìmpireil',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'càrt ìmp.',
+      one: '{0} chàrt ìmp.',
+      two: '{0} chàrt ìmp.',
+      few: '{0} càrt ìmp.',
+      other: '{0} càrt ìmp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'càrt ìmp.',
+      one: '{0}chàrt ì.',
+      two: '{0}chàrt ì.',
+      few: '{0}càrt ì.',
+      other: '{0}càrt ì.',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'solas',
-          one: '{0} sholas',
-          two: '{0} sholas',
-          few: '{0} solasan',
-          other: '{0} solas',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'solas',
-          one: '{0} sholas',
-          two: '{0} sholas',
-          few: '{0} solasan',
-          other: '{0} solas',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'solas',
-          one: '{0}sholas',
-          two: '{0}sholas',
-          few: '{0}solas.',
-          other: '{0}solas',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'solas',
+      one: '{0} sholas',
+      two: '{0} sholas',
+      few: '{0} solasan',
+      other: '{0} solas',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'solas',
+      one: '{0} sholas',
+      two: '{0} sholas',
+      few: '{0} solasan',
+      other: '{0} solas',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'solas',
+      one: '{0}sholas',
+      two: '{0}sholas',
+      few: '{0}solas.',
+      other: '{0}solas',
+    ),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pàirt sa bhillean',
-          one: '{0} phàirt sa bhillean',
-          two: '{0} phàirt sa bhillean',
-          few: '{0} pàirtean sa bhillean',
-          other: '{0} pàirt sa bhillean',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pàirt/billean',
-          one: '{0} phàirt sa bhillean',
-          two: '{0} phàirt sa bhillean',
-          few: '{0} pàirtean sa bhillean',
-          other: '{0} ppb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pàirt/billean',
-          one: '{0}ppb',
-          two: '{0}ppb',
-          few: '{0}ppb',
-          other: '{0}ppb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pàirt sa bhillean',
+      one: '{0} phàirt sa bhillean',
+      two: '{0} phàirt sa bhillean',
+      few: '{0} pàirtean sa bhillean',
+      other: '{0} pàirt sa bhillean',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pàirt/billean',
+      one: '{0} phàirt sa bhillean',
+      two: '{0} phàirt sa bhillean',
+      few: '{0} pàirtean sa bhillean',
+      other: '{0} ppb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pàirt/billean',
+      one: '{0}ppb',
+      two: '{0}ppb',
+      few: '{0}ppb',
+      other: '{0}ppb',
+    ),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'oidhche',
-          one: '{0} oidhche',
-          two: '{0} oidhche',
-          few: '{0} oidhcheannan',
-          other: '{0} oidhche',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'oidhche',
-          one: '{0} oidhche',
-          two: '{0} oidhche',
-          few: '{0} oidhche.',
-          other: '{0} oidhche',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oidhche',
-          one: '{0}oidh.',
-          two: '{0}oidh.',
-          few: '{0}oidh.',
-          other: '{0}oidh.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'oidhche',
+      one: '{0} oidhche',
+      two: '{0} oidhche',
+      few: '{0} oidhcheannan',
+      other: '{0} oidhche',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'oidhche',
+      one: '{0} oidhche',
+      two: '{0} oidhche',
+      few: '{0} oidhche.',
+      other: '{0} oidhche',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'oidhche',
+      one: '{0}oidh.',
+      two: '{0}oidh.',
+      few: '{0}oidh.',
+      other: '{0}oidh.',
+    ),
+  );
 }
 
 class DateFieldsGd extends DateFields {
   const DateFieldsGd(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'linn',
-        short: 'linn',
-        narrow: 'li.',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'linn', short: 'linn', narrow: 'li.');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'bliadhna',
-          short: 'blia.',
-          narrow: 'bl.',
-        ),
-        previous: MultiLength(
-          long: 'an-uiridh',
-          short: 'an-uiridh',
-          narrow: 'an-uir.',
-        ),
-        now: MultiLength(
-          long: 'am bliadhna',
-          short: 'am bliadhna',
-          narrow: 'am bl.',
-        ),
-        next: MultiLength(
-          long: 'an ath-bhliadhna',
-          short: 'an ath-bhliadhna',
-          narrow: 'an ath-bhl.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} bhliadhna air ais',
-            two: '{0} bhliadhna air ais',
-            few: '{0} bhliadhnaichean air ais',
-            other: '{0} bliadhna air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} bhlia.',
-            two: 'o {0} bhlia.',
-            few: 'o {0} blia.',
-            other: 'o {0} blia.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} bhl.',
-            two: '-{0} bhl.',
-            few: '-{0} bl.',
-            other: '-{0} bl.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} bhliadhna',
-            two: 'an ceann {0} bhliadhna',
-            few: 'an ceann {0} bliadhnaichean',
-            other: 'an ceann {0} bliadhna',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} bhlia.',
-            two: 'an {0} bhlia.',
-            few: 'an {0} blia.',
-            other: 'an {0} blia.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} bhl.',
-            two: '+{0} bhl.',
-            few: '+{0} bl.',
-            other: '+{0} bl.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'bliadhna', short: 'blia.', narrow: 'bl.'),
+    previous: MultiLength(
+      long: 'an-uiridh',
+      short: 'an-uiridh',
+      narrow: 'an-uir.',
+    ),
+    now: MultiLength(
+      long: 'am bliadhna',
+      short: 'am bliadhna',
+      narrow: 'am bl.',
+    ),
+    next: MultiLength(
+      long: 'an ath-bhliadhna',
+      short: 'an ath-bhliadhna',
+      narrow: 'an ath-bhl.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} bhliadhna air ais',
+        two: '{0} bhliadhna air ais',
+        few: '{0} bhliadhnaichean air ais',
+        other: '{0} bliadhna air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} bhlia.',
+        two: 'o {0} bhlia.',
+        few: 'o {0} blia.',
+        other: 'o {0} blia.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} bhl.',
+        two: '-{0} bhl.',
+        few: '-{0} bl.',
+        other: '-{0} bl.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} bhliadhna',
+        two: 'an ceann {0} bhliadhna',
+        few: 'an ceann {0} bliadhnaichean',
+        other: 'an ceann {0} bliadhna',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} bhlia.',
+        two: 'an {0} bhlia.',
+        few: 'an {0} blia.',
+        other: 'an {0} blia.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} bhl.',
+        two: '+{0} bhl.',
+        few: '+{0} bl.',
+        other: '+{0} bl.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'cairteal',
-          short: 'cairt.',
-          narrow: 'c.',
-        ),
-        previous: MultiLength(
-          long: 'an cairteal seo chaidh',
-          short: 'an cairt. sa chaidh',
-          narrow: 'c. ch.',
-        ),
-        now: MultiLength(
-          long: 'an cairteal seo',
-          short: 'an cairt. seo',
-          narrow: 'an c. seo',
-        ),
-        next: MultiLength(
-          long: 'an ath-chairteal',
-          short: 'an ath-chairt.',
-          narrow: 'ath-ch.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} chairteal air ais',
-            two: '{0} chairteal air ais',
-            few: '{0} cairtealan air ais',
-            other: '{0} cairteal air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} chairt.',
-            two: 'o {0} chairt.',
-            few: 'o {0} cairt.',
-            other: 'o {0} cairt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} c.',
-            two: '-{0} c.',
-            few: '-{0} c.',
-            other: '-{0} c.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} chairteil',
-            two: 'an ceann {0} chairteil',
-            few: 'an ceann {0} cairtealan',
-            other: 'an ceann {0} cairteil',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} chairt.',
-            two: 'an {0} chairt.',
-            few: 'an {0} cairt.',
-            other: 'an {0} cairt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} c.',
-            two: '+{0} c.',
-            few: '+{0} c.',
-            other: '+{0} c.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'cairteal', short: 'cairt.', narrow: 'c.'),
+    previous: MultiLength(
+      long: 'an cairteal seo chaidh',
+      short: 'an cairt. sa chaidh',
+      narrow: 'c. ch.',
+    ),
+    now: MultiLength(
+      long: 'an cairteal seo',
+      short: 'an cairt. seo',
+      narrow: 'an c. seo',
+    ),
+    next: MultiLength(
+      long: 'an ath-chairteal',
+      short: 'an ath-chairt.',
+      narrow: 'ath-ch.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} chairteal air ais',
+        two: '{0} chairteal air ais',
+        few: '{0} cairtealan air ais',
+        other: '{0} cairteal air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} chairt.',
+        two: 'o {0} chairt.',
+        few: 'o {0} cairt.',
+        other: 'o {0} cairt.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} c.',
+        two: '-{0} c.',
+        few: '-{0} c.',
+        other: '-{0} c.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} chairteil',
+        two: 'an ceann {0} chairteil',
+        few: 'an ceann {0} cairtealan',
+        other: 'an ceann {0} cairteil',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} chairt.',
+        two: 'an {0} chairt.',
+        few: 'an {0} cairt.',
+        other: 'an {0} cairt.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} c.',
+        two: '+{0} c.',
+        few: '+{0} c.',
+        other: '+{0} c.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'mìos',
-          short: 'mìos',
-          narrow: 'mì.',
-        ),
-        previous: MultiLength(
-          long: 'am mìos seo chaidh',
-          short: 'am mìos sa chaidh',
-          narrow: 'mì. ch.',
-        ),
-        now: MultiLength(
-          long: 'am mìos seo',
-          short: 'am mìos seo',
-          narrow: 'am mì. seo',
-        ),
-        next: MultiLength(
-          long: 'an ath-mhìos',
-          short: 'an ath-mhìos',
-          narrow: 'ath-mhì.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} mhìos air ais',
-            two: '{0} mhìos air ais',
-            few: '{0} mìosan air ais',
-            other: '{0} mìos air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} mhìos.',
-            two: 'o {0} mhìos.',
-            few: 'o {0} mìos.',
-            other: 'o {0} mìos.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} mhì.',
-            two: '-{0} mhì.',
-            few: '-{0} mì.',
-            other: '-{0} mì.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} mhìosa',
-            two: 'an ceann {0} mhìosa',
-            few: 'an ceann {0} mìosan',
-            other: 'an ceann {0} mìosa',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} mhìos.',
-            two: 'an {0} mhìos.',
-            few: 'an {0} mìos.',
-            other: 'an {0} mìos.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} mhì.',
-            two: '+{0} mhì.',
-            few: '+{0} mì.',
-            other: '+{0} mì.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'mìos', short: 'mìos', narrow: 'mì.'),
+    previous: MultiLength(
+      long: 'am mìos seo chaidh',
+      short: 'am mìos sa chaidh',
+      narrow: 'mì. ch.',
+    ),
+    now: MultiLength(
+      long: 'am mìos seo',
+      short: 'am mìos seo',
+      narrow: 'am mì. seo',
+    ),
+    next: MultiLength(
+      long: 'an ath-mhìos',
+      short: 'an ath-mhìos',
+      narrow: 'ath-mhì.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} mhìos air ais',
+        two: '{0} mhìos air ais',
+        few: '{0} mìosan air ais',
+        other: '{0} mìos air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} mhìos.',
+        two: 'o {0} mhìos.',
+        few: 'o {0} mìos.',
+        other: 'o {0} mìos.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} mhì.',
+        two: '-{0} mhì.',
+        few: '-{0} mì.',
+        other: '-{0} mì.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} mhìosa',
+        two: 'an ceann {0} mhìosa',
+        few: 'an ceann {0} mìosan',
+        other: 'an ceann {0} mìosa',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} mhìos.',
+        two: 'an {0} mhìos.',
+        few: 'an {0} mìos.',
+        other: 'an {0} mìos.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} mhì.',
+        two: '+{0} mhì.',
+        few: '+{0} mì.',
+        other: '+{0} mì.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'seachdain',
-          short: 'seachd.',
-          narrow: 'sn.',
-        ),
-        previous: MultiLength(
-          long: 'an t-seachdain seo chaidh',
-          short: 'seachd. sa chaidh',
-          narrow: 'sn. ch.',
-        ),
-        now: MultiLength(
-          long: 'an t-seachdain seo',
-          short: 'an t-seachd. seo',
-          narrow: 'an t-sn. seo',
-        ),
-        next: MultiLength(
-          long: 'an ath-sheachdain',
-          short: 'an ath-sheachd.',
-          narrow: 'ath-shn.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} seachdain air ais',
-            two: '{0} sheachdain air ais',
-            few: '{0} seachdainean air ais',
-            other: '{0} seachdain air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} sheachd.',
-            two: 'o {0} sheachd.',
-            few: 'o {0} seachd.',
-            other: 'o {0} seachd.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} sn.',
-            two: '-{0} sn.',
-            few: '-{0} sn.',
-            other: '-{0} sn.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} seachdain',
-            two: 'an ceann {0} sheachdain',
-            few: 'an ceann {0} seachdainean',
-            other: 'an ceann {0} seachdain',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} sheachd.',
-            two: 'an {0} sheachd.',
-            few: 'an {0} seachd.',
-            other: 'an {0} seachd.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} sn.',
-            two: '+{0} sn.',
-            few: '+{0} sn.',
-            other: '+{0} sn.',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'seachdain',
+      short: 'seachd.',
+      narrow: 'sn.',
+    ),
+    previous: MultiLength(
+      long: 'an t-seachdain seo chaidh',
+      short: 'seachd. sa chaidh',
+      narrow: 'sn. ch.',
+    ),
+    now: MultiLength(
+      long: 'an t-seachdain seo',
+      short: 'an t-seachd. seo',
+      narrow: 'an t-sn. seo',
+    ),
+    next: MultiLength(
+      long: 'an ath-sheachdain',
+      short: 'an ath-sheachd.',
+      narrow: 'ath-shn.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} seachdain air ais',
+        two: '{0} sheachdain air ais',
+        few: '{0} seachdainean air ais',
+        other: '{0} seachdain air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} sheachd.',
+        two: 'o {0} sheachd.',
+        few: 'o {0} seachd.',
+        other: 'o {0} seachd.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} sn.',
+        two: '-{0} sn.',
+        few: '-{0} sn.',
+        other: '-{0} sn.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} seachdain',
+        two: 'an ceann {0} sheachdain',
+        few: 'an ceann {0} seachdainean',
+        other: 'an ceann {0} seachdain',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} sheachd.',
+        two: 'an {0} sheachd.',
+        few: 'an {0} seachd.',
+        other: 'an {0} seachd.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} sn.',
+        two: '+{0} sn.',
+        few: '+{0} sn.',
+        other: '+{0} sn.',
+      ),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'seachdain dhen mhìos',
-        short: 'seachd. mìos',
-        narrow: 'seachd. mìos',
-      );
+    long: 'seachdain dhen mhìos',
+    short: 'seachd. mìos',
+    narrow: 'seachd. mìos',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'latha',
-          short: 'là',
-          narrow: 'là',
-        ),
-        previous: MultiLength(
-          long: 'an-dè',
-          short: 'an-dè',
-          narrow: 'an-dè',
-        ),
-        now: MultiLength(
-          long: 'an-diugh',
-          short: 'an-diugh',
-          narrow: 'an-diugh',
-        ),
-        next: MultiLength(
-          long: 'a-màireach',
-          short: 'a-màireach',
-          narrow: 'a-màireach',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} latha air ais',
-            two: '{0} latha air ais',
-            few: '{0} làithean air ais',
-            other: '{0} latha air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} là',
-            two: 'o {0} là',
-            few: 'o {0} là.',
-            other: 'o {0} là',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} là',
-            two: '-{0} là',
-            few: '-{0} là',
-            other: '-{0} là',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} latha',
-            two: 'an ceann {0} latha',
-            few: 'an ceann {0} làithean',
-            other: 'an ceann {0} latha',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} là',
-            two: 'an {0} là',
-            few: 'an {0} là.',
-            other: 'an {0} là',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} là',
-            two: '+{0} là',
-            few: '+{0} là',
-            other: '+{0} là',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'latha', short: 'là', narrow: 'là'),
+    previous: MultiLength(long: 'an-dè', short: 'an-dè', narrow: 'an-dè'),
+    now: MultiLength(long: 'an-diugh', short: 'an-diugh', narrow: 'an-diugh'),
+    next: MultiLength(
+      long: 'a-màireach',
+      short: 'a-màireach',
+      narrow: 'a-màireach',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} latha air ais',
+        two: '{0} latha air ais',
+        few: '{0} làithean air ais',
+        other: '{0} latha air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} là',
+        two: 'o {0} là',
+        few: 'o {0} là.',
+        other: 'o {0} là',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} là',
+        two: '-{0} là',
+        few: '-{0} là',
+        other: '-{0} là',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} latha',
+        two: 'an ceann {0} latha',
+        few: 'an ceann {0} làithean',
+        other: 'an ceann {0} latha',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} là',
+        two: 'an {0} là',
+        few: 'an {0} là.',
+        other: 'an {0} là',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} là',
+        two: '+{0} là',
+        few: '+{0} là',
+        other: '+{0} là',
+      ),
+    ),
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'là dhen bhliadhna',
-        short: 'là blia.',
-        narrow: 'là bl.',
-      );
+    long: 'là dhen bhliadhna',
+    short: 'là blia.',
+    narrow: 'là bl.',
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'latha na seachdaine',
-        short: 'là seachd.',
-        narrow: 'là sn.',
-      );
+    long: 'latha na seachdaine',
+    short: 'là seachd.',
+    narrow: 'là sn.',
+  );
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'là na seachdaine dhen mhìos',
-        short: 'là seachd. mìos',
-        narrow: 'là sn. mìos',
-      );
+    long: 'là na seachdaine dhen mhìos',
+    short: 'là seachd. mìos',
+    narrow: 'là sn. mìos',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'DiDòmhnaich seo chaidh',
-          short: 'DiD. sa chaidh',
-          narrow: 'Dò. ch.',
-        ),
-        now: MultiLength(
-          long: 'DiDòmhnaich',
-          short: 'DiD.',
-          narrow: 'Dò.',
-        ),
-        next: MultiLength(
-          long: 'DiDòmhnaich seo tighinn',
-          short: 'DiD. sa tighinn',
-          narrow: 'Dò. ti.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} DiDòmhnaich air ais',
-            two: '{0} DhiDòmhnaich air ais',
-            few: '{0} DiDòmhnaich air ais',
-            other: '{0} DiDòmhnaich air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} DiD. air ais',
-            two: '{0} DhiD. air ais',
-            few: '{0} DiD. air ais',
-            other: '{0} DiD. air ais',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'o {0} DiD.',
-            two: 'o {0} DhiD.',
-            few: 'o {0} DiD.',
-            other: 'o {0} DiD.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiDòmhnaich',
-            two: 'an ceann {0} DhiDòmhnaich',
-            few: 'an ceann {0} DiDòmhnaich',
-            other: 'an ceann {0} DiDòmhnaich',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiD.',
-            two: 'an ceann {0} DhiD.',
-            few: 'an ceann {0} DiD.',
-            other: 'an ceann {0} DiD.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'an {0} DiD.',
-            two: 'an {0} DhiD.',
-            few: 'an {0} DiD.',
-            other: 'an {0} DiD.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'DiDòmhnaich seo chaidh',
+      short: 'DiD. sa chaidh',
+      narrow: 'Dò. ch.',
+    ),
+    now: MultiLength(long: 'DiDòmhnaich', short: 'DiD.', narrow: 'Dò.'),
+    next: MultiLength(
+      long: 'DiDòmhnaich seo tighinn',
+      short: 'DiD. sa tighinn',
+      narrow: 'Dò. ti.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} DiDòmhnaich air ais',
+        two: '{0} DhiDòmhnaich air ais',
+        few: '{0} DiDòmhnaich air ais',
+        other: '{0} DiDòmhnaich air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} DiD. air ais',
+        two: '{0} DhiD. air ais',
+        few: '{0} DiD. air ais',
+        other: '{0} DiD. air ais',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'o {0} DiD.',
+        two: 'o {0} DhiD.',
+        few: 'o {0} DiD.',
+        other: 'o {0} DiD.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiDòmhnaich',
+        two: 'an ceann {0} DhiDòmhnaich',
+        few: 'an ceann {0} DiDòmhnaich',
+        other: 'an ceann {0} DiDòmhnaich',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiD.',
+        two: 'an ceann {0} DhiD.',
+        few: 'an ceann {0} DiD.',
+        other: 'an ceann {0} DiD.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'an {0} DiD.',
+        two: 'an {0} DhiD.',
+        few: 'an {0} DiD.',
+        other: 'an {0} DiD.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'DiLuain seo chaidh',
-          short: 'DiL. sa chaidh',
-          narrow: 'Lu. ch.',
-        ),
-        now: MultiLength(
-          long: 'DiLuain',
-          short: 'DiL.',
-          narrow: 'Lu.',
-        ),
-        next: MultiLength(
-          long: 'DiLuain seo tighinn',
-          short: 'DiL. sa tighinn',
-          narrow: 'Lu. ti.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} DiLuain air ais',
-            two: '{0} DhiLuain air ais',
-            few: '{0} DiLuain air ais',
-            other: '{0} DiLuain air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} DiL. air ais',
-            two: '{0} DhiL. air ais',
-            few: '{0} DiL. air ais',
-            other: '{0} DiL. air ais',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'o {0} DiL.',
-            two: 'o {0} DhiL.',
-            few: 'o {0} DiL.',
-            other: 'o {0} DiL.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiLuain',
-            two: 'an ceann {0} DhiLuain',
-            few: 'an ceann {0} DiLuain',
-            other: 'an ceann {0} DiLuain',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiL.',
-            two: 'an ceann {0} DhiL.',
-            few: 'an ceann {0} DiL.',
-            other: 'an ceann {0} DiL.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'an {0} DiL.',
-            two: 'an {0} DhiL.',
-            few: 'an {0} DiL.',
-            other: 'an {0} DiL.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'DiLuain seo chaidh',
+      short: 'DiL. sa chaidh',
+      narrow: 'Lu. ch.',
+    ),
+    now: MultiLength(long: 'DiLuain', short: 'DiL.', narrow: 'Lu.'),
+    next: MultiLength(
+      long: 'DiLuain seo tighinn',
+      short: 'DiL. sa tighinn',
+      narrow: 'Lu. ti.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} DiLuain air ais',
+        two: '{0} DhiLuain air ais',
+        few: '{0} DiLuain air ais',
+        other: '{0} DiLuain air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} DiL. air ais',
+        two: '{0} DhiL. air ais',
+        few: '{0} DiL. air ais',
+        other: '{0} DiL. air ais',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'o {0} DiL.',
+        two: 'o {0} DhiL.',
+        few: 'o {0} DiL.',
+        other: 'o {0} DiL.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiLuain',
+        two: 'an ceann {0} DhiLuain',
+        few: 'an ceann {0} DiLuain',
+        other: 'an ceann {0} DiLuain',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiL.',
+        two: 'an ceann {0} DhiL.',
+        few: 'an ceann {0} DiL.',
+        other: 'an ceann {0} DiL.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'an {0} DiL.',
+        two: 'an {0} DhiL.',
+        few: 'an {0} DiL.',
+        other: 'an {0} DiL.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'DiMàirt seo chaidh',
-          short: 'DiM. sa chaidh',
-          narrow: 'Mà. ch.',
-        ),
-        now: MultiLength(
-          long: 'DiMàirt',
-          short: 'DiM.',
-          narrow: 'Mà.',
-        ),
-        next: MultiLength(
-          long: 'DiMàirt seo tighinn',
-          short: 'DiM. sa tighinn',
-          narrow: 'Mà. ti.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} DiMàirt air ais',
-            two: '{0} DhiMàirt air ais',
-            few: '{0} DiMàirt air ais',
-            other: '{0} DiMàirt air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} DiM. air ais',
-            two: '{0} DhiM. air ais',
-            few: '{0} DiM. air ais',
-            other: '{0} DiM. air ais',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'o {0} DiM.',
-            two: 'o {0} DhiM.',
-            few: 'o {0} DiM.',
-            other: 'o {0} DiM.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiMàirt',
-            two: 'an ceann {0} DhiMàirt',
-            few: 'an ceann {0} DiMàirt',
-            other: 'an ceann {0} DiMàirt',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiM.',
-            two: 'an ceann {0} DhiM.',
-            few: 'an ceann {0} DiM.',
-            other: 'an ceann {0} DiM.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'an {0} DiM.',
-            two: 'an {0} DhiM.',
-            few: 'an {0} DiM.',
-            other: 'an {0} DiM.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'DiMàirt seo chaidh',
+      short: 'DiM. sa chaidh',
+      narrow: 'Mà. ch.',
+    ),
+    now: MultiLength(long: 'DiMàirt', short: 'DiM.', narrow: 'Mà.'),
+    next: MultiLength(
+      long: 'DiMàirt seo tighinn',
+      short: 'DiM. sa tighinn',
+      narrow: 'Mà. ti.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} DiMàirt air ais',
+        two: '{0} DhiMàirt air ais',
+        few: '{0} DiMàirt air ais',
+        other: '{0} DiMàirt air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} DiM. air ais',
+        two: '{0} DhiM. air ais',
+        few: '{0} DiM. air ais',
+        other: '{0} DiM. air ais',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'o {0} DiM.',
+        two: 'o {0} DhiM.',
+        few: 'o {0} DiM.',
+        other: 'o {0} DiM.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiMàirt',
+        two: 'an ceann {0} DhiMàirt',
+        few: 'an ceann {0} DiMàirt',
+        other: 'an ceann {0} DiMàirt',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiM.',
+        two: 'an ceann {0} DhiM.',
+        few: 'an ceann {0} DiM.',
+        other: 'an ceann {0} DiM.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'an {0} DiM.',
+        two: 'an {0} DhiM.',
+        few: 'an {0} DiM.',
+        other: 'an {0} DiM.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'DiCiadain seo chaidh',
-          short: 'DiC. sa chaidh',
-          narrow: 'Ci. ch.',
-        ),
-        now: MultiLength(
-          long: 'DiCiadain',
-          short: 'DiC.',
-          narrow: 'Ci.',
-        ),
-        next: MultiLength(
-          long: 'DiCiadain seo tighinn',
-          short: 'DiC. sa tighinn',
-          narrow: 'Ci. ti.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} DiCiadain air ais',
-            two: '{0} DhiCiadain air ais',
-            few: '{0} DiCiadain air ais',
-            other: '{0} DiCiadain air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} DiC. air ais',
-            two: '{0} DhiC. air ais',
-            few: '{0} DiC. air ais',
-            other: '{0} DiC. air ais',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'o {0} DiC.',
-            two: 'o {0} DhiC.',
-            few: 'o {0} DiC.',
-            other: 'o {0} DiC.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiCiadain',
-            two: 'an ceann {0} DhiCiadain',
-            few: 'an ceann {0} DiCiadain',
-            other: 'an ceann {0} DiCiadain',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiC.',
-            two: 'an ceann {0} DhiC.',
-            few: 'an ceann {0} DiC.',
-            other: 'an ceann {0} DiC.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'an {0} DiC.',
-            two: 'an {0} DhiC.',
-            few: 'an {0} DiC.',
-            other: 'an {0} DiC.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'DiCiadain seo chaidh',
+      short: 'DiC. sa chaidh',
+      narrow: 'Ci. ch.',
+    ),
+    now: MultiLength(long: 'DiCiadain', short: 'DiC.', narrow: 'Ci.'),
+    next: MultiLength(
+      long: 'DiCiadain seo tighinn',
+      short: 'DiC. sa tighinn',
+      narrow: 'Ci. ti.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} DiCiadain air ais',
+        two: '{0} DhiCiadain air ais',
+        few: '{0} DiCiadain air ais',
+        other: '{0} DiCiadain air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} DiC. air ais',
+        two: '{0} DhiC. air ais',
+        few: '{0} DiC. air ais',
+        other: '{0} DiC. air ais',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'o {0} DiC.',
+        two: 'o {0} DhiC.',
+        few: 'o {0} DiC.',
+        other: 'o {0} DiC.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiCiadain',
+        two: 'an ceann {0} DhiCiadain',
+        few: 'an ceann {0} DiCiadain',
+        other: 'an ceann {0} DiCiadain',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiC.',
+        two: 'an ceann {0} DhiC.',
+        few: 'an ceann {0} DiC.',
+        other: 'an ceann {0} DiC.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'an {0} DiC.',
+        two: 'an {0} DhiC.',
+        few: 'an {0} DiC.',
+        other: 'an {0} DiC.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'DiarDaoin seo chaidh',
-          short: 'Dia. sa chaidh',
-          narrow: 'Da. ch.',
-        ),
-        now: MultiLength(
-          long: 'DiarDaoin',
-          short: 'Dia.',
-          narrow: 'Da.',
-        ),
-        next: MultiLength(
-          long: 'DiarDaoin seo tighinn',
-          short: 'Dia. sa tighinn',
-          narrow: 'Da. ti.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} DiarDaoin air ais',
-            two: '{0} DhiarDaoin air ais',
-            few: '{0} DiarDaoin air ais',
-            other: '{0} DiarDaoin air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} Dia. air ais',
-            two: '{0} Dhia. air ais',
-            few: '{0} Dia. air ais',
-            other: '{0} Dia. air ais',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'o {0} Dia.',
-            two: 'o {0} Dhia.',
-            few: 'o {0} Dia.',
-            other: 'o {0} Dia.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiarDaoin',
-            two: 'an ceann {0} DhiarDaoin',
-            few: 'an ceann {0} DiarDaoin',
-            other: 'an ceann {0} DiarDaoin',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an ceann {0} Dia.',
-            two: 'an ceann {0} Dhia.',
-            few: 'an ceann {0} Dia.',
-            other: 'an ceann {0} Dia.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'an {0} Dia.',
-            two: 'an {0} Dhia.',
-            few: 'an {0} Dia.',
-            other: 'an {0} Dia.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'DiarDaoin seo chaidh',
+      short: 'Dia. sa chaidh',
+      narrow: 'Da. ch.',
+    ),
+    now: MultiLength(long: 'DiarDaoin', short: 'Dia.', narrow: 'Da.'),
+    next: MultiLength(
+      long: 'DiarDaoin seo tighinn',
+      short: 'Dia. sa tighinn',
+      narrow: 'Da. ti.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} DiarDaoin air ais',
+        two: '{0} DhiarDaoin air ais',
+        few: '{0} DiarDaoin air ais',
+        other: '{0} DiarDaoin air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} Dia. air ais',
+        two: '{0} Dhia. air ais',
+        few: '{0} Dia. air ais',
+        other: '{0} Dia. air ais',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'o {0} Dia.',
+        two: 'o {0} Dhia.',
+        few: 'o {0} Dia.',
+        other: 'o {0} Dia.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiarDaoin',
+        two: 'an ceann {0} DhiarDaoin',
+        few: 'an ceann {0} DiarDaoin',
+        other: 'an ceann {0} DiarDaoin',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an ceann {0} Dia.',
+        two: 'an ceann {0} Dhia.',
+        few: 'an ceann {0} Dia.',
+        other: 'an ceann {0} Dia.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'an {0} Dia.',
+        two: 'an {0} Dhia.',
+        few: 'an {0} Dia.',
+        other: 'an {0} Dia.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'DihAoine seo chaidh',
-          short: 'Dih. sa chaidh',
-          narrow: 'hA. ch.',
-        ),
-        now: MultiLength(
-          long: 'DihAoine',
-          short: 'Dih.',
-          narrow: 'hA.',
-        ),
-        next: MultiLength(
-          long: 'DihAoine seo tighinn',
-          short: 'Dih. sa tighinn',
-          narrow: 'hA. ti.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} DihAoine air ais',
-            two: '{0} DhihAoine air ais',
-            few: '{0} DihAoine air ais',
-            other: '{0} DihAoine air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} Dih. air ais',
-            two: '{0} Dhih. air ais',
-            few: '{0} Dih. air ais',
-            other: '{0} Dih. air ais',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'o {0} Dih.',
-            two: 'o {0} Dhih.',
-            few: 'o {0} Dih.',
-            other: 'o {0} Dih.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DihAoine',
-            two: 'an ceann {0} DhihAoine',
-            few: 'an ceann {0} DihAoine',
-            other: 'an ceann {0} DihAoine',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an ceann {0} Dih.',
-            two: 'an ceann {0} Dhih.',
-            few: 'an ceann {0} Dih.',
-            other: 'an ceann {0} Dih.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'an {0} Dih.',
-            two: 'an {0} Dhih.',
-            few: 'an {0} Dih.',
-            other: 'an {0} Dih.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'DihAoine seo chaidh',
+      short: 'Dih. sa chaidh',
+      narrow: 'hA. ch.',
+    ),
+    now: MultiLength(long: 'DihAoine', short: 'Dih.', narrow: 'hA.'),
+    next: MultiLength(
+      long: 'DihAoine seo tighinn',
+      short: 'Dih. sa tighinn',
+      narrow: 'hA. ti.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} DihAoine air ais',
+        two: '{0} DhihAoine air ais',
+        few: '{0} DihAoine air ais',
+        other: '{0} DihAoine air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} Dih. air ais',
+        two: '{0} Dhih. air ais',
+        few: '{0} Dih. air ais',
+        other: '{0} Dih. air ais',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'o {0} Dih.',
+        two: 'o {0} Dhih.',
+        few: 'o {0} Dih.',
+        other: 'o {0} Dih.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DihAoine',
+        two: 'an ceann {0} DhihAoine',
+        few: 'an ceann {0} DihAoine',
+        other: 'an ceann {0} DihAoine',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an ceann {0} Dih.',
+        two: 'an ceann {0} Dhih.',
+        few: 'an ceann {0} Dih.',
+        other: 'an ceann {0} Dih.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'an {0} Dih.',
+        two: 'an {0} Dhih.',
+        few: 'an {0} Dih.',
+        other: 'an {0} Dih.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'DiSathairne seo chaidh',
-          short: 'DiS. sa chaidh',
-          narrow: 'Sa. ch.',
-        ),
-        now: MultiLength(
-          long: 'DiSathairne',
-          short: 'DiS.',
-          narrow: 'Sa.',
-        ),
-        next: MultiLength(
-          long: 'DiSathairne seo tighinn',
-          short: 'DiS. sa tighinn',
-          narrow: 'Sa. ti.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} DiSathairne air ais',
-            two: '{0} DhiSathairne air ais',
-            few: '{0} DiSathairne air ais',
-            other: '{0} DiSathairne air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} DiS. air ais',
-            two: '{0} DhiS. air ais',
-            few: '{0} DiS. air ais',
-            other: '{0} DiS. air ais',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'o {0} DiS.',
-            two: 'o {0} DhiS.',
-            few: 'o {0} DiS.',
-            other: 'o {0} DiS.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiSathairne',
-            two: 'an ceann {0} DhiSathairne',
-            few: 'an ceann {0} DiSathairne',
-            other: 'an ceann {0} DiSathairne',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an ceann {0} DiS.',
-            two: 'an ceann {0} DhiS.',
-            few: 'an ceann {0} DiS.',
-            other: 'an ceann {0} DiS.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'an {0} DiS.',
-            two: 'an {0} DhiS.',
-            few: 'an {0} DiS.',
-            other: 'an {0} DiS.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'DiSathairne seo chaidh',
+      short: 'DiS. sa chaidh',
+      narrow: 'Sa. ch.',
+    ),
+    now: MultiLength(long: 'DiSathairne', short: 'DiS.', narrow: 'Sa.'),
+    next: MultiLength(
+      long: 'DiSathairne seo tighinn',
+      short: 'DiS. sa tighinn',
+      narrow: 'Sa. ti.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} DiSathairne air ais',
+        two: '{0} DhiSathairne air ais',
+        few: '{0} DiSathairne air ais',
+        other: '{0} DiSathairne air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} DiS. air ais',
+        two: '{0} DhiS. air ais',
+        few: '{0} DiS. air ais',
+        other: '{0} DiS. air ais',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'o {0} DiS.',
+        two: 'o {0} DhiS.',
+        few: 'o {0} DiS.',
+        other: 'o {0} DiS.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiSathairne',
+        two: 'an ceann {0} DhiSathairne',
+        few: 'an ceann {0} DiSathairne',
+        other: 'an ceann {0} DiSathairne',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an ceann {0} DiS.',
+        two: 'an ceann {0} DhiS.',
+        few: 'an ceann {0} DiS.',
+        other: 'an ceann {0} DiS.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'an {0} DiS.',
+        two: 'an {0} DhiS.',
+        few: 'an {0} DiS.',
+        other: 'an {0} DiS.',
+      ),
+    ),
+  );
 
   @override
-  MultiLength get dayperiod => const MultiLength(
-        long: 'm/f',
-        short: 'm/f',
-        narrow: 'm/f',
-      );
+  MultiLength get dayperiod =>
+      const MultiLength(long: 'm/f', short: 'm/f', narrow: 'm/f');
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'uair a thìde',
-          short: 'uair',
-          narrow: 'u',
-        ),
-        now: MultiLength(
-          long: 'am broinn uair a thìde',
-          short: 'am broinn uair',
-          narrow: 'san uair',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} uair a thìde air ais',
-            two: '{0} uair a thìde air ais',
-            few: '{0} uairean a thìde air ais',
-            other: '{0} uair a thìde air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} uair',
-            two: 'o {0} uair',
-            few: 'o {0} uair.',
-            other: 'o {0} uair',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} u.',
-            two: '-{0} u.',
-            few: '-{0} u.',
-            other: '-{0} u.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} uair a thìde',
-            two: 'an ceann {0} uair a thìde',
-            few: 'an ceann {0} uairean a thìde',
-            other: 'an ceann {0} uair a thìde',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} uair',
-            two: 'an {0} uair',
-            few: 'an {0} uair.',
-            other: 'an {0} uair',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} u.',
-            two: '+{0} u.',
-            few: '+{0} u.',
-            other: '+{0} u.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'uair a thìde', short: 'uair', narrow: 'u'),
+    now: MultiLength(
+      long: 'am broinn uair a thìde',
+      short: 'am broinn uair',
+      narrow: 'san uair',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} uair a thìde air ais',
+        two: '{0} uair a thìde air ais',
+        few: '{0} uairean a thìde air ais',
+        other: '{0} uair a thìde air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} uair',
+        two: 'o {0} uair',
+        few: 'o {0} uair.',
+        other: 'o {0} uair',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} u.',
+        two: '-{0} u.',
+        few: '-{0} u.',
+        other: '-{0} u.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} uair a thìde',
+        two: 'an ceann {0} uair a thìde',
+        few: 'an ceann {0} uairean a thìde',
+        other: 'an ceann {0} uair a thìde',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} uair',
+        two: 'an {0} uair',
+        few: 'an {0} uair.',
+        other: 'an {0} uair',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} u.',
+        two: '+{0} u.',
+        few: '+{0} u.',
+        other: '+{0} u.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'mionaid',
-          short: 'mion.',
-          narrow: 'm',
-        ),
-        now: MultiLength(
-          long: 'am broinn mionaid',
-          short: 'am broinn mion.',
-          narrow: 'sa mhion.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} mhionaid air ais',
-            two: '{0} mhionaid air ais',
-            few: '{0} mionaidean air ais',
-            other: '{0} mionaid air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} mhion.',
-            two: 'o {0} mhion.',
-            few: 'o {0} mion.',
-            other: 'o {0} mion.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} m',
-            two: '-{0} m',
-            few: '-{0} m',
-            other: '-{0} m',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} mhionaid',
-            two: 'an ceann {0} mhionaid',
-            few: 'an ceann {0} mionaidean',
-            other: 'an ceann {0} mionaid',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} mhion.',
-            two: 'an {0} mhion.',
-            few: 'an {0} mion.',
-            other: 'an {0} mion.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} m',
-            two: '+{0} m',
-            few: '+{0} m',
-            other: '+{0} m',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'mionaid', short: 'mion.', narrow: 'm'),
+    now: MultiLength(
+      long: 'am broinn mionaid',
+      short: 'am broinn mion.',
+      narrow: 'sa mhion.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} mhionaid air ais',
+        two: '{0} mhionaid air ais',
+        few: '{0} mionaidean air ais',
+        other: '{0} mionaid air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} mhion.',
+        two: 'o {0} mhion.',
+        few: 'o {0} mion.',
+        other: 'o {0} mion.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} m',
+        two: '-{0} m',
+        few: '-{0} m',
+        other: '-{0} m',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} mhionaid',
+        two: 'an ceann {0} mhionaid',
+        few: 'an ceann {0} mionaidean',
+        other: 'an ceann {0} mionaid',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} mhion.',
+        two: 'an {0} mhion.',
+        few: 'an {0} mion.',
+        other: 'an {0} mion.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} m',
+        two: '+{0} m',
+        few: '+{0} m',
+        other: '+{0} m',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'diog',
-          short: 'diog',
-          narrow: 'd',
-        ),
-        now: MultiLength(
-          long: 'an-dràsta',
-          short: 'an-dràsta',
-          narrow: 'an-dràsta',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} diog air ais',
-            two: '{0} dhiog air ais',
-            few: '{0} diogan air ais',
-            other: '{0} diog air ais',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'o {0} diog',
-            two: 'o {0} dhiog',
-            few: 'o {0} diog.',
-            other: 'o {0} diog',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '-{0} d',
-            two: '-{0} d',
-            few: '-{0} d',
-            other: '-{0} d',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'an ceann {0} diog',
-            two: 'an ceann {0} dhiog',
-            few: 'an ceann {0} diogan',
-            other: 'an ceann {0} diog',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'an {0} diog',
-            two: 'an {0} dhiog',
-            few: 'an {0} diog.',
-            other: 'an {0} diog',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} d',
-            two: '+{0} d',
-            few: '+{0} d',
-            other: '+{0} d',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'diog', short: 'diog', narrow: 'd'),
+    now: MultiLength(
+      long: 'an-dràsta',
+      short: 'an-dràsta',
+      narrow: 'an-dràsta',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} diog air ais',
+        two: '{0} dhiog air ais',
+        few: '{0} diogan air ais',
+        other: '{0} diog air ais',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'o {0} diog',
+        two: 'o {0} dhiog',
+        few: 'o {0} diog.',
+        other: 'o {0} diog',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '-{0} d',
+        two: '-{0} d',
+        few: '-{0} d',
+        other: '-{0} d',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'an ceann {0} diog',
+        two: 'an ceann {0} dhiog',
+        few: 'an ceann {0} diogan',
+        other: 'an ceann {0} diog',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'an {0} diog',
+        two: 'an {0} dhiog',
+        few: 'an {0} diog.',
+        other: 'an {0} diog',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '+{0} d',
+        two: '+{0} d',
+        few: '+{0} d',
+        other: '+{0} d',
+      ),
+    ),
+  );
 
   @override
-  MultiLength get zone => const MultiLength(
-        long: 'roinn-tìde',
-        short: 'roinn',
-        narrow: 'roinn',
-      );
+  MultiLength get zone =>
+      const MultiLength(long: 'roinn-tìde', short: 'roinn', narrow: 'roinn');
 }
 
 class LanguagesGd extends Languages {
@@ -6664,8 +6576,12 @@ class LanguagesGd extends Languages {
   static const _chr = Language('chr', 'Cherokee');
   static const _chy = Language('chy', 'Cheyenne');
   static const _cic = Language('cic', 'Chickasaw');
-  static const _ckb = Language('ckb', 'Cùrdais Mheadhanach',
-      variant: 'Cùrdais Sorani', menu: 'Cùrdais Mheadhanach');
+  static const _ckb = Language(
+    'ckb',
+    'Cùrdais Mheadhanach',
+    variant: 'Cùrdais Sorani',
+    menu: 'Cùrdais Mheadhanach',
+  );
   static const _clc = Language('clc', 'Chilcotin');
   static const _co = Language('co', 'Corsais');
   static const _cop = Language('cop', 'Coptais');
@@ -6717,15 +6633,23 @@ class LanguagesGd extends Languages {
   static const _en = Language('en', 'Beurla');
   static const _enAU = Language('en-AU', 'Beurla Astràilia');
   static const _enCA = Language('en-CA', 'Beurla Chanada');
-  static const _enGB =
-      Language('en-GB', 'Beurla Bhreatainn', short: 'Beurla na RA');
-  static const _enUS =
-      Language('en-US', 'Beurla na h-Aimeireaga', short: 'Beurla nan SA');
+  static const _enGB = Language(
+    'en-GB',
+    'Beurla Bhreatainn',
+    short: 'Beurla na RA',
+  );
+  static const _enUS = Language(
+    'en-US',
+    'Beurla na h-Aimeireaga',
+    short: 'Beurla nan SA',
+  );
   static const _enm = Language('enm', 'Meadhan-Bheurla');
   static const _eo = Language('eo', 'Esperanto');
   static const _es = Language('es', 'Spàinntis');
-  static const _es419 =
-      Language('es-419', 'Spàinntis na h-Aimeireaga Laidinneach');
+  static const _es419 = Language(
+    'es-419',
+    'Spàinntis na h-Aimeireaga Laidinneach',
+  );
   static const _esES = Language('es-ES', 'Spàinntis Eòrpach');
   static const _esMX = Language('es-MX', 'Spàinntis Mheagsagach');
   static const _esu = Language('esu', 'Yupik Mheadhanach');
@@ -9207,8 +9131,10 @@ class ScriptsGd extends Scripts {
   static const _bugi = Script('Bugi', 'Lontara');
   static const _buhd = Script('Buhd', 'Buhid');
   static const _cakm = Script('Cakm', 'Chakma');
-  static const _cans =
-      Script('Cans', 'Sgrìobhadh Lideach Aonaichte nan Tùsanach Canadach');
+  static const _cans = Script(
+    'Cans',
+    'Sgrìobhadh Lideach Aonaichte nan Tùsanach Canadach',
+  );
   static const _cari = Script('Cari', 'Carian');
   static const _cher = Script('Cher', 'Cherokee');
   static const _chrs = Script('Chrs', 'Khwarazm');
@@ -9242,10 +9168,16 @@ class ScriptsGd extends Scripts {
   static const _hang = Script('Hang', 'Hangul');
   static const _hani = Script('Hani', 'Han');
   static const _hano = Script('Hano', 'Hanunoo');
-  static const _hans =
-      Script('Hans', 'Simplichte', standAlone: 'Han simplichte');
-  static const _hant =
-      Script('Hant', 'Tradaiseanta', standAlone: 'Han tradaiseanta');
+  static const _hans = Script(
+    'Hans',
+    'Simplichte',
+    standAlone: 'Han simplichte',
+  );
+  static const _hant = Script(
+    'Hant',
+    'Tradaiseanta',
+    standAlone: 'Han tradaiseanta',
+  );
   static const _hatr = Script('Hatr', 'Hatran');
   static const _hebr = Script('Hebr', 'Eabhra');
   static const _hira = Script('Hira', 'Hiragana');
@@ -10083,14 +10015,23 @@ class TerritoriesGd extends Territories {
   static const _bz = Territory('BZ', 'A’ Bheilìs');
   static const _ca = Territory('CA', 'Canada');
   static const _cc = Territory('CC', 'Na h-Eileanan Chocos (Keeling)');
-  static const _cd =
-      Territory('CD', 'Congo - Kinshasa', variant: 'A’ Chongo (PDC)');
+  static const _cd = Territory(
+    'CD',
+    'Congo - Kinshasa',
+    variant: 'A’ Chongo (PDC)',
+  );
   static const _cf = Territory('CF', 'Poblachd Meadhan Afraga');
-  static const _cg =
-      Territory('CG', 'A’ Chongo - Brazzaville', variant: 'A’ Chongo');
+  static const _cg = Territory(
+    'CG',
+    'A’ Chongo - Brazzaville',
+    variant: 'A’ Chongo',
+  );
   static const _ch = Territory('CH', 'An Eilbheis');
-  static const _ci =
-      Territory('CI', 'Côte d’Ivoire', variant: 'An Costa Ìbhri');
+  static const _ci = Territory(
+    'CI',
+    'Côte d’Ivoire',
+    variant: 'An Costa Ìbhri',
+  );
   static const _ck = Territory('CK', 'Eileanan Cook');
   static const _cl = Territory('CL', 'An t-Sile');
   static const _cm = Territory('CM', 'Camarun');
@@ -10124,8 +10065,11 @@ class TerritoriesGd extends Territories {
   static const _ez = Territory('EZ', 'Raon an Eòro');
   static const _fi = Territory('FI', 'An Fhionnlann');
   static const _fj = Territory('FJ', 'Fìdi');
-  static const _fk = Territory('FK', 'Na h-Eileanan Fàclannach',
-      variant: 'Na h-Eileanan Fàclannach (Islas Malvinas)');
+  static const _fk = Territory(
+    'FK',
+    'Na h-Eileanan Fàclannach',
+    variant: 'Na h-Eileanan Fàclannach (Islas Malvinas)',
+  );
   static const _fm = Territory('FM', 'Na Meanbh-eileanan');
   static const _fo = Territory('FO', 'Na h-Eileanan Fàro');
   static const _fr = Territory('FR', 'An Fhraing');
@@ -10143,14 +10087,19 @@ class TerritoriesGd extends Territories {
   static const _gp = Territory('GP', 'Guadalup');
   static const _gq = Territory('GQ', 'Gini Mheadhan-Chriosach');
   static const _gr = Territory('GR', 'A’ Ghreug');
-  static const _gs =
-      Territory('GS', 'Seòirsea a Deas is na h-Eileanan Sandwich a Deas');
+  static const _gs = Territory(
+    'GS',
+    'Seòirsea a Deas is na h-Eileanan Sandwich a Deas',
+  );
   static const _gt = Territory('GT', 'Guatamala');
   static const _gu = Territory('GU', 'Guam');
   static const _gw = Territory('GW', 'Gini-Bioso');
   static const _gy = Territory('GY', 'Guidheàna');
-  static const _hk =
-      Territory('HK', 'Hong Kong SAR na Sìne', short: 'Hong Kong');
+  static const _hk = Territory(
+    'HK',
+    'Hong Kong SAR na Sìne',
+    short: 'Hong Kong',
+  );
   static const _hm = Territory('HM', 'Eilean Heard is Eileanan MhicDhòmhnaill');
   static const _hn = Territory('HN', 'Hondùras');
   static const _hr = Territory('HR', 'A’ Chròthais');
@@ -10162,8 +10111,10 @@ class TerritoriesGd extends Territories {
   static const _il = Territory('IL', 'Iosrael');
   static const _im = Territory('IM', 'Eilean Mhanainn');
   static const _$in = Territory('IN', 'Na h-Innseachan');
-  static const _io =
-      Territory('IO', 'Ranntair Breatannach Cuan nan Innseachan');
+  static const _io = Territory(
+    'IO',
+    'Ranntair Breatannach Cuan nan Innseachan',
+  );
   static const _iq = Territory('IQ', 'Ioràc');
   static const _ir = Territory('IR', 'Ioràn');
   static const _$is = Territory('IS', 'Innis Tìle');
@@ -10228,8 +10179,11 @@ class TerritoriesGd extends Territories {
   static const _np = Territory('NP', 'Neapàl');
   static const _nr = Territory('NR', 'Nabhru');
   static const _nu = Territory('NU', 'Niue');
-  static const _nz =
-      Territory('NZ', 'Sealainn Nuadh', variant: 'Aotearoa Sealainn Nuadh');
+  static const _nz = Territory(
+    'NZ',
+    'Sealainn Nuadh',
+    variant: 'Aotearoa Sealainn Nuadh',
+  );
   static const _om = Territory('OM', 'Omàn');
   static const _pa = Territory('PA', 'Panama');
   static const _pe = Territory('PE', 'Pearù');
@@ -10241,8 +10195,11 @@ class TerritoriesGd extends Territories {
   static const _pm = Territory('PM', 'Saint Pierre agus Miquelon');
   static const _pn = Territory('PN', 'Eileanan Pheit a’ Chàirn');
   static const _pr = Territory('PR', 'Porto Rìceo');
-  static const _ps =
-      Territory('PS', 'Ùghdarras nam Palastaineach', short: 'Palastain');
+  static const _ps = Territory(
+    'PS',
+    'Ùghdarras nam Palastaineach',
+    short: 'Palastain',
+  );
   static const _pt = Territory('PT', 'A’ Phortagail');
   static const _pw = Territory('PW', 'Palabh');
   static const _py = Territory('PY', 'Paraguaidh');
@@ -10273,8 +10230,11 @@ class TerritoriesGd extends Territories {
   static const _sv = Territory('SV', 'An Salbhador');
   static const _sx = Territory('SX', 'Sint Maarten');
   static const _sy = Territory('SY', 'Siridhea');
-  static const _sz =
-      Territory('SZ', 'eSwatini', variant: 'Dùthaich nan Suasaidh');
+  static const _sz = Territory(
+    'SZ',
+    'eSwatini',
+    variant: 'Dùthaich nan Suasaidh',
+  );
   static const _ta = Territory('TA', 'Tristan da Cunha');
   static const _tc = Territory('TC', 'Na h-Eileanan Turcach is Caiceo');
   static const _td = Territory('TD', 'An t-Seàd');
@@ -10300,8 +10260,10 @@ class TerritoriesGd extends Territories {
   static const _uy = Territory('UY', 'Uruguaidh');
   static const _uz = Territory('UZ', 'Usbagastàn');
   static const _va = Territory('VA', 'Cathair na Bhatacain');
-  static const _vc =
-      Territory('VC', 'Naomh Bhionsant agus Eileanan Greanadach');
+  static const _vc = Territory(
+    'VC',
+    'Naomh Bhionsant agus Eileanan Greanadach',
+  );
   static const _ve = Territory('VE', 'A’ Bheiniseala');
   static const _vg = Territory('VG', 'Eileanan Breatannach na Maighdinn');
   static const _vi = Territory('VI', 'Eileanan na Maighdinn aig na SA');
@@ -11291,32 +11253,44 @@ class TerritoriesGd extends Territories {
 class VariantsGd extends Variants {
   const VariantsGd(super.cld);
 
-  static const _$1901 =
-      Variant('1901', 'Litreachadh tradaiseanta na Gearmailtise');
-  static const _$1994 =
-      Variant('1994', 'Litreachadh stannardach dual-chainnt Resia');
+  static const _$1901 = Variant(
+    '1901',
+    'Litreachadh tradaiseanta na Gearmailtise',
+  );
+  static const _$1994 = Variant(
+    '1994',
+    'Litreachadh stannardach dual-chainnt Resia',
+  );
   static const _$1996 = Variant('1996', 'Litreachadh na Gearmailtise 1996');
-  static const _$1606NICT =
-      Variant('1606NICT', 'Meadhan-Fhraingis anmoch gu 1606');
+  static const _$1606NICT = Variant(
+    '1606NICT',
+    'Meadhan-Fhraingis anmoch gu 1606',
+  );
   static const _$1694ACAD = Variant('1694ACAD', 'Nua-Fhraingis thràth');
   static const _$1959ACAD = Variant('1959ACAD', 'Bealaruisis Acadamaigeach');
   static const _abl1943 = Variant('ABL1943', 'Gnàthas-litreachaidh 1943');
   static const _akuapem = Variant('AKUAPEM', 'Akuapem');
   static const _alalc97 = Variant('ALALC97', 'Ròmanachadh ALA-LC 1997');
   static const _aluku = Variant('ALUKU', 'Dual-chainnt Aluku');
-  static const _ao1990 =
-      Variant('AO1990', 'Aonta litreachadh na Portagailise 1990');
+  static const _ao1990 = Variant(
+    'AO1990',
+    'Aonta litreachadh na Portagailise 1990',
+  );
   static const _aranes = Variant('ARANES', 'Aranais');
   static const _arevela = Variant('AREVELA', 'Airmeinis an Ear');
   static const _arevmda = Variant('AREVMDA', 'Airmeinis an Iar');
   static const _arkaika = Variant('ARKAIKA', 'Arkaika');
   static const _asante = Variant('ASANTE', 'Asante');
   static const _auvern = Variant('AUVERN', 'Auvernhat');
-  static const _baku1926 =
-      Variant('BAKU1926', 'Abidil Laideann aonaichte na Turcaise');
+  static const _baku1926 = Variant(
+    'BAKU1926',
+    'Abidil Laideann aonaichte na Turcaise',
+  );
   static const _balanka = Variant('BALANKA', 'Dual-chainnt Balanka de Anii');
-  static const _barla =
-      Variant('BARLA', 'Dual-chainntean Barlavento de Kabuverdianu');
+  static const _barla = Variant(
+    'BARLA',
+    'Dual-chainntean Barlavento de Kabuverdianu',
+  );
   static const _basiceng = Variant('BASICENG', 'Beurla bhunasach');
   static const _bauddha = Variant('BAUDDHA', 'Bauddha');
   static const _biscayan = Variant('BISCAYAN', 'Dual-chainnt Bizkaia');
@@ -11326,36 +11300,54 @@ class VariantsGd extends Variants {
   static const _bornholm = Variant('BORNHOLM', 'Bornholmsk');
   static const _cisaup = Variant('CISAUP', 'Ogsatanais cios-Ailpeach');
   static const _colb1945 = Variant(
-      'COLB1945', 'Aonta litreachaidh eadar a’ Phortagail is Braisil 1945');
+    'COLB1945',
+    'Aonta litreachaidh eadar a’ Phortagail is Braisil 1945',
+  );
   static const _cornu = Variant('CORNU', 'Beurla na Còirne');
   static const _creiss = Variant('CREISS', 'Ogsatanais Chroissant');
   static const _dajnko = Variant('DAJNKO', 'Aibidil Dajnko');
   static const _ekavsk = Variant('EKAVSK', 'Sèirbhis le fuaimneachadh iarach');
   static const _emodeng = Variant('EMODENG', 'Nua-Bheurla thràth');
   static const _fonipa = Variant('FONIPA', 'Comharran fuaim-eòlais an IPA');
-  static const _fonkirsh =
-      Variant('FONKIRSH', 'Còdachadh Kirshenbaum na h-Aibidil Fuaim-eòlaiche');
-  static const _fonnapa =
-      Variant('FONNAPA', 'Aibidil Fhuaim-eòlach Aimeireaga a Tuath');
+  static const _fonkirsh = Variant(
+    'FONKIRSH',
+    'Còdachadh Kirshenbaum na h-Aibidil Fuaim-eòlaiche',
+  );
+  static const _fonnapa = Variant(
+    'FONNAPA',
+    'Aibidil Fhuaim-eòlach Aimeireaga a Tuath',
+  );
   static const _fonupa = Variant('FONUPA', 'Comharran fuaim-eòlais an UPA');
   static const _fonxsamp = Variant('FONXSAMP', 'Tar-sgrìobhadh X-SAMPA');
   static const _gallo = Variant('GALLO', 'Gallo');
   static const _gascon = Variant('GASCON', 'Ogsatanais Ghascogne');
-  static const _grclass =
-      Variant('GRCLASS', 'Nòs-sgrìobhaidh clasaigeach na h-Ogsatanaise');
-  static const _grital =
-      Variant('GRITAL', 'Nòs-sgrìobhaidh Eadailteach na h-Ogsatanaise');
-  static const _grmistr =
-      Variant('GRMISTR', 'Nòs-sgrìobhaidh Mhistral na h-Ogsatanaise');
+  static const _grclass = Variant(
+    'GRCLASS',
+    'Nòs-sgrìobhaidh clasaigeach na h-Ogsatanaise',
+  );
+  static const _grital = Variant(
+    'GRITAL',
+    'Nòs-sgrìobhaidh Eadailteach na h-Ogsatanaise',
+  );
+  static const _grmistr = Variant(
+    'GRMISTR',
+    'Nòs-sgrìobhaidh Mhistral na h-Ogsatanaise',
+  );
   static const _hepburn = Variant('HEPBURN', 'Ròmanachadh Hepburn');
   static const _hognorsk = Variant('HOGNORSK', 'Høgnorsk');
-  static const _hsistemo = Variant('HSISTEMO',
-      'Roghainn-èiginn stannardach litreachadh na h-Esperanto le h');
-  static const _ijekavsk =
-      Variant('IJEKAVSK', 'Sèirbis le fuaimneachadh Ijekavia');
+  static const _hsistemo = Variant(
+    'HSISTEMO',
+    'Roghainn-èiginn stannardach litreachadh na h-Esperanto le h',
+  );
+  static const _ijekavsk = Variant(
+    'IJEKAVSK',
+    'Sèirbis le fuaimneachadh Ijekavia',
+  );
   static const _itihasa = Variant('ITIHASA', 'Itihasa');
-  static const _ivanchov = Variant('IVANCHOV',
-      'Bulgarian in 1899 orthography = Bulgairis le litreachadh na bliadhna 1899');
+  static const _ivanchov = Variant(
+    'IVANCHOV',
+    'Bulgarian in 1899 orthography = Bulgairis le litreachadh na bliadhna 1899',
+  );
   static const _jauer = Variant('JAUER', 'Jauer');
   static const _jyutping = Variant('JYUTPING', 'Jyutping');
   static const _kkcor = Variant('KKCOR', 'Litreachadh coitcheann');
@@ -11367,8 +11359,10 @@ class VariantsGd extends Variants {
   static const _lipaw = Variant('LIPAW', 'Dual-chainnt Lipovaz Resia');
   static const _ltg1929 = Variant('LTG1929', 'Litreachadh na Latgailise 1929');
   static const _ltg2007 = Variant('LTG2007', 'Litreachadh na Latgailise 2007');
-  static const _luna1918 =
-      Variant('LUNA1918', 'Litreachadh na Ruisise às dèidh 1917');
+  static const _luna1918 = Variant(
+    'LUNA1918',
+    'Litreachadh na Ruisise às dèidh 1917',
+  );
   static const _metelko = Variant('METELKO', 'Aibidil Metelko');
   static const _monoton = Variant('MONOTON', 'Greugais mhonotonach');
   static const _ndyuka = Variant('NDYUKA', 'Dual-chainnt Ndyuka');
@@ -11378,8 +11372,10 @@ class VariantsGd extends Variants {
   static const _njiva = Variant('NJIVA', 'Dual-chainnt Gniva/Njiva');
   static const _nulik = Variant('NULIK', 'Nua-Volapük');
   static const _osojs = Variant('OSOJS', 'Dual-chainnt Oseacco/Osojane');
-  static const _oxendict =
-      Variant('OXENDICT', 'Litreachadh faclair Oxford na Beurla');
+  static const _oxendict = Variant(
+    'OXENDICT',
+    'Litreachadh faclair Oxford na Beurla',
+  );
   static const _pahawh2 = Variant('PAHAWH2', 'Pahawh Hmong na 2na ìre');
   static const _pahawh3 = Variant('PAHAWH3', 'Pahawh Hmong na 3s ìre');
   static const _pahawh4 = Variant('PAHAWH4', 'Pahawh Hmong na 4mh ìre');
@@ -11400,8 +11396,10 @@ class VariantsGd extends Variants {
   static const _scouse = Variant('SCOUSE', 'Scouse');
   static const _simple = Variant('SIMPLE', 'Samhlaidhean sìmplichte');
   static const _solba = Variant('SOLBA', 'Dual-chainnt Stolvizza/Solbica');
-  static const _sotav =
-      Variant('SOTAV', 'Dual-chainntean Sotavento de Kabuverdianu');
+  static const _sotav = Variant(
+    'SOTAV',
+    'Dual-chainntean Sotavento de Kabuverdianu',
+  );
   static const _spanglis = Variant('SPANGLIS', 'Spanglish');
   static const _surmiran = Variant('SURMIRAN', 'Surmiran');
   static const _sursilv = Variant('SURSILV', 'Sursilvan');
@@ -11411,8 +11409,10 @@ class VariantsGd extends Variants {
   static const _tongyong = Variant('TONGYONG', 'Tongyong');
   static const _tunumiit = Variant('TUNUMIIT', 'Tunumiit');
   static const _uccor = Variant('UCCOR', 'Litreachadh aonaichte');
-  static const _ucrcor =
-      Variant('UCRCOR', 'Litreachadh aonaichte ’s lèirmheasaichte');
+  static const _ucrcor = Variant(
+    'UCRCOR',
+    'Litreachadh aonaichte ’s lèirmheasaichte',
+  );
   static const _ulster = Variant('ULSTER', 'Albais Uladh');
   static const _unifon = Variant('UNIFON', 'Aibidil fuaim-eòlais Unifon');
   static const _vaidika = Variant('VAIDIKA', 'Vaidika');
@@ -11421,8 +11421,10 @@ class VariantsGd extends Variants {
   static const _vecdruka = Variant('VECDRUKA', 'Vecā Druka');
   static const _vivaraup = Variant('VIVARAUP', 'Ogsatanais Vivaro-Ailpeach');
   static const _wadegile = Variant('WADEGILE', 'Ròmanachadh Wade-Giles');
-  static const _xsistemo = Variant('XSISTEMO',
-      'Roghainn-èiginn stannardach litreachadh na h-Esperanto le x');
+  static const _xsistemo = Variant(
+    'XSISTEMO',
+    'Roghainn-èiginn stannardach litreachadh na h-Esperanto le x',
+  );
 
   @override
   final $1901 = _$1901;
@@ -11666,1677 +11668,2888 @@ class SubdivisionsGd extends Subdivisions {
 class CurrenciesGd extends Currencies {
   const CurrenciesGd(super.cld);
 
-  static const _adp = Currency(_cld, 'ADP', 'Peseta Andorrach',
-      one: 'pheseta Andorrach',
-      two: 'pheseta Andorrach',
-      few: 'peseta Andorrach',
-      other: 'peseta Andorrach');
+  static const _adp = Currency(
+    _cld,
+    'ADP',
+    'Peseta Andorrach',
+    one: 'pheseta Andorrach',
+    two: 'pheseta Andorrach',
+    few: 'peseta Andorrach',
+    other: 'peseta Andorrach',
+  );
   static const _aed = Currency(
-      _cld, 'AED', 'Dirham nan Iomaratan Arabach Aonaichte',
-      one: 'dirham nan IAA',
-      two: 'dhirham nan IAA',
-      few: 'dirham nan IAA',
-      other: 'dirham nan IAA');
-  static const _afa = Currency(_cld, 'AFA', 'Afghani Afghanach (1927–2002)',
-      one: 'afghani Afghanach (1927–2002)',
-      two: 'afghani Afghanach (1927–2002)',
-      few: 'afghani Afghanach (1927–2002)',
-      other: 'afghani Afghanach (1927–2002)');
-  static const _afn = Currency(_cld, 'AFN', 'Afghani Afghanach',
-      one: 'afghani Afghanach',
-      two: 'afghani Afghanach',
-      few: 'afghani Afghanach',
-      other: 'afghani Afghanach',
-      symbolNarrow: '؋');
-  static const _alk = Currency(_cld, 'ALK', 'Lek Albàineach (1946–1965)',
-      one: 'lek Albàineach (1946–1965)',
-      two: 'lek Albàineach (1946–1965)',
-      few: 'lek Albàineach (1946–1965)',
-      other: 'lek Albàineach (1946–1965)');
-  static const _all = Currency(_cld, 'ALL', 'Lek Albàineach',
-      one: 'lek Albàineach',
-      two: 'lek Albàineach',
-      few: 'lek Albàineach',
-      other: 'lek Albàineach');
-  static const _amd = Currency(_cld, 'AMD', 'Dram Airmeineach',
-      one: 'dram Airmeineach',
-      two: 'dhram Airmeineach',
-      few: 'dram Airmeineach',
-      other: 'dram Airmeineach',
-      symbolNarrow: '֏');
+    _cld,
+    'AED',
+    'Dirham nan Iomaratan Arabach Aonaichte',
+    one: 'dirham nan IAA',
+    two: 'dhirham nan IAA',
+    few: 'dirham nan IAA',
+    other: 'dirham nan IAA',
+  );
+  static const _afa = Currency(
+    _cld,
+    'AFA',
+    'Afghani Afghanach (1927–2002)',
+    one: 'afghani Afghanach (1927–2002)',
+    two: 'afghani Afghanach (1927–2002)',
+    few: 'afghani Afghanach (1927–2002)',
+    other: 'afghani Afghanach (1927–2002)',
+  );
+  static const _afn = Currency(
+    _cld,
+    'AFN',
+    'Afghani Afghanach',
+    one: 'afghani Afghanach',
+    two: 'afghani Afghanach',
+    few: 'afghani Afghanach',
+    other: 'afghani Afghanach',
+    symbolNarrow: '؋',
+  );
+  static const _alk = Currency(
+    _cld,
+    'ALK',
+    'Lek Albàineach (1946–1965)',
+    one: 'lek Albàineach (1946–1965)',
+    two: 'lek Albàineach (1946–1965)',
+    few: 'lek Albàineach (1946–1965)',
+    other: 'lek Albàineach (1946–1965)',
+  );
+  static const _all = Currency(
+    _cld,
+    'ALL',
+    'Lek Albàineach',
+    one: 'lek Albàineach',
+    two: 'lek Albàineach',
+    few: 'lek Albàineach',
+    other: 'lek Albàineach',
+  );
+  static const _amd = Currency(
+    _cld,
+    'AMD',
+    'Dram Airmeineach',
+    one: 'dram Airmeineach',
+    two: 'dhram Airmeineach',
+    few: 'dram Airmeineach',
+    other: 'dram Airmeineach',
+    symbolNarrow: '֏',
+  );
   static const _ang = Currency(
-      _cld, 'ANG', 'Gulden Eileanan Aintilia nan Tìrean Ìsle',
-      one: 'ghulden Eileanan Aintilia nan Tìrean Ìsle',
-      two: 'ghulden Eileanan Aintilia nan Tìrean Ìsle',
-      few: 'gulden Eileanan Aintilia nan Tìrean Ìsle',
-      other: 'gulden Eileanan Aintilia nan Tìrean Ìsle');
-  static const _aoa = Currency(_cld, 'AOA', 'Kwanza Angòlach',
-      one: 'kwanza Angòlach',
-      two: 'kwanza Angòlach',
-      few: 'kwanza Angòlach',
-      other: 'kwanza Angòlach',
-      symbolNarrow: 'Kz');
-  static const _aok = Currency(_cld, 'AOK', 'Kwanza Angòlach (1977–1991)',
-      one: 'kwanza Angòlach (1977–1991)',
-      two: 'kwanza Angòlach (1977–1991)',
-      few: 'kwanza Angòlach (1977–1991)',
-      other: 'kwanza Angòlach (1977–1991)');
-  static const _aon = Currency(_cld, 'AON', 'Kwanza ùr Angòlach (1990–2000)',
-      one: 'kwanza ùr Angòlach (1990–2000)',
-      two: 'kwanza ùr Angòlach (1990–2000)',
-      few: 'kwanza ùr Angòlach (1990–2000)',
-      other: 'kwanza ùr Angòlach (1990–2000)');
+    _cld,
+    'ANG',
+    'Gulden Eileanan Aintilia nan Tìrean Ìsle',
+    one: 'ghulden Eileanan Aintilia nan Tìrean Ìsle',
+    two: 'ghulden Eileanan Aintilia nan Tìrean Ìsle',
+    few: 'gulden Eileanan Aintilia nan Tìrean Ìsle',
+    other: 'gulden Eileanan Aintilia nan Tìrean Ìsle',
+  );
+  static const _aoa = Currency(
+    _cld,
+    'AOA',
+    'Kwanza Angòlach',
+    one: 'kwanza Angòlach',
+    two: 'kwanza Angòlach',
+    few: 'kwanza Angòlach',
+    other: 'kwanza Angòlach',
+    symbolNarrow: 'Kz',
+  );
+  static const _aok = Currency(
+    _cld,
+    'AOK',
+    'Kwanza Angòlach (1977–1991)',
+    one: 'kwanza Angòlach (1977–1991)',
+    two: 'kwanza Angòlach (1977–1991)',
+    few: 'kwanza Angòlach (1977–1991)',
+    other: 'kwanza Angòlach (1977–1991)',
+  );
+  static const _aon = Currency(
+    _cld,
+    'AON',
+    'Kwanza ùr Angòlach (1990–2000)',
+    one: 'kwanza ùr Angòlach (1990–2000)',
+    two: 'kwanza ùr Angòlach (1990–2000)',
+    few: 'kwanza ùr Angòlach (1990–2000)',
+    other: 'kwanza ùr Angòlach (1990–2000)',
+  );
   static const _aor = Currency(
-      _cld, 'AOR', 'Kwanza ath-ghleusaichte Angòlach (1995–1999)',
-      one: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
-      two: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
-      few: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
-      other: 'kwanza ath-ghleusaichte Angòlach (1995–1999)');
-  static const _ara = Currency(_cld, 'ARA', 'Austral Argantaineach',
-      one: 'austral Argantaineach',
-      two: 'austral Argantaineach',
-      few: 'austral Argantaineach',
-      other: 'austral Argantaineach');
+    _cld,
+    'AOR',
+    'Kwanza ath-ghleusaichte Angòlach (1995–1999)',
+    one: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+    two: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+    few: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+    other: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+  );
+  static const _ara = Currency(
+    _cld,
+    'ARA',
+    'Austral Argantaineach',
+    one: 'austral Argantaineach',
+    two: 'austral Argantaineach',
+    few: 'austral Argantaineach',
+    other: 'austral Argantaineach',
+  );
   static const _arl = Currency(
-      _cld, 'ARL', 'Peso ley Argantaineach (1970–1983)',
-      one: 'pheso ley Argantaineach (1970–1983)',
-      two: 'pheso ley Argantaineach (1970–1983)',
-      few: 'pesothan ley Argantaineach (1970–1983)',
-      other: 'peso ley Argantaineach (1970–1983)');
-  static const _arm = Currency(_cld, 'ARM', 'Peso Argantaineach (1881–1970)',
-      one: 'pheso Argantaineach (1881–1970)',
-      two: 'pheso Argantaineach (1881–1970)',
-      few: 'pesothan Argantaineach (1881–1970)',
-      other: 'peso Argantaineach (1881–1970)');
-  static const _arp = Currency(_cld, 'ARP', 'Peso Argantaineach (1983–1985)',
-      one: 'pheso Argantaineach (1983–1985)',
-      two: 'pheso Argantaineach (1983–1985)',
-      few: 'pesothan Argantaineach (1983–1985)',
-      other: 'peso Argantaineach (1983–1985)');
-  static const _ars = Currency(_cld, 'ARS', 'Peso Argantaineach',
-      one: 'pheso Argantaineach',
-      two: 'pheso Argantaineach',
-      few: 'pesothan Argantaineach',
-      other: 'peso Argantaineach',
-      symbolNarrow: r'$');
-  static const _ats = Currency(_cld, 'ATS', 'Schilling Ostaireach',
-      one: 'schilling Ostaireach',
-      two: 'schilling Ostaireach',
-      few: 'schilling Ostaireach',
-      other: 'schilling Ostaireach');
-  static const _aud = Currency(_cld, 'AUD', 'Dolar Astràilianach',
-      one: 'dolar Astràilianach',
-      two: 'dholar Astràilianach',
-      few: 'dolaran Astràilianach',
-      other: 'dolar Astràilianach',
-      symbol: r'A$',
-      symbolNarrow: r'$');
-  static const _awg = Currency(_cld, 'AWG', 'Florin Arùbach',
-      one: 'fhlorin Arùbach',
-      two: 'fhlorin Arùbach',
-      few: 'florin Arùbach',
-      other: 'florin Arùbach');
-  static const _azm = Currency(_cld, 'AZM', 'Manat Asarbaideànach (1993–2006)',
-      one: 'mhanat Asarbaideànach (1993–2006)',
-      two: 'mhanat Asarbaideànach (1993–2006)',
-      few: 'manat Asarbaideànach (1993–2006)',
-      other: 'manat Asarbaideànach (1993–2006)');
-  static const _azn = Currency(_cld, 'AZN', 'Manat Asarbaideànach',
-      one: 'mhanat Asarbaideànach',
-      two: 'mhanat Asarbaideànach',
-      few: 'manat Asarbaideànach',
-      other: 'manat Asarbaideànach',
-      symbolNarrow: '₼');
+    _cld,
+    'ARL',
+    'Peso ley Argantaineach (1970–1983)',
+    one: 'pheso ley Argantaineach (1970–1983)',
+    two: 'pheso ley Argantaineach (1970–1983)',
+    few: 'pesothan ley Argantaineach (1970–1983)',
+    other: 'peso ley Argantaineach (1970–1983)',
+  );
+  static const _arm = Currency(
+    _cld,
+    'ARM',
+    'Peso Argantaineach (1881–1970)',
+    one: 'pheso Argantaineach (1881–1970)',
+    two: 'pheso Argantaineach (1881–1970)',
+    few: 'pesothan Argantaineach (1881–1970)',
+    other: 'peso Argantaineach (1881–1970)',
+  );
+  static const _arp = Currency(
+    _cld,
+    'ARP',
+    'Peso Argantaineach (1983–1985)',
+    one: 'pheso Argantaineach (1983–1985)',
+    two: 'pheso Argantaineach (1983–1985)',
+    few: 'pesothan Argantaineach (1983–1985)',
+    other: 'peso Argantaineach (1983–1985)',
+  );
+  static const _ars = Currency(
+    _cld,
+    'ARS',
+    'Peso Argantaineach',
+    one: 'pheso Argantaineach',
+    two: 'pheso Argantaineach',
+    few: 'pesothan Argantaineach',
+    other: 'peso Argantaineach',
+    symbolNarrow: r'$',
+  );
+  static const _ats = Currency(
+    _cld,
+    'ATS',
+    'Schilling Ostaireach',
+    one: 'schilling Ostaireach',
+    two: 'schilling Ostaireach',
+    few: 'schilling Ostaireach',
+    other: 'schilling Ostaireach',
+  );
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'Dolar Astràilianach',
+    one: 'dolar Astràilianach',
+    two: 'dholar Astràilianach',
+    few: 'dolaran Astràilianach',
+    other: 'dolar Astràilianach',
+    symbol: r'A$',
+    symbolNarrow: r'$',
+  );
+  static const _awg = Currency(
+    _cld,
+    'AWG',
+    'Florin Arùbach',
+    one: 'fhlorin Arùbach',
+    two: 'fhlorin Arùbach',
+    few: 'florin Arùbach',
+    other: 'florin Arùbach',
+  );
+  static const _azm = Currency(
+    _cld,
+    'AZM',
+    'Manat Asarbaideànach (1993–2006)',
+    one: 'mhanat Asarbaideànach (1993–2006)',
+    two: 'mhanat Asarbaideànach (1993–2006)',
+    few: 'manat Asarbaideànach (1993–2006)',
+    other: 'manat Asarbaideànach (1993–2006)',
+  );
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'Manat Asarbaideànach',
+    one: 'mhanat Asarbaideànach',
+    two: 'mhanat Asarbaideànach',
+    few: 'manat Asarbaideànach',
+    other: 'manat Asarbaideànach',
+    symbolNarrow: '₼',
+  );
   static const _bad = Currency(
-      _cld, 'BAD', 'Dinar Bhosna agus Hearsagobhana (1992–1994)',
-      one: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
-      two: 'dhinar Bhosna agus Hearsagobhana (1992–1994)',
-      few: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
-      other: 'dinar Bhosna agus Hearsagobhana (1992–1994)');
+    _cld,
+    'BAD',
+    'Dinar Bhosna agus Hearsagobhana (1992–1994)',
+    one: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
+    two: 'dhinar Bhosna agus Hearsagobhana (1992–1994)',
+    few: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
+    other: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
+  );
   static const _bam = Currency(
-      _cld, 'BAM', 'Mark iompachail Bhosna agus Hearsagobhana',
-      one: 'mhark iompachail Bhosna agus Hearsagobhana',
-      two: 'mhark iompachail Bhosna agus Hearsagobhana',
-      few: 'mark iompachail Bhosna agus Hearsagobhana',
-      other: 'mark iompachail Bhosna agus Hearsagobhana',
-      symbolNarrow: 'KM');
+    _cld,
+    'BAM',
+    'Mark iompachail Bhosna agus Hearsagobhana',
+    one: 'mhark iompachail Bhosna agus Hearsagobhana',
+    two: 'mhark iompachail Bhosna agus Hearsagobhana',
+    few: 'mark iompachail Bhosna agus Hearsagobhana',
+    other: 'mark iompachail Bhosna agus Hearsagobhana',
+    symbolNarrow: 'KM',
+  );
   static const _ban = Currency(
-      _cld, 'BAN', 'Dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
-      one: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
-      two: 'dhinar ùr Bhosna agus Hearsagobhana (1994–1997)',
-      few: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
-      other: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)');
-  static const _bbd = Currency(_cld, 'BBD', 'Dolar Barbadach',
-      one: 'dolar Barbadach',
-      two: 'dholar Barbadach',
-      few: 'dolaran Barbadach',
-      other: 'dolar Barbadach',
-      symbolNarrow: r'$');
-  static const _bdt = Currency(_cld, 'BDT', 'Taka Bangladaiseach',
-      one: 'taka Bangladaiseach',
-      two: 'thaka Bangladaiseach',
-      few: 'taka Bangladaiseach',
-      other: 'taka Bangladaiseach',
-      symbolNarrow: '৳');
-  static const _bec = Currency(_cld, 'BEC', 'Franc Beilgeach (iompachail)',
-      one: 'fhranc Beilgeach (iompachail)',
-      two: 'fhranc Beilgeach (iompachail)',
-      few: 'franc Beilgeach (iompachail)',
-      other: 'franc Beilgeach (iompachail)');
-  static const _bef = Currency(_cld, 'BEF', 'Franc Beilgeach',
-      one: 'fhranc Beilgeach',
-      two: 'fhranc Beilgeach',
-      few: 'franc Beilgeach',
-      other: 'franc Beilgeach');
-  static const _bel = Currency(_cld, 'BEL', 'Franc Beilgeach (ionmhasail)',
-      one: 'fhranc Beilgeach (ionmhasail)',
-      two: 'fhranc Beilgeach (ionmhasail)',
-      few: 'franc Beilgeach (ionmhasail)',
-      other: 'franc Beilgeach (ionmhasail)');
-  static const _bgl = Currency(_cld, 'BGL', 'Lev cruaidh Bulgarach',
-      one: 'lev cruaidh Bulgarach',
-      two: 'lev cruaidh Bulgarach',
-      few: 'lev cruaidh Bulgarach',
-      other: 'lev cruaidh Bulgarach');
-  static const _bgm = Currency(_cld, 'BGM', 'Lev sòisealach Bulgarach',
-      one: 'lev sòisealach Bulgarach',
-      two: 'lev sòisealach Bulgarach',
-      few: 'lev sòisealach Bulgarach',
-      other: 'lev sòisealach Bulgarach');
-  static const _bgn = Currency(_cld, 'BGN', 'Lev Bulgarach',
-      one: 'lev Bulgarach',
-      two: 'lev Bulgarach',
-      few: 'lev Bulgarach',
-      other: 'lev Bulgarach');
-  static const _bgo = Currency(_cld, 'BGO', 'Lev Bulgarach (1879–1952)',
-      one: 'lev Bulgarach (1879–1952)',
-      two: 'lev Bulgarach (1879–1952)',
-      few: 'lev Bulgarach (1879–1952)',
-      other: 'lev Bulgarach (1879–1952)');
-  static const _bhd = Currency(_cld, 'BHD', 'Dinar Bachraineach',
-      one: 'dinar Bachraineach',
-      two: 'dhinar Bachraineach',
-      few: 'dinar Bachraineach',
-      other: 'dinar Bachraineach');
-  static const _bif = Currency(_cld, 'BIF', 'Franc Burundaidheach',
-      one: 'fhranc Burundaidheach',
-      two: 'fhranc Burundaidheach',
-      few: 'franc Burundaidheach',
-      other: 'franc Burundaidheach');
-  static const _bmd = Currency(_cld, 'BMD', 'Dolar Bearmùdach',
-      one: 'dolar Bearmùdach',
-      two: 'dholar Bearmùdach',
-      few: 'dolaran Bearmùdach',
-      other: 'dolar Bearmùdach',
-      symbolNarrow: r'$');
-  static const _bnd = Currency(_cld, 'BND', 'Dolar Brùnaigheach',
-      one: 'dolar Brùnaigheach',
-      two: 'dholar Brùnaigheach',
-      few: 'dolaran Brùnaigheach',
-      other: 'dolar Brùnaigheach',
-      symbolNarrow: r'$');
-  static const _bob = Currency(_cld, 'BOB', 'Boliviano Boilibhiach',
-      one: 'bholiviano Boilibhiach',
-      two: 'bholiviano Boilibhiach',
-      few: 'boliviano Boilibhiach',
-      other: 'boliviano Boilibhiach',
-      symbolNarrow: 'Bs');
-  static const _bol = Currency(_cld, 'BOL', 'Boliviano Boilibhiach (1863–1963)',
-      one: 'bholiviano Boilibhiach (1863–1963)',
-      two: 'bholiviano Boilibhiach (1863–1963)',
-      few: 'boliviano Boilibhiach (1863–1963)',
-      other: 'boliviano Boilibhiach (1863–1963)');
-  static const _bop = Currency(_cld, 'BOP', 'Peso Boilibhiach',
-      one: 'pheso Boilibhiach',
-      two: 'pheso Boilibhiach',
-      few: 'pesothan Boilibhiach',
-      other: 'peso Boilibhiach');
-  static const _bov = Currency(_cld, 'BOV', 'Mvdol Boilibhiach',
-      one: 'mvdol Boilibhiach',
-      two: 'mvdol Boilibhiach',
-      few: 'mvdol Boilibhiach',
-      other: 'mvdol Boilibhiach');
+    _cld,
+    'BAN',
+    'Dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+    one: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+    two: 'dhinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+    few: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+    other: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'Dolar Barbadach',
+    one: 'dolar Barbadach',
+    two: 'dholar Barbadach',
+    few: 'dolaran Barbadach',
+    other: 'dolar Barbadach',
+    symbolNarrow: r'$',
+  );
+  static const _bdt = Currency(
+    _cld,
+    'BDT',
+    'Taka Bangladaiseach',
+    one: 'taka Bangladaiseach',
+    two: 'thaka Bangladaiseach',
+    few: 'taka Bangladaiseach',
+    other: 'taka Bangladaiseach',
+    symbolNarrow: '৳',
+  );
+  static const _bec = Currency(
+    _cld,
+    'BEC',
+    'Franc Beilgeach (iompachail)',
+    one: 'fhranc Beilgeach (iompachail)',
+    two: 'fhranc Beilgeach (iompachail)',
+    few: 'franc Beilgeach (iompachail)',
+    other: 'franc Beilgeach (iompachail)',
+  );
+  static const _bef = Currency(
+    _cld,
+    'BEF',
+    'Franc Beilgeach',
+    one: 'fhranc Beilgeach',
+    two: 'fhranc Beilgeach',
+    few: 'franc Beilgeach',
+    other: 'franc Beilgeach',
+  );
+  static const _bel = Currency(
+    _cld,
+    'BEL',
+    'Franc Beilgeach (ionmhasail)',
+    one: 'fhranc Beilgeach (ionmhasail)',
+    two: 'fhranc Beilgeach (ionmhasail)',
+    few: 'franc Beilgeach (ionmhasail)',
+    other: 'franc Beilgeach (ionmhasail)',
+  );
+  static const _bgl = Currency(
+    _cld,
+    'BGL',
+    'Lev cruaidh Bulgarach',
+    one: 'lev cruaidh Bulgarach',
+    two: 'lev cruaidh Bulgarach',
+    few: 'lev cruaidh Bulgarach',
+    other: 'lev cruaidh Bulgarach',
+  );
+  static const _bgm = Currency(
+    _cld,
+    'BGM',
+    'Lev sòisealach Bulgarach',
+    one: 'lev sòisealach Bulgarach',
+    two: 'lev sòisealach Bulgarach',
+    few: 'lev sòisealach Bulgarach',
+    other: 'lev sòisealach Bulgarach',
+  );
+  static const _bgn = Currency(
+    _cld,
+    'BGN',
+    'Lev Bulgarach',
+    one: 'lev Bulgarach',
+    two: 'lev Bulgarach',
+    few: 'lev Bulgarach',
+    other: 'lev Bulgarach',
+  );
+  static const _bgo = Currency(
+    _cld,
+    'BGO',
+    'Lev Bulgarach (1879–1952)',
+    one: 'lev Bulgarach (1879–1952)',
+    two: 'lev Bulgarach (1879–1952)',
+    few: 'lev Bulgarach (1879–1952)',
+    other: 'lev Bulgarach (1879–1952)',
+  );
+  static const _bhd = Currency(
+    _cld,
+    'BHD',
+    'Dinar Bachraineach',
+    one: 'dinar Bachraineach',
+    two: 'dhinar Bachraineach',
+    few: 'dinar Bachraineach',
+    other: 'dinar Bachraineach',
+  );
+  static const _bif = Currency(
+    _cld,
+    'BIF',
+    'Franc Burundaidheach',
+    one: 'fhranc Burundaidheach',
+    two: 'fhranc Burundaidheach',
+    few: 'franc Burundaidheach',
+    other: 'franc Burundaidheach',
+  );
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'Dolar Bearmùdach',
+    one: 'dolar Bearmùdach',
+    two: 'dholar Bearmùdach',
+    few: 'dolaran Bearmùdach',
+    other: 'dolar Bearmùdach',
+    symbolNarrow: r'$',
+  );
+  static const _bnd = Currency(
+    _cld,
+    'BND',
+    'Dolar Brùnaigheach',
+    one: 'dolar Brùnaigheach',
+    two: 'dholar Brùnaigheach',
+    few: 'dolaran Brùnaigheach',
+    other: 'dolar Brùnaigheach',
+    symbolNarrow: r'$',
+  );
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'Boliviano Boilibhiach',
+    one: 'bholiviano Boilibhiach',
+    two: 'bholiviano Boilibhiach',
+    few: 'boliviano Boilibhiach',
+    other: 'boliviano Boilibhiach',
+    symbolNarrow: 'Bs',
+  );
+  static const _bol = Currency(
+    _cld,
+    'BOL',
+    'Boliviano Boilibhiach (1863–1963)',
+    one: 'bholiviano Boilibhiach (1863–1963)',
+    two: 'bholiviano Boilibhiach (1863–1963)',
+    few: 'boliviano Boilibhiach (1863–1963)',
+    other: 'boliviano Boilibhiach (1863–1963)',
+  );
+  static const _bop = Currency(
+    _cld,
+    'BOP',
+    'Peso Boilibhiach',
+    one: 'pheso Boilibhiach',
+    two: 'pheso Boilibhiach',
+    few: 'pesothan Boilibhiach',
+    other: 'peso Boilibhiach',
+  );
+  static const _bov = Currency(
+    _cld,
+    'BOV',
+    'Mvdol Boilibhiach',
+    one: 'mvdol Boilibhiach',
+    two: 'mvdol Boilibhiach',
+    few: 'mvdol Boilibhiach',
+    other: 'mvdol Boilibhiach',
+  );
   static const _brb = Currency(
-      _cld, 'BRB', 'Cruzeiro ùr Braisileach (1967–1986)',
-      one: 'chruzeiro ùr Braisileach (1967–1986)',
-      two: 'chruzeiro ùr Braisileach (1967–1986)',
-      few: 'cruzeiro ùr Braisileach (1967–1986)',
-      other: 'cruzeiro ùr Braisileach (1967–1986)');
-  static const _brc = Currency(_cld, 'BRC', 'Cruzado Braisileach (1986–1989)',
-      one: 'chruzado Braisileach (1986–1989)',
-      two: 'chruzado Braisileach (1986–1989)',
-      few: 'cruzado Braisileach (1986–1989)',
-      other: 'cruzado Braisileach (1986–1989)');
-  static const _bre = Currency(_cld, 'BRE', 'Cruzeiro Braisileach (1990–1993)',
-      one: 'chruzeiro Braisileach (1990–1993)',
-      two: 'chruzeiro Braisileach (1990–1993)',
-      few: 'cruzeiro Braisileach (1990–1993)',
-      other: 'cruzeiro Braisileach (1990–1993)');
-  static const _brl = Currency(_cld, 'BRL', 'Real Braisileach',
-      one: 'real Braisileach',
-      two: 'real Braisileach',
-      few: 'real Braisileach',
-      other: 'real Braisileach',
-      symbol: r'R$',
-      symbolNarrow: r'R$');
+    _cld,
+    'BRB',
+    'Cruzeiro ùr Braisileach (1967–1986)',
+    one: 'chruzeiro ùr Braisileach (1967–1986)',
+    two: 'chruzeiro ùr Braisileach (1967–1986)',
+    few: 'cruzeiro ùr Braisileach (1967–1986)',
+    other: 'cruzeiro ùr Braisileach (1967–1986)',
+  );
+  static const _brc = Currency(
+    _cld,
+    'BRC',
+    'Cruzado Braisileach (1986–1989)',
+    one: 'chruzado Braisileach (1986–1989)',
+    two: 'chruzado Braisileach (1986–1989)',
+    few: 'cruzado Braisileach (1986–1989)',
+    other: 'cruzado Braisileach (1986–1989)',
+  );
+  static const _bre = Currency(
+    _cld,
+    'BRE',
+    'Cruzeiro Braisileach (1990–1993)',
+    one: 'chruzeiro Braisileach (1990–1993)',
+    two: 'chruzeiro Braisileach (1990–1993)',
+    few: 'cruzeiro Braisileach (1990–1993)',
+    other: 'cruzeiro Braisileach (1990–1993)',
+  );
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'Real Braisileach',
+    one: 'real Braisileach',
+    two: 'real Braisileach',
+    few: 'real Braisileach',
+    other: 'real Braisileach',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
   static const _brn = Currency(
-      _cld, 'BRN', 'Cruzado ùr Braisileach (1989–1990)',
-      one: 'chruzado ùr Braisileach (1989–1990)',
-      two: 'chruzado ùr Braisileach (1989–1990)',
-      few: 'cruzado ùr Braisileach (1989–1990)',
-      other: 'cruzado ùr Braisileach (1989–1990)');
-  static const _brr = Currency(_cld, 'BRR', 'Cruzeiro Braisileach (1993–1994)',
-      one: 'chruzeiro Braisileach (1993–1994)',
-      two: 'chruzeiro Braisileach (1993–1994)',
-      few: 'cruzeiro Braisileach (1993–1994)',
-      other: 'cruzeiro Braisileach (1993–1994)');
-  static const _brz = Currency(_cld, 'BRZ', 'Cruzeiro Braisileach (1942–1967)',
-      one: 'chruzeiro Braisileach (1942–1967)',
-      two: 'chruzeiro Braisileach (1942–1967)',
-      few: 'cruzeiro Braisileach (1942–1967)',
-      other: 'cruzeiro Braisileach (1942–1967)');
-  static const _bsd = Currency(_cld, 'BSD', 'Dolar Bathamach',
-      one: 'dolar Bathamach',
-      two: 'dholar Bathamach',
-      few: 'dolaran Bathamach',
-      other: 'dolar Bathamach',
-      symbolNarrow: r'$');
-  static const _btn = Currency(_cld, 'BTN', 'Ngultrum Butànach',
-      one: 'ngultrum Butànach',
-      two: 'ngultrum Butànach',
-      few: 'ngultrum Butànach',
-      other: 'ngultrum Butànach');
-  static const _buk = Currency(_cld, 'BUK', 'Kyat Burmach',
-      one: 'kyat Burmach',
-      two: 'kyat Burmach',
-      few: 'kyat Burmach',
-      other: 'kyat Burmach');
-  static const _bwp = Currency(_cld, 'BWP', 'Pula Botsuanach',
-      one: 'phula Botsuanach',
-      two: 'phula Botsuanach',
-      few: 'pula Botsuanach',
-      other: 'pula Botsuanach',
-      symbolNarrow: 'P');
+    _cld,
+    'BRN',
+    'Cruzado ùr Braisileach (1989–1990)',
+    one: 'chruzado ùr Braisileach (1989–1990)',
+    two: 'chruzado ùr Braisileach (1989–1990)',
+    few: 'cruzado ùr Braisileach (1989–1990)',
+    other: 'cruzado ùr Braisileach (1989–1990)',
+  );
+  static const _brr = Currency(
+    _cld,
+    'BRR',
+    'Cruzeiro Braisileach (1993–1994)',
+    one: 'chruzeiro Braisileach (1993–1994)',
+    two: 'chruzeiro Braisileach (1993–1994)',
+    few: 'cruzeiro Braisileach (1993–1994)',
+    other: 'cruzeiro Braisileach (1993–1994)',
+  );
+  static const _brz = Currency(
+    _cld,
+    'BRZ',
+    'Cruzeiro Braisileach (1942–1967)',
+    one: 'chruzeiro Braisileach (1942–1967)',
+    two: 'chruzeiro Braisileach (1942–1967)',
+    few: 'cruzeiro Braisileach (1942–1967)',
+    other: 'cruzeiro Braisileach (1942–1967)',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'Dolar Bathamach',
+    one: 'dolar Bathamach',
+    two: 'dholar Bathamach',
+    few: 'dolaran Bathamach',
+    other: 'dolar Bathamach',
+    symbolNarrow: r'$',
+  );
+  static const _btn = Currency(
+    _cld,
+    'BTN',
+    'Ngultrum Butànach',
+    one: 'ngultrum Butànach',
+    two: 'ngultrum Butànach',
+    few: 'ngultrum Butànach',
+    other: 'ngultrum Butànach',
+  );
+  static const _buk = Currency(
+    _cld,
+    'BUK',
+    'Kyat Burmach',
+    one: 'kyat Burmach',
+    two: 'kyat Burmach',
+    few: 'kyat Burmach',
+    other: 'kyat Burmach',
+  );
+  static const _bwp = Currency(
+    _cld,
+    'BWP',
+    'Pula Botsuanach',
+    one: 'phula Botsuanach',
+    two: 'phula Botsuanach',
+    few: 'pula Botsuanach',
+    other: 'pula Botsuanach',
+    symbolNarrow: 'P',
+  );
   static const _byb = Currency(
-      _cld, 'BYB', 'Rùbal ùr Bealaruiseach (1994–1999)',
-      one: 'rùbal ùr Bealaruiseach (1994–1999)',
-      two: 'rùbal ùr Bealaruiseach (1994–1999)',
-      few: 'rùbalan ùra Bealaruiseach (1994–1999)',
-      other: 'rùbal ùr Bealaruiseach (1994–1999)');
-  static const _byn = Currency(_cld, 'BYN', 'Rùbal Bealaruiseach',
-      one: 'rùbal Bealaruiseach',
-      two: 'rùbal Bealaruiseach',
-      few: 'rùbalan Bealaruiseach',
-      other: 'rùbal Bealaruiseach',
-      symbolNarrow: 'р.');
-  static const _byr = Currency(_cld, 'BYR', 'Rùbal Bealaruiseach (2000–2016)',
-      one: 'rùbal Bealaruiseach (2000–2016)',
-      two: 'rùbal Bealaruiseach (2000–2016)',
-      few: 'rùbalan Bealaruiseach (2000–2016)',
-      other: 'rùbal Bealaruiseach (2000–2016)');
-  static const _bzd = Currency(_cld, 'BZD', 'Dolar Beilìseach',
-      one: 'dolar Beilìseach',
-      two: 'dholar Beilìseach',
-      few: 'dolaran Beilìseach',
-      other: 'dolar Beilìseach',
-      symbolNarrow: r'$');
-  static const _cad = Currency(_cld, 'CAD', 'Dolar Canadach',
-      one: 'dolar Canadach',
-      two: 'dholar Canadach',
-      few: 'dolaran Canadach',
-      other: 'dolar Canadach',
-      symbol: r'CA$',
-      symbolNarrow: r'$');
-  static const _cdf = Currency(_cld, 'CDF', 'Franc Congothach',
-      one: 'fhranc Congothach',
-      two: 'fhranc Congothach',
-      few: 'franc Congothach',
-      other: 'franc Congothach');
-  static const _che = Currency(_cld, 'CHE', 'Eòro WIR',
-      one: 'Eòro WIR', two: 'Eòro WIR', few: 'Eòrothan WIR', other: 'Eòro WIR');
-  static const _chf = Currency(_cld, 'CHF', 'Franc Eilbheiseach',
-      one: 'fhranc Eilbheiseach',
-      two: 'fhranc Eilbheiseach',
-      few: 'franc Eilbheiseach',
-      other: 'franc Eilbheiseach');
-  static const _chw = Currency(_cld, 'CHW', 'Franc WIR',
-      one: 'fhranc WIR',
-      two: 'fhranc WIR',
-      few: 'franc WIR',
-      other: 'franc WIR');
-  static const _cle = Currency(_cld, 'CLE', 'Escudo Sileach',
-      one: 'escudo Sileach',
-      two: 'escudo Sileach',
-      few: 'escudo Sileach',
-      other: 'escudo Sileach');
-  static const _clf = Currency(_cld, 'CLF', 'Aonad cunntasachd Sileach (UF)',
-      one: 'aonad cunntasachd Sileach (UF)',
-      two: 'aonad cunntasachd Sileach (UF)',
-      few: 'aonadan cunntasachd Sileach (UF)',
-      other: 'aonad cunntasachd Sileach (UF)');
-  static const _clp = Currency(_cld, 'CLP', 'Peso Sileach',
-      one: 'pheso Sileach',
-      two: 'pheso Sileach',
-      few: 'pesothan Sileach',
-      other: 'peso Sileach',
-      symbolNarrow: r'$');
-  static const _cnh = Currency(_cld, 'CNH', 'Yuan Sìneach (far-thìreach)',
-      one: 'yuan Sìneach (far-thìreach)',
-      two: 'yuan Sìneach (far-thìreach)',
-      few: 'yuan Sìneach (far-thìreach)',
-      other: 'yuan Sìneach (far-thìreach)');
-  static const _cnx = Currency(_cld, 'CNX', 'Dolar an t-sluagh-bhanca Shìnich',
-      one: 'dolar an t-sluagh-bhanca Shìnich',
-      two: 'dholar an t-sluagh-bhanca Shìnich',
-      few: 'dolaran an t-sluagh-bhanca Shìnich',
-      other: 'dolar an t-sluagh-bhanca Shìnich');
-  static const _cny = Currency(_cld, 'CNY', 'Yuan Sìneach',
-      one: 'yuan Sìneach',
-      two: 'yuan Sìneach',
-      few: 'yuan Sìneach',
-      other: 'yuan Sìneach',
-      symbol: 'CN¥',
-      symbolNarrow: '¥');
-  static const _cop = Currency(_cld, 'COP', 'Peso Coloimbeach',
-      one: 'pheso Coloimbeach',
-      two: 'pheso Coloimbeach',
-      few: 'pesothan Coloimbeach',
-      other: 'peso Coloimbeach',
-      symbolNarrow: r'$');
-  static const _cou = Currency(_cld, 'COU', 'Aonad fìor-luach Coloimbeach',
-      one: 'aonad fìor-luach Coloimbeach',
-      two: 'aonad fìor-luach Coloimbeach',
-      few: 'aonadan fìor-luach Coloimbeach',
-      other: 'aonad fìor-luach Coloimbeach');
-  static const _crc = Currency(_cld, 'CRC', 'Colón Costa Rìceach',
-      one: 'cholón Chosta Rìcea',
-      two: 'cholón Costa Rìceach',
-      few: 'colón Costa Rìceach',
-      other: 'colón Costa Rìceach',
-      symbolNarrow: '₡');
-  static const _csd = Currency(_cld, 'CSD', 'Dinar Sèirbeach (2002–2006)',
-      one: 'dinar Sèirbeach (2002–2006)',
-      two: 'dhinar Sèirbeach (2002–2006)',
-      few: 'dinar Sèirbeach (2002–2006)',
-      other: 'dinar Sèirbeach (2002–2006)');
-  static const _csk = Currency(_cld, 'CSK', 'Koruna cruaidh Seic-Slòbhacach',
-      one: 'koruna cruaidh Seic-Slòbhacach',
-      two: 'koruna cruaidh Seic-Slòbhacach',
-      few: 'koruna cruaidh Seic-Slòbhacach',
-      other: 'koruna cruaidh Seic-Slòbhacach');
-  static const _cuc = Currency(_cld, 'CUC', 'Peso iompachail Cùbach',
-      one: 'pheso iompachail Cùbach',
-      two: 'pheso iompachail Cùbach',
-      few: 'pesothan iompachail Cùbach',
-      other: 'peso iompachail Cùbach',
-      symbolNarrow: r'$');
-  static const _cup = Currency(_cld, 'CUP', 'Peso Cùbach',
-      one: 'pheso Cùbach',
-      two: 'pheso Cùbach',
-      few: 'pesothan Cùbach',
-      other: 'peso Cùbach',
-      symbolNarrow: r'$');
-  static const _cve = Currency(_cld, 'CVE', 'Escudo a’ Chip Uaine',
-      one: 'escudo a’ Chip Uaine',
-      two: 'escudo a’ Chip Uaine',
-      few: 'escudo a’ Chip Uaine',
-      other: 'escudo a’ Chip Uaine');
-  static const _cyp = Currency(_cld, 'CYP', 'Punnd Cìoprasach',
-      one: 'phunnd Cìoprasach',
-      two: 'phunnd Cìoprasach',
-      few: 'puinnd Chìoprasach',
-      other: 'punnd Cìoprasach');
-  static const _czk = Currency(_cld, 'CZK', 'Koruna Seiceach',
-      one: 'koruna Seiceach',
-      two: 'koruna Seiceach',
-      few: 'koruna Seiceach',
-      other: 'koruna Seiceach',
-      symbolNarrow: 'Kč');
-  static const _ddm = Currency(_cld, 'DDM', 'Mark na Gearmailte an Ear',
-      one: 'mhark na Gearmailte an Ear',
-      two: 'mhark na Gearmailte an Ear',
-      few: 'mark na Gearmailte an Ear',
-      other: 'mark na Gearmailte an Ear');
-  static const _dem = Currency(_cld, 'DEM', 'Mark Gearmailteach',
-      one: 'mhark Gearmailteach',
-      two: 'mhark Gearmailteach',
-      few: 'mark Gearmailteach',
-      other: 'mark Gearmailteach');
-  static const _djf = Currency(_cld, 'DJF', 'Franc Diobùtaidheach',
-      one: 'fhranc Diobùtaidheach',
-      two: 'fhranc Diobùtaidheach',
-      few: 'franc Diobùtaidheach',
-      other: 'franc Diobùtaidheach');
-  static const _dkk = Currency(_cld, 'DKK', 'Krone Danmhairgeach',
-      one: 'krone Danmhairgeach',
-      two: 'krone Danmhairgeach',
-      few: 'kroner Danmhairgeach',
-      other: 'krone Danmhairgeach',
-      symbolNarrow: 'kr');
-  static const _dop = Currency(_cld, 'DOP', 'Peso Doiminiceach',
-      one: 'pheso Doiminiceach',
-      two: 'pheso Doiminiceach',
-      few: 'pesothan Doiminiceach',
-      other: 'peso Doiminiceach',
-      symbolNarrow: r'$');
-  static const _dzd = Currency(_cld, 'DZD', 'Dinar Aildireach',
-      one: 'dinar Aildireach',
-      two: 'dhinar Aildireach',
-      few: 'dinar Aildireach',
-      other: 'dinar Aildireach');
-  static const _ecs = Currency(_cld, 'ECS', 'Sucre Eacuadorach',
-      one: 'sucre Eacuadorach',
-      two: 'shucre Eacuadorach',
-      few: 'sucre Eacuadorach',
-      other: 'sucre Eacuadorach');
+    _cld,
+    'BYB',
+    'Rùbal ùr Bealaruiseach (1994–1999)',
+    one: 'rùbal ùr Bealaruiseach (1994–1999)',
+    two: 'rùbal ùr Bealaruiseach (1994–1999)',
+    few: 'rùbalan ùra Bealaruiseach (1994–1999)',
+    other: 'rùbal ùr Bealaruiseach (1994–1999)',
+  );
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'Rùbal Bealaruiseach',
+    one: 'rùbal Bealaruiseach',
+    two: 'rùbal Bealaruiseach',
+    few: 'rùbalan Bealaruiseach',
+    other: 'rùbal Bealaruiseach',
+    symbolNarrow: 'р.',
+  );
+  static const _byr = Currency(
+    _cld,
+    'BYR',
+    'Rùbal Bealaruiseach (2000–2016)',
+    one: 'rùbal Bealaruiseach (2000–2016)',
+    two: 'rùbal Bealaruiseach (2000–2016)',
+    few: 'rùbalan Bealaruiseach (2000–2016)',
+    other: 'rùbal Bealaruiseach (2000–2016)',
+  );
+  static const _bzd = Currency(
+    _cld,
+    'BZD',
+    'Dolar Beilìseach',
+    one: 'dolar Beilìseach',
+    two: 'dholar Beilìseach',
+    few: 'dolaran Beilìseach',
+    other: 'dolar Beilìseach',
+    symbolNarrow: r'$',
+  );
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'Dolar Canadach',
+    one: 'dolar Canadach',
+    two: 'dholar Canadach',
+    few: 'dolaran Canadach',
+    other: 'dolar Canadach',
+    symbol: r'CA$',
+    symbolNarrow: r'$',
+  );
+  static const _cdf = Currency(
+    _cld,
+    'CDF',
+    'Franc Congothach',
+    one: 'fhranc Congothach',
+    two: 'fhranc Congothach',
+    few: 'franc Congothach',
+    other: 'franc Congothach',
+  );
+  static const _che = Currency(
+    _cld,
+    'CHE',
+    'Eòro WIR',
+    one: 'Eòro WIR',
+    two: 'Eòro WIR',
+    few: 'Eòrothan WIR',
+    other: 'Eòro WIR',
+  );
+  static const _chf = Currency(
+    _cld,
+    'CHF',
+    'Franc Eilbheiseach',
+    one: 'fhranc Eilbheiseach',
+    two: 'fhranc Eilbheiseach',
+    few: 'franc Eilbheiseach',
+    other: 'franc Eilbheiseach',
+  );
+  static const _chw = Currency(
+    _cld,
+    'CHW',
+    'Franc WIR',
+    one: 'fhranc WIR',
+    two: 'fhranc WIR',
+    few: 'franc WIR',
+    other: 'franc WIR',
+  );
+  static const _cle = Currency(
+    _cld,
+    'CLE',
+    'Escudo Sileach',
+    one: 'escudo Sileach',
+    two: 'escudo Sileach',
+    few: 'escudo Sileach',
+    other: 'escudo Sileach',
+  );
+  static const _clf = Currency(
+    _cld,
+    'CLF',
+    'Aonad cunntasachd Sileach (UF)',
+    one: 'aonad cunntasachd Sileach (UF)',
+    two: 'aonad cunntasachd Sileach (UF)',
+    few: 'aonadan cunntasachd Sileach (UF)',
+    other: 'aonad cunntasachd Sileach (UF)',
+  );
+  static const _clp = Currency(
+    _cld,
+    'CLP',
+    'Peso Sileach',
+    one: 'pheso Sileach',
+    two: 'pheso Sileach',
+    few: 'pesothan Sileach',
+    other: 'peso Sileach',
+    symbolNarrow: r'$',
+  );
+  static const _cnh = Currency(
+    _cld,
+    'CNH',
+    'Yuan Sìneach (far-thìreach)',
+    one: 'yuan Sìneach (far-thìreach)',
+    two: 'yuan Sìneach (far-thìreach)',
+    few: 'yuan Sìneach (far-thìreach)',
+    other: 'yuan Sìneach (far-thìreach)',
+  );
+  static const _cnx = Currency(
+    _cld,
+    'CNX',
+    'Dolar an t-sluagh-bhanca Shìnich',
+    one: 'dolar an t-sluagh-bhanca Shìnich',
+    two: 'dholar an t-sluagh-bhanca Shìnich',
+    few: 'dolaran an t-sluagh-bhanca Shìnich',
+    other: 'dolar an t-sluagh-bhanca Shìnich',
+  );
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'Yuan Sìneach',
+    one: 'yuan Sìneach',
+    two: 'yuan Sìneach',
+    few: 'yuan Sìneach',
+    other: 'yuan Sìneach',
+    symbol: 'CN¥',
+    symbolNarrow: '¥',
+  );
+  static const _cop = Currency(
+    _cld,
+    'COP',
+    'Peso Coloimbeach',
+    one: 'pheso Coloimbeach',
+    two: 'pheso Coloimbeach',
+    few: 'pesothan Coloimbeach',
+    other: 'peso Coloimbeach',
+    symbolNarrow: r'$',
+  );
+  static const _cou = Currency(
+    _cld,
+    'COU',
+    'Aonad fìor-luach Coloimbeach',
+    one: 'aonad fìor-luach Coloimbeach',
+    two: 'aonad fìor-luach Coloimbeach',
+    few: 'aonadan fìor-luach Coloimbeach',
+    other: 'aonad fìor-luach Coloimbeach',
+  );
+  static const _crc = Currency(
+    _cld,
+    'CRC',
+    'Colón Costa Rìceach',
+    one: 'cholón Chosta Rìcea',
+    two: 'cholón Costa Rìceach',
+    few: 'colón Costa Rìceach',
+    other: 'colón Costa Rìceach',
+    symbolNarrow: '₡',
+  );
+  static const _csd = Currency(
+    _cld,
+    'CSD',
+    'Dinar Sèirbeach (2002–2006)',
+    one: 'dinar Sèirbeach (2002–2006)',
+    two: 'dhinar Sèirbeach (2002–2006)',
+    few: 'dinar Sèirbeach (2002–2006)',
+    other: 'dinar Sèirbeach (2002–2006)',
+  );
+  static const _csk = Currency(
+    _cld,
+    'CSK',
+    'Koruna cruaidh Seic-Slòbhacach',
+    one: 'koruna cruaidh Seic-Slòbhacach',
+    two: 'koruna cruaidh Seic-Slòbhacach',
+    few: 'koruna cruaidh Seic-Slòbhacach',
+    other: 'koruna cruaidh Seic-Slòbhacach',
+  );
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'Peso iompachail Cùbach',
+    one: 'pheso iompachail Cùbach',
+    two: 'pheso iompachail Cùbach',
+    few: 'pesothan iompachail Cùbach',
+    other: 'peso iompachail Cùbach',
+    symbolNarrow: r'$',
+  );
+  static const _cup = Currency(
+    _cld,
+    'CUP',
+    'Peso Cùbach',
+    one: 'pheso Cùbach',
+    two: 'pheso Cùbach',
+    few: 'pesothan Cùbach',
+    other: 'peso Cùbach',
+    symbolNarrow: r'$',
+  );
+  static const _cve = Currency(
+    _cld,
+    'CVE',
+    'Escudo a’ Chip Uaine',
+    one: 'escudo a’ Chip Uaine',
+    two: 'escudo a’ Chip Uaine',
+    few: 'escudo a’ Chip Uaine',
+    other: 'escudo a’ Chip Uaine',
+  );
+  static const _cyp = Currency(
+    _cld,
+    'CYP',
+    'Punnd Cìoprasach',
+    one: 'phunnd Cìoprasach',
+    two: 'phunnd Cìoprasach',
+    few: 'puinnd Chìoprasach',
+    other: 'punnd Cìoprasach',
+  );
+  static const _czk = Currency(
+    _cld,
+    'CZK',
+    'Koruna Seiceach',
+    one: 'koruna Seiceach',
+    two: 'koruna Seiceach',
+    few: 'koruna Seiceach',
+    other: 'koruna Seiceach',
+    symbolNarrow: 'Kč',
+  );
+  static const _ddm = Currency(
+    _cld,
+    'DDM',
+    'Mark na Gearmailte an Ear',
+    one: 'mhark na Gearmailte an Ear',
+    two: 'mhark na Gearmailte an Ear',
+    few: 'mark na Gearmailte an Ear',
+    other: 'mark na Gearmailte an Ear',
+  );
+  static const _dem = Currency(
+    _cld,
+    'DEM',
+    'Mark Gearmailteach',
+    one: 'mhark Gearmailteach',
+    two: 'mhark Gearmailteach',
+    few: 'mark Gearmailteach',
+    other: 'mark Gearmailteach',
+  );
+  static const _djf = Currency(
+    _cld,
+    'DJF',
+    'Franc Diobùtaidheach',
+    one: 'fhranc Diobùtaidheach',
+    two: 'fhranc Diobùtaidheach',
+    few: 'franc Diobùtaidheach',
+    other: 'franc Diobùtaidheach',
+  );
+  static const _dkk = Currency(
+    _cld,
+    'DKK',
+    'Krone Danmhairgeach',
+    one: 'krone Danmhairgeach',
+    two: 'krone Danmhairgeach',
+    few: 'kroner Danmhairgeach',
+    other: 'krone Danmhairgeach',
+    symbolNarrow: 'kr',
+  );
+  static const _dop = Currency(
+    _cld,
+    'DOP',
+    'Peso Doiminiceach',
+    one: 'pheso Doiminiceach',
+    two: 'pheso Doiminiceach',
+    few: 'pesothan Doiminiceach',
+    other: 'peso Doiminiceach',
+    symbolNarrow: r'$',
+  );
+  static const _dzd = Currency(
+    _cld,
+    'DZD',
+    'Dinar Aildireach',
+    one: 'dinar Aildireach',
+    two: 'dhinar Aildireach',
+    few: 'dinar Aildireach',
+    other: 'dinar Aildireach',
+  );
+  static const _ecs = Currency(
+    _cld,
+    'ECS',
+    'Sucre Eacuadorach',
+    one: 'sucre Eacuadorach',
+    two: 'shucre Eacuadorach',
+    few: 'sucre Eacuadorach',
+    other: 'sucre Eacuadorach',
+  );
   static const _ecv = Currency(
-      _cld, 'ECV', 'Aonad luach chunbhalaich Eacuadorach',
-      one: 'aonad luach chunbhalaich Eacuadorach',
-      two: 'aonad luach chunbhalaich Eacuadorach',
-      few: 'aonadan luach chunbhalaich Eacuadorach',
-      other: 'aonad luach chunbhalaich Eacuadorach');
-  static const _eek = Currency(_cld, 'EEK', 'Kroon Eastoineach',
-      one: 'kroon Eastoineach',
-      two: 'kroon Eastoineach',
-      few: 'kroon Eastoineach',
-      other: 'kroon Eastoineach');
-  static const _egp = Currency(_cld, 'EGP', 'Punnd Èipheiteach',
-      one: 'phunnd Èipheiteach',
-      two: 'phunnd Èipheiteach',
-      few: 'puinnd Èipheiteach',
-      other: 'punnd Èipheiteach',
-      symbolNarrow: 'E£');
-  static const _ern = Currency(_cld, 'ERN', 'Nakfa Eartrach',
-      one: 'nakfa Eartrach',
-      two: 'nakfa Eartrach',
-      few: 'nakfa Eartrach',
-      other: 'nakfa Eartrach');
-  static const _esa = Currency(_cld, 'ESA', 'Peseta Spàinnteach (cunntas A)',
-      one: 'pheseta Spàinnteach (cunntas A)',
-      two: 'pheseta Spàinnteach (cunntas A)',
-      few: 'peseta Spàinnteach (cunntas A)',
-      other: 'peseta Spàinnteach (cunntas A)');
+    _cld,
+    'ECV',
+    'Aonad luach chunbhalaich Eacuadorach',
+    one: 'aonad luach chunbhalaich Eacuadorach',
+    two: 'aonad luach chunbhalaich Eacuadorach',
+    few: 'aonadan luach chunbhalaich Eacuadorach',
+    other: 'aonad luach chunbhalaich Eacuadorach',
+  );
+  static const _eek = Currency(
+    _cld,
+    'EEK',
+    'Kroon Eastoineach',
+    one: 'kroon Eastoineach',
+    two: 'kroon Eastoineach',
+    few: 'kroon Eastoineach',
+    other: 'kroon Eastoineach',
+  );
+  static const _egp = Currency(
+    _cld,
+    'EGP',
+    'Punnd Èipheiteach',
+    one: 'phunnd Èipheiteach',
+    two: 'phunnd Èipheiteach',
+    few: 'puinnd Èipheiteach',
+    other: 'punnd Èipheiteach',
+    symbolNarrow: 'E£',
+  );
+  static const _ern = Currency(
+    _cld,
+    'ERN',
+    'Nakfa Eartrach',
+    one: 'nakfa Eartrach',
+    two: 'nakfa Eartrach',
+    few: 'nakfa Eartrach',
+    other: 'nakfa Eartrach',
+  );
+  static const _esa = Currency(
+    _cld,
+    'ESA',
+    'Peseta Spàinnteach (cunntas A)',
+    one: 'pheseta Spàinnteach (cunntas A)',
+    two: 'pheseta Spàinnteach (cunntas A)',
+    few: 'peseta Spàinnteach (cunntas A)',
+    other: 'peseta Spàinnteach (cunntas A)',
+  );
   static const _esb = Currency(
-      _cld, 'ESB', 'Peseta Spàinnteach (cunntas iompachail)',
-      one: 'pheseta Spàinnteach (cunntas iompachail)',
-      two: 'pheseta Spàinnteach (cunntas iompachail)',
-      few: 'peseta Spàinnteach (cunntas iompachail)',
-      other: 'peseta Spàinnteach (cunntas iompachail)');
-  static const _esp = Currency(_cld, 'ESP', 'Peseta Spàinnteach',
-      one: 'pheseta Spàinnteach',
-      two: 'pheseta Spàinnteach',
-      few: 'peseta Spàinnteach',
-      other: 'peseta Spàinnteach',
-      symbolNarrow: '₧');
-  static const _etb = Currency(_cld, 'ETB', 'Birr Itiopach',
-      one: 'bhirr Itiopach',
-      two: 'bhirr Itiopach',
-      few: 'birr Itiopach',
-      other: 'birr Itiopach');
-  static const _eur = Currency(_cld, 'EUR', 'Eòro',
-      one: 'Eòro',
-      two: 'Eòro',
-      few: 'Eòrothan',
-      other: 'Eòro',
-      symbol: '€',
-      symbolNarrow: '€');
-  static const _fim = Currency(_cld, 'FIM', 'Markka Fionnlannach',
-      one: 'mharkka Fionnlannach',
-      two: 'mharkka Fionnlannach',
-      few: 'markka Fionnlannach',
-      other: 'markka Fionnlannach');
-  static const _fjd = Currency(_cld, 'FJD', 'Dolar Fìditheach',
-      one: 'dolar Fìditheach',
-      two: 'dholar Fìditheach',
-      few: 'dolaran Fìditheach',
-      other: 'dolar Fìditheach',
-      symbolNarrow: r'$');
-  static const _fkp = Currency(_cld, 'FKP', 'Punnd Fàclannach',
-      one: 'phunnd Fàclannach',
-      two: 'phunnd Fàclannach',
-      few: 'puinnd Fhàclannach',
-      other: 'punnd Fàclannach',
-      symbolNarrow: '£');
-  static const _frf = Currency(_cld, 'FRF', 'Franc Frangach',
-      one: 'fhranc Frangach',
-      two: 'fhranc Frangach',
-      few: 'franc Frangach',
-      other: 'franc Frangach');
-  static const _gbp = Currency(_cld, 'GBP', 'Punnd Sasannach',
-      one: 'phunnd Sasannach',
-      two: 'phunnd Sasannach',
-      few: 'puinnd Shasannach',
-      other: 'punnd Sasannach',
-      symbol: '£',
-      symbolNarrow: '£');
-  static const _gek = Currency(_cld, 'GEK', 'Kupon larit Cairtbheileach',
-      one: 'kupon larit Cairtbheileach',
-      two: 'kupon larit Cairtbheileach',
-      few: 'kupon larit Cairtbheileach',
-      other: 'kupon larit Cairtbheileach');
-  static const _gel = Currency(_cld, 'GEL', 'Lari Cairtbheileach',
-      one: 'lari Cairtbheileach',
-      two: 'lari Cairtbheileach',
-      few: 'lari Cairtbheileach',
-      other: 'lari Cairtbheileach',
-      symbolNarrow: '₾');
-  static const _ghc = Currency(_cld, 'GHC', 'Cedi Gànach (1979–2007)',
-      one: 'chedi Gànach (1979–2007)',
-      two: 'chedi Gànach (1979–2007)',
-      few: 'cedi Gànach (1979–2007)',
-      other: 'cedi Gànach (1979–2007)');
-  static const _ghs = Currency(_cld, 'GHS', 'Cedi Gànach',
-      one: 'chedi Gànach',
-      two: 'chedi Gànach',
-      few: 'cedi Gànach',
-      other: 'cedi Gànach',
-      symbolNarrow: 'GH₵');
-  static const _gip = Currency(_cld, 'GIP', 'Punnd Diobraltarach',
-      one: 'phunnd Diobraltarach',
-      two: 'phunnd Diobraltarach',
-      few: 'puinnd Dhiobraltarach',
-      other: 'punnd Diobraltarach',
-      symbolNarrow: '£');
-  static const _gmd = Currency(_cld, 'GMD', 'Dalasi Gaimbitheach',
-      one: 'dalasi Gaimbitheach',
-      two: 'dhalasi Gaimbitheach',
-      few: 'dalasi Gaimbitheach',
-      other: 'dalasi Gaimbitheach');
-  static const _gnf = Currency(_cld, 'GNF', 'Franc Ginitheach',
-      one: 'fhranc Ginitheach',
-      two: 'fhranc Ginitheach',
-      few: 'franc Ginitheach',
-      other: 'franc Ginitheach',
-      symbolNarrow: 'FG');
-  static const _gns = Currency(_cld, 'GNS', 'Syli Ginitheach',
-      one: 'syli Ginitheach',
-      two: 'shyli Ginitheach',
-      few: 'syli Ginitheach',
-      other: 'syli Ginitheach');
-  static const _gqe = Currency(_cld, 'GQE', 'Ekwele Gini Meadhan-Chriosaich',
-      one: 'ekwele Gini Meadhan-Chriosaich',
-      two: 'ekwele Gini Meadhan-Chriosaich',
-      few: 'ekwele Gini Meadhan-Chriosaich',
-      other: 'ekwele Gini Meadhan-Chriosaich');
-  static const _grd = Currency(_cld, 'GRD', 'Drachma Greugach',
-      one: 'dhrachma Greugach',
-      two: 'dhrachma Greugach',
-      few: 'drachma Greugach',
-      other: 'drachma Greugach');
-  static const _gtq = Currency(_cld, 'GTQ', 'Quetzal Guatamalach',
-      one: 'quetzal Guatamalach',
-      two: 'quetzal Guatamalach',
-      few: 'quetzal Guatamalach',
-      other: 'quetzal Guatamalach',
-      symbolNarrow: 'Q');
-  static const _gwe = Currency(_cld, 'GWE', 'Escudo Gini na Portagaile',
-      one: 'escudo Gini na Portagaile',
-      two: 'escudo Gini na Portagaile',
-      few: 'escudo Gini na Portagaile',
-      other: 'escudo Gini na Portagaile');
-  static const _gwp = Currency(_cld, 'GWP', 'Peso Gini-Biosothach',
-      one: 'pheso Gini-Biosothach',
-      two: 'pheso Gini-Biosothach',
-      few: 'pesothan Gini-Biosothach',
-      other: 'peso Gini-Biosothach');
-  static const _gyd = Currency(_cld, 'GYD', 'Dolar Guidheànach',
-      one: 'dolar Guidheànach',
-      two: 'dholar Guidheànach',
-      few: 'dolaran Guidheànach',
-      other: 'dolar Guidheànach',
-      symbolNarrow: r'$');
-  static const _hkd = Currency(_cld, 'HKD', 'Dolar Hong Kong',
-      one: 'dolar Hong Kong',
-      two: 'dholar Hong Kong',
-      few: 'dolaran Hong Kong',
-      other: 'dolar Hong Kong',
-      symbol: r'HK$',
-      symbolNarrow: r'$');
-  static const _hnl = Currency(_cld, 'HNL', 'Lempira Hondùrach',
-      one: 'lempira Hondùrach',
-      two: 'lempira Hondùrach',
-      few: 'lempira Hondùrach',
-      other: 'lempira Hondùrach',
-      symbolNarrow: 'L');
-  static const _hrd = Currency(_cld, 'HRD', 'Dinar Cròthaiseach',
-      one: 'dinar Cròthaiseach',
-      two: 'dhinar Cròthaiseach',
-      few: 'dinar Cròthaiseach',
-      other: 'dinar Cròthaiseach');
-  static const _hrk = Currency(_cld, 'HRK', 'Kuna Cròthaiseach',
-      one: 'kuna Cròthaiseach',
-      two: 'kuna Cròthaiseach',
-      few: 'kuna Cròthaiseach',
-      other: 'kuna Cròthaiseach',
-      symbolNarrow: 'kn');
-  static const _htg = Currency(_cld, 'HTG', 'Gourde Haidhteach',
-      one: 'ghourde Haidhteach',
-      two: 'ghourde Haidhteach',
-      few: 'gourde Haidhteach',
-      other: 'gourde Haidhteach');
-  static const _huf = Currency(_cld, 'HUF', 'Forint Ungaireach',
-      one: 'fhorint Ungaireach',
-      two: 'fhorint Ungaireach',
-      few: 'forint Ungaireach',
-      other: 'forint Ungaireach',
-      symbolNarrow: 'Ft');
-  static const _idr = Currency(_cld, 'IDR', 'Rupiah Innd-Innseach',
-      one: 'rupiah Innd-Innseach',
-      two: 'rupiah Innd-Innseach',
-      few: 'rupiah Innd-Innseach',
-      other: 'rupiah Innd-Innseach',
-      symbolNarrow: 'Rp');
-  static const _iep = Currency(_cld, 'IEP', 'Punnd Èireannach',
-      one: 'phunnd Èireannach',
-      two: 'phunnd Èireannach',
-      few: 'puinnd Èireannach',
-      other: 'punnd Èireannach');
-  static const _ilp = Currency(_cld, 'ILP', 'Punnd Iosraeleach',
-      one: 'phunnd Iosraeleach',
-      two: 'phunnd Iosraeleach',
-      few: 'puinnd Iosraeleach',
-      other: 'punnd Iosraeleach');
-  static const _ilr = Currency(_cld, 'ILR', 'Secel Iosraeleach (1980–1985)',
-      one: 'shecel Iosraeleach (1980–1985)',
-      two: 'shecel Iosraeleach (1980–1985)',
-      few: 'secelean Iosraeleach (1980–1985)',
-      other: 'secel Iosraeleach (1980–1985)');
-  static const _ils = Currency(_cld, 'ILS', 'Secel ùr Iosraeleach',
-      one: 'shecel ùr Iosraeleach',
-      two: 'shecel ùr Iosraeleach',
-      few: 'secelean ùra Iosraeleach',
-      other: 'secel ùr Iosraeleach',
-      symbol: '₪',
-      symbolNarrow: '₪');
-  static const _inr = Currency(_cld, 'INR', 'Rupee Innseanach',
-      one: 'rupee Innseanach',
-      two: 'rupee Innseanach',
-      few: 'rupee Innseanach',
-      other: 'rupee Innseanach',
-      symbol: '₹',
-      symbolNarrow: '₹');
-  static const _iqd = Currency(_cld, 'IQD', 'Dinar Ioràcach',
-      one: 'dinar Ioràcach',
-      two: 'dhinar Ioràcach',
-      few: 'dinar Ioràcach',
-      other: 'dinar Ioràcach');
-  static const _irr = Currency(_cld, 'IRR', 'Rial Iorànach',
-      one: 'rial Iorànach',
-      two: 'rial Iorànach',
-      few: 'rial Iorànach',
-      other: 'rial Iorànach');
-  static const _isj = Currency(_cld, 'ISJ', 'Króna Innis Tìleach (1918–1981)',
-      one: 'króna Innis Tìleach (1918–1981)',
-      two: 'króna Innis Tìleach (1918–1981)',
-      few: 'krónur Innis Tìleach (1918–1981)',
-      other: 'króna Innis Tìleach (1918–1981)');
-  static const _isk = Currency(_cld, 'ISK', 'Króna Innis Tìleach',
-      one: 'króna Innis Tìleach',
-      two: 'króna Innis Tìleach',
-      few: 'krónur Innis Tìleach',
-      other: 'króna Innis Tìleach',
-      symbolNarrow: 'kr');
-  static const _itl = Currency(_cld, 'ITL', 'Lira Eadailteach',
-      one: 'lira Eadailteach',
-      two: 'lira Eadailteach',
-      few: 'lira Eadailteach',
-      other: 'lira Eadailteach');
-  static const _jmd = Currency(_cld, 'JMD', 'Dolar Diameugach',
-      one: 'dolar Diameugach',
-      two: 'dholar Diameugach',
-      few: 'dolaran Diameugach',
-      other: 'dolar Diameugach',
-      symbolNarrow: r'$');
-  static const _jod = Currency(_cld, 'JOD', 'Dinar Iòrdanach',
-      one: 'dinar Iòrdanach',
-      two: 'dhinar Iòrdanach',
-      few: 'dinar Iòrdanach',
-      other: 'dinar Iòrdanach');
-  static const _jpy = Currency(_cld, 'JPY', 'Yen Seapanach',
-      one: 'yen Seapanach',
-      two: 'yen Seapanach',
-      few: 'yen Seapanach',
-      other: 'yen Seapanach',
-      symbol: 'JP¥',
-      symbolNarrow: '¥');
-  static const _kes = Currency(_cld, 'KES', 'Shilling Ceineach',
-      one: 'shilling Ceineach',
-      two: 'shilling Ceineach',
-      few: 'shilling Ceineach',
-      other: 'shilling Ceineach');
-  static const _kgs = Currency(_cld, 'KGS', 'Som Cìorgasach',
-      one: 'som Cìorgasach',
-      two: 'shom Cìorgasach',
-      few: 'som Cìorgasach',
-      other: 'som Cìorgasach',
-      symbolNarrow: '⃀');
-  static const _khr = Currency(_cld, 'KHR', 'Riel Cambuideach',
-      one: 'riel Cambuideach',
-      two: 'riel Cambuideach',
-      few: 'riel Cambuideach',
-      other: 'riel Cambuideach',
-      symbolNarrow: '៛');
-  static const _kmf = Currency(_cld, 'KMF', 'Franc Comorosach',
-      one: 'fhranc Comorosach',
-      two: 'fhranc Comorosach',
-      few: 'franc Comorosach',
-      other: 'franc Comorosach',
-      symbolNarrow: 'CF');
-  static const _kpw = Currency(_cld, 'KPW', 'Won Choirèa a Tuath',
-      one: 'won Choirèa a Tuath',
-      two: 'won Choirèa a Tuath',
-      few: 'won Choirèa a Tuath',
-      other: 'won Choirèa a Tuath',
-      symbolNarrow: '₩');
-  static const _krh = Currency(_cld, 'KRH', 'Hwan Choirèa a Deas (1953–1962)',
-      one: 'hwan Choirèa a Deas (1953–1962)',
-      two: 'hwan Choirèa a Deas (1953–1962)',
-      few: 'hwan Choirèa a Deas (1953–1962)',
-      other: 'hwan Choirèa a Deas (1953–1962)');
-  static const _kro = Currency(_cld, 'KRO', 'Won Choirèa a Deas (1945–1953)',
-      one: 'won Choirèa a Deas (1945–1953)',
-      two: 'won Choirèa a Deas (1945–1953)',
-      few: 'won Choirèa a Deas (1945–1953)',
-      other: 'won Choirèa a Deas (1945–1953)');
-  static const _krw = Currency(_cld, 'KRW', 'Won Choirèa a Deas',
-      one: 'won Choirèa a Deas',
-      two: 'won Choirèa a Deas',
-      few: 'won Choirèa a Deas',
-      other: 'won Choirèa a Deas',
-      symbol: '₩',
-      symbolNarrow: '₩');
-  static const _kwd = Currency(_cld, 'KWD', 'Dinar Cuibhèiteach',
-      one: 'dinar Cuibhèiteach',
-      two: 'dhinar Cuibhèiteach',
-      few: 'dinar Cuibhèiteach',
-      other: 'dinar Cuibhèiteach');
-  static const _kyd = Currency(_cld, 'KYD', 'Dolar Caimeanach',
-      one: 'dolar Caimeanach',
-      two: 'dholar Caimeanach',
-      few: 'dolaran Caimeanach',
-      other: 'dolar Caimeanach',
-      symbolNarrow: r'$');
-  static const _kzt = Currency(_cld, 'KZT', 'Tenge Casachach',
-      one: 'tenge Casachach',
-      two: 'thenge Casachach',
-      few: 'tenge Casachach',
-      other: 'tenge Casachach',
-      symbolNarrow: '₸');
-  static const _lak = Currency(_cld, 'LAK', 'Kip Làthosach',
-      one: 'kip Làthosach',
-      two: 'kip Làthosach',
-      few: 'kip Làthosach',
-      other: 'kip Làthosach',
-      symbolNarrow: '₭');
-  static const _lbp = Currency(_cld, 'LBP', 'Punnd Leabanach',
-      one: 'phunnd Leabanach',
-      two: 'phunnd Leabanach',
-      few: 'puinnd Leabanach',
-      other: 'punnd Leabanach',
-      symbolNarrow: 'L£');
-  static const _lkr = Currency(_cld, 'LKR', 'Rupee Sri Lancach',
-      one: 'rupee Sri Lancach',
-      two: 'rupee Sri Lancach',
-      few: 'rupee Sri Lancach',
-      other: 'rupee Sri Lancach',
-      symbolNarrow: 'Rs');
-  static const _lrd = Currency(_cld, 'LRD', 'Dolar Libèireach',
-      one: 'dolar Libèireach',
-      two: 'dholar Libèireach',
-      few: 'dolaran Libèireach',
-      other: 'dolar Libèireach',
-      symbolNarrow: r'$');
-  static const _lsl = Currency(_cld, 'LSL', 'Loti Leasotach',
-      one: 'loti Leasotach',
-      two: 'loti Leasotach',
-      few: 'loti Leasotach',
-      other: 'loti Leasotach');
-  static const _ltl = Currency(_cld, 'LTL', 'Litas Liotuaineach',
-      one: 'litas Liotuaineach',
-      two: 'litas Liotuaineach',
-      few: 'litas Liotuaineach',
-      other: 'litas Liotuaineach',
-      symbolNarrow: 'Lt');
-  static const _ltt = Currency(_cld, 'LTT', 'Talonas Liotuaineach',
-      one: 'talonas Liotuaineach',
-      two: 'thalonas Liotuaineach',
-      few: 'talonas Liotuaineach',
-      other: 'talonas Liotuaineach');
-  static const _luc = Currency(_cld, 'LUC', 'Franc iompachail Lugsamburgach',
-      one: 'fhranc iompachail Lugsamburgach',
-      two: 'fhranc iompachail Lugsamburgach',
-      few: 'franc iompachail Lugsamburgach',
-      other: 'franc iompachail Lugsamburgach');
-  static const _luf = Currency(_cld, 'LUF', 'Franc Lugsamburgach',
-      one: 'fhranc Lugsamburgach',
-      two: 'fhranc Lugsamburgach',
-      few: 'franc Lugsamburgach',
-      other: 'franc Lugsamburgach');
-  static const _lul = Currency(_cld, 'LUL', 'Franc ionmhasail Lugsamburgach',
-      one: 'fhranc ionmhasail Lugsamburgach',
-      two: 'fhranc ionmhasail Lugsamburgach',
-      few: 'franc ionmhasail Lugsamburgach',
-      other: 'franc ionmhasail Lugsamburgach');
-  static const _lvl = Currency(_cld, 'LVL', 'Lats Laitbheach',
-      one: 'lats Laitbheach',
-      two: 'lats Laitbheach',
-      few: 'lats Laitbheach',
-      other: 'lats Laitbheach',
-      symbolNarrow: 'Ls');
-  static const _lvr = Currency(_cld, 'LVR', 'Rùbal Laitbheach',
-      one: 'rùbal Laitbheach',
-      two: 'rùbal Laitbheach',
-      few: 'rùbalan Laitbheach',
-      other: 'rùbal Laitbheach');
-  static const _lyd = Currency(_cld, 'LYD', 'Dinar Libitheach',
-      one: 'dinar Libitheach',
-      two: 'dhinar Libitheach',
-      few: 'dinar Libitheach',
-      other: 'dinar Libitheach');
-  static const _mad = Currency(_cld, 'MAD', 'Dirham Morocach',
-      one: 'dirham Morocach',
-      two: 'dhirham Morocach',
-      few: 'dirham Morocach',
-      other: 'dirham Morocach');
-  static const _maf = Currency(_cld, 'MAF', 'Franc Morocach',
-      one: 'fhranc Morocach',
-      two: 'fhranc Morocach',
-      few: 'franc Morocach',
-      other: 'franc Morocach');
-  static const _mcf = Currency(_cld, 'MCF', 'Franc Monacach',
-      one: 'fhranc Monacach',
-      two: 'fhranc Monacach',
-      few: 'franc Monacach',
-      other: 'franc Monacach');
-  static const _mdc = Currency(_cld, 'MDC', 'Cupon Moldobhach',
-      one: 'chupon Moldobhach',
-      two: 'chupon Moldobhach',
-      few: 'cupon Moldobhach',
-      other: 'cupon Moldobhach');
-  static const _mdl = Currency(_cld, 'MDL', 'Leu Moldobhach',
-      one: 'leu Moldobhach',
-      two: 'leu Moldobhach',
-      few: 'leu Moldobhach',
-      other: 'leu Moldobhach');
-  static const _mga = Currency(_cld, 'MGA', 'Ariary Madagasgarach',
-      one: 'ariary Madagasgarach',
-      two: 'ariary Madagasgarach',
-      few: 'ariary Madagasgarach',
-      other: 'ariary Madagasgarach',
-      symbolNarrow: 'Ar');
-  static const _mgf = Currency(_cld, 'MGF', 'Franc Madagasgarach',
-      one: 'fhranc Madagasgarach',
-      two: 'fhranc Madagasgarach',
-      few: 'franc Madagasgarach',
-      other: 'franc Madagasgarach');
-  static const _mkd = Currency(_cld, 'MKD', 'Denar Masadonach',
-      one: 'denar Masadonach',
-      two: 'dhenar Masadonach',
-      few: 'denar Masadonach',
-      other: 'denar Masadonach');
-  static const _mkn = Currency(_cld, 'MKN', 'Denar Masadonach (1992–1993)',
-      one: 'denar Masadonach (1992–1993)',
-      two: 'dhenar Masadonach (1992–1993)',
-      few: 'denar Masadonach (1992–1993)',
-      other: 'denar Masadonach (1992–1993)');
-  static const _mlf = Currency(_cld, 'MLF', 'Franc Màilitheach',
-      one: 'fhranc Màilitheach',
-      two: 'fhranc Màilitheach',
-      few: 'franc Màilitheach',
-      other: 'franc Màilitheach');
-  static const _mmk = Currency(_cld, 'MMK', 'Kyat Miànmarach',
-      one: 'kyat Miànmarach',
-      two: 'kyat Miànmarach',
-      few: 'kyat Miànmarach',
-      other: 'kyat Miànmarach',
-      symbolNarrow: 'K');
-  static const _mnt = Currency(_cld, 'MNT', 'Tugrik Mongolach',
-      one: 'tugrik Mongolach',
-      two: 'thugrik Mongolach',
-      few: 'tugrik Mongolach',
-      other: 'tugrik Mongolach',
-      symbolNarrow: '₮');
-  static const _mop = Currency(_cld, 'MOP', 'Pataca Macàthuach',
-      one: 'phataca Macàthuach',
-      two: 'phataca Macàthuach',
-      few: 'pataca Macàthuach',
-      other: 'pataca Macàthuach');
-  static const _mro = Currency(_cld, 'MRO', 'Ouguiya Moratàineach (1973–2017)',
-      one: 'ouguiya Moratàineach (1973–2017)',
-      two: 'ouguiya Moratàineach (1973–2017)',
-      few: 'ouguiya Moratàineach (1973–2017)',
-      other: 'ouguiya Moratàineach (1973–2017)');
-  static const _mru = Currency(_cld, 'MRU', 'Ouguiya Moratàineach',
-      one: 'ouguiya Moratàineach',
-      two: 'ouguiya Moratàineach',
-      few: 'ouguiya Moratàineach',
-      other: 'ouguiya Moratàineach');
-  static const _mtl = Currency(_cld, 'MTL', 'Lira Maltach',
-      one: 'lira Maltach',
-      two: 'lira Maltach',
-      few: 'lira Maltach',
-      other: 'lira Maltach');
-  static const _mtp = Currency(_cld, 'MTP', 'Punnd Maltach',
-      one: 'phunnd Maltach',
-      two: 'phunnd Maltach',
-      few: 'puinnd Mhaltach',
-      other: 'punnd Maltach');
-  static const _mur = Currency(_cld, 'MUR', 'Rupee Moiriseasach',
-      one: 'rupee Moiriseasach',
-      two: 'rupee Moiriseasach',
-      few: 'rupee Moiriseasach',
-      other: 'rupee Moiriseasach',
-      symbolNarrow: 'Rs');
-  static const _mvp = Currency(_cld, 'MVP', 'Rupee Maladaibheach',
-      one: 'rupee Maladaibheach',
-      two: 'rupee Maladaibheach',
-      few: 'rupee Maladaibheach',
-      other: 'rupee Maladaibheach');
-  static const _mvr = Currency(_cld, 'MVR', 'Rufiyaa Maladaibheach',
-      one: 'rufiyaa Maladaibheach',
-      two: 'rufiyaa Maladaibheach',
-      few: 'rufiyaa Maladaibheach',
-      other: 'rufiyaa Maladaibheach');
-  static const _mwk = Currency(_cld, 'MWK', 'Kwacha Malabhaidheach',
-      one: 'kwacha Malabhaidheach',
-      two: 'kwacha Malabhaidheach',
-      few: 'kwacha Malabhaidheach',
-      other: 'kwacha Malabhaidheach');
-  static const _mxn = Currency(_cld, 'MXN', 'Peso Meagsagach',
-      one: 'pheso Meagsagach',
-      two: 'pheso Meagsagach',
-      few: 'pesothan Meagsagach',
-      other: 'peso Meagsagach',
-      symbol: r'MX$',
-      symbolNarrow: r'$');
+    _cld,
+    'ESB',
+    'Peseta Spàinnteach (cunntas iompachail)',
+    one: 'pheseta Spàinnteach (cunntas iompachail)',
+    two: 'pheseta Spàinnteach (cunntas iompachail)',
+    few: 'peseta Spàinnteach (cunntas iompachail)',
+    other: 'peseta Spàinnteach (cunntas iompachail)',
+  );
+  static const _esp = Currency(
+    _cld,
+    'ESP',
+    'Peseta Spàinnteach',
+    one: 'pheseta Spàinnteach',
+    two: 'pheseta Spàinnteach',
+    few: 'peseta Spàinnteach',
+    other: 'peseta Spàinnteach',
+    symbolNarrow: '₧',
+  );
+  static const _etb = Currency(
+    _cld,
+    'ETB',
+    'Birr Itiopach',
+    one: 'bhirr Itiopach',
+    two: 'bhirr Itiopach',
+    few: 'birr Itiopach',
+    other: 'birr Itiopach',
+  );
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'Eòro',
+    one: 'Eòro',
+    two: 'Eòro',
+    few: 'Eòrothan',
+    other: 'Eòro',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
+  static const _fim = Currency(
+    _cld,
+    'FIM',
+    'Markka Fionnlannach',
+    one: 'mharkka Fionnlannach',
+    two: 'mharkka Fionnlannach',
+    few: 'markka Fionnlannach',
+    other: 'markka Fionnlannach',
+  );
+  static const _fjd = Currency(
+    _cld,
+    'FJD',
+    'Dolar Fìditheach',
+    one: 'dolar Fìditheach',
+    two: 'dholar Fìditheach',
+    few: 'dolaran Fìditheach',
+    other: 'dolar Fìditheach',
+    symbolNarrow: r'$',
+  );
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'Punnd Fàclannach',
+    one: 'phunnd Fàclannach',
+    two: 'phunnd Fàclannach',
+    few: 'puinnd Fhàclannach',
+    other: 'punnd Fàclannach',
+    symbolNarrow: '£',
+  );
+  static const _frf = Currency(
+    _cld,
+    'FRF',
+    'Franc Frangach',
+    one: 'fhranc Frangach',
+    two: 'fhranc Frangach',
+    few: 'franc Frangach',
+    other: 'franc Frangach',
+  );
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'Punnd Sasannach',
+    one: 'phunnd Sasannach',
+    two: 'phunnd Sasannach',
+    few: 'puinnd Shasannach',
+    other: 'punnd Sasannach',
+    symbol: '£',
+    symbolNarrow: '£',
+  );
+  static const _gek = Currency(
+    _cld,
+    'GEK',
+    'Kupon larit Cairtbheileach',
+    one: 'kupon larit Cairtbheileach',
+    two: 'kupon larit Cairtbheileach',
+    few: 'kupon larit Cairtbheileach',
+    other: 'kupon larit Cairtbheileach',
+  );
+  static const _gel = Currency(
+    _cld,
+    'GEL',
+    'Lari Cairtbheileach',
+    one: 'lari Cairtbheileach',
+    two: 'lari Cairtbheileach',
+    few: 'lari Cairtbheileach',
+    other: 'lari Cairtbheileach',
+    symbolNarrow: '₾',
+  );
+  static const _ghc = Currency(
+    _cld,
+    'GHC',
+    'Cedi Gànach (1979–2007)',
+    one: 'chedi Gànach (1979–2007)',
+    two: 'chedi Gànach (1979–2007)',
+    few: 'cedi Gànach (1979–2007)',
+    other: 'cedi Gànach (1979–2007)',
+  );
+  static const _ghs = Currency(
+    _cld,
+    'GHS',
+    'Cedi Gànach',
+    one: 'chedi Gànach',
+    two: 'chedi Gànach',
+    few: 'cedi Gànach',
+    other: 'cedi Gànach',
+    symbolNarrow: 'GH₵',
+  );
+  static const _gip = Currency(
+    _cld,
+    'GIP',
+    'Punnd Diobraltarach',
+    one: 'phunnd Diobraltarach',
+    two: 'phunnd Diobraltarach',
+    few: 'puinnd Dhiobraltarach',
+    other: 'punnd Diobraltarach',
+    symbolNarrow: '£',
+  );
+  static const _gmd = Currency(
+    _cld,
+    'GMD',
+    'Dalasi Gaimbitheach',
+    one: 'dalasi Gaimbitheach',
+    two: 'dhalasi Gaimbitheach',
+    few: 'dalasi Gaimbitheach',
+    other: 'dalasi Gaimbitheach',
+  );
+  static const _gnf = Currency(
+    _cld,
+    'GNF',
+    'Franc Ginitheach',
+    one: 'fhranc Ginitheach',
+    two: 'fhranc Ginitheach',
+    few: 'franc Ginitheach',
+    other: 'franc Ginitheach',
+    symbolNarrow: 'FG',
+  );
+  static const _gns = Currency(
+    _cld,
+    'GNS',
+    'Syli Ginitheach',
+    one: 'syli Ginitheach',
+    two: 'shyli Ginitheach',
+    few: 'syli Ginitheach',
+    other: 'syli Ginitheach',
+  );
+  static const _gqe = Currency(
+    _cld,
+    'GQE',
+    'Ekwele Gini Meadhan-Chriosaich',
+    one: 'ekwele Gini Meadhan-Chriosaich',
+    two: 'ekwele Gini Meadhan-Chriosaich',
+    few: 'ekwele Gini Meadhan-Chriosaich',
+    other: 'ekwele Gini Meadhan-Chriosaich',
+  );
+  static const _grd = Currency(
+    _cld,
+    'GRD',
+    'Drachma Greugach',
+    one: 'dhrachma Greugach',
+    two: 'dhrachma Greugach',
+    few: 'drachma Greugach',
+    other: 'drachma Greugach',
+  );
+  static const _gtq = Currency(
+    _cld,
+    'GTQ',
+    'Quetzal Guatamalach',
+    one: 'quetzal Guatamalach',
+    two: 'quetzal Guatamalach',
+    few: 'quetzal Guatamalach',
+    other: 'quetzal Guatamalach',
+    symbolNarrow: 'Q',
+  );
+  static const _gwe = Currency(
+    _cld,
+    'GWE',
+    'Escudo Gini na Portagaile',
+    one: 'escudo Gini na Portagaile',
+    two: 'escudo Gini na Portagaile',
+    few: 'escudo Gini na Portagaile',
+    other: 'escudo Gini na Portagaile',
+  );
+  static const _gwp = Currency(
+    _cld,
+    'GWP',
+    'Peso Gini-Biosothach',
+    one: 'pheso Gini-Biosothach',
+    two: 'pheso Gini-Biosothach',
+    few: 'pesothan Gini-Biosothach',
+    other: 'peso Gini-Biosothach',
+  );
+  static const _gyd = Currency(
+    _cld,
+    'GYD',
+    'Dolar Guidheànach',
+    one: 'dolar Guidheànach',
+    two: 'dholar Guidheànach',
+    few: 'dolaran Guidheànach',
+    other: 'dolar Guidheànach',
+    symbolNarrow: r'$',
+  );
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'Dolar Hong Kong',
+    one: 'dolar Hong Kong',
+    two: 'dholar Hong Kong',
+    few: 'dolaran Hong Kong',
+    other: 'dolar Hong Kong',
+    symbol: r'HK$',
+    symbolNarrow: r'$',
+  );
+  static const _hnl = Currency(
+    _cld,
+    'HNL',
+    'Lempira Hondùrach',
+    one: 'lempira Hondùrach',
+    two: 'lempira Hondùrach',
+    few: 'lempira Hondùrach',
+    other: 'lempira Hondùrach',
+    symbolNarrow: 'L',
+  );
+  static const _hrd = Currency(
+    _cld,
+    'HRD',
+    'Dinar Cròthaiseach',
+    one: 'dinar Cròthaiseach',
+    two: 'dhinar Cròthaiseach',
+    few: 'dinar Cròthaiseach',
+    other: 'dinar Cròthaiseach',
+  );
+  static const _hrk = Currency(
+    _cld,
+    'HRK',
+    'Kuna Cròthaiseach',
+    one: 'kuna Cròthaiseach',
+    two: 'kuna Cròthaiseach',
+    few: 'kuna Cròthaiseach',
+    other: 'kuna Cròthaiseach',
+    symbolNarrow: 'kn',
+  );
+  static const _htg = Currency(
+    _cld,
+    'HTG',
+    'Gourde Haidhteach',
+    one: 'ghourde Haidhteach',
+    two: 'ghourde Haidhteach',
+    few: 'gourde Haidhteach',
+    other: 'gourde Haidhteach',
+  );
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'Forint Ungaireach',
+    one: 'fhorint Ungaireach',
+    two: 'fhorint Ungaireach',
+    few: 'forint Ungaireach',
+    other: 'forint Ungaireach',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'Rupiah Innd-Innseach',
+    one: 'rupiah Innd-Innseach',
+    two: 'rupiah Innd-Innseach',
+    few: 'rupiah Innd-Innseach',
+    other: 'rupiah Innd-Innseach',
+    symbolNarrow: 'Rp',
+  );
+  static const _iep = Currency(
+    _cld,
+    'IEP',
+    'Punnd Èireannach',
+    one: 'phunnd Èireannach',
+    two: 'phunnd Èireannach',
+    few: 'puinnd Èireannach',
+    other: 'punnd Èireannach',
+  );
+  static const _ilp = Currency(
+    _cld,
+    'ILP',
+    'Punnd Iosraeleach',
+    one: 'phunnd Iosraeleach',
+    two: 'phunnd Iosraeleach',
+    few: 'puinnd Iosraeleach',
+    other: 'punnd Iosraeleach',
+  );
+  static const _ilr = Currency(
+    _cld,
+    'ILR',
+    'Secel Iosraeleach (1980–1985)',
+    one: 'shecel Iosraeleach (1980–1985)',
+    two: 'shecel Iosraeleach (1980–1985)',
+    few: 'secelean Iosraeleach (1980–1985)',
+    other: 'secel Iosraeleach (1980–1985)',
+  );
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'Secel ùr Iosraeleach',
+    one: 'shecel ùr Iosraeleach',
+    two: 'shecel ùr Iosraeleach',
+    few: 'secelean ùra Iosraeleach',
+    other: 'secel ùr Iosraeleach',
+    symbol: '₪',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'Rupee Innseanach',
+    one: 'rupee Innseanach',
+    two: 'rupee Innseanach',
+    few: 'rupee Innseanach',
+    other: 'rupee Innseanach',
+    symbol: '₹',
+    symbolNarrow: '₹',
+  );
+  static const _iqd = Currency(
+    _cld,
+    'IQD',
+    'Dinar Ioràcach',
+    one: 'dinar Ioràcach',
+    two: 'dhinar Ioràcach',
+    few: 'dinar Ioràcach',
+    other: 'dinar Ioràcach',
+  );
+  static const _irr = Currency(
+    _cld,
+    'IRR',
+    'Rial Iorànach',
+    one: 'rial Iorànach',
+    two: 'rial Iorànach',
+    few: 'rial Iorànach',
+    other: 'rial Iorànach',
+  );
+  static const _isj = Currency(
+    _cld,
+    'ISJ',
+    'Króna Innis Tìleach (1918–1981)',
+    one: 'króna Innis Tìleach (1918–1981)',
+    two: 'króna Innis Tìleach (1918–1981)',
+    few: 'krónur Innis Tìleach (1918–1981)',
+    other: 'króna Innis Tìleach (1918–1981)',
+  );
+  static const _isk = Currency(
+    _cld,
+    'ISK',
+    'Króna Innis Tìleach',
+    one: 'króna Innis Tìleach',
+    two: 'króna Innis Tìleach',
+    few: 'krónur Innis Tìleach',
+    other: 'króna Innis Tìleach',
+    symbolNarrow: 'kr',
+  );
+  static const _itl = Currency(
+    _cld,
+    'ITL',
+    'Lira Eadailteach',
+    one: 'lira Eadailteach',
+    two: 'lira Eadailteach',
+    few: 'lira Eadailteach',
+    other: 'lira Eadailteach',
+  );
+  static const _jmd = Currency(
+    _cld,
+    'JMD',
+    'Dolar Diameugach',
+    one: 'dolar Diameugach',
+    two: 'dholar Diameugach',
+    few: 'dolaran Diameugach',
+    other: 'dolar Diameugach',
+    symbolNarrow: r'$',
+  );
+  static const _jod = Currency(
+    _cld,
+    'JOD',
+    'Dinar Iòrdanach',
+    one: 'dinar Iòrdanach',
+    two: 'dhinar Iòrdanach',
+    few: 'dinar Iòrdanach',
+    other: 'dinar Iòrdanach',
+  );
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'Yen Seapanach',
+    one: 'yen Seapanach',
+    two: 'yen Seapanach',
+    few: 'yen Seapanach',
+    other: 'yen Seapanach',
+    symbol: 'JP¥',
+    symbolNarrow: '¥',
+  );
+  static const _kes = Currency(
+    _cld,
+    'KES',
+    'Shilling Ceineach',
+    one: 'shilling Ceineach',
+    two: 'shilling Ceineach',
+    few: 'shilling Ceineach',
+    other: 'shilling Ceineach',
+  );
+  static const _kgs = Currency(
+    _cld,
+    'KGS',
+    'Som Cìorgasach',
+    one: 'som Cìorgasach',
+    two: 'shom Cìorgasach',
+    few: 'som Cìorgasach',
+    other: 'som Cìorgasach',
+    symbolNarrow: '⃀',
+  );
+  static const _khr = Currency(
+    _cld,
+    'KHR',
+    'Riel Cambuideach',
+    one: 'riel Cambuideach',
+    two: 'riel Cambuideach',
+    few: 'riel Cambuideach',
+    other: 'riel Cambuideach',
+    symbolNarrow: '៛',
+  );
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'Franc Comorosach',
+    one: 'fhranc Comorosach',
+    two: 'fhranc Comorosach',
+    few: 'franc Comorosach',
+    other: 'franc Comorosach',
+    symbolNarrow: 'CF',
+  );
+  static const _kpw = Currency(
+    _cld,
+    'KPW',
+    'Won Choirèa a Tuath',
+    one: 'won Choirèa a Tuath',
+    two: 'won Choirèa a Tuath',
+    few: 'won Choirèa a Tuath',
+    other: 'won Choirèa a Tuath',
+    symbolNarrow: '₩',
+  );
+  static const _krh = Currency(
+    _cld,
+    'KRH',
+    'Hwan Choirèa a Deas (1953–1962)',
+    one: 'hwan Choirèa a Deas (1953–1962)',
+    two: 'hwan Choirèa a Deas (1953–1962)',
+    few: 'hwan Choirèa a Deas (1953–1962)',
+    other: 'hwan Choirèa a Deas (1953–1962)',
+  );
+  static const _kro = Currency(
+    _cld,
+    'KRO',
+    'Won Choirèa a Deas (1945–1953)',
+    one: 'won Choirèa a Deas (1945–1953)',
+    two: 'won Choirèa a Deas (1945–1953)',
+    few: 'won Choirèa a Deas (1945–1953)',
+    other: 'won Choirèa a Deas (1945–1953)',
+  );
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'Won Choirèa a Deas',
+    one: 'won Choirèa a Deas',
+    two: 'won Choirèa a Deas',
+    few: 'won Choirèa a Deas',
+    other: 'won Choirèa a Deas',
+    symbol: '₩',
+    symbolNarrow: '₩',
+  );
+  static const _kwd = Currency(
+    _cld,
+    'KWD',
+    'Dinar Cuibhèiteach',
+    one: 'dinar Cuibhèiteach',
+    two: 'dhinar Cuibhèiteach',
+    few: 'dinar Cuibhèiteach',
+    other: 'dinar Cuibhèiteach',
+  );
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'Dolar Caimeanach',
+    one: 'dolar Caimeanach',
+    two: 'dholar Caimeanach',
+    few: 'dolaran Caimeanach',
+    other: 'dolar Caimeanach',
+    symbolNarrow: r'$',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'Tenge Casachach',
+    one: 'tenge Casachach',
+    two: 'thenge Casachach',
+    few: 'tenge Casachach',
+    other: 'tenge Casachach',
+    symbolNarrow: '₸',
+  );
+  static const _lak = Currency(
+    _cld,
+    'LAK',
+    'Kip Làthosach',
+    one: 'kip Làthosach',
+    two: 'kip Làthosach',
+    few: 'kip Làthosach',
+    other: 'kip Làthosach',
+    symbolNarrow: '₭',
+  );
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'Punnd Leabanach',
+    one: 'phunnd Leabanach',
+    two: 'phunnd Leabanach',
+    few: 'puinnd Leabanach',
+    other: 'punnd Leabanach',
+    symbolNarrow: 'L£',
+  );
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'Rupee Sri Lancach',
+    one: 'rupee Sri Lancach',
+    two: 'rupee Sri Lancach',
+    few: 'rupee Sri Lancach',
+    other: 'rupee Sri Lancach',
+    symbolNarrow: 'Rs',
+  );
+  static const _lrd = Currency(
+    _cld,
+    'LRD',
+    'Dolar Libèireach',
+    one: 'dolar Libèireach',
+    two: 'dholar Libèireach',
+    few: 'dolaran Libèireach',
+    other: 'dolar Libèireach',
+    symbolNarrow: r'$',
+  );
+  static const _lsl = Currency(
+    _cld,
+    'LSL',
+    'Loti Leasotach',
+    one: 'loti Leasotach',
+    two: 'loti Leasotach',
+    few: 'loti Leasotach',
+    other: 'loti Leasotach',
+  );
+  static const _ltl = Currency(
+    _cld,
+    'LTL',
+    'Litas Liotuaineach',
+    one: 'litas Liotuaineach',
+    two: 'litas Liotuaineach',
+    few: 'litas Liotuaineach',
+    other: 'litas Liotuaineach',
+    symbolNarrow: 'Lt',
+  );
+  static const _ltt = Currency(
+    _cld,
+    'LTT',
+    'Talonas Liotuaineach',
+    one: 'talonas Liotuaineach',
+    two: 'thalonas Liotuaineach',
+    few: 'talonas Liotuaineach',
+    other: 'talonas Liotuaineach',
+  );
+  static const _luc = Currency(
+    _cld,
+    'LUC',
+    'Franc iompachail Lugsamburgach',
+    one: 'fhranc iompachail Lugsamburgach',
+    two: 'fhranc iompachail Lugsamburgach',
+    few: 'franc iompachail Lugsamburgach',
+    other: 'franc iompachail Lugsamburgach',
+  );
+  static const _luf = Currency(
+    _cld,
+    'LUF',
+    'Franc Lugsamburgach',
+    one: 'fhranc Lugsamburgach',
+    two: 'fhranc Lugsamburgach',
+    few: 'franc Lugsamburgach',
+    other: 'franc Lugsamburgach',
+  );
+  static const _lul = Currency(
+    _cld,
+    'LUL',
+    'Franc ionmhasail Lugsamburgach',
+    one: 'fhranc ionmhasail Lugsamburgach',
+    two: 'fhranc ionmhasail Lugsamburgach',
+    few: 'franc ionmhasail Lugsamburgach',
+    other: 'franc ionmhasail Lugsamburgach',
+  );
+  static const _lvl = Currency(
+    _cld,
+    'LVL',
+    'Lats Laitbheach',
+    one: 'lats Laitbheach',
+    two: 'lats Laitbheach',
+    few: 'lats Laitbheach',
+    other: 'lats Laitbheach',
+    symbolNarrow: 'Ls',
+  );
+  static const _lvr = Currency(
+    _cld,
+    'LVR',
+    'Rùbal Laitbheach',
+    one: 'rùbal Laitbheach',
+    two: 'rùbal Laitbheach',
+    few: 'rùbalan Laitbheach',
+    other: 'rùbal Laitbheach',
+  );
+  static const _lyd = Currency(
+    _cld,
+    'LYD',
+    'Dinar Libitheach',
+    one: 'dinar Libitheach',
+    two: 'dhinar Libitheach',
+    few: 'dinar Libitheach',
+    other: 'dinar Libitheach',
+  );
+  static const _mad = Currency(
+    _cld,
+    'MAD',
+    'Dirham Morocach',
+    one: 'dirham Morocach',
+    two: 'dhirham Morocach',
+    few: 'dirham Morocach',
+    other: 'dirham Morocach',
+  );
+  static const _maf = Currency(
+    _cld,
+    'MAF',
+    'Franc Morocach',
+    one: 'fhranc Morocach',
+    two: 'fhranc Morocach',
+    few: 'franc Morocach',
+    other: 'franc Morocach',
+  );
+  static const _mcf = Currency(
+    _cld,
+    'MCF',
+    'Franc Monacach',
+    one: 'fhranc Monacach',
+    two: 'fhranc Monacach',
+    few: 'franc Monacach',
+    other: 'franc Monacach',
+  );
+  static const _mdc = Currency(
+    _cld,
+    'MDC',
+    'Cupon Moldobhach',
+    one: 'chupon Moldobhach',
+    two: 'chupon Moldobhach',
+    few: 'cupon Moldobhach',
+    other: 'cupon Moldobhach',
+  );
+  static const _mdl = Currency(
+    _cld,
+    'MDL',
+    'Leu Moldobhach',
+    one: 'leu Moldobhach',
+    two: 'leu Moldobhach',
+    few: 'leu Moldobhach',
+    other: 'leu Moldobhach',
+  );
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'Ariary Madagasgarach',
+    one: 'ariary Madagasgarach',
+    two: 'ariary Madagasgarach',
+    few: 'ariary Madagasgarach',
+    other: 'ariary Madagasgarach',
+    symbolNarrow: 'Ar',
+  );
+  static const _mgf = Currency(
+    _cld,
+    'MGF',
+    'Franc Madagasgarach',
+    one: 'fhranc Madagasgarach',
+    two: 'fhranc Madagasgarach',
+    few: 'franc Madagasgarach',
+    other: 'franc Madagasgarach',
+  );
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'Denar Masadonach',
+    one: 'denar Masadonach',
+    two: 'dhenar Masadonach',
+    few: 'denar Masadonach',
+    other: 'denar Masadonach',
+  );
+  static const _mkn = Currency(
+    _cld,
+    'MKN',
+    'Denar Masadonach (1992–1993)',
+    one: 'denar Masadonach (1992–1993)',
+    two: 'dhenar Masadonach (1992–1993)',
+    few: 'denar Masadonach (1992–1993)',
+    other: 'denar Masadonach (1992–1993)',
+  );
+  static const _mlf = Currency(
+    _cld,
+    'MLF',
+    'Franc Màilitheach',
+    one: 'fhranc Màilitheach',
+    two: 'fhranc Màilitheach',
+    few: 'franc Màilitheach',
+    other: 'franc Màilitheach',
+  );
+  static const _mmk = Currency(
+    _cld,
+    'MMK',
+    'Kyat Miànmarach',
+    one: 'kyat Miànmarach',
+    two: 'kyat Miànmarach',
+    few: 'kyat Miànmarach',
+    other: 'kyat Miànmarach',
+    symbolNarrow: 'K',
+  );
+  static const _mnt = Currency(
+    _cld,
+    'MNT',
+    'Tugrik Mongolach',
+    one: 'tugrik Mongolach',
+    two: 'thugrik Mongolach',
+    few: 'tugrik Mongolach',
+    other: 'tugrik Mongolach',
+    symbolNarrow: '₮',
+  );
+  static const _mop = Currency(
+    _cld,
+    'MOP',
+    'Pataca Macàthuach',
+    one: 'phataca Macàthuach',
+    two: 'phataca Macàthuach',
+    few: 'pataca Macàthuach',
+    other: 'pataca Macàthuach',
+  );
+  static const _mro = Currency(
+    _cld,
+    'MRO',
+    'Ouguiya Moratàineach (1973–2017)',
+    one: 'ouguiya Moratàineach (1973–2017)',
+    two: 'ouguiya Moratàineach (1973–2017)',
+    few: 'ouguiya Moratàineach (1973–2017)',
+    other: 'ouguiya Moratàineach (1973–2017)',
+  );
+  static const _mru = Currency(
+    _cld,
+    'MRU',
+    'Ouguiya Moratàineach',
+    one: 'ouguiya Moratàineach',
+    two: 'ouguiya Moratàineach',
+    few: 'ouguiya Moratàineach',
+    other: 'ouguiya Moratàineach',
+  );
+  static const _mtl = Currency(
+    _cld,
+    'MTL',
+    'Lira Maltach',
+    one: 'lira Maltach',
+    two: 'lira Maltach',
+    few: 'lira Maltach',
+    other: 'lira Maltach',
+  );
+  static const _mtp = Currency(
+    _cld,
+    'MTP',
+    'Punnd Maltach',
+    one: 'phunnd Maltach',
+    two: 'phunnd Maltach',
+    few: 'puinnd Mhaltach',
+    other: 'punnd Maltach',
+  );
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'Rupee Moiriseasach',
+    one: 'rupee Moiriseasach',
+    two: 'rupee Moiriseasach',
+    few: 'rupee Moiriseasach',
+    other: 'rupee Moiriseasach',
+    symbolNarrow: 'Rs',
+  );
+  static const _mvp = Currency(
+    _cld,
+    'MVP',
+    'Rupee Maladaibheach',
+    one: 'rupee Maladaibheach',
+    two: 'rupee Maladaibheach',
+    few: 'rupee Maladaibheach',
+    other: 'rupee Maladaibheach',
+  );
+  static const _mvr = Currency(
+    _cld,
+    'MVR',
+    'Rufiyaa Maladaibheach',
+    one: 'rufiyaa Maladaibheach',
+    two: 'rufiyaa Maladaibheach',
+    few: 'rufiyaa Maladaibheach',
+    other: 'rufiyaa Maladaibheach',
+  );
+  static const _mwk = Currency(
+    _cld,
+    'MWK',
+    'Kwacha Malabhaidheach',
+    one: 'kwacha Malabhaidheach',
+    two: 'kwacha Malabhaidheach',
+    few: 'kwacha Malabhaidheach',
+    other: 'kwacha Malabhaidheach',
+  );
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'Peso Meagsagach',
+    one: 'pheso Meagsagach',
+    two: 'pheso Meagsagach',
+    few: 'pesothan Meagsagach',
+    other: 'peso Meagsagach',
+    symbol: r'MX$',
+    symbolNarrow: r'$',
+  );
   static const _mxp = Currency(
-      _cld, 'MXP', 'Peso airgid Meagsagach (1861–1992)',
-      one: 'pheso airgid Meagsagach (1861–1992)',
-      two: 'pheso airgid Meagsagach (1861–1992)',
-      few: 'pesothan airgid Meagsagach (1861–1992)',
-      other: 'peso airgid Meagsagach (1861–1992)');
-  static const _mxv = Currency(_cld, 'MXV', 'Aonad inbheistidh Meagsagach',
-      one: 'aonad inbheistidh Meagsagach',
-      two: 'aonad inbheistidh Meagsagach',
-      few: 'aonadan inbheistidh Meagsagach',
-      other: 'aonad inbheistidh Meagsagach');
-  static const _myr = Currency(_cld, 'MYR', 'Ringgit Malaidheach',
-      one: 'ringgit Malaidheach',
-      two: 'ringgit Malaidheach',
-      few: 'ringgit Malaidheach',
-      other: 'ringgit Malaidheach',
-      symbolNarrow: 'RM');
-  static const _mze = Currency(_cld, 'MZE', 'Escudo Mòsaimbiceach',
-      one: 'escudo Mòsaimbiceach',
-      two: 'escudo Mòsaimbiceach',
-      few: 'escudo Mòsaimbiceach',
-      other: 'escudo Mòsaimbiceach');
-  static const _mzm = Currency(_cld, 'MZM', 'Metical Mòsaimbiceach (1980–2006)',
-      one: 'mhetical Mòsaimbiceach (1980–2006)',
-      two: 'mhetical Mòsaimbiceach (1980–2006)',
-      few: 'metical Mòsaimbiceach (1980–2006)',
-      other: 'metical Mòsaimbiceach (1980–2006)');
-  static const _mzn = Currency(_cld, 'MZN', 'Metical Mòsaimbiceach',
-      one: 'mhetical Mòsaimbiceach',
-      two: 'mhetical Mòsaimbiceach',
-      few: 'metical Mòsaimbiceach',
-      other: 'metical Mòsaimbiceach');
-  static const _nad = Currency(_cld, 'NAD', 'Dolar Naimibitheach',
-      one: 'dolar Naimibitheach',
-      two: 'dholar Naimibitheach',
-      few: 'dolaran Naimibitheach',
-      other: 'dolar Naimibitheach',
-      symbolNarrow: r'$');
-  static const _ngn = Currency(_cld, 'NGN', 'Naira Nigèiriach',
-      one: 'naira Nigèiriach',
-      two: 'naira Nigèiriach',
-      few: 'naira Nigèiriach',
-      other: 'naira Nigèiriach',
-      symbolNarrow: '₦');
-  static const _nic = Currency(_cld, 'NIC', 'Córdoba Niocaragach (1988–1991)',
-      one: 'chórdoba Niocaragach (1988–1991)',
-      two: 'chórdoba Niocaragach (1988–1991)',
-      few: 'córdoba Niocaragach (1988–1991)',
-      other: 'córdoba Niocaragach (1988–1991)');
-  static const _nio = Currency(_cld, 'NIO', 'Córdoba Niocaragach',
-      one: 'chórdoba Niocaragach',
-      two: 'chórdoba Niocaragach',
-      few: 'córdoba Niocaragach',
-      other: 'córdoba Niocaragach',
-      symbolNarrow: r'C$');
-  static const _nlg = Currency(_cld, 'NLG', 'Gulden Duitseach',
-      one: 'ghulden Duitseach',
-      two: 'ghulden Duitseach',
-      few: 'gulden Duitseach',
-      other: 'gulden Duitseach');
-  static const _nok = Currency(_cld, 'NOK', 'Krone Nirribheach',
-      one: 'krone Nirribheach',
-      two: 'krone Nirribheach',
-      few: 'kroner Nirribheach',
-      other: 'krone Nirribheach',
-      symbolNarrow: 'kr');
-  static const _npr = Currency(_cld, 'NPR', 'Rupee Neapàlach',
-      one: 'rupee Neapàlach',
-      two: 'rupee Neapàlach',
-      few: 'rupee Neapàlach',
-      other: 'rupee Neapàlach',
-      symbolNarrow: 'Rs');
-  static const _nzd = Currency(_cld, 'NZD', 'Dolar Shealainn Nuaidh',
-      one: 'dolar Shealainn Nuaidh',
-      two: 'dholar Shealainn Nuaidh',
-      few: 'dolaran Shealainn Nuaidh',
-      other: 'dolar Shealainn Nuaidh',
-      symbol: r'NZ$',
-      symbolNarrow: r'$');
-  static const _omr = Currency(_cld, 'OMR', 'Rial Omànach',
-      one: 'rial Omànach',
-      two: 'rial Omànach',
-      few: 'rial Omànach',
-      other: 'rial Omànach');
-  static const _pab = Currency(_cld, 'PAB', 'Balboa Panamach',
-      one: 'bhalboa Panamach',
-      two: 'bhalboa Panamach',
-      few: 'balboa Panamach',
-      other: 'balboa Panamach');
-  static const _pei = Currency(_cld, 'PEI', 'Inti Pearùthach',
-      one: 'inti Pearùthach',
-      two: 'inti Pearùthach',
-      few: 'inti Pearùthach',
-      other: 'inti Pearùthach');
-  static const _pen = Currency(_cld, 'PEN', 'Sol Pearùthach',
-      one: 'sol Pearùthach',
-      two: 'shol Pearùthach',
-      few: 'sol Pearùthach',
-      other: 'sol Pearùthach');
-  static const _pes = Currency(_cld, 'PES', 'Sol Pearùthach (1863–1965)',
-      one: 'sol Pearùthach (1863–1965)',
-      two: 'shol Pearùthach (1863–1965)',
-      few: 'sol Pearùthach (1863–1965)',
-      other: 'sol Pearùthach (1863–1965)');
-  static const _pgk = Currency(_cld, 'PGK', 'Kina Ghini Nuaidh Paputhaiche',
-      one: 'kina Ghini Nuaidh Paputhaiche',
-      two: 'kina Ghini Nuaidh Paputhaiche',
-      few: 'kina Ghini Nuaidh Paputhaiche',
-      other: 'kina Ghini Nuaidh Paputhaiche');
-  static const _php = Currency(_cld, 'PHP', 'Peso Filipineach',
-      one: 'pheso Filipineach',
-      two: 'pheso Filipineach',
-      few: 'pesothan Filipineach',
-      other: 'peso Filipineach',
-      symbol: 'PHP',
-      symbolNarrow: '₱');
-  static const _pkr = Currency(_cld, 'PKR', 'Rupee Pagastànach',
-      one: 'rupee Pagastànach',
-      two: 'rupee Pagastànach',
-      few: 'rupee Pagastànach',
-      other: 'rupee Pagastànach',
-      symbolNarrow: 'Rs');
-  static const _pln = Currency(_cld, 'PLN', 'Złoty Pòlainneach',
-      one: 'złoty Pòlainneach',
-      two: 'złoty Pòlainneach',
-      few: 'złoty Pòlainneach',
-      other: 'złoty Pòlainneach',
-      symbolNarrow: 'zł');
-  static const _plz = Currency(_cld, 'PLZ', 'Złoty Pòlainneach (1950–1995)',
-      one: 'złoty Pòlainneach (1950–1995)',
-      two: 'złoty Pòlainneach (1950–1995)',
-      few: 'złoty Pòlainneach (1950–1995)',
-      other: 'złoty Pòlainneach (1950–1995)');
-  static const _pte = Currency(_cld, 'PTE', 'Escudo Portagaileach',
-      one: 'escudo Portagaileach',
-      two: 'escudo Portagaileach',
-      few: 'escudo Portagaileach',
-      other: 'escudo Portagaileach');
-  static const _pyg = Currency(_cld, 'PYG', 'Guaraní Paraguaidheach',
-      one: 'ghuaraní Paraguaidheach',
-      two: 'ghuaraní Paraguaidheach',
-      few: 'guaraní Paraguaidheach',
-      other: 'guaraní Paraguaidheach',
-      symbolNarrow: '₲');
-  static const _qar = Currency(_cld, 'QAR', 'Rial Catarach',
-      one: 'rial Catarach',
-      two: 'rial Catarach',
-      few: 'rial Catarach',
-      other: 'rial Catarach');
-  static const _rhd = Currency(_cld, 'RHD', 'Dolar Rhodesiach',
-      one: 'dolar Rhodesiach',
-      two: 'dholar Rhodesiach',
-      few: 'dolaran Rhodesiach',
-      other: 'dolar Rhodesiach');
-  static const _rol = Currency(_cld, 'ROL', 'Leu Romàineach (1952–2006)',
-      one: 'leu Romàineach (1952–2006)',
-      two: 'leu Romàineach (1952–2006)',
-      few: 'leu Romàineach (1952–2006)',
-      other: 'leu Romàineach (1952–2006)');
-  static const _ron = Currency(_cld, 'RON', 'Leu Romàineach',
-      one: 'leu Romàineach',
-      two: 'leu Romàineach',
-      few: 'leu Romàineach',
-      other: 'leu Romàineach',
-      symbolNarrow: 'leu');
-  static const _rsd = Currency(_cld, 'RSD', 'Dinar Sèirbeach',
-      one: 'dinar Sèirbeach',
-      two: 'dhinar Sèirbeach',
-      few: 'dinar Sèirbeach',
-      other: 'dinar Sèirbeach');
-  static const _rub = Currency(_cld, 'RUB', 'Rùbal Ruiseach',
-      one: 'rùbal Ruiseach',
-      two: 'rùbal Ruiseach',
-      few: 'rùbalan Ruiseach',
-      other: 'rùbal Ruiseach',
-      symbolNarrow: '₽');
-  static const _rur = Currency(_cld, 'RUR', 'Rùbal Ruiseach (1991–1998)',
-      one: 'rùbal Ruiseach (1991–1998)',
-      two: 'rùbal Ruiseach (1991–1998)',
-      few: 'rùbalan Ruiseach (1991–1998)',
-      other: 'rùbal Ruiseach (1991–1998)',
-      symbolNarrow: 'р.');
-  static const _rwf = Currency(_cld, 'RWF', 'Franc Rubhandach',
-      one: 'fhranc Rubhandach',
-      two: 'fhranc Rubhandach',
-      few: 'franc Rubhandach',
-      other: 'franc Rubhandach',
-      symbolNarrow: 'RF');
-  static const _sar = Currency(_cld, 'SAR', 'Riyal Sabhdach',
-      one: 'riyal Sabhdach',
-      two: 'riyal Sabhdach',
-      few: 'riyal Sabhdach',
-      other: 'riyal Sabhdach');
-  static const _sbd = Currency(_cld, 'SBD', 'Dolar Eileanan Sholaimh',
-      one: 'dolar Eileanan Sholaimh',
-      two: 'dholar Eileanan Sholaimh',
-      few: 'dolaran Eileanan Sholaimh',
-      other: 'dolar Eileanan Sholaimh',
-      symbolNarrow: r'$');
-  static const _scr = Currency(_cld, 'SCR', 'Rupee Seiseallach',
-      one: 'rupee Seiseallach',
-      two: 'rupee Seiseallach',
-      few: 'rupee Seiseallach',
-      other: 'rupee Seiseallach');
-  static const _sdd = Currency(_cld, 'SDD', 'Dinar Sudànach (1992–2007)',
-      one: 'dinar Sudànach (1992–2007)',
-      two: 'dhinar Sudànach (1992–2007)',
-      few: 'dinar Sudànach (1992–2007)',
-      other: 'dinar Sudànach (1992–2007)');
-  static const _sdg = Currency(_cld, 'SDG', 'Punnd Sudànach',
-      one: 'phunnd Sudànach',
-      two: 'phunnd Sudànach',
-      few: 'puinnd Shudànach',
-      other: 'punnd Sudànach');
-  static const _sdp = Currency(_cld, 'SDP', 'Punnd Sudànach (1957–1998)',
-      one: 'phunnd Sudànach (1957–1998)',
-      two: 'phunnd Sudànach (1957–1998)',
-      few: 'puinnd Shudànach (1957–1998)',
-      other: 'punnd Sudànach (1957–1998)');
-  static const _sek = Currency(_cld, 'SEK', 'Krona Suaineach',
-      one: 'krona Suaineach',
-      two: 'krona Suaineach',
-      few: 'kronor Suaineach',
-      other: 'krona Suaineach',
-      symbolNarrow: 'kr');
-  static const _sgd = Currency(_cld, 'SGD', 'Dolar Singeapòrach',
-      one: 'dolar Singeapòrach',
-      two: 'dholar Singeapòrach',
-      few: 'dolaran Singeapòrach',
-      other: 'dolar Singeapòrach',
-      symbolNarrow: r'$');
-  static const _shp = Currency(_cld, 'SHP', 'Punnd Eilean Naomh Eilidh',
-      one: 'phunnd Eilean Naomh Eilidh',
-      two: 'phunnd Eilean Naomh Eilidh',
-      few: 'puinnd Eilean Naomh Eilidh',
-      other: 'punnd Eilean Naomh Eilidh',
-      symbolNarrow: '£');
-  static const _sit = Currency(_cld, 'SIT', 'Tolar Slòbhaineach',
-      one: 'tolar Slòbhaineach',
-      two: 'tholar Slòbhaineach',
-      few: 'tolar Slòbhaineach',
-      other: 'tolar Slòbhaineach');
-  static const _skk = Currency(_cld, 'SKK', 'Koruna Slòbhacach',
-      one: 'koruna Slòbhacach',
-      two: 'koruna Slòbhacach',
-      few: 'koruna Slòbhacach',
-      other: 'koruna Slòbhacach');
-  static const _sle = Currency(_cld, 'SLE', 'Leone Siarra Leòmhannach ùr',
-      one: 'leone Siarra Leòmhannach ùr',
-      two: 'leone Siarra Leòmhannach ùr',
-      few: 'leone Siarra Leòmhannach ùr',
-      other: 'leone Siarra Leòmhannach ùr');
-  static const _sll = Currency(_cld, 'SLL', 'Leone Siarra Leòmhannach',
-      one: 'leone Siarra Leòmhannach',
-      two: 'leone Siarra Leòmhannach',
-      few: 'leone Siarra Leòmhannach',
-      other: 'leone Siarra Leòmhannach');
-  static const _sos = Currency(_cld, 'SOS', 'Shilling Somàilitheach',
-      one: 'shilling Somàilitheach',
-      two: 'shilling Somàilitheach',
-      few: 'shilling Somàilitheach',
-      other: 'shilling Somàilitheach');
-  static const _srd = Currency(_cld, 'SRD', 'Dolar Suranamach',
-      one: 'dolar Suranamach',
-      two: 'dholar Suranamach',
-      few: 'dolaran Suranamach',
-      other: 'dolar Suranamach',
-      symbolNarrow: r'$');
-  static const _srg = Currency(_cld, 'SRG', 'Gulden Suranamach',
-      one: 'ghulden Suranamach',
-      two: 'ghulden Suranamach',
-      few: 'gulden Suranamach',
-      other: 'gulden Suranamach');
-  static const _ssp = Currency(_cld, 'SSP', 'Punnd Sudàin a Deas',
-      one: 'phunnd Sudàin a Deas',
-      two: 'phunnd Sudàin a Deas',
-      few: 'puinnd Shudàin a Deas',
-      other: 'punnd Sudàin a Deas',
-      symbolNarrow: '£');
+    _cld,
+    'MXP',
+    'Peso airgid Meagsagach (1861–1992)',
+    one: 'pheso airgid Meagsagach (1861–1992)',
+    two: 'pheso airgid Meagsagach (1861–1992)',
+    few: 'pesothan airgid Meagsagach (1861–1992)',
+    other: 'peso airgid Meagsagach (1861–1992)',
+  );
+  static const _mxv = Currency(
+    _cld,
+    'MXV',
+    'Aonad inbheistidh Meagsagach',
+    one: 'aonad inbheistidh Meagsagach',
+    two: 'aonad inbheistidh Meagsagach',
+    few: 'aonadan inbheistidh Meagsagach',
+    other: 'aonad inbheistidh Meagsagach',
+  );
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'Ringgit Malaidheach',
+    one: 'ringgit Malaidheach',
+    two: 'ringgit Malaidheach',
+    few: 'ringgit Malaidheach',
+    other: 'ringgit Malaidheach',
+    symbolNarrow: 'RM',
+  );
+  static const _mze = Currency(
+    _cld,
+    'MZE',
+    'Escudo Mòsaimbiceach',
+    one: 'escudo Mòsaimbiceach',
+    two: 'escudo Mòsaimbiceach',
+    few: 'escudo Mòsaimbiceach',
+    other: 'escudo Mòsaimbiceach',
+  );
+  static const _mzm = Currency(
+    _cld,
+    'MZM',
+    'Metical Mòsaimbiceach (1980–2006)',
+    one: 'mhetical Mòsaimbiceach (1980–2006)',
+    two: 'mhetical Mòsaimbiceach (1980–2006)',
+    few: 'metical Mòsaimbiceach (1980–2006)',
+    other: 'metical Mòsaimbiceach (1980–2006)',
+  );
+  static const _mzn = Currency(
+    _cld,
+    'MZN',
+    'Metical Mòsaimbiceach',
+    one: 'mhetical Mòsaimbiceach',
+    two: 'mhetical Mòsaimbiceach',
+    few: 'metical Mòsaimbiceach',
+    other: 'metical Mòsaimbiceach',
+  );
+  static const _nad = Currency(
+    _cld,
+    'NAD',
+    'Dolar Naimibitheach',
+    one: 'dolar Naimibitheach',
+    two: 'dholar Naimibitheach',
+    few: 'dolaran Naimibitheach',
+    other: 'dolar Naimibitheach',
+    symbolNarrow: r'$',
+  );
+  static const _ngn = Currency(
+    _cld,
+    'NGN',
+    'Naira Nigèiriach',
+    one: 'naira Nigèiriach',
+    two: 'naira Nigèiriach',
+    few: 'naira Nigèiriach',
+    other: 'naira Nigèiriach',
+    symbolNarrow: '₦',
+  );
+  static const _nic = Currency(
+    _cld,
+    'NIC',
+    'Córdoba Niocaragach (1988–1991)',
+    one: 'chórdoba Niocaragach (1988–1991)',
+    two: 'chórdoba Niocaragach (1988–1991)',
+    few: 'córdoba Niocaragach (1988–1991)',
+    other: 'córdoba Niocaragach (1988–1991)',
+  );
+  static const _nio = Currency(
+    _cld,
+    'NIO',
+    'Córdoba Niocaragach',
+    one: 'chórdoba Niocaragach',
+    two: 'chórdoba Niocaragach',
+    few: 'córdoba Niocaragach',
+    other: 'córdoba Niocaragach',
+    symbolNarrow: r'C$',
+  );
+  static const _nlg = Currency(
+    _cld,
+    'NLG',
+    'Gulden Duitseach',
+    one: 'ghulden Duitseach',
+    two: 'ghulden Duitseach',
+    few: 'gulden Duitseach',
+    other: 'gulden Duitseach',
+  );
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'Krone Nirribheach',
+    one: 'krone Nirribheach',
+    two: 'krone Nirribheach',
+    few: 'kroner Nirribheach',
+    other: 'krone Nirribheach',
+    symbolNarrow: 'kr',
+  );
+  static const _npr = Currency(
+    _cld,
+    'NPR',
+    'Rupee Neapàlach',
+    one: 'rupee Neapàlach',
+    two: 'rupee Neapàlach',
+    few: 'rupee Neapàlach',
+    other: 'rupee Neapàlach',
+    symbolNarrow: 'Rs',
+  );
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'Dolar Shealainn Nuaidh',
+    one: 'dolar Shealainn Nuaidh',
+    two: 'dholar Shealainn Nuaidh',
+    few: 'dolaran Shealainn Nuaidh',
+    other: 'dolar Shealainn Nuaidh',
+    symbol: r'NZ$',
+    symbolNarrow: r'$',
+  );
+  static const _omr = Currency(
+    _cld,
+    'OMR',
+    'Rial Omànach',
+    one: 'rial Omànach',
+    two: 'rial Omànach',
+    few: 'rial Omànach',
+    other: 'rial Omànach',
+  );
+  static const _pab = Currency(
+    _cld,
+    'PAB',
+    'Balboa Panamach',
+    one: 'bhalboa Panamach',
+    two: 'bhalboa Panamach',
+    few: 'balboa Panamach',
+    other: 'balboa Panamach',
+  );
+  static const _pei = Currency(
+    _cld,
+    'PEI',
+    'Inti Pearùthach',
+    one: 'inti Pearùthach',
+    two: 'inti Pearùthach',
+    few: 'inti Pearùthach',
+    other: 'inti Pearùthach',
+  );
+  static const _pen = Currency(
+    _cld,
+    'PEN',
+    'Sol Pearùthach',
+    one: 'sol Pearùthach',
+    two: 'shol Pearùthach',
+    few: 'sol Pearùthach',
+    other: 'sol Pearùthach',
+  );
+  static const _pes = Currency(
+    _cld,
+    'PES',
+    'Sol Pearùthach (1863–1965)',
+    one: 'sol Pearùthach (1863–1965)',
+    two: 'shol Pearùthach (1863–1965)',
+    few: 'sol Pearùthach (1863–1965)',
+    other: 'sol Pearùthach (1863–1965)',
+  );
+  static const _pgk = Currency(
+    _cld,
+    'PGK',
+    'Kina Ghini Nuaidh Paputhaiche',
+    one: 'kina Ghini Nuaidh Paputhaiche',
+    two: 'kina Ghini Nuaidh Paputhaiche',
+    few: 'kina Ghini Nuaidh Paputhaiche',
+    other: 'kina Ghini Nuaidh Paputhaiche',
+  );
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'Peso Filipineach',
+    one: 'pheso Filipineach',
+    two: 'pheso Filipineach',
+    few: 'pesothan Filipineach',
+    other: 'peso Filipineach',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'Rupee Pagastànach',
+    one: 'rupee Pagastànach',
+    two: 'rupee Pagastànach',
+    few: 'rupee Pagastànach',
+    other: 'rupee Pagastànach',
+    symbolNarrow: 'Rs',
+  );
+  static const _pln = Currency(
+    _cld,
+    'PLN',
+    'Złoty Pòlainneach',
+    one: 'złoty Pòlainneach',
+    two: 'złoty Pòlainneach',
+    few: 'złoty Pòlainneach',
+    other: 'złoty Pòlainneach',
+    symbolNarrow: 'zł',
+  );
+  static const _plz = Currency(
+    _cld,
+    'PLZ',
+    'Złoty Pòlainneach (1950–1995)',
+    one: 'złoty Pòlainneach (1950–1995)',
+    two: 'złoty Pòlainneach (1950–1995)',
+    few: 'złoty Pòlainneach (1950–1995)',
+    other: 'złoty Pòlainneach (1950–1995)',
+  );
+  static const _pte = Currency(
+    _cld,
+    'PTE',
+    'Escudo Portagaileach',
+    one: 'escudo Portagaileach',
+    two: 'escudo Portagaileach',
+    few: 'escudo Portagaileach',
+    other: 'escudo Portagaileach',
+  );
+  static const _pyg = Currency(
+    _cld,
+    'PYG',
+    'Guaraní Paraguaidheach',
+    one: 'ghuaraní Paraguaidheach',
+    two: 'ghuaraní Paraguaidheach',
+    few: 'guaraní Paraguaidheach',
+    other: 'guaraní Paraguaidheach',
+    symbolNarrow: '₲',
+  );
+  static const _qar = Currency(
+    _cld,
+    'QAR',
+    'Rial Catarach',
+    one: 'rial Catarach',
+    two: 'rial Catarach',
+    few: 'rial Catarach',
+    other: 'rial Catarach',
+  );
+  static const _rhd = Currency(
+    _cld,
+    'RHD',
+    'Dolar Rhodesiach',
+    one: 'dolar Rhodesiach',
+    two: 'dholar Rhodesiach',
+    few: 'dolaran Rhodesiach',
+    other: 'dolar Rhodesiach',
+  );
+  static const _rol = Currency(
+    _cld,
+    'ROL',
+    'Leu Romàineach (1952–2006)',
+    one: 'leu Romàineach (1952–2006)',
+    two: 'leu Romàineach (1952–2006)',
+    few: 'leu Romàineach (1952–2006)',
+    other: 'leu Romàineach (1952–2006)',
+  );
+  static const _ron = Currency(
+    _cld,
+    'RON',
+    'Leu Romàineach',
+    one: 'leu Romàineach',
+    two: 'leu Romàineach',
+    few: 'leu Romàineach',
+    other: 'leu Romàineach',
+    symbolNarrow: 'leu',
+  );
+  static const _rsd = Currency(
+    _cld,
+    'RSD',
+    'Dinar Sèirbeach',
+    one: 'dinar Sèirbeach',
+    two: 'dhinar Sèirbeach',
+    few: 'dinar Sèirbeach',
+    other: 'dinar Sèirbeach',
+  );
+  static const _rub = Currency(
+    _cld,
+    'RUB',
+    'Rùbal Ruiseach',
+    one: 'rùbal Ruiseach',
+    two: 'rùbal Ruiseach',
+    few: 'rùbalan Ruiseach',
+    other: 'rùbal Ruiseach',
+    symbolNarrow: '₽',
+  );
+  static const _rur = Currency(
+    _cld,
+    'RUR',
+    'Rùbal Ruiseach (1991–1998)',
+    one: 'rùbal Ruiseach (1991–1998)',
+    two: 'rùbal Ruiseach (1991–1998)',
+    few: 'rùbalan Ruiseach (1991–1998)',
+    other: 'rùbal Ruiseach (1991–1998)',
+    symbolNarrow: 'р.',
+  );
+  static const _rwf = Currency(
+    _cld,
+    'RWF',
+    'Franc Rubhandach',
+    one: 'fhranc Rubhandach',
+    two: 'fhranc Rubhandach',
+    few: 'franc Rubhandach',
+    other: 'franc Rubhandach',
+    symbolNarrow: 'RF',
+  );
+  static const _sar = Currency(
+    _cld,
+    'SAR',
+    'Riyal Sabhdach',
+    one: 'riyal Sabhdach',
+    two: 'riyal Sabhdach',
+    few: 'riyal Sabhdach',
+    other: 'riyal Sabhdach',
+  );
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'Dolar Eileanan Sholaimh',
+    one: 'dolar Eileanan Sholaimh',
+    two: 'dholar Eileanan Sholaimh',
+    few: 'dolaran Eileanan Sholaimh',
+    other: 'dolar Eileanan Sholaimh',
+    symbolNarrow: r'$',
+  );
+  static const _scr = Currency(
+    _cld,
+    'SCR',
+    'Rupee Seiseallach',
+    one: 'rupee Seiseallach',
+    two: 'rupee Seiseallach',
+    few: 'rupee Seiseallach',
+    other: 'rupee Seiseallach',
+  );
+  static const _sdd = Currency(
+    _cld,
+    'SDD',
+    'Dinar Sudànach (1992–2007)',
+    one: 'dinar Sudànach (1992–2007)',
+    two: 'dhinar Sudànach (1992–2007)',
+    few: 'dinar Sudànach (1992–2007)',
+    other: 'dinar Sudànach (1992–2007)',
+  );
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'Punnd Sudànach',
+    one: 'phunnd Sudànach',
+    two: 'phunnd Sudànach',
+    few: 'puinnd Shudànach',
+    other: 'punnd Sudànach',
+  );
+  static const _sdp = Currency(
+    _cld,
+    'SDP',
+    'Punnd Sudànach (1957–1998)',
+    one: 'phunnd Sudànach (1957–1998)',
+    two: 'phunnd Sudànach (1957–1998)',
+    few: 'puinnd Shudànach (1957–1998)',
+    other: 'punnd Sudànach (1957–1998)',
+  );
+  static const _sek = Currency(
+    _cld,
+    'SEK',
+    'Krona Suaineach',
+    one: 'krona Suaineach',
+    two: 'krona Suaineach',
+    few: 'kronor Suaineach',
+    other: 'krona Suaineach',
+    symbolNarrow: 'kr',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'Dolar Singeapòrach',
+    one: 'dolar Singeapòrach',
+    two: 'dholar Singeapòrach',
+    few: 'dolaran Singeapòrach',
+    other: 'dolar Singeapòrach',
+    symbolNarrow: r'$',
+  );
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'Punnd Eilean Naomh Eilidh',
+    one: 'phunnd Eilean Naomh Eilidh',
+    two: 'phunnd Eilean Naomh Eilidh',
+    few: 'puinnd Eilean Naomh Eilidh',
+    other: 'punnd Eilean Naomh Eilidh',
+    symbolNarrow: '£',
+  );
+  static const _sit = Currency(
+    _cld,
+    'SIT',
+    'Tolar Slòbhaineach',
+    one: 'tolar Slòbhaineach',
+    two: 'tholar Slòbhaineach',
+    few: 'tolar Slòbhaineach',
+    other: 'tolar Slòbhaineach',
+  );
+  static const _skk = Currency(
+    _cld,
+    'SKK',
+    'Koruna Slòbhacach',
+    one: 'koruna Slòbhacach',
+    two: 'koruna Slòbhacach',
+    few: 'koruna Slòbhacach',
+    other: 'koruna Slòbhacach',
+  );
+  static const _sle = Currency(
+    _cld,
+    'SLE',
+    'Leone Siarra Leòmhannach ùr',
+    one: 'leone Siarra Leòmhannach ùr',
+    two: 'leone Siarra Leòmhannach ùr',
+    few: 'leone Siarra Leòmhannach ùr',
+    other: 'leone Siarra Leòmhannach ùr',
+  );
+  static const _sll = Currency(
+    _cld,
+    'SLL',
+    'Leone Siarra Leòmhannach',
+    one: 'leone Siarra Leòmhannach',
+    two: 'leone Siarra Leòmhannach',
+    few: 'leone Siarra Leòmhannach',
+    other: 'leone Siarra Leòmhannach',
+  );
+  static const _sos = Currency(
+    _cld,
+    'SOS',
+    'Shilling Somàilitheach',
+    one: 'shilling Somàilitheach',
+    two: 'shilling Somàilitheach',
+    few: 'shilling Somàilitheach',
+    other: 'shilling Somàilitheach',
+  );
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'Dolar Suranamach',
+    one: 'dolar Suranamach',
+    two: 'dholar Suranamach',
+    few: 'dolaran Suranamach',
+    other: 'dolar Suranamach',
+    symbolNarrow: r'$',
+  );
+  static const _srg = Currency(
+    _cld,
+    'SRG',
+    'Gulden Suranamach',
+    one: 'ghulden Suranamach',
+    two: 'ghulden Suranamach',
+    few: 'gulden Suranamach',
+    other: 'gulden Suranamach',
+  );
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'Punnd Sudàin a Deas',
+    one: 'phunnd Sudàin a Deas',
+    two: 'phunnd Sudàin a Deas',
+    few: 'puinnd Shudàin a Deas',
+    other: 'punnd Sudàin a Deas',
+    symbolNarrow: '£',
+  );
   static const _std = Currency(
-      _cld, 'STD', 'Dobra São Tomé agus Príncipe (1977–2017)',
-      one: 'dobra São Tomé agus Príncipe (1977–2017)',
-      two: 'dhobra São Tomé agus Príncipe (1977–2017)',
-      few: 'dobra São Tomé agus Príncipe (1977–2017)',
-      other: 'dobra São Tomé agus Príncipe (1977–2017)');
-  static const _stn = Currency(_cld, 'STN', 'Dobra São Tomé agus Príncipe',
-      one: 'dobra São Tomé agus Príncipe',
-      two: 'dhobra São Tomé agus Príncipe',
-      few: 'dobra São Tomé agus Príncipe',
-      other: 'dobra São Tomé agus Príncipe',
-      symbolNarrow: 'Db');
-  static const _sur = Currency(_cld, 'SUR', 'Rùbal Sovietach',
-      one: 'rùbal Sovietach',
-      two: 'rùbal Sovietach',
-      few: 'rùbalan Sovietach',
-      other: 'rùbal Sovietach');
-  static const _svc = Currency(_cld, 'SVC', 'Colón Salbhadorach',
-      one: 'cholón Salbhadorach',
-      two: 'cholón Salbhadorach',
-      few: 'colón Salbhadorach',
-      other: 'colón Salbhadorach');
-  static const _syp = Currency(_cld, 'SYP', 'Punnd Siridheach',
-      one: 'phunnd Siridheach',
-      two: 'phunnd Siridheach',
-      few: 'puinnd Shiridheach',
-      other: 'punnd Siridheach',
-      symbolNarrow: '£');
-  static const _szl = Currency(_cld, 'SZL', 'Lilangeni Suasaidheach',
-      one: 'lilangeni Suasaidheach',
-      two: 'lilangeni Suasaidheach',
-      few: 'lilangeni Suasaidheach',
-      other: 'lilangeni Suasaidheach');
-  static const _thb = Currency(_cld, 'THB', 'Baht Tàidheach',
-      one: 'bhaht Tàidheach',
-      two: 'bhaht Tàidheach',
-      few: 'baht Tàidheach',
-      other: 'baht Tàidheach',
-      symbol: '฿',
-      symbolNarrow: '฿');
-  static const _tjr = Currency(_cld, 'TJR', 'Rùbal Taidigeach',
-      one: 'rùbal Taidigeach',
-      two: 'rùbal Taidigeach',
-      few: 'rùbalan Taidigeach',
-      other: 'rùbal Taidigeach');
-  static const _tjs = Currency(_cld, 'TJS', 'Somoni Taidigeach',
-      one: 'somoni Taidigeach',
-      two: 'shomoni Taidigeach',
-      few: 'somoni Taidigeach',
-      other: 'somoni Taidigeach');
-  static const _tmm = Currency(_cld, 'TMM', 'Manat Turcmanach (1993–2009)',
-      one: 'mhanat Turcmanach (1993–2009)',
-      two: 'mhanat Turcmanach (1993–2009)',
-      few: 'manat Turcmanach (1993–2009)',
-      other: 'manat Turcmanach (1993–2009)');
-  static const _tmt = Currency(_cld, 'TMT', 'Manat Turcmanach',
-      one: 'mhanat Turcmanach',
-      two: 'mhanat Turcmanach',
-      few: 'manat Turcmanach',
-      other: 'manat Turcmanach');
-  static const _tnd = Currency(_cld, 'TND', 'Dinar Tuiniseach',
-      one: 'dinar Tuiniseach',
-      two: 'dhinar Tuiniseach',
-      few: 'dinar Tuiniseach',
-      other: 'dinar Tuiniseach');
-  static const _top = Currency(_cld, 'TOP', 'Paʻanga Tongach',
-      one: 'phaʻanga Tongach',
-      two: 'phaʻanga Tongach',
-      few: 'paʻanga Tongach',
-      other: 'paʻanga Tongach',
-      symbolNarrow: r'T$');
-  static const _tpe = Currency(_cld, 'TPE', 'Escudo Tìomorach',
-      one: 'escudo Tìomorach',
-      two: 'escudo Tìomorach',
-      few: 'escudo Tìomorach',
-      other: 'escudo Tìomorach');
-  static const _trl = Currency(_cld, 'TRL', 'Lira Turcach (1922–2005)',
-      one: 'lira Turcach (1922–2005)',
-      two: 'lira Turcach (1922–2005)',
-      few: 'lira Turcach (1922–2005)',
-      other: 'lira Turcach (1922–2005)');
-  static const _$try = Currency(_cld, 'TRY', 'Lira Turcach',
-      one: 'lira Turcach',
-      two: 'lira Turcach',
-      few: 'lira Turcach',
-      other: 'lira Turcach',
-      symbolNarrow: '₺',
-      symbolVariant: 'TL');
-  static const _ttd = Currency(_cld, 'TTD', 'Dolar Thrianaid agus Thobago',
-      one: 'dolar Thrianaid agus Thobago',
-      two: 'dholar Thrianaid agus Thobago',
-      few: 'dolaran Thrianaid agus Thobago',
-      other: 'dolar Thrianaid agus Thobago',
-      symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'Dolar ùr Taidh-Bhànach',
-      one: 'dolar ùr Taidh-Bhànach',
-      two: 'dholar ùr Taidh-Bhànach',
-      few: 'dolaran ùra Taidh-Bhànach',
-      other: 'dolar ùr Taidh-Bhànach',
-      symbol: r'NT$',
-      symbolNarrow: r'NT$');
-  static const _tzs = Currency(_cld, 'TZS', 'Shilling Tansanaidheach',
-      one: 'shilling Tansanaidheach',
-      two: 'shilling Tansanaidheach',
-      few: 'shilling Tansanaidheach',
-      other: 'shilling Tansanaidheach');
-  static const _uah = Currency(_cld, 'UAH', 'Hryvnia Ucràineach',
-      one: 'hryvnia Ucràineach',
-      two: 'hryvnia Ucràineach',
-      few: 'hryvnia Ucràineach',
-      other: 'hryvnia Ucràineach',
-      symbolNarrow: '₴');
-  static const _uak = Currency(_cld, 'UAK', 'Karbovanets Ucràineach',
-      one: 'karbovanets Ucràineach',
-      two: 'karbovanets Ucràineach',
-      few: 'karbovanets Ucràineach',
-      other: 'karbovanets Ucràineach');
-  static const _ugs = Currency(_cld, 'UGS', 'Shilling Ugandach (1966–1987)',
-      one: 'shilling Ugandach (1966–1987)',
-      two: 'shilling Ugandach (1966–1987)',
-      few: 'shilling Ugandach (1966–1987)',
-      other: 'shilling Ugandach (1966–1987)');
-  static const _ugx = Currency(_cld, 'UGX', 'Shilling Ugandach',
-      one: 'shilling Ugandach',
-      two: 'shilling Ugandach',
-      few: 'shilling Ugandach',
-      other: 'shilling Ugandach');
-  static const _usd = Currency(_cld, 'USD', 'Dolar nan Stàitean Aonaichte',
-      one: 'dolar nan Stàitean Aonaichte',
-      two: 'dholar nan Stàitean Aonaichte',
-      few: 'dolaran nan Stàitean Aonaichte',
-      other: 'dolar nan Stàitean Aonaichte',
-      symbol: r'$',
-      symbolNarrow: r'$');
-  static const _usn = Currency(_cld, 'USN', 'Dolar nan SA (an ath–latha)',
-      one: 'dolar nan SA (an ath–latha)',
-      two: 'dholar nan SA (an ath–latha)',
-      few: 'dolaran nan SA (an ath–latha)',
-      other: 'dolar nan SA (an ath–latha)');
-  static const _uss = Currency(_cld, 'USS', 'Dolar nan SA (an aon latha)',
-      one: 'dolar nan SA (an aon latha)',
-      two: 'dholar nan SA (an aon latha)',
-      few: 'dolaran nan SA (an aon latha)',
-      other: 'dolar nan SA (an aon latha)');
+    _cld,
+    'STD',
+    'Dobra São Tomé agus Príncipe (1977–2017)',
+    one: 'dobra São Tomé agus Príncipe (1977–2017)',
+    two: 'dhobra São Tomé agus Príncipe (1977–2017)',
+    few: 'dobra São Tomé agus Príncipe (1977–2017)',
+    other: 'dobra São Tomé agus Príncipe (1977–2017)',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'Dobra São Tomé agus Príncipe',
+    one: 'dobra São Tomé agus Príncipe',
+    two: 'dhobra São Tomé agus Príncipe',
+    few: 'dobra São Tomé agus Príncipe',
+    other: 'dobra São Tomé agus Príncipe',
+    symbolNarrow: 'Db',
+  );
+  static const _sur = Currency(
+    _cld,
+    'SUR',
+    'Rùbal Sovietach',
+    one: 'rùbal Sovietach',
+    two: 'rùbal Sovietach',
+    few: 'rùbalan Sovietach',
+    other: 'rùbal Sovietach',
+  );
+  static const _svc = Currency(
+    _cld,
+    'SVC',
+    'Colón Salbhadorach',
+    one: 'cholón Salbhadorach',
+    two: 'cholón Salbhadorach',
+    few: 'colón Salbhadorach',
+    other: 'colón Salbhadorach',
+  );
+  static const _syp = Currency(
+    _cld,
+    'SYP',
+    'Punnd Siridheach',
+    one: 'phunnd Siridheach',
+    two: 'phunnd Siridheach',
+    few: 'puinnd Shiridheach',
+    other: 'punnd Siridheach',
+    symbolNarrow: '£',
+  );
+  static const _szl = Currency(
+    _cld,
+    'SZL',
+    'Lilangeni Suasaidheach',
+    one: 'lilangeni Suasaidheach',
+    two: 'lilangeni Suasaidheach',
+    few: 'lilangeni Suasaidheach',
+    other: 'lilangeni Suasaidheach',
+  );
+  static const _thb = Currency(
+    _cld,
+    'THB',
+    'Baht Tàidheach',
+    one: 'bhaht Tàidheach',
+    two: 'bhaht Tàidheach',
+    few: 'baht Tàidheach',
+    other: 'baht Tàidheach',
+    symbol: '฿',
+    symbolNarrow: '฿',
+  );
+  static const _tjr = Currency(
+    _cld,
+    'TJR',
+    'Rùbal Taidigeach',
+    one: 'rùbal Taidigeach',
+    two: 'rùbal Taidigeach',
+    few: 'rùbalan Taidigeach',
+    other: 'rùbal Taidigeach',
+  );
+  static const _tjs = Currency(
+    _cld,
+    'TJS',
+    'Somoni Taidigeach',
+    one: 'somoni Taidigeach',
+    two: 'shomoni Taidigeach',
+    few: 'somoni Taidigeach',
+    other: 'somoni Taidigeach',
+  );
+  static const _tmm = Currency(
+    _cld,
+    'TMM',
+    'Manat Turcmanach (1993–2009)',
+    one: 'mhanat Turcmanach (1993–2009)',
+    two: 'mhanat Turcmanach (1993–2009)',
+    few: 'manat Turcmanach (1993–2009)',
+    other: 'manat Turcmanach (1993–2009)',
+  );
+  static const _tmt = Currency(
+    _cld,
+    'TMT',
+    'Manat Turcmanach',
+    one: 'mhanat Turcmanach',
+    two: 'mhanat Turcmanach',
+    few: 'manat Turcmanach',
+    other: 'manat Turcmanach',
+  );
+  static const _tnd = Currency(
+    _cld,
+    'TND',
+    'Dinar Tuiniseach',
+    one: 'dinar Tuiniseach',
+    two: 'dhinar Tuiniseach',
+    few: 'dinar Tuiniseach',
+    other: 'dinar Tuiniseach',
+  );
+  static const _top = Currency(
+    _cld,
+    'TOP',
+    'Paʻanga Tongach',
+    one: 'phaʻanga Tongach',
+    two: 'phaʻanga Tongach',
+    few: 'paʻanga Tongach',
+    other: 'paʻanga Tongach',
+    symbolNarrow: r'T$',
+  );
+  static const _tpe = Currency(
+    _cld,
+    'TPE',
+    'Escudo Tìomorach',
+    one: 'escudo Tìomorach',
+    two: 'escudo Tìomorach',
+    few: 'escudo Tìomorach',
+    other: 'escudo Tìomorach',
+  );
+  static const _trl = Currency(
+    _cld,
+    'TRL',
+    'Lira Turcach (1922–2005)',
+    one: 'lira Turcach (1922–2005)',
+    two: 'lira Turcach (1922–2005)',
+    few: 'lira Turcach (1922–2005)',
+    other: 'lira Turcach (1922–2005)',
+  );
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'Lira Turcach',
+    one: 'lira Turcach',
+    two: 'lira Turcach',
+    few: 'lira Turcach',
+    other: 'lira Turcach',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'Dolar Thrianaid agus Thobago',
+    one: 'dolar Thrianaid agus Thobago',
+    two: 'dholar Thrianaid agus Thobago',
+    few: 'dolaran Thrianaid agus Thobago',
+    other: 'dolar Thrianaid agus Thobago',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'Dolar ùr Taidh-Bhànach',
+    one: 'dolar ùr Taidh-Bhànach',
+    two: 'dholar ùr Taidh-Bhànach',
+    few: 'dolaran ùra Taidh-Bhànach',
+    other: 'dolar ùr Taidh-Bhànach',
+    symbol: r'NT$',
+    symbolNarrow: r'NT$',
+  );
+  static const _tzs = Currency(
+    _cld,
+    'TZS',
+    'Shilling Tansanaidheach',
+    one: 'shilling Tansanaidheach',
+    two: 'shilling Tansanaidheach',
+    few: 'shilling Tansanaidheach',
+    other: 'shilling Tansanaidheach',
+  );
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'Hryvnia Ucràineach',
+    one: 'hryvnia Ucràineach',
+    two: 'hryvnia Ucràineach',
+    few: 'hryvnia Ucràineach',
+    other: 'hryvnia Ucràineach',
+    symbolNarrow: '₴',
+  );
+  static const _uak = Currency(
+    _cld,
+    'UAK',
+    'Karbovanets Ucràineach',
+    one: 'karbovanets Ucràineach',
+    two: 'karbovanets Ucràineach',
+    few: 'karbovanets Ucràineach',
+    other: 'karbovanets Ucràineach',
+  );
+  static const _ugs = Currency(
+    _cld,
+    'UGS',
+    'Shilling Ugandach (1966–1987)',
+    one: 'shilling Ugandach (1966–1987)',
+    two: 'shilling Ugandach (1966–1987)',
+    few: 'shilling Ugandach (1966–1987)',
+    other: 'shilling Ugandach (1966–1987)',
+  );
+  static const _ugx = Currency(
+    _cld,
+    'UGX',
+    'Shilling Ugandach',
+    one: 'shilling Ugandach',
+    two: 'shilling Ugandach',
+    few: 'shilling Ugandach',
+    other: 'shilling Ugandach',
+  );
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'Dolar nan Stàitean Aonaichte',
+    one: 'dolar nan Stàitean Aonaichte',
+    two: 'dholar nan Stàitean Aonaichte',
+    few: 'dolaran nan Stàitean Aonaichte',
+    other: 'dolar nan Stàitean Aonaichte',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
+  static const _usn = Currency(
+    _cld,
+    'USN',
+    'Dolar nan SA (an ath–latha)',
+    one: 'dolar nan SA (an ath–latha)',
+    two: 'dholar nan SA (an ath–latha)',
+    few: 'dolaran nan SA (an ath–latha)',
+    other: 'dolar nan SA (an ath–latha)',
+  );
+  static const _uss = Currency(
+    _cld,
+    'USS',
+    'Dolar nan SA (an aon latha)',
+    one: 'dolar nan SA (an aon latha)',
+    two: 'dholar nan SA (an aon latha)',
+    few: 'dolaran nan SA (an aon latha)',
+    other: 'dolar nan SA (an aon latha)',
+  );
   static const _uyi = Currency(
-      _cld, 'UYI', 'Peso Uruguaidheach (aonadan inneacsaichte)',
-      one: 'pheso Uruguaidheach (aonadan inneacsaichte)',
-      two: 'pheso Uruguaidheach (aonadan inneacsaichte)',
-      few: 'pesothan Uruguaidheach (aonadan inneacsaichte)',
-      other: 'peso Uruguaidheach (aonadan inneacsaichte)');
-  static const _uyp = Currency(_cld, 'UYP', 'Peso Uruguaidheach (1975–1993)',
-      one: 'pheso Uruguaidheach (1975–1993)',
-      two: 'pheso Uruguaidheach (1975–1993)',
-      few: 'pesothan Uruguaidheach (1975–1993)',
-      other: 'peso Uruguaidheach (1975–1993)');
-  static const _uyu = Currency(_cld, 'UYU', 'Peso Uruguaidheach',
-      one: 'pheso Uruguaidheach',
-      two: 'pheso Uruguaidheach',
-      few: 'pesothan Uruguaidheach',
-      other: 'peso Uruguaidheach',
-      symbolNarrow: r'$');
+    _cld,
+    'UYI',
+    'Peso Uruguaidheach (aonadan inneacsaichte)',
+    one: 'pheso Uruguaidheach (aonadan inneacsaichte)',
+    two: 'pheso Uruguaidheach (aonadan inneacsaichte)',
+    few: 'pesothan Uruguaidheach (aonadan inneacsaichte)',
+    other: 'peso Uruguaidheach (aonadan inneacsaichte)',
+  );
+  static const _uyp = Currency(
+    _cld,
+    'UYP',
+    'Peso Uruguaidheach (1975–1993)',
+    one: 'pheso Uruguaidheach (1975–1993)',
+    two: 'pheso Uruguaidheach (1975–1993)',
+    few: 'pesothan Uruguaidheach (1975–1993)',
+    other: 'peso Uruguaidheach (1975–1993)',
+  );
+  static const _uyu = Currency(
+    _cld,
+    'UYU',
+    'Peso Uruguaidheach',
+    one: 'pheso Uruguaidheach',
+    two: 'pheso Uruguaidheach',
+    few: 'pesothan Uruguaidheach',
+    other: 'peso Uruguaidheach',
+    symbolNarrow: r'$',
+  );
   static const _uyw = Currency(
-      _cld, 'UYW', 'Aonad inneacs tuarastail ainmeach Uruguaidh',
-      one: 'aonad inneacs tuarastail ainmeach Uruguaidh',
-      two: 'aonad inneacs tuarastail ainmeach Uruguaidh',
-      few: 'aonadan inneacs tuarastail ainmeach Uruguaidh',
-      other: 'aonad inneacs tuarastail ainmeach Uruguaidh');
-  static const _uzs = Currency(_cld, 'UZS', 'Som Usbagach',
-      one: 'som Usbagach',
-      two: 'shom Usbagach',
-      few: 'som Usbagach',
-      other: 'som Usbagach');
-  static const _veb = Currency(_cld, 'VEB', 'Bolívar Bheinisealach (1871–2008)',
-      one: 'bholívar Bheinisealach (1871–2008)',
-      two: 'bholívar Bheinisealach (1871–2008)',
-      few: 'bolívar Bheinisealach (1871–2008)',
-      other: 'bolívar Bheinisealach (1871–2008)');
-  static const _ved = Currency(_cld, 'VED', 'Bolívar Soberano',
-      one: 'bholívar Soberano',
-      two: 'bholívar Soberano',
-      few: 'bolívar Soberano',
-      other: 'bolívar Soberano');
-  static const _vef = Currency(_cld, 'VEF', 'Bolívar Bheinisealach (2008–2018)',
-      one: 'bholívar Bheinisealach (2008–2018)',
-      two: 'bholívar Bheinisealach (2008–2018)',
-      few: 'bolívar Bheinisealach (2008–2018)',
-      other: 'bolívar Bheinisealach (2008–2018)',
-      symbolNarrow: 'Bs');
-  static const _ves = Currency(_cld, 'VES', 'Bolívar Bheinisealach',
-      one: 'bholívar Bheinisealach',
-      two: 'bholívar Bheinisealach',
-      few: 'bolívar Bheinisealach',
-      other: 'bolívar Bheinisealach');
-  static const _vnd = Currency(_cld, 'VND', 'Dong Bhiet-Namach',
-      one: 'dong Bhiet-Namach',
-      two: 'dhong Bhiet-Namach',
-      few: 'dong Bhiet-Namach',
-      other: 'dong Bhiet-Namach',
-      symbol: '₫',
-      symbolNarrow: '₫');
-  static const _vnn = Currency(_cld, 'VNN', 'Dong Bhiet-Namach (1978–1985)',
-      one: 'dong Bhiet-Namach (1978–1985)',
-      two: 'dhong Bhiet-Namach (1978–1985)',
-      few: 'dong Bhiet-Namach (1978–1985)',
-      other: 'dong Bhiet-Namach (1978–1985)');
-  static const _vuv = Currency(_cld, 'VUV', 'Vatu Vanuatuthach',
-      one: 'vatu Vanuatuthach',
-      two: 'vatu Vanuatuthach',
-      few: 'vatu Vanuatuthach',
-      other: 'vatu Vanuatuthach');
-  static const _wst = Currency(_cld, 'WST', 'Tala Samothach',
-      one: 'tala Samothach',
-      two: 'thala Samothach',
-      few: 'tala Samothach',
-      other: 'tala Samothach');
-  static const _xaf = Currency(_cld, 'XAF', 'Franc CFA Meadhan-Afragach',
-      one: 'fhranc CFA Meadhan-Afragach',
-      two: 'fhranc CFA Meadhan-Afragach',
-      few: 'franc CFA Meadhan-Afragach',
-      other: 'franc CFA Meadhan-Afragach',
-      symbol: 'FCFA');
-  static const _xag = Currency(_cld, 'XAG', 'Airgead',
-      one: 'unnsa tròidh airgid',
-      two: 'unnsa tròidh airgid',
-      few: 'unnsachan tròidh airgid',
-      other: 'unnsa tròidh airgid');
-  static const _xau = Currency(_cld, 'XAU', 'Òr',
-      one: 'unnsa tròidh òir',
-      two: 'unnsa tròidh òir',
-      few: 'unnsachan tròidh òir',
-      other: 'unnsa tròidh òir');
-  static const _xba = Currency(_cld, 'XBA', 'Aonad co-dhèanta Eòrpach',
-      one: 'aonad co-dhèanta Eòrpach',
-      two: 'aonad co-dhèanta Eòrpach',
-      few: 'aonadan co-dhèanta Eòrpach',
-      other: 'aonad co-dhèanta Eòrpach');
-  static const _xbb = Currency(_cld, 'XBB', 'Aonad airgid Eòrpach',
-      one: 'aonad airgid Eòrpach',
-      two: 'aonad airgid Eòrpach',
-      few: 'aonadan airgid Eòrpach',
-      other: 'aonad airgid Eòrpach');
-  static const _xbc = Currency(_cld, 'XBC', 'Aonad cunntasachd Eòrpach (XBC)',
-      one: 'aonad cunntasachd Eòrpach (XBC)',
-      two: 'aonad cunntasachd Eòrpach (XBC)',
-      few: 'aonadan cunntasachd Eòrpach (XBC)',
-      other: 'aonad cunntasachd Eòrpach (XBC)');
-  static const _xbd = Currency(_cld, 'XBD', 'Aonad cunntasachd Eòrpach (XBD)',
-      one: 'aonad cunntasachd Eòrpach (XBD)',
-      two: 'aonad cunntasachd Eòrpach (XBD)',
-      few: 'aonadan cunntasachd Eòrpach (XBD)',
-      other: 'aonad cunntasachd Eòrpach (XBD)');
-  static const _xcd = Currency(_cld, 'XCD', 'Dolar Caraibeach earach',
-      one: 'dolar Caraibeach earach',
-      two: 'dholar Caraibeach earach',
-      few: 'dolaran Caraibeach earach',
-      other: 'dolar Caraibeach earach',
-      symbol: r'EC$',
-      symbolNarrow: r'$');
-  static const _xcg = Currency(_cld, 'XCG', 'Gulden Caraibeach',
-      one: 'ghulden Caraibeach',
-      two: 'ghulden Caraibeach',
-      few: 'gulden Caraibeach',
-      other: 'gulden Caraibeach',
-      symbol: 'Cg.');
-  static const _xdr = Currency(_cld, 'XDR', 'Còir tarraing shònraichte',
-      one: 'chòir tarraing shònraichte',
-      two: 'chòir tarraing shònraichte',
-      few: 'còirichean tarraing sònraichte',
-      other: 'còir tarraing shònraichte');
-  static const _xeu = Currency(_cld, 'XEU', 'Aonad airgeadra Eòrpach',
-      one: 'aonad airgeadra Eòrpach',
-      two: 'aonad airgeadra Eòrpach',
-      few: 'aonadan airgeadra Eòrpach',
-      other: 'aonad airgeadra Eòrpach');
-  static const _xfo = Currency(_cld, 'XFO', 'Franc òir Frangach',
-      one: 'fhranc òir Frangach',
-      two: 'fhranc òir Frangach',
-      few: 'franc òir Frangach',
-      other: 'franc òir Frangach');
-  static const _xfu = Currency(_cld, 'XFU', 'Franc UIC Frangach',
-      one: 'fhranc UIC Frangach',
-      two: 'fhranc UIC Frangach',
-      few: 'franc UIC Frangach',
-      other: 'franc UIC Frangach');
-  static const _xof = Currency(_cld, 'XOF', 'Franc CFA Afraga an Iar',
-      one: 'fhranc CFA Afraga an Iar',
-      two: 'fhranc CFA Afraga an Iar',
-      few: 'franc CFA Afraga an Iar',
-      other: 'franc CFA Afraga an Iar',
-      symbol: 'F CFA');
-  static const _xpd = Currency(_cld, 'XPD', 'Pallaideam',
-      one: 'unnsa tròidh pallaideim',
-      two: 'unnsa tròidh pallaideim',
-      few: 'unnsachan tròidh pallaideim',
-      other: 'unnsa tròidh pallaideim');
-  static const _xpf = Currency(_cld, 'XPF', 'Franc CFP',
-      one: 'fhranc CFP',
-      two: 'fhranc CFP',
-      few: 'franc CFP',
-      other: 'franc CFP',
-      symbol: 'CFPF');
-  static const _xpt = Currency(_cld, 'XPT', 'Platanam',
-      one: 'unnsa tròidh platanaim',
-      two: 'unnsa tròidh platanaim',
-      few: 'unnsachan tròidh platanaim',
-      other: 'unnsa tròidh platanaim');
-  static const _xre = Currency(_cld, 'XRE', 'Aonad maoine RINET',
-      one: 'aonad maoine RINET',
-      two: 'aonad maoine RINET',
-      few: 'aonadan maoine RINET',
-      other: 'aonad maoine RINET');
-  static const _xsu = Currency(_cld, 'XSU', 'Sucre',
-      one: 'sucre', two: 'sucre', few: 'sucre', other: 'sucre');
-  static const _xts = Currency(_cld, 'XTS', 'Còd airgeadra fo dheuchainn',
-      one: 'aonad airgeadra fo dheuchainn',
-      two: 'aonad airgeadra fo dheuchainn',
-      few: 'aonadan airgeadra fo dheuchainn',
-      other: 'aonad airgeadra fo dheuchainn');
-  static const _xua = Currency(_cld, 'XUA', 'Aonad cunntasachd ADB',
-      one: 'aonad cunntasachd ADB',
-      two: 'aonad cunntasachd ADB',
-      few: 'aonadan cunntasachd ADB',
-      other: 'aonad cunntasachd ADB');
-  static const _xxx = Currency(_cld, 'XXX', 'Airgeadra neo-aithnichte',
-      one: '(aonad airgeadra neo–aithnichte)',
-      two: '(aonad airgeadra neo–aithnichte)',
-      few: '(aonadan airgeadra neo–aithnichte)',
-      other: '(aonad airgeadra neo–aithnichte)',
-      symbol: 'XXX');
-  static const _ydd = Currency(_cld, 'YDD', 'Dinar Eamanach',
-      one: 'dinar Eamanach',
-      two: 'dhinar Eamanach',
-      few: 'dinar Eamanach',
-      other: 'dinar Eamanach');
-  static const _yer = Currency(_cld, 'YER', 'Rial Eamanach',
-      one: 'rial Eamanach',
-      two: 'rial Eamanach',
-      few: 'rial Eamanach',
-      other: 'rial Eamanach');
+    _cld,
+    'UYW',
+    'Aonad inneacs tuarastail ainmeach Uruguaidh',
+    one: 'aonad inneacs tuarastail ainmeach Uruguaidh',
+    two: 'aonad inneacs tuarastail ainmeach Uruguaidh',
+    few: 'aonadan inneacs tuarastail ainmeach Uruguaidh',
+    other: 'aonad inneacs tuarastail ainmeach Uruguaidh',
+  );
+  static const _uzs = Currency(
+    _cld,
+    'UZS',
+    'Som Usbagach',
+    one: 'som Usbagach',
+    two: 'shom Usbagach',
+    few: 'som Usbagach',
+    other: 'som Usbagach',
+  );
+  static const _veb = Currency(
+    _cld,
+    'VEB',
+    'Bolívar Bheinisealach (1871–2008)',
+    one: 'bholívar Bheinisealach (1871–2008)',
+    two: 'bholívar Bheinisealach (1871–2008)',
+    few: 'bolívar Bheinisealach (1871–2008)',
+    other: 'bolívar Bheinisealach (1871–2008)',
+  );
+  static const _ved = Currency(
+    _cld,
+    'VED',
+    'Bolívar Soberano',
+    one: 'bholívar Soberano',
+    two: 'bholívar Soberano',
+    few: 'bolívar Soberano',
+    other: 'bolívar Soberano',
+  );
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'Bolívar Bheinisealach (2008–2018)',
+    one: 'bholívar Bheinisealach (2008–2018)',
+    two: 'bholívar Bheinisealach (2008–2018)',
+    few: 'bolívar Bheinisealach (2008–2018)',
+    other: 'bolívar Bheinisealach (2008–2018)',
+    symbolNarrow: 'Bs',
+  );
+  static const _ves = Currency(
+    _cld,
+    'VES',
+    'Bolívar Bheinisealach',
+    one: 'bholívar Bheinisealach',
+    two: 'bholívar Bheinisealach',
+    few: 'bolívar Bheinisealach',
+    other: 'bolívar Bheinisealach',
+  );
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'Dong Bhiet-Namach',
+    one: 'dong Bhiet-Namach',
+    two: 'dhong Bhiet-Namach',
+    few: 'dong Bhiet-Namach',
+    other: 'dong Bhiet-Namach',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
+  static const _vnn = Currency(
+    _cld,
+    'VNN',
+    'Dong Bhiet-Namach (1978–1985)',
+    one: 'dong Bhiet-Namach (1978–1985)',
+    two: 'dhong Bhiet-Namach (1978–1985)',
+    few: 'dong Bhiet-Namach (1978–1985)',
+    other: 'dong Bhiet-Namach (1978–1985)',
+  );
+  static const _vuv = Currency(
+    _cld,
+    'VUV',
+    'Vatu Vanuatuthach',
+    one: 'vatu Vanuatuthach',
+    two: 'vatu Vanuatuthach',
+    few: 'vatu Vanuatuthach',
+    other: 'vatu Vanuatuthach',
+  );
+  static const _wst = Currency(
+    _cld,
+    'WST',
+    'Tala Samothach',
+    one: 'tala Samothach',
+    two: 'thala Samothach',
+    few: 'tala Samothach',
+    other: 'tala Samothach',
+  );
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'Franc CFA Meadhan-Afragach',
+    one: 'fhranc CFA Meadhan-Afragach',
+    two: 'fhranc CFA Meadhan-Afragach',
+    few: 'franc CFA Meadhan-Afragach',
+    other: 'franc CFA Meadhan-Afragach',
+    symbol: 'FCFA',
+  );
+  static const _xag = Currency(
+    _cld,
+    'XAG',
+    'Airgead',
+    one: 'unnsa tròidh airgid',
+    two: 'unnsa tròidh airgid',
+    few: 'unnsachan tròidh airgid',
+    other: 'unnsa tròidh airgid',
+  );
+  static const _xau = Currency(
+    _cld,
+    'XAU',
+    'Òr',
+    one: 'unnsa tròidh òir',
+    two: 'unnsa tròidh òir',
+    few: 'unnsachan tròidh òir',
+    other: 'unnsa tròidh òir',
+  );
+  static const _xba = Currency(
+    _cld,
+    'XBA',
+    'Aonad co-dhèanta Eòrpach',
+    one: 'aonad co-dhèanta Eòrpach',
+    two: 'aonad co-dhèanta Eòrpach',
+    few: 'aonadan co-dhèanta Eòrpach',
+    other: 'aonad co-dhèanta Eòrpach',
+  );
+  static const _xbb = Currency(
+    _cld,
+    'XBB',
+    'Aonad airgid Eòrpach',
+    one: 'aonad airgid Eòrpach',
+    two: 'aonad airgid Eòrpach',
+    few: 'aonadan airgid Eòrpach',
+    other: 'aonad airgid Eòrpach',
+  );
+  static const _xbc = Currency(
+    _cld,
+    'XBC',
+    'Aonad cunntasachd Eòrpach (XBC)',
+    one: 'aonad cunntasachd Eòrpach (XBC)',
+    two: 'aonad cunntasachd Eòrpach (XBC)',
+    few: 'aonadan cunntasachd Eòrpach (XBC)',
+    other: 'aonad cunntasachd Eòrpach (XBC)',
+  );
+  static const _xbd = Currency(
+    _cld,
+    'XBD',
+    'Aonad cunntasachd Eòrpach (XBD)',
+    one: 'aonad cunntasachd Eòrpach (XBD)',
+    two: 'aonad cunntasachd Eòrpach (XBD)',
+    few: 'aonadan cunntasachd Eòrpach (XBD)',
+    other: 'aonad cunntasachd Eòrpach (XBD)',
+  );
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'Dolar Caraibeach earach',
+    one: 'dolar Caraibeach earach',
+    two: 'dholar Caraibeach earach',
+    few: 'dolaran Caraibeach earach',
+    other: 'dolar Caraibeach earach',
+    symbol: r'EC$',
+    symbolNarrow: r'$',
+  );
+  static const _xcg = Currency(
+    _cld,
+    'XCG',
+    'Gulden Caraibeach',
+    one: 'ghulden Caraibeach',
+    two: 'ghulden Caraibeach',
+    few: 'gulden Caraibeach',
+    other: 'gulden Caraibeach',
+    symbol: 'Cg.',
+  );
+  static const _xdr = Currency(
+    _cld,
+    'XDR',
+    'Còir tarraing shònraichte',
+    one: 'chòir tarraing shònraichte',
+    two: 'chòir tarraing shònraichte',
+    few: 'còirichean tarraing sònraichte',
+    other: 'còir tarraing shònraichte',
+  );
+  static const _xeu = Currency(
+    _cld,
+    'XEU',
+    'Aonad airgeadra Eòrpach',
+    one: 'aonad airgeadra Eòrpach',
+    two: 'aonad airgeadra Eòrpach',
+    few: 'aonadan airgeadra Eòrpach',
+    other: 'aonad airgeadra Eòrpach',
+  );
+  static const _xfo = Currency(
+    _cld,
+    'XFO',
+    'Franc òir Frangach',
+    one: 'fhranc òir Frangach',
+    two: 'fhranc òir Frangach',
+    few: 'franc òir Frangach',
+    other: 'franc òir Frangach',
+  );
+  static const _xfu = Currency(
+    _cld,
+    'XFU',
+    'Franc UIC Frangach',
+    one: 'fhranc UIC Frangach',
+    two: 'fhranc UIC Frangach',
+    few: 'franc UIC Frangach',
+    other: 'franc UIC Frangach',
+  );
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'Franc CFA Afraga an Iar',
+    one: 'fhranc CFA Afraga an Iar',
+    two: 'fhranc CFA Afraga an Iar',
+    few: 'franc CFA Afraga an Iar',
+    other: 'franc CFA Afraga an Iar',
+    symbol: 'F CFA',
+  );
+  static const _xpd = Currency(
+    _cld,
+    'XPD',
+    'Pallaideam',
+    one: 'unnsa tròidh pallaideim',
+    two: 'unnsa tròidh pallaideim',
+    few: 'unnsachan tròidh pallaideim',
+    other: 'unnsa tròidh pallaideim',
+  );
+  static const _xpf = Currency(
+    _cld,
+    'XPF',
+    'Franc CFP',
+    one: 'fhranc CFP',
+    two: 'fhranc CFP',
+    few: 'franc CFP',
+    other: 'franc CFP',
+    symbol: 'CFPF',
+  );
+  static const _xpt = Currency(
+    _cld,
+    'XPT',
+    'Platanam',
+    one: 'unnsa tròidh platanaim',
+    two: 'unnsa tròidh platanaim',
+    few: 'unnsachan tròidh platanaim',
+    other: 'unnsa tròidh platanaim',
+  );
+  static const _xre = Currency(
+    _cld,
+    'XRE',
+    'Aonad maoine RINET',
+    one: 'aonad maoine RINET',
+    two: 'aonad maoine RINET',
+    few: 'aonadan maoine RINET',
+    other: 'aonad maoine RINET',
+  );
+  static const _xsu = Currency(
+    _cld,
+    'XSU',
+    'Sucre',
+    one: 'sucre',
+    two: 'sucre',
+    few: 'sucre',
+    other: 'sucre',
+  );
+  static const _xts = Currency(
+    _cld,
+    'XTS',
+    'Còd airgeadra fo dheuchainn',
+    one: 'aonad airgeadra fo dheuchainn',
+    two: 'aonad airgeadra fo dheuchainn',
+    few: 'aonadan airgeadra fo dheuchainn',
+    other: 'aonad airgeadra fo dheuchainn',
+  );
+  static const _xua = Currency(
+    _cld,
+    'XUA',
+    'Aonad cunntasachd ADB',
+    one: 'aonad cunntasachd ADB',
+    two: 'aonad cunntasachd ADB',
+    few: 'aonadan cunntasachd ADB',
+    other: 'aonad cunntasachd ADB',
+  );
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    'Airgeadra neo-aithnichte',
+    one: '(aonad airgeadra neo–aithnichte)',
+    two: '(aonad airgeadra neo–aithnichte)',
+    few: '(aonadan airgeadra neo–aithnichte)',
+    other: '(aonad airgeadra neo–aithnichte)',
+    symbol: 'XXX',
+  );
+  static const _ydd = Currency(
+    _cld,
+    'YDD',
+    'Dinar Eamanach',
+    one: 'dinar Eamanach',
+    two: 'dhinar Eamanach',
+    few: 'dinar Eamanach',
+    other: 'dinar Eamanach',
+  );
+  static const _yer = Currency(
+    _cld,
+    'YER',
+    'Rial Eamanach',
+    one: 'rial Eamanach',
+    two: 'rial Eamanach',
+    few: 'rial Eamanach',
+    other: 'rial Eamanach',
+  );
   static const _yud = Currency(
-      _cld, 'YUD', 'Dinar cruaidh Iùgoslabhach (1966–1990)',
-      one: 'dinar cruaidh Iùgoslabhach (1966–1990)',
-      two: 'dhinar cruaidh Iùgoslabhach (1966–1990)',
-      few: 'dinar cruaidh Iùgoslabhach (1966–1990)',
-      other: 'dinar cruaidh Iùgoslabhach (1966–1990)');
-  static const _yum = Currency(_cld, 'YUM', 'Dinar ùr Iùgoslabhach (1994–2002)',
-      one: 'dinar ùr Iùgoslabhach (1994–2002)',
-      two: 'dhinar ùr Iùgoslabhach (1994–2002)',
-      few: 'dinar ùr Iùgoslabhach (1994–2002)',
-      other: 'dinar ùr Iùgoslabhach (1994–2002)');
+    _cld,
+    'YUD',
+    'Dinar cruaidh Iùgoslabhach (1966–1990)',
+    one: 'dinar cruaidh Iùgoslabhach (1966–1990)',
+    two: 'dhinar cruaidh Iùgoslabhach (1966–1990)',
+    few: 'dinar cruaidh Iùgoslabhach (1966–1990)',
+    other: 'dinar cruaidh Iùgoslabhach (1966–1990)',
+  );
+  static const _yum = Currency(
+    _cld,
+    'YUM',
+    'Dinar ùr Iùgoslabhach (1994–2002)',
+    one: 'dinar ùr Iùgoslabhach (1994–2002)',
+    two: 'dhinar ùr Iùgoslabhach (1994–2002)',
+    few: 'dinar ùr Iùgoslabhach (1994–2002)',
+    other: 'dinar ùr Iùgoslabhach (1994–2002)',
+  );
   static const _yun = Currency(
-      _cld, 'YUN', 'Dinar iompachail Iùgoslabhach (1990–1992)',
-      one: 'dinar iompachail Iùgoslabhach (1990–1992)',
-      two: 'dhinar iompachail Iùgoslabhach (1990–1992)',
-      few: 'dinar iompachail Iùgoslabhach (1990–1992)',
-      other: 'dinar iompachail Iùgoslabhach (1990–1992)');
+    _cld,
+    'YUN',
+    'Dinar iompachail Iùgoslabhach (1990–1992)',
+    one: 'dinar iompachail Iùgoslabhach (1990–1992)',
+    two: 'dhinar iompachail Iùgoslabhach (1990–1992)',
+    few: 'dinar iompachail Iùgoslabhach (1990–1992)',
+    other: 'dinar iompachail Iùgoslabhach (1990–1992)',
+  );
   static const _yur = Currency(
-      _cld, 'YUR', 'Dinar ath-leasaichte Iùgoslabhach (1992–1993)',
-      one: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
-      two: 'dhinar ath-leasaichte Iùgoslabhach (1992–1993)',
-      few: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
-      other: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)');
-  static const _zal = Currency(_cld, 'ZAL', 'Rand Afraga a Deas (ionmhasail)',
-      one: 'rand Afraga a Deas (ionmhasail)',
-      two: 'rand Afraga a Deas (ionmhasail)',
-      few: 'rand Afraga a Deas (ionmhasail)',
-      other: 'rand Afraga a Deas (ionmhasail)');
-  static const _zar = Currency(_cld, 'ZAR', 'Rand Afraga a Deas',
-      one: 'rand Afraga a Deas',
-      two: 'rand Afraga a Deas',
-      few: 'rand Afraga a Deas',
-      other: 'rand Afraga a Deas',
-      symbolNarrow: 'R');
-  static const _zmk = Currency(_cld, 'ZMK', 'Kwacha Sàimbitheach (1968–2012)',
-      one: 'kwacha Sàimbitheach (1968–2012)',
-      two: 'kwacha Sàimbitheach (1968–2012)',
-      few: 'kwacha Sàimbitheach (1968–2012)',
-      other: 'kwacha Sàimbitheach (1968–2012)');
-  static const _zmw = Currency(_cld, 'ZMW', 'Kwacha Sàimbitheach',
-      one: 'kwacha Sàimbitheach',
-      two: 'kwacha Sàimbitheach',
-      few: 'kwacha Sàimbitheach',
-      other: 'kwacha Sàimbitheach',
-      symbolNarrow: 'ZK');
-  static const _zrn = Currency(_cld, 'ZRN', 'Zaïre ùr Zaïreach (1993–1998)',
-      one: 'zaïre ùr Zaïreach (1993–1998)',
-      two: 'zaïre ùr Zaïreach (1993–1998)',
-      few: 'zaïre ùr Zaïreach (1993–1998)',
-      other: 'zaïre ùr Zaïreach (1993–1998)');
-  static const _zrz = Currency(_cld, 'ZRZ', 'Zaïre Zaïreach (1971–1993)',
-      one: 'zaïre Zaïreach (1971–1993)',
-      two: 'zaïre Zaïreach (1971–1993)',
-      few: 'zaïre Zaïreach (1971–1993)',
-      other: 'zaïre Zaïreach (1971–1993)');
-  static const _zwd = Currency(_cld, 'ZWD', 'Dolar Sìombabuthach (1980–2008)',
-      one: 'dolar Sìombabuthach (1980–2008)',
-      two: 'dholar Sìombabuthach (1980–2008)',
-      few: 'dolaran Sìombabuthach (1980–2008)',
-      other: 'dolar Sìombabuthach (1980–2008)');
-  static const _zwl = Currency(_cld, 'ZWL', 'Dolar Sìombabuthach (2009)',
-      one: 'dolar Sìombabuthach (2009)',
-      two: 'dholar Sìombabuthach (2009)',
-      few: 'dolaran Sìombabuthach (2009)',
-      other: 'dolar Sìombabuthach (2009)');
-  static const _zwr = Currency(_cld, 'ZWR', 'Dolar Sìombabuthach (2008)',
-      one: 'dolar Sìombabuthach (2008)',
-      two: 'dholar Sìombabuthach (2008)',
-      few: 'dolaran Sìombabuthach (2008)',
-      other: 'dolar Sìombabuthach (2008)');
+    _cld,
+    'YUR',
+    'Dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+    one: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+    two: 'dhinar ath-leasaichte Iùgoslabhach (1992–1993)',
+    few: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+    other: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+  );
+  static const _zal = Currency(
+    _cld,
+    'ZAL',
+    'Rand Afraga a Deas (ionmhasail)',
+    one: 'rand Afraga a Deas (ionmhasail)',
+    two: 'rand Afraga a Deas (ionmhasail)',
+    few: 'rand Afraga a Deas (ionmhasail)',
+    other: 'rand Afraga a Deas (ionmhasail)',
+  );
+  static const _zar = Currency(
+    _cld,
+    'ZAR',
+    'Rand Afraga a Deas',
+    one: 'rand Afraga a Deas',
+    two: 'rand Afraga a Deas',
+    few: 'rand Afraga a Deas',
+    other: 'rand Afraga a Deas',
+    symbolNarrow: 'R',
+  );
+  static const _zmk = Currency(
+    _cld,
+    'ZMK',
+    'Kwacha Sàimbitheach (1968–2012)',
+    one: 'kwacha Sàimbitheach (1968–2012)',
+    two: 'kwacha Sàimbitheach (1968–2012)',
+    few: 'kwacha Sàimbitheach (1968–2012)',
+    other: 'kwacha Sàimbitheach (1968–2012)',
+  );
+  static const _zmw = Currency(
+    _cld,
+    'ZMW',
+    'Kwacha Sàimbitheach',
+    one: 'kwacha Sàimbitheach',
+    two: 'kwacha Sàimbitheach',
+    few: 'kwacha Sàimbitheach',
+    other: 'kwacha Sàimbitheach',
+    symbolNarrow: 'ZK',
+  );
+  static const _zrn = Currency(
+    _cld,
+    'ZRN',
+    'Zaïre ùr Zaïreach (1993–1998)',
+    one: 'zaïre ùr Zaïreach (1993–1998)',
+    two: 'zaïre ùr Zaïreach (1993–1998)',
+    few: 'zaïre ùr Zaïreach (1993–1998)',
+    other: 'zaïre ùr Zaïreach (1993–1998)',
+  );
+  static const _zrz = Currency(
+    _cld,
+    'ZRZ',
+    'Zaïre Zaïreach (1971–1993)',
+    one: 'zaïre Zaïreach (1971–1993)',
+    two: 'zaïre Zaïreach (1971–1993)',
+    few: 'zaïre Zaïreach (1971–1993)',
+    other: 'zaïre Zaïreach (1971–1993)',
+  );
+  static const _zwd = Currency(
+    _cld,
+    'ZWD',
+    'Dolar Sìombabuthach (1980–2008)',
+    one: 'dolar Sìombabuthach (1980–2008)',
+    two: 'dholar Sìombabuthach (1980–2008)',
+    few: 'dolaran Sìombabuthach (1980–2008)',
+    other: 'dolar Sìombabuthach (1980–2008)',
+  );
+  static const _zwl = Currency(
+    _cld,
+    'ZWL',
+    'Dolar Sìombabuthach (2009)',
+    one: 'dolar Sìombabuthach (2009)',
+    two: 'dholar Sìombabuthach (2009)',
+    few: 'dolaran Sìombabuthach (2009)',
+    other: 'dolar Sìombabuthach (2009)',
+  );
+  static const _zwr = Currency(
+    _cld,
+    'ZWR',
+    'Dolar Sìombabuthach (2008)',
+    one: 'dolar Sìombabuthach (2008)',
+    two: 'dholar Sìombabuthach (2008)',
+    few: 'dolaran Sìombabuthach (2008)',
+    other: 'dolar Sìombabuthach (2008)',
+  );
 
   @override
   final unknownCurrency = _xxx;
@@ -14303,8 +15516,9 @@ class TimeZonesGd extends TimeZones {
     'America/Anguilla': TimeZoneNames(exemplarCity: 'Anguillia'),
     'America/Antigua': TimeZoneNames(exemplarCity: 'Aintìoga'),
     'America/Araguaina': TimeZoneNames(exemplarCity: 'Araguaína'),
-    'America/Argentina/Rio_Gallegos':
-        TimeZoneNames(exemplarCity: 'Río Gallegos'),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Río Gallegos',
+    ),
     'America/Argentina/Tucuman': TimeZoneNames(exemplarCity: 'Tucumán'),
     'America/Aruba': TimeZoneNames(exemplarCity: 'Arùba'),
     'America/Asuncion': TimeZoneNames(exemplarCity: 'Asunción'),
@@ -14330,22 +15544,27 @@ class TimeZonesGd extends TimeZones {
     'America/Guadeloupe': TimeZoneNames(exemplarCity: 'Guadalup'),
     'America/Guatemala': TimeZoneNames(exemplarCity: 'Guatamala'),
     'America/Guyana': TimeZoneNames(exemplarCity: 'Guidheàna'),
-    'America/Indiana/Vincennes':
-        TimeZoneNames(exemplarCity: 'Vincennes, Indiana'),
-    'America/Indiana/Petersburg':
-        TimeZoneNames(exemplarCity: 'Petersburg, Indiana'),
-    'America/Indiana/Tell_City':
-        TimeZoneNames(exemplarCity: 'Tell City, Indiana'),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Tell City, Indiana',
+    ),
     'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'Knox, Indiana'),
     'America/Indiana/Winamac': TimeZoneNames(exemplarCity: 'Winamac, Indiana'),
     'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'Marengo, Indiana'),
     'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'Vevay, Indiana'),
     'America/Inuvik': TimeZoneNames(exemplarCity: 'Inuuvik'),
     'America/Jamaica': TimeZoneNames(exemplarCity: 'Diameuga'),
-    'America/Kentucky/Monticello':
-        TimeZoneNames(exemplarCity: 'Monticello, Kentucky'),
-    'America/Lower_Princes':
-        TimeZoneNames(exemplarCity: 'Lower Prince’s Quarter'),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
     'America/Maceio': TimeZoneNames(exemplarCity: 'Maceió'),
     'America/Martinique': TimeZoneNames(exemplarCity: 'Mairtinic'),
     'America/Mazatlan': TimeZoneNames(exemplarCity: 'Mazatlán'),
@@ -14353,12 +15572,15 @@ class TimeZonesGd extends TimeZones {
     'America/Mexico_City': TimeZoneNames(exemplarCity: 'Cathair Mheagsago'),
     'America/Montserrat': TimeZoneNames(exemplarCity: 'Montsarat'),
     'America/New_York': TimeZoneNames(exemplarCity: 'Nuadh Eabhrac'),
-    'America/North_Dakota/Beulah':
-        TimeZoneNames(exemplarCity: 'Beulah, North Dakota'),
-    'America/North_Dakota/New_Salem':
-        TimeZoneNames(exemplarCity: 'New Salem, North Dakota'),
-    'America/North_Dakota/Center':
-        TimeZoneNames(exemplarCity: 'Center, North Dakota'),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Beulah, North Dakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'New Salem, North Dakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Center, North Dakota',
+    ),
     'America/Port_of_Spain': TimeZoneNames(exemplarCity: 'Port na Spàinne'),
     'America/Puerto_Rico': TimeZoneNames(exemplarCity: 'Porto Rìceo'),
     'America/Rankin_Inlet': TimeZoneNames(exemplarCity: 'Kangiqliniq'),
@@ -14386,18 +15608,20 @@ class TimeZonesGd extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: 'Chișinău'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'Beirbh'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'Baile Àtha Cliath',
-        long: TimeZoneName(daylight: 'Bun-àm na h-Èireann'),
-        short: TimeZoneName(daylight: 'TSÈ (Èirinn)')),
+      exemplarCity: 'Baile Àtha Cliath',
+      long: TimeZoneName(daylight: 'Bun-àm na h-Èireann'),
+      short: TimeZoneName(daylight: 'TSÈ (Èirinn)'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'Diobraltar'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: 'Geàrnsaidh'),
     'Europe/Isle_of_Man': TimeZoneNames(exemplarCity: 'Eilean Mhanainn'),
     'Europe/Jersey': TimeZoneNames(exemplarCity: 'Deàrsaidh'),
     'Europe/Kiev': TimeZoneNames(exemplarCity: 'Kiev'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'Dùn Èideann/Lunnainn',
-        long: TimeZoneName(daylight: 'Tìde samhraidh Bhreatainn'),
-        short: TimeZoneName(daylight: 'TSB')),
+      exemplarCity: 'Dùn Èideann/Lunnainn',
+      long: TimeZoneName(daylight: 'Tìde samhraidh Bhreatainn'),
+      short: TimeZoneName(daylight: 'TSB'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'Lugsamburg'),
     'Europe/Moscow': TimeZoneNames(exemplarCity: 'Mosgo'),
     'Europe/Paris': TimeZoneNames(exemplarCity: 'Paras'),
@@ -14459,8 +15683,9 @@ class TimeZonesGd extends TimeZones {
     'Pacific/Galapagos': TimeZoneNames(exemplarCity: 'Galápagos'),
     'Pacific/Gambier': TimeZoneNames(exemplarCity: 'Mangareva'),
     'Pacific/Honolulu': TimeZoneNames(
-        exemplarCity: 'Honolulu',
-        short: TimeZoneName(generic: 'HST', standard: 'HST', daylight: 'HDT')),
+      exemplarCity: 'Honolulu',
+      short: TimeZoneName(generic: 'HST', standard: 'HST', daylight: 'HDT'),
+    ),
     'Pacific/Marquesas': TimeZoneNames(exemplarCity: 'Eileanan a’ Mharcais'),
     'Pacific/Nauru': TimeZoneNames(exemplarCity: 'Nabhru'),
     'Pacific/Palau': TimeZoneNames(exemplarCity: 'Palabh'),
@@ -14468,12 +15693,14 @@ class TimeZonesGd extends TimeZones {
     'Pacific/Ponape': TimeZoneNames(exemplarCity: 'Pohnpei'),
     'Pacific/Truk': TimeZoneNames(exemplarCity: 'Chuuk'),
     'Pacific/Wallis': TimeZoneNames(exemplarCity: 'Uallas'),
-    'Antarctica/DumontDUrville':
-        TimeZoneNames(exemplarCity: 'Dumont d’Urville'),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Dumont d’Urville',
+    ),
     'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'Eilean MhicGuaire'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'Àm Uile-choitcheann Co-òrdanaichte'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'Àm Uile-choitcheann Co-òrdanaichte'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'Baile neo-aithnichte'),
   };
 
@@ -14481,567 +15708,914 @@ class TimeZonesGd extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Acre': MetaZone('Acre',
-        long: TimeZoneName(
-            generic: 'Àm Acre',
-            standard: 'Bun-àm Acre',
-            daylight: 'Tìde samhraidh Acre')),
-    'Afghanistan': MetaZone('Afghanistan',
-        long: TimeZoneName(standard: 'Àm Afghanastàin')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'Àm Meadhan Afraga')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'Àm Afraga an Ear')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'Àm Afraga a Deas')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'Àm Afraga an Iar',
-            standard: 'Bun-àm Afraga an Iar',
-            daylight: 'Tìde Samhraidh Afraga an Iar')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'Àm Alaska',
-            standard: 'Bun-àm Alaska',
-            daylight: 'Tìde samhraidh Alaska'),
-        short:
-            TimeZoneName(generic: 'AKT', standard: 'AKST', daylight: 'AKDT')),
-    'Almaty': MetaZone('Almaty',
-        long: TimeZoneName(
-            generic: 'Àm Almaty',
-            standard: 'Bun-àm Almaty',
-            daylight: 'Tìde samhraidh Almaty')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'Àm Amasoin',
-            standard: 'Bun-àm Amasoin',
-            daylight: 'Tìde samhraidh Amasoin')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'Àm Meadhan Aimeireaga',
-            standard: 'Bun-àm Meadhan Aimeireaga',
-            daylight: 'Tìde samhraidh Meadhan Aimeireaga'),
-        short: TimeZoneName(generic: 'CT', standard: 'CST', daylight: 'CDT')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'Àm Aimeireaga an Ear',
-            standard: 'Bun-àm Aimeireaga an Ear',
-            daylight: 'Tìde samhraidh Aimeireaga an Ear'),
-        short: TimeZoneName(generic: 'ET', standard: 'EST', daylight: 'EDT')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'Àm Monadh Aimeireaga',
-            standard: 'Bun-àm Monadh Aimeireaga',
-            daylight: 'Tìde samhraidh Monadh Aimeireaga'),
-        short: TimeZoneName(generic: 'MT', standard: 'MST', daylight: 'MDT')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'Àm a’ Chuain Shèimh',
-            standard: 'Bun-àm a’ Chuain Shèimh',
-            daylight: 'Tìde samhraidh a’ Chuain Shèimh'),
-        short: TimeZoneName(generic: 'PT', standard: 'PST', daylight: 'PDT')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: 'Àm Anadyr',
-            standard: 'Bun-àm Anadyr',
-            daylight: 'Tìde samhraidh Anadyr')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'Àm Apia',
-            standard: 'Bun-àm Apia',
-            daylight: 'Tìde samhraidh Apia')),
-    'Aqtau': MetaZone('Aqtau',
-        long: TimeZoneName(
-            generic: 'Àm Aqtau',
-            standard: 'Bun-àm Aqtau',
-            daylight: 'Tìde samhraidh Aqtau')),
-    'Aqtobe': MetaZone('Aqtobe',
-        long: TimeZoneName(
-            generic: 'Àm Aqtobe',
-            standard: 'Bun-àm Aqtobe',
-            daylight: 'Tìde samhraidh Aqtobe')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'Àm Arabach',
-            standard: 'Bun-àm Arabach',
-            daylight: 'Tìde samhraidh Arabach')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'Àm na h-Argantaine',
-            standard: 'Bun-àm na h-Argantaine',
-            daylight: 'Tìde samhraidh na h-Argantaine')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'Àm na h-Argantaine Siaraich',
-            standard: 'Bun-àm na h-Argantaine Siaraich',
-            daylight: 'Tìde samhraidh na h-Argantaine Siaraich')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'Àm Airmeinia',
-            standard: 'Bun-àm Airmeinia',
-            daylight: 'Tìde samhraidh Airmeinia')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'Àm a’ Chuain Shiar',
-            standard: 'Bun-àm a’ Chuain Shiar',
-            daylight: 'Tìde samhraidh a’ Chuain Shiar'),
-        short: TimeZoneName(generic: 'AT', standard: 'AST', daylight: 'ADT')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'Àm Meadhan Astràilia',
-            standard: 'Bun-àm Meadhan Astràilia',
-            daylight: 'Tìde samhraidh Meadhan Astràilia')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'Àm Meadhan Astràilia an Iar',
-            standard: 'Bun-àm Meadhan Astràilia an Iar',
-            daylight: 'Tìde samhraidh Meadhan Astràilia an Iar')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'Àm Astràilia an Ear',
-            standard: 'Bun-àm Astràilia an Ear',
-            daylight: 'Tìde samhraidh Astràilia an Ear')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'Àm Astràilia an Iar',
-            standard: 'Bun-àm Astràilia an Iar',
-            daylight: 'Tìde samhraidh Astràilia an Iar')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'Àm Asarbaideàin',
-            standard: 'Bun-àm Asarbaideàin',
-            daylight: 'Tìde samhraidh Asarbaideàin')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'Àm nan Eileanan Asorach',
-            standard: 'Bun-àm nan Eileanan Asorach',
-            daylight: 'Tìde samhraidh nan Eileanan Asorach')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'Àm Bangladais',
-            standard: 'Bun-àm Bangladais',
-            daylight: 'Tìde samhraidh Bangladais')),
+    'Acre': MetaZone(
+      'Acre',
+      long: TimeZoneName(
+        generic: 'Àm Acre',
+        standard: 'Bun-àm Acre',
+        daylight: 'Tìde samhraidh Acre',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'Àm Afghanastàin'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'Àm Meadhan Afraga'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'Àm Afraga an Ear'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'Àm Afraga a Deas'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Àm Afraga an Iar',
+        standard: 'Bun-àm Afraga an Iar',
+        daylight: 'Tìde Samhraidh Afraga an Iar',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'Àm Alaska',
+        standard: 'Bun-àm Alaska',
+        daylight: 'Tìde samhraidh Alaska',
+      ),
+      short: TimeZoneName(generic: 'AKT', standard: 'AKST', daylight: 'AKDT'),
+    ),
+    'Almaty': MetaZone(
+      'Almaty',
+      long: TimeZoneName(
+        generic: 'Àm Almaty',
+        standard: 'Bun-àm Almaty',
+        daylight: 'Tìde samhraidh Almaty',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'Àm Amasoin',
+        standard: 'Bun-àm Amasoin',
+        daylight: 'Tìde samhraidh Amasoin',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'Àm Meadhan Aimeireaga',
+        standard: 'Bun-àm Meadhan Aimeireaga',
+        daylight: 'Tìde samhraidh Meadhan Aimeireaga',
+      ),
+      short: TimeZoneName(generic: 'CT', standard: 'CST', daylight: 'CDT'),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Àm Aimeireaga an Ear',
+        standard: 'Bun-àm Aimeireaga an Ear',
+        daylight: 'Tìde samhraidh Aimeireaga an Ear',
+      ),
+      short: TimeZoneName(generic: 'ET', standard: 'EST', daylight: 'EDT'),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Àm Monadh Aimeireaga',
+        standard: 'Bun-àm Monadh Aimeireaga',
+        daylight: 'Tìde samhraidh Monadh Aimeireaga',
+      ),
+      short: TimeZoneName(generic: 'MT', standard: 'MST', daylight: 'MDT'),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Àm a’ Chuain Shèimh',
+        standard: 'Bun-àm a’ Chuain Shèimh',
+        daylight: 'Tìde samhraidh a’ Chuain Shèimh',
+      ),
+      short: TimeZoneName(generic: 'PT', standard: 'PST', daylight: 'PDT'),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: 'Àm Anadyr',
+        standard: 'Bun-àm Anadyr',
+        daylight: 'Tìde samhraidh Anadyr',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'Àm Apia',
+        standard: 'Bun-àm Apia',
+        daylight: 'Tìde samhraidh Apia',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      'Aqtau',
+      long: TimeZoneName(
+        generic: 'Àm Aqtau',
+        standard: 'Bun-àm Aqtau',
+        daylight: 'Tìde samhraidh Aqtau',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Àm Aqtobe',
+        standard: 'Bun-àm Aqtobe',
+        daylight: 'Tìde samhraidh Aqtobe',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'Àm Arabach',
+        standard: 'Bun-àm Arabach',
+        daylight: 'Tìde samhraidh Arabach',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'Àm na h-Argantaine',
+        standard: 'Bun-àm na h-Argantaine',
+        daylight: 'Tìde samhraidh na h-Argantaine',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Àm na h-Argantaine Siaraich',
+        standard: 'Bun-àm na h-Argantaine Siaraich',
+        daylight: 'Tìde samhraidh na h-Argantaine Siaraich',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'Àm Airmeinia',
+        standard: 'Bun-àm Airmeinia',
+        daylight: 'Tìde samhraidh Airmeinia',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'Àm a’ Chuain Shiar',
+        standard: 'Bun-àm a’ Chuain Shiar',
+        daylight: 'Tìde samhraidh a’ Chuain Shiar',
+      ),
+      short: TimeZoneName(generic: 'AT', standard: 'AST', daylight: 'ADT'),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Àm Meadhan Astràilia',
+        standard: 'Bun-àm Meadhan Astràilia',
+        daylight: 'Tìde samhraidh Meadhan Astràilia',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Àm Meadhan Astràilia an Iar',
+        standard: 'Bun-àm Meadhan Astràilia an Iar',
+        daylight: 'Tìde samhraidh Meadhan Astràilia an Iar',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Àm Astràilia an Ear',
+        standard: 'Bun-àm Astràilia an Ear',
+        daylight: 'Tìde samhraidh Astràilia an Ear',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Àm Astràilia an Iar',
+        standard: 'Bun-àm Astràilia an Iar',
+        daylight: 'Tìde samhraidh Astràilia an Iar',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Àm Asarbaideàin',
+        standard: 'Bun-àm Asarbaideàin',
+        daylight: 'Tìde samhraidh Asarbaideàin',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'Àm nan Eileanan Asorach',
+        standard: 'Bun-àm nan Eileanan Asorach',
+        daylight: 'Tìde samhraidh nan Eileanan Asorach',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Àm Bangladais',
+        standard: 'Bun-àm Bangladais',
+        daylight: 'Tìde samhraidh Bangladais',
+      ),
+    ),
     'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'Àm Butàin')),
-    'Bolivia':
-        MetaZone('Bolivia', long: TimeZoneName(standard: 'Àm Boilibhia')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'Àm Bhrasília',
-            standard: 'Bun-àm Bhrasília',
-            daylight: 'Tìde samhraidh Bhrasília')),
-    'Brunei': MetaZone('Brunei',
-        long: TimeZoneName(standard: 'Àm Bhrùnaigh Dàr as-Salàm')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'Àm a’ Chip Uaine',
-            standard: 'Bun-àm a’ Chip Uaine',
-            daylight: 'Tìde samhraidh a’ Chip Uaine')),
+    'Bolivia': MetaZone(
+      'Bolivia',
+      long: TimeZoneName(standard: 'Àm Boilibhia'),
+    ),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'Àm Bhrasília',
+        standard: 'Bun-àm Bhrasília',
+        daylight: 'Tìde samhraidh Bhrasília',
+      ),
+    ),
+    'Brunei': MetaZone(
+      'Brunei',
+      long: TimeZoneName(standard: 'Àm Bhrùnaigh Dàr as-Salàm'),
+    ),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Àm a’ Chip Uaine',
+        standard: 'Bun-àm a’ Chip Uaine',
+        daylight: 'Tìde samhraidh a’ Chip Uaine',
+      ),
+    ),
     'Casey': MetaZone('Casey', long: TimeZoneName(standard: 'Àm Chasey')),
-    'Chamorro':
-        MetaZone('Chamorro', long: TimeZoneName(standard: 'Àm Chamorro')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'Àm Chatham',
-            standard: 'Bun-àm Chatham',
-            daylight: 'Tìde samhraidh Chatham')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'Àm na Sile',
-            standard: 'Bun-àm na Sile',
-            daylight: 'Tìde samhraidh na Sile')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'Àm na Sìne',
-            standard: 'Bun-àm na Sìne',
-            daylight: 'Tìde samhraidh na Sìne')),
-    'Christmas': MetaZone('Christmas',
-        long: TimeZoneName(standard: 'Àm Eilean na Nollaig')),
-    'Cocos':
-        MetaZone('Cocos', long: TimeZoneName(standard: 'Àm Eileanan Chocos')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'Àm Coloimbia',
-            standard: 'Bun-àm Coloimbia',
-            daylight: 'Tìde samhraidh Coloimbia')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'Àm Eileanan Cook',
-            standard: 'Bun-àm Eileanan Cook',
-            daylight: 'Leth-thìde samhraidh Eileanan Cook')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'Àm Cùba',
-            standard: 'Bun-àm Cùba',
-            daylight: 'Tìde samhraidh Cùba')),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'Àm Chamorro'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'Àm Chatham',
+        standard: 'Bun-àm Chatham',
+        daylight: 'Tìde samhraidh Chatham',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'Àm na Sile',
+        standard: 'Bun-àm na Sile',
+        daylight: 'Tìde samhraidh na Sile',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'Àm na Sìne',
+        standard: 'Bun-àm na Sìne',
+        daylight: 'Tìde samhraidh na Sìne',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'Àm Eilean na Nollaig'),
+    ),
+    'Cocos': MetaZone(
+      'Cocos',
+      long: TimeZoneName(standard: 'Àm Eileanan Chocos'),
+    ),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'Àm Coloimbia',
+        standard: 'Bun-àm Coloimbia',
+        daylight: 'Tìde samhraidh Coloimbia',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'Àm Eileanan Cook',
+        standard: 'Bun-àm Eileanan Cook',
+        daylight: 'Leth-thìde samhraidh Eileanan Cook',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'Àm Cùba',
+        standard: 'Bun-àm Cùba',
+        daylight: 'Tìde samhraidh Cùba',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'Àm Dhavis')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'Àm Dumont-d’Urville')),
-    'East_Timor': MetaZone('East_Timor',
-        long: TimeZoneName(standard: 'Àm Thìomor an Ear')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'Àm Eilean na Càisge',
-            standard: 'Bun-àm Eilean na Càisge',
-            daylight: 'Tìde samhraidh Eilean na Càisge')),
-    'Ecuador':
-        MetaZone('Ecuador', long: TimeZoneName(standard: 'Àm Eacuadoir')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'Àm Meadhan na Roinn-Eòrpa',
-            standard: 'Bun-àm Meadhan na Roinn-Eòrpa',
-            daylight: 'Tìde samhraidh Meadhan na Roinn-Eòrpa'),
-        short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'Àm na Roinn-Eòrpa an Ear',
-            standard: 'Bun-àm na Roinn-Eòrpa an Ear',
-            daylight: 'Tìde samhraidh na Roinn-Eòrpa an Ear'),
-        short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'Àm na Roinn-Eòrpa nas fhaide ear')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'Àm na Roinn-Eòrpa an Iar',
-            standard: 'Bun-àm na Roinn-Eòrpa an Iar',
-            daylight: 'Tìde samhraidh na Roinn-Eòrpa an Iar'),
-        short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'Àm nan Eileanan Fàclannach',
-            standard: 'Bun-àm nan Eileanan Fàclannach',
-            daylight: 'Tìde samhraidh nan Eileanan Fàclannach')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'Àm Fìdi',
-            standard: 'Bun-àm Fìdi',
-            daylight: 'Tìde samhraidh Fìdi')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'Àm Guidheàna na Frainge')),
-    'French_Southern': MetaZone('French_Southern',
-        long:
-            TimeZoneName(standard: 'Àm Deasach agus Antartaigeach na Frainge')),
-    'Galapagos':
-        MetaZone('Galapagos', long: TimeZoneName(standard: 'Àm Ghalapagos')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'Àm Dumont-d’Urville'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'Àm Thìomor an Ear'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'Àm Eilean na Càisge',
+        standard: 'Bun-àm Eilean na Càisge',
+        daylight: 'Tìde samhraidh Eilean na Càisge',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      'Ecuador',
+      long: TimeZoneName(standard: 'Àm Eacuadoir'),
+    ),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Àm Meadhan na Roinn-Eòrpa',
+        standard: 'Bun-àm Meadhan na Roinn-Eòrpa',
+        daylight: 'Tìde samhraidh Meadhan na Roinn-Eòrpa',
+      ),
+      short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST'),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Àm na Roinn-Eòrpa an Ear',
+        standard: 'Bun-àm na Roinn-Eòrpa an Ear',
+        daylight: 'Tìde samhraidh na Roinn-Eòrpa an Ear',
+      ),
+      short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST'),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'Àm na Roinn-Eòrpa nas fhaide ear'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Àm na Roinn-Eòrpa an Iar',
+        standard: 'Bun-àm na Roinn-Eòrpa an Iar',
+        daylight: 'Tìde samhraidh na Roinn-Eòrpa an Iar',
+      ),
+      short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST'),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'Àm nan Eileanan Fàclannach',
+        standard: 'Bun-àm nan Eileanan Fàclannach',
+        daylight: 'Tìde samhraidh nan Eileanan Fàclannach',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'Àm Fìdi',
+        standard: 'Bun-àm Fìdi',
+        daylight: 'Tìde samhraidh Fìdi',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'Àm Guidheàna na Frainge'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(standard: 'Àm Deasach agus Antartaigeach na Frainge'),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'Àm Ghalapagos'),
+    ),
     'Gambier': MetaZone('Gambier', long: TimeZoneName(standard: 'Àm Ghambier')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'Àm na Cairtbheile',
-            standard: 'Bun-àm na Cairtbheile',
-            daylight: 'Tìde samhraidh na Cairtbheile')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'Àm Eileanan Ghileabairt')),
-    'GMT': MetaZone('GMT',
-        long: TimeZoneName(standard: 'Greenwich Mean Time'),
-        short: TimeZoneName(standard: 'GMT')),
-    'Greenland': MetaZone('Greenland',
-        long: TimeZoneName(
-            generic: 'Àm na Graonlainne',
-            standard: 'Bun-àm na Graonlainne',
-            daylight: 'Tìde samhraidh na Graonlainne')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'Àm na Graonlainn an Ear',
-            standard: 'Bun-àm na Graonlainn an Ear',
-            daylight: 'Tìde samhraidh na Graonlainn an Ear')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'Àm na Graonlainn an Iar',
-            standard: 'Bun-àm na Graonlainn an Iar',
-            daylight: 'Tìde samhraidh na Graonlainn an Iar')),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'Àm na Cairtbheile',
+        standard: 'Bun-àm na Cairtbheile',
+        daylight: 'Tìde samhraidh na Cairtbheile',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'Àm Eileanan Ghileabairt'),
+    ),
+    'GMT': MetaZone(
+      'GMT',
+      long: TimeZoneName(standard: 'Greenwich Mean Time'),
+      short: TimeZoneName(standard: 'GMT'),
+    ),
+    'Greenland': MetaZone(
+      'Greenland',
+      long: TimeZoneName(
+        generic: 'Àm na Graonlainne',
+        standard: 'Bun-àm na Graonlainne',
+        daylight: 'Tìde samhraidh na Graonlainne',
+      ),
+    ),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Àm na Graonlainn an Ear',
+        standard: 'Bun-àm na Graonlainn an Ear',
+        daylight: 'Tìde samhraidh na Graonlainn an Ear',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Àm na Graonlainn an Iar',
+        standard: 'Bun-àm na Graonlainn an Iar',
+        daylight: 'Tìde samhraidh na Graonlainn an Iar',
+      ),
+    ),
     'Guam': MetaZone('Guam', long: TimeZoneName(standard: 'Àm Guam')),
     'Gulf': MetaZone('Gulf', long: TimeZoneName(standard: 'Àm a’ Chamais')),
     'Guyana': MetaZone('Guyana', long: TimeZoneName(standard: 'Àm Guidheàna')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'Àm nan Eileanan Hawai’i ’s Aleutach',
-            standard: 'Bun-àm nan Eileanan Hawai’i ’s Aleutach',
-            daylight: 'Tìde Samhraidh nan Eileanan Hawai’i ’s Aleutach'),
-        short:
-            TimeZoneName(generic: 'HAT', standard: 'HAST', daylight: 'HADT')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'Àm Hong Kong',
-            standard: 'Bun-àm Hong Kong',
-            daylight: 'Tìde samhraidh Hong Kong')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'Àm Hovd',
-            standard: 'Bun-àm Hovd',
-            daylight: 'Tìde samhraidh Hovd')),
-    'India':
-        MetaZone('India', long: TimeZoneName(standard: 'Àm nan Innseachan')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'Àm Cuan nan Innseachan')),
-    'Indochina': MetaZone('Indochina',
-        long: TimeZoneName(standard: 'Àm Sìn-Innseanach')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'Àm Meadhan nan Innd-Innse')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'Àm nan Innd-Innse an Ear')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'Àm nan Innd-Innse an Iar')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'Àm Ioràin',
-            standard: 'Bun-àm Ioràin',
-            daylight: 'Tìde samhraidh Ioràin')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'Àm Irkutsk',
-            standard: 'Bun-àm Irkutsk',
-            daylight: 'Tìde Samhraidh Irkutsk')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'Àm Iosrael',
-            standard: 'Bun-àm Iosrael',
-            daylight: 'Tìde samhraidh Iosrael')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'Àm na Seapaine',
-            standard: 'Bun-àm na Seapaine',
-            daylight: 'Tìde samhraidh na Seapaine')),
-    'Kamchatka': MetaZone('Kamchatka',
-        long: TimeZoneName(
-            generic: 'Àm Petropavlovsk-Kamchatsky',
-            standard: 'Bun-àm Petropavlovsk-Kamchatsky',
-            daylight: 'Tìde samhraidh Petropavlovsk-Kamchatsky')),
-    'Kazakhstan':
-        MetaZone('Kazakhstan', long: TimeZoneName(standard: 'Àm Casachstàin')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'Àm Casachstàin an Ear')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'Àm Casachstàin an Iar')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'Àm Choirèa',
-            standard: 'Bun-àm Choirèa',
-            daylight: 'Tìde samhraidh Choirèa')),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Àm nan Eileanan Hawai’i ’s Aleutach',
+        standard: 'Bun-àm nan Eileanan Hawai’i ’s Aleutach',
+        daylight: 'Tìde Samhraidh nan Eileanan Hawai’i ’s Aleutach',
+      ),
+      short: TimeZoneName(generic: 'HAT', standard: 'HAST', daylight: 'HADT'),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Àm Hong Kong',
+        standard: 'Bun-àm Hong Kong',
+        daylight: 'Tìde samhraidh Hong Kong',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'Àm Hovd',
+        standard: 'Bun-àm Hovd',
+        daylight: 'Tìde samhraidh Hovd',
+      ),
+    ),
+    'India': MetaZone(
+      'India',
+      long: TimeZoneName(standard: 'Àm nan Innseachan'),
+    ),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'Àm Cuan nan Innseachan'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'Àm Sìn-Innseanach'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'Àm Meadhan nan Innd-Innse'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'Àm nan Innd-Innse an Ear'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'Àm nan Innd-Innse an Iar'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'Àm Ioràin',
+        standard: 'Bun-àm Ioràin',
+        daylight: 'Tìde samhraidh Ioràin',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Àm Irkutsk',
+        standard: 'Bun-àm Irkutsk',
+        daylight: 'Tìde Samhraidh Irkutsk',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'Àm Iosrael',
+        standard: 'Bun-àm Iosrael',
+        daylight: 'Tìde samhraidh Iosrael',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'Àm na Seapaine',
+        standard: 'Bun-àm na Seapaine',
+        daylight: 'Tìde samhraidh na Seapaine',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Àm Petropavlovsk-Kamchatsky',
+        standard: 'Bun-àm Petropavlovsk-Kamchatsky',
+        daylight: 'Tìde samhraidh Petropavlovsk-Kamchatsky',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'Àm Casachstàin'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'Àm Casachstàin an Ear'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'Àm Casachstàin an Iar'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'Àm Choirèa',
+        standard: 'Bun-àm Choirèa',
+        daylight: 'Tìde samhraidh Choirèa',
+      ),
+    ),
     'Kosrae': MetaZone('Kosrae', long: TimeZoneName(standard: 'Àm Kosrae')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'Àm Krasnoyarsk',
-            standard: 'Bun-àm Krasnoyarsk',
-            daylight: 'Tìde samhraidh Krasnoyarsk')),
-    'Kyrgystan':
-        MetaZone('Kyrgystan', long: TimeZoneName(standard: 'Àm Cìorgastain')),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Àm Krasnoyarsk',
+        standard: 'Bun-àm Krasnoyarsk',
+        daylight: 'Tìde samhraidh Krasnoyarsk',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'Àm Cìorgastain'),
+    ),
     'Lanka': MetaZone('Lanka', long: TimeZoneName(standard: 'Àm Lanca')),
-    'Line_Islands': MetaZone('Line_Islands',
-        long: TimeZoneName(standard: 'Àm Eileanan Teraina')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'Àm Lord Howe',
-            standard: 'Bun-àm Lord Howe',
-            daylight: 'Tìde samhraidh Lord Howe')),
-    'Macau': MetaZone('Macau',
-        long: TimeZoneName(
-            generic: 'Àm Macàthu',
-            standard: 'Bun-àm Macàthu',
-            daylight: 'Tìde samhraidh Macàthu')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'Àm Magadan',
-            standard: 'Bun-àm Magadan',
-            daylight: 'Tìde Samhraidh Magadan')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'Àm Mhalaidhsea')),
-    'Maldives': MetaZone('Maldives',
-        long: TimeZoneName(standard: 'Àm nan Eileanan Mhaladaibh')),
-    'Marquesas': MetaZone('Marquesas',
-        long: TimeZoneName(standard: 'Àm Eileanan a’ Mharcais')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'Àm Eileanan Mharshall')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'Àm nan Eileanan Mhoiriseas',
-            standard: 'Bun-àm nan Eileanan Mhoiriseas',
-            daylight: 'Tìde samhraidh nan Eileanan Mhoiriseas')),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'Àm Eileanan Teraina'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Àm Lord Howe',
+        standard: 'Bun-àm Lord Howe',
+        daylight: 'Tìde samhraidh Lord Howe',
+      ),
+    ),
+    'Macau': MetaZone(
+      'Macau',
+      long: TimeZoneName(
+        generic: 'Àm Macàthu',
+        standard: 'Bun-àm Macàthu',
+        daylight: 'Tìde samhraidh Macàthu',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'Àm Magadan',
+        standard: 'Bun-àm Magadan',
+        daylight: 'Tìde Samhraidh Magadan',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'Àm Mhalaidhsea'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'Àm nan Eileanan Mhaladaibh'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'Àm Eileanan a’ Mharcais'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'Àm Eileanan Mharshall'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'Àm nan Eileanan Mhoiriseas',
+        standard: 'Bun-àm nan Eileanan Mhoiriseas',
+        daylight: 'Tìde samhraidh nan Eileanan Mhoiriseas',
+      ),
+    ),
     'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: 'Àm Mhawson')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'Àm a’ Chuain Shèimh Mheagsago',
-            standard: 'Bun-àm a’ Chuain Shèimh Mheagsago',
-            daylight: 'Tìde samhraidh a’ Chuain Shèimh Mheagsago')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'Àm Ulan Bator',
-            standard: 'Bun-àm Ulan Bator',
-            daylight: 'Tìde samhraidh Ulan Bator')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'Àm Mhosgo',
-            standard: 'Bun-àm Mhosgo',
-            daylight: 'Tìde samhraidh Mhosgo')),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Àm a’ Chuain Shèimh Mheagsago',
+        standard: 'Bun-àm a’ Chuain Shèimh Mheagsago',
+        daylight: 'Tìde samhraidh a’ Chuain Shèimh Mheagsago',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'Àm Ulan Bator',
+        standard: 'Bun-àm Ulan Bator',
+        daylight: 'Tìde samhraidh Ulan Bator',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'Àm Mhosgo',
+        standard: 'Bun-àm Mhosgo',
+        daylight: 'Tìde samhraidh Mhosgo',
+      ),
+    ),
     'Myanmar': MetaZone('Myanmar', long: TimeZoneName(standard: 'Àm Miànmar')),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'Àm Nabhru')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'Àm Neapàl')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'Àm Chailleann Nuaidh',
-            standard: 'Bun-àm Chailleann Nuaidh',
-            daylight: 'Tìde samhraidh Chailleann Nuaidh')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'Àm Shealainn Nuaidh',
-            standard: 'Bun-àm Shealainn Nuaidh',
-            daylight: 'Tìde samhraidh Shealainn Nuaidh')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'Àm Talamh an Èisg',
-            standard: 'Bun-àm Talamh an Èisg',
-            daylight: 'Tìde samhraidh Talamh an Èisg')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Àm Chailleann Nuaidh',
+        standard: 'Bun-àm Chailleann Nuaidh',
+        daylight: 'Tìde samhraidh Chailleann Nuaidh',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Àm Shealainn Nuaidh',
+        standard: 'Bun-àm Shealainn Nuaidh',
+        daylight: 'Tìde samhraidh Shealainn Nuaidh',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Àm Talamh an Èisg',
+        standard: 'Bun-àm Talamh an Èisg',
+        daylight: 'Tìde samhraidh Talamh an Èisg',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'Àm Niue')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'Àm Eilein Norfolk',
-            standard: 'Bun-àm Eilein Norfolk',
-            daylight: 'Tìde samhraidh Eilein Norfolk')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'Àm Fernando de Noronha',
-            standard: 'Bun-àm Fernando de Noronha',
-            daylight: 'Tìde Samhraidh Fernando de Noronha')),
-    'North_Mariana': MetaZone('North_Mariana',
-        long: TimeZoneName(standard: 'Àm nan Eileanan Mairianach a Tuath')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'Àm Novosibirsk',
-            standard: 'Bun-àm Novosibirsk',
-            daylight: 'Tìde samhraidh Novosibirsk')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'Àm Omsk',
-            standard: 'Bun-àm Omsk',
-            daylight: 'Tìde samhraidh Omsk')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'Àm Pagastàin',
-            standard: 'Bun-àm Pagastàin',
-            daylight: 'Tìde samhraidh Pagastàin')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'Àm Eilein Norfolk',
+        standard: 'Bun-àm Eilein Norfolk',
+        daylight: 'Tìde samhraidh Eilein Norfolk',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'Àm Fernando de Noronha',
+        standard: 'Bun-àm Fernando de Noronha',
+        daylight: 'Tìde Samhraidh Fernando de Noronha',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      'North_Mariana',
+      long: TimeZoneName(standard: 'Àm nan Eileanan Mairianach a Tuath'),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Àm Novosibirsk',
+        standard: 'Bun-àm Novosibirsk',
+        daylight: 'Tìde samhraidh Novosibirsk',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'Àm Omsk',
+        standard: 'Bun-àm Omsk',
+        daylight: 'Tìde samhraidh Omsk',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'Àm Pagastàin',
+        standard: 'Bun-àm Pagastàin',
+        daylight: 'Tìde samhraidh Pagastàin',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'Àm Palabh')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'Àm Gini Nuaidh Paputhaiche')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'Àm Paraguaidh',
-            standard: 'Bun-àm Paraguaidh',
-            daylight: 'Tìde samhraidh Paraguaidh')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'Àm Pearù',
-            standard: 'Bun-àm Pearù',
-            daylight: 'Tìde samhraidh Pearù')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'Àm nan Eilean Filipineach',
-            standard: 'Bun-àm nan Eilean Filipineach',
-            daylight: 'Tìde samhraidh nan Eilean Filipineach')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'Àm Eileanan Phoenix')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'Àm Saint Pierre agus Miquelon',
-            standard: 'Bun-àm Saint Pierre agus Miquelon',
-            daylight: 'Tìde Samhraidh Saint Pierre agus Miquelon')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'Àm Peit a’ Chàirn')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'Àm Gini Nuaidh Paputhaiche'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'Àm Paraguaidh',
+        standard: 'Bun-àm Paraguaidh',
+        daylight: 'Tìde samhraidh Paraguaidh',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'Àm Pearù',
+        standard: 'Bun-àm Pearù',
+        daylight: 'Tìde samhraidh Pearù',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'Àm nan Eilean Filipineach',
+        standard: 'Bun-àm nan Eilean Filipineach',
+        daylight: 'Tìde samhraidh nan Eilean Filipineach',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'Àm Eileanan Phoenix'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Àm Saint Pierre agus Miquelon',
+        standard: 'Bun-àm Saint Pierre agus Miquelon',
+        daylight: 'Tìde Samhraidh Saint Pierre agus Miquelon',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'Àm Peit a’ Chàirn'),
+    ),
     'Ponape': MetaZone('Ponape', long: TimeZoneName(standard: 'Àm Pohnpei')),
-    'Pyongyang':
-        MetaZone('Pyongyang', long: TimeZoneName(standard: 'Àm Pyeongyang')),
-    'Qyzylorda': MetaZone('Qyzylorda',
-        long: TimeZoneName(
-            generic: 'Àm Qızılorda',
-            standard: 'Bun-àm Qızılorda',
-            daylight: 'Tìde samhraidh Qızılorda')),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'Àm Pyeongyang'),
+    ),
+    'Qyzylorda': MetaZone(
+      'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Àm Qızılorda',
+        standard: 'Bun-àm Qızılorda',
+        daylight: 'Tìde samhraidh Qızılorda',
+      ),
+    ),
     'Reunion': MetaZone('Reunion', long: TimeZoneName(standard: 'Àm Reunion')),
     'Rothera': MetaZone('Rothera', long: TimeZoneName(standard: 'Àm Rothera')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'Àm Sakhalin',
-            standard: 'Bun-àm Sakhalin',
-            daylight: 'Tìde samhraidh Sakhalin')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: 'Àm Samara',
-            standard: 'Bun-àm Samara',
-            daylight: 'Tìde samhraidh Samara')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'Àm Samotha',
-            standard: 'Bun-àm Samotha',
-            daylight: 'Tìde samhraidh Samotha')),
-    'Seychelles': MetaZone('Seychelles',
-        long: TimeZoneName(standard: 'Àm nan Eileanan Sheiseall')),
-    'Singapore':
-        MetaZone('Singapore', long: TimeZoneName(standard: 'Àm Singeapòr')),
-    'Solomon': MetaZone('Solomon',
-        long: TimeZoneName(standard: 'Àm Eileanan Sholaimh')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'Àm Seòrsea a Deas')),
-    'Suriname':
-        MetaZone('Suriname', long: TimeZoneName(standard: 'Àm Suranaim')),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Àm Sakhalin',
+        standard: 'Bun-àm Sakhalin',
+        daylight: 'Tìde samhraidh Sakhalin',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: 'Àm Samara',
+        standard: 'Bun-àm Samara',
+        daylight: 'Tìde samhraidh Samara',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'Àm Samotha',
+        standard: 'Bun-àm Samotha',
+        daylight: 'Tìde samhraidh Samotha',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'Àm nan Eileanan Sheiseall'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'Àm Singeapòr'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'Àm Eileanan Sholaimh'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'Àm Seòrsea a Deas'),
+    ),
+    'Suriname': MetaZone(
+      'Suriname',
+      long: TimeZoneName(standard: 'Àm Suranaim'),
+    ),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'Àm Shyowa')),
     'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'Àm Tahiti')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'Àm Taipei',
-            standard: 'Bun-àm Taipei',
-            daylight: 'Tìde samhraidh Taipei')),
-    'Tajikistan': MetaZone('Tajikistan',
-        long: TimeZoneName(standard: 'Àm Taidigeastàin')),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'Àm Taipei',
+        standard: 'Bun-àm Taipei',
+        daylight: 'Tìde samhraidh Taipei',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'Àm Taidigeastàin'),
+    ),
     'Tokelau': MetaZone('Tokelau', long: TimeZoneName(standard: 'Àm Tokelau')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'Àm Tonga',
-            standard: 'Bun-àm Tonga',
-            daylight: 'Tìde samhraidh Tonga')),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'Àm Tonga',
+        standard: 'Bun-àm Tonga',
+        daylight: 'Tìde samhraidh Tonga',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'Àm Chuuk')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'Àm Turcmanastàin',
-            standard: 'Bun-àm Turcmanastàin',
-            daylight: 'Tìde samhraidh Turcmanastàin')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Àm Turcmanastàin',
+        standard: 'Bun-àm Turcmanastàin',
+        daylight: 'Tìde samhraidh Turcmanastàin',
+      ),
+    ),
     'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: 'Àm Tubhalu')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'Àm Uruguaidh',
-            standard: 'Bun-àm Uruguaidh',
-            daylight: 'Tìde samhraidh Uruguaidh')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'Àm Usbagastàn',
-            standard: 'Bun-àm Usbagastàn',
-            daylight: 'Tìde samhraidh Usbagastàn')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'Àm Vanuatu',
-            standard: 'Bun-àm Vanuatu',
-            daylight: 'Tìde samhraidh Vanuatu')),
-    'Venezuela': MetaZone('Venezuela',
-        long: TimeZoneName(standard: 'Àm na Bheiniseala')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'Àm Vladivostok',
-            standard: 'Bun-àm Vladivostok',
-            daylight: 'Tìde Samhraidh Vladivostok')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'Àm Volgograd',
-            standard: 'Bun-àm Volgograd',
-            daylight: 'Tìde samhraidh Volgograd')),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'Àm Uruguaidh',
+        standard: 'Bun-àm Uruguaidh',
+        daylight: 'Tìde samhraidh Uruguaidh',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Àm Usbagastàn',
+        standard: 'Bun-àm Usbagastàn',
+        daylight: 'Tìde samhraidh Usbagastàn',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Àm Vanuatu',
+        standard: 'Bun-àm Vanuatu',
+        daylight: 'Tìde samhraidh Vanuatu',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'Àm na Bheiniseala'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Àm Vladivostok',
+        standard: 'Bun-àm Vladivostok',
+        daylight: 'Tìde Samhraidh Vladivostok',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'Àm Volgograd',
+        standard: 'Bun-àm Volgograd',
+        daylight: 'Tìde samhraidh Volgograd',
+      ),
+    ),
     'Vostok': MetaZone('Vostok', long: TimeZoneName(standard: 'Àm Vostok')),
     'Wake': MetaZone('Wake', long: TimeZoneName(standard: 'Àm Eilean Wake')),
-    'Wallis': MetaZone('Wallis',
-        long: TimeZoneName(standard: 'Àm Uallas agus Futuna')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'Àm Yakutsk',
-            standard: 'Bun-àm Yakutsk',
-            daylight: 'Tìde samhraidh Yakutsk')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'Àm Yekaterinburg',
-            standard: 'Bun-àm Yekaterinburg',
-            daylight: 'Tìde samhraidh Yekaterinburg')),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'Àm Uallas agus Futuna'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Àm Yakutsk',
+        standard: 'Bun-àm Yakutsk',
+        daylight: 'Tìde samhraidh Yakutsk',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Àm Yekaterinburg',
+        standard: 'Bun-àm Yekaterinburg',
+        daylight: 'Tìde samhraidh Yekaterinburg',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'Àm Yukon')),
   };
 }

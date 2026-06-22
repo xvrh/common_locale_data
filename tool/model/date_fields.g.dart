@@ -7,19 +7,21 @@ part of 'date_fields.dart';
 // **************************************************************************
 
 DateField _$DateFieldFromJson(Map<String, dynamic> json) => DateField(
-      json['displayName'] as String?,
-      json['relative-type--1'] as String?,
-      json['relative-type-0'] as String?,
-      json['relative-type-1'] as String?,
-      json['relativeTime-type-future'] == null
-          ? null
-          : RelativeTimePattern.fromJson(
-              json['relativeTime-type-future'] as Map<String, dynamic>),
-      json['relativeTime-type-past'] == null
-          ? null
-          : RelativeTimePattern.fromJson(
-              json['relativeTime-type-past'] as Map<String, dynamic>),
-    );
+  json['displayName'] as String?,
+  json['relative-type--1'] as String?,
+  json['relative-type-0'] as String?,
+  json['relative-type-1'] as String?,
+  json['relativeTime-type-future'] == null
+      ? null
+      : RelativeTimePattern.fromJson(
+          json['relativeTime-type-future'] as Map<String, dynamic>,
+        ),
+  json['relativeTime-type-past'] == null
+      ? null
+      : RelativeTimePattern.fromJson(
+          json['relativeTime-type-past'] as Map<String, dynamic>,
+        ),
+);
 
 RelativeTimePattern _$RelativeTimePatternFromJson(Map<String, dynamic> json) =>
     RelativeTimePattern(

@@ -13,11 +13,7 @@ void main() {
   print(cld.date.day.future.short.format(2));
 }
 
-final expected = [
-  'lundi dernier',
-  'dans {0} lundis',
-  'dans {0} lundi',
-];
+final expected = ['lundi dernier', 'dans {0} lundis', 'dans {0} lundi'];
 
 final notExpected = [
   'ce lundi',

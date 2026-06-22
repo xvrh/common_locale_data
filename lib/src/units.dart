@@ -59,8 +59,11 @@ class UnitCountPattern {
     this.many,
   });
 
-  String format(num howMany,
-      {NumberFormat? numberFormat, String? placeholder}) {
+  String format(
+    num howMany, {
+    NumberFormat? numberFormat,
+    String? placeholder,
+  }) {
     return call(howMany, numberFormat: numberFormat, placeholder: placeholder);
   }
 
@@ -101,8 +104,11 @@ class UnitPrefix {
   /// Localized narrow unit information.
   final UnitPrefixPattern narrow;
 
-  const UnitPrefix(
-      {required this.long, required this.short, required this.narrow});
+  const UnitPrefix({
+    required this.long,
+    required this.short,
+    required this.narrow,
+  });
 
   String call(String value) => long.call(value);
 
@@ -143,8 +149,11 @@ class CompoundUnit {
   /// Localized narrow unit information.
   final CompoundUnitPattern narrow;
 
-  const CompoundUnit(
-      {required this.long, required this.short, required this.narrow});
+  const CompoundUnit({
+    required this.long,
+    required this.short,
+    required this.narrow,
+  });
 
   String call(String a, String b) => long.call(a, b);
 

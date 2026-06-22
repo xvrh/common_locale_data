@@ -65,5201 +65,4267 @@ class UnitsCa extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('deci{0}'),
-        short: UnitPrefixPattern('d{0}'),
-        narrow: UnitPrefixPattern('d{0}'),
-      );
+    long: UnitPrefixPattern('deci{0}'),
+    short: UnitPrefixPattern('d{0}'),
+    narrow: UnitPrefixPattern('d{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('centi{0}'),
-        short: UnitPrefixPattern('c{0}'),
-        narrow: UnitPrefixPattern('c{0}'),
-      );
+    long: UnitPrefixPattern('centi{0}'),
+    short: UnitPrefixPattern('c{0}'),
+    narrow: UnitPrefixPattern('c{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('mil·li{0}'),
-        short: UnitPrefixPattern('m{0}'),
-        narrow: UnitPrefixPattern('m{0}'),
-      );
+    long: UnitPrefixPattern('mil·li{0}'),
+    short: UnitPrefixPattern('m{0}'),
+    narrow: UnitPrefixPattern('m{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('micro{0}'),
-        short: UnitPrefixPattern('μ{0}'),
-        narrow: UnitPrefixPattern('μ{0}'),
-      );
+    long: UnitPrefixPattern('micro{0}'),
+    short: UnitPrefixPattern('μ{0}'),
+    narrow: UnitPrefixPattern('μ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('nano{0}'),
-        short: UnitPrefixPattern('n{0}'),
-        narrow: UnitPrefixPattern('n{0}'),
-      );
+    long: UnitPrefixPattern('nano{0}'),
+    short: UnitPrefixPattern('n{0}'),
+    narrow: UnitPrefixPattern('n{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('pico{0}'),
-        short: UnitPrefixPattern('p{0}'),
-        narrow: UnitPrefixPattern('p{0}'),
-      );
+    long: UnitPrefixPattern('pico{0}'),
+    short: UnitPrefixPattern('p{0}'),
+    narrow: UnitPrefixPattern('p{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('femto{0}'),
-        short: UnitPrefixPattern('f{0}'),
-        narrow: UnitPrefixPattern('f{0}'),
-      );
+    long: UnitPrefixPattern('femto{0}'),
+    short: UnitPrefixPattern('f{0}'),
+    narrow: UnitPrefixPattern('f{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('atto{0}'),
-        short: UnitPrefixPattern('a{0}'),
-        narrow: UnitPrefixPattern('a{0}'),
-      );
+    long: UnitPrefixPattern('atto{0}'),
+    short: UnitPrefixPattern('a{0}'),
+    narrow: UnitPrefixPattern('a{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('zepto{0}'),
-        short: UnitPrefixPattern('z{0}'),
-        narrow: UnitPrefixPattern('z{0}'),
-      );
+    long: UnitPrefixPattern('zepto{0}'),
+    short: UnitPrefixPattern('z{0}'),
+    narrow: UnitPrefixPattern('z{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('yocto{0}'),
-        short: UnitPrefixPattern('y{0}'),
-        narrow: UnitPrefixPattern('y{0}'),
-      );
+    long: UnitPrefixPattern('yocto{0}'),
+    short: UnitPrefixPattern('y{0}'),
+    narrow: UnitPrefixPattern('y{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('ronto{0}'),
-        short: UnitPrefixPattern('r{0}'),
-        narrow: UnitPrefixPattern('r{0}'),
-      );
+    long: UnitPrefixPattern('ronto{0}'),
+    short: UnitPrefixPattern('r{0}'),
+    narrow: UnitPrefixPattern('r{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('quecto{0}'),
-        short: UnitPrefixPattern('q{0}'),
-        narrow: UnitPrefixPattern('q{0}'),
-      );
+    long: UnitPrefixPattern('quecto{0}'),
+    short: UnitPrefixPattern('q{0}'),
+    narrow: UnitPrefixPattern('q{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('deca{0}'),
-        short: UnitPrefixPattern('da{0}'),
-        narrow: UnitPrefixPattern('da{0}'),
-      );
+    long: UnitPrefixPattern('deca{0}'),
+    short: UnitPrefixPattern('da{0}'),
+    narrow: UnitPrefixPattern('da{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('hecto{0}'),
-        short: UnitPrefixPattern('h{0}'),
-        narrow: UnitPrefixPattern('h{0}'),
-      );
+    long: UnitPrefixPattern('hecto{0}'),
+    short: UnitPrefixPattern('h{0}'),
+    narrow: UnitPrefixPattern('h{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('quilo{0}'),
-        short: UnitPrefixPattern('k{0}'),
-        narrow: UnitPrefixPattern('k{0}'),
-      );
+    long: UnitPrefixPattern('quilo{0}'),
+    short: UnitPrefixPattern('k{0}'),
+    narrow: UnitPrefixPattern('k{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('mega{0}'),
-        short: UnitPrefixPattern('M{0}'),
-        narrow: UnitPrefixPattern('M{0}'),
-      );
+    long: UnitPrefixPattern('mega{0}'),
+    short: UnitPrefixPattern('M{0}'),
+    narrow: UnitPrefixPattern('M{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('giga{0}'),
-        short: UnitPrefixPattern('G{0}'),
-        narrow: UnitPrefixPattern('G{0}'),
-      );
+    long: UnitPrefixPattern('giga{0}'),
+    short: UnitPrefixPattern('G{0}'),
+    narrow: UnitPrefixPattern('G{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('tera{0}'),
-        short: UnitPrefixPattern('T{0}'),
-        narrow: UnitPrefixPattern('T{0}'),
-      );
+    long: UnitPrefixPattern('tera{0}'),
+    short: UnitPrefixPattern('T{0}'),
+    narrow: UnitPrefixPattern('T{0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('peta{0}'),
-        short: UnitPrefixPattern('P{0}'),
-        narrow: UnitPrefixPattern('P{0}'),
-      );
+    long: UnitPrefixPattern('peta{0}'),
+    short: UnitPrefixPattern('P{0}'),
+    narrow: UnitPrefixPattern('P{0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('exa{0}'),
-        short: UnitPrefixPattern('E{0}'),
-        narrow: UnitPrefixPattern('E{0}'),
-      );
+    long: UnitPrefixPattern('exa{0}'),
+    short: UnitPrefixPattern('E{0}'),
+    narrow: UnitPrefixPattern('E{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('zetta{0}'),
-        short: UnitPrefixPattern('Z{0}'),
-        narrow: UnitPrefixPattern('Z{0}'),
-      );
+    long: UnitPrefixPattern('zetta{0}'),
+    short: UnitPrefixPattern('Z{0}'),
+    narrow: UnitPrefixPattern('Z{0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('yotta{0}'),
-        short: UnitPrefixPattern('Y{0}'),
-        narrow: UnitPrefixPattern('Y{0}'),
-      );
+    long: UnitPrefixPattern('yotta{0}'),
+    short: UnitPrefixPattern('Y{0}'),
+    narrow: UnitPrefixPattern('Y{0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('ronna{0}'),
-        short: UnitPrefixPattern('R{0}'),
-        narrow: UnitPrefixPattern('R{0}'),
-      );
+    long: UnitPrefixPattern('ronna{0}'),
+    short: UnitPrefixPattern('R{0}'),
+    narrow: UnitPrefixPattern('R{0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('quetta{0}'),
-        short: UnitPrefixPattern('Q{0}'),
-        narrow: UnitPrefixPattern('Q{0}'),
-      );
+    long: UnitPrefixPattern('quetta{0}'),
+    short: UnitPrefixPattern('Q{0}'),
+    narrow: UnitPrefixPattern('Q{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('kibi{0}'),
-        short: UnitPrefixPattern('Ki{0}'),
-        narrow: UnitPrefixPattern('Ki{0}'),
-      );
+    long: UnitPrefixPattern('kibi{0}'),
+    short: UnitPrefixPattern('Ki{0}'),
+    narrow: UnitPrefixPattern('Ki{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('mebi{0}'),
-        short: UnitPrefixPattern('Mi{0}'),
-        narrow: UnitPrefixPattern('Mi{0}'),
-      );
+    long: UnitPrefixPattern('mebi{0}'),
+    short: UnitPrefixPattern('Mi{0}'),
+    narrow: UnitPrefixPattern('Mi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('gibi{0}'),
-        short: UnitPrefixPattern('Gi{0}'),
-        narrow: UnitPrefixPattern('Gi{0}'),
-      );
+    long: UnitPrefixPattern('gibi{0}'),
+    short: UnitPrefixPattern('Gi{0}'),
+    narrow: UnitPrefixPattern('Gi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('tebi{0}'),
-        short: UnitPrefixPattern('Ti{0}'),
-        narrow: UnitPrefixPattern('Ti{0}'),
-      );
+    long: UnitPrefixPattern('tebi{0}'),
+    short: UnitPrefixPattern('Ti{0}'),
+    narrow: UnitPrefixPattern('Ti{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('pebi{0}'),
-        short: UnitPrefixPattern('Pi{0}'),
-        narrow: UnitPrefixPattern('Pi{0}'),
-      );
+    long: UnitPrefixPattern('pebi{0}'),
+    short: UnitPrefixPattern('Pi{0}'),
+    narrow: UnitPrefixPattern('Pi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('exbi{0}'),
-        short: UnitPrefixPattern('Ei{0}'),
-        narrow: UnitPrefixPattern('Ei{0}'),
-      );
+    long: UnitPrefixPattern('exbi{0}'),
+    short: UnitPrefixPattern('Ei{0}'),
+    narrow: UnitPrefixPattern('Ei{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('zebi{0}'),
-        short: UnitPrefixPattern('Zi{0}'),
-        narrow: UnitPrefixPattern('Zi{0}'),
-      );
+    long: UnitPrefixPattern('zebi{0}'),
+    short: UnitPrefixPattern('Zi{0}'),
+    narrow: UnitPrefixPattern('Zi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('yobi{0}'),
-        short: UnitPrefixPattern('Yi{0}'),
-        narrow: UnitPrefixPattern('Yi{0}'),
-      );
+    long: UnitPrefixPattern('yobi{0}'),
+    short: UnitPrefixPattern('Yi{0}'),
+    narrow: UnitPrefixPattern('Yi{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('{0} per {1}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('{0} per {1}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'força G',
-          one: '{0} força G',
-          other: '{0} força G',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'G',
-          one: '{0} força G',
-          other: '{0} G',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'G',
-          one: '{0} força G',
-          other: '{0} G',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'força G',
+      one: '{0} força G',
+      other: '{0} força G',
+    ),
+    short: UnitCountPattern(_locale, 'G', one: '{0} força G', other: '{0} G'),
+    narrow: UnitCountPattern(_locale, 'G', one: '{0} força G', other: '{0} G'),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metres per segon al quadrat',
-          one: '{0} metre per segon al quadrat',
-          other: '{0} metres per segon al quadrat',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm/s²',
-          one: '{0} metre per segon al quadrat',
-          other: '{0} m/s²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s²',
-          one: '{0} metre per segon al quadrat',
-          other: '{0} m/s²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metres per segon al quadrat',
+      one: '{0} metre per segon al quadrat',
+      other: '{0} metres per segon al quadrat',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm/s²',
+      one: '{0} metre per segon al quadrat',
+      other: '{0} m/s²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s²',
+      one: '{0} metre per segon al quadrat',
+      other: '{0} m/s²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'revolució',
-          one: '{0} revolució',
-          other: '{0} revolucions',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'r',
-          one: '{0} r',
-          other: '{0} r',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'r',
-          one: '{0} r',
-          other: '{0} r',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'revolució',
+      one: '{0} revolució',
+      other: '{0} revolucions',
+    ),
+    short: UnitCountPattern(_locale, 'r', one: '{0} r', other: '{0} r'),
+    narrow: UnitCountPattern(_locale, 'r', one: '{0} r', other: '{0} r'),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'radiants',
-          one: '{0} radiant',
-          other: '{0} radiants',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'radiants',
-          one: '{0} radiant',
-          other: '{0} rad',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'rad',
-          one: '{0} radiant',
-          other: '{0} rad',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'radiants',
+      one: '{0} radiant',
+      other: '{0} radiants',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'radiants',
+      one: '{0} radiant',
+      other: '{0} rad',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'rad',
+      one: '{0} radiant',
+      other: '{0} rad',
+    ),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'graus',
-          one: '{0} grau',
-          other: '{0} graus',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'graus',
-          one: '{0} grau',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} grau',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'graus',
+      one: '{0} grau',
+      other: '{0} graus',
+    ),
+    short: UnitCountPattern(_locale, 'graus', one: '{0} grau', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0} grau', other: '{0}°'),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'minuts d’arc',
-          one: '{0} minut d’arc',
-          other: '{0} minuts d’arc',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'arcmin',
-          one: '{0} arcmin',
-          other: '{0} arcmin',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'arcmin',
-          one: '{0}′',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'minuts d’arc',
+      one: '{0} minut d’arc',
+      other: '{0} minuts d’arc',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'arcmin',
+      one: '{0} arcmin',
+      other: '{0} arcmin',
+    ),
+    narrow: UnitCountPattern(_locale, 'arcmin', one: '{0}′', other: '{0}′'),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'segons d’arc',
-          one: '{0} segon d’arc',
-          other: '{0} segons d’arc',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'arcsec',
-          one: '{0} arcsec',
-          other: '{0} arcsec',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'arcsec',
-          one: '{0}″',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'segons d’arc',
+      one: '{0} segon d’arc',
+      other: '{0} segons d’arc',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'arcsec',
+      one: '{0} arcsec',
+      other: '{0} arcsec',
+    ),
+    narrow: UnitCountPattern(_locale, 'arcsec', one: '{0}″', other: '{0}″'),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilòmetres quadrats',
-          one: '{0} quilòmetre quadrat',
-          other: '{0} quilòmetres quadrats',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km²',
-          one: '{0} quilòmetre quadrat',
-          other: '{0} km²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km²',
-          one: '{0} quilòmetre quadrat',
-          other: '{0} km²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilòmetres quadrats',
+      one: '{0} quilòmetre quadrat',
+      other: '{0} quilòmetres quadrats',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km²',
+      one: '{0} quilòmetre quadrat',
+      other: '{0} km²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km²',
+      one: '{0} quilòmetre quadrat',
+      other: '{0} km²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hectàrees',
-          one: '{0} hectàrea',
-          other: '{0} hectàrees',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hectàrees',
-          one: '{0} hectàrea',
-          other: '{0} ha',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hectàrea',
-          one: '{0} hectàrea',
-          other: '{0} ha',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hectàrees',
+      one: '{0} hectàrea',
+      other: '{0} hectàrees',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hectàrees',
+      one: '{0} hectàrea',
+      other: '{0} ha',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hectàrea',
+      one: '{0} hectàrea',
+      other: '{0} ha',
+    ),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metres quadrats',
-          one: '{0} metre quadrat',
-          other: '{0} metres quadrats',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm²',
-          one: '{0} metre quadrat',
-          other: '{0} m²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'metres²',
-          one: '{0} metre quadrat',
-          other: '{0} m²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metres quadrats',
+      one: '{0} metre quadrat',
+      other: '{0} metres quadrats',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm²',
+      one: '{0} metre quadrat',
+      other: '{0} m²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'metres²',
+      one: '{0} metre quadrat',
+      other: '{0} m²',
+    ),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'centímetres quadrats',
-          one: '{0} centímetre quadrat',
-          other: '{0} centímetres quadrats',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} centímetre quadrat',
-          other: '{0} cm²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} centímetre quadrat',
-          other: '{0} cm²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'centímetres quadrats',
+      one: '{0} centímetre quadrat',
+      other: '{0} centímetres quadrats',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} centímetre quadrat',
+      other: '{0} cm²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} centímetre quadrat',
+      other: '{0} cm²',
+    ),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles quadrades',
-          one: '{0} milla quadrada',
-          other: '{0} milles quadrades',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi²',
-          one: '{0} milla quadrada',
-          other: '{0} mi²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi²',
-          one: '{0} milla quadrada',
-          other: '{0} mi²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles quadrades',
+      one: '{0} milla quadrada',
+      other: '{0} milles quadrades',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi²',
+      one: '{0} milla quadrada',
+      other: '{0} mi²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi²',
+      one: '{0} milla quadrada',
+      other: '{0} mi²',
+    ),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'acres',
-          one: '{0} acre',
-          other: '{0} acres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'acres',
-          one: '{0} acre',
-          other: '{0} ac',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'acre',
-          one: '{0} acre',
-          other: '{0} ac',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'acres',
+      one: '{0} acre',
+      other: '{0} acres',
+    ),
+    short: UnitCountPattern(_locale, 'acres', one: '{0} acre', other: '{0} ac'),
+    narrow: UnitCountPattern(_locale, 'acre', one: '{0} acre', other: '{0} ac'),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'iardes quadrades',
-          one: '{0} iarda quadrada',
-          other: '{0} iardes quadrades',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'yd²',
-          one: '{0} iarda quadrada',
-          other: '{0} yd²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd²',
-          one: '{0} iarda quadrada',
-          other: '{0} yd²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'iardes quadrades',
+      one: '{0} iarda quadrada',
+      other: '{0} iardes quadrades',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'yd²',
+      one: '{0} iarda quadrada',
+      other: '{0} yd²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd²',
+      one: '{0} iarda quadrada',
+      other: '{0} yd²',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'peus quadrats',
-          one: '{0} peu quadrat',
-          other: '{0} peus quadrats',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ft²',
-          one: '{0} peu quadrat',
-          other: '{0} ft²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft²',
-          one: '{0} peu quadrat',
-          other: '{0} ft²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'peus quadrats',
+      one: '{0} peu quadrat',
+      other: '{0} peus quadrats',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ft²',
+      one: '{0} peu quadrat',
+      other: '{0} ft²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft²',
+      one: '{0} peu quadrat',
+      other: '{0} ft²',
+    ),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'polzades quadrades',
-          one: '{0} polzada quadrada',
-          other: '{0} polzades quadrades',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'in²',
-          one: '{0} polzada quadrada',
-          other: '{0} in²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in²',
-          one: '{0} polzada quadrada',
-          other: '{0} in²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'polzades quadrades',
+      one: '{0} polzada quadrada',
+      other: '{0} polzades quadrades',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'in²',
+      one: '{0} polzada quadrada',
+      other: '{0} in²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in²',
+      one: '{0} polzada quadrada',
+      other: '{0} in²',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dunams',
-          one: '{0} dunam',
-          other: '{0} dunams',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dunams',
-          one: '{0} dunam',
-          other: '{0} dunams',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dunam',
-          one: '{0} dunam',
-          other: '{0} dunams',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dunams',
+      one: '{0} dunam',
+      other: '{0} dunams',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dunams',
+      one: '{0} dunam',
+      other: '{0} dunams',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dunam',
+      one: '{0} dunam',
+      other: '{0} dunams',
+    ),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quirats',
-          one: '{0} quirat',
-          other: '{0} quirats',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'quirats',
-          one: '{0} ct',
-          other: '{0} ct',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'quirat',
-          one: '{0} ct',
-          other: '{0} ct',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quirats',
+      one: '{0} quirat',
+      other: '{0} quirats',
+    ),
+    short: UnitCountPattern(_locale, 'quirats', one: '{0} ct', other: '{0} ct'),
+    narrow: UnitCountPattern(_locale, 'quirat', one: '{0} ct', other: '{0} ct'),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·ligrams per decilitre',
-          one: '{0} mil·ligram per decilitre',
-          other: '{0} mil·ligrams per decilitre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} mil·ligram per decilitre',
-          other: '{0} mg/dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} mil·ligram per decilitre',
-          other: '{0} mg/dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·ligrams per decilitre',
+      one: '{0} mil·ligram per decilitre',
+      other: '{0} mil·ligrams per decilitre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} mil·ligram per decilitre',
+      other: '{0} mg/dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} mil·ligram per decilitre',
+      other: '{0} mg/dL',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·limols per litre',
-          one: '{0} mil·limol per litre',
-          other: '{0} mil·limols per litre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mil·limols/litre',
-          one: '{0} mM/l',
-          other: '{0} mM/l',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mM/l',
-          one: '{0} mM/l',
-          other: '{0} mM/l',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·limols per litre',
+      one: '{0} mil·limol per litre',
+      other: '{0} mil·limols per litre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mil·limols/litre',
+      one: '{0} mM/l',
+      other: '{0} mM/l',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mM/l',
+      one: '{0} mM/l',
+      other: '{0} mM/l',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ítem',
-          one: '{0} ítem',
-          other: '{0} ítems',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ítem',
-          one: '{0} ítem',
-          other: '{0} ítems',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ítem',
-          one: '{0} ítem',
-          other: '{0} ítems',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ítem',
+      one: '{0} ítem',
+      other: '{0} ítems',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ítem',
+      one: '{0} ítem',
+      other: '{0} ítems',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ítem',
+      one: '{0} ítem',
+      other: '{0} ítems',
+    ),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'parts per milió',
-          one: '{0} part per milió',
-          other: '{0} parts per milió',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'parts/milió',
-          one: '{0} part per milió',
-          other: '{0} ppm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} part per milió',
-          other: '{0} ppm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'parts per milió',
+      one: '{0} part per milió',
+      other: '{0} parts per milió',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'parts/milió',
+      one: '{0} part per milió',
+      other: '{0} ppm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0} part per milió',
+      other: '{0} ppm',
+    ),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'per cent',
-          one: '{0} per cent',
-          other: '{0} per cent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'per cent',
-          one: '{0} %',
-          other: '{0} %',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} %',
-          other: '{0} %',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'per cent',
+      one: '{0} per cent',
+      other: '{0} per cent',
+    ),
+    short: UnitCountPattern(_locale, 'per cent', one: '{0} %', other: '{0} %'),
+    narrow: UnitCountPattern(_locale, '%', one: '{0} %', other: '{0} %'),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'per mil',
-          one: '{0} per mil',
-          other: '{0} per mil',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'per mil',
-          one: '{0} ‰',
-          other: '{0} ‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‰',
-          one: '{0} ‰',
-          other: '{0} ‰',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'per mil',
+      one: '{0} per mil',
+      other: '{0} per mil',
+    ),
+    short: UnitCountPattern(_locale, 'per mil', one: '{0} ‰', other: '{0} ‰'),
+    narrow: UnitCountPattern(_locale, '‰', one: '{0} ‰', other: '{0} ‰'),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'per deu mil',
-          one: '{0} per deu mil',
-          other: '{0} per deu mil',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'per deu mil',
-          one: '{0} ‱',
-          other: '{0} ‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} ‱',
-          other: '{0} ‱',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'per deu mil',
+      one: '{0} per deu mil',
+      other: '{0} per deu mil',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'per deu mil',
+      one: '{0} ‱',
+      other: '{0} ‱',
+    ),
+    narrow: UnitCountPattern(_locale, '‱', one: '{0} ‱', other: '{0} ‱'),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mols',
-          one: '{0} mol',
-          other: '{0} mols',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} mol',
-          other: '{0} mol',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} mol',
-          other: '{0} mol',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'mols', one: '{0} mol', other: '{0} mols'),
+    short: UnitCountPattern(_locale, 'mol', one: '{0} mol', other: '{0} mol'),
+    narrow: UnitCountPattern(_locale, 'mol', one: '{0} mol', other: '{0} mol'),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'litres per quilòmetre',
-          one: '{0} litre per quilòmetre',
-          other: '{0} litres per quilòmetre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'l/km',
-          one: '{0} l/km',
-          other: '{0} l/km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'l/km',
-          one: '{0} l/km',
-          other: '{0} l/km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'litres per quilòmetre',
+      one: '{0} litre per quilòmetre',
+      other: '{0} litres per quilòmetre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'l/km',
+      one: '{0} l/km',
+      other: '{0} l/km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'l/km',
+      one: '{0} l/km',
+      other: '{0} l/km',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'litres per 100 quilòmetres',
-          one: '{0} litre per 100 quilòmetres',
-          other: '{0} litres per 100 quilòmetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'l/100 km',
-          one: '{0} l/100 km',
-          other: '{0} l/100 km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'l/100 km',
-          one: '{0} l/100 km',
-          other: '{0} l/100 km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'litres per 100 quilòmetres',
+      one: '{0} litre per 100 quilòmetres',
+      other: '{0} litres per 100 quilòmetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'l/100 km',
+      one: '{0} l/100 km',
+      other: '{0} l/100 km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'l/100 km',
+      one: '{0} l/100 km',
+      other: '{0} l/100 km',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles per galó',
-          one: '{0} milla per galó',
-          other: '{0} milles per galó',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi/gal',
-          one: '{0} mi/gal',
-          other: '{0} mi/gal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi/gal',
-          one: '{0} mi/gal',
-          other: '{0} mi/gal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles per galó',
+      one: '{0} milla per galó',
+      other: '{0} milles per galó',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi/gal',
+      one: '{0} mi/gal',
+      other: '{0} mi/gal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi/gal',
+      one: '{0} mi/gal',
+      other: '{0} mi/gal',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles per galó imperial',
-          one: '{0} milla per galó imperial',
-          other: '{0} milles per galó imperial',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi/gal imp.',
-          one: '{0} mi/gal imp.',
-          other: '{0} mi/gal imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi/gal imp.',
-          one: '{0} mi/gal imp.',
-          other: '{0} mi/gal imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles per galó imperial',
+      one: '{0} milla per galó imperial',
+      other: '{0} milles per galó imperial',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi/gal imp.',
+      one: '{0} mi/gal imp.',
+      other: '{0} mi/gal imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi/gal imp.',
+      one: '{0} mi/gal imp.',
+      other: '{0} mi/gal imp.',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'petabytes',
-          one: '{0} petabyte',
-          other: '{0} petabytes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} petabyte',
-          other: '{0} PB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} petabyte',
-          other: '{0} PB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'petabytes',
+      one: '{0} petabyte',
+      other: '{0} petabytes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'PB',
+      one: '{0} petabyte',
+      other: '{0} PB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'PB',
+      one: '{0} petabyte',
+      other: '{0} PB',
+    ),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'terabytes',
-          one: '{0} terabyte',
-          other: '{0} terabytes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} terabyte',
-          other: '{0} TB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} terabyte',
-          other: '{0} TB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'terabytes',
+      one: '{0} terabyte',
+      other: '{0} terabytes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} terabyte',
+      other: '{0} TB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} terabyte',
+      other: '{0} TB',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'terabits',
-          one: '{0} terabit',
-          other: '{0} terabits',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} terabit',
-          other: '{0} Tb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} terabit',
-          other: '{0} Tb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'terabits',
+      one: '{0} terabit',
+      other: '{0} terabits',
+    ),
+    short: UnitCountPattern(_locale, 'Tb', one: '{0} terabit', other: '{0} Tb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'Tb',
+      one: '{0} terabit',
+      other: '{0} Tb',
+    ),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigabytes',
-          one: '{0} gigabyte',
-          other: '{0} gigabytes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} gigabyte',
-          other: '{0} GB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} gigabyte',
-          other: '{0} GB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigabytes',
+      one: '{0} gigabyte',
+      other: '{0} gigabytes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} gigabyte',
+      other: '{0} GB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} gigabyte',
+      other: '{0} GB',
+    ),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigabits',
-          one: '{0} gigabit',
-          other: '{0} gigabits',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} gigabit',
-          other: '{0} Gb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} gigabit',
-          other: '{0} Gb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigabits',
+      one: '{0} gigabit',
+      other: '{0} gigabits',
+    ),
+    short: UnitCountPattern(_locale, 'Gb', one: '{0} gigabit', other: '{0} Gb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'Gb',
+      one: '{0} gigabit',
+      other: '{0} Gb',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megabytes',
-          one: '{0} megabyte',
-          other: '{0} megabytes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} megabyte',
-          other: '{0} MB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} megabyte',
-          other: '{0} MB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megabytes',
+      one: '{0} megabyte',
+      other: '{0} megabytes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} megabyte',
+      other: '{0} MB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} megabyte',
+      other: '{0} MB',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megabits',
-          one: '{0} megabit',
-          other: '{0} megabits',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Mbit',
-          one: '{0} Mbit',
-          other: '{0} Mbit',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Mbit',
-          one: '{0} Mbit',
-          other: '{0} Mbit',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megabits',
+      one: '{0} megabit',
+      other: '{0} megabits',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Mbit',
+      one: '{0} Mbit',
+      other: '{0} Mbit',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Mbit',
+      one: '{0} Mbit',
+      other: '{0} Mbit',
+    ),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilobytes',
-          one: '{0} kilobyte',
-          other: '{0} kilobytes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kilobyte',
-          other: '{0} kB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kilobyte',
-          other: '{0} kB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilobytes',
+      one: '{0} kilobyte',
+      other: '{0} kilobytes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} kilobyte',
+      other: '{0} kB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} kilobyte',
+      other: '{0} kB',
+    ),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilobits',
-          one: '{0} kilobit',
-          other: '{0} kilobits',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kilobit',
-          other: '{0} kb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kilobit',
-          other: '{0} kb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilobits',
+      one: '{0} kilobit',
+      other: '{0} kilobits',
+    ),
+    short: UnitCountPattern(_locale, 'kb', one: '{0} kilobit', other: '{0} kb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'kb',
+      one: '{0} kilobit',
+      other: '{0} kb',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bytes',
-          one: '{0} byte',
-          other: '{0} bytes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'B',
-          one: '{0} B',
-          other: '{0} B',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'B',
-          one: '{0} B',
-          other: '{0} B',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bytes',
+      one: '{0} byte',
+      other: '{0} bytes',
+    ),
+    short: UnitCountPattern(_locale, 'B', one: '{0} B', other: '{0} B'),
+    narrow: UnitCountPattern(_locale, 'B', one: '{0} B', other: '{0} B'),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bits',
-          one: '{0} bit',
-          other: '{0} bits',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} bit',
-          other: '{0} bits',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} bit',
-          other: '{0} bits',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'bits', one: '{0} bit', other: '{0} bits'),
+    short: UnitCountPattern(_locale, 'bit', one: '{0} bit', other: '{0} bits'),
+    narrow: UnitCountPattern(_locale, 'bit', one: '{0} bit', other: '{0} bits'),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'segles',
-          one: '{0} segle',
-          other: '{0} segles',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'segles',
-          one: '{0} segle',
-          other: '{0} segles',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          's.',
-          one: '{0} s.',
-          other: '{0} s.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'segles',
+      one: '{0} segle',
+      other: '{0} segles',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'segles',
+      one: '{0} segle',
+      other: '{0} segles',
+    ),
+    narrow: UnitCountPattern(_locale, 's.', one: '{0} s.', other: '{0} s.'),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dècades',
-          one: '{0} dècada',
-          other: '{0} dècades',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dèc.',
-          one: '{0} dèc.',
-          other: '{0} dèc.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dèc.',
-          one: '{0} dèc.',
-          other: '{0} dèc.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dècades',
+      one: '{0} dècada',
+      other: '{0} dècades',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dèc.',
+      one: '{0} dèc.',
+      other: '{0} dèc.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dèc.',
+      one: '{0} dèc.',
+      other: '{0} dèc.',
+    ),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'anys',
-          one: '{0} any',
-          other: '{0} anys',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'anys',
-          one: '{0} any',
-          other: '{0} anys',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'anys',
-          one: '{0} any',
-          other: '{0} anys',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'anys', one: '{0} any', other: '{0} anys'),
+    short: UnitCountPattern(_locale, 'anys', one: '{0} any', other: '{0} anys'),
+    narrow: UnitCountPattern(
+      _locale,
+      'anys',
+      one: '{0} any',
+      other: '{0} anys',
+    ),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'trimestres',
-          one: '{0} trimestre',
-          other: '{0} trimestres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'trim.',
-          one: '{0} trim.',
-          other: '{0} trim.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'trim.',
-          one: '{0} trim.',
-          other: '{0} trim.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'trimestres',
+      one: '{0} trimestre',
+      other: '{0} trimestres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'trim.',
+      one: '{0} trim.',
+      other: '{0} trim.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'trim.',
+      one: '{0} trim.',
+      other: '{0} trim.',
+    ),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mesos',
-          one: '{0} mes',
-          other: '{0} mesos',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mesos',
-          one: '{0} mes',
-          other: '{0} m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mes',
-          one: '{0} m',
-          other: '{0} m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mesos',
+      one: '{0} mes',
+      other: '{0} mesos',
+    ),
+    short: UnitCountPattern(_locale, 'mesos', one: '{0} mes', other: '{0} m'),
+    narrow: UnitCountPattern(_locale, 'mes', one: '{0} m', other: '{0} m'),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'setmanes',
-          one: '{0} setmana',
-          other: '{0} setmanes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'setm.',
-          one: '{0} setm.',
-          other: '{0} setm.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'setm.',
-          one: '{0} setm.',
-          other: '{0} setm.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'setmanes',
+      one: '{0} setmana',
+      other: '{0} setmanes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'setm.',
+      one: '{0} setm.',
+      other: '{0} setm.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'setm.',
+      one: '{0} setm.',
+      other: '{0} setm.',
+    ),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dies',
-          one: '{0} dia',
-          other: '{0} dies',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dies',
-          one: '{0} dia',
-          other: '{0} dies',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dia',
-          one: '{0} d',
-          other: '{0} d',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'dies', one: '{0} dia', other: '{0} dies'),
+    short: UnitCountPattern(_locale, 'dies', one: '{0} dia', other: '{0} dies'),
+    narrow: UnitCountPattern(_locale, 'dia', one: '{0} d', other: '{0} d'),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hores',
-          one: '{0} hora',
-          other: '{0} hores',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hores',
-          one: '{0} hora',
-          other: '{0} h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'h',
-          one: '{0} hora',
-          other: '{0} h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hores',
+      one: '{0} hora',
+      other: '{0} hores',
+    ),
+    short: UnitCountPattern(_locale, 'hores', one: '{0} hora', other: '{0} h'),
+    narrow: UnitCountPattern(_locale, 'h', one: '{0} hora', other: '{0} h'),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'minuts',
-          one: '{0} minut',
-          other: '{0} minuts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'min',
-          one: '{0} minut',
-          other: '{0} min',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'min',
-          one: '{0} minut',
-          other: '{0} min',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'minuts',
+      one: '{0} minut',
+      other: '{0} minuts',
+    ),
+    short: UnitCountPattern(_locale, 'min', one: '{0} minut', other: '{0} min'),
+    narrow: UnitCountPattern(
+      _locale,
+      'min',
+      one: '{0} minut',
+      other: '{0} min',
+    ),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'segons',
-          one: '{0} segon',
-          other: '{0} segons',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          's',
-          one: '{0} segon',
-          other: '{0} s',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          's',
-          one: '{0} segon',
-          other: '{0} s',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'segons',
+      one: '{0} segon',
+      other: '{0} segons',
+    ),
+    short: UnitCountPattern(_locale, 's', one: '{0} segon', other: '{0} s'),
+    narrow: UnitCountPattern(_locale, 's', one: '{0} segon', other: '{0} s'),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·lisegons',
-          one: '{0} mil·lisegon',
-          other: '{0} mil·lisegons',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mil·lisegons',
-          one: '{0} mil·lisegon',
-          other: '{0} ms',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ms',
-          one: '{0} mil·lisegon',
-          other: '{0} ms',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·lisegons',
+      one: '{0} mil·lisegon',
+      other: '{0} mil·lisegons',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mil·lisegons',
+      one: '{0} mil·lisegon',
+      other: '{0} ms',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ms',
+      one: '{0} mil·lisegon',
+      other: '{0} ms',
+    ),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'microsegons',
-          one: '{0} microsegon',
-          other: '{0} microsegons',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μs',
-          one: '{0} microsegon',
-          other: '{0} μs',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μs',
-          one: '{0} microsegon',
-          other: '{0} μs',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'microsegons',
+      one: '{0} microsegon',
+      other: '{0} microsegons',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μs',
+      one: '{0} microsegon',
+      other: '{0} μs',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μs',
+      one: '{0} microsegon',
+      other: '{0} μs',
+    ),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nanosegons',
-          one: '{0} nanosegon',
-          other: '{0} nanosegons',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ns',
-          one: '{0} nanosegon',
-          other: '{0} ns',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ns',
-          one: '{0} nanosegon',
-          other: '{0} ns',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nanosegons',
+      one: '{0} nanosegon',
+      other: '{0} nanosegons',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ns',
+      one: '{0} nanosegon',
+      other: '{0} ns',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ns',
+      one: '{0} nanosegon',
+      other: '{0} ns',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'amperes',
-          one: '{0} ampere',
-          other: '{0} amperes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'A',
-          one: '{0} ampere',
-          other: '{0} A',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'A',
-          one: '{0} ampere',
-          other: '{0} A',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'amperes',
+      one: '{0} ampere',
+      other: '{0} amperes',
+    ),
+    short: UnitCountPattern(_locale, 'A', one: '{0} ampere', other: '{0} A'),
+    narrow: UnitCountPattern(_locale, 'A', one: '{0} ampere', other: '{0} A'),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·liamperes',
-          one: '{0} mil·liampere',
-          other: '{0} mil·liamperes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} mil·liampere',
-          other: '{0} mA',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} mil·liampere',
-          other: '{0} mA',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·liamperes',
+      one: '{0} mil·liampere',
+      other: '{0} mil·liamperes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} mil·liampere',
+      other: '{0} mA',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} mil·liampere',
+      other: '{0} mA',
+    ),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ohms',
-          one: '{0} ohm',
-          other: '{0} ohms',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Ω',
-          one: '{0} ohm',
-          other: '{0} Ω',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Ω',
-          one: '{0} ohm',
-          other: '{0} Ω',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ohms', one: '{0} ohm', other: '{0} ohms'),
+    short: UnitCountPattern(_locale, 'Ω', one: '{0} ohm', other: '{0} Ω'),
+    narrow: UnitCountPattern(_locale, 'Ω', one: '{0} ohm', other: '{0} Ω'),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'volts',
-          one: '{0} volt',
-          other: '{0} volts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} volt',
-          other: '{0} V',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} volt',
-          other: '{0} V',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'volts',
+      one: '{0} volt',
+      other: '{0} volts',
+    ),
+    short: UnitCountPattern(_locale, 'V', one: '{0} volt', other: '{0} V'),
+    narrow: UnitCountPattern(_locale, 'V', one: '{0} volt', other: '{0} V'),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilocalories',
-          one: '{0} quilocaloria',
-          other: '{0} quilocalories',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} quilocaloria',
-          other: '{0} kcal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} quilocaloria',
-          other: '{0} kcal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilocalories',
+      one: '{0} quilocaloria',
+      other: '{0} quilocalories',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} quilocaloria',
+      other: '{0} kcal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} quilocaloria',
+      other: '{0} kcal',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'calories',
-          one: '{0} caloria',
-          other: '{0} calories',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} caloria',
-          other: '{0} cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} caloria',
-          other: '{0} cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'calories',
+      one: '{0} caloria',
+      other: '{0} calories',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} caloria',
+      other: '{0} cal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} caloria',
+      other: '{0} cal',
+    ),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'calories',
-          one: '{0} caloria',
-          other: '{0} calories',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} cal',
-          other: '{0} cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} cal',
-          other: '{0} cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'calories',
+      one: '{0} caloria',
+      other: '{0} calories',
+    ),
+    short: UnitCountPattern(_locale, 'cal', one: '{0} cal', other: '{0} cal'),
+    narrow: UnitCountPattern(_locale, 'cal', one: '{0} cal', other: '{0} cal'),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilojoules',
-          one: '{0} quilojoule',
-          other: '{0} quilojoules',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0} quilojoule',
-          other: '{0} kJ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0} quilojoule',
-          other: '{0} kJ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilojoules',
+      one: '{0} quilojoule',
+      other: '{0} quilojoules',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kJ',
+      one: '{0} quilojoule',
+      other: '{0} kJ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kJ',
+      one: '{0} quilojoule',
+      other: '{0} kJ',
+    ),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'joules',
-          one: '{0} joule',
-          other: '{0} joules',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'J',
-          one: '{0} joule',
-          other: '{0} J',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'J',
-          one: '{0} joule',
-          other: '{0} J',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'joules',
+      one: '{0} joule',
+      other: '{0} joules',
+    ),
+    short: UnitCountPattern(_locale, 'J', one: '{0} joule', other: '{0} J'),
+    narrow: UnitCountPattern(_locale, 'J', one: '{0} joule', other: '{0} J'),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilowatts hora',
-          one: '{0} quilowatt hora',
-          other: '{0} quilowatts hora',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} quilowatt hora',
-          other: '{0} kWh',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} quilowatt hora',
-          other: '{0} kWh',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilowatts hora',
+      one: '{0} quilowatt hora',
+      other: '{0} quilowatts hora',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0} quilowatt hora',
+      other: '{0} kWh',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0} quilowatt hora',
+      other: '{0} kWh',
+    ),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'electrons-volt',
-          one: '{0} electró-volt',
-          other: '{0} electrons-volt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0} electró-volt',
-          other: '{0} eV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0} electró-volt',
-          other: '{0} eV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'electrons-volt',
+      one: '{0} electró-volt',
+      other: '{0} electrons-volt',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0} electró-volt',
+      other: '{0} eV',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0} electró-volt',
+      other: '{0} eV',
+    ),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unitats tèrmiques britàniques',
-          one: '{0} unitat tèrmica britànica',
-          other: '{0} unitats tèrmiques britàniques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0} unitat tèrmica britànica',
-          other: '{0} Btu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0} unitat tèrmica britànica',
-          other: '{0} Btu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unitats tèrmiques britàniques',
+      one: '{0} unitat tèrmica britànica',
+      other: '{0} unitats tèrmiques britàniques',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Btu',
+      one: '{0} unitat tèrmica britànica',
+      other: '{0} Btu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Btu',
+      one: '{0} unitat tèrmica britànica',
+      other: '{0} Btu',
+    ),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unitats tèrmiques americanes',
-          one: '{0} unitat tèrmica americana',
-          other: '{0} unitats tèrmiques americanes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'unitat tèrmica americana',
-          one: '{0} thm',
-          other: '{0} thm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'thm',
-          one: '{0} thm',
-          other: '{0} thm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unitats tèrmiques americanes',
+      one: '{0} unitat tèrmica americana',
+      other: '{0} unitats tèrmiques americanes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'unitat tèrmica americana',
+      one: '{0} thm',
+      other: '{0} thm',
+    ),
+    narrow: UnitCountPattern(_locale, 'thm', one: '{0} thm', other: '{0} thm'),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lliures de força',
-          one: '{0} lliura de força',
-          other: '{0} lliures de força',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lliures-força',
-          one: '{0} lliura de força',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} lliura de força',
-          other: '{0} lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lliures de força',
+      one: '{0} lliura de força',
+      other: '{0} lliures de força',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lliures-força',
+      one: '{0} lliura de força',
+      other: '{0} lbf',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0} lliura de força',
+      other: '{0} lbf',
+    ),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'newtons',
-          one: '{0} newton',
-          other: '{0} newtons',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'newton',
-          one: '{0} newton',
-          other: '{0} N',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} newton',
-          other: '{0} N',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'newtons',
+      one: '{0} newton',
+      other: '{0} newtons',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'newton',
+      one: '{0} newton',
+      other: '{0} N',
+    ),
+    narrow: UnitCountPattern(_locale, 'N', one: '{0} newton', other: '{0} N'),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilowatt hora per 100 quilòmetres',
-          one: '{0} kilowatt hora per 100 quilòmetres',
-          other: '{0} kilowatts hora per 100 quilòmetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100 km',
-          one: '{0} kWh/100 km',
-          other: '{0} kWh/100 km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100 km',
-          one: '{0} kWh/100 km',
-          other: '{0} kWh/100 km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilowatt hora per 100 quilòmetres',
+      one: '{0} kilowatt hora per 100 quilòmetres',
+      other: '{0} kilowatts hora per 100 quilòmetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100 km',
+      one: '{0} kWh/100 km',
+      other: '{0} kWh/100 km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100 km',
+      one: '{0} kWh/100 km',
+      other: '{0} kWh/100 km',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigahertz',
-          one: '{0} gigahertz',
-          other: '{0} gigahertzs',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} gigahertz',
-          other: '{0} GHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} gigahertz',
-          other: '{0} GHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigahertz',
+      one: '{0} gigahertz',
+      other: '{0} gigahertzs',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} gigahertz',
+      other: '{0} GHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} gigahertz',
+      other: '{0} GHz',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megahertz',
-          one: '{0} megahertz',
-          other: '{0} megahertzs',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} megahertz',
-          other: '{0} MHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} megahertz',
-          other: '{0} MHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megahertz',
+      one: '{0} megahertz',
+      other: '{0} megahertzs',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} megahertz',
+      other: '{0} MHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} megahertz',
+      other: '{0} MHz',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilohertz',
-          one: '{0} quilohertz',
-          other: '{0} quilohertzs',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} quilohertz',
-          other: '{0} kHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} quilohertz',
-          other: '{0} kHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilohertz',
+      one: '{0} quilohertz',
+      other: '{0} quilohertzs',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} quilohertz',
+      other: '{0} kHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} quilohertz',
+      other: '{0} kHz',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hertz',
-          one: '{0} hertz',
-          other: '{0} hertzs',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} hertz',
-          other: '{0} Hz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} hertz',
-          other: '{0} Hz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hertz',
+      one: '{0} hertz',
+      other: '{0} hertzs',
+    ),
+    short: UnitCountPattern(_locale, 'Hz', one: '{0} hertz', other: '{0} Hz'),
+    narrow: UnitCountPattern(_locale, 'Hz', one: '{0} hertz', other: '{0} Hz'),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'em tipogràfic',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0}em',
-          other: '{0} em',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'em tipogràfic',
+      one: '{0} em',
+      other: '{0} em',
+    ),
+    short: UnitCountPattern(_locale, 'em', one: '{0} em', other: '{0} em'),
+    narrow: UnitCountPattern(_locale, 'em', one: '{0}em', other: '{0} em'),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'píxels',
-          one: '{0} píxel',
-          other: '{0} píxels',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'píxels',
-          one: '{0} píxel',
-          other: '{0} px',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'px',
-          one: '{0} píxel',
-          other: '{0} px',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'píxels',
+      one: '{0} píxel',
+      other: '{0} píxels',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'píxels',
+      one: '{0} píxel',
+      other: '{0} px',
+    ),
+    narrow: UnitCountPattern(_locale, 'px', one: '{0} píxel', other: '{0} px'),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megapíxels',
-          one: '{0} megapíxel',
-          other: '{0} megapíxels',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'megapíxels',
-          one: '{0} Mpx',
-          other: '{0} Mpx',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Mpx',
-          one: '{0} Mpx',
-          other: '{0} Mpx',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megapíxels',
+      one: '{0} megapíxel',
+      other: '{0} megapíxels',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'megapíxels',
+      one: '{0} Mpx',
+      other: '{0} Mpx',
+    ),
+    narrow: UnitCountPattern(_locale, 'Mpx', one: '{0} Mpx', other: '{0} Mpx'),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'píxels per centímetre',
-          one: '{0} píxel per centímetre',
-          other: '{0} píxels per centímetre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'píxels per cm',
-          one: '{0} píxel per cm',
-          other: '{0} píxels per cm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'px/cm',
-          one: '{0} px/cm',
-          other: '{0} px/cm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'píxels per centímetre',
+      one: '{0} píxel per centímetre',
+      other: '{0} píxels per centímetre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'píxels per cm',
+      one: '{0} píxel per cm',
+      other: '{0} píxels per cm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'px/cm',
+      one: '{0} px/cm',
+      other: '{0} px/cm',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'píxels per polzada',
-          one: '{0} píxel per polzada',
-          other: '{0} píxels per polzada',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'PPI',
-          one: '{0} PPI',
-          other: '{0} PPI',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'PPI',
-          one: '{0} PPI',
-          other: '{0} PPI',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'píxels per polzada',
+      one: '{0} píxel per polzada',
+      other: '{0} píxels per polzada',
+    ),
+    short: UnitCountPattern(_locale, 'PPI', one: '{0} PPI', other: '{0} PPI'),
+    narrow: UnitCountPattern(_locale, 'PPI', one: '{0} PPI', other: '{0} PPI'),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'píxels per centímetre',
-          one: '{0} píxel per centímetre',
-          other: '{0} píxels per centímetre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} ppcm',
-          other: '{0} ppcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} ppcm',
-          other: '{0} ppcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'píxels per centímetre',
+      one: '{0} píxel per centímetre',
+      other: '{0} píxels per centímetre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} ppcm',
+      other: '{0} ppcm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} ppcm',
+      other: '{0} ppcm',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'píxels per polzada',
-          one: '{0} píxel per polzada',
-          other: '{0} píxels per polzada',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppp',
-          one: '{0} ppp',
-          other: '{0} ppp',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppp',
-          one: '{0} ppp',
-          other: '{0} ppp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'píxels per polzada',
+      one: '{0} píxel per polzada',
+      other: '{0} píxels per polzada',
+    ),
+    short: UnitCountPattern(_locale, 'ppp', one: '{0} ppp', other: '{0} ppp'),
+    narrow: UnitCountPattern(_locale, 'ppp', one: '{0} ppp', other: '{0} ppp'),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dots',
-          one: '{0} píxel',
-          other: '{0} píxels',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dots',
-          one: '{0} píxel',
-          other: '{0} píxels',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'píxel',
-          one: '{0} píxel',
-          other: '{0} píxels',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dots',
+      one: '{0} píxel',
+      other: '{0} píxels',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dots',
+      one: '{0} píxel',
+      other: '{0} píxels',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'píxel',
+      one: '{0} píxel',
+      other: '{0} píxels',
+    ),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'radi terrestre',
-          one: '{0} radi terrestre',
-          other: '{0} radis terrestres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} radi terrestre',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} radi terrestre',
-          other: '{0} R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'radi terrestre',
+      one: '{0} radi terrestre',
+      other: '{0} radis terrestres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} radi terrestre',
+      other: '{0} R⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} radi terrestre',
+      other: '{0} R⊕',
+    ),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilòmetres',
-          one: '{0} quilòmetre',
-          other: '{0} quilòmetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0} quilòmetre',
-          other: '{0} km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0} quilòmetre',
-          other: '{0} km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilòmetres',
+      one: '{0} quilòmetre',
+      other: '{0} quilòmetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0} quilòmetre',
+      other: '{0} km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0} quilòmetre',
+      other: '{0} km',
+    ),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metres',
-          one: '{0} metre',
-          other: '{0} metres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm',
-          one: '{0} metre',
-          other: '{0} m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm',
-          one: '{0} metre',
-          other: '{0} m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metres',
+      one: '{0} metre',
+      other: '{0} metres',
+    ),
+    short: UnitCountPattern(_locale, 'm', one: '{0} metre', other: '{0} m'),
+    narrow: UnitCountPattern(_locale, 'm', one: '{0} metre', other: '{0} m'),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'decímetres',
-          one: '{0} decímetre',
-          other: '{0} decímetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0} decímetre',
-          other: '{0} dm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0} decímetre',
-          other: '{0} dm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'decímetres',
+      one: '{0} decímetre',
+      other: '{0} decímetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0} decímetre',
+      other: '{0} dm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0} decímetre',
+      other: '{0} dm',
+    ),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'centímetres',
-          one: '{0} centímetre',
-          other: '{0} centímetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0} centímetre',
-          other: '{0} cm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0} centímetre',
-          other: '{0} cm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'centímetres',
+      one: '{0} centímetre',
+      other: '{0} centímetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0} centímetre',
+      other: '{0} cm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0} centímetre',
+      other: '{0} cm',
+    ),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·límetres',
-          one: '{0} mil·límetre',
-          other: '{0} mil·límetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0} mil·límetre',
-          other: '{0} mm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0} mil·límetre',
-          other: '{0} mm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·límetres',
+      one: '{0} mil·límetre',
+      other: '{0} mil·límetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0} mil·límetre',
+      other: '{0} mm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0} mil·límetre',
+      other: '{0} mm',
+    ),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'micròmetres',
-          one: '{0} micròmetre',
-          other: '{0} micròmetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0} micròmetre',
-          other: '{0} μm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0} micròmetre',
-          other: '{0} μm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'micròmetres',
+      one: '{0} micròmetre',
+      other: '{0} micròmetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0} micròmetre',
+      other: '{0} μm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0} micròmetre',
+      other: '{0} μm',
+    ),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nanòmetre',
-          one: '{0} nanòmetre',
-          other: '{0} nanòmetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} nanòmetre',
-          other: '{0} nm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} nanòmetre',
-          other: '{0} nm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nanòmetre',
+      one: '{0} nanòmetre',
+      other: '{0} nanòmetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} nanòmetre',
+      other: '{0} nm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} nanòmetre',
+      other: '{0} nm',
+    ),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'picòmetres',
-          one: '{0} picòmetre',
-          other: '{0} picòmetres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} picòmetre',
-          other: '{0} pm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} picòmetre',
-          other: '{0} pm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'picòmetres',
+      one: '{0} picòmetre',
+      other: '{0} picòmetres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} picòmetre',
+      other: '{0} pm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} picòmetre',
+      other: '{0} pm',
+    ),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles',
-          one: '{0} milla',
-          other: '{0} milles',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'milles',
-          one: '{0} milla',
-          other: '{0} mi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi',
-          one: '{0} milla',
-          other: '{0} mi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles',
+      one: '{0} milla',
+      other: '{0} milles',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'milles',
+      one: '{0} milla',
+      other: '{0} mi',
+    ),
+    narrow: UnitCountPattern(_locale, 'mi', one: '{0} milla', other: '{0} mi'),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'iardes',
-          one: '{0} iarda',
-          other: '{0} iardes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'iardes',
-          one: '{0} iarda',
-          other: '{0} yd',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd',
-          one: '{0} iarda',
-          other: '{0} yd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'iardes',
+      one: '{0} iarda',
+      other: '{0} iardes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'iardes',
+      one: '{0} iarda',
+      other: '{0} yd',
+    ),
+    narrow: UnitCountPattern(_locale, 'yd', one: '{0} iarda', other: '{0} yd'),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'peus',
-          one: '{0} peu',
-          other: '{0} peus',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'peus',
-          one: '{0} peu',
-          other: '{0} ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft',
-          one: '{0} peu',
-          other: '{0} ft',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'peus', one: '{0} peu', other: '{0} peus'),
+    short: UnitCountPattern(_locale, 'peus', one: '{0} peu', other: '{0} ft'),
+    narrow: UnitCountPattern(_locale, 'ft', one: '{0} peu', other: '{0} ft'),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'polzades',
-          one: '{0} polzada',
-          other: '{0} polzades',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'polzades',
-          one: '{0} polzada',
-          other: '{0} in',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in',
-          one: '{0} polzada',
-          other: '{0} in',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'polzades',
+      one: '{0} polzada',
+      other: '{0} polzades',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'polzades',
+      one: '{0} polzada',
+      other: '{0} in',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in',
+      one: '{0} polzada',
+      other: '{0} in',
+    ),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'parsecs',
-          one: '{0} parsec',
-          other: '{0} parsecs',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'parsecs',
-          one: '{0} parsec',
-          other: '{0} pc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'parsec',
-          one: '{0} parsec',
-          other: '{0} pc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'parsecs',
+      one: '{0} parsec',
+      other: '{0} parsecs',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'parsecs',
+      one: '{0} parsec',
+      other: '{0} pc',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'parsec',
+      one: '{0} parsec',
+      other: '{0} pc',
+    ),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'anys llum',
-          one: '{0} any llum',
-          other: '{0} anys llum',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'anys llum',
-          one: '{0} any ll.',
-          other: '{0} anys ll.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'anys llum',
-          one: '{0} a. ll.',
-          other: '{0} a. ll.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'anys llum',
+      one: '{0} any llum',
+      other: '{0} anys llum',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'anys llum',
+      one: '{0} any ll.',
+      other: '{0} anys ll.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'anys llum',
+      one: '{0} a. ll.',
+      other: '{0} a. ll.',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unitats astronòmiques',
-          one: '{0} unitat astronòmica',
-          other: '{0} unitats astronòmiques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ua',
-          one: '{0} ua',
-          other: '{0} ua',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ua',
-          one: '{0} ua',
-          other: '{0} ua',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unitats astronòmiques',
+      one: '{0} unitat astronòmica',
+      other: '{0} unitats astronòmiques',
+    ),
+    short: UnitCountPattern(_locale, 'ua', one: '{0} ua', other: '{0} ua'),
+    narrow: UnitCountPattern(_locale, 'ua', one: '{0} ua', other: '{0} ua'),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'estadis',
-          one: '{0} estadi',
-          other: '{0} estadis',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fur',
-          one: '{0} estadi',
-          other: '{0} fur',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fur',
-          one: '{0} estadi',
-          other: '{0} fur',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'estadis',
+      one: '{0} estadi',
+      other: '{0} estadis',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fur',
+      one: '{0} estadi',
+      other: '{0} fur',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fur',
+      one: '{0} estadi',
+      other: '{0} fur',
+    ),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'braces',
-          one: '{0} braça',
-          other: '{0} braces',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fth',
-          one: '{0} braça',
-          other: '{0} fth',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'braça',
-          one: '{0} braça',
-          other: '{0} fth',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'braces',
+      one: '{0} braça',
+      other: '{0} braces',
+    ),
+    short: UnitCountPattern(_locale, 'fth', one: '{0} braça', other: '{0} fth'),
+    narrow: UnitCountPattern(
+      _locale,
+      'braça',
+      one: '{0} braça',
+      other: '{0} fth',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles nàutiques',
-          one: '{0} milla nàutica',
-          other: '{0} milles nàutiques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'NM',
-          one: '{0} NM',
-          other: '{0} NM',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'NM',
-          one: '{0} NM',
-          other: '{0} NM',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles nàutiques',
+      one: '{0} milla nàutica',
+      other: '{0} milles nàutiques',
+    ),
+    short: UnitCountPattern(_locale, 'NM', one: '{0} NM', other: '{0} NM'),
+    narrow: UnitCountPattern(_locale, 'NM', one: '{0} NM', other: '{0} NM'),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles escandinaves',
-          one: '{0} milla escandinava',
-          other: '{0} milles escandinaves',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'smi',
-          one: '{0} milla escandinava',
-          other: '{0} smi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'smi',
-          one: '{0} milla escandinava',
-          other: '{0} smi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles escandinaves',
+      one: '{0} milla escandinava',
+      other: '{0} milles escandinaves',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'smi',
+      one: '{0} milla escandinava',
+      other: '{0} smi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'smi',
+      one: '{0} milla escandinava',
+      other: '{0} smi',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'punts',
-          one: '{0} punt tipogràfic',
-          other: '{0} punts tipogràfics',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'punts',
-          one: '{0} punt tipogràfic',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} punt tipogràfic',
-          other: '{0} pt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'punts',
+      one: '{0} punt tipogràfic',
+      other: '{0} punts tipogràfics',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'punts',
+      one: '{0} punt tipogràfic',
+      other: '{0} pt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pt',
+      one: '{0} punt tipogràfic',
+      other: '{0} pt',
+    ),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'radis solars',
-          one: '{0} radi solar',
-          other: '{0} radis solars',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0} radi solar',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0} radi solar',
-          other: '{0} R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'radis solars',
+      one: '{0} radi solar',
+      other: '{0} radis solars',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R☉',
+      one: '{0} radi solar',
+      other: '{0} R☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R☉',
+      one: '{0} radi solar',
+      other: '{0} R☉',
+    ),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lux',
-          one: '{0} lux',
-          other: '{0} luxs',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lux',
-          one: '{0} lux',
-          other: '{0} lx',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lux',
-          one: '{0} lux',
-          other: '{0} lx',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'lux', one: '{0} lux', other: '{0} luxs'),
+    short: UnitCountPattern(_locale, 'lux', one: '{0} lux', other: '{0} lx'),
+    narrow: UnitCountPattern(_locale, 'lux', one: '{0} lux', other: '{0} lx'),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'candela',
-          one: '{0} candela',
-          other: '{0} candeles',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cd',
-          one: '{0} candela',
-          other: '{0} cd',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cd',
-          one: '{0} candela',
-          other: '{0} cd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'candela',
+      one: '{0} candela',
+      other: '{0} candeles',
+    ),
+    short: UnitCountPattern(_locale, 'cd', one: '{0} candela', other: '{0} cd'),
+    narrow: UnitCountPattern(
+      _locale,
+      'cd',
+      one: '{0} candela',
+      other: '{0} cd',
+    ),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lumen',
-          one: '{0} lumen',
-          other: '{0} lumens',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} lumen',
-          other: '{0} lm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} lumen',
-          other: '{0} lm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lumen',
+      one: '{0} lumen',
+      other: '{0} lumens',
+    ),
+    short: UnitCountPattern(_locale, 'lm', one: '{0} lumen', other: '{0} lm'),
+    narrow: UnitCountPattern(_locale, 'lm', one: '{0} lumen', other: '{0} lm'),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lluminositats solars',
-          one: '{0} lluminositat solar',
-          other: '{0} lluminositats solars',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lluminositats solars',
-          one: '{0} lluminositat solar',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} lluminositat solar',
-          other: '{0} L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lluminositats solars',
+      one: '{0} lluminositat solar',
+      other: '{0} lluminositats solars',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lluminositats solars',
+      one: '{0} lluminositat solar',
+      other: '{0} L☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L☉',
+      one: '{0} lluminositat solar',
+      other: '{0} L☉',
+    ),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tones mètriques',
-          one: '{0} tona mètrica',
-          other: '{0} tones mètriques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          't mètr.',
-          one: '{0} t m',
-          other: '{0} t mètr.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} t m',
-          other: '{0} t m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tones mètriques',
+      one: '{0} tona mètrica',
+      other: '{0} tones mètriques',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      't mètr.',
+      one: '{0} t m',
+      other: '{0} t mètr.',
+    ),
+    narrow: UnitCountPattern(_locale, 't', one: '{0} t m', other: '{0} t m'),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilograms',
-          one: '{0} quilogram',
-          other: '{0} quilograms',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} quilogram',
-          other: '{0} kg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} quilogram',
-          other: '{0} kg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilograms',
+      one: '{0} quilogram',
+      other: '{0} quilograms',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0} quilogram',
+      other: '{0} kg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0} quilogram',
+      other: '{0} kg',
+    ),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'grams',
-          one: '{0} gram',
-          other: '{0} grams',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'grams',
-          one: '{0} gram',
-          other: '{0} g',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'g',
-          one: '{0} gram',
-          other: '{0} g',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'grams',
+      one: '{0} gram',
+      other: '{0} grams',
+    ),
+    short: UnitCountPattern(_locale, 'grams', one: '{0} gram', other: '{0} g'),
+    narrow: UnitCountPattern(_locale, 'g', one: '{0} gram', other: '{0} g'),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·ligrams',
-          one: '{0} mil·ligram',
-          other: '{0} mil·ligrams',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} mil·ligram',
-          other: '{0} mg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} mil·ligram',
-          other: '{0} mg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·ligrams',
+      one: '{0} mil·ligram',
+      other: '{0} mil·ligrams',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} mil·ligram',
+      other: '{0} mg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} mil·ligram',
+      other: '{0} mg',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'micrograms',
-          one: '{0} microgram',
-          other: '{0} micrograms',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} microgram',
-          other: '{0} μg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} microgram',
-          other: '{0} μg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'micrograms',
+      one: '{0} microgram',
+      other: '{0} micrograms',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} microgram',
+      other: '{0} μg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} microgram',
+      other: '{0} μg',
+    ),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tones',
-          one: '{0} tona',
-          other: '{0} tones',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} t',
-          other: '{0} t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} t',
-          other: '{0} t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tones',
+      one: '{0} tona',
+      other: '{0} tones',
+    ),
+    short: UnitCountPattern(_locale, 't', one: '{0} t', other: '{0} t'),
+    narrow: UnitCountPattern(_locale, 't', one: '{0} t', other: '{0} t'),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pedres',
-          one: '{0} pedra',
-          other: '{0} pedres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'st',
-          one: '{0} pedra',
-          other: '{0} st',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'st',
-          one: '{0} pedra',
-          other: '{0} st',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pedres',
+      one: '{0} pedra',
+      other: '{0} pedres',
+    ),
+    short: UnitCountPattern(_locale, 'st', one: '{0} pedra', other: '{0} st'),
+    narrow: UnitCountPattern(_locale, 'st', one: '{0} pedra', other: '{0} st'),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lliures',
-          one: '{0} lliura',
-          other: '{0} lliures',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lb',
-          one: '{0} lliura',
-          other: '{0} lb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lb',
-          one: '{0} lliura',
-          other: '{0} lb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lliures',
+      one: '{0} lliura',
+      other: '{0} lliures',
+    ),
+    short: UnitCountPattern(_locale, 'lb', one: '{0} lliura', other: '{0} lb'),
+    narrow: UnitCountPattern(_locale, 'lb', one: '{0} lliura', other: '{0} lb'),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unces',
-          one: '{0} unça',
-          other: '{0} unces',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} unça',
-          other: '{0} oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} unça',
-          other: '{0} oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unces',
+      one: '{0} unça',
+      other: '{0} unces',
+    ),
+    short: UnitCountPattern(_locale, 'oz', one: '{0} unça', other: '{0} oz'),
+    narrow: UnitCountPattern(_locale, 'oz', one: '{0} unça', other: '{0} oz'),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unces troy',
-          one: '{0} unça troy',
-          other: '{0} unces troy',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ozt',
-          one: '{0} ozt',
-          other: '{0} ozt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ozt',
-          one: '{0} ozt',
-          other: '{0} ozt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unces troy',
+      one: '{0} unça troy',
+      other: '{0} unces troy',
+    ),
+    short: UnitCountPattern(_locale, 'ozt', one: '{0} ozt', other: '{0} ozt'),
+    narrow: UnitCountPattern(_locale, 'ozt', one: '{0} ozt', other: '{0} ozt'),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quirats',
-          one: '{0} quirat',
-          other: '{0} quirats',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'quirat',
-          one: '{0} ct',
-          other: '{0} ct',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'quirat',
-          one: '{0} ct',
-          other: '{0} ct',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quirats',
+      one: '{0} quirat',
+      other: '{0} quirats',
+    ),
+    short: UnitCountPattern(_locale, 'quirat', one: '{0} ct', other: '{0} ct'),
+    narrow: UnitCountPattern(_locale, 'quirat', one: '{0} ct', other: '{0} ct'),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'daltons',
-          one: '{0} dalton',
-          other: '{0} daltons',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0} dalton',
-          other: '{0} Da',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0} dalton',
-          other: '{0} Da',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'daltons',
+      one: '{0} dalton',
+      other: '{0} daltons',
+    ),
+    short: UnitCountPattern(_locale, 'Da', one: '{0} dalton', other: '{0} Da'),
+    narrow: UnitCountPattern(_locale, 'Da', one: '{0} dalton', other: '{0} Da'),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'masses de la Terra',
-          one: '{0} massa de la Terra',
-          other: '{0} masses de la Terra',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0} massa de la Terra',
-          other: '{0} M⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0} massa de la Terra',
-          other: '{0} M⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'masses de la Terra',
+      one: '{0} massa de la Terra',
+      other: '{0} masses de la Terra',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'M⊕',
+      one: '{0} massa de la Terra',
+      other: '{0} M⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M⊕',
+      one: '{0} massa de la Terra',
+      other: '{0} M⊕',
+    ),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'masses solars',
-          one: '{0} massa solar',
-          other: '{0} masses solars',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0} massa solar',
-          other: '{0} M☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0} massa solar',
-          other: '{0} M☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'masses solars',
+      one: '{0} massa solar',
+      other: '{0} masses solars',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'M☉',
+      one: '{0} massa solar',
+      other: '{0} M☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M☉',
+      one: '{0} massa solar',
+      other: '{0} M☉',
+    ),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'grans',
-          one: '{0} gra',
-          other: '{0} grans',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gra',
-          one: '{0} gra',
-          other: '{0} grans',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gra',
-          one: '{0} gra',
-          other: '{0} grans',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'grans',
+      one: '{0} gra',
+      other: '{0} grans',
+    ),
+    short: UnitCountPattern(_locale, 'gra', one: '{0} gra', other: '{0} grans'),
+    narrow: UnitCountPattern(
+      _locale,
+      'gra',
+      one: '{0} gra',
+      other: '{0} grans',
+    ),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigawatts',
-          one: '{0} gigawatt',
-          other: '{0} gigawatts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} gigawatt',
-          other: '{0} GW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} gigawatt',
-          other: '{0} GW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigawatts',
+      one: '{0} gigawatt',
+      other: '{0} gigawatts',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0} gigawatt',
+      other: '{0} GW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0} gigawatt',
+      other: '{0} GW',
+    ),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megawatts',
-          one: '{0} megawatt',
-          other: '{0} megawatts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} megawatt',
-          other: '{0} MW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} megawatt',
-          other: '{0} MW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megawatts',
+      one: '{0} megawatt',
+      other: '{0} megawatts',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0} megawatt',
+      other: '{0} MW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0} megawatt',
+      other: '{0} MW',
+    ),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilowatts',
-          one: '{0} quilowatt',
-          other: '{0} quilowatts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0} quilowatt',
-          other: '{0} kW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0}kW',
-          other: '{0}kW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilowatts',
+      one: '{0} quilowatt',
+      other: '{0} quilowatts',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kW',
+      one: '{0} quilowatt',
+      other: '{0} kW',
+    ),
+    narrow: UnitCountPattern(_locale, 'kW', one: '{0}kW', other: '{0}kW'),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'watts',
-          one: '{0} watt',
-          other: '{0} watts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'W',
-          one: '{0} watt',
-          other: '{0} W',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'W',
-          one: '{0} watt',
-          other: '{0} W',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'watts',
+      one: '{0} watt',
+      other: '{0} watts',
+    ),
+    short: UnitCountPattern(_locale, 'W', one: '{0} watt', other: '{0} W'),
+    narrow: UnitCountPattern(_locale, 'W', one: '{0} watt', other: '{0} W'),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·liwatts',
-          one: '{0} mil·liwatt',
-          other: '{0} mil·liwatts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} mil·liwatt',
-          other: '{0} mW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} mil·liwatt',
-          other: '{0} mW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·liwatts',
+      one: '{0} mil·liwatt',
+      other: '{0} mil·liwatts',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0} mil·liwatt',
+      other: '{0} mW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0} mil·liwatt',
+      other: '{0} mW',
+    ),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cavalls de vapor',
-          one: '{0} cavall de vapor',
-          other: '{0} cavalls de vapor',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'CV',
-          one: '{0} CV',
-          other: '{0} CV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'CV',
-          one: '{0} CV',
-          other: '{0} CV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cavalls de vapor',
+      one: '{0} cavall de vapor',
+      other: '{0} cavalls de vapor',
+    ),
+    short: UnitCountPattern(_locale, 'CV', one: '{0} CV', other: '{0} CV'),
+    narrow: UnitCountPattern(_locale, 'CV', one: '{0} CV', other: '{0} CV'),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·límetres de mercuri',
-          one: '{0} mil·límetre de mercuri',
-          other: '{0} mil·límetres de mercuri',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·límetres de mercuri',
+      one: '{0} mil·límetre de mercuri',
+      other: '{0} mil·límetres de mercuri',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lliures per polzada quadrada',
-          one: '{0} lliura per polzada quadrada',
-          other: '{0} lliures per polzada quadrada',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} lliura per polzada quadrada',
-          other: '{0} psi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} lliura per polzada quadrada',
-          other: '{0} psi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lliures per polzada quadrada',
+      one: '{0} lliura per polzada quadrada',
+      other: '{0} lliures per polzada quadrada',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} lliura per polzada quadrada',
+      other: '{0} psi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} lliura per polzada quadrada',
+      other: '{0} psi',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'polzades de mercuri',
-          one: '{0} polzada de mercuri',
-          other: '{0} polzades de mercuri',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} polzada de mercuri',
-          other: '{0} inHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} polzada de mercuri',
-          other: '{0} inHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'polzades de mercuri',
+      one: '{0} polzada de mercuri',
+      other: '{0} polzades de mercuri',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} polzada de mercuri',
+      other: '{0} inHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} polzada de mercuri',
+      other: '{0} inHg',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bars',
-          one: '{0} bar',
-          other: '{0} bars',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bar',
-          one: '{0} bar',
-          other: '{0} bars',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bar',
-          one: '{0} bar',
-          other: '{0} bars',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'bars', one: '{0} bar', other: '{0} bars'),
+    short: UnitCountPattern(_locale, 'bar', one: '{0} bar', other: '{0} bars'),
+    narrow: UnitCountPattern(_locale, 'bar', one: '{0} bar', other: '{0} bars'),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·libars',
-          one: '{0} mil·libar',
-          other: '{0} mil·libars',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} mil·libar',
-          other: '{0} mbar',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} mb',
-          other: '{0} mb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·libars',
+      one: '{0} mil·libar',
+      other: '{0} mil·libars',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} mil·libar',
+      other: '{0} mbar',
+    ),
+    narrow: UnitCountPattern(_locale, 'mbar', one: '{0} mb', other: '{0} mb'),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'atmosferes',
-          one: '{0} atmosfera',
-          other: '{0} atmosferes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} atmosfera',
-          other: '{0} atm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} atmosfera',
-          other: '{0} atm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'atmosferes',
+      one: '{0} atmosfera',
+      other: '{0} atmosferes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} atmosfera',
+      other: '{0} atm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} atmosfera',
+      other: '{0} atm',
+    ),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pascals',
-          one: '{0} pascal',
-          other: '{0} pascals',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} pascal',
-          other: '{0} Pa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} pascal',
-          other: '{0} Pa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pascals',
+      one: '{0} pascal',
+      other: '{0} pascals',
+    ),
+    short: UnitCountPattern(_locale, 'Pa', one: '{0} pascal', other: '{0} Pa'),
+    narrow: UnitCountPattern(_locale, 'Pa', one: '{0} pascal', other: '{0} Pa'),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hectopascals',
-          one: '{0} hectopascal',
-          other: '{0} hectopascals',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} hectopascal',
-          other: '{0} hPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} hectopascal',
-          other: '{0} hPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hectopascals',
+      one: '{0} hectopascal',
+      other: '{0} hectopascals',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} hectopascal',
+      other: '{0} hPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} hectopascal',
+      other: '{0} hPa',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilopascals',
-          one: '{0} quilopascal',
-          other: '{0} quilopascals',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} quilopascal',
-          other: '{0} kPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} quilopascal',
-          other: '{0} kPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilopascals',
+      one: '{0} quilopascal',
+      other: '{0} quilopascals',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} quilopascal',
+      other: '{0} kPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} quilopascal',
+      other: '{0} kPa',
+    ),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megapascals',
-          one: '{0} megapascal',
-          other: '{0} megapascals',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} megapascal',
-          other: '{0} MPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} megapascal',
-          other: '{0} MPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megapascals',
+      one: '{0} megapascal',
+      other: '{0} megapascals',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} megapascal',
+      other: '{0} MPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} megapascal',
+      other: '{0} MPa',
+    ),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilòmetres per hora',
-          one: '{0} quilòmetre per hora',
-          other: '{0} quilòmetres per hora',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km/h',
-          one: '{0} quilòmetre per hora',
-          other: '{0} km/h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km/h',
-          one: '{0} quilòmetre per hora',
-          other: '{0} km/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilòmetres per hora',
+      one: '{0} quilòmetre per hora',
+      other: '{0} quilòmetres per hora',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km/h',
+      one: '{0} quilòmetre per hora',
+      other: '{0} km/h',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km/h',
+      one: '{0} quilòmetre per hora',
+      other: '{0} km/h',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metres per segon',
-          one: '{0} metre per segon',
-          other: '{0} metres per segon',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm/s',
-          one: '{0} metre per segon',
-          other: '{0} m/s',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s',
-          one: '{0} metre per segon',
-          other: '{0} m/s',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metres per segon',
+      one: '{0} metre per segon',
+      other: '{0} metres per segon',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm/s',
+      one: '{0} metre per segon',
+      other: '{0} m/s',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s',
+      one: '{0} metre per segon',
+      other: '{0} m/s',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles per hora',
-          one: '{0} milla per hora',
-          other: '{0} milles per hora',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi/h',
-          one: '{0} milla per hora',
-          other: '{0} mi/h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi/h',
-          one: '{0} milla per hora',
-          other: '{0} mi/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles per hora',
+      one: '{0} milla per hora',
+      other: '{0} milles per hora',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi/h',
+      one: '{0} milla per hora',
+      other: '{0} mi/h',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi/h',
+      one: '{0} milla per hora',
+      other: '{0} mi/h',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nusos',
-          one: '{0} nus',
-          other: '{0} nusos',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0} nus',
-          other: '{0} kn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0} nus',
-          other: '{0} kn',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nusos',
+      one: '{0} nus',
+      other: '{0} nusos',
+    ),
+    short: UnitCountPattern(_locale, 'kn', one: '{0} nus', other: '{0} kn'),
+    narrow: UnitCountPattern(_locale, 'kn', one: '{0} nus', other: '{0} kn'),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Beaufort',
-          one: 'Beaufort {0}',
-          other: 'Beaufort {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: 'Beaufort {0}',
-          other: 'B {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: 'Beaufort {0}',
-          other: 'B {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Beaufort',
+      one: 'Beaufort {0}',
+      other: 'Beaufort {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Bft',
+      one: 'Beaufort {0}',
+      other: 'B {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Bft',
+      one: 'Beaufort {0}',
+      other: 'B {0}',
+    ),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'grau',
-          one: '{0} grau',
-          other: '{0} graus',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} grau',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} grau',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'grau',
+      one: '{0} grau',
+      other: '{0} graus',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0} grau', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0} grau', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'graus Celsius',
-          one: '{0} grau Celsius',
-          other: '{0} graus Celsius',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0} °C',
-          other: '{0} °C',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0} °C',
-          other: '{0} °C',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'graus Celsius',
+      one: '{0} grau Celsius',
+      other: '{0} graus Celsius',
+    ),
+    short: UnitCountPattern(_locale, '°C', one: '{0} °C', other: '{0} °C'),
+    narrow: UnitCountPattern(_locale, '°C', one: '{0} °C', other: '{0} °C'),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'graus Fahrenheit',
-          one: '{0} grau Fahrenheit',
-          other: '{0} graus Fahrenheit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0} °F',
-          other: '{0} °F',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0}°F',
-          other: '{0}°F',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'graus Fahrenheit',
+      one: '{0} grau Fahrenheit',
+      other: '{0} graus Fahrenheit',
+    ),
+    short: UnitCountPattern(_locale, '°F', one: '{0} °F', other: '{0} °F'),
+    narrow: UnitCountPattern(_locale, '°F', one: '{0}°F', other: '{0}°F'),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Kelvin',
-          one: '{0} Kelvin',
-          other: '{0} Kelvin',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} Kelvin',
-          other: '{0} K',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} Kelvin',
-          other: '{0} K',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Kelvin',
+      one: '{0} Kelvin',
+      other: '{0} Kelvin',
+    ),
+    short: UnitCountPattern(_locale, 'K', one: '{0} Kelvin', other: '{0} K'),
+    narrow: UnitCountPattern(_locale, 'K', one: '{0} Kelvin', other: '{0} K'),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lliures-peu',
-          one: '{0} lliura-peu',
-          other: '{0} lliures-peu',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} lliura-peu',
-          other: '{0} lbf⋅ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} lliura-peu',
-          other: '{0} lbf⋅ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lliures-peu',
+      one: '{0} lliura-peu',
+      other: '{0} lliures-peu',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} lliura-peu',
+      other: '{0} lbf⋅ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} lliura-peu',
+      other: '{0} lbf⋅ft',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'newtons-metre',
-          one: '{0} newton-metre',
-          other: '{0} newtons-metre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0} newton-metre',
-          other: '{0} N⋅m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0} newton-metre',
-          other: '{0} N⋅m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'newtons-metre',
+      one: '{0} newton-metre',
+      other: '{0} newtons-metre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0} newton-metre',
+      other: '{0} N⋅m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0} newton-metre',
+      other: '{0} N⋅m',
+    ),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quilòmetres cúbics',
-          one: '{0} quilòmetre cúbic',
-          other: '{0} quilòmetres cúbics',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} quilòmetre cúbic',
-          other: '{0} km³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} quilòmetre cúbic',
-          other: '{0} km³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quilòmetres cúbics',
+      one: '{0} quilòmetre cúbic',
+      other: '{0} quilòmetres cúbics',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} quilòmetre cúbic',
+      other: '{0} km³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} quilòmetre cúbic',
+      other: '{0} km³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metres cúbics',
-          one: '{0} metre cúbic',
-          other: '{0} metres cúbics',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} metre cúbic',
-          other: '{0} m³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} metre cúbic',
-          other: '{0} m³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metres cúbics',
+      one: '{0} metre cúbic',
+      other: '{0} metres cúbics',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} metre cúbic',
+      other: '{0} m³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} metre cúbic',
+      other: '{0} m³',
+    ),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'centímetres cúbics',
-          one: '{0} centímetre cúbic',
-          other: '{0} centímetres cúbics',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} centímetre cúbic',
-          other: '{0} cm³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} centímetre cúbic',
-          other: '{0} cm³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'centímetres cúbics',
+      one: '{0} centímetre cúbic',
+      other: '{0} centímetres cúbics',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} centímetre cúbic',
+      other: '{0} cm³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} centímetre cúbic',
+      other: '{0} cm³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milles cúbiques',
-          one: '{0} milla cúbica',
-          other: '{0} milles cúbiques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0} milla cúbica',
-          other: '{0} mi³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0}mi³',
-          other: '{0}mi³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milles cúbiques',
+      one: '{0} milla cúbica',
+      other: '{0} milles cúbiques',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi³',
+      one: '{0} milla cúbica',
+      other: '{0} mi³',
+    ),
+    narrow: UnitCountPattern(_locale, 'mi³', one: '{0}mi³', other: '{0}mi³'),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'iardes cúbiques',
-          one: '{0} iarda cúbica',
-          other: '{0} iardes cúbiques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'yd³',
-          one: '{0} iarda cúbica',
-          other: '{0} yd³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd³',
-          one: '{0} iarda cúbica',
-          other: '{0} yd³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'iardes cúbiques',
+      one: '{0} iarda cúbica',
+      other: '{0} iardes cúbiques',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'yd³',
+      one: '{0} iarda cúbica',
+      other: '{0} yd³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd³',
+      one: '{0} iarda cúbica',
+      other: '{0} yd³',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'peus cúbics',
-          one: '{0} peu cúbic',
-          other: '{0} peus cúbics',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} peu cúbic',
-          other: '{0} ft³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} peu cúbic',
-          other: '{0} ft³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'peus cúbics',
+      one: '{0} peu cúbic',
+      other: '{0} peus cúbics',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} peu cúbic',
+      other: '{0} ft³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} peu cúbic',
+      other: '{0} ft³',
+    ),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'polzades cúbiques',
-          one: '{0} polzada cúbica',
-          other: '{0} polzades cúbiques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0} polzada cúbica',
-          other: '{0} in³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0} polzada cúbica',
-          other: '{0} in³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'polzades cúbiques',
+      one: '{0} polzada cúbica',
+      other: '{0} polzades cúbiques',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0} polzada cúbica',
+      other: '{0} in³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0} polzada cúbica',
+      other: '{0} in³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megalitres',
-          one: '{0} megalitre',
-          other: '{0} megalitres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Ml',
-          one: '{0} Ml',
-          other: '{0} Ml',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Ml',
-          one: '{0} Ml',
-          other: '{0} Ml',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megalitres',
+      one: '{0} megalitre',
+      other: '{0} megalitres',
+    ),
+    short: UnitCountPattern(_locale, 'Ml', one: '{0} Ml', other: '{0} Ml'),
+    narrow: UnitCountPattern(_locale, 'Ml', one: '{0} Ml', other: '{0} Ml'),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hectolitres',
-          one: '{0} hectolitre',
-          other: '{0} hectolitres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hl',
-          one: '{0} hl',
-          other: '{0} hl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hl',
-          one: '{0} hl',
-          other: '{0} hl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hectolitres',
+      one: '{0} hectolitre',
+      other: '{0} hectolitres',
+    ),
+    short: UnitCountPattern(_locale, 'hl', one: '{0} hl', other: '{0} hl'),
+    narrow: UnitCountPattern(_locale, 'hl', one: '{0} hl', other: '{0} hl'),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'litres',
-          one: '{0} litre',
-          other: '{0} litres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'l',
-          one: '{0} litre',
-          other: '{0} l',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'l',
-          one: '{0} litre',
-          other: '{0} l',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'litres',
+      one: '{0} litre',
+      other: '{0} litres',
+    ),
+    short: UnitCountPattern(_locale, 'l', one: '{0} litre', other: '{0} l'),
+    narrow: UnitCountPattern(_locale, 'l', one: '{0} litre', other: '{0} l'),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'decilitres',
-          one: '{0} decilitre',
-          other: '{0} decilitres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dl',
-          one: '{0} dl',
-          other: '{0} dl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dl',
-          one: '{0} dl',
-          other: '{0} dl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'decilitres',
+      one: '{0} decilitre',
+      other: '{0} decilitres',
+    ),
+    short: UnitCountPattern(_locale, 'dl', one: '{0} dl', other: '{0} dl'),
+    narrow: UnitCountPattern(_locale, 'dl', one: '{0} dl', other: '{0} dl'),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'centilitres',
-          one: '{0} centilitre',
-          other: '{0} centilitres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cl',
-          one: '{0} cl',
-          other: '{0} cl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cl',
-          one: '{0} cl',
-          other: '{0} cl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'centilitres',
+      one: '{0} centilitre',
+      other: '{0} centilitres',
+    ),
+    short: UnitCountPattern(_locale, 'cl', one: '{0} cl', other: '{0} cl'),
+    narrow: UnitCountPattern(_locale, 'cl', one: '{0} cl', other: '{0} cl'),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mil·lilitres',
-          one: '{0} mil·lilitre',
-          other: '{0} mil·lilitres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ml',
-          one: '{0} ml',
-          other: '{0} ml',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ml',
-          one: '{0} ml',
-          other: '{0} ml',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mil·lilitres',
+      one: '{0} mil·lilitre',
+      other: '{0} mil·lilitres',
+    ),
+    short: UnitCountPattern(_locale, 'ml', one: '{0} ml', other: '{0} ml'),
+    narrow: UnitCountPattern(_locale, 'ml', one: '{0} ml', other: '{0} ml'),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pintes mètriques',
-          one: '{0} pinta mètrica',
-          other: '{0} pintes mètriques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ptm',
-          one: '{0} ptm',
-          other: '{0} ptm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ptm',
-          one: '{0} ptm',
-          other: '{0} ptm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pintes mètriques',
+      one: '{0} pinta mètrica',
+      other: '{0} pintes mètriques',
+    ),
+    short: UnitCountPattern(_locale, 'ptm', one: '{0} ptm', other: '{0} ptm'),
+    narrow: UnitCountPattern(_locale, 'ptm', one: '{0} ptm', other: '{0} ptm'),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tasses mètriques',
-          one: '{0} tassa mètrica',
-          other: '{0} tasses mètriques',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0} tassa mètrica',
-          other: '{0} mc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0} tassa mètrica',
-          other: '{0} mc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tasses mètriques',
+      one: '{0} tassa mètrica',
+      other: '{0} tasses mètriques',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mcup',
+      one: '{0} tassa mètrica',
+      other: '{0} mc',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mcup',
+      one: '{0} tassa mètrica',
+      other: '{0} mc',
+    ),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'acre-peu',
-          one: '{0} acre-peu',
-          other: '{0} acres-peus',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ac ft',
-          one: '{0} acre-peu',
-          other: '{0} ac ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ac ft',
-          one: '{0} acre-peu',
-          other: '{0} ac ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'acre-peu',
+      one: '{0} acre-peu',
+      other: '{0} acres-peus',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ac ft',
+      one: '{0} acre-peu',
+      other: '{0} ac ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ac ft',
+      one: '{0} acre-peu',
+      other: '{0} ac ft',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bushels',
-          one: '{0} bushel',
-          other: '{0} bushels',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bushels',
-          one: '{0} bushel',
-          other: '{0} bu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bu',
-          one: '{0} bushel',
-          other: '{0} bu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bushels',
+      one: '{0} bushel',
+      other: '{0} bushels',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'bushels',
+      one: '{0} bushel',
+      other: '{0} bu',
+    ),
+    narrow: UnitCountPattern(_locale, 'bu', one: '{0} bushel', other: '{0} bu'),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'galons',
-          one: '{0} galó',
-          other: '{0} galons',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0} gal',
-          other: '{0} gal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0} gal',
-          other: '{0} gal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'galons',
+      one: '{0} galó',
+      other: '{0} galons',
+    ),
+    short: UnitCountPattern(_locale, 'gal', one: '{0} gal', other: '{0} gal'),
+    narrow: UnitCountPattern(_locale, 'gal', one: '{0} gal', other: '{0} gal'),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'galons imperials',
-          one: '{0} galó imperial',
-          other: '{0} galons imperials',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gal imp.',
-          one: '{0} gal imp.',
-          other: '{0} gal imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gal imp.',
-          one: '{0} gal imp.',
-          other: '{0} gal imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'galons imperials',
+      one: '{0} galó imperial',
+      other: '{0} galons imperials',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gal imp.',
+      one: '{0} gal imp.',
+      other: '{0} gal imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gal imp.',
+      one: '{0} gal imp.',
+      other: '{0} gal imp.',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quarts',
-          one: '{0} quart',
-          other: '{0} quarts',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'qt',
-          one: '{0} quart',
-          other: '{0} qt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'qt',
-          one: '{0} quart',
-          other: '{0} qt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quarts',
+      one: '{0} quart',
+      other: '{0} quarts',
+    ),
+    short: UnitCountPattern(_locale, 'qt', one: '{0} quart', other: '{0} qt'),
+    narrow: UnitCountPattern(_locale, 'qt', one: '{0} quart', other: '{0} qt'),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pintes',
-          one: '{0} pinta',
-          other: '{0} pintes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} pinta',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} pinta',
-          other: '{0} pt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pintes',
+      one: '{0} pinta',
+      other: '{0} pintes',
+    ),
+    short: UnitCountPattern(_locale, 'pt', one: '{0} pinta', other: '{0} pt'),
+    narrow: UnitCountPattern(_locale, 'pt', one: '{0} pinta', other: '{0} pt'),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tasses',
-          one: '{0} tassa',
-          other: '{0} tasses',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tassa',
-          one: '{0} tassa',
-          other: '{0} tasses',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'tassa',
-          one: '{0} tassa',
-          other: '{0} tasses',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tasses',
+      one: '{0} tassa',
+      other: '{0} tasses',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tassa',
+      one: '{0} tassa',
+      other: '{0} tasses',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'tassa',
+      one: '{0} tassa',
+      other: '{0} tasses',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unces líquides',
-          one: '{0} unça líquida',
-          other: '{0} unces líquides',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unces líquides',
+      one: '{0} unça líquida',
+      other: '{0} unces líquides',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'unces líquides imperials',
-          one: '{0} unça líquida imperial',
-          other: '{0} unces líquides imperials',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fl oz imp.',
-          one: '{0} fl oz imp.',
-          other: '{0} fl oz imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl oz imp.',
-          one: '{0} fl oz imp.',
-          other: '{0} fl oz imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'unces líquides imperials',
+      one: '{0} unça líquida imperial',
+      other: '{0} unces líquides imperials',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fl oz imp.',
+      one: '{0} fl oz imp.',
+      other: '{0} fl oz imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl oz imp.',
+      one: '{0} fl oz imp.',
+      other: '{0} fl oz imp.',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cullerades',
-          one: '{0} cullerada',
-          other: '{0} cullerades',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cull.',
-          one: '{0} cull.',
-          other: '{0} cull.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cull.',
-          one: '{0} cull.',
-          other: '{0} cull.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cullerades',
+      one: '{0} cullerada',
+      other: '{0} cullerades',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cull.',
+      one: '{0} cull.',
+      other: '{0} cull.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cull.',
+      one: '{0} cull.',
+      other: '{0} cull.',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'culleradetes',
-          one: '{0} culleradeta',
-          other: '{0} culleradetes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cdta.',
-          one: '{0} cdta.',
-          other: '{0} cdta.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cdta.',
-          one: '{0} cdta.',
-          other: '{0} cdta.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'culleradetes',
+      one: '{0} culleradeta',
+      other: '{0} culleradetes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cdta.',
+      one: '{0} cdta.',
+      other: '{0} cdta.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cdta.',
+      one: '{0} cdta.',
+      other: '{0} cdta.',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'barrils',
-          one: '{0} barril',
-          other: '{0} barrils',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bbl',
-          one: '{0} barril',
-          other: '{0} bbl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bbl',
-          one: '{0} barril',
-          other: '{0} bbl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'barrils',
+      one: '{0} barril',
+      other: '{0} barrils',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'bbl',
+      one: '{0} barril',
+      other: '{0} bbl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'bbl',
+      one: '{0} barril',
+      other: '{0} bbl',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'culleradeta de postres',
-          one: '{0} culleradeta de postres',
-          other: '{0} culleradetes de postres',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'culleradeta postres',
-          one: '{0} culleradeta postres',
-          other: '{0} culleradetes postres',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'c. postres',
-          one: '{0} c. postr.',
-          other: '{0} c. postr.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'culleradeta de postres',
+      one: '{0} culleradeta de postres',
+      other: '{0} culleradetes de postres',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'culleradeta postres',
+      one: '{0} culleradeta postres',
+      other: '{0} culleradetes postres',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'c. postres',
+      one: '{0} c. postr.',
+      other: '{0} c. postr.',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'culleradeta de postres imperial',
-          one: '{0} culleradeta de postres imperial',
-          other: '{0} culleradetes de postres imperials',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cull. postres imp.',
-          one: '{0} cull. postres imp.',
-          other: '{0} cull. postres imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cull. postres imp.',
-          one: '{0} cull. postres imp.',
-          other: '{0} cull. postres imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'culleradeta de postres imperial',
+      one: '{0} culleradeta de postres imperial',
+      other: '{0} culleradetes de postres imperials',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cull. postres imp.',
+      one: '{0} cull. postres imp.',
+      other: '{0} cull. postres imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cull. postres imp.',
+      one: '{0} cull. postres imp.',
+      other: '{0} cull. postres imp.',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gotes',
-          one: '{0} gota',
-          other: '{0} gotes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gota',
-          one: '{0} gota',
-          other: '{0} gotes',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gota',
-          one: '{0} gota',
-          other: '{0} gotes',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gotes',
+      one: '{0} gota',
+      other: '{0} gotes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gota',
+      one: '{0} gota',
+      other: '{0} gotes',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gota',
+      one: '{0} gota',
+      other: '{0} gotes',
+    ),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dracma',
-          one: '{0} dracma',
-          other: '{0} dracmes',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dracma fluid',
-          one: '{0} dracma fluid',
-          other: '{0} dracmes fluids',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dracma fluid',
-          one: '{0} dracma fluid',
-          other: '{0} dracmes fluids',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dracma',
+      one: '{0} dracma',
+      other: '{0} dracmes',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dracma fluid',
+      one: '{0} dracma fluid',
+      other: '{0} dracmes fluids',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dracma fluid',
+      one: '{0} dracma fluid',
+      other: '{0} dracmes fluids',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mesuradors de cocteleria',
-          one: '{0} mesurador de cocteleria',
-          other: '{0} mesuradors de cocteleria',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mesurador',
-          one: '{0} mesurador',
-          other: '{0} mesuradors',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mes.',
-          one: '{0} mes.',
-          other: '{0} mes.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mesuradors de cocteleria',
+      one: '{0} mesurador de cocteleria',
+      other: '{0} mesuradors de cocteleria',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mesurador',
+      one: '{0} mesurador',
+      other: '{0} mesuradors',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mes.',
+      one: '{0} mes.',
+      other: '{0} mes.',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pessics',
-          one: '{0} pessic',
-          other: '{0} pessics',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pessic',
-          one: '{0} pessic',
-          other: '{0} pessics',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pessic',
-          one: '{0} pessic',
-          other: '{0} pessics',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pessics',
+      one: '{0} pessic',
+      other: '{0} pessics',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pessic',
+      one: '{0} pessic',
+      other: '{0} pessics',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pessic',
+      one: '{0} pessic',
+      other: '{0} pessics',
+    ),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'quarts imperials',
-          one: '{0} quart imperial',
-          other: '{0} quarts imperials',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'quart imperial',
-          one: '{0} quart imperial',
-          other: '{0} quarts imperials',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'qt imp',
-          one: '{0} qt imp',
-          other: '{0} qt imp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'quarts imperials',
+      one: '{0} quart imperial',
+      other: '{0} quarts imperials',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'quart imperial',
+      one: '{0} quart imperial',
+      other: '{0} quarts imperials',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'qt imp',
+      one: '{0} qt imp',
+      other: '{0} qt imp',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'llum',
-          one: '{0} llum',
-          other: '{0} llum',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'llum',
-          one: '{0} llum',
-          other: '{0} llum',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'llum',
-          one: '{0} llum',
-          other: '{0} llum',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'llum', one: '{0} llum', other: '{0} llum'),
+    short: UnitCountPattern(
+      _locale,
+      'llum',
+      one: '{0} llum',
+      other: '{0} llum',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'llum',
+      one: '{0} llum',
+      other: '{0} llum',
+    ),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'part per mil milions',
-          one: '{0} part per mil milions',
-          other: '{0} parts per mil milions',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'part/mil milions',
-          one: '{0} part per mil milions',
-          other: '{0} ppb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'part/mil milions',
-          one: '{0} part per mil milions',
-          other: '{0} ppb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'part per mil milions',
+      one: '{0} part per mil milions',
+      other: '{0} parts per mil milions',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'part/mil milions',
+      one: '{0} part per mil milions',
+      other: '{0} ppb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'part/mil milions',
+      one: '{0} part per mil milions',
+      other: '{0} ppb',
+    ),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nits',
-          one: '{0} nit',
-          other: '{0} nits',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nits',
-          one: '{0} nit',
-          other: '{0} nits',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nit',
-          one: '{0}/nit',
-          other: '{0}/nit',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'nits', one: '{0} nit', other: '{0} nits'),
+    short: UnitCountPattern(_locale, 'nits', one: '{0} nit', other: '{0} nits'),
+    narrow: UnitCountPattern(_locale, 'nit', one: '{0}/nit', other: '{0}/nit'),
+  );
 }
 
 class DateFieldsCa extends DateFields {
   const DateFieldsCa(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'era',
-        short: 'era',
-        narrow: 'era',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'era', short: 'era', narrow: 'era');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'any',
-          short: 'any',
-          narrow: 'any',
-        ),
-        previous: MultiLength(
-          long: 'l’any passat',
-          short: 'l’any passat',
-          narrow: 'l’any passat',
-        ),
-        now: MultiLength(
-          long: 'enguany',
-          short: 'enguany',
-          narrow: 'enguany',
-        ),
-        next: MultiLength(
-          long: 'l’any que ve',
-          short: 'l’any que ve',
-          narrow: 'l’any que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} any',
-            other: 'fa {0} anys',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} any',
-            other: 'fa {0} anys',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} any',
-            other: 'fa {0} anys',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} any',
-            other: 'd’aquí a {0} anys',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} any',
-            other: 'd’aquí a {0} anys',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} any',
-            other: 'd’aquí a {0} anys',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'any', short: 'any', narrow: 'any'),
+    previous: MultiLength(
+      long: 'l’any passat',
+      short: 'l’any passat',
+      narrow: 'l’any passat',
+    ),
+    now: MultiLength(long: 'enguany', short: 'enguany', narrow: 'enguany'),
+    next: MultiLength(
+      long: 'l’any que ve',
+      short: 'l’any que ve',
+      narrow: 'l’any que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'fa {0} any', other: 'fa {0} anys'),
+      short: RelativeTime(_locale, one: 'fa {0} any', other: 'fa {0} anys'),
+      narrow: RelativeTime(_locale, one: 'fa {0} any', other: 'fa {0} anys'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} any',
+        other: 'd’aquí a {0} anys',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} any',
+        other: 'd’aquí a {0} anys',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} any',
+        other: 'd’aquí a {0} anys',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'trimestre',
-          short: 'trim.',
-          narrow: 'trim.',
-        ),
-        previous: MultiLength(
-          long: 'el trimestre passat',
-          short: 'el trim. passat',
-          narrow: 'trim. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest trimestre',
-          short: 'aquest trim.',
-          narrow: 'aquest trim.',
-        ),
-        next: MultiLength(
-          long: 'el trimestre que ve',
-          short: 'el trim. que ve',
-          narrow: 'trim. vinent',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} trimestre',
-            other: 'fa {0} trimestres',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} trim.',
-            other: 'fa {0} trim.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} trim.',
-            other: 'fa {0} trim.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} trimestre',
-            other: 'd’aquí a {0} trimestres',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} trim.',
-            other: 'd’aquí a {0} trim.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} trim.',
-            other: 'd’aquí a {0} trim.',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'trimestre',
+      short: 'trim.',
+      narrow: 'trim.',
+    ),
+    previous: MultiLength(
+      long: 'el trimestre passat',
+      short: 'el trim. passat',
+      narrow: 'trim. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest trimestre',
+      short: 'aquest trim.',
+      narrow: 'aquest trim.',
+    ),
+    next: MultiLength(
+      long: 'el trimestre que ve',
+      short: 'el trim. que ve',
+      narrow: 'trim. vinent',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} trimestre',
+        other: 'fa {0} trimestres',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} trim.', other: 'fa {0} trim.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} trim.', other: 'fa {0} trim.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} trimestre',
+        other: 'd’aquí a {0} trimestres',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} trim.',
+        other: 'd’aquí a {0} trim.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} trim.',
+        other: 'd’aquí a {0} trim.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'mes',
-          short: 'mes',
-          narrow: 'mes',
-        ),
-        previous: MultiLength(
-          long: 'el mes passat',
-          short: 'el mes passat',
-          narrow: 'el mes passat',
-        ),
-        now: MultiLength(
-          long: 'aquest mes',
-          short: 'aquest mes',
-          narrow: 'aquest mes',
-        ),
-        next: MultiLength(
-          long: 'el mes que ve',
-          short: 'el mes que ve',
-          narrow: 'el mes que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} mes',
-            other: 'fa {0} mesos',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} mes',
-            other: 'fa {0} mesos',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} mes',
-            other: 'fa {0} mesos',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} mes',
-            other: 'd’aquí a {0} mesos',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} mes',
-            other: 'd’aquí a {0} mesos',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} mes',
-            other: 'd’aquí a {0} mesos',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'mes', short: 'mes', narrow: 'mes'),
+    previous: MultiLength(
+      long: 'el mes passat',
+      short: 'el mes passat',
+      narrow: 'el mes passat',
+    ),
+    now: MultiLength(
+      long: 'aquest mes',
+      short: 'aquest mes',
+      narrow: 'aquest mes',
+    ),
+    next: MultiLength(
+      long: 'el mes que ve',
+      short: 'el mes que ve',
+      narrow: 'el mes que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'fa {0} mes', other: 'fa {0} mesos'),
+      short: RelativeTime(_locale, one: 'fa {0} mes', other: 'fa {0} mesos'),
+      narrow: RelativeTime(_locale, one: 'fa {0} mes', other: 'fa {0} mesos'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} mes',
+        other: 'd’aquí a {0} mesos',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} mes',
+        other: 'd’aquí a {0} mesos',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} mes',
+        other: 'd’aquí a {0} mesos',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'setmana',
-          short: 'setm.',
-          narrow: 'setm.',
-        ),
-        previous: MultiLength(
-          long: 'la setmana passada',
-          short: 'la setm. passada',
-          narrow: 'la setm. passada',
-        ),
-        now: MultiLength(
-          long: 'aquesta setmana',
-          short: 'aquesta setm.',
-          narrow: 'aquesta setm.',
-        ),
-        next: MultiLength(
-          long: 'la setmana que ve',
-          short: 'la setm. que ve',
-          narrow: 'la setm. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} setmana',
-            other: 'fa {0} setmanes',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} setm.',
-            other: 'fa {0} setm.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} setm.',
-            other: 'fa {0} setm.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} setmana',
-            other: 'd’aquí a {0} setmanes',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} setm.',
-            other: 'd’aquí a {0} setm.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} setm.',
-            other: 'd’aquí a {0} setm.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'setmana', short: 'setm.', narrow: 'setm.'),
+    previous: MultiLength(
+      long: 'la setmana passada',
+      short: 'la setm. passada',
+      narrow: 'la setm. passada',
+    ),
+    now: MultiLength(
+      long: 'aquesta setmana',
+      short: 'aquesta setm.',
+      narrow: 'aquesta setm.',
+    ),
+    next: MultiLength(
+      long: 'la setmana que ve',
+      short: 'la setm. que ve',
+      narrow: 'la setm. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} setmana',
+        other: 'fa {0} setmanes',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} setm.', other: 'fa {0} setm.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} setm.', other: 'fa {0} setm.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} setmana',
+        other: 'd’aquí a {0} setmanes',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} setm.',
+        other: 'd’aquí a {0} setm.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} setm.',
+        other: 'd’aquí a {0} setm.',
+      ),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'setmana del mes',
-        short: 'setm. del mes',
-        narrow: 'setm. del mes',
-      );
+    long: 'setmana del mes',
+    short: 'setm. del mes',
+    narrow: 'setm. del mes',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'dia',
-          short: 'dia',
-          narrow: 'dia',
-        ),
-        previous: MultiLength(
-          long: 'ahir',
-          short: 'ahir',
-          narrow: 'ahir',
-        ),
-        now: MultiLength(
-          long: 'avui',
-          short: 'avui',
-          narrow: 'avui',
-        ),
-        next: MultiLength(
-          long: 'demà',
-          short: 'demà',
-          narrow: 'demà',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} dia',
-            other: 'fa {0} dies',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} dia',
-            other: 'fa {0} dies',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} dia',
-            other: 'fa {0} dies',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dia',
-            other: 'd’aquí a {0} dies',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dia',
-            other: 'd’aquí a {0} dies',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dia',
-            other: 'd’aquí a {0} dies',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'dia', short: 'dia', narrow: 'dia'),
+    previous: MultiLength(long: 'ahir', short: 'ahir', narrow: 'ahir'),
+    now: MultiLength(long: 'avui', short: 'avui', narrow: 'avui'),
+    next: MultiLength(long: 'demà', short: 'demà', narrow: 'demà'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'fa {0} dia', other: 'fa {0} dies'),
+      short: RelativeTime(_locale, one: 'fa {0} dia', other: 'fa {0} dies'),
+      narrow: RelativeTime(_locale, one: 'fa {0} dia', other: 'fa {0} dies'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dia',
+        other: 'd’aquí a {0} dies',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dia',
+        other: 'd’aquí a {0} dies',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dia',
+        other: 'd’aquí a {0} dies',
+      ),
+    ),
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'dia de l’any',
-        short: 'dia de l’any',
-        narrow: 'dia de l’any',
-      );
+    long: 'dia de l’any',
+    short: 'dia de l’any',
+    narrow: 'dia de l’any',
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'dia de la setmana',
-        short: 'dia de la setm.',
-        narrow: 'dia de la setm.',
-      );
+    long: 'dia de la setmana',
+    short: 'dia de la setm.',
+    narrow: 'dia de la setm.',
+  );
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'dia de la setmana del mes',
-        short: 'dia de la setm. del mes',
-        narrow: 'dia de la setm. del mes',
-      );
+    long: 'dia de la setmana del mes',
+    short: 'dia de la setm. del mes',
+    narrow: 'dia de la setm. del mes',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'diumenge passat',
-          short: 'dg. passat',
-          narrow: 'dg. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest diumenge',
-          short: 'aquest dg.',
-          narrow: 'aquest dg.',
-        ),
-        next: MultiLength(
-          long: 'diumenge que ve',
-          short: 'dg. que ve',
-          narrow: 'dg. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} diumenge',
-            other: 'fa {0} diumenges',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} dg.',
-            other: 'fa {0} dg.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} dg.',
-            other: 'fa {0} dg.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} diumenge',
-            other: 'd’aquí a {0} diumenges',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dg.',
-            other: 'd’aquí a {0} dg.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dg.',
-            other: 'd’aquí a {0} dg.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'diumenge passat',
+      short: 'dg. passat',
+      narrow: 'dg. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest diumenge',
+      short: 'aquest dg.',
+      narrow: 'aquest dg.',
+    ),
+    next: MultiLength(
+      long: 'diumenge que ve',
+      short: 'dg. que ve',
+      narrow: 'dg. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} diumenge',
+        other: 'fa {0} diumenges',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} dg.', other: 'fa {0} dg.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} dg.', other: 'fa {0} dg.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} diumenge',
+        other: 'd’aquí a {0} diumenges',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dg.',
+        other: 'd’aquí a {0} dg.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dg.',
+        other: 'd’aquí a {0} dg.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'dilluns passat',
-          short: 'dl. passat',
-          narrow: 'dl. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest dilluns',
-          short: 'aquest dl.',
-          narrow: 'aquest dl.',
-        ),
-        next: MultiLength(
-          long: 'dilluns que ve',
-          short: 'dl. que ve',
-          narrow: 'dl. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} dilluns',
-            other: 'fa {0} dilluns',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} dl.',
-            other: 'fa {0} dl.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} dl.',
-            other: 'fa {0} dl.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dilluns',
-            other: 'd’aquí a {0} dilluns',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dl.',
-            other: 'd’aquí a {0} dl.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dl.',
-            other: 'd’aquí a {0} dl.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'dilluns passat',
+      short: 'dl. passat',
+      narrow: 'dl. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest dilluns',
+      short: 'aquest dl.',
+      narrow: 'aquest dl.',
+    ),
+    next: MultiLength(
+      long: 'dilluns que ve',
+      short: 'dl. que ve',
+      narrow: 'dl. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} dilluns',
+        other: 'fa {0} dilluns',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} dl.', other: 'fa {0} dl.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} dl.', other: 'fa {0} dl.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dilluns',
+        other: 'd’aquí a {0} dilluns',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dl.',
+        other: 'd’aquí a {0} dl.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dl.',
+        other: 'd’aquí a {0} dl.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'dimarts passat',
-          short: 'dt. passat',
-          narrow: 'dt. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest dimarts',
-          short: 'aquest dt.',
-          narrow: 'aquest dt.',
-        ),
-        next: MultiLength(
-          long: 'dimarts que ve',
-          short: 'dt. que ve',
-          narrow: 'dt. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} dimarts',
-            other: 'fa {0} dimarts',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} dt.',
-            other: 'fa {0} dt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} dt.',
-            other: 'fa {0} dt.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dimarts',
-            other: 'd’aquí a {0} dimarts',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dt.',
-            other: 'd’aquí a {0} dt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dt.',
-            other: 'd’aquí a {0} dt.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'dimarts passat',
+      short: 'dt. passat',
+      narrow: 'dt. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest dimarts',
+      short: 'aquest dt.',
+      narrow: 'aquest dt.',
+    ),
+    next: MultiLength(
+      long: 'dimarts que ve',
+      short: 'dt. que ve',
+      narrow: 'dt. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} dimarts',
+        other: 'fa {0} dimarts',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} dt.', other: 'fa {0} dt.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} dt.', other: 'fa {0} dt.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dimarts',
+        other: 'd’aquí a {0} dimarts',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dt.',
+        other: 'd’aquí a {0} dt.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dt.',
+        other: 'd’aquí a {0} dt.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'dimecres passat',
-          short: 'dc. passat',
-          narrow: 'dc. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest dimecres',
-          short: 'aquest dc.',
-          narrow: 'aquest dc.',
-        ),
-        next: MultiLength(
-          long: 'dimecres que ve',
-          short: 'dc. que ve',
-          narrow: 'dc. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} dimecres',
-            other: 'fa {0} dimecres',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} dc.',
-            other: 'fa {0} dc.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} dc.',
-            other: 'fa {0} dc.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dimecres',
-            other: 'd’aquí a {0} dimecres',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dc.',
-            other: 'd’aquí a {0} dc.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dc.',
-            other: 'd’aquí a {0} dc.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'dimecres passat',
+      short: 'dc. passat',
+      narrow: 'dc. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest dimecres',
+      short: 'aquest dc.',
+      narrow: 'aquest dc.',
+    ),
+    next: MultiLength(
+      long: 'dimecres que ve',
+      short: 'dc. que ve',
+      narrow: 'dc. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} dimecres',
+        other: 'fa {0} dimecres',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} dc.', other: 'fa {0} dc.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} dc.', other: 'fa {0} dc.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dimecres',
+        other: 'd’aquí a {0} dimecres',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dc.',
+        other: 'd’aquí a {0} dc.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dc.',
+        other: 'd’aquí a {0} dc.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'dijous passat',
-          short: 'dj. passat',
-          narrow: 'dj. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest dijous',
-          short: 'aquest dj.',
-          narrow: 'aquest dj.',
-        ),
-        next: MultiLength(
-          long: 'dijous que ve',
-          short: 'dj. que ve',
-          narrow: 'dj. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} dijous',
-            other: 'fa {0} dijous',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} dj.',
-            other: 'fa {0} dj.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} dj.',
-            other: 'fa {0} dj.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dijous',
-            other: 'd’aquí a {0} dijous',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dj.',
-            other: 'd’aquí a {0} dj.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dj.',
-            other: 'd’aquí a {0} dj.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'dijous passat',
+      short: 'dj. passat',
+      narrow: 'dj. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest dijous',
+      short: 'aquest dj.',
+      narrow: 'aquest dj.',
+    ),
+    next: MultiLength(
+      long: 'dijous que ve',
+      short: 'dj. que ve',
+      narrow: 'dj. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'fa {0} dijous', other: 'fa {0} dijous'),
+      short: RelativeTime(_locale, one: 'fa {0} dj.', other: 'fa {0} dj.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} dj.', other: 'fa {0} dj.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dijous',
+        other: 'd’aquí a {0} dijous',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dj.',
+        other: 'd’aquí a {0} dj.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dj.',
+        other: 'd’aquí a {0} dj.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'divendres passat',
-          short: 'dv. passat',
-          narrow: 'dv. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest divendres',
-          short: 'aquest dv.',
-          narrow: 'aquest dv.',
-        ),
-        next: MultiLength(
-          long: 'divendres que ve',
-          short: 'dv. que ve',
-          narrow: 'dv. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} divendres',
-            other: 'fa {0} divendres',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} dv.',
-            other: 'fa {0} dv.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} dv.',
-            other: 'fa {0} dv.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} divendres',
-            other: 'd’aquí a {0} divendres',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dv.',
-            other: 'd’aquí a {0} dv.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dv.',
-            other: 'd’aquí a {0} dv.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'divendres passat',
+      short: 'dv. passat',
+      narrow: 'dv. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest divendres',
+      short: 'aquest dv.',
+      narrow: 'aquest dv.',
+    ),
+    next: MultiLength(
+      long: 'divendres que ve',
+      short: 'dv. que ve',
+      narrow: 'dv. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} divendres',
+        other: 'fa {0} divendres',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} dv.', other: 'fa {0} dv.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} dv.', other: 'fa {0} dv.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} divendres',
+        other: 'd’aquí a {0} divendres',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dv.',
+        other: 'd’aquí a {0} dv.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dv.',
+        other: 'd’aquí a {0} dv.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'dissabte passat',
-          short: 'ds. passat',
-          narrow: 'ds. passat',
-        ),
-        now: MultiLength(
-          long: 'aquest dissabte',
-          short: 'aquest ds.',
-          narrow: 'aquest ds.',
-        ),
-        next: MultiLength(
-          long: 'dissabte que ve',
-          short: 'ds. que ve',
-          narrow: 'ds. que ve',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} dissabte',
-            other: 'fa {0} dissabtes',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} ds.',
-            other: 'fa {0} ds.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} ds.',
-            other: 'fa {0} ds.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} dissabte',
-            other: 'd’aquí a {0} dissabtes',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} ds.',
-            other: 'd’aquí a {0} ds.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} ds.',
-            other: 'd’aquí a {0} ds.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'dissabte passat',
+      short: 'ds. passat',
+      narrow: 'ds. passat',
+    ),
+    now: MultiLength(
+      long: 'aquest dissabte',
+      short: 'aquest ds.',
+      narrow: 'aquest ds.',
+    ),
+    next: MultiLength(
+      long: 'dissabte que ve',
+      short: 'ds. que ve',
+      narrow: 'ds. que ve',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'fa {0} dissabte',
+        other: 'fa {0} dissabtes',
+      ),
+      short: RelativeTime(_locale, one: 'fa {0} ds.', other: 'fa {0} ds.'),
+      narrow: RelativeTime(_locale, one: 'fa {0} ds.', other: 'fa {0} ds.'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} dissabte',
+        other: 'd’aquí a {0} dissabtes',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} ds.',
+        other: 'd’aquí a {0} ds.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} ds.',
+        other: 'd’aquí a {0} ds.',
+      ),
+    ),
+  );
 
   @override
   MultiLength get dayperiod => const MultiLength(
-        long: 'a. m./p. m.',
-        short: 'a. m./p. m.',
-        narrow: 'a. m./p. m.',
-      );
+    long: 'a. m./p. m.',
+    short: 'a. m./p. m.',
+    narrow: 'a. m./p. m.',
+  );
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'hora',
-          short: 'h',
-          narrow: 'h',
-        ),
-        now: MultiLength(
-          long: 'aquesta hora',
-          short: 'aquesta hora',
-          narrow: 'aquesta hora',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} hora',
-            other: 'fa {0} hores',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} h',
-            other: 'fa {0} h',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} h',
-            other: 'fa {0} h',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} hora',
-            other: 'd’aquí a {0} hores',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} h',
-            other: 'd’aquí a {0} h',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd‘aquí a {0} h',
-            other: 'd‘aquí a {0} h',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'hora', short: 'h', narrow: 'h'),
+    now: MultiLength(
+      long: 'aquesta hora',
+      short: 'aquesta hora',
+      narrow: 'aquesta hora',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'fa {0} hora', other: 'fa {0} hores'),
+      short: RelativeTime(_locale, one: 'fa {0} h', other: 'fa {0} h'),
+      narrow: RelativeTime(_locale, one: 'fa {0} h', other: 'fa {0} h'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} hora',
+        other: 'd’aquí a {0} hores',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} h',
+        other: 'd’aquí a {0} h',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd‘aquí a {0} h',
+        other: 'd‘aquí a {0} h',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'minut',
-          short: 'min',
-          narrow: 'min',
-        ),
-        now: MultiLength(
-          long: 'aquest minut',
-          short: 'aquest minut',
-          narrow: 'aquest minut',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} minut',
-            other: 'fa {0} minuts',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} min',
-            other: 'fa {0} min',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} min',
-            other: 'fa {0} min',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} minut',
-            other: 'd’aquí a {0} minuts',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} min',
-            other: 'd’aquí a {0} min',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} min',
-            other: 'd’aquí a {0} min',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'minut', short: 'min', narrow: 'min'),
+    now: MultiLength(
+      long: 'aquest minut',
+      short: 'aquest minut',
+      narrow: 'aquest minut',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'fa {0} minut', other: 'fa {0} minuts'),
+      short: RelativeTime(_locale, one: 'fa {0} min', other: 'fa {0} min'),
+      narrow: RelativeTime(_locale, one: 'fa {0} min', other: 'fa {0} min'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} minut',
+        other: 'd’aquí a {0} minuts',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} min',
+        other: 'd’aquí a {0} min',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} min',
+        other: 'd’aquí a {0} min',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'segon',
-          short: 's',
-          narrow: 's',
-        ),
-        now: MultiLength(
-          long: 'ara',
-          short: 'ara',
-          narrow: 'ara',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'fa {0} segon',
-            other: 'fa {0} segons',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'fa {0} s',
-            other: 'fa {0} s',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'fa {0} s',
-            other: 'fa {0} s',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} segon',
-            other: 'd’aquí a {0} segons',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} s',
-            other: 'd’aquí a {0} s',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'd’aquí a {0} s',
-            other: 'd’aquí a {0} s',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'segon', short: 's', narrow: 's'),
+    now: MultiLength(long: 'ara', short: 'ara', narrow: 'ara'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'fa {0} segon', other: 'fa {0} segons'),
+      short: RelativeTime(_locale, one: 'fa {0} s', other: 'fa {0} s'),
+      narrow: RelativeTime(_locale, one: 'fa {0} s', other: 'fa {0} s'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} segon',
+        other: 'd’aquí a {0} segons',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} s',
+        other: 'd’aquí a {0} s',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'd’aquí a {0} s',
+        other: 'd’aquí a {0} s',
+      ),
+    ),
+  );
 
   @override
   MultiLength get zone => const MultiLength(
-        long: 'fus horari',
-        short: 'fus horari',
-        narrow: 'fus horari',
-      );
+    long: 'fus horari',
+    short: 'fus horari',
+    narrow: 'fus horari',
+  );
 }
 
 class LanguagesCa extends Languages {
@@ -5361,8 +4427,12 @@ class LanguagesCa extends Languages {
   static const _chp = Language('chp', 'chipewyan');
   static const _chr = Language('chr', 'cherokee');
   static const _chy = Language('chy', 'xeiene');
-  static const _ckb =
-      Language('ckb', 'kurd central', variant: 'kurd sorani', menu: 'sorani');
+  static const _ckb = Language(
+    'ckb',
+    'kurd central',
+    variant: 'kurd sorani',
+    menu: 'sorani',
+  );
   static const _clc = Language('clc', 'chilcotin');
   static const _co = Language('co', 'cors');
   static const _cop = Language('cop', 'copte');
@@ -5413,10 +4483,16 @@ class LanguagesCa extends Languages {
   static const _en = Language('en', 'anglès');
   static const _enAU = Language('en-AU', 'anglès australià');
   static const _enCA = Language('en-CA', 'anglès canadenc');
-  static const _enGB =
-      Language('en-GB', 'anglès britànic', short: 'anglès (GB)');
-  static const _enUS =
-      Language('en-US', 'anglès americà', short: 'anglès (EUA)');
+  static const _enGB = Language(
+    'en-GB',
+    'anglès britànic',
+    short: 'anglès (GB)',
+  );
+  static const _enUS = Language(
+    'en-US',
+    'anglès americà',
+    short: 'anglès (EUA)',
+  );
   static const _enm = Language('enm', 'anglès mitjà');
   static const _eo = Language('eo', 'esperanto');
   static const _es = Language('es', 'espanyol');
@@ -7875,10 +6951,16 @@ class ScriptsCa extends Scripts {
   static const _hang = Script('Hang', 'hangul');
   static const _hani = Script('Hani', 'han');
   static const _hano = Script('Hano', 'hanunoo');
-  static const _hans =
-      Script('Hans', 'simplificat', standAlone: 'han simplificat');
-  static const _hant =
-      Script('Hant', 'tradicional', standAlone: 'han tradicional');
+  static const _hans = Script(
+    'Hans',
+    'simplificat',
+    standAlone: 'han simplificat',
+  );
+  static const _hant = Script(
+    'Hant',
+    'tradicional',
+    standAlone: 'han tradicional',
+  );
   static const _hebr = Script('Hebr', 'hebreu');
   static const _hira = Script('Hira', 'hiragana');
   static const _hluw = Script('Hluw', 'jeroglífic anatoli');
@@ -8681,11 +7763,17 @@ class TerritoriesCa extends Territories {
   static const _bz = Territory('BZ', 'Belize');
   static const _ca = Territory('CA', 'Canadà');
   static const _cc = Territory('CC', 'Illes Cocos (Keeling)');
-  static const _cd = Territory('CD', 'Congo - Kinshasa',
-      variant: 'República Democràtica del Congo');
+  static const _cd = Territory(
+    'CD',
+    'Congo - Kinshasa',
+    variant: 'República Democràtica del Congo',
+  );
   static const _cf = Territory('CF', 'República Centreafricana');
-  static const _cg =
-      Territory('CG', 'Congo - Brazzaville', variant: 'República del Congo');
+  static const _cg = Territory(
+    'CG',
+    'Congo - Brazzaville',
+    variant: 'República del Congo',
+  );
   static const _ch = Territory('CH', 'Suïssa');
   static const _ci = Territory('CI', 'Côte d’Ivoire', variant: 'Costa d’Ivori');
   static const _ck = Territory('CK', 'Illes Cook');
@@ -8720,8 +7808,11 @@ class TerritoriesCa extends Territories {
   static const _ez = Territory('EZ', 'zona euro');
   static const _fi = Territory('FI', 'Finlàndia');
   static const _fj = Territory('FJ', 'Fiji');
-  static const _fk = Territory('FK', 'Illes Falkland',
-      variant: 'Illes Falkland (Illes Malvines)');
+  static const _fk = Territory(
+    'FK',
+    'Illes Falkland',
+    variant: 'Illes Falkland (Illes Malvines)',
+  );
   static const _fm = Territory('FM', 'Micronèsia');
   static const _fo = Territory('FO', 'Illes Fèroe');
   static const _fr = Territory('FR', 'França');
@@ -8739,14 +7830,19 @@ class TerritoriesCa extends Territories {
   static const _gp = Territory('GP', 'Guadalupe');
   static const _gq = Territory('GQ', 'Guinea Equatorial');
   static const _gr = Territory('GR', 'Grècia');
-  static const _gs =
-      Territory('GS', 'Illes Geòrgia del Sud i Sandwich del Sud');
+  static const _gs = Territory(
+    'GS',
+    'Illes Geòrgia del Sud i Sandwich del Sud',
+  );
   static const _gt = Territory('GT', 'Guatemala');
   static const _gu = Territory('GU', 'Guam');
   static const _gw = Territory('GW', 'Guinea Bissau');
   static const _gy = Territory('GY', 'Guyana');
-  static const _hk =
-      Territory('HK', 'Hong Kong (RAE Xina)', short: 'Hong Kong');
+  static const _hk = Territory(
+    'HK',
+    'Hong Kong (RAE Xina)',
+    short: 'Hong Kong',
+  );
   static const _hm = Territory('HM', 'Illes Heard i McDonald');
   static const _hn = Territory('HN', 'Hondures');
   static const _hr = Territory('HR', 'Croàcia');
@@ -8823,8 +7919,11 @@ class TerritoriesCa extends Territories {
   static const _np = Territory('NP', 'Nepal');
   static const _nr = Territory('NR', 'Nauru');
   static const _nu = Territory('NU', 'Niue');
-  static const _nz =
-      Territory('NZ', 'Nova Zelanda', variant: 'Aotearoa (Nova Zelanda)');
+  static const _nz = Territory(
+    'NZ',
+    'Nova Zelanda',
+    variant: 'Aotearoa (Nova Zelanda)',
+  );
   static const _om = Territory('OM', 'Oman');
   static const _pa = Territory('PA', 'Panamà');
   static const _pe = Territory('PE', 'Perú');
@@ -8836,8 +7935,11 @@ class TerritoriesCa extends Territories {
   static const _pm = Territory('PM', 'Saint-Pierre-et-Miquelon');
   static const _pn = Territory('PN', 'Illes Pitcairn');
   static const _pr = Territory('PR', 'Puerto Rico');
-  static const _ps =
-      Territory('PS', 'Territoris palestins', short: 'Palestina');
+  static const _ps = Territory(
+    'PS',
+    'Territoris palestins',
+    short: 'Palestina',
+  );
   static const _pt = Territory('PT', 'Portugal');
   static const _pw = Territory('PW', 'Palau');
   static const _py = Territory('PY', 'Paraguai');
@@ -8888,8 +7990,10 @@ class TerritoriesCa extends Territories {
   static const _tz = Territory('TZ', 'Tanzània');
   static const _ua = Territory('UA', 'Ucraïna');
   static const _ug = Territory('UG', 'Uganda');
-  static const _um =
-      Territory('UM', 'Illes Menors Allunyades dels Estats Units');
+  static const _um = Territory(
+    'UM',
+    'Illes Menors Allunyades dels Estats Units',
+  );
   static const _un = Territory('UN', 'Nacions Unides', short: 'ONU');
   static const _us = Territory('US', 'Estats Units', short: 'EUA');
   static const _uy = Territory('UY', 'Uruguai');
@@ -9887,12 +8991,16 @@ class VariantsCa extends Variants {
   static const _$1901 = Variant('1901', 'ortografia alemanya tradicional');
   static const _$1994 = Variant('1994', 'ortografia resiana estandarditzada');
   static const _$1996 = Variant('1996', 'ortografia alemanya de 1996');
-  static const _$1606NICT =
-      Variant('1606NICT', 'francès mitjà tardà fins el 1606');
+  static const _$1606NICT = Variant(
+    '1606NICT',
+    'francès mitjà tardà fins el 1606',
+  );
   static const _$1694ACAD = Variant('1694ACAD', 'francès modern primerenc');
   static const _$1959ACAD = Variant('1959ACAD', 'acadèmica');
-  static const _alalc97 =
-      Variant('ALALC97', 'romanització ALA/LC, edició de 1997');
+  static const _alalc97 = Variant(
+    'ALALC97',
+    'romanització ALA/LC, edició de 1997',
+  );
   static const _aluku = Variant('ALUKU', 'dialecte aluku');
   static const _arevela = Variant('AREVELA', 'armeni oriental');
   static const _arevmda = Variant('AREVMDA', 'armeni occidental');
@@ -14383,748 +13491,2161 @@ class SubdivisionsCa extends Subdivisions {
 class CurrenciesCa extends Currencies {
   const CurrenciesCa(super.cld);
 
-  static const _adp = Currency(_cld, 'ADP', 'pesseta andorrana',
-      one: 'pesseta andorrana', other: 'pessetes andorranes');
-  static const _aed = Currency(_cld, 'AED', 'dírham dels Emirats Àrabs Units',
-      one: 'dírham dels Emirats Àrabs Units',
-      other: 'dírhams dels Emirats Àrabs Units');
-  static const _afa = Currency(_cld, 'AFA', 'afgani afganès (1927–2002)',
-      one: 'afgani afganès (1927–2002)',
-      other: 'afganis afganesos (1927–2002)');
-  static const _afn = Currency(_cld, 'AFN', 'afgani afganès',
-      one: 'afgani afganès', other: 'afganis afganesos', symbolNarrow: '؋');
-  static const _alk = Currency(_cld, 'ALK', 'lek albanès (1946–1965)',
-      one: 'lek albanès (1946–1965)', other: 'lekë albanesos (1946–1965)');
+  static const _adp = Currency(
+    _cld,
+    'ADP',
+    'pesseta andorrana',
+    one: 'pesseta andorrana',
+    other: 'pessetes andorranes',
+  );
+  static const _aed = Currency(
+    _cld,
+    'AED',
+    'dírham dels Emirats Àrabs Units',
+    one: 'dírham dels Emirats Àrabs Units',
+    other: 'dírhams dels Emirats Àrabs Units',
+  );
+  static const _afa = Currency(
+    _cld,
+    'AFA',
+    'afgani afganès (1927–2002)',
+    one: 'afgani afganès (1927–2002)',
+    other: 'afganis afganesos (1927–2002)',
+  );
+  static const _afn = Currency(
+    _cld,
+    'AFN',
+    'afgani afganès',
+    one: 'afgani afganès',
+    other: 'afganis afganesos',
+    symbolNarrow: '؋',
+  );
+  static const _alk = Currency(
+    _cld,
+    'ALK',
+    'lek albanès (1946–1965)',
+    one: 'lek albanès (1946–1965)',
+    other: 'lekë albanesos (1946–1965)',
+  );
   static const _all = Currency(_cld, 'ALL', 'lek', one: 'lek', other: 'lekë');
-  static const _amd = Currency(_cld, 'AMD', 'dram',
-      one: 'dram', other: 'drams', symbolNarrow: '֏');
+  static const _amd = Currency(
+    _cld,
+    'AMD',
+    'dram',
+    one: 'dram',
+    other: 'drams',
+    symbolNarrow: '֏',
+  );
   static const _ang = Currency(
-      _cld, 'ANG', 'florí de les Antilles Neerlandeses',
-      one: 'florí de les Antilles Neerlandeses',
-      other: 'florins de les Antilles Neerlandeses');
-  static const _aoa = Currency(_cld, 'AOA', 'kwanza angolès',
-      one: 'kwanza angolès', other: 'kwanzas angolesos', symbolNarrow: 'Kz');
-  static const _aok = Currency(_cld, 'AOK', 'kwanza angolès (1977–1991)',
-      one: 'kwanza angolès (1977–1991)',
-      other: 'kwanzas angolesos (1977–1991)');
-  static const _aon = Currency(_cld, 'AON', 'nou kwanza angolès (1990–2000)',
-      one: 'nou kwanza angolès (1990–2000)',
-      other: 'nous kwanzas angolesos (1990–2000)');
+    _cld,
+    'ANG',
+    'florí de les Antilles Neerlandeses',
+    one: 'florí de les Antilles Neerlandeses',
+    other: 'florins de les Antilles Neerlandeses',
+  );
+  static const _aoa = Currency(
+    _cld,
+    'AOA',
+    'kwanza angolès',
+    one: 'kwanza angolès',
+    other: 'kwanzas angolesos',
+    symbolNarrow: 'Kz',
+  );
+  static const _aok = Currency(
+    _cld,
+    'AOK',
+    'kwanza angolès (1977–1991)',
+    one: 'kwanza angolès (1977–1991)',
+    other: 'kwanzas angolesos (1977–1991)',
+  );
+  static const _aon = Currency(
+    _cld,
+    'AON',
+    'nou kwanza angolès (1990–2000)',
+    one: 'nou kwanza angolès (1990–2000)',
+    other: 'nous kwanzas angolesos (1990–2000)',
+  );
   static const _aor = Currency(
-      _cld, 'AOR', 'kwanza angolès reajustat (1995–1999)',
-      one: 'kwanza angolès reajustat (1995–1999)',
-      other: 'kwanzas angolesos (1995–1999)');
-  static const _ara = Currency(_cld, 'ARA', 'austral argentí',
-      one: 'austral argentí', other: 'australs argentins');
-  static const _arl = Currency(_cld, 'ARL', 'peso ley argentí (1970–1983)',
-      one: 'peso ley argentí (1970–1983)',
-      other: 'pesos ley argentins (1970–1983)');
-  static const _arm = Currency(_cld, 'ARM', 'peso argentí (1981–1970)',
-      one: 'peso argentí moneda nacional',
-      other: 'pesos argentins moneda nacional');
-  static const _arp = Currency(_cld, 'ARP', 'peso argentí (1983–1985)',
-      one: 'peso argentí (1983–1985)', other: 'pesos argentins (1983–1985)');
-  static const _ars = Currency(_cld, 'ARS', 'peso argentí',
-      one: 'peso argentí', other: 'pesos argentins', symbolNarrow: r'$');
-  static const _ats = Currency(_cld, 'ATS', 'xíling austríac',
-      one: 'xíling austríac', other: 'xílings austríacs');
-  static const _aud = Currency(_cld, 'AUD', 'dòlar australià',
-      one: 'dòlar australià',
-      other: 'dòlars australians',
-      symbol: r'AU$',
-      symbolNarrow: r'$');
-  static const _awg = Currency(_cld, 'AWG', 'florí d’Aruba',
-      one: 'florí d’Aruba', other: 'florins d’Aruba');
-  static const _azm = Currency(_cld, 'AZM', 'manat azerbaidjanès (1993–2006)',
-      one: 'manat azerbaidjanès (1993–2006)',
-      other: 'manats azerbaidjanesos (1993–2006)');
-  static const _azn = Currency(_cld, 'AZN', 'manat azerbaidjanès',
-      one: 'manat azerbaidjanès',
-      other: 'manats azerbaidjanesos',
-      symbolNarrow: '₼');
+    _cld,
+    'AOR',
+    'kwanza angolès reajustat (1995–1999)',
+    one: 'kwanza angolès reajustat (1995–1999)',
+    other: 'kwanzas angolesos (1995–1999)',
+  );
+  static const _ara = Currency(
+    _cld,
+    'ARA',
+    'austral argentí',
+    one: 'austral argentí',
+    other: 'australs argentins',
+  );
+  static const _arl = Currency(
+    _cld,
+    'ARL',
+    'peso ley argentí (1970–1983)',
+    one: 'peso ley argentí (1970–1983)',
+    other: 'pesos ley argentins (1970–1983)',
+  );
+  static const _arm = Currency(
+    _cld,
+    'ARM',
+    'peso argentí (1981–1970)',
+    one: 'peso argentí moneda nacional',
+    other: 'pesos argentins moneda nacional',
+  );
+  static const _arp = Currency(
+    _cld,
+    'ARP',
+    'peso argentí (1983–1985)',
+    one: 'peso argentí (1983–1985)',
+    other: 'pesos argentins (1983–1985)',
+  );
+  static const _ars = Currency(
+    _cld,
+    'ARS',
+    'peso argentí',
+    one: 'peso argentí',
+    other: 'pesos argentins',
+    symbolNarrow: r'$',
+  );
+  static const _ats = Currency(
+    _cld,
+    'ATS',
+    'xíling austríac',
+    one: 'xíling austríac',
+    other: 'xílings austríacs',
+  );
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'dòlar australià',
+    one: 'dòlar australià',
+    other: 'dòlars australians',
+    symbol: r'AU$',
+    symbolNarrow: r'$',
+  );
+  static const _awg = Currency(
+    _cld,
+    'AWG',
+    'florí d’Aruba',
+    one: 'florí d’Aruba',
+    other: 'florins d’Aruba',
+  );
+  static const _azm = Currency(
+    _cld,
+    'AZM',
+    'manat azerbaidjanès (1993–2006)',
+    one: 'manat azerbaidjanès (1993–2006)',
+    other: 'manats azerbaidjanesos (1993–2006)',
+  );
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'manat azerbaidjanès',
+    one: 'manat azerbaidjanès',
+    other: 'manats azerbaidjanesos',
+    symbolNarrow: '₼',
+  );
   static const _bad = Currency(
-      _cld, 'BAD', 'dinar de Bòsnia i Hercegovina (1992–1994)',
-      one: 'dinar de Bòsnia i Hercegovina (1992–1994)',
-      other: 'dinars de Bòsnia i Hercegovina (1992–1994)');
+    _cld,
+    'BAD',
+    'dinar de Bòsnia i Hercegovina (1992–1994)',
+    one: 'dinar de Bòsnia i Hercegovina (1992–1994)',
+    other: 'dinars de Bòsnia i Hercegovina (1992–1994)',
+  );
   static const _bam = Currency(
-      _cld, 'BAM', 'marc convertible de Bòsnia i Hercegovina',
-      one: 'marc convertible de Bòsnia i Hercegovina',
-      other: 'marcs convertibles de Bòsnia i Hercegovina',
-      symbolNarrow: 'KM');
+    _cld,
+    'BAM',
+    'marc convertible de Bòsnia i Hercegovina',
+    one: 'marc convertible de Bòsnia i Hercegovina',
+    other: 'marcs convertibles de Bòsnia i Hercegovina',
+    symbolNarrow: 'KM',
+  );
   static const _ban = Currency(
-      _cld, 'BAN', 'nou dinar de Bòsnia i Hercegovina (1994–1997)',
-      one: 'nou dinar de Bòsnia i Hercegovina (1994–1997)',
-      other: 'nous dinars de Bòsnia i Hercegovina (1994–1997)');
-  static const _bbd = Currency(_cld, 'BBD', 'dòlar de Barbados',
-      one: 'dòlar de Barbados',
-      other: 'dòlars de Barbados',
-      symbolNarrow: r'$');
+    _cld,
+    'BAN',
+    'nou dinar de Bòsnia i Hercegovina (1994–1997)',
+    one: 'nou dinar de Bòsnia i Hercegovina (1994–1997)',
+    other: 'nous dinars de Bòsnia i Hercegovina (1994–1997)',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'dòlar de Barbados',
+    one: 'dòlar de Barbados',
+    other: 'dòlars de Barbados',
+    symbolNarrow: r'$',
+  );
   static const _bdt = Currency(_cld, 'BDT', 'taka', symbolNarrow: '৳');
-  static const _bec = Currency(_cld, 'BEC', 'franc belga (convertible)',
-      one: 'franc belga (convertible)', other: 'francs belgues (convertibles)');
-  static const _bef = Currency(_cld, 'BEF', 'franc belga',
-      one: 'franc belga', other: 'francs belgues');
-  static const _bel = Currency(_cld, 'BEL', 'franc belga (financer)',
-      one: 'franc belga (financer)', other: 'francs belgues (financers)');
-  static const _bgl = Currency(_cld, 'BGL', 'lev fort búlgar',
-      one: 'lev fort búlgar', other: 'leva forts búlgars');
-  static const _bgm = Currency(_cld, 'BGM', 'lev socialista búlgar',
-      one: 'lev socialista búlgar', other: 'leva socialistes búlgars');
+  static const _bec = Currency(
+    _cld,
+    'BEC',
+    'franc belga (convertible)',
+    one: 'franc belga (convertible)',
+    other: 'francs belgues (convertibles)',
+  );
+  static const _bef = Currency(
+    _cld,
+    'BEF',
+    'franc belga',
+    one: 'franc belga',
+    other: 'francs belgues',
+  );
+  static const _bel = Currency(
+    _cld,
+    'BEL',
+    'franc belga (financer)',
+    one: 'franc belga (financer)',
+    other: 'francs belgues (financers)',
+  );
+  static const _bgl = Currency(
+    _cld,
+    'BGL',
+    'lev fort búlgar',
+    one: 'lev fort búlgar',
+    other: 'leva forts búlgars',
+  );
+  static const _bgm = Currency(
+    _cld,
+    'BGM',
+    'lev socialista búlgar',
+    one: 'lev socialista búlgar',
+    other: 'leva socialistes búlgars',
+  );
   static const _bgn = Currency(_cld, 'BGN', 'lev', one: 'lev', other: 'leva');
-  static const _bgo = Currency(_cld, 'BGO', 'lev búlgar (1879–1952)',
-      one: 'lev búlgar (1879–1952)', other: 'leva búlgars (1879–1952)');
-  static const _bhd = Currency(_cld, 'BHD', 'dinar de Bahrain',
-      one: 'dinar de Bahrain', other: 'dinars de Bahrain');
-  static const _bif = Currency(_cld, 'BIF', 'franc de Burundi',
-      one: 'franc de Burundi', other: 'francs de Burundi');
-  static const _bmd = Currency(_cld, 'BMD', 'dòlar de les Bermudes',
-      one: 'dòlar de les Bermudes',
-      other: 'dòlars de les Bermudes',
-      symbolNarrow: r'$');
-  static const _bnd = Currency(_cld, 'BND', 'dòlar de Brunei',
-      one: 'dòlar de Brunei', other: 'dòlars de Brunei', symbolNarrow: r'$');
-  static const _bob = Currency(_cld, 'BOB', 'bolivià',
-      one: 'bolivià', other: 'bolivians', symbolNarrow: 'Bs');
-  static const _bol = Currency(_cld, 'BOL', 'boliviano bolivià (1863–1963)',
-      one: 'boliviano bolivià (1863–1963)',
-      other: 'bolivianos bolivians (1863–1963)');
-  static const _bop = Currency(_cld, 'BOP', 'peso bolivià',
-      one: 'peso bolivià', other: 'pesos bolivians');
-  static const _bov = Currency(_cld, 'BOV', 'MVDOL bolivià',
-      one: 'MVDOL bolivià', other: 'MVDOL bolivians');
+  static const _bgo = Currency(
+    _cld,
+    'BGO',
+    'lev búlgar (1879–1952)',
+    one: 'lev búlgar (1879–1952)',
+    other: 'leva búlgars (1879–1952)',
+  );
+  static const _bhd = Currency(
+    _cld,
+    'BHD',
+    'dinar de Bahrain',
+    one: 'dinar de Bahrain',
+    other: 'dinars de Bahrain',
+  );
+  static const _bif = Currency(
+    _cld,
+    'BIF',
+    'franc de Burundi',
+    one: 'franc de Burundi',
+    other: 'francs de Burundi',
+  );
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'dòlar de les Bermudes',
+    one: 'dòlar de les Bermudes',
+    other: 'dòlars de les Bermudes',
+    symbolNarrow: r'$',
+  );
+  static const _bnd = Currency(
+    _cld,
+    'BND',
+    'dòlar de Brunei',
+    one: 'dòlar de Brunei',
+    other: 'dòlars de Brunei',
+    symbolNarrow: r'$',
+  );
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'bolivià',
+    one: 'bolivià',
+    other: 'bolivians',
+    symbolNarrow: 'Bs',
+  );
+  static const _bol = Currency(
+    _cld,
+    'BOL',
+    'boliviano bolivià (1863–1963)',
+    one: 'boliviano bolivià (1863–1963)',
+    other: 'bolivianos bolivians (1863–1963)',
+  );
+  static const _bop = Currency(
+    _cld,
+    'BOP',
+    'peso bolivià',
+    one: 'peso bolivià',
+    other: 'pesos bolivians',
+  );
+  static const _bov = Currency(
+    _cld,
+    'BOV',
+    'MVDOL bolivià',
+    one: 'MVDOL bolivià',
+    other: 'MVDOL bolivians',
+  );
   static const _brb = Currency(
-      _cld, 'BRB', 'cruzeiro novo brasiler (1967–1986)',
-      one: 'cruzeiro novo brasiler (1967–1986)',
-      other: 'cruzeiros novos brasilers (1967–1986)');
-  static const _brc = Currency(_cld, 'BRC', 'cruzado brasiler',
-      one: 'cruzado brasiler', other: 'cruzados brasilers');
-  static const _bre = Currency(_cld, 'BRE', 'cruzeiro brasiler (1990–1993)',
-      one: 'cruzeiro brasiler (1990–1993)',
-      other: 'cruzeiros brasilers (1990–1993)');
-  static const _brl = Currency(_cld, 'BRL', 'real brasiler',
-      one: 'real brasiler',
-      other: 'reals brasilers',
-      symbol: 'BRL',
-      symbolNarrow: r'R$');
-  static const _brn = Currency(_cld, 'BRN', 'cruzado novo brasiler',
-      one: 'cruzado novo brasiler', other: 'cruzados novos brasilers');
-  static const _brr = Currency(_cld, 'BRR', 'cruzeiro brasiler',
-      one: 'cruzeiro brasiler', other: 'cruzeiros brasilers');
-  static const _brz = Currency(_cld, 'BRZ', 'antic cruzeiro brasiler',
-      one: 'antic cruzeiro brasiler', other: 'antics cruzeiros brasilers');
-  static const _bsd = Currency(_cld, 'BSD', 'dòlar de les Bahames',
-      one: 'dòlar de les Bahames',
-      other: 'dòlars de les Bahames',
-      symbolNarrow: r'$');
-  static const _btn = Currency(_cld, 'BTN', 'ngultrum de Bhutan',
-      one: 'ngultrum de Bhutan', other: 'ngultrums de Bhutan');
-  static const _buk = Currency(_cld, 'BUK', 'kyat birmà',
-      one: 'kyat birmà', other: 'kyats birmans');
-  static const _bwp = Currency(_cld, 'BWP', 'pula de Botswana',
-      one: 'pula de Botswana', other: 'pules de Botswana', symbolNarrow: 'P');
-  static const _byb = Currency(_cld, 'BYB', 'nou ruble bielorús (1994–1999)',
-      one: 'nou ruble bielorús (1994–1999)',
-      other: 'nous rubles bielorussos (1994–1999)');
-  static const _byn = Currency(_cld, 'BYN', 'ruble belarús',
-      one: 'ruble belarús', other: 'rubles belarussos', symbolNarrow: 'р.');
-  static const _byr = Currency(_cld, 'BYR', 'ruble bielorús (2000–2016)',
-      one: 'ruble bielorús (2000–2016)',
-      other: 'rubles bielorussos (2000–2016)');
-  static const _bzd = Currency(_cld, 'BZD', 'dòlar de Belize',
-      one: 'dòlar de Belize', other: 'dòlars de Belize', symbolNarrow: r'$');
-  static const _cad = Currency(_cld, 'CAD', 'dòlar canadenc',
-      one: 'dòlar canadenc',
-      other: 'dòlars canadencs',
-      symbol: 'CAD',
-      symbolNarrow: r'$');
-  static const _cdf = Currency(_cld, 'CDF', 'franc congolès',
-      one: 'franc congolès', other: 'francs congolesos');
-  static const _che =
-      Currency(_cld, 'CHE', 'euro WIR', one: 'euro WIR', other: 'euros WIR');
-  static const _chf = Currency(_cld, 'CHF', 'franc suís',
-      one: 'franc suís', other: 'francs suïssos');
-  static const _chw =
-      Currency(_cld, 'CHW', 'franc WIR', one: 'franc WIR', other: 'francs WIR');
-  static const _cle = Currency(_cld, 'CLE', 'escut xilè',
-      one: 'escudo xilè', other: 'escudos xilens');
-  static const _clf = Currency(_cld, 'CLF', 'unidad de fomento xilena',
-      one: 'unidad de fomento xilena', other: 'unidades de fomento xilenes');
-  static const _clp = Currency(_cld, 'CLP', 'peso xilè',
-      one: 'peso xilè', other: 'pesos xilens', symbolNarrow: r'$');
-  static const _cnh = Currency(_cld, 'CNH', 'iuan xinès extracontinental',
-      one: 'iuan xinès extracontinental',
-      other: 'iuans xinesos extracontinentals');
-  static const _cnx = Currency(_cld, 'CNX', 'CNX',
-      one: 'dòlar del Banc Popular Xinès',
-      other: 'dòlars del Banc Popular Xinès');
-  static const _cny = Currency(_cld, 'CNY', 'iuan',
-      one: 'iuan', other: 'iuans', symbol: 'CNY', symbolNarrow: '¥');
-  static const _cop = Currency(_cld, 'COP', 'peso colombià',
-      one: 'peso colombià', other: 'pesos colombians', symbolNarrow: r'$');
-  static const _cou = Currency(_cld, 'COU', 'unidad de valor real colombiana',
-      one: 'unidad de valor real colombiana',
-      other: 'unidades de valor real colombianes');
-  static const _crc = Currency(_cld, 'CRC', 'colon costa-riqueny',
-      one: 'colon costa-riqueny',
-      other: 'colons costa-riquenys',
-      symbolNarrow: '₡');
-  static const _csd = Currency(_cld, 'CSD', 'dinar serbi antic',
-      one: 'dinar serbi antic', other: 'dinars serbis antics');
-  static const _csk = Currency(_cld, 'CSK', 'corona forta txecoslovaca',
-      one: 'corona forta txecoslovaca', other: 'corones fortes txecoslovaques');
-  static const _cuc = Currency(_cld, 'CUC', 'peso convertible cubà',
-      one: 'peso convertible cubà',
-      other: 'pesos convertibles cubans',
-      symbolNarrow: r'$');
-  static const _cup = Currency(_cld, 'CUP', 'peso cubà',
-      one: 'peso cubà', other: 'pesos cubans', symbolNarrow: r'$');
-  static const _cve = Currency(_cld, 'CVE', 'escut de Cap Verd',
-      one: 'escut de Cap Verd', other: 'escuts de Cap Verd');
-  static const _cyp = Currency(_cld, 'CYP', 'lliura xipriota',
-      one: 'lliura xipriota', other: 'lliures xipriotes');
-  static const _czk = Currency(_cld, 'CZK', 'corona txeca',
-      one: 'corona txeca', other: 'corones txeques', symbolNarrow: 'Kč');
-  static const _ddm = Currency(_cld, 'DDM', 'marc de l’Alemanya Oriental',
-      one: 'marc de l’Alemanya Oriental',
-      other: 'marcs de l’Alemanya Oriental');
-  static const _dem = Currency(_cld, 'DEM', 'marc alemany',
-      one: 'marc alemany', other: 'marcs alemanys');
-  static const _djf = Currency(_cld, 'DJF', 'franc de Djibouti',
-      one: 'franc de Djibouti', other: 'francs de Djibouti');
-  static const _dkk = Currency(_cld, 'DKK', 'corona danesa',
-      one: 'corona danesa', other: 'corones daneses', symbolNarrow: 'kr');
-  static const _dop = Currency(_cld, 'DOP', 'peso dominicà',
-      one: 'peso dominicà', other: 'pesos dominicans', symbolNarrow: r'$');
-  static const _dzd = Currency(_cld, 'DZD', 'dinar algerià',
-      one: 'dinar algerià', other: 'dinars algerians');
-  static const _ecs = Currency(_cld, 'ECS', 'sucre equatorià',
-      one: 'sucre equatorià', other: 'sucres equatorians');
+    _cld,
+    'BRB',
+    'cruzeiro novo brasiler (1967–1986)',
+    one: 'cruzeiro novo brasiler (1967–1986)',
+    other: 'cruzeiros novos brasilers (1967–1986)',
+  );
+  static const _brc = Currency(
+    _cld,
+    'BRC',
+    'cruzado brasiler',
+    one: 'cruzado brasiler',
+    other: 'cruzados brasilers',
+  );
+  static const _bre = Currency(
+    _cld,
+    'BRE',
+    'cruzeiro brasiler (1990–1993)',
+    one: 'cruzeiro brasiler (1990–1993)',
+    other: 'cruzeiros brasilers (1990–1993)',
+  );
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'real brasiler',
+    one: 'real brasiler',
+    other: 'reals brasilers',
+    symbol: 'BRL',
+    symbolNarrow: r'R$',
+  );
+  static const _brn = Currency(
+    _cld,
+    'BRN',
+    'cruzado novo brasiler',
+    one: 'cruzado novo brasiler',
+    other: 'cruzados novos brasilers',
+  );
+  static const _brr = Currency(
+    _cld,
+    'BRR',
+    'cruzeiro brasiler',
+    one: 'cruzeiro brasiler',
+    other: 'cruzeiros brasilers',
+  );
+  static const _brz = Currency(
+    _cld,
+    'BRZ',
+    'antic cruzeiro brasiler',
+    one: 'antic cruzeiro brasiler',
+    other: 'antics cruzeiros brasilers',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'dòlar de les Bahames',
+    one: 'dòlar de les Bahames',
+    other: 'dòlars de les Bahames',
+    symbolNarrow: r'$',
+  );
+  static const _btn = Currency(
+    _cld,
+    'BTN',
+    'ngultrum de Bhutan',
+    one: 'ngultrum de Bhutan',
+    other: 'ngultrums de Bhutan',
+  );
+  static const _buk = Currency(
+    _cld,
+    'BUK',
+    'kyat birmà',
+    one: 'kyat birmà',
+    other: 'kyats birmans',
+  );
+  static const _bwp = Currency(
+    _cld,
+    'BWP',
+    'pula de Botswana',
+    one: 'pula de Botswana',
+    other: 'pules de Botswana',
+    symbolNarrow: 'P',
+  );
+  static const _byb = Currency(
+    _cld,
+    'BYB',
+    'nou ruble bielorús (1994–1999)',
+    one: 'nou ruble bielorús (1994–1999)',
+    other: 'nous rubles bielorussos (1994–1999)',
+  );
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'ruble belarús',
+    one: 'ruble belarús',
+    other: 'rubles belarussos',
+    symbolNarrow: 'р.',
+  );
+  static const _byr = Currency(
+    _cld,
+    'BYR',
+    'ruble bielorús (2000–2016)',
+    one: 'ruble bielorús (2000–2016)',
+    other: 'rubles bielorussos (2000–2016)',
+  );
+  static const _bzd = Currency(
+    _cld,
+    'BZD',
+    'dòlar de Belize',
+    one: 'dòlar de Belize',
+    other: 'dòlars de Belize',
+    symbolNarrow: r'$',
+  );
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'dòlar canadenc',
+    one: 'dòlar canadenc',
+    other: 'dòlars canadencs',
+    symbol: 'CAD',
+    symbolNarrow: r'$',
+  );
+  static const _cdf = Currency(
+    _cld,
+    'CDF',
+    'franc congolès',
+    one: 'franc congolès',
+    other: 'francs congolesos',
+  );
+  static const _che = Currency(
+    _cld,
+    'CHE',
+    'euro WIR',
+    one: 'euro WIR',
+    other: 'euros WIR',
+  );
+  static const _chf = Currency(
+    _cld,
+    'CHF',
+    'franc suís',
+    one: 'franc suís',
+    other: 'francs suïssos',
+  );
+  static const _chw = Currency(
+    _cld,
+    'CHW',
+    'franc WIR',
+    one: 'franc WIR',
+    other: 'francs WIR',
+  );
+  static const _cle = Currency(
+    _cld,
+    'CLE',
+    'escut xilè',
+    one: 'escudo xilè',
+    other: 'escudos xilens',
+  );
+  static const _clf = Currency(
+    _cld,
+    'CLF',
+    'unidad de fomento xilena',
+    one: 'unidad de fomento xilena',
+    other: 'unidades de fomento xilenes',
+  );
+  static const _clp = Currency(
+    _cld,
+    'CLP',
+    'peso xilè',
+    one: 'peso xilè',
+    other: 'pesos xilens',
+    symbolNarrow: r'$',
+  );
+  static const _cnh = Currency(
+    _cld,
+    'CNH',
+    'iuan xinès extracontinental',
+    one: 'iuan xinès extracontinental',
+    other: 'iuans xinesos extracontinentals',
+  );
+  static const _cnx = Currency(
+    _cld,
+    'CNX',
+    'CNX',
+    one: 'dòlar del Banc Popular Xinès',
+    other: 'dòlars del Banc Popular Xinès',
+  );
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'iuan',
+    one: 'iuan',
+    other: 'iuans',
+    symbol: 'CNY',
+    symbolNarrow: '¥',
+  );
+  static const _cop = Currency(
+    _cld,
+    'COP',
+    'peso colombià',
+    one: 'peso colombià',
+    other: 'pesos colombians',
+    symbolNarrow: r'$',
+  );
+  static const _cou = Currency(
+    _cld,
+    'COU',
+    'unidad de valor real colombiana',
+    one: 'unidad de valor real colombiana',
+    other: 'unidades de valor real colombianes',
+  );
+  static const _crc = Currency(
+    _cld,
+    'CRC',
+    'colon costa-riqueny',
+    one: 'colon costa-riqueny',
+    other: 'colons costa-riquenys',
+    symbolNarrow: '₡',
+  );
+  static const _csd = Currency(
+    _cld,
+    'CSD',
+    'dinar serbi antic',
+    one: 'dinar serbi antic',
+    other: 'dinars serbis antics',
+  );
+  static const _csk = Currency(
+    _cld,
+    'CSK',
+    'corona forta txecoslovaca',
+    one: 'corona forta txecoslovaca',
+    other: 'corones fortes txecoslovaques',
+  );
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'peso convertible cubà',
+    one: 'peso convertible cubà',
+    other: 'pesos convertibles cubans',
+    symbolNarrow: r'$',
+  );
+  static const _cup = Currency(
+    _cld,
+    'CUP',
+    'peso cubà',
+    one: 'peso cubà',
+    other: 'pesos cubans',
+    symbolNarrow: r'$',
+  );
+  static const _cve = Currency(
+    _cld,
+    'CVE',
+    'escut de Cap Verd',
+    one: 'escut de Cap Verd',
+    other: 'escuts de Cap Verd',
+  );
+  static const _cyp = Currency(
+    _cld,
+    'CYP',
+    'lliura xipriota',
+    one: 'lliura xipriota',
+    other: 'lliures xipriotes',
+  );
+  static const _czk = Currency(
+    _cld,
+    'CZK',
+    'corona txeca',
+    one: 'corona txeca',
+    other: 'corones txeques',
+    symbolNarrow: 'Kč',
+  );
+  static const _ddm = Currency(
+    _cld,
+    'DDM',
+    'marc de l’Alemanya Oriental',
+    one: 'marc de l’Alemanya Oriental',
+    other: 'marcs de l’Alemanya Oriental',
+  );
+  static const _dem = Currency(
+    _cld,
+    'DEM',
+    'marc alemany',
+    one: 'marc alemany',
+    other: 'marcs alemanys',
+  );
+  static const _djf = Currency(
+    _cld,
+    'DJF',
+    'franc de Djibouti',
+    one: 'franc de Djibouti',
+    other: 'francs de Djibouti',
+  );
+  static const _dkk = Currency(
+    _cld,
+    'DKK',
+    'corona danesa',
+    one: 'corona danesa',
+    other: 'corones daneses',
+    symbolNarrow: 'kr',
+  );
+  static const _dop = Currency(
+    _cld,
+    'DOP',
+    'peso dominicà',
+    one: 'peso dominicà',
+    other: 'pesos dominicans',
+    symbolNarrow: r'$',
+  );
+  static const _dzd = Currency(
+    _cld,
+    'DZD',
+    'dinar algerià',
+    one: 'dinar algerià',
+    other: 'dinars algerians',
+  );
+  static const _ecs = Currency(
+    _cld,
+    'ECS',
+    'sucre equatorià',
+    one: 'sucre equatorià',
+    other: 'sucres equatorians',
+  );
   static const _ecv = Currency(
-      _cld, 'ECV', 'unidad de valor constante (UVC) equatoriana',
-      one: 'unidad de valor constante (UVC) equatoriana',
-      other: 'unidades de valor constante (UVC) equatorianes');
-  static const _eek = Currency(_cld, 'EEK', 'corona estoniana',
-      one: 'corona estoniana', other: 'corones estonianes');
-  static const _egp = Currency(_cld, 'EGP', 'lliura egípcia',
-      one: 'lliura egípcia', other: 'lliures egípcies', symbolNarrow: 'E£');
-  static const _ern = Currency(_cld, 'ERN', 'nakfa eritreu',
-      one: 'nakfa eritreu', other: 'nakfes eritreus');
-  static const _esa = Currency(_cld, 'ESA', 'pesseta espanyola (compte A)',
-      one: 'pesseta espanyola (compte A)',
-      other: 'pessetes espanyoles (compte A)');
+    _cld,
+    'ECV',
+    'unidad de valor constante (UVC) equatoriana',
+    one: 'unidad de valor constante (UVC) equatoriana',
+    other: 'unidades de valor constante (UVC) equatorianes',
+  );
+  static const _eek = Currency(
+    _cld,
+    'EEK',
+    'corona estoniana',
+    one: 'corona estoniana',
+    other: 'corones estonianes',
+  );
+  static const _egp = Currency(
+    _cld,
+    'EGP',
+    'lliura egípcia',
+    one: 'lliura egípcia',
+    other: 'lliures egípcies',
+    symbolNarrow: 'E£',
+  );
+  static const _ern = Currency(
+    _cld,
+    'ERN',
+    'nakfa eritreu',
+    one: 'nakfa eritreu',
+    other: 'nakfes eritreus',
+  );
+  static const _esa = Currency(
+    _cld,
+    'ESA',
+    'pesseta espanyola (compte A)',
+    one: 'pesseta espanyola (compte A)',
+    other: 'pessetes espanyoles (compte A)',
+  );
   static const _esb = Currency(
-      _cld, 'ESB', 'pesseta espanyola (compte convertible)',
-      one: 'pesseta espanyola (compte convertible)',
-      other: 'pessetes espanyoles (compte convertible)');
-  static const _esp = Currency(_cld, 'ESP', 'pesseta espanyola',
-      one: 'pesseta espanyola',
-      other: 'pessetes espanyoles',
-      symbol: '₧',
-      symbolNarrow: '₧');
-  static const _etb = Currency(_cld, 'ETB', 'birr etíop',
-      one: 'birr etíop', other: 'birrs etíops');
-  static const _eur = Currency(_cld, 'EUR', 'euro',
-      one: 'euro', other: 'euros', symbol: '€', symbolNarrow: '€');
-  static const _fim = Currency(_cld, 'FIM', 'marc finlandès',
-      one: 'marc finlandès', other: 'marcs finlandesos');
-  static const _fjd = Currency(_cld, 'FJD', 'dòlar fijià',
-      one: 'dòlar fijià', other: 'dòlars fijians', symbolNarrow: r'$');
-  static const _fkp = Currency(_cld, 'FKP', 'lliura de les illes Malvines',
-      one: 'lliura de les illes Malvines',
-      other: 'lliures de les illes Malvines',
-      symbolNarrow: '£');
-  static const _frf = Currency(_cld, 'FRF', 'franc francès',
-      one: 'franc francès', other: 'francs francesos');
-  static const _gbp = Currency(_cld, 'GBP', 'lliura esterlina',
-      one: 'lliura esterlina',
-      other: 'lliures esterlines',
-      symbol: '£',
-      symbolNarrow: '£');
-  static const _gek = Currency(_cld, 'GEK', 'cupó de lari georgià',
-      one: 'cupó de lari georgià', other: 'cupons de lari georgians');
-  static const _gel = Currency(_cld, 'GEL', 'lari',
-      one: 'lari', other: 'laris', symbolNarrow: '₾');
-  static const _ghc = Currency(_cld, 'GHC', 'cedi ghanès (1979–2007)',
-      one: 'cedi ghanès (1979–2007)', other: 'cedis ghanesos (1979–2007)');
-  static const _ghs = Currency(_cld, 'GHS', 'cedi ghanès',
-      one: 'cedi ghanès', other: 'cedis ghanesos', symbolNarrow: 'GH₵');
-  static const _gip = Currency(_cld, 'GIP', 'lliura de Gibraltar',
-      one: 'lliura de Gibraltar',
-      other: 'lliures de Gibraltar',
-      symbolNarrow: '£');
-  static const _gmd = Currency(_cld, 'GMD', 'dalasi gambià',
-      one: 'dalasi gambià', other: 'dalasis gambians');
-  static const _gnf = Currency(_cld, 'GNF', 'franc guineà',
-      one: 'franc guineà', other: 'francs guineans', symbolNarrow: 'FG');
-  static const _gns = Currency(_cld, 'GNS', 'syli guineà',
-      one: 'syli guineà', other: 'sylis guineans');
-  static const _gqe = Currency(_cld, 'GQE', 'ekwele de Guinea Equatorial',
-      one: 'ekwele de Guinea Equatorial',
-      other: 'bipkwele de Guinea Equatorial');
-  static const _grd = Currency(_cld, 'GRD', 'dracma grega',
-      one: 'dracma grega', other: 'dracmes gregues');
-  static const _gtq = Currency(_cld, 'GTQ', 'quetzal',
-      one: 'quetzal', other: 'quetzals', symbolNarrow: 'Q');
-  static const _gwe = Currency(_cld, 'GWE', 'escut de la Guinea Portuguesa',
-      one: 'escut de la Guinea Portuguesa',
-      other: 'escuts de la Guinea Portuguesa');
-  static const _gwp = Currency(_cld, 'GWP', 'peso de Guinea Bissau',
-      one: 'peso de Guinea Bissau', other: 'pesos de Guinea Bissau');
-  static const _gyd = Currency(_cld, 'GYD', 'dòlar de Guyana',
-      one: 'dòlar de Guyana', other: 'dòlars de Guyana', symbolNarrow: r'$');
-  static const _hkd = Currency(_cld, 'HKD', 'dòlar de Hong Kong',
-      one: 'dòlar de Hong Kong',
-      other: 'dòlars de Hong Kong',
-      symbol: r'HK$',
-      symbolNarrow: r'$');
-  static const _hnl = Currency(_cld, 'HNL', 'lempira',
-      one: 'lempira', other: 'lempires', symbolNarrow: 'L');
-  static const _hrd = Currency(_cld, 'HRD', 'dinar croat',
-      one: 'dinar croat', other: 'dinars croats');
-  static const _hrk = Currency(_cld, 'HRK', 'kuna',
-      one: 'kuna', other: 'kunes', symbolNarrow: 'kn');
-  static const _htg =
-      Currency(_cld, 'HTG', 'gourde', one: 'gourde', other: 'gourdes');
-  static const _huf = Currency(_cld, 'HUF', 'fòrint',
-      one: 'fòrint', other: 'fòrints', symbolNarrow: 'Ft');
-  static const _idr = Currency(_cld, 'IDR', 'rupia indonèsia',
-      one: 'rupia indonèsia', other: 'rupies indonèsies', symbolNarrow: 'Rp');
-  static const _iep = Currency(_cld, 'IEP', 'lliura irlandesa',
-      one: 'lliura irlandesa', other: 'lliures irlandeses');
-  static const _ilp = Currency(_cld, 'ILP', 'lliura israeliana',
-      one: 'lliura israeliana', other: 'lliures israelianes');
+    _cld,
+    'ESB',
+    'pesseta espanyola (compte convertible)',
+    one: 'pesseta espanyola (compte convertible)',
+    other: 'pessetes espanyoles (compte convertible)',
+  );
+  static const _esp = Currency(
+    _cld,
+    'ESP',
+    'pesseta espanyola',
+    one: 'pesseta espanyola',
+    other: 'pessetes espanyoles',
+    symbol: '₧',
+    symbolNarrow: '₧',
+  );
+  static const _etb = Currency(
+    _cld,
+    'ETB',
+    'birr etíop',
+    one: 'birr etíop',
+    other: 'birrs etíops',
+  );
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'euro',
+    one: 'euro',
+    other: 'euros',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
+  static const _fim = Currency(
+    _cld,
+    'FIM',
+    'marc finlandès',
+    one: 'marc finlandès',
+    other: 'marcs finlandesos',
+  );
+  static const _fjd = Currency(
+    _cld,
+    'FJD',
+    'dòlar fijià',
+    one: 'dòlar fijià',
+    other: 'dòlars fijians',
+    symbolNarrow: r'$',
+  );
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'lliura de les illes Malvines',
+    one: 'lliura de les illes Malvines',
+    other: 'lliures de les illes Malvines',
+    symbolNarrow: '£',
+  );
+  static const _frf = Currency(
+    _cld,
+    'FRF',
+    'franc francès',
+    one: 'franc francès',
+    other: 'francs francesos',
+  );
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'lliura esterlina',
+    one: 'lliura esterlina',
+    other: 'lliures esterlines',
+    symbol: '£',
+    symbolNarrow: '£',
+  );
+  static const _gek = Currency(
+    _cld,
+    'GEK',
+    'cupó de lari georgià',
+    one: 'cupó de lari georgià',
+    other: 'cupons de lari georgians',
+  );
+  static const _gel = Currency(
+    _cld,
+    'GEL',
+    'lari',
+    one: 'lari',
+    other: 'laris',
+    symbolNarrow: '₾',
+  );
+  static const _ghc = Currency(
+    _cld,
+    'GHC',
+    'cedi ghanès (1979–2007)',
+    one: 'cedi ghanès (1979–2007)',
+    other: 'cedis ghanesos (1979–2007)',
+  );
+  static const _ghs = Currency(
+    _cld,
+    'GHS',
+    'cedi ghanès',
+    one: 'cedi ghanès',
+    other: 'cedis ghanesos',
+    symbolNarrow: 'GH₵',
+  );
+  static const _gip = Currency(
+    _cld,
+    'GIP',
+    'lliura de Gibraltar',
+    one: 'lliura de Gibraltar',
+    other: 'lliures de Gibraltar',
+    symbolNarrow: '£',
+  );
+  static const _gmd = Currency(
+    _cld,
+    'GMD',
+    'dalasi gambià',
+    one: 'dalasi gambià',
+    other: 'dalasis gambians',
+  );
+  static const _gnf = Currency(
+    _cld,
+    'GNF',
+    'franc guineà',
+    one: 'franc guineà',
+    other: 'francs guineans',
+    symbolNarrow: 'FG',
+  );
+  static const _gns = Currency(
+    _cld,
+    'GNS',
+    'syli guineà',
+    one: 'syli guineà',
+    other: 'sylis guineans',
+  );
+  static const _gqe = Currency(
+    _cld,
+    'GQE',
+    'ekwele de Guinea Equatorial',
+    one: 'ekwele de Guinea Equatorial',
+    other: 'bipkwele de Guinea Equatorial',
+  );
+  static const _grd = Currency(
+    _cld,
+    'GRD',
+    'dracma grega',
+    one: 'dracma grega',
+    other: 'dracmes gregues',
+  );
+  static const _gtq = Currency(
+    _cld,
+    'GTQ',
+    'quetzal',
+    one: 'quetzal',
+    other: 'quetzals',
+    symbolNarrow: 'Q',
+  );
+  static const _gwe = Currency(
+    _cld,
+    'GWE',
+    'escut de la Guinea Portuguesa',
+    one: 'escut de la Guinea Portuguesa',
+    other: 'escuts de la Guinea Portuguesa',
+  );
+  static const _gwp = Currency(
+    _cld,
+    'GWP',
+    'peso de Guinea Bissau',
+    one: 'peso de Guinea Bissau',
+    other: 'pesos de Guinea Bissau',
+  );
+  static const _gyd = Currency(
+    _cld,
+    'GYD',
+    'dòlar de Guyana',
+    one: 'dòlar de Guyana',
+    other: 'dòlars de Guyana',
+    symbolNarrow: r'$',
+  );
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'dòlar de Hong Kong',
+    one: 'dòlar de Hong Kong',
+    other: 'dòlars de Hong Kong',
+    symbol: r'HK$',
+    symbolNarrow: r'$',
+  );
+  static const _hnl = Currency(
+    _cld,
+    'HNL',
+    'lempira',
+    one: 'lempira',
+    other: 'lempires',
+    symbolNarrow: 'L',
+  );
+  static const _hrd = Currency(
+    _cld,
+    'HRD',
+    'dinar croat',
+    one: 'dinar croat',
+    other: 'dinars croats',
+  );
+  static const _hrk = Currency(
+    _cld,
+    'HRK',
+    'kuna',
+    one: 'kuna',
+    other: 'kunes',
+    symbolNarrow: 'kn',
+  );
+  static const _htg = Currency(
+    _cld,
+    'HTG',
+    'gourde',
+    one: 'gourde',
+    other: 'gourdes',
+  );
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'fòrint',
+    one: 'fòrint',
+    other: 'fòrints',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'rupia indonèsia',
+    one: 'rupia indonèsia',
+    other: 'rupies indonèsies',
+    symbolNarrow: 'Rp',
+  );
+  static const _iep = Currency(
+    _cld,
+    'IEP',
+    'lliura irlandesa',
+    one: 'lliura irlandesa',
+    other: 'lliures irlandeses',
+  );
+  static const _ilp = Currency(
+    _cld,
+    'ILP',
+    'lliura israeliana',
+    one: 'lliura israeliana',
+    other: 'lliures israelianes',
+  );
   static const _ilr = Currency(_cld, 'ILR', 'xéquel israelià');
-  static const _ils = Currency(_cld, 'ILS', 'nou xéquel israelià',
-      one: 'nou xéquel israelià',
-      other: 'nous xéquels israelians',
-      symbol: '₪',
-      symbolNarrow: '₪');
-  static const _inr = Currency(_cld, 'INR', 'rupia índia',
-      one: 'rupia índia',
-      other: 'rupies índies',
-      symbol: '₹',
-      symbolNarrow: '₹');
-  static const _iqd = Currency(_cld, 'IQD', 'dinar iraquià',
-      one: 'dinar iraquià', other: 'dinars iraquians');
-  static const _irr = Currency(_cld, 'IRR', 'rial iranià',
-      one: 'rial iranià', other: 'rials iranians');
-  static const _isj = Currency(_cld, 'ISJ', 'corona islandesa antiga',
-      one: 'corona islandesa antiga', other: 'corones islandeses antigues');
-  static const _isk = Currency(_cld, 'ISK', 'corona islandesa',
-      one: 'corona islandesa', other: 'corones islandeses', symbolNarrow: 'kr');
-  static const _itl = Currency(_cld, 'ITL', 'lira italiana',
-      one: 'lira italiana', other: 'lires italianes');
-  static const _jmd = Currency(_cld, 'JMD', 'dòlar jamaicà',
-      one: 'dòlar jamaicà', other: 'dòlars jamaicans', symbolNarrow: r'$');
-  static const _jod = Currency(_cld, 'JOD', 'dinar jordà',
-      one: 'dinar jordà', other: 'dinars jordans');
-  static const _jpy = Currency(_cld, 'JPY', 'ien',
-      one: 'ien', other: 'iens', symbol: '¥', symbolNarrow: '¥');
-  static const _kes = Currency(_cld, 'KES', 'xíling kenyà',
-      one: 'xíling kenyà', other: 'xílings kenyans');
-  static const _kgs = Currency(_cld, 'KGS', 'som kirguís',
-      one: 'som kirguís', other: 'soms kirguisos', symbolNarrow: '⃀');
-  static const _khr = Currency(_cld, 'KHR', 'riel cambodjà',
-      one: 'riel cambodjà', other: 'riels cambodjans', symbolNarrow: '៛');
-  static const _kmf = Currency(_cld, 'KMF', 'franc de les Comores',
-      one: 'franc de les Comores',
-      other: 'francs de les Comores',
-      symbolNarrow: 'CF');
-  static const _kpw = Currency(_cld, 'KPW', 'won nord-coreà',
-      one: 'won nord-coreà', other: 'wons nord-coreans', symbolNarrow: '₩');
-  static const _krh = Currency(_cld, 'KRH', 'hwan sud-coreà (1953–1962)',
-      one: 'hwan sud-coreà', other: 'hwans sud-coreans');
-  static const _kro = Currency(_cld, 'KRO', 'antic won sud-coreà',
-      one: 'antic won sud-coreà', other: 'antics wons sud-coreans');
-  static const _krw = Currency(_cld, 'KRW', 'won sud-coreà',
-      one: 'won sud-coreà',
-      other: 'wons sud-coreans',
-      symbol: '₩',
-      symbolNarrow: '₩');
-  static const _kwd = Currency(_cld, 'KWD', 'dinar kuwaitià',
-      one: 'dinar kuwaitià', other: 'dinars kuwaitians');
-  static const _kyd = Currency(_cld, 'KYD', 'dòlar de les illes Caiman',
-      one: 'dòlar de les illes Caiman',
-      other: 'dòlars de les illes Caiman',
-      symbolNarrow: r'$');
-  static const _kzt = Currency(_cld, 'KZT', 'tenge',
-      one: 'tenge', other: 'tenges', symbolNarrow: '₸');
-  static const _lak = Currency(_cld, 'LAK', 'kip laosià',
-      one: 'kip laosià', other: 'kips laosians', symbolNarrow: '₭');
-  static const _lbp = Currency(_cld, 'LBP', 'lliura libanesa',
-      one: 'lliura libanesa', other: 'lliures libaneses', symbolNarrow: 'L£');
-  static const _lkr = Currency(_cld, 'LKR', 'rupia de Sri Lanka',
-      one: 'rupia de Sri Lanka',
-      other: 'rupies de Sri Lanka',
-      symbolNarrow: 'Rs');
-  static const _lrd = Currency(_cld, 'LRD', 'dòlar liberià',
-      one: 'dòlar liberià', other: 'dòlars liberians', symbolNarrow: r'$');
-  static const _lsl =
-      Currency(_cld, 'LSL', 'loti', one: 'loti', other: 'lotis');
-  static const _ltl = Currency(_cld, 'LTL', 'litas lituà',
-      one: 'litas lituà', other: 'litai lituans', symbolNarrow: 'Lt');
-  static const _ltt = Currency(_cld, 'LTT', 'talonas lituà',
-      one: 'talonas lituà', other: 'talonai lituans');
-  static const _luc = Currency(_cld, 'LUC', 'franc convertible luxemburguès',
-      one: 'franc convertible luxemburguès',
-      other: 'francs convertibles luxemburguesos');
-  static const _luf = Currency(_cld, 'LUF', 'franc luxemburguès',
-      one: 'franc luxemburguès', other: 'francs luxemburguesos');
-  static const _lul = Currency(_cld, 'LUL', 'franc financer luxemburguès',
-      one: 'franc financer luxemburguès',
-      other: 'francs financers luxemburguesos');
-  static const _lvl = Currency(_cld, 'LVL', 'lats letó',
-      one: 'lats letó', other: 'lati letons', symbolNarrow: 'Ls');
-  static const _lvr = Currency(_cld, 'LVR', 'ruble letó',
-      one: 'ruble letó', other: 'rubles letons');
-  static const _lyd = Currency(_cld, 'LYD', 'dinar libi',
-      one: 'dinar libi', other: 'dinars libis');
-  static const _mad = Currency(_cld, 'MAD', 'dírham marroquí',
-      one: 'dírham marroquí', other: 'dírhams marroquins');
-  static const _maf = Currency(_cld, 'MAF', 'franc marroquí',
-      one: 'franc marroquí', other: 'francs marroquins');
-  static const _mcf = Currency(_cld, 'MCF', 'franc monegasc',
-      one: 'franc monegasc', other: 'francs monegascos');
-  static const _mdc = Currency(_cld, 'MDC', 'cupó moldau',
-      one: 'cupó moldau', other: 'cupons moldaus');
-  static const _mdl = Currency(_cld, 'MDL', 'leu moldau',
-      one: 'leu moldau', other: 'lei moldaus');
-  static const _mga = Currency(_cld, 'MGA', 'ariary malgaix',
-      one: 'ariary malgaix', other: 'ariarys malgaixos', symbolNarrow: 'Ar');
-  static const _mgf = Currency(_cld, 'MGF', 'franc malgaix',
-      one: 'franc malgaix', other: 'francs malgaixos');
-  static const _mkd = Currency(_cld, 'MKD', 'dinar macedoni',
-      one: 'dinar macedoni', other: 'dinars macedonis');
-  static const _mkn = Currency(_cld, 'MKN', 'denar macedoni (1992–1993)',
-      one: 'denar macedoni (1992–1993)', other: 'denari macedonis (1992–1993)');
-  static const _mlf = Currency(_cld, 'MLF', 'franc malià',
-      one: 'franc malià', other: 'francs malians');
-  static const _mmk = Currency(_cld, 'MMK', 'kyat de Myanmar',
-      one: 'kyat de Myanmar', other: 'kyats de Myanmar', symbolNarrow: 'K');
-  static const _mnt = Currency(_cld, 'MNT', 'tögrög mongol',
-      one: 'tögrög mongol', other: 'tögrögs mongols', symbolNarrow: '₮');
-  static const _mop = Currency(_cld, 'MOP', 'pataca de Macau',
-      one: 'pataca de Macau', other: 'pataques de Macau');
-  static const _mro = Currency(_cld, 'MRO', 'ouguiya maurità (1973–2017)',
-      one: 'ouguiya maurità (1973–2017)',
-      other: 'ouguiyas mauritans (1973–2017)');
-  static const _mru = Currency(_cld, 'MRU', 'ouguiya maurità',
-      one: 'ouguiya maurità', other: 'ouguiyas mauritans');
-  static const _mtl = Currency(_cld, 'MTL', 'lira maltesa',
-      one: 'lira maltesa', other: 'lires malteses');
-  static const _mtp = Currency(_cld, 'MTP', 'lliura maltesa',
-      one: 'lliura maltesa', other: 'lliures malteses');
-  static const _mur = Currency(_cld, 'MUR', 'rupia mauriciana',
-      one: 'rupia mauriciana', other: 'rupies mauricianes', symbolNarrow: 'Rs');
-  static const _mvr = Currency(_cld, 'MVR', 'rupia de les Maldives',
-      one: 'rupia de les Maldives', other: 'rupies de les Maldives');
-  static const _mwk = Currency(_cld, 'MWK', 'kwacha malawià',
-      one: 'kwacha malawià', other: 'kwacha malawians');
-  static const _mxn = Currency(_cld, 'MXN', 'peso mexicà',
-      one: 'peso mexicà',
-      other: 'pesos mexicans',
-      symbol: 'MXN',
-      symbolNarrow: r'$');
-  static const _mxp = Currency(_cld, 'MXP', 'peso de plata mexicà (1861–1992)',
-      one: 'peso de plata mexicà (1861–1992)',
-      other: 'pesos de plata mexicans (1861–1992)');
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'nou xéquel israelià',
+    one: 'nou xéquel israelià',
+    other: 'nous xéquels israelians',
+    symbol: '₪',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'rupia índia',
+    one: 'rupia índia',
+    other: 'rupies índies',
+    symbol: '₹',
+    symbolNarrow: '₹',
+  );
+  static const _iqd = Currency(
+    _cld,
+    'IQD',
+    'dinar iraquià',
+    one: 'dinar iraquià',
+    other: 'dinars iraquians',
+  );
+  static const _irr = Currency(
+    _cld,
+    'IRR',
+    'rial iranià',
+    one: 'rial iranià',
+    other: 'rials iranians',
+  );
+  static const _isj = Currency(
+    _cld,
+    'ISJ',
+    'corona islandesa antiga',
+    one: 'corona islandesa antiga',
+    other: 'corones islandeses antigues',
+  );
+  static const _isk = Currency(
+    _cld,
+    'ISK',
+    'corona islandesa',
+    one: 'corona islandesa',
+    other: 'corones islandeses',
+    symbolNarrow: 'kr',
+  );
+  static const _itl = Currency(
+    _cld,
+    'ITL',
+    'lira italiana',
+    one: 'lira italiana',
+    other: 'lires italianes',
+  );
+  static const _jmd = Currency(
+    _cld,
+    'JMD',
+    'dòlar jamaicà',
+    one: 'dòlar jamaicà',
+    other: 'dòlars jamaicans',
+    symbolNarrow: r'$',
+  );
+  static const _jod = Currency(
+    _cld,
+    'JOD',
+    'dinar jordà',
+    one: 'dinar jordà',
+    other: 'dinars jordans',
+  );
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'ien',
+    one: 'ien',
+    other: 'iens',
+    symbol: '¥',
+    symbolNarrow: '¥',
+  );
+  static const _kes = Currency(
+    _cld,
+    'KES',
+    'xíling kenyà',
+    one: 'xíling kenyà',
+    other: 'xílings kenyans',
+  );
+  static const _kgs = Currency(
+    _cld,
+    'KGS',
+    'som kirguís',
+    one: 'som kirguís',
+    other: 'soms kirguisos',
+    symbolNarrow: '⃀',
+  );
+  static const _khr = Currency(
+    _cld,
+    'KHR',
+    'riel cambodjà',
+    one: 'riel cambodjà',
+    other: 'riels cambodjans',
+    symbolNarrow: '៛',
+  );
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'franc de les Comores',
+    one: 'franc de les Comores',
+    other: 'francs de les Comores',
+    symbolNarrow: 'CF',
+  );
+  static const _kpw = Currency(
+    _cld,
+    'KPW',
+    'won nord-coreà',
+    one: 'won nord-coreà',
+    other: 'wons nord-coreans',
+    symbolNarrow: '₩',
+  );
+  static const _krh = Currency(
+    _cld,
+    'KRH',
+    'hwan sud-coreà (1953–1962)',
+    one: 'hwan sud-coreà',
+    other: 'hwans sud-coreans',
+  );
+  static const _kro = Currency(
+    _cld,
+    'KRO',
+    'antic won sud-coreà',
+    one: 'antic won sud-coreà',
+    other: 'antics wons sud-coreans',
+  );
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'won sud-coreà',
+    one: 'won sud-coreà',
+    other: 'wons sud-coreans',
+    symbol: '₩',
+    symbolNarrow: '₩',
+  );
+  static const _kwd = Currency(
+    _cld,
+    'KWD',
+    'dinar kuwaitià',
+    one: 'dinar kuwaitià',
+    other: 'dinars kuwaitians',
+  );
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'dòlar de les illes Caiman',
+    one: 'dòlar de les illes Caiman',
+    other: 'dòlars de les illes Caiman',
+    symbolNarrow: r'$',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'tenge',
+    one: 'tenge',
+    other: 'tenges',
+    symbolNarrow: '₸',
+  );
+  static const _lak = Currency(
+    _cld,
+    'LAK',
+    'kip laosià',
+    one: 'kip laosià',
+    other: 'kips laosians',
+    symbolNarrow: '₭',
+  );
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'lliura libanesa',
+    one: 'lliura libanesa',
+    other: 'lliures libaneses',
+    symbolNarrow: 'L£',
+  );
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'rupia de Sri Lanka',
+    one: 'rupia de Sri Lanka',
+    other: 'rupies de Sri Lanka',
+    symbolNarrow: 'Rs',
+  );
+  static const _lrd = Currency(
+    _cld,
+    'LRD',
+    'dòlar liberià',
+    one: 'dòlar liberià',
+    other: 'dòlars liberians',
+    symbolNarrow: r'$',
+  );
+  static const _lsl = Currency(
+    _cld,
+    'LSL',
+    'loti',
+    one: 'loti',
+    other: 'lotis',
+  );
+  static const _ltl = Currency(
+    _cld,
+    'LTL',
+    'litas lituà',
+    one: 'litas lituà',
+    other: 'litai lituans',
+    symbolNarrow: 'Lt',
+  );
+  static const _ltt = Currency(
+    _cld,
+    'LTT',
+    'talonas lituà',
+    one: 'talonas lituà',
+    other: 'talonai lituans',
+  );
+  static const _luc = Currency(
+    _cld,
+    'LUC',
+    'franc convertible luxemburguès',
+    one: 'franc convertible luxemburguès',
+    other: 'francs convertibles luxemburguesos',
+  );
+  static const _luf = Currency(
+    _cld,
+    'LUF',
+    'franc luxemburguès',
+    one: 'franc luxemburguès',
+    other: 'francs luxemburguesos',
+  );
+  static const _lul = Currency(
+    _cld,
+    'LUL',
+    'franc financer luxemburguès',
+    one: 'franc financer luxemburguès',
+    other: 'francs financers luxemburguesos',
+  );
+  static const _lvl = Currency(
+    _cld,
+    'LVL',
+    'lats letó',
+    one: 'lats letó',
+    other: 'lati letons',
+    symbolNarrow: 'Ls',
+  );
+  static const _lvr = Currency(
+    _cld,
+    'LVR',
+    'ruble letó',
+    one: 'ruble letó',
+    other: 'rubles letons',
+  );
+  static const _lyd = Currency(
+    _cld,
+    'LYD',
+    'dinar libi',
+    one: 'dinar libi',
+    other: 'dinars libis',
+  );
+  static const _mad = Currency(
+    _cld,
+    'MAD',
+    'dírham marroquí',
+    one: 'dírham marroquí',
+    other: 'dírhams marroquins',
+  );
+  static const _maf = Currency(
+    _cld,
+    'MAF',
+    'franc marroquí',
+    one: 'franc marroquí',
+    other: 'francs marroquins',
+  );
+  static const _mcf = Currency(
+    _cld,
+    'MCF',
+    'franc monegasc',
+    one: 'franc monegasc',
+    other: 'francs monegascos',
+  );
+  static const _mdc = Currency(
+    _cld,
+    'MDC',
+    'cupó moldau',
+    one: 'cupó moldau',
+    other: 'cupons moldaus',
+  );
+  static const _mdl = Currency(
+    _cld,
+    'MDL',
+    'leu moldau',
+    one: 'leu moldau',
+    other: 'lei moldaus',
+  );
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'ariary malgaix',
+    one: 'ariary malgaix',
+    other: 'ariarys malgaixos',
+    symbolNarrow: 'Ar',
+  );
+  static const _mgf = Currency(
+    _cld,
+    'MGF',
+    'franc malgaix',
+    one: 'franc malgaix',
+    other: 'francs malgaixos',
+  );
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'dinar macedoni',
+    one: 'dinar macedoni',
+    other: 'dinars macedonis',
+  );
+  static const _mkn = Currency(
+    _cld,
+    'MKN',
+    'denar macedoni (1992–1993)',
+    one: 'denar macedoni (1992–1993)',
+    other: 'denari macedonis (1992–1993)',
+  );
+  static const _mlf = Currency(
+    _cld,
+    'MLF',
+    'franc malià',
+    one: 'franc malià',
+    other: 'francs malians',
+  );
+  static const _mmk = Currency(
+    _cld,
+    'MMK',
+    'kyat de Myanmar',
+    one: 'kyat de Myanmar',
+    other: 'kyats de Myanmar',
+    symbolNarrow: 'K',
+  );
+  static const _mnt = Currency(
+    _cld,
+    'MNT',
+    'tögrög mongol',
+    one: 'tögrög mongol',
+    other: 'tögrögs mongols',
+    symbolNarrow: '₮',
+  );
+  static const _mop = Currency(
+    _cld,
+    'MOP',
+    'pataca de Macau',
+    one: 'pataca de Macau',
+    other: 'pataques de Macau',
+  );
+  static const _mro = Currency(
+    _cld,
+    'MRO',
+    'ouguiya maurità (1973–2017)',
+    one: 'ouguiya maurità (1973–2017)',
+    other: 'ouguiyas mauritans (1973–2017)',
+  );
+  static const _mru = Currency(
+    _cld,
+    'MRU',
+    'ouguiya maurità',
+    one: 'ouguiya maurità',
+    other: 'ouguiyas mauritans',
+  );
+  static const _mtl = Currency(
+    _cld,
+    'MTL',
+    'lira maltesa',
+    one: 'lira maltesa',
+    other: 'lires malteses',
+  );
+  static const _mtp = Currency(
+    _cld,
+    'MTP',
+    'lliura maltesa',
+    one: 'lliura maltesa',
+    other: 'lliures malteses',
+  );
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'rupia mauriciana',
+    one: 'rupia mauriciana',
+    other: 'rupies mauricianes',
+    symbolNarrow: 'Rs',
+  );
+  static const _mvr = Currency(
+    _cld,
+    'MVR',
+    'rupia de les Maldives',
+    one: 'rupia de les Maldives',
+    other: 'rupies de les Maldives',
+  );
+  static const _mwk = Currency(
+    _cld,
+    'MWK',
+    'kwacha malawià',
+    one: 'kwacha malawià',
+    other: 'kwacha malawians',
+  );
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'peso mexicà',
+    one: 'peso mexicà',
+    other: 'pesos mexicans',
+    symbol: 'MXN',
+    symbolNarrow: r'$',
+  );
+  static const _mxp = Currency(
+    _cld,
+    'MXP',
+    'peso de plata mexicà (1861–1992)',
+    one: 'peso de plata mexicà (1861–1992)',
+    other: 'pesos de plata mexicans (1861–1992)',
+  );
   static const _mxv = Currency(
-      _cld, 'MXV', 'unidad de inversión (UDI) mexicana',
-      one: 'unidad de inversión (UDI) mexicana',
-      other: 'unidades de inversión (UDI) mexicanes');
-  static const _myr = Currency(_cld, 'MYR', 'ringgit',
-      one: 'ringgit', other: 'ringgits', symbolNarrow: 'RM');
-  static const _mze = Currency(_cld, 'MZE', 'escut moçambiquès',
-      one: 'escut moçambiquès', other: 'escuts moçambiquesos');
-  static const _mzm = Currency(_cld, 'MZM', 'antic metical moçambiquès',
-      one: 'antic metical moçambiquès', other: 'antics meticals moçambiquesos');
-  static const _mzn = Currency(_cld, 'MZN', 'metical moçambiquès',
-      one: 'metical moçambiquès', other: 'meticals moçambiquesos');
-  static const _nad = Currency(_cld, 'NAD', 'dòlar namibià',
-      one: 'dòlar namibià', other: 'dòlars namibians', symbolNarrow: r'$');
-  static const _ngn = Currency(_cld, 'NGN', 'naira nigerià',
-      one: 'naira nigerià', other: 'naires nigerians', symbolNarrow: '₦');
-  static const _nic = Currency(_cld, 'NIC', 'córdoba nicaragüenca',
-      one: 'córdoba nicaragüenca', other: 'córdobas nicaragüenques');
-  static const _nio = Currency(_cld, 'NIO', 'córdoba nicaragüenc',
-      one: 'córdoba nicaragüenc',
-      other: 'córdobas nicaragüencs',
-      symbolNarrow: r'C$');
-  static const _nlg = Currency(_cld, 'NLG', 'florí neerlandès',
-      one: 'florí neerlandès', other: 'florins neerlandesos');
-  static const _nok = Currency(_cld, 'NOK', 'corona noruega',
-      one: 'corona noruega', other: 'corones noruegues', symbolNarrow: 'kr');
-  static const _npr = Currency(_cld, 'NPR', 'rupia nepalesa',
-      one: 'rupia nepalesa', other: 'rupies nepaleses', symbolNarrow: 'Rs');
-  static const _nzd = Currency(_cld, 'NZD', 'dòlar neozelandès',
-      one: 'dòlar neozelandès',
-      other: 'dòlars neozelandesos',
-      symbol: r'NZ$',
-      symbolNarrow: r'$');
-  static const _omr = Currency(_cld, 'OMR', 'rial omanita',
-      one: 'rial omanita', other: 'rials omanites');
-  static const _pab =
-      Currency(_cld, 'PAB', 'balboa', one: 'balboa', other: 'balboes');
-  static const _pei = Currency(_cld, 'PEI', 'inti peruà',
-      one: 'inti peruà', other: 'intis peruans');
+    _cld,
+    'MXV',
+    'unidad de inversión (UDI) mexicana',
+    one: 'unidad de inversión (UDI) mexicana',
+    other: 'unidades de inversión (UDI) mexicanes',
+  );
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'ringgit',
+    one: 'ringgit',
+    other: 'ringgits',
+    symbolNarrow: 'RM',
+  );
+  static const _mze = Currency(
+    _cld,
+    'MZE',
+    'escut moçambiquès',
+    one: 'escut moçambiquès',
+    other: 'escuts moçambiquesos',
+  );
+  static const _mzm = Currency(
+    _cld,
+    'MZM',
+    'antic metical moçambiquès',
+    one: 'antic metical moçambiquès',
+    other: 'antics meticals moçambiquesos',
+  );
+  static const _mzn = Currency(
+    _cld,
+    'MZN',
+    'metical moçambiquès',
+    one: 'metical moçambiquès',
+    other: 'meticals moçambiquesos',
+  );
+  static const _nad = Currency(
+    _cld,
+    'NAD',
+    'dòlar namibià',
+    one: 'dòlar namibià',
+    other: 'dòlars namibians',
+    symbolNarrow: r'$',
+  );
+  static const _ngn = Currency(
+    _cld,
+    'NGN',
+    'naira nigerià',
+    one: 'naira nigerià',
+    other: 'naires nigerians',
+    symbolNarrow: '₦',
+  );
+  static const _nic = Currency(
+    _cld,
+    'NIC',
+    'córdoba nicaragüenca',
+    one: 'córdoba nicaragüenca',
+    other: 'córdobas nicaragüenques',
+  );
+  static const _nio = Currency(
+    _cld,
+    'NIO',
+    'córdoba nicaragüenc',
+    one: 'córdoba nicaragüenc',
+    other: 'córdobas nicaragüencs',
+    symbolNarrow: r'C$',
+  );
+  static const _nlg = Currency(
+    _cld,
+    'NLG',
+    'florí neerlandès',
+    one: 'florí neerlandès',
+    other: 'florins neerlandesos',
+  );
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'corona noruega',
+    one: 'corona noruega',
+    other: 'corones noruegues',
+    symbolNarrow: 'kr',
+  );
+  static const _npr = Currency(
+    _cld,
+    'NPR',
+    'rupia nepalesa',
+    one: 'rupia nepalesa',
+    other: 'rupies nepaleses',
+    symbolNarrow: 'Rs',
+  );
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'dòlar neozelandès',
+    one: 'dòlar neozelandès',
+    other: 'dòlars neozelandesos',
+    symbol: r'NZ$',
+    symbolNarrow: r'$',
+  );
+  static const _omr = Currency(
+    _cld,
+    'OMR',
+    'rial omanita',
+    one: 'rial omanita',
+    other: 'rials omanites',
+  );
+  static const _pab = Currency(
+    _cld,
+    'PAB',
+    'balboa',
+    one: 'balboa',
+    other: 'balboes',
+  );
+  static const _pei = Currency(
+    _cld,
+    'PEI',
+    'inti peruà',
+    one: 'inti peruà',
+    other: 'intis peruans',
+  );
   static const _pen = Currency(_cld, 'PEN', 'sol', one: 'sol', other: 'sols');
-  static const _pes = Currency(_cld, 'PES', 'sol peruà (1863–1965)',
-      one: 'sol peruà (1863–1965)', other: 'sols peruans (1863–1965)');
-  static const _pgk =
-      Currency(_cld, 'PGK', 'kina', one: 'kina', other: 'kines');
-  static const _php = Currency(_cld, 'PHP', 'peso filipí',
-      one: 'peso filipí',
-      other: 'pesos filipins',
-      symbol: 'PHP',
-      symbolNarrow: '₱');
-  static const _pkr = Currency(_cld, 'PKR', 'rupia pakistanesa',
-      one: 'rupia pakistanesa',
-      other: 'rupies pakistaneses',
-      symbolNarrow: 'Rs');
-  static const _pln = Currency(_cld, 'PLN', 'zloty',
-      one: 'zloty', other: 'zlote', symbolNarrow: 'zł');
-  static const _plz = Currency(_cld, 'PLZ', 'zloty polonès (1950–1995)',
-      one: 'zloty polonès (1950–1995)', other: 'zlote polonesos (1950–1995)');
-  static const _pte = Currency(_cld, 'PTE', 'escut portuguès',
-      one: 'escut portuguès', other: 'escuts portuguesos');
-  static const _pyg = Currency(_cld, 'PYG', 'guaraní',
-      one: 'guaraní', other: 'guaranís', symbolNarrow: '₲');
-  static const _qar = Currency(_cld, 'QAR', 'rial de Qatar',
-      one: 'rial de Qatar', other: 'rials de Qatar');
-  static const _rhd = Currency(_cld, 'RHD', 'dòlar rhodesià',
-      one: 'dòlar rhodesià', other: 'dòlars rhodesians');
-  static const _rol = Currency(_cld, 'ROL', 'antic leu romanès',
-      one: 'antic leu romanès', other: 'antics lei romanesos');
-  static const _ron = Currency(_cld, 'RON', 'leu romanès',
-      one: 'leu romanès', other: 'lei romanesos', symbolNarrow: 'lei');
-  static const _rsd = Currency(_cld, 'RSD', 'dinar serbi',
-      one: 'dinar serbi', other: 'dinars serbis');
-  static const _rub = Currency(_cld, 'RUB', 'ruble',
-      one: 'ruble', other: 'rubles', symbolNarrow: '₽');
-  static const _rur = Currency(_cld, 'RUR', 'ruble rus (1991–1998)',
-      one: 'ruble rus (1991–1998)', other: 'rubles russos (1991–1998)');
-  static const _rwf = Currency(_cld, 'RWF', 'franc de Ruanda',
-      one: 'franc de Ruanda', other: 'francs de Ruanda', symbolNarrow: 'RF');
-  static const _sar = Currency(_cld, 'SAR', 'rial saudita',
-      one: 'rial saudita', other: 'rials saudites');
-  static const _sbd = Currency(_cld, 'SBD', 'dòlar de les illes Salomó',
-      one: 'dòlar de les illes Salomó',
-      other: 'dòlars de les illes Salomó',
-      symbolNarrow: r'$');
-  static const _scr = Currency(_cld, 'SCR', 'rupia de les Seychelles',
-      one: 'rupia de les Seychelles', other: 'rupies de les Seychelles');
-  static const _sdd = Currency(_cld, 'SDD', 'dinar sudanès',
-      one: 'dinar sudanès', other: 'dinars sudanesos');
-  static const _sdg = Currency(_cld, 'SDG', 'lliura sudanesa',
-      one: 'lliura sudanesa', other: 'lliures sudaneses');
-  static const _sdp = Currency(_cld, 'SDP', 'antiga lliura sudanesa',
-      one: 'antiga lliura sudanesa', other: 'antigues lliures sudaneses');
-  static const _sek = Currency(_cld, 'SEK', 'corona sueca',
-      one: 'corona sueca', other: 'corones sueques', symbolNarrow: 'kr');
-  static const _sgd = Currency(_cld, 'SGD', 'dòlar de Singapur',
-      one: 'dòlar de Singapur',
-      other: 'dòlars de Singapur',
-      symbolNarrow: r'$');
-  static const _shp = Currency(_cld, 'SHP', 'lliura de Santa Helena',
-      one: 'lliura de Santa Helena',
-      other: 'lliures de Santa Helena',
-      symbolNarrow: '£');
-  static const _sit = Currency(_cld, 'SIT', 'tolar eslovè',
-      one: 'tolar eslovè', other: 'tolars eslovens');
-  static const _skk = Currency(_cld, 'SKK', 'corona eslovaca',
-      one: 'corona eslovaca', other: 'corones eslovaques');
-  static const _sle = Currency(_cld, 'SLE', 'leone de Sierra Leone',
-      one: 'leone de Sierra Leone', other: 'leones de Sierra Leone');
-  static const _sll = Currency(_cld, 'SLL', 'leone de Sierra Leone (1964—2022)',
-      one: 'leone de Sierra Leone (1964—2022)',
-      other: 'leones de Sierra Leone (1964—2022)');
-  static const _sos = Currency(_cld, 'SOS', 'xíling somali',
-      one: 'xíling somali', other: 'xílings somalis');
-  static const _srd = Currency(_cld, 'SRD', 'dòlar de Surinam',
-      one: 'dòlar de Surinam', other: 'dòlars de Surinam', symbolNarrow: r'$');
-  static const _srg = Currency(_cld, 'SRG', 'florí de Surinam',
-      one: 'florí de Surinam', other: 'florins de Surinam');
-  static const _ssp = Currency(_cld, 'SSP', 'lliura del Sudan del Sud',
-      one: 'lliura del Sudan del Sud',
-      other: 'lliures del Sudan del Sud',
-      symbolNarrow: '£');
+  static const _pes = Currency(
+    _cld,
+    'PES',
+    'sol peruà (1863–1965)',
+    one: 'sol peruà (1863–1965)',
+    other: 'sols peruans (1863–1965)',
+  );
+  static const _pgk = Currency(
+    _cld,
+    'PGK',
+    'kina',
+    one: 'kina',
+    other: 'kines',
+  );
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'peso filipí',
+    one: 'peso filipí',
+    other: 'pesos filipins',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'rupia pakistanesa',
+    one: 'rupia pakistanesa',
+    other: 'rupies pakistaneses',
+    symbolNarrow: 'Rs',
+  );
+  static const _pln = Currency(
+    _cld,
+    'PLN',
+    'zloty',
+    one: 'zloty',
+    other: 'zlote',
+    symbolNarrow: 'zł',
+  );
+  static const _plz = Currency(
+    _cld,
+    'PLZ',
+    'zloty polonès (1950–1995)',
+    one: 'zloty polonès (1950–1995)',
+    other: 'zlote polonesos (1950–1995)',
+  );
+  static const _pte = Currency(
+    _cld,
+    'PTE',
+    'escut portuguès',
+    one: 'escut portuguès',
+    other: 'escuts portuguesos',
+  );
+  static const _pyg = Currency(
+    _cld,
+    'PYG',
+    'guaraní',
+    one: 'guaraní',
+    other: 'guaranís',
+    symbolNarrow: '₲',
+  );
+  static const _qar = Currency(
+    _cld,
+    'QAR',
+    'rial de Qatar',
+    one: 'rial de Qatar',
+    other: 'rials de Qatar',
+  );
+  static const _rhd = Currency(
+    _cld,
+    'RHD',
+    'dòlar rhodesià',
+    one: 'dòlar rhodesià',
+    other: 'dòlars rhodesians',
+  );
+  static const _rol = Currency(
+    _cld,
+    'ROL',
+    'antic leu romanès',
+    one: 'antic leu romanès',
+    other: 'antics lei romanesos',
+  );
+  static const _ron = Currency(
+    _cld,
+    'RON',
+    'leu romanès',
+    one: 'leu romanès',
+    other: 'lei romanesos',
+    symbolNarrow: 'lei',
+  );
+  static const _rsd = Currency(
+    _cld,
+    'RSD',
+    'dinar serbi',
+    one: 'dinar serbi',
+    other: 'dinars serbis',
+  );
+  static const _rub = Currency(
+    _cld,
+    'RUB',
+    'ruble',
+    one: 'ruble',
+    other: 'rubles',
+    symbolNarrow: '₽',
+  );
+  static const _rur = Currency(
+    _cld,
+    'RUR',
+    'ruble rus (1991–1998)',
+    one: 'ruble rus (1991–1998)',
+    other: 'rubles russos (1991–1998)',
+  );
+  static const _rwf = Currency(
+    _cld,
+    'RWF',
+    'franc de Ruanda',
+    one: 'franc de Ruanda',
+    other: 'francs de Ruanda',
+    symbolNarrow: 'RF',
+  );
+  static const _sar = Currency(
+    _cld,
+    'SAR',
+    'rial saudita',
+    one: 'rial saudita',
+    other: 'rials saudites',
+  );
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'dòlar de les illes Salomó',
+    one: 'dòlar de les illes Salomó',
+    other: 'dòlars de les illes Salomó',
+    symbolNarrow: r'$',
+  );
+  static const _scr = Currency(
+    _cld,
+    'SCR',
+    'rupia de les Seychelles',
+    one: 'rupia de les Seychelles',
+    other: 'rupies de les Seychelles',
+  );
+  static const _sdd = Currency(
+    _cld,
+    'SDD',
+    'dinar sudanès',
+    one: 'dinar sudanès',
+    other: 'dinars sudanesos',
+  );
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'lliura sudanesa',
+    one: 'lliura sudanesa',
+    other: 'lliures sudaneses',
+  );
+  static const _sdp = Currency(
+    _cld,
+    'SDP',
+    'antiga lliura sudanesa',
+    one: 'antiga lliura sudanesa',
+    other: 'antigues lliures sudaneses',
+  );
+  static const _sek = Currency(
+    _cld,
+    'SEK',
+    'corona sueca',
+    one: 'corona sueca',
+    other: 'corones sueques',
+    symbolNarrow: 'kr',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'dòlar de Singapur',
+    one: 'dòlar de Singapur',
+    other: 'dòlars de Singapur',
+    symbolNarrow: r'$',
+  );
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'lliura de Santa Helena',
+    one: 'lliura de Santa Helena',
+    other: 'lliures de Santa Helena',
+    symbolNarrow: '£',
+  );
+  static const _sit = Currency(
+    _cld,
+    'SIT',
+    'tolar eslovè',
+    one: 'tolar eslovè',
+    other: 'tolars eslovens',
+  );
+  static const _skk = Currency(
+    _cld,
+    'SKK',
+    'corona eslovaca',
+    one: 'corona eslovaca',
+    other: 'corones eslovaques',
+  );
+  static const _sle = Currency(
+    _cld,
+    'SLE',
+    'leone de Sierra Leone',
+    one: 'leone de Sierra Leone',
+    other: 'leones de Sierra Leone',
+  );
+  static const _sll = Currency(
+    _cld,
+    'SLL',
+    'leone de Sierra Leone (1964—2022)',
+    one: 'leone de Sierra Leone (1964—2022)',
+    other: 'leones de Sierra Leone (1964—2022)',
+  );
+  static const _sos = Currency(
+    _cld,
+    'SOS',
+    'xíling somali',
+    one: 'xíling somali',
+    other: 'xílings somalis',
+  );
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'dòlar de Surinam',
+    one: 'dòlar de Surinam',
+    other: 'dòlars de Surinam',
+    symbolNarrow: r'$',
+  );
+  static const _srg = Currency(
+    _cld,
+    'SRG',
+    'florí de Surinam',
+    one: 'florí de Surinam',
+    other: 'florins de Surinam',
+  );
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'lliura del Sudan del Sud',
+    one: 'lliura del Sudan del Sud',
+    other: 'lliures del Sudan del Sud',
+    symbolNarrow: '£',
+  );
   static const _std = Currency(
-      _cld, 'STD', 'dobra de São Tomé i Príncipe (1977–2017)',
-      one: 'dobra de São Tomé i Príncipe (1977–2017)',
-      other: 'dobras de São Tomé i Príncipe (1977–2017)');
-  static const _stn = Currency(_cld, 'STN', 'dobra de São Tomé i Príncipe',
-      one: 'dobra de São Tomé i Príncipe',
-      other: 'dobras de São Tomé i Príncipe',
-      symbolNarrow: 'Db');
-  static const _sur = Currency(_cld, 'SUR', 'ruble soviètic',
-      one: 'ruble soviètic', other: 'rubles soviètics');
-  static const _svc = Currency(_cld, 'SVC', 'colon salvadorenc',
-      one: 'colón salvadorenc', other: 'colones salvadorencs');
-  static const _syp = Currency(_cld, 'SYP', 'lliura siriana',
-      one: 'lliura siriana', other: 'lliures sirianes', symbolNarrow: '£');
-  static const _szl = Currency(_cld, 'SZL', 'lilangeni swazi',
-      one: 'lilangeni swazi', other: 'emalangeni swazis');
-  static const _thb = Currency(_cld, 'THB', 'baht',
-      one: 'baht', other: 'bahts', symbol: '฿', symbolNarrow: '฿');
-  static const _tjr = Currency(_cld, 'TJR', 'ruble tadjik',
-      one: 'ruble tadjik', other: 'rubles tadjiks');
-  static const _tjs = Currency(_cld, 'TJS', 'somoni tadjik',
-      one: 'somoni tadjik', other: 'somonis tadjiks');
-  static const _tmm = Currency(_cld, 'TMM', 'manat turcman (1993–2009)',
-      one: 'manat turcman (1993–2009)', other: 'manats turcmans (1993–2009)');
-  static const _tmt = Currency(_cld, 'TMT', 'manat turcman',
-      one: 'manat turcman', other: 'manats turcmans');
-  static const _tnd = Currency(_cld, 'TND', 'dinar tunisià',
-      one: 'dinar tunisià', other: 'dinars tunisians');
-  static const _top = Currency(_cld, 'TOP', 'pa‘anga tongà',
-      one: 'pa‘anga tongà', other: 'pa‘angas tongans', symbolNarrow: r'T$');
-  static const _tpe = Currency(_cld, 'TPE', 'escut de Timor',
-      one: 'escut de Timor', other: 'escuts de Timor');
-  static const _trl = Currency(_cld, 'TRL', 'lira turca (1922–2005)',
-      one: 'lira turca (1922–2005)', other: 'lires turques (1922–2005)');
-  static const _$try = Currency(_cld, 'TRY', 'lira turca',
-      one: 'lira turca',
-      other: 'lires turques',
-      symbolNarrow: '₺',
-      symbolVariant: 'TL');
-  static const _ttd = Currency(_cld, 'TTD', 'dòlar de Trinitat i Tobago',
-      one: 'dòlar de Trinitat i Tobago',
-      other: 'dòlars de Trinitat i Tobago',
-      symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'nou dòlar de Taiwan',
-      one: 'nou dòlar de Taiwan',
-      other: 'nous dòlars de Taiwan',
-      symbol: r'NT$',
-      symbolNarrow: r'$');
-  static const _tzs = Currency(_cld, 'TZS', 'xíling tanzà',
-      one: 'xíling tanzà', other: 'xílings tanzans');
-  static const _uah = Currency(_cld, 'UAH', 'hrívnia',
-      one: 'hrívnia', other: 'hrívnies', symbolNarrow: '₴');
-  static const _uak = Currency(_cld, 'UAK', 'karbóvanets ucraïnès',
-      one: 'karbóvanets ucraïnès', other: 'karbóvantsiv ucraïnesos');
-  static const _ugs = Currency(_cld, 'UGS', 'xíling ugandès (1966–1987)',
-      one: 'xíling ugandès (1966–1987)',
-      other: 'xílings ugandesos (1966–1987)');
-  static const _ugx = Currency(_cld, 'UGX', 'xíling ugandès',
-      one: 'xíling ugandès', other: 'xílings ugandesos');
-  static const _usd = Currency(_cld, 'USD', 'dòlar dels Estats Units',
-      one: 'dòlar dels Estats Units',
-      other: 'dòlars dels Estats Units',
-      symbol: 'USD',
-      symbolNarrow: r'$');
+    _cld,
+    'STD',
+    'dobra de São Tomé i Príncipe (1977–2017)',
+    one: 'dobra de São Tomé i Príncipe (1977–2017)',
+    other: 'dobras de São Tomé i Príncipe (1977–2017)',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'dobra de São Tomé i Príncipe',
+    one: 'dobra de São Tomé i Príncipe',
+    other: 'dobras de São Tomé i Príncipe',
+    symbolNarrow: 'Db',
+  );
+  static const _sur = Currency(
+    _cld,
+    'SUR',
+    'ruble soviètic',
+    one: 'ruble soviètic',
+    other: 'rubles soviètics',
+  );
+  static const _svc = Currency(
+    _cld,
+    'SVC',
+    'colon salvadorenc',
+    one: 'colón salvadorenc',
+    other: 'colones salvadorencs',
+  );
+  static const _syp = Currency(
+    _cld,
+    'SYP',
+    'lliura siriana',
+    one: 'lliura siriana',
+    other: 'lliures sirianes',
+    symbolNarrow: '£',
+  );
+  static const _szl = Currency(
+    _cld,
+    'SZL',
+    'lilangeni swazi',
+    one: 'lilangeni swazi',
+    other: 'emalangeni swazis',
+  );
+  static const _thb = Currency(
+    _cld,
+    'THB',
+    'baht',
+    one: 'baht',
+    other: 'bahts',
+    symbol: '฿',
+    symbolNarrow: '฿',
+  );
+  static const _tjr = Currency(
+    _cld,
+    'TJR',
+    'ruble tadjik',
+    one: 'ruble tadjik',
+    other: 'rubles tadjiks',
+  );
+  static const _tjs = Currency(
+    _cld,
+    'TJS',
+    'somoni tadjik',
+    one: 'somoni tadjik',
+    other: 'somonis tadjiks',
+  );
+  static const _tmm = Currency(
+    _cld,
+    'TMM',
+    'manat turcman (1993–2009)',
+    one: 'manat turcman (1993–2009)',
+    other: 'manats turcmans (1993–2009)',
+  );
+  static const _tmt = Currency(
+    _cld,
+    'TMT',
+    'manat turcman',
+    one: 'manat turcman',
+    other: 'manats turcmans',
+  );
+  static const _tnd = Currency(
+    _cld,
+    'TND',
+    'dinar tunisià',
+    one: 'dinar tunisià',
+    other: 'dinars tunisians',
+  );
+  static const _top = Currency(
+    _cld,
+    'TOP',
+    'pa‘anga tongà',
+    one: 'pa‘anga tongà',
+    other: 'pa‘angas tongans',
+    symbolNarrow: r'T$',
+  );
+  static const _tpe = Currency(
+    _cld,
+    'TPE',
+    'escut de Timor',
+    one: 'escut de Timor',
+    other: 'escuts de Timor',
+  );
+  static const _trl = Currency(
+    _cld,
+    'TRL',
+    'lira turca (1922–2005)',
+    one: 'lira turca (1922–2005)',
+    other: 'lires turques (1922–2005)',
+  );
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'lira turca',
+    one: 'lira turca',
+    other: 'lires turques',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'dòlar de Trinitat i Tobago',
+    one: 'dòlar de Trinitat i Tobago',
+    other: 'dòlars de Trinitat i Tobago',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'nou dòlar de Taiwan',
+    one: 'nou dòlar de Taiwan',
+    other: 'nous dòlars de Taiwan',
+    symbol: r'NT$',
+    symbolNarrow: r'$',
+  );
+  static const _tzs = Currency(
+    _cld,
+    'TZS',
+    'xíling tanzà',
+    one: 'xíling tanzà',
+    other: 'xílings tanzans',
+  );
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'hrívnia',
+    one: 'hrívnia',
+    other: 'hrívnies',
+    symbolNarrow: '₴',
+  );
+  static const _uak = Currency(
+    _cld,
+    'UAK',
+    'karbóvanets ucraïnès',
+    one: 'karbóvanets ucraïnès',
+    other: 'karbóvantsiv ucraïnesos',
+  );
+  static const _ugs = Currency(
+    _cld,
+    'UGS',
+    'xíling ugandès (1966–1987)',
+    one: 'xíling ugandès (1966–1987)',
+    other: 'xílings ugandesos (1966–1987)',
+  );
+  static const _ugx = Currency(
+    _cld,
+    'UGX',
+    'xíling ugandès',
+    one: 'xíling ugandès',
+    other: 'xílings ugandesos',
+  );
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'dòlar dels Estats Units',
+    one: 'dòlar dels Estats Units',
+    other: 'dòlars dels Estats Units',
+    symbol: 'USD',
+    symbolNarrow: r'$',
+  );
   static const _usn = Currency(
-      _cld, 'USN', 'dòlar dels Estats Units (dia següent)',
-      one: 'dòlar dels Estats Units (dia següent)',
-      other: 'dòlars dels Estats Units (dia següent)');
+    _cld,
+    'USN',
+    'dòlar dels Estats Units (dia següent)',
+    one: 'dòlar dels Estats Units (dia següent)',
+    other: 'dòlars dels Estats Units (dia següent)',
+  );
   static const _uss = Currency(
-      _cld, 'USS', 'dòlar dels Estats Units (mateix dia)',
-      one: 'dòlar dels Estats Units (mateix dia)',
-      other: 'dòlars dels Estats Units (mateix dia)');
+    _cld,
+    'USS',
+    'dòlar dels Estats Units (mateix dia)',
+    one: 'dòlar dels Estats Units (mateix dia)',
+    other: 'dòlars dels Estats Units (mateix dia)',
+  );
   static const _uyi = Currency(
-      _cld, 'UYI', 'peso uruguaià en unitats indexades',
-      one: 'peso uruguaià en unitats indexades',
-      other: 'pesos uruguaians en unitats indexades');
-  static const _uyp = Currency(_cld, 'UYP', 'peso uruguaià (1975–1993)',
-      one: 'peso uruguaià (1975–1993)', other: 'pesos uruguaians (1975–1993)');
-  static const _uyu = Currency(_cld, 'UYU', 'peso uruguaià',
-      one: 'peso uruguaià', other: 'pesos uruguaians', symbolNarrow: r'$');
-  static const _uzs = Currency(_cld, 'UZS', 'som uzbek',
-      one: 'som uzbek', other: 'soms uzbeks');
-  static const _veb = Currency(_cld, 'VEB', 'bolívar veneçolà (1871–2008)',
-      one: 'bolívar veneçolà (1871–2008)',
-      other: 'bolívars veneçolans (1871–2008)');
-  static const _vef = Currency(_cld, 'VEF', 'bolívar veneçolà (2008–2018)',
-      one: 'bolívar veneçolà (2008–2018)',
-      other: 'bolívars veneçolans (2008–2018)',
-      symbolNarrow: 'Bs F');
-  static const _ves = Currency(_cld, 'VES', 'bolívar veneçolà',
-      one: 'bolívar veneçolà', other: 'bolívars veneçolans');
-  static const _vnd = Currency(_cld, 'VND', 'dong vietnamita',
-      one: 'dong vietnamita',
-      other: 'dongs vietnamites',
-      symbol: '₫',
-      symbolNarrow: '₫');
-  static const _vnn = Currency(_cld, 'VNN', 'dong vietnamita (1978–1985)',
-      one: 'dong vietnamita (1978–1985)',
-      other: 'dongs vietnamites (1978–1985)');
-  static const _vuv = Currency(_cld, 'VUV', 'vatu de Vanuatu',
-      one: 'vatu de Vanuatu', other: 'vatus de Vanuatu');
-  static const _wst = Currency(_cld, 'WST', 'tala samoà',
-      one: 'tala samoà', other: 'tales samoans');
-  static const _xaf = Currency(_cld, 'XAF', 'franc CFA BEAC',
-      one: 'franc CFA BEAC', other: 'francs CFA BEAC', symbol: 'FCFA');
+    _cld,
+    'UYI',
+    'peso uruguaià en unitats indexades',
+    one: 'peso uruguaià en unitats indexades',
+    other: 'pesos uruguaians en unitats indexades',
+  );
+  static const _uyp = Currency(
+    _cld,
+    'UYP',
+    'peso uruguaià (1975–1993)',
+    one: 'peso uruguaià (1975–1993)',
+    other: 'pesos uruguaians (1975–1993)',
+  );
+  static const _uyu = Currency(
+    _cld,
+    'UYU',
+    'peso uruguaià',
+    one: 'peso uruguaià',
+    other: 'pesos uruguaians',
+    symbolNarrow: r'$',
+  );
+  static const _uzs = Currency(
+    _cld,
+    'UZS',
+    'som uzbek',
+    one: 'som uzbek',
+    other: 'soms uzbeks',
+  );
+  static const _veb = Currency(
+    _cld,
+    'VEB',
+    'bolívar veneçolà (1871–2008)',
+    one: 'bolívar veneçolà (1871–2008)',
+    other: 'bolívars veneçolans (1871–2008)',
+  );
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'bolívar veneçolà (2008–2018)',
+    one: 'bolívar veneçolà (2008–2018)',
+    other: 'bolívars veneçolans (2008–2018)',
+    symbolNarrow: 'Bs F',
+  );
+  static const _ves = Currency(
+    _cld,
+    'VES',
+    'bolívar veneçolà',
+    one: 'bolívar veneçolà',
+    other: 'bolívars veneçolans',
+  );
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'dong vietnamita',
+    one: 'dong vietnamita',
+    other: 'dongs vietnamites',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
+  static const _vnn = Currency(
+    _cld,
+    'VNN',
+    'dong vietnamita (1978–1985)',
+    one: 'dong vietnamita (1978–1985)',
+    other: 'dongs vietnamites (1978–1985)',
+  );
+  static const _vuv = Currency(
+    _cld,
+    'VUV',
+    'vatu de Vanuatu',
+    one: 'vatu de Vanuatu',
+    other: 'vatus de Vanuatu',
+  );
+  static const _wst = Currency(
+    _cld,
+    'WST',
+    'tala samoà',
+    one: 'tala samoà',
+    other: 'tales samoans',
+  );
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'franc CFA BEAC',
+    one: 'franc CFA BEAC',
+    other: 'francs CFA BEAC',
+    symbol: 'FCFA',
+  );
   static const _xag = Currency(_cld, 'XAG', 'plata');
   static const _xau = Currency(_cld, 'XAU', 'or');
-  static const _xba = Currency(_cld, 'XBA', 'unitat compensatòria europea',
-      one: 'unitat compensatòria europea',
-      other: 'unitats compensatòries europees');
-  static const _xbb = Currency(_cld, 'XBB', 'unitat monetària europea',
-      one: 'unitat monetària europea', other: 'unitats monetàries europees');
-  static const _xbc = Currency(_cld, 'XBC', 'unitat de compte europea (XBC)',
-      one: 'unitat de compte europea (XBC)',
-      other: 'unitats de compte europees (XBC)');
-  static const _xbd = Currency(_cld, 'XBD', 'unitat de compte europea (XBD)',
-      one: 'unitat de compte europea (XBD)',
-      other: 'unitats de compte europees (XBD)');
-  static const _xcd = Currency(_cld, 'XCD', 'dòlar del Carib Oriental',
-      one: 'dòlar del Carib Oriental',
-      other: 'dòlars del Carib Oriental',
-      symbol: 'XCD',
-      symbolNarrow: r'$');
+  static const _xba = Currency(
+    _cld,
+    'XBA',
+    'unitat compensatòria europea',
+    one: 'unitat compensatòria europea',
+    other: 'unitats compensatòries europees',
+  );
+  static const _xbb = Currency(
+    _cld,
+    'XBB',
+    'unitat monetària europea',
+    one: 'unitat monetària europea',
+    other: 'unitats monetàries europees',
+  );
+  static const _xbc = Currency(
+    _cld,
+    'XBC',
+    'unitat de compte europea (XBC)',
+    one: 'unitat de compte europea (XBC)',
+    other: 'unitats de compte europees (XBC)',
+  );
+  static const _xbd = Currency(
+    _cld,
+    'XBD',
+    'unitat de compte europea (XBD)',
+    one: 'unitat de compte europea (XBD)',
+    other: 'unitats de compte europees (XBD)',
+  );
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'dòlar del Carib Oriental',
+    one: 'dòlar del Carib Oriental',
+    other: 'dòlars del Carib Oriental',
+    symbol: 'XCD',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
   static const _xdr = Currency(_cld, 'XDR', 'drets especials de gir');
-  static const _xeu = Currency(_cld, 'XEU', 'unitat de moneda europea',
-      one: 'unitat de moneda europea', other: 'unitats de moneda europees');
-  static const _xfo = Currency(_cld, 'XFO', 'franc or francès',
-      one: 'franc or francès', other: 'francs or francesos');
-  static const _xfu = Currency(_cld, 'XFU', 'franc UIC francès',
-      one: 'franc UIC francès', other: 'francs UIC francesos');
-  static const _xof = Currency(_cld, 'XOF', 'franc CFA BCEAO',
-      one: 'franc CFA BCEAO', other: 'francs CFA BCEAO', symbol: 'F CFA');
+  static const _xeu = Currency(
+    _cld,
+    'XEU',
+    'unitat de moneda europea',
+    one: 'unitat de moneda europea',
+    other: 'unitats de moneda europees',
+  );
+  static const _xfo = Currency(
+    _cld,
+    'XFO',
+    'franc or francès',
+    one: 'franc or francès',
+    other: 'francs or francesos',
+  );
+  static const _xfu = Currency(
+    _cld,
+    'XFU',
+    'franc UIC francès',
+    one: 'franc UIC francès',
+    other: 'francs UIC francesos',
+  );
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'franc CFA BCEAO',
+    one: 'franc CFA BCEAO',
+    other: 'francs CFA BCEAO',
+    symbol: 'F CFA',
+  );
   static const _xpd = Currency(_cld, 'XPD', 'pal·ladi');
-  static const _xpf = Currency(_cld, 'XPF', 'franc CFP',
-      one: 'franc CFP', other: 'francs CFP', symbol: 'CFPF');
+  static const _xpf = Currency(
+    _cld,
+    'XPF',
+    'franc CFP',
+    one: 'franc CFP',
+    other: 'francs CFP',
+    symbol: 'CFPF',
+  );
   static const _xpt = Currency(_cld, 'XPT', 'platí');
   static const _xre = Currency(_cld, 'XRE', 'fons RINET');
   static const _xts = Currency(_cld, 'XTS', 'codi reservat per a proves');
-  static const _xxx = Currency(_cld, 'XXX', 'moneda desconeguda',
-      one: '(unitat monetària desconeguda)',
-      other: '(moneda desconeguda)',
-      symbol: 'XXX');
-  static const _ydd = Currency(_cld, 'YDD', 'dinar iemenita',
-      one: 'dinar iemenita', other: 'dinars iemenites');
-  static const _yer = Currency(_cld, 'YER', 'rial iemenita',
-      one: 'rial iemenita', other: 'rials iemenites');
-  static const _yud = Currency(_cld, 'YUD', 'dinar fort iugoslau',
-      one: 'dinar fort iugoslau', other: 'dinars forts iugoslaus');
-  static const _yum = Currency(_cld, 'YUM', 'nou dinar iugoslau',
-      one: 'nou dinar iugoslau', other: 'nous dinars iugoslaus');
-  static const _yun = Currency(_cld, 'YUN', 'dinar convertible iugoslau',
-      one: 'dinar convertible iugoslau',
-      other: 'dinars convertibles iugoslaus');
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    'moneda desconeguda',
+    one: '(unitat monetària desconeguda)',
+    other: '(moneda desconeguda)',
+    symbol: 'XXX',
+  );
+  static const _ydd = Currency(
+    _cld,
+    'YDD',
+    'dinar iemenita',
+    one: 'dinar iemenita',
+    other: 'dinars iemenites',
+  );
+  static const _yer = Currency(
+    _cld,
+    'YER',
+    'rial iemenita',
+    one: 'rial iemenita',
+    other: 'rials iemenites',
+  );
+  static const _yud = Currency(
+    _cld,
+    'YUD',
+    'dinar fort iugoslau',
+    one: 'dinar fort iugoslau',
+    other: 'dinars forts iugoslaus',
+  );
+  static const _yum = Currency(
+    _cld,
+    'YUM',
+    'nou dinar iugoslau',
+    one: 'nou dinar iugoslau',
+    other: 'nous dinars iugoslaus',
+  );
+  static const _yun = Currency(
+    _cld,
+    'YUN',
+    'dinar convertible iugoslau',
+    one: 'dinar convertible iugoslau',
+    other: 'dinars convertibles iugoslaus',
+  );
   static const _yur = Currency(
-      _cld, 'YUR', 'dinar iugoslau reformat (1992–1993)',
-      one: 'dinar reformat iugoslau', other: 'dinars reformats iugoslaus');
-  static const _zal = Currency(_cld, 'ZAL', 'rand sud-africà (financer)',
-      one: 'rand sud-africà (financer)',
-      other: 'rands sud-africans (financers)');
-  static const _zar = Currency(_cld, 'ZAR', 'rand sud-africà',
-      one: 'rand sud-africà', other: 'rands sud-africans', symbolNarrow: 'R');
-  static const _zmk = Currency(_cld, 'ZMK', 'kwacha zambià (1968–2012)',
-      one: 'kwacha zambià (1968–2012)', other: 'kwacha zambians (1968–2012)');
-  static const _zmw = Currency(_cld, 'ZMW', 'kwacha zambià',
-      one: 'kwacha zambià', other: 'kwacha zambians', symbolNarrow: 'ZK');
-  static const _zrn = Currency(_cld, 'ZRN', 'nou zaire zairès',
-      one: 'nou zaire zairès', other: 'nous zaires zairesos');
-  static const _zrz = Currency(_cld, 'ZRZ', 'zaire zairès',
-      one: 'zaire zairès', other: 'zaires zairesos');
-  static const _zwd = Currency(_cld, 'ZWD', 'dòlar zimbabuès (1980–2008)',
-      one: 'dòlar zimbabuès (1980–2008)',
-      other: 'dòlars zimbabuesos (1980–2008)');
-  static const _zwl = Currency(_cld, 'ZWL', 'dòlar zimbabuès (2009)',
-      one: 'dòlar zimbabuès (2009)', other: 'dòlars zimbabuesos (2009)');
-  static const _zwr = Currency(_cld, 'ZWR', 'dòlar zimbabuès (2008)',
-      one: 'dòlar zimbabuès (2008)', other: 'dòlars zimbabuesos (2008)');
+    _cld,
+    'YUR',
+    'dinar iugoslau reformat (1992–1993)',
+    one: 'dinar reformat iugoslau',
+    other: 'dinars reformats iugoslaus',
+  );
+  static const _zal = Currency(
+    _cld,
+    'ZAL',
+    'rand sud-africà (financer)',
+    one: 'rand sud-africà (financer)',
+    other: 'rands sud-africans (financers)',
+  );
+  static const _zar = Currency(
+    _cld,
+    'ZAR',
+    'rand sud-africà',
+    one: 'rand sud-africà',
+    other: 'rands sud-africans',
+    symbolNarrow: 'R',
+  );
+  static const _zmk = Currency(
+    _cld,
+    'ZMK',
+    'kwacha zambià (1968–2012)',
+    one: 'kwacha zambià (1968–2012)',
+    other: 'kwacha zambians (1968–2012)',
+  );
+  static const _zmw = Currency(
+    _cld,
+    'ZMW',
+    'kwacha zambià',
+    one: 'kwacha zambià',
+    other: 'kwacha zambians',
+    symbolNarrow: 'ZK',
+  );
+  static const _zrn = Currency(
+    _cld,
+    'ZRN',
+    'nou zaire zairès',
+    one: 'nou zaire zairès',
+    other: 'nous zaires zairesos',
+  );
+  static const _zrz = Currency(
+    _cld,
+    'ZRZ',
+    'zaire zairès',
+    one: 'zaire zairès',
+    other: 'zaires zairesos',
+  );
+  static const _zwd = Currency(
+    _cld,
+    'ZWD',
+    'dòlar zimbabuès (1980–2008)',
+    one: 'dòlar zimbabuès (1980–2008)',
+    other: 'dòlars zimbabuesos (1980–2008)',
+  );
+  static const _zwl = Currency(
+    _cld,
+    'ZWL',
+    'dòlar zimbabuès (2009)',
+    one: 'dòlar zimbabuès (2009)',
+    other: 'dòlars zimbabuesos (2009)',
+  );
+  static const _zwr = Currency(
+    _cld,
+    'ZWR',
+    'dòlar zimbabuès (2008)',
+    one: 'dòlar zimbabuès (2008)',
+    other: 'dòlars zimbabuesos (2008)',
+  );
 
   @override
   final unknownCurrency = _xxx;
@@ -16084,8 +16605,9 @@ class TimeZonesCa extends TimeZones {
 
   static const staticTimeZoneNames = <String, TimeZoneNames>{
     'America/Araguaina': TimeZoneNames(exemplarCity: 'Araguaína'),
-    'America/Argentina/Rio_Gallegos':
-        TimeZoneNames(exemplarCity: 'Río Gallegos'),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Río Gallegos',
+    ),
     'America/Argentina/Tucuman': TimeZoneNames(exemplarCity: 'Tucumán'),
     'America/Asuncion': TimeZoneNames(exemplarCity: 'Asunción'),
     'America/Bahia_Banderas': TimeZoneNames(exemplarCity: 'Bahía de Banderas'),
@@ -16102,32 +16624,40 @@ class TimeZonesCa extends TimeZones {
     'America/Curacao': TimeZoneNames(exemplarCity: 'Curaçao'),
     'America/Eirunepe': TimeZoneNames(exemplarCity: 'Eirunepé'),
     'America/Godthab': TimeZoneNames(exemplarCity: 'Nuuk'),
-    'America/Indiana/Vincennes':
-        TimeZoneNames(exemplarCity: 'Vincennes, Indiana'),
-    'America/Indiana/Petersburg':
-        TimeZoneNames(exemplarCity: 'Petersburg, Indiana'),
-    'America/Indiana/Tell_City':
-        TimeZoneNames(exemplarCity: 'Tell City, Indiana'),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Vincennes, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Petersburg, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Tell City, Indiana',
+    ),
     'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'Knox, Indiana'),
     'America/Indiana/Winamac': TimeZoneNames(exemplarCity: 'Winamac, Indiana'),
     'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'Marengo, Indiana'),
     'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'Vevay, Indiana'),
-    'America/Kentucky/Monticello':
-        TimeZoneNames(exemplarCity: 'Monticello, Kentucky'),
-    'America/Lower_Princes':
-        TimeZoneNames(exemplarCity: 'Lower Prince’s Quarter'),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Monticello, Kentucky',
+    ),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
     'America/Maceio': TimeZoneNames(exemplarCity: 'Maceió'),
     'America/Martinique': TimeZoneNames(exemplarCity: 'Martinica'),
     'America/Mazatlan': TimeZoneNames(exemplarCity: 'Mazatlán'),
     'America/Merida': TimeZoneNames(exemplarCity: 'Mérida'),
     'America/Mexico_City': TimeZoneNames(exemplarCity: 'Ciutat de Mèxic'),
     'America/New_York': TimeZoneNames(exemplarCity: 'Nova York'),
-    'America/North_Dakota/Beulah':
-        TimeZoneNames(exemplarCity: 'Beulah, Dakota del Nord'),
-    'America/North_Dakota/New_Salem':
-        TimeZoneNames(exemplarCity: 'New Salem, Dakota del Nord'),
-    'America/North_Dakota/Center':
-        TimeZoneNames(exemplarCity: 'Center, Dakota del Nord'),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Beulah, Dakota del Nord',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'New Salem, Dakota del Nord',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Center, Dakota del Nord',
+    ),
     'America/Panama': TimeZoneNames(exemplarCity: 'Panamà'),
     'America/Santarem': TimeZoneNames(exemplarCity: 'Santarém'),
     'America/Sao_Paulo': TimeZoneNames(exemplarCity: 'São Paulo'),
@@ -16154,16 +16684,18 @@ class TimeZonesCa extends TimeZones {
     'Europe/Bucharest': TimeZoneNames(exemplarCity: 'Bucarest'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'Copenhaguen'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'Dublín',
-        long: TimeZoneName(daylight: 'Hora estàndard d’Irlanda')),
+      exemplarCity: 'Dublín',
+      long: TimeZoneName(daylight: 'Hora estàndard d’Irlanda'),
+    ),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: 'Hèlsinki'),
     'Europe/Isle_of_Man': TimeZoneNames(exemplarCity: 'Man'),
     'Europe/Kiev': TimeZoneNames(exemplarCity: 'Kíiv'),
     'Europe/Kirov': TimeZoneNames(exemplarCity: 'Kírov'),
     'Europe/Lisbon': TimeZoneNames(exemplarCity: 'Lisboa'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'Londres',
-        long: TimeZoneName(daylight: 'Hora d’estiu britànica')),
+      exemplarCity: 'Londres',
+      long: TimeZoneName(daylight: 'Hora d’estiu britànica'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'Luxemburg'),
     'Europe/Monaco': TimeZoneNames(exemplarCity: 'Mònaco'),
     'Europe/Moscow': TimeZoneNames(exemplarCity: 'Moscou'),
@@ -16240,11 +16772,13 @@ class TimeZonesCa extends TimeZones {
     'Pacific/Ponape': TimeZoneNames(exemplarCity: 'Pohnpei'),
     'Pacific/Tahiti': TimeZoneNames(exemplarCity: 'Tahití'),
     'Pacific/Truk': TimeZoneNames(exemplarCity: 'Chuuk'),
-    'Antarctica/DumontDUrville':
-        TimeZoneNames(exemplarCity: 'Dumont d’Urville'),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Dumont d’Urville',
+    ),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'Temps universal coordinat'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'Temps universal coordinat'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'Ciutat desconeguda'),
   };
 
@@ -16252,538 +16786,897 @@ class TimeZonesCa extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Afghanistan': MetaZone('Afghanistan',
-        long: TimeZoneName(standard: 'Hora de l’Afganistan')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'Hora de l’Àfrica central')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'Hora de l’Àfrica oriental')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'Hora estàndard de l’Àfrica meridional')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'Hora de l’Àfrica occidental',
-            standard: 'Hora estàndard de l’Àfrica occidental',
-            daylight: 'Hora d’estiu de l’Àfrica occidental')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'Hora d’Alaska',
-            standard: 'Hora estàndard d’Alaska',
-            daylight: 'Hora d’estiu d’Alaska')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'Hora de l’Amazones',
-            standard: 'Hora estàndard de l’Amazones',
-            daylight: 'Hora d’estiu de l’Amazones')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'Hora central d’Amèrica del Nord',
-            standard: 'Hora estàndard central d’Amèrica del Nord',
-            daylight: 'Hora d’estiu central d’Amèrica del Nord')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'Hora oriental d’Amèrica del Nord',
-            standard: 'Hora estàndard oriental d’Amèrica del Nord',
-            daylight: 'Hora d’estiu oriental d’Amèrica del Nord')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'Hora de muntanya d’Amèrica del Nord',
-            standard: 'Hora estàndard de muntanya d’Amèrica del Nord',
-            daylight: 'Hora d’estiu de muntanya d’Amèrica del Nord')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'Hora del Pacífic d’Amèrica del Nord',
-            standard: 'Hora estàndard del Pacífic d’Amèrica del Nord',
-            daylight: 'Hora d’estiu del Pacífic d’Amèrica del Nord')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: 'Hora d’Anàdir',
-            standard: 'Hora estàndard d’Anadyr',
-            daylight: 'Horari d’estiu d’Anadyr')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'Hora d’Apia',
-            standard: 'Hora estàndard d’Apia',
-            daylight: 'Hora d’estiu d’Apia')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'Hora àrab',
-            standard: 'Hora estàndard àrab',
-            daylight: 'Hora d’estiu àrab')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'Hora de l’Argentina',
-            standard: 'Hora estàndard de l’Argentina',
-            daylight: 'Hora d’estiu de l’Argentina')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'Hora de l’oest de l’Argentina',
-            standard: 'Hora estàndard de l’oest de l’Argentina',
-            daylight: 'Hora d’estiu de l’oest de l’Argentina')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'Hora d’Armènia',
-            standard: 'Hora estàndard d’Armènia',
-            daylight: 'Hora d’estiu d’Armènia')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'Hora de l’Atlàntic',
-            standard: 'Hora estàndard de l’Atlàntic',
-            daylight: 'Hora d’estiu de l’Atlàntic')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'Hora d’Austràlia central',
-            standard: 'Hora estàndard d’Austràlia central',
-            daylight: 'Hora d’estiu d’Austràlia central')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'Hora d’Austràlia centre-occidental',
-            standard: 'Hora estàndard d’Austràlia centre-occidental',
-            daylight: 'Hora d’estiu d’Austràlia centre-occidental')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'Hora d’Austràlia oriental',
-            standard: 'Hora estàndard d’Austràlia oriental',
-            daylight: 'Hora d’estiu d’Austràlia oriental')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'Hora d’Austràlia occidental',
-            standard: 'Hora estàndard d’Austràlia occidental',
-            daylight: 'Hora d’estiu d’Austràlia occidental')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'Hora de l’Azerbaidjan',
-            standard: 'Hora estàndard de l’Azerbaidjan',
-            daylight: 'Hora d’estiu de l’Azerbaidjan')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'Hora de les Açores',
-            standard: 'Hora estàndard de les Açores',
-            daylight: 'Hora d’estiu de les Açores')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'Hora de Bangladesh',
-            standard: 'Hora estàndard de Bangladesh',
-            daylight: 'Hora d’estiu de Bangladesh')),
-    'Bhutan':
-        MetaZone('Bhutan', long: TimeZoneName(standard: 'Hora de Bhutan')),
-    'Bolivia':
-        MetaZone('Bolivia', long: TimeZoneName(standard: 'Hora de Bolívia')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'Hora de Brasília',
-            standard: 'Hora estàndard de Brasília',
-            daylight: 'Hora d’estiu de Brasília')),
-    'Brunei': MetaZone('Brunei',
-        long: TimeZoneName(standard: 'Hora de Brunei Darussalam')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'Hora de Cap Verd',
-            standard: 'Hora estàndard de Cap Verd',
-            daylight: 'Hora d’estiu de Cap Verd')),
-    'Chamorro': MetaZone('Chamorro',
-        long: TimeZoneName(standard: 'Hora estàndard de Chamorro')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'Hora de Chatham',
-            standard: 'Hora estàndard de Chatham',
-            daylight: 'Hora d’estiu de Chatham')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'Hora de Xile',
-            standard: 'Hora estàndard de Xile',
-            daylight: 'Hora d’estiu de Xile')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'Hora de la Xina',
-            standard: 'Hora estàndard de la Xina',
-            daylight: 'Hora d’estiu de la Xina')),
-    'Christmas': MetaZone('Christmas',
-        long: TimeZoneName(standard: 'Hora de Kiritimati')),
-    'Cocos': MetaZone('Cocos',
-        long: TimeZoneName(standard: 'Hora de les illes Cocos')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'Hora de Colòmbia',
-            standard: 'Hora estàndard de Colòmbia',
-            daylight: 'Hora d’estiu de Colòmbia')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'Hora de les illes Cook',
-            standard: 'Hora estàndard de les illes Cook',
-            daylight: 'Hora de mig estiu de les illes Cook')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'Hora de Cuba',
-            standard: 'Hora estàndard de Cuba',
-            daylight: 'Hora d’estiu de Cuba')),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'Hora de l’Afganistan'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'Hora de l’Àfrica central'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'Hora de l’Àfrica oriental'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'Hora estàndard de l’Àfrica meridional'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Hora de l’Àfrica occidental',
+        standard: 'Hora estàndard de l’Àfrica occidental',
+        daylight: 'Hora d’estiu de l’Àfrica occidental',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'Hora d’Alaska',
+        standard: 'Hora estàndard d’Alaska',
+        daylight: 'Hora d’estiu d’Alaska',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'Hora de l’Amazones',
+        standard: 'Hora estàndard de l’Amazones',
+        daylight: 'Hora d’estiu de l’Amazones',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'Hora central d’Amèrica del Nord',
+        standard: 'Hora estàndard central d’Amèrica del Nord',
+        daylight: 'Hora d’estiu central d’Amèrica del Nord',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Hora oriental d’Amèrica del Nord',
+        standard: 'Hora estàndard oriental d’Amèrica del Nord',
+        daylight: 'Hora d’estiu oriental d’Amèrica del Nord',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Hora de muntanya d’Amèrica del Nord',
+        standard: 'Hora estàndard de muntanya d’Amèrica del Nord',
+        daylight: 'Hora d’estiu de muntanya d’Amèrica del Nord',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Hora del Pacífic d’Amèrica del Nord',
+        standard: 'Hora estàndard del Pacífic d’Amèrica del Nord',
+        daylight: 'Hora d’estiu del Pacífic d’Amèrica del Nord',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: 'Hora d’Anàdir',
+        standard: 'Hora estàndard d’Anadyr',
+        daylight: 'Horari d’estiu d’Anadyr',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'Hora d’Apia',
+        standard: 'Hora estàndard d’Apia',
+        daylight: 'Hora d’estiu d’Apia',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'Hora àrab',
+        standard: 'Hora estàndard àrab',
+        daylight: 'Hora d’estiu àrab',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'Hora de l’Argentina',
+        standard: 'Hora estàndard de l’Argentina',
+        daylight: 'Hora d’estiu de l’Argentina',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Hora de l’oest de l’Argentina',
+        standard: 'Hora estàndard de l’oest de l’Argentina',
+        daylight: 'Hora d’estiu de l’oest de l’Argentina',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'Hora d’Armènia',
+        standard: 'Hora estàndard d’Armènia',
+        daylight: 'Hora d’estiu d’Armènia',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'Hora de l’Atlàntic',
+        standard: 'Hora estàndard de l’Atlàntic',
+        daylight: 'Hora d’estiu de l’Atlàntic',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Hora d’Austràlia central',
+        standard: 'Hora estàndard d’Austràlia central',
+        daylight: 'Hora d’estiu d’Austràlia central',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Hora d’Austràlia centre-occidental',
+        standard: 'Hora estàndard d’Austràlia centre-occidental',
+        daylight: 'Hora d’estiu d’Austràlia centre-occidental',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Hora d’Austràlia oriental',
+        standard: 'Hora estàndard d’Austràlia oriental',
+        daylight: 'Hora d’estiu d’Austràlia oriental',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Hora d’Austràlia occidental',
+        standard: 'Hora estàndard d’Austràlia occidental',
+        daylight: 'Hora d’estiu d’Austràlia occidental',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Hora de l’Azerbaidjan',
+        standard: 'Hora estàndard de l’Azerbaidjan',
+        daylight: 'Hora d’estiu de l’Azerbaidjan',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'Hora de les Açores',
+        standard: 'Hora estàndard de les Açores',
+        daylight: 'Hora d’estiu de les Açores',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Hora de Bangladesh',
+        standard: 'Hora estàndard de Bangladesh',
+        daylight: 'Hora d’estiu de Bangladesh',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      'Bhutan',
+      long: TimeZoneName(standard: 'Hora de Bhutan'),
+    ),
+    'Bolivia': MetaZone(
+      'Bolivia',
+      long: TimeZoneName(standard: 'Hora de Bolívia'),
+    ),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'Hora de Brasília',
+        standard: 'Hora estàndard de Brasília',
+        daylight: 'Hora d’estiu de Brasília',
+      ),
+    ),
+    'Brunei': MetaZone(
+      'Brunei',
+      long: TimeZoneName(standard: 'Hora de Brunei Darussalam'),
+    ),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Hora de Cap Verd',
+        standard: 'Hora estàndard de Cap Verd',
+        daylight: 'Hora d’estiu de Cap Verd',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'Hora estàndard de Chamorro'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'Hora de Chatham',
+        standard: 'Hora estàndard de Chatham',
+        daylight: 'Hora d’estiu de Chatham',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'Hora de Xile',
+        standard: 'Hora estàndard de Xile',
+        daylight: 'Hora d’estiu de Xile',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'Hora de la Xina',
+        standard: 'Hora estàndard de la Xina',
+        daylight: 'Hora d’estiu de la Xina',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'Hora de Kiritimati'),
+    ),
+    'Cocos': MetaZone(
+      'Cocos',
+      long: TimeZoneName(standard: 'Hora de les illes Cocos'),
+    ),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'Hora de Colòmbia',
+        standard: 'Hora estàndard de Colòmbia',
+        daylight: 'Hora d’estiu de Colòmbia',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'Hora de les illes Cook',
+        standard: 'Hora estàndard de les illes Cook',
+        daylight: 'Hora de mig estiu de les illes Cook',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'Hora de Cuba',
+        standard: 'Hora estàndard de Cuba',
+        daylight: 'Hora d’estiu de Cuba',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'Hora de Davis')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'Hora de Dumont d’Urville')),
-    'East_Timor': MetaZone('East_Timor',
-        long: TimeZoneName(standard: 'Hora de Timor Oriental')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'Hora de l’illa de Pasqua',
-            standard: 'Hora estàndard de l’illa de Pasqua',
-            daylight: 'Hora d’estiu de l’illa de Pasqua')),
-    'Ecuador':
-        MetaZone('Ecuador', long: TimeZoneName(standard: 'Hora de l’Equador')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'Hora d’Europa central',
-            standard: 'Hora estàndard d’Europa central',
-            daylight: 'Hora d’estiu d’Europa central'),
-        short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'Hora d’Europa oriental',
-            standard: 'Hora estàndard d’Europa oriental',
-            daylight: 'Hora d’estiu d’Europa oriental'),
-        short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'Hora de l’extrem oriental d’Europa')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'Hora d’Europa occidental',
-            standard: 'Hora estàndard d’Europa occidental',
-            daylight: 'Hora d’estiu d’Europa occidental'),
-        short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'Hora de les illes Malvines',
-            standard: 'Hora estàndard de les illes Malvines',
-            daylight: 'Hora d’estiu de les illes Malvines')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'Hora de Fiji',
-            standard: 'Hora estàndard de Fiji',
-            daylight: 'Hora d’estiu de Fiji')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'Hora de la Guaiana Francesa')),
-    'French_Southern': MetaZone('French_Southern',
-        long: TimeZoneName(
-            standard:
-                'Hora d’Antàrtida i de les Terres Australs Antàrtiques Franceses')),
-    'Galapagos': MetaZone('Galapagos',
-        long: TimeZoneName(standard: 'Hora de Galápagos')),
-    'Gambier':
-        MetaZone('Gambier', long: TimeZoneName(standard: 'Hora de Gambier')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'Hora de Geòrgia',
-            standard: 'Hora estàndard de Geòrgia',
-            daylight: 'Hora d’estiu de Geòrgia')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'Hora de les illes Gilbert')),
-    'GMT': MetaZone('GMT',
-        long: TimeZoneName(standard: 'Hora del meridià de Greenwich'),
-        short: TimeZoneName(standard: 'GMT')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'Hora de l’Est de Groenlàndia',
-            standard: 'Hora estàndard de l’Est de Groenlàndia',
-            daylight: 'Hora d’estiu de l’Est de Groenlàndia')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'Hora de l’Oest de Groenlàndia',
-            standard: 'Hora estàndard de l’Oest de Groenlàndia',
-            daylight: 'Hora d’estiu de l’Oest de Groenlàndia')),
-    'Gulf': MetaZone('Gulf',
-        long: TimeZoneName(standard: 'Hora estàndard del Golf')),
-    'Guyana':
-        MetaZone('Guyana', long: TimeZoneName(standard: 'Hora de Guyana')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'Hora de Hawaii-Aleutianes',
-            standard: 'Hora estàndard de Hawaii-Aleutianes',
-            daylight: 'Hora d’estiu de Hawaii-Aleutianes')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'Hora de Hong Kong',
-            standard: 'Hora estàndard de Hong Kong',
-            daylight: 'Hora d’estiu de Hong Kong')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'Hora de Khovd',
-            standard: 'Hora estàndard de Khovd',
-            daylight: 'Hora d’estiu de Khovd')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'Hora de Dumont d’Urville'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'Hora de Timor Oriental'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'Hora de l’illa de Pasqua',
+        standard: 'Hora estàndard de l’illa de Pasqua',
+        daylight: 'Hora d’estiu de l’illa de Pasqua',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      'Ecuador',
+      long: TimeZoneName(standard: 'Hora de l’Equador'),
+    ),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Hora d’Europa central',
+        standard: 'Hora estàndard d’Europa central',
+        daylight: 'Hora d’estiu d’Europa central',
+      ),
+      short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST'),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Hora d’Europa oriental',
+        standard: 'Hora estàndard d’Europa oriental',
+        daylight: 'Hora d’estiu d’Europa oriental',
+      ),
+      short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST'),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'Hora de l’extrem oriental d’Europa'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Hora d’Europa occidental',
+        standard: 'Hora estàndard d’Europa occidental',
+        daylight: 'Hora d’estiu d’Europa occidental',
+      ),
+      short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST'),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'Hora de les illes Malvines',
+        standard: 'Hora estàndard de les illes Malvines',
+        daylight: 'Hora d’estiu de les illes Malvines',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'Hora de Fiji',
+        standard: 'Hora estàndard de Fiji',
+        daylight: 'Hora d’estiu de Fiji',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'Hora de la Guaiana Francesa'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(
+        standard:
+            'Hora d’Antàrtida i de les Terres Australs Antàrtiques Franceses',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'Hora de Galápagos'),
+    ),
+    'Gambier': MetaZone(
+      'Gambier',
+      long: TimeZoneName(standard: 'Hora de Gambier'),
+    ),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'Hora de Geòrgia',
+        standard: 'Hora estàndard de Geòrgia',
+        daylight: 'Hora d’estiu de Geòrgia',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'Hora de les illes Gilbert'),
+    ),
+    'GMT': MetaZone(
+      'GMT',
+      long: TimeZoneName(standard: 'Hora del meridià de Greenwich'),
+      short: TimeZoneName(standard: 'GMT'),
+    ),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Hora de l’Est de Groenlàndia',
+        standard: 'Hora estàndard de l’Est de Groenlàndia',
+        daylight: 'Hora d’estiu de l’Est de Groenlàndia',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Hora de l’Oest de Groenlàndia',
+        standard: 'Hora estàndard de l’Oest de Groenlàndia',
+        daylight: 'Hora d’estiu de l’Oest de Groenlàndia',
+      ),
+    ),
+    'Gulf': MetaZone(
+      'Gulf',
+      long: TimeZoneName(standard: 'Hora estàndard del Golf'),
+    ),
+    'Guyana': MetaZone(
+      'Guyana',
+      long: TimeZoneName(standard: 'Hora de Guyana'),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Hora de Hawaii-Aleutianes',
+        standard: 'Hora estàndard de Hawaii-Aleutianes',
+        daylight: 'Hora d’estiu de Hawaii-Aleutianes',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Hora de Hong Kong',
+        standard: 'Hora estàndard de Hong Kong',
+        daylight: 'Hora d’estiu de Hong Kong',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'Hora de Khovd',
+        standard: 'Hora estàndard de Khovd',
+        daylight: 'Hora d’estiu de Khovd',
+      ),
+    ),
     'India': MetaZone('India', long: TimeZoneName(standard: 'Hora de l’Índia')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'Hora de l’oceà Índic')),
-    'Indochina': MetaZone('Indochina',
-        long: TimeZoneName(standard: 'Hora de l’Indoxina')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'Hora central d’Indonèsia')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'Hora de l’est d’Indonèsia')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'Hora de l’oest d’Indonèsia')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'Hora de l’Iran',
-            standard: 'Hora estàndard de l’Iran',
-            daylight: 'Hora d’estiu de l’Iran')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'Hora d’Irkutsk',
-            standard: 'Hora estàndard d’Irkutsk',
-            daylight: 'Hora d’estiu d’Irkutsk')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'Hora d’Israel',
-            standard: 'Hora estàndard d’Israel',
-            daylight: 'Hora d’estiu d’Israel')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'Hora del Japó',
-            standard: 'Hora estàndard del Japó',
-            daylight: 'Hora d’estiu del Japó')),
-    'Kamchatka': MetaZone('Kamchatka',
-        long: TimeZoneName(
-            generic: 'Hora de Kamtxatka',
-            standard: 'Hora estàndard de Petropavlovsk de Kamtxatka',
-            daylight: 'Horari d’estiu de Petropavlovsk de Kamtxatka')),
-    'Kazakhstan': MetaZone('Kazakhstan',
-        long: TimeZoneName(standard: 'Hora del Kazakhstan')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'Hora de l’est del Kazakhstan')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'Hora de l’oest del Kazakhstan')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'Hora de Corea',
-            standard: 'Hora estàndard de Corea',
-            daylight: 'Hora d’estiu de Corea')),
-    'Kosrae':
-        MetaZone('Kosrae', long: TimeZoneName(standard: 'Hora de Kosrae')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'Hora de Krasnoiarsk',
-            standard: 'Hora estàndard de Krasnoiarsk',
-            daylight: 'Hora d’estiu de Krasnoiarsk')),
-    'Kyrgystan': MetaZone('Kyrgystan',
-        long: TimeZoneName(standard: 'Hora del Kirguizstan')),
-    'Line_Islands': MetaZone('Line_Islands',
-        long: TimeZoneName(standard: 'Hora de les illes Line')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'Hora de Lord Howe',
-            standard: 'Hora estàndard de Lord Howe',
-            daylight: 'Horari d’estiu de Lord Howe')),
-    'Macau': MetaZone('Macau',
-        long: TimeZoneName(
-            generic: 'Hora de Macau',
-            standard: 'Hora estàndard de Macau',
-            daylight: 'Hora d’estiu de Macau')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'Hora de Magadan',
-            standard: 'Hora estàndard de Magadan',
-            daylight: 'Hora d’estiu de Magadan')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'Hora de Malàisia')),
-    'Maldives': MetaZone('Maldives',
-        long: TimeZoneName(standard: 'Hora de les Maldives')),
-    'Marquesas': MetaZone('Marquesas',
-        long: TimeZoneName(standard: 'Hora de les Marqueses')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'Hora de les illes Marshall')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'Hora de Maurici',
-            standard: 'Hora estàndard de Maurici',
-            daylight: 'Hora d’estiu de Maurici')),
-    'Mawson':
-        MetaZone('Mawson', long: TimeZoneName(standard: 'Hora de Mawson')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'Hora del Pacífic de Mèxic',
-            standard: 'Hora estàndard del Pacífic de Mèxic',
-            daylight: 'Hora d’estiu del Pacífic de Mèxic')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'Hora d’Ulaanbaatar',
-            standard: 'Hora estàndard d’Ulaanbaatar',
-            daylight: 'Hora d’estiu d’Ulaanbaatar')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'Hora de Moscou',
-            standard: 'Hora estàndard de Moscou',
-            daylight: 'Hora d’estiu de Moscou')),
-    'Myanmar':
-        MetaZone('Myanmar', long: TimeZoneName(standard: 'Hora de Myanmar')),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'Hora de l’oceà Índic'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'Hora de l’Indoxina'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'Hora central d’Indonèsia'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'Hora de l’est d’Indonèsia'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'Hora de l’oest d’Indonèsia'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'Hora de l’Iran',
+        standard: 'Hora estàndard de l’Iran',
+        daylight: 'Hora d’estiu de l’Iran',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Hora d’Irkutsk',
+        standard: 'Hora estàndard d’Irkutsk',
+        daylight: 'Hora d’estiu d’Irkutsk',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'Hora d’Israel',
+        standard: 'Hora estàndard d’Israel',
+        daylight: 'Hora d’estiu d’Israel',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'Hora del Japó',
+        standard: 'Hora estàndard del Japó',
+        daylight: 'Hora d’estiu del Japó',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Hora de Kamtxatka',
+        standard: 'Hora estàndard de Petropavlovsk de Kamtxatka',
+        daylight: 'Horari d’estiu de Petropavlovsk de Kamtxatka',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'Hora del Kazakhstan'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'Hora de l’est del Kazakhstan'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'Hora de l’oest del Kazakhstan'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'Hora de Corea',
+        standard: 'Hora estàndard de Corea',
+        daylight: 'Hora d’estiu de Corea',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      'Kosrae',
+      long: TimeZoneName(standard: 'Hora de Kosrae'),
+    ),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Hora de Krasnoiarsk',
+        standard: 'Hora estàndard de Krasnoiarsk',
+        daylight: 'Hora d’estiu de Krasnoiarsk',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'Hora del Kirguizstan'),
+    ),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'Hora de les illes Line'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Hora de Lord Howe',
+        standard: 'Hora estàndard de Lord Howe',
+        daylight: 'Horari d’estiu de Lord Howe',
+      ),
+    ),
+    'Macau': MetaZone(
+      'Macau',
+      long: TimeZoneName(
+        generic: 'Hora de Macau',
+        standard: 'Hora estàndard de Macau',
+        daylight: 'Hora d’estiu de Macau',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'Hora de Magadan',
+        standard: 'Hora estàndard de Magadan',
+        daylight: 'Hora d’estiu de Magadan',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'Hora de Malàisia'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'Hora de les Maldives'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'Hora de les Marqueses'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'Hora de les illes Marshall'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'Hora de Maurici',
+        standard: 'Hora estàndard de Maurici',
+        daylight: 'Hora d’estiu de Maurici',
+      ),
+    ),
+    'Mawson': MetaZone(
+      'Mawson',
+      long: TimeZoneName(standard: 'Hora de Mawson'),
+    ),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Hora del Pacífic de Mèxic',
+        standard: 'Hora estàndard del Pacífic de Mèxic',
+        daylight: 'Hora d’estiu del Pacífic de Mèxic',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'Hora d’Ulaanbaatar',
+        standard: 'Hora estàndard d’Ulaanbaatar',
+        daylight: 'Hora d’estiu d’Ulaanbaatar',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'Hora de Moscou',
+        standard: 'Hora estàndard de Moscou',
+        daylight: 'Hora d’estiu de Moscou',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      'Myanmar',
+      long: TimeZoneName(standard: 'Hora de Myanmar'),
+    ),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'Hora de Nauru')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'Hora del Nepal')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'Hora de Nova Caledònia',
-            standard: 'Hora estàndard de Nova Caledònia',
-            daylight: 'Hora d’estiu de Nova Caledònia')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'Hora de Nova Zelanda',
-            standard: 'Hora estàndard de Nova Zelanda',
-            daylight: 'Hora d’estiu de Nova Zelanda')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'Hora de Terranova',
-            standard: 'Hora estàndard de Terranova',
-            daylight: 'Hora d’estiu de Terranova')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Hora de Nova Caledònia',
+        standard: 'Hora estàndard de Nova Caledònia',
+        daylight: 'Hora d’estiu de Nova Caledònia',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Hora de Nova Zelanda',
+        standard: 'Hora estàndard de Nova Zelanda',
+        daylight: 'Hora d’estiu de Nova Zelanda',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Hora de Terranova',
+        standard: 'Hora estàndard de Terranova',
+        daylight: 'Hora d’estiu de Terranova',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'Hora de Niue')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'Hora de l’illa Norfolk',
-            standard: 'Hora estàndard de l’illa Norfolk',
-            daylight: 'Hora d’estiu de l’illa Norfolk')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'Hora de Fernando de Noronha',
-            standard: 'Hora estàndard de Fernando de Noronha',
-            daylight: 'Hora d’estiu de Fernando de Noronha')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'Hora de Novossibirsk',
-            standard: 'Hora estàndard de Novossibirsk',
-            daylight: 'Hora d’estiu de Novossibirsk')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'Hora d’Omsk',
-            standard: 'Hora estàndard d’Omsk',
-            daylight: 'Hora d’estiu d’Omsk')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'Hora del Pakistan',
-            standard: 'Hora estàndard del Pakistan',
-            daylight: 'Hora d’estiu del Pakistan')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'Hora de l’illa Norfolk',
+        standard: 'Hora estàndard de l’illa Norfolk',
+        daylight: 'Hora d’estiu de l’illa Norfolk',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'Hora de Fernando de Noronha',
+        standard: 'Hora estàndard de Fernando de Noronha',
+        daylight: 'Hora d’estiu de Fernando de Noronha',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Hora de Novossibirsk',
+        standard: 'Hora estàndard de Novossibirsk',
+        daylight: 'Hora d’estiu de Novossibirsk',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'Hora d’Omsk',
+        standard: 'Hora estàndard d’Omsk',
+        daylight: 'Hora d’estiu d’Omsk',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'Hora del Pakistan',
+        standard: 'Hora estàndard del Pakistan',
+        daylight: 'Hora d’estiu del Pakistan',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'Hora de Palau')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'Hora de Papua Nova Guinea')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'Hora del Paraguai',
-            standard: 'Hora estàndard del Paraguai',
-            daylight: 'Hora d’estiu del Paraguai')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'Hora del Perú',
-            standard: 'Hora estàndard del Perú',
-            daylight: 'Hora d’estiu del Perú')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'Hora de les Filipines',
-            standard: 'Hora estàndard de les Filipines',
-            daylight: 'Hora d’estiu de les Filipines')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'Hora de les illes Phoenix')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'Hora de Saint-Pierre-et-Miquelon',
-            standard: 'Hora estàndard de Saint-Pierre-et-Miquelon',
-            daylight: 'Hora d’estiu de Saint-Pierre-et-Miquelon')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'Hora de Pitcairn')),
-    'Ponape':
-        MetaZone('Ponape', long: TimeZoneName(standard: 'Hora de Ponape')),
-    'Pyongyang': MetaZone('Pyongyang',
-        long: TimeZoneName(standard: 'Hora de Pyongyang')),
-    'Reunion':
-        MetaZone('Reunion', long: TimeZoneName(standard: 'Hora de Reunió')),
-    'Rothera':
-        MetaZone('Rothera', long: TimeZoneName(standard: 'Hora de Rothera')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'Hora de Sakhalín',
-            standard: 'Hora estàndard de Sakhalín',
-            daylight: 'Hora d’estiu de Sakhalín')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: 'Hora de Samara',
-            standard: 'Hora estàndard de Samara',
-            daylight: 'Hora d’estiu de Samara')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'Hora de Samoa',
-            standard: 'Hora estàndard de Samoa',
-            daylight: 'Hora d’estiu de Samoa')),
-    'Seychelles': MetaZone('Seychelles',
-        long: TimeZoneName(standard: 'Hora de les Seychelles')),
-    'Singapore':
-        MetaZone('Singapore', long: TimeZoneName(standard: 'Hora de Singapur')),
-    'Solomon': MetaZone('Solomon',
-        long: TimeZoneName(standard: 'Hora de les illes Salomó')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'Hora de Geòrgia del Sud')),
-    'Suriname':
-        MetaZone('Suriname', long: TimeZoneName(standard: 'Hora de Surinam')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'Hora de Papua Nova Guinea'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'Hora del Paraguai',
+        standard: 'Hora estàndard del Paraguai',
+        daylight: 'Hora d’estiu del Paraguai',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'Hora del Perú',
+        standard: 'Hora estàndard del Perú',
+        daylight: 'Hora d’estiu del Perú',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'Hora de les Filipines',
+        standard: 'Hora estàndard de les Filipines',
+        daylight: 'Hora d’estiu de les Filipines',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'Hora de les illes Phoenix'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Hora de Saint-Pierre-et-Miquelon',
+        standard: 'Hora estàndard de Saint-Pierre-et-Miquelon',
+        daylight: 'Hora d’estiu de Saint-Pierre-et-Miquelon',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'Hora de Pitcairn'),
+    ),
+    'Ponape': MetaZone(
+      'Ponape',
+      long: TimeZoneName(standard: 'Hora de Ponape'),
+    ),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'Hora de Pyongyang'),
+    ),
+    'Reunion': MetaZone(
+      'Reunion',
+      long: TimeZoneName(standard: 'Hora de Reunió'),
+    ),
+    'Rothera': MetaZone(
+      'Rothera',
+      long: TimeZoneName(standard: 'Hora de Rothera'),
+    ),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Hora de Sakhalín',
+        standard: 'Hora estàndard de Sakhalín',
+        daylight: 'Hora d’estiu de Sakhalín',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: 'Hora de Samara',
+        standard: 'Hora estàndard de Samara',
+        daylight: 'Hora d’estiu de Samara',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'Hora de Samoa',
+        standard: 'Hora estàndard de Samoa',
+        daylight: 'Hora d’estiu de Samoa',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'Hora de les Seychelles'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'Hora de Singapur'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'Hora de les illes Salomó'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'Hora de Geòrgia del Sud'),
+    ),
+    'Suriname': MetaZone(
+      'Suriname',
+      long: TimeZoneName(standard: 'Hora de Surinam'),
+    ),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'Hora de Syowa')),
-    'Tahiti':
-        MetaZone('Tahiti', long: TimeZoneName(standard: 'Hora de Tahití')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'Hora de Taipei',
-            standard: 'Hora estàndard de Taipei',
-            daylight: 'Hora d’estiu de Taipei')),
-    'Tajikistan': MetaZone('Tajikistan',
-        long: TimeZoneName(standard: 'Hora del Tadjikistan')),
-    'Tokelau':
-        MetaZone('Tokelau', long: TimeZoneName(standard: 'Hora de Tokelau')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'Hora de Tonga',
-            standard: 'Hora estàndard de Tonga',
-            daylight: 'Hora d’estiu de Tonga')),
+    'Tahiti': MetaZone(
+      'Tahiti',
+      long: TimeZoneName(standard: 'Hora de Tahití'),
+    ),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'Hora de Taipei',
+        standard: 'Hora estàndard de Taipei',
+        daylight: 'Hora d’estiu de Taipei',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'Hora del Tadjikistan'),
+    ),
+    'Tokelau': MetaZone(
+      'Tokelau',
+      long: TimeZoneName(standard: 'Hora de Tokelau'),
+    ),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'Hora de Tonga',
+        standard: 'Hora estàndard de Tonga',
+        daylight: 'Hora d’estiu de Tonga',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'Hora de Chuuk')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'Hora del Turkmenistan',
-            standard: 'Hora estàndard del Turkmenistan',
-            daylight: 'Hora d’estiu del Turkmenistan')),
-    'Tuvalu':
-        MetaZone('Tuvalu', long: TimeZoneName(standard: 'Hora de Tuvalu')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'Hora de l’Uruguai',
-            standard: 'Hora estàndard de l’Uruguai',
-            daylight: 'Hora d’estiu de l’Uruguai')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'Hora de l’Uzbekistan',
-            standard: 'Hora estàndard de l’Uzbekistan',
-            daylight: 'Hora d’estiu de l’Uzbekistan')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'Hora de Vanatu',
-            standard: 'Hora estàndard de Vanatu',
-            daylight: 'Hora d’estiu de Vanatu')),
-    'Venezuela': MetaZone('Venezuela',
-        long: TimeZoneName(standard: 'Hora de Veneçuela')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'Hora de Vladivostok',
-            standard: 'Hora estàndard de Vladivostok',
-            daylight: 'Hora d’estiu de Vladivostok')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'Hora de Volgograd',
-            standard: 'Hora estàndard de Volgograd',
-            daylight: 'Hora d’estiu de Volgograd')),
-    'Vostok':
-        MetaZone('Vostok', long: TimeZoneName(standard: 'Hora de Vostok')),
-    'Wake': MetaZone('Wake',
-        long: TimeZoneName(standard: 'Hora de les illes Wake')),
-    'Wallis': MetaZone('Wallis',
-        long: TimeZoneName(standard: 'Hora de Wallis i Futuna')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'Hora de Iakutsk',
-            standard: 'Hora estàndard de Iakutsk',
-            daylight: 'Hora d’estiu de Iakutsk')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'Hora de Iekaterinburg',
-            standard: 'Hora estàndard de Iekaterinburg',
-            daylight: 'Hora d’estiu de Iekaterinburg')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Hora del Turkmenistan',
+        standard: 'Hora estàndard del Turkmenistan',
+        daylight: 'Hora d’estiu del Turkmenistan',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      'Tuvalu',
+      long: TimeZoneName(standard: 'Hora de Tuvalu'),
+    ),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'Hora de l’Uruguai',
+        standard: 'Hora estàndard de l’Uruguai',
+        daylight: 'Hora d’estiu de l’Uruguai',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Hora de l’Uzbekistan',
+        standard: 'Hora estàndard de l’Uzbekistan',
+        daylight: 'Hora d’estiu de l’Uzbekistan',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Hora de Vanatu',
+        standard: 'Hora estàndard de Vanatu',
+        daylight: 'Hora d’estiu de Vanatu',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'Hora de Veneçuela'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Hora de Vladivostok',
+        standard: 'Hora estàndard de Vladivostok',
+        daylight: 'Hora d’estiu de Vladivostok',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'Hora de Volgograd',
+        standard: 'Hora estàndard de Volgograd',
+        daylight: 'Hora d’estiu de Volgograd',
+      ),
+    ),
+    'Vostok': MetaZone(
+      'Vostok',
+      long: TimeZoneName(standard: 'Hora de Vostok'),
+    ),
+    'Wake': MetaZone(
+      'Wake',
+      long: TimeZoneName(standard: 'Hora de les illes Wake'),
+    ),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'Hora de Wallis i Futuna'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Hora de Iakutsk',
+        standard: 'Hora estàndard de Iakutsk',
+        daylight: 'Hora d’estiu de Iakutsk',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Hora de Iekaterinburg',
+        standard: 'Hora estàndard de Iekaterinburg',
+        daylight: 'Hora d’estiu de Iekaterinburg',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'Hora de Yukon')),
   };
 }

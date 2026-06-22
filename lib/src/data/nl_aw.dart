@@ -35,9 +35,7 @@ class CurrenciesNlAW extends CurrenciesNl {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesNl.staticCurrencies,
-        ...const {
-          'AWG': _awg,
-        }
-      });
+    ...CurrenciesNl.staticCurrencies,
+    ...const {'AWG': _awg},
+  });
 }

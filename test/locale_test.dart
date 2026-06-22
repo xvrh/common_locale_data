@@ -6,85 +6,83 @@ import 'package:test/test.dart';
 void main() {
   test('LocaleId - operator==', () {
     expect(
-        LocaleId(lang: 'zh', region: 'TW') ==
-            LocaleId(lang: 'zh', region: 'TW'),
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW') == LocaleId(lang: 'zh', region: 'TW'),
+      isTrue,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW') !=
-            LocaleId(lang: 'zh', script: 'Hant', region: 'TW'),
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW') !=
+          LocaleId(lang: 'zh', script: 'Hant', region: 'TW'),
+      isTrue,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW') !=
-            LocaleId(lang: 'zh', region: 'TW', variants: ['posix']),
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW') !=
+          LocaleId(lang: 'zh', region: 'TW', variants: ['posix']),
+      isTrue,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW') !=
-            LocaleId(lang: 'zh', region: 'TW', privateUse: 'x-private'),
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW') !=
+          LocaleId(lang: 'zh', region: 'TW', privateUse: 'x-private'),
+      isTrue,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW') !=
-            LocaleId(lang: 'zh', region: 'TW', extensions: ['u-va-posix']),
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW') !=
+          LocaleId(lang: 'zh', region: 'TW', extensions: ['u-va-posix']),
+      isTrue,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW') ==
-            LocaleId(lang: 'zh', region: 'TW', remainder: 'nonsense'),
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW') ==
+          LocaleId(lang: 'zh', region: 'TW', remainder: 'nonsense'),
+      isTrue,
+    );
   });
 
   test('LocaleId - hashCode', () {
     expect(
-        LocaleId(lang: 'zh', region: 'TW').hashCode ==
-            LocaleId(lang: 'zh', region: 'TW').hashCode,
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW').hashCode ==
+          LocaleId(lang: 'zh', region: 'TW').hashCode,
+      isTrue,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW').hashCode ==
-            LocaleId(lang: 'zh', script: 'Hant', region: 'TW').hashCode,
-        isFalse);
+      LocaleId(lang: 'zh', region: 'TW').hashCode ==
+          LocaleId(lang: 'zh', script: 'Hant', region: 'TW').hashCode,
+      isFalse,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW').hashCode ==
-            LocaleId(lang: 'zh', region: 'TW', variants: ['posix']).hashCode,
-        isFalse);
+      LocaleId(lang: 'zh', region: 'TW').hashCode ==
+          LocaleId(lang: 'zh', region: 'TW', variants: ['posix']).hashCode,
+      isFalse,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW').hashCode ==
-            LocaleId(lang: 'zh', region: 'TW', privateUse: 'x-private')
-                .hashCode,
-        isFalse);
+      LocaleId(lang: 'zh', region: 'TW').hashCode ==
+          LocaleId(lang: 'zh', region: 'TW', privateUse: 'x-private').hashCode,
+      isFalse,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW').hashCode ==
-            LocaleId(lang: 'zh', region: 'TW', extensions: ['u-va-posix'])
-                .hashCode,
-        isFalse);
+      LocaleId(lang: 'zh', region: 'TW').hashCode ==
+          LocaleId(
+            lang: 'zh',
+            region: 'TW',
+            extensions: ['u-va-posix'],
+          ).hashCode,
+      isFalse,
+    );
     expect(
-        LocaleId(lang: 'zh', region: 'TW').hashCode ==
-            LocaleId(lang: 'zh', region: 'TW', remainder: 'nonsense').hashCode,
-        isTrue);
+      LocaleId(lang: 'zh', region: 'TW').hashCode ==
+          LocaleId(lang: 'zh', region: 'TW', remainder: 'nonsense').hashCode,
+      isTrue,
+    );
   });
 
   test('LocaleId - normal cases', () {
-    expect(
-      LocaleId.parse('en'),
-      LocaleId(lang: 'en'),
-    );
-    expect(
-      LocaleId.parse('en-GB'),
-      LocaleId(lang: 'en', region: 'GB'),
-    );
-    expect(
-      LocaleId.parse('Hant'),
-      LocaleId(script: 'Hant'),
-    );
-    expect(
-      LocaleId.parse('zh-Hant'),
-      LocaleId(lang: 'zh', script: 'Hant'),
-    );
+    expect(LocaleId.parse('en'), LocaleId(lang: 'en'));
+    expect(LocaleId.parse('en-GB'), LocaleId(lang: 'en', region: 'GB'));
+    expect(LocaleId.parse('Hant'), LocaleId(script: 'Hant'));
+    expect(LocaleId.parse('zh-Hant'), LocaleId(lang: 'zh', script: 'Hant'));
     expect(
       LocaleId.parse('zh-Hant-TW'),
       LocaleId(lang: 'zh', script: 'Hant', region: 'TW'),
     );
-    expect(
-      LocaleId.parse('Hant-TW'),
-      LocaleId(script: 'Hant', region: 'TW'),
-    );
+    expect(LocaleId.parse('Hant-TW'), LocaleId(script: 'Hant', region: 'TW'));
     expect(
       LocaleId.parse('zh-cmn-Hans-CN'),
       LocaleId(lang: 'zh-cmn', script: 'Hans', region: 'CN'),
@@ -93,14 +91,8 @@ void main() {
       LocaleId.parse('cmn-Hans-CN'),
       LocaleId(lang: 'cmn', script: 'Hans', region: 'CN'),
     );
-    expect(
-      LocaleId.parse('zh-yue-HK'),
-      LocaleId(lang: 'zh-yue', region: 'HK'),
-    );
-    expect(
-      LocaleId.parse('yue-HK'),
-      LocaleId(lang: 'yue', region: 'HK'),
-    );
+    expect(LocaleId.parse('zh-yue-HK'), LocaleId(lang: 'zh-yue', region: 'HK'));
+    expect(LocaleId.parse('yue-HK'), LocaleId(lang: 'yue', region: 'HK'));
     expect(
       LocaleId.parse('sl-rozaj-biske').canonicalize(),
       LocaleId(lang: 'sl', variants: ['biske', 'rozaj']),
@@ -117,10 +109,7 @@ void main() {
       LocaleId.parse('hy-Latn-IT-arevela'),
       LocaleId(lang: 'hy', script: 'Latn', region: 'IT', variants: ['arevela']),
     );
-    expect(
-      LocaleId.parse('es-419'),
-      LocaleId(lang: 'es', region: '419'),
-    );
+    expect(LocaleId.parse('es-419'), LocaleId(lang: 'es', region: '419'));
     expect(
       LocaleId.parse('de-CH-x-phonebk'),
       LocaleId(lang: 'de', region: 'CH', privateUse: 'x-phonebk'),
@@ -128,12 +117,13 @@ void main() {
     expect(
       LocaleId.parse('qaa-Qaaa-QM-x-southern'),
       LocaleId(
-          lang: 'qaa', script: 'Qaaa', region: 'QM', privateUse: 'x-southern'),
+        lang: 'qaa',
+        script: 'Qaaa',
+        region: 'QM',
+        privateUse: 'x-southern',
+      ),
     );
-    expect(
-      LocaleId.parse('de-Qaaa'),
-      LocaleId(lang: 'de', script: 'Qaaa'),
-    );
+    expect(LocaleId.parse('de-Qaaa'), LocaleId(lang: 'de', script: 'Qaaa'));
     expect(
       LocaleId.parse('sr-Latn-QM'),
       LocaleId(lang: 'sr', script: 'Latn', region: 'QM'),
@@ -145,10 +135,11 @@ void main() {
     expect(
       LocaleId.parse('zh-CN-a-myext-x-private'),
       LocaleId(
-          lang: 'zh',
-          region: 'CN',
-          extensions: ['a-myext'],
-          privateUse: 'x-private'),
+        lang: 'zh',
+        region: 'CN',
+        extensions: ['a-myext'],
+        privateUse: 'x-private',
+      ),
     );
     expect(
       LocaleId.parse('en-a-myext-b-another'),
@@ -156,14 +147,8 @@ void main() {
     );
   });
   test('LocaleId - exception cases', () {
-    expect(
-      LocaleId.parse('x-whatever'),
-      LocaleId(privateUse: 'x-whatever'),
-    );
-    expect(
-      LocaleId.parse('a-DE').remainder,
-      'a-DE',
-    );
+    expect(LocaleId.parse('x-whatever'), LocaleId(privateUse: 'x-whatever'));
+    expect(LocaleId.parse('a-DE').remainder, 'a-DE');
     expect(
       LocaleId.parse('ar-a-aaa-b-bbb-a-ccc'),
       LocaleId(lang: 'ar', extensions: ['a-aaa', 'b-bbb', 'a-ccc']),
@@ -189,11 +174,17 @@ void main() {
     expect(LocaleId.parse('x-private-1234567890').isWellFormedBCP47, isFalse);
     expect(LocaleId.parse('x-private-1234567890').remainder, '-1234567890');
     expect(
-        LocaleId.parse('x-private-abcdefgh-1234567890').isWellFormed, isFalse);
-    expect(LocaleId.parse('x-private-abcdefgh-1234567890').isWellFormedBCP47,
-        isFalse);
-    expect(LocaleId.parse('x-private-abcdefgh-1234567890').remainder,
-        '-1234567890');
+      LocaleId.parse('x-private-abcdefgh-1234567890').isWellFormed,
+      isFalse,
+    );
+    expect(
+      LocaleId.parse('x-private-abcdefgh-1234567890').isWellFormedBCP47,
+      isFalse,
+    );
+    expect(
+      LocaleId.parse('x-private-abcdefgh-1234567890').remainder,
+      '-1234567890',
+    );
     expect(LocaleId.parse('x-#&').isWellFormed, isFalse);
     expect(LocaleId.parse('x-#&').isWellFormedBCP47, isFalse);
     expect(LocaleId.parse('x-#&').remainder, 'x-#&');
@@ -203,47 +194,37 @@ void main() {
     expect(LocaleId.parse('x-private-a#&').remainder, '#&');
   });
   test('LocaleId - legacy cases', () {
-    expect(
-      LocaleId.parse('zh-hakka').canonicalize(),
-      LocaleId(lang: 'hak'),
-    );
-    expect(
-      LocaleId.parse('zh-hak').canonicalize(),
-      LocaleId(lang: 'hak'),
-    );
-    expect(
-      LocaleId.parse('zh-guoyu').canonicalize(),
-      LocaleId(lang: 'zh'),
-    );
+    expect(LocaleId.parse('zh-hakka').canonicalize(), LocaleId(lang: 'hak'));
+    expect(LocaleId.parse('zh-hak').canonicalize(), LocaleId(lang: 'hak'));
+    expect(LocaleId.parse('zh-guoyu').canonicalize(), LocaleId(lang: 'zh'));
     expect(
       LocaleId.parse('zh-Hant-TW-posix').canonicalize(),
       LocaleId(
-          lang: 'zh', script: 'Hant', region: 'TW', extensions: ['u-va-posix']),
+        lang: 'zh',
+        script: 'Hant',
+        region: 'TW',
+        extensions: ['u-va-posix'],
+      ),
     );
     expect(
       LocaleId.parse('zh-Hant-TW-posix-u-co-emoji').canonicalize(),
       LocaleId(
-          lang: 'zh',
-          script: 'Hant',
-          region: 'TW',
-          extensions: ['u-co-emoji-va-posix']),
+        lang: 'zh',
+        script: 'Hant',
+        region: 'TW',
+        extensions: ['u-co-emoji-va-posix'],
+      ),
     );
     expect(
       LocaleId.parse('sv-aaland').canonicalize(),
       LocaleId(lang: 'sv', region: 'AX'),
     );
-    expect(
-      LocaleId.parse('no-bokmal').canonicalize(),
-      LocaleId(lang: 'nb'),
-    );
+    expect(LocaleId.parse('no-bokmal').canonicalize(), LocaleId(lang: 'nb'));
     expect(
       LocaleId.parse('sv-bokmal').canonicalize(),
       LocaleId(lang: 'sv', variants: []),
     );
-    expect(
-      LocaleId.parse('no-nynorsk').canonicalize(),
-      LocaleId(lang: 'nn'),
-    );
+    expect(LocaleId.parse('no-nynorsk').canonicalize(), LocaleId(lang: 'nn'));
     expect(
       LocaleId.parse('sv-nynorsk').canonicalize(),
       LocaleId(lang: 'sv', variants: []),
@@ -252,10 +233,7 @@ void main() {
       LocaleId.parse('no-polytoni').canonicalize(),
       LocaleId(lang: 'no', variants: ['polyton']),
     );
-    expect(
-      LocaleId.parse('aa-saaho').canonicalize(),
-      LocaleId(lang: 'ssy'),
-    );
+    expect(LocaleId.parse('aa-saaho').canonicalize(), LocaleId(lang: 'ssy'));
     expect(
       LocaleId.parse('af-saaho').canonicalize(),
       LocaleId(lang: 'af', variants: []),
@@ -288,7 +266,9 @@ void main() {
 
     expect(LocaleId.parse('en_US').toBCP47(), 'en-US');
     expect(
-        LocaleId.parse('de_DE_u_co_phonebk').toBCP47(), 'de-DE-u-co-phonebk');
+      LocaleId.parse('de_DE_u_co_phonebk').toBCP47(),
+      'de-DE-u-co-phonebk',
+    );
     expect(LocaleId.parse('root').toBCP47(), 'und');
     expect(LocaleId.parse('root_u_cu_usd').toBCP47(), 'und-u-cu-usd');
     expect(LocaleId.parse('Latn_DE').toBCP47(), 'und-Latn-DE');
@@ -296,60 +276,92 @@ void main() {
     expect(LocaleId.parse('en-US').toUnicodeCLDR(), 'en_US');
     expect(LocaleId.parse('und').toUnicodeCLDR(), 'root');
     expect(LocaleId.parse('und-US').toUnicodeCLDR(), 'und_US');
-    expect(LocaleId.parse('und-u-cu-USD').canonicalize().toUnicodeCLDR(),
-        'root_u_cu_usd');
+    expect(
+      LocaleId.parse('und-u-cu-USD').canonicalize().toUnicodeCLDR(),
+      'root_u_cu_usd',
+    );
 
     expect(LocaleId.parse('en-US').toUnicodeBCP47(), 'en-US');
     expect(LocaleId.parse('x-abc').toUnicodeBCP47(), 'und-x-abc');
-    expect(LocaleId.parse('i-enochian').canonicalize().toUnicodeBCP47(),
-        'und-x-i-enochian');
+    expect(
+      LocaleId.parse('i-enochian').canonicalize().toUnicodeBCP47(),
+      'und-x-i-enochian',
+    );
   });
   test('LocaleId - canonicalization', () {
     expect(LocaleId.parse('iw-FX').canonicalize().toUnicodeBCP47(), 'he-FR');
     expect(LocaleId.parse('cmn-TW').canonicalize().toUnicodeBCP47(), 'zh-TW');
     expect(
-        LocaleId.parse('zh-cmn-TW').canonicalize().toUnicodeBCP47(), 'zh-TW');
+      LocaleId.parse('zh-cmn-TW').canonicalize().toUnicodeBCP47(),
+      'zh-TW',
+    );
     expect(LocaleId.parse('sr-CS').canonicalize().toUnicodeBCP47(), 'sr-RS');
     expect(LocaleId.parse('sh').canonicalize().toUnicodeBCP47(), 'sr-Latn');
     expect(LocaleId.parse('en_NL').canonicalize().toUnicodeBCP47(), 'en-NL');
 
-    expect(LocaleId.parse('X-KLINGON_us_SANJOSE').canonicalize(),
-        LocaleId(lang: 'und', privateUse: 'x-klingon-us-sanjose'));
-    expect(LocaleId.parse('de-1901').canonicalize(),
-        LocaleId(lang: 'de', variants: ['1901']));
-    expect(LocaleId.parse('nl-Qaai-528').canonicalize(),
-        LocaleId(lang: 'nl', script: 'Zinh', region: 'NL'));
+    expect(
+      LocaleId.parse('X-KLINGON_us_SANJOSE').canonicalize(),
+      LocaleId(lang: 'und', privateUse: 'x-klingon-us-sanjose'),
+    );
+    expect(
+      LocaleId.parse('de-1901').canonicalize(),
+      LocaleId(lang: 'de', variants: ['1901']),
+    );
+    expect(
+      LocaleId.parse('nl-Qaai-528').canonicalize(),
+      LocaleId(lang: 'nl', script: 'Zinh', region: 'NL'),
+    );
   });
   test('LocaleId - canonicalization territory aliases', () {
     expect(LocaleId.parse('ru-SU').canonicalize().toUnicodeBCP47(), 'ru-RU');
     expect(LocaleId.parse('uk-SU').canonicalize().toUnicodeBCP47(), 'uk-UA');
   });
   test('LocaleId - addLikelySubtag', () {
-    expect(LocaleId.parse('en-NL').canonicalize(),
-        LocaleId(lang: 'en', region: 'NL'));
-    expect(LocaleId.parse('en-NL').addLikelySubTags(),
-        LocaleId(lang: 'en', script: 'Latn', region: 'NL'));
-    expect(LocaleId.parse('en').addLikelySubTags(),
-        LocaleId(lang: 'en', script: 'Latn', region: 'US'));
+    expect(
+      LocaleId.parse('en-NL').canonicalize(),
+      LocaleId(lang: 'en', region: 'NL'),
+    );
+    expect(
+      LocaleId.parse('en-NL').addLikelySubTags(),
+      LocaleId(lang: 'en', script: 'Latn', region: 'NL'),
+    );
+    expect(
+      LocaleId.parse('en').addLikelySubTags(),
+      LocaleId(lang: 'en', script: 'Latn', region: 'US'),
+    );
 
-    expect(LocaleId.parse('fa_Arab_AF').addLikelySubTags(),
-        LocaleId(lang: 'fa', script: 'Arab', region: 'AF'));
-    expect(LocaleId.parse('und_Arab_AF').addLikelySubTags(),
-        LocaleId(lang: 'fa', script: 'Arab', region: 'AF'));
-    expect(LocaleId.parse('fa_AF').addLikelySubTags(),
-        LocaleId(lang: 'fa', script: 'Arab', region: 'AF'));
+    expect(
+      LocaleId.parse('fa_Arab_AF').addLikelySubTags(),
+      LocaleId(lang: 'fa', script: 'Arab', region: 'AF'),
+    );
+    expect(
+      LocaleId.parse('und_Arab_AF').addLikelySubTags(),
+      LocaleId(lang: 'fa', script: 'Arab', region: 'AF'),
+    );
+    expect(
+      LocaleId.parse('fa_AF').addLikelySubTags(),
+      LocaleId(lang: 'fa', script: 'Arab', region: 'AF'),
+    );
 
-    expect(LocaleId.parse('ZH-ZZZZ-SG').addLikelySubTags(),
-        LocaleId(lang: 'zh', script: 'Hans', region: 'SG'));
+    expect(
+      LocaleId.parse('ZH-ZZZZ-SG').addLikelySubTags(),
+      LocaleId(lang: 'zh', script: 'Hans', region: 'SG'),
+    );
 
-    expect(LocaleId.parse('nl-Zzzz-ARE').canonicalize(),
-        LocaleId(lang: 'nl', script: 'Zzzz', region: 'AE'));
+    expect(
+      LocaleId.parse('nl-Zzzz-ARE').canonicalize(),
+      LocaleId(lang: 'nl', script: 'Zzzz', region: 'AE'),
+    );
   });
   test('LocaleId - removeLikelySubtag', () {
-    expect(LocaleId.parse('zh_Hant').removeLikelySubTags(),
-        LocaleId(lang: 'zh', region: 'TW'));
-    expect(LocaleId.parse('zh_TW').removeLikelySubTags(),
-        LocaleId(lang: 'zh', region: 'TW'));
+    expect(
+      LocaleId.parse('zh_Hant').removeLikelySubTags(),
+      LocaleId(lang: 'zh', region: 'TW'),
+    );
+    expect(
+      LocaleId.parse('zh_TW').removeLikelySubTags(),
+      LocaleId(lang: 'zh', region: 'TW'),
+    );
     expect(LocaleId.parse('zh_CN').removeLikelySubTags(), LocaleId(lang: 'zh'));
   });
   group('LocaleId - canonicalize', () {
@@ -358,12 +370,12 @@ void main() {
       ('no-Cyrl-ID-BOKMAL-u-ca-japanese', 'nb-Cyrl-ID-u-ca-japanese'),
       (
         'no-Cyrl-ID-1901-BOKMAL-xsistemo-u-ca-japanese',
-        'nb-Cyrl-ID-1901-xsistemo-u-ca-japanese'
+        'nb-Cyrl-ID-1901-xsistemo-u-ca-japanese',
       ),
       ('no-Cyrl-ID-1901-BOKMAL-u-ca-japanese', 'nb-Cyrl-ID-1901-u-ca-japanese'),
       (
         'no-Cyrl-ID-BOKMAL-xsistemo-u-ca-japanese',
-        'nb-Cyrl-ID-xsistemo-u-ca-japanese'
+        'nb-Cyrl-ID-xsistemo-u-ca-japanese',
       ),
       ('no-NYNORSK', 'nn'),
       ('no-Cyrl-ID-NYNORSK-u-ca-japanese', 'nn-Cyrl-ID-u-ca-japanese'),
@@ -513,11 +525,11 @@ void main() {
     var tests = [
       (
         'en-POSIX-u-kf-false-ca-buddhist-nu-ahom-ca-islamic-umalqura-cf-account-co-big5han-fw-fri-hc-h11-ka-noignore-kb-false-kc-true-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-sd-usny-tz-adalv-cu-adp',
-        'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix'
+        'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix',
       ),
       (
         'en-POSIX-u-kf-false-ca-buddhist-nu-ahom-ca-islamic-umalqura-cf-account-co-big5han-fw-fri-hc-h11-ka-noignore-kb-false-kc-true-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-sd-usny-tz-adalv-cu-adp',
-        'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix'
+        'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix',
       ),
 
       ('ja-kana-jp-t-it-latn-it', 'ja-Kana-JP-t-it-latn-it'),
@@ -584,25 +596,25 @@ void main() {
       ('en@calendar=gregorian', 'en-u-ca-gregory'),
       (
         'de@collation=phonebook;calendar=gregorian',
-        'de-u-ca-gregory-co-phonebk'
+        'de-u-ca-gregory-co-phonebk',
       ),
       (
         'th@numbers=thai;z=extz;x=priv-use;a=exta',
-        'th-a-exta-u-nu-thai-z-extz-x-priv-use'
+        'th-a-exta-u-nu-thai-z-extz-x-priv-use',
       ),
       (
         'en@timezone=America/New_York;calendar=japanese',
-        'en-u-ca-japanese-tz-usnyc'
+        'en-u-ca-japanese-tz-usnyc',
       ),
       ('en@timezone=US/Eastern', 'en-u-tz-usnyc'),
       (
         'it@collation=badcollationtype;colStrength=identical;cu=usd-eur',
-        'it-u-cu-usd-eur-ks-identic'
+        'it-u-cu-usd-eur-ks-identic',
       ),
       ('en_US_POSIX', 'en-US-u-va-posix'),
       (
         'en_US_POSIX@calendar=japanese;currency=EUR',
-        'en-US-u-ca-japanese-cu-eur-va-posix'
+        'en-US-u-ca-japanese-cu-eur-va-posix',
       ),
       ('@x=elmer', 'und-x-elmer'),
       ('_US@x=elmer', 'und-US-x-elmer'),
@@ -613,11 +625,11 @@ void main() {
       ('en@attribute=baz;calendar=islamic-civil', 'en-u-baz-ca-islamic-civil'),
       (
         'en@a=bar;calendar=islamic-civil;x=u-foo',
-        'en-a-bar-u-ca-islamic-civil-x-u-foo'
+        'en-a-bar-u-ca-islamic-civil-x-u-foo',
       ),
       (
         'en@a=bar;attribute=baz;calendar=islamic-civil;x=u-foo',
-        'en-a-bar-u-baz-ca-islamic-civil-x-u-foo'
+        'en-a-bar-u-baz-ca-islamic-civil-x-u-foo',
       ),
       /* ICU-20320*/
       ('en@9=efg;a=baz', 'en-9-efg-a-baz'),
@@ -658,48 +670,62 @@ void main() {
 
   test('LocaleId - extension well formed test', () {
     expect(
-        LocaleId.parse(
-                'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix')
-            .isWellFormedBCP47,
-        isTrue);
+      LocaleId.parse(
+        'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix',
+      ).isWellFormedBCP47,
+      isTrue,
+    );
     expect(
-        LocaleId.parse(
-                'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix')
-            .isWellFormedUnicode,
-        isTrue);
+      LocaleId.parse(
+        'en-u-ca-buddhist-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix',
+      ).isWellFormedUnicode,
+      isTrue,
+    );
     // duplicate ca tag, is valid BCP47
     expect(
-        LocaleId.parse(
-                'en-u-ca-buddhist-ca-islamic-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix')
-            .isWellFormedBCP47,
-        isTrue);
+      LocaleId.parse(
+        'en-u-ca-buddhist-ca-islamic-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix',
+      ).isWellFormedBCP47,
+      isTrue,
+    );
     // duplicate ca tag, is NOT valid Unicode
     expect(
-        LocaleId.parse(
-                'en-u-ca-buddhist-ca-islamic-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix')
-            .isWellFormedUnicode,
-        isFalse);
+      LocaleId.parse(
+        'en-u-ca-buddhist-ca-islamic-cf-account-co-big5han-cu-adp-fw-fri-hc-h11-ka-noignore-kb-false-kc-kf-false-kk-false-kn-false-kr-latn-digit-symbol-ks-identic-kv-currency-nu-ahom-sd-usny-tz-adalv-va-posix',
+      ).isWellFormedUnicode,
+      isFalse,
+    );
   });
 
   test('LocaleCanonicalizationRule', () {
     // check rule matching
     expect(
-        LanguageCanonicalizationRule(variants: ['hepburn'])
-            .matches(LanguageId(lang: 'ja', variants: ['heploc', 'hepburn'])),
-        true);
+      LanguageCanonicalizationRule(
+        variants: ['hepburn'],
+      ).matches(LanguageId(lang: 'ja', variants: ['heploc', 'hepburn'])),
+      true,
+    );
     expect(
-        LanguageCanonicalizationRule(variants: ['hepburn', 'heploc'])
-            .matches(LanguageId(lang: 'ja', variants: ['hepburn'])),
-        false);
+      LanguageCanonicalizationRule(
+        variants: ['hepburn', 'heploc'],
+      ).matches(LanguageId(lang: 'ja', variants: ['hepburn'])),
+      false,
+    );
 
     // check sorting of rules
     var rules = [
       LanguageCanonicalizationRule(lang: 'en', script: 'Latn', region: 'GB'),
       LanguageCanonicalizationRule(lang: 'zh', script: 'Hant', region: 'CN'),
       LanguageCanonicalizationRule(
-          lang: 'zh', script: 'Hans', variants: ['pinyin']),
+        lang: 'zh',
+        script: 'Hans',
+        variants: ['pinyin'],
+      ),
       LanguageCanonicalizationRule(
-          lang: 'en', region: 'GB', variants: ['scouse']),
+        lang: 'en',
+        region: 'GB',
+        variants: ['scouse'],
+      ),
       LanguageCanonicalizationRule(lang: 'ja', variants: ['hepburn', 'heploc']),
       LanguageCanonicalizationRule(lang: 'zh', variants: ['1996', 'pinyin']),
       LanguageCanonicalizationRule(lang: 'zh', variants: ['hepburn', 'heploc']),

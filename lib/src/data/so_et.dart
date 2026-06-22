@@ -28,17 +28,21 @@ class CommonLocaleDataSoET extends CommonLocaleDataSo {
 class CurrenciesSoET extends CurrenciesSo {
   const CurrenciesSoET(super.cld);
 
-  static const _etb = Currency(_cld, 'ETB', 'Birta Itoobbiya',
-      one: 'birta Itoobbiya', other: 'birta Itoobbiya', symbol: 'Br');
+  static const _etb = Currency(
+    _cld,
+    'ETB',
+    'Birta Itoobbiya',
+    one: 'birta Itoobbiya',
+    other: 'birta Itoobbiya',
+    symbol: 'Br',
+  );
 
   @override
   Currency get etb => _etb;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesSo.staticCurrencies,
-        ...const {
-          'ETB': _etb,
-        }
-      });
+    ...CurrenciesSo.staticCurrencies,
+    ...const {'ETB': _etb},
+  });
 }

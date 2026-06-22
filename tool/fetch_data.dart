@@ -24,10 +24,7 @@ void main() async {
       'transform_private_use',
       'variant',
     },
-    'core': {
-      'coverageLevels',
-      'package',
-    },
+    'core': {'coverageLevels', 'package'},
     'core/supplemental': {
       'aliases',
       'metaZones',
@@ -35,8 +32,9 @@ void main() async {
       'windowsZones',
       'likelySubtags',
       'languageMatching',
-      'territoryContainment'
-    }
+      'territoryContainment',
+      'weekData',
+    },
   };
 
   final sets = <String, Set<String>>{
@@ -48,7 +46,7 @@ void main() async {
       'territories',
       'scripts',
       'variants',
-      'localeDisplayNames'
+      'localeDisplayNames',
     },
     'misc': {'characters', 'listPatterns'},
   };
@@ -68,28 +66,32 @@ void main() async {
 
   // get zone.tab for zone to territory mapping; get it from the cldr repository to have teh version align to the cldr
   await download(
-      tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/cldr/${Config.cldrVersion}/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/zone.tab',
-      client,
-      'zone.tab.txt');
+    tzdbDirectory,
+    'https://raw.githubusercontent.com/unicode-org/cldr/${Config.cldrVersion}/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/zone.tab',
+    client,
+    'zone.tab.txt',
+  );
 
   await download(
-      tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/cldr/${Config.cldrVersion}/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/tzdb-version.txt',
-      client,
-      'tzdb-version.txt');
+    tzdbDirectory,
+    'https://raw.githubusercontent.com/unicode-org/cldr/${Config.cldrVersion}/tools/cldr-code/src/main/resources/org/unicode/cldr/util/data/tzdb-version.txt',
+    client,
+    'tzdb-version.txt',
+  );
 
   await download(
-      tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/icu/${Config.icuVersion}/icu4c/source/tools/tzcode/icuregions',
-      client,
-      'icuregions.txt');
+    tzdbDirectory,
+    'https://raw.githubusercontent.com/unicode-org/icu/${Config.icuVersion}/icu4c/source/tools/tzcode/icuregions',
+    client,
+    'icuregions.txt',
+  );
 
   await download(
-      tzdbDirectory,
-      'https://raw.githubusercontent.com/unicode-org/icu/${Config.icuVersion}/icu4c/source/data/misc/icuver.txt',
-      client,
-      'icuver.txt');
+    tzdbDirectory,
+    'https://raw.githubusercontent.com/unicode-org/icu/${Config.icuVersion}/icu4c/source/data/misc/icuver.txt',
+    client,
+    'icuver.txt',
+  );
 
   for (var set in miscSets.keys) {
     await Future.wait([
@@ -101,7 +103,7 @@ void main() async {
           var fileName = '$file.json';
 
           await download(directory, url, client, fileName);
-        })
+        }),
     ]);
   }
 
@@ -126,7 +128,8 @@ void main() async {
     }
     futures.addAll(localeFutures);
     unawaited(
-        Future.wait(localeFutures).then((_) => print('Downloaded $locale')));
+      Future.wait(localeFutures).then((_) => print('Downloaded $locale')),
+    );
   }
   await Future.wait(futures);
 
@@ -135,7 +138,11 @@ void main() async {
 }
 
 Future<void> download(
-    Directory directory, String url, http.Client client, String file) async {
+  Directory directory,
+  String url,
+  http.Client client,
+  String file,
+) async {
   if (!directory.existsSync()) {
     directory.createSync(recursive: true);
   }

@@ -54,421 +54,346 @@ class UnitsSwKE extends UnitsSw {
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: 'sentimita {0} ya mraba',
-          other: 'sentimita {0} za mraba',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: 'cm² {0}',
-          other: 'cm² {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: 'cm² {0}',
-          other: 'cm² {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: 'sentimita {0} ya mraba',
+      other: 'sentimita {0} za mraba',
+    ),
+    short: UnitCountPattern(_locale, 'cm²', one: 'cm² {0}', other: 'cm² {0}'),
+    narrow: UnitCountPattern(_locale, 'cm²', one: 'cm² {0}', other: 'cm² {0}'),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'maili kwa kila galoni la Uingereza',
-          one: 'maili {0} kwa kila galoni la Uingereza',
-          other: 'maili {0} kwa kila galoni la Uingereza',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'maili/gal Imp',
-          one: 'mpg Imp. {0}',
-          other: 'mpg Imp. {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'maili/gal Imp',
-          one: 'mpg Imp. {0}',
-          other: 'mpg Imp. {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'maili kwa kila galoni la Uingereza',
+      one: 'maili {0} kwa kila galoni la Uingereza',
+      other: 'maili {0} kwa kila galoni la Uingereza',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'maili/gal Imp',
+      one: 'mpg Imp. {0}',
+      other: 'mpg Imp. {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'maili/gal Imp',
+      one: 'mpg Imp. {0}',
+      other: 'mpg Imp. {0}',
+    ),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mwongo',
-          one: 'mwongo {0}',
-          other: 'miongo {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mwongo',
-          one: 'mwongo {0}',
-          other: 'miongo {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mwongo',
-          one: 'mwongo {0}',
-          other: 'miongo {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mwongo',
+      one: 'mwongo {0}',
+      other: 'miongo {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mwongo',
+      one: 'mwongo {0}',
+      other: 'miongo {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mwongo',
+      one: 'mwongo {0}',
+      other: 'miongo {0}',
+    ),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'maikrosekunde',
-          one: 'maikroseunde {0}',
-          other: 'maikrosekunde {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mikrosekunde',
-          one: 'mikrosekunde {0}',
-          other: 'mikrosekunde {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mikrosekunde',
-          one: 'mikrosekunde {0}',
-          other: 'mikrosekunde {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'maikrosekunde',
+      one: 'maikroseunde {0}',
+      other: 'maikrosekunde {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mikrosekunde',
+      one: 'mikrosekunde {0}',
+      other: 'mikrosekunde {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mikrosekunde',
+      one: 'mikrosekunde {0}',
+      other: 'mikrosekunde {0}',
+    ),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ukubwa wa nafasi ya fonti',
-          one: 'em {0}',
-          other: 'em {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'em',
-          one: 'em {0}',
-          other: 'em {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'em',
-          one: 'em {0}',
-          other: 'em {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ukubwa wa nafasi ya fonti',
+      one: 'em {0}',
+      other: 'em {0}',
+    ),
+    short: UnitCountPattern(_locale, 'em', one: 'em {0}', other: 'em {0}'),
+    narrow: UnitCountPattern(_locale, 'em', one: 'em {0}', other: 'em {0}'),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pikseli',
-          one: 'pikseli {0}',
-          other: 'pikseli {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pikseli',
-          one: 'pikseli {0}',
-          other: 'px {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pikseli',
-          one: 'pikseli {0}',
-          other: 'px {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pikseli',
+      one: 'pikseli {0}',
+      other: 'pikseli {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pikseli',
+      one: 'pikseli {0}',
+      other: 'px {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pikseli',
+      one: 'pikseli {0}',
+      other: 'px {0}',
+    ),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megapikseli',
-          one: 'megapikseli {0}',
-          other: 'megapikseli {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'megapikseli',
-          one: 'MP {0}',
-          other: 'MP {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'megapikseli',
-          one: 'MP {0}',
-          other: 'MP {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megapikseli',
+      one: 'megapikseli {0}',
+      other: 'megapikseli {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'megapikseli',
+      one: 'MP {0}',
+      other: 'MP {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'megapikseli',
+      one: 'MP {0}',
+      other: 'MP {0}',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pikseli kwa kila inchi',
-          one: 'pikseli {0} kwa kila sekunde',
-          other: 'pikseli {0} kwa kila sekunde',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: 'ppi {0}',
-          other: 'ppi {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: 'ppi {0}',
-          other: 'ppi {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pikseli kwa kila inchi',
+      one: 'pikseli {0} kwa kila sekunde',
+      other: 'pikseli {0} kwa kila sekunde',
+    ),
+    short: UnitCountPattern(_locale, 'ppi', one: 'ppi {0}', other: 'ppi {0}'),
+    narrow: UnitCountPattern(_locale, 'ppi', one: 'ppi {0}', other: 'ppi {0}'),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nukta kwa kila sentimita',
-          one: 'nukta {0} kwa kila sentimita',
-          other: 'nukta {0} kwa kila sentimita',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nukta kwa kila sentimita',
-          one: 'dpcm {0}',
-          other: 'dpcm {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: 'dpcm {0}',
-          other: 'dpcm {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nukta kwa kila sentimita',
+      one: 'nukta {0} kwa kila sentimita',
+      other: 'nukta {0} kwa kila sentimita',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nukta kwa kila sentimita',
+      one: 'dpcm {0}',
+      other: 'dpcm {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dpcm',
+      one: 'dpcm {0}',
+      other: 'dpcm {0}',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nukta kwa kila inchi',
-          one: 'nuka {0} kwa kila inchi',
-          other: 'nukta {0} kwa kila inchi',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nukta kwa kila inchi',
-          one: 'dpi {0}',
-          other: 'dpi {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: 'dpi {0}',
-          other: 'dpi {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nukta kwa kila inchi',
+      one: 'nuka {0} kwa kila inchi',
+      other: 'nukta {0} kwa kila inchi',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nukta kwa kila inchi',
+      one: 'dpi {0}',
+      other: 'dpi {0}',
+    ),
+    narrow: UnitCountPattern(_locale, 'dpi', one: 'dpi {0}', other: 'dpi {0}'),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milimita',
-          one: 'milimita {0}',
-          other: 'milimita {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'milimita',
-          one: 'milimita {0}',
-          other: 'milimita {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'milimita',
-          one: 'mm{0}',
-          other: 'mm{0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milimita',
+      one: 'milimita {0}',
+      other: 'milimita {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'milimita',
+      one: 'milimita {0}',
+      other: 'milimita {0}',
+    ),
+    narrow: UnitCountPattern(_locale, 'milimita', one: 'mm{0}', other: 'mm{0}'),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'maikromita',
-          one: 'maikromita {0}',
-          other: 'maikromita {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'maikromita',
-          one: 'maikromita {0}',
-          other: 'maikromita {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'maikromita',
-          one: 'maikromita {0}',
-          other: 'maikromita {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'maikromita',
+      one: 'maikromita {0}',
+      other: 'maikromita {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'maikromita',
+      one: 'maikromita {0}',
+      other: 'maikromita {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'maikromita',
+      one: 'maikromita {0}',
+      other: 'maikromita {0}',
+    ),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kila sekunde',
-          one: '{0} kila sekunde',
-          other: '{0} kila sekunde',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kila sekunde',
-          one: 'kila sekunde {0}',
-          other: 'kila sekunde {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kila sekunde',
-          one: 'kila sekunde {0}',
-          other: 'kila sekunde {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kila sekunde',
+      one: '{0} kila sekunde',
+      other: '{0} kila sekunde',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kila sekunde',
+      one: 'kila sekunde {0}',
+      other: 'kila sekunde {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kila sekunde',
+      one: 'kila sekunde {0}',
+      other: 'kila sekunde {0}',
+    ),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'miaka ya mwanga',
-          one: 'miaka {0} ya mwanga',
-          other: 'miaka {0} ya mwanga',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'miaka ya mwanga',
-          one: 'ly {0}',
-          other: 'ly {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'miaka ya mwanga',
-          one: 'ly {0}',
-          other: 'ly {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'miaka ya mwanga',
+      one: 'miaka {0} ya mwanga',
+      other: 'miaka {0} ya mwanga',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'miaka ya mwanga',
+      one: 'ly {0}',
+      other: 'ly {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'miaka ya mwanga',
+      one: 'ly {0}',
+      other: 'ly {0}',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kipimo cha astronomia',
-          one: 'kipimo {0} cha astronomia',
-          other: 'vipimo {0} vya astronomia',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kipimo cha astronomia',
-          one: 'au {0}',
-          other: 'au {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kipimo cha astronomia',
-          one: 'au {0}',
-          other: 'au {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kipimo cha astronomia',
+      one: 'kipimo {0} cha astronomia',
+      other: 'vipimo {0} vya astronomia',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kipimo cha astronomia',
+      one: 'au {0}',
+      other: 'au {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kipimo cha astronomia',
+      one: 'au {0}',
+      other: 'au {0}',
+    ),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nusu vipenyo vya jua',
-          one: 'nusu kipenyo {0} cha jua',
-          other: 'nusu vipenyo {0} vya jua',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nusu vipenyo vya jua',
-          one: 'R☉ {0}',
-          other: 'R☉ {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: 'R☉ {0}',
-          other: 'R☉ {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nusu vipenyo vya jua',
+      one: 'nusu kipenyo {0} cha jua',
+      other: 'nusu vipenyo {0} vya jua',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nusu vipenyo vya jua',
+      one: 'R☉ {0}',
+      other: 'R☉ {0}',
+    ),
+    narrow: UnitCountPattern(_locale, 'R☉', one: 'R☉ {0}', other: 'R☉ {0}'),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milimita za zebaki',
-          one: 'milimita {0} ya zebaki',
-          other: 'milimita {0} za zebaki',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'milimita za zebaki',
-          one: 'mm Hg {0}',
-          other: 'mm Hg {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'milimita za zebaki',
-          one: 'mm Hg {0}',
-          other: 'mm Hg {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milimita za zebaki',
+      one: 'milimita {0} ya zebaki',
+      other: 'milimita {0} za zebaki',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'milimita za zebaki',
+      one: 'mm Hg {0}',
+      other: 'mm Hg {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'milimita za zebaki',
+      one: 'mm Hg {0}',
+      other: 'mm Hg {0}',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'baa',
-          one: 'baa {0}',
-          other: 'baa {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'baa',
-          one: 'baa {0}',
-          other: 'baa {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'baa',
-          one: 'baa {0}',
-          other: 'baa {0}',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'baa', one: 'baa {0}', other: 'baa {0}'),
+    short: UnitCountPattern(_locale, 'baa', one: 'baa {0}', other: 'baa {0}'),
+    narrow: UnitCountPattern(_locale, 'baa', one: 'baa {0}', other: 'baa {0}'),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'paskali',
-          one: 'Pa {0}',
-          other: 'Pa {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: 'Pa {0}',
-          other: 'Pa {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: 'Pa {0}',
-          other: 'Pa {0}',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'paskali', one: 'Pa {0}', other: 'Pa {0}'),
+    short: UnitCountPattern(_locale, 'Pa', one: 'Pa {0}', other: 'Pa {0}'),
+    narrow: UnitCountPattern(_locale, 'Pa', one: 'Pa {0}', other: 'Pa {0}'),
+  );
 }
 
 class LanguagesSwKE extends LanguagesSw {
@@ -486,8 +411,12 @@ class LanguagesSwKE extends LanguagesSw {
   static const _ch = Language('ch', 'Kichamoro');
   static const _chk = Language('chk', 'Kichuuki');
   static const _chr = Language('chr', 'Kicheroki');
-  static const _ckb = Language('ckb', 'Kikurdi cha Kati',
-      variant: 'Kikurdi, Sorani', menu: 'Kikurdi, Kati');
+  static const _ckb = Language(
+    'ckb',
+    'Kikurdi cha Kati',
+    variant: 'Kikurdi, Sorani',
+    menu: 'Kikurdi, Kati',
+  );
   static const _clc = Language('clc', 'Kichilkotini');
   static const _crg = Language('crg', 'Kimichif');
   static const _crk = Language('crk', 'Kikrii cha Chini');
@@ -501,10 +430,16 @@ class LanguagesSwKE extends LanguagesSw {
   static const _dje = Language('dje', 'Kizama');
   static const _enAU = Language('en-AU', 'Kiingereza cha Australia');
   static const _enCA = Language('en-CA', 'Kiingereza cha Kanada');
-  static const _enGB = Language('en-GB', 'Kiingereza cha Uingereza',
-      short: 'Kiingereza cha Uingereza');
-  static const _enUS = Language('en-US', 'Kiingereza cha Marekani',
-      short: 'Kiingereza cha Marekani)');
+  static const _enGB = Language(
+    'en-GB',
+    'Kiingereza cha Uingereza',
+    short: 'Kiingereza cha Uingereza',
+  );
+  static const _enUS = Language(
+    'en-US',
+    'Kiingereza cha Marekani',
+    short: 'Kiingereza cha Marekani)',
+  );
   static const _es419 = Language('es-419', 'Kihispania cha Amerika Kusini');
   static const _esES = Language('es-ES', 'Kihispania cha Ulaya');
   static const _esMX = Language('es-MX', 'Kihispania cha Meksiko');
@@ -925,158 +860,158 @@ class LanguagesSwKE extends LanguagesSw {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesSw.staticLanguages,
-        ...const {
-          'alt': _alt,
-          'arq': _arq,
-          'atj': _atj,
-          'az': _az,
-          'ban': _ban,
-          'bho': _bho,
-          'bn': _bn,
-          'ce': _ce,
-          'ceb': _ceb,
-          'ch': _ch,
-          'chk': _chk,
-          'chr': _chr,
-          'ckb': _ckb,
-          'clc': _clc,
-          'crg': _crg,
-          'crk': _crk,
-          'crm': _crm,
-          'crr': _crr,
-          'csw': _csw,
-          'cu': _cu,
-          'cy': _cy,
-          'de-AT': _deAT,
-          'de-CH': _deCH,
-          'dje': _dje,
-          'en-AU': _enAU,
-          'en-CA': _enCA,
-          'en-GB': _enGB,
-          'en-US': _enUS,
-          'es-419': _es419,
-          'es-ES': _esES,
-          'es-MX': _esMX,
-          'fa-AF': _faAF,
-          'ff': _ff,
-          'fo': _fo,
-          'fr-CA': _frCA,
-          'fr-CH': _frCH,
-          'frr': _frr,
-          'fur': _fur,
-          'fy': _fy,
-          'gaa': _gaa,
-          'gez': _gez,
-          'gil': _gil,
-          'grc': _grc,
-          'gv': _gv,
-          'gwi': _gwi,
-          'haw': _haw,
-          'hr': _hr,
-          'hsb': _hsb,
-          'ht': _ht,
-          'hup': _hup,
-          'hur': _hur,
-          'ia': _ia,
-          'ig': _ig,
-          'ii': _ii,
-          'ikt': _ikt,
-          'ilo': _ilo,
-          'inh': _inh,
-          'is': _$is,
-          'jbo': _jbo,
-          'kac': _kac,
-          'kbd': _kbd,
-          'kea': _kea,
-          'khq': _khq,
-          'kj': _kj,
-          'kk': _kk,
-          'kkj': _kkj,
-          'km': _km,
-          'koi': _koi,
-          'kpe': _kpe,
-          'krc': _krc,
-          'krl': _krl,
-          'kru': _kru,
-          'ksb': _ksb,
-          'ksh': _ksh,
-          'kum': _kum,
-          'kw': _kw,
-          'ky': _ky,
-          'lag': _lag,
-          'lam': _lam,
-          'lez': _lez,
-          'li': _li,
-          'luy': _luy,
-          'mak': _mak,
-          'mas': _mas,
-          'mdf': _mdf,
-          'mfe': _mfe,
-          'mh': _mh,
-          'mic': _mic,
-          'mk': _mk,
-          'ml': _ml,
-          'moh': _moh,
-          'mos': _mos,
-          'mus': _mus,
-          'mwl': _mwl,
-          'my': _my,
-          'nds': _nds,
-          'nnh': _nnh,
-          'nqo': _nqo,
-          'nr': _nr,
-          'oc': _oc,
-          'ojc': _ojc,
-          'or': _or,
-          'pag': _pag,
-          'pcm': _pcm,
-          'pt-BR': _ptBR,
-          'pt-PT': _ptPT,
-          'rm': _rm,
-          'rwk': _rwk,
-          'sba': _sba,
-          'sc': _sc,
-          'scn': _scn,
-          'ses': _ses,
-          'shn': _shn,
-          'shu': _shu,
-          'slh': _slh,
-          'srn': _srn,
-          'st': _st,
-          'str': _str,
-          'su': _su,
-          'sw-CD': _swCD,
-          'swb': _swb,
-          'syr': _syr,
-          'tce': _tce,
-          'tem': _tem,
-          'tgx': _tgx,
-          'tht': _tht,
-          'tn': _tn,
-          'tok': _tok,
-          'ts': _ts,
-          'ttm': _ttm,
-          'tw': _tw,
-          'tzm': _tzm,
-          'udm': _udm,
-          'ug': _ug,
-          'uk': _uk,
-          'umb': _umb,
-          'wa': _wa,
-          'wae': _wae,
-          'wal': _wal,
-          'war': _war,
-          'wo': _wo,
-          'xh': _xh,
-          'yav': _yav,
-          'yi': _yi,
-          'zgh': _zgh,
-          'zh': _zh,
-          'zh-Hans': _zhHans,
-          'zh-Hant': _zhHant,
-        }
-      });
+    ...LanguagesSw.staticLanguages,
+    ...const {
+      'alt': _alt,
+      'arq': _arq,
+      'atj': _atj,
+      'az': _az,
+      'ban': _ban,
+      'bho': _bho,
+      'bn': _bn,
+      'ce': _ce,
+      'ceb': _ceb,
+      'ch': _ch,
+      'chk': _chk,
+      'chr': _chr,
+      'ckb': _ckb,
+      'clc': _clc,
+      'crg': _crg,
+      'crk': _crk,
+      'crm': _crm,
+      'crr': _crr,
+      'csw': _csw,
+      'cu': _cu,
+      'cy': _cy,
+      'de-AT': _deAT,
+      'de-CH': _deCH,
+      'dje': _dje,
+      'en-AU': _enAU,
+      'en-CA': _enCA,
+      'en-GB': _enGB,
+      'en-US': _enUS,
+      'es-419': _es419,
+      'es-ES': _esES,
+      'es-MX': _esMX,
+      'fa-AF': _faAF,
+      'ff': _ff,
+      'fo': _fo,
+      'fr-CA': _frCA,
+      'fr-CH': _frCH,
+      'frr': _frr,
+      'fur': _fur,
+      'fy': _fy,
+      'gaa': _gaa,
+      'gez': _gez,
+      'gil': _gil,
+      'grc': _grc,
+      'gv': _gv,
+      'gwi': _gwi,
+      'haw': _haw,
+      'hr': _hr,
+      'hsb': _hsb,
+      'ht': _ht,
+      'hup': _hup,
+      'hur': _hur,
+      'ia': _ia,
+      'ig': _ig,
+      'ii': _ii,
+      'ikt': _ikt,
+      'ilo': _ilo,
+      'inh': _inh,
+      'is': _$is,
+      'jbo': _jbo,
+      'kac': _kac,
+      'kbd': _kbd,
+      'kea': _kea,
+      'khq': _khq,
+      'kj': _kj,
+      'kk': _kk,
+      'kkj': _kkj,
+      'km': _km,
+      'koi': _koi,
+      'kpe': _kpe,
+      'krc': _krc,
+      'krl': _krl,
+      'kru': _kru,
+      'ksb': _ksb,
+      'ksh': _ksh,
+      'kum': _kum,
+      'kw': _kw,
+      'ky': _ky,
+      'lag': _lag,
+      'lam': _lam,
+      'lez': _lez,
+      'li': _li,
+      'luy': _luy,
+      'mak': _mak,
+      'mas': _mas,
+      'mdf': _mdf,
+      'mfe': _mfe,
+      'mh': _mh,
+      'mic': _mic,
+      'mk': _mk,
+      'ml': _ml,
+      'moh': _moh,
+      'mos': _mos,
+      'mus': _mus,
+      'mwl': _mwl,
+      'my': _my,
+      'nds': _nds,
+      'nnh': _nnh,
+      'nqo': _nqo,
+      'nr': _nr,
+      'oc': _oc,
+      'ojc': _ojc,
+      'or': _or,
+      'pag': _pag,
+      'pcm': _pcm,
+      'pt-BR': _ptBR,
+      'pt-PT': _ptPT,
+      'rm': _rm,
+      'rwk': _rwk,
+      'sba': _sba,
+      'sc': _sc,
+      'scn': _scn,
+      'ses': _ses,
+      'shn': _shn,
+      'shu': _shu,
+      'slh': _slh,
+      'srn': _srn,
+      'st': _st,
+      'str': _str,
+      'su': _su,
+      'sw-CD': _swCD,
+      'swb': _swb,
+      'syr': _syr,
+      'tce': _tce,
+      'tem': _tem,
+      'tgx': _tgx,
+      'tht': _tht,
+      'tn': _tn,
+      'tok': _tok,
+      'ts': _ts,
+      'ttm': _ttm,
+      'tw': _tw,
+      'tzm': _tzm,
+      'udm': _udm,
+      'ug': _ug,
+      'uk': _uk,
+      'umb': _umb,
+      'wa': _wa,
+      'wae': _wae,
+      'wal': _wal,
+      'war': _war,
+      'wo': _wo,
+      'xh': _xh,
+      'yav': _yav,
+      'yi': _yi,
+      'zgh': _zgh,
+      'zh': _zh,
+      'zh-Hans': _zhHans,
+      'zh-Hant': _zhHant,
+    },
+  });
 }
 
 class ScriptsSwKE extends ScriptsSw {
@@ -1084,14 +1019,19 @@ class ScriptsSwKE extends ScriptsSw {
 
   static const _beng = Script('Beng', 'Kibangla');
   static const _brai = Script('Brai', 'Breli');
-  static const _cans =
-      Script('Cans', 'Silabi za Asili Zilizounganishwa za Kanada');
+  static const _cans = Script(
+    'Cans',
+    'Silabi za Asili Zilizounganishwa za Kanada',
+  );
   static const _cher = Script('Cher', 'Kicherokii');
   static const _cyrl = Script('Cyrl', 'Kikrili');
   static const _ethi = Script('Ethi', 'Kihabeshi');
   static const _hanb = Script('Hanb', 'Kihan chenye Kibopomofo');
-  static const _hans = Script('Hans', 'Kilichorahisishwa',
-      standAlone: 'Kihan Kilichorahisishwa');
+  static const _hans = Script(
+    'Hans',
+    'Kilichorahisishwa',
+    standAlone: 'Kihan Kilichorahisishwa',
+  );
   static const _hira = Script('Hira', 'Kihiragana');
   static const _hrkt = Script('Hrkt', 'Silabi za Kijapani');
   static const _jamo = Script('Jamo', 'Kijamo');
@@ -1154,32 +1094,32 @@ class ScriptsSwKE extends ScriptsSw {
 
   @override
   Map<String, Script> get scripts => Map.unmodifiable({
-        ...ScriptsSw.staticScripts,
-        ...const {
-          'Beng': _beng,
-          'Brai': _brai,
-          'Cans': _cans,
-          'Cher': _cher,
-          'Cyrl': _cyrl,
-          'Ethi': _ethi,
-          'Hanb': _hanb,
-          'Hans': _hans,
-          'Hira': _hira,
-          'Hrkt': _hrkt,
-          'Jamo': _jamo,
-          'Khmr': _khmr,
-          'Mtei': _mtei,
-          'Mymr': _mymr,
-          'Nkoo': _nkoo,
-          'Olck': _olck,
-          'Orya': _orya,
-          'Sund': _sund,
-          'Syrc': _syrc,
-          'Taml': _taml,
-          'Yiii': _yiii,
-          'Zmth': _zmth,
-        }
-      });
+    ...ScriptsSw.staticScripts,
+    ...const {
+      'Beng': _beng,
+      'Brai': _brai,
+      'Cans': _cans,
+      'Cher': _cher,
+      'Cyrl': _cyrl,
+      'Ethi': _ethi,
+      'Hanb': _hanb,
+      'Hans': _hans,
+      'Hira': _hira,
+      'Hrkt': _hrkt,
+      'Jamo': _jamo,
+      'Khmr': _khmr,
+      'Mtei': _mtei,
+      'Mymr': _mymr,
+      'Nkoo': _nkoo,
+      'Olck': _olck,
+      'Orya': _orya,
+      'Sund': _sund,
+      'Syrc': _syrc,
+      'Taml': _taml,
+      'Yiii': _yiii,
+      'Zmth': _zmth,
+    },
+  });
 }
 
 class TerritoriesSwKE extends TerritoriesSw {
@@ -1211,16 +1151,21 @@ class TerritoriesSwKE extends TerritoriesSw {
   static const _bt = Territory('BT', 'Bhutani');
   static const _by = Territory('BY', 'Belarusi');
   static const _cc = Territory('CC', 'Visiwa vya Kokos (Keeling)');
-  static const _cd =
-      Territory('CD', 'Kongo - Kinshasa', variant: 'Kongo (DRC)');
+  static const _cd = Territory(
+    'CD',
+    'Kongo - Kinshasa',
+    variant: 'Kongo (DRC)',
+  );
   static const _cv = Territory('CV', 'Kepuvede');
   static const _cw = Territory('CW', 'Kurakao');
   static const _ea = Territory('EA', 'Keuta na Melilla');
   static const _ec = Territory('EC', 'Ekwado');
   static const _ga = Territory('GA', 'Gaboni');
   static const _gp = Territory('GP', 'Gwadelupe');
-  static const _gs =
-      Territory('GS', 'Visiwa vya Jojia Kusini na Sandwich Kusini');
+  static const _gs = Territory(
+    'GS',
+    'Visiwa vya Jojia Kusini na Sandwich Kusini',
+  );
   static const _gt = Territory('GT', 'Gwatemala');
   static const _gu = Territory('GU', 'Guami');
   static const _hr = Territory('HR', 'Kroashia');
@@ -1472,309 +1417,668 @@ class TerritoriesSwKE extends TerritoriesSw {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesSw.staticTerritories,
-        ...const {
-          '001': _$001,
-          '011': _$011,
-          '014': _$014,
-          '015': _$015,
-          '030': _$030,
-          '034': _$034,
-          '035': _$035,
-          '039': _$039,
-          '057': _$057,
-          '061': _$061,
-          '145': _$145,
-          '151': _$151,
-          '154': _$154,
-          '155': _$155,
-          '202': _$202,
-          'AF': _af,
-          'AG': _ag,
-          'AI': _ai,
-          'AQ': _aq,
-          'AZ': _az,
-          'BB': _bb,
-          'BJ': _bj,
-          'BS': _bs,
-          'BT': _bt,
-          'BY': _by,
-          'CC': _cc,
-          'CD': _cd,
-          'CV': _cv,
-          'CW': _cw,
-          'EA': _ea,
-          'EC': _ec,
-          'GA': _ga,
-          'GP': _gp,
-          'GS': _gs,
-          'GT': _gt,
-          'GU': _gu,
-          'HR': _hr,
-          'JO': _jo,
-          'LA': _la,
-          'LB': _lb,
-          'LI': _li,
-          'LS': _ls,
-          'LU': _lu,
-          'LV': _lv,
-          'MA': _ma,
-          'MC': _mc,
-          'MK': _mk,
-          'MM': _mm,
-          'MS': _ms,
-          'NC': _nc,
-          'NE': _ne,
-          'NO': _no,
-          'NP': _np,
-          'OM': _om,
-          'PF': _pf,
-          'PG': _pg,
-          'PL': _pl,
-          'PM': _pm,
-          'PR': _pr,
-          'PS': _ps,
-          'PY': _py,
-          'QA': _qa,
-          'QO': _qo,
-          'SG': _sg,
-          'ST': _st,
-          'SV': _sv,
-          'SY': _sy,
-          'TD': _td,
-          'TH': _th,
-          'TM': _tm,
-          'TW': _tw,
-          'UA': _ua,
-          'US': _us,
-          'UY': _uy,
-          'VA': _va,
-          'VG': _vg,
-          'VI': _vi,
-          'XA': _xa,
-          'XB': _xb,
-          'YT': _yt,
-          'ZZ': _zz,
-        }
-      });
+    ...TerritoriesSw.staticTerritories,
+    ...const {
+      '001': _$001,
+      '011': _$011,
+      '014': _$014,
+      '015': _$015,
+      '030': _$030,
+      '034': _$034,
+      '035': _$035,
+      '039': _$039,
+      '057': _$057,
+      '061': _$061,
+      '145': _$145,
+      '151': _$151,
+      '154': _$154,
+      '155': _$155,
+      '202': _$202,
+      'AF': _af,
+      'AG': _ag,
+      'AI': _ai,
+      'AQ': _aq,
+      'AZ': _az,
+      'BB': _bb,
+      'BJ': _bj,
+      'BS': _bs,
+      'BT': _bt,
+      'BY': _by,
+      'CC': _cc,
+      'CD': _cd,
+      'CV': _cv,
+      'CW': _cw,
+      'EA': _ea,
+      'EC': _ec,
+      'GA': _ga,
+      'GP': _gp,
+      'GS': _gs,
+      'GT': _gt,
+      'GU': _gu,
+      'HR': _hr,
+      'JO': _jo,
+      'LA': _la,
+      'LB': _lb,
+      'LI': _li,
+      'LS': _ls,
+      'LU': _lu,
+      'LV': _lv,
+      'MA': _ma,
+      'MC': _mc,
+      'MK': _mk,
+      'MM': _mm,
+      'MS': _ms,
+      'NC': _nc,
+      'NE': _ne,
+      'NO': _no,
+      'NP': _np,
+      'OM': _om,
+      'PF': _pf,
+      'PG': _pg,
+      'PL': _pl,
+      'PM': _pm,
+      'PR': _pr,
+      'PS': _ps,
+      'PY': _py,
+      'QA': _qa,
+      'QO': _qo,
+      'SG': _sg,
+      'ST': _st,
+      'SV': _sv,
+      'SY': _sy,
+      'TD': _td,
+      'TH': _th,
+      'TM': _tm,
+      'TW': _tw,
+      'UA': _ua,
+      'US': _us,
+      'UY': _uy,
+      'VA': _va,
+      'VG': _vg,
+      'VI': _vi,
+      'XA': _xa,
+      'XB': _xb,
+      'YT': _yt,
+      'ZZ': _zz,
+    },
+  });
 }
 
 class CurrenciesSwKE extends CurrenciesSw {
   const CurrenciesSwKE(super.cld);
 
-  static const _aed = Currency(_cld, 'AED', 'Diramu ya Falme za Kiarabu',
-      one: 'diramu ya Falme za Kiarabu', other: 'diramu za Falme za Kiarabu');
-  static const _afn = Currency(_cld, 'AFN', 'Afghani ya Afghanistani',
-      one: 'afghani ya Afghanistani',
-      other: 'afghani za Afghanistani',
-      symbolNarrow: '؋');
-  static const _ang = Currency(_cld, 'ANG', 'Gilda ya Antili ya Uholanzi',
-      one: 'gilda ya Antili ya Uholanzi', other: 'gilda za Antili ya Uholanzi');
-  static const _awg = Currency(_cld, 'AWG', 'Florin ya Aruba',
-      one: 'florin ya Aruba', other: 'florin ya Aruba');
-  static const _azn = Currency(_cld, 'AZN', 'Manati ya Azabajani',
-      one: 'manati ya Azabajani',
-      other: 'manati za Azabajani',
-      symbolNarrow: '₼');
+  static const _aed = Currency(
+    _cld,
+    'AED',
+    'Diramu ya Falme za Kiarabu',
+    one: 'diramu ya Falme za Kiarabu',
+    other: 'diramu za Falme za Kiarabu',
+  );
+  static const _afn = Currency(
+    _cld,
+    'AFN',
+    'Afghani ya Afghanistani',
+    one: 'afghani ya Afghanistani',
+    other: 'afghani za Afghanistani',
+    symbolNarrow: '؋',
+  );
+  static const _ang = Currency(
+    _cld,
+    'ANG',
+    'Gilda ya Antili ya Uholanzi',
+    one: 'gilda ya Antili ya Uholanzi',
+    other: 'gilda za Antili ya Uholanzi',
+  );
+  static const _awg = Currency(
+    _cld,
+    'AWG',
+    'Florin ya Aruba',
+    one: 'florin ya Aruba',
+    other: 'florin ya Aruba',
+  );
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'Manati ya Azabajani',
+    one: 'manati ya Azabajani',
+    other: 'manati za Azabajani',
+    symbolNarrow: '₼',
+  );
   static const _bam = Currency(
-      _cld, 'BAM', 'Maki ya Bosnia na Hezegovina Inayoweza Kubadilishwa',
-      one: 'maki ya Bosnia na Hezegovina inayoweza kubadilishwa',
-      other: 'maki za Bosnia na Hezegovina zinazoweza kubadilishwa',
-      symbolNarrow: 'KM');
-  static const _bbd = Currency(_cld, 'BBD', 'Dola ya Babadosi',
-      one: 'dola ya Babadosi', other: 'dola za Babadosi', symbolNarrow: r'$');
-  static const _bdt = Currency(_cld, 'BDT', 'Taka ya Bangladeshi',
-      one: 'taka ya Bangladeshi',
-      other: 'taka za Bangladeshi',
-      symbolNarrow: '৳');
-  static const _bmd = Currency(_cld, 'BMD', 'Dola ya Bamuda',
-      one: 'dola ya Bamuda', other: 'dola za Bamuda', symbolNarrow: r'$');
-  static const _bob = Currency(_cld, 'BOB', 'Boliviano ya Bolivia',
-      one: 'boliviano ya Bolivia',
-      other: 'boliviano za Bolivia',
-      symbolNarrow: 'Bs');
-  static const _brl = Currency(_cld, 'BRL', 'Reale ya Brazili',
-      one: 'reale ya Brazili',
-      other: 'reale za Brazili',
-      symbol: r'R$',
-      symbolNarrow: r'R$');
-  static const _bsd = Currency(_cld, 'BSD', 'Dola ya Bahama',
-      one: 'dola ya Bahama', other: 'dola za Bahama', symbolNarrow: r'$');
-  static const _btn = Currency(_cld, 'BTN', 'Ngultrumi ya Bhutani',
-      one: 'ngultrumi ya Bhutani', other: 'ngultrumi za Bhutani');
-  static const _byn = Currency(_cld, 'BYN', 'Ruble ya Belarusi',
-      one: 'ruble ya Belarusi', other: 'ruble za Belarusi', symbolNarrow: 'р.');
-  static const _cad = Currency(_cld, 'CAD', 'Dola ya Kanada',
-      one: 'dola ya Kanada',
-      other: 'dola za Kanada',
-      symbol: r'CA$',
-      symbolNarrow: r'$');
-  static const _clp = Currency(_cld, 'CLP', 'Peso ya Chile',
-      one: 'peso ya Chile', other: 'peso za Chile', symbolNarrow: r'$');
-  static const _cnh = Currency(_cld, 'CNH', 'Yuan ya China (huru)',
-      one: 'yuan ya China (huru)', other: 'yuan ya China (huru)');
-  static const _cny = Currency(_cld, 'CNY', 'Yuan ya China',
-      one: 'yuan ya China',
-      other: 'yuan za China',
-      symbol: 'CN¥',
-      symbolNarrow: '¥');
-  static const _cve = Currency(_cld, 'CVE', 'Eskudo ya Kepuvede',
-      one: 'eskudo ya Kepuvede', other: 'eskudo za Kepuvede');
-  static const _czk = Currency(_cld, 'CZK', 'Koruna ya Cheki',
-      one: 'koruna ya Cheki', other: 'koruna za Cheki', symbolNarrow: 'Kč');
-  static const _dkk = Currency(_cld, 'DKK', 'Kroni ya Denmaki',
-      one: 'kroni ya Denmaki', other: 'kroni za Denmaki', symbolNarrow: 'kr');
-  static const _dzd = Currency(_cld, 'DZD', 'Dinari ya Aljeria',
-      one: 'dinari ya Aljeria', other: 'dinari za Aljeria');
-  static const _fkp = Currency(_cld, 'FKP', 'Pauni ya Visiwa vya Falkland',
-      one: 'pauni ya Visiwa vya Falkland',
-      other: 'pauni za Visiwa vya Falkland',
-      symbolNarrow: '£');
-  static const _gel = Currency(_cld, 'GEL', 'Lari ya Jiojia',
-      one: 'lari ya Jiojia', other: 'lari za Jiojia', symbolNarrow: '₾');
-  static const _ghs = Currency(_cld, 'GHS', 'Sidi ya Ghana',
-      one: 'sidi ya Ghana', other: 'sidi za Ghana', symbolNarrow: 'GH₵');
-  static const _gip = Currency(_cld, 'GIP', 'Pauni ya Jibrata',
-      one: 'pauni ya Jibrata', other: 'pauni za Jibrata', symbolNarrow: '£');
-  static const _hrk = Currency(_cld, 'HRK', 'Kuna ya Kroeshia',
-      one: 'kuna ya Kroeshia', other: 'kuna za Kroeshia', symbolNarrow: 'kn');
-  static const _htg = Currency(_cld, 'HTG', 'Godi ya Haiti',
-      one: 'godi ya Haiti', other: 'godi za Haiti');
-  static const _huf = Currency(_cld, 'HUF', 'Forinti ya Hungaria',
-      one: 'forinti ya Hungaria',
-      other: 'forinti za Hungaria',
-      symbolNarrow: 'Ft');
-  static const _idr = Currency(_cld, 'IDR', 'Rupia ya Indonesia',
-      one: 'rupia ya Indonesia',
-      other: 'rupia za Indonesia',
-      symbolNarrow: 'Rp');
-  static const _irr = Currency(_cld, 'IRR', 'Riali ya Irani',
-      one: 'riali ya Irani', other: 'riali za Irani');
-  static const _jod = Currency(_cld, 'JOD', 'Dinari ya Yordani',
-      one: 'dinari ya Yordani', other: 'dinari za Yordani');
-  static const _jpy = Currency(_cld, 'JPY', 'Yeni ya Japani',
-      one: 'yeni ya japani',
-      other: 'yeni za japani',
-      symbol: 'JP¥',
-      symbolNarrow: '¥');
-  static const _khr = Currency(_cld, 'KHR', 'Rieli ya Kambodia',
-      one: 'rieli ya Kambodia', other: 'rieli za Kambodia', symbolNarrow: '៛');
-  static const _kzt = Currency(_cld, 'KZT', 'Tenge ya Kazakistani',
-      one: 'tenge ya Kazakistani',
-      other: 'tenge za Kazakistani',
-      symbolNarrow: '₸');
-  static const _lbp = Currency(_cld, 'LBP', 'Pauni ya Lebanoni',
-      one: 'pauni ya Lebanoni', other: 'pauni za Lebanoni', symbolNarrow: 'L£');
-  static const _mad = Currency(_cld, 'MAD', 'Diramu ya Moroko',
-      one: 'diramu ya Moroko', other: 'diramu za Moroko');
-  static const _mga = Currency(_cld, 'MGA', 'Ariari ya Madagaska',
-      one: 'ariari ya Madagaska',
-      other: 'Ariari za Madagaska',
-      symbolNarrow: 'Ar');
-  static const _mkd = Currency(_cld, 'MKD', 'Dinari ya Masedonia',
-      one: 'dinari ya Masedonia', other: 'dinari za Masedonia');
-  static const _mmk = Currency(_cld, 'MMK', 'Kiati ya Myama',
-      one: 'kiati ya Myama', other: 'kiati za Myama', symbolNarrow: 'K');
-  static const _mop = Currency(_cld, 'MOP', 'Pataka ya Macau',
-      one: 'pataka ya Macau', other: 'pataka za Macau');
-  static const _mvr = Currency(_cld, 'MVR', 'Rufiyaa ya Maldivi',
-      one: 'rufiyaa ya Maldivi', other: 'rufiyaa za Maldivi');
-  static const _myr = Currency(_cld, 'MYR', 'Ringgiti ya Malesia',
-      one: 'ringgiti ya Malesia',
-      other: 'ringgiti za Malesia',
-      symbolNarrow: 'RM');
-  static const _ngn = Currency(_cld, 'NGN', 'Naira ya Naijeria',
-      one: 'naira ya Naijeria', other: 'Naira za Naijeria', symbolNarrow: '₦');
-  static const _nok = Currency(_cld, 'NOK', 'Kroni ya Norwe',
-      one: 'kroni ya Norwe', other: 'kroni za Norwe', symbolNarrow: 'kr');
-  static const _npr = Currency(_cld, 'NPR', 'Rupia ya Nepali',
-      one: 'rupia ya Nepali', other: 'rupia za Nepali', symbolNarrow: 'Rs');
-  static const _omr = Currency(_cld, 'OMR', 'Riali ya Omani',
-      one: 'riali ya Omani', other: 'riali za Omani');
-  static const _pab = Currency(_cld, 'PAB', 'Balboa ya Panama',
-      one: 'balboa za Panama', other: 'balboa za Panama');
-  static const _pkr = Currency(_cld, 'PKR', 'Rupia ya Pakistani',
-      one: 'rupia ya Pakistani',
-      other: 'rupia za Pakistani',
-      symbolNarrow: 'Rs');
-  static const _pln = Currency(_cld, 'PLN', 'Zloti ya Polandi',
-      one: 'zloti ya Polandi', other: 'zloti za Polandi', symbolNarrow: 'zł');
-  static const _qar = Currency(_cld, 'QAR', 'Riali ya Katari',
-      one: 'riali ya Katari', other: 'riali za Katari');
-  static const _rsd = Currency(_cld, 'RSD', 'Dinari ya Serbia',
-      one: 'dinari ya Serbia', other: 'dinari za Serbia');
-  static const _sar = Currency(_cld, 'SAR', 'Riyali ya Saudia',
-      one: 'riyali ya Saudia', other: 'riyali za Saudia');
-  static const _sbd = Currency(_cld, 'SBD', 'Dola ya Visiwa vya Solomoni',
-      one: 'dola ya Visiwa vya Solomoni',
-      other: 'dola za Visiwa vya Solomoni',
-      symbolNarrow: r'$');
-  static const _sdg = Currency(_cld, 'SDG', 'Pauni ya Sudani',
-      one: 'pauni ya Sudani', other: 'pauni za Sudani');
-  static const _sgd = Currency(_cld, 'SGD', 'Dola ya Singapoo',
-      one: 'dola ya Singapoo', other: 'dola za Singapoo', symbolNarrow: r'$');
-  static const _sle = Currency(_cld, 'SLE', 'Leoni ya Siera Leoni',
-      one: 'leoni ya Siera Leoni', other: 'leoni za Siera Leoni');
-  static const _sll = Currency(_cld, 'SLL', 'Leoni ya Siera Leoni (1964—2022)',
-      one: 'leoni ya Siera Leoni (1964—2022)',
-      other: 'leoni za Siera Leoni (1964—2022)');
-  static const _ssp = Currency(_cld, 'SSP', 'Pauni ya Sudani Kusini',
-      one: 'pauni ya Sudani Kusini',
-      other: 'pauni za Sudani Kusini',
-      symbolNarrow: '£');
-  static const _szl = Currency(_cld, 'SZL', 'Lilangeni ya Uswazi',
-      one: 'lilangeni ya Uswazi', other: 'lilangeni za Uswazi');
-  static const _thb = Currency(_cld, 'THB', 'Bahti ya Tailandi',
-      one: 'bahti ya Tailandi',
-      other: 'bahti za Tailandi',
-      symbol: '฿',
-      symbolNarrow: '฿');
-  static const _tjs = Currency(_cld, 'TJS', 'Somoni ya Tajikistani',
-      one: 'somoni ya Tajikistani', other: 'somoni za Tajikistani');
-  static const _tmt = Currency(_cld, 'TMT', 'Manati ya Turkmenistani',
-      one: 'manati ya Turkmenistani', other: 'manati za Turkmenistani');
-  static const _ttd = Currency(_cld, 'TTD', 'Dola ya Trinidadi na Tobago',
-      one: 'dola ya Trinidadi na Tobago',
-      other: 'dola za Trinidadi na Tobago',
-      symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'Dola ya Taiwani',
-      one: 'dola ya Taiwani',
-      other: 'dola za Taiwani',
-      symbol: r'NT$',
-      symbolNarrow: r'NT$');
-  static const _uah = Currency(_cld, 'UAH', 'Hryvnia ya Ukraini',
-      one: 'hryvnia ya Ukraini',
-      other: 'hryvnia za Ukraini',
-      symbolNarrow: '₴');
-  static const _usd = Currency(_cld, 'USD', 'Dola ya Marekani',
-      one: 'dola ya Marekani',
-      other: 'dola za Marekani',
-      symbol: r'$',
-      symbolNarrow: r'$');
-  static const _uzs = Currency(_cld, 'UZS', 'Som ya Uzbekistani',
-      one: 'som ya Uzbekistani', other: 'som za Uzbekistani');
-  static const _ves = Currency(_cld, 'VES', 'Boliva ya Venezuela',
-      one: 'boliva ya Venezuele', other: 'boliva za Venezuela');
-  static const _vnd = Currency(_cld, 'VND', 'Dong ya Vietnamu',
-      one: 'dong ya Vietnamu',
-      other: 'Dong za Vietnamu',
-      symbol: '₫',
-      symbolNarrow: '₫');
-  static const _xaf = Currency(_cld, 'XAF', 'Faranga ya CFA ya Afrika ya Kati',
-      one: 'faranga ya CFA ya Afrika ya Kati',
-      other: 'faranga ya CFA ya Afrika ya Kati',
-      symbol: 'FCFA');
+    _cld,
+    'BAM',
+    'Maki ya Bosnia na Hezegovina Inayoweza Kubadilishwa',
+    one: 'maki ya Bosnia na Hezegovina inayoweza kubadilishwa',
+    other: 'maki za Bosnia na Hezegovina zinazoweza kubadilishwa',
+    symbolNarrow: 'KM',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'Dola ya Babadosi',
+    one: 'dola ya Babadosi',
+    other: 'dola za Babadosi',
+    symbolNarrow: r'$',
+  );
+  static const _bdt = Currency(
+    _cld,
+    'BDT',
+    'Taka ya Bangladeshi',
+    one: 'taka ya Bangladeshi',
+    other: 'taka za Bangladeshi',
+    symbolNarrow: '৳',
+  );
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'Dola ya Bamuda',
+    one: 'dola ya Bamuda',
+    other: 'dola za Bamuda',
+    symbolNarrow: r'$',
+  );
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'Boliviano ya Bolivia',
+    one: 'boliviano ya Bolivia',
+    other: 'boliviano za Bolivia',
+    symbolNarrow: 'Bs',
+  );
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'Reale ya Brazili',
+    one: 'reale ya Brazili',
+    other: 'reale za Brazili',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'Dola ya Bahama',
+    one: 'dola ya Bahama',
+    other: 'dola za Bahama',
+    symbolNarrow: r'$',
+  );
+  static const _btn = Currency(
+    _cld,
+    'BTN',
+    'Ngultrumi ya Bhutani',
+    one: 'ngultrumi ya Bhutani',
+    other: 'ngultrumi za Bhutani',
+  );
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'Ruble ya Belarusi',
+    one: 'ruble ya Belarusi',
+    other: 'ruble za Belarusi',
+    symbolNarrow: 'р.',
+  );
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'Dola ya Kanada',
+    one: 'dola ya Kanada',
+    other: 'dola za Kanada',
+    symbol: r'CA$',
+    symbolNarrow: r'$',
+  );
+  static const _clp = Currency(
+    _cld,
+    'CLP',
+    'Peso ya Chile',
+    one: 'peso ya Chile',
+    other: 'peso za Chile',
+    symbolNarrow: r'$',
+  );
+  static const _cnh = Currency(
+    _cld,
+    'CNH',
+    'Yuan ya China (huru)',
+    one: 'yuan ya China (huru)',
+    other: 'yuan ya China (huru)',
+  );
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'Yuan ya China',
+    one: 'yuan ya China',
+    other: 'yuan za China',
+    symbol: 'CN¥',
+    symbolNarrow: '¥',
+  );
+  static const _cve = Currency(
+    _cld,
+    'CVE',
+    'Eskudo ya Kepuvede',
+    one: 'eskudo ya Kepuvede',
+    other: 'eskudo za Kepuvede',
+  );
+  static const _czk = Currency(
+    _cld,
+    'CZK',
+    'Koruna ya Cheki',
+    one: 'koruna ya Cheki',
+    other: 'koruna za Cheki',
+    symbolNarrow: 'Kč',
+  );
+  static const _dkk = Currency(
+    _cld,
+    'DKK',
+    'Kroni ya Denmaki',
+    one: 'kroni ya Denmaki',
+    other: 'kroni za Denmaki',
+    symbolNarrow: 'kr',
+  );
+  static const _dzd = Currency(
+    _cld,
+    'DZD',
+    'Dinari ya Aljeria',
+    one: 'dinari ya Aljeria',
+    other: 'dinari za Aljeria',
+  );
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'Pauni ya Visiwa vya Falkland',
+    one: 'pauni ya Visiwa vya Falkland',
+    other: 'pauni za Visiwa vya Falkland',
+    symbolNarrow: '£',
+  );
+  static const _gel = Currency(
+    _cld,
+    'GEL',
+    'Lari ya Jiojia',
+    one: 'lari ya Jiojia',
+    other: 'lari za Jiojia',
+    symbolNarrow: '₾',
+  );
+  static const _ghs = Currency(
+    _cld,
+    'GHS',
+    'Sidi ya Ghana',
+    one: 'sidi ya Ghana',
+    other: 'sidi za Ghana',
+    symbolNarrow: 'GH₵',
+  );
+  static const _gip = Currency(
+    _cld,
+    'GIP',
+    'Pauni ya Jibrata',
+    one: 'pauni ya Jibrata',
+    other: 'pauni za Jibrata',
+    symbolNarrow: '£',
+  );
+  static const _hrk = Currency(
+    _cld,
+    'HRK',
+    'Kuna ya Kroeshia',
+    one: 'kuna ya Kroeshia',
+    other: 'kuna za Kroeshia',
+    symbolNarrow: 'kn',
+  );
+  static const _htg = Currency(
+    _cld,
+    'HTG',
+    'Godi ya Haiti',
+    one: 'godi ya Haiti',
+    other: 'godi za Haiti',
+  );
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'Forinti ya Hungaria',
+    one: 'forinti ya Hungaria',
+    other: 'forinti za Hungaria',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'Rupia ya Indonesia',
+    one: 'rupia ya Indonesia',
+    other: 'rupia za Indonesia',
+    symbolNarrow: 'Rp',
+  );
+  static const _irr = Currency(
+    _cld,
+    'IRR',
+    'Riali ya Irani',
+    one: 'riali ya Irani',
+    other: 'riali za Irani',
+  );
+  static const _jod = Currency(
+    _cld,
+    'JOD',
+    'Dinari ya Yordani',
+    one: 'dinari ya Yordani',
+    other: 'dinari za Yordani',
+  );
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'Yeni ya Japani',
+    one: 'yeni ya japani',
+    other: 'yeni za japani',
+    symbol: 'JP¥',
+    symbolNarrow: '¥',
+  );
+  static const _khr = Currency(
+    _cld,
+    'KHR',
+    'Rieli ya Kambodia',
+    one: 'rieli ya Kambodia',
+    other: 'rieli za Kambodia',
+    symbolNarrow: '៛',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'Tenge ya Kazakistani',
+    one: 'tenge ya Kazakistani',
+    other: 'tenge za Kazakistani',
+    symbolNarrow: '₸',
+  );
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'Pauni ya Lebanoni',
+    one: 'pauni ya Lebanoni',
+    other: 'pauni za Lebanoni',
+    symbolNarrow: 'L£',
+  );
+  static const _mad = Currency(
+    _cld,
+    'MAD',
+    'Diramu ya Moroko',
+    one: 'diramu ya Moroko',
+    other: 'diramu za Moroko',
+  );
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'Ariari ya Madagaska',
+    one: 'ariari ya Madagaska',
+    other: 'Ariari za Madagaska',
+    symbolNarrow: 'Ar',
+  );
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'Dinari ya Masedonia',
+    one: 'dinari ya Masedonia',
+    other: 'dinari za Masedonia',
+  );
+  static const _mmk = Currency(
+    _cld,
+    'MMK',
+    'Kiati ya Myama',
+    one: 'kiati ya Myama',
+    other: 'kiati za Myama',
+    symbolNarrow: 'K',
+  );
+  static const _mop = Currency(
+    _cld,
+    'MOP',
+    'Pataka ya Macau',
+    one: 'pataka ya Macau',
+    other: 'pataka za Macau',
+  );
+  static const _mvr = Currency(
+    _cld,
+    'MVR',
+    'Rufiyaa ya Maldivi',
+    one: 'rufiyaa ya Maldivi',
+    other: 'rufiyaa za Maldivi',
+  );
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'Ringgiti ya Malesia',
+    one: 'ringgiti ya Malesia',
+    other: 'ringgiti za Malesia',
+    symbolNarrow: 'RM',
+  );
+  static const _ngn = Currency(
+    _cld,
+    'NGN',
+    'Naira ya Naijeria',
+    one: 'naira ya Naijeria',
+    other: 'Naira za Naijeria',
+    symbolNarrow: '₦',
+  );
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'Kroni ya Norwe',
+    one: 'kroni ya Norwe',
+    other: 'kroni za Norwe',
+    symbolNarrow: 'kr',
+  );
+  static const _npr = Currency(
+    _cld,
+    'NPR',
+    'Rupia ya Nepali',
+    one: 'rupia ya Nepali',
+    other: 'rupia za Nepali',
+    symbolNarrow: 'Rs',
+  );
+  static const _omr = Currency(
+    _cld,
+    'OMR',
+    'Riali ya Omani',
+    one: 'riali ya Omani',
+    other: 'riali za Omani',
+  );
+  static const _pab = Currency(
+    _cld,
+    'PAB',
+    'Balboa ya Panama',
+    one: 'balboa za Panama',
+    other: 'balboa za Panama',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'Rupia ya Pakistani',
+    one: 'rupia ya Pakistani',
+    other: 'rupia za Pakistani',
+    symbolNarrow: 'Rs',
+  );
+  static const _pln = Currency(
+    _cld,
+    'PLN',
+    'Zloti ya Polandi',
+    one: 'zloti ya Polandi',
+    other: 'zloti za Polandi',
+    symbolNarrow: 'zł',
+  );
+  static const _qar = Currency(
+    _cld,
+    'QAR',
+    'Riali ya Katari',
+    one: 'riali ya Katari',
+    other: 'riali za Katari',
+  );
+  static const _rsd = Currency(
+    _cld,
+    'RSD',
+    'Dinari ya Serbia',
+    one: 'dinari ya Serbia',
+    other: 'dinari za Serbia',
+  );
+  static const _sar = Currency(
+    _cld,
+    'SAR',
+    'Riyali ya Saudia',
+    one: 'riyali ya Saudia',
+    other: 'riyali za Saudia',
+  );
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'Dola ya Visiwa vya Solomoni',
+    one: 'dola ya Visiwa vya Solomoni',
+    other: 'dola za Visiwa vya Solomoni',
+    symbolNarrow: r'$',
+  );
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'Pauni ya Sudani',
+    one: 'pauni ya Sudani',
+    other: 'pauni za Sudani',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'Dola ya Singapoo',
+    one: 'dola ya Singapoo',
+    other: 'dola za Singapoo',
+    symbolNarrow: r'$',
+  );
+  static const _sle = Currency(
+    _cld,
+    'SLE',
+    'Leoni ya Siera Leoni',
+    one: 'leoni ya Siera Leoni',
+    other: 'leoni za Siera Leoni',
+  );
+  static const _sll = Currency(
+    _cld,
+    'SLL',
+    'Leoni ya Siera Leoni (1964—2022)',
+    one: 'leoni ya Siera Leoni (1964—2022)',
+    other: 'leoni za Siera Leoni (1964—2022)',
+  );
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'Pauni ya Sudani Kusini',
+    one: 'pauni ya Sudani Kusini',
+    other: 'pauni za Sudani Kusini',
+    symbolNarrow: '£',
+  );
+  static const _szl = Currency(
+    _cld,
+    'SZL',
+    'Lilangeni ya Uswazi',
+    one: 'lilangeni ya Uswazi',
+    other: 'lilangeni za Uswazi',
+  );
+  static const _thb = Currency(
+    _cld,
+    'THB',
+    'Bahti ya Tailandi',
+    one: 'bahti ya Tailandi',
+    other: 'bahti za Tailandi',
+    symbol: '฿',
+    symbolNarrow: '฿',
+  );
+  static const _tjs = Currency(
+    _cld,
+    'TJS',
+    'Somoni ya Tajikistani',
+    one: 'somoni ya Tajikistani',
+    other: 'somoni za Tajikistani',
+  );
+  static const _tmt = Currency(
+    _cld,
+    'TMT',
+    'Manati ya Turkmenistani',
+    one: 'manati ya Turkmenistani',
+    other: 'manati za Turkmenistani',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'Dola ya Trinidadi na Tobago',
+    one: 'dola ya Trinidadi na Tobago',
+    other: 'dola za Trinidadi na Tobago',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'Dola ya Taiwani',
+    one: 'dola ya Taiwani',
+    other: 'dola za Taiwani',
+    symbol: r'NT$',
+    symbolNarrow: r'NT$',
+  );
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'Hryvnia ya Ukraini',
+    one: 'hryvnia ya Ukraini',
+    other: 'hryvnia za Ukraini',
+    symbolNarrow: '₴',
+  );
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'Dola ya Marekani',
+    one: 'dola ya Marekani',
+    other: 'dola za Marekani',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
+  static const _uzs = Currency(
+    _cld,
+    'UZS',
+    'Som ya Uzbekistani',
+    one: 'som ya Uzbekistani',
+    other: 'som za Uzbekistani',
+  );
+  static const _ves = Currency(
+    _cld,
+    'VES',
+    'Boliva ya Venezuela',
+    one: 'boliva ya Venezuele',
+    other: 'boliva za Venezuela',
+  );
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'Dong ya Vietnamu',
+    one: 'dong ya Vietnamu',
+    other: 'Dong za Vietnamu',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'Faranga ya CFA ya Afrika ya Kati',
+    one: 'faranga ya CFA ya Afrika ya Kati',
+    other: 'faranga ya CFA ya Afrika ya Kati',
+    symbol: 'FCFA',
+  );
   static const _xof = Currency(
-      _cld, 'XOF', 'Faranga ya CFA ya Afrika Magharibi',
-      one: 'faranga ya CFA ya Afrika Magharibi',
-      other: 'faranga za CFA ya Afrika Magharibi',
-      symbol: 'F CFA');
-  static const _xxx = Currency(_cld, 'XXX', 'Sarafu Isiyojulikana',
-      one: '(sarafu isiyojulikana)',
-      other: '(sarafu isiyojulikana)',
-      symbol: '¤');
-  static const _yer = Currency(_cld, 'YER', 'Riali ya Yemeni',
-      one: 'riali ya Yemeni', other: 'riali za Yemeni');
+    _cld,
+    'XOF',
+    'Faranga ya CFA ya Afrika Magharibi',
+    one: 'faranga ya CFA ya Afrika Magharibi',
+    other: 'faranga za CFA ya Afrika Magharibi',
+    symbol: 'F CFA',
+  );
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    'Sarafu Isiyojulikana',
+    one: '(sarafu isiyojulikana)',
+    other: '(sarafu isiyojulikana)',
+    symbol: '¤',
+  );
+  static const _yer = Currency(
+    _cld,
+    'YER',
+    'Riali ya Yemeni',
+    one: 'riali ya Yemeni',
+    other: 'riali za Yemeni',
+  );
 
   @override
   Currency get unknownCurrency => _xxx;
@@ -1929,84 +2233,84 @@ class CurrenciesSwKE extends CurrenciesSw {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesSw.staticCurrencies,
-        ...const {
-          'AED': _aed,
-          'AFN': _afn,
-          'ANG': _ang,
-          'AWG': _awg,
-          'AZN': _azn,
-          'BAM': _bam,
-          'BBD': _bbd,
-          'BDT': _bdt,
-          'BMD': _bmd,
-          'BOB': _bob,
-          'BRL': _brl,
-          'BSD': _bsd,
-          'BTN': _btn,
-          'BYN': _byn,
-          'CAD': _cad,
-          'CLP': _clp,
-          'CNH': _cnh,
-          'CNY': _cny,
-          'CVE': _cve,
-          'CZK': _czk,
-          'DKK': _dkk,
-          'DZD': _dzd,
-          'FKP': _fkp,
-          'GEL': _gel,
-          'GHS': _ghs,
-          'GIP': _gip,
-          'HRK': _hrk,
-          'HTG': _htg,
-          'HUF': _huf,
-          'IDR': _idr,
-          'IRR': _irr,
-          'JOD': _jod,
-          'JPY': _jpy,
-          'KHR': _khr,
-          'KZT': _kzt,
-          'LBP': _lbp,
-          'MAD': _mad,
-          'MGA': _mga,
-          'MKD': _mkd,
-          'MMK': _mmk,
-          'MOP': _mop,
-          'MVR': _mvr,
-          'MYR': _myr,
-          'NGN': _ngn,
-          'NOK': _nok,
-          'NPR': _npr,
-          'OMR': _omr,
-          'PAB': _pab,
-          'PKR': _pkr,
-          'PLN': _pln,
-          'QAR': _qar,
-          'RSD': _rsd,
-          'SAR': _sar,
-          'SBD': _sbd,
-          'SDG': _sdg,
-          'SGD': _sgd,
-          'SLE': _sle,
-          'SLL': _sll,
-          'SSP': _ssp,
-          'SZL': _szl,
-          'THB': _thb,
-          'TJS': _tjs,
-          'TMT': _tmt,
-          'TTD': _ttd,
-          'TWD': _twd,
-          'UAH': _uah,
-          'USD': _usd,
-          'UZS': _uzs,
-          'VES': _ves,
-          'VND': _vnd,
-          'XAF': _xaf,
-          'XOF': _xof,
-          'XXX': _xxx,
-          'YER': _yer,
-        }
-      });
+    ...CurrenciesSw.staticCurrencies,
+    ...const {
+      'AED': _aed,
+      'AFN': _afn,
+      'ANG': _ang,
+      'AWG': _awg,
+      'AZN': _azn,
+      'BAM': _bam,
+      'BBD': _bbd,
+      'BDT': _bdt,
+      'BMD': _bmd,
+      'BOB': _bob,
+      'BRL': _brl,
+      'BSD': _bsd,
+      'BTN': _btn,
+      'BYN': _byn,
+      'CAD': _cad,
+      'CLP': _clp,
+      'CNH': _cnh,
+      'CNY': _cny,
+      'CVE': _cve,
+      'CZK': _czk,
+      'DKK': _dkk,
+      'DZD': _dzd,
+      'FKP': _fkp,
+      'GEL': _gel,
+      'GHS': _ghs,
+      'GIP': _gip,
+      'HRK': _hrk,
+      'HTG': _htg,
+      'HUF': _huf,
+      'IDR': _idr,
+      'IRR': _irr,
+      'JOD': _jod,
+      'JPY': _jpy,
+      'KHR': _khr,
+      'KZT': _kzt,
+      'LBP': _lbp,
+      'MAD': _mad,
+      'MGA': _mga,
+      'MKD': _mkd,
+      'MMK': _mmk,
+      'MOP': _mop,
+      'MVR': _mvr,
+      'MYR': _myr,
+      'NGN': _ngn,
+      'NOK': _nok,
+      'NPR': _npr,
+      'OMR': _omr,
+      'PAB': _pab,
+      'PKR': _pkr,
+      'PLN': _pln,
+      'QAR': _qar,
+      'RSD': _rsd,
+      'SAR': _sar,
+      'SBD': _sbd,
+      'SDG': _sdg,
+      'SGD': _sgd,
+      'SLE': _sle,
+      'SLL': _sll,
+      'SSP': _ssp,
+      'SZL': _szl,
+      'THB': _thb,
+      'TJS': _tjs,
+      'TMT': _tmt,
+      'TTD': _ttd,
+      'TWD': _twd,
+      'UAH': _uah,
+      'USD': _usd,
+      'UZS': _uzs,
+      'VES': _ves,
+      'VND': _vnd,
+      'XAF': _xaf,
+      'XOF': _xof,
+      'XXX': _xxx,
+      'YER': _yer,
+    },
+  });
 }
 
 class TimeZonesSwKE extends TimeZonesSw {
@@ -2014,325 +2318,506 @@ class TimeZonesSwKE extends TimeZonesSw {
 
   @override
   Map<String, TimeZoneNames> get timeZoneNames => Map.unmodifiable({
-        ...TimeZonesSw.staticTimeZoneNames,
-        ...const {
-          'America/Barbados': TimeZoneNames(exemplarCity: 'Babados'),
-          'America/Costa_Rica': TimeZoneNames(exemplarCity: 'Kostarika'),
-          'America/Curacao': TimeZoneNames(exemplarCity: 'kurakao'),
-          'America/Dominica': TimeZoneNames(exemplarCity: 'Dominika'),
-          'America/El_Salvador': TimeZoneNames(exemplarCity: 'Elsalvado'),
-          'America/Guadeloupe': TimeZoneNames(exemplarCity: 'Guadalupe'),
-          'America/Jamaica': TimeZoneNames(exemplarCity: 'Jamaika'),
-          'America/North_Dakota/Beulah':
-              TimeZoneNames(exemplarCity: 'Beulah, Dakota Kaskazini'),
-          'America/North_Dakota/New_Salem':
-              TimeZoneNames(exemplarCity: 'New Salem, Dakota Kaskazini'),
-          'America/North_Dakota/Center':
-              TimeZoneNames(exemplarCity: 'Center, Dakota Kaskazini'),
-          'America/Port_of_Spain':
-              TimeZoneNames(exemplarCity: 'Bandari ya Uhispania'),
-          'America/Puerto_Rico': TimeZoneNames(exemplarCity: 'Pwetoriko'),
-          'Atlantic/Canary': TimeZoneNames(exemplarCity: 'Kanari'),
-          'Asia/Colombo': TimeZoneNames(exemplarCity: 'Kolombo'),
-          'Asia/Macau': TimeZoneNames(exemplarCity: 'Makao'),
-          'Asia/Rangoon': TimeZoneNames(exemplarCity: 'Yangon'),
-          'Asia/Saigon': TimeZoneNames(exemplarCity: 'Jiji la Ho Chi Minh'),
-          'Asia/Singapore': TimeZoneNames(exemplarCity: 'Singapoo'),
-          'Indian/Christmas': TimeZoneNames(exemplarCity: 'Krismasi'),
-          'Indian/Maldives': TimeZoneNames(exemplarCity: 'Maldivi'),
-          'Etc/UTC': TimeZoneNames(
-              long: TimeZoneName(standard: 'Saa ya Dunia'),
-              short: TimeZoneName(standard: 'UTC')),
-        }
-      });
+    ...TimeZonesSw.staticTimeZoneNames,
+    ...const {
+      'America/Barbados': TimeZoneNames(exemplarCity: 'Babados'),
+      'America/Costa_Rica': TimeZoneNames(exemplarCity: 'Kostarika'),
+      'America/Curacao': TimeZoneNames(exemplarCity: 'kurakao'),
+      'America/Dominica': TimeZoneNames(exemplarCity: 'Dominika'),
+      'America/El_Salvador': TimeZoneNames(exemplarCity: 'Elsalvado'),
+      'America/Guadeloupe': TimeZoneNames(exemplarCity: 'Guadalupe'),
+      'America/Jamaica': TimeZoneNames(exemplarCity: 'Jamaika'),
+      'America/North_Dakota/Beulah': TimeZoneNames(
+        exemplarCity: 'Beulah, Dakota Kaskazini',
+      ),
+      'America/North_Dakota/New_Salem': TimeZoneNames(
+        exemplarCity: 'New Salem, Dakota Kaskazini',
+      ),
+      'America/North_Dakota/Center': TimeZoneNames(
+        exemplarCity: 'Center, Dakota Kaskazini',
+      ),
+      'America/Port_of_Spain': TimeZoneNames(
+        exemplarCity: 'Bandari ya Uhispania',
+      ),
+      'America/Puerto_Rico': TimeZoneNames(exemplarCity: 'Pwetoriko'),
+      'Atlantic/Canary': TimeZoneNames(exemplarCity: 'Kanari'),
+      'Asia/Colombo': TimeZoneNames(exemplarCity: 'Kolombo'),
+      'Asia/Macau': TimeZoneNames(exemplarCity: 'Makao'),
+      'Asia/Rangoon': TimeZoneNames(exemplarCity: 'Yangon'),
+      'Asia/Saigon': TimeZoneNames(exemplarCity: 'Jiji la Ho Chi Minh'),
+      'Asia/Singapore': TimeZoneNames(exemplarCity: 'Singapoo'),
+      'Indian/Christmas': TimeZoneNames(exemplarCity: 'Krismasi'),
+      'Indian/Maldives': TimeZoneNames(exemplarCity: 'Maldivi'),
+      'Etc/UTC': TimeZoneNames(
+        long: TimeZoneName(standard: 'Saa ya Dunia'),
+        short: TimeZoneName(standard: 'UTC'),
+      ),
+    },
+  });
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesSw.staticMetaZoneNames,
-        ...const {
-          'Afghanistan': MetaZone('Afghanistan',
-              long: TimeZoneName(standard: 'Saa za Afghanistani')),
-          'Africa_Western': MetaZone('Africa_Western',
-              long: TimeZoneName(
-                  generic: 'Saa za Afrika Magharibi',
-                  standard: 'Saa za Wastani za Afrika Magharibi',
-                  daylight: 'Saa za Majira ya Joto za Afrika Magharibi')),
-          'Amazon': MetaZone('Amazon',
-              long: TimeZoneName(
-                  generic: 'Saa za Amazon',
-                  standard: 'Saa za Wastani za Amazon',
-                  daylight: 'Saa za Majira ya Joto za Amazon')),
-          'Argentina': MetaZone('Argentina',
-              long: TimeZoneName(
-                  generic: 'Saa za Ajentina',
-                  standard: 'Saa za Wastani za Ajentina',
-                  daylight: 'Saa za Majira Joto za Ajentina')),
-          'Argentina_Western': MetaZone('Argentina_Western',
-              long: TimeZoneName(
-                  generic: 'Saa za Magharibi mwa Ajentina',
-                  standard: 'Saa za Wastani za Magharibi mwa Ajentina',
-                  daylight: 'Saa za Majira ya Joto za Magharibi mwa Ajentina')),
-          'Armenia': MetaZone('Armenia',
-              long: TimeZoneName(
-                  generic: 'Saa za Armenia',
-                  standard: 'Saa za Wastani za Armenia',
-                  daylight: 'Saa za Majira ya Joto za Armenia')),
-          'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-              long: TimeZoneName(
-                  generic: 'Saa za Magharibi mwa Austrialia ya Kati',
-                  standard: 'Saa za Wastani za Magharibi mwa Australia ya Kati',
-                  daylight:
-                      'Saa za Mchana za Magharibi mwa Australia ya Kati')),
-          'Azerbaijan': MetaZone('Azerbaijan',
-              long: TimeZoneName(
-                  generic: 'Saa za Azabajani',
-                  standard: 'Saa za Wastani za Azabajani',
-                  daylight: 'Saa za Majira ya Joto za Azabajani')),
-          'Azores': MetaZone('Azores',
-              long: TimeZoneName(
-                  generic: 'Saa za Azores',
-                  standard: 'Saa za Wastani za Azores',
-                  daylight: 'Saa za Majira ya Joto za Azores')),
-          'Bangladesh': MetaZone('Bangladesh',
-              long: TimeZoneName(
-                  generic: 'Saa za Bangladeshi',
-                  standard: 'Saa za Wastani za Bangladeshi',
-                  daylight: 'Saa za Majira ya Joto za Bangladeshi')),
-          'Bhutan':
-              MetaZone('Bhutan', long: TimeZoneName(standard: 'Saa za Butani')),
-          'Brasilia': MetaZone('Brasilia',
-              long: TimeZoneName(
-                  generic: 'Saa za Brazili',
-                  standard: 'Saa za Wastani za Brazili',
-                  daylight: 'Saa za Majira ya Joto za Brazili')),
-          'Cape_Verde': MetaZone('Cape_Verde',
-              long: TimeZoneName(
-                  generic: 'Saa za Kepuvede',
-                  standard: 'Saa za Wastani za Kepuvede',
-                  daylight: 'Saa za Majira ya Joto za Kepuvede')),
-          'Colombia': MetaZone('Colombia',
-              long: TimeZoneName(
-                  generic: 'Saa za Kolombia',
-                  standard: 'Saa za Wastani za Kolombia',
-                  daylight: 'Saa za Majira ya Joto za Kolombia')),
-          'Cook': MetaZone('Cook',
-              long: TimeZoneName(
-                  generic: 'Saa za Visiwa vya Cook',
-                  standard: 'Saa za Wastani za Visiwa vya Cook',
-                  daylight: 'Saa za Majira Nusu ya Joto za Visiwa vya Cook')),
-          'Cuba': MetaZone('Cuba',
-              long: TimeZoneName(
-                  generic: 'Saa za Kuba',
-                  standard: 'Saa za Wastani za Kuba',
-                  daylight: 'Saa za Mchana za Kuba')),
-          'Easter': MetaZone('Easter',
-              long: TimeZoneName(
-                  generic: 'Saa za Kisiwa cha Easter',
-                  standard: 'Saa za Wastani za Kisiwa cha Easter',
-                  daylight: 'Saa za Majira ya Joto za Kisiwa cha Easter')),
-          'Europe_Central': MetaZone('Europe_Central',
-              long: TimeZoneName(
-                  generic: 'Saa za Ulaya ya Kati',
-                  standard: 'Saa za Wastani za Ulaya ya Kati',
-                  daylight: 'Saa za Majira ya Joto za Ulaya ya Kati')),
-          'Europe_Eastern': MetaZone('Europe_Eastern',
-              long: TimeZoneName(
-                  generic: 'Saa za Mashariki mwa Ulaya',
-                  standard: 'Saa za Wastani za Mashariki mwa Ulaya',
-                  daylight: 'Saa za Majira ya Joto za Mashariki mwa Ulaya')),
-          'Europe_Western': MetaZone('Europe_Western',
-              long: TimeZoneName(
-                  generic: 'Saa za Magharibi mwa Ulaya',
-                  standard: 'Saa za Wastani za Magharibi mwa Ulaya',
-                  daylight: 'Saa za Majira ya Joto za Magharibi mwa Ulaya')),
-          'French_Guiana': MetaZone('French_Guiana',
-              long: TimeZoneName(standard: 'Saa za Guiana')),
-          'Georgia': MetaZone('Georgia',
-              long: TimeZoneName(
-                  generic: 'Saa za Jiojia',
-                  standard: 'Saa za Wastani za Jiojia',
-                  daylight: 'Saa za Majira ya Joto za Jiojia')),
-          'Greenland_Eastern': MetaZone('Greenland_Eastern',
-              long: TimeZoneName(
-                  generic: 'Saa za Greenland Mashariki',
-                  standard: 'Saa za Wastani za Greenland Mashariki',
-                  daylight: 'Saa za Majira ya Joto za Greenland Mashariki')),
-          'Gulf': MetaZone('Gulf',
-              long: TimeZoneName(standard: 'Saa za Wastani za Ghuba')),
-          'Hong_Kong': MetaZone('Hong_Kong',
-              long: TimeZoneName(
-                  generic: 'Saa za Hong Kong',
-                  standard: 'Saa za Wastani za Hong Kong',
-                  daylight: 'Saa za Majira ya Joto za Hong Kong')),
-          'Hovd': MetaZone('Hovd',
-              long: TimeZoneName(
-                  generic: 'Saa za Hovd',
-                  standard: 'Saa za Wastani za Hovd',
-                  daylight: 'Saa za Majira ya Joto za Hovd')),
-          'Iran': MetaZone('Iran',
-              long: TimeZoneName(
-                  generic: 'Saa za Irani',
-                  standard: 'Saa za Wastani za Irani',
-                  daylight: 'Saa za Mchana za Irani')),
-          'Irkutsk': MetaZone('Irkutsk',
-              long: TimeZoneName(
-                  generic: 'Saa za Irkutsk',
-                  standard: 'Saa za Wastani za Irkutsk',
-                  daylight: 'Saa za Majira ya Joto za Irkutsk')),
-          'Japan': MetaZone('Japan',
-              long: TimeZoneName(
-                  generic: 'Saa za Japani',
-                  standard: 'Saa za Wastani za Japani',
-                  daylight: 'Saa za Mchana za Japani')),
-          'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-              long: TimeZoneName(standard: 'Saa za Kazakistani Mashariki')),
-          'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-              long: TimeZoneName(standard: 'Saa za Kazakistani Magharibi')),
-          'Krasnoyarsk': MetaZone('Krasnoyarsk',
-              long: TimeZoneName(
-                  generic: 'Saa za Krasnoyarsk',
-                  standard: 'Saa za Wastani za Krasnoyask',
-                  daylight: 'Saa za Majira ya Joto za Krasnoyarsk')),
-          'Magadan': MetaZone('Magadan',
-              long: TimeZoneName(
-                  generic: 'Saa za Magadan',
-                  standard: 'Saa za Wastani za Magadan',
-                  daylight: 'Saa za Majira ya Joto za Magadan')),
-          'Malaysia': MetaZone('Malaysia',
-              long: TimeZoneName(standard: 'Saa za Malesia')),
-          'Maldives': MetaZone('Maldives',
-              long: TimeZoneName(standard: 'Saa za Maldivi')),
-          'Mauritius': MetaZone('Mauritius',
-              long: TimeZoneName(
-                  generic: 'Saa za Morisi',
-                  standard: 'Saa za Wastani za Morisi',
-                  daylight: 'Saa za Majira ya Joto za Morisi')),
-          'Mongolia': MetaZone('Mongolia',
-              long: TimeZoneName(
-                  generic: 'Saa za Ulaanbataar',
-                  standard: 'Saa za Wastani za Ulaanbataar',
-                  daylight: 'Saa za Majira ya Joto za Ulaanbaatar')),
-          'Moscow': MetaZone('Moscow',
-              long: TimeZoneName(
-                  generic: 'Saa za Moscow',
-                  standard: 'Saa za Wastani za Moscow',
-                  daylight: 'Saa za Majira ya Joto za Moscow')),
-          'Myanmar': MetaZone('Myanmar',
-              long: TimeZoneName(standard: 'Saa za Myanma')),
-          'Nepal':
-              MetaZone('Nepal', long: TimeZoneName(standard: 'Saa za Nepali')),
-          'New_Caledonia': MetaZone('New_Caledonia',
-              long: TimeZoneName(
-                  generic: 'Saa za Kaledonia Mpya',
-                  standard: 'Saa za Wastani za Kaledonia Mpya',
-                  daylight: 'Saa za Majira ya Joto za Kaledonia Mpya')),
-          'New_Zealand': MetaZone('New_Zealand',
-              long: TimeZoneName(
-                  generic: 'Saa za Nyuzilandi',
-                  standard: 'Saa za Wastani za Nyuzilandi',
-                  daylight: 'Saa za Mchana za Nyuzilandi')),
-          'Norfolk': MetaZone('Norfolk',
-              long: TimeZoneName(
-                  generic: 'Saa za Kisiwa cha Norfolk',
-                  standard: 'Saa za Wastani za Kisiwa cha Norfolk',
-                  daylight: 'Saa za Majira ya Joto za Kisiwa cha Norfolk')),
-          'Novosibirsk': MetaZone('Novosibirsk',
-              long: TimeZoneName(
-                  generic: 'Saa za Novosibirsk',
-                  standard: 'Saa za Wastani za Novosibirsk',
-                  daylight: 'Saa za Majira ya Joto za Novosibirsk')),
-          'Omsk': MetaZone('Omsk',
-              long: TimeZoneName(
-                  generic: 'Saa za Omsk',
-                  standard: 'Saa za Wastani za Omsk',
-                  daylight: 'Saa za Majira ya Joto za Omsk')),
-          'Pakistan': MetaZone('Pakistan',
-              long: TimeZoneName(
-                  generic: 'Saa za Pakistani',
-                  standard: 'Saa za Wastani za Pakistani',
-                  daylight: 'Saa za Majira ya Joto za Pakistani')),
-          'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-              long: TimeZoneName(standard: 'Saa za Papua')),
-          'Paraguay': MetaZone('Paraguay',
-              long: TimeZoneName(
-                  generic: 'Saa za Paragwai',
-                  standard: 'Saa za Wastani za Paragwai',
-                  daylight: 'Saa za Majira ya Joto za Paragwai')),
-          'Peru': MetaZone('Peru',
-              long: TimeZoneName(
-                  generic: 'Saa za Peru',
-                  standard: 'Saa za Wastani za Peru',
-                  daylight: 'Saa za Majira ya Joto za Peru')),
-          'Philippines': MetaZone('Philippines',
-              long: TimeZoneName(
-                  generic: 'Saa za Ufilipino',
-                  standard: 'Saa za Wastani za Ufilipino',
-                  daylight: 'Saa za Majira ya Joto za Ufilipino')),
-          'Phoenix_Islands': MetaZone('Phoenix_Islands',
-              long: TimeZoneName(standard: 'Saa za Visiwa vya Finiksi')),
-          'Sakhalin': MetaZone('Sakhalin',
-              long: TimeZoneName(
-                  generic: 'Saa za Sakhalin',
-                  standard: 'Saa za Wastani za Sakhalin',
-                  daylight: 'Saa za Majira ya Joto za Sakhalin')),
-          'Samoa': MetaZone('Samoa',
-              long: TimeZoneName(
-                  generic: 'Saa za Samoa',
-                  standard: 'Saa za Wastani za Samoa',
-                  daylight: 'Saa za Mchana za Samoa')),
-          'Singapore': MetaZone('Singapore',
-              long: TimeZoneName(standard: 'Saa za Wastani za Singapoo')),
-          'South_Georgia': MetaZone('South_Georgia',
-              long: TimeZoneName(standard: 'Saa za Jojia Kusini')),
-          'Tajikistan': MetaZone('Tajikistan',
-              long: TimeZoneName(standard: 'Saaza Tajikistani')),
-          'Tonga': MetaZone('Tonga',
-              long: TimeZoneName(
-                  generic: 'Saa za Tonga',
-                  standard: 'Saa za Wastani za Tonga',
-                  daylight: 'Saa za Majira ya Joto za Tonga')),
-          'Turkmenistan': MetaZone('Turkmenistan',
-              long: TimeZoneName(
-                  generic: 'Saa za Turkmenistani',
-                  standard: 'Saa za Wastani za Turkmenistani',
-                  daylight: 'Saa za Majira ya Joto za Turkmenistani')),
-          'Uruguay': MetaZone('Uruguay',
-              long: TimeZoneName(
-                  generic: 'Saa za Urugwai',
-                  standard: 'Saa za Wastani za Urugwai',
-                  daylight: 'Saa za Majira ya Joto za Urugwai')),
-          'Uzbekistan': MetaZone('Uzbekistan',
-              long: TimeZoneName(
-                  generic: 'Saa za Uzbekistani',
-                  standard: 'Saa za wastani za Uzbekistani',
-                  daylight: 'Saa za Majira ya Joto za Uzbekistani')),
-          'Vanuatu': MetaZone('Vanuatu',
-              long: TimeZoneName(
-                  generic: 'Saa za Vanuatu',
-                  standard: 'Saa za Wastani za Vanuatu',
-                  daylight: 'Saa za Majira ya Joto za Vanuatu')),
-          'Vladivostok': MetaZone('Vladivostok',
-              long: TimeZoneName(
-                  generic: 'Saa za Vladivostok',
-                  standard: 'Saa za Wastani za Vladivostok',
-                  daylight: 'Saa za Majira ya Joto za Vladivostok')),
-          'Volgograd': MetaZone('Volgograd',
-              long: TimeZoneName(
-                  generic: 'Saa za Volgograd',
-                  standard: 'Saa za Wastani za Volgograd',
-                  daylight: 'Saa za Majira ya Joto za Volgograd')),
-          'Yakutsk': MetaZone('Yakutsk',
-              long: TimeZoneName(
-                  generic: 'Saa za Yakutsk',
-                  standard: 'Saa za Wastani za Yakutsk',
-                  daylight: 'Saa za Majira ya Joto za Yakutsk')),
-          'Yekaterinburg': MetaZone('Yekaterinburg',
-              long: TimeZoneName(
-                  generic: 'Saa za Yekaterinburg',
-                  standard: 'Saa za Wastani za Yekaterinburg',
-                  daylight: 'Saa za Majira ya Joto za Yekaterinburg')),
-        }
-      });
+    ...TimeZonesSw.staticMetaZoneNames,
+    ...const {
+      'Afghanistan': MetaZone(
+        'Afghanistan',
+        long: TimeZoneName(standard: 'Saa za Afghanistani'),
+      ),
+      'Africa_Western': MetaZone(
+        'Africa_Western',
+        long: TimeZoneName(
+          generic: 'Saa za Afrika Magharibi',
+          standard: 'Saa za Wastani za Afrika Magharibi',
+          daylight: 'Saa za Majira ya Joto za Afrika Magharibi',
+        ),
+      ),
+      'Amazon': MetaZone(
+        'Amazon',
+        long: TimeZoneName(
+          generic: 'Saa za Amazon',
+          standard: 'Saa za Wastani za Amazon',
+          daylight: 'Saa za Majira ya Joto za Amazon',
+        ),
+      ),
+      'Argentina': MetaZone(
+        'Argentina',
+        long: TimeZoneName(
+          generic: 'Saa za Ajentina',
+          standard: 'Saa za Wastani za Ajentina',
+          daylight: 'Saa za Majira Joto za Ajentina',
+        ),
+      ),
+      'Argentina_Western': MetaZone(
+        'Argentina_Western',
+        long: TimeZoneName(
+          generic: 'Saa za Magharibi mwa Ajentina',
+          standard: 'Saa za Wastani za Magharibi mwa Ajentina',
+          daylight: 'Saa za Majira ya Joto za Magharibi mwa Ajentina',
+        ),
+      ),
+      'Armenia': MetaZone(
+        'Armenia',
+        long: TimeZoneName(
+          generic: 'Saa za Armenia',
+          standard: 'Saa za Wastani za Armenia',
+          daylight: 'Saa za Majira ya Joto za Armenia',
+        ),
+      ),
+      'Australia_CentralWestern': MetaZone(
+        'Australia_CentralWestern',
+        long: TimeZoneName(
+          generic: 'Saa za Magharibi mwa Austrialia ya Kati',
+          standard: 'Saa za Wastani za Magharibi mwa Australia ya Kati',
+          daylight: 'Saa za Mchana za Magharibi mwa Australia ya Kati',
+        ),
+      ),
+      'Azerbaijan': MetaZone(
+        'Azerbaijan',
+        long: TimeZoneName(
+          generic: 'Saa za Azabajani',
+          standard: 'Saa za Wastani za Azabajani',
+          daylight: 'Saa za Majira ya Joto za Azabajani',
+        ),
+      ),
+      'Azores': MetaZone(
+        'Azores',
+        long: TimeZoneName(
+          generic: 'Saa za Azores',
+          standard: 'Saa za Wastani za Azores',
+          daylight: 'Saa za Majira ya Joto za Azores',
+        ),
+      ),
+      'Bangladesh': MetaZone(
+        'Bangladesh',
+        long: TimeZoneName(
+          generic: 'Saa za Bangladeshi',
+          standard: 'Saa za Wastani za Bangladeshi',
+          daylight: 'Saa za Majira ya Joto za Bangladeshi',
+        ),
+      ),
+      'Bhutan': MetaZone(
+        'Bhutan',
+        long: TimeZoneName(standard: 'Saa za Butani'),
+      ),
+      'Brasilia': MetaZone(
+        'Brasilia',
+        long: TimeZoneName(
+          generic: 'Saa za Brazili',
+          standard: 'Saa za Wastani za Brazili',
+          daylight: 'Saa za Majira ya Joto za Brazili',
+        ),
+      ),
+      'Cape_Verde': MetaZone(
+        'Cape_Verde',
+        long: TimeZoneName(
+          generic: 'Saa za Kepuvede',
+          standard: 'Saa za Wastani za Kepuvede',
+          daylight: 'Saa za Majira ya Joto za Kepuvede',
+        ),
+      ),
+      'Colombia': MetaZone(
+        'Colombia',
+        long: TimeZoneName(
+          generic: 'Saa za Kolombia',
+          standard: 'Saa za Wastani za Kolombia',
+          daylight: 'Saa za Majira ya Joto za Kolombia',
+        ),
+      ),
+      'Cook': MetaZone(
+        'Cook',
+        long: TimeZoneName(
+          generic: 'Saa za Visiwa vya Cook',
+          standard: 'Saa za Wastani za Visiwa vya Cook',
+          daylight: 'Saa za Majira Nusu ya Joto za Visiwa vya Cook',
+        ),
+      ),
+      'Cuba': MetaZone(
+        'Cuba',
+        long: TimeZoneName(
+          generic: 'Saa za Kuba',
+          standard: 'Saa za Wastani za Kuba',
+          daylight: 'Saa za Mchana za Kuba',
+        ),
+      ),
+      'Easter': MetaZone(
+        'Easter',
+        long: TimeZoneName(
+          generic: 'Saa za Kisiwa cha Easter',
+          standard: 'Saa za Wastani za Kisiwa cha Easter',
+          daylight: 'Saa za Majira ya Joto za Kisiwa cha Easter',
+        ),
+      ),
+      'Europe_Central': MetaZone(
+        'Europe_Central',
+        long: TimeZoneName(
+          generic: 'Saa za Ulaya ya Kati',
+          standard: 'Saa za Wastani za Ulaya ya Kati',
+          daylight: 'Saa za Majira ya Joto za Ulaya ya Kati',
+        ),
+      ),
+      'Europe_Eastern': MetaZone(
+        'Europe_Eastern',
+        long: TimeZoneName(
+          generic: 'Saa za Mashariki mwa Ulaya',
+          standard: 'Saa za Wastani za Mashariki mwa Ulaya',
+          daylight: 'Saa za Majira ya Joto za Mashariki mwa Ulaya',
+        ),
+      ),
+      'Europe_Western': MetaZone(
+        'Europe_Western',
+        long: TimeZoneName(
+          generic: 'Saa za Magharibi mwa Ulaya',
+          standard: 'Saa za Wastani za Magharibi mwa Ulaya',
+          daylight: 'Saa za Majira ya Joto za Magharibi mwa Ulaya',
+        ),
+      ),
+      'French_Guiana': MetaZone(
+        'French_Guiana',
+        long: TimeZoneName(standard: 'Saa za Guiana'),
+      ),
+      'Georgia': MetaZone(
+        'Georgia',
+        long: TimeZoneName(
+          generic: 'Saa za Jiojia',
+          standard: 'Saa za Wastani za Jiojia',
+          daylight: 'Saa za Majira ya Joto za Jiojia',
+        ),
+      ),
+      'Greenland_Eastern': MetaZone(
+        'Greenland_Eastern',
+        long: TimeZoneName(
+          generic: 'Saa za Greenland Mashariki',
+          standard: 'Saa za Wastani za Greenland Mashariki',
+          daylight: 'Saa za Majira ya Joto za Greenland Mashariki',
+        ),
+      ),
+      'Gulf': MetaZone(
+        'Gulf',
+        long: TimeZoneName(standard: 'Saa za Wastani za Ghuba'),
+      ),
+      'Hong_Kong': MetaZone(
+        'Hong_Kong',
+        long: TimeZoneName(
+          generic: 'Saa za Hong Kong',
+          standard: 'Saa za Wastani za Hong Kong',
+          daylight: 'Saa za Majira ya Joto za Hong Kong',
+        ),
+      ),
+      'Hovd': MetaZone(
+        'Hovd',
+        long: TimeZoneName(
+          generic: 'Saa za Hovd',
+          standard: 'Saa za Wastani za Hovd',
+          daylight: 'Saa za Majira ya Joto za Hovd',
+        ),
+      ),
+      'Iran': MetaZone(
+        'Iran',
+        long: TimeZoneName(
+          generic: 'Saa za Irani',
+          standard: 'Saa za Wastani za Irani',
+          daylight: 'Saa za Mchana za Irani',
+        ),
+      ),
+      'Irkutsk': MetaZone(
+        'Irkutsk',
+        long: TimeZoneName(
+          generic: 'Saa za Irkutsk',
+          standard: 'Saa za Wastani za Irkutsk',
+          daylight: 'Saa za Majira ya Joto za Irkutsk',
+        ),
+      ),
+      'Japan': MetaZone(
+        'Japan',
+        long: TimeZoneName(
+          generic: 'Saa za Japani',
+          standard: 'Saa za Wastani za Japani',
+          daylight: 'Saa za Mchana za Japani',
+        ),
+      ),
+      'Kazakhstan_Eastern': MetaZone(
+        'Kazakhstan_Eastern',
+        long: TimeZoneName(standard: 'Saa za Kazakistani Mashariki'),
+      ),
+      'Kazakhstan_Western': MetaZone(
+        'Kazakhstan_Western',
+        long: TimeZoneName(standard: 'Saa za Kazakistani Magharibi'),
+      ),
+      'Krasnoyarsk': MetaZone(
+        'Krasnoyarsk',
+        long: TimeZoneName(
+          generic: 'Saa za Krasnoyarsk',
+          standard: 'Saa za Wastani za Krasnoyask',
+          daylight: 'Saa za Majira ya Joto za Krasnoyarsk',
+        ),
+      ),
+      'Magadan': MetaZone(
+        'Magadan',
+        long: TimeZoneName(
+          generic: 'Saa za Magadan',
+          standard: 'Saa za Wastani za Magadan',
+          daylight: 'Saa za Majira ya Joto za Magadan',
+        ),
+      ),
+      'Malaysia': MetaZone(
+        'Malaysia',
+        long: TimeZoneName(standard: 'Saa za Malesia'),
+      ),
+      'Maldives': MetaZone(
+        'Maldives',
+        long: TimeZoneName(standard: 'Saa za Maldivi'),
+      ),
+      'Mauritius': MetaZone(
+        'Mauritius',
+        long: TimeZoneName(
+          generic: 'Saa za Morisi',
+          standard: 'Saa za Wastani za Morisi',
+          daylight: 'Saa za Majira ya Joto za Morisi',
+        ),
+      ),
+      'Mongolia': MetaZone(
+        'Mongolia',
+        long: TimeZoneName(
+          generic: 'Saa za Ulaanbataar',
+          standard: 'Saa za Wastani za Ulaanbataar',
+          daylight: 'Saa za Majira ya Joto za Ulaanbaatar',
+        ),
+      ),
+      'Moscow': MetaZone(
+        'Moscow',
+        long: TimeZoneName(
+          generic: 'Saa za Moscow',
+          standard: 'Saa za Wastani za Moscow',
+          daylight: 'Saa za Majira ya Joto za Moscow',
+        ),
+      ),
+      'Myanmar': MetaZone(
+        'Myanmar',
+        long: TimeZoneName(standard: 'Saa za Myanma'),
+      ),
+      'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'Saa za Nepali')),
+      'New_Caledonia': MetaZone(
+        'New_Caledonia',
+        long: TimeZoneName(
+          generic: 'Saa za Kaledonia Mpya',
+          standard: 'Saa za Wastani za Kaledonia Mpya',
+          daylight: 'Saa za Majira ya Joto za Kaledonia Mpya',
+        ),
+      ),
+      'New_Zealand': MetaZone(
+        'New_Zealand',
+        long: TimeZoneName(
+          generic: 'Saa za Nyuzilandi',
+          standard: 'Saa za Wastani za Nyuzilandi',
+          daylight: 'Saa za Mchana za Nyuzilandi',
+        ),
+      ),
+      'Norfolk': MetaZone(
+        'Norfolk',
+        long: TimeZoneName(
+          generic: 'Saa za Kisiwa cha Norfolk',
+          standard: 'Saa za Wastani za Kisiwa cha Norfolk',
+          daylight: 'Saa za Majira ya Joto za Kisiwa cha Norfolk',
+        ),
+      ),
+      'Novosibirsk': MetaZone(
+        'Novosibirsk',
+        long: TimeZoneName(
+          generic: 'Saa za Novosibirsk',
+          standard: 'Saa za Wastani za Novosibirsk',
+          daylight: 'Saa za Majira ya Joto za Novosibirsk',
+        ),
+      ),
+      'Omsk': MetaZone(
+        'Omsk',
+        long: TimeZoneName(
+          generic: 'Saa za Omsk',
+          standard: 'Saa za Wastani za Omsk',
+          daylight: 'Saa za Majira ya Joto za Omsk',
+        ),
+      ),
+      'Pakistan': MetaZone(
+        'Pakistan',
+        long: TimeZoneName(
+          generic: 'Saa za Pakistani',
+          standard: 'Saa za Wastani za Pakistani',
+          daylight: 'Saa za Majira ya Joto za Pakistani',
+        ),
+      ),
+      'Papua_New_Guinea': MetaZone(
+        'Papua_New_Guinea',
+        long: TimeZoneName(standard: 'Saa za Papua'),
+      ),
+      'Paraguay': MetaZone(
+        'Paraguay',
+        long: TimeZoneName(
+          generic: 'Saa za Paragwai',
+          standard: 'Saa za Wastani za Paragwai',
+          daylight: 'Saa za Majira ya Joto za Paragwai',
+        ),
+      ),
+      'Peru': MetaZone(
+        'Peru',
+        long: TimeZoneName(
+          generic: 'Saa za Peru',
+          standard: 'Saa za Wastani za Peru',
+          daylight: 'Saa za Majira ya Joto za Peru',
+        ),
+      ),
+      'Philippines': MetaZone(
+        'Philippines',
+        long: TimeZoneName(
+          generic: 'Saa za Ufilipino',
+          standard: 'Saa za Wastani za Ufilipino',
+          daylight: 'Saa za Majira ya Joto za Ufilipino',
+        ),
+      ),
+      'Phoenix_Islands': MetaZone(
+        'Phoenix_Islands',
+        long: TimeZoneName(standard: 'Saa za Visiwa vya Finiksi'),
+      ),
+      'Sakhalin': MetaZone(
+        'Sakhalin',
+        long: TimeZoneName(
+          generic: 'Saa za Sakhalin',
+          standard: 'Saa za Wastani za Sakhalin',
+          daylight: 'Saa za Majira ya Joto za Sakhalin',
+        ),
+      ),
+      'Samoa': MetaZone(
+        'Samoa',
+        long: TimeZoneName(
+          generic: 'Saa za Samoa',
+          standard: 'Saa za Wastani za Samoa',
+          daylight: 'Saa za Mchana za Samoa',
+        ),
+      ),
+      'Singapore': MetaZone(
+        'Singapore',
+        long: TimeZoneName(standard: 'Saa za Wastani za Singapoo'),
+      ),
+      'South_Georgia': MetaZone(
+        'South_Georgia',
+        long: TimeZoneName(standard: 'Saa za Jojia Kusini'),
+      ),
+      'Tajikistan': MetaZone(
+        'Tajikistan',
+        long: TimeZoneName(standard: 'Saaza Tajikistani'),
+      ),
+      'Tonga': MetaZone(
+        'Tonga',
+        long: TimeZoneName(
+          generic: 'Saa za Tonga',
+          standard: 'Saa za Wastani za Tonga',
+          daylight: 'Saa za Majira ya Joto za Tonga',
+        ),
+      ),
+      'Turkmenistan': MetaZone(
+        'Turkmenistan',
+        long: TimeZoneName(
+          generic: 'Saa za Turkmenistani',
+          standard: 'Saa za Wastani za Turkmenistani',
+          daylight: 'Saa za Majira ya Joto za Turkmenistani',
+        ),
+      ),
+      'Uruguay': MetaZone(
+        'Uruguay',
+        long: TimeZoneName(
+          generic: 'Saa za Urugwai',
+          standard: 'Saa za Wastani za Urugwai',
+          daylight: 'Saa za Majira ya Joto za Urugwai',
+        ),
+      ),
+      'Uzbekistan': MetaZone(
+        'Uzbekistan',
+        long: TimeZoneName(
+          generic: 'Saa za Uzbekistani',
+          standard: 'Saa za wastani za Uzbekistani',
+          daylight: 'Saa za Majira ya Joto za Uzbekistani',
+        ),
+      ),
+      'Vanuatu': MetaZone(
+        'Vanuatu',
+        long: TimeZoneName(
+          generic: 'Saa za Vanuatu',
+          standard: 'Saa za Wastani za Vanuatu',
+          daylight: 'Saa za Majira ya Joto za Vanuatu',
+        ),
+      ),
+      'Vladivostok': MetaZone(
+        'Vladivostok',
+        long: TimeZoneName(
+          generic: 'Saa za Vladivostok',
+          standard: 'Saa za Wastani za Vladivostok',
+          daylight: 'Saa za Majira ya Joto za Vladivostok',
+        ),
+      ),
+      'Volgograd': MetaZone(
+        'Volgograd',
+        long: TimeZoneName(
+          generic: 'Saa za Volgograd',
+          standard: 'Saa za Wastani za Volgograd',
+          daylight: 'Saa za Majira ya Joto za Volgograd',
+        ),
+      ),
+      'Yakutsk': MetaZone(
+        'Yakutsk',
+        long: TimeZoneName(
+          generic: 'Saa za Yakutsk',
+          standard: 'Saa za Wastani za Yakutsk',
+          daylight: 'Saa za Majira ya Joto za Yakutsk',
+        ),
+      ),
+      'Yekaterinburg': MetaZone(
+        'Yekaterinburg',
+        long: TimeZoneName(
+          generic: 'Saa za Yekaterinburg',
+          standard: 'Saa za Wastani za Yekaterinburg',
+          daylight: 'Saa za Majira ya Joto za Yekaterinburg',
+        ),
+      ),
+    },
+  });
 }
 
 class LocaleDisplayNameSwKE extends LocaleDisplayNameSw {
@@ -2340,81 +2825,81 @@ class LocaleDisplayNameSwKE extends LocaleDisplayNameSw {
 
   @override
   Map<String, String> get keyNames => Map.unmodifiable({
-        ...LocaleDisplayNameSw.staticKeyNames,
-        ...const {
-          'hc': 'Kipindi cha saa (12 dhidi ya 24)',
-          'va': 'Tofauti ya Lugha',
-        }
-      });
+    ...LocaleDisplayNameSw.staticKeyNames,
+    ...const {
+      'hc': 'Kipindi cha saa (12 dhidi ya 24)',
+      'va': 'Tofauti ya Lugha',
+    },
+  });
 
   @override
   Map<String, Map<String, String>> get valueNames => Map.unmodifiable({
-        ...LocaleDisplayNameSw.staticValueNames,
-        ...const {
-          'ca': {
-            'buddhist': 'Kalenda ya Kibuddha',
-            'chinese': 'Kalenda ya Kichina',
-            'coptic': 'Kalenda ya Koptiki',
-            'dangi': 'Kalenda ya Kidangi',
-            'ethiopic': 'Kalenda ya Kihabeshi',
-            'ethioaa': 'Kalenda ya Kiethiopia ya Amete Alem',
-            'gregory': 'Kalenda ya Kigregori',
-            'hebrew': 'Kalenda ya kihibrania',
-            'indian': 'Kalenda ya Taifa ya India',
-            'islamic': 'Kalenda ya Hijra',
-            'islamic-civil': 'Kalenda ya Hijra (inayoanza usiku wa manane)',
-            'islamic-umalqura': 'Kalenda ya Hijra (Umm ul-Qura)',
-            'iso8601': 'Kalenda ya ISO-8601',
-            'japanese': 'Kalenda ya Kijapani',
-            'persian': 'Kalenda ya Kiajemi',
-            'roc': 'Kalenda ya Jamhuri ya Uchina',
-          },
-          'nu': {
-            'arab': 'Nambari za Kiarabu/Kihindi',
-            'arabext': 'Nambari za Kiarabu/Kihindi Zilizopanuliwa',
-            'armn': 'Nambari za Kiarmenia',
-            'armnlow': 'Nambari Ndogo za Kiarmenia',
-            'beng': 'Nambari za Kibengali',
-            'cakm': 'Nambari za Kichakma',
-            'deva': 'Nambari za Kidevanagari',
-            'ethi': 'Nambari za Kihabeshi',
-            'finance': 'Tarakimu za Kifedha',
-            'fullwide': 'Nambari za Upana Kamili',
-            'geor': 'Nambari za Kijiojia',
-            'grek': 'Nambari za Kigiriki',
-            'greklow': 'Nambari Ndogo za Kigiriki',
-            'gujr': 'Nambari za Kigujarati',
-            'guru': 'Nambari za Kigurmukhi',
-            'hanidec': 'Nambari za Desimali za Kichina',
-            'hans': 'Nambari za Kichina Rahisi',
-            'hansfin': 'Nambari za Kifedha za Kichina Rahisi',
-            'hant': 'Nambari za Kichina cha Jadi',
-            'hantfin': 'Nambari za Kifedha za Kichina cha Jadi',
-            'hebr': 'Nambari za Kihibrania',
-            'java': 'Nambari za Kijava',
-            'jpan': 'Nambari za Kijapani',
-            'jpanfin': 'Nambari za Kifedha za Kijapani',
-            'khmr': 'Nambari za Kikambodia',
-            'knda': 'Nambari za Kikannada',
-            'laoo': 'Nambari za Kilao',
-            'latn': 'Nambari za Nchi za Magharibi',
-            'mlym': 'Nambari za Kimalayalam',
-            'mong': 'Nambari za Kimongolia',
-            'mtei': 'Nambari za Meetei Mayek',
-            'mymr': 'Nambari za Kimyama',
-            'native': 'Nambari Asili',
-            'olck': 'Nambari za Kiol Chiki',
-            'orya': 'Nambari za Kioriya',
-            'roman': 'Nambari za Kirumi',
-            'romanlow': 'Nambari Ndogo za Kirumi',
-            'taml': 'Nambari za Kitamil cha Jadi',
-            'tamldec': 'Nambari za Kitamili',
-            'telu': 'Nambari za Kitelugu',
-            'thai': 'Nambari za Kithai',
-            'tibt': 'Nambari za Kitibeti',
-            'traditio': 'Tarakimu za Jadi',
-            'vaii': 'Nambari za Kivai',
-          },
-        }
-      });
+    ...LocaleDisplayNameSw.staticValueNames,
+    ...const {
+      'ca': {
+        'buddhist': 'Kalenda ya Kibuddha',
+        'chinese': 'Kalenda ya Kichina',
+        'coptic': 'Kalenda ya Koptiki',
+        'dangi': 'Kalenda ya Kidangi',
+        'ethiopic': 'Kalenda ya Kihabeshi',
+        'ethioaa': 'Kalenda ya Kiethiopia ya Amete Alem',
+        'gregory': 'Kalenda ya Kigregori',
+        'hebrew': 'Kalenda ya kihibrania',
+        'indian': 'Kalenda ya Taifa ya India',
+        'islamic': 'Kalenda ya Hijra',
+        'islamic-civil': 'Kalenda ya Hijra (inayoanza usiku wa manane)',
+        'islamic-umalqura': 'Kalenda ya Hijra (Umm ul-Qura)',
+        'iso8601': 'Kalenda ya ISO-8601',
+        'japanese': 'Kalenda ya Kijapani',
+        'persian': 'Kalenda ya Kiajemi',
+        'roc': 'Kalenda ya Jamhuri ya Uchina',
+      },
+      'nu': {
+        'arab': 'Nambari za Kiarabu/Kihindi',
+        'arabext': 'Nambari za Kiarabu/Kihindi Zilizopanuliwa',
+        'armn': 'Nambari za Kiarmenia',
+        'armnlow': 'Nambari Ndogo za Kiarmenia',
+        'beng': 'Nambari za Kibengali',
+        'cakm': 'Nambari za Kichakma',
+        'deva': 'Nambari za Kidevanagari',
+        'ethi': 'Nambari za Kihabeshi',
+        'finance': 'Tarakimu za Kifedha',
+        'fullwide': 'Nambari za Upana Kamili',
+        'geor': 'Nambari za Kijiojia',
+        'grek': 'Nambari za Kigiriki',
+        'greklow': 'Nambari Ndogo za Kigiriki',
+        'gujr': 'Nambari za Kigujarati',
+        'guru': 'Nambari za Kigurmukhi',
+        'hanidec': 'Nambari za Desimali za Kichina',
+        'hans': 'Nambari za Kichina Rahisi',
+        'hansfin': 'Nambari za Kifedha za Kichina Rahisi',
+        'hant': 'Nambari za Kichina cha Jadi',
+        'hantfin': 'Nambari za Kifedha za Kichina cha Jadi',
+        'hebr': 'Nambari za Kihibrania',
+        'java': 'Nambari za Kijava',
+        'jpan': 'Nambari za Kijapani',
+        'jpanfin': 'Nambari za Kifedha za Kijapani',
+        'khmr': 'Nambari za Kikambodia',
+        'knda': 'Nambari za Kikannada',
+        'laoo': 'Nambari za Kilao',
+        'latn': 'Nambari za Nchi za Magharibi',
+        'mlym': 'Nambari za Kimalayalam',
+        'mong': 'Nambari za Kimongolia',
+        'mtei': 'Nambari za Meetei Mayek',
+        'mymr': 'Nambari za Kimyama',
+        'native': 'Nambari Asili',
+        'olck': 'Nambari za Kiol Chiki',
+        'orya': 'Nambari za Kioriya',
+        'roman': 'Nambari za Kirumi',
+        'romanlow': 'Nambari Ndogo za Kirumi',
+        'taml': 'Nambari za Kitamil cha Jadi',
+        'tamldec': 'Nambari za Kitamili',
+        'telu': 'Nambari za Kitelugu',
+        'thai': 'Nambari za Kithai',
+        'tibt': 'Nambari za Kitibeti',
+        'traditio': 'Tarakimu za Jadi',
+        'vaii': 'Nambari za Kivai',
+      },
+    },
+  });
 }

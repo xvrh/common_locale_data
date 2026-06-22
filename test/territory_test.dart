@@ -8,30 +8,47 @@ void main() {
     expect(CommonLocaleDataEn().territories.world.isSubContinent, isFalse);
     expect(CommonLocaleDataEn().territories.world.isCountry, isFalse);
     expect(CommonLocaleDataEn().territories.world.isGrouping, isTrue);
-    expect(CommonLocaleDataEn().territories.world.territoryCodes,
-        ['019', '002', '150', '142', '009', 'EU', 'EZ', 'UN']);
-    expect(CommonLocaleDataEn().territories.world.containedTerritoryCodes,
-        ['019', '002', '150', '142', '009']);
-    expect(CommonLocaleDataEn().territories.world.groupedTerritoryCodes,
-        ['EU', 'EZ', 'UN']);
+    expect(CommonLocaleDataEn().territories.world.territoryCodes, [
+      '019',
+      '002',
+      '150',
+      '142',
+      '009',
+      'EU',
+      'EZ',
+      'UN',
+    ]);
+    expect(CommonLocaleDataEn().territories.world.containedTerritoryCodes, [
+      '019',
+      '002',
+      '150',
+      '142',
+      '009',
+    ]);
+    expect(CommonLocaleDataEn().territories.world.groupedTerritoryCodes, [
+      'EU',
+      'EZ',
+      'UN',
+    ]);
 
     expect(CommonLocaleDataEn().territories.world.countryCodes?.length, 257);
 
     expect(
-        CommonLocaleDataEn().territories.world.countryCodes?.toSet(),
-        CommonLocaleDataEn()
-            .territories
-            .territories
-            .values
-            .where((e) => e.isCountry)
-            .map((e) => e.code)
-            .toSet());
+      CommonLocaleDataEn().territories.world.countryCodes?.toSet(),
+      CommonLocaleDataEn().territories.territories.values
+          .where((e) => e.isCountry)
+          .map((e) => e.code)
+          .toSet(),
+    );
 
-    expect(CommonLocaleDataEn().territories.world.topSubdivisionCodes?.length,
-        greaterThanOrEqualTo(3590));
     expect(
-        CommonLocaleDataEn().territories.world.lowestSubdivisionCodes?.length,
-        4833);
+      CommonLocaleDataEn().territories.world.topSubdivisionCodes?.length,
+      greaterThanOrEqualTo(3590),
+    );
+    expect(
+      CommonLocaleDataEn().territories.world.lowestSubdivisionCodes?.length,
+      4833,
+    );
   });
 
   test('Territory Containment - Europe', () {
@@ -45,9 +62,13 @@ void main() {
   test('Territory Containment - Northern Europe', () {
     expect(CommonLocaleDataEn().territories.northernEurope.isWorld, isFalse);
     expect(
-        CommonLocaleDataEn().territories.northernEurope.isContinent, isFalse);
+      CommonLocaleDataEn().territories.northernEurope.isContinent,
+      isFalse,
+    );
     expect(
-        CommonLocaleDataEn().territories.northernEurope.isSubContinent, isTrue);
+      CommonLocaleDataEn().territories.northernEurope.isSubContinent,
+      isTrue,
+    );
     expect(CommonLocaleDataEn().territories.northernEurope.isCountry, isFalse);
     expect(CommonLocaleDataEn().territories.northernEurope.isGrouping, isFalse);
   });
@@ -60,18 +81,23 @@ void main() {
     expect(CommonLocaleDataEn().territories.gb.isGrouping, isFalse);
 
     expect(CommonLocaleDataEn().territories.gb.countryCodes, isNull);
-    expect(CommonLocaleDataEn().territories.gb.topSubdivisionCodes,
-        ['gbeng', 'gbnir', 'gbsct', 'gbwls']);
-    expect(CommonLocaleDataEn().territories.gb.lowestSubdivisionCodes?.length,
-        217);
+    expect(CommonLocaleDataEn().territories.gb.topSubdivisionCodes, [
+      'gbeng',
+      'gbnir',
+      'gbsct',
+      'gbwls',
+    ]);
+    expect(
+      CommonLocaleDataEn().territories.gb.lowestSubdivisionCodes?.length,
+      217,
+    );
 
     expect(
-        CommonLocaleDataEn()
-            .territories
-            .gb
-            .topSubdivisionCodes
-            ?.map((e) => CommonLocaleDataEn().subdivisions[e].toString()),
-        ['England', 'Northern Ireland', 'Scotland', 'Wales']);
+      CommonLocaleDataEn().territories.gb.topSubdivisionCodes?.map(
+        (e) => CommonLocaleDataEn().subdivisions[e].toString(),
+      ),
+      ['England', 'Northern Ireland', 'Scotland', 'Wales'],
+    );
   });
 
   test('Territory Containment - EU', () {
@@ -108,7 +134,7 @@ void main() {
       'SI',
       'SK',
       'BG',
-      'RO'
+      'RO',
     ]);
   });
 

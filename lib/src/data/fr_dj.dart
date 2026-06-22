@@ -28,17 +28,21 @@ class CommonLocaleDataFrDJ extends CommonLocaleDataFr {
 class CurrenciesFrDJ extends CurrenciesFr {
   const CurrenciesFrDJ(super.cld);
 
-  static const _djf = Currency(_cld, 'DJF', 'franc djiboutien',
-      one: 'franc djiboutien', other: 'francs djiboutiens', symbol: 'Fdj');
+  static const _djf = Currency(
+    _cld,
+    'DJF',
+    'franc djiboutien',
+    one: 'franc djiboutien',
+    other: 'francs djiboutiens',
+    symbol: 'Fdj',
+  );
 
   @override
   Currency get djf => _djf;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesFr.staticCurrencies,
-        ...const {
-          'DJF': _djf,
-        }
-      });
+    ...CurrenciesFr.staticCurrencies,
+    ...const {'DJF': _djf},
+  });
 }

@@ -28,17 +28,21 @@ class CommonLocaleDataSoKE extends CommonLocaleDataSo {
 class CurrenciesSoKE extends CurrenciesSo {
   const CurrenciesSoKE(super.cld);
 
-  static const _kes = Currency(_cld, 'KES', 'Shilingka Kenya',
-      one: 'shilingka Kenya', other: 'shilingka Kenya', symbol: 'Ksh');
+  static const _kes = Currency(
+    _cld,
+    'KES',
+    'Shilingka Kenya',
+    one: 'shilingka Kenya',
+    other: 'shilingka Kenya',
+    symbol: 'Ksh',
+  );
 
   @override
   Currency get kes => _kes;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesSo.staticCurrencies,
-        ...const {
-          'KES': _kes,
-        }
-      });
+    ...CurrenciesSo.staticCurrencies,
+    ...const {'KES': _kes},
+  });
 }

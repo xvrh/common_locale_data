@@ -27,7 +27,7 @@ abstract class Scripts {
     return scripts[code[0].toUpperCase() + code.substring(1).toLowerCase()];
   }
 
-// FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
+  // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 
   /// Localized name for Unknown Script.
   Script get unknownScript;

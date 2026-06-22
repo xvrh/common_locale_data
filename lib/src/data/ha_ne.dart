@@ -30,12 +30,12 @@ class SubdivisionsHaNE extends SubdivisionsHa {
 
   @override
   Map<String, String> get subdivisions => Map.unmodifiable({
-        ...SubdivisionsHa.staticSubdivisions,
-        ...const {
-          'inct': 'Chhattisgarh',
-          'inor': 'Odisha',
-          'intg': 'Telangana',
-          'inut': 'Uttarakhand',
-        }
-      });
+    ...SubdivisionsHa.staticSubdivisions,
+    ...const {
+      'inct': 'Chhattisgarh',
+      'inor': 'Odisha',
+      'intg': 'Telangana',
+      'inut': 'Uttarakhand',
+    },
+  });
 }

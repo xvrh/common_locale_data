@@ -75,23 +75,23 @@ class LanguagesDeAT extends LanguagesDe {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesDe.staticLanguages,
-        ...const {
-          'ar-001': _ar001,
-          'car': _car,
-          'chb': _chb,
-          'del': _del,
-          'fur': _fur,
-          'ha': _ha,
-          'haw': _haw,
-          'hmn': _hmn,
-          'mus': _mus,
-          'niu': _niu,
-          'pag': _pag,
-          'sh': _sh,
-          'szl': _szl,
-        }
-      });
+    ...LanguagesDe.staticLanguages,
+    ...const {
+      'ar-001': _ar001,
+      'car': _car,
+      'chb': _chb,
+      'del': _del,
+      'fur': _fur,
+      'ha': _ha,
+      'haw': _haw,
+      'hmn': _hmn,
+      'mus': _mus,
+      'niu': _niu,
+      'pag': _pag,
+      'sh': _sh,
+      'szl': _szl,
+    },
+  });
 }
 
 class TerritoriesDeAT extends TerritoriesDe {
@@ -104,9 +104,7 @@ class TerritoriesDeAT extends TerritoriesDe {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesDe.staticTerritories,
-        ...const {
-          'SJ': _sj,
-        }
-      });
+    ...TerritoriesDe.staticTerritories,
+    ...const {'SJ': _sj},
+  });
 }

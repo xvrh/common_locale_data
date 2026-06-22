@@ -65,5201 +65,3363 @@ class UnitsAm extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('ደሲ{0}'),
-        short: UnitPrefixPattern('ደ{0}'),
-        narrow: UnitPrefixPattern('ደ{0}'),
-      );
+    long: UnitPrefixPattern('ደሲ{0}'),
+    short: UnitPrefixPattern('ደ{0}'),
+    narrow: UnitPrefixPattern('ደ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('ሴንቲ{0}'),
-        short: UnitPrefixPattern('ሴ{0}'),
-        narrow: UnitPrefixPattern('ሴ{0}'),
-      );
+    long: UnitPrefixPattern('ሴንቲ{0}'),
+    short: UnitPrefixPattern('ሴ{0}'),
+    narrow: UnitPrefixPattern('ሴ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('ሚሊ{0}'),
-        short: UnitPrefixPattern('ሚ{0}'),
-        narrow: UnitPrefixPattern('ሚ{0}'),
-      );
+    long: UnitPrefixPattern('ሚሊ{0}'),
+    short: UnitPrefixPattern('ሚ{0}'),
+    narrow: UnitPrefixPattern('ሚ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('ማይክሮ{0}'),
-        short: UnitPrefixPattern('ማይክሮ{0}'),
-        narrow: UnitPrefixPattern('ማይክሮ{0}'),
-      );
+    long: UnitPrefixPattern('ማይክሮ{0}'),
+    short: UnitPrefixPattern('ማይክሮ{0}'),
+    narrow: UnitPrefixPattern('ማይክሮ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('ናኖ{0}'),
-        short: UnitPrefixPattern('ና{0}'),
-        narrow: UnitPrefixPattern('ና{0}'),
-      );
+    long: UnitPrefixPattern('ናኖ{0}'),
+    short: UnitPrefixPattern('ና{0}'),
+    narrow: UnitPrefixPattern('ና{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('ፒኮ{0}'),
-        short: UnitPrefixPattern('ፒ{0}'),
-        narrow: UnitPrefixPattern('ፒ{0}'),
-      );
+    long: UnitPrefixPattern('ፒኮ{0}'),
+    short: UnitPrefixPattern('ፒ{0}'),
+    narrow: UnitPrefixPattern('ፒ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('ፌምቶ{0}'),
-        short: UnitPrefixPattern('ፌ{0}'),
-        narrow: UnitPrefixPattern('ፌ{0}'),
-      );
+    long: UnitPrefixPattern('ፌምቶ{0}'),
+    short: UnitPrefixPattern('ፌ{0}'),
+    narrow: UnitPrefixPattern('ፌ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('አቶ{0}'),
-        short: UnitPrefixPattern('አ{0}'),
-        narrow: UnitPrefixPattern('አ{0}'),
-      );
+    long: UnitPrefixPattern('አቶ{0}'),
+    short: UnitPrefixPattern('አ{0}'),
+    narrow: UnitPrefixPattern('አ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('ዜብቶ{0}'),
-        short: UnitPrefixPattern('ዜ{0}'),
-        narrow: UnitPrefixPattern('ዜ{0}'),
-      );
+    long: UnitPrefixPattern('ዜብቶ{0}'),
+    short: UnitPrefixPattern('ዜ{0}'),
+    narrow: UnitPrefixPattern('ዜ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('ዮክቶ{0}'),
-        short: UnitPrefixPattern('ዮ{0}'),
-        narrow: UnitPrefixPattern('ዮ{0}'),
-      );
+    long: UnitPrefixPattern('ዮክቶ{0}'),
+    short: UnitPrefixPattern('ዮ{0}'),
+    narrow: UnitPrefixPattern('ዮ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('r{0}'),
-        short: UnitPrefixPattern('r{0}'),
-        narrow: UnitPrefixPattern('r{0}'),
-      );
+    long: UnitPrefixPattern('r{0}'),
+    short: UnitPrefixPattern('r{0}'),
+    narrow: UnitPrefixPattern('r{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('q{0}'),
-        short: UnitPrefixPattern('q{0}'),
-        narrow: UnitPrefixPattern('q{0}'),
-      );
+    long: UnitPrefixPattern('q{0}'),
+    short: UnitPrefixPattern('q{0}'),
+    narrow: UnitPrefixPattern('q{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('ዴካ{0}'),
-        short: UnitPrefixPattern('ዴ{0}'),
-        narrow: UnitPrefixPattern('ዴ{0}'),
-      );
+    long: UnitPrefixPattern('ዴካ{0}'),
+    short: UnitPrefixPattern('ዴ{0}'),
+    narrow: UnitPrefixPattern('ዴ{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('ሄክቶ{0}'),
-        short: UnitPrefixPattern('ሄ{0}'),
-        narrow: UnitPrefixPattern('ሄ{0}'),
-      );
+    long: UnitPrefixPattern('ሄክቶ{0}'),
+    short: UnitPrefixPattern('ሄ{0}'),
+    narrow: UnitPrefixPattern('ሄ{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('ኪሎ{0}'),
-        short: UnitPrefixPattern('ኪ{0}'),
-        narrow: UnitPrefixPattern('ኪ{0}'),
-      );
+    long: UnitPrefixPattern('ኪሎ{0}'),
+    short: UnitPrefixPattern('ኪ{0}'),
+    narrow: UnitPrefixPattern('ኪ{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('ሜጋ{0}'),
-        short: UnitPrefixPattern('ሜ{0}'),
-        narrow: UnitPrefixPattern('ሜ{0}'),
-      );
+    long: UnitPrefixPattern('ሜጋ{0}'),
+    short: UnitPrefixPattern('ሜ{0}'),
+    narrow: UnitPrefixPattern('ሜ{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('ጊጋ{0}'),
-        short: UnitPrefixPattern('ጊ{0}'),
-        narrow: UnitPrefixPattern('ጊ{0}'),
-      );
+    long: UnitPrefixPattern('ጊጋ{0}'),
+    short: UnitPrefixPattern('ጊ{0}'),
+    narrow: UnitPrefixPattern('ጊ{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('ቴራ {0}'),
-        short: UnitPrefixPattern('ቴራ {0}'),
-        narrow: UnitPrefixPattern('ቴራ {0}'),
-      );
+    long: UnitPrefixPattern('ቴራ {0}'),
+    short: UnitPrefixPattern('ቴራ {0}'),
+    narrow: UnitPrefixPattern('ቴራ {0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('ፔታ {0}'),
-        short: UnitPrefixPattern('ፔታ {0}'),
-        narrow: UnitPrefixPattern('ፔታ {0}'),
-      );
+    long: UnitPrefixPattern('ፔታ {0}'),
+    short: UnitPrefixPattern('ፔታ {0}'),
+    narrow: UnitPrefixPattern('ፔታ {0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('ኤክሳ {0}'),
-        short: UnitPrefixPattern('E{0}'),
-        narrow: UnitPrefixPattern('E{0}'),
-      );
+    long: UnitPrefixPattern('ኤክሳ {0}'),
+    short: UnitPrefixPattern('E{0}'),
+    narrow: UnitPrefixPattern('E{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('ዜታ {0}'),
-        short: UnitPrefixPattern('ዜታ {0}'),
-        narrow: UnitPrefixPattern('ዜታ {0}'),
-      );
+    long: UnitPrefixPattern('ዜታ {0}'),
+    short: UnitPrefixPattern('ዜታ {0}'),
+    narrow: UnitPrefixPattern('ዜታ {0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('ዮታ {0}'),
-        short: UnitPrefixPattern('ዮታ {0}'),
-        narrow: UnitPrefixPattern('ዮታ {0}'),
-      );
+    long: UnitPrefixPattern('ዮታ {0}'),
+    short: UnitPrefixPattern('ዮታ {0}'),
+    narrow: UnitPrefixPattern('ዮታ {0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('ሮና {0}'),
-        short: UnitPrefixPattern('ሮና {0}'),
-        narrow: UnitPrefixPattern('ሮና {0}'),
-      );
+    long: UnitPrefixPattern('ሮና {0}'),
+    short: UnitPrefixPattern('ሮና {0}'),
+    narrow: UnitPrefixPattern('ሮና {0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('Q{0}'),
-        short: UnitPrefixPattern('Q{0}'),
-        narrow: UnitPrefixPattern('Q{0}'),
-      );
+    long: UnitPrefixPattern('Q{0}'),
+    short: UnitPrefixPattern('Q{0}'),
+    narrow: UnitPrefixPattern('Q{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} ኪቢ'),
-        short: UnitPrefixPattern('{0} ኪቢ'),
-        narrow: UnitPrefixPattern('{0} ኪቢ'),
-      );
+    long: UnitPrefixPattern('{0} ኪቢ'),
+    short: UnitPrefixPattern('{0} ኪቢ'),
+    narrow: UnitPrefixPattern('{0} ኪቢ'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} ሜቢ'),
-        short: UnitPrefixPattern('{0} ሜቢ'),
-        narrow: UnitPrefixPattern('{0} ሜቢ'),
-      );
+    long: UnitPrefixPattern('{0} ሜቢ'),
+    short: UnitPrefixPattern('{0} ሜቢ'),
+    narrow: UnitPrefixPattern('{0} ሜቢ'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} ጊቢ'),
-        short: UnitPrefixPattern('{0} ጊቢ'),
-        narrow: UnitPrefixPattern('{0} ጊቢ'),
-      );
+    long: UnitPrefixPattern('{0} ጊቢ'),
+    short: UnitPrefixPattern('{0} ጊቢ'),
+    narrow: UnitPrefixPattern('{0} ጊቢ'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} ቴቢ'),
-        short: UnitPrefixPattern('{0} ቴቢ'),
-        narrow: UnitPrefixPattern('{0} ቴቢ'),
-      );
+    long: UnitPrefixPattern('{0} ቴቢ'),
+    short: UnitPrefixPattern('{0} ቴቢ'),
+    narrow: UnitPrefixPattern('{0} ቴቢ'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} ፔቢ'),
-        short: UnitPrefixPattern('{0} ፔቢ'),
-        narrow: UnitPrefixPattern('{0} ፔቢ'),
-      );
+    long: UnitPrefixPattern('{0} ፔቢ'),
+    short: UnitPrefixPattern('{0} ፔቢ'),
+    narrow: UnitPrefixPattern('{0} ፔቢ'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('Ei{0}'),
-        short: UnitPrefixPattern('Ei{0}'),
-        narrow: UnitPrefixPattern('Ei{0}'),
-      );
+    long: UnitPrefixPattern('Ei{0}'),
+    short: UnitPrefixPattern('Ei{0}'),
+    narrow: UnitPrefixPattern('Ei{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('{0} ዜቢ'),
-        short: UnitPrefixPattern('{0} ዜቢ'),
-        narrow: UnitPrefixPattern('{0} ዜቢ'),
-      );
+    long: UnitPrefixPattern('{0} ዜቢ'),
+    short: UnitPrefixPattern('{0} ዜቢ'),
+    narrow: UnitPrefixPattern('{0} ዜቢ'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('ዮቢ {0}'),
-        short: UnitPrefixPattern('ዮቢ {0}'),
-        narrow: UnitPrefixPattern('ዮቢ {0}'),
-      );
+    long: UnitPrefixPattern('ዮቢ {0}'),
+    short: UnitPrefixPattern('ዮቢ {0}'),
+    narrow: UnitPrefixPattern('ዮቢ {0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('{0} በ{1}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('{0} በ{1}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጂ-ኃይል',
-          one: '{0} ጂ-ኃይል',
-          other: '{0} ጂ-ኃይል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጂ-ኃይል',
-          one: '{0} ጂ',
-          other: '{0} ጂ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጂ-ኃይል',
-          one: '{0} ጂ',
-          other: '{0} ጂ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ጂ-ኃይል',
+      one: '{0} ጂ-ኃይል',
+      other: '{0} ጂ-ኃይል',
+    ),
+    short: UnitCountPattern(_locale, 'ጂ-ኃይል', one: '{0} ጂ', other: '{0} ጂ'),
+    narrow: UnitCountPattern(_locale, 'ጂ-ኃይል', one: '{0} ጂ', other: '{0} ጂ'),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜ/ሰ²',
-          one: '{0} ሜ/ሰ²',
-          other: '{0} ሜ/ሰ²',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜ/ሰ²',
-          one: '{0} ሜ/ሰ²',
-          other: '{0} ሜ/ሰ²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜ/ሰ²',
-          one: '{0} ሜ/ሰ²',
-          other: '{0} ሜ/ሰ²',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሜ/ሰ²', one: '{0} ሜ/ሰ²', other: '{0} ሜ/ሰ²'),
+    short: UnitCountPattern(
+      _locale,
+      'ሜ/ሰ²',
+      one: '{0} ሜ/ሰ²',
+      other: '{0} ሜ/ሰ²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሜ/ሰ²',
+      one: '{0} ሜ/ሰ²',
+      other: '{0} ሜ/ሰ²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኡደት',
-          one: '{0} ኡደት',
-          other: '{0} ኡደት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኡደት',
-          one: '{0} ኡደት',
-          other: '{0} ኡደት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኡደ',
-          one: '{0} ኡደ',
-          other: '{0}ኡደ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኡደት', one: '{0} ኡደት', other: '{0} ኡደት'),
+    short: UnitCountPattern(_locale, 'ኡደት', one: '{0} ኡደት', other: '{0} ኡደት'),
+    narrow: UnitCountPattern(_locale, 'ኡደ', one: '{0} ኡደ', other: '{0}ኡደ'),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ራዲ',
-          one: '{0} ራዲ',
-          other: '{0} ራዲ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ራዲ',
-          one: '{0} ራዲ',
-          other: '{0} ራዲ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ራዲ',
-          one: '{0}ራዲ',
-          other: '{0}ራዲ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ራዲ', one: '{0} ራዲ', other: '{0} ራዲ'),
+    short: UnitCountPattern(_locale, 'ራዲ', one: '{0} ራዲ', other: '{0} ራዲ'),
+    narrow: UnitCountPattern(_locale, 'ራዲ', one: '{0}ራዲ', other: '{0}ራዲ'),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዲግሪ',
-          one: '{0} ዲግሪ',
-          other: '{0} ዲግሪ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዲግሪ',
-          one: '{0}°ዲግሪ',
-          other: '{0}°ዲግሪ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዲግሪ',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ዲግሪ', one: '{0} ዲግሪ', other: '{0} ዲግሪ'),
+    short: UnitCountPattern(_locale, 'ዲግሪ', one: '{0}°ዲግሪ', other: '{0}°ዲግሪ'),
+    narrow: UnitCountPattern(_locale, 'ዲግሪ', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ደቂቃ',
-          one: '{0} ደቂቃ',
-          other: '{0} ደቂቃ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ደቂቃ',
-          one: '{0} ደቂቃ',
-          other: '{0} ደቂቃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ደቂቃ',
-          one: '{0}′',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ደቂቃ', one: '{0} ደቂቃ', other: '{0} ደቂቃ'),
+    short: UnitCountPattern(_locale, 'ደቂቃ', one: '{0} ደቂቃ', other: '{0} ደቂቃ'),
+    narrow: UnitCountPattern(_locale, 'ደቂቃ', one: '{0}′', other: '{0}′'),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሰከንድ',
-          one: '{0} ሰከንድ',
-          other: '{0} ሰከንድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሰከንድ',
-          one: '{0} ሰከንድ',
-          other: '{0} ሰከንድ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሰከንድ',
-          one: '{0}″',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሰከንድ', one: '{0} ሰከንድ', other: '{0} ሰከንድ'),
+    short: UnitCountPattern(
+      _locale,
+      'ሰከንድ',
+      one: '{0} ሰከንድ',
+      other: '{0} ሰከንድ',
+    ),
+    narrow: UnitCountPattern(_locale, 'ሰከንድ', one: '{0}″', other: '{0}″'),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካሬ ኪሎሜትር',
-          one: '{0} ካሬ ኪሎሜትር',
-          other: '{0} ካሬ ኪሎሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካሬ ኪሎሜትር',
-          one: '{0} ኪሜ²',
-          other: '{0} ኪሜ²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካሬ ኪሎሜትር',
-          one: '{0} ኪሜ²',
-          other: '{0} ኪሜ²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ካሬ ኪሎሜትር',
+      one: '{0} ካሬ ኪሎሜትር',
+      other: '{0} ካሬ ኪሎሜትር',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ካሬ ኪሎሜትር',
+      one: '{0} ኪሜ²',
+      other: '{0} ኪሜ²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ካሬ ኪሎሜትር',
+      one: '{0} ኪሜ²',
+      other: '{0} ኪሜ²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሄክታር',
-          one: '{0} ሄክታር',
-          other: '{0} ሄክታር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሄክታር',
-          one: '{0} ሄክታር',
-          other: '{0} ሄክታር',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሄክታር',
-          one: '{0} ሄክታር',
-          other: '{0} ሄክታር',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሄክታር', one: '{0} ሄክታር', other: '{0} ሄክታር'),
+    short: UnitCountPattern(
+      _locale,
+      'ሄክታር',
+      one: '{0} ሄክታር',
+      other: '{0} ሄክታር',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሄክታር',
+      one: '{0} ሄክታር',
+      other: '{0} ሄክታር',
+    ),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካሬ ሜትር',
-          one: '{0} ካሬ ሜትር',
-          other: '{0} ካሬ ሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካሬ ሜትር',
-          one: '{0} ሜ²',
-          other: '{0} ሜ²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካሬ ሜትር',
-          one: '{0} ሜ²',
-          other: '{0} ሜ²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ካሬ ሜትር',
+      one: '{0} ካሬ ሜትር',
+      other: '{0} ካሬ ሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ካሬ ሜትር', one: '{0} ሜ²', other: '{0} ሜ²'),
+    narrow: UnitCountPattern(_locale, 'ካሬ ሜትር', one: '{0} ሜ²', other: '{0} ሜ²'),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሴሜ²',
-          one: '{0} ሴሜ²',
-          other: '{0} ሴሜ²',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሴሜ²',
-          one: '{0} ሴሜ²',
-          other: '{0} ሴሜ²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሴሜ²',
-          one: '{0} ሴሜ²',
-          other: '{0} ሴሜ²',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሴሜ²', one: '{0} ሴሜ²', other: '{0} ሴሜ²'),
+    short: UnitCountPattern(_locale, 'ሴሜ²', one: '{0} ሴሜ²', other: '{0} ሴሜ²'),
+    narrow: UnitCountPattern(_locale, 'ሴሜ²', one: '{0} ሴሜ²', other: '{0} ሴሜ²'),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካሬ ማይል',
-          one: '{0} ካሬ ማይል',
-          other: '{0} ካሬ ማይል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካሬ ማይል',
-          one: '{0} ካሬ ማይል',
-          other: '{0} ካሬ ማይል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካሬ ማይል',
-          one: '{0} ማይል²',
-          other: '{0} ማይል²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ካሬ ማይል',
+      one: '{0} ካሬ ማይል',
+      other: '{0} ካሬ ማይል',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ካሬ ማይል',
+      one: '{0} ካሬ ማይል',
+      other: '{0} ካሬ ማይል',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ካሬ ማይል',
+      one: '{0} ማይል²',
+      other: '{0} ማይል²',
+    ),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኤክር',
-          one: '{0} ኤክር',
-          other: '{0} ኤክር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኤክር',
-          one: '{0} ኤክር',
-          other: '{0} ኤክር',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኤክር',
-          one: '{0} ኤክር',
-          other: '{0} ኤክር',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኤክር', one: '{0} ኤክር', other: '{0} ኤክር'),
+    short: UnitCountPattern(_locale, 'ኤክር', one: '{0} ኤክር', other: '{0} ኤክር'),
+    narrow: UnitCountPattern(_locale, 'ኤክር', one: '{0} ኤክር', other: '{0} ኤክር'),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ስኴር ያርድ',
-          one: '{0} ስኴር ያርድ',
-          other: '{0} ስኴር ያርድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ስኴር ያርድ',
-          one: '{0} ስኴር ያርድ',
-          other: '{0} ስኴር ያርድ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ስኴር ያርድ',
-          one: '{0} ስኴር ያርድ',
-          other: '{0} ስኴር ያርድ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ስኴር ያርድ',
+      one: '{0} ስኴር ያርድ',
+      other: '{0} ስኴር ያርድ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ስኴር ያርድ',
+      one: '{0} ስኴር ያርድ',
+      other: '{0} ስኴር ያርድ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ስኴር ያርድ',
+      one: '{0} ስኴር ያርድ',
+      other: '{0} ስኴር ያርድ',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካሬ ጫማ',
-          one: '{0} ካሬ ጫማ',
-          other: '{0} ካሬ ጫማ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካሬ ጫማ',
-          one: '{0} ካሬ ጫማ',
-          other: '{0} ካሬ ጫማ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካሬ ጫማ',
-          one: '{0} ጫማ²',
-          other: '{0} ጫማ²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ካሬ ጫማ',
+      one: '{0} ካሬ ጫማ',
+      other: '{0} ካሬ ጫማ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ካሬ ጫማ',
+      one: '{0} ካሬ ጫማ',
+      other: '{0} ካሬ ጫማ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ካሬ ጫማ',
+      one: '{0} ጫማ²',
+      other: '{0} ጫማ²',
+    ),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኢንች²',
-          one: '{0} ኢንች²',
-          other: '{0} ኢንች²',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኢንች²',
-          one: '{0} ኢንች²',
-          other: '{0} ኢንች²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኢንች²',
-          one: '{0} ኢንች²',
-          other: '{0} ኢንች²',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኢንች²', one: '{0} ኢንች²', other: '{0} ኢንች²'),
+    short: UnitCountPattern(
+      _locale,
+      'ኢንች²',
+      one: '{0} ኢንች²',
+      other: '{0} ኢንች²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኢንች²',
+      one: '{0} ኢንች²',
+      other: '{0} ኢንች²',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጋሻ',
-          one: '{0} ጋሻ',
-          other: '{0} ጋሻ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጋሻዎች',
-          one: '{0} ጋሻ',
-          other: '{0} ጋሻ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጋሻዎች',
-          one: '{0} ጋሻ',
-          other: '{0} ጋሻ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጋሻ', one: '{0} ጋሻ', other: '{0} ጋሻ'),
+    short: UnitCountPattern(_locale, 'ጋሻዎች', one: '{0} ጋሻ', other: '{0} ጋሻ'),
+    narrow: UnitCountPattern(_locale, 'ጋሻዎች', one: '{0} ጋሻ', other: '{0} ጋሻ'),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካራት',
-          one: '{0} ካራት',
-          other: '{0} ካራት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካራት',
-          one: '{0} ካራት',
-          other: '{0} ካራት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካራት',
-          one: '{0} ካራት',
-          other: '{0} ካራት',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ካራት', one: '{0} ካራት', other: '{0} ካራት'),
+    short: UnitCountPattern(_locale, 'ካራት', one: '{0} ካራት', other: '{0} ካራት'),
+    narrow: UnitCountPattern(_locale, 'ካራት', one: '{0} ካራት', other: '{0} ካራት'),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሚሊ ግራም በ ዴሲ ሊትር',
-          one: '{0} milligram per deciliter',
-          other: '{0} mg/dL',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} mg/dL',
-          other: '{0} mg/dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0}mg/dL',
-          other: '{0} mg/dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሚሊ ግራም በ ዴሲ ሊትር',
+      one: '{0} milligram per deciliter',
+      other: '{0} mg/dL',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} mg/dL',
+      other: '{0} mg/dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0}mg/dL',
+      other: '{0} mg/dL',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mmol/L',
-          one: '{0} millimole per liter',
-          other: '{0} mmol/L',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmol/L',
-          one: '{0} mmol/L',
-          other: '{0} mmol/L',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmol/L',
-          one: '{0}mmol/L',
-          other: '{0} mmol/L',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mmol/L',
+      one: '{0} millimole per liter',
+      other: '{0} mmol/L',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmol/L',
+      one: '{0} mmol/L',
+      other: '{0} mmol/L',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmol/L',
+      one: '{0}mmol/L',
+      other: '{0} mmol/L',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ንጥሎች',
-          one: '{0} ንጥል',
-          other: '{0} ንጥሎች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ንጥል',
-          one: '{0} ንጥል',
-          other: '{0} ንጥል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ንጥል',
-          one: '{0} ንጥል',
-          other: '{0} ንጥል',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ንጥሎች', one: '{0} ንጥል', other: '{0} ንጥሎች'),
+    short: UnitCountPattern(_locale, 'ንጥል', one: '{0} ንጥል', other: '{0} ንጥል'),
+    narrow: UnitCountPattern(_locale, 'ንጥል', one: '{0} ንጥል', other: '{0} ንጥል'),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} ppm',
-          other: '{0} ppm',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} ppm',
-          other: '{0} ppm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} ppm',
-          other: '{0} ppm',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ppm', one: '{0} ppm', other: '{0} ppm'),
+    short: UnitCountPattern(_locale, 'ppm', one: '{0} ppm', other: '{0} ppm'),
+    narrow: UnitCountPattern(_locale, 'ppm', one: '{0} ppm', other: '{0} ppm'),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፐርሰንት',
-          one: '{0} ፐርሰንት',
-          other: '{0} ፐርሰንት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፐርሰንት',
-          one: '{0} ፐርሰንት',
-          other: '{0}%',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} ፐርሰንት',
-          other: '{0}%',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ፐርሰንት',
+      one: '{0} ፐርሰንት',
+      other: '{0} ፐርሰንት',
+    ),
+    short: UnitCountPattern(_locale, 'ፐርሰንት', one: '{0} ፐርሰንት', other: '{0}%'),
+    narrow: UnitCountPattern(_locale, '%', one: '{0} ፐርሰንት', other: '{0}%'),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'በማይል',
-          one: '{0} በማይል',
-          other: '{0}‰',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'በማይል',
-          one: '{0} በማይል',
-          other: '{0}‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'በማይል',
-          one: '{0} በማይል',
-          other: '{0}‰',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'በማይል', one: '{0} በማይል', other: '{0}‰'),
+    short: UnitCountPattern(_locale, 'በማይል', one: '{0} በማይል', other: '{0}‰'),
+    narrow: UnitCountPattern(_locale, 'በማይል', one: '{0} በማይል', other: '{0}‰'),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} permyriad',
-          other: '{0}‱',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0}‱',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0}‱',
-          other: '{0}‱',
-        ),
-      );
+    long: UnitCountPattern(_locale, '‱', one: '{0} permyriad', other: '{0}‱'),
+    short: UnitCountPattern(_locale, '‱', one: '{0}‱', other: '{0}‱'),
+    narrow: UnitCountPattern(_locale, '‱', one: '{0}‱', other: '{0}‱'),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} mol',
-          other: '{0} mol',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} mol',
-          other: '{0} mol',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} mol',
-          other: '{0} mol',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'mol', one: '{0} mol', other: '{0} mol'),
+    short: UnitCountPattern(_locale, 'mol', one: '{0} mol', other: '{0} mol'),
+    narrow: UnitCountPattern(_locale, 'mol', one: '{0} mol', other: '{0} mol'),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሊ/ኪሜ',
-          one: '{0} ሊ/ኪሜ',
-          other: '{0} ሊ/ኪሜ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሊ/ኪሜ',
-          one: '{0} ሊ/ኪሜ',
-          other: '{0} ሊ/ኪሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሊ/ኪሜ',
-          one: '{0} ሊ/ኪሜ',
-          other: '{0} ሊ/ኪሜ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሊ/ኪሜ', one: '{0} ሊ/ኪሜ', other: '{0} ሊ/ኪሜ'),
+    short: UnitCountPattern(
+      _locale,
+      'ሊ/ኪሜ',
+      one: '{0} ሊ/ኪሜ',
+      other: '{0} ሊ/ኪሜ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሊ/ኪሜ',
+      one: '{0} ሊ/ኪሜ',
+      other: '{0} ሊ/ኪሜ',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሊትሮች በ100 ኪሎሜትሮች',
-          one: '{0} ሊትር በ100 ኪሎሜትሮች',
-          other: '{0} ሊትሮች በ100 ኪሎሜትሮች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሊትር በ100 ኪሎሜትሮች',
-          one: '{0} ሊ/100ኪሜ',
-          other: '{0} ሊ/100ኪሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሊትር በ100 ኪሎሜትሮች',
-          one: '{0}ሊበ100ኪሜ',
-          other: '{0}ሊበ100ኪሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሊትሮች በ100 ኪሎሜትሮች',
+      one: '{0} ሊትር በ100 ኪሎሜትሮች',
+      other: '{0} ሊትሮች በ100 ኪሎሜትሮች',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሊትር በ100 ኪሎሜትሮች',
+      one: '{0} ሊ/100ኪሜ',
+      other: '{0} ሊ/100ኪሜ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሊትር በ100 ኪሎሜትሮች',
+      one: '{0}ሊበ100ኪሜ',
+      other: '{0}ሊበ100ኪሜ',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mpg',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpg',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpg',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'mpg', one: '{0} mpg', other: '{0} mpg'),
+    short: UnitCountPattern(_locale, 'mpg', one: '{0} mpg', other: '{0} mpg'),
+    narrow: UnitCountPattern(_locale, 'mpg', one: '{0} mpg', other: '{0} mpg'),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mpg Imp.',
-          one: '{0} mile per Imp. gallon',
-          other: '{0} mpg Imp.',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpg Imp.',
-          one: '{0} mpg Imp.',
-          other: '{0} mpg Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpg Imp.',
-          one: '{0}m/gUK',
-          other: '{0} mpg Imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mpg Imp.',
+      one: '{0} mile per Imp. gallon',
+      other: '{0} mpg Imp.',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mpg Imp.',
+      one: '{0} mpg Imp.',
+      other: '{0} mpg Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mpg Imp.',
+      one: '{0}m/gUK',
+      other: '{0} mpg Imp.',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፔታ ባይት',
-          one: '{0} ፔታ ባይት',
-          other: '{0} ፔታ ባይቶች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፔ ባይት',
-          one: '{0} ፔባ',
-          other: '{0} ፔባ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፔባ',
-          one: '{0} ፔባ',
-          other: '{0} ፔባ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ፔታ ባይት',
+      one: '{0} ፔታ ባይት',
+      other: '{0} ፔታ ባይቶች',
+    ),
+    short: UnitCountPattern(_locale, 'ፔ ባይት', one: '{0} ፔባ', other: '{0} ፔባ'),
+    narrow: UnitCountPattern(_locale, 'ፔባ', one: '{0} ፔባ', other: '{0} ፔባ'),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቴራባይት',
-          one: '{0} ቴራባይት',
-          other: '{0} ቴራባይት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቴራባይት',
-          one: '{0} ቴራባይት',
-          other: '{0} ቴራባይት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቴባይት',
-          one: '{0} ቴራባይት',
-          other: '{0} ቴራባይት',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ቴራባይት',
+      one: '{0} ቴራባይት',
+      other: '{0} ቴራባይት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ቴራባይት',
+      one: '{0} ቴራባይት',
+      other: '{0} ቴራባይት',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ቴባይት',
+      one: '{0} ቴራባይት',
+      other: '{0} ቴራባይት',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቴራባይትስ',
-          one: '{0} ቴባ',
-          other: '{0} ቴባ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቴባ',
-          one: '{0} ቴባ',
-          other: '{0} ቴባ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቴባ',
-          one: '{0} ቴባ',
-          other: '{0} ቴባ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ቴራባይትስ', one: '{0} ቴባ', other: '{0} ቴባ'),
+    short: UnitCountPattern(_locale, 'ቴባ', one: '{0} ቴባ', other: '{0} ቴባ'),
+    narrow: UnitCountPattern(_locale, 'ቴባ', one: '{0} ቴባ', other: '{0} ቴባ'),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጊባ',
-          one: '{0} ጊባ',
-          other: '{0} ጊባ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጊባ',
-          one: '{0} ጊባ',
-          other: '{0} ጊባ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጊባ',
-          one: '{0} ጊባ',
-          other: '{0} ጊባ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጊባ', one: '{0} ጊባ', other: '{0} ጊባ'),
+    short: UnitCountPattern(_locale, 'ጊባ', one: '{0} ጊባ', other: '{0} ጊባ'),
+    narrow: UnitCountPattern(_locale, 'ጊባ', one: '{0} ጊባ', other: '{0} ጊባ'),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጊጋባይት',
-          one: '{0} ጊጋባይት',
-          other: '{0} ጊጋባይት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጊጋባይት',
-          one: '{0} ጊጋባይት',
-          other: '{0} ጊጋባይት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጊጋባይት',
-          one: '{0} ጊጋባይት',
-          other: '{0} ጊጋባይት',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ጊጋባይት',
+      one: '{0} ጊጋባይት',
+      other: '{0} ጊጋባይት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ጊጋባይት',
+      one: '{0} ጊጋባይት',
+      other: '{0} ጊጋባይት',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ጊጋባይት',
+      one: '{0} ጊጋባይት',
+      other: '{0} ጊጋባይት',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜጋባይት',
-          one: '{0} ሜጋባይት',
-          other: '{0} ሜጋባይት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜጋባይት',
-          one: '{0} ሜጋባይት',
-          other: '{0} ሜጋባይት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜጋባይት',
-          one: '{0} ሜጋባይት',
-          other: '{0} ሜጋባይት',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሜጋባይት',
+      one: '{0} ሜጋባይት',
+      other: '{0} ሜጋባይት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሜጋባይት',
+      one: '{0} ሜጋባይት',
+      other: '{0} ሜጋባይት',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሜጋባይት',
+      one: '{0} ሜጋባይት',
+      other: '{0} ሜጋባይት',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜባ',
-          one: '{0} ሜባ',
-          other: '{0} ሜባ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜባ',
-          one: '{0} ሜባ',
-          other: '{0} ሜባ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜባ',
-          one: '{0} ሜባ',
-          other: '{0} ሜባ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሜባ', one: '{0} ሜባ', other: '{0} ሜባ'),
+    short: UnitCountPattern(_locale, 'ሜባ', one: '{0} ሜባ', other: '{0} ሜባ'),
+    narrow: UnitCountPattern(_locale, 'ሜባ', one: '{0} ሜባ', other: '{0} ሜባ'),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪባ',
-          one: '{0} ኪባ',
-          other: '{0} ኪባ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪባ',
-          one: '{0} ኪባ',
-          other: '{0} ኪባ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪባ',
-          one: '{0} ኪባ',
-          other: '{0} ኪባ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኪባ', one: '{0} ኪባ', other: '{0} ኪባ'),
+    short: UnitCountPattern(_locale, 'ኪባ', one: '{0} ኪባ', other: '{0} ኪባ'),
+    narrow: UnitCountPattern(_locale, 'ኪባ', one: '{0} ኪባ', other: '{0} ኪባ'),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎባይት',
-          one: '{0} ኪሎባይት',
-          other: '{0} ኪሎባይት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎባይት',
-          one: '{0} ኪሎባይት',
-          other: '{0} ኪሎባይት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎባይት',
-          one: '{0} ኪሎባይት',
-          other: '{0} ኪሎባይት',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎባይት',
+      one: '{0} ኪሎባይት',
+      other: '{0} ኪሎባይት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኪሎባይት',
+      one: '{0} ኪሎባይት',
+      other: '{0} ኪሎባይት',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኪሎባይት',
+      one: '{0} ኪሎባይት',
+      other: '{0} ኪሎባይት',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ባይት',
-          one: '{0} ባይት',
-          other: '{0} ባይት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ባይት',
-          one: '{0} ባይት',
-          other: '{0} ባይት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ባይት',
-          one: '{0} ባይት',
-          other: '{0} ባይት',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ባይት', one: '{0} ባይት', other: '{0} ባይት'),
+    short: UnitCountPattern(_locale, 'ባይት', one: '{0} ባይት', other: '{0} ባይት'),
+    narrow: UnitCountPattern(_locale, 'ባይት', one: '{0} ባይት', other: '{0} ባይት'),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቢት',
-          one: '{0} ቢት',
-          other: '{0} ቢት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቢት',
-          one: '{0} ቢት',
-          other: '{0} ቢት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቢት',
-          one: '{0} ቢት',
-          other: '{0} ቢት',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ቢት', one: '{0} ቢት', other: '{0} ቢት'),
+    short: UnitCountPattern(_locale, 'ቢት', one: '{0} ቢት', other: '{0} ቢት'),
+    narrow: UnitCountPattern(_locale, 'ቢት', one: '{0} ቢት', other: '{0} ቢት'),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ምዕተ ዓመት',
-          one: '{0} ምዕተ ዓመት',
-          other: '{0} ምዕተ ዓመት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ምዕተ ዓመት',
-          one: '{0} ምዕተ ዓመት',
-          other: '{0} ምዕተ ዓመት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ምዕተ ዓመት',
-          one: '{0}ም.ዓ',
-          other: '{0}ም.ዓ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ምዕተ ዓመት',
+      one: '{0} ምዕተ ዓመት',
+      other: '{0} ምዕተ ዓመት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ምዕተ ዓመት',
+      one: '{0} ምዕተ ዓመት',
+      other: '{0} ምዕተ ዓመት',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ምዕተ ዓመት',
+      one: '{0}ም.ዓ',
+      other: '{0}ም.ዓ',
+    ),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዓሠርተ-ዓመት',
-          one: '{0} ዓሠርተ-ዓመት',
-          other: '{0} ዓሠርተ-ዓመታት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዓሠርተ-ዓመት',
-          one: '{0} ዓሠ.ዓ',
-          other: '{0} ዓሠ.ዓ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዓሠርተ-ዓመት',
-          one: '{0} ዓሠ.ዓ',
-          other: '{0} ዓሠ.ዓ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ዓሠርተ-ዓመት',
+      one: '{0} ዓሠርተ-ዓመት',
+      other: '{0} ዓሠርተ-ዓመታት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ዓሠርተ-ዓመት',
+      one: '{0} ዓሠ.ዓ',
+      other: '{0} ዓሠ.ዓ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ዓሠርተ-ዓመት',
+      one: '{0} ዓሠ.ዓ',
+      other: '{0} ዓሠ.ዓ',
+    ),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዓመታት',
-          one: '{0} ዓመት',
-          other: '{0} ዓመታት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዓመታት',
-          one: '{0} ዓመት',
-          other: '{0} ዓመታት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዓመታት',
-          one: '{0} ዓመት',
-          other: '{0} ዓ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ዓመታት', one: '{0} ዓመት', other: '{0} ዓመታት'),
+    short: UnitCountPattern(_locale, 'ዓመታት', one: '{0} ዓመት', other: '{0} ዓመታት'),
+    narrow: UnitCountPattern(_locale, 'ዓመታት', one: '{0} ዓመት', other: '{0} ዓ'),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሩቦች',
-          one: '{0} ሩ',
-          other: '{0} ሩ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሩብ',
-          one: '{0} ሩብ',
-          other: '{0} ሩብ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሩብ',
-          one: '{0} ሩብ',
-          other: '{0} ሩ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሩቦች', one: '{0} ሩ', other: '{0} ሩ'),
+    short: UnitCountPattern(_locale, 'ሩብ', one: '{0} ሩብ', other: '{0} ሩብ'),
+    narrow: UnitCountPattern(_locale, 'ሩብ', one: '{0} ሩብ', other: '{0} ሩ'),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ወራት',
-          one: '{0} ወር',
-          other: '{0} ወራት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ወራት',
-          one: '{0} ወራት',
-          other: '{0} ወራት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ወራት',
-          one: '{0} ወር',
-          other: '{0} ወር',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ወራት', one: '{0} ወር', other: '{0} ወራት'),
+    short: UnitCountPattern(_locale, 'ወራት', one: '{0} ወራት', other: '{0} ወራት'),
+    narrow: UnitCountPattern(_locale, 'ወራት', one: '{0} ወር', other: '{0} ወር'),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሳምንታት',
-          one: '{0} ሳምንት',
-          other: '{0} ሳምንታት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሳምንታት',
-          one: '{0} ሳምንት',
-          other: '{0} ሳምንታት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሳምንታት',
-          one: '{0} ሳምንት',
-          other: '{0} ሳምንት',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሳምንታት',
+      one: '{0} ሳምንት',
+      other: '{0} ሳምንታት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሳምንታት',
+      one: '{0} ሳምንት',
+      other: '{0} ሳምንታት',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሳምንታት',
+      one: '{0} ሳምንት',
+      other: '{0} ሳምንት',
+    ),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቀናት',
-          one: '{0} ቀናት',
-          other: '{0} ቀናት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቀናት',
-          one: '{0} ቀናት',
-          other: '{0} ቀናት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቀናት',
-          one: '{0} ቀ',
-          other: '{0} ቀ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ቀናት', one: '{0} ቀናት', other: '{0} ቀናት'),
+    short: UnitCountPattern(_locale, 'ቀናት', one: '{0} ቀናት', other: '{0} ቀናት'),
+    narrow: UnitCountPattern(_locale, 'ቀናት', one: '{0} ቀ', other: '{0} ቀ'),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሰዓቶች',
-          one: '{0} ሰዓት',
-          other: '{0} ሰዓቶች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሰዓቶች',
-          one: '{0} ሰዓ',
-          other: '{0} ሰዓ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሰዓቶች',
-          one: '{0} ሰ',
-          other: '{0} ሰ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሰዓቶች', one: '{0} ሰዓት', other: '{0} ሰዓቶች'),
+    short: UnitCountPattern(_locale, 'ሰዓቶች', one: '{0} ሰዓ', other: '{0} ሰዓ'),
+    narrow: UnitCountPattern(_locale, 'ሰዓቶች', one: '{0} ሰ', other: '{0} ሰ'),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ደቂቃዎች',
-          one: '{0} ደቂቃ',
-          other: '{0} ደቂቃዎች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ደቂቃዎች',
-          one: '{0} ደቂ',
-          other: '{0} ደቂቃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ደቂቃዎች',
-          one: '{0} ደ',
-          other: '{0} ደ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ደቂቃዎች',
+      one: '{0} ደቂቃ',
+      other: '{0} ደቂቃዎች',
+    ),
+    short: UnitCountPattern(_locale, 'ደቂቃዎች', one: '{0} ደቂ', other: '{0} ደቂቃ'),
+    narrow: UnitCountPattern(_locale, 'ደቂቃዎች', one: '{0} ደ', other: '{0} ደ'),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሰከንዶች',
-          one: '{0} ሰከንድ',
-          other: '{0} ሰከንዶች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሰከንዶች',
-          one: '{0} ሰከ',
-          other: '{0} ሰከ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሰከንድ',
-          one: '{0} ሰ',
-          other: '{0} ሰ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሰከንዶች',
+      one: '{0} ሰከንድ',
+      other: '{0} ሰከንዶች',
+    ),
+    short: UnitCountPattern(_locale, 'ሰከንዶች', one: '{0} ሰከ', other: '{0} ሰከ'),
+    narrow: UnitCountPattern(_locale, 'ሰከንድ', one: '{0} ሰ', other: '{0} ሰ'),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሚሊሰከንድ',
-          one: '{0} ሚሊሰከንድ',
-          other: '{0} ሚሊሰከንድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሚሊሰከንድ',
-          one: '{0} ሚሴ',
-          other: '{0} ሚሴ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሚሊሰከንድ',
-          one: '{0} ሚሴ',
-          other: '{0} ሚሴ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሚሊሰከንድ',
+      one: '{0} ሚሊሰከንድ',
+      other: '{0} ሚሊሰከንድ',
+    ),
+    short: UnitCountPattern(_locale, 'ሚሊሰከንድ', one: '{0} ሚሴ', other: '{0} ሚሴ'),
+    narrow: UnitCountPattern(_locale, 'ሚሊሰከንድ', one: '{0} ሚሴ', other: '{0} ሚሴ'),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ማይክሮሰከንድ',
-          one: '{0} ማይክሮሰከንድ',
-          other: '{0} ማይክሮሰከንድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ማይክሮሰከንድ',
-          one: '{0} ማሰ',
-          other: '{0} ማሰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ማይክሮሰከንድ',
-          one: '{0} ማሰ',
-          other: '{0} ማሰ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ማይክሮሰከንድ',
+      one: '{0} ማይክሮሰከንድ',
+      other: '{0} ማይክሮሰከንድ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ማይክሮሰከንድ',
+      one: '{0} ማሰ',
+      other: '{0} ማሰ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ማይክሮሰከንድ',
+      one: '{0} ማሰ',
+      other: '{0} ማሰ',
+    ),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ናኖሰከንድ',
-          one: '{0} ናኖሰከንድ',
-          other: '{0} ናኖሰከንድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ናኖሰከንድ',
-          one: '{0} ናኖሰከንድ',
-          other: '{0} ናኖሰከንድ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ናኖሰከንድ',
-          one: '{0} ናኖሰከንድ',
-          other: '{0} ናኖሰከንድ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ናኖሰከንድ',
+      one: '{0} ናኖሰከንድ',
+      other: '{0} ናኖሰከንድ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ናኖሰከንድ',
+      one: '{0} ናኖሰከንድ',
+      other: '{0} ናኖሰከንድ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ናኖሰከንድ',
+      one: '{0} ናኖሰከንድ',
+      other: '{0} ናኖሰከንድ',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'አምፒር',
-          one: '{0} አምፒር',
-          other: '{0} አምፒር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'አምፒር',
-          one: '{0} አምፒር',
-          other: '{0} አምፒር',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'አምፒር',
-          one: '{0} አምፒር',
-          other: '{0} አምፒር',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'አምፒር', one: '{0} አምፒር', other: '{0} አምፒር'),
+    short: UnitCountPattern(
+      _locale,
+      'አምፒር',
+      one: '{0} አምፒር',
+      other: '{0} አምፒር',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'አምፒር',
+      one: '{0} አምፒር',
+      other: '{0} አምፒር',
+    ),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} milliampere',
-          other: '{0} mA',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} mA',
-          other: '{0} mA',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0}mA',
-          other: '{0} mA',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} milliampere',
+      other: '{0} mA',
+    ),
+    short: UnitCountPattern(_locale, 'mA', one: '{0} mA', other: '{0} mA'),
+    narrow: UnitCountPattern(_locale, 'mA', one: '{0}mA', other: '{0} mA'),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ohm',
-          one: '{0} Ω',
-          other: '{0} Ω',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ohm',
-          one: '{0} Ω',
-          other: '{0} Ω',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ohm',
-          one: '{0} Ω',
-          other: '{0} Ω',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ohm', one: '{0} Ω', other: '{0} Ω'),
+    short: UnitCountPattern(_locale, 'ohm', one: '{0} Ω', other: '{0} Ω'),
+    narrow: UnitCountPattern(_locale, 'ohm', one: '{0} Ω', other: '{0} Ω'),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቮልት',
-          one: '{0} ቮልት',
-          other: '{0} ቮልት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቮልት',
-          one: '{0} ቮልት',
-          other: '{0} ቮልት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቮልት',
-          one: '{0} ቮልት',
-          other: '{0} ቮልት',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ቮልት', one: '{0} ቮልት', other: '{0} ቮልት'),
+    short: UnitCountPattern(_locale, 'ቮልት', one: '{0} ቮልት', other: '{0} ቮልት'),
+    narrow: UnitCountPattern(_locale, 'ቮልት', one: '{0} ቮልት', other: '{0} ቮልት'),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎ ካሎሪ',
-          one: '{0} ኪሎ ካሎሪ',
-          other: '{0} ኪሎ ካሎሪ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎ ካሎሪ',
-          one: '{0} ኪሎ ካሎሪ',
-          other: '{0} ኪሎ ካሎሪ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎ ካሎሪ',
-          one: '{0} ኪሎ ካሎሪ',
-          other: '{0} ኪሎ ካሎሪ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎ ካሎሪ',
+      one: '{0} ኪሎ ካሎሪ',
+      other: '{0} ኪሎ ካሎሪ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኪሎ ካሎሪ',
+      one: '{0} ኪሎ ካሎሪ',
+      other: '{0} ኪሎ ካሎሪ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኪሎ ካሎሪ',
+      one: '{0} ኪሎ ካሎሪ',
+      other: '{0} ኪሎ ካሎሪ',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካሎሪ',
-          one: '{0} ካሎሪ',
-          other: '{0} ካሎሪ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካሎሪ',
-          one: '{0} ካሎሪ',
-          other: '{0} ካሎሪ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካሎሪ',
-          one: '{0} ካሎሪ',
-          other: '{0} ካሎሪ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ካሎሪ', one: '{0} ካሎሪ', other: '{0} ካሎሪ'),
+    short: UnitCountPattern(_locale, 'ካሎሪ', one: '{0} ካሎሪ', other: '{0} ካሎሪ'),
+    narrow: UnitCountPattern(_locale, 'ካሎሪ', one: '{0} ካሎሪ', other: '{0} ካሎሪ'),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካሎሪ',
-          one: '{0} ካሎሪ',
-          other: '{0} ካሎሪ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካሎሪ',
-          one: '{0} ካሎሪ',
-          other: '{0} ካሎሪ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካሎሪ',
-          one: '{0} ካሎሪ',
-          other: '{0} ካሎሪ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ካሎሪ', one: '{0} ካሎሪ', other: '{0} ካሎሪ'),
+    short: UnitCountPattern(_locale, 'ካሎሪ', one: '{0} ካሎሪ', other: '{0} ካሎሪ'),
+    narrow: UnitCountPattern(_locale, 'ካሎሪ', one: '{0} ካሎሪ', other: '{0} ካሎሪ'),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪጁ',
-          one: '{0} ኪጁ',
-          other: '{0} ኪጁ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪጁ',
-          one: '{0} ኪጁ',
-          other: '{0} ኪጁ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪጁ',
-          one: '{0} ኪጁ',
-          other: '{0} ኪጁ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኪጁ', one: '{0} ኪጁ', other: '{0} ኪጁ'),
+    short: UnitCountPattern(_locale, 'ኪጁ', one: '{0} ኪጁ', other: '{0} ኪጁ'),
+    narrow: UnitCountPattern(_locale, 'ኪጁ', one: '{0} ኪጁ', other: '{0} ኪጁ'),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጁልስ',
-          one: '{0} ጁልስ',
-          other: '{0} ጁልስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጁልስ',
-          one: '{0} ጁልስ',
-          other: '{0} ጁልስ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጁልስ',
-          one: '{0} ጁልስ',
-          other: '{0} ጁልስ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጁልስ', one: '{0} ጁልስ', other: '{0} ጁልስ'),
+    short: UnitCountPattern(_locale, 'ጁልስ', one: '{0} ጁልስ', other: '{0} ጁልስ'),
+    narrow: UnitCountPattern(_locale, 'ጁልስ', one: '{0} ጁልስ', other: '{0} ጁልስ'),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} kilowatt hour',
-          other: '{0} kWh',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} kWh',
-          other: '{0} kWh',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0}kWh',
-          other: '{0} kWh',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0} kilowatt hour',
+      other: '{0} kWh',
+    ),
+    short: UnitCountPattern(_locale, 'kWh', one: '{0} kWh', other: '{0} kWh'),
+    narrow: UnitCountPattern(_locale, 'kWh', one: '{0}kWh', other: '{0} kWh'),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኤቮ',
-          one: '{0} ኤቮ',
-          other: '{0} ኤቮ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኤቮ',
-          one: '{0} ኤቮ',
-          other: '{0} ኤቮ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኤቮ',
-          one: '{0} ኤቮ',
-          other: '{0} ኤቮ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኤቮ', one: '{0} ኤቮ', other: '{0} ኤቮ'),
+    short: UnitCountPattern(_locale, 'ኤቮ', one: '{0} ኤቮ', other: '{0} ኤቮ'),
+    narrow: UnitCountPattern(_locale, 'ኤቮ', one: '{0} ኤቮ', other: '{0} ኤቮ'),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0} British thermal unit',
-          other: '{0} Btu',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0} Btu',
-          other: '{0} Btu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0}Btu',
-          other: '{0} Btu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Btu',
+      one: '{0} British thermal unit',
+      other: '{0} Btu',
+    ),
+    short: UnitCountPattern(_locale, 'Btu', one: '{0} Btu', other: '{0} Btu'),
+    narrow: UnitCountPattern(_locale, 'Btu', one: '{0}Btu', other: '{0} Btu'),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'US therm',
-          one: '{0} US therm',
-          other: '{0} US therm',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'US therm',
-          one: '{0} US therm',
-          other: '{0} US therm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'US therm',
-          one: '{0}US therm',
-          other: '{0} US therm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'US therm',
+      one: '{0} US therm',
+      other: '{0} US therm',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'US therm',
+      one: '{0} US therm',
+      other: '{0} US therm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'US therm',
+      one: '{0}US therm',
+      other: '{0} US therm',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} pound of force',
-          other: '{0} lbf',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} lbf',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0}lbf',
-          other: '{0} lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0} pound of force',
+      other: '{0} lbf',
+    ),
+    short: UnitCountPattern(_locale, 'lbf', one: '{0} lbf', other: '{0} lbf'),
+    narrow: UnitCountPattern(_locale, 'lbf', one: '{0}lbf', other: '{0} lbf'),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኒ',
-          one: '{0} ኒ',
-          other: '{0} ኒ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኒ',
-          one: '{0} ኒ',
-          other: '{0} ኒ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኒ',
-          one: '{0} ኒ',
-          other: '{0} ኒ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኒ', one: '{0} ኒ', other: '{0} ኒ'),
+    short: UnitCountPattern(_locale, 'ኒ', one: '{0} ኒ', other: '{0} ኒ'),
+    narrow: UnitCountPattern(_locale, 'ኒ', one: '{0} ኒ', other: '{0} ኒ'),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
-          one: '{0} ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
-          other: '{0} ኪሎዋት-ሰዓታት በየ 100 ኪሎሜትሮች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
-          other: '{0} kWh/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
-          other: '{0} kWh/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
+      one: '{0} ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
+      other: '{0} ኪሎዋት-ሰዓታት በየ 100 ኪሎሜትሮች',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
+      other: '{0} kWh/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} ኪሎዋት-ሰዓት በየ 100 ኪሎሜትሮች',
+      other: '{0} kWh/100km',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጊጋኸርዝ',
-          one: '{0} ጊጋኸርዝ',
-          other: '{0} ጊጋኸርዝ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጊጋኸርዝ',
-          one: '{0} ጊጋኸርዝ',
-          other: '{0} ጊጋኸርዝ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጊጋኸርዝ',
-          one: '{0} ጊጋኸርዝ',
-          other: '{0} ጊጋኸርዝ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ጊጋኸርዝ',
+      one: '{0} ጊጋኸርዝ',
+      other: '{0} ጊጋኸርዝ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ጊጋኸርዝ',
+      one: '{0} ጊጋኸርዝ',
+      other: '{0} ጊጋኸርዝ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ጊጋኸርዝ',
+      one: '{0} ጊጋኸርዝ',
+      other: '{0} ጊጋኸርዝ',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜጋኸርዝ',
-          one: '{0} ሜጋኸርዝ',
-          other: '{0} ሜጋኸርዝ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜጋኸርዝ',
-          one: '{0} ሜጋኸርዝ',
-          other: '{0} ሜጋኸርዝ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜጋኸርዝ',
-          one: '{0} ሜጋኸርዝ',
-          other: '{0} ሜጋኸርዝ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሜጋኸርዝ',
+      one: '{0} ሜጋኸርዝ',
+      other: '{0} ሜጋኸርዝ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሜጋኸርዝ',
+      one: '{0} ሜጋኸርዝ',
+      other: '{0} ሜጋኸርዝ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሜጋኸርዝ',
+      one: '{0} ሜጋኸርዝ',
+      other: '{0} ሜጋኸርዝ',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎኸርዝ',
-          one: '{0} ኪሎኸርዝ',
-          other: '{0} ኪሎኸርዝ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎኸርዝ',
-          one: '{0} ኪሎኸርዝ',
-          other: '{0} ኪሎኸርዝ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎኸርዝ',
-          one: '{0} ኪሎኸርዝ',
-          other: '{0} ኪሎኸርዝ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎኸርዝ',
+      one: '{0} ኪሎኸርዝ',
+      other: '{0} ኪሎኸርዝ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኪሎኸርዝ',
+      one: '{0} ኪሎኸርዝ',
+      other: '{0} ኪሎኸርዝ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኪሎኸርዝ',
+      one: '{0} ኪሎኸርዝ',
+      other: '{0} ኪሎኸርዝ',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኸርዝ',
-          one: '{0} ኸርዝ',
-          other: '{0} ኸርዝ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኸርዝ',
-          one: '{0} ኸርዝ',
-          other: '{0} ኸርዝ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኸርዝ',
-          one: '{0} ኸርዝ',
-          other: '{0} ኸርዝ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኸርዝ', one: '{0} ኸርዝ', other: '{0} ኸርዝ'),
+    short: UnitCountPattern(_locale, 'ኸርዝ', one: '{0} ኸርዝ', other: '{0} ኸርዝ'),
+    narrow: UnitCountPattern(_locale, 'ኸርዝ', one: '{0} ኸርዝ', other: '{0} ኸርዝ'),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ታይፖግራፊክ em',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} em',
-          other: '{0} em',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0}em',
-          other: '{0} em',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ታይፖግራፊክ em',
+      one: '{0} em',
+      other: '{0} em',
+    ),
+    short: UnitCountPattern(_locale, 'em', one: '{0} em', other: '{0} em'),
+    narrow: UnitCountPattern(_locale, 'em', one: '{0}em', other: '{0} em'),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፒክስል',
-          one: '{0} ፒክስል',
-          other: '{0} ፒክስል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፒክስል',
-          one: '{0} ፒክስል',
-          other: '{0} ፒክስል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፒክስል',
-          one: '{0} ፒክስል',
-          other: '{0} ፒክስል',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ፒክስል', one: '{0} ፒክስል', other: '{0} ፒክስል'),
+    short: UnitCountPattern(
+      _locale,
+      'ፒክስል',
+      one: '{0} ፒክስል',
+      other: '{0} ፒክስል',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ፒክስል',
+      one: '{0} ፒክስል',
+      other: '{0} ፒክስል',
+    ),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜጋ ፒክስል',
-          one: '{0} ሜጋ ፒክስል',
-          other: '{0} ሜጋ ፒክስል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜጋ ፒክስል',
-          one: '{0} ሜጋ ፒክስል',
-          other: '{0} ሜጋ ፒክስል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜጋ ፒክስል',
-          one: '{0} ሜፒ',
-          other: '{0} ሜፒ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሜጋ ፒክስል',
+      one: '{0} ሜጋ ፒክስል',
+      other: '{0} ሜጋ ፒክስል',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሜጋ ፒክስል',
+      one: '{0} ሜጋ ፒክስል',
+      other: '{0} ሜጋ ፒክስል',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሜጋ ፒክስል',
+      one: '{0} ሜፒ',
+      other: '{0} ሜፒ',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፒበሴሜ',
-          one: '{0} ፒበሴሜ',
-          other: '{0} ፒበሴሜ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፒበሴሜ',
-          one: '{0} ፒበሴሜ',
-          other: '{0} ፒበሴሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፒበሴሜ',
-          one: '{0} ፒበሴሜ',
-          other: '{0} ፒበሴሜ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ፒበሴሜ', one: '{0} ፒበሴሜ', other: '{0} ፒበሴሜ'),
+    short: UnitCountPattern(
+      _locale,
+      'ፒበሴሜ',
+      one: '{0} ፒበሴሜ',
+      other: '{0} ፒበሴሜ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ፒበሴሜ',
+      one: '{0} ፒበሴሜ',
+      other: '{0} ፒበሴሜ',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፒበኢ',
-          one: '{0} ፒበኢ',
-          other: '{0} ፒበኢ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፒበኢ',
-          one: '{0} ፒበኢ',
-          other: '{0} ፒበኢ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፒበኢ',
-          one: '{0} ፒበኢ',
-          other: '{0} ፒበኢ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ፒበኢ', one: '{0} ፒበኢ', other: '{0} ፒበኢ'),
+    short: UnitCountPattern(_locale, 'ፒበኢ', one: '{0} ፒበኢ', other: '{0} ፒበኢ'),
+    narrow: UnitCountPattern(_locale, 'ፒበኢ', one: '{0} ፒበኢ', other: '{0} ፒበኢ'),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ነበሴሜ',
-          one: '{0} ነበሴሜ',
-          other: '{0} ነበሴሜ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ነበሴሜ',
-          one: '{0} ነበሴሜ',
-          other: '{0} ነበሴሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ነበሴሜ',
-          one: '{0} ነበሴሜ',
-          other: '{0} ነበሴሜ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ነበሴሜ', one: '{0} ነበሴሜ', other: '{0} ነበሴሜ'),
+    short: UnitCountPattern(
+      _locale,
+      'ነበሴሜ',
+      one: '{0} ነበሴሜ',
+      other: '{0} ነበሴሜ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ነበሴሜ',
+      one: '{0} ነበሴሜ',
+      other: '{0} ነበሴሜ',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ነበኢ',
-          one: '{0} ነበኢ',
-          other: '{0} ነበኢ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ነበኢ',
-          one: '{0} ነበኢ',
-          other: '{0} ነበኢ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ነበኢ',
-          one: '{0} ነበኢ',
-          other: '{0} ነበኢ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ነበኢ', one: '{0} ነበኢ', other: '{0} ነበኢ'),
+    short: UnitCountPattern(_locale, 'ነበኢ', one: '{0} ነበኢ', other: '{0} ነበኢ'),
+    narrow: UnitCountPattern(_locale, 'ነበኢ', one: '{0} ነበኢ', other: '{0} ነበኢ'),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ነቁጥ',
-          one: '{0} ነቁጥ',
-          other: '{0} ነቁጥ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ነቁጥ',
-          one: '{0} ነቁጥ',
-          other: '{0} ነቁጥ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ነቁጥ',
-          one: '{0} ነቁጥ',
-          other: '{0} ነቁጥ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ነቁጥ', one: '{0} ነቁጥ', other: '{0} ነቁጥ'),
+    short: UnitCountPattern(_locale, 'ነቁጥ', one: '{0} ነቁጥ', other: '{0} ነቁጥ'),
+    narrow: UnitCountPattern(_locale, 'ነቁጥ', one: '{0} ነቁጥ', other: '{0} ነቁጥ'),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} earth radius',
-          other: '{0} R⊕',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} R⊕',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0}R⊕',
-          other: '{0} R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} earth radius',
+      other: '{0} R⊕',
+    ),
+    short: UnitCountPattern(_locale, 'R⊕', one: '{0} R⊕', other: '{0} R⊕'),
+    narrow: UnitCountPattern(_locale, 'R⊕', one: '{0}R⊕', other: '{0} R⊕'),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎሜትር',
-          one: '{0} ኪሎሜትር',
-          other: '{0} ኪሎሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎሜትር',
-          one: '{0} ኪሜ',
-          other: '{0} ኪሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎሜትር',
-          one: '{0} ኪሜ',
-          other: '{0} ኪሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎሜትር',
+      one: '{0} ኪሎሜትር',
+      other: '{0} ኪሎሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ኪሎሜትር', one: '{0} ኪሜ', other: '{0} ኪሜ'),
+    narrow: UnitCountPattern(_locale, 'ኪሎሜትር', one: '{0} ኪሜ', other: '{0} ኪሜ'),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜትር',
-          one: '{0} ሜትር',
-          other: '{0} ሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜትር',
-          one: '{0} ሜ',
-          other: '{0} ሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜትር',
-          one: '{0} ሜ',
-          other: '{0} ሜ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሜትር', one: '{0} ሜትር', other: '{0} ሜትር'),
+    short: UnitCountPattern(_locale, 'ሜትር', one: '{0} ሜ', other: '{0} ሜ'),
+    narrow: UnitCountPattern(_locale, 'ሜትር', one: '{0} ሜ', other: '{0} ሜ'),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዴሲ ሜትር',
-          one: '{0} ዴሲ ሜትር',
-          other: '{0} ዴሲ ሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዴሜ',
-          one: '{0} ዴሜ',
-          other: '{0} ዴሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዴሜ',
-          one: '{0} ዴሜ',
-          other: '{0} ዴሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ዴሲ ሜትር',
+      one: '{0} ዴሲ ሜትር',
+      other: '{0} ዴሲ ሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ዴሜ', one: '{0} ዴሜ', other: '{0} ዴሜ'),
+    narrow: UnitCountPattern(_locale, 'ዴሜ', one: '{0} ዴሜ', other: '{0} ዴሜ'),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሴንቲሜትር',
-          one: '{0} ሴንቲሜትር',
-          other: '{0} ሴንቲሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሴንቲሜትር',
-          one: '{0} ሴሜ',
-          other: '{0} ሴሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሴንቲሜትር',
-          one: '{0} ሴሜ',
-          other: '{0} ሴሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሴንቲሜትር',
+      one: '{0} ሴንቲሜትር',
+      other: '{0} ሴንቲሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ሴንቲሜትር', one: '{0} ሴሜ', other: '{0} ሴሜ'),
+    narrow: UnitCountPattern(_locale, 'ሴንቲሜትር', one: '{0} ሴሜ', other: '{0} ሴሜ'),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሚሊሜትር',
-          one: '{0} ሚሊሜትር',
-          other: '{0} ሚሊሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሚሊሜትር',
-          one: '{0} ሚሜ',
-          other: '{0} ሚሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሚሊሜትር',
-          one: '{0} ሚሜ',
-          other: '{0} ሚሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሚሊሜትር',
+      one: '{0} ሚሊሜትር',
+      other: '{0} ሚሊሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ሚሊሜትር', one: '{0} ሚሜ', other: '{0} ሚሜ'),
+    narrow: UnitCountPattern(_locale, 'ሚሊሜትር', one: '{0} ሚሜ', other: '{0} ሚሜ'),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ማይክሮ ሜትር',
-          one: '{0} ማይክሮ ሜትር',
-          other: '{0} ማይክሮ ሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ማሜ',
-          one: '{0} ማሜ',
-          other: '{0} ማሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ማሜ',
-          one: '{0} ማሜ',
-          other: '{0} ማሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ማይክሮ ሜትር',
+      one: '{0} ማይክሮ ሜትር',
+      other: '{0} ማይክሮ ሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ማሜ', one: '{0} ማሜ', other: '{0} ማሜ'),
+    narrow: UnitCountPattern(_locale, 'ማሜ', one: '{0} ማሜ', other: '{0} ማሜ'),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ናኖ ሜትር',
-          one: '{0} ናኖ ሜትር',
-          other: '{0} ናኖ ሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ናሜ',
-          one: '{0} ናሜ',
-          other: '{0} ናሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ናሜ',
-          one: '{0} ናሜ',
-          other: '{0} ናሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ናኖ ሜትር',
+      one: '{0} ናኖ ሜትር',
+      other: '{0} ናኖ ሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ናሜ', one: '{0} ናሜ', other: '{0} ናሜ'),
+    narrow: UnitCountPattern(_locale, 'ናሜ', one: '{0} ናሜ', other: '{0} ናሜ'),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፒኮሜትር',
-          one: '{0} ፒኮሜትር',
-          other: '{0} ፒኮሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፒኮሜትር',
-          one: '{0} ፒሜ',
-          other: '{0} ፒሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፒኮሜትር',
-          one: '{0} ፒሜ',
-          other: '{0} ፒሜ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ፒኮሜትር',
+      one: '{0} ፒኮሜትር',
+      other: '{0} ፒኮሜትር',
+    ),
+    short: UnitCountPattern(_locale, 'ፒኮሜትር', one: '{0} ፒሜ', other: '{0} ፒሜ'),
+    narrow: UnitCountPattern(_locale, 'ፒኮሜትር', one: '{0} ፒሜ', other: '{0} ፒሜ'),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ማይል',
-          one: '{0} ማይል',
-          other: '{0} ማይል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ማይል',
-          one: '{0} ማይል',
-          other: '{0} ማይል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ማይል',
-          one: '{0} ማይል',
-          other: '{0} ማይል',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ማይል', one: '{0} ማይል', other: '{0} ማይል'),
+    short: UnitCountPattern(_locale, 'ማይል', one: '{0} ማይል', other: '{0} ማይል'),
+    narrow: UnitCountPattern(_locale, 'ማይል', one: '{0} ማይል', other: '{0} ማይል'),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ያርድ',
-          one: '{0} ያርድ',
-          other: '{0} ያርድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ያርድ',
-          one: '{0} ያርድ',
-          other: '{0} ያርድ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ያርድ',
-          one: '{0} ያርድ',
-          other: '{0} ያርድ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ያርድ', one: '{0} ያርድ', other: '{0} ያርድ'),
+    short: UnitCountPattern(_locale, 'ያርድ', one: '{0} ያርድ', other: '{0} ያርድ'),
+    narrow: UnitCountPattern(_locale, 'ያርድ', one: '{0} ያርድ', other: '{0} ያርድ'),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጫማ',
-          one: '{0} ጫማ',
-          other: '{0} ጫማ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጫማ',
-          one: '{0} ጫማ',
-          other: '{0} ጫማ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጫማ',
-          one: '{0} ጫማ',
-          other: '{0} ጫማ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጫማ', one: '{0} ጫማ', other: '{0} ጫማ'),
+    short: UnitCountPattern(_locale, 'ጫማ', one: '{0} ጫማ', other: '{0} ጫማ'),
+    narrow: UnitCountPattern(_locale, 'ጫማ', one: '{0} ጫማ', other: '{0} ጫማ'),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኢንች',
-          one: '{0} ኢንች',
-          other: '{0} ኢንች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኢንች',
-          one: '{0} ኢንች',
-          other: '{0} ኢንች',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኢንች',
-          one: '{0} ኢንች',
-          other: '{0} ኢንች',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኢንች', one: '{0} ኢንች', other: '{0} ኢንች'),
+    short: UnitCountPattern(_locale, 'ኢንች', one: '{0} ኢንች', other: '{0} ኢንች'),
+    narrow: UnitCountPattern(_locale, 'ኢንች', one: '{0} ኢንች', other: '{0} ኢንች'),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pc',
-          one: '{0} parsec',
-          other: '{0} pc',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pc',
-          one: '{0} pc',
-          other: '{0} pc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pc',
-          one: '{0}pc',
-          other: '{0} pc',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'pc', one: '{0} parsec', other: '{0} pc'),
+    short: UnitCountPattern(_locale, 'pc', one: '{0} pc', other: '{0} pc'),
+    narrow: UnitCountPattern(_locale, 'pc', one: '{0}pc', other: '{0} pc'),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የብርሃን ዓመት',
-          one: '{0} የብርሃን ዓመት',
-          other: '{0} የብርሃን ዓመት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የብርሃን ዓመት',
-          one: '{0} ብዓ',
-          other: '{0} ብዓ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የብርሃን ዓመት',
-          one: '{0} ብዓ',
-          other: '{0} ብዓ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የብርሃን ዓመት',
+      one: '{0} የብርሃን ዓመት',
+      other: '{0} የብርሃን ዓመት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የብርሃን ዓመት',
+      one: '{0} ብዓ',
+      other: '{0} ብዓ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የብርሃን ዓመት',
+      one: '{0} ብዓ',
+      other: '{0} ብዓ',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'au',
-          one: '{0} astronomical unit',
-          other: '{0} au',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'au',
-          one: '{0} au',
-          other: '{0} au',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'au',
-          one: '{0}au',
-          other: '{0} au',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'au',
+      one: '{0} astronomical unit',
+      other: '{0} au',
+    ),
+    short: UnitCountPattern(_locale, 'au', one: '{0} au', other: '{0} au'),
+    narrow: UnitCountPattern(_locale, 'au', one: '{0}au', other: '{0} au'),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፈሎን',
-          one: '{0} ፈሎን',
-          other: '{0} ፈሎን',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፈሎን',
-          one: '{0} ፈሎን',
-          other: '{0} ፈሎን',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፈሎን',
-          one: '{0} ፈሎን',
-          other: '{0} ፈሎን',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ፈሎን', one: '{0} ፈሎን', other: '{0} ፈሎን'),
+    short: UnitCountPattern(_locale, 'ፈሎን', one: '{0} ፈሎን', other: '{0} ፈሎን'),
+    narrow: UnitCountPattern(_locale, 'ፈሎን', one: '{0} ፈሎን', other: '{0} ፈሎን'),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ተዳክሞዎች',
-          one: '{0} ተዳክሞ',
-          other: '{0} ተዳክሞዎች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ተዳክሞዎች',
-          one: '{0} ተዳክሞ',
-          other: '{0} ተዳክሞ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ተዳክሞዎች',
-          one: '{0} ተዳክሞ',
-          other: '{0} ተዳክሞ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ተዳክሞዎች',
+      one: '{0} ተዳክሞ',
+      other: '{0} ተዳክሞዎች',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ተዳክሞዎች',
+      one: '{0} ተዳክሞ',
+      other: '{0} ተዳክሞ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ተዳክሞዎች',
+      one: '{0} ተዳክሞ',
+      other: '{0} ተዳክሞ',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nmi',
-          one: '{0} nautical mile',
-          other: '{0} nmi',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nmi',
-          one: '{0} nmi',
-          other: '{0} nmi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ማይለባህር',
-          one: '{0} ማይለባህር',
-          other: '{0} ማይለባህር',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nmi',
+      one: '{0} nautical mile',
+      other: '{0} nmi',
+    ),
+    short: UnitCountPattern(_locale, 'nmi', one: '{0} nmi', other: '{0} nmi'),
+    narrow: UnitCountPattern(
+      _locale,
+      'ማይለባህር',
+      one: '{0} ማይለባህር',
+      other: '{0} ማይለባህር',
+    ),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ስማይል',
-          one: '{0} ስማይል',
-          other: '{0} ስማይል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ስማይል',
-          one: '{0} ስማይል',
-          other: '{0} ስማይል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ስማይል',
-          one: '{0} ስማይል',
-          other: '{0} ስማይል',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ስማይል', one: '{0} ስማይል', other: '{0} ስማይል'),
+    short: UnitCountPattern(
+      _locale,
+      'ስማይል',
+      one: '{0} ስማይል',
+      other: '{0} ስማይል',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ስማይል',
+      one: '{0} ስማይል',
+      other: '{0} ስማይል',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ነጥብ',
-          one: '{0} ነጥብ',
-          other: '{0} ነጥብ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ነጥብ',
-          one: '{0} ነጥብ',
-          other: '{0} ነጥብ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ነጥብ',
-          one: '{0} ነጥብ',
-          other: '{0} ነጥብ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ነጥብ', one: '{0} ነጥብ', other: '{0} ነጥብ'),
+    short: UnitCountPattern(_locale, 'ነጥብ', one: '{0} ነጥብ', other: '{0} ነጥብ'),
+    narrow: UnitCountPattern(_locale, 'ነጥብ', one: '{0} ነጥብ', other: '{0} ነጥብ'),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሶላር ራዲ',
-          one: '{0} ሶላር ዳዲየስ',
-          other: '{0} ሶላር ራዲ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሶላር ራዲ',
-          one: '{0} ሶላር ዳዲየስ',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሶላር ራዲ',
-          one: '{0} ሶላር ዳዲየስ',
-          other: '{0} R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሶላር ራዲ',
+      one: '{0} ሶላር ዳዲየስ',
+      other: '{0} ሶላር ራዲ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሶላር ራዲ',
+      one: '{0} ሶላር ዳዲየስ',
+      other: '{0} R☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሶላር ራዲ',
+      one: '{0} ሶላር ዳዲየስ',
+      other: '{0} R☉',
+    ),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lx',
-          one: '{0} lx',
-          other: '{0} lx',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lx',
-          one: '{0} lx',
-          other: '{0} lx',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lux',
-          one: '{0} lx',
-          other: '{0} lx',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'lx', one: '{0} lx', other: '{0} lx'),
+    short: UnitCountPattern(_locale, 'lx', one: '{0} lx', other: '{0} lx'),
+    narrow: UnitCountPattern(_locale, 'lux', one: '{0} lx', other: '{0} lx'),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካንዴላ',
-          one: '{0} ካንዴላ',
-          other: '{0} ካንዴላ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ካንዴላ',
-          one: '{0} ካንዴላ',
-          other: '{0} ካንዴላ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካንዴላ',
-          one: '{0} ካንዴላ',
-          other: '{0} ካንዴላ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ካንዴላ', one: '{0} ካንዴላ', other: '{0} ካንዴላ'),
+    short: UnitCountPattern(
+      _locale,
+      'ካንዴላ',
+      one: '{0} ካንዴላ',
+      other: '{0} ካንዴላ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ካንዴላ',
+      one: '{0} ካንዴላ',
+      other: '{0} ካንዴላ',
+    ),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቱቦ ቀዳዳ',
-          one: '{0} ቱቦ ቀዳዳ',
-          other: '{0} ቱቦ ቀዳዳ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቱቦ ቀዳዳ',
-          one: '{0} ቱቦ ቀዳዳ',
-          other: '{0} ቱቦ ቀዳዳ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቱቦ ቀዳዳ',
-          one: '{0} ቱቦ ቀዳዳ',
-          other: '{0} ቱቦ ቀዳዳ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ቱቦ ቀዳዳ',
+      one: '{0} ቱቦ ቀዳዳ',
+      other: '{0} ቱቦ ቀዳዳ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ቱቦ ቀዳዳ',
+      one: '{0} ቱቦ ቀዳዳ',
+      other: '{0} ቱቦ ቀዳዳ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ቱቦ ቀዳዳ',
+      one: '{0} ቱቦ ቀዳዳ',
+      other: '{0} ቱቦ ቀዳዳ',
+    ),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} solar luminosity',
-          other: '{0} L☉',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} L☉',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0}L☉',
-          other: '{0} L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'L☉',
+      one: '{0} solar luminosity',
+      other: '{0} L☉',
+    ),
+    short: UnitCountPattern(_locale, 'L☉', one: '{0} L☉', other: '{0} L☉'),
+    narrow: UnitCountPattern(_locale, 'L☉', one: '{0}L☉', other: '{0} L☉'),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቶ',
-          one: '{0} ሜትሪክ ቶን',
-          other: '{0} ሜትሪክ ቶኖች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቶ',
-          one: '{0} ቶ',
-          other: '{0} ቶ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቶ',
-          one: '{0} ቶ',
-          other: '{0} ቶ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ቶ',
+      one: '{0} ሜትሪክ ቶን',
+      other: '{0} ሜትሪክ ቶኖች',
+    ),
+    short: UnitCountPattern(_locale, 'ቶ', one: '{0} ቶ', other: '{0} ቶ'),
+    narrow: UnitCountPattern(_locale, 'ቶ', one: '{0} ቶ', other: '{0} ቶ'),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎግራም',
-          one: '{0} ኪሎግራም',
-          other: '{0} ኪሎግራም',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎግራም',
-          one: '{0} ኪግ',
-          other: '{0} ኪግ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎግራም',
-          one: '{0} ኪግ',
-          other: '{0} ኪግ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎግራም',
+      one: '{0} ኪሎግራም',
+      other: '{0} ኪሎግራም',
+    ),
+    short: UnitCountPattern(_locale, 'ኪሎግራም', one: '{0} ኪግ', other: '{0} ኪግ'),
+    narrow: UnitCountPattern(_locale, 'ኪሎግራም', one: '{0} ኪግ', other: '{0} ኪግ'),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ግራም',
-          one: '{0} ግራም',
-          other: '{0} ግራም',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ግራም',
-          one: '{0} ግ',
-          other: '{0} ግ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ግራም',
-          one: '{0} ግ',
-          other: '{0} ግ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ግራም', one: '{0} ግራም', other: '{0} ግራም'),
+    short: UnitCountPattern(_locale, 'ግራም', one: '{0} ግ', other: '{0} ግ'),
+    narrow: UnitCountPattern(_locale, 'ግራም', one: '{0} ግ', other: '{0} ግ'),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሚግ',
-          one: '{0} ሚግ',
-          other: '{0} ሚግ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሚግ',
-          one: '{0} ሚግ',
-          other: '{0} ሚግ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሚሊግራም',
-          one: '{0} ሚሊግራም',
-          other: '{0} ሚሊግራም',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሚግ', one: '{0} ሚግ', other: '{0} ሚግ'),
+    short: UnitCountPattern(_locale, 'ሚግ', one: '{0} ሚግ', other: '{0} ሚግ'),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሚሊግራም',
+      one: '{0} ሚሊግራም',
+      other: '{0} ሚሊግራም',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ማግ',
-          one: '{0} ማግ',
-          other: '{0} ማግ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ማግ',
-          one: '{0} ማግ',
-          other: '{0} ማግ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ማግ',
-          one: '{0} ማግ',
-          other: '{0} ማግ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ማግ', one: '{0} ማግ', other: '{0} ማግ'),
+    short: UnitCountPattern(_locale, 'ማግ', one: '{0} ማግ', other: '{0} ማግ'),
+    narrow: UnitCountPattern(_locale, 'ማግ', one: '{0} ማግ', other: '{0} ማግ'),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቶን',
-          one: '{0} ቶን',
-          other: '{0} ቶን',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቶን',
-          one: '{0} ቶን',
-          other: '{0} ቶን',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቶን',
-          one: '{0} ቶን',
-          other: '{0} ቶን',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ቶን', one: '{0} ቶን', other: '{0} ቶን'),
+    short: UnitCountPattern(_locale, 'ቶን', one: '{0} ቶን', other: '{0} ቶን'),
+    narrow: UnitCountPattern(_locale, 'ቶን', one: '{0} ቶን', other: '{0} ቶን'),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ድንጋይ',
-          one: '{0} ድንጋይ',
-          other: '{0} ድንጋይ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ድንጋይ',
-          one: '{0} ድንጋይ',
-          other: '{0} ድንጋይ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ድንጋይ',
-          one: '{0} ድንጋይ',
-          other: '{0} ድንጋይ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ድንጋይ', one: '{0} ድንጋይ', other: '{0} ድንጋይ'),
+    short: UnitCountPattern(
+      _locale,
+      'ድንጋይ',
+      one: '{0} ድንጋይ',
+      other: '{0} ድንጋይ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ድንጋይ',
+      one: '{0} ድንጋይ',
+      other: '{0} ድንጋይ',
+    ),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፓውንድ',
-          one: '{0} ፓውንድ',
-          other: '{0} ፓውንድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፓውንድ',
-          one: '{0} ፓውንድ',
-          other: '{0} ፓውንድ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፓውንድ',
-          one: '{0} ፓውንድ',
-          other: '{0} ፓውንድ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ፓውንድ', one: '{0} ፓውንድ', other: '{0} ፓውንድ'),
+    short: UnitCountPattern(
+      _locale,
+      'ፓውንድ',
+      one: '{0} ፓውንድ',
+      other: '{0} ፓውንድ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ፓውንድ',
+      one: '{0} ፓውንድ',
+      other: '{0} ፓውንድ',
+    ),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'አውንስ',
-          one: '{0} አውንስ',
-          other: '{0} አውንስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'አውንስ',
-          one: '{0} አውንስ',
-          other: '{0} አውንስ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'አውንስ',
-          one: '{0} አውንስ',
-          other: '{0} አውንስ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'አውንስ', one: '{0} አውንስ', other: '{0} አውንስ'),
+    short: UnitCountPattern(
+      _locale,
+      'አውንስ',
+      one: '{0} አውንስ',
+      other: '{0} አውንስ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'አውንስ',
+      one: '{0} አውንስ',
+      other: '{0} አውንስ',
+    ),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'oz t',
-          one: '{0} troy ounce',
-          other: '{0} oz t',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'oz t',
-          one: '{0} oz t',
-          other: '{0} oz t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz t',
-          one: '{0}oz t',
-          other: '{0} oz t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'oz t',
+      one: '{0} troy ounce',
+      other: '{0} oz t',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'oz t',
+      one: '{0} oz t',
+      other: '{0} oz t',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'oz t',
+      one: '{0}oz t',
+      other: '{0} oz t',
+    ),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ካራቶች',
-          one: '{0} ካራት',
-          other: '{0} CD',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'CD',
-          one: '{0} ካራት',
-          other: '{0} CD',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ካራት',
-          one: '{0} ካራት',
-          other: '{0} CD',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ካራቶች', one: '{0} ካራት', other: '{0} CD'),
+    short: UnitCountPattern(_locale, 'CD', one: '{0} ካራት', other: '{0} CD'),
+    narrow: UnitCountPattern(_locale, 'ካራት', one: '{0} ካራት', other: '{0} CD'),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዳልተንስ',
-          one: '{0} ዳልተንስ',
-          other: '{0} ዳልተንስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዳልተንስ',
-          one: '{0} ዳልተንስ',
-          other: '{0} ዳልተንስ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዳልተንስ',
-          one: '{0} ዳልተንስ',
-          other: '{0} ዳልተንስ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ዳልተንስ',
+      one: '{0} ዳልተንስ',
+      other: '{0} ዳልተንስ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ዳልተንስ',
+      one: '{0} ዳልተንስ',
+      other: '{0} ዳልተንስ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ዳልተንስ',
+      one: '{0} ዳልተንስ',
+      other: '{0} ዳልተንስ',
+    ),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኤርዝማስስ',
-          one: '{0} ኤርዝማስስ',
-          other: '{0} ኤርዝማስስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኤርዝማስስ',
-          one: '{0} ኤርዝማስስ',
-          other: '{0} M⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኤርዝማስስ',
-          one: '{0} ኤርዝማስስ',
-          other: '{0} M⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኤርዝማስስ',
+      one: '{0} ኤርዝማስስ',
+      other: '{0} ኤርዝማስስ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኤርዝማስስ',
+      one: '{0} ኤርዝማስስ',
+      other: '{0} M⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኤርዝማስስ',
+      one: '{0} ኤርዝማስስ',
+      other: '{0} M⊕',
+    ),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሶላር ማስስ',
-          one: '{0} ሶላር ማስስ',
-          other: '{0} ሶላር ማስስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሶላር ማስስ',
-          one: '{0} ሶላር ማስስ',
-          other: '{0} M☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሶላር ማስስ',
-          one: '{0} ሶላር ማስስ',
-          other: '{0} M☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሶላር ማስስ',
+      one: '{0} ሶላር ማስስ',
+      other: '{0} ሶላር ማስስ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሶላር ማስስ',
+      one: '{0} ሶላር ማስስ',
+      other: '{0} M☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሶላር ማስስ',
+      one: '{0} ሶላር ማስስ',
+      other: '{0} M☉',
+    ),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጥራ ጥሬ',
-          one: '{0} ጥራ ጥሬ',
-          other: '{0} ጥራ ጥሬ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጥራ ጥሬ',
-          one: '{0} ጥራ ጥሬ',
-          other: '{0} ጥራ ጥሬ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጥራ ጥሬ',
-          one: '{0} ጥራ ጥሬ',
-          other: '{0} ጥራ ጥሬ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ጥራ ጥሬ',
+      one: '{0} ጥራ ጥሬ',
+      other: '{0} ጥራ ጥሬ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ጥራ ጥሬ',
+      one: '{0} ጥራ ጥሬ',
+      other: '{0} ጥራ ጥሬ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ጥራ ጥሬ',
+      one: '{0} ጥራ ጥሬ',
+      other: '{0} ጥራ ጥሬ',
+    ),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጊጋ ዋት',
-          one: '{0} ጊዋ',
-          other: '{0} ጊዋ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጊጋ ዋት',
-          one: '{0} ጊዋ',
-          other: '{0} ጊዋ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጊዋ',
-          one: '{0} ጊዋ',
-          other: '{0} ጊዋ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጊጋ ዋት', one: '{0} ጊዋ', other: '{0} ጊዋ'),
+    short: UnitCountPattern(_locale, 'ጊጋ ዋት', one: '{0} ጊዋ', other: '{0} ጊዋ'),
+    narrow: UnitCountPattern(_locale, 'ጊዋ', one: '{0} ጊዋ', other: '{0} ጊዋ'),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜጋ ዋት',
-          one: '{0} ሜዋ',
-          other: '{0} ሜዋ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜዋ',
-          one: '{0} ሜዋ',
-          other: '{0} ሜዋ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜዋ',
-          one: '{0} ሜዋ',
-          other: '{0} ሜዋ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሜጋ ዋት', one: '{0} ሜዋ', other: '{0} ሜዋ'),
+    short: UnitCountPattern(_locale, 'ሜዋ', one: '{0} ሜዋ', other: '{0} ሜዋ'),
+    narrow: UnitCountPattern(_locale, 'ሜዋ', one: '{0} ሜዋ', other: '{0} ሜዋ'),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎዋት',
-          one: '{0} ኪሎዋት',
-          other: '{0} ኪሎዋት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎዋት',
-          one: '{0} ኪዋ',
-          other: '{0} ኪዋ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎዋት',
-          one: '{0} ኪዋ',
-          other: '{0} ኪዋ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኪሎዋት', one: '{0} ኪሎዋት', other: '{0} ኪሎዋት'),
+    short: UnitCountPattern(_locale, 'ኪሎዋት', one: '{0} ኪዋ', other: '{0} ኪዋ'),
+    narrow: UnitCountPattern(_locale, 'ኪሎዋት', one: '{0} ኪዋ', other: '{0} ኪዋ'),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዋት',
-          one: '{0} ዋት',
-          other: '{0} ዋት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዋት',
-          one: '{0} ዋ',
-          other: '{0} ዋ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዋት',
-          one: '{0} ዋ',
-          other: '{0} ዋ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ዋት', one: '{0} ዋት', other: '{0} ዋት'),
+    short: UnitCountPattern(_locale, 'ዋት', one: '{0} ዋ', other: '{0} ዋ'),
+    narrow: UnitCountPattern(_locale, 'ዋት', one: '{0} ዋ', other: '{0} ዋ'),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሚሊ ዋት',
-          one: '{0} ሚዋ',
-          other: '{0} ሚዋ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሚዋ',
-          one: '{0} ሚዋ',
-          other: '{0} ሚዋ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሚዋ',
-          one: '{0} ሚዋ',
-          other: '{0} ሚዋ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሚሊ ዋት', one: '{0} ሚዋ', other: '{0} ሚዋ'),
+    short: UnitCountPattern(_locale, 'ሚዋ', one: '{0} ሚዋ', other: '{0} ሚዋ'),
+    narrow: UnitCountPattern(_locale, 'ሚዋ', one: '{0} ሚዋ', other: '{0} ሚዋ'),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የፈረስ ጉልበት',
-          one: '{0} የፈረስ ጉልበት',
-          other: '{0} የፈረስ ጉልበት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የፈረስ ጉልበት',
-          one: '{0} የፈጉ',
-          other: '{0} የፈጉ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የፈረስ ጉልበት',
-          one: '{0} የፈረስ ኃይል',
-          other: '{0} የፈረስ ኃይል',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የፈረስ ጉልበት',
+      one: '{0} የፈረስ ጉልበት',
+      other: '{0} የፈረስ ጉልበት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የፈረስ ጉልበት',
+      one: '{0} የፈጉ',
+      other: '{0} የፈጉ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የፈረስ ጉልበት',
+      one: '{0} የፈረስ ኃይል',
+      other: '{0} የፈረስ ኃይል',
+    ),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mm Hg',
-          one: '{0} millimeter of mercury',
-          other: '{0} mm Hg',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mm Hg',
-          one: '{0} mmHg',
-          other: '{0} mm Hg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mm Hg',
-          one: '{0}mmHg',
-          other: '{0} mm Hg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mm Hg',
+      one: '{0} millimeter of mercury',
+      other: '{0} mm Hg',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mm Hg',
+      one: '{0} mmHg',
+      other: '{0} mm Hg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mm Hg',
+      one: '{0}mmHg',
+      other: '{0} mm Hg',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} pound-force per square inch',
-          other: '{0} psi',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} psi',
-          other: '{0} psi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0}psi',
-          other: '{0} psi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} pound-force per square inch',
+      other: '{0} psi',
+    ),
+    short: UnitCountPattern(_locale, 'psi', one: '{0} psi', other: '{0} psi'),
+    narrow: UnitCountPattern(_locale, 'psi', one: '{0}psi', other: '{0} psi'),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኢንች ሜርኩሪ',
-          one: '{0} ኢንች ሜርኩሪ',
-          other: '{0} ኢንች ሜርኩሪ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኢንች ሜርኩሪ',
-          one: '{0} ኢሜ',
-          other: '{0} ኢንሜር',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኢንች ሜርኩሪ',
-          one: '{0} inHg',
-          other: '{0} inHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኢንች ሜርኩሪ',
+      one: '{0} ኢንች ሜርኩሪ',
+      other: '{0} ኢንች ሜርኩሪ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኢንች ሜርኩሪ',
+      one: '{0} ኢሜ',
+      other: '{0} ኢንሜር',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኢንች ሜርኩሪ',
+      one: '{0} inHg',
+      other: '{0} inHg',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'አሞሌ',
-          one: '{0} አሞሌ',
-          other: '{0} አሞሌዎች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'አሞሌ',
-          one: '{0} አሞሌ',
-          other: '{0} አሞሌዎች',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'አሞሌ',
-          one: '{0} አሞሌ',
-          other: '{0} አሞሌዎች',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'አሞሌ', one: '{0} አሞሌ', other: '{0} አሞሌዎች'),
+    short: UnitCountPattern(_locale, 'አሞሌ', one: '{0} አሞሌ', other: '{0} አሞሌዎች'),
+    narrow: UnitCountPattern(
+      _locale,
+      'አሞሌ',
+      one: '{0} አሞሌ',
+      other: '{0} አሞሌዎች',
+    ),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሚሊባር',
-          one: '{0} ሚሊባር',
-          other: '{0} ሚሊባር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሚሊባር',
-          one: '{0} ሚባ',
-          other: '{0} ሚባ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሚሊባር',
-          one: '{0} ሚባ',
-          other: '{0} ሚባ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሚሊባር', one: '{0} ሚሊባር', other: '{0} ሚሊባር'),
+    short: UnitCountPattern(_locale, 'ሚሊባር', one: '{0} ሚባ', other: '{0} ሚባ'),
+    narrow: UnitCountPattern(_locale, 'ሚሊባር', one: '{0} ሚባ', other: '{0} ሚባ'),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ከባቢ አየር',
-          one: '{0} ከባቢ አየር',
-          other: '{0} ከባቢ አየር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ከባቢ አየር',
-          one: '{0} ከባቢ አየር',
-          other: '{0} ከባቢ አየር',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ከባቢ አየር',
-          one: '{0} ከአ',
-          other: '{0} ከአ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ከባቢ አየር',
+      one: '{0} ከባቢ አየር',
+      other: '{0} ከባቢ አየር',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ከባቢ አየር',
+      one: '{0} ከባቢ አየር',
+      other: '{0} ከባቢ አየር',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ከባቢ አየር',
+      one: '{0} ከአ',
+      other: '{0} ከአ',
+    ),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ፓስካል',
-          one: '{0} ፓስካል',
-          other: '{0} ፓስካል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ፓስካል',
-          one: '{0} ፓስካል',
-          other: '{0} ፓስካል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ፓስካል',
-          one: '{0} ፓስካል',
-          other: '{0} ፓስካል',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ፓስካል', one: '{0} ፓስካል', other: '{0} ፓስካል'),
+    short: UnitCountPattern(
+      _locale,
+      'ፓስካል',
+      one: '{0} ፓስካል',
+      other: '{0} ፓስካል',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ፓስካል',
+      one: '{0} ፓስካል',
+      other: '{0} ፓስካል',
+    ),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሄክቶፓስካል',
-          one: '{0} ሄክቶፓስካል',
-          other: '{0} ሄክቶፓስካል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሄክቶፓስካል',
-          one: '{0} ሄክቶፓስካል',
-          other: '{0} ሄክቶፓስካል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሄክቶፓስካል',
-          one: '{0} hPa',
-          other: '{0} hPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሄክቶፓስካል',
+      one: '{0} ሄክቶፓስካል',
+      other: '{0} ሄክቶፓስካል',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሄክቶፓስካል',
+      one: '{0} ሄክቶፓስካል',
+      other: '{0} ሄክቶፓስካል',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሄክቶፓስካል',
+      one: '{0} hPa',
+      other: '{0} hPa',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎፓስካል',
-          one: '{0} ኪሎፓስካል',
-          other: '{0} ኪሎፓስካል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎፓስካል',
-          one: '{0} ኪሎፓስካል',
-          other: '{0} ኪሎፓስካል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎፓስካል',
-          one: '{0} ኪፓ',
-          other: '{0} ኪፓ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎፓስካል',
+      one: '{0} ኪሎፓስካል',
+      other: '{0} ኪሎፓስካል',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኪሎፓስካል',
+      one: '{0} ኪሎፓስካል',
+      other: '{0} ኪሎፓስካል',
+    ),
+    narrow: UnitCountPattern(_locale, 'ኪሎፓስካል', one: '{0} ኪፓ', other: '{0} ኪፓ'),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜጋፓስካል',
-          one: '{0} ሜጋፓስካል',
-          other: '{0} ሜጋፓስካሎች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜጋፓስካል',
-          one: '{0} ሜጋፓስካል',
-          other: '{0} ሜጋፓስካል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜጋፓስካል',
-          one: '{0} ሜፓ',
-          other: '{0} ሜፓ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሜጋፓስካል',
+      one: '{0} ሜጋፓስካል',
+      other: '{0} ሜጋፓስካሎች',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሜጋፓስካል',
+      one: '{0} ሜጋፓስካል',
+      other: '{0} ሜጋፓስካል',
+    ),
+    narrow: UnitCountPattern(_locale, 'ሜጋፓስካል', one: '{0} ሜፓ', other: '{0} ሜፓ'),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪሎሜትር በሰዓት',
-          one: '{0} ኪሎሜትር በሰዓት',
-          other: '{0} ኪሎሜትር በሰዓት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪሎሜትር በሰዓት',
-          one: '{0} ኪሜ/ሰ',
-          other: '{0} ኪሜ/ሰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪሎሜትር በሰዓት',
-          one: '{0} ኪሜ/ሰ',
-          other: '{0} ኪሜ/ሰ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪሎሜትር በሰዓት',
+      one: '{0} ኪሎሜትር በሰዓት',
+      other: '{0} ኪሎሜትር በሰዓት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኪሎሜትር በሰዓት',
+      one: '{0} ኪሜ/ሰ',
+      other: '{0} ኪሜ/ሰ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኪሎሜትር በሰዓት',
+      one: '{0} ኪሜ/ሰ',
+      other: '{0} ኪሜ/ሰ',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜትር በሰከንድ',
-          one: '{0} ሜትር በሰከንድ',
-          other: '{0} ሜትር በሰከንድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜትር በሰከንድ',
-          one: '{0} ሜ/ሴ',
-          other: '{0} ሜ/ሴ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜትር በሰከንድ',
-          one: '{0} ሜ/ሴ',
-          other: '{0} ሜ/ሴ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሜትር በሰከንድ',
+      one: '{0} ሜትር በሰከንድ',
+      other: '{0} ሜትር በሰከንድ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሜትር በሰከንድ',
+      one: '{0} ሜ/ሴ',
+      other: '{0} ሜ/ሴ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሜትር በሰከንድ',
+      one: '{0} ሜ/ሴ',
+      other: '{0} ሜ/ሴ',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ማይል በሰዓት',
-          one: '{0} ማይል በሰዓት',
-          other: '{0} ማይል በሰዓት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ማይል በሰዓት',
-          one: '{0} ማይል/ሰ',
-          other: '{0} ማይል/ሰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ማይል በሰዓት',
-          one: '{0} ማይል/ሰ',
-          other: '{0} ማይል/ሰ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ማይል በሰዓት',
+      one: '{0} ማይል በሰዓት',
+      other: '{0} ማይል በሰዓት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ማይል በሰዓት',
+      one: '{0} ማይል/ሰ',
+      other: '{0} ማይል/ሰ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ማይል በሰዓት',
+      one: '{0} ማይል/ሰ',
+      other: '{0} ማይል/ሰ',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0} knot',
-          other: '{0} kn',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0} kn',
-          other: '{0} kn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0}kn',
-          other: '{0} kn',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'kn', one: '{0} knot', other: '{0} kn'),
+    short: UnitCountPattern(_locale, 'kn', one: '{0} kn', other: '{0} kn'),
+    narrow: UnitCountPattern(_locale, 'kn', one: '{0}kn', other: '{0} kn'),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: 'Beaufort {0}',
-          other: 'B {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: 'B {0}',
-          other: 'B {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: 'B{0}',
-          other: 'B {0}',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'Bft', one: 'Beaufort {0}', other: 'B {0}'),
+    short: UnitCountPattern(_locale, 'Bft', one: 'B {0}', other: 'B {0}'),
+    narrow: UnitCountPattern(_locale, 'Bft', one: 'B{0}', other: 'B {0}'),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} degree temperature',
-          other: '{0}°',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '°',
+      one: '{0} degree temperature',
+      other: '{0}°',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዲግሪ ሴልሺየስ',
-          one: '{0} ዲግሪ ሴልሺየስ',
-          other: '{0} ዲግሪ ሴልሺየስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዲግሪ ሴልሺየስ',
-          one: '{0}°ሴ',
-          other: '{0}°ሴ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዲግሪ ሴልሺየስ',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ዲግሪ ሴልሺየስ',
+      one: '{0} ዲግሪ ሴልሺየስ',
+      other: '{0} ዲግሪ ሴልሺየስ',
+    ),
+    short: UnitCountPattern(_locale, 'ዲግሪ ሴልሺየስ', one: '{0}°ሴ', other: '{0}°ሴ'),
+    narrow: UnitCountPattern(_locale, 'ዲግሪ ሴልሺየስ', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዲግሪ ፋራንሃይት',
-          one: '{0} ዲግሪ ፋራንሃይት',
-          other: '{0} ዲግሪ ፋራንሃይት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዲግሪ ፋራንሃይት',
-          one: '{0}°ፋ',
-          other: '{0}°ፋ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዲግሪ ፋራንሃይት',
-          one: '{0}°ፋ',
-          other: '{0}°ፋ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ዲግሪ ፋራንሃይት',
+      one: '{0} ዲግሪ ፋራንሃይት',
+      other: '{0} ዲግሪ ፋራንሃይት',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ዲግሪ ፋራንሃይት',
+      one: '{0}°ፋ',
+      other: '{0}°ፋ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ዲግሪ ፋራንሃይት',
+      one: '{0}°ፋ',
+      other: '{0}°ፋ',
+    ),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኬ',
-          one: '{0} ኬ',
-          other: '{0} ኬ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኬ',
-          one: '{0} ኬ',
-          other: '{0} ኬ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኬ',
-          one: '{0} ኬ',
-          other: '{0} ኬ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኬ', one: '{0} ኬ', other: '{0} ኬ'),
+    short: UnitCountPattern(_locale, 'ኬ', one: '{0} ኬ', other: '{0} ኬ'),
+    narrow: UnitCountPattern(_locale, 'ኬ', one: '{0} ኬ', other: '{0} ኬ'),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} pound-force-foot',
-          other: '{0} lbf⋅ft',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} lbf⋅ft',
-          other: '{0} lbf⋅ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0}lbf⋅ft',
-          other: '{0} lbf⋅ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} pound-force-foot',
+      other: '{0} lbf⋅ft',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} lbf⋅ft',
+      other: '{0} lbf⋅ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0}lbf⋅ft',
+      other: '{0} lbf⋅ft',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኒ.ሜ',
-          one: '{0} ኒ.ሜ',
-          other: '{0} ኒ.ሜ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኒ.ሜ',
-          one: '{0} ኒ.ሜ',
-          other: '{0} ኒ.ሜ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኒ.ሜ',
-          one: '{0} ኒ.ሜ',
-          other: '{0} ኒ.ሜ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኒ.ሜ', one: '{0} ኒ.ሜ', other: '{0} ኒ.ሜ'),
+    short: UnitCountPattern(_locale, 'ኒ.ሜ', one: '{0} ኒ.ሜ', other: '{0} ኒ.ሜ'),
+    narrow: UnitCountPattern(_locale, 'ኒ.ሜ', one: '{0} ኒ.ሜ', other: '{0} ኒ.ሜ'),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኩቢክ ኪሎሜትር',
-          one: '{0} ኩቢክ ኪሎሜትር',
-          other: '{0} ኩቢክ ኪሎሜትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኩቢክ ኪሎሜትር',
-          one: '{0} ኪሜ³',
-          other: '{0} ኪሜ³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኩቢክ ኪሎሜትር',
-          one: '{0} ኪሜ³',
-          other: '{0} ኪሜ³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኩቢክ ኪሎሜትር',
+      one: '{0} ኩቢክ ኪሎሜትር',
+      other: '{0} ኩቢክ ኪሎሜትር',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኩቢክ ኪሎሜትር',
+      one: '{0} ኪሜ³',
+      other: '{0} ኪሜ³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኩቢክ ኪሎሜትር',
+      one: '{0} ኪሜ³',
+      other: '{0} ኪሜ³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜ³',
-          one: '{0} ሜ³',
-          other: '{0} ሜ³',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜ³',
-          one: '{0} ሜ³',
-          other: '{0} ሜ³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜ³',
-          one: '{0} ሜ³',
-          other: '{0} ሜ³',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሜ³', one: '{0} ሜ³', other: '{0} ሜ³'),
+    short: UnitCountPattern(_locale, 'ሜ³', one: '{0} ሜ³', other: '{0} ሜ³'),
+    narrow: UnitCountPattern(_locale, 'ሜ³', one: '{0} ሜ³', other: '{0} ሜ³'),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሴሜ³',
-          one: '{0} ሴሜ³',
-          other: '{0} ሴሜ³',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሴሜ³',
-          one: '{0} ሴሜ³',
-          other: '{0} ሴሜ³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሴሜ³',
-          one: '{0} ሴሜ³',
-          other: '{0} ሴሜ³',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሴሜ³', one: '{0} ሴሜ³', other: '{0} ሴሜ³'),
+    short: UnitCountPattern(_locale, 'ሴሜ³', one: '{0} ሴሜ³', other: '{0} ሴሜ³'),
+    narrow: UnitCountPattern(_locale, 'ሴሜ³', one: '{0} ሴሜ³', other: '{0} ሴሜ³'),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኩቢክ ማይል',
-          one: '{0} ኩቢክ ማይል',
-          other: '{0} ኩቢክ ማይል',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኩቢክ ማይል',
-          one: '{0} ማይል³',
-          other: '{0} ማይል³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኩቢክ ማይል',
-          one: '{0} ማይል³',
-          other: '{0} ማይል³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኩቢክ ማይል',
+      one: '{0} ኩቢክ ማይል',
+      other: '{0} ኩቢክ ማይል',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኩቢክ ማይል',
+      one: '{0} ማይል³',
+      other: '{0} ማይል³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኩቢክ ማይል',
+      one: '{0} ማይል³',
+      other: '{0} ማይል³',
+    ),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኪዩቢክ ያርድ',
-          one: '{0} ኪዩቢክ ያርድ',
-          other: '{0} ኪዩቢክ ያርድ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኪዩቢክ ያርድ',
-          one: '{0} ኪዩቢክ ያርድ',
-          other: '{0} ኪዩቢክ ያርድ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኪዩቢክ ያርድ',
-          one: '{0} ኪዩቢክ ያርድ',
-          other: '{0} ኪዩቢክ ያርድ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኪዩቢክ ያርድ',
+      one: '{0} ኪዩቢክ ያርድ',
+      other: '{0} ኪዩቢክ ያርድ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኪዩቢክ ያርድ',
+      one: '{0} ኪዩቢክ ያርድ',
+      other: '{0} ኪዩቢክ ያርድ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኪዩቢክ ያርድ',
+      one: '{0} ኪዩቢክ ያርድ',
+      other: '{0} ኪዩቢክ ያርድ',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጫማ³',
-          one: '{0} ጫማ³',
-          other: '{0} ጫማ³',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጫማ³',
-          one: '{0} ጫማ³',
-          other: '{0} ጫማ³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጫማ³',
-          one: '{0} ጫማ³',
-          other: '{0} ጫማ³',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጫማ³', one: '{0} ጫማ³', other: '{0} ጫማ³'),
+    short: UnitCountPattern(_locale, 'ጫማ³', one: '{0} ጫማ³', other: '{0} ጫማ³'),
+    narrow: UnitCountPattern(_locale, 'ጫማ³', one: '{0} ጫማ³', other: '{0} ጫማ³'),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኢንች³',
-          one: '{0} ኢንች³',
-          other: '{0} ኢንች³',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኢንች³',
-          one: '{0} ኢንች³',
-          other: '{0} ኢንች³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኢንች³',
-          one: '{0} ኢንች³',
-          other: '{0} ኢንች³',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኢንች³', one: '{0} ኢንች³', other: '{0} ኢንች³'),
+    short: UnitCountPattern(
+      _locale,
+      'ኢንች³',
+      one: '{0} ኢንች³',
+      other: '{0} ኢንች³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኢንች³',
+      one: '{0} ኢንች³',
+      other: '{0} ኢንች³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሜጋሊትር',
-          one: '{0} ሜሊ',
-          other: '{0} ሜሊ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሜጋሊትር',
-          one: '{0} ሜሊ',
-          other: '{0} ሜሊ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሜጋሊትር',
-          one: '{0} ሜጋሊትር',
-          other: '{0} ሜጋሊትር',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሜጋሊትር', one: '{0} ሜሊ', other: '{0} ሜሊ'),
+    short: UnitCountPattern(_locale, 'ሜጋሊትር', one: '{0} ሜሊ', other: '{0} ሜሊ'),
+    narrow: UnitCountPattern(
+      _locale,
+      'ሜጋሊትር',
+      one: '{0} ሜጋሊትር',
+      other: '{0} ሜጋሊትር',
+    ),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሄክቶሊትር',
-          one: '{0} ሄሊ',
-          other: '{0} ሄሊ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሄሊ',
-          one: '{0} ሄሊ',
-          other: '{0} ሄሊ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሄሊ',
-          one: '{0} ሄሊ',
-          other: '{0} ሄሊ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሄክቶሊትር', one: '{0} ሄሊ', other: '{0} ሄሊ'),
+    short: UnitCountPattern(_locale, 'ሄሊ', one: '{0} ሄሊ', other: '{0} ሄሊ'),
+    narrow: UnitCountPattern(_locale, 'ሄሊ', one: '{0} ሄሊ', other: '{0} ሄሊ'),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሊትር',
-          one: '{0} ሊትር',
-          other: '{0} ሊትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሊትር',
-          one: '{0} ሊ',
-          other: '{0} ሊ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሊትር',
-          one: '{0} ሊ',
-          other: '{0} ሊ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሊትር', one: '{0} ሊትር', other: '{0} ሊትር'),
+    short: UnitCountPattern(_locale, 'ሊትር', one: '{0} ሊ', other: '{0} ሊ'),
+    narrow: UnitCountPattern(_locale, 'ሊትር', one: '{0} ሊ', other: '{0} ሊ'),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዴሲ ሊትር',
-          one: '{0} ዴሲ ሊትር',
-          other: '{0} ዴሲ ሊትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዴሊ',
-          one: '{0} ዴሊ',
-          other: '{0} ዴሊ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዴሊ',
-          one: '{0} ዴሊ',
-          other: '{0} ዴሊ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ዴሲ ሊትር',
+      one: '{0} ዴሲ ሊትር',
+      other: '{0} ዴሲ ሊትር',
+    ),
+    short: UnitCountPattern(_locale, 'ዴሊ', one: '{0} ዴሊ', other: '{0} ዴሊ'),
+    narrow: UnitCountPattern(_locale, 'ዴሊ', one: '{0} ዴሊ', other: '{0} ዴሊ'),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሴንቲ ሊትር',
-          one: '{0} ሴንቲ ሊትር',
-          other: '{0} ሴንቲ ሊትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሴሊ',
-          one: '{0} ሴሊ',
-          other: '{0} ሴሊ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሴሊ',
-          one: '{0} ሴሊ',
-          other: '{0} ሴሊ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሴንቲ ሊትር',
+      one: '{0} ሴንቲ ሊትር',
+      other: '{0} ሴንቲ ሊትር',
+    ),
+    short: UnitCountPattern(_locale, 'ሴሊ', one: '{0} ሴሊ', other: '{0} ሴሊ'),
+    narrow: UnitCountPattern(_locale, 'ሴሊ', one: '{0} ሴሊ', other: '{0} ሴሊ'),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሚሊ ሊትር',
-          one: '{0} ሚሊ ሊትር',
-          other: '{0} ሚሊ ሊትር',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሚሊ ሊትር',
-          one: '{0} ሚሊ ሊትር',
-          other: '{0} ሚሊ ሊትር',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሚሊ ሊትር',
-          one: '{0} ሚሊ',
-          other: '{0} ሚሊ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ሚሊ ሊትር',
+      one: '{0} ሚሊ ሊትር',
+      other: '{0} ሚሊ ሊትር',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ሚሊ ሊትር',
+      one: '{0} ሚሊ ሊትር',
+      other: '{0} ሚሊ ሊትር',
+    ),
+    narrow: UnitCountPattern(_locale, 'ሚሊ ሊትር', one: '{0} ሚሊ', other: '{0} ሚሊ'),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mpt',
-          one: '{0} mpt',
-          other: '{0} mpt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpt',
-          one: '{0} mpt',
-          other: '{0} mpt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpt',
-          one: '{0} mpt',
-          other: '{0} mpt',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'mpt', one: '{0} mpt', other: '{0} mpt'),
+    short: UnitCountPattern(_locale, 'mpt', one: '{0} mpt', other: '{0} mpt'),
+    narrow: UnitCountPattern(_locale, 'mpt', one: '{0} mpt', other: '{0} mpt'),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0} metric cup',
-          other: '{0} mc',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0} mc',
-          other: '{0} mc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0}mc',
-          other: '{0} mc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mcup',
+      one: '{0} metric cup',
+      other: '{0} mc',
+    ),
+    short: UnitCountPattern(_locale, 'mcup', one: '{0} mc', other: '{0} mc'),
+    narrow: UnitCountPattern(_locale, 'mcup', one: '{0}mc', other: '{0} mc'),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኤከር ጫማ',
-          one: '{0} ኤከር ጫማ',
-          other: '{0} ኤከር ጫማ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኤከር ጫማ',
-          one: '{0} ኤከር ጫማ',
-          other: '{0} ኤከር ጫማ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኤከር ጫማ',
-          one: '{0} ኤጫ',
-          other: '{0} ኤጫ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ኤከር ጫማ',
+      one: '{0} ኤከር ጫማ',
+      other: '{0} ኤከር ጫማ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ኤከር ጫማ',
+      one: '{0} ኤከር ጫማ',
+      other: '{0} ኤከር ጫማ',
+    ),
+    narrow: UnitCountPattern(_locale, 'ኤከር ጫማ', one: '{0} ኤጫ', other: '{0} ኤጫ'),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ዳውላ',
-          one: '{0} ዳውላ',
-          other: '{0} ዳውላ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ዳውላ',
-          one: '{0} ዳውላ',
-          other: '{0} ዳውላ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ዳውላ',
-          one: '{0} ዳውላ',
-          other: '{0} ዳውላ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ዳውላ', one: '{0} ዳውላ', other: '{0} ዳውላ'),
+    short: UnitCountPattern(_locale, 'ዳውላ', one: '{0} ዳውላ', other: '{0} ዳውላ'),
+    narrow: UnitCountPattern(_locale, 'ዳውላ', one: '{0} ዳውላ', other: '{0} ዳውላ'),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጋሎን',
-          one: '{0}/ጋሎን',
-          other: '{0}/ጋሎን',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጋሎን',
-          one: '{0}/ጋሎን',
-          other: '{0} ጋሎን',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጋሎን',
-          one: '{0} ጋሎን',
-          other: '{0} ጋሎን',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጋሎን', one: '{0}/ጋሎን', other: '{0}/ጋሎን'),
+    short: UnitCountPattern(_locale, 'ጋሎን', one: '{0}/ጋሎን', other: '{0} ጋሎን'),
+    narrow: UnitCountPattern(_locale, 'ጋሎን', one: '{0} ጋሎን', other: '{0} ጋሎን'),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Imp. gal',
-          one: '{0} Imp. gallon',
-          other: '{0} gal Imp.',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Imp. gal',
-          one: '{0} gal Imp.',
-          other: '{0} gal Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Imp. gal',
-          one: '{0}galIm',
-          other: '{0} gal Imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Imp. gal',
+      one: '{0} Imp. gallon',
+      other: '{0} gal Imp.',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Imp. gal',
+      one: '{0} gal Imp.',
+      other: '{0} gal Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Imp. gal',
+      one: '{0}galIm',
+      other: '{0} gal Imp.',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኳርትስ',
-          one: '{0} ኳርትስ',
-          other: '{0} ኳርትስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኳርትስ',
-          one: '{0} ኳርትስ',
-          other: '{0} ኳርትስ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኳርትስ',
-          one: '{0} ኳርትስ',
-          other: '{0} ኳርትስ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኳርትስ', one: '{0} ኳርትስ', other: '{0} ኳርትስ'),
+    short: UnitCountPattern(
+      _locale,
+      'ኳርትስ',
+      one: '{0} ኳርትስ',
+      other: '{0} ኳርትስ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ኳርትስ',
+      one: '{0} ኳርትስ',
+      other: '{0} ኳርትስ',
+    ),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} pint',
-          other: '{0} pt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} pt',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0}pt',
-          other: '{0} pt',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'pt', one: '{0} pint', other: '{0} pt'),
+    short: UnitCountPattern(_locale, 'pt', one: '{0} pt', other: '{0} pt'),
+    narrow: UnitCountPattern(_locale, 'pt', one: '{0}pt', other: '{0} pt'),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ኩባያ',
-          one: '{0} ኩባያ',
-          other: '{0} ኩባያ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ኩባያ',
-          one: '{0} ኩባያ',
-          other: '{0} ኩባያ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ኩባያ',
-          one: '{0} ኩባያ',
-          other: '{0} ኩባያ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ኩባያ', one: '{0} ኩባያ', other: '{0} ኩባያ'),
+    short: UnitCountPattern(_locale, 'ኩባያ', one: '{0} ኩባያ', other: '{0} ኩባያ'),
+    narrow: UnitCountPattern(_locale, 'ኩባያ', one: '{0} ኩባያ', other: '{0} ኩባያ'),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Imp. fluid ኦንስስ',
-          one: '{0} Imp. fluid ኦንስስ',
-          other: '{0} Imp. fluid ኦንስስ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Imp. fl oz',
-          one: '{0} Imp. fluid ኦንስስ',
-          other: '{0} fl oz Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Imp. fl oz',
-          one: '{0} Imp. fluid ኦንስስ',
-          other: '{0} fl oz Imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Imp. fluid ኦንስስ',
+      one: '{0} Imp. fluid ኦንስስ',
+      other: '{0} Imp. fluid ኦንስስ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Imp. fl oz',
+      one: '{0} Imp. fluid ኦንስስ',
+      other: '{0} fl oz Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Imp. fl oz',
+      one: '{0} Imp. fluid ኦንስስ',
+      other: '{0} fl oz Imp.',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የሻይ ማንኪያ',
-          one: '{0} የሻይ ማንኪያ',
-          other: '{0} የሻይ ማንኪያ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የሻይ ማንኪያ',
-          one: '{0} የሻይ ማንኪያ',
-          other: '{0} የሻይ ማንኪያ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የሻይ ማንኪያ',
-          one: '{0} የሻይ ማንኪያ',
-          other: '{0} የሻይ ማንኪያ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የሻይ ማንኪያ',
+      one: '{0} የሻይ ማንኪያ',
+      other: '{0} የሻይ ማንኪያ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የሻይ ማንኪያ',
+      one: '{0} የሻይ ማንኪያ',
+      other: '{0} የሻይ ማንኪያ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የሻይ ማንኪያ',
+      one: '{0} የሻይ ማንኪያ',
+      other: '{0} የሻይ ማንኪያ',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የሻይ ማንኪያዎች',
-          one: '{0} የሻይ ማንኪያዎች',
-          other: '{0} የሻይ ማንኪያዎች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የሻይ ማንኪያዎች',
-          one: '{0} የሻይ ማንኪያዎች',
-          other: '{0} የሻይ ማንኪያዎች',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የሻይ ማንኪያዎች',
-          one: '{0} የሻይ ማንኪያዎች',
-          other: '{0} የሻይ ማንኪያዎች',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የሻይ ማንኪያዎች',
+      one: '{0} የሻይ ማንኪያዎች',
+      other: '{0} የሻይ ማንኪያዎች',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የሻይ ማንኪያዎች',
+      one: '{0} የሻይ ማንኪያዎች',
+      other: '{0} የሻይ ማንኪያዎች',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የሻይ ማንኪያዎች',
+      one: '{0} የሻይ ማንኪያዎች',
+      other: '{0} የሻይ ማንኪያዎች',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'በርሜል',
-          one: '{0} በርሜል',
-          other: '{0} በርሜሎች',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'በርሜል',
-          one: '{0} በርሜል',
-          other: '{0} በርሜል',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'በርሜል',
-          one: '{0} በርሜል',
-          other: '{0} በርሜል',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'በርሜል',
+      one: '{0} በርሜል',
+      other: '{0} በርሜሎች',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'በርሜል',
+      one: '{0} በርሜል',
+      other: '{0} በርሜል',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'በርሜል',
+      one: '{0} በርሜል',
+      other: '{0} በርሜል',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የመምድረ በዳ ማንኪያ',
-          one: '{0} የመምድረ በዳ ማንኪያ',
-          other: '{0} የመምድረ በዳ ማንኪያ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የመምድረ በዳ ማንኪያ',
-          one: '{0} የመምድረ በዳ ማንኪያ',
-          other: '{0} የመምድረ በዳ ማንኪያ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የመምድረ በዳ ማንኪያ',
-          one: '{0} የመምድረ በዳ ማንኪያ',
-          other: '{0} የመምድረ በዳ ማንኪያ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የመምድረ በዳ ማንኪያ',
+      one: '{0} የመምድረ በዳ ማንኪያ',
+      other: '{0} የመምድረ በዳ ማንኪያ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የመምድረ በዳ ማንኪያ',
+      one: '{0} የመምድረ በዳ ማንኪያ',
+      other: '{0} የመምድረ በዳ ማንኪያ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የመምድረ በዳ ማንኪያ',
+      one: '{0} የመምድረ በዳ ማንኪያ',
+      other: '{0} የመምድረ በዳ ማንኪያ',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የምድረ በዳ ማንኪያ',
-          one: '{0} የምድረ በዳ ማንኪያ',
-          other: '{0} የምድረ በዳ ማንኪያ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የምድረ በዳ ማንኪያ',
-          one: '{0} የምድረ በዳ ማንኪያ',
-          other: '{0} የምድረ በዳ ማንኪያ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የምድረ በዳ ማንኪያ',
-          one: '{0} የምድረ በዳ ማንኪያ',
-          other: '{0} የምድረ በዳ ማንኪያ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የምድረ በዳ ማንኪያ',
+      one: '{0} የምድረ በዳ ማንኪያ',
+      other: '{0} የምድረ በዳ ማንኪያ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የምድረ በዳ ማንኪያ',
+      one: '{0} የምድረ በዳ ማንኪያ',
+      other: '{0} የምድረ በዳ ማንኪያ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የምድረ በዳ ማንኪያ',
+      one: '{0} የምድረ በዳ ማንኪያ',
+      other: '{0} የምድረ በዳ ማንኪያ',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ጠብታ',
-          one: '{0} ጠብታ',
-          other: '{0} ጠብታ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ጠብታ',
-          one: '{0} ጠብታ',
-          other: '{0} ጠብታ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ጠብታ',
-          one: '{0} ጠብታ',
-          other: '{0} ጠብታ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ጠብታ', one: '{0} ጠብታ', other: '{0} ጠብታ'),
+    short: UnitCountPattern(_locale, 'ጠብታ', one: '{0} ጠብታ', other: '{0} ጠብታ'),
+    narrow: UnitCountPattern(_locale, 'ጠብታ', one: '{0} ጠብታ', other: '{0} ጠብታ'),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የክብደት መለኪያ',
-          one: '{0} የክብደት መለኪያ',
-          other: '{0} የክብደት መለኪያ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የክብደት መለኪያ',
-          one: '{0} የክብደት መለኪያ',
-          other: '{0} የክብደት መለኪያ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የክብደት መለኪያ',
-          one: '{0} ክመ',
-          other: '{0} ክመ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የክብደት መለኪያ',
+      one: '{0} የክብደት መለኪያ',
+      other: '{0} የክብደት መለኪያ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የክብደት መለኪያ',
+      one: '{0} የክብደት መለኪያ',
+      other: '{0} የክብደት መለኪያ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የክብደት መለኪያ',
+      one: '{0} ክመ',
+      other: '{0} ክመ',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ሙጃሌ',
-          one: '{0} ሙጃሌ',
-          other: '{0} ሙጃሌ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ሙጃሌ',
-          one: '{0} ሙጃሌ',
-          other: '{0} ሙጃሌ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ሙጃሌ',
-          one: '{0} ሙጃሌ',
-          other: '{0} ሙጃሌ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ሙጃሌ', one: '{0} ሙጃሌ', other: '{0} ሙጃሌ'),
+    short: UnitCountPattern(_locale, 'ሙጃሌ', one: '{0} ሙጃሌ', other: '{0} ሙጃሌ'),
+    narrow: UnitCountPattern(_locale, 'ሙጃሌ', one: '{0} ሙጃሌ', other: '{0} ሙጃሌ'),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ቁንጥ',
-          one: '{0} ቁንጥ',
-          other: '{0} ቁንጥ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ቁንጥ',
-          one: '{0} ቁንጥ',
-          other: '{0} ቁንጥ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ቁንጥ',
-          one: '{0} ቁንጥ',
-          other: '{0} ቁንጥ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ቁንጥ', one: '{0} ቁንጥ', other: '{0} ቁንጥ'),
+    short: UnitCountPattern(_locale, 'ቁንጥ', one: '{0} ቁንጥ', other: '{0} ቁንጥ'),
+    narrow: UnitCountPattern(_locale, 'ቁንጥ', one: '{0} ቁንጥ', other: '{0} ቁንጥ'),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'የፈሳሽ መለኪያ',
-          one: '{0} የፈሳሽ መለኪያ',
-          other: '{0} የፈሳሽ መለኪያ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'የፈሳሽ መለኪያ',
-          one: '{0} የፈሳሽ መለኪያ',
-          other: '{0} የፈሳሽ መለኪያ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'የፈሳሽ መለኪያ',
-          one: '{0} ፈመ',
-          other: '{0} ፈመ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'የፈሳሽ መለኪያ',
+      one: '{0} የፈሳሽ መለኪያ',
+      other: '{0} የፈሳሽ መለኪያ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'የፈሳሽ መለኪያ',
+      one: '{0} የፈሳሽ መለኪያ',
+      other: '{0} የፈሳሽ መለኪያ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'የፈሳሽ መለኪያ',
+      one: '{0} ፈመ',
+      other: '{0} ፈመ',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ብርሃን',
-          one: '{0} ብርሃን',
-          other: '{0} ብርሃን',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ብርሃን',
-          one: '{0} ብርሃን',
-          other: '{0} ብርሃን',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ብርሃን',
-          one: '{0} ብርሃን',
-          other: '{0} ብርሃን',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ብርሃን', one: '{0} ብርሃን', other: '{0} ብርሃን'),
+    short: UnitCountPattern(
+      _locale,
+      'ብርሃን',
+      one: '{0} ብርሃን',
+      other: '{0} ብርሃን',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ብርሃን',
+      one: '{0} ብርሃን',
+      other: '{0} ብርሃን',
+    ),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ppb',
-          one: '{0} part per billion',
-          other: '{0} ppb',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppb',
-          one: '{0} ppb',
-          other: '{0} ppb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppb',
-          one: '{0}ppb',
-          other: '{0} ppb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ppb',
+      one: '{0} part per billion',
+      other: '{0} ppb',
+    ),
+    short: UnitCountPattern(_locale, 'ppb', one: '{0} ppb', other: '{0} ppb'),
+    narrow: UnitCountPattern(_locale, 'ppb', one: '{0}ppb', other: '{0} ppb'),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ለሊት',
-          one: '{0}/ለሊት',
-          other: '{0}/ለሊት',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ለሊቶች',
-          one: '{0} ለሊት',
-          other: '{0} ለሊት',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ለሊቶች',
-          one: '{0} ለሊት',
-          other: '{0} ለሊት',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ለሊት', one: '{0}/ለሊት', other: '{0}/ለሊት'),
+    short: UnitCountPattern(_locale, 'ለሊቶች', one: '{0} ለሊት', other: '{0} ለሊት'),
+    narrow: UnitCountPattern(_locale, 'ለሊቶች', one: '{0} ለሊት', other: '{0} ለሊት'),
+  );
 }
 
 class DateFieldsAm extends DateFields {
   const DateFieldsAm(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'ዘመን',
-        short: 'ዘመን',
-        narrow: 'ዘመን',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'ዘመን', short: 'ዘመን', narrow: 'ዘመን');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ዓመት',
-          short: 'ዓመት',
-          narrow: 'ዓመት',
-        ),
-        previous: MultiLength(
-          long: 'ያለፈው ዓመት',
-          short: 'ያለፈው ዓመት',
-          narrow: 'ያለፈው ዓመት',
-        ),
-        now: MultiLength(
-          long: 'በዚህ ዓመት',
-          short: 'በዚህ ዓመት',
-          narrow: 'በዚህ ዓመት',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ዓመት',
-          short: 'የሚቀጥለው ዓመት',
-          narrow: 'የሚቀጥለው ዓመት',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ዓመት በፊት',
-            other: 'ከ{0} ዓመታት በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ዓመታት በፊት',
-            other: 'ከ{0} ዓመታት በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ዓመታት በፊት',
-            other: 'ከ{0} ዓመታት በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ዓመታት ውስጥ',
-            other: 'በ{0} ዓመታት ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ዓመታት ውስጥ',
-            other: 'በ{0} ዓመታት ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ዓመታት ውስጥ',
-            other: 'በ{0} ዓመታት ውስጥ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ዓመት', short: 'ዓመት', narrow: 'ዓመት'),
+    previous: MultiLength(
+      long: 'ያለፈው ዓመት',
+      short: 'ያለፈው ዓመት',
+      narrow: 'ያለፈው ዓመት',
+    ),
+    now: MultiLength(long: 'በዚህ ዓመት', short: 'በዚህ ዓመት', narrow: 'በዚህ ዓመት'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ዓመት',
+      short: 'የሚቀጥለው ዓመት',
+      narrow: 'የሚቀጥለው ዓመት',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ዓመት በፊት', other: 'ከ{0} ዓመታት በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ዓመታት በፊት',
+        other: 'ከ{0} ዓመታት በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ዓመታት በፊት',
+        other: 'ከ{0} ዓመታት በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ዓመታት ውስጥ', other: 'በ{0} ዓመታት ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ዓመታት ውስጥ',
+        other: 'በ{0} ዓመታት ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ዓመታት ውስጥ',
+        other: 'በ{0} ዓመታት ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ሩብ',
-          short: 'ሩብ',
-          narrow: 'ሩብ',
-        ),
-        previous: MultiLength(
-          long: 'የመጨረሻው ሩብ',
-          short: 'የመጨረሻው ሩብ',
-          narrow: 'የመጨረሻው ሩብ',
-        ),
-        now: MultiLength(
-          long: 'ይህ ሩብ',
-          short: 'ይህ ሩብ',
-          narrow: 'ይህ ሩብ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ሩብ',
-          short: 'የሚቀጥለው ሩብ',
-          narrow: 'የሚቀጥለው ሩብ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} ሩብ በፊት',
-            other: '{0} ሩብ በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} ሩብ በፊት',
-            other: '{0} ሩብ በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} ሩብ በፊት',
-            other: '{0} ሩብ በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '+{0} ሩብ',
-            other: '+{0} ሩብ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '+{0} ሩብ',
-            other: '+{0} ሩብ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '+{0} ሩብ',
-            other: '+{0} ሩብ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ሩብ', short: 'ሩብ', narrow: 'ሩብ'),
+    previous: MultiLength(
+      long: 'የመጨረሻው ሩብ',
+      short: 'የመጨረሻው ሩብ',
+      narrow: 'የመጨረሻው ሩብ',
+    ),
+    now: MultiLength(long: 'ይህ ሩብ', short: 'ይህ ሩብ', narrow: 'ይህ ሩብ'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ሩብ',
+      short: 'የሚቀጥለው ሩብ',
+      narrow: 'የሚቀጥለው ሩብ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} ሩብ በፊት', other: '{0} ሩብ በፊት'),
+      short: RelativeTime(_locale, one: '{0} ሩብ በፊት', other: '{0} ሩብ በፊት'),
+      narrow: RelativeTime(_locale, one: '{0} ሩብ በፊት', other: '{0} ሩብ በፊት'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '+{0} ሩብ', other: '+{0} ሩብ'),
+      short: RelativeTime(_locale, one: '+{0} ሩብ', other: '+{0} ሩብ'),
+      narrow: RelativeTime(_locale, one: '+{0} ሩብ', other: '+{0} ሩብ'),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ወር',
-          short: 'ወር',
-          narrow: 'ወር',
-        ),
-        previous: MultiLength(
-          long: 'ያለፈው ወር',
-          short: 'ያለፈው ወር',
-          narrow: 'ያለፈው ወር',
-        ),
-        now: MultiLength(
-          long: 'በዚህ ወር',
-          short: 'በዚህ ወር',
-          narrow: 'በዚህ ወር',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ወር',
-          short: 'የሚቀጥለው ወር',
-          narrow: 'የሚቀጥለው ወር',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ወር በፊት',
-            other: 'ከ{0} ወራት በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ወራት በፊት',
-            other: 'ከ{0} ወራት በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ወራት በፊት',
-            other: 'ከ{0} ወራት በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ወር ውስጥ',
-            other: 'በ{0} ወራት ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ወራት ውስጥ',
-            other: 'በ{0} ወራት ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ወራት ውስጥ',
-            other: 'በ{0} ወራት ውስጥ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ወር', short: 'ወር', narrow: 'ወር'),
+    previous: MultiLength(long: 'ያለፈው ወር', short: 'ያለፈው ወር', narrow: 'ያለፈው ወር'),
+    now: MultiLength(long: 'በዚህ ወር', short: 'በዚህ ወር', narrow: 'በዚህ ወር'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ወር',
+      short: 'የሚቀጥለው ወር',
+      narrow: 'የሚቀጥለው ወር',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ወር በፊት', other: 'ከ{0} ወራት በፊት'),
+      short: RelativeTime(_locale, one: 'ከ{0} ወራት በፊት', other: 'ከ{0} ወራት በፊት'),
+      narrow: RelativeTime(_locale, one: 'ከ{0} ወራት በፊት', other: 'ከ{0} ወራት በፊት'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ወር ውስጥ', other: 'በ{0} ወራት ውስጥ'),
+      short: RelativeTime(_locale, one: 'በ{0} ወራት ውስጥ', other: 'በ{0} ወራት ውስጥ'),
+      narrow: RelativeTime(_locale, one: 'በ{0} ወራት ውስጥ', other: 'በ{0} ወራት ውስጥ'),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ሳምንት',
-          short: 'ሳምንት',
-          narrow: 'ሳምንት',
-        ),
-        previous: MultiLength(
-          long: 'ያለፈው ሳምንት',
-          short: 'ባለፈው ሳምንት',
-          narrow: 'ባለፈው ሳምንት',
-        ),
-        now: MultiLength(
-          long: 'በዚህ ሳምንት',
-          short: 'በዚህ ሣምንት',
-          narrow: 'በዚህ ሣምንት',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ሳምንት',
-          short: 'የሚቀጥለው ሳምንት',
-          narrow: 'የሚቀጥለው ሳምንት',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሳምንት በፊት',
-            other: 'ከ{0} ሳምንታት በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሳምንታት በፊት',
-            other: 'ከ{0} ሳምንታት በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሳምንታት በፊት',
-            other: 'ከ{0} ሳምንታት በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ሳምንት ውስጥ',
-            other: 'በ{0} ሳምንታት ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ሳምንታት ውስጥ',
-            other: 'በ{0} ሳምንታት ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ሳምንታት ውስጥ',
-            other: 'በ{0} ሳምንታት ውስጥ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ሳምንት', short: 'ሳምንት', narrow: 'ሳምንት'),
+    previous: MultiLength(
+      long: 'ያለፈው ሳምንት',
+      short: 'ባለፈው ሳምንት',
+      narrow: 'ባለፈው ሳምንት',
+    ),
+    now: MultiLength(long: 'በዚህ ሳምንት', short: 'በዚህ ሣምንት', narrow: 'በዚህ ሣምንት'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ሳምንት',
+      short: 'የሚቀጥለው ሳምንት',
+      narrow: 'የሚቀጥለው ሳምንት',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሳምንት በፊት',
+        other: 'ከ{0} ሳምንታት በፊት',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሳምንታት በፊት',
+        other: 'ከ{0} ሳምንታት በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሳምንታት በፊት',
+        other: 'ከ{0} ሳምንታት በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'በ{0} ሳምንት ውስጥ',
+        other: 'በ{0} ሳምንታት ውስጥ',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ሳምንታት ውስጥ',
+        other: 'በ{0} ሳምንታት ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ሳምንታት ውስጥ',
+        other: 'በ{0} ሳምንታት ውስጥ',
+      ),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'የወሩ ሳምንት',
-        short: 'የወሩ ሳምንት',
-        narrow: 'የወሩ ሳምንት',
-      );
+    long: 'የወሩ ሳምንት',
+    short: 'የወሩ ሳምንት',
+    narrow: 'የወሩ ሳምንት',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ቀን',
-          short: 'ቀን',
-          narrow: 'ቀን',
-        ),
-        previous: MultiLength(
-          long: 'ትናንት',
-          short: 'ትላንትና',
-          narrow: 'ትላንትና',
-        ),
-        now: MultiLength(
-          long: 'ዛሬ',
-          short: 'ዛሬ',
-          narrow: 'ዛሬ',
-        ),
-        next: MultiLength(
-          long: 'ነገ',
-          short: 'ነገ',
-          narrow: 'ነገ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ቀን በፊት',
-            other: 'ከ{0} ቀናት በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ {0} ቀን በፊት',
-            other: 'ከ{0} ቀኖች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ {0} ቀን በፊት',
-            other: 'ከ{0} ቀኖች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ቀን ውስጥ',
-            other: 'በ{0} ቀናት ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ቀን ውስጥ',
-            other: 'በ{0} ቀኖች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ቀን ውስጥ',
-            other: 'በ{0} ቀኖች ውስጥ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ቀን', short: 'ቀን', narrow: 'ቀን'),
+    previous: MultiLength(long: 'ትናንት', short: 'ትላንትና', narrow: 'ትላንትና'),
+    now: MultiLength(long: 'ዛሬ', short: 'ዛሬ', narrow: 'ዛሬ'),
+    next: MultiLength(long: 'ነገ', short: 'ነገ', narrow: 'ነገ'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ቀን በፊት', other: 'ከ{0} ቀናት በፊት'),
+      short: RelativeTime(_locale, one: 'ከ {0} ቀን በፊት', other: 'ከ{0} ቀኖች በፊት'),
+      narrow: RelativeTime(_locale, one: 'ከ {0} ቀን በፊት', other: 'ከ{0} ቀኖች በፊት'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ቀን ውስጥ', other: 'በ{0} ቀናት ውስጥ'),
+      short: RelativeTime(_locale, one: 'በ{0} ቀን ውስጥ', other: 'በ{0} ቀኖች ውስጥ'),
+      narrow: RelativeTime(_locale, one: 'በ{0} ቀን ውስጥ', other: 'በ{0} ቀኖች ውስጥ'),
+    ),
+  );
 
   @override
-  MultiLength get dayOfYear => const MultiLength(
-        long: 'የዓመቱ ቀን',
-        short: 'የዓመቱ ቀን',
-        narrow: 'የዓመቱ ቀን',
-      );
+  MultiLength get dayOfYear =>
+      const MultiLength(long: 'የዓመቱ ቀን', short: 'የዓመቱ ቀን', narrow: 'የዓመቱ ቀን');
 
   @override
-  MultiLength get weekday => const MultiLength(
-        long: 'አዘቦት',
-        short: 'አዘቦት',
-        narrow: 'አዘቦት',
-      );
+  MultiLength get weekday =>
+      const MultiLength(long: 'አዘቦት', short: 'አዘቦት', narrow: 'አዘቦት');
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'የወሩ የሳምንት ቀን',
-        short: 'የወሩ የሳምንት ቀን',
-        narrow: 'የወሩ የሳምንት ቀን',
-      );
+    long: 'የወሩ የሳምንት ቀን',
+    short: 'የወሩ የሳምንት ቀን',
+    narrow: 'የወሩ የሳምንት ቀን',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'ያለፈው እሑድ',
-          short: 'ያለፈው እሑድ',
-          narrow: 'ያለፈው እሑድ',
-        ),
-        now: MultiLength(
-          long: 'የአሁኑ እሑድ',
-          short: 'የአሁኑ እሑድ',
-          narrow: 'የአሁኑ እሑድ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው እሑድ',
-          short: 'የሚቀጥለው እሑድ',
-          narrow: 'የሚቀጥለው እሑድ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} እሑድ በፊት',
-            other: 'ከ{0} እሑዶች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} እሑዶች በፊት',
-            other: 'ከ{0} እሑዶች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} እሑዶች በፊት',
-            other: 'ከ{0} እሑዶች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} እሑድ ውስጥ',
-            other: 'በ{0} እሑዶች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} እሑዶች ውስጥ',
-            other: 'በ{0} እሑዶች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} እሑዶች ውስጥ',
-            other: 'በ{0} እሑዶች ውስጥ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'ያለፈው እሑድ',
+      short: 'ያለፈው እሑድ',
+      narrow: 'ያለፈው እሑድ',
+    ),
+    now: MultiLength(long: 'የአሁኑ እሑድ', short: 'የአሁኑ እሑድ', narrow: 'የአሁኑ እሑድ'),
+    next: MultiLength(
+      long: 'የሚቀጥለው እሑድ',
+      short: 'የሚቀጥለው እሑድ',
+      narrow: 'የሚቀጥለው እሑድ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} እሑድ በፊት', other: 'ከ{0} እሑዶች በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} እሑዶች በፊት',
+        other: 'ከ{0} እሑዶች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} እሑዶች በፊት',
+        other: 'ከ{0} እሑዶች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} እሑድ ውስጥ', other: 'በ{0} እሑዶች ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} እሑዶች ውስጥ',
+        other: 'በ{0} እሑዶች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} እሑዶች ውስጥ',
+        other: 'በ{0} እሑዶች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'ያለፈው ሰኞ',
-          short: 'ያለፈው ሰኞ',
-          narrow: 'ያለፈው ሰኞ',
-        ),
-        now: MultiLength(
-          long: 'የአሁኑ ሰኞ',
-          short: 'የአሁኑ ሰኞ',
-          narrow: 'የአሁኑ ሰኞ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ሰኞ',
-          short: 'የሚቀጥለው ሰኞ',
-          narrow: 'የሚቀጥለው ሰኞ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰኞ በፊት',
-            other: 'ከ{0} ሰኞዎች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰኞዎች በፊት',
-            other: 'ከ{0} ሰኞዎች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰኞዎች በፊት',
-            other: 'ከ{0} ሰኞዎች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰኞ ውስጥ',
-            other: 'በ{0} ሰኞዎች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰኞዎች ውስጥ',
-            other: 'በ{0} ሰኞዎች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰኞዎች ውስጥ',
-            other: 'በ{0} ሰኞዎች ውስጥ',
-          ),
-        ),
-      );
+    previous: MultiLength(long: 'ያለፈው ሰኞ', short: 'ያለፈው ሰኞ', narrow: 'ያለፈው ሰኞ'),
+    now: MultiLength(long: 'የአሁኑ ሰኞ', short: 'የአሁኑ ሰኞ', narrow: 'የአሁኑ ሰኞ'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ሰኞ',
+      short: 'የሚቀጥለው ሰኞ',
+      narrow: 'የሚቀጥለው ሰኞ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ሰኞ በፊት', other: 'ከ{0} ሰኞዎች በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሰኞዎች በፊት',
+        other: 'ከ{0} ሰኞዎች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሰኞዎች በፊት',
+        other: 'ከ{0} ሰኞዎች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ሰኞ ውስጥ', other: 'በ{0} ሰኞዎች ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ሰኞዎች ውስጥ',
+        other: 'በ{0} ሰኞዎች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ሰኞዎች ውስጥ',
+        other: 'በ{0} ሰኞዎች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'ያለፈው ማክሰኞ',
-          short: 'ያለፈው ማክሰኞ',
-          narrow: 'ያለፈው ማክሰኞ',
-        ),
-        now: MultiLength(
-          long: 'የአሁኑ ማክሰኞ',
-          short: 'የአሁኑ ማክሰኞ',
-          narrow: 'የአሁኑ ማክሰኞ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ማክሰኞ',
-          short: 'የሚቀጥለው ማክሰኞ',
-          narrow: 'የሚቀጥለው ማክሰኞ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ማክሰኞ በፊት',
-            other: 'ከ{0} ማክሰኞዎች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ማክሰኞዎች በፊት',
-            other: 'ከ{0} ማክሰኞዎች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ማክሰኞዎች በፊት',
-            other: 'ከ{0} ማክሰኞዎች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ማክሰኞ ውስጥ',
-            other: 'በ{0} ማክሰኞዎች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ማክሰኞዎች ውስጥ',
-            other: 'በ{0} ማክሰኞዎች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ማክሰኞዎች ውስጥ',
-            other: 'በ{0} ማክሰኞዎች ውስጥ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'ያለፈው ማክሰኞ',
+      short: 'ያለፈው ማክሰኞ',
+      narrow: 'ያለፈው ማክሰኞ',
+    ),
+    now: MultiLength(
+      long: 'የአሁኑ ማክሰኞ',
+      short: 'የአሁኑ ማክሰኞ',
+      narrow: 'የአሁኑ ማክሰኞ',
+    ),
+    next: MultiLength(
+      long: 'የሚቀጥለው ማክሰኞ',
+      short: 'የሚቀጥለው ማክሰኞ',
+      narrow: 'የሚቀጥለው ማክሰኞ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'ከ{0} ማክሰኞ በፊት',
+        other: 'ከ{0} ማክሰኞዎች በፊት',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ማክሰኞዎች በፊት',
+        other: 'ከ{0} ማክሰኞዎች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ማክሰኞዎች በፊት',
+        other: 'ከ{0} ማክሰኞዎች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'በ{0} ማክሰኞ ውስጥ',
+        other: 'በ{0} ማክሰኞዎች ውስጥ',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ማክሰኞዎች ውስጥ',
+        other: 'በ{0} ማክሰኞዎች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ማክሰኞዎች ውስጥ',
+        other: 'በ{0} ማክሰኞዎች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'ያለፈው ረቡዕ',
-          short: 'ያለፈው ረቡዕ',
-          narrow: 'ያለፈው ረቡዕ',
-        ),
-        now: MultiLength(
-          long: 'የአሁኑ ረቡዕ',
-          short: 'የአሁኑ ረቡዕ',
-          narrow: 'የአሁኑ ረቡዕ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ረቡዕ',
-          short: 'የሚቀጥለው ረቡዕ',
-          narrow: 'የሚቀጥለው ረቡዕ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ረቡዕ በፊት',
-            other: 'ከ{0} ረቡዕዎች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ረቡዕዎች በፊት',
-            other: 'ከ{0} ረቡዕዎች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ረቡዕዎች በፊት',
-            other: 'ከ{0} ረቡዕዎች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ረቡዕ ውስጥ',
-            other: 'በ{0} ረቡዕዎች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ረቡዕዎች ውስጥ',
-            other: 'በ{0} ረቡዕዎች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ረቡዕዎች ውስጥ',
-            other: 'በ{0} ረቡዕዎች ውስጥ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'ያለፈው ረቡዕ',
+      short: 'ያለፈው ረቡዕ',
+      narrow: 'ያለፈው ረቡዕ',
+    ),
+    now: MultiLength(long: 'የአሁኑ ረቡዕ', short: 'የአሁኑ ረቡዕ', narrow: 'የአሁኑ ረቡዕ'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ረቡዕ',
+      short: 'የሚቀጥለው ረቡዕ',
+      narrow: 'የሚቀጥለው ረቡዕ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ረቡዕ በፊት', other: 'ከ{0} ረቡዕዎች በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ረቡዕዎች በፊት',
+        other: 'ከ{0} ረቡዕዎች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ረቡዕዎች በፊት',
+        other: 'ከ{0} ረቡዕዎች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ረቡዕ ውስጥ', other: 'በ{0} ረቡዕዎች ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ረቡዕዎች ውስጥ',
+        other: 'በ{0} ረቡዕዎች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ረቡዕዎች ውስጥ',
+        other: 'በ{0} ረቡዕዎች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'ያለፈው ሐሙስ',
-          short: 'ያለፈው ሐሙስ',
-          narrow: 'ያለፈው ሐሙስ',
-        ),
-        now: MultiLength(
-          long: 'የአሁኑ ሐሙስ',
-          short: 'የአሁኑ ሐሙስ',
-          narrow: 'የአሁኑ ሐሙስ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ሐሙስ',
-          short: 'የሚቀጥለው ሐሙስ',
-          narrow: 'የሚቀጥለው ሐሙስ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሐሙስ በፊት',
-            other: 'ከ{0} ሐሙሶች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሐሙሶች በፊት',
-            other: 'ከ{0} ሐሙሶች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሐሙሶች በፊት',
-            other: 'ከ{0} ሐሙሶች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ሐሙስ ውስጥ',
-            other: 'በ{0} ሐሙሶች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ሐሙሶች ውስጥ',
-            other: 'በ{0} ሐሙሶች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ሐሙሶች ውስጥ',
-            other: 'በ{0} ሐሙሶች ውስጥ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'ያለፈው ሐሙስ',
+      short: 'ያለፈው ሐሙስ',
+      narrow: 'ያለፈው ሐሙስ',
+    ),
+    now: MultiLength(long: 'የአሁኑ ሐሙስ', short: 'የአሁኑ ሐሙስ', narrow: 'የአሁኑ ሐሙስ'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ሐሙስ',
+      short: 'የሚቀጥለው ሐሙስ',
+      narrow: 'የሚቀጥለው ሐሙስ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ሐሙስ በፊት', other: 'ከ{0} ሐሙሶች በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሐሙሶች በፊት',
+        other: 'ከ{0} ሐሙሶች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሐሙሶች በፊት',
+        other: 'ከ{0} ሐሙሶች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ሐሙስ ውስጥ', other: 'በ{0} ሐሙሶች ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ሐሙሶች ውስጥ',
+        other: 'በ{0} ሐሙሶች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ሐሙሶች ውስጥ',
+        other: 'በ{0} ሐሙሶች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'ያለፈው ዓርብ',
-          short: 'ያለፈው ዓርብ',
-          narrow: 'ያለፈው ዓርብ',
-        ),
-        now: MultiLength(
-          long: 'የአሁኑ ዓርብ',
-          short: 'የአሁኑ ዓርብ',
-          narrow: 'የአሁኑ ዓርብ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ዓርብ',
-          short: 'የሚቀጥለው ዓርብ',
-          narrow: 'የሚቀጥለው ዓርብ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ዓርብ በፊት',
-            other: 'ከ{0} ዓርብዎች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ዓርብዎች በፊት',
-            other: 'ከ{0} ዓርብዎች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ዓርብዎች በፊት',
-            other: 'ከ{0} ዓርብዎች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ዓርብ ውስጥ',
-            other: 'በ{0} ዓርብዎች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ዓርብዎች ውስጥ',
-            other: 'በ{0} ዓርብዎች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ዓርብዎች ውስጥ',
-            other: 'በ{0} ዓርብዎች ውስጥ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'ያለፈው ዓርብ',
+      short: 'ያለፈው ዓርብ',
+      narrow: 'ያለፈው ዓርብ',
+    ),
+    now: MultiLength(long: 'የአሁኑ ዓርብ', short: 'የአሁኑ ዓርብ', narrow: 'የአሁኑ ዓርብ'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ዓርብ',
+      short: 'የሚቀጥለው ዓርብ',
+      narrow: 'የሚቀጥለው ዓርብ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ዓርብ በፊት', other: 'ከ{0} ዓርብዎች በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ዓርብዎች በፊት',
+        other: 'ከ{0} ዓርብዎች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ዓርብዎች በፊት',
+        other: 'ከ{0} ዓርብዎች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ዓርብ ውስጥ', other: 'በ{0} ዓርብዎች ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ዓርብዎች ውስጥ',
+        other: 'በ{0} ዓርብዎች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ዓርብዎች ውስጥ',
+        other: 'በ{0} ዓርብዎች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'ያለፈው ቅዳሜ',
-          short: 'ያለፈው ቅዳሜ',
-          narrow: 'ያለፈው ቅዳሜ',
-        ),
-        now: MultiLength(
-          long: 'የአሁኑ ቅዳሜ',
-          short: 'የአሁኑ ቅዳሜ',
-          narrow: 'የአሁኑ ቅዳሜ',
-        ),
-        next: MultiLength(
-          long: 'የሚቀጥለው ቅዳሜ',
-          short: 'የሚቀጥለው ቅዳሜ',
-          narrow: 'የሚቀጥለው ቅዳሜ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ቅዳሜ በፊት',
-            other: 'ከ{0} ቅዳሜዎች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ቅዳሜዎች በፊት',
-            other: 'ከ{0} ቅዳሜዎች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ቅዳሜዎች በፊት',
-            other: 'ከ{0} ቅዳሜዎች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ቅዳሜ ውስጥ',
-            other: 'በ{0} ቅዳሜዎች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ቅዳሜዎች ውስጥ',
-            other: 'በ{0} ቅዳሜዎች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ቅዳሜዎች ውስጥ',
-            other: 'በ{0} ቅዳሜዎች ውስጥ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'ያለፈው ቅዳሜ',
+      short: 'ያለፈው ቅዳሜ',
+      narrow: 'ያለፈው ቅዳሜ',
+    ),
+    now: MultiLength(long: 'የአሁኑ ቅዳሜ', short: 'የአሁኑ ቅዳሜ', narrow: 'የአሁኑ ቅዳሜ'),
+    next: MultiLength(
+      long: 'የሚቀጥለው ቅዳሜ',
+      short: 'የሚቀጥለው ቅዳሜ',
+      narrow: 'የሚቀጥለው ቅዳሜ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ቅዳሜ በፊት', other: 'ከ{0} ቅዳሜዎች በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ቅዳሜዎች በፊት',
+        other: 'ከ{0} ቅዳሜዎች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ቅዳሜዎች በፊት',
+        other: 'ከ{0} ቅዳሜዎች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ቅዳሜ ውስጥ', other: 'በ{0} ቅዳሜዎች ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ቅዳሜዎች ውስጥ',
+        other: 'በ{0} ቅዳሜዎች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ቅዳሜዎች ውስጥ',
+        other: 'በ{0} ቅዳሜዎች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   MultiLength get dayperiod => const MultiLength(
-        long: 'ጥዋት/ከሰዓት',
-        short: 'ጥዋት/ከሰዓት',
-        narrow: 'ጥዋት/ከሰዓት',
-      );
+    long: 'ጥዋት/ከሰዓት',
+    short: 'ጥዋት/ከሰዓት',
+    narrow: 'ጥዋት/ከሰዓት',
+  );
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'ሰዓት',
-          short: 'ሰዓት',
-          narrow: 'ሰዓት',
-        ),
-        now: MultiLength(
-          long: 'ይህ ሰዓት',
-          short: 'ይህ ሰዓት',
-          narrow: 'ይህ ሰዓት',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰዓት በፊት',
-            other: 'ከ{0} ሰዓቶች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰዓት በፊት',
-            other: 'ከ{0} ሰዓቶች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰዓት በፊት',
-            other: 'ከ{0} ሰዓቶች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰዓት ውስጥ',
-            other: 'በ{0} ሰዓቶች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰዓት ውስጥ',
-            other: 'በ{0} ሰዓቶች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰዓት ውስጥ',
-            other: 'በ{0} ሰዓቶች ውስጥ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ሰዓት', short: 'ሰዓት', narrow: 'ሰዓት'),
+    now: MultiLength(long: 'ይህ ሰዓት', short: 'ይህ ሰዓት', narrow: 'ይህ ሰዓት'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ሰዓት በፊት', other: 'ከ{0} ሰዓቶች በፊት'),
+      short: RelativeTime(_locale, one: 'ከ{0} ሰዓት በፊት', other: 'ከ{0} ሰዓቶች በፊት'),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሰዓት በፊት',
+        other: 'ከ{0} ሰዓቶች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ሰዓት ውስጥ', other: 'በ{0} ሰዓቶች ውስጥ'),
+      short: RelativeTime(_locale, one: 'በ{0} ሰዓት ውስጥ', other: 'በ{0} ሰዓቶች ውስጥ'),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ሰዓት ውስጥ',
+        other: 'በ{0} ሰዓቶች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'ደቂቃ',
-          short: 'ደቂቃ',
-          narrow: 'ደቂቃ',
-        ),
-        now: MultiLength(
-          long: 'ይህ ደቂቃ',
-          short: 'ይህ ደቂቃ',
-          narrow: 'ይህ ደቂቃ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ደቂቃ በፊት',
-            other: 'ከ{0} ደቂቃዎች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ደቂቃ በፊት',
-            other: 'ከ{0} ደቂቃዎች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ደቂቃ በፊት',
-            other: 'ከ{0} ደቂቃዎች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ደቂቃ ውስጥ',
-            other: 'በ{0} ደቂቃዎች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ደቂቃ ውስጥ',
-            other: 'በ{0} ደቂቃዎች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ደቂቃ ውስጥ',
-            other: 'በ{0} ደቂቃዎች ውስጥ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ደቂቃ', short: 'ደቂቃ', narrow: 'ደቂቃ'),
+    now: MultiLength(long: 'ይህ ደቂቃ', short: 'ይህ ደቂቃ', narrow: 'ይህ ደቂቃ'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'ከ{0} ደቂቃ በፊት', other: 'ከ{0} ደቂቃዎች በፊት'),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ደቂቃ በፊት',
+        other: 'ከ{0} ደቂቃዎች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ደቂቃ በፊት',
+        other: 'ከ{0} ደቂቃዎች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'በ{0} ደቂቃ ውስጥ', other: 'በ{0} ደቂቃዎች ውስጥ'),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ደቂቃ ውስጥ',
+        other: 'በ{0} ደቂቃዎች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ደቂቃ ውስጥ',
+        other: 'በ{0} ደቂቃዎች ውስጥ',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'ሰከንድ',
-          short: 'ሰከንድ',
-          narrow: 'ሰከንድ',
-        ),
-        now: MultiLength(
-          long: 'አሁን',
-          short: 'አሁን',
-          narrow: 'አሁን',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰከንድ በፊት',
-            other: 'ከ{0} ሰከንዶች በፊት',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰከንድ በፊት',
-            other: 'ከ{0} ሰከንዶች በፊት',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'ከ{0} ሰከንድ በፊት',
-            other: 'ከ{0} ሰከንዶች በፊት',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰከንድ ውስጥ',
-            other: 'በ{0} ሰከንዶች ውስጥ',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰከንድ ውስጥ',
-            other: 'በ{0} ሰከንዶች ውስጥ',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'በ{0} ሰከንድ ውስጥ',
-            other: 'በ{0} ሰከንዶች ውስጥ',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ሰከንድ', short: 'ሰከንድ', narrow: 'ሰከንድ'),
+    now: MultiLength(long: 'አሁን', short: 'አሁን', narrow: 'አሁን'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሰከንድ በፊት',
+        other: 'ከ{0} ሰከንዶች በፊት',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሰከንድ በፊት',
+        other: 'ከ{0} ሰከንዶች በፊት',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'ከ{0} ሰከንድ በፊት',
+        other: 'ከ{0} ሰከንዶች በፊት',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'በ{0} ሰከንድ ውስጥ',
+        other: 'በ{0} ሰከንዶች ውስጥ',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'በ{0} ሰከንድ ውስጥ',
+        other: 'በ{0} ሰከንዶች ውስጥ',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'በ{0} ሰከንድ ውስጥ',
+        other: 'በ{0} ሰከንዶች ውስጥ',
+      ),
+    ),
+  );
 
   @override
-  MultiLength get zone => const MultiLength(
-        long: 'የሰዓት ሰቅ',
-        short: 'የሰዓት ሰቅ',
-        narrow: 'የሰዓት ሰቅ',
-      );
+  MultiLength get zone =>
+      const MultiLength(long: 'የሰዓት ሰቅ', short: 'የሰዓት ሰቅ', narrow: 'የሰዓት ሰቅ');
 }
 
 class LanguagesAm extends Languages {
@@ -5361,8 +3523,12 @@ class LanguagesAm extends Languages {
   static const _chp = Language('chp', 'ቺፔውያን');
   static const _chr = Language('chr', 'ቼሮኬኛ');
   static const _chy = Language('chy', 'ችዬኔ');
-  static const _ckb =
-      Language('ckb', 'የሶራኒ ኩርድኛ', variant: 'የሶራኒ ኩርድኛ', menu: 'የሶራኒ ኩርድኛ');
+  static const _ckb = Language(
+    'ckb',
+    'የሶራኒ ኩርድኛ',
+    variant: 'የሶራኒ ኩርድኛ',
+    menu: 'የሶራኒ ኩርድኛ',
+  );
   static const _clc = Language('clc', 'ቺልኮቲን');
   static const _co = Language('co', 'ኮርሲካኛ');
   static const _cop = Language('cop', 'ኮፕቲክ');
@@ -5410,8 +3576,11 @@ class LanguagesAm extends Languages {
   static const _en = Language('en', 'እንግሊዝኛ');
   static const _enAU = Language('en-AU', 'የአውስትራሊያ እንግሊዝኛ');
   static const _enCA = Language('en-CA', 'የካናዳ እንግሊዝኛ');
-  static const _enGB =
-      Language('en-GB', 'የብሪቲሽ እንግሊዝኛ', short: 'የዩናይትድ ኪንግደም እንግሊዝኛ');
+  static const _enGB = Language(
+    'en-GB',
+    'የብሪቲሽ እንግሊዝኛ',
+    short: 'የዩናይትድ ኪንግደም እንግሊዝኛ',
+  );
   static const _enUS = Language('en-US', 'የአሜሪካ እንግሊዝኛ', short: 'የዩ ኤስ እንግሊዝኛ');
   static const _eo = Language('eo', 'ኤስፐራንቶ');
   static const _es = Language('es', 'ስፓኒሽ');
@@ -5461,8 +3630,11 @@ class LanguagesAm extends Languages {
   static const _hax = Language('hax', 'ደቡባዊ ሃይዳ');
   static const _he = Language('he', 'ዕብራይስጥ');
   static const _hi = Language('hi', 'ሕንድኛ');
-  static const _hiLatn =
-      Language('hi-Latn', 'ሕንድኛ (ላቲን)', variant: 'ሕንድኛ (ላቲን)');
+  static const _hiLatn = Language(
+    'hi-Latn',
+    'ሕንድኛ (ላቲን)',
+    variant: 'ሕንድኛ (ላቲን)',
+  );
   static const _hil = Language('hil', 'ሂሊጋይኖን');
   static const _hmn = Language('hmn', 'ህሞንግ');
   static const _hr = Language('hr', 'ክሮሽያንኛ');
@@ -8297,8 +6469,11 @@ class TerritoriesAm extends Territories {
   static const _bz = Territory('BZ', 'በሊዝ');
   static const _ca = Territory('CA', 'ካናዳ');
   static const _cc = Territory('CC', 'ኮኮስ(ኬሊንግ) ደሴቶች');
-  static const _cd =
-      Territory('CD', 'ኮንጎ-ኪንሻሳ', variant: 'ኮንጎ (የዲሞክራቲክ ሪፐብሊክ ኮንጎ)');
+  static const _cd = Territory(
+    'CD',
+    'ኮንጎ-ኪንሻሳ',
+    variant: 'ኮንጎ (የዲሞክራቲክ ሪፐብሊክ ኮንጎ)',
+  );
   static const _cf = Territory('CF', 'ማዕከላዊ አፍሪካ ሪፑብሊክ');
   static const _cg = Territory('CG', 'ኮንጎ ብራዛቪል', variant: 'ኮንጎ (ሪፑብሊክ)');
   static const _ch = Territory('CH', 'ስዊዘርላንድ');
@@ -8335,8 +6510,11 @@ class TerritoriesAm extends Territories {
   static const _ez = Territory('EZ', 'የዩሮ ዞን');
   static const _fi = Territory('FI', 'ፊንላንድ');
   static const _fj = Territory('FJ', 'ፊጂ');
-  static const _fk =
-      Territory('FK', 'የፎክላንድ ደሴቶች', variant: 'ፎክላንድ ደሴቶች (ኢስላስ ማልቪናስ)');
+  static const _fk = Territory(
+    'FK',
+    'የፎክላንድ ደሴቶች',
+    variant: 'ፎክላንድ ደሴቶች (ኢስላስ ማልቪናስ)',
+  );
   static const _fm = Territory('FM', 'ማይክሮኔዢያ');
   static const _fo = Territory('FO', 'የፋሮ ደሴቶች');
   static const _fr = Territory('FR', 'ፈረንሳይ');
@@ -8359,8 +6537,11 @@ class TerritoriesAm extends Territories {
   static const _gu = Territory('GU', 'ጉዋም');
   static const _gw = Territory('GW', 'ጊኒ-ቢሳው');
   static const _gy = Territory('GY', 'ጉያና');
-  static const _hk =
-      Territory('HK', 'ሆንግ ኮንግ ልዩ የአስተዳደር ክልል ቻይና', short: 'ሆንግ ኮንግ');
+  static const _hk = Territory(
+    'HK',
+    'ሆንግ ኮንግ ልዩ የአስተዳደር ክልል ቻይና',
+    short: 'ሆንግ ኮንግ',
+  );
   static const _hm = Territory('HM', 'ኽርድ ኣና ማክዶናልድ ደሴቶች');
   static const _hn = Territory('HN', 'ሆንዱራስ');
   static const _hr = Territory('HR', 'ክሮኤሽያ');
@@ -9833,12 +8014,21 @@ class CurrenciesAm extends Currencies {
   static const _ang = Currency(_cld, 'ANG', 'ኔዘርላንድስ አንቲሊአን ጊልደር');
   static const _aoa = Currency(_cld, 'AOA', 'የአንጎላ ኩዋንዛ', symbolNarrow: 'Kz');
   static const _ars = Currency(_cld, 'ARS', 'የአርጀንቲና ፔሶ', symbolNarrow: r'$');
-  static const _aud =
-      Currency(_cld, 'AUD', 'የአውስትራሊያ ዶላር', symbol: r'AU$', symbolNarrow: r'$');
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'የአውስትራሊያ ዶላር',
+    symbol: r'AU$',
+    symbolNarrow: r'$',
+  );
   static const _awg = Currency(_cld, 'AWG', 'አሩባን ፍሎሪን');
   static const _azn = Currency(_cld, 'AZN', 'የአዛርባጃን ማናት', symbolNarrow: '₼');
-  static const _bam =
-      Currency(_cld, 'BAM', 'የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ', symbolNarrow: 'KM');
+  static const _bam = Currency(
+    _cld,
+    'BAM',
+    'የቦስኒያ ሄርዞጎቪና የሚመነዘር ማርክ',
+    symbolNarrow: 'KM',
+  );
   static const _bbd = Currency(_cld, 'BBD', 'የባርቤዶስ ዶላር', symbolNarrow: r'$');
   static const _bdt = Currency(_cld, 'BDT', 'የባንግላዲሽ ታካ', symbolNarrow: '৳');
   static const _bgn = Currency(_cld, 'BGN', 'የቡልጋሪያ ሌቭ');
@@ -9847,30 +8037,55 @@ class CurrenciesAm extends Currencies {
   static const _bmd = Currency(_cld, 'BMD', 'የቤርሙዳ ዶላር', symbolNarrow: r'$');
   static const _bnd = Currency(_cld, 'BND', 'የብሩኔ ዶላር', symbolNarrow: r'$');
   static const _bob = Currency(_cld, 'BOB', 'የቦሊቪያ ቦሊቪያኖ', symbolNarrow: 'Bs');
-  static const _brl =
-      Currency(_cld, 'BRL', 'የብራዚል ሪል', symbol: r'R$', symbolNarrow: r'R$');
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'የብራዚል ሪል',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
   static const _bsd = Currency(_cld, 'BSD', 'የባሃማስ ዶላር', symbolNarrow: r'$');
   static const _btn = Currency(_cld, 'BTN', 'ብሁታኒዝ ንጉልትረም');
   static const _bwp = Currency(_cld, 'BWP', 'የቦትስዋና ፑላ', symbolNarrow: 'P');
   static const _byn = Currency(_cld, 'BYN', 'የቤላሩስያ ሩብል', symbolNarrow: 'р.');
   static const _byr = Currency(_cld, 'BYR', 'የቤላሩስያ ሩብል (2000–2016)');
   static const _bzd = Currency(_cld, 'BZD', 'የቤሊዝ ዶላር', symbolNarrow: r'$');
-  static const _cad =
-      Currency(_cld, 'CAD', 'የካናዳ ዶላር', symbol: r'CA$', symbolNarrow: r'$');
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'የካናዳ ዶላር',
+    symbol: r'CA$',
+    symbolNarrow: r'$',
+  );
   static const _cdf = Currency(_cld, 'CDF', 'የኮንጐ ፍራንክ ኮንጐሌዝ');
   static const _chf = Currency(_cld, 'CHF', 'የስዊስ ፍራንክ');
   static const _clp = Currency(_cld, 'CLP', 'የቺሊ ፔሶ', symbolNarrow: r'$');
   static const _cnh = Currency(_cld, 'CNH', 'የቻይና ዩዋን (የውጭ ምንዛሪ)');
-  static const _cny =
-      Currency(_cld, 'CNY', 'የቻይና የን', symbol: 'CN¥', symbolNarrow: '¥');
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'የቻይና የን',
+    symbol: 'CN¥',
+    symbolNarrow: '¥',
+  );
   static const _cop = Currency(_cld, 'COP', 'የኮሎምቢያ ፔሶ', symbolNarrow: r'$');
   static const _crc = Currency(_cld, 'CRC', 'የኮስታሪካ ኮሎን', symbolNarrow: '₡');
-  static const _cuc =
-      Currency(_cld, 'CUC', 'የኩባ የሚመነዘር ፔሶ', symbolNarrow: r'$');
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'የኩባ የሚመነዘር ፔሶ',
+    symbolNarrow: r'$',
+  );
   static const _cup = Currency(_cld, 'CUP', 'የኩባ ፔሶ', symbolNarrow: r'$');
   static const _cve = Currency(_cld, 'CVE', 'የኬፕ ቫርዲ ኤስኩዶ');
-  static const _czk = Currency(_cld, 'CZK', 'ቼክ ሪፐብሊክ ኮሩና',
-      one: 'ቼክ ሪፐብሊክ ኮሩና', other: 'ቼክ ሪፐብሊክ ኮሮና', symbolNarrow: 'Kč');
+  static const _czk = Currency(
+    _cld,
+    'CZK',
+    'ቼክ ሪፐብሊክ ኮሩና',
+    one: 'ቼክ ሪፐብሊክ ኮሩና',
+    other: 'ቼክ ሪፐብሊክ ኮሮና',
+    symbolNarrow: 'Kč',
+  );
   static const _djf = Currency(_cld, 'DJF', 'የጅቡቲ ፍራንክ');
   static const _dkk = Currency(_cld, 'DKK', 'የዴንማርክ ክሮን', symbolNarrow: 'kr');
   static const _dop = Currency(_cld, 'DOP', 'የዶሚኒክ ፔሶ', symbolNarrow: r'$');
@@ -9879,13 +8094,27 @@ class CurrenciesAm extends Currencies {
   static const _ern = Currency(_cld, 'ERN', 'የኤርትራ ናቅፋ');
   static const _esp = Currency(_cld, 'ESP', 'ESP', symbolNarrow: '₧');
   static const _etb = Currency(_cld, 'ETB', 'የኢትዮጵያ ብር', symbol: 'ብር');
-  static const _eur =
-      Currency(_cld, 'EUR', 'ዩሮ', symbol: '€', symbolNarrow: '€');
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'ዩሮ',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
   static const _fjd = Currency(_cld, 'FJD', 'የፊጂ ዶላር', symbolNarrow: r'$');
-  static const _fkp =
-      Currency(_cld, 'FKP', 'የፎክላንድ ደሴቶች ፓውንድ', symbolNarrow: '£');
-  static const _gbp = Currency(_cld, 'GBP', 'የእንግሊዝ ፓውንድ ስተርሊንግ',
-      symbol: '£', symbolNarrow: '£');
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'የፎክላንድ ደሴቶች ፓውንድ',
+    symbolNarrow: '£',
+  );
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'የእንግሊዝ ፓውንድ ስተርሊንግ',
+    symbol: '£',
+    symbolNarrow: '£',
+  );
   static const _gel = Currency(_cld, 'GEL', 'የጆርጅያ ላሪ', symbolNarrow: '₾');
   static const _ghc = Currency(_cld, 'GHC', 'የጋና ሴዲ');
   static const _ghs = Currency(_cld, 'GHS', 'የጋና ሲዲ', symbolNarrow: 'GH₵');
@@ -9894,34 +8123,63 @@ class CurrenciesAm extends Currencies {
   static const _gnf = Currency(_cld, 'GNF', 'የጊኒ ፍራንክ', symbolNarrow: 'FG');
   static const _gtq = Currency(_cld, 'GTQ', 'ጓቲማላን ኩቲዛል', symbolNarrow: 'Q');
   static const _gyd = Currency(_cld, 'GYD', 'የጉየና ዶላር', symbolNarrow: r'$');
-  static const _hkd =
-      Currency(_cld, 'HKD', 'የሆንግኮንግ ዶላር', symbol: r'HK$', symbolNarrow: r'$');
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'የሆንግኮንግ ዶላር',
+    symbol: r'HK$',
+    symbolNarrow: r'$',
+  );
   static const _hnl = Currency(_cld, 'HNL', 'የሃንዱራ ሌምፓአይራ', symbolNarrow: 'L');
   static const _hrk = Currency(_cld, 'HRK', 'የክሮሽያ ኩና', symbolNarrow: 'kn');
   static const _htg = Currency(_cld, 'HTG', 'የሃያቲ ጓርዴ');
   static const _huf = Currency(_cld, 'HUF', 'የሃንጋሪያን ፎሪንት', symbolNarrow: 'Ft');
   static const _idr = Currency(_cld, 'IDR', 'የኢንዶኔዥያ ሩፒሃ', symbolNarrow: 'Rp');
-  static const _ils =
-      Currency(_cld, 'ILS', 'የእስራኤል አዲስ ሽቅል', symbol: '₪', symbolNarrow: '₪');
-  static const _inr =
-      Currency(_cld, 'INR', 'የሕንድ ሩፒ', symbol: '₹', symbolNarrow: '₹');
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'የእስራኤል አዲስ ሽቅል',
+    symbol: '₪',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'የሕንድ ሩፒ',
+    symbol: '₹',
+    symbolNarrow: '₹',
+  );
   static const _iqd = Currency(_cld, 'IQD', 'የኢራቅ ዲናር');
   static const _irr = Currency(_cld, 'IRR', 'የኢራን ሪአል');
   static const _isk = Currency(_cld, 'ISK', 'የአይስላንድ ክሮና', symbolNarrow: 'kr');
   static const _jmd = Currency(_cld, 'JMD', 'የጃማይካ ዶላር', symbolNarrow: r'$');
   static const _jod = Currency(_cld, 'JOD', 'የጆርዳን ዲናር');
-  static const _jpy =
-      Currency(_cld, 'JPY', 'የጃፓን የን', symbol: 'JP¥', symbolNarrow: '¥');
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'የጃፓን የን',
+    symbol: 'JP¥',
+    symbolNarrow: '¥',
+  );
   static const _kes = Currency(_cld, 'KES', 'የኬኒያ ሺሊንግ');
   static const _kgs = Currency(_cld, 'KGS', 'የኪርጊስታን ሶም', symbolNarrow: '⃀');
   static const _khr = Currency(_cld, 'KHR', 'የካምቦዲያ ሬል', symbolNarrow: '៛');
   static const _kmf = Currency(_cld, 'KMF', 'የኮሞሮ ፍራንክ', symbolNarrow: 'CF');
   static const _kpw = Currency(_cld, 'KPW', 'የሰሜን ኮሪያ ዎን', symbolNarrow: '₩');
-  static const _krw =
-      Currency(_cld, 'KRW', 'የደቡብ ኮሪያ ዎን', symbol: '₩', symbolNarrow: '₩');
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'የደቡብ ኮሪያ ዎን',
+    symbol: '₩',
+    symbolNarrow: '₩',
+  );
   static const _kwd = Currency(_cld, 'KWD', 'የኩዌት ዲናር');
-  static const _kyd =
-      Currency(_cld, 'KYD', 'የካይማን ደሴቶች ዶላር', symbolNarrow: r'$');
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'የካይማን ደሴቶች ዶላር',
+    symbolNarrow: r'$',
+  );
   static const _kzt = Currency(_cld, 'KZT', 'የካዛኪስታን ተንጌ', symbolNarrow: '₸');
   static const _lak = Currency(_cld, 'LAK', 'የላኦቲ ኪፕ', symbolNarrow: '₭');
   static const _lbp = Currency(_cld, 'LBP', 'የሊባኖስ ፓውንድ', symbolNarrow: 'L£');
@@ -9933,8 +8191,12 @@ class CurrenciesAm extends Currencies {
   static const _lyd = Currency(_cld, 'LYD', 'የሊቢያ ዲናር');
   static const _mad = Currency(_cld, 'MAD', 'የሞሮኮ ዲርሀም');
   static const _mdl = Currency(_cld, 'MDL', 'ሞልዶቫን ሊኡ');
-  static const _mga =
-      Currency(_cld, 'MGA', 'የማደጋስካር ማላጋስይ አሪያርይ', symbolNarrow: 'Ar');
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'የማደጋስካር ማላጋስይ አሪያርይ',
+    symbolNarrow: 'Ar',
+  );
   static const _mkd = Currency(_cld, 'MKD', 'የሜቆድንያ ዲናር');
   static const _mmk = Currency(_cld, 'MMK', 'የማያናማር ክያት', symbolNarrow: 'K');
   static const _mnt = Currency(_cld, 'MNT', 'የሞንጎሊያን ቱግሪክ', symbolNarrow: '₮');
@@ -9944,8 +8206,13 @@ class CurrenciesAm extends Currencies {
   static const _mur = Currency(_cld, 'MUR', 'የሞሪሸስ ሩፒ', symbolNarrow: 'Rs');
   static const _mvr = Currency(_cld, 'MVR', 'የማልዲቫ ሩፊያ');
   static const _mwk = Currency(_cld, 'MWK', 'የማላዊ ኩዋቻ');
-  static const _mxn =
-      Currency(_cld, 'MXN', 'የሜክሲኮ ፔሶ', symbol: r'MX$', symbolNarrow: r'$');
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'የሜክሲኮ ፔሶ',
+    symbol: r'MX$',
+    symbolNarrow: r'$',
+  );
   static const _myr = Currency(_cld, 'MYR', 'የማሌዥያ ሪንጊት', symbolNarrow: 'RM');
   static const _mzn = Currency(_cld, 'MZN', 'የሞዛምቢክ ሜቲካል');
   static const _nad = Currency(_cld, 'NAD', 'የናሚቢያ ዶላር', symbolNarrow: r'$');
@@ -9953,14 +8220,24 @@ class CurrenciesAm extends Currencies {
   static const _nio = Currency(_cld, 'NIO', 'የኒካራጓ ኮርዶባ', symbolNarrow: r'C$');
   static const _nok = Currency(_cld, 'NOK', 'የኖርዌይ ክሮን', symbolNarrow: 'kr');
   static const _npr = Currency(_cld, 'NPR', 'የኔፓል ሩፒ', symbolNarrow: 'Rs');
-  static const _nzd =
-      Currency(_cld, 'NZD', 'የኒውዚላንድ ዶላር', symbol: r'NZ$', symbolNarrow: r'$');
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'የኒውዚላንድ ዶላር',
+    symbol: r'NZ$',
+    symbolNarrow: r'$',
+  );
   static const _omr = Currency(_cld, 'OMR', 'የኦማን ሪአል');
   static const _pab = Currency(_cld, 'PAB', 'ፓናማኒአን ባልቦአ');
   static const _pen = Currency(_cld, 'PEN', 'የፔሩቪያ ሶል');
   static const _pgk = Currency(_cld, 'PGK', 'የፓፕዋ ኒው ጊኒ ኪና');
-  static const _php =
-      Currency(_cld, 'PHP', 'የፊሊፒንስ ፔሶ', symbol: 'PHP', symbolNarrow: '₱');
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'የፊሊፒንስ ፔሶ',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
   static const _pkr = Currency(_cld, 'PKR', 'የፓኪስታን ሩፒ', symbolNarrow: 'Rs');
   static const _pln = Currency(_cld, 'PLN', 'የፖላንድ ዝሎቲ', symbolNarrow: 'zł');
   static const _pyg = Currency(_cld, 'PYG', 'የፓራጓይ ጉአራኒ', symbolNarrow: '₲');
@@ -9970,58 +8247,116 @@ class CurrenciesAm extends Currencies {
   static const _rub = Currency(_cld, 'RUB', 'የሩስያ ሩብል', symbolNarrow: '₽');
   static const _rwf = Currency(_cld, 'RWF', 'የሩዋንዳ ፍራንክ', symbolNarrow: 'RF');
   static const _sar = Currency(_cld, 'SAR', 'የሳውዲ ሪያል');
-  static const _sbd =
-      Currency(_cld, 'SBD', 'የሰለሞን ደሴቶች ዶላር', symbolNarrow: r'$');
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'የሰለሞን ደሴቶች ዶላር',
+    symbolNarrow: r'$',
+  );
   static const _scr = Currency(_cld, 'SCR', 'የሲሼል ሩፒ');
   static const _sdg = Currency(_cld, 'SDG', 'የሱዳን ፓውንድ');
   static const _sdp = Currency(_cld, 'SDP', 'የሱዳን ፓውንድ (1957–1998)');
   static const _sek = Currency(_cld, 'SEK', 'የስዊድን ክሮና', symbolNarrow: 'kr');
   static const _sgd = Currency(_cld, 'SGD', 'የሲንጋፖር ዶላር', symbolNarrow: r'$');
-  static const _shp =
-      Currency(_cld, 'SHP', 'የሴይንት ሔሌና ፓውንድ', symbolNarrow: '£');
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'የሴይንት ሔሌና ፓውንድ',
+    symbolNarrow: '£',
+  );
   static const _sle = Currency(_cld, 'SLE', 'የሴራሊዎን ሊዎን');
   static const _sll = Currency(_cld, 'SLL', 'የሴራሊዎን ሊዎን (1964—2022)');
   static const _sos = Currency(_cld, 'SOS', 'የሶማሌ ሺሊንግ');
   static const _srd = Currency(_cld, 'SRD', 'የሰርናሜዝ ዶላር', symbolNarrow: r'$');
   static const _ssp = Currency(_cld, 'SSP', 'የደቡብ ሱዳን ፓውንድ', symbolNarrow: '£');
   static const _std = Currency(_cld, 'STD', 'የሳኦ ቶሜ እና ፕሪንሲፔ ዶብራ (1977–2017)');
-  static const _stn =
-      Currency(_cld, 'STN', 'የሳኦ ቶሜ እና ፕሪንሲፔ ዶብራ', symbolNarrow: 'Db');
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'የሳኦ ቶሜ እና ፕሪንሲፔ ዶብራ',
+    symbolNarrow: 'Db',
+  );
   static const _syp = Currency(_cld, 'SYP', 'የሲሪያ ፓውንድ', symbolNarrow: '£');
   static const _szl = Currency(_cld, 'SZL', 'የስዋዚላንድ ሊላንገኒ');
-  static const _thb =
-      Currency(_cld, 'THB', 'የታይላንድ ባህት', symbol: '฿', symbolNarrow: '฿');
+  static const _thb = Currency(
+    _cld,
+    'THB',
+    'የታይላንድ ባህት',
+    symbol: '฿',
+    symbolNarrow: '฿',
+  );
   static const _tjs = Currency(_cld, 'TJS', 'የታጂክስታን ሶሞኒ');
   static const _tmt = Currency(_cld, 'TMT', 'ቱርክሜኒስታኒ ማናት');
   static const _tnd = Currency(_cld, 'TND', 'የቱኒዚያ ዲናር');
   static const _top = Currency(_cld, 'TOP', 'ቶንጋን ፓ’አንጋ', symbolNarrow: r'T$');
-  static const _$try =
-      Currency(_cld, 'TRY', 'የቱርክ ሊራ', symbolNarrow: '₺', symbolVariant: 'TL');
-  static const _ttd =
-      Currency(_cld, 'TTD', 'የትሪንዳድ እና ቶቤጎዶላር', symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'የአዲሷ ታይዋን ዶላር',
-      symbol: r'NT$', symbolNarrow: r'NT$');
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'የቱርክ ሊራ',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'የትሪንዳድ እና ቶቤጎዶላር',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'የአዲሷ ታይዋን ዶላር',
+    symbol: r'NT$',
+    symbolNarrow: r'NT$',
+  );
   static const _tzs = Currency(_cld, 'TZS', 'የታንዛኒያ ሺሊንግ');
   static const _uah = Currency(_cld, 'UAH', 'የዩክሬን ሀሪይቭኒአ', symbolNarrow: '₴');
   static const _ugx = Currency(_cld, 'UGX', 'የዩጋንዳ ሺሊንግ');
-  static const _usd =
-      Currency(_cld, 'USD', 'የአሜሪካን ዶላር', symbol: r'US$', symbolNarrow: r'$');
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'የአሜሪካን ዶላር',
+    symbol: r'US$',
+    symbolNarrow: r'$',
+  );
   static const _uyu = Currency(_cld, 'UYU', 'የኡራጓይ ፔሶ', symbolNarrow: r'$');
   static const _uzs = Currency(_cld, 'UZS', 'የኡዝፔኪስታን ሶም');
-  static const _vef =
-      Currency(_cld, 'VEF', 'የቬንዝዌላ ቦሊቫር (2008–2018)', symbolNarrow: 'Bs');
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'የቬንዝዌላ ቦሊቫር (2008–2018)',
+    symbolNarrow: 'Bs',
+  );
   static const _ves = Currency(_cld, 'VES', 'የቬንዝዌላ-ቦሊቫር');
-  static const _vnd =
-      Currency(_cld, 'VND', 'የቭየትናም ዶንግ', symbol: '₫', symbolNarrow: '₫');
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'የቭየትናም ዶንግ',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
   static const _vuv = Currency(_cld, 'VUV', 'የቫንዋንቱ ቫቱ');
   static const _wst = Currency(_cld, 'WST', 'ሳሞአን ታላ');
-  static const _xaf =
-      Currency(_cld, 'XAF', 'የመካከለኛው አፍሪካ ሴፋ ፍራንክ', symbol: 'FCFA');
-  static const _xcd = Currency(_cld, 'XCD', 'የምዕራብ ካሪብያን ዶላር',
-      symbol: r'EC$', symbolNarrow: r'$');
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'የመካከለኛው አፍሪካ ሴፋ ፍራንክ',
+    symbol: 'FCFA',
+  );
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'የምዕራብ ካሪብያን ዶላር',
+    symbol: r'EC$',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
-  static const _xof =
-      Currency(_cld, 'XOF', 'የምዕራብ አፍሪካ ሴፋ ፍራንክ', symbol: 'F CFA');
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'የምዕራብ አፍሪካ ሴፋ ፍራንክ',
+    symbol: 'F CFA',
+  );
   static const _xpf = Currency(_cld, 'XPF', 'ሲ ኤፍ ፒ ፍራንክ', symbol: 'CFPF');
   static const _xxx = Currency(_cld, 'XXX', 'ያልታወቀ ገንዘብ', symbol: '¤');
   static const _yer = Currency(_cld, 'YER', 'የየመን ሪአል');
@@ -10961,10 +9296,12 @@ class TimeZonesAm extends TimeZones {
     'America/Nome': TimeZoneNames(exemplarCity: 'ኖሜ'),
     'America/Noronha': TimeZoneNames(exemplarCity: 'ኖሮኛ'),
     'America/North_Dakota/Beulah': TimeZoneNames(exemplarCity: 'ቤኡላህ, ሰሜን ዳኮታ'),
-    'America/North_Dakota/New_Salem':
-        TimeZoneNames(exemplarCity: 'አዲስ ሳሌም, ሰሜን ዳኮታ'),
-    'America/North_Dakota/Center':
-        TimeZoneNames(exemplarCity: 'መካከለኛ, ሰሜን ዳኮታ'),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'አዲስ ሳሌም, ሰሜን ዳኮታ',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'መካከለኛ, ሰሜን ዳኮታ',
+    ),
     'America/Ojinaga': TimeZoneNames(exemplarCity: 'ኦዪናጋ'),
     'America/Panama': TimeZoneNames(exemplarCity: 'ፓናማ'),
     'America/Paramaribo': TimeZoneNames(exemplarCity: 'ፓራማሪቦ'),
@@ -11025,8 +9362,9 @@ class TimeZonesAm extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: 'ቺስናኡ'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'ኮፐንሃገን'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'ደብሊን',
-        long: TimeZoneName(daylight: 'የአይሪሽ መደበኛ ሰዓት አቆጣጠር')),
+      exemplarCity: 'ደብሊን',
+      long: TimeZoneName(daylight: 'የአይሪሽ መደበኛ ሰዓት አቆጣጠር'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'ጂብራልታር'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: 'ጉርነሲ'),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: 'ሄልሲንኪ'),
@@ -11039,8 +9377,9 @@ class TimeZonesAm extends TimeZones {
     'Europe/Lisbon': TimeZoneNames(exemplarCity: 'ሊዝበን'),
     'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'ልጁብልጃና'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'ለንደን',
-        long: TimeZoneName(daylight: 'የብሪትሽ የበጋ ሰዓት አቆጣጠር')),
+      exemplarCity: 'ለንደን',
+      long: TimeZoneName(daylight: 'የብሪትሽ የበጋ ሰዓት አቆጣጠር'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'ሉክሰምበርግ'),
     'Europe/Madrid': TimeZoneNames(exemplarCity: 'ማድሪድ'),
     'Europe/Malta': TimeZoneNames(exemplarCity: 'ማልታ'),
@@ -11281,8 +9620,9 @@ class TimeZonesAm extends TimeZones {
     'Antarctica/Troll': TimeZoneNames(exemplarCity: 'ትሮል'),
     'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'ቭስቶክ'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'የተቀነባበረ ሁለገብ ሰዓት'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'የተቀነባበረ ሁለገብ ሰዓት'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'ያልታወቀ ከተማ'),
   };
 
@@ -11290,507 +9630,822 @@ class TimeZonesAm extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Afghanistan':
-        MetaZone('Afghanistan', long: TimeZoneName(standard: 'የአፍጋኒስታን ሰዓት')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'የመካከለኛው አፍሪካ ሰዓት')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'የምስራቅ አፍሪካ ሰዓት')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'የደቡብ አፍሪካ መደበኛ ሰዓት')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'የምዕራብ አፍሪካ ሰዓት',
-            standard: 'የምዕራብ አፍሪካ መደበኛ ሰዓት',
-            daylight: 'የምዕራብ አፍሪካ ክረምት ሰዓት')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'የአላስካ ሰዓት አቆጣጠር',
-            standard: 'የአላስካ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የአላስካ የቀን ሰዓት አቆጣጠር')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'የአማዞን ሰዓት አቆጣጠር',
-            standard: 'የአማዞን መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የአማዞን የቀን ሰዓት አቆጣጠር')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'የሰሜን አሜሪካ የመካከለኛ ሰዓት አቆጣጠር',
-            standard: 'የሰሜን አሜሪካ የመካከለኛ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የመካከለኛ የቀን ሰዓት አቆጣጠር')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'ምስራቃዊ ሰዓት አቆጣጠር',
-            standard: 'ምስራቃዊ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'ምስራቃዊ የቀን ሰዓት አቆጣጠር')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'የተራራ የሰዓት አቆጣጠር',
-            standard: 'የተራራ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የተራራ የቀንሰዓት አቆጣጠር')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'የፓስፊክ ሰዓት አቆጣጠር',
-            standard: 'የፓስፊክ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የፓስፊክ የቀን ሰዓት አቆጣጠር')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: 'የአናድይር ሰዓት አቆጣጠር',
-            standard: 'የአናዲይር ሰዓት አቆጣጠር',
-            daylight: 'የአናድይር የበጋ የሰዓት አቆጣጠር')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'የአፒያ ሰዓት',
-            standard: 'የአፒያ መደበኛ ሰዓት',
-            daylight: 'የአፒያ የቀን ጊዜ ሰዓት')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'የዓረቢያ ሰዓት',
-            standard: 'የዓረቢያ መደበኛ ሰዓት',
-            daylight: 'የዓረቢያ የቀን ብርሃን ሰዓት')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'የአርጀንቲና የሰዓት አቆጣጠር',
-            standard: 'የአርጀንቲና መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የአርጀንቲና የበጋ ሰዓት አቆጣጠር')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'የአርጀንቲና ምስራቃዊ ሰዓት አቆጣጠር',
-            standard: 'የምዕራባዊ አርጀንቲና መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የምዕራባዊ አርጀንቲና የበጋ ሰዓት አቆጣጠር')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'የአርመኒያ ሰዓት',
-            standard: 'የአርመኒያ መደበኛ ሰዓት',
-            daylight: 'የአርመኒያ ክረምት ሰዓት')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'የአትላንቲክ የሰዓት አቆጣጠር',
-            standard: 'የአትላንቲክ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የአትላንቲክ የቀን ሰዓት አቆጣጠር')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'የመካከለኛው አውስትራሊያ ሰዓት አቆጣጠር',
-            standard: 'የአውስትራሊያ መካከለኛ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የአውስትራሊያ መካከለኛ የቀን ሰዓት አቆጣጠር')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'የአውስትራሊያ መካከለኛ ምስራቃዊ ሰዓት አቆጣጠር',
-            standard: 'የአውስትራሊያ መካከለኛ ምስራቃዊ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የአውስትራሊያ መካከለኛው ምስራቅ የቀን ሰዓት አቆጣጠር')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'የምዕራባዊ አውስትራሊያ የሰዓት አቆጣጠር',
-            standard: 'የአውስትራሊያ ምዕራባዊ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የአውስትራሊያ ምዕራባዊ የቀን ሰዓት አቆጣጠር')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'የምስራቃዊ አውስትራሊያ ሰዓት አቆጣጠር',
-            standard: 'የአውስትራሊያ ምስራቃዊ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የአውስትራሊያ ምስራቃዊ የቀን ሰዓት አቆጣጠር')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'የአዘርባጃን ሰዓት',
-            standard: 'የአዘርባጃን መደበኛ ሰዓት',
-            daylight: 'የአዘርባጃን ክረምት ሰዓት')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'የአዞረስ ሰዓት',
-            standard: 'የአዞረስ መደበኛ ሰዓት',
-            daylight: 'የአዞረስ ክረምት ሰዓት')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'የባንግላዴሽ ሰዓት',
-            standard: 'የባንግላዴሽ መደበኛ ሰዓት',
-            daylight: 'የባንግላዴሽ ክረምት ሰዓት')),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'የአፍጋኒስታን ሰዓት'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'የመካከለኛው አፍሪካ ሰዓት'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'የምስራቅ አፍሪካ ሰዓት'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'የደቡብ አፍሪካ መደበኛ ሰዓት'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'የምዕራብ አፍሪካ ሰዓት',
+        standard: 'የምዕራብ አፍሪካ መደበኛ ሰዓት',
+        daylight: 'የምዕራብ አፍሪካ ክረምት ሰዓት',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'የአላስካ ሰዓት አቆጣጠር',
+        standard: 'የአላስካ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የአላስካ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'የአማዞን ሰዓት አቆጣጠር',
+        standard: 'የአማዞን መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የአማዞን የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'የሰሜን አሜሪካ የመካከለኛ ሰዓት አቆጣጠር',
+        standard: 'የሰሜን አሜሪካ የመካከለኛ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የመካከለኛ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'ምስራቃዊ ሰዓት አቆጣጠር',
+        standard: 'ምስራቃዊ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'ምስራቃዊ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'የተራራ የሰዓት አቆጣጠር',
+        standard: 'የተራራ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የተራራ የቀንሰዓት አቆጣጠር',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'የፓስፊክ ሰዓት አቆጣጠር',
+        standard: 'የፓስፊክ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የፓስፊክ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: 'የአናድይር ሰዓት አቆጣጠር',
+        standard: 'የአናዲይር ሰዓት አቆጣጠር',
+        daylight: 'የአናድይር የበጋ የሰዓት አቆጣጠር',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'የአፒያ ሰዓት',
+        standard: 'የአፒያ መደበኛ ሰዓት',
+        daylight: 'የአፒያ የቀን ጊዜ ሰዓት',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'የዓረቢያ ሰዓት',
+        standard: 'የዓረቢያ መደበኛ ሰዓት',
+        daylight: 'የዓረቢያ የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'የአርጀንቲና የሰዓት አቆጣጠር',
+        standard: 'የአርጀንቲና መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የአርጀንቲና የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'የአርጀንቲና ምስራቃዊ ሰዓት አቆጣጠር',
+        standard: 'የምዕራባዊ አርጀንቲና መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የምዕራባዊ አርጀንቲና የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'የአርመኒያ ሰዓት',
+        standard: 'የአርመኒያ መደበኛ ሰዓት',
+        daylight: 'የአርመኒያ ክረምት ሰዓት',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'የአትላንቲክ የሰዓት አቆጣጠር',
+        standard: 'የአትላንቲክ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የአትላንቲክ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'የመካከለኛው አውስትራሊያ ሰዓት አቆጣጠር',
+        standard: 'የአውስትራሊያ መካከለኛ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የአውስትራሊያ መካከለኛ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'የአውስትራሊያ መካከለኛ ምስራቃዊ ሰዓት አቆጣጠር',
+        standard: 'የአውስትራሊያ መካከለኛ ምስራቃዊ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የአውስትራሊያ መካከለኛው ምስራቅ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'የምዕራባዊ አውስትራሊያ የሰዓት አቆጣጠር',
+        standard: 'የአውስትራሊያ ምዕራባዊ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የአውስትራሊያ ምዕራባዊ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'የምስራቃዊ አውስትራሊያ ሰዓት አቆጣጠር',
+        standard: 'የአውስትራሊያ ምስራቃዊ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የአውስትራሊያ ምስራቃዊ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'የአዘርባጃን ሰዓት',
+        standard: 'የአዘርባጃን መደበኛ ሰዓት',
+        daylight: 'የአዘርባጃን ክረምት ሰዓት',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'የአዞረስ ሰዓት',
+        standard: 'የአዞረስ መደበኛ ሰዓት',
+        daylight: 'የአዞረስ ክረምት ሰዓት',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'የባንግላዴሽ ሰዓት',
+        standard: 'የባንግላዴሽ መደበኛ ሰዓት',
+        daylight: 'የባንግላዴሽ ክረምት ሰዓት',
+      ),
+    ),
     'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'የቡታን ሰዓት')),
     'Bolivia': MetaZone('Bolivia', long: TimeZoneName(standard: 'የቦሊቪያ ሰዓት')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'የብራዚላዊ ሰዓት አቆጣጠር',
-            standard: 'የብራሲሊያ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የብራዚላ የበጋ ሰዓት አቆጣጠር')),
-    'Brunei':
-        MetaZone('Brunei', long: TimeZoneName(standard: 'የብሩኔይ ዳሩሳላም ሰዓት')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'የኬፕ ቨርዴ ሰዓት',
-            standard: 'የኬፕ ቨርዴ መደበኛ ሰዓት',
-            daylight: 'የኬፕ ቨርዴ ክረምት ሰዓት')),
-    'Chamorro':
-        MetaZone('Chamorro', long: TimeZoneName(standard: 'የቻሞሮ መደበኛ ሰዓት')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'የቻታም ሰዓት',
-            standard: 'የቻታም መደበኛ ሰዓት',
-            daylight: 'የቻታም የቀን ብርሃን ሰዓት')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'የቺሊ ሰዓት',
-            standard: 'የቺሊ መደበኛ ሰዓት',
-            daylight: 'የቺሊ ክረምት ሰዓት')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'የቻይና ሰዓት',
-            standard: 'የቻይና መደበኛ ሰዓት',
-            daylight: 'የቻይና የቀን ብርሃን ሰዓት')),
-    'Christmas':
-        MetaZone('Christmas', long: TimeZoneName(standard: 'የገና ደሴት ሰዓት')),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'የብራዚላዊ ሰዓት አቆጣጠር',
+        standard: 'የብራሲሊያ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የብራዚላ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Brunei': MetaZone(
+      'Brunei',
+      long: TimeZoneName(standard: 'የብሩኔይ ዳሩሳላም ሰዓት'),
+    ),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'የኬፕ ቨርዴ ሰዓት',
+        standard: 'የኬፕ ቨርዴ መደበኛ ሰዓት',
+        daylight: 'የኬፕ ቨርዴ ክረምት ሰዓት',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'የቻሞሮ መደበኛ ሰዓት'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'የቻታም ሰዓት',
+        standard: 'የቻታም መደበኛ ሰዓት',
+        daylight: 'የቻታም የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'የቺሊ ሰዓት',
+        standard: 'የቺሊ መደበኛ ሰዓት',
+        daylight: 'የቺሊ ክረምት ሰዓት',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'የቻይና ሰዓት',
+        standard: 'የቻይና መደበኛ ሰዓት',
+        daylight: 'የቻይና የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'የገና ደሴት ሰዓት'),
+    ),
     'Cocos': MetaZone('Cocos', long: TimeZoneName(standard: 'የኮኮስ ደሴቶች ሰዓት')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'የኮሎምቢያ ሰዓት',
-            standard: 'የኮሎምቢያ መደበኛ ሰዓት',
-            daylight: 'የኮሎምቢያ ክረምት ሰዓት')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'የኩክ ደሴቶች ሰዓት',
-            standard: 'የኩክ ደሴቶች መደበኛ ሰዓት',
-            daylight: 'የኩክ ደሴቶች ግማሽ ክረምት ሰዓት')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'ኩባ ሰዓት',
-            standard: 'የኩባ መደበኛ ሰዓት',
-            daylight: 'የኩባ የቀን ብርሃን ሰዓት')),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'የኮሎምቢያ ሰዓት',
+        standard: 'የኮሎምቢያ መደበኛ ሰዓት',
+        daylight: 'የኮሎምቢያ ክረምት ሰዓት',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'የኩክ ደሴቶች ሰዓት',
+        standard: 'የኩክ ደሴቶች መደበኛ ሰዓት',
+        daylight: 'የኩክ ደሴቶች ግማሽ ክረምት ሰዓት',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'ኩባ ሰዓት',
+        standard: 'የኩባ መደበኛ ሰዓት',
+        daylight: 'የኩባ የቀን ብርሃን ሰዓት',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'የዴቪስ ሰዓት')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'የዱሞንት-ዱርቪል ሰዓት')),
-    'East_Timor':
-        MetaZone('East_Timor', long: TimeZoneName(standard: 'የምስራቅ ቲሞር ሰዓት')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'የኢስተር ደሴት ሰዓት',
-            standard: 'የኢስተር ደሴት መደበኛ ሰዓት',
-            daylight: 'የኢስተር ደሴት ክረምት ሰዓት')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'የዱሞንት-ዱርቪል ሰዓት'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'የምስራቅ ቲሞር ሰዓት'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'የኢስተር ደሴት ሰዓት',
+        standard: 'የኢስተር ደሴት መደበኛ ሰዓት',
+        daylight: 'የኢስተር ደሴት ክረምት ሰዓት',
+      ),
+    ),
     'Ecuador': MetaZone('Ecuador', long: TimeZoneName(standard: 'የኢኳዶር ሰዓት')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'የመካከለኛው አውሮፓ ሰዓት',
-            standard: 'የመካከለኛው አውሮፓ መደበኛ ሰዓት',
-            daylight: 'የመካከለኛው አውሮፓ ክረምት ሰዓት')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'የምስራቃዊ አውሮፓ ሰዓት',
-            standard: 'የምስራቃዊ አውሮፓ መደበኛ ሰዓት',
-            daylight: 'የምስራቃዊ አውሮፓ ክረምት ሰዓት')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'የሩቅ ምስራቅ የአውሮፓ ሰዓት')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'የምዕራባዊ አውሮፓ ሰዓት',
-            standard: 'የምዕራባዊ አውሮፓ መደበኛ ሰዓት',
-            daylight: 'የምዕራባዊ አውሮፓ ክረምት ሰዓት')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'የፋልክላንድ ደሴቶች ሰዓት',
-            standard: 'የፋልክላንድ ደሴቶች መደበኛ ሰዓት',
-            daylight: 'የፋልክላንድ ደሴቶች ክረምት ሰዓት')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'የፊጂ ሰዓት',
-            standard: 'የፊጂ መደበኛ ሰዓት',
-            daylight: 'የፊጂ ክረምት ሰዓት')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'የፈረንሳይ ጉያና ሰዓት')),
-    'French_Southern': MetaZone('French_Southern',
-        long: TimeZoneName(standard: 'የፈረንሳይ ደቡባዊ እና አንታርክቲክ ሰዓት')),
-    'Galapagos':
-        MetaZone('Galapagos', long: TimeZoneName(standard: 'የጋላፓጎስ ሰዓት')),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'የመካከለኛው አውሮፓ ሰዓት',
+        standard: 'የመካከለኛው አውሮፓ መደበኛ ሰዓት',
+        daylight: 'የመካከለኛው አውሮፓ ክረምት ሰዓት',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'የምስራቃዊ አውሮፓ ሰዓት',
+        standard: 'የምስራቃዊ አውሮፓ መደበኛ ሰዓት',
+        daylight: 'የምስራቃዊ አውሮፓ ክረምት ሰዓት',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'የሩቅ ምስራቅ የአውሮፓ ሰዓት'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'የምዕራባዊ አውሮፓ ሰዓት',
+        standard: 'የምዕራባዊ አውሮፓ መደበኛ ሰዓት',
+        daylight: 'የምዕራባዊ አውሮፓ ክረምት ሰዓት',
+      ),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'የፋልክላንድ ደሴቶች ሰዓት',
+        standard: 'የፋልክላንድ ደሴቶች መደበኛ ሰዓት',
+        daylight: 'የፋልክላንድ ደሴቶች ክረምት ሰዓት',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'የፊጂ ሰዓት',
+        standard: 'የፊጂ መደበኛ ሰዓት',
+        daylight: 'የፊጂ ክረምት ሰዓት',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'የፈረንሳይ ጉያና ሰዓት'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(standard: 'የፈረንሳይ ደቡባዊ እና አንታርክቲክ ሰዓት'),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'የጋላፓጎስ ሰዓት'),
+    ),
     'Gambier': MetaZone('Gambier', long: TimeZoneName(standard: 'የጋምቢየር ሰዓት')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'የጂዮርጂያ ሰዓት',
-            standard: 'የጂዮርጂያ መደበኛ ሰዓት',
-            daylight: 'የጂዮርጂያ ክረምት ሰዓት')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'የጂልበርት ደሴቶች ሰዓት')),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'የጂዮርጂያ ሰዓት',
+        standard: 'የጂዮርጂያ መደበኛ ሰዓት',
+        daylight: 'የጂዮርጂያ ክረምት ሰዓት',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'የጂልበርት ደሴቶች ሰዓት'),
+    ),
     'GMT': MetaZone('GMT', long: TimeZoneName(standard: 'ግሪንዊች ማዕከላዊ ሰዓት')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'የምስራቅ ግሪንላንድ ሰዓት',
-            standard: 'የምስራቅ ግሪንላንድ መደበኛ ሰዓት',
-            daylight: 'የምስራቅ ግሪንላንድ ክረምት ሰዓት')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'የምዕራብ ግሪንላንድ ሰዓት',
-            standard: 'የምዕራብ ግሪንላንድ መደበኛ ሰዓት',
-            daylight: 'የምዕራብ ግሪንላንድ ክረምት ሰዓት')),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'የምስራቅ ግሪንላንድ ሰዓት',
+        standard: 'የምስራቅ ግሪንላንድ መደበኛ ሰዓት',
+        daylight: 'የምስራቅ ግሪንላንድ ክረምት ሰዓት',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'የምዕራብ ግሪንላንድ ሰዓት',
+        standard: 'የምዕራብ ግሪንላንድ መደበኛ ሰዓት',
+        daylight: 'የምዕራብ ግሪንላንድ ክረምት ሰዓት',
+      ),
+    ),
     'Gulf': MetaZone('Gulf', long: TimeZoneName(standard: 'የባህረሰላጤ መደበኛ ሰዓት')),
     'Guyana': MetaZone('Guyana', long: TimeZoneName(standard: 'የጉያና ሰዓት')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'የሃዋይ አሌኡት ሰዓት አቆጣጠር',
-            standard: 'የሃዋይ አሌኡት መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የሃዋይ አሌኡት የቀን ሰዓት አቆጣጠር')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'የሆንግ ኮንግ ሰዓት',
-            standard: 'የሆንግ ኮንግ መደበኛ ሰዓት',
-            daylight: 'የሆንግ ኮንግ ክረምት ሰዓት')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'የሆቭድ ሰዓት አቆጣጠር',
-            standard: 'የሆቭድ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የሆቭድ የበጋ ሰዓት አቆጣጠር')),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'የሃዋይ አሌኡት ሰዓት አቆጣጠር',
+        standard: 'የሃዋይ አሌኡት መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የሃዋይ አሌኡት የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'የሆንግ ኮንግ ሰዓት',
+        standard: 'የሆንግ ኮንግ መደበኛ ሰዓት',
+        daylight: 'የሆንግ ኮንግ ክረምት ሰዓት',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'የሆቭድ ሰዓት አቆጣጠር',
+        standard: 'የሆቭድ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የሆቭድ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
     'India': MetaZone('India', long: TimeZoneName(standard: 'የህንድ መደበኛ ሰዓት')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'የህንድ ውቅያኖስ ሰዓት')),
-    'Indochina':
-        MetaZone('Indochina', long: TimeZoneName(standard: 'የኢንዶቻይና ሰዓት')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'የመካከለኛው ኢንዶኔዢያ ሰዓት')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'የምስራቃዊ ኢንዶኔዢያ ሰዓት')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'የምዕራባዊ ኢንዶኔዢያ ሰዓት')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'የኢራን ሰዓት',
-            standard: 'የኢራን መደበኛ ሰዓት',
-            daylight: 'የኢራን የቀን ብርሃን ሰዓት')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'የኢርኩትስክ ሰዓት አቆጣጠር',
-            standard: 'የኢርኩትስክ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'ኢርኩትስክ የበጋ የሰዓት አቆጣጠር')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'የእስራኤል ሰዓት',
-            standard: 'የእስራኤል መደበኛ ሰዓት',
-            daylight: 'የእስራኤል የቀን ብርሃን ሰዓት')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'የጃፓን ሰዓት',
-            standard: 'የጃፓን መደበኛ ሰዓት',
-            daylight: 'የጃፓን የቀን ብርሃን ሰዓት')),
-    'Kamchatka': MetaZone('Kamchatka',
-        long: TimeZoneName(
-            generic: 'የካምቻትካ ሰዓት አቆጣጠር',
-            standard: 'የፔትሮፓቭሎስኪ - ካምቻትስኪ ሰዓት አቆጣጠር',
-            daylight: 'የፔትሮፓቭሎስኪ - ካምቻትስኪ የበጋ ሰዓት አቆጣጠር')),
-    'Kazakhstan':
-        MetaZone('Kazakhstan', long: TimeZoneName(standard: 'ካዛኪስታን ሰዓት')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'የምስራቅ ካዛኪስታን ሰዓት')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'የምዕራብ ካዛኪስታን ሰዓት')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'የኮሪያ ሰዓት',
-            standard: 'የኮሪያ መደበኛ ሰዓት',
-            daylight: 'የኮሪያ የቀን ብርሃን ሰዓት')),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'የህንድ ውቅያኖስ ሰዓት'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'የኢንዶቻይና ሰዓት'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'የመካከለኛው ኢንዶኔዢያ ሰዓት'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'የምስራቃዊ ኢንዶኔዢያ ሰዓት'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'የምዕራባዊ ኢንዶኔዢያ ሰዓት'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'የኢራን ሰዓት',
+        standard: 'የኢራን መደበኛ ሰዓት',
+        daylight: 'የኢራን የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'የኢርኩትስክ ሰዓት አቆጣጠር',
+        standard: 'የኢርኩትስክ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'ኢርኩትስክ የበጋ የሰዓት አቆጣጠር',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'የእስራኤል ሰዓት',
+        standard: 'የእስራኤል መደበኛ ሰዓት',
+        daylight: 'የእስራኤል የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'የጃፓን ሰዓት',
+        standard: 'የጃፓን መደበኛ ሰዓት',
+        daylight: 'የጃፓን የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      'Kamchatka',
+      long: TimeZoneName(
+        generic: 'የካምቻትካ ሰዓት አቆጣጠር',
+        standard: 'የፔትሮፓቭሎስኪ - ካምቻትስኪ ሰዓት አቆጣጠር',
+        daylight: 'የፔትሮፓቭሎስኪ - ካምቻትስኪ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'ካዛኪስታን ሰዓት'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'የምስራቅ ካዛኪስታን ሰዓት'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'የምዕራብ ካዛኪስታን ሰዓት'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'የኮሪያ ሰዓት',
+        standard: 'የኮሪያ መደበኛ ሰዓት',
+        daylight: 'የኮሪያ የቀን ብርሃን ሰዓት',
+      ),
+    ),
     'Kosrae': MetaZone('Kosrae', long: TimeZoneName(standard: 'የኮስራኤ ሰዓት')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'የክራስኖያርስክ ሰዓት አቆጣጠር',
-            standard: 'የክራስኖይአርስክ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የክራስኖያርስክ የበጋ ሰዓት አቆጣጠር')),
-    'Kyrgystan':
-        MetaZone('Kyrgystan', long: TimeZoneName(standard: 'የኪርጊስታን ሰዓት')),
-    'Line_Islands':
-        MetaZone('Line_Islands', long: TimeZoneName(standard: 'የላይን ደሴቶች ሰዓት')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'የሎርድ ሆዌ የሰዓት አቆጣጠር',
-            standard: 'የሎርድ ሆዌ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የሎርድ ሆዌ የቀን ሰዓት አቆጣጠር')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'የማጋዳን የሰዓት አቆጣጠር',
-            standard: 'የማጋዳን መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የማጋዳን በጋ ሰዓት አቆጣጠር')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'የማሌይዢያ ሰዓት')),
-    'Maldives':
-        MetaZone('Maldives', long: TimeZoneName(standard: 'የማልዲቭስ ሰዓት')),
-    'Marquesas':
-        MetaZone('Marquesas', long: TimeZoneName(standard: 'የማርኴሳስ ሰዓት')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'የማርሻል ደሴቶች ሰዓት')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'የማውሪሺየስ ሰዓት',
-            standard: 'የማውሪሺየስ መደበኛ ሰዓት',
-            daylight: 'የማውሪሺየስ ክረምት ሰዓት')),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'የክራስኖያርስክ ሰዓት አቆጣጠር',
+        standard: 'የክራስኖይአርስክ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የክራስኖያርስክ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'የኪርጊስታን ሰዓት'),
+    ),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'የላይን ደሴቶች ሰዓት'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'የሎርድ ሆዌ የሰዓት አቆጣጠር',
+        standard: 'የሎርድ ሆዌ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የሎርድ ሆዌ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'የማጋዳን የሰዓት አቆጣጠር',
+        standard: 'የማጋዳን መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የማጋዳን በጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'የማሌይዢያ ሰዓት'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'የማልዲቭስ ሰዓት'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'የማርኴሳስ ሰዓት'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'የማርሻል ደሴቶች ሰዓት'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'የማውሪሺየስ ሰዓት',
+        standard: 'የማውሪሺየስ መደበኛ ሰዓት',
+        daylight: 'የማውሪሺየስ ክረምት ሰዓት',
+      ),
+    ),
     'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: 'የማውሰን ሰዓት')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'የሜክሲኮ ፓሲፊክ ሰዓት አቆጣጠር',
-            standard: 'የሜክሲኮ ፓሲፊክ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የሜክሲኮ ፓሲፊክ የቀን ሰዓት አቆጣጠር')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'የኡላን ባቶር ጊዜ',
-            standard: 'የኡላን ባቶር መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የኡላን ባቶር የበጋ ሰዓት አቆጣጠር')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'የሞስኮ ሰዓት አቆጣጠር',
-            standard: 'የሞስኮ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የሞስኮ የበጋ ሰዓት አቆጣጠር')),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'የሜክሲኮ ፓሲፊክ ሰዓት አቆጣጠር',
+        standard: 'የሜክሲኮ ፓሲፊክ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የሜክሲኮ ፓሲፊክ የቀን ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'የኡላን ባቶር ጊዜ',
+        standard: 'የኡላን ባቶር መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የኡላን ባቶር የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'የሞስኮ ሰዓት አቆጣጠር',
+        standard: 'የሞስኮ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የሞስኮ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
     'Myanmar': MetaZone('Myanmar', long: TimeZoneName(standard: 'የሚያንማር ሰዓት')),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'የናውሩ ሰዓት')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'የኔፓል ሰዓት')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'የኒው ካሌዶኒያ ሰዓት',
-            standard: 'የኒው ካሌዶኒያ መደበኛ ሰዓት',
-            daylight: 'የኒው ካሌዶኒያ ክረምት ሰዓት')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'የኒው ዚላንድ ሰዓት',
-            standard: 'የኒው ዚላንድ መደበኛ ሰዓት',
-            daylight: 'የኒው ዚላንድ የቀን ብርሃን ሰዓት')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'የኒውፋውንድላንድ የሰዓት አቆጣጠር',
-            standard: 'የኒውፋውንድላንድ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የኒውፋውንድላንድ የቀን የሰዓት አቆጣጠር')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'የኒው ካሌዶኒያ ሰዓት',
+        standard: 'የኒው ካሌዶኒያ መደበኛ ሰዓት',
+        daylight: 'የኒው ካሌዶኒያ ክረምት ሰዓት',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'የኒው ዚላንድ ሰዓት',
+        standard: 'የኒው ዚላንድ መደበኛ ሰዓት',
+        daylight: 'የኒው ዚላንድ የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'የኒውፋውንድላንድ የሰዓት አቆጣጠር',
+        standard: 'የኒውፋውንድላንድ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የኒውፋውንድላንድ የቀን የሰዓት አቆጣጠር',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'የኒዩዌ ሰዓት')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'የኖርፎልክ ደሴቶች ሰዓት',
-            standard: 'የኖርፎልክ ደሴቶች መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የኖርፎልክ ደሴቶች የቀን የሰዓት አቆጣጠር')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'የኖሮንሃ ሰዓት አቆጣጠር',
-            standard: 'የፈርናንዶ ዲ ኖሮንቻ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የፈርናንዶ ዲ ኖሮንሃ የበጋ የሰዓት አቆጣጠር')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'የኖቮሲብሪስክ የሰዓት አቆጣጠር',
-            standard: 'የኖቮሲቢርስክ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የኖቮሲብሪስክ የበጋ ሰአት አቆጣጠር')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'የኦምስክ የሰዓት አቆጣጠር',
-            standard: 'የኦምስክ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የኦምስክ የበጋ ሰዓት አቆጣጠር')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'የፓኪስታን ሰዓት',
-            standard: 'የፓኪስታን መደበኛ ሰዓት',
-            daylight: 'የፓኪስታን ክረምት ሰዓት')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'የኖርፎልክ ደሴቶች ሰዓት',
+        standard: 'የኖርፎልክ ደሴቶች መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የኖርፎልክ ደሴቶች የቀን የሰዓት አቆጣጠር',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'የኖሮንሃ ሰዓት አቆጣጠር',
+        standard: 'የፈርናንዶ ዲ ኖሮንቻ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የፈርናንዶ ዲ ኖሮንሃ የበጋ የሰዓት አቆጣጠር',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'የኖቮሲብሪስክ የሰዓት አቆጣጠር',
+        standard: 'የኖቮሲቢርስክ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የኖቮሲብሪስክ የበጋ ሰአት አቆጣጠር',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'የኦምስክ የሰዓት አቆጣጠር',
+        standard: 'የኦምስክ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የኦምስክ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'የፓኪስታን ሰዓት',
+        standard: 'የፓኪስታን መደበኛ ሰዓት',
+        daylight: 'የፓኪስታን ክረምት ሰዓት',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'የፓላው ሰዓት')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'የፓፗ ኒው ጊኒ ሰዓት')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'የፓራጓይ ሰዓት',
-            standard: 'የፓራጓይ መደበኛ ሰዓት',
-            daylight: 'የፓራጓይ ክረምት ሰዓት')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'የፔሩ ሰዓት',
-            standard: 'የፔሩ መደበኛ ሰዓት',
-            daylight: 'የፔሩ ክረምት ሰዓት')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'የፊሊፒን ሰዓት',
-            standard: 'የፊሊፒን መደበኛ ሰዓት',
-            daylight: 'የፊሊፒን ክረምት ሰዓት')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'የፊኒክስ ደሴቶች ሰዓት')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'ቅዱስ የፒዬር እና ሚኴሎን ሰዓት',
-            standard: 'ቅዱስ የፒዬር እና ሚኴሎን መደበኛ ሰዓት',
-            daylight: 'ቅዱስ የፒዬር እና ሚኴሎን የቀን ብርሃን ሰዓት')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'የፒትካይርን ሰዓት')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'የፓፗ ኒው ጊኒ ሰዓት'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'የፓራጓይ ሰዓት',
+        standard: 'የፓራጓይ መደበኛ ሰዓት',
+        daylight: 'የፓራጓይ ክረምት ሰዓት',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'የፔሩ ሰዓት',
+        standard: 'የፔሩ መደበኛ ሰዓት',
+        daylight: 'የፔሩ ክረምት ሰዓት',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'የፊሊፒን ሰዓት',
+        standard: 'የፊሊፒን መደበኛ ሰዓት',
+        daylight: 'የፊሊፒን ክረምት ሰዓት',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'የፊኒክስ ደሴቶች ሰዓት'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'ቅዱስ የፒዬር እና ሚኴሎን ሰዓት',
+        standard: 'ቅዱስ የፒዬር እና ሚኴሎን መደበኛ ሰዓት',
+        daylight: 'ቅዱስ የፒዬር እና ሚኴሎን የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'የፒትካይርን ሰዓት'),
+    ),
     'Ponape': MetaZone('Ponape', long: TimeZoneName(standard: 'የፖናፔ ሰዓት')),
-    'Pyongyang':
-        MetaZone('Pyongyang', long: TimeZoneName(standard: 'የፕዮንግያንግ ሰዓት')),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'የፕዮንግያንግ ሰዓት'),
+    ),
     'Reunion': MetaZone('Reunion', long: TimeZoneName(standard: 'የሬዩኒየን ሰዓት')),
     'Rothera': MetaZone('Rothera', long: TimeZoneName(standard: 'የሮቴራ ሰዓት')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'የሳክሃሊን ሰዓት አቆጣጠር',
-            standard: 'የሳክሃሊን መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የሳክሃሊን የበጋ ሰዓት አቆጣጠር')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: 'የሳማራ ሰዓት አቆጣጠር',
-            standard: 'የሳማራ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የሳማራ የበጋ ሰዓት አቆጣጠር')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'የሳሞዋ ሰዓት',
-            standard: 'የሳሞዋ መደበኛ ሰዓት',
-            daylight: 'የሳሞዋ የበጋ ሰዓት')),
-    'Seychelles':
-        MetaZone('Seychelles', long: TimeZoneName(standard: 'የሴሸልስ ሰዓት')),
-    'Singapore':
-        MetaZone('Singapore', long: TimeZoneName(standard: 'የሲንጋፒር መደበኛ ሰዓት')),
-    'Solomon':
-        MetaZone('Solomon', long: TimeZoneName(standard: 'የሰለሞን ደሴቶች ሰዓት')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'የደቡብ ጂዮርጂያ ሰዓት')),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'የሳክሃሊን ሰዓት አቆጣጠር',
+        standard: 'የሳክሃሊን መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የሳክሃሊን የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: 'የሳማራ ሰዓት አቆጣጠር',
+        standard: 'የሳማራ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የሳማራ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'የሳሞዋ ሰዓት',
+        standard: 'የሳሞዋ መደበኛ ሰዓት',
+        daylight: 'የሳሞዋ የበጋ ሰዓት',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'የሴሸልስ ሰዓት'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'የሲንጋፒር መደበኛ ሰዓት'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'የሰለሞን ደሴቶች ሰዓት'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'የደቡብ ጂዮርጂያ ሰዓት'),
+    ),
     'Suriname': MetaZone('Suriname', long: TimeZoneName(standard: 'የሱሪናም ሰዓት')),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'የሲዮዋ ሰዓት')),
     'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'የታሂቲ ሰዓት')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'የታይፔይ ሰዓት',
-            standard: 'የታይፔይ መደበኛ ሰዓት',
-            daylight: 'የታይፔይ የቀን ብርሃን ሰዓት')),
-    'Tajikistan':
-        MetaZone('Tajikistan', long: TimeZoneName(standard: 'የታጂኪስታን ሰዓት')),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'የታይፔይ ሰዓት',
+        standard: 'የታይፔይ መደበኛ ሰዓት',
+        daylight: 'የታይፔይ የቀን ብርሃን ሰዓት',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'የታጂኪስታን ሰዓት'),
+    ),
     'Tokelau': MetaZone('Tokelau', long: TimeZoneName(standard: 'የቶኬላው ሰዓት')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'የቶንጋ ሰዓት',
-            standard: 'የቶንጋ መደበኛ ሰዓት',
-            daylight: 'የቶንጋ ክረምት ሰዓት')),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'የቶንጋ ሰዓት',
+        standard: 'የቶንጋ መደበኛ ሰዓት',
+        daylight: 'የቶንጋ ክረምት ሰዓት',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'የቹክ ሰዓት')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'የቱርክመኒስታን ሰዓት',
-            standard: 'የቱርክመኒስታን መደበኛ ሰዓት',
-            daylight: 'የቱርክመኒስታን ክረምት ሰዓት')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'የቱርክመኒስታን ሰዓት',
+        standard: 'የቱርክመኒስታን መደበኛ ሰዓት',
+        daylight: 'የቱርክመኒስታን ክረምት ሰዓት',
+      ),
+    ),
     'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: 'የቱቫሉ ሰዓት')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'የኡራጓይ ሰዓት',
-            standard: 'የኡራጓይ መደበኛ ሰዓት',
-            daylight: 'የኡራጓይ ክረምት ሰዓት')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'የኡዝቤኪስታን ሰዓት',
-            standard: 'የኡዝቤኪስታን መደበኛ ሰዓት',
-            daylight: 'የኡዝቤኪስታን ክረምት ሰዓት')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'የቫኗቱ ሰዓት',
-            standard: 'የቫኗቱ መደበኛ ሰዓት',
-            daylight: 'የቫኗቱ ክረምት ሰዓት')),
-    'Venezuela':
-        MetaZone('Venezuela', long: TimeZoneName(standard: 'የቬኔዝዌላ ሰዓት')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'የቭላዲቮስቶክ የሰዓት አቆጣጠር',
-            standard: 'የቪላዲቮስቶክ መደበኛ የሰዓት አቆጣጠር',
-            daylight: 'የቭላዲቮስቶክ የበጋ የሰዓት አቆጣጠር')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'የቮልጎራድ የሰዓት አቆጣጠር',
-            standard: 'የቮልጎራድ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የቫልጎራድ የበጋ ሰዓት አቆጣጠር')),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'የኡራጓይ ሰዓት',
+        standard: 'የኡራጓይ መደበኛ ሰዓት',
+        daylight: 'የኡራጓይ ክረምት ሰዓት',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'የኡዝቤኪስታን ሰዓት',
+        standard: 'የኡዝቤኪስታን መደበኛ ሰዓት',
+        daylight: 'የኡዝቤኪስታን ክረምት ሰዓት',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'የቫኗቱ ሰዓት',
+        standard: 'የቫኗቱ መደበኛ ሰዓት',
+        daylight: 'የቫኗቱ ክረምት ሰዓት',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'የቬኔዝዌላ ሰዓት'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'የቭላዲቮስቶክ የሰዓት አቆጣጠር',
+        standard: 'የቪላዲቮስቶክ መደበኛ የሰዓት አቆጣጠር',
+        daylight: 'የቭላዲቮስቶክ የበጋ የሰዓት አቆጣጠር',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'የቮልጎራድ የሰዓት አቆጣጠር',
+        standard: 'የቮልጎራድ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የቫልጎራድ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
     'Vostok': MetaZone('Vostok', long: TimeZoneName(standard: 'የቮስቶክ ሰዓት')),
     'Wake': MetaZone('Wake', long: TimeZoneName(standard: 'የዌክ ደሴት ሰዓት')),
-    'Wallis':
-        MetaZone('Wallis', long: TimeZoneName(standard: 'የዋሊስ እና ፉቱና ሰዓት')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'ያኩትስክ የሰዓት አቆጣጠር',
-            standard: 'ያኩትስክ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የያኩትስክ የበጋ ሰዓት አቆጣጠር')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'የየካተሪንበርግ ሰዓት አቆጣጠር',
-            standard: 'የየካተሪንበርግ መደበኛ ሰዓት አቆጣጠር',
-            daylight: 'የየካተሪንበርግ የበጋ ሰዓት አቆጣጠር')),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'የዋሊስ እና ፉቱና ሰዓት'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'ያኩትስክ የሰዓት አቆጣጠር',
+        standard: 'ያኩትስክ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የያኩትስክ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'የየካተሪንበርግ ሰዓት አቆጣጠር',
+        standard: 'የየካተሪንበርግ መደበኛ ሰዓት አቆጣጠር',
+        daylight: 'የየካተሪንበርግ የበጋ ሰዓት አቆጣጠር',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'የዩኮን ጊዜ')),
   };
 }
@@ -11856,27 +10511,15 @@ class LocaleDisplayNameAm extends LocaleDisplayName {
       'persian': 'የፐርሽያ የቀን አቆጣጠር',
       'roc': 'የሚንጉ የቀን አቆጣጠር',
     },
-    'cf': {
-      'account': 'የሂሳብ ምንዛሪ ቅርጸት',
-      'standard': 'መደበኛ የምንዛሪ ቅርጸት',
-    },
-    'ka': {
-      'noignore': 'ምልክቶችን ደርድር',
-      'shifted': 'ችላ ባይ ምልክቶችን ደርድር',
-    },
-    'kb': {
-      'false': 'የፊደል ጭረቶችን እንደመደበኛ ደርድር',
-      'true': 'የፊደል ጭረቶች በኋሊዮሽ ደርድር',
-    },
+    'cf': {'account': 'የሂሳብ ምንዛሪ ቅርጸት', 'standard': 'መደበኛ የምንዛሪ ቅርጸት'},
+    'ka': {'noignore': 'ምልክቶችን ደርድር', 'shifted': 'ችላ ባይ ምልክቶችን ደርድር'},
+    'kb': {'false': 'የፊደል ጭረቶችን እንደመደበኛ ደርድር', 'true': 'የፊደል ጭረቶች በኋሊዮሽ ደርድር'},
     'kf': {
       'lower': 'ንዑስ ሆሄ መጀመሪያ ደርድር',
       'false': 'መደበኛ የመልከፊደል አቀማመጥ ደርድር',
       'upper': 'አቢይ ሆሄ መጀመሪያ ደርድር',
     },
-    'kc': {
-      'false': 'ያለመልከፊደል ትብ ደርድር',
-      'true': 'በመልከፊደል ትብ ደርድር',
-    },
+    'kc': {'false': 'ያለመልከፊደል ትብ ደርድር', 'true': 'በመልከፊደል ትብ ደርድር'},
     'co': {
       'big5han': 'የባህላዊ ቻይንኛ የድርድር ቅደም ተከተል - ትልቅ5',
       'dict': 'የመዝገበ ቃላት የድርድር ቅደም ተከተል',
@@ -11892,14 +10535,8 @@ class LocaleDisplayNameAm extends LocaleDisplayName {
       'trad': 'ባህላዊ የድርድር ቅደም ተከተል',
       'unihan': 'የመሰረታዊ በትር ድርድር ቅደም ተከተል',
     },
-    'kk': {
-      'false': 'ያለመደበኛ ሁኔታ ደርድር',
-      'true': 'ዩኒኮድ በመደበኛ ሁኔታ ደርድር',
-    },
-    'kn': {
-      'false': 'አሃዞችን በየግል ደርድር',
-      'true': 'አሃዞች በቁጥር ደርድር',
-    },
+    'kk': {'false': 'ያለመደበኛ ሁኔታ ደርድር', 'true': 'ዩኒኮድ በመደበኛ ሁኔታ ደርድር'},
+    'kn': {'false': 'አሃዞችን በየግል ደርድር', 'true': 'አሃዞች በቁጥር ደርድር'},
     'ks': {
       'identic': 'ሁሉንም ደርድር',
       'level1': 'የመሠረት ፊደላት ብቻ ደርድር',
@@ -11907,11 +10544,7 @@ class LocaleDisplayNameAm extends LocaleDisplayName {
       'level2': 'የፊደል ጭረቶችን ደርድር',
       'level3': 'የፊደል ጭረቶች/መልከፊደል/ስፋት ደርድር',
     },
-    'd0': {
-      'fwidth': 'ሙሉ ወርድ',
-      'hwidth': 'ግማሽ ወርድ',
-      'npinyin': 'አሃዛዊ',
-    },
+    'd0': {'fwidth': 'ሙሉ ወርድ', 'hwidth': 'ግማሽ ወርድ', 'npinyin': 'አሃዛዊ'},
     'hc': {
       'h11': 'የ12 ሰዓት ስርዓት (0–11)',
       'h12': 'የ12 ሰዓት ስርዓት (1–12)',
@@ -11923,10 +10556,7 @@ class LocaleDisplayNameAm extends LocaleDisplayName {
       'normal': 'መደበኛ መስመር መስበሪያ ቅጥ',
       'strict': 'ጠበቅ ያለ መስመር መስበሪያ ቅጥ',
     },
-    'm0': {
-      'bgn': 'ዩኤስ ቢጂኤን ትራንስሊትሬሽን',
-      'ungegn': 'ዩኤን ጂኢጂኤን ትራንስሊትሬሽን',
-    },
+    'm0': {'bgn': 'ዩኤስ ቢጂኤን ትራንስሊትሬሽን', 'ungegn': 'ዩኤን ጂኢጂኤን ትራንስሊትሬሽን'},
     'ms': {
       'metric': 'ሜትሪክ ስርዓት',
       'uksystem': 'ኢምፔሪያል የመለኪያ ስርዓት',

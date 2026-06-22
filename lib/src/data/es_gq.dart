@@ -28,19 +28,21 @@ class CommonLocaleDataEsGQ extends CommonLocaleDataEs {
 class CurrenciesEsGQ extends CurrenciesEs {
   const CurrenciesEsGQ(super.cld);
 
-  static const _xaf = Currency(_cld, 'XAF', 'franco CFA de África Central',
-      one: 'franco CFA de África Central',
-      other: 'francos CFA de África Central',
-      symbol: 'FCFA');
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'franco CFA de África Central',
+    one: 'franco CFA de África Central',
+    other: 'francos CFA de África Central',
+    symbol: 'FCFA',
+  );
 
   @override
   Currency get xaf => _xaf;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesEs.staticCurrencies,
-        ...const {
-          'XAF': _xaf,
-        }
-      });
+    ...CurrenciesEs.staticCurrencies,
+    ...const {'XAF': _xaf},
+  });
 }

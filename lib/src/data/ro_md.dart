@@ -42,128 +42,128 @@ class UnitsRoMD extends UnitsRo {
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ani',
-          one: '{0} an',
-          few: '{0} ani',
-          other: '{0} de ani',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ani',
-          one: '{0} an',
-          few: '{0} ani',
-          other: '{0} ani',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'a',
-          one: '{0} an',
-          few: '{0} ani',
-          other: '{0} ani',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ani',
+      one: '{0} an',
+      few: '{0} ani',
+      other: '{0} de ani',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ani',
+      one: '{0} an',
+      few: '{0} ani',
+      other: '{0} ani',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'a',
+      one: '{0} an',
+      few: '{0} ani',
+      other: '{0} ani',
+    ),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'luni',
-          one: '{0} lună',
-          few: '{0} luni',
-          other: '{0} de luni',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'luni',
-          one: '{0} lună',
-          few: '{0} luni',
-          other: '{0} luni',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lună',
-          one: '{0} lună',
-          few: '{0} luni',
-          other: '{0} luni',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'luni',
+      one: '{0} lună',
+      few: '{0} luni',
+      other: '{0} de luni',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'luni',
+      one: '{0} lună',
+      few: '{0} luni',
+      other: '{0} luni',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lună',
+      one: '{0} lună',
+      few: '{0} luni',
+      other: '{0} luni',
+    ),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'zile',
-          one: '{0} zi',
-          few: '{0} zile',
-          other: '{0} de zile',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'zile',
-          one: '{0} zi',
-          few: '{0} zile',
-          other: '{0} zile',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'zi',
-          one: '{0} zi',
-          few: '{0} zile',
-          other: '{0} zile',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'zile',
+      one: '{0} zi',
+      few: '{0} zile',
+      other: '{0} de zile',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'zile',
+      one: '{0} zi',
+      few: '{0} zile',
+      other: '{0} zile',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'zi',
+      one: '{0} zi',
+      few: '{0} zile',
+      other: '{0} zile',
+    ),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'minute',
-          one: '{0} minut',
-          few: '{0} minute',
-          other: '{0} de minute',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'min.',
-          one: '{0} min.',
-          few: '{0} min.',
-          other: '{0} min.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'min',
-          one: '{0} min.',
-          few: '{0} min.',
-          other: '{0} min.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'minute',
+      one: '{0} minut',
+      few: '{0} minute',
+      other: '{0} de minute',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'min.',
+      one: '{0} min.',
+      few: '{0} min.',
+      other: '{0} min.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'min',
+      one: '{0} min.',
+      few: '{0} min.',
+      other: '{0} min.',
+    ),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milisecunde',
-          one: '{0} milisecundă',
-          few: '{0} milisecunde',
-          other: '{0} de milisecunde',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'milisec.',
-          one: '{0} milisecundă',
-          few: '{0} milisecunde',
-          other: '{0} ms',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'msec',
-          one: '{0} milisecundă',
-          few: '{0} milisecunde',
-          other: '{0} ms',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milisecunde',
+      one: '{0} milisecundă',
+      few: '{0} milisecunde',
+      other: '{0} de milisecunde',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'milisec.',
+      one: '{0} milisecundă',
+      few: '{0} milisecunde',
+      other: '{0} ms',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'msec',
+      one: '{0} milisecundă',
+      few: '{0} milisecunde',
+      other: '{0} ms',
+    ),
+  );
 }
 
 class LanguagesRoMD extends LanguagesRo {
@@ -179,12 +179,9 @@ class LanguagesRoMD extends LanguagesRo {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesRo.staticLanguages,
-        ...const {
-          'sw-CD': _swCD,
-          'wal': _wal,
-        }
-      });
+    ...LanguagesRo.staticLanguages,
+    ...const {'sw-CD': _swCD, 'wal': _wal},
+  });
 }
 
 class TerritoriesRoMD extends TerritoriesRo {
@@ -197,30 +194,30 @@ class TerritoriesRoMD extends TerritoriesRo {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesRo.staticTerritories,
-        ...const {
-          'MM': _mm,
-        }
-      });
+    ...TerritoriesRo.staticTerritories,
+    ...const {'MM': _mm},
+  });
 }
 
 class CurrenciesRoMD extends CurrenciesRo {
   const CurrenciesRoMD(super.cld);
 
-  static const _mdl = Currency(_cld, 'MDL', 'leu moldovenesc',
-      one: 'leu moldovenesc',
-      few: 'lei moldovenești',
-      other: 'lei moldovenești',
-      symbol: 'L');
+  static const _mdl = Currency(
+    _cld,
+    'MDL',
+    'leu moldovenesc',
+    one: 'leu moldovenesc',
+    few: 'lei moldovenești',
+    other: 'lei moldovenești',
+    symbol: 'L',
+  );
 
   @override
   Currency get mdl => _mdl;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesRo.staticCurrencies,
-        ...const {
-          'MDL': _mdl,
-        }
-      });
+    ...CurrenciesRo.staticCurrencies,
+    ...const {'MDL': _mdl},
+  });
 }

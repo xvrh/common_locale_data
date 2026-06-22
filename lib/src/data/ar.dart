@@ -65,7761 +65,7686 @@ class UnitsAr extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('ديسي{0}'),
-        short: UnitPrefixPattern('د{0}'),
-        narrow: UnitPrefixPattern('د{0}'),
-      );
+    long: UnitPrefixPattern('ديسي{0}'),
+    short: UnitPrefixPattern('د{0}'),
+    narrow: UnitPrefixPattern('د{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('سنتي{0}'),
-        short: UnitPrefixPattern('س{0}'),
-        narrow: UnitPrefixPattern('س{0}'),
-      );
+    long: UnitPrefixPattern('سنتي{0}'),
+    short: UnitPrefixPattern('س{0}'),
+    narrow: UnitPrefixPattern('س{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('ملّي{0}'),
-        short: UnitPrefixPattern('م{0}'),
-        narrow: UnitPrefixPattern('م{0}'),
-      );
+    long: UnitPrefixPattern('ملّي{0}'),
+    short: UnitPrefixPattern('م{0}'),
+    narrow: UnitPrefixPattern('م{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('ميكرو{0}'),
-        short: UnitPrefixPattern('مك{0}'),
-        narrow: UnitPrefixPattern('مك{0}'),
-      );
+    long: UnitPrefixPattern('ميكرو{0}'),
+    short: UnitPrefixPattern('مك{0}'),
+    narrow: UnitPrefixPattern('مك{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('نانو{0}'),
-        short: UnitPrefixPattern('ن{0}'),
-        narrow: UnitPrefixPattern('ن{0}'),
-      );
+    long: UnitPrefixPattern('نانو{0}'),
+    short: UnitPrefixPattern('ن{0}'),
+    narrow: UnitPrefixPattern('ن{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('بيكو{0}'),
-        short: UnitPrefixPattern('ب{0}'),
-        narrow: UnitPrefixPattern('ب{0}'),
-      );
+    long: UnitPrefixPattern('بيكو{0}'),
+    short: UnitPrefixPattern('ب{0}'),
+    narrow: UnitPrefixPattern('ب{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('فيمتو{0}'),
-        short: UnitPrefixPattern('ف{0}'),
-        narrow: UnitPrefixPattern('ف{0}'),
-      );
+    long: UnitPrefixPattern('فيمتو{0}'),
+    short: UnitPrefixPattern('ف{0}'),
+    narrow: UnitPrefixPattern('ف{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('أتو{0}'),
-        short: UnitPrefixPattern('أ{0}'),
-        narrow: UnitPrefixPattern('أ{0}'),
-      );
+    long: UnitPrefixPattern('أتو{0}'),
+    short: UnitPrefixPattern('أ{0}'),
+    narrow: UnitPrefixPattern('أ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('زيبتو{0}'),
-        short: UnitPrefixPattern('زيب{0}'),
-        narrow: UnitPrefixPattern('زيب{0}'),
-      );
+    long: UnitPrefixPattern('زيبتو{0}'),
+    short: UnitPrefixPattern('زيب{0}'),
+    narrow: UnitPrefixPattern('زيب{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('يوكتو{0}'),
-        short: UnitPrefixPattern('يك{0}'),
-        narrow: UnitPrefixPattern('يك{0}'),
-      );
+    long: UnitPrefixPattern('يوكتو{0}'),
+    short: UnitPrefixPattern('يك{0}'),
+    narrow: UnitPrefixPattern('يك{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('رونتو{0}'),
-        short: UnitPrefixPattern('رونتو{0}'),
-        narrow: UnitPrefixPattern('ر{0}'),
-      );
+    long: UnitPrefixPattern('رونتو{0}'),
+    short: UnitPrefixPattern('رونتو{0}'),
+    narrow: UnitPrefixPattern('ر{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('كويكتو{0}'),
-        short: UnitPrefixPattern('كويكتو{0}'),
-        narrow: UnitPrefixPattern('كويكتو.{0}'),
-      );
+    long: UnitPrefixPattern('كويكتو{0}'),
+    short: UnitPrefixPattern('كويكتو{0}'),
+    narrow: UnitPrefixPattern('كويكتو.{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('ديكا{0}'),
-        short: UnitPrefixPattern('دا{0}'),
-        narrow: UnitPrefixPattern('دا{0}'),
-      );
+    long: UnitPrefixPattern('ديكا{0}'),
+    short: UnitPrefixPattern('دا{0}'),
+    narrow: UnitPrefixPattern('دا{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('هكتو{0}'),
-        short: UnitPrefixPattern('ه{0}'),
-        narrow: UnitPrefixPattern('ه{0}'),
-      );
+    long: UnitPrefixPattern('هكتو{0}'),
+    short: UnitPrefixPattern('ه{0}'),
+    narrow: UnitPrefixPattern('ه{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('كيلو{0}'),
-        short: UnitPrefixPattern('كيلو{0}'),
-        narrow: UnitPrefixPattern('ك{0}'),
-      );
+    long: UnitPrefixPattern('كيلو{0}'),
+    short: UnitPrefixPattern('كيلو{0}'),
+    narrow: UnitPrefixPattern('ك{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('ميغا{0}'),
-        short: UnitPrefixPattern('مغ{0}'),
-        narrow: UnitPrefixPattern('مغ{0}'),
-      );
+    long: UnitPrefixPattern('ميغا{0}'),
+    short: UnitPrefixPattern('مغ{0}'),
+    narrow: UnitPrefixPattern('مغ{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('غيغا{0}'),
-        short: UnitPrefixPattern('غ{0}'),
-        narrow: UnitPrefixPattern('غ{0}'),
-      );
+    long: UnitPrefixPattern('غيغا{0}'),
+    short: UnitPrefixPattern('غ{0}'),
+    narrow: UnitPrefixPattern('غ{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('تيرا{0}'),
-        short: UnitPrefixPattern('ت{0}'),
-        narrow: UnitPrefixPattern('ت{0}'),
-      );
+    long: UnitPrefixPattern('تيرا{0}'),
+    short: UnitPrefixPattern('ت{0}'),
+    narrow: UnitPrefixPattern('ت{0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('بيتا{0}'),
-        short: UnitPrefixPattern('بتا{0}'),
-        narrow: UnitPrefixPattern('بتا{0}'),
-      );
+    long: UnitPrefixPattern('بيتا{0}'),
+    short: UnitPrefixPattern('بتا{0}'),
+    narrow: UnitPrefixPattern('بتا{0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('إكسا{0}'),
-        short: UnitPrefixPattern('إ.{0}'),
-        narrow: UnitPrefixPattern('إ.{0}'),
-      );
+    long: UnitPrefixPattern('إكسا{0}'),
+    short: UnitPrefixPattern('إ.{0}'),
+    narrow: UnitPrefixPattern('إ.{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('زيتا{0}'),
-        short: UnitPrefixPattern('زت{0}'),
-        narrow: UnitPrefixPattern('زت{0}'),
-      );
+    long: UnitPrefixPattern('زيتا{0}'),
+    short: UnitPrefixPattern('زت{0}'),
+    narrow: UnitPrefixPattern('زت{0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('يوتا{0}'),
-        short: UnitPrefixPattern('ي{0}'),
-        narrow: UnitPrefixPattern('ي{0}'),
-      );
+    long: UnitPrefixPattern('يوتا{0}'),
+    short: UnitPrefixPattern('ي{0}'),
+    narrow: UnitPrefixPattern('ي{0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('رونا{0}'),
-        short: UnitPrefixPattern('رونا{0}'),
-        narrow: UnitPrefixPattern('رونا.{0}'),
-      );
+    long: UnitPrefixPattern('رونا{0}'),
+    short: UnitPrefixPattern('رونا{0}'),
+    narrow: UnitPrefixPattern('رونا.{0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('كويتا{0}'),
-        short: UnitPrefixPattern('كويتا.{0}'),
-        narrow: UnitPrefixPattern('كويتا.{0}'),
-      );
+    long: UnitPrefixPattern('كويتا{0}'),
+    short: UnitPrefixPattern('كويتا.{0}'),
+    narrow: UnitPrefixPattern('كويتا.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('كيبي{0}'),
-        short: UnitPrefixPattern('كيبي.{0}'),
-        narrow: UnitPrefixPattern('كيبي.{0}'),
-      );
+    long: UnitPrefixPattern('كيبي{0}'),
+    short: UnitPrefixPattern('كيبي.{0}'),
+    narrow: UnitPrefixPattern('كيبي.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('ميبي{0}'),
-        short: UnitPrefixPattern('ميبي.{0}'),
-        narrow: UnitPrefixPattern('ميبي.{0}'),
-      );
+    long: UnitPrefixPattern('ميبي{0}'),
+    short: UnitPrefixPattern('ميبي.{0}'),
+    narrow: UnitPrefixPattern('ميبي.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('غيبي{0}'),
-        short: UnitPrefixPattern('غيبي.{0}'),
-        narrow: UnitPrefixPattern('غيبي.{0}'),
-      );
+    long: UnitPrefixPattern('غيبي{0}'),
+    short: UnitPrefixPattern('غيبي.{0}'),
+    narrow: UnitPrefixPattern('غيبي.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('تيبي{0}'),
-        short: UnitPrefixPattern('تيبي.{0}'),
-        narrow: UnitPrefixPattern('تيبي.{0}'),
-      );
+    long: UnitPrefixPattern('تيبي{0}'),
+    short: UnitPrefixPattern('تيبي.{0}'),
+    narrow: UnitPrefixPattern('تيبي.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('بيبي{0}'),
-        short: UnitPrefixPattern('بيبي.{0}'),
-        narrow: UnitPrefixPattern('بيبي.{0}'),
-      );
+    long: UnitPrefixPattern('بيبي{0}'),
+    short: UnitPrefixPattern('بيبي.{0}'),
+    narrow: UnitPrefixPattern('بيبي.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('إكسبي{0}'),
-        short: UnitPrefixPattern('إكسبي.{0}'),
-        narrow: UnitPrefixPattern('إكسبي.{0}'),
-      );
+    long: UnitPrefixPattern('إكسبي{0}'),
+    short: UnitPrefixPattern('إكسبي.{0}'),
+    narrow: UnitPrefixPattern('إكسبي.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('زيبي{0}'),
-        short: UnitPrefixPattern('زيبي.{0}'),
-        narrow: UnitPrefixPattern('زيبي.{0}'),
-      );
+    long: UnitPrefixPattern('زيبي{0}'),
+    short: UnitPrefixPattern('زيبي.{0}'),
+    narrow: UnitPrefixPattern('زيبي.{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('يوبي{0}'),
-        short: UnitPrefixPattern('يوبي.{0}'),
-        narrow: UnitPrefixPattern('يوبي.{0}'),
-      );
+    long: UnitPrefixPattern('يوبي{0}'),
+    short: UnitPrefixPattern('يوبي.{0}'),
+    narrow: UnitPrefixPattern('يوبي.{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('{0} لكل {1}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('{0} لكل {1}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قوة تسارع',
-          zero: '{0} قوة تسارع',
-          one: '{0} قوة تسارع',
-          two: '{0} قوة تسارع',
-          few: '{0} قوة تسارع',
-          many: '{0} قوة تسارع',
-          other: '{0} قوة تسارع',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قوة تسارع',
-          zero: '{0} قوة تسارع',
-          one: '{0} قوة تسارع',
-          two: '{0} قوة تسارع',
-          few: '{0} قوة تسارع',
-          many: '{0} قوة تسارع',
-          other: '{0} قوة تسارع',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قوة تسارع',
-          zero: '{0} قوة تسارع',
-          one: '{0} قوة تسارع',
-          two: '{0} قوة تسارع',
-          few: '{0} قوة تسارع',
-          many: '{0} قوة تسارع',
-          other: '{0} قوة تسارع',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قوة تسارع',
+      zero: '{0} قوة تسارع',
+      one: '{0} قوة تسارع',
+      two: '{0} قوة تسارع',
+      few: '{0} قوة تسارع',
+      many: '{0} قوة تسارع',
+      other: '{0} قوة تسارع',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قوة تسارع',
+      zero: '{0} قوة تسارع',
+      one: '{0} قوة تسارع',
+      two: '{0} قوة تسارع',
+      few: '{0} قوة تسارع',
+      many: '{0} قوة تسارع',
+      other: '{0} قوة تسارع',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قوة تسارع',
+      zero: '{0} قوة تسارع',
+      one: '{0} قوة تسارع',
+      two: '{0} قوة تسارع',
+      few: '{0} قوة تسارع',
+      many: '{0} قوة تسارع',
+      other: '{0} قوة تسارع',
+    ),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'متر في الثانية المربعة',
-          zero: '{0} متر في الثانية المربعة',
-          one: '{0} متر في الثانية المربعة',
-          two: '{0} متر في الثانية المربعة',
-          few: '{0} متر في الثانية المربعة',
-          many: '{0} متر في الثانية المربعة',
-          other: '{0} متر في الثانية المربعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م/ث²',
-          zero: '{0} م/ث²',
-          one: '{0} م/ث²',
-          two: '{0} م/ث²',
-          few: '{0} م/ث²',
-          many: '{0} م/ث²',
-          other: '{0} م/ث²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م/ث²',
-          zero: '{0} م/ث²',
-          one: '{0} م/ث²',
-          two: '{0} م/ث²',
-          few: '{0} م/ث²',
-          many: '{0} م/ث²',
-          other: '{0} م/ث²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'متر في الثانية المربعة',
+      zero: '{0} متر في الثانية المربعة',
+      one: '{0} متر في الثانية المربعة',
+      two: '{0} متر في الثانية المربعة',
+      few: '{0} متر في الثانية المربعة',
+      many: '{0} متر في الثانية المربعة',
+      other: '{0} متر في الثانية المربعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م/ث²',
+      zero: '{0} م/ث²',
+      one: '{0} م/ث²',
+      two: '{0} م/ث²',
+      few: '{0} م/ث²',
+      many: '{0} م/ث²',
+      other: '{0} م/ث²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م/ث²',
+      zero: '{0} م/ث²',
+      one: '{0} م/ث²',
+      two: '{0} م/ث²',
+      few: '{0} م/ث²',
+      many: '{0} م/ث²',
+      other: '{0} م/ث²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'دورة',
-          zero: '{0} دورة',
-          one: 'دورة',
-          two: 'دورتان',
-          few: '{0} دورات',
-          many: '{0} دورة',
-          other: '{0} دورة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'دورة',
-          zero: '{0} دورة',
-          one: 'دورة',
-          two: '{0} دورة',
-          few: '{0} دورة',
-          many: '{0} دورة',
-          other: '{0} دورة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'دورة',
-          zero: '{0} دورة',
-          one: 'دورة',
-          two: '{0} دورة',
-          few: '{0} دورة',
-          many: '{0} دورة',
-          other: '{0} دورة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'دورة',
+      zero: '{0} دورة',
+      one: 'دورة',
+      two: 'دورتان',
+      few: '{0} دورات',
+      many: '{0} دورة',
+      other: '{0} دورة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'دورة',
+      zero: '{0} دورة',
+      one: 'دورة',
+      two: '{0} دورة',
+      few: '{0} دورة',
+      many: '{0} دورة',
+      other: '{0} دورة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'دورة',
+      zero: '{0} دورة',
+      one: 'دورة',
+      two: '{0} دورة',
+      few: '{0} دورة',
+      many: '{0} دورة',
+      other: '{0} دورة',
+    ),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'راديان',
-          zero: '{0} راديان',
-          one: '{0} راديان',
-          two: '{0} راديان',
-          few: '{0} راديان',
-          many: '{0} راديان',
-          other: '{0} راديان',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'راديان',
-          zero: '{0} راديان',
-          one: '{0} راديان',
-          two: '{0} راديان',
-          few: '{0} راديان',
-          many: '{0} راديان',
-          other: '{0} راديان',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'راديان',
-          zero: '{0} راديان',
-          one: '{0} راديان',
-          two: '{0} راديان',
-          few: '{0} راديان',
-          many: '{0} راديان',
-          other: '{0} راديان',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'راديان',
+      zero: '{0} راديان',
+      one: '{0} راديان',
+      two: '{0} راديان',
+      few: '{0} راديان',
+      many: '{0} راديان',
+      other: '{0} راديان',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'راديان',
+      zero: '{0} راديان',
+      one: '{0} راديان',
+      two: '{0} راديان',
+      few: '{0} راديان',
+      many: '{0} راديان',
+      other: '{0} راديان',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'راديان',
+      zero: '{0} راديان',
+      one: '{0} راديان',
+      two: '{0} راديان',
+      few: '{0} راديان',
+      many: '{0} راديان',
+      other: '{0} راديان',
+    ),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'درجة',
-          zero: '{0} درجة',
-          one: 'درجة',
-          two: 'درجتان',
-          few: '{0} درجات',
-          many: '{0} درجة',
-          other: '{0} درجة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'درجة',
-          zero: '{0} درجة',
-          one: 'درجة',
-          two: 'درجتان',
-          few: '{0} درجات',
-          many: '{0} درجة',
-          other: '{0} درجة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'درجة',
-          zero: '{0} درجة',
-          one: '{0} درجة',
-          two: 'درجتان',
-          few: '{0} درجات',
-          many: '{0} درجة',
-          other: '{0} درجة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'درجة',
+      zero: '{0} درجة',
+      one: 'درجة',
+      two: 'درجتان',
+      few: '{0} درجات',
+      many: '{0} درجة',
+      other: '{0} درجة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'درجة',
+      zero: '{0} درجة',
+      one: 'درجة',
+      two: 'درجتان',
+      few: '{0} درجات',
+      many: '{0} درجة',
+      other: '{0} درجة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'درجة',
+      zero: '{0} درجة',
+      one: '{0} درجة',
+      two: 'درجتان',
+      few: '{0} درجات',
+      many: '{0} درجة',
+      other: '{0} درجة',
+    ),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'دقيقة قوسية',
-          zero: '{0} دقيقة قوسية',
-          one: 'دقيقة قوسية',
-          two: 'دقيقتان قوسيتان',
-          few: '{0} دقائق قوسية',
-          many: '{0} دقيقة قوسية',
-          other: '{0} دقيقة قوسية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'دقيقة قوسية',
-          zero: '{0} دقيقة قوسية',
-          one: 'دقيقة قوسية',
-          two: 'دقيقتان قوسيتان',
-          few: '{0} دقائق قوسية',
-          many: '{0} دقيقة قوسية',
-          other: '{0} دقيقة قوسية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'د قوسية',
-          zero: '{0} د قوسية',
-          one: '{0} د قوسية',
-          two: '{0} د قوسية',
-          few: '{0} د قوسية',
-          many: '{0} د قوسية',
-          other: '{0} د قوسية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'دقيقة قوسية',
+      zero: '{0} دقيقة قوسية',
+      one: 'دقيقة قوسية',
+      two: 'دقيقتان قوسيتان',
+      few: '{0} دقائق قوسية',
+      many: '{0} دقيقة قوسية',
+      other: '{0} دقيقة قوسية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'دقيقة قوسية',
+      zero: '{0} دقيقة قوسية',
+      one: 'دقيقة قوسية',
+      two: 'دقيقتان قوسيتان',
+      few: '{0} دقائق قوسية',
+      many: '{0} دقيقة قوسية',
+      other: '{0} دقيقة قوسية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'د قوسية',
+      zero: '{0} د قوسية',
+      one: '{0} د قوسية',
+      two: '{0} د قوسية',
+      few: '{0} د قوسية',
+      many: '{0} د قوسية',
+      other: '{0} د قوسية',
+    ),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ثانية قوسية',
-          zero: '{0} ثانية قوسية',
-          one: 'ثانية قوسية',
-          two: 'ثانيتان قوسيتان',
-          few: '{0} ثوانٍ قوسية',
-          many: '{0} ثانية قوسية',
-          other: '{0} ثانية قوسية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ثانية قوسية',
-          zero: '{0} ثانية قوسية',
-          one: 'ثانية قوسية',
-          two: 'ثانيتان قوسيتان',
-          few: '{0} ثوانٍ قوسية',
-          many: '{0} ثانية قوسية',
-          other: '{0} ثانية قوسية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ث قوسية',
-          zero: '{0} ث قوسية',
-          one: '{0} ث قوسية',
-          two: '{0} ث قوسية',
-          few: '{0} ث قوسية',
-          many: '{0} ث قوسية',
-          other: '{0} ث قوسية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ثانية قوسية',
+      zero: '{0} ثانية قوسية',
+      one: 'ثانية قوسية',
+      two: 'ثانيتان قوسيتان',
+      few: '{0} ثوانٍ قوسية',
+      many: '{0} ثانية قوسية',
+      other: '{0} ثانية قوسية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ثانية قوسية',
+      zero: '{0} ثانية قوسية',
+      one: 'ثانية قوسية',
+      two: 'ثانيتان قوسيتان',
+      few: '{0} ثوانٍ قوسية',
+      many: '{0} ثانية قوسية',
+      other: '{0} ثانية قوسية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ث قوسية',
+      zero: '{0} ث قوسية',
+      one: '{0} ث قوسية',
+      two: '{0} ث قوسية',
+      few: '{0} ث قوسية',
+      many: '{0} ث قوسية',
+      other: '{0} ث قوسية',
+    ),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلومتر مربع',
-          zero: '{0} كيلومتر مربع',
-          one: '{0} كيلومتر مربع',
-          two: '{0} كيلومتر مربع',
-          few: '{0} كيلومتر مربع',
-          many: '{0} كيلومتر مربع',
-          other: '{0} كيلومتر مربع',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كم²',
-          zero: '{0} كم²',
-          one: '{0} كم²',
-          two: '{0} كم²',
-          few: '{0} كم²',
-          many: '{0} كم²',
-          other: '{0} كم²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كم²',
-          zero: '{0} كم²',
-          one: '{0} كم²',
-          two: '{0} كم²',
-          few: '{0} كم²',
-          many: '{0} كم²',
-          other: '{0} كم²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلومتر مربع',
+      zero: '{0} كيلومتر مربع',
+      one: '{0} كيلومتر مربع',
+      two: '{0} كيلومتر مربع',
+      few: '{0} كيلومتر مربع',
+      many: '{0} كيلومتر مربع',
+      other: '{0} كيلومتر مربع',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كم²',
+      zero: '{0} كم²',
+      one: '{0} كم²',
+      two: '{0} كم²',
+      few: '{0} كم²',
+      many: '{0} كم²',
+      other: '{0} كم²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كم²',
+      zero: '{0} كم²',
+      one: '{0} كم²',
+      two: '{0} كم²',
+      few: '{0} كم²',
+      many: '{0} كم²',
+      other: '{0} كم²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'هكتار',
-          zero: '{0} هكتار',
-          one: '{0} هكتار',
-          two: '{0} هكتار',
-          few: '{0} هكتار',
-          many: '{0} هكتار',
-          other: '{0} هكتار',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'هكتار',
-          zero: '{0} هكتار',
-          one: '{0} هكتار',
-          two: '{0} هكتار',
-          few: '{0} هكتار',
-          many: '{0} هكتار',
-          other: '{0} هكتار',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'هكتار',
-          zero: '{0} هكتار',
-          one: '{0} هكتار',
-          two: '{0} هكتار',
-          few: '{0} هكتار',
-          many: '{0} هكتار',
-          other: '{0} هكتار',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'هكتار',
+      zero: '{0} هكتار',
+      one: '{0} هكتار',
+      two: '{0} هكتار',
+      few: '{0} هكتار',
+      many: '{0} هكتار',
+      other: '{0} هكتار',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'هكتار',
+      zero: '{0} هكتار',
+      one: '{0} هكتار',
+      two: '{0} هكتار',
+      few: '{0} هكتار',
+      many: '{0} هكتار',
+      other: '{0} هكتار',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'هكتار',
+      zero: '{0} هكتار',
+      one: '{0} هكتار',
+      two: '{0} هكتار',
+      few: '{0} هكتار',
+      many: '{0} هكتار',
+      other: '{0} هكتار',
+    ),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'متر مربع',
-          zero: '{0} متر مربع',
-          one: '{0} متر مربع',
-          two: '{0} متر مربع',
-          few: '{0} متر مربع',
-          many: '{0} متر مربع',
-          other: '{0} متر مربع',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م²',
-          zero: '{0} م²',
-          one: '{0} م²',
-          two: '{0} م²',
-          few: '{0} م²',
-          many: '{0} م²',
-          other: '{0} م²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م²',
-          zero: '{0} م²',
-          one: '{0} م²',
-          two: '{0} م²',
-          few: '{0} م²',
-          many: '{0} م²',
-          other: '{0} م²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'متر مربع',
+      zero: '{0} متر مربع',
+      one: '{0} متر مربع',
+      two: '{0} متر مربع',
+      few: '{0} متر مربع',
+      many: '{0} متر مربع',
+      other: '{0} متر مربع',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م²',
+      zero: '{0} م²',
+      one: '{0} م²',
+      two: '{0} م²',
+      few: '{0} م²',
+      many: '{0} م²',
+      other: '{0} م²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م²',
+      zero: '{0} م²',
+      one: '{0} م²',
+      two: '{0} م²',
+      few: '{0} م²',
+      many: '{0} م²',
+      other: '{0} م²',
+    ),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سنتيمتر مربع',
-          zero: '{0} سنتيمتر مربع',
-          one: '{0} سنتيمتر مربع',
-          two: '{0} سنتيمتر مربع',
-          few: '{0} سنتيمتر مربع',
-          many: '{0} سنتيمتر مربع',
-          other: '{0} سنتيمتر مربع',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سم ²',
-          zero: '{0} سم²',
-          one: '{0} سم²',
-          two: '{0} سم²',
-          few: '{0} سم²',
-          many: '{0} سم²',
-          other: '{0} سم²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سم ²',
-          zero: '{0} سم²',
-          one: '{0} سم²',
-          two: '{0} سم²',
-          few: '{0} سم²',
-          many: '{0} سم²',
-          other: '{0} سم²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سنتيمتر مربع',
+      zero: '{0} سنتيمتر مربع',
+      one: '{0} سنتيمتر مربع',
+      two: '{0} سنتيمتر مربع',
+      few: '{0} سنتيمتر مربع',
+      many: '{0} سنتيمتر مربع',
+      other: '{0} سنتيمتر مربع',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سم ²',
+      zero: '{0} سم²',
+      one: '{0} سم²',
+      two: '{0} سم²',
+      few: '{0} سم²',
+      many: '{0} سم²',
+      other: '{0} سم²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سم ²',
+      zero: '{0} سم²',
+      one: '{0} سم²',
+      two: '{0} سم²',
+      few: '{0} سم²',
+      many: '{0} سم²',
+      other: '{0} سم²',
+    ),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل مربع',
-          zero: '{0} ميل مربع',
-          one: '{0} ميل مربع',
-          two: '{0} ميل مربع',
-          few: '{0} ميل مربع',
-          many: '{0} ميل مربع',
-          other: '{0} ميل مربع',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل²',
-          zero: '{0} ميل²',
-          one: '{0} ميل²',
-          two: '{0} ميل²',
-          few: '{0} ميل²',
-          many: '{0} ميل²',
-          other: '{0} ميل²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل²',
-          zero: '{0} ميل²',
-          one: '{0} ميل²',
-          two: '{0} ميل²',
-          few: '{0} ميل²',
-          many: '{0} ميل²',
-          other: '{0} ميل²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل مربع',
+      zero: '{0} ميل مربع',
+      one: '{0} ميل مربع',
+      two: '{0} ميل مربع',
+      few: '{0} ميل مربع',
+      many: '{0} ميل مربع',
+      other: '{0} ميل مربع',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل²',
+      zero: '{0} ميل²',
+      one: '{0} ميل²',
+      two: '{0} ميل²',
+      few: '{0} ميل²',
+      many: '{0} ميل²',
+      other: '{0} ميل²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل²',
+      zero: '{0} ميل²',
+      one: '{0} ميل²',
+      two: '{0} ميل²',
+      few: '{0} ميل²',
+      many: '{0} ميل²',
+      other: '{0} ميل²',
+    ),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'فدان',
-          zero: '{0} فدان',
-          one: 'فدان',
-          two: '{0} فدان',
-          few: '{0} فدان',
-          many: '{0} فدان',
-          other: '{0} فدان',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'فدان',
-          zero: '{0} فدان',
-          one: 'فدان',
-          two: '{0} فدان',
-          few: '{0} فدان',
-          many: '{0} فدان',
-          other: '{0} فدان',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'فدان',
-          zero: '{0} فدان',
-          one: 'فدان',
-          two: '{0} فدان',
-          few: '{0} فدان',
-          many: '{0} فدان',
-          other: '{0} فدان',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'فدان',
+      zero: '{0} فدان',
+      one: 'فدان',
+      two: '{0} فدان',
+      few: '{0} فدان',
+      many: '{0} فدان',
+      other: '{0} فدان',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'فدان',
+      zero: '{0} فدان',
+      one: 'فدان',
+      two: '{0} فدان',
+      few: '{0} فدان',
+      many: '{0} فدان',
+      other: '{0} فدان',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'فدان',
+      zero: '{0} فدان',
+      one: 'فدان',
+      two: '{0} فدان',
+      few: '{0} فدان',
+      many: '{0} فدان',
+      other: '{0} فدان',
+    ),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ياردة مربعة',
-          zero: '{0} ياردة مربعة',
-          one: '{0} ياردة مربعة',
-          two: '{0} ياردة مربعة',
-          few: '{0} ياردة مربعة',
-          many: '{0} ياردة مربعة',
-          other: '{0} ياردة مربعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ياردة²',
-          zero: '{0} ياردة²',
-          one: '{0} ياردة²',
-          two: '{0} ياردة²',
-          few: '{0} ياردة²',
-          many: '{0} ياردة²',
-          other: '{0} ياردة²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ياردة²',
-          zero: '{0} ياردة²',
-          one: '{0} ياردة²',
-          two: '{0} ياردة²',
-          few: '{0} ياردة²',
-          many: '{0} ياردة²',
-          other: '{0} ياردة²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ياردة مربعة',
+      zero: '{0} ياردة مربعة',
+      one: '{0} ياردة مربعة',
+      two: '{0} ياردة مربعة',
+      few: '{0} ياردة مربعة',
+      many: '{0} ياردة مربعة',
+      other: '{0} ياردة مربعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ياردة²',
+      zero: '{0} ياردة²',
+      one: '{0} ياردة²',
+      two: '{0} ياردة²',
+      few: '{0} ياردة²',
+      many: '{0} ياردة²',
+      other: '{0} ياردة²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ياردة²',
+      zero: '{0} ياردة²',
+      one: '{0} ياردة²',
+      two: '{0} ياردة²',
+      few: '{0} ياردة²',
+      many: '{0} ياردة²',
+      other: '{0} ياردة²',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قدم مربعة',
-          zero: '{0} قدم مربعة',
-          one: 'قدم مربعة',
-          two: '{0} قدم مربعة',
-          few: '{0} قدم مربعة',
-          many: '{0} قدم مربعة',
-          other: '{0} قدم مربعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قدم²',
-          zero: '{0} قدم²',
-          one: '{0} قدم²',
-          two: '{0} قدم²',
-          few: '{0} قدم²',
-          many: '{0} قدم²',
-          other: '{0} قدم²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قدم²',
-          zero: '{0} قدم²',
-          one: '{0} قدم²',
-          two: '{0} قدم²',
-          few: '{0} قدم²',
-          many: '{0} قدم²',
-          other: '{0} قدم²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قدم مربعة',
+      zero: '{0} قدم مربعة',
+      one: 'قدم مربعة',
+      two: '{0} قدم مربعة',
+      few: '{0} قدم مربعة',
+      many: '{0} قدم مربعة',
+      other: '{0} قدم مربعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قدم²',
+      zero: '{0} قدم²',
+      one: '{0} قدم²',
+      two: '{0} قدم²',
+      few: '{0} قدم²',
+      many: '{0} قدم²',
+      other: '{0} قدم²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قدم²',
+      zero: '{0} قدم²',
+      one: '{0} قدم²',
+      two: '{0} قدم²',
+      few: '{0} قدم²',
+      many: '{0} قدم²',
+      other: '{0} قدم²',
+    ),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بوصة مربعة',
-          zero: '{0} بوصة مربعة',
-          one: '{0} بوصة مربعة',
-          two: '{0} بوصة مربعة',
-          few: '{0} بوصة مربعة',
-          many: '{0} بوصة مربعة',
-          other: '{0} بوصة مربعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بوصة²',
-          zero: '{0} بوصة²',
-          one: '{0} بوصة²',
-          two: '{0} بوصة²',
-          few: '{0} بوصة²',
-          many: '{0} بوصة²',
-          other: '{0} بوصة²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بوصة²',
-          zero: '{0} بوصة²',
-          one: '{0} بوصة²',
-          two: '{0} بوصة²',
-          few: '{0} بوصة²',
-          many: '{0} بوصة²',
-          other: '{0} بوصة²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بوصة مربعة',
+      zero: '{0} بوصة مربعة',
+      one: '{0} بوصة مربعة',
+      two: '{0} بوصة مربعة',
+      few: '{0} بوصة مربعة',
+      many: '{0} بوصة مربعة',
+      other: '{0} بوصة مربعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بوصة²',
+      zero: '{0} بوصة²',
+      one: '{0} بوصة²',
+      two: '{0} بوصة²',
+      few: '{0} بوصة²',
+      many: '{0} بوصة²',
+      other: '{0} بوصة²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بوصة²',
+      zero: '{0} بوصة²',
+      one: '{0} بوصة²',
+      two: '{0} بوصة²',
+      few: '{0} بوصة²',
+      many: '{0} بوصة²',
+      other: '{0} بوصة²',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'دونم',
-          zero: 'دونم',
-          one: '{0} دونم',
-          two: '{0} دونم',
-          few: '{0} دونم',
-          many: '{0} دونم',
-          other: '{0} دونم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'دونم',
-          zero: '{0} دونم',
-          one: '{0} دونم',
-          two: '{0} دونم',
-          few: '{0} دونم',
-          many: '{0} دونم',
-          other: '{0} دونم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'دونم',
-          zero: '{0} دونم',
-          one: '{0} دونم',
-          two: '{0} دونم',
-          few: '{0} دونم',
-          many: '{0} دونم',
-          other: '{0} دونم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'دونم',
+      zero: 'دونم',
+      one: '{0} دونم',
+      two: '{0} دونم',
+      few: '{0} دونم',
+      many: '{0} دونم',
+      other: '{0} دونم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'دونم',
+      zero: '{0} دونم',
+      one: '{0} دونم',
+      two: '{0} دونم',
+      few: '{0} دونم',
+      many: '{0} دونم',
+      other: '{0} دونم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'دونم',
+      zero: '{0} دونم',
+      one: '{0} دونم',
+      two: '{0} دونم',
+      few: '{0} دونم',
+      many: '{0} دونم',
+      other: '{0} دونم',
+    ),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قيراط',
-          zero: '{0} قيراط',
-          one: 'قيراط',
-          two: 'قيراطان',
-          few: '{0} قراريط',
-          many: '{0} قيراطًا',
-          other: '{0} قيراط',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قيراط',
-          zero: '{0} قيراط',
-          one: 'قيراط',
-          two: '{0} قيراط',
-          few: '{0} قيراط',
-          many: '{0} قيراط',
-          other: '{0} قيراط',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قيراط',
-          zero: '{0} قيراط',
-          one: 'قيراط',
-          two: '{0} قيراط',
-          few: '{0} قيراط',
-          many: '{0} قيراط',
-          other: '{0} قيراط',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قيراط',
+      zero: '{0} قيراط',
+      one: 'قيراط',
+      two: 'قيراطان',
+      few: '{0} قراريط',
+      many: '{0} قيراطًا',
+      other: '{0} قيراط',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قيراط',
+      zero: '{0} قيراط',
+      one: 'قيراط',
+      two: '{0} قيراط',
+      few: '{0} قيراط',
+      many: '{0} قيراط',
+      other: '{0} قيراط',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قيراط',
+      zero: '{0} قيراط',
+      one: 'قيراط',
+      two: '{0} قيراط',
+      few: '{0} قيراط',
+      many: '{0} قيراط',
+      other: '{0} قيراط',
+    ),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'مغم/ديسيلتر',
-          zero: '{0} مغم/ديسيل',
-          one: 'مغم/ديسيلتر',
-          two: 'مغم/ديسيلتر',
-          few: '{0} مغم/ديسيلتر',
-          many: '{0} مغم/ديسيلتر',
-          other: '{0} مغم/ديسيلتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'مغم/ديسيل',
-          zero: '{0} مغم/ديسيل',
-          one: '{0} مغم/ديسيل',
-          two: '{0} مغم/ديسيل',
-          few: '{0} مغم/ديسيل',
-          many: '{0} مغم/ديسيل',
-          other: '{0} مغم/ديسيل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'مغ/ديسيل',
-          zero: '{0} مغ/ديسيل',
-          one: '{0} مغ/ديسيل',
-          two: '{0} مغ/ديسيل',
-          few: '{0} مغ/ديسيل',
-          many: '{0} مغ/ديسيل',
-          other: '{0} مغ/ديسيل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'مغم/ديسيلتر',
+      zero: '{0} مغم/ديسيل',
+      one: 'مغم/ديسيلتر',
+      two: 'مغم/ديسيلتر',
+      few: '{0} مغم/ديسيلتر',
+      many: '{0} مغم/ديسيلتر',
+      other: '{0} مغم/ديسيلتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'مغم/ديسيل',
+      zero: '{0} مغم/ديسيل',
+      one: '{0} مغم/ديسيل',
+      two: '{0} مغم/ديسيل',
+      few: '{0} مغم/ديسيل',
+      many: '{0} مغم/ديسيل',
+      other: '{0} مغم/ديسيل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'مغ/ديسيل',
+      zero: '{0} مغ/ديسيل',
+      one: '{0} مغ/ديسيل',
+      two: '{0} مغ/ديسيل',
+      few: '{0} مغ/ديسيل',
+      many: '{0} مغ/ديسيل',
+      other: '{0} مغ/ديسيل',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملي مول/لتر',
-          zero: '{0} ملي مول/لتر',
-          one: '{0} ملي مول/لتر',
-          two: '{0} ملي مول/لتر',
-          few: '{0} ملي مول/لتر',
-          many: '{0} ملي مول/لتر',
-          other: '{0} ملي مول/لتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م.مول/ل',
-          zero: '{0} م.مول/ل',
-          one: '{0} م.مول/ل',
-          two: '{0} م.مول/ل',
-          few: '{0} م.مول/ل',
-          many: '{0} م.مول/ل',
-          other: '{0} م.مول/ل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م.مول/ل',
-          zero: '{0} م.مول/ل',
-          one: '{0} م.مول/ل',
-          two: '{0} م.مول/ل',
-          few: '{0} م.مول/ل',
-          many: '{0} م.مول/ل',
-          other: '{0} م.مول/ل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملي مول/لتر',
+      zero: '{0} ملي مول/لتر',
+      one: '{0} ملي مول/لتر',
+      two: '{0} ملي مول/لتر',
+      few: '{0} ملي مول/لتر',
+      many: '{0} ملي مول/لتر',
+      other: '{0} ملي مول/لتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م.مول/ل',
+      zero: '{0} م.مول/ل',
+      one: '{0} م.مول/ل',
+      two: '{0} م.مول/ل',
+      few: '{0} م.مول/ل',
+      many: '{0} م.مول/ل',
+      other: '{0} م.مول/ل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م.مول/ل',
+      zero: '{0} م.مول/ل',
+      one: '{0} م.مول/ل',
+      two: '{0} م.مول/ل',
+      few: '{0} م.مول/ل',
+      many: '{0} م.مول/ل',
+      other: '{0} م.مول/ل',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'عنصر',
-          zero: '{0} عنصر',
-          one: 'عنصر واحد',
-          two: 'عنصران',
-          few: '{0} عناصر',
-          many: '{0} عنصرًا',
-          other: '{0} عنصر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'عنصر',
-          zero: '{0} عنصر',
-          one: 'عنصر',
-          two: 'عنصران',
-          few: '{0} عناصر',
-          many: '{0} عنصرًا',
-          other: '{0} عنصر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'عنصر',
-          zero: '{0} عنصر',
-          one: 'عنصر',
-          two: '{0} عنصر',
-          few: '{0} عنصر',
-          many: '{0} عنصر',
-          other: '{0} عنصر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'عنصر',
+      zero: '{0} عنصر',
+      one: 'عنصر واحد',
+      two: 'عنصران',
+      few: '{0} عناصر',
+      many: '{0} عنصرًا',
+      other: '{0} عنصر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'عنصر',
+      zero: '{0} عنصر',
+      one: 'عنصر',
+      two: 'عنصران',
+      few: '{0} عناصر',
+      many: '{0} عنصرًا',
+      other: '{0} عنصر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'عنصر',
+      zero: '{0} عنصر',
+      one: 'عنصر',
+      two: '{0} عنصر',
+      few: '{0} عنصر',
+      many: '{0} عنصر',
+      other: '{0} عنصر',
+    ),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'جزء في المليون',
-          zero: '{0} جزء في المليون',
-          one: '{0} جزء في المليون',
-          two: 'جزآن في المليون',
-          few: '{0} أجزاء في المليون',
-          many: '{0} جزءًا في المليون',
-          other: '{0} جزء في المليون',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'جزء/مليون',
-          zero: '{0} جزء/مليون',
-          one: '{0} جزء/مليون',
-          two: '{0} جزء/مليون',
-          few: '{0} جزء/مليون',
-          many: '{0} جزء/مليون',
-          other: '{0} جزء/مليون',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'جزء/مليون',
-          zero: '{0} جزء/مليون',
-          one: '{0} جزء/مليون',
-          two: '{0} جزء/مليون',
-          few: '{0} جزء/مليون',
-          many: '{0} جزء/مليون',
-          other: '{0} جزء/مليون',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'جزء في المليون',
+      zero: '{0} جزء في المليون',
+      one: '{0} جزء في المليون',
+      two: 'جزآن في المليون',
+      few: '{0} أجزاء في المليون',
+      many: '{0} جزءًا في المليون',
+      other: '{0} جزء في المليون',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'جزء/مليون',
+      zero: '{0} جزء/مليون',
+      one: '{0} جزء/مليون',
+      two: '{0} جزء/مليون',
+      few: '{0} جزء/مليون',
+      many: '{0} جزء/مليون',
+      other: '{0} جزء/مليون',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'جزء/مليون',
+      zero: '{0} جزء/مليون',
+      one: '{0} جزء/مليون',
+      two: '{0} جزء/مليون',
+      few: '{0} جزء/مليون',
+      many: '{0} جزء/مليون',
+      other: '{0} جزء/مليون',
+    ),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بالمائة',
-          zero: '{0}٪',
-          one: '{0} بالمائة',
-          two: '{0}٪',
-          few: '{0}٪',
-          many: '{0}٪',
-          other: '{0} بالمائة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بالمائة',
-          zero: '{0}٪',
-          one: '{0}٪',
-          two: '{0}٪',
-          few: '{0}٪',
-          many: '{0}٪',
-          other: '{0}٪',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '٪',
-          zero: '{0}٪',
-          one: '{0}٪',
-          two: '{0}٪',
-          few: '{0}٪',
-          many: '{0}٪',
-          other: '{0}٪',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بالمائة',
+      zero: '{0}٪',
+      one: '{0} بالمائة',
+      two: '{0}٪',
+      few: '{0}٪',
+      many: '{0}٪',
+      other: '{0} بالمائة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بالمائة',
+      zero: '{0}٪',
+      one: '{0}٪',
+      two: '{0}٪',
+      few: '{0}٪',
+      many: '{0}٪',
+      other: '{0}٪',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '٪',
+      zero: '{0}٪',
+      one: '{0}٪',
+      two: '{0}٪',
+      few: '{0}٪',
+      many: '{0}٪',
+      other: '{0}٪',
+    ),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'في الألف',
-          zero: '{0} في الألف',
-          one: '{0} في الألف',
-          two: '{0} في الألف',
-          few: '{0} في الألف',
-          many: '{0} في الألف',
-          other: '{0} في الألف',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'في الألف',
-          zero: '{0}؉',
-          one: '{0}؉',
-          two: '{0}؉',
-          few: '{0}؉',
-          many: '{0}؉',
-          other: '{0}؉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '؉',
-          zero: '{0}؉',
-          one: '{0}؉',
-          two: '{0}؉',
-          few: '{0}؉',
-          many: '{0}؉',
-          other: '{0}؉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'في الألف',
+      zero: '{0} في الألف',
+      one: '{0} في الألف',
+      two: '{0} في الألف',
+      few: '{0} في الألف',
+      many: '{0} في الألف',
+      other: '{0} في الألف',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'في الألف',
+      zero: '{0}؉',
+      one: '{0}؉',
+      two: '{0}؉',
+      few: '{0}؉',
+      many: '{0}؉',
+      other: '{0}؉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '؉',
+      zero: '{0}؉',
+      one: '{0}؉',
+      two: '{0}؉',
+      few: '{0}؉',
+      many: '{0}؉',
+      other: '{0}؉',
+    ),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} permyriad',
-          other: '{0}‱',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0}‱',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '؊',
-          zero: '{0} ؊',
-          one: '{0} ؊',
-          two: '{0} ؊',
-          few: '{0} ؊',
-          many: '{0} ؊',
-          other: '{0} ؊',
-        ),
-      );
+    long: UnitCountPattern(_locale, '‱', one: '{0} permyriad', other: '{0}‱'),
+    short: UnitCountPattern(_locale, '‱', one: '{0}‱', other: '{0}‱'),
+    narrow: UnitCountPattern(
+      _locale,
+      '؊',
+      zero: '{0} ؊',
+      one: '{0} ؊',
+      two: '{0} ؊',
+      few: '{0} ؊',
+      many: '{0} ؊',
+      other: '{0} ؊',
+    ),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'مول',
-          zero: '{0} مول',
-          one: '{0} مول',
-          two: '{0} مول',
-          few: '{0} مول',
-          many: '{0} مول',
-          other: '{0} مول',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'مول',
-          zero: '{0} مول',
-          one: '{0} مول',
-          two: '{0} مول',
-          few: '{0} مول',
-          many: '{0} مول',
-          other: '{0} مول',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'مول',
-          zero: '{0} مول',
-          one: '{0} مول',
-          two: '{0} مول',
-          few: '{0} مول',
-          many: '{0} مول',
-          other: '{0} مول',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'مول',
+      zero: '{0} مول',
+      one: '{0} مول',
+      two: '{0} مول',
+      few: '{0} مول',
+      many: '{0} مول',
+      other: '{0} مول',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'مول',
+      zero: '{0} مول',
+      one: '{0} مول',
+      two: '{0} مول',
+      few: '{0} مول',
+      many: '{0} مول',
+      other: '{0} مول',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'مول',
+      zero: '{0} مول',
+      one: '{0} مول',
+      two: '{0} مول',
+      few: '{0} مول',
+      many: '{0} مول',
+      other: '{0} مول',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'لتر لكل كيلومتر',
-          zero: '{0} لتر لكل كيلومتر',
-          one: '{0} لتر لكل كيلومتر',
-          two: 'لتران لكل كيلومتر',
-          few: '{0} لترات لكل كيلومتر',
-          many: '{0} لترًا لكل كيلومتر',
-          other: '{0} لتر لكل كيلومتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'لتر/كم',
-          zero: '{0} لتر/كم',
-          one: '{0} لتر/كم',
-          two: '{0} لتر/كم',
-          few: '{0} لتر/كم',
-          many: '{0} لتر/كم',
-          other: '{0} لتر/كم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ل/كم',
-          zero: '{0} ل/كم',
-          one: '{0} ل/كم',
-          two: '{0} ل/كم',
-          few: '{0} ل/كم',
-          many: '{0} ل/كم',
-          other: '{0} ل/كم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'لتر لكل كيلومتر',
+      zero: '{0} لتر لكل كيلومتر',
+      one: '{0} لتر لكل كيلومتر',
+      two: 'لتران لكل كيلومتر',
+      few: '{0} لترات لكل كيلومتر',
+      many: '{0} لترًا لكل كيلومتر',
+      other: '{0} لتر لكل كيلومتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'لتر/كم',
+      zero: '{0} لتر/كم',
+      one: '{0} لتر/كم',
+      two: '{0} لتر/كم',
+      few: '{0} لتر/كم',
+      many: '{0} لتر/كم',
+      other: '{0} لتر/كم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ل/كم',
+      zero: '{0} ل/كم',
+      one: '{0} ل/كم',
+      two: '{0} ل/كم',
+      few: '{0} ل/كم',
+      many: '{0} ل/كم',
+      other: '{0} ل/كم',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'لتر لكل ١٠٠ كيلومتر',
-          zero: '{0} لتر لكل ١٠٠ كيلومتر',
-          one: '{0} لتر لكل ١٠٠ كيلومتر',
-          two: 'لتران لكل ١٠٠ كيلومتر',
-          few: '{0} لترات لكل ١٠٠ كيلومتر',
-          many: '{0} لترًا لكل ١٠٠ كيلومتر',
-          other: '{0} لتر لكل ١٠٠ كيلومتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'لتر/‏١٠٠ كم',
-          zero: '{0} لتر/١٠٠ كم',
-          one: '{0} لتر/١٠٠ كم',
-          two: '{0} لتر/١٠٠ كم',
-          few: '{0} لتر/١٠٠ كم',
-          many: '{0} لتر/١٠٠ كم',
-          other: '{0} لتر/١٠٠ كم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ل/١٠٠كم',
-          zero: '{0} ل/١٠٠كم',
-          one: '{0} ل/١٠٠كم',
-          two: '{0} ل/١٠٠كم',
-          few: '{0} ل/١٠٠كم',
-          many: '{0} ل/١٠٠كم',
-          other: '{0} ل/١٠٠كم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'لتر لكل ١٠٠ كيلومتر',
+      zero: '{0} لتر لكل ١٠٠ كيلومتر',
+      one: '{0} لتر لكل ١٠٠ كيلومتر',
+      two: 'لتران لكل ١٠٠ كيلومتر',
+      few: '{0} لترات لكل ١٠٠ كيلومتر',
+      many: '{0} لترًا لكل ١٠٠ كيلومتر',
+      other: '{0} لتر لكل ١٠٠ كيلومتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'لتر/‏١٠٠ كم',
+      zero: '{0} لتر/١٠٠ كم',
+      one: '{0} لتر/١٠٠ كم',
+      two: '{0} لتر/١٠٠ كم',
+      few: '{0} لتر/١٠٠ كم',
+      many: '{0} لتر/١٠٠ كم',
+      other: '{0} لتر/١٠٠ كم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ل/١٠٠كم',
+      zero: '{0} ل/١٠٠كم',
+      one: '{0} ل/١٠٠كم',
+      two: '{0} ل/١٠٠كم',
+      few: '{0} ل/١٠٠كم',
+      many: '{0} ل/١٠٠كم',
+      other: '{0} ل/١٠٠كم',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل لكل غالون',
-          zero: '{0} ميل لكل غالون',
-          one: '{0} ميل لكل غالون',
-          two: 'ميلان لكل غالون',
-          few: '{0} أميال لكل غالون',
-          many: '{0} ميلًا لكل غالون',
-          other: '{0} ميل لكل غالون',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل/غالون',
-          zero: '{0} ميل/غالون',
-          one: '{0} ميل/غالون',
-          two: '{0} ميل/غالون',
-          few: '{0} ميل/غالون',
-          many: '{0} ميل/غالون',
-          other: '{0} ميل/غالون',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل/غالون',
-          zero: '{0} ميل/غالون',
-          one: '{0} ميل/غالون',
-          two: '{0} ميل/غالون',
-          few: '{0} ميل/غالون',
-          many: '{0} ميل/غالون',
-          other: '{0} ميل/غالون',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل لكل غالون',
+      zero: '{0} ميل لكل غالون',
+      one: '{0} ميل لكل غالون',
+      two: 'ميلان لكل غالون',
+      few: '{0} أميال لكل غالون',
+      many: '{0} ميلًا لكل غالون',
+      other: '{0} ميل لكل غالون',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل/غالون',
+      zero: '{0} ميل/غالون',
+      one: '{0} ميل/غالون',
+      two: '{0} ميل/غالون',
+      few: '{0} ميل/غالون',
+      many: '{0} ميل/غالون',
+      other: '{0} ميل/غالون',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل/غالون',
+      zero: '{0} ميل/غالون',
+      one: '{0} ميل/غالون',
+      two: '{0} ميل/غالون',
+      few: '{0} ميل/غالون',
+      many: '{0} ميل/غالون',
+      other: '{0} ميل/غالون',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل لكل غالون إمبراطوري',
-          zero: '{0} ميل لكل غالون إمبراطوري',
-          one: '{0} ميل لكل غالون إمبراطوري',
-          two: 'ميلان لكل غالون إمبراطوري',
-          few: '{0} أميال لكل غالون إمبراطوري',
-          many: '{0} ميلًا لكل غالون إمبراطوري',
-          other: '{0} ميل لكل غالون إمبراطوري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل/غ. إمبراطوري',
-          zero: '{0} ميل/غ. إمبراطوري',
-          one: '{0} ميل/غ. إمبراطوري',
-          two: '{0} ميل/غ. إمبراطوري',
-          few: '{0} ميل/غ. إمبراطوري',
-          many: '{0} ميل/غ. إمبراطوري',
-          other: '{0} ميل/غ. إمبراطوري',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل/غ. إمبراطوري',
-          zero: '{0} ميل/غ. إمبراطوري',
-          one: '{0} ميل/غ. إمبراطوري',
-          two: '{0} ميل/غ. إمبراطوري',
-          few: '{0} ميل/غ. إمبراطوري',
-          many: '{0} ميل/غ. إمبراطوري',
-          other: '{0} ميل/غ. إمبراطوري',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل لكل غالون إمبراطوري',
+      zero: '{0} ميل لكل غالون إمبراطوري',
+      one: '{0} ميل لكل غالون إمبراطوري',
+      two: 'ميلان لكل غالون إمبراطوري',
+      few: '{0} أميال لكل غالون إمبراطوري',
+      many: '{0} ميلًا لكل غالون إمبراطوري',
+      other: '{0} ميل لكل غالون إمبراطوري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل/غ. إمبراطوري',
+      zero: '{0} ميل/غ. إمبراطوري',
+      one: '{0} ميل/غ. إمبراطوري',
+      two: '{0} ميل/غ. إمبراطوري',
+      few: '{0} ميل/غ. إمبراطوري',
+      many: '{0} ميل/غ. إمبراطوري',
+      other: '{0} ميل/غ. إمبراطوري',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل/غ. إمبراطوري',
+      zero: '{0} ميل/غ. إمبراطوري',
+      one: '{0} ميل/غ. إمبراطوري',
+      two: '{0} ميل/غ. إمبراطوري',
+      few: '{0} ميل/غ. إمبراطوري',
+      many: '{0} ميل/غ. إمبراطوري',
+      other: '{0} ميل/غ. إمبراطوري',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بيتابايت',
-          zero: '{0} بيتابايت',
-          one: '{0} بيتابايت',
-          two: '{0} بيتابايت',
-          few: '{0} بيتابايت',
-          many: '{0} بيتابايت',
-          other: '{0} بيتابايت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بيتابايت',
-          zero: '{0} بيتابايت',
-          one: '{0} بيتابايت',
-          two: '{0} بيتابايت',
-          few: '{0} بيتابايت',
-          many: '{0} بيتابايت',
-          other: '{0} بيتابايت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بيتابايت',
-          zero: '{0} بيتابايت',
-          one: '{0} بيتابايت',
-          two: '{0} بيتابايت',
-          few: '{0} بيتابايت',
-          many: '{0} بيتابايت',
-          other: '{0} بيتابايت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بيتابايت',
+      zero: '{0} بيتابايت',
+      one: '{0} بيتابايت',
+      two: '{0} بيتابايت',
+      few: '{0} بيتابايت',
+      many: '{0} بيتابايت',
+      other: '{0} بيتابايت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بيتابايت',
+      zero: '{0} بيتابايت',
+      one: '{0} بيتابايت',
+      two: '{0} بيتابايت',
+      few: '{0} بيتابايت',
+      many: '{0} بيتابايت',
+      other: '{0} بيتابايت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بيتابايت',
+      zero: '{0} بيتابايت',
+      one: '{0} بيتابايت',
+      two: '{0} بيتابايت',
+      few: '{0} بيتابايت',
+      many: '{0} بيتابايت',
+      other: '{0} بيتابايت',
+    ),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'تيرابايت',
-          zero: '{0} تيرابايت',
-          one: '{0} تيرابايت',
-          two: '{0} تيرابايت',
-          few: '{0} تيرابايت',
-          many: '{0} تيرابايت',
-          other: '{0} تيرابايت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'تيرابايت',
-          zero: '{0} تيرابايت',
-          one: '{0} تيرابايت',
-          two: '{0} تيرابايت',
-          few: '{0} تيرابايت',
-          many: '{0} تيرابايت',
-          other: '{0} تيرابايت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ت.ب',
-          zero: '{0} ت.ب',
-          one: '{0} ت.ب',
-          two: '{0} ت.ب',
-          few: '{0} ت.ب',
-          many: '{0} ت.ب',
-          other: '{0} ت.ب',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'تيرابايت',
+      zero: '{0} تيرابايت',
+      one: '{0} تيرابايت',
+      two: '{0} تيرابايت',
+      few: '{0} تيرابايت',
+      many: '{0} تيرابايت',
+      other: '{0} تيرابايت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'تيرابايت',
+      zero: '{0} تيرابايت',
+      one: '{0} تيرابايت',
+      two: '{0} تيرابايت',
+      few: '{0} تيرابايت',
+      many: '{0} تيرابايت',
+      other: '{0} تيرابايت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ت.ب',
+      zero: '{0} ت.ب',
+      one: '{0} ت.ب',
+      two: '{0} ت.ب',
+      few: '{0} ت.ب',
+      many: '{0} ت.ب',
+      other: '{0} ت.ب',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'تيرابت',
-          zero: '{0} تيرابت',
-          one: '{0} تيرابت',
-          two: '{0} تيرابت',
-          few: '{0} تيرابت',
-          many: '{0} تيرابت',
-          other: '{0} تيرابت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'تيرابت',
-          zero: '{0} تيرابت',
-          one: '{0} تيرابت',
-          two: '{0} تيرابت',
-          few: '{0} تيرابت',
-          many: '{0} تيرابت',
-          other: '{0} تيرابت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ت.بت',
-          zero: '{0} ت.بت',
-          one: '{0} ت.بت',
-          two: '{0} ت.بت',
-          few: '{0} ت.بت',
-          many: '{0} ت.بت',
-          other: '{0} ت.بت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'تيرابت',
+      zero: '{0} تيرابت',
+      one: '{0} تيرابت',
+      two: '{0} تيرابت',
+      few: '{0} تيرابت',
+      many: '{0} تيرابت',
+      other: '{0} تيرابت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'تيرابت',
+      zero: '{0} تيرابت',
+      one: '{0} تيرابت',
+      two: '{0} تيرابت',
+      few: '{0} تيرابت',
+      many: '{0} تيرابت',
+      other: '{0} تيرابت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ت.بت',
+      zero: '{0} ت.بت',
+      one: '{0} ت.بت',
+      two: '{0} ت.بت',
+      few: '{0} ت.بت',
+      many: '{0} ت.بت',
+      other: '{0} ت.بت',
+    ),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'غيغابايت',
-          zero: '{0} غيغابايت',
-          one: '{0} غيغابايت',
-          two: '{0} غيغابايت',
-          few: '{0} غيغابايت',
-          many: '{0} غيغابايت',
-          other: '{0} غيغابايت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'غ.ب',
-          zero: '{0} غ.ب',
-          one: '{0} غ.ب',
-          two: '{0} غ.ب',
-          few: '{0} غ.ب',
-          many: '{0} غ.ب',
-          other: '{0} غ.ب',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'غ.ب',
-          zero: '{0} غ.ب',
-          one: '{0} غ.ب',
-          two: '{0} غ.ب',
-          few: '{0} غ.ب',
-          many: '{0} غ.ب',
-          other: '{0} غ.ب',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'غيغابايت',
+      zero: '{0} غيغابايت',
+      one: '{0} غيغابايت',
+      two: '{0} غيغابايت',
+      few: '{0} غيغابايت',
+      many: '{0} غيغابايت',
+      other: '{0} غيغابايت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'غ.ب',
+      zero: '{0} غ.ب',
+      one: '{0} غ.ب',
+      two: '{0} غ.ب',
+      few: '{0} غ.ب',
+      many: '{0} غ.ب',
+      other: '{0} غ.ب',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'غ.ب',
+      zero: '{0} غ.ب',
+      one: '{0} غ.ب',
+      two: '{0} غ.ب',
+      few: '{0} غ.ب',
+      many: '{0} غ.ب',
+      other: '{0} غ.ب',
+    ),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'غيغابت',
-          zero: '{0} غيغابت',
-          one: '{0} غيغابت',
-          two: '{0} غيغابت',
-          few: '{0} غيغابت',
-          many: '{0} غيغابت',
-          other: '{0} غيغابت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'غيغابت',
-          zero: '{0} غيغابت',
-          one: '{0} غيغابت',
-          two: '{0} غيغابت',
-          few: '{0} غيغابت',
-          many: '{0} غيغابت',
-          other: '{0} غيغابت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'غ.بت',
-          zero: '{0} غ.بت',
-          one: '{0} غ.بت',
-          two: '{0} غ.بت',
-          few: '{0} غ.بت',
-          many: '{0} غ.بت',
-          other: '{0} غ.بت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'غيغابت',
+      zero: '{0} غيغابت',
+      one: '{0} غيغابت',
+      two: '{0} غيغابت',
+      few: '{0} غيغابت',
+      many: '{0} غيغابت',
+      other: '{0} غيغابت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'غيغابت',
+      zero: '{0} غيغابت',
+      one: '{0} غيغابت',
+      two: '{0} غيغابت',
+      few: '{0} غيغابت',
+      many: '{0} غيغابت',
+      other: '{0} غيغابت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'غ.بت',
+      zero: '{0} غ.بت',
+      one: '{0} غ.بت',
+      two: '{0} غ.بت',
+      few: '{0} غ.بت',
+      many: '{0} غ.بت',
+      other: '{0} غ.بت',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميغابايت',
-          zero: '{0} ميغابايت',
-          one: '{0} ميغابايت',
-          two: '{0} ميغابايت',
-          few: '{0} ميغابايت',
-          many: '{0} ميغابايت',
-          other: '{0} ميغابايت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميغابايت',
-          zero: '{0} م.ب',
-          one: '{0} م.ب',
-          two: '{0} م.ب',
-          few: '{0} م.ب',
-          many: '{0} م.ب',
-          other: '{0} م.ب',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م.ب',
-          zero: '{0} م.ب',
-          one: '{0} م.ب',
-          two: '{0} م.ب',
-          few: '{0} م.ب',
-          many: '{0} م.ب',
-          other: '{0} م.ب',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميغابايت',
+      zero: '{0} ميغابايت',
+      one: '{0} ميغابايت',
+      two: '{0} ميغابايت',
+      few: '{0} ميغابايت',
+      many: '{0} ميغابايت',
+      other: '{0} ميغابايت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميغابايت',
+      zero: '{0} م.ب',
+      one: '{0} م.ب',
+      two: '{0} م.ب',
+      few: '{0} م.ب',
+      many: '{0} م.ب',
+      other: '{0} م.ب',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م.ب',
+      zero: '{0} م.ب',
+      one: '{0} م.ب',
+      two: '{0} م.ب',
+      few: '{0} م.ب',
+      many: '{0} م.ب',
+      other: '{0} م.ب',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميغابت',
-          zero: '{0} ميغابت',
-          one: '{0} ميغابت',
-          two: '{0} ميغابت',
-          few: '{0} ميغابت',
-          many: '{0} ميغابت',
-          other: '{0} ميغابت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميغابت',
-          zero: '{0} ميغابت',
-          one: '{0} ميغابت',
-          two: '{0} ميغابت',
-          few: '{0} ميغابت',
-          many: '{0} ميغابت',
-          other: '{0} ميغابت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م.بت',
-          zero: '{0} م.بت',
-          one: '{0} م.بت',
-          two: '{0} م.بت',
-          few: '{0} م.بت',
-          many: '{0} م.بت',
-          other: '{0} م.بت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميغابت',
+      zero: '{0} ميغابت',
+      one: '{0} ميغابت',
+      two: '{0} ميغابت',
+      few: '{0} ميغابت',
+      many: '{0} ميغابت',
+      other: '{0} ميغابت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميغابت',
+      zero: '{0} ميغابت',
+      one: '{0} ميغابت',
+      two: '{0} ميغابت',
+      few: '{0} ميغابت',
+      many: '{0} ميغابت',
+      other: '{0} ميغابت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م.بت',
+      zero: '{0} م.بت',
+      one: '{0} م.بت',
+      two: '{0} م.بت',
+      few: '{0} م.بت',
+      many: '{0} م.بت',
+      other: '{0} م.بت',
+    ),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلوبايت',
-          zero: '{0} كيلوبايت',
-          one: '{0} كيلوبايت',
-          two: '{0} كيلوبايت',
-          few: '{0} كيلوبايت',
-          many: '{0} كيلوبايت',
-          other: '{0} كيلوبايت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كيلوبايت',
-          zero: '{0} كيلوبايت',
-          one: '{0} كيلوبايت',
-          two: '{0} كيلوبايت',
-          few: '{0} كيلوبايت',
-          many: '{0} كيلوبايت',
-          other: '{0} كيلوبايت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك.ب',
-          zero: '{0} ك.ب',
-          one: '{0} ك.ب',
-          two: '{0} ك.ب',
-          few: '{0} ك.ب',
-          many: '{0} ك.ب',
-          other: '{0} ك.ب',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلوبايت',
+      zero: '{0} كيلوبايت',
+      one: '{0} كيلوبايت',
+      two: '{0} كيلوبايت',
+      few: '{0} كيلوبايت',
+      many: '{0} كيلوبايت',
+      other: '{0} كيلوبايت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كيلوبايت',
+      zero: '{0} كيلوبايت',
+      one: '{0} كيلوبايت',
+      two: '{0} كيلوبايت',
+      few: '{0} كيلوبايت',
+      many: '{0} كيلوبايت',
+      other: '{0} كيلوبايت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك.ب',
+      zero: '{0} ك.ب',
+      one: '{0} ك.ب',
+      two: '{0} ك.ب',
+      few: '{0} ك.ب',
+      many: '{0} ك.ب',
+      other: '{0} ك.ب',
+    ),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلوبت',
-          zero: '{0} كيلوبت',
-          one: '{0} كيلوبت',
-          two: '{0} كيلوبت',
-          few: '{0} كيلوبت',
-          many: '{0} كيلوبت',
-          other: '{0} كيلوبت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كيلوبت',
-          zero: '{0} كيلوبت',
-          one: '{0} كيلوبت',
-          two: '{0} كيلوبت',
-          few: '{0} كيلوبت',
-          many: '{0} كيلوبت',
-          other: '{0} كيلوبت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك.بت',
-          zero: '{0} ك.بت',
-          one: '{0} ك.بت',
-          two: '{0} ك.بت',
-          few: '{0} ك.بت',
-          many: '{0} ك.بت',
-          other: '{0} ك.بت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلوبت',
+      zero: '{0} كيلوبت',
+      one: '{0} كيلوبت',
+      two: '{0} كيلوبت',
+      few: '{0} كيلوبت',
+      many: '{0} كيلوبت',
+      other: '{0} كيلوبت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كيلوبت',
+      zero: '{0} كيلوبت',
+      one: '{0} كيلوبت',
+      two: '{0} كيلوبت',
+      few: '{0} كيلوبت',
+      many: '{0} كيلوبت',
+      other: '{0} كيلوبت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك.بت',
+      zero: '{0} ك.بت',
+      one: '{0} ك.بت',
+      two: '{0} ك.بت',
+      few: '{0} ك.بت',
+      many: '{0} ك.بت',
+      other: '{0} ك.بت',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بايت',
-          zero: '{0} بايت',
-          one: '{0} بايت',
-          two: '{0} بايت',
-          few: '{0} بايت',
-          many: '{0} بايت',
-          other: '{0} بايت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بايت',
-          zero: '{0} بايت',
-          one: '{0} بايت',
-          two: '{0} بايت',
-          few: '{0} بايت',
-          many: '{0} بايت',
-          other: '{0} بايت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ب',
-          zero: '{0} ب',
-          one: '{0} ب',
-          two: '{0} ب',
-          few: '{0} ب',
-          many: '{0} ب',
-          other: '{0} ب',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بايت',
+      zero: '{0} بايت',
+      one: '{0} بايت',
+      two: '{0} بايت',
+      few: '{0} بايت',
+      many: '{0} بايت',
+      other: '{0} بايت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بايت',
+      zero: '{0} بايت',
+      one: '{0} بايت',
+      two: '{0} بايت',
+      few: '{0} بايت',
+      many: '{0} بايت',
+      other: '{0} بايت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ب',
+      zero: '{0} ب',
+      one: '{0} ب',
+      two: '{0} ب',
+      few: '{0} ب',
+      many: '{0} ب',
+      other: '{0} ب',
+    ),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بت',
-          zero: '{0} بت',
-          one: '{0} بت',
-          two: '{0} بت',
-          few: '{0} بت',
-          many: '{0} بت',
-          other: '{0} بت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بت',
-          zero: '{0} بت',
-          one: '{0} بت',
-          two: '{0} بت',
-          few: '{0} بت',
-          many: '{0} بت',
-          other: '{0} بت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بت',
-          zero: '{0} بت',
-          one: '{0} بت',
-          two: '{0} بت',
-          few: '{0} بت',
-          many: '{0} بت',
-          other: '{0} بت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بت',
+      zero: '{0} بت',
+      one: '{0} بت',
+      two: '{0} بت',
+      few: '{0} بت',
+      many: '{0} بت',
+      other: '{0} بت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بت',
+      zero: '{0} بت',
+      one: '{0} بت',
+      two: '{0} بت',
+      few: '{0} بت',
+      many: '{0} بت',
+      other: '{0} بت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بت',
+      zero: '{0} بت',
+      one: '{0} بت',
+      two: '{0} بت',
+      few: '{0} بت',
+      many: '{0} بت',
+      other: '{0} بت',
+    ),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قرون',
-          zero: '{0} قرن',
-          one: 'قرن',
-          two: 'قرنان',
-          few: '{0} قرون',
-          many: '{0} قرنًا',
-          other: '{0} قرن',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قرن',
-          zero: '{0} قرن',
-          one: 'قرن',
-          two: 'قرنان',
-          few: '{0} قرون',
-          many: '{0} قرنًا',
-          other: '{0} قرن',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قرن',
-          zero: '{0} قرن',
-          one: 'قرن',
-          two: 'قرنان',
-          few: '{0} قرون',
-          many: '{0} قرنًا',
-          other: '{0} قرن',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قرون',
+      zero: '{0} قرن',
+      one: 'قرن',
+      two: 'قرنان',
+      few: '{0} قرون',
+      many: '{0} قرنًا',
+      other: '{0} قرن',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قرن',
+      zero: '{0} قرن',
+      one: 'قرن',
+      two: 'قرنان',
+      few: '{0} قرون',
+      many: '{0} قرنًا',
+      other: '{0} قرن',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قرن',
+      zero: '{0} قرن',
+      one: 'قرن',
+      two: 'قرنان',
+      few: '{0} قرون',
+      many: '{0} قرنًا',
+      other: '{0} قرن',
+    ),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'عقود',
-          zero: '{0} عقد',
-          one: 'عقد',
-          two: 'عقدان',
-          few: '{0} عقود',
-          many: '{0} عقدًا',
-          other: '{0} عقد',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'عقد',
-          zero: '{0} عقد',
-          one: 'عقد',
-          two: 'عقدان',
-          few: '{0} عقود',
-          many: '{0} عقدًا',
-          other: '{0} عقد',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'عقد',
-          zero: '{0} عقد',
-          one: 'عقد',
-          two: 'عقدان',
-          few: '{0} عقود',
-          many: '{0} عقدًا',
-          other: '{0} عقد',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'عقود',
+      zero: '{0} عقد',
+      one: 'عقد',
+      two: 'عقدان',
+      few: '{0} عقود',
+      many: '{0} عقدًا',
+      other: '{0} عقد',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'عقد',
+      zero: '{0} عقد',
+      one: 'عقد',
+      two: 'عقدان',
+      few: '{0} عقود',
+      many: '{0} عقدًا',
+      other: '{0} عقد',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'عقد',
+      zero: '{0} عقد',
+      one: 'عقد',
+      two: 'عقدان',
+      few: '{0} عقود',
+      many: '{0} عقدًا',
+      other: '{0} عقد',
+    ),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سنوات',
-          zero: '{0} سنة',
-          one: 'سنة',
-          two: 'سنتان',
-          few: '{0} سنوات',
-          many: '{0} سنة',
-          other: '{0} سنة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سنة',
-          zero: '{0} سنة',
-          one: 'سنة واحدة',
-          two: 'سنتان',
-          few: '{0} سنوات',
-          many: '{0} سنة',
-          other: '{0} سنة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سنة',
-          zero: '{0} سنة',
-          one: '{0} سنة',
-          two: '{0} سنة',
-          few: '{0} سنة',
-          many: '{0} سنة',
-          other: '{0} سنة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سنوات',
+      zero: '{0} سنة',
+      one: 'سنة',
+      two: 'سنتان',
+      few: '{0} سنوات',
+      many: '{0} سنة',
+      other: '{0} سنة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سنة',
+      zero: '{0} سنة',
+      one: 'سنة واحدة',
+      two: 'سنتان',
+      few: '{0} سنوات',
+      many: '{0} سنة',
+      other: '{0} سنة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سنة',
+      zero: '{0} سنة',
+      one: '{0} سنة',
+      two: '{0} سنة',
+      few: '{0} سنة',
+      many: '{0} سنة',
+      other: '{0} سنة',
+    ),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أرباع',
-          zero: '{0} ربع سنوي',
-          one: 'ربع سنوي',
-          two: 'ربعان سنويان',
-          few: '{0} أرباع سنوية',
-          many: '{0} ربعًا سنويًا',
-          other: '{0} ربع سنوي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ربع سنوي',
-          zero: '{0} ربع',
-          one: 'ربع',
-          two: 'ربعان',
-          few: '{0} أرباع',
-          many: '{0} ربعًا',
-          other: '{0} ربع',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ربع',
-          zero: '{0} ربع',
-          one: 'ربع',
-          two: 'ربعان',
-          few: '{0} أرباع',
-          many: '{0} ربعًا',
-          other: '{0} ربع',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أرباع',
+      zero: '{0} ربع سنوي',
+      one: 'ربع سنوي',
+      two: 'ربعان سنويان',
+      few: '{0} أرباع سنوية',
+      many: '{0} ربعًا سنويًا',
+      other: '{0} ربع سنوي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ربع سنوي',
+      zero: '{0} ربع',
+      one: 'ربع',
+      two: 'ربعان',
+      few: '{0} أرباع',
+      many: '{0} ربعًا',
+      other: '{0} ربع',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ربع',
+      zero: '{0} ربع',
+      one: 'ربع',
+      two: 'ربعان',
+      few: '{0} أرباع',
+      many: '{0} ربعًا',
+      other: '{0} ربع',
+    ),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'شهور',
-          zero: '{0} شهر',
-          one: 'شهر',
-          two: 'شهران',
-          few: '{0} أشهر',
-          many: '{0} شهرًا',
-          other: '{0} شهر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'شهور',
-          zero: '{0} شهر',
-          one: 'شهر',
-          two: 'شهران',
-          few: '{0} أشهر',
-          many: '{0} شهرًا',
-          other: '{0} شهر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'شهر',
-          zero: '{0} شهر',
-          one: 'شهر',
-          two: 'شهران',
-          few: '{0} أشهر',
-          many: '{0} شهرًا',
-          other: '{0} شهر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'شهور',
+      zero: '{0} شهر',
+      one: 'شهر',
+      two: 'شهران',
+      few: '{0} أشهر',
+      many: '{0} شهرًا',
+      other: '{0} شهر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'شهور',
+      zero: '{0} شهر',
+      one: 'شهر',
+      two: 'شهران',
+      few: '{0} أشهر',
+      many: '{0} شهرًا',
+      other: '{0} شهر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'شهر',
+      zero: '{0} شهر',
+      one: 'شهر',
+      two: 'شهران',
+      few: '{0} أشهر',
+      many: '{0} شهرًا',
+      other: '{0} شهر',
+    ),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أسابيع',
-          zero: '{0} أسبوع',
-          one: 'أسبوع',
-          two: 'أسبوعان',
-          few: '{0} أسابيع',
-          many: '{0} أسبوعًا',
-          other: '{0} أسبوع',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أسبوع',
-          zero: '{0} أسبوع',
-          one: 'أسبوع',
-          two: 'أسبوعان',
-          few: '{0} أسابيع',
-          many: '{0} أسبوعًا',
-          other: '{0} أسبوع',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'أسبوع',
-          zero: '{0} أ',
-          one: '{0} أ',
-          two: '{0} أ',
-          few: '{0} أ',
-          many: '{0} أ',
-          other: '{0} أ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أسابيع',
+      zero: '{0} أسبوع',
+      one: 'أسبوع',
+      two: 'أسبوعان',
+      few: '{0} أسابيع',
+      many: '{0} أسبوعًا',
+      other: '{0} أسبوع',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أسبوع',
+      zero: '{0} أسبوع',
+      one: 'أسبوع',
+      two: 'أسبوعان',
+      few: '{0} أسابيع',
+      many: '{0} أسبوعًا',
+      other: '{0} أسبوع',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'أسبوع',
+      zero: '{0} أ',
+      one: '{0} أ',
+      two: '{0} أ',
+      few: '{0} أ',
+      many: '{0} أ',
+      other: '{0} أ',
+    ),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أيام',
-          zero: '{0} يوم',
-          one: 'يوم',
-          two: 'يومان',
-          few: '{0} أيام',
-          many: '{0} يومًا',
-          other: '{0} يوم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أيام',
-          zero: '{0} يوم',
-          one: 'يوم',
-          two: 'يومان',
-          few: '{0} أيام',
-          many: '{0} يومًا',
-          other: '{0} يوم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'يوم',
-          zero: '{0} ي',
-          one: '{0} ي',
-          two: '{0} ي',
-          few: '{0} ي',
-          many: '{0} ي',
-          other: '{0} ي',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أيام',
+      zero: '{0} يوم',
+      one: 'يوم',
+      two: 'يومان',
+      few: '{0} أيام',
+      many: '{0} يومًا',
+      other: '{0} يوم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أيام',
+      zero: '{0} يوم',
+      one: 'يوم',
+      two: 'يومان',
+      few: '{0} أيام',
+      many: '{0} يومًا',
+      other: '{0} يوم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'يوم',
+      zero: '{0} ي',
+      one: '{0} ي',
+      two: '{0} ي',
+      few: '{0} ي',
+      many: '{0} ي',
+      other: '{0} ي',
+    ),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ساعات',
-          zero: '{0} ساعة',
-          one: 'ساعة',
-          two: 'ساعتان',
-          few: '{0} ساعات',
-          many: '{0} ساعة',
-          other: '{0} ساعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ساعة',
-          zero: '{0} س',
-          one: '{0} س',
-          two: '{0} س',
-          few: '{0} س',
-          many: '{0} س',
-          other: '{0} س',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ساعة',
-          zero: '{0} س',
-          one: '{0} س',
-          two: '{0} س',
-          few: '{0} س',
-          many: '{0} س',
-          other: '{0} س',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ساعات',
+      zero: '{0} ساعة',
+      one: 'ساعة',
+      two: 'ساعتان',
+      few: '{0} ساعات',
+      many: '{0} ساعة',
+      other: '{0} ساعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ساعة',
+      zero: '{0} س',
+      one: '{0} س',
+      two: '{0} س',
+      few: '{0} س',
+      many: '{0} س',
+      other: '{0} س',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ساعة',
+      zero: '{0} س',
+      one: '{0} س',
+      two: '{0} س',
+      few: '{0} س',
+      many: '{0} س',
+      other: '{0} س',
+    ),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'دقيقة',
-          zero: '{0} دقيقة',
-          one: 'دقيقة',
-          two: 'دقيقتان',
-          few: '{0} دقائق',
-          many: '{0} دقيقة',
-          other: '{0} دقيقة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'د',
-          zero: '{0} د',
-          one: '{0} د',
-          two: '{0} د',
-          few: '{0} د',
-          many: '{0} د',
-          other: '{0} د',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'د',
-          zero: '{0} د',
-          one: '{0} د',
-          two: '{0} د',
-          few: '{0} د',
-          many: '{0} د',
-          other: '{0} د',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'دقيقة',
+      zero: '{0} دقيقة',
+      one: 'دقيقة',
+      two: 'دقيقتان',
+      few: '{0} دقائق',
+      many: '{0} دقيقة',
+      other: '{0} دقيقة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'د',
+      zero: '{0} د',
+      one: '{0} د',
+      two: '{0} د',
+      few: '{0} د',
+      many: '{0} د',
+      other: '{0} د',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'د',
+      zero: '{0} د',
+      one: '{0} د',
+      two: '{0} د',
+      few: '{0} د',
+      many: '{0} د',
+      other: '{0} د',
+    ),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ثانية',
-          zero: '{0} ثانية',
-          one: 'ثانية',
-          two: 'ثانيتان',
-          few: '{0} ثوان',
-          many: '{0} ثانية',
-          other: '{0} ثانية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ثانية',
-          zero: '{0} ث',
-          one: '{0} ث',
-          two: '{0} ث',
-          few: '{0} ث',
-          many: '{0} ث',
-          other: '{0} ث',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ث',
-          zero: '{0} ث',
-          one: '{0} ث',
-          two: '{0} ث',
-          few: '{0} ث',
-          many: '{0} ث',
-          other: '{0} ث',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ثانية',
+      zero: '{0} ثانية',
+      one: 'ثانية',
+      two: 'ثانيتان',
+      few: '{0} ثوان',
+      many: '{0} ثانية',
+      other: '{0} ثانية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ثانية',
+      zero: '{0} ث',
+      one: '{0} ث',
+      two: '{0} ث',
+      few: '{0} ث',
+      many: '{0} ث',
+      other: '{0} ث',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ث',
+      zero: '{0} ث',
+      one: '{0} ث',
+      two: '{0} ث',
+      few: '{0} ث',
+      many: '{0} ث',
+      other: '{0} ث',
+    ),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملي ثانية',
-          zero: '{0} ملي ثانية',
-          one: '{0} ملي ثانية',
-          two: '{0} ملي ثانية',
-          few: '{0} ملي ثانية',
-          many: '{0} ملي ثانية',
-          other: '{0} ملي ثانية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملي ثانية',
-          zero: '{0} ملي ث',
-          one: '{0} ملي ث',
-          two: '{0} ملي ث',
-          few: '{0} ملي ث',
-          many: '{0} ملي ث',
-          other: '{0} ملي ث',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملي ث.',
-          zero: '{0} ملي ث',
-          one: '{0} ملي ث',
-          two: '{0} ملي ث',
-          few: '{0} ملي ث',
-          many: '{0} ملي ث',
-          other: '{0} ملي ث',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملي ثانية',
+      zero: '{0} ملي ثانية',
+      one: '{0} ملي ثانية',
+      two: '{0} ملي ثانية',
+      few: '{0} ملي ثانية',
+      many: '{0} ملي ثانية',
+      other: '{0} ملي ثانية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملي ثانية',
+      zero: '{0} ملي ث',
+      one: '{0} ملي ث',
+      two: '{0} ملي ث',
+      few: '{0} ملي ث',
+      many: '{0} ملي ث',
+      other: '{0} ملي ث',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملي ث.',
+      zero: '{0} ملي ث',
+      one: '{0} ملي ث',
+      two: '{0} ملي ث',
+      few: '{0} ملي ث',
+      many: '{0} ملي ث',
+      other: '{0} ملي ث',
+    ),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميكروثانية',
-          zero: '{0} ميكروثانية',
-          one: '{0} ميكروثانية',
-          two: '{0} ميكروثانية',
-          few: '{0} ميكروثانية',
-          many: '{0} ميكروثانية',
-          other: '{0} ميكروثانية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م.ث.',
-          zero: '{0} م.ث.',
-          one: '{0} م.ث.',
-          two: '{0} م.ث.',
-          few: '{0} م.ث.',
-          many: '{0} م.ث.',
-          other: '{0} م.ث.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م.ث.',
-          zero: '{0} م.ث.',
-          one: '{0} م.ث.',
-          two: '{0} م.ث.',
-          few: '{0} م.ث.',
-          many: '{0} م.ث.',
-          other: '{0} م.ث.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميكروثانية',
+      zero: '{0} ميكروثانية',
+      one: '{0} ميكروثانية',
+      two: '{0} ميكروثانية',
+      few: '{0} ميكروثانية',
+      many: '{0} ميكروثانية',
+      other: '{0} ميكروثانية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م.ث.',
+      zero: '{0} م.ث.',
+      one: '{0} م.ث.',
+      two: '{0} م.ث.',
+      few: '{0} م.ث.',
+      many: '{0} م.ث.',
+      other: '{0} م.ث.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م.ث.',
+      zero: '{0} م.ث.',
+      one: '{0} م.ث.',
+      two: '{0} م.ث.',
+      few: '{0} م.ث.',
+      many: '{0} م.ث.',
+      other: '{0} م.ث.',
+    ),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نانو ثانية',
-          zero: '{0} نانو ثانية',
-          one: '{0} نانو ثانية',
-          two: '{0} نانو ثانية',
-          few: '{0} نانو ثانية',
-          many: '{0} نانو ثانية',
-          other: '{0} نانو ثانية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ن.ث.',
-          zero: '{0} ن.ث.',
-          one: '{0} ن.ث.',
-          two: '{0} ن.ث.',
-          few: '{0} ن.ث.',
-          many: '{0} ن.ث.',
-          other: '{0} ن.ث.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ن.ث.',
-          zero: '{0} ن.ث.',
-          one: '{0} ن.ث.',
-          two: '{0} ن.ث.',
-          few: '{0} ن.ث.',
-          many: '{0} ن.ث.',
-          other: '{0} ن.ث.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نانو ثانية',
+      zero: '{0} نانو ثانية',
+      one: '{0} نانو ثانية',
+      two: '{0} نانو ثانية',
+      few: '{0} نانو ثانية',
+      many: '{0} نانو ثانية',
+      other: '{0} نانو ثانية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ن.ث.',
+      zero: '{0} ن.ث.',
+      one: '{0} ن.ث.',
+      two: '{0} ن.ث.',
+      few: '{0} ن.ث.',
+      many: '{0} ن.ث.',
+      other: '{0} ن.ث.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ن.ث.',
+      zero: '{0} ن.ث.',
+      one: '{0} ن.ث.',
+      two: '{0} ن.ث.',
+      few: '{0} ن.ث.',
+      many: '{0} ن.ث.',
+      other: '{0} ن.ث.',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أمبير',
-          zero: '{0} أمبير',
-          one: '{0} أمبير',
-          two: '{0} أمبير',
-          few: '{0} أمبير',
-          many: '{0} أمبير',
-          other: '{0} أمبير',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أمبير',
-          zero: '{0} أمبير',
-          one: '{0} أمبير',
-          two: '{0} أمبير',
-          few: '{0} أمبير',
-          many: '{0} أمبير',
-          other: '{0} أمبير',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'أمبير',
-          zero: '{0} أمبير',
-          one: '{0} أمبير',
-          two: '{0} أمبير',
-          few: '{0} أمبير',
-          many: '{0} أمبير',
-          other: '{0} أمبير',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أمبير',
+      zero: '{0} أمبير',
+      one: '{0} أمبير',
+      two: '{0} أمبير',
+      few: '{0} أمبير',
+      many: '{0} أمبير',
+      other: '{0} أمبير',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أمبير',
+      zero: '{0} أمبير',
+      one: '{0} أمبير',
+      two: '{0} أمبير',
+      few: '{0} أمبير',
+      many: '{0} أمبير',
+      other: '{0} أمبير',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'أمبير',
+      zero: '{0} أمبير',
+      one: '{0} أمبير',
+      two: '{0} أمبير',
+      few: '{0} أمبير',
+      many: '{0} أمبير',
+      other: '{0} أمبير',
+    ),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملي أمبير',
-          zero: '{0} ملي أمبير',
-          one: '{0} ملي أمبير',
-          two: '{0} ملي أمبير',
-          few: '{0} ملي أمبير',
-          many: '{0} ملي أمبير',
-          other: '{0} ملي أمبير',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م أمبير',
-          zero: '{0} م أمبير',
-          one: '{0} م أمبير',
-          two: '{0} م أمبير',
-          few: '{0} م أمبير',
-          many: '{0} م أمبير',
-          other: '{0} م أمبير',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م أمبير',
-          zero: '{0} م أمبير',
-          one: '{0} م أمبير',
-          two: '{0} م أمبير',
-          few: '{0} م أمبير',
-          many: '{0} م أمبير',
-          other: '{0} م أمبير',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملي أمبير',
+      zero: '{0} ملي أمبير',
+      one: '{0} ملي أمبير',
+      two: '{0} ملي أمبير',
+      few: '{0} ملي أمبير',
+      many: '{0} ملي أمبير',
+      other: '{0} ملي أمبير',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م أمبير',
+      zero: '{0} م أمبير',
+      one: '{0} م أمبير',
+      two: '{0} م أمبير',
+      few: '{0} م أمبير',
+      many: '{0} م أمبير',
+      other: '{0} م أمبير',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م أمبير',
+      zero: '{0} م أمبير',
+      one: '{0} م أمبير',
+      two: '{0} م أمبير',
+      few: '{0} م أمبير',
+      many: '{0} م أمبير',
+      other: '{0} م أمبير',
+    ),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أوم',
-          zero: '{0} أوم',
-          one: '{0} أوم',
-          two: '{0} أوم',
-          few: '{0} أوم',
-          many: '{0} أوم',
-          other: '{0} أوم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أوم',
-          zero: '{0} أوم',
-          one: '{0} أوم',
-          two: '{0} أوم',
-          few: '{0} أوم',
-          many: '{0} أوم',
-          other: '{0} أوم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'أوم',
-          zero: '{0} أوم',
-          one: '{0} أوم',
-          two: '{0} أوم',
-          few: '{0} أوم',
-          many: '{0} أوم',
-          other: '{0} أوم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أوم',
+      zero: '{0} أوم',
+      one: '{0} أوم',
+      two: '{0} أوم',
+      few: '{0} أوم',
+      many: '{0} أوم',
+      other: '{0} أوم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أوم',
+      zero: '{0} أوم',
+      one: '{0} أوم',
+      two: '{0} أوم',
+      few: '{0} أوم',
+      many: '{0} أوم',
+      other: '{0} أوم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'أوم',
+      zero: '{0} أوم',
+      one: '{0} أوم',
+      two: '{0} أوم',
+      few: '{0} أوم',
+      many: '{0} أوم',
+      other: '{0} أوم',
+    ),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'فولت',
-          zero: '{0} فولت',
-          one: '{0} فولت',
-          two: '{0} فولت',
-          few: '{0} فولت',
-          many: '{0} فولت',
-          other: '{0} فولت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'فولت',
-          zero: '{0} فولت',
-          one: '{0} فولت',
-          two: '{0} فولت',
-          few: '{0} فولت',
-          many: '{0} فولت',
-          other: '{0} فولت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'فولت',
-          zero: '{0} فولت',
-          one: '{0} فولت',
-          two: '{0} فولت',
-          few: '{0} فولت',
-          many: '{0} فولت',
-          other: '{0} فولت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'فولت',
+      zero: '{0} فولت',
+      one: '{0} فولت',
+      two: '{0} فولت',
+      few: '{0} فولت',
+      many: '{0} فولت',
+      other: '{0} فولت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'فولت',
+      zero: '{0} فولت',
+      one: '{0} فولت',
+      two: '{0} فولت',
+      few: '{0} فولت',
+      many: '{0} فولت',
+      other: '{0} فولت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'فولت',
+      zero: '{0} فولت',
+      one: '{0} فولت',
+      two: '{0} فولت',
+      few: '{0} فولت',
+      many: '{0} فولت',
+      other: '{0} فولت',
+    ),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلو سعرة',
-          zero: '{0} كيلو سعرة',
-          one: '{0} كيلو سعرة',
-          two: '{0} كيلو سعرة',
-          few: '{0} كيلو سعرة',
-          many: '{0} كيلو سعرة',
-          other: '{0} كيلو سعرة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ك سعرة',
-          zero: '{0} ك سعرة',
-          one: '{0} ك سعرة',
-          two: '{0} ك سعرة',
-          few: '{0} ك سعرة',
-          many: '{0} ك سعرة',
-          other: '{0} ك سعرة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك سع',
-          zero: '{0} ك سع',
-          one: '{0} ك سع',
-          two: '{0} ك سع',
-          few: '{0} ك سع',
-          many: '{0} ك سع',
-          other: '{0} ك سع',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلو سعرة',
+      zero: '{0} كيلو سعرة',
+      one: '{0} كيلو سعرة',
+      two: '{0} كيلو سعرة',
+      few: '{0} كيلو سعرة',
+      many: '{0} كيلو سعرة',
+      other: '{0} كيلو سعرة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ك سعرة',
+      zero: '{0} ك سعرة',
+      one: '{0} ك سعرة',
+      two: '{0} ك سعرة',
+      few: '{0} ك سعرة',
+      many: '{0} ك سعرة',
+      other: '{0} ك سعرة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك سع',
+      zero: '{0} ك سع',
+      one: '{0} ك سع',
+      two: '{0} ك سع',
+      few: '{0} ك سع',
+      many: '{0} ك سع',
+      other: '{0} ك سع',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سعرة',
-          zero: '{0} سعرة',
-          one: '{0} سعرة',
-          two: '{0} سعرة',
-          few: '{0} سعرة',
-          many: '{0} سعرة',
-          other: '{0} سعرة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سع',
-          zero: '{0} سع',
-          one: '{0} سع',
-          two: '{0} سع',
-          few: '{0} سع',
-          many: '{0} سع',
-          other: '{0} سع',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سع',
-          zero: '{0} سع',
-          one: '{0} سع',
-          two: '{0} سع',
-          few: '{0} سع',
-          many: '{0} سع',
-          other: '{0} سع',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سعرة',
+      zero: '{0} سعرة',
+      one: '{0} سعرة',
+      two: '{0} سعرة',
+      few: '{0} سعرة',
+      many: '{0} سعرة',
+      other: '{0} سعرة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سع',
+      zero: '{0} سع',
+      one: '{0} سع',
+      two: '{0} سع',
+      few: '{0} سع',
+      many: '{0} سع',
+      other: '{0} سع',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سع',
+      zero: '{0} سع',
+      one: '{0} سع',
+      two: '{0} سع',
+      few: '{0} سع',
+      many: '{0} سع',
+      other: '{0} سع',
+    ),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سعرة',
-          zero: '{0} سعرة',
-          one: '{0} سعرة',
-          two: '{0} سعرة',
-          few: '{0} سعرة',
-          many: '{0} سعرة',
-          other: '{0} سعرة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سع',
-          zero: '{0} سع',
-          one: '{0} سع',
-          two: '{0} سع',
-          few: '{0} سع',
-          many: '{0} سع',
-          other: '{0} سع',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سع',
-          zero: '{0} سع',
-          one: '{0} سع',
-          two: '{0} سع',
-          few: '{0} سع',
-          many: '{0} سع',
-          other: '{0} سع',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سعرة',
+      zero: '{0} سعرة',
+      one: '{0} سعرة',
+      two: '{0} سعرة',
+      few: '{0} سعرة',
+      many: '{0} سعرة',
+      other: '{0} سعرة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سع',
+      zero: '{0} سع',
+      one: '{0} سع',
+      two: '{0} سع',
+      few: '{0} سع',
+      many: '{0} سع',
+      other: '{0} سع',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سع',
+      zero: '{0} سع',
+      one: '{0} سع',
+      two: '{0} سع',
+      few: '{0} سع',
+      many: '{0} سع',
+      other: '{0} سع',
+    ),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلو جول',
-          zero: '{0} كيلو جول',
-          one: '{0} كيلو جول',
-          two: '{0} كيلو جول',
-          few: '{0} كيلو جول',
-          many: '{0} كيلو جول',
-          other: '{0} كيلو جول',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ك جول',
-          zero: '{0} ك جول',
-          one: '{0} ك جول',
-          two: '{0} ك جول',
-          few: '{0} ك جول',
-          many: '{0} ك جول',
-          other: '{0} ك جول',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك جول',
-          zero: '{0} ك جول',
-          one: '{0} ك جول',
-          two: '{0} ك جول',
-          few: '{0} ك جول',
-          many: '{0} ك جول',
-          other: '{0} ك جول',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلو جول',
+      zero: '{0} كيلو جول',
+      one: '{0} كيلو جول',
+      two: '{0} كيلو جول',
+      few: '{0} كيلو جول',
+      many: '{0} كيلو جول',
+      other: '{0} كيلو جول',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ك جول',
+      zero: '{0} ك جول',
+      one: '{0} ك جول',
+      two: '{0} ك جول',
+      few: '{0} ك جول',
+      many: '{0} ك جول',
+      other: '{0} ك جول',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك جول',
+      zero: '{0} ك جول',
+      one: '{0} ك جول',
+      two: '{0} ك جول',
+      few: '{0} ك جول',
+      many: '{0} ك جول',
+      other: '{0} ك جول',
+    ),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'جول',
-          zero: '{0} جول',
-          one: '{0} جول',
-          two: '{0} جول',
-          few: '{0} جول',
-          many: '{0} جول',
-          other: '{0} جول',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'جول',
-          zero: '{0} جول',
-          one: '{0} جول',
-          two: '{0} جول',
-          few: '{0} جول',
-          many: '{0} جول',
-          other: '{0} جول',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'جول',
-          zero: '{0} جول',
-          one: '{0} جول',
-          two: '{0} جول',
-          few: '{0} جول',
-          many: '{0} جول',
-          other: '{0} جول',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'جول',
+      zero: '{0} جول',
+      one: '{0} جول',
+      two: '{0} جول',
+      few: '{0} جول',
+      many: '{0} جول',
+      other: '{0} جول',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'جول',
+      zero: '{0} جول',
+      one: '{0} جول',
+      two: '{0} جول',
+      few: '{0} جول',
+      many: '{0} جول',
+      other: '{0} جول',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'جول',
+      zero: '{0} جول',
+      one: '{0} جول',
+      two: '{0} جول',
+      few: '{0} جول',
+      many: '{0} جول',
+      other: '{0} جول',
+    ),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلو واط/ساعة',
-          zero: '{0} كيلو واط/ساعة',
-          one: '{0} كيلو واط/ساعة',
-          two: '{0} كيلو واط/ساعة',
-          few: '{0} كيلو واط/ساعة',
-          many: '{0} كيلو واط/ساعة',
-          other: '{0} كيلو واط/ساعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ك.و.س',
-          zero: '{0} ك.و.س',
-          one: '{0} ك.و.س',
-          two: '{0} ك.و.س',
-          few: '{0} ك.و.س',
-          many: '{0} ك.و.س',
-          other: '{0} ك.و.س',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك.و.س',
-          zero: '{0} ك.و.س',
-          one: '{0} ك.و.س',
-          two: '{0} ك.و.س',
-          few: '{0} ك.و.س',
-          many: '{0} ك.و.س',
-          other: '{0} ك.و.س',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلو واط/ساعة',
+      zero: '{0} كيلو واط/ساعة',
+      one: '{0} كيلو واط/ساعة',
+      two: '{0} كيلو واط/ساعة',
+      few: '{0} كيلو واط/ساعة',
+      many: '{0} كيلو واط/ساعة',
+      other: '{0} كيلو واط/ساعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ك.و.س',
+      zero: '{0} ك.و.س',
+      one: '{0} ك.و.س',
+      two: '{0} ك.و.س',
+      few: '{0} ك.و.س',
+      many: '{0} ك.و.س',
+      other: '{0} ك.و.س',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك.و.س',
+      zero: '{0} ك.و.س',
+      one: '{0} ك.و.س',
+      two: '{0} ك.و.س',
+      few: '{0} ك.و.س',
+      many: '{0} ك.و.س',
+      other: '{0} ك.و.س',
+    ),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'إلكترون فولت',
-          zero: '{0} إلكترون فولت',
-          one: '{0} إلكترون فولت',
-          two: '{0} إلكترون فولت',
-          few: '{0} إلكترون فولت',
-          many: '{0} إلكترون فولت',
-          other: '{0} إلكترون فولت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'إلكترون فولت',
-          zero: '{0} إلكترون فولت',
-          one: '{0} إلكترون فولت',
-          two: '{0} إلكترون فولت',
-          few: '{0} إلكترون فولت',
-          many: '{0} إلكترون فولت',
-          other: '{0} إلكترون فولت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'إلكترون فولت',
-          zero: '{0} إلكترون فولت',
-          one: '{0} إلكترون فولت',
-          two: '{0} إلكترون فولت',
-          few: '{0} إلكترون فولت',
-          many: '{0} إلكترون فولت',
-          other: '{0} إلكترون فولت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'إلكترون فولت',
+      zero: '{0} إلكترون فولت',
+      one: '{0} إلكترون فولت',
+      two: '{0} إلكترون فولت',
+      few: '{0} إلكترون فولت',
+      many: '{0} إلكترون فولت',
+      other: '{0} إلكترون فولت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'إلكترون فولت',
+      zero: '{0} إلكترون فولت',
+      one: '{0} إلكترون فولت',
+      two: '{0} إلكترون فولت',
+      few: '{0} إلكترون فولت',
+      many: '{0} إلكترون فولت',
+      other: '{0} إلكترون فولت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'إلكترون فولت',
+      zero: '{0} إلكترون فولت',
+      one: '{0} إلكترون فولت',
+      two: '{0} إلكترون فولت',
+      few: '{0} إلكترون فولت',
+      many: '{0} إلكترون فولت',
+      other: '{0} إلكترون فولت',
+    ),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'وحدة حرارية بريطانية',
-          zero: '{0} وحدة حرارية بريطانية',
-          one: '{0} وحدة حرارية بريطانية',
-          two: 'وحدتان حراريتان بريطانيتان',
-          few: '{0} وحدات حرارية بريطانية',
-          many: '{0} وحدة حرارية بريطانية',
-          other: '{0} وحدة حرارية بريطانية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'وحدة حرارية بريطانية',
-          zero: '{0} وحدة حرارية بريطانية',
-          one: '{0} وحدة حرارية بريطانية',
-          two: '{0} وحدة حرارية بريطانية',
-          few: '{0} وحدات حرارية بريطانية',
-          many: '{0} وحدة حرارية بريطانية',
-          other: '{0} وحدة حرارية بريطانية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'وحدة حرارية بريطانية',
-          zero: '{0} وحدة حرارية بريطانية',
-          one: '{0} وحدة حرارية بريطانية',
-          two: '{0} وحدة حرارية بريطانية',
-          few: '{0} وحدات حرارية بريطانية',
-          many: '{0} وحدة حرارية بريطانية',
-          other: '{0} وحدة حرارية بريطانية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'وحدة حرارية بريطانية',
+      zero: '{0} وحدة حرارية بريطانية',
+      one: '{0} وحدة حرارية بريطانية',
+      two: 'وحدتان حراريتان بريطانيتان',
+      few: '{0} وحدات حرارية بريطانية',
+      many: '{0} وحدة حرارية بريطانية',
+      other: '{0} وحدة حرارية بريطانية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'وحدة حرارية بريطانية',
+      zero: '{0} وحدة حرارية بريطانية',
+      one: '{0} وحدة حرارية بريطانية',
+      two: '{0} وحدة حرارية بريطانية',
+      few: '{0} وحدات حرارية بريطانية',
+      many: '{0} وحدة حرارية بريطانية',
+      other: '{0} وحدة حرارية بريطانية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'وحدة حرارية بريطانية',
+      zero: '{0} وحدة حرارية بريطانية',
+      one: '{0} وحدة حرارية بريطانية',
+      two: '{0} وحدة حرارية بريطانية',
+      few: '{0} وحدات حرارية بريطانية',
+      many: '{0} وحدة حرارية بريطانية',
+      other: '{0} وحدة حرارية بريطانية',
+    ),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'وحدة حرارية أمريكية',
-          zero: '{0} وحدة حرارية أمريكية',
-          one: '{0} وحدة حرارية أمريكية',
-          two: 'وحدتان حراريتان أمريكيتان',
-          few: '{0} وحدات حرارية أمريكية',
-          many: '{0} وحدة حرارية أمريكية',
-          other: '{0} وحدة حرارية أمريكية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'وحدة حرارية أمريكية',
-          zero: '{0} وحدة حرارية أمريكية',
-          one: '{0} وحدة حرارية أمريكية',
-          two: '{0} وحدة حرارية أمريكية',
-          few: '{0} وحدات حرارية أمريكية',
-          many: '{0} وحدة حرارية أمريكية',
-          other: '{0} وحدة حرارية أمريكية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'وحدة حرارية أمريكية',
-          zero: '{0} وحدة حرارية أمريكية',
-          one: '{0} وحدة حرارية أمريكية',
-          two: '{0} وحدة حرارية أمريكية',
-          few: '{0} وحدات حرارية أمريكية',
-          many: '{0} وحدة حرارية أمريكية',
-          other: '{0} وحدة حرارية أمريكية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'وحدة حرارية أمريكية',
+      zero: '{0} وحدة حرارية أمريكية',
+      one: '{0} وحدة حرارية أمريكية',
+      two: 'وحدتان حراريتان أمريكيتان',
+      few: '{0} وحدات حرارية أمريكية',
+      many: '{0} وحدة حرارية أمريكية',
+      other: '{0} وحدة حرارية أمريكية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'وحدة حرارية أمريكية',
+      zero: '{0} وحدة حرارية أمريكية',
+      one: '{0} وحدة حرارية أمريكية',
+      two: '{0} وحدة حرارية أمريكية',
+      few: '{0} وحدات حرارية أمريكية',
+      many: '{0} وحدة حرارية أمريكية',
+      other: '{0} وحدة حرارية أمريكية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'وحدة حرارية أمريكية',
+      zero: '{0} وحدة حرارية أمريكية',
+      one: '{0} وحدة حرارية أمريكية',
+      two: '{0} وحدة حرارية أمريكية',
+      few: '{0} وحدات حرارية أمريكية',
+      many: '{0} وحدة حرارية أمريكية',
+      other: '{0} وحدة حرارية أمريكية',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'باوند قوة',
-          zero: '{0} باوند قوة',
-          one: '{0} باوند قوة',
-          two: '{0} باوند قوة',
-          few: '{0} باوند قوة',
-          many: '{0} باوند قوة',
-          other: '{0} باوند قوة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'باوند قوة',
-          zero: '{0} باوند قوة',
-          one: '{0} باوند قوة',
-          two: '{0} باوند قوة',
-          few: '{0} باوند قوة',
-          many: '{0} باوند قوة',
-          other: '{0} باوند قوة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'باوند قوة',
-          zero: '{0} باوند قوة',
-          one: '{0} باوند قوة',
-          two: '{0} باوند قوة',
-          few: '{0} باوند قوة',
-          many: '{0} باوند قوة',
-          other: '{0} باوند قوة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'باوند قوة',
+      zero: '{0} باوند قوة',
+      one: '{0} باوند قوة',
+      two: '{0} باوند قوة',
+      few: '{0} باوند قوة',
+      many: '{0} باوند قوة',
+      other: '{0} باوند قوة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'باوند قوة',
+      zero: '{0} باوند قوة',
+      one: '{0} باوند قوة',
+      two: '{0} باوند قوة',
+      few: '{0} باوند قوة',
+      many: '{0} باوند قوة',
+      other: '{0} باوند قوة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'باوند قوة',
+      zero: '{0} باوند قوة',
+      one: '{0} باوند قوة',
+      two: '{0} باوند قوة',
+      few: '{0} باوند قوة',
+      many: '{0} باوند قوة',
+      other: '{0} باوند قوة',
+    ),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نيوتن',
-          zero: '{0} نيوتن',
-          one: '{0} نيوتن',
-          two: '{0} نيوتن',
-          few: '{0} نيوتن',
-          many: '{0} نيوتن',
-          other: '{0} نيوتن',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نيوتن',
-          zero: '{0} نيوتن',
-          one: '{0} نيوتن',
-          two: '{0} نيوتن',
-          few: '{0} نيوتن',
-          many: '{0} نيوتن',
-          other: '{0} نيوتن',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'نيوتن',
-          zero: '{0} نيوتن',
-          one: '{0} نيوتن',
-          two: '{0} نيوتن',
-          few: '{0} نيوتن',
-          many: '{0} نيوتن',
-          other: '{0} نيوتن',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نيوتن',
+      zero: '{0} نيوتن',
+      one: '{0} نيوتن',
+      two: '{0} نيوتن',
+      few: '{0} نيوتن',
+      many: '{0} نيوتن',
+      other: '{0} نيوتن',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نيوتن',
+      zero: '{0} نيوتن',
+      one: '{0} نيوتن',
+      two: '{0} نيوتن',
+      few: '{0} نيوتن',
+      many: '{0} نيوتن',
+      other: '{0} نيوتن',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'نيوتن',
+      zero: '{0} نيوتن',
+      one: '{0} نيوتن',
+      two: '{0} نيوتن',
+      few: '{0} نيوتن',
+      many: '{0} نيوتن',
+      other: '{0} نيوتن',
+    ),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلوواط ساعة لكل 100 كيلومتر',
-          zero: '{0} كيلوواط ساعة لكل 100 كيلومتر',
-          one: '{0} كيلوواط ساعة لكل 100 كيلومتر',
-          two: '{0} كيلوواط ساعة لكل 100 كيلومتر',
-          few: '{0} كيلوواط ساعة لكل 100 كيلومتر',
-          many: '{0} كيلوواط ساعة لكل 100 كيلومتر',
-          other: '{0} كيلوواط ساعة لكل 100 كيلومتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ك.و.س لكل 100 كم',
-          zero: '{0} ك.و.س لكل 100 كم',
-          one: '{0} ك.و.س لكل 100 كم',
-          two: '{0} ك.و.س لكل 100 كم',
-          few: '{0} ك.و.س لكل 100 كم',
-          many: '{0} ك.و.س لكل 100 كم',
-          other: '{0} ك.و.س لكل 100 كم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك.و.س/100 كم',
-          zero: '{0} ك.و.س/100 كم',
-          one: '{0} ك.و.س/100 كم',
-          two: '{0} ك.و.س/100 كم',
-          few: '{0} ك.و.س/100 كم',
-          many: '{0} ك.و.س/100 كم',
-          other: '{0} ك.و.س/100 كم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلوواط ساعة لكل 100 كيلومتر',
+      zero: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+      one: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+      two: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+      few: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+      many: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+      other: '{0} كيلوواط ساعة لكل 100 كيلومتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ك.و.س لكل 100 كم',
+      zero: '{0} ك.و.س لكل 100 كم',
+      one: '{0} ك.و.س لكل 100 كم',
+      two: '{0} ك.و.س لكل 100 كم',
+      few: '{0} ك.و.س لكل 100 كم',
+      many: '{0} ك.و.س لكل 100 كم',
+      other: '{0} ك.و.س لكل 100 كم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك.و.س/100 كم',
+      zero: '{0} ك.و.س/100 كم',
+      one: '{0} ك.و.س/100 كم',
+      two: '{0} ك.و.س/100 كم',
+      few: '{0} ك.و.س/100 كم',
+      many: '{0} ك.و.س/100 كم',
+      other: '{0} ك.و.س/100 كم',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'غيغا هرتز',
-          zero: '{0} غيغا هرتز',
-          one: '{0} غيغا هرتز',
-          two: '{0} غيغا هرتز',
-          few: '{0} غيغا هرتز',
-          many: '{0} غيغا هرتز',
-          other: '{0} غيغا هرتز',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'غ هرتز',
-          zero: '{0} غ هرتز',
-          one: '{0} غ هرتز',
-          two: '{0} غ هرتز',
-          few: '{0} غ هرتز',
-          many: '{0} غ هرتز',
-          other: '{0} غ هرتز',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'غ هرتز',
-          zero: '{0} غ هرتز',
-          one: '{0} غ هرتز',
-          two: '{0} غ هرتز',
-          few: '{0} غ هرتز',
-          many: '{0} غ هرتز',
-          other: '{0} غ هرتز',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'غيغا هرتز',
+      zero: '{0} غيغا هرتز',
+      one: '{0} غيغا هرتز',
+      two: '{0} غيغا هرتز',
+      few: '{0} غيغا هرتز',
+      many: '{0} غيغا هرتز',
+      other: '{0} غيغا هرتز',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'غ هرتز',
+      zero: '{0} غ هرتز',
+      one: '{0} غ هرتز',
+      two: '{0} غ هرتز',
+      few: '{0} غ هرتز',
+      many: '{0} غ هرتز',
+      other: '{0} غ هرتز',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'غ هرتز',
+      zero: '{0} غ هرتز',
+      one: '{0} غ هرتز',
+      two: '{0} غ هرتز',
+      few: '{0} غ هرتز',
+      many: '{0} غ هرتز',
+      other: '{0} غ هرتز',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميغا هرتز',
-          zero: '{0} ميغا هرتز',
-          one: '{0} ميغا هرتز',
-          two: '{0} ميغا هرتز',
-          few: '{0} ميغا هرتز',
-          many: '{0} ميغا هرتز',
-          other: '{0} ميغا هرتز',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م هرتز',
-          zero: '{0} م هرتز',
-          one: '{0} م هرتز',
-          two: '{0} م هرتز',
-          few: '{0} م هرتز',
-          many: '{0} م هرتز',
-          other: '{0} م هرتز',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م هرتز',
-          zero: '{0} م هرتز',
-          one: '{0} م هرتز',
-          two: '{0} م هرتز',
-          few: '{0} م هرتز',
-          many: '{0} م هرتز',
-          other: '{0} م هرتز',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميغا هرتز',
+      zero: '{0} ميغا هرتز',
+      one: '{0} ميغا هرتز',
+      two: '{0} ميغا هرتز',
+      few: '{0} ميغا هرتز',
+      many: '{0} ميغا هرتز',
+      other: '{0} ميغا هرتز',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م هرتز',
+      zero: '{0} م هرتز',
+      one: '{0} م هرتز',
+      two: '{0} م هرتز',
+      few: '{0} م هرتز',
+      many: '{0} م هرتز',
+      other: '{0} م هرتز',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م هرتز',
+      zero: '{0} م هرتز',
+      one: '{0} م هرتز',
+      two: '{0} م هرتز',
+      few: '{0} م هرتز',
+      many: '{0} م هرتز',
+      other: '{0} م هرتز',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلو هرتز',
-          zero: '{0} كيلو هرتز',
-          one: '{0} كيلو هرتز',
-          two: '{0} كيلو هرتز',
-          few: '{0} كيلو هرتز',
-          many: '{0} كيلو هرتز',
-          other: '{0} كيلو هرتز',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ك هرتز',
-          zero: '{0} ك هرتز',
-          one: '{0} ك هرتز',
-          two: '{0} ك هرتز',
-          few: '{0} ك هرتز',
-          many: '{0} ك هرتز',
-          other: '{0} ك هرتز',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك هرتز',
-          zero: '{0} ك هرتز',
-          one: '{0} ك هرتز',
-          two: '{0} ك هرتز',
-          few: '{0} ك هرتز',
-          many: '{0} ك هرتز',
-          other: '{0} ك هرتز',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلو هرتز',
+      zero: '{0} كيلو هرتز',
+      one: '{0} كيلو هرتز',
+      two: '{0} كيلو هرتز',
+      few: '{0} كيلو هرتز',
+      many: '{0} كيلو هرتز',
+      other: '{0} كيلو هرتز',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ك هرتز',
+      zero: '{0} ك هرتز',
+      one: '{0} ك هرتز',
+      two: '{0} ك هرتز',
+      few: '{0} ك هرتز',
+      many: '{0} ك هرتز',
+      other: '{0} ك هرتز',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك هرتز',
+      zero: '{0} ك هرتز',
+      one: '{0} ك هرتز',
+      two: '{0} ك هرتز',
+      few: '{0} ك هرتز',
+      many: '{0} ك هرتز',
+      other: '{0} ك هرتز',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'هرتز',
-          zero: '{0} هرتز',
-          one: '{0} هرتز',
-          two: '{0} هرتز',
-          few: '{0} هرتز',
-          many: '{0} هرتز',
-          other: '{0} هرتز',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'هرتز',
-          zero: '{0} هرتز',
-          one: '{0} هرتز',
-          two: '{0} هرتز',
-          few: '{0} هرتز',
-          many: '{0} هرتز',
-          other: '{0} هرتز',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'هرتز',
-          zero: '{0} هرتز',
-          one: '{0} هرتز',
-          two: '{0} هرتز',
-          few: '{0} هرتز',
-          many: '{0} هرتز',
-          other: '{0} هرتز',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'هرتز',
+      zero: '{0} هرتز',
+      one: '{0} هرتز',
+      two: '{0} هرتز',
+      few: '{0} هرتز',
+      many: '{0} هرتز',
+      other: '{0} هرتز',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'هرتز',
+      zero: '{0} هرتز',
+      one: '{0} هرتز',
+      two: '{0} هرتز',
+      few: '{0} هرتز',
+      many: '{0} هرتز',
+      other: '{0} هرتز',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'هرتز',
+      zero: '{0} هرتز',
+      one: '{0} هرتز',
+      two: '{0} هرتز',
+      few: '{0} هرتز',
+      many: '{0} هرتز',
+      other: '{0} هرتز',
+    ),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'إم مطبعي',
-          zero: '{0} إم',
-          one: '{0} إم',
-          two: '{0} إم',
-          few: '{0} إم',
-          many: '{0} إم',
-          other: '{0} إم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'إم',
-          zero: '{0} إم',
-          one: '{0} إم',
-          two: '{0} إم',
-          few: '{0} إم',
-          many: '{0} إم',
-          other: '{0} إم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'إم',
-          zero: '{0} إم',
-          one: '{0} إم',
-          two: '{0} إم',
-          few: '{0} إم',
-          many: '{0} إم',
-          other: '{0} إم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'إم مطبعي',
+      zero: '{0} إم',
+      one: '{0} إم',
+      two: '{0} إم',
+      few: '{0} إم',
+      many: '{0} إم',
+      other: '{0} إم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'إم',
+      zero: '{0} إم',
+      one: '{0} إم',
+      two: '{0} إم',
+      few: '{0} إم',
+      many: '{0} إم',
+      other: '{0} إم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'إم',
+      zero: '{0} إم',
+      one: '{0} إم',
+      two: '{0} إم',
+      few: '{0} إم',
+      many: '{0} إم',
+      other: '{0} إم',
+    ),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بكسل',
-          zero: '{0} بكسل',
-          one: '{0} بكسل',
-          two: '{0} بكسل',
-          few: '{0} بكسل',
-          many: '{0} بكسل',
-          other: '{0} بكسل',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بكسل',
-          zero: '{0} بكسل',
-          one: '{0} بكسل',
-          two: '{0} بكسل',
-          few: '{0} بكسل',
-          many: '{0} بكسل',
-          other: '{0} بكسل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بكسل',
-          zero: '{0} بكسل',
-          one: '{0} بكسل',
-          two: '{0} بكسل',
-          few: '{0} بكسل',
-          many: '{0} بكسل',
-          other: '{0} بكسل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بكسل',
+      zero: '{0} بكسل',
+      one: '{0} بكسل',
+      two: '{0} بكسل',
+      few: '{0} بكسل',
+      many: '{0} بكسل',
+      other: '{0} بكسل',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بكسل',
+      zero: '{0} بكسل',
+      one: '{0} بكسل',
+      two: '{0} بكسل',
+      few: '{0} بكسل',
+      many: '{0} بكسل',
+      other: '{0} بكسل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بكسل',
+      zero: '{0} بكسل',
+      one: '{0} بكسل',
+      two: '{0} بكسل',
+      few: '{0} بكسل',
+      many: '{0} بكسل',
+      other: '{0} بكسل',
+    ),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميغابكسل',
-          zero: '{0} ميغابكسل',
-          one: '{0} ميغابكسل',
-          two: '{0} ميغابكسل',
-          few: '{0} ميغابكسل',
-          many: '{0} ميغابكسل',
-          other: '{0} ميغابكسل',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م.بكسل',
-          zero: '{0} م.بكسل',
-          one: '{0} م.بكسل',
-          two: '{0} م.بكسل',
-          few: '{0} م.بكسل',
-          many: '{0} م.بكسل',
-          other: '{0} م.بكسل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م.بكسل',
-          zero: '{0} م.بك',
-          one: '{0} م.بك',
-          two: '{0} م.بك',
-          few: '{0} م.بك',
-          many: '{0} م.بك',
-          other: '{0} م.بك',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميغابكسل',
+      zero: '{0} ميغابكسل',
+      one: '{0} ميغابكسل',
+      two: '{0} ميغابكسل',
+      few: '{0} ميغابكسل',
+      many: '{0} ميغابكسل',
+      other: '{0} ميغابكسل',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م.بكسل',
+      zero: '{0} م.بكسل',
+      one: '{0} م.بكسل',
+      two: '{0} م.بكسل',
+      few: '{0} م.بكسل',
+      many: '{0} م.بكسل',
+      other: '{0} م.بكسل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م.بكسل',
+      zero: '{0} م.بك',
+      one: '{0} م.بك',
+      two: '{0} م.بك',
+      few: '{0} م.بك',
+      many: '{0} م.بك',
+      other: '{0} م.بك',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بكسل لكل سنتيمتر',
-          zero: '{0} بكسل لكل سنتيمتر',
-          one: '{0} بكسل لكل سنتيمتر',
-          two: '{0} بكسل لكل سنتيمتر',
-          few: '{0} بكسل لكل سنتيمتر',
-          many: '{0} بكسل لكل سنتيمتر',
-          other: '{0} بكسل لكل سنتيمتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بكسل لكل سنتيمتر',
-          zero: '{0} بكسل/سم',
-          one: '{0} بكسل/سم',
-          two: '{0} بكسل/سم',
-          few: '{0} بكسل/سم',
-          many: '{0} بكسل/سم',
-          other: '{0} بكسل/سم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بكسل/سم',
-          zero: '{0} بك/سم',
-          one: '{0} بك/سم',
-          two: '{0} بك/سم',
-          few: '{0} بك/سم',
-          many: '{0} بك/سم',
-          other: '{0} بك/سم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بكسل لكل سنتيمتر',
+      zero: '{0} بكسل لكل سنتيمتر',
+      one: '{0} بكسل لكل سنتيمتر',
+      two: '{0} بكسل لكل سنتيمتر',
+      few: '{0} بكسل لكل سنتيمتر',
+      many: '{0} بكسل لكل سنتيمتر',
+      other: '{0} بكسل لكل سنتيمتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بكسل لكل سنتيمتر',
+      zero: '{0} بكسل/سم',
+      one: '{0} بكسل/سم',
+      two: '{0} بكسل/سم',
+      few: '{0} بكسل/سم',
+      many: '{0} بكسل/سم',
+      other: '{0} بكسل/سم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بكسل/سم',
+      zero: '{0} بك/سم',
+      one: '{0} بك/سم',
+      two: '{0} بك/سم',
+      few: '{0} بك/سم',
+      many: '{0} بك/سم',
+      other: '{0} بك/سم',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بكسل لكل بوصة',
-          zero: '{0} بكسل لكل بوصة',
-          one: '{0} بكسل لكل بوصة',
-          two: '{0} بكسل لكل بوصة',
-          few: '{0} بكسل لكل بوصة',
-          many: '{0} بكسل لكل بوصة',
-          other: '{0} بكسل لكل بوصة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بكسل لكل بوصة',
-          zero: '{0} بكسل/بوصة',
-          one: '{0} بكسل/بوصة',
-          two: '{0} بكسل/بوصة',
-          few: '{0} بكسل/بوصة',
-          many: '{0} بكسل/بوصة',
-          other: '{0} بكسل/بوصة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بكسل/بوصة',
-          zero: '{0} بك/بوصة',
-          one: '{0} بك/بوصة',
-          two: '{0} بك/بوصة',
-          few: '{0} بك/بوصة',
-          many: '{0} بك/بوصة',
-          other: '{0} بك/بوصة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بكسل لكل بوصة',
+      zero: '{0} بكسل لكل بوصة',
+      one: '{0} بكسل لكل بوصة',
+      two: '{0} بكسل لكل بوصة',
+      few: '{0} بكسل لكل بوصة',
+      many: '{0} بكسل لكل بوصة',
+      other: '{0} بكسل لكل بوصة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بكسل لكل بوصة',
+      zero: '{0} بكسل/بوصة',
+      one: '{0} بكسل/بوصة',
+      two: '{0} بكسل/بوصة',
+      few: '{0} بكسل/بوصة',
+      many: '{0} بكسل/بوصة',
+      other: '{0} بكسل/بوصة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بكسل/بوصة',
+      zero: '{0} بك/بوصة',
+      one: '{0} بك/بوصة',
+      two: '{0} بك/بوصة',
+      few: '{0} بك/بوصة',
+      many: '{0} بك/بوصة',
+      other: '{0} بك/بوصة',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نقطة لكل سنتيمتر',
-          zero: '{0} نقطة لكل سنتيمتر',
-          one: '{0} نقطة لكل سنتيمتر',
-          two: 'نقطتان لكل سنتيمتر',
-          few: '{0} نقاط لكل سنتيمتر',
-          many: '{0} نقطة لكل سنتيمتر',
-          other: '{0} نقطة لكل سنتيمتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نقطة/سم',
-          zero: '{0} نقطة/سم',
-          one: '{0} نقطة/سم',
-          two: '{0} نقطة/سم',
-          few: '{0} نقاط/سم',
-          many: '{0} نقطة/سم',
-          other: '{0} نقطة/سم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ن/سم',
-          zero: '{0} ن/سم',
-          one: '{0} ن/سم',
-          two: '{0} ن/سم',
-          few: '{0} ن/سم',
-          many: '{0} ن/سم',
-          other: '{0} ن/سم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نقطة لكل سنتيمتر',
+      zero: '{0} نقطة لكل سنتيمتر',
+      one: '{0} نقطة لكل سنتيمتر',
+      two: 'نقطتان لكل سنتيمتر',
+      few: '{0} نقاط لكل سنتيمتر',
+      many: '{0} نقطة لكل سنتيمتر',
+      other: '{0} نقطة لكل سنتيمتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نقطة/سم',
+      zero: '{0} نقطة/سم',
+      one: '{0} نقطة/سم',
+      two: '{0} نقطة/سم',
+      few: '{0} نقاط/سم',
+      many: '{0} نقطة/سم',
+      other: '{0} نقطة/سم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ن/سم',
+      zero: '{0} ن/سم',
+      one: '{0} ن/سم',
+      two: '{0} ن/سم',
+      few: '{0} ن/سم',
+      many: '{0} ن/سم',
+      other: '{0} ن/سم',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نقطة/بوصة',
-          zero: '{0} نقطة لكل بوصة',
-          one: '{0} نقطة لكل بوصة',
-          two: 'نقطتان لكل بوصة',
-          few: '{0} نقاط لكل بوصة',
-          many: '{0} نقطة لكل بوصة',
-          other: '{0} نقطة لكل بوصة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نقطة/بوصة',
-          zero: '{0} نقطة/بوصة',
-          one: '{0} نقطة/بوصة',
-          two: '{0} نقطة/بوصة',
-          few: '{0} نقاط/بوصة',
-          many: '{0} نقطة/بوصة',
-          other: '{0} نقطة/بوصة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ن/بوصة',
-          zero: '{0} ن/بوصة',
-          one: '{0} ن/بوصة',
-          two: '{0} ن/بوصة',
-          few: '{0} ن/بوصة',
-          many: '{0} ن/بوصة',
-          other: '{0} ن/بوصة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نقطة/بوصة',
+      zero: '{0} نقطة لكل بوصة',
+      one: '{0} نقطة لكل بوصة',
+      two: 'نقطتان لكل بوصة',
+      few: '{0} نقاط لكل بوصة',
+      many: '{0} نقطة لكل بوصة',
+      other: '{0} نقطة لكل بوصة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نقطة/بوصة',
+      zero: '{0} نقطة/بوصة',
+      one: '{0} نقطة/بوصة',
+      two: '{0} نقطة/بوصة',
+      few: '{0} نقاط/بوصة',
+      many: '{0} نقطة/بوصة',
+      other: '{0} نقطة/بوصة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ن/بوصة',
+      zero: '{0} ن/بوصة',
+      one: '{0} ن/بوصة',
+      two: '{0} ن/بوصة',
+      few: '{0} ن/بوصة',
+      many: '{0} ن/بوصة',
+      other: '{0} ن/بوصة',
+    ),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dots',
-          one: '{0} dot',
-          other: '{0} dots',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dots',
-          one: '{0} dot',
-          other: '{0} dots',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dot',
-          one: '{0}dot',
-          other: '{0}dot',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'dots', one: '{0} dot', other: '{0} dots'),
+    short: UnitCountPattern(_locale, 'dots', one: '{0} dot', other: '{0} dots'),
+    narrow: UnitCountPattern(_locale, 'dot', one: '{0}dot', other: '{0}dot'),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نصف قطر أرضي',
-          zero: '{0} نصف قطر أرضي',
-          one: '{0} نصف قطر أرضي',
-          two: '{0} نصف قطر أرضي',
-          few: '{0} نصف قطر أرضي',
-          many: '{0} نصف قطر أرضي',
-          other: '{0} نصف قطر أرضي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نق أرضي',
-          zero: '{0} نق أرضي',
-          one: '{0} نق أرضي',
-          two: '{0} نق أرضي',
-          few: '{0} نق أرضي',
-          many: '{0} نق أرضي',
-          other: '{0} نق أرضي',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'نق أرضي',
-          zero: '{0} نق أرضي',
-          one: '{0} نق أرضي',
-          two: '{0} نق أرضي',
-          few: '{0} نق أرضي',
-          many: '{0} نق أرضي',
-          other: '{0} نق أرضي',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نصف قطر أرضي',
+      zero: '{0} نصف قطر أرضي',
+      one: '{0} نصف قطر أرضي',
+      two: '{0} نصف قطر أرضي',
+      few: '{0} نصف قطر أرضي',
+      many: '{0} نصف قطر أرضي',
+      other: '{0} نصف قطر أرضي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نق أرضي',
+      zero: '{0} نق أرضي',
+      one: '{0} نق أرضي',
+      two: '{0} نق أرضي',
+      few: '{0} نق أرضي',
+      many: '{0} نق أرضي',
+      other: '{0} نق أرضي',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'نق أرضي',
+      zero: '{0} نق أرضي',
+      one: '{0} نق أرضي',
+      two: '{0} نق أرضي',
+      few: '{0} نق أرضي',
+      many: '{0} نق أرضي',
+      other: '{0} نق أرضي',
+    ),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلومتر',
-          zero: '{0} كيلومتر',
-          one: '{0} كيلومتر',
-          two: '{0} كيلومتر',
-          few: '{0} كيلومترات',
-          many: '{0} كيلومترًا',
-          other: '{0} كيلومتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كم',
-          zero: '{0} كم',
-          one: '{0} كم',
-          two: '{0} كم',
-          few: '{0} كم',
-          many: '{0} كم',
-          other: '{0} كم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كم',
-          zero: '{0} كم',
-          one: '{0} كم',
-          two: '{0} كم',
-          few: '{0} كم',
-          many: '{0} كم',
-          other: '{0} كم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلومتر',
+      zero: '{0} كيلومتر',
+      one: '{0} كيلومتر',
+      two: '{0} كيلومتر',
+      few: '{0} كيلومترات',
+      many: '{0} كيلومترًا',
+      other: '{0} كيلومتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كم',
+      zero: '{0} كم',
+      one: '{0} كم',
+      two: '{0} كم',
+      few: '{0} كم',
+      many: '{0} كم',
+      other: '{0} كم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كم',
+      zero: '{0} كم',
+      one: '{0} كم',
+      two: '{0} كم',
+      few: '{0} كم',
+      many: '{0} كم',
+      other: '{0} كم',
+    ),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'متر',
-          zero: '{0} متر',
-          one: 'متر',
-          two: '{0} متر',
-          few: '{0} أمتار',
-          many: '{0} مترًا',
-          other: '{0} متر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م',
-          zero: '{0} متر',
-          one: 'متر',
-          two: 'متران',
-          few: '{0} أمتار',
-          many: '{0} مترًا',
-          other: '{0} متر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م',
-          zero: '{0} م',
-          one: '{0} م',
-          two: '{0} م',
-          few: '{0} م',
-          many: '{0} م',
-          other: '{0} م',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'متر',
+      zero: '{0} متر',
+      one: 'متر',
+      two: '{0} متر',
+      few: '{0} أمتار',
+      many: '{0} مترًا',
+      other: '{0} متر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م',
+      zero: '{0} متر',
+      one: 'متر',
+      two: 'متران',
+      few: '{0} أمتار',
+      many: '{0} مترًا',
+      other: '{0} متر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م',
+      zero: '{0} م',
+      one: '{0} م',
+      two: '{0} م',
+      few: '{0} م',
+      many: '{0} م',
+      other: '{0} م',
+    ),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ديسيمتر',
-          zero: '{0} ديسيمتر',
-          one: '{0} ديسيمتر',
-          two: '{0} ديسيمتر',
-          few: '{0} ديسيمتر',
-          many: '{0} ديسيمتر',
-          other: '{0} ديسيمتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'دسم',
-          zero: '{0} دسم',
-          one: '{0} دسم',
-          two: '{0} دسم',
-          few: '{0} دسم',
-          many: '{0} دسم',
-          other: '{0} دسم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'دسم',
-          zero: '{0} دسم',
-          one: '{0} دسم',
-          two: '{0} دسم',
-          few: '{0} دسم',
-          many: '{0} دسم',
-          other: '{0} دسم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ديسيمتر',
+      zero: '{0} ديسيمتر',
+      one: '{0} ديسيمتر',
+      two: '{0} ديسيمتر',
+      few: '{0} ديسيمتر',
+      many: '{0} ديسيمتر',
+      other: '{0} ديسيمتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'دسم',
+      zero: '{0} دسم',
+      one: '{0} دسم',
+      two: '{0} دسم',
+      few: '{0} دسم',
+      many: '{0} دسم',
+      other: '{0} دسم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'دسم',
+      zero: '{0} دسم',
+      one: '{0} دسم',
+      two: '{0} دسم',
+      few: '{0} دسم',
+      many: '{0} دسم',
+      other: '{0} دسم',
+    ),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سنتيمتر',
-          zero: '{0} سنتيمتر',
-          one: '{0} سنتيمتر',
-          two: '{0} سنتيمتر',
-          few: '{0} سنتيمتر',
-          many: '{0} سنتيمتر',
-          other: '{0} سنتيمتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سم',
-          zero: '{0} سم',
-          one: '{0} سم',
-          two: '{0} سم',
-          few: '{0} سم',
-          many: '{0} سم',
-          other: '{0} سم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سم',
-          zero: '{0} سم',
-          one: '{0} سم',
-          two: '{0} سم',
-          few: '{0} سم',
-          many: '{0} سم',
-          other: '{0} سم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سنتيمتر',
+      zero: '{0} سنتيمتر',
+      one: '{0} سنتيمتر',
+      two: '{0} سنتيمتر',
+      few: '{0} سنتيمتر',
+      many: '{0} سنتيمتر',
+      other: '{0} سنتيمتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سم',
+      zero: '{0} سم',
+      one: '{0} سم',
+      two: '{0} سم',
+      few: '{0} سم',
+      many: '{0} سم',
+      other: '{0} سم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سم',
+      zero: '{0} سم',
+      one: '{0} سم',
+      two: '{0} سم',
+      few: '{0} سم',
+      many: '{0} سم',
+      other: '{0} سم',
+    ),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'مليمتر',
-          zero: '{0} مليمتر',
-          one: '{0} مليمتر',
-          two: '{0} مليمتر',
-          few: '{0} مليمتر',
-          many: '{0} مليمتر',
-          other: '{0} مليمتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'مليمتر',
-          zero: '{0} مم',
-          one: '{0} مم',
-          two: '{0} مم',
-          few: '{0} مم',
-          many: '{0} مم',
-          other: '{0} مم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'مم',
-          zero: '{0} مم',
-          one: '{0} مم',
-          two: '{0} مم',
-          few: '{0} مم',
-          many: '{0} مم',
-          other: '{0} مم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'مليمتر',
+      zero: '{0} مليمتر',
+      one: '{0} مليمتر',
+      two: '{0} مليمتر',
+      few: '{0} مليمتر',
+      many: '{0} مليمتر',
+      other: '{0} مليمتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'مليمتر',
+      zero: '{0} مم',
+      one: '{0} مم',
+      two: '{0} مم',
+      few: '{0} مم',
+      many: '{0} مم',
+      other: '{0} مم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'مم',
+      zero: '{0} مم',
+      one: '{0} مم',
+      two: '{0} مم',
+      few: '{0} مم',
+      many: '{0} مم',
+      other: '{0} مم',
+    ),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميكرومتر',
-          zero: '{0} ميكرومتر',
-          one: '{0} ميكرومتر',
-          two: '{0} ميكرومتر',
-          few: '{0} ميكرومتر',
-          many: '{0} ميكرومتر',
-          other: '{0} ميكرومتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميكرومتر',
-          zero: '{0} ميكرومتر',
-          one: '{0} ميكرومتر',
-          two: '{0} ميكرومتر',
-          few: '{0} ميكرومتر',
-          many: '{0} ميكرومتر',
-          other: '{0} ميكرومتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميكرومتر',
-          zero: '{0} ميكرومتر',
-          one: '{0} ميكرومتر',
-          two: '{0} ميكرومتر',
-          few: '{0} ميكرومتر',
-          many: '{0} ميكرومتر',
-          other: '{0} ميكرومتر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميكرومتر',
+      zero: '{0} ميكرومتر',
+      one: '{0} ميكرومتر',
+      two: '{0} ميكرومتر',
+      few: '{0} ميكرومتر',
+      many: '{0} ميكرومتر',
+      other: '{0} ميكرومتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميكرومتر',
+      zero: '{0} ميكرومتر',
+      one: '{0} ميكرومتر',
+      two: '{0} ميكرومتر',
+      few: '{0} ميكرومتر',
+      many: '{0} ميكرومتر',
+      other: '{0} ميكرومتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميكرومتر',
+      zero: '{0} ميكرومتر',
+      one: '{0} ميكرومتر',
+      two: '{0} ميكرومتر',
+      few: '{0} ميكرومتر',
+      many: '{0} ميكرومتر',
+      other: '{0} ميكرومتر',
+    ),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نانو متر',
-          zero: '{0} نانو متر',
-          one: '{0} نانو متر',
-          two: '{0} نانو متر',
-          few: '{0} نانو متر',
-          many: '{0} نانو متر',
-          other: '{0} نانو متر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نانو متر',
-          zero: '{0} نانو متر',
-          one: '{0} نانو متر',
-          two: '{0} نانو متر',
-          few: '{0} نانو متر',
-          many: '{0} نانو متر',
-          other: '{0} نانو متر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'نانو متر',
-          zero: '{0} نانو متر',
-          one: '{0} نانو متر',
-          two: '{0} نانو متر',
-          few: '{0} نانو متر',
-          many: '{0} نانو متر',
-          other: '{0} نانو متر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نانو متر',
+      zero: '{0} نانو متر',
+      one: '{0} نانو متر',
+      two: '{0} نانو متر',
+      few: '{0} نانو متر',
+      many: '{0} نانو متر',
+      other: '{0} نانو متر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نانو متر',
+      zero: '{0} نانو متر',
+      one: '{0} نانو متر',
+      two: '{0} نانو متر',
+      few: '{0} نانو متر',
+      many: '{0} نانو متر',
+      other: '{0} نانو متر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'نانو متر',
+      zero: '{0} نانو متر',
+      one: '{0} نانو متر',
+      two: '{0} نانو متر',
+      few: '{0} نانو متر',
+      many: '{0} نانو متر',
+      other: '{0} نانو متر',
+    ),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بيكومتر',
-          zero: '{0} بيكومتر',
-          one: '{0} بيكومتر',
-          two: '{0} بيكومتر',
-          few: '{0} بيكومتر',
-          many: '{0} بيكومتر',
-          other: '{0} بيكومتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بيكومتر',
-          zero: '{0} بيكومتر',
-          one: '{0} بيكومتر',
-          two: '{0} بيكومتر',
-          few: '{0} بيكومتر',
-          many: '{0} بيكومتر',
-          other: '{0} بيكومتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بيكومتر',
-          zero: '{0} بيكومتر',
-          one: '{0} بيكومتر',
-          two: '{0} بيكومتر',
-          few: '{0} بيكومتر',
-          many: '{0} بيكومتر',
-          other: '{0} بيكومتر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بيكومتر',
+      zero: '{0} بيكومتر',
+      one: '{0} بيكومتر',
+      two: '{0} بيكومتر',
+      few: '{0} بيكومتر',
+      many: '{0} بيكومتر',
+      other: '{0} بيكومتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بيكومتر',
+      zero: '{0} بيكومتر',
+      one: '{0} بيكومتر',
+      two: '{0} بيكومتر',
+      few: '{0} بيكومتر',
+      many: '{0} بيكومتر',
+      other: '{0} بيكومتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بيكومتر',
+      zero: '{0} بيكومتر',
+      one: '{0} بيكومتر',
+      two: '{0} بيكومتر',
+      few: '{0} بيكومتر',
+      many: '{0} بيكومتر',
+      other: '{0} بيكومتر',
+    ),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل',
-          zero: '{0} ميل',
-          one: 'ميل',
-          two: 'ميلان',
-          few: '{0} أميال',
-          many: '{0} ميلاً',
-          other: '{0} ميل',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل',
-          zero: '{0} ميل',
-          one: 'ميل',
-          two: '{0} ميل',
-          few: '{0} ميل',
-          many: '{0} ميل',
-          other: '{0} ميل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل',
-          zero: '{0} ميل',
-          one: '{0} ميل',
-          two: '{0} ميل',
-          few: '{0} أميال',
-          many: '{0} ميلاً',
-          other: '{0} ميل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل',
+      zero: '{0} ميل',
+      one: 'ميل',
+      two: 'ميلان',
+      few: '{0} أميال',
+      many: '{0} ميلاً',
+      other: '{0} ميل',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل',
+      zero: '{0} ميل',
+      one: 'ميل',
+      two: '{0} ميل',
+      few: '{0} ميل',
+      many: '{0} ميل',
+      other: '{0} ميل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل',
+      zero: '{0} ميل',
+      one: '{0} ميل',
+      two: '{0} ميل',
+      few: '{0} أميال',
+      many: '{0} ميلاً',
+      other: '{0} ميل',
+    ),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ياردة',
-          zero: '{0} ياردة',
-          one: 'ياردة',
-          two: '{0} ياردة',
-          few: '{0} ياردة',
-          many: '{0} ياردة',
-          other: '{0} ياردة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ياردة',
-          zero: '{0} ياردة',
-          one: 'ياردة',
-          two: '{0} ياردة',
-          few: '{0} ياردة',
-          many: '{0} ياردة',
-          other: '{0} ياردة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ياردة',
-          zero: '{0} ياردة',
-          one: '{0} ياردة',
-          two: '{0} ياردة',
-          few: '{0} ياردة',
-          many: '{0} ياردة',
-          other: '{0} ياردة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ياردة',
+      zero: '{0} ياردة',
+      one: 'ياردة',
+      two: '{0} ياردة',
+      few: '{0} ياردة',
+      many: '{0} ياردة',
+      other: '{0} ياردة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ياردة',
+      zero: '{0} ياردة',
+      one: 'ياردة',
+      two: '{0} ياردة',
+      few: '{0} ياردة',
+      many: '{0} ياردة',
+      other: '{0} ياردة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ياردة',
+      zero: '{0} ياردة',
+      one: '{0} ياردة',
+      two: '{0} ياردة',
+      few: '{0} ياردة',
+      many: '{0} ياردة',
+      other: '{0} ياردة',
+    ),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قدم',
-          zero: '{0} قدم',
-          one: 'قدم',
-          two: '{0} قدم',
-          few: '{0} قدم',
-          many: '{0} قدم',
-          other: '{0} قدم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قدم',
-          zero: '{0} قدم',
-          one: 'قدم',
-          two: '{0} قدم',
-          few: '{0} قدم',
-          many: '{0} قدم',
-          other: '{0} قدم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قدم',
-          zero: '{0} قدم',
-          one: 'قدم',
-          two: '{0} قدم',
-          few: '{0} قدم',
-          many: '{0} قدمًا',
-          other: '{0} قدم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قدم',
+      zero: '{0} قدم',
+      one: 'قدم',
+      two: '{0} قدم',
+      few: '{0} قدم',
+      many: '{0} قدم',
+      other: '{0} قدم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قدم',
+      zero: '{0} قدم',
+      one: 'قدم',
+      two: '{0} قدم',
+      few: '{0} قدم',
+      many: '{0} قدم',
+      other: '{0} قدم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قدم',
+      zero: '{0} قدم',
+      one: 'قدم',
+      two: '{0} قدم',
+      few: '{0} قدم',
+      many: '{0} قدمًا',
+      other: '{0} قدم',
+    ),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بوصة',
-          zero: '{0} بوصة',
-          one: '{0} بوصة',
-          two: '{0} بوصة',
-          few: '{0} بوصة',
-          many: '{0} بوصة',
-          other: '{0} بوصة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بوصة',
-          zero: '{0} بوصة',
-          one: '{0} بوصة',
-          two: '{0} بوصة',
-          few: '{0} بوصة',
-          many: '{0} بوصة',
-          other: '{0} بوصة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بوصة',
-          zero: '{0} بوصة',
-          one: '{0} بوصة',
-          two: '{0} بوصة',
-          few: '{0} بوصة',
-          many: '{0} بوصة',
-          other: '{0} بوصة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بوصة',
+      zero: '{0} بوصة',
+      one: '{0} بوصة',
+      two: '{0} بوصة',
+      few: '{0} بوصة',
+      many: '{0} بوصة',
+      other: '{0} بوصة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بوصة',
+      zero: '{0} بوصة',
+      one: '{0} بوصة',
+      two: '{0} بوصة',
+      few: '{0} بوصة',
+      many: '{0} بوصة',
+      other: '{0} بوصة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بوصة',
+      zero: '{0} بوصة',
+      one: '{0} بوصة',
+      two: '{0} بوصة',
+      few: '{0} بوصة',
+      many: '{0} بوصة',
+      other: '{0} بوصة',
+    ),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'فرسخ فلكي',
-          zero: '{0} فرسخ فلكي',
-          one: 'فرسخ فلكي',
-          two: '{0} فرسخ فلكي',
-          few: '{0} فرسخ فلكي',
-          many: '{0} فرسخ فلكي',
-          other: '{0} فرسخ فلكي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'فرسخ فلكي',
-          zero: '{0} فرسخ فلكي',
-          one: 'فرسخ فلكي',
-          two: '{0} فرسخ فلكي',
-          few: '{0} فرسخ فلكي',
-          many: '{0} فرسخ فلكي',
-          other: '{0} فرسخ فلكي',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'فرسخ فلكي',
-          zero: '{0} فرسخ فلكي',
-          one: 'فرسخ فلكي',
-          two: '{0} فرسخ فلكي',
-          few: '{0} فرسخ فلكي',
-          many: '{0} فرسخ فلكي',
-          other: '{0} فرسخ فلكي',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'فرسخ فلكي',
+      zero: '{0} فرسخ فلكي',
+      one: 'فرسخ فلكي',
+      two: '{0} فرسخ فلكي',
+      few: '{0} فرسخ فلكي',
+      many: '{0} فرسخ فلكي',
+      other: '{0} فرسخ فلكي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'فرسخ فلكي',
+      zero: '{0} فرسخ فلكي',
+      one: 'فرسخ فلكي',
+      two: '{0} فرسخ فلكي',
+      few: '{0} فرسخ فلكي',
+      many: '{0} فرسخ فلكي',
+      other: '{0} فرسخ فلكي',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'فرسخ فلكي',
+      zero: '{0} فرسخ فلكي',
+      one: 'فرسخ فلكي',
+      two: '{0} فرسخ فلكي',
+      few: '{0} فرسخ فلكي',
+      many: '{0} فرسخ فلكي',
+      other: '{0} فرسخ فلكي',
+    ),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سنة ضوئية',
-          zero: '{0} سنة ضوئية',
-          one: 'سنة ضوئية',
-          two: 'سنتان ضوئيتان',
-          few: '{0} سنوات ضوئية',
-          many: '{0} سنة ضوئية',
-          other: '{0} سنة ضوئية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سنة ضوئية',
-          zero: '{0} سنة ضوئية',
-          one: 'سنة ضوئية',
-          two: 'سنتان ضوئيتان',
-          few: '{0} سنوات ضوئية',
-          many: '{0} سنة ضوئية',
-          other: '{0} سنة ضوئية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سنة ضوئية',
-          zero: '{0}س ض',
-          one: '{0} س ض',
-          two: '{0} س ض',
-          few: '{0} س ض',
-          many: '{0} س ض',
-          other: '{0} س ض',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سنة ضوئية',
+      zero: '{0} سنة ضوئية',
+      one: 'سنة ضوئية',
+      two: 'سنتان ضوئيتان',
+      few: '{0} سنوات ضوئية',
+      many: '{0} سنة ضوئية',
+      other: '{0} سنة ضوئية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سنة ضوئية',
+      zero: '{0} سنة ضوئية',
+      one: 'سنة ضوئية',
+      two: 'سنتان ضوئيتان',
+      few: '{0} سنوات ضوئية',
+      many: '{0} سنة ضوئية',
+      other: '{0} سنة ضوئية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سنة ضوئية',
+      zero: '{0}س ض',
+      one: '{0} س ض',
+      two: '{0} س ض',
+      few: '{0} س ض',
+      many: '{0} س ض',
+      other: '{0} س ض',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'وحدة فلكية',
-          zero: '{0} وحدة فلكية',
-          one: 'وحدة فلكية',
-          two: '{0} وحدة فلكية',
-          few: '{0} وحدة فلكية',
-          many: '{0} وحدة فلكية',
-          other: '{0} وحدة فلكية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'و.ف.',
-          zero: '{0} و.ف.',
-          one: '{0} و.ف.',
-          two: '{0} و.ف.',
-          few: '{0} و.ف.',
-          many: '{0} و.ف.',
-          other: '{0} و.ف.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'و.ف.',
-          zero: '{0} و.ف.',
-          one: '{0} و.ف.',
-          two: '{0} و.ف.',
-          few: '{0} و.ف.',
-          many: '{0} و.ف.',
-          other: '{0} و.ف.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'وحدة فلكية',
+      zero: '{0} وحدة فلكية',
+      one: 'وحدة فلكية',
+      two: '{0} وحدة فلكية',
+      few: '{0} وحدة فلكية',
+      many: '{0} وحدة فلكية',
+      other: '{0} وحدة فلكية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'و.ف.',
+      zero: '{0} و.ف.',
+      one: '{0} و.ف.',
+      two: '{0} و.ف.',
+      few: '{0} و.ف.',
+      many: '{0} و.ف.',
+      other: '{0} و.ف.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'و.ف.',
+      zero: '{0} و.ف.',
+      one: '{0} و.ف.',
+      two: '{0} و.ف.',
+      few: '{0} و.ف.',
+      many: '{0} و.ف.',
+      other: '{0} و.ف.',
+    ),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'فرلنغ',
-          zero: '{0} فرلنغ',
-          one: '{0} فرلنغ',
-          two: '{0} فرلنغ',
-          few: '{0} فرلنغ',
-          many: '{0} فرلنغ',
-          other: '{0} فرلنغ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'فرلنغ',
-          zero: '{0} فرلنغ',
-          one: '{0} فرلنغ',
-          two: '{0} فرلنغ',
-          few: '{0} فرلنغ',
-          many: '{0} فرلنغ',
-          other: '{0} فرلنغ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'فرلنغ',
-          zero: '{0} فرلنغ',
-          one: '{0} فرلنغ',
-          two: '{0} فرلنغ',
-          few: '{0} فرلنغ',
-          many: '{0} فرلنغ',
-          other: '{0} فرلنغ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'فرلنغ',
+      zero: '{0} فرلنغ',
+      one: '{0} فرلنغ',
+      two: '{0} فرلنغ',
+      few: '{0} فرلنغ',
+      many: '{0} فرلنغ',
+      other: '{0} فرلنغ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'فرلنغ',
+      zero: '{0} فرلنغ',
+      one: '{0} فرلنغ',
+      two: '{0} فرلنغ',
+      few: '{0} فرلنغ',
+      many: '{0} فرلنغ',
+      other: '{0} فرلنغ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'فرلنغ',
+      zero: '{0} فرلنغ',
+      one: '{0} فرلنغ',
+      two: '{0} فرلنغ',
+      few: '{0} فرلنغ',
+      many: '{0} فرلنغ',
+      other: '{0} فرلنغ',
+    ),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قامة',
-          zero: '{0} قامة',
-          one: '{0} قامة',
-          two: '{0} قامة',
-          few: '{0} قامة',
-          many: '{0} قامة',
-          other: '{0} قامة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قامة',
-          zero: '{0} قامة',
-          one: '{0} قامة',
-          two: '{0} قامة',
-          few: '{0} قامة',
-          many: '{0} قامة',
-          other: '{0} قامة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قامة',
-          zero: '{0} قامة',
-          one: '{0} قامة',
-          two: '{0} قامة',
-          few: '{0} قامة',
-          many: '{0} قامة',
-          other: '{0} قامة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قامة',
+      zero: '{0} قامة',
+      one: '{0} قامة',
+      two: '{0} قامة',
+      few: '{0} قامة',
+      many: '{0} قامة',
+      other: '{0} قامة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قامة',
+      zero: '{0} قامة',
+      one: '{0} قامة',
+      two: '{0} قامة',
+      few: '{0} قامة',
+      many: '{0} قامة',
+      other: '{0} قامة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قامة',
+      zero: '{0} قامة',
+      one: '{0} قامة',
+      two: '{0} قامة',
+      few: '{0} قامة',
+      many: '{0} قامة',
+      other: '{0} قامة',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل بحري',
-          zero: '{0} ميل بحري',
-          one: 'ميل بحري',
-          two: '{0} ميل بحري',
-          few: '{0} ميل بحري',
-          many: '{0} ميل بحري',
-          other: '{0} ميل بحري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل بحري',
-          zero: '{0} ميل بحري',
-          one: 'ميل بحري',
-          two: '{0} ميل بحري',
-          few: '{0} ميل بحري',
-          many: '{0} ميل بحري',
-          other: '{0} ميل بحري',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل بحري',
-          zero: '{0} ميل بحري',
-          one: 'ميل بحري',
-          two: '{0} ميل بحري',
-          few: '{0} ميل بحري',
-          many: '{0} ميل بحري',
-          other: '{0} ميل بحري',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل بحري',
+      zero: '{0} ميل بحري',
+      one: 'ميل بحري',
+      two: '{0} ميل بحري',
+      few: '{0} ميل بحري',
+      many: '{0} ميل بحري',
+      other: '{0} ميل بحري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل بحري',
+      zero: '{0} ميل بحري',
+      one: 'ميل بحري',
+      two: '{0} ميل بحري',
+      few: '{0} ميل بحري',
+      many: '{0} ميل بحري',
+      other: '{0} ميل بحري',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل بحري',
+      zero: '{0} ميل بحري',
+      one: 'ميل بحري',
+      two: '{0} ميل بحري',
+      few: '{0} ميل بحري',
+      many: '{0} ميل بحري',
+      other: '{0} ميل بحري',
+    ),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل اسكندنافي',
-          zero: '{0} ميل اسكندنافي',
-          one: '{0} ميل اسكندنافي',
-          two: '{0} ميل اسكندنافي',
-          few: '{0} ميل اسكندنافي',
-          many: '{0} ميل اسكندنافي',
-          other: '{0} ميل اسكندنافي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل اسكندنافي',
-          zero: '{0} ميل اسكندنافي',
-          one: '{0} ميل اسكندنافي',
-          two: '{0} ميل اسكندنافي',
-          few: '{0} ميل اسكندنافي',
-          many: '{0} ميل اسكندنافي',
-          other: '{0} ميل اسكندنافي',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل اسكندنافي',
-          zero: '{0} ميل اسكندنافي',
-          one: '{0} ميل اسكندنافي',
-          two: '{0} ميل اسكندنافي',
-          few: '{0} ميل اسكندنافي',
-          many: '{0} ميل اسكندنافي',
-          other: '{0} ميل اسكندنافي',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل اسكندنافي',
+      zero: '{0} ميل اسكندنافي',
+      one: '{0} ميل اسكندنافي',
+      two: '{0} ميل اسكندنافي',
+      few: '{0} ميل اسكندنافي',
+      many: '{0} ميل اسكندنافي',
+      other: '{0} ميل اسكندنافي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل اسكندنافي',
+      zero: '{0} ميل اسكندنافي',
+      one: '{0} ميل اسكندنافي',
+      two: '{0} ميل اسكندنافي',
+      few: '{0} ميل اسكندنافي',
+      many: '{0} ميل اسكندنافي',
+      other: '{0} ميل اسكندنافي',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل اسكندنافي',
+      zero: '{0} ميل اسكندنافي',
+      one: '{0} ميل اسكندنافي',
+      two: '{0} ميل اسكندنافي',
+      few: '{0} ميل اسكندنافي',
+      many: '{0} ميل اسكندنافي',
+      other: '{0} ميل اسكندنافي',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نقطة',
-          zero: '{0} نقطة',
-          one: 'نقطة',
-          two: 'نقطتان',
-          few: '{0} نقاط',
-          many: '{0} نقطة',
-          other: '{0} نقطة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نقطة',
-          zero: '{0} نقطة',
-          one: 'نقطة',
-          two: 'نقطتان',
-          few: '{0} نقاط',
-          many: '{0} نقطة',
-          other: '{0} نقطة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'نقطة',
-          zero: '{0} نقطة',
-          one: 'نقطة',
-          two: 'نقطتان',
-          few: '{0} نقاط',
-          many: '{0} نقطة',
-          other: '{0} نقطة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نقطة',
+      zero: '{0} نقطة',
+      one: 'نقطة',
+      two: 'نقطتان',
+      few: '{0} نقاط',
+      many: '{0} نقطة',
+      other: '{0} نقطة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نقطة',
+      zero: '{0} نقطة',
+      one: 'نقطة',
+      two: 'نقطتان',
+      few: '{0} نقاط',
+      many: '{0} نقطة',
+      other: '{0} نقطة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'نقطة',
+      zero: '{0} نقطة',
+      one: 'نقطة',
+      two: 'نقطتان',
+      few: '{0} نقاط',
+      many: '{0} نقطة',
+      other: '{0} نقطة',
+    ),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نصف قطر شمسي',
-          zero: '{0} نصف قطر شمسي',
-          one: '{0} نصف قطر شمسي',
-          two: '{0} نصف قطر شمسي',
-          few: '{0} نصف قطر شمسي',
-          many: '{0} نصف قطر شمسي',
-          other: '{0} نصف قطر شمسي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نق شمسي',
-          zero: '{0} نق شمسي',
-          one: '{0} نق شمسي',
-          two: '{0} نق شمسي',
-          few: '{0} نق شمسي',
-          many: '{0} نق شمسي',
-          other: '{0} نق شمسي',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'نق شمسي',
-          zero: '{0} نق شمسي',
-          one: '{0} نق شمسي',
-          two: '{0} نق شمسي',
-          few: '{0} نق شمسي',
-          many: '{0} نق شمسي',
-          other: '{0} نق شمسي',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نصف قطر شمسي',
+      zero: '{0} نصف قطر شمسي',
+      one: '{0} نصف قطر شمسي',
+      two: '{0} نصف قطر شمسي',
+      few: '{0} نصف قطر شمسي',
+      many: '{0} نصف قطر شمسي',
+      other: '{0} نصف قطر شمسي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نق شمسي',
+      zero: '{0} نق شمسي',
+      one: '{0} نق شمسي',
+      two: '{0} نق شمسي',
+      few: '{0} نق شمسي',
+      many: '{0} نق شمسي',
+      other: '{0} نق شمسي',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'نق شمسي',
+      zero: '{0} نق شمسي',
+      one: '{0} نق شمسي',
+      two: '{0} نق شمسي',
+      few: '{0} نق شمسي',
+      many: '{0} نق شمسي',
+      other: '{0} نق شمسي',
+    ),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'لكس',
-          zero: '{0} لكس',
-          one: '{0} لكس',
-          two: '{0} لكس',
-          few: '{0} لكس',
-          many: '{0} لكس',
-          other: '{0} لكس',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'لكس',
-          zero: '{0} لكس',
-          one: '{0} لكس',
-          two: '{0} لكس',
-          few: '{0} لكس',
-          many: '{0} لكس',
-          other: '{0} لكس',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'لكس',
-          zero: '{0} لكس',
-          one: '{0} لكس',
-          two: '{0} لكس',
-          few: '{0} لكس',
-          many: '{0} لكس',
-          other: '{0} لكس',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'لكس',
+      zero: '{0} لكس',
+      one: '{0} لكس',
+      two: '{0} لكس',
+      few: '{0} لكس',
+      many: '{0} لكس',
+      other: '{0} لكس',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'لكس',
+      zero: '{0} لكس',
+      one: '{0} لكس',
+      two: '{0} لكس',
+      few: '{0} لكس',
+      many: '{0} لكس',
+      other: '{0} لكس',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'لكس',
+      zero: '{0} لكس',
+      one: '{0} لكس',
+      two: '{0} لكس',
+      few: '{0} لكس',
+      many: '{0} لكس',
+      other: '{0} لكس',
+    ),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'شمعة',
-          zero: '{0} شمعة',
-          one: '{0} شمعة',
-          two: '{0} شمعة',
-          few: '{0} شمعة',
-          many: '{0} شمعة',
-          other: '{0} شمعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'شمعة',
-          zero: '{0} شمعة',
-          one: '{0} شمعة',
-          two: '{0} شمعة',
-          few: '{0} شمعة',
-          many: '{0} شمعة',
-          other: '{0} شمعة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'شمعة',
-          zero: '{0} شمعة',
-          one: '{0} شمعة',
-          two: '{0} شمعة',
-          few: '{0} شمعة',
-          many: '{0} شمعة',
-          other: '{0} شمعة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'شمعة',
+      zero: '{0} شمعة',
+      one: '{0} شمعة',
+      two: '{0} شمعة',
+      few: '{0} شمعة',
+      many: '{0} شمعة',
+      other: '{0} شمعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'شمعة',
+      zero: '{0} شمعة',
+      one: '{0} شمعة',
+      two: '{0} شمعة',
+      few: '{0} شمعة',
+      many: '{0} شمعة',
+      other: '{0} شمعة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'شمعة',
+      zero: '{0} شمعة',
+      one: '{0} شمعة',
+      two: '{0} شمعة',
+      few: '{0} شمعة',
+      many: '{0} شمعة',
+      other: '{0} شمعة',
+    ),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'لومن',
-          zero: '{0} لومن',
-          one: '{0} لومن',
-          two: '{0} لومن',
-          few: '{0} لومن',
-          many: '{0} لومن',
-          other: '{0} لومن',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'لومن',
-          zero: '{0} لومن',
-          one: '{0} لومن',
-          two: '{0} لومن',
-          few: '{0} لومن',
-          many: '{0} لومن',
-          other: '{0} لومن',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'لومن',
-          zero: '{0} لومن',
-          one: '{0} لومن',
-          two: '{0} لومن',
-          few: '{0} لومن',
-          many: '{0} لومن',
-          other: '{0} لومن',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'لومن',
+      zero: '{0} لومن',
+      one: '{0} لومن',
+      two: '{0} لومن',
+      few: '{0} لومن',
+      many: '{0} لومن',
+      other: '{0} لومن',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'لومن',
+      zero: '{0} لومن',
+      one: '{0} لومن',
+      two: '{0} لومن',
+      few: '{0} لومن',
+      many: '{0} لومن',
+      other: '{0} لومن',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'لومن',
+      zero: '{0} لومن',
+      one: '{0} لومن',
+      two: '{0} لومن',
+      few: '{0} لومن',
+      many: '{0} لومن',
+      other: '{0} لومن',
+    ),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ضياء شمسي',
-          zero: '{0} ضياء شمسي',
-          one: '{0} ضياء شمسي',
-          two: '{0} ضياء شمسي',
-          few: '{0} ضياء شمسي',
-          many: '{0} ضياء شمسي',
-          other: '{0} ضياء شمسي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ضياء شمسي',
-          zero: '{0} ضياء شمسي',
-          one: '{0} ضياء شمسي',
-          two: '{0} ضياء شمسي',
-          few: '{0} ضياء شمسي',
-          many: '{0} ضياء شمسي',
-          other: '{0} ضياء شمسي',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ضياء شمسي',
-          zero: '{0} ضياء شمسي',
-          one: '{0} ضياء شمسي',
-          two: '{0} ضياء شمسي',
-          few: '{0} ضياء شمسي',
-          many: '{0} ضياء شمسي',
-          other: '{0} ضياء شمسي',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ضياء شمسي',
+      zero: '{0} ضياء شمسي',
+      one: '{0} ضياء شمسي',
+      two: '{0} ضياء شمسي',
+      few: '{0} ضياء شمسي',
+      many: '{0} ضياء شمسي',
+      other: '{0} ضياء شمسي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ضياء شمسي',
+      zero: '{0} ضياء شمسي',
+      one: '{0} ضياء شمسي',
+      two: '{0} ضياء شمسي',
+      few: '{0} ضياء شمسي',
+      many: '{0} ضياء شمسي',
+      other: '{0} ضياء شمسي',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ضياء شمسي',
+      zero: '{0} ضياء شمسي',
+      one: '{0} ضياء شمسي',
+      two: '{0} ضياء شمسي',
+      few: '{0} ضياء شمسي',
+      many: '{0} ضياء شمسي',
+      other: '{0} ضياء شمسي',
+    ),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'طن متري',
-          zero: '{0} طن متري',
-          one: '{0} طن متري',
-          two: '{0} طن متري',
-          few: '{0} طن متري',
-          many: '{0} طن متري',
-          other: '{0} طن متري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ط.م',
-          zero: '{0} ط.م',
-          one: '{0} ط.م',
-          two: '{0} ط.م',
-          few: '{0} ط.م',
-          many: '{0} ط.م',
-          other: '{0} ط.م',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ط.م',
-          zero: '{0} ط.م',
-          one: '{0} ط.م',
-          two: '{0} ط.م',
-          few: '{0} ط.م',
-          many: '{0} ط.م',
-          other: '{0} ط.م',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'طن متري',
+      zero: '{0} طن متري',
+      one: '{0} طن متري',
+      two: '{0} طن متري',
+      few: '{0} طن متري',
+      many: '{0} طن متري',
+      other: '{0} طن متري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ط.م',
+      zero: '{0} ط.م',
+      one: '{0} ط.م',
+      two: '{0} ط.م',
+      few: '{0} ط.م',
+      many: '{0} ط.م',
+      other: '{0} ط.م',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ط.م',
+      zero: '{0} ط.م',
+      one: '{0} ط.م',
+      two: '{0} ط.م',
+      few: '{0} ط.م',
+      many: '{0} ط.م',
+      other: '{0} ط.م',
+    ),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلوغرام',
-          zero: '{0} كيلوغرام',
-          one: '{0} كيلوغرام',
-          two: '{0} كيلوغرام',
-          few: '{0} كيلوغرام',
-          many: '{0} كيلوغرام',
-          other: '{0} كيلوغرام',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كغم',
-          zero: '{0} كغم',
-          one: '{0} كغم',
-          two: '{0} كغم',
-          few: '{0} كغم',
-          many: '{0} كغم',
-          other: '{0} كغم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كغ',
-          zero: '{0} كغ',
-          one: '{0} كغ',
-          two: '{0} كغ',
-          few: '{0} كغ',
-          many: '{0} كغ',
-          other: '{0} كغ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلوغرام',
+      zero: '{0} كيلوغرام',
+      one: '{0} كيلوغرام',
+      two: '{0} كيلوغرام',
+      few: '{0} كيلوغرام',
+      many: '{0} كيلوغرام',
+      other: '{0} كيلوغرام',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كغم',
+      zero: '{0} كغم',
+      one: '{0} كغم',
+      two: '{0} كغم',
+      few: '{0} كغم',
+      many: '{0} كغم',
+      other: '{0} كغم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كغ',
+      zero: '{0} كغ',
+      one: '{0} كغ',
+      two: '{0} كغ',
+      few: '{0} كغ',
+      many: '{0} كغ',
+      other: '{0} كغ',
+    ),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'غرام',
-          zero: '{0} غرام',
-          one: 'غرام',
-          two: 'غرامان',
-          few: '{0} غرامات',
-          many: '{0} غرامًا',
-          other: '{0} غرام',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'غرام',
-          zero: '{0} غرام',
-          one: 'غرام',
-          two: '{0} غرام',
-          few: '{0} غرام',
-          many: '{0} غرام',
-          other: '{0} غرام',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'غ',
-          zero: '{0} غ',
-          one: '{0} غ',
-          two: '{0} غ',
-          few: '{0} غ',
-          many: '{0} غ',
-          other: '{0} غ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'غرام',
+      zero: '{0} غرام',
+      one: 'غرام',
+      two: 'غرامان',
+      few: '{0} غرامات',
+      many: '{0} غرامًا',
+      other: '{0} غرام',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'غرام',
+      zero: '{0} غرام',
+      one: 'غرام',
+      two: '{0} غرام',
+      few: '{0} غرام',
+      many: '{0} غرام',
+      other: '{0} غرام',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'غ',
+      zero: '{0} غ',
+      one: '{0} غ',
+      two: '{0} غ',
+      few: '{0} غ',
+      many: '{0} غ',
+      other: '{0} غ',
+    ),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'مليغرام',
-          zero: '{0} مليغرام',
-          one: '{0} مليغرام',
-          two: '{0} مليغرام',
-          few: '{0} مليغرام',
-          many: '{0} مليغرام',
-          other: '{0} مليغرام',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'مغم',
-          zero: '{0} مغم',
-          one: '{0} مغم',
-          two: '{0} مغم',
-          few: '{0} مغم',
-          many: '{0} مغم',
-          other: '{0} مغم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'مغم',
-          zero: '{0} مغم',
-          one: '{0} مغم',
-          two: '{0} مغم',
-          few: '{0} مغم',
-          many: '{0} مغم',
-          other: '{0} مغم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'مليغرام',
+      zero: '{0} مليغرام',
+      one: '{0} مليغرام',
+      two: '{0} مليغرام',
+      few: '{0} مليغرام',
+      many: '{0} مليغرام',
+      other: '{0} مليغرام',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'مغم',
+      zero: '{0} مغم',
+      one: '{0} مغم',
+      two: '{0} مغم',
+      few: '{0} مغم',
+      many: '{0} مغم',
+      other: '{0} مغم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'مغم',
+      zero: '{0} مغم',
+      one: '{0} مغم',
+      two: '{0} مغم',
+      few: '{0} مغم',
+      many: '{0} مغم',
+      other: '{0} مغم',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميكروغرام',
-          zero: '{0} ميكروغرام',
-          one: '{0} ميكروغرام',
-          two: '{0} ميكروغرام',
-          few: '{0} ميكروغرام',
-          many: '{0} ميكروغرام',
-          other: '{0} ميكروغرام',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'مكغم',
-          zero: '{0} مكغم',
-          one: '{0} مكغم',
-          two: '{0} مكغم',
-          few: '{0} مكغم',
-          many: '{0} مكغم',
-          other: '{0} مكغم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'مكغم',
-          zero: '{0} مكغم',
-          one: '{0} مكغم',
-          two: '{0} مكغم',
-          few: '{0} مكغم',
-          many: '{0} مكغم',
-          other: '{0} مكغم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميكروغرام',
+      zero: '{0} ميكروغرام',
+      one: '{0} ميكروغرام',
+      two: '{0} ميكروغرام',
+      few: '{0} ميكروغرام',
+      many: '{0} ميكروغرام',
+      other: '{0} ميكروغرام',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'مكغم',
+      zero: '{0} مكغم',
+      one: '{0} مكغم',
+      two: '{0} مكغم',
+      few: '{0} مكغم',
+      many: '{0} مكغم',
+      other: '{0} مكغم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'مكغم',
+      zero: '{0} مكغم',
+      one: '{0} مكغم',
+      two: '{0} مكغم',
+      few: '{0} مكغم',
+      many: '{0} مكغم',
+      other: '{0} مكغم',
+    ),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'طن',
-          zero: '{0} طن',
-          one: '{0} طن',
-          two: 'طنان',
-          few: '{0} أطنان',
-          many: '{0} طنًا',
-          other: '{0} طن',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'طن',
-          zero: '{0} طن',
-          one: '{0} طن',
-          two: '{0} طن',
-          few: '{0} طن',
-          many: '{0} طن',
-          other: '{0} طن',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'طن',
-          zero: '{0} طن',
-          one: '{0} طن',
-          two: '{0} طن',
-          few: '{0} طن',
-          many: '{0} طن',
-          other: '{0} طن',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'طن',
+      zero: '{0} طن',
+      one: '{0} طن',
+      two: 'طنان',
+      few: '{0} أطنان',
+      many: '{0} طنًا',
+      other: '{0} طن',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'طن',
+      zero: '{0} طن',
+      one: '{0} طن',
+      two: '{0} طن',
+      few: '{0} طن',
+      many: '{0} طن',
+      other: '{0} طن',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'طن',
+      zero: '{0} طن',
+      one: '{0} طن',
+      two: '{0} طن',
+      few: '{0} طن',
+      many: '{0} طن',
+      other: '{0} طن',
+    ),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ستون',
-          zero: '{0} ستون',
-          one: '{0} ستون',
-          two: '{0} ستون',
-          few: '{0} ستون',
-          many: '{0} ستون',
-          other: '{0} ستون',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ستون',
-          zero: '{0} ستون',
-          one: '{0} ستون',
-          two: '{0} ستون',
-          few: '{0} ستون',
-          many: '{0} ستون',
-          other: '{0} ستون',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ستون',
-          zero: '{0} ستون',
-          one: '{0} ستون',
-          two: '{0} ستون',
-          few: '{0} ستون',
-          many: '{0} ستون',
-          other: '{0} ستون',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ستون',
+      zero: '{0} ستون',
+      one: '{0} ستون',
+      two: '{0} ستون',
+      few: '{0} ستون',
+      many: '{0} ستون',
+      other: '{0} ستون',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ستون',
+      zero: '{0} ستون',
+      one: '{0} ستون',
+      two: '{0} ستون',
+      few: '{0} ستون',
+      many: '{0} ستون',
+      other: '{0} ستون',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ستون',
+      zero: '{0} ستون',
+      one: '{0} ستون',
+      two: '{0} ستون',
+      few: '{0} ستون',
+      many: '{0} ستون',
+      other: '{0} ستون',
+    ),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'رطل',
-          zero: '{0} رطل',
-          one: '{0} رطل',
-          two: 'رطلان',
-          few: '{0} رطل',
-          many: '{0} رطلًا',
-          other: '{0} رطل',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'رطل',
-          zero: '{0} رطل',
-          one: '{0} رطل',
-          two: '{0} رطل',
-          few: '{0} رطل',
-          many: '{0} رطل',
-          other: '{0} رطل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'رطل',
-          zero: '{0} رطل',
-          one: '{0} رطل',
-          two: '{0} رطل',
-          few: '{0} رطل',
-          many: '{0} رطل',
-          other: '{0} رطل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'رطل',
+      zero: '{0} رطل',
+      one: '{0} رطل',
+      two: 'رطلان',
+      few: '{0} رطل',
+      many: '{0} رطلًا',
+      other: '{0} رطل',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'رطل',
+      zero: '{0} رطل',
+      one: '{0} رطل',
+      two: '{0} رطل',
+      few: '{0} رطل',
+      many: '{0} رطل',
+      other: '{0} رطل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'رطل',
+      zero: '{0} رطل',
+      one: '{0} رطل',
+      two: '{0} رطل',
+      few: '{0} رطل',
+      many: '{0} رطل',
+      other: '{0} رطل',
+    ),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أونصة',
-          zero: '{0} أونصة',
-          one: '{0} أونصة',
-          two: '{0} أونصة',
-          few: '{0} أونصة',
-          many: '{0} أونصة',
-          other: '{0} أونصة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أونصة',
-          zero: '{0} أونصة',
-          one: 'أونصة',
-          two: '{0} أونصة',
-          few: '{0} أونصة',
-          many: '{0} أونصة',
-          other: '{0} أونصة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'أونصة',
-          zero: '{0} أونصة',
-          one: 'أونصة',
-          two: '{0} أونصة',
-          few: '{0} أونصة',
-          many: '{0} أونصة',
-          other: '{0} أونصة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أونصة',
+      zero: '{0} أونصة',
+      one: '{0} أونصة',
+      two: '{0} أونصة',
+      few: '{0} أونصة',
+      many: '{0} أونصة',
+      other: '{0} أونصة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أونصة',
+      zero: '{0} أونصة',
+      one: 'أونصة',
+      two: '{0} أونصة',
+      few: '{0} أونصة',
+      many: '{0} أونصة',
+      other: '{0} أونصة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'أونصة',
+      zero: '{0} أونصة',
+      one: 'أونصة',
+      two: '{0} أونصة',
+      few: '{0} أونصة',
+      many: '{0} أونصة',
+      other: '{0} أونصة',
+    ),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أونصة ترويسية',
-          zero: '{0} أونصة ترويسية',
-          one: '{0} أونصة ترويسية',
-          two: '{0} أونصة ترويسية',
-          few: '{0} أونصة ترويسية',
-          many: '{0} أونصة ترويسية',
-          other: '{0} أونصة ترويسية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أونصة ترويسية',
-          zero: '{0} أونصة ترويسية',
-          one: '{0} أونصة ترويسية',
-          two: '{0} أونصة ترويسية',
-          few: '{0} أونصة ترويسية',
-          many: '{0} أونصة ترويسية',
-          other: '{0} أونصة ترويسية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'أونصة ترويسية',
-          zero: '{0} أونصة ترويسية',
-          one: '{0} أونصة ترويسية',
-          two: '{0} أونصة ترويسية',
-          few: '{0} أونصة ترويسية',
-          many: '{0} أونصة ترويسية',
-          other: '{0} أونصة ترويسية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أونصة ترويسية',
+      zero: '{0} أونصة ترويسية',
+      one: '{0} أونصة ترويسية',
+      two: '{0} أونصة ترويسية',
+      few: '{0} أونصة ترويسية',
+      many: '{0} أونصة ترويسية',
+      other: '{0} أونصة ترويسية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أونصة ترويسية',
+      zero: '{0} أونصة ترويسية',
+      one: '{0} أونصة ترويسية',
+      two: '{0} أونصة ترويسية',
+      few: '{0} أونصة ترويسية',
+      many: '{0} أونصة ترويسية',
+      other: '{0} أونصة ترويسية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'أونصة ترويسية',
+      zero: '{0} أونصة ترويسية',
+      one: '{0} أونصة ترويسية',
+      two: '{0} أونصة ترويسية',
+      few: '{0} أونصة ترويسية',
+      many: '{0} أونصة ترويسية',
+      other: '{0} أونصة ترويسية',
+    ),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قيراط',
-          zero: '{0} قيراط',
-          one: 'قيراط',
-          two: 'قيراطان',
-          few: '{0} قراريط',
-          many: '{0} قيراطًا',
-          other: '{0} قيراط',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قيراط',
-          zero: '{0} قيراط',
-          one: '{0} قيراط',
-          two: '{0} قيراط',
-          few: '{0} قيراط',
-          many: '{0} قيراط',
-          other: '{0} قيراط',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قيراط',
-          zero: '{0} قيراط',
-          one: '{0} قيراط',
-          two: '{0} قيراط',
-          few: '{0} قيراط',
-          many: '{0} قيراط',
-          other: '{0} قيراط',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قيراط',
+      zero: '{0} قيراط',
+      one: 'قيراط',
+      two: 'قيراطان',
+      few: '{0} قراريط',
+      many: '{0} قيراطًا',
+      other: '{0} قيراط',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قيراط',
+      zero: '{0} قيراط',
+      one: '{0} قيراط',
+      two: '{0} قيراط',
+      few: '{0} قيراط',
+      many: '{0} قيراط',
+      other: '{0} قيراط',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قيراط',
+      zero: '{0} قيراط',
+      one: '{0} قيراط',
+      two: '{0} قيراط',
+      few: '{0} قيراط',
+      many: '{0} قيراط',
+      other: '{0} قيراط',
+    ),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'دالتون',
-          zero: '{0} دالتون',
-          one: '{0} دالتون',
-          two: '{0} دالتون',
-          few: '{0} دالتون',
-          many: '{0} دالتون',
-          other: '{0} دالتون',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'دالتون',
-          zero: '{0} دالتون',
-          one: '{0} دالتون',
-          two: '{0} دالتون',
-          few: '{0} دالتون',
-          many: '{0} دالتون',
-          other: '{0} دالتون',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'دالتون',
-          zero: '{0} دالتون',
-          one: '{0} دالتون',
-          two: '{0} دالتون',
-          few: '{0} دالتون',
-          many: '{0} دالتون',
-          other: '{0} دالتون',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'دالتون',
+      zero: '{0} دالتون',
+      one: '{0} دالتون',
+      two: '{0} دالتون',
+      few: '{0} دالتون',
+      many: '{0} دالتون',
+      other: '{0} دالتون',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'دالتون',
+      zero: '{0} دالتون',
+      one: '{0} دالتون',
+      two: '{0} دالتون',
+      few: '{0} دالتون',
+      many: '{0} دالتون',
+      other: '{0} دالتون',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'دالتون',
+      zero: '{0} دالتون',
+      one: '{0} دالتون',
+      two: '{0} دالتون',
+      few: '{0} دالتون',
+      many: '{0} دالتون',
+      other: '{0} دالتون',
+    ),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كتلة أرضية',
-          zero: '{0} كتلة أرضية',
-          one: '{0} كتلة أرضية',
-          two: '{0} كتلة أرضية',
-          few: '{0} كتلة أرضية',
-          many: '{0} كتلة أرضية',
-          other: '{0} كتلة أرضية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كتلة أرضية',
-          zero: '{0} كتلة أرضية',
-          one: '{0} كتلة أرضية',
-          two: '{0} كتلة أرضية',
-          few: '{0} كتلة أرضية',
-          many: '{0} كتلة أرضية',
-          other: '{0} كتلة أرضية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كتلة أرضية',
-          zero: '{0} كتلة أرضية',
-          one: '{0} كتلة أرضية',
-          two: '{0} كتلة أرضية',
-          few: '{0} كتلة أرضية',
-          many: '{0} كتلة أرضية',
-          other: '{0} كتلة أرضية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كتلة أرضية',
+      zero: '{0} كتلة أرضية',
+      one: '{0} كتلة أرضية',
+      two: '{0} كتلة أرضية',
+      few: '{0} كتلة أرضية',
+      many: '{0} كتلة أرضية',
+      other: '{0} كتلة أرضية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كتلة أرضية',
+      zero: '{0} كتلة أرضية',
+      one: '{0} كتلة أرضية',
+      two: '{0} كتلة أرضية',
+      few: '{0} كتلة أرضية',
+      many: '{0} كتلة أرضية',
+      other: '{0} كتلة أرضية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كتلة أرضية',
+      zero: '{0} كتلة أرضية',
+      one: '{0} كتلة أرضية',
+      two: '{0} كتلة أرضية',
+      few: '{0} كتلة أرضية',
+      many: '{0} كتلة أرضية',
+      other: '{0} كتلة أرضية',
+    ),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كتلة شمسية',
-          zero: '{0} كتلة شمسية',
-          one: '{0} كتلة شمسية',
-          two: '{0} كتلة شمسية',
-          few: '{0} كتلة شمسية',
-          many: '{0} كتلة شمسية',
-          other: '{0} كتلة شمسية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كتلة شمسية',
-          zero: '{0} كتلة شمسية',
-          one: '{0} كتلة شمسية',
-          two: '{0} كتلة شمسية',
-          few: '{0} كتلة شمسية',
-          many: '{0} كتلة شمسية',
-          other: '{0} كتلة شمسية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كتلة شمسية',
-          zero: '{0} كتلة شمسية',
-          one: '{0} كتلة شمسية',
-          two: '{0} كتلة شمسية',
-          few: '{0} كتلة شمسية',
-          many: '{0} كتلة شمسية',
-          other: '{0} كتلة شمسية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كتلة شمسية',
+      zero: '{0} كتلة شمسية',
+      one: '{0} كتلة شمسية',
+      two: '{0} كتلة شمسية',
+      few: '{0} كتلة شمسية',
+      many: '{0} كتلة شمسية',
+      other: '{0} كتلة شمسية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كتلة شمسية',
+      zero: '{0} كتلة شمسية',
+      one: '{0} كتلة شمسية',
+      two: '{0} كتلة شمسية',
+      few: '{0} كتلة شمسية',
+      many: '{0} كتلة شمسية',
+      other: '{0} كتلة شمسية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كتلة شمسية',
+      zero: '{0} كتلة شمسية',
+      one: '{0} كتلة شمسية',
+      two: '{0} كتلة شمسية',
+      few: '{0} كتلة شمسية',
+      many: '{0} كتلة شمسية',
+      other: '{0} كتلة شمسية',
+    ),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قمحة',
-          zero: '{0} قمحة',
-          one: '{0} قمحة',
-          two: '{0} قمحة',
-          few: '{0} قمحة',
-          many: '{0} قمحة',
-          other: '{0} قمحة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قمحة',
-          zero: '{0} قمحة',
-          one: '{0} قمحة',
-          two: '{0} قمحة',
-          few: '{0} قمحة',
-          many: '{0} قمحة',
-          other: '{0} قمحة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قمحة',
-          zero: '{0} قمحة',
-          one: '{0} قمحة',
-          two: '{0} قمحة',
-          few: '{0} قمحة',
-          many: '{0} قمحة',
-          other: '{0} قمحة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قمحة',
+      zero: '{0} قمحة',
+      one: '{0} قمحة',
+      two: '{0} قمحة',
+      few: '{0} قمحة',
+      many: '{0} قمحة',
+      other: '{0} قمحة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قمحة',
+      zero: '{0} قمحة',
+      one: '{0} قمحة',
+      two: '{0} قمحة',
+      few: '{0} قمحة',
+      many: '{0} قمحة',
+      other: '{0} قمحة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قمحة',
+      zero: '{0} قمحة',
+      one: '{0} قمحة',
+      two: '{0} قمحة',
+      few: '{0} قمحة',
+      many: '{0} قمحة',
+      other: '{0} قمحة',
+    ),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'غيغا واط',
-          zero: '{0} غيغا واط',
-          one: '{0} غيغا واط',
-          two: '{0} غيغا واط',
-          few: '{0} غيغا واط',
-          many: '{0} غيغا واط',
-          other: '{0} غيغا واط',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'غ واط',
-          zero: '{0} غ واط',
-          one: '{0} غ واط',
-          two: '{0} غ واط',
-          few: '{0} غ واط',
-          many: '{0} غ واط',
-          other: '{0} غ واط',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'غ واط',
-          zero: '{0} غ واط',
-          one: '{0} غ واط',
-          two: '{0} غ واط',
-          few: '{0} غ واط',
-          many: '{0} غ واط',
-          other: '{0} غ واط',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'غيغا واط',
+      zero: '{0} غيغا واط',
+      one: '{0} غيغا واط',
+      two: '{0} غيغا واط',
+      few: '{0} غيغا واط',
+      many: '{0} غيغا واط',
+      other: '{0} غيغا واط',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'غ واط',
+      zero: '{0} غ واط',
+      one: '{0} غ واط',
+      two: '{0} غ واط',
+      few: '{0} غ واط',
+      many: '{0} غ واط',
+      other: '{0} غ واط',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'غ واط',
+      zero: '{0} غ واط',
+      one: '{0} غ واط',
+      two: '{0} غ واط',
+      few: '{0} غ واط',
+      many: '{0} غ واط',
+      other: '{0} غ واط',
+    ),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميغا واط',
-          zero: '{0} ميغا واط',
-          one: '{0} ميغا واط',
-          two: '{0} ميغا واط',
-          few: '{0} ميغا واط',
-          many: '{0} ميغا واط',
-          other: '{0} ميغا واط',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م واط',
-          zero: '{0} م واط',
-          one: '{0} م واط',
-          two: '{0} م واط',
-          few: '{0} م واط',
-          many: '{0} م واط',
-          other: '{0} م واط',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م واط',
-          zero: '{0} م واط',
-          one: '{0} م واط',
-          two: '{0} م واط',
-          few: '{0} م واط',
-          many: '{0} م واط',
-          other: '{0} م واط',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميغا واط',
+      zero: '{0} ميغا واط',
+      one: '{0} ميغا واط',
+      two: '{0} ميغا واط',
+      few: '{0} ميغا واط',
+      many: '{0} ميغا واط',
+      other: '{0} ميغا واط',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م واط',
+      zero: '{0} م واط',
+      one: '{0} م واط',
+      two: '{0} م واط',
+      few: '{0} م واط',
+      many: '{0} م واط',
+      other: '{0} م واط',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م واط',
+      zero: '{0} م واط',
+      one: '{0} م واط',
+      two: '{0} م واط',
+      few: '{0} م واط',
+      many: '{0} م واط',
+      other: '{0} م واط',
+    ),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلوواط',
-          zero: '{0} كيلوواط',
-          one: '{0} كيلوواط',
-          two: '{0} كيلوواط',
-          few: '{0} كيلوواط',
-          many: '{0} كيلوواط',
-          other: '{0} كيلوواط',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ك واط',
-          zero: '{0} كيلوواط',
-          one: '{0} كيلوواط',
-          two: '{0} كيلوواط',
-          few: '{0} كيلوواط',
-          many: '{0} كيلوواط',
-          other: '{0} كيلوواط',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك واط',
-          zero: '{0} ك واط',
-          one: '{0} ك واط',
-          two: '{0} ك واط',
-          few: '{0} ك واط',
-          many: '{0} ك واط',
-          other: '{0} ك واط',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلوواط',
+      zero: '{0} كيلوواط',
+      one: '{0} كيلوواط',
+      two: '{0} كيلوواط',
+      few: '{0} كيلوواط',
+      many: '{0} كيلوواط',
+      other: '{0} كيلوواط',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ك واط',
+      zero: '{0} كيلوواط',
+      one: '{0} كيلوواط',
+      two: '{0} كيلوواط',
+      few: '{0} كيلوواط',
+      many: '{0} كيلوواط',
+      other: '{0} كيلوواط',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك واط',
+      zero: '{0} ك واط',
+      one: '{0} ك واط',
+      two: '{0} ك واط',
+      few: '{0} ك واط',
+      many: '{0} ك واط',
+      other: '{0} ك واط',
+    ),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'واط',
-          zero: '{0} واط',
-          one: '{0} واط',
-          two: '{0} واط',
-          few: '{0} واط',
-          many: '{0} واط',
-          other: '{0} واط',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'واط',
-          zero: '{0} واط',
-          one: '{0} واط',
-          two: '{0} واط',
-          few: '{0} واط',
-          many: '{0} واط',
-          other: '{0} واط',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'واط',
-          zero: '{0} واط',
-          one: '{0} واط',
-          two: '{0} واط',
-          few: '{0} واط',
-          many: '{0} واط',
-          other: '{0} واط',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'واط',
+      zero: '{0} واط',
+      one: '{0} واط',
+      two: '{0} واط',
+      few: '{0} واط',
+      many: '{0} واط',
+      other: '{0} واط',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'واط',
+      zero: '{0} واط',
+      one: '{0} واط',
+      two: '{0} واط',
+      few: '{0} واط',
+      many: '{0} واط',
+      other: '{0} واط',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'واط',
+      zero: '{0} واط',
+      one: '{0} واط',
+      two: '{0} واط',
+      few: '{0} واط',
+      many: '{0} واط',
+      other: '{0} واط',
+    ),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملي واط',
-          zero: '{0} ملي واط',
-          one: '{0} ملي واط',
-          two: '{0} ملي واط',
-          few: '{0} ملي واط',
-          many: '{0} ملي واط',
-          other: '{0} ملي واط',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملي واط',
-          zero: '{0} ملي واط',
-          one: '{0} ملي واط',
-          two: '{0} ملي واط',
-          few: '{0} ملي واط',
-          many: '{0} ملي واط',
-          other: '{0} ملي واط',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملي واط',
-          zero: '{0} ملي واط',
-          one: '{0} ملي واط',
-          two: '{0} ملي واط',
-          few: '{0} ملي واط',
-          many: '{0} ملي واط',
-          other: '{0} ملي واط',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملي واط',
+      zero: '{0} ملي واط',
+      one: '{0} ملي واط',
+      two: '{0} ملي واط',
+      few: '{0} ملي واط',
+      many: '{0} ملي واط',
+      other: '{0} ملي واط',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملي واط',
+      zero: '{0} ملي واط',
+      one: '{0} ملي واط',
+      two: '{0} ملي واط',
+      few: '{0} ملي واط',
+      many: '{0} ملي واط',
+      other: '{0} ملي واط',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملي واط',
+      zero: '{0} ملي واط',
+      one: '{0} ملي واط',
+      two: '{0} ملي واط',
+      few: '{0} ملي واط',
+      many: '{0} ملي واط',
+      other: '{0} ملي واط',
+    ),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قوة حصان',
-          zero: '{0} قوة حصان',
-          one: '{0} قوة حصان',
-          two: '{0} قوة حصان',
-          few: '{0} قوة حصان',
-          many: '{0} قوة حصان',
-          other: '{0} قوة حصان',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'حصان',
-          zero: '{0} حصان',
-          one: '{0} حصان',
-          two: '{0} حصان',
-          few: '{0} حصان',
-          many: '{0} حصان',
-          other: '{0} حصان',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'حصان',
-          zero: '{0} حصان',
-          one: '{0} حصان',
-          two: '{0} حصان',
-          few: '{0} حصان',
-          many: '{0} حصان',
-          other: '{0} حصان',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قوة حصان',
+      zero: '{0} قوة حصان',
+      one: '{0} قوة حصان',
+      two: '{0} قوة حصان',
+      few: '{0} قوة حصان',
+      many: '{0} قوة حصان',
+      other: '{0} قوة حصان',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'حصان',
+      zero: '{0} حصان',
+      one: '{0} حصان',
+      two: '{0} حصان',
+      few: '{0} حصان',
+      many: '{0} حصان',
+      other: '{0} حصان',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'حصان',
+      zero: '{0} حصان',
+      one: '{0} حصان',
+      two: '{0} حصان',
+      few: '{0} حصان',
+      many: '{0} حصان',
+      other: '{0} حصان',
+    ),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'مليمتر زئبقي',
-          zero: '{0} مليمتر زئبقي',
-          one: '{0} مليمتر زئبقي',
-          two: '{0} مليمتر زئبقي',
-          few: '{0} مليمتر زئبقي',
-          many: '{0} مليمتر زئبقي',
-          other: '{0} مليمتر زئبقي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملم زئبقي',
-          zero: '{0} ملم زئبقي',
-          one: '{0} ملم زئبقي',
-          two: '{0} ملم زئبقي',
-          few: '{0} ملم زئبقي',
-          many: '{0} ملم زئبقي',
-          other: '{0} ملم زئبقي',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملم زئبقي',
-          zero: '{0} ملم زئبقي',
-          one: '{0} ملم زئبقي',
-          two: '{0} ملم زئبقي',
-          few: '{0} ملم زئبقي',
-          many: '{0} ملم زئبقي',
-          other: '{0} ملم زئبقي',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'مليمتر زئبقي',
+      zero: '{0} مليمتر زئبقي',
+      one: '{0} مليمتر زئبقي',
+      two: '{0} مليمتر زئبقي',
+      few: '{0} مليمتر زئبقي',
+      many: '{0} مليمتر زئبقي',
+      other: '{0} مليمتر زئبقي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملم زئبقي',
+      zero: '{0} ملم زئبقي',
+      one: '{0} ملم زئبقي',
+      two: '{0} ملم زئبقي',
+      few: '{0} ملم زئبقي',
+      many: '{0} ملم زئبقي',
+      other: '{0} ملم زئبقي',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملم زئبقي',
+      zero: '{0} ملم زئبقي',
+      one: '{0} ملم زئبقي',
+      two: '{0} ملم زئبقي',
+      few: '{0} ملم زئبقي',
+      many: '{0} ملم زئبقي',
+      other: '{0} ملم زئبقي',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'رطل لكل بوصة مربعة',
-          zero: '{0} رطل لكل بوصة مربعة',
-          one: '{0} رطل لكل بوصة مربعة',
-          two: '{0} رطل لكل بوصة مربعة',
-          few: '{0} رطل لكل بوصة مربعة',
-          many: '{0} رطل لكل بوصة مربعة',
-          other: '{0} رطل لكل بوصة مربعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'رطل/بوصة مربعة',
-          zero: '{0} رطل/بوصة²',
-          one: '{0} رطل/بوصة²',
-          two: '{0} رطل/بوصة²',
-          few: '{0} رطل/بوصة²',
-          many: '{0} رطل/بوصة²',
-          other: '{0} رطل/بوصة²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'رطل/بوصة²',
-          zero: '{0} رطل/بوصة²',
-          one: '{0} رطل/بوصة²',
-          two: '{0} رطل/بوصة²',
-          few: '{0} رطل/بوصة²',
-          many: '{0} رطل/بوصة²',
-          other: '{0} رطل/بوصة²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'رطل لكل بوصة مربعة',
+      zero: '{0} رطل لكل بوصة مربعة',
+      one: '{0} رطل لكل بوصة مربعة',
+      two: '{0} رطل لكل بوصة مربعة',
+      few: '{0} رطل لكل بوصة مربعة',
+      many: '{0} رطل لكل بوصة مربعة',
+      other: '{0} رطل لكل بوصة مربعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'رطل/بوصة مربعة',
+      zero: '{0} رطل/بوصة²',
+      one: '{0} رطل/بوصة²',
+      two: '{0} رطل/بوصة²',
+      few: '{0} رطل/بوصة²',
+      many: '{0} رطل/بوصة²',
+      other: '{0} رطل/بوصة²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'رطل/بوصة²',
+      zero: '{0} رطل/بوصة²',
+      one: '{0} رطل/بوصة²',
+      two: '{0} رطل/بوصة²',
+      few: '{0} رطل/بوصة²',
+      many: '{0} رطل/بوصة²',
+      other: '{0} رطل/بوصة²',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بوصة زئبقية',
-          zero: '{0} بوصة زئبقية',
-          one: '{0} بوصة زئبقية',
-          two: '{0} بوصة زئبقية',
-          few: '{0} بوصة زئبقية',
-          many: '{0} بوصة زئبقية',
-          other: '{0} بوصة زئبقية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ب. زئبقية',
-          zero: '{0} ب. زئبقية',
-          one: '{0} ب. زئبقية',
-          two: '{0} ب. زئبقية',
-          few: '{0} ب. زئبقية',
-          many: '{0} ب. زئبقية',
-          other: '{0} ب. زئبقية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ب ز',
-          zero: '{0} ب ز',
-          one: '{0} ب ز',
-          two: '{0} ب ز',
-          few: '{0} ب ز',
-          many: '{0} ب ز',
-          other: '{0} ب ز',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بوصة زئبقية',
+      zero: '{0} بوصة زئبقية',
+      one: '{0} بوصة زئبقية',
+      two: '{0} بوصة زئبقية',
+      few: '{0} بوصة زئبقية',
+      many: '{0} بوصة زئبقية',
+      other: '{0} بوصة زئبقية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ب. زئبقية',
+      zero: '{0} ب. زئبقية',
+      one: '{0} ب. زئبقية',
+      two: '{0} ب. زئبقية',
+      few: '{0} ب. زئبقية',
+      many: '{0} ب. زئبقية',
+      other: '{0} ب. زئبقية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ب ز',
+      zero: '{0} ب ز',
+      one: '{0} ب ز',
+      two: '{0} ب ز',
+      few: '{0} ب ز',
+      many: '{0} ب ز',
+      other: '{0} ب ز',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بار',
-          zero: '{0} بار',
-          one: '{0} بار',
-          two: '{0} بار',
-          few: '{0} بار',
-          many: '{0} بار',
-          other: '{0} بار',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بار',
-          zero: '{0} بار',
-          one: '{0} بار',
-          two: '{0} بار',
-          few: '{0} بار',
-          many: '{0} بار',
-          other: '{0} بار',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بار',
-          zero: '{0} بار',
-          one: '{0} بار',
-          two: '{0} بار',
-          few: '{0} بار',
-          many: '{0} بار',
-          other: '{0} بار',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بار',
+      zero: '{0} بار',
+      one: '{0} بار',
+      two: '{0} بار',
+      few: '{0} بار',
+      many: '{0} بار',
+      other: '{0} بار',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بار',
+      zero: '{0} بار',
+      one: '{0} بار',
+      two: '{0} بار',
+      few: '{0} بار',
+      many: '{0} بار',
+      other: '{0} بار',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بار',
+      zero: '{0} بار',
+      one: '{0} بار',
+      two: '{0} بار',
+      few: '{0} بار',
+      many: '{0} بار',
+      other: '{0} بار',
+    ),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملي بار',
-          zero: '{0} ملي بار',
-          one: '{0} ملي بار',
-          two: '{0} ملي بار',
-          few: '{0} ملي بار',
-          many: '{0} ملي بار',
-          other: '{0} ملي بار',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م. بار',
-          zero: '{0} م. بار',
-          one: '{0} م. بار',
-          two: '{0} م. بار',
-          few: '{0} م. بار',
-          many: '{0} م. بار',
-          other: '{0} م. بار',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م. بار',
-          zero: '{0} م. بار',
-          one: '{0} م. بار',
-          two: '{0} م. بار',
-          few: '{0} م. بار',
-          many: '{0} م. بار',
-          other: '{0} م. بار',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملي بار',
+      zero: '{0} ملي بار',
+      one: '{0} ملي بار',
+      two: '{0} ملي بار',
+      few: '{0} ملي بار',
+      many: '{0} ملي بار',
+      other: '{0} ملي بار',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م. بار',
+      zero: '{0} م. بار',
+      one: '{0} م. بار',
+      two: '{0} م. بار',
+      few: '{0} م. بار',
+      many: '{0} م. بار',
+      other: '{0} م. بار',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م. بار',
+      zero: '{0} م. بار',
+      one: '{0} م. بار',
+      two: '{0} م. بار',
+      few: '{0} م. بار',
+      many: '{0} م. بار',
+      other: '{0} م. بار',
+    ),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'وحدة الضغط الجوي',
-          zero: '{0} ض.ج',
-          one: '{0} ضغط جوي',
-          two: '{0} ض.ج',
-          few: '{0} ض.ج',
-          many: '{0} ض.ج',
-          other: '{0} ضغط جوي',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ض.ج',
-          zero: '{0} ض.ج',
-          one: '{0} ض.ج',
-          two: '{0} ض.ج',
-          few: '{0} ض.ج',
-          many: '{0} ض.ج',
-          other: '{0} ض.ج',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ض.ج',
-          zero: '{0} ض.ج',
-          one: '{0} ض.ج',
-          two: '{0} ض.ج',
-          few: '{0} ض.ج',
-          many: '{0} ض.ج',
-          other: '{0} ض.ج',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'وحدة الضغط الجوي',
+      zero: '{0} ض.ج',
+      one: '{0} ضغط جوي',
+      two: '{0} ض.ج',
+      few: '{0} ض.ج',
+      many: '{0} ض.ج',
+      other: '{0} ضغط جوي',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ض.ج',
+      zero: '{0} ض.ج',
+      one: '{0} ض.ج',
+      two: '{0} ض.ج',
+      few: '{0} ض.ج',
+      many: '{0} ض.ج',
+      other: '{0} ض.ج',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ض.ج',
+      zero: '{0} ض.ج',
+      one: '{0} ض.ج',
+      two: '{0} ض.ج',
+      few: '{0} ض.ج',
+      many: '{0} ض.ج',
+      other: '{0} ض.ج',
+    ),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'باسكال',
-          zero: '{0} باسكال',
-          one: '{0} باسكال',
-          two: '{0} باسكال',
-          few: '{0} باسكال',
-          many: '{0} باسكال',
-          other: '{0} باسكال',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'باسكال',
-          zero: '{0} باسكال',
-          one: '{0} باسكال',
-          two: '{0} باسكال',
-          few: '{0} باسكال',
-          many: '{0} باسكال',
-          other: '{0} باسكال',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'باسكال',
-          zero: '{0} باسكال',
-          one: '{0} باسكال',
-          two: '{0} باسكال',
-          few: '{0} باسكال',
-          many: '{0} باسكال',
-          other: '{0} باسكال',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'باسكال',
+      zero: '{0} باسكال',
+      one: '{0} باسكال',
+      two: '{0} باسكال',
+      few: '{0} باسكال',
+      many: '{0} باسكال',
+      other: '{0} باسكال',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'باسكال',
+      zero: '{0} باسكال',
+      one: '{0} باسكال',
+      two: '{0} باسكال',
+      few: '{0} باسكال',
+      many: '{0} باسكال',
+      other: '{0} باسكال',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'باسكال',
+      zero: '{0} باسكال',
+      one: '{0} باسكال',
+      two: '{0} باسكال',
+      few: '{0} باسكال',
+      many: '{0} باسكال',
+      other: '{0} باسكال',
+    ),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'هكتوباسكال',
-          zero: '{0} هكتوباسكال',
-          one: '{0} هكتوباسكال',
-          two: '{0} هكتوباسكال',
-          few: '{0} هكتوباسكال',
-          many: '{0} هكتوباسكال',
-          other: '{0} هكتوباسكال',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'هكتوباسكال',
-          zero: '{0} هكتوباسكال',
-          one: '{0} هكتوباسكال',
-          two: '{0} هكتوباسكال',
-          few: '{0} هكتوباسكال',
-          many: '{0} هكتوباسكال',
-          other: '{0} هكتوباسكال',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'هكتوباسكال',
-          zero: '{0} هكتوباسكال',
-          one: '{0} هكتوباسكال',
-          two: '{0} هكتوباسكال',
-          few: '{0} هكتوباسكال',
-          many: '{0} هكتوباسكال',
-          other: '{0} هكتوباسكال',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'هكتوباسكال',
+      zero: '{0} هكتوباسكال',
+      one: '{0} هكتوباسكال',
+      two: '{0} هكتوباسكال',
+      few: '{0} هكتوباسكال',
+      many: '{0} هكتوباسكال',
+      other: '{0} هكتوباسكال',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'هكتوباسكال',
+      zero: '{0} هكتوباسكال',
+      one: '{0} هكتوباسكال',
+      two: '{0} هكتوباسكال',
+      few: '{0} هكتوباسكال',
+      many: '{0} هكتوباسكال',
+      other: '{0} هكتوباسكال',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'هكتوباسكال',
+      zero: '{0} هكتوباسكال',
+      one: '{0} هكتوباسكال',
+      two: '{0} هكتوباسكال',
+      few: '{0} هكتوباسكال',
+      many: '{0} هكتوباسكال',
+      other: '{0} هكتوباسكال',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلوباسكال',
-          zero: '{0} كيلوباسكال',
-          one: '{0} كيلوباسكال',
-          two: '{0} كيلوباسكال',
-          few: '{0} كيلوباسكال',
-          many: '{0} كيلوباسكال',
-          other: '{0} كيلوباسكال',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ك.باسكال',
-          zero: '{0} ك.باسكال',
-          one: '{0} ك.باسكال',
-          two: '{0} ك.باسكال',
-          few: '{0} ك.باسكال',
-          many: '{0} ك.باسكال',
-          other: '{0} ك.باسكال',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ك.باسكال',
-          zero: '{0} ك.باسكال',
-          one: '{0} ك.باسكال',
-          two: '{0} ك.باسكال',
-          few: '{0} ك.باسكال',
-          many: '{0} ك.باسكال',
-          other: '{0} ك.باسكال',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلوباسكال',
+      zero: '{0} كيلوباسكال',
+      one: '{0} كيلوباسكال',
+      two: '{0} كيلوباسكال',
+      few: '{0} كيلوباسكال',
+      many: '{0} كيلوباسكال',
+      other: '{0} كيلوباسكال',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ك.باسكال',
+      zero: '{0} ك.باسكال',
+      one: '{0} ك.باسكال',
+      two: '{0} ك.باسكال',
+      few: '{0} ك.باسكال',
+      many: '{0} ك.باسكال',
+      other: '{0} ك.باسكال',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ك.باسكال',
+      zero: '{0} ك.باسكال',
+      one: '{0} ك.باسكال',
+      two: '{0} ك.باسكال',
+      few: '{0} ك.باسكال',
+      many: '{0} ك.باسكال',
+      other: '{0} ك.باسكال',
+    ),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميغاباسكال',
-          zero: '{0} ميغاباسكال',
-          one: '{0} ميغاباسكال',
-          two: '{0} ميغاباسكال',
-          few: '{0} ميغاباسكال',
-          many: '{0} ميغاباسكال',
-          other: '{0} ميغاباسكال',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م.باسكال',
-          zero: '{0} م.باسكال',
-          one: '{0} م.باسكال',
-          two: '{0} م.باسكال',
-          few: '{0} م.باسكال',
-          many: '{0} م.باسكال',
-          other: '{0} م.باسكال',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م.باسكال',
-          zero: '{0} م.باسكال',
-          one: '{0} م.باسكال',
-          two: '{0} م.باسكال',
-          few: '{0} م.باسكال',
-          many: '{0} م.باسكال',
-          other: '{0} م.باسكال',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميغاباسكال',
+      zero: '{0} ميغاباسكال',
+      one: '{0} ميغاباسكال',
+      two: '{0} ميغاباسكال',
+      few: '{0} ميغاباسكال',
+      many: '{0} ميغاباسكال',
+      other: '{0} ميغاباسكال',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م.باسكال',
+      zero: '{0} م.باسكال',
+      one: '{0} م.باسكال',
+      two: '{0} م.باسكال',
+      few: '{0} م.باسكال',
+      many: '{0} م.باسكال',
+      other: '{0} م.باسكال',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م.باسكال',
+      zero: '{0} م.باسكال',
+      one: '{0} م.باسكال',
+      two: '{0} م.باسكال',
+      few: '{0} م.باسكال',
+      many: '{0} م.باسكال',
+      other: '{0} م.باسكال',
+    ),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلومتر في الساعة',
-          zero: '{0} كيلومتر في الساعة',
-          one: '{0} كيلومتر في الساعة',
-          two: '{0} كيلومتر في الساعة',
-          few: '{0} كيلومتر في الساعة',
-          many: '{0} كيلومتر في الساعة',
-          other: '{0} كيلومتر في الساعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كم/س',
-          zero: '{0} كم/س',
-          one: '{0} كم/س',
-          two: '{0} كم/س',
-          few: '{0} كم/س',
-          many: '{0} كم/س',
-          other: '{0} كم/س',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كم/س',
-          zero: '{0} كم/س',
-          one: '{0} كم/س',
-          two: '{0} كم/س',
-          few: '{0} كم/س',
-          many: '{0} كم/س',
-          other: '{0} كم/س',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلومتر في الساعة',
+      zero: '{0} كيلومتر في الساعة',
+      one: '{0} كيلومتر في الساعة',
+      two: '{0} كيلومتر في الساعة',
+      few: '{0} كيلومتر في الساعة',
+      many: '{0} كيلومتر في الساعة',
+      other: '{0} كيلومتر في الساعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كم/س',
+      zero: '{0} كم/س',
+      one: '{0} كم/س',
+      two: '{0} كم/س',
+      few: '{0} كم/س',
+      many: '{0} كم/س',
+      other: '{0} كم/س',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كم/س',
+      zero: '{0} كم/س',
+      one: '{0} كم/س',
+      two: '{0} كم/س',
+      few: '{0} كم/س',
+      many: '{0} كم/س',
+      other: '{0} كم/س',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'متر في الثانية',
-          zero: '{0} متر في الثانية',
-          one: '{0} متر في الثانية',
-          two: '{0} متر في الثانية',
-          few: '{0} متر في الثانية',
-          many: '{0} متر في الثانية',
-          other: '{0} متر في الثانية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م/ث',
-          zero: '{0} م/ث',
-          one: '{0} م/ث',
-          two: '{0} م/ث',
-          few: '{0} م/ث',
-          many: '{0} م/ث',
-          other: '{0} م/ث',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م/ث',
-          zero: '{0} م/ث',
-          one: '{0} م/ث',
-          two: '{0} م/ث',
-          few: '{0} م/ث',
-          many: '{0} م/ث',
-          other: '{0} م/ث',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'متر في الثانية',
+      zero: '{0} متر في الثانية',
+      one: '{0} متر في الثانية',
+      two: '{0} متر في الثانية',
+      few: '{0} متر في الثانية',
+      many: '{0} متر في الثانية',
+      other: '{0} متر في الثانية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م/ث',
+      zero: '{0} م/ث',
+      one: '{0} م/ث',
+      two: '{0} م/ث',
+      few: '{0} م/ث',
+      many: '{0} م/ث',
+      other: '{0} م/ث',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م/ث',
+      zero: '{0} م/ث',
+      one: '{0} م/ث',
+      two: '{0} م/ث',
+      few: '{0} م/ث',
+      many: '{0} م/ث',
+      other: '{0} م/ث',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل في الساعة',
-          zero: '{0} ميل في الساعة',
-          one: '{0} ميل في الساعة',
-          two: '{0} ميل في الساعة',
-          few: '{0} ميل في الساعة',
-          many: '{0} ميل في الساعة',
-          other: '{0} ميل في الساعة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل/س',
-          zero: '{0} ميل/س',
-          one: '{0} ميل/س',
-          two: '{0} ميل/س',
-          few: '{0} ميل/س',
-          many: '{0} ميل/س',
-          other: '{0} ميل/س',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل/س',
-          zero: '{0} ميل/س',
-          one: '{0} ميل/س',
-          two: '{0} ميل/س',
-          few: '{0} ميل/س',
-          many: '{0} ميل/س',
-          other: '{0} ميل/س',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل في الساعة',
+      zero: '{0} ميل في الساعة',
+      one: '{0} ميل في الساعة',
+      two: '{0} ميل في الساعة',
+      few: '{0} ميل في الساعة',
+      many: '{0} ميل في الساعة',
+      other: '{0} ميل في الساعة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل/س',
+      zero: '{0} ميل/س',
+      one: '{0} ميل/س',
+      two: '{0} ميل/س',
+      few: '{0} ميل/س',
+      many: '{0} ميل/س',
+      other: '{0} ميل/س',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل/س',
+      zero: '{0} ميل/س',
+      one: '{0} ميل/س',
+      two: '{0} ميل/س',
+      few: '{0} ميل/س',
+      many: '{0} ميل/س',
+      other: '{0} ميل/س',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'عقدة',
-          zero: '{0} عقدة',
-          one: '{0} عقدة',
-          two: '{0} عقدة',
-          few: '{0} عقدة',
-          many: '{0} عقدة',
-          other: '{0} عقدة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'عقدة',
-          zero: '{0} عقدة',
-          one: '{0} عقدة',
-          two: '{0} عقدة',
-          few: '{0} عقدة',
-          many: '{0} عقدة',
-          other: '{0} عقدة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'عقدة',
-          zero: '{0} عقدة',
-          one: '{0} عقدة',
-          two: '{0} عقدة',
-          few: '{0} عقدة',
-          many: '{0} عقدة',
-          other: '{0} عقدة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'عقدة',
+      zero: '{0} عقدة',
+      one: '{0} عقدة',
+      two: '{0} عقدة',
+      few: '{0} عقدة',
+      many: '{0} عقدة',
+      other: '{0} عقدة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'عقدة',
+      zero: '{0} عقدة',
+      one: '{0} عقدة',
+      two: '{0} عقدة',
+      few: '{0} عقدة',
+      many: '{0} عقدة',
+      other: '{0} عقدة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'عقدة',
+      zero: '{0} عقدة',
+      one: '{0} عقدة',
+      two: '{0} عقدة',
+      few: '{0} عقدة',
+      many: '{0} عقدة',
+      other: '{0} عقدة',
+    ),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بوفورت',
-          zero: 'بوفورت {0}',
-          one: 'بوفورت {0}',
-          two: 'بوفورت {0}',
-          few: 'بوفورت {0}',
-          many: 'بوفورت {0}',
-          other: 'بوفورت {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بوفورت',
-          zero: 'بوفورت {0}',
-          one: 'بوفورت {0}',
-          two: 'بوفورت {0}',
-          few: 'بوفورت {0}',
-          many: 'بوفورت {0}',
-          other: 'بوفورت {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بوفورت',
-          zero: 'بوفورت {0}',
-          one: 'بوفورت {0}',
-          two: 'بوفورت {0}',
-          few: 'بوفورت {0}',
-          many: 'بوفورت {0}',
-          other: 'بوفورت {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بوفورت',
+      zero: 'بوفورت {0}',
+      one: 'بوفورت {0}',
+      two: 'بوفورت {0}',
+      few: 'بوفورت {0}',
+      many: 'بوفورت {0}',
+      other: 'بوفورت {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بوفورت',
+      zero: 'بوفورت {0}',
+      one: 'بوفورت {0}',
+      two: 'بوفورت {0}',
+      few: 'بوفورت {0}',
+      many: 'بوفورت {0}',
+      other: 'بوفورت {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بوفورت',
+      zero: 'بوفورت {0}',
+      one: 'بوفورت {0}',
+      two: 'بوفورت {0}',
+      few: 'بوفورت {0}',
+      many: 'بوفورت {0}',
+      other: 'بوفورت {0}',
+    ),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} degree temperature',
-          other: '{0}°',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '°',
+      one: '{0} degree temperature',
+      other: '{0}°',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'درجة مئوية',
-          zero: '{0} درجة مئوية',
-          one: '{0} درجة مئوية',
-          two: '{0} درجة مئوية',
-          few: '{0} درجة مئوية',
-          many: '{0} درجة مئوية',
-          other: '{0} درجة مئوية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'درجة مئوية',
-          zero: '{0}°م',
-          one: '{0}°م',
-          two: '{0}°م',
-          few: '{0}°م',
-          many: '{0}°م',
-          other: '{0}°م',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°م',
-          zero: '{0}°م',
-          one: '{0}°م',
-          two: '{0}°م',
-          few: '{0}°م',
-          many: '{0}°م',
-          other: '{0}°م',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'درجة مئوية',
+      zero: '{0} درجة مئوية',
+      one: '{0} درجة مئوية',
+      two: '{0} درجة مئوية',
+      few: '{0} درجة مئوية',
+      many: '{0} درجة مئوية',
+      other: '{0} درجة مئوية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'درجة مئوية',
+      zero: '{0}°م',
+      one: '{0}°م',
+      two: '{0}°م',
+      few: '{0}°م',
+      many: '{0}°م',
+      other: '{0}°م',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°م',
+      zero: '{0}°م',
+      one: '{0}°م',
+      two: '{0}°م',
+      few: '{0}°م',
+      many: '{0}°م',
+      other: '{0}°م',
+    ),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'درجة فهرنهايت',
-          zero: '{0} درجة فهرنهايت',
-          one: '{0} درجة فهرنهايت',
-          two: '{0} درجة فهرنهايت',
-          few: '{0} درجة فهرنهايت',
-          many: '{0} درجة فهرنهايت',
-          other: '{0} درجة فهرنهايت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'درجة فهرنهايت',
-          zero: '{0}°ف',
-          one: '{0}°ف',
-          two: '{0}°ف',
-          few: '{0}°ف',
-          many: '{0}°ف',
-          other: '{0}°ف',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°ف',
-          zero: '{0}°ف',
-          one: '{0}°ف',
-          two: '{0}°ف',
-          few: '{0}°ف',
-          many: '{0}°ف',
-          other: '{0}°ف',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'درجة فهرنهايت',
+      zero: '{0} درجة فهرنهايت',
+      one: '{0} درجة فهرنهايت',
+      two: '{0} درجة فهرنهايت',
+      few: '{0} درجة فهرنهايت',
+      many: '{0} درجة فهرنهايت',
+      other: '{0} درجة فهرنهايت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'درجة فهرنهايت',
+      zero: '{0}°ف',
+      one: '{0}°ف',
+      two: '{0}°ف',
+      few: '{0}°ف',
+      many: '{0}°ف',
+      other: '{0}°ف',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°ف',
+      zero: '{0}°ف',
+      one: '{0}°ف',
+      two: '{0}°ف',
+      few: '{0}°ف',
+      many: '{0}°ف',
+      other: '{0}°ف',
+    ),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'درجة كلفن',
-          zero: '{0} درجة كلفن',
-          one: '{0} درجة كلفن',
-          two: '{0} درجة كلفن',
-          few: '{0} درجة كلفن',
-          many: '{0} درجة كلفن',
-          other: '{0} درجة كلفن',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'د كلفن',
-          zero: '{0} د كلفن',
-          one: '{0} د كلفن',
-          two: '{0} د كلفن',
-          few: '{0} د كلفن',
-          many: '{0} د كلفن',
-          other: '{0} د كلفن',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'د كلفن',
-          zero: '{0} د كلفن',
-          one: '{0} د كلفن',
-          two: '{0} د كلفن',
-          few: '{0} د كلفن',
-          many: '{0} د كلفن',
-          other: '{0} د كلفن',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'درجة كلفن',
+      zero: '{0} درجة كلفن',
+      one: '{0} درجة كلفن',
+      two: '{0} درجة كلفن',
+      few: '{0} درجة كلفن',
+      many: '{0} درجة كلفن',
+      other: '{0} درجة كلفن',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'د كلفن',
+      zero: '{0} د كلفن',
+      one: '{0} د كلفن',
+      two: '{0} د كلفن',
+      few: '{0} د كلفن',
+      many: '{0} د كلفن',
+      other: '{0} د كلفن',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'د كلفن',
+      zero: '{0} د كلفن',
+      one: '{0} د كلفن',
+      two: '{0} د كلفن',
+      few: '{0} د كلفن',
+      many: '{0} د كلفن',
+      other: '{0} د كلفن',
+    ),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'باوند قدم',
-          zero: '{0} باوند قدم',
-          one: '{0} باوند قدم',
-          two: '{0} باوند قدم',
-          few: '{0} باوند قدم',
-          many: '{0} باوند قدم',
-          other: '{0} باوند قدم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'باوند قدم',
-          zero: '{0} باوند قدم',
-          one: '{0} باوند قدم',
-          two: '{0} باوند قدم',
-          few: '{0} باوند قدم',
-          many: '{0} باوند قدم',
-          other: '{0} باوند قدم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'باوند قدم',
-          zero: '{0} باوند قدم',
-          one: '{0} باوند قدم',
-          two: '{0} باوند قدم',
-          few: '{0} باوند قدم',
-          many: '{0} باوند قدم',
-          other: '{0} باوند قدم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'باوند قدم',
+      zero: '{0} باوند قدم',
+      one: '{0} باوند قدم',
+      two: '{0} باوند قدم',
+      few: '{0} باوند قدم',
+      many: '{0} باوند قدم',
+      other: '{0} باوند قدم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'باوند قدم',
+      zero: '{0} باوند قدم',
+      one: '{0} باوند قدم',
+      two: '{0} باوند قدم',
+      few: '{0} باوند قدم',
+      many: '{0} باوند قدم',
+      other: '{0} باوند قدم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'باوند قدم',
+      zero: '{0} باوند قدم',
+      one: '{0} باوند قدم',
+      two: '{0} باوند قدم',
+      few: '{0} باوند قدم',
+      many: '{0} باوند قدم',
+      other: '{0} باوند قدم',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'نيوتن متر',
-          zero: '{0} نيوتن متر',
-          one: '{0} نيوتن متر',
-          two: '{0} نيوتن متر',
-          few: '{0} نيوتن متر',
-          many: '{0} نيوتن متر',
-          other: '{0} نيوتن متر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'نيوتن متر',
-          zero: '{0} نيوتن متر',
-          one: '{0} نيوتن متر',
-          two: '{0} نيوتن متر',
-          few: '{0} نيوتن متر',
-          many: '{0} نيوتن متر',
-          other: '{0} نيوتن متر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'نيوتن م',
-          zero: '{0} نيوتن م',
-          one: '{0} نيوتن م',
-          two: '{0} نيوتن م',
-          few: '{0} نيوتن م',
-          many: '{0} نيوتن م',
-          other: '{0} نيوتن م',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'نيوتن متر',
+      zero: '{0} نيوتن متر',
+      one: '{0} نيوتن متر',
+      two: '{0} نيوتن متر',
+      few: '{0} نيوتن متر',
+      many: '{0} نيوتن متر',
+      other: '{0} نيوتن متر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'نيوتن متر',
+      zero: '{0} نيوتن متر',
+      one: '{0} نيوتن متر',
+      two: '{0} نيوتن متر',
+      few: '{0} نيوتن متر',
+      many: '{0} نيوتن متر',
+      other: '{0} نيوتن متر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'نيوتن م',
+      zero: '{0} نيوتن م',
+      one: '{0} نيوتن م',
+      two: '{0} نيوتن م',
+      few: '{0} نيوتن م',
+      many: '{0} نيوتن م',
+      other: '{0} نيوتن م',
+    ),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كيلومتر مكعب',
-          zero: '{0} كيلومتر مكعب',
-          one: '{0} كيلومتر مكعب',
-          two: '{0} كيلومتر مكعب',
-          few: '{0} كيلومتر مكعب',
-          many: '{0} كيلومتر مكعب',
-          other: '{0} كيلومتر مكعب',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كم³',
-          zero: '{0} كم³',
-          one: '{0} كم³',
-          two: '{0} كم³',
-          few: '{0} كم³',
-          many: '{0} كم³',
-          other: '{0} كم³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كم³',
-          zero: '{0} كم³',
-          one: '{0} كم³',
-          two: '{0} كم³',
-          few: '{0} كم³',
-          many: '{0} كم³',
-          other: '{0} كم³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كيلومتر مكعب',
+      zero: '{0} كيلومتر مكعب',
+      one: '{0} كيلومتر مكعب',
+      two: '{0} كيلومتر مكعب',
+      few: '{0} كيلومتر مكعب',
+      many: '{0} كيلومتر مكعب',
+      other: '{0} كيلومتر مكعب',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كم³',
+      zero: '{0} كم³',
+      one: '{0} كم³',
+      two: '{0} كم³',
+      few: '{0} كم³',
+      many: '{0} كم³',
+      other: '{0} كم³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كم³',
+      zero: '{0} كم³',
+      one: '{0} كم³',
+      two: '{0} كم³',
+      few: '{0} كم³',
+      many: '{0} كم³',
+      other: '{0} كم³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'متر مكعب',
-          zero: '{0} متر مكعب',
-          one: '{0} متر مكعب',
-          two: '{0} متر مكعب',
-          few: '{0} متر مكعب',
-          many: '{0} متر مكعب',
-          other: '{0} متر مكعب',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'م³',
-          zero: '{0} م³',
-          one: '{0} م³',
-          two: '{0} م³',
-          few: '{0} م³',
-          many: '{0} م³',
-          other: '{0} م³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'م³',
-          zero: '{0} م³',
-          one: '{0} م³',
-          two: '{0} م³',
-          few: '{0} م³',
-          many: '{0} م³',
-          other: '{0} م³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'متر مكعب',
+      zero: '{0} متر مكعب',
+      one: '{0} متر مكعب',
+      two: '{0} متر مكعب',
+      few: '{0} متر مكعب',
+      many: '{0} متر مكعب',
+      other: '{0} متر مكعب',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'م³',
+      zero: '{0} م³',
+      one: '{0} م³',
+      two: '{0} م³',
+      few: '{0} م³',
+      many: '{0} م³',
+      other: '{0} م³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'م³',
+      zero: '{0} م³',
+      one: '{0} م³',
+      two: '{0} م³',
+      few: '{0} م³',
+      many: '{0} م³',
+      other: '{0} م³',
+    ),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سنتيمتر مكعب',
-          zero: '{0} سنتيمتر مكعب',
-          one: '{0} سنتيمتر مكعب',
-          two: '{0} سنتيمتر مكعب',
-          few: '{0} سنتيمتر مكعب',
-          many: '{0} سنتيمتر مكعب',
-          other: '{0} سنتيمتر مكعب',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سم³',
-          zero: '{0} سم³',
-          one: '{0} سم³',
-          two: '{0} سم³',
-          few: '{0} سم³',
-          many: '{0} سم³',
-          other: '{0} سم³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سم³',
-          zero: '{0} سم³',
-          one: '{0} سم³',
-          two: '{0} سم³',
-          few: '{0} سم³',
-          many: '{0} سم³',
-          other: '{0} سم³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سنتيمتر مكعب',
+      zero: '{0} سنتيمتر مكعب',
+      one: '{0} سنتيمتر مكعب',
+      two: '{0} سنتيمتر مكعب',
+      few: '{0} سنتيمتر مكعب',
+      many: '{0} سنتيمتر مكعب',
+      other: '{0} سنتيمتر مكعب',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سم³',
+      zero: '{0} سم³',
+      one: '{0} سم³',
+      two: '{0} سم³',
+      few: '{0} سم³',
+      many: '{0} سم³',
+      other: '{0} سم³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سم³',
+      zero: '{0} سم³',
+      one: '{0} سم³',
+      two: '{0} سم³',
+      few: '{0} سم³',
+      many: '{0} سم³',
+      other: '{0} سم³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميل مكعب',
-          zero: '{0} ميل مكعب',
-          one: '{0} ميل مكعب',
-          two: '{0} ميل مكعب',
-          few: '{0} ميل مكعب',
-          many: '{0} ميل مكعب',
-          other: '{0} ميل مكعب',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميل³',
-          zero: '{0} ميل³',
-          one: '{0} ميل³',
-          two: '{0} ميل³',
-          few: '{0} ميل³',
-          many: '{0} ميل³',
-          other: '{0} ميل³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميل³',
-          zero: '{0} ميل³',
-          one: '{0} ميل³',
-          two: '{0} ميل³',
-          few: '{0} ميل³',
-          many: '{0} ميل³',
-          other: '{0} ميل³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميل مكعب',
+      zero: '{0} ميل مكعب',
+      one: '{0} ميل مكعب',
+      two: '{0} ميل مكعب',
+      few: '{0} ميل مكعب',
+      many: '{0} ميل مكعب',
+      other: '{0} ميل مكعب',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميل³',
+      zero: '{0} ميل³',
+      one: '{0} ميل³',
+      two: '{0} ميل³',
+      few: '{0} ميل³',
+      many: '{0} ميل³',
+      other: '{0} ميل³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميل³',
+      zero: '{0} ميل³',
+      one: '{0} ميل³',
+      two: '{0} ميل³',
+      few: '{0} ميل³',
+      many: '{0} ميل³',
+      other: '{0} ميل³',
+    ),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ياردة مكعبة',
-          zero: '{0} ياردة مكعبة',
-          one: '{0} ياردة مكعبة',
-          two: '{0} ياردة مكعبة',
-          few: '{0} ياردة مكعبة',
-          many: '{0} ياردة مكعبة',
-          other: '{0} ياردة مكعبة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ياردة³',
-          zero: '{0} ياردة³',
-          one: '{0} ياردة³',
-          two: '{0} ياردة³',
-          few: '{0} ياردة³',
-          many: '{0} ياردة³',
-          other: '{0} ياردة³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ياردة³',
-          zero: '{0} ياردة³',
-          one: '{0} ياردة³',
-          two: '{0} ياردة³',
-          few: '{0} ياردة³',
-          many: '{0} ياردة³',
-          other: '{0} ياردة³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ياردة مكعبة',
+      zero: '{0} ياردة مكعبة',
+      one: '{0} ياردة مكعبة',
+      two: '{0} ياردة مكعبة',
+      few: '{0} ياردة مكعبة',
+      many: '{0} ياردة مكعبة',
+      other: '{0} ياردة مكعبة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ياردة³',
+      zero: '{0} ياردة³',
+      one: '{0} ياردة³',
+      two: '{0} ياردة³',
+      few: '{0} ياردة³',
+      many: '{0} ياردة³',
+      other: '{0} ياردة³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ياردة³',
+      zero: '{0} ياردة³',
+      one: '{0} ياردة³',
+      two: '{0} ياردة³',
+      few: '{0} ياردة³',
+      many: '{0} ياردة³',
+      other: '{0} ياردة³',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قدم مكعبة',
-          zero: '{0} قدم مكعبة',
-          one: 'قدم مكعبة',
-          two: '{0} قدم مكعبة',
-          few: '{0} قدم مكعبة',
-          many: '{0} قدم مكعبة',
-          other: '{0} قدم مكعبة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قدم³',
-          zero: '{0} قدم³',
-          one: '{0} قدم³',
-          two: '{0} قدم³',
-          few: '{0} قدم³',
-          many: '{0} قدم³',
-          other: '{0} قدم³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قدم³',
-          zero: '{0} قدم³',
-          one: '{0} قدم³',
-          two: '{0} قدم³',
-          few: '{0} قدم³',
-          many: '{0} قدم³',
-          other: '{0} قدم³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قدم مكعبة',
+      zero: '{0} قدم مكعبة',
+      one: 'قدم مكعبة',
+      two: '{0} قدم مكعبة',
+      few: '{0} قدم مكعبة',
+      many: '{0} قدم مكعبة',
+      other: '{0} قدم مكعبة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قدم³',
+      zero: '{0} قدم³',
+      one: '{0} قدم³',
+      two: '{0} قدم³',
+      few: '{0} قدم³',
+      many: '{0} قدم³',
+      other: '{0} قدم³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قدم³',
+      zero: '{0} قدم³',
+      one: '{0} قدم³',
+      two: '{0} قدم³',
+      few: '{0} قدم³',
+      many: '{0} قدم³',
+      other: '{0} قدم³',
+    ),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بوصة مكعبة',
-          zero: '{0} بوصة مكعبة',
-          one: '{0} بوصة مكعبة',
-          two: '{0} بوصة مكعبة',
-          few: '{0} بوصة مكعبة',
-          many: '{0} بوصة مكعبة',
-          other: '{0} بوصة مكعبة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بوصة مكعبة',
-          zero: '{0} بوصة مكعبة',
-          one: '{0} بوصة مكعبة',
-          two: '{0} بوصة مكعبة',
-          few: '{0} بوصة مكعبة',
-          many: '{0} بوصة مكعبة',
-          other: '{0} بوصة مكعبة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بوصة³',
-          zero: '{0} بوصة³',
-          one: '{0} بوصة³',
-          two: '{0} بوصة³',
-          few: '{0} بوصة³',
-          many: '{0} بوصة³',
-          other: '{0} بوصة³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بوصة مكعبة',
+      zero: '{0} بوصة مكعبة',
+      one: '{0} بوصة مكعبة',
+      two: '{0} بوصة مكعبة',
+      few: '{0} بوصة مكعبة',
+      many: '{0} بوصة مكعبة',
+      other: '{0} بوصة مكعبة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بوصة مكعبة',
+      zero: '{0} بوصة مكعبة',
+      one: '{0} بوصة مكعبة',
+      two: '{0} بوصة مكعبة',
+      few: '{0} بوصة مكعبة',
+      many: '{0} بوصة مكعبة',
+      other: '{0} بوصة مكعبة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بوصة³',
+      zero: '{0} بوصة³',
+      one: '{0} بوصة³',
+      two: '{0} بوصة³',
+      few: '{0} بوصة³',
+      many: '{0} بوصة³',
+      other: '{0} بوصة³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ميغالتر',
-          zero: '{0} ميغالتر',
-          one: '{0} ميغالتر',
-          two: '{0} ميغالتر',
-          few: '{0} ميغالتر',
-          many: '{0} ميغالتر',
-          other: '{0} ميغالتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ميغالتر',
-          zero: '{0} ميغالتر',
-          one: '{0} ميغالتر',
-          two: '{0} ميغالتر',
-          few: '{0} ميغالتر',
-          many: '{0} ميغالتر',
-          other: '{0} ميغالتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ميغالتر',
-          zero: '{0} ميغالتر',
-          one: '{0} ميغالتر',
-          two: '{0} ميغالتر',
-          few: '{0} ميغالتر',
-          many: '{0} ميغالتر',
-          other: '{0} ميغالتر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ميغالتر',
+      zero: '{0} ميغالتر',
+      one: '{0} ميغالتر',
+      two: '{0} ميغالتر',
+      few: '{0} ميغالتر',
+      many: '{0} ميغالتر',
+      other: '{0} ميغالتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ميغالتر',
+      zero: '{0} ميغالتر',
+      one: '{0} ميغالتر',
+      two: '{0} ميغالتر',
+      few: '{0} ميغالتر',
+      many: '{0} ميغالتر',
+      other: '{0} ميغالتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ميغالتر',
+      zero: '{0} ميغالتر',
+      one: '{0} ميغالتر',
+      two: '{0} ميغالتر',
+      few: '{0} ميغالتر',
+      many: '{0} ميغالتر',
+      other: '{0} ميغالتر',
+    ),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'هكتولتر',
-          zero: '{0} هكتولتر',
-          one: '{0} هكتولتر',
-          two: '{0} هكتولتر',
-          few: '{0} هكتولتر',
-          many: '{0} هكتولتر',
-          other: '{0} هكتولتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'هكتولتر',
-          zero: '{0} هكتولتر',
-          one: '{0} هكتولتر',
-          two: '{0} هكتولتر',
-          few: '{0} هكتولتر',
-          many: '{0} هكتولتر',
-          other: '{0} هكتولتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'هكتولتر',
-          zero: '{0} هكتولتر',
-          one: '{0} هكتولتر',
-          two: '{0} هكتولتر',
-          few: '{0} هكتولتر',
-          many: '{0} هكتولتر',
-          other: '{0} هكتولتر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'هكتولتر',
+      zero: '{0} هكتولتر',
+      one: '{0} هكتولتر',
+      two: '{0} هكتولتر',
+      few: '{0} هكتولتر',
+      many: '{0} هكتولتر',
+      other: '{0} هكتولتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'هكتولتر',
+      zero: '{0} هكتولتر',
+      one: '{0} هكتولتر',
+      two: '{0} هكتولتر',
+      few: '{0} هكتولتر',
+      many: '{0} هكتولتر',
+      other: '{0} هكتولتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'هكتولتر',
+      zero: '{0} هكتولتر',
+      one: '{0} هكتولتر',
+      two: '{0} هكتولتر',
+      few: '{0} هكتولتر',
+      many: '{0} هكتولتر',
+      other: '{0} هكتولتر',
+    ),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'لتر',
-          zero: '{0} لتر',
-          one: 'لتر',
-          two: '{0} لتر',
-          few: '{0} لتر',
-          many: '{0} لتر',
-          other: '{0} لتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'لتر',
-          zero: '{0} لتر',
-          one: 'لتر',
-          two: '{0} لتر',
-          few: '{0} لتر',
-          many: '{0} لتر',
-          other: '{0} لتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'لتر',
-          zero: '{0} ل',
-          one: '{0} ل',
-          two: '{0} ل',
-          few: '{0} ل',
-          many: '{0} ل',
-          other: '{0} ل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'لتر',
+      zero: '{0} لتر',
+      one: 'لتر',
+      two: '{0} لتر',
+      few: '{0} لتر',
+      many: '{0} لتر',
+      other: '{0} لتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'لتر',
+      zero: '{0} لتر',
+      one: 'لتر',
+      two: '{0} لتر',
+      few: '{0} لتر',
+      many: '{0} لتر',
+      other: '{0} لتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'لتر',
+      zero: '{0} ل',
+      one: '{0} ل',
+      two: '{0} ل',
+      few: '{0} ل',
+      many: '{0} ل',
+      other: '{0} ل',
+    ),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ديسيلتر',
-          zero: '{0} ديسيلتر',
-          one: '{0} ديسيلتر',
-          two: '{0} ديسيلتر',
-          few: '{0} ديسيلتر',
-          many: '{0} ديسيلتر',
-          other: '{0} ديسيلتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ديسيلتر',
-          zero: '{0} ديسيلتر',
-          one: '{0} ديسيلتر',
-          two: '{0} ديسيلتر',
-          few: '{0} ديسيلتر',
-          many: '{0} ديسيلتر',
-          other: '{0} ديسيلتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ديسيلتر',
-          zero: '{0} ديسيلتر',
-          one: '{0} ديسيلتر',
-          two: '{0} ديسيلتر',
-          few: '{0} ديسيلتر',
-          many: '{0} ديسيلتر',
-          other: '{0} ديسيلتر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ديسيلتر',
+      zero: '{0} ديسيلتر',
+      one: '{0} ديسيلتر',
+      two: '{0} ديسيلتر',
+      few: '{0} ديسيلتر',
+      many: '{0} ديسيلتر',
+      other: '{0} ديسيلتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ديسيلتر',
+      zero: '{0} ديسيلتر',
+      one: '{0} ديسيلتر',
+      two: '{0} ديسيلتر',
+      few: '{0} ديسيلتر',
+      many: '{0} ديسيلتر',
+      other: '{0} ديسيلتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ديسيلتر',
+      zero: '{0} ديسيلتر',
+      one: '{0} ديسيلتر',
+      two: '{0} ديسيلتر',
+      few: '{0} ديسيلتر',
+      many: '{0} ديسيلتر',
+      other: '{0} ديسيلتر',
+    ),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'سنتيلتر',
-          zero: '{0} سنتيلتر',
-          one: '{0} سنتيلتر',
-          two: '{0} سنتيلتر',
-          few: '{0} سنتيلتر',
-          many: '{0} سنتيلتر',
-          other: '{0} سنتيلتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'سنتيلتر',
-          zero: '{0} سنتيلتر',
-          one: '{0} سنتيلتر',
-          two: '{0} سنتيلتر',
-          few: '{0} سنتيلتر',
-          many: '{0} سنتيلتر',
-          other: '{0} سنتيلتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'سنتيلتر',
-          zero: '{0} سنتيلتر',
-          one: '{0} سنتيلتر',
-          two: '{0} سنتيلتر',
-          few: '{0} سنتيلتر',
-          many: '{0} سنتيلتر',
-          other: '{0} سنتيلتر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'سنتيلتر',
+      zero: '{0} سنتيلتر',
+      one: '{0} سنتيلتر',
+      two: '{0} سنتيلتر',
+      few: '{0} سنتيلتر',
+      many: '{0} سنتيلتر',
+      other: '{0} سنتيلتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'سنتيلتر',
+      zero: '{0} سنتيلتر',
+      one: '{0} سنتيلتر',
+      two: '{0} سنتيلتر',
+      few: '{0} سنتيلتر',
+      many: '{0} سنتيلتر',
+      other: '{0} سنتيلتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'سنتيلتر',
+      zero: '{0} سنتيلتر',
+      one: '{0} سنتيلتر',
+      two: '{0} سنتيلتر',
+      few: '{0} سنتيلتر',
+      many: '{0} سنتيلتر',
+      other: '{0} سنتيلتر',
+    ),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'مليلتر',
-          zero: '{0} مليلتر',
-          one: '{0} مليلتر',
-          two: '{0} مليلتر',
-          few: '{0} مليلتر',
-          many: '{0} مليلتر',
-          other: '{0} مليلتر',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملتر',
-          zero: '{0} ملتر',
-          one: '{0} ملتر',
-          two: '{0} ملتر',
-          few: '{0} ملتر',
-          many: '{0} ملتر',
-          other: '{0} ملتر',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملتر',
-          zero: '{0} ملتر',
-          one: '{0} ملتر',
-          two: '{0} ملتر',
-          few: '{0} ملتر',
-          many: '{0} ملتر',
-          other: '{0} ملتر',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'مليلتر',
+      zero: '{0} مليلتر',
+      one: '{0} مليلتر',
+      two: '{0} مليلتر',
+      few: '{0} مليلتر',
+      many: '{0} مليلتر',
+      other: '{0} مليلتر',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملتر',
+      zero: '{0} ملتر',
+      one: '{0} ملتر',
+      two: '{0} ملتر',
+      few: '{0} ملتر',
+      many: '{0} ملتر',
+      other: '{0} ملتر',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملتر',
+      zero: '{0} ملتر',
+      one: '{0} ملتر',
+      two: '{0} ملتر',
+      few: '{0} ملتر',
+      many: '{0} ملتر',
+      other: '{0} ملتر',
+    ),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'مكيال متري',
-          zero: '{0} مكيال متري',
-          one: '{0} مكيال متري',
-          two: '{0} مكيال متري',
-          few: '{0} مكيال متري',
-          many: '{0} مكيال متري',
-          other: '{0} مكيال متري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'مكيال متري',
-          zero: '{0} مكيال متري',
-          one: '{0} مكيال متري',
-          two: '{0} مكيال متري',
-          few: '{0} مكيال متري',
-          many: '{0} مكيال متري',
-          other: '{0} مكيال متري',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'مكيال متري',
-          zero: '{0} مكيال متري',
-          one: '{0} مكيال متري',
-          two: '{0} مكيال متري',
-          few: '{0} مكيال متري',
-          many: '{0} مكيال متري',
-          other: '{0} مكيال متري',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'مكيال متري',
+      zero: '{0} مكيال متري',
+      one: '{0} مكيال متري',
+      two: '{0} مكيال متري',
+      few: '{0} مكيال متري',
+      many: '{0} مكيال متري',
+      other: '{0} مكيال متري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'مكيال متري',
+      zero: '{0} مكيال متري',
+      one: '{0} مكيال متري',
+      two: '{0} مكيال متري',
+      few: '{0} مكيال متري',
+      many: '{0} مكيال متري',
+      other: '{0} مكيال متري',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'مكيال متري',
+      zero: '{0} مكيال متري',
+      one: '{0} مكيال متري',
+      two: '{0} مكيال متري',
+      few: '{0} مكيال متري',
+      many: '{0} مكيال متري',
+      other: '{0} مكيال متري',
+    ),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كوب متري',
-          zero: '{0} كوب متري',
-          one: '{0} كوب متري',
-          two: '{0} كوب متري',
-          few: '{0} كوب متري',
-          many: '{0} كوب متري',
-          other: '{0} كوب متري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كوب متري',
-          zero: '{0} كوب متري',
-          one: '{0} كوب متري',
-          two: '{0} كوب متري',
-          few: '{0} كوب متري',
-          many: '{0} كوب متري',
-          other: '{0} كوب متري',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كوب متري',
-          zero: '{0} كوب متري',
-          one: '{0} كوب متري',
-          two: '{0} كوب متري',
-          few: '{0} كوب متري',
-          many: '{0} كوب متري',
-          other: '{0} كوب متري',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كوب متري',
+      zero: '{0} كوب متري',
+      one: '{0} كوب متري',
+      two: '{0} كوب متري',
+      few: '{0} كوب متري',
+      many: '{0} كوب متري',
+      other: '{0} كوب متري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كوب متري',
+      zero: '{0} كوب متري',
+      one: '{0} كوب متري',
+      two: '{0} كوب متري',
+      few: '{0} كوب متري',
+      many: '{0} كوب متري',
+      other: '{0} كوب متري',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كوب متري',
+      zero: '{0} كوب متري',
+      one: '{0} كوب متري',
+      two: '{0} كوب متري',
+      few: '{0} كوب متري',
+      many: '{0} كوب متري',
+      other: '{0} كوب متري',
+    ),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'فدان قدم',
-          zero: '{0} فدان قدم',
-          one: '{0} فدان قدم',
-          two: '{0} فدان قدم',
-          few: '{0} فدان قدم',
-          many: '{0} فدان قدم',
-          other: '{0} فدان قدم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'فدان قدم',
-          zero: '{0} فدان قدم',
-          one: '{0} فدان قدم',
-          two: '{0} فدان قدم',
-          few: '{0} فدان قدم',
-          many: '{0} فدان قدم',
-          other: '{0} فدان قدم',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'فدان قدم',
-          zero: '{0} فدان قدم',
-          one: '{0} فدان قدم',
-          two: '{0} فدان قدم',
-          few: '{0} فدان قدم',
-          many: '{0} فدان قدم',
-          other: '{0} فدان قدم',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'فدان قدم',
+      zero: '{0} فدان قدم',
+      one: '{0} فدان قدم',
+      two: '{0} فدان قدم',
+      few: '{0} فدان قدم',
+      many: '{0} فدان قدم',
+      other: '{0} فدان قدم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'فدان قدم',
+      zero: '{0} فدان قدم',
+      one: '{0} فدان قدم',
+      two: '{0} فدان قدم',
+      few: '{0} فدان قدم',
+      many: '{0} فدان قدم',
+      other: '{0} فدان قدم',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'فدان قدم',
+      zero: '{0} فدان قدم',
+      one: '{0} فدان قدم',
+      two: '{0} فدان قدم',
+      few: '{0} فدان قدم',
+      many: '{0} فدان قدم',
+      other: '{0} فدان قدم',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'بوشل',
-          zero: '{0} بوشل',
-          one: '{0} بوشل',
-          two: '{0} بوشل',
-          few: '{0} بوشل',
-          many: '{0} بوشل',
-          other: '{0} بوشل',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'بوشل',
-          zero: '{0} بوشل',
-          one: '{0} بوشل',
-          two: '{0} بوشل',
-          few: '{0} بوشل',
-          many: '{0} بوشل',
-          other: '{0} بوشل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'بوشل',
-          zero: '{0} بوشل',
-          one: '{0} بوشل',
-          two: '{0} بوشل',
-          few: '{0} بوشل',
-          many: '{0} بوشل',
-          other: '{0} بوشل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'بوشل',
+      zero: '{0} بوشل',
+      one: '{0} بوشل',
+      two: '{0} بوشل',
+      few: '{0} بوشل',
+      many: '{0} بوشل',
+      other: '{0} بوشل',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'بوشل',
+      zero: '{0} بوشل',
+      one: '{0} بوشل',
+      two: '{0} بوشل',
+      few: '{0} بوشل',
+      many: '{0} بوشل',
+      other: '{0} بوشل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'بوشل',
+      zero: '{0} بوشل',
+      one: '{0} بوشل',
+      two: '{0} بوشل',
+      few: '{0} بوشل',
+      many: '{0} بوشل',
+      other: '{0} بوشل',
+    ),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'غالون',
-          zero: '{0} غالون',
-          one: 'غالون',
-          two: '{0} غالون',
-          few: '{0} غالون',
-          many: '{0} غالون',
-          other: '{0} غالون',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'غالون',
-          zero: '{0} غالون',
-          one: 'غالون',
-          two: '{0} غالون',
-          few: '{0} غالون',
-          many: '{0} غالون',
-          other: '{0} غالون',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'غالون',
-          zero: '{0} غالون',
-          one: 'غالون',
-          two: '{0} غالون',
-          few: '{0} غالون',
-          many: '{0} غالون',
-          other: '{0} غالون',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'غالون',
+      zero: '{0} غالون',
+      one: 'غالون',
+      two: '{0} غالون',
+      few: '{0} غالون',
+      many: '{0} غالون',
+      other: '{0} غالون',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'غالون',
+      zero: '{0} غالون',
+      one: 'غالون',
+      two: '{0} غالون',
+      few: '{0} غالون',
+      many: '{0} غالون',
+      other: '{0} غالون',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'غالون',
+      zero: '{0} غالون',
+      one: 'غالون',
+      two: '{0} غالون',
+      few: '{0} غالون',
+      many: '{0} غالون',
+      other: '{0} غالون',
+    ),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'غالون إمبراطوري',
-          zero: '{0} غالون إمبراطوري',
-          one: 'غالون إمبراطوري',
-          two: '{0} غالون إمبراطوري',
-          few: '{0} غالون إمبراطوري',
-          many: '{0} غالون إمبراطوري',
-          other: '{0} غالون إمبراطوري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'غالون إمبراطوري',
-          zero: '{0} غالون إمبراطوري',
-          one: '{0} غالون إمبراطوري',
-          two: '{0} غالون إمبراطوري',
-          few: '{0} غالون إمبراطوري',
-          many: '{0} غالون إمبراطوري',
-          other: '{0} غالون إمبراطوري',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'غالون إمبراطوري',
-          zero: '{0} غالون إمبراطوري',
-          one: '{0} غالون إمبراطوري',
-          two: '{0} غالون إمبراطوري',
-          few: '{0} غالون إمبراطوري',
-          many: '{0} غالون إمبراطوري',
-          other: '{0} غالون إمبراطوري',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'غالون إمبراطوري',
+      zero: '{0} غالون إمبراطوري',
+      one: 'غالون إمبراطوري',
+      two: '{0} غالون إمبراطوري',
+      few: '{0} غالون إمبراطوري',
+      many: '{0} غالون إمبراطوري',
+      other: '{0} غالون إمبراطوري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'غالون إمبراطوري',
+      zero: '{0} غالون إمبراطوري',
+      one: '{0} غالون إمبراطوري',
+      two: '{0} غالون إمبراطوري',
+      few: '{0} غالون إمبراطوري',
+      many: '{0} غالون إمبراطوري',
+      other: '{0} غالون إمبراطوري',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'غالون إمبراطوري',
+      zero: '{0} غالون إمبراطوري',
+      one: '{0} غالون إمبراطوري',
+      two: '{0} غالون إمبراطوري',
+      few: '{0} غالون إمبراطوري',
+      many: '{0} غالون إمبراطوري',
+      other: '{0} غالون إمبراطوري',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ربع غالون',
-          zero: '{0} ربع غالون',
-          one: 'ربع غالون',
-          two: '{0} ربع غالون',
-          few: '{0} ربع غالون',
-          many: '{0} ربع غالون',
-          other: '{0} ربع غالون',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ربع غالون',
-          zero: '{0} ربع غالون',
-          one: 'ربع غالون',
-          two: '{0} ربع غالون',
-          few: '{0} ربع غالون',
-          many: '{0} ربع غالون',
-          other: '{0} ربع غالون',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ربع غالون',
-          zero: '{0} ربع غالون',
-          one: 'ربع غالون',
-          two: '{0} ربع غالون',
-          few: '{0} ربع غالون',
-          many: '{0} ربع غالون',
-          other: '{0} ربع غالون',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ربع غالون',
+      zero: '{0} ربع غالون',
+      one: 'ربع غالون',
+      two: '{0} ربع غالون',
+      few: '{0} ربع غالون',
+      many: '{0} ربع غالون',
+      other: '{0} ربع غالون',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ربع غالون',
+      zero: '{0} ربع غالون',
+      one: 'ربع غالون',
+      two: '{0} ربع غالون',
+      few: '{0} ربع غالون',
+      many: '{0} ربع غالون',
+      other: '{0} ربع غالون',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ربع غالون',
+      zero: '{0} ربع غالون',
+      one: 'ربع غالون',
+      two: '{0} ربع غالون',
+      few: '{0} ربع غالون',
+      many: '{0} ربع غالون',
+      other: '{0} ربع غالون',
+    ),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'باينت',
-          zero: '{0} باينت',
-          one: '{0} باينت',
-          two: '{0} باينت',
-          few: '{0} باينت',
-          many: '{0} باينت',
-          other: '{0} باينت',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'باينت',
-          zero: '{0} باينت',
-          one: '{0} باينت',
-          two: '{0} باينت',
-          few: '{0} باينت',
-          many: '{0} باينت',
-          other: '{0} باينت',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'باينت',
-          zero: '{0} باينت',
-          one: '{0} باينت',
-          two: '{0} باينت',
-          few: '{0} باينت',
-          many: '{0} باينت',
-          other: '{0} باينت',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'باينت',
+      zero: '{0} باينت',
+      one: '{0} باينت',
+      two: '{0} باينت',
+      few: '{0} باينت',
+      many: '{0} باينت',
+      other: '{0} باينت',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'باينت',
+      zero: '{0} باينت',
+      one: '{0} باينت',
+      two: '{0} باينت',
+      few: '{0} باينت',
+      many: '{0} باينت',
+      other: '{0} باينت',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'باينت',
+      zero: '{0} باينت',
+      one: '{0} باينت',
+      two: '{0} باينت',
+      few: '{0} باينت',
+      many: '{0} باينت',
+      other: '{0} باينت',
+    ),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'كوب',
-          zero: '{0} كوب',
-          one: 'كوب',
-          two: 'كوبان',
-          few: '{0} أكواب',
-          many: '{0} كوبًا',
-          other: '{0} كوب',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'كوب',
-          zero: '{0} كوب',
-          one: 'كوب',
-          two: '{0} كوب',
-          few: '{0} كوب',
-          many: '{0} كوب',
-          other: '{0} كوب',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'كوب',
-          zero: '{0} كوب',
-          one: 'كوب',
-          two: '{0} كوب',
-          few: '{0} كوب',
-          many: '{0} كوب',
-          other: '{0} كوب',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'كوب',
+      zero: '{0} كوب',
+      one: 'كوب',
+      two: 'كوبان',
+      few: '{0} أكواب',
+      many: '{0} كوبًا',
+      other: '{0} كوب',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'كوب',
+      zero: '{0} كوب',
+      one: 'كوب',
+      two: '{0} كوب',
+      few: '{0} كوب',
+      many: '{0} كوب',
+      other: '{0} كوب',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'كوب',
+      zero: '{0} كوب',
+      one: 'كوب',
+      two: '{0} كوب',
+      few: '{0} كوب',
+      many: '{0} كوب',
+      other: '{0} كوب',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أونصة سائلة',
-          zero: '{0} أونصة سائلة',
-          one: 'أونصة سائلة',
-          two: 'أونصتان سائلتان',
-          few: '{0} أونصة سائلة',
-          many: '{0} أونصة سائلة',
-          other: '{0} أونصة سائلة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أونصة سائلة',
-          zero: '{0} أونصة سائلة',
-          one: 'أونصة س',
-          two: '{0} أونصة س',
-          few: '{0} أونصات سائلة',
-          many: '{0} أونصة س',
-          other: '{0} أونصة سائلة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'أونصة س',
-          zero: '{0} أونصة س',
-          one: 'أونصة س',
-          two: '{0} أونصة س',
-          few: '{0} أونصة س',
-          many: '{0} أونصة س',
-          other: '{0} أونصة س',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أونصة سائلة',
+      zero: '{0} أونصة سائلة',
+      one: 'أونصة سائلة',
+      two: 'أونصتان سائلتان',
+      few: '{0} أونصة سائلة',
+      many: '{0} أونصة سائلة',
+      other: '{0} أونصة سائلة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أونصة سائلة',
+      zero: '{0} أونصة سائلة',
+      one: 'أونصة س',
+      two: '{0} أونصة س',
+      few: '{0} أونصات سائلة',
+      many: '{0} أونصة س',
+      other: '{0} أونصة سائلة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'أونصة س',
+      zero: '{0} أونصة س',
+      one: 'أونصة س',
+      two: '{0} أونصة س',
+      few: '{0} أونصة س',
+      many: '{0} أونصة س',
+      other: '{0} أونصة س',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'أونصة سائلة إمبراطورية',
-          zero: '{0} أونصة سائلة إمبراطورية',
-          one: '{0} أونصة سائلة إمبراطورية',
-          two: 'أونصتان سائلتان إمبراطوريتان',
-          few: '{0} أونصات سائلة إمبراطورية',
-          many: '{0} أونصة سائلة إمبراطورية',
-          other: '{0} أونصة سائلة إمبراطورية',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'أونصة سائلة إمبراطورية',
-          zero: '{0} أونصة سائلة إمبراطورية',
-          one: 'أونصة سائلة إمبراطورية',
-          two: '{0} أونصة سائلة إمبراطورية',
-          few: '{0} أونصة سائلة إمبراطورية',
-          many: '{0} أونصة سائلة إمبراطورية',
-          other: '{0} أونصة سائلة إمبراطورية',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'أونصة س إمبراطورية',
-          zero: '{0} أونصة س إمبراطورية',
-          one: 'أونصة س إمبراطورية',
-          two: '{0} أونصة س إمبراطورية',
-          few: '{0} أونصة س إمبراطورية',
-          many: '{0} أونصة س إمبراطورية',
-          other: '{0} أونصة س إمبراطورية',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'أونصة سائلة إمبراطورية',
+      zero: '{0} أونصة سائلة إمبراطورية',
+      one: '{0} أونصة سائلة إمبراطورية',
+      two: 'أونصتان سائلتان إمبراطوريتان',
+      few: '{0} أونصات سائلة إمبراطورية',
+      many: '{0} أونصة سائلة إمبراطورية',
+      other: '{0} أونصة سائلة إمبراطورية',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'أونصة سائلة إمبراطورية',
+      zero: '{0} أونصة سائلة إمبراطورية',
+      one: 'أونصة سائلة إمبراطورية',
+      two: '{0} أونصة سائلة إمبراطورية',
+      few: '{0} أونصة سائلة إمبراطورية',
+      many: '{0} أونصة سائلة إمبراطورية',
+      other: '{0} أونصة سائلة إمبراطورية',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'أونصة س إمبراطورية',
+      zero: '{0} أونصة س إمبراطورية',
+      one: 'أونصة س إمبراطورية',
+      two: '{0} أونصة س إمبراطورية',
+      few: '{0} أونصة س إمبراطورية',
+      many: '{0} أونصة س إمبراطورية',
+      other: '{0} أونصة س إمبراطورية',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملعقة كبيرة',
-          zero: '{0} ملعقة كبيرة',
-          one: 'ملعقة كبيرة',
-          two: '{0} ملعقة كبيرة',
-          few: '{0} ملعقة كبيرة',
-          many: '{0} ملعقة كبيرة',
-          other: '{0} ملعقة كبيرة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملعقة كبيرة',
-          zero: '{0} ملعقة ك.',
-          one: 'ملعقة ك.',
-          two: '{0} ملعقة ك.',
-          few: '{0} ملعقة ك.',
-          many: '{0} ملعقة ك.',
-          other: '{0} ملعقة ك.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملعقة ك',
-          zero: '{0} ملعقة ك',
-          one: 'ملعقة ك',
-          two: '{0} ملعقة ك',
-          few: '{0} ملعقة ك',
-          many: '{0} ملعقة ك',
-          other: '{0} ملعقة ك',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملعقة كبيرة',
+      zero: '{0} ملعقة كبيرة',
+      one: 'ملعقة كبيرة',
+      two: '{0} ملعقة كبيرة',
+      few: '{0} ملعقة كبيرة',
+      many: '{0} ملعقة كبيرة',
+      other: '{0} ملعقة كبيرة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملعقة كبيرة',
+      zero: '{0} ملعقة ك.',
+      one: 'ملعقة ك.',
+      two: '{0} ملعقة ك.',
+      few: '{0} ملعقة ك.',
+      many: '{0} ملعقة ك.',
+      other: '{0} ملعقة ك.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملعقة ك',
+      zero: '{0} ملعقة ك',
+      one: 'ملعقة ك',
+      two: '{0} ملعقة ك',
+      few: '{0} ملعقة ك',
+      many: '{0} ملعقة ك',
+      other: '{0} ملعقة ك',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملعقة صغيرة',
-          zero: '{0} ملعقة صغيرة',
-          one: 'ملعقة صغيرة',
-          two: '{0} ملعقة صغيرة',
-          few: '{0} ملعقة صغيرة',
-          many: '{0} ملعقة صغيرة',
-          other: '{0} ملعقة صغيرة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملعقة ص',
-          zero: '{0} ملعقة ص',
-          one: 'ملعقة ص',
-          two: '{0} ملعقة ص',
-          few: '{0} ملعقة ص',
-          many: '{0} ملعقة ص',
-          other: '{0} ملعقة ص',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملعقة ص',
-          zero: '{0} ملعقة ص',
-          one: 'ملعقة ص',
-          two: '{0} ملعقة ص',
-          few: '{0} ملعقة ص',
-          many: '{0} ملعقة ص',
-          other: '{0} ملعقة ص',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملعقة صغيرة',
+      zero: '{0} ملعقة صغيرة',
+      one: 'ملعقة صغيرة',
+      two: '{0} ملعقة صغيرة',
+      few: '{0} ملعقة صغيرة',
+      many: '{0} ملعقة صغيرة',
+      other: '{0} ملعقة صغيرة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملعقة ص',
+      zero: '{0} ملعقة ص',
+      one: 'ملعقة ص',
+      two: '{0} ملعقة ص',
+      few: '{0} ملعقة ص',
+      many: '{0} ملعقة ص',
+      other: '{0} ملعقة ص',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملعقة ص',
+      zero: '{0} ملعقة ص',
+      one: 'ملعقة ص',
+      two: '{0} ملعقة ص',
+      few: '{0} ملعقة ص',
+      many: '{0} ملعقة ص',
+      other: '{0} ملعقة ص',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'برميل',
-          zero: '{0} برميل',
-          one: 'برميل',
-          two: 'برميلان',
-          few: '{0} براميل',
-          many: '{0} برميلًا',
-          other: '{0} برميل',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'برميل',
-          zero: '{0} برميل',
-          one: 'برميل',
-          two: 'برميلان',
-          few: '{0} براميل',
-          many: '{0} برميلًا',
-          other: '{0} برميل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'برميل',
-          zero: '{0} برميل',
-          one: 'برميل',
-          two: '{0} برميل',
-          few: '{0} برميل',
-          many: '{0} برميل',
-          other: '{0} برميل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'برميل',
+      zero: '{0} برميل',
+      one: 'برميل',
+      two: 'برميلان',
+      few: '{0} براميل',
+      many: '{0} برميلًا',
+      other: '{0} برميل',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'برميل',
+      zero: '{0} برميل',
+      one: 'برميل',
+      two: 'برميلان',
+      few: '{0} براميل',
+      many: '{0} برميلًا',
+      other: '{0} برميل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'برميل',
+      zero: '{0} برميل',
+      one: 'برميل',
+      two: '{0} برميل',
+      few: '{0} برميل',
+      many: '{0} برميل',
+      other: '{0} برميل',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملعقة حلو',
-          zero: '{0} ملعقة حلو',
-          one: '{0} ملعقة حلو',
-          two: '{0} ملعقة حلو',
-          few: '{0} ملعقة حلو',
-          many: '{0} ملعقة حلو',
-          other: '{0} ملعقة حلو',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملعقة ح.',
-          zero: '{0} ملعقة ح.',
-          one: '{0} ملعقة ح.',
-          two: '{0} ملعقة ح.',
-          few: '{0} ملعقة ح.',
-          many: '{0} ملعقة ح.',
-          other: '{0} ملعقة ح.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملعقة ح.',
-          zero: '{0} ملعقة ح.',
-          one: '{0} ملعقة ح.',
-          two: '{0} ملعقة ح.',
-          few: '{0} ملعقة ح.',
-          many: '{0} ملعقة ح.',
-          other: '{0} ملعقة ح.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملعقة حلو',
+      zero: '{0} ملعقة حلو',
+      one: '{0} ملعقة حلو',
+      two: '{0} ملعقة حلو',
+      few: '{0} ملعقة حلو',
+      many: '{0} ملعقة حلو',
+      other: '{0} ملعقة حلو',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملعقة ح.',
+      zero: '{0} ملعقة ح.',
+      one: '{0} ملعقة ح.',
+      two: '{0} ملعقة ح.',
+      few: '{0} ملعقة ح.',
+      many: '{0} ملعقة ح.',
+      other: '{0} ملعقة ح.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملعقة ح.',
+      zero: '{0} ملعقة ح.',
+      one: '{0} ملعقة ح.',
+      two: '{0} ملعقة ح.',
+      few: '{0} ملعقة ح.',
+      many: '{0} ملعقة ح.',
+      other: '{0} ملعقة ح.',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ملعقة حلو إمبراطوري',
-          zero: '{0} ملعقة حلو إمبراطوري',
-          one: '{0} ملعقة حلو إمبراطوري',
-          two: '{0} ملعقة حلو إمبراطوري',
-          few: '{0} ملعقة حلو إمبراطوري',
-          many: '{0} ملعقة حلو إمبراطوري',
-          other: '{0} ملعقة حلو إمبراطوري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ملعقة حلو إمبراطوري',
-          zero: '{0} ملعقة ح. إمبراطوري',
-          one: '{0} ملعقة ح. إمبراطوري',
-          two: '{0} ملعقة ح. إمبراطوري',
-          few: '{0} ملعقة ح. إمبراطوري',
-          many: '{0} ملعقة ح. إمبراطوري',
-          other: '{0} ملعقة ح. إمبراطوري',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ملعقة حلو إمبراطوري',
-          zero: '{0} ملعقة ح. إمبراطوري',
-          one: '{0} ملعقة ح. إمبراطوري',
-          two: '{0} ملعقة ح. إمبراطوري',
-          few: '{0} ملعقة ح. إمبراطوري',
-          many: '{0} ملعقة ح. إمبراطوري',
-          other: '{0} ملعقة ح. إمبراطوري',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ملعقة حلو إمبراطوري',
+      zero: '{0} ملعقة حلو إمبراطوري',
+      one: '{0} ملعقة حلو إمبراطوري',
+      two: '{0} ملعقة حلو إمبراطوري',
+      few: '{0} ملعقة حلو إمبراطوري',
+      many: '{0} ملعقة حلو إمبراطوري',
+      other: '{0} ملعقة حلو إمبراطوري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ملعقة حلو إمبراطوري',
+      zero: '{0} ملعقة ح. إمبراطوري',
+      one: '{0} ملعقة ح. إمبراطوري',
+      two: '{0} ملعقة ح. إمبراطوري',
+      few: '{0} ملعقة ح. إمبراطوري',
+      many: '{0} ملعقة ح. إمبراطوري',
+      other: '{0} ملعقة ح. إمبراطوري',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ملعقة حلو إمبراطوري',
+      zero: '{0} ملعقة ح. إمبراطوري',
+      one: '{0} ملعقة ح. إمبراطوري',
+      two: '{0} ملعقة ح. إمبراطوري',
+      few: '{0} ملعقة ح. إمبراطوري',
+      many: '{0} ملعقة ح. إمبراطوري',
+      other: '{0} ملعقة ح. إمبراطوري',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قطرة',
-          zero: '{0} قطرة',
-          one: '{0} قطرة',
-          two: 'قطرتان',
-          few: '{0} قطرات',
-          many: '{0} قطرة',
-          other: '{0} قطرة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قطرة',
-          zero: '{0} قطرة',
-          one: '{0} قطرة',
-          two: '{0} قطرة',
-          few: '{0} قطرة',
-          many: '{0} قطرة',
-          other: '{0} قطرة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قطرة',
-          zero: '{0} قطرة',
-          one: '{0} قطرة',
-          two: '{0} قطرة',
-          few: '{0} قطرة',
-          many: '{0} قطرة',
-          other: '{0} قطرة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قطرة',
+      zero: '{0} قطرة',
+      one: '{0} قطرة',
+      two: 'قطرتان',
+      few: '{0} قطرات',
+      many: '{0} قطرة',
+      other: '{0} قطرة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قطرة',
+      zero: '{0} قطرة',
+      one: '{0} قطرة',
+      two: '{0} قطرة',
+      few: '{0} قطرة',
+      many: '{0} قطرة',
+      other: '{0} قطرة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قطرة',
+      zero: '{0} قطرة',
+      one: '{0} قطرة',
+      two: '{0} قطرة',
+      few: '{0} قطرة',
+      many: '{0} قطرة',
+      other: '{0} قطرة',
+    ),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'درهم سائل',
-          zero: '{0} درهم سائل',
-          one: '{0} درهم',
-          two: '{0} درهم سائل',
-          few: '{0} درهم سائل',
-          many: '{0} درهم سائل',
-          other: '{0} درهم',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'درهم سائل',
-          zero: '{0} درهم سائل',
-          one: '{0} درهم سائل',
-          two: '{0} درهم سائل',
-          few: '{0} درهم سائل',
-          many: '{0} درهم سائل',
-          other: '{0} درهم سائل',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'درهم سائل',
-          zero: '{0} درهم سائل',
-          one: '{0} درهم سائل',
-          two: '{0} درهم سائل',
-          few: '{0} درهم سائل',
-          many: '{0} درهم سائل',
-          other: '{0} درهم سائل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'درهم سائل',
+      zero: '{0} درهم سائل',
+      one: '{0} درهم',
+      two: '{0} درهم سائل',
+      few: '{0} درهم سائل',
+      many: '{0} درهم سائل',
+      other: '{0} درهم',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'درهم سائل',
+      zero: '{0} درهم سائل',
+      one: '{0} درهم سائل',
+      two: '{0} درهم سائل',
+      few: '{0} درهم سائل',
+      many: '{0} درهم سائل',
+      other: '{0} درهم سائل',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'درهم سائل',
+      zero: '{0} درهم سائل',
+      one: '{0} درهم سائل',
+      two: '{0} درهم سائل',
+      few: '{0} درهم سائل',
+      many: '{0} درهم سائل',
+      other: '{0} درهم سائل',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'قدح',
-          zero: '{0} قدح',
-          one: '{0} قدح',
-          two: '{0} قدح',
-          few: '{0} أقداح',
-          many: '{0} قدح',
-          other: '{0} قدح',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'قدح',
-          zero: '{0} قدح',
-          one: '{0} قدح',
-          two: '{0} قدح',
-          few: '{0} أقداح',
-          many: '{0} قدح',
-          other: '{0} قدح',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'قدح',
-          zero: '{0} قدح',
-          one: 'قدح',
-          two: '{0} قدح',
-          few: '{0} قدح',
-          many: '{0} قدح',
-          other: '{0} قدح',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'قدح',
+      zero: '{0} قدح',
+      one: '{0} قدح',
+      two: '{0} قدح',
+      few: '{0} أقداح',
+      many: '{0} قدح',
+      other: '{0} قدح',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'قدح',
+      zero: '{0} قدح',
+      one: '{0} قدح',
+      two: '{0} قدح',
+      few: '{0} أقداح',
+      many: '{0} قدح',
+      other: '{0} قدح',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'قدح',
+      zero: '{0} قدح',
+      one: 'قدح',
+      two: '{0} قدح',
+      few: '{0} قدح',
+      many: '{0} قدح',
+      other: '{0} قدح',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'رشّة',
-          zero: '{0} رشّة',
-          one: '{0} رشّة',
-          two: '{0} رشّة',
-          few: '{0} رشّات',
-          many: '{0} رشّة',
-          other: '{0} رشّة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'رشّة',
-          zero: '{0} رشّة',
-          one: '{0} رشّة',
-          two: '{0} رشّة',
-          few: '{0} رشّة',
-          many: '{0} رشّة',
-          other: '{0} رشّة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'رشّة',
-          zero: '{0} رشّة',
-          one: '{0} رشّة',
-          two: '{0} رشّة',
-          few: '{0} رشّة',
-          many: '{0} رشّة',
-          other: '{0} رشّة',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'رشّة',
+      zero: '{0} رشّة',
+      one: '{0} رشّة',
+      two: '{0} رشّة',
+      few: '{0} رشّات',
+      many: '{0} رشّة',
+      other: '{0} رشّة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'رشّة',
+      zero: '{0} رشّة',
+      one: '{0} رشّة',
+      two: '{0} رشّة',
+      few: '{0} رشّة',
+      many: '{0} رشّة',
+      other: '{0} رشّة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'رشّة',
+      zero: '{0} رشّة',
+      one: '{0} رشّة',
+      two: '{0} رشّة',
+      few: '{0} رشّة',
+      many: '{0} رشّة',
+      other: '{0} رشّة',
+    ),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ربع غالون إمبراطوري',
-          zero: '{0} ربع غالون إمبراطوري',
-          one: '{0} ربع غالون إمبراطوري',
-          two: '{0} ربع غالون إمبراطوري',
-          few: '{0} ربع غالون إمبراطوري',
-          many: '{0} ربع غالون إمبراطوري',
-          other: '{0} ربع غالون إمبراطوري',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ربع غالون إمبراطوري',
-          zero: '{0} ربع غالون إمبراطوري',
-          one: '{0} ربع غالون إمبراطوري',
-          two: '{0} ربع غالون إمبراطوري',
-          few: '{0} ربع غالون إمبراطوري',
-          many: '{0} ربع غالون إمبراطوري',
-          other: '{0} ربع غالون إمبراطوري',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ربع غالون إمبراطوري',
-          zero: '{0} ربع غالون إمبراطوري',
-          one: '{0} ربع غالون إمبراطوري',
-          two: '{0} ربع غالون إمبراطوري',
-          few: '{0} ربع غالون إمبراطوري',
-          many: '{0} ربع غالون إمبراطوري',
-          other: '{0} ربع غالون إمبراطوري',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ربع غالون إمبراطوري',
+      zero: '{0} ربع غالون إمبراطوري',
+      one: '{0} ربع غالون إمبراطوري',
+      two: '{0} ربع غالون إمبراطوري',
+      few: '{0} ربع غالون إمبراطوري',
+      many: '{0} ربع غالون إمبراطوري',
+      other: '{0} ربع غالون إمبراطوري',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ربع غالون إمبراطوري',
+      zero: '{0} ربع غالون إمبراطوري',
+      one: '{0} ربع غالون إمبراطوري',
+      two: '{0} ربع غالون إمبراطوري',
+      few: '{0} ربع غالون إمبراطوري',
+      many: '{0} ربع غالون إمبراطوري',
+      other: '{0} ربع غالون إمبراطوري',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ربع غالون إمبراطوري',
+      zero: '{0} ربع غالون إمبراطوري',
+      one: '{0} ربع غالون إمبراطوري',
+      two: '{0} ربع غالون إمبراطوري',
+      few: '{0} ربع غالون إمبراطوري',
+      many: '{0} ربع غالون إمبراطوري',
+      other: '{0} ربع غالون إمبراطوري',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0} light',
-          other: '{0} light',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0} light',
-          other: '{0} light',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0}light',
-          other: '{0} light',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0} light',
+      other: '{0} light',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0} light',
+      other: '{0} light',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0}light',
+      other: '{0} light',
+    ),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'جزء بالمليار',
-          zero: '{0} جزء بالمليار',
-          one: '{0} جزء بالمليار',
-          two: 'جزآن بالمليار',
-          few: '{0} أجزاء بالمليار',
-          many: '{0} جزءًا بالمليار',
-          other: '{0} جزء بالمليار',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'جزء/مليار',
-          zero: '{0} جزء/مليار',
-          one: '{0} جزء/مليار',
-          two: 'جزآن/مليار',
-          few: '{0} أجزاء/مليار',
-          many: '{0} جزءًا/مليار',
-          other: '{0} جزء/مليار',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'جزء/مليار',
-          zero: '{0} جزء/مليار',
-          one: '{0} جزء/مليار',
-          two: 'جزآن/مليار',
-          few: '{0} أجزاء/مليار',
-          many: '{0} جزءًا/مليار',
-          other: '{0} جزء/مليار',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'جزء بالمليار',
+      zero: '{0} جزء بالمليار',
+      one: '{0} جزء بالمليار',
+      two: 'جزآن بالمليار',
+      few: '{0} أجزاء بالمليار',
+      many: '{0} جزءًا بالمليار',
+      other: '{0} جزء بالمليار',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'جزء/مليار',
+      zero: '{0} جزء/مليار',
+      one: '{0} جزء/مليار',
+      two: 'جزآن/مليار',
+      few: '{0} أجزاء/مليار',
+      many: '{0} جزءًا/مليار',
+      other: '{0} جزء/مليار',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'جزء/مليار',
+      zero: '{0} جزء/مليار',
+      one: '{0} جزء/مليار',
+      two: 'جزآن/مليار',
+      few: '{0} أجزاء/مليار',
+      many: '{0} جزءًا/مليار',
+      other: '{0} جزء/مليار',
+    ),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ليالي',
-          zero: '{0} ليلة',
-          one: 'ليلة',
-          two: 'ليلتان',
-          few: '{0} ليالٍ',
-          many: '{0} ليلةً',
-          other: '{0} ليلة',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ليلة',
-          zero: '{0} ليلة',
-          one: 'ليلة',
-          two: 'ليلتان',
-          few: '{0} ليالٍ',
-          many: '{0} ليلةً',
-          other: '{0} ليلة',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ليلة',
-          zero: '{0} ل',
-          one: '{0} ل',
-          two: '{0} ل',
-          few: '{0} ل',
-          many: '{0} ل',
-          other: '{0} ل',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ليالي',
+      zero: '{0} ليلة',
+      one: 'ليلة',
+      two: 'ليلتان',
+      few: '{0} ليالٍ',
+      many: '{0} ليلةً',
+      other: '{0} ليلة',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ليلة',
+      zero: '{0} ليلة',
+      one: 'ليلة',
+      two: 'ليلتان',
+      few: '{0} ليالٍ',
+      many: '{0} ليلةً',
+      other: '{0} ليلة',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ليلة',
+      zero: '{0} ل',
+      one: '{0} ل',
+      two: '{0} ل',
+      few: '{0} ل',
+      many: '{0} ل',
+      other: '{0} ل',
+    ),
+  );
 }
 
 class DateFieldsAr extends DateFields {
   const DateFieldsAr(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'العصر',
-        short: 'العصر',
-        narrow: 'العصر',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'العصر', short: 'العصر', narrow: 'العصر');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'السنة',
-          short: 'السنة',
-          narrow: 'السنة',
-        ),
-        previous: MultiLength(
-          long: 'السنة الماضية',
-          short: 'السنة الماضية',
-          narrow: 'السنة الماضية',
-        ),
-        now: MultiLength(
-          long: 'السنة الحالية',
-          short: 'السنة الحالية',
-          narrow: 'السنة الحالية',
-        ),
-        next: MultiLength(
-          long: 'السنة القادمة',
-          short: 'السنة القادمة',
-          narrow: 'السنة القادمة',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سنة',
-            one: 'قبل سنة واحدة',
-            two: 'قبل سنتين',
-            few: 'قبل {0} سنوات',
-            many: 'قبل {0} سنة',
-            other: 'قبل {0} سنة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سنة',
-            one: 'قبل سنة واحدة',
-            two: 'قبل سنتين',
-            few: 'قبل {0} سنوات',
-            many: 'قبل {0} سنة',
-            other: 'قبل {0} سنة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سنة',
-            one: 'قبل سنة واحدة',
-            two: 'قبل سنتين',
-            few: 'قبل {0} سنوات',
-            many: 'قبل {0} سنة',
-            other: 'قبل {0} سنة',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سنة',
-            one: 'خلال سنة واحدة',
-            two: 'خلال سنتين',
-            few: 'خلال {0} سنوات',
-            many: 'خلال {0} سنة',
-            other: 'خلال {0} سنة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سنة',
-            one: 'خلال سنة واحدة',
-            two: 'خلال سنتين',
-            few: 'خلال {0} سنوات',
-            many: 'خلال {0} سنة',
-            other: 'خلال {0} سنة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سنة',
-            one: 'خلال سنة واحدة',
-            two: 'خلال سنتين',
-            few: 'خلال {0} سنوات',
-            many: 'خلال {0} سنة',
-            other: 'خلال {0} سنة',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'السنة', short: 'السنة', narrow: 'السنة'),
+    previous: MultiLength(
+      long: 'السنة الماضية',
+      short: 'السنة الماضية',
+      narrow: 'السنة الماضية',
+    ),
+    now: MultiLength(
+      long: 'السنة الحالية',
+      short: 'السنة الحالية',
+      narrow: 'السنة الحالية',
+    ),
+    next: MultiLength(
+      long: 'السنة القادمة',
+      short: 'السنة القادمة',
+      narrow: 'السنة القادمة',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سنة',
+        one: 'قبل سنة واحدة',
+        two: 'قبل سنتين',
+        few: 'قبل {0} سنوات',
+        many: 'قبل {0} سنة',
+        other: 'قبل {0} سنة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سنة',
+        one: 'قبل سنة واحدة',
+        two: 'قبل سنتين',
+        few: 'قبل {0} سنوات',
+        many: 'قبل {0} سنة',
+        other: 'قبل {0} سنة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سنة',
+        one: 'قبل سنة واحدة',
+        two: 'قبل سنتين',
+        few: 'قبل {0} سنوات',
+        many: 'قبل {0} سنة',
+        other: 'قبل {0} سنة',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سنة',
+        one: 'خلال سنة واحدة',
+        two: 'خلال سنتين',
+        few: 'خلال {0} سنوات',
+        many: 'خلال {0} سنة',
+        other: 'خلال {0} سنة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سنة',
+        one: 'خلال سنة واحدة',
+        two: 'خلال سنتين',
+        few: 'خلال {0} سنوات',
+        many: 'خلال {0} سنة',
+        other: 'خلال {0} سنة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سنة',
+        one: 'خلال سنة واحدة',
+        two: 'خلال سنتين',
+        few: 'خلال {0} سنوات',
+        many: 'خلال {0} سنة',
+        other: 'خلال {0} سنة',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ربع السنة',
-          short: 'ربع السنة',
-          narrow: 'ربع السنة',
-        ),
-        previous: MultiLength(
-          long: 'الربع الأخير',
-          short: 'الربع الأخير',
-          narrow: 'الربع الأخير',
-        ),
-        now: MultiLength(
-          long: 'هذا الربع',
-          short: 'هذا الربع',
-          narrow: 'هذا الربع',
-        ),
-        next: MultiLength(
-          long: 'الربع القادم',
-          short: 'الربع القادم',
-          narrow: 'الربع القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ربع سنة',
-            one: 'قبل ربع سنة واحد',
-            two: 'قبل ربعي سنة',
-            few: 'قبل {0} أرباع سنة',
-            many: 'قبل {0} ربع سنة',
-            other: 'قبل {0} ربع سنة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ربع سنة',
-            one: 'قبل ربع سنة واحد',
-            two: 'قبل ربعي سنة',
-            few: 'قبل {0} أرباع سنة',
-            many: 'قبل {0} ربع سنة',
-            other: 'قبل {0} ربع سنة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ربع سنة',
-            one: 'قبل ربع سنة واحد',
-            two: 'قبل ربعي سنة',
-            few: 'قبل {0} أرباع سنة',
-            many: 'قبل {0} ربع سنة',
-            other: 'قبل {0} ربع سنة',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ربع سنة',
-            one: 'خلال ربع سنة واحد',
-            two: 'خلال ربعي سنة',
-            few: 'خلال {0} أرباع سنة',
-            many: 'خلال {0} ربع سنة',
-            other: 'خلال {0} ربع سنة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ربع سنة',
-            one: 'خلال ربع سنة واحد',
-            two: 'خلال ربعي سنة',
-            few: 'خلال {0} أرباع سنة',
-            many: 'خلال {0} ربع سنة',
-            other: 'خلال {0} ربع سنة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ربع سنة',
-            one: 'خلال ربع سنة واحد',
-            two: 'خلال ربعي سنة',
-            few: 'خلال {0} أرباع سنة',
-            many: 'خلال {0} ربع سنة',
-            other: 'خلال {0} ربع سنة',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'ربع السنة',
+      short: 'ربع السنة',
+      narrow: 'ربع السنة',
+    ),
+    previous: MultiLength(
+      long: 'الربع الأخير',
+      short: 'الربع الأخير',
+      narrow: 'الربع الأخير',
+    ),
+    now: MultiLength(
+      long: 'هذا الربع',
+      short: 'هذا الربع',
+      narrow: 'هذا الربع',
+    ),
+    next: MultiLength(
+      long: 'الربع القادم',
+      short: 'الربع القادم',
+      narrow: 'الربع القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ربع سنة',
+        one: 'قبل ربع سنة واحد',
+        two: 'قبل ربعي سنة',
+        few: 'قبل {0} أرباع سنة',
+        many: 'قبل {0} ربع سنة',
+        other: 'قبل {0} ربع سنة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ربع سنة',
+        one: 'قبل ربع سنة واحد',
+        two: 'قبل ربعي سنة',
+        few: 'قبل {0} أرباع سنة',
+        many: 'قبل {0} ربع سنة',
+        other: 'قبل {0} ربع سنة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ربع سنة',
+        one: 'قبل ربع سنة واحد',
+        two: 'قبل ربعي سنة',
+        few: 'قبل {0} أرباع سنة',
+        many: 'قبل {0} ربع سنة',
+        other: 'قبل {0} ربع سنة',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ربع سنة',
+        one: 'خلال ربع سنة واحد',
+        two: 'خلال ربعي سنة',
+        few: 'خلال {0} أرباع سنة',
+        many: 'خلال {0} ربع سنة',
+        other: 'خلال {0} ربع سنة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ربع سنة',
+        one: 'خلال ربع سنة واحد',
+        two: 'خلال ربعي سنة',
+        few: 'خلال {0} أرباع سنة',
+        many: 'خلال {0} ربع سنة',
+        other: 'خلال {0} ربع سنة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ربع سنة',
+        one: 'خلال ربع سنة واحد',
+        two: 'خلال ربعي سنة',
+        few: 'خلال {0} أرباع سنة',
+        many: 'خلال {0} ربع سنة',
+        other: 'خلال {0} ربع سنة',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'الشهر',
-          short: 'الشهر',
-          narrow: 'الشهر',
-        ),
-        previous: MultiLength(
-          long: 'الشهر الماضي',
-          short: 'الشهر الماضي',
-          narrow: 'الشهر الماضي',
-        ),
-        now: MultiLength(
-          long: 'هذا الشهر',
-          short: 'هذا الشهر',
-          narrow: 'هذا الشهر',
-        ),
-        next: MultiLength(
-          long: 'الشهر القادم',
-          short: 'الشهر القادم',
-          narrow: 'الشهر القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} شهر',
-            one: 'قبل شهر واحد',
-            two: 'قبل شهرين',
-            few: 'قبل {0} أشهر',
-            many: 'قبل {0} شهرًا',
-            other: 'قبل {0} شهر',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} شهر',
-            one: 'قبل شهر واحد',
-            two: 'قبل شهرين',
-            few: 'خلال {0} أشهر',
-            many: 'قبل {0} شهرًا',
-            other: 'قبل {0} شهر',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} شهر',
-            one: 'قبل شهر واحد',
-            two: 'قبل شهرين',
-            few: 'قبل {0} أشهر',
-            many: 'قبل {0} شهرًا',
-            other: 'قبل {0} شهر',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} شهر',
-            one: 'خلال شهر واحد',
-            two: 'خلال شهرين',
-            few: 'خلال {0} أشهر',
-            many: 'خلال {0} شهرًا',
-            other: 'خلال {0} شهر',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} شهر',
-            one: 'خلال شهر واحد',
-            two: 'خلال شهرين',
-            few: 'خلال {0} أشهر',
-            many: 'خلال {0} شهرًا',
-            other: 'خلال {0} شهر',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} شهر',
-            one: 'خلال شهر واحد',
-            two: 'خلال شهرين',
-            few: 'خلال {0} أشهر',
-            many: 'خلال {0} شهرًا',
-            other: 'خلال {0} شهر',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'الشهر', short: 'الشهر', narrow: 'الشهر'),
+    previous: MultiLength(
+      long: 'الشهر الماضي',
+      short: 'الشهر الماضي',
+      narrow: 'الشهر الماضي',
+    ),
+    now: MultiLength(
+      long: 'هذا الشهر',
+      short: 'هذا الشهر',
+      narrow: 'هذا الشهر',
+    ),
+    next: MultiLength(
+      long: 'الشهر القادم',
+      short: 'الشهر القادم',
+      narrow: 'الشهر القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} شهر',
+        one: 'قبل شهر واحد',
+        two: 'قبل شهرين',
+        few: 'قبل {0} أشهر',
+        many: 'قبل {0} شهرًا',
+        other: 'قبل {0} شهر',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} شهر',
+        one: 'قبل شهر واحد',
+        two: 'قبل شهرين',
+        few: 'خلال {0} أشهر',
+        many: 'قبل {0} شهرًا',
+        other: 'قبل {0} شهر',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} شهر',
+        one: 'قبل شهر واحد',
+        two: 'قبل شهرين',
+        few: 'قبل {0} أشهر',
+        many: 'قبل {0} شهرًا',
+        other: 'قبل {0} شهر',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} شهر',
+        one: 'خلال شهر واحد',
+        two: 'خلال شهرين',
+        few: 'خلال {0} أشهر',
+        many: 'خلال {0} شهرًا',
+        other: 'خلال {0} شهر',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} شهر',
+        one: 'خلال شهر واحد',
+        two: 'خلال شهرين',
+        few: 'خلال {0} أشهر',
+        many: 'خلال {0} شهرًا',
+        other: 'خلال {0} شهر',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} شهر',
+        one: 'خلال شهر واحد',
+        two: 'خلال شهرين',
+        few: 'خلال {0} أشهر',
+        many: 'خلال {0} شهرًا',
+        other: 'خلال {0} شهر',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'الأسبوع',
-          short: 'الأسبوع',
-          narrow: 'الأسبوع',
-        ),
-        previous: MultiLength(
-          long: 'الأسبوع الماضي',
-          short: 'الأسبوع الماضي',
-          narrow: 'الأسبوع الماضي',
-        ),
-        now: MultiLength(
-          long: 'هذا الأسبوع',
-          short: 'هذا الأسبوع',
-          narrow: 'هذا الأسبوع',
-        ),
-        next: MultiLength(
-          long: 'الأسبوع القادم',
-          short: 'الأسبوع القادم',
-          narrow: 'الأسبوع القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أسبوع',
-            one: 'قبل أسبوع واحد',
-            two: 'قبل أسبوعين',
-            few: 'قبل {0} أسابيع',
-            many: 'قبل {0} أسبوعًا',
-            other: 'قبل {0} أسبوع',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أسبوع',
-            one: 'قبل أسبوع واحد',
-            two: 'قبل أسبوعين',
-            few: 'قبل {0} أسابيع',
-            many: 'قبل {0} أسبوعًا',
-            other: 'قبل {0} أسبوع',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أسبوع',
-            one: 'قبل أسبوع واحد',
-            two: 'قبل أسبوعين',
-            few: 'قبل {0} أسابيع',
-            many: 'قبل {0} أسبوعًا',
-            other: 'قبل {0} أسبوع',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أسبوع',
-            one: 'خلال أسبوع واحد',
-            two: 'خلال أسبوعين',
-            few: 'خلال {0} أسابيع',
-            many: 'خلال {0} أسبوعًا',
-            other: 'خلال {0} أسبوع',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أسبوع',
-            one: 'خلال أسبوع واحد',
-            two: 'خلال {0} أسبوعين',
-            few: 'خلال {0} أسابيع',
-            many: 'خلال {0} أسبوعًا',
-            other: 'خلال {0} أسبوع',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أسبوع',
-            one: 'خلال أسبوع واحد',
-            two: 'خلال أسبوعين',
-            few: 'خلال {0} أسابيع',
-            many: 'خلال {0} أسبوعًا',
-            other: 'خلال {0} أسبوع',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'الأسبوع',
+      short: 'الأسبوع',
+      narrow: 'الأسبوع',
+    ),
+    previous: MultiLength(
+      long: 'الأسبوع الماضي',
+      short: 'الأسبوع الماضي',
+      narrow: 'الأسبوع الماضي',
+    ),
+    now: MultiLength(
+      long: 'هذا الأسبوع',
+      short: 'هذا الأسبوع',
+      narrow: 'هذا الأسبوع',
+    ),
+    next: MultiLength(
+      long: 'الأسبوع القادم',
+      short: 'الأسبوع القادم',
+      narrow: 'الأسبوع القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أسبوع',
+        one: 'قبل أسبوع واحد',
+        two: 'قبل أسبوعين',
+        few: 'قبل {0} أسابيع',
+        many: 'قبل {0} أسبوعًا',
+        other: 'قبل {0} أسبوع',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أسبوع',
+        one: 'قبل أسبوع واحد',
+        two: 'قبل أسبوعين',
+        few: 'قبل {0} أسابيع',
+        many: 'قبل {0} أسبوعًا',
+        other: 'قبل {0} أسبوع',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أسبوع',
+        one: 'قبل أسبوع واحد',
+        two: 'قبل أسبوعين',
+        few: 'قبل {0} أسابيع',
+        many: 'قبل {0} أسبوعًا',
+        other: 'قبل {0} أسبوع',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أسبوع',
+        one: 'خلال أسبوع واحد',
+        two: 'خلال أسبوعين',
+        few: 'خلال {0} أسابيع',
+        many: 'خلال {0} أسبوعًا',
+        other: 'خلال {0} أسبوع',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أسبوع',
+        one: 'خلال أسبوع واحد',
+        two: 'خلال {0} أسبوعين',
+        few: 'خلال {0} أسابيع',
+        many: 'خلال {0} أسبوعًا',
+        other: 'خلال {0} أسبوع',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أسبوع',
+        one: 'خلال أسبوع واحد',
+        two: 'خلال أسبوعين',
+        few: 'خلال {0} أسابيع',
+        many: 'خلال {0} أسبوعًا',
+        other: 'خلال {0} أسبوع',
+      ),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'الأسبوع من الشهر',
-        short: 'أسبوع من شهر',
-        narrow: 'أسبوع/شهر',
-      );
+    long: 'الأسبوع من الشهر',
+    short: 'أسبوع من شهر',
+    narrow: 'أسبوع/شهر',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'يوم',
-          short: 'يوم',
-          narrow: 'يوم',
-        ),
-        previous: MultiLength(
-          long: 'أمس',
-          short: 'أمس',
-          narrow: 'أمس',
-        ),
-        now: MultiLength(
-          long: 'اليوم',
-          short: 'اليوم',
-          narrow: 'اليوم',
-        ),
-        next: MultiLength(
-          long: 'غدًا',
-          short: 'غدًا',
-          narrow: 'غدًا',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم',
-            one: 'قبل يوم واحد',
-            two: 'قبل يومين',
-            few: 'قبل {0} أيام',
-            many: 'قبل {0} يومًا',
-            other: 'قبل {0} يوم',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم',
-            one: 'قبل يوم واحد',
-            two: 'قبل يومين',
-            few: 'قبل {0} أيام',
-            many: 'قبل {0} يومًا',
-            other: 'قبل {0} يوم',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم',
-            one: 'قبل يوم واحد',
-            two: 'قبل يومين',
-            few: 'قبل {0} أيام',
-            many: 'قبل {0} يومًا',
-            other: 'قبل {0} يوم',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} يوم',
-            one: 'خلال يوم واحد',
-            two: 'خلال يومين',
-            few: 'خلال {0} أيام',
-            many: 'خلال {0} يومًا',
-            other: 'خلال {0} يوم',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} يوم',
-            one: 'خلال يوم واحد',
-            two: 'خلال يومين',
-            few: 'خلال {0} أيام',
-            many: 'خلال {0} يومًا',
-            other: 'خلال {0} يوم',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} يوم',
-            one: 'خلال يوم واحد',
-            two: 'خلال يومين',
-            few: 'خلال {0} أيام',
-            many: 'خلال {0} يومًا',
-            other: 'خلال {0} يوم',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'يوم', short: 'يوم', narrow: 'يوم'),
+    previous: MultiLength(long: 'أمس', short: 'أمس', narrow: 'أمس'),
+    now: MultiLength(long: 'اليوم', short: 'اليوم', narrow: 'اليوم'),
+    next: MultiLength(long: 'غدًا', short: 'غدًا', narrow: 'غدًا'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم',
+        one: 'قبل يوم واحد',
+        two: 'قبل يومين',
+        few: 'قبل {0} أيام',
+        many: 'قبل {0} يومًا',
+        other: 'قبل {0} يوم',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم',
+        one: 'قبل يوم واحد',
+        two: 'قبل يومين',
+        few: 'قبل {0} أيام',
+        many: 'قبل {0} يومًا',
+        other: 'قبل {0} يوم',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم',
+        one: 'قبل يوم واحد',
+        two: 'قبل يومين',
+        few: 'قبل {0} أيام',
+        many: 'قبل {0} يومًا',
+        other: 'قبل {0} يوم',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} يوم',
+        one: 'خلال يوم واحد',
+        two: 'خلال يومين',
+        few: 'خلال {0} أيام',
+        many: 'خلال {0} يومًا',
+        other: 'خلال {0} يوم',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} يوم',
+        one: 'خلال يوم واحد',
+        two: 'خلال يومين',
+        few: 'خلال {0} أيام',
+        many: 'خلال {0} يومًا',
+        other: 'خلال {0} يوم',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} يوم',
+        one: 'خلال يوم واحد',
+        two: 'خلال يومين',
+        few: 'خلال {0} أيام',
+        many: 'خلال {0} يومًا',
+        other: 'خلال {0} يوم',
+      ),
+    ),
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'يوم من السنة',
-        short: 'يوم من سنة',
-        narrow: 'يوم/سنة',
-      );
+    long: 'يوم من السنة',
+    short: 'يوم من سنة',
+    narrow: 'يوم/سنة',
+  );
 
   @override
-  MultiLength get weekday => const MultiLength(
-        long: 'اليوم',
-        short: 'اليوم',
-        narrow: 'اليوم',
-      );
+  MultiLength get weekday =>
+      const MultiLength(long: 'اليوم', short: 'اليوم', narrow: 'اليوم');
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'يوم عمل من الشهر',
-        short: 'يوم عمل من شهر',
-        narrow: 'يوم عمل/شهر',
-      );
+    long: 'يوم عمل من الشهر',
+    short: 'يوم عمل من شهر',
+    narrow: 'يوم عمل/شهر',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'الأحد الماضي',
-          short: 'الأحد الماضي',
-          narrow: 'الأحد الماضي',
-        ),
-        now: MultiLength(
-          long: 'الأحد الحالي',
-          short: 'الأحد الحالي',
-          narrow: 'الأحد الحالي',
-        ),
-        next: MultiLength(
-          long: 'الأحد القادم',
-          short: 'الأحد القادم',
-          narrow: 'الأحد القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أحد',
-            one: 'الأحد الماضي',
-            two: 'الأحد قبل الماضي',
-            few: 'قبل {0} أحد',
-            many: 'قبل {0} أحد',
-            other: 'قبل {0} أحد',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أحد',
-            one: 'أحد ماضي',
-            two: 'أحد قبل الماضي',
-            few: 'قبل {0} أحد',
-            many: 'قبل {0} أحد',
-            other: 'قبل {0} أحد',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أحد',
-            one: 'أحد ماضي',
-            two: 'أحد قبل الماضي',
-            few: 'قبل {0} أحد',
-            many: 'قبل {0} أحد',
-            other: 'قبل {0} أحد',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أحد',
-            one: 'الأحد القادم',
-            two: 'الأحد بعد القادم',
-            few: 'خلال {0} أحد',
-            many: 'خلال {0} أحد',
-            other: 'خلال {0} أحد',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أحد',
-            one: 'أحد قادم',
-            two: 'أحد بعد القادم',
-            few: 'خلال {0} أحد',
-            many: 'خلال {0} أحد',
-            other: 'خلال {0} أحد',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أحد',
-            one: 'أحد قادم',
-            two: 'أحد بعد القادم',
-            few: 'خلال {0} أحد',
-            many: 'خلال {0} أحد',
-            other: 'خلال {0} أحد',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'الأحد الماضي',
+      short: 'الأحد الماضي',
+      narrow: 'الأحد الماضي',
+    ),
+    now: MultiLength(
+      long: 'الأحد الحالي',
+      short: 'الأحد الحالي',
+      narrow: 'الأحد الحالي',
+    ),
+    next: MultiLength(
+      long: 'الأحد القادم',
+      short: 'الأحد القادم',
+      narrow: 'الأحد القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أحد',
+        one: 'الأحد الماضي',
+        two: 'الأحد قبل الماضي',
+        few: 'قبل {0} أحد',
+        many: 'قبل {0} أحد',
+        other: 'قبل {0} أحد',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أحد',
+        one: 'أحد ماضي',
+        two: 'أحد قبل الماضي',
+        few: 'قبل {0} أحد',
+        many: 'قبل {0} أحد',
+        other: 'قبل {0} أحد',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أحد',
+        one: 'أحد ماضي',
+        two: 'أحد قبل الماضي',
+        few: 'قبل {0} أحد',
+        many: 'قبل {0} أحد',
+        other: 'قبل {0} أحد',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أحد',
+        one: 'الأحد القادم',
+        two: 'الأحد بعد القادم',
+        few: 'خلال {0} أحد',
+        many: 'خلال {0} أحد',
+        other: 'خلال {0} أحد',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أحد',
+        one: 'أحد قادم',
+        two: 'أحد بعد القادم',
+        few: 'خلال {0} أحد',
+        many: 'خلال {0} أحد',
+        other: 'خلال {0} أحد',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أحد',
+        one: 'أحد قادم',
+        two: 'أحد بعد القادم',
+        few: 'خلال {0} أحد',
+        many: 'خلال {0} أحد',
+        other: 'خلال {0} أحد',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'الإثنين الماضي',
-          short: 'الإثنين الماضي',
-          narrow: 'الإثنين الماضي',
-        ),
-        now: MultiLength(
-          long: 'الإثنين الحالي',
-          short: 'الإثنين الحالي',
-          narrow: 'الإثنين الحالي',
-        ),
-        next: MultiLength(
-          long: 'الإثنين القادم',
-          short: 'الإثنين القادم',
-          narrow: 'الإثنين القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} إثنين',
-            one: 'الإثنين الماضي',
-            two: 'الإثنين قبل الماضي',
-            few: 'قبل {0} أيام إثنين',
-            many: 'قبل {0} يوم إثنين',
-            other: 'قبل {0} يوم إثنين',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} إثنين',
-            one: 'الإثنين الماضي',
-            two: 'الإثنين قبل الماضي',
-            few: 'قبل {0} إثنين',
-            many: 'قبل {0} إثنين',
-            other: 'قبل {0} إثنين',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} إثنين',
-            one: 'إثنين ماضي',
-            two: 'إثنين قبل الماضي',
-            few: 'قبل {0} إثنين',
-            many: 'قبل {0} إثنين',
-            other: 'قبل {0} إثنين',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} إثنين',
-            one: 'الإثنين القادم',
-            two: 'الإثنين بعد القادم',
-            few: 'خلال {0} أيام إثنين',
-            many: 'خلال {0} يوم إثنين',
-            other: 'خلال {0} يوم إثنين',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} إثنين',
-            one: 'الإثنين القادم',
-            two: 'الإثنين بعد القادم',
-            few: 'خلال {0} إثنين',
-            many: 'خلال {0} إثنين',
-            other: 'خلال {0} إثنين',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} إثنين',
-            one: 'إثنين قادم',
-            two: 'الإثنين بعد القادم',
-            few: 'خلال {0} إثنين',
-            many: 'خلال {0} إثنين',
-            other: 'خلال {0} إثنين',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'الإثنين الماضي',
+      short: 'الإثنين الماضي',
+      narrow: 'الإثنين الماضي',
+    ),
+    now: MultiLength(
+      long: 'الإثنين الحالي',
+      short: 'الإثنين الحالي',
+      narrow: 'الإثنين الحالي',
+    ),
+    next: MultiLength(
+      long: 'الإثنين القادم',
+      short: 'الإثنين القادم',
+      narrow: 'الإثنين القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} إثنين',
+        one: 'الإثنين الماضي',
+        two: 'الإثنين قبل الماضي',
+        few: 'قبل {0} أيام إثنين',
+        many: 'قبل {0} يوم إثنين',
+        other: 'قبل {0} يوم إثنين',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} إثنين',
+        one: 'الإثنين الماضي',
+        two: 'الإثنين قبل الماضي',
+        few: 'قبل {0} إثنين',
+        many: 'قبل {0} إثنين',
+        other: 'قبل {0} إثنين',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} إثنين',
+        one: 'إثنين ماضي',
+        two: 'إثنين قبل الماضي',
+        few: 'قبل {0} إثنين',
+        many: 'قبل {0} إثنين',
+        other: 'قبل {0} إثنين',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} إثنين',
+        one: 'الإثنين القادم',
+        two: 'الإثنين بعد القادم',
+        few: 'خلال {0} أيام إثنين',
+        many: 'خلال {0} يوم إثنين',
+        other: 'خلال {0} يوم إثنين',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} إثنين',
+        one: 'الإثنين القادم',
+        two: 'الإثنين بعد القادم',
+        few: 'خلال {0} إثنين',
+        many: 'خلال {0} إثنين',
+        other: 'خلال {0} إثنين',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} إثنين',
+        one: 'إثنين قادم',
+        two: 'الإثنين بعد القادم',
+        few: 'خلال {0} إثنين',
+        many: 'خلال {0} إثنين',
+        other: 'خلال {0} إثنين',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'الثلاثاء الماضي',
-          short: 'الثلاثاء الماضي',
-          narrow: 'الثلاثاء الماضي',
-        ),
-        now: MultiLength(
-          long: 'الثلاثاء الحالي',
-          short: 'الثلاثاء الحالي',
-          narrow: 'الثلاثاء الحالي',
-        ),
-        next: MultiLength(
-          long: 'الثلاثاء القادم',
-          short: 'الثلاثاء القادم',
-          narrow: 'الثلاثاء القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم ثلاثاء',
-            one: 'الثلاثاء الماضي',
-            two: 'الثلاثاء قبل الماضي',
-            few: 'قبل {0} أيام ثلاثاء',
-            many: 'قبل {0} يوم ثلاثاء',
-            other: 'قبل {0} يوم ثلاثاء',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ثلاثاء',
-            one: 'ثلاثاء ماضي',
-            two: 'ثلاثاء قبل الماضي',
-            few: 'قبل {0} ثلاثاء',
-            many: 'قبل {0} ثلاثاء',
-            other: 'قبل {0} ثلاثاء',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ثلاثاء',
-            one: 'ثلاثاء ماضي',
-            two: 'ثلاثاء قبل الماضي',
-            few: 'قبل {0} ثلاثاء',
-            many: 'قبل {0} ثلاثاء',
-            other: 'قبل {0} ثلاثاء',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} يوم ثلاثاء',
-            one: 'الثلاثاء القادم',
-            two: 'الثلاثاء بعد القادم',
-            few: 'خلال {0} أيام ثلاثاء',
-            many: 'خلال {0} يوم ثلاثاء',
-            other: 'خلال {0} يوم ثلاثاء',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ثلاثاء',
-            one: 'ثلاثاء قادم',
-            two: 'ثلاثاء بعد القادم',
-            few: 'خلال {0} ثلاثاء',
-            many: 'خلال {0} ثلاثاء',
-            other: 'خلال {0} ثلاثاء',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ثلاثاء',
-            one: 'ثلاثاء قادم',
-            two: 'ثلاثاء بعد القادم',
-            few: 'خلال {0} ثلاثاء',
-            many: 'خلال {0} ثلاثاء',
-            other: 'خلال {0} ثلاثاء',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'الثلاثاء الماضي',
+      short: 'الثلاثاء الماضي',
+      narrow: 'الثلاثاء الماضي',
+    ),
+    now: MultiLength(
+      long: 'الثلاثاء الحالي',
+      short: 'الثلاثاء الحالي',
+      narrow: 'الثلاثاء الحالي',
+    ),
+    next: MultiLength(
+      long: 'الثلاثاء القادم',
+      short: 'الثلاثاء القادم',
+      narrow: 'الثلاثاء القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم ثلاثاء',
+        one: 'الثلاثاء الماضي',
+        two: 'الثلاثاء قبل الماضي',
+        few: 'قبل {0} أيام ثلاثاء',
+        many: 'قبل {0} يوم ثلاثاء',
+        other: 'قبل {0} يوم ثلاثاء',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ثلاثاء',
+        one: 'ثلاثاء ماضي',
+        two: 'ثلاثاء قبل الماضي',
+        few: 'قبل {0} ثلاثاء',
+        many: 'قبل {0} ثلاثاء',
+        other: 'قبل {0} ثلاثاء',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ثلاثاء',
+        one: 'ثلاثاء ماضي',
+        two: 'ثلاثاء قبل الماضي',
+        few: 'قبل {0} ثلاثاء',
+        many: 'قبل {0} ثلاثاء',
+        other: 'قبل {0} ثلاثاء',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} يوم ثلاثاء',
+        one: 'الثلاثاء القادم',
+        two: 'الثلاثاء بعد القادم',
+        few: 'خلال {0} أيام ثلاثاء',
+        many: 'خلال {0} يوم ثلاثاء',
+        other: 'خلال {0} يوم ثلاثاء',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ثلاثاء',
+        one: 'ثلاثاء قادم',
+        two: 'ثلاثاء بعد القادم',
+        few: 'خلال {0} ثلاثاء',
+        many: 'خلال {0} ثلاثاء',
+        other: 'خلال {0} ثلاثاء',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ثلاثاء',
+        one: 'ثلاثاء قادم',
+        two: 'ثلاثاء بعد القادم',
+        few: 'خلال {0} ثلاثاء',
+        many: 'خلال {0} ثلاثاء',
+        other: 'خلال {0} ثلاثاء',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'الأربعاء الماضي',
-          short: 'الأربعاء الماضي',
-          narrow: 'الأربعاء الماضي',
-        ),
-        now: MultiLength(
-          long: 'الأربعاء الحالي',
-          short: 'الأربعاء الحالي',
-          narrow: 'الأربعاء الحالي',
-        ),
-        next: MultiLength(
-          long: 'الأربعاء القادم',
-          short: 'الأربعاء القادم',
-          narrow: 'الأربعاء القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم أربعاء',
-            one: 'الأربعاء الماضي',
-            two: 'الأربعاء قبل الماضي',
-            few: 'قبل {0} أيام أربعاء',
-            many: 'قبل {0} يوم أربعاء',
-            other: 'قبل {0} يوم أربعاء',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أربعاء',
-            one: 'أربعاء ماضي',
-            two: 'أربعاء قبل الماضي',
-            few: 'قبل {0} أربعاء',
-            many: 'قبل {0} أربعاء',
-            other: 'قبل {0} أربعاء',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} أربعاء',
-            one: 'أربعاء ماضي',
-            two: 'أربعاء قبل الماضي',
-            few: 'قبل {0} أربعاء',
-            many: 'قبل {0} أربعاء',
-            other: 'قبل {0} أربعاء',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} يوم أربعاء',
-            one: 'الأربعاء القادم',
-            two: 'الأربعاء بعد القادم',
-            few: 'خلال {0} أيام أربعاء',
-            many: 'خلال {0} يوم أربعاء',
-            other: 'خلال {0} يوم أربعاء',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أربعاء',
-            one: 'خلال {0} أربعاء',
-            two: 'خلال {0} أربعاء',
-            few: 'خلال {0} أربعاء',
-            many: 'خلال {0} أربعاء',
-            other: 'خلال {0} أربعاء',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} أربعاء',
-            one: 'أربعاء قادم',
-            two: 'أربعاء بعد القادم',
-            few: 'خلال {0} أربعاء',
-            many: 'خلال {0} أربعاء',
-            other: 'خلال {0} أربعاء',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'الأربعاء الماضي',
+      short: 'الأربعاء الماضي',
+      narrow: 'الأربعاء الماضي',
+    ),
+    now: MultiLength(
+      long: 'الأربعاء الحالي',
+      short: 'الأربعاء الحالي',
+      narrow: 'الأربعاء الحالي',
+    ),
+    next: MultiLength(
+      long: 'الأربعاء القادم',
+      short: 'الأربعاء القادم',
+      narrow: 'الأربعاء القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم أربعاء',
+        one: 'الأربعاء الماضي',
+        two: 'الأربعاء قبل الماضي',
+        few: 'قبل {0} أيام أربعاء',
+        many: 'قبل {0} يوم أربعاء',
+        other: 'قبل {0} يوم أربعاء',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أربعاء',
+        one: 'أربعاء ماضي',
+        two: 'أربعاء قبل الماضي',
+        few: 'قبل {0} أربعاء',
+        many: 'قبل {0} أربعاء',
+        other: 'قبل {0} أربعاء',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} أربعاء',
+        one: 'أربعاء ماضي',
+        two: 'أربعاء قبل الماضي',
+        few: 'قبل {0} أربعاء',
+        many: 'قبل {0} أربعاء',
+        other: 'قبل {0} أربعاء',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} يوم أربعاء',
+        one: 'الأربعاء القادم',
+        two: 'الأربعاء بعد القادم',
+        few: 'خلال {0} أيام أربعاء',
+        many: 'خلال {0} يوم أربعاء',
+        other: 'خلال {0} يوم أربعاء',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أربعاء',
+        one: 'خلال {0} أربعاء',
+        two: 'خلال {0} أربعاء',
+        few: 'خلال {0} أربعاء',
+        many: 'خلال {0} أربعاء',
+        other: 'خلال {0} أربعاء',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} أربعاء',
+        one: 'أربعاء قادم',
+        two: 'أربعاء بعد القادم',
+        few: 'خلال {0} أربعاء',
+        many: 'خلال {0} أربعاء',
+        other: 'خلال {0} أربعاء',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'الخميس الماضي',
-          short: 'الخميس الماضي',
-          narrow: 'الخميس الماضي',
-        ),
-        now: MultiLength(
-          long: 'الخميس الحالي',
-          short: 'الخميس الحالي',
-          narrow: 'الخميس الحالي',
-        ),
-        next: MultiLength(
-          long: 'الخميس القادم',
-          short: 'الخميس القادم',
-          narrow: 'الخميس القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم خميس',
-            one: 'الخميس الماضي',
-            two: 'الخميس قبل الماضي',
-            few: 'قبل {0} أيام خميس',
-            many: 'قبل {0} يوم خميس',
-            other: 'قبل {0} يوم خميس',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} خميس',
-            one: 'خميس ماضي',
-            two: 'خميس قبل الماضي',
-            few: 'قبل {0} خميس',
-            many: 'قبل {0} خميس',
-            other: 'قبل {0} خميس',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} خميس',
-            one: 'خميس ماضي',
-            two: 'خميس قبل الماضي',
-            few: 'قبل {0} خميس',
-            many: 'قبل {0} خميس',
-            other: 'قبل {0} خميس',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} يوم خميس',
-            one: 'الخميس القادم',
-            two: 'الخميس بعد القادم',
-            few: 'خلال {0} أيام خميس',
-            many: 'خلال {0} يوم خميس',
-            other: 'خلال {0} يوم خميس',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} خميس',
-            one: 'الخميس القادم',
-            two: 'الخميس بعد القادم',
-            few: 'خلال {0} خميس',
-            many: 'خلال {0} خميس',
-            other: 'خلال {0} خميس',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} خميس',
-            one: 'خلال {0} يوم خميس',
-            two: 'الخميس بعد القادم',
-            few: 'خلال {0} خميس',
-            many: 'خلال {0} خميس',
-            other: 'خلال {0} خميس',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'الخميس الماضي',
+      short: 'الخميس الماضي',
+      narrow: 'الخميس الماضي',
+    ),
+    now: MultiLength(
+      long: 'الخميس الحالي',
+      short: 'الخميس الحالي',
+      narrow: 'الخميس الحالي',
+    ),
+    next: MultiLength(
+      long: 'الخميس القادم',
+      short: 'الخميس القادم',
+      narrow: 'الخميس القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم خميس',
+        one: 'الخميس الماضي',
+        two: 'الخميس قبل الماضي',
+        few: 'قبل {0} أيام خميس',
+        many: 'قبل {0} يوم خميس',
+        other: 'قبل {0} يوم خميس',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} خميس',
+        one: 'خميس ماضي',
+        two: 'خميس قبل الماضي',
+        few: 'قبل {0} خميس',
+        many: 'قبل {0} خميس',
+        other: 'قبل {0} خميس',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} خميس',
+        one: 'خميس ماضي',
+        two: 'خميس قبل الماضي',
+        few: 'قبل {0} خميس',
+        many: 'قبل {0} خميس',
+        other: 'قبل {0} خميس',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} يوم خميس',
+        one: 'الخميس القادم',
+        two: 'الخميس بعد القادم',
+        few: 'خلال {0} أيام خميس',
+        many: 'خلال {0} يوم خميس',
+        other: 'خلال {0} يوم خميس',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} خميس',
+        one: 'الخميس القادم',
+        two: 'الخميس بعد القادم',
+        few: 'خلال {0} خميس',
+        many: 'خلال {0} خميس',
+        other: 'خلال {0} خميس',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} خميس',
+        one: 'خلال {0} يوم خميس',
+        two: 'الخميس بعد القادم',
+        few: 'خلال {0} خميس',
+        many: 'خلال {0} خميس',
+        other: 'خلال {0} خميس',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'الجمعة الماضي',
-          short: 'الجمعة الماضي',
-          narrow: 'الجمعة الماضي',
-        ),
-        now: MultiLength(
-          long: 'الجمعة الحالي',
-          short: 'الجمعة الحالي',
-          narrow: 'الجمعة الحالي',
-        ),
-        next: MultiLength(
-          long: 'الجمعة القادم',
-          short: 'الجمعة القادم',
-          narrow: 'الجمعة القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم جمعة',
-            one: 'الجمعة الماضي',
-            two: 'الجمعة قبل الماضي',
-            few: 'قبل {0} أيام جمعة',
-            many: 'قبل {0} يوم جمعة',
-            other: 'قبل {0} يوم جمعة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} جمعة',
-            one: 'جمعة ماضي',
-            two: 'جمعة قبل الماضي',
-            few: 'قبل {0} جمعة',
-            many: 'قبل {0} جمعة',
-            other: 'قبل {0} جمعة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} جمعة',
-            one: 'جمعة ماضي',
-            two: 'جمعة قبل الماضي',
-            few: 'قبل {0} جمعة',
-            many: 'قبل {0} جمعة',
-            other: 'قبل {0} جمعة',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} يوم جمعة',
-            one: 'الجمعة القادم',
-            two: 'الجمعة بعد القادم',
-            few: 'خلال {0} أيام جمعة',
-            many: 'خلال {0} يوم جمعة',
-            other: 'خلال {0} يوم جمعة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} جمعة',
-            one: 'جمعة قادم',
-            two: 'جمعة بعد القادم',
-            few: 'خلال {0} جمعة',
-            many: 'خلال {0} جمعة',
-            other: 'خلال {0} جمعة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} جمعة',
-            one: 'جمعة قادم',
-            two: 'جمعة بعد القادم',
-            few: 'خلال {0} جمعة',
-            many: 'خلال {0} جمعة',
-            other: 'خلال {0} جمعة',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'الجمعة الماضي',
+      short: 'الجمعة الماضي',
+      narrow: 'الجمعة الماضي',
+    ),
+    now: MultiLength(
+      long: 'الجمعة الحالي',
+      short: 'الجمعة الحالي',
+      narrow: 'الجمعة الحالي',
+    ),
+    next: MultiLength(
+      long: 'الجمعة القادم',
+      short: 'الجمعة القادم',
+      narrow: 'الجمعة القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم جمعة',
+        one: 'الجمعة الماضي',
+        two: 'الجمعة قبل الماضي',
+        few: 'قبل {0} أيام جمعة',
+        many: 'قبل {0} يوم جمعة',
+        other: 'قبل {0} يوم جمعة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} جمعة',
+        one: 'جمعة ماضي',
+        two: 'جمعة قبل الماضي',
+        few: 'قبل {0} جمعة',
+        many: 'قبل {0} جمعة',
+        other: 'قبل {0} جمعة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} جمعة',
+        one: 'جمعة ماضي',
+        two: 'جمعة قبل الماضي',
+        few: 'قبل {0} جمعة',
+        many: 'قبل {0} جمعة',
+        other: 'قبل {0} جمعة',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} يوم جمعة',
+        one: 'الجمعة القادم',
+        two: 'الجمعة بعد القادم',
+        few: 'خلال {0} أيام جمعة',
+        many: 'خلال {0} يوم جمعة',
+        other: 'خلال {0} يوم جمعة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} جمعة',
+        one: 'جمعة قادم',
+        two: 'جمعة بعد القادم',
+        few: 'خلال {0} جمعة',
+        many: 'خلال {0} جمعة',
+        other: 'خلال {0} جمعة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} جمعة',
+        one: 'جمعة قادم',
+        two: 'جمعة بعد القادم',
+        few: 'خلال {0} جمعة',
+        many: 'خلال {0} جمعة',
+        other: 'خلال {0} جمعة',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'السبت الماضي',
-          short: 'السبت الماضي',
-          narrow: 'السبت الماضي',
-        ),
-        now: MultiLength(
-          long: 'السبت الحالي',
-          short: 'السبت الحالي',
-          narrow: 'السبت الحالي',
-        ),
-        next: MultiLength(
-          long: 'السبت القادم',
-          short: 'السبت القادم',
-          narrow: 'السبت القادم',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} يوم سبت',
-            one: 'السبت الماضي',
-            two: 'السبت قبل الماضي',
-            few: 'قبل {0} يوم سبت',
-            many: 'قبل {0} يوم سبت',
-            other: 'قبل {0} يوم سبت',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سبت',
-            one: 'سبت ماضي',
-            two: 'سبت قبل الماضي',
-            few: 'قبل {0} سبت',
-            many: 'قبل {0} سبت',
-            other: 'قبل {0} سبت',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سبت',
-            one: 'سبت ماضي',
-            two: 'سبت قبل الماضي',
-            few: 'قبل {0} سبت',
-            many: 'قبل {0} سبت',
-            other: 'قبل {0} سبت',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'السبت القادم',
-            one: 'السبت القادم',
-            two: 'السبت بعد القادم',
-            few: 'السبت بعد {0} أسابيع',
-            many: 'خلال {0} يوم سبت',
-            other: 'بعد {0} يوم سبت',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سبت',
-            one: 'سبت قادم',
-            two: 'سبت بعد القادم',
-            few: 'خلال {0} سبت',
-            many: 'خلال {0} سبت',
-            other: 'خلال {0} سبت',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سبت',
-            one: 'سبت قادم',
-            two: 'سبت بعد القادم',
-            few: 'خلال {0} سبت',
-            many: 'خلال {0} سبت',
-            other: 'خلال {0} سبت',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'السبت الماضي',
+      short: 'السبت الماضي',
+      narrow: 'السبت الماضي',
+    ),
+    now: MultiLength(
+      long: 'السبت الحالي',
+      short: 'السبت الحالي',
+      narrow: 'السبت الحالي',
+    ),
+    next: MultiLength(
+      long: 'السبت القادم',
+      short: 'السبت القادم',
+      narrow: 'السبت القادم',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} يوم سبت',
+        one: 'السبت الماضي',
+        two: 'السبت قبل الماضي',
+        few: 'قبل {0} يوم سبت',
+        many: 'قبل {0} يوم سبت',
+        other: 'قبل {0} يوم سبت',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سبت',
+        one: 'سبت ماضي',
+        two: 'سبت قبل الماضي',
+        few: 'قبل {0} سبت',
+        many: 'قبل {0} سبت',
+        other: 'قبل {0} سبت',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سبت',
+        one: 'سبت ماضي',
+        two: 'سبت قبل الماضي',
+        few: 'قبل {0} سبت',
+        many: 'قبل {0} سبت',
+        other: 'قبل {0} سبت',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'السبت القادم',
+        one: 'السبت القادم',
+        two: 'السبت بعد القادم',
+        few: 'السبت بعد {0} أسابيع',
+        many: 'خلال {0} يوم سبت',
+        other: 'بعد {0} يوم سبت',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سبت',
+        one: 'سبت قادم',
+        two: 'سبت بعد القادم',
+        few: 'خلال {0} سبت',
+        many: 'خلال {0} سبت',
+        other: 'خلال {0} سبت',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سبت',
+        one: 'سبت قادم',
+        two: 'سبت بعد القادم',
+        few: 'خلال {0} سبت',
+        many: 'خلال {0} سبت',
+        other: 'خلال {0} سبت',
+      ),
+    ),
+  );
 
   @override
-  MultiLength get dayperiod => const MultiLength(
-        long: 'ص/م',
-        short: 'ص/م',
-        narrow: 'ص/م',
-      );
+  MultiLength get dayperiod =>
+      const MultiLength(long: 'ص/م', short: 'ص/م', narrow: 'ص/م');
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'الساعات',
-          short: 'الساعات',
-          narrow: 'الساعات',
-        ),
-        now: MultiLength(
-          long: 'الساعة الحالية',
-          short: 'الساعة الحالية',
-          narrow: 'الساعة الحالية',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ساعة',
-            one: 'قبل ساعة واحدة',
-            two: 'قبل ساعتين',
-            few: 'قبل {0} ساعات',
-            many: 'قبل {0} ساعة',
-            other: 'قبل {0} ساعة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ساعة',
-            one: 'قبل ساعة واحدة',
-            two: 'قبل ساعتين',
-            few: 'قبل {0} ساعات',
-            many: 'قبل {0} ساعة',
-            other: 'قبل {0} ساعة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ساعة',
-            one: 'قبل ساعة واحدة',
-            two: 'قبل ساعتين',
-            few: 'قبل {0} ساعات',
-            many: 'قبل {0} ساعة',
-            other: 'قبل {0} ساعة',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ساعة',
-            one: 'خلال ساعة واحدة',
-            two: 'خلال ساعتين',
-            few: 'خلال {0} ساعات',
-            many: 'خلال {0} ساعة',
-            other: 'خلال {0} ساعة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ساعة',
-            one: 'خلال ساعة واحدة',
-            two: 'خلال ساعتين',
-            few: 'خلال {0} ساعات',
-            many: 'خلال {0} ساعة',
-            other: 'خلال {0} ساعة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ساعة',
-            one: 'خلال ساعة واحدة',
-            two: 'خلال ساعتين',
-            few: 'خلال {0} ساعات',
-            many: 'خلال {0} ساعة',
-            other: 'خلال {0} ساعة',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'الساعات',
+      short: 'الساعات',
+      narrow: 'الساعات',
+    ),
+    now: MultiLength(
+      long: 'الساعة الحالية',
+      short: 'الساعة الحالية',
+      narrow: 'الساعة الحالية',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ساعة',
+        one: 'قبل ساعة واحدة',
+        two: 'قبل ساعتين',
+        few: 'قبل {0} ساعات',
+        many: 'قبل {0} ساعة',
+        other: 'قبل {0} ساعة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ساعة',
+        one: 'قبل ساعة واحدة',
+        two: 'قبل ساعتين',
+        few: 'قبل {0} ساعات',
+        many: 'قبل {0} ساعة',
+        other: 'قبل {0} ساعة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ساعة',
+        one: 'قبل ساعة واحدة',
+        two: 'قبل ساعتين',
+        few: 'قبل {0} ساعات',
+        many: 'قبل {0} ساعة',
+        other: 'قبل {0} ساعة',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ساعة',
+        one: 'خلال ساعة واحدة',
+        two: 'خلال ساعتين',
+        few: 'خلال {0} ساعات',
+        many: 'خلال {0} ساعة',
+        other: 'خلال {0} ساعة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ساعة',
+        one: 'خلال ساعة واحدة',
+        two: 'خلال ساعتين',
+        few: 'خلال {0} ساعات',
+        many: 'خلال {0} ساعة',
+        other: 'خلال {0} ساعة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ساعة',
+        one: 'خلال ساعة واحدة',
+        two: 'خلال ساعتين',
+        few: 'خلال {0} ساعات',
+        many: 'خلال {0} ساعة',
+        other: 'خلال {0} ساعة',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'الدقائق',
-          short: 'الدقائق',
-          narrow: 'الدقائق',
-        ),
-        now: MultiLength(
-          long: 'هذه الدقيقة',
-          short: 'هذه الدقيقة',
-          narrow: 'هذه الدقيقة',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} دقيقة',
-            one: 'قبل دقيقة واحدة',
-            two: 'قبل دقيقتين',
-            few: 'قبل {0} دقائق',
-            many: 'قبل {0} دقيقة',
-            other: 'قبل {0} دقيقة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} دقيقة',
-            one: 'قبل دقيقة واحدة',
-            two: 'قبل دقيقتين',
-            few: 'قبل {0} دقائق',
-            many: 'قبل {0} دقيقة',
-            other: 'قبل {0} دقيقة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} دقيقة',
-            one: 'قبل دقيقة واحدة',
-            two: 'قبل دقيقتين',
-            few: 'قبل {0} دقائق',
-            many: 'قبل {0} دقيقة',
-            other: 'قبل {0} دقيقة',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} دقيقة',
-            one: 'خلال دقيقة واحدة',
-            two: 'خلال دقيقتين',
-            few: 'خلال {0} دقائق',
-            many: 'خلال {0} دقيقة',
-            other: 'خلال {0} دقيقة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} دقيقة',
-            one: 'خلال دقيقة واحدة',
-            two: 'خلال دقيقتين',
-            few: 'خلال {0} دقائق',
-            many: 'خلال {0} دقيقة',
-            other: 'خلال {0} دقيقة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} دقيقة',
-            one: 'خلال دقيقة واحدة',
-            two: 'خلال دقيقتين',
-            few: 'خلال {0} دقائق',
-            many: 'خلال {0} دقيقة',
-            other: 'خلال {0} دقيقة',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'الدقائق',
+      short: 'الدقائق',
+      narrow: 'الدقائق',
+    ),
+    now: MultiLength(
+      long: 'هذه الدقيقة',
+      short: 'هذه الدقيقة',
+      narrow: 'هذه الدقيقة',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} دقيقة',
+        one: 'قبل دقيقة واحدة',
+        two: 'قبل دقيقتين',
+        few: 'قبل {0} دقائق',
+        many: 'قبل {0} دقيقة',
+        other: 'قبل {0} دقيقة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} دقيقة',
+        one: 'قبل دقيقة واحدة',
+        two: 'قبل دقيقتين',
+        few: 'قبل {0} دقائق',
+        many: 'قبل {0} دقيقة',
+        other: 'قبل {0} دقيقة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} دقيقة',
+        one: 'قبل دقيقة واحدة',
+        two: 'قبل دقيقتين',
+        few: 'قبل {0} دقائق',
+        many: 'قبل {0} دقيقة',
+        other: 'قبل {0} دقيقة',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} دقيقة',
+        one: 'خلال دقيقة واحدة',
+        two: 'خلال دقيقتين',
+        few: 'خلال {0} دقائق',
+        many: 'خلال {0} دقيقة',
+        other: 'خلال {0} دقيقة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} دقيقة',
+        one: 'خلال دقيقة واحدة',
+        two: 'خلال دقيقتين',
+        few: 'خلال {0} دقائق',
+        many: 'خلال {0} دقيقة',
+        other: 'خلال {0} دقيقة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} دقيقة',
+        one: 'خلال دقيقة واحدة',
+        two: 'خلال دقيقتين',
+        few: 'خلال {0} دقائق',
+        many: 'خلال {0} دقيقة',
+        other: 'خلال {0} دقيقة',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'الثواني',
-          short: 'الثواني',
-          narrow: 'الثواني',
-        ),
-        now: MultiLength(
-          long: 'الآن',
-          short: 'الآن',
-          narrow: 'الآن',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ثانية',
-            one: 'قبل ثانية واحدة',
-            two: 'قبل ثانيتين',
-            few: 'قبل {0} ثوانِ',
-            many: 'قبل {0} ثانية',
-            other: 'قبل {0} ثانية',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ثانية',
-            one: 'قبل ثانية واحدة',
-            two: 'قبل ثانيتين',
-            few: 'قبل {0} ثوانٍ',
-            many: 'قبل {0} ثانية',
-            other: 'قبل {0} ثانية',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} ثانية',
-            one: 'قبل ثانية واحدة',
-            two: 'قبل ثانيتين',
-            few: 'قبل {0} ثوانٍ',
-            many: 'قبل {0} ثانية',
-            other: 'قبل {0} ثانية',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ثانية',
-            one: 'خلال ثانية واحدة',
-            two: 'خلال ثانيتين',
-            few: 'خلال {0} ثوانٍ',
-            many: 'خلال {0} ثانية',
-            other: 'خلال {0} ثانية',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ثانية',
-            one: 'خلال ثانية واحدة',
-            two: 'خلال ثانيتين',
-            few: 'خلال {0} ثوانٍ',
-            many: 'خلال {0} ثانية',
-            other: 'خلال {0} ثانية',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} ثانية',
-            one: 'خلال ثانية واحدة',
-            two: 'خلال ثانيتين',
-            few: 'خلال {0} ثوانٍ',
-            many: 'خلال {0} ثانية',
-            other: 'خلال {0} ثانية',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'الثواني',
+      short: 'الثواني',
+      narrow: 'الثواني',
+    ),
+    now: MultiLength(long: 'الآن', short: 'الآن', narrow: 'الآن'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ثانية',
+        one: 'قبل ثانية واحدة',
+        two: 'قبل ثانيتين',
+        few: 'قبل {0} ثوانِ',
+        many: 'قبل {0} ثانية',
+        other: 'قبل {0} ثانية',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ثانية',
+        one: 'قبل ثانية واحدة',
+        two: 'قبل ثانيتين',
+        few: 'قبل {0} ثوانٍ',
+        many: 'قبل {0} ثانية',
+        other: 'قبل {0} ثانية',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} ثانية',
+        one: 'قبل ثانية واحدة',
+        two: 'قبل ثانيتين',
+        few: 'قبل {0} ثوانٍ',
+        many: 'قبل {0} ثانية',
+        other: 'قبل {0} ثانية',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ثانية',
+        one: 'خلال ثانية واحدة',
+        two: 'خلال ثانيتين',
+        few: 'خلال {0} ثوانٍ',
+        many: 'خلال {0} ثانية',
+        other: 'خلال {0} ثانية',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ثانية',
+        one: 'خلال ثانية واحدة',
+        two: 'خلال ثانيتين',
+        few: 'خلال {0} ثوانٍ',
+        many: 'خلال {0} ثانية',
+        other: 'خلال {0} ثانية',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} ثانية',
+        one: 'خلال ثانية واحدة',
+        two: 'خلال ثانيتين',
+        few: 'خلال {0} ثوانٍ',
+        many: 'خلال {0} ثانية',
+        other: 'خلال {0} ثانية',
+      ),
+    ),
+  );
 
   @override
-  MultiLength get zone => const MultiLength(
-        long: 'التوقيت',
-        short: 'توقيت',
-        narrow: 'توقيت',
-      );
+  MultiLength get zone =>
+      const MultiLength(long: 'التوقيت', short: 'توقيت', narrow: 'توقيت');
 }
 
 class LanguagesAr extends Languages {
@@ -7850,8 +7775,11 @@ class LanguagesAr extends Languages {
   static const _arc = Language('arc', 'الآرامية');
   static const _arn = Language('arn', 'المابودونغونية');
   static const _arp = Language('arp', 'الأراباهو');
-  static const _ars =
-      Language('ars', 'اللهجة النجدية', menu: 'العربية، النجدية');
+  static const _ars = Language(
+    'ars',
+    'اللهجة النجدية',
+    menu: 'العربية، النجدية',
+  );
   static const _arw = Language('arw', 'الأراواكية');
   static const _$as = Language('as', 'الأسامية');
   static const _asa = Language('asa', 'الآسو');
@@ -7914,8 +7842,12 @@ class LanguagesAr extends Languages {
   static const _chp = Language('chp', 'الشيباوايان');
   static const _chr = Language('chr', 'الشيروكي');
   static const _chy = Language('chy', 'الشايان');
-  static const _ckb = Language('ckb', 'السورانية الكردية',
-      variant: 'السورانية الكردية', menu: 'الكردية، السورانية');
+  static const _ckb = Language(
+    'ckb',
+    'السورانية الكردية',
+    variant: 'السورانية الكردية',
+    menu: 'الكردية، السورانية',
+  );
   static const _clc = Language('clc', 'تسيلكوتين');
   static const _co = Language('co', 'الكورسيكية');
   static const _cop = Language('cop', 'القبطية');
@@ -10340,8 +10272,11 @@ class ScriptsAr extends Scripts {
   static const _hani = Script('Hani', 'الهان');
   static const _hano = Script('Hano', 'الهانونو');
   static const _hans = Script('Hans', 'المبسطة', standAlone: 'الهان المبسطة');
-  static const _hant =
-      Script('Hant', 'التقليدية', standAlone: 'الهان التقليدية');
+  static const _hant = Script(
+    'Hant',
+    'التقليدية',
+    standAlone: 'الهان التقليدية',
+  );
   static const _hebr = Script('Hebr', 'العبرية');
   static const _hira = Script('Hira', 'الهيراجانا');
   static const _hmng = Script('Hmng', 'الباهوه همونج');
@@ -11055,11 +10990,17 @@ class TerritoriesAr extends Territories {
   static const _bz = Territory('BZ', 'بليز');
   static const _ca = Territory('CA', 'كندا');
   static const _cc = Territory('CC', 'جزر كوكوس (كيلينغ)');
-  static const _cd = Territory('CD', 'الكونغو - كينشاسا',
-      variant: 'جمهورية الكونغو الديمقراطية');
+  static const _cd = Territory(
+    'CD',
+    'الكونغو - كينشاسا',
+    variant: 'جمهورية الكونغو الديمقراطية',
+  );
   static const _cf = Territory('CF', 'جمهورية أفريقيا الوسطى');
-  static const _cg =
-      Territory('CG', 'الكونغو - برازافيل', variant: 'جمهورية الكونغو');
+  static const _cg = Territory(
+    'CG',
+    'الكونغو - برازافيل',
+    variant: 'جمهورية الكونغو',
+  );
   static const _ch = Territory('CH', 'سويسرا');
   static const _ci = Territory('CI', 'ساحل العاج', variant: 'كوت ديفوار');
   static const _ck = Territory('CK', 'جزر كوك');
@@ -11094,14 +11035,20 @@ class TerritoriesAr extends Territories {
   static const _ez = Territory('EZ', 'منطقة اليورو');
   static const _fi = Territory('FI', 'فنلندا');
   static const _fj = Territory('FJ', 'فيجي');
-  static const _fk =
-      Territory('FK', 'جزر فوكلاند', variant: 'جزر فوكلاند - جزر مالفيناس');
+  static const _fk = Territory(
+    'FK',
+    'جزر فوكلاند',
+    variant: 'جزر فوكلاند - جزر مالفيناس',
+  );
   static const _fm = Territory('FM', 'ميكرونيزيا');
   static const _fo = Territory('FO', 'جزر فارو');
   static const _fr = Territory('FR', 'فرنسا');
   static const _ga = Territory('GA', 'الغابون');
-  static const _gb =
-      Territory('GB', 'المملكة المتحدة', short: 'المملكة المتحدة');
+  static const _gb = Territory(
+    'GB',
+    'المملكة المتحدة',
+    short: 'المملكة المتحدة',
+  );
   static const _gd = Territory('GD', 'غرينادا');
   static const _ge = Territory('GE', 'جورجيا');
   static const _gf = Territory('GF', 'غويانا الفرنسية');
@@ -11119,8 +11066,11 @@ class TerritoriesAr extends Territories {
   static const _gu = Territory('GU', 'غوام');
   static const _gw = Territory('GW', 'غينيا بيساو');
   static const _gy = Territory('GY', 'غيانا');
-  static const _hk = Territory('HK', 'هونغ كونغ الصينية (منطقة إدارية خاصة)',
-      short: 'هونغ كونغ');
+  static const _hk = Territory(
+    'HK',
+    'هونغ كونغ الصينية (منطقة إدارية خاصة)',
+    short: 'هونغ كونغ',
+  );
   static const _hm = Territory('HM', 'جزيرة هيرد وجزر ماكدونالد');
   static const _hn = Territory('HN', 'هندوراس');
   static const _hr = Territory('HR', 'كرواتيا');
@@ -11174,8 +11124,11 @@ class TerritoriesAr extends Territories {
   static const _ml = Territory('ML', 'مالي');
   static const _mm = Territory('MM', 'ميانمار (بورما)');
   static const _mn = Territory('MN', 'منغوليا');
-  static const _mo =
-      Territory('MO', 'منطقة ماكاو الإدارية الخاصة', short: 'مكاو');
+  static const _mo = Territory(
+    'MO',
+    'منطقة ماكاو الإدارية الخاصة',
+    short: 'مكاو',
+  );
   static const _mp = Territory('MP', 'جزر ماريانا الشمالية');
   static const _mq = Territory('MQ', 'جزر المارتينيك');
   static const _mr = Territory('MR', 'موريتانيا');
@@ -11263,8 +11216,11 @@ class TerritoriesAr extends Territories {
   static const _ug = Territory('UG', 'أوغندا');
   static const _um = Territory('UM', 'جزر الولايات المتحدة النائية');
   static const _un = Territory('UN', 'الأمم المتحدة');
-  static const _us =
-      Territory('US', 'الولايات المتحدة', short: 'الولايات المتحدة');
+  static const _us = Territory(
+    'US',
+    'الولايات المتحدة',
+    short: 'الولايات المتحدة',
+  );
   static const _uy = Territory('UY', 'أورغواي');
   static const _uz = Territory('UZ', 'أوزبكستان');
   static const _va = Territory('VA', 'الفاتيكان');
@@ -12262,8 +12218,10 @@ class VariantsAr extends Variants {
   static const _$1959ACAD = Variant('1959ACAD', 'أكاديمي');
   static const _arevela = Variant('AREVELA', 'أرمنية شرقية');
   static const _arevmda = Variant('AREVMDA', 'أرمنية غربية');
-  static const _baku1926 =
-      Variant('BAKU1926', 'الأبجدية التركية اللاتينية الموحدة');
+  static const _baku1926 = Variant(
+    'BAKU1926',
+    'الأبجدية التركية اللاتينية الموحدة',
+  );
   static const _kkcor = Variant('KKCOR', 'التهجئة العامة');
   static const _monoton = Variant('MONOTON', 'أحادي النغمة');
   static const _nedis = Variant('NEDIS', 'لهجة ناتيسون');
@@ -12271,13 +12229,17 @@ class VariantsAr extends Variants {
   static const _polyton = Variant('POLYTON', 'متعدد النغمات');
   static const _posix = Variant('POSIX', 'حاسوب');
   static const _revised = Variant('REVISED', 'تهجئة تمت مراجعتها');
-  static const _scotland =
-      Variant('SCOTLAND', 'الإنجليزية الأسكتلندنية الرسمية');
+  static const _scotland = Variant(
+    'SCOTLAND',
+    'الإنجليزية الأسكتلندنية الرسمية',
+  );
   static const _uccor = Variant('UCCOR', 'التهجئة الموحدة');
   static const _ucrcor = Variant('UCRCOR', 'التهجئة المراجعة الموحدة');
   static const _valencia = Variant('VALENCIA', 'بلنسية');
-  static const _wadegile =
-      Variant('WADEGILE', 'المندرين باللاتينية - ويد–جيلز');
+  static const _wadegile = Variant(
+    'WADEGILE',
+    'المندرين باللاتينية - ويد–جيلز',
+  );
 
   @override
   final $1901 = _$1901;
@@ -16886,100 +16848,190 @@ class CurrenciesAr extends Currencies {
   static const _adp = Currency(_cld, 'ADP', 'بيستا أندوري');
   static const _aed = Currency(_cld, 'AED', 'درهم إماراتي', symbol: 'د.إ.‏');
   static const _afa = Currency(_cld, 'AFA', 'أفغاني - 1927-2002');
-  static const _afn = Currency(_cld, 'AFN', 'أفغاني',
-      zero: 'أفغاني أفغانستاني',
-      one: 'أفغاني أفغانستاني',
-      two: 'أفغاني أفغانستاني',
-      few: 'أفغاني أفغانستاني',
-      many: 'أفغاني أفغانستاني',
-      other: 'أفغاني أفغانستاني',
-      symbolNarrow: '؋');
+  static const _afn = Currency(
+    _cld,
+    'AFN',
+    'أفغاني',
+    zero: 'أفغاني أفغانستاني',
+    one: 'أفغاني أفغانستاني',
+    two: 'أفغاني أفغانستاني',
+    few: 'أفغاني أفغانستاني',
+    many: 'أفغاني أفغانستاني',
+    other: 'أفغاني أفغانستاني',
+    symbolNarrow: '؋',
+  );
   static const _all = Currency(_cld, 'ALL', 'ليك ألباني');
   static const _amd = Currency(_cld, 'AMD', 'درام أرميني', symbolNarrow: '֏');
   static const _ang = Currency(_cld, 'ANG', 'غيلدر أنتيلي هولندي');
-  static const _aoa =
-      Currency(_cld, 'AOA', 'كوانزا أنغولي', symbolNarrow: 'Kz');
+  static const _aoa = Currency(
+    _cld,
+    'AOA',
+    'كوانزا أنغولي',
+    symbolNarrow: 'Kz',
+  );
   static const _aok = Currency(_cld, 'AOK', 'كوانزا أنجولي - 1977-1990');
   static const _aon = Currency(_cld, 'AON', 'كوانزا أنجولي جديدة - 1990-2000');
-  static const _aor =
-      Currency(_cld, 'AOR', 'كوانزا أنجولي معدلة - 1995 - 1999');
+  static const _aor = Currency(
+    _cld,
+    'AOR',
+    'كوانزا أنجولي معدلة - 1995 - 1999',
+  );
   static const _ara = Currency(_cld, 'ARA', 'استرال أرجنتيني');
   static const _arp = Currency(_cld, 'ARP', 'بيزو أرجنتيني - 1983-1985');
-  static const _ars =
-      Currency(_cld, 'ARS', 'بيزو أرجنتيني', symbolNarrow: r'AR$');
+  static const _ars = Currency(
+    _cld,
+    'ARS',
+    'بيزو أرجنتيني',
+    symbolNarrow: r'AR$',
+  );
   static const _ats = Currency(_cld, 'ATS', 'شلن نمساوي');
-  static const _aud = Currency(_cld, 'AUD', 'دولار أسترالي',
-      symbol: r'AU$', symbolNarrow: r'AU$');
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'دولار أسترالي',
+    symbol: r'AU$',
+    symbolNarrow: r'AU$',
+  );
   static const _awg = Currency(_cld, 'AWG', 'فلورن أروبي');
   static const _azm = Currency(_cld, 'AZM', 'مانات أذريبجاني');
-  static const _azn = Currency(_cld, 'AZN', 'مانات أذربيجان',
-      zero: 'مانت أذربيجاني',
-      one: 'مانت أذربيجاني',
-      two: 'مانت أذربيجاني',
-      few: 'مانت أذربيجاني',
-      many: 'مانت أذربيجاني',
-      other: 'مانت أذربيجاني',
-      symbolNarrow: '₼');
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'مانات أذربيجان',
+    zero: 'مانت أذربيجاني',
+    one: 'مانت أذربيجاني',
+    two: 'مانت أذربيجاني',
+    few: 'مانت أذربيجاني',
+    many: 'مانت أذربيجاني',
+    other: 'مانت أذربيجاني',
+    symbolNarrow: '₼',
+  );
   static const _bad = Currency(_cld, 'BAD', 'دينار البوسنة والهرسك');
-  static const _bam = Currency(_cld, 'BAM', 'مارك البوسنة والهرسك قابل للتحويل',
-      symbolNarrow: 'KM');
-  static const _bbd =
-      Currency(_cld, 'BBD', 'دولار بربادوسي', symbolNarrow: r'BB$');
-  static const _bdt =
-      Currency(_cld, 'BDT', 'تاكا بنغلاديشي', symbolNarrow: '৳');
+  static const _bam = Currency(
+    _cld,
+    'BAM',
+    'مارك البوسنة والهرسك قابل للتحويل',
+    symbolNarrow: 'KM',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'دولار بربادوسي',
+    symbolNarrow: r'BB$',
+  );
+  static const _bdt = Currency(
+    _cld,
+    'BDT',
+    'تاكا بنغلاديشي',
+    symbolNarrow: '৳',
+  );
   static const _bec = Currency(_cld, 'BEC', 'فرنك بلجيكي قابل للتحويل');
   static const _bef = Currency(_cld, 'BEF', 'فرنك بلجيكي');
   static const _bel = Currency(_cld, 'BEL', 'فرنك بلجيكي مالي');
   static const _bgn = Currency(_cld, 'BGN', 'ليف بلغاري');
   static const _bhd = Currency(_cld, 'BHD', 'دينار بحريني', symbol: 'د.ب.‏');
   static const _bif = Currency(_cld, 'BIF', 'فرنك بروندي');
-  static const _bmd =
-      Currency(_cld, 'BMD', 'دولار برمودي', symbolNarrow: r'BM$');
-  static const _bnd =
-      Currency(_cld, 'BND', 'دولار بروناي', symbolNarrow: r'BN$');
-  static const _bob =
-      Currency(_cld, 'BOB', 'بوليفيانو بوليفي', symbolNarrow: 'Bs');
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'دولار برمودي',
+    symbolNarrow: r'BM$',
+  );
+  static const _bnd = Currency(
+    _cld,
+    'BND',
+    'دولار بروناي',
+    symbolNarrow: r'BN$',
+  );
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'بوليفيانو بوليفي',
+    symbolNarrow: 'Bs',
+  );
   static const _bop = Currency(_cld, 'BOP', 'بيزو بوليفي');
   static const _bov = Currency(_cld, 'BOV', 'مفدول بوليفي');
-  static const _brb =
-      Currency(_cld, 'BRB', 'نوفو كروزايرو برازيلي - 1967-1986');
+  static const _brb = Currency(
+    _cld,
+    'BRB',
+    'نوفو كروزايرو برازيلي - 1967-1986',
+  );
   static const _brc = Currency(_cld, 'BRC', 'كروزادو برازيلي');
   static const _bre = Currency(_cld, 'BRE', 'كروزايرو برازيلي - 1990-1993');
-  static const _brl =
-      Currency(_cld, 'BRL', 'ريال برازيلي', symbol: r'R$', symbolNarrow: r'R$');
-  static const _bsd =
-      Currency(_cld, 'BSD', 'دولار باهامي', symbolNarrow: r'BS$');
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'ريال برازيلي',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'دولار باهامي',
+    symbolNarrow: r'BS$',
+  );
   static const _btn = Currency(_cld, 'BTN', 'نولتوم بوتاني');
   static const _buk = Currency(_cld, 'BUK', 'كيات بورمي');
   static const _bwp = Currency(_cld, 'BWP', 'بولا بتسواني', symbolNarrow: 'P');
   static const _byb = Currency(_cld, 'BYB', 'روبل بيلاروسي جديد - 1994-1999');
-  static const _byn =
-      Currency(_cld, 'BYN', 'روبل بيلاروسي', symbolNarrow: 'р.');
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'روبل بيلاروسي',
+    symbolNarrow: 'р.',
+  );
   static const _byr = Currency(_cld, 'BYR', 'روبل بيلاروسي (٢٠٠٠–٢٠١٦)');
-  static const _bzd = Currency(_cld, 'BZD', 'دولار بليزي',
-      zero: 'دولار بليزي',
-      one: 'دولار بليزي',
-      two: 'دولاران بليزيان',
-      few: 'دولار بليزي',
-      many: 'دولار بليزي',
-      other: 'دولار بليزي',
-      symbolNarrow: r'BZ$');
-  static const _cad =
-      Currency(_cld, 'CAD', 'دولار كندي', symbol: r'CA$', symbolNarrow: r'CA$');
+  static const _bzd = Currency(
+    _cld,
+    'BZD',
+    'دولار بليزي',
+    zero: 'دولار بليزي',
+    one: 'دولار بليزي',
+    two: 'دولاران بليزيان',
+    few: 'دولار بليزي',
+    many: 'دولار بليزي',
+    other: 'دولار بليزي',
+    symbolNarrow: r'BZ$',
+  );
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'دولار كندي',
+    symbol: r'CA$',
+    symbolNarrow: r'CA$',
+  );
   static const _cdf = Currency(_cld, 'CDF', 'فرنك كونغولي');
   static const _chf = Currency(_cld, 'CHF', 'فرنك سويسري');
   static const _clp = Currency(_cld, 'CLP', 'بيزو تشيلي', symbolNarrow: r'CL$');
   static const _cnh = Currency(_cld, 'CNH', 'يوان صيني (في الخارج)');
-  static const _cny =
-      Currency(_cld, 'CNY', 'يوان صيني', symbol: 'CN¥', symbolNarrow: 'CN¥');
-  static const _cop =
-      Currency(_cld, 'COP', 'بيزو كولومبي', symbolNarrow: r'CO$');
-  static const _crc =
-      Currency(_cld, 'CRC', 'كولن كوستاريكي', symbolNarrow: '₡');
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'يوان صيني',
+    symbol: 'CN¥',
+    symbolNarrow: 'CN¥',
+  );
+  static const _cop = Currency(
+    _cld,
+    'COP',
+    'بيزو كولومبي',
+    symbolNarrow: r'CO$',
+  );
+  static const _crc = Currency(
+    _cld,
+    'CRC',
+    'كولن كوستاريكي',
+    symbolNarrow: '₡',
+  );
   static const _csd = Currency(_cld, 'CSD', 'دينار صربي قديم');
   static const _csk = Currency(_cld, 'CSK', 'كرونة تشيكوسلوفاكيا');
-  static const _cuc =
-      Currency(_cld, 'CUC', 'بيزو كوبي قابل للتحويل', symbolNarrow: r'$');
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'بيزو كوبي قابل للتحويل',
+    symbolNarrow: r'$',
+  );
   static const _cup = Currency(_cld, 'CUP', 'بيزو كوبي', symbolNarrow: r'CU$');
   static const _cve = Currency(_cld, 'CVE', 'اسكودو الرأس الأخضر');
   static const _cyp = Currency(_cld, 'CYP', 'جنيه قبرصي');
@@ -16987,48 +17039,82 @@ class CurrenciesAr extends Currencies {
   static const _ddm = Currency(_cld, 'DDM', 'أوستمارك ألماني شرقي');
   static const _dem = Currency(_cld, 'DEM', 'مارك ألماني');
   static const _djf = Currency(_cld, 'DJF', 'فرنك جيبوتي');
-  static const _dkk =
-      Currency(_cld, 'DKK', 'كرونة دنماركية', symbolNarrow: 'kr');
-  static const _dop =
-      Currency(_cld, 'DOP', 'بيزو الدومنيكان', symbolNarrow: r'DO$');
-  static const _dzd = Currency(_cld, 'DZD', 'دينار جزائري',
-      zero: 'دينار جزائري',
-      one: 'دينار جزائري',
-      two: 'ديناران جزائريان',
-      few: 'دينارات جزائرية',
-      many: 'دينارًا جزائريًا',
-      other: 'دينار جزائري',
-      symbol: 'د.ج.‏');
+  static const _dkk = Currency(
+    _cld,
+    'DKK',
+    'كرونة دنماركية',
+    symbolNarrow: 'kr',
+  );
+  static const _dop = Currency(
+    _cld,
+    'DOP',
+    'بيزو الدومنيكان',
+    symbolNarrow: r'DO$',
+  );
+  static const _dzd = Currency(
+    _cld,
+    'DZD',
+    'دينار جزائري',
+    zero: 'دينار جزائري',
+    one: 'دينار جزائري',
+    two: 'ديناران جزائريان',
+    few: 'دينارات جزائرية',
+    many: 'دينارًا جزائريًا',
+    other: 'دينار جزائري',
+    symbol: 'د.ج.‏',
+  );
   static const _eek = Currency(_cld, 'EEK', 'كرونة استونية');
-  static const _egp = Currency(_cld, 'EGP', 'جنيه مصري',
-      zero: 'جنيه مصري',
-      one: 'جنيه مصري',
-      two: 'جنيهان مصريان',
-      few: 'جنيهات مصرية',
-      many: 'جنيهًا مصريًا',
-      other: 'جنيه مصري',
-      symbol: 'ج.م.‏',
-      symbolNarrow: 'E£');
+  static const _egp = Currency(
+    _cld,
+    'EGP',
+    'جنيه مصري',
+    zero: 'جنيه مصري',
+    one: 'جنيه مصري',
+    two: 'جنيهان مصريان',
+    few: 'جنيهات مصرية',
+    many: 'جنيهًا مصريًا',
+    other: 'جنيه مصري',
+    symbol: 'ج.م.‏',
+    symbolNarrow: 'E£',
+  );
   static const _ern = Currency(_cld, 'ERN', 'ناكفا أريتري');
   static const _esp = Currency(_cld, 'ESP', 'بيزيتا إسباني', symbolNarrow: '₧');
   static const _etb = Currency(_cld, 'ETB', 'بير أثيوبي');
-  static const _eur =
-      Currency(_cld, 'EUR', 'يورو', symbol: '€', symbolNarrow: '€');
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'يورو',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
   static const _fim = Currency(_cld, 'FIM', 'ماركا فنلندي');
   static const _fjd = Currency(_cld, 'FJD', 'دولار فيجي', symbolNarrow: r'FJ$');
-  static const _fkp =
-      Currency(_cld, 'FKP', 'جنيه جزر فوكلاند', symbolNarrow: '£');
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'جنيه جزر فوكلاند',
+    symbolNarrow: '£',
+  );
   static const _frf = Currency(_cld, 'FRF', 'فرنك فرنسي');
-  static const _gbp = Currency(_cld, 'GBP', 'جنيه إسترليني',
-      symbol: 'UK£', symbolNarrow: 'UK£');
-  static const _gel = Currency(_cld, 'GEL', 'لارى جورجي',
-      zero: 'لاري جورجي',
-      one: 'لاري جورجي',
-      two: 'لاري جورجي',
-      few: 'لاري جورجي',
-      many: 'لاري جورجي',
-      other: 'لاري جورجي',
-      symbolNarrow: '₾');
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'جنيه إسترليني',
+    symbol: 'UK£',
+    symbolNarrow: 'UK£',
+  );
+  static const _gel = Currency(
+    _cld,
+    'GEL',
+    'لارى جورجي',
+    zero: 'لاري جورجي',
+    one: 'لاري جورجي',
+    two: 'لاري جورجي',
+    few: 'لاري جورجي',
+    many: 'لاري جورجي',
+    other: 'لاري جورجي',
+    symbolNarrow: '₾',
+  );
   static const _ghc = Currency(_cld, 'GHC', 'سيدي غاني');
   static const _ghs = Currency(_cld, 'GHS', 'سيدي غانا', symbolNarrow: 'GH₵');
   static const _gip = Currency(_cld, 'GIP', 'جنيه جبل طارق', symbolNarrow: '£');
@@ -17037,116 +17123,222 @@ class CurrenciesAr extends Currencies {
   static const _gns = Currency(_cld, 'GNS', 'سيلي غينيا');
   static const _gqe = Currency(_cld, 'GQE', 'اكويل جونينا غينيا الاستوائيّة');
   static const _grd = Currency(_cld, 'GRD', 'دراخما يوناني');
-  static const _gtq =
-      Currency(_cld, 'GTQ', 'كوتزال غواتيمالا', symbolNarrow: 'Q');
+  static const _gtq = Currency(
+    _cld,
+    'GTQ',
+    'كوتزال غواتيمالا',
+    symbolNarrow: 'Q',
+  );
   static const _gwe = Currency(_cld, 'GWE', 'اسكود برتغالي غينيا');
   static const _gwp = Currency(_cld, 'GWP', 'بيزو غينيا بيساو');
-  static const _gyd =
-      Currency(_cld, 'GYD', 'دولار غيانا', symbolNarrow: r'GY$');
-  static const _hkd = Currency(_cld, 'HKD', 'دولار هونغ كونغ',
-      symbol: r'HK$', symbolNarrow: r'HK$');
-  static const _hnl = Currency(_cld, 'HNL', 'ليمبيرا هنداروس',
-      zero: 'ليمبيرا هندوراس',
-      one: 'ليمبيرا هندوراس',
-      two: 'ليمبيرا هندوراس',
-      few: 'ليمبيرا هندوراس',
-      many: 'ليمبيرا هندوراس',
-      other: 'ليمبيرا هندوراس',
-      symbolNarrow: 'L');
+  static const _gyd = Currency(
+    _cld,
+    'GYD',
+    'دولار غيانا',
+    symbolNarrow: r'GY$',
+  );
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'دولار هونغ كونغ',
+    symbol: r'HK$',
+    symbolNarrow: r'HK$',
+  );
+  static const _hnl = Currency(
+    _cld,
+    'HNL',
+    'ليمبيرا هنداروس',
+    zero: 'ليمبيرا هندوراس',
+    one: 'ليمبيرا هندوراس',
+    two: 'ليمبيرا هندوراس',
+    few: 'ليمبيرا هندوراس',
+    many: 'ليمبيرا هندوراس',
+    other: 'ليمبيرا هندوراس',
+    symbolNarrow: 'L',
+  );
   static const _hrd = Currency(_cld, 'HRD', 'دينار كرواتي');
   static const _hrk = Currency(_cld, 'HRK', 'كونا كرواتي', symbolNarrow: 'kn');
   static const _htg = Currency(_cld, 'HTG', 'جوردى هايتي');
-  static const _huf =
-      Currency(_cld, 'HUF', 'فورينت هنغاري', symbolNarrow: 'Ft');
-  static const _idr =
-      Currency(_cld, 'IDR', 'روبية إندونيسية', symbolNarrow: 'Rp');
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'فورينت هنغاري',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'روبية إندونيسية',
+    symbolNarrow: 'Rp',
+  );
   static const _iep = Currency(_cld, 'IEP', 'جنيه إيرلندي');
   static const _ilp = Currency(_cld, 'ILP', 'جنيه إسرائيلي');
-  static const _ils = Currency(_cld, 'ILS', 'شيكل إسرائيلي جديد',
-      symbol: '₪', symbolNarrow: '₪');
-  static const _inr =
-      Currency(_cld, 'INR', 'روبية هندي', symbol: '₹', symbolNarrow: '₹');
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'شيكل إسرائيلي جديد',
+    symbol: '₪',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'روبية هندي',
+    symbol: '₹',
+    symbolNarrow: '₹',
+  );
   static const _iqd = Currency(_cld, 'IQD', 'دينار عراقي', symbol: 'د.ع.‏');
   static const _irr = Currency(_cld, 'IRR', 'ريال إيراني', symbol: 'ر.إ.');
-  static const _isk =
-      Currency(_cld, 'ISK', 'كرونة أيسلندية', symbolNarrow: 'kr');
+  static const _isk = Currency(
+    _cld,
+    'ISK',
+    'كرونة أيسلندية',
+    symbolNarrow: 'kr',
+  );
   static const _itl = Currency(_cld, 'ITL', 'ليرة إيطالية');
-  static const _jmd =
-      Currency(_cld, 'JMD', 'دولار جامايكي', symbolNarrow: r'JM$');
+  static const _jmd = Currency(
+    _cld,
+    'JMD',
+    'دولار جامايكي',
+    symbolNarrow: r'JM$',
+  );
   static const _jod = Currency(_cld, 'JOD', 'دينار أردني', symbol: 'د.أ.‏');
-  static const _jpy =
-      Currency(_cld, 'JPY', 'ين ياباني', symbol: 'JP¥', symbolNarrow: 'JP¥');
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'ين ياباني',
+    symbol: 'JP¥',
+    symbolNarrow: 'JP¥',
+  );
   static const _kes = Currency(_cld, 'KES', 'شلن كينيي');
   static const _kgs = Currency(_cld, 'KGS', 'سوم قيرغستاني', symbolNarrow: '⃀');
   static const _khr = Currency(_cld, 'KHR', 'رييال كمبودي', symbolNarrow: '៛');
-  static const _kmf =
-      Currency(_cld, 'KMF', 'فرنك جزر القمر', symbolNarrow: 'CF');
-  static const _kpw =
-      Currency(_cld, 'KPW', 'وون كوريا الشمالية', symbolNarrow: '₩');
-  static const _krw = Currency(_cld, 'KRW', 'وون كوريا الجنوبية',
-      symbol: '₩', symbolNarrow: '₩');
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'فرنك جزر القمر',
+    symbolNarrow: 'CF',
+  );
+  static const _kpw = Currency(
+    _cld,
+    'KPW',
+    'وون كوريا الشمالية',
+    symbolNarrow: '₩',
+  );
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'وون كوريا الجنوبية',
+    symbol: '₩',
+    symbolNarrow: '₩',
+  );
   static const _kwd = Currency(_cld, 'KWD', 'دينار كويتي', symbol: 'د.ك.‏');
-  static const _kyd =
-      Currency(_cld, 'KYD', 'دولار جزر كيمن', symbolNarrow: r'KY$');
-  static const _kzt =
-      Currency(_cld, 'KZT', 'تينغ كازاخستاني', symbolNarrow: '₸');
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'دولار جزر كيمن',
+    symbolNarrow: r'KY$',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'تينغ كازاخستاني',
+    symbolNarrow: '₸',
+  );
   static const _lak = Currency(_cld, 'LAK', 'كيب لاوسي', symbolNarrow: '₭');
-  static const _lbp =
-      Currency(_cld, 'LBP', 'جنيه لبناني', symbol: 'ل.ل.‏', symbolNarrow: 'L£');
-  static const _lkr =
-      Currency(_cld, 'LKR', 'روبية سريلانكية', symbolNarrow: 'Rs');
-  static const _lrd = Currency(_cld, 'LRD', 'دولار ليبيري',
-      zero: 'دولار ليبيري',
-      one: 'دولار ليبيري',
-      two: 'دولاران ليبيريان',
-      few: 'دولارات ليبيرية',
-      many: 'دولارًا ليبيريًا',
-      other: 'دولار ليبيري',
-      symbolNarrow: r'$LR');
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'جنيه لبناني',
+    symbol: 'ل.ل.‏',
+    symbolNarrow: 'L£',
+  );
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'روبية سريلانكية',
+    symbolNarrow: 'Rs',
+  );
+  static const _lrd = Currency(
+    _cld,
+    'LRD',
+    'دولار ليبيري',
+    zero: 'دولار ليبيري',
+    one: 'دولار ليبيري',
+    two: 'دولاران ليبيريان',
+    few: 'دولارات ليبيرية',
+    many: 'دولارًا ليبيريًا',
+    other: 'دولار ليبيري',
+    symbolNarrow: r'$LR',
+  );
   static const _lsl = Currency(_cld, 'LSL', 'لوتي ليسوتو');
-  static const _ltl =
-      Currency(_cld, 'LTL', 'ليتا ليتوانية', symbolNarrow: 'Lt');
+  static const _ltl = Currency(
+    _cld,
+    'LTL',
+    'ليتا ليتوانية',
+    symbolNarrow: 'Lt',
+  );
   static const _ltt = Currency(_cld, 'LTT', 'تالوناس ليتواني');
   static const _luc = Currency(_cld, 'LUC', 'فرنك لوكسمبرج قابل للتحويل');
   static const _luf = Currency(_cld, 'LUF', 'فرنك لوكسمبرج');
   static const _lul = Currency(_cld, 'LUL', 'فرنك لوكسمبرج المالي');
-  static const _lvl = Currency(_cld, 'LVL', 'لاتس لاتفيا',
-      zero: 'لاتس لاتفي',
-      one: 'لاتس لاتفي',
-      two: 'لاتس لاتفي',
-      few: 'لاتس لاتفي',
-      many: 'لاتس لاتفي',
-      other: 'لاتس لاتفي',
-      symbolNarrow: 'Ls');
+  static const _lvl = Currency(
+    _cld,
+    'LVL',
+    'لاتس لاتفيا',
+    zero: 'لاتس لاتفي',
+    one: 'لاتس لاتفي',
+    two: 'لاتس لاتفي',
+    few: 'لاتس لاتفي',
+    many: 'لاتس لاتفي',
+    other: 'لاتس لاتفي',
+    symbolNarrow: 'Ls',
+  );
   static const _lvr = Currency(_cld, 'LVR', 'روبل لاتفيا');
-  static const _lyd = Currency(_cld, 'LYD', 'دينار ليبي',
-      zero: 'دينار ليبي',
-      one: 'دينار ليبي',
-      two: 'ديناران ليبيان',
-      few: 'دينارات ليبية',
-      many: 'دينارًا ليبيًا',
-      other: 'دينار ليبي',
-      symbol: 'د.ل.‏');
-  static const _mad = Currency(_cld, 'MAD', 'درهم مغربي',
-      zero: 'درهم مغربي',
-      one: 'درهم مغربي',
-      two: 'درهمان مغربيان',
-      few: 'دراهم مغربية',
-      many: 'درهمًا مغربيًا',
-      other: 'درهم مغربي',
-      symbol: 'د.م.‏');
+  static const _lyd = Currency(
+    _cld,
+    'LYD',
+    'دينار ليبي',
+    zero: 'دينار ليبي',
+    one: 'دينار ليبي',
+    two: 'ديناران ليبيان',
+    few: 'دينارات ليبية',
+    many: 'دينارًا ليبيًا',
+    other: 'دينار ليبي',
+    symbol: 'د.ل.‏',
+  );
+  static const _mad = Currency(
+    _cld,
+    'MAD',
+    'درهم مغربي',
+    zero: 'درهم مغربي',
+    one: 'درهم مغربي',
+    two: 'درهمان مغربيان',
+    few: 'دراهم مغربية',
+    many: 'درهمًا مغربيًا',
+    other: 'درهم مغربي',
+    symbol: 'د.م.‏',
+  );
   static const _maf = Currency(_cld, 'MAF', 'فرنك مغربي');
   static const _mdl = Currency(_cld, 'MDL', 'ليو مولدوفي');
-  static const _mga =
-      Currency(_cld, 'MGA', 'أرياري مدغشقر', symbolNarrow: 'Ar');
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'أرياري مدغشقر',
+    symbolNarrow: 'Ar',
+  );
   static const _mgf = Currency(_cld, 'MGF', 'فرنك مدغشقر');
-  static const _mkd = Currency(_cld, 'MKD', 'دينار مقدوني',
-      zero: 'دينار مقدوني',
-      one: 'دينار مقدوني',
-      two: 'ديناران مقدونيان',
-      few: 'دينارات مقدونية',
-      many: 'دينارًا مقدونيًا',
-      other: 'دينار مقدوني');
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'دينار مقدوني',
+    zero: 'دينار مقدوني',
+    one: 'دينار مقدوني',
+    two: 'ديناران مقدونيان',
+    few: 'دينارات مقدونية',
+    many: 'دينارًا مقدونيًا',
+    other: 'دينار مقدوني',
+  );
   static const _mlf = Currency(_cld, 'MLF', 'فرنك مالي');
   static const _mmk = Currency(_cld, 'MMK', 'كيات ميانمار', symbolNarrow: 'K');
   static const _mnt = Currency(_cld, 'MNT', 'توغروغ منغولي', symbolNarrow: '₮');
@@ -17155,141 +17347,265 @@ class CurrenciesAr extends Currencies {
   static const _mru = Currency(_cld, 'MRU', 'أوقية موريتانية', symbol: 'أ.م.');
   static const _mtl = Currency(_cld, 'MTL', 'ليرة مالطية');
   static const _mtp = Currency(_cld, 'MTP', 'جنيه مالطي');
-  static const _mur =
-      Currency(_cld, 'MUR', 'روبية موريشيوسية', symbolNarrow: 'Rs');
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'روبية موريشيوسية',
+    symbolNarrow: 'Rs',
+  );
   static const _mvr = Currency(_cld, 'MVR', 'روفيه جزر المالديف');
   static const _mwk = Currency(_cld, 'MWK', 'كواشا مالاوي');
-  static const _mxn = Currency(_cld, 'MXN', 'بيزو مكسيكي',
-      symbol: r'MX$', symbolNarrow: r'MX$');
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'بيزو مكسيكي',
+    symbol: r'MX$',
+    symbolNarrow: r'MX$',
+  );
   static const _mxp = Currency(_cld, 'MXP', 'بيزو فضي مكسيكي - 1861-1992');
-  static const _myr =
-      Currency(_cld, 'MYR', 'رينغيت ماليزي', symbolNarrow: 'RM');
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'رينغيت ماليزي',
+    symbolNarrow: 'RM',
+  );
   static const _mze = Currency(_cld, 'MZE', 'اسكود موزمبيقي');
   static const _mzn = Currency(_cld, 'MZN', 'متكال موزمبيقي');
   static const _nad = Currency(_cld, 'NAD', 'دولار ناميبي', symbolNarrow: r'$');
   static const _ngn = Currency(_cld, 'NGN', 'نايرا نيجيري', symbolNarrow: '₦');
   static const _nic = Currency(_cld, 'NIC', 'كوردوبة نيكاراجوا');
-  static const _nio =
-      Currency(_cld, 'NIO', 'قرطبة نيكاراغوا', symbolNarrow: r'C$');
+  static const _nio = Currency(
+    _cld,
+    'NIO',
+    'قرطبة نيكاراغوا',
+    symbolNarrow: r'C$',
+  );
   static const _nlg = Currency(_cld, 'NLG', 'جلدر هولندي');
-  static const _nok =
-      Currency(_cld, 'NOK', 'كرونة نرويجية', symbolNarrow: 'kr');
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'كرونة نرويجية',
+    symbolNarrow: 'kr',
+  );
   static const _npr = Currency(_cld, 'NPR', 'روبية نيبالي', symbolNarrow: 'Rs');
-  static const _nzd = Currency(_cld, 'NZD', 'دولار نيوزيلندي',
-      symbol: r'NZ$', symbolNarrow: r'NZ$');
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'دولار نيوزيلندي',
+    symbol: r'NZ$',
+    symbolNarrow: r'NZ$',
+  );
   static const _omr = Currency(_cld, 'OMR', 'ريال عماني', symbol: 'ر.ع.‏');
   static const _pab = Currency(_cld, 'PAB', 'بالبوا بنمي');
   static const _pen = Currency(_cld, 'PEN', 'سول بيروفي');
   static const _pgk = Currency(_cld, 'PGK', 'كينا بابوا غينيا الجديدة');
-  static const _php =
-      Currency(_cld, 'PHP', 'بيزو فلبيني', symbol: 'PHP', symbolNarrow: '₱');
-  static const _pkr =
-      Currency(_cld, 'PKR', 'روبية باكستاني', symbolNarrow: 'Rs');
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'بيزو فلبيني',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'روبية باكستاني',
+    symbolNarrow: 'Rs',
+  );
   static const _pln = Currency(_cld, 'PLN', 'زلوتي بولندي', symbolNarrow: 'zł');
   static const _plz = Currency(_cld, 'PLZ', 'زلوتي بولندي - 1950-1995');
   static const _pte = Currency(_cld, 'PTE', 'اسكود برتغالي');
-  static const _pyg =
-      Currency(_cld, 'PYG', 'غواراني باراغواي', symbolNarrow: '₲');
+  static const _pyg = Currency(
+    _cld,
+    'PYG',
+    'غواراني باراغواي',
+    symbolNarrow: '₲',
+  );
   static const _qar = Currency(_cld, 'QAR', 'ريال قطري', symbol: 'ر.ق.‏');
   static const _rhd = Currency(_cld, 'RHD', 'دولار روديسي');
   static const _rol = Currency(_cld, 'ROL', 'ليو روماني قديم');
   static const _ron = Currency(_cld, 'RON', 'ليو روماني', symbolNarrow: 'lei');
-  static const _rsd = Currency(_cld, 'RSD', 'دينار صربي',
-      zero: 'دينار صربي',
-      one: 'دينار صربي',
-      two: 'ديناران صربيان',
-      few: 'دينارات صربية',
-      many: 'دينارًا صربيًا',
-      other: 'دينار صربي');
+  static const _rsd = Currency(
+    _cld,
+    'RSD',
+    'دينار صربي',
+    zero: 'دينار صربي',
+    one: 'دينار صربي',
+    two: 'ديناران صربيان',
+    few: 'دينارات صربية',
+    many: 'دينارًا صربيًا',
+    other: 'دينار صربي',
+  );
   static const _rub = Currency(_cld, 'RUB', 'روبل روسي', symbolNarrow: '₽');
   static const _rur = Currency(_cld, 'RUR', 'روبل روسي - 1991-1998');
   static const _rwf = Currency(_cld, 'RWF', 'فرنك رواندي', symbolNarrow: 'RF');
   static const _sar = Currency(_cld, 'SAR', 'ريال سعودي', symbol: 'ر.س.‏');
-  static const _sbd =
-      Currency(_cld, 'SBD', 'دولار جزر سليمان', symbolNarrow: r'SB$');
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'دولار جزر سليمان',
+    symbolNarrow: r'SB$',
+  );
   static const _scr = Currency(_cld, 'SCR', 'روبية سيشيلية');
   static const _sdd = Currency(_cld, 'SDD', 'دينار سوداني', symbol: 'د.س.‏');
-  static const _sdg = Currency(_cld, 'SDG', 'جنيه سوداني',
-      zero: 'جنيه سوداني',
-      one: 'جنيه سوداني',
-      two: 'جنيه سوداني',
-      few: 'جنيهات سودانية',
-      many: 'جنيهًا سودانيًا',
-      other: 'جنيه سوداني',
-      symbol: 'ج.س.');
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'جنيه سوداني',
+    zero: 'جنيه سوداني',
+    one: 'جنيه سوداني',
+    two: 'جنيه سوداني',
+    few: 'جنيهات سودانية',
+    many: 'جنيهًا سودانيًا',
+    other: 'جنيه سوداني',
+    symbol: 'ج.س.',
+  );
   static const _sdp = Currency(_cld, 'SDP', 'جنيه سوداني قديم');
   static const _sek = Currency(_cld, 'SEK', 'كرونة سويدية', symbolNarrow: 'kr');
-  static const _sgd =
-      Currency(_cld, 'SGD', 'دولار سنغافوري', symbolNarrow: r'$');
-  static const _shp =
-      Currency(_cld, 'SHP', 'جنيه سانت هيلين', symbolNarrow: '£');
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'دولار سنغافوري',
+    symbolNarrow: r'$',
+  );
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'جنيه سانت هيلين',
+    symbolNarrow: '£',
+  );
   static const _sit = Currency(_cld, 'SIT', 'تولار سلوفيني');
   static const _skk = Currency(_cld, 'SKK', 'كرونة سلوفاكية');
   static const _sle = Currency(_cld, 'SLE', 'ليون سيراليوني');
   static const _sll = Currency(_cld, 'SLL', 'ليون سيراليوني - 1964-2022');
   static const _sos = Currency(_cld, 'SOS', 'شلن صومالي');
-  static const _srd =
-      Currency(_cld, 'SRD', 'دولار سورينامي', symbolNarrow: r'SR$');
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'دولار سورينامي',
+    symbolNarrow: r'SR$',
+  );
   static const _srg = Currency(_cld, 'SRG', 'جلدر سورينامي');
-  static const _ssp = Currency(_cld, 'SSP', 'جنيه جنوب السودان',
-      zero: 'جنيه جنوب السودان',
-      one: 'جنيه جنوب السودان',
-      two: 'جنيهان جنوب السودان',
-      few: 'جنيهات جنوب السودان',
-      many: 'جنيهًا جنوب السودان',
-      other: 'جنيه جنوب السودان',
-      symbolNarrow: '£');
-  static const _std =
-      Currency(_cld, 'STD', 'دوبرا ساو تومي وبرينسيبي - 1977-2017');
-  static const _stn =
-      Currency(_cld, 'STN', 'دوبرا ساو تومي وبرينسيبي', symbolNarrow: 'Db');
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'جنيه جنوب السودان',
+    zero: 'جنيه جنوب السودان',
+    one: 'جنيه جنوب السودان',
+    two: 'جنيهان جنوب السودان',
+    few: 'جنيهات جنوب السودان',
+    many: 'جنيهًا جنوب السودان',
+    other: 'جنيه جنوب السودان',
+    symbolNarrow: '£',
+  );
+  static const _std = Currency(
+    _cld,
+    'STD',
+    'دوبرا ساو تومي وبرينسيبي - 1977-2017',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'دوبرا ساو تومي وبرينسيبي',
+    symbolNarrow: 'Db',
+  );
   static const _sur = Currency(_cld, 'SUR', 'روبل سوفيتي');
   static const _svc = Currency(_cld, 'SVC', 'كولون سلفادوري');
-  static const _syp =
-      Currency(_cld, 'SYP', 'ليرة سورية', symbol: 'ل.س.‏', symbolNarrow: '£');
+  static const _syp = Currency(
+    _cld,
+    'SYP',
+    'ليرة سورية',
+    symbol: 'ل.س.‏',
+    symbolNarrow: '£',
+  );
   static const _szl = Currency(_cld, 'SZL', 'ليلانجيني سوازيلندي');
-  static const _thb =
-      Currency(_cld, 'THB', 'باخت تايلاندي', symbol: '฿', symbolNarrow: '฿');
+  static const _thb = Currency(
+    _cld,
+    'THB',
+    'باخت تايلاندي',
+    symbol: '฿',
+    symbolNarrow: '฿',
+  );
   static const _tjr = Currency(_cld, 'TJR', 'روبل طاجيكستاني');
   static const _tjs = Currency(_cld, 'TJS', 'سوموني طاجيكستاني');
   static const _tmm = Currency(_cld, 'TMM', 'مانات تركمنستاني');
   static const _tmt = Currency(_cld, 'TMT', 'مانات تركمانستان');
-  static const _tnd = Currency(_cld, 'TND', 'دينار تونسي',
-      zero: 'دينار تونسي',
-      one: 'دينار تونسي',
-      two: 'ديناران تونسيان',
-      few: 'دينارات تونسية',
-      many: 'دينارًا تونسيًا',
-      other: 'دينار تونسي',
-      symbol: 'د.ت.‏');
+  static const _tnd = Currency(
+    _cld,
+    'TND',
+    'دينار تونسي',
+    zero: 'دينار تونسي',
+    one: 'دينار تونسي',
+    two: 'ديناران تونسيان',
+    few: 'دينارات تونسية',
+    many: 'دينارًا تونسيًا',
+    other: 'دينار تونسي',
+    symbol: 'د.ت.‏',
+  );
   static const _top = Currency(_cld, 'TOP', 'بانغا تونغا', symbolNarrow: r'T$');
   static const _tpe = Currency(_cld, 'TPE', 'اسكود تيموري');
   static const _trl = Currency(_cld, 'TRL', 'ليرة تركي');
-  static const _$try = Currency(_cld, 'TRY', 'ليرة تركية',
-      symbolNarrow: '₺', symbolVariant: 'TL');
-  static const _ttd =
-      Currency(_cld, 'TTD', 'دولار ترينداد وتوباغو', symbolNarrow: r'TT$');
-  static const _twd = Currency(_cld, 'TWD', 'دولار تايواني',
-      symbol: r'NT$', symbolNarrow: r'NT$');
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'ليرة تركية',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'دولار ترينداد وتوباغو',
+    symbolNarrow: r'TT$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'دولار تايواني',
+    symbol: r'NT$',
+    symbolNarrow: r'NT$',
+  );
   static const _tzs = Currency(_cld, 'TZS', 'شلن تنزاني');
-  static const _uah =
-      Currency(_cld, 'UAH', 'هريفنيا أوكراني', symbolNarrow: '₴');
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'هريفنيا أوكراني',
+    symbolNarrow: '₴',
+  );
   static const _ugs = Currency(_cld, 'UGS', 'شلن أوغندي - 1966-1987');
   static const _ugx = Currency(_cld, 'UGX', 'شلن أوغندي');
-  static const _usd = Currency(_cld, 'USD', 'دولار أمريكي',
-      symbol: r'US$', symbolNarrow: r'US$');
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'دولار أمريكي',
+    symbol: r'US$',
+    symbolNarrow: r'US$',
+  );
   static const _usn = Currency(_cld, 'USN', 'دولار أمريكي (اليوم التالي)‏');
   static const _uss = Currency(_cld, 'USS', 'دولار أمريكي (نفس اليوم)‏');
   static const _uyp = Currency(_cld, 'UYP', 'بيزو أوروجواي - 1975-1993');
-  static const _uyu =
-      Currency(_cld, 'UYU', 'بيزو اوروغواي', symbolNarrow: r'UY$');
+  static const _uyu = Currency(
+    _cld,
+    'UYU',
+    'بيزو اوروغواي',
+    symbolNarrow: r'UY$',
+  );
   static const _uzs = Currency(_cld, 'UZS', 'سوم أوزبكستاني');
   static const _veb = Currency(_cld, 'VEB', 'بوليفار فنزويلي - 1871-2008');
-  static const _vef =
-      Currency(_cld, 'VEF', 'بوليفار فنزويلي - 2008–2018', symbolNarrow: 'Bs');
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'بوليفار فنزويلي - 2008–2018',
+    symbolNarrow: 'Bs',
+  );
   static const _ves = Currency(_cld, 'VES', 'بوليفار فنزويلي');
-  static const _vnd =
-      Currency(_cld, 'VND', 'دونج فيتنامي', symbol: '₫', symbolNarrow: '₫');
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'دونج فيتنامي',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
   static const _vuv = Currency(_cld, 'VUV', 'فاتو فانواتو');
   static const _wst = Currency(_cld, 'WST', 'تالا ساموا');
   static const _xaf = Currency(_cld, 'XAF', 'فرنك وسط أفريقي', symbol: 'FCFA');
@@ -17299,8 +17615,13 @@ class CurrenciesAr extends Currencies {
   static const _xbb = Currency(_cld, 'XBB', 'الوحدة المالية الأوروبية');
   static const _xbc = Currency(_cld, 'XBC', 'الوحدة الحسابية الأوروبية');
   static const _xbd = Currency(_cld, 'XBD', '(XBD)وحدة الحساب الأوروبية');
-  static const _xcd = Currency(_cld, 'XCD', 'دولار شرق الكاريبي',
-      symbol: r'EC$', symbolNarrow: r'$');
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'دولار شرق الكاريبي',
+    symbol: r'EC$',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
   static const _xdr = Currency(_cld, 'XDR', 'حقوق السحب الخاصة');
   static const _xeu = Currency(_cld, 'XEU', 'وحدة النقد الأوروبية');
@@ -17311,21 +17632,29 @@ class CurrenciesAr extends Currencies {
   static const _xpf = Currency(_cld, 'XPF', 'فرنك سي إف بي', symbol: 'CFPF');
   static const _xpt = Currency(_cld, 'XPT', 'البلاتين');
   static const _xts = Currency(_cld, 'XTS', 'كود اختبار العملة');
-  static const _xxx = Currency(_cld, 'XXX', 'عملة غير معروفة',
-      zero: '(عملة غير معروفة)',
-      one: '(عملة غير معروفة)',
-      two: '(عملة غير معروفة)',
-      few: '(عملة غير معروفة)',
-      many: '(عملة غير معروفة)',
-      other: '(عملة غير معروفة)',
-      symbol: '¤');
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    'عملة غير معروفة',
+    zero: '(عملة غير معروفة)',
+    one: '(عملة غير معروفة)',
+    two: '(عملة غير معروفة)',
+    few: '(عملة غير معروفة)',
+    many: '(عملة غير معروفة)',
+    other: '(عملة غير معروفة)',
+    symbol: '¤',
+  );
   static const _ydd = Currency(_cld, 'YDD', 'دينار يمني');
   static const _yer = Currency(_cld, 'YER', 'ريال يمني', symbol: 'ر.ي.‏');
   static const _yud = Currency(_cld, 'YUD', 'دينار يوغسلافي');
   static const _yun = Currency(_cld, 'YUN', 'دينار يوغسلافي قابل للتحويل');
   static const _zal = Currency(_cld, 'ZAL', 'راند جنوب أفريقيا -مالي');
-  static const _zar =
-      Currency(_cld, 'ZAR', 'راند جنوب أفريقيا', symbolNarrow: 'R');
+  static const _zar = Currency(
+    _cld,
+    'ZAR',
+    'راند جنوب أفريقيا',
+    symbolNarrow: 'R',
+  );
   static const _zmk = Currency(_cld, 'ZMK', 'كواشا زامبي - 1968-2012');
   static const _zmw = Currency(_cld, 'ZMW', 'كواشا زامبي', symbolNarrow: 'ZK');
   static const _zrn = Currency(_cld, 'ZRN', 'زائير زائيري جديد');
@@ -18255,8 +18584,9 @@ class TimeZonesAr extends TimeZones {
     'America/Anguilla': TimeZoneNames(exemplarCity: 'أنغويلا'),
     'America/Antigua': TimeZoneNames(exemplarCity: 'أنتيغوا'),
     'America/Araguaina': TimeZoneNames(exemplarCity: 'أروجوانيا'),
-    'America/Argentina/Rio_Gallegos':
-        TimeZoneNames(exemplarCity: 'ريو جالييوس'),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'ريو جالييوس',
+    ),
     'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'سان خوان'),
     'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'أشوا'),
     'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'لا ريوجا'),
@@ -18316,8 +18646,9 @@ class TimeZonesAr extends TimeZones {
     'America/Hermosillo': TimeZoneNames(exemplarCity: 'هيرموسيلو'),
     'America/Indiana/Vincennes': TimeZoneNames(exemplarCity: 'فينسينس'),
     'America/Indiana/Petersburg': TimeZoneNames(exemplarCity: 'بيترسبرغ'),
-    'America/Indiana/Tell_City':
-        TimeZoneNames(exemplarCity: 'مدينة تل، إنديانا'),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'مدينة تل، إنديانا',
+    ),
     'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'كونكس'),
     'America/Indiana/Winamac': TimeZoneNames(exemplarCity: 'ويناماك'),
     'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'مارنجو'),
@@ -18356,8 +18687,9 @@ class TimeZonesAr extends TimeZones {
     'America/New_York': TimeZoneNames(exemplarCity: 'نيويورك'),
     'America/Nome': TimeZoneNames(exemplarCity: 'نوم'),
     'America/Noronha': TimeZoneNames(exemplarCity: 'نوروناه'),
-    'America/North_Dakota/Beulah':
-        TimeZoneNames(exemplarCity: 'بيولا، داكوتا الشمالية'),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'بيولا، داكوتا الشمالية',
+    ),
     'America/North_Dakota/New_Salem': TimeZoneNames(exemplarCity: 'نيو ساليم'),
     'America/North_Dakota/Center': TimeZoneNames(exemplarCity: 'سنتر'),
     'America/Ojinaga': TimeZoneNames(exemplarCity: 'أوجيناجا'),
@@ -18420,8 +18752,9 @@ class TimeZonesAr extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: 'تشيسيناو'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'كوبنهاغن'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'دبلن',
-        long: TimeZoneName(daylight: 'توقيت أيرلندا الرسمي')),
+      exemplarCity: 'دبلن',
+      long: TimeZoneName(daylight: 'توقيت أيرلندا الرسمي'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'جبل طارق'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: 'غيرنزي'),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: 'هلسنكي'),
@@ -18434,8 +18767,9 @@ class TimeZonesAr extends TimeZones {
     'Europe/Lisbon': TimeZoneNames(exemplarCity: 'لشبونة'),
     'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'ليوبليانا'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'لندن',
-        long: TimeZoneName(daylight: 'توقيت بريطانيا الصيفي')),
+      exemplarCity: 'لندن',
+      long: TimeZoneName(daylight: 'توقيت بريطانيا الصيفي'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'لوكسمبورغ'),
     'Europe/Madrid': TimeZoneNames(exemplarCity: 'مدريد'),
     'Europe/Malta': TimeZoneNames(exemplarCity: 'مالطة'),
@@ -18666,8 +19000,9 @@ class TimeZonesAr extends TimeZones {
     'Arctic/Longyearbyen': TimeZoneNames(exemplarCity: 'لونجيربين'),
     'Antarctica/Casey': TimeZoneNames(exemplarCity: 'كاساي'),
     'Antarctica/Davis': TimeZoneNames(exemplarCity: 'دافيز'),
-    'Antarctica/DumontDUrville':
-        TimeZoneNames(exemplarCity: 'دي مونت دو روفيل'),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'دي مونت دو روفيل',
+    ),
     'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'ماكواري'),
     'Antarctica/Mawson': TimeZoneNames(exemplarCity: 'ماوسون'),
     'Antarctica/McMurdo': TimeZoneNames(exemplarCity: 'ماك موردو'),
@@ -18677,8 +19012,9 @@ class TimeZonesAr extends TimeZones {
     'Antarctica/Troll': TimeZoneNames(exemplarCity: 'ترول'),
     'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'فوستوك'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'التوقيت العالمي المنسق'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'التوقيت العالمي المنسق'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'مدينة غير معروفة'),
   };
 
@@ -18686,520 +19022,854 @@ class TimeZonesAr extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Afghanistan': MetaZone('Afghanistan',
-        long: TimeZoneName(standard: 'توقيت أفغانستان')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'توقيت وسط أفريقيا')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'توقيت شرق أفريقيا')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'توقيت جنوب أفريقيا')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'توقيت غرب أفريقيا',
-            standard: 'توقيت غرب أفريقيا الرسمي',
-            daylight: 'توقيت غرب أفريقيا الصيفي')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'توقيت ألاسكا',
-            standard: 'التوقيت الرسمي لألاسكا',
-            daylight: 'توقيت ألاسكا الصيفي')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'توقيت الأمازون',
-            standard: 'توقيت الأمازون الرسمي',
-            daylight: 'توقيت الأمازون الصيفي')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'التوقيت المركزي لأمريكا الشمالية',
-            standard: 'التوقيت الرسمي المركزي لأمريكا الشمالية',
-            daylight: 'التوقيت الصيفي المركزي لأمريكا الشمالية')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'التوقيت الشرقي لأمريكا الشمالية',
-            standard: 'التوقيت الرسمي الشرقي لأمريكا الشمالية',
-            daylight: 'التوقيت الصيفي الشرقي لأمريكا الشمالية')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'التوقيت الجبلي لأمريكا الشمالية',
-            standard: 'التوقيت الجبلي الرسمي لأمريكا الشمالية',
-            daylight: 'التوقيت الجبلي الصيفي لأمريكا الشمالية')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'توقيت المحيط الهادي',
-            standard: 'توقيت المحيط الهادي الرسمي',
-            daylight: 'توقيت المحيط الهادي الصيفي')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: 'توقيت أنادير',
-            standard: 'توقيت أنادير الرسمي',
-            daylight: 'التوقيت الصيفي لأنادير')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'توقيت آبيا',
-            standard: 'التوقيت الرسمي لآبيا',
-            daylight: 'التوقيت الصيفي لأبيا')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'التوقيت العربي',
-            standard: 'التوقيت العربي الرسمي',
-            daylight: 'التوقيت العربي الصيفي')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'توقيت الأرجنتين',
-            standard: 'توقيت الأرجنتين الرسمي',
-            daylight: 'توقيت الأرجنتين الصيفي')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'توقيت غرب الأرجنتين',
-            standard: 'توقيت غرب الأرجنتين الرسمي',
-            daylight: 'توقيت غرب الأرجنتين الصيفي')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'توقيت أرمينيا',
-            standard: 'توقيت أرمينيا الرسمي',
-            daylight: 'توقيت أرمينيا الصيفي')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'توقيت الأطلسي',
-            standard: 'التوقيت الرسمي الأطلسي',
-            daylight: 'التوقيت الصيفي الأطلسي')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'توقيت وسط أستراليا',
-            standard: 'توقيت وسط أستراليا الرسمي',
-            daylight: 'توقيت وسط أستراليا الصيفي')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'توقيت غرب وسط أستراليا',
-            standard: 'توقيت غرب وسط أستراليا الرسمي',
-            daylight: 'توقيت غرب وسط أستراليا الصيفي')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'توقيت شرق أستراليا',
-            standard: 'توقيت شرق أستراليا الرسمي',
-            daylight: 'توقيت شرق أستراليا الصيفي')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'توقيت غرب أستراليا',
-            standard: 'توقيت غرب أستراليا الرسمي',
-            daylight: 'توقيت غرب أستراليا الصيفي')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'توقيت أذربيجان',
-            standard: 'توقيت أذربيجان الرسمي',
-            daylight: 'توقيت أذربيجان الصيفي')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'توقيت أزورس',
-            standard: 'توقيت أزورس الرسمي',
-            daylight: 'توقيت أزورس الصيفي')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'توقيت بنغلاديش',
-            standard: 'توقيت بنغلاديش الرسمي',
-            daylight: 'توقيت بنغلاديش الصيفي')),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'توقيت أفغانستان'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'توقيت وسط أفريقيا'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'توقيت شرق أفريقيا'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'توقيت جنوب أفريقيا'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'توقيت غرب أفريقيا',
+        standard: 'توقيت غرب أفريقيا الرسمي',
+        daylight: 'توقيت غرب أفريقيا الصيفي',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'توقيت ألاسكا',
+        standard: 'التوقيت الرسمي لألاسكا',
+        daylight: 'توقيت ألاسكا الصيفي',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'توقيت الأمازون',
+        standard: 'توقيت الأمازون الرسمي',
+        daylight: 'توقيت الأمازون الصيفي',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'التوقيت المركزي لأمريكا الشمالية',
+        standard: 'التوقيت الرسمي المركزي لأمريكا الشمالية',
+        daylight: 'التوقيت الصيفي المركزي لأمريكا الشمالية',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'التوقيت الشرقي لأمريكا الشمالية',
+        standard: 'التوقيت الرسمي الشرقي لأمريكا الشمالية',
+        daylight: 'التوقيت الصيفي الشرقي لأمريكا الشمالية',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'التوقيت الجبلي لأمريكا الشمالية',
+        standard: 'التوقيت الجبلي الرسمي لأمريكا الشمالية',
+        daylight: 'التوقيت الجبلي الصيفي لأمريكا الشمالية',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'توقيت المحيط الهادي',
+        standard: 'توقيت المحيط الهادي الرسمي',
+        daylight: 'توقيت المحيط الهادي الصيفي',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: 'توقيت أنادير',
+        standard: 'توقيت أنادير الرسمي',
+        daylight: 'التوقيت الصيفي لأنادير',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'توقيت آبيا',
+        standard: 'التوقيت الرسمي لآبيا',
+        daylight: 'التوقيت الصيفي لأبيا',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'التوقيت العربي',
+        standard: 'التوقيت العربي الرسمي',
+        daylight: 'التوقيت العربي الصيفي',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'توقيت الأرجنتين',
+        standard: 'توقيت الأرجنتين الرسمي',
+        daylight: 'توقيت الأرجنتين الصيفي',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'توقيت غرب الأرجنتين',
+        standard: 'توقيت غرب الأرجنتين الرسمي',
+        daylight: 'توقيت غرب الأرجنتين الصيفي',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'توقيت أرمينيا',
+        standard: 'توقيت أرمينيا الرسمي',
+        daylight: 'توقيت أرمينيا الصيفي',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'توقيت الأطلسي',
+        standard: 'التوقيت الرسمي الأطلسي',
+        daylight: 'التوقيت الصيفي الأطلسي',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'توقيت وسط أستراليا',
+        standard: 'توقيت وسط أستراليا الرسمي',
+        daylight: 'توقيت وسط أستراليا الصيفي',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'توقيت غرب وسط أستراليا',
+        standard: 'توقيت غرب وسط أستراليا الرسمي',
+        daylight: 'توقيت غرب وسط أستراليا الصيفي',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'توقيت شرق أستراليا',
+        standard: 'توقيت شرق أستراليا الرسمي',
+        daylight: 'توقيت شرق أستراليا الصيفي',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'توقيت غرب أستراليا',
+        standard: 'توقيت غرب أستراليا الرسمي',
+        daylight: 'توقيت غرب أستراليا الصيفي',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'توقيت أذربيجان',
+        standard: 'توقيت أذربيجان الرسمي',
+        daylight: 'توقيت أذربيجان الصيفي',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'توقيت أزورس',
+        standard: 'توقيت أزورس الرسمي',
+        daylight: 'توقيت أزورس الصيفي',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'توقيت بنغلاديش',
+        standard: 'توقيت بنغلاديش الرسمي',
+        daylight: 'توقيت بنغلاديش الصيفي',
+      ),
+    ),
     'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'توقيت بوتان')),
-    'Bolivia':
-        MetaZone('Bolivia', long: TimeZoneName(standard: 'توقيت بوليفيا')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'توقيت برازيليا',
-            standard: 'توقيت برازيليا الرسمي',
-            daylight: 'توقيت برازيليا الصيفي')),
+    'Bolivia': MetaZone(
+      'Bolivia',
+      long: TimeZoneName(standard: 'توقيت بوليفيا'),
+    ),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'توقيت برازيليا',
+        standard: 'توقيت برازيليا الرسمي',
+        daylight: 'توقيت برازيليا الصيفي',
+      ),
+    ),
     'Brunei': MetaZone('Brunei', long: TimeZoneName(standard: 'توقيت بروناي')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'توقيت الرأس الأخضر',
-            standard: 'توقيت الرأس الأخضر الرسمي',
-            daylight: 'توقيت الرأس الأخضر الصيفي')),
-    'Chamorro':
-        MetaZone('Chamorro', long: TimeZoneName(standard: 'توقيت تشامورو')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'توقيت تشاتام',
-            standard: 'توقيت تشاتام الرسمي',
-            daylight: 'توقيت تشاتام الصيفي')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'توقيت تشيلي',
-            standard: 'توقيت تشيلي الرسمي',
-            daylight: 'توقيت تشيلي الصيفي')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'توقيت الصين',
-            standard: 'توقيت الصين الرسمي',
-            daylight: 'توقيت الصين الصيفي')),
-    'Christmas': MetaZone('Christmas',
-        long: TimeZoneName(standard: 'توقيت جزر الكريسماس')),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'توقيت الرأس الأخضر',
+        standard: 'توقيت الرأس الأخضر الرسمي',
+        daylight: 'توقيت الرأس الأخضر الصيفي',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'توقيت تشامورو'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'توقيت تشاتام',
+        standard: 'توقيت تشاتام الرسمي',
+        daylight: 'توقيت تشاتام الصيفي',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'توقيت تشيلي',
+        standard: 'توقيت تشيلي الرسمي',
+        daylight: 'توقيت تشيلي الصيفي',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'توقيت الصين',
+        standard: 'توقيت الصين الرسمي',
+        daylight: 'توقيت الصين الصيفي',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'توقيت جزر الكريسماس'),
+    ),
     'Cocos': MetaZone('Cocos', long: TimeZoneName(standard: 'توقيت جزر كوكوس')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'توقيت كولومبيا',
-            standard: 'توقيت كولومبيا الرسمي',
-            daylight: 'توقيت كولومبيا الصيفي')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'توقيت جزر كووك',
-            standard: 'توقيت جزر كوك الرسمي',
-            daylight: 'توقيت جزر كوك الصيفي')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'توقيت كوبا',
-            standard: 'توقيت كوبا الرسمي',
-            daylight: 'توقيت كوبا الصيفي')),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'توقيت كولومبيا',
+        standard: 'توقيت كولومبيا الرسمي',
+        daylight: 'توقيت كولومبيا الصيفي',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'توقيت جزر كووك',
+        standard: 'توقيت جزر كوك الرسمي',
+        daylight: 'توقيت جزر كوك الصيفي',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'توقيت كوبا',
+        standard: 'توقيت كوبا الرسمي',
+        daylight: 'توقيت كوبا الصيفي',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'توقيت دافيز')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'توقيت دي مونت دو روفيل')),
-    'East_Timor': MetaZone('East_Timor',
-        long: TimeZoneName(standard: 'توقيت تيمور الشرقية')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'توقيت جزيرة استر',
-            standard: 'توقيت جزيرة استر الرسمي',
-            daylight: 'توقيت جزيرة استر الصيفي')),
-    'Ecuador':
-        MetaZone('Ecuador', long: TimeZoneName(standard: 'توقيت الإكوادور')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'توقيت وسط أوروبا',
-            standard: 'توقيت وسط أوروبا الرسمي',
-            daylight: 'توقيت وسط أوروبا الصيفي')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'توقيت شرق أوروبا',
-            standard: 'توقيت شرق أوروبا الرسمي',
-            daylight: 'توقيت شرق أوروبا الصيفي')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'التوقيت الأوروبي (أكثر شرقًا)')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'توقيت غرب أوروبا',
-            standard: 'توقيت غرب أوروبا الرسمي',
-            daylight: 'توقيت غرب أوروبا الصيفي')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'توقيت جزر فوكلاند',
-            standard: 'توقيت جزر فوكلاند الرسمي',
-            daylight: 'توقيت جزر فوكلاند الصيفي')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'توقيت فيجي',
-            standard: 'توقيت فيجي الرسمي',
-            daylight: 'توقيت فيجي الصيفي')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'توقيت غويانا الفرنسية')),
-    'French_Southern': MetaZone('French_Southern',
-        long: TimeZoneName(
-            standard: 'توقيت المقاطعات الفرنسية الجنوبية والأنتارتيكية')),
-    'Galapagos':
-        MetaZone('Galapagos', long: TimeZoneName(standard: 'توقيت غلاباغوس')),
-    'Gambier':
-        MetaZone('Gambier', long: TimeZoneName(standard: 'توقيت جامبير')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'توقيت جورجيا',
-            standard: 'توقيت جورجيا الرسمي',
-            daylight: 'توقيت جورجيا الصيفي')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'توقيت جزر جيلبرت')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'توقيت دي مونت دو روفيل'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'توقيت تيمور الشرقية'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'توقيت جزيرة استر',
+        standard: 'توقيت جزيرة استر الرسمي',
+        daylight: 'توقيت جزيرة استر الصيفي',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      'Ecuador',
+      long: TimeZoneName(standard: 'توقيت الإكوادور'),
+    ),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'توقيت وسط أوروبا',
+        standard: 'توقيت وسط أوروبا الرسمي',
+        daylight: 'توقيت وسط أوروبا الصيفي',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'توقيت شرق أوروبا',
+        standard: 'توقيت شرق أوروبا الرسمي',
+        daylight: 'توقيت شرق أوروبا الصيفي',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'التوقيت الأوروبي (أكثر شرقًا)'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'توقيت غرب أوروبا',
+        standard: 'توقيت غرب أوروبا الرسمي',
+        daylight: 'توقيت غرب أوروبا الصيفي',
+      ),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'توقيت جزر فوكلاند',
+        standard: 'توقيت جزر فوكلاند الرسمي',
+        daylight: 'توقيت جزر فوكلاند الصيفي',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'توقيت فيجي',
+        standard: 'توقيت فيجي الرسمي',
+        daylight: 'توقيت فيجي الصيفي',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'توقيت غويانا الفرنسية'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(
+        standard: 'توقيت المقاطعات الفرنسية الجنوبية والأنتارتيكية',
+      ),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'توقيت غلاباغوس'),
+    ),
+    'Gambier': MetaZone(
+      'Gambier',
+      long: TimeZoneName(standard: 'توقيت جامبير'),
+    ),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'توقيت جورجيا',
+        standard: 'توقيت جورجيا الرسمي',
+        daylight: 'توقيت جورجيا الصيفي',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'توقيت جزر جيلبرت'),
+    ),
     'GMT': MetaZone('GMT', long: TimeZoneName(standard: 'توقيت غرينتش')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'توقيت شرق غرينلاند',
-            standard: 'توقيت شرق غرينلاند الرسمي',
-            daylight: 'توقيت شرق غرينلاند الصيفي')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'توقيت غرب غرينلاند',
-            standard: 'توقيت غرب غرينلاند الرسمي',
-            daylight: 'توقيت غرب غرينلاند الصيفي')),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'توقيت شرق غرينلاند',
+        standard: 'توقيت شرق غرينلاند الرسمي',
+        daylight: 'توقيت شرق غرينلاند الصيفي',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'توقيت غرب غرينلاند',
+        standard: 'توقيت غرب غرينلاند الرسمي',
+        daylight: 'توقيت غرب غرينلاند الصيفي',
+      ),
+    ),
     'Guam': MetaZone('Guam', long: TimeZoneName(standard: 'توقيت غوام')),
-    'Gulf': MetaZone('Gulf',
-        long: TimeZoneName(standard: 'توقيت الخليج'),
-        short: TimeZoneName(standard: 'GST')),
+    'Gulf': MetaZone(
+      'Gulf',
+      long: TimeZoneName(standard: 'توقيت الخليج'),
+      short: TimeZoneName(standard: 'GST'),
+    ),
     'Guyana': MetaZone('Guyana', long: TimeZoneName(standard: 'توقيت غيانا')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'توقيت هاواي ألوتيان',
-            standard: 'توقيت هاواي ألوتيان الرسمي',
-            daylight: 'توقيت هاواي ألوتيان الصيفي')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'توقيت هونغ كونغ',
-            standard: 'توقيت هونغ كونغ الرسمي',
-            daylight: 'توقيت هونغ كونغ الصيفي')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'توقيت هوفد',
-            standard: 'توقيت هوفد الرسمي',
-            daylight: 'توقيت هوفد الصيفي')),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'توقيت هاواي ألوتيان',
+        standard: 'توقيت هاواي ألوتيان الرسمي',
+        daylight: 'توقيت هاواي ألوتيان الصيفي',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'توقيت هونغ كونغ',
+        standard: 'توقيت هونغ كونغ الرسمي',
+        daylight: 'توقيت هونغ كونغ الصيفي',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'توقيت هوفد',
+        standard: 'توقيت هوفد الرسمي',
+        daylight: 'توقيت هوفد الصيفي',
+      ),
+    ),
     'India': MetaZone('India', long: TimeZoneName(standard: 'توقيت الهند')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'توقيت المحيط الهندي')),
-    'Indochina': MetaZone('Indochina',
-        long: TimeZoneName(standard: 'توقيت الهند الصينية')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'توقيت وسط إندونيسيا')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'توقيت شرق إندونيسيا')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'توقيت غرب إندونيسيا')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'توقيت إيران',
-            standard: 'توقيت إيران الرسمي',
-            daylight: 'توقيت إيران الصيفي')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'توقيت إركوتسك',
-            standard: 'توقيت إركوتسك الرسمي',
-            daylight: 'توقيت إركوتسك الصيفي')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'توقيت إسرائيل',
-            standard: 'توقيت إسرائيل الرسمي',
-            daylight: 'توقيت إسرائيل الصيفي')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'توقيت اليابان',
-            standard: 'توقيت اليابان الرسمي',
-            daylight: 'توقيت اليابان الصيفي')),
-    'Kamchatka': MetaZone('Kamchatka',
-        long: TimeZoneName(
-            generic: 'توقيت كامشاتكا',
-            standard: 'توقيت بيتروبافلوفسك-كامتشاتسكي',
-            daylight: 'توقيت بيتروبافلوفسك-كامتشاتسكي الصيفي')),
-    'Kazakhstan':
-        MetaZone('Kazakhstan', long: TimeZoneName(standard: 'توقيت كازاخستان')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'توقيت شرق كازاخستان')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'توقيت غرب كازاخستان')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'توقيت كوريا',
-            standard: 'توقيت كوريا الرسمي',
-            daylight: 'توقيت كوريا الصيفي')),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'توقيت المحيط الهندي'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'توقيت الهند الصينية'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'توقيت وسط إندونيسيا'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'توقيت شرق إندونيسيا'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'توقيت غرب إندونيسيا'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'توقيت إيران',
+        standard: 'توقيت إيران الرسمي',
+        daylight: 'توقيت إيران الصيفي',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'توقيت إركوتسك',
+        standard: 'توقيت إركوتسك الرسمي',
+        daylight: 'توقيت إركوتسك الصيفي',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'توقيت إسرائيل',
+        standard: 'توقيت إسرائيل الرسمي',
+        daylight: 'توقيت إسرائيل الصيفي',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'توقيت اليابان',
+        standard: 'توقيت اليابان الرسمي',
+        daylight: 'توقيت اليابان الصيفي',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      'Kamchatka',
+      long: TimeZoneName(
+        generic: 'توقيت كامشاتكا',
+        standard: 'توقيت بيتروبافلوفسك-كامتشاتسكي',
+        daylight: 'توقيت بيتروبافلوفسك-كامتشاتسكي الصيفي',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'توقيت كازاخستان'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'توقيت شرق كازاخستان'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'توقيت غرب كازاخستان'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'توقيت كوريا',
+        standard: 'توقيت كوريا الرسمي',
+        daylight: 'توقيت كوريا الصيفي',
+      ),
+    ),
     'Kosrae': MetaZone('Kosrae', long: TimeZoneName(standard: 'توقيت كوسرا')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'توقيت كراسنويارسك',
-            standard: 'توقيت كراسنويارسك الرسمي',
-            daylight: 'التوقيت الصيفي لكراسنويارسك')),
-    'Kyrgystan':
-        MetaZone('Kyrgystan', long: TimeZoneName(standard: 'توقيت قيرغيزستان')),
-    'Line_Islands': MetaZone('Line_Islands',
-        long: TimeZoneName(standard: 'توقيت جزر لاين')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'توقيت لورد هاو',
-            standard: 'توقيت لورد هاو الرسمي',
-            daylight: 'التوقيت الصيفي للورد هاو')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'توقيت ماغادان',
-            standard: 'توقيت ماغادان الرسمي',
-            daylight: 'توقيت ماغادان الصيفي')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'توقيت ماليزيا')),
-    'Maldives': MetaZone('Maldives',
-        long: TimeZoneName(standard: 'توقيت جزر المالديف')),
-    'Marquesas':
-        MetaZone('Marquesas', long: TimeZoneName(standard: 'توقيت ماركيساس')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'توقيت جزر مارشال')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'توقيت موريشيوس',
-            standard: 'توقيت موريشيوس الرسمي',
-            daylight: 'توقيت موريشيوس الصيفي')),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'توقيت كراسنويارسك',
+        standard: 'توقيت كراسنويارسك الرسمي',
+        daylight: 'التوقيت الصيفي لكراسنويارسك',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'توقيت قيرغيزستان'),
+    ),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'توقيت جزر لاين'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'توقيت لورد هاو',
+        standard: 'توقيت لورد هاو الرسمي',
+        daylight: 'التوقيت الصيفي للورد هاو',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'توقيت ماغادان',
+        standard: 'توقيت ماغادان الرسمي',
+        daylight: 'توقيت ماغادان الصيفي',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'توقيت ماليزيا'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'توقيت جزر المالديف'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'توقيت ماركيساس'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'توقيت جزر مارشال'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'توقيت موريشيوس',
+        standard: 'توقيت موريشيوس الرسمي',
+        daylight: 'توقيت موريشيوس الصيفي',
+      ),
+    ),
     'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: 'توقيت ماوسون')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'توقيت المحيط الهادي للمكسيك',
-            standard: 'توقيت المحيط الهادي الرسمي للمكسيك',
-            daylight: 'توقيت المحيط الهادي الصيفي للمكسيك')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'توقيت أولان باتور',
-            standard: 'توقيت أولان باتور الرسمي',
-            daylight: 'توقيت أولان باتور الصيفي')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'توقيت موسكو',
-            standard: 'توقيت موسكو الرسمي',
-            daylight: 'توقيت موسكو الصيفي')),
-    'Myanmar':
-        MetaZone('Myanmar', long: TimeZoneName(standard: 'توقيت ميانمار')),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'توقيت المحيط الهادي للمكسيك',
+        standard: 'توقيت المحيط الهادي الرسمي للمكسيك',
+        daylight: 'توقيت المحيط الهادي الصيفي للمكسيك',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'توقيت أولان باتور',
+        standard: 'توقيت أولان باتور الرسمي',
+        daylight: 'توقيت أولان باتور الصيفي',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'توقيت موسكو',
+        standard: 'توقيت موسكو الرسمي',
+        daylight: 'توقيت موسكو الصيفي',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      'Myanmar',
+      long: TimeZoneName(standard: 'توقيت ميانمار'),
+    ),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'توقيت ناورو')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'توقيت نيبال')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'توقيت كاليدونيا الجديدة',
-            standard: 'توقيت كاليدونيا الجديدة الرسمي',
-            daylight: 'توقيت كاليدونيا الجديدة الصيفي')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'توقيت نيوزيلندا',
-            standard: 'توقيت نيوزيلندا الرسمي',
-            daylight: 'توقيت نيوزيلندا الصيفي')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'توقيت نيوفاوندلاند',
-            standard: 'توقيت نيوفاوندلاند الرسمي',
-            daylight: 'توقيت نيوفاوندلاند الصيفي')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'توقيت كاليدونيا الجديدة',
+        standard: 'توقيت كاليدونيا الجديدة الرسمي',
+        daylight: 'توقيت كاليدونيا الجديدة الصيفي',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'توقيت نيوزيلندا',
+        standard: 'توقيت نيوزيلندا الرسمي',
+        daylight: 'توقيت نيوزيلندا الصيفي',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'توقيت نيوفاوندلاند',
+        standard: 'توقيت نيوفاوندلاند الرسمي',
+        daylight: 'توقيت نيوفاوندلاند الصيفي',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'توقيت نيوي')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'توقيت جزيرة نورفولك',
-            standard: 'توقيت جزيرة نورفولك الرسمي',
-            daylight: 'توقيت جزيرة نورفولك الصيفي')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'توقيت فيرناندو دي نورونها',
-            standard: 'توقيت فرناندو دي نورونها الرسمي',
-            daylight: 'توقيت فرناندو دي نورونها الصيفي')),
-    'North_Mariana': MetaZone('North_Mariana',
-        long: TimeZoneName(standard: 'توقيت جزر ماريانا الشمالية')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'توقيت نوفوسيبيرسك',
-            standard: 'توقيت نوفوسيبيرسك الرسمي',
-            daylight: 'توقيت نوفوسيبيرسك الصيفي')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'توقيت أومسك',
-            standard: 'توقيت أومسك الرسمي',
-            daylight: 'توقيت أومسك الصيفي')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'توقيت باكستان',
-            standard: 'توقيت باكستان الرسمي',
-            daylight: 'توقيت باكستان الصيفي')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'توقيت جزيرة نورفولك',
+        standard: 'توقيت جزيرة نورفولك الرسمي',
+        daylight: 'توقيت جزيرة نورفولك الصيفي',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'توقيت فيرناندو دي نورونها',
+        standard: 'توقيت فرناندو دي نورونها الرسمي',
+        daylight: 'توقيت فرناندو دي نورونها الصيفي',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      'North_Mariana',
+      long: TimeZoneName(standard: 'توقيت جزر ماريانا الشمالية'),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'توقيت نوفوسيبيرسك',
+        standard: 'توقيت نوفوسيبيرسك الرسمي',
+        daylight: 'توقيت نوفوسيبيرسك الصيفي',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'توقيت أومسك',
+        standard: 'توقيت أومسك الرسمي',
+        daylight: 'توقيت أومسك الصيفي',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'توقيت باكستان',
+        standard: 'توقيت باكستان الرسمي',
+        daylight: 'توقيت باكستان الصيفي',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'توقيت بالاو')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'توقيت بابوا غينيا الجديدة')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'توقيت باراغواي',
-            standard: 'توقيت باراغواي الرسمي',
-            daylight: 'توقيت باراغواي الصيفي')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'توقيت بيرو',
-            standard: 'توقيت بيرو الرسمي',
-            daylight: 'توقيت بيرو الصيفي')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'توقيت الفيلبين',
-            standard: 'توقيت الفيلبين الرسمي',
-            daylight: 'توقيت الفيلبين الصيفي')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'توقيت جزر فينكس')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'توقيت سانت بيير وميكولون',
-            standard: 'توقيت سانت بيير وميكولون الرسمي',
-            daylight: 'توقيت سانت بيير وميكولون الصيفي')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'توقيت بيتكيرن')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'توقيت بابوا غينيا الجديدة'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'توقيت باراغواي',
+        standard: 'توقيت باراغواي الرسمي',
+        daylight: 'توقيت باراغواي الصيفي',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'توقيت بيرو',
+        standard: 'توقيت بيرو الرسمي',
+        daylight: 'توقيت بيرو الصيفي',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'توقيت الفيلبين',
+        standard: 'توقيت الفيلبين الرسمي',
+        daylight: 'توقيت الفيلبين الصيفي',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'توقيت جزر فينكس'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'توقيت سانت بيير وميكولون',
+        standard: 'توقيت سانت بيير وميكولون الرسمي',
+        daylight: 'توقيت سانت بيير وميكولون الصيفي',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'توقيت بيتكيرن'),
+    ),
     'Ponape': MetaZone('Ponape', long: TimeZoneName(standard: 'توقيت بونابي')),
-    'Pyongyang':
-        MetaZone('Pyongyang', long: TimeZoneName(standard: 'توقيت بيونغ يانغ')),
-    'Reunion':
-        MetaZone('Reunion', long: TimeZoneName(standard: 'توقيت روينيون')),
-    'Rothera':
-        MetaZone('Rothera', long: TimeZoneName(standard: 'توقيت روثيرا')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'توقيت ساخالين',
-            standard: 'توقيت ساخالين الرسمي',
-            daylight: 'توقيت ساخالين الصيفي')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: 'توقيت سامارا',
-            standard: 'توقيت سمارا',
-            daylight: 'توقيت سمارا الصيفي')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'توقيت ساموا',
-            standard: 'توقيت ساموا الرسمي',
-            daylight: 'توقيت ساموا الصيفي')),
-    'Seychelles':
-        MetaZone('Seychelles', long: TimeZoneName(standard: 'توقيت سيشل')),
-    'Singapore':
-        MetaZone('Singapore', long: TimeZoneName(standard: 'توقيت سنغافورة')),
-    'Solomon':
-        MetaZone('Solomon', long: TimeZoneName(standard: 'توقيت جزر سليمان')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'توقيت جنوب جورجيا')),
-    'Suriname':
-        MetaZone('Suriname', long: TimeZoneName(standard: 'توقيت سورينام')),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'توقيت بيونغ يانغ'),
+    ),
+    'Reunion': MetaZone(
+      'Reunion',
+      long: TimeZoneName(standard: 'توقيت روينيون'),
+    ),
+    'Rothera': MetaZone(
+      'Rothera',
+      long: TimeZoneName(standard: 'توقيت روثيرا'),
+    ),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'توقيت ساخالين',
+        standard: 'توقيت ساخالين الرسمي',
+        daylight: 'توقيت ساخالين الصيفي',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: 'توقيت سامارا',
+        standard: 'توقيت سمارا',
+        daylight: 'توقيت سمارا الصيفي',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'توقيت ساموا',
+        standard: 'توقيت ساموا الرسمي',
+        daylight: 'توقيت ساموا الصيفي',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'توقيت سيشل'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'توقيت سنغافورة'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'توقيت جزر سليمان'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'توقيت جنوب جورجيا'),
+    ),
+    'Suriname': MetaZone(
+      'Suriname',
+      long: TimeZoneName(standard: 'توقيت سورينام'),
+    ),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'توقيت سايووا')),
     'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'توقيت تاهيتي')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'توقيت تايبيه',
-            standard: 'توقيت تايبيه الرسمي',
-            daylight: 'توقيت تايبيه الصيفي')),
-    'Tajikistan':
-        MetaZone('Tajikistan', long: TimeZoneName(standard: 'توقيت طاجكستان')),
-    'Tokelau':
-        MetaZone('Tokelau', long: TimeZoneName(standard: 'توقيت توكيلاو')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'توقيت تونغا',
-            standard: 'توقيت تونغا الرسمي',
-            daylight: 'توقيت تونغا الصيفي')),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'توقيت تايبيه',
+        standard: 'توقيت تايبيه الرسمي',
+        daylight: 'توقيت تايبيه الصيفي',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'توقيت طاجكستان'),
+    ),
+    'Tokelau': MetaZone(
+      'Tokelau',
+      long: TimeZoneName(standard: 'توقيت توكيلاو'),
+    ),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'توقيت تونغا',
+        standard: 'توقيت تونغا الرسمي',
+        daylight: 'توقيت تونغا الصيفي',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'توقيت شوك')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'توقيت تركمانستان',
-            standard: 'توقيت تركمانستان الرسمي',
-            daylight: 'توقيت تركمانستان الصيفي')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'توقيت تركمانستان',
+        standard: 'توقيت تركمانستان الرسمي',
+        daylight: 'توقيت تركمانستان الصيفي',
+      ),
+    ),
     'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: 'توقيت توفالو')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'توقيت أوروغواي',
-            standard: 'توقيت أوروغواي الرسمي',
-            daylight: 'توقيت أوروغواي الصيفي')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'توقيت أوزبكستان',
-            standard: 'توقيت أوزبكستان الرسمي',
-            daylight: 'توقيت أوزبكستان الصيفي')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'توقيت فانواتو',
-            standard: 'توقيت فانواتو الرسمي',
-            daylight: 'توقيت فانواتو الصيفي')),
-    'Venezuela':
-        MetaZone('Venezuela', long: TimeZoneName(standard: 'توقيت فنزويلا')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'توقيت فلاديفوستوك',
-            standard: 'توقيت فلاديفوستوك الرسمي',
-            daylight: 'توقيت فلاديفوستوك الصيفي')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'توقيت فولغوغراد',
-            standard: 'توقيت فولغوغراد الرسمي',
-            daylight: 'توقيت فولغوغراد الصيفي')),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'توقيت أوروغواي',
+        standard: 'توقيت أوروغواي الرسمي',
+        daylight: 'توقيت أوروغواي الصيفي',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'توقيت أوزبكستان',
+        standard: 'توقيت أوزبكستان الرسمي',
+        daylight: 'توقيت أوزبكستان الصيفي',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'توقيت فانواتو',
+        standard: 'توقيت فانواتو الرسمي',
+        daylight: 'توقيت فانواتو الصيفي',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'توقيت فنزويلا'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'توقيت فلاديفوستوك',
+        standard: 'توقيت فلاديفوستوك الرسمي',
+        daylight: 'توقيت فلاديفوستوك الصيفي',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'توقيت فولغوغراد',
+        standard: 'توقيت فولغوغراد الرسمي',
+        daylight: 'توقيت فولغوغراد الصيفي',
+      ),
+    ),
     'Vostok': MetaZone('Vostok', long: TimeZoneName(standard: 'توقيت فوستوك')),
     'Wake': MetaZone('Wake', long: TimeZoneName(standard: 'توقيت جزيرة ويك')),
-    'Wallis': MetaZone('Wallis',
-        long: TimeZoneName(standard: 'توقيت واليس و فوتونا')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'توقيت ياكوتسك',
-            standard: 'توقيت ياكوتسك الرسمي',
-            daylight: 'توقيت ياكوتسك الصيفي')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'توقيت يكاترينبورغ',
-            standard: 'توقيت يكاترينبورغ الرسمي',
-            daylight: 'توقيت يكاترينبورغ الصيفي')),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'توقيت واليس و فوتونا'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'توقيت ياكوتسك',
+        standard: 'توقيت ياكوتسك الرسمي',
+        daylight: 'توقيت ياكوتسك الصيفي',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'توقيت يكاترينبورغ',
+        standard: 'توقيت يكاترينبورغ الرسمي',
+        daylight: 'توقيت يكاترينبورغ الصيفي',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'توقيت يوكون')),
   };
 }
@@ -19271,14 +19941,8 @@ class LocaleDisplayNameAr extends LocaleDisplayName {
       'account': 'تنسيق العملة للحسابات',
       'standard': 'تنسيق العملة القياسي',
     },
-    'ka': {
-      'noignore': 'تصنيف الرموز',
-      'shifted': 'تصنيف تجاهل الرموز',
-    },
-    'kb': {
-      'false': 'تصنيف اللكنات بشكل عادي',
-      'true': 'تصنيف اللكنات معكوسة',
-    },
+    'ka': {'noignore': 'تصنيف الرموز', 'shifted': 'تصنيف تجاهل الرموز'},
+    'kb': {'false': 'تصنيف اللكنات بشكل عادي', 'true': 'تصنيف اللكنات معكوسة'},
     'kf': {
       'lower': 'تصنيف الأحرف الصغيرة أولاً',
       'false': 'ترتيب تصنيف حالة الأحرف الطبيعية',
@@ -19305,14 +19969,8 @@ class LocaleDisplayNameAr extends LocaleDisplayName {
       'unihan': 'الترتيب حسب نظام الكتابة بالجذر والمجموع',
       'zhuyin': 'الترتيب حسب نظام بوبوموفو',
     },
-    'kk': {
-      'false': 'التصفية بدون تسوية',
-      'true': 'تصنيف Unicode طبيعي',
-    },
-    'kn': {
-      'false': 'تصنيف الأرقام على حدة',
-      'true': 'تصنيف الأرقام بالعدد',
-    },
+    'kk': {'false': 'التصفية بدون تسوية', 'true': 'تصنيف Unicode طبيعي'},
+    'kn': {'false': 'تصنيف الأرقام على حدة', 'true': 'تصنيف الأرقام بالعدد'},
     'ks': {
       'identic': 'تصنيف الكل',
       'level1': 'تصنيف الحروف الأساسية فقط',
@@ -19320,11 +19978,7 @@ class LocaleDisplayNameAr extends LocaleDisplayName {
       'level2': 'تصنيف اللكنات',
       'level3': 'تصنيف اللكنات/الحالة/العرض',
     },
-    'd0': {
-      'fwidth': 'عرض كامل',
-      'hwidth': 'نصف العرض',
-      'npinyin': 'رقمي',
-    },
+    'd0': {'fwidth': 'عرض كامل', 'hwidth': 'نصف العرض', 'npinyin': 'رقمي'},
     'hc': {
       'h11': 'نظام 12 ساعة (0–11)',
       'h12': 'نظام 12 ساعة (1–12)',
@@ -19336,10 +19990,7 @@ class LocaleDisplayNameAr extends LocaleDisplayName {
       'normal': 'نمط فصل السطور: عادي',
       'strict': 'نمط فصل السطور: متقارب',
     },
-    'm0': {
-      'bgn': 'بي جي إن',
-      'ungegn': 'يو إن جي إي جي إن',
-    },
+    'm0': {'bgn': 'بي جي إن', 'ungegn': 'يو إن جي إي جي إن'},
     'ms': {
       'metric': 'النظام المتري',
       'uksystem': 'نظام القياس البريطاني',

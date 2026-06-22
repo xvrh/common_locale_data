@@ -4,8 +4,9 @@ import 'split_words.dart';
 
 String lowerCamel(Iterable<String> input) {
   return _mapWithIndex<String, String>(
-          input, (s, index) => index != 0 ? capitalize(s) : s.toLowerCase())
-      .join('');
+    input,
+    (s, index) => index != 0 ? capitalize(s) : s.toLowerCase(),
+  ).join('');
 }
 
 String upperCamel(Iterable<String> input) {
@@ -28,7 +29,9 @@ String toKeyword(String str) {
 }
 
 Iterable<T> _mapWithIndex<E, T>(
-    Iterable<E> collection, T Function(E, int) f) sync* {
+  Iterable<E> collection,
+  T Function(E, int) f,
+) sync* {
   var index = 0;
   for (var element in collection) {
     yield f(element, index);

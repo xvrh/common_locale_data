@@ -28,20 +28,22 @@ class CommonLocaleDataEsPH extends CommonLocaleDataEs {
 class CurrenciesEsPH extends CurrenciesEs {
   const CurrenciesEsPH(super.cld);
 
-  static const _php = Currency(_cld, 'PHP', 'peso filipino',
-      one: 'peso filipino',
-      other: 'pesos filipinos',
-      symbol: '₱',
-      symbolNarrow: '₱');
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'peso filipino',
+    one: 'peso filipino',
+    other: 'pesos filipinos',
+    symbol: '₱',
+    symbolNarrow: '₱',
+  );
 
   @override
   Currency get php => _php;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesEs.staticCurrencies,
-        ...const {
-          'PHP': _php,
-        }
-      });
+    ...CurrenciesEs.staticCurrencies,
+    ...const {'PHP': _php},
+  });
 }

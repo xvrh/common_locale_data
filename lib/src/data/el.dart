@@ -65,5201 +65,4453 @@ class UnitsEl extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('δεκατο-{0}'),
-        short: UnitPrefixPattern('δκτ-{0}'),
-        narrow: UnitPrefixPattern('δεκατ-{0}'),
-      );
+    long: UnitPrefixPattern('δεκατο-{0}'),
+    short: UnitPrefixPattern('δκτ-{0}'),
+    narrow: UnitPrefixPattern('δεκατ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('εκατοστο-{0}'),
-        short: UnitPrefixPattern('εκστ-{0}'),
-        narrow: UnitPrefixPattern('εκατοστ-{0}'),
-      );
+    long: UnitPrefixPattern('εκατοστο-{0}'),
+    short: UnitPrefixPattern('εκστ-{0}'),
+    narrow: UnitPrefixPattern('εκατοστ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('χιλιοστο-{0}'),
-        short: UnitPrefixPattern('χλστ-{0}'),
-        narrow: UnitPrefixPattern('χιλιοστ-{0}'),
-      );
+    long: UnitPrefixPattern('χιλιοστο-{0}'),
+    short: UnitPrefixPattern('χλστ-{0}'),
+    narrow: UnitPrefixPattern('χιλιοστ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('μικρο-{0}'),
-        short: UnitPrefixPattern('μκρ-{0}'),
-        narrow: UnitPrefixPattern('μικρ-{0}'),
-      );
+    long: UnitPrefixPattern('μικρο-{0}'),
+    short: UnitPrefixPattern('μκρ-{0}'),
+    narrow: UnitPrefixPattern('μικρ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('νανο-{0}'),
-        short: UnitPrefixPattern('νν-{0}'),
-        narrow: UnitPrefixPattern('ναν-{0}'),
-      );
+    long: UnitPrefixPattern('νανο-{0}'),
+    short: UnitPrefixPattern('νν-{0}'),
+    narrow: UnitPrefixPattern('ναν-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('πικο-{0}'),
-        short: UnitPrefixPattern('πκ-{0}'),
-        narrow: UnitPrefixPattern('πικ-{0}'),
-      );
+    long: UnitPrefixPattern('πικο-{0}'),
+    short: UnitPrefixPattern('πκ-{0}'),
+    narrow: UnitPrefixPattern('πικ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('φεμτο-{0}'),
-        short: UnitPrefixPattern('φμτ-{0}'),
-        narrow: UnitPrefixPattern('φεμτ-{0}'),
-      );
+    long: UnitPrefixPattern('φεμτο-{0}'),
+    short: UnitPrefixPattern('φμτ-{0}'),
+    narrow: UnitPrefixPattern('φεμτ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('αττο-{0}'),
-        short: UnitPrefixPattern('ατ-{0}'),
-        narrow: UnitPrefixPattern('αττ-{0}'),
-      );
+    long: UnitPrefixPattern('αττο-{0}'),
+    short: UnitPrefixPattern('ατ-{0}'),
+    narrow: UnitPrefixPattern('αττ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('ζεπτο-{0}'),
-        short: UnitPrefixPattern('ζπτ-{0}'),
-        narrow: UnitPrefixPattern('ζεπ-{0}'),
-      );
+    long: UnitPrefixPattern('ζεπτο-{0}'),
+    short: UnitPrefixPattern('ζπτ-{0}'),
+    narrow: UnitPrefixPattern('ζεπ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('γιοκτο-{0}'),
-        short: UnitPrefixPattern('γκτ-{0}'),
-        narrow: UnitPrefixPattern('γιοκ-{0}'),
-      );
+    long: UnitPrefixPattern('γιοκτο-{0}'),
+    short: UnitPrefixPattern('γκτ-{0}'),
+    narrow: UnitPrefixPattern('γιοκ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('ροντο-{0}'),
-        short: UnitPrefixPattern('ροντ-{0}'),
-        narrow: UnitPrefixPattern('ρντ-{0}'),
-      );
+    long: UnitPrefixPattern('ροντο-{0}'),
+    short: UnitPrefixPattern('ροντ-{0}'),
+    narrow: UnitPrefixPattern('ρντ-{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('κουεκτο-{0}'),
-        short: UnitPrefixPattern('κουεκ-{0}'),
-        narrow: UnitPrefixPattern('κκτ-{0}'),
-      );
+    long: UnitPrefixPattern('κουεκτο-{0}'),
+    short: UnitPrefixPattern('κουεκ-{0}'),
+    narrow: UnitPrefixPattern('κκτ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('δεκα-{0}'),
-        short: UnitPrefixPattern('δκ-{0}'),
-        narrow: UnitPrefixPattern('δεκ-{0}'),
-      );
+    long: UnitPrefixPattern('δεκα-{0}'),
+    short: UnitPrefixPattern('δκ-{0}'),
+    narrow: UnitPrefixPattern('δεκ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('εκατο-{0}'),
-        short: UnitPrefixPattern('εκτ-{0}'),
-        narrow: UnitPrefixPattern('εκατ-{0}'),
-      );
+    long: UnitPrefixPattern('εκατο-{0}'),
+    short: UnitPrefixPattern('εκτ-{0}'),
+    narrow: UnitPrefixPattern('εκατ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('χιλιο-{0}'),
-        short: UnitPrefixPattern('χλ-{0}'),
-        narrow: UnitPrefixPattern('χιλ-{0}'),
-      );
+    long: UnitPrefixPattern('χιλιο-{0}'),
+    short: UnitPrefixPattern('χλ-{0}'),
+    narrow: UnitPrefixPattern('χιλ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('μεγα-{0}'),
-        short: UnitPrefixPattern('μγ-{0}'),
-        narrow: UnitPrefixPattern('μεγ-{0}'),
-      );
+    long: UnitPrefixPattern('μεγα-{0}'),
+    short: UnitPrefixPattern('μγ-{0}'),
+    narrow: UnitPrefixPattern('μεγ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('γιγα-{0}'),
-        short: UnitPrefixPattern('γγ-{0}'),
-        narrow: UnitPrefixPattern('γιγ-{0}'),
-      );
+    long: UnitPrefixPattern('γιγα-{0}'),
+    short: UnitPrefixPattern('γγ-{0}'),
+    narrow: UnitPrefixPattern('γιγ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('τερα-{0}'),
-        short: UnitPrefixPattern('τρ-{0}'),
-        narrow: UnitPrefixPattern('τερ-{0}'),
-      );
+    long: UnitPrefixPattern('τερα-{0}'),
+    short: UnitPrefixPattern('τρ-{0}'),
+    narrow: UnitPrefixPattern('τερ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('πετα-{0}'),
-        short: UnitPrefixPattern('πτ-{0}'),
-        narrow: UnitPrefixPattern('πετ-{0}'),
-      );
+    long: UnitPrefixPattern('πετα-{0}'),
+    short: UnitPrefixPattern('πτ-{0}'),
+    narrow: UnitPrefixPattern('πετ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('εξα-{0}'),
-        short: UnitPrefixPattern('εξ-{0}'),
-        narrow: UnitPrefixPattern('εξ-{0}'),
-      );
+    long: UnitPrefixPattern('εξα-{0}'),
+    short: UnitPrefixPattern('εξ-{0}'),
+    narrow: UnitPrefixPattern('εξ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('ζεττα-{0}'),
-        short: UnitPrefixPattern('ζτ-{0}'),
-        narrow: UnitPrefixPattern('ζετ-{0}'),
-      );
+    long: UnitPrefixPattern('ζεττα-{0}'),
+    short: UnitPrefixPattern('ζτ-{0}'),
+    narrow: UnitPrefixPattern('ζετ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('γιοττα-{0}'),
-        short: UnitPrefixPattern('γττ-{0}'),
-        narrow: UnitPrefixPattern('γιοτ-{0}'),
-      );
+    long: UnitPrefixPattern('γιοττα-{0}'),
+    short: UnitPrefixPattern('γττ-{0}'),
+    narrow: UnitPrefixPattern('γιοτ-{0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('ροννα-{0}'),
-        short: UnitPrefixPattern('ρον-{0}'),
-        narrow: UnitPrefixPattern('ρνν-{0}'),
-      );
+    long: UnitPrefixPattern('ροννα-{0}'),
+    short: UnitPrefixPattern('ρον-{0}'),
+    narrow: UnitPrefixPattern('ρνν-{0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('κεττα-{0}'),
-        short: UnitPrefixPattern('κττ-{0}'),
-        narrow: UnitPrefixPattern('κετ-{0}'),
-      );
+    long: UnitPrefixPattern('κεττα-{0}'),
+    short: UnitPrefixPattern('κττ-{0}'),
+    narrow: UnitPrefixPattern('κετ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('κιμπι-{0}'),
-        short: UnitPrefixPattern('κμπ-{0}'),
-        narrow: UnitPrefixPattern('κμπ-{0}'),
-      );
+    long: UnitPrefixPattern('κιμπι-{0}'),
+    short: UnitPrefixPattern('κμπ-{0}'),
+    narrow: UnitPrefixPattern('κμπ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('μεμπι-{0}'),
-        short: UnitPrefixPattern('μμπ-{0}'),
-        narrow: UnitPrefixPattern('μμπ-{0}'),
-      );
+    long: UnitPrefixPattern('μεμπι-{0}'),
+    short: UnitPrefixPattern('μμπ-{0}'),
+    narrow: UnitPrefixPattern('μμπ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('γκιμπι-{0}'),
-        short: UnitPrefixPattern('γκμ-{0}'),
-        narrow: UnitPrefixPattern('γκμ-{0}'),
-      );
+    long: UnitPrefixPattern('γκιμπι-{0}'),
+    short: UnitPrefixPattern('γκμ-{0}'),
+    narrow: UnitPrefixPattern('γκμ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('τεμπι-{0}'),
-        short: UnitPrefixPattern('τμπ-{0}'),
-        narrow: UnitPrefixPattern('τμπ-{0}'),
-      );
+    long: UnitPrefixPattern('τεμπι-{0}'),
+    short: UnitPrefixPattern('τμπ-{0}'),
+    narrow: UnitPrefixPattern('τμπ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('πεμπι-{0}'),
-        short: UnitPrefixPattern('πμπ-{0}'),
-        narrow: UnitPrefixPattern('πμπ-{0}'),
-      );
+    long: UnitPrefixPattern('πεμπι-{0}'),
+    short: UnitPrefixPattern('πμπ-{0}'),
+    narrow: UnitPrefixPattern('πμπ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('εξμπι-{0}'),
-        short: UnitPrefixPattern('εξμ-{0}'),
-        narrow: UnitPrefixPattern('εξμ-{0}'),
-      );
+    long: UnitPrefixPattern('εξμπι-{0}'),
+    short: UnitPrefixPattern('εξμ-{0}'),
+    narrow: UnitPrefixPattern('εξμ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('ζεμπι-{0}'),
-        short: UnitPrefixPattern('ζμπ-{0}'),
-        narrow: UnitPrefixPattern('ζμπ-{0}'),
-      );
+    long: UnitPrefixPattern('ζεμπι-{0}'),
+    short: UnitPrefixPattern('ζμπ-{0}'),
+    narrow: UnitPrefixPattern('ζμπ-{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('γιομπι-{0}'),
-        short: UnitPrefixPattern('γμπ-{0}'),
-        narrow: UnitPrefixPattern('γμπ-{0}'),
-      );
+    long: UnitPrefixPattern('γιομπι-{0}'),
+    short: UnitPrefixPattern('γμπ-{0}'),
+    narrow: UnitPrefixPattern('γμπ-{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('{0} ανά {1}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('{0} ανά {1}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'δύναμη επιτάχυνσης',
-          one: '{0} δύναμη επιτάχυνσης',
-          other: '{0} δυνάμεις επιτάχυνσης',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'δύν. επιτάχ.',
-          one: '{0} δύν. επιτάχ.',
-          other: '{0} δυν. επιτάχ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'G',
-          one: '{0} G',
-          other: '{0} G',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'δύναμη επιτάχυνσης',
+      one: '{0} δύναμη επιτάχυνσης',
+      other: '{0} δυνάμεις επιτάχυνσης',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'δύν. επιτάχ.',
+      one: '{0} δύν. επιτάχ.',
+      other: '{0} δυν. επιτάχ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'G', one: '{0} G', other: '{0} G'),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μέτρα ανά τετραγωνικό δευτερόλεπτο',
-          one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
-          other: '{0} μέτρα ανά τετραγωνικό δευτερόλεπτο',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μέτρα/τετρ. δευτ.',
-          one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
-          other: '{0} m/s²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s²',
-          one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
-          other: '{0} m/s²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μέτρα ανά τετραγωνικό δευτερόλεπτο',
+      one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
+      other: '{0} μέτρα ανά τετραγωνικό δευτερόλεπτο',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μέτρα/τετρ. δευτ.',
+      one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
+      other: '{0} m/s²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s²',
+      one: '{0} μέτρο ανά τετραγωνικό δευτερόλεπτο',
+      other: '{0} m/s²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'στροφή',
-          one: '{0} στροφή',
-          other: '{0} στροφές',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'στρφ',
-          one: '{0} στρφ',
-          other: '{0} στρφ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'στρφ',
-          one: '{0} στρφ',
-          other: '{0} στρφ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'στροφή',
+      one: '{0} στροφή',
+      other: '{0} στροφές',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'στρφ',
+      one: '{0} στρφ',
+      other: '{0} στρφ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'στρφ',
+      one: '{0} στρφ',
+      other: '{0} στρφ',
+    ),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ακτίνια',
-          one: '{0} ακτίνιο',
-          other: '{0} ακτίνια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ακτν',
-          one: '{0} ακτν',
-          other: '{0} ακτν',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ακτν',
-          one: '{0} ακτν',
-          other: '{0} ακτν',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ακτίνια',
+      one: '{0} ακτίνιο',
+      other: '{0} ακτίνια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ακτν',
+      one: '{0} ακτν',
+      other: '{0} ακτν',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ακτν',
+      one: '{0} ακτν',
+      other: '{0} ακτν',
+    ),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μοίρες',
-          one: '{0} μοίρα',
-          other: '{0} μοίρες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μοίρες',
-          one: '{0} μοίρα',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} μοίρα',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μοίρες',
+      one: '{0} μοίρα',
+      other: '{0} μοίρες',
+    ),
+    short: UnitCountPattern(_locale, 'μοίρες', one: '{0} μοίρα', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0} μοίρα', other: '{0}°'),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λεπτά του τόξου',
-          one: '{0} λεπτό του τόξου',
-          other: '{0} λεπτά του τόξου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λεπτά του τόξου',
-          one: '{0} λεπ. τόξου',
-          other: '{0} λεπ. τόξου',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '′',
-          one: '{0}′',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λεπτά του τόξου',
+      one: '{0} λεπτό του τόξου',
+      other: '{0} λεπτά του τόξου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'λεπτά του τόξου',
+      one: '{0} λεπ. τόξου',
+      other: '{0} λεπ. τόξου',
+    ),
+    narrow: UnitCountPattern(_locale, '′', one: '{0}′', other: '{0}′'),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'δευτερόλεπτα του τόξου',
-          one: '{0} δευτερόλεπτο του τόξου',
-          other: '{0} δευτερόλεπτα του τόξου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'arcsec',
-          one: '{0} arcsec',
-          other: '{0} arcsec',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '″',
-          one: '{0}″',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'δευτερόλεπτα του τόξου',
+      one: '{0} δευτερόλεπτο του τόξου',
+      other: '{0} δευτερόλεπτα του τόξου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'arcsec',
+      one: '{0} arcsec',
+      other: '{0} arcsec',
+    ),
+    narrow: UnitCountPattern(_locale, '″', one: '{0}″', other: '{0}″'),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τετραγωνικά χιλιόμετρα',
-          one: '{0} τετραγωνικό χιλιόμετρο',
-          other: '{0} τετραγωνικά χιλιόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τ.χλμ.',
-          one: '{0} τ.χλμ.',
-          other: '{0} τ.χλμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ.χλμ.',
-          one: '{0} km²',
-          other: '{0} km²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τετραγωνικά χιλιόμετρα',
+      one: '{0} τετραγωνικό χιλιόμετρο',
+      other: '{0} τετραγωνικά χιλιόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τ.χλμ.',
+      one: '{0} τ.χλμ.',
+      other: '{0} τ.χλμ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ.χλμ.',
+      one: '{0} km²',
+      other: '{0} km²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'εκτάρια',
-          one: '{0} εκτάριο',
-          other: '{0} εκτάρια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'εκτ.',
-          one: '{0} εκτ.',
-          other: '{0} εκτ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ha',
-          one: '{0} ha',
-          other: '{0} ha',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'εκτάρια',
+      one: '{0} εκτάριο',
+      other: '{0} εκτάρια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'εκτ.',
+      one: '{0} εκτ.',
+      other: '{0} εκτ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'ha', one: '{0} ha', other: '{0} ha'),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τετραγωνικά μέτρα',
-          one: '{0} τετραγωνικό μέτρο',
-          other: '{0} τετραγωνικά μέτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τ. μέτρα',
-          one: '{0} τ.μ.',
-          other: '{0} τ.μ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ.μ.',
-          one: '{0} τ.μ.',
-          other: '{0} τ.μ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τετραγωνικά μέτρα',
+      one: '{0} τετραγωνικό μέτρο',
+      other: '{0} τετραγωνικά μέτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τ. μέτρα',
+      one: '{0} τ.μ.',
+      other: '{0} τ.μ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ.μ.',
+      one: '{0} τ.μ.',
+      other: '{0} τ.μ.',
+    ),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τετραγωνικά εκατοστά',
-          one: '{0} τετραγωνικό εκατοστό',
-          other: '{0} τετραγωνικά εκατοστά',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τ.εκ.',
-          one: '{0} τ.εκ.',
-          other: '{0} τ.εκ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ.εκ.',
-          one: '{0} τ.εκ.',
-          other: '{0} τ.εκ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τετραγωνικά εκατοστά',
+      one: '{0} τετραγωνικό εκατοστό',
+      other: '{0} τετραγωνικά εκατοστά',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τ.εκ.',
+      one: '{0} τ.εκ.',
+      other: '{0} τ.εκ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ.εκ.',
+      one: '{0} τ.εκ.',
+      other: '{0} τ.εκ.',
+    ),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τετραγωνικά μίλια',
-          one: '{0} τετραγωνικό μίλι',
-          other: '{0} τετραγωνικά μίλια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τετρ. μίλια',
-          one: '{0} τ.μίλι',
-          other: '{0} τ.μίλια',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ.μίλι',
-          one: '{0} τ.μίλι',
-          other: '{0} τ.μίλια',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τετραγωνικά μίλια',
+      one: '{0} τετραγωνικό μίλι',
+      other: '{0} τετραγωνικά μίλια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τετρ. μίλια',
+      one: '{0} τ.μίλι',
+      other: '{0} τ.μίλια',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ.μίλι',
+      one: '{0} τ.μίλι',
+      other: '{0} τ.μίλια',
+    ),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ακρ',
-          one: '{0} ακρ',
-          other: '{0} ακρ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ακρ',
-          one: '{0} ακρ',
-          other: '{0} ακρ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ακρ',
-          one: '{0} ακρ',
-          other: '{0} ακρ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ακρ', one: '{0} ακρ', other: '{0} ακρ'),
+    short: UnitCountPattern(_locale, 'ακρ', one: '{0} ακρ', other: '{0} ακρ'),
+    narrow: UnitCountPattern(_locale, 'ακρ', one: '{0} ακρ', other: '{0} ακρ'),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τετραγωνικές γιάρδες',
-          one: '{0} τετραγωνική γιάρδα',
-          other: '{0} τετραγωνικές γιάρδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τετρ. γιάρδες',
-          one: '{0} τ.γρδ',
-          other: '{0} τ.γρδ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ.γρδ',
-          one: '{0} τ.γρδ',
-          other: '{0} τ.γρδ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τετραγωνικές γιάρδες',
+      one: '{0} τετραγωνική γιάρδα',
+      other: '{0} τετραγωνικές γιάρδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τετρ. γιάρδες',
+      one: '{0} τ.γρδ',
+      other: '{0} τ.γρδ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ.γρδ',
+      one: '{0} τ.γρδ',
+      other: '{0} τ.γρδ',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τετραγωνικά πόδια',
-          one: '{0} τετραγωνικό πόδι',
-          other: '{0} τετραγωνικά πόδια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τετρ. πόδια',
-          one: '{0} τ.πδ',
-          other: '{0} τ.πδ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ.πδ',
-          one: '{0} τ.πδ',
-          other: '{0} τ.πδ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τετραγωνικά πόδια',
+      one: '{0} τετραγωνικό πόδι',
+      other: '{0} τετραγωνικά πόδια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τετρ. πόδια',
+      one: '{0} τ.πδ',
+      other: '{0} τ.πδ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ.πδ',
+      one: '{0} τ.πδ',
+      other: '{0} τ.πδ',
+    ),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τετραγωνικές ίντσες',
-          one: '{0} τετραγωνική ίντσα',
-          other: '{0} τετραγωνικές ίντσες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τετρ. ίντσες',
-          one: '{0} τ. ίντσα',
-          other: '{0} τ. ίντσες',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ. ίντσες',
-          one: '{0} τ. ίντσα',
-          other: '{0} τ. ίντσες',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τετραγωνικές ίντσες',
+      one: '{0} τετραγωνική ίντσα',
+      other: '{0} τετραγωνικές ίντσες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τετρ. ίντσες',
+      one: '{0} τ. ίντσα',
+      other: '{0} τ. ίντσες',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ. ίντσες',
+      one: '{0} τ. ίντσα',
+      other: '{0} τ. ίντσες',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ντούναμ',
-          one: '{0} ντούναμ',
-          other: '{0} ντούναμ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ντούναμ',
-          one: '{0} ντούναμ',
-          other: '{0} ντούναμ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ντούναμ',
-          one: '{0} ντούναμ',
-          other: '{0} ντούναμ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ντούναμ',
+      one: '{0} ντούναμ',
+      other: '{0} ντούναμ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ντούναμ',
+      one: '{0} ντούναμ',
+      other: '{0} ντούναμ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ντούναμ',
+      one: '{0} ντούναμ',
+      other: '{0} ντούναμ',
+    ),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'καράτια',
-          one: '{0} καράτι',
-          other: '{0} καράτια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κρτ',
-          one: '{0} κρτ',
-          other: '{0} κρτ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κρτ',
-          one: '{0} κρτ',
-          other: '{0} κρτ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'καράτια',
+      one: '{0} καράτι',
+      other: '{0} καράτια',
+    ),
+    short: UnitCountPattern(_locale, 'κρτ', one: '{0} κρτ', other: '{0} κρτ'),
+    narrow: UnitCountPattern(_locale, 'κρτ', one: '{0} κρτ', other: '{0} κρτ'),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοστόγραμμα ανά δεκατόλιτρο',
-          one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
-          other: '{0} χιλιοστόγραμμα ανά δεκατόλιτρο',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
-          other: '{0} mg/dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
-          other: '{0} mg/dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοστόγραμμα ανά δεκατόλιτρο',
+      one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
+      other: '{0} χιλιοστόγραμμα ανά δεκατόλιτρο',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
+      other: '{0} mg/dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} χιλιοστόγραμμο ανά δεκατόλιτρο',
+      other: '{0} mg/dL',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοστογραμμομόρια ανά λίτρο',
-          one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
-          other: '{0} χιλιοστογραμμομόρια ανά λίτρο',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmol/L',
-          one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
-          other: '{0} mmol/L',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmol/L',
-          one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
-          other: '{0} mmol/L',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοστογραμμομόρια ανά λίτρο',
+      one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
+      other: '{0} χιλιοστογραμμομόρια ανά λίτρο',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmol/L',
+      one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
+      other: '{0} mmol/L',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmol/L',
+      one: '{0} χιλιοστογραμμομόριο ανά λίτρο',
+      other: '{0} mmol/L',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'στοιχείο',
-          one: '{0} στοιχείο',
-          other: '{0} στοιχεία',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'στοιχείο',
-          one: '{0} στοιχείο',
-          other: '{0} στοιχεία',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'στοιχείο',
-          one: '{0} στοιχείο',
-          other: '{0} στοιχεία',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'στοιχείο',
+      one: '{0} στοιχείο',
+      other: '{0} στοιχεία',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'στοιχείο',
+      one: '{0} στοιχείο',
+      other: '{0} στοιχεία',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'στοιχείο',
+      one: '{0} στοιχείο',
+      other: '{0} στοιχεία',
+    ),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μέρη ανά εκατομμύριο',
-          one: '{0} μέρος ανά εκατομμύριο',
-          other: '{0} μέρη ανά εκατομμύριο',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μέρη/εκατ.',
-          one: '{0} μέρος ανά εκατομμύριο',
-          other: '{0} ppm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} μέρος ανά εκατομμύριο',
-          other: '{0} ppm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μέρη ανά εκατομμύριο',
+      one: '{0} μέρος ανά εκατομμύριο',
+      other: '{0} μέρη ανά εκατομμύριο',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μέρη/εκατ.',
+      one: '{0} μέρος ανά εκατομμύριο',
+      other: '{0} ppm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0} μέρος ανά εκατομμύριο',
+      other: '{0} ppm',
+    ),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τοις εκατό',
-          one: '{0} τοις εκατό',
-          other: '{0} τοις εκατό',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τοις εκατό',
-          one: '{0} τοις εκατό',
-          other: '{0}%',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} τοις εκατό',
-          other: '{0}%',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τοις εκατό',
+      one: '{0} τοις εκατό',
+      other: '{0} τοις εκατό',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τοις εκατό',
+      one: '{0} τοις εκατό',
+      other: '{0}%',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '%',
+      one: '{0} τοις εκατό',
+      other: '{0}%',
+    ),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τοις χιλίοις',
-          one: '{0} τοις χιλίοις',
-          other: '{0} τοις χιλίοις',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τοις χιλίοις',
-          one: '{0} τοις χιλίοις',
-          other: '{0}‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‰',
-          one: '{0} τοις χιλίοις',
-          other: '{0}‰',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τοις χιλίοις',
+      one: '{0} τοις χιλίοις',
+      other: '{0} τοις χιλίοις',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τοις χιλίοις',
+      one: '{0} τοις χιλίοις',
+      other: '{0}‰',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '‰',
+      one: '{0} τοις χιλίοις',
+      other: '{0}‰',
+    ),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τοις δεκάκις χιλίοις',
-          one: '{0} τοις δεκάκις χιλίοις',
-          other: '{0} τοις δεκάκις χιλίοις',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τοις δεκάκις χιλίοις',
-          one: '{0} τοις δεκάκις χιλίοις',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} τοις δεκάκις χιλίοις',
-          other: '{0}‱',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τοις δεκάκις χιλίοις',
+      one: '{0} τοις δεκάκις χιλίοις',
+      other: '{0} τοις δεκάκις χιλίοις',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τοις δεκάκις χιλίοις',
+      one: '{0} τοις δεκάκις χιλίοις',
+      other: '{0}‱',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '‱',
+      one: '{0} τοις δεκάκις χιλίοις',
+      other: '{0}‱',
+    ),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μολ',
-          one: '{0} μολ',
-          other: '{0} μολ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μολ',
-          one: '{0} μολ',
-          other: '{0} μολ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μολ',
-          one: '{0} μολ',
-          other: '{0} μολ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'μολ', one: '{0} μολ', other: '{0} μολ'),
+    short: UnitCountPattern(_locale, 'μολ', one: '{0} μολ', other: '{0} μολ'),
+    narrow: UnitCountPattern(_locale, 'μολ', one: '{0} μολ', other: '{0} μολ'),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λίτρα ανά χιλιόμετρο',
-          one: '{0} λίτρο ανά χιλιόμετρο',
-          other: '{0} λίτρα ανά χιλιόμετρο',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λίτρα/χλμ.',
-          one: '{0} λίτρο/χλμ.',
-          other: '{0} λίτρα/χλμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λ/χλμ',
-          one: '{0} λ/χλμ',
-          other: '{0} λ/χλμ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λίτρα ανά χιλιόμετρο',
+      one: '{0} λίτρο ανά χιλιόμετρο',
+      other: '{0} λίτρα ανά χιλιόμετρο',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'λίτρα/χλμ.',
+      one: '{0} λίτρο/χλμ.',
+      other: '{0} λίτρα/χλμ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'λ/χλμ',
+      one: '{0} λ/χλμ',
+      other: '{0} λ/χλμ',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λίτρα ανά 100 χιλιόμετρα',
-          one: '{0} λίτρο ανά 100 χιλιόμετρα',
-          other: '{0} λίτρα ανά 100 χιλιόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λ./100 χλμ.',
-          one: '{0} λ./100 χλμ.',
-          other: '{0} λ./100 χλμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λ/100 χλμ',
-          one: '{0} λ/100 χλμ',
-          other: '{0} λ/100 χλμ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λίτρα ανά 100 χιλιόμετρα',
+      one: '{0} λίτρο ανά 100 χιλιόμετρα',
+      other: '{0} λίτρα ανά 100 χιλιόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'λ./100 χλμ.',
+      one: '{0} λ./100 χλμ.',
+      other: '{0} λ./100 χλμ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'λ/100 χλμ',
+      one: '{0} λ/100 χλμ',
+      other: '{0} λ/100 χλμ',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μίλια ανά γαλόνι',
-          one: '{0} μίλι ανά γαλόνι',
-          other: '{0} μίλια ανά γαλόνι',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μίλια/γαλόνι',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpg',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μίλια ανά γαλόνι',
+      one: '{0} μίλι ανά γαλόνι',
+      other: '{0} μίλια ανά γαλόνι',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μίλια/γαλόνι',
+      one: '{0} mpg',
+      other: '{0} mpg',
+    ),
+    narrow: UnitCountPattern(_locale, 'mpg', one: '{0} mpg', other: '{0} mpg'),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μίλια ανά αγγλοσαξονικό γαλόνι',
-          one: '{0} μίλι ανά αγγλοσαξονικό γαλόνι',
-          other: '{0} μίλια ανά αγγλοσαξονικό γαλόνι',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μίλια/αγγλ. γαλόνι',
-          one: '{0} μίλι/αγγλ. γαλόνι',
-          other: '{0} μίλια/αγγλ. γαλόνι',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μίλια/αγγλ. γαλόνι',
-          one: '{0} μίλι/αγγλ. γαλόνι',
-          other: '{0} μίλια/αγγλ. γαλόνι',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μίλια ανά αγγλοσαξονικό γαλόνι',
+      one: '{0} μίλι ανά αγγλοσαξονικό γαλόνι',
+      other: '{0} μίλια ανά αγγλοσαξονικό γαλόνι',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μίλια/αγγλ. γαλόνι',
+      one: '{0} μίλι/αγγλ. γαλόνι',
+      other: '{0} μίλια/αγγλ. γαλόνι',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μίλια/αγγλ. γαλόνι',
+      one: '{0} μίλι/αγγλ. γαλόνι',
+      other: '{0} μίλια/αγγλ. γαλόνι',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'petabyte',
-          one: '{0} petabyte',
-          other: '{0} petabyte',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'PByte',
-          one: '{0} petabyte',
-          other: '{0} PB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} petabyte',
-          other: '{0} PB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'petabyte',
+      one: '{0} petabyte',
+      other: '{0} petabyte',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'PByte',
+      one: '{0} petabyte',
+      other: '{0} PB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'PB',
+      one: '{0} petabyte',
+      other: '{0} PB',
+    ),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'terabyte',
-          one: '{0} terabyte',
-          other: '{0} terabyte',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} terabyte',
-          other: '{0} TB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} terabyte',
-          other: '{0} TB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'terabyte',
+      one: '{0} terabyte',
+      other: '{0} terabyte',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} terabyte',
+      other: '{0} TB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} terabyte',
+      other: '{0} TB',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'terabit',
-          one: '{0} terabit',
-          other: '{0} terabit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} terabit',
-          other: '{0} Tb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} terabit',
-          other: '{0} Tb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'terabit',
+      one: '{0} terabit',
+      other: '{0} terabit',
+    ),
+    short: UnitCountPattern(_locale, 'Tb', one: '{0} terabit', other: '{0} Tb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'Tb',
+      one: '{0} terabit',
+      other: '{0} Tb',
+    ),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigabyte',
-          one: '{0} gigabyte',
-          other: '{0} gigabyte',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} gigabyte',
-          other: '{0} GB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} gigabyte',
-          other: '{0} GB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigabyte',
+      one: '{0} gigabyte',
+      other: '{0} gigabyte',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} gigabyte',
+      other: '{0} GB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} gigabyte',
+      other: '{0} GB',
+    ),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigabit',
-          one: '{0} gigabit',
-          other: '{0} gigabit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} gigabit',
-          other: '{0} Gb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} gigabit',
-          other: '{0} Gb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigabit',
+      one: '{0} gigabit',
+      other: '{0} gigabit',
+    ),
+    short: UnitCountPattern(_locale, 'Gb', one: '{0} gigabit', other: '{0} Gb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'Gb',
+      one: '{0} gigabit',
+      other: '{0} Gb',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megabyte',
-          one: '{0} megabyte',
-          other: '{0} megabyte',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} megabyte',
-          other: '{0} MB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} megabyte',
-          other: '{0} MB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megabyte',
+      one: '{0} megabyte',
+      other: '{0} megabyte',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} megabyte',
+      other: '{0} MB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} megabyte',
+      other: '{0} MB',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megabit',
-          one: '{0} megabit',
-          other: '{0} megabit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} megabit',
-          other: '{0} Mb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} megabit',
-          other: '{0} Mb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megabit',
+      one: '{0} megabit',
+      other: '{0} megabit',
+    ),
+    short: UnitCountPattern(_locale, 'Mb', one: '{0} megabit', other: '{0} Mb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'Mb',
+      one: '{0} megabit',
+      other: '{0} Mb',
+    ),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilobyte',
-          one: '{0} kilobyte',
-          other: '{0} kilobyte',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kilobyte',
-          other: '{0} kB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kilobyte',
-          other: '{0} kB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilobyte',
+      one: '{0} kilobyte',
+      other: '{0} kilobyte',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} kilobyte',
+      other: '{0} kB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} kilobyte',
+      other: '{0} kB',
+    ),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilobit',
-          one: '{0} kilobit',
-          other: '{0} kilobit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kilobit',
-          other: '{0} kb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kilobit',
-          other: '{0} kb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilobit',
+      one: '{0} kilobit',
+      other: '{0} kilobit',
+    ),
+    short: UnitCountPattern(_locale, 'kb', one: '{0} kilobit', other: '{0} kb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'kb',
+      one: '{0} kilobit',
+      other: '{0} kb',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'byte',
-          one: '{0} byte',
-          other: '{0} byte',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'byte',
-          one: '{0} byte',
-          other: '{0} byte',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'byte',
-          one: '{0}B',
-          other: '{0} byte',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'byte', one: '{0} byte', other: '{0} byte'),
+    short: UnitCountPattern(
+      _locale,
+      'byte',
+      one: '{0} byte',
+      other: '{0} byte',
+    ),
+    narrow: UnitCountPattern(_locale, 'byte', one: '{0}B', other: '{0} byte'),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} bit',
-          other: '{0} bit',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} bit',
-          other: '{0} bit',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0}bit',
-          other: '{0} bit',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'bit', one: '{0} bit', other: '{0} bit'),
+    short: UnitCountPattern(_locale, 'bit', one: '{0} bit', other: '{0} bit'),
+    narrow: UnitCountPattern(_locale, 'bit', one: '{0}bit', other: '{0} bit'),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'αιώνες',
-          one: '{0} αιώνας',
-          other: '{0} αιώνες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'αιών.',
-          one: '{0} αιών.',
-          other: '{0} αιών.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'αιών.',
-          one: '{0} αιών.',
-          other: '{0} αιών.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'αιώνες',
+      one: '{0} αιώνας',
+      other: '{0} αιώνες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'αιών.',
+      one: '{0} αιών.',
+      other: '{0} αιών.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'αιών.',
+      one: '{0} αιών.',
+      other: '{0} αιών.',
+    ),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'δεκαετίες',
-          one: '{0} δεκαετία',
-          other: '{0} δεκαετίες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'δεκ.',
-          one: '{0} δεκ.',
-          other: '{0} δεκ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'δεκ.',
-          one: '{0} δεκ.',
-          other: '{0} δεκ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'δεκαετίες',
+      one: '{0} δεκαετία',
+      other: '{0} δεκαετίες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'δεκ.',
+      one: '{0} δεκ.',
+      other: '{0} δεκ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'δεκ.',
+      one: '{0} δεκ.',
+      other: '{0} δεκ.',
+    ),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'έτη',
-          one: '{0} έτος',
-          other: '{0} έτη',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'έτη',
-          one: '{0} έτ.',
-          other: '{0} έτ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'έτ.',
-          one: '{0} έ',
-          other: '{0} έ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'έτη', one: '{0} έτος', other: '{0} έτη'),
+    short: UnitCountPattern(_locale, 'έτη', one: '{0} έτ.', other: '{0} έτ.'),
+    narrow: UnitCountPattern(_locale, 'έτ.', one: '{0} έ', other: '{0} έ'),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τέταρτα',
-          one: '{0} τέταρτο',
-          other: '{0} τέταρτα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τετ.',
-          one: '{0} τέτ.',
-          other: '{0} τέτ/α',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τετ.',
-          one: '{0} τέτ.',
-          other: '{0} τέτ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τέταρτα',
+      one: '{0} τέταρτο',
+      other: '{0} τέταρτα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τετ.',
+      one: '{0} τέτ.',
+      other: '{0} τέτ/α',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τετ.',
+      one: '{0} τέτ.',
+      other: '{0} τέτ.',
+    ),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μήνες',
-          one: '{0} μήνας',
-          other: '{0} μήνες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μήνες',
-          one: '{0} μήν.',
-          other: '{0} μήν.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μήνας',
-          one: '{0} μ',
-          other: '{0} μ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μήνες',
+      one: '{0} μήνας',
+      other: '{0} μήνες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μήνες',
+      one: '{0} μήν.',
+      other: '{0} μήν.',
+    ),
+    narrow: UnitCountPattern(_locale, 'μήνας', one: '{0} μ', other: '{0} μ'),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'εβδομάδες',
-          one: '{0} εβδομάδα',
-          other: '{0} εβδομάδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'εβδομάδες',
-          one: '{0} εβδ.',
-          other: '{0} εβδ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'εβδ.',
-          one: '{0} ε',
-          other: '{0} ε',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'εβδομάδες',
+      one: '{0} εβδομάδα',
+      other: '{0} εβδομάδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'εβδομάδες',
+      one: '{0} εβδ.',
+      other: '{0} εβδ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'εβδ.', one: '{0} ε', other: '{0} ε'),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ημέρες',
-          one: '{0} ημέρα',
-          other: '{0} ημέρες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ημέρες',
-          one: '{0} ημέρα',
-          other: '{0} ημέρες',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ημέρα',
-          one: '{0} η',
-          other: '{0} η',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ημέρες',
+      one: '{0} ημέρα',
+      other: '{0} ημέρες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ημέρες',
+      one: '{0} ημέρα',
+      other: '{0} ημέρες',
+    ),
+    narrow: UnitCountPattern(_locale, 'ημέρα', one: '{0} η', other: '{0} η'),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ώρες',
-          one: '{0} ώρα',
-          other: '{0} ώρες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ώρες',
-          one: '{0} ώ.',
-          other: '{0} ώ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ώρα',
-          one: '{0} ώ',
-          other: '{0} ώ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ώρες', one: '{0} ώρα', other: '{0} ώρες'),
+    short: UnitCountPattern(_locale, 'ώρες', one: '{0} ώ.', other: '{0} ώ.'),
+    narrow: UnitCountPattern(_locale, 'ώρα', one: '{0} ώ', other: '{0} ώ'),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λεπτά',
-          one: '{0} λεπτό',
-          other: '{0} λεπτά',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λεπ.',
-          one: '{0} λ.',
-          other: '{0} λ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λ.',
-          one: '{0} λ',
-          other: '{0} λ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λεπτά',
+      one: '{0} λεπτό',
+      other: '{0} λεπτά',
+    ),
+    short: UnitCountPattern(_locale, 'λεπ.', one: '{0} λ.', other: '{0} λ.'),
+    narrow: UnitCountPattern(_locale, 'λ.', one: '{0} λ', other: '{0} λ'),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'δευτερόλεπτα',
-          one: '{0} δευτερόλεπτο',
-          other: '{0} δευτερόλεπτα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'δευτ.',
-          one: '{0} δευτ.',
-          other: '{0} δευτ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'δευτ.',
-          one: '{0} δ',
-          other: '{0} δ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'δευτερόλεπτα',
+      one: '{0} δευτερόλεπτο',
+      other: '{0} δευτερόλεπτα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'δευτ.',
+      one: '{0} δευτ.',
+      other: '{0} δευτ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'δευτ.', one: '{0} δ', other: '{0} δ'),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοστά του δευτερολέπτου',
-          one: '{0} χιλιοστό του δευτερολέπτου',
-          other: '{0} χιλιοστά του δευτερολέπτου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'χιλιοστά δευτ.',
-          one: '{0} χιλιοστό του δευτερολέπτου',
-          other: '{0} ms',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'χιλ. δευτ.',
-          one: '{0} χιλιοστό του δευτερολέπτου',
-          other: '{0} ms',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοστά του δευτερολέπτου',
+      one: '{0} χιλιοστό του δευτερολέπτου',
+      other: '{0} χιλιοστά του δευτερολέπτου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'χιλιοστά δευτ.',
+      one: '{0} χιλιοστό του δευτερολέπτου',
+      other: '{0} ms',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'χιλ. δευτ.',
+      one: '{0} χιλιοστό του δευτερολέπτου',
+      other: '{0} ms',
+    ),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μικροδευτερόλεπτα',
-          one: '{0} μικροδευτερόλεπτο',
-          other: '{0} μικροδευτερόλεπτα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μικροδεύτερα',
-          one: '{0} μικροδευτερόλεπτο',
-          other: '{0} μs',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μs',
-          one: '{0} μικροδευτερόλεπτο',
-          other: '{0} μs',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μικροδευτερόλεπτα',
+      one: '{0} μικροδευτερόλεπτο',
+      other: '{0} μικροδευτερόλεπτα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μικροδεύτερα',
+      one: '{0} μικροδευτερόλεπτο',
+      other: '{0} μs',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μs',
+      one: '{0} μικροδευτερόλεπτο',
+      other: '{0} μs',
+    ),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'νανοδευτερόλεπτα',
-          one: '{0} νανοδευτερόλεπτο',
-          other: '{0} νανοδευτερόλεπτα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'νανοδεύτερα',
-          one: '{0} νανοδευτερόλεπτο',
-          other: '{0} ns',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ns',
-          one: '{0} νανοδευτερόλεπτο',
-          other: '{0} ns',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'νανοδευτερόλεπτα',
+      one: '{0} νανοδευτερόλεπτο',
+      other: '{0} νανοδευτερόλεπτα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'νανοδεύτερα',
+      one: '{0} νανοδευτερόλεπτο',
+      other: '{0} ns',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ns',
+      one: '{0} νανοδευτερόλεπτο',
+      other: '{0} ns',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'αμπέρ',
-          one: '{0} αμπέρ',
-          other: '{0} αμπέρ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'A',
-          one: '{0} αμπέρ',
-          other: '{0} A',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'A',
-          one: '{0} αμπέρ',
-          other: '{0} A',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'αμπέρ',
+      one: '{0} αμπέρ',
+      other: '{0} αμπέρ',
+    ),
+    short: UnitCountPattern(_locale, 'A', one: '{0} αμπέρ', other: '{0} A'),
+    narrow: UnitCountPattern(_locale, 'A', one: '{0} αμπέρ', other: '{0} A'),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μιλιαμπέρ',
-          one: '{0} μιλιαμπέρ',
-          other: '{0} μιλιαμπέρ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} μιλιαμπέρ',
-          other: '{0} mA',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} μιλιαμπέρ',
-          other: '{0} mA',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μιλιαμπέρ',
+      one: '{0} μιλιαμπέρ',
+      other: '{0} μιλιαμπέρ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} μιλιαμπέρ',
+      other: '{0} mA',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} μιλιαμπέρ',
+      other: '{0} mA',
+    ),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ωμ',
-          one: '{0} ωμ',
-          other: '{0} ωμ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Ω',
-          one: '{0} ωμ',
-          other: '{0} Ω',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Ω',
-          one: '{0} ωμ',
-          other: '{0} Ω',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ωμ', one: '{0} ωμ', other: '{0} ωμ'),
+    short: UnitCountPattern(_locale, 'Ω', one: '{0} ωμ', other: '{0} Ω'),
+    narrow: UnitCountPattern(_locale, 'Ω', one: '{0} ωμ', other: '{0} Ω'),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'βολτ',
-          one: '{0} βολτ',
-          other: '{0} βολτ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} βολτ',
-          other: '{0} V',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} βολτ',
-          other: '{0} V',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'βολτ', one: '{0} βολτ', other: '{0} βολτ'),
+    short: UnitCountPattern(_locale, 'V', one: '{0} βολτ', other: '{0} V'),
+    narrow: UnitCountPattern(_locale, 'V', one: '{0} βολτ', other: '{0} V'),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοθερμίδες',
-          one: '{0} χιλιοθερμίδα',
-          other: '{0} χιλιοθερμίδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} χιλιοθερμίδα',
-          other: '{0} kcal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} χιλιοθερμίδα',
-          other: '{0} kcal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοθερμίδες',
+      one: '{0} χιλιοθερμίδα',
+      other: '{0} χιλιοθερμίδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} χιλιοθερμίδα',
+      other: '{0} kcal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} χιλιοθερμίδα',
+      other: '{0} kcal',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'θερμίδες',
-          one: '{0} θερμίδα',
-          other: '{0} θερμίδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'θερμ.',
-          one: '{0} θερμ.',
-          other: '{0} θερμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'θερμ.',
-          one: '{0} θερμ.',
-          other: '{0} θερμ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'θερμίδες',
+      one: '{0} θερμίδα',
+      other: '{0} θερμίδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'θερμ.',
+      one: '{0} θερμ.',
+      other: '{0} θερμ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'θερμ.',
+      one: '{0} θερμ.',
+      other: '{0} θερμ.',
+    ),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'θερμίδες',
-          one: '{0} θερμίδα',
-          other: '{0} θερμίδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'θερμ.',
-          one: '{0} θερμ.',
-          other: '{0} θερμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'θερμ.',
-          one: '{0} θερμ.',
-          other: '{0} θερμ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'θερμίδες',
+      one: '{0} θερμίδα',
+      other: '{0} θερμίδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'θερμ.',
+      one: '{0} θερμ.',
+      other: '{0} θερμ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'θερμ.',
+      one: '{0} θερμ.',
+      other: '{0} θερμ.',
+    ),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κιλοτζάουλ',
-          one: '{0} κιλοτζάουλ',
-          other: '{0} κιλοτζάουλ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κιλοτζάουλ',
-          one: '{0} κιλοτζάουλ',
-          other: '{0} kJ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0} κιλοτζάουλ',
-          other: '{0} kJ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κιλοτζάουλ',
+      one: '{0} κιλοτζάουλ',
+      other: '{0} κιλοτζάουλ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κιλοτζάουλ',
+      one: '{0} κιλοτζάουλ',
+      other: '{0} kJ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kJ',
+      one: '{0} κιλοτζάουλ',
+      other: '{0} kJ',
+    ),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τζάουλ',
-          one: '{0} τζάουλ',
-          other: '{0} τζάουλ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τζάουλ',
-          one: '{0} τζάουλ',
-          other: '{0} J',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'J',
-          one: '{0} τζάουλ',
-          other: '{0} J',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τζάουλ',
+      one: '{0} τζάουλ',
+      other: '{0} τζάουλ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τζάουλ',
+      one: '{0} τζάουλ',
+      other: '{0} J',
+    ),
+    narrow: UnitCountPattern(_locale, 'J', one: '{0} τζάουλ', other: '{0} J'),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κιλοβατώρες',
-          one: '{0} κιλοβατώρα',
-          other: '{0} κιλοβατώρες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κιλοβάτ/ώρα',
-          one: '{0} κιλοβάτ/ώρα',
-          other: '{0} κιλοβάτ/ώρα',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kW/ώ.',
-          one: '{0} kW/ώ.',
-          other: '{0} kW/ώ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κιλοβατώρες',
+      one: '{0} κιλοβατώρα',
+      other: '{0} κιλοβατώρες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κιλοβάτ/ώρα',
+      one: '{0} κιλοβάτ/ώρα',
+      other: '{0} κιλοβάτ/ώρα',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kW/ώ.',
+      one: '{0} kW/ώ.',
+      other: '{0} kW/ώ.',
+    ),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ηλεκτρονιοβόλτ',
-          one: '{0} ηλεκτρονιοβόλτ',
-          other: '{0} ηλεκτρονιοβόλτ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ηλεκτρονιοβόλτ',
-          one: '{0} ηλεκτρονιοβόλτ',
-          other: '{0} eV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0} ηλεκτρονιοβόλτ',
-          other: '{0} eV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ηλεκτρονιοβόλτ',
+      one: '{0} ηλεκτρονιοβόλτ',
+      other: '{0} ηλεκτρονιοβόλτ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ηλεκτρονιοβόλτ',
+      one: '{0} ηλεκτρονιοβόλτ',
+      other: '{0} eV',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0} ηλεκτρονιοβόλτ',
+      other: '{0} eV',
+    ),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'βρετανικές μονάδες θερμότητας',
-          one: '{0} βρετανική μονάδα θερμότητας',
-          other: '{0} βρετανικές μονάδες θερμότητας',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'BTU',
-          one: '{0} BTU',
-          other: '{0} BTU',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'BTU',
-          one: '{0} BTU',
-          other: '{0} BTU',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'βρετανικές μονάδες θερμότητας',
+      one: '{0} βρετανική μονάδα θερμότητας',
+      other: '{0} βρετανικές μονάδες θερμότητας',
+    ),
+    short: UnitCountPattern(_locale, 'BTU', one: '{0} BTU', other: '{0} BTU'),
+    narrow: UnitCountPattern(_locale, 'BTU', one: '{0} BTU', other: '{0} BTU'),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'θερμικές μονάδες ΗΠΑ',
-          one: '{0} θερμική μονάδα ΗΠΑ',
-          other: '{0} θερμικές μονάδες ΗΠΑ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'θερμ. μονάδες ΗΠΑ',
-          one: '{0} θερμ. μονάδα ΗΠΑ',
-          other: '{0} θερμ. μονάδες ΗΠΑ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'θερμ. μονάδες ΗΠΑ',
-          one: '{0} θερμ. μονάδα ΗΠΑ',
-          other: '{0} θερμ. μονάδες ΗΠΑ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'θερμικές μονάδες ΗΠΑ',
+      one: '{0} θερμική μονάδα ΗΠΑ',
+      other: '{0} θερμικές μονάδες ΗΠΑ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'θερμ. μονάδες ΗΠΑ',
+      one: '{0} θερμ. μονάδα ΗΠΑ',
+      other: '{0} θερμ. μονάδες ΗΠΑ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'θερμ. μονάδες ΗΠΑ',
+      one: '{0} θερμ. μονάδα ΗΠΑ',
+      other: '{0} θερμ. μονάδες ΗΠΑ',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λίβρες δύναμης',
-          one: '{0} λίβρα δύναμης',
-          other: '{0} λίβρες δύναμης',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λίβρες δύναμης',
-          one: '{0} λίβρα δύναμης',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} λίβρα δύναμης',
-          other: '{0} lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λίβρες δύναμης',
+      one: '{0} λίβρα δύναμης',
+      other: '{0} λίβρες δύναμης',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'λίβρες δύναμης',
+      one: '{0} λίβρα δύναμης',
+      other: '{0} lbf',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0} λίβρα δύναμης',
+      other: '{0} lbf',
+    ),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'νιούτον',
-          one: '{0} νιούτον',
-          other: '{0} νιούτον',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'νιούτον',
-          one: '{0} νιούτον',
-          other: '{0} N',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} νιούτον',
-          other: '{0} N',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'νιούτον',
+      one: '{0} νιούτον',
+      other: '{0} νιούτον',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'νιούτον',
+      one: '{0} νιούτον',
+      other: '{0} N',
+    ),
+    narrow: UnitCountPattern(_locale, 'N', one: '{0} νιούτον', other: '{0} N'),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κιλοβατώρες ανά 100 χιλιόμετρα',
-          one: '{0} κιλοβατώρα ανά 100 χιλιόμετρα',
-          other: '{0} κιλοβατώρες ανά 100 χιλιόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100 χλμ.',
-          one: '{0} kWh/100 χλμ.',
-          other: '{0} kWh/100 χλμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100 χλμ.',
-          one: '{0} kWh/100 χλμ.',
-          other: '{0} kWh/100 χλμ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κιλοβατώρες ανά 100 χιλιόμετρα',
+      one: '{0} κιλοβατώρα ανά 100 χιλιόμετρα',
+      other: '{0} κιλοβατώρες ανά 100 χιλιόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100 χλμ.',
+      one: '{0} kWh/100 χλμ.',
+      other: '{0} kWh/100 χλμ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100 χλμ.',
+      one: '{0} kWh/100 χλμ.',
+      other: '{0} kWh/100 χλμ.',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'γιγαχέρτζ',
-          one: '{0} γιγαχέρτζ',
-          other: '{0} γιγαχέρτζ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} γιγαχέρτζ',
-          other: '{0} GHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} γιγαχέρτζ',
-          other: '{0} GHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'γιγαχέρτζ',
+      one: '{0} γιγαχέρτζ',
+      other: '{0} γιγαχέρτζ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} γιγαχέρτζ',
+      other: '{0} GHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} γιγαχέρτζ',
+      other: '{0} GHz',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μεγαχέρτζ',
-          one: '{0} μεγαχέρτζ',
-          other: '{0} μεγαχέρτζ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} μεγαχέρτζ',
-          other: '{0} MHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} μεγαχέρτζ',
-          other: '{0} MHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μεγαχέρτζ',
+      one: '{0} μεγαχέρτζ',
+      other: '{0} μεγαχέρτζ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} μεγαχέρτζ',
+      other: '{0} MHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} μεγαχέρτζ',
+      other: '{0} MHz',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κιλοχέρτζ',
-          one: '{0} κιλοχέρτζ',
-          other: '{0} κιλοχέρτζ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} κιλοχέρτζ',
-          other: '{0} kHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} κιλοχέρτζ',
-          other: '{0} kHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κιλοχέρτζ',
+      one: '{0} κιλοχέρτζ',
+      other: '{0} κιλοχέρτζ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} κιλοχέρτζ',
+      other: '{0} kHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} κιλοχέρτζ',
+      other: '{0} kHz',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χερτζ',
-          one: '{0} χερτζ',
-          other: '{0} χερτζ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} χερτζ',
-          other: '{0} Hz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} χερτζ',
-          other: '{0} Hz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χερτζ',
+      one: '{0} χερτζ',
+      other: '{0} χερτζ',
+    ),
+    short: UnitCountPattern(_locale, 'Hz', one: '{0} χερτζ', other: '{0} Hz'),
+    narrow: UnitCountPattern(_locale, 'Hz', one: '{0} χερτζ', other: '{0} Hz'),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τυπογραφικό em',
-          one: '{0} τυπογραφικό em',
-          other: '{0} τυπογραφικά em',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} τυπογραφικό em',
-          other: '{0} em',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} τυπογραφικό em',
-          other: '{0} em',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τυπογραφικό em',
+      one: '{0} τυπογραφικό em',
+      other: '{0} τυπογραφικά em',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'em',
+      one: '{0} τυπογραφικό em',
+      other: '{0} em',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'em',
+      one: '{0} τυπογραφικό em',
+      other: '{0} em',
+    ),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pixel',
-          one: '{0} pixel',
-          other: '{0} pixel',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pixel',
-          one: '{0} pixel',
-          other: '{0} px',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pixel',
-          one: '{0} pixel',
-          other: '{0} px',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pixel',
+      one: '{0} pixel',
+      other: '{0} pixel',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pixel',
+      one: '{0} pixel',
+      other: '{0} px',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pixel',
+      one: '{0} pixel',
+      other: '{0} px',
+    ),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megapixel',
-          one: '{0} megapixel',
-          other: '{0} megapixel',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'megapixel',
-          one: '{0} megapixel',
-          other: '{0} MP',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MP',
-          one: '{0} megapixel',
-          other: '{0} MP',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megapixel',
+      one: '{0} megapixel',
+      other: '{0} megapixel',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'megapixel',
+      one: '{0} megapixel',
+      other: '{0} MP',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MP',
+      one: '{0} megapixel',
+      other: '{0} MP',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pixel ανά εκατοστό',
-          one: '{0} pixel ανά εκατοστό',
-          other: '{0} pixel ανά εκατοστό',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} pixel ανά εκατοστό',
-          other: '{0} ppcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} pixel ανά εκατοστό',
-          other: '{0} ppcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pixel ανά εκατοστό',
+      one: '{0} pixel ανά εκατοστό',
+      other: '{0} pixel ανά εκατοστό',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} pixel ανά εκατοστό',
+      other: '{0} ppcm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} pixel ανά εκατοστό',
+      other: '{0} ppcm',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pixel ανά ίντσα',
-          one: '{0} pixel ανά ίντσα',
-          other: '{0} pixel ανά ίντσα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0} pixel ανά ίντσα',
-          other: '{0} ppi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0} pixel ανά ίντσα',
-          other: '{0} ppi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pixel ανά ίντσα',
+      one: '{0} pixel ανά ίντσα',
+      other: '{0} pixel ανά ίντσα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppi',
+      one: '{0} pixel ανά ίντσα',
+      other: '{0} ppi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppi',
+      one: '{0} pixel ανά ίντσα',
+      other: '{0} ppi',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κουκκίδες ανά εκατοστό',
-          one: '{0} κουκκίδα ανά εκατοστό',
-          other: '{0} κουκκίδες ανά εκατοστό',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κουκ./εκ.',
-          one: '{0} κουκ./εκ.',
-          other: '{0} κουκ./εκ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κουκ./εκ.',
-          one: '{0} κουκ./εκ.',
-          other: '{0} κουκ./εκ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κουκκίδες ανά εκατοστό',
+      one: '{0} κουκκίδα ανά εκατοστό',
+      other: '{0} κουκκίδες ανά εκατοστό',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κουκ./εκ.',
+      one: '{0} κουκ./εκ.',
+      other: '{0} κουκ./εκ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κουκ./εκ.',
+      one: '{0} κουκ./εκ.',
+      other: '{0} κουκ./εκ.',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κουκκίδες ανά ίντσα',
-          one: '{0} κουκκίδα ανά ίντσα',
-          other: '{0} κουκκίδες ανά ίντσα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κουκ./ίντσα',
-          one: '{0} κουκ./ίντσα',
-          other: '{0} κουκ./ίντσα',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κουκ./ίντσα',
-          one: '{0} κουκ./ίντσα',
-          other: '{0} κουκ./ίντσα',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κουκκίδες ανά ίντσα',
+      one: '{0} κουκκίδα ανά ίντσα',
+      other: '{0} κουκκίδες ανά ίντσα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κουκ./ίντσα',
+      one: '{0} κουκ./ίντσα',
+      other: '{0} κουκ./ίντσα',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κουκ./ίντσα',
+      one: '{0} κουκ./ίντσα',
+      other: '{0} κουκ./ίντσα',
+    ),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κουκκίδες',
-          one: '{0} κουκκίδα',
-          other: '{0} κουκκίδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κουκ.',
-          one: '{0} κουκ.',
-          other: '{0} κουκ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κουκ.',
-          one: '{0} κουκ.',
-          other: '{0} κουκ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κουκκίδες',
+      one: '{0} κουκκίδα',
+      other: '{0} κουκκίδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κουκ.',
+      one: '{0} κουκ.',
+      other: '{0} κουκ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κουκ.',
+      one: '{0} κουκ.',
+      other: '{0} κουκ.',
+    ),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ακτίνα της Γης',
-          one: '{0} ακτίνα της Γης',
-          other: '{0} ακτίνες της Γης',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} ακτίνα της Γης',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} ακτίνα της Γης',
-          other: '{0} R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ακτίνα της Γης',
+      one: '{0} ακτίνα της Γης',
+      other: '{0} ακτίνες της Γης',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} ακτίνα της Γης',
+      other: '{0} R⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} ακτίνα της Γης',
+      other: '{0} R⊕',
+    ),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιόμετρα',
-          one: '{0} χιλιόμετρο',
-          other: '{0} χιλιόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'χλμ.',
-          one: '{0} χλμ.',
-          other: '{0} χλμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'χλμ.',
-          one: '{0} χλμ.',
-          other: '{0} χλμ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιόμετρα',
+      one: '{0} χιλιόμετρο',
+      other: '{0} χιλιόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'χλμ.',
+      one: '{0} χλμ.',
+      other: '{0} χλμ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'χλμ.',
+      one: '{0} χλμ.',
+      other: '{0} χλμ.',
+    ),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μέτρα',
-          one: '{0} μέτρο',
-          other: '{0} μέτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μέτρα',
-          one: '{0} μ.',
-          other: '{0} μ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μέτρο',
-          one: '{0} μ.',
-          other: '{0} μ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μέτρα',
+      one: '{0} μέτρο',
+      other: '{0} μέτρα',
+    ),
+    short: UnitCountPattern(_locale, 'μέτρα', one: '{0} μ.', other: '{0} μ.'),
+    narrow: UnitCountPattern(_locale, 'μέτρο', one: '{0} μ.', other: '{0} μ.'),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'δεκατόμετρα',
-          one: '{0} δεκατόμετρο',
-          other: '{0} δεκατόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'δεκ.',
-          one: '{0} δεκ.',
-          other: '{0} δεκ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'δεκ.',
-          one: '{0} δεκ.',
-          other: '{0} δεκ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'δεκατόμετρα',
+      one: '{0} δεκατόμετρο',
+      other: '{0} δεκατόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'δεκ.',
+      one: '{0} δεκ.',
+      other: '{0} δεκ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'δεκ.',
+      one: '{0} δεκ.',
+      other: '{0} δεκ.',
+    ),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'εκατοστά',
-          one: '{0} εκατοστό',
-          other: '{0} εκατοστά',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'εκ.',
-          one: '{0} εκ.',
-          other: '{0} εκ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'εκ.',
-          one: '{0} εκ.',
-          other: '{0} εκ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'εκατοστά',
+      one: '{0} εκατοστό',
+      other: '{0} εκατοστά',
+    ),
+    short: UnitCountPattern(_locale, 'εκ.', one: '{0} εκ.', other: '{0} εκ.'),
+    narrow: UnitCountPattern(_locale, 'εκ.', one: '{0} εκ.', other: '{0} εκ.'),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοστόμετρα',
-          one: '{0} χιλιοστόμετρο',
-          other: '{0} χιλιοστόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'χλστ.',
-          one: '{0} χλστ.',
-          other: '{0} χλστ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'χλστ.',
-          one: '{0} χλστ.',
-          other: '{0} χλστ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοστόμετρα',
+      one: '{0} χιλιοστόμετρο',
+      other: '{0} χιλιοστόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'χλστ.',
+      one: '{0} χλστ.',
+      other: '{0} χλστ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'χλστ.',
+      one: '{0} χλστ.',
+      other: '{0} χλστ.',
+    ),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μικρόμετρα',
-          one: '{0} μικρόμετρο',
-          other: '{0} μικρόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μικρόμετρα',
-          one: '{0} μικρόμετρο',
-          other: '{0} μm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0} μικρόμετρο',
-          other: '{0} μm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μικρόμετρα',
+      one: '{0} μικρόμετρο',
+      other: '{0} μικρόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μικρόμετρα',
+      one: '{0} μικρόμετρο',
+      other: '{0} μm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0} μικρόμετρο',
+      other: '{0} μm',
+    ),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'νανόμετρα',
-          one: '{0} νανόμετρο',
-          other: '{0} νανόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} νανόμετρο',
-          other: '{0} nm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} νανόμετρο',
-          other: '{0} nm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'νανόμετρα',
+      one: '{0} νανόμετρο',
+      other: '{0} νανόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} νανόμετρο',
+      other: '{0} nm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} νανόμετρο',
+      other: '{0} nm',
+    ),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'πικόμετρα',
-          one: '{0} πικόμετρο',
-          other: '{0} πικόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} πικόμετρο',
-          other: '{0} pm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} πικόμετρο',
-          other: '{0} pm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'πικόμετρα',
+      one: '{0} πικόμετρο',
+      other: '{0} πικόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} πικόμετρο',
+      other: '{0} pm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} πικόμετρο',
+      other: '{0} pm',
+    ),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μίλια',
-          one: '{0} μίλι',
-          other: '{0} μίλια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μίλια',
-          one: '{0} μίλ.',
-          other: '{0} μίλ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μίλ.',
-          one: '{0} mi',
-          other: '{0} mi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μίλια',
+      one: '{0} μίλι',
+      other: '{0} μίλια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μίλια',
+      one: '{0} μίλ.',
+      other: '{0} μίλ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'μίλ.', one: '{0} mi', other: '{0} mi'),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'γιάρδες',
-          one: '{0} γιάρδα',
-          other: '{0} γιάρδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'γιάρδες',
-          one: '{0} γρδ',
-          other: '{0} γρδ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'γρδ',
-          one: '{0} yd',
-          other: '{0} yd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'γιάρδες',
+      one: '{0} γιάρδα',
+      other: '{0} γιάρδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'γιάρδες',
+      one: '{0} γρδ',
+      other: '{0} γρδ',
+    ),
+    narrow: UnitCountPattern(_locale, 'γρδ', one: '{0} yd', other: '{0} yd'),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'πόδια',
-          one: '{0} πόδι',
-          other: '{0} πόδια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'πόδια',
-          one: '{0} πδ',
-          other: '{0} πδ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'πδ',
-          one: '{0} ft',
-          other: '{0} ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'πόδια',
+      one: '{0} πόδι',
+      other: '{0} πόδια',
+    ),
+    short: UnitCountPattern(_locale, 'πόδια', one: '{0} πδ', other: '{0} πδ'),
+    narrow: UnitCountPattern(_locale, 'πδ', one: '{0} ft', other: '{0} ft'),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ίντσες',
-          one: '{0} ίντσα',
-          other: '{0} ίντσες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ίντσες',
-          one: '{0} ίν.',
-          other: '{0} ίν.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ίν.',
-          one: '{0} in',
-          other: '{0} in',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ίντσες',
+      one: '{0} ίντσα',
+      other: '{0} ίντσες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ίντσες',
+      one: '{0} ίν.',
+      other: '{0} ίν.',
+    ),
+    narrow: UnitCountPattern(_locale, 'ίν.', one: '{0} in', other: '{0} in'),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'παρσέκ',
-          one: '{0} παρσέκ',
-          other: '{0} παρσέκ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'παρσέκ',
-          one: '{0} παρσέκ',
-          other: '{0} pc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pc',
-          one: '{0} παρσέκ',
-          other: '{0} pc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'παρσέκ',
+      one: '{0} παρσέκ',
+      other: '{0} παρσέκ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'παρσέκ',
+      one: '{0} παρσέκ',
+      other: '{0} pc',
+    ),
+    narrow: UnitCountPattern(_locale, 'pc', one: '{0} παρσέκ', other: '{0} pc'),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'έτη φωτός',
-          one: '{0} έτος φωτός',
-          other: '{0} έτη φωτός',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'έτη φωτός',
-          one: '{0} έ.φ.',
-          other: '{0} έ.φ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'έ.φ.',
-          one: '{0} ly',
-          other: '{0} ly',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'έτη φωτός',
+      one: '{0} έτος φωτός',
+      other: '{0} έτη φωτός',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'έτη φωτός',
+      one: '{0} έ.φ.',
+      other: '{0} έ.φ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'έ.φ.', one: '{0} ly', other: '{0} ly'),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'αστρονομικές μονάδες',
-          one: '{0} αστρονομική μονάδα',
-          other: '{0} αστρονομικές μονάδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'α.μ.',
-          one: '{0} α.μ.',
-          other: '{0} α.μ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'α.μ.',
-          one: '{0} α.μ.',
-          other: '{0} α.μ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'αστρονομικές μονάδες',
+      one: '{0} αστρονομική μονάδα',
+      other: '{0} αστρονομικές μονάδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'α.μ.',
+      one: '{0} α.μ.',
+      other: '{0} α.μ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'α.μ.',
+      one: '{0} α.μ.',
+      other: '{0} α.μ.',
+    ),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'φέρλονγκ',
-          one: '{0} φέρλονγκ',
-          other: '{0} φέρλονγκ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'φέρλ.',
-          one: '{0} φέρλ.',
-          other: '{0} φέρλ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'φέρλ.',
-          one: '{0} φέρλ.',
-          other: '{0} φέρλ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'φέρλονγκ',
+      one: '{0} φέρλονγκ',
+      other: '{0} φέρλονγκ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'φέρλ.',
+      one: '{0} φέρλ.',
+      other: '{0} φέρλ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'φέρλ.',
+      one: '{0} φέρλ.',
+      other: '{0} φέρλ.',
+    ),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'οργιές',
-          one: '{0} οργιά',
-          other: '{0} οργιές',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'οργιές',
-          one: '{0} οργ.',
-          other: '{0} οργ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'οργ.',
-          one: '{0} οργ.',
-          other: '{0} οργ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'οργιές',
+      one: '{0} οργιά',
+      other: '{0} οργιές',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'οργιές',
+      one: '{0} οργ.',
+      other: '{0} οργ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'οργ.',
+      one: '{0} οργ.',
+      other: '{0} οργ.',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ναυτικά μίλια',
-          one: '{0} ναυτικό μίλι',
-          other: '{0} ναυτικά μίλια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ν.μ.',
-          one: '{0} ν.μ.',
-          other: '{0} ν.μ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ν.μ.',
-          one: '{0} ν.μ.',
-          other: '{0} ν.μ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ναυτικά μίλια',
+      one: '{0} ναυτικό μίλι',
+      other: '{0} ναυτικά μίλια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ν.μ.',
+      one: '{0} ν.μ.',
+      other: '{0} ν.μ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ν.μ.',
+      one: '{0} ν.μ.',
+      other: '{0} ν.μ.',
+    ),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'σκανδιναβικά μίλια',
-          one: '{0} σκανδιναβικό μίλι',
-          other: '{0} σκανδιναβικά μίλια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'σκανδ. μίλια',
-          one: '{0} σκανδ. μίλι',
-          other: '{0} σκανδ. μίλια',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'σκανδ. μίλια',
-          one: '{0}smi',
-          other: '{0}smi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'σκανδιναβικά μίλια',
+      one: '{0} σκανδιναβικό μίλι',
+      other: '{0} σκανδιναβικά μίλια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'σκανδ. μίλια',
+      one: '{0} σκανδ. μίλι',
+      other: '{0} σκανδ. μίλια',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'σκανδ. μίλια',
+      one: '{0}smi',
+      other: '{0}smi',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'στιγμές',
-          one: '{0} στιγμή',
-          other: '{0} στιγμές',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'στιγμές',
-          one: '{0} στ.',
-          other: '{0} στ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'στ.',
-          one: '{0} στ.',
-          other: '{0} στ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'στιγμές',
+      one: '{0} στιγμή',
+      other: '{0} στιγμές',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'στιγμές',
+      one: '{0} στ.',
+      other: '{0} στ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'στ.', one: '{0} στ.', other: '{0} στ.'),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ακτίνες του Ήλιου',
-          one: '{0} ακτίνα του Ήλιου',
-          other: '{0} ακτίνες του Ήλιου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ακτίνες Ήλιου',
-          one: '{0} ακτίνα του Ήλιου',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0} ακτίνα του Ήλιου',
-          other: '{0} R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ακτίνες του Ήλιου',
+      one: '{0} ακτίνα του Ήλιου',
+      other: '{0} ακτίνες του Ήλιου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ακτίνες Ήλιου',
+      one: '{0} ακτίνα του Ήλιου',
+      other: '{0} R☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R☉',
+      one: '{0} ακτίνα του Ήλιου',
+      other: '{0} R☉',
+    ),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λουξ',
-          one: '{0} λουξ',
-          other: '{0} λουξ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λουξ',
-          one: '{0} λουξ',
-          other: '{0} λουξ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λουξ',
-          one: '{0} λουξ',
-          other: '{0} λουξ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'λουξ', one: '{0} λουξ', other: '{0} λουξ'),
+    short: UnitCountPattern(
+      _locale,
+      'λουξ',
+      one: '{0} λουξ',
+      other: '{0} λουξ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'λουξ',
+      one: '{0} λουξ',
+      other: '{0} λουξ',
+    ),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'καντέλα',
-          one: '{0} καντέλα',
-          other: '{0} καντέλα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'καντ.',
-          one: '{0} καντ.',
-          other: '{0} καντ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'καντ.',
-          one: '{0} καντ.',
-          other: '{0} καντ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'καντέλα',
+      one: '{0} καντέλα',
+      other: '{0} καντέλα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'καντ.',
+      one: '{0} καντ.',
+      other: '{0} καντ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'καντ.',
+      one: '{0} καντ.',
+      other: '{0} καντ.',
+    ),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λούμεν',
-          one: '{0} λούμεν',
-          other: '{0} λούμεν',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λμ.',
-          one: '{0} λμ.',
-          other: '{0} λμ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λμ.',
-          one: '{0} λμ',
-          other: '{0} λμ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λούμεν',
+      one: '{0} λούμεν',
+      other: '{0} λούμεν',
+    ),
+    short: UnitCountPattern(_locale, 'λμ.', one: '{0} λμ.', other: '{0} λμ.'),
+    narrow: UnitCountPattern(_locale, 'λμ.', one: '{0} λμ', other: '{0} λμ'),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ηλιακές φωτεινότητες',
-          one: '{0} ηλιακή φωτεινότητα',
-          other: '{0} ηλιακές φωτεινότητες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ηλιακές φωτεινότητες',
-          one: '{0} ηλιακή φωτεινότητα',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} ηλιακή φωτεινότητα',
-          other: '{0} L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ηλιακές φωτεινότητες',
+      one: '{0} ηλιακή φωτεινότητα',
+      other: '{0} ηλιακές φωτεινότητες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ηλιακές φωτεινότητες',
+      one: '{0} ηλιακή φωτεινότητα',
+      other: '{0} L☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L☉',
+      one: '{0} ηλιακή φωτεινότητα',
+      other: '{0} L☉',
+    ),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τόνοι',
-          one: '{0} τόνος',
-          other: '{0} τόνοι',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τ.',
-          one: '{0} τ.',
-          other: '{0} τ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ.',
-          one: '{0} τ.',
-          other: '{0} τ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τόνοι',
+      one: '{0} τόνος',
+      other: '{0} τόνοι',
+    ),
+    short: UnitCountPattern(_locale, 'τ.', one: '{0} τ.', other: '{0} τ.'),
+    narrow: UnitCountPattern(_locale, 'τ.', one: '{0} τ.', other: '{0} τ.'),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιόγραμμα',
-          one: '{0} χιλιόγραμμο',
-          other: '{0} χιλιόγραμμα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κιλά',
-          one: '{0} κιλό',
-          other: '{0} κιλά',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} kg',
-          other: '{0} kg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιόγραμμα',
+      one: '{0} χιλιόγραμμο',
+      other: '{0} χιλιόγραμμα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κιλά',
+      one: '{0} κιλό',
+      other: '{0} κιλά',
+    ),
+    narrow: UnitCountPattern(_locale, 'kg', one: '{0} kg', other: '{0} kg'),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'γραμμάρια',
-          one: '{0} γραμμάριο',
-          other: '{0} γραμμάρια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'γραμμ.',
-          one: '{0} γρ.',
-          other: '{0} γρ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'γρ.',
-          one: '{0} γρ.',
-          other: '{0} γρ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'γραμμάρια',
+      one: '{0} γραμμάριο',
+      other: '{0} γραμμάρια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'γραμμ.',
+      one: '{0} γρ.',
+      other: '{0} γρ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'γρ.', one: '{0} γρ.', other: '{0} γρ.'),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοστόγραμμα',
-          one: '{0} χιλιοστόγραμμο',
-          other: '{0} χιλιοστόγραμμα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} χιλιοστόγραμμο',
-          other: '{0} mg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} χιλιοστόγραμμο',
-          other: '{0} mg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοστόγραμμα',
+      one: '{0} χιλιοστόγραμμο',
+      other: '{0} χιλιοστόγραμμα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} χιλιοστόγραμμο',
+      other: '{0} mg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} χιλιοστόγραμμο',
+      other: '{0} mg',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μικρογραμμάρια',
-          one: '{0} μικρογραμμάριο',
-          other: '{0} μικρογραμμάρια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} μικρογραμμάριο',
-          other: '{0} μg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} μικρογραμμάριο',
-          other: '{0} μg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μικρογραμμάρια',
+      one: '{0} μικρογραμμάριο',
+      other: '{0} μικρογραμμάρια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} μικρογραμμάριο',
+      other: '{0} μg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} μικρογραμμάριο',
+      other: '{0} μg',
+    ),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τόνοι ΗΠΑ',
-          one: '{0} τόνος ΗΠΑ',
-          other: '{0} τόνοι ΗΠΑ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τόνοι ΗΠΑ',
-          one: '{0} τ. ΗΠΑ',
-          other: '{0} τ. ΗΠΑ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τ. ΗΠΑ',
-          one: '{0} τ. ΗΠΑ',
-          other: '{0} τ. ΗΠΑ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τόνοι ΗΠΑ',
+      one: '{0} τόνος ΗΠΑ',
+      other: '{0} τόνοι ΗΠΑ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τόνοι ΗΠΑ',
+      one: '{0} τ. ΗΠΑ',
+      other: '{0} τ. ΗΠΑ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τ. ΗΠΑ',
+      one: '{0} τ. ΗΠΑ',
+      other: '{0} τ. ΗΠΑ',
+    ),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'stone',
-          one: '{0} stone',
-          other: '{0} stone',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'st',
-          one: '{0} stone',
-          other: '{0} st',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'st',
-          one: '{0} stone',
-          other: '{0} st',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'stone',
+      one: '{0} stone',
+      other: '{0} stone',
+    ),
+    short: UnitCountPattern(_locale, 'st', one: '{0} stone', other: '{0} st'),
+    narrow: UnitCountPattern(_locale, 'st', one: '{0} stone', other: '{0} st'),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λίβρες',
-          one: '{0} λίβρα',
-          other: '{0} λίβρες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λίβρες',
-          one: '{0} λβ',
-          other: '{0} λβ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λβ',
-          one: '{0} λβ',
-          other: '{0} λβ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λίβρες',
+      one: '{0} λίβρα',
+      other: '{0} λίβρες',
+    ),
+    short: UnitCountPattern(_locale, 'λίβρες', one: '{0} λβ', other: '{0} λβ'),
+    narrow: UnitCountPattern(_locale, 'λβ', one: '{0} λβ', other: '{0} λβ'),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ουγγιές',
-          one: '{0} ουγγιά',
-          other: '{0} ουγγιές',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} ουγγιά',
-          other: '{0} oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} ουγγιά',
-          other: '{0} oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ουγγιές',
+      one: '{0} ουγγιά',
+      other: '{0} ουγγιές',
+    ),
+    short: UnitCountPattern(_locale, 'oz', one: '{0} ουγγιά', other: '{0} oz'),
+    narrow: UnitCountPattern(_locale, 'oz', one: '{0} ουγγιά', other: '{0} oz'),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ευγενείς ουγγιές',
-          one: '{0} ευγενής ουγγιά',
-          other: '{0} ευγενείς ουγγιές',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ευγενής ουγγιά',
-          one: '{0} ευγενής ουγγιά',
-          other: '{0} oz t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz t',
-          one: '{0} ευγενής ουγγιά',
-          other: '{0} oz t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ευγενείς ουγγιές',
+      one: '{0} ευγενής ουγγιά',
+      other: '{0} ευγενείς ουγγιές',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ευγενής ουγγιά',
+      one: '{0} ευγενής ουγγιά',
+      other: '{0} oz t',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'oz t',
+      one: '{0} ευγενής ουγγιά',
+      other: '{0} oz t',
+    ),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'καράτια',
-          one: '{0} καράτι',
-          other: '{0} καράτια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'καράτια',
-          one: '{0} κρτ',
-          other: '{0} κρτ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κρτ',
-          one: '{0} κρτ',
-          other: '{0} κρτ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'καράτια',
+      one: '{0} καράτι',
+      other: '{0} καράτια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'καράτια',
+      one: '{0} κρτ',
+      other: '{0} κρτ',
+    ),
+    narrow: UnitCountPattern(_locale, 'κρτ', one: '{0} κρτ', other: '{0} κρτ'),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Ντάλτον',
-          one: '{0} Ντάλτον',
-          other: '{0} Ντάλτον',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Ντάλτον',
-          one: '{0} Ντάλτον',
-          other: '{0} Da',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0} Ντάλτον',
-          other: '{0} Da',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Ντάλτον',
+      one: '{0} Ντάλτον',
+      other: '{0} Ντάλτον',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Ντάλτον',
+      one: '{0} Ντάλτον',
+      other: '{0} Da',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Da',
+      one: '{0} Ντάλτον',
+      other: '{0} Da',
+    ),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μάζες της Γης',
-          one: '{0} μάζα της Γης',
-          other: '{0} μάζες της Γης',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μάζες Γης',
-          one: '{0} μάζα της Γης',
-          other: '{0} M⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0} μάζα της Γης',
-          other: '{0} M⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μάζες της Γης',
+      one: '{0} μάζα της Γης',
+      other: '{0} μάζες της Γης',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μάζες Γης',
+      one: '{0} μάζα της Γης',
+      other: '{0} M⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M⊕',
+      one: '{0} μάζα της Γης',
+      other: '{0} M⊕',
+    ),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μάζες του Ήλιου',
-          one: '{0} μάζα του Ήλιου',
-          other: '{0} μάζες του Ήλιου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μάζες Ήλιου',
-          one: '{0} μάζα του Ήλιου',
-          other: '{0} M☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0} μάζα του Ήλιου',
-          other: '{0} M☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μάζες του Ήλιου',
+      one: '{0} μάζα του Ήλιου',
+      other: '{0} μάζες του Ήλιου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μάζες Ήλιου',
+      one: '{0} μάζα του Ήλιου',
+      other: '{0} M☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M☉',
+      one: '{0} μάζα του Ήλιου',
+      other: '{0} M☉',
+    ),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κόκκος',
-          one: '{0} κόκκος',
-          other: '{0} κόκκοι',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κόκ.',
-          one: '{0} κόκ.',
-          other: '{0} κόκ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κόκ.',
-          one: '{0} κόκ.',
-          other: '{0} κόκ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κόκκος',
+      one: '{0} κόκκος',
+      other: '{0} κόκκοι',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κόκ.',
+      one: '{0} κόκ.',
+      other: '{0} κόκ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κόκ.',
+      one: '{0} κόκ.',
+      other: '{0} κόκ.',
+    ),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'γιγαβάτ',
-          one: '{0} γιγαβάτ',
-          other: '{0} γιγαβάτ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'γιγαβάτ',
-          one: '{0} γιγαβάτ',
-          other: '{0} GW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} γιγαβάτ',
-          other: '{0} GW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'γιγαβάτ',
+      one: '{0} γιγαβάτ',
+      other: '{0} γιγαβάτ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'γιγαβάτ',
+      one: '{0} γιγαβάτ',
+      other: '{0} GW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0} γιγαβάτ',
+      other: '{0} GW',
+    ),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μεγαβάτ',
-          one: '{0} μεγαβάτ',
-          other: '{0} μεγαβάτ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μεγαβάτ',
-          one: '{0} μεγαβάτ',
-          other: '{0} MW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} μεγαβάτ',
-          other: '{0} MW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μεγαβάτ',
+      one: '{0} μεγαβάτ',
+      other: '{0} μεγαβάτ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μεγαβάτ',
+      one: '{0} μεγαβάτ',
+      other: '{0} MW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0} μεγαβάτ',
+      other: '{0} MW',
+    ),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κιλοβάτ',
-          one: '{0} κιλοβάτ',
-          other: '{0} κιλοβάτ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κιλοβάτ',
-          one: '{0} κιλοβάτ',
-          other: '{0} kW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0} κιλοβάτ',
-          other: '{0} kW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κιλοβάτ',
+      one: '{0} κιλοβάτ',
+      other: '{0} κιλοβάτ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κιλοβάτ',
+      one: '{0} κιλοβάτ',
+      other: '{0} kW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kW',
+      one: '{0} κιλοβάτ',
+      other: '{0} kW',
+    ),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'βατ',
-          one: '{0} βατ',
-          other: '{0} βατ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'βατ',
-          one: '{0} βατ',
-          other: '{0} W',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'W',
-          one: '{0} βατ',
-          other: '{0} W',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'βατ', one: '{0} βατ', other: '{0} βατ'),
+    short: UnitCountPattern(_locale, 'βατ', one: '{0} βατ', other: '{0} W'),
+    narrow: UnitCountPattern(_locale, 'W', one: '{0} βατ', other: '{0} W'),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μιλιβάτ',
-          one: '{0} μιλιβάτ',
-          other: '{0} μιλιβάτ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μιλιβάτ',
-          one: '{0} μιλιβάτ',
-          other: '{0} mW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} μιλιβάτ',
-          other: '{0} mW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μιλιβάτ',
+      one: '{0} μιλιβάτ',
+      other: '{0} μιλιβάτ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μιλιβάτ',
+      one: '{0} μιλιβάτ',
+      other: '{0} mW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0} μιλιβάτ',
+      other: '{0} mW',
+    ),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ίπποι',
-          one: '{0} ίππος',
-          other: '{0} ίπποι',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ίπποι',
-          one: '{0} ίπ.',
-          other: '{0} ίπ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hp',
-          one: '{0} hp',
-          other: '{0} hp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ίπποι',
+      one: '{0} ίππος',
+      other: '{0} ίπποι',
+    ),
+    short: UnitCountPattern(_locale, 'ίπποι', one: '{0} ίπ.', other: '{0} ίπ.'),
+    narrow: UnitCountPattern(_locale, 'hp', one: '{0} hp', other: '{0} hp'),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοστόμετρα στήλης υδραργύρου',
-          one: '{0} χιλιοστόμετρο στήλης υδραργύρου',
-          other: '{0} χιλιοστόμετρα στήλης υδραργύρου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοστόμετρα στήλης υδραργύρου',
+      one: '{0} χιλιοστόμετρο στήλης υδραργύρου',
+      other: '{0} χιλιοστόμετρα στήλης υδραργύρου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λίβρες ανά τετραγωνική ίντσα',
-          one: '{0} λίβρα ανά τετραγωνική ίντσα',
-          other: '{0} λίβρες ανά τετραγωνική ίντσα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} λίβρα ανά τετραγωνική ίντσα',
-          other: '{0} psi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} λίβρα ανά τετραγωνική ίντσα',
-          other: '{0} psi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λίβρες ανά τετραγωνική ίντσα',
+      one: '{0} λίβρα ανά τετραγωνική ίντσα',
+      other: '{0} λίβρες ανά τετραγωνική ίντσα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} λίβρα ανά τετραγωνική ίντσα',
+      other: '{0} psi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} λίβρα ανά τετραγωνική ίντσα',
+      other: '{0} psi',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ίντσες στήλης υδραργύρου',
-          one: '{0} ίντσα στήλης υδραργύρου',
-          other: '{0} ίντσες στήλης υδραργύρου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} ίντσα στήλης υδραργύρου',
-          other: '{0} inHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} ίντσα στήλης υδραργύρου',
-          other: '{0} inHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ίντσες στήλης υδραργύρου',
+      one: '{0} ίντσα στήλης υδραργύρου',
+      other: '{0} ίντσες στήλης υδραργύρου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} ίντσα στήλης υδραργύρου',
+      other: '{0} inHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} ίντσα στήλης υδραργύρου',
+      other: '{0} inHg',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μπαρ',
-          one: '{0} μπαρ',
-          other: '{0} μπαρ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μπαρ',
-          one: '{0} μπαρ',
-          other: '{0} μπαρ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μπαρ',
-          one: '{0} μπαρ',
-          other: '{0} μπαρ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'μπαρ', one: '{0} μπαρ', other: '{0} μπαρ'),
+    short: UnitCountPattern(
+      _locale,
+      'μπαρ',
+      one: '{0} μπαρ',
+      other: '{0} μπαρ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μπαρ',
+      one: '{0} μπαρ',
+      other: '{0} μπαρ',
+    ),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μιλιμπάρ',
-          one: '{0} μιλιμπάρ',
-          other: '{0} μιλιμπάρ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} μιλιμπάρ',
-          other: '{0} mbar',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} μιλιμπάρ',
-          other: '{0} mbar',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μιλιμπάρ',
+      one: '{0} μιλιμπάρ',
+      other: '{0} μιλιμπάρ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} μιλιμπάρ',
+      other: '{0} mbar',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} μιλιμπάρ',
+      other: '{0} mbar',
+    ),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ατμόσφαιρες',
-          one: '{0} ατμόσφαιρα',
-          other: '{0} ατμόσφαιρες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} ατμόσφαιρα',
-          other: '{0} atm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} ατμόσφαιρα',
-          other: '{0} atm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ατμόσφαιρες',
+      one: '{0} ατμόσφαιρα',
+      other: '{0} ατμόσφαιρες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} ατμόσφαιρα',
+      other: '{0} atm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} ατμόσφαιρα',
+      other: '{0} atm',
+    ),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'πασκάλ',
-          one: '{0} πασκάλ',
-          other: '{0} πασκάλ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} πασκάλ',
-          other: '{0} Pa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} πασκάλ',
-          other: '{0} Pa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'πασκάλ',
+      one: '{0} πασκάλ',
+      other: '{0} πασκάλ',
+    ),
+    short: UnitCountPattern(_locale, 'Pa', one: '{0} πασκάλ', other: '{0} Pa'),
+    narrow: UnitCountPattern(_locale, 'Pa', one: '{0} πασκάλ', other: '{0} Pa'),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'εκτοπασκάλ',
-          one: '{0} εκτοπασκάλ',
-          other: '{0} εκτοπασκάλ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} εκτοπασκάλ',
-          other: '{0} hPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} εκτοπασκάλ',
-          other: '{0} hPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'εκτοπασκάλ',
+      one: '{0} εκτοπασκάλ',
+      other: '{0} εκτοπασκάλ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} εκτοπασκάλ',
+      other: '{0} hPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} εκτοπασκάλ',
+      other: '{0} hPa',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κιλοπασκάλ',
-          one: '{0} κιλοπασκάλ',
-          other: '{0} κιλοπασκάλ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} κιλοπασκάλ',
-          other: '{0} kPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} κιλοπασκάλ',
-          other: '{0} kPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κιλοπασκάλ',
+      one: '{0} κιλοπασκάλ',
+      other: '{0} κιλοπασκάλ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} κιλοπασκάλ',
+      other: '{0} kPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} κιλοπασκάλ',
+      other: '{0} kPa',
+    ),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μεγαπασκάλ',
-          one: '{0} μεγαπασκάλ',
-          other: '{0} μεγαπασκάλ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} μεγαπασκάλ',
-          other: '{0} MPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} μεγαπασκάλ',
-          other: '{0} MPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μεγαπασκάλ',
+      one: '{0} μεγαπασκάλ',
+      other: '{0} μεγαπασκάλ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} μεγαπασκάλ',
+      other: '{0} MPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} μεγαπασκάλ',
+      other: '{0} MPa',
+    ),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιόμετρα ανά ώρα',
-          one: '{0} χιλιόμετρο ανά ώρα',
-          other: '{0} χιλιόμετρα ανά ώρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'χλμ./ώρα',
-          one: '{0} χλμ./ώρα',
-          other: '{0} χλμ./ώρα',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'χλμ/ώ.',
-          one: '{0} χλμ/ώ.',
-          other: '{0} χλμ/ώ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιόμετρα ανά ώρα',
+      one: '{0} χιλιόμετρο ανά ώρα',
+      other: '{0} χιλιόμετρα ανά ώρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'χλμ./ώρα',
+      one: '{0} χλμ./ώρα',
+      other: '{0} χλμ./ώρα',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'χλμ/ώ.',
+      one: '{0} χλμ/ώ.',
+      other: '{0} χλμ/ώ.',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μέτρα ανά δευτερόλεπτο',
-          one: '{0} μέτρο ανά δευτερόλεπτο',
-          other: '{0} μέτρα ανά δευτερόλεπτο',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μέτρα/δευτ.',
-          one: '{0} μέτρο/δευτ.',
-          other: '{0} μέτρα/δευτ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μ./δ.',
-          one: '{0} μ./δ.',
-          other: '{0} μ./δ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μέτρα ανά δευτερόλεπτο',
+      one: '{0} μέτρο ανά δευτερόλεπτο',
+      other: '{0} μέτρα ανά δευτερόλεπτο',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μέτρα/δευτ.',
+      one: '{0} μέτρο/δευτ.',
+      other: '{0} μέτρα/δευτ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μ./δ.',
+      one: '{0} μ./δ.',
+      other: '{0} μ./δ.',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μίλια ανά ώρα',
-          one: '{0} μίλι ανά ώρα',
-          other: '{0} μίλια ανά ώρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μίλια/ώρα',
-          one: '{0} μίλι/ώρα',
-          other: '{0} μίλια/ώρα',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μίλια/ώ.',
-          one: '{0} μίλι/ώ.',
-          other: '{0} μίλια/ώ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μίλια ανά ώρα',
+      one: '{0} μίλι ανά ώρα',
+      other: '{0} μίλια ανά ώρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μίλια/ώρα',
+      one: '{0} μίλι/ώρα',
+      other: '{0} μίλια/ώρα',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μίλια/ώ.',
+      one: '{0} μίλι/ώ.',
+      other: '{0} μίλια/ώ.',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κόμβος',
-          one: '{0} κόμβος',
-          other: '{0} κόμβοι',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κμβ',
-          one: '{0} κμβ',
-          other: '{0} κμβ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κμβ',
-          one: '{0} κμβ',
-          other: '{0} κμβ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κόμβος',
+      one: '{0} κόμβος',
+      other: '{0} κόμβοι',
+    ),
+    short: UnitCountPattern(_locale, 'κμβ', one: '{0} κμβ', other: '{0} κμβ'),
+    narrow: UnitCountPattern(_locale, 'κμβ', one: '{0} κμβ', other: '{0} κμβ'),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μποφόρ',
-          one: '{0} μποφόρ',
-          other: '{0} μποφόρ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μποφ.',
-          one: '{0} μποφ.',
-          other: '{0} μποφ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Bf',
-          one: '{0} Bf',
-          other: '{0} Bf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μποφόρ',
+      one: '{0} μποφόρ',
+      other: '{0} μποφόρ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μποφ.',
+      one: '{0} μποφ.',
+      other: '{0} μποφ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'Bf', one: '{0} Bf', other: '{0} Bf'),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} βαθμός',
-          other: '{0} βαθμοί',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} βαθμός',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} βαθμός',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '°',
+      one: '{0} βαθμός',
+      other: '{0} βαθμοί',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0} βαθμός', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0} βαθμός', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'βαθμοί Κελσίου',
-          one: '{0} βαθμός Κελσίου',
-          other: '{0} βαθμοί Κελσίου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'βθμ C',
-          one: '{0} βαθμός Κελσίου',
-          other: '{0}°C',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0} βαθμός Κελσίου',
-          other: '{0}°C',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'βαθμοί Κελσίου',
+      one: '{0} βαθμός Κελσίου',
+      other: '{0} βαθμοί Κελσίου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'βθμ C',
+      one: '{0} βαθμός Κελσίου',
+      other: '{0}°C',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°C',
+      one: '{0} βαθμός Κελσίου',
+      other: '{0}°C',
+    ),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'βαθμοί Φαρενάιτ',
-          one: '{0} βαθμός Φαρενάιτ',
-          other: '{0} βαθμοί Φαρενάιτ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'βθμ F',
-          one: '{0} βαθμός Φαρενάιτ',
-          other: '{0}°F',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0} βαθμός Φαρενάιτ',
-          other: '{0}°F',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'βαθμοί Φαρενάιτ',
+      one: '{0} βαθμός Φαρενάιτ',
+      other: '{0} βαθμοί Φαρενάιτ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'βθμ F',
+      one: '{0} βαθμός Φαρενάιτ',
+      other: '{0}°F',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°F',
+      one: '{0} βαθμός Φαρενάιτ',
+      other: '{0}°F',
+    ),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'βαθμοί Κέλβιν',
-          one: '{0} βαθμός Κέλβιν',
-          other: '{0} βαθμοί Κέλβιν',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} βαθμός Κέλβιν',
-          other: '{0} K',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} βαθμός Κέλβιν',
-          other: '{0} K',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'βαθμοί Κέλβιν',
+      one: '{0} βαθμός Κέλβιν',
+      other: '{0} βαθμοί Κέλβιν',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'K',
+      one: '{0} βαθμός Κέλβιν',
+      other: '{0} K',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'K',
+      one: '{0} βαθμός Κέλβιν',
+      other: '{0} K',
+    ),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λίβρες-πόδια',
-          one: '{0} λίβρα-πόδι',
-          other: '{0} λίβρες-πόδια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λβρ⋅πδ',
-          one: '{0} λβρ⋅πδ',
-          other: '{0} λβρ⋅πδ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λβρ⋅πδ',
-          one: '{0} λβρ⋅πδ',
-          other: '{0} λβρ⋅πδ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λίβρες-πόδια',
+      one: '{0} λίβρα-πόδι',
+      other: '{0} λίβρες-πόδια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'λβρ⋅πδ',
+      one: '{0} λβρ⋅πδ',
+      other: '{0} λβρ⋅πδ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'λβρ⋅πδ',
+      one: '{0} λβρ⋅πδ',
+      other: '{0} λβρ⋅πδ',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'νιουτόμετρα',
-          one: '{0} νιουτόμετρο',
-          other: '{0} νιουτόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0} νιουτόμετρο',
-          other: '{0} N⋅m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0} νιουτόμετρο',
-          other: '{0} N⋅m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'νιουτόμετρα',
+      one: '{0} νιουτόμετρο',
+      other: '{0} νιουτόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0} νιουτόμετρο',
+      other: '{0} N⋅m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0} νιουτόμετρο',
+      other: '{0} N⋅m',
+    ),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κυβικά χιλιόμετρα',
-          one: '{0} κυβικό χιλιόμετρο',
-          other: '{0} κυβικά χιλιόμετρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} κυβικό χιλιόμετρο',
-          other: '{0} km³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} κυβικό χιλιόμετρο',
-          other: '{0} km³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κυβικά χιλιόμετρα',
+      one: '{0} κυβικό χιλιόμετρο',
+      other: '{0} κυβικά χιλιόμετρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} κυβικό χιλιόμετρο',
+      other: '{0} km³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} κυβικό χιλιόμετρο',
+      other: '{0} km³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κυβικά μέτρα',
-          one: '{0} κυβικό μέτρο',
-          other: '{0} κυβικά μέτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} κυβικό μέτρο',
-          other: '{0} m³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} κυβικό μέτρο',
-          other: '{0} m³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κυβικά μέτρα',
+      one: '{0} κυβικό μέτρο',
+      other: '{0} κυβικά μέτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} κυβικό μέτρο',
+      other: '{0} m³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} κυβικό μέτρο',
+      other: '{0} m³',
+    ),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κυβικά εκατοστά',
-          one: '{0} κυβικό εκατοστό',
-          other: '{0} κυβικά εκατοστά',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} κυβικό εκατοστό',
-          other: '{0} cm³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} κυβικό εκατοστό',
-          other: '{0} cm³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κυβικά εκατοστά',
+      one: '{0} κυβικό εκατοστό',
+      other: '{0} κυβικά εκατοστά',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} κυβικό εκατοστό',
+      other: '{0} cm³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} κυβικό εκατοστό',
+      other: '{0} cm³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κυβικά μίλια',
-          one: '{0} κυβικό μίλι',
-          other: '{0} κυβικά μίλια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0} κυβικό μίλι',
-          other: '{0} mi³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0} κυβικό μίλι',
-          other: '{0} mi³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κυβικά μίλια',
+      one: '{0} κυβικό μίλι',
+      other: '{0} κυβικά μίλια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi³',
+      one: '{0} κυβικό μίλι',
+      other: '{0} mi³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi³',
+      one: '{0} κυβικό μίλι',
+      other: '{0} mi³',
+    ),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κυβικές γιάρδες',
-          one: '{0} κυβική γιάρδα',
-          other: '{0} κυβικές γιάρδες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κυβ. γιάρδες',
-          one: '{0} κυβ. γιάρδα',
-          other: '{0} κυβ. γιάρδες',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd³',
-          one: '{0} κυβ. γιάρδα',
-          other: '{0} κυβ. γιάρδες',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κυβικές γιάρδες',
+      one: '{0} κυβική γιάρδα',
+      other: '{0} κυβικές γιάρδες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κυβ. γιάρδες',
+      one: '{0} κυβ. γιάρδα',
+      other: '{0} κυβ. γιάρδες',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd³',
+      one: '{0} κυβ. γιάρδα',
+      other: '{0} κυβ. γιάρδες',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κυβικά πόδια',
-          one: '{0} κυβικό πόδι',
-          other: '{0} κυβικά πόδια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} κυβικό πόδι',
-          other: '{0} ft³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} κυβικό πόδι',
-          other: '{0} ft³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κυβικά πόδια',
+      one: '{0} κυβικό πόδι',
+      other: '{0} κυβικά πόδια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} κυβικό πόδι',
+      other: '{0} ft³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} κυβικό πόδι',
+      other: '{0} ft³',
+    ),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κυβικές ίντσες',
-          one: '{0} κυβική ίντσα',
-          other: '{0} κυβικές ίντσες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0} κυβική ίντσα',
-          other: '{0} in³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0} κυβική ίντσα',
-          other: '{0} in³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κυβικές ίντσες',
+      one: '{0} κυβική ίντσα',
+      other: '{0} κυβικές ίντσες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0} κυβική ίντσα',
+      other: '{0} in³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0} κυβική ίντσα',
+      other: '{0} in³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μεγαλίτρα',
-          one: '{0} μεγαλίτρο',
-          other: '{0} μεγαλίτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ML',
-          one: '{0} μεγαλίτρο',
-          other: '{0} ML',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ML',
-          one: '{0} μεγαλίτρο',
-          other: '{0} ML',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μεγαλίτρα',
+      one: '{0} μεγαλίτρο',
+      other: '{0} μεγαλίτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ML',
+      one: '{0} μεγαλίτρο',
+      other: '{0} ML',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ML',
+      one: '{0} μεγαλίτρο',
+      other: '{0} ML',
+    ),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'εκτόλιτρα',
-          one: '{0} εκτόλιτρο',
-          other: '{0} εκτόλιτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hL',
-          one: '{0} εκτόλιτρο',
-          other: '{0} hL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hL',
-          one: '{0} εκτόλιτρο',
-          other: '{0} hL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'εκτόλιτρα',
+      one: '{0} εκτόλιτρο',
+      other: '{0} εκτόλιτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hL',
+      one: '{0} εκτόλιτρο',
+      other: '{0} hL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hL',
+      one: '{0} εκτόλιτρο',
+      other: '{0} hL',
+    ),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'λίτρα',
-          one: '{0} λίτρο',
-          other: '{0} λίτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'λίτρα',
-          one: '{0} λίτ.',
-          other: '{0} λίτ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'λίτρο',
-          one: '{0} λ.',
-          other: '{0} λ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'λίτρα',
+      one: '{0} λίτρο',
+      other: '{0} λίτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'λίτρα',
+      one: '{0} λίτ.',
+      other: '{0} λίτ.',
+    ),
+    narrow: UnitCountPattern(_locale, 'λίτρο', one: '{0} λ.', other: '{0} λ.'),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'δεκατόλιτρα',
-          one: '{0} δεκατόλιτρο',
-          other: '{0} δεκατόλιτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dL',
-          one: '{0} δεκατόλιτρο',
-          other: '{0} dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dL',
-          one: '{0} δεκατόλιτρο',
-          other: '{0} dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'δεκατόλιτρα',
+      one: '{0} δεκατόλιτρο',
+      other: '{0} δεκατόλιτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dL',
+      one: '{0} δεκατόλιτρο',
+      other: '{0} dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dL',
+      one: '{0} δεκατόλιτρο',
+      other: '{0} dL',
+    ),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'εκατοστόλιτρα',
-          one: '{0} εκατοστόλιτρο',
-          other: '{0} εκατοστόλιτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cL',
-          one: '{0} εκατοστόλιτρο',
-          other: '{0} cL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cL',
-          one: '{0} εκατοστόλιτρο',
-          other: '{0} cL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'εκατοστόλιτρα',
+      one: '{0} εκατοστόλιτρο',
+      other: '{0} εκατοστόλιτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cL',
+      one: '{0} εκατοστόλιτρο',
+      other: '{0} cL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cL',
+      one: '{0} εκατοστόλιτρο',
+      other: '{0} cL',
+    ),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'χιλιοστόλιτρα',
-          one: '{0} χιλιοστόλιτρο',
-          other: '{0} χιλιοστόλιτρα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mL',
-          one: '{0} χιλιοστόλιτρο',
-          other: '{0} mL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mL',
-          one: '{0} χιλιοστόλιτρο',
-          other: '{0} mL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'χιλιοστόλιτρα',
+      one: '{0} χιλιοστόλιτρο',
+      other: '{0} χιλιοστόλιτρα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mL',
+      one: '{0} χιλιοστόλιτρο',
+      other: '{0} mL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mL',
+      one: '{0} χιλιοστόλιτρο',
+      other: '{0} mL',
+    ),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μετρικές πίντες',
-          one: '{0} μετρική πίντα',
-          other: '{0} μετρικές πίντες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μετρικές πίντες',
-          one: '{0} μετρ. πίντα',
-          other: '{0} μετρ. πίντες',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μ. πίντες',
-          one: '{0} μ. πίντα',
-          other: '{0} μ. πίντες',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μετρικές πίντες',
+      one: '{0} μετρική πίντα',
+      other: '{0} μετρικές πίντες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μετρικές πίντες',
+      one: '{0} μετρ. πίντα',
+      other: '{0} μετρ. πίντες',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μ. πίντες',
+      one: '{0} μ. πίντα',
+      other: '{0} μ. πίντες',
+    ),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μετρικά κύπελλα',
-          one: '{0} μετρικό κύπελλο',
-          other: '{0} μετρικά κύπελλα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μετρ. κύπελλο',
-          one: '{0} μετρ. κύπελλο',
-          other: '{0} μετρ. κύπελλα',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μ. κύπ.',
-          one: '{0} μ. κύπ.',
-          other: '{0} μ. κύπ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μετρικά κύπελλα',
+      one: '{0} μετρικό κύπελλο',
+      other: '{0} μετρικά κύπελλα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μετρ. κύπελλο',
+      one: '{0} μετρ. κύπελλο',
+      other: '{0} μετρ. κύπελλα',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μ. κύπ.',
+      one: '{0} μ. κύπ.',
+      other: '{0} μ. κύπ.',
+    ),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ακρ-πόδια',
-          one: '{0} ακρ-πόδι',
-          other: '{0} ακρ-πόδια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ακρ πόδια',
-          one: '{0} ακρ πδ',
-          other: '{0} ακρ πδ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ακρ πδ',
-          one: '{0} ακρ πδ',
-          other: '{0} ακρ πδ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ακρ-πόδια',
+      one: '{0} ακρ-πόδι',
+      other: '{0} ακρ-πόδια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ακρ πόδια',
+      one: '{0} ακρ πδ',
+      other: '{0} ακρ πδ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ακρ πδ',
+      one: '{0} ακρ πδ',
+      other: '{0} ακρ πδ',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μπούσελ',
-          one: '{0} μπούσελ',
-          other: '{0} μπούσελ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μπ.',
-          one: '{0} μπ.',
-          other: '{0} μπ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μπ.',
-          one: '{0} μπ.',
-          other: '{0} μπ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μπούσελ',
+      one: '{0} μπούσελ',
+      other: '{0} μπούσελ',
+    ),
+    short: UnitCountPattern(_locale, 'μπ.', one: '{0} μπ.', other: '{0} μπ.'),
+    narrow: UnitCountPattern(_locale, 'μπ.', one: '{0} μπ.', other: '{0} μπ.'),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'γαλόνια',
-          one: '{0} γαλόνι',
-          other: '{0} γαλόνια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'γαλ.',
-          one: '{0} γαλ.',
-          other: '{0} γαλ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'γαλ.',
-          one: '{0} γαλ.',
-          other: '{0} γαλ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'γαλόνια',
+      one: '{0} γαλόνι',
+      other: '{0} γαλόνια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'γαλ.',
+      one: '{0} γαλ.',
+      other: '{0} γαλ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'γαλ.',
+      one: '{0} γαλ.',
+      other: '{0} γαλ.',
+    ),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'αγγλοσαξονικά γαλόνια',
-          one: '{0} αγγλοσαξονικό γαλόνι',
-          other: '{0} αγγλοσαξονικά γαλόνια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'αγγλοσαξ. γαλόνια',
-          one: '{0} αγγλοσαξ. γαλόνι',
-          other: '{0} αγγλοσαξ. γαλόνια',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'αγγλοσαξ. γαλόνια',
-          one: '{0} αγγλοσαξ. γαλόνι',
-          other: '{0} αγγλοσαξ. γαλόνια',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'αγγλοσαξονικά γαλόνια',
+      one: '{0} αγγλοσαξονικό γαλόνι',
+      other: '{0} αγγλοσαξονικά γαλόνια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'αγγλοσαξ. γαλόνια',
+      one: '{0} αγγλοσαξ. γαλόνι',
+      other: '{0} αγγλοσαξ. γαλόνια',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'αγγλοσαξ. γαλόνια',
+      one: '{0} αγγλοσαξ. γαλόνι',
+      other: '{0} αγγλοσαξ. γαλόνια',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'τέταρτα του γαλονιού',
-          one: '{0} τέταρτο του γαλονιού',
-          other: '{0} τέταρτα του γαλονιού',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'τέταρτα γαλονιού',
-          one: '{0} τέτ. γαλ.',
-          other: '{0} τέτ. γαλ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'τέτ. γαλ.',
-          one: '{0} τέτ. γαλ.',
-          other: '{0} τέτ. γαλ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'τέταρτα του γαλονιού',
+      one: '{0} τέταρτο του γαλονιού',
+      other: '{0} τέταρτα του γαλονιού',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'τέταρτα γαλονιού',
+      one: '{0} τέτ. γαλ.',
+      other: '{0} τέτ. γαλ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'τέτ. γαλ.',
+      one: '{0} τέτ. γαλ.',
+      other: '{0} τέτ. γαλ.',
+    ),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'πίντες',
-          one: '{0} πίντα',
-          other: '{0} πίντες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'πίντες',
-          one: '{0} πντ',
-          other: '{0} πντ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'πντ',
-          one: '{0} πντ',
-          other: '{0} πντ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'πίντες',
+      one: '{0} πίντα',
+      other: '{0} πίντες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'πίντες',
+      one: '{0} πντ',
+      other: '{0} πντ',
+    ),
+    narrow: UnitCountPattern(_locale, 'πντ', one: '{0} πντ', other: '{0} πντ'),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κύπελλα',
-          one: '{0} κύπελλο',
-          other: '{0} κύπελλα',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κύπ.',
-          one: '{0} κύπ.',
-          other: '{0} κύπ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κύπ.',
-          one: '{0} κύπ.',
-          other: '{0} κύπ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κύπελλα',
+      one: '{0} κύπελλο',
+      other: '{0} κύπελλα',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κύπ.',
+      one: '{0} κύπ.',
+      other: '{0} κύπ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κύπ.',
+      one: '{0} κύπ.',
+      other: '{0} κύπ.',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ουγγιές όγκου',
-          one: '{0} ουγγιά όγκου',
-          other: '{0} ουγγιές όγκου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ουγγιές όγκου',
+      one: '{0} ουγγιά όγκου',
+      other: '{0} ουγγιές όγκου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'αγγλοσαξονικές ουγγιές όγκου',
-          one: '{0} αγγλοσαξονική ουγγιά όγκου',
-          other: '{0} αγγλοσαξονικές ουγγιές όγκου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'αγγλ. ουγγιές όγκου',
-          one: '{0} αγγλ. ουγγιά όγκου',
-          other: '{0} αγγλ. ουγγιές όγκου',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'αγγλ. ουγγιές όγκου',
-          one: '{0} αγγλ. ουγγιά όγκου',
-          other: '{0} αγγλ. ουγγιές όγκου',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'αγγλοσαξονικές ουγγιές όγκου',
+      one: '{0} αγγλοσαξονική ουγγιά όγκου',
+      other: '{0} αγγλοσαξονικές ουγγιές όγκου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'αγγλ. ουγγιές όγκου',
+      one: '{0} αγγλ. ουγγιά όγκου',
+      other: '{0} αγγλ. ουγγιές όγκου',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'αγγλ. ουγγιές όγκου',
+      one: '{0} αγγλ. ουγγιά όγκου',
+      other: '{0} αγγλ. ουγγιές όγκου',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κουταλιές της σούπας',
-          one: '{0} κουταλιά της σούπας',
-          other: '{0} κουταλιές της σούπας',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κ.σ.',
-          one: '{0} κ.σ.',
-          other: '{0} κ.σ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κ.σ.',
-          one: '{0} κ.σ.',
-          other: '{0} κ.σ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κουταλιές της σούπας',
+      one: '{0} κουταλιά της σούπας',
+      other: '{0} κουταλιές της σούπας',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κ.σ.',
+      one: '{0} κ.σ.',
+      other: '{0} κ.σ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κ.σ.',
+      one: '{0} κ.σ.',
+      other: '{0} κ.σ.',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κουταλιές του γλυκού',
-          one: '{0} κουταλιά του γλυκού',
-          other: '{0} κουταλιές του γλυκού',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κ.γ.',
-          one: '{0} κ.γ.',
-          other: '{0} κ.γ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κ.γ.',
-          one: '{0} κ.γ.',
-          other: '{0} κ.γ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κουταλιές του γλυκού',
+      one: '{0} κουταλιά του γλυκού',
+      other: '{0} κουταλιές του γλυκού',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κ.γ.',
+      one: '{0} κ.γ.',
+      other: '{0} κ.γ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κ.γ.',
+      one: '{0} κ.γ.',
+      other: '{0} κ.γ.',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'βαρέλια',
-          one: '{0} βαρέλι',
-          other: '{0} βαρέλια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'βαρέλι',
-          one: '{0} βρλ',
-          other: '{0} βρλ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'βρλ',
-          one: '{0} βρλ',
-          other: '{0} βρλ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'βαρέλια',
+      one: '{0} βαρέλι',
+      other: '{0} βαρέλια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'βαρέλι',
+      one: '{0} βρλ',
+      other: '{0} βρλ',
+    ),
+    narrow: UnitCountPattern(_locale, 'βρλ', one: '{0} βρλ', other: '{0} βρλ'),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'κουταλιά φρούτου',
-          one: '{0} κουταλιά φρούτου',
-          other: '{0} κουταλιές φρούτου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'κ.φρ.',
-          one: '{0} κ.φρ.',
-          other: '{0} κ.φρ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'κ.φρ.',
-          one: '{0} κ.φρ.',
-          other: '{0} κ.φρ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'κουταλιά φρούτου',
+      one: '{0} κουταλιά φρούτου',
+      other: '{0} κουταλιές φρούτου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'κ.φρ.',
+      one: '{0} κ.φρ.',
+      other: '{0} κ.φρ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'κ.φρ.',
+      one: '{0} κ.φρ.',
+      other: '{0} κ.φρ.',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'αγγλοσαξονική κουταλιά φρούτου',
-          one: '{0} αγγλοσαξονική κουταλιά φρούτου',
-          other: '{0} αγγλοσαξονικές κουταλιές φρούτου',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'αγγλ. κουτ. φρ.',
-          one: '{0} αγγλ. κουτ. φρ.',
-          other: '{0} αγγλ. κουτ. φρ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'αγγλ. κ.φρ.',
-          one: '{0} αγγλ. κ.φρ.',
-          other: '{0} αγγλ. κ.φρ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'αγγλοσαξονική κουταλιά φρούτου',
+      one: '{0} αγγλοσαξονική κουταλιά φρούτου',
+      other: '{0} αγγλοσαξονικές κουταλιές φρούτου',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'αγγλ. κουτ. φρ.',
+      one: '{0} αγγλ. κουτ. φρ.',
+      other: '{0} αγγλ. κουτ. φρ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'αγγλ. κ.φρ.',
+      one: '{0} αγγλ. κ.φρ.',
+      other: '{0} αγγλ. κ.φρ.',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'σταγόνα',
-          one: '{0} σταγόνα',
-          other: '{0} σταγόνες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'σταγ.',
-          one: '{0} σταγ.',
-          other: '{0} σταγ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'σταγ.',
-          one: '{0} σταγ.',
-          other: '{0} σταγ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'σταγόνα',
+      one: '{0} σταγόνα',
+      other: '{0} σταγόνες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'σταγ.',
+      one: '{0} σταγ.',
+      other: '{0} σταγ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'σταγ.',
+      one: '{0} σταγ.',
+      other: '{0} σταγ.',
+    ),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'δράμι',
-          one: '{0} δράμι',
-          other: '{0} δράμια',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'δράμι όγκου',
-          one: '{0} δρ. όγκου',
-          other: '{0} δρ. όγκου',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'δρ. όγκου',
-          one: '{0} δρ. όγκου',
-          other: '{0} δρ. όγκου',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'δράμι',
+      one: '{0} δράμι',
+      other: '{0} δράμια',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'δράμι όγκου',
+      one: '{0} δρ. όγκου',
+      other: '{0} δρ. όγκου',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'δρ. όγκου',
+      one: '{0} δρ. όγκου',
+      other: '{0} δρ. όγκου',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μεζούρα',
-          one: '{0} μεζούρα',
-          other: '{0} μεζούρες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μεζ.',
-          one: '{0} μεζ.',
-          other: '{0} μεζ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μεζ.',
-          one: '{0} μεζ.',
-          other: '{0} μεζ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μεζούρα',
+      one: '{0} μεζούρα',
+      other: '{0} μεζούρες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μεζ.',
+      one: '{0} μεζ.',
+      other: '{0} μεζ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μεζ.',
+      one: '{0} μεζ.',
+      other: '{0} μεζ.',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'πρέζα',
-          one: '{0} πρέζα',
-          other: '{0} πρέζες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'πρ.',
-          one: '{0} πρ.',
-          other: '{0} πρ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'πρ.',
-          one: '{0} πρ.',
-          other: '{0} πρ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'πρέζα',
+      one: '{0} πρέζα',
+      other: '{0} πρέζες',
+    ),
+    short: UnitCountPattern(_locale, 'πρ.', one: '{0} πρ.', other: '{0} πρ.'),
+    narrow: UnitCountPattern(_locale, 'πρ.', one: '{0} πρ.', other: '{0} πρ.'),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'αγγλοσαξονικά τέταρτα του γαλονιού',
-          one: '{0} αγγλοσαξονικό τέταρτο του γαλονιού',
-          other: '{0} αγγλοσαξονικά τέταρτα του γαλονιού',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'αγγλ. τέτ. γαλ.',
-          one: '{0} αγγλ. τέτ. γαλ.',
-          other: '{0} αγγλ. τέτ. γαλ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'αγγλ. τέτ. γαλ.',
-          one: '{0} αγγλ. τέτ. γαλ.',
-          other: '{0} αγγλ. τέτ. γαλ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'αγγλοσαξονικά τέταρτα του γαλονιού',
+      one: '{0} αγγλοσαξονικό τέταρτο του γαλονιού',
+      other: '{0} αγγλοσαξονικά τέταρτα του γαλονιού',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'αγγλ. τέτ. γαλ.',
+      one: '{0} αγγλ. τέτ. γαλ.',
+      other: '{0} αγγλ. τέτ. γαλ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'αγγλ. τέτ. γαλ.',
+      one: '{0} αγγλ. τέτ. γαλ.',
+      other: '{0} αγγλ. τέτ. γαλ.',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'φως',
-          one: '{0} φως',
-          other: '{0} φως',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'φως',
-          one: '{0} φως',
-          other: '{0} φως',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'φώς',
-          one: '{0} φως',
-          other: '{0} φως',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'φως', one: '{0} φως', other: '{0} φως'),
+    short: UnitCountPattern(_locale, 'φως', one: '{0} φως', other: '{0} φως'),
+    narrow: UnitCountPattern(_locale, 'φώς', one: '{0} φως', other: '{0} φως'),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'μέρη στο δισεκατομμύριο',
-          one: '{0} μέρος στο δισεκατομμύριο',
-          other: '{0} μέρη στο δισεκατομμύριο',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μέρη/δισεκατομμύριο',
-          one: '{0} μέρος στο δισεκατομμύριο',
-          other: '{0} ppb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μέρη/δισεκατομμύριο',
-          one: '{0} μέρος στο δισεκατομμύριο',
-          other: '{0} ppb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'μέρη στο δισεκατομμύριο',
+      one: '{0} μέρος στο δισεκατομμύριο',
+      other: '{0} μέρη στο δισεκατομμύριο',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μέρη/δισεκατομμύριο',
+      one: '{0} μέρος στο δισεκατομμύριο',
+      other: '{0} ppb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μέρη/δισεκατομμύριο',
+      one: '{0} μέρος στο δισεκατομμύριο',
+      other: '{0} ppb',
+    ),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'νύχτες',
-          one: '{0} νύχτα',
-          other: '{0} νύχτες',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'νύχτ.',
-          one: '{0} νύχτ.',
-          other: '{0} νύχτ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'νύχτ.',
-          one: '{0} νύχτ.',
-          other: '{0} νύχτ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'νύχτες',
+      one: '{0} νύχτα',
+      other: '{0} νύχτες',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'νύχτ.',
+      one: '{0} νύχτ.',
+      other: '{0} νύχτ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'νύχτ.',
+      one: '{0} νύχτ.',
+      other: '{0} νύχτ.',
+    ),
+  );
 }
 
 class DateFieldsEl extends DateFields {
   const DateFieldsEl(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'περίοδος',
-        short: 'περ.',
-        narrow: 'περ.',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'περίοδος', short: 'περ.', narrow: 'περ.');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'έτος',
-          short: 'έτ.',
-          narrow: 'έτ.',
-        ),
-        previous: MultiLength(
-          long: 'πέρσι',
-          short: 'πέρσι',
-          narrow: 'πέρσι',
-        ),
-        now: MultiLength(
-          long: 'φέτος',
-          short: 'φέτος',
-          narrow: 'φέτος',
-        ),
-        next: MultiLength(
-          long: 'επόμενο έτος',
-          short: 'επόμενο έτος',
-          narrow: 'επόμενο έτος',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} έτος',
-            other: 'πριν από {0} έτη',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} έτος',
-            other: 'πριν από {0} έτη',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} έτος πριν',
-            other: '{0} έτη πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} έτος',
-            other: 'σε {0} έτη',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} έτος',
-            other: 'σε {0} έτη',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} έτος',
-            other: 'σε {0} έτη',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'έτος', short: 'έτ.', narrow: 'έτ.'),
+    previous: MultiLength(long: 'πέρσι', short: 'πέρσι', narrow: 'πέρσι'),
+    now: MultiLength(long: 'φέτος', short: 'φέτος', narrow: 'φέτος'),
+    next: MultiLength(
+      long: 'επόμενο έτος',
+      short: 'επόμενο έτος',
+      narrow: 'επόμενο έτος',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} έτος',
+        other: 'πριν από {0} έτη',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} έτος',
+        other: 'πριν από {0} έτη',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} έτος πριν',
+        other: '{0} έτη πριν',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'σε {0} έτος', other: 'σε {0} έτη'),
+      short: RelativeTime(_locale, one: 'σε {0} έτος', other: 'σε {0} έτη'),
+      narrow: RelativeTime(_locale, one: 'σε {0} έτος', other: 'σε {0} έτη'),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'τρίμηνο',
-          short: 'τρίμ.',
-          narrow: 'τρίμ.',
-        ),
-        previous: MultiLength(
-          long: 'προηγούμενο τρίμηνο',
-          short: 'προηγ. τρίμ.',
-          narrow: 'προηγ. τρίμ.',
-        ),
-        now: MultiLength(
-          long: 'τρέχον τρίμηνο',
-          short: 'τρέχον τρίμ.',
-          narrow: 'τρέχον τρίμ.',
-        ),
-        next: MultiLength(
-          long: 'επόμενο τρίμηνο',
-          short: 'επόμ. τρίμ.',
-          narrow: 'επόμ. τρίμ.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} τρίμηνο',
-            other: 'πριν από {0} τρίμηνα',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} τρίμ.',
-            other: 'πριν από {0} τρίμ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} τρίμ. πριν',
-            other: '{0} τρίμ. πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} τρίμηνο',
-            other: 'σε {0} τρίμηνα',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} τρίμ.',
-            other: 'σε {0} τρίμ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} τρίμ.',
-            other: 'σε {0} τρίμ.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'τρίμηνο', short: 'τρίμ.', narrow: 'τρίμ.'),
+    previous: MultiLength(
+      long: 'προηγούμενο τρίμηνο',
+      short: 'προηγ. τρίμ.',
+      narrow: 'προηγ. τρίμ.',
+    ),
+    now: MultiLength(
+      long: 'τρέχον τρίμηνο',
+      short: 'τρέχον τρίμ.',
+      narrow: 'τρέχον τρίμ.',
+    ),
+    next: MultiLength(
+      long: 'επόμενο τρίμηνο',
+      short: 'επόμ. τρίμ.',
+      narrow: 'επόμ. τρίμ.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} τρίμηνο',
+        other: 'πριν από {0} τρίμηνα',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} τρίμ.',
+        other: 'πριν από {0} τρίμ.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} τρίμ. πριν',
+        other: '{0} τρίμ. πριν',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} τρίμηνο',
+        other: 'σε {0} τρίμηνα',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} τρίμ.', other: 'σε {0} τρίμ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} τρίμ.', other: 'σε {0} τρίμ.'),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'μήνας',
-          short: 'μήν.',
-          narrow: 'μήν.',
-        ),
-        previous: MultiLength(
-          long: 'προηγούμενος μήνας',
-          short: 'προηγ. μήνας',
-          narrow: 'προηγ. μήνας',
-        ),
-        now: MultiLength(
-          long: 'τρέχων μήνας',
-          short: 'τρέχων μήνας',
-          narrow: 'τρέχ. μήνας',
-        ),
-        next: MultiLength(
-          long: 'επόμενος μήνας',
-          short: 'επόμ. μήνας',
-          narrow: 'επόμ. μήνας',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} μήνα',
-            other: 'πριν από {0} μήνες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} μήνα',
-            other: 'πριν από {0} μήνες',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} μ. πριν',
-            other: '{0} μ. πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} μήνα',
-            other: 'σε {0} μήνες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} μήνα',
-            other: 'σε {0} μήνες',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} μ.',
-            other: 'σε {0} μ.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'μήνας', short: 'μήν.', narrow: 'μήν.'),
+    previous: MultiLength(
+      long: 'προηγούμενος μήνας',
+      short: 'προηγ. μήνας',
+      narrow: 'προηγ. μήνας',
+    ),
+    now: MultiLength(
+      long: 'τρέχων μήνας',
+      short: 'τρέχων μήνας',
+      narrow: 'τρέχ. μήνας',
+    ),
+    next: MultiLength(
+      long: 'επόμενος μήνας',
+      short: 'επόμ. μήνας',
+      narrow: 'επόμ. μήνας',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} μήνα',
+        other: 'πριν από {0} μήνες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} μήνα',
+        other: 'πριν από {0} μήνες',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} μ. πριν', other: '{0} μ. πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'σε {0} μήνα', other: 'σε {0} μήνες'),
+      short: RelativeTime(_locale, one: 'σε {0} μήνα', other: 'σε {0} μήνες'),
+      narrow: RelativeTime(_locale, one: 'σε {0} μ.', other: 'σε {0} μ.'),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'εβδομάδα',
-          short: 'εβδ.',
-          narrow: 'εβδ.',
-        ),
-        previous: MultiLength(
-          long: 'προηγούμενη εβδομάδα',
-          short: 'προηγ. εβδομάδα',
-          narrow: 'προηγ. εβδ.',
-        ),
-        now: MultiLength(
-          long: 'τρέχουσα εβδομάδα',
-          short: 'τρέχ. εβδομάδα',
-          narrow: 'τρέχ. εβδ.',
-        ),
-        next: MultiLength(
-          long: 'επόμενη εβδομάδα',
-          short: 'επόμ. εβδομάδα',
-          narrow: 'επόμ. εβδ.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} εβδομάδα',
-            other: 'πριν από {0} εβδομάδες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} εβδ.',
-            other: 'πριν από {0} εβδ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} εβδ. πριν',
-            other: '{0} εβδ. πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} εβδομάδα',
-            other: 'σε {0} εβδομάδες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} εβδ.',
-            other: 'σε {0} εβδ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} εβδ.',
-            other: 'σε {0} εβδ.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'εβδομάδα', short: 'εβδ.', narrow: 'εβδ.'),
+    previous: MultiLength(
+      long: 'προηγούμενη εβδομάδα',
+      short: 'προηγ. εβδομάδα',
+      narrow: 'προηγ. εβδ.',
+    ),
+    now: MultiLength(
+      long: 'τρέχουσα εβδομάδα',
+      short: 'τρέχ. εβδομάδα',
+      narrow: 'τρέχ. εβδ.',
+    ),
+    next: MultiLength(
+      long: 'επόμενη εβδομάδα',
+      short: 'επόμ. εβδομάδα',
+      narrow: 'επόμ. εβδ.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} εβδομάδα',
+        other: 'πριν από {0} εβδομάδες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} εβδ.',
+        other: 'πριν από {0} εβδ.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} εβδ. πριν',
+        other: '{0} εβδ. πριν',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} εβδομάδα',
+        other: 'σε {0} εβδομάδες',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} εβδ.', other: 'σε {0} εβδ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} εβδ.', other: 'σε {0} εβδ.'),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'εβδομάδα μήνα',
-        short: 'εβδ. μήνα',
-        narrow: 'εβδ. μήνα',
-      );
+    long: 'εβδομάδα μήνα',
+    short: 'εβδ. μήνα',
+    narrow: 'εβδ. μήνα',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ημέρα',
-          short: 'ημ.',
-          narrow: 'ημ.',
-        ),
-        previous: MultiLength(
-          long: 'χθες',
-          short: 'χθες',
-          narrow: 'χθες',
-        ),
-        now: MultiLength(
-          long: 'σήμερα',
-          short: 'σήμερα',
-          narrow: 'σήμερα',
-        ),
-        next: MultiLength(
-          long: 'αύριο',
-          short: 'αύριο',
-          narrow: 'αύριο',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} ημέρα',
-            other: 'πριν από {0} ημέρες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} ημ.',
-            other: 'πριν από {0} ημ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} ημ. πριν',
-            other: '{0} ημ. πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} ημέρα',
-            other: 'σε {0} ημέρες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} ημ.',
-            other: 'σε {0} ημ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} ημ.',
-            other: 'σε {0} ημ.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ημέρα', short: 'ημ.', narrow: 'ημ.'),
+    previous: MultiLength(long: 'χθες', short: 'χθες', narrow: 'χθες'),
+    now: MultiLength(long: 'σήμερα', short: 'σήμερα', narrow: 'σήμερα'),
+    next: MultiLength(long: 'αύριο', short: 'αύριο', narrow: 'αύριο'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} ημέρα',
+        other: 'πριν από {0} ημέρες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} ημ.',
+        other: 'πριν από {0} ημ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} ημ. πριν', other: '{0} ημ. πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'σε {0} ημέρα', other: 'σε {0} ημέρες'),
+      short: RelativeTime(_locale, one: 'σε {0} ημ.', other: 'σε {0} ημ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} ημ.', other: 'σε {0} ημ.'),
+    ),
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'ημέρα έτους',
-        short: 'ημ. έτους',
-        narrow: 'ημ. έτους',
-      );
+    long: 'ημέρα έτους',
+    short: 'ημ. έτους',
+    narrow: 'ημ. έτους',
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'καθημερινή',
-        short: 'καθημερ.',
-        narrow: 'καθημερ.',
-      );
+    long: 'καθημερινή',
+    short: 'καθημερ.',
+    narrow: 'καθημερ.',
+  );
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'καθημερινή μήνα',
-        short: 'καθημερ. μήνα',
-        narrow: 'καθημερ. μήνα',
-      );
+    long: 'καθημερινή μήνα',
+    short: 'καθημερ. μήνα',
+    narrow: 'καθημερ. μήνα',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'προηγούμενη Κυριακή',
-          short: 'προηγ. Κυρ.',
-          narrow: 'προηγ. Κυ',
-        ),
-        now: MultiLength(
-          long: 'αυτήν την Κυριακή',
-          short: 'αυτήν την Κυρ.',
-          narrow: 'αυτήν την Κυ',
-        ),
-        next: MultiLength(
-          long: 'επόμενη Κυριακή',
-          short: 'επόμ. Κυρ.',
-          narrow: 'επόμ. Κυ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Κυριακή',
-            other: 'πριν από {0} Κυριακές',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Κυρ.',
-            other: 'πριν από {0} Κυρ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} Κυ πριν',
-            other: '{0} Κυ πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} Κυριακή',
-            other: 'σε {0} Κυριακές',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} Κυρ.',
-            other: 'σε {0} Κυρ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} Κυ',
-            other: 'σε {0} Κυ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'προηγούμενη Κυριακή',
+      short: 'προηγ. Κυρ.',
+      narrow: 'προηγ. Κυ',
+    ),
+    now: MultiLength(
+      long: 'αυτήν την Κυριακή',
+      short: 'αυτήν την Κυρ.',
+      narrow: 'αυτήν την Κυ',
+    ),
+    next: MultiLength(
+      long: 'επόμενη Κυριακή',
+      short: 'επόμ. Κυρ.',
+      narrow: 'επόμ. Κυ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Κυριακή',
+        other: 'πριν από {0} Κυριακές',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Κυρ.',
+        other: 'πριν από {0} Κυρ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} Κυ πριν', other: '{0} Κυ πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} Κυριακή',
+        other: 'σε {0} Κυριακές',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} Κυρ.', other: 'σε {0} Κυρ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} Κυ', other: 'σε {0} Κυ'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'προηγούμενη Δευτέρα',
-          short: 'προηγ. Δευτ.',
-          narrow: 'προηγ. Δε',
-        ),
-        now: MultiLength(
-          long: 'αυτήν τη Δευτέρα',
-          short: 'αυτήν τη Δευτ.',
-          narrow: 'αυτήν τη Δε',
-        ),
-        next: MultiLength(
-          long: 'επόμενη Δευτέρα',
-          short: 'επόμ. Δευτ.',
-          narrow: 'επόμ. Δε',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Δευτέρα',
-            other: 'πριν από {0} Δευτέρες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Δευτ.',
-            other: 'πριν από {0} Δευτ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} Δε πριν',
-            other: '{0} Δε πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} Δευτέρα',
-            other: 'σε {0} Δευτέρες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} Δευτ.',
-            other: 'σε {0} Δευτ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} Δε',
-            other: 'σε {0} Δε',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'προηγούμενη Δευτέρα',
+      short: 'προηγ. Δευτ.',
+      narrow: 'προηγ. Δε',
+    ),
+    now: MultiLength(
+      long: 'αυτήν τη Δευτέρα',
+      short: 'αυτήν τη Δευτ.',
+      narrow: 'αυτήν τη Δε',
+    ),
+    next: MultiLength(
+      long: 'επόμενη Δευτέρα',
+      short: 'επόμ. Δευτ.',
+      narrow: 'επόμ. Δε',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Δευτέρα',
+        other: 'πριν από {0} Δευτέρες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Δευτ.',
+        other: 'πριν από {0} Δευτ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} Δε πριν', other: '{0} Δε πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} Δευτέρα',
+        other: 'σε {0} Δευτέρες',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} Δευτ.', other: 'σε {0} Δευτ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} Δε', other: 'σε {0} Δε'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'προηγούμενη Τρίτη',
-          short: 'προηγ. Τρ.',
-          narrow: 'προηγ. Τρ',
-        ),
-        now: MultiLength(
-          long: 'αυτήν την Τρίτη',
-          short: 'αυτήν την Τρ.',
-          narrow: 'αυτήν την Τρ',
-        ),
-        next: MultiLength(
-          long: 'επόμενη Τρίτη',
-          short: 'επόμ. Τρ.',
-          narrow: 'επόμ. Τρ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Τρίτη',
-            other: 'πριν από {0} Τρίτες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Τρ.',
-            other: 'πριν από {0} Τρ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} Τρ πριν',
-            other: '{0} Τρ πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} Τρίτη',
-            other: 'σε {0} Τρίτες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} Τρ.',
-            other: 'σε {0} Τρ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} Τρ',
-            other: 'σε {0} Τρ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'προηγούμενη Τρίτη',
+      short: 'προηγ. Τρ.',
+      narrow: 'προηγ. Τρ',
+    ),
+    now: MultiLength(
+      long: 'αυτήν την Τρίτη',
+      short: 'αυτήν την Τρ.',
+      narrow: 'αυτήν την Τρ',
+    ),
+    next: MultiLength(
+      long: 'επόμενη Τρίτη',
+      short: 'επόμ. Τρ.',
+      narrow: 'επόμ. Τρ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Τρίτη',
+        other: 'πριν από {0} Τρίτες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Τρ.',
+        other: 'πριν από {0} Τρ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} Τρ πριν', other: '{0} Τρ πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'σε {0} Τρίτη', other: 'σε {0} Τρίτες'),
+      short: RelativeTime(_locale, one: 'σε {0} Τρ.', other: 'σε {0} Τρ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} Τρ', other: 'σε {0} Τρ'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'προηγούμενη Τετάρτη',
-          short: 'προηγ. Τετ.',
-          narrow: 'προηγ. Τε',
-        ),
-        now: MultiLength(
-          long: 'αυτήν την Τετάρτη',
-          short: 'αυτήν την Τετ.',
-          narrow: 'αυτήν την Τε',
-        ),
-        next: MultiLength(
-          long: 'επόμενη Τετάρτη',
-          short: 'επόμ. Τετ.',
-          narrow: 'επόμ. Τε',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Τετάρτη',
-            other: 'πριν από {0} Τετάρτες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Τετ.',
-            other: 'πριν από {0} Τετ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} Τε πριν',
-            other: '{0} Τε πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} Τετάρτη',
-            other: 'σε {0} Τετάρτες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} Τετ.',
-            other: 'σε {0} Τετ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} Τε',
-            other: 'σε {0} Τε',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'προηγούμενη Τετάρτη',
+      short: 'προηγ. Τετ.',
+      narrow: 'προηγ. Τε',
+    ),
+    now: MultiLength(
+      long: 'αυτήν την Τετάρτη',
+      short: 'αυτήν την Τετ.',
+      narrow: 'αυτήν την Τε',
+    ),
+    next: MultiLength(
+      long: 'επόμενη Τετάρτη',
+      short: 'επόμ. Τετ.',
+      narrow: 'επόμ. Τε',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Τετάρτη',
+        other: 'πριν από {0} Τετάρτες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Τετ.',
+        other: 'πριν από {0} Τετ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} Τε πριν', other: '{0} Τε πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} Τετάρτη',
+        other: 'σε {0} Τετάρτες',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} Τετ.', other: 'σε {0} Τετ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} Τε', other: 'σε {0} Τε'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'προηγούμενη Πέμπτη',
-          short: 'προηγ. Πέμ.',
-          narrow: 'προηγ. Πέ',
-        ),
-        now: MultiLength(
-          long: 'αυτήν την Πέμπτη',
-          short: 'αυτήν την Πέμ.',
-          narrow: 'αυτήν την Πέ',
-        ),
-        next: MultiLength(
-          long: 'επόμενη Πέμπτη',
-          short: 'επόμ. Πέμ.',
-          narrow: 'επόμ. Πέ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Πέμπτη',
-            other: 'πριν από {0} Πέμπτες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Πέμ.',
-            other: 'πριν από {0} Πέμ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} Πέ πριν',
-            other: '{0} Πέ πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} Πέμπτη',
-            other: 'σε {0} Πέμπτες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} Πέμ.',
-            other: 'σε {0} Πέμ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} Πέ',
-            other: 'σε {0} Πέ',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'προηγούμενη Πέμπτη',
+      short: 'προηγ. Πέμ.',
+      narrow: 'προηγ. Πέ',
+    ),
+    now: MultiLength(
+      long: 'αυτήν την Πέμπτη',
+      short: 'αυτήν την Πέμ.',
+      narrow: 'αυτήν την Πέ',
+    ),
+    next: MultiLength(
+      long: 'επόμενη Πέμπτη',
+      short: 'επόμ. Πέμ.',
+      narrow: 'επόμ. Πέ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Πέμπτη',
+        other: 'πριν από {0} Πέμπτες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Πέμ.',
+        other: 'πριν από {0} Πέμ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} Πέ πριν', other: '{0} Πέ πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} Πέμπτη',
+        other: 'σε {0} Πέμπτες',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} Πέμ.', other: 'σε {0} Πέμ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} Πέ', other: 'σε {0} Πέ'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'προηγούμενη Παρασκευή',
-          short: 'προηγ. Παρ.',
-          narrow: 'προηγ. Πα',
-        ),
-        now: MultiLength(
-          long: 'αυτήν την Παρασκευή',
-          short: 'αυτήν την Παρ.',
-          narrow: 'αυτήν την Πα',
-        ),
-        next: MultiLength(
-          long: 'επόμενη Παρασκευή',
-          short: 'επόμ. Παρ.',
-          narrow: 'επόμ. Πα',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Παρασκευή',
-            other: 'πριν από {0} Παρασκευές',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Παρ.',
-            other: 'πριν από {0} Παρ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} Πα πριν',
-            other: '{0} Πα πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} Παρασκευή',
-            other: 'σε {0} Παρασκευές',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} Παρ.',
-            other: 'σε {0} Παρ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} Πα',
-            other: 'σε {0} Πα',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'προηγούμενη Παρασκευή',
+      short: 'προηγ. Παρ.',
+      narrow: 'προηγ. Πα',
+    ),
+    now: MultiLength(
+      long: 'αυτήν την Παρασκευή',
+      short: 'αυτήν την Παρ.',
+      narrow: 'αυτήν την Πα',
+    ),
+    next: MultiLength(
+      long: 'επόμενη Παρασκευή',
+      short: 'επόμ. Παρ.',
+      narrow: 'επόμ. Πα',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Παρασκευή',
+        other: 'πριν από {0} Παρασκευές',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Παρ.',
+        other: 'πριν από {0} Παρ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} Πα πριν', other: '{0} Πα πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} Παρασκευή',
+        other: 'σε {0} Παρασκευές',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} Παρ.', other: 'σε {0} Παρ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} Πα', other: 'σε {0} Πα'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'προηγούμενο Σάββατο',
-          short: 'προηγ. Σάβ.',
-          narrow: 'προηγ. Σά',
-        ),
-        now: MultiLength(
-          long: 'αυτό το Σάββατο',
-          short: 'αυτό το Σάβ.',
-          narrow: 'αυτό το Σά',
-        ),
-        next: MultiLength(
-          long: 'επόμενο Σάββατο',
-          short: 'επόμ. Σάβ.',
-          narrow: 'επόμ. Σά',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Σάββατο',
-            other: 'πριν από {0} Σάββατα',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} Σάβ.',
-            other: 'πριν από {0} Σάβ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} Σά πριν',
-            other: '{0} Σά πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} Σάββατο',
-            other: 'σε {0} Σάββατα',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} Σάβ.',
-            other: 'σε {0} Σάβ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} Σά',
-            other: 'σε {0} Σά',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'προηγούμενο Σάββατο',
+      short: 'προηγ. Σάβ.',
+      narrow: 'προηγ. Σά',
+    ),
+    now: MultiLength(
+      long: 'αυτό το Σάββατο',
+      short: 'αυτό το Σάβ.',
+      narrow: 'αυτό το Σά',
+    ),
+    next: MultiLength(
+      long: 'επόμενο Σάββατο',
+      short: 'επόμ. Σάβ.',
+      narrow: 'επόμ. Σά',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Σάββατο',
+        other: 'πριν από {0} Σάββατα',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} Σάβ.',
+        other: 'πριν από {0} Σάβ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} Σά πριν', other: '{0} Σά πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} Σάββατο',
+        other: 'σε {0} Σάββατα',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} Σάβ.', other: 'σε {0} Σάβ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} Σά', other: 'σε {0} Σά'),
+    ),
+  );
 
   @override
-  MultiLength get dayperiod => const MultiLength(
-        long: 'π.μ./μ.μ.',
-        short: 'πμ/μμ',
-        narrow: 'πμ/μμ',
-      );
+  MultiLength get dayperiod =>
+      const MultiLength(long: 'π.μ./μ.μ.', short: 'πμ/μμ', narrow: 'πμ/μμ');
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'ώρα',
-          short: 'ώ.',
-          narrow: 'ώ.',
-        ),
-        now: MultiLength(
-          long: 'τρέχουσα ώρα',
-          short: 'τρέχουσα ώρα',
-          narrow: 'τρέχουσα ώρα',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} ώρα',
-            other: 'πριν από {0} ώρες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} ώ.',
-            other: 'πριν από {0} ώ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} ώ. πριν',
-            other: '{0} ώ. πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} ώρα',
-            other: 'σε {0} ώρες',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} ώ.',
-            other: 'σε {0} ώ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} ώ.',
-            other: 'σε {0} ώ.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ώρα', short: 'ώ.', narrow: 'ώ.'),
+    now: MultiLength(
+      long: 'τρέχουσα ώρα',
+      short: 'τρέχουσα ώρα',
+      narrow: 'τρέχουσα ώρα',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} ώρα',
+        other: 'πριν από {0} ώρες',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} ώ.',
+        other: 'πριν από {0} ώ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} ώ. πριν', other: '{0} ώ. πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'σε {0} ώρα', other: 'σε {0} ώρες'),
+      short: RelativeTime(_locale, one: 'σε {0} ώ.', other: 'σε {0} ώ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} ώ.', other: 'σε {0} ώ.'),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'λεπτό',
-          short: 'λεπ.',
-          narrow: 'λ.',
-        ),
-        now: MultiLength(
-          long: 'τρέχον λεπτό',
-          short: 'τρέχον λεπτό',
-          narrow: 'τρέχον λεπτό',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} λεπτό',
-            other: 'πριν από {0} λεπτά',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} λεπ.',
-            other: 'πριν από {0} λεπ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} λ. πριν',
-            other: '{0} λ. πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} λεπτό',
-            other: 'σε {0} λεπτά',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} λεπ.',
-            other: 'σε {0} λεπ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} λ.',
-            other: 'σε {0} λ.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'λεπτό', short: 'λεπ.', narrow: 'λ.'),
+    now: MultiLength(
+      long: 'τρέχον λεπτό',
+      short: 'τρέχον λεπτό',
+      narrow: 'τρέχον λεπτό',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} λεπτό',
+        other: 'πριν από {0} λεπτά',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} λεπ.',
+        other: 'πριν από {0} λεπ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} λ. πριν', other: '{0} λ. πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'σε {0} λεπτό', other: 'σε {0} λεπτά'),
+      short: RelativeTime(_locale, one: 'σε {0} λεπ.', other: 'σε {0} λεπ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} λ.', other: 'σε {0} λ.'),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'δευτερόλεπτο',
-          short: 'δευτ.',
-          narrow: 'δ.',
-        ),
-        now: MultiLength(
-          long: 'τώρα',
-          short: 'τώρα',
-          narrow: 'τώρα',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'πριν από {0} δευτερόλεπτο',
-            other: 'πριν από {0} δευτερόλεπτα',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'πριν από {0} δευτ.',
-            other: 'πριν από {0} δευτ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} δ. πριν',
-            other: '{0} δ. πριν',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'σε {0} δευτερόλεπτο',
-            other: 'σε {0} δευτερόλεπτα',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'σε {0} δευτ.',
-            other: 'σε {0} δευτ.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'σε {0} δ.',
-            other: 'σε {0} δ.',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'δευτερόλεπτο',
+      short: 'δευτ.',
+      narrow: 'δ.',
+    ),
+    now: MultiLength(long: 'τώρα', short: 'τώρα', narrow: 'τώρα'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'πριν από {0} δευτερόλεπτο',
+        other: 'πριν από {0} δευτερόλεπτα',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'πριν από {0} δευτ.',
+        other: 'πριν από {0} δευτ.',
+      ),
+      narrow: RelativeTime(_locale, one: '{0} δ. πριν', other: '{0} δ. πριν'),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'σε {0} δευτερόλεπτο',
+        other: 'σε {0} δευτερόλεπτα',
+      ),
+      short: RelativeTime(_locale, one: 'σε {0} δευτ.', other: 'σε {0} δευτ.'),
+      narrow: RelativeTime(_locale, one: 'σε {0} δ.', other: 'σε {0} δ.'),
+    ),
+  );
 
   @override
-  MultiLength get zone => const MultiLength(
-        long: 'ζώνη ώρας',
-        short: 'ζώνη',
-        narrow: 'ζώνη',
-      );
+  MultiLength get zone =>
+      const MultiLength(long: 'ζώνη ώρας', short: 'ζώνη', narrow: 'ζώνη');
 }
 
 class LanguagesEl extends Languages {
@@ -5353,8 +4605,12 @@ class LanguagesEl extends Languages {
   static const _chp = Language('chp', 'Τσίπιουαν');
   static const _chr = Language('chr', 'Τσερόκι');
   static const _chy = Language('chy', 'Τσεγιέν');
-  static const _ckb = Language('ckb', 'Κεντρικά Κουρδικά',
-      variant: 'Κουρδικά, Σοράνι', menu: 'Κουρδικά, Κεντρικά');
+  static const _ckb = Language(
+    'ckb',
+    'Κεντρικά Κουρδικά',
+    variant: 'Κουρδικά, Σοράνι',
+    menu: 'Κουρδικά, Κεντρικά',
+  );
   static const _clc = Language('clc', 'Τσιλκότιν');
   static const _co = Language('co', 'Κορσικανικά');
   static const _cop = Language('cop', 'Κοπτικά');
@@ -5404,10 +4660,16 @@ class LanguagesEl extends Languages {
   static const _en = Language('en', 'Αγγλικά');
   static const _enAU = Language('en-AU', 'Αγγλικά Αυστραλίας');
   static const _enCA = Language('en-CA', 'Αγγλικά Καναδά');
-  static const _enGB =
-      Language('en-GB', 'Αγγλικά Βρετανίας', short: 'Αγγλικά ΗΒ');
-  static const _enUS =
-      Language('en-US', 'Αγγλικά Αμερικής', short: 'Αγγλικά ΗΠΑ');
+  static const _enGB = Language(
+    'en-GB',
+    'Αγγλικά Βρετανίας',
+    short: 'Αγγλικά ΗΒ',
+  );
+  static const _enUS = Language(
+    'en-US',
+    'Αγγλικά Αμερικής',
+    short: 'Αγγλικά ΗΠΑ',
+  );
   static const _enm = Language('enm', 'Μέσα Αγγλικά');
   static const _eo = Language('eo', 'Εσπεράντο');
   static const _es = Language('es', 'Ισπανικά');
@@ -5827,8 +5089,11 @@ class LanguagesEl extends Languages {
   static const _yi = Language('yi', 'Γίντις');
   static const _yo = Language('yo', 'Γιορούμπα');
   static const _yrl = Language('yrl', 'Νινγκατού');
-  static const _yue =
-      Language('yue', 'Καντονέζικα', menu: 'Κινεζικά, Καντονέζικα');
+  static const _yue = Language(
+    'yue',
+    'Καντονέζικα',
+    menu: 'Κινεζικά, Καντονέζικα',
+  );
   static const _za = Language('za', 'Ζουάνγκ');
   static const _zap = Language('zap', 'Ζάποτεκ');
   static const _zbl = Language('zbl', 'Σύμβολα Bliss');
@@ -7769,8 +7034,10 @@ class ScriptsEl extends Scripts {
   static const _bugi = Script('Bugi', 'Μπούγκις');
   static const _buhd = Script('Buhd', 'Μπουχίντ');
   static const _cakm = Script('Cakm', 'Τσάκμα');
-  static const _cans =
-      Script('Cans', 'Ενοποιημένοι Καναδεζικοί Συλλαβισμοί Ιθαγενών');
+  static const _cans = Script(
+    'Cans',
+    'Ενοποιημένοι Καναδεζικοί Συλλαβισμοί Ιθαγενών',
+  );
   static const _cari = Script('Cari', 'Καριάν');
   static const _cham = Script('Cham', 'Τσαμ');
   static const _cher = Script('Cher', 'Τσερόκι');
@@ -7796,10 +7063,16 @@ class ScriptsEl extends Scripts {
   static const _hang = Script('Hang', 'Χανγκούλ');
   static const _hani = Script('Hani', 'Χαν');
   static const _hano = Script('Hano', 'Χανούνου');
-  static const _hans =
-      Script('Hans', 'Απλοποιημένο', standAlone: 'Απλοποιημένο Χαν');
-  static const _hant =
-      Script('Hant', 'Παραδοσιακό', standAlone: 'Παραδοσιακό Χαν');
+  static const _hans = Script(
+    'Hans',
+    'Απλοποιημένο',
+    standAlone: 'Απλοποιημένο Χαν',
+  );
+  static const _hant = Script(
+    'Hant',
+    'Παραδοσιακό',
+    standAlone: 'Παραδοσιακό Χαν',
+  );
   static const _hebr = Script('Hebr', 'Εβραϊκό');
   static const _hira = Script('Hira', 'Χιραγκάνα');
   static const _hmng = Script('Hmng', 'Παχάχ Χμονγκ');
@@ -8531,14 +7804,23 @@ class TerritoriesEl extends Territories {
   static const _bz = Territory('BZ', 'Μπελίζ');
   static const _ca = Territory('CA', 'Καναδάς');
   static const _cc = Territory('CC', 'Νήσοι Κόκος (Κίλινγκ)');
-  static const _cd =
-      Territory('CD', 'Κονγκό - Κινσάσα', variant: 'Κονγκό (ΛΔΚ)');
+  static const _cd = Territory(
+    'CD',
+    'Κονγκό - Κινσάσα',
+    variant: 'Κονγκό (ΛΔΚ)',
+  );
   static const _cf = Territory('CF', 'Κεντροαφρικανική Δημοκρατία');
-  static const _cg =
-      Territory('CG', 'Κονγκό - Μπραζαβίλ', variant: 'Κονγκό (Δημοκρατία)');
+  static const _cg = Territory(
+    'CG',
+    'Κονγκό - Μπραζαβίλ',
+    variant: 'Κονγκό (Δημοκρατία)',
+  );
   static const _ch = Territory('CH', 'Ελβετία');
-  static const _ci =
-      Territory('CI', 'Ακτή Ελεφαντοστού', variant: 'Ακτή Ελεφαντοστού');
+  static const _ci = Territory(
+    'CI',
+    'Ακτή Ελεφαντοστού',
+    variant: 'Ακτή Ελεφαντοστού',
+  );
   static const _ck = Territory('CK', 'Νήσοι Κουκ');
   static const _cl = Territory('CL', 'Χιλή');
   static const _cm = Territory('CM', 'Καμερούν');
@@ -8571,8 +7853,11 @@ class TerritoriesEl extends Territories {
   static const _ez = Territory('EZ', 'Ευρωζώνη');
   static const _fi = Territory('FI', 'Φινλανδία');
   static const _fj = Territory('FJ', 'Φίτζι');
-  static const _fk = Territory('FK', 'Νήσοι Φόκλαντ',
-      variant: 'Νήσοι Φόκλαντ (Νήσοι Μαλβίνας)');
+  static const _fk = Territory(
+    'FK',
+    'Νήσοι Φόκλαντ',
+    variant: 'Νήσοι Φόκλαντ (Νήσοι Μαλβίνας)',
+  );
   static const _fm = Territory('FM', 'Μικρονησία');
   static const _fo = Territory('FO', 'Νήσοι Φερόες');
   static const _fr = Territory('FR', 'Γαλλία');
@@ -8590,14 +7875,19 @@ class TerritoriesEl extends Territories {
   static const _gp = Territory('GP', 'Γουαδελούπη');
   static const _gq = Territory('GQ', 'Ισημερινή Γουινέα');
   static const _gr = Territory('GR', 'Ελλάδα');
-  static const _gs =
-      Territory('GS', 'Νήσοι Νότια Γεωργία και Νότιες Σάντουιτς');
+  static const _gs = Territory(
+    'GS',
+    'Νήσοι Νότια Γεωργία και Νότιες Σάντουιτς',
+  );
   static const _gt = Territory('GT', 'Γουατεμάλα');
   static const _gu = Territory('GU', 'Γκουάμ');
   static const _gw = Territory('GW', 'Γουινέα Μπισάου');
   static const _gy = Territory('GY', 'Γουιάνα');
-  static const _hk =
-      Territory('HK', 'Χονγκ Κονγκ ΕΔΠ Κίνας', short: 'Χονγκ Κονγκ');
+  static const _hk = Territory(
+    'HK',
+    'Χονγκ Κονγκ ΕΔΠ Κίνας',
+    short: 'Χονγκ Κονγκ',
+  );
   static const _hm = Territory('HM', 'Νήσοι Χερντ και Μακντόναλντ');
   static const _hn = Territory('HN', 'Ονδούρα');
   static const _hr = Territory('HR', 'Κροατία');
@@ -8674,8 +7964,11 @@ class TerritoriesEl extends Territories {
   static const _np = Territory('NP', 'Νεπάλ');
   static const _nr = Territory('NR', 'Ναουρού');
   static const _nu = Territory('NU', 'Νιούε');
-  static const _nz =
-      Territory('NZ', 'Νέα Ζηλανδία', variant: 'Αοτεαρόα Νέα Ζηλανδία');
+  static const _nz = Territory(
+    'NZ',
+    'Νέα Ζηλανδία',
+    variant: 'Αοτεαρόα Νέα Ζηλανδία',
+  );
   static const _om = Territory('OM', 'Ομάν');
   static const _pa = Territory('PA', 'Παναμάς');
   static const _pe = Territory('PE', 'Περού');
@@ -8687,8 +7980,11 @@ class TerritoriesEl extends Territories {
   static const _pm = Territory('PM', 'Σεν Πιερ και Μικελόν');
   static const _pn = Territory('PN', 'Νήσοι Πίτκερν');
   static const _pr = Territory('PR', 'Πουέρτο Ρίκο');
-  static const _ps =
-      Territory('PS', 'Παλαιστινιακά Εδάφη', short: 'Παλαιστίνη');
+  static const _ps = Territory(
+    'PS',
+    'Παλαιστινιακά Εδάφη',
+    short: 'Παλαιστίνη',
+  );
   static const _pt = Territory('PT', 'Πορτογαλία');
   static const _pw = Territory('PW', 'Παλάου');
   static const _py = Territory('PY', 'Παραγουάη');
@@ -9737,14 +9033,18 @@ class VariantsEl extends Variants {
   static const _$1901 = Variant('1901', 'Παραδοσιακή γερμανική ορθογραφία');
   static const _$1994 = Variant('1994', 'Τυποποιημένη ορθογραφία Ρεσιάν');
   static const _$1996 = Variant('1996', 'Γερμανική ορθογραφία του 1996');
-  static const _$1606NICT =
-      Variant('1606NICT', 'Νεότερα Μέσα Γαλλικά του 1606');
+  static const _$1606NICT = Variant(
+    '1606NICT',
+    'Νεότερα Μέσα Γαλλικά του 1606',
+  );
   static const _$1694ACAD = Variant('1694ACAD', 'Πρώιμα Σύγχρονα Γαλλικά');
   static const _$1959ACAD = Variant('1959ACAD', 'Ακαδημαϊκά');
   static const _arevela = Variant('AREVELA', 'Ανατολικά Αρμενικά');
   static const _arevmda = Variant('AREVMDA', 'Δυτικά Αρμενικά');
-  static const _baku1926 =
-      Variant('BAKU1926', 'Ενοποιημένη τουρκική λατινική αλφάβητος');
+  static const _baku1926 = Variant(
+    'BAKU1926',
+    'Ενοποιημένη τουρκική λατινική αλφάβητος',
+  );
   static const _biske = Variant('BISKE', 'Διάλεκτος Σαν Τζιόρτζιο/Βίλα');
   static const _boont = Variant('BOONT', 'Μπούντλινγκ');
   static const _fonipa = Variant('FONIPA', 'Διεθνής φωνητική αλφάβητος');
@@ -9761,14 +9061,18 @@ class VariantsEl extends Variants {
   static const _revised = Variant('REVISED', 'Αναθεωρημένη ορθογραφία');
   static const _rozaj = Variant('ROZAJ', 'Ρεσιάν');
   static const _saaho = Variant('SAAHO', 'Σάχο');
-  static const _scotland =
-      Variant('SCOTLAND', 'Σκοτσεζικά τυποποιημένα Αγγλικά');
+  static const _scotland = Variant(
+    'SCOTLAND',
+    'Σκοτσεζικά τυποποιημένα Αγγλικά',
+  );
   static const _scouse = Variant('SCOUSE', 'Σκουζ');
   static const _solba = Variant('SOLBA', 'Διάλεκτος Στολβιτζά/Σολμπικά');
   static const _tarask = Variant('TARASK', 'Ταρασκιεβική ορθογραφία');
   static const _uccor = Variant('UCCOR', 'Ενωποιημένη ορθογραφία');
-  static const _ucrcor =
-      Variant('UCRCOR', 'Ενωποιημένη αναθεωρημένη ορθογραφία');
+  static const _ucrcor = Variant(
+    'UCRCOR',
+    'Ενωποιημένη αναθεωρημένη ορθογραφία',
+  );
   static const _valencia = Variant('VALENCIA', 'Βαλενθιανά');
   static const _wadegile = Variant('WADEGILE', 'Εκλατινισμένα Γουάντ-Γκιλς');
 
@@ -14234,684 +13538,2012 @@ class SubdivisionsEl extends Subdivisions {
 class CurrenciesEl extends Currencies {
   const CurrenciesEl(super.cld);
 
-  static const _adp = Currency(_cld, 'ADP', 'Πεσέτα Ανδόρας',
-      one: 'πεσέτα Ανδόρας', other: 'πεσέτες Ανδόρας');
-  static const _aed = Currency(_cld, 'AED', 'Ντιράμ Ηνωμένων Αραβικών Εμιράτων',
-      one: 'ντιράμ Ηνωμένων Αραβικών Εμιράτων',
-      other: 'ντιράμ Ηνωμένων Αραβικών Εμιράτων');
-  static const _afa = Currency(_cld, 'AFA', 'Αφγανί Αφγανιστάν (1927–2002)',
-      one: 'αφγάνι Αφγανιστάν (AFA)', other: 'αφγάνι Αφγανιστάν (AFA)');
-  static const _afn = Currency(_cld, 'AFN', 'Αφγάνι Αφγανιστάν',
-      one: 'αφγάνι Αφγανιστάν', other: 'αφγάνια Αφγανιστάν', symbolNarrow: '؋');
-  static const _all = Currency(_cld, 'ALL', 'Λεκ Αλβανίας',
-      one: 'λεκ Αλβανίας', other: 'λεκ Αλβανίας');
-  static const _amd = Currency(_cld, 'AMD', 'Ντραμ Αρμενίας',
-      one: 'ντραμ Αρμενίας', other: 'ντραμ Αρμενίας', symbolNarrow: '֏');
-  static const _ang = Currency(_cld, 'ANG', 'Γκίλντα Ολλανδικών Αντιλλών',
-      one: 'γκίλντα Ολλανδικών Αντιλλών',
-      other: 'γκίλντες Ολλανδικών Αντιλλών');
-  static const _aoa = Currency(_cld, 'AOA', 'Κουάνζα Ανγκόλας',
-      one: 'κουάνζα Ανγκόλας', other: 'κουάνζα Ανγκόλας', symbolNarrow: 'Kz');
-  static const _aok = Currency(_cld, 'AOK', 'Κουάνζα Ανγκόλας (1977–1990)',
-      one: 'κουάνζα Ανγκόλας (AOK)', other: 'κουάνζα Ανγκόλας (AOK)');
-  static const _aon = Currency(_cld, 'AON', 'Νέα Κουάνζα Ανγκόλας (1990–2000)',
-      one: 'νέο κουάνζα Ανγκόλας (1990–2000)',
-      other: 'νέα κουάνζα Ανγκόλας (1990–2000)');
-  static const _ara = Currency(_cld, 'ARA', 'Ωστράλ Αργετινής',
-      one: 'αουστράλ Αργεντινής', other: 'αουστράλ Αργεντινής');
-  static const _arp = Currency(_cld, 'ARP', 'Πέσο Αργεντινής (1983–1985)',
-      one: 'πέσο Αργεντινής (ARP)', other: 'πέσο Αργεντινής (ARP)');
-  static const _ars = Currency(_cld, 'ARS', 'Πέσο Αργεντινής',
-      one: 'πέσο Αργεντινής', other: 'πέσο Αργεντινής', symbolNarrow: r'$');
-  static const _ats = Currency(_cld, 'ATS', 'Σελίνι Αυστρίας',
-      one: 'σελίνι Αυστρίας', other: 'σελίνια Αυστρίας');
-  static const _aud = Currency(_cld, 'AUD', 'Δολάριο Αυστραλίας',
-      one: 'δολάριο Αυστραλίας',
-      other: 'δολάρια Αυστραλίας',
-      symbol: r'A$',
-      symbolNarrow: r'$');
-  static const _awg = Currency(_cld, 'AWG', 'Φλορίνι Αρούμπας',
-      one: 'φλορίνι Αρούμπας', other: 'φλορίνια Αρούμπας');
-  static const _azm = Currency(_cld, 'AZM', 'Μανάτ Αζερμπαϊτζάν (1993–2006)',
-      one: 'μανάτ Αζερμπαϊτζάν (1993–2006)',
-      other: 'μανάτ Αζερμπαϊτζάν (1993–2006)');
-  static const _azn = Currency(_cld, 'AZN', 'Μανάτ Αζερμπαϊτζάν',
-      one: 'μανάτ Αζερμπαϊτζάν',
-      other: 'μανάτ Αζερμπαϊτζάν',
-      symbolNarrow: '₼');
-  static const _bad = Currency(_cld, 'BAD', 'Δηνάριο Βοσνίας-Ερζεγοβίνης',
-      one: 'δηνάριο Βοσνίας-Ερζεγοβίνης', other: 'δηνάρια Βοσνίας-Ερζεγοβίνης');
+  static const _adp = Currency(
+    _cld,
+    'ADP',
+    'Πεσέτα Ανδόρας',
+    one: 'πεσέτα Ανδόρας',
+    other: 'πεσέτες Ανδόρας',
+  );
+  static const _aed = Currency(
+    _cld,
+    'AED',
+    'Ντιράμ Ηνωμένων Αραβικών Εμιράτων',
+    one: 'ντιράμ Ηνωμένων Αραβικών Εμιράτων',
+    other: 'ντιράμ Ηνωμένων Αραβικών Εμιράτων',
+  );
+  static const _afa = Currency(
+    _cld,
+    'AFA',
+    'Αφγανί Αφγανιστάν (1927–2002)',
+    one: 'αφγάνι Αφγανιστάν (AFA)',
+    other: 'αφγάνι Αφγανιστάν (AFA)',
+  );
+  static const _afn = Currency(
+    _cld,
+    'AFN',
+    'Αφγάνι Αφγανιστάν',
+    one: 'αφγάνι Αφγανιστάν',
+    other: 'αφγάνια Αφγανιστάν',
+    symbolNarrow: '؋',
+  );
+  static const _all = Currency(
+    _cld,
+    'ALL',
+    'Λεκ Αλβανίας',
+    one: 'λεκ Αλβανίας',
+    other: 'λεκ Αλβανίας',
+  );
+  static const _amd = Currency(
+    _cld,
+    'AMD',
+    'Ντραμ Αρμενίας',
+    one: 'ντραμ Αρμενίας',
+    other: 'ντραμ Αρμενίας',
+    symbolNarrow: '֏',
+  );
+  static const _ang = Currency(
+    _cld,
+    'ANG',
+    'Γκίλντα Ολλανδικών Αντιλλών',
+    one: 'γκίλντα Ολλανδικών Αντιλλών',
+    other: 'γκίλντες Ολλανδικών Αντιλλών',
+  );
+  static const _aoa = Currency(
+    _cld,
+    'AOA',
+    'Κουάνζα Ανγκόλας',
+    one: 'κουάνζα Ανγκόλας',
+    other: 'κουάνζα Ανγκόλας',
+    symbolNarrow: 'Kz',
+  );
+  static const _aok = Currency(
+    _cld,
+    'AOK',
+    'Κουάνζα Ανγκόλας (1977–1990)',
+    one: 'κουάνζα Ανγκόλας (AOK)',
+    other: 'κουάνζα Ανγκόλας (AOK)',
+  );
+  static const _aon = Currency(
+    _cld,
+    'AON',
+    'Νέα Κουάνζα Ανγκόλας (1990–2000)',
+    one: 'νέο κουάνζα Ανγκόλας (1990–2000)',
+    other: 'νέα κουάνζα Ανγκόλας (1990–2000)',
+  );
+  static const _ara = Currency(
+    _cld,
+    'ARA',
+    'Ωστράλ Αργετινής',
+    one: 'αουστράλ Αργεντινής',
+    other: 'αουστράλ Αργεντινής',
+  );
+  static const _arp = Currency(
+    _cld,
+    'ARP',
+    'Πέσο Αργεντινής (1983–1985)',
+    one: 'πέσο Αργεντινής (ARP)',
+    other: 'πέσο Αργεντινής (ARP)',
+  );
+  static const _ars = Currency(
+    _cld,
+    'ARS',
+    'Πέσο Αργεντινής',
+    one: 'πέσο Αργεντινής',
+    other: 'πέσο Αργεντινής',
+    symbolNarrow: r'$',
+  );
+  static const _ats = Currency(
+    _cld,
+    'ATS',
+    'Σελίνι Αυστρίας',
+    one: 'σελίνι Αυστρίας',
+    other: 'σελίνια Αυστρίας',
+  );
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'Δολάριο Αυστραλίας',
+    one: 'δολάριο Αυστραλίας',
+    other: 'δολάρια Αυστραλίας',
+    symbol: r'A$',
+    symbolNarrow: r'$',
+  );
+  static const _awg = Currency(
+    _cld,
+    'AWG',
+    'Φλορίνι Αρούμπας',
+    one: 'φλορίνι Αρούμπας',
+    other: 'φλορίνια Αρούμπας',
+  );
+  static const _azm = Currency(
+    _cld,
+    'AZM',
+    'Μανάτ Αζερμπαϊτζάν (1993–2006)',
+    one: 'μανάτ Αζερμπαϊτζάν (1993–2006)',
+    other: 'μανάτ Αζερμπαϊτζάν (1993–2006)',
+  );
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'Μανάτ Αζερμπαϊτζάν',
+    one: 'μανάτ Αζερμπαϊτζάν',
+    other: 'μανάτ Αζερμπαϊτζάν',
+    symbolNarrow: '₼',
+  );
+  static const _bad = Currency(
+    _cld,
+    'BAD',
+    'Δηνάριο Βοσνίας-Ερζεγοβίνης',
+    one: 'δηνάριο Βοσνίας-Ερζεγοβίνης',
+    other: 'δηνάρια Βοσνίας-Ερζεγοβίνης',
+  );
   static const _bam = Currency(
-      _cld, 'BAM', 'Μετατρέψιμο Μάρκο Βοσνίας-Ερζεγοβίνης',
-      one: 'μετατρέψιμο μάρκο Βοσνίας-Ερζεγοβίνης',
-      other: 'μετατρέψιμα μάρκα Βοσνίας-Ερζεγοβίνης',
-      symbolNarrow: 'KM');
-  static const _bbd = Currency(_cld, 'BBD', 'Δολάριο Μπαρμπέιντος',
-      one: 'δολάριο Μπαρμπέιντος',
-      other: 'δολάρια Μπαρμπέιντος',
-      symbolNarrow: r'$');
-  static const _bdt = Currency(_cld, 'BDT', 'Τάκα Μπαγκλαντές',
-      one: 'τάκα Μπαγκλαντές', other: 'τάκα Μπαγκλαντές', symbolNarrow: '৳');
-  static const _bec = Currency(_cld, 'BEC', 'Φράγκο Βελγίου (μετατρέψιμο)',
-      one: 'φράγκο Βελγίου (μετατρέψιμο)',
-      other: 'φράγκα Βελγίου (μετατρέψιμα)');
-  static const _bef = Currency(_cld, 'BEF', 'Φράγκο Βελγίου',
-      one: 'φράγκο Βελγίου', other: 'φράγκα Βελγίου');
-  static const _bel = Currency(_cld, 'BEL', 'Φράγκο Βελγίου (οικονομικό)',
-      one: 'φράγκο Βελγίου (οικονομικό)', other: 'φράγκα Βελγίου (οικονομικό)');
-  static const _bgl = Currency(_cld, 'BGL', 'Μεταλλικό Λεβ Βουλγαρίας',
-      one: 'μεταλλικό λεβ Βουλγαρίας', other: 'μεταλλικά λεβ Βουλγαρίας');
-  static const _bgn = Currency(_cld, 'BGN', 'Λεβ Βουλγαρίας',
-      one: 'λεβ Βουλγαρίας', other: 'λεβ Βουλγαρίας');
-  static const _bhd = Currency(_cld, 'BHD', 'Δηνάριο Μπαχρέιν',
-      one: 'δηνάριο Μπαχρέιν', other: 'δηνάρια Μπαχρέιν');
-  static const _bif = Currency(_cld, 'BIF', 'Φράγκο Μπουρούντι',
-      one: 'φράγκο Μπουρούντι', other: 'φράγκα Μπουρούντι');
-  static const _bmd = Currency(_cld, 'BMD', 'Δολάριο Βερμούδων',
-      one: 'δολάριο Βερμούδων', other: 'δολάρια Βερμούδων', symbolNarrow: r'$');
-  static const _bnd = Currency(_cld, 'BND', 'Δολάριο Μπρουνέι',
-      one: 'δολάριο Μπρουνέι', other: 'δολάρια Μπρουνέι', symbolNarrow: r'$');
-  static const _bob = Currency(_cld, 'BOB', 'Μπολιβιάνο Βολιβίας',
-      one: 'μπολιβιάνο Βολιβίας',
-      other: 'μπολιβιάνο Βολιβίας',
-      symbolNarrow: 'Bs');
-  static const _bop = Currency(_cld, 'BOP', 'Πέσο Βολιβίας',
-      one: 'πέσο Βολιβίας', other: 'πέσο Βολιβίας');
-  static const _bov = Currency(_cld, 'BOV', 'Μβδολ Βολιβίας',
-      one: 'μβντολ Βολιβίας', other: 'μβντολ Βολιβίας');
+    _cld,
+    'BAM',
+    'Μετατρέψιμο Μάρκο Βοσνίας-Ερζεγοβίνης',
+    one: 'μετατρέψιμο μάρκο Βοσνίας-Ερζεγοβίνης',
+    other: 'μετατρέψιμα μάρκα Βοσνίας-Ερζεγοβίνης',
+    symbolNarrow: 'KM',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'Δολάριο Μπαρμπέιντος',
+    one: 'δολάριο Μπαρμπέιντος',
+    other: 'δολάρια Μπαρμπέιντος',
+    symbolNarrow: r'$',
+  );
+  static const _bdt = Currency(
+    _cld,
+    'BDT',
+    'Τάκα Μπαγκλαντές',
+    one: 'τάκα Μπαγκλαντές',
+    other: 'τάκα Μπαγκλαντές',
+    symbolNarrow: '৳',
+  );
+  static const _bec = Currency(
+    _cld,
+    'BEC',
+    'Φράγκο Βελγίου (μετατρέψιμο)',
+    one: 'φράγκο Βελγίου (μετατρέψιμο)',
+    other: 'φράγκα Βελγίου (μετατρέψιμα)',
+  );
+  static const _bef = Currency(
+    _cld,
+    'BEF',
+    'Φράγκο Βελγίου',
+    one: 'φράγκο Βελγίου',
+    other: 'φράγκα Βελγίου',
+  );
+  static const _bel = Currency(
+    _cld,
+    'BEL',
+    'Φράγκο Βελγίου (οικονομικό)',
+    one: 'φράγκο Βελγίου (οικονομικό)',
+    other: 'φράγκα Βελγίου (οικονομικό)',
+  );
+  static const _bgl = Currency(
+    _cld,
+    'BGL',
+    'Μεταλλικό Λεβ Βουλγαρίας',
+    one: 'μεταλλικό λεβ Βουλγαρίας',
+    other: 'μεταλλικά λεβ Βουλγαρίας',
+  );
+  static const _bgn = Currency(
+    _cld,
+    'BGN',
+    'Λεβ Βουλγαρίας',
+    one: 'λεβ Βουλγαρίας',
+    other: 'λεβ Βουλγαρίας',
+  );
+  static const _bhd = Currency(
+    _cld,
+    'BHD',
+    'Δηνάριο Μπαχρέιν',
+    one: 'δηνάριο Μπαχρέιν',
+    other: 'δηνάρια Μπαχρέιν',
+  );
+  static const _bif = Currency(
+    _cld,
+    'BIF',
+    'Φράγκο Μπουρούντι',
+    one: 'φράγκο Μπουρούντι',
+    other: 'φράγκα Μπουρούντι',
+  );
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'Δολάριο Βερμούδων',
+    one: 'δολάριο Βερμούδων',
+    other: 'δολάρια Βερμούδων',
+    symbolNarrow: r'$',
+  );
+  static const _bnd = Currency(
+    _cld,
+    'BND',
+    'Δολάριο Μπρουνέι',
+    one: 'δολάριο Μπρουνέι',
+    other: 'δολάρια Μπρουνέι',
+    symbolNarrow: r'$',
+  );
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'Μπολιβιάνο Βολιβίας',
+    one: 'μπολιβιάνο Βολιβίας',
+    other: 'μπολιβιάνο Βολιβίας',
+    symbolNarrow: 'Bs',
+  );
+  static const _bop = Currency(
+    _cld,
+    'BOP',
+    'Πέσο Βολιβίας',
+    one: 'πέσο Βολιβίας',
+    other: 'πέσο Βολιβίας',
+  );
+  static const _bov = Currency(
+    _cld,
+    'BOV',
+    'Μβδολ Βολιβίας',
+    one: 'μβντολ Βολιβίας',
+    other: 'μβντολ Βολιβίας',
+  );
   static const _brb = Currency(
-      _cld, 'BRB', 'Νέο Κρουζιέρο Βραζιλίας (1967–1986)',
-      one: 'νέο κρουζέιρο Βραζιλίας (BRB)',
-      other: 'νέα κρουζέιρο Βραζιλίας (BRB)');
-  static const _brc = Currency(_cld, 'BRC', 'Κρουζάντο Βραζιλίας',
-      one: 'κρουζάντο Βραζιλίας', other: 'κρουζάντο Βραζιλίας');
-  static const _bre = Currency(_cld, 'BRE', 'Κρουζιέρο Βραζιλίας (1990–1993)',
-      one: 'κρουζέιρο Βραζιλίας (BRE)', other: 'κρουζέιρο Βραζιλίας (BRE)');
-  static const _brl = Currency(_cld, 'BRL', 'Ρεάλ Βραζιλίας',
-      one: 'ρεάλ Βραζιλίας',
-      other: 'ρεάλ Βραζιλίας',
-      symbol: r'R$',
-      symbolNarrow: r'R$');
-  static const _brn = Currency(_cld, 'BRN', 'Νέο Κρουζάντο Βραζιλίας',
-      one: 'νέο κρουζάντο Βραζιλίας', other: 'νέα κρουζάντο Βραζιλίας');
-  static const _brr = Currency(_cld, 'BRR', 'Κρουζιέρο Βραζιλίας',
-      one: 'κρουζέιρο Βραζιλίας', other: 'κρουζέιρο Βραζιλίας');
-  static const _bsd = Currency(_cld, 'BSD', 'Δολάριο Μπαχαμών',
-      one: 'δολάριο Μπαχαμών', other: 'δολάρια Μπαχαμών', symbolNarrow: r'$');
-  static const _btn = Currency(_cld, 'BTN', 'Νγκούλτρουμ Μπουτάν',
-      one: 'νγκούλτρουμ Μπουτάν', other: 'νγκούλτρουμ Μπουτάν');
-  static const _buk = Currency(_cld, 'BUK', 'Κιατ Βιρμανίας',
-      one: 'κιάτ Βιρμανίας', other: 'κιάτ Βιρμανίας');
-  static const _bwp = Currency(_cld, 'BWP', 'Πούλα Μποτσουάνας',
-      one: 'πούλα Μποτσουάνας', other: 'πούλα Μποτσουάνας', symbolNarrow: 'P');
+    _cld,
+    'BRB',
+    'Νέο Κρουζιέρο Βραζιλίας (1967–1986)',
+    one: 'νέο κρουζέιρο Βραζιλίας (BRB)',
+    other: 'νέα κρουζέιρο Βραζιλίας (BRB)',
+  );
+  static const _brc = Currency(
+    _cld,
+    'BRC',
+    'Κρουζάντο Βραζιλίας',
+    one: 'κρουζάντο Βραζιλίας',
+    other: 'κρουζάντο Βραζιλίας',
+  );
+  static const _bre = Currency(
+    _cld,
+    'BRE',
+    'Κρουζιέρο Βραζιλίας (1990–1993)',
+    one: 'κρουζέιρο Βραζιλίας (BRE)',
+    other: 'κρουζέιρο Βραζιλίας (BRE)',
+  );
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'Ρεάλ Βραζιλίας',
+    one: 'ρεάλ Βραζιλίας',
+    other: 'ρεάλ Βραζιλίας',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
+  static const _brn = Currency(
+    _cld,
+    'BRN',
+    'Νέο Κρουζάντο Βραζιλίας',
+    one: 'νέο κρουζάντο Βραζιλίας',
+    other: 'νέα κρουζάντο Βραζιλίας',
+  );
+  static const _brr = Currency(
+    _cld,
+    'BRR',
+    'Κρουζιέρο Βραζιλίας',
+    one: 'κρουζέιρο Βραζιλίας',
+    other: 'κρουζέιρο Βραζιλίας',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'Δολάριο Μπαχαμών',
+    one: 'δολάριο Μπαχαμών',
+    other: 'δολάρια Μπαχαμών',
+    symbolNarrow: r'$',
+  );
+  static const _btn = Currency(
+    _cld,
+    'BTN',
+    'Νγκούλτρουμ Μπουτάν',
+    one: 'νγκούλτρουμ Μπουτάν',
+    other: 'νγκούλτρουμ Μπουτάν',
+  );
+  static const _buk = Currency(
+    _cld,
+    'BUK',
+    'Κιατ Βιρμανίας',
+    one: 'κιάτ Βιρμανίας',
+    other: 'κιάτ Βιρμανίας',
+  );
+  static const _bwp = Currency(
+    _cld,
+    'BWP',
+    'Πούλα Μποτσουάνας',
+    one: 'πούλα Μποτσουάνας',
+    other: 'πούλα Μποτσουάνας',
+    symbolNarrow: 'P',
+  );
   static const _byb = Currency(
-      _cld, 'BYB', 'Νέο Ρούβλι Λευκορωσίας (1994–1999)',
-      one: 'νέο ρούβλι Λευκορωσίας (1994–1999)',
-      other: 'νέα ρούβλια Λευκορωσίας (1994–1999)');
-  static const _byn = Currency(_cld, 'BYN', 'Ρούβλι Λευκορωσίας',
-      one: 'ρούβλι Λευκορωσίας',
-      other: 'ρούβλια Λευκορωσίας',
-      symbolNarrow: 'р.');
-  static const _byr = Currency(_cld, 'BYR', 'Ρούβλι Λευκορωσίας (2000–2016)',
-      one: 'ρούβλι Λευκορωσίας (2000–2016)',
-      other: 'ρούβλια Λευκορωσίας (2000–2016)');
-  static const _bzd = Currency(_cld, 'BZD', 'Δολάριο Μπελίζ',
-      one: 'δολάριο Μπελίζ', other: 'δολάρια Μπελίζ', symbolNarrow: r'$');
-  static const _cad = Currency(_cld, 'CAD', 'Δολάριο Καναδά',
-      one: 'δολάριο Καναδά',
-      other: 'δολάρια Καναδά',
-      symbol: r'CA$',
-      symbolNarrow: r'$');
-  static const _cdf = Currency(_cld, 'CDF', 'Φράγκο Κονγκό',
-      one: 'φράγκο Κονγκό', other: 'φράγκα Κονγκό');
-  static const _che =
-      Currency(_cld, 'CHE', 'Ευρώ WIR', one: 'ευρώ WIR', other: 'ευρώ WIR');
-  static const _chf = Currency(_cld, 'CHF', 'Φράγκο Ελβετίας',
-      one: 'φράγκο Ελβετίας', other: 'φράγκα Ελβετίας');
-  static const _chw = Currency(_cld, 'CHW', 'Φράγκο WIR',
-      one: 'φράγκο WIR', other: 'φράγκα WIR');
-  static const _clf = Currency(_cld, 'CLF', 'Ουνιδάδες ντε φομέντο Χιλής',
-      one: 'ουνιδάδες ντε φομέντο Χιλής', other: 'ουνιδάδες ντε φομέντο Χιλής');
-  static const _clp = Currency(_cld, 'CLP', 'Πέσο Χιλής',
-      one: 'πέσο Χιλής', other: 'πέσο Χιλής', symbolNarrow: r'$');
-  static const _cnh = Currency(_cld, 'CNH', 'Γουάν Κίνας (υπεράκτιο)',
-      one: 'γουάν Κίνας (υπεράκτιο)', other: 'γουάν Κίνας (υπεράκτια)');
-  static const _cny = Currency(_cld, 'CNY', 'Γουάν Κίνας',
-      one: 'γουάν Κίνας',
-      other: 'γουάν Κίνας',
-      symbol: 'CN¥',
-      symbolNarrow: '¥');
-  static const _cop = Currency(_cld, 'COP', 'Πέσο Κολομβίας',
-      one: 'πέσο Κολομβίας', other: 'πέσο Κολομβίας', symbolNarrow: r'$');
-  static const _crc = Currency(_cld, 'CRC', 'Κολόν Κόστα Ρίκα',
-      one: 'κολόν Κόστα Ρίκα', other: 'κολόν Κόστα Ρίκα', symbolNarrow: '₡');
-  static const _csd = Currency(_cld, 'CSD', 'Παλαιό Δηνάριο Σερβίας',
-      one: 'παλιό δινάρη Σερβίας', other: 'παλιά δινάρια Σερβίας');
-  static const _csk = Currency(_cld, 'CSK', 'Σκληρή Κορόνα Τσεχοσλοβακίας',
-      one: 'σκληρή κορόνα Τσεχοσλοβακίας',
-      other: 'σκληρές κορόνες Τσεχοσλοβακίας');
-  static const _cuc = Currency(_cld, 'CUC', 'Μετατρέψιμο πέσο Κούβας',
-      one: 'μετατρέψιμο πέσο Κούβας',
-      other: 'μετατρέψιμα πέσο Κούβας',
-      symbolNarrow: r'$');
-  static const _cup = Currency(_cld, 'CUP', 'Πέσο Κούβας',
-      one: 'πέσο Κούβας', other: 'πέσο Κούβας', symbolNarrow: r'$');
-  static const _cve = Currency(_cld, 'CVE', 'Εσκούδο Πράσινου Ακρωτηρίου',
-      one: 'εσκούδο Πράσινου Ακρωτηρίου', other: 'εσκούδο Πράσινου Ακρωτηρίου');
-  static const _cyp = Currency(_cld, 'CYP', 'Λίρα Κύπρου',
-      one: 'λίρα Κύπρου', other: 'λίρες Κύπρου');
-  static const _czk = Currency(_cld, 'CZK', 'Κορόνα Τσεχίας',
-      one: 'κορόνα Τσεχίας', other: 'κορόνες Τσεχίας', symbolNarrow: 'Kč');
-  static const _ddm = Currency(_cld, 'DDM', 'Οστμάρκ Ανατολικής Γερμανίας',
-      one: 'όστμαρκ Ανατολικής Γερμανίας',
-      other: 'όστμαρκ Ανατολικής Γερμανίας');
-  static const _dem = Currency(_cld, 'DEM', 'Μάρκο Γερμανίας',
-      one: 'μάρκο Γερμανίας', other: 'μάρκα Γερμανίας');
-  static const _djf = Currency(_cld, 'DJF', 'Φράγκο Τζιμπουτί',
-      one: 'φράγκο Τζιμπουτί', other: 'φράγκα Τζιμπουτί');
-  static const _dkk = Currency(_cld, 'DKK', 'Κορόνα Δανίας',
-      one: 'κορόνα Δανίας', other: 'κορόνες Δανίας', symbolNarrow: 'kr');
-  static const _dop = Currency(_cld, 'DOP', 'Πέσο Δομινικανής Δημοκρατίας',
-      one: 'πέσο Δομινικανής Δημοκρατίας',
-      other: 'πέσο Δομινικανής Δημοκρατίας',
-      symbolNarrow: r'$');
-  static const _dzd = Currency(_cld, 'DZD', 'Δηνάριο Αλγερίας',
-      one: 'δηνάριο Αλγερίας', other: 'δηνάρια Αλγερίας');
-  static const _ecs = Currency(_cld, 'ECS', 'Σούκρε Εκουαδόρ',
-      one: 'σούκρε Εκουαδόρ', other: 'σούκρε Εκουαδόρ');
-  static const _eek = Currency(_cld, 'EEK', 'Κορόνα Εσθονίας',
-      one: 'κορόνα Εσθονίας', other: 'κορόνες Εσθονίας');
-  static const _egp = Currency(_cld, 'EGP', 'Λίρα Αιγύπτου',
-      one: 'λίρα Αιγύπτου', other: 'λίρες Αιγύπτου', symbolNarrow: 'E£');
-  static const _ern = Currency(_cld, 'ERN', 'Νάκφα Ερυθραίας',
-      one: 'νάκφα Ερυθραίας', other: 'νάκφα Ερυθραίας');
-  static const _esa = Currency(_cld, 'ESA', 'πεσέτα Ισπανίας (λογαριασμός Α)',
-      one: 'πεσέτα Ισπανίας (λογαριασμός Α)',
-      other: 'πεσέτες Ισπανίας (λογαριασμός Α)');
+    _cld,
+    'BYB',
+    'Νέο Ρούβλι Λευκορωσίας (1994–1999)',
+    one: 'νέο ρούβλι Λευκορωσίας (1994–1999)',
+    other: 'νέα ρούβλια Λευκορωσίας (1994–1999)',
+  );
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'Ρούβλι Λευκορωσίας',
+    one: 'ρούβλι Λευκορωσίας',
+    other: 'ρούβλια Λευκορωσίας',
+    symbolNarrow: 'р.',
+  );
+  static const _byr = Currency(
+    _cld,
+    'BYR',
+    'Ρούβλι Λευκορωσίας (2000–2016)',
+    one: 'ρούβλι Λευκορωσίας (2000–2016)',
+    other: 'ρούβλια Λευκορωσίας (2000–2016)',
+  );
+  static const _bzd = Currency(
+    _cld,
+    'BZD',
+    'Δολάριο Μπελίζ',
+    one: 'δολάριο Μπελίζ',
+    other: 'δολάρια Μπελίζ',
+    symbolNarrow: r'$',
+  );
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'Δολάριο Καναδά',
+    one: 'δολάριο Καναδά',
+    other: 'δολάρια Καναδά',
+    symbol: r'CA$',
+    symbolNarrow: r'$',
+  );
+  static const _cdf = Currency(
+    _cld,
+    'CDF',
+    'Φράγκο Κονγκό',
+    one: 'φράγκο Κονγκό',
+    other: 'φράγκα Κονγκό',
+  );
+  static const _che = Currency(
+    _cld,
+    'CHE',
+    'Ευρώ WIR',
+    one: 'ευρώ WIR',
+    other: 'ευρώ WIR',
+  );
+  static const _chf = Currency(
+    _cld,
+    'CHF',
+    'Φράγκο Ελβετίας',
+    one: 'φράγκο Ελβετίας',
+    other: 'φράγκα Ελβετίας',
+  );
+  static const _chw = Currency(
+    _cld,
+    'CHW',
+    'Φράγκο WIR',
+    one: 'φράγκο WIR',
+    other: 'φράγκα WIR',
+  );
+  static const _clf = Currency(
+    _cld,
+    'CLF',
+    'Ουνιδάδες ντε φομέντο Χιλής',
+    one: 'ουνιδάδες ντε φομέντο Χιλής',
+    other: 'ουνιδάδες ντε φομέντο Χιλής',
+  );
+  static const _clp = Currency(
+    _cld,
+    'CLP',
+    'Πέσο Χιλής',
+    one: 'πέσο Χιλής',
+    other: 'πέσο Χιλής',
+    symbolNarrow: r'$',
+  );
+  static const _cnh = Currency(
+    _cld,
+    'CNH',
+    'Γουάν Κίνας (υπεράκτιο)',
+    one: 'γουάν Κίνας (υπεράκτιο)',
+    other: 'γουάν Κίνας (υπεράκτια)',
+  );
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'Γουάν Κίνας',
+    one: 'γουάν Κίνας',
+    other: 'γουάν Κίνας',
+    symbol: 'CN¥',
+    symbolNarrow: '¥',
+  );
+  static const _cop = Currency(
+    _cld,
+    'COP',
+    'Πέσο Κολομβίας',
+    one: 'πέσο Κολομβίας',
+    other: 'πέσο Κολομβίας',
+    symbolNarrow: r'$',
+  );
+  static const _crc = Currency(
+    _cld,
+    'CRC',
+    'Κολόν Κόστα Ρίκα',
+    one: 'κολόν Κόστα Ρίκα',
+    other: 'κολόν Κόστα Ρίκα',
+    symbolNarrow: '₡',
+  );
+  static const _csd = Currency(
+    _cld,
+    'CSD',
+    'Παλαιό Δηνάριο Σερβίας',
+    one: 'παλιό δινάρη Σερβίας',
+    other: 'παλιά δινάρια Σερβίας',
+  );
+  static const _csk = Currency(
+    _cld,
+    'CSK',
+    'Σκληρή Κορόνα Τσεχοσλοβακίας',
+    one: 'σκληρή κορόνα Τσεχοσλοβακίας',
+    other: 'σκληρές κορόνες Τσεχοσλοβακίας',
+  );
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'Μετατρέψιμο πέσο Κούβας',
+    one: 'μετατρέψιμο πέσο Κούβας',
+    other: 'μετατρέψιμα πέσο Κούβας',
+    symbolNarrow: r'$',
+  );
+  static const _cup = Currency(
+    _cld,
+    'CUP',
+    'Πέσο Κούβας',
+    one: 'πέσο Κούβας',
+    other: 'πέσο Κούβας',
+    symbolNarrow: r'$',
+  );
+  static const _cve = Currency(
+    _cld,
+    'CVE',
+    'Εσκούδο Πράσινου Ακρωτηρίου',
+    one: 'εσκούδο Πράσινου Ακρωτηρίου',
+    other: 'εσκούδο Πράσινου Ακρωτηρίου',
+  );
+  static const _cyp = Currency(
+    _cld,
+    'CYP',
+    'Λίρα Κύπρου',
+    one: 'λίρα Κύπρου',
+    other: 'λίρες Κύπρου',
+  );
+  static const _czk = Currency(
+    _cld,
+    'CZK',
+    'Κορόνα Τσεχίας',
+    one: 'κορόνα Τσεχίας',
+    other: 'κορόνες Τσεχίας',
+    symbolNarrow: 'Kč',
+  );
+  static const _ddm = Currency(
+    _cld,
+    'DDM',
+    'Οστμάρκ Ανατολικής Γερμανίας',
+    one: 'όστμαρκ Ανατολικής Γερμανίας',
+    other: 'όστμαρκ Ανατολικής Γερμανίας',
+  );
+  static const _dem = Currency(
+    _cld,
+    'DEM',
+    'Μάρκο Γερμανίας',
+    one: 'μάρκο Γερμανίας',
+    other: 'μάρκα Γερμανίας',
+  );
+  static const _djf = Currency(
+    _cld,
+    'DJF',
+    'Φράγκο Τζιμπουτί',
+    one: 'φράγκο Τζιμπουτί',
+    other: 'φράγκα Τζιμπουτί',
+  );
+  static const _dkk = Currency(
+    _cld,
+    'DKK',
+    'Κορόνα Δανίας',
+    one: 'κορόνα Δανίας',
+    other: 'κορόνες Δανίας',
+    symbolNarrow: 'kr',
+  );
+  static const _dop = Currency(
+    _cld,
+    'DOP',
+    'Πέσο Δομινικανής Δημοκρατίας',
+    one: 'πέσο Δομινικανής Δημοκρατίας',
+    other: 'πέσο Δομινικανής Δημοκρατίας',
+    symbolNarrow: r'$',
+  );
+  static const _dzd = Currency(
+    _cld,
+    'DZD',
+    'Δηνάριο Αλγερίας',
+    one: 'δηνάριο Αλγερίας',
+    other: 'δηνάρια Αλγερίας',
+  );
+  static const _ecs = Currency(
+    _cld,
+    'ECS',
+    'Σούκρε Εκουαδόρ',
+    one: 'σούκρε Εκουαδόρ',
+    other: 'σούκρε Εκουαδόρ',
+  );
+  static const _eek = Currency(
+    _cld,
+    'EEK',
+    'Κορόνα Εσθονίας',
+    one: 'κορόνα Εσθονίας',
+    other: 'κορόνες Εσθονίας',
+  );
+  static const _egp = Currency(
+    _cld,
+    'EGP',
+    'Λίρα Αιγύπτου',
+    one: 'λίρα Αιγύπτου',
+    other: 'λίρες Αιγύπτου',
+    symbolNarrow: 'E£',
+  );
+  static const _ern = Currency(
+    _cld,
+    'ERN',
+    'Νάκφα Ερυθραίας',
+    one: 'νάκφα Ερυθραίας',
+    other: 'νάκφα Ερυθραίας',
+  );
+  static const _esa = Currency(
+    _cld,
+    'ESA',
+    'πεσέτα Ισπανίας (λογαριασμός Α)',
+    one: 'πεσέτα Ισπανίας (λογαριασμός Α)',
+    other: 'πεσέτες Ισπανίας (λογαριασμός Α)',
+  );
   static const _esb = Currency(
-      _cld, 'ESB', 'πεσέτα Ισπανίας (μετατρέψιμος λογαριασμός)',
-      one: 'πεσέτα Ισπανίας (μετατρέψιμος λογαριασμός)',
-      other: 'πεσέτες Ισπανίας (μετατρέψιμες)');
-  static const _esp = Currency(_cld, 'ESP', 'Πεσέτα Ισπανίας',
-      one: 'πεσέτα Ισπανίας', other: 'πεσέτες Ισπανίας', symbolNarrow: '₧');
-  static const _etb = Currency(_cld, 'ETB', 'Μπιρ Αιθιοπίας',
-      one: 'μπιρ Αιθιοπίας', other: 'μπιρ Αιθιοπίας');
-  static const _eur = Currency(_cld, 'EUR', 'Ευρώ',
-      one: 'ευρώ', other: 'ευρώ', symbol: '€', symbolNarrow: '€');
-  static const _fim = Currency(_cld, 'FIM', 'Μάρκο Φινλανδίας',
-      one: 'μάρκο Φινλανδίας', other: 'μάρκα Φινλανδίας');
-  static const _fjd = Currency(_cld, 'FJD', 'Δολάριο Φίτζι',
-      one: 'δολάριο Φίτζι', other: 'δολάρια Φίτζι', symbolNarrow: r'$');
-  static const _fkp = Currency(_cld, 'FKP', 'Λίρα Νήσων Φόκλαντ',
-      one: 'λίρα Νήσων Φόκλαντ',
-      other: 'λίρες Νήσων Φόκλαντ',
-      symbolNarrow: '£');
-  static const _frf = Currency(_cld, 'FRF', 'Φράγκο Γαλλίας',
-      one: 'φράγκο Γαλλίας', other: 'φράγκα Γαλλίας');
-  static const _gbp = Currency(_cld, 'GBP', 'Λίρα Στερλίνα Βρετανίας',
-      one: 'λίρα στερλίνα Βρετανίας',
-      other: 'λίρες στερλίνες Βρετανίας',
-      symbol: '£',
-      symbolNarrow: '£');
-  static const _gek = Currency(_cld, 'GEK', 'Κούπον Λάρι Γεωργίας',
-      one: 'κούπον λάρι Γεωργίας', other: 'κούπον λάρι Γεωργίας');
-  static const _gel = Currency(_cld, 'GEL', 'Λάρι Γεωργίας',
-      one: 'λάρι Γεωργίας', other: 'λάρι Γεωργίας', symbolNarrow: '₾');
-  static const _ghc = Currency(_cld, 'GHC', 'Σέντι Γκάνας (1979–2007)',
-      one: 'σέντι Γκάνας (GHC)', other: 'σέντι Γκάνας (GHC)');
-  static const _ghs = Currency(_cld, 'GHS', 'Σέντι Γκάνας',
-      one: 'σέντι Γκάνας', other: 'σέντι Γκάνας', symbolNarrow: 'GH₵');
-  static const _gip = Currency(_cld, 'GIP', 'Λίρα Γιβραλτάρ',
-      one: 'λίρα Γιβραλτάρ', other: 'λίρες Γιβραλτάρ', symbolNarrow: '£');
-  static const _gmd = Currency(_cld, 'GMD', 'Νταλάσι Γκάμπιας',
-      one: 'νταλάσι Γκάμπιας', other: 'νταλάσι Γκάμπιας');
-  static const _gnf = Currency(_cld, 'GNF', 'Φράγκο Γουινέας',
-      one: 'φράγκο Γουινέας', other: 'φράγκα Γουινέας', symbolNarrow: 'FG');
-  static const _gns = Currency(_cld, 'GNS', 'Συλί Γουινέας',
-      one: 'συλί Γουινέας', other: 'συλί Γουινέας');
-  static const _gqe = Currency(_cld, 'GQE', 'Εκγουέλε Ισημερινής Γουινέας',
-      one: 'εκουέλε Ισημερινής Γουινέας', other: 'εκουέλε Ισημερινής Γουινέας');
-  static const _grd = Currency(_cld, 'GRD', 'Δραχμή Ελλάδας',
-      one: 'δραχμή Ελλάδας', other: 'δραχμές Ελλάδας', symbol: 'Δρχ');
-  static const _gtq = Currency(_cld, 'GTQ', 'Κουετσάλ Γουατεμάλας',
-      one: 'κουετσάλ Γουατεμάλας',
-      other: 'κουετσάλ Γουατεμάλας',
-      symbolNarrow: 'Q');
-  static const _gwe = Currency(_cld, 'GWE', 'Γκινέα Εσκούδο Πορτογαλίας',
-      one: 'γκινέα εσκούδο Πορτογαλίας', other: 'γκινέα εσκούδο Πορτογαλίας');
-  static const _gwp = Currency(_cld, 'GWP', 'Πέσο Γουινέας-Μπισάου',
-      one: 'πέσο Γουινέα-Μπισάου', other: 'πέσο Γουινέα-Μπισάου');
-  static const _gyd = Currency(_cld, 'GYD', 'Δολάριο Γουιάνας',
-      one: 'δολάριο Γουιάνας', other: 'δολάρια Γουιάνας', symbolNarrow: r'$');
-  static const _hkd = Currency(_cld, 'HKD', 'Δολάριο Χονγκ Κονγκ',
-      one: 'δολάριο Χονγκ Κονγκ',
-      other: 'δολάρια Χονγκ Κονγκ',
-      symbol: r'HK$',
-      symbolNarrow: r'$');
-  static const _hnl = Currency(_cld, 'HNL', 'Λεμπίρα Ονδούρας',
-      one: 'λεμπίρα Ονδούρας', other: 'λεμπίρα Ονδούρας', symbolNarrow: 'L');
-  static const _hrd = Currency(_cld, 'HRD', 'Δηνάριο Κροατίας',
-      one: 'δηνάριο Κροατίας', other: 'δηνάρια Κροατίας');
-  static const _hrk = Currency(_cld, 'HRK', 'Κούνα Κροατίας',
-      one: 'κούνα Κροατίας', other: 'κούνα Κροατίας', symbolNarrow: 'kn');
-  static const _htg = Currency(_cld, 'HTG', 'Γκουρντ Αϊτής',
-      one: 'γκουρντ Αϊτής', other: 'γκουρντ Αϊτής');
-  static const _huf = Currency(_cld, 'HUF', 'Φιορίνι Ουγγαρίας',
-      one: 'φιορίνι Ουγγαρίας',
-      other: 'φιορίνια Ουγγαρίας',
-      symbolNarrow: 'Ft');
-  static const _idr = Currency(_cld, 'IDR', 'Ρουπία Ινδονησίας',
-      one: 'ρουπία Ινδονησίας', other: 'ρουπία Ινδονησίας', symbolNarrow: 'Rp');
-  static const _iep = Currency(_cld, 'IEP', 'Λίρα Ιρλανδίας',
-      one: 'λίρα Ιρλανδίας', other: 'λίρες Ιρλανδίας');
-  static const _ilp = Currency(_cld, 'ILP', 'Λίρα Ισραήλ',
-      one: 'λίρα Ισραήλ', other: 'λίρες Ισραήλ');
-  static const _ilr = Currency(_cld, 'ILR', 'παλιό σεκέλ Ισραήλ',
-      one: 'παλιό σεκέλ Ισραήλ', other: 'παλιά σεκέλ Ισραήλ');
-  static const _ils = Currency(_cld, 'ILS', 'Νέο Σέκελ Ισραήλ',
-      one: 'νέο σέκελ Ισραήλ',
-      other: 'νέα σέκελ Ισραήλ',
-      symbol: '₪',
-      symbolNarrow: '₪');
-  static const _inr = Currency(_cld, 'INR', 'Ρουπία Ινδίας',
-      one: 'ρουπία Ινδίας',
-      other: 'ρουπίες Ινδίας',
-      symbol: '₹',
-      symbolNarrow: '₹');
-  static const _iqd = Currency(_cld, 'IQD', 'Δηνάριο Ιράκ',
-      one: 'δηνάριο Ιράκ', other: 'δηνάρια Ιράκ');
-  static const _irr =
-      Currency(_cld, 'IRR', 'Ριάλ Ιράν', one: 'ριάλ Ιράν', other: 'ριάλ Ιράν');
-  static const _isj = Currency(_cld, 'ISJ', 'Παλιά κορόνα Ισλανδίας',
-      one: 'Παλιά κορόνα Ισλανδίας', other: 'παλιές κορόνες Ισλανδίας');
-  static const _isk = Currency(_cld, 'ISK', 'Κορόνα Ισλανδίας',
-      one: 'κορόνα Ισλανδίας', other: 'κορόνες Ισλανδίας', symbolNarrow: 'kr');
-  static const _itl = Currency(_cld, 'ITL', 'Λιρέτα Ιταλίας',
-      one: 'λιρέτα Ιταλίας', other: 'λιρέτες Ιταλίας');
-  static const _jmd = Currency(_cld, 'JMD', 'Δολάριο Τζαμάικας',
-      one: 'δολάριο Τζαμάικας', other: 'δολάρια Τζαμάικας', symbolNarrow: r'$');
-  static const _jod = Currency(_cld, 'JOD', 'Δηνάριο Ιορδανίας',
-      one: 'δηνάριο Ιορδανίας', other: 'δηνάρια Ιορδανίας');
-  static const _jpy = Currency(_cld, 'JPY', 'Γιεν Ιαπωνίας',
-      one: 'γιεν Ιαπωνίας',
-      other: 'γιεν Ιαπωνίας',
-      symbol: 'JP¥',
-      symbolNarrow: '¥');
-  static const _kes = Currency(_cld, 'KES', 'Σελίνι Κένυας',
-      one: 'σελίνι Κένυας', other: 'σελίνια Κένυας');
-  static const _kgs = Currency(_cld, 'KGS', 'Σομ Κιργιζίας',
-      one: 'σομ Κιργιζίας', other: 'σομ Κιργιζίας', symbolNarrow: '⃀');
-  static const _khr = Currency(_cld, 'KHR', 'Ρίελ Καμπότζης',
-      one: 'ρίελ Καμπότζης', other: 'ρίελ Καμπότζης', symbolNarrow: '៛');
-  static const _kmf = Currency(_cld, 'KMF', 'Φράγκο Κομορών',
-      one: 'φράγκο Κομορών', other: 'φράγκα Κομορών', symbolNarrow: 'CF');
-  static const _kpw = Currency(_cld, 'KPW', 'Γουόν Βόρειας Κορέας',
-      one: 'γουόν Βόρειας Κορέας',
-      other: 'γουόν Βόρειας Κορέας',
-      symbolNarrow: '₩');
-  static const _krw = Currency(_cld, 'KRW', 'Γουόν Νότιας Κορέας',
-      one: 'γουόν Νότιας Κορέας',
-      other: 'γουόν Νότιας Κορέας',
-      symbol: '₩',
-      symbolNarrow: '₩');
-  static const _kwd = Currency(_cld, 'KWD', 'Δηνάριο Κουβέιτ',
-      one: 'δηνάριο Κουβέιτ', other: 'δηνάρια Κουβέιτ');
-  static const _kyd = Currency(_cld, 'KYD', 'Δολάριο Νήσων Κέιμαν',
-      one: 'δολάριο Νήσων Κέιμαν',
-      other: 'δολάρια Νήσων Κέιμαν',
-      symbolNarrow: r'$');
-  static const _kzt = Currency(_cld, 'KZT', 'Τένγκε Καζακστάν',
-      one: 'τένγκε Καζακστάν', other: 'τένγκε Καζακστάν', symbolNarrow: '₸');
-  static const _lak = Currency(_cld, 'LAK', 'Κιπ Λάος',
-      one: 'κιπ Λάος', other: 'κιπ Λάος', symbolNarrow: '₭');
-  static const _lbp = Currency(_cld, 'LBP', 'Λίρα Λιβάνου',
-      one: 'λίρα Λιβάνου', other: 'λίρες Λιβάνου', symbolNarrow: 'L£');
-  static const _lkr = Currency(_cld, 'LKR', 'Ρουπία Σρι Λάνκα',
-      one: 'ρουπία Σρι Λάνκα', other: 'ρουπίες Σρι Λάνκα', symbolNarrow: 'Rs');
-  static const _lrd = Currency(_cld, 'LRD', 'Δολάριο Λιβερίας',
-      one: 'δολάριο Λιβερίας', other: 'δολάρια Λιβερίας', symbolNarrow: r'$');
-  static const _lsl = Currency(_cld, 'LSL', 'Λότι Λεσότο',
-      one: 'λότι Λεσότο', other: 'λότι Λεσότο');
-  static const _ltl = Currency(_cld, 'LTL', 'Λίτα Λιθουανίας',
-      one: 'λίτα Λιθουανίας', other: 'λίτα Λιθουανίας', symbolNarrow: 'Lt');
-  static const _ltt = Currency(_cld, 'LTT', 'Ταλόνας Λιθουανίας',
-      one: 'ταλόνας Λιθουανίας', other: 'ταλόνας Λιθουανίας');
+    _cld,
+    'ESB',
+    'πεσέτα Ισπανίας (μετατρέψιμος λογαριασμός)',
+    one: 'πεσέτα Ισπανίας (μετατρέψιμος λογαριασμός)',
+    other: 'πεσέτες Ισπανίας (μετατρέψιμες)',
+  );
+  static const _esp = Currency(
+    _cld,
+    'ESP',
+    'Πεσέτα Ισπανίας',
+    one: 'πεσέτα Ισπανίας',
+    other: 'πεσέτες Ισπανίας',
+    symbolNarrow: '₧',
+  );
+  static const _etb = Currency(
+    _cld,
+    'ETB',
+    'Μπιρ Αιθιοπίας',
+    one: 'μπιρ Αιθιοπίας',
+    other: 'μπιρ Αιθιοπίας',
+  );
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'Ευρώ',
+    one: 'ευρώ',
+    other: 'ευρώ',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
+  static const _fim = Currency(
+    _cld,
+    'FIM',
+    'Μάρκο Φινλανδίας',
+    one: 'μάρκο Φινλανδίας',
+    other: 'μάρκα Φινλανδίας',
+  );
+  static const _fjd = Currency(
+    _cld,
+    'FJD',
+    'Δολάριο Φίτζι',
+    one: 'δολάριο Φίτζι',
+    other: 'δολάρια Φίτζι',
+    symbolNarrow: r'$',
+  );
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'Λίρα Νήσων Φόκλαντ',
+    one: 'λίρα Νήσων Φόκλαντ',
+    other: 'λίρες Νήσων Φόκλαντ',
+    symbolNarrow: '£',
+  );
+  static const _frf = Currency(
+    _cld,
+    'FRF',
+    'Φράγκο Γαλλίας',
+    one: 'φράγκο Γαλλίας',
+    other: 'φράγκα Γαλλίας',
+  );
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'Λίρα Στερλίνα Βρετανίας',
+    one: 'λίρα στερλίνα Βρετανίας',
+    other: 'λίρες στερλίνες Βρετανίας',
+    symbol: '£',
+    symbolNarrow: '£',
+  );
+  static const _gek = Currency(
+    _cld,
+    'GEK',
+    'Κούπον Λάρι Γεωργίας',
+    one: 'κούπον λάρι Γεωργίας',
+    other: 'κούπον λάρι Γεωργίας',
+  );
+  static const _gel = Currency(
+    _cld,
+    'GEL',
+    'Λάρι Γεωργίας',
+    one: 'λάρι Γεωργίας',
+    other: 'λάρι Γεωργίας',
+    symbolNarrow: '₾',
+  );
+  static const _ghc = Currency(
+    _cld,
+    'GHC',
+    'Σέντι Γκάνας (1979–2007)',
+    one: 'σέντι Γκάνας (GHC)',
+    other: 'σέντι Γκάνας (GHC)',
+  );
+  static const _ghs = Currency(
+    _cld,
+    'GHS',
+    'Σέντι Γκάνας',
+    one: 'σέντι Γκάνας',
+    other: 'σέντι Γκάνας',
+    symbolNarrow: 'GH₵',
+  );
+  static const _gip = Currency(
+    _cld,
+    'GIP',
+    'Λίρα Γιβραλτάρ',
+    one: 'λίρα Γιβραλτάρ',
+    other: 'λίρες Γιβραλτάρ',
+    symbolNarrow: '£',
+  );
+  static const _gmd = Currency(
+    _cld,
+    'GMD',
+    'Νταλάσι Γκάμπιας',
+    one: 'νταλάσι Γκάμπιας',
+    other: 'νταλάσι Γκάμπιας',
+  );
+  static const _gnf = Currency(
+    _cld,
+    'GNF',
+    'Φράγκο Γουινέας',
+    one: 'φράγκο Γουινέας',
+    other: 'φράγκα Γουινέας',
+    symbolNarrow: 'FG',
+  );
+  static const _gns = Currency(
+    _cld,
+    'GNS',
+    'Συλί Γουινέας',
+    one: 'συλί Γουινέας',
+    other: 'συλί Γουινέας',
+  );
+  static const _gqe = Currency(
+    _cld,
+    'GQE',
+    'Εκγουέλε Ισημερινής Γουινέας',
+    one: 'εκουέλε Ισημερινής Γουινέας',
+    other: 'εκουέλε Ισημερινής Γουινέας',
+  );
+  static const _grd = Currency(
+    _cld,
+    'GRD',
+    'Δραχμή Ελλάδας',
+    one: 'δραχμή Ελλάδας',
+    other: 'δραχμές Ελλάδας',
+    symbol: 'Δρχ',
+  );
+  static const _gtq = Currency(
+    _cld,
+    'GTQ',
+    'Κουετσάλ Γουατεμάλας',
+    one: 'κουετσάλ Γουατεμάλας',
+    other: 'κουετσάλ Γουατεμάλας',
+    symbolNarrow: 'Q',
+  );
+  static const _gwe = Currency(
+    _cld,
+    'GWE',
+    'Γκινέα Εσκούδο Πορτογαλίας',
+    one: 'γκινέα εσκούδο Πορτογαλίας',
+    other: 'γκινέα εσκούδο Πορτογαλίας',
+  );
+  static const _gwp = Currency(
+    _cld,
+    'GWP',
+    'Πέσο Γουινέας-Μπισάου',
+    one: 'πέσο Γουινέα-Μπισάου',
+    other: 'πέσο Γουινέα-Μπισάου',
+  );
+  static const _gyd = Currency(
+    _cld,
+    'GYD',
+    'Δολάριο Γουιάνας',
+    one: 'δολάριο Γουιάνας',
+    other: 'δολάρια Γουιάνας',
+    symbolNarrow: r'$',
+  );
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'Δολάριο Χονγκ Κονγκ',
+    one: 'δολάριο Χονγκ Κονγκ',
+    other: 'δολάρια Χονγκ Κονγκ',
+    symbol: r'HK$',
+    symbolNarrow: r'$',
+  );
+  static const _hnl = Currency(
+    _cld,
+    'HNL',
+    'Λεμπίρα Ονδούρας',
+    one: 'λεμπίρα Ονδούρας',
+    other: 'λεμπίρα Ονδούρας',
+    symbolNarrow: 'L',
+  );
+  static const _hrd = Currency(
+    _cld,
+    'HRD',
+    'Δηνάριο Κροατίας',
+    one: 'δηνάριο Κροατίας',
+    other: 'δηνάρια Κροατίας',
+  );
+  static const _hrk = Currency(
+    _cld,
+    'HRK',
+    'Κούνα Κροατίας',
+    one: 'κούνα Κροατίας',
+    other: 'κούνα Κροατίας',
+    symbolNarrow: 'kn',
+  );
+  static const _htg = Currency(
+    _cld,
+    'HTG',
+    'Γκουρντ Αϊτής',
+    one: 'γκουρντ Αϊτής',
+    other: 'γκουρντ Αϊτής',
+  );
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'Φιορίνι Ουγγαρίας',
+    one: 'φιορίνι Ουγγαρίας',
+    other: 'φιορίνια Ουγγαρίας',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'Ρουπία Ινδονησίας',
+    one: 'ρουπία Ινδονησίας',
+    other: 'ρουπία Ινδονησίας',
+    symbolNarrow: 'Rp',
+  );
+  static const _iep = Currency(
+    _cld,
+    'IEP',
+    'Λίρα Ιρλανδίας',
+    one: 'λίρα Ιρλανδίας',
+    other: 'λίρες Ιρλανδίας',
+  );
+  static const _ilp = Currency(
+    _cld,
+    'ILP',
+    'Λίρα Ισραήλ',
+    one: 'λίρα Ισραήλ',
+    other: 'λίρες Ισραήλ',
+  );
+  static const _ilr = Currency(
+    _cld,
+    'ILR',
+    'παλιό σεκέλ Ισραήλ',
+    one: 'παλιό σεκέλ Ισραήλ',
+    other: 'παλιά σεκέλ Ισραήλ',
+  );
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'Νέο Σέκελ Ισραήλ',
+    one: 'νέο σέκελ Ισραήλ',
+    other: 'νέα σέκελ Ισραήλ',
+    symbol: '₪',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'Ρουπία Ινδίας',
+    one: 'ρουπία Ινδίας',
+    other: 'ρουπίες Ινδίας',
+    symbol: '₹',
+    symbolNarrow: '₹',
+  );
+  static const _iqd = Currency(
+    _cld,
+    'IQD',
+    'Δηνάριο Ιράκ',
+    one: 'δηνάριο Ιράκ',
+    other: 'δηνάρια Ιράκ',
+  );
+  static const _irr = Currency(
+    _cld,
+    'IRR',
+    'Ριάλ Ιράν',
+    one: 'ριάλ Ιράν',
+    other: 'ριάλ Ιράν',
+  );
+  static const _isj = Currency(
+    _cld,
+    'ISJ',
+    'Παλιά κορόνα Ισλανδίας',
+    one: 'Παλιά κορόνα Ισλανδίας',
+    other: 'παλιές κορόνες Ισλανδίας',
+  );
+  static const _isk = Currency(
+    _cld,
+    'ISK',
+    'Κορόνα Ισλανδίας',
+    one: 'κορόνα Ισλανδίας',
+    other: 'κορόνες Ισλανδίας',
+    symbolNarrow: 'kr',
+  );
+  static const _itl = Currency(
+    _cld,
+    'ITL',
+    'Λιρέτα Ιταλίας',
+    one: 'λιρέτα Ιταλίας',
+    other: 'λιρέτες Ιταλίας',
+  );
+  static const _jmd = Currency(
+    _cld,
+    'JMD',
+    'Δολάριο Τζαμάικας',
+    one: 'δολάριο Τζαμάικας',
+    other: 'δολάρια Τζαμάικας',
+    symbolNarrow: r'$',
+  );
+  static const _jod = Currency(
+    _cld,
+    'JOD',
+    'Δηνάριο Ιορδανίας',
+    one: 'δηνάριο Ιορδανίας',
+    other: 'δηνάρια Ιορδανίας',
+  );
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'Γιεν Ιαπωνίας',
+    one: 'γιεν Ιαπωνίας',
+    other: 'γιεν Ιαπωνίας',
+    symbol: 'JP¥',
+    symbolNarrow: '¥',
+  );
+  static const _kes = Currency(
+    _cld,
+    'KES',
+    'Σελίνι Κένυας',
+    one: 'σελίνι Κένυας',
+    other: 'σελίνια Κένυας',
+  );
+  static const _kgs = Currency(
+    _cld,
+    'KGS',
+    'Σομ Κιργιζίας',
+    one: 'σομ Κιργιζίας',
+    other: 'σομ Κιργιζίας',
+    symbolNarrow: '⃀',
+  );
+  static const _khr = Currency(
+    _cld,
+    'KHR',
+    'Ρίελ Καμπότζης',
+    one: 'ρίελ Καμπότζης',
+    other: 'ρίελ Καμπότζης',
+    symbolNarrow: '៛',
+  );
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'Φράγκο Κομορών',
+    one: 'φράγκο Κομορών',
+    other: 'φράγκα Κομορών',
+    symbolNarrow: 'CF',
+  );
+  static const _kpw = Currency(
+    _cld,
+    'KPW',
+    'Γουόν Βόρειας Κορέας',
+    one: 'γουόν Βόρειας Κορέας',
+    other: 'γουόν Βόρειας Κορέας',
+    symbolNarrow: '₩',
+  );
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'Γουόν Νότιας Κορέας',
+    one: 'γουόν Νότιας Κορέας',
+    other: 'γουόν Νότιας Κορέας',
+    symbol: '₩',
+    symbolNarrow: '₩',
+  );
+  static const _kwd = Currency(
+    _cld,
+    'KWD',
+    'Δηνάριο Κουβέιτ',
+    one: 'δηνάριο Κουβέιτ',
+    other: 'δηνάρια Κουβέιτ',
+  );
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'Δολάριο Νήσων Κέιμαν',
+    one: 'δολάριο Νήσων Κέιμαν',
+    other: 'δολάρια Νήσων Κέιμαν',
+    symbolNarrow: r'$',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'Τένγκε Καζακστάν',
+    one: 'τένγκε Καζακστάν',
+    other: 'τένγκε Καζακστάν',
+    symbolNarrow: '₸',
+  );
+  static const _lak = Currency(
+    _cld,
+    'LAK',
+    'Κιπ Λάος',
+    one: 'κιπ Λάος',
+    other: 'κιπ Λάος',
+    symbolNarrow: '₭',
+  );
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'Λίρα Λιβάνου',
+    one: 'λίρα Λιβάνου',
+    other: 'λίρες Λιβάνου',
+    symbolNarrow: 'L£',
+  );
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'Ρουπία Σρι Λάνκα',
+    one: 'ρουπία Σρι Λάνκα',
+    other: 'ρουπίες Σρι Λάνκα',
+    symbolNarrow: 'Rs',
+  );
+  static const _lrd = Currency(
+    _cld,
+    'LRD',
+    'Δολάριο Λιβερίας',
+    one: 'δολάριο Λιβερίας',
+    other: 'δολάρια Λιβερίας',
+    symbolNarrow: r'$',
+  );
+  static const _lsl = Currency(
+    _cld,
+    'LSL',
+    'Λότι Λεσότο',
+    one: 'λότι Λεσότο',
+    other: 'λότι Λεσότο',
+  );
+  static const _ltl = Currency(
+    _cld,
+    'LTL',
+    'Λίτα Λιθουανίας',
+    one: 'λίτα Λιθουανίας',
+    other: 'λίτα Λιθουανίας',
+    symbolNarrow: 'Lt',
+  );
+  static const _ltt = Currency(
+    _cld,
+    'LTT',
+    'Ταλόνας Λιθουανίας',
+    one: 'ταλόνας Λιθουανίας',
+    other: 'ταλόνας Λιθουανίας',
+  );
   static const _luc = Currency(_cld, 'LUC', 'Μετατρέψιμο Φράγκο Λουξεμβούργου');
-  static const _luf = Currency(_cld, 'LUF', 'Φράγκο Λουξεμβούργου',
-      one: 'φράγκο Λουξεμβούργου', other: 'φράγκα Λουξεμβούργου');
+  static const _luf = Currency(
+    _cld,
+    'LUF',
+    'Φράγκο Λουξεμβούργου',
+    one: 'φράγκο Λουξεμβούργου',
+    other: 'φράγκα Λουξεμβούργου',
+  );
   static const _lul = Currency(_cld, 'LUL', 'Οικονομικό Φράγκο Λουξεμβούργου');
-  static const _lvl = Currency(_cld, 'LVL', 'Λατς Λετονίας',
-      one: 'λατς Λετονίας', other: 'λατς Λετονίας', symbolNarrow: 'Ls');
-  static const _lvr = Currency(_cld, 'LVR', 'Ρούβλι Λετονίας',
-      one: 'ρούβλι Λετονίας', other: 'ρούβλια Λετονίας');
-  static const _lyd = Currency(_cld, 'LYD', 'Δηνάριο Λιβύης',
-      one: 'δηνάριο Λιβύης', other: 'δηνάρια Λιβύης');
-  static const _mad = Currency(_cld, 'MAD', 'Ντιράμ Μαρόκου',
-      one: 'ντιράμ Μαρόκου', other: 'ντιράμ Μαρόκου');
-  static const _maf = Currency(_cld, 'MAF', 'Φράγκο Μαρόκου',
-      one: 'φράγκο Μαρόκου', other: 'φράγκα Μαρόκου');
-  static const _mdl = Currency(_cld, 'MDL', 'Λέου Μολδαβίας',
-      one: 'λέου Μολδαβίας', other: 'λέου Μολδαβίας');
-  static const _mga = Currency(_cld, 'MGA', 'Αριάρι Μαδαγασκάρης',
-      one: 'αριάρι Μαδαγασκάρης',
-      other: 'αριάρι Μαδαγασκάρης',
-      symbolNarrow: 'Ar');
-  static const _mgf = Currency(_cld, 'MGF', 'Φράγκο Μαδαγασκάρης',
-      one: 'φράγκο Μαδαγασκάρης', other: 'φράγκα Μαδαγασκάρης');
-  static const _mkd = Currency(_cld, 'MKD', 'Δηνάριο ΠΓΔΜ',
-      one: 'δηνάριο ΠΓΔΜ', other: 'δηνάρια ΠΓΔΜ');
-  static const _mlf = Currency(_cld, 'MLF', 'Φράγκο Μαλί',
-      one: 'φράγκο Μαλί', other: 'φράγκα Μαλί');
-  static const _mmk = Currency(_cld, 'MMK', 'Κιάτ Μιανμάρ',
-      one: 'κιάτ Μιανμάρ', other: 'κιάτ Μιανμάρ', symbolNarrow: 'K');
-  static const _mnt = Currency(_cld, 'MNT', 'Τουγκρίκ Μογγολίας',
-      one: 'τουγκρίκ Μογγολίας',
-      other: 'τουγκρίκ Μογγολίας',
-      symbolNarrow: '₮');
-  static const _mop = Currency(_cld, 'MOP', 'Πατάκα Μακάο',
-      one: 'πατάκα Μακάο', other: 'πατάκα Μακάο');
-  static const _mro = Currency(_cld, 'MRO', 'Ουγκίγια Μαυριτανίας (1973–2017)',
-      one: 'ουγκίγια Μαυριτανίας (1973–2017)',
-      other: 'ουγκίγια Μαυριτανίας (1973–2017)');
-  static const _mru = Currency(_cld, 'MRU', 'Ουγκίγια Μαυριτανίας',
-      one: 'ουγκίγια Μαυριτανίας', other: 'ουγκίγια Μαυριτανίας');
-  static const _mtl = Currency(_cld, 'MTL', 'Λιρέτα Μάλτας',
-      one: 'λιρέτα Μάλτας', other: 'λιρέτες Μάλτας');
-  static const _mtp = Currency(_cld, 'MTP', 'Λίρα Μάλτας',
-      one: 'λίρα Μάλτας', other: 'λίρες Μάλτας');
-  static const _mur = Currency(_cld, 'MUR', 'Ρουπία Μαυρικίου',
-      one: 'ρουπία Μαυρικίου', other: 'ρουπίες Μαυρικίου', symbolNarrow: 'Rs');
-  static const _mvr = Currency(_cld, 'MVR', 'Ρουφίγια Μαλδίβων',
-      one: 'ρουφίγια Μαλδίβων', other: 'ρουφίγιες Μαλδίβων');
-  static const _mwk = Currency(_cld, 'MWK', 'Κουάτσα Μαλάουι',
-      one: 'κουάτσα Μαλάουι', other: 'κουάτσα Μαλάουι');
-  static const _mxn = Currency(_cld, 'MXN', 'Πέσο Μεξικού',
-      one: 'πέσο Μεξικού',
-      other: 'πέσο Μεξικού',
-      symbol: r'MX$',
-      symbolNarrow: r'$');
-  static const _mxp = Currency(_cld, 'MXP', 'Ασημένιο Πέσο Μεξικού (1861–1992)',
-      one: 'ασημένιο πέσο Μεξικού (MXP)', other: 'ασημένια πέσο Μεξικού (MXP)');
-  static const _myr = Currency(_cld, 'MYR', 'Ρινγκίτ Μαλαισίας',
-      one: 'ρινγκίτ Μαλαισίας', other: 'ρινγκίτ Μαλαισίας', symbolNarrow: 'RM');
-  static const _mze = Currency(_cld, 'MZE', 'Εσκούδο Μοζαμβίκης',
-      one: 'εσκούδο Μοζαμβίκης', other: 'εσκούδο Μοζαμβίκης');
-  static const _mzm = Currency(_cld, 'MZM', 'Παλαιό Μετικάλ Μοζαμβίκης',
-      one: 'παλιό μετικάλ Μοζαμβίκης', other: 'παλιά μετικάλ Μοζαμβίκης');
-  static const _mzn = Currency(_cld, 'MZN', 'Μετικάλ Μοζαμβίκης',
-      one: 'μετικάλ Μοζαμβίκης', other: 'μετικάλ Μοζαμβίκης');
-  static const _nad = Currency(_cld, 'NAD', 'Δολάριο Ναμίμπιας',
-      one: 'δολάριο Ναμίμπιας', other: 'δολάρια Ναμίμπιας', symbolNarrow: r'$');
-  static const _ngn = Currency(_cld, 'NGN', 'Νάιρα Νιγηρίας',
-      one: 'νάιρα Νιγηρίας', other: 'νάιρα Νιγηρίας', symbolNarrow: '₦');
-  static const _nic = Currency(_cld, 'NIC', 'Κόρδοβα Νικαράγουας',
-      one: 'κόρδοβα Νικαράγουας', other: 'κόρδοβα Νικαράγουας');
-  static const _nio = Currency(_cld, 'NIO', 'Χρυσή Κόρδοβα Νικαράγουας',
-      one: 'χρυσή κόρδοβα Νικαράγουας',
-      other: 'χρυσές κόρδοβα Νικαράγουας',
-      symbolNarrow: r'C$');
-  static const _nlg = Currency(_cld, 'NLG', 'Γκίλντα Ολλανδίας',
-      one: 'γκίλντα Ολλανδίας', other: 'γκίλντα Ολλανδίας');
-  static const _nok = Currency(_cld, 'NOK', 'Κορόνα Νορβηγίας',
-      one: 'κορόνα Νορβηγίας', other: 'κορόνες Νορβηγίας', symbolNarrow: 'kr');
-  static const _npr = Currency(_cld, 'NPR', 'Ρουπία Νεπάλ',
-      one: 'ρουπία Νεπάλ', other: 'ρουπίες Νεπάλ', symbolNarrow: 'Rs');
-  static const _nzd = Currency(_cld, 'NZD', 'Δολάριο Νέας Ζηλανδίας',
-      one: 'δολάριο Νέας Ζηλανδίας',
-      other: 'δολάρια Νέας Ζηλανδίας',
-      symbol: r'NZ$',
-      symbolNarrow: r'$');
-  static const _omr =
-      Currency(_cld, 'OMR', 'Ριάλ Ομάν', one: 'ριάλ Ομάν', other: 'ριάλ Ομάν');
-  static const _pab = Currency(_cld, 'PAB', 'Μπαλμπόα Παναμά',
-      one: 'μπαλμπόα Παναμά', other: 'μπαλμπόα Παναμά');
-  static const _pei = Currency(_cld, 'PEI', 'Ίντι Περού',
-      one: 'ίντι Περού', other: 'ίντι Περού');
-  static const _pen =
-      Currency(_cld, 'PEN', 'Σολ Περού', one: 'σολ Περού', other: 'σολ Περού');
-  static const _pes = Currency(_cld, 'PES', 'Σολ Περού (1863–1965)',
-      one: 'σολ Περού (1863–1965)', other: 'σολ Περού (1863–1965)');
-  static const _pgk = Currency(_cld, 'PGK', 'Κίνα Παπούας Νέας Γουινέας',
-      one: 'κίνα Παπούας Νέας Γουινέας', other: 'κίνα Παπούας Νέας Γουινέας');
-  static const _php = Currency(_cld, 'PHP', 'Πέσο Φιλιππίνων',
-      one: 'πέσο Φιλιππίνων',
-      other: 'πέσο Φιλιππίνων',
-      symbol: 'PHP',
-      symbolNarrow: '₱');
-  static const _pkr = Currency(_cld, 'PKR', 'Ρουπία Πακιστάν',
-      one: 'ρουπία Πακιστάν', other: 'ρουπίες Πακιστάν', symbolNarrow: 'Rs');
-  static const _pln = Currency(_cld, 'PLN', 'Ζλότι Πολωνίας',
-      one: 'ζλότι Πολωνίας', other: 'ζλότι Πολωνίας', symbolNarrow: 'zł');
-  static const _plz = Currency(_cld, 'PLZ', 'Ζλότυ Πολωνίας (1950–1995)',
-      one: 'ζλότυ Πολωνίας (PLZ)', other: 'ζλότυ Πολωνίας (PLZ)');
-  static const _pte = Currency(_cld, 'PTE', 'Εσκούδο Πορτογαλίας',
-      one: 'εσκούδο Πορτογαλίας', other: 'εσκούδο Πορτογαλίας');
-  static const _pyg = Currency(_cld, 'PYG', 'Γκουαρανί Παραγουάης',
-      one: 'γκουαρανί Παραγουάης',
-      other: 'γκουαρανί Παραγουάης',
-      symbolNarrow: '₲');
-  static const _qar = Currency(_cld, 'QAR', 'Ριάλ Κατάρ',
-      one: 'ριάλ Κατάρ', other: 'ριάλ Κατάρ');
-  static const _rhd = Currency(_cld, 'RHD', 'Δολάριο Ροδεσίας',
-      one: 'δολάριο Ροδεσίας', other: 'δολάρια Ροδεσίας');
-  static const _rol = Currency(_cld, 'ROL', 'Λέι Ρουμανίας',
-      one: 'παλιό λέι Ρουμανίας', other: 'παλιά λέι Ρουμανίας');
-  static const _ron = Currency(_cld, 'RON', 'Λέου Ρουμανίας',
-      one: 'λέου Ρουμανίας', other: 'λέου Ρουμανίας', symbolNarrow: 'lei');
-  static const _rsd = Currency(_cld, 'RSD', 'Δηνάριο Σερβίας',
-      one: 'δηνάριο Σερβίας', other: 'δηνάρια Σερβίας');
-  static const _rub = Currency(_cld, 'RUB', 'Ρούβλι Ρωσίας',
-      one: 'ρούβλι Ρωσίας', other: 'ρούβλια Ρωσίας', symbolNarrow: '₽');
-  static const _rur = Currency(_cld, 'RUR', 'Ρούβλι Ρωσίας (1991–1998)',
-      one: 'ρούβλι Ρωσίας (RUR)', other: 'ρούβλια Ρωσίας (1991–1998)');
-  static const _rwf = Currency(_cld, 'RWF', 'Φράγκο Ρουάντας',
-      one: 'φράγκο Ρουάντας', other: 'φράγκα Ρουάντας', symbolNarrow: 'RF');
-  static const _sar = Currency(_cld, 'SAR', 'Ριάλ Σαουδικής Αραβίας',
-      one: 'ριάλ Σαουδικής Αραβίας', other: 'ριάλ Σαουδικής Αραβίας');
-  static const _sbd = Currency(_cld, 'SBD', 'Δολάριο Νήσων Σολομώντος',
-      one: 'δολάριο Νήσων Σολομώντος',
-      other: 'δολάρια Νήσων Σολομώντος',
-      symbolNarrow: r'$');
-  static const _scr = Currency(_cld, 'SCR', 'Ρουπία Σεϋχελλών',
-      one: 'ρουπία Σεϋχελλών', other: 'ρουπίες Σεϋχελλών');
-  static const _sdd = Currency(_cld, 'SDD', 'Δηνάριο Σουδάν',
-      one: 'δηνάριο Σουδάν', other: 'δηνάρια Σουδάν');
-  static const _sdg = Currency(_cld, 'SDG', 'Λίρα Σουδάν',
-      one: 'λίρα Σουδάν', other: 'λίρες Σουδάν');
-  static const _sdp = Currency(_cld, 'SDP', 'Παλαιά Λίρα Σουδάν',
-      one: 'παλιά λίρα Σουδάν', other: 'παλαιές λίρες Σουδάν');
-  static const _sek = Currency(_cld, 'SEK', 'Κορόνα Σουηδίας',
-      one: 'κορόνα Σουηδίας', other: 'κορόνες Σουηδίας', symbolNarrow: 'kr');
-  static const _sgd = Currency(_cld, 'SGD', 'Δολάριο Σιγκαπούρης',
-      one: 'δολάριο Σιγκαπούρης',
-      other: 'δολάρια Σιγκαπούρης',
-      symbolNarrow: r'$');
-  static const _shp = Currency(_cld, 'SHP', 'Λίρα Αγίας Ελένης',
-      one: 'λίρα Αγίας Ελένης', other: 'λίρες Αγίας Ελένης', symbolNarrow: '£');
-  static const _sit = Currency(_cld, 'SIT', 'Τόλαρ Σλοβενίας',
-      one: 'τόλαρ Σλοβενίας', other: 'τόλαρ Σλοβ');
-  static const _skk = Currency(_cld, 'SKK', 'Κορόνα Σλοβενίας',
-      one: 'κορόνα Σλοβενίας', other: 'κορόνες Σλοβενίας');
-  static const _sle = Currency(_cld, 'SLE', 'Λεόνε Σιέρα Λεόνε',
-      one: 'λεόνε Σιέρα Λεόνε', other: 'λεόνε Σιέρα Λεόνε');
-  static const _sll = Currency(_cld, 'SLL', 'Λεόνε Σιέρα Λεόνε (1964—2022)',
-      one: 'λεόνε Σιέρα Λεόνε (1964—2022)',
-      other: 'λεόνε Σιέρα Λεόνε (1964—2022)');
-  static const _sos = Currency(_cld, 'SOS', 'Σελίνι Σομαλίας',
-      one: 'σελίνι Σομαλίας', other: 'σελίνια Σομαλίας');
-  static const _srd = Currency(_cld, 'SRD', 'Δολάριο Σουρινάμ',
-      one: 'δολάριο Σουρινάμ', other: 'δολάρια Σουρινάμ', symbolNarrow: r'$');
-  static const _srg = Currency(_cld, 'SRG', 'Γκίλντα Σουρινάμ',
-      one: 'γκίλντα Σουρινάμ', other: 'γκίλντα Σουρινάμ');
-  static const _ssp = Currency(_cld, 'SSP', 'Λίρα Νότιου Σουδάν',
-      one: 'λίρα Νότιου Σουδάν',
-      other: 'λίρες Νότιου Σουδάν',
-      symbolNarrow: '£');
+  static const _lvl = Currency(
+    _cld,
+    'LVL',
+    'Λατς Λετονίας',
+    one: 'λατς Λετονίας',
+    other: 'λατς Λετονίας',
+    symbolNarrow: 'Ls',
+  );
+  static const _lvr = Currency(
+    _cld,
+    'LVR',
+    'Ρούβλι Λετονίας',
+    one: 'ρούβλι Λετονίας',
+    other: 'ρούβλια Λετονίας',
+  );
+  static const _lyd = Currency(
+    _cld,
+    'LYD',
+    'Δηνάριο Λιβύης',
+    one: 'δηνάριο Λιβύης',
+    other: 'δηνάρια Λιβύης',
+  );
+  static const _mad = Currency(
+    _cld,
+    'MAD',
+    'Ντιράμ Μαρόκου',
+    one: 'ντιράμ Μαρόκου',
+    other: 'ντιράμ Μαρόκου',
+  );
+  static const _maf = Currency(
+    _cld,
+    'MAF',
+    'Φράγκο Μαρόκου',
+    one: 'φράγκο Μαρόκου',
+    other: 'φράγκα Μαρόκου',
+  );
+  static const _mdl = Currency(
+    _cld,
+    'MDL',
+    'Λέου Μολδαβίας',
+    one: 'λέου Μολδαβίας',
+    other: 'λέου Μολδαβίας',
+  );
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'Αριάρι Μαδαγασκάρης',
+    one: 'αριάρι Μαδαγασκάρης',
+    other: 'αριάρι Μαδαγασκάρης',
+    symbolNarrow: 'Ar',
+  );
+  static const _mgf = Currency(
+    _cld,
+    'MGF',
+    'Φράγκο Μαδαγασκάρης',
+    one: 'φράγκο Μαδαγασκάρης',
+    other: 'φράγκα Μαδαγασκάρης',
+  );
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'Δηνάριο ΠΓΔΜ',
+    one: 'δηνάριο ΠΓΔΜ',
+    other: 'δηνάρια ΠΓΔΜ',
+  );
+  static const _mlf = Currency(
+    _cld,
+    'MLF',
+    'Φράγκο Μαλί',
+    one: 'φράγκο Μαλί',
+    other: 'φράγκα Μαλί',
+  );
+  static const _mmk = Currency(
+    _cld,
+    'MMK',
+    'Κιάτ Μιανμάρ',
+    one: 'κιάτ Μιανμάρ',
+    other: 'κιάτ Μιανμάρ',
+    symbolNarrow: 'K',
+  );
+  static const _mnt = Currency(
+    _cld,
+    'MNT',
+    'Τουγκρίκ Μογγολίας',
+    one: 'τουγκρίκ Μογγολίας',
+    other: 'τουγκρίκ Μογγολίας',
+    symbolNarrow: '₮',
+  );
+  static const _mop = Currency(
+    _cld,
+    'MOP',
+    'Πατάκα Μακάο',
+    one: 'πατάκα Μακάο',
+    other: 'πατάκα Μακάο',
+  );
+  static const _mro = Currency(
+    _cld,
+    'MRO',
+    'Ουγκίγια Μαυριτανίας (1973–2017)',
+    one: 'ουγκίγια Μαυριτανίας (1973–2017)',
+    other: 'ουγκίγια Μαυριτανίας (1973–2017)',
+  );
+  static const _mru = Currency(
+    _cld,
+    'MRU',
+    'Ουγκίγια Μαυριτανίας',
+    one: 'ουγκίγια Μαυριτανίας',
+    other: 'ουγκίγια Μαυριτανίας',
+  );
+  static const _mtl = Currency(
+    _cld,
+    'MTL',
+    'Λιρέτα Μάλτας',
+    one: 'λιρέτα Μάλτας',
+    other: 'λιρέτες Μάλτας',
+  );
+  static const _mtp = Currency(
+    _cld,
+    'MTP',
+    'Λίρα Μάλτας',
+    one: 'λίρα Μάλτας',
+    other: 'λίρες Μάλτας',
+  );
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'Ρουπία Μαυρικίου',
+    one: 'ρουπία Μαυρικίου',
+    other: 'ρουπίες Μαυρικίου',
+    symbolNarrow: 'Rs',
+  );
+  static const _mvr = Currency(
+    _cld,
+    'MVR',
+    'Ρουφίγια Μαλδίβων',
+    one: 'ρουφίγια Μαλδίβων',
+    other: 'ρουφίγιες Μαλδίβων',
+  );
+  static const _mwk = Currency(
+    _cld,
+    'MWK',
+    'Κουάτσα Μαλάουι',
+    one: 'κουάτσα Μαλάουι',
+    other: 'κουάτσα Μαλάουι',
+  );
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'Πέσο Μεξικού',
+    one: 'πέσο Μεξικού',
+    other: 'πέσο Μεξικού',
+    symbol: r'MX$',
+    symbolNarrow: r'$',
+  );
+  static const _mxp = Currency(
+    _cld,
+    'MXP',
+    'Ασημένιο Πέσο Μεξικού (1861–1992)',
+    one: 'ασημένιο πέσο Μεξικού (MXP)',
+    other: 'ασημένια πέσο Μεξικού (MXP)',
+  );
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'Ρινγκίτ Μαλαισίας',
+    one: 'ρινγκίτ Μαλαισίας',
+    other: 'ρινγκίτ Μαλαισίας',
+    symbolNarrow: 'RM',
+  );
+  static const _mze = Currency(
+    _cld,
+    'MZE',
+    'Εσκούδο Μοζαμβίκης',
+    one: 'εσκούδο Μοζαμβίκης',
+    other: 'εσκούδο Μοζαμβίκης',
+  );
+  static const _mzm = Currency(
+    _cld,
+    'MZM',
+    'Παλαιό Μετικάλ Μοζαμβίκης',
+    one: 'παλιό μετικάλ Μοζαμβίκης',
+    other: 'παλιά μετικάλ Μοζαμβίκης',
+  );
+  static const _mzn = Currency(
+    _cld,
+    'MZN',
+    'Μετικάλ Μοζαμβίκης',
+    one: 'μετικάλ Μοζαμβίκης',
+    other: 'μετικάλ Μοζαμβίκης',
+  );
+  static const _nad = Currency(
+    _cld,
+    'NAD',
+    'Δολάριο Ναμίμπιας',
+    one: 'δολάριο Ναμίμπιας',
+    other: 'δολάρια Ναμίμπιας',
+    symbolNarrow: r'$',
+  );
+  static const _ngn = Currency(
+    _cld,
+    'NGN',
+    'Νάιρα Νιγηρίας',
+    one: 'νάιρα Νιγηρίας',
+    other: 'νάιρα Νιγηρίας',
+    symbolNarrow: '₦',
+  );
+  static const _nic = Currency(
+    _cld,
+    'NIC',
+    'Κόρδοβα Νικαράγουας',
+    one: 'κόρδοβα Νικαράγουας',
+    other: 'κόρδοβα Νικαράγουας',
+  );
+  static const _nio = Currency(
+    _cld,
+    'NIO',
+    'Χρυσή Κόρδοβα Νικαράγουας',
+    one: 'χρυσή κόρδοβα Νικαράγουας',
+    other: 'χρυσές κόρδοβα Νικαράγουας',
+    symbolNarrow: r'C$',
+  );
+  static const _nlg = Currency(
+    _cld,
+    'NLG',
+    'Γκίλντα Ολλανδίας',
+    one: 'γκίλντα Ολλανδίας',
+    other: 'γκίλντα Ολλανδίας',
+  );
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'Κορόνα Νορβηγίας',
+    one: 'κορόνα Νορβηγίας',
+    other: 'κορόνες Νορβηγίας',
+    symbolNarrow: 'kr',
+  );
+  static const _npr = Currency(
+    _cld,
+    'NPR',
+    'Ρουπία Νεπάλ',
+    one: 'ρουπία Νεπάλ',
+    other: 'ρουπίες Νεπάλ',
+    symbolNarrow: 'Rs',
+  );
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'Δολάριο Νέας Ζηλανδίας',
+    one: 'δολάριο Νέας Ζηλανδίας',
+    other: 'δολάρια Νέας Ζηλανδίας',
+    symbol: r'NZ$',
+    symbolNarrow: r'$',
+  );
+  static const _omr = Currency(
+    _cld,
+    'OMR',
+    'Ριάλ Ομάν',
+    one: 'ριάλ Ομάν',
+    other: 'ριάλ Ομάν',
+  );
+  static const _pab = Currency(
+    _cld,
+    'PAB',
+    'Μπαλμπόα Παναμά',
+    one: 'μπαλμπόα Παναμά',
+    other: 'μπαλμπόα Παναμά',
+  );
+  static const _pei = Currency(
+    _cld,
+    'PEI',
+    'Ίντι Περού',
+    one: 'ίντι Περού',
+    other: 'ίντι Περού',
+  );
+  static const _pen = Currency(
+    _cld,
+    'PEN',
+    'Σολ Περού',
+    one: 'σολ Περού',
+    other: 'σολ Περού',
+  );
+  static const _pes = Currency(
+    _cld,
+    'PES',
+    'Σολ Περού (1863–1965)',
+    one: 'σολ Περού (1863–1965)',
+    other: 'σολ Περού (1863–1965)',
+  );
+  static const _pgk = Currency(
+    _cld,
+    'PGK',
+    'Κίνα Παπούας Νέας Γουινέας',
+    one: 'κίνα Παπούας Νέας Γουινέας',
+    other: 'κίνα Παπούας Νέας Γουινέας',
+  );
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'Πέσο Φιλιππίνων',
+    one: 'πέσο Φιλιππίνων',
+    other: 'πέσο Φιλιππίνων',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'Ρουπία Πακιστάν',
+    one: 'ρουπία Πακιστάν',
+    other: 'ρουπίες Πακιστάν',
+    symbolNarrow: 'Rs',
+  );
+  static const _pln = Currency(
+    _cld,
+    'PLN',
+    'Ζλότι Πολωνίας',
+    one: 'ζλότι Πολωνίας',
+    other: 'ζλότι Πολωνίας',
+    symbolNarrow: 'zł',
+  );
+  static const _plz = Currency(
+    _cld,
+    'PLZ',
+    'Ζλότυ Πολωνίας (1950–1995)',
+    one: 'ζλότυ Πολωνίας (PLZ)',
+    other: 'ζλότυ Πολωνίας (PLZ)',
+  );
+  static const _pte = Currency(
+    _cld,
+    'PTE',
+    'Εσκούδο Πορτογαλίας',
+    one: 'εσκούδο Πορτογαλίας',
+    other: 'εσκούδο Πορτογαλίας',
+  );
+  static const _pyg = Currency(
+    _cld,
+    'PYG',
+    'Γκουαρανί Παραγουάης',
+    one: 'γκουαρανί Παραγουάης',
+    other: 'γκουαρανί Παραγουάης',
+    symbolNarrow: '₲',
+  );
+  static const _qar = Currency(
+    _cld,
+    'QAR',
+    'Ριάλ Κατάρ',
+    one: 'ριάλ Κατάρ',
+    other: 'ριάλ Κατάρ',
+  );
+  static const _rhd = Currency(
+    _cld,
+    'RHD',
+    'Δολάριο Ροδεσίας',
+    one: 'δολάριο Ροδεσίας',
+    other: 'δολάρια Ροδεσίας',
+  );
+  static const _rol = Currency(
+    _cld,
+    'ROL',
+    'Λέι Ρουμανίας',
+    one: 'παλιό λέι Ρουμανίας',
+    other: 'παλιά λέι Ρουμανίας',
+  );
+  static const _ron = Currency(
+    _cld,
+    'RON',
+    'Λέου Ρουμανίας',
+    one: 'λέου Ρουμανίας',
+    other: 'λέου Ρουμανίας',
+    symbolNarrow: 'lei',
+  );
+  static const _rsd = Currency(
+    _cld,
+    'RSD',
+    'Δηνάριο Σερβίας',
+    one: 'δηνάριο Σερβίας',
+    other: 'δηνάρια Σερβίας',
+  );
+  static const _rub = Currency(
+    _cld,
+    'RUB',
+    'Ρούβλι Ρωσίας',
+    one: 'ρούβλι Ρωσίας',
+    other: 'ρούβλια Ρωσίας',
+    symbolNarrow: '₽',
+  );
+  static const _rur = Currency(
+    _cld,
+    'RUR',
+    'Ρούβλι Ρωσίας (1991–1998)',
+    one: 'ρούβλι Ρωσίας (RUR)',
+    other: 'ρούβλια Ρωσίας (1991–1998)',
+  );
+  static const _rwf = Currency(
+    _cld,
+    'RWF',
+    'Φράγκο Ρουάντας',
+    one: 'φράγκο Ρουάντας',
+    other: 'φράγκα Ρουάντας',
+    symbolNarrow: 'RF',
+  );
+  static const _sar = Currency(
+    _cld,
+    'SAR',
+    'Ριάλ Σαουδικής Αραβίας',
+    one: 'ριάλ Σαουδικής Αραβίας',
+    other: 'ριάλ Σαουδικής Αραβίας',
+  );
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'Δολάριο Νήσων Σολομώντος',
+    one: 'δολάριο Νήσων Σολομώντος',
+    other: 'δολάρια Νήσων Σολομώντος',
+    symbolNarrow: r'$',
+  );
+  static const _scr = Currency(
+    _cld,
+    'SCR',
+    'Ρουπία Σεϋχελλών',
+    one: 'ρουπία Σεϋχελλών',
+    other: 'ρουπίες Σεϋχελλών',
+  );
+  static const _sdd = Currency(
+    _cld,
+    'SDD',
+    'Δηνάριο Σουδάν',
+    one: 'δηνάριο Σουδάν',
+    other: 'δηνάρια Σουδάν',
+  );
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'Λίρα Σουδάν',
+    one: 'λίρα Σουδάν',
+    other: 'λίρες Σουδάν',
+  );
+  static const _sdp = Currency(
+    _cld,
+    'SDP',
+    'Παλαιά Λίρα Σουδάν',
+    one: 'παλιά λίρα Σουδάν',
+    other: 'παλαιές λίρες Σουδάν',
+  );
+  static const _sek = Currency(
+    _cld,
+    'SEK',
+    'Κορόνα Σουηδίας',
+    one: 'κορόνα Σουηδίας',
+    other: 'κορόνες Σουηδίας',
+    symbolNarrow: 'kr',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'Δολάριο Σιγκαπούρης',
+    one: 'δολάριο Σιγκαπούρης',
+    other: 'δολάρια Σιγκαπούρης',
+    symbolNarrow: r'$',
+  );
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'Λίρα Αγίας Ελένης',
+    one: 'λίρα Αγίας Ελένης',
+    other: 'λίρες Αγίας Ελένης',
+    symbolNarrow: '£',
+  );
+  static const _sit = Currency(
+    _cld,
+    'SIT',
+    'Τόλαρ Σλοβενίας',
+    one: 'τόλαρ Σλοβενίας',
+    other: 'τόλαρ Σλοβ',
+  );
+  static const _skk = Currency(
+    _cld,
+    'SKK',
+    'Κορόνα Σλοβενίας',
+    one: 'κορόνα Σλοβενίας',
+    other: 'κορόνες Σλοβενίας',
+  );
+  static const _sle = Currency(
+    _cld,
+    'SLE',
+    'Λεόνε Σιέρα Λεόνε',
+    one: 'λεόνε Σιέρα Λεόνε',
+    other: 'λεόνε Σιέρα Λεόνε',
+  );
+  static const _sll = Currency(
+    _cld,
+    'SLL',
+    'Λεόνε Σιέρα Λεόνε (1964—2022)',
+    one: 'λεόνε Σιέρα Λεόνε (1964—2022)',
+    other: 'λεόνε Σιέρα Λεόνε (1964—2022)',
+  );
+  static const _sos = Currency(
+    _cld,
+    'SOS',
+    'Σελίνι Σομαλίας',
+    one: 'σελίνι Σομαλίας',
+    other: 'σελίνια Σομαλίας',
+  );
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'Δολάριο Σουρινάμ',
+    one: 'δολάριο Σουρινάμ',
+    other: 'δολάρια Σουρινάμ',
+    symbolNarrow: r'$',
+  );
+  static const _srg = Currency(
+    _cld,
+    'SRG',
+    'Γκίλντα Σουρινάμ',
+    one: 'γκίλντα Σουρινάμ',
+    other: 'γκίλντα Σουρινάμ',
+  );
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'Λίρα Νότιου Σουδάν',
+    one: 'λίρα Νότιου Σουδάν',
+    other: 'λίρες Νότιου Σουδάν',
+    symbolNarrow: '£',
+  );
   static const _std = Currency(
-      _cld, 'STD', 'Ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)',
-      one: 'ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)',
-      other: 'ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)');
-  static const _stn = Currency(_cld, 'STN', 'Ντόμπρα Σάο Τομέ και Πρίνσιπε',
-      one: 'ντόμπρα Σάο Τομέ και Πρίνσιπε',
-      other: 'ντόμπρα Σάο Τομέ και Πρίνσιπε',
-      symbolNarrow: 'Db');
-  static const _sur = Currency(_cld, 'SUR', 'Σοβιετικό Ρούβλι',
-      one: 'σοβιετικό ρούβλι', other: 'σοβιετικά ρούβλια');
-  static const _svc = Currency(_cld, 'SVC', 'Κολόν Ελ Σαλβαδόρ',
-      one: 'κολόν Ελ Σαλβαδόρ', other: 'κολόν Ελ Σαλβαδόρ');
-  static const _syp = Currency(_cld, 'SYP', 'Λίρα Συρίας',
-      one: 'λίρα Συρίας', other: 'λίρες Συρίας', symbolNarrow: '£');
-  static const _szl = Currency(_cld, 'SZL', 'Λιλανγκένι Σουαζιλάνδης',
-      one: 'λιλανγκένι Σουαζιλάνδης', other: 'λιλανγκένι Σουαζιλάνδης');
-  static const _thb = Currency(_cld, 'THB', 'Μπατ Ταϊλάνδης',
-      one: 'μπατ Ταϊλάνδης',
-      other: 'μπατ Ταϊλάνδης',
-      symbol: '฿',
-      symbolNarrow: '฿');
-  static const _tjr = Currency(_cld, 'TJR', 'Ρούβλι Τατζικιστάν',
-      one: 'ρούβλι Τατζικιστάν', other: 'ρούβλια Τατζικιστάν');
-  static const _tjs = Currency(_cld, 'TJS', 'Σομόνι Τατζικιστάν',
-      one: 'σομόνι Τατζικιστάν', other: 'σομόνι Τατζικιστάν');
-  static const _tmm = Currency(_cld, 'TMM', 'Μανάτ Τουρκμενιστάν',
-      one: 'μανάτ Τουρκμενιστάν', other: 'μανάτ Τουρκμενιστάν');
-  static const _tmt = Currency(_cld, 'TMT', 'Μάνατ Τουρκμενιστάν',
-      one: 'μάνατ Τουρκμενιστάν', other: 'μάνατ Τουρκμενιστάν');
-  static const _tnd = Currency(_cld, 'TND', 'Δηνάριο Τυνησίας',
-      one: 'δηνάριο Τυνησίας', other: 'δηνάρια Τυνησίας');
-  static const _top = Currency(_cld, 'TOP', 'Παάγκα Τόνγκα',
-      one: 'παάγκα Τόνγκα', other: 'παάγκα Τόνγκα', symbolNarrow: r'T$');
-  static const _tpe = Currency(_cld, 'TPE', 'Εσκούδο Τιμόρ',
-      one: 'εσκούδο Τιμόρ', other: 'εσκούδο Τιμόρ');
-  static const _trl = Currency(_cld, 'TRL', 'Παλιά Λίρα Τουρκίας',
-      one: 'παλιά λίρα Τουρκίας', other: 'παλιές λίρες Τουρκίας');
-  static const _$try = Currency(_cld, 'TRY', 'Λίρα Τουρκίας',
-      one: 'λίρα Τουρκίας',
-      other: 'λίρες Τουρκίας',
-      symbolNarrow: '₺',
-      symbolVariant: 'TL');
-  static const _ttd = Currency(_cld, 'TTD', 'Δολάριο Τρινιντάντ και Τομπάγκο',
-      one: 'δολάριο Τρινιντάντ και Τομπάγκο',
-      other: 'δολάρια Τρινιντάντ και Τομπάγκο',
-      symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'Νέο δολάριο Ταϊβάν',
-      one: 'νέο δολάριο Ταϊβάν',
-      other: 'νέα δολάρια Ταϊβάν',
-      symbol: r'NT$',
-      symbolNarrow: r'$');
-  static const _tzs = Currency(_cld, 'TZS', 'Σελίνι Τανζανίας',
-      one: 'σελίνι Τανζανίας', other: 'σελίνια Τανζανίας');
-  static const _uah = Currency(_cld, 'UAH', 'Γρίβνα Ουκρανίας',
-      one: 'γρίβνα Ουκρανίας', other: 'γρίβνα Ουκρανίας', symbolNarrow: '₴');
-  static const _uak = Currency(_cld, 'UAK', 'Καρμποβανέτς Ουκρανίας',
-      one: 'καρμποβανέτς Ουκρανίας', other: 'καρμποβανέτς Ουκρανίας');
-  static const _ugs = Currency(_cld, 'UGS', 'Σελίνι Ουγκάντας (1966–1987)',
-      one: 'σελίνι Ουγκάντας (UGS)', other: 'σελίνια Ουγκάντας (UGS)');
-  static const _ugx = Currency(_cld, 'UGX', 'Σελίνι Ουγκάντας',
-      one: 'σελίνι Ουγκάντας', other: 'σελίνια Ουγκάντας');
-  static const _usd = Currency(_cld, 'USD', 'Δολάριο ΗΠΑ',
-      one: 'δολάριο ΗΠΑ',
-      other: 'δολάρια ΗΠΑ',
-      symbol: r'$',
-      symbolNarrow: r'$');
-  static const _usn = Currency(_cld, 'USN', 'Δολάριο ΗΠΑ (επόμενη ημέρα)',
-      one: 'δολάριο Η.Π.Α. (επόμενη ημέρα)',
-      other: 'δολάρια Η.Π.Α. (επόμενη ημέρα)');
-  static const _uss = Currency(_cld, 'USS', 'Δολάριο ΗΠΑ (ίδια ημέρα)',
-      one: 'δολάριο Η.Π.Α. (ίδια ημέρα)', other: 'δολάρια Η.Π.Α. (ίδια ημέρα)');
-  static const _uyp = Currency(_cld, 'UYP', 'Πέσο Ουρουγουάης (1975–1993)',
-      one: 'πέσο Ουρουγουάης (UYP)', other: 'πέσο Ουρουγουάης (UYP)');
-  static const _uyu = Currency(_cld, 'UYU', 'Πέσο Ουρουγουάης',
-      one: 'πέσο Ουρουγουάης', other: 'πέσο Ουρουγουάης', symbolNarrow: r'$');
-  static const _uzs = Currency(_cld, 'UZS', 'Σομ Ουζμπεκιστάν',
-      one: 'σομ Ουζμπεκιστάν', other: 'σομ Ουζμπεκιστάν');
-  static const _veb = Currency(_cld, 'VEB', 'Μπολιβάρ Βενεζουέλας (1871–2008)',
-      one: 'μπολιβάρ Βενεζουέλας (1871–2008)',
-      other: 'μπολιβάρ Βενεζουέλας (1871–2008)');
-  static const _vef = Currency(_cld, 'VEF', 'Μπολιβάρ Βενεζουέλας (2008–2018)',
-      one: 'μπολιβάρ Βενεζουέλας (2008–2018)',
-      other: 'μπολιβάρ Βενεζουέλας (2008–2018)',
-      symbolNarrow: 'Bs');
-  static const _ves = Currency(_cld, 'VES', 'Μπολιβάρ Βενεζουέλας',
-      one: 'μπολιβάρ Βενεζουέλας', other: 'μπολιβάρ Βενεζουέλας');
-  static const _vnd = Currency(_cld, 'VND', 'Ντονγκ Βιετνάμ',
-      one: 'ντονγκ Βιετνάμ',
-      other: 'ντονγκ Βιετνάμ',
-      symbol: '₫',
-      symbolNarrow: '₫');
-  static const _vuv = Currency(_cld, 'VUV', 'Βατού Βανουάτου',
-      one: 'βατού Βανουάτου', other: 'βατού Βανουάτου');
-  static const _wst = Currency(_cld, 'WST', 'Τάλα Σαμόα',
-      one: 'τάλα Σαμόα', other: 'τάλα Σαμόα');
-  static const _xaf = Currency(_cld, 'XAF', 'Φράγκο CFA Κεντρικής Αφρικής',
-      one: 'φράγκο CFA Κεντρικής Αφρικής',
-      other: 'φράγκα CFA Κεντρικής Αφρικής',
-      symbol: 'FCFA');
-  static const _xba = Currency(_cld, 'XBA', 'Ευρωπαϊκή Σύνθετη Μονάδα',
-      one: 'ευρωπαϊκή σύνθετη μονάδα', other: 'ευρωπαϊκές σύνθετες μονάδες');
-  static const _xbb = Currency(_cld, 'XBB', 'Ευρωπαϊκή Νομισματική Μονάδα',
-      one: 'ευρωπαϊκή νομισματική μονάδα',
-      other: 'ευρωπαϊκές νομισματικές μονάδες');
+    _cld,
+    'STD',
+    'Ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)',
+    one: 'ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)',
+    other: 'ντόμπρα Σάο Τομέ και Πρίνσιπε (1977–2017)',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'Ντόμπρα Σάο Τομέ και Πρίνσιπε',
+    one: 'ντόμπρα Σάο Τομέ και Πρίνσιπε',
+    other: 'ντόμπρα Σάο Τομέ και Πρίνσιπε',
+    symbolNarrow: 'Db',
+  );
+  static const _sur = Currency(
+    _cld,
+    'SUR',
+    'Σοβιετικό Ρούβλι',
+    one: 'σοβιετικό ρούβλι',
+    other: 'σοβιετικά ρούβλια',
+  );
+  static const _svc = Currency(
+    _cld,
+    'SVC',
+    'Κολόν Ελ Σαλβαδόρ',
+    one: 'κολόν Ελ Σαλβαδόρ',
+    other: 'κολόν Ελ Σαλβαδόρ',
+  );
+  static const _syp = Currency(
+    _cld,
+    'SYP',
+    'Λίρα Συρίας',
+    one: 'λίρα Συρίας',
+    other: 'λίρες Συρίας',
+    symbolNarrow: '£',
+  );
+  static const _szl = Currency(
+    _cld,
+    'SZL',
+    'Λιλανγκένι Σουαζιλάνδης',
+    one: 'λιλανγκένι Σουαζιλάνδης',
+    other: 'λιλανγκένι Σουαζιλάνδης',
+  );
+  static const _thb = Currency(
+    _cld,
+    'THB',
+    'Μπατ Ταϊλάνδης',
+    one: 'μπατ Ταϊλάνδης',
+    other: 'μπατ Ταϊλάνδης',
+    symbol: '฿',
+    symbolNarrow: '฿',
+  );
+  static const _tjr = Currency(
+    _cld,
+    'TJR',
+    'Ρούβλι Τατζικιστάν',
+    one: 'ρούβλι Τατζικιστάν',
+    other: 'ρούβλια Τατζικιστάν',
+  );
+  static const _tjs = Currency(
+    _cld,
+    'TJS',
+    'Σομόνι Τατζικιστάν',
+    one: 'σομόνι Τατζικιστάν',
+    other: 'σομόνι Τατζικιστάν',
+  );
+  static const _tmm = Currency(
+    _cld,
+    'TMM',
+    'Μανάτ Τουρκμενιστάν',
+    one: 'μανάτ Τουρκμενιστάν',
+    other: 'μανάτ Τουρκμενιστάν',
+  );
+  static const _tmt = Currency(
+    _cld,
+    'TMT',
+    'Μάνατ Τουρκμενιστάν',
+    one: 'μάνατ Τουρκμενιστάν',
+    other: 'μάνατ Τουρκμενιστάν',
+  );
+  static const _tnd = Currency(
+    _cld,
+    'TND',
+    'Δηνάριο Τυνησίας',
+    one: 'δηνάριο Τυνησίας',
+    other: 'δηνάρια Τυνησίας',
+  );
+  static const _top = Currency(
+    _cld,
+    'TOP',
+    'Παάγκα Τόνγκα',
+    one: 'παάγκα Τόνγκα',
+    other: 'παάγκα Τόνγκα',
+    symbolNarrow: r'T$',
+  );
+  static const _tpe = Currency(
+    _cld,
+    'TPE',
+    'Εσκούδο Τιμόρ',
+    one: 'εσκούδο Τιμόρ',
+    other: 'εσκούδο Τιμόρ',
+  );
+  static const _trl = Currency(
+    _cld,
+    'TRL',
+    'Παλιά Λίρα Τουρκίας',
+    one: 'παλιά λίρα Τουρκίας',
+    other: 'παλιές λίρες Τουρκίας',
+  );
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'Λίρα Τουρκίας',
+    one: 'λίρα Τουρκίας',
+    other: 'λίρες Τουρκίας',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'Δολάριο Τρινιντάντ και Τομπάγκο',
+    one: 'δολάριο Τρινιντάντ και Τομπάγκο',
+    other: 'δολάρια Τρινιντάντ και Τομπάγκο',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'Νέο δολάριο Ταϊβάν',
+    one: 'νέο δολάριο Ταϊβάν',
+    other: 'νέα δολάρια Ταϊβάν',
+    symbol: r'NT$',
+    symbolNarrow: r'$',
+  );
+  static const _tzs = Currency(
+    _cld,
+    'TZS',
+    'Σελίνι Τανζανίας',
+    one: 'σελίνι Τανζανίας',
+    other: 'σελίνια Τανζανίας',
+  );
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'Γρίβνα Ουκρανίας',
+    one: 'γρίβνα Ουκρανίας',
+    other: 'γρίβνα Ουκρανίας',
+    symbolNarrow: '₴',
+  );
+  static const _uak = Currency(
+    _cld,
+    'UAK',
+    'Καρμποβανέτς Ουκρανίας',
+    one: 'καρμποβανέτς Ουκρανίας',
+    other: 'καρμποβανέτς Ουκρανίας',
+  );
+  static const _ugs = Currency(
+    _cld,
+    'UGS',
+    'Σελίνι Ουγκάντας (1966–1987)',
+    one: 'σελίνι Ουγκάντας (UGS)',
+    other: 'σελίνια Ουγκάντας (UGS)',
+  );
+  static const _ugx = Currency(
+    _cld,
+    'UGX',
+    'Σελίνι Ουγκάντας',
+    one: 'σελίνι Ουγκάντας',
+    other: 'σελίνια Ουγκάντας',
+  );
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'Δολάριο ΗΠΑ',
+    one: 'δολάριο ΗΠΑ',
+    other: 'δολάρια ΗΠΑ',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
+  static const _usn = Currency(
+    _cld,
+    'USN',
+    'Δολάριο ΗΠΑ (επόμενη ημέρα)',
+    one: 'δολάριο Η.Π.Α. (επόμενη ημέρα)',
+    other: 'δολάρια Η.Π.Α. (επόμενη ημέρα)',
+  );
+  static const _uss = Currency(
+    _cld,
+    'USS',
+    'Δολάριο ΗΠΑ (ίδια ημέρα)',
+    one: 'δολάριο Η.Π.Α. (ίδια ημέρα)',
+    other: 'δολάρια Η.Π.Α. (ίδια ημέρα)',
+  );
+  static const _uyp = Currency(
+    _cld,
+    'UYP',
+    'Πέσο Ουρουγουάης (1975–1993)',
+    one: 'πέσο Ουρουγουάης (UYP)',
+    other: 'πέσο Ουρουγουάης (UYP)',
+  );
+  static const _uyu = Currency(
+    _cld,
+    'UYU',
+    'Πέσο Ουρουγουάης',
+    one: 'πέσο Ουρουγουάης',
+    other: 'πέσο Ουρουγουάης',
+    symbolNarrow: r'$',
+  );
+  static const _uzs = Currency(
+    _cld,
+    'UZS',
+    'Σομ Ουζμπεκιστάν',
+    one: 'σομ Ουζμπεκιστάν',
+    other: 'σομ Ουζμπεκιστάν',
+  );
+  static const _veb = Currency(
+    _cld,
+    'VEB',
+    'Μπολιβάρ Βενεζουέλας (1871–2008)',
+    one: 'μπολιβάρ Βενεζουέλας (1871–2008)',
+    other: 'μπολιβάρ Βενεζουέλας (1871–2008)',
+  );
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'Μπολιβάρ Βενεζουέλας (2008–2018)',
+    one: 'μπολιβάρ Βενεζουέλας (2008–2018)',
+    other: 'μπολιβάρ Βενεζουέλας (2008–2018)',
+    symbolNarrow: 'Bs',
+  );
+  static const _ves = Currency(
+    _cld,
+    'VES',
+    'Μπολιβάρ Βενεζουέλας',
+    one: 'μπολιβάρ Βενεζουέλας',
+    other: 'μπολιβάρ Βενεζουέλας',
+  );
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'Ντονγκ Βιετνάμ',
+    one: 'ντονγκ Βιετνάμ',
+    other: 'ντονγκ Βιετνάμ',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
+  static const _vuv = Currency(
+    _cld,
+    'VUV',
+    'Βατού Βανουάτου',
+    one: 'βατού Βανουάτου',
+    other: 'βατού Βανουάτου',
+  );
+  static const _wst = Currency(
+    _cld,
+    'WST',
+    'Τάλα Σαμόα',
+    one: 'τάλα Σαμόα',
+    other: 'τάλα Σαμόα',
+  );
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'Φράγκο CFA Κεντρικής Αφρικής',
+    one: 'φράγκο CFA Κεντρικής Αφρικής',
+    other: 'φράγκα CFA Κεντρικής Αφρικής',
+    symbol: 'FCFA',
+  );
+  static const _xba = Currency(
+    _cld,
+    'XBA',
+    'Ευρωπαϊκή Σύνθετη Μονάδα',
+    one: 'ευρωπαϊκή σύνθετη μονάδα',
+    other: 'ευρωπαϊκές σύνθετες μονάδες',
+  );
+  static const _xbb = Currency(
+    _cld,
+    'XBB',
+    'Ευρωπαϊκή Νομισματική Μονάδα',
+    one: 'ευρωπαϊκή νομισματική μονάδα',
+    other: 'ευρωπαϊκές νομισματικές μονάδες',
+  );
   static const _xbc = Currency(
-      _cld, 'XBC', 'Ευρωπαϊκή μονάδα λογαριασμού (XBC)',
-      one: 'ευρωπαϊκή μονάδα λογαριασμού (XBC)',
-      other: 'ευρωπαϊκές μονάδες λογαριασμού (XBC)');
+    _cld,
+    'XBC',
+    'Ευρωπαϊκή μονάδα λογαριασμού (XBC)',
+    one: 'ευρωπαϊκή μονάδα λογαριασμού (XBC)',
+    other: 'ευρωπαϊκές μονάδες λογαριασμού (XBC)',
+  );
   static const _xbd = Currency(
-      _cld, 'XBD', 'Ευρωπαϊκή μονάδα λογαριασμού (XBD)',
-      one: 'ευρωπαϊκή μονάδα λογαριασμού (XBD)',
-      other: 'ευρωπαϊκές μονάδες λογαριασμού (XBD)');
-  static const _xcd = Currency(_cld, 'XCD', 'Δολάριο Ανατολικής Καραϊβικής',
-      one: 'δολάριο Ανατολικής Καραϊβικής',
-      other: 'δολάρια Ανατολικής Καραϊβικής',
-      symbol: r'EC$',
-      symbolNarrow: r'$');
+    _cld,
+    'XBD',
+    'Ευρωπαϊκή μονάδα λογαριασμού (XBD)',
+    one: 'ευρωπαϊκή μονάδα λογαριασμού (XBD)',
+    other: 'ευρωπαϊκές μονάδες λογαριασμού (XBD)',
+  );
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'Δολάριο Ανατολικής Καραϊβικής',
+    one: 'δολάριο Ανατολικής Καραϊβικής',
+    other: 'δολάρια Ανατολικής Καραϊβικής',
+    symbol: r'EC$',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
-  static const _xdr = Currency(_cld, 'XDR', 'Ειδικά Δικαιώματα Ανάληψης',
-      one: 'ειδικό δικαίωμα ανάληψης', other: 'ειδικά δικαιώματα ανάληψης');
-  static const _xeu = Currency(_cld, 'XEU', 'Ευρωπαϊκή Συναλλαγματική Μονάδα',
-      one: 'ευρωπαϊκή συναλλαγματική μονάδα',
-      other: 'ευρωπαϊκές συναλλαγματικές μονάδες');
-  static const _xfo = Currency(_cld, 'XFO', 'Χρυσό Φράγκο Γαλλίας',
-      one: 'χρυσό φράγκο Γαλλίας', other: 'χρυσά φράγκα Γαλλίας');
-  static const _xfu = Currency(_cld, 'XFU', 'UIC-Φράγκο Γαλλίας',
-      one: 'UIC-φράγκο Γαλλίας', other: 'UIC-φράγκα Γαλλίας');
-  static const _xof = Currency(_cld, 'XOF', 'Φράγκο CFA Δυτικής Αφρικής',
-      one: 'φράγκο CFA Δυτικής Αφρικής',
-      other: 'φράγκα CFA Δυτικής Αφρικής',
-      symbol: 'F CFA');
-  static const _xpf = Currency(_cld, 'XPF', 'Φράγκο CFP',
-      one: 'φράγκο CFP', other: 'φράγκα CFP', symbol: 'CFPF');
-  static const _xxx = Currency(_cld, 'XXX', 'Άγνωστο νόμισμα',
-      one: '(άγνωστο νόμισμα)', other: '(άγνωστο νόμισμα)', symbol: '¤');
-  static const _ydd = Currency(_cld, 'YDD', 'Δηνάριο Υεμένης',
-      one: 'δηνάριο Υεμένης', other: 'δηνάρια Υεμένης');
-  static const _yer = Currency(_cld, 'YER', 'Ριάλ Υεμένης',
-      one: 'ριάλ Υεμένης', other: 'ριάλ Υεμένης');
-  static const _yud = Currency(_cld, 'YUD', 'Μεταλλικό Δηνάριο Γιουγκοσλαβίας',
-      one: 'μεταλλικό δηνάριο Γιουγκοσλαβίας',
-      other: 'μεταλλικά δηνάρια Γιουγκοσλαβίας');
-  static const _yum = Currency(_cld, 'YUM', 'Νέο Δηνάριο Γιουγκοσλαβίας',
-      one: 'νέο δηνάριο Γιουγκοσλαβίας', other: 'νέο δηνάριο Γιουγκοσλαβίας');
+  static const _xdr = Currency(
+    _cld,
+    'XDR',
+    'Ειδικά Δικαιώματα Ανάληψης',
+    one: 'ειδικό δικαίωμα ανάληψης',
+    other: 'ειδικά δικαιώματα ανάληψης',
+  );
+  static const _xeu = Currency(
+    _cld,
+    'XEU',
+    'Ευρωπαϊκή Συναλλαγματική Μονάδα',
+    one: 'ευρωπαϊκή συναλλαγματική μονάδα',
+    other: 'ευρωπαϊκές συναλλαγματικές μονάδες',
+  );
+  static const _xfo = Currency(
+    _cld,
+    'XFO',
+    'Χρυσό Φράγκο Γαλλίας',
+    one: 'χρυσό φράγκο Γαλλίας',
+    other: 'χρυσά φράγκα Γαλλίας',
+  );
+  static const _xfu = Currency(
+    _cld,
+    'XFU',
+    'UIC-Φράγκο Γαλλίας',
+    one: 'UIC-φράγκο Γαλλίας',
+    other: 'UIC-φράγκα Γαλλίας',
+  );
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'Φράγκο CFA Δυτικής Αφρικής',
+    one: 'φράγκο CFA Δυτικής Αφρικής',
+    other: 'φράγκα CFA Δυτικής Αφρικής',
+    symbol: 'F CFA',
+  );
+  static const _xpf = Currency(
+    _cld,
+    'XPF',
+    'Φράγκο CFP',
+    one: 'φράγκο CFP',
+    other: 'φράγκα CFP',
+    symbol: 'CFPF',
+  );
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    'Άγνωστο νόμισμα',
+    one: '(άγνωστο νόμισμα)',
+    other: '(άγνωστο νόμισμα)',
+    symbol: '¤',
+  );
+  static const _ydd = Currency(
+    _cld,
+    'YDD',
+    'Δηνάριο Υεμένης',
+    one: 'δηνάριο Υεμένης',
+    other: 'δηνάρια Υεμένης',
+  );
+  static const _yer = Currency(
+    _cld,
+    'YER',
+    'Ριάλ Υεμένης',
+    one: 'ριάλ Υεμένης',
+    other: 'ριάλ Υεμένης',
+  );
+  static const _yud = Currency(
+    _cld,
+    'YUD',
+    'Μεταλλικό Δηνάριο Γιουγκοσλαβίας',
+    one: 'μεταλλικό δηνάριο Γιουγκοσλαβίας',
+    other: 'μεταλλικά δηνάρια Γιουγκοσλαβίας',
+  );
+  static const _yum = Currency(
+    _cld,
+    'YUM',
+    'Νέο Δηνάριο Γιουγκοσλαβίας',
+    one: 'νέο δηνάριο Γιουγκοσλαβίας',
+    other: 'νέο δηνάριο Γιουγκοσλαβίας',
+  );
   static const _yun = Currency(
-      _cld, 'YUN', 'Μετατρέψιμο Δηνάριο Γιουγκοσλαβίας',
-      one: 'μετατρέψιμο δινάριο Γιουγκοσλαβίας',
-      other: 'μετατρέψιμο δηνάριο Γιουγκοσλαβίας');
-  static const _zal = Currency(_cld, 'ZAL', 'Ραντ Νότιας Αφρικής (οικονομικό)',
-      one: 'ραντ Νότιας Αφρικής (οικονομικό)',
-      other: 'ραντ Νότιας Αφρικής (οικονομικό)');
-  static const _zar = Currency(_cld, 'ZAR', 'Ραντ Νότιας Αφρικής',
-      one: 'ραντ Νότιας Αφρικής',
-      other: 'ραντ Νότιας Αφρικής',
-      symbolNarrow: 'R');
-  static const _zmk = Currency(_cld, 'ZMK', 'Κουάνζα Ζαΐρ (1968–2012)',
-      one: 'κουάτσα Ζάμπιας (1968–2012)', other: 'κουάτσα Ζάμπιας (1968–2012)');
-  static const _zmw = Currency(_cld, 'ZMW', 'Κουάτσα Ζάμπιας',
-      one: 'κουάτσα Ζάμπιας', other: 'κουάτσα Ζάμπιας', symbolNarrow: 'ZK');
-  static const _zrn = Currency(_cld, 'ZRN', 'Νέο Ζαΐρ Ζαΐρ',
-      one: 'νέο ζαΐρ Ζαΐρ', other: 'νέα ζαΐρ Ζαΐρ');
-  static const _zrz =
-      Currency(_cld, 'ZRZ', 'Ζαΐρ Ζαΐρ', one: 'ζαΐρ Ζαΐρ', other: 'ζαΐρ Ζαΐρ');
-  static const _zwd = Currency(_cld, 'ZWD', 'Δολάριο Ζιμπάμπουε',
-      one: 'δολάριο Ζιμπάμπουε', other: 'δολάρια Ζιμπάμπουε');
+    _cld,
+    'YUN',
+    'Μετατρέψιμο Δηνάριο Γιουγκοσλαβίας',
+    one: 'μετατρέψιμο δινάριο Γιουγκοσλαβίας',
+    other: 'μετατρέψιμο δηνάριο Γιουγκοσλαβίας',
+  );
+  static const _zal = Currency(
+    _cld,
+    'ZAL',
+    'Ραντ Νότιας Αφρικής (οικονομικό)',
+    one: 'ραντ Νότιας Αφρικής (οικονομικό)',
+    other: 'ραντ Νότιας Αφρικής (οικονομικό)',
+  );
+  static const _zar = Currency(
+    _cld,
+    'ZAR',
+    'Ραντ Νότιας Αφρικής',
+    one: 'ραντ Νότιας Αφρικής',
+    other: 'ραντ Νότιας Αφρικής',
+    symbolNarrow: 'R',
+  );
+  static const _zmk = Currency(
+    _cld,
+    'ZMK',
+    'Κουάνζα Ζαΐρ (1968–2012)',
+    one: 'κουάτσα Ζάμπιας (1968–2012)',
+    other: 'κουάτσα Ζάμπιας (1968–2012)',
+  );
+  static const _zmw = Currency(
+    _cld,
+    'ZMW',
+    'Κουάτσα Ζάμπιας',
+    one: 'κουάτσα Ζάμπιας',
+    other: 'κουάτσα Ζάμπιας',
+    symbolNarrow: 'ZK',
+  );
+  static const _zrn = Currency(
+    _cld,
+    'ZRN',
+    'Νέο Ζαΐρ Ζαΐρ',
+    one: 'νέο ζαΐρ Ζαΐρ',
+    other: 'νέα ζαΐρ Ζαΐρ',
+  );
+  static const _zrz = Currency(
+    _cld,
+    'ZRZ',
+    'Ζαΐρ Ζαΐρ',
+    one: 'ζαΐρ Ζαΐρ',
+    other: 'ζαΐρ Ζαΐρ',
+  );
+  static const _zwd = Currency(
+    _cld,
+    'ZWD',
+    'Δολάριο Ζιμπάμπουε',
+    one: 'δολάριο Ζιμπάμπουε',
+    other: 'δολάρια Ζιμπάμπουε',
+  );
   static const _zwl = Currency(_cld, 'ZWL', 'Δολάριο Ζιμπάμπουε (2009)');
 
   @override
@@ -15847,8 +16479,9 @@ class TimeZonesEl extends TimeZones {
     'America/Anguilla': TimeZoneNames(exemplarCity: 'Ανγκουίλα'),
     'America/Antigua': TimeZoneNames(exemplarCity: 'Αντίγκουα'),
     'America/Araguaina': TimeZoneNames(exemplarCity: 'Αραγκουάινα'),
-    'America/Argentina/Rio_Gallegos':
-        TimeZoneNames(exemplarCity: 'Ρίο Γκαγιέγκος'),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Ρίο Γκαγιέγκος',
+    ),
     'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'Σαν Χουάν'),
     'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'Ουσουάια'),
     'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'Λα Ριόχα'),
@@ -15858,8 +16491,9 @@ class TimeZonesEl extends TimeZones {
     'America/Aruba': TimeZoneNames(exemplarCity: 'Αρούμπα'),
     'America/Asuncion': TimeZoneNames(exemplarCity: 'Ασουνσιόν'),
     'America/Bahia': TimeZoneNames(exemplarCity: 'Μπαΐα'),
-    'America/Bahia_Banderas':
-        TimeZoneNames(exemplarCity: 'Μπαΐα ντε Μπαντέρας'),
+    'America/Bahia_Banderas': TimeZoneNames(
+      exemplarCity: 'Μπαΐα ντε Μπαντέρας',
+    ),
     'America/Barbados': TimeZoneNames(exemplarCity: 'Μπαρμπέιντος'),
     'America/Belem': TimeZoneNames(exemplarCity: 'Μπελέμ'),
     'America/Belize': TimeZoneNames(exemplarCity: 'Μπελίζ'),
@@ -15908,13 +16542,16 @@ class TimeZonesEl extends TimeZones {
     'America/Havana': TimeZoneNames(exemplarCity: 'Αβάνα'),
     'America/Hermosillo': TimeZoneNames(exemplarCity: 'Ερμοσίγιο'),
     'America/Indiana/Vincennes': TimeZoneNames(exemplarCity: 'Βανσέν, Ιντιάνα'),
-    'America/Indiana/Petersburg':
-        TimeZoneNames(exemplarCity: 'Πίτερσμπεργκ, Ιντιάνα'),
-    'America/Indiana/Tell_City':
-        TimeZoneNames(exemplarCity: 'Τελ Σίτι, Ιντιάνα'),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Πίτερσμπεργκ, Ιντιάνα',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Τελ Σίτι, Ιντιάνα',
+    ),
     'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'Νοξ, Ιντιάνα'),
-    'America/Indiana/Winamac':
-        TimeZoneNames(exemplarCity: 'Γουίναμακ, Ιντιάνα'),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Γουίναμακ, Ιντιάνα',
+    ),
     'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'Μαρένγκο, Ιντιάνα'),
     'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'Βιβέι, Ιντιάνα'),
     'America/Indianapolis': TimeZoneNames(exemplarCity: 'Ιντιανάπολις'),
@@ -15923,15 +16560,17 @@ class TimeZonesEl extends TimeZones {
     'America/Jamaica': TimeZoneNames(exemplarCity: 'Τζαμάικα'),
     'America/Jujuy': TimeZoneNames(exemplarCity: 'Χουχούι'),
     'America/Juneau': TimeZoneNames(exemplarCity: 'Τζούνο'),
-    'America/Kentucky/Monticello':
-        TimeZoneNames(exemplarCity: 'Μοντιτσέλο, Κεντάκι'),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Μοντιτσέλο, Κεντάκι',
+    ),
     'America/Kralendijk': TimeZoneNames(exemplarCity: 'Κράλεντικ'),
     'America/La_Paz': TimeZoneNames(exemplarCity: 'Λα Παζ'),
     'America/Lima': TimeZoneNames(exemplarCity: 'Λίμα'),
     'America/Los_Angeles': TimeZoneNames(exemplarCity: 'Λος Άντζελες'),
     'America/Louisville': TimeZoneNames(exemplarCity: 'Λούιβιλ'),
-    'America/Lower_Princes':
-        TimeZoneNames(exemplarCity: 'Lower Prince’s Quarter'),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Lower Prince’s Quarter',
+    ),
     'America/Maceio': TimeZoneNames(exemplarCity: 'Μασεϊό'),
     'America/Managua': TimeZoneNames(exemplarCity: 'Μανάγκουα'),
     'America/Manaus': TimeZoneNames(exemplarCity: 'Μανάους'),
@@ -15953,12 +16592,15 @@ class TimeZonesEl extends TimeZones {
     'America/New_York': TimeZoneNames(exemplarCity: 'Νέα Υόρκη'),
     'America/Nome': TimeZoneNames(exemplarCity: 'Νόμε'),
     'America/Noronha': TimeZoneNames(exemplarCity: 'Νορόνια'),
-    'America/North_Dakota/Beulah':
-        TimeZoneNames(exemplarCity: 'Μπέουλα, Βόρεια Ντακότα'),
-    'America/North_Dakota/New_Salem':
-        TimeZoneNames(exemplarCity: 'Νιου Σέιλεμ, Βόρεια Ντακότα'),
-    'America/North_Dakota/Center':
-        TimeZoneNames(exemplarCity: 'Σέντερ, Βόρεια Ντακότα'),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Μπέουλα, Βόρεια Ντακότα',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'Νιου Σέιλεμ, Βόρεια Ντακότα',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Σέντερ, Βόρεια Ντακότα',
+    ),
     'America/Ojinaga': TimeZoneNames(exemplarCity: 'Οχινάγκα'),
     'America/Panama': TimeZoneNames(exemplarCity: 'Παναμάς'),
     'America/Paramaribo': TimeZoneNames(exemplarCity: 'Παραμαρίμπο'),
@@ -16019,8 +16661,9 @@ class TimeZonesEl extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: 'Κισινάου'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'Κοπεγχάγη'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'Δουβλίνο',
-        long: TimeZoneName(daylight: 'Χειμερινή ώρα Ιρλανδίας')),
+      exemplarCity: 'Δουβλίνο',
+      long: TimeZoneName(daylight: 'Χειμερινή ώρα Ιρλανδίας'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'Γιβραλτάρ'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: 'Γκέρνζι'),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: 'Ελσίνκι'),
@@ -16033,8 +16676,9 @@ class TimeZonesEl extends TimeZones {
     'Europe/Lisbon': TimeZoneNames(exemplarCity: 'Λισαβόνα'),
     'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'Λιουμπλιάνα'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'Λονδίνο',
-        long: TimeZoneName(daylight: 'Θερινή ώρα Βρετανίας')),
+      exemplarCity: 'Λονδίνο',
+      long: TimeZoneName(daylight: 'Θερινή ώρα Βρετανίας'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'Λουξεμβούργο'),
     'Europe/Madrid': TimeZoneNames(exemplarCity: 'Μαδρίτη'),
     'Europe/Malta': TimeZoneNames(exemplarCity: 'Μάλτα'),
@@ -16265,8 +16909,9 @@ class TimeZonesEl extends TimeZones {
     'Arctic/Longyearbyen': TimeZoneNames(exemplarCity: 'Λόνγκιεαρμπιεν'),
     'Antarctica/Casey': TimeZoneNames(exemplarCity: 'Κάσεϊ'),
     'Antarctica/Davis': TimeZoneNames(exemplarCity: 'Ντέιβις'),
-    'Antarctica/DumontDUrville':
-        TimeZoneNames(exemplarCity: 'Ντιμόν ντ’ Ουρβίλ'),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Ντιμόν ντ’ Ουρβίλ',
+    ),
     'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'Μακουάρι'),
     'Antarctica/Mawson': TimeZoneNames(exemplarCity: 'Μόσον'),
     'Antarctica/McMurdo': TimeZoneNames(exemplarCity: 'Μακμέρντο'),
@@ -16276,8 +16921,9 @@ class TimeZonesEl extends TimeZones {
     'Antarctica/Troll': TimeZoneNames(exemplarCity: 'Τρολ'),
     'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'Βόστοκ'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'Συντονισμένη Παγκόσμια Ώρα'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'Συντονισμένη Παγκόσμια Ώρα'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'Άγνωστη πόλη'),
   };
 
@@ -16285,523 +16931,853 @@ class TimeZonesEl extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Afghanistan':
-        MetaZone('Afghanistan', long: TimeZoneName(standard: 'Ώρα Αφγανιστάν')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'Ώρα Κεντρικής Αφρικής')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'Ώρα Ανατολικής Αφρικής')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'Χειμερινή ώρα Νότιας Αφρικής')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'Ώρα Δυτικής Αφρικής',
-            standard: 'Χειμερινή ώρα Δυτικής Αφρικής',
-            daylight: 'Θερινή ώρα Δυτικής Αφρικής')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'Ώρα Αλάσκας',
-            standard: 'Χειμερινή ώρα Αλάσκας',
-            daylight: 'Θερινή ώρα Αλάσκας')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'Ώρα Αμαζονίου',
-            standard: 'Χειμερινή ώρα Αμαζονίου',
-            daylight: 'Θερινή ώρα Αμαζονίου')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'Κεντρική ώρα Βόρειας Αμερικής',
-            standard: 'Κεντρική χειμερινή ώρα Βόρειας Αμερικής',
-            daylight: 'Κεντρική θερινή ώρα Βόρειας Αμερικής')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'Ανατολική ώρα Βόρειας Αμερικής',
-            standard: 'Ανατολική χειμερινή ώρα Βόρειας Αμερικής',
-            daylight: 'Ανατολική θερινή ώρα Βόρειας Αμερικής')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'Ορεινή ώρα Βόρειας Αμερικής',
-            standard: 'Ορεινή χειμερινή ώρα Βόρειας Αμερικής',
-            daylight: 'Ορεινή θερινή ώρα Βόρειας Αμερικής')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'Ώρα Ειρηνικού',
-            standard: 'Χειμερινή ώρα Ειρηνικού',
-            daylight: 'Θερινή ώρα Ειρηνικού')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: 'Ώρα Αναντίρ',
-            standard: 'Χειμερινή ώρα Αναντίρ',
-            daylight: 'Θερινή ώρα Αναντίρ')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'Ώρα Απία',
-            standard: 'Χειμερινή ώρα Απία',
-            daylight: 'Θερινή ώρα Απία')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'Αραβική ώρα',
-            standard: 'Αραβική χειμερινή ώρα',
-            daylight: 'Αραβική θερινή ώρα')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'Ώρα Αργεντινής',
-            standard: 'Χειμερινή ώρα Αργεντινής',
-            daylight: 'Θερινή ώρα Αργεντινής')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'Ώρα Δυτικής Αργεντινής',
-            standard: 'Χειμερινή ώρα Δυτικής Αργεντινής',
-            daylight: 'Θερινή ώρα Δυτικής Αργεντινής')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'Ώρα Αρμενίας',
-            standard: 'Χειμερινή ώρα Αρμενίας',
-            daylight: 'Θερινή ώρα Αρμενίας')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'Ώρα Ατλαντικού',
-            standard: 'Χειμερινή ώρα Ατλαντικού',
-            daylight: 'Θερινή ώρα Ατλαντικού')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'Ώρα Κεντρικής Αυστραλίας',
-            standard: 'Χειμερινή ώρα Κεντρικής Αυστραλίας',
-            daylight: 'Θερινή ώρα Κεντρικής Αυστραλίας')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'Ώρα Κεντροδυτικής Αυστραλίας',
-            standard: 'Χειμερινή ώρα Κεντροδυτικής Αυστραλίας',
-            daylight: 'Θερινή ώρα Κεντροδυτικής Αυστραλίας')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'Ώρα Ανατολικής Αυστραλίας',
-            standard: 'Χειμερινή ώρα Ανατολικής Αυστραλίας',
-            daylight: 'Θερινή ώρα Ανατολικής Αυστραλίας')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'Ώρα Δυτικής Αυστραλίας',
-            standard: 'Χειμερινή ώρα Δυτικής Αυστραλίας',
-            daylight: 'Θερινή ώρα Δυτικής Αυστραλίας')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'Ώρα Αζερμπαϊτζάν',
-            standard: 'Χειμερινή ώρα Αζερμπαϊτζάν',
-            daylight: 'Θερινή ώρα Αζερμπαϊτζάν')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'Ώρα Αζορών',
-            standard: 'Χειμερινή ώρα Αζορών',
-            daylight: 'Θερινή ώρα Αζορών')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'Ώρα Μπανγκλαντές',
-            standard: 'Χειμερινή ώρα Μπανγκλαντές',
-            daylight: 'Θερινή ώρα Μπανγκλαντές')),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'Ώρα Αφγανιστάν'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'Ώρα Κεντρικής Αφρικής'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'Ώρα Ανατολικής Αφρικής'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'Χειμερινή ώρα Νότιας Αφρικής'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Αφρικής',
+        standard: 'Χειμερινή ώρα Δυτικής Αφρικής',
+        daylight: 'Θερινή ώρα Δυτικής Αφρικής',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'Ώρα Αλάσκας',
+        standard: 'Χειμερινή ώρα Αλάσκας',
+        daylight: 'Θερινή ώρα Αλάσκας',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'Ώρα Αμαζονίου',
+        standard: 'Χειμερινή ώρα Αμαζονίου',
+        daylight: 'Θερινή ώρα Αμαζονίου',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'Κεντρική ώρα Βόρειας Αμερικής',
+        standard: 'Κεντρική χειμερινή ώρα Βόρειας Αμερικής',
+        daylight: 'Κεντρική θερινή ώρα Βόρειας Αμερικής',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Ανατολική ώρα Βόρειας Αμερικής',
+        standard: 'Ανατολική χειμερινή ώρα Βόρειας Αμερικής',
+        daylight: 'Ανατολική θερινή ώρα Βόρειας Αμερικής',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Ορεινή ώρα Βόρειας Αμερικής',
+        standard: 'Ορεινή χειμερινή ώρα Βόρειας Αμερικής',
+        daylight: 'Ορεινή θερινή ώρα Βόρειας Αμερικής',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Ώρα Ειρηνικού',
+        standard: 'Χειμερινή ώρα Ειρηνικού',
+        daylight: 'Θερινή ώρα Ειρηνικού',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: 'Ώρα Αναντίρ',
+        standard: 'Χειμερινή ώρα Αναντίρ',
+        daylight: 'Θερινή ώρα Αναντίρ',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'Ώρα Απία',
+        standard: 'Χειμερινή ώρα Απία',
+        daylight: 'Θερινή ώρα Απία',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'Αραβική ώρα',
+        standard: 'Αραβική χειμερινή ώρα',
+        daylight: 'Αραβική θερινή ώρα',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'Ώρα Αργεντινής',
+        standard: 'Χειμερινή ώρα Αργεντινής',
+        daylight: 'Θερινή ώρα Αργεντινής',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Αργεντινής',
+        standard: 'Χειμερινή ώρα Δυτικής Αργεντινής',
+        daylight: 'Θερινή ώρα Δυτικής Αργεντινής',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'Ώρα Αρμενίας',
+        standard: 'Χειμερινή ώρα Αρμενίας',
+        daylight: 'Θερινή ώρα Αρμενίας',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'Ώρα Ατλαντικού',
+        standard: 'Χειμερινή ώρα Ατλαντικού',
+        daylight: 'Θερινή ώρα Ατλαντικού',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Ώρα Κεντρικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Κεντρικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Κεντρικής Αυστραλίας',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Ώρα Κεντροδυτικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Κεντροδυτικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Κεντροδυτικής Αυστραλίας',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Ώρα Ανατολικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Ανατολικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Ανατολικής Αυστραλίας',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Αυστραλίας',
+        standard: 'Χειμερινή ώρα Δυτικής Αυστραλίας',
+        daylight: 'Θερινή ώρα Δυτικής Αυστραλίας',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Ώρα Αζερμπαϊτζάν',
+        standard: 'Χειμερινή ώρα Αζερμπαϊτζάν',
+        daylight: 'Θερινή ώρα Αζερμπαϊτζάν',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'Ώρα Αζορών',
+        standard: 'Χειμερινή ώρα Αζορών',
+        daylight: 'Θερινή ώρα Αζορών',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Ώρα Μπανγκλαντές',
+        standard: 'Χειμερινή ώρα Μπανγκλαντές',
+        daylight: 'Θερινή ώρα Μπανγκλαντές',
+      ),
+    ),
     'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'Ώρα Μπουτάν')),
-    'Bolivia':
-        MetaZone('Bolivia', long: TimeZoneName(standard: 'Ώρα Βολιβίας')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'Ώρα Μπραζίλιας',
-            standard: 'Χειμερινή ώρα Μπραζίλιας',
-            daylight: 'Θερινή ώρα Μπραζίλιας')),
-    'Brunei': MetaZone('Brunei',
-        long: TimeZoneName(standard: 'Ώρα Μπρουνέι Νταρουσαλάμ')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'Ώρα Πράσινου Ακρωτηρίου',
-            standard: 'Χειμερινή ώρα Πράσινου Ακρωτηρίου',
-            daylight: 'Θερινή ώρα Πράσινου Ακρωτηρίου')),
-    'Chamorro':
-        MetaZone('Chamorro', long: TimeZoneName(standard: 'Ώρα Τσαμόρο')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'Ώρα Τσάταμ',
-            standard: 'Χειμερινή ώρα Τσάταμ',
-            daylight: 'Θερινή ώρα Τσάταμ')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'Ώρα Χιλής',
-            standard: 'Χειμερινή ώρα Χιλής',
-            daylight: 'Θερινή ώρα Χιλής')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'Ώρα Κίνας',
-            standard: 'Χειμερινή ώρα Κίνας',
-            daylight: 'Θερινή ώρα Κίνας')),
-    'Christmas': MetaZone('Christmas',
-        long: TimeZoneName(standard: 'Ώρα Νήσου Χριστουγέννων')),
+    'Bolivia': MetaZone(
+      'Bolivia',
+      long: TimeZoneName(standard: 'Ώρα Βολιβίας'),
+    ),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'Ώρα Μπραζίλιας',
+        standard: 'Χειμερινή ώρα Μπραζίλιας',
+        daylight: 'Θερινή ώρα Μπραζίλιας',
+      ),
+    ),
+    'Brunei': MetaZone(
+      'Brunei',
+      long: TimeZoneName(standard: 'Ώρα Μπρουνέι Νταρουσαλάμ'),
+    ),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Ώρα Πράσινου Ακρωτηρίου',
+        standard: 'Χειμερινή ώρα Πράσινου Ακρωτηρίου',
+        daylight: 'Θερινή ώρα Πράσινου Ακρωτηρίου',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'Ώρα Τσαμόρο'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'Ώρα Τσάταμ',
+        standard: 'Χειμερινή ώρα Τσάταμ',
+        daylight: 'Θερινή ώρα Τσάταμ',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'Ώρα Χιλής',
+        standard: 'Χειμερινή ώρα Χιλής',
+        daylight: 'Θερινή ώρα Χιλής',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'Ώρα Κίνας',
+        standard: 'Χειμερινή ώρα Κίνας',
+        daylight: 'Θερινή ώρα Κίνας',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'Ώρα Νήσου Χριστουγέννων'),
+    ),
     'Cocos': MetaZone('Cocos', long: TimeZoneName(standard: 'Ώρα Νήσων Κόκος')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'Ώρα Κολομβίας',
-            standard: 'Χειμερινή ώρα Κολομβίας',
-            daylight: 'Θερινή ώρα Κολομβίας')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'Ώρα Νήσων Κουκ',
-            standard: 'Χειμερινή ώρα Νήσων Κουκ',
-            daylight: 'Θερινή ώρα Νήσων Κουκ')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'Ώρα Κούβας',
-            standard: 'Χειμερινή ώρα Κούβας',
-            daylight: 'Θερινή ώρα Κούβας')),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'Ώρα Κολομβίας',
+        standard: 'Χειμερινή ώρα Κολομβίας',
+        daylight: 'Θερινή ώρα Κολομβίας',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσων Κουκ',
+        standard: 'Χειμερινή ώρα Νήσων Κουκ',
+        daylight: 'Θερινή ώρα Νήσων Κουκ',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'Ώρα Κούβας',
+        standard: 'Χειμερινή ώρα Κούβας',
+        daylight: 'Θερινή ώρα Κούβας',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'Ώρα Ντέιβις')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'Ώρα Ντιμόν ντ’ Ουρβίλ')),
-    'East_Timor': MetaZone('East_Timor',
-        long: TimeZoneName(standard: 'Ώρα Ανατολικού Τιμόρ')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'Ώρα Νήσου Πάσχα',
-            standard: 'Χειμερινή ώρα Νήσου Πάσχα',
-            daylight: 'Θερινή ώρα Νήσου Πάσχα')),
-    'Ecuador':
-        MetaZone('Ecuador', long: TimeZoneName(standard: 'Ώρα Ισημερινού')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'Ώρα Κεντρικής Ευρώπης',
-            standard: 'Χειμερινή ώρα Κεντρικής Ευρώπης',
-            daylight: 'Θερινή ώρα Κεντρικής Ευρώπης'),
-        short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'Ώρα Ανατολικής Ευρώπης',
-            standard: 'Χειμερινή ώρα Ανατολικής Ευρώπης',
-            daylight: 'Θερινή ώρα Ανατολικής Ευρώπης'),
-        short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'Ώρα περαιτέρω Ανατολικής Ευρώπης')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'Ώρα Δυτικής Ευρώπης',
-            standard: 'Χειμερινή ώρα Δυτικής Ευρώπης',
-            daylight: 'Θερινή ώρα Δυτικής Ευρώπης'),
-        short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'Ώρα Νήσων Φόκλαντ',
-            standard: 'Χειμερινή ώρα Νήσων Φόκλαντ',
-            daylight: 'Θερινή ώρα Νήσων Φόκλαντ')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'Ώρα Φίτζι',
-            standard: 'Χειμερινή ώρα Φίτζι',
-            daylight: 'Θερινή ώρα Φίτζι')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'Ώρα Γαλλικής Γουιάνας')),
-    'French_Southern': MetaZone('French_Southern',
-        long: TimeZoneName(standard: 'Ώρα Γαλλικού Νότου και Ανταρκτικής')),
-    'Galapagos':
-        MetaZone('Galapagos', long: TimeZoneName(standard: 'Ώρα Γκαλάπαγκος')),
-    'Gambier':
-        MetaZone('Gambier', long: TimeZoneName(standard: 'Ώρα Γκάμπιερ')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'Ώρα Γεωργίας',
-            standard: 'Χειμερινή ώρα Γεωργίας',
-            daylight: 'Θερινή ώρα Γεωργίας')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'Ώρα Νήσων Γκίλμπερτ')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'Ώρα Ντιμόν ντ’ Ουρβίλ'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'Ώρα Ανατολικού Τιμόρ'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσου Πάσχα',
+        standard: 'Χειμερινή ώρα Νήσου Πάσχα',
+        daylight: 'Θερινή ώρα Νήσου Πάσχα',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      'Ecuador',
+      long: TimeZoneName(standard: 'Ώρα Ισημερινού'),
+    ),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Ώρα Κεντρικής Ευρώπης',
+        standard: 'Χειμερινή ώρα Κεντρικής Ευρώπης',
+        daylight: 'Θερινή ώρα Κεντρικής Ευρώπης',
+      ),
+      short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST'),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Ώρα Ανατολικής Ευρώπης',
+        standard: 'Χειμερινή ώρα Ανατολικής Ευρώπης',
+        daylight: 'Θερινή ώρα Ανατολικής Ευρώπης',
+      ),
+      short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST'),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'Ώρα περαιτέρω Ανατολικής Ευρώπης'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Ευρώπης',
+        standard: 'Χειμερινή ώρα Δυτικής Ευρώπης',
+        daylight: 'Θερινή ώρα Δυτικής Ευρώπης',
+      ),
+      short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST'),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσων Φόκλαντ',
+        standard: 'Χειμερινή ώρα Νήσων Φόκλαντ',
+        daylight: 'Θερινή ώρα Νήσων Φόκλαντ',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'Ώρα Φίτζι',
+        standard: 'Χειμερινή ώρα Φίτζι',
+        daylight: 'Θερινή ώρα Φίτζι',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'Ώρα Γαλλικής Γουιάνας'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(standard: 'Ώρα Γαλλικού Νότου και Ανταρκτικής'),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'Ώρα Γκαλάπαγκος'),
+    ),
+    'Gambier': MetaZone(
+      'Gambier',
+      long: TimeZoneName(standard: 'Ώρα Γκάμπιερ'),
+    ),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'Ώρα Γεωργίας',
+        standard: 'Χειμερινή ώρα Γεωργίας',
+        daylight: 'Θερινή ώρα Γεωργίας',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'Ώρα Νήσων Γκίλμπερτ'),
+    ),
     'GMT': MetaZone('GMT', long: TimeZoneName(standard: 'Μέση ώρα Γκρίνουιτς')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'Ώρα Ανατολικής Γροιλανδίας',
-            standard: 'Χειμερινή ώρα Ανατολικής Γροιλανδίας',
-            daylight: 'Θερινή ώρα Ανατολικής Γροιλανδίας')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'Ώρα Δυτικής Γροιλανδίας',
-            standard: 'Χειμερινή ώρα Δυτικής Γροιλανδίας',
-            daylight: 'Θερινή ώρα Δυτικής Γροιλανδίας')),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Ώρα Ανατολικής Γροιλανδίας',
+        standard: 'Χειμερινή ώρα Ανατολικής Γροιλανδίας',
+        daylight: 'Θερινή ώρα Ανατολικής Γροιλανδίας',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Ώρα Δυτικής Γροιλανδίας',
+        standard: 'Χειμερινή ώρα Δυτικής Γροιλανδίας',
+        daylight: 'Θερινή ώρα Δυτικής Γροιλανδίας',
+      ),
+    ),
     'Guam': MetaZone('Guam', long: TimeZoneName(standard: 'Ώρα Γκουάμ')),
     'Gulf': MetaZone('Gulf', long: TimeZoneName(standard: 'Ώρα Κόλπου')),
     'Guyana': MetaZone('Guyana', long: TimeZoneName(standard: 'Ώρα Γουιάνας')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'Ώρα Χαβάης-Αλεούτιων Νήσων',
-            standard: 'Χειμερινή ώρα Χαβάης-Αλεούτιων Νήσων',
-            daylight: 'Θερινή ώρα Χαβάης-Αλεούτιων Νήσων')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'Ώρα Χονγκ Κονγκ',
-            standard: 'Χειμερινή ώρα Χονγκ Κονγκ',
-            daylight: 'Θερινή ώρα Χονγκ Κονγκ')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'Ώρα Χοβντ',
-            standard: 'Χειμερινή ώρα Χοβντ',
-            daylight: 'Θερινή ώρα Χοβντ')),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Ώρα Χαβάης-Αλεούτιων Νήσων',
+        standard: 'Χειμερινή ώρα Χαβάης-Αλεούτιων Νήσων',
+        daylight: 'Θερινή ώρα Χαβάης-Αλεούτιων Νήσων',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Ώρα Χονγκ Κονγκ',
+        standard: 'Χειμερινή ώρα Χονγκ Κονγκ',
+        daylight: 'Θερινή ώρα Χονγκ Κονγκ',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'Ώρα Χοβντ',
+        standard: 'Χειμερινή ώρα Χοβντ',
+        daylight: 'Θερινή ώρα Χοβντ',
+      ),
+    ),
     'India': MetaZone('India', long: TimeZoneName(standard: 'Ώρα Ινδίας')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'Ώρα Ινδικού Ωκεανού')),
-    'Indochina':
-        MetaZone('Indochina', long: TimeZoneName(standard: 'Ώρα Ινδοκίνας')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'Ώρα Κεντρικής Ινδονησίας')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'Ώρα Ανατολικής Ινδονησίας')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'Ώρα Δυτικής Ινδονησίας')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'Ώρα Ιράν',
-            standard: 'Χειμερινή ώρα Ιράν',
-            daylight: 'Θερινή ώρα Ιράν')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'Ώρα Ιρκούτσκ',
-            standard: 'Χειμερινή ώρα Ιρκούτσκ',
-            daylight: 'Θερινή ώρα Ιρκούτσκ')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'Ώρα Ισραήλ',
-            standard: 'Χειμερινή ώρα Ισραήλ',
-            daylight: 'Θερινή ώρα Ισραήλ')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'Ώρα Ιαπωνίας',
-            standard: 'Χειμερινή ώρα Ιαπωνίας',
-            daylight: 'Θερινή ώρα Ιαπωνίας')),
-    'Kamchatka': MetaZone('Kamchatka',
-        long: TimeZoneName(
-            generic: 'Ώρα Καμτσάτκα',
-            standard: 'Χειμερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι',
-            daylight: 'Θερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι')),
-    'Kazakhstan':
-        MetaZone('Kazakhstan', long: TimeZoneName(standard: 'Ώρα Καζακστάν')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'Ώρα Ανατολικού Καζακστάν')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'Ώρα Δυτικού Καζακστάν')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'Ώρα Κορέας',
-            standard: 'Χειμερινή ώρα Κορέας',
-            daylight: 'Θερινή ώρα Κορέας')),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'Ώρα Ινδικού Ωκεανού'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'Ώρα Ινδοκίνας'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'Ώρα Κεντρικής Ινδονησίας'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'Ώρα Ανατολικής Ινδονησίας'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'Ώρα Δυτικής Ινδονησίας'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'Ώρα Ιράν',
+        standard: 'Χειμερινή ώρα Ιράν',
+        daylight: 'Θερινή ώρα Ιράν',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Ιρκούτσκ',
+        standard: 'Χειμερινή ώρα Ιρκούτσκ',
+        daylight: 'Θερινή ώρα Ιρκούτσκ',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'Ώρα Ισραήλ',
+        standard: 'Χειμερινή ώρα Ισραήλ',
+        daylight: 'Θερινή ώρα Ισραήλ',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'Ώρα Ιαπωνίας',
+        standard: 'Χειμερινή ώρα Ιαπωνίας',
+        daylight: 'Θερινή ώρα Ιαπωνίας',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Ώρα Καμτσάτκα',
+        standard: 'Χειμερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι',
+        daylight: 'Θερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'Ώρα Καζακστάν'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'Ώρα Ανατολικού Καζακστάν'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'Ώρα Δυτικού Καζακστάν'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'Ώρα Κορέας',
+        standard: 'Χειμερινή ώρα Κορέας',
+        daylight: 'Θερινή ώρα Κορέας',
+      ),
+    ),
     'Kosrae': MetaZone('Kosrae', long: TimeZoneName(standard: 'Ώρα Κόσραϊ')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'Ώρα Κρασνογιάρσκ',
-            standard: 'Χειμερινή ώρα Κρασνογιάρσκ',
-            daylight: 'Θερινή ώρα Κρασνογιάρσκ')),
-    'Kyrgystan':
-        MetaZone('Kyrgystan', long: TimeZoneName(standard: 'Ώρα Κιργιστάν')),
-    'Line_Islands': MetaZone('Line_Islands',
-        long: TimeZoneName(standard: 'Ώρα Νήσων Λάιν')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'Ώρα Λορντ Χάου',
-            standard: 'Χειμερινή ώρα Λορντ Χάου',
-            daylight: 'Θερινή ώρα Λορντ Χάου')),
-    'Macau': MetaZone('Macau',
-        long: TimeZoneName(
-            generic: 'Ώρα Μακάο',
-            standard: 'Χειμερινή ώρα Μακάο',
-            daylight: 'Θερινή ώρα Μακάο')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'Ώρα Μαγκαντάν',
-            standard: 'Χειμερινή ώρα Μαγκαντάν',
-            daylight: 'Θερινή ώρα Μαγκαντάν')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'Ώρα Μαλαισίας')),
-    'Maldives':
-        MetaZone('Maldives', long: TimeZoneName(standard: 'Ώρα Μαλδίβων')),
-    'Marquesas':
-        MetaZone('Marquesas', long: TimeZoneName(standard: 'Ώρα Μαρκέζας')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'Ώρα Νήσων Μάρσαλ')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'Ώρα Μαυρίκιου',
-            standard: 'Χειμερινή ώρα Μαυρίκιου',
-            daylight: 'Θερινή ώρα Μαυρίκιου')),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Κρασνογιάρσκ',
+        standard: 'Χειμερινή ώρα Κρασνογιάρσκ',
+        daylight: 'Θερινή ώρα Κρασνογιάρσκ',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'Ώρα Κιργιστάν'),
+    ),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'Ώρα Νήσων Λάιν'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Ώρα Λορντ Χάου',
+        standard: 'Χειμερινή ώρα Λορντ Χάου',
+        daylight: 'Θερινή ώρα Λορντ Χάου',
+      ),
+    ),
+    'Macau': MetaZone(
+      'Macau',
+      long: TimeZoneName(
+        generic: 'Ώρα Μακάο',
+        standard: 'Χειμερινή ώρα Μακάο',
+        daylight: 'Θερινή ώρα Μακάο',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'Ώρα Μαγκαντάν',
+        standard: 'Χειμερινή ώρα Μαγκαντάν',
+        daylight: 'Θερινή ώρα Μαγκαντάν',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'Ώρα Μαλαισίας'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'Ώρα Μαλδίβων'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'Ώρα Μαρκέζας'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'Ώρα Νήσων Μάρσαλ'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'Ώρα Μαυρίκιου',
+        standard: 'Χειμερινή ώρα Μαυρίκιου',
+        daylight: 'Θερινή ώρα Μαυρίκιου',
+      ),
+    ),
     'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: 'Ώρα Μόσον')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'Ώρα Ειρηνικού Μεξικού',
-            standard: 'Χειμερινή ώρα Ειρηνικού Μεξικού',
-            daylight: 'Θερινή ώρα Ειρηνικού Μεξικού')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'Ώρα Ουλάν Μπατόρ',
-            standard: 'Χειμερινή ώρα Ουλάν Μπατόρ',
-            daylight: 'Θερινή ώρα Ουλάν Μπατόρ')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'Ώρα Μόσχας',
-            standard: 'Χειμερινή ώρα Μόσχας',
-            daylight: 'Θερινή ώρα Μόσχας')),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Ώρα Ειρηνικού Μεξικού',
+        standard: 'Χειμερινή ώρα Ειρηνικού Μεξικού',
+        daylight: 'Θερινή ώρα Ειρηνικού Μεξικού',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'Ώρα Ουλάν Μπατόρ',
+        standard: 'Χειμερινή ώρα Ουλάν Μπατόρ',
+        daylight: 'Θερινή ώρα Ουλάν Μπατόρ',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'Ώρα Μόσχας',
+        standard: 'Χειμερινή ώρα Μόσχας',
+        daylight: 'Θερινή ώρα Μόσχας',
+      ),
+    ),
     'Myanmar': MetaZone('Myanmar', long: TimeZoneName(standard: 'Ώρα Μιανμάρ')),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'Ώρα Ναούρου')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'Ώρα Νεπάλ')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'Ώρα Νέας Καληδονίας',
-            standard: 'Χειμερινή ώρα Νέας Καληδονίας',
-            daylight: 'Θερινή ώρα Νέας Καληδονίας')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'Ώρα Νέας Ζηλανδίας',
-            standard: 'Χειμερινή ώρα Νέας Ζηλανδίας',
-            daylight: 'Θερινή ώρα Νέας Ζηλανδίας')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'Ώρα Νέας Γης',
-            standard: 'Χειμερινή ώρα Νέας Γης',
-            daylight: 'Θερινή ώρα Νέας Γης')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Ώρα Νέας Καληδονίας',
+        standard: 'Χειμερινή ώρα Νέας Καληδονίας',
+        daylight: 'Θερινή ώρα Νέας Καληδονίας',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Ώρα Νέας Ζηλανδίας',
+        standard: 'Χειμερινή ώρα Νέας Ζηλανδίας',
+        daylight: 'Θερινή ώρα Νέας Ζηλανδίας',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Ώρα Νέας Γης',
+        standard: 'Χειμερινή ώρα Νέας Γης',
+        daylight: 'Θερινή ώρα Νέας Γης',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'Ώρα Νιούε')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'Ώρα Νήσου Νόρφολκ',
-            standard: 'Χειμερινή ώρα Νήσου Νόρφολκ',
-            daylight: 'Θερινή ώρα Νήσου Νόρφολκ')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'Ώρα Φερνάρντο ντε Νορόνια',
-            standard: 'Χειμερινή ώρα Φερνάρντο ντε Νορόνια',
-            daylight: 'Θερινή ώρα Φερνάρντο ντε Νορόνια')),
-    'North_Mariana': MetaZone('North_Mariana',
-        long: TimeZoneName(standard: 'Ώρα Νησιών Βόρειες Μαριάνες')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'Ώρα Νοβοσιμπίρσκ',
-            standard: 'Χειμερινή ώρα Νοβοσιμπίρσκ',
-            daylight: 'Θερινή ώρα Νοβοσιμπίρσκ')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'Ώρα Ομσκ',
-            standard: 'Χειμερινή ώρα Ομσκ',
-            daylight: 'Θερινή ώρα Ομσκ')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'Ώρα Πακιστάν',
-            standard: 'Χειμερινή ώρα Πακιστάν',
-            daylight: 'Θερινή ώρα Πακιστάν')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'Ώρα Νήσου Νόρφολκ',
+        standard: 'Χειμερινή ώρα Νήσου Νόρφολκ',
+        daylight: 'Θερινή ώρα Νήσου Νόρφολκ',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'Ώρα Φερνάρντο ντε Νορόνια',
+        standard: 'Χειμερινή ώρα Φερνάρντο ντε Νορόνια',
+        daylight: 'Θερινή ώρα Φερνάρντο ντε Νορόνια',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      'North_Mariana',
+      long: TimeZoneName(standard: 'Ώρα Νησιών Βόρειες Μαριάνες'),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Νοβοσιμπίρσκ',
+        standard: 'Χειμερινή ώρα Νοβοσιμπίρσκ',
+        daylight: 'Θερινή ώρα Νοβοσιμπίρσκ',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Ομσκ',
+        standard: 'Χειμερινή ώρα Ομσκ',
+        daylight: 'Θερινή ώρα Ομσκ',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'Ώρα Πακιστάν',
+        standard: 'Χειμερινή ώρα Πακιστάν',
+        daylight: 'Θερινή ώρα Πακιστάν',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'Ώρα Παλάου')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'Ώρα Παπούας Νέας Γουινέας')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'Ώρα Παραγουάης',
-            standard: 'Χειμερινή ώρα Παραγουάης',
-            daylight: 'Θερινή ώρα Παραγουάης')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'Ώρα Περού',
-            standard: 'Χειμερινή ώρα Περού',
-            daylight: 'Θερινή ώρα Περού')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'Ώρα Φιλιππινών',
-            standard: 'Χειμερινή ώρα Φιλιππινών',
-            daylight: 'Θερινή ώρα Φιλιππινών')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'Ώρα Νήσων Φοίνιξ')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'Ώρα Σεν Πιερ και Μικελόν',
-            standard: 'Χειμερινή ώρα Σεν Πιερ και Μικελόν',
-            daylight: 'Θερινή ώρα Σεν Πιερ και Μικελόν')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'Ώρα Πίτκερν')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'Ώρα Παπούας Νέας Γουινέας'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'Ώρα Παραγουάης',
+        standard: 'Χειμερινή ώρα Παραγουάης',
+        daylight: 'Θερινή ώρα Παραγουάης',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'Ώρα Περού',
+        standard: 'Χειμερινή ώρα Περού',
+        daylight: 'Θερινή ώρα Περού',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'Ώρα Φιλιππινών',
+        standard: 'Χειμερινή ώρα Φιλιππινών',
+        daylight: 'Θερινή ώρα Φιλιππινών',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'Ώρα Νήσων Φοίνιξ'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Ώρα Σεν Πιερ και Μικελόν',
+        standard: 'Χειμερινή ώρα Σεν Πιερ και Μικελόν',
+        daylight: 'Θερινή ώρα Σεν Πιερ και Μικελόν',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'Ώρα Πίτκερν'),
+    ),
     'Ponape': MetaZone('Ponape', long: TimeZoneName(standard: 'Ώρα Πονάπε')),
-    'Pyongyang':
-        MetaZone('Pyongyang', long: TimeZoneName(standard: 'Ώρα Πιονγιάνγκ')),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'Ώρα Πιονγιάνγκ'),
+    ),
     'Reunion': MetaZone('Reunion', long: TimeZoneName(standard: 'Ώρα Ρεϊνιόν')),
     'Rothera': MetaZone('Rothera', long: TimeZoneName(standard: 'Ώρα Ρόθερα')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'Ώρα Σαχαλίνης',
-            standard: 'Χειμερινή ώρα Σαχαλίνης',
-            daylight: 'Θερινή ώρα Σαχαλίνης')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: 'Ώρα Σάμαρας',
-            standard: 'Χειμερινή ώρα Σάμαρας',
-            daylight: 'Θερινή ώρα Σαμάρας')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'Ώρα Σαμόα',
-            standard: 'Χειμερινή ώρα Σαμόα',
-            daylight: 'Θερινή ώρα Σαμόα')),
-    'Seychelles':
-        MetaZone('Seychelles', long: TimeZoneName(standard: 'Ώρα Σεϋχελλών')),
-    'Singapore':
-        MetaZone('Singapore', long: TimeZoneName(standard: 'Ώρα Σιγκαπούρης')),
-    'Solomon': MetaZone('Solomon',
-        long: TimeZoneName(standard: 'Ώρα Νήσων Σολομώντος')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'Ώρα Νότιας Γεωργίας')),
-    'Suriname':
-        MetaZone('Suriname', long: TimeZoneName(standard: 'Ώρα Σουρινάμ')),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Ώρα Σαχαλίνης',
+        standard: 'Χειμερινή ώρα Σαχαλίνης',
+        daylight: 'Θερινή ώρα Σαχαλίνης',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: 'Ώρα Σάμαρας',
+        standard: 'Χειμερινή ώρα Σάμαρας',
+        daylight: 'Θερινή ώρα Σαμάρας',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'Ώρα Σαμόα',
+        standard: 'Χειμερινή ώρα Σαμόα',
+        daylight: 'Θερινή ώρα Σαμόα',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'Ώρα Σεϋχελλών'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'Ώρα Σιγκαπούρης'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'Ώρα Νήσων Σολομώντος'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'Ώρα Νότιας Γεωργίας'),
+    ),
+    'Suriname': MetaZone(
+      'Suriname',
+      long: TimeZoneName(standard: 'Ώρα Σουρινάμ'),
+    ),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'Ώρα Σίοβα')),
     'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'Ώρα Ταϊτής')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'Ώρα Ταϊπέι',
-            standard: 'Χειμερινή ώρα Ταϊπέι',
-            daylight: 'Θερινή ώρα Ταϊπέι')),
-    'Tajikistan':
-        MetaZone('Tajikistan', long: TimeZoneName(standard: 'Ώρα Τατζικιστάν')),
-    'Tokelau':
-        MetaZone('Tokelau', long: TimeZoneName(standard: 'Ώρα Τοκελάου')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'Ώρα Τόνγκα',
-            standard: 'Χειμερινή ώρα Τόνγκα',
-            daylight: 'Θερινή ώρα Τόνγκα')),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'Ώρα Ταϊπέι',
+        standard: 'Χειμερινή ώρα Ταϊπέι',
+        daylight: 'Θερινή ώρα Ταϊπέι',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'Ώρα Τατζικιστάν'),
+    ),
+    'Tokelau': MetaZone(
+      'Tokelau',
+      long: TimeZoneName(standard: 'Ώρα Τοκελάου'),
+    ),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'Ώρα Τόνγκα',
+        standard: 'Χειμερινή ώρα Τόνγκα',
+        daylight: 'Θερινή ώρα Τόνγκα',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'Ώρα Τσουκ')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'Ώρα Τουρκμενιστάν',
-            standard: 'Χειμερινή ώρα Τουρκμενιστάν',
-            daylight: 'Θερινή ώρα Τουρκμενιστάν')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Ώρα Τουρκμενιστάν',
+        standard: 'Χειμερινή ώρα Τουρκμενιστάν',
+        daylight: 'Θερινή ώρα Τουρκμενιστάν',
+      ),
+    ),
     'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: 'Ώρα Τουβαλού')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'Ώρα Ουρουγουάης',
-            standard: 'Χειμερινή ώρα Ουρουγουάης',
-            daylight: 'Θερινή ώρα Ουρουγουάης')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'Ώρα Ουζμπεκιστάν',
-            standard: 'Χειμερινή ώρα Ουζμπεκιστάν',
-            daylight: 'Θερινή ώρα Ουζμπεκιστάν')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'Ώρα Βανουάτου',
-            standard: 'Χειμερινή ώρα Βανουάτου',
-            daylight: 'Θερινή ώρα Βανουάτου')),
-    'Venezuela':
-        MetaZone('Venezuela', long: TimeZoneName(standard: 'Ώρα Βενεζουέλας')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'Ώρα Βλαδιβοστόκ',
-            standard: 'Χειμερινή ώρα Βλαδιβοστόκ',
-            daylight: 'Θερινή ώρα Βλαδιβοστόκ')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'Ώρα Βόλγκογκραντ',
-            standard: 'Χειμερινή ώρα Βόλγκογκραντ',
-            daylight: 'Θερινή ώρα Βόλγκογκραντ')),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'Ώρα Ουρουγουάης',
+        standard: 'Χειμερινή ώρα Ουρουγουάης',
+        daylight: 'Θερινή ώρα Ουρουγουάης',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Ώρα Ουζμπεκιστάν',
+        standard: 'Χειμερινή ώρα Ουζμπεκιστάν',
+        daylight: 'Θερινή ώρα Ουζμπεκιστάν',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Ώρα Βανουάτου',
+        standard: 'Χειμερινή ώρα Βανουάτου',
+        daylight: 'Θερινή ώρα Βανουάτου',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'Ώρα Βενεζουέλας'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Ώρα Βλαδιβοστόκ',
+        standard: 'Χειμερινή ώρα Βλαδιβοστόκ',
+        daylight: 'Θερινή ώρα Βλαδιβοστόκ',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'Ώρα Βόλγκογκραντ',
+        standard: 'Χειμερινή ώρα Βόλγκογκραντ',
+        daylight: 'Θερινή ώρα Βόλγκογκραντ',
+      ),
+    ),
     'Vostok': MetaZone('Vostok', long: TimeZoneName(standard: 'Ώρα Βόστοκ')),
     'Wake': MetaZone('Wake', long: TimeZoneName(standard: 'Ώρα Νήσου Γουέικ')),
-    'Wallis': MetaZone('Wallis',
-        long: TimeZoneName(standard: 'Ώρα Ουάλις και Φουτούνα')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'Ώρα Γιακούτσκ',
-            standard: 'Χειμερινή ώρα Γιακούτσκ',
-            daylight: 'Θερινή ώρα Γιακούτσκ')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'Ώρα Αικατερίνμπουργκ',
-            standard: 'Χειμερινή ώρα Αικατερίνμπουργκ',
-            daylight: 'Θερινή ώρα Αικατερίνμπουργκ')),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'Ώρα Ουάλις και Φουτούνα'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Ώρα Γιακούτσκ',
+        standard: 'Χειμερινή ώρα Γιακούτσκ',
+        daylight: 'Θερινή ώρα Γιακούτσκ',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Ώρα Αικατερίνμπουργκ',
+        standard: 'Χειμερινή ώρα Αικατερίνμπουργκ',
+        daylight: 'Θερινή ώρα Αικατερίνμπουργκ',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'Ώρα Γιούκον')),
   };
 }
@@ -16939,10 +17915,7 @@ class LocaleDisplayNameEl extends LocaleDisplayName {
       'normal': 'Κανονικό στιλ αλλαγής γραμμών',
       'strict': 'Στενό στιλ αλλαγής γραμμών',
     },
-    'm0': {
-      'bgn': 'Μεταγραφή BGN ΗΠΑ',
-      'ungegn': 'Μεταγραφή GEGN ΟΗΕ',
-    },
+    'm0': {'bgn': 'Μεταγραφή BGN ΗΠΑ', 'ungegn': 'Μεταγραφή GEGN ΟΗΕ'},
     'ms': {
       'metric': 'Μετρικό σύστημα',
       'uksystem': 'Αγγλοσαξονικό σύστημα μέτρησης',

@@ -43,10 +43,17 @@ void main() {
     print(locale.localeDisplayName.keyNames.values);
     print(locale.localeDisplayName.valueNames.values);
 
-    print(locale.timeZones['Europe/Paris']
-        ?.format(TimeZoneStyle.genericShort, Duration(hours: 0)));
-    print(locale.localeDisplayName
-        .formatWithExtensions(LocaleId.parse(locale.locale)));
+    print(
+      locale.timeZones['Europe/Paris']?.format(
+        TimeZoneStyle.genericShort,
+        Duration(hours: 0),
+      ),
+    );
+    print(
+      locale.localeDisplayName.formatWithExtensions(
+        LocaleId.parse(locale.locale),
+      ),
+    );
   }
 }
 

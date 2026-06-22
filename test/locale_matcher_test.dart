@@ -18,7 +18,6 @@ void main() {
       ('zh', 'cmn', 0, 0),
 
       // fallback languages get closer distances, between script (40) and region (4)
-
       ('to', 'en', 34, 100),
       ('no', 'no-DE', 4, 4),
       ('nn', 'no', 20, 20),
@@ -86,7 +85,7 @@ void main() {
       (['es_AR'], ['es_MX', 'es_ES'], 'es_MX'),
       (['en_AU'], ['en_GB', 'en_US'], 'en_GB'),
       (['en_AU'], ['en_GB', 'en'], 'en_GB'),
-//      (['en_AU'], ['en', 'en_GB'], 'en_GB'), : goes wrong: should it? due to demotion?
+      //      (['en_AU'], ['en', 'en_GB'], 'en_GB'), : goes wrong: should it? due to demotion?
       (['en_AU'], ['en_NZ', 'en_US'], 'en_NZ'),
       (['en_AU'], ['en_NZ', 'en'], 'en_NZ'),
       (['pt_AO'], ['pt_PT', 'pt_BR'], 'pt_PT'),
@@ -119,8 +118,14 @@ void main() {
       (['es_MX'], 'es_MX'),
     ];
 
-    expectLocalesSameSupported(
-        tests, ['fr', 'en', 'en_GB', 'es_MX', 'es_419', 'es']);
+    expectLocalesSameSupported(tests, [
+      'fr',
+      'en',
+      'en_GB',
+      'es_MX',
+      'es_419',
+      'es',
+    ]);
   });
   group('LocaleMatcher - fallbacks', () {
     var tests = [
@@ -145,8 +150,11 @@ void main() {
       (['fr-FR'], 'fr'),
       (['ja-JP'], 'de'),
     ];
-    expectLocalesSameSupported(tests2, ['fr', 'en-GB', 'en'],
-        defaultLocale: 'de');
+    expectLocalesSameSupported(tests2, [
+      'fr',
+      'en-GB',
+      'en',
+    ], defaultLocale: 'de');
 
     // skip index/distinct object tests
   });
@@ -199,35 +207,47 @@ void main() {
   });
   test('LocaleMatcher - none', () {
     expect(
-        matchString(['ar_MK'], ['en_CA']).distance, inInclusiveRange(20, 100));
+      matchString(['ar_MK'], ['en_CA']).distance,
+      inInclusiveRange(20, 100),
+    );
   });
   test('LocaleMatcher - maximized', () {
     expect(
-        matchString(['und_TW'], ['zh']).distance >
-            matchString(['und_TW'], ['zh_Hant']).distance,
-        isTrue);
+      matchString(['und_TW'], ['zh']).distance >
+          matchString(['und_TW'], ['zh_Hant']).distance,
+      isTrue,
+    );
 
     expect(
-        matchString(['en_Hant_TW'], ['zh_Hant']).distance >
-            matchString(['und_TW'], ['zh_Hant']).distance,
-        isTrue);
+      matchString(['en_Hant_TW'], ['zh_Hant']).distance >
+          matchString(['und_TW'], ['zh_Hant']).distance,
+      isTrue,
+    );
     expect(matchString(['und_TW'], ['zh']).distance, greaterThanOrEqualTo(100));
-    expect(matchString(['en_Hant_TW'], ['zh_Hant']).distance,
-        greaterThanOrEqualTo(100));
+    expect(
+      matchString(['en_Hant_TW'], ['zh_Hant']).distance,
+      greaterThanOrEqualTo(100),
+    );
   });
   group('LocaleMatcher - resolved locale', () {
     expectString(['ar-EG'], ['ar-SA-u-nu-latn'], 'ar-SA-u-nu-latn');
   });
   group('LocaleMatcher - legacy', () {
     expectString(
-        ['en_GB_oed'], ['fr', 'i_klingon', 'en_Latn_US'], 'en_Latn_US');
+      ['en_GB_oed'],
+      ['fr', 'i_klingon', 'en_Latn_US'],
+      'en_Latn_US',
+    );
   });
   group('LocaleMatcher - exact', () {
     expectString(['ja', 'de'], ['fr', 'en_GB', 'ja', 'es_ES', 'es_MX'], 'ja');
   });
   group('LocaleMatcher - simple variants', () {
     expectString(
-        ['de', 'en_US'], ['fr', 'en_GB', 'ja', 'es_ES', 'es_MX'], 'en_GB');
+      ['de', 'en_US'],
+      ['fr', 'en_GB', 'ja', 'es_ES', 'es_MX'],
+      'en_GB',
+    );
     expectString(['de', 'zh'], ['fr', 'en_GB', 'ja', 'es_ES', 'es_MX'], 'fr');
   });
   group('LocaleMatcher - match on maximized', () {
@@ -332,8 +352,12 @@ void main() {
     expectLocalesSameSupported(tests, ['it', 'en']);
   });
   group('LocaleMatcher - demotion', () {
-    expectString(['fr-CH', 'de-CH', 'it'], ['fr', 'de-CH', 'it'], 'de-CH',
-        favorEarlier: false);
+    expectString(
+      ['fr-CH', 'de-CH', 'it'],
+      ['fr', 'de-CH', 'it'],
+      'de-CH',
+      favorEarlier: false,
+    );
     expectString(['fr-CH', 'de-CH', 'it'], ['fr', 'de-CH', 'it'], 'fr');
   });
   group('LocaleMatcher - direction', () {
@@ -357,8 +381,13 @@ void main() {
   // skip PerfCase: not optimized for performance
 }
 
-void isMatchString(String desired, String supported, bool expected,
-    [String? dist1, String? dist2]) {
+void isMatchString(
+  String desired,
+  String supported,
+  bool expected, [
+  String? dist1,
+  String? dist2,
+]) {
   var localeMatcher = LocaleMatcher(
     [],
     desiredForThreshold: dist1 == null ? null : LocaleId.parse(dist1),
@@ -366,42 +395,60 @@ void isMatchString(String desired, String supported, bool expected,
   );
   test('$desired $supported (${localeMatcher.threshold}) => $expected', () {
     expect(
-        localeMatcher.isMatch(
-            LocaleId.parse(desired), LocaleId.parse(supported)),
-        expected);
+      localeMatcher.isMatch(LocaleId.parse(desired), LocaleId.parse(supported)),
+      expected,
+    );
   });
 }
 
-MatchResult matchString(Iterable<String> desired, Iterable<String> supported,
-    {bool ignoreFallback = false, String? defaultLocale}) {
-  return LocaleMatcher(toLocales(supported),
-          defaultLocale:
-              defaultLocale == null ? null : LocaleId.parse(defaultLocale))
-      .getBestMatch(toLocales(desired), ignoreFallback: ignoreFallback);
+MatchResult matchString(
+  Iterable<String> desired,
+  Iterable<String> supported, {
+  bool ignoreFallback = false,
+  String? defaultLocale,
+}) {
+  return LocaleMatcher(
+    toLocales(supported),
+    defaultLocale: defaultLocale == null ? null : LocaleId.parse(defaultLocale),
+  ).getBestMatch(toLocales(desired), ignoreFallback: ignoreFallback);
 }
 
 void expectString(
-    Iterable<String> desired, Iterable<String> supported, String expected,
-    {bool ignoreFallback = false, bool favorEarlier = true}) {
+  Iterable<String> desired,
+  Iterable<String> supported,
+  String expected, {
+  bool ignoreFallback = false,
+  bool favorEarlier = true,
+}) {
   test(
-      '$desired $supported => $expected',
-      () => expect(
-          LocaleMatcher(toLocales(supported))
-              .getBestMatch(toLocales(desired),
-                  ignoreFallback: ignoreFallback, favorEarlier: favorEarlier)
-              .supportedLocale,
-          LocaleId.parse(expected)));
+    '$desired $supported => $expected',
+    () => expect(
+      LocaleMatcher(toLocales(supported))
+          .getBestMatch(
+            toLocales(desired),
+            ignoreFallback: ignoreFallback,
+            favorEarlier: favorEarlier,
+          )
+          .supportedLocale,
+      LocaleId.parse(expected),
+    ),
+  );
 }
 
 void expectLocalesSameSupported(
-    Iterable<(Iterable<String>, String)> tests, Iterable<String> supported,
-    {String? defaultLocale}) {
+  Iterable<(Iterable<String>, String)> tests,
+  Iterable<String> supported, {
+  String? defaultLocale,
+}) {
   for (var t in tests) {
     test(
       '${t.$1} $supported => ${t.$2}',
       () => expect(
-        matchString(t.$1, supported, defaultLocale: defaultLocale)
-            .supportedLocale,
+        matchString(
+          t.$1,
+          supported,
+          defaultLocale: defaultLocale,
+        ).supportedLocale,
         LocaleId.parse(t.$2),
       ),
     );
@@ -409,7 +456,8 @@ void expectLocalesSameSupported(
 }
 
 void expectLocales(
-    Iterable<(Iterable<String>, Iterable<String>, String)> tests) {
+  Iterable<(Iterable<String>, Iterable<String>, String)> tests,
+) {
   for (var test in tests) {
     expectString(test.$1, test.$2, test.$3);
   }

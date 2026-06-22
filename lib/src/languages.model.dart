@@ -28,7 +28,7 @@ abstract class Languages {
     return languages[LanguageId.parse(code).canonicalize().toUnicodeBCP47()];
   }
 
-// FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
+  // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 
   /// Localized name for Unknown language.
   Language get unknownLanguage;

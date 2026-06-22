@@ -7,8 +7,10 @@ import '../utils/split_words.dart';
 
 part 'units.g.dart';
 
-var _reference = readJsonData('tool/data/units/units/en.json', 'main/en/units')
-    .cast<String, Map<String, dynamic>>();
+var _reference = readJsonData(
+  'tool/data/units/units/en.json',
+  'main/en/units',
+).cast<String, Map<String, dynamic>>();
 
 String generateUnitsModel() {
   var output = StringBuffer();
@@ -29,7 +31,9 @@ abstract class Units {
 ''');
 
   var fields = readJsonData(
-      'tool/data/units/units/${'en'}.json', 'main/${'en'}/units/long');
+    'tool/data/units/units/${'en'}.json',
+    'main/${'en'}/units/long',
+  );
   for (var key in fields.keys) {
     var field = UnitField.fromJson(fields[key] as Map<String, dynamic>);
     if (field.unitPrefixPattern != null) {
@@ -63,16 +67,18 @@ const _plurals = ['zero', 'one', 'two', 'few', 'many', 'other'];
 String? generateUnits(String locale) {
   var buffer = StringBuffer();
 
-  var data =
-      readJsonData('tool/data/units/units/$locale.json', 'main/$locale/units')
-          .cast<String, Map<String, dynamic>>();
+  var data = readJsonData(
+    'tool/data/units/units/$locale.json',
+    'main/$locale/units',
+  ).cast<String, Map<String, dynamic>>();
 
   var baseLocale = getBaseLocale(locale);
   Map<String, Map<String, dynamic>>? baseData;
   if (baseLocale != null) {
     baseData = readJsonData(
-            'tool/data/units/units/$baseLocale.json', 'main/$baseLocale/units')
-        .cast<String, Map<String, dynamic>>();
+      'tool/data/units/units/$baseLocale.json',
+      'main/$baseLocale/units',
+    ).cast<String, Map<String, dynamic>>();
   }
 
   buffer.writeln('''
@@ -101,7 +107,8 @@ class Units${locale.toUpperCamelCase()} extends Units${baseLocale?.toUpperCamelC
 String? generateUnitCode(String key, Map<String, Map<String, dynamic>> units) {
   final buffer = StringBuffer();
   var firstField = UnitField.fromJson(
-      _reference[_lengths.first]![key] as Map<String, dynamic>);
+    _reference[_lengths.first]![key] as Map<String, dynamic>,
+  );
   if (firstField.displayName != null) {
     if (firstField.unitPatternCountOther == null) return null;
 
@@ -114,7 +121,8 @@ String? generateUnitCode(String key, Map<String, Map<String, dynamic>> units) {
         throw Exception('$key ${unit.displayName} is null for length $length');
       }
       buffer.writeln(
-          '$length: const UnitCountPattern(_locale, ${escapeDartString(displayName)},');
+        '$length: UnitCountPattern(_locale, ${escapeDartString(displayName)},',
+      );
       for (var plural in _plurals) {
         var pattern = unit.getUnitPattern(plural);
         if (pattern != null) {
@@ -135,25 +143,30 @@ String? generateUnitCode(String key, Map<String, Map<String, dynamic>> units) {
       var pattern = unit.unitPrefixPattern;
       if (pattern == null) {
         throw Exception(
-            '$key ${unit.unitPrefixPattern} is null for length $length');
+          '$key ${unit.unitPrefixPattern} is null for length $length',
+        );
       }
       buffer.writeln(
-          '$length: const UnitPrefixPattern(${escapeDartString(pattern)}),');
+        '$length: UnitPrefixPattern(${escapeDartString(pattern)}),',
+      );
     }
     buffer.writeln(');');
   } else if (firstField.compoundUnitPattern != null) {
     buffer.writeln('@override');
     buffer.writeln(
-        'CompoundUnit get ${lowerCamel(splitWords(key))} => const CompoundUnit(');
+      'CompoundUnit get ${lowerCamel(splitWords(key))} => const CompoundUnit(',
+    );
     for (var length in _lengths) {
       var unit = getUnitForLength(units, _reference, length, key);
       var pattern = unit.compoundUnitPattern;
       if (pattern == null) {
         throw Exception(
-            '$key ${unit.compoundUnitPattern} is null for length $length');
+          '$key ${unit.compoundUnitPattern} is null for length $length',
+        );
       }
       buffer.writeln(
-          '$length: const CompoundUnitPattern(${escapeDartString(pattern)}),');
+        '$length: CompoundUnitPattern(${escapeDartString(pattern)}),',
+      );
     }
     buffer.writeln(');');
   }
@@ -170,7 +183,7 @@ UnitField getUnitForLength(
     units[length]![key],
     units[_lengths.first]![key],
     referenceUnits[length]![key],
-    referenceUnits[_lengths.first]![key]
+    referenceUnits[_lengths.first]![key],
   ]);
 }
 
@@ -193,21 +206,23 @@ class UnitField {
       _$UnitFieldFromJson(json);
 
   factory UnitField.fromJsonWithFallback(Iterable<dynamic> jsons) {
-    var unitFields = jsons.nonNulls
-        .map((json) => _$UnitFieldFromJson(json as Map<String, dynamic>));
+    var unitFields = jsons.nonNulls.map(
+      (json) => _$UnitFieldFromJson(json as Map<String, dynamic>),
+    );
     var res = unitFields.first;
     for (var unitField in unitFields.skip(1)) {
       res = UnitField(
-          res.displayName ?? unitField.displayName,
-          res.unitPatternCountZero ?? unitField.unitPatternCountZero,
-          res.unitPatternCountOne ?? unitField.unitPatternCountOne,
-          res.unitPatternCountTwo ?? unitField.unitPatternCountTwo,
-          res.unitPatternCountFew ?? unitField.unitPatternCountFew,
-          res.unitPatternCountMany ?? unitField.unitPatternCountMany,
-          res.unitPatternCountOther ?? unitField.unitPatternCountOther,
-          res.perUnitPattern ?? unitField.perUnitPattern,
-          res.unitPrefixPattern ?? unitField.unitPrefixPattern,
-          res.compoundUnitPattern ?? unitField.compoundUnitPattern);
+        res.displayName ?? unitField.displayName,
+        res.unitPatternCountZero ?? unitField.unitPatternCountZero,
+        res.unitPatternCountOne ?? unitField.unitPatternCountOne,
+        res.unitPatternCountTwo ?? unitField.unitPatternCountTwo,
+        res.unitPatternCountFew ?? unitField.unitPatternCountFew,
+        res.unitPatternCountMany ?? unitField.unitPatternCountMany,
+        res.unitPatternCountOther ?? unitField.unitPatternCountOther,
+        res.perUnitPattern ?? unitField.perUnitPattern,
+        res.unitPrefixPattern ?? unitField.unitPrefixPattern,
+        res.compoundUnitPattern ?? unitField.compoundUnitPattern,
+      );
     }
     return res;
   }
@@ -233,13 +248,13 @@ class UnitField {
   final String? unitPatternCountOther;
 
   String? getUnitPattern(String plural) => {
-        'zero': unitPatternCountZero,
-        'one': unitPatternCountOne,
-        'two': unitPatternCountTwo,
-        'few': unitPatternCountFew,
-        'many': unitPatternCountMany,
-        'other': unitPatternCountOther,
-      }[plural];
+    'zero': unitPatternCountZero,
+    'one': unitPatternCountOne,
+    'two': unitPatternCountTwo,
+    'few': unitPatternCountFew,
+    'many': unitPatternCountMany,
+    'other': unitPatternCountOther,
+  }[plural];
 
   final String? perUnitPattern;
 

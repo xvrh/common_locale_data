@@ -28,17 +28,20 @@ class CommonLocaleDataHaGH extends CommonLocaleDataHa {
 class CurrenciesHaGH extends CurrenciesHa {
   const CurrenciesHaGH(super.cld);
 
-  static const _ghs = Currency(_cld, 'GHS', 'Sidi na Ghana',
-      symbol: 'GH₵', symbolNarrow: 'GH₵');
+  static const _ghs = Currency(
+    _cld,
+    'GHS',
+    'Sidi na Ghana',
+    symbol: 'GH₵',
+    symbolNarrow: 'GH₵',
+  );
 
   @override
   Currency get ghs => _ghs;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesHa.staticCurrencies,
-        ...const {
-          'GHS': _ghs,
-        }
-      });
+    ...CurrenciesHa.staticCurrencies,
+    ...const {'GHS': _ghs},
+  });
 }

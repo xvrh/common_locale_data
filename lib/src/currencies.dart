@@ -23,7 +23,7 @@ enum CurrencyFormat {
   iso,
 
   /// Do not display the currency symbol
-  hidden
+  hidden,
 }
 
 /// Localized currency names.
@@ -66,71 +66,84 @@ class Currency {
   /// Localized pattern for an other amount of currency.
   final String? other;
 
-  const Currency(this.cld, this.code, this.displayName,
-      {this.symbol,
-      this.symbolNarrow,
-      this.symbolVariant,
-      this.zero,
-      this.one,
-      this.other,
-      this.two,
-      this.few,
-      this.many});
+  const Currency(
+    this.cld,
+    this.code,
+    this.displayName, {
+    this.symbol,
+    this.symbolNarrow,
+    this.symbolVariant,
+    this.zero,
+    this.one,
+    this.other,
+    this.two,
+    this.few,
+    this.many,
+  });
 
   /// Format the [howMany] amount of currency.
-  String format(num howMany,
-          {NumberFormat? numberFormat,
-          CurrencyFormat? currencyFormat,
-          bool compact = false,
-          String? placeholder,
-          int? decimalDigits}) =>
-      call(howMany,
-          numberFormat: numberFormat,
-          currencyFormat: currencyFormat,
-          compact: compact,
-          placeholder: placeholder,
-          decimalDigits: decimalDigits);
+  String format(
+    num howMany, {
+    NumberFormat? numberFormat,
+    CurrencyFormat? currencyFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) => call(
+    howMany,
+    numberFormat: numberFormat,
+    currencyFormat: currencyFormat,
+    compact: compact,
+    placeholder: placeholder,
+    decimalDigits: decimalDigits,
+  );
 
   /// Short hand to format the [howMany] amount of currency.
-  String call(num howMany,
-      {NumberFormat? numberFormat,
-      CurrencyFormat? currencyFormat,
-      bool compact = false,
-      String? placeholder,
-      int? decimalDigits}) {
+  String call(
+    num howMany, {
+    NumberFormat? numberFormat,
+    CurrencyFormat? currencyFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) {
     assert(numberFormat == null || placeholder == null);
     if (currencyFormat == CurrencyFormat.full) {
-      return full(howMany,
-          numberFormat: numberFormat,
-          placeholder: placeholder,
-          decimalDigits: decimalDigits);
+      return full(
+        howMany,
+        numberFormat: numberFormat,
+        placeholder: placeholder,
+        decimalDigits: decimalDigits,
+      );
     } else {
       if (compact) {
         numberFormat ??= NumberFormat.compactCurrency(
-            locale: cld.locale,
-            name: code,
-            symbol: switch (currencyFormat) {
-              null || CurrencyFormat.short => symbol,
-              CurrencyFormat.narrow => symbolNarrow ?? symbol ?? code,
-              CurrencyFormat.variant => symbolVariant ?? symbol ?? code,
-              CurrencyFormat.iso => code,
-              CurrencyFormat.hidden => '',
-              CurrencyFormat.full => throw UnimplementedError(),
-            },
-            decimalDigits: decimalDigits);
+          locale: cld.locale,
+          name: code,
+          symbol: switch (currencyFormat) {
+            null || CurrencyFormat.short => symbol,
+            CurrencyFormat.narrow => symbolNarrow ?? symbol ?? code,
+            CurrencyFormat.variant => symbolVariant ?? symbol ?? code,
+            CurrencyFormat.iso => code,
+            CurrencyFormat.hidden => '',
+            CurrencyFormat.full => throw UnimplementedError(),
+          },
+          decimalDigits: decimalDigits,
+        );
       } else {
         numberFormat ??= NumberFormat.currency(
-            locale: cld.locale,
-            name: code,
-            symbol: switch (currencyFormat) {
-              null || CurrencyFormat.short => symbol,
-              CurrencyFormat.narrow => symbolNarrow ?? symbol ?? code,
-              CurrencyFormat.variant => symbolVariant ?? symbol ?? code,
-              CurrencyFormat.iso => code,
-              CurrencyFormat.hidden => '',
-              CurrencyFormat.full => throw UnimplementedError(),
-            },
-            decimalDigits: decimalDigits);
+          locale: cld.locale,
+          name: code,
+          symbol: switch (currencyFormat) {
+            null || CurrencyFormat.short => symbol,
+            CurrencyFormat.narrow => symbolNarrow ?? symbol ?? code,
+            CurrencyFormat.variant => symbolVariant ?? symbol ?? code,
+            CurrencyFormat.iso => code,
+            CurrencyFormat.hidden => '',
+            CurrencyFormat.full => throw UnimplementedError(),
+          },
+          decimalDigits: decimalDigits,
+        );
       }
     }
     placeholder ??= numberFormat.format(howMany);
@@ -139,11 +152,13 @@ class Currency {
   }
 
   /// Format the currency with the full name of the currency (e.g. US Dollars).
-  String full(num howMany,
-      {NumberFormat? numberFormat,
-      bool compact = false,
-      String? placeholder,
-      int? decimalDigits}) {
+  String full(
+    num howMany, {
+    NumberFormat? numberFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) {
     assert(numberFormat == null || placeholder == null);
 
     var message = Intl.plural(
@@ -162,11 +177,16 @@ class Currency {
     message = '{0} $message';
 
     if (compact) {
-      numberFormat ??=
-          NumberFormat.compactCurrency(locale: cld.locale, name: '');
+      numberFormat ??= NumberFormat.compactCurrency(
+        locale: cld.locale,
+        name: '',
+      );
     } else {
       numberFormat ??= NumberFormat.currency(
-          locale: cld.locale, name: '', decimalDigits: decimalDigits);
+        locale: cld.locale,
+        name: '',
+        decimalDigits: decimalDigits,
+      );
     }
     placeholder ??= numberFormat.format(howMany);
 
@@ -174,74 +194,94 @@ class Currency {
   }
 
   /// Format the currency with the short symbol of the currency (e.g. US$).
-  String short(num howMany,
-      {String? currencyCode,
-      NumberFormat? numberFormat,
-      bool compact = false,
-      String? placeholder,
-      int? decimalDigits}) {
-    return format(howMany,
-        currencyFormat: CurrencyFormat.short,
-        numberFormat: numberFormat,
-        compact: compact,
-        placeholder: placeholder,
-        decimalDigits: decimalDigits);
+  String short(
+    num howMany, {
+    String? currencyCode,
+    NumberFormat? numberFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) {
+    return format(
+      howMany,
+      currencyFormat: CurrencyFormat.short,
+      numberFormat: numberFormat,
+      compact: compact,
+      placeholder: placeholder,
+      decimalDigits: decimalDigits,
+    );
   }
 
   /// Format the currency with the narrow symbol of the currency when the context is clear (e.g. $).
-  String narrow(num howMany,
-      {NumberFormat? numberFormat,
-      bool compact = false,
-      String? placeholder,
-      int? decimalDigits}) {
-    return format(howMany,
-        currencyFormat: CurrencyFormat.narrow,
-        numberFormat: numberFormat,
-        compact: compact,
-        placeholder: placeholder,
-        decimalDigits: decimalDigits);
+  String narrow(
+    num howMany, {
+    NumberFormat? numberFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) {
+    return format(
+      howMany,
+      currencyFormat: CurrencyFormat.narrow,
+      numberFormat: numberFormat,
+      compact: compact,
+      placeholder: placeholder,
+      decimalDigits: decimalDigits,
+    );
   }
 
   /// Format the currency with an alternative symbol of the currency.
-  String variant(num howMany,
-      {NumberFormat? numberFormat,
-      bool compact = false,
-      String? placeholder,
-      int? decimalDigits}) {
-    return format(howMany,
-        currencyFormat: CurrencyFormat.variant,
-        numberFormat: numberFormat,
-        compact: compact,
-        placeholder: placeholder,
-        decimalDigits: decimalDigits);
+  String variant(
+    num howMany, {
+    NumberFormat? numberFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) {
+    return format(
+      howMany,
+      currencyFormat: CurrencyFormat.variant,
+      numberFormat: numberFormat,
+      compact: compact,
+      placeholder: placeholder,
+      decimalDigits: decimalDigits,
+    );
   }
 
   /// Format the currency with the 3 letter ISO 4217 abbreviation.
-  String iso(num howMany,
-      {NumberFormat? numberFormat,
-      bool compact = false,
-      String? placeholder,
-      int? decimalDigits}) {
-    return format(howMany,
-        currencyFormat: CurrencyFormat.iso,
-        numberFormat: numberFormat,
-        compact: compact,
-        placeholder: placeholder,
-        decimalDigits: decimalDigits);
+  String iso(
+    num howMany, {
+    NumberFormat? numberFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) {
+    return format(
+      howMany,
+      currencyFormat: CurrencyFormat.iso,
+      numberFormat: numberFormat,
+      compact: compact,
+      placeholder: placeholder,
+      decimalDigits: decimalDigits,
+    );
   }
 
   /// Format the currency without a currency symbol.
-  String hidden(num howMany,
-      {NumberFormat? numberFormat,
-      bool compact = false,
-      String? placeholder,
-      int? decimalDigits}) {
-    return format(howMany,
-        currencyFormat: CurrencyFormat.hidden,
-        numberFormat: numberFormat,
-        compact: compact,
-        placeholder: placeholder,
-        decimalDigits: decimalDigits);
+  String hidden(
+    num howMany, {
+    NumberFormat? numberFormat,
+    bool compact = false,
+    String? placeholder,
+    int? decimalDigits,
+  }) {
+    return format(
+      howMany,
+      currencyFormat: CurrencyFormat.hidden,
+      numberFormat: numberFormat,
+      compact: compact,
+      placeholder: placeholder,
+      decimalDigits: decimalDigits,
+    );
   }
 
   @override

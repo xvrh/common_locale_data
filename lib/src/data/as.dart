@@ -65,5201 +65,4452 @@ class UnitsAs extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('ডেচি{0}'),
-        short: UnitPrefixPattern('ডেঃ{0}'),
-        narrow: UnitPrefixPattern('ডেচি{0}'),
-      );
+    long: UnitPrefixPattern('ডেচি{0}'),
+    short: UnitPrefixPattern('ডেঃ{0}'),
+    narrow: UnitPrefixPattern('ডেচি{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('চেণ্টি{0}'),
-        short: UnitPrefixPattern('চেঃ{0}'),
-        narrow: UnitPrefixPattern('চেণ্টি{0}'),
-      );
+    long: UnitPrefixPattern('চেণ্টি{0}'),
+    short: UnitPrefixPattern('চেঃ{0}'),
+    narrow: UnitPrefixPattern('চেণ্টি{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('মিলি{0}'),
-        short: UnitPrefixPattern('মিঃ{0}'),
-        narrow: UnitPrefixPattern('মিলি{0}'),
-      );
+    long: UnitPrefixPattern('মিলি{0}'),
+    short: UnitPrefixPattern('মিঃ{0}'),
+    narrow: UnitPrefixPattern('মিলি{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('মাইক্ৰ’{0}'),
-        short: UnitPrefixPattern('μ{0}'),
-        narrow: UnitPrefixPattern('μ{0}'),
-      );
+    long: UnitPrefixPattern('মাইক্ৰ’{0}'),
+    short: UnitPrefixPattern('μ{0}'),
+    narrow: UnitPrefixPattern('μ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('নেনো{0}'),
-        short: UnitPrefixPattern('নে.{0}'),
-        narrow: UnitPrefixPattern('নেনো{0}'),
-      );
+    long: UnitPrefixPattern('নেনো{0}'),
+    short: UnitPrefixPattern('নে.{0}'),
+    narrow: UnitPrefixPattern('নেনো{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('পিকো{0}'),
-        short: UnitPrefixPattern('পি.{0}'),
-        narrow: UnitPrefixPattern('পিকো{0}'),
-      );
+    long: UnitPrefixPattern('পিকো{0}'),
+    short: UnitPrefixPattern('পি.{0}'),
+    narrow: UnitPrefixPattern('পিকো{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('ফেমটো{0}'),
-        short: UnitPrefixPattern('ফেম.{0}'),
-        narrow: UnitPrefixPattern('ফেমটো{0}'),
-      );
+    long: UnitPrefixPattern('ফেমটো{0}'),
+    short: UnitPrefixPattern('ফেম.{0}'),
+    narrow: UnitPrefixPattern('ফেমটো{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('অটো{0}'),
-        short: UnitPrefixPattern('অ.{0}'),
-        narrow: UnitPrefixPattern('অটো{0}'),
-      );
+    long: UnitPrefixPattern('অটো{0}'),
+    short: UnitPrefixPattern('অ.{0}'),
+    narrow: UnitPrefixPattern('অটো{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('জেপ্টো{0}'),
-        short: UnitPrefixPattern('জে.{0}'),
-        narrow: UnitPrefixPattern('জেপ্টো{0}'),
-      );
+    long: UnitPrefixPattern('জেপ্টো{0}'),
+    short: UnitPrefixPattern('জে.{0}'),
+    narrow: UnitPrefixPattern('জেপ্টো{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('য়ক্টো{0}'),
-        short: UnitPrefixPattern('য়.{0}'),
-        narrow: UnitPrefixPattern('য়ক্টো{0}'),
-      );
+    long: UnitPrefixPattern('য়ক্টো{0}'),
+    short: UnitPrefixPattern('য়.{0}'),
+    narrow: UnitPrefixPattern('য়ক্টো{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('ৰণ্টো{0}'),
-        short: UnitPrefixPattern('ৰ{0}'),
-        narrow: UnitPrefixPattern('ৰ{0}'),
-      );
+    long: UnitPrefixPattern('ৰণ্টো{0}'),
+    short: UnitPrefixPattern('ৰ{0}'),
+    narrow: UnitPrefixPattern('ৰ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('কুইকটো{0}'),
-        short: UnitPrefixPattern('কু{0}'),
-        narrow: UnitPrefixPattern('কু{0}'),
-      );
+    long: UnitPrefixPattern('কুইকটো{0}'),
+    short: UnitPrefixPattern('কু{0}'),
+    narrow: UnitPrefixPattern('কু{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('ডেকা{0}'),
-        short: UnitPrefixPattern('ডে.{0}'),
-        narrow: UnitPrefixPattern('ডেকা{0}'),
-      );
+    long: UnitPrefixPattern('ডেকা{0}'),
+    short: UnitPrefixPattern('ডে.{0}'),
+    narrow: UnitPrefixPattern('ডেকা{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('হেক্টো{0}'),
-        short: UnitPrefixPattern('হে.{0}'),
-        narrow: UnitPrefixPattern('হেক্টো{0}'),
-      );
+    long: UnitPrefixPattern('হেক্টো{0}'),
+    short: UnitPrefixPattern('হে.{0}'),
+    narrow: UnitPrefixPattern('হেক্টো{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('কিলো{0}'),
-        short: UnitPrefixPattern('কিঃ{0}'),
-        narrow: UnitPrefixPattern('কিলো{0}'),
-      );
+    long: UnitPrefixPattern('কিলো{0}'),
+    short: UnitPrefixPattern('কিঃ{0}'),
+    narrow: UnitPrefixPattern('কিলো{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('মেগা{0}'),
-        short: UnitPrefixPattern('মে.{0}'),
-        narrow: UnitPrefixPattern('মেগা{0}'),
-      );
+    long: UnitPrefixPattern('মেগা{0}'),
+    short: UnitPrefixPattern('মে.{0}'),
+    narrow: UnitPrefixPattern('মেগা{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('গিগা{0}'),
-        short: UnitPrefixPattern('গি.{0}'),
-        narrow: UnitPrefixPattern('গিগা{0}'),
-      );
+    long: UnitPrefixPattern('গিগা{0}'),
+    short: UnitPrefixPattern('গি.{0}'),
+    narrow: UnitPrefixPattern('গিগা{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('টেৰা{0}'),
-        short: UnitPrefixPattern('টে.{0}'),
-        narrow: UnitPrefixPattern('টেৰা{0}'),
-      );
+    long: UnitPrefixPattern('টেৰা{0}'),
+    short: UnitPrefixPattern('টে.{0}'),
+    narrow: UnitPrefixPattern('টেৰা{0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('পেটা{0}'),
-        short: UnitPrefixPattern('পে.{0}'),
-        narrow: UnitPrefixPattern('পেটা{0}'),
-      );
+    long: UnitPrefixPattern('পেটা{0}'),
+    short: UnitPrefixPattern('পে.{0}'),
+    narrow: UnitPrefixPattern('পেটা{0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('এক্সা{0}'),
-        short: UnitPrefixPattern('এ.{0}'),
-        narrow: UnitPrefixPattern('এক্সা{0}'),
-      );
+    long: UnitPrefixPattern('এক্সা{0}'),
+    short: UnitPrefixPattern('এ.{0}'),
+    narrow: UnitPrefixPattern('এক্সা{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('জেতা{0}'),
-        short: UnitPrefixPattern('জ.{0}'),
-        narrow: UnitPrefixPattern('জেতা{0}'),
-      );
+    long: UnitPrefixPattern('জেতা{0}'),
+    short: UnitPrefixPattern('জ.{0}'),
+    narrow: UnitPrefixPattern('জেতা{0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('য়োটা{0}'),
-        short: UnitPrefixPattern('য়ো.{0}'),
-        narrow: UnitPrefixPattern('য়োটা{0}'),
-      );
+    long: UnitPrefixPattern('য়োটা{0}'),
+    short: UnitPrefixPattern('য়ো.{0}'),
+    narrow: UnitPrefixPattern('য়োটা{0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('ৰোনা{0}'),
-        short: UnitPrefixPattern('ৰো{0}'),
-        narrow: UnitPrefixPattern('ৰো{0}'),
-      );
+    long: UnitPrefixPattern('ৰোনা{0}'),
+    short: UnitPrefixPattern('ৰো{0}'),
+    narrow: UnitPrefixPattern('ৰো{0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('কুৱেটা{0}'),
-        short: UnitPrefixPattern('কুৱে{0}'),
-        narrow: UnitPrefixPattern('কুৱে{0}'),
-      );
+    long: UnitPrefixPattern('কুৱেটা{0}'),
+    short: UnitPrefixPattern('কুৱে{0}'),
+    narrow: UnitPrefixPattern('কুৱে{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('কিবি{0}'),
-        short: UnitPrefixPattern('কি{0}'),
-        narrow: UnitPrefixPattern('কি{0}'),
-      );
+    long: UnitPrefixPattern('কিবি{0}'),
+    short: UnitPrefixPattern('কি{0}'),
+    narrow: UnitPrefixPattern('কি{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('মেবি{0}'),
-        short: UnitPrefixPattern('মি{0}'),
-        narrow: UnitPrefixPattern('মি{0}'),
-      );
+    long: UnitPrefixPattern('মেবি{0}'),
+    short: UnitPrefixPattern('মি{0}'),
+    narrow: UnitPrefixPattern('মি{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('গিবি{0}'),
-        short: UnitPrefixPattern('গিঃ{0}'),
-        narrow: UnitPrefixPattern('গি{0}'),
-      );
+    long: UnitPrefixPattern('গিবি{0}'),
+    short: UnitPrefixPattern('গিঃ{0}'),
+    narrow: UnitPrefixPattern('গি{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('টেবি{0}'),
-        short: UnitPrefixPattern('টেঃ{0}'),
-        narrow: UnitPrefixPattern('টে{0}'),
-      );
+    long: UnitPrefixPattern('টেবি{0}'),
+    short: UnitPrefixPattern('টেঃ{0}'),
+    narrow: UnitPrefixPattern('টে{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('পেবি{0}'),
-        short: UnitPrefixPattern('পেঃ{0}'),
-        narrow: UnitPrefixPattern('পে{0}'),
-      );
+    long: UnitPrefixPattern('পেবি{0}'),
+    short: UnitPrefixPattern('পেঃ{0}'),
+    narrow: UnitPrefixPattern('পে{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('এক্সবি{0}'),
-        short: UnitPrefixPattern('এক্স{0}'),
-        narrow: UnitPrefixPattern('এক্স{0}'),
-      );
+    long: UnitPrefixPattern('এক্সবি{0}'),
+    short: UnitPrefixPattern('এক্স{0}'),
+    narrow: UnitPrefixPattern('এক্স{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('জেবি{0}'),
-        short: UnitPrefixPattern('জেঃ{0}'),
-        narrow: UnitPrefixPattern('জে{0}'),
-      );
+    long: UnitPrefixPattern('জেবি{0}'),
+    short: UnitPrefixPattern('জেঃ{0}'),
+    narrow: UnitPrefixPattern('জে{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('য়োবে{0}'),
-        short: UnitPrefixPattern('য়োঃ{0}'),
-        narrow: UnitPrefixPattern('য়ো{0}'),
-      );
+    long: UnitPrefixPattern('য়োবে{0}'),
+    short: UnitPrefixPattern('য়োঃ{0}'),
+    narrow: UnitPrefixPattern('য়ো{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('প্ৰতি {1}ত {0}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('প্ৰতি {1}ত {0}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'জি-বল',
-          one: '{0} জি-বল',
-          other: '{0} জি-বল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'জি-বল',
-          one: '{0} জি',
-          other: '{0} জি',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'জি-বল',
-          one: '{0} জি',
-          other: '{0} জি',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'জি-বল',
+      one: '{0} জি-বল',
+      other: '{0} জি-বল',
+    ),
+    short: UnitCountPattern(_locale, 'জি-বল', one: '{0} জি', other: '{0} জি'),
+    narrow: UnitCountPattern(_locale, 'জি-বল', one: '{0} জি', other: '{0} জি'),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
-          one: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
-          other: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিটাৰ/বৰ্গ ছেকেণ্ড',
-          one: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
-          other: '{0} m/s²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিটাৰ/বৰ্গ ছেকেণ্ড',
-          one: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
-          other: '{0} m/s²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
+      one: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
+      other: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিটাৰ/বৰ্গ ছেকেণ্ড',
+      one: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
+      other: '{0} m/s²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিটাৰ/বৰ্গ ছেকেণ্ড',
+      one: '{0} মিটাৰ প্ৰতি বৰ্গ ছেকেণ্ড',
+      other: '{0} m/s²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘূৰ্ণন',
-          one: '{0} ঘূৰ্ণন',
-          other: '{0} ঘূৰ্ণন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘূৰ্ণন',
-          one: '{0} ঘূৰ্ণন',
-          other: '{0} ঘূৰ্ণন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘূৰ্ণন',
-          one: '{0} ঘূৰ্ণন',
-          other: '{0} ঘূৰ্ণন',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘূৰ্ণন',
+      one: '{0} ঘূৰ্ণন',
+      other: '{0} ঘূৰ্ণন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘূৰ্ণন',
+      one: '{0} ঘূৰ্ণন',
+      other: '{0} ঘূৰ্ণন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘূৰ্ণন',
+      one: '{0} ঘূৰ্ণন',
+      other: '{0} ঘূৰ্ণন',
+    ),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ৰেডিয়েন',
-          one: '{0} ৰেডিয়েন',
-          other: '{0} ৰেডিয়েন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ৰেডিয়েন',
-          one: '{0} ৰেডিয়েন',
-          other: '{0} ৰেডিয়েন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ৰেডিয়েন',
-          one: '{0} ৰেডিয়েন',
-          other: '{0} ৰেডিয়েন',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ৰেডিয়েন',
+      one: '{0} ৰেডিয়েন',
+      other: '{0} ৰেডিয়েন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ৰেডিয়েন',
+      one: '{0} ৰেডিয়েন',
+      other: '{0} ৰেডিয়েন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ৰেডিয়েন',
+      one: '{0} ৰেডিয়েন',
+      other: '{0} ৰেডিয়েন',
+    ),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডিগ্ৰী',
-          one: '{0} ডিগ্ৰী',
-          other: '{0} ডিগ্ৰী',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডিগ্ৰী',
-          one: '{0} ডিগ্ৰী',
-          other: '{0} ডিগ্ৰী',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ডিগ্ৰী',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডিগ্ৰী',
+      one: '{0} ডিগ্ৰী',
+      other: '{0} ডিগ্ৰী',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডিগ্ৰী',
+      one: '{0} ডিগ্ৰী',
+      other: '{0} ডিগ্ৰী',
+    ),
+    narrow: UnitCountPattern(_locale, 'ডিগ্ৰী', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'আৰ্কমিনিট',
-          one: '{0} আৰ্কমিনিট',
-          other: '{0} আৰ্কমিনিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'আৰ্কমিনিট',
-          one: '{0} আৰ্কমিনিট',
-          other: '{0} আৰ্কমিনিট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'আঃ মিঃ',
-          one: '{0}′',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'আৰ্কমিনিট',
+      one: '{0} আৰ্কমিনিট',
+      other: '{0} আৰ্কমিনিট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'আৰ্কমিনিট',
+      one: '{0} আৰ্কমিনিট',
+      other: '{0} আৰ্কমিনিট',
+    ),
+    narrow: UnitCountPattern(_locale, 'আঃ মিঃ', one: '{0}′', other: '{0}′'),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'আৰ্কছেকেণ্ড',
-          one: '{0} আৰ্কছেকেণ্ড',
-          other: '{0} আৰ্কছেকেণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'আৰ্কছেকেণ্ড',
-          one: '{0} আৰ্কছেকেণ্ড',
-          other: '{0} আৰ্কছেকেণ্ড',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'আৰ্কছেকেণ্ড',
-          one: '{0}″',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'আৰ্কছেকেণ্ড',
+      one: '{0} আৰ্কছেকেণ্ড',
+      other: '{0} আৰ্কছেকেণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'আৰ্কছেকেণ্ড',
+      one: '{0} আৰ্কছেকেণ্ড',
+      other: '{0} আৰ্কছেকেণ্ড',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'আৰ্কছেকেণ্ড',
+      one: '{0}″',
+      other: '{0}″',
+    ),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বৰ্গ কিলোমিটাৰ',
-          one: '{0} বৰ্গ কিলোমিটাৰ',
-          other: '{0} বৰ্গ কিলোমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বৰ্গ কিলোমিটাৰ',
-          one: '{0} বৰ্গ কিলোমিটাৰ',
-          other: '{0} km²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বৰ্গ কিলোমিটাৰ',
-          one: '{0} বৰ্গ কিলোমিটাৰ',
-          other: '{0} km²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বৰ্গ কিলোমিটাৰ',
+      one: '{0} বৰ্গ কিলোমিটাৰ',
+      other: '{0} বৰ্গ কিলোমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বৰ্গ কিলোমিটাৰ',
+      one: '{0} বৰ্গ কিলোমিটাৰ',
+      other: '{0} km²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বৰ্গ কিলোমিটাৰ',
+      one: '{0} বৰ্গ কিলোমিটাৰ',
+      other: '{0} km²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'হেক্টৰ',
-          one: '{0} হেক্টৰ',
-          other: '{0} হেক্টৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'হেক্টৰ',
-          one: '{0} হেক্টৰ',
-          other: '{0} হেক্টৰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'হেক্টৰ',
-          one: '{0} হেক্টৰ',
-          other: '{0} হেক্টৰ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'হেক্টৰ',
+      one: '{0} হেক্টৰ',
+      other: '{0} হেক্টৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'হেক্টৰ',
+      one: '{0} হেক্টৰ',
+      other: '{0} হেক্টৰ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'হেক্টৰ',
+      one: '{0} হেক্টৰ',
+      other: '{0} হেক্টৰ',
+    ),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বৰ্গ মিটাৰ',
-          one: '{0} বৰ্গ মিটাৰ',
-          other: '{0} বৰ্গ মিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বৰ্গ মিটাৰ',
-          one: '{0} বৰ্গ মিটাৰ',
-          other: '{0} m²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বৰ্গ মিটাৰ',
-          one: '{0} বৰ্গ মিটাৰ',
-          other: '{0} m²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বৰ্গ মিটাৰ',
+      one: '{0} বৰ্গ মিটাৰ',
+      other: '{0} বৰ্গ মিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বৰ্গ মিটাৰ',
+      one: '{0} বৰ্গ মিটাৰ',
+      other: '{0} m²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বৰ্গ মিটাৰ',
+      one: '{0} বৰ্গ মিটাৰ',
+      other: '{0} m²',
+    ),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বৰ্গ ছেণ্টিমিটাৰ',
-          one: '{0} বৰ্গ ছেণ্টিমিটাৰ',
-          other: '{0} বৰ্গ ছেণ্টিমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} বৰ্গ ছেণ্টিমিটাৰ',
-          other: '{0} cm²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} বৰ্গ ছেণ্টিমিটাৰ',
-          other: '{0} cm²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বৰ্গ ছেণ্টিমিটাৰ',
+      one: '{0} বৰ্গ ছেণ্টিমিটাৰ',
+      other: '{0} বৰ্গ ছেণ্টিমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} বৰ্গ ছেণ্টিমিটাৰ',
+      other: '{0} cm²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} বৰ্গ ছেণ্টিমিটাৰ',
+      other: '{0} cm²',
+    ),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বৰ্গ মাইল',
-          one: '{0} বৰ্গ মাইল',
-          other: '{0} বৰ্গ মাইল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বৰ্গ মাইল',
-          one: '{0} বৰ্গ মাইল',
-          other: '{0} বৰ্গ মাইল',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বৰ্গ মাইল',
-          one: '{0} বৰ্গ মাইল',
-          other: '{0} বৰ্গ মাইল',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বৰ্গ মাইল',
+      one: '{0} বৰ্গ মাইল',
+      other: '{0} বৰ্গ মাইল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বৰ্গ মাইল',
+      one: '{0} বৰ্গ মাইল',
+      other: '{0} বৰ্গ মাইল',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বৰ্গ মাইল',
+      one: '{0} বৰ্গ মাইল',
+      other: '{0} বৰ্গ মাইল',
+    ),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'একৰ',
-          one: '{0} একৰ',
-          other: '{0} একৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'একৰ',
-          one: '{0} একৰ',
-          other: '{0} একৰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'একৰ',
-          one: '{0} একৰ',
-          other: '{0} একৰ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'একৰ', one: '{0} একৰ', other: '{0} একৰ'),
+    short: UnitCountPattern(_locale, 'একৰ', one: '{0} একৰ', other: '{0} একৰ'),
+    narrow: UnitCountPattern(_locale, 'একৰ', one: '{0} একৰ', other: '{0} একৰ'),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বৰ্গ গজ',
-          one: '{0} বৰ্গ গজ',
-          other: '{0} বৰ্গ গজ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বৰ্গ গজ',
-          one: '{0} বৰ্গ গজ',
-          other: '{0} yd²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বৰ্গ গজ',
-          one: '{0} বৰ্গ গজ',
-          other: '{0} yd²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বৰ্গ গজ',
+      one: '{0} বৰ্গ গজ',
+      other: '{0} বৰ্গ গজ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বৰ্গ গজ',
+      one: '{0} বৰ্গ গজ',
+      other: '{0} yd²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বৰ্গ গজ',
+      one: '{0} বৰ্গ গজ',
+      other: '{0} yd²',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বৰ্গ ফুট',
-          one: '{0} বৰ্গ ফুট',
-          other: '{0} বৰ্গ ফুট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বৰ্গ ফুট',
-          one: '{0} বৰ্গ ফুট',
-          other: '{0} বৰ্গ ফুট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বৰ্গ ফুট',
-          one: '{0} বৰ্গ ফুট',
-          other: '{0} বৰ্গ ফুট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বৰ্গ ফুট',
+      one: '{0} বৰ্গ ফুট',
+      other: '{0} বৰ্গ ফুট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বৰ্গ ফুট',
+      one: '{0} বৰ্গ ফুট',
+      other: '{0} বৰ্গ ফুট',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বৰ্গ ফুট',
+      one: '{0} বৰ্গ ফুট',
+      other: '{0} বৰ্গ ফুট',
+    ),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বৰ্গ ইঞ্চি',
-          one: '{0} বৰ্গ ইঞ্চি',
-          other: '{0} বৰ্গ ইঞ্চি',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বৰ্গ ইঞ্চি',
-          one: '{0} বৰ্গ ইঞ্চি',
-          other: '{0} in²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বৰ্গ ইঞ্চি',
-          one: '{0} বৰ্গ ইঞ্চি',
-          other: '{0} in²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বৰ্গ ইঞ্চি',
+      one: '{0} বৰ্গ ইঞ্চি',
+      other: '{0} বৰ্গ ইঞ্চি',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বৰ্গ ইঞ্চি',
+      one: '{0} বৰ্গ ইঞ্চি',
+      other: '{0} in²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বৰ্গ ইঞ্চি',
+      one: '{0} বৰ্গ ইঞ্চি',
+      other: '{0} in²',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডুনাম',
-          one: '{0} ডুনাম',
-          other: '{0} ডুনাম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডুনাম',
-          one: '{0} ডুনাম',
-          other: '{0} ডুনাম',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ডুনাম',
-          one: '{0} ডুনাম',
-          other: '{0} ডুনাম',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডুনাম',
+      one: '{0} ডুনাম',
+      other: '{0} ডুনাম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডুনাম',
+      one: '{0} ডুনাম',
+      other: '{0} ডুনাম',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ডুনাম',
+      one: '{0} ডুনাম',
+      other: '{0} ডুনাম',
+    ),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কেৰেট',
-          one: '{0} কেৰেট',
-          other: '{0} কেৰেট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কেৰেট',
-          one: '{0} কেৰেট',
-          other: '{0} কেৰেট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কেৰেট',
-          one: '{0} কেৰেট',
-          other: '{0} কেৰেট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কেৰেট',
+      one: '{0} কেৰেট',
+      other: '{0} কেৰেট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কেৰেট',
+      one: '{0} কেৰেট',
+      other: '{0} কেৰেট',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কেৰেট',
+      one: '{0} কেৰেট',
+      other: '{0} কেৰেট',
+    ),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি ডেচিলিটাৰত মিলিগ্ৰাম',
-          one: 'প্ৰতি ডেচিলিটাৰত {0} মিলিগ্ৰাম',
-          other: 'প্ৰতি ডেচিলিটাৰত {0} মিলিগ্ৰাম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিঃ গ্ৰাঃ/ডেঃ লিঃ',
-          one: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
-          other: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিঃ গ্ৰাঃ/ডেঃ লিঃ',
-          one: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
-          other: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি ডেচিলিটাৰত মিলিগ্ৰাম',
+      one: 'প্ৰতি ডেচিলিটাৰত {0} মিলিগ্ৰাম',
+      other: 'প্ৰতি ডেচিলিটাৰত {0} মিলিগ্ৰাম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিঃ গ্ৰাঃ/ডেঃ লিঃ',
+      one: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
+      other: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিঃ গ্ৰাঃ/ডেঃ লিঃ',
+      one: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
+      other: '{0} মিঃ গ্ৰাঃ/ডেঃ লিঃ',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি লিটাৰত মিলিমোল',
-          one: 'প্ৰতি লিটাৰত {0} মিলিমোল',
-          other: 'প্ৰতি লিটাৰত {0} মিলিমোল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিলিমোল/লিটাৰ',
-          one: '{0} মিলিমোল/লিটাৰ',
-          other: '{0} মিলিমোল/লিটাৰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিলিমোল/লিটাৰ',
-          one: '{0} মিলিমোল/লিটাৰ',
-          other: '{0} মিলিমোল/লিটাৰ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি লিটাৰত মিলিমোল',
+      one: 'প্ৰতি লিটাৰত {0} মিলিমোল',
+      other: 'প্ৰতি লিটাৰত {0} মিলিমোল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিলিমোল/লিটাৰ',
+      one: '{0} মিলিমোল/লিটাৰ',
+      other: '{0} মিলিমোল/লিটাৰ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিলিমোল/লিটাৰ',
+      one: '{0} মিলিমোল/লিটাৰ',
+      other: '{0} মিলিমোল/লিটাৰ',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'আইটেমসমূহ',
-          one: '{0} টা আইটেম',
-          other: '{0} টা আইটেম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'আইটেম',
-          one: '{0} টা আইটেম',
-          other: '{0} টা আইটেম',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'আইটেম',
-          one: '{0} টা আইটেম',
-          other: '{0} টা আইটেম',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'আইটেমসমূহ',
+      one: '{0} টা আইটেম',
+      other: '{0} টা আইটেম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'আইটেম',
+      one: '{0} টা আইটেম',
+      other: '{0} টা আইটেম',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'আইটেম',
+      one: '{0} টা আইটেম',
+      other: '{0} টা আইটেম',
+    ),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি মিলিয়নত ভাগ',
-          one: 'প্ৰতি মিলিয়নত {0} ভাগ',
-          other: 'প্ৰতি মিলিয়নত {0} ভাগ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ভাগ/মিলিয়ন',
-          one: 'প্ৰতি মিলিয়নত {0} ভাগ',
-          other: '{0} ppm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0}ppm',
-          other: '{0}ppm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি মিলিয়নত ভাগ',
+      one: 'প্ৰতি মিলিয়নত {0} ভাগ',
+      other: 'প্ৰতি মিলিয়নত {0} ভাগ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ভাগ/মিলিয়ন',
+      one: 'প্ৰতি মিলিয়নত {0} ভাগ',
+      other: '{0} ppm',
+    ),
+    narrow: UnitCountPattern(_locale, 'ppm', one: '{0}ppm', other: '{0}ppm'),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} শতাংশ',
-          other: '{0} শতাংশ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'শতাংশ',
-          one: '{0} শতাংশ',
-          other: '{0}%',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} শতাংশ',
-          other: '{0}%',
-        ),
-      );
+    long: UnitCountPattern(_locale, '%', one: '{0} শতাংশ', other: '{0} শতাংশ'),
+    short: UnitCountPattern(_locale, 'শতাংশ', one: '{0} শতাংশ', other: '{0}%'),
+    narrow: UnitCountPattern(_locale, '%', one: '{0} শতাংশ', other: '{0}%'),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতিমাইল',
-          one: '{0} প্ৰতিমাইল',
-          other: '{0} প্ৰতিমাইল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'প্ৰতিমাইল',
-          one: '{0} প্ৰতিমাইল',
-          other: '{0}‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‰',
-          one: '{0} প্ৰতিমাইল',
-          other: '{0}‰',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতিমাইল',
+      one: '{0} প্ৰতিমাইল',
+      other: '{0} প্ৰতিমাইল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'প্ৰতিমাইল',
+      one: '{0} প্ৰতিমাইল',
+      other: '{0}‰',
+    ),
+    narrow: UnitCountPattern(_locale, '‰', one: '{0} প্ৰতিমাইল', other: '{0}‰'),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পাৰমিৰেইড',
-          one: '{0} পাৰমিৰেইড',
-          other: '{0} পাৰমিৰেইড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পাৰমিৰেইড',
-          one: '{0} পাৰমিৰেইড',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} পাৰমিৰেইড',
-          other: '{0}‱',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পাৰমিৰেইড',
+      one: '{0} পাৰমিৰেইড',
+      other: '{0} পাৰমিৰেইড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পাৰমিৰেইড',
+      one: '{0} পাৰমিৰেইড',
+      other: '{0}‱',
+    ),
+    narrow: UnitCountPattern(_locale, '‱', one: '{0} পাৰমিৰেইড', other: '{0}‱'),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ম’ল',
-          one: '{0} ম’ল',
-          other: '{0} ম’ল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ম’ল',
-          one: '{0} ম’ল',
-          other: '{0} ম’ল',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ম’ল',
-          one: '{0} ম’ল',
-          other: '{0} ম’ল',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ম’ল', one: '{0} ম’ল', other: '{0} ম’ল'),
+    short: UnitCountPattern(_locale, 'ম’ল', one: '{0} ম’ল', other: '{0} ম’ল'),
+    narrow: UnitCountPattern(_locale, 'ম’ল', one: '{0} ম’ল', other: '{0} ম’ল'),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি কিলোমিটাৰত লিটাৰ',
-          one: 'প্ৰতি কিলোমিটাৰত {0} লিটাৰ',
-          other: 'প্ৰতি কিলোমিটাৰত {0} লিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'লিটাৰ/কিঃ মিঃ',
-          one: '{0} লিঃ/কিঃ মিঃ',
-          other: '{0} লিঃ/কিঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'লিটাৰ/কিঃ মিঃ',
-          one: '{0} লিঃ/কিঃ মিঃ',
-          other: '{0} লিঃ/কিঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি কিলোমিটাৰত লিটাৰ',
+      one: 'প্ৰতি কিলোমিটাৰত {0} লিটাৰ',
+      other: 'প্ৰতি কিলোমিটাৰত {0} লিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'লিটাৰ/কিঃ মিঃ',
+      one: '{0} লিঃ/কিঃ মিঃ',
+      other: '{0} লিঃ/কিঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'লিটাৰ/কিঃ মিঃ',
+      one: '{0} লিঃ/কিঃ মিঃ',
+      other: '{0} লিঃ/কিঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি ১০০ কিলোমিটাৰত লিটাৰ',
-          one: 'প্ৰতি ১০০ কিলোমিটাৰত {0} লিটাৰ',
-          other: 'প্ৰতি ১০০ কিলোমিটাৰত {0} লিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'লিঃ/১০০ কিঃ মিঃ',
-          one: '{0} ল/১০০ ক.ম.',
-          other: '{0} ল/১০০ ক.ম.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ল/১০০ ক.ম.',
-          one: '{0} ল/১০০ ক.ম.',
-          other: '{0} ল/১০০ ক.ম.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি ১০০ কিলোমিটাৰত লিটাৰ',
+      one: 'প্ৰতি ১০০ কিলোমিটাৰত {0} লিটাৰ',
+      other: 'প্ৰতি ১০০ কিলোমিটাৰত {0} লিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'লিঃ/১০০ কিঃ মিঃ',
+      one: '{0} ল/১০০ ক.ম.',
+      other: '{0} ল/১০০ ক.ম.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ল/১০০ ক.ম.',
+      one: '{0} ল/১০০ ক.ম.',
+      other: '{0} ল/১০০ ক.ম.',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি গেলনত মাইল',
-          one: 'প্ৰতি গেলনত {0} মাইল',
-          other: 'প্ৰতি গেলনত {0} মাইল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাইল/গেলন',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাইল/গেলন',
-          one: '{0}mpg',
-          other: '{0}mpg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি গেলনত মাইল',
+      one: 'প্ৰতি গেলনত {0} মাইল',
+      other: 'প্ৰতি গেলনত {0} মাইল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মাইল/গেলন',
+      one: '{0} mpg',
+      other: '{0} mpg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মাইল/গেলন',
+      one: '{0}mpg',
+      other: '{0}mpg',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি ইম্পেৰিয়াল গেলনত মাইল',
-          one: 'প্ৰতি ইম্পেৰিয়াল গেলনত {0} মাইল',
-          other: 'প্ৰতি ইম্পেৰিয়াল গেলনত {0} মাইল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'miles/gal Imp.',
-          one: 'প্ৰতি ইম্পেৰিয়াল গেলনত {0} মাইল',
-          other: '{0} mpg Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpg UK',
-          one: '{0}m/gUK',
-          other: '{0}m/gUK',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি ইম্পেৰিয়াল গেলনত মাইল',
+      one: 'প্ৰতি ইম্পেৰিয়াল গেলনত {0} মাইল',
+      other: 'প্ৰতি ইম্পেৰিয়াল গেলনত {0} মাইল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'miles/gal Imp.',
+      one: 'প্ৰতি ইম্পেৰিয়াল গেলনত {0} মাইল',
+      other: '{0} mpg Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mpg UK',
+      one: '{0}m/gUK',
+      other: '{0}m/gUK',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পেটাবাইট',
-          one: '{0} পেটাবাইট',
-          other: '{0} পেটাবাইট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'PByte',
-          one: '{0} পেটাবাইট',
-          other: '{0} PB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0}PB',
-          other: '{0}PB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পেটাবাইট',
+      one: '{0} পেটাবাইট',
+      other: '{0} পেটাবাইট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'PByte',
+      one: '{0} পেটাবাইট',
+      other: '{0} PB',
+    ),
+    narrow: UnitCountPattern(_locale, 'PB', one: '{0}PB', other: '{0}PB'),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'টেৰাবাইট',
-          one: '{0} টেৰাবাইট',
-          other: '{0} টেৰাবাইট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'টেৰাবাইট',
-          one: '{0} টেঃ বাঃ',
-          other: '{0} টেঃ বাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'টেঃ বাঃ',
-          one: '{0} টেঃ বাঃ',
-          other: '{0} টেঃ বাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'টেৰাবাইট',
+      one: '{0} টেৰাবাইট',
+      other: '{0} টেৰাবাইট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'টেৰাবাইট',
+      one: '{0} টেঃ বাঃ',
+      other: '{0} টেঃ বাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'টেঃ বাঃ',
+      one: '{0} টেঃ বাঃ',
+      other: '{0} টেঃ বাঃ',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'টেৰাবিট',
-          one: '{0} টেৰাবিট',
-          other: '{0} টেৰাবিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'টেৰাবিট',
-          one: '{0} টেঃ বিঃ',
-          other: '{0} টেঃ বিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'টেঃ বিঃ',
-          one: '{0} টেঃ বিঃ',
-          other: '{0} টেঃ বিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'টেৰাবিট',
+      one: '{0} টেৰাবিট',
+      other: '{0} টেৰাবিট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'টেৰাবিট',
+      one: '{0} টেঃ বিঃ',
+      other: '{0} টেঃ বিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'টেঃ বিঃ',
+      one: '{0} টেঃ বিঃ',
+      other: '{0} টেঃ বিঃ',
+    ),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গিগাবাইট',
-          one: '{0} গিগাবাইট',
-          other: '{0} গিগাবাইট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গিগাবাইট',
-          one: '{0} গিঃ বাঃ',
-          other: '{0} গিঃ বাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গিঃ বাঃ',
-          one: '{0} গিঃ বাঃ',
-          other: '{0} গিঃ বাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'গিগাবাইট',
+      one: '{0} গিগাবাইট',
+      other: '{0} গিগাবাইট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'গিগাবাইট',
+      one: '{0} গিঃ বাঃ',
+      other: '{0} গিঃ বাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'গিঃ বাঃ',
+      one: '{0} গিঃ বাঃ',
+      other: '{0} গিঃ বাঃ',
+    ),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গিগাবিট',
-          one: '{0} গিগাবিট',
-          other: '{0} গিগাবিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গিগাবিট',
-          one: '{0} গিঃ বিঃ',
-          other: '{0} গিঃ বিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গিঃ বিঃ',
-          one: '{0} গিঃ বিঃ',
-          other: '{0} গিঃ বিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'গিগাবিট',
+      one: '{0} গিগাবিট',
+      other: '{0} গিগাবিট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'গিগাবিট',
+      one: '{0} গিঃ বিঃ',
+      other: '{0} গিঃ বিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'গিঃ বিঃ',
+      one: '{0} গিঃ বিঃ',
+      other: '{0} গিঃ বিঃ',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেগাবাইট',
-          one: '{0} মেগাবাইট',
-          other: '{0} মেগাবাইট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেগাবাইট',
-          one: '{0} মেঃ বাঃ',
-          other: '{0} মেঃ বাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেঃ বাঃ',
-          one: '{0} মেঃ বাঃ',
-          other: '{0} মেঃ বাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেগাবাইট',
+      one: '{0} মেগাবাইট',
+      other: '{0} মেগাবাইট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেগাবাইট',
+      one: '{0} মেঃ বাঃ',
+      other: '{0} মেঃ বাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেঃ বাঃ',
+      one: '{0} মেঃ বাঃ',
+      other: '{0} মেঃ বাঃ',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেগাবিট',
-          one: '{0} মেগাবিট',
-          other: '{0} মেগাবিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেগাবিট',
-          one: '{0} মেঃ বিঃ',
-          other: '{0} মেঃ বিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেঃ বিঃ',
-          one: '{0} মেঃ বিঃ',
-          other: '{0} মেঃ বিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেগাবিট',
+      one: '{0} মেগাবিট',
+      other: '{0} মেগাবিট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেগাবিট',
+      one: '{0} মেঃ বিঃ',
+      other: '{0} মেঃ বিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেঃ বিঃ',
+      one: '{0} মেঃ বিঃ',
+      other: '{0} মেঃ বিঃ',
+    ),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোবাইট',
-          one: '{0} কিলোবাইট',
-          other: '{0} কিলোবাইট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিলোবাইট',
-          one: '{0} কিঃ বাঃ',
-          other: '{0} কিঃ বাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিঃ বাঃ',
-          one: '{0} কিঃ বাঃ',
-          other: '{0} কিঃ বাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোবাইট',
+      one: '{0} কিলোবাইট',
+      other: '{0} কিলোবাইট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিলোবাইট',
+      one: '{0} কিঃ বাঃ',
+      other: '{0} কিঃ বাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিঃ বাঃ',
+      one: '{0} কিঃ বাঃ',
+      other: '{0} কিঃ বাঃ',
+    ),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোবিট',
-          one: '{0} কিলোবিট',
-          other: '{0} কিলোবিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিলোবিট',
-          one: '{0} কিঃ বিঃ',
-          other: '{0} কিঃ বিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিঃ বিঃ',
-          one: '{0} কিঃ বিঃ',
-          other: '{0} কিঃ বিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোবিট',
+      one: '{0} কিলোবিট',
+      other: '{0} কিলোবিট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিলোবিট',
+      one: '{0} কিঃ বিঃ',
+      other: '{0} কিঃ বিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিঃ বিঃ',
+      one: '{0} কিঃ বিঃ',
+      other: '{0} কিঃ বিঃ',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বাইট',
-          one: '{0} বাইট',
-          other: '{0} বাইট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বাইট',
-          one: '{0} বাইট',
-          other: '{0} বাইট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বাঃ',
-          one: '{0} বাঃ',
-          other: '{0} বাঃ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'বাইট', one: '{0} বাইট', other: '{0} বাইট'),
+    short: UnitCountPattern(
+      _locale,
+      'বাইট',
+      one: '{0} বাইট',
+      other: '{0} বাইট',
+    ),
+    narrow: UnitCountPattern(_locale, 'বাঃ', one: '{0} বাঃ', other: '{0} বাঃ'),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বিট',
-          one: '{0} বিট',
-          other: '{0} বিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বিট',
-          one: '{0} বিট',
-          other: '{0} বিট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বিট',
-          one: '{0} বিট',
-          other: '{0} বিট',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'বিট', one: '{0} বিট', other: '{0} বিট'),
+    short: UnitCountPattern(_locale, 'বিট', one: '{0} বিট', other: '{0} বিট'),
+    narrow: UnitCountPattern(_locale, 'বিট', one: '{0} বিট', other: '{0} বিট'),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'শতাব্দী',
-          one: '{0} শতাব্দী',
-          other: '{0} শতাব্দী',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'শতিকা',
-          one: '{0} শতিকা',
-          other: '{0} শতিকা',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'শতিকা',
-          one: '{0} শতিকা',
-          other: '{0} শতিকা',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'শতাব্দী',
+      one: '{0} শতাব্দী',
+      other: '{0} শতাব্দী',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'শতিকা',
+      one: '{0} শতিকা',
+      other: '{0} শতিকা',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'শতিকা',
+      one: '{0} শতিকা',
+      other: '{0} শতিকা',
+    ),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'দশক',
-          one: '{0} দশক',
-          other: '{0} দশক',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'দশ.',
-          one: '{0} দশ.',
-          other: '{0} দশ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'দশ.',
-          one: '{0} দশ.',
-          other: '{0} দশ.',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'দশক', one: '{0} দশক', other: '{0} দশক'),
+    short: UnitCountPattern(_locale, 'দশ.', one: '{0} দশ.', other: '{0} দশ.'),
+    narrow: UnitCountPattern(_locale, 'দশ.', one: '{0} দশ.', other: '{0} দশ.'),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বছৰ',
-          one: '{0} বছৰ',
-          other: '{0} বছৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বছৰ',
-          one: '{0} বছৰ',
-          other: '{0} বছৰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বছৰ',
-          one: '{0} বছৰ',
-          other: '{0} বছৰ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'বছৰ', one: '{0} বছৰ', other: '{0} বছৰ'),
+    short: UnitCountPattern(_locale, 'বছৰ', one: '{0} বছৰ', other: '{0} বছৰ'),
+    narrow: UnitCountPattern(_locale, 'বছৰ', one: '{0} বছৰ', other: '{0} বছৰ'),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কোৱাৰ্টাৰ্ছ',
-          one: '{0} কোৱাৰ্টাৰ',
-          other: '{0} কোৱাৰ্টাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কোৱাৰ্টাৰ',
-          one: '{0} কোৱাৰ্টাৰ',
-          other: '{0} কোৱাৰ্টাৰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কোৱাৰ্টাৰ',
-          one: '{0}কো',
-          other: '{0}কো',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কোৱাৰ্টাৰ্ছ',
+      one: '{0} কোৱাৰ্টাৰ',
+      other: '{0} কোৱাৰ্টাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কোৱাৰ্টাৰ',
+      one: '{0} কোৱাৰ্টাৰ',
+      other: '{0} কোৱাৰ্টাৰ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কোৱাৰ্টাৰ',
+      one: '{0}কো',
+      other: '{0}কো',
+    ),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মাহ',
-          one: '{0} মাহ',
-          other: '{0} মাহ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাহ',
-          one: '{0} মাহ',
-          other: '{0} মাহ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাহ',
-          one: '{0} মাহ',
-          other: '{0} মাহ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'মাহ', one: '{0} মাহ', other: '{0} মাহ'),
+    short: UnitCountPattern(_locale, 'মাহ', one: '{0} মাহ', other: '{0} মাহ'),
+    narrow: UnitCountPattern(_locale, 'মাহ', one: '{0} মাহ', other: '{0} মাহ'),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'সপ্তাহ',
-          one: '{0} সপ্তাহ',
-          other: '{0} সপ্তাহ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'সপ্তাহ',
-          one: '{0} সপ্তাহ',
-          other: '{0} সপ্তাহ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'সপ্তাহ',
-          one: '{0} সপ্তাহ',
-          other: '{0} সপ্তাহ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'সপ্তাহ',
+      one: '{0} সপ্তাহ',
+      other: '{0} সপ্তাহ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'সপ্তাহ',
+      one: '{0} সপ্তাহ',
+      other: '{0} সপ্তাহ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'সপ্তাহ',
+      one: '{0} সপ্তাহ',
+      other: '{0} সপ্তাহ',
+    ),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'দিন',
-          one: '{0} দিন',
-          other: '{0} দিন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'দিন',
-          one: '{0} দিন',
-          other: '{0} দিন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'দিন',
-          one: '{0} দিন',
-          other: '{0} দিন',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'দিন', one: '{0} দিন', other: '{0} দিন'),
+    short: UnitCountPattern(_locale, 'দিন', one: '{0} দিন', other: '{0} দিন'),
+    narrow: UnitCountPattern(_locale, 'দিন', one: '{0} দিন', other: '{0} দিন'),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘণ্টা',
-          one: '{0} ঘণ্টা',
-          other: '{0} ঘণ্টা',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘণ্টা',
-          one: '{0} ঘণ্টা',
-          other: '{0} ঘণ্টা',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘণ্টা',
-          one: '{0} ঘণ্টা',
-          other: '{0} ঘণ্টা',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘণ্টা',
+      one: '{0} ঘণ্টা',
+      other: '{0} ঘণ্টা',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘণ্টা',
+      one: '{0} ঘণ্টা',
+      other: '{0} ঘণ্টা',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘণ্টা',
+      one: '{0} ঘণ্টা',
+      other: '{0} ঘণ্টা',
+    ),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিনিট',
-          one: '{0} মিনিট',
-          other: '{0} মিনিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিনিট',
-          one: '{0} মিনিট',
-          other: '{0} মিনিট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিনিট',
-          one: '{0} মিনিট',
-          other: '{0} মিনিট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিনিট',
+      one: '{0} মিনিট',
+      other: '{0} মিনিট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিনিট',
+      one: '{0} মিনিট',
+      other: '{0} মিনিট',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিনিট',
+      one: '{0} মিনিট',
+      other: '{0} মিনিট',
+    ),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ছেকেণ্ড',
-          one: '{0} ছেকেণ্ড',
-          other: '{0} ছেকেণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ছেকেণ্ড',
-          one: '{0} ছেকেণ্ড',
-          other: '{0} ছেকেণ্ড',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ছেকেণ্ড',
-          one: '{0} ছেকেণ্ড',
-          other: '{0} ছেকেণ্ড',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ছেকেণ্ড',
+      one: '{0} ছেকেণ্ড',
+      other: '{0} ছেকেণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ছেকেণ্ড',
+      one: '{0} ছেকেণ্ড',
+      other: '{0} ছেকেণ্ড',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ছেকেণ্ড',
+      one: '{0} ছেকেণ্ড',
+      other: '{0} ছেকেণ্ড',
+    ),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিছেকেণ্ড',
-          one: '{0} মিলিছেকেণ্ড',
-          other: '{0} মিলিছেকেণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিলিছেকেণ্ড',
-          one: '{0} মিঃ ছেঃ',
-          other: '{0} মিঃ ছেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিলিছেকেণ্ড',
-          one: '{0} মিঃ ছেঃ',
-          other: '{0} মিঃ ছেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিছেকেণ্ড',
+      one: '{0} মিলিছেকেণ্ড',
+      other: '{0} মিলিছেকেণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিলিছেকেণ্ড',
+      one: '{0} মিঃ ছেঃ',
+      other: '{0} মিঃ ছেঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিলিছেকেণ্ড',
+      one: '{0} মিঃ ছেঃ',
+      other: '{0} মিঃ ছেঃ',
+    ),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মাইক্ৰছেকেণ্ড',
-          one: '{0} মাইক্ৰছেকেণ্ড',
-          other: '{0} মাইক্ৰছেকেণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাইক্ৰছেকেণ্ড',
-          one: '{0} মাঃ ছেঃ',
-          other: '{0} মাঃ ছেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাইক্ৰছেকেণ্ড',
-          one: '{0} মাঃ ছেঃ',
-          other: '{0} মাঃ ছেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মাইক্ৰছেকেণ্ড',
+      one: '{0} মাইক্ৰছেকেণ্ড',
+      other: '{0} মাইক্ৰছেকেণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মাইক্ৰছেকেণ্ড',
+      one: '{0} মাঃ ছেঃ',
+      other: '{0} মাঃ ছেঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মাইক্ৰছেকেণ্ড',
+      one: '{0} মাঃ ছেঃ',
+      other: '{0} মাঃ ছেঃ',
+    ),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'নেনোছেকেণ্ড',
-          one: '{0} নেনোছেকেণ্ড',
-          other: '{0} নেনোছেকেণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'নেনোছেকেণ্ড',
-          one: '{0} নেঃ ছেঃ',
-          other: '{0} নেঃ ছেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'নেনোছেকেণ্ড',
-          one: '{0} নেঃ ছেঃ',
-          other: '{0} নেঃ ছেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'নেনোছেকেণ্ড',
+      one: '{0} নেনোছেকেণ্ড',
+      other: '{0} নেনোছেকেণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'নেনোছেকেণ্ড',
+      one: '{0} নেঃ ছেঃ',
+      other: '{0} নেঃ ছেঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'নেনোছেকেণ্ড',
+      one: '{0} নেঃ ছেঃ',
+      other: '{0} নেঃ ছেঃ',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'এম্পিয়াৰ',
-          one: '{0} এম্পিয়াৰ',
-          other: '{0} এম্পিয়াৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'এম্পিয়াৰ',
-          one: '{0} এঃ',
-          other: '{0} এঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'এম্পিয়াৰ',
-          one: '{0} এঃ',
-          other: '{0} এঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'এম্পিয়াৰ',
+      one: '{0} এম্পিয়াৰ',
+      other: '{0} এম্পিয়াৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'এম্পিয়াৰ',
+      one: '{0} এঃ',
+      other: '{0} এঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'এম্পিয়াৰ',
+      one: '{0} এঃ',
+      other: '{0} এঃ',
+    ),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিএম্পিয়াৰ',
-          one: '{0} মিলিএম্পিয়াৰ',
-          other: '{0} মিলিএম্পিয়াৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিলিএম্পিয়াৰ',
-          one: '{0} মিঃ এঃ',
-          other: '{0} মিঃ এঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিলিএম্পিয়াৰ',
-          one: '{0} মিঃ এঃ',
-          other: '{0} মিঃ এঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিএম্পিয়াৰ',
+      one: '{0} মিলিএম্পিয়াৰ',
+      other: '{0} মিলিএম্পিয়াৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিলিএম্পিয়াৰ',
+      one: '{0} মিঃ এঃ',
+      other: '{0} মিঃ এঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিলিএম্পিয়াৰ',
+      one: '{0} মিঃ এঃ',
+      other: '{0} মিঃ এঃ',
+    ),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ওম',
-          one: '{0} ওম',
-          other: '{0} ওম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ওম',
-          one: '{0} ওম',
-          other: '{0} Ω',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ওম',
-          one: '{0} ওম',
-          other: '{0} Ω',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ওম', one: '{0} ওম', other: '{0} ওম'),
+    short: UnitCountPattern(_locale, 'ওম', one: '{0} ওম', other: '{0} Ω'),
+    narrow: UnitCountPattern(_locale, 'ওম', one: '{0} ওম', other: '{0} Ω'),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ভল্ট',
-          one: '{0} ভল্ট',
-          other: '{0} ভল্ট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ভল্ট',
-          one: '{0} ভঃ',
-          other: '{0} ভঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ভল্ট',
-          one: '{0} ভঃ',
-          other: '{0} ভঃ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ভল্ট', one: '{0} ভল্ট', other: '{0} ভল্ট'),
+    short: UnitCountPattern(_locale, 'ভল্ট', one: '{0} ভঃ', other: '{0} ভঃ'),
+    narrow: UnitCountPattern(_locale, 'ভল্ট', one: '{0} ভঃ', other: '{0} ভঃ'),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোকেলৰি',
-          one: '{0} কিলোকেলৰি',
-          other: '{0} কিলোকেলৰি',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিলোকেলৰি',
-          one: '{0} কিঃ কেলঃ',
-          other: '{0} কিঃ কেলঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিলোকেলৰি',
-          one: '{0} কিঃ কেলঃ',
-          other: '{0} কিঃ কেলঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোকেলৰি',
+      one: '{0} কিলোকেলৰি',
+      other: '{0} কিলোকেলৰি',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিলোকেলৰি',
+      one: '{0} কিঃ কেলঃ',
+      other: '{0} কিঃ কেলঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিলোকেলৰি',
+      one: '{0} কিঃ কেলঃ',
+      other: '{0} কিঃ কেলঃ',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কেলৰি',
-          one: '{0} কেলৰি',
-          other: '{0} কেলৰি',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কেলৰি',
-          one: '{0} কেলৰি',
-          other: '{0} কেলৰি',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কেলৰি',
-          one: '{0} কেলৰি',
-          other: '{0} কেলৰি',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কেলৰি',
+      one: '{0} কেলৰি',
+      other: '{0} কেলৰি',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কেলৰি',
+      one: '{0} কেলৰি',
+      other: '{0} কেলৰি',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কেলৰি',
+      one: '{0} কেলৰি',
+      other: '{0} কেলৰি',
+    ),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কেলৰি',
-          one: '{0} কেলৰি',
-          other: '{0} কেলৰি',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কেলৰি',
-          one: '{0} কেলৰি',
-          other: '{0} কেলৰি',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কেলৰি',
-          one: '{0}কেলৰি',
-          other: '{0}কেলৰি',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কেলৰি',
+      one: '{0} কেলৰি',
+      other: '{0} কেলৰি',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কেলৰি',
+      one: '{0} কেলৰি',
+      other: '{0} কেলৰি',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কেলৰি',
+      one: '{0}কেলৰি',
+      other: '{0}কেলৰি',
+    ),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোজুল',
-          one: '{0} কিলোজুল',
-          other: '{0} কিলোজুল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিলোজুল',
-          one: '{0} কিঃ জুঃ',
-          other: '{0} কিঃ জুঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিলোজুল',
-          one: '{0} কিঃ জুঃ',
-          other: '{0} কিঃ জুঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোজুল',
+      one: '{0} কিলোজুল',
+      other: '{0} কিলোজুল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিলোজুল',
+      one: '{0} কিঃ জুঃ',
+      other: '{0} কিঃ জুঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিলোজুল',
+      one: '{0} কিঃ জুঃ',
+      other: '{0} কিঃ জুঃ',
+    ),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'জুল',
-          one: '{0} জুল',
-          other: '{0} জুল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'জুল',
-          one: '{0} জুল',
-          other: '{0} জুল',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'জুল',
-          one: '{0} জুল',
-          other: '{0} জুল',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'জুল', one: '{0} জুল', other: '{0} জুল'),
+    short: UnitCountPattern(_locale, 'জুল', one: '{0} জুল', other: '{0} জুল'),
+    narrow: UnitCountPattern(_locale, 'জুল', one: '{0} জুল', other: '{0} জুল'),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোৱাট-ঘণ্টা',
-          one: '{0} কিলোৱাট ঘণ্টা',
-          other: '{0} কিলোৱাট ঘণ্টা',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিঃ ৱাঃ-ঘঃ',
-          one: '{0} কিঃ ৱাঃ-ঘঃ',
-          other: '{0} কিঃ ৱাঃ-ঘঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিঃ ৱাঃ-ঘঃ',
-          one: '{0} কিঃ ৱাঃ-ঘঃ',
-          other: '{0} কিঃ ৱাঃ-ঘঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোৱাট-ঘণ্টা',
+      one: '{0} কিলোৱাট ঘণ্টা',
+      other: '{0} কিলোৱাট ঘণ্টা',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিঃ ৱাঃ-ঘঃ',
+      one: '{0} কিঃ ৱাঃ-ঘঃ',
+      other: '{0} কিঃ ৱাঃ-ঘঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিঃ ৱাঃ-ঘঃ',
+      one: '{0} কিঃ ৱাঃ-ঘঃ',
+      other: '{0} কিঃ ৱাঃ-ঘঃ',
+    ),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইলেক্ট্ৰ’নভ’ল্ট',
-          one: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
-          other: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ইলেক্ট্ৰ’নভ’ল্ট',
-          one: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
-          other: '{0} eV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ইলেক্ট্ৰ’নভ’ল্ট',
-          one: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
-          other: '{0} eV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইলেক্ট্ৰ’নভ’ল্ট',
+      one: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
+      other: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ইলেক্ট্ৰ’নভ’ল্ট',
+      one: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
+      other: '{0} eV',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ইলেক্ট্ৰ’নভ’ল্ট',
+      one: '{0} ইলেক্ট্ৰ’নভ’ল্ট',
+      other: '{0} eV',
+    ),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
-          one: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
-          other: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'BTU',
-          one: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
-          other: '{0} Btu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'BTU',
-          one: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
-          other: '{0} Btu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
+      one: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
+      other: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'BTU',
+      one: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
+      other: '{0} Btu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'BTU',
+      one: '{0} ব্ৰিটিশ্ব থাৰ্মেল ইউনিট',
+      other: '{0} Btu',
+    ),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইউ এচ থাৰ্ণ',
-          one: '{0} ইউ এচ থাৰ্ণ',
-          other: '{0} ইউ এচ থাৰ্ণ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ইউ এচ থাৰ্ণ',
-          one: '{0} ইউ এচ থাৰ্ণ',
-          other: '{0} ইউ এচ থাৰ্ণ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ইউ এচ থাৰ্ণ',
-          one: '{0} ইউ এচ থাৰ্ণ',
-          other: '{0} ইউ এচ থাৰ্ণ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইউ এচ থাৰ্ণ',
+      one: '{0} ইউ এচ থাৰ্ণ',
+      other: '{0} ইউ এচ থাৰ্ণ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ইউ এচ থাৰ্ণ',
+      one: '{0} ইউ এচ থাৰ্ণ',
+      other: '{0} ইউ এচ থাৰ্ণ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ইউ এচ থাৰ্ণ',
+      one: '{0} ইউ এচ থাৰ্ণ',
+      other: '{0} ইউ এচ থাৰ্ণ',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পাউণ্ড-বল',
-          one: '{0} পাউণ্ড-বল',
-          other: '{0} পাউণ্ড-বল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পাউণ্ড-বল',
-          one: '{0} পাউণ্ড-বল',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পাউণ্ড-বল',
-          one: '{0} পাউণ্ড-বল',
-          other: '{0} lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পাউণ্ড-বল',
+      one: '{0} পাউণ্ড-বল',
+      other: '{0} পাউণ্ড-বল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পাউণ্ড-বল',
+      one: '{0} পাউণ্ড-বল',
+      other: '{0} lbf',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পাউণ্ড-বল',
+      one: '{0} পাউণ্ড-বল',
+      other: '{0} lbf',
+    ),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'নিউটন',
-          one: '{0} নিউটন',
-          other: '{0} নিউটন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'নিউটন',
-          one: '{0} নিউটন',
-          other: '{0} N',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} নিউটন',
-          other: '{0} N',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'নিউটন',
+      one: '{0} নিউটন',
+      other: '{0} নিউটন',
+    ),
+    short: UnitCountPattern(_locale, 'নিউটন', one: '{0} নিউটন', other: '{0} N'),
+    narrow: UnitCountPattern(_locale, 'N', one: '{0} নিউটন', other: '{0} N'),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি 100 কিলোমিটাৰত কিলোৱাট-ঘণ্টা',
-          one: 'প্ৰতি 100 কিলোমিটাৰত {0} কিলোৱাট-ঘণ্টা',
-          other: 'প্ৰতি 100 কিলোমিটাৰত {0} কিলোৱাট-ঘণ্টা',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: 'প্ৰতি 100 কিলোমিটাৰত {0} কিলোৱাট-ঘণ্টা',
-          other: '{0} kWh/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0}kWh/100km',
-          other: '{0} kWh/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি 100 কিলোমিটাৰত কিলোৱাট-ঘণ্টা',
+      one: 'প্ৰতি 100 কিলোমিটাৰত {0} কিলোৱাট-ঘণ্টা',
+      other: 'প্ৰতি 100 কিলোমিটাৰত {0} কিলোৱাট-ঘণ্টা',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: 'প্ৰতি 100 কিলোমিটাৰত {0} কিলোৱাট-ঘণ্টা',
+      other: '{0} kWh/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0}kWh/100km',
+      other: '{0} kWh/100km',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গিগাহাৰ্টজ',
-          one: '{0} গিগাহাৰ্টজ',
-          other: '{0} গিগাহাৰ্টজ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গিগাহাৰ্টজ',
-          one: '{0} গিগাহাৰ্টজ',
-          other: '{0} গিগাহাৰ্টজ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গিগাহাৰ্টজ',
-          one: '{0} গিগাহাৰ্টজ',
-          other: '{0} গিগাহাৰ্টজ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'গিগাহাৰ্টজ',
+      one: '{0} গিগাহাৰ্টজ',
+      other: '{0} গিগাহাৰ্টজ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'গিগাহাৰ্টজ',
+      one: '{0} গিগাহাৰ্টজ',
+      other: '{0} গিগাহাৰ্টজ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'গিগাহাৰ্টজ',
+      one: '{0} গিগাহাৰ্টজ',
+      other: '{0} গিগাহাৰ্টজ',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেগাহাৰ্টজ',
-          one: '{0} মেগাহাৰ্টজ',
-          other: '{0} মেগাহাৰ্টজ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেগাহাৰ্টজ',
-          one: '{0} মেঃ হাঃ',
-          other: '{0} মেঃ হাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেগাহাৰ্টজ',
-          one: '{0} মেঃ হাঃ',
-          other: '{0} মেঃ হাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেগাহাৰ্টজ',
+      one: '{0} মেগাহাৰ্টজ',
+      other: '{0} মেগাহাৰ্টজ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেগাহাৰ্টজ',
+      one: '{0} মেঃ হাঃ',
+      other: '{0} মেঃ হাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেগাহাৰ্টজ',
+      one: '{0} মেঃ হাঃ',
+      other: '{0} মেঃ হাঃ',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোহাৰ্টজ',
-          one: '{0} কিলোহাৰ্টজ',
-          other: '{0} কিলোহাৰ্টজ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিলোহাৰ্টজ',
-          one: '{0} কিঃ হাঃ',
-          other: '{0} কিঃ হাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিলোহাৰ্টজ',
-          one: '{0} কিঃ হাঃ',
-          other: '{0} কিঃ হাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোহাৰ্টজ',
+      one: '{0} কিলোহাৰ্টজ',
+      other: '{0} কিলোহাৰ্টজ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিলোহাৰ্টজ',
+      one: '{0} কিঃ হাঃ',
+      other: '{0} কিঃ হাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিলোহাৰ্টজ',
+      one: '{0} কিঃ হাঃ',
+      other: '{0} কিঃ হাঃ',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'হাৰ্টজ',
-          one: '{0} হাৰ্টজ',
-          other: '{0} হাৰ্টজ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'হাৰ্টজ',
-          one: '{0} হাৰ্টজ',
-          other: '{0} হাৰ্টজ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'হাৰ্টজ',
-          one: '{0} হাৰ্টজ',
-          other: '{0} হাৰ্টজ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'হাৰ্টজ',
+      one: '{0} হাৰ্টজ',
+      other: '{0} হাৰ্টজ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'হাৰ্টজ',
+      one: '{0} হাৰ্টজ',
+      other: '{0} হাৰ্টজ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'হাৰ্টজ',
+      one: '{0} হাৰ্টজ',
+      other: '{0} হাৰ্টজ',
+    ),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'টাইপোগ্ৰাফিক ইএম',
-          one: '{0} ইএম',
-          other: '{0} ইএম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ইএম',
-          one: '{0} ইএম',
-          other: '{0} ইএম',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ইএম',
-          one: '{0} ইএম',
-          other: '{0} ইএম',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'টাইপোগ্ৰাফিক ইএম',
+      one: '{0} ইএম',
+      other: '{0} ইএম',
+    ),
+    short: UnitCountPattern(_locale, 'ইএম', one: '{0} ইএম', other: '{0} ইএম'),
+    narrow: UnitCountPattern(_locale, 'ইএম', one: '{0} ইএম', other: '{0} ইএম'),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পিক্সেল',
-          one: '{0} পিক্সেল',
-          other: '{0} পিক্সেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পিক্সেল',
-          one: '{0} পি.',
-          other: '{0} পি.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পি.',
-          one: '{0} পি',
-          other: '{0} পি',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পিক্সেল',
+      one: '{0} পিক্সেল',
+      other: '{0} পিক্সেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পিক্সেল',
+      one: '{0} পি.',
+      other: '{0} পি.',
+    ),
+    narrow: UnitCountPattern(_locale, 'পি.', one: '{0} পি', other: '{0} পি'),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেগাপিক্সেল',
-          one: '{0} মেগাপিক্সেল',
-          other: '{0} মেগাপিক্সেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেগাপিক্সেল',
-          one: '{0} মে. পি.',
-          other: '{0} মে. পি.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মে. পি.',
-          one: '{0} মে. পি.',
-          other: '{0} মে. পি.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেগাপিক্সেল',
+      one: '{0} মেগাপিক্সেল',
+      other: '{0} মেগাপিক্সেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেগাপিক্সেল',
+      one: '{0} মে. পি.',
+      other: '{0} মে. পি.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মে. পি.',
+      one: '{0} মে. পি.',
+      other: '{0} মে. পি.',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি চেণ্টিমিটাৰত পিক্সেল',
-          one: '{0} পিপিচিএম',
-          other: 'প্ৰতি চেণ্টিমিটাৰত {0} পিক্সেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পিপিচিএম',
-          one: '{0} পিপিচিএম',
-          other: '{0} পিপিচিএম',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পিপিচিএম',
-          one: '{0}পিপিচিএম',
-          other: '{0}পিপিচিএম',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি চেণ্টিমিটাৰত পিক্সেল',
+      one: '{0} পিপিচিএম',
+      other: 'প্ৰতি চেণ্টিমিটাৰত {0} পিক্সেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পিপিচিএম',
+      one: '{0} পিপিচিএম',
+      other: '{0} পিপিচিএম',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পিপিচিএম',
+      one: '{0}পিপিচিএম',
+      other: '{0}পিপিচিএম',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি ইঞ্চিত পিক্সেল',
-          one: 'প্ৰতি ইঞ্চিত {0} পিক্সেল',
-          other: 'প্ৰতি ইঞ্চিত {0} পিক্সেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পিপিআই',
-          one: '{0} পিপিআই',
-          other: '{0} পিপিআই',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পিপিআই',
-          one: '{0}পিপিআই',
-          other: '{0}পিপিআই',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি ইঞ্চিত পিক্সেল',
+      one: 'প্ৰতি ইঞ্চিত {0} পিক্সেল',
+      other: 'প্ৰতি ইঞ্চিত {0} পিক্সেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পিপিআই',
+      one: '{0} পিপিআই',
+      other: '{0} পিপিআই',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পিপিআই',
+      one: '{0}পিপিআই',
+      other: '{0}পিপিআই',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি চেণ্টিমিটাৰত বিন্দু',
-          one: 'প্ৰতি চেণ্টিমিটাৰত {0} টা বিন্দু',
-          other: 'প্ৰতি চেণ্টিমিটাৰত {0} টা বিন্দু',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডিপিচিএম',
-          one: '{0} ডিপিচিএম',
-          other: '{0} ডিপিচিএম',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ডিপিচিএম',
-          one: '{0}ডিপিচিএম',
-          other: '{0}ডিপিচিএম',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি চেণ্টিমিটাৰত বিন্দু',
+      one: 'প্ৰতি চেণ্টিমিটাৰত {0} টা বিন্দু',
+      other: 'প্ৰতি চেণ্টিমিটাৰত {0} টা বিন্দু',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডিপিচিএম',
+      one: '{0} ডিপিচিএম',
+      other: '{0} ডিপিচিএম',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ডিপিচিএম',
+      one: '{0}ডিপিচিএম',
+      other: '{0}ডিপিচিএম',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি ইঞ্চিত বিন্দু',
-          one: 'প্ৰতি ইঞ্চিত {0} টা বিন্দু',
-          other: 'প্ৰতি ইঞ্চিত {0} টা বিন্দু',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডিপিআই',
-          one: '{0} ডিপিআই',
-          other: '{0} ডিপিআই',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ডিপিআই',
-          one: '{0}ডিপিআই',
-          other: '{0}ডিপিআই',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি ইঞ্চিত বিন্দু',
+      one: 'প্ৰতি ইঞ্চিত {0} টা বিন্দু',
+      other: 'প্ৰতি ইঞ্চিত {0} টা বিন্দু',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডিপিআই',
+      one: '{0} ডিপিআই',
+      other: '{0} ডিপিআই',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ডিপিআই',
+      one: '{0}ডিপিআই',
+      other: '{0}ডিপিআই',
+    ),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বিন্দুবোৰ',
-          one: '{0} টা বিন্দু',
-          other: '{0} টা বিন্দু',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বিন্দুবোৰ',
-          one: '{0} টা বিন্দু',
-          other: '{0} টা বিন্দু',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বিন্দু',
-          one: '{0}টা বিন্দু',
-          other: '{0}টা বিন্দু',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বিন্দুবোৰ',
+      one: '{0} টা বিন্দু',
+      other: '{0} টা বিন্দু',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বিন্দুবোৰ',
+      one: '{0} টা বিন্দু',
+      other: '{0} টা বিন্দু',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বিন্দু',
+      one: '{0}টা বিন্দু',
+      other: '{0}টা বিন্দু',
+    ),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পৃথিৱীৰ ব্যাসাৰ্ধ',
-          one: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
-          other: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
-          other: '{0} R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পৃথিৱীৰ ব্যাসাৰ্ধ',
+      one: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
+      other: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
+      other: '{0} R⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} পৃথিৱীৰ ব্যাসাৰ্ধ',
+      other: '{0} R⊕',
+    ),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোমিটাৰ',
-          one: '{0} কিলোমিটাৰ',
-          other: '{0} কিলোমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিঃ মিঃ',
-          one: '{0} কিঃ মিঃ',
-          other: '{0} কিঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিঃ মিঃ',
-          one: '{0} কিঃ মিঃ',
-          other: '{0} কিঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোমিটাৰ',
+      one: '{0} কিলোমিটাৰ',
+      other: '{0} কিলোমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিঃ মিঃ',
+      one: '{0} কিঃ মিঃ',
+      other: '{0} কিঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিঃ মিঃ',
+      one: '{0} কিঃ মিঃ',
+      other: '{0} কিঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিটাৰ',
-          one: '{0} মিটাৰ',
-          other: '{0} মিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিটাৰ',
-          one: '{0} মিঃ',
-          other: '{0} মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিঃ',
-          one: '{0} মিঃ',
-          other: '{0} মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিটাৰ',
+      one: '{0} মিটাৰ',
+      other: '{0} মিটাৰ',
+    ),
+    short: UnitCountPattern(_locale, 'মিটাৰ', one: '{0} মিঃ', other: '{0} মিঃ'),
+    narrow: UnitCountPattern(_locale, 'মিঃ', one: '{0} মিঃ', other: '{0} মিঃ'),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডেচিমিটাৰ',
-          one: '{0} ডেচিমিটাৰ',
-          other: '{0} ডেচিমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডেঃ মিঃ',
-          one: '{0} ডেঃ মিঃ',
-          other: '{0} ডেঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ডেঃ মিঃ',
-          one: '{0} ডেঃ মিঃ',
-          other: '{0} ডেঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডেচিমিটাৰ',
+      one: '{0} ডেচিমিটাৰ',
+      other: '{0} ডেচিমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডেঃ মিঃ',
+      one: '{0} ডেঃ মিঃ',
+      other: '{0} ডেঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ডেঃ মিঃ',
+      one: '{0} ডেঃ মিঃ',
+      other: '{0} ডেঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ছেণ্টিমিটাৰ',
-          one: '{0} ছেণ্টিমিটাৰ',
-          other: '{0} ছেণ্টিমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ছেঃ মিঃ',
-          one: '{0} ছেঃ মিঃ',
-          other: '{0} ছেঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ছেঃ মিঃ',
-          one: '{0} ছেঃ মিঃ',
-          other: '{0} ছেঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ছেণ্টিমিটাৰ',
+      one: '{0} ছেণ্টিমিটাৰ',
+      other: '{0} ছেণ্টিমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ছেঃ মিঃ',
+      one: '{0} ছেঃ মিঃ',
+      other: '{0} ছেঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ছেঃ মিঃ',
+      one: '{0} ছেঃ মিঃ',
+      other: '{0} ছেঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিমিটাৰ',
-          one: '{0} মিলিমিটাৰ',
-          other: '{0} মিলিমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিঃ মিঃ',
-          one: '{0} মিঃ মিঃ',
-          other: '{0} মিঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিঃ মিঃ',
-          one: '{0} মিঃ মিঃ',
-          other: '{0} মিঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিমিটাৰ',
+      one: '{0} মিলিমিটাৰ',
+      other: '{0} মিলিমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিঃ মিঃ',
+      one: '{0} মিঃ মিঃ',
+      other: '{0} মিঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিঃ মিঃ',
+      one: '{0} মিঃ মিঃ',
+      other: '{0} মিঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মাইক্ৰ’মিটাৰ',
-          one: '{0} মাইক্ৰ’মিটাৰ',
-          other: '{0} মাইক্ৰ’মিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাইক্ৰ’মিটাৰ',
-          one: '{0} মাঃ মিঃ',
-          other: '{0} মাঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাইক্ৰ’মিটাৰ',
-          one: '{0} মাঃ মিঃ',
-          other: '{0} মাঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মাইক্ৰ’মিটাৰ',
+      one: '{0} মাইক্ৰ’মিটাৰ',
+      other: '{0} মাইক্ৰ’মিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মাইক্ৰ’মিটাৰ',
+      one: '{0} মাঃ মিঃ',
+      other: '{0} মাঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মাইক্ৰ’মিটাৰ',
+      one: '{0} মাঃ মিঃ',
+      other: '{0} মাঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'নেনোমিটাৰ',
-          one: '{0} নেনোমিটাৰ',
-          other: '{0} নেনোমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'নেঃ মিঃ',
-          one: '{0} নেঃ মিঃ',
-          other: '{0} নেঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'নেঃ মিঃ',
-          one: '{0} নেঃ মিঃ',
-          other: '{0} নেঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'নেনোমিটাৰ',
+      one: '{0} নেনোমিটাৰ',
+      other: '{0} নেনোমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'নেঃ মিঃ',
+      one: '{0} নেঃ মিঃ',
+      other: '{0} নেঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'নেঃ মিঃ',
+      one: '{0} নেঃ মিঃ',
+      other: '{0} নেঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পিকোমিটাৰ',
-          one: '{0} পিকোমিটাৰ',
-          other: '{0} পিকোমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পিঃ মিঃ',
-          one: '{0} পিঃ মিঃ',
-          other: '{0} পিঃ মিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পিঃ মিঃ',
-          one: '{0} পিঃ মিঃ',
-          other: '{0} পিঃ মিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পিকোমিটাৰ',
+      one: '{0} পিকোমিটাৰ',
+      other: '{0} পিকোমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পিঃ মিঃ',
+      one: '{0} পিঃ মিঃ',
+      other: '{0} পিঃ মিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পিঃ মিঃ',
+      one: '{0} পিঃ মিঃ',
+      other: '{0} পিঃ মিঃ',
+    ),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মাইল',
-          one: '{0} মাইল',
-          other: '{0} মাইল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাইল',
-          one: '{0} মাঃ',
-          other: '{0} মাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাইল',
-          one: '{0} মাঃ',
-          other: '{0} মাঃ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'মাইল', one: '{0} মাইল', other: '{0} মাইল'),
+    short: UnitCountPattern(_locale, 'মাইল', one: '{0} মাঃ', other: '{0} মাঃ'),
+    narrow: UnitCountPattern(_locale, 'মাইল', one: '{0} মাঃ', other: '{0} মাঃ'),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গজ',
-          one: '{0} গজ',
-          other: '{0} গজ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গজ',
-          one: '{0} গজ',
-          other: '{0} গজ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গজ',
-          one: '{0} গজ',
-          other: '{0} গজ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'গজ', one: '{0} গজ', other: '{0} গজ'),
+    short: UnitCountPattern(_locale, 'গজ', one: '{0} গজ', other: '{0} গজ'),
+    narrow: UnitCountPattern(_locale, 'গজ', one: '{0} গজ', other: '{0} গজ'),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ফুট',
-          one: '{0} ফুট',
-          other: '{0} ফুট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ফুট',
-          one: '{0} ফুঃ',
-          other: '{0} ফুঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ফুট',
-          one: '{0} ফুঃ',
-          other: '{0} ফুঃ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ফুট', one: '{0} ফুট', other: '{0} ফুট'),
+    short: UnitCountPattern(_locale, 'ফুট', one: '{0} ফুঃ', other: '{0} ফুঃ'),
+    narrow: UnitCountPattern(_locale, 'ফুট', one: '{0} ফুঃ', other: '{0} ফুঃ'),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইঞ্চি',
-          one: '{0} ইঞ্চি',
-          other: '{0} ইঞ্চি',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ইঞ্চি',
-          one: '{0} ইঃ',
-          other: '{0} ইঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ইঞ্চি',
-          one: '{0} ইঃ',
-          other: '{0} ইঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইঞ্চি',
+      one: '{0} ইঞ্চি',
+      other: '{0} ইঞ্চি',
+    ),
+    short: UnitCountPattern(_locale, 'ইঞ্চি', one: '{0} ইঃ', other: '{0} ইঃ'),
+    narrow: UnitCountPattern(_locale, 'ইঞ্চি', one: '{0} ইঃ', other: '{0} ইঃ'),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পাৰ্ছেক',
-          one: '{0} পাৰ্ছেক',
-          other: '{0} পাৰ্ছেক',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পাৰ্ছেক',
-          one: '{0} পাৰ্ছেক',
-          other: '{0} পাৰ্ছেক',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পাৰ্ছেক',
-          one: '{0} পাৰ্ছেক',
-          other: '{0} পাৰ্ছেক',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পাৰ্ছেক',
+      one: '{0} পাৰ্ছেক',
+      other: '{0} পাৰ্ছেক',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পাৰ্ছেক',
+      one: '{0} পাৰ্ছেক',
+      other: '{0} পাৰ্ছেক',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পাৰ্ছেক',
+      one: '{0} পাৰ্ছেক',
+      other: '{0} পাৰ্ছেক',
+    ),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'আলোকবৰ্ষ',
-          one: '{0} আলোকবৰ্ষ',
-          other: '{0} আলোকবৰ্ষ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'আলোকবৰ্ষ',
-          one: '{0} আঃ বঃ',
-          other: '{0} আঃ বঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'আলোকবৰ্ষ',
-          one: '{0} আঃ বঃ',
-          other: '{0} আঃ বঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'আলোকবৰ্ষ',
+      one: '{0} আলোকবৰ্ষ',
+      other: '{0} আলোকবৰ্ষ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'আলোকবৰ্ষ',
+      one: '{0} আঃ বঃ',
+      other: '{0} আঃ বঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'আলোকবৰ্ষ',
+      one: '{0} আঃ বঃ',
+      other: '{0} আঃ বঃ',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'জ্যোতিৰ্বিজ্ঞান একক',
-          one: '{0} জ্যোতিৰ্বিজ্ঞান একক',
-          other: '{0} জ্যোতিৰ্বিজ্ঞান একক',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'জ্যোঃ এঃ',
-          one: '{0} জ্যোঃ এঃ',
-          other: '{0} জ্যোঃ এঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'জ্যোঃ এঃ',
-          one: '{0} জ্যোঃ এঃ',
-          other: '{0} জ্যোঃ এঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'জ্যোতিৰ্বিজ্ঞান একক',
+      one: '{0} জ্যোতিৰ্বিজ্ঞান একক',
+      other: '{0} জ্যোতিৰ্বিজ্ঞান একক',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'জ্যোঃ এঃ',
+      one: '{0} জ্যোঃ এঃ',
+      other: '{0} জ্যোঃ এঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'জ্যোঃ এঃ',
+      one: '{0} জ্যোঃ এঃ',
+      other: '{0} জ্যোঃ এঃ',
+    ),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ফাৰ্লং',
-          one: '{0} ফাৰ্লং',
-          other: '{0} ফাৰ্লং',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ফাৰ্লং',
-          one: '{0} ফাৰ্লং',
-          other: '{0} ফাৰ্লং',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ফাৰ্লং',
-          one: '{0} ফাৰ্লং',
-          other: '{0} ফাৰ্লং',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ফাৰ্লং',
+      one: '{0} ফাৰ্লং',
+      other: '{0} ফাৰ্লং',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ফাৰ্লং',
+      one: '{0} ফাৰ্লং',
+      other: '{0} ফাৰ্লং',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ফাৰ্লং',
+      one: '{0} ফাৰ্লং',
+      other: '{0} ফাৰ্লং',
+    ),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ফাথম',
-          one: '{0} ফাথম',
-          other: '{0} ফাথম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ফাথম',
-          one: '{0} ফাথম',
-          other: '{0} ফাথম',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ফাথম',
-          one: '{0} ফাথম',
-          other: '{0} ফাথম',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ফাথম', one: '{0} ফাথম', other: '{0} ফাথম'),
+    short: UnitCountPattern(
+      _locale,
+      'ফাথম',
+      one: '{0} ফাথম',
+      other: '{0} ফাথম',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ফাথম',
+      one: '{0} ফাথম',
+      other: '{0} ফাথম',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ন’টিকেল মাইল',
-          one: '{0} ন’টিকেল মাইল',
-          other: '{0} ন’টিকেল মাইল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ন’টিঃ মাঃ',
-          one: '{0} ন’টিঃ মাঃ',
-          other: '{0} ন’টিঃ মাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ন’টিঃ মাঃ',
-          one: '{0} ন’টিঃ মাঃ',
-          other: '{0} ন’টিঃ মাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ন’টিকেল মাইল',
+      one: '{0} ন’টিকেল মাইল',
+      other: '{0} ন’টিকেল মাইল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ন’টিঃ মাঃ',
+      one: '{0} ন’টিঃ মাঃ',
+      other: '{0} ন’টিঃ মাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ন’টিঃ মাঃ',
+      one: '{0} ন’টিঃ মাঃ',
+      other: '{0} ন’টিঃ মাঃ',
+    ),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মাইল-স্কেণ্ডিনেভিয়ান',
-          one: '{0} মাইল-স্কেণ্ডিনেভিয়ান',
-          other: '{0} মাইল-স্কেণ্ডিনেভিয়ান',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাঃ-স্কেঃ',
-          one: '{0} মাঃ-স্কেঃ',
-          other: '{0} মাঃ-স্কেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাঃ-স্কেঃ',
-          one: '{0} মাঃ-স্কেঃ',
-          other: '{0} মাঃ-স্কেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মাইল-স্কেণ্ডিনেভিয়ান',
+      one: '{0} মাইল-স্কেণ্ডিনেভিয়ান',
+      other: '{0} মাইল-স্কেণ্ডিনেভিয়ান',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মাঃ-স্কেঃ',
+      one: '{0} মাঃ-স্কেঃ',
+      other: '{0} মাঃ-স্কেঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মাঃ-স্কেঃ',
+      one: '{0} মাঃ-স্কেঃ',
+      other: '{0} মাঃ-স্কেঃ',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পইণ্ট',
-          one: '{0} পইণ্ট',
-          other: '{0} পইণ্ট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পইণ্ট',
-          one: '{0} পইণ্ট',
-          other: '{0} পইণ্ট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পইণ্ট',
-          one: '{0} পইণ্ট',
-          other: '{0} পইণ্ট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পইণ্ট',
+      one: '{0} পইণ্ট',
+      other: '{0} পইণ্ট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পইণ্ট',
+      one: '{0} পইণ্ট',
+      other: '{0} পইণ্ট',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পইণ্ট',
+      one: '{0} পইণ্ট',
+      other: '{0} পইণ্ট',
+    ),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'সৌৰ ৰেডিয়াছ',
-          one: '{0} সৌৰ ৰেডিয়াছ',
-          other: '{0} সৌৰ ৰেডিয়াছ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'সৌৰ ৰেডিয়াছ',
-          one: '{0} সৌৰ ৰেডিয়াছ',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'সৌৰ ৰেডিয়াছ',
-          one: '{0} সৌৰ ৰেডিয়াছ',
-          other: '{0} R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'সৌৰ ৰেডিয়াছ',
+      one: '{0} সৌৰ ৰেডিয়াছ',
+      other: '{0} সৌৰ ৰেডিয়াছ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'সৌৰ ৰেডিয়াছ',
+      one: '{0} সৌৰ ৰেডিয়াছ',
+      other: '{0} R☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'সৌৰ ৰেডিয়াছ',
+      one: '{0} সৌৰ ৰেডিয়াছ',
+      other: '{0} R☉',
+    ),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'লাক্স',
-          one: '{0} লাক্স',
-          other: '{0} লাক্স',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'লাক্স',
-          one: '{0} লাক্স',
-          other: '{0} লাক্স',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'লাক্স',
-          one: '{0} লাক্স',
-          other: '{0} লাক্স',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'লাক্স',
+      one: '{0} লাক্স',
+      other: '{0} লাক্স',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'লাক্স',
+      one: '{0} লাক্স',
+      other: '{0} লাক্স',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'লাক্স',
+      one: '{0} লাক্স',
+      other: '{0} লাক্স',
+    ),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কেণ্ডেলা',
-          one: '{0} কেণ্ডেলা',
-          other: '{0} কেণ্ডেলা',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কেঃ',
-          one: '{0} কেঃ',
-          other: '{0} কেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কেঃ',
-          one: '{0} কেঃ',
-          other: '{0} কেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কেণ্ডেলা',
+      one: '{0} কেণ্ডেলা',
+      other: '{0} কেণ্ডেলা',
+    ),
+    short: UnitCountPattern(_locale, 'কেঃ', one: '{0} কেঃ', other: '{0} কেঃ'),
+    narrow: UnitCountPattern(_locale, 'কেঃ', one: '{0} কেঃ', other: '{0} কেঃ'),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'লুমেন',
-          one: '{0} লুমেন',
-          other: '{0} লুমেন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} লুমেন',
-          other: '{0} lm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} লুমেন',
-          other: '{0} lm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'লুমেন',
+      one: '{0} লুমেন',
+      other: '{0} লুমেন',
+    ),
+    short: UnitCountPattern(_locale, 'lm', one: '{0} লুমেন', other: '{0} lm'),
+    narrow: UnitCountPattern(_locale, 'lm', one: '{0} লুমেন', other: '{0} lm'),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ছ’লাৰ লুমিন’ছিটী',
-          one: '{0} ছ’লাৰ লুমিন’ছিটী',
-          other: '{0} ছ’লাৰ লুমিন’ছিটী',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ছ’লাৰ লুমিন’ছিটী',
-          one: '{0} ছ’লাৰ লুমিন’ছিটী',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} ছ’লাৰ লুমিন’ছিটী',
-          other: '{0} L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ছ’লাৰ লুমিন’ছিটী',
+      one: '{0} ছ’লাৰ লুমিন’ছিটী',
+      other: '{0} ছ’লাৰ লুমিন’ছিটী',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ছ’লাৰ লুমিন’ছিটী',
+      one: '{0} ছ’লাৰ লুমিন’ছিটী',
+      other: '{0} L☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L☉',
+      one: '{0} ছ’লাৰ লুমিন’ছিটী',
+      other: '{0} L☉',
+    ),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেট্রিক টন',
-          one: '{0} মেট্রিক টন',
-          other: '{0} মেট্ৰিক টন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ট',
-          one: '{0} ট',
-          other: '{0} ট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ট',
-          one: '{0} ট',
-          other: '{0} ট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেট্রিক টন',
+      one: '{0} মেট্রিক টন',
+      other: '{0} মেট্ৰিক টন',
+    ),
+    short: UnitCountPattern(_locale, 'ট', one: '{0} ট', other: '{0} ট'),
+    narrow: UnitCountPattern(_locale, 'ট', one: '{0} ট', other: '{0} ট'),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোগ্রাম',
-          one: '{0} কিলোগ্ৰাম',
-          other: '{0} কিলোগ্ৰাম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিঃ গ্ৰাঃ',
-          one: '{0} কিঃ গ্ৰাঃ',
-          other: '{0} কিঃ গ্ৰাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিঃ গ্ৰাঃ',
-          one: '{0} কিঃ গ্ৰাঃ',
-          other: '{0} কিঃ গ্ৰাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোগ্রাম',
+      one: '{0} কিলোগ্ৰাম',
+      other: '{0} কিলোগ্ৰাম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিঃ গ্ৰাঃ',
+      one: '{0} কিঃ গ্ৰাঃ',
+      other: '{0} কিঃ গ্ৰাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিঃ গ্ৰাঃ',
+      one: '{0} কিঃ গ্ৰাঃ',
+      other: '{0} কিঃ গ্ৰাঃ',
+    ),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গ্ৰাম',
-          one: '{0} গ্ৰাম',
-          other: '{0} গ্ৰাম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গ্ৰাম',
-          one: '{0} গ্ৰাঃ',
-          other: '{0} গ্ৰাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গ্ৰাম',
-          one: '{0} গ্ৰাঃ',
-          other: '{0} গ্ৰাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'গ্ৰাম',
+      one: '{0} গ্ৰাম',
+      other: '{0} গ্ৰাম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'গ্ৰাম',
+      one: '{0} গ্ৰাঃ',
+      other: '{0} গ্ৰাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'গ্ৰাম',
+      one: '{0} গ্ৰাঃ',
+      other: '{0} গ্ৰাঃ',
+    ),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিগ্ৰাম',
-          one: '{0} মিলিগ্ৰাম',
-          other: '{0} মিলিগ্ৰাম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিঃ গ্ৰাঃ',
-          one: '{0} মিঃ গ্ৰাঃ',
-          other: '{0} মিঃ গ্ৰাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিঃ গ্ৰাঃ',
-          one: '{0} মিঃ গ্ৰাঃ',
-          other: '{0} মিঃ গ্ৰাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিগ্ৰাম',
+      one: '{0} মিলিগ্ৰাম',
+      other: '{0} মিলিগ্ৰাম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিঃ গ্ৰাঃ',
+      one: '{0} মিঃ গ্ৰাঃ',
+      other: '{0} মিঃ গ্ৰাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিঃ গ্ৰাঃ',
+      one: '{0} মিঃ গ্ৰাঃ',
+      other: '{0} মিঃ গ্ৰাঃ',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মাইক্ৰোগ্ৰাম',
-          one: '{0} মাইক্ৰোগ্ৰাম',
-          other: '{0} মাইক্ৰোগ্ৰাম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাঃ গ্ৰাঃ',
-          one: '{0} মাঃ গ্ৰাঃ',
-          other: '{0} মাঃ গ্ৰাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাঃ গ্ৰাঃ',
-          one: '{0} মাঃ গ্ৰাঃ',
-          other: '{0} মাঃ গ্ৰাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মাইক্ৰোগ্ৰাম',
+      one: '{0} মাইক্ৰোগ্ৰাম',
+      other: '{0} মাইক্ৰোগ্ৰাম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মাঃ গ্ৰাঃ',
+      one: '{0} মাঃ গ্ৰাঃ',
+      other: '{0} মাঃ গ্ৰাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মাঃ গ্ৰাঃ',
+      one: '{0} মাঃ গ্ৰাঃ',
+      other: '{0} মাঃ গ্ৰাঃ',
+    ),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'টন',
-          one: '{0} টন',
-          other: '{0} টন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'টন',
-          one: '{0} টন',
-          other: '{0} টন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'টন',
-          one: '{0} টন',
-          other: '{0} টন',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'টন', one: '{0} টন', other: '{0} টন'),
+    short: UnitCountPattern(_locale, 'টন', one: '{0} টন', other: '{0} টন'),
+    narrow: UnitCountPattern(_locale, 'টন', one: '{0} টন', other: '{0} টন'),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ষ্ট’ন',
-          one: "{0} ষ্ট'ন",
-          other: "{0} ষ্ট'ন",
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ষ্ট’ন',
-          one: "{0} ষ্ট'ন",
-          other: "{0} ষ্ট'ন",
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ষ্ট’ন',
-          one: "{0} ষ্ট'ন",
-          other: "{0} ষ্ট'ন",
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ষ্ট’ন',
+      one: "{0} ষ্ট'ন",
+      other: "{0} ষ্ট'ন",
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ষ্ট’ন',
+      one: "{0} ষ্ট'ন",
+      other: "{0} ষ্ট'ন",
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ষ্ট’ন',
+      one: "{0} ষ্ট'ন",
+      other: "{0} ষ্ট'ন",
+    ),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পাউণ্ড',
-          one: '{0} পাউণ্ড',
-          other: '{0} পাউণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পাউণ্ড',
-          one: '{0} পাউণ্ড',
-          other: '{0} পাউণ্ড',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পাউণ্ড',
-          one: '{0} পাউণ্ড',
-          other: '{0} পাউণ্ড',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পাউণ্ড',
+      one: '{0} পাউণ্ড',
+      other: '{0} পাউণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পাউণ্ড',
+      one: '{0} পাউণ্ড',
+      other: '{0} পাউণ্ড',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পাউণ্ড',
+      one: '{0} পাউণ্ড',
+      other: '{0} পাউণ্ড',
+    ),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'আউন্স',
-          one: '{0} আউন্স',
-          other: '{0} আউন্স',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'আউন্স',
-          one: '{0} আউন্স',
-          other: '{0} আউন্স',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'আউন্স',
-          one: '{0} আউন্স',
-          other: '{0} আউন্স',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'আউন্স',
+      one: '{0} আউন্স',
+      other: '{0} আউন্স',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'আউন্স',
+      one: '{0} আউন্স',
+      other: '{0} আউন্স',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'আউন্স',
+      one: '{0} আউন্স',
+      other: '{0} আউন্স',
+    ),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ট্ৰয় আউন্স',
-          one: '{0} ট্ৰয় আউন্স',
-          other: '{0} ট্ৰয় আউন্স',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ট্ৰয় আউন্স',
-          one: '{0} ট্ৰঃ আঃ',
-          other: '{0} ট্ৰঃ আঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ট্ৰয় আউন্স',
-          one: '{0} ট্ৰঃ আঃ',
-          other: '{0} ট্ৰঃ আঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ট্ৰয় আউন্স',
+      one: '{0} ট্ৰয় আউন্স',
+      other: '{0} ট্ৰয় আউন্স',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ট্ৰয় আউন্স',
+      one: '{0} ট্ৰঃ আঃ',
+      other: '{0} ট্ৰঃ আঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ট্ৰয় আউন্স',
+      one: '{0} ট্ৰঃ আঃ',
+      other: '{0} ট্ৰঃ আঃ',
+    ),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কেৰেট',
-          one: '{0} কেৰেট',
-          other: '{0} কেৰেট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কেৰেট',
-          one: '{0} কেৰেট',
-          other: '{0} কেৰেট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কেৰেট',
-          one: '{0} কেৰেট',
-          other: '{0} কেৰেট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কেৰেট',
+      one: '{0} কেৰেট',
+      other: '{0} কেৰেট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কেৰেট',
+      one: '{0} কেৰেট',
+      other: '{0} কেৰেট',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কেৰেট',
+      one: '{0} কেৰেট',
+      other: '{0} কেৰেট',
+    ),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডলট’ন',
-          one: '{0} ডলট’ন',
-          other: '{0} ডলট’ন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডলট’ন',
-          one: '{0} ডলট’ন',
-          other: '{0} ডলট’ন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ডলট’ন',
-          one: '{0} ডলট’ন',
-          other: '{0} ডলট’ন',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডলট’ন',
+      one: '{0} ডলট’ন',
+      other: '{0} ডলট’ন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডলট’ন',
+      one: '{0} ডলট’ন',
+      other: '{0} ডলট’ন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ডলট’ন',
+      one: '{0} ডলট’ন',
+      other: '{0} ডলট’ন',
+    ),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'আৰ্থ মাছ',
-          one: '{0} আৰ্থ মাছ',
-          other: '{0} আৰ্থ মাছ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'আৰ্থ মাছ',
-          one: '{0} আৰ্থ মাছ',
-          other: '{0} M⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'আৰ্থ মাছ',
-          one: '{0} আৰ্থ মাছ',
-          other: '{0} M⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'আৰ্থ মাছ',
+      one: '{0} আৰ্থ মাছ',
+      other: '{0} আৰ্থ মাছ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'আৰ্থ মাছ',
+      one: '{0} আৰ্থ মাছ',
+      other: '{0} M⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'আৰ্থ মাছ',
+      one: '{0} আৰ্থ মাছ',
+      other: '{0} M⊕',
+    ),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'সৌৰ ভৰ',
-          one: '{0} সৌৰ ভৰ',
-          other: '{0} সৌৰ ভৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'সৌৰ ভৰ',
-          one: '{0} সৌৰ ভৰ',
-          other: '{0} M☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'সৌৰ ভৰ',
-          one: '{0} সৌৰ ভৰ',
-          other: '{0} M☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'সৌৰ ভৰ',
+      one: '{0} সৌৰ ভৰ',
+      other: '{0} সৌৰ ভৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'সৌৰ ভৰ',
+      one: '{0} সৌৰ ভৰ',
+      other: '{0} M☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'সৌৰ ভৰ',
+      one: '{0} সৌৰ ভৰ',
+      other: '{0} M☉',
+    ),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গ্ৰেইন',
-          one: '{0} গ্ৰেইন',
-          other: '{0} গ্ৰেইন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গ্ৰেইন',
-          one: '{0} গ্ৰেইন',
-          other: '{0} গ্ৰেইন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গ্ৰেইন',
-          one: '{0} গ্ৰেইন',
-          other: '{0} গ্ৰেইন',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'গ্ৰেইন',
+      one: '{0} গ্ৰেইন',
+      other: '{0} গ্ৰেইন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'গ্ৰেইন',
+      one: '{0} গ্ৰেইন',
+      other: '{0} গ্ৰেইন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'গ্ৰেইন',
+      one: '{0} গ্ৰেইন',
+      other: '{0} গ্ৰেইন',
+    ),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গিগাৱাট',
-          one: '{0} গিগাৱাট',
-          other: '{0} গিগাৱাট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গিঃ ৱাঃ',
-          one: '{0} গিঃ ৱাঃ',
-          other: '{0} গিঃ ৱাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গিঃ ৱাঃ',
-          one: '{0} গিঃ ৱাঃ',
-          other: '{0} গিঃ ৱাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'গিগাৱাট',
+      one: '{0} গিগাৱাট',
+      other: '{0} গিগাৱাট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'গিঃ ৱাঃ',
+      one: '{0} গিঃ ৱাঃ',
+      other: '{0} গিঃ ৱাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'গিঃ ৱাঃ',
+      one: '{0} গিঃ ৱাঃ',
+      other: '{0} গিঃ ৱাঃ',
+    ),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেগাৱাট',
-          one: '{0} মেগাৱাট',
-          other: '{0} মেগাৱাট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেঃ ৱাঃ',
-          one: '{0} মেঃ ৱাঃ',
-          other: '{0} মেঃ ৱাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেঃ ৱাঃ',
-          one: '{0} মেঃ ৱাঃ',
-          other: '{0} মেঃ ৱাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেগাৱাট',
+      one: '{0} মেগাৱাট',
+      other: '{0} মেগাৱাট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেঃ ৱাঃ',
+      one: '{0} মেঃ ৱাঃ',
+      other: '{0} মেঃ ৱাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেঃ ৱাঃ',
+      one: '{0} মেঃ ৱাঃ',
+      other: '{0} মেঃ ৱাঃ',
+    ),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিলোৱাট',
-          one: '{0} কিলোৱাট',
-          other: '{0} কিলোৱাট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিঃ ৱাঃ',
-          one: '{0} কিঃ ৱাঃ',
-          other: '{0} কিঃ ৱাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিঃ ৱাঃ',
-          one: '{0} কিঃ ৱাঃ',
-          other: '{0} কিঃ ৱাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিলোৱাট',
+      one: '{0} কিলোৱাট',
+      other: '{0} কিলোৱাট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিঃ ৱাঃ',
+      one: '{0} কিঃ ৱাঃ',
+      other: '{0} কিঃ ৱাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিঃ ৱাঃ',
+      one: '{0} কিঃ ৱাঃ',
+      other: '{0} কিঃ ৱাঃ',
+    ),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ৱাট',
-          one: '{0} ৱাট',
-          other: '{0} ৱাট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ৱাট',
-          one: '{0} ৱাট',
-          other: '{0} ৱাট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ৱাট',
-          one: '{0} ৱাট',
-          other: '{0} ৱাট',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ৱাট', one: '{0} ৱাট', other: '{0} ৱাট'),
+    short: UnitCountPattern(_locale, 'ৱাট', one: '{0} ৱাট', other: '{0} ৱাট'),
+    narrow: UnitCountPattern(_locale, 'ৱাট', one: '{0} ৱাট', other: '{0} ৱাট'),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিৱাট',
-          one: '{0} মিলিৱাট',
-          other: '{0} মিলিৱাট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিঃ ৱাঃ',
-          one: '{0} মিঃ ৱাঃ',
-          other: '{0} মিঃ ৱাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিঃ ৱাঃ',
-          one: '{0} মিঃ ৱাঃ',
-          other: '{0} মিঃ ৱাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিৱাট',
+      one: '{0} মিলিৱাট',
+      other: '{0} মিলিৱাট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিঃ ৱাঃ',
+      one: '{0} মিঃ ৱাঃ',
+      other: '{0} মিঃ ৱাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিঃ ৱাঃ',
+      one: '{0} মিঃ ৱাঃ',
+      other: '{0} মিঃ ৱাঃ',
+    ),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'অশ্বক্ষমতা',
-          one: '{0} অশ্বক্ষমতা',
-          other: '{0} অশ্বক্ষমতা',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'অশ্বক্ষমতা',
-          one: '{0} অশ্বক্ষমতা',
-          other: '{0} অশ্বক্ষমতা',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'অশ্বক্ষমতা',
-          one: '{0} অশ্বক্ষমতা',
-          other: '{0} অশ্বক্ষমতা',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'অশ্বক্ষমতা',
+      one: '{0} অশ্বক্ষমতা',
+      other: '{0} অশ্বক্ষমতা',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'অশ্বক্ষমতা',
+      one: '{0} অশ্বক্ষমতা',
+      other: '{0} অশ্বক্ষমতা',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'অশ্বক্ষমতা',
+      one: '{0} অশ্বক্ষমতা',
+      other: '{0} অশ্বক্ষমতা',
+    ),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিমিটাৰ মাৰ্কিউৰী',
-          one: '{0} মিলিমিটাৰ মাৰ্কিউৰী',
-          other: '{0} মিলিমিটাৰ মাৰ্কিউৰী',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিমিটাৰ মাৰ্কিউৰী',
+      one: '{0} মিলিমিটাৰ মাৰ্কিউৰী',
+      other: '{0} মিলিমিটাৰ মাৰ্কিউৰী',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
-          one: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
-          other: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
-          other: '{0} psi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
-          other: '{0} psi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
+      one: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
+      other: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
+      other: '{0} psi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} প্ৰতি বৰ্গ ইঞ্চিত পাউণ্ড',
+      other: '{0} psi',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইঞ্চি মাৰ্কিউৰী',
-          one: '{0} ইঞ্চি মাৰ্কিউৰী',
-          other: '{0} ইঞ্চি মাৰ্কিউৰী',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} ইঞ্চি মাৰ্কিউৰী',
-          other: '{0} inHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '″ Hg',
-          one: '{0}″ Hg',
-          other: '{0}″ Hg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইঞ্চি মাৰ্কিউৰী',
+      one: '{0} ইঞ্চি মাৰ্কিউৰী',
+      other: '{0} ইঞ্চি মাৰ্কিউৰী',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} ইঞ্চি মাৰ্কিউৰী',
+      other: '{0} inHg',
+    ),
+    narrow: UnitCountPattern(_locale, '″ Hg', one: '{0}″ Hg', other: '{0}″ Hg'),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বাৰ',
-          one: '{0} বাৰ',
-          other: '{0} বাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বাৰ',
-          one: '{0} বাৰ',
-          other: '{0} বাৰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বাৰ',
-          one: '{0} বাৰ',
-          other: '{0} বাৰ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'বাৰ', one: '{0} বাৰ', other: '{0} বাৰ'),
+    short: UnitCountPattern(_locale, 'বাৰ', one: '{0} বাৰ', other: '{0} বাৰ'),
+    narrow: UnitCountPattern(_locale, 'বাৰ', one: '{0} বাৰ', other: '{0} বাৰ'),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিবাৰ',
-          one: '{0} মিলিবাৰ',
-          other: '{0} মিলিবাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} মিলিবাৰ',
-          other: '{0} mbar',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0}mb',
-          other: '{0}mb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিবাৰ',
+      one: '{0} মিলিবাৰ',
+      other: '{0} মিলিবাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} মিলিবাৰ',
+      other: '{0} mbar',
+    ),
+    narrow: UnitCountPattern(_locale, 'mbar', one: '{0}mb', other: '{0}mb'),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বতৰ',
-          one: '{0} বতৰ',
-          other: '{0} atm',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} বতৰ',
-          other: '{0} atm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} বতৰ',
-          other: '{0} atm',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'বতৰ', one: '{0} বতৰ', other: '{0} atm'),
+    short: UnitCountPattern(_locale, 'atm', one: '{0} বতৰ', other: '{0} atm'),
+    narrow: UnitCountPattern(_locale, 'atm', one: '{0} বতৰ', other: '{0} atm'),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পাস্কেল',
-          one: '{0} পাস্কেল',
-          other: '{0} পাস্কেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} পাস্কেল',
-          other: '{0} Pa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} পাস্কেল',
-          other: '{0} Pa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পাস্কেল',
+      one: '{0} পাস্কেল',
+      other: '{0} পাস্কেল',
+    ),
+    short: UnitCountPattern(_locale, 'Pa', one: '{0} পাস্কেল', other: '{0} Pa'),
+    narrow: UnitCountPattern(
+      _locale,
+      'Pa',
+      one: '{0} পাস্কেল',
+      other: '{0} Pa',
+    ),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'হেক্টোপাস্কেল',
-          one: '{0} হেক্টোপাস্কেল',
-          other: '{0} হেক্টোপাস্কেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} হেক্টোপাস্কেল',
-          other: '{0} hPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} হেক্টোপাস্কেল',
-          other: '{0} hPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'হেক্টোপাস্কেল',
+      one: '{0} হেক্টোপাস্কেল',
+      other: '{0} হেক্টোপাস্কেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} হেক্টোপাস্কেল',
+      other: '{0} hPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} হেক্টোপাস্কেল',
+      other: '{0} hPa',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কিল’পাস্কেল',
-          one: '{0} কিল’পাস্কেল',
-          other: '{0} কি. পা.',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কি. পা.',
-          one: '{0} কি. পা.',
-          other: '{0} কি. পা.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কি. পা.',
-          one: '{0} কি. পা.',
-          other: '{0} কি. পা.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কিল’পাস্কেল',
+      one: '{0} কিল’পাস্কেল',
+      other: '{0} কি. পা.',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কি. পা.',
+      one: '{0} কি. পা.',
+      other: '{0} কি. পা.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কি. পা.',
+      one: '{0} কি. পা.',
+      other: '{0} কি. পা.',
+    ),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেগাপাস্কেল',
-          one: '{0} মেগাপাস্কেল',
-          other: '{0} মেগাপাস্কেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেগাপাস্কেল',
-          one: '{0} মে. পা.',
-          other: '{0} মে. পা.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেগাপাস্কেল',
-          one: '{0} মে. পা.',
-          other: '{0} মে. পা.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেগাপাস্কেল',
+      one: '{0} মেগাপাস্কেল',
+      other: '{0} মেগাপাস্কেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেগাপাস্কেল',
+      one: '{0} মে. পা.',
+      other: '{0} মে. পা.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেগাপাস্কেল',
+      one: '{0} মে. পা.',
+      other: '{0} মে. পা.',
+    ),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘণ্টা প্ৰতি কিলোমিটাৰ',
-          one: '{0} ঘণ্টা প্ৰতি কিলোমিটাৰ',
-          other: '{0} ঘণ্টা প্ৰতি কিলোমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কিঃ মিঃ/ঘঃ',
-          one: '{0} কিঃ মিঃ/ঘঃ',
-          other: '{0} কিঃ মিঃ/ঘঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কিঃ মিঃ/ঘঃ',
-          one: '{0} km/h',
-          other: '{0} km/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘণ্টা প্ৰতি কিলোমিটাৰ',
+      one: '{0} ঘণ্টা প্ৰতি কিলোমিটাৰ',
+      other: '{0} ঘণ্টা প্ৰতি কিলোমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কিঃ মিঃ/ঘঃ',
+      one: '{0} কিঃ মিঃ/ঘঃ',
+      other: '{0} কিঃ মিঃ/ঘঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কিঃ মিঃ/ঘঃ',
+      one: '{0} km/h',
+      other: '{0} km/h',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিটাৰ প্ৰতি ছেকেণ্ড',
-          one: '{0} মিটাৰ প্ৰতি ছেকেণ্ড',
-          other: '{0} মিটাৰ প্ৰতি ছেকেণ্ড',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিটাৰ/ছেকেণ্ড',
-          one: '{0} মিঃ/ছেঃ',
-          other: '{0} মিঃ/ছেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিটাৰ/ছেকেণ্ড',
-          one: '{0} মিঃ/ছেঃ',
-          other: '{0} মিঃ/ছেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিটাৰ প্ৰতি ছেকেণ্ড',
+      one: '{0} মিটাৰ প্ৰতি ছেকেণ্ড',
+      other: '{0} মিটাৰ প্ৰতি ছেকেণ্ড',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিটাৰ/ছেকেণ্ড',
+      one: '{0} মিঃ/ছেঃ',
+      other: '{0} মিঃ/ছেঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিটাৰ/ছেকেণ্ড',
+      one: '{0} মিঃ/ছেঃ',
+      other: '{0} মিঃ/ছেঃ',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মাইল প্ৰতি ঘণ্টা',
-          one: '{0} মাইল প্ৰতি ঘণ্টা',
-          other: '{0} মাইল প্ৰতি ঘণ্টা',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মাইল/ঘণ্টা',
-          one: '{0} মাঃ/ঘঃ',
-          other: '{0} মাঃ/ঘঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মাইল/ঘণ্টা',
-          one: '{0} মাঃ/ঘঃ',
-          other: '{0} মাঃ/ঘঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মাইল প্ৰতি ঘণ্টা',
+      one: '{0} মাইল প্ৰতি ঘণ্টা',
+      other: '{0} মাইল প্ৰতি ঘণ্টা',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মাইল/ঘণ্টা',
+      one: '{0} মাঃ/ঘঃ',
+      other: '{0} মাঃ/ঘঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মাইল/ঘণ্টা',
+      one: '{0} মাঃ/ঘঃ',
+      other: '{0} মাঃ/ঘঃ',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'নট',
-          one: '{0} নট',
-          other: '{0} নট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'নট',
-          one: '{0} নট',
-          other: '{0} নট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'নট',
-          one: '{0} নট',
-          other: '{0} নট',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'নট', one: '{0} নট', other: '{0} নট'),
+    short: UnitCountPattern(_locale, 'নট', one: '{0} নট', other: '{0} নট'),
+    narrow: UnitCountPattern(_locale, 'নট', one: '{0} নট', other: '{0} নট'),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বিউফৰ্ট',
-          one: 'বিউফৰ্ট {0}',
-          other: 'বিউফৰ্ট {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বিএফটি',
-          one: 'বি {0}',
-          other: 'বি {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বিএফটি',
-          one: 'বি{0}',
-          other: 'বি{0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বিউফৰ্ট',
+      one: 'বিউফৰ্ট {0}',
+      other: 'বিউফৰ্ট {0}',
+    ),
+    short: UnitCountPattern(_locale, 'বিএফটি', one: 'বি {0}', other: 'বি {0}'),
+    narrow: UnitCountPattern(_locale, 'বিএফটি', one: 'বি{0}', other: 'বি{0}'),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডিগ্ৰী তাপমাত্ৰা',
-          one: '{0} degree temperature',
-          other: '{0}°',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডিগ্ৰী তাপমাত্ৰা',
+      one: '{0} degree temperature',
+      other: '{0}°',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডিগ্ৰী চেলচিয়াছ',
-          one: '{0} ডিগ্ৰী চেলচিয়াছ',
-          other: '{0} ডিগ্ৰী চেলচিয়াছ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডিগ্ৰীঃ চেঃ',
-          one: '{0}°চেঃ',
-          other: '{0}°চেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°চেঃ',
-          one: '{0}°চেঃ',
-          other: '{0}°চেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডিগ্ৰী চেলচিয়াছ',
+      one: '{0} ডিগ্ৰী চেলচিয়াছ',
+      other: '{0} ডিগ্ৰী চেলচিয়াছ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডিগ্ৰীঃ চেঃ',
+      one: '{0}°চেঃ',
+      other: '{0}°চেঃ',
+    ),
+    narrow: UnitCountPattern(_locale, '°চেঃ', one: '{0}°চেঃ', other: '{0}°চেঃ'),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডিগ্ৰী ফাৰেনহাইট',
-          one: '{0} ডিগ্ৰী ফাৰেনহাইট',
-          other: '{0} ডিগ্ৰী ফাৰেনহাইট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডি. ফা.',
-          one: '{0}°ফা.',
-          other: '{0}°ফা.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '° ফা.',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডিগ্ৰী ফাৰেনহাইট',
+      one: '{0} ডিগ্ৰী ফাৰেনহাইট',
+      other: '{0} ডিগ্ৰী ফাৰেনহাইট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডি. ফা.',
+      one: '{0}°ফা.',
+      other: '{0}°ফা.',
+    ),
+    narrow: UnitCountPattern(_locale, '° ফা.', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কেলভিন',
-          one: '{0} কেলভিন',
-          other: '{0} কেলভিন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কেলভিন',
-          one: '{0} কেলভিন',
-          other: '{0} কেলভিন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কেলভিন',
-          one: '{0} কেলভিন',
-          other: '{0} কেলভিন',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কেলভিন',
+      one: '{0} কেলভিন',
+      other: '{0} কেলভিন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কেলভিন',
+      one: '{0} কেলভিন',
+      other: '{0} কেলভিন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কেলভিন',
+      one: '{0} কেলভিন',
+      other: '{0} কেলভিন',
+    ),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পাউণ্ড-বল-ফুট',
-          one: '{0} পাউণ্ড-ফুট',
-          other: '{0} পাউণ্ড-ফুট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} পাউণ্ড-ফুট',
-          other: '{0} lbf⋅ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} পাউণ্ড-ফুট',
-          other: '{0} lbf⋅ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পাউণ্ড-বল-ফুট',
+      one: '{0} পাউণ্ড-ফুট',
+      other: '{0} পাউণ্ড-ফুট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} পাউণ্ড-ফুট',
+      other: '{0} lbf⋅ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} পাউণ্ড-ফুট',
+      other: '{0} lbf⋅ft',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'নিউটন-মিটাৰ',
-          one: '{0} নিউটন-মিটাৰ',
-          other: '{0} নিউটন-মিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'নি. মি.',
-          one: '{0} নি. মি.',
-          other: '{0} নি. মি.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'নি. মি.',
-          one: '{0} নি. মি.',
-          other: '{0} নি. মি.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'নিউটন-মিটাৰ',
+      one: '{0} নিউটন-মিটাৰ',
+      other: '{0} নিউটন-মিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'নি. মি.',
+      one: '{0} নি. মি.',
+      other: '{0} নি. মি.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'নি. মি.',
+      one: '{0} নি. মি.',
+      other: '{0} নি. মি.',
+    ),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘন কিলোমিটাৰ',
-          one: '{0} ঘন কিলোমিটাৰ',
-          other: '{0} ঘন কিলোমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘন কিলোমিটাৰ',
-          one: '{0} ঘন কিলোমিটাৰ',
-          other: '{0} km³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘন কিলোমিটাৰ',
-          one: '{0} ঘন কিলোমিটাৰ',
-          other: '{0} km³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘন কিলোমিটাৰ',
+      one: '{0} ঘন কিলোমিটাৰ',
+      other: '{0} ঘন কিলোমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘন কিলোমিটাৰ',
+      one: '{0} ঘন কিলোমিটাৰ',
+      other: '{0} km³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘন কিলোমিটাৰ',
+      one: '{0} ঘন কিলোমিটাৰ',
+      other: '{0} km³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘন মিটাৰ',
-          one: '{0} ঘন মিটাৰ',
-          other: '{0} ঘন মিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘন মিটাৰ',
-          one: '{0} ঘন মিটাৰ',
-          other: '{0} m³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘন মিটাৰ',
-          one: '{0} ঘন মিটাৰ',
-          other: '{0} m³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘন মিটাৰ',
+      one: '{0} ঘন মিটাৰ',
+      other: '{0} ঘন মিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘন মিটাৰ',
+      one: '{0} ঘন মিটাৰ',
+      other: '{0} m³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘন মিটাৰ',
+      one: '{0} ঘন মিটাৰ',
+      other: '{0} m³',
+    ),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘন ছেণ্টিমিটাৰ',
-          one: '{0} ঘন ছেণ্টিমিটাৰ',
-          other: '{0} ঘন ছেণ্টিমিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘন ছেণ্টিমিটাৰ',
-          one: '{0} ঘন ছেণ্টিমিটাৰ',
-          other: '{0} cm³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘন ছেণ্টিমিটাৰ',
-          one: '{0} ঘন ছেণ্টিমিটাৰ',
-          other: '{0} cm³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘন ছেণ্টিমিটাৰ',
+      one: '{0} ঘন ছেণ্টিমিটাৰ',
+      other: '{0} ঘন ছেণ্টিমিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘন ছেণ্টিমিটাৰ',
+      one: '{0} ঘন ছেণ্টিমিটাৰ',
+      other: '{0} cm³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘন ছেণ্টিমিটাৰ',
+      one: '{0} ঘন ছেণ্টিমিটাৰ',
+      other: '{0} cm³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘন মাইল',
-          one: '{0} ঘন মাইল',
-          other: '{0} ঘন মাইল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘন মাইল',
-          one: '{0} ঘন মাইল',
-          other: '{0} mi³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘন মাইল',
-          one: '{0} ঘন মাইল',
-          other: '{0} mi³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘন মাইল',
+      one: '{0} ঘন মাইল',
+      other: '{0} ঘন মাইল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘন মাইল',
+      one: '{0} ঘন মাইল',
+      other: '{0} mi³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘন মাইল',
+      one: '{0} ঘন মাইল',
+      other: '{0} mi³',
+    ),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘন গজ',
-          one: '{0} ঘন গজ',
-          other: '{0} ঘন গজ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘন গজ',
-          one: '{0} ঘন গজ',
-          other: '{0} yd³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘন গজ',
-          one: '{0} ঘন গজ',
-          other: '{0} yd³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘন গজ',
+      one: '{0} ঘন গজ',
+      other: '{0} ঘন গজ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘন গজ',
+      one: '{0} ঘন গজ',
+      other: '{0} yd³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘন গজ',
+      one: '{0} ঘন গজ',
+      other: '{0} yd³',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘন ফুট',
-          one: '{0} ঘন ফুট',
-          other: '{0} ঘন ফুট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘন ফুট',
-          one: '{0} ঘন ফুট',
-          other: '{0} ft³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘন ফুট',
-          one: '{0} ঘন ফুট',
-          other: '{0} ft³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘন ফুট',
+      one: '{0} ঘন ফুট',
+      other: '{0} ঘন ফুট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘন ফুট',
+      one: '{0} ঘন ফুট',
+      other: '{0} ft³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘন ফুট',
+      one: '{0} ঘন ফুট',
+      other: '{0} ft³',
+    ),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ঘন ইঞ্চি',
-          one: '{0} ঘন ইঞ্চি',
-          other: '{0} ঘন ইঞ্চি',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ঘন ইঞ্চি',
-          one: '{0} ঘন ইঞ্চি',
-          other: '{0} in³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ঘন ইঞ্চি',
-          one: '{0} ঘন ইঞ্চি',
-          other: '{0} in³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ঘন ইঞ্চি',
+      one: '{0} ঘন ইঞ্চি',
+      other: '{0} ঘন ইঞ্চি',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ঘন ইঞ্চি',
+      one: '{0} ঘন ইঞ্চি',
+      other: '{0} in³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ঘন ইঞ্চি',
+      one: '{0} ঘন ইঞ্চি',
+      other: '{0} in³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেগালিটাৰ',
-          one: '{0} মেগালিটাৰ',
-          other: '{0} মেগালিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেঃ লিঃ',
-          one: '{0} মেঃ লিঃ',
-          other: '{0} মেঃ লিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেঃ লিঃ',
-          one: '{0} মেঃ লিঃ',
-          other: '{0} মেঃ লিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেগালিটাৰ',
+      one: '{0} মেগালিটাৰ',
+      other: '{0} মেগালিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেঃ লিঃ',
+      one: '{0} মেঃ লিঃ',
+      other: '{0} মেঃ লিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেঃ লিঃ',
+      one: '{0} মেঃ লিঃ',
+      other: '{0} মেঃ লিঃ',
+    ),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'হেক্টোলিটাৰ',
-          one: '{0} হেক্টোলিটাৰ',
-          other: '{0} হেক্টোলিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'হেঃ লিঃ',
-          one: '{0} হেঃ লিঃ',
-          other: '{0} হেঃ লিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'হেঃ লিঃ',
-          one: '{0} হেঃ লিঃ',
-          other: '{0} হেঃ লিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'হেক্টোলিটাৰ',
+      one: '{0} হেক্টোলিটাৰ',
+      other: '{0} হেক্টোলিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'হেঃ লিঃ',
+      one: '{0} হেঃ লিঃ',
+      other: '{0} হেঃ লিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'হেঃ লিঃ',
+      one: '{0} হেঃ লিঃ',
+      other: '{0} হেঃ লিঃ',
+    ),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'লিটাৰ',
-          one: '{0} লিটাৰ',
-          other: '{0} লিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'লিটাৰ',
-          one: '{0} লিঃ',
-          other: '{0} লিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'লিটাৰ',
-          one: '{0} লিঃ',
-          other: '{0} লিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'লিটাৰ',
+      one: '{0} লিটাৰ',
+      other: '{0} লিটাৰ',
+    ),
+    short: UnitCountPattern(_locale, 'লিটাৰ', one: '{0} লিঃ', other: '{0} লিঃ'),
+    narrow: UnitCountPattern(
+      _locale,
+      'লিটাৰ',
+      one: '{0} লিঃ',
+      other: '{0} লিঃ',
+    ),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডেচিলিটাৰ',
-          one: '{0} ডেচিলিটাৰ',
-          other: '{0} ডেচিলিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ডেঃ লিঃ',
-          one: '{0} ডেঃ লিঃ',
-          other: '{0} ডেঃ লিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ডেঃ লিঃ',
-          one: '{0} ডেঃ লিঃ',
-          other: '{0} ডেঃ লিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডেচিলিটাৰ',
+      one: '{0} ডেচিলিটাৰ',
+      other: '{0} ডেচিলিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ডেঃ লিঃ',
+      one: '{0} ডেঃ লিঃ',
+      other: '{0} ডেঃ লিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ডেঃ লিঃ',
+      one: '{0} ডেঃ লিঃ',
+      other: '{0} ডেঃ লিঃ',
+    ),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ছেণ্টিলিটাৰ',
-          one: '{0} ছেণ্টিলিটাৰ',
-          other: '{0} ছেণ্টিলিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ছেঃ লিঃ',
-          one: '{0} ছেঃ লিঃ',
-          other: '{0} ছেঃ লিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ছেঃ লিঃ',
-          one: '{0} ছেঃ লিঃ',
-          other: '{0} ছেঃ লিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ছেণ্টিলিটাৰ',
+      one: '{0} ছেণ্টিলিটাৰ',
+      other: '{0} ছেণ্টিলিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ছেঃ লিঃ',
+      one: '{0} ছেঃ লিঃ',
+      other: '{0} ছেঃ লিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ছেঃ লিঃ',
+      one: '{0} ছেঃ লিঃ',
+      other: '{0} ছেঃ লিঃ',
+    ),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মিলিলিটাৰ',
-          one: '{0} মিলিলিটাৰ',
-          other: '{0} মিলিলিটাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মিঃ লিঃ',
-          one: '{0} মিঃ লিঃ',
-          other: '{0} মিঃ লিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মিঃ লিঃ',
-          one: '{0} মিঃ লিঃ',
-          other: '{0} মিঃ লিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মিলিলিটাৰ',
+      one: '{0} মিলিলিটাৰ',
+      other: '{0} মিলিলিটাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মিঃ লিঃ',
+      one: '{0} মিঃ লিঃ',
+      other: '{0} মিঃ লিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মিঃ লিঃ',
+      one: '{0} মিঃ লিঃ',
+      other: '{0} মিঃ লিঃ',
+    ),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেট্ৰিক পিণ্ট',
-          one: '{0} মেট্ৰিক পিণ্ট',
-          other: '{0} মেট্ৰিক পিণ্ট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেঃ পিঃ',
-          one: '{0} মেঃ পিঃ',
-          other: '{0} মেঃ পিঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেঃ পিঃ',
-          one: '{0} মেঃ পিঃ',
-          other: '{0} মেঃ পিঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেট্ৰিক পিণ্ট',
+      one: '{0} মেট্ৰিক পিণ্ট',
+      other: '{0} মেট্ৰিক পিণ্ট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেঃ পিঃ',
+      one: '{0} মেঃ পিঃ',
+      other: '{0} মেঃ পিঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেঃ পিঃ',
+      one: '{0} মেঃ পিঃ',
+      other: '{0} মেঃ পিঃ',
+    ),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'মেট্ৰিক কাপ',
-          one: '{0} মেট্ৰিক কাপ',
-          other: '{0} মেট্ৰিক কাপ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'মেঃ কাঃ',
-          one: '{0} মেঃ কাঃ',
-          other: '{0} মেঃ কাঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'মেঃ কাঃ',
-          one: '{0} মেঃ কাঃ',
-          other: '{0} মেঃ কাঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'মেট্ৰিক কাপ',
+      one: '{0} মেট্ৰিক কাপ',
+      other: '{0} মেট্ৰিক কাপ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'মেঃ কাঃ',
+      one: '{0} মেঃ কাঃ',
+      other: '{0} মেঃ কাঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'মেঃ কাঃ',
+      one: '{0} মেঃ কাঃ',
+      other: '{0} মেঃ কাঃ',
+    ),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'একৰ-ফুট',
-          one: '{0} একৰ-ফুট',
-          other: '{0} একৰ-ফুট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'একৰ-ফুট',
-          one: '{0} এঃ-ফুঃ',
-          other: '{0} এঃ-ফুঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'একৰ-ফুট',
-          one: '{0} এঃ-ফুঃ',
-          other: '{0} এঃ-ফুঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'একৰ-ফুট',
+      one: '{0} একৰ-ফুট',
+      other: '{0} একৰ-ফুট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'একৰ-ফুট',
+      one: '{0} এঃ-ফুঃ',
+      other: '{0} এঃ-ফুঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'একৰ-ফুট',
+      one: '{0} এঃ-ফুঃ',
+      other: '{0} এঃ-ফুঃ',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বুশ্বেল',
-          one: '{0} বুশ্লেল',
-          other: '{0} বুশ্বেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বুশ্বেল',
-          one: '{0} বুশ্লেল',
-          other: '{0} bu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বুশ্বেল',
-          one: '{0} বুশ্লেল',
-          other: '{0} bu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বুশ্বেল',
+      one: '{0} বুশ্লেল',
+      other: '{0} বুশ্বেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বুশ্বেল',
+      one: '{0} বুশ্লেল',
+      other: '{0} bu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বুশ্বেল',
+      one: '{0} বুশ্লেল',
+      other: '{0} bu',
+    ),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'গেলন',
-          one: '{0} গেলন',
-          other: '{0} গেলন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'গেলন',
-          one: '{0} গেলন',
-          other: '{0} গেলন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'গেলন',
-          one: '{0} গেলন',
-          other: '{0} গেলন',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'গেলন', one: '{0} গেলন', other: '{0} গেলন'),
+    short: UnitCountPattern(
+      _locale,
+      'গেলন',
+      one: '{0} গেলন',
+      other: '{0} গেলন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'গেলন',
+      one: '{0} গেলন',
+      other: '{0} গেলন',
+    ),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইম্পেৰিয়াল গেলন',
-          one: '{0} ইম্পেৰিয়াল গেলন',
-          other: '{0} ইম্পেৰিয়াল গেলন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ইম্পেঃ গেঃ',
-          one: '{0} ইম্পেঃ গেঃ',
-          other: '{0} ইম্পেঃ গেঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ইম্পেঃ গেঃ',
-          one: '{0} ইম্পেঃ গেঃ',
-          other: '{0} ইম্পেঃ গেঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইম্পেৰিয়াল গেলন',
+      one: '{0} ইম্পেৰিয়াল গেলন',
+      other: '{0} ইম্পেৰিয়াল গেলন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ইম্পেঃ গেঃ',
+      one: '{0} ইম্পেঃ গেঃ',
+      other: '{0} ইম্পেঃ গেঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ইম্পেঃ গেঃ',
+      one: '{0} ইম্পেঃ গেঃ',
+      other: '{0} ইম্পেঃ গেঃ',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কোৱাৰ্ট',
-          one: '{0} কোৱাৰ্ট',
-          other: '{0} কোৱাৰ্ট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কোৱাৰ্ট',
-          one: '{0} কোৱাৰ্ট',
-          other: '{0} কোৱাৰ্ট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কোৱাৰ্ট',
-          one: '{0} কোৱাৰ্ট',
-          other: '{0} কোৱাৰ্ট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'কোৱাৰ্ট',
+      one: '{0} কোৱাৰ্ট',
+      other: '{0} কোৱাৰ্ট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'কোৱাৰ্ট',
+      one: '{0} কোৱাৰ্ট',
+      other: '{0} কোৱাৰ্ট',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'কোৱাৰ্ট',
+      one: '{0} কোৱাৰ্ট',
+      other: '{0} কোৱাৰ্ট',
+    ),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পিণ্ট',
-          one: '{0} পিণ্ট',
-          other: '{0} পিণ্ট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পিণ্ট',
-          one: '{0} পিণ্ট',
-          other: '{0} পিণ্ট',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পিণ্ট',
-          one: '{0} পিণ্ট',
-          other: '{0} পিণ্ট',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পিণ্ট',
+      one: '{0} পিণ্ট',
+      other: '{0} পিণ্ট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পিণ্ট',
+      one: '{0} পিণ্ট',
+      other: '{0} পিণ্ট',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পিণ্ট',
+      one: '{0} পিণ্ট',
+      other: '{0} পিণ্ট',
+    ),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'কাপ',
-          one: '{0} কাপ',
-          other: '{0} কাপ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'কাপ',
-          one: '{0} কাপ',
-          other: '{0} কাপ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'কাপ',
-          one: '{0} কাপ',
-          other: '{0} কাপ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'কাপ', one: '{0} কাপ', other: '{0} কাপ'),
+    short: UnitCountPattern(_locale, 'কাপ', one: '{0} কাপ', other: '{0} কাপ'),
+    narrow: UnitCountPattern(_locale, 'কাপ', one: '{0} কাপ', other: '{0} কাপ'),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ফ্লুইড আউন্স',
-          one: '{0} ফ্লুইড আউন্স',
-          other: '{0} ফ্লুইড আউন্স',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ফ্লুঃ আঃ',
-          one: '{0} ফ্লুঃ আঃ',
-          other: '{0} ফ্লুঃ আঃ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ফ্লুঃ আঃ',
-          one: '{0} ফ্লুঃ আঃ',
-          other: '{0} ফ্লুঃ আঃ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ফ্লুইড আউন্স',
+      one: '{0} ফ্লুইড আউন্স',
+      other: '{0} ফ্লুইড আউন্স',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ফ্লুঃ আঃ',
+      one: '{0} ফ্লুঃ আঃ',
+      other: '{0} ফ্লুঃ আঃ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ফ্লুঃ আঃ',
+      one: '{0} ফ্লুঃ আঃ',
+      other: '{0} ফ্লুঃ আঃ',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইম্পেৰিয়েল ফ্লুইড আউন্স',
-          one: '{0} ইম্পেৰিয়েল ফ্লুইড আউন্স',
-          other: '{0} ইম্পেৰিয়েল ফ্লুইড আউন্স',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ইম্পে. ফ্লু. আ.',
-          one: '{0} ইম্পে. ফ্লু. আ.',
-          other: '{0} ইম্পে. ফ্লু. আ.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ইম্পে. ফ্লু. আ.',
-          one: '{0} ইম্পে. ফ্লু. আ.',
-          other: '{0} ইম্পে. ফ্লু. আ.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইম্পেৰিয়েল ফ্লুইড আউন্স',
+      one: '{0} ইম্পেৰিয়েল ফ্লুইড আউন্স',
+      other: '{0} ইম্পেৰিয়েল ফ্লুইড আউন্স',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ইম্পে. ফ্লু. আ.',
+      one: '{0} ইম্পে. ফ্লু. আ.',
+      other: '{0} ইম্পে. ফ্লু. আ.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ইম্পে. ফ্লু. আ.',
+      one: '{0} ইম্পে. ফ্লু. আ.',
+      other: '{0} ইম্পে. ফ্লু. আ.',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'টেব’লস্পুন',
-          one: '{0} টেব’লস্পুন',
-          other: '{0} টেব’লস্পুন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'টেব’লস্পুন',
-          one: '{0} টেব’লস্পুন',
-          other: '{0} টেব’লস্পুন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'টেব’লস্পুন',
-          one: '{0} টেব’লস্পুন',
-          other: '{0} টেব’লস্পুন',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'টেব’লস্পুন',
+      one: '{0} টেব’লস্পুন',
+      other: '{0} টেব’লস্পুন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'টেব’লস্পুন',
+      one: '{0} টেব’লস্পুন',
+      other: '{0} টেব’লস্পুন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'টেব’লস্পুন',
+      one: '{0} টেব’লস্পুন',
+      other: '{0} টেব’লস্পুন',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'টিস্পুন',
-          one: '{0} টিস্পুন',
-          other: '{0} টিস্পুন',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'টিস্পুন',
-          one: '{0} টিস্পুন',
-          other: '{0} টিস্পুন',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'টিস্পুন',
-          one: '{0}টিস্পুন',
-          other: '{0}টিস্পুন',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'টিস্পুন',
+      one: '{0} টিস্পুন',
+      other: '{0} টিস্পুন',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'টিস্পুন',
+      one: '{0} টিস্পুন',
+      other: '{0} টিস্পুন',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'টিস্পুন',
+      one: '{0}টিস্পুন',
+      other: '{0}টিস্পুন',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'বেৰেল',
-          one: '{0} বেৰেল',
-          other: '{0} বেৰেল',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'বেৰেল',
-          one: '{0} বেৰেল',
-          other: '{0} bbl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'বেৰেল',
-          one: '{0} বেৰেল',
-          other: '{0} bbl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'বেৰেল',
+      one: '{0} বেৰেল',
+      other: '{0} বেৰেল',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'বেৰেল',
+      one: '{0} বেৰেল',
+      other: '{0} bbl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'বেৰেল',
+      one: '{0} বেৰেল',
+      other: '{0} bbl',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ডেজাৰ্ট চামুচ',
-          one: '{0} ডেজাৰ্ট চামুচ',
-          other: '{0} ডেজাৰ্ট চামুচ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dstspn',
-          one: '{0} ডেজাৰ্ট চামুচ',
-          other: '{0} dstspn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dstspn',
-          one: '{0}dsp',
-          other: '{0}dsp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ডেজাৰ্ট চামুচ',
+      one: '{0} ডেজাৰ্ট চামুচ',
+      other: '{0} ডেজাৰ্ট চামুচ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dstspn',
+      one: '{0} ডেজাৰ্ট চামুচ',
+      other: '{0} dstspn',
+    ),
+    narrow: UnitCountPattern(_locale, 'dstspn', one: '{0}dsp', other: '{0}dsp'),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
-          one: '{0} ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
-          other: '{0} ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dstspn Imp',
-          one: '{0} ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
-          other: '{0} dstspn Imp',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dsp Imp',
-          one: '{0}dsp-Imp',
-          other: '{0}dsp-Imp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
+      one: '{0} ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
+      other: '{0} ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dstspn Imp',
+      one: '{0} ইম্পেৰিয়েল ডেজাৰ্ট চামুচ',
+      other: '{0} dstspn Imp',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dsp Imp',
+      one: '{0}dsp-Imp',
+      other: '{0}dsp-Imp',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ড্ৰপ',
-          one: '{0} ড্ৰপ',
-          other: '{0} ড্ৰপ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ড্ৰপ',
-          one: '{0} ড্ৰপ',
-          other: '{0} ড্ৰপ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ড্ৰপ',
-          one: '{0} ড্ৰপ',
-          other: '{0} ড্ৰপ',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ড্ৰপ', one: '{0} ড্ৰপ', other: '{0} ড্ৰপ'),
+    short: UnitCountPattern(
+      _locale,
+      'ড্ৰপ',
+      one: '{0} ড্ৰপ',
+      other: '{0} ড্ৰপ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ড্ৰপ',
+      one: '{0} ড্ৰপ',
+      other: '{0} ড্ৰপ',
+    ),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ড্ৰাম',
-          one: '{0} ড্ৰাম',
-          other: '{0} ড্ৰাম',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ড্ৰাম তৰল পদাৰ্থ',
-          one: '{0} ড্ৰাম তৰল পদাৰ্থ',
-          other: '{0} ড্ৰাম তৰল পদাৰ্থ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ড্ৰাম তৰল পদাৰ্থ',
-          one: '{0} ড্ৰাম তৰল পদাৰ্থ',
-          other: '{0} ড্ৰাম তৰল পদাৰ্থ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ড্ৰাম',
+      one: '{0} ড্ৰাম',
+      other: '{0} ড্ৰাম',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ড্ৰাম তৰল পদাৰ্থ',
+      one: '{0} ড্ৰাম তৰল পদাৰ্থ',
+      other: '{0} ড্ৰাম তৰল পদাৰ্থ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ড্ৰাম তৰল পদাৰ্থ',
+      one: '{0} ড্ৰাম তৰল পদাৰ্থ',
+      other: '{0} ড্ৰাম তৰল পদাৰ্থ',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'জিগাৰ',
-          one: '{0} জিগাৰ',
-          other: '{0} জিগাৰ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'জিগাৰ',
-          one: '{0} জিগাৰ',
-          other: '{0} জিগাৰ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'জিগাৰ',
-          one: '{0} জিগাৰ',
-          other: '{0} জিগাৰ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'জিগাৰ',
+      one: '{0} জিগাৰ',
+      other: '{0} জিগাৰ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'জিগাৰ',
+      one: '{0} জিগাৰ',
+      other: '{0} জিগাৰ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'জিগাৰ',
+      one: '{0} জিগাৰ',
+      other: '{0} জিগাৰ',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'পিঞ্চ',
-          one: '{0} পিঞ্চ',
-          other: '{0} পিঞ্চ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'পিঞ্চ',
-          one: '{0} পিঞ্চ',
-          other: '{0} পিঞ্চ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'পিঞ্চ',
-          one: '{0} পিঞ্চ',
-          other: '{0} পিঞ্চ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'পিঞ্চ',
+      one: '{0} পিঞ্চ',
+      other: '{0} পিঞ্চ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'পিঞ্চ',
+      one: '{0} পিঞ্চ',
+      other: '{0} পিঞ্চ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'পিঞ্চ',
+      one: '{0} পিঞ্চ',
+      other: '{0} পিঞ্চ',
+    ),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ইম্পেৰিয়েল কুৱাৰ্ট',
-          one: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
-          other: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'qt Imp',
-          one: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
-          other: '{0} qt Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'qt Imp',
-          one: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
-          other: '{0} qt Imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ইম্পেৰিয়েল কুৱাৰ্ট',
+      one: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
+      other: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'qt Imp',
+      one: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
+      other: '{0} qt Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'qt Imp',
+      one: '{0} ইম্পেৰিয়েল কুৱাৰ্ট',
+      other: '{0} qt Imp.',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'আলোক',
-          one: '{0} আলোক',
-          other: '{0} আলোক',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'আলোক',
-          one: '{0} আলোক',
-          other: '{0} আলোক',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'আলোক',
-          one: '{0}আলোক',
-          other: '{0}আলোক',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'আলোক', one: '{0} আলোক', other: '{0} আলোক'),
+    short: UnitCountPattern(
+      _locale,
+      'আলোক',
+      one: '{0} আলোক',
+      other: '{0} আলোক',
+    ),
+    narrow: UnitCountPattern(_locale, 'আলোক', one: '{0}আলোক', other: '{0}আলোক'),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'প্ৰতি বিলিয়নত অংশ',
-          one: '{0} প্ৰতি বিলিয়নত অংশ',
-          other: '{0} প্ৰতি বিলিয়নত অংশ',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'অংশ/বিলিয়ন',
-          one: '{0} প্ৰতি বিলিয়নত অংশ',
-          other: '{0} ppb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'অংশ/বিলিয়ন',
-          one: '{0}ppb',
-          other: '{0}ppb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'প্ৰতি বিলিয়নত অংশ',
+      one: '{0} প্ৰতি বিলিয়নত অংশ',
+      other: '{0} প্ৰতি বিলিয়নত অংশ',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'অংশ/বিলিয়ন',
+      one: '{0} প্ৰতি বিলিয়নত অংশ',
+      other: '{0} ppb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'অংশ/বিলিয়ন',
+      one: '{0}ppb',
+      other: '{0}ppb',
+    ),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'নিশা',
-          one: '{0} নিশা',
-          other: '{0} নিশা',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'নিশা',
-          one: '{0} নিশা',
-          other: '{0} নিশা',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'নিশা',
-          one: '{0} নিশা',
-          other: '{0} নিশা',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'নিশা', one: '{0} নিশা', other: '{0} নিশা'),
+    short: UnitCountPattern(
+      _locale,
+      'নিশা',
+      one: '{0} নিশা',
+      other: '{0} নিশা',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'নিশা',
+      one: '{0} নিশা',
+      other: '{0} নিশা',
+    ),
+  );
 }
 
 class DateFieldsAs extends DateFields {
   const DateFieldsAs(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'যুগ',
-        short: 'যুগ',
-        narrow: 'যুগ',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'যুগ', short: 'যুগ', narrow: 'যুগ');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'বছৰ',
-          short: 'বছৰ',
-          narrow: 'বছৰ',
-        ),
-        previous: MultiLength(
-          long: 'যোৱা বছৰ',
-          short: 'যোৱা বছৰ',
-          narrow: 'যোৱা বছৰ',
-        ),
-        now: MultiLength(
-          long: 'এই বছৰ',
-          short: 'এই বছৰ',
-          narrow: 'এই বছৰ',
-        ),
-        next: MultiLength(
-          long: 'অহা বছৰ',
-          short: 'অহা বছৰ',
-          narrow: 'অহা বছৰ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} বছৰৰ পূৰ্বে',
-            other: '{0} বছৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} বছৰৰ পূৰ্বে',
-            other: '{0} বছৰৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} বছৰৰ পূৰ্বে',
-            other: '{0} বছৰৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} বছৰত',
-            other: '{0} বছৰত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} বছৰত',
-            other: '{0} বছৰত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} বছৰত',
-            other: '{0} বছৰত',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'বছৰ', short: 'বছৰ', narrow: 'বছৰ'),
+    previous: MultiLength(
+      long: 'যোৱা বছৰ',
+      short: 'যোৱা বছৰ',
+      narrow: 'যোৱা বছৰ',
+    ),
+    now: MultiLength(long: 'এই বছৰ', short: 'এই বছৰ', narrow: 'এই বছৰ'),
+    next: MultiLength(long: 'অহা বছৰ', short: 'অহা বছৰ', narrow: 'অহা বছৰ'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} বছৰৰ পূৰ্বে',
+        other: '{0} বছৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} বছৰৰ পূৰ্বে',
+        other: '{0} বছৰৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} বছৰৰ পূৰ্বে',
+        other: '{0} বছৰৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} বছৰত', other: '{0} বছৰত'),
+      short: RelativeTime(_locale, one: '{0} বছৰত', other: '{0} বছৰত'),
+      narrow: RelativeTime(_locale, one: '{0} বছৰত', other: '{0} বছৰত'),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'তিনি মাহ',
-          short: 'তিনি মাহ',
-          narrow: 'তিনি মাহ',
-        ),
-        previous: MultiLength(
-          long: 'যোৱা তিনি মাহ',
-          short: 'যোৱা তিনি মাহ',
-          narrow: 'যোৱা তিনি মাহ',
-        ),
-        now: MultiLength(
-          long: 'এই তিনি মাহ',
-          short: 'এই তিনি মাহ',
-          narrow: 'এই তিনি মাহ',
-        ),
-        next: MultiLength(
-          long: 'অহা তিনি মাহ',
-          short: 'অহা তিনি মাহ',
-          narrow: 'অহা তিনি মাহ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} তিনি মাহ পূৰ্বে',
-            other: '{0} তিনি মাহ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} তিনি মাহ পূৰ্বে',
-            other: '{0} তিনি মাহ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} তিনি মাহ পূৰ্বে',
-            other: '{0} তিনি মাহ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} তিনি মাহত',
-            other: '{0} তিনি মাহত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} তিনি মাহত',
-            other: '{0} তিনি মাহত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} তিনি মাহত',
-            other: '{0} তিনি মাহত',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'তিনি মাহ',
+      short: 'তিনি মাহ',
+      narrow: 'তিনি মাহ',
+    ),
+    previous: MultiLength(
+      long: 'যোৱা তিনি মাহ',
+      short: 'যোৱা তিনি মাহ',
+      narrow: 'যোৱা তিনি মাহ',
+    ),
+    now: MultiLength(
+      long: 'এই তিনি মাহ',
+      short: 'এই তিনি মাহ',
+      narrow: 'এই তিনি মাহ',
+    ),
+    next: MultiLength(
+      long: 'অহা তিনি মাহ',
+      short: 'অহা তিনি মাহ',
+      narrow: 'অহা তিনি মাহ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} তিনি মাহ পূৰ্বে',
+        other: '{0} তিনি মাহ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} তিনি মাহ পূৰ্বে',
+        other: '{0} তিনি মাহ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} তিনি মাহ পূৰ্বে',
+        other: '{0} তিনি মাহ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} তিনি মাহত', other: '{0} তিনি মাহত'),
+      short: RelativeTime(
+        _locale,
+        one: '{0} তিনি মাহত',
+        other: '{0} তিনি মাহত',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} তিনি মাহত',
+        other: '{0} তিনি মাহত',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'মাহ',
-          short: 'মাহ',
-          narrow: 'মাহ',
-        ),
-        previous: MultiLength(
-          long: 'যোৱা মাহ',
-          short: 'যোৱা মাহ',
-          narrow: 'যোৱা মা.',
-        ),
-        now: MultiLength(
-          long: 'এই মাহ',
-          short: 'এই মাহ',
-          narrow: 'এই মা.',
-        ),
-        next: MultiLength(
-          long: 'অহা মাহ',
-          short: 'অহা মাহ',
-          narrow: 'অহা মাহ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} মাহ পূৰ্বে',
-            other: '{0} মাহ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} মাহ পূৰ্বে',
-            other: '{0} মাহ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} মাহ পূৰ্বে',
-            other: '{0} মাহ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} মাহত',
-            other: '{0} মাহত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} মাহত',
-            other: '{0} মাহত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} মাহত',
-            other: '{0} মাহত',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'মাহ', short: 'মাহ', narrow: 'মাহ'),
+    previous: MultiLength(
+      long: 'যোৱা মাহ',
+      short: 'যোৱা মাহ',
+      narrow: 'যোৱা মা.',
+    ),
+    now: MultiLength(long: 'এই মাহ', short: 'এই মাহ', narrow: 'এই মা.'),
+    next: MultiLength(long: 'অহা মাহ', short: 'অহা মাহ', narrow: 'অহা মাহ'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} মাহ পূৰ্বে',
+        other: '{0} মাহ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} মাহ পূৰ্বে',
+        other: '{0} মাহ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} মাহ পূৰ্বে',
+        other: '{0} মাহ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} মাহত', other: '{0} মাহত'),
+      short: RelativeTime(_locale, one: '{0} মাহত', other: '{0} মাহত'),
+      narrow: RelativeTime(_locale, one: '{0} মাহত', other: '{0} মাহত'),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'সপ্তাহ',
-          short: 'সপ্তাহ',
-          narrow: 'সপ্তাহ',
-        ),
-        previous: MultiLength(
-          long: 'যোৱা সপ্তাহ',
-          short: 'যোৱা সপ্তাহ',
-          narrow: 'যোৱা সপ্তাহ',
-        ),
-        now: MultiLength(
-          long: 'এই সপ্তাহ',
-          short: 'এই সপ্তাহ',
-          narrow: 'এই সপ্তাহ',
-        ),
-        next: MultiLength(
-          long: 'অহা সপ্তাহ',
-          short: 'অহা সপ্তাহ',
-          narrow: 'অহা সপ্তাহ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} সপ্তাহ পূৰ্বে',
-            other: '{0} সপ্তাহ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} সপ্তাহ পূৰ্বে',
-            other: '{0} সপ্তাহ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} সপ্তাহ পূৰ্বে',
-            other: '{0} সপ্তাহ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} সপ্তাহত',
-            other: '{0} সপ্তাহত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} সপ্তাহত',
-            other: '{0} সপ্তাহত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} সপ্তাহত',
-            other: '{0} সপ্তাহত',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'সপ্তাহ', short: 'সপ্তাহ', narrow: 'সপ্তাহ'),
+    previous: MultiLength(
+      long: 'যোৱা সপ্তাহ',
+      short: 'যোৱা সপ্তাহ',
+      narrow: 'যোৱা সপ্তাহ',
+    ),
+    now: MultiLength(
+      long: 'এই সপ্তাহ',
+      short: 'এই সপ্তাহ',
+      narrow: 'এই সপ্তাহ',
+    ),
+    next: MultiLength(
+      long: 'অহা সপ্তাহ',
+      short: 'অহা সপ্তাহ',
+      narrow: 'অহা সপ্তাহ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} সপ্তাহ পূৰ্বে',
+        other: '{0} সপ্তাহ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} সপ্তাহ পূৰ্বে',
+        other: '{0} সপ্তাহ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} সপ্তাহ পূৰ্বে',
+        other: '{0} সপ্তাহ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} সপ্তাহত', other: '{0} সপ্তাহত'),
+      short: RelativeTime(_locale, one: '{0} সপ্তাহত', other: '{0} সপ্তাহত'),
+      narrow: RelativeTime(_locale, one: '{0} সপ্তাহত', other: '{0} সপ্তাহত'),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'মাহৰ সপ্তাহ',
-        short: 'মাহৰ সপ্তাহ',
-        narrow: 'মাহৰ সপ্তাহ',
-      );
+    long: 'মাহৰ সপ্তাহ',
+    short: 'মাহৰ সপ্তাহ',
+    narrow: 'মাহৰ সপ্তাহ',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'দিন',
-          short: 'দিন',
-          narrow: 'দিন',
-        ),
-        previous: MultiLength(
-          long: 'কালি',
-          short: 'কালি',
-          narrow: 'কালি',
-        ),
-        now: MultiLength(
-          long: 'আজি',
-          short: 'আজি',
-          narrow: 'আজি',
-        ),
-        next: MultiLength(
-          long: 'কাইলৈ',
-          short: 'কাইলৈ',
-          narrow: 'কাইলৈ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} দিন পূৰ্বে',
-            other: '{0} দিন পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} দিন পূৰ্বে',
-            other: '{0} দিন পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} দিন পূৰ্বে',
-            other: '{0} দিন পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} দিনত',
-            other: '{0} দিনত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} দিনত',
-            other: '{0} দিনত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} দিনত',
-            other: '{0} দিনত',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'দিন', short: 'দিন', narrow: 'দিন'),
+    previous: MultiLength(long: 'কালি', short: 'কালি', narrow: 'কালি'),
+    now: MultiLength(long: 'আজি', short: 'আজি', narrow: 'আজি'),
+    next: MultiLength(long: 'কাইলৈ', short: 'কাইলৈ', narrow: 'কাইলৈ'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} দিন পূৰ্বে',
+        other: '{0} দিন পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} দিন পূৰ্বে',
+        other: '{0} দিন পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} দিন পূৰ্বে',
+        other: '{0} দিন পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} দিনত', other: '{0} দিনত'),
+      short: RelativeTime(_locale, one: '{0} দিনত', other: '{0} দিনত'),
+      narrow: RelativeTime(_locale, one: '{0} দিনত', other: '{0} দিনত'),
+    ),
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'বছৰৰ দিন',
-        short: 'বছৰৰ দিন',
-        narrow: 'বছৰৰ দিন',
-      );
+    long: 'বছৰৰ দিন',
+    short: 'বছৰৰ দিন',
+    narrow: 'বছৰৰ দিন',
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'সপ্তাহৰ দিন',
-        short: 'সপ্তাহৰ দিন',
-        narrow: 'সপ্তাহৰ দিন',
-      );
+    long: 'সপ্তাহৰ দিন',
+    short: 'সপ্তাহৰ দিন',
+    narrow: 'সপ্তাহৰ দিন',
+  );
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'মাহৰ সপ্তাহৰ দিন',
-        short: 'মাহৰ সপ্তাহৰ দিন',
-        narrow: 'মাহৰ সপ্তাহৰ দিন',
-      );
+    long: 'মাহৰ সপ্তাহৰ দিন',
+    short: 'মাহৰ সপ্তাহৰ দিন',
+    narrow: 'মাহৰ সপ্তাহৰ দিন',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'যোৱা দেওবাৰ',
-          short: 'যোৱা দেওবাৰ',
-          narrow: 'যোৱা দেওবাৰ',
-        ),
-        now: MultiLength(
-          long: 'এই দেওবাৰ',
-          short: 'এই দেওবাৰ',
-          narrow: 'এই দেওবাৰ',
-        ),
-        next: MultiLength(
-          long: 'অহা দেওবাৰ',
-          short: 'অহা দেওবাৰ',
-          narrow: 'অহা দেওবাৰ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} দেওবাৰৰ পূৰ্বে',
-            other: '{0} দেওবাৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} দেওবাৰৰ পূৰ্বে',
-            other: '{0} দেওবাৰৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} দেওবাৰৰ পূৰ্বে',
-            other: '{0} দেওবাৰৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} দেওবাৰে',
-            other: '{0} দেওবাৰে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} দেওবাৰে',
-            other: '{0} দেওবাৰে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} দেওবাৰে',
-            other: '{0} দেওবাৰে',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'যোৱা দেওবাৰ',
+      short: 'যোৱা দেওবাৰ',
+      narrow: 'যোৱা দেওবাৰ',
+    ),
+    now: MultiLength(
+      long: 'এই দেওবাৰ',
+      short: 'এই দেওবাৰ',
+      narrow: 'এই দেওবাৰ',
+    ),
+    next: MultiLength(
+      long: 'অহা দেওবাৰ',
+      short: 'অহা দেওবাৰ',
+      narrow: 'অহা দেওবাৰ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} দেওবাৰৰ পূৰ্বে',
+        other: '{0} দেওবাৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} দেওবাৰৰ পূৰ্বে',
+        other: '{0} দেওবাৰৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} দেওবাৰৰ পূৰ্বে',
+        other: '{0} দেওবাৰৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} দেওবাৰে', other: '{0} দেওবাৰে'),
+      short: RelativeTime(_locale, one: '{0} দেওবাৰে', other: '{0} দেওবাৰে'),
+      narrow: RelativeTime(_locale, one: '{0} দেওবাৰে', other: '{0} দেওবাৰে'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'যোৱা সোমবাৰ',
-          short: 'যোৱা সোমবাৰ',
-          narrow: 'যোৱা সোম',
-        ),
-        now: MultiLength(
-          long: 'এই সোমবাৰ',
-          short: 'এই সোমবাৰ',
-          narrow: 'এই সোম',
-        ),
-        next: MultiLength(
-          long: 'অহা সোমবাৰ',
-          short: 'অহা সোমবাৰ',
-          narrow: 'অহা সোম',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} সোমবাৰৰ পূৰ্বে',
-            other: '{0} সোমবাৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} সোমবাৰৰ পূৰ্বে',
-            other: '{0} সোমবাৰৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} সোমৰ পূৰ্বে',
-            other: '{0} সোমৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} সোমবাৰে',
-            other: '{0} সোমবাৰে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} সোমবাৰে',
-            other: '{0} সোমবাৰে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} সোমে',
-            other: '{0} সোমে',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'যোৱা সোমবাৰ',
+      short: 'যোৱা সোমবাৰ',
+      narrow: 'যোৱা সোম',
+    ),
+    now: MultiLength(long: 'এই সোমবাৰ', short: 'এই সোমবাৰ', narrow: 'এই সোম'),
+    next: MultiLength(
+      long: 'অহা সোমবাৰ',
+      short: 'অহা সোমবাৰ',
+      narrow: 'অহা সোম',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} সোমবাৰৰ পূৰ্বে',
+        other: '{0} সোমবাৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} সোমবাৰৰ পূৰ্বে',
+        other: '{0} সোমবাৰৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} সোমৰ পূৰ্বে',
+        other: '{0} সোমৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} সোমবাৰে', other: '{0} সোমবাৰে'),
+      short: RelativeTime(_locale, one: '{0} সোমবাৰে', other: '{0} সোমবাৰে'),
+      narrow: RelativeTime(_locale, one: '{0} সোমে', other: '{0} সোমে'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'যোৱা মঙ্গলবাৰ',
-          short: 'যোৱা মঙ্গল',
-          narrow: 'যোৱা মঙ্গল',
-        ),
-        now: MultiLength(
-          long: 'এই মঙ্গলবাৰ',
-          short: 'এই মঙ্গল',
-          narrow: 'এই মঙ্গল',
-        ),
-        next: MultiLength(
-          long: 'অহা মঙ্গলবাৰ',
-          short: 'অহা মঙ্গল',
-          narrow: 'অহা মঙ্গল',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} মঙ্গলবাৰৰ পূৰ্বে',
-            other: '{0} মঙ্গলবাৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} মঙ্গলৰ পূৰ্বে',
-            other: '{0} মঙ্গলৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} মঙ্গলৰ পূৰ্বে',
-            other: '{0} মঙ্গলৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} মঙ্গলবাৰে',
-            other: '{0} মঙ্গলবাৰে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} মঙ্গলে',
-            other: '{0} মঙ্গলে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} মঙ্গলে',
-            other: '{0} মঙ্গলে',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'যোৱা মঙ্গলবাৰ',
+      short: 'যোৱা মঙ্গল',
+      narrow: 'যোৱা মঙ্গল',
+    ),
+    now: MultiLength(
+      long: 'এই মঙ্গলবাৰ',
+      short: 'এই মঙ্গল',
+      narrow: 'এই মঙ্গল',
+    ),
+    next: MultiLength(
+      long: 'অহা মঙ্গলবাৰ',
+      short: 'অহা মঙ্গল',
+      narrow: 'অহা মঙ্গল',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} মঙ্গলবাৰৰ পূৰ্বে',
+        other: '{0} মঙ্গলবাৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} মঙ্গলৰ পূৰ্বে',
+        other: '{0} মঙ্গলৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} মঙ্গলৰ পূৰ্বে',
+        other: '{0} মঙ্গলৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} মঙ্গলবাৰে', other: '{0} মঙ্গলবাৰে'),
+      short: RelativeTime(_locale, one: '{0} মঙ্গলে', other: '{0} মঙ্গলে'),
+      narrow: RelativeTime(_locale, one: '{0} মঙ্গলে', other: '{0} মঙ্গলে'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'যোৱা বুধবাৰ',
-          short: 'যোৱা বুধ',
-          narrow: 'যোৱা বুধ',
-        ),
-        now: MultiLength(
-          long: 'এই বুধবাৰ',
-          short: 'এই বুধ',
-          narrow: 'এই বুধ',
-        ),
-        next: MultiLength(
-          long: 'অহা বুধবাৰ',
-          short: 'অহা বুধ',
-          narrow: 'অহা বুধ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} বুধবাৰৰ পূৰ্বে',
-            other: '{0} বুধবাৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} বুধৰ পূৰ্বে',
-            other: '{0} বুধৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} বুধৰ পূৰ্বে',
-            other: '{0} বুধৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} বুধবাৰে',
-            other: '{0} বুধবাৰে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} বুধে',
-            other: '{0} বুধে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} বুধে',
-            other: '{0} বুধে',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'যোৱা বুধবাৰ',
+      short: 'যোৱা বুধ',
+      narrow: 'যোৱা বুধ',
+    ),
+    now: MultiLength(long: 'এই বুধবাৰ', short: 'এই বুধ', narrow: 'এই বুধ'),
+    next: MultiLength(long: 'অহা বুধবাৰ', short: 'অহা বুধ', narrow: 'অহা বুধ'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} বুধবাৰৰ পূৰ্বে',
+        other: '{0} বুধবাৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} বুধৰ পূৰ্বে',
+        other: '{0} বুধৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} বুধৰ পূৰ্বে',
+        other: '{0} বুধৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} বুধবাৰে', other: '{0} বুধবাৰে'),
+      short: RelativeTime(_locale, one: '{0} বুধে', other: '{0} বুধে'),
+      narrow: RelativeTime(_locale, one: '{0} বুধে', other: '{0} বুধে'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'যোৱা বৃহস্পতিবাৰ',
-          short: 'যোৱা বৃহস্পতি',
-          narrow: 'যোৱা বৃহস্পতি',
-        ),
-        now: MultiLength(
-          long: 'এই বৃহস্পতিবাৰ',
-          short: 'এই বৃহস্পতি',
-          narrow: 'এই বৃহস্পতি',
-        ),
-        next: MultiLength(
-          long: 'অহা বৃহস্পতিবাৰ',
-          short: 'অহা বৃহস্পতি',
-          narrow: 'অহা বৃহস্পতি',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} বৃহস্পতিবাৰৰ পূৰ্বে',
-            other: '{0} বৃহস্পতিবাৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} বৃহস্পতিৰ পূৰ্বে',
-            other: '{0} বৃহস্পতিৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} বৃহস্পতিৰ পূৰ্বে',
-            other: '{0} বৃহস্পতিৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} বৃহস্পতিবাৰে',
-            other: '{0} বৃহস্পতিবাৰে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} বৃহস্পতিয়ে',
-            other: '{0} বৃহস্পতিয়ে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} বৃহস্পতিয়ে',
-            other: '{0} বৃহস্পতিয়ে',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'যোৱা বৃহস্পতিবাৰ',
+      short: 'যোৱা বৃহস্পতি',
+      narrow: 'যোৱা বৃহস্পতি',
+    ),
+    now: MultiLength(
+      long: 'এই বৃহস্পতিবাৰ',
+      short: 'এই বৃহস্পতি',
+      narrow: 'এই বৃহস্পতি',
+    ),
+    next: MultiLength(
+      long: 'অহা বৃহস্পতিবাৰ',
+      short: 'অহা বৃহস্পতি',
+      narrow: 'অহা বৃহস্পতি',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} বৃহস্পতিবাৰৰ পূৰ্বে',
+        other: '{0} বৃহস্পতিবাৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} বৃহস্পতিৰ পূৰ্বে',
+        other: '{0} বৃহস্পতিৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} বৃহস্পতিৰ পূৰ্বে',
+        other: '{0} বৃহস্পতিৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} বৃহস্পতিবাৰে',
+        other: '{0} বৃহস্পতিবাৰে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} বৃহস্পতিয়ে',
+        other: '{0} বৃহস্পতিয়ে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} বৃহস্পতিয়ে',
+        other: '{0} বৃহস্পতিয়ে',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'যোৱা শুক্ৰবাৰ',
-          short: 'যোৱা শুক্ৰ',
-          narrow: 'যোৱা শুক্ৰ',
-        ),
-        now: MultiLength(
-          long: 'এই শুক্ৰবাৰ',
-          short: 'এই শুক্ৰ',
-          narrow: 'এই শুক্ৰ',
-        ),
-        next: MultiLength(
-          long: 'অহা শুক্ৰবাৰ',
-          short: 'অহা শুক্ৰ',
-          narrow: 'অহা শুক্ৰ',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} শুক্ৰবাৰৰ পূৰ্বে',
-            other: '{0} শুক্ৰবাৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} শুক্ৰৰ পূৰ্বে',
-            other: '{0} শুক্ৰৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} শুক্ৰৰ পূৰ্বে',
-            other: '{0} শুক্ৰৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} শুক্ৰবাৰে',
-            other: '{0} শুক্ৰবাৰে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} শুকুৰে',
-            other: '{0} শুকুৰে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} শুকুৰে',
-            other: '{0} শুকুৰে',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'যোৱা শুক্ৰবাৰ',
+      short: 'যোৱা শুক্ৰ',
+      narrow: 'যোৱা শুক্ৰ',
+    ),
+    now: MultiLength(
+      long: 'এই শুক্ৰবাৰ',
+      short: 'এই শুক্ৰ',
+      narrow: 'এই শুক্ৰ',
+    ),
+    next: MultiLength(
+      long: 'অহা শুক্ৰবাৰ',
+      short: 'অহা শুক্ৰ',
+      narrow: 'অহা শুক্ৰ',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} শুক্ৰবাৰৰ পূৰ্বে',
+        other: '{0} শুক্ৰবাৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} শুক্ৰৰ পূৰ্বে',
+        other: '{0} শুক্ৰৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} শুক্ৰৰ পূৰ্বে',
+        other: '{0} শুক্ৰৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} শুক্ৰবাৰে', other: '{0} শুক্ৰবাৰে'),
+      short: RelativeTime(_locale, one: '{0} শুকুৰে', other: '{0} শুকুৰে'),
+      narrow: RelativeTime(_locale, one: '{0} শুকুৰে', other: '{0} শুকুৰে'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'যোৱা শনিবাৰ',
-          short: 'যোৱা শনি',
-          narrow: 'যোৱা শনি',
-        ),
-        now: MultiLength(
-          long: 'এই শনিবাৰ',
-          short: 'এই শনি',
-          narrow: 'এই শনি',
-        ),
-        next: MultiLength(
-          long: 'অহা শনিবাৰ',
-          short: 'অহা শনি',
-          narrow: 'অহা শনি',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} শনিবাৰৰ পূৰ্বে',
-            other: '{0} শনিবাৰৰ পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} শনিৰ পূৰ্বে',
-            other: '{0} শনিৰ পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} শনিৰ পূৰ্বে',
-            other: '{0} শনিৰ পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} শনিবাৰে',
-            other: '{0} শনিবাৰে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} শনিয়ে',
-            other: '{0} শনিয়ে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} শনিয়ে',
-            other: '{0} শনিয়ে',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'যোৱা শনিবাৰ',
+      short: 'যোৱা শনি',
+      narrow: 'যোৱা শনি',
+    ),
+    now: MultiLength(long: 'এই শনিবাৰ', short: 'এই শনি', narrow: 'এই শনি'),
+    next: MultiLength(long: 'অহা শনিবাৰ', short: 'অহা শনি', narrow: 'অহা শনি'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} শনিবাৰৰ পূৰ্বে',
+        other: '{0} শনিবাৰৰ পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} শনিৰ পূৰ্বে',
+        other: '{0} শনিৰ পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} শনিৰ পূৰ্বে',
+        other: '{0} শনিৰ পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} শনিবাৰে', other: '{0} শনিবাৰে'),
+      short: RelativeTime(_locale, one: '{0} শনিয়ে', other: '{0} শনিয়ে'),
+      narrow: RelativeTime(_locale, one: '{0} শনিয়ে', other: '{0} শনিয়ে'),
+    ),
+  );
 
   @override
   MultiLength get dayperiod => const MultiLength(
-        long: 'পূৰ্বাহ্ন/অপৰাহ্ন',
-        short: 'পূৰ্বাহ্ন/অপৰাহ্ন',
-        narrow: 'পূৰ্বাহ্ন/অপৰাহ্ন',
-      );
+    long: 'পূৰ্বাহ্ন/অপৰাহ্ন',
+    short: 'পূৰ্বাহ্ন/অপৰাহ্ন',
+    narrow: 'পূৰ্বাহ্ন/অপৰাহ্ন',
+  );
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'ঘণ্টা',
-          short: 'ঘণ্টা',
-          narrow: 'ঘণ্টা',
-        ),
-        now: MultiLength(
-          long: 'এইটো ঘণ্টাত',
-          short: 'এইটো ঘণ্টাত',
-          narrow: 'এইটো ঘণ্টাত',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} ঘণ্টা পূৰ্বে',
-            other: '{0} ঘণ্টা পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} ঘণ্টা পূৰ্বে',
-            other: '{0} ঘণ্টা পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} ঘণ্টা পূৰ্বে',
-            other: '{0} ঘণ্টা পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} ঘণ্টাত',
-            other: '{0} ঘণ্টাত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} ঘণ্টাত',
-            other: '{0} ঘণ্টাত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} ঘণ্টাত',
-            other: '{0} ঘণ্টাত',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ঘণ্টা', short: 'ঘণ্টা', narrow: 'ঘণ্টা'),
+    now: MultiLength(
+      long: 'এইটো ঘণ্টাত',
+      short: 'এইটো ঘণ্টাত',
+      narrow: 'এইটো ঘণ্টাত',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} ঘণ্টা পূৰ্বে',
+        other: '{0} ঘণ্টা পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} ঘণ্টা পূৰ্বে',
+        other: '{0} ঘণ্টা পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} ঘণ্টা পূৰ্বে',
+        other: '{0} ঘণ্টা পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} ঘণ্টাত', other: '{0} ঘণ্টাত'),
+      short: RelativeTime(_locale, one: '{0} ঘণ্টাত', other: '{0} ঘণ্টাত'),
+      narrow: RelativeTime(_locale, one: '{0} ঘণ্টাত', other: '{0} ঘণ্টাত'),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'মিনিট',
-          short: 'মিনিট',
-          narrow: 'মিনিট',
-        ),
-        now: MultiLength(
-          long: 'এইটো মিনিটত',
-          short: 'এইটো মিনিটত',
-          narrow: 'এইটো মিনিটত',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} মিনিট পূৰ্বে',
-            other: '{0} মিনিট পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} মিনিট পূৰ্বে',
-            other: '{0} মিনিট পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} মিনিট পূৰ্বে',
-            other: '{0} মিনিট পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} মিনিটত',
-            other: '{0} মিনিটত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} মিনিটত',
-            other: '{0} মিনিটত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} মিনিটত',
-            other: '{0} মিনিটত',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'মিনিট', short: 'মিনিট', narrow: 'মিনিট'),
+    now: MultiLength(
+      long: 'এইটো মিনিটত',
+      short: 'এইটো মিনিটত',
+      narrow: 'এইটো মিনিটত',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} মিনিট পূৰ্বে',
+        other: '{0} মিনিট পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} মিনিট পূৰ্বে',
+        other: '{0} মিনিট পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} মিনিট পূৰ্বে',
+        other: '{0} মিনিট পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} মিনিটত', other: '{0} মিনিটত'),
+      short: RelativeTime(_locale, one: '{0} মিনিটত', other: '{0} মিনিটত'),
+      narrow: RelativeTime(_locale, one: '{0} মিনিটত', other: '{0} মিনিটত'),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'ছেকেণ্ড',
-          short: 'ছেকেণ্ড',
-          narrow: 'ছেকেণ্ড',
-        ),
-        now: MultiLength(
-          long: 'এতিয়া',
-          short: 'এতিয়া',
-          narrow: 'এতিয়া',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} ছেকেণ্ড পূৰ্বে',
-            other: '{0} ছেকেণ্ড পূৰ্বে',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} ছেকেণ্ড পূৰ্বে',
-            other: '{0} ছেকেণ্ড পূৰ্বে',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} ছেকেণ্ড পূৰ্বে',
-            other: '{0} ছেকেণ্ড পূৰ্বে',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: '{0} ছেকেণ্ডত',
-            other: '{0} ছেকেণ্ডত',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: '{0} ছেকেণ্ডত',
-            other: '{0} ছেকেণ্ডত',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: '{0} ছেকেণ্ডত',
-            other: '{0} ছেকেণ্ডত',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'ছেকেণ্ড',
+      short: 'ছেকেণ্ড',
+      narrow: 'ছেকেণ্ড',
+    ),
+    now: MultiLength(long: 'এতিয়া', short: 'এতিয়া', narrow: 'এতিয়া'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: '{0} ছেকেণ্ড পূৰ্বে',
+        other: '{0} ছেকেণ্ড পূৰ্বে',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: '{0} ছেকেণ্ড পূৰ্বে',
+        other: '{0} ছেকেণ্ড পূৰ্বে',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: '{0} ছেকেণ্ড পূৰ্বে',
+        other: '{0} ছেকেণ্ড পূৰ্বে',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: '{0} ছেকেণ্ডত', other: '{0} ছেকেণ্ডত'),
+      short: RelativeTime(_locale, one: '{0} ছেকেণ্ডত', other: '{0} ছেকেণ্ডত'),
+      narrow: RelativeTime(_locale, one: '{0} ছেকেণ্ডত', other: '{0} ছেকেণ্ডত'),
+    ),
+  );
 
   @override
   MultiLength get zone => const MultiLength(
-        long: 'সময় ক্ষেত্ৰ',
-        short: 'ক্ষেত্ৰ',
-        narrow: 'ক্ষেত্ৰ',
-      );
+    long: 'সময় ক্ষেত্ৰ',
+    short: 'ক্ষেত্ৰ',
+    narrow: 'ক্ষেত্ৰ',
+  );
 }
 
 class LanguagesAs extends Languages {
@@ -5327,8 +4578,12 @@ class LanguagesAs extends Languages {
   static const _chp = Language('chp', 'চিপেউয়ান');
   static const _chr = Language('chr', 'চেৰোকি');
   static const _chy = Language('chy', 'চাইয়েন');
-  static const _ckb = Language('ckb', 'চেণ্ট্ৰেল কুৰ্ডিচ',
-      variant: 'চেণ্ট্ৰেল কুৰ্ডিচ', menu: 'চেণ্ট্ৰেল কুৰ্ডিচ');
+  static const _ckb = Language(
+    'ckb',
+    'চেণ্ট্ৰেল কুৰ্ডিচ',
+    variant: 'চেণ্ট্ৰেল কুৰ্ডিচ',
+    menu: 'চেণ্ট্ৰেল কুৰ্ডিচ',
+  );
   static const _clc = Language('clc', 'চিলক’টিন');
   static const _co = Language('co', 'কোৰ্ছিকান');
   static const _crg = Language('crg', 'মিচিফ');
@@ -5367,10 +4622,16 @@ class LanguagesAs extends Languages {
   static const _en = Language('en', 'ইংৰাজী');
   static const _enAU = Language('en-AU', 'অষ্ট্ৰেলিয়ান ইংৰাজী');
   static const _enCA = Language('en-CA', 'কানাডিয়ান ইংৰাজী');
-  static const _enGB =
-      Language('en-GB', 'ব্ৰিটিছ ইংৰাজী', short: 'ইউ. কে. ইংৰাজী');
-  static const _enUS =
-      Language('en-US', 'আমেৰিকান ইংৰাজী', short: 'ইউ. এছ. ইংৰাজী');
+  static const _enGB = Language(
+    'en-GB',
+    'ব্ৰিটিছ ইংৰাজী',
+    short: 'ইউ. কে. ইংৰাজী',
+  );
+  static const _enUS = Language(
+    'en-US',
+    'আমেৰিকান ইংৰাজী',
+    short: 'ইউ. এছ. ইংৰাজী',
+  );
   static const _eo = Language('eo', 'এস্পেৰান্তো');
   static const _es = Language('es', 'স্পেনিচ');
   static const _es419 = Language('es-419', 'লেটিন আমেৰিকান স্পেনিচ');
@@ -7512,8 +6773,10 @@ class ScriptsAs extends Scripts {
   static const _bopo = Script('Bopo', 'বোপোমোফো');
   static const _brai = Script('Brai', 'ব্ৰেইল');
   static const _cakm = Script('Cakm', 'চাকমা');
-  static const _cans =
-      Script('Cans', 'ইউনিফাইড কানাডিয়ান এব’ৰিজিনেল ছিলেবিকছ');
+  static const _cans = Script(
+    'Cans',
+    'ইউনিফাইড কানাডিয়ান এব’ৰিজিনেল ছিলেবিকছ',
+  );
   static const _cher = Script('Cher', 'চেৰ’কী');
   static const _cyrl = Script('Cyrl', 'চিৰিলিক');
   static const _deva = Script('Deva', 'দেৱনাগৰী');
@@ -8126,8 +7389,11 @@ class TerritoriesAs extends Territories {
   static const _cc = Territory('CC', 'কোকোচ (কীলিং) দ্বীপপুঞ্জ');
   static const _cd = Territory('CD', 'কঙ্গো - কিনচাছা', variant: 'কঙ্গো (DRC)');
   static const _cf = Territory('CF', 'মধ্য আফ্রিকান প্রজাতন্ত্র');
-  static const _cg =
-      Territory('CG', 'কঙ্গো - ব্রাজাভিল', variant: 'কঙ্গো (প্রজাতন্ত্র)');
+  static const _cg = Territory(
+    'CG',
+    'কঙ্গো - ব্রাজাভিল',
+    variant: 'কঙ্গো (প্রজাতন্ত্র)',
+  );
   static const _ch = Territory('CH', 'চুইজাৰলেণ্ড');
   static const _ci = Territory('CI', 'কোটে ডি আইভৰ', variant: 'আইভৰী কোষ্ট');
   static const _ck = Territory('CK', 'কুক দ্বীপপুঞ্জ');
@@ -8162,8 +7428,11 @@ class TerritoriesAs extends Territories {
   static const _ez = Territory('EZ', 'ইউৰোজ’ন');
   static const _fi = Territory('FI', 'ফিনলেণ্ড');
   static const _fj = Territory('FJ', 'ফিজি');
-  static const _fk = Territory('FK', 'ফকলেণ্ড দ্বীপপুঞ্জ',
-      variant: 'ফকলেণ্ড দ্বীপপুঞ্জ (আইলেছ মালভিনাছ)');
+  static const _fk = Territory(
+    'FK',
+    'ফকলেণ্ড দ্বীপপুঞ্জ',
+    variant: 'ফকলেণ্ড দ্বীপপুঞ্জ (আইলেছ মালভিনাছ)',
+  );
   static const _fm = Territory('FM', 'মাইক্ৰোনেচিয়া');
   static const _fo = Territory('FO', 'ফাৰো দ্বীপপুঞ্জ');
   static const _fr = Territory('FR', 'ফ্ৰান্স');
@@ -8181,8 +7450,10 @@ class TerritoriesAs extends Territories {
   static const _gp = Territory('GP', 'গুৱাডেলুপ');
   static const _gq = Territory('GQ', 'ইকুৱেটৰিয়েল গিনি');
   static const _gr = Territory('GR', 'গ্ৰীচ');
-  static const _gs =
-      Territory('GS', 'দক্ষিণ জৰ্জিয়া আৰু দক্ষিণ চেণ্ডৱিচ দ্বীপপুঞ্জ');
+  static const _gs = Territory(
+    'GS',
+    'দক্ষিণ জৰ্জিয়া আৰু দক্ষিণ চেণ্ডৱিচ দ্বীপপুঞ্জ',
+  );
   static const _gt = Territory('GT', 'গুৱাটেমালা');
   static const _gu = Territory('GU', 'গুৱাম');
   static const _gw = Territory('GW', 'গিনি-বিছাও');
@@ -8264,8 +7535,11 @@ class TerritoriesAs extends Territories {
   static const _np = Territory('NP', 'নেপাল');
   static const _nr = Territory('NR', 'নাউৰু');
   static const _nu = Territory('NU', 'নিউ');
-  static const _nz =
-      Territory('NZ', 'নিউজিলেণ্ড', variant: 'অ’টিআৰাৱা নিউজিলেণ্ড');
+  static const _nz = Territory(
+    'NZ',
+    'নিউজিলেণ্ড',
+    variant: 'অ’টিআৰাৱা নিউজিলেণ্ড',
+  );
   static const _om = Territory('OM', 'ওমান');
   static const _pa = Territory('PA', 'পানামা');
   static const _pe = Territory('PE', 'পেৰু');
@@ -9418,271 +8692,683 @@ class SubdivisionsAs extends Subdivisions {
 class CurrenciesAs extends Currencies {
   const CurrenciesAs(super.cld);
 
-  static const _aed = Currency(_cld, 'AED', 'সংযুক্ত আৰব আমিৰাত ডিৰহেম',
-      one: 'UAE ডিৰহেম', other: 'UAE ডিৰহেম');
+  static const _aed = Currency(
+    _cld,
+    'AED',
+    'সংযুক্ত আৰব আমিৰাত ডিৰহেম',
+    one: 'UAE ডিৰহেম',
+    other: 'UAE ডিৰহেম',
+  );
   static const _afn = Currency(_cld, 'AFN', 'আফগান আফগানী', symbolNarrow: '؋');
   static const _all = Currency(_cld, 'ALL', 'আলবেনীয় লেক');
-  static const _amd =
-      Currency(_cld, 'AMD', 'আৰ্মেনিয়ান ড্ৰাম', symbolNarrow: '֏');
+  static const _amd = Currency(
+    _cld,
+    'AMD',
+    'আৰ্মেনিয়ান ড্ৰাম',
+    symbolNarrow: '֏',
+  );
   static const _ang = Currency(_cld, 'ANG', 'নেডাৰলেণ্ডছ এণ্টিলিয়েন গিল্ডাৰ');
-  static const _aoa =
-      Currency(_cld, 'AOA', 'এংগোলান কোৱাঞ্জা', symbolNarrow: 'Kz');
-  static const _ars =
-      Currency(_cld, 'ARS', 'আৰ্জেণ্টাইন পেছো', symbolNarrow: r'$');
-  static const _aud = Currency(_cld, 'AUD', 'অষ্ট্ৰেলিয়ান ডলাৰ',
-      symbol: r'A$', symbolNarrow: r'$');
+  static const _aoa = Currency(
+    _cld,
+    'AOA',
+    'এংগোলান কোৱাঞ্জা',
+    symbolNarrow: 'Kz',
+  );
+  static const _ars = Currency(
+    _cld,
+    'ARS',
+    'আৰ্জেণ্টাইন পেছো',
+    symbolNarrow: r'$',
+  );
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'অষ্ট্ৰেলিয়ান ডলাৰ',
+    symbol: r'A$',
+    symbolNarrow: r'$',
+  );
   static const _awg = Currency(_cld, 'AWG', 'আৰুবান ফ্ল’ৰিন');
-  static const _azn =
-      Currency(_cld, 'AZN', 'আজেৰবাইজানী মানাত', symbolNarrow: '₼');
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'আজেৰবাইজানী মানাত',
+    symbolNarrow: '₼',
+  );
   static const _bam = Currency(
-      _cld, 'BAM', 'ব’ছনিয়া আৰু হাৰ্জেগ’ভিনা কনভাৰ্টিব্‌ল মাৰ্ক',
-      symbolNarrow: 'KM');
-  static const _bbd =
-      Currency(_cld, 'BBD', 'বাৰ্বাডিয়ান ডলাৰ', symbolNarrow: r'$');
-  static const _bdt =
-      Currency(_cld, 'BDT', 'বাংলাদেশী টাকা', symbolNarrow: '৳');
+    _cld,
+    'BAM',
+    'ব’ছনিয়া আৰু হাৰ্জেগ’ভিনা কনভাৰ্টিব্‌ল মাৰ্ক',
+    symbolNarrow: 'KM',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'বাৰ্বাডিয়ান ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _bdt = Currency(
+    _cld,
+    'BDT',
+    'বাংলাদেশী টাকা',
+    symbolNarrow: '৳',
+  );
   static const _bgn = Currency(_cld, 'BGN', 'বুলগেৰীয় লেভ');
   static const _bhd = Currency(_cld, 'BHD', 'বাহৰেইনী ডিনাৰ');
   static const _bif = Currency(_cld, 'BIF', 'বুৰুণ্ডিয়ান ফ্ৰেংক');
-  static const _bmd =
-      Currency(_cld, 'BMD', 'বাৰ্মুডান ডলাৰ', symbolNarrow: r'$');
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'বাৰ্মুডান ডলাৰ',
+    symbolNarrow: r'$',
+  );
   static const _bnd = Currency(_cld, 'BND', 'ব্ৰুনেই ডলাৰ', symbolNarrow: r'$');
-  static const _bob =
-      Currency(_cld, 'BOB', 'বলিভিয়ান বলিভিয়ানো', symbolNarrow: 'Bs');
-  static const _brl = Currency(_cld, 'BRL', 'ব্ৰাজিলিয়ান ৰিয়েল',
-      symbol: r'R$', symbolNarrow: r'R$');
-  static const _bsd =
-      Currency(_cld, 'BSD', 'বাহামিয়ান ডলাৰ', symbolNarrow: r'$');
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'বলিভিয়ান বলিভিয়ানো',
+    symbolNarrow: 'Bs',
+  );
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'ব্ৰাজিলিয়ান ৰিয়েল',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'বাহামিয়ান ডলাৰ',
+    symbolNarrow: r'$',
+  );
   static const _btn = Currency(_cld, 'BTN', 'ভুটানী নংগলট্ৰাম');
-  static const _bwp =
-      Currency(_cld, 'BWP', 'ব’টচোৱানান পুলা', symbolNarrow: 'P');
-  static const _byn =
-      Currency(_cld, 'BYN', 'বেলাৰুছীয় ৰুবেল', symbolNarrow: 'р.');
+  static const _bwp = Currency(
+    _cld,
+    'BWP',
+    'ব’টচোৱানান পুলা',
+    symbolNarrow: 'P',
+  );
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'বেলাৰুছীয় ৰুবেল',
+    symbolNarrow: 'р.',
+  );
   static const _bzd = Currency(_cld, 'BZD', 'বেলিজ ডলাৰ', symbolNarrow: r'$');
-  static const _cad = Currency(_cld, 'CAD', 'কানাডিয়ান ডলাৰ',
-      symbol: r'CA$', symbolNarrow: r'$');
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'কানাডিয়ান ডলাৰ',
+    symbol: r'CA$',
+    symbolNarrow: r'$',
+  );
   static const _cdf = Currency(_cld, 'CDF', 'কংগো ফ্ৰেংক');
   static const _chf = Currency(_cld, 'CHF', 'চুইছ ফ্ৰেংক');
-  static const _clp =
-      Currency(_cld, 'CLP', 'চিলিয়ান পেছো', symbolNarrow: r'$');
+  static const _clp = Currency(
+    _cld,
+    'CLP',
+    'চিলিয়ান পেছো',
+    symbolNarrow: r'$',
+  );
   static const _cnh = Currency(_cld, 'CNH', 'চীনা ইউৱান (অফশ্ব’ৰ)');
-  static const _cny =
-      Currency(_cld, 'CNY', 'চীনা ইউৱান', symbol: 'CN¥', symbolNarrow: '¥');
-  static const _cop =
-      Currency(_cld, 'COP', 'কলম্বিয়ান পেছো', symbolNarrow: r'$');
-  static const _crc =
-      Currency(_cld, 'CRC', 'কোষ্টা ৰিকান কোলন', symbolNarrow: '₡');
-  static const _cuc =
-      Currency(_cld, 'CUC', 'কিউবান ৰূপান্তৰযোগ্য পেছো', symbolNarrow: r'$');
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'চীনা ইউৱান',
+    symbol: 'CN¥',
+    symbolNarrow: '¥',
+  );
+  static const _cop = Currency(
+    _cld,
+    'COP',
+    'কলম্বিয়ান পেছো',
+    symbolNarrow: r'$',
+  );
+  static const _crc = Currency(
+    _cld,
+    'CRC',
+    'কোষ্টা ৰিকান কোলন',
+    symbolNarrow: '₡',
+  );
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'কিউবান ৰূপান্তৰযোগ্য পেছো',
+    symbolNarrow: r'$',
+  );
   static const _cup = Currency(_cld, 'CUP', 'কিউবান পেছো', symbolNarrow: r'$');
   static const _cve = Currency(_cld, 'CVE', 'কেপ ভাৰ্দে এছকুডো');
   static const _czk = Currency(_cld, 'CZK', 'চেক কোৰুনা', symbolNarrow: 'Kč');
   static const _djf = Currency(_cld, 'DJF', 'জিবুটি ফ্ৰেংক');
   static const _dkk = Currency(_cld, 'DKK', 'ডেনিচ ক্ৰোন', symbolNarrow: 'kr');
-  static const _dop =
-      Currency(_cld, 'DOP', 'ড’মিনিকান পেছো', symbolNarrow: r'$');
+  static const _dop = Currency(
+    _cld,
+    'DOP',
+    'ড’মিনিকান পেছো',
+    symbolNarrow: r'$',
+  );
   static const _dzd = Currency(_cld, 'DZD', 'আলজেৰীয় ডিনাৰ');
-  static const _egp =
-      Currency(_cld, 'EGP', 'ইজিপ্তৰ পাউণ্ড', symbolNarrow: 'E£');
+  static const _egp = Currency(
+    _cld,
+    'EGP',
+    'ইজিপ্তৰ পাউণ্ড',
+    symbolNarrow: 'E£',
+  );
   static const _ern = Currency(_cld, 'ERN', 'এৰিট্ৰিয়ন নাক্‌ফা');
   static const _esp = Currency(_cld, 'ESP', 'ESP', symbolNarrow: '₧');
   static const _etb = Currency(_cld, 'ETB', 'ইথিঅ’পিয়ান বিৰ');
-  static const _eur =
-      Currency(_cld, 'EUR', 'ইউৰো', symbol: '€', symbolNarrow: '€');
-  static const _fjd =
-      Currency(_cld, 'FJD', 'ফিজিয়ান ডলাৰ', symbolNarrow: r'$');
-  static const _fkp =
-      Currency(_cld, 'FKP', 'ফকলেণ্ড দ্বীপপুঞ্জৰ পাউণ্ড', symbolNarrow: '£');
-  static const _gbp =
-      Currency(_cld, 'GBP', 'ব্ৰিটিছ পাউণ্ড', symbol: '£', symbolNarrow: '£');
-  static const _gel =
-      Currency(_cld, 'GEL', 'জৰ্জিয়ান লাৰি', symbolNarrow: '₾');
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'ইউৰো',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
+  static const _fjd = Currency(
+    _cld,
+    'FJD',
+    'ফিজিয়ান ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'ফকলেণ্ড দ্বীপপুঞ্জৰ পাউণ্ড',
+    symbolNarrow: '£',
+  );
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'ব্ৰিটিছ পাউণ্ড',
+    symbol: '£',
+    symbolNarrow: '£',
+  );
+  static const _gel = Currency(
+    _cld,
+    'GEL',
+    'জৰ্জিয়ান লাৰি',
+    symbolNarrow: '₾',
+  );
   static const _ghs = Currency(_cld, 'GHS', 'ঘানাৰ চেডি', symbolNarrow: 'GH₵');
-  static const _gip =
-      Currency(_cld, 'GIP', 'জিব্ৰাল্টৰ পাউণ্ড', symbolNarrow: '£');
+  static const _gip = Currency(
+    _cld,
+    'GIP',
+    'জিব্ৰাল্টৰ পাউণ্ড',
+    symbolNarrow: '£',
+  );
   static const _gmd = Currency(_cld, 'GMD', 'গাম্বিয়া ডালাছি');
   static const _gnf = Currency(_cld, 'GNF', 'গিনি ফ্ৰেংক', symbolNarrow: 'FG');
-  static const _gtq =
-      Currency(_cld, 'GTQ', 'গুৱাটেমালা কুৱেৎজাল', symbolNarrow: 'Q');
-  static const _gyd =
-      Currency(_cld, 'GYD', 'গায়ানিজ ডলাৰ', symbolNarrow: r'$');
-  static const _hkd =
-      Currency(_cld, 'HKD', 'হং কং ডলাৰ', symbol: r'HK$', symbolNarrow: r'$');
-  static const _hnl =
-      Currency(_cld, 'HNL', 'হোন্দুৰান লেম্পিৰা', symbolNarrow: 'L');
-  static const _hrk =
-      Currency(_cld, 'HRK', 'ক্ৰোৱেছিয়ান কুনা', symbolNarrow: 'kn');
+  static const _gtq = Currency(
+    _cld,
+    'GTQ',
+    'গুৱাটেমালা কুৱেৎজাল',
+    symbolNarrow: 'Q',
+  );
+  static const _gyd = Currency(
+    _cld,
+    'GYD',
+    'গায়ানিজ ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'হং কং ডলাৰ',
+    symbol: r'HK$',
+    symbolNarrow: r'$',
+  );
+  static const _hnl = Currency(
+    _cld,
+    'HNL',
+    'হোন্দুৰান লেম্পিৰা',
+    symbolNarrow: 'L',
+  );
+  static const _hrk = Currency(
+    _cld,
+    'HRK',
+    'ক্ৰোৱেছিয়ান কুনা',
+    symbolNarrow: 'kn',
+  );
   static const _htg = Currency(_cld, 'HTG', 'হাইটিয়ান গৌৰ্ড');
-  static const _huf =
-      Currency(_cld, 'HUF', 'হাংগেৰীয়ান ফ’ৰিণ্ট', symbolNarrow: 'Ft');
-  static const _idr =
-      Currency(_cld, 'IDR', 'ইণ্ডোনেচিয়ান ৰুপিয়াহ', symbolNarrow: 'Rp');
-  static const _ils = Currency(_cld, 'ILS', 'ইজৰাইলী নিউ শ্বেকেল',
-      symbol: '₪', symbolNarrow: '₪');
-  static const _inr =
-      Currency(_cld, 'INR', 'ভাৰতীয় ৰুপী', symbol: '₹', symbolNarrow: '₹');
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'হাংগেৰীয়ান ফ’ৰিণ্ট',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'ইণ্ডোনেচিয়ান ৰুপিয়াহ',
+    symbolNarrow: 'Rp',
+  );
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'ইজৰাইলী নিউ শ্বেকেল',
+    symbol: '₪',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'ভাৰতীয় ৰুপী',
+    symbol: '₹',
+    symbolNarrow: '₹',
+  );
   static const _iqd = Currency(_cld, 'IQD', 'ইৰাকী ডিনাৰ');
   static const _irr = Currency(_cld, 'IRR', 'ইৰানীয়ান ৰিয়েল');
-  static const _isk = Currency(_cld, 'ISK', 'আইচলেণ্ডিক ক্ৰোনা',
-      one: 'আইচলেণ্ডিক ক্ৰোনা',
-      other: 'আইচলেণ্ডিক ক্ৰোনাৰ',
-      symbolNarrow: 'kr');
-  static const _jmd =
-      Currency(_cld, 'JMD', 'জামাইকান ডলাৰ', symbolNarrow: r'$');
+  static const _isk = Currency(
+    _cld,
+    'ISK',
+    'আইচলেণ্ডিক ক্ৰোনা',
+    one: 'আইচলেণ্ডিক ক্ৰোনা',
+    other: 'আইচলেণ্ডিক ক্ৰোনাৰ',
+    symbolNarrow: 'kr',
+  );
+  static const _jmd = Currency(
+    _cld,
+    'JMD',
+    'জামাইকান ডলাৰ',
+    symbolNarrow: r'$',
+  );
   static const _jod = Currency(_cld, 'JOD', 'জৰ্ডানিয়ান ডিনাৰ');
-  static const _jpy =
-      Currency(_cld, 'JPY', 'জাপানী য়েন', symbol: 'JP¥', symbolNarrow: '¥');
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'জাপানী য়েন',
+    symbol: 'JP¥',
+    symbolNarrow: '¥',
+  );
   static const _kes = Currency(_cld, 'KES', 'কেনিয়ান শ্বিলিং');
-  static const _kgs =
-      Currency(_cld, 'KGS', 'কিৰ্গিস্তানী ছোম', symbolNarrow: '⃀');
-  static const _khr =
-      Currency(_cld, 'KHR', 'কেম্ব’ডিয়ান ৰিয়েল', symbolNarrow: '៛');
-  static const _kmf =
-      Currency(_cld, 'KMF', 'ক’মোৰিয়ান ফ্ৰেংক', symbolNarrow: 'CF');
-  static const _kpw =
-      Currency(_cld, 'KPW', 'উত্তৰ কোৰিয়াৰ ওৱান', symbolNarrow: '₩');
-  static const _krw = Currency(_cld, 'KRW', 'দক্ষিণ কোৰিয়াৰ ওৱান',
-      symbol: '₩', symbolNarrow: '₩');
+  static const _kgs = Currency(
+    _cld,
+    'KGS',
+    'কিৰ্গিস্তানী ছোম',
+    symbolNarrow: '⃀',
+  );
+  static const _khr = Currency(
+    _cld,
+    'KHR',
+    'কেম্ব’ডিয়ান ৰিয়েল',
+    symbolNarrow: '៛',
+  );
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'ক’মোৰিয়ান ফ্ৰেংক',
+    symbolNarrow: 'CF',
+  );
+  static const _kpw = Currency(
+    _cld,
+    'KPW',
+    'উত্তৰ কোৰিয়াৰ ওৱান',
+    symbolNarrow: '₩',
+  );
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'দক্ষিণ কোৰিয়াৰ ওৱান',
+    symbol: '₩',
+    symbolNarrow: '₩',
+  );
   static const _kwd = Currency(_cld, 'KWD', 'কুৱেইটি ডিনাৰ');
-  static const _kyd =
-      Currency(_cld, 'KYD', 'কেইমেন দ্বীপপুঞ্জৰ ডলাৰ', symbolNarrow: r'$');
-  static const _kzt =
-      Currency(_cld, 'KZT', 'কাজাখস্তানী তেঞ্জ', symbolNarrow: '₸');
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'কেইমেন দ্বীপপুঞ্জৰ ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'কাজাখস্তানী তেঞ্জ',
+    symbolNarrow: '₸',
+  );
   static const _lak = Currency(_cld, 'LAK', 'লাওচিয়ান কিপ', symbolNarrow: '₭');
-  static const _lbp =
-      Currency(_cld, 'LBP', 'লেবানীজ পাউণ্ড', symbolNarrow: 'L£');
-  static const _lkr =
-      Currency(_cld, 'LKR', 'শ্ৰীলংকান ৰুপী', symbolNarrow: 'Rs');
-  static const _lrd =
-      Currency(_cld, 'LRD', 'লাইবেৰিয়ান ডলাৰ', symbolNarrow: r'$');
-  static const _lsl = Currency(_cld, 'LSL', 'লেচোথো লোটি',
-      one: 'লেচোথো লোটি', other: 'লেচোথো লোটিচ');
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'লেবানীজ পাউণ্ড',
+    symbolNarrow: 'L£',
+  );
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'শ্ৰীলংকান ৰুপী',
+    symbolNarrow: 'Rs',
+  );
+  static const _lrd = Currency(
+    _cld,
+    'LRD',
+    'লাইবেৰিয়ান ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _lsl = Currency(
+    _cld,
+    'LSL',
+    'লেচোথো লোটি',
+    one: 'লেচোথো লোটি',
+    other: 'লেচোথো লোটিচ',
+  );
   static const _ltl = Currency(_cld, 'LTL', 'LTL', symbolNarrow: 'Lt');
   static const _lvl = Currency(_cld, 'LVL', 'LVL', symbolNarrow: 'Ls');
   static const _lyd = Currency(_cld, 'LYD', 'লিবিয়ান ডিনাৰ');
   static const _mad = Currency(_cld, 'MAD', 'মৰোক্কান ডিৰহাম');
-  static const _mdl = Currency(_cld, 'MDL', 'মোলডোভান লেউ',
-      one: 'মোলডোভান লেউ', other: 'মোলডোভান লেই');
-  static const _mga =
-      Currency(_cld, 'MGA', 'মালাগাছী এৰিয়াৰী', symbolNarrow: 'Ar');
+  static const _mdl = Currency(
+    _cld,
+    'MDL',
+    'মোলডোভান লেউ',
+    one: 'মোলডোভান লেউ',
+    other: 'মোলডোভান লেই',
+  );
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'মালাগাছী এৰিয়াৰী',
+    symbolNarrow: 'Ar',
+  );
   static const _mkd = Currency(_cld, 'MKD', 'মেচিডোনীয় ডেনাৰ');
-  static const _mmk =
-      Currency(_cld, 'MMK', 'ম্যানমাৰ কিয়াট', symbolNarrow: 'K');
-  static const _mnt =
-      Currency(_cld, 'MNT', 'মঙ্গোলিয়ান টুৰ্গিক', symbolNarrow: '₮');
+  static const _mmk = Currency(
+    _cld,
+    'MMK',
+    'ম্যানমাৰ কিয়াট',
+    symbolNarrow: 'K',
+  );
+  static const _mnt = Currency(
+    _cld,
+    'MNT',
+    'মঙ্গোলিয়ান টুৰ্গিক',
+    symbolNarrow: '₮',
+  );
   static const _mop = Currency(_cld, 'MOP', 'মেকানীজ পাটাকা');
   static const _mro = Currency(_cld, 'MRO', 'ম’ৰিটেনিয়ান ঔগুইয়া (1973–2017)');
   static const _mru = Currency(_cld, 'MRU', 'ম’ৰিটেনিয়ান ঔগুইয়া');
-  static const _mur =
-      Currency(_cld, 'MUR', 'মৰিচিয়ান ৰুপী', symbolNarrow: 'Rs');
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'মৰিচিয়ান ৰুপী',
+    symbolNarrow: 'Rs',
+  );
   static const _mvr = Currency(_cld, 'MVR', 'মালডিভিয়ান ৰুফিয়া');
   static const _mwk = Currency(_cld, 'MWK', 'মালাউইয়ান কোৱাচা');
-  static const _mxn = Currency(_cld, 'MXN', 'মেক্সিকান পেছো',
-      symbol: r'MX$', symbolNarrow: r'$');
-  static const _myr =
-      Currency(_cld, 'MYR', 'মালায়েচিয়ান ৰিংগিট', symbolNarrow: 'RM');
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'মেক্সিকান পেছো',
+    symbol: r'MX$',
+    symbolNarrow: r'$',
+  );
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'মালায়েচিয়ান ৰিংগিট',
+    symbolNarrow: 'RM',
+  );
   static const _mzn = Currency(_cld, 'MZN', 'মোজাম্বিকান মেটিকল');
-  static const _nad =
-      Currency(_cld, 'NAD', 'নামিবিয়ান ডলাৰ', symbolNarrow: r'$');
-  static const _ngn =
-      Currency(_cld, 'NGN', 'নাইজেৰিয়ান নাইৰা', symbolNarrow: '₦');
-  static const _nio =
-      Currency(_cld, 'NIO', 'নিকাৰাগুৱান কোৰ্ডোবা', symbolNarrow: r'C$');
-  static const _nok = Currency(_cld, 'NOK', 'নৰৱেজিয়ান ক্ৰোন',
-      one: 'নৰৱেজিয়ান ক্ৰোন', other: 'নৰৱেজিয়ান ক্ৰোনাৰ', symbolNarrow: 'kr');
+  static const _nad = Currency(
+    _cld,
+    'NAD',
+    'নামিবিয়ান ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _ngn = Currency(
+    _cld,
+    'NGN',
+    'নাইজেৰিয়ান নাইৰা',
+    symbolNarrow: '₦',
+  );
+  static const _nio = Currency(
+    _cld,
+    'NIO',
+    'নিকাৰাগুৱান কোৰ্ডোবা',
+    symbolNarrow: r'C$',
+  );
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'নৰৱেজিয়ান ক্ৰোন',
+    one: 'নৰৱেজিয়ান ক্ৰোন',
+    other: 'নৰৱেজিয়ান ক্ৰোনাৰ',
+    symbolNarrow: 'kr',
+  );
   static const _npr = Currency(_cld, 'NPR', 'নেপালী ৰুপী', symbolNarrow: 'Rs');
-  static const _nzd = Currency(_cld, 'NZD', 'নিউজিলেণ্ড ডলাৰ',
-      symbol: r'NZ$', symbolNarrow: r'$');
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'নিউজিলেণ্ড ডলাৰ',
+    symbol: r'NZ$',
+    symbolNarrow: r'$',
+  );
   static const _omr = Currency(_cld, 'OMR', 'ওমানি ৰিয়েল');
   static const _pab = Currency(_cld, 'PAB', 'পানামেনিয়ান বাল্বোৱা');
   static const _pen = Currency(_cld, 'PEN', 'পেৰুভিয়ান ছ’ল');
   static const _pgk = Currency(_cld, 'PGK', 'পাপুৱা নিউ গিনি কিনা');
-  static const _php =
-      Currency(_cld, 'PHP', 'ফিলিপিন পেইছ’', symbol: 'PHP', symbolNarrow: '₱');
-  static const _pkr =
-      Currency(_cld, 'PKR', 'পাকিস্তানী ৰুপী', symbolNarrow: 'Rs');
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'ফিলিপিন পেইছ’',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'পাকিস্তানী ৰুপী',
+    symbolNarrow: 'Rs',
+  );
   static const _pln = Currency(_cld, 'PLN', 'প’লিচ জোল্টী', symbolNarrow: 'zł');
-  static const _pyg =
-      Currency(_cld, 'PYG', 'পাৰাগুয়ান গুৱাৰানি', symbolNarrow: '₲');
+  static const _pyg = Currency(
+    _cld,
+    'PYG',
+    'পাৰাগুয়ান গুৱাৰানি',
+    symbolNarrow: '₲',
+  );
   static const _qar = Currency(_cld, 'QAR', 'কাটাৰি ৰিয়েল');
-  static const _ron =
-      Currency(_cld, 'RON', 'ৰোমানীয় লেউ', symbolNarrow: 'lei');
+  static const _ron = Currency(
+    _cld,
+    'RON',
+    'ৰোমানীয় লেউ',
+    symbolNarrow: 'lei',
+  );
   static const _rsd = Currency(_cld, 'RSD', 'চাৰ্বিয়ান ডিনাৰ');
-  static const _rub =
-      Currency(_cld, 'RUB', 'ৰাছিয়ান ৰুব্‌ল', symbolNarrow: '₽');
-  static const _rwf =
-      Currency(_cld, 'RWF', 'ৰোৱান্দান ফ্ৰেংক', symbolNarrow: 'RF');
+  static const _rub = Currency(
+    _cld,
+    'RUB',
+    'ৰাছিয়ান ৰুব্‌ল',
+    symbolNarrow: '₽',
+  );
+  static const _rwf = Currency(
+    _cld,
+    'RWF',
+    'ৰোৱান্দান ফ্ৰেংক',
+    symbolNarrow: 'RF',
+  );
   static const _sar = Currency(_cld, 'SAR', 'চৌডি ৰিয়েল');
-  static const _sbd =
-      Currency(_cld, 'SBD', 'চোলোমোন দ্বীপপুঞ্জৰ ডলাৰ', symbolNarrow: r'$');
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'চোলোমোন দ্বীপপুঞ্জৰ ডলাৰ',
+    symbolNarrow: r'$',
+  );
   static const _scr = Currency(_cld, 'SCR', 'ছেচেলৱা ৰুপী');
   static const _sdg = Currency(_cld, 'SDG', 'চুডানী পাউণ্ড');
-  static const _sek = Currency(_cld, 'SEK', 'চুইডিছ ক্ৰোনা',
-      one: 'চুইডিছ ক্ৰোনা', other: 'চুইডিছ ক্ৰোনোৰ', symbolNarrow: 'kr');
-  static const _sgd =
-      Currency(_cld, 'SGD', 'ছিংগাপুৰ ডলাৰ', symbolNarrow: r'$');
-  static const _shp =
-      Currency(_cld, 'SHP', 'ছেইণ্ট হেলেনা পাউণ্ড', symbolNarrow: '£');
+  static const _sek = Currency(
+    _cld,
+    'SEK',
+    'চুইডিছ ক্ৰোনা',
+    one: 'চুইডিছ ক্ৰোনা',
+    other: 'চুইডিছ ক্ৰোনোৰ',
+    symbolNarrow: 'kr',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'ছিংগাপুৰ ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'ছেইণ্ট হেলেনা পাউণ্ড',
+    symbolNarrow: '£',
+  );
   static const _sle = Currency(_cld, 'SLE', 'চিয়েৰা লিঅ’নৰ লিঅ’ন');
   static const _sll = Currency(_cld, 'SLL', 'চিয়েৰা লিঅ’নৰ লিঅ’ন (1964—2022)');
   static const _sos = Currency(_cld, 'SOS', 'চোমালি শ্বিলিং');
-  static const _srd =
-      Currency(_cld, 'SRD', 'ছুৰিনামী ডলাৰ', symbolNarrow: r'$');
-  static const _ssp =
-      Currency(_cld, 'SSP', 'দক্ষিণ চুডানীজ পাউণ্ড', symbolNarrow: '£');
-  static const _std =
-      Currency(_cld, 'STD', 'চাও টোমে আৰু প্ৰিনচিপে ডোব্‌ৰা (1977–2017)');
-  static const _stn = Currency(_cld, 'STN', 'চাও টোমে আৰু প্ৰিনচিপে ডোব্‌ৰা',
-      symbolNarrow: 'Db');
-  static const _syp =
-      Currency(_cld, 'SYP', 'চিৰিয়ান পাউণ্ড', symbolNarrow: '£');
-  static const _szl = Currency(_cld, 'SZL', 'স্বাজি লিলেংগেনি',
-      one: 'স্বাজি লিলেংগেনি', other: 'স্বাজি এমেলানজেনি');
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'ছুৰিনামী ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'দক্ষিণ চুডানীজ পাউণ্ড',
+    symbolNarrow: '£',
+  );
+  static const _std = Currency(
+    _cld,
+    'STD',
+    'চাও টোমে আৰু প্ৰিনচিপে ডোব্‌ৰা (1977–2017)',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'চাও টোমে আৰু প্ৰিনচিপে ডোব্‌ৰা',
+    symbolNarrow: 'Db',
+  );
+  static const _syp = Currency(
+    _cld,
+    'SYP',
+    'চিৰিয়ান পাউণ্ড',
+    symbolNarrow: '£',
+  );
+  static const _szl = Currency(
+    _cld,
+    'SZL',
+    'স্বাজি লিলেংগেনি',
+    one: 'স্বাজি লিলেংগেনি',
+    other: 'স্বাজি এমেলানজেনি',
+  );
   static const _thb = Currency(_cld, 'THB', 'থাই বাত', symbolNarrow: '฿');
   static const _tjs = Currency(_cld, 'TJS', 'তাজিকিস্তানী ছোমনি');
   static const _tmt = Currency(_cld, 'TMT', 'তুৰ্কমেনিস্তানী মানাত');
   static const _tnd = Currency(_cld, 'TND', 'টুনিচিয়ান ডিনাৰ');
-  static const _top =
-      Currency(_cld, 'TOP', 'টংগান পাআংগা', symbolNarrow: r'T$');
-  static const _$try = Currency(_cld, 'TRY', 'তুৰ্কীৰ লিৰা',
-      symbolNarrow: '₺', symbolVariant: 'TL');
-  static const _ttd =
-      Currency(_cld, 'TTD', 'ট্ৰিনিডাড আৰু টোবাগো ডলাৰ', symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'নিউ টাইৱান ডলাৰ',
-      symbol: r'NT$', symbolNarrow: r'$');
+  static const _top = Currency(
+    _cld,
+    'TOP',
+    'টংগান পাআংগা',
+    symbolNarrow: r'T$',
+  );
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'তুৰ্কীৰ লিৰা',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'ট্ৰিনিডাড আৰু টোবাগো ডলাৰ',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'নিউ টাইৱান ডলাৰ',
+    symbol: r'NT$',
+    symbolNarrow: r'$',
+  );
   static const _tzs = Currency(_cld, 'TZS', 'টানজানিয়ান শ্বিলিং');
-  static const _uah =
-      Currency(_cld, 'UAH', 'ইউক্ৰেইনীয় হৃভনিয়া', symbolNarrow: '₴');
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'ইউক্ৰেইনীয় হৃভনিয়া',
+    symbolNarrow: '₴',
+  );
   static const _ugx = Currency(_cld, 'UGX', 'উগাণ্ডান শ্বিলিং');
-  static const _usd =
-      Currency(_cld, 'USD', 'ইউ. এছ. ডলাৰ', symbol: r'US$', symbolNarrow: r'$');
-  static const _uyu =
-      Currency(_cld, 'UYU', 'উৰুগুৱেয়ান পেছো', symbolNarrow: r'$');
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'ইউ. এছ. ডলাৰ',
+    symbol: r'US$',
+    symbolNarrow: r'$',
+  );
+  static const _uyu = Currency(
+    _cld,
+    'UYU',
+    'উৰুগুৱেয়ান পেছো',
+    symbolNarrow: r'$',
+  );
   static const _uzs = Currency(_cld, 'UZS', 'উজবেকিস্তানী ছোম');
   static const _veb = Currency(_cld, 'VEB', 'ভেনিজুৱেলান বলিভাৰ (1871–2008)');
-  static const _vef = Currency(_cld, 'VEF', 'ভেনিজুৱেলান বলিভাৰ (2008–2018)',
-      symbolNarrow: 'Bs');
-  static const _ves = Currency(_cld, 'VES', 'ভেনিজুৱেলান বলিভাৰ',
-      one: 'ভেনিজুৱেলান ব’লিভাৰ', other: 'ভেনিজুৱেলান ব’লিভাৰছ্');
-  static const _vnd =
-      Currency(_cld, 'VND', 'ভিয়েটনামীজ ডং', symbol: '₫', symbolNarrow: '₫');
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'ভেনিজুৱেলান বলিভাৰ (2008–2018)',
+    symbolNarrow: 'Bs',
+  );
+  static const _ves = Currency(
+    _cld,
+    'VES',
+    'ভেনিজুৱেলান বলিভাৰ',
+    one: 'ভেনিজুৱেলান ব’লিভাৰ',
+    other: 'ভেনিজুৱেলান ব’লিভাৰছ্',
+  );
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'ভিয়েটনামীজ ডং',
+    symbol: '₫',
+    symbolNarrow: '₫',
+  );
   static const _vuv = Currency(_cld, 'VUV', 'ভানাটুৰ ভাটু');
   static const _wst = Currency(_cld, 'WST', 'ছামোৱান টালা');
-  static const _xaf =
-      Currency(_cld, 'XAF', 'মধ্য আফ্ৰিকান CFA ফ্ৰেংক', symbol: 'FCFA');
-  static const _xcd = Currency(_cld, 'XCD', 'ইষ্ট কেৰিবিয়ান ডলাৰ',
-      symbol: r'EC$', symbolNarrow: r'$');
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'মধ্য আফ্ৰিকান CFA ফ্ৰেংক',
+    symbol: 'FCFA',
+  );
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'ইষ্ট কেৰিবিয়ান ডলাৰ',
+    symbol: r'EC$',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
-  static const _xof =
-      Currency(_cld, 'XOF', 'পশ্চিম আফ্ৰিকান CFA ফ্ৰেংক', symbol: 'F CFA');
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'পশ্চিম আফ্ৰিকান CFA ফ্ৰেংক',
+    symbol: 'F CFA',
+  );
   static const _xpf = Currency(_cld, 'XPF', 'CFP ফ্ৰেংক', symbol: 'CFPF');
-  static const _xxx = Currency(_cld, 'XXX', 'অজ্ঞাত মুদ্ৰা',
-      one: '(মুদ্ৰাৰ অজ্ঞাত একক)', other: '(অজ্ঞাত মুদ্ৰা)', symbol: '¤');
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    'অজ্ঞাত মুদ্ৰা',
+    one: '(মুদ্ৰাৰ অজ্ঞাত একক)',
+    other: '(অজ্ঞাত মুদ্ৰা)',
+    symbol: '¤',
+  );
   static const _yer = Currency(_cld, 'YER', 'য়েমেনী ৰিয়েল');
-  static const _zar =
-      Currency(_cld, 'ZAR', 'দক্ষিণ আফ্ৰিকাৰ ৰাণ্ড', symbolNarrow: 'R');
-  static const _zmw =
-      Currency(_cld, 'ZMW', 'জাম্বিয়ান কোৱাচা', symbolNarrow: 'ZK');
+  static const _zar = Currency(
+    _cld,
+    'ZAR',
+    'দক্ষিণ আফ্ৰিকাৰ ৰাণ্ড',
+    symbolNarrow: 'R',
+  );
+  static const _zmw = Currency(
+    _cld,
+    'ZMW',
+    'জাম্বিয়ান কোৱাচা',
+    symbolNarrow: 'ZK',
+  );
 
   @override
   final unknownCurrency = _xxx;
@@ -10511,8 +10197,9 @@ class TimeZonesAs extends TimeZones {
     'America/Anguilla': TimeZoneNames(exemplarCity: 'এনগুইলা'),
     'America/Antigua': TimeZoneNames(exemplarCity: 'এণ্টিগুৱা'),
     'America/Araguaina': TimeZoneNames(exemplarCity: 'আৰাগায়েনা'),
-    'America/Argentina/Rio_Gallegos':
-        TimeZoneNames(exemplarCity: 'ৰিঅ’ গালেগোছ'),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'ৰিঅ’ গালেগোছ',
+    ),
     'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'ছেন জুৱান'),
     'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'উচুআইয়া'),
     'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'লা ৰিওজা'),
@@ -10570,17 +10257,22 @@ class TimeZonesAs extends TimeZones {
     'America/Halifax': TimeZoneNames(exemplarCity: 'হেলিফেক্স'),
     'America/Havana': TimeZoneNames(exemplarCity: 'হাভানা'),
     'America/Hermosillo': TimeZoneNames(exemplarCity: 'হাৰ্মোছিল্লো'),
-    'America/Indiana/Vincennes':
-        TimeZoneNames(exemplarCity: 'ভিনচেনেছ, ইণ্ডিয়ানা'),
-    'America/Indiana/Petersburg':
-        TimeZoneNames(exemplarCity: 'পিটাৰ্ছবাৰ্গ, ইণ্ডিয়ানা'),
-    'America/Indiana/Tell_City':
-        TimeZoneNames(exemplarCity: 'টেল চিটী, ইণ্ডিয়ানা'),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'ভিনচেনেছ, ইণ্ডিয়ানা',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'পিটাৰ্ছবাৰ্গ, ইণ্ডিয়ানা',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'টেল চিটী, ইণ্ডিয়ানা',
+    ),
     'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'নক্স, ইণ্ডিয়ানা'),
-    'America/Indiana/Winamac':
-        TimeZoneNames(exemplarCity: 'উইনামেক, ইণ্ডিয়ানা'),
-    'America/Indiana/Marengo':
-        TimeZoneNames(exemplarCity: 'মাৰেংগো, ইণ্ডিয়ানা'),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'উইনামেক, ইণ্ডিয়ানা',
+    ),
+    'America/Indiana/Marengo': TimeZoneNames(
+      exemplarCity: 'মাৰেংগো, ইণ্ডিয়ানা',
+    ),
     'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'ভেভে, ইণ্ডিয়ানা'),
     'America/Indianapolis': TimeZoneNames(exemplarCity: 'ইণ্ডিয়ানাপ’লিছ'),
     'America/Inuvik': TimeZoneNames(exemplarCity: 'ইনুভিক'),
@@ -10588,15 +10280,17 @@ class TimeZonesAs extends TimeZones {
     'America/Jamaica': TimeZoneNames(exemplarCity: 'জামাইকা'),
     'America/Jujuy': TimeZoneNames(exemplarCity: 'জুজুই'),
     'America/Juneau': TimeZoneNames(exemplarCity: 'জুনেউ'),
-    'America/Kentucky/Monticello':
-        TimeZoneNames(exemplarCity: 'মণ্টিচেলো, কেণ্টুকী'),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'মণ্টিচেলো, কেণ্টুকী',
+    ),
     'America/Kralendijk': TimeZoneNames(exemplarCity: 'ক্ৰালেণ্ডিজিক'),
     'America/La_Paz': TimeZoneNames(exemplarCity: 'লা পাজ'),
     'America/Lima': TimeZoneNames(exemplarCity: 'লিমা'),
     'America/Los_Angeles': TimeZoneNames(exemplarCity: 'লছ এঞ্জেলছ্'),
     'America/Louisville': TimeZoneNames(exemplarCity: 'লুইছভিলে'),
-    'America/Lower_Princes':
-        TimeZoneNames(exemplarCity: 'ল’ৱাৰ প্ৰিন্সেছ কোৱাৰ্টাৰ'),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'ল’ৱাৰ প্ৰিন্সেছ কোৱাৰ্টাৰ',
+    ),
     'America/Maceio': TimeZoneNames(exemplarCity: 'মেচিও'),
     'America/Managua': TimeZoneNames(exemplarCity: 'মানাগুৱা'),
     'America/Manaus': TimeZoneNames(exemplarCity: 'মানাছ'),
@@ -10618,12 +10312,15 @@ class TimeZonesAs extends TimeZones {
     'America/New_York': TimeZoneNames(exemplarCity: 'নিউ ইয়ৰ্ক'),
     'America/Nome': TimeZoneNames(exemplarCity: 'নোম'),
     'America/Noronha': TimeZoneNames(exemplarCity: 'নোৰোন্‌হা'),
-    'America/North_Dakota/Beulah':
-        TimeZoneNames(exemplarCity: 'বেউলাহ, উত্তৰ ডাকোটা'),
-    'America/North_Dakota/New_Salem':
-        TimeZoneNames(exemplarCity: 'নিউ ছালেম, উত্তৰ ডাকোটা'),
-    'America/North_Dakota/Center':
-        TimeZoneNames(exemplarCity: 'চেণ্টাৰ, উত্তৰ ডাকোটা'),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'বেউলাহ, উত্তৰ ডাকোটা',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'নিউ ছালেম, উত্তৰ ডাকোটা',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'চেণ্টাৰ, উত্তৰ ডাকোটা',
+    ),
     'America/Ojinaga': TimeZoneNames(exemplarCity: 'অ’জিনাগা'),
     'America/Panama': TimeZoneNames(exemplarCity: 'পানামা'),
     'America/Paramaribo': TimeZoneNames(exemplarCity: 'পাৰামাৰিবো'),
@@ -10684,7 +10381,9 @@ class TimeZonesAs extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: 'চিছিনাউ'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'কোপেনহাগেন'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'ডাবলিন', long: TimeZoneName(daylight: 'আইৰিচ মান সময়')),
+      exemplarCity: 'ডাবলিন',
+      long: TimeZoneName(daylight: 'আইৰিচ মান সময়'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'জিব্ৰাল্টৰ'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: 'গোৰেনচি'),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: 'হেলছিংকি'),
@@ -10697,8 +10396,9 @@ class TimeZonesAs extends TimeZones {
     'Europe/Lisbon': TimeZoneNames(exemplarCity: 'লিছবন'),
     'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'ল্যুবেলজানা'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'লণ্ডন',
-        long: TimeZoneName(daylight: 'ব্ৰিটিছ গ্ৰীষ্মকালীন সময়')),
+      exemplarCity: 'লণ্ডন',
+      long: TimeZoneName(daylight: 'ব্ৰিটিছ গ্ৰীষ্মকালীন সময়'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'লাক্সেমবাৰ্গ'),
     'Europe/Madrid': TimeZoneNames(exemplarCity: 'মাদ্ৰিদ'),
     'Europe/Malta': TimeZoneNames(exemplarCity: 'মাল্টা'),
@@ -10928,8 +10628,9 @@ class TimeZonesAs extends TimeZones {
     'Arctic/Longyearbyen': TimeZoneNames(exemplarCity: 'লংগেইৰবায়েন'),
     'Antarctica/Casey': TimeZoneNames(exemplarCity: 'কেছী'),
     'Antarctica/Davis': TimeZoneNames(exemplarCity: 'ডেভিছ'),
-    'Antarctica/DumontDUrville':
-        TimeZoneNames(exemplarCity: 'ডুমোণ্ট ডি আৰ্ভিলৰ'),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'ডুমোণ্ট ডি আৰ্ভিলৰ',
+    ),
     'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'মেক্‌কুৱেৰী'),
     'Antarctica/Mawson': TimeZoneNames(exemplarCity: 'মাউছন'),
     'Antarctica/McMurdo': TimeZoneNames(exemplarCity: 'মেকমুৰ্ডু'),
@@ -10939,8 +10640,9 @@ class TimeZonesAs extends TimeZones {
     'Antarctica/Troll': TimeZoneNames(exemplarCity: 'ট্ৰোল'),
     'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'ভোষ্টক'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'সমন্বিত সাৰ্বজনীন সময়'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'সমন্বিত সাৰ্বজনীন সময়'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'অজ্ঞাত চহৰ'),
   };
 
@@ -10948,504 +10650,832 @@ class TimeZonesAs extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Afghanistan': MetaZone('Afghanistan',
-        long: TimeZoneName(standard: 'আফগানিস্তানৰ সময়')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'মধ্য আফ্ৰিকাৰ সময়')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'পূব আফ্ৰিকাৰ সময়')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'দক্ষিণ আফ্ৰিকাৰ মান সময়')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'পশ্চিম আফ্ৰিকাৰ সময়',
-            standard: 'পশ্চিম আফ্ৰিকাৰ মান সময়',
-            daylight: 'পশ্চিম আফ্ৰিকাৰ গ্ৰীষ্মকালীন সময়')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'আলাস্কাৰ সময়',
-            standard: 'আলাস্কাৰ মান সময়',
-            daylight: 'আলাস্কাৰ ডেলাইট সময়')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'আমাজনৰ সময়',
-            standard: 'আমাজনৰ মান সময়',
-            daylight: 'আমাজনৰ গ্ৰীষ্মকালীন সময়')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'উত্তৰ আমেৰিকাৰ কেন্দ্ৰীয় সময়',
-            standard: 'উত্তৰ আমেৰিকাৰ কেন্দ্ৰীয় মান সময়',
-            daylight: 'উত্তৰ আমেৰিকাৰ কেন্দ্ৰীয় ডেলাইট সময়')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'উত্তৰ আমেৰিকাৰ প্ৰাচ্য সময়',
-            standard: 'উত্তৰ আমেৰিকাৰ প্ৰাচ্য মান সময়',
-            daylight: 'উত্তৰ আমেৰিকাৰ প্ৰাচ্য ডেলাইট সময়')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'উত্তৰ আমেৰিকাৰ পৰ্ব্বতীয় সময়',
-            standard: 'উত্তৰ আমেৰিকাৰ পৰ্ব্বতীয় মান সময়',
-            daylight: 'উত্তৰ আমেৰিকাৰ পৰ্ব্বতীয় ডেলাইট সময়')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'উত্তৰ আমেৰিকাৰ প্ৰশান্ত সময়',
-            standard: 'উত্তৰ আমেৰিকাৰ প্ৰশান্ত মান সময়',
-            daylight: 'উত্তৰ আমেৰিকাৰ ডেলাইট সময়')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'আপিয়াৰ সময়',
-            standard: 'আপিয়াৰ মান সময়',
-            daylight: 'আপিয়াৰ ডেলাইট সময়')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'আৰবীয় সময়',
-            standard: 'আৰবীয় মান সময়',
-            daylight: 'আৰবীয় ডেলাইট সময়')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'আৰ্জেণ্টিনাৰ সময়',
-            standard: 'আৰ্জেণ্টিনাৰ মান সময়',
-            daylight: 'আৰ্জেণ্টিনাৰ গ্ৰীষ্মকালীন সময়')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'পাশ্চাত্য আৰ্জেণ্টিনাৰ সময়',
-            standard: 'পাশ্চাত্য আৰ্জেণ্টিনাৰ মান সময়',
-            daylight: 'পাশ্চাত্য আৰ্জেণ্টিনাৰ গ্ৰীষ্মকালীন সময়')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'আৰ্মেনিয়াৰ সময়',
-            standard: 'আৰ্মেনিয়াৰ মান সময়',
-            daylight: 'আৰ্মেনিয়াৰ গ্ৰীষ্মকালীন সময়')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'আটলাণ্টিক সময়',
-            standard: 'আটলাণ্টিক মান সময়',
-            daylight: 'আটলাণ্টিক ডেলাইট সময়')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'মধ্য অষ্ট্ৰেলিয়াৰ সময়',
-            standard: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় মান সময়',
-            daylight: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় ডেলাইট সময়')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় পাশ্চাত্য সময়',
-            standard: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় পাশ্চাত্য মান সময়',
-            daylight: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় পাশ্চাত্য ডেলাইট সময়')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'প্ৰাচ্য অষ্ট্ৰেলিয়াৰ সময়',
-            standard: 'অষ্ট্ৰেলিয়াৰ প্ৰাচ্য মান সময়',
-            daylight: 'অষ্ট্ৰেলিয়াৰ প্ৰাচ্য ডেলাইট সময়')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'পাশ্চাত্য অষ্ট্ৰেলিয়াৰ সময়',
-            standard: 'অষ্ট্ৰেলিয়াৰ পাশ্চাত্য মান সময়',
-            daylight: 'অষ্ট্ৰেলিয়াৰ পাশ্চাত্য ডেলাইট সময়')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'আজেৰবাইজানৰ সময়',
-            standard: 'আজেৰবাইজানৰ মান সময়',
-            daylight: 'আজেৰবাইজানৰ গ্ৰীষ্মকালীন সময়')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'আজোৰেছ সময়',
-            standard: 'আজোৰেছৰ মান সময়',
-            daylight: 'আজোৰেছৰ গ্ৰীষ্মকালীন সময়')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'বাংলাদেশৰ সময়',
-            standard: 'বাংলাদেশৰ মান সময়',
-            daylight: 'বাংলাদেশৰ গ্ৰীষ্মকালীন সময়')),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'আফগানিস্তানৰ সময়'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'মধ্য আফ্ৰিকাৰ সময়'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'পূব আফ্ৰিকাৰ সময়'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'দক্ষিণ আফ্ৰিকাৰ মান সময়'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'পশ্চিম আফ্ৰিকাৰ সময়',
+        standard: 'পশ্চিম আফ্ৰিকাৰ মান সময়',
+        daylight: 'পশ্চিম আফ্ৰিকাৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'আলাস্কাৰ সময়',
+        standard: 'আলাস্কাৰ মান সময়',
+        daylight: 'আলাস্কাৰ ডেলাইট সময়',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'আমাজনৰ সময়',
+        standard: 'আমাজনৰ মান সময়',
+        daylight: 'আমাজনৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'উত্তৰ আমেৰিকাৰ কেন্দ্ৰীয় সময়',
+        standard: 'উত্তৰ আমেৰিকাৰ কেন্দ্ৰীয় মান সময়',
+        daylight: 'উত্তৰ আমেৰিকাৰ কেন্দ্ৰীয় ডেলাইট সময়',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'উত্তৰ আমেৰিকাৰ প্ৰাচ্য সময়',
+        standard: 'উত্তৰ আমেৰিকাৰ প্ৰাচ্য মান সময়',
+        daylight: 'উত্তৰ আমেৰিকাৰ প্ৰাচ্য ডেলাইট সময়',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'উত্তৰ আমেৰিকাৰ পৰ্ব্বতীয় সময়',
+        standard: 'উত্তৰ আমেৰিকাৰ পৰ্ব্বতীয় মান সময়',
+        daylight: 'উত্তৰ আমেৰিকাৰ পৰ্ব্বতীয় ডেলাইট সময়',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'উত্তৰ আমেৰিকাৰ প্ৰশান্ত সময়',
+        standard: 'উত্তৰ আমেৰিকাৰ প্ৰশান্ত মান সময়',
+        daylight: 'উত্তৰ আমেৰিকাৰ ডেলাইট সময়',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'আপিয়াৰ সময়',
+        standard: 'আপিয়াৰ মান সময়',
+        daylight: 'আপিয়াৰ ডেলাইট সময়',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'আৰবীয় সময়',
+        standard: 'আৰবীয় মান সময়',
+        daylight: 'আৰবীয় ডেলাইট সময়',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'আৰ্জেণ্টিনাৰ সময়',
+        standard: 'আৰ্জেণ্টিনাৰ মান সময়',
+        daylight: 'আৰ্জেণ্টিনাৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'পাশ্চাত্য আৰ্জেণ্টিনাৰ সময়',
+        standard: 'পাশ্চাত্য আৰ্জেণ্টিনাৰ মান সময়',
+        daylight: 'পাশ্চাত্য আৰ্জেণ্টিনাৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'আৰ্মেনিয়াৰ সময়',
+        standard: 'আৰ্মেনিয়াৰ মান সময়',
+        daylight: 'আৰ্মেনিয়াৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'আটলাণ্টিক সময়',
+        standard: 'আটলাণ্টিক মান সময়',
+        daylight: 'আটলাণ্টিক ডেলাইট সময়',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'মধ্য অষ্ট্ৰেলিয়াৰ সময়',
+        standard: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় মান সময়',
+        daylight: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় ডেলাইট সময়',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় পাশ্চাত্য সময়',
+        standard: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় পাশ্চাত্য মান সময়',
+        daylight: 'অষ্ট্ৰেলিয়াৰ কেন্দ্ৰীয় পাশ্চাত্য ডেলাইট সময়',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'প্ৰাচ্য অষ্ট্ৰেলিয়াৰ সময়',
+        standard: 'অষ্ট্ৰেলিয়াৰ প্ৰাচ্য মান সময়',
+        daylight: 'অষ্ট্ৰেলিয়াৰ প্ৰাচ্য ডেলাইট সময়',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'পাশ্চাত্য অষ্ট্ৰেলিয়াৰ সময়',
+        standard: 'অষ্ট্ৰেলিয়াৰ পাশ্চাত্য মান সময়',
+        daylight: 'অষ্ট্ৰেলিয়াৰ পাশ্চাত্য ডেলাইট সময়',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'আজেৰবাইজানৰ সময়',
+        standard: 'আজেৰবাইজানৰ মান সময়',
+        daylight: 'আজেৰবাইজানৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'আজোৰেছ সময়',
+        standard: 'আজোৰেছৰ মান সময়',
+        daylight: 'আজোৰেছৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'বাংলাদেশৰ সময়',
+        standard: 'বাংলাদেশৰ মান সময়',
+        daylight: 'বাংলাদেশৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
     'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'ভুটানৰ সময়')),
-    'Bolivia':
-        MetaZone('Bolivia', long: TimeZoneName(standard: 'বলিভিয়াৰ সময়')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'ব্ৰাজিলিয়াৰ সময়',
-            standard: 'ব্ৰাজিলিয়াৰ মান সময়',
-            daylight: 'ব্ৰাজিলিয়াৰ গ্ৰীষ্মকালীন সময়')),
-    'Brunei': MetaZone('Brunei',
-        long: TimeZoneName(standard: 'ব্ৰুনেই ডাৰুছালেমৰ সময়')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'কেপ ভাৰ্দেৰ সময়',
-            standard: 'কেপ ভাৰ্দেৰ মান সময়',
-            daylight: 'কেপ ভাৰ্দেৰ গ্ৰীষ্মকালীন সময়')),
-    'Chamorro':
-        MetaZone('Chamorro', long: TimeZoneName(standard: 'চামোৰোৰ মান সময়')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'চাথামৰ সময়',
-            standard: 'চাথামৰ মান সময়',
-            daylight: 'চাথামৰ ডেলাইট সময়')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'চিলিৰ সময়',
-            standard: 'চিলিৰ মান সময়',
-            daylight: 'চিলিৰ গ্ৰীষ্মকালীন সময়')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'চীনৰ সময়',
-            standard: 'চীনৰ মান সময়',
-            daylight: 'চীনৰ ডেলাইট সময়')),
-    'Christmas': MetaZone('Christmas',
-        long: TimeZoneName(standard: 'খ্ৰীষ্টমাছ দ্বীপৰ সময়')),
-    'Cocos': MetaZone('Cocos',
-        long: TimeZoneName(standard: 'কোকোছ দ্বীপপুঞ্জৰ সময়')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'কলম্বিয়াৰ সময়',
-            standard: 'কলম্বিয়াৰ মান সময়',
-            daylight: 'কলম্বিয়াৰ গ্ৰীষ্মকালীন সময়')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'কুক দ্বীপপুঞ্জৰ সময়',
-            standard: 'কুক দ্বীপপুঞ্জৰ মান সময়',
-            daylight: 'কুক দ্বীপপুঞ্জৰ অৰ্ধ গ্ৰীষ্মকালীন সময়')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'কিউবাৰ সময়',
-            standard: 'কিউবাৰ মান সময়',
-            daylight: 'কিউবাৰ ডেলাইট সময়')),
+    'Bolivia': MetaZone(
+      'Bolivia',
+      long: TimeZoneName(standard: 'বলিভিয়াৰ সময়'),
+    ),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'ব্ৰাজিলিয়াৰ সময়',
+        standard: 'ব্ৰাজিলিয়াৰ মান সময়',
+        daylight: 'ব্ৰাজিলিয়াৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Brunei': MetaZone(
+      'Brunei',
+      long: TimeZoneName(standard: 'ব্ৰুনেই ডাৰুছালেমৰ সময়'),
+    ),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'কেপ ভাৰ্দেৰ সময়',
+        standard: 'কেপ ভাৰ্দেৰ মান সময়',
+        daylight: 'কেপ ভাৰ্দেৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'চামোৰোৰ মান সময়'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'চাথামৰ সময়',
+        standard: 'চাথামৰ মান সময়',
+        daylight: 'চাথামৰ ডেলাইট সময়',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'চিলিৰ সময়',
+        standard: 'চিলিৰ মান সময়',
+        daylight: 'চিলিৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'চীনৰ সময়',
+        standard: 'চীনৰ মান সময়',
+        daylight: 'চীনৰ ডেলাইট সময়',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'খ্ৰীষ্টমাছ দ্বীপৰ সময়'),
+    ),
+    'Cocos': MetaZone(
+      'Cocos',
+      long: TimeZoneName(standard: 'কোকোছ দ্বীপপুঞ্জৰ সময়'),
+    ),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'কলম্বিয়াৰ সময়',
+        standard: 'কলম্বিয়াৰ মান সময়',
+        daylight: 'কলম্বিয়াৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'কুক দ্বীপপুঞ্জৰ সময়',
+        standard: 'কুক দ্বীপপুঞ্জৰ মান সময়',
+        daylight: 'কুক দ্বীপপুঞ্জৰ অৰ্ধ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'কিউবাৰ সময়',
+        standard: 'কিউবাৰ মান সময়',
+        daylight: 'কিউবাৰ ডেলাইট সময়',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'ডেভিছৰ সময়')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'ডুমোণ্ট-ডি আৰ্ভিলৰ সময়')),
-    'East_Timor':
-        MetaZone('East_Timor', long: TimeZoneName(standard: 'পূব তিমোৰৰ সময়')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'ইষ্টাৰ দ্বীপৰ সময়',
-            standard: 'ইষ্টাৰ দ্বীপৰ মান সময়',
-            daylight: 'ইষ্টাৰ দ্বীপৰ গ্ৰীষ্মকালীন সময়')),
-    'Ecuador':
-        MetaZone('Ecuador', long: TimeZoneName(standard: 'ইকুৱেডৰৰ সময়')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'মধ্য ইউৰোপীয় সময়',
-            standard: 'মধ্য ইউৰোপীয় মান সময়',
-            daylight: 'মধ্য ইউৰোপীয় গ্ৰীষ্মকালীন সময়')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'প্ৰাচ্য ইউৰোপীয় সময়',
-            standard: 'প্ৰাচ্য ইউৰোপীয় মান সময়',
-            daylight: 'প্ৰাচ্য ইউৰোপীয় গ্ৰীষ্মকালীন সময়')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'অগ্ৰ-প্ৰাচ্য ইউৰোপীয় সময়')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'পাশ্চাত্য ইউৰোপীয় সময়',
-            standard: 'পাশ্চাত্য ইউৰোপীয় মান সময়',
-            daylight: 'পাশ্চাত্য ইউৰোপীয় গ্ৰীষ্মকালীন সময়')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'ফকলেণ্ড দ্বীপপুঞ্জৰ সময়',
-            standard: 'ফকলেণ্ড দ্বীপপুঞ্জৰ মান সময়',
-            daylight: 'ফকলেণ্ড দ্বীপপুঞ্জৰ গ্ৰীষ্মকালীন সময়')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'ফিজিৰ সময়',
-            standard: 'ফিজিৰ মান সময়',
-            daylight: 'ফিজিৰ গ্ৰীষ্মকালীন সময়')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'ফ্ৰান্স গয়ানাৰ সময়')),
-    'French_Southern': MetaZone('French_Southern',
-        long: TimeZoneName(standard: 'দক্ষিণ ফ্ৰান্স আৰু এণ্টাৰ্কটিক সময়')),
-    'Galapagos':
-        MetaZone('Galapagos', long: TimeZoneName(standard: 'গালাপাগোছৰ সময়')),
-    'Gambier':
-        MetaZone('Gambier', long: TimeZoneName(standard: 'গেম্বিয়াৰ সময়')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'জৰ্জিয়াৰ সময়',
-            standard: 'জৰ্জিয়াৰ মান সময়',
-            daylight: 'জৰ্জিয়াৰ গ্ৰীষ্মকালীন সময়')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'গিলবাৰ্ট দ্বীপপুঞ্জৰ সময়')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'ডুমোণ্ট-ডি আৰ্ভিলৰ সময়'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'পূব তিমোৰৰ সময়'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'ইষ্টাৰ দ্বীপৰ সময়',
+        standard: 'ইষ্টাৰ দ্বীপৰ মান সময়',
+        daylight: 'ইষ্টাৰ দ্বীপৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      'Ecuador',
+      long: TimeZoneName(standard: 'ইকুৱেডৰৰ সময়'),
+    ),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'মধ্য ইউৰোপীয় সময়',
+        standard: 'মধ্য ইউৰোপীয় মান সময়',
+        daylight: 'মধ্য ইউৰোপীয় গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'প্ৰাচ্য ইউৰোপীয় সময়',
+        standard: 'প্ৰাচ্য ইউৰোপীয় মান সময়',
+        daylight: 'প্ৰাচ্য ইউৰোপীয় গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'অগ্ৰ-প্ৰাচ্য ইউৰোপীয় সময়'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'পাশ্চাত্য ইউৰোপীয় সময়',
+        standard: 'পাশ্চাত্য ইউৰোপীয় মান সময়',
+        daylight: 'পাশ্চাত্য ইউৰোপীয় গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'ফকলেণ্ড দ্বীপপুঞ্জৰ সময়',
+        standard: 'ফকলেণ্ড দ্বীপপুঞ্জৰ মান সময়',
+        daylight: 'ফকলেণ্ড দ্বীপপুঞ্জৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'ফিজিৰ সময়',
+        standard: 'ফিজিৰ মান সময়',
+        daylight: 'ফিজিৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'ফ্ৰান্স গয়ানাৰ সময়'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(standard: 'দক্ষিণ ফ্ৰান্স আৰু এণ্টাৰ্কটিক সময়'),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'গালাপাগোছৰ সময়'),
+    ),
+    'Gambier': MetaZone(
+      'Gambier',
+      long: TimeZoneName(standard: 'গেম্বিয়াৰ সময়'),
+    ),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'জৰ্জিয়াৰ সময়',
+        standard: 'জৰ্জিয়াৰ মান সময়',
+        daylight: 'জৰ্জিয়াৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'গিলবাৰ্ট দ্বীপপুঞ্জৰ সময়'),
+    ),
     'GMT': MetaZone('GMT', long: TimeZoneName(standard: 'গ্ৰীণউইচ মান সময়')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'পূব গ্ৰীণলেণ্ডৰ সময়',
-            standard: 'পূব গ্ৰীণলেণ্ডৰ মান সময়',
-            daylight: 'পূব গ্ৰীণলেণ্ডৰ গ্ৰীষ্মকালীন সময়')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'পশ্চিম গ্ৰীণলেণ্ডৰ সময়',
-            standard: 'পশ্চিম গ্ৰীণলেণ্ডৰ মান সময়',
-            daylight: 'পশ্চিম গ্ৰীণলেণ্ডৰ গ্ৰীষ্মকালীন সময়')),
-    'Gulf':
-        MetaZone('Gulf', long: TimeZoneName(standard: 'উপসাগৰীয় মান সময়')),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'পূব গ্ৰীণলেণ্ডৰ সময়',
+        standard: 'পূব গ্ৰীণলেণ্ডৰ মান সময়',
+        daylight: 'পূব গ্ৰীণলেণ্ডৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'পশ্চিম গ্ৰীণলেণ্ডৰ সময়',
+        standard: 'পশ্চিম গ্ৰীণলেণ্ডৰ মান সময়',
+        daylight: 'পশ্চিম গ্ৰীণলেণ্ডৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Gulf': MetaZone(
+      'Gulf',
+      long: TimeZoneName(standard: 'উপসাগৰীয় মান সময়'),
+    ),
     'Guyana': MetaZone('Guyana', long: TimeZoneName(standard: 'গায়ানাৰ সময়')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'হাৱাই-এলিউশ্বনৰ সময়',
-            standard: 'হাৱাই-এলিউশ্বনৰ মান সময়',
-            daylight: 'হাৱাই-এলিউশ্বনৰ ডেলাইট সময়')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'হং কঙৰ সময়',
-            standard: 'হং কঙৰ মান সময়',
-            daylight: 'হং কঙৰ গ্ৰীষ্মকালীন সময়')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'হোভ্‌ডৰ সময়',
-            standard: 'হোভ্‌ডৰ মান সময়',
-            daylight: 'হোভ্‌ডৰ গ্ৰীষ্মকালীন সময়')),
-    'India': MetaZone('India',
-        long: TimeZoneName(standard: 'ভাৰতীয় মান সময়'),
-        short: TimeZoneName(standard: 'ভা. স.')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'ভাৰত মহাসাগৰীয় সময়')),
-    'Indochina':
-        MetaZone('Indochina', long: TimeZoneName(standard: 'ইণ্ডোচাইনাৰ সময়')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'মধ্য ইণ্ডোনেচিয়াৰ সময়')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'প্ৰাচ্য ইণ্ডোনেচিয়াৰ সময়')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'পাশ্চাত্য ইণ্ডোনেচিয়াৰ সময়')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'ইৰানৰ সময়',
-            standard: 'ইৰানৰ মান সময়',
-            daylight: 'ইৰানৰ ডেলাইট সময়')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'ইৰ্কুটস্কৰ সময়',
-            standard: 'ইৰ্কুটস্কৰ মান সময়',
-            daylight: 'ইৰ্কুটস্কৰ গ্ৰীষ্মকালীন সময়')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'ইজৰাইলৰ সময়',
-            standard: 'ইজৰাইলৰ মান সময়',
-            daylight: 'ইজৰাইলৰ ডেলাইট সময়')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'জাপানৰ সময়',
-            standard: 'জাপানৰ মান সময়',
-            daylight: 'জাপানৰ ডেলাইট সময়')),
-    'Kazakhstan': MetaZone('Kazakhstan',
-        long: TimeZoneName(standard: 'কাজাখস্তানৰ সময়')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'পূব কাজাখস্তানৰ সময়')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'পশ্চিম কাজাখস্তানৰ সময়')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'কোৰিয়াৰ সময়',
-            standard: 'কোৰিয়াৰ মান সময়',
-            daylight: 'কোৰিয়াৰ ডেলাইট সময়')),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'হাৱাই-এলিউশ্বনৰ সময়',
+        standard: 'হাৱাই-এলিউশ্বনৰ মান সময়',
+        daylight: 'হাৱাই-এলিউশ্বনৰ ডেলাইট সময়',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'হং কঙৰ সময়',
+        standard: 'হং কঙৰ মান সময়',
+        daylight: 'হং কঙৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'হোভ্‌ডৰ সময়',
+        standard: 'হোভ্‌ডৰ মান সময়',
+        daylight: 'হোভ্‌ডৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'India': MetaZone(
+      'India',
+      long: TimeZoneName(standard: 'ভাৰতীয় মান সময়'),
+      short: TimeZoneName(standard: 'ভা. স.'),
+    ),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'ভাৰত মহাসাগৰীয় সময়'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'ইণ্ডোচাইনাৰ সময়'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'মধ্য ইণ্ডোনেচিয়াৰ সময়'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'প্ৰাচ্য ইণ্ডোনেচিয়াৰ সময়'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'পাশ্চাত্য ইণ্ডোনেচিয়াৰ সময়'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'ইৰানৰ সময়',
+        standard: 'ইৰানৰ মান সময়',
+        daylight: 'ইৰানৰ ডেলাইট সময়',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'ইৰ্কুটস্কৰ সময়',
+        standard: 'ইৰ্কুটস্কৰ মান সময়',
+        daylight: 'ইৰ্কুটস্কৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'ইজৰাইলৰ সময়',
+        standard: 'ইজৰাইলৰ মান সময়',
+        daylight: 'ইজৰাইলৰ ডেলাইট সময়',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'জাপানৰ সময়',
+        standard: 'জাপানৰ মান সময়',
+        daylight: 'জাপানৰ ডেলাইট সময়',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'কাজাখস্তানৰ সময়'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'পূব কাজাখস্তানৰ সময়'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'পশ্চিম কাজাখস্তানৰ সময়'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'কোৰিয়াৰ সময়',
+        standard: 'কোৰিয়াৰ মান সময়',
+        daylight: 'কোৰিয়াৰ ডেলাইট সময়',
+      ),
+    ),
     'Kosrae': MetaZone('Kosrae', long: TimeZoneName(standard: 'কোছৰায়ে সময়')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'ক্ৰাছনোয়াৰ্স্কৰ সময়',
-            standard: 'ক্ৰাছনোয়াৰ্স্কৰ মান সময়',
-            daylight: 'ক্ৰাছনোয়াৰ্স্ক গ্ৰীষ্মকালীন সময়')),
-    'Kyrgystan': MetaZone('Kyrgystan',
-        long: TimeZoneName(standard: 'কিৰ্গিজস্তানৰ সময়')),
-    'Line_Islands': MetaZone('Line_Islands',
-        long: TimeZoneName(standard: 'লাইন দ্বীপপুঞ্জৰ সময়')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'লৰ্ড হাওৰ সময়',
-            standard: 'লৰ্ড হাওৰ মান সময়',
-            daylight: 'লৰ্ড হাওৰ ডেলাইট সময়')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'মাগাদানৰ সময়',
-            standard: 'মাগাদানৰ মান সময়',
-            daylight: 'মাগাদানৰ গ্ৰীষ্মকালীন সময়')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'মালয়েচিয়াৰ সময়')),
-    'Maldives':
-        MetaZone('Maldives', long: TimeZoneName(standard: 'মালদ্বীপৰ সময়')),
-    'Marquesas':
-        MetaZone('Marquesas', long: TimeZoneName(standard: 'মাৰ্কছেছৰ সময়')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'মাৰ্শ্বাল দ্বীপপুঞ্জৰ সময়')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'মৰিছাছৰ সময়',
-            standard: 'মৰিছাছৰ মান সময়',
-            daylight: 'মৰিছাছৰ গ্ৰীষ্মকালীন সময়')),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'ক্ৰাছনোয়াৰ্স্কৰ সময়',
+        standard: 'ক্ৰাছনোয়াৰ্স্কৰ মান সময়',
+        daylight: 'ক্ৰাছনোয়াৰ্স্ক গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'কিৰ্গিজস্তানৰ সময়'),
+    ),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'লাইন দ্বীপপুঞ্জৰ সময়'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'লৰ্ড হাওৰ সময়',
+        standard: 'লৰ্ড হাওৰ মান সময়',
+        daylight: 'লৰ্ড হাওৰ ডেলাইট সময়',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'মাগাদানৰ সময়',
+        standard: 'মাগাদানৰ মান সময়',
+        daylight: 'মাগাদানৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'মালয়েচিয়াৰ সময়'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'মালদ্বীপৰ সময়'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'মাৰ্কছেছৰ সময়'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'মাৰ্শ্বাল দ্বীপপুঞ্জৰ সময়'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'মৰিছাছৰ সময়',
+        standard: 'মৰিছাছৰ মান সময়',
+        daylight: 'মৰিছাছৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
     'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: 'মাউছনৰ সময়')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'মেক্সিকোৰ প্ৰশান্ত সময়',
-            standard: 'মেক্সিকোৰ প্ৰশান্ত মান সময়',
-            daylight: 'মেক্সিকোৰ প্ৰশান্ত ডেলাইট সময়')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'উলানবাটাৰৰ সময়',
-            standard: 'উলানবাটাৰৰ মান সময়',
-            daylight: 'উলানবাটাৰৰ গ্ৰীষ্মকালীন সময়')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'মস্কোৰ সময়',
-            standard: 'মস্কোৰ মান সময়',
-            daylight: 'মস্কোৰ গ্ৰীষ্মকালীন সময়')),
-    'Myanmar':
-        MetaZone('Myanmar', long: TimeZoneName(standard: 'ম্যানমাৰৰ সময়')),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'মেক্সিকোৰ প্ৰশান্ত সময়',
+        standard: 'মেক্সিকোৰ প্ৰশান্ত মান সময়',
+        daylight: 'মেক্সিকোৰ প্ৰশান্ত ডেলাইট সময়',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'উলানবাটাৰৰ সময়',
+        standard: 'উলানবাটাৰৰ মান সময়',
+        daylight: 'উলানবাটাৰৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'মস্কোৰ সময়',
+        standard: 'মস্কোৰ মান সময়',
+        daylight: 'মস্কোৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      'Myanmar',
+      long: TimeZoneName(standard: 'ম্যানমাৰৰ সময়'),
+    ),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'নাউৰুৰ সময়')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'নেপালৰ সময়')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'নিউ কেলিডোনিয়াৰ সময়',
-            standard: 'নিউ কেলিডোনিয়াৰ মান সময়',
-            daylight: 'নিউ কেলিডোনিয়াৰ গ্ৰীষ্মকালীন সময়')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'নিউজিলেণ্ডৰ সময়',
-            standard: 'নিউজিলেণ্ডৰ মান সময়',
-            daylight: 'নিউজিলেণ্ডৰ ডেলাইট সময়')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'নিউফাউণ্ডলেণ্ডৰ সময়',
-            standard: 'নিউফাউণ্ডলেণ্ডৰ মান সময়',
-            daylight: 'নিউফাউণ্ডলেণ্ডৰ ডেলাইট সময়')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'নিউ কেলিডোনিয়াৰ সময়',
+        standard: 'নিউ কেলিডোনিয়াৰ মান সময়',
+        daylight: 'নিউ কেলিডোনিয়াৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'নিউজিলেণ্ডৰ সময়',
+        standard: 'নিউজিলেণ্ডৰ মান সময়',
+        daylight: 'নিউজিলেণ্ডৰ ডেলাইট সময়',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'নিউফাউণ্ডলেণ্ডৰ সময়',
+        standard: 'নিউফাউণ্ডলেণ্ডৰ মান সময়',
+        daylight: 'নিউফাউণ্ডলেণ্ডৰ ডেলাইট সময়',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'নিয়ুৰ সময়')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'ন’ৰফ’ক দ্বীপৰ সময়',
-            standard: 'ন’ৰফ’ক দ্বীপৰ মান্য সময়',
-            daylight: 'ন’ৰফ’ক দ্বীপৰ গ্ৰীষ্মকালীন সময়')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'ফাৰ্নাণ্ডো ডে নোৰোন্‌হাৰ সময়',
-            standard: 'ফাৰ্নাণ্ডো ডে নোৰোন্‌হাৰ মান সময়',
-            daylight: 'ফাৰ্নাণ্ডো ডে নোৰোন্‌হাৰ গ্ৰীষ্মকালীন সময়')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'নভোছিবিৰ্স্কৰ সময়',
-            standard: 'নভোছিবিৰ্স্কৰ মান সময়',
-            daylight: 'নভোছিবিৰ্স্কৰ গ্ৰীষ্মকালীন সময়')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'ওমস্কৰ সময়',
-            standard: 'ওমস্কৰ মান সময়',
-            daylight: 'ওমস্কৰ গ্ৰীষ্মকালীন সময়')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'পাকিস্তানৰ সময়',
-            standard: 'পাকিস্তানৰ মান সময়',
-            daylight: 'পাকিস্তানৰ গ্ৰীষ্মকালীন সময়')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'ন’ৰফ’ক দ্বীপৰ সময়',
+        standard: 'ন’ৰফ’ক দ্বীপৰ মান্য সময়',
+        daylight: 'ন’ৰফ’ক দ্বীপৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'ফাৰ্নাণ্ডো ডে নোৰোন্‌হাৰ সময়',
+        standard: 'ফাৰ্নাণ্ডো ডে নোৰোন্‌হাৰ মান সময়',
+        daylight: 'ফাৰ্নাণ্ডো ডে নোৰোন্‌হাৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'নভোছিবিৰ্স্কৰ সময়',
+        standard: 'নভোছিবিৰ্স্কৰ মান সময়',
+        daylight: 'নভোছিবিৰ্স্কৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'ওমস্কৰ সময়',
+        standard: 'ওমস্কৰ মান সময়',
+        daylight: 'ওমস্কৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'পাকিস্তানৰ সময়',
+        standard: 'পাকিস্তানৰ মান সময়',
+        daylight: 'পাকিস্তানৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'পালাউৰ সময়')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'পাপুৱা নিউ গিনিৰ সময়')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'পাৰাগুৱেৰ সময়',
-            standard: 'পাৰাগুৱেৰ মান সময়',
-            daylight: 'পাৰাগুৱেৰ গ্ৰীষ্মকালীন সময়')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'পেৰুৰ সময়',
-            standard: 'পেৰুৰ মান সময়',
-            daylight: 'পেৰুৰ গ্ৰীষ্মকালীন সময়')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'ফিলিপাইনৰ সময়',
-            standard: 'ফিলিপাইনৰ মান সময়',
-            daylight: 'ফিলিপাইনৰ গ্ৰীষ্মকালীন সময়')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'ফিনিক্স দ্বীপপুঞ্জৰ সময়')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'ছেইণ্ট পিয়েৰে আৰু মিকিউৱেলনৰ সময়',
-            standard: 'ছেইণ্ট পিয়েৰে আৰু মিকিউৱেলনৰ মান সময়',
-            daylight: 'ছেইণ্ট পিয়েৰে আৰু মিকিউৱেলনৰ ডেলাইট সময়')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'পিটকেইৰ্ণৰ সময়')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'পাপুৱা নিউ গিনিৰ সময়'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'পাৰাগুৱেৰ সময়',
+        standard: 'পাৰাগুৱেৰ মান সময়',
+        daylight: 'পাৰাগুৱেৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'পেৰুৰ সময়',
+        standard: 'পেৰুৰ মান সময়',
+        daylight: 'পেৰুৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'ফিলিপাইনৰ সময়',
+        standard: 'ফিলিপাইনৰ মান সময়',
+        daylight: 'ফিলিপাইনৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'ফিনিক্স দ্বীপপুঞ্জৰ সময়'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'ছেইণ্ট পিয়েৰে আৰু মিকিউৱেলনৰ সময়',
+        standard: 'ছেইণ্ট পিয়েৰে আৰু মিকিউৱেলনৰ মান সময়',
+        daylight: 'ছেইণ্ট পিয়েৰে আৰু মিকিউৱেলনৰ ডেলাইট সময়',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'পিটকেইৰ্ণৰ সময়'),
+    ),
     'Ponape': MetaZone('Ponape', long: TimeZoneName(standard: 'পোনাপেৰ সময়')),
-    'Pyongyang':
-        MetaZone('Pyongyang', long: TimeZoneName(standard: 'প্যংয়াংৰ সময়')),
-    'Reunion':
-        MetaZone('Reunion', long: TimeZoneName(standard: 'ৰিইউনিয়নৰ সময়')),
-    'Rothera':
-        MetaZone('Rothera', long: TimeZoneName(standard: 'ৰোথেৰাৰ সময়')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'ছাখালিনৰ সময়',
-            standard: 'ছাখালিনৰ মান সময়',
-            daylight: 'ছাখালিনৰ গ্ৰীষ্মকালীন সময়')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'ছামোৱাৰ সময়',
-            standard: 'ছামোৱাৰ মান সময়',
-            daylight: 'ছামোৱাৰ ডেলাইট সময়')),
-    'Seychelles':
-        MetaZone('Seychelles', long: TimeZoneName(standard: 'ছিচিলিছৰ সময়')),
-    'Singapore': MetaZone('Singapore',
-        long: TimeZoneName(standard: 'ছিংগাপুৰৰ মান সময়')),
-    'Solomon': MetaZone('Solomon',
-        long: TimeZoneName(standard: 'চোলোমোন দ্বীপপুঞ্জৰ সময়')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'দক্ষিণ জৰ্জিয়াৰ সময়')),
-    'Suriname':
-        MetaZone('Suriname', long: TimeZoneName(standard: 'ছুৰিনামৰ সময়')),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'প্যংয়াংৰ সময়'),
+    ),
+    'Reunion': MetaZone(
+      'Reunion',
+      long: TimeZoneName(standard: 'ৰিইউনিয়নৰ সময়'),
+    ),
+    'Rothera': MetaZone(
+      'Rothera',
+      long: TimeZoneName(standard: 'ৰোথেৰাৰ সময়'),
+    ),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'ছাখালিনৰ সময়',
+        standard: 'ছাখালিনৰ মান সময়',
+        daylight: 'ছাখালিনৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'ছামোৱাৰ সময়',
+        standard: 'ছামোৱাৰ মান সময়',
+        daylight: 'ছামোৱাৰ ডেলাইট সময়',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'ছিচিলিছৰ সময়'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'ছিংগাপুৰৰ মান সময়'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'চোলোমোন দ্বীপপুঞ্জৰ সময়'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'দক্ষিণ জৰ্জিয়াৰ সময়'),
+    ),
+    'Suriname': MetaZone(
+      'Suriname',
+      long: TimeZoneName(standard: 'ছুৰিনামৰ সময়'),
+    ),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'স্বোৱা সময়')),
     'Tahiti': MetaZone('Tahiti', long: TimeZoneName(standard: 'তাহিতিৰ সময়')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'টাইপেইৰ সময়',
-            standard: 'টাইপেইৰ মান সময়',
-            daylight: 'টাইপেইৰ ডেলাইট সময়')),
-    'Tajikistan': MetaZone('Tajikistan',
-        long: TimeZoneName(standard: 'তাজিকিস্তানৰ সময়')),
-    'Tokelau':
-        MetaZone('Tokelau', long: TimeZoneName(standard: 'টোকেলাউৰ সময়')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'টংগাৰ সময়',
-            standard: 'টংগাৰ মান সময়',
-            daylight: 'টংগাৰ গ্ৰীষ্মকালীন সময়')),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'টাইপেইৰ সময়',
+        standard: 'টাইপেইৰ মান সময়',
+        daylight: 'টাইপেইৰ ডেলাইট সময়',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'তাজিকিস্তানৰ সময়'),
+    ),
+    'Tokelau': MetaZone(
+      'Tokelau',
+      long: TimeZoneName(standard: 'টোকেলাউৰ সময়'),
+    ),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'টংগাৰ সময়',
+        standard: 'টংগাৰ মান সময়',
+        daylight: 'টংগাৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'চ্চুকৰ সময়')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'তুৰ্কমেনিস্তানৰ সময়',
-            standard: 'তুৰ্কমেনিস্তানৰ মান সময়',
-            daylight: 'তুৰ্কমেনিস্তানৰ গ্ৰীষ্মকালীন সময়')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'তুৰ্কমেনিস্তানৰ সময়',
+        standard: 'তুৰ্কমেনিস্তানৰ মান সময়',
+        daylight: 'তুৰ্কমেনিস্তানৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
     'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: 'টুভালাউৰ সময়')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'উৰুগুৱেৰ সময়',
-            standard: 'উৰুগুৱেৰ মান সময়',
-            daylight: 'উৰুগুৱেৰ গ্ৰীষ্মকালীন সময়')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'উজবেকিস্তানৰ সময়',
-            standard: 'উজবেকিস্তানৰ মান সময়',
-            daylight: 'উজবেকিস্তানৰ গ্ৰীষ্মকালীন সময়')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'ভানাটুৰ সময়',
-            standard: 'ভানাটুৰ মান সময়',
-            daylight: 'ভানাটুৰ গ্ৰীষ্মকালীন সময়')),
-    'Venezuela':
-        MetaZone('Venezuela', long: TimeZoneName(standard: 'ভেনিজুৱেলাৰ সময়')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'ভ্লাডিভোষ্টোকৰ সময়',
-            standard: 'ভ্লাডিভোষ্টোকৰ মান সময়',
-            daylight: 'ভ্লাডিভোষ্টোকৰ গ্ৰীষ্মকালীন সময়')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'ভোল্গোগ্ৰাডৰ সময়',
-            standard: 'ভোল্গোগ্ৰাডৰ মান সময়',
-            daylight: 'ভোল্গোগ্ৰাডৰ গ্ৰীষ্মকালীন সময়')),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'উৰুগুৱেৰ সময়',
+        standard: 'উৰুগুৱেৰ মান সময়',
+        daylight: 'উৰুগুৱেৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'উজবেকিস্তানৰ সময়',
+        standard: 'উজবেকিস্তানৰ মান সময়',
+        daylight: 'উজবেকিস্তানৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'ভানাটুৰ সময়',
+        standard: 'ভানাটুৰ মান সময়',
+        daylight: 'ভানাটুৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'ভেনিজুৱেলাৰ সময়'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'ভ্লাডিভোষ্টোকৰ সময়',
+        standard: 'ভ্লাডিভোষ্টোকৰ মান সময়',
+        daylight: 'ভ্লাডিভোষ্টোকৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'ভোল্গোগ্ৰাডৰ সময়',
+        standard: 'ভোল্গোগ্ৰাডৰ মান সময়',
+        daylight: 'ভোল্গোগ্ৰাডৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
     'Vostok': MetaZone('Vostok', long: TimeZoneName(standard: 'ভোষ্টকৰ সময়')),
     'Wake': MetaZone('Wake', long: TimeZoneName(standard: 'ৱেক দ্বীপৰ সময়')),
-    'Wallis': MetaZone('Wallis',
-        long: TimeZoneName(standard: 'ৱালিছ আৰু ফুটুনাৰ সময়')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'য়াকুত্স্কৰ সময়',
-            standard: 'য়াকুত্স্কৰ মান সময়',
-            daylight: 'য়াকুত্স্কৰ গ্ৰীষ্মকালীন সময়')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'য়েকাটেৰিণবাৰ্গৰ সময়',
-            standard: 'য়েকাটেৰিণবাৰ্গৰ মান সময়',
-            daylight: 'য়েকাটেৰিণবাৰ্গৰ গ্ৰীষ্মকালীন সময়')),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'ৱালিছ আৰু ফুটুনাৰ সময়'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'য়াকুত্স্কৰ সময়',
+        standard: 'য়াকুত্স্কৰ মান সময়',
+        daylight: 'য়াকুত্স্কৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'য়েকাটেৰিণবাৰ্গৰ সময়',
+        standard: 'য়েকাটেৰিণবাৰ্গৰ মান সময়',
+        daylight: 'য়েকাটেৰিণবাৰ্গৰ গ্ৰীষ্মকালীন সময়',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'য়ুকোন সময়')),
   };
 }
@@ -11501,10 +11531,7 @@ class LocaleDisplayNameAs extends LocaleDisplayName {
       'persian': 'ফাৰ্চী কেলেণ্ডাৰ',
       'roc': 'চীনা প্ৰজাতন্ত্ৰৰ কেলেণ্ডাৰ',
     },
-    'cf': {
-      'account': 'গাণনিক মুদ্ৰা সজ্জা',
-      'standard': 'মান্য মুদ্ৰা সজ্জা',
-    },
+    'cf': {'account': 'গাণনিক মুদ্ৰা সজ্জা', 'standard': 'মান্য মুদ্ৰা সজ্জা'},
     'co': {
       'big5han': 'পৰম্পৰাগত চীনা শৃঙ্খলাবদ্ধ কৰাৰ ক্ৰম - Big5',
       'ducet': 'ডিফ’ল্ট ইউনিকোড সজোৱা ক্ৰম',

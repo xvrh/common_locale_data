@@ -44,10 +44,18 @@ class LanguagesFaAF extends LanguagesFa {
   static const _ar001 = Language('ar-001', 'عربی فصیح');
   static const _$as = Language('as', 'اسامی');
   static const _ast = Language('ast', 'اتریشی');
-  static const _az =
-      Language('az', 'آذربایجانی', variant: 'آذربایجانی', short: 'آذری');
-  static const _ckb = Language('ckb', 'کردی سورانی',
-      variant: 'کردی سورانی', menu: 'کردی، مرکزی');
+  static const _az = Language(
+    'az',
+    'آذربایجانی',
+    variant: 'آذربایجانی',
+    short: 'آذری',
+  );
+  static const _ckb = Language(
+    'ckb',
+    'کردی سورانی',
+    variant: 'کردی سورانی',
+    menu: 'کردی، مرکزی',
+  );
   static const _dv = Language('dv', 'مالدیوی');
   static const _es = Language('es', 'هسپانوی');
   static const _fi = Language('fi', 'فنلندی');
@@ -157,47 +165,47 @@ class LanguagesFaAF extends LanguagesFa {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesFa.staticLanguages,
-        ...const {
-          'ab': _ab,
-          'ar-001': _ar001,
-          'as': _$as,
-          'ast': _ast,
-          'az': _az,
-          'ckb': _ckb,
-          'dv': _dv,
-          'es': _es,
-          'fi': _fi,
-          'ga': _ga,
-          'hr': _hr,
-          'id': _id,
-          'is': _$is,
-          'it': _it,
-          'ja': _ja,
-          'ko': _ko,
-          'ksh': _ksh,
-          'ky': _ky,
-          'lus': _lus,
-          'mai': _mai,
-          'mn': _mn,
-          'nb': _nb,
-          'ne': _ne,
-          'nl': _nl,
-          'nl-BE': _nlBE,
-          'nn': _nn,
-          'no': _no,
-          'pl': _pl,
-          'ps': _ps,
-          'pt': _pt,
-          'sq': _sq,
-          'srn': _srn,
-          'sv': _sv,
-          'sw': _sw,
-          'tg': _tg,
-          'zh-Hans': _zhHans,
-          'zza': _zza,
-        }
-      });
+    ...LanguagesFa.staticLanguages,
+    ...const {
+      'ab': _ab,
+      'ar-001': _ar001,
+      'as': _$as,
+      'ast': _ast,
+      'az': _az,
+      'ckb': _ckb,
+      'dv': _dv,
+      'es': _es,
+      'fi': _fi,
+      'ga': _ga,
+      'hr': _hr,
+      'id': _id,
+      'is': _$is,
+      'it': _it,
+      'ja': _ja,
+      'ko': _ko,
+      'ksh': _ksh,
+      'ky': _ky,
+      'lus': _lus,
+      'mai': _mai,
+      'mn': _mn,
+      'nb': _nb,
+      'ne': _ne,
+      'nl': _nl,
+      'nl-BE': _nlBE,
+      'nn': _nn,
+      'no': _no,
+      'pl': _pl,
+      'ps': _ps,
+      'pt': _pt,
+      'sq': _sq,
+      'srn': _srn,
+      'sv': _sv,
+      'sw': _sw,
+      'tg': _tg,
+      'zh-Hans': _zhHans,
+      'zza': _zza,
+    },
+  });
 }
 
 class ScriptsFaAF extends ScriptsFa {
@@ -210,11 +218,9 @@ class ScriptsFaAF extends ScriptsFa {
 
   @override
   Map<String, Script> get scripts => Map.unmodifiable({
-        ...ScriptsFa.staticScripts,
-        ...const {
-          'Mong': _mong,
-        }
-      });
+    ...ScriptsFa.staticScripts,
+    ...const {'Mong': _mong},
+  });
 }
 
 class TerritoriesFaAF extends TerritoriesFa {
@@ -234,10 +240,16 @@ class TerritoriesFaAF extends TerritoriesFa {
   static const _bo = Territory('BO', 'بولیویا');
   static const _br = Territory('BR', 'برازیل');
   static const _bs = Territory('BS', 'بهاماس');
-  static const _cd =
-      Territory('CD', 'کانگو - کینشاسا', variant: 'کنگو (جمهوری دموکراتیک)');
-  static const _cg =
-      Territory('CG', 'کانگو - برازویل', variant: 'کنگو (جمهوری)');
+  static const _cd = Territory(
+    'CD',
+    'کانگو - کینشاسا',
+    variant: 'کنگو (جمهوری دموکراتیک)',
+  );
+  static const _cg = Territory(
+    'CG',
+    'کانگو - برازویل',
+    variant: 'کنگو (جمهوری)',
+  );
   static const _ch = Territory('CH', 'سویس');
   static const _cl = Territory('CL', 'چلی');
   static const _co = Territory('CO', 'کولمبیا');
@@ -258,8 +270,11 @@ class TerritoriesFaAF extends TerritoriesFa {
   static const _gt = Territory('GT', 'گواتیمالا');
   static const _gw = Territory('GW', 'گینیا بیسائو');
   static const _gy = Territory('GY', 'گیانا');
-  static const _hk =
-      Territory('HK', 'هانگ کانگ، ناحیهٔ ویژهٔ حکومتی چین', short: 'هانگ کانگ');
+  static const _hk = Territory(
+    'HK',
+    'هانگ کانگ، ناحیهٔ ویژهٔ حکومتی چین',
+    short: 'هانگ کانگ',
+  );
   static const _hn = Territory('HN', 'هاندوراس');
   static const _hr = Territory('HR', 'کروشیا');
   static const _ht = Territory('HT', 'هایتی');
@@ -494,126 +509,159 @@ class TerritoriesFaAF extends TerritoriesFa {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesFa.staticTerritories,
-        ...const {
-          'AD': _ad,
-          'AG': _ag,
-          'AL': _al,
-          'AO': _ao,
-          'AQ': _aq,
-          'AR': _ar,
-          'BA': _ba,
-          'BD': _bd,
-          'BE': _be,
-          'BG': _bg,
-          'BN': _bn,
-          'BO': _bo,
-          'BR': _br,
-          'BS': _bs,
-          'CD': _cd,
-          'CG': _cg,
-          'CH': _ch,
-          'CL': _cl,
-          'CO': _co,
-          'CR': _cr,
-          'CU': _cu,
-          'DK': _dk,
-          'EA': _ea,
-          'EE': _ee,
-          'ER': _er,
-          'ES': _es,
-          'ET': _et,
-          'FI': _fi,
-          'FM': _fm,
-          'GD': _gd,
-          'GH': _gh,
-          'GN': _gn,
-          'GQ': _gq,
-          'GT': _gt,
-          'GW': _gw,
-          'GY': _gy,
-          'HK': _hk,
-          'HN': _hn,
-          'HR': _hr,
-          'HT': _ht,
-          'ID': _id,
-          'IE': _ie,
-          'IS': _$is,
-          'JP': _jp,
-          'KE': _ke,
-          'KH': _kh,
-          'KP': _kp,
-          'KR': _kr,
-          'LK': _lk,
-          'LS': _ls,
-          'LT': _lt,
-          'LV': _lv,
-          'LY': _ly,
-          'MG': _mg,
-          'MN': _mn,
-          'MR': _mr,
-          'MT': _mt,
-          'MX': _mx,
-          'MY': _my,
-          'MZ': _mz,
-          'NG': _ng,
-          'NI': _ni,
-          'NL': _nl,
-          'NO': _no,
-          'NP': _np,
-          'NZ': _nz,
-          'PA': _pa,
-          'PE': _pe,
-          'PG': _pg,
-          'PL': _pl,
-          'PT': _pt,
-          'PY': _py,
-          'RO': _ro,
-          'SE': _se,
-          'SG': _sg,
-          'SI': _si,
-          'SJ': _sj,
-          'SK': _sk,
-          'SL': _sl,
-          'SN': _sn,
-          'SO': _so,
-          'SV': _sv,
-          'TJ': _tj,
-          'UG': _ug,
-          'UY': _uy,
-          'VC': _vc,
-          'VE': _ve,
-          'XK': _xk,
-          'ZW': _zw,
-        }
-      });
+    ...TerritoriesFa.staticTerritories,
+    ...const {
+      'AD': _ad,
+      'AG': _ag,
+      'AL': _al,
+      'AO': _ao,
+      'AQ': _aq,
+      'AR': _ar,
+      'BA': _ba,
+      'BD': _bd,
+      'BE': _be,
+      'BG': _bg,
+      'BN': _bn,
+      'BO': _bo,
+      'BR': _br,
+      'BS': _bs,
+      'CD': _cd,
+      'CG': _cg,
+      'CH': _ch,
+      'CL': _cl,
+      'CO': _co,
+      'CR': _cr,
+      'CU': _cu,
+      'DK': _dk,
+      'EA': _ea,
+      'EE': _ee,
+      'ER': _er,
+      'ES': _es,
+      'ET': _et,
+      'FI': _fi,
+      'FM': _fm,
+      'GD': _gd,
+      'GH': _gh,
+      'GN': _gn,
+      'GQ': _gq,
+      'GT': _gt,
+      'GW': _gw,
+      'GY': _gy,
+      'HK': _hk,
+      'HN': _hn,
+      'HR': _hr,
+      'HT': _ht,
+      'ID': _id,
+      'IE': _ie,
+      'IS': _$is,
+      'JP': _jp,
+      'KE': _ke,
+      'KH': _kh,
+      'KP': _kp,
+      'KR': _kr,
+      'LK': _lk,
+      'LS': _ls,
+      'LT': _lt,
+      'LV': _lv,
+      'LY': _ly,
+      'MG': _mg,
+      'MN': _mn,
+      'MR': _mr,
+      'MT': _mt,
+      'MX': _mx,
+      'MY': _my,
+      'MZ': _mz,
+      'NG': _ng,
+      'NI': _ni,
+      'NL': _nl,
+      'NO': _no,
+      'NP': _np,
+      'NZ': _nz,
+      'PA': _pa,
+      'PE': _pe,
+      'PG': _pg,
+      'PL': _pl,
+      'PT': _pt,
+      'PY': _py,
+      'RO': _ro,
+      'SE': _se,
+      'SG': _sg,
+      'SI': _si,
+      'SJ': _sj,
+      'SK': _sk,
+      'SL': _sl,
+      'SN': _sn,
+      'SO': _so,
+      'SV': _sv,
+      'TJ': _tj,
+      'UG': _ug,
+      'UY': _uy,
+      'VC': _vc,
+      'VE': _ve,
+      'XK': _xk,
+      'ZW': _zw,
+    },
+  });
 }
 
 class CurrenciesFaAF extends CurrenciesFa {
   const CurrenciesFaAF(super.cld);
 
-  static const _aud =
-      Currency(_cld, 'AUD', 'دالر آسترالیا', symbol: r'A$', symbolNarrow: r'$');
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'دالر آسترالیا',
+    symbol: r'A$',
+    symbolNarrow: r'$',
+  );
   static const _bnd = Currency(_cld, 'BND', 'دالر برونی', symbolNarrow: r'$');
-  static const _byn =
-      Currency(_cld, 'BYN', 'روبل روسیهٔ سفید', symbolNarrow: 'Br');
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'روبل روسیهٔ سفید',
+    symbolNarrow: 'Br',
+  );
   static const _byr = Currency(_cld, 'BYR', 'روبل روسیهٔ سفید (۲۰۰۰–۲۰۱۶)');
-  static const _cad =
-      Currency(_cld, 'CAD', 'دالر کانادا', symbol: r'$CA', symbolNarrow: r'$');
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'دالر کانادا',
+    symbol: r'$CA',
+    symbolNarrow: r'$',
+  );
   static const _chf = Currency(_cld, 'CHF', 'فرانک سویس');
   static const _dkk = Currency(_cld, 'DKK', 'کرون دنمارک', symbolNarrow: 'kr');
-  static const _jpy =
-      Currency(_cld, 'JPY', 'ین جاپان', symbol: '¥', symbolNarrow: '¥');
-  static const _mxn =
-      Currency(_cld, 'MXN', 'پزوی مکسیکو', symbol: r'$MX', symbolNarrow: r'$');
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'ین جاپان',
+    symbol: '¥',
+    symbolNarrow: '¥',
+  );
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'پزوی مکسیکو',
+    symbol: r'$MX',
+    symbolNarrow: r'$',
+  );
   static const _nlg = Currency(_cld, 'NLG', 'گیلدر هالند');
   static const _nok = Currency(_cld, 'NOK', 'کرون ناروی', symbolNarrow: 'kr');
   static const _sek = Currency(_cld, 'SEK', 'کرون سویدن', symbolNarrow: 'kr');
-  static const _sgd =
-      Currency(_cld, 'SGD', 'دالر سینگاپور', symbolNarrow: r'$');
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'دالر سینگاپور',
+    symbolNarrow: r'$',
+  );
   static const _tjs = Currency(_cld, 'TJS', 'سامانی تاجکستان');
-  static const _usd =
-      Currency(_cld, 'USD', 'دالر امریکا', symbol: r'$', symbolNarrow: r'$');
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'دالر امریکا',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
 
   @override
   Currency get aud => _aud;
@@ -648,23 +696,23 @@ class CurrenciesFaAF extends CurrenciesFa {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesFa.staticCurrencies,
-        ...const {
-          'AUD': _aud,
-          'BND': _bnd,
-          'BYN': _byn,
-          'BYR': _byr,
-          'CAD': _cad,
-          'CHF': _chf,
-          'DKK': _dkk,
-          'JPY': _jpy,
-          'MXN': _mxn,
-          'NLG': _nlg,
-          'NOK': _nok,
-          'SEK': _sek,
-          'SGD': _sgd,
-          'TJS': _tjs,
-          'USD': _usd,
-        }
-      });
+    ...CurrenciesFa.staticCurrencies,
+    ...const {
+      'AUD': _aud,
+      'BND': _bnd,
+      'BYN': _byn,
+      'BYR': _byr,
+      'CAD': _cad,
+      'CHF': _chf,
+      'DKK': _dkk,
+      'JPY': _jpy,
+      'MXN': _mxn,
+      'NLG': _nlg,
+      'NOK': _nok,
+      'SEK': _sek,
+      'SGD': _sgd,
+      'TJS': _tjs,
+      'USD': _usd,
+    },
+  });
 }

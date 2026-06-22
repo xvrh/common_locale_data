@@ -19,6 +19,7 @@ Translations for:
   - calendar fields
   - relative time fields
   - time zones and example cities (or similar) for time zones
+  - week conventions (first day of the week, weekend days)
 
 ## Functionality
 
@@ -26,6 +27,10 @@ Translations can be accessed via static member functions or dynamic maps.
 
 Formatting functions are available for: units, currencies, relative time fields, timezones and 
 locale identifiers.
+
+A high-level relative time ("timeago") formatter (`cld.relativeTime`) turns a `DateTime`/`Duration`
+into a localized string such as "3 minutes ago", "in 2 days", "yesterday" or "last week". It is
+calendar-aware, picks the best unit automatically, and supports long/short/narrow widths.
 
 Locale identifiers support parsing, canonicalization, adding and removing of likely subtags and
 formatting in various forms.

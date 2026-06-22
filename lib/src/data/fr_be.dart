@@ -45,13 +45,9 @@ class LanguagesFrBE extends LanguagesFr {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesFr.staticLanguages,
-        ...const {
-          'frp': _frp,
-          'goh': _goh,
-          'gu': _gu,
-        }
-      });
+    ...LanguagesFr.staticLanguages,
+    ...const {'frp': _frp, 'goh': _goh, 'gu': _gu},
+  });
 }
 
 class TerritoriesFrBE extends TerritoriesFr {
@@ -64,9 +60,7 @@ class TerritoriesFrBE extends TerritoriesFr {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesFr.staticTerritories,
-        ...const {
-          'GS': _gs,
-        }
-      });
+    ...TerritoriesFr.staticTerritories,
+    ...const {'GS': _gs},
+  });
 }

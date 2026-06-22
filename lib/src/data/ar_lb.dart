@@ -28,23 +28,25 @@ class CommonLocaleDataArLB extends CommonLocaleDataAr {
 class CurrenciesArLB extends CurrenciesAr {
   const CurrenciesArLB(super.cld);
 
-  static const _sdg = Currency(_cld, 'SDG', 'جنيه سوداني',
-      zero: 'جنيه سوداني',
-      one: 'جنيه سوداني',
-      two: 'جنيه سوداني',
-      few: 'جنيهات سودانية',
-      many: 'جنيهًا سودانيًا',
-      other: 'جنيه سوداني',
-      symbol: 'SDG');
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'جنيه سوداني',
+    zero: 'جنيه سوداني',
+    one: 'جنيه سوداني',
+    two: 'جنيه سوداني',
+    few: 'جنيهات سودانية',
+    many: 'جنيهًا سودانيًا',
+    other: 'جنيه سوداني',
+    symbol: 'SDG',
+  );
 
   @override
   Currency get sdg => _sdg;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesAr.staticCurrencies,
-        ...const {
-          'SDG': _sdg,
-        }
-      });
+    ...CurrenciesAr.staticCurrencies,
+    ...const {'SDG': _sdg},
+  });
 }

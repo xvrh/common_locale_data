@@ -30,11 +30,13 @@ class TimeZonesEnGU extends TimeZonesEn {
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesEn.staticMetaZoneNames,
-        ...const {
-          'Chamorro': MetaZone('Chamorro',
-              long: TimeZoneName(standard: 'Chamorro Standard Time'),
-              short: TimeZoneName(standard: 'ChST')),
-        }
-      });
+    ...TimeZonesEn.staticMetaZoneNames,
+    ...const {
+      'Chamorro': MetaZone(
+        'Chamorro',
+        long: TimeZoneName(standard: 'Chamorro Standard Time'),
+        short: TimeZoneName(standard: 'ChST'),
+      ),
+    },
+  });
 }
