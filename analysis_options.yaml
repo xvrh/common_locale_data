@@ -24,4 +24,3 @@ linter:
     unawaited_futures: true
     unnecessary_parenthesis: true
     unnecessary_statements: true
-    unsafe_html: true
