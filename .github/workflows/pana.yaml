@@ -1,0 +1,23 @@
+name: Pana score
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  pana:
+    name: Check pub.dev score
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      - uses: actions/checkout@v3
+      - run: dart --version
+      - run: dart pub get
+      - run: dart pub global activate pana
+      # Fail the build if any pub.dev points are lost (exit-code-threshold 0
+      # means the granted score must equal the maximum score).
+      - run: dart pub global run pana --no-warning --exit-code-threshold 0

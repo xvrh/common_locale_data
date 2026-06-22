@@ -133,6 +133,7 @@ String? generateClass<T>(
 
   if (!skipAddUnknown) {
     reference = {
+      // ignore: use_null_aware_elements
       if (unknown != null) reference[unknown]!: unknown,
       ...Map.fromEntries(
         reference.entries
